@@ -38,7 +38,7 @@ For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in man
 The components of the mechanical momentum do not commute. With the convention $\vec B=\nabla\times\vec A$, a direct computation gives
 
 $$
-[\tilde\pi_k,\tilde\pi_l]=i\hbar\,\frac{ϙ}{c}\,\varepsilon_{klm}B_m\,e_t ,
+\boxed{\;[\tilde\pi_k,\tilde\pi_l]=i\hbar\,\frac{ϙ}{c}\,\varepsilon_{klm}B_m\,e_t\;},
 $$
 
 so that, for $\vec B=B\vec u_z$,
@@ -92,7 +92,7 @@ so that the problem is a **harmonic oscillator of frequency $\omega_c$** centred
 The shifted oscillator has the spectrum
 
 $$
-E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m},
+\boxed{\;E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m}\;},
 \qquad
 n=0,1,2,\dots,
 $$
@@ -194,7 +194,6 @@ is the quantum length scale of the problem, the radius of the ground-state orbit
 
 For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=|ϙ|B/m$ and $\ell_B=\sqrt{\hbar/|ϙ|B}$ (no factor of $c$), a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $\hbar\omega_c=0.116$ meV, with flux quantum $\Phi_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.
 
-
 ## Degeneracy and the Flux Quantum
 
 ### Counting the states
@@ -202,7 +201,7 @@ For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=
 The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
 
 $$
-N_\phi=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0},
+\boxed{\;N_\phi=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0}\;},
 \qquad
 \Phi_0=\frac{hc}{|ϙ|},
 $$

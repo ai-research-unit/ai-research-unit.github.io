@@ -8,8 +8,6 @@ The last example is the point of the article. "No nontrivial idempotents" is not
 
 The article is the comparative companion of *Examples of Algebras*, *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, *Division Algebras*, *Split Complex Idempotents and Projections*, *Split-Biquaternion Idempotents and Projections*, and *Square Roots of One and the Idempotents of the Quaternion Algebra*. The detailed idempotent computations of the biquaternion algebra are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Hermitian Idempotents and the Peirce Decomposition* and *The Centraliser and the Diagonal Peirce Part*; and the roots of one are *Roots of the Identity, Split Algebras and Nontrivial Idempotents*. The article uses no form and no topology.
 
-**Conventions.** The algebras are over $\mathbb{R}$ unless a different field is stated. The split complex numbers are $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$; the dual numbers are $\mathbb{D}'=\mathbb{R}[\varepsilon]/(\varepsilon^2)$; the quaternions are $\mathbb{H}$ with the usual division product; the split biquaternions are $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{H}\times\mathbb{H}$; and the biquaternions are $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$. The idempotents are written $e,f,\Pi_\pm$; the two idempotents of $\mathbb{D}$ are
-
 $$
 \Pi_+=\tfrac12(1+j), \qquad \Pi_-=\tfrac12(1-j).
 $$

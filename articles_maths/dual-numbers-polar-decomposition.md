@@ -22,7 +22,9 @@ The conventions and the symbols are those of *Dual-Numbers Algebra* and of the c
 The algebra $\mathbb{D}'_{\mathbb{R}}$ has real dimension two. In this article the word **unit** carries the ring sense of the corpus: a **unit** of the algebra is an invertible element, one with $q\neq0$, and the **group of units** $(\mathbb{D}')^\times$ is the set of them. It is not the corpus's **unit element**, which is an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*); here the unit elements $\langle Q\rangle=1$ are the subgroup $\{\pm1\}\cdot(1+\mathrm{M})$, a proper subset of the group of units. The group of units is, by *Dual-Numbers Norm and Invertibility*, a semidirect product that is in fact a direct product,
 
 $$
-(\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +),
+\boxed{\;
+(\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +)
+\;},
 $$
 
 of real dimension two. A polar decomposition writes every element of a group as a product of independent one-parameter factors; for a two-dimensional abelian group the natural count is therefore two factors, and they are a scale and a shear.
@@ -122,7 +124,9 @@ The angle is the parameter of the shear factor: $Q = q\,\exp((q'/q)\varepsilon)$
 **Theorem.** Let $R$ be an ordered commutative ring with $2$ invertible, and let $Q = q + \varepsilon q'$ be a unit, so that $q \in R^\times$. Then $Q$ has a unique representation
 
 $$
-Q = r\,u\,\exp(s\varepsilon), \qquad r > 0, \quad u \in \{\pm 1\}, \quad s \in R,
+\boxed{\;
+Q = r\,u\,\exp(s\varepsilon), \qquad r > 0, \quad u \in \{\pm 1\}, \quad s \in R
+\;},
 $$
 
 with $r = |q|$, $u = \operatorname{sgn}(q)$ and $s = q^{-1}q'$. Over an ordered field, in particular over $R = \mathbb{R}$, the hypothesis is simply $q \neq 0$.
@@ -219,7 +223,9 @@ For $Q = -1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = -1$; the
 The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - a'^2|}$ and $\psi = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
 
 $$
-\rho \longrightarrow |q|, \qquad \theta \text{ or } \psi \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\psi j) \longrightarrow 1 + s\varepsilon.
+\boxed{\;
+\rho \longrightarrow |q|, \qquad \theta \text{ or } \psi \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\psi j) \longrightarrow 1 + s\varepsilon
+\;}.
 $$
 
 The two transcendental functions $\theta$ and $\psi$ collapse to the rational function $q'/q$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.

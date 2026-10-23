@@ -28,7 +28,7 @@ The article owns the two actions and the absence of a unit. It reads the actions
 **Proposition (the left action).** For every biquaternion $\tilde Q$,
 
 $$
-e_t \star \tilde Q = \tilde Q^{*} .
+\boxed{\; e_t \star \tilde Q = \tilde Q^{*} \;}.
 $$
 
 **Proof.** By the rule, $e_t \star \tilde Q = e_t^{\natural}\tilde Q^{*}$. The natural conjugation fixes the identity, $e_t^{\natural} = e_t$, and $e_t$ is the unit of the plain product, so $e_t^{\natural}\tilde Q^{*} = \tilde Q^{*}$.
@@ -40,7 +40,7 @@ $$
 **Proposition (the right action).** For every biquaternion $\tilde Q$,
 
 $$
-\tilde Q \star e_t = \tilde Q^{\natural} .
+\boxed{\; \tilde Q \star e_t = \tilde Q^{\natural} \;}.
 $$
 
 **Proof.** By the rule, $\tilde Q \star e_t = \tilde Q^{\natural} e_t^{*}$. The star conjugation fixes the identity, $e_t^{*} = e_t$, so $\tilde Q^{\natural}e_t^{*} = \tilde Q^{\natural}$.
@@ -126,7 +126,7 @@ The general theory asks whether a sesquilinear product is the **derived operatio
 **Corollary.** The product is the **isotope** of the derived operation by the natural conjugation,
 
 $$
-\tilde Q_1 \star \tilde Q_2 = {}^{\natural}(\tilde Q_1)\,\tilde Q_2^{*} = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
+\boxed{\; \tilde Q_1 \star \tilde Q_2 = {}^{\natural}(\tilde Q_1)\,\tilde Q_2^{*} = \tilde Q_1^{\natural}\tilde Q_2^{*} \;},
 $$
 
 the insertion being in the first slot and the derived operation being $\tilde Q_1\tilde Q_2^{*}$ with its star involution.

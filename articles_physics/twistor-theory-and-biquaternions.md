@@ -29,7 +29,7 @@ and the group preserving it is $\mathrm{U}(2,2)$. Its determinant-one subgroup $
 The link to spacetime is the **incidence relation**. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x^{A\bar A}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by
 
 $$
-\omega^A = i\,x^{A\bar A}\pi_{\bar A}.
+\boxed{\;\omega^A = i\,x^{A\bar A}\pi_{\bar A}\;}.
 $$
 
 For fixed $x$ this is two linear conditions on four unknowns, so the solution space is two-dimensional: a line. Two points $x, y$ are null-separated exactly when their lines meet, and this happens exactly when $\det(x-y) = 0$, the determinant of the $2\times2$ matrix being the Minkowski interval. Thus
@@ -49,7 +49,7 @@ The read-list article *The Spinor Module in Biquaternionic Form and Its Lorentz 
 Every one of these objects is a twistor-theory object, and this is the honest common ground. In particular, the twistor module is
 
 $$
-T = S\oplus\bar{S} = \left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right) = \Delta,
+\boxed{\;T = S\oplus\bar{S} = \left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right) = \Delta\;},
 $$
 
 which is **exactly the Dirac spinor module of that article**. A twistor is a Dirac spinor on which the conformal group, not merely the Lorentz group, acts; the extra structure distinguishing a twistor from a Dirac spinor is the Hermitian form $h$ of signature $(2,2)$, which encodes the conformal metric.
@@ -71,7 +71,7 @@ The first line is the statement that the algebra is a module over itself; the se
 The concrete form of the third line is worth recording, because it is the precise sense in which the twistor module is the Dirac module written with the conformal action. If $\tilde{U}\in SL(2,\mathbb{C})$ has image $A=\mathsf{M}_2(\tilde{U})$, then on $Z=(\omega,\pi)$ the Lorentz action is
 
 $$
-\omega \longmapsto A\,\omega, \qquad \pi \longmapsto (A^\dagger)^{-1}\,\pi.
+\boxed{\;\omega \longmapsto A\,\omega, \qquad \pi \longmapsto (A^\dagger)^{-1}\,\pi\;}.
 $$
 
 The second factor is the conjugate defining representation in disguise: with $\epsilon$ the invariant form of the spinor-module article, $(A^\dagger)^{-1} = \epsilon\,\bar{A}\,\epsilon^{-1}$. Under $SU(2,2)$ this block-diagonal action is completed by the off-diagonal generators — translations and special conformal transformations — that mix $\omega$ and $\pi$ and thereby move the point $x$; the Lorentz group is the part that preserves the metric.
@@ -90,7 +90,7 @@ Z=(\omega^A,\,\pi_{\bar A}),
 $$
 where $\pi_{\bar A}$ is a **co-spinor**. With $\varepsilon_{\bar A\bar B}$ the invariant form, the dual spinor space is $S^{*}$, so that
 $$
-T\cong S\oplus S^{*},
+\boxed{\;T\cong S\oplus S^{*}\;},
 $$
 the same splitting as before, because $S^{*}\cong\bar S$.
 The incidence relation $\omega^A=ix^{A\bar A}\pi_{\bar A}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{A\bar A}=\bar\pi_A\pi_{\bar A}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a **classical phase-space pair**: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.

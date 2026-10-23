@@ -60,7 +60,9 @@ $$
 **Theorem.** $\mathsf{M}_2$ is a unital algebra homomorphism:
 
 $$
-\mathsf{M}_2(Q_1 Q_2) = \mathsf{M}_2(Q_1)\,\mathsf{M}_2(Q_2) \qquad \text{for all } Q_1, Q_2 \in \mathbb{D}'_R.
+\boxed{\;
+\mathsf{M}_2(Q_1 Q_2) = \mathsf{M}_2(Q_1)\,\mathsf{M}_2(Q_2) \qquad \text{for all } Q_1, Q_2 \in \mathbb{D}'_R
+\;}.
 $$
 
 **Proof.** With $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2,$
@@ -86,7 +88,9 @@ So $\mathbb{D}'_R$ is isomorphic to the subalgebra $\mathsf{M}_2(\mathbb{D}'_R) 
 **Theorem.** The image $\mathsf{M}_2(\mathbb{D}'_R)$ is exactly the subalgebra of upper-triangular Toeplitz matrices,
 
 $$
-\mathsf{M}_2(\mathbb{D}'_R) = \left\{\begin{pmatrix} q & q' \\ 0 & q \end{pmatrix} : q, q' \in R\right\}.
+\boxed{\;
+\mathsf{M}_2(\mathbb{D}'_R) = \left\{\begin{pmatrix} q & q' \\ 0 & q \end{pmatrix} : q, q' \in R\right\}
+\;}.
 $$
 
 It is a commutative unital subalgebra of $M_2(R)$, of $R$-rank two, spanned by $I$ and the nilpotent $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$.
@@ -110,7 +114,9 @@ which is again upper-triangular Toeplitz; the unit is $I$; and $E^2 = 0$.
 **Theorem.** For $Q = q + \varepsilon q',$
 
 $$
-\operatorname{tr}\mathsf{M}_2(Q) = 2q, \qquad \det\mathsf{M}_2(Q) = q^2 = \langle Q\rangle, \qquad \chi_{\mathsf{M}_2(Q)}(\lambda) = (\lambda - q)^2.
+\boxed{\;
+\operatorname{tr}\mathsf{M}_2(Q) = 2q, \qquad \det\mathsf{M}_2(Q) = q^2 = \langle Q\rangle, \qquad \chi_{\mathsf{M}_2(Q)}(\lambda) = (\lambda - q)^2
+\;}.
 $$
 
 **Proof.** The trace is the sum of the diagonal entries $q + q = 2q$; the determinant is $q^2 - 0 = q^2$; the characteristic polynomial is the product of the diagonal entries of $\lambda I - \mathsf{M}_2(Q)$, namely $(\lambda - q)^2$, the matrix being triangular.

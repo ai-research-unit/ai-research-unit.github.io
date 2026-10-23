@@ -82,9 +82,7 @@ that is, $c = 0, -1, -2, i, -i$; every other lattice point escapes. The computat
 
 **Theorem.** The intersection of $M$ with the real axis is exactly the interval $[-2, 1/4]$:
 
-$$
-M \cap \mathbb{R} = [-2, 1/4].
-$$
+$$\boxed{\;M \cap \mathbb{R} = [-2, 1/4]\;}.$$
 
 **Proof sketch.** For real $c$ the dynamics of $f_c$ on $\mathbb{R}$ is that of the real quadratic family, and the critical orbit is bounded exactly for $-2 \leq c \leq 1/4$: the interval $[-1/2, 1/2]$ is invariant for $-2 \leq c \leq 1/4$ and traps the critical orbit, while for $c < -2$ the orbit starts with $0 \mapsto c$ and then increases in modulus, and for $c > 1/4$ every orbit escapes. The detailed real dynamics is the subject of the real quadratic family, and the comparison of the real and the complex families is recorded there. The two endpoints are: $c = 1/4$, the parabolic cusp; $c = -2$, the tip, whose Julia set is the segment $[-2,2]$.
 
@@ -118,9 +116,7 @@ $$
 
 whose product is $c+1$; its multiplier is
 
-$$
-\lambda_2(c) = 4(c+1).
-$$
+$$\boxed{\;\lambda_2(c) = 4(c+1)\;}.$$
 
 The parameters for which the period-two cycle is attracting are the open disk $|c+1| < 1/4$, a **period-two bulb** attached to the main cardioid at the point $c = -3/4$ and centred at the superattracting parameter $c = -1$.
 
@@ -168,9 +164,7 @@ and it contains the period-doubling parameters $-3/4, -5/4, \ldots$ together wit
 
 **Theorem (Shishikura).** The Hausdorff dimension of the boundary of the Mandelbrot set is $2$:
 
-$$
-\dim_H \partial M = 2,
-$$
+$$\boxed{\;\dim_H \partial M = 2\;},$$
 
 and for every parameter $c$ on the boundary of $M$ the Hausdorff dimension of the Julia set $J(f_c)$ is also $2$.
 

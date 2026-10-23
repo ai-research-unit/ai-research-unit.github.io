@@ -120,7 +120,7 @@ $$
 $$
 the factor $\pi$ arising on each mode because each parity is a single-mode operator, one obtains
 $$
-\boxed{\;E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr).\;}
+\boxed{\;E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr)\;}.
 $$
 At $r=0$ this is $\exp(-2|\alpha|^2-2|\beta|^2)=E(\alpha)E(\beta)$: a product of one-mode factors, as it must be for the vacuum, which is a product state, and $E(\alpha,\beta)$ is negligible whenever either displacement is far from the origin. For $r>0$ the cross term $\mathrm{Re}(\alpha\beta)$ correlates the two modes along the EPR ridge.
 
@@ -181,7 +181,7 @@ $$
 $$
 for which $S=3\exp(-d^2)-\exp(-9d^2)$ and hence
 $$
-S_{\max}^{\mathrm{EPR}}=8\cdot 3^{-9/8}=2.3244947809\ldots
+\boxed{\;S_{\max}^{\mathrm{EPR}}=8\cdot 3^{-9/8}=2.3244947809\ldots\;}
 $$
 The optimisation is one-dimensional along that line and is elementary; the numerical search over all four complex displacements agrees with it and does not exceed it. The value is exact for the ideal EPR state with displaced-parity observables, and it is the number that replaces the discrete Tsirelson bound for this state and this observable family. It is *not* a universal continuous-variable bound, and the article does not offer it as one: it is the boundary of one combination of state and observables.
 
@@ -195,7 +195,6 @@ The optimisation is one-dimensional along that line and is elementary; the numer
 | No-signaling (algebraic) | $4$ | each $E\in[-1,1]$ |
 
 The table is the article's answer to the trap in one place. The value $2\sqrt2$ appears, but as the ceiling of the dichotomic class, not as the boundary of the continuous-variable problem; the row that describes the actual state is the state-dependent one; and no single number is the continuous-variable Bell bound.
-
 
 ## What the Biquaternion Framework Supplies, and What It Does Not
 
@@ -238,7 +237,7 @@ E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2
 $$
 checked twice: from the Wigner function, and independently in a truncated Fock space from the matrix elements of the displacement operator, with the marginals reproducing the thermal distribution of the reduced state. The classical bound $|S|\le2$ is violated for every $r>0$, with no visibility threshold, and the maximum grows to a limit in the ideal EPR case of
 $$
-S_{\max}=8\cdot 3^{-9/8}=2.3244947809\ldots,
+\boxed{\;S_{\max}=8\cdot 3^{-9/8}=2.3244947809\ldots\;},
 $$
 well below $2\sqrt{2}$. Different observable families give different boundaries; this value is the boundary of one such family, not a universal constant.
 

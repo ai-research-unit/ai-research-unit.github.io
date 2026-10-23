@@ -48,7 +48,9 @@ the sum of the four partial derivatives, which is the gradient of the algebra-va
 
 **Theorem (the divergence theorem).** For a $C^{1}$ field $f$ on a bounded domain with piecewise smooth boundary,
 $$
-\int_{\Omega}\operatorname{Div}f\,\mathrm{d}\mu=\int_{\partial\Omega}f\,n\,\mathrm{d}S ,
+\boxed{\;
+\int_{\Omega}\operatorname{Div}f\,\mathrm{d}\mu=\int_{\partial\Omega}f\,n\,\mathrm{d}S
+\;},
 $$
 where $f n$ is the algebra product of the boundary value and the outward normal read in the algebra.
 
@@ -91,7 +93,9 @@ the two-dimensional Dirac measure at the origin of that plane, and symmetrically
 
 **Theorem (Cauchy's theorem).** Let $f=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ be reduced-analytic on a domain, and let $\gamma_{1}$ and $\gamma_{2}$ be closed contours in the $Q_{+}$-plane and the $Q_{-}$-plane, swept out by a curve in the algebra on which $f$ is regular. Then
 $$
-\oint f\,\mathrm{d}\breve Q=0 ,
+\boxed{\;
+\oint f\,\mathrm{d}\breve Q=0
+\;},
 $$
 the differential being $\mathrm{d}\breve Q=\mathrm{d}Q_{+}\,\Pi_++\mathrm{d}Q_{-}\,\Pi_-$ along the curve.
 
@@ -99,7 +103,9 @@ the differential being $\mathrm{d}\breve Q=\mathrm{d}Q_{+}\,\Pi_++\mathrm{d}Q_{-
 
 **Theorem (the Cauchy integral formula).** Let $f=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ be reduced-analytic on a domain containing the point $\breve Q_{0}$ with coordinates $Q_{0+},Q_{0-}$, and let $\gamma_{1},\gamma_{2}$ be simple closed contours encircling $Q_{0+}$ and $Q_{0-}$ counterclockwise, on which $f$ is regular. Then
 $$
-f(\breve Q_{0})=\frac{1}{2\pi i}\Bigl(\Pi_+\oint_{\gamma_{1}}\frac{G_{1}(Q_{+})}{Q_{+}-Q_{0+}}\,\mathrm{d}Q_{+}+\Pi_-\oint_{\gamma_{2}}\frac{G_{2}(Q_{-})}{Q_{-}-Q_{0-}}\,\mathrm{d}Q_{-}\Bigr).
+\boxed{\;
+f(\breve Q_{0})=\frac{1}{2\pi i}\Bigl(\Pi_+\oint_{\gamma_{1}}\frac{G_{1}(Q_{+})}{Q_{+}-Q_{0+}}\,\mathrm{d}Q_{+}+\Pi_-\oint_{\gamma_{2}}\frac{G_{2}(Q_{-})}{Q_{-}-Q_{0-}}\,\mathrm{d}Q_{-}\Bigr)
+\;}.
 $$
 
 *Proof.* In each idempotent component the classical Cauchy integral formula gives $G_{1}(Q_{0+})=(2\pi i)^{-1}\oint G_{1}(Q_{+})/(Q_{+}-Q_{0+})\mathrm{d}Q_{+}$ and the companion for $G_{2}$; multiplying by the idempotents and adding gives the display, and the two contours are independent, one in each complex coordinate plane.

@@ -41,9 +41,7 @@ The centrality of the scalar line is what makes $\langle\tilde q\rangle_{\natura
 
 **Theorem.** For the tensor product of $\mathbb{H}$ with its own opposite algebra,
 
-$$
-\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}\cong \operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R}).
-$$
+$$ \boxed{\; \mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}\cong \operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R}) \;} .$$
 
 *Proof.* The sandwich map $\tilde q_1\otimes\tilde q_2^{\mathrm{opp}}\mapsto(\tilde q_3\mapsto\tilde q_1\tilde q_3\tilde q_2)$ is an $\mathbb{R}$-algebra homomorphism of a $16$-dimensional algebra onto $\operatorname{End}_\mathbb{R}(\mathbb{H})$, of dimension $16$; it is injective because $\mathbb{H}$ is central simple over $\mathbb{R}$, and the enveloping algebra and the operator basis are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
 

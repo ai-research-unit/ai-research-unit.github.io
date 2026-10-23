@@ -12,8 +12,6 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 - **The one-loop value, transcribed and its integral verified.** The standard Feynman-parameter representation of the magnetic form factor reduces at $k^2=0$ to an integral whose value is exactly $1$; that reduction was verified, so that $a=\alpha/2\pi$ follows from the standard representation.
 - **What the algebra does not supply.** It does not produce $\alpha$, and it does not by itself remove the divergence. The finiteness of the anomaly rests on the Ward identity, that is, on gauge invariance; the framework writes the vertex in its own tensor language and does not replace that argument.
 
-**Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, $\mathbb{M}_-=i\,\mathbb{M}_+$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\,\partial/\partial Q_\mu$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. On the spinor module the equation is $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric
-
 $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4 ,
 \qquad
@@ -41,9 +39,9 @@ $$
 $F_1(0)=1$ is the charge, and $F_2(0)$ is the anomaly. The gyromagnetic ratio is
 
 $$
-g=2\big(F_1(0)+F_2(0)\big)=2\big(1+F_2(0)\big),
+\boxed{\;g=2\big(F_1(0)+F_2(0)\big)=2\big(1+F_2(0)\big),
 \qquad
-a=\frac{g-2}{2}=F_2(0) .
+a=\frac{g-2}{2}=F_2(0)\;}.
 $$
 
 At tree level $\Gamma^\mu=\gamma^\mu$, so $F_1=1$, $F_2=0$ and $g=2$: the Dirac value, which is one-particle physics and is settled elsewhere in the corpus. What this article computes is the correction to it.
@@ -93,9 +91,9 @@ Every one of these was verified by explicit multiplication, with residual $0$: $
 **The sector interpretation.** The two groups lie in different sectors, and this is the framework's contribution to the bookkeeping:
 
 $$
-\vec e_\mu\in\mathbb{M}_- \quad(\text{anti-Hermitian, material}),
+\boxed{\;\vec e_\mu\in\mathbb{M}_- \quad(\text{anti-Hermitian, material}),
 \qquad
-i\vec e_\mu\in\mathbb{M}_+ \quad(\text{Hermitian, informational}).
+i\vec e_\mu\in\mathbb{M}_+ \quad(\text{Hermitian, informational})\;}.
 $$
 
 The rotation generators, which are the bivectors with one factor of the central $i$, are the $\mathbb{M}_+$ elements $i\vec e_\mu$ — the same generators $\tilde S_\mu=\tfrac{\hbar}{2}i\vec e_\mu$ that the companion article *Spin-1/2 Quantum Physics in Biquaternionic Form* and the one-particle Dirac article give the spin. The two levels are worth separating, because the corpus uses both: the *Hermitian* rotation-type generators $S^{\mu\rho}=\tfrac{i}{4}[\gamma^\mu,\gamma^\rho]=\tfrac12\sigma^{\mu\rho}$ lie at the $\mathbb{M}_+$ level $i\vec e_\mu$, while the *anti-Hermitian* boost-type generators $S^{0\mu}=\tfrac{i}{4}[\gamma^0,\gamma^\mu]$ lie at the $\mathbb{M}_-$ level $\vec e_\mu$; correspondingly the module's rotation rotor $\exp(\tfrac{\theta}{2}n\cdot e)$ has the anti-Hermitian generator $\tfrac12n\cdot e\in\mathbb{M}_-$, and the Hermitian boost rotor $\exp(\tfrac{\phi}{2}i\,n\cdot e)$ has the Hermitian generator $\tfrac12i\,n\cdot e\in\mathbb{M}_+$. The passage between the two levels is multiplication by the central $i$, which is exactly the element that exchanges the sectors. The magnetic coupling to an external field is a rotation-type structure and so belongs with the spin, in the informational sector; the convection (metric) part is central, and the electric (boost-type) structure is the material-sector one. The anomaly, being a correction to the magnetic structure, is an $\mathbb{M}_+$ effect — the same sector as the observable the anomaly corrects.
@@ -169,7 +167,7 @@ $$
 This reduction was verified numerically, and it is exactly what makes the leading value
 
 $$
-a=\frac{\alpha}{2\pi}=1.1614097329\times10^{-3}
+\boxed{\;a=\frac{\alpha}{2\pi}=1.1614097329\times10^{-3}\;}
 $$
 
 for $\alpha=1/137.035999084$. The number is Schwinger's, the first radiative correction ever computed, and it sits above the measured electron anomaly
@@ -183,11 +181,11 @@ with a relative excess of $1.5156\times10^{-3}$. The leading term alone is about
 **The higher orders.** The perturbative series is conventionally written
 
 $$
-a=\sum_{\lambda\ge1}A_\lambda\Big(\frac{\alpha}{\pi}\Big)^\lambda ,
+\boxed{\;a=\sum_{\lambda\ge1}A_\lambda\Big(\frac{\alpha}{\pi}\Big)^\lambda ,
 \qquad
 A_1=\frac12=0.5 ,
 \qquad
-A_2=\frac{197}{144}+\frac{\pi^2}{12}-\frac{\pi^2}{2}\ln2+\frac34\zeta(3) .
+A_2=\frac{197}{144}+\frac{\pi^2}{12}-\frac{\pi^2}{2}\ln2+\frac34\zeta(3)\;}.
 $$
 
 The two-loop coefficient was recomputed from this closed form:

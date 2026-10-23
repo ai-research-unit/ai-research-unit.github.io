@@ -9,8 +9,6 @@ The twist is the second surface operator of the group, alongside *The Mapping Cl
 
 **The article assumes** the intersection form on the first homology of a surface and the symplectic group, from *Bilinear Forms* and *Symplectic Forms and Poisson Brackets*, the fundamental group and the mapping class group from *The Fundamental Group and Covering Spaces* and the articles of this Part, and the notion of an isotopy class of homeomorphisms.
 
-**The boundaries of the article.** The mapping class group as a whole — its definition, presentations, the Nielsen–Thurston classification, the curve complex and the Torelli group — is *Mapping Class Groups*, written in this Part, and is cited here; the present article treats the single operator and its immediate consequences. The measured foliations and the Thurston boundary need the measure theory of Part III. The monodromy of a Lefschetz fibration and the vanishing cycles are the algebraic-geometry articles of *Algebraic Geometry*; the higher-dimensional analogues of the twist, the twists along spheres, need the smooth structures of Part III and are named there. No metric, no hyperbolic structure and no analysis is used.
-
 ## The Dehn Twist
 
 **Definition.** Let $S$ be a closed orientable surface and let $a\subseteq S$ be a simple closed curve. Choose a closed annular neighbourhood $N$ of $a$, with a homeomorphism $N\cong S^1\times[-1,1]$ carrying $a$ to $S^1\times\{0\}$. The **Dehn twist about $a$** is the homeomorphism

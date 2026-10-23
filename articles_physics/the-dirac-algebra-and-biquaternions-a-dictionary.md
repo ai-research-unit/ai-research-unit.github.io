@@ -169,7 +169,7 @@ $$
 *The map is multiplicative.* Computing all $8\times 8$ products of the real basis $\{e_t,\vec e_x,\vec e_y,\vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ confirms
 
 $$
-\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)
+\boxed{\;\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)\;}
 $$
 
 for every basis pair. The check is exhaustive on the basis, hence holds on all of $\mathbb{B}$.
@@ -179,7 +179,7 @@ for every basis pair. The check is exhaustive on the basis, hence holds on all o
 This establishes
 
 $$
-\mathbb{B} \;\cong\; \mathrm{Cl}_{1,3}^{+}(\mathbb{R}), \qquad \dim_\mathbb{R}\mathbb{B} = 8 = \tfrac{1}{2}\dim_\mathbb{R}\mathrm{Cl}_{1,3} .
+\boxed{\;\mathbb{B} \;\cong\; \mathrm{Cl}_{1,3}^{+}(\mathbb{R}), \qquad \dim_\mathbb{R}\mathbb{B} = 8 = \tfrac{1}{2}\dim_\mathbb{R}\mathrm{Cl}_{1,3}\;}.
 $$
 
 The isomorphism is not unique: any assignment that preserves the relations differs from this one by an automorphism of $\mathbb{B}$, and the different choices are related by rotations of the spatial frame. The choice above is the corpus's, and it fixes the sign pattern derived below.
@@ -384,7 +384,7 @@ $$
 where $i_{\mathrm{Cl}}$ is the scalar imaginary of the **complexified** Clifford algebra, not the biquaternion imaginary. The two are different objects: the biquaternion imaginary $i$ has image $-\omega$ under $\mathsf{M}_4$, so in the dictionary
 
 $$
-\gamma_5 \;=\; -i_{\mathrm{Cl}}\,\mathsf{M}_4(i) \;=\; \Phi_{\mathbb{C}}\!\left(-i_{\mathrm{Cl}}\, i\right),
+\boxed{\;\gamma_5 \;=\; -i_{\mathrm{Cl}}\,\mathsf{M}_4(i) \;=\; \Phi_{\mathbb{C}}\!\left(-i_{\mathrm{Cl}}\, i\right)\;},
 $$
 
 where $\Phi_{\mathbb{C}}$ is the $\mathbb{C}$-linear extension of $\mathsf{M}_4$ to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$. In words: **the chirality operator is the product of the two commuting square roots of $-1$**, the external complex unit $i_{\mathrm{Cl}}$ of the complexified Clifford algebra and the biquaternion imaginary $i$ (whose Clifford image is minus the pseudoscalar). This is the precise sense in which $\gamma_5$ is *not* an element of $\mathbb{B}$: it needs both square roots, and their product is a new central element of the complexified algebra.

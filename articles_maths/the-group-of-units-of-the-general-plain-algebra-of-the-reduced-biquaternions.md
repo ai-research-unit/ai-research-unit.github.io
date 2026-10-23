@@ -16,8 +16,6 @@ $$
 $$
 **abelian and connected**, of complex dimension two and real dimension four, with fundamental group $\mathbb{Z}\times\mathbb{Z}$. The isomorphism is the idempotent coordinate map $\breve Q\mapsto(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$, under which the product is componentwise. The zero-divisor set is the **punctured union of the two idempotent lines** $\mathcal N=(\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-)\setminus\{0\}$, whose elements are the nonzero zero divisors. Every nonzero element of the algebra is either a unit or a zero divisor; there is no third kind.
 
-**Boundaries.** The norm is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, and the zero divisors and the two lines are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the idempotents and the idempotent coordinates are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*. The multiplication operators, whose invertibility is the same criterion on the operator level, are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the matrix model, in which the unit group is the group of invertible diagonal matrices, is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*. The biquaternion unit group, which is not abelian, is *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
-
 ## The Partition of the Algebra
 
 **The algebra is the disjoint union of its units, its nonzero zero divisors and the single element $0$.**

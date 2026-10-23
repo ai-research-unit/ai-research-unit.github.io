@@ -20,8 +20,10 @@ This is the **Euclidean norm** of the algebra. The split-quaternion norm $\langl
 **Theorem (The Algebra Is a Normed Algebra up to a Constant).** For all $\tilde q_1,\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$,
 
 $$
-|\tilde q_1 \tilde q_2| \leq \sqrt{2}\,|\tilde q_1|\,|\tilde q_2| .
-$$
+\boxed{\;
+|\tilde q_1 \tilde q_2| \leq \sqrt{2}\,|\tilde q_1|\,|\tilde q_2|
+\;}
+$$.
 
 The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{2}$, and it induces the product topology of $\mathbb{R}^4$.
 
@@ -86,8 +88,10 @@ acting on functions of the four coordinates, and the **scalar** derivative is $\
 **Theorem (The Square of the Operator Is the Wave Operator).** Using $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$ and $e_ie_j = -e_je_i$ for $i \neq j$,
 
 $$
-D^2 = -\frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} = \Box_{(2,1)},
-$$
+\boxed{\;
+D^2 = -\frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} = \Box_{(2,1)}
+\;}
+$$,
 
 the wave operator of the form of signature $(2,1)$, which is hyperbolic. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone
 
@@ -126,8 +130,10 @@ which is the zero divisor set of the algebra in the vector subspace.
 **Theorem (The Inverse and Its Singular Set).** The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $\tilde q = q_t + \vec q$ with $\vec q \in V$, then
 
 $$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{q_t - \vec q}{q_t^2 - \langle \vec q\rangle_{\natural}},
-$$
+\boxed{\;
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{q_t - \vec q}{q_t^2 - \langle \vec q\rangle_{\natural}}
+\;}
+$$,
 
 which blows up as the denominator tends to zero, and the limit depends on the direction of approach: along a null direction the inverse is unbounded, and along the split-complex subalgebra directions the denominator vanishes on the isotropic lines.
 

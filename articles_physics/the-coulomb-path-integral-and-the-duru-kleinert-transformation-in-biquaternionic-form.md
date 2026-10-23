@@ -16,8 +16,6 @@ The contribution is an interpretation, and it is a sharper one than the neighbou
 
 The article proceeds as follows. A section states why the time slicing fails, in the framework's terms. A section defines the pseudo-time and derives its two consequences for the potential and the kinetic term. A section defines the KS transformation, exhibits the norm identity $r=\langle \varsigma\rangle_{\natural}$, and gives the reduction to the harmonic action. A section reads the transformation in the algebra and states the limit of the interpretation. A section separates what the algebra supplies from what it imports, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, in particular *The Path Integral in Biquaternionic Form* and *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central imaginary $i$. The material coordinate is $\tilde R=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with $x,y,z\in\mathbb{R}$ and $r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and the material sector is $\mathbb{M}_-=i\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$. The Coulomb parameter is $\kappa=Ze^2/(4\pi\epsilon_0)$, the Hamiltonian is $\tilde H=\vec p^2/(2m)+\tilde V$ with $\tilde V=-(\kappa/r)e_t\in\mathbb{C}_{\mathbb{B}}$, and the bound-state energies are $E_n=-m\kappa^2/(2\hbar^2n^2)$. The real bilinear form is $\langle\tilde Q,\tilde Q_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde Q^{*}\tilde Q_1)$ and the trace is $\mathrm{Tr}(\tilde Q\tilde H)=2\,\mathrm{Sc}(\tilde Q\tilde H)$. The KS coordinates are written $\varsigma=(\varsigma_1,\varsigma_2,\varsigma_3,\varsigma_0)\in\mathbb{R}^4$, and the quaternion norm of the corresponding $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t\in\mathbb{H}$ is $\langle \varsigma\rangle_{\natural}=\varsigma^{\natural}\varsigma=\lvert\vec\varsigma\rvert^2$.
-
 ## Why the Time Slicing Fails
 
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
@@ -35,7 +33,7 @@ and take the limit $N\to\infty$ of the product with the intermediate positions i
 
 The first half of the Duru–Kleinert transformation is a reparametrisation of the time. Replace the physical time $t'$ by a **pseudo-time** $s$, path-dependent, according to
 $$
-dt'=r(s)\,ds ,
+\boxed{\;dt'=r(s)\,ds\;},
 \qquad\text{equivalently}\qquad
 ds=\frac{dt'}{r(t')} ,
 $$
@@ -73,7 +71,7 @@ so that $(x,y,z)=(x_1,x_2,x_3)$ is the image of $\varsigma\in\mathbb{R}^4$. The 
 
 **The norm identity, and the quaternion interpretation.** A direct expansion gives
 $$
-r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|=\varsigma_1^2+\varsigma_2^2+\varsigma_3^2+\varsigma_0^2=|\vec\varsigma|^2=\langle \varsigma\rangle_{\natural},
+\boxed{\;r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|=\varsigma_1^2+\varsigma_2^2+\varsigma_3^2+\varsigma_0^2=|\vec\varsigma|^2=\langle \varsigma\rangle_{\natural}\;},
 $$
 where $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t\in\mathbb{H}$ and $\langle \varsigma\rangle_{\natural}=\varsigma^{\natural}\varsigma$ is the quaternion (hence the biquaternion, with real coefficients) norm. The identity was checked numerically on random $\varsigma$ and holds to machine precision. Its differential companion is the statement that the map is a Riemannian submersion with one gauge direction: the Jacobian $J=\partial(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\partial \varsigma$ satisfies
 $$
@@ -99,7 +97,7 @@ $$
 $$
 a free quadratic form in the four KS coordinates, with the inverse norm cancelled exactly. The potential term is the constant $-\kappa\int ds$ of the previous section. The fixed-energy term of the Jacobi action contributes $-\int E\,dt'=-E\int \langle \varsigma\rangle_{\natural}\,ds$, which is quadratic in $\varsigma$ and, for a bound state $E<0$, supplies the harmonic potential. Collecting the three,
 $$
-S\;\longrightarrow\;\int ds\;\Big[\,2m\Big|\frac{d\varsigma}{ds}\Big|^2-E\,\langle \varsigma\rangle_{\natural}-\kappa\,\Big],
+\boxed{\;S\;\longrightarrow\;\int ds\;\Big[\,2m\Big|\frac{d\varsigma}{ds}\Big|^2-E\,\langle \varsigma\rangle_{\natural}-\kappa\,\Big]\;},
 $$
 which is the action of an **isotropic harmonic oscillator in four dimensions**, with the energy-dependent coefficient of $\langle \varsigma\rangle_{\natural}=|\varsigma|^2$ playing the role of the oscillator's restoring term. That the transformed action is harmonic, and that the fixed-energy problem is thereby exactly integrable, is the content of the Duru–Kleinert transformation.
 

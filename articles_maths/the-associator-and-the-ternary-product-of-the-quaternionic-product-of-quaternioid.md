@@ -25,7 +25,7 @@ The article establishes four things. First, the associator has the closed form $
 **Theorem (the associator).** For all $\tilde q_1,\tilde q_2,\tilde q_3 \in \mathbb{H}$,
 
 $$
-[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3 .
+\boxed{\;[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3\;}.
 $$
 
 *Proof.* Expand the definition and use that ${}^{\natural}$ is an anti-automorphism of order two: $(\tilde q_1\star\tilde q_2)^{\natural} = (\tilde q_1^{\natural}\tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1^{\natural\natural} = \tilde q_2^{\natural}\tilde q_1$. Therefore
@@ -39,7 +39,7 @@ and the difference is the displayed product on the right.
 **Theorem (the coordinate form).** With $\vec q_1, \vec q_2$ the vector parts and $\vec q_1 \cdot \vec q_2$ their Euclidean inner product,
 
 $$
-\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural} = 2\bigl((\vec q_1 \cdot \vec q_2)e_t + q_{2t}\vec q_1\bigr) .
+\boxed{\;\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural} = 2\bigl((\vec q_1 \cdot \vec q_2)e_t + q_{2t}\vec q_1\bigr)\;}.
 $$
 
 *Proof.* Expand $\tilde q_2^{\natural}\tilde q_1 = (q_{2t} - \vec q_2)(q_{1t} + \vec q_1)$ and $\tilde q_1^{\natural}\tilde q_2^{\natural} = (q_{1t} - \vec q_1)(q_{2t} - \vec q_2)$ in the plain product using $\vec q_2\vec q_1 = -\,\vec q_2 \cdot \vec q_1 + \vec q_2 \times \vec q_1$, and subtract: the two cross products cancel and the two copies of each remaining term add to twice their common value.
@@ -92,7 +92,7 @@ the commutative companion of $\star$, written with the bare bullet as in the sym
 **Lemma.** The symmetrised product is central-valued:
 
 $$
-\tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)\,e_t , \qquad \beta(\tilde q_1,\tilde q_2) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2 .
+\boxed{\;\tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)\,e_t , \qquad \beta(\tilde q_1,\tilde q_2) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2\;}.
 $$
 
 *Proof.* The two summands are $\tilde q_1^{\natural}\tilde q_2$ and $\tilde q_2^{\natural}\tilde q_1$, whose vector parts are $q_{1t}\vec q_2 - q_{2t}\vec q_1 - \vec q_1 \times \vec q_2$ and $q_{2t}\vec q_1 - q_{1t}\vec q_2 - \vec q_2 \times \vec q_1$; the cross products cancel by antisymmetry, the two copies of $q_{1t}\vec q_2 - q_{2t}\vec q_1$ cancel in the half-sum, and the scalar parts add to $2\beta(\tilde q_1,\tilde q_2)$.
@@ -106,7 +106,7 @@ $$
 **Theorem (the ternary product).** For all $\tilde q_1,\tilde q_2,\tilde q_3 \in \mathbb{H}$,
 
 $$
-\{\tilde q_1,\tilde q_2,\tilde q_3\} = \Bigl(\beta(\tilde q_1,\tilde q_2)\,q_{3t} + \beta(\tilde q_3,\tilde q_2)\,q_{1t} - \beta(\tilde q_1,\tilde q_3)\,q_{2t}\Bigr)e_t .
+\boxed{\;\{\tilde q_1,\tilde q_2,\tilde q_3\} = \Bigl(\beta(\tilde q_1,\tilde q_2)\,q_{3t} + \beta(\tilde q_3,\tilde q_2)\,q_{1t} - \beta(\tilde q_1,\tilde q_3)\,q_{2t}\Bigr)e_t\;}.
 $$
 
 In particular the ternary product is central-valued, and it depends only on the scalar coordinates $q_{1t},q_{2t},q_{3t}$ and on the pairings $\beta$ among the three arguments.

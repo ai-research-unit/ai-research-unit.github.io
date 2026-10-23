@@ -7,9 +7,9 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
 $$
-\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
+\boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
 \qquad
-6 = 1+5 ,
+6 = 1+5\;},
 $$
 
 so that the symmetric square of the material triplet contains a scalar (the trace) and a spin-two piece, and the trace removal leaves the spin-two carrier of dimension five. This is the same construction that produced the spin-one field (the material vector $V$ itself, dimension three) and the spin-$\tfrac32$ field (the material vector tensored with the spinor, with the $\gamma$-trace removed); the graviton is the case in which the material vector is tensored with itself, symmetrized, and made traceless. The three articles together are the framework's uniform account of the spin content of this subcategory.
@@ -20,8 +20,6 @@ The article is organized as follows. The linearized field and its gauge symmetry
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the covariant derivative.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the bosonic statistics of integer-spin fields.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the Clifford metric $g$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
-
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, carrying the spin-one adjoint action; $\odot$ denotes the symmetric product, and the trace is taken with the algebra's general quaternionic bilinear form $\langle\cdot,\cdot\rangle=\mathrm{Sc}(\cdot\,{}^{\natural})$. The graviton field is the small perturbation of the metric, $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ with $|h_{\mu\nu}|\ll1$, and the coupling that multiplies its source is $\kappa^2=16\pi G$; the coordinate metric is the $ict'$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the companion Dirac article is $g=\mathrm{diag}(+1,-1,-1,-1)$, its negative; the index algebra of the linearized theory follows $\eta$ throughout. The d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, natural units are used, and $T_{\mu\nu}$ denotes the matter energy–momentum tensor.
 
 ## The Linearized Field and Its Gauge Symmetry
 
@@ -63,7 +61,6 @@ $$
 
 which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\partial^\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
 
-
 ### The Gauge Symmetry as Coordinate Freedom
 
 The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\xi_\mu$ is the infinitesimal displacement of a coordinate transformation, $x^\mu\mapsto x^\mu+\xi^\mu$, so that the transformation of $h_{\mu\nu}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.
@@ -81,7 +78,7 @@ The de Donder gauge does not exhaust the gauge freedom: transformations with $\B
 A symmetric tensor $h_{\mu\nu}$ has ten independent components. The gauge transformation $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ removes four, the four components of $\xi_\mu$, leaving six. The field equation is second order and the gauge conditions are the constraints that remove four more on shell — the four components of the de Donder condition, one of which is the Hamiltonian constraint and three of which are the momentum constraints — leaving
 
 $$
-10-4-4 = 2
+\boxed{\;10-4-4 = 2\;}
 $$
 
 physical polarizations. These two are the transverse-traceless modes: transverse to the propagation direction and traceless, the two helicities $\pm2$ of the graviton.
@@ -97,13 +94,13 @@ $$
 and it has the defining properties
 
 $$
-P^2 = P ,
+\boxed{\;P^2 = P ,
 \qquad
 \mathrm{tr}\,P = 2 ,
 \qquad
 P_{ij,kl}\left(k_k\xi_l+k_l\xi_k\right) = 0 ,
 \qquad
-P_{ij,kl}\,\delta_{kl} = 0 ,
+P_{ij,kl}\,\delta_{kl} = 0\;},
 $$
 
 idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\xi_j+k_j\xi_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension

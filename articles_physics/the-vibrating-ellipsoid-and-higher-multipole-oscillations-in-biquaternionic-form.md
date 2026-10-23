@@ -107,7 +107,7 @@ with a frequency $\omega_l$ that depends on the order $l$ and on the body's cons
 The classic and exactly solvable case is **Rayleigh's vibrating liquid drop**, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result
 
 $$
-\omega_l^2 = \frac{\sigma}{\rho_m R_0^3}\,l(l-1)(l+2),
+\boxed{\;\omega_l^2 = \frac{\sigma}{\rho_m R_0^3}\,l(l-1)(l+2)\;},
 $$
 
 so that the quadrupole mode $l = 2$ has $\omega_2^2 = 8\sigma/(\rho_m R_0^3)$, the octupole $l = 3$ has $\omega_3^2 = 30\sigma/(\rho_m R_0^3)$, and so on. The factors $l(l-1)(l+2)$ increase rapidly with $l$: for $l = 2,3,4,5,6$ they are $8, 30, 72, 140, 240$. The same harmonic structure — one frequency per order $l$ for a spherical equilibrium, with $2l+1$ degenerate modes, independent of $m$ — holds for the elastic and the inertial modes of a body whose equilibrium shape is a **sphere**; the specific coefficient differs from the Rayleigh one, the multipole labelling does not. A spheroidal or triaxial equilibrium splits each multiplet by an amount of order the ellipticity, as the standard theory of the oscillations of ellipsoids describes. This is a standard result in the theory of oscillations of drops, nuclei and stars.
@@ -141,7 +141,7 @@ $$
 as quoted. Therefore
 
 $$
-\Theta_{xx} = 3\cdot\frac{Ma^2}{5} - \frac{M(a^2+b^2+c^2)}{5} = \frac{M}{5}\left(2a^2 - b^2 - c^2\right),
+\boxed{\;\Theta_{xx} = 3\cdot\frac{Ma^2}{5} - \frac{M(a^2+b^2+c^2)}{5} = \frac{M}{5}\left(2a^2 - b^2 - c^2\right)\;},
 $$
 
 with $\Theta_{yy}$ and $\Theta_{zz}$ by cyclic permutation, and $\Theta_{ij} = 0$ for $i \neq j$. The trace vanishes identically, $\Theta_{xx}+\Theta_{yy}+\Theta_{zz} = 0$. The result has been verified by deterministic quadrature rather than by sampling: a tensor Gauss–Legendre rule of $48^3$ nodes in the spherical coordinates of the unit ball — the radial and polar integrands are polynomials and the azimuthal one a trigonometric polynomial of degree one, so the rule is exact to roundoff — reproduces each $\int x_{i,2}^{\,2}dV$ and hence $\Theta_{xx}$ at four axis triples, including a strongly triaxial one, with relative error below $10^{-13}$.
@@ -151,7 +151,7 @@ with $\Theta_{yy}$ and $\Theta_{zz}$ by cyclic permutation, and $\Theta_{ij} = 0
 For a small deformation about the sphere, $a_i = R_0(1+\epsilon_i)$ with trace-free $\epsilon_i$, expanding to first order gives
 
 $$
-\Theta_{ij} = \frac{6MR_0^2}{5}\,\epsilon_{ij} + O(\epsilon^2),
+\boxed{\;\Theta_{ij} = \frac{6MR_0^2}{5}\,\epsilon_{ij} + O(\epsilon^2)\;},
 $$
 
 on the principal axes, with $\epsilon_{ij}$ the traceless symmetric strain. The relation has been verified for small random trace-free strains: the exact moment and the linear expression agree to $O(\epsilon^2)$ with $\epsilon \sim 2\times 10^{-3}$, the residual being of the expected second order. The content is that the quadrupole moment is **linear** in the shape deformation: the $l = 2$ shape mode and the $l = 2$ moment are the same physical quantity in two units.
@@ -161,7 +161,7 @@ on the principal axes, with $\epsilon_{ij}$ the traceless symmetric strain. The 
 Combining the two results, a single quadrupole mode $a_2(t') = A\cos\omega_2 t'$ produces a strain $\epsilon_{ij}(t')\propto a_2(t')$ and hence a quadrupole moment
 
 $$
-\Theta_{ij}(t') = \mathcal{Q}^{(0)}_{ij}\cos\omega_2 t' ,
+\boxed{\;\Theta_{ij}(t') = \mathcal{Q}^{(0)}_{ij}\cos\omega_2 t'\;},
 $$
 
 oscillating at the **mode frequency** $\omega_2$. The body's quadrupole moment is thus a harmonic oscillator. A general vibration is a superposition of modes $l = 2, 3, \dots$, and its multipole moments oscillate at the corresponding mode frequencies — the tower of oscillation frequencies is the same tower as the multipole series.
@@ -207,7 +207,7 @@ $$
 Every component is a constant plus a term at $2\Omega$. The moment therefore oscillates at **twice** the rotation frequency,
 
 $$
-\omega_{quad} = 2\Omega ,
+\boxed{\;\omega_{quad} = 2\Omega\;},
 $$
 
 not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(im_2\Omega t')$. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.

@@ -157,8 +157,8 @@ $$
 The interval is $ds^2 = \langle d\tilde{R}\rangle_{\natural}$, and since $\langle\cdot\rangle_{\natural}$ is the polar form evaluated on $d\tilde{R} = \tilde{E}_\mu dx^\mu$,
 
 $$
-g_{\mu\nu}(x) = \langle \tilde{E}_\mu(x), \tilde{E}_\nu(x)\rangle_{\natural}
-= \mathrm{Sc}\left(\tilde{E}_\mu \tilde{E}^{\natural}_\nu\right).
+\boxed{\;g_{\mu\nu}(x) = \langle \tilde{E}_\mu(x), \tilde{E}_\nu(x)\rangle_{\natural}
+= \mathrm{Sc}\left(\tilde{E}_\mu \tilde{E}^{\natural}_\nu\right)\;}.
 $$
 
 Four $\mathbb{M}_-$-valued fields, so sixteen functions. Where they are linearly independent, the Gram matrix is nondegenerate, and by Sylvester's law it has signature $(3,1)$: the result is automatically a Lorentzian metric. Conversely, any Lorentzian metric can be written this way locally. Choose a $g$-orthonormal frame, map it into $\mathbb{M}_-$ by a linear isometry of quadratic spaces — which exists because both forms have signature $(3,1)$ — and read off the coordinate components. So there is no obstruction: **the framework can carry any curved metric.**
@@ -208,7 +208,7 @@ $$
 mixing the time and $\vec e_x$ components as a boost must, whereas $[G,\tilde{Q}]$ is $2\epsilon(-iq_z\,\vec e_y + iq_y\,\vec e_z)$, a rotation in the $\vec e_y \vec e_z$ plane — a different transformation altogether. A biquaternionic covariant derivative must therefore be written in the two-sided form
 
 $$
-D_\mu \tilde{Q} = \partial/\partial Q_\mu \tilde{Q} + \vec\Gamma_\mu \tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*} ,
+\boxed{\;D_\mu \tilde{Q} = \partial/\partial Q_\mu \tilde{Q} + \vec\Gamma_\mu \tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}\;},
 $$
 
 with $\vec\Gamma_\mu$ in the Lie subspace; the natural abbreviation $D_\mu = \partial/\partial Q_\mu + [\vec\Gamma_\mu, \cdot]$ would be wrong for exactly the boosts, which is where the Lorentzian content of the theory lives.
@@ -278,11 +278,9 @@ $$
 
 identical in form to the flat massless equation. The **massive** equation is the chiral pair
 
-$$
-\not D\tilde\Psi_R = m\tilde\Psi_L,
+$$\boxed{\;\not D\tilde\Psi_R = m\tilde\Psi_L,
 \qquad
-\not D^{\natural}\tilde\Psi_L = m\tilde\Psi_R,
-$$
+\not D^{\natural}\tilde\Psi_L = m\tilde\Psi_R\;},$$
 
 where $\not D^{\natural}$ is the quaternion-conjugate operator, built from the conjugate frame and the conjugate connection and reducing to $\tilde\nabla^{\natural}$ when the frame is rigid and the connection vanishes. The mass term is unchanged: it is the field-independent, chirality-off-diagonal pairing of the parent, and the curvature enters only through the derivative. That is the structural point of the pair, and it is worth stating in the framework's language: the mass is a constant right multiplication acting between the two minimal left ideals, and no amount of frame or connection is needed to write it.
 
@@ -295,7 +293,7 @@ The **flat limit** is exact. If the frame is the rigid basis, $\tilde E_\mu = e_
 The **square** is the Lichnerowicz formula. Squaring the Dirac operator gives
 
 $$
-\not D^2 = \Box_g - \tfrac14 R,
+\boxed{\;\not D^2 = \Box_g - \tfrac14 R\;},
 $$
 
 where $\Box_g = \frac{1}{\sqrt{-\det g}}\,D_\mu\!\left(\sqrt{-\det g}\,g^{\mu\nu}D_\nu\right)$ is the Laplace–Beltrami operator acting on spinors and $R$ is the Ricci scalar (the statement is the standard one, in the sign convention of the cited literature). The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $-R/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $F_{\mu\nu}\Sigma^{\mu\nu}$, the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $-R/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant fourfold split in curved spacetime.

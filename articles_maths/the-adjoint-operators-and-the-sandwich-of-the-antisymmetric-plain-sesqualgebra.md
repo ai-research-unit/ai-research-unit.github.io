@@ -23,9 +23,11 @@ the left conjugate-linear and the right $\mathbb{C}$-linear, the operation being
 **Proposition (the vector part of the row multiplication).** For every $\tilde Q_5$,
 
 $$
+\boxed{\;
 L^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ L_{\tilde Q_5},
 \qquad
-R^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ R_{\tilde Q_5},
+R^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ R_{\tilde Q_5}
+\;},
 $$
 
 where $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$ and $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*}$ are the two one-sided multiplications of the general plain sesqualgebra of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
@@ -35,10 +37,12 @@ where $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$ and $R_{\tilde Q_5}(
 **Theorem (the companion and the conjugate-alternation).** The operators satisfy
 
 $$
+\boxed{\;
 R^{\diamond}_{\tilde Q_5}=-\overline{L^{\diamond}_{\tilde Q_5}},
 \qquad
 \text{equivalently}\qquad
-T_{\tilde Q_5}:=\overline{L^{\diamond}_{\tilde Q_5}}=-R^{\diamond}_{\tilde Q_5},
+T_{\tilde Q_5}:=\overline{L^{\diamond}_{\tilde Q_5}}=-R^{\diamond}_{\tilde Q_5}
+\;},
 $$
 
 where the bar is the coefficientwise conjugation of the value. The **companion** $T_{\tilde Q_5}$ is $\mathbb{C}$-**linear**, and the left operator is its conjugate, $L^{\diamond}_{\tilde Q_5}=\overline{T_{\tilde Q_5}}$.
@@ -208,8 +212,10 @@ The sandwich therefore carries the block in the first factor of its vector part 
 **Theorem (the composition laws).** For all biquaternions $\tilde Q_5,\tilde Q_3,\tilde Q_1$,
 
 $$
+\boxed{\;
 L^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)
-=\mathrm{Vect}\bigl(\tilde Q_5\tilde Q_1\tilde Q_3^{*}\bigr)-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde Q_5),
+=\mathrm{Vect}\bigl(\tilde Q_5\tilde Q_1\tilde Q_3^{*}\bigr)-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde Q_5)
+\;},
 $$
 
 $$

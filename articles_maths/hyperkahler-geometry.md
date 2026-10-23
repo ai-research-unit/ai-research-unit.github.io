@@ -7,8 +7,6 @@ A **hyperkähler manifold** is a Riemannian manifold carrying three complex stru
 
 The article is organised around three equivalent descriptions. The first is **complex**: three integrable complex structures with the quaternionic relations, related by a two-sphere of complex structures $\mathbb{I} = aJ_1+bJ_2+cJ_3$ on which the three Kähler forms combine into a two-sphere of Kähler forms. The second is **metric**: the holonomy group is contained in $Sp(n)$, the compact symplectic group, which is one of the entries in Berger's list of irreducible holonomy groups and is the Ricci-flat Kähler case. The third is **algebraic**, through the Bogomolov decomposition of a compact Kähler manifold with $c_1=0$ into tori, Calabi–Yau factors and irreducible hyperkähler factors, and through the hyperkähler quotient, which produces the new examples from old ones.
 
-**The boundaries of the article.** The quaternion algebra is that of Part I'sthe quaternionic structures, the Obata connection and the quaternionic Kähler condition are those of *Quaternionic Geometry*, which is the immediately preceding article of this half, and the Riemannian metric, the Levi-Civita connection, holonomy and Berger's classification are those of *Riemannian Geometry*. The complex structure, the Chern connection and the fundamental form are those of *Hermitian Geometry and Almost Complex Structures*, and the Kähler condition, the Hodge theory and the Ricci form those of *Kähler Geometry*. The Calabi–Yau condition and the Bogomolov decomposition are developed. The hyperkähler quotient and the twistor construction rely on the theory of moment maps for symplectic group actions, which is that of *Symplectic Geometry*, and on the analysis of the Monge–Ampère equation, which belongs to Part III, where the measure and the limit are available; the existence theorems are stated here and their proofs cited. The base field is $\mathbb{R}$ and no physics is invoked.
-
 ## Hyperkähler Structures
 
 **Definition.** A **hyperkähler manifold** is a Riemannian manifold $(M,g)$ together with a hypercomplex structure $(J_1,J_2,J_3)$ such that each $J_i$ is an isometry of $g$ and the fundamental form
@@ -152,8 +150,6 @@ The examples are the flat quaternionic spaces and their torus quotients, the com
 | $\nabla$, $\mathrm{Ric}$ | Levi-Civita connection and Ricci tensor (from *Riemannian Geometry*); $\mathrm{Ric}=0$ here |
 | ALE | Asymptotically locally Euclidean; the hyperkähler resolution of $\mathbb{C}^2/\Gamma$ |
 | Bogomolov decomposition | $M^{\mathrm{cov}} = T\times\prod Y_i\times\prod Z_j$ for a compact Kähler $M$ with $c_1=0$ |
-
-
 
 ## Further Reading
 

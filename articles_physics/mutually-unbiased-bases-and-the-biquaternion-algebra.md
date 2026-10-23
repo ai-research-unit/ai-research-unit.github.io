@@ -13,7 +13,7 @@ $$
 The mutual-unbiasedness condition therefore reads, in the algebra,
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr) = \frac{1}{d}
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr) = \frac{1}{d}\;}
 \qquad\text{for all } i,j \ \text{whenever } b\neq b_2 .
 $$
 
@@ -145,7 +145,7 @@ The pattern — identity blocks on the diagonal, constant blocks off it — is t
 Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)}=\langle\tilde{Ϛ},\tilde\Pi_i^{(b)}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})=\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative. Then
 
 $$
-\tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t ,
+\boxed{\;\tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t\;},
 $$
 
 for a state of unit trace (the matrix normalisation; for the qubit this is $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$), so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}$, and the formula above reconstructs it.

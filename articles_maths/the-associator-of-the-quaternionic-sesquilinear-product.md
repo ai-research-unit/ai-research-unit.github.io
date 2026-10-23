@@ -46,7 +46,7 @@ The defining difference is additivity in the three variables and nothing else, s
 **Theorem (the closed form).** For all biquaternions $\tilde Q_1, \tilde Q_2, \tilde Q_3$,
 
 $$
-[\tilde Q_1,\tilde Q_2,\tilde Q_3] = \overline{\tilde Q_2}\,\tilde Q_1\,\tilde Q_3^{*} - \tilde Q_1^{\natural}\,\tilde Q_3\,\overline{\tilde Q_2} ,
+\boxed{\; [\tilde Q_1,\tilde Q_2,\tilde Q_3] = \overline{\tilde Q_2}\,\tilde Q_1\,\tilde Q_3^{*} - \tilde Q_1^{\natural}\,\tilde Q_3\,\overline{\tilde Q_2} \;},
 $$
 
 where the products on the right are the plain products of the algebra.
@@ -88,7 +88,7 @@ Each term of the associator is a plain product of three factors, and each factor
 **Proposition.** The associator is $\mathbb{C}$-linear in the first variable,
 
 $$
-[\lambda\tilde Q_1,\tilde Q_2,\tilde Q_3] = \lambda[\tilde Q_1,\tilde Q_2,\tilde Q_3] .
+\boxed{\; [\lambda\tilde Q_1,\tilde Q_2,\tilde Q_3] = \lambda[\tilde Q_1,\tilde Q_2,\tilde Q_3] \;}.
 $$
 
 **Proof.** Both groupings are $\mathbb{C}$-linear in the first variable by the proposition above, and a difference of two linear maps is linear.
@@ -98,7 +98,7 @@ $$
 **Proposition.** The associator is conjugate-linear in the second variable,
 
 $$
-[\tilde Q_1,\lambda\tilde Q_2,\tilde Q_3] = \bar\lambda\,[\tilde Q_1,\tilde Q_2,\tilde Q_3] .
+\boxed{\; [\tilde Q_1,\lambda\tilde Q_2,\tilde Q_3] = \bar\lambda\,[\tilde Q_1,\tilde Q_2,\tilde Q_3] \;}.
 $$
 
 **Proof.** The plain product is $\mathbb{C}$-bilinear and the conjugation $\overline{\cdot}$ is conjugate-linear, so $\overline{\lambda\tilde Q} = \bar\lambda\,\overline{\tilde Q}$ and both groupings are conjugate-linear in the second variable.

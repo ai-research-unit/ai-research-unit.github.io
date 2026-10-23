@@ -4,11 +4,7 @@
 
 This article defines the elementary functions of a split-complex variable: the exponential, the logarithm, the powers and roots, and the trigonometric and hyperbolic functions. The hyperbolic pair is the intrinsic family of the algebra, and the circular pair is included for comparison with the complex and reduced biquaternion cases. Each function is defined once, its basic properties are recorded, and its value is read on the two eigenvalues.
 
-The spectral data are those of *Eigenvalue Decomposition of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*; they are collected in §*The Eigenvalue Data* and used without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of units are those of *Norm and Invertibility in the General Split-Complex Algebra*; the idempotents are those of *Square Roots of One and the Idempotents of the Split-Complex Algebra*.
-
-**Boundaries.** This article owns the exponential and the logarithm, with their domains, their fibres, their inverses and their derivatives, the power and root functions, and the trigonometric and hyperbolic functions. The higher special functions — the Gamma and Beta functions, the error function, the Airy and Bessel functions, the hypergeometric function and the Lambert $W$ function — are *Split-Complex Higher Special Functions*, which quotes the Idempotent Principle stated here. *Exponential Polar Decomposition of Split-Complex Numbers* cites the exponential and the logarithm and does not derive them. The polar decompositions themselves, the Lie group structure and the harmonic analysis are later articles; this one does not treat them.
-
-**Placement.** The article is in the Analysis group of the Split-Complex Numbers category, after *Split-Complex Analysis* and *Split-Complex Integration*, and before *Split-Complex Higher Special Functions*, *Split-Complex Harmonic Analysis* and *Split-Complex Exponential and Lie Group Structure*.
+The spectral data are those of *Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*; they are collected in §*The Eigenvalue Data* and used without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of units are those of *Norm and Invertibility in the General Split-Complex Algebra*; the idempotents are those of *Square Roots of One and the Idempotents of the Split-Complex Algebra*.
 
 **Plan.** The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§*The Spectral Setting*). The exponential and the logarithm follow, with their kernels, images and fibres (§*The Exponential*, §*The Logarithm*); the powers and roots follow from the logarithm (§*Powers and Roots*); the trigonometric and hyperbolic functions and their inverses follow (§*The Trigonometric and Hyperbolic Functions*); the relations to the real and complex cases close the theory (§*Relations to the Neighbouring Cases*). The results are collected in tables in §*Summary*, including the comparison with the reduced biquaternion and biquaternion cases.
 
@@ -20,7 +16,7 @@ Every numerical value displayed below was recomputed in double precision.
 
 ### The Eigenvalue Data
 
-The spectral data are those of *Eigenvalue Decomposition of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
+The spectral data are those of *Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
 
 | Quantity | Value |
 |---|---|
@@ -39,7 +35,7 @@ The idempotent coordinates and the eigenvalues are the same two numbers; this ar
 
 ### The Regimes
 
-The algebra has two spectral regimes, read from the discriminant $4q'^2$ of the characteristic polynomial; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenvalue Decomposition of a Split-Complex Number*, §*Degenerate Regimes*.
+The algebra has two spectral regimes, read from the discriminant $4q'^2$ of the characteristic polynomial; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenbasis of a Split-Complex Number*, §*Degenerate Regimes*.
 
 | Regime | Condition | Consequence for the functions |
 |---|---|---|
@@ -61,7 +57,7 @@ $$
 
 For a function defined by an integral, an inverse or another real formula, the same display is the definition of its split-complex extension: the formula is applied to the two eigenvalues, and the value is defined exactly when the real formula is defined at both $\lambda_\pm$.
 
-**Proof.** *Eigenvalue Decomposition of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Units*, gives $Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-$ for every $n\geq0$, with $\Pi_\pm$ orthogonal idempotents and $\Pi_++\Pi_-=1$. Summing termwise,
+**Proof.** *Eigenbasis of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Units*, gives $Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-$ for every $n\geq0$, with $\Pi_\pm$ orthogonal idempotents and $\Pi_++\Pi_-=1$. Summing termwise,
 
 $$
 \sum_{n\geq0}c_nQ^n
@@ -300,7 +296,7 @@ $$
 \frac{d}{dQ}\log Q=\frac{1}{\lambda_+}\Pi_++\frac{1}{\lambda_-}\Pi_-=\frac{1}{Q}.
 $$
 
-The last equality is the inverse formula of *Eigenvalue Decomposition of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Units*. Both eigenvalues are positive on the future cone, so no exceptional point occurs inside the domain.
+The last equality is the inverse formula of *Eigenbasis of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Units*. Both eigenvalues are positive on the future cone, so no exceptional point occurs inside the domain.
 
 ### Summary of the Logarithm
 
@@ -597,7 +593,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Split-Complex Number](eigenvalue-decomposition-of-a-split-complex-number.html), for the eigenvalue decomposition and the idempotent basis used throughout.
+- [Eigenbasis of a Split-Complex Number](eigenbasis-of-a-split-complex-number.html), for the eigenvalue decomposition and the idempotent basis used throughout.
 - [Split-Complex Higher Special Functions](split-complex-higher-special-functions.html), for the Gamma, Beta, error, Airy, Bessel, hypergeometric and Lambert $W$ functions.
 - [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), for the group reading of the exponential and the logarithm.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the geometric interpretation of split-complex numbers.

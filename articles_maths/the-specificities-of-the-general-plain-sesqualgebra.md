@@ -12,12 +12,6 @@ $$
 
 where $R^{\star}_{\tilde Q}(\tilde Q_1)=\tilde Q_1\star\tilde Q$ and the index $\tilde Q\tilde Q_2$ on the right is the **plain** product of the two parameters. The block satisfies C in the **forward** order, and it is the only structure of the twelve that does on the right. The plain product satisfies the **reversed** law, $R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}$, so its right multiplications give the **opposite** monoid, and its left multiplications give the monoid, in the forward order; the general quaternionic product carries its one-sided law on the **left**, in the reversed order, so it too gives the opposite monoid (*The Specificities of the General Quaternionic Algebra*); and the remaining nine structures satisfy no one-sided composition law at all. In the whole of the twelve there are therefore exactly three structures with a one-sided law, each on one side and in one order: the plain product, the general quaternionic product and the block. The block is the unique one in which the law is on the **right** and in the **forward** order, and it holds because its right multiplications are the **plain** right multiplications at the conjugated index, an **isotopy** of the plain algebra. Everything peculiar to the block on the operator side follows from this one identity: the projector family is indexed by the plain idempotents, the right ideals coincide with the plain right ideals, and the left multiplications, being conjugate-linear, have no projector but the zero operator.
 
-**Placement.** The article is the opening entry of the *Specific Theory* section of the block, and the closing entry of the family that *The Specificities of the Biquaternion Algebra* began and that *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra* continued, and it is the mirror of the general quaternionic entry: that article reads the **left** multiplications and the left ideals, this one reads the **right**.
-
-**Boundaries.** The product, its class, its table and its placement among the twelve are *Introduction to the General Plain Sesqualgebra*; the plain right and left multiplications $R_{\tilde Q_3}$, $L_{\tilde Q_4}$, their adjoints, their types and the double centraliser are *One-Sided Operators on the General Plain Sesqualgebra*, and their double-sided product is *Two-Sided Operators on the General Plain Sesqualgebra*. The twelve products of the twelve structures are *The 12 Products of the Biquaternion Complex Space*, and the general comparison is *The Specificities of the Biquaternion Algebra*. The norm, the zero-divisor set, the idempotents and the nilpotents are *Norm and Invertibility in the General Plain Sesqualgebra*, *Zero Divisors of the General Plain Sesqualgebra*, *Square Roots of One and the Idempotents of the General Plain Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*; the matrix model in which the dictionary below is the identity is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. Juxtaposition is the **plain** product $\tilde Q\tilde Q_2$ and $\star$ is the block, $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$, and $\eta$ is the involution ${}^{*}$ read as an operator, $\eta(\tilde Q)=\tilde Q^{*}$. The **left** and the **right multiplications of the block** by $\tilde Q$ are the operators
-
 $$
 L^{\star}_{\tilde Q}(\tilde Q_1)=\tilde Q\star\tilde Q_1,\qquad R^{\star}_{\tilde Q}(\tilde Q_1)=\tilde Q_1\star\tilde Q ,
 $$
@@ -29,7 +23,7 @@ the superscript $\star$ distinguishing them from the plain operators $L_{\tilde 
 **Theorem (the dictionary).** For every $\tilde Q$,
 
 $$
-R^{\star}_{\tilde Q}=R_{\tilde Q^{*}},\qquad L^{\star}_{\tilde Q}=L_{\tilde Q}\,\eta,\qquad R^{\star}_{\tilde Q}=\eta\,L^{\star}_{\tilde Q},\qquad L^{\star}_{\tilde Q}=\eta\,R^{\star}_{\tilde Q} .
+\boxed{\;R^{\star}_{\tilde Q}=R_{\tilde Q^{*}},\qquad L^{\star}_{\tilde Q}=L_{\tilde Q}\,\eta,\qquad R^{\star}_{\tilde Q}=\eta\,L^{\star}_{\tilde Q},\qquad L^{\star}_{\tilde Q}=\eta\,R^{\star}_{\tilde Q}\;}.
 $$
 
 The right multiplication of the block is the **plain right multiplication at the conjugated index**; the left multiplication of the block is the **plain left multiplication composed with the involution**, hence conjugate-linear; and the involution $\eta$ carries each one-sided family to the other, $R^{\star}_{\tilde Q}=\eta\circ L^{\star}_{\tilde Q}$ and $L^{\star}_{\tilde Q}=\eta\circ R^{\star}_{\tilde Q}$.
@@ -55,7 +49,7 @@ and they satisfy the **reversed** law when $R^{\circ}_{\tilde Q}R^{\circ}_{\tild
 **Theorem (the criterion).** The block satisfies the right-composition law, with the index read in the plain product of the two parameters:
 
 $$
-R^{\star}_{\tilde Q}R^{\star}_{\tilde Q_2}=R^{\star}_{\tilde Q\tilde Q_2}\qquad\text{for all }\tilde Q,\tilde Q_2 .
+\boxed{\;R^{\star}_{\tilde Q}R^{\star}_{\tilde Q_2}=R^{\star}_{\tilde Q\tilde Q_2}\qquad\text{for all }\tilde Q,\tilde Q_2\;}.
 $$
 
 *Proof.* By the dictionary $R^{\star}_{\tilde Q}R^{\star}_{\tilde Q_2}=R_{\tilde Q^{*}}R_{\tilde Q_2^{*}}=R_{\tilde Q_2^{*}\tilde Q^{*}}$, the plain composition law being the reversed one. And $\tilde Q_2^{*}\tilde Q^{*}=(\tilde Q\tilde Q_2)^{*}$, because ${}^{*}$ is an anti-automorphism; so the composite is $R_{(\tilde Q\tilde Q_2)^{*}}=R^{\star}_{\tilde Q\tilde Q_2}$, which is the display.
@@ -97,7 +91,7 @@ Only three of the twelve carry a one-sided law, each on one side: the plain prod
 **Theorem (the right ideals coincide and the left ones do not).** Let $I$ be a subspace of $\mathbb{B}$. Then
 
 $$
-I\ \text{is a right ideal of }\star\iff I\ \text{is a right ideal of the plain product},
+\boxed{\;I\ \text{is a right ideal of }\star\iff I\ \text{is a right ideal of the plain product}\;},
 $$
 
 and

@@ -5,8 +5,8 @@
 Every biquaternion off the null cone is the ordered product of four factors: a positive scale, a central phase, a Hermitian boost and a real quaternion rotor,
 
 $$
-\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+\boxed{\;\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}.
 $$
 
 The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the algebra. The word is a change of coordinates on the complement of the zero-divisor cone, not a dynamical decomposition: it says what an element is at one instant and not how it evolves.
@@ -86,9 +86,9 @@ The four-factor word is the reference. The three pairings are its three bracketi
 The quaternion pairing writes the element as a **real quaternion modulus** times the exponential of a **real quaternion angle**:
 
 $$
-\tilde Q=\tilde q\,\exp(i\tilde\Psi), \qquad
+\boxed{\;\tilde Q=\tilde q\,\exp(i\tilde\Psi), \qquad
 \tilde q=r\,\tilde u_{\mathrm r}, \qquad
-\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\;}.
 $$
 
 The modulus is an ordinary quaternion in its polar form, and it is the spatial frame. The exponent has scalar part $\alpha$ and pure part $\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$, with the boost axis rotated by the rotor. The reading is developed in *The Three Polar Factors*, §*The Quaternion Factor*.
@@ -98,10 +98,10 @@ The modulus is an ordinary quaternion in its polar form, and it is the spatial f
 The Hamilton pairing writes the element as a modulus times a complex cosine plus a complex axis times the complex sine:
 
 $$
-\tilde Q=\Rho\bigl(\cos\Theta+\vec\Xi\sin\Theta\bigr), \qquad
+\boxed{\;\tilde Q=\Rho\bigl(\cos\Theta+\vec\Xi\sin\Theta\bigr), \qquad
 \Rho=\sqrt N, \qquad
 \vec\Xi=\frac{\vec Q}{B}, \qquad
-B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}.
+B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}\;}.
 $$
 
 The modulus is the only central scalar of the three pairings. The axis and the angle carry the boost and the rotor; on aligned axes the real part of $\Theta$ is half the rotation and the imaginary part is half the word's rapidity $\psi_w$, and in general the two do not separate. The physical reading — the mass for a four-momentum, the amplitude otherwise — is developed in *The Hamilton Pairing*, §*The Central Modulus*.
@@ -111,9 +111,9 @@ The modulus is the only central scalar of the three pairings. The axis and the a
 The Cartan pairing writes the element as a **Hermitian positive factor** times a **unitary factor**:
 
 $$
-\tilde Q=\tilde H\tilde U, \qquad
+\boxed{\;\tilde Q=\tilde H\tilde U, \qquad
 \tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b}, \qquad
-\tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}.
+\tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}\;}.
 $$
 
 The first factor is the amplitude, the part that changes norms and not phases; the second is the phase, the part that preserves the inner product. The state reading is developed in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*.

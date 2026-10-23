@@ -7,8 +7,6 @@ This article is the hyperbolic-geometric slot of the split biquaternion system. 
 
 The two-dimensional analogue is the hyperbolic geometry of the split complex plane, treated in *Hyperbolic Rotations* and in *Hyperbolic Geometry* in Part II; the general theory of hyperbolic manifolds, of their geodesics and of their boundaries is the subject of *Hyperbolic Geometry* and of *Pseudo-Riemannian and Lorentzian Geometry*, written in parallel, and is cited rather than reproduced. The corresponding construction for the biquaternion algebra, in which hyperbolic three-space appears through Hermitian matrices and $SL_2(\mathbb{C})$, is the subject of *Topology in the Space of Biquaternions* and of the written biquaternion articles; the present article is the split biquaternion realisation and not that one. The quaternion sphere $S^3$ is used as the comparison object throughout, as in *Quaternion Geometry*.
 
-**Conventions.** The split biquaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with the basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and the central split complex unit $j$, $j^2 = +e_t$. The Hermitian scalar form is $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the corpus's $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, of signature $(4,4)$ on $\mathbb{H}_{\mathbb{D}}$; its restrictions to the Hermitian subspace $\mathbb{M}_+$ and to the anti-Hermitian subspace $\mathbb{M}_-$ have signatures $(1,3)$ and $(3,1)$. The anti-Hermitian subspace is
-
 $$
 \mathbb{M}_- = \left\{a\,je_t + v : a\in\mathbb{R},\ v\in\operatorname{Im}\mathbb{H}\right\}
 = \left\{a\,je_t + v_1\vec e_x + v_2\vec e_y + v_3\vec e_z\right\},

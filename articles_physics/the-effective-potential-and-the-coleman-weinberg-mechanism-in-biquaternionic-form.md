@@ -34,8 +34,6 @@ The findings are the following, and they are separated at the outset in the corp
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauging of the central phase.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_k\,\partial/\partial Q_k$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - \vec e_k\,\partial/\partial Q_k$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The scalar is $\tilde{\Phi} = \varphi\,e_t$ with $\varphi$ complex and $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$; the connection is $\tilde{A} = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ with $A_0$ imaginary and $\vec A$ real, and the covariant derivative of the gauge-principle article is $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$ with $\kappa = ϙ/\hbar$. The $ict'$ metric for index contractions is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and $\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\Phi^{*}\,\tilde\nabla\tilde\Phi\bigr)$ denotes the Lorentz-invariant contraction in that metric. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged. In the loop integrals of this article we set $\hbar = c = 1$ and restore $\hbar$ only where the gauge-boson mass is quoted; the effective-potential loop integrals are conventionally written in that system. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
-
 ## The Invariant Potential and Its Symmetry
 
 The scalar sector of the framework is a single complex central field, and its symmetry is the unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\varphi\mapsto \exp(i\alpha)\varphi$ and real as a density is an arbitrary function of the invariant $\rho = \varphi^*\varphi = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$,
@@ -73,7 +71,6 @@ $$
 and a vanishing angular mass, $m_\theta^2 = 0$: the potential depends on the modulus alone, so the phase direction is exactly flat. The angular field is the would-be Goldstone boson of the broken central $\mathrm{U}(1)$, and the companion article on Goldstone's theorem derives its masslessness, its derivative couplings and its decay constant $f = \sqrt2\,v_0$ from the same potential.
 
 Two features of this potential matter for what follows. First, its **normalization** is fixed by the two parameters $\lambda$ and $v_0$, and the quartic coupling $\lambda$ is dimensionless while $v_0$ carries the dimension of mass. Second, at $v_0 = 0$ the potential is $\frac{\lambda}{4}\rho^2$: it is **scale invariant** at the classical level, its minimum is the degenerate point $\rho=0$, and no scale is present in the classical theory. It is this second case that the Coleman–Weinberg mechanism addresses.
-
 
 ## The Effective Action, the Constant Field and the Effective Potential
 
@@ -180,7 +177,7 @@ the scheme constants $c_i$ entering only the terms without the logarithm. The co
 Set the tree-level scale $v_0 = 0$, so that the classical potential is the scale-invariant $\frac{\lambda}{4}\rho^2$ and the classical theory has no scale. The renormalized one-loop effective potential is then
 
 $$
-\mathcal{V}_\text{eff}(\rho) = \frac{\lambda}{4}\rho^2 + B\,\rho^2\ln\frac{\rho}{\mu^2} + \cdots,
+\boxed{\;\mathcal{V}_\text{eff}(\rho) = \frac{\lambda}{4}\rho^2 + B\,\rho^2\ln\frac{\rho}{\mu^2} + \cdots\;}
 $$
 
 where the omitted terms are scheme-dependent constants times $\rho^2$ and higher powers of $\rho$; they do not affect the existence or the leading location of the minimum. The potential is the classical quartic term corrected by a term whose coefficient is the fourth power of the fluctuation mass, and the competition between them is the mechanism.
@@ -195,9 +192,9 @@ $$
 The point $\rho = 0$ is stationary for every $\lambda$ and $B$. A second stationary point exists when the bracket vanishes,
 
 $$
-\ln\frac{\langle \rho\rangle}{\mu^2} = -\frac12 - \frac{\lambda}{4B},
+\boxed{\;\ln\frac{\langle \rho\rangle}{\mu^2} = -\frac12 - \frac{\lambda}{4B},
 \qquad\Longrightarrow\qquad
-\langle \rho\rangle = \mu^2\exp\!\left(-\frac12 - \frac{\lambda}{4B}\right).
+\langle \rho\rangle = \mu^2\exp\!\left(-\frac12 - \frac{\lambda}{4B}\right)\;}.
 $$
 
 Its curvature is read from the second derivative,
@@ -223,7 +220,6 @@ Three features of the result are standard and are worth separating.
 1. **Dimensional transmutation.** The location of the minimum is $\langle \rho\rangle = \mu^2 \exp(-1/2)\exp\!\left(-\lambda/(4B)\right)$, which depends on the dimensionless couplings $\lambda$ and $ϙ$ only through the combination $\lambda/B$, and is exponentially small when the couplings are perturbative. A dimensionless coupling has been traded for a dimensionful scale: the theory has no classical scale, and the scale of the vacuum is generated by the running of the couplings between $\mu$ and $\langle \rho\rangle$. This is the standard interpretation of the Coleman–Weinberg result.
 2. **The mass of the radial mode.** In the physical radial coordinate the curvature at the minimum is $m_h^2 = \frac{d^2\mathcal{V}}{d\phi_1^2} = \frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\rho)\cdot 2\rho = 4B\langle \rho\rangle$, so the Higgs mass is of the same radiatively generated order as the vacuum expectation value, $m_h^2/\langle\phi_1\rangle^2 = 2B$. The hierarchy between the two is a one-loop coefficient, not a small parameter.
 3. **The role of the gauge loop.** For $\lambda \ll ϙ^2$ the minimum is dominated by the gauge contribution, $\ln(\langle \rho\rangle/\mu^2) \approx -\lambda/(4B) \approx -\tfrac{4\pi^2\lambda}{3 ϙ^4}$, the standard Coleman–Weinberg relation. The sign of the effect is the sign of $B$, and a purely scalar theory would have $B = \tfrac{5\lambda^2}{128\pi^2} > 0$ as well; what the gauge field changes is not the sign but the relative size, and in the physically relevant regime it dominates.
-
 
 ## Renormalization-Scale Dependence
 

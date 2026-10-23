@@ -9,8 +9,6 @@ The operator is the second of the operator group, and it is the local operation 
 
 **The article assumes** the homology and cohomology of a manifold, the intersection form and the signature of *Poincaré Duality*, the boundary operator and the chain complexes of *Simplicial and Singular Homology*, and the fundamental group and its cell attachments of *The Fundamental Group and Covering Spaces* and *CW Complexes and Cellular Approximation*, all of *Algebraic Topology*.
 
-**The boundaries of the article.** The general theory — the surgery exact sequence, the Wall $L$-groups, the structure set, the $h$- and $s$-cobordism theorems and the group of homotopy spheres — is *Cobordism and Surgery Theory*, and is cited here rather than developed. The attachment of a single handle and its Morse-theoretic reading are *The Handle Operator*, the local companion of this article. The equivariant version, in which the surgery respects an involution, is *Involutions on Manifolds and Equivariant Surgery*. The normal bundle of a non-framed embedding, and the Pontryagin–Thom theory of the normal invariants, use the fibre bundles of Part III and are named there; the article works with product neighbourhoods. Smooth structures and the analytic proofs of the obstruction theorems are Part III, and no physics is invoked.
-
 ## The Surgery Operator
 
 **Definition.** Let $M$ be a closed connected oriented $n$-manifold. A **surgery datum** is an embedding

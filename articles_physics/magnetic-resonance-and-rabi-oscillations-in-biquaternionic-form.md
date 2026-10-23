@@ -116,7 +116,7 @@ $$
 with
 
 $$
-\Omega = \sqrt{\omega_1^2 + \Delta^2}
+\boxed{\;\Omega = \sqrt{\omega_1^2 + \Delta^2}\;}
 $$
 
 the **generalized Rabi frequency**. Every quantity in the driven problem has now been reduced to a single real vector $\vec u_R$ on the unit sphere and a single frequency $\Omega$: the effective Hamiltonian is a spin observable along $\vec u_R$ with coupling $\hbar\Omega/2$, exactly the structure of a static spin in a field.
@@ -153,8 +153,8 @@ $$
 The exponent is a real quaternion, so $\tilde u_H\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}(t') = \tilde u_{\mathrm r}(t')\tilde{Ϛ}_R(t')\tilde u_{\mathrm r}(t')^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
 
 $$
-P_{\downarrow}(t') = \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u_z)\,\tilde{Ϛ}(t')\right)
-= \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\sqrt{\omega_1^2+\Delta^2}}{2}\,t'\right).
+\boxed{\;P_{\downarrow}(t') = \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u_z)\,\tilde{Ϛ}(t')\right)
+= \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\sqrt{\omega_1^2+\Delta^2}}{2}\,t'\right)\;}.
 $$
 
 This is the **Rabi formula**. On resonance it simplifies to
@@ -194,7 +194,7 @@ The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_1(\vec u_z)
 The state at any time can be written $\tilde{Ϛ}(t') = \tfrac12(e_t + i\vec r(t'))$, with $\vec r(t')$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde H_1,\tilde H_2] = -2(\vec h_1\times\vec h_2)$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
 
 $$
-d\vec r/dt' = \vec\omega_{\mathrm{eff}}\times\vec r,
+\boxed{\;d\vec r/dt' = \vec\omega_{\mathrm{eff}}\times\vec r\;},
 \qquad
 \vec\omega_{\mathrm{eff}} = (-\omega_1, 0, -\Delta),
 $$

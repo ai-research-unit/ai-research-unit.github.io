@@ -18,7 +18,7 @@ Throughout, a lattice is written $(L, \wedge, \vee)$ with meet $\wedge$ and join
 The two operations are related to the order by the equivalences
 
 $$
-a \wedge b = a \iff a \leq b \iff a \vee b = b,
+\boxed{\;a \wedge b = a \iff a \leq b \iff a \vee b = b\;},
 $$
 
 which is the form in which inequalities are verified in a lattice. Written as equations, the operations satisfy the **lattice laws**
@@ -92,7 +92,7 @@ Uniqueness is what makes $\neg$ an operation and not merely a relation, and it i
 **Theorem.** Let $B$ be a Boolean algebra and $\alpha, \beta \in B$. Then
 
 $$
-\neg \neg \alpha = \alpha, \qquad \neg 0 = 1, \qquad \neg 1 = 0, \qquad \neg(\alpha \wedge \beta) = \neg \alpha \vee \neg \beta, \qquad \neg(\alpha \vee \beta) = \neg \alpha \wedge \neg \beta,
+\boxed{\;\neg \neg \alpha = \alpha, \qquad \neg 0 = 1, \qquad \neg 1 = 0, \qquad \neg(\alpha \wedge \beta) = \neg \alpha \vee \neg \beta, \qquad \neg(\alpha \vee \beta) = \neg \alpha \wedge \neg \beta\;},
 $$
 
 and
@@ -160,7 +160,7 @@ there being one for each exponent vector $e$, hence exactly $2^n$ of them.
 **Theorem (algebraic normal form).** Every Boolean function $f$ of $n$ variables has a unique expression
 
 $$
-f(\alpha) = \bigoplus_{e \in \mathbf{2}^n} c_e \, \alpha^{e}, \qquad c_e \in \mathbb{F}_2,
+\boxed{\;f(\alpha) = \bigoplus_{e \in \mathbf{2}^n} c_e \, \alpha^{e}, \qquad c_e \in \mathbb{F}_2\;},
 $$
 
 where $\oplus$ is addition in $\mathbb{F}_2$ and the product is taken in $\mathbb{F}_2$.

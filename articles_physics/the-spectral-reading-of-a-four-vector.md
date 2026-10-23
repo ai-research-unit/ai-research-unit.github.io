@@ -4,19 +4,15 @@
 
 The eigenvalue decomposition of a four-momentum returns two complex numbers. They are not two energies and not two particles. They are the two light-cone frequencies of one momentum, and their product is the mass squared.
 
-The statement is a reading, not a theorem. The spectrum, the eigenprojections and the two-term writing are those of *Eigenvalue Decomposition of a Biquaternion*. The material sector and the four-vector dictionary are those of *The Material Sector: Four-Vectors, Interval and Lorentz Action*. This article owns the interpretation: what the pair means, how it transforms, and what it does not mean.
-
-**Placement.** The article belongs to the Algebra block of the category, after *The Material Sector: Four-Vectors, Interval and Lorentz Action*. It is the spectral companion of that article: the material sector supplies the four-vector and the interval, and this article supplies the eigenpair and the Doppler reading.
-
-**Conventions.** A four-momentum in the material sector is $\tilde P=i\frac{E}{c}e_t+\vec p$, with $E$ the energy, $\vec p$ the spatial momentum, $m$ the mass, and $c$ the speed of light. The vector part is $\vec p=p_x\vec e_x+p_y\vec e_y+p_z\vec e_z$ with real coefficients, $B=\lvert\vec p\rvert$, and $\vec u_p=\vec p/B$ for $B\neq0$. The biquaternion norm is $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $Q_t=iE/c$, and the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ with $\vec\Xi=-i\vec u_p$.
+The statement is a reading, not a theorem. The spectrum, the eigenprojections and the two-term writing are those of *Eigenbasis of a Biquaternion*. The material sector and the four-vector dictionary are those of *The Material Sector: Four-Vectors, Interval and Lorentz Action*. This article owns the interpretation: what the pair means, how it transforms, and what it does not mean.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The spectrum, the eigenprojections and the two-term writing | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
-| The degenerate regimes, including the scalar and zero-divisor cases | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
-| The Hermitian case and the Hermitian idempotents | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
+| The spectrum, the eigenprojections and the two-term writing | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
+| The degenerate regimes, including the scalar and zero-divisor cases | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
+| The Hermitian case and the Hermitian idempotents | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
 | The four-vector dictionary and the interval | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The boost spectrum and the Doppler factors | [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) |
 | The zero-divisor cone and the massless spectrum | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) |
@@ -26,8 +22,8 @@ The statement is a reading, not a theorem. The spectrum, the eigenprojections an
 With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are
 
 $$
-\lambda_\pm=i\left(\frac{E}{c}\pm B\right)
-=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right).
+\boxed{\;\lambda_\pm=i\left(\frac{E}{c}\pm B\right)
+=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;}.
 $$
 
 Write $\nu_\pm=\lambda_\pm/i$. The pair $\nu_\pm$ is real and non-negative,
@@ -49,9 +45,9 @@ $$
 and the pair takes the compact form
 
 $$
-\nu_\pm=mc\,e^{\pm\psi},
+\boxed{\;\nu_\pm=mc\,e^{\pm\psi},
 \qquad
-\lambda_\pm=i\,mc\,e^{\pm\psi}.
+\lambda_\pm=i\,mc\,e^{\pm\psi}\;}.
 $$
 
 This is the **Doppler pair**: the two frequencies are the rest frequency $mc$ scaled by the two reciprocal Doppler factors of the momentum's own rapidity. The sum, the difference, the product and the ratio are the four physical invariants of the pair.
@@ -87,8 +83,8 @@ $$
 and the decomposition is
 
 $$
-\tilde P=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
-=i\,mc\left(e^{\psi}\tilde\Pi_++e^{-\psi}\tilde\Pi_-\right).
+\boxed{\;\tilde P=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+=i\,mc\left(e^{\psi}\tilde\Pi_++e^{-\psi}\tilde\Pi_-\right)\;}.
 $$
 
 Each term is a complex multiple of a minimal idempotent, hence a null element. The two terms are the two **lightlike components** of the momentum, and the coefficients are the Doppler-scaled rest frequencies. In light-cone coordinates the writing is the standard split of a timelike vector into two null vectors,
@@ -139,7 +135,7 @@ The transformation law is the reason for the name. The two coefficients are the 
 
 ### The Rest Frame
 
-At $\vec p=0$ the rapidity vanishes, $\nu_\pm=mc$, and the two eigenvalues coincide at $imc$. The element is the scalar $i\frac{E}{c}e_t$ with $E=mc^2$, so the degeneracy is the scalar, diabolic regime of *Eigenvalue Decomposition of a Biquaternion*. The two-term writing still holds, but it is not unique: every complementary pair of Hermitian idempotents gives
+At $\vec p=0$ the rapidity vanishes, $\nu_\pm=mc$, and the two eigenvalues coincide at $imc$. The element is the scalar $i\frac{E}{c}e_t$ with $E=mc^2$, so the degeneracy is the scalar, diabolic regime of *Eigenbasis of a Biquaternion*. The two-term writing still holds, but it is not unique: every complementary pair of Hermitian idempotents gives
 
 $$
 i\,mc\left(\tilde\Pi_++\tilde\Pi_-\right)=i\,mc\,e_t,
@@ -289,7 +285,7 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the eigenprojections and the degenerate regimes.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections and the degenerate regimes.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vector dictionary and the mass shell.
 - [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the boost spectrum and the Doppler factors.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the massless limit and the null stratum.

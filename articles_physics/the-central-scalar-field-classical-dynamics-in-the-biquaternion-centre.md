@@ -21,8 +21,6 @@ has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{\Phi}=-g\rho\,e_t$, where 
 
 The article closes by identifying why a central scalar field carries no intrinsic magnetism, and by separating what the algebra supplies from what it imports.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta=-c^{-2}\,\partial^2/\partial {t'}^2+\Delta$, the series convention of the companion article *Conventions in the Biquaternion Universe*. The mass parameter is $\mu=mc/\hbar$, the inverse Compton wavelength, exactly as in the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*; classically only the length $\mu^{-1}$ matters and $\hbar$ enters only through the identification of $\mu$ with a mass. The four-position is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The source density is $\rho$, the source strength $Ϙ$, and the couplings are $g$ for the field and $g_{\mathrm t}$ for the test source. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value.
-
 ## The Centre as the Scalar's Value Space
 
 ### The Centre and Its Properties
@@ -87,7 +85,7 @@ $$
 that is,
 
 $$
-\boxed{\;\left(\Box-\mu^2\right)\tilde{\Phi}=-g\rho\,e_t .\;}
+\boxed{\;\left(\Box-\mu^2\right)\tilde{\Phi}=-g\rho\,e_t\;}.
 $$
 
 The operator $\Box-\mu^2$ is a **central scalar** differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.
@@ -142,7 +140,7 @@ with $r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$. The scale $\mu^{-1}$ is the **ra
 Let the source be a point of strength $Ϙ$ at the origin, $\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=Ϙ\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The static field is
 
 $$
-\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=gQ\,G_\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r},
+\boxed{\ \phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=gQ\,G_\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\ },
 \qquad\text{that is}\qquad
 \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_t ,
 $$
@@ -210,7 +208,7 @@ The divergence is the classical self-energy of the point-source idealization and
 Let a test source of coupling $g_{\mathrm t}$ and unit strength be placed in the field of the point source. The interaction Lagrangian of the test source is $g_{\mathrm t}\rho_2\,\phi$ with $\rho_2$ its density, so its potential energy in the field is
 
 $$
-E(r)=-g_{\mathrm t}\,\phi(r)=-\frac{g\,g_{\mathrm t}Ϙ\,\exp(-\mu r)}{4\pi r}=-\frac{\kappa\,\exp(-\mu r)}{r},
+\boxed{\ E(r)=-g_{\mathrm t}\,\phi(r)=-\frac{g\,g_{\mathrm t}Ϙ\,\exp(-\mu r)}{4\pi r}=-\frac{\kappa\,\exp(-\mu r)}{r}\ },
 \qquad \kappa=\frac{g\,g_{\mathrm t}Ϙ}{4\pi}>0 ,
 $$
 

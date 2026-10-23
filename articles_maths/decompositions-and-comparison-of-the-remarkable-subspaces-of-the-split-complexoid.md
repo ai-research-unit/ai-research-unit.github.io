@@ -6,8 +6,6 @@ This article reads the **two involutions** of the split-complex algebra as a gro
 
 The subspaces themselves — their bases, their intersections, their sums, the action of the involution on each and the restricted norm — are *Split-Complexoid Subspaces*, which owns the line-by-line theory; this article takes the two subspaces and the two decompositions as its object and compares them. The complex two are *Decompositions and Comparison of the Remarkable Subspaces of the Complex Numbers*. The products that decide the closure questions are *The Two Products of the Split-Complexoid Space*, both products read on the subspaces being *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The norm is *Norm and Invertibility in the General Split-Complex Algebra*; the idempotents and the ideals are *Square Roots of One and the Idempotents of the Split-Complex Algebra* and *Ideals and Peirce Decomposition of the Split-Complex Algebra*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$ with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$. The real subspace is $\mathbb{R}_{\mathbb{D}}=\{q\}$ and the split imaginary subspace is $j\mathbb{R}_{\mathbb{D}}=\{jq'\}$.
-
 ## The Two Involutions and Their Group
 
 An **involution** of $\mathbb{D}$ is an $\mathbb{R}$-algebra automorphism $\sigma$ with $\sigma^2=\mathrm{id}$ — an algebra map that is its own inverse. The algebra carries two of them:
@@ -45,7 +43,7 @@ It carries no content; it is recorded for completeness, as the first row of the 
 **The decomposition of the conjugation.** The conjugation cuts $\mathbb{D}$ into the real line and the split imaginary line:
 
 $$
-\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad Q = q_r + jq_i, \qquad q_r = \tfrac12(Q+\bar Q), \quad q_i = \tfrac12 j^{-1}(Q-\bar Q) = q' .
+\boxed{\; \mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad Q = q_r + jq_i, \qquad q_r = \tfrac12(Q+\bar Q), \quad q_i = \tfrac12 j^{-1}(Q-\bar Q) = q' \;}.
 $$
 
 The two **projections** are $\tfrac12(Q+\bar Q)=q$ onto the real line and $\tfrac12(Q-\bar Q)=jq'$ onto the split imaginary line, and each is $\mathbb{R}$-linear and idempotent; their sum is the identity. This is the content-bearing decomposition of the elementary conjugation, the two-dimensional shadow of the scalar–vector decomposition of the four-dimensional algebra.
@@ -53,7 +51,7 @@ The two **projections** are $\tfrac12(Q+\bar Q)=q$ onto the real line and $\tfra
 **The finer idempotent decomposition.** The idempotent basis gives a second decomposition of the plane,
 
 $$
-\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad Q = q_+\Pi_1 + q_-\Pi_2, \qquad q_+ = q+q', \quad q_- = q-q',
+\boxed{\; \mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad Q = q_+\Pi_1 + q_-\Pi_2, \qquad q_+ = q+q', \quad q_- = q-q' \;},
 $$
 
 whose members are the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. It is **not** induced by an involution of the algebra: the two lines are not the fixed and anti-fixed lines of any algebra involution, because the only non-trivial involution interchanges them and has for eigenspaces the two earlier lines. (As a real-linear involution the diagonal map $\mathrm{diag}(1,-1)$ in the idempotent basis does have them for eigenspaces, but it is not an algebra map, since it does not preserve the unit.) The four lines are the four one-dimensional subspaces of the plane, and the two decompositions are the two ways of pairing them:

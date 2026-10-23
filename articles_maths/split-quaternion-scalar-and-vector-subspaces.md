@@ -13,8 +13,6 @@ which is the coarsest decomposition of the algebra and the source of nearly ever
 
 The article establishes the definitions and a basis for each subspace; shows that the two descriptions of $S$ and $V$ — as eigenspaces of the conjugation and as the scalar line and the span of the vector units — coincide; examines the algebra and module structure, in particular the failure of $V$ to be a subalgebra and its structure as a Lie algebra under the commutator; restricts the split-quaternion norm to each subspace and identifies the Minkowski form of signature $(2,1)$ on $V$; gives the matrix images of both; follows the three involutions through them; and records their relations with the remaining distinguished subspaces. It closes with worked examples.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, \vec e_x, \vec e_y, \vec e_z$, the relations $\vec e_x^2 = -e_t$, $\vec e_y^2 = +e_t$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$, and a general element $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ with polarisation $\langle\cdot,\cdot\rangle_{\natural}$, and the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Algebra*. The split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ and $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$.
-
 ## Definition and Basis
 
 **Definition.** The **scalar subspace** and the **vector subspace** of $\mathbb{H}_{\mathrm{s}}$ are
@@ -36,8 +34,10 @@ The scalar and vector subspaces are exactly the eigenspaces of the conjugation.
 **Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{s}}$, the conjugation satisfies $\tilde{q}^{\natural} = \tilde q$ if and only if $\tilde q \in S$, and $\tilde{q}^{\natural} = -\tilde q$ if and only if $\tilde q \in V$. Hence the scalar–vector decomposition is the eigenspace decomposition
 
 $$
-\mathbb{H}_{\mathrm{s}} = S \oplus V, \qquad S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\}, \qquad V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}.
-$$
+\boxed{\;
+\mathbb{H}_{\mathrm{s}} = S \oplus V, \qquad S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\}, \qquad V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}
+\;}
+$$.
 
 **Proof.** Since $\bar{1} = 1$ and $\vec e_\mu^{\natural} = -\vec e_\mu$, the conjugation acts as $+1$ on $S$ and as $-1$ on $V$; conversely, writing $\tilde q = q_t + \vec v$, the condition $\tilde{q}^{\natural} = \tilde q$ reads $-2\vec v = 0$, i.e. $\vec v = 0$, and the condition $\tilde{q}^{\natural} = -\tilde q$ reads $2q_t = 0$, i.e. $q_t = 0$.
 
@@ -56,8 +56,10 @@ The centre is therefore a field, namely $\mathbb{R}$, and $S$ is the only commut
 **The vector subspace is not a subalgebra.** The square of a vector leaves $V$: $\vec e_x^2 = -e_t$ and $\vec e_y^2 = +e_t$ are scalars, and $\vec e_z^2 = +e_t$. In general, for $\vec q, \vec q_1 \in V$ the product splits as
 
 $$
-\vec q\vec q_1 = -B(\vec q, \vec q_1) \cdot 1 + \tfrac{1}{2}[\vec q, \vec q_1],
-$$
+\boxed{\;
+\vec q\vec q_1 = -B(\vec q, \vec q_1) \cdot 1 + \tfrac{1}{2}[\vec q, \vec q_1]
+\;}
+$$,
 
 with scalar part $-B(\vec q,\vec q_1)$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; for instance $\vec e_x \vec e_y = \vec e_z \in V$ but $\vec e_y \vec e_x = -\vec e_z$, while $\vec e_x^2 = -e_t \in S$. So $V$ is closed neither under the product nor under taking squares, and it is not a subalgebra of $\mathbb{H}_{\mathrm{s}}$.
 
@@ -90,8 +92,10 @@ a positive-definite form of rank $1$; it vanishes only at $q_t = 0$, so every no
 **On the vector subspace.** For $\vec q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ the restriction is
 
 $$
-\langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2,
-$$
+\boxed{\;
+\langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2
+\;}
+$$,
 
 a form of **signature $(2,1)$** in the basis $\vec e_x, \vec e_y, \vec e_z$: one direction of square $+1$ and two of square $-1$. It is the three-dimensional **Minkowski form**, and it is indefinite and non-degenerate. Its null cone in $V$ is
 

@@ -12,8 +12,6 @@ The algebra, the dagger and the remarkable subspaces are *The Biquaternion Algeb
 
 ## Conventions and the Isometry Condition
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_{t}=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$, written $\tilde Q=Q_te_t+\vec Q$ with vector part $\vec Q=\sum_{\nu\in\{x,y,z\}}Q_\nu\vec e_\nu$. The Hermitian conjugation is the anti-involution ${}^{*}$, of fixed space the Hermitian subspace $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$; in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ it is the conjugate transpose. The general plain sesquilinear form is
-
 $$
 \langle\tilde S,\tilde Q_1\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1^{*}\tilde S\bigr)=\sum_\mu Q_{1\mu}^{*}S_\mu,
 $$
@@ -29,7 +27,7 @@ which in the matrix model is the unitary group $\mathrm{U}(2)$, compact, of real
 **Theorem (the isometry condition).** For $\tilde Q$ in $\mathbb{B}$ the operator $\Theta_{\tilde Q}$ preserves the form,
 
 $$
-\langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde Q_1\rangle_{*}=\langle\tilde S,\tilde Q_1\rangle_{*}\quad\text{for all }\tilde Q_1,\tilde S,
+\boxed{\; \langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde Q_1\rangle_{*}=\langle\tilde S,\tilde Q_1\rangle_{*}\quad\text{for all }\tilde Q_1,\tilde S \;},
 $$
 
 if and only if $\tilde Q^{*}\tilde Q=e_{t}$:
@@ -66,7 +64,7 @@ $$
 **Theorem (the two groups).** $\mathrm{Pin}=U\cong \mathrm{U}(2)$ is a compact group of real dimension four; $\mathrm{Spin}=\mathrm{SU}(2)$ is its determinant-one part, compact, of real dimension three, normal, equal to the derived group of the pin group; and the quotient is the circle,
 
 $$
-\mathrm{Pin}/\mathrm{Spin}=\mathrm{U}(2)/\mathrm{SU}(2)\cong \mathrm{U}(1).
+\boxed{\; \mathrm{Pin}/\mathrm{Spin}=\mathrm{U}(2)/\mathrm{SU}(2)\cong \mathrm{U}(1) \;}.
 $$
 
 *Proof.* The isometry condition is the theorem of the previous section, so $\mathrm{Pin}=U$; the slice is the unitary group in the matrix model; the determinant is a homomorphism $U\to \mathrm{U}(1)$, surjective, with kernel the determinant-one part, which is $\mathrm{SU}(2)$; and $\mathrm{U}(2)/\mathrm{SU}(2)\cong \mathrm{U}(1)$. The determinant-one part is normal as the kernel of a homomorphism, and equals the derived group because $\mathrm{U}(2)^{\mathrm{ab}}\cong \mathrm{U}(1)$.
@@ -80,7 +78,7 @@ $$
 **Theorem (the cover).** The assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ restricts to a group homomorphism $\mathrm{Pin}\to\mathrm{GL}_{\mathbb{C}}(\mathbb{B})$ with kernel the central circle $\mathrm{U}(1)e_{t}$ and image of real dimension three,
 
 $$
-\mathrm{Pin}/\mathrm{U}(1)e_{t}=\mathrm{Spin}/\{\pm e_{t}\}\cong PU(2)\cong SO(3).
+\boxed{\; \mathrm{Pin}/\mathrm{U}(1)e_{t}=\mathrm{Spin}/\{\pm e_{t}\}\cong PU(2)\cong SO(3) \;}.
 $$
 
 On the spin group the kernel is the two-element group $\{\pm e_{t}\}$, and the assignment is the classical two-to-one cover of that rotation group.

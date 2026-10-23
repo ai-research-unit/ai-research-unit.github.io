@@ -18,8 +18,6 @@ $$
 $$
 is of the other kind: it is the product of the two minimal ideals, it is the unique algebra direct-product decomposition, and its two summands are the two simple modules of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The two kinds differ in what is closed: in a grading only the products of the same parity are constrained, while in a direct product each summand is a subalgebra and the mixed products vanish.
 
-**Boundaries.** The subspaces and their characters are *Introduction to the Remarkable Subspaces*, above this article in this category; the involutions are *The Two Involutions and the Group of Involutions of the Reduced Biquaternions*; the idempotents are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*; and the ideals and the Peirce decomposition are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The subspaces at a glance, with the closure of each under the product, are *Comparison of the Remarkable Subspaces*, below this article. The biquaternion counterparts are *Decompositions Along the Remarkable Subspaces* of the biquaternion category and *The Specificities of the Biquaternion Algebra*, §*The $\mathbb{Z}_{2}$-Grading*.
-
 ## The Block Decomposition Along the Two Involutions
 
 ### The Two Involutions and Their Common Eigenspaces

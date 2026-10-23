@@ -51,7 +51,7 @@ $$
 The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=x^2+y^2+z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the **circle**
 
 $$
-\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2 ,
+\boxed{\;\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2\;}
 $$
 
 a ring of radius $\varrho$ in the plane $z=0$, centred on the third axis. This is Lanczos's **circle electron**, *Kreiselektron*. A point singularity of the real potential has been opened into a ring by displacing its position into the informational sector. The radius of the ring is the magnitude of the imaginary part of the displacement, $\varrho=|\zeta|$, and the point electron is recovered in the limit $\varrho\to0$.
@@ -107,7 +107,7 @@ $$
 where $\rho=\sqrt{x^2+y^2}$ and $\varphi$ is the azimuth, and lets $\varepsilon\to0$. The Hamiltonian function of the ring is then
 
 $$
-H = \frac{2\pi\varrho}{\varepsilon}\int_0^{2\pi} \frac{\varepsilon+\varrho\,(\cos\varphi+i\sin\varphi)}{\bigl[\varepsilon+2\varrho\,(\cos\varphi+i\sin\varphi)\bigr]^2}\,d\varphi .
+H = \frac{2\pi\varrho}{\varepsilon}\int_0^{2\pi} \frac{\varepsilon+\varrho\,(\cos\varphi+i\sin\varphi)}{\bigl[\varepsilon+2\varrho\,(\cos\varphi+i\sin\varphi)\bigr]^2}\,d\varphi
 $$
 
 ### The Vanishing of the Integral

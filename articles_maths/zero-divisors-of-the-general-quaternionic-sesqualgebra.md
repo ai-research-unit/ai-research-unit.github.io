@@ -25,11 +25,6 @@ members, is the point of the article and is owned by *Nilpotents of the General 
 Sesqualgebra*; the position of the set in the remarkable subspaces is *Remarkable Subspaces under
 the General Quaternionic Sesqualgebra of Biquaternions*.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis
-$e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_x\vec e_y = \vec e_z$, and central scalar imaginary $i$. An element is
-$\tilde Q = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}$ and
-$\vec Q = \sum_{k=1}^{3} Q_k \vec e_k$, and
-
 $$
 \tilde Q^{\natural} = Q_t - \vec Q , \qquad \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \overline{Q_t} - \overline{\vec Q} , \qquad \overline{\tilde Q} = \tilde Q^{\natural*} = \overline{Q_t} + \overline{\vec Q} ,
 $$
@@ -70,7 +65,7 @@ theorem that the four coincide, are *Zero Divisors in the Algebraic Structures o
 if
 
 $$
-C(\tilde Q) = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = 0 .
+\boxed{\; C(\tilde Q) = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = 0 \;}.
 $$
 
 **Proof.** The product is $\tilde Q\star\tilde Q_2 = \tilde Q^{\natural}\tilde Q_2^{*}$. An element
@@ -124,7 +119,7 @@ origin.
 **Proposition (the pure family).** A pure zero divisor $\tilde Q = \vec Q$ satisfies
 
 $$
-\sum_{k=1}^{3} Q_k^2 = 0 ,
+\boxed{\; \sum_{k=1}^{3} Q_k^2 = 0 \;},
 $$
 
 and conversely every nonzero pure element with $\sum_k Q_k^2 = 0$ is a zero divisor.
@@ -160,7 +155,7 @@ cone.
 **Theorem (the set).** The zero-divisor set of $\star$ is
 
 $$
-\{\tilde Q \neq 0 : C(\tilde Q) = 0\} = \{\tilde Q \neq 0 : Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0\} ,
+\boxed{\; \{\tilde Q \neq 0 : C(\tilde Q) = 0\} = \{\tilde Q \neq 0 : Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0\} \;},
 $$
 
 a complex cone of complex dimension three and real dimension six, the zero set of the

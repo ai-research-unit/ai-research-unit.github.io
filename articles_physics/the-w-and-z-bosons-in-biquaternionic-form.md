@@ -104,7 +104,7 @@ which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; 
 
 The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ with $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ and $\langle|\varphi|\rangle=v/\sqrt2$, is
 $$
-M_A=\frac{ϙ v}{\hbar}=\kappa v ,
+\boxed{\;M_A=\frac{ϙ v}{\hbar}=\kappa v\;},
 $$
 as the Higgs companion derives; the standard $M_W=gv/2$ is the same formula with the effective charge $ϙ=g/2$, because the W couples to the doublet through $T_3=\pm1/2$. The factor of one-half is the isospin of the scalar, not of the W. This distinction is the crux of the third section.
 
@@ -148,13 +148,13 @@ with the analogous $W W\gamma$ and $W W Z\gamma$ terms obtained by replacing one
 
 The compact factor of the algebra is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, of real dimension four, matching the four electroweak gauge fields. Its Cartan subalgebra is two-dimensional, spanned by the central $ie_t$ and the material $\vec e_z$ (or $i\vec e_z$); the two commuting generators correspond to the two neutral fields, $B_\mu$ and $W^3_\mu$, before mixing. The off-diagonal generators are the charged combinations
 $$
-W^\pm\;\longleftrightarrow\; \vec e_x\pm i \vec e_y\in\mathbb{B},
+\boxed{\;W^\pm\;\longleftrightarrow\; \vec e_x\pm i \vec e_y\in\mathbb{B}\;},
 $$
 which are complex combinations of the two real material generators. The adjoint action of the Cartan generator $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, with $iT_3=\tfrac12i\vec e_z$ the Hermitian partner of the material Cartan generator $T_3=\tfrac12\vec e_z$, is diagonal on them:
 $$
-[i\vec e_z,\vec e_x\pm i\vec e_y]=\pm 2\,(\vec e_x\pm i\vec e_y),
+\boxed{\;[i\vec e_z,\vec e_x\pm i\vec e_y]=\pm 2\,(\vec e_x\pm i\vec e_y),
 \qquad
-J_3(\vec e_x\pm i\vec e_y)=\pm (\vec e_x\pm i\vec e_y),
+J_3(\vec e_x\pm i\vec e_y)=\pm (\vec e_x\pm i\vec e_y)\;},
 $$
 so that the charged generators carry the eigenvalues $\pm1$ of the adjoint $J_3$. This is the same computation the companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* performs for the spin-one representation, and it identifies the W as the spin-one excitation of the material sector: the connection $\mathcal{A}_\mu\in\mathrm{SU}(2)$ is adjoint-valued, its two off-diagonal components are the charged W's, and its diagonal component is the neutral $W^3$.
 

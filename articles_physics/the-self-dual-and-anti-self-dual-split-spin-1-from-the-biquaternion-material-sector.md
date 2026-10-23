@@ -78,7 +78,6 @@ $$
 
 is the Riemann–Silberstein vector. The identification of $\vec N$ with a complex three-vector is precisely the identification of a real two-form with an element of the complex vector part, and it is the identification that makes the self-dual split transparent: the complex structure that appears in $\vec N$ is the algebra's scalar imaginary, and it is the same complex structure that defines the Hodge dual, as the next section shows.
 
-
 ## The Hodge Dual on the Vector Part
 
 ### Definition
@@ -98,7 +97,7 @@ $$
 because $\star(\vec E+ic\vec B) = c\vec B - i\vec E = -i(\vec E+ic\vec B)$. Since $\tilde{F} = i\sqrt{\epsilon}\,\vec N$, the same statement holds on the field-strength biquaternion up to the overall constant:
 
 $$
-\star\tilde{F} = -i\,\tilde{F}.
+\boxed{\;\star\tilde{F} = -i\,\tilde{F}\;}.
 $$
 
 ### Direct check
@@ -139,7 +138,6 @@ $$
 $$
 
 the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix, and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.
-
 
 ## The Self-Dual and Anti-Self-Dual Split
 
@@ -187,15 +185,14 @@ Because the dual commutes with coefficient conjugation, $\star(\bar{\tilde{F}}) 
 For a general complexified two-form, written as the sum of a self-dual and an anti-self-dual piece,
 
 $$
-\tilde{F}_{\mathbb{C}} = \tilde{F}_{+} + \tilde{F}_{-}, \qquad
+\boxed{\;\tilde{F}_{\mathbb{C}} = \tilde{F}_{+} + \tilde{F}_{-}, \qquad
 \tilde{F}_{+} = \tilde\Pi_{sd}\tilde{F}_{\mathbb{C}} = \tfrac12\left(\tilde{F}_{\mathbb{C}} + i\,\star\tilde{F}_{\mathbb{C}}\right), \qquad
-\tilde{F}_{-} = \tfrac12\left(\tilde{F}_{\mathbb{C}} - i\,\star\tilde{F}_{\mathbb{C}}\right),
+\tilde{F}_{-} = \tfrac12\left(\tilde{F}_{\mathbb{C}} - i\,\star\tilde{F}_{\mathbb{C}}\right)\;},
 $$
 
 the two pieces are independent and transform separately under the Lorentz group, in $(1,0)$ and in $(0,1)$. This is the decomposition of the antisymmetric tensor into its self-dual and anti-self-dual parts, and in the biquaternion formulation it is the decomposition of a complexified vector of the algebra into the $+i$ and $-i$ eigencomponents of the Hodge dual.
 
 The split is Lorentz covariant, and the reason is short. The Lorentz action on the field strength is complex-linear on the Riemann–Silberstein vector: writing a boost as a complex $3\times3$ matrix $M$ acting on $\vec N$, the same boost acts on $i\vec N$ as $iM$, so the action commutes with multiplication by $i$ and consequently $\star$ commutes with the boost and maps each half to itself. The two halves are therefore invariant subspaces of the Lorentz action, which is what it means for them to be the two three-dimensional complex representations.
-
 
 ## The Spin Content of the Two Halves
 
@@ -252,8 +249,8 @@ and at $\theta = \pi/2$ it is the classical electric–magnetic duality. On the 
 For a plane wave of definite wavevector $\vec u_k$, Faraday's law gives $\vec B = \vec u_k\times\vec E/c$ and the transverse amplitude splits into circular components satisfying $\vec u_k\times\varepsilon^{\mathrm{fop}}_\pm = \mp i\varepsilon^{\mathrm{fop}}_\pm$. Then
 
 $$
-\vec E + ic\vec B = 2E_+\varepsilon^{\mathrm{fop}}_+, \qquad
-\vec E - ic\vec B = 2E_-\varepsilon^{\mathrm{fop}}_-,
+\boxed{\;\vec E + ic\vec B = 2E_+\varepsilon^{\mathrm{fop}}_+, \qquad
+\vec E - ic\vec B = 2E_-\varepsilon^{\mathrm{fop}}_-\;},
 $$
 
 so that the self-dual combination $\vec E+ic\vec B$ contains only the helicity $+1$ amplitude and the anti-self-dual combination $\vec E-ic\vec B$ only the helicity $-1$ amplitude. The two halves of the two-form are therefore the two helicities of the radiation field: on each of two independent transverse directions, an amplitude proportional to $\varepsilon^{\mathrm{fop}}_+$ gives a vanishing anti-self-dual combination and an amplitude proportional to $\varepsilon^{\mathrm{fop}}_-$ the reverse, and no transverse amplitude gives both. The third helicity eigenvalue, zero, belongs to the propagation direction and is not a transverse polarization; for the massless field the longitudinal mode is removed by the gauge freedom, whose structure is the subject of the companion articles on the Maxwell field. The next article in this subcategory takes up the massive case, where the gauge freedom is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom.

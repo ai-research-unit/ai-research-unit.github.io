@@ -12,8 +12,6 @@ The material is inherited, unchanged, from the read list. From *Quantum Physics 
 
 The article proceeds as follows. The next four sections collect the established structure of the state as an element: its definition and geometry; its cohabitation with the observables in one space; its convex structure; and its purity as idempotence and as zero-divisorhood. Two further sections state what the element does not carry and what it is not. The last three sections separate the ontological interpretations the algebra permits, state the sector hypothesis under which they acquire physical content, and list the questions the algebra leaves open.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre of the algebra. The Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with the unit normalised by $\langle e_t\rangle=1$; the trace is its $2\times2$ reading, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$ and $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so the trace depends on the matrix representation while the plain form does not.
-
 ## The State as an Element of $\mathbb{M}_+$
 
 A state of the informational sector is an element of the Hermitian subspace
@@ -33,7 +31,7 @@ $$
 so the deviation from idempotency is a pure scalar,
 
 $$
-\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14\left(|\vec r|^2-1\right)e_t ,
+\boxed{\;\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14\left(|\vec r|^2-1\right)e_t\;},
 $$
 
 and the biquaternion norm is
@@ -45,7 +43,7 @@ $$
 The three are consistent: the eigenvalues of $\tilde{Ϛ}$ are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, so positivity is exactly $|\vec r|\leq1$, which is exactly $\langle\tilde{Ϛ}\rangle_{\natural}\geq0$, which is exactly membership of the future light cone of the biquaternion norm. The state space is therefore the state slice of that cone,
 
 $$
-\{\text{states}\}=\left\{\tilde{Ϛ}\in\mathbb{M}_+:\ \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*},\ \langle\tilde{Ϛ}\rangle_{\natural}\geq0\right\},
+\boxed{\;\{\text{states}\}=\left\{\tilde{Ϛ}\in\mathbb{M}_+:\ \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*},\ \langle\tilde{Ϛ}\rangle_{\natural}\geq0\right\}\;},
 $$
 
 the Bloch ball of radius one.
@@ -59,11 +57,11 @@ the Bloch ball of radius one.
 The state is not only an element of $\mathbb{M}_+$; it is the Hermitian square of another element. Every nonzero biquaternion $\tilde Q$ defines one by
 
 $$
-\tilde{Ϛ}_{\tilde Q}=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
+\boxed{\;\tilde{Ϛ}_{\tilde Q}=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
 \qquad
 \tilde H=\sqrt{\tilde Q\tilde Q^{*}},
 \qquad
-\tilde{Ϛ}_{\tilde Q}=\hat H^{2},
+\tilde{Ϛ}_{\tilde Q}=\hat H^{2}\;},
 $$
 
 where $\hat H=\tilde H/\sqrt{2\langle\tilde H,\tilde H\rangle_{*}}$ is the bracket-normalised amplitude. The amplitude $\tilde H$ is Hermitian positive semidefinite; the state is its square. The square root of the state exists and is positive, so the statement is not merely formal: every state has a positive amplitude, namely $\sqrt{\tilde{Ϛ}}$.
@@ -90,7 +88,7 @@ of the same subspace $\mathbb{M}_+$. The state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)
 Two facts make the cohabitation exact. First, the Hermitian form $\langle\tilde{Ϛ},\tilde{H}\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*})$ is a positive-definite symmetric form on $\mathbb{M}_+$, with Gram matrix the identity in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; with the state normalised against the unit, the Born weight is
 
 $$
-\frac{\langle\tilde{Ϛ},\tilde{H}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=h_t+\vec r\cdot\vec h,
+\boxed{\;\frac{\langle\tilde{Ϛ},\tilde{H}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=h_t+\vec r\cdot\vec h\;},
 $$
 
 and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})=h_t+\vec r\cdot\vec h$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map

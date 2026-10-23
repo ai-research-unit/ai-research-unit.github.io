@@ -28,13 +28,6 @@ elements of the structure are *The Killing Form of the Antisymmetric Plain Algeb
 Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this
 category, and the general theory of Lie algebras is *Structure of Lie Algebras*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the cross product of the vector parts is $\vec q_1\times\vec q_2$, with
-$\vec e_x\times \vec e_y=\vec e_z$ and its cyclic images. The **centre** is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the **vector subspace** is
-$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$, identified with $\mathbb{R}^3$ as a vector space. The
-Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, with $\sigma_j\sigma_k=\delta_{jk}\mathrm{I}_2+i\sum_l\varepsilon_{jkl}\sigma_l$.
-
 ## The Lie Algebra and Its Centre
 
 **Theorem.** The space $\mathfrak{g}=\mathbb{H}$ with the bracket $\tilde q_1\times\tilde q_2$ is a real
@@ -47,7 +40,7 @@ $$
 and on the pure elements it is the vector product of $\mathbb{R}^3$. Its centre is the scalar line,
 
 $$
-\mathfrak{z}(\mathfrak{g})=\{\tilde q_1:\tilde q_1\times\tilde q_2=0\ \text{for every }\tilde q_2\}=\mathbb{R}e_t ,
+\boxed{\;\mathfrak{z}(\mathfrak{g})=\{\tilde q_1:\tilde q_1\times\tilde q_2=0\ \text{for every }\tilde q_2\}=\mathbb{R}e_t\;},
 $$
 
 of real dimension one.
@@ -62,7 +55,7 @@ forces $\vec q_1=0$.
 **Theorem (the derived algebra).** The derived algebra is the vector subspace,
 
 $$
-[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{H})=\{\vec q\},
+\boxed{\;[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{H})=\{\vec q\}\;},
 $$
 
 of real dimension three, and it is an ideal. The quotient $\mathfrak{g}/[\mathfrak{g},\mathfrak{g}]$
@@ -86,7 +79,7 @@ bracket is the sum of the two brackets.
 traceless skew-Hermitian $2\times2$ complex matrices, by
 
 $$
-\vec e_x\mapsto-\tfrac{i}{2}\sigma_1,\qquad \vec e_y\mapsto-\tfrac{i}{2}\sigma_2,\qquad \vec e_z\mapsto-\tfrac{i}{2}\sigma_3 .
+\boxed{\;\vec e_x\mapsto-\tfrac{i}{2}\sigma_1,\qquad \vec e_y\mapsto-\tfrac{i}{2}\sigma_2,\qquad \vec e_z\mapsto-\tfrac{i}{2}\sigma_3\;}.
 $$
 
 *Proof.* The Pauli matrices satisfy $\sigma_j\sigma_k=\delta_{jk}\mathrm{I}_2+i\sum_l\varepsilon_{jkl}\sigma_l$,
@@ -123,7 +116,7 @@ dictionary of the chapter.
 In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the bracket is
 
 $$
-[e_t,\vec e_\nu]=0,\qquad [\vec e_\mu,\vec e_\nu]=\sum_{\lambda=1}^{3}\varepsilon_{\mu\nu\lambda}\vec e_\lambda\quad(\mu,\nu,\lambda\in\{1,2,3\}),
+\boxed{\;[e_t,\vec e_\nu]=0,\qquad [\vec e_\mu,\vec e_\nu]=\sum_{\lambda=1}^{3}\varepsilon_{\mu\nu\lambda}\vec e_\lambda\quad(\mu,\nu,\lambda\in\{1,2,3\})\;},
 $$
 
 with $\varepsilon$ the Levi-Civita symbol, and the table is the one of the cross product of
@@ -141,7 +134,7 @@ $\mathbb{R}^3$ extended by zero on the scalar direction.
 **Theorem.** The ideals of $\mathfrak{g}$ are
 
 $$
-0,\qquad \mathbb{R}e_t,\qquad \mathrm{Vect}(\mathbb{H}),\qquad \mathfrak{g} ,
+\boxed{\;0,\qquad \mathbb{R}e_t,\qquad \mathrm{Vect}(\mathbb{H}),\qquad \mathfrak{g}\;},
 $$
 
 and there are no others. The algebra is not simple and not semisimple; its radical is the centre

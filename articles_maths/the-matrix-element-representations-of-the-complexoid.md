@@ -19,7 +19,7 @@ $$
 In the basis $1, i$ its matrix, acting on the column of the real coordinates of $Q_2$, is the **Cayley matrix**
 
 $$
-\mathsf{M}_2(Q_1) = \begin{pmatrix} q_1 & -q'_1 \\ q'_1 & q_1 \end{pmatrix} = q_1I + q'_1J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I .
+\boxed{\;\mathsf{M}_2(Q_1) = \begin{pmatrix} q_1 & -q'_1 \\ q'_1 & q_1 \end{pmatrix} = q_1I + q'_1J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I\;}.
 $$
 
 **Proposition.** $\mathsf{M}_2(Q_1)\mathsf{M}_2(Q_2) = \mathsf{M}_2(Q_1Q_2)$ for all $Q_1, Q_2$, and $\mathsf{M}_2$ is faithful.
@@ -33,7 +33,7 @@ The image is the field of matrices of the shape $q_1I + q'_1J$, the **conformal 
 **Proposition.** For $Q_1 = q_1 + iq'_1$,
 
 $$
-\det \mathsf{M}_2(Q_1) = q_1^2 + q'^2_1 = Q_1\bar Q_1 = \langle Q_1\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q_1) = 2q_1 = Q_1 + \bar Q_1 .
+\boxed{\;\det \mathsf{M}_2(Q_1) = q_1^2 + q'^2_1 = Q_1\bar Q_1 = \langle Q_1\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q_1) = 2q_1 = Q_1 + \bar Q_1\;}.
 $$
 
 **Proof.** $\det \mathsf{M}_2(Q_1) = q_1 \cdot q_1 - (-q'_1)(q'_1) = q_1^2 + q'^2_1$, and the diagonal entries are both $q_1$.
@@ -62,7 +62,7 @@ The criterion is that of *Complex Norm and Invertibility*, in `### Algebra` belo
 **Proposition.** The elements of definite norm one, $\lvert Q_1 \rvert^2 = 1$, the unit circle, are mapped onto the group of matrices preserving the definite form,
 
 $$
-\mathsf{M}_2(Q_1)^{\mathsf{T}}\mathsf{M}_2(Q_1) = I, \qquad \det \mathsf{M}_2(Q_1) = 1 ,
+\boxed{\;\mathsf{M}_2(Q_1)^{\mathsf{T}}\mathsf{M}_2(Q_1) = I, \qquad \det \mathsf{M}_2(Q_1) = 1\;},
 $$
 
 the rotation group of the plane.

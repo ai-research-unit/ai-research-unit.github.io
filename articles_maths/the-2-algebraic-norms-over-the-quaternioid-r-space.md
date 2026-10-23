@@ -12,8 +12,6 @@ The **plain algebraic norm** is the plain form read at its two equal arguments, 
 
 This article gives the two norms, the **multiplicativity** of the second and the failure of the first, the **norm of a product against the product of the norms**, the **level sets** read algebraically, and the **invertibility criteria** the two give. It assumes the two forms from *The 2 Forms over the Quaternioid $\mathbb{R}$ Space* and the two squares from *Comparison Between the Two General Products*, both preceding this one; the norms read on the two remarkable subspaces are *Remarkable Subspaces and the Two Algebraic Norms*, below this article in this category; and the theory of the norm and the invertibility of the plain product is owned by *Norm and Invertibility in the Quaternion Algebra*, in the *Quaternions* category.
 
-**Conventions.** Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)$ is the dot product of the vector parts, and $\tilde q^{\natural}=q_te_t-\vec q$. The two algebraic norms are the two forms read at their two equal arguments, $\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2$ and $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$, written with the one bracket and the subscript of the pair, the plain and the quaternionic; read on the products they are the coefficients of the two squares, $\tilde q\tilde q=\langle\tilde q\rangle e_t+2q_t\vec q$ and $\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t$.
-
 ## The Two Norms
 
 **Definition.** The two algebraic norms are the two forms read at their two equal arguments,
@@ -25,7 +23,7 @@ $$
 and on the coordinates
 
 $$
-\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2 .
+\boxed{\;\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2\;}.
 $$
 
 The plain norm is **indefinite**, of both signs, and the quaternion norm is **positive definite**, zero only at the origin. Read on the products, the two squares are $\tilde q\tilde q=\langle\tilde q\rangle e_t+2q_t\vec q$, a general element of $\mathbb{H}$ whose scalar coefficient is the plain norm, and $\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t$, a central element whose coefficient is the quaternion norm.
@@ -35,13 +33,13 @@ The plain norm is **indefinite**, of both signs, and the quaternion norm is **po
 **Theorem (multiplicativity of the quaternion norm; failure of the plain one).** For all $\tilde q_1,\tilde q_2$,
 
 $$
-\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} , \qquad \text{equivalently}\qquad \bigl(\tilde q_1\tilde q_2\bigr)^{\natural}\bigl(\tilde q_1\tilde q_2\bigr)=\tilde q_1^{\natural}\tilde q_1\,\tilde q_2^{\natural}\tilde q_2 ,
+\boxed{\;\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} , \qquad \text{equivalently}\qquad \bigl(\tilde q_1\tilde q_2\bigr)^{\natural}\bigl(\tilde q_1\tilde q_2\bigr)=\tilde q_1^{\natural}\tilde q_1\,\tilde q_2^{\natural}\tilde q_2\;},
 $$
 
 while the plain norm is not multiplicative:
 
 $$
-\langle\tilde q_1\tilde q_2\rangle\neq \langle\tilde q_1\rangle\langle\tilde q_2\rangle \quad\text{in general} , \qquad \bigl(\vec e_x \vec e_y\bigr)^{2}=-e_t , \quad \vec e_x^2 \vec e_y^2=e_t .
+\boxed{\;\langle\tilde q_1\tilde q_2\rangle\neq \langle\tilde q_1\rangle\langle\tilde q_2\rangle \quad\text{in general} , \qquad \bigl(\vec e_x \vec e_y\bigr)^{2}=-e_t , \quad \vec e_x^2 \vec e_y^2=e_t\;}.
 $$
 
 *Proof.* The quaternion norm is the scalar coefficient of the product of the element with its quaternion conjugate, $\langle\tilde q_1\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_1\bigr)$, and the conjugation is an anti-automorphism, so $\bigl(\tilde q_1\tilde q_2\bigr)^{\natural}\bigl(\tilde q_1\tilde q_2\bigr)=(\tilde q_1\tilde q_2)^{\natural}\tilde q_1\tilde q_2=\tilde q_2^{\natural}\tilde q_1^{\natural}\tilde q_1\tilde q_2=\tilde q_2^{\natural}|\tilde q_1|^2\tilde q_2=|\tilde q_1|^2|\tilde q_2|^2e_t$, the scalar $|\tilde q_1|^2$ commuting with every element; reading the scalar coefficient gives the multiplicativity. For the plain norm, the value of $\tilde q_1\tilde q_2\tilde q_1\tilde q_2$ is the square of the product and the two factors' squares do not determine it: at $\tilde q_1=\vec e_x,\tilde q_2=\vec e_y$ the product is $\vec e_z$, of square $-e_t$, while the product of the squares is $(-e_t)(-e_t)=e_t$, so the plain norm of the product differs from the product of the plain norms.

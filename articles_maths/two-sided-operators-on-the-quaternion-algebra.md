@@ -38,9 +38,7 @@ The two-sided operators are the products of a left and a right multiplication, $
 
 **Theorem.** With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ the transpose of a two-sided operator swaps the parameters:
 
-$$
-T_{\tilde q_3,\tilde q_4}^{\sim}=T_{\tilde q_4,\tilde q_3}=L_{\tilde q_4}R_{\tilde q_3}.
-$$
+$$ \boxed{\; T_{\tilde q_3,\tilde q_4}^{\sim}=T_{\tilde q_4,\tilde q_3}=L_{\tilde q_4}R_{\tilde q_3} \;} .$$
 
 *Proof.* The transpose is an anti-automorphism, so $T_{\tilde q_3,\tilde q_4}^{\sim}=(L_{\tilde q_3}R_{\tilde q_4})^{\sim}=R_{\tilde q_4}^{\sim}L_{\tilde q_3}^{\sim}=L_{\tilde q_4}R_{\tilde q_3}$, using $L_{\tilde q_3}^{\sim}=R_{\tilde q_3}$ and $R_{\tilde q_4}^{\sim}=L_{\tilde q_4}$ from *Association and the Transpose on the Quaternion Algebra*, above this article in this category.
 

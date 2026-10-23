@@ -20,12 +20,6 @@ The answer is not the parent's. The block has **no nonzero square-zero element**
 
 **The results.** The left-nested powers of the block are conjugate-linear iterations, $\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}$, so the index is a property of the pair $(\mathsf{M}_2(\tilde Q_1),\mathsf{M}_2(\tilde Q_1)^{\dagger})$ and can exceed two. The scalar part of the square is $\sum_\mu\lvert Q_{1\mu}\rvert^{2}$, which vanishes only at the origin, so the root set of $0$ is empty and there is no nonzero square-zero element; the nonzero nilpotents are exactly the parent's pure zero divisors, the elements $\Upsilon_t=0$ with $C(\tilde\Upsilon)=(\vec\Upsilon,\vec\Upsilon)=0$, of index exactly three, $\tilde\Upsilon^{\star2}\neq0$ and $\tilde\Upsilon^{\star3}=0$. The nilpotent set is the nonzero pure isotropic cone, of complex dimension two, and it is the parent's set with the index changed from two to three; the non-pure zero divisors are not nilpotent.
 
-**Placement.** The article is the sixth entry of the *Common Theory* section of the block, after the roots of one and the idempotents and before the general value. It uses the product and the class of the introduction, the square and its scalar part from *Norm and Invertibility in the General Plain Sesqualgebra*, the reduction of the square from *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the zero-divisor criterion from *Zero Divisors of the General Plain Sesqualgebra*, and the matrix model.
-
-**Boundaries.** The product, its class and its placement are *Introduction to the General Plain Sesqualgebra*; the relative definition of the power, the square-zero element, the nilpotent and the index of nilpotency is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Nilpotent*. The square-zero set of the block and of the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the nilpotents and the two families of the parent are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* and *Zero Divisors of the Biquaternion Algebra*; the matrix model that carries the powers is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the idempotents that the roots of $+1$ produce are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $Q_\mu\in\mathbb{C}$; the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. The product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$, and the **central square** is $C(\tilde Q)=\sum_\mu Q_\mu^{2}=Q_t^{2}+(\vec Q,\vec Q)$. An element is **pure** when $Q_t=0$, that is when it lies in the vector part $\mathbb{C}\otimes\mathbb{R}^{3}$. A nilpotent is written $\tilde\Upsilon$ (§*The Nilpotent Convention* of *Conventions in Mathematics*), with $\tilde\Upsilon=\Upsilon_te_t+\vec\Upsilon$; a general element whose powers are at stake keeps the letter $\tilde Q_1$.
-
 The equations name a product, so the powers, the square-zero elements and the nilpotents are relative to it. Throughout this article the product is the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$; the general definition of the nilpotent is §*The Nilpotent* of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The origin is a nilpotent, the **trivial** one, and the article is concerned with the nonzero ones.
 
 ## The Roots of Zero
@@ -51,7 +45,7 @@ The left-nested powers of the block are conjugate-linear iterations, $\tilde Q_1
 **Proposition (the powers are conjugate-linear iterations).** For every $\tilde Q_1$ and every $k\geq1$,
 
 $$
-\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1},
+\boxed{\;\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}\;},
 $$
 
 so $\tilde Q_1^{\star2}=\tilde Q_1\tilde Q_1^{*}$, $\tilde Q_1^{\star3}=\tilde Q_1\tilde Q_1^{*}\tilde Q_1^{*}$, and in the matrix model $\mathsf{M}_2(\tilde Q_1^{\star k})=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_1)^{\dagger(k-1)}$.
@@ -86,7 +80,7 @@ When they hold, the index of nilpotency is exactly three: $\tilde\Upsilon^{\star
 **Corollary (the set).** The nilpotent set of the block is
 
 $$
-\mathcal{N}_\star=\{\tilde\Upsilon\neq0:\ \Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\},
+\boxed{\;\mathcal{N}_\star=\{\tilde\Upsilon\neq0:\ \Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\}\;},
 $$
 
 the nonzero elements of the **pure isotropic cone**, of complex dimension two, which is the pure zero-divisor cone of the parent. Every nilpotent is a two-sided zero divisor, and the non-pure zero divisors, the nonzero complex multiples of the nontrivial idempotents with $\Upsilon_t\neq0$, are **not** nilpotent.

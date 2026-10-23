@@ -72,11 +72,11 @@ The product of two biquaternions is computed from the basis, and it separates in
 **Proposition (the product in components).** Let $\tilde{Q}_1$ and $\tilde{Q}_2$ be biquaternions with four-vectors $Q_1^\mu$ and $Q_2^\mu$. Then the four-vector $(\tilde{Q}_1\tilde{Q}_2)^\mu$ of the product has components
 
 $$
-(\tilde{Q}_1\tilde{Q}_2)^0 = Q_1^t Q_2^0 - \sum_{k\in\{x,y,z\}} Q_1^k Q_2^k,
+\boxed{\; (\tilde{Q}_1\tilde{Q}_2)^0 = Q_1^t Q_2^0 - \sum_{k\in\{x,y,z\}} Q_1^k Q_2^k \;},
 $$
 
 $$
-(\tilde{Q}_1\tilde{Q}_2)^i = Q_1^t Q_2^i + Q_2^0 Q_1^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q_1^j Q_2^k, \qquad i = 1, 2, 3,
+\boxed{\; (\tilde{Q}_1\tilde{Q}_2)^i = Q_1^t Q_2^i + Q_2^0 Q_1^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q_1^j Q_2^k, \qquad i = 1, 2, 3 \;},
 $$
 
 where $\epsilon^{ijk}$ is the Levi-Civita symbol on the indices $1, 2, 3$.
@@ -240,7 +240,7 @@ The criterion of invertibility, that $\tilde{Q}$ is a unit exactly when $\langle
 **Proposition (the inverse in coordinates).** For an invertible biquaternion $\tilde{Q}$,
 
 $$
-\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \bigl(\tilde{Q}^{-1}\bigr)^\mu = \Bigl( \frac{Q^t}{N}, \, -\frac{Q^x}{N}, \, -\frac{Q^y}{N}, \, -\frac{Q^z}{N} \Bigr), \qquad N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
+\boxed{\; \tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \bigl(\tilde{Q}^{-1}\bigr)^\mu = \Bigl( \frac{Q^t}{N}, \, -\frac{Q^x}{N}, \, -\frac{Q^y}{N}, \, -\frac{Q^z}{N} \Bigr), \qquad N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \;}.
 $$
 
 **Proof.** With $N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element $\tilde{Q}^{\natural}/N$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = N$ is central, so $\tilde{Q}(\tilde{Q}^{\natural}/N) = (\tilde{Q}^{\natural}/N)\tilde{Q} = e_t$. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^t, -Q^x, -Q^y, -Q^z)$, divided by the complex scalar $\langle\cdot\rangle_{\natural}$.

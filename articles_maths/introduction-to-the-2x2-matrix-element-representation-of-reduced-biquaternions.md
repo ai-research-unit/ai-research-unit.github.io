@@ -4,10 +4,6 @@
 
 The **$2\times2$ matrix element representation** writes the reduced biquaternion as the matrix of its own multiplication. The regular representation sends $\breve Q$ to the operator $L_{\breve Q}:\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ on the complex two-dimensional space of the algebra, and that operator is a $2\times2$ matrix with **complex** entries; on the real four-dimensional space the same operator is a $4\times4$ matrix with **real** entries. This article writes the two models, explains why the signs of the entries are forced by $j^{2}=+1$, records the trace, the determinant and the norm, and shows how the change to the idempotent basis diagonalises the matrix. The multiplication is **commutative**, so the matrix is symmetric, and it **has zero divisors**, so the matrix may be singular at a non-zero element. The diagonal model of the algebra itself — the isomorphism onto the diagonal matrices and the structure read there — is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; this article is about the element as a matrix, not about the structure.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The four products and the forms $B,N,H,K$ are *The Four Products, Their Forms and Their Algebraic Norms*, and the multiplication operators in general are *Operators on the Reduced Biquaternions*. The element glyph is $\breve Q$, with the breve and without a tilde.
-
-**Boundaries.** The regular representation is defined in *Introduction to Reduced Biquaternion Element Representations*; the four-vector reading of the same element is *The Four-Vector Element Representation of the Reduced Biquaternions*; the diagonal model of the algebra is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; the other presentations are *Reduced Biquaternion Other Algebraic Element Representations*; and the operators of the four products are collected in *Operators on the Reduced Biquaternions*. The biquaternion counterpart is *Introduction to the $2\times2$ Matrix Element Representation $M_{2}(\mathbb{C})$ of Biquaternions*, where the image is the whole of $M_{2}(\mathbb{C})$.
-
 ## The Regular Representation as a Matrix
 
 **The regular representation sends the element to the matrix with the two columns $Q_{\blacktriangle},Q_{\blacktriangledown}$ and $Q_{\blacktriangledown},Q_{\blacktriangle}$.**
@@ -34,7 +30,9 @@ $$
 
 **Theorem (the matrix).** The map $\varphi$ is an injective homomorphism of $\mathbb{C}$-algebras, $\varphi(\breve Q_{1}\breve Q_{2})=\varphi(\breve Q_{1})\varphi(\breve Q_{2})$ and $\varphi(1)=\mathrm I_{2}$, with the block form
 $$
+\boxed{\;
 \varphi(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}=\begin{pmatrix}q_{\blacktriangle}&-q'_{\blacktriangle}\\ q'_{\blacktriangle}&q_{\blacktriangle}\end{pmatrix}+j\begin{pmatrix}q_{\blacktriangledown}&-q'_{\blacktriangledown}\\ q'_{\blacktriangledown}&q_{\blacktriangledown}\end{pmatrix}
+\;}
 $$
 over the real basis, using $i=\begin{smallmatrix}0&-1\\ 1&0\end{smallmatrix}$.
 
@@ -84,7 +82,9 @@ $$
 
 **Theorem (the invariants).** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
-\operatorname{tr}\varphi(\breve Q)=2Q_{\blacktriangle},\qquad \det\varphi(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-},
+\boxed{\;
+\operatorname{tr}\varphi(\breve Q)=2Q_{\blacktriangle},\qquad \det\varphi(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}
+\;},
 $$
 and for the real matrix
 $$
@@ -107,7 +107,9 @@ P=\begin{pmatrix}1&1\\ 1&-1\end{pmatrix},\qquad \det P=-2,
 $$
 which sends the basis $1,j$ to the basis $1+j,\,1-j$, one has
 $$
-P^{-1}\varphi(\breve Q)P=\operatorname{diag}(Q_{+},Q_{-}),
+\boxed{\;
+P^{-1}\varphi(\breve Q)P=\operatorname{diag}(Q_{+},Q_{-})
+\;},
 $$
 the diagonal matrix of the two idempotent coordinates.
 

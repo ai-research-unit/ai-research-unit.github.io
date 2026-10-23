@@ -28,7 +28,7 @@ The article owns the square, its scalar part, its behaviour on the two halves an
 **Proposition (the square).** For every biquaternion $\tilde Q$,
 
 $$
-\tilde Q \star \tilde Q = \bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural} = \tilde Q^{\natural}\tilde Q^{*} .
+\boxed{\; \tilde Q \star \tilde Q = \bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural} = \tilde Q^{\natural}\tilde Q^{*} \;}.
 $$
 
 **Proof.** The second expression is the rule at equal arguments. For the first, the natural conjugation is an anti-automorphism of the plain product and the two conjugations commute, so $\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural} = \tilde Q^{\natural}\bigl(\overline{\tilde Q}\bigr)^{\natural} = \tilde Q^{\natural}\tilde Q^{*}$, since $\bigl(\overline{\tilde Q}\bigr)^{\natural} = \overline{\tilde Q^{\natural}} = \tilde Q^{*}$.
@@ -92,7 +92,7 @@ a real scalar; in particular the square is the negative of the central scalar of
 **Corollary.** The square on the two halves is the central scalar with the sign of the half,
 
 $$
-\tilde Q_1 \star \tilde Q_1 = \langle\tilde Q_1\rangle_{\natural}e_t \ \ (\tilde Q_1 \in \mathbb{M}_{+}) , \qquad \tilde Q_2 \star \tilde Q_2 = -\langle\tilde Q_2\rangle_{\natural}e_t \ \ (\tilde Q_2 \in \mathbb{M}_{-}) ,
+\boxed{\; \tilde Q_1 \star \tilde Q_1 = \langle\tilde Q_1\rangle_{\natural}e_t \ \ (\tilde Q_1 \in \mathbb{M}_{+}) , \qquad \tilde Q_2 \star \tilde Q_2 = -\langle\tilde Q_2\rangle_{\natural}e_t \ \ (\tilde Q_2 \in \mathbb{M}_{-}) \;},
 $$
 
 so that the multiplication reads the splitting $\mathbb{B} = \mathbb{M}_{+} \oplus \mathbb{M}_{-}$ by the sign.
@@ -120,7 +120,7 @@ $$
 **Proposition.** For every biquaternion $\tilde Q$,
 
 $$
-N\bigl(\tilde Q \star \tilde Q\bigr) = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2} ;
+\boxed{\; N\bigl(\tilde Q \star \tilde Q\bigr) = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2} \;};
 $$
 
 in particular, if the square of $\tilde Q$ vanishes then $\langle\tilde Q\rangle_{\natural} = 0$.

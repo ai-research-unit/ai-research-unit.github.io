@@ -14,8 +14,6 @@ The division between what is established and what is interpretation is stated at
 
 The article is organized as follows. The next section identifies the global symmetry. The section after that localizes it and derives the connection. The following section names the connection and the covariant derivative and records their properties. The next section proves that the field strength is the curvature. A section connects the result to the Maxwell and quantization articles. A section separates what the algebra supplies from what it only transcribes. Two short sections treat the non-abelian extension and the obstruction posed by the mass term. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_t + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
-
 ## The Global Phase Symmetry
 
 The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and as a real algebra it is isomorphic to the matrix algebra $M_2(\mathbb{C})$. Its **centre** — the set of elements that commute with every biquaternion — is the complex scalar subspace
@@ -96,7 +94,7 @@ $$
 Let the new field transform as
 
 $$
-\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma .
+\boxed{\;\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma\;}.
 $$
 
 Then the covariant derivative of the transformed field is the transformed covariant derivative of the field. Writing $D_2$ for the derivative built from $\tilde{A}_2$,
@@ -191,7 +189,7 @@ This also explains, structurally, why the field strength is not a four-vector. T
 In the abelian case the connection coefficients are complex scalars, so they commute and the commutator of the covariant derivatives reduces to the curl of the connection:
 
 $$
-[D_\mu, D_\nu] = \frac{iϙ}{\hbar}\left(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu\right) = \frac{iϙ}{\hbar}F_{\mu\nu}.
+\boxed{\;[D_\mu, D_\nu] = \frac{iϙ}{\hbar}\left(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu\right) = \frac{iϙ}{\hbar}F_{\mu\nu}\;}.
 $$
 
 Combining this with the boxed identity,
@@ -320,7 +318,7 @@ $$
 which is exactly the gauge transformation of the biquaternionic Maxwell article, and a covariant derivative
 
 $$
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
+\boxed{\;D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\;},
 $$
 
 under which $D\tilde{\Psi}$ transforms by the phase factor. The connection is a material-sector object: a real gauge function keeps $\tilde{A} \in \mathbb{M}_-$.

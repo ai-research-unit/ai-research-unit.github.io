@@ -22,8 +22,6 @@ is a bijection from the roots of $+e_t$ onto the idempotents, with inverse $\til
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde\xi^2=\tilde q$, which is *Square Roots of a General Element in the Quaternion Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Quaternion Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Quaternion Algebra*; or the idempotent theory of the complexified block, which is *Square Roots of One and the Idempotents of the Quaternion Algebra*. The last paragraph of §*The Roots of One* records how the roots of $-e_t$ are read; it is a remark, it is used nowhere, and it opens nothing.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq\nu$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_t=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_te_t-\vec q$, and the **norm** is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the Quaternion Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, so there is no zero divisor. The scalar line $\mathbb{R}e_t$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\pi$ (§*The Idempotent Convention*), and a generic element $\tilde q$.
-
 The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Algebras: A General Introduction*; the orthogonal, complete and primitive families, the projection and the Peirce decomposition are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Throughout this article the square is the one of the quaternion product, the multiplication of the algebra.
 
 ## The Roots of One
@@ -84,9 +82,7 @@ a value no real vector attains. **There is no pure root of $+e_t$.** The reason 
 
 **Theorem.** The roots of $+e_t$ of the algebra are exactly the two central scalars
 
-$$
-\tilde\xi=+e_t,\qquad \tilde\xi=-e_t,
-$$
+$$ \boxed{\; \tilde\xi=+e_t,\qquad \tilde\xi=-e_t \;} ,$$
 
 the class being the two-point set $\{+e_t,-e_t\}$.
 
@@ -136,9 +132,7 @@ and every such decomposition arises from an idempotent. A **primitive** idempote
 
 **Theorem (the idempotents).** The idempotents of the algebra are exactly the origin and the unit:
 
-$$
-\tilde\pi\in\{0,\ e_t\}.
-$$
+$$ \boxed{\; \tilde\pi\in\{0,\ e_t\} \;} .$$
 
 There is no non-trivial idempotent.
 
@@ -162,9 +156,7 @@ An **orthogonal family** is a family of idempotents with $\tilde\pi_i\tilde\pi_j
 
 **Corollary (no nontrivial decomposition).** The only decompositions of the algebra carried by an idempotent are the two trivial ones: for $\tilde\pi=e_t$,
 
-$$
-\mathbb{H}=e_t\mathbb{H}\oplus(e_t-e_t)\mathbb{H}=\mathbb{H}\oplus\{0\},
-$$
+$$ \mathbb{H}=e_t\mathbb{H}\oplus(e_t-e_t)\mathbb{H}=\mathbb{H}\oplus\{0\}, $$
 
 and for $\tilde\pi=0$,
 
@@ -186,9 +178,7 @@ the four **Peirce spaces** of the idempotent.
 
 **Theorem (the Peirce decomposition is trivial).** For each of the two idempotents of the algebra one Peirce space is the whole algebra and the other three are $\{0\}$:
 
-$$
-\tilde\pi=e_t:\quad \mathbb{H}=\mathbb{H}\oplus\{0\}\oplus\{0\}\oplus\{0\},\qquad \tilde\pi=0:\quad \mathbb{H}=\{0\}\oplus\{0\}\oplus\{0\}\oplus\mathbb{H}.
-$$
+$$ \boxed{\;\tilde\pi=e_t:\quad \mathbb{H}=\mathbb{H}\oplus\{0\}\oplus\{0\}\oplus\{0\},\qquad \tilde\pi=0:\quad \mathbb{H}=\{0\}\oplus\{0\}\oplus\{0\}\oplus\mathbb{H}\;}. $$
 
 *Proof.* For $\tilde\pi=e_t$ the four spaces are $e_t\mathbb{H}e_t=\mathbb{H}$, $e_t\mathbb{H}(e_t-e_t)=0$, $(e_t-e_t)\mathbb{H}e_t=0$ and $(e_t-e_t)\mathbb{H}(e_t-e_t)=0$. For $\tilde\pi=0$ the same computation exchanges the outer factors.
 
@@ -198,9 +188,7 @@ So the Peirce decomposition of the algebra is the trivial one, with Peirce space
 
 **Theorem (the halving bijection).** The map
 
-$$
-\tilde\xi\longmapsto\tilde\pi(\tilde\xi),\qquad \tilde\pi(\tilde\xi)=\tfrac12(e_t+\tilde\xi),
-$$
+$$ \boxed{\; \tilde\xi\longmapsto\tilde\pi(\tilde\xi),\qquad \tilde\pi(\tilde\xi)=\tfrac12(e_t+\tilde\xi) \;} ,$$
 
 is a **bijection** from the set of roots of $+e_t$ onto the set of idempotents of the algebra, with inverse $\tilde\xi=2\tilde\pi-e_t$, and it carries the pair $\{\tilde\xi,-\tilde\xi\}$ to the complementary pair $\{\tilde\pi,e_t-\tilde\pi\}$.
 

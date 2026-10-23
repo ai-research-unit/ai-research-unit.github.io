@@ -61,8 +61,8 @@ Plain Algebra*.
 **Theorem (the two annihilators are equal, and they are the conjugate of the plain annihilator).**
 For every $\tilde Q_1$,
 $$
-B_\star(\tilde Q_1)=A_\star(\tilde Q_1)=\bigl\{\tilde Q_2^{*}:\tilde Q_2\in \langle\tilde Q_1\rangle_{\natural*}\bigr\}=\langle\tilde Q_1\rangle_{\natural*}^{*},
-\qquad \langle\tilde Q_1\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1\tilde Q_2=0\},
+\boxed{\;B_\star(\tilde Q_1)=A_\star(\tilde Q_1)=\bigl\{\tilde Q_2^{*}:\tilde Q_2\in \langle\tilde Q_1\rangle_{\natural*}\bigr\}=\langle\tilde Q_1\rangle_{\natural*}^{*},
+\qquad \langle\tilde Q_1\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1\tilde Q_2=0\}\;},
 $$
 where $\langle\tilde Q_1\rangle_{\natural*}$ is the plain left annihilator of $\tilde Q_1$ and $\langle\tilde Q_1\rangle_{\natural*}^{*}$ is its image
 under the involution. For a nonzero zero divisor the two annihilators are equal and of complex
@@ -79,7 +79,7 @@ and zero off it.
 **Example.** For the zero divisor $\tilde Q_1=e_t+i\vec e_x$, of central square $1-1=0$, the common
 annihilator is
 $$
-A_\star(e_t+i\vec e_x)=\mathbb{C}\{\vec e_x+ie_t,\ \vec e_y+i\vec e_z\}.
+\boxed{\;A_\star(e_t+i\vec e_x)=\mathbb{C}\{\vec e_x+ie_t,\ \vec e_y+i\vec e_z\}\;}.
 $$
 
 ## The Multiplication Operator and the Rank

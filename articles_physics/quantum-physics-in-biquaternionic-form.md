@@ -82,7 +82,7 @@ $$
 The sum is scalar:
 
 $$
-\boxed{\;\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural} = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2.\;}
+\boxed{\;\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural} = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2\;}.
 $$
 
 This is the **Lorentzian** bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H}_1,\tilde{H}_1\rangle_{\natural} = \langle\tilde{H}_1\rangle_{\natural}$. On $\mathbb{M}_+$ it is also the **Krein form** $\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural*} = \mathrm{Sc}(\tilde{H}_1^{\natural}\tilde{H}_2^{*})$ of the companion article: for Hermitian elements $\tilde{H}_1^{\natural} = \bar{\tilde{H}}_1$ and $\tilde{H}_2^{*} = \tilde{H}_2$, so the form reads $\mathrm{Sc}(\bar{\tilde{H}}_1\tilde{H}_2) = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_+$ even though the two differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.
@@ -165,7 +165,7 @@ The pure states form the boundary sphere $|\vec r| = 1$; the maximally mixed sta
 **A structural observation.** The positivity condition $|\vec r| \leq 1$ is equivalent to the condition $\langle\tilde{Ϛ}\rangle_{\natural} \geq 0$ on the biquaternion norm of $\mathbb{B}$:
 
 $$
-\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_t.
+\boxed{\;\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_t\;}.
 $$
 
 So the Bloch ball is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ with the **future light cone** of the biquaternion norm. The pure states form the boundary of the cone, which is also the set of zero divisors of $\mathbb{M}_+$ at the normalisation $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$.
@@ -273,7 +273,7 @@ On $\mathbb{M}_+$ the star is inert, so the same number is $\mathrm{Sc}(\tilde{�
 For a projective measurement of an observable $\tilde{H} = h_t e_t + i\vec h$ in a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = h_t \pm |\vec h|$, with probabilities
 
 $$
-p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
+\boxed{\;p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right)\;},
 $$
 
 where $\vec u_h = \vec h/|\vec h|$. The probabilities depend only on the angle between the measurement direction $\vec u_h$ and the Bloch vector $\vec r$.
@@ -297,7 +297,7 @@ $$
 where $p_+ = 2\,\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}^{*})$. Hence the post-measurement state is simply
 
 $$
-\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1(\vec u_h).
+\boxed{\;\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1(\vec u_h)\;}.
 $$
 
 So the state collapses to the idempotent associated with the outcome. This is the standard collapse, expressed as a composition of algebraic operations.
@@ -341,7 +341,7 @@ with $\tilde{H} = h_t e_t + i\vec h \in \mathbb{M}_+$ a Hermitian element (the H
 **The solution.** We have $-i\tilde{H} = -ih_t e_t + \vec h$. The scalar part and the vector part commute, so
 
 $$
-\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar) = \exp(-ih_t t'/\hbar)\left(\cos(|\vec h|t'/\hbar)\,e_t + \sin(|\vec h|t'/\hbar)\,\vec u_h\right),
+\boxed{\;\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar) = \exp(-ih_t t'/\hbar)\left(\cos(|\vec h|t'/\hbar)\,e_t + \sin(|\vec h|t'/\hbar)\,\vec u_h\right)\;},
 $$
 
 where $\vec u_h = \vec h/|\vec h|$ (for $\vec h \neq 0$). The exponential of the vector part uses $\vec u_h^2 = -e_t$, which gives the trigonometric form.

@@ -16,8 +16,6 @@ so its vanishing set is the union of the two lines $Q_{+}=0$ and $Q_{-}=0$ and n
 
 **The results.** The zero divisors of the multiplication are the nonzero elements of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are exactly the elements of vanishing reduced norm. The two lines are the two maximal ideals; they meet only at the origin; each is closed under multiplication; and the product of an element of one line with an element of the other is zero, so the whole of one line annihilates the whole of the other. The cone is homogeneous, and each of its two components is of real dimension two; the complement of the cone in $\mathbb{B}_{\mathrm{r}}\setminus\{0\}$ is the group of units.
 
-**Boundaries.** The criterion of invertibility and the reduced norm are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, above this article in this category; the multiplicativity of the reduced norm is *The Four Products, Their Forms and Their Algebraic Norms*. The annihilators of the zero divisors, one line annihilating the other, are *Annihilators of the Algebra of the Reduced Biquaternions*, below this article; the idempotents and the projections are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*; and the structure of the algebra as a direct product of two fields is *Introduction to the Algebra of the Reduced Biquaternions*. The complex and real quadrics of the four forms are *The Four Products, Their Forms and Their Algebraic Norms*.
-
 ## The Null Cone
 
 ### The Definition and the Equation

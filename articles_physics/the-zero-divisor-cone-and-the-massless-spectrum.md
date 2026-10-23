@@ -116,8 +116,8 @@ The **massless spectrum** is the set of massless one-particle states of the fram
 **What the cone fixes.** A massless element has $\langle\tilde Q\rangle_{\natural}=0$; its sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is a positive element whose determinant is $\lvert\langle\tilde Q\rangle_{\natural}\rvert^2$, so it drops from rank two to rank one; and its direction is a point of the projective cone. The shell, the rank and the direction are therefore cone data. For a material null momentum the square is explicit:
 
 $$
-\tilde P\star\tilde P=4\frac{E^2}{c^2}\,\tilde\Pi(-\vec u),\qquad
-\tilde\Pi(-\vec u)=\tfrac12(e_t-i\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert},
+\boxed{\;\tilde P\star\tilde P=4\frac{E^2}{c^2}\,\tilde\Pi(-\vec u),\qquad
+\tilde\Pi(-\vec u)=\tfrac12(e_t-i\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert}\;},
 $$
 
 a positive multiple of the idempotent along the direction opposite to the momentum. The massless state is therefore a **pure boundary state**, not a null state: the same idempotent appears with an imaginary coefficient in the composition and with a positive coefficient in the probability. One momentum, two faces.
@@ -159,11 +159,11 @@ The index is two for the nilpotents: $\tilde\Upsilon^3=0$ exactly when $\tilde\U
 The four-factor word stops at the cone; the two-factor Cartan pairing does not. For every element there is a unique pair
 
 $$
-\tilde Q=\tilde H\tilde U,
+\boxed{\;\tilde Q=\tilde H\tilde U,
 \qquad
 \tilde H=\sqrt{\tilde Q\tilde Q^{*}}\ \text{Hermitian positive semidefinite},
 \qquad
-\tilde U=\tilde H^{+}\tilde Q,
+\tilde U=\tilde H^{+}\tilde Q\;},
 $$
 
 with $\tilde U$ a partial isometry satisfying $\tilde U^{*}\tilde U=\tilde\Pi_{\mathrm i}$ and $\tilde U\tilde U^{*}=\tilde\Pi_{\mathrm f}$, the projections onto the initial and final subspaces of $\tilde Q$, and $\operatorname{ran}\tilde H=\operatorname{ran}\tilde Q$. Off the cone this is the Cartan pairing. On the cone it degenerates in a definite way: a nonzero null element is a positive scalar times a partial isometry,
@@ -241,7 +241,7 @@ $$
 Every $\tilde Q(\psi)$ is a unit, and as $\psi\to\infty$ it converges to
 
 $$
-\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
+\boxed{\;\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;},
 $$
 
 a nonzero element of the cone. The limit is a complex multiple of a minimal idempotent when $\vec u_{\mathrm r}$ has a component in the plane spanned by $e_t$ and $\vec u_{\mathrm b}$, and it is a nilpotent exactly when $\vec u_{\mathrm r}$ is orthogonal to both. Every nonzero element of the cone is such a limit for some choice of the data.

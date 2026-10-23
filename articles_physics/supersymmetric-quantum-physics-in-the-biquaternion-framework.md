@@ -5,7 +5,7 @@
 Supersymmetric quantum physics, introduced by Edward Witten in 1981, is the simplest realisation of a supersymmetry: a quantum system with a $\mathbb{Z}_2$ grading and a pair of Hermitian-conjugate supercharges $\mathcal{Q}$, $\mathcal{Q}^\dagger$ whose anticommutator is the Hamiltonian,
 
 $$
-\{\mathcal{Q},\mathcal{Q}^\dagger\} = H, \qquad \mathcal{Q}^2 = 0, \qquad (\mathcal{Q}^\dagger)^2 = 0 .
+\boxed{\;\{\mathcal{Q},\mathcal{Q}^\dagger\} = H, \qquad \mathcal{Q}^2 = 0, \qquad (\mathcal{Q}^\dagger)^2 = 0\;}.
 $$
 
 Its central structural fact is that the Hamiltonian factorises: writing $H = \mathrm{diag}(H_+,H_-)$ in the grading, one has $H_+ = A^\dagger A$ and $H_- = A A^\dagger$ for a first-order operator $A$, so the two graded sectors have **partner** spectra that agree except possibly at zero energy. The partner potentials are $V_\pm = W^2 \mp \frac{dW}{dx}$, where $W$ is the superpotential, and the Witten index $\Delta = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ counts the imbalance of zero-energy states between the two sectors.
@@ -110,7 +110,7 @@ $$
 where $\mathcal{Q}$ and $\mathcal{Q}^\dagger$ are the nilpotent pair of the abstract algebra of the previous section, here realised as the two off-diagonal blocks. Applying $\mathcal{D}$ twice and using $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ gives
 
 $$
-\mathcal{D}^2 = \begin{pmatrix} \tilde{\nabla}^{\natural}\tilde{\nabla} & 0 \\ 0 & \tilde{\nabla}\tilde{\nabla}^{\natural}\end{pmatrix} = \Box\,I ,
+\boxed{\;\mathcal{D}^2 = \begin{pmatrix} \tilde{\nabla}^{\natural}\tilde{\nabla} & 0 \\ 0 & \tilde{\nabla}\tilde{\nabla}^{\natural}\end{pmatrix} = \Box\,I\;},
 $$
 
 which is the anticommutator $\{\mathcal{Q},\mathcal{Q}^\dagger\} = \Box\,I$; the square of the Hermitian supercharge is the central Hamiltonian, and the mass is the eigenvalue at which the first-order pair is solved. The distinction between the two objects is worth holding on to: the nilpotent $\mathcal{Q}$ is the off-diagonal half, odd under the grading, and $\mathcal{D}$ is the Hermitian Dirac operator it generates. The supersymmetric Hamiltonian of the free theory is $\Box$, and the two partner Hamiltonians coincide, $H_+ = H_- = \Box$: the free biquaternionic Dirac operator is the case of **unbroken supersymmetry with a balanced spectrum**, and the mass is the parameter that pairs the two chiralities.
@@ -179,8 +179,8 @@ $$
 a first-order biquaternion operator with a superpotential multiplying the second basis unit. Its square is
 
 $$
-\tilde{Q}^2 = -\partial^2/\partial Q_x^2 + W^2 - i\,\frac{dW}{dx}\,\vec e_z
-= \left(-\partial^2/\partial Q_x^2 + W^2\right)e_t - \frac{dW}{dx}\,(i \vec e_z),
+\boxed{\;\tilde{Q}^2 = -\partial^2/\partial Q_x^2 + W^2 - i\,\frac{dW}{dx}\,\vec e_z
+= \left(-\partial^2/\partial Q_x^2 + W^2\right)e_t - \frac{dW}{dx}\,(i \vec e_z)\;},
 $$
 
 where we used $\vec e_y \vec e_x = -\vec e_z$, $\vec e_x \vec e_y = \vec e_z$ and $\vec e_x^2 = \vec e_y^2 = -e_t$. Two features of this expression are the algebraic content of the section.

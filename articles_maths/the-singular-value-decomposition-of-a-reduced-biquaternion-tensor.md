@@ -68,7 +68,9 @@ where $\sigma_{i,(j)}$ are the nonnegative complex singular values of $M_{(j)}$.
 **Theorem (the t-SVD).** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ there are unitary tensors $U\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_1\times n_3}$ and $V\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_2\times n_3}$ and an f-diagonal tensor $S\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ such that
 
 $$
-A=U\ast S\ast V^{\mathsf H}.
+\boxed{\;
+A=U\ast S\ast V^{\mathsf H}
+\;}.
 $$
 
 *Proof.* Transform $A$ along the third mode. For each $k$, apply the matrix decomposition over $\mathbb{B}_{\mathrm{r}}$ to $\widehat A^{(k)}$:
@@ -117,7 +119,9 @@ the expression of the source. The algorithm is embarrassingly parallel in the tw
 **Theorem.** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$,
 
 $$
-\|A\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\|_{\mathrm F},
+\boxed{\;
+\|A\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\|_{\mathrm F}
+\;},
 $$
 
 where $\operatorname{diag}(\widehat A)$ is the block diagonal matrix with blocks $\widehat A^{(1)},\dots,\widehat A^{(n_3)}$.
@@ -133,7 +137,9 @@ because each entry of $A$ is transformed by a vector of squared norm $n_3$ and t
 **Corollary.** For the t-SVD $A=U\ast S\ast V^{\mathsf H}$,
 
 $$
-\|A\|_{\mathrm F}=\|S\|_{\mathrm F}.
+\boxed{\;
+\|A\|_{\mathrm F}=\|S\|_{\mathrm F}
+\;}.
 $$
 
 *Proof.* In the transform, $\widehat A^{(k)}=\widehat U^{(k)}\widehat S^{(k)}(\widehat V^{(k)})^{\mathsf H}$, and the Frobenius norm is invariant under multiplication by the unitary matrices $\widehat U^{(k)}$ and $\widehat V^{(k)\mathsf H}$. Thus $\|\widehat A^{(k)}\|_{\mathrm F}=\|\widehat S^{(k)}\|_{\mathrm F}$ for every $k$; summing and using the theorem gives the identity.

@@ -16,12 +16,6 @@ $$
 
 the set of the Hermitian elements whose scalar part dominates the modulus of the vector part. The theorem of the article is that the square map $\tilde\Xi\mapsto\tilde\Xi\star\tilde\Xi$ has **exactly** this image, that a square root exists exactly when $\tilde Q$ lies in $\mathcal{C}$, that on the interior of $\mathcal{C}$ the root set is a real four-parameter family, and that the roots of a central value are the special case of the two companion articles, whose nonempty class of the central values is $+1$.
 
-**Placement.** The article is the seventh entry of the *Common Theory* section of the block, after the roots of one and the idempotents and after the roots of zero and the nilpotents. It uses the product and the class of the introduction, the square and its scalar part from *Norm and Invertibility in the General Plain Sesqualgebra* and *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and the Hermitian cone.
-
-**Boundaries.** The product, its class and its placement are *Introduction to the General Plain Sesqualgebra*; the relative definition of the square root is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the two-involution arithmetic of the parent is *Square Roots of a General Element in the Biquaternion Algebra*. The central values of the block and their root sets are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra* for the value $+1$ and *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra* for the value $0$; the Hermitian subspace, the positivity and the cone are *Hermitian and Skew-Hermitian Elements* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; the idempotents that the roots of $+1$ produce are in the first. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$; the natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$. The product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. In the imaginary decomposition $\tilde Q=q_r+iq_i$ the halves $q_r,q_i$ are real quaternions, with real scalar parts $q_{r0},q_{i0}$ and vector parts $\vec q,\vec v$.
-
 **The results.** The block-square is the Hermitian element $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2})e_t+2i(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v)$ in the real halves, with scalar part $s=\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}$ and vector part $\vec w=2(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v)$ satisfying $\lvert\vec w\rvert\leq s$. Its image is exactly the Hermitian cone $\mathcal{C}=\{\alpha e_t+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, so the equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ has a solution exactly when $\tilde Q\in\mathcal{C}$, the boundary being the image of the zero divisors and the interior the image of the regular elements. On the interior the root set of a value is a single orbit $\{\exp(i\theta)\tilde\Xi_0u\}$ of real dimension four under $\mathrm{U}(1)\times S^{3}$, and on the central line a root exists exactly for $\lambda\geq0$ real.
 
 ## The Reduction of the General Square
@@ -31,7 +25,7 @@ the set of the Hermitian elements whose scalar part dominates the modulus of the
 **Theorem (the square in the real halves).** For $\tilde Q=q_r+iq_i$,
 
 $$
-\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\bigl(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}\bigr)e_t+2i\Bigl(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v\Bigr) .
+\boxed{\;\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\bigl(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}\bigr)e_t+2i\Bigl(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v\Bigr)\;}.
 $$
 
 The square is **Hermitian**; its scalar part is $s=\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}\geq0$ and its vector part, written $\vec w$, is $\vec w=2\bigl(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v\bigr)$. Consequently the equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ has a solution only when $\tilde Q$ is **Hermitian**, and when $\tilde Q=\alpha e_t+i\vec w$ with $\alpha\in\mathbb{R}$, $\vec w\in\mathbb{R}^{3}$ it splits into the two real equations
@@ -51,7 +45,7 @@ $$
 **Theorem (the vector part is dominated by the scalar part).** For every $\tilde Q$,
 
 $$
-\lvert\vec w\rvert\leq s=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr),
+\boxed{\;\lvert\vec w\rvert\leq s=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)\;},
 $$
 
 so the square takes its values in the Hermitian cone $\mathcal{C}$.
@@ -97,7 +91,7 @@ The kernel of the action is the central subgroup $\{(0,e_t),(\pi,-e_t)\}\cong\ma
 **Proposition (the root set of an interior value is a single orbit).** Let $\tilde Q$ be in the interior of the cone and let $\tilde\Xi_0$ be one of its roots. Then the root set of $\tilde Q$ is exactly the orbit of $\tilde\Xi_0$ under the action,
 
 $$
-\{\tilde\Xi:\tilde\Xi\star\tilde\Xi=\tilde Q\}=\{\exp(i\theta)\tilde\Xi_0u:\theta\in\mathbb{R},\ u\in\mathbb{H}\ \text{real},\ \lvert u\rvert=1\},
+\boxed{\;\{\tilde\Xi:\tilde\Xi\star\tilde\Xi=\tilde Q\}=\{\exp(i\theta)\tilde\Xi_0u:\theta\in\mathbb{R},\ u\in\mathbb{H}\ \text{real},\ \lvert u\rvert=1\}\;},
 $$
 
 so it is a single real four-parameter family.

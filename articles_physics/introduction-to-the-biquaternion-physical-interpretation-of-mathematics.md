@@ -8,8 +8,6 @@ Each article of the category that interprets a result will provide a link to one
 
 The link is not a citation of convenience. It is the guarantee of the interpretation. A physical interpretation in this category is always an interpretation of a theorem that exists, and the reader can check the theorem before accepting the interpretation.
 
-**Placement and boundaries.** This article is the entry point of the category and owns no result. It states the form of the category, explains why one mathematical result may carry several interpretations, and lists the mathematical corpus about biquaternions from which the category reads. The interpretations themselves are the work of the category's articles, and each names its own source.
-
 ## The Form of an Article in This Category
 
 Every article that interprets a result has four parts, in this order.
@@ -58,7 +56,11 @@ The boundary is not decoration. The zero-divisor cone is the light cone on the m
 
 The category is not a dictionary of one-to-one correspondences. The algebra is one object and the physics reads it at several levels, so a single theorem can carry more than one interpretation.
 
-The norm is the clearest case. $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the interval on the material sector: for $\tilde Q=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it is $-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$. The same form read on a four-position is a squared length; read on a four-momentum, it is $-m^{2}c^{2}$, and the level set $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ inside the material sector is the mass shell. Its zero set is the zero-divisor cone, the light cone of the material sector. The Hermitian form is the Born pairing up to the factor two. On the state $\tilde{Ϛ}$ and a Hermitian observable $\tilde H$, $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$, and $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ is the probability weight, normalised by $\mathrm{Tr}\,\tilde{Ϛ}=1$. Four interpretations, four questions, one algebra.
+The norm is the clearest case. $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the interval on the material sector: for $\tilde Q=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it is $-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$. The same form read on a four-position is a squared length; read on a four-momentum, it is $-m^{2}c^{2}$, and the level set $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ inside the material sector is the mass shell. Its zero set is the zero-divisor cone, the light cone of the material sector. The Hermitian form is the Born pairing up to the factor two. On the state $\tilde{Ϛ}$ and a Hermitian observable $\tilde H$, $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=\mathrm{Sc}(\tilde{Ϛ}\tilde H)$, and $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ is the probability weight, normalised by $\mathrm{Tr}\,\tilde{Ϛ}=1$. Four interpretations, four questions, one algebra.
+
+$$
+\boxed{\;\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\ \text{(mass shell)},\qquad \langle\tilde Q\rangle_{\natural}=0\ \text{(light cone)}\;}
+$$
 
 The idempotents are a second case. A minimal Hermitian idempotent is a pure state, a rank-one projector and a choice of vacuum, depending on which structure is interpreted. The three interpretations agree on the element and disagree on the physics, which is why each is labelled.
 
@@ -76,9 +78,9 @@ This category is not a prerequisite of any other, and no other category is a pre
 
 ## The Mathematical Corpus about Biquaternions
 
-The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and five entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that the physics has not yet read.
+The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and seven entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that the physics has not yet read.
 
-The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-six further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and forty-two entries, and they are the full mathematical source of the category.
+The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-six further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and forty-three entries, and they are the full mathematical source of the category.
 
 ### Algebra
 
@@ -111,6 +113,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
 - [The Specificities of the Biquaternion Algebra](../articles_maths/the-specificities-of-the-biquaternion-algebra.html)
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html)
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
 - [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html)
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html)
@@ -136,10 +139,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### Biquaternions Polar Decomposition
 
 - [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html)
-- [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html)
-- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html)
-- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html)
-- [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
+- [The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html)
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
 
 #### Operators
@@ -205,6 +205,13 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)
 
+#### Exponential Polar Decomposition of Biquaternions
+
+- [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html)
+- [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html)
+- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html)
+- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html)
+
 ### Geometry
 
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html)
@@ -237,7 +244,6 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Pluripotential Theory of the Biquaternion Dynamics](../articles_maths/the-pluripotential-theory-of-the-biquaternion-dynamics.html)
 - [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html)
 
-
 ## What the Index Is For
 
 The list has four blocks. The *Algebra* block fixes the vocabulary and the objects: the vector space, the four general products and their twelve readings, the forms, the norms, the involutions, the subspaces, the two sectors, the ideals and the representations. The three remaining blocks of the study are the three places a physical interpretation can land beyond the algebra. Topology gives the causal structure: the cone, its link and its projectivisation. Analysis gives the fields and their evolution: the regular functions, the operators and the propagators. Geometry gives the frames and their orbits: the rotations, the Lorentz group, the unitary and the Krein groups.
@@ -252,7 +258,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 - Each article will link one or several articles of the Mathematical menu, state their results, then give labelled physical interpretations with their boundaries.
 - The category owns no theorem; the proof stays in the mathematics article.
 - One result may carry several interpretations, and the interpretation names the sector, the regime and the question.
-- The index lists the one hundred and five entries of the *Biquaternions* category, grouped as the Mathematical menu groups them.
+- The index lists the one hundred and seven entries of the *Biquaternions* category, grouped as the Mathematical menu groups them.
 
 ## Summary of Notation
 

@@ -10,8 +10,6 @@ the fourth of the four general products and one of the twelve structures that th
 
 The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$, the two rules for forms and the table of the four effects are **The Realification and the Effect of the Change of Scalars**.
 
-**Boundary.** The product itself is defined in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; its complex body — the table, the two scalar rules, the associator, the ternary product, the square, the idempotents, the nilpotents and the zero divisors — is *Introduction to the General Quaternionic Sesqualgebra*, *The Specificities of the General Quaternionic Sesqualgebra* and the articles they cite, and none of it is repeated here. What the real reading adds is stated below and nowhere else.
-
 ## The Change of Scalars
 
 The biquaternion space is the complex vector space of dimension four on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$; the scalars are $\mathbb{C}$, read on the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the image of the scalar action $A\mapsto Ae_t$, which is **not** the centre here, the centre of the multiplication being trivial; and the base involution is the conjugation $\varsigma(z)=\bar z$ on it. Read over $\mathbb{R}$ the same set is the real vector space
@@ -53,7 +51,7 @@ for the left and the right multiplication.
 
 **Theorem (the two parities).** The left multiplication is $\mathbb{C}_{\mathbb{B}}$-conjugate-linear and the right multiplication is $\mathbb{C}_{\mathbb{B}}$-linear; equivalently, they are $\mathbb{R}$-linear on $\mathbb{R}^8$ and
 $$
-L_{\tilde Q_1}\,J=-J\,L_{\tilde Q_1},\qquad R_{\tilde Q_2}\,J=+J\,R_{\tilde Q_2}.
+\boxed{\; L_{\tilde Q_1}\,J=-J\,L_{\tilde Q_1},\qquad R_{\tilde Q_2}\,J=+J\,R_{\tilde Q_2} \;}.
 $$
 
 *Proof.* The product is $\mathbb{C}$-linear in its first slot and conjugate-linear in its second, so $L_{\tilde Q_1}$ is conjugate-linear and $R_{\tilde Q_2}$ is linear in the variable, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*. A conjugate-linear $\mathbb{R}$-linear map anticommutes with the complex structure and a linear one commutes with it, by the two criteria of the same section.
@@ -68,7 +66,7 @@ the two shapes attached to the anticommuting and to the commuting $\mathbb{R}$-l
 
 **Corollary (the two summands).** By §*The Realification of a Linear Map*,
 $$
-\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\oplus\operatorname{Ant}_{\mathbb{C}}(\mathbb{B}),
+\boxed{\; \operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\oplus\operatorname{Ant}_{\mathbb{C}}(\mathbb{B}) \;},
 $$
 the commuting and the anticommuting endomorphisms, of real dimensions $32$ and $32$ for $n=4$. The left multiplications of the block lie in the second summand and the right multiplications in the first. This is the operator form of the $A/S$ distinction: for the two bilinear general products both slots are read without a conjugation, so both families commute with $J$, while for the two sesquilinear general products, whose second slot carries the star, the left multiplications anticommute and the right multiplications commute. The parity $LJ=-JL$ against $RJ=JR$ is therefore the same statement as the linearity against the conjugate-linearity of the slots over $\mathbb{C}_{\mathbb{B}}$.
 
@@ -86,7 +84,7 @@ $$
 $$
 Hermitian of complex inertia $(1,3)$ (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*). It is real on the diagonal, and its imaginary part, alternating and non-zero off the diagonal, is no second independent form: it is recovered from the real part by $\operatorname{Im}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-K_{\mathbb{R}}(J\tilde Q_1,\tilde Q_2)$, so the realification is one real symmetric bilinear form and not the split pair that a bilinear form gives. By §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars* its signature is the double of the complex inertia,
 $$
-(2p,2q)=(2,6),
+\boxed{\; (2p,2q)=(2,6) \;},
 $$
 with Gram matrix $\operatorname{diag}(\varepsilon,\varepsilon)$ in the real basis, of signs $+,-,-,-,+,-,-,-$. This is the Krein row of the table of *The Realification of the Four Forms*, §*The Four Gram Matrices*, quoted here; among the four forms of the corpus the form of the block is the only one that is **indefinite on the complex side**, so its realification is the only one that is neither definite, as $(8,0)$, nor split, as $(4,4)$.
 

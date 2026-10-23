@@ -36,7 +36,9 @@ The quotient $\mathbb{D}'_R/\mathrm{M}$ is the ring $R$ itself, since $\mathrm{M
 **Theorem.** Let $k$ be a field. The ideals of $\mathbb{D}'_k = k[\varepsilon]/(\varepsilon^2)$ are exactly
 
 $$
-0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{D}'_k,
+\boxed{\;
+0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{D}'_k
+\;},
 $$
 
 and there are no others. The maximal ideal $\mathrm{M}$ is the unique nonzero proper ideal, hence simultaneously the unique maximal ideal and the unique minimal nonzero ideal.
@@ -62,7 +64,9 @@ The ideal lattice of $\mathbb{D}'_R$ is therefore the three-element chain $0 \su
 **Theorem.** The maximal ideal is nilpotent of index two:
 
 $$
-\mathrm{M}^2 = 0, \qquad \mathrm{M} \neq 0.
+\boxed{\;
+\mathrm{M}^2 = 0, \qquad \mathrm{M} \neq 0
+\;}.
 $$
 
 Equivalently, $\varepsilon^2 = 0$ and $\varepsilon \neq 0$, and every element of $\mathrm{M}$ has square zero.
@@ -130,7 +134,9 @@ whose off-diagonal corners vanish for a central idempotent. In $\mathbb{D}'_R$ t
 What replaces the Peirce decomposition is the eigenspace decomposition of the unique nontrivial involution. Dual conjugation $\bar{\cdot}$ satisfies $\bar{\bar Q} = Q$, so it has eigenvalues $+1$ and $-1$, and
 
 $$
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Q = \tfrac{1}{2}(Q + \bar Q) + \tfrac{1}{2}(Q - \bar Q).
+\boxed{\;
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Q = \tfrac{1}{2}(Q + \bar Q) + \tfrac{1}{2}(Q - \bar Q)
+\;}.
 $$
 
 The two summands are the real submodule $R_{\mathbb{D}'} = \{Q : \bar Q = Q\}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{D}'} = \{Q : \bar Q = -Q\}$, and both are rank-one $R$-modules whose direct sum is all of $\mathbb{D}'_R$. The two projections $Q \mapsto (Q \pm \bar Q)/2$ are the analogues of the Peirce projections, but they are associated to the involution and not to an idempotent.

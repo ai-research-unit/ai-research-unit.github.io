@@ -50,7 +50,7 @@ $$
 and therefore the **deviation from idempotency** is a pure scalar:
 
 $$
-\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}\left(|\vec r|^2 - 1\right)e_t .
+\boxed{\;\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}\left(|\vec r|^2 - 1\right)e_t\;} .
 $$
 
 This is the central identity for the present subject. It says that all the mixedness of a qubit state is carried by a single real number, $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ}) = \tfrac14(|\vec r|^2 - 1) \leq 0$, which vanishes exactly on the pure states. Equivalently, the **purity** is
@@ -95,7 +95,7 @@ whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_t + p(\tilde\Pi
 On the Bloch vector the channel acts by
 
 $$
-\boxed{\;\vec r \;\longmapsto\; \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u.\;}
+\boxed{\;\vec r \;\longmapsto\; \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u\;}.
 $$
 
 The component of $\vec r$ along $\vec u$ is untouched; the transverse component is multiplied by $1-p$. In the eigenbasis of $\vec u$, this is exactly the statement that the diagonal entries of the density matrix — the **populations** — are preserved, while the off-diagonal entries — the **coherences** — are scaled by $1-p$. Equivalently, the coherence is the pair of transverse Bloch components, which are the expectation values $\mathrm{Tr}(\tilde{Ϛ}\,i \vec e_k)$ of the two traceless observables $i\vec e_k$ with $\vec e_k\perp\vec u$.
@@ -105,7 +105,7 @@ The component of $\vec r$ along $\vec u$ is untouched; the transverse component 
 The channel's effect on the Bloch vector is linear in $\vec r$, with eigenvector $\vec u$ of eigenvalue $1$ and two-dimensional transverse eigenspace of eigenvalue $1-p$. Composing two dephasing channels along the same axis therefore multiplies the transverse eigenvalues:
 
 $$
-\Phi^{\mathrm{deph}}_p \circ \Phi^{\mathrm{deph}}_q = \Phi^{\mathrm{deph}}_{p + q - pq},
+\boxed{\;\Phi^{\mathrm{deph}}_p \circ \Phi^{\mathrm{deph}}_q = \Phi^{\mathrm{deph}}_{p + q - pq}\;},
 $$
 
 since $1 - (p+q-pq) = (1-p)(1-q)$. In particular, for equal strengths,
@@ -117,7 +117,7 @@ $$
 Hence
 
 $$
-\Phi^{\mathrm{deph}}_p \text{ is idempotent} \quad \Longleftrightarrow \quad 2p - p^2 = p \quad \Longleftrightarrow \quad p \in \{0,1\}.
+\boxed{\;\Phi^{\mathrm{deph}}_p \text{ is idempotent} \quad \Longleftrightarrow \quad 2p - p^2 = p \quad \Longleftrightarrow \quad p \in \{0,1\}\;}.
 $$
 
 Only the identity ($p=0$) and **full dephasing** ($p=1$) are idempotent. Every intermediate strength is not. This is the precise sense in which the title's phrase has to be qualified. Dephasing once is not the same as dephasing twice unless the dephasing is complete; dephasing twice is dephasing harder, with effective strength $2p - p^2 > p$. The operation is a **contraction** toward the pointer axis, and a contraction is not a projection.
@@ -135,7 +135,7 @@ and the semigroup is idempotent only at the two ends, $t' = 0$ and $t' = \infty$
 At $p = 1$ the channel becomes
 
 $$
-\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,(\vec u\cdot\vec r)\,\vec u\right).
+\boxed{\;\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,(\vec u\cdot\vec r)\,\vec u\right)\;}.
 $$
 
 Its image is the **diameter** of the Bloch ball along $\vec u$: the set of states with $\vec r \parallel \vec u$. It is non-unitary and it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$. It is also **measure-and-forget**: measuring the observable $\alpha = i\vec u$ and discarding the outcome leaves precisely
@@ -263,7 +263,7 @@ $$
 the same pointer observable applied to both qubits. Then the generator annihilates the singlet,
 
 $$
-\bigl(\alpha\otimes e_t+e_t\otimes\alpha\bigr)\lvert\Psi^-\rangle=0 ,
+\boxed{\;\bigl(\alpha\otimes e_t+e_t\otimes\alpha\bigr)\lvert\Psi^-\rangle=0\;} ,
 $$
 
 so the singlet commutes with the collective generator and is invariant under the collective dephasing for every strength. In the language of the pointer basis, the singlet lies entirely in the fixed set of the collective channel: it is a fixed state of that channel. This is the sense in which the source's claim is correct.

@@ -88,7 +88,7 @@ $$
 **Theorem (the composition).** For all $\tilde Q_5, \tilde Q_2$,
 
 $$
-L_{\tilde Q_5} \circ L_{\tilde Q_2} = T_{\tilde Q_5^{\natural},\,\overline{\tilde Q_2}} ,
+\boxed{\; L_{\tilde Q_5} \circ L_{\tilde Q_2} = T_{\tilde Q_5^{\natural},\,\overline{\tilde Q_2}} \;},
 $$
 
 where $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ is the ordinary two-sided operator of the plain product.
@@ -138,7 +138,7 @@ in agreement with the composition law above; the products of a sandwich and a tw
 **Theorem.** For all $\tilde Q_5, \tilde Q_2$,
 
 $$
-R_{\tilde Q_5} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\,\tilde Q_5^{*}} .
+\boxed{\; R_{\tilde Q_5} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\,\tilde Q_5^{*}} \;}.
 $$
 
 **Proof.** Expanding, $R_{\tilde Q_5}(R_{\tilde Q_2}(\tilde Q_1)) = (\tilde Q_1^{\natural}\tilde Q_2^{*})^{\natural}\tilde Q_5^{*} = (\tilde Q_2^{*})^{\natural}(\tilde Q_1^{\natural})^{\natural}\tilde Q_5^{*} = \overline{\tilde Q_2}\,\tilde Q_1\,\tilde Q_5^{*}$, using the anti-multiplicativity of ${}^{\natural}$ and $(\tilde Q_2^{*})^{\natural} = \overline{\tilde Q_2}$.
@@ -158,7 +158,7 @@ for every $\tilde Q_1$; at $\tilde Q_1 = e_t$ this gives $\tilde Q_3^{*} = \over
 **Theorem (the mixed products).** For all $\tilde Q_5, \tilde Q_2$ and every $\tilde Q_1$,
 
 $$
-L_{\tilde Q_5}\bigl(R_{\tilde Q_2}(\tilde Q_1)\bigr) = \tilde Q_5^{\natural}\tilde Q_2\,\overline{\tilde Q_1} , \qquad R_{\tilde Q_2}\bigl(L_{\tilde Q_5}(\tilde Q_1)\bigr) = \overline{\tilde Q_1}\,\tilde Q_5\,\tilde Q_2^{*} ,
+\boxed{\; L_{\tilde Q_5}\bigl(R_{\tilde Q_2}(\tilde Q_1)\bigr) = \tilde Q_5^{\natural}\tilde Q_2\,\overline{\tilde Q_1} , \qquad R_{\tilde Q_2}\bigl(L_{\tilde Q_5}(\tilde Q_1)\bigr) = \overline{\tilde Q_1}\,\tilde Q_5\,\tilde Q_2^{*} \;},
 $$
 
 both operators being conjugate-linear in $\tilde Q_1$.

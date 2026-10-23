@@ -52,7 +52,7 @@ where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r_2$, and $P_l$ is t
 Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the **spherical multipole expansion**
 
 $$
-\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_l^{m}(\theta,\phi),
+\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_l^{m}(\theta,\phi)\;},
 $$
 
 with the **spherical multipole moments**
@@ -235,7 +235,7 @@ with five independent components. It is the representation $D^{(2)}$ of the rota
 The potential of a quadrupole is the $l = 2$ term of the expansion,
 
 $$
-\Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j ,
+\boxed{\;\Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j\;},
 $$
 
 and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as noted above. The fall-off is $r^{-3}$, one power faster than the dipole and two faster than the monopole.
@@ -276,7 +276,7 @@ $$
 the trace term drops against $\mathcal{Q}_{ii} = 0$. With the external field source-free at the location of the distribution, as assumed for the expansion above, the quadrupole interaction is therefore the pure contraction of two $D^{(2)}$ objects,
 
 $$
-W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial Q_i\partial Q_j\,\Phi(0).
+\boxed{\;W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial Q_i\partial Q_j\,\Phi(0)\;}.
 $$
 
 **It is a scalar.** Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{C}_{\mathbb{B}}$. The algebra has no difficulty with the *value* of the quadrupole interaction. Its difficulty is with the *moment*, and that is the subject of the next section.
@@ -324,8 +324,8 @@ The weight spectrum confirms that nothing else can be present. For a rotation ab
 The quadrupole is a symmetric traceless tensor over the vector part, and the natural algebraic home is the **symmetric traceless square** of $D^{(1)}$,
 
 $$
-\operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
-\qquad \dim_{\mathbb{C}}\operatorname{Sym}^2_0(D^{(1)}) = 5 ,
+\boxed{\;\operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
+\qquad \dim_{\mathbb{C}}\operatorname{Sym}^2_0(D^{(1)}) = 5\;},
 $$
 
 which is a subspace of the tensor square $D^{(1)}\otimes D^{(1)}$ — equivalently of $\mathbb{B}\otimes\mathbb{B}$ — and not a subspace of $\mathbb{B}$. In coordinate terms, a quadrupole is the traceless part of a symmetric bilinear form $\mathcal{Q}(\vec u,\vec v)$ on the vector part. This is the precise sense in which the quadrupole is *outside* the algebra: it is a tensor built from two vectors, not a single element.

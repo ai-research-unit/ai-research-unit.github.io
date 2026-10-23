@@ -9,8 +9,6 @@ The word *representation* is used here in the sense of a concrete realization of
 
 The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to *Split-Complex Regular Element Representation*; it does not treat the polar forms, which belong to *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and its two companion articles; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the **definite** one and whose product rule differs from the present one in a single sign.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{*} = q^2-q'^2$.
-
 ## The Coefficient Space
 
 **Definition.** The **two-component vector** of a split-complex number $Q = q+j q'$ is the ordered pair

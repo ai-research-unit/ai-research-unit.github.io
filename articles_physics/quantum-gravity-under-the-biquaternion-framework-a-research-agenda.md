@@ -24,8 +24,6 @@ Three traps are named here because a reader will otherwise fall into them, and t
 
 The organisation is the three-way classification the agenda exists to make. The article first fixes what quantisation of the gravitational sector would require and what the framework supplies toward it. It then states the two-sided obstruction precisely and sets it against the one-sided gauge connection. The three central sections sort the sector into **(i) established**, **(ii) obstacles with a known route**, and **(iii) obstacles with no route yet**, each item carrying the object or computation that would settle it. A separate section states the modular route, and a ledger collects the classification in one table. The closing sections summarise and carry the inherited notation.
 
-**Conventions.** The notation of the read-list articles is inherited without change, and nothing is renamed or rederived. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$ commuting with every $\vec e_k$. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ the centre. The material basis is $\varepsilon_0=ie_t$, $\varepsilon_k=\vec e_k$, with $\eta_{\mu\nu}=\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}=\mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, $\tilde\nabla^{\natural}$ is its quaternion conjugate, and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$. The frame field is $\tilde E_\mu\in\mathbb{M}_-$ with $g_{\mu\nu}=\langle\tilde E_\mu,\tilde E_\nu\rangle_{\natural}$; the connection is $\vec\Gamma_\mu$, valued in the six-dimensional traceless subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}=\mathrm{span}_\mathbb{R}\{\vec e_k,i\vec e_k\}$, with the rotations $J_k=\vec e_k$ and the boosts $K_k=i\vec e_k$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q\tilde H)=2\,\mathrm{Sc}(\tilde Q\tilde H)$, with $\mathrm{Tr}(e_t)=2$, is inherited unchanged; the modular data are $S=J\Delta^{1/2}$, $\Delta=S^*S$, $\sigma_{t'}(\tilde Q_1)=\Delta^{it'}\tilde Q_1\Delta^{-it'}=\exp(-i\tilde{K}_{\mathrm{mod}}t')\tilde Q_1 \exp(i\tilde{K}_{\mathrm{mod}}t')$ with $\tilde{K}_{\mathrm{mod}}=-\log\Delta$, and the wedge generator $G_1=i\vec e_x\in\mathbb{M}_+$. Natural units $\hbar=c=k_B=1$ are used where a temperature or a coupling is displayed.
-
 ## What Quantisation of the Gravitational Sector Would Require
 
 It is worth fixing the chain before measuring the framework against it, because "quantise gravity" names several different programmes with different inputs.
@@ -58,12 +56,12 @@ which is left multiplication by the connection. In the non-abelian case the coef
 
 The gravitational connection is **two-sided**, and its article says why. The local Lorentz group acts on the material sector by $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, so the infinitesimal action of a generator $G$ in the Lie subspace is
 $$
-\delta_G\tilde{Q}=\tfrac12\big(G\tilde{Q}+\tilde{Q}G^{*}\big) ,
+\boxed{\;\delta_G\tilde{Q}=\tfrac12\big(G\tilde{Q}+\tilde{Q}G^{*}\big)\;},
 $$
 which for a Hermitian boost generator $G=G^{*}$ is the anticommutator $\tfrac12\{G,\tilde{Q}\}$ and not the commutator. The same article records that the natural abbreviation $D_\mu=\partial/\partial Q_\mu+[\vec\Gamma_\mu,\cdot\,]$ is wrong for exactly the boosts, which are the Lorentzian content of the theory. This was recomputed here: for $G_1=i\vec e_x$ and a material element $\tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the two-sided generator reproduces the boost,
 $$
-\frac{d}{d\psi}\Big|_0\tilde U\tilde{Q}\tilde U^{*}=\tfrac12\{G_1,\tilde{Q}\},\qquad
-[G_1,\tilde{Q}]=\big(0,\,0,\,-2i q_z,\,2i q_y\big),
+\boxed{\;\frac{d}{d\psi}\Big|_0\tilde U\tilde{Q}\tilde U^{*}=\tfrac12\{G_1,\tilde{Q}\},\qquad
+[G_1,\tilde{Q}]=\big(0,\,0,\,-2i q_z,\,2i q_y\big)\;},
 $$
 so the commutator **vanishes on the boost plane** $q_y=q_z=0$, and off it, it is a different generator — it is not the boost. A quantisation built on the commutator form would therefore quantise the wrong generator on the one case the Lorentzian theory needs.
 
@@ -86,11 +84,9 @@ Everything in this section is a kinematic or an algebraic fact recomputed in the
 **The one-sided gauge connection, as the contrast.** $D_\mu=\partial/\partial Q_\mu+\tfrac{iϙ}{\hbar}A_\mu$ in the abelian case (central coefficients, left multiplication) and $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal A_\mu$ in the non-abelian case (left multiplication on the fundamental, adjoint commutator on algebra-valued fields), from the covariant-derivative and non-abelian articles. The contrast is not a detail of notation; it is the reason the gauge quantisation does not transfer.
 
 **The finite-dimensional modular operator.** In $\mathbb{B}\cong M_2(\mathbb{C})$, for every faithful state $\tilde{Ϛ}\in\mathbb{M}_+$ the Tomita–Takesaki construction gives $S=J\Delta^{1/2}$, $\Delta=S^*S>0$, and
-$$
-\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+,\qquad
+$$\boxed{\;\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+,\qquad
 \sigma_{t'}(\tilde Q_1)=\Delta^{it'}\tilde Q_1\Delta^{-it'}=\exp(-i\tilde{K}_{\mathrm{mod}}t')\tilde Q_1 \exp(i\tilde{K}_{\mathrm{mod}}t'),\qquad
-\frac{d}{dt'}\Big|_0\sigma_{t'}(\tilde Q_1)=-i[\tilde{K}_{\mathrm{mod}},\tilde Q_1],
-$$
+\frac{d}{dt'}\Big|_0\sigma_{t'}(\tilde Q_1)=-i[\tilde{K}_{\mathrm{mod}},\tilde Q_1]\;},$$
 with $\mathrm{Tr}(\exp(-\tilde{K}_{\mathrm{mod}}))=1$ and, by the inherited trace formula, $\omega(\tilde Q_1)=2\,\mathrm{Sc}(\exp(-\tilde{K}_{\mathrm{mod}})\tilde Q_1)$. This is *The Modular Hamiltonian in Biquaternionic Form*'s content, and it was re-verified here on a faithful state and on the thermal state: $\tilde{K}_{\mathrm{mod}}$ is Hermitian, $\mathrm{Tr}(\exp(-\tilde{K}_{\mathrm{mod}}))=1$, $Z=\mathrm{Tr}(\exp(-\beta G_1))=2\cosh\beta$, and for $\tilde{Ϛ}\propto \exp(-\beta G_1)$ the modular Hamiltonian $\tilde{K}_{\mathrm{mod}}=\beta G_1+(\log Z)e_t$ commutes with $G_1$. The finite-dimensional flow is **inner**, generated by the commutator.
 
 **The wedge modular Hamiltonian.** *The Modular Hamiltonian in Biquaternionic Form* and *The Bisognano–Wichmann Theorem under the Biquaternion Framework* give, at the right wedge, $G_1=i\vec e_x\in\mathbb{M}_+$ with $G_1^2=e_t$, $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$, equivalently $\Delta_W=\exp(-2\pi G_1)$, and a modular flow that is the boost by rapidity $2\pi s$. The flow's action on $\mathbb{M}_-$ is the two-sided rotor conjugation, not the commutator $[\tilde{K}_{\mathrm{mod},W},\cdot\,]$. Bisognano–Wichmann is imported, not derived; the generator identification is exact and the flow identification is not available inside the finite-dimensional algebra.

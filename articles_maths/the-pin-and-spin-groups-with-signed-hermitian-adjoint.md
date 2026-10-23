@@ -22,8 +22,6 @@ The payoff is a single clean statement. With the trivial involution the Hermitia
 
 The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact sequences are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger and the involution of the base are *Hermitian Algebras*; the unitary slice, its compactness and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the operator and its action on $V$ are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the unsigned member and its Clifford-group identities are *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*. Nothing owned by those entries is reproved.
 
-**Conventions.** The base $A$ is a commutative ring with involution $\sigma$, $F$ is the field of scalars of the Clifford algebra, $V$ is free of rank $n$ with a non-degenerate quadratic form $\mathfrak{Q}$, $x^{\dagger}=\sigma(\alpha(x^{r}))$, $x^{\natural}=\alpha(x^{r})$ is Clifford conjugation, $N(x)=x x^{\natural}$, $\rho_u(v)=v-2g(v,u)\mathfrak{Q}(u)^{-1}u$, and $\Theta^{\alpha}_x$, $\Theta_x$, $\mathrm{Ad}^{\alpha}_x$ are the three sandwiches named above.
-
 ## The Three Conditions
 
 **Proposition (the slice is a group).** $U=\{x:x^{\dagger}x=1\}$ is a subgroup of the unit group. It contains $1$; if $x\in U$ then $x^{\dagger}=x^{-1}$ and $x^{\dagger}\in U$; and $U$ is closed under multiplication.

@@ -32,8 +32,6 @@ $$
 
 Then $G \bullet H = H \bullet G$ and $[G,H] = -[H,G]$: the symmetrisation is commutative, the antisymmetrisation anticommutative. Both are bilinear, and either, together with the other, reconstructs the product: $G \star H = G \bullet H + [G, H]$. The two are therefore not two structures on $V$ but the two halves of one structure.
 
-**Conventions.** The bracket written here carries the factor $\tfrac12$, so that the two halves reconstruct the product with no further coefficient. The corpus's *The Commutator Operator* writes the same bracket without it, $[a,b] = ab - ba$, and writes the halved antisymmetrisation with a wedge, $x \wedge y = \tfrac12(xy - yx)$, as in *The Symmetric and Antisymmetric Parts of an Algebra Product*; the identities below are homogeneous in the bracket, so the two conventions differ only by the factor $2$.
-
 ### The Lie Half
 
 The antisymmetrisation satisfies the **Jacobi identity**
@@ -104,7 +102,6 @@ Both ternary products above satisfy this identity. A Jordan triple system need n
 The four-dimensional carrier has one more piece of visible structure. In the trinomial basis the units $e_\mu = i\hat e_\mu$ are $2\times2$ *block* matrices: each unit is a $2\times2$ matrix of $2\times2$ blocks, and the blocks of the three spatial units close under multiplication into the quaternion group $Q_8$ modulo its centre. The source groups these blocks under the name **periodic matrices** $J_i$; the block form itself is what the algebra supplies, and it exhibits $\mathbb{B} \cong M_2(\mathbb{C})$ directly — the algebra is a $2\times2$ matrix algebra, its symmetric part is the special Jordan algebra, and its skew part is the Lie algebra. The verified content of the block structure is exactly the quaternion relations $\hat e_\mu^2 = -I$ and $\hat e_x \hat e_y = \hat e_z$; the identification of the individual blocks with the source's $J_i$ is the source's, and the corpus records it as such.
 
 ## What Is Verified and What Is the Source's
-
 
 - Jacobi for the antisymmetric half;
 - the Jordan identity for the symmetric half;

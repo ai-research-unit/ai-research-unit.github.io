@@ -20,15 +20,11 @@ the **Krein form** of the corpus, and the vector part of the block is the mixed 
 
 The form $\langle\cdot,\cdot\rangle_{\natural*}$ itself, its Gram matrices, its restrictions and its cone are *The Krein Gram Matrix and the Restrictions of the Form* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the four pairings of the algebra are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the indefinite positivity of the algebra is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; the comparison of the four forms of the row is *Comparison Between the Four General Products*; and the product whose scalar part is read here is *Introduction to the Symmetric Quaternionic Sesqualgebra*. The invariance that does hold, the adjoint relation of the block, is used in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 
-**Conventions.** $\tilde Q_2=\sum_\mu Q_{2,\mu} e_\mu$; $\varepsilon=(1,-1,-1,-1)$; $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ is $\mathbb{C}$-linear in the first argument and $\bar{\cdot}$-semilinear in the second. The real basis is $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and the coefficient basis is $e_t,\vec e_x,\vec e_y,\vec e_z$ over $\mathbb{C}$.
-
 ## The Form and Its Two Gram Matrices
 
 **Theorem (the form).** For all biquaternions,
 
-$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-\sum_{\mu\in\{x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}},
-$$
+$$ \boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-\sum_{\mu\in\{x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}} \;}, $$
 
 and $\langle\cdot,\cdot\rangle_{\natural*}$ is Hermitian: $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}}$, with $\langle\tilde Q_2,\tilde Q_2\rangle_{\natural*}=|Q_{2t}|^{2}-\sum_k|Q_{2,k}|^{2}$ real.
 
@@ -36,9 +32,7 @@ and $\langle\cdot,\cdot\rangle_{\natural*}$ is Hermitian: $\langle\tilde Q_1,\ti
 
 **Theorem (the two Gram matrices).** In the coefficient basis the Gram matrix of $\langle\cdot,\cdot\rangle_{\natural*}$ is
 
-$$
-E=\mathrm{diag}(1,-1,-1,-1),
-$$
+$$ \boxed{\; E=\mathrm{diag}(1,-1,-1,-1) \;}, $$
 
 In the real basis it is
 
@@ -114,9 +108,7 @@ follow from the definition of the block and the two anti-automorphism properties
 
 **Theorem (the compatibility that does hold).** The block and the form are tied by the adjoint relation
 
-$$
-\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}.
-$$
+$$ \boxed{\; \langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}} \;}. $$
 
 *Proof.* Use the two identities of the previous theorem, $(\tilde Q_3\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde Q_3)$ and $(\tilde Q_3\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde Q_3})$, together with $\mathrm{Sc}(U)=\mathrm{Sc}(U^{\natural})$, the value of the natural conjugation on the two scalar products, and the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$. On the one hand
 

@@ -113,10 +113,10 @@ A quaternion element is $h=h_te_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ with all 
 
 **The four general products.** **All four keep the quaternion subspace inside itself**; on the real quaternions they read $hg$, $\bar{h}g$, $h\bar{g}$ and $\bar{h}\bar{g}=\overline{gh}$:
 $$
-\mathbb{H}_{\mathbb{B}}\mathbb{H}_{\mathbb{B}}=\mathbb{H}_{\mathbb{B}},\quad
+\boxed{\; \mathbb{H}_{\mathbb{B}}\mathbb{H}_{\mathbb{B}}=\mathbb{H}_{\mathbb{B}},\quad
 \mathbb{H}_{\mathbb{B}}^{\natural}\mathbb{H}_{\mathbb{B}}=\mathbb{H}_{\mathbb{B}},\quad
 \mathbb{H}_{\mathbb{B}}\mathbb{H}_{\mathbb{B}}^{*}=\mathbb{H}_{\mathbb{B}},\quad
-\mathbb{H}_{\mathbb{B}}^{\natural}\mathbb{H}_{\mathbb{B}}^{*}=\mathbb{H}_{\mathbb{B}} .
+\mathbb{H}_{\mathbb{B}}^{\natural}\mathbb{H}_{\mathbb{B}}^{*}=\mathbb{H}_{\mathbb{B}} \;}.
 $$
 It is therefore closed under all four general products at once, and it is an associative subalgebra for exactly one of them, the general plain bilinear product; under that product it is the division algebra of the real quaternions, since the norm is a sum of four real squares and vanishes only at the origin. The other three products are not associative there: their counterexamples in *Comparison Between the Four General Products* §*The Failure of Associativity* are triples of the quaternion subspace, so each of them fails associativity inside the subspace already.
 
@@ -132,8 +132,8 @@ the trace form of the general quaternionic bilinear product; the general quatern
 
 **The bracket.** The commutator stays inside the subspace and gives a **Lie algebra**:
 $$
-[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]=B_1,\qquad
-(\mathbb{H}_{\mathbb{B}},[\cdot,\cdot])\cong\mathbb{R}e_t\oplus\mathfrak{su}(2),
+\boxed{\; [\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]=B_1,\qquad
+(\mathbb{H}_{\mathbb{B}},[\cdot,\cdot])\cong\mathbb{R}e_t\oplus\mathfrak{su}(2) \;},
 $$
 the bracket of two real quaternions being twice the real cross product of their vector parts, a pure real quaternion, which is why the subspace closes. The derived subalgebra is the real vector triple $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, the imaginary quaternions, which under the cross product is the Lie algebra $\mathfrak{su}(2)$ of the special unitary group $SU(2)$; the line $\mathbb{R}e_t$ is central, because $e_t$ is a central element of the algebra, so the Lie algebra of the subspace is the direct sum $\mathbb{R}e_t\oplus\mathfrak{su}(2)$. The general quaternionic sesquilinear bracket is the commutator itself, the two conjugations cancelling on the subspace,
 $$
@@ -192,7 +192,7 @@ $$
 $$
 This is the **Jordan product**, and
 $$
-(\mathbb{M}_{+},\bullet_{\mathrm{pl}})\cong H_{2}(\mathbb{C})=J(\mathbb{B})
+\boxed{\; (\mathbb{M}_{+},\bullet_{\mathrm{pl}})\cong H_{2}(\mathbb{C})=J(\mathbb{B}) \;}
 $$
 is the Hermitian Jordan algebra of degree two, with two orthogonal idempotents and Peirce dimensions $1+2+1$ (*The 12 Products of the Biquaternion Complex Space*). The two quaternionic symmetrisations also stay inside but are central,
 $$
@@ -234,8 +234,8 @@ The anti-Hermitian subspace is therefore a **Jordan algebra for none** of the fo
 
 **The bracket.** This is the operation that stays, and it is where the subspace is an algebra. **The commutator keeps the anti-Hermitian subspace inside itself**, and gives a Lie algebra:
 $$
-[\mathbb{M}_{-},\mathbb{M}_{-}]=B_1,\qquad
-(\mathbb{M}_{-},[\cdot,\cdot])\cong\mathfrak{u}(2)\cong\mathbb{R}(ie_t)\oplus B_1,
+\boxed{\; [\mathbb{M}_{-},\mathbb{M}_{-}]=B_1,\qquad
+(\mathbb{M}_{-},[\cdot,\cdot])\cong\mathfrak{u}(2)\cong\mathbb{R}(ie_t)\oplus B_1 \;},
 $$
 the bracket of two anti-Hermitian elements being twice the real cross product of their two real vector parts, a real pure vector. The derived subalgebra is the triple $B_1$, which under the cross product is $\mathfrak{su}(2)$, and the line $\mathbb{R}(ie_t)$ is central, because $ie_t$ is a central element of the algebra; the algebra of the subspace is therefore the direct sum of a central line and $\mathfrak{su}(2)$, which is the **Lie algebra $\mathfrak{u}(2)$** of the unitary group $\mathrm{U}(2)$, the skew-Hermitian complex $2\times2$ matrices of real dimension four, with centre $\mathbb{R}(ie_t)$ and derived subalgebra $\mathfrak{su}(2)$. The general plain sesquilinear bracket is the negative of the commutator, since $*$ negates an anti-Hermitian element:
 $$

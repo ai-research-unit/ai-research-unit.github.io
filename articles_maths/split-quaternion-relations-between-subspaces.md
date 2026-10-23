@@ -7,8 +7,6 @@ The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ — the scalar lin
 
 Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, \vec e_x, \vec e_y, \vec e_z$, the relations $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$, $\vec e_z = \vec e_x \vec e_y$, $\vec e_x \vec e_y = -\vec e_y \vec e_x$, and a general element $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation ${}^{\natural}$, the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Subspaces and the Involutions*, and $\langle\cdot\rangle_{\natural}$, $B$ are the split-quaternion norm and its polarisation.
-
 ## The Three Decompositions
 
 Two of the three involutions split $\mathbb{H}_{\mathrm{s}}$ into distinguished subspaces, and the third splits it into two further subspaces:
@@ -43,8 +41,10 @@ $$
 where $\langle \cdot\rangle$ denotes the real span of the displayed elements. Each of the blocks $\langle 1\rangle$, $\langle \vec e_y\rangle$ and $\langle \vec e_z\rangle$ is the intersection of the distinguished subspaces containing it, and $\langle \vec e_x\rangle$ is the complement of $\mathbb{D}_2 + \mathbb{D}_3$ in $\mathbb{H}_{\mathrm{s}}$; each of the four distinguished subspaces is a sum of blocks:
 
 $$
-S = \langle 1 \rangle, \qquad V = \langle \vec e_x \rangle \oplus \langle \vec e_y \rangle \oplus \langle \vec e_z \rangle,
-$$
+\boxed{\;
+S = \langle 1 \rangle, \qquad V = \langle \vec e_x \rangle \oplus \langle \vec e_y \rangle \oplus \langle \vec e_z \rangle
+\;}
+$$,
 
 $$
 \mathbb{D}_2 = \langle 1 \rangle \oplus \langle \vec e_y \rangle, \qquad \mathbb{D}_3 = \langle 1 \rangle \oplus \langle \vec e_z \rangle .
@@ -66,8 +66,10 @@ The ten pairwise intersections of the four subspaces, with the dimensions (the d
 Explicitly,
 
 $$
-S \cap V = \{0\}, \quad S \cap \mathbb{D}_2 = S, \quad S \cap \mathbb{D}_3 = S, \quad V \cap \mathbb{D}_2 = \mathbb{R} \vec e_y,
-$$
+\boxed{\;
+S \cap V = \{0\}, \quad S \cap \mathbb{D}_2 = S, \quad S \cap \mathbb{D}_3 = S, \quad V \cap \mathbb{D}_2 = \mathbb{R} \vec e_y
+\;}
+$$,
 
 $$
 V \cap \mathbb{D}_3 = \mathbb{R} \vec e_z, \quad \mathbb{D}_2 \cap \mathbb{D}_3 = S .
@@ -115,8 +117,10 @@ $S$ is the centre, so it acts on every subspace by scalar multiplication: $S \cd
 The product of two vectors is not a vector: it splits as
 
 $$
-\vec q\vec q_1 = -B(\vec q,\vec q_1)\cdot 1 + \tfrac{1}{2}[\vec q,\vec q_1],
-$$
+\boxed{\;
+\vec q\vec q_1 = -B(\vec q,\vec q_1)\cdot 1 + \tfrac{1}{2}[\vec q,\vec q_1]
+\;}
+$$,
 
 with scalar part $-B(\vec q,\vec q_1) \in S$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $\vec e_x, \vec e_y, \vec e_z$,
 

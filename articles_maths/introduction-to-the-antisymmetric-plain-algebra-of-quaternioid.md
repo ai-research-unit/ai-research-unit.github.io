@@ -36,14 +36,6 @@ The split that produces the block, with its two projections, is *The Symmetric a
 Parts of an Algebra Product*; the symmetric half is *Introduction to the Symmetric Plain Algebra of
 Quaternions*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x \vec e_y=\vec e_z$, so
-that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq\nu$. A generic element is
-$\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$;
-$\vec q_1\cdot\vec q_2$ is the Euclidean dot product and $\vec q_1\times\vec q_2$ the vector
-product of the vector parts. The plain product is $\tilde q_1\tilde q_2$, its scalar–vector rule is
-$\tilde q_1\tilde q_2=(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2)+q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$,
-and the symbol $\circ$ is reserved for the composition of maps.
-
 ## The Antisymmetric Part of the Plain Product
 
 ### The Rule
@@ -68,7 +60,7 @@ the mixed terms. Subtracting and halving, the symmetric pieces cancel and the op
 term alone:
 
 $$
-\tilde q_1\times\tilde q_2=\vec q_1\times\vec q_2 .
+\boxed{\;\tilde q_1\times\tilde q_2=\vec q_1\times\vec q_2\;}.
 $$
 
 Read on the coordinates,
@@ -110,7 +102,7 @@ $$
 **Proposition.** The operation is half the commutator,
 
 $$
-[\tilde q_1,\tilde q_2]=2\,(\tilde q_1\times\tilde q_2),
+\boxed{\;[\tilde q_1,\tilde q_2]=2\,(\tilde q_1\times\tilde q_2)\;},
 $$
 
 and it is the commutator of the associative product, which is its structural reason: the bracket of
@@ -125,8 +117,8 @@ $[\tilde q_1,\tilde q_2]=-[\tilde q_2,\tilde q_1]$, so its half is too.
 **Theorem (the Jacobi identity).** For all $\tilde q_1,\tilde q_2,\tilde q_3\in\mathbb{H}$,
 
 $$
-J(\tilde q_1,\tilde q_2,\tilde q_3)=(\tilde q_1\times\tilde q_2)\times\tilde q_3
-+(\tilde q_2\times\tilde q_3)\times\tilde q_1+(\tilde q_3\times\tilde q_1)\times\tilde q_2=0 .
+\boxed{\;J(\tilde q_1,\tilde q_2,\tilde q_3)=(\tilde q_1\times\tilde q_2)\times\tilde q_3
++(\tilde q_2\times\tilde q_3)\times\tilde q_1+(\tilde q_3\times\tilde q_1)\times\tilde q_2=0\;}.
 $$
 
 *Proof.* Read on the vector parts, the cyclic sum is
@@ -179,7 +171,7 @@ $\vec e_k\times e_t=0\neq \vec e_k$ and $e_t\times e_t=0\neq e_t$.
 **Proposition (the reconstruction).** The algebra product is the sum of its two halves,
 
 $$
-\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\times\tilde q_2 ,
+\boxed{\;\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\times\tilde q_2\;},
 $$
 
 with $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ the symmetric half. The

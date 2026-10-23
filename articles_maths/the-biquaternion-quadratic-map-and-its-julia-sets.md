@@ -55,7 +55,7 @@ one map for each parameter $\tilde Q_5\in\mathbb{B}$. The **orbit** of a point $
 **Proposition (the orbit is a polynomial in the initial point).** For every $n$ there is a polynomial $p_n$ of degree $2^n$ with
 
 $$
-p_0(\tilde Q)=\tilde Q, \qquad p_{n+1}(\tilde Q)=p_n(\tilde Q)^2+\tilde Q_5, \qquad \tilde Q_n=p_n(\tilde Q).
+\boxed{\;p_0(\tilde Q)=\tilde Q, \qquad p_{n+1}(\tilde Q)=p_n(\tilde Q)^2+\tilde Q_5, \qquad \tilde Q_n=p_n(\tilde Q)\;}.
 $$
 
 If $\tilde Q_5$ is central, $\tilde Q_5=Ce_t$ with $C\in\mathbb{C}$, every $p_n$ has coefficients in the centre and $\tilde Q_n$ is a polynomial in $\tilde Q$ alone.
@@ -87,7 +87,7 @@ No properness of $F$ was used, and none holds: the equation $\tilde Q^2=\tilde Q
 **Theorem (equivariance).** Let $g$ be one of the three conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ — the non-identity elements of the group of involutions — and let $g$ act coefficientwise on the parameter. Then
 
 $$
-g\circ F_{\tilde Q_5}=F_{g(\tilde Q_5)}\circ g .
+\boxed{\;g\circ F_{\tilde Q_5}=F_{g(\tilde Q_5)}\circ g\;}.
 $$
 
 Consequently $g(\mathcal K_{\tilde Q_5})=\mathcal K_{g(\tilde Q_5)}$ and $g(J_{\tilde Q_5})=J_{g(\tilde Q_5)}$.
@@ -119,7 +119,7 @@ $$
 and its determinant is, up to a fixed non-zero factor depending only on the identification of $\mathbb{B}$ with $\mathbb{C}^4$,
 
 $$
-\det dF_{\tilde Q_5}|_{\tilde Q} \;=\; 4\,\langle\tilde Q\rangle_{\natural}\,(2Q_t)^2 .
+\boxed{\;\det dF_{\tilde Q_5}|_{\tilde Q} \;=\; 4\,\langle\tilde Q\rangle_{\natural}\,(2Q_t)^2\;}.
 $$
 
 Hence the critical set is the union of the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ and the vector subspace $\{Q_t=0\}=\mathrm{Vect}(\mathbb{B})$.

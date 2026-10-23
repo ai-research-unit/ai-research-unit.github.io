@@ -16,8 +16,6 @@ The article is organized as follows. The next section fixes the field, the two n
 
 The material here is the declared foundation for two of the later exercises, on the plane-wave solutions and on the non-relativistic limit and the Pauli equation. The solutions and the limiting procedure are therefore worked out explicitly, with all intermediate steps that those exercises will need.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary with $i^2 = -1$. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ used throughout is the one of the companion article *Quantum Physics in Biquaternionic Form*,
-
 $$
 e_t \mapsto I_2, \qquad \vec e_\mu \mapsto -i\sigma_\mu, \qquad i \mapsto i I_2,
 $$
@@ -107,7 +105,7 @@ $$
 so that $w_B = \dfrac{\boldsymbol{\sigma}\cdot\vec p}{E+m} w_A$ and the upper component $w_A$ is free. With the covariant normalization, the two positive-energy solutions are
 
 $$
-w^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E+m}\,\xi^{(r)} \\[2pt] \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\xi^{(r)} \end{pmatrix}, \qquad r = 1,2,
+\boxed{\;w^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E+m}\,\xi^{(r)} \\[2pt] \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\xi^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
 $$
 
 where $\vec u_p = \vec p/|\vec p|$ and $\xi^{(1)}, \xi^{(2)}$ are the standard orthonormal two-spinors, $\xi^{(r){}^{*}}\xi^{(s)} = \delta^{rs}$. At rest this reduces to $w^{(r)}(0) = \sqrt{2m}\begin{pmatrix}\xi^{(r)}\\ 0\end{pmatrix}$.
@@ -145,7 +143,7 @@ $$
 with the same $\not{p} = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p$. In the Dirac basis the pair reads $(E+m)v_A = \boldsymbol{\sigma}\cdot\vec p\,v_B$ and $(E-m)v_B = \boldsymbol{\sigma}\cdot\vec p\,v_A$, and the two solutions are
 
 $$
-v^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\eta^{(r)} \\[2pt] \sqrt{E+m}\,\eta^{(r)} \end{pmatrix}, \qquad r = 1,2,
+\boxed{\;v^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\eta^{(r)} \\[2pt] \sqrt{E+m}\,\eta^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
 $$
 
 with $\eta^{(r){}^{*}}\eta^{(s)} = \delta^{rs}$; at rest $v^{(r)}(0) = \sqrt{2m}\begin{pmatrix} 0 \\ \eta^{(r)} \end{pmatrix}$. The negative-frequency solution space is again two-dimensional. In the standard reading, these modes describe antiparticles: the sign of the frequency is reversed by the charge-conjugation operation, which exchanges $w$ and $v$. Together, then, the amplitude equations have a four-dimensional complex solution space at fixed $\vec p$, exactly as the companion article stated.
@@ -373,7 +371,7 @@ $$
 Restoring the explicit factors of $\hbar$ and writing $\vec\pi = p - ϙ\vec A$ with $p = -i\hbar\nabla$ gives the **Pauli equation**
 
 $$
-i\hbar\,\partial/\partial t'\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi.
+\boxed{\;i\hbar\,\partial/\partial t'\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi\;}.
 $$
 
 The first two terms are the ordinary non-relativistic Hamiltonian of a charged particle; the third is the spin–magnetic coupling. This is the announced reduction of the biquaternionic Dirac equation to the Pauli equation: the four-component spinor has been reduced to a two-component spinor, and the spin has become an explicit dynamical variable.
@@ -423,8 +421,8 @@ with $\vec u$ the Bloch vector of the spin. The Pauli Hamiltonian is a Hermitian
 Setting $m = 0$ decouples the two chiral components. In the chiral basis the Dirac equation becomes the pair of **Weyl equations**
 
 $$
-i\hbar\,\partial/\partial t'\psi_R = c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_R, \qquad
-i\hbar\,\partial/\partial t'\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_L,
+\boxed{\;i\hbar\,\partial/\partial t'\psi_R = c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_R, \qquad
+i\hbar\,\partial/\partial t'\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_L\;},
 $$
 
 or, in covariant form, $\sigma^\mu\partial/\partial Q_\mu\,\psi_R = 0$ and $\bar{\sigma}^\mu\partial/\partial Q_\mu\,\psi_L = 0$ with the usual $\sigma^\mu = (I,\boldsymbol{\sigma})$, $\bar{\sigma}^\mu = (I,-\boldsymbol{\sigma})$ up to the metric convention. Each equation has a two-dimensional solution space, and each helicity is locked to a chirality: the right-handed field has positive helicity, the left-handed field negative helicity. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors

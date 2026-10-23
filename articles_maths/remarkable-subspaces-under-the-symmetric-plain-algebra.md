@@ -50,9 +50,7 @@ $$
 
 because the mixed vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ vanishes when both elements are pure and the cross term is absent. The value is a **central** element, so
 
-$$
-\mathrm{Vect}(\mathbb{B})\bullet\mathrm{Vect}(\mathbb{B})\subseteq\mathbb{C}_{\mathbb{B}},
-$$
+$$ \boxed{\; \mathrm{Vect}(\mathbb{B})\bullet\mathrm{Vect}(\mathbb{B})\subseteq\mathbb{C}_{\mathbb{B}} \;}, $$
 
 and the vector subspace is **not closed** under $\bullet$: its square lands in the centre. The smallest witnesses are
 
@@ -98,9 +96,7 @@ $$
 
 the scalar $i$ central and $i^2=-1$. The value is a real quaternion and lies in $\mathbb{H}_{\mathbb{B}}$, so
 
-$$
-i\mathbb{H}_{\mathbb{B}}\bullet i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}},
-$$
+$$ \boxed{\; i\mathbb{H}_{\mathbb{B}}\bullet i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}} \;}, $$
 
 and the anti-quaternion subspace is **not closed** under $\bullet$. The smallest witness is
 
@@ -120,9 +116,7 @@ An anti-quaternion element $i\mathbf n$ has $N(i\mathbf n)=-(\mathbf n,\mathbf n
 
 The Hermitian subspace is the set of elements fixed by the Hermitian conjugation, $\tilde Q^{*}=\tilde Q$, of the form $\tilde Q=Q_te_t+\sum_k iQ'_k\vec e_k$ with $Q_t,Q'_k$ real. The star is an anti-automorphism of the algebra, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, so for Hermitian $\tilde Q_1,\tilde Q_2$,
 
-$$
-(\tilde Q_1\bullet\tilde Q_2)^{*}=\tfrac12\bigl((\tilde Q_1\tilde Q_2)^{*}+(\tilde Q_2\tilde Q_1)^{*}\bigr)=\tfrac12\bigl(\tilde Q_2\tilde Q_1+\tilde Q_1\tilde Q_2\bigr)=\tilde Q_1\bullet\tilde Q_2,
-$$
+$$ \boxed{\; (\tilde Q_1\bullet\tilde Q_2)^{*}=\tfrac12\bigl((\tilde Q_1\tilde Q_2)^{*}+(\tilde Q_2\tilde Q_1)^{*}\bigr)=\tfrac12\bigl(\tilde Q_2\tilde Q_1+\tilde Q_1\tilde Q_2\bigr)=\tilde Q_1\bullet\tilde Q_2 \;}, $$
 
 and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *The 12 Products of the Biquaternion Complex Space*.
 

@@ -8,8 +8,6 @@ The classification of the algebra literature answers the question with a single 
 
 The article is organised as follows. A first section recalls the pseudoautomorphism and its matrix. A second states the division-ring trichotomy and computes $C^{2}$ in each case. A third reads the trichotomy as the three classes of particles, charged, neutral and truly neutral, and identifies the biquaternion algebra's place in it. A fourth section separates what the framework supplies from what it transcribes, and a closing section lists the open questions.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and the companion CPT article. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, and matrix realization $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. Its real forms used below are $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$; the algebra is the complex Clifford algebra $\mathbb{C}\mathrm{l}_2$, equivalently the complexification $\mathrm{Cl}_{0,2}\otimes_{\mathbb{R}}\mathbb{C}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); the sectors are $\mathbb{M}_-$ (material, anti-Hermitian) and $\mathbb{M}_+$ (informational, Hermitian); and the spinor module is $S=\mathbb{C}^2$. The discrete operations are written $C$, $P$, $T$ as in the CPT article, and their algebra-level representatives are the fundamental automorphisms of the same article's Clifford section.
-
 - Companion article *The CPT Theorem in Biquaternionic Form*, for the explicit $C[\psi]=i\gamma^2\psi^{*}$ and for the Clifford classification of the operations as the fundamental automorphisms and the charge-conjugation pseudoautomorphism.
 - The mathematics articles *Division Rings*, *Central Simple Algebras and the Brauer Group* and *The Brauer Wall Group and the Eightfold Way*, for the division ring as an isomorphism invariant of a real or complex algebra.
 - The mathematics article *List of Clifford Algebras and Spin Groups*, for the classification $\mathrm{Cl}_{n,m}$ by $n-m\bmod 8$ that the trichotomy below uses.
@@ -21,7 +19,7 @@ The article is organised as follows. A first section recalls the pseudoautomorph
 The discrete operations $P$, $T$, $PT$ are the three non-trivial **fundamental automorphisms** of a real Clifford algebra $\mathrm{Cl}_{n,m}$ — the grade involution, the reversion and their composite, the Clifford conjugation — and they act on each graded piece by a sign. Charge conjugation is not of this kind. It is the **pseudoautomorphism**
 
 $$
-A\;\longmapsto\;\bar{A}=\Pi\,A^{*}\,\Pi^{-1},
+\boxed{\;A\;\longmapsto\;\bar{A}=\Pi\,A^{*}\,\Pi^{-1}\;},
 $$
 
 the complex conjugation of the algebra element followed by the inner automorphism by a matrix $\Pi$. Two features make it a pseudoautomorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. First, it is **conjugate-linear**: it contains $A^{*}$, and no automorphism of the real algebra does. Second, the matrix $\Pi$ does not preserve the real subalgebra; it conjugates the generators with a sign,
@@ -43,7 +41,7 @@ $$
 and conjugating twice returns
 
 $$
-\bar{\bar{\xi}}^{\,\alpha}=\Pi^{\alpha\bar{\alpha}}\bigl(\Pi^{\beta\bar{\alpha}}\xi_{\beta}\bigr)^{*}=\pm\,\xi^{\alpha},
+\boxed{\;\bar{\bar{\xi}}^{\,\alpha}=\Pi^{\alpha\bar{\alpha}}\bigl(\Pi^{\beta\bar{\alpha}}\xi_{\beta}\bigr)^{*}=\pm\,\xi^{\alpha}\;},
 $$
 
 the sign being that of $\Pi\bar{\Pi}$ — the product of $\Pi$ with its own conjugate — so that the relation between a particle and its antiparticle is controlled entirely by $\Pi$. This is the first appearance of the division ring in the question: the allowed matrices $\Pi$ are not arbitrary, and which ones occur is fixed by the algebra's division ring.

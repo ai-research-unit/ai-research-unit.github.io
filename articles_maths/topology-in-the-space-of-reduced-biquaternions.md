@@ -4,17 +4,15 @@
 
 The reduced biquaternion algebra is a real four-dimensional vector space, and its **Euclidean topology** is the standard topology of $\mathbb{R}^{4}$ read on the coordinates. This article fixes the norm that produces it, states that the topology it defines is the **only** one compatible with the vector-space structure, records the metric, and records how the topology interacts with the algebra: the four general products are continuous, the three conjugations are isometries, the unit group is open and the zero-divisor set is closed. Of the four algebraic norms only the general tessarine sesquilinear one, $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$, is positive definite, so only $\langle\cdot\rangle_{\mathrm{ts}*}$ yields a topological norm; the other three are complex-valued or indefinite and give at best a degenerate quantity. The multiplication has zero divisors and is not a division algebra, and the zero-divisor set is exactly the closed set where the unit group ends.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$. The four general products and the forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\mathrm{ts}}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ are *The Four Products, Their Forms and Their Algebraic Norms*; the Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}$. The element glyph is $\breve Q$, with the breve and without a tilde. The word **algebraic norm** names the diagonal of a form and is never the topological norm; only $\langle\cdot\rangle_{\mathrm{ts}*}$ is both.
-
-**Boundaries.** The forms and their definiteness are *The Forms of the Algebra of the Reduced Biquaternions*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the unit group is *The Group of Units of the Algebra of the Reduced Biquaternions*; the four-vector coordinates are *The Four-Vector Element Representation of the Reduced Biquaternions*. The companions of this article are *The Euclidean Topology of the Reduced Biquaternion Algebra*, for the metric and the unit sphere, and *Topology and Metric for Each of the Operations*, for the metric attached to each product. The biquaternion counterpart is *Topology in the Space of Biquaternions*.
-
 ## The Euclidean Norm
 
 **The form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ is positive definite, and its square root is the Euclidean norm.**
 
 **Theorem (the norm).** The map
 $$
+\boxed{\;
 \lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}
+\;}
 $$
 is a norm on $\mathbb{B}_{\mathrm{r}}$: it is non-negative and vanishes only at $\breve Q=0$, it is homogeneous, $\lVert\lambda \breve Q\rVert=\lvert\lambda\rvert\lVert \breve Q\rVert$ for real $\lambda$, and it satisfies the triangle inequality.
 
@@ -34,7 +32,9 @@ is a norm on $\mathbb{B}_{\mathrm{r}}$: it is non-negative and vanishes only at 
 
 **Corollary (the topology is the standard one).** The topology of $\mathbb{B}_{\mathrm{r}}$ is the standard topology of $\mathbb{R}^{4}$, independent of the norm chosen; it is metrisable, and the metric of $\langle\cdot\rangle_{\mathrm{ts}*}$,
 $$
-d(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert=\sqrt{\langle \breve Q_{1}-\breve Q_{2}\rangle_{\mathrm{ts}*}},
+\boxed{\;
+d(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert=\sqrt{\langle \breve Q_{1}-\breve Q_{2}\rangle_{\mathrm{ts}*}}
+\;},
 $$
 is one of the compatible metrics. The space is complete and locally compact.
 
@@ -62,7 +62,9 @@ is one of the compatible metrics. The space is complete and locally compact.
 
 **Theorem (the involutions are isometries).** The bar, the tessarine sign and the star preserve the norm and the metric,
 $$
-\lVert\bar{\breve Q}\rVert=\lVert \breve Q_{\mathrm{ts}}\rVert=\lVert \breve Q^{*}\rVert=\lVert \breve Q\rVert,
+\boxed{\;
+\lVert\bar{\breve Q}\rVert=\lVert \breve Q_{\mathrm{ts}}\rVert=\lVert \breve Q^{*}\rVert=\lVert \breve Q\rVert
+\;},
 $$
 so each is an isometry of $\mathbb{B}_{\mathrm{r}}$ onto itself, and the three form a Klein four-group of isometries.
 

@@ -108,9 +108,9 @@ Each of the two eigenspaces is one-dimensional (the two idempotents are rank one
 The observable $\tilde{S}_3 = \tfrac{\hbar}{2}i \vec e_z$ has the spectral decomposition
 
 $$
-\tilde{S}_3 = \frac{\hbar}{2}\,\tilde\Pi_1(\vec u_z) - \frac{\hbar}{2}\,\tilde\Pi_2(\vec u_z),
+\boxed{\;\tilde{S}_3 = \frac{\hbar}{2}\,\tilde\Pi_1(\vec u_z) - \frac{\hbar}{2}\,\tilde\Pi_2(\vec u_z),
 \qquad
-\tilde\Pi_{1,2}(\vec u_z) = \tfrac12\left(e_t \pm i \vec e_z\right).
+\tilde\Pi_{1,2}(\vec u_z) = \tfrac12\left(e_t \pm i \vec e_z\right)\;}.
 $$
 
 The verification is a direct multiplication. Using $\vec e_z^2 = -e_t$,
@@ -135,11 +135,11 @@ $$
 with $\vec r$ the Bloch vector. The probabilities of the two outcomes are the normalised Hermitian form, whose trace reading at normalisation is,
 
 $$
-p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+\boxed{\;p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
 = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
 = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})}
 = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})}
-= \tfrac12\left(1 \pm r_3\right),
+= \tfrac12\left(1 \pm r_3\right)\;},
 $$
 
 since $\tilde\Pi_{1,2}(\vec u_z)\,\tilde{Ϛ} = \tfrac14(e_t \pm i \vec e_z)(e_t + i\vec r)$ has scalar part $\tfrac14(1 \pm r_3)$ — using $\mathrm{Sc}(\vec e_z\vec r) = -\vec r\cdot\vec u_z = -r_3$ — and $\mathrm{Tr}(\cdot) = 2\,\mathrm{Sc}(\cdot)$. The two intensities sum to one, $p_+ + p_- = 1$, and they are equal for a beam polarised transversely to the field, as they must be by symmetry.
@@ -180,8 +180,8 @@ with $|\phi_\pm\rangle$ wavepackets centred on the two deflections $\Delta z_\pm
 If the two beams are separated and only one is retained (or if the position is simply traced out), the spin state is obtained by the partial trace over the spatial degree of freedom. Because the two wavepackets are orthogonal, $\langle\phi_+|\phi_-\rangle = 0$, the cross terms drop and the reduced state is
 
 $$
-\tilde{Ϛ}_{\mathrm{spin}} = |c_+|^2 \tilde\Pi_1(\vec u_z) + |c_-|^2 \tilde\Pi_2(\vec u_z)
-= \tfrac12\left(e_t + i\,r_3 \vec e_z\right),
+\boxed{\;\tilde{Ϛ}_{\mathrm{spin}} = |c_+|^2 \tilde\Pi_1(\vec u_z) + |c_-|^2 \tilde\Pi_2(\vec u_z)
+= \tfrac12\left(e_t + i\,r_3 \vec e_z\right)\;},
 \qquad r_3 = |c_+|^2 - |c_-|^2 .
 $$
 
@@ -252,7 +252,7 @@ $$
 whose scalar part is $\tfrac14(1+\cos\theta)$. Hence
 
 $$
-p_+ = \tfrac12\left(1+\cos\theta\right) = \cos^2\frac{\theta}{2},
+\boxed{\;p_+ = \tfrac12\left(1+\cos\theta\right) = \cos^2\frac{\theta}{2}\;},
 $$
 
 in agreement with the companion exercise *Exercise: Measuring Spin Along an Arbitrary Direction*. The result depends on the analyser direction only through $\vec u\cdot \vec e_z = \cos\theta$, which is the geometric content: the probability is a function of the angle between the preparation axis and the analysis axis, and of nothing else.

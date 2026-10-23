@@ -54,7 +54,7 @@ The last point is the decisive one: the hole theory is a correct but redundant b
 The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as
 
 $$
-\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right],
+\boxed{\;\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right]\;},
 $$
 
 in which the **annihilation** operator multiplies the positive-frequency spinors and the **creation** operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a^{\mathrm{fop}}|0\rangle = b^{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.
@@ -64,7 +64,7 @@ in which the **annihilation** operator multiplies the positive-frequency spinors
 With the anticommutator the Hamiltonian becomes, after normal ordering,
 
 $$
-H^{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_r^{\mathrm{fop}\dagger} a_r^{\mathrm{fop}} + b_r^{\mathrm{fop}\dagger} b_r^{\mathrm{fop}}\right),
+\boxed{\;H^{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_r^{\mathrm{fop}\dagger} a_r^{\mathrm{fop}} + b_r^{\mathrm{fop}\dagger} b_r^{\mathrm{fop}}\right)\;},
 $$
 
 a positive sum of particle and antiparticle numbers, with the divergent constant removed. The charge is equally normal-ordered, and particles and antiparticles carry opposite charge. This is the modern replacement of the filled sea, and it is the content the framework already has.
@@ -114,7 +114,7 @@ $$
 $Z_c$ being componentwise complex conjugation. The outcome is an identity of fields: the positron field is the complex conjugate of the electron field,
 
 $$
-F_{\mathrm{pos}} = \overline{F_{\mathrm{el}}} .
+\boxed{\;F_{\mathrm{pos}} = \overline{F_{\mathrm{el}}}\;}.
 $$
 
 This is the anti-linear, involutive conjugation that the *Antilinear Structure and the Two Kinds of Mass* article keeps apart from the algebra's real structure $\flat$, here acting on the biquaternion field rather than on the spinor module. The corpus records it as a corroboration rather than as a new construction: both sides are anti-linear and both square to the identity, and the dictionary identifies them.

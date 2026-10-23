@@ -44,9 +44,9 @@ a complex number (or $\infty$ at the south pole). It is invariant under the over
 The idempotent of the state is
 
 $$
-\tilde\Pi_1(\vec u_x) = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
+\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
 \qquad
-\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\;2\,\mathrm{Im}\,\zeta,\;1-|\zeta|^2\right),
+\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\;2\,\mathrm{Im}\,\zeta,\;1-|\zeta|^2\right)\;},
 $$
 
 the standard inverse stereographic projection. The unit vector $\vec u_x$ is the Bloch vector of the state, and the idempotent is $\tfrac12(e_t+i\vec u_x)$. For the north pole $\zeta = 0$ and $\vec u_x = \vec u_z$; for the south pole $\zeta = \infty$ and $\vec u_x = -\vec u_z$; for the equator $|\zeta| = 1$ and $\vec u_x$ lies in the equatorial plane. The inverse map is $\zeta = \exp(i\phi)\tan(\theta/2)$ with $\theta$, $\phi$ the polar angles of $\vec u_x$.
@@ -64,7 +64,7 @@ The passage from spinor to star discards the overall phase: $\psi\mapsto \exp(i\
 For spin $j$ the state $|\psi\rangle = \sum_{m=-j}^{j}c_m|j,m\rangle$ is represented by the degree-$2j$ polynomial
 
 $$
-P_\psi(z) = \sum_{m=-j}^{j}(-1)^{j-m}\binom{2j}{j+m}^{1/2} c_m\,z^{\,j+m},
+\boxed{\;P_\psi(z) = \sum_{m=-j}^{j}(-1)^{j-m}\binom{2j}{j+m}^{1/2} c_m\,z^{\,j+m}\;},
 $$
 
 whose $2j$ complex roots are the stereographic coordinates of the $2j$ Majorana stars. A global phase of $|\psi\rangle$ multiplies $P_\psi$ by a constant and does not move the roots; a rotation reparametrises them by a Möbius transformation and rotates the sphere rigidly. The construction is standard, is reviewed in the further reading, and is quoted here because it is the general setting of which the spin-1/2 case is the simplest instance.
@@ -253,9 +253,9 @@ The Majorana representation is a representation of **pure** states; a mixed stat
 The **Majorana representation** of a spin-$j$ state assigns $2j$ points on the unit sphere — the **stars** — to the state, as the roots of the degree-$2j$ polynomial $P_\psi(z) = \sum_m (-1)^{j-m}\binom{2j}{j+m}^{1/2}c_m z^{j+m}$. For a spin-1/2 the polynomial is linear and there is exactly one star, whose stereographic coordinate is
 
 $$
-\zeta = \frac{\psi_2}{\psi_1} = \tan\frac{\theta}{2}\exp(i\phi),
+\boxed{\;\zeta = \frac{\psi_2}{\psi_1} = \tan\frac{\theta}{2}\exp(i\phi),
 \qquad
-\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\,2\,\mathrm{Im}\,\zeta,\,1-|\zeta|^2\right).
+\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\,2\,\mathrm{Im}\,\zeta,\,1-|\zeta|^2\right)\;}.
 $$
 
 The star **is** the Bloch vector; the state is $\tilde\Pi_1(\vec u_x) = \tfrac12(e_t+i\vec u_x)$. The map from spinor to star is two-to-one: the overall phase of the spinor, which is the geometric phase, is discarded, and the star is blind to it.

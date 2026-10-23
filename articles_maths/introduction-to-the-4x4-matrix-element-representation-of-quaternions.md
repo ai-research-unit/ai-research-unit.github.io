@@ -31,9 +31,7 @@ The matrix is the one of the left multiplication $L_{\tilde q}$, and the map $\m
 ## Multiplicativity
 
 **Theorem.** For all $\tilde q_2,\tilde q_1$,
-$$
-\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)=\mathsf{M}_4(\tilde q_2\tilde q_1).
-$$
+$$ \boxed{\; \mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)=\mathsf{M}_4(\tilde q_2\tilde q_1) \;} .$$
 The map $\mathsf{M}_4$ is therefore an injective $\mathbb{R}$-algebra homomorphism, whose image is a four-dimensional subalgebra of $M_4(\mathbb{R})$.
 
 **Proof.** The matrix of a composition is the product of the matrices, and $L_{\tilde q_2}\circ L_{\tilde q_1}=L_{\tilde q_2\tilde q_1}$ because $\tilde q_2(\tilde q_1\tilde q_3)=(\tilde q_2\tilde q_1)\tilde q_3$; in coordinates, $\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)$ acts on a column vector as $L_{\tilde q_2} L_{\tilde q_1}$, which is $L_{\tilde q_2\tilde q_1}$. Injectivity is the first column.
@@ -43,13 +41,9 @@ Associativity is thus the single fact behind the multiplicativity, and the repre
 ## The Trace, the Determinant and the Transpose Identity
 
 **Proposition.** For every $\tilde q$,
-$$
-\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t, \qquad \det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2=\bigl(q_t^2+q_x^2+q_y^2+q_z^2\bigr)^2.
-$$
+$$ \boxed{\; \operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t, \qquad \det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2=\bigl(q_t^2+q_x^2+q_y^2+q_z^2\bigr)^2 \;} .$$
 Moreover
-$$
-\mathsf{M}_4(\tilde q)^{\mathsf T}=\mathsf{M}_4(\tilde q^{\natural}), \qquad \mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde q)^{\mathsf T}=\langle\tilde q\rangle_{\natural}\,I_4,
-$$
+$$ \boxed{\; \mathsf{M}_4(\tilde q)^{\mathsf T}=\mathsf{M}_4(\tilde q^{\natural}), \qquad \mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde q)^{\mathsf T}=\langle\tilde q\rangle_{\natural}\,I_4 \;} ,$$
 so that for $\tilde q\neq0$ the matrix $\langle\tilde q\rangle_{\natural}^{-1/2}\mathsf{M}_4(\tilde q)$ satisfies $A^{\mathsf T}A=I_4$.
 
 **Proof.** The trace is the sum of the diagonal entries, $4q_t$ by the displayed matrix. The determinant is computed by expansion and equals $\langle\tilde q\rangle_{\natural}^2$; it is the square of the quaternion norm of *Norm and Invertibility in the Quaternion Algebra*, below this article in this category. For the transpose, the transpose of the displayed matrix is obtained by reversing the signs of $q_x,q_y,q_z$ throughout, which is exactly the displayed matrix of $\tilde q^{\natural}$; that is $\mathsf{M}_4(\tilde q)^{\mathsf T}=\mathsf{M}_4(\tilde q^{\natural})$. The second identity follows from $\mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q\tilde q^{\natural})=\mathsf{M}_4(\langle\tilde q\rangle_{\natural}e_t)=\langle\tilde q\rangle_{\natural}I_4$.

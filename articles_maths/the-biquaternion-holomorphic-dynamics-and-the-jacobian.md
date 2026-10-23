@@ -51,13 +51,13 @@ whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q_1\ran
 **Theorem (the central-parameter identification).** Let $\tilde Q_3=Ce_t$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\mathsf{M}_2(\tilde Q_1)$ with spectrum $\{\lambda_1,\lambda_2\}$,
 
 $$
-\tilde Q_1\in\mathcal{J}_{\tilde Q_3}\iff \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap\mathcal{J}_C\neq\emptyset ,
+\boxed{\;\tilde Q_1\in\mathcal{J}_{\tilde Q_3}\iff \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap\mathcal{J}_C\neq\emptyset\;},
 $$
 
 and
 
 $$
-\mathcal{J}_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}=\{\tilde Q_1 : \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\subset K_C \text{ and } \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap J_C\neq\emptyset\}.
+\boxed{\;\mathcal{J}_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}=\{\tilde Q_1 : \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\subset K_C \text{ and } \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap J_C\neq\emptyset\}\;}.
 $$
 
 So for a central parameter the dynamical Julia set, the boundary of the filled Julia set and the set of the matrices with an eigenvalue on the complex Julia set are one and the same set.
@@ -71,7 +71,7 @@ So for a central parameter the dynamical Julia set, the boundary of the filled J
 **Proposition (the fixed points).** For a central parameter $C$, the fixed points of $F$ are the solutions of $\tilde Q_1^2-\tilde Q_1+Ce_t=0$. They are the scalar solutions $\lambda e_t$ with $\lambda^2-\lambda+C=0$, and the non-scalar solutions $\tilde Q_1=\tfrac12e_t+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$, one for each complex isotropic vector of the quadratic form $\vec Q\cdot\vec Q$ with that value. The multiplier spectrum of a fixed point is
 
 $$
-\{2\lambda_1,\ 2\lambda_2,\ 2Q_{1t},\ 2Q_{1t}\} ,
+\boxed{\;\{2\lambda_1,\ 2\lambda_2,\ 2Q_{1t},\ 2Q_{1t}\}\;},
 $$
 
 the eigenvalues of the differential $L_{\tilde Q_1}+R_{\tilde Q_1}$, and the fixed point is attracting exactly when $\rho(\mathsf{M}_2(\tilde Q_1))<1/2$.

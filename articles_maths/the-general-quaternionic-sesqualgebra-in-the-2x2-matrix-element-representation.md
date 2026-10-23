@@ -7,8 +7,6 @@ The reading group *Topology on the Introduction to the General Quaternionic Sesq
 
 The two conjugations of the algebra are the two matrix operations of the model: the natural conjugation is the **adjugate** and the Hermitian conjugation is the **conjugate transpose**. The form of the group is therefore the adjugated conjugate-transpose pairing of the matrices, the **Krein form** of signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$, and the product is the matrix product with the adjugate in the first slot and the conjugate transpose in the second. The natural conjugation $J={}^{\natural}$ is the fundamental symmetry of the form, and in the model it is the adjugation.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; product $\tilde{Q}_4\star\tilde{Q}=\tilde{Q}_4^{\natural}\tilde{Q}^{*}$, form $\langle\cdot,\cdot\rangle_{\natural*}$.
-
 ## The Representation
 
 **Definition.** The **matrix realization** is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
@@ -40,7 +38,7 @@ The adjugate is $\mathbb{C}$-linear and anti-multiplicative, the conjugate trans
 **Theorem (the product is the adjugated conjugate-transposed matrix product).** For all biquaternions,
 
 $$
-\mathsf{M}_2(\tilde{Q}_4\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)\,\mathsf{M}_2(\tilde{Q})^{\dagger} ,
+\boxed{\; \mathsf{M}_2(\tilde{Q}_4\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)\,\mathsf{M}_2(\tilde{Q})^{\dagger} \;},
 $$
 
 the ordinary matrix product with the adjugate in the first slot and the conjugate transpose in the second.
@@ -97,7 +95,7 @@ For an invertible idempotent this is equivalent to $\det(M)M^{\dagger}=M^{2}$, a
 **Theorem (the family of idempotents as a unitary orbit).** The nontrivial idempotents of the multiplication are exactly the elements whose matrices are the unitary conjugates of the diagonal matrix $\operatorname{diag}(\omega,\omega^{2})$, where $\omega=\exp(2\pi i/3)$:
 
 $$
-\tilde{\Pi}\longleftrightarrow M=U\operatorname{diag}(\omega,\omega^{2})U^{\dagger},\qquad U\in \mathrm{U}(2).
+\boxed{\; \tilde{\Pi}\longleftrightarrow M=U\operatorname{diag}(\omega,\omega^{2})U^{\dagger},\qquad U\in \mathrm{U}(2) \;}.
 $$
 
 *Proof.* A norm-one idempotent satisfies $M^{\dagger}=M^{2}$; applying the dagger gives $(M^{\dagger})^{2}=M$, and substituting yields $M^{4}=M$, so $M^{3}=I$ for the invertible $M$. Then $MM^{\dagger}=MM^{2}=M^{3}=I$ and $M^{\dagger}M=I$, so $M$ is unitary of determinant one, and a unitary matrix with $M^{3}=I$ and $\det M=1$ has spectrum $\{1,1\}$ or $\{\omega,\omega^{2}\}$; the first case is $M=I$, the identity $\tilde{\Pi}=e_t$, and the second, by the spectral theorem, is the displayed unitary conjugacy class. Conversely each matrix of the class satisfies $M^{\dagger}=M^{2}$, $M^{3}=I$ and $\det M=1$, hence $\operatorname{adj}(M)M^{\dagger}=\det(M)M^{-1}M^{2}=M$. The trace of $\operatorname{diag}(\omega,\omega^{2})$ is $\omega+\omega^{2}=-1$, so $Q_t=-\tfrac12$; $\operatorname{adj}(M^{\dagger})=\operatorname{adj}(M^{2})=\operatorname{adj}(M)^{2}=M^{-2}=M$ gives $\mathsf{M}_2(\overline{\tilde{\Pi}})=\mathsf{M}_2(\tilde{\Pi})$, so the three vector coordinates are real; and unitarity gives $\sum_\mu|Q_\mu|^{2}=1$, so $|Q_x|^{2}+|Q_y|^{2}+|Q_z|^{2}=\tfrac34$. The class is connected of real dimension two, the family of the idempotents.
@@ -133,7 +131,7 @@ a matrix product with $M(\tilde Q_1)$ in the middle, which is the matrix form of
 **Theorem (the adjugated conjugate-transpose pairing).** For all biquaternions,
 
 $$
-\langle\tilde{Q}_4,\tilde{Q}\rangle_{\natural*} = \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),
+\boxed{\; \langle\tilde{Q}_4,\tilde{Q}\rangle_{\natural*} = \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr) \;},
 $$
 
 the pairing in which the conjugate transpose of the first argument is adjugated.

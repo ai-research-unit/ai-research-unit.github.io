@@ -127,7 +127,7 @@ and is continuous on its closure.
 
 2. On the boundary of the strip,
 $$
-F_{\tilde Q_1\tilde Q_2}(t' + i\beta) = F_{\tilde Q_2\tilde Q_1}(-t'),
+\boxed{\;F_{\tilde Q_1\tilde Q_2}(t' + i\beta) = F_{\tilde Q_2\tilde Q_1}(-t')\;},
 $$
 
 This is the same condition as in the standard formulation, with the operators taking values in the biquaternion algebra. It holds for both bosonic and fermionic fields.
@@ -141,7 +141,7 @@ The KMS condition acquires a natural algebraic interpretation in the material se
 **Second, the complexified time direction has a natural algebraic realization.** The complexification of $\mathbb{M}_-$ as a real subspace of $\mathbb{B}$ is $\mathbb{B}$ itself:
 
 $$
-\mathbb{M}_- \oplus i\,\mathbb{M}_- = \mathbb{M}_- \oplus \mathbb{M}_+ = \mathbb{B}.
+\boxed{\;\mathbb{M}_- \oplus i\,\mathbb{M}_- = \mathbb{M}_- \oplus \mathbb{M}_+ = \mathbb{B}\;}.
 $$
 
 The complexified time direction of $\mathbb{M}_-$ — the direction in which the KMS continuation takes place — is therefore a specific 2-dimensional complex subspace of $\mathbb{B}$, spanned by the imaginary time coefficient $ict'$ of $\mathbb{M}_-$ and the real time coefficient $ct$ of $\mathbb{M}_+$. The KMS condition, which requires analyticity in this complexified direction, has a natural home in the algebra.

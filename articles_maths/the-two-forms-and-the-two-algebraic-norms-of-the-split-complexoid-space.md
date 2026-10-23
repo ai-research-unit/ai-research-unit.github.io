@@ -41,9 +41,11 @@ A form has a value in $\mathbb{D}$; its **realification** is its real part, read
 **Proposition (the action of the structure).** With $J$ the multiplication by $j$ on $\mathbb{D}$,
 
 $$
+\boxed{\;
 \langle JQ_1,JQ_2\rangle=+\langle Q_1,Q_2\rangle,
 \qquad
-\langle JQ_1,JQ_2\rangle_{*}=-\langle Q_1,Q_2\rangle_{*}.
+\langle JQ_1,JQ_2\rangle_{*}=-\langle Q_1,Q_2\rangle_{*}
+\;}.
 $$
 
 **Proof.** $\langle JQ_1,JQ_2\rangle=(jQ_1)(jQ_2)=j^2Q_1Q_2=Q_1Q_2=\langle Q_1,Q_2\rangle$, since $j^2=+1$. For the conjugate-symmetric form, $\langle JQ_1,JQ_2\rangle_{*}=jQ_1\overline{jQ_2}=jQ_1(-\bar j\,\overline{Q_2})=-j^2Q_1\overline{Q_2}=-Q_1\overline{Q_2}=-\langle Q_1,Q_2\rangle_{*}$, because $\bar j=-j$.
@@ -51,9 +53,11 @@ $$
 The two signs place the two forms in the two realification rules, and **the split sign assigns them to the rule opposite to the complex one**. On $\mathbb{C}$ the bilinear form $\langle A,C\rangle=AC$ satisfies $\langle iA,iC\rangle=-\langle A,C\rangle$, so it realifies to the **split signature** $(n,n)=(1,1)$, and the Hermitian form satisfies $\langle iA,iC\rangle_{*}=+\langle A,C\rangle_{*}$, so it realifies to the doubling $(2,0)$. On $\mathbb{D}$, because $j^2=+1$, the two signs are exchanged: the **Hermitian** form obeys the bilinear rule and the **bilinear** form obeys the Hermitian rule. Reading the two real parts on the basis $1,j$,
 
 $$
+\boxed{\;
 \operatorname{Re}B=\;q_1q_2+q'_1q'_2\ \text{with Gram}\ \begin{pmatrix}1&0\\0&1\end{pmatrix},
 \qquad
-\operatorname{Re}H=\;q_1q_2-q'_1q'_2\ \text{with Gram}\ \begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\operatorname{Re}H=\;q_1q_2-q'_1q'_2\ \text{with Gram}\ \begin{pmatrix}1&0\\0&-1\end{pmatrix}
+\;},
 $$
 
 so
@@ -70,9 +74,11 @@ The two forms **exchange their realified signatures** when the sign of the squar
 The **algebraic norm** of a form is its algebraic norm, the form read at $Q$. The two forms give the two norms
 
 $$
+\boxed{\;
 \langle Q\rangle=Q^2=(q^2+q'^2)+2qq'j,
 \qquad
-\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2 .
+\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2
+\;}.
 $$
 
 The algebraic norms of the four forms collapse to the two algebraic norms of this article: the algebraic norms of the first two forms give $Q^2$, and the algebraic norms of the last two give $Q\overline{Q}=\langle Q\rangle_{*}$. The count of four becomes the count of two, exactly as the count of four forms becomes the count of two.

@@ -24,9 +24,7 @@ and $\operatorname{ad}:\mathfrak{g}\to\operatorname{End}(\mathbb{B})$, $\tilde Q
 
 **Proposition (the adjoint is the cross product).** For $\tilde Q_1=\sum_\mu Q_{1,\mu} e_\mu$ the adjoint acts by the cross product of the vector part,
 
-$$
-\operatorname{ad}_{\tilde Q_1}(\tilde Q_3)=\vec Q_1\times\vec Q_3,
-$$
+$$ \boxed{\; \operatorname{ad}_{\tilde Q_1}(\tilde Q_3)=\vec Q_1\times\vec Q_3 \;}, $$
 
 so its kernel is the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\vec Q_1$ when $\vec Q_1\neq0$ and the whole space when $\vec Q_1=0$, and its rank is $0$ on the centre and $2$ elsewhere. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ its matrix is block diagonal, with a first column and a first row of zeros and the $3\times3$ matrix of the cross product by $\vec Q_1$ on the vector part.
 
@@ -44,9 +42,7 @@ It is the Killing form of the bracket, computed from the block's own adjoint; th
 
 **Theorem.** For all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
-$$
-\kappa(\tilde Q_1,\tilde Q_2)=-2\,\vec Q_1\cdot\vec Q_2=-2\,(Q_{1,x}Q_{2,x}+Q_{1,y}Q_{2,y}+Q_{1,z}Q_{2,z}),
-$$
+$$ \boxed{\; \kappa(\tilde Q_1,\tilde Q_2)=-2\,\vec Q_1\cdot\vec Q_2=-2\,(Q_{1,x}Q_{2,x}+Q_{1,y}Q_{2,y}+Q_{1,z}Q_{2,z}) \;}, $$
 
 and in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$
 
@@ -91,8 +87,10 @@ and the ratio of the two forms is the constant $2$. For the commutator reading o
 **Theorem.** The form is symmetric and invariant: for all $\tilde Q_1,\tilde Q_2,\tilde Q_3$,
 
 $$
+\boxed{\;
 \kappa(\tilde Q_1,\tilde Q_2)=\kappa(\tilde Q_2,\tilde Q_1),\qquad
-\kappa\bigl(\operatorname{ad}_{\tilde Q_1}\tilde Q_3,\tilde Q_2\bigr)+\kappa\bigl(\tilde Q_3,\operatorname{ad}_{\tilde Q_1}\tilde Q_2\bigr)=0,
+\kappa\bigl(\operatorname{ad}_{\tilde Q_1}\tilde Q_3,\tilde Q_2\bigr)+\kappa\bigl(\tilde Q_3,\operatorname{ad}_{\tilde Q_1}\tilde Q_2\bigr)=0
+\;},
 $$
 
 equivalently $\kappa([\tilde Q_1,\tilde Q_3],\tilde Q_2)=\kappa(\tilde Q_1,[\tilde Q_3,\tilde Q_2])$.

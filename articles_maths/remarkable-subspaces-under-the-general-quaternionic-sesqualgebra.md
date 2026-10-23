@@ -31,8 +31,8 @@ The form differs from the Euclidean square by the sign vector $\varepsilon=(1,-1
 Two of the rows are definite. On the **centre** the form is positive definite, of signature $(2,0)$, and on the **vector subspace** it is negative definite, of signature $(0,6)$. The two are the **fundamental decomposition** of the Krein space,
 
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp^{+}\mathrm{Vect}(\mathbb{B}),
-\qquad (2,0)+(0,6)=(2,6),
+\boxed{\; \mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp^{+}\mathrm{Vect}(\mathbb{B}),
+\qquad (2,0)+(0,6)=(2,6) \;},
 $$
 
 and they realise the whole positive index $2$ and the whole negative index $6$ of the ambient signature.

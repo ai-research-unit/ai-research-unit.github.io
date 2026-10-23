@@ -59,13 +59,12 @@ The representation theory of the algebra is exhausted by the following statement
 **Claim.** Every finite-dimensional left module $M$ over $\mathbb{B}$ is isomorphic to a finite direct sum of copies of $S$,
 
 $$
-M \;\cong\; S^{\oplus k}, \qquad k = \dim_\mathbb{C}\mathrm{Hom}_\mathbb{B}(S,M).
+\boxed{\;M \;\cong\; S^{\oplus k}, \qquad k = \dim_\mathbb{C}\mathrm{Hom}_\mathbb{B}(S,M)\;}.
 $$
 
 **Proof sketch.** The algebra is semisimple — a matrix algebra over a field is — so by the Artin–Wedderburn theorem every finite-dimensional module is a direct sum of simple modules. Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, namely $S$. Hence $M\cong S^{\oplus k}$, and the multiplicity $k$ is the dimension of the space of module maps from $S$ to $M$, by Schur's lemma applied to each summand.
 
 Two consequences are immediate and both matter. The multiplicity space $\mathrm{Hom}_\mathbb{B}(S,M)$ is a complex vector space, so the decomposition is a Morita equivalence between the modules of $\mathbb{B}$ and complex vector spaces: a module is a complex vector space $V$ dressed as $S\otimes_\mathbb{C}V$, and nothing else. And $S$ is the only irreducible object, so it is the only source of any representation the algebra's modules can carry.
-
 
 ## The Spin Content of the Modules
 
@@ -112,7 +111,7 @@ The statement that the algebra's content is spin zero and spin one-half therefor
 **The invariants of products.** The tensor product of the defining module with its conjugate contains a one-dimensional invariant subspace, the trace part, and the antisymmetric square
 
 $$
-\Lambda^2 S \cong \mathbb{C}, \qquad \dim_\mathbb{C}\Lambda^2 S = 1,
+\boxed{\;\Lambda^2 S \cong \mathbb{C}, \qquad \dim_\mathbb{C}\Lambda^2 S = 1\;},
 $$
 
 is the trivial representation. Spin zero therefore also appears as the invariant part of a tensor product, and this is the form in which it enters the constraint structure of higher-spin fields.
@@ -141,13 +140,12 @@ $$
 
 of dimensions $4, 8, 16$, in agreement with the multiplicities $m_1=m_0=1$ for $n=2$, $m_{3/2}=1$, $m_{1/2}=2$ for $n=3$, and $m_2=1$, $m_1=3$, $m_0=2$ for $n=4$. The pattern is that spin $j$ appears for the first time in $S^{\otimes 2j}$: spin one in the square, spin three-halves in the cube, spin two in the fourth power, and in general the $2j$-fold product. This is the generation mechanism, and it is exactly the mechanism by which the standard Lorentz classification builds integer and higher spin from spinor indices.
 
-
 ### Symmetric powers and the pure spin carriers
 
 The product $S^{\otimes 2j}$ contains spin $j$ together with lower spins, and the **pure** spin-$j$ carrier is the totally symmetric part. Its weight set is $\{+j,+j-1,\dots,-j\}$, one of each, so
 
 $$
-\mathrm{Sym}^{2j}(S)\big|_{SU(2)} = j, \qquad \dim_\mathbb{C}\mathrm{Sym}^{2j}(S) = 2j+1,
+\boxed{\;\mathrm{Sym}^{2j}(S)\big|_{SU(2)} = j, \qquad \dim_\mathbb{C}\mathrm{Sym}^{2j}(S) = 2j+1\;},
 $$
 
 and its complex dimension is $2j+1$, odd: the carrier is not a direct sum of copies of $S$, which is the module-theoretic reason that a pure integer-spin carrier is not a module over $\mathbb{B}$. The antisymmetric parts carry the lower spins: $\Lambda^2 S$ is the trivial representation, of spin zero, as recorded above. In the Lorentz-group language the symmetric powers give the two conjugate three-dimensional families
@@ -216,8 +214,8 @@ The generation of higher spin can also be described at the level of the algebra 
 **Claim.** The $n$-fold tensor power of the biquaternion algebra is a full matrix algebra on the $n$-fold tensor power of the defining module,
 
 $$
-\mathbb{B}^{\otimes n} \;\cong\; M_{2^n}(\mathbb{C}), \qquad
-\text{its defining module} \;\cong\; S^{\otimes n}, \qquad \dim_\mathbb{C}\left(S^{\otimes n}\right) = 2^n .
+\boxed{\;\mathbb{B}^{\otimes n} \;\cong\; M_{2^n}(\mathbb{C}), \qquad
+\text{its defining module} \;\cong\; S^{\otimes n}, \qquad \dim_\mathbb{C}\left(S^{\otimes n}\right) = 2^n\;}.
 $$
 
 **Proof sketch.** The algebra is $M_2(\mathbb{C}) = \mathrm{End}_\mathbb{C}(S)$, and the tensor product of endomorphism algebras is the endomorphism algebra of the tensor product of the modules, $\mathrm{End}(S)\otimes_\mathbb{C}\mathrm{End}(S) \cong \mathrm{End}(S\otimes_\mathbb{C}S)$; iterating gives the statement.

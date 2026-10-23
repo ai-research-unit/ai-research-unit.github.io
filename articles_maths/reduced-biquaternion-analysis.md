@@ -4,10 +4,6 @@
 
 Reduced biquaternion analysis is the study of functions of a reduced biquaternion variable through the operations of the algebra, on the Euclidean space of *The Euclidean Topology of the Reduced Biquaternion Algebra*. The article fixes the metric setting, defines limits and continuity, states the **problem of differentiability** — the difference quotient needs a division by the increment, and the increment may be a zero divisor — and shows how the algebra resolves it: because the algebra is the direct product of two copies of $\mathbb{C}$, a function that is differentiable in the reduced sense decouples into **two complex analyses**, one in each idempotent coordinate. The class of functions so obtained, the pairs of holomorphic functions of the two coordinates, is the reduced analogue of the holomorphic functions, and it is the smallest possible: the algebra is **commutative**, it **has zero divisors**, the Euclidean norm is not multiplicative, and it is **not a division algebra**, so no richer theory of a single complex variable over the whole four-dimensional space is available. The functions themselves are the subject of *Reduced Biquaternion Regular Functions*.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The Euclidean metric is $d(\breve Q_{1},\breve Q_{2})=\sqrt{\langle\breve Q_{1}-\breve Q_{2}\rangle_{\mathrm{ts}*}}$. The element glyph is $\breve Q$, with the breve and without a tilde; a general function is written $\Phi$ or $f$.
-
-**Boundaries.** The metric and the topology are *Topology in the Space of Reduced Biquaternions*, *The Euclidean Topology of the Reduced Biquaternion Algebra* and *Topology and Metric for Each of the Operations*; the two coordinate projections are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the differentiable functions are *Reduced Biquaternion Regular Functions*; the integral theory is *Reduced Biquaternion Integration*; the operator theory is *Fueter Theory for Reduced Biquaternions*. The biquaternion counterpart is *Biquaternion Analysis*.
-
 ## The Metric Structure
 
 **The analysis is done in the metric space of the Euclidean norm, on an open set of the space.**
@@ -70,14 +66,18 @@ f(\breve Q)=g_{1}(\breve Q)\,\Pi_++g_{2}(\breve Q)\,\Pi_-,
 $$
 the function $g_{1}$ depends only on $Q_{+}$ and the function $g_{2}$ only on $Q_{-}$, and each is holomorphic: there are holomorphic functions $G_{1}$ and $G_{2}$ of one complex variable with
 $$
-f(\breve Q)=G_{1}(Q_{+})\,\Pi_++G_{2}(Q_{-})\,\Pi_-,\qquad f'(\breve Q)=G_{1}'(Q_{+})\,\Pi_++G_{2}'(Q_{-})\,\Pi_-.
+\boxed{\;
+f(\breve Q)=G_{1}(Q_{+})\,\Pi_++G_{2}(Q_{-})\,\Pi_-,\qquad f'(\breve Q)=G_{1}'(Q_{+})\,\Pi_++G_{2}'(Q_{-})\,\Pi_-
+\;}.
 $$
 
 *Proof.* In the idempotent basis the algebra is the direct product and the multiplication is componentwise, so differentiating is componentwise: $f'(\breve Q)=g_{1}'(\breve Q)\Pi_++g_{2}'(\breve Q)\Pi_-$, and the componentwise derivative of $g_{1}$ at $\breve Q$ along increments $\breve Q_{H}=m\Pi_++n\Pi_-$ is the derivative in the coordinate $Q_{+}$ alone, since the product $\breve Q^{n}$ depends on $Q_{+}$ and $Q_{-}$ separately; the limit defining $g_{1}'$ uses only $m$, so $g_{1}$ has no dependence on $Q_{-}$, and likewise $g_{2}$ has none on $Q_{+}$. Each is then a complex function with a complex derivative, that is holomorphic, and the derivative rule is the chain rule in each coordinate.
 
 **Corollary (the system decouples).** The reduced Cauchy–Riemann system is the pair of complex equations
 $$
-\frac{\partial g_{1}}{\partial\bar Q_{+}}=0,\qquad \frac{\partial g_{2}}{\partial\bar Q_{-}}=0,
+\boxed{\;
+\frac{\partial g_{1}}{\partial\bar Q_{+}}=0,\qquad \frac{\partial g_{2}}{\partial\bar Q_{-}}=0
+\;},
 $$
 so the theory of differentiable reduced biquaternion functions is the product of two copies of the theory of holomorphic functions of one complex variable. There is no single complex analysis over the four-dimensional algebra, because the algebra is **not a division algebra**.
 
@@ -107,7 +107,9 @@ As a check, $\Delta K=8$ and $\Delta Q_{+}=\Delta Q_{-}=0$.
 
 **Corollary (the differentiable functions are harmonic).** A differentiable reduced biquaternion function $f(\breve Q)=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ satisfies
 $$
-\Delta f=0,
+\boxed{\;
+\Delta f=0
+\;},
 $$
 each component being annihilated by the conjugate derivative of its own coordinate, $\partial/\partial\bar Q_{+}G_{1}=0$ and $\partial/\partial\bar Q_{-}G_{2}=0$.
 

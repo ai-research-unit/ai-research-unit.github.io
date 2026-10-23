@@ -20,10 +20,6 @@ and the **root set** of the value is the set of its roots. The value is general 
 
 and every table of the article follows the new order: the four general structures first, then their four symmetric parts, then their four antisymmetric parts; and inside each group the plain algebra, then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
-**Scope and owners.** This article owns the general value and the shape of its answer: the four reductions of §*The Four General Products at a General Value*, the criterion $C(\tilde\Xi\star\tilde\Xi)=C(\tilde\Xi)^{2}$ or $\lvert C(\tilde\Xi)\rvert^{2}$ of §*The Roots Are Units, or Zero Divisors*, and the twelve-row table and the four existence classes of §*Results*. The root set of each of the twelve structures stays owned by its article, cited one by one in §*The Twelve Structures and the General Value*. The two companions that read the named values are *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the vocabulary stated once for a general product is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the twelve products are *The 12 Products of the Biquaternion Complex Space*; the four squares from which the reductions start are *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots* and *Relations Between the Four General Products* §*The Four Scalar Parts*; and the zero divisors and the unitary group are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Unitary Group of the Biquaternion Algebra*, while the idempotent sets are *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and the square-zero sets are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
-
-**Conventions.** $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central scalar imaginary $i$ with $i^2=-1$, and a general element is $\tilde\Xi=\Xi_te_t+\vec\Xi$ with $\Xi_t\in\mathbb{C}$ and $\vec\Xi=\sum_{\mu\in\{x,y,z\}}\Xi_\mu\vec e_\mu$. The natural conjugation is $\tilde\Xi^{\natural}=\Xi_t-\vec\Xi$, the star is $\tilde\Xi^{*}=\overline{\tilde\Xi^{\natural}}$, the **central square** is $C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$, the **Hermitian square** is $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, and the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert\Xi_\mu\rvert^{2}$. A **central value** is an element $\lambda e_t$ with $\lambda\in\mathbb{C}$. Some owners write the central square $N$; the letter $C$ is used here, and the two are the same form. The root is defined in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots* as a **non-zero** element with $\tilde\Xi\star\tilde\Xi=\lambda e_t$; a root set is read here as a solution set, so the origin is counted with the roots of $0$, and the places where an owner counts the non-zero roots alone are read as the origin alone.
-
 ## The Four General Products at a General Value
 
 The four general products are the four ways a product of the space can be read, and each poses the root equation at the value $\lambda e_t$ with its own square: the plain square $\tilde\Xi^{2}$, the central square $C(\tilde\Xi)e_t$, the Hermitian square $\tilde\Xi\tilde\Xi^{*}$ and the Krein square $\tilde\Xi^{\natural}\tilde\Xi^{*}$. The four squares are pairwise different, and the difference is visible in the root sets at every value.
@@ -73,7 +69,9 @@ The square of the fourth product has scalar part the Krein value, indefinite, po
 **Theorem (the roots of the general quaternionic sesquilinear product).** In the general quaternionic sesquilinear product the scalar part of the square is $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert\Xi_\mu\rvert^{2}$, a real number for every element. A root of the central value $\lambda$ exists exactly when $\lambda$ is real, and every real value has roots. The root set of a real $\lambda$ is the family
 
 $$
-\tilde\Xi=\varrho(\vec u+it) , \qquad (t^{2}-1)\lvert\varrho\rvert^{2}=\lambda ,
+\boxed{\;
+\tilde\Xi=\varrho(\vec u+it) , \qquad (t^{2}-1)\lvert\varrho\rvert^{2}=\lambda
+\;},
 $$
 
 of scalar part $i\varrho t$ and vector part $\varrho\vec u$ over the real unit vectors $\vec u$, of real dimension four, together with the central circle $\lvert a\rvert^{2}=\lambda$ when $\lambda>0$.
@@ -89,7 +87,9 @@ The central square decides the nature of every root, and it decides it the same 
 **Theorem (a root of a non-zero central value is a unit).** Let $\tilde\Xi$ be a root of the central value $\lambda$ in one of the four general products. Then $C(\tilde\Xi\star\tilde\Xi)=C(\tilde\Xi)^{2}$ for the two bilinear products and $C(\tilde\Xi\star\tilde\Xi)=C(\tilde\Xi)\overline{C(\tilde\Xi)}=\lvert C(\tilde\Xi)\rvert^{2}$ for the two sesquilinear ones. Consequently
 
 $$
-C(\tilde\Xi)^{2}=\lambda^{2} \quad\text{or}\quad \lvert C(\tilde\Xi)\rvert^{2}=\lambda^{2} , \qquad C(\tilde\Xi)\neq0 \iff \lambda\neq0 ,
+\boxed{\;
+C(\tilde\Xi)^{2}=\lambda^{2} \quad\text{or}\quad \lvert C(\tilde\Xi)\rvert^{2}=\lambda^{2} , \qquad C(\tilde\Xi)\neq0 \iff \lambda\neq0
+\;},
 $$
 
 and every root of a non-zero central value is a unit of the algebra, while every non-zero root of $0$ is a zero divisor.
@@ -137,7 +137,9 @@ The product is the symmetrisation, and its square is the central square. The roo
 The product is the symmetrisation, and its square is the Hermitian part of the unsplit square, a real quaternion, so a root exists exactly for a real $\lambda$ and exists for every one of them: the fibre over a real value is empty for no value. The root set of $\lambda$ is the pure family, present only for $\lambda\leq0$, together with the non-pure family
 
 $$
-\mathcal R_\lambda=\Bigl\{\alpha e_t+\frac{i\alpha}{\lvert\alpha\rvert^{2}}\vec c:\alpha\in\mathbb{C}^{\times},\ \vec c\in\mathbb{R}^{3},\ \lVert\vec c\rVert^{2}=\lvert\alpha\rvert^{2}\bigl(\lvert\alpha\rvert^{2}-\lambda\bigr)\Bigr\} ,
+\boxed{\;
+\mathcal R_\lambda=\Bigl\{\alpha e_t+\frac{i\alpha}{\lvert\alpha\rvert^{2}}\vec c:\alpha\in\mathbb{C}^{\times},\ \vec c\in\mathbb{R}^{3},\ \lVert\vec c\rVert^{2}=\lvert\alpha\rvert^{2}\bigl(\lvert\alpha\rvert^{2}-\lambda\bigr)\Bigr\}
+\;},
 $$
 
 of real dimension four: at $\lambda<0$ the pure sphere $\lVert\vec\Xi\rVert^{2}=-\lambda$ of real dimension five joins the family, at $\lambda=0$ the family is the nilpotent cone and the pure family shrinks to the origin, and at $\lambda>0$ the family alone remains, with $\lvert\alpha\rvert^{2}\geq\lambda$. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.

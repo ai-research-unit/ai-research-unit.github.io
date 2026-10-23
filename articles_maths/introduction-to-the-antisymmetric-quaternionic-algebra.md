@@ -44,9 +44,7 @@ Structures*, §*The Product, its Slots and its Class*.
 
 **Proposition (the explicit form).** For all $\tilde Q_1 = Q_{1t}e_t + \vec Q_1$ and $\tilde Q_2 = Q_{2t}e_t + \vec Q_2$,
 
-$$
-\tilde Q_1 \diamond \tilde Q_2 = Q_{1t}\vec Q_2 - Q_{2t}\vec Q_1 - \vec Q_1\times\vec Q_2 .
-$$
+$$ \boxed{\; \tilde Q_1 \diamond \tilde Q_2 = Q_{1t}\vec Q_2 - Q_{2t}\vec Q_1 - \vec Q_1\times\vec Q_2 \;}. $$
 
 In particular the scalar part of the value is zero and the value lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$; the operation is $\mathbb{C}$-bilinear, alternating, and its diagonal vanishes.
 
@@ -71,9 +69,7 @@ The block is therefore the second of the two readings of one product: the parent
 
 **Proposition (the image).** The image of the operation is the vector subspace,
 
-$$
-\mathbb{B}\diamond\mathbb{B} = \mathrm{Vect}(\mathbb{B}) = \bigl\{\tilde Q : \tilde Q^{\natural} = -\tilde Q\bigr\} ,
-$$
+$$ \boxed{\; \mathbb{B}\diamond\mathbb{B} = \mathrm{Vect}(\mathbb{B}) = \bigl\{\tilde Q : \tilde Q^{\natural} = -\tilde Q\bigr\} \;}, $$
 
 of complex dimension three and real dimension six; the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is disjoint from the image apart from $0$.
 
@@ -107,9 +103,7 @@ The sixteen entries are therefore of four kinds: the zero diagonal of four entri
 ## The Square and Its Polarisation
 
 **Proposition (the square vanishes identically).** For every element $\tilde Q_1$,
-$$
-\mathfrak{Q}(\tilde Q_1)=\tilde Q_1\diamond\tilde Q_1=0 ,
-$$
+$$ \boxed{\; \mathfrak{Q}(\tilde Q_1)=\tilde Q_1\diamond\tilde Q_1=0 \;}, $$
 and the polarisation of the square vanishes as well,
 $$
 \beta(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(\mathfrak{Q}(\tilde Q_1+\tilde Q_2)-\mathfrak{Q}(\tilde Q_1)-\mathfrak{Q}(\tilde Q_2)\bigr)=0 ,

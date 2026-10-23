@@ -11,8 +11,6 @@ $$
 
 and the whole family is a two-sphere, the **twistor family** of the manifold. The quaternionic conjugation $\lambda\mapsto\bar\lambda$ acts on the family by the antipode $I_\lambda\mapsto-I_\lambda$, and the pair $\{I_\lambda,I_{-\lambda}\}$ is the fibre over a point of the quotient sphere. The **twistor space** of the hyperkähler manifold is the total space of the family, and its complex structure makes the family a holomorphic fibration over $\mathbb{CP}^1$ with a holomorphic symplectic form on each fibre. This article treats the family, the twistor space, and the conjugation on both.
 
-**The boundaries.** The hyperkähler structure, the forms $\omega_i$, the holonomy $Sp(n)$ and the hyperkähler quotient are *Hyperkähler Geometry*; the quaternionic structure and the conjugation on the structure bundle are *Quaternionic Geometry* and *Quaternionic Geometry and the Conjugate Structure*; the Kähler condition and the holomorphic symplectic form are *Kähler Geometry* and *Complex Manifolds*; the twistor space of a four-dimensional conformal manifold, its real structure and its Hermitian form are *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*, and the twistor operator is *The Twistor Operator*. The construction of the complex structure of the twistor space and the existence of the metrics on it use the elliptic methods of Part III and are cited. The base field is $\mathbb{R}$.
-
 ## The Twistor Family of Complex Structures
 
 **Definition.** Let $(M,g,J_1,J_2,J_3)$ be hyperkähler with fundamental forms $\omega_i(X,Y)=g(J_iX,Y)$. For a unit imaginary quaternion $\lambda=a\vec e_x+b\vec e_y+c\vec e_z$, $a^2+b^2+c^2=1$, the **twistor family** is

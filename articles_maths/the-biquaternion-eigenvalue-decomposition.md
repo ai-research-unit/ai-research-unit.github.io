@@ -16,7 +16,7 @@ $$
 
 with the two primitive idempotents $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec\Xi)$ of the pure root $\vec\Xi=-i\vec Q/B$. In the Clifford reading, $i$ is the volume element $\omega$, the biquaternion vector part $\vec Q$ is a bivector, the root $\vec\Xi$ is a unit vector, and the idempotents are the standard vector idempotents of grades $0$ and $1$. The eigenvalues are central elements of grades $0$ and $3$. The article develops this reading, records the Peirce and spinor structure that it makes visible, and treats the two degenerate regimes.
 
-The algebra and its four conjugations are from *Introduction to the Biquaternion Algebra*; the spectrum, the characteristic polynomial and the spectral theorem are *Biquaternion Spectral Theory*; the roots of one and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the eigenvalue decomposition in coordinates is *Eigenvalue Decomposition of a Biquaternion*; the Clifford dictionary is *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*; the general Clifford theory is *The Eigenvalue Decomposition in a Clifford Algebra*; and the grade decomposition is *The Geometric Product and the Grade Decomposition*.
+The algebra and its four conjugations are from *Introduction to the Biquaternion Algebra*; the spectrum, the characteristic polynomial and the spectral theorem are *Biquaternion Spectral Theory*; the roots of one and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the eigenvalue decomposition in coordinates is *Eigenbasis of a Biquaternion*; the Clifford dictionary is *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*; the general Clifford theory is *The Eigenvalue Decomposition in a Clifford Algebra*; and the grade decomposition is *The Geometric Product and the Grade Decomposition*.
 
 ## The Clifford Dictionary
 
@@ -170,7 +170,7 @@ $$
 =(Q_{t}+iB)\tilde\Pi_{+}+(Q_{t}-iB)\tilde\Pi_{-}.
 $$
 
-This is the eigenvalue decomposition of *Eigenvalue Decomposition of a Biquaternion*, §*The Eigenvalue Decomposition*, read in the Clifford algebra. The eigenvalues are distinct, the idempotents are nonzero, orthogonal and complete, and the resolution is unique up to the swap of the two signs. The scalar-vector form is
+This is the eigenvalue decomposition of *Eigenbasis of a Biquaternion*, §*The Eigenvalue Decomposition*, read in the Clifford algebra. The eigenvalues are distinct, the idempotents are nonzero, orthogonal and complete, and the resolution is unique up to the swap of the two signs. The scalar-vector form is
 
 $$
 \tilde Q=Q_{t}e_{t}+B\vec U=Q_{t}e_{t}+iB\vec\Xi,
@@ -249,7 +249,7 @@ Hermitian conjugation is the star, and normality is $\tilde Q\tilde Q^{*}=\tilde
 
 **Proposition.** Let $B\neq0$. The following are equivalent: (i) $\tilde\Pi_{\pm}$ are Hermitian; (ii) $\vec U$ is real; (iii) $\vec\Xi$ is purely imaginary; (iv) $\tilde Q$ is normal.
 
-*Proof.* The equivalence of (i), (ii) and (iv) is *Eigenvalue Decomposition of a Biquaternion*, §*The Hermitian Case*, Proposition. The equivalence of (ii) and (iii) is the Clifford dictionary: $\vec U$ is a bivector and $\vec\Xi=-i\vec U=-\omega\vec U$ is its Hodge dual vector; the relation is multiplication by $-i$, so $\vec U$ is real exactly when $\vec\Xi$ is purely imaginary.
+*Proof.* The equivalence of (i), (ii) and (iv) is *Eigenbasis of a Biquaternion*, §*The Hermitian Case*, Proposition. The equivalence of (ii) and (iii) is the Clifford dictionary: $\vec U$ is a bivector and $\vec\Xi=-i\vec U=-\omega\vec U$ is its Hodge dual vector; the relation is multiplication by $-i$, so $\vec U$ is real exactly when $\vec\Xi$ is purely imaginary.
 
 When the conditions hold, the projectors are the standard idempotents of the pure root $\vec\Xi=-i\vec u$ over a real unit vector $\vec u$, and the resolution is the spectral theorem of *Biquaternion Spectral Theory*, §*The Spectral Theorem*, read in the Clifford algebra. For a Hermitian $\tilde Q$ the eigenvalues are real, $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ with $\vec Q=i\vec q'$, and the two idempotents are Hermitian and orthogonal for the Hermitian form.
 
@@ -275,7 +275,7 @@ with $\vec\Xi=-i\vec Q/B$ a unit vector and $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}
 
 The Peirce corners of the pair are the four one-dimensional complex spaces of the matrix model; the diagonal part is $\mathbb{C}[\tilde Q]$, and the mixed part is the commutator with $\tilde\Pi_{+}$. The left ideals $\mathbb{B}\tilde\Pi_{\pm}$ are the two minimal left ideals, the spinor spaces. In the nilpotent regime $B=0$, $\vec Q\neq0$, there is no eigenvalue decomposition; in the scalar regime $\vec Q=0$, the one-term decomposition is unique but the two-projector refinement is not. In the Hermitian case the projectors are Hermitian, the root is purely imaginary, of the form $\vec\Xi=-i\vec u$ for a real unit vector $\vec u$, and the resolution is the spectral theorem of the biquaternion algebra.
 
-The coordinate formulas are *Eigenvalue Decomposition of a Biquaternion*; the spectral theory is *Biquaternion Spectral Theory*; the roots and idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
+The coordinate formulas are *Eigenbasis of a Biquaternion*; the spectral theory is *Biquaternion Spectral Theory*; the roots and idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
 
 ## Summary of Notation
 
@@ -299,5 +299,5 @@ The coordinate formulas are *Eigenvalue Decomposition of a Biquaternion*; the sp
 
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternions with $\mathrm{Cl}_{3,0}$ and the volume element.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the bivectors, the volume element and the spinor ideals.
-- The biquaternion articles of this corpus: *Introduction to the Biquaternion Algebra*, *Biquaternion Spectral Theory*, *Square Roots of One and the Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the Biquaternion Algebra* and *Eigenvalue Decomposition of a Biquaternion*.
+- The biquaternion articles of this corpus: *Introduction to the Biquaternion Algebra*, *Biquaternion Spectral Theory*, *Square Roots of One and the Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the Biquaternion Algebra* and *Eigenbasis of a Biquaternion*.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the matrix model.

@@ -14,10 +14,6 @@ the symmetric plain sesquilinear algebraic norm, **real and positive definite**,
 
 The invertibility is where the article records an **absence**. The block is **not unital**: every value of the product is central, so it has no two-sided unit, and consequently no inverse, no group of units and no division structure. Its algebraic norm does **not** repair the absence: $\langle\cdot\rangle_{*}$ is positive definite, so $\langle\tilde Q\rangle_{*}=0$ exactly at $\tilde Q=0$, the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way, the origin and everything else. The article states the absence, then the algebraic norm, then the failure of multiplicativity and the polarisation.
 
-**Boundaries.** The product, its class and its table are *Introduction to the Symmetric Plain Sesqualgebra*; the relative definitions of the unit, the inverse and the group of units are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the four general products with their units are *Comparison Between the Four General Products*. The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*. The form $\langle\cdot,\cdot\rangle_{*}$, its Gram matrix, its positivity and its cone are *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; the zero divisors are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the operators of the block are *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu \varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ with $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}}$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; the **algebraic norm of the block** is its diagonal $\langle\tilde{Q}\rangle_{*} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$.
-
 **The results.** Every value of the product $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ is central, so the block has no unit, no inverse and no group of units, and no element is invertible. The block carries one algebraic norm, $\langle\tilde{Q}\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}$, real, non-negative and positive definite of signature $(8,0)$ on the real space underlying $\mathbb{B}$, vanishing only at $\tilde{Q} = 0$, with image of its square map the real ray $\mathbb{R}_{\geq0}e_t$. The algebraic norm is not multiplicative: $\langle\tilde Q_1\star\tilde Q_2\rangle_{*} = \lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$, with defect the discriminant $\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*} - \lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}\geq0$ vanishing exactly on linearly dependent pairs, and it polarises to the Hermitian form. The definiteness is why it cannot decide invertibility: $\langle\tilde{Q}\rangle_{*} = 0$ exactly at the origin, so the block has no nonzero isotropic vector and its element classification is two-way.
 
 ## The Relative Notions
@@ -84,9 +80,7 @@ The equation names the product $\star$: the algebraic norm is relative to the pr
 
 **Theorem (the algebraic norm of a product).** For all $\tilde Q_1,\tilde Q_2$,
 
-$$
-\langle\tilde Q_1\star\tilde Q_2\rangle_{*} = \lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2},
-$$
+$$ \boxed{\; \langle\tilde Q_1\star\tilde Q_2\rangle_{*} = \lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2} \;}, $$
 
 the square of the modulus of the form on the two arguments; consequently $\langle\tilde Q_1\star\tilde Q_2\rangle_{*} = \langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}$ exactly when the two arguments are linearly dependent over $\mathbb{C}$.
 
@@ -94,9 +88,7 @@ the square of the modulus of the form on the two arguments; consequently $\langl
 
 **Corollary (the defect is the discriminant).** For all $\tilde Q_1,\tilde Q_2$,
 
-$$
-\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*} - \langle\tilde Q_1\star\tilde Q_2\rangle_{*} = \langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*} - \lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2} \geq 0,
-$$
+$$ \boxed{\; \langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*} - \langle\tilde Q_1\star\tilde Q_2\rangle_{*} = \langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*} - \lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2} \geq 0 \;}, $$
 
 with equality exactly when $\tilde Q_1$ and $\tilde Q_2$ are linearly dependent. The algebraic norm is therefore **submultiplicative** and multiplicative exactly on linearly dependent pairs.
 
@@ -136,9 +128,7 @@ $$
 
 **Theorem (the algebraic norm does not decide invertibility).** The block has no invertible element, so no criterion can name one; and its algebraic norm has no nonzero zero:
 
-$$
-\langle\tilde{Q}\rangle_{*} = 0 \quad\Longleftrightarrow\quad \tilde{Q} = 0 .
-$$
+$$ \boxed{\; \langle\tilde{Q}\rangle_{*} = 0 \quad\Longleftrightarrow\quad \tilde{Q} = 0 \;}. $$
 
 *Proof.* The first clause is the theorem on the absence of the inverse. The equivalence is the positive definiteness: $\langle\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$ is a sum of non-negative reals, vanishing exactly when every $Q_\mu$ vanishes.
 

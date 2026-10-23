@@ -38,7 +38,9 @@ The idempotents give a decomposition of every representation.
 **Theorem (The Idempotent Splitting).** Let $M$ be a representation and let $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ be the non-central idempotents. Then
 
 $$
+\boxed{\;
 M = \tilde\pi_1 M \oplus \tilde\pi_2 M
+\;}
 $$
 
 as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\mathsf{M}_2(\vec e_y)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$.
@@ -50,8 +52,10 @@ as real vector spaces. In the case of the simple module the summands are the eig
 **Theorem (The Classification of Representations).** Let $M$ be a finite-dimensional representation of $\mathbb{H}_{\mathrm{s}}$, and let $\mathbb{R}^2$ be the defining module with the action $\tilde q \cdot v = \mathsf{M}_2(\tilde q)v$. Then there is a unique integer $d \geq 0$ with
 
 $$
-M \cong (\mathbb{R}^2)^{\oplus d},
-$$
+\boxed{\;
+M \cong (\mathbb{R}^2)^{\oplus d}
+\;}
+$$,
 
 so $\dim_{\mathbb{R}} M = 2d$, every module has even dimension, and the isomorphism class of $M$ is determined by its dimension alone.
 
@@ -132,8 +136,10 @@ The absence of an identity is the same phenomenon as in the quaternion case, whe
 **Theorem (Morita Triviality).** The category of finite-dimensional representations of $\mathbb{H}_{\mathrm{s}}$ is equivalent, as an abelian category, to the category of finite-dimensional real vector spaces:
 
 $$
-\mathbb{H}_{\mathrm{s}}\text{-}\mathbf{mod} \;\simeq\; \mathbf{Vect}_{\mathbb{R}} .
-$$
+\boxed{\;
+\mathbb{H}_{\mathrm{s}}\text{-}\mathbf{mod} \;\simeq\; \mathbf{Vect}_{\mathbb{R}}
+\;}
+$$.
 
 The equivalence sends a vector space $W$ to $\mathbb{R}^2 \otimes_{\mathbb{R}} W$ and a module $M$ to $\operatorname{Hom}_{\mathbb{H}_{\mathrm{s}}}(\mathbb{R}^2, M)$. Under it the simple module corresponds to $\mathbb{R}$, direct sums to direct sums, and tensor products to tensor products with the algebra acting on the first factor.
 

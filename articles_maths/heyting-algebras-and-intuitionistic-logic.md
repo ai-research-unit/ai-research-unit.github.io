@@ -68,8 +68,8 @@ The pseudocomplement is $\neg u = 0$ and $\neg 0 = 1$, so $\neg\neg u = \neg 0 =
 **Theorem.** In a Heyting algebra, for all $\alpha, \beta$:
 
 $$
-\alpha \wedge \neg \alpha = 0, \qquad \alpha \leq \neg \neg \alpha, \qquad \neg \neg \neg \alpha = \neg \alpha, \qquad
-\neg(\alpha \vee \beta) = \neg \alpha \wedge \neg \beta, \qquad \neg\neg(\alpha \wedge \beta) = \neg\neg \alpha \wedge \neg\neg \beta,
+\boxed{\;\alpha \wedge \neg \alpha = 0, \qquad \alpha \leq \neg \neg \alpha, \qquad \neg \neg \neg \alpha = \neg \alpha, \qquad
+\neg(\alpha \vee \beta) = \neg \alpha \wedge \neg \beta, \qquad \neg\neg(\alpha \wedge \beta) = \neg\neg \alpha \wedge \neg\neg \beta\;},
 $$
 
 and $\neg \alpha = 1$ if and only if $\alpha = 0$.
@@ -97,7 +97,7 @@ $$
 **Theorem (Glivenko).** Let $\vdash_{\mathrm{IPC}}$ and $\vdash_{\mathrm{CPC}}$ denote derivability in intuitionistic and classical propositional logic. For every proposition $\varphi$,
 
 $$
-\vdash_{\mathrm{IPC}} \varphi \iff \vdash_{\mathrm{CPC}} \neg\neg\varphi, \qquad \text{and in fact} \qquad \vdash_{\mathrm{IPC}} \neg\varphi \iff \vdash_{\mathrm{CPC}} \neg\varphi .
+\boxed{\;\vdash_{\mathrm{IPC}} \varphi \iff \vdash_{\mathrm{CPC}} \neg\neg\varphi, \qquad \text{and in fact} \qquad \vdash_{\mathrm{IPC}} \neg\varphi \iff \vdash_{\mathrm{CPC}} \neg\varphi\;}.
 $$
 
 **Proof.** One direction is immediate: if $\vdash_{\mathrm{IPC}} \neg\neg\varphi$ then $\vdash_{\mathrm{CPC}} \neg\neg\varphi$, and classically $\neg\neg\varphi \to \varphi$, so $\vdash_{\mathrm{CPC}} \varphi$. Conversely, the Gödel–Gentzen negative translation $\varphi \mapsto \varphi^{N}$ satisfies
@@ -123,7 +123,7 @@ As in the Boolean case, $\sim_T$ is a congruence, and the quotient is a Heyting 
 **Theorem (algebraic completeness).** For every theory $T$ and proposition $\varphi$,
 
 $$
-T \vdash_{\mathrm{IPC}} \varphi \iff \text{every Heyting algebra homomorphism satisfying } T \text{ sends } \varphi \text{ to } 1 .
+\boxed{\;T \vdash_{\mathrm{IPC}} \varphi \iff \text{every Heyting algebra homomorphism satisfying } T \text{ sends } \varphi \text{ to } 1\;}.
 $$
 
 **Proof.** Soundness is induction on the length of the derivation, each axiom being an identity of Heyting algebras and each rule preserving the value $1$. Completeness follows from the Lindenbaum algebra: if $T \nvdash \varphi$, then the class of $\varphi$ is not $1$ in $H = L/\sim_T$, and the quotient map is a homomorphism satisfying $T$ and sending $\varphi$ to a non-top element. Both directions are the standard algebraic-completeness argument; the syntactic proof and the Kripke completeness theorem, which uses partially ordered frames and is the sharper statement, are in *Proof Theory and Type Theory*.

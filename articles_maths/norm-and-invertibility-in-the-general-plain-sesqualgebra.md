@@ -20,10 +20,6 @@ the general plain sesquilinear algebraic norm, **real and positive definite** of
 
 The invertibility is where the article records an **absence**. The block has a **right unit** $e_t$ and no left unit, so it has no two-sided unit and no group of units in the ordinary sense; the one-sided inverse equations are stated, and their solvability is decided by a different quadratic form, which is **not** the algebraic norm of the block and is not studied here. Its algebraic norm is definite and does not decide invertibility: $\langle\tilde Q\rangle_{*}=0$ exactly at $\tilde Q=0$.
 
-**Boundaries.** The product, its class and its placement among the twelve structures are *Introduction to the General Plain Sesqualgebra*; the relative definitions of the unit, the inverse and the group of units are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the four general products with their one-sided units are *Comparison Between the Four General Products*; the one-sided inverse equations and the common zero-divisor set are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*. The matrix model that carries the block-square is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears; the Euclidean norm is the algebraic norm of the block and not a length.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=\sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon=(1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde Q}=\sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\sum_\mu\varepsilon_\mu\overline{Q_\mu}e_\mu$. Juxtaposition is the **plain** product $\tilde Q_1\tilde Q_2$ and $\star$ the block, $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The **algebraic norm of the block** is the diagonal of the scalar-part form,
-
 $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
 $$
@@ -47,7 +43,7 @@ Throughout this article the product is the block $\tilde Q_1\star\tilde Q_2=\til
 **Theorem (the block has a right unit and no left unit).** For every $\tilde Q$,
 
 $$
-\tilde Q\star e_t=\tilde Q,\qquad e_t\star\tilde Q=\tilde Q^{*}.
+\boxed{\;\tilde Q\star e_t=\tilde Q,\qquad e_t\star\tilde Q=\tilde Q^{*}\;}.
 $$
 
 Consequently $e_t$ is a **right unit** of $\star$, it is **not** a left unit, and the block has **no two-sided unit**.
@@ -118,7 +114,7 @@ which vanishes only at $\tilde Q=0$. The block-square is **not** the plain squar
 **Theorem (the algebraic norm of a product).** For all $\tilde Q_1,\tilde Q_2$,
 
 $$
-\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2},
+\boxed{\;\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}\;},
 $$
 
 so that $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}$ exactly when $\tilde Q_1$ and $\tilde Q_2$ are linearly dependent over $\mathbb{C}$.
@@ -162,7 +158,7 @@ $$
 **Theorem (the algebraic norm does not decide invertibility).** The block has no two-sided invertible element, so no criterion can name one; and its algebraic norm has no nonzero zero:
 
 $$
-\langle\tilde Q\rangle_{*}=0\quad\Longleftrightarrow\quad\tilde Q=0 .
+\boxed{\;\langle\tilde Q\rangle_{*}=0\quad\Longleftrightarrow\quad\tilde Q=0\;}.
 $$
 
 *Proof.* The first clause is the absence of a two-sided inverse. The equivalence is the positive definiteness: $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ is a sum of non-negative reals, vanishing exactly at the origin.

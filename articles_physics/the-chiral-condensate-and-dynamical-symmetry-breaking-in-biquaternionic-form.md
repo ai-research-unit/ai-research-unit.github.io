@@ -19,8 +19,6 @@ This article asks what the framework supplies for the condensate. The answer is 
 
 The article is organised as follows. A section fixes the chiral symmetry of the linear mass term and its axial current. A section shows that the condensate is the order parameter and identifies it algebraically. A section transcribes the gap equation and verifies its numbers. A section gives the biquaternion interpretation. A section records the Goldstone counting and where the pion is treated. A closing section separates what the framework supplies, transcribes, and does not supply.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\,\partial/\partial Q_\mu$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_\mu\,\partial/\partial Q_\mu$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta$. The massless biquaternion Dirac equation is $\tilde{\nabla}\tilde{\Psi}=0$; the massive equation is the linear chiral pair above, and its spinor-module representative $\psi$ satisfies $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$. The Dirac module is $\Delta=S\oplus\bar{S}$ with $S=\mathbb{C}^2$, the chirality operator is $\gamma_5=\mathrm{diag}(-I_2,I_2)=i\omega$ with $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element, and the chiral projectors are $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$. We use the block representation
-
 $$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
@@ -158,7 +156,7 @@ $$
 and the condensate in turn is computed in the mean-field vacuum of a fermion of mass $m$. For $N_c$ colours and a sharp ultraviolet cutoff $\Lambda$ the self-consistency condition is the **gap equation**
 
 $$
-m = 4N_c\,G\,m\,I_1(m) ,
+\boxed{\;m = 4N_c\,G\,m\,I_1(m)\;}
 \qquad
 I_1(m) = \int_0^{\Lambda}\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{\vec p^2+m^2}} .
 $$
@@ -168,7 +166,7 @@ The equation always has the **chiral** solution $m=0$. Dividing by $m$, a nontri
 $$
 1 = 4N_c\,G\,I_1(0) = 4N_c\,G\,\frac{\Lambda^2}{4\pi^2}
 \qquad\Longrightarrow\qquad
-G_c = \frac{\pi^2}{N_c\,\Lambda^2} .
+\boxed{\;G_c = \frac{\pi^2}{N_c\,\Lambda^2}\;} .
 $$
 
 For $G>G_c$ the chiral solution is unstable and the nontrivial one appears; the transition is second order in the mean-field approximation. Both the gap equation and the threshold are standard and are transcribed here.
@@ -207,9 +205,9 @@ $$
 Since $\Box=\tilde{\nabla}^{\natural}\tilde{\nabla}$, the right-handed field satisfies
 
 $$
-\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R ,
+\boxed{\;\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R ,
 \qquad\text{and, symmetrically,}\qquad
-\Box\tilde{\Psi}_L = m^2\tilde{\Psi}_L .
+\Box\tilde{\Psi}_L = m^2\tilde{\Psi}_L\;}.
 $$
 
 The dynamical coefficient is therefore a common mass for the two chiralities: the off-diagonal coupling has rotated into the mass-shell condition of each half. This is the framework's positive statement that a condensate-generated $m$ is a physical mass and not a bookkeeping device, and it uses no more than the factorisation of the d'Alembertian on which the linear mass pair rests.
@@ -271,7 +269,7 @@ which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldst
 The chiral condensate in biquaternionic form is the vacuum expectation of the chirality-odd scalar bilinear,
 
 $$
-\langle\bar{\Psi}\Psi\rangle = \langle\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L\rangle ,
+\boxed{\;\langle\bar{\Psi}\Psi\rangle = \langle\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L\rangle\;} ,
 $$
 
 and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ breaks. The massless equation $\tilde{\nabla}\tilde{\Psi}=0$ carries both the vector and the axial phase; the mass term preserves the vector central phase and breaks the axial one, with $\partial/\partial Q_\mu j_5^\mu=2im\bar{\psi}\gamma_5\psi$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\bar{\Psi}\Psi\rangle$. The order parameter is a central scalar and is not the antilinear pairing built on the algebra's real structure $\flat$.

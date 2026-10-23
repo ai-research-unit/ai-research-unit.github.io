@@ -25,10 +25,6 @@ Four statements organize the article. The first three are the levels at which th
 - **At the rotor level**, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ by the Lorentz rotor $\tilde U_{\mathrm L}$, a unit-norm biquaternion, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they are the diagonal $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
-**Boundaries.** This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*. The structure and the finite-dimensional representations of the group as such are treated in *The Lorentz Group in Biquaternionic Form — Structure and Representations*; this article's subject is the characterization of the group by the form.
-
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$.
-
 ## The Biquaternion Norm as a Quadratic Form
 
 The biquaternion norm is the quadratic map
@@ -166,7 +162,7 @@ $$
 the biquaternion norm is real and indefinite:
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +x^2+y^2+z^2 .
+\boxed{\ \langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +x^2+y^2+z^2\ }\ .
 $$
 
 The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, in the real coordinates, is therefore the quadratic form with matrix
@@ -205,7 +201,7 @@ $$
 says exactly that $T$ preserves the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Hence
 
 $$
-\mathcal{G} \;\cong\; O(1,3),
+\boxed{\ \mathcal{G} \;\cong\; O(1,3)\ } ,
 $$
 
 the full Lorentz group including the discrete reflections and the time-reversal and parity components. The connected component of the identity is the **restricted Lorentz group** $SO^+(1,3)$: the transformations that are proper (determinant $+1$) and orthochronous (preserve the time direction). This is the group the algebra supplies at the real level: the automorphisms of the biquaternion norm that respect the material slice.
@@ -276,9 +272,8 @@ The map $\pi$ is **surjective** onto $SO^+(1,3)$; that every proper orthochronou
 
 $$
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_t\}
-\;=\;\{\pi(\tilde U_{\mathrm L}): \langle\tilde U_{\mathrm L}\rangle_{\natural}=1\}/\ker\pi .\;}
+\;=\;\{\pi(\tilde U_{\mathrm L}): \langle\tilde U_{\mathrm L}\rangle_{\natural}=1\}/\ker\pi\;}.
 $$
-
 
 A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by conjugation with unit-norm elements.
 
@@ -289,7 +284,7 @@ The automorphisms used so far preserve the **form**. The algebra has a smaller a
 **The algebra automorphisms are the diagonal of the form automorphisms.** By Skolem–Noether (companion article *Biquaternion Automorphisms and Derivations*) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, $\tilde{Q}\mapsto M\tilde{Q}M^{-1}$, and the group is
 
 $$
-\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C}),
+\boxed{\ \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C})\ } ,
 $$
 
 of complex dimension three. In the parametrization $\tilde{Q}\mapsto A\tilde{Q}B^{-1}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det A=\det B$ — this is the **diagonal** $A=B=M$, and the determinant condition then holds automatically. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,
@@ -388,7 +383,6 @@ The source prints $T^2-|\vec X|^2=S^2\equiv|z_0|^2$; the two differ by $|z_0|^2$
 
 **What the route does not give, and the boundary.** The construction realizes the **closed forward light cone only**. There is no spacelike region, since $|\vec X|\le T$ identically, and no past cone, since $T\ge0$ identically; a spacelike separation or a past-directed causal relation cannot be represented at all. The map $(\vec p,\vec q)\mapsto(T,\vec X)$ is onto that cone but is not a diffeomorphism — six real dimensions onto four — with fibre the phase and the common rotation, so the primary complex space is not Minkowski space in disguise. And the programme's own vocabulary for what the extra dimensions do — the "observable" space-time, the ensemble of correlated particle-singularities it calls *duplicons*, and the complex null cone whose defining equation has several roots — is the source's; the twistor-side content of it belongs to the companion article *Twistor Theory and Biquaternions*, and the vocabulary is not adopted here.
 
-
 ## The Infinitesimal Automorphisms: the Lie Algebra
 
 Differentiating the unit-norm condition gives the Lie algebra of infinitesimal biquaternion-norm automorphisms. Let
@@ -429,7 +423,6 @@ $$
 $$
 
 The first two say that the rotations close and that the boosts transform as a vector under them; the third, with its minus sign, is the algebraic statement that two boosts do not close into a boost but into a rotation. This is the infinitesimal form of the Thomas–Wigner rotation, and the sign is the one that makes the boost directions a vector and the rotation directions an axial vector.
-
 
 **The complexification and the two factors.** Complexifying the real Lie algebra and forming
 

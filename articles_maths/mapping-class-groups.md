@@ -7,8 +7,6 @@ The mapping class group of a surface is the group of the isotopy classes of its 
 
 The article develops the group in the order in which its structure unfolds: the definition, the Dehn twists and the generation and presentation theorems; the classification of the elements, with the periodic, reducible and pseudo-Anosov cases and the Nielsen realisation; the curve complex and the hyperbolicity and acylindricity of the action; the Torelli group and the arithmetic of the homology action; the finiteness and stability properties, with the cohomological dimension, the Torelli and the stable cohomology; and the applications to the moduli spaces, to the fibred three-manifolds and to the outer automorphisms of the free groups. The Teichmüller theory of the companion article is used throughout: the group is studied through its action on the Teichmüller space.
 
-**The boundaries of the article.** The Teichmüller space, the Teichmüller and Weil–Petersson metrics, the moduli space, the Bers embedding and the compactifications are not developed here; the present article takes the space and its properties as given. The hyperbolic structures, the geodesic laminations, the measured foliations, the convex cores and the Nielsen convex bodies are those of *Hyperbolic Geometry*. The fibred three-manifolds arising as the mapping tori, the hyperbolic Dehn surgery and the virtual fibring theorem are those; the knots and the braids as topological objects are those; the fixed points of the finite subgroups and the automorphisms of the surfaces are those in the spherical case and of the hyperbolic geometry in the general case. The surface groups, the free groups and the outer automorphism groups are those of *Topology on Groups* and of the group theory of Part I; the homology and the cohomology of the groups, the algebraic $K$-theory and the group cohomology are those of *Algebraic Topology* and of the homological algebra of Part I, written by other agents. The measure theory of the measured foliations and the analytic theory of the Thurston boundary belong to Part III, and no physics is invoked.
-
 ## Definitions, Dehn Twists and Presentations
 
 **Definition.** Let $S$ be a compact oriented surface. The **mapping class group** $\mathrm{Mod}(S)$ is the group of the isotopy classes of the orientation-preserving homeomorphisms $S\to S$ that fix the boundary pointwise:
@@ -164,8 +162,6 @@ The large-scale geometry of the group is governed by the curve complex: it is $\
 | $4g+2$, $84(g-1)$ | Maximal cyclic order (Wiman); maximal finite group order (Hurwitz) |
 | $\kappa_i$ | Miller–Morita–Mumford classes; generate the stable cohomology (Madsen–Weiss) |
 | $B_n$, $\sigma_i$ | Braid group and its generators; $\mathrm{Mod}(D^2,n)=B_n$; the spherical braid group for the sphere |
-
-
 
 ## Further Reading
 

@@ -98,9 +98,10 @@ so $\phi_\lambda$ solves $\Box\phi_\lambda = 0$ whenever $\phi$ does, for **ever
 
 For the inversion $\tilde{Q}_2 = I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, the conformal factor is $\Omega(\tilde{Q}) = 1/\langle\tilde{Q}\rangle_{\natural}$, and the transformation law of the box operator is
 $$
+\boxed{\;
 \Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}_2\bigr)\Bigr]
 = \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}_2}\phi\bigr)\bigl(\tilde{Q}_2\bigr)
-\qquad\text{at } \Delta = 1 ,
+\qquad\text{at } \Delta = 1\;},
 $$
 with a residual proportional to $(\Delta-1)$ at other weights. The identity is the sharp statement of the massless scalar's conformal invariance, and it was verified on a superposition of two Gaussians in the four $ict'$ coordinates: at $\Delta = 1$ the two sides agree to a relative accuracy of $10^{-16}$ on six random points away from the origin, while at $\Delta = 1/2$ the residual is of order unity. The two ends of the identity are the two ways of reading it: as an operator statement, it says $\Box$ is carried by the inversion into $\Omega^2\Box$; as a solution statement, it says the field $\Omega^{\Delta}\phi\circ I$ solves the massless equation whenever $\phi$ does.
 
@@ -137,7 +138,8 @@ The four families can be written in finite form, and their composition is what m
 
 The massless invariant Green's function of the operator article,
 $$
-G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 \langle\tilde{Q}\rangle_{\natural}} ,
+\boxed{\;
+G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 \langle\tilde{Q}\rangle_{\natural}}\;},
 $$
 is the conformal two-point function of a field of weight $\Delta = 1$. Two properties make this identification exact. First, it is the unique function of the interval with the right scaling: the conformal covariance of a two-point function requires
 $$
@@ -177,9 +179,10 @@ In the massless case $\tilde P$ is a **zero divisor** of the algebra, and left m
 
 The massless limit of the massive kernel is the invariant kernel of the operator article,
 $$
+\boxed{\;
 G^{(\mu)}_{\mathrm{inv}} = \frac{\mu}{4\pi^2\rho}K_1(\mu\rho)
 \ \longrightarrow\ 
-\frac{1}{4\pi^2\rho^2} = G_{\mathrm{inv}} \qquad (\mu\to0) ,
+\frac{1}{4\pi^2\rho^2} = G_{\mathrm{inv}} \qquad (\mu\to0)\;},
 $$
 the modified Bessel function reducing to its small-argument form $K_1(z)\sim1/z$. The massive kernel has a length scale $\mu^{-1}$ and the massless one has none, which is the analytic counterpart of the rank drop: as $\mu\to0$ the exponential screening disappears and the kernel becomes the pure conformal two-point function. The limit is not uniform — the massive kernel is supported inside the light cone and the massless one on it — and the non-uniformity is the infrared sensitivity of the massless theory, the same feature that makes the massless propagator's long-distance behaviour the subject of its own article.
 
@@ -215,9 +218,10 @@ $$
 $$
 with $\xi$ fixed by the requirement that the massless trace vanish and hence by the normalisation of the kinetic term. The standard literature normalisation $\mathcal{L} = \tfrac12(\partial\phi)^2 - \tfrac12\mu^2\phi^2$ in the mostly-minus metric gives the textbook $\xi = \tfrac{d-2}{4(d-1)} = \tfrac16$ at $d=4$; the framework's normalisation above, whose kinetic term carries the opposite sign and twice the magnitude, gives $\xi = -\tfrac13$. Since $\Box\phi^2 = 2\phi\Box\phi + 2(\partial\phi)^2$, the trace is
 $$
+\boxed{\;
 \Theta^\mu{}_\mu = \bigl(2+6\xi\bigr)\bigl(\partial\phi\bigr)^2 + 4\mu^2\phi^2 + 6\xi\,\phi\bigl(\Box\phi\bigr)
 \ \longrightarrow\ 4\mu^2\phi^2 - 2\phi\bigl(\Box\phi\bigr)
-\ \longrightarrow\ 2\mu^2\phi^2 \quad\text{on shell at } \xi = -\tfrac13 ,
+\ \longrightarrow\ 2\mu^2\phi^2 \quad\text{on shell at } \xi = -\tfrac13\;},
 $$
 while massless the gradient-squared term vanishes with $2+6\xi = 0$ and the trace is zero, which is the conformal invariance. In the standard normalisation the same computation reads $\Theta^\mu{}_\mu = \phi\Box\phi + 2\mu^2\phi^2$, whose on-shell value there is $\mu^2\phi^2$; the reduction uses that normalisation's own equation of motion, $\Box\phi = -\mu^2\phi$, which carries the opposite sign to the framework's $\Box\phi = +\mu^2\phi$ because the two Lagrangians place the mass term with opposite signs relative to the kinetic term. Only the coefficient is a normalisation artefact — it tracks the normalisation of the Lagrangian, with the sign convention of $\Box$ accounted for — and the physical content is shared: the trace is **proportional to the mass term**, so that the massless limit is exactly the trace-free limit. The identity was verified on an explicit off-shell test field in the four $ict'$ coordinates, where $\Theta^\mu{}_\mu$ matched $4\mu^2\phi^2 - 2\phi\Box\phi$ to machine precision, and on an on-shell field, where it returned $2\mu^2\phi^2$.
 

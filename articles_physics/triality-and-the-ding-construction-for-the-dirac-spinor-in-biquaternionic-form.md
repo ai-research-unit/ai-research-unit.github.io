@@ -42,9 +42,9 @@ the quaternion relations of $\mathbb{B}$. An order-$\ell$ **ding** is an $\ell$-
 The order-three invariant is the source's *Ding-3*: the trilinear form
 
 $$
-\varepsilon : \ M \times S_1 \times S_2 \longrightarrow \mathbb{C},
+\boxed{\;\varepsilon : \ M \times S_1 \times S_2 \longrightarrow \mathbb{C},
 \qquad
-\varepsilon(A, B, N) = 2\, A_\mu\, \varepsilon^{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda .
+\varepsilon(A, B, N) = 2\, A_\mu\, \varepsilon^{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda\;}.
 $$
 
 Equivalently, and this is the form that shows the two independent pieces, it is
@@ -88,7 +88,7 @@ $$
 permutes the three spaces cyclically and leaves the trilinear form $\varepsilon$ invariant:
 
 $$
-\varepsilon(J(A,B,N)) = \varepsilon(B, N, A) = \varepsilon(A, B, N) .
+\boxed{\;\varepsilon(J(A,B,N)) = \varepsilon(B, N, A) = \varepsilon(A, B, N)\;}.
 $$
 
 This is the four-dimensional triality. Its order is three, $J^3 = 1$, and it acts on the product of the three spaces, not inside any one of them: $J$ is not an inner automorphism of $\mathbb{B}$, it is an *outer* permutation of three inequivalent modules. That is exactly the situation of the Cartan triality, where the outer automorphism group of the $D_4$ diagram is $S_3$ and the three-node orbit is the three eight-dimensional representations. What is special to the four-dimensional case is that the three modules are the vector and the two semi-spinors of a *Lorentz* group, which have equal real dimension, and the invariant form is built from the ordinary Dirac matrices rather than from the octonion product.
@@ -111,7 +111,7 @@ $$
 and they satisfy the braid relation
 
 $$
-q_x q_y q_x = q_y q_x q_y ,
+\boxed{\;q_x q_y q_x = q_y q_x q_y\;},
 $$
 
 so they generate a quotient of the braid group $B_3$ on three strands. The name "Dirac's game" is the source's. The content is that the combination

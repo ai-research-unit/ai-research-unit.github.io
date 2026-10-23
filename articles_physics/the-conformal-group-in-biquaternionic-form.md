@@ -127,11 +127,11 @@ I(\tilde{Q})=\frac{\tilde{Q}}{\langle\tilde{Q}\rangle_{\natural}}.
 $$
 This is the four-vector form of $x^\mu\mapsto x^\mu/x^2$, and it is algebraic: it is the quaternion conjugate followed by the algebra inverse,
 $$
-I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1},
+\boxed{\;I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}\;},
 $$
 because $\langle\tilde{Q}^{\natural}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ (the biquaternion norm is central, so $\tilde{Q}^{\natural}\tilde{Q}=\tilde{Q}\tilde{Q}^{\natural}$) and therefore $(\tilde{Q}^{\natural})^{-1}=\overline{\tilde{Q}^{\natural}}/\langle\tilde{Q}^{\natural}\rangle_{\natural}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$. Two properties follow and were verified: $I^2=\mathrm{id}$ where defined, and
 $$
-\langle I(\tilde{Q})\rangle_{\natural}=\frac{1}{\langle\tilde{Q}\rangle_{\natural}},
+\boxed{\;\langle I(\tilde{Q})\rangle_{\natural}=\frac{1}{\langle\tilde{Q}\rangle_{\natural}}\;},
 $$
 so $I$ maps the null cone to itself and is a conformal map with the reciprocal scale factor. Unlike the Lorentz, dilation and translation parts, the inversion is not built from the algebra's multiplication and addition alone: it uses the inverse, that is, division by the biquaternion norm.
 
@@ -148,9 +148,8 @@ The map $P$ is an improper Lorentz transformation, so it is already in the confo
 
 **Special conformal transformations.** A translation sandwiched between two inversions is a special conformal transformation:
 $$
-\tilde{Q}_2=I\bigl(I(\tilde{Q})+\tilde Q_3\bigr)
-=\frac{\tilde{Q}+\tilde Q_3\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde Q_3\rangle+\langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
-\qquad \tilde Q_3\in\mathbb{M}_-,
+\boxed{\;\tilde{Q}_2=I\bigl(I(\tilde{Q})+\tilde Q_3\bigr)
+=\frac{\tilde{Q}+\tilde Q_3\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde Q_3\rangle+\langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},\qquad \tilde Q_3\in\mathbb{M}_-\;},
 $$
 where
 $$
@@ -213,7 +212,7 @@ The conformal group of Minkowski space is the fifteen-parameter group $SO(2,4)$,
 
 The biquaternion algebra carries the conformal **structure** but not the conformal **group**. What it carries: the null cone, which is the zero-divisor cone $\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=0\}$, is the invariant object of the conformal group, and every generator preserves it; the inversion is algebraic, $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$, with $I^2=\mathrm{id}$ and $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$; the dilation is the signed inner conjugation by the non-unit element $\sqrt{\lambda}e_t$; and the special conformal transformation is the composition $I\circ T_{\tilde Q_3}\circ I$, with the explicit form
 $$
-\tilde{Q}_2=\frac{\tilde{Q}+\tilde Q_3\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde Q_3\rangle+\langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
+\boxed{\;\tilde{Q}_2=\frac{\tilde{Q}+\tilde Q_3\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde Q_3\rangle+\langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}}\;},
 $$
 which reproduces $x_2^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.
 

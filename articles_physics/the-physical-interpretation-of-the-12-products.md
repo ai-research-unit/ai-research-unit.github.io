@@ -31,9 +31,9 @@ The article owns no theorem. Each result is stated in a sentence, the mathematic
 Let $\circ$ be one of the four general products. Its symmetric and antisymmetric parts are
 
 $$
-S(x,y)=\tfrac12\bigl(x\circ y+y\circ x\bigr),
+\boxed{\;S(x,y)=\tfrac12\bigl(x\circ y+y\circ x\bigr),
 \qquad
-A(x,y)=\tfrac12\bigl(x\circ y-y\circ x\bigr),
+A(x,y)=\tfrac12\bigl(x\circ y-y\circ x\bigr)\;},
 $$
 
 so that $x\circ y=S(x,y)+A(x,y)$ for every pair. For the two sesquilinear parents the exchange is not the plain one: the second term is the conjugate of the product in the opposite order,
@@ -210,9 +210,9 @@ A root of $+1$ is an **involution**: a parity, a reality condition, a discrete s
 An **idempotent** is an element equal to its own square. In the plain product the two equations are one equation read through the halving map,
 
 $$
-\tilde\Pi=\tfrac12(e_t+\tilde\Xi),
+\boxed{\;\tilde\Pi=\tfrac12(e_t+\tilde\Xi),
 \qquad
-\tilde\Xi=2\tilde\Pi-e_t,
+\tilde\Xi=2\tilde\Pi-e_t\;},
 $$
 
 which is a bijection between the roots of $+1$ and the idempotents. An idempotent is a projection, and a projection is a determinate state: measuring twice gives the same result as measuring once. The idempotent sets are the state sets of the bands. The plain product carries the largest family, one state per root of one; the Hermitian idempotents are the pure states of the probability band, on the boundary of the positive cone; the gauge family is the only nontrivial family of idempotents that are units. The brackets and the interval band carry no nontrivial state: an infinitesimal transformation has no determinate state, and a state is not an interval.

@@ -49,7 +49,7 @@ $$
 **Theorem (the biquaternion dagger is positive).** For every biquaternion,
 
 $$
-\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_{1,\mu}\rvert^{2}\ \ge 0 ,
+\boxed{\;\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_{1,\mu}\rvert^{2}\ \ge 0\;},
 $$
 
 with equality if and only if $\tilde{Q}_1=0$. Hence the dagger of $\mathbb{B}$ is a positive involution and the scalar form $(\tilde{Q}_1,\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ is positive definite.
@@ -78,7 +78,7 @@ Its elements are Hermitian by the proposition above, and it contains $0$ and $e_
 **Theorem (the cone in matrix form).** The cone is the set of positive semidefinite Hermitian elements,
 
 $$
-P=\bigl\{H\in\mathbb{M}_+:\mathsf{M}_2(H)\succeq0\bigr\}=\bigl\{\tilde{Q}_1\tilde{Q}_1^{*}:\tilde{Q}_1\in\mathbb{B}\bigr\},
+\boxed{\;P=\bigl\{H\in\mathbb{M}_+:\mathsf{M}_2(H)\succeq0\bigr\}=\bigl\{\tilde{Q}_1\tilde{Q}_1^{*}:\tilde{Q}_1\in\mathbb{B}\bigr\}\;},
 $$
 
 and it is a closed convex cone of real dimension four, pointed, generating the Hermitian sector. It is **self-dual** for the scalar form: $H\in P$ if and only if $(H,K)\ge0$ for every $K\in P$.
@@ -127,11 +127,11 @@ the pair $(\tilde E)$ being determined up to a nonzero complex scalar; so the ex
 **Theorem (the dagger polar decomposition).** Every biquaternion has a decomposition
 
 $$
-\tilde{Q}_1=\tilde U\,\lvert\tilde{Q}_1\rvert,
+\boxed{\;\tilde{Q}_1=\tilde U\,\lvert\tilde{Q}_1\rvert,
 \qquad
 \lvert\tilde{Q}_1\rvert=\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)^{1/2}\in P,
 \qquad
-\tilde U^{\dagger}\tilde U=e_t,
+\tilde U^{\dagger}\tilde U=e_t\;},
 $$
 
 with $\lvert\tilde{Q}_1\rvert$ the positive square root in the cone and $\tilde U$ in the unitary slice. The decomposition is unique exactly when $\tilde{Q}_1$ is invertible, that is exactly outside the null cone.

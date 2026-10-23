@@ -8,16 +8,16 @@ This article reads the algebraic norm as an element and not as a number. Its sca
 
 The product itself is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the general quaternionic sesquilinear product and its square are *Introduction to the General Quaternionic Sesqualgebra*; the antisymmetric companion $\mathrm{AQS}$ is Block 8 of the batch and is defined in *The 12 Products of the Biquaternion Complex Space*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Krein Gram Matrix and the Restrictions of the Form*; the isotropic elements of the form are *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the zero divisors of the algebra are *Zero Divisors of the Biquaternion Algebra*; and the norm is *Norm and Invertibility in the General Quaternionic Algebra*.
 
-**Conventions.** As in the introduction of the block: $\tilde Q=\sum_\mu Q_\mu e_\mu$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, $\vec Q=\sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$, and $\tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$.
-
 ## The Algebraic Norm as an Element
 
 **Theorem (the algebraic norm).** For every biquaternion,
 
 $$
+\boxed{\;
 \tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q,
 \qquad
-\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\sum_{\mu\in\{x,y,z\}}|Q_\mu|^{2}.
+\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\sum_{\mu\in\{x,y,z\}}|Q_\mu|^{2}
+\;}.
 $$
 
 The scalar part is real and the vector part is $-2\mathrm{Re}(Q_t\overline{\vec Q})=-2\sum_{\mu\in\{x,y,z\}}\mathrm{Re}(Q_t\overline{Q_\mu})\vec e_\mu$, a real vector.
@@ -30,9 +30,7 @@ The scalar part is real and the vector part is $-2\mathrm{Re}(Q_t\overline{\vec 
 
 **Theorem (centrality of the algebraic norm).** $\tilde Q\star\tilde Q$ lies in the centre exactly when
 
-$$
-Q_t\overline{Q_\mu}\in i\mathbb{R}\quad\text{for every }\mu\in\{x,y,z\},
-$$
+$$ \boxed{\; Q_t\overline{Q_\mu}\in i\mathbb{R}\quad\text{for every }\mu\in\{x,y,z\} \;}, $$
 
 that is, when $Q_t\overline{\vec Q}$ is a purely imaginary vector, and in particular when $Q_t=0$.
 
@@ -61,9 +59,11 @@ the algebraic norm is not central: $\langle e_t+\vec e_x,e_t+\vec e_x\rangle_{\n
 **Theorem (the two orders).** The two orders whose half-sum is the algebraic norm are
 
 $$
+\boxed{\;
 \tilde Q^{\natural}\tilde Q^{*}
 \quad\text{and}\quad
-\tilde Q^{*}\tilde Q^{\natural},
+\tilde Q^{*}\tilde Q^{\natural}
+\;},
 $$
 
 their sum is $2\,\tilde Q\star\tilde Q$, their difference is $2\vec Q\times\overline{\vec Q}$, and their scalar parts are equal to $\langle\tilde Q,\tilde Q\rangle_{\natural*}$.

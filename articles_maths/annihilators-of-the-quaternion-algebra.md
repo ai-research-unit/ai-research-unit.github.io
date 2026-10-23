@@ -67,13 +67,9 @@ zero divisor of either side, and the annihilator is never a proper nonzero subsp
 **Proposition (the operators and their invariants).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the operators
 $L_{\tilde q}$ and $R_{\tilde q}$ of an element $\tilde q=q_te_t+\vec q$ have trace $4q_t$ each
 and determinant
-$$
-\det L_{\tilde q}=\det R_{\tilde q}=\langle\tilde q\rangle_{\natural}^2=(q_t^2+|\vec q|^2)^2,
-$$
+$$ \boxed{\; \det L_{\tilde q}=\det R_{\tilde q}=\langle\tilde q\rangle_{\natural}^2=(q_t^2+|\vec q|^2)^2 \;} ,$$
 and the characteristic polynomial
-$$
-\chi_{L_{\tilde q}}(t)=\chi_{R_{\tilde q}}(t)=(t^2-2q_tt+\langle\tilde q\rangle_{\natural})^2.
-$$
+$$ \boxed{\; \chi_{L_{\tilde q}}(t)=\chi_{R_{\tilde q}}(t)=(t^2-2q_tt+\langle\tilde q\rangle_{\natural})^2 \;} .$$
 
 *Proof.* The matrix of $L_{\tilde q}$ is the left multiplication matrix of the quaternion
 $\tilde q$: its trace is $4q_t$ and its determinant is the square of the norm, $\langle\tilde q\rangle_{\natural}^2$. The

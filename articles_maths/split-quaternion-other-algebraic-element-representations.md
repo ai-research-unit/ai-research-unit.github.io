@@ -37,8 +37,10 @@ with $q_t = \operatorname{Sc}(\tilde q)$ the scalar part and $q_x \vec e_x + q_y
 **Theorem.** The split-quaternion algebra is isomorphic to the Clifford algebra $\mathrm{Cl}_{1,1}$ of the form of signature $(1,1)$:
 
 $$
-\mathbb{H}_{\mathrm{s}} \;\cong\; \mathrm{Cl}_{1,1} \;\cong\; M_2(\mathbb{R}),
-$$
+\boxed{\;
+\mathbb{H}_{\mathrm{s}} \;\cong\; \mathrm{Cl}_{1,1} \;\cong\; M_2(\mathbb{R})
+\;}
+$$,
 
 the isomorphism sending the generators $f_1, f_2$ of $\mathrm{Cl}_{1,1}$ (with $f_1^2 = +1$, $f_2^2 = -1$, $f_1 f_2 = -f_2 f_1$) to $\vec e_y, \vec e_x$ respectively.
 
@@ -71,8 +73,10 @@ The algebra acts on itself by left multiplication, and the two minimal left idea
 **Theorem.** The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has a unique simple left module up to isomorphism, of real dimension $2$, and the algebra is the direct sum of two copies of it as a left module:
 
 $$
-\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2, \qquad \tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y),
-$$
+\boxed{\;
+\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2, \qquad \tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)
+\;}
+$$,
 
 the **minimal left ideals**, each $\mathbb{R}$-isomorphic to $\mathbb{R}^2$.
 

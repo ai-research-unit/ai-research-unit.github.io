@@ -6,8 +6,6 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the plain left and right multiplications are $L_{\tilde p}\tilde q=\tilde p\tilde q$ and $R_{\tilde p}\tilde q=\tilde q\tilde p$, the two-sided operator is $M_{\tilde p,\tilde q}\tilde q_4=\tilde p\tilde q_4\tilde q$, the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$, and the derivations of the plain algebra are those of *The Multiplication Operators of the General Plain Algebra*.
-
 ## The Multiplication Operators
 
 ### The Definition and the Two-Sided Coincidence
@@ -17,8 +15,8 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 **Proposition (the half-sum).** The left multiplication of the block is the half-sum of the plain left and right multiplications,
 
 $$
-L^{\bullet}_{\tilde p}=\tfrac12\bigl(L_{\tilde p}+R_{\tilde p}\bigr),\qquad
-L_{\tilde p}+R_{\tilde p}=2\,L^{\bullet}_{\tilde p}.
+\boxed{\;L^{\bullet}_{\tilde p}=\tfrac12\bigl(L_{\tilde p}+R_{\tilde p}\bigr),\qquad
+L_{\tilde p}+R_{\tilde p}=2\,L^{\bullet}_{\tilde p}\;}.
 $$
 
 *Proof.* $\tfrac12(L_{\tilde p}+R_{\tilde p})\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)=\tilde p\bullet\tilde q$. The stated sum is the operator of the **doubled** product and is not $L^{\bullet}_{\tilde p}$; the factor $\tfrac12$ is essential.
@@ -26,7 +24,7 @@ $$
 **Proposition (the two-sided coincidence).** The product is commutative, so the left and the right operators coincide:
 
 $$
-L^{\bullet}_{\tilde p}=R^{\bullet}_{\tilde p}.
+\boxed{\;L^{\bullet}_{\tilde p}=R^{\bullet}_{\tilde p}\;}.
 $$
 
 *Proof.* $R^{\bullet}_{\tilde p}\tilde q=\tilde q\bullet\tilde p=\tilde p\bullet\tilde q=L^{\bullet}_{\tilde p}\tilde q$ by commutativity. The block therefore carries **one** operator per element, not two, and there is no asymmetry of the two sides.
@@ -88,7 +86,7 @@ and, more generally, $\bigl[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}\bigr]$
 **Theorem.** The multiplication operators generate the **full** endomorphism algebra:
 
 $$
-\mathrm{alg}\bigl\{\,L^{\bullet}_{\tilde p}\,\bigr\}=\mathrm{End}_{\mathbb{R}}(\mathbb{H})\cong M_4(\mathbb{R}),
+\boxed{\;\mathrm{alg}\bigl\{\,L^{\bullet}_{\tilde p}\,\bigr\}=\mathrm{End}_{\mathbb{R}}(\mathbb{H})\cong M_4(\mathbb{R})\;},
 $$
 
 of real dimension $16$; the span of the products of length at most two is already all of it.
@@ -106,8 +104,8 @@ of real dimension $16$; the span of the products of length at most two is alread
 **Theorem.** Every derivation of the block is inner:
 
 $$
-\operatorname{Der}(\mathbb{H}^{\bullet})=\mathrm{span}\bigl\{[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]\bigr\}\cong\mathfrak{so}(3),
-\qquad \dim\operatorname{Der}=3,
+\boxed{\;\operatorname{Der}(\mathbb{H}^{\bullet})=\mathrm{span}\bigl\{[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]\bigr\}\cong\mathfrak{so}(3),
+\qquad \dim\operatorname{Der}=3\;},
 $$
 
 and no derivation is a multiplication by an element.

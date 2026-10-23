@@ -272,20 +272,10 @@ and it acts on the purely vectorial biquaternionic field
 $$
 \vec N=\vec E-i\sqrt{\frac{\mu}{\epsilon}}\,\vec H,
 \qquad
-M\vec N=-\sqrt{\frac{\mu}{\epsilon}}\,\vec J
--\beta\sqrt{\frac{\mu}{\epsilon}}\,\partial/\partial Q_t\,\rho+\frac{i\rho}{\epsilon}.
+\boxed{\;M\vec N=-\sqrt{\frac{\mu}{\epsilon}}\,\vec J
+-\beta\sqrt{\frac{\mu}{\epsilon}}\,\partial/\partial Q_t\,\rho+\frac{i\rho}{\epsilon}\;}.
 $$
 The equivalence is exact and two-way, not a weak-coupling approximation in $\beta$: the physical fields solve the chiral system if and only if $\vec N$ solves this one (the source's Proposition 1). For $\beta=0$ the operator reduces to $\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD$, which is the reduction of the non-chiral case, and the authors are explicit that the chiral operator is *essentially different* from it.
-
-**Conventions.** The source's objects and the parent's are related by two conjugations, and recording them makes the agreement between the two reductions exact rather than approximate. First, the source's vectorial field pairs $\vec E$ with $-\sqrt{\mu/\epsilon}\,\vec H$, whereas the parent's field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$; the two are related by
-$$
-\tilde{F}=i\sqrt{\epsilon}\,\overline{\vec N},
-$$
-the complex conjugate of the source's field, so the magnetic-half sign is the only difference. Second, the source's $D$, with its quaternion units $i_k$, is the spatial part of the parent's gradient: writing $\tilde{\nabla}=\partial/\partial Q_t+\sum_ke_k\,\partial/\partial Q_k$ and its quaternion conjugate $\tilde{\nabla}^{\natural}=\partial/\partial Q_t-\sum_ke_k\,\partial/\partial Q_k$ (the vector part negated, the object whose product with $\tilde{\nabla}$ gives $\Box$), the source's non-chiral operator is
-$$
-M_0=\left.M\right|_{\beta=0}=\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD=i\,\tilde{\nabla}^{\natural},
-$$
-verified to machine zero: $i$ times the **quaternion conjugate** of the parent's gradient. Neither conjugation changes the content of the Maxwell system — the parent's own product $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ is independent of which factor comes first — which is why the two single-equation reductions agree where they overlap. What has no counterpart in the parent, and what no conjugation removes, is the chiral term $\beta\sqrt{\epsilon\mu}\,\partial/\partial Q_t\,D$: the *product* of the scalar time derivative with the vector part of the gradient, a second-order differential operator and not a multiple of $\tilde{\nabla}^{\natural}$.
 
 **The non-chiral limit in the framework's own symbols.** At $\beta=0$ the operator is $M_0=\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial Q_t$ commutes with $D$,
 $$
@@ -310,7 +300,7 @@ the frequency whose wavelength is $2\pi\beta$. There $M(\omega)$ annihilates eve
 $$
 \left(1-\beta^2\epsilon\mu\,\omega^2\right)k^2-2\tau\beta\epsilon\mu\,\omega^2k-\epsilon\mu\,\omega^2=0 ,
 \qquad\text{i.e.}\qquad
-n_\tau(\omega)=\frac{c\,k_\tau}{\omega}=\frac{1}{1-\tau\beta\omega/c}
+\boxed{\;n_\tau(\omega)=\frac{c\,k_\tau}{\omega}=\frac{1}{1-\tau\beta\omega/c}\;}
 $$
 on the propagating branch. Both were checked to $2.2\times10^{-16}$ against the wave equation evaluated on the corresponding circular polarisation, and at $\beta=0$ the two branches collapse to the single $k=\sqrt{\epsilon\mu}\,\omega$ of the non-chiral medium. The two refractive indices are the optical activity, and they come with no free constant beyond the one $\beta$ that entered the constitutive relations.
 
@@ -465,8 +455,8 @@ $$
 where $Z=\sqrt{\mu/\epsilon}$ is the intrinsic impedance fixed earlier. Then the two equations are together equivalent to the single equation
 
 $$
-\left(\frac{1}{c}\,\partial/\partial Q_t+iD\right)f-f\,(i\vec{c})-f^{*}\,(i\vec{Z})
-=-\left(\sqrt{\mu}\,\vec j+\frac{i\rho}{\sqrt{\epsilon}}\right),
+\boxed{\;\left(\frac{1}{c}\,\partial/\partial Q_t+iD\right)f-f\,(i\vec{c})-f^{*}\,(i\vec{Z})
+=-\left(\sqrt{\mu}\,\vec j+\frac{i\rho}{\sqrt{\epsilon}}\right)\;},
 $$
 
 with $f^{*}$ the coefficientwise complex conjugate of $f$ — the scalar imaginary conjugated, the quaternion units untouched — and the two products again right products. The source writes the impedance $W$ and the two coefficient vectors $\vec{c}$ and $\vec{W}$, the letters $\vec{c},\vec{W}$ standing for $\frac12\mathrm{grad}\ln c$ and $\frac12\mathrm{grad}\ln W$; we keep this article's letter $Z$ for the impedance, and we keep the source's symbol $\vec{c}$ for the first coefficient vector, which is a *vector field built from the speed* and not the speed $c$. The two coefficient vectors are not independent of the pair above: because
@@ -538,7 +528,7 @@ solves $(D+M^{\vec{\alpha}})\vec{F}=0$, that is $D\vec{F}+\vec{F}\vec{\alpha}=0$
 **The factorisation, and the Riccati equation.** The corresponding operator identity is a factorisation of the Schrödinger operator. For a scalar function $u$,
 
 $$
-\left(D+M^{\vec{\alpha}}\right)\left(D-M_{\vec{\alpha}}\right)u=(-\Delta+v)u
+\boxed{\;\left(D+M^{\vec{\alpha}}\right)\left(D-M_{\vec{\alpha}}\right)u=(-\Delta+v)u\;}
 \qquad\text{provided}\qquad
 D\vec{\alpha}+\vec{\alpha}^{2}=-v ,
 $$
@@ -640,9 +630,9 @@ $$
 is the outgoing fundamental solution of $-\Delta-c^2$, and the construction gives the fundamental solution of $D+M^{\vec{\alpha}}$ in closed form,
 
 $$
-\vec{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+\boxed{\;\vec{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 =\left(D-\frac{\mathrm{grad}\,\phi}{\phi}\right)\frac{\exp(icr)}{4\pi r}
-=-\left(\vec{\alpha}+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r^{2}}-\frac{ic\,(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{r}\right)\frac{\exp(icr)}{4\pi r},
+=-\left(\vec{\alpha}+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r^{2}}-\frac{ic\,(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{r}\right)\frac{\exp(icr)}{4\pi r}\;},
 \qquad
 r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| .
 $$

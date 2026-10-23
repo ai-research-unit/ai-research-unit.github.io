@@ -28,18 +28,9 @@ $$
 \qquad
 \vec E_a = \frac{ϙ}{4\pi\epsilon c}\,\frac{\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]}{\kappa^3 R},
 \qquad
-\vec B = \frac{1}{c}\,\vec u_R\times\vec E,
-\;}
+\vec B = \frac{1}{c}\,\vec u_R\times\vec E\;},
 $$
 with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is not null; the acceleration field falls as $1/R$, is transverse to $\vec u_R$, and is null, so that its field-strength biquaternion is a zero divisor, $\tilde{F}_a^2 = 0$. The whole point of the exercise is the split: the two parts have different falloffs, different invariants, and different signs under $d\vec\beta/dt'_r\to-d\vec\beta/dt'_r$.
-
-**Conventions.** Two conventions are fixed once and used throughout. The first is the retarded-time derivative: the derivative of a source quantity is written $\frac{d}{dt'_r}$, not $\frac{d}{dt'}$; the parent warns that the observer's-time derivative differs by a factor of $\kappa$, and the formulas above are the retarded-time ones. The second is the boost-rotor direction: the rotor
-$$
-\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2} + i\,\sinh\frac{\psi_b}{2}\,\vec u,
-\qquad
-\tanh\psi_b = \frac{v_b}{c},
-$$
-as fixed by the boosting and two-body exercises of the relativity series, is the rotor that carries the *laboratory* to the frame moving with $+\vec v_b$. Equivalently, applied to the rest four-velocity it produces velocity $-\vec v_b$: $\tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*}$ has velocity $-\vec v_b$. Problem 5 states exactly where this convention enters the field problem and why the field does *not* transform by the rotor conjugation that the four-vector calculus would suggest.
 
 ## The Problem
 
@@ -181,8 +172,7 @@ $$
 + \frac{2\,dD_{0}/dt'_r}{c\kappa}\,\tilde{\mathcal L}_{\mathrm{ret}}\,\tilde{V}/\gamma\right],
 \qquad
 \tilde{F}_a = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\mathrm{ret}}\,d\vec\beta/dt'_r
-- \frac{2\,\vec R\cdot\,d\vec\beta/dt'_r}{c\kappa}\,\tilde{\mathcal L}_{\mathrm{ret}}\,\tilde{V}/\gamma\right].
-\;}
+- \frac{2\,\vec R\cdot\,d\vec\beta/dt'_r}{c\kappa}\,\tilde{\mathcal L}_{\mathrm{ret}}\,\tilde{V}/\gamma\right]\;}.
 $$
 The split is exact and structural: $\tilde{F}_v$ is independent of $d\vec\beta/dt'_r$ (it is what survives uniform motion), and $\tilde{F}_a$ is linear in $d\vec\beta/dt'_r$ (it vanishes for unaccelerated motion, $d\vec\beta/dt'_r = 0$). Note the ordering is not cosmetic — $\tilde{\mathcal L}_{\mathrm{ret}}$ multiplies on the left, up to the scalar $-2$ — and the two brackets are not merely "terms containing $d\vec\beta/dt'_r$"; they are the velocity and acceleration fields.
 
@@ -199,8 +189,8 @@ $$
 $$
 Equivalently, in the single compact form
 $$
-\vec E = \frac{ϙ}{4\pi\epsilon D^3}\left[(1-\beta^2)\left(\vec R-R\vec\beta\right)
-+ \frac{1}{c}\,\vec R\times\left(\left(\vec R-R\vec\beta\right)\times\,d\vec\beta/dt'_r\right)\right],
+\boxed{\;\vec E = \frac{ϙ}{4\pi\epsilon D^3}\left[(1-\beta^2)\left(\vec R-R\vec\beta\right)
++ \frac{1}{c}\,\vec R\times\left(\left(\vec R-R\vec\beta\right)\times\,d\vec\beta/dt'_r\right)\right]\;},
 $$
 whose first term reproduces $\vec E_v$ and whose second reproduces $\vec E_a$ when $D = R\kappa$ and $\vec R = R\vec u_R$ are used. The two factors $1-\beta^2$ and $d\vec\beta/dt'_r$ make the two parts transform differently under $d\vec\beta/dt'_r\to-d\vec\beta/dt'_r$: $\vec E_v$ is even, $\vec E_a$ odd.
 

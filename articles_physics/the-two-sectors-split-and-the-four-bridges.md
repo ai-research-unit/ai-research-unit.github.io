@@ -87,8 +87,8 @@ A **bridge** is an operation that couples the two sectors: it either carries an 
 For every biquaternion the quaternion conjugate multiplies to a central value:
 
 $$
-\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,\qquad
-\langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}.
+\boxed{\;\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,\qquad
+\langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}\;}.
 $$
 
 For a material element $\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ the value is
@@ -116,7 +116,7 @@ is a map $\mathbb{M}_-\to\mathbb{M}_+$ with image the real scalar line $\mathbb{
 The central scalar is anti-Hermitian, $i^{*}=-i$. For every $\tilde Q$,
 
 $$
-(i\tilde Q)^{*}=\tilde Q^{*}i^{*}=-i\tilde Q^{*},
+\boxed{\;(i\tilde Q)^{*}=\tilde Q^{*}i^{*}=-i\tilde Q^{*}\;},
 $$
 
 so multiplication by $i$ flips the sign of the adjoint and with it the sector: $i\mathbb{M}_+=\mathbb{M}_-$ and $i\mathbb{M}_-=\mathbb{M}_+$. The map is a bijection of the algebra, of order four, and it reverses the norm, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$.
@@ -157,8 +157,8 @@ The rotation's sandwich preserves both sectors, as every congruence does; what i
 For $\tilde R=ict'+\vec v\in\mathbb{M}_-$ and $\tilde H=h_te_t+i\vec h\in\mathbb{M}_+$, with real $t'$, $\vec v$, $h_t$ and $\vec h$, the scalar part of the plain product is
 
 $$
-\operatorname{Sc}(\tilde R\tilde H)
-=i\bigl(ct'\,h_t-(\vec v,\vec h)\bigr).
+\boxed{\;\operatorname{Sc}(\tilde R\tilde H)
+=i\bigl(ct'\,h_t-(\vec v,\vec h)\bigr)\;}.
 $$
 
 It is purely imaginary, and it is a pairing $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$: it reads one element of each sector and returns a phase.

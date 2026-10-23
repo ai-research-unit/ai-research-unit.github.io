@@ -85,7 +85,7 @@ The group of spin rotations is $SU(2)$, which acts on the spinor space $\mathbb{
 The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ (article 5):
 
 $$
-\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C}).
+\boxed{\;\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})\;}.
 $$
 
 An explicit isomorphism, consistent with the quaternion multiplication rules of the algebra, is given by
@@ -190,7 +190,7 @@ The expectation value of an observable in a state is given by the normalised Her
 **Statement.** For an idempotent $\tilde\Pi \in \mathbb{M}_+$ (a pure state) and a Hermitian element $\tilde{H} \in \mathbb{M}_+$ (an observable), the quantity
 
 $$
-\langle \tilde{H} \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})
+\boxed{\;\langle \tilde{H} \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})\;}
 $$
 
 is **real** and is the **Born-rule expectation value** of $\tilde{H}$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.
@@ -300,7 +300,7 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;},
 $$
 
 where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to

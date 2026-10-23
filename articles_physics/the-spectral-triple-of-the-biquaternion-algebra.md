@@ -22,8 +22,6 @@ on the algebra: the framework's conjugation is an involution with the $+$ sign, 
 
 The article proceeds as follows. The next section states the definition and the axioms. A section presents the biquaternion candidate and checks the elementary properties. A section treats the real structure and the KO-dimension, with the verification of the two signs. A section identifies the spectral dimension with the heat-kernel data of the determinant and anomaly articles. A section treats the distance formula and the framework's metric-as-output. A section states the inner-fluctuation and spectral-action material as the standard neighbouring construction. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$; its minimal left ideal is $\tilde\Pi(\vec u)\mathbb{B}$ and the module is $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The real structure is $\flat=-{}^{*}$, an antilinear conjugation whose fixed space is the material sector. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the d'Alembertian is the series $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict'}+\Delta$; the Dirac operator is $\mathcal{D}=\tilde\nabla+m$, with the real mass $m$ in the chirality-off-diagonal block. Where an explicit gamma representation is used it is the level-3 tool with $g=\mathrm{diag}(+1,-1,-1,-1)$ in Lorentzian signature and the Euclidean Hermitian generators $(\gamma^\mu)^\dagger=\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I_4$, $(\gamma^5)^2=I_4$ in the Euclidean verification; the representation is stated in each case. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Functional Determinant in Biquaternionic Form*, and *The Trace Anomaly in Biquaternionic Form*.
-
 ## Spectral Triples and Their Axioms
 
 The definition and the axioms are stated as the standard literature gives them.
@@ -66,7 +64,7 @@ $$
 $$
 because the mass term is a **right** multiplication $R_{m}$ and $R_{m}(a\tilde\Psi)=a\tilde\Psi m=aR_{m}(\tilde\Psi)$; the mass contributes nothing to $[\mathcal{D},L_a]$, and the commutator is the zeroth-order left multiplication by the biquaternion gradient of $a$ — bounded on the smooth domain, as the definition requires. The first-order axiom then holds exactly, since every left multiplication commutes with every right multiplication by associativity:
 $$
-\big[\,[\mathcal{D},L_a],\,R_b\,\big] = 0\quad\text{for all } a,b\in\mathbb{B},
+\boxed{\;\big[\,[\mathcal{D},L_a],\,R_b\,\big] = 0\quad\text{for all } a,b\in\mathbb{B}\;},
 $$
 and this was verified numerically: $\|L_aR_b-R_bL_a\|$ is zero to machine precision (maximum absolute entry $1.99\times10^{-15}$ over fifty random pairs), and with the mass included the double commutator is likewise zero ($1.83\times10^{-15}$). The framework's right-multiplication mass, which was the article's suspected difficulty, is in fact invisible to the first-order condition for exactly the reason it is a right multiplication.
 
@@ -84,8 +82,8 @@ $$
 $$
 and its fixed space is the material sector $\mathbb{M}_-$. It is conjugate-linear (because ${}^{*}$ is) and therefore an antilinear map on the algebra, which is the right kind of object to be a $J$. Its square is computed directly:
 $$
-\flat(\flat(\tilde Q)) = \flat\big(-\tilde Q^{*}\big) = -\big(-\tilde Q^{*}\big)^\dagger = \tilde Q ,
-\qquad\text{so}\qquad \flat^2 = +1 .
+\boxed{\;\flat(\flat(\tilde Q)) = \flat\big(-\tilde Q^{*}\big) = -\big(-\tilde Q^{*}\big)^\dagger = \tilde Q ,
+\qquad\text{so}\qquad \flat^2 = +1\;}.
 $$
 The framework's real structure is therefore an antilinear **involution** with $\epsilon=+1$. This was verified on explicit matrices and is quoted in the established list below.
 
@@ -101,7 +99,7 @@ The triple's dimension is read from the operator's spectrum, and the framework's
 
 **Dimension from the spectrum.** If the eigenvalues $\lambda_n$ of $D$ are ordered by magnitude, the spectral dimension is the $d$ for which the counting function grows as $N(\Lambda)\sim\Lambda^d$. Equivalently the trace of the heat kernel grows as
 $$
-\mathrm{Tr}\,\exp(-t'D^2)\;\sim\;{t'}^{-d/2}\quad(t'\to0^+),
+\boxed{\;\mathrm{Tr}\,\exp(-t'D^2)\;\sim\;{t'}^{-d/2}\quad(t'\to0^+)\;},
 $$
 and the coefficients of the small-$t'$ expansion are the Seeley–DeWitt coefficients $a_k$ of the determinant article. The identification is exact: the divergent part of the trace is governed by $a_{d/2}$, and for the biquaternion Dirac operator on four-dimensional spacetime that coefficient is $a_2$, so the spectral dimension is $d=4$. The framework adds its multiplicity: the trace runs over the module, whose two complex dimensions multiply the density of eigenvalues, and the anisotropy of the level-2 metric does not enter because the triple is built on the Euclidean (or Riemannian) operator, the Euclidean rotation being the framework's sector identification of the functional-integral article.
 

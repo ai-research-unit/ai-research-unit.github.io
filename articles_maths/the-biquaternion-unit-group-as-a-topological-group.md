@@ -7,10 +7,6 @@ The group of units $\mathbb{B}^\times$ of the biquaternion algebra is the set of
 
 The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is *The 12 Products of the Biquaternion Complex Space* in Algebra, the Lie-group theory and the exponential are *Biquaternion Lie Group and Exponential Structure* in Analysis, and this article owns the algebraic group of units together with the topological statements that can be read from the group alone. The topology of the group is *The Unitary Group of the Biquaternion Algebra*; the Euclidean ambient space is *The Euclidean Topology of the Biquaternion Algebra*; the zero divisors and their cone are *Zero Divisors of the Biquaternion Algebra*; and the invertibility criterion and the distribution of the units over the remarkable subspaces are *Norm and Invertibility in the General Quaternionic Algebra*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. An element is a **unit** when it is invertible in $\mathbb{B}$; the invertibility criterion and the explicit inverse are *Norm and Invertibility in the General Quaternionic Algebra*. Throughout, a biquaternion is written $\tilde{Q}=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu=1}^3 Q_\mu \vec e_\mu$, and the matrix realisation is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, carrying ${}^{\natural}$ to the adjugate and ${}^{*}$ to the conjugate transpose.
-
----
-
 ## The Group of Units
 
 The **group of units** of $\mathbb{B}$ is the set of invertible elements,

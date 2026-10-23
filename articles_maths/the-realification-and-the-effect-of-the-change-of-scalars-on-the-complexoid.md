@@ -6,8 +6,6 @@ The complex numbers carry two readings of one algebra: over $\mathbb{C}$, where 
 
 The space itself, its two scalar readings, the complex structure $J$ of multiplication by $i$, the criteria $TJ=JT$ and $SJ=-JS$ for the two kinds of real-linear map and their block shapes are those of *The Complex Numbers as a Vector Space over $\mathbb{R}$*, above this article in this category, and are recalled here only where the realification of the forms needs them. The two products are *The Two Products of the Complexoid Space*; the two forms and their algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, above this article in this category, and the realified signatures stated there, $(1,1)$ and $(2,0)$, are derived here from the two rules of the construction.
 
-**Conventions.** **Bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$, with $q_1$, $q'_1$, $q_2$, $q'_2$ real; the brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are the four forms, of which $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ survive, and $\langle\cdot,\cdot\rangle$ is never an element. The topological norm $|\cdot|=\sqrt{\langle\cdot\rangle_{*}}$ remains the pointer of *Complex Norm and Invertibility*, below this article in this category.
-
 ## The Two Scalar Interpretations and the Doubling of the Dimension
 
 Read over itself, $\mathbb{C}$ is the one-dimensional complex space with basis $1$; read over $\mathbb{R}$, it is the two-dimensional real space with basis $1$, $i$, and the two coordinates are the real and imaginary parts,
@@ -43,7 +41,7 @@ and they are the two eigenspaces of the bar and not of $J$.
 The two products are real-bilinear after the realification. The complex structure is multiplication by an element of the algebra, so it commutes with the multiplication in both slots and anticommutes with the conjugation in the conjugated slot:
 
 $$
-J(Q_1Q_2)=(JQ_1)Q_2=Q_1(JQ_2),\qquad J(Q_1\bar Q_2)=(JQ_1)\bar Q_2,\qquad Q_1\overline{(JQ_2)}=-J(Q_1\bar Q_2).
+\boxed{\;J(Q_1Q_2)=(JQ_1)Q_2=Q_1(JQ_2),\qquad J(Q_1\bar Q_2)=(JQ_1)\bar Q_2,\qquad Q_1\overline{(JQ_2)}=-J(Q_1\bar Q_2)\;}.
 $$
 
 The plain product $Q_1Q_2$ is therefore $J$-linear in both slots, and it is the realification of the complex-bilinear product of the algebra; the sesquilinear product $Q_1\bar Q_2$ is $J$-linear in the first slot and $J$-antilinear in the second, since the conjugation negates $J$. The two products are distinct real-bilinear operations, and the realification does not merge them; it is the complex structure that records how they differ.
@@ -59,7 +57,7 @@ $$
 The bar is the model conjugate-linear map, and the multiplication by an element is the model complex-linear one. In the basis $1$, $i$, and with each complex entry replaced by its $2\times2$ real block, a complex-linear map of matrix $X$ has the **block shape** of a commuting map,
 
 $$
-T=\begin{pmatrix}\Re X&-\Im X\\ \Im X&\Re X\end{pmatrix},
+\boxed{\;T=\begin{pmatrix}\Re X&-\Im X\\ \Im X&\Re X\end{pmatrix}\;},
 $$
 
 and a conjugate-linear map of the same formal matrix $X$ has the block shape of an anticommuting one,
@@ -87,7 +85,7 @@ A form on the complex space, read on the realified space, is a form on a real sp
 On the two forms of the complex space, of rank and inertia one, the rules give
 
 $$
-\langle\cdot,\cdot\rangle\longrightarrow(1,1),\qquad \langle\cdot,\cdot\rangle_{*}\longrightarrow(2,0),
+\boxed{\;\langle\cdot,\cdot\rangle\longrightarrow(1,1),\qquad \langle\cdot,\cdot\rangle_{*}\longrightarrow(2,0)\;},
 $$
 
 the signatures stated in *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, above this article in this category. The realified Gram matrix of $\langle\cdot,\cdot\rangle$ is $\operatorname{diag}(1,-1)$, since the complex Gram matrix $[1]$ is real, and that of $\langle\cdot,\cdot\rangle_{*}$ is the identity $\mathrm{id}_2$. The form $\langle\cdot,\cdot\rangle$ is anisotropic over $\mathbb{C}$ and indefinite after realification; the two facts are read on different fields, the first on the complex values $Q_1^{2}$ and the second on their real parts $q_1^{2}-q'^2_1$.

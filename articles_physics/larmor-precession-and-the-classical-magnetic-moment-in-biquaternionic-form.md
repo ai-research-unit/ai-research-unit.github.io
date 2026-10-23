@@ -58,7 +58,6 @@ $$
 \vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B.
 $$
 
-
 ### The Moment of a Rigid Rotor
 
 The classical moment of a body in rigid rotation is the case that fixes the gyromagnetic ratio. If the body rotates with angular velocity $\vec\omega$ and carries charge density $\rho_c$, the local current is $\vec j = \rho_c\,\vec\omega\times\vec r$, and the moment is
@@ -149,7 +148,7 @@ $$
 and multiplying by $\gamma$ gives the equation for the moment itself:
 
 $$
-\boxed{\;d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B = \vec\mu\times\left(\gamma\vec B\right).\;}
+\boxed{\;d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B = \vec\mu\times\left(\gamma\vec B\right)\;}.
 $$
 
 This is the **Larmor equation**. Its content is that the moment precesses about the field direction with angular velocity
@@ -159,7 +158,6 @@ $$
 $$
 
 the minus sign expressing the fact that the rotation sense is opposite to the field when $\gamma$ is positive. Equivalently, the moment rotates about $\vec B$ with angular frequency $\omega_L = |\gamma|\,B$, in the sense fixed by the sign of $\gamma$.
-
 
 ### The Biquaternion Commutator Form
 
@@ -178,7 +176,7 @@ $$
 the Larmor equation reads
 
 $$
-\boxed{\;d\vec\mu/dt' = \tfrac{1}{2}\left[\,\vec\mu,\;\vec\omega_G\,\right].\;}
+\boxed{\;d\vec\mu/dt' = \tfrac{1}{2}\left[\,\vec\mu,\;\vec\omega_G\,\right]\;}.
 $$
 
 The equation of motion is thus an **inner derivation** of the algebra, $d\vec\mu/dt' = -\mathrm{ad}_{\vec\omega_G/2}(\vec\mu) = \mathrm{ad}_{\vec\omega_L/2}(\vec\mu)$. The Larmor generator $\vec\omega_G$ is the negative of the angular velocity $\vec\omega_L = -\gamma\vec B$ of the precession: the first is the element written in the bracket, the second generates the derivation, and the two are listed separately in the notation table. Its antisymmetry is manifest — a commutator changes sign when its arguments are exchanged — and its trace vanishes, $\mathrm{Tr}[\vec\mu,\vec\omega_G] = 0$, which is the algebraic statement that the rotation preserves the biquaternion norm.
@@ -228,15 +226,14 @@ $$
 
 The conjugation rotates $\vec v$ through the angle $\theta$ about $\vec u$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $\langle\tilde u\rangle_{\natural} = \tilde u\tilde u^{\natural} = e_t$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a **double cover** of the rotation: $\tilde u(\theta + 2\pi,\vec u) = -\tilde u(\theta,\vec u)$, and the two rotors $\pm\tilde u$ produce the same rotation. The rotation group is therefore $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\}$, with $\mathbb{H}_{\mathbb{B}}^1$ the group of unit real quaternions, which is $SU(2)$.
 
-
 ### The Precession as a Rotor
 
 The Larmor precession is the rotor conjugation
 
 $$
-\vec\mu(t') = \tilde u_L(t')\,\vec\mu(0)\,\tilde u_L(t')^{*},
+\boxed{\;\vec\mu(t') = \tilde u_L(t')\,\vec\mu(0)\,\tilde u_L(t')^{*},
 \qquad
-\tilde u_L(t') = \exp\!\left(-\,\frac{\gamma B t'}{2}\,\vec u_{B,k} \vec e_k\right),
+\tilde u_L(t') = \exp\!\left(-\,\frac{\gamma B t'}{2}\,\vec u_{B,k} \vec e_k\right)\;},
 $$
 
 with $\vec u_B = \vec B/B$ the field direction. Differentiating the rotor gives
@@ -345,8 +342,8 @@ so that the energy is $E = \mathrm{Sc}(\vec\mu\vec B) = -\vec\mu\cdot\vec B$ and
 The torque equation for a moment tied to an angular momentum by $\vec\mu = \gamma\vec S$ is the **Larmor equation**
 
 $$
-d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B,
-\qquad \vec\omega_L = -\,\gamma\,\vec B,
+\boxed{\;d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B,
+\qquad \vec\omega_L = -\,\gamma\,\vec B\;},
 $$
 
 which in the algebra is the commutator

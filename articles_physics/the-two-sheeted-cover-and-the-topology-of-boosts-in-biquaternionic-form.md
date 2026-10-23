@@ -32,10 +32,6 @@ The **boosts**, by contrast, are topologically trivial. The pure boosts form a t
 
 The article develops three threads. The first is the manifold structure of the covering group and its contraction onto $SU(2)$. The second is the covering itself, the $2\pi$ loop and the belt picture. The third is the topology of the boost manifold, the non-closure of the boost composition law, and the Wigner angle. The closing sections separate the algebraic content from the standard topology and record the open questions.
 
-**Boundaries.** The physical consequences of the double cover for spinning matter — spinor representations, the transformation law of a spinor under a $2\pi$ rotation, and the observed sign change — belong to the sibling category on relativistic quantum theory and are not developed here. This article is the group-theoretic and geometric statement: what the covering group is, what its fundamental group is, and what the boost manifold is. The structure and representations of the group are treated in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and the automorphism characterization in *The Lorentz Group as Biquaternion Norm Automorphisms*.
-
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on $\mathbb{M}_-$. A **rotor** is a unit-norm biquaternion, $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$. The corpus writes the fixed word with the boost on the left, $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. This article uses the **right** polar decomposition, in which the rotation stands on the left:
-
 $$
 \tilde U_{\mathrm L} = \tilde u_{\mathrm r}\,B_{\mathrm{right}},
 \qquad
@@ -94,7 +90,7 @@ $$
 which is the unit sphere in the four-dimensional real-quaternion space and therefore diffeomorphic to the three-sphere. The positive Hermitian factor is a boost matrix, and we will see that the boosts form a space diffeomorphic to $\mathbb{R}^3$. The polar decomposition therefore gives a **diffeomorphism**
 
 $$
-SL(2,\mathbb{C}) \;\cong\; SU(2)\times\mathbb{R}^3 ,
+\boxed{\ SL(2,\mathbb{C}) \;\cong\; SU(2)\times\mathbb{R}^3\ } ,
 $$
 
 and hence a **deformation retraction**
@@ -182,7 +178,6 @@ is a closed loop in the Lorentz group, because $\pi(R(2\pi)) = \pi(-e_t) = \pi(e
 
 This is the familiar belt or plate trick: a rotation by $2\pi$ of an object attached to its surroundings by strands cannot be undone while the strands are held fixed, whereas a rotation by $4\pi$ can. Here the strands have an algebraic meaning — they are the continuous choice of which rotor represents the frame — and the belt trick is the statement that the continuous choice, followed around a $2\pi$ rotation, returns the negative of the starting rotor. The two endpoints $e_t$ and $-e_t$ are the same Lorentz transformation and different rotors.
 
-
 ## The Topology of the Boost Manifold
 
 The boosts are the other factor of the polar decomposition, and their manifold is simpler. A pure boost of rapidity $\psi$ along the unit direction $\vec u$ has the rotor
@@ -233,7 +228,7 @@ $$
 In either form the base is contractible, so the total space is homotopy-equivalent to the fiber. The fundamental group of the Lorentz group is therefore the fundamental group of the rotation group,
 
 $$
-\pi_1\bigl(SO^+(1,3)\bigr)\cong\pi_1\bigl(SO(3)\bigr)\cong\mathbb{Z}/2\mathbb{Z},
+\boxed{\ \pi_1\bigl(SO^+(1,3)\bigr)\cong\pi_1\bigl(SO(3)\bigr)\cong\mathbb{Z}/2\mathbb{Z}\ } ,
 $$
 
 and its third homotopy group is $\pi_3(S^3) = \mathbb{Z}$, carried by the compact fiber. **The non-compact boost directions contribute nothing to the topology; the entire $\mathbb{Z}/2$ is the rotation group's.** A boost path is always contractible within the boosts, so no boost by itself can represent the nontrivial class.
@@ -288,7 +283,6 @@ $$
 $$
 
 which is the displayed formula in terms of $c = \cosh(\psi/2)$ and $s = \sinh(\psi/2)$. The verification below confirms it numerically.
-
 
 **Limits.** The formula has two instructive limits. For small rapidity, $\sinh(\psi/2)\approx\psi/2$ and $\cosh(\psi/2)\approx1$, so
 

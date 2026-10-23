@@ -23,8 +23,6 @@ The article is organised as follows. The next section treats the field as an ope
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument that excludes a bosonic mode from $\mathbb{B}$ and for the Fock construction the field acts on.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the c-number commutator.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$ are used where the algebra is at issue, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$, and dimensionful factors are restored where they carry meaning. Physical components are written $x=(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$; the material four-wavevector is $\tilde P=i\omega\,e_t+\vec p$ in these units.
-
 ## The Field Operator and Its Value Space
 
 Quantization replaces the classical field by an operator-valued distribution. For a test function $f$ on spacetime, the smeared field is
@@ -76,7 +74,6 @@ so $\phi^{\mathrm{fop}(+)}$ is the **annihilation part** and $\phi^{\mathrm{fop}
 
 **The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}t')$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural}))$ is the phase in which the statement is made.
 
-
 ## Real and Complex Scalar Fields
 
 The framework admits both cases, and their difference is the standard one, sharpened by the algebra's conjugation structure.
@@ -111,10 +108,10 @@ in which the field creates and destroys its own antiparticle. The charge vanishe
 The defining property of a bosonic field is that its commutator is a c-number. From the mode algebra,
 
 $$
-\big[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)\big]
+\boxed{\;\big[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)\big]
 =\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}
 \left(\exp(-ip\cdot(x-y))-\exp(+ip\cdot(x-y))\right)
-\equiv i\Delta(x-y),
+\equiv i\Delta(x-y)\;},
 $$
 
 while
@@ -127,7 +124,6 @@ $$
 
 The right-hand side of the first relation is a multiple of the identity, so the field generates a **CCR algebra** whose brackets are central; the field is an operator, but the failure of its operators at two events to commute is a fixed function of the separation and not an operator. This is the precise sense in which the scalar field is a classical field with operator coefficients. For the Dirac field the analogous object is an operator-valued matrix, and the difference is exactly the difference between bosonic and fermionic quantization.
 
-
 The field commutator has the three physical properties recorded for it in the companion quantization. At equal times it vanishes, because the momentum integrand is odd; for spacelike separation it vanishes, which is microcausality; and its support is the light cone and its interior, which is the causal structure the quantization preserves.
 
 ## The Two-Point Functions and the Propagator
@@ -135,8 +131,8 @@ The field commutator has the three physical properties recorded for it in the co
 The field operator's content is exhausted by its correlation functions. The basic one is the **Wightman function**
 
 $$
-W(x-y)=\langle0|\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}\,\exp(-ip\cdot(x-y)),
+\boxed{\;W(x-y)=\langle0|\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle
+=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}\,\exp(-ip\cdot(x-y))\;},
 $$
 
 which is precisely the positive-frequency part of the commutator function and is annihilated by the Klein–Gordon operator in each variable,
@@ -165,9 +161,9 @@ with the $i\epsilon$ prescription that selects the positive-frequency part for t
 The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde P=i\omega\,e_t+\vec p$, the biquaternion norm is $\langle\tilde P\rangle_{\natural}=(-\omega^2+\vec p^2)e_t$, so that $p^2=-\langle\tilde P\rangle_{\natural}$ and
 
 $$
-p^2-\mu^2=-\left(\langle\tilde P\rangle_{\natural}+\mu^2\right),
+\boxed{\;p^2-\mu^2=-\left(\langle\tilde P\rangle_{\natural}+\mu^2\right),
 \qquad
-\Delta_F(\tilde P)=-\frac{i}{\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon}.
+\Delta_F(\tilde P)=-\frac{i}{\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon}\;}.
 $$
 
 The denominator is the mass-shell function of the parent article: the pole of the propagator is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$, and the $i\epsilon$ prescription displaces the pole off the real axis. The two-point function is thus the biquaternion norm's inverse, shifted by the mass; the companion article *The Scalar Field Path Integral in Biquaternionic Form* makes the same statement for the free Gaussian, whose width is the shifted biquaternion norm, and this identification of the pole with the mass-shell level set is the only place where the propagator's biquaternion form is more than a rewriting.

@@ -71,7 +71,7 @@ since $\vec q^{*}=-\vec q$ and $(i\vec p)^{*}=i\vec p$ for pure real $\vec q,\ve
 $$
 \boxed{\;\mathrm{Sc}\!\left(\vec Z^{*}\vec W\right)
 =\bigl(\vec q\cdot\vec r+\vec p\cdot\vec s\bigr)
-+i\bigl(\vec q\cdot\vec s-\vec p\cdot\vec r\bigr).\;}
++i\bigl(\vec q\cdot\vec s-\vec p\cdot\vec r\bigr)\;}.
 $$
 
 The real part is the Euclidean pairing of the two phase-space points, and the imaginary part is an antisymmetric pairing. Both statements follow from $\mathrm{Sc}(\vec q_1\vec q_2)=-\vec q_1\cdot\vec q_2$ for pure real quaternions, applied term by term.
@@ -211,7 +211,7 @@ $$
 whose imaginary part is the Poisson bracket:
 
 $$
-\boxed{\;\{f,g\}=\mathrm{Im}\,\mathrm{Sc}\!\left((\nabla f)^{*}\,\nabla g\right).\;}
+\boxed{\;\{f,g\}=\mathrm{Im}\,\mathrm{Sc}\!\left((\nabla f)^{*}\,\nabla g\right)\;}.
 $$
 
 The conjugate here must be the **Hermitian** one, $(\nabla f)^{*}$, and not the quaternion conjugate alone: the gradient is a complex biquaternion, and conjugating only its quaternion structure would flip the relative sign between the two terms of the real part and symmetrise the imaginary part. With the Hermitian conjugate the real part is the positive-definite metric pairing of the two gradients and the imaginary part is the antisymmetric symplectic pairing. The bracket is thus the imaginary part of the same Hermitian pairing, evaluated on gradients, and the identity displays the Kähler structure in the bracket itself: the metric and the bracket are two projections of one complex pairing. This is verified directly on the canonical functions, where $\nabla q_\mu=e_\mu$ and $\nabla p_\mu=ie_\mu$, giving $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$.
@@ -271,7 +271,7 @@ The algebra's reason for caring about the cone is that its points are the **zero
 The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$,
 
 $$
-\langle\tilde{R}\rangle_{\natural}=(ict')^2+x^2+y^2+z^2=-c^2{t'}^2+x^2+y^2+z^2 ,
+\boxed{\;\langle\tilde{R}\rangle_{\natural}=(ict')^2+x^2+y^2+z^2=-c^2{t'}^2+x^2+y^2+z^2\;},
 $$
 
 which is the Minkowski interval; its zero set $\langle\tilde{R}\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
@@ -279,7 +279,7 @@ which is the Minkowski interval; its zero set $\langle\tilde{R}\rangle_{\natural
 The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the biquaternion norm is
 
 $$
-\langle\tilde P\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k^2 ,
+\boxed{\;\langle\tilde P\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k^2\;},
 $$
 
 and $\langle\tilde P\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k^2$ of the wave equation $\Box\tilde\Phi=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k$, whose wave biquaternion is $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the operator $\Box=\partial^2/\partial Q_t^2+\Delta$ acts as the eigenvalue

@@ -6,8 +6,6 @@ This article treats the split-complex numbers as a **linear space**: the underly
 
 The realification of $\mathbb{D}$ as an algebra over $\mathbb{R}$, with the change of scalars organised and the split statements read against the real ones, is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*, below this article in this category. The two products on the space are *The Two Products of the Split-Complexoid Space*; the distinguished subspaces are *Split-Complexoid Subspaces*, and their decomposition and comparison is *Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid*. The submodules of the self-reading are the ideals of the ring, owned by *Ideals and Peirce Decomposition of the Split-Complex Algebra*. No form and no norm is developed here: the norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$, its multiplicativity and the invertibility it decides are *Norm and Invertibility in the General Split-Complex Algebra*, and the two forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, both below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$ and $j^2=+1$; a general element is $Q=q+jq'$, with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, and the conjugate is $\bar Q=q-jq'$. The idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$, with idempotent coordinates $q_+=q+q'$ and $q_-=q-q'$, and $Q=q_+\Pi_1+q_-\Pi_2$.
-
 ## The Vector Space over $\mathbb{R}$
 
 **Definition.** The **real reading** of $\mathbb{D}$ is the underlying additive group with the scalar domain $\mathbb{R}$: the split-complex numbers form a real vector space of dimension two, on the basis

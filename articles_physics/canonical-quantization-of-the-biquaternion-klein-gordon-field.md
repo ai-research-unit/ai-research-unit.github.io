@@ -20,8 +20,6 @@ The article is organised as follows. The next section fixes the classical field,
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the contrasting constrained quantization and the grading the algebra does not supply.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the contrasting first-class constraints and the gauge redundancy the algebra does not remove.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $\vec e_\mu$. The material (anti-Hermitian) and informational (Hermitian) sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, normalized so that $\mathrm{Tr}(e_t)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The spacetime metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$ (level 2), and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the parent articles do; dimensionful factors are restored where they carry meaning.
-
 ## The Classical Field and Its Conjugate Momentum
 
 The relativistic scalar field of the framework is the central-valued complex field
@@ -59,7 +57,6 @@ $$
 \left(\Box-\mu^2\right)\tilde{\Phi}=0 .
 $$
 
-
 ## The Field as a Central-Valued Object
 
 The value space of the field is the centre, and the reason is structural rather than chosen. A field of spin $0$ carries no Lorentz index; the framework's scalar field is therefore taken to be central-valued, so that its values commute with every element of the algebra. Written in real components, the complex scalar is two real scalars, one in each sector's scalar direction,
@@ -88,15 +85,14 @@ $$
 \langle\tilde P/\hbar\rangle_{\natural}=-\frac{m^2c^2}{\hbar^2}\,e_t .
 $$
 
-
 ## Equal-Time Commutation Relations
 
 Quantization promotes the classical field and its momentum to operators $\phi^{\mathrm{fop}}$, $\phi^{\mathrm{fop}\dagger}$, $\pi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}\dagger}$ and imposes equal-time brackets. Because the field is complex, $\phi$ and $\phi^\dagger$ are independent, and the canonical relations are
 
 $$
-\big[\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
+\boxed{\;\big[\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
 =\big[\phi^{\mathrm{fop}\dagger}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}\dagger}(\vec y,t')\big]
-=i\hbar\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
+=i\hbar\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\;},
 $$
 
 with
@@ -121,8 +117,8 @@ The scalar case has one feature the two parent cases do not. Because the field i
 The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+\mu^2}$ and $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the quantized field expands as
 
 $$
-\phi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a^{\mathrm{fop}}_{\vec p}\,\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger\,\exp(+ip\cdot x)\right),
+\boxed{\;\phi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\left(a^{\mathrm{fop}}_{\vec p}\,\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger\,\exp(+ip\cdot x)\right)\;},
 $$
 
 and its adjoint as
@@ -153,11 +149,11 @@ For a **real** (neutral) scalar field the field is Hermitian, $\phi^{\mathrm{fop
 The mode operators inherit their brackets from the equal-time relations. A direct computation gives
 
 $$
-\big[a^{\mathrm{fop}}_{\vec p},{a^{\mathrm{fop}}_{\vec k}}^\dagger\big]
+\boxed{\;\big[a^{\mathrm{fop}}_{\vec p},{a^{\mathrm{fop}}_{\vec k}}^\dagger\big]
 =\big[b^{\mathrm{fop}}_{\vec p},{b^{\mathrm{fop}}_{\vec k}}^\dagger\big]
 =(2\pi)^3\delta^{(3)}(\vec p-\vec k),
 \qquad
-\big[a^{\mathrm{fop}}_{\vec p},{b^{\mathrm{fop}}_{\vec k}}^\dagger\big]=0,
+\big[a^{\mathrm{fop}}_{\vec p},{b^{\mathrm{fop}}_{\vec k}}^\dagger\big]=0\;},
 $$
 
 with all other commutators vanishing. The equal-time canonical relation is recovered from these: the positive- and negative-frequency branches enter the commutator $[\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\left(\partial\phi^{\mathrm{fop}}/\partial t'\right)^{\dagger}(\vec y,t')]$ with opposite phases, the terms that survive combine into a single momentum integral, and
@@ -180,7 +176,6 @@ with the occupation basis $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$ and the vacu
 
 The obstruction to anything more is worth stating precisely, because it distinguishes the scalar case from the Dirac case. The mode operators $a^{\mathrm{fop}}_{\vec p},{a^{\mathrm{fop}}_{\vec p}}^\dagger$ are **not** elements of $\mathbb{B}$. They are elements of the Weyl algebra of the one-particle space, which is infinite-dimensional, and no finite-dimensional algebra can contain them: if $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$ held for $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\in\mathbb{B}$, the trace would give $0=\mathrm{Tr}([a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}])=c\,\mathrm{Tr}(e_t)=2c$, hence $c=0$. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* draws the consequence for the algebra: $\mathbb{B}\cong M_2(\mathbb{C})$ hosts exactly one **fermionic** mode and no bosonic mode at all. The scalar field, being bosonic, has no native one-mode core in $\mathbb{B}$; its ladder is a construction on an imported module. The contrast with the Dirac quantization is exact: there the algebra at least carried the one-mode anticommutator and the fermion-parity grading; here it carries neither the commutator nor any scalar analog of the grading.
 
-
 ## The Hamiltonian, Momentum and Charge
 
 The Hamiltonian density is the time–time component of the canonical energy–momentum tensor, and in natural units
@@ -199,7 +194,7 @@ $$
 The c-number is quartically divergent and proportional to the volume, $V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$: it is the zero-point energy of the two real fields that make up the complex one, each contributing $\tfrac12V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$, equivalently $(2\pi)^3\delta^{(3)}(0)\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ with $(2\pi)^3\delta^{(3)}(0)=V$. **Normal ordering** removes it and gives
 
 $$
-:\!H\!:\,=\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\left({a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p}+{b^{\mathrm{fop}}_{\vec p}}^\dagger b^{\mathrm{fop}}_{\vec p}\right),
+\boxed{\;:\!H\!:\,=\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\left({a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p}+{b^{\mathrm{fop}}_{\vec p}}^\dagger b^{\mathrm{fop}}_{\vec p}\right)\;},
 $$
 
 a positive operator: particles and antiparticles both contribute energy $+E_{\vec p}$. The spatial momentum and the conserved charge are

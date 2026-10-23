@@ -11,8 +11,6 @@ $$
 
 the multiplication by a real vector being skew-adjoint. This sign is the geometric convention of the corpus, and it makes the Clifford action of a unit vector a **unitary** operator of the module. The article introduces the Hermitian conjugation on the elements of the algebra, defines the Hermitian Clifford structures on the algebra and on the module, and derives the compatibility statements.
 
-**The boundaries.** The Clifford algebra, its reversion, grade involution and Clifford conjugation, and the Witt decomposition are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the trace form, the dagger and the positivity of the involution are *Hilbert Algebras*; the Hermitian conjugation of the elements here is the elementary involution of that article read on the Clifford algebra. The Clifford multiplication as an operator, the spinor bundle and the skew-adjointness $c(b)^*=-c(b)$ are *The Clifford Multiplication Operator* and *The Adjoint of the Clifford Multiplication*; the adjoints of the operators built from the Hermitian conjugation belong to the `- * Operator Theory` group of this category and are not touched here. The complex manifolds and the Kähler structures are *Complex Manifolds* and *Kähler Geometry*. The base is the complex field $\mathbb{C}$ with a non-degenerate quadratic form; the Hermitian form is positive definite in the definite case and its indefinite variant is named only.
-
 ## The Hermitian Conjugation on a Complex Clifford Algebra
 
 **Definition.** Let $\mathbb{C}\ell(V,\mathfrak{Q})$ be the complex Clifford algebra of a complex quadratic space with polar form $B$. A **Hermitian conjugation** is a conjugate-linear anti-involution

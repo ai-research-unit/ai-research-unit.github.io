@@ -24,13 +24,6 @@ Algebra*; the adjoint operators and the derivations are *The Adjoint Operators a
 the Antisymmetric Plain Algebra*, both below this article in this category.
 counterparts are *The Killing Form of the Antisymmetric Plain Algebra* and *Norm and Invertibility in
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; $\vec q_1\cdot\vec q_2$ is the Euclidean dot product, $\vec q_1\times\vec q_2$
-the vector product, and $C_{\vec q_1}$ the cross-product matrix. The **plain form** is
-$\langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2=\mathrm{Sc}(\tilde q_1\tilde q_2)$, the **quaternion
-form** is $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=q_{1t}q_{2t}+\vec q_1\cdot\vec q_2$, and the **scalar-part form** is
-$\varphi(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}$.
-
 ## The Adjoint Representation and the Killing Form
 
 **Definition.** The **Killing form** of the Lie algebra $\mathfrak{g}=(\mathbb{H},\times)$ is
@@ -57,7 +50,7 @@ a cross-product matrix is traceless, being skew-symmetric.
 **Theorem (the form).** For all $\tilde q_1,\tilde q_2$,
 
 $$
-\kappa(\tilde q_1,\tilde q_2)=\operatorname{Tr}\bigl(C_{\vec q_1}C_{\vec q_2}\bigr)=-2\,\vec q_1\cdot\vec q_2 .
+\boxed{\;\kappa(\tilde q_1,\tilde q_2)=\operatorname{Tr}\bigl(C_{\vec q_1}C_{\vec q_2}\bigr)=-2\,\vec q_1\cdot\vec q_2\;}.
 $$
 
 In the basis the Gram matrix is $\operatorname{diag}(0,-2,-2,-2)$.
@@ -74,7 +67,7 @@ $2\,\vec q_1\cdot\vec q_2$, so $\kappa=-2\,\vec q_1\cdot\vec q_2$.
 **Proposition (invariance).** The Killing form is symmetric and invariant,
 
 $$
-\kappa(\tilde q_1\times\tilde q_2,\tilde q_3)+\kappa(\tilde q_2,\tilde q_1\times\tilde q_3)=0 ,
+\boxed{\;\kappa(\tilde q_1\times\tilde q_2,\tilde q_3)+\kappa(\tilde q_2,\tilde q_1\times\tilde q_3)=0\;},
 $$
 
 and it is the form of the vector subspace alone: it does not see the scalar coordinates.
@@ -89,7 +82,7 @@ $\varphi(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}$. There is no nonzero **alternating
 form is the combination
 
 $$
-B=\varphi+\tfrac12\kappa,\qquad \langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2 ,
+\boxed{\;B=\varphi+\tfrac12\kappa,\qquad \langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\;},
 $$
 
 and it is nondegenerate, of signature $(1,3)$.
@@ -109,7 +102,7 @@ directions.
 **Theorem.** The radical of the Killing form is the centre,
 
 $$
-\{\tilde q_1:\kappa(\tilde q_1,\tilde q_2)=0\ \text{for every }\tilde q_2\}=\mathbb{R}e_t ,
+\boxed{\;\{\tilde q_1:\kappa(\tilde q_1,\tilde q_2)=0\ \text{for every }\tilde q_2\}=\mathbb{R}e_t\;},
 $$
 
 of real dimension one; the form is negative semidefinite, $\kappa(\tilde q,\tilde q)=-2|\vec q|^2\le0$,

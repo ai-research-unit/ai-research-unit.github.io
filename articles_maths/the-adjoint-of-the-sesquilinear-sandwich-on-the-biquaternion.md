@@ -76,7 +76,7 @@ for all $\tilde Q_1,\tilde Q_2$. For a linear operator $T$ the adjoint is define
 **Theorem (the adjoint of the sandwich).** For all $\tilde Q,\tilde Q_3$,
 
 $$
-S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q^{*}} ,
+\boxed{\;S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q^{*}}\;},
 $$
 
 that is, $(\tilde Q\star\cdot\star\tilde Q_3)^{\dagger}=\tilde Q_3^{*}\star\cdot\star\tilde Q^{*}$; explicitly,
@@ -136,7 +136,7 @@ $$
 **Theorem.** For the left multiplication, the right multiplication and the ordinary two-sided multiplication,
 
 $$
-L_{\tilde Q}^{\dagger}=S_{e_t,\tilde Q^{*}} , \qquad R_{\tilde Q_3}^{\dagger}=T_{e_t,\tilde Q_3} , \qquad T_{\tilde Q,\tilde Q_3}^{\dagger}=T_{\tilde Q^{*},\tilde Q_3^{*}} .
+\boxed{\;L_{\tilde Q}^{\dagger}=S_{e_t,\tilde Q^{*}} , \qquad R_{\tilde Q_3}^{\dagger}=T_{e_t,\tilde Q_3} , \qquad T_{\tilde Q,\tilde Q_3}^{\dagger}=T_{\tilde Q^{*},\tilde Q_3^{*}}\;}.
 $$
 
 **Proof.** The left multiplication is the sandwich $S_{\tilde Q,e_t}$, so the main identity gives $L_{\tilde Q}^{\dagger}=S_{e_t,\tilde Q^{*}}$. The right multiplication is linear and equals $T_{e_t,\tilde Q_3^{*}}$, so the second display is the general theorem for the two-sided multiplication; the third display is the same theorem.
@@ -162,7 +162,7 @@ is self-adjoint for every $\tilde Q_3$.
 **Proposition.** In the model of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model* the sandwich is $S_{A,B}(X)=AX^{\dagger}B^{\dagger}$ and the form is $\varphi(X,Y)=\tfrac12\mathrm{tr}(XY^{\dagger})$, with $A=\mathsf{M}_2(\tilde Q)$ and $B=\mathsf{M}_2(\tilde Q_3)$ the matrices of the two parameters; the adjoint of the sandwich is
 
 $$
-S_{A,B}^{\dagger}(X)=B^{\dagger}X^{\dagger}A ,
+\boxed{\;S_{A,B}^{\dagger}(X)=B^{\dagger}X^{\dagger}A\;},
 $$
 
 which is the sandwich of the adjoint parameters, the two matrices exchanged and each read with the Hermitian transpose.

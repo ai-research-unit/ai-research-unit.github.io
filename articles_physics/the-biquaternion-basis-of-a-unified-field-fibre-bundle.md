@@ -42,13 +42,13 @@ $$
 The printed sum is only consistent with the printed coefficients because the $a_k$ are **imaginary**: with $a_k = i p_k/m$ the three squared terms are negative, and the condition reads $p_0^2 - \vec p^2 = m^2$, which is the source's own Eq. (21). In the corpus's dictionary this is immediate. Writing $\vec a = i\,\vec p/m$ and $\tilde Q = a_0 + \vec a\!\cdot\!\mathbf e$,
 
 $$
-\mathsf{M}_2(\tilde Q) = a_0 I_2 + \frac{\vec p}{m}\!\cdot\!\boldsymbol\sigma = Q ,
+\boxed{\;\mathsf{M}_2(\tilde Q) = a_0 I_2 + \frac{\vec p}{m}\!\cdot\!\boldsymbol\sigma = Q\;},
 $$
 
 a **Hermitian** $2\times2$ matrix with real diagonal, and
 
 $$
-\langle\tilde Q\rangle_{\natural} = a_0^2 + a_1^2 + a_2^2 + a_3^2 = 1
+\boxed{\;\langle\tilde Q\rangle_{\natural} = a_0^2 + a_1^2 + a_2^2 + a_3^2 = 1\;}
 $$
 
 with the same imaginary squares, i.e. the source's unit-norm condition and the source's mass shell are the two faces of one identity.
@@ -138,7 +138,7 @@ with the products $\sigma_\alpha\wedge\sigma_\beta = \sigma_\gamma$, $\sigma_\be
 The triple is the algebraic content of the source's other signature, and the source shows the mechanism rather than asserting it. Its Eq. (43) repeats the unit-norm condition of Eq. (19) with the sign of the second coefficient reversed,
 
 $$
-a_0^2 + a_1^2 - a_2^2 + a_3^2 = 1 ,
+\boxed{\;a_0^2 + a_1^2 - a_2^2 + a_3^2 = 1\;},
 $$
 
 and the paper attributes the change to $\sigma_\beta^2 = (-i\sigma_2)^2 = -1$ in the non-compact substructure. With the same coefficients $a_0 = p_0/m$ and $a_k = ip_k/m$ this is the $(2{+}2)$ mass relation $p_0^2 - p_1^2 + p_2^2 - p_3^2 = m^2$, verified exactly, against the $(1,3)$ relation of Eq. (21). The source itself then says that "the physical role of the coefficients $a$ cannot be easily identified as before" and lists two possibilities; the corpus records both the mechanism and the admission. The paper's wider claim is that the non-compact $\mathrm{SL}(2,\mathbb{R})$ symmetry of what it calls a hidden (bi)quaternionic structure becomes visible in $(2{+}2)$ — two timelike and two spacelike directions — and it lists convergence with work on $(2{+}2)$ physics, two-dimensional black holes and $N=2$ strings. The corpus's interpretation is that this is a genuine second real form of the same algebra and not a relabelling of the first: the split real form has its own unit group and its own polar decomposition, which the corpus treats in the split-quaternion articles, and $(2{+}2)$ is the signature of that form just as $(1,3)$ is the signature of the material sector's norm.

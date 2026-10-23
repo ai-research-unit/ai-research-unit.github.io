@@ -14,8 +14,6 @@ and a state vector of this space is a list of the representation labelling the p
 
 The article is organised as follows. A first section recalls the abstract Hilbert space and its convergence condition. A second builds the spin multiplets and a third the charge multiplets. A fourth assembles the spin–charge space and reads a state vector. A fifth records the superselection rules, and a sixth the ray representation and the central extension that carries the internal symmetry. A closing section separates what the framework hosts from what it transcribes.
 
-**Conventions.** The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l,\bar l\in\frac12\mathbb{Z}_{\ge0}$ and spin $s=|l-\bar l|$. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$, its Clifford form the corpus's *Clifford Algebra Representation*. The construction and the particle assignments are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§2.3, 3); the mass formula used to place the charge multiplets is the subject of the companion *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*.
-
 - Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass formula that fixes the spin-space degrees on the spin lines.
 - Companion article *SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form*, for the $\mathrm{SU}(3)$ representation theory and the mass splitting within a supermultiplet.
 - Companion articles *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *The Gluon: An Octet Outside the Biquaternion Algebra*, for the framework's own statement of what it cannot contain.
@@ -97,7 +95,7 @@ with $\mathcal{H}_Q^3$ associated with the triplet (adjoint) representation of $
 The spin and charge multiplets combine. The **spin–charge Hilbert space** is
 
 $$
-\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty,
+\boxed{\;\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty\;},
 $$
 
 and a state vector of it is written
@@ -125,7 +123,7 @@ A second structural point concerns the representation of the symmetry group. A p
 Because only rays are physical, the multiplication law of symmetry operators is a **ray (projective) representation**,
 
 $$
-T_{gh} = \omega(g,h)\,T_g\,T_h, \qquad \omega(g,h)\in \mathrm{U}(1),
+\boxed{\;T_{gh} = \omega(g,h)\,T_g\,T_h, \qquad \omega(g,h)\in \mathrm{U}(1)\;},
 $$
 
 and when $\omega\ne1$ the ordinary theory of group representations does not apply. The remedy is the **central extension**: the group $G$ is enlarged to $E$ whose ordinary representations reproduce all the ray representations of $G$, and a symmetry group of the physical system is represented by the unitary or antiunitary maps of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ that lift the ray representation. The internal symmetry groups $\mathrm{SU}(2),\mathrm{SU}(3),\dots$ act in this way, and the supermultiplet structure of the eightfold way is the orbit structure of their action.

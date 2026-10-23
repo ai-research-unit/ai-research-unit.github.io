@@ -6,8 +6,6 @@ The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bull
 
 The block is commutative, so the left and the right operator of an element coincide, and the operator theory is a theory of one operator to an element. The operator identity that opens the article is a factor of two away from the sum of the plain operators, and that factor is computed here; the trace form with respect to which the associate is taken is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the plain operators are *Two-Sided Operators on the Biquaternion Algebra* and *One-Sided Operators on the General Plain Algebra of Biquaternions*. The derivations and the automorphisms of the block are read as the structure group and the Lie algebra of the Jordan algebra, and the matrix models of the same operators are *Introduction to the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_\mu Q_\mu\vec e_\mu$ and $Q_\mu\in\mathbb{C}$, and $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the generic norm. On the operators, $L_{\tilde Q_5},R_{\tilde Q_5}$ are the left and right multiplications of the **plain** product, $L_{\tilde Q_5}\tilde Q=\tilde Q_5\tilde Q$ and $R_{\tilde Q_5}\tilde Q=\tilde Q\tilde Q_5$, and $L^{\bullet}_{\tilde Q_5},R^{\bullet}_{\tilde Q_5}$ are those of the block, $L^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q_5\bullet\tilde Q$ and $R^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q\bullet\tilde Q_5$. The trace form is $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$, and the commutator of two operators is written with brackets, $[L^{\bullet}_{\tilde Q_5},L^{\bullet}_{\tilde Q_1}]=L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_1}-L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_5}$.
-
 ## The Multiplication Operators
 
 ### The Definition and the Coincidence of the Two Operators
@@ -32,9 +30,7 @@ So the operator theory of the block is a theory of one operator to an element, a
 
 **Theorem.** The multiplication operator of the block is **half** the sum of the two plain operators:
 
-$$
-L^{\bullet}_{\tilde Q_5}=\tfrac12\bigl(L_{\tilde Q_5}+R_{\tilde Q_5}\bigr),\qquad\text{equivalently}\qquad L_{\tilde Q_5}+R_{\tilde Q_5}=2L^{\bullet}_{\tilde Q_5}.
-$$
+$$ \boxed{\; L^{\bullet}_{\tilde Q_5}=\tfrac12\bigl(L_{\tilde Q_5}+R_{\tilde Q_5}\bigr),\qquad\text{equivalently}\qquad L_{\tilde Q_5}+R_{\tilde Q_5}=2L^{\bullet}_{\tilde Q_5} \;}. $$
 
 *Proof.* $L^{\bullet}_{\tilde Q_5}\tilde Q=\tfrac12(\tilde Q_5\tilde Q+\tilde Q\tilde Q_5)=\tfrac12(L_{\tilde Q_5}+R_{\tilde Q_5})\tilde Q$.
 
@@ -45,8 +41,10 @@ $$
 **Theorem.** For every $\tilde Q_5$,
 
 $$
+\boxed{\;
 \operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=4Q_{5t},\qquad
-\det\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}.
+\det\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}
+\;}.
 $$
 
 *Proof.* The trace is $\tfrac12\bigl(\operatorname{Tr}(L_{\tilde Q_5})+\operatorname{Tr}(R_{\tilde Q_5})\bigr)$, and the two plain operators have trace $4Q_{5t}$ each; the determinant is computed on the matrix of the operator. In the $2\times2$ model of *Introduction to the Symmetric Plain Algebra* the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde Q_5)M+M\mathsf{M}_2(\tilde Q_5))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde Q_5)$, with $\lambda_1\lambda_2=\langle\tilde Q_5\rangle_{\natural}$ and $\lambda_1+\lambda_2=2Q_{5t}$; the determinant is $\bigl(\tfrac12(\lambda_1+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_1+\lambda_2)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_2)\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}$.
@@ -101,9 +99,7 @@ and the two values differ.
 
 **Theorem.** Every multiplication operator of the block is **self-associate** with respect to the trace form:
 
-$$
-\tau\bigl(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\bigr)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr),
-$$
+$$ \boxed{\; \tau\bigl(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\bigr)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr) \;}, $$
 
 so $(L^{\bullet}_{\tilde Q_5})^{\approx}=L^{\bullet}_{\tilde Q_5}$ in the mark $\approx$ of the associate of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
@@ -118,7 +114,6 @@ and, by the symmetry of the form and the invariance again,
 $$
 \tau(\tilde Q_5,\tilde Q_2\bullet\tilde Q_3)=\tau(\tilde Q_2\bullet\tilde Q_3,\tilde Q_5)=\tau(\tilde Q_2,\tilde Q_3\bullet\tilde Q_5)=\tau(\tilde Q_2,\tilde Q_5\bullet\tilde Q_3)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr).
 $$
-
 
 **Remark (the mark, and the other adjoint).** The form is the **indefinite** general plain bilinear form, so its transpose is the **associate** $\approx$ and not the dagger; the dagger belongs to the positive definite Hermitian form, and with respect to it the operator is adjoint to another operator, $(L^{\bullet}_{\tilde Q_5})^{\dagger}=L^{\bullet}_{\tilde Q_5^{*}}$, which is $L^{\bullet}_{\tilde Q_5}$ exactly when $\tilde Q_5$ is Hermitian. **The multiplication operators are self-associate and not self-adjoint**, and the two marks must not be exchanged; the Hermitian form, its involutions and its adjoints are *Two-Sided Operators on the General Plain Sesqualgebra* and the Hilbert-algebra series.
 
@@ -176,9 +171,7 @@ They form a Lie algebra under the commutator, the **derivation algebra** $\opera
 
 **Theorem.** Every derivation of the block is inner:
 
-$$
-\operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)=\bigl\{\tfrac14\operatorname{ad}_{\tilde Q_4}:\tilde Q_4\in[\mathbb{B},\mathbb{B}]\bigr\}\cong\mathfrak{sl}(2,\mathbb{C}),
-$$
+$$ \boxed{\; \operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)=\bigl\{\tfrac14\operatorname{ad}_{\tilde Q_4}:\tilde Q_4\in[\mathbb{B},\mathbb{B}]\bigr\}\cong\mathfrak{sl}(2,\mathbb{C}) \;}, $$
 
 of complex dimension three, and $[\mathbb{B},\mathbb{B}]$ is the trace-zero subspace of $\mathbb{B}$.
 

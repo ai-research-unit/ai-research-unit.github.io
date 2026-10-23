@@ -54,7 +54,7 @@ An element is **unitary** when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_
 The word is the ordered product of a positive real and three exponentials of single elements of the algebra,
 
 $$
-\tilde{Q} = r\,\exp(i\alpha)\,\exp\bigl(-i\psi\vec u_{\mathrm b}\bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) ,
+\boxed{\;\tilde{Q} = r\,\exp(i\alpha)\,\exp\bigl(-i\psi\vec u_{\mathrm b}\bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;},
 $$
 
 and the four sections that follow read the four factors off the element one at a time. Three objects are shared by them and are fixed here once.
@@ -142,7 +142,7 @@ $$
 a **negative** real for a timelike displacement. The principal square root of a negative real is positive imaginary, so the modulus is $\rho = i\,ct'\sqrt{1-\beta^2}$, and its modulus gives the scale
 
 $$
-r = c t'\sqrt{1-\beta^2} = c\tau ,
+\boxed{\;r = c t'\sqrt{1-\beta^2} = c\tau\;},
 $$
 
 where $\tau$ is the proper time: the scale is $c$ times the proper time. For a spacelike displacement, whose interval is positive, the modulus is real and the scale is the ordinary length $\sqrt{\langle\tilde Q\rangle_{\natural}}$.
@@ -218,7 +218,7 @@ the **unique positive-definite square root** of the boost factor. This is the no
 The same factor is the four-velocity in the Hermitian normalisation: with $\tilde{V} = \gamma(ic\,e_t+\vec v)$ the four-velocity of the corpus,
 
 $$
-B = (\tilde U_{\mathrm b}^{\natural})^2 = -\frac{i}{c}\tilde{V} = \gamma e_t - i\gamma\frac{\vec v}{c} ,
+\boxed{\;B = (\tilde U_{\mathrm b}^{\natural})^2 = -\frac{i}{c}\tilde{V} = \gamma e_t - i\gamma\frac{\vec v}{c}\;},
 $$
 
 which is the corpus's own relation $\tilde U_{\mathrm b}^2 = -\frac{i}{c}\tilde{V}^{\natural}$ read with the rotor conjugated. The boost factor is therefore an element of the Hermitian subspace $\mathbb{M}_+$ of unit biquaternion norm, the four-velocity up to the factor $-i/c$, and its closed form $\cosh\psi\,e_t - i\sinh\psi\,\vec u_{\mathrm b}$ is the four-velocity of rapidity $\psi$ about $\vec u_{\mathrm b}$.
@@ -302,7 +302,6 @@ a rotation of $2.161669$ rad about $(1,2,0)/\sqrt5$. The element is a scale, a p
 ### A Null Four-Vector
 
 Take $\tilde{Q} = i\,e_t + \vec e_x$, a displacement on the light cone, since $\langle\tilde{Q}\rangle_{\natural} = -1+1 = 0$. The polar decomposition does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and on the four-vector slice the zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.
-
 
 ## The Order of the Factors
 

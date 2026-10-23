@@ -5,7 +5,7 @@
 Landauer's principle is the exchange rate between information and thermodynamics: the erasure of one bit of information requires the dissipation of at least
 
 $$
-Q_{\min} = k_B T \log 2
+\boxed{\;Q_{\min} = k_B T \log 2\;}
 $$
 
 of heat into an environment at temperature $T$. It is the bridge between the informational and the material descriptions of a physical process. It is also the reason the two descriptions cannot be kept apart: a memory is a physical system, its logical states are physical states, and the reset of those states has a thermodynamic price.
@@ -206,7 +206,7 @@ which is Landauer's principle. The **exchange rate** is therefore $k_B T$ per na
 For a general state the same argument gives
 
 $$
-Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) ,
+\boxed{\;Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ})\;},
 $$
 
 so the cost is the entropy functional of the erased state, read in units of $k_B T$. The material cost is thus controlled by the biquaternion norm that controls the entropy: a state near the null cone is cheap to erase, and the maximally mixed state is the most expensive, at $k_BT\log2$.
@@ -266,7 +266,7 @@ $$
 and the second law forces a compensating environment entropy $\Delta\mathcal{S}_{\rm env}\ge\mathcal{S}(\tilde{Ϛ})$, hence a heat
 
 $$
-Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) \qquad (\text{a full bit: } k_BT\log 2).
+\boxed{\;Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) \qquad (\text{a full bit: } k_BT\log 2)\;}.
 $$
 
 The exchange rate between the sectors is $k_BT$ per nat. The two ledgers are related by the central factor $i$, which exchanges the sectors and reverses the sign of the biquaternion norm, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$.

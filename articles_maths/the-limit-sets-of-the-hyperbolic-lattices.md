@@ -52,8 +52,10 @@ the set of the accumulation points on the circle at infinity of the orbit; the c
 **Theorem (the dimension is the critical exponent, quoted).** For a nonelementary discrete group $\Gamma$ the Hausdorff dimension of the limit set is the critical exponent,
 
 $$
-\dim_H\Lambda(\Gamma)=\delta(\Gamma) ,
-$$
+\boxed{\;
+\dim_H\Lambda(\Gamma)=\delta(\Gamma)
+\;}
+$$,
 
 the Patterson–Sullivan exponent; for a convex-cocompact group $\delta\in(0,1)$ and the limit set has Lebesgue measure zero on the circle, while for a lattice of finite covolume $\delta=1$ and the limit set is the whole circle with the Patterson–Sullivan measure proportional to the circle measure. The dimension of the limit set of a hyperbolic group in the general theory is the subject of *The Dimension of the Boundary of a Hyperbolic Group*, and the dimension itself is *Fractal Geometry*'s.
 

@@ -6,8 +6,6 @@ The two general products of the quaternion space are defined in *The Two General
 
 The article assumes the two products and their rules from *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, the identities of *Relations Between the Two General Products*, and the property table of *Comparison Between the Two General Products*, all preceding this one. The two forms with respect to which the adjoints are taken are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, below this article in this category, and the adjoint calculus of the plain product alone is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* and *One-Sided Operators on the Quaternion Algebra* (`articles_maths/one-sided-operators-on-the-quaternion-algebra.md`), in the *Quaternions* category. The enveloping algebra of the plain product, with the sandwich family and the operator basis, is *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, in the *Quaternions* category.
 
-**Conventions.** Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$, $\tilde q_2=q_{2t}e_t+\vec q_2$ and $\tilde q_3=q_{3t}e_t+\vec q_3$ name elements and $\tilde q_2^{\natural}=q_{2t}e_t-\vec q_2$ is the quaternion conjugation. The two products are written $\tilde q_1\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2$, and the operators are
-
 $$
 L_{\tilde q_1}(\tilde q_2)=\tilde q_1\tilde q_2 , \quad R_{\tilde q_1}(\tilde q_2)=\tilde q_2\tilde q_1 , \quad L^{\natural}_{\tilde q_1}(\tilde q_2)=\tilde q_1^{\natural}\tilde q_2 , \quad R^{\natural}_{\tilde q_1}(\tilde q_2)=\tilde q_2^{\natural}\tilde q_1 .
 $$
@@ -19,7 +17,7 @@ The **plain form** is $\langle\tilde q_4,\tilde q_5\rangle=\mathrm{Sc}(\tilde q_
 **Proposition (the quaternionic twins).** For every $\tilde q_1$,
 
 $$
-L^{\natural}_{\tilde q_1}=L_{\tilde q_1^{\natural}} , \qquad R^{\natural}_{\tilde q_1}=\natural\circ L^{\natural}_{\tilde q_1} , \qquad R_{\tilde q_1}=\natural\circ L^{\natural}_{\tilde q_1}\circ\natural ,
+\boxed{\;L^{\natural}_{\tilde q_1}=L_{\tilde q_1^{\natural}} , \qquad R^{\natural}_{\tilde q_1}=\natural\circ L^{\natural}_{\tilde q_1} , \qquad R_{\tilde q_1}=\natural\circ L^{\natural}_{\tilde q_1}\circ\natural\;},
 $$
 
 where $\natural$ is the conjugation read as an operator, $\natural(\tilde q_2)=\tilde q_2^{\natural}$.
@@ -33,7 +31,7 @@ So the left multiplications of the quaternionic product are the left multiplicat
 **Proposition (the composition laws).**
 
 $$
-L_{\tilde q_1}L_{\tilde q_3}=L_{\tilde q_1\tilde q_3} , \qquad R_{\tilde q_1}R_{\tilde q_3}=R_{\tilde q_3\tilde q_1} , \qquad L_{\tilde q_1}R_{\tilde q_3}=R_{\tilde q_3}L_{\tilde q_1} ,
+\boxed{\;L_{\tilde q_1}L_{\tilde q_3}=L_{\tilde q_1\tilde q_3} , \qquad R_{\tilde q_1}R_{\tilde q_3}=R_{\tilde q_3\tilde q_1} , \qquad L_{\tilde q_1}R_{\tilde q_3}=R_{\tilde q_3}L_{\tilde q_1}\;},
 $$
 
 and, for the quaternionic product,
@@ -49,7 +47,7 @@ The plain left multiplications form a monoid isomorphic to $\mathbb{H}$ under mu
 **Theorem (the associativity defect).** For all $\tilde q_1,\tilde q_2,\tilde q_3$ the associator of the quaternionic product is
 
 $$
-(\tilde q_1^{\natural}\tilde q_2)^{\natural}\tilde q_3-\tilde q_1^{\natural}(\tilde q_2^{\natural}\tilde q_3)=L^{\natural}_{\tilde q_1}L^{\natural}_{\tilde q_2}(\tilde q_3)-L^{\natural}_{\tilde q_1^{\natural}\tilde q_2}(\tilde q_3) =(\tilde q_2^{\natural}\tilde q_1-\tilde q_1^{\natural}\tilde q_2^{\natural})\tilde q_3 ,
+\boxed{\;(\tilde q_1^{\natural}\tilde q_2)^{\natural}\tilde q_3-\tilde q_1^{\natural}(\tilde q_2^{\natural}\tilde q_3)=L^{\natural}_{\tilde q_1}L^{\natural}_{\tilde q_2}(\tilde q_3)-L^{\natural}_{\tilde q_1^{\natural}\tilde q_2}(\tilde q_3) =(\tilde q_2^{\natural}\tilde q_1-\tilde q_1^{\natural}\tilde q_2^{\natural})\tilde q_3\;},
 $$
 
 and it vanishes for all $\tilde q_2,\tilde q_3$ exactly when the first factor $\tilde q_1$ is real.

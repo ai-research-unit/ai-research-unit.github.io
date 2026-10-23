@@ -157,7 +157,7 @@ $$
 ### Step 4: The result
 
 $$
-\tilde{Ϛ}_1 = \frac{1}{2}e_t.
+\boxed{\;\tilde{Ϛ}_1 = \frac{1}{2}e_t\;}.
 $$
 
 This is the maximally mixed state of a qubit, expressed in biquaternion form. Its purity and von Neumann entropy are

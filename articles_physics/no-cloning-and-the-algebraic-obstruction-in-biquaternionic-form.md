@@ -83,10 +83,10 @@ $$
 Equating the two evaluations gives $\langle\psi|\phi\rangle=\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **normalised Hermitian form of the idempotents**, read as the trace pairing — the modulus squared of the inner product —
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
 = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2}
 \qquad\Longrightarrow\qquad
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\in\{0,1\}.
+\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\in\{0,1\}\;}.
 $$
 
 The pairing is $1$ only for $\psi=\phi$ up to phase, and $0$ only for orthogonal states.
@@ -143,7 +143,7 @@ whenever the cross terms do not cancel, i.e. whenever the states are not orthogo
 The obstruction is absolute for perfect cloning, so the useful question is how well one can do. For the qubit the optimal universal cloner is known: it takes one copy of an arbitrary state and produces two, each with fidelity
 
 $$
-F = \langle\psi|\tilde{Ϛ}_{\text{out},1}|\psi\rangle = \frac{5}{6} = 0.8333\ldots ,
+\boxed{\;F = \langle\psi|\tilde{Ϛ}_{\text{out},1}|\psi\rangle = \frac{5}{6} = 0.8333\ldots\;} ,
 $$
 
 uniformly in $|\psi\rangle$, and no cloner does better. This is the **Bužek–Hillery bound**, and the machine that attains it is the Bužek–Hillery cloner.

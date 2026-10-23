@@ -9,8 +9,6 @@ The subject has two levels, and the distinction between them is the organising p
 
 Above the quaternionic level sit the metric conditions. A **quaternionic Kähler manifold** is a Riemannian manifold whose Levi-Civita connection preserves the quaternionic structure — equivalently, whose holonomy group lies in $Sp(n)\cdot Sp(1)$ — and such a manifold is automatically Einstein in dimension at least eight. The **hypercomplex** and **hyperkähler** conditions, in which the three complex structures are themselves integrable or Kähler, are the subject, and the quaternionic Kähler manifolds with vanishing scalar curvature are exactly the hyperkähler ones.
 
-**The boundaries of the article.** The quaternion algebra $\mathbb{H}$, its basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the conjugations and the norm are those of Part I, and the quaternionic inner products and their Hermitian and anti-Hermitian subspaces those of the Part I quaternionic companions; nothing of the algebra is re-derived here. The Riemannian metric, the Levi-Civita connection, the holonomy group and the Ricci tensor are those of the companion article *Riemannian Geometry*; the pseudo-Riemannian and Lorentzian variants are those of *Pseudo-Riemannian and Lorentzian Geometry*. The complex and Hermitian structures, the fundamental form and the Chern connection are those of *Hermitian Geometry and Almost Complex Structures*, and the Kähler condition those of *Kähler Geometry*. The homogeneous spaces $G/H$ and their isotropy representations are the Lie-theoretic input of *Lie Groups* and its companions, cited throughout. The hyperkähler and Calabi–Yau conditions are developed andbeing, and are introduced here only far enough to locate them. The existence of the Obata connection, the Einstein property and the twistor correspondence are proved by the elliptic and parabolic methods of the analysis of Part III, where the measure and the limit are available; the statements are given here and the proofs cited. The base field is $\mathbb{R}$ and no physics is invoked.
-
 ## Quaternionic Vector Spaces
 
 Let $\mathbb{H}$ be the algebra of quaternions with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and relations $\vec e_x\vec e_y = \vec e_z$, $\vec e_y\vec e_z = \vec e_x$, $\vec e_z\vec e_x = \vec e_y$, $e_ie_j = -e_je_i$ for $i \neq j$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the algebra is the real division algebra of Part I'sand conjugation and the norm are its conjugation and norm.
@@ -225,10 +223,6 @@ The twistor space $Z(M)$, an $S^2$-bundle of almost complex structures over a qu
 | Wolf spaces | The positive quaternionic Kähler symmetric spaces $G/H$, listed in the table |
 | Hypercomplex | $\mathcal{Q}$ trivial with integrable global frame $J_1,J_2,J_3$ |
 | Hyperkähler | Hypercomplex with all $J_i$ Kähler for $g$; holonomy in $Sp(n)$, $\lambda=0$ |
-
-
-
-
 
 ## Further Reading
 

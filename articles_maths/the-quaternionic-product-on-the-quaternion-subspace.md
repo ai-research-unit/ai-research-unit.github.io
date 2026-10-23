@@ -30,7 +30,7 @@ which is the isotope of the quaternion algebra by its conjugation. Second, the r
 **Theorem (the subspace is closed).** For $h,g \in \mathbb{H}_{\mathbb{B}}$ the product $h\star g$ lies in $\mathbb{H}_{\mathbb{B}}$, and on real quaternions
 
 $$
-h\star g = h^{\natural}g = \bar h\,g ,
+\boxed{\; h\star g = h^{\natural}g = \bar h\,g \;},
 $$
 
 where $\bar h$ is the quaternion conjugate of $h$.
@@ -90,7 +90,7 @@ so the two bracketings are $j$ and $-j$.
 **Theorem (the square is the reduced norm).** For $h \in \mathbb{H}_{\mathbb{B}}$,
 
 $$
-h\star h = \bar h h = \langle h\rangle_{\natural}e_t = |h|^2e_t ,
+\boxed{\; h\star h = \bar h h = \langle h\rangle_{\natural}e_t = |h|^2e_t \;},
 $$
 
 the reduced norm of the real quaternion $h$, a non-negative real number that vanishes only at $h = 0$.
@@ -114,7 +114,7 @@ $$
 **Theorem (the monoid of the subspace is the opposite quaternion algebra).** For $h,g \in \mathbb{H}_{\mathbb{B}}$,
 
 $$
-L_h\circ L_g = L_{gh} ,
+\boxed{\; L_h\circ L_g = L_{gh} \;},
 $$
 
 and the monoid $\{L_h : h \in \mathbb{H}_{\mathbb{B}}\}$ is isomorphic to the **opposite** of the quaternion algebra, $\mathbb{H}^{\mathrm{opp}}$.

@@ -147,7 +147,7 @@ The same collective enhancement governs the coupling of the spins to a radiating
 For a coherent spin state the transverse variance is $(\Delta J_\perp)^2 = \tfrac{\hbar^2 N}{4}$ and the mean spin is $|\langle\vec J\rangle| = \tfrac{\hbar N}{2}$. The **Wineland squeezing parameter** is
 
 $$
-\xi_R^2 = \frac{N\,(\Delta J_\perp)^2_{\min}}{|\langle\vec J\rangle|^2},
+\boxed{\;\xi_R^2 = \frac{N\,(\Delta J_\perp)^2_{\min}}{|\langle\vec J\rangle|^2}\;},
 $$
 
 where $(\Delta J_\perp)^2_{\min}$ is the smallest variance in the plane perpendicular to the mean spin. The numerator is $N$ times the squeezed variance, the denominator the squared mean spin; for a coherent state $\xi_R^2 = 1$, a state with $\xi_R^2 < 1$ is **spin squeezed**, and the metrological phase sensitivity is improved by the factor $\xi_R$ below the standard quantum limit.
@@ -200,9 +200,9 @@ The **two-axis countertwisting** Hamiltonian $\frac{\chi}{\hbar}(\tilde{J}_+^2 +
 Each $\tilde{J}_\alpha$ is a sum of the Hermitian elements $\tilde{S}_\alpha^{(i)}=\tfrac{\hbar}{2}i\vec e_\alpha^{(i)}$ and is Hermitian; the mean spin is the normalised Hermitian form, whose trace reading at normalisation is
 
 $$
-\langle \tilde{J}_\alpha\rangle = \frac{\langle\tilde{Ϛ},\tilde J_\alpha\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+\boxed{\;\langle \tilde{J}_\alpha\rangle = \frac{\langle\tilde{Ϛ},\tilde J_\alpha\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
 = \frac{\mathrm{Sc}(\tilde{Ϛ}\,\tilde{J}_\alpha^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
-= \frac{\operatorname{Tr}(\tilde{Ϛ}\,\tilde{J}_\alpha)}{\operatorname{Tr}(\tilde{Ϛ})},
+= \frac{\operatorname{Tr}(\tilde{Ϛ}\,\tilde{J}_\alpha)}{\operatorname{Tr}(\tilde{Ϛ})}\;},
 \qquad
 \tilde{Ϛ} = \text{the collective state},
 $$

@@ -11,8 +11,6 @@ The article is organized as follows. The braid group and its difference from the
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian connection and its representation structure.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the four-dimensional theorem whose two cases the anyon interpolates.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$; the trace of a quaternion is $\mathrm{Tr}(q)=2\,\mathrm{Sc}(q)$ and the scalar part is $\mathrm{Sc}$. The algebraic structure of the gauge group is the one of the non-abelian gauge field construction; the spacetime is three-dimensional, with coordinates $x^\mu=(t',x,y)$ or, in the $ict'$ convention, $x^\mu=(ict',x,y)$, so that the coordinate metric is $\eta=\mathrm{diag}(-1,+1,+1)$ and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. The statistics angle is $\theta$, the exchange phase $\exp(i\theta)$, the spin $s$, and the Chern–Simons level $k$; the linking number of two curves is $\mathrm{Lk}$.
-
 ## The Braid Group and the Failure of the Permutation Group
 
 ### Configuration Space and the Braid Group
@@ -74,9 +72,9 @@ $$
 the phase of a full loop. An **exchange** of two identical composites is half of a full loop — the two worldlines are swapped, which carries each charge halfway around the other's flux, and the double exchange is the full loop — so that the exchange phase is the square root,
 
 $$
-\exp(i\theta) = \exp(ie\Phi/2\hbar) ,
+\boxed{\;\exp(i\theta) = \exp(ie\Phi/2\hbar) ,
 \qquad
-\theta = \frac{e\Phi}{2\hbar} \pmod{2\pi} .
+\theta = \frac{e\Phi}{2\hbar} \pmod{2\pi}\;}.
 $$
 
 The angle $\theta$ is the statistics angle, and it is continuous because the product $e\Phi$ is continuous. The model was the historical origin of anyons, and it shows why the statistics is not quantized in $2+1$ dimensions: the flux is not quantized for a general source, so neither is the phase. The relation to the Aharonov–Bohm discussion of the Wilson-loop construction is direct: the exchange phase is half the holonomy, and the holonomy is the loop observable.
@@ -86,7 +84,7 @@ The angle $\theta$ is the statistics angle, and it is continuous because the pro
 The statistics angle and the spin are linked, as they are in $3+1$ dimensions, but the link is weaker. A rotation of a particle by $2\pi$ multiplies its state by $\exp(2\pi i s)$, and the exchange phase is the phase of a rotation by $\pi$ of the relative coordinate, so that
 
 $$
-\theta = 2\pi s \pmod{2\pi} .
+\boxed{\;\theta = 2\pi s \pmod{2\pi}\;}.
 $$
 
 In $3+1$ dimensions the spin $s$ is an integer or half-integer, so the phase $\exp(2\pi is)$ is $\pm1$ and the statistics is bosonic or fermionic; the relation then reproduces the integer-spin/half-integer-spin dichotomy of the spin–statistics theorem. In $2+1$ dimensions the spin of the flux–charge composite need not be an integer or half-integer: the composite carries an angular momentum from the charge–flux field configuration — a fractional value — so that $s$ is continuous and $\theta$ is arbitrary. The composite's spin is the statistics angle measured in units of $2\pi$, $s=\dfrac{\theta}{2\pi}=\dfrac{e\Phi}{4\pi\hbar}$, consistent with the relation above; the precise value depends on the normalization of the bound-state angular momentum and is standard.
@@ -136,9 +134,9 @@ $$
 with $ϙ_1,ϙ_2$ the charges of the loops. The statement is the topological content of the theory: the action evaluated on two linked worldlines is proportional to the linking number, and the loop correlator is its exponential. A full loop of one charge around another is thus a phase, and an exchange is half of it, so that the statistics angle of the charge-$ϙ$ anyon is
 
 $$
-\theta = \pi\,\frac{ϙ^2}{k} ,
+\boxed{\;\theta = \pi\,\frac{ϙ^2}{k} ,
 \qquad
-s = \frac{\theta}{2\pi}=\frac{ϙ^2}{2k} .
+s = \frac{\theta}{2\pi}=\frac{ϙ^2}{2k}\;}.
 $$
 
 For $k=2$ and $ϙ=1$ the angle is $\pi/2$ and the spin is $\tfrac14$: the semion, the simplest anyon, with the statistics of neither a boson nor a fermion and a spin of a quarter. The level $k$ must be an integer for the quantum theory to be consistent on a closed spatial manifold, which is the quantization of the coupling that the flux–charge model lacked; the charge $ϙ$ is an integer in the abelian theory.

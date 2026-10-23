@@ -8,10 +8,6 @@ The **ideals** of the multiplication are the two trivial ones on the left and on
 
 The **Peirce decomposition** is the algebra's. The four spaces $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ of a Hermitian idempotent need associativity, which the multiplication does not have, and the multiplication contributes to them a **table and nothing else**: the product of two spaces lands in the space whose two indices must agree, and the two indices that must agree sit on the right in the sesquilinear table whereas they sit in the middle in the algebra table. The table is therefore the **transpose** of the algebra's in the second factor, its index rule is not the parity grading of the algebra, and the elements that index it are the **Hermitian idempotents**, which are exactly the idempotents of the multiplication by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*; and the decompositions are as many as the complete orthogonal pairs of those idempotents: one degenerate decomposition and a real projective plane of them (§*As Many Decompositions as the Hermitian Roots of One*). The general form of the transposed table is *Hermitian Idempotents and the Peirce Decomposition*; what is added here is the biquaternion instance, the four lines in the coefficients of the block, the transport through the matrix model, the form the involution takes on the two mixed lines, and the failure of the two-sided conditions of the multiplication to reproduce the four spaces.
 
-**Boundaries.** The multiplication, its scalar rules and its idempotents are *Introduction to the General Plain Sesqualgebra*; the Hermitian idempotents and their complementary pairs are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*; the ideals of a general sesqualgebra are *Ideals and Quotients of a Sesqualgebra*, and the two notions of simplicity are *Simple Sesqualgebras and Minimal Ideals*; the ideals of the block are *The Biquaternion Sesqualgebra Is Simple*, whose two-sided theorem this article quotes and whose one-sided theorem it corrects on the right; the transposed Peirce table of a derived operation is *Hermitian Idempotents and the Peirce Decomposition*; the algebra's ideal theory, its Peirce decomposition and its minimal one-sided ideals are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the model in which the four lines are the four matrix entries is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the Hermitian module whose restriction of the scalar form is carried by the right ideals is *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*; and the general definition of the idempotent, the Hermitian idempotent and the Peirce decomposition is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t$ the unit and $\vec e_x\vec e_y=\vec e_z$, and $i$ is the central scalar imaginary. Juxtaposition is the **plain** product $\tilde Q_1\tilde Q_2$ of *Introduction to the Biquaternion Algebra*, $\star$ is the multiplication of this block, $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*. A **Hermitian idempotent** is an idempotent fixed by the star, and the Hermitian idempotents are exactly the $\star$-idempotents; they are written
-
 $$
 \tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_t+\tilde\Xi\bigr),\qquad \tilde\Pi_-(\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_t-\tilde\Xi\bigr),
 $$
@@ -90,16 +86,16 @@ $$
 **Proposition (the four lines).** For the complementary pair $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)$, $\tilde\Pi^{\perp}=\tilde\Pi_-(\tilde\Xi)$ the Peirce decomposition of the block is
 
 $$
-\mathbb{B}=\tilde\Pi\mathbb{B}\tilde\Pi\oplus\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}\oplus\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi\oplus\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp},
+\boxed{\;\mathbb{B}=\tilde\Pi\mathbb{B}\tilde\Pi\oplus\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}\oplus\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi\oplus\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp}\;},
 $$
 
 with complex one-dimensional summands
 
 $$
-\tilde\Pi\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi,\quad
+\boxed{\;\tilde\Pi\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi,\quad
 \tilde\Pi\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\vec\Upsilon_x(\vec u),\quad
 \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi=\mathbb{C}\vec\Upsilon_y(\vec u),\quad
-\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\tilde\Pi^{\perp},
+\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\tilde\Pi^{\perp}\;},
 $$
 
 where $\vec\Upsilon_x(\vec u)$ is any nonzero element of the first mixed space and $\vec\Upsilon_y(\vec u)=\vec\Upsilon_x(\vec u)^{*}$ is its conjugate in the second. Each summand has real dimension two and the total is eight.
@@ -212,7 +208,7 @@ $$
 **Theorem.** Let $\tilde\Pi$ be a Hermitian idempotent with complement $\tilde\Pi^{\perp}$. Then
 
 $$
-\mathbb{A}_{11}=\mathbb{R}\,\tilde\Pi,\qquad \mathbb{A}_{00}=\mathbb{C}\vec\Upsilon_x\oplus\mathbb{C}\tilde\Pi^{\perp},\qquad \mathbb{A}_{10}=\mathbb{A}_{01}=\{0\},
+\boxed{\;\mathbb{A}_{11}=\mathbb{R}\,\tilde\Pi,\qquad \mathbb{A}_{00}=\mathbb{C}\vec\Upsilon_x\oplus\mathbb{C}\tilde\Pi^{\perp},\qquad \mathbb{A}_{10}=\mathbb{A}_{01}=\{0\}\;},
 $$
 
 in the notation of the four lines; the four pieces span a real subspace of dimension five and do not decompose $\mathbb{B}$; and every nonzero element of the second mixed line $\mathbb{C}\vec\Upsilon_y$ lies in none of the four.

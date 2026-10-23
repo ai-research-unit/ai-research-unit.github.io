@@ -152,7 +152,6 @@ acting by $\tilde{Ϛ} \mapsto \tilde U\tilde{Ϛ}\,\tilde U^{*}$ with $\tilde U^{
 
 **Two kinds of operation.** The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general optical element is a product of the two — a rotor for the retardation and an idempotent for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$. For a partial absorber the second factor is not an idempotent but a positive Hermitian element; the canonical form of the general element is the Cartan pair, read in *The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers*.
 
-
 ## Pancharatnam's In-Phase Criterion
 
 Two beams with Jones vectors $\vec J_A$ and $\vec J_B$ can interfere. The intensity of the sum is
@@ -203,10 +202,10 @@ $$
 The **Pancharatnam connection** is the imaginary part of the overlap with the derivative. In the horizontal gauge, the gauge in which the amplitude accumulated along the azimuthal circles carries no phase beyond the connection, it is
 
 $$
-\mathcal A=i\,\langle J|dJ\rangle
+\boxed{\;\mathcal A=i\,\langle J|dJ\rangle
 =i\,\langle J|\partial_\phi J\rangle\,d\phi
 =-\sin^2\tfrac{\theta}{2}\,d\phi
-=-\tfrac12\left(1-\cos\theta\right)d\phi .
+=-\tfrac12\left(1-\cos\theta\right)d\phi\;}.
 $$
 
 The connection is real, as it must be for a phase; it is the connection whose parallel transport keeps neighbouring states in Pancharatnam's sense of being in phase. The overall phase of $\vec J$ is the gauge freedom, and $\mathcal A$ is gauge-dependent, but its integral around a closed circuit is not.
@@ -228,17 +227,17 @@ The residual phase is a property of closed circuits only. If the representatives
 The curvature of the connection is
 
 $$
-\mathcal F=d\mathcal A
+\boxed{\;\mathcal F=d\mathcal A
 =-\tfrac12\sin\theta\,d\theta\wedge d\phi
-=-\tfrac12\,d\Omega ,
+=-\tfrac12\,d\Omega\;},
 $$
 
 where $d\Omega=\sin\theta\,d\theta\wedge d\phi$ is the area form of the unit sphere. The curvature is a constant multiple of the area form, so the holonomy of any closed circuit is $-1/2$ times the enclosed solid angle:
 
 $$
-\gamma_{\mathrm{Panch}}=\oint\mathcal A
+\boxed{\;\gamma_{\mathrm{Panch}}=\oint\mathcal A
 =\int\!\!\int_{\text{enclosed}}\mathcal F
-=-\frac12\,\Omega_{\text{enclosed}} .
+=-\frac12\,\Omega_{\text{enclosed}}\;}.
 $$
 
 This is **Pancharatnam's half-solid-angle rule**. The factor $\tfrac12$ is the signature of the double cover: the curvature is half the area form, so the total flux over the whole sphere is $2\pi$ rather than $4\pi$, and the connection is the vector potential of a half-strength point degeneracy at the centre of the Poincaré sphere. The same factor appeared in the companion article on the Berry phase and, in the double cover of the rotor, in the rigid-body article.

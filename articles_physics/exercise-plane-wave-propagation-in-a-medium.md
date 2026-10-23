@@ -30,15 +30,15 @@ $$
 $$
 the equation $\tilde{\nabla}\tilde{F} = 0$ reduces to
 $$
-\boxed{\;\vec k\cdot\vec E_0 = 0, \qquad \vec k\cdot\vec H_0 = 0, \qquad \vec k\times\vec E_0 = \omega\mu\,\vec H_0, \qquad \vec k\times\vec H_0 = -\omega\epsilon\,\vec E_0\;}
+\vec k\cdot\vec E_0 = 0, \qquad \vec k\cdot\vec H_0 = 0, \qquad \vec k\times\vec E_0 = \omega\mu\,\vec H_0, \qquad \vec k\times\vec H_0 = -\omega\epsilon\,\vec E_0
 $$
 and, for a nonzero field, these force the dispersion relation
 $$
-\boxed{\;\vec k^2 = \omega^2\epsilon\mu = \frac{\omega^2}{c^2}\;}
+\vec k^2 = \omega^2\epsilon\mu = \frac{\omega^2}{c^2}
 $$
 and then $\vec H_0 = Z^{-1}\,\vec u_k\times\vec E_0$, with $\vec u_k = \vec k/|\vec k|$. The amplitude satisfies $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\,\vec E_0$ and $-\sqrt{\mu}\,\vec H_0$ have equal magnitude, and the field-strength amplitude is null,
 $$
-\boxed{\;\langle\tilde{F}_0\rangle_{\natural} = \sum_{k=1}^{3}(F_{tk})^2 = 0\;},
+\langle\tilde{F}_0\rangle_{\natural} = \sum_{k=1}^{3}(F_{tk})^2 = 0,
 $$
 so a free plane wave in a medium is a zero divisor of $\mathbb{B}$, exactly as the parent states.
 
@@ -232,7 +232,7 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 
 **Solution (c).** The energy–momentum biquaternion is the halved Hermitian form. Substituting $\vec S = cW\vec u_k$ into the general identity $\tilde{F}\tilde{F}^{*} = 2We_t + \frac{2i}{c}\vec S$ gives
 $$
-\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right).
+\boxed{\;\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right)\;}.
 $$
 This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\phi = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'$ and $W = W(\phi)$, the general form, which reduces to $W = W_0\cos^2\phi$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\phi\,\tilde P$, with $W_\phi = \partial/\partial\phi\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\phi)$, the exponentials $\exp(\pm 2i\phi)$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_\phi\tilde P$. Since $e_t + i\vec u_k$ is constant,
 $$
@@ -270,8 +270,8 @@ v_p = \frac{\omega}{k} = \frac{c_0}{n(\omega)} = c(\omega),
 $$
 and the group velocity is
 $$
-v_g = \frac{d\omega}{dk} = \left(\frac{dk}{d\omega}\right)^{-1}
-= \frac{c_0}{n(\omega) + \omega\,\dfrac{dn}{d\omega}} .
+\boxed{\;v_g = \frac{d\omega}{dk} = \left(\frac{dk}{d\omega}\right)^{-1}
+= \frac{c_0}{n(\omega) + \omega\,\dfrac{dn}{d\omega}}\;}.
 $$
 The distinction is not bookkeeping: a single monochromatic wave has no envelope and travels at $v_p$, while a narrow superposition travels at $v_g$. For two frequencies $\omega \pm \Delta\omega$ with wave numbers $k \pm \Delta k$, the sum of the two real waves factors as
 $$
@@ -315,7 +315,7 @@ unique in the class of solutions satisfying the Sommerfeld radiation condition. 
 **Solution (b).** For a time-independent field the equation becomes the static pair $\mathrm{rot}\,\tilde F = -\vec j$, $\mathrm{div}\,\tilde F = R_0$, hence the Poisson equation
 
 $$
-\Delta\tilde F = \mathrm{rot}\,\vec j + \mathrm{grad}\,R_0 ,
+\boxed{\;\Delta\tilde F = \mathrm{rot}\,\vec j + \mathrm{grad}\,R_0\;},
 $$
 
 whose solution decaying at infinity is $\tilde F = -(4\pi R)^{-1} * (\mathrm{rot}\,\vec j + \mathrm{grad}\,R_0)$. With $\tilde F = c(\mathrm{grad}\,\Phi - \mathrm{rot}\,\Psi)$ and $\mathrm{div}\,\Psi = 0$, the two potentials solve $\Delta\Phi = R_0/c$ and $\Delta\Psi = -\vec j/c$, so each is a Newton potential of its source. The energy density is $\tfrac{1}{2}\|\tilde F\|^2 = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$, and the Poynting vector is $\tfrac{1}{2} i c\,\tilde F\times\tilde F^*$. This is the frequency-domain and static counterpart of Problems 1–3: the same complex vector carries the electric and magnetic halves, and the two limits make the "single constant $c$" reading of the medium concrete.

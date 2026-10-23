@@ -49,8 +49,8 @@ that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; t
 For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,
 
 $$
-\mathcal{E}=\frac{\hbar^2}{2m}\lvert\nabla\Psi\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
-+p\,\langle F_z\rangle+\zeta\,\langle F_z^2\rangle ,
+\boxed{\;\mathcal{E}=\frac{\hbar^2}{2m}\lvert\nabla\Psi\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
++p\,\langle F_z\rangle+\zeta\,\langle F_z^2\rangle\;},
 $$
 
 with the spin-independent and spin-dependent contact couplings
@@ -146,8 +146,8 @@ $$
 where the second equality gives the alignment in terms of the eighth and third Bloch coordinates of the density matrix, a relation verified on random pure states. The quadratic operators have one further independent expectation, the traceless symmetric tensor
 
 $$
-\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac{2}{3}\delta_{ij} ,
-\qquad \mathrm{Tr}\,\mathcal{Q}=0 ,
+\boxed{\;\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac{2}{3}\delta_{ij},
+\qquad \mathrm{Tr}\,\mathcal{Q}=0\;},
 $$
 
 which is the *nematic* (quadrupolar) order parameter. For the polar state aligned with the director $\vec u$ it takes the value $\mathcal{Q}_{ij}=\tfrac{1}{3}\delta_{ij}-\vec u_i\vec u_j$, a form that is invariant under $\vec u\to-\vec u$ — which is why the polar order parameter is a director and not a vector. The explicit computation for the state $\vec\zeta=(0,1,0)^T$ gives $\langle\vec F\rangle=0$ and $\mathcal{Q}=\tfrac{1}{3}\,\mathrm{diag}(1,1,-2)$.
@@ -161,8 +161,8 @@ The two order parameters are therefore the framework's rank-one and rank-two ten
 The spin-one coherent states are the rotations of the stretched state. In the two-factor realisation the stretched state is the product of two identical fundamental states, $|\!\uparrow\uparrow\rangle$, and the framework's version of it is the symmetrised product of two identical fundamental idempotents,
 
 $$
-\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}
-=\lvert\vec\zeta_{\vec u}\rangle\langle\vec\zeta_{\vec u}\rvert ,
+\boxed{\;\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}
+=\lvert\vec\zeta_{\vec u}\rangle\langle\vec\zeta_{\vec u}\rvert\;},
 $$
 
 where $\tilde\Pi(\vec u)$ is the fundamental idempotent of the informational sector along $\vec u$ and $\vec\zeta_{\vec u}$ is the spin-one coherent state whose magnetic order points along $\vec u$. The magnetic order parameter of the condensate is thus read off from the axis along which the two fundamental idempotents coincide, and the ferromagnetic phase is the phase in which the two constituent fundamental spins are *parallel*.
@@ -174,8 +174,8 @@ This gives the algebraic form of the ferromagnetic order: the order parameter is
 The polar states have a different and equally transparent realisation: they are the symmetrised products of two *antipodal* fundamental idempotents,
 
 $$
-\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}
-=\tfrac{1}{2}\,\lvert\vec\zeta_{\vec u}^{\mathrm{pol}}\rangle\langle\vec\zeta_{\vec u}^{\mathrm{pol}}\rvert ,
+\boxed{\;\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}
+=\tfrac{1}{2}\,\lvert\vec\zeta_{\vec u}^{\mathrm{pol}}\rangle\langle\vec\zeta_{\vec u}^{\mathrm{pol}}\rvert\;},
 $$
 
 with $\tilde\Pi(-\vec u)$ the orthogonal idempotent along the same axis. That the result is proportional to the polar-state idempotent, and that it is the polar state with director $\vec u$, was verified directly: for $\vec u=\vec u_z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\vec F\rangle=0$, $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are *antiparallel*: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.

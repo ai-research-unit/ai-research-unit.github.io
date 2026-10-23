@@ -46,9 +46,7 @@ No physics is invoked.
 
 **Theorem (Böttcher).** Let $f$ be a polynomial of degree $d \geq 2$. There is a conformal map $\varphi$ from a neighbourhood of $\infty$ onto the complement of a closed disk, with
 
-$$
-\varphi(f(z)) = \varphi(z)^d , \qquad \varphi(z) \sim z \ \text{as } z \to \infty ,
-$$
+$$\boxed{\;\varphi(f(z)) = \varphi(z)^d , \qquad \varphi(z) \sim z \ \text{as } z \to \infty\;},$$
 
 the **Böttcher coordinate**. If $K(f)$ is connected then $\varphi$ extends conformally to the whole basin of $\infty$, $A(\infty) \to \hat{\mathbb{C}} \setminus \overline{\mathbb{D}}$, and the basin of $\infty$ is simply connected.
 

@@ -261,7 +261,7 @@ All four are real-valued, so the imaginary part vanishes identically. The null s
 **The Kähler identity.** On the two complex subspaces the alternating part of $\langle\cdot,\cdot\rangle_{*}$ and of $\langle\cdot,\cdot\rangle_{\natural*}$ is the real part composed with the complex structure,
 
 $$
-\omega(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,i\tilde Q_2),
+\boxed{\; \omega(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,i\tilde Q_2) \;},
 $$
 
 for all $\tilde Q_1,\tilde Q_2$ in the subspace. *Proof.* $\langle\tilde Q_1,i\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1(i\tilde Q_2)^{*})$ and $(i\tilde Q_2)^{*}=-i\tilde Q_2^{*}$, since the star is the coefficientwise conjugation composed with the natural conjugation and the two commute with the central imaginary; so $\langle\tilde Q_1,i\tilde Q_2\rangle_{*}=-iH(\tilde Q_1,\tilde Q_2)$, whose real part is the imaginary part of $\langle\cdot,\cdot\rangle_{*}$ and whose imaginary part is minus the real part. The same computation holds for $\langle\cdot,\cdot\rangle_{\natural*}$.
@@ -269,9 +269,9 @@ for all $\tilde Q_1,\tilde Q_2$ in the subspace. *Proof.* $\langle\tilde Q_1,i\t
 **The companion identity for the bilinear pair.** The same computation with the second slot read without the star gives $\langle\tilde Q_1,i\tilde Q_2\rangle=iB(\tilde Q_1,\tilde Q_2)$, since multiplying by a scalar pulls out of a bilinear slot without conjugation, and the real part of $i(g_B+i\sigma_B)$ is $-\sigma_B$. So
 
 $$
-\omega(\tilde Q_1,\tilde Q_2)=+g(\tilde Q_1,i\tilde Q_2)\ \text{for}\ H\ \text{and}\ K,
+\boxed{\; \omega(\tilde Q_1,\tilde Q_2)=+g(\tilde Q_1,i\tilde Q_2)\ \text{for}\ H\ \text{and}\ K,
 \qquad
-\sigma(\tilde Q_1,\tilde Q_2)=-g(\tilde Q_1,i\tilde Q_2)\ \text{for}\ B\ \text{and}\ N,
+\sigma(\tilde Q_1,\tilde Q_2)=-g(\tilde Q_1,i\tilde Q_2)\ \text{for}\ B\ \text{and}\ N \;},
 $$
 
 on the two complex subspaces, and the one sign is the whole difference between the two pairs. It is worth keeping: the two identities are the reason the imaginary part of a bilinear form is symmetric and the imaginary part of a sesquilinear form alternating, and not the other way round.
@@ -325,9 +325,9 @@ The same rows with the signatures of $\langle\cdot,\cdot\rangle_{*}$, $\langle\c
 **The three orthogonal splittings.** The form is diagonal in the natural bases, so three pairs of complementary subspaces split the algebra orthogonally, the signatures adding to $(4,4)$ in each:
 
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B}),\qquad
+\boxed{\; \mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B}),\qquad
 \mathbb{B}=\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}},\qquad
-\mathbb{B}=\mathbb{M}_+\perp\mathbb{M}_-,
+\mathbb{B}=\mathbb{M}_+\perp\mathbb{M}_- \;},
 $$
 
 of signatures $(1,1)\perp(3,3)$, $(1,3)\perp(3,1)$ and $(4,0)\perp(0,4)$. Only the third splits the realified form into a positive definite and a negative definite piece; in the first two both sides carry isotropic vectors. The two restricted forms of the third split are exchanged by the central scalar, $\langle i\tilde Q_1,i\tilde Q_2\rangle=-\langle\tilde Q_1,\tilde Q_2\rangle$.

@@ -170,9 +170,9 @@ The mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ follows. Trans
 **The conservation law for a system, stated correctly.** For an isolated system of bodies $a$ the conserved object is the **total** four-momentum, and the correct statement is
 
 $$
-\tilde{P}_{\mathrm{tot}} = \sum_a \tilde{P}_a,
+\boxed{\;\tilde{P}_{\mathrm{tot}} = \sum_a \tilde{P}_a,
 \qquad
-\frac{d\tilde{P}_{\mathrm{tot}}}{dt'} = 0,
+\frac{d\tilde{P}_{\mathrm{tot}}}{dt'} = 0\;},
 $$
 
 a vanishing **coordinate**-time derivative. The parent defines the four-force by the **proper**-time derivative of a single body, $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$, and since $d\tau_a = dt'/\gamma_a$,
@@ -220,7 +220,7 @@ The pairing is $\mathrm{Sc}(\tilde P\tilde{R}_0) = \langle\tilde P,\tilde{R}_0\r
 The same translation symmetry applied to the field action gives the **canonical energy–momentum**, the Noether current of spacetime translations. For the complex scalar field it is
 
 $$
-T^\mu{}_\nu = -(\partial^\mu\phi^*)\,\partial/\partial Q_\nu\,\phi - (\partial^\mu\phi)\,\partial/\partial Q_\nu\,\phi^* - \delta^\mu{}_\nu\,\mathcal{L},
+\boxed{\;T^\mu{}_\nu = -(\partial^\mu\phi^*)\,\partial/\partial Q_\nu\,\phi - (\partial^\mu\phi)\,\partial/\partial Q_\nu\,\phi^* - \delta^\mu{}_\nu\,\mathcal{L}\;}
 $$
 
 and translation invariance of $\mathcal{L}$ gives $\partial/\partial Q_\mu T^\mu{}_\nu = 0$ on shell. Its time–time component is the energy density,
@@ -250,7 +250,7 @@ $$
 using $dx^\mu/d\tau = p^\mu/m$; the conservation of the six independent components is the conservation of angular momentum and of the boost charges. In the biquaternion algebra the antisymmetric pair is a **bivector**, the same representation the field strength occupies: writing
 
 $$
-\vec{L} = \tfrac12\sum_{\mu,\nu}L^{\mu\nu}\,\bar{e}_\mu e_\nu,
+\boxed{\;\vec{L} = \tfrac12\sum_{\mu,\nu}L^{\mu\nu}\,\bar{e}_\mu e_\nu\;}
 $$
 
 the angular momentum of a free particle is a single biquaternion. This is the same construction by which $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.

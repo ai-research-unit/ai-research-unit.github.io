@@ -16,8 +16,6 @@ The article also reads the **two-sided annihilator of the structure**, the set o
 
 **The results.** The left and the right annihilators of an element coincide, since the multiplication is commutative, and they are an ideal. The annihilator of a unit is $\{0\}$; the annihilator of a nonzero element of one idempotent line is the other idempotent line, a complex line of real dimension two; the annihilator of $0$ is the whole algebra; and the annihilator of the whole algebra is $\{0\}$. The map $\breve Q\mapsto\operatorname{Ann}(\breve Q)$ takes the units and $0$ to the two trivial ideals and the two lines to each other, so the set of annihilators of the elements is the set of the four ideals of the algebra.
 
-**Boundaries.** The zero divisors, the two lines and the maximal ideals are *Zero Divisors of the Algebra of the Reduced Biquaternions*, above this article in this category. The criterion of invertibility is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, above this article. The idempotents and the projectors are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, below this article, and the Peirce decomposition into the ideals the idempotents carry is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, below this article in this category. The annihilators as ideals in the biquaternion layer, with the one-sided annihilators of a non-commutative algebra, are *Annihilators of the Biquaternion Algebra*.
-
 ## The Annihilator of an Element
 
 ### Left and Right, They Coincide

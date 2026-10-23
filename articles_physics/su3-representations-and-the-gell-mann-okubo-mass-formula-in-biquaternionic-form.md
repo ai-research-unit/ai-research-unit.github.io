@@ -8,8 +8,6 @@ It is recorded with an explicit standing, stated at the outset so that it is not
 
 The article is organised as follows. A section gives the representations as traceless bisymmetric tensors and the degree formula. A section fixes the Okubo basis and the three $\mathfrak{su}(2)$ subalgebras. A section states the admissibility condition and lists the allowed degrees. A section reduces the octet into isospin multiplets. A section derives and then checks the Gell-Mann–Okubo mass formula. A closing section states the biquaternion interpretation.
 
-**Conventions.** The Okubo basis and the degree formula are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§4–6) and from Okubo's *Lecture Notes in Physics* **94**; the mass relations are the standard Gell-Mann–Okubo relations and are checked against the Particle Data Group values. The companion *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form* supplies the space on which these representations act, and *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form* supplies the mass $m_0$ of a supermultiplet.
-
 - Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ on which these representations act.
 - Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass $m_0$ of the supermultiplet and the representation degrees on the spin lines.
 - Companion articles *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *The Gluon: An Octet Outside the Biquaternion Algebra*, for why $\mathrm{SU}(3)$ is external.
@@ -162,7 +160,7 @@ The terms carrying the subscript $2$ are the charge splitting and those without 
 Since the charge splitting is small, the leading hypercharge splitting is
 
 $$
-m = m_0+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14 Y^2\Bigr),
+\boxed{\;m = m_0+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14 Y^2\Bigr)\;},
 $$
 
 the **linear** Gell-Mann–Okubo formula, valid when $\delta m^2/m_0^2\ll1$.
@@ -181,7 +179,7 @@ For the baryon octet $F_{1/2}$ the hypercharge splitting gives the four masses
 Eliminating the four parameters $m_0,\alpha,\beta,\gamma$ gives the relations
 
 $$
-m_\Xi+m_N = \tfrac12\bigl(3m_\Lambda+m_\Sigma\bigr),
+\boxed{\;m_\Xi+m_N = \tfrac12\bigl(3m_\Lambda+m_\Sigma\bigr)\;},
 \qquad
 m_\Xi+m_N = 2m_0+2\alpha+\gamma .
 $$
@@ -203,7 +201,7 @@ a discrepancy of $0.58\%$. The relation is satisfied to better than one percent 
 The parameter $m_0$ is $\mathrm{SU}(3)$-invariant and therefore **not determined by $\mathrm{SU}(3)$**; it is an external parameter, one value per supermultiplet, and it is the average of the masses of the charge multiplets in the supermultiplet. For the baryon octet,
 
 $$
-m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_\Xi\bigr).
+\boxed{\;m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_\Xi\bigr)\;}.
 $$
 
 The programme closes the system by identifying $m_0$ with the mass of the spin representation that carries the supermultiplet. That is the companion mass formula's $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, with $l,\bar l$ the representation of the octet's spin line. The two chapters therefore connect: the representation degree fixes the **centre** of the supermultiplet's mass multiplet, and the Gell-Mann–Okubo formula fixes the **splitting** about that centre. The companion article's numbers — $1770\,m_e$, $2278\,m_e$, $264.5\,m_e$ for the nucleon, $\Sigma$ and $\pi$ — are these centres, and the splittings about them are the $\pm\beta\mp\tfrac12\gamma$ and $2\gamma$ of the table above.

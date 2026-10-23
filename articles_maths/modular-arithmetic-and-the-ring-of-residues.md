@@ -61,8 +61,7 @@ $$
 
 is an isomorphism of rings. More generally, for pairwise coprime $n_1, \dots, n_k$,
 
-$$
-\mathbb{Z}/n_1\cdots n_k\mathbb{Z} \cong \prod_{i=1}^{k} \mathbb{Z}/n_i\mathbb{Z}.
+$$ \boxed{\;\mathbb{Z}/n_1\cdots n_k\mathbb{Z} \cong \prod_{i=1}^{k} \mathbb{Z}/n_i\mathbb{Z}\;}.
 $$
 
 **Proof.** The kernel of $\psi$ is the set of classes divisible by both $m$ and $n$, that is, by $mn$ since $m$ and $n$ are coprime; so $\psi$ is injective. The two rings have the same finite cardinality $mn$, so $\psi$ is bijective. The general case is induction.
@@ -119,8 +118,7 @@ and it is the Dirichlet series coefficient determined by $\sum_{n \geq 1} \varph
 
 **Theorem (Euler).** If $\gcd(a, n) = 1$ then
 
-$$
-a^{\varphi(n)} \equiv 1 \pmod n .
+$$ \boxed{\;a^{\varphi(n)} \equiv 1 \pmod n \;}.
 $$
 
 **Proof.** Multiplication by $\bar a$ permutes the group $(\mathbb{Z}/n\mathbb{Z})^\times$, so $\prod_{u \in U} u = \prod_{u\in U} \bar a u = \bar a^{\varphi(n)} \prod_{u\in U} u$; cancelling the product, which is a unit, gives $\bar a^{\varphi(n)} = \bar 1$.
@@ -181,8 +179,7 @@ $$
 
 **Theorem (quadratic reciprocity).** For distinct odd primes $p$ and $q$,
 
-$$
-\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}},
+$$ \boxed{\;\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\;},
 $$
 
 and the supplementary laws are $\left(\frac{-1}{p}\right) = (-1)^{(p-1)/2}$ and $\left(\frac{2}{p}\right) = (-1)^{(p^2-1)/8}$.

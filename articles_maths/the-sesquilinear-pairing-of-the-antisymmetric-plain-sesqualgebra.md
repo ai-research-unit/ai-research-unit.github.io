@@ -8,15 +8,15 @@ Two structural facts organise the reading. The first is the compatibility of the
 
 The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra*; the product that is split is *Introduction to the General Plain Sesqualgebra*; the general construction of the two parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the form $\langle\cdot,\cdot\rangle_{*}$, its positivity and its cone are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the sandwich and its operators are *The Sesquilinear Sandwich on the Biquaternion* and *The Adjoint of the Sesquilinear Sandwich on the Biquaternion*; the left multiplication of the row is *The Left and Right Multiplications of the Biquaternion Sesqualgebra*; the trace form and the four pairings of the algebra are *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; and the remarkable subspaces are *Introduction to the Remarkable Subspaces*.
 
-**Conventions.** As in the two articles above: $\tilde Q=Q_te_t+\vec Q$, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ and $\tilde Q_3=Q_{3t}e_t+\vec Q_3$, with $\overline{\vec Q}$, $\overline{\vec Q_1}$, $\overline{\vec Q_2}$ and $\overline{\vec Q_3}$ the coefficientwise conjugates of the vector parts, $(\vec Q,\overline{\vec Q_3})=\sum_{\mu\in\{x,y,z\}}Q_\mu\overline{Q_{3\mu}}$ the Hermitian pairing of the vector parts, $(\vec Q,\vec Q_3)=\sum_{\mu\in\{x,y,z\}}Q_\mu Q_{3\mu}$ the complex bilinear one, and $[\vec Q,\vec Q_2,\vec Q_3]$ the complex trilinear scalar triple product $(\vec Q\times\vec Q_2,\vec Q_3)$.
-
 ## The Pairing with the Form
 
 **Theorem (the pairing).** For all biquaternions,
 
 $$
+\boxed{\;
 H\bigl(\tilde Q\diamond\tilde Q_2,\tilde Q_3\bigr)
-=-Q_t\,(\overline{\vec Q_2},\overline{\vec Q_3})+\overline{Q_{2t}}\,(\vec Q,\overline{\vec Q_3})-[\vec Q,\overline{\vec Q_2},\overline{\vec Q_3}],
+=-Q_t\,(\overline{\vec Q_2},\overline{\vec Q_3})+\overline{Q_{2t}}\,(\vec Q,\overline{\vec Q_3})-[\vec Q,\overline{\vec Q_2},\overline{\vec Q_3}]
+\;},
 $$
 
 a map that is additive in each argument, $\mathbb{C}$-linear in $\tilde Q$, and conjugate-linear in $\tilde Q_2$ and in $\tilde Q_3$.
@@ -79,9 +79,7 @@ for all $\tilde Q,\tilde Q_2,\tilde Q_3$. The sign and the conjugation are the s
 
 **Theorem (the space of the invariants, and the degeneracy).** The space of the forms $\beta$ satisfying the invariance is one-complex-dimensional, spanned by
 
-$$
-\beta(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}},
-$$
+$$ \boxed{\; \beta(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}} \;}, $$
 
 the form that reads the two scalar parts. On that form the invariance holds **degenerately**: both members vanish identically, because the scalar part of every value of the block is zero. The form $\langle\cdot,\cdot\rangle_{*}$ itself is **not** invariant.
 
@@ -126,9 +124,11 @@ so its vector part is the operator of the block followed by the right multiplica
 **Theorem (the pairing vanishes exactly on the kernel).** For all biquaternions,
 
 $$
+\boxed{\;
 H\bigl(\tilde Q\diamond\tilde Q_2,\tilde Q\diamond\tilde Q_2\bigr)=0
 \quad\Longleftrightarrow\quad
-\tilde Q\diamond\tilde Q_2=0 .
+\tilde Q\diamond\tilde Q_2=0
+\;}.
 $$
 
 The set of the pairs for which the quadratic form of the block vanishes is therefore the kernel of the operation, and it is not the quadric of the diagonal of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*: the diagonal asks for the pairs with $\tilde Q_2=\tilde Q$ on which $\mathrm{Vect}(\tilde Q_2\tilde Q_2^{*})=0$, while the pairing asks for the pairs on which $\mathrm{Vect}(\tilde Q\tilde Q_2^{*})=0$, and the two conditions are different.

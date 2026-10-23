@@ -20,8 +20,6 @@ The biquaternion framework makes a structural statement about the EDM operator t
 
 The article is organised as follows. A section defines the EDM operator and its discrete symmetries. A section establishes the anti-Hermitian structure and the Hodge duality. A section gives the form-factor decomposition and contrasts the EDM with the magnetic moment. A section treats the origin of the CP-odd phase. A section collects the bounds and the scales they probe. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The Dirac module is $\Delta=S\oplus\bar{S}$ with $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, and
-
 $$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\quad
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\quad
@@ -81,9 +79,9 @@ The pattern is the standard one: $\gamma^0$ is Hermitian and $\gamma^k$ anti-Her
 **The Hodge duality.** The two families of insertions are dual to each other. In terms of the totally antisymmetric symbol,
 
 $$
-\sigma^{\mu\nu}\gamma_5 = \frac{i}{2}\,\epsilon^{\mu\nu\rho\sigma}\,\sigma_{\rho\sigma},
+\boxed{\;\sigma^{\mu\nu}\gamma_5 = \frac{i}{2}\,\epsilon^{\mu\nu\rho\sigma}\,\sigma_{\rho\sigma},
 \qquad\text{i.e.}\qquad
-\sigma^{\mu\nu}_{\mathrm D}:=\tfrac12\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma} = -\,i\,\sigma^{\mu\nu}\gamma_5 ,
+\sigma^{\mu\nu}_{\mathrm D}:=\tfrac12\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma} = -\,i\,\sigma^{\mu\nu}\gamma_5\;},
 $$
 
 an identity that was recomputed for all pairs $(\mu,\nu)$ with residual exactly zero. The duality exchanges the electric and magnetic components: $\sigma^{0k}\gamma_5$ is dual to a combination of the $\sigma^{ij}$, and vice versa. Since the duality factor is $i$, it exchanges Hermitian with anti-Hermitian, which is exactly the flip recorded above.
@@ -102,7 +100,7 @@ The EDM insertion is therefore the anti-Hermitian, material-sector insertion, an
 **The dictionary form of the EDM insertion.** The placement can be made exact rather than a Hermiticity match. Under the dictionary that carries the biquaternion basis to the Clifford generators, $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$, the EDM insertion *is* the image of a basis element of the material sector:
 
 $$
-\sigma^{0k}\gamma_5 = -\mathsf{M}_2(\vec e_k) = \mathsf{M}_2(-\vec e_k), \qquad -\vec e_k \in \mathbb{M}_- ,
+\boxed{\;\sigma^{0k}\gamma_5 = -\mathsf{M}_2(\vec e_k) = \mathsf{M}_2(-\vec e_k), \qquad -\vec e_k \in \mathbb{M}_-\;},
 $$
 
 verified for $k=1,2,3$ with residual exactly zero. The EDM insertion is thus not merely anti-Hermitian and therefore material; up to a sign it is the Clifford image of one of the three vector basis elements $\vec e_k$ of $\mathbb{M}_-$ — the same elements that carry the spatial directions of the material sector. The magnetic insertion corresponds to the informational element $i\vec e_k$, and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{M}_-=\mathbb{M}_+$, the same $\vec e_k$ appears on both sides of the table. The correspondence is a statement about the objects the insertion represents, in the sense of the convention that reads the sectors on the fields; the sectors are real vector spaces on which the algebra acts rather than subalgebras, and a general element of the even Clifford algebra need not fall in one of them.
@@ -263,7 +261,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 The electric dipole moment is the CP-odd, dimension-five coupling of a spin-$\tfrac12$ particle to the electromagnetic field, $-\tfrac{i}{2}d\,\bar{\psi}\sigma^{\mu\nu}\gamma_5\psi F_{\mu\nu}$, whose nonrelativistic limit is $-d\,\vec E\cdot\boldsymbol{\sigma}$. In the biquaternion framework its insertion has a definite algebraic character: the $\vec E$-coupling insertion $\sigma^{0k}\gamma_5$ is **anti-Hermitian** and therefore lies in the material sector $\mathbb{M}_-$, while the $\vec B$-coupling magnetic-moment insertion $\sigma^{ij}$ is **Hermitian** and lies in the informational sector $\mathbb{M}_+$; both statements were recomputed entry by entry in the block basis. The two are Hodge duals,
 
 $$
-\sigma^{\mu\nu}\gamma_5=\frac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma},
+\boxed{\;\sigma^{\mu\nu}\gamma_5=\frac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}\;},
 $$
 
 verified for all pairs $(\mu,\nu)$ with residual exactly zero, and the $i$ of the duality exchanges Hermiticity between the pair. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian and is the algebra's marker of the CP-odd coefficient.

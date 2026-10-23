@@ -27,8 +27,6 @@ which is the action on the **material sector** $\mathbb{M}_-$, where the four-ve
 
 Three claims organize the article. First, the general operator's module is the spinor module of the norm-one group **twisted** by a one-dimensional representation of the scaling: the scale and the phase do not change the module, they change its **weight**, and the four polar factors map onto the operator data term by term. Second, the correspondence fails on exactly one set — the null cone — and this is the condition of existence: the twisted spinor representation is an operator description of the polar word, so it is available precisely where the polar word is, that is, for $\langle\tilde{Q}\rangle_{\natural}\neq0$ and nowhere else. Third, the norm-one slice, where $r=1$ and $\alpha=0$, is the Lorentz group: it is the untwisted case, and it is the only case in which the sandwich is an isometry.
 
-**Conventions.** The conventions of *Conventions in the Biquaternion Universe* are used throughout. The quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the scalar imaginary is $i$, commuting with the quaternion units. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The **material sector** is the anti-Hermitian subspace $\mathbb{M}_-$ and the **informational sector** is the Hermitian subspace $\mathbb{M}_+$ (*The Material Sector: Four-Vectors, Interval and Lorentz Action*, *The Informational Sector: States, Observables and Probability*); the group of units is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ and the group of unit-norm elements is $\mathbb{B}^{\times}_1=\{\langle\tilde Q\rangle_{\natural}=1\}\cong SL(2,\mathbb{C})$ (*The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*, *The 12 Products of the Biquaternion Complex Space*, *Biquaternion Lie Group and Exponential Structure*). The word **unit** is used here in the ring sense: a unit is an element of the group of units, that is, an invertible element, while a **unit element** is an element of norm one, the group $\mathbb{B}^{\times}_1$ above; the two are kept apart throughout. **Unitary** is a third and narrower notion: an element is unitary when it preserves the sesquilinear form, $\tilde{Q}^{*}\tilde{Q}=e_t$, and the unitary elements form the group $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ (*Conventions in the Biquaternion Universe*, §*The Unitary Convention*). A **representation** is called unitary in the different sense of preserving an inner product, and **unitarizable** when some inner product is invariant, which is the sense of the closing section. The polar form and its four factors are *The Polar Decomposition of Biquaternions* and *The Polar Decomposition in Subspaces*, and are used here without repetition; the module is *The Element and Operator Representations* and *Modules over the Biquaternion Algebra*; the realizations of the algebra are *The Element and Operator Representations* and *The Four-Vector Element Representation of Biquaternions*; and the operator on the algebra, with its laws and its invariants, is *Biquaternion Rotations and Lorentz Transformations* and *The Operators: One-Sided, Two-Sided, Sandwich*.
-
 ## The Operator Version of the Polar Decomposition
 
 The polar word and the operator data are the same information, cut differently, and the cut is the one the two-sided action makes.
@@ -72,8 +70,8 @@ $$
 Under the matrix isomorphism the operator on the module is a scalar times a norm-one element,
 
 $$
-\tilde{Q}\;\longmapsto\;\mathsf{M}_2(\tilde{Q})=\rho\,\mathsf{M}_2(\tilde U_{\mathrm L})
-=\underbrace{\rho}_{\text{scalar}}\;\underbrace{\mathsf{M}_2(B)\,\mathsf{M}_2(\tilde q)}_{\text{in }SL(2,\mathbb{C})},
+\boxed{\;\tilde{Q}\;\longmapsto\;\mathsf{M}_2(\tilde{Q})=\rho\,\mathsf{M}_2(\tilde U_{\mathrm L})
+=\underbrace{\rho}_{\text{scalar}}\;\underbrace{\mathsf{M}_2(B)\,\mathsf{M}_2(\tilde q)}_{\text{in }SL(2,\mathbb{C})}\;},
 $$
 
 and the action on $S=\mathbb{C}^2$ is left multiplication, $\psi\mapsto\mathsf{M}_2(\tilde{Q})\psi$.
@@ -116,10 +114,10 @@ $$
 so that, the phase being central and cancelling,
 
 $$
-H_{\tilde{Q}}(\tilde Q_1)=\tilde{Q}\,\tilde Q_1\,\tilde{Q}^{*}
+\boxed{\;H_{\tilde{Q}}(\tilde Q_1)=\tilde{Q}\,\tilde Q_1\,\tilde{Q}^{*}
 =r\,\exp(i\alpha)B\tilde q\;\tilde Q_1\;\tilde q^{-1}B\,r\,\exp(-i\alpha)
 =r^{2}\,B\bigl(\tilde q\,\tilde Q_1\,\tilde q^{-1}\bigr)B
-=r^{2}\,\tilde U_{\mathrm L}\,\tilde Q_1\,\tilde U_{\mathrm L}^{*}.
+=r^{2}\,\tilde U_{\mathrm L}\,\tilde Q_1\,\tilde U_{\mathrm L}^{*}\;}.
 $$
 
 This is the central identity of the article. Everything else is an interpretation of it.
@@ -165,7 +163,7 @@ the standard boost with rapidity $\psi$, produced by the rotor that stores $\psi
 **What the sandwich generates.** Combining the two interpretations, the map $H_{\tilde{Q}}$ is a dilatation composed with a Lorentz transformation, and as $\tilde{Q}$ runs over all invertible elements the pair $(r^{2},\tilde U_{\mathrm L})$ runs over all positive reals and all of $\mathbb{B}^{\times}_1$. The image of the sandwich action on the material sector is therefore
 
 $$
-\{H_{\tilde{Q}}\}\cong\mathbb{R}_{>0}\times SO^{+}(1,3),
+\boxed{\;\{H_{\tilde{Q}}\}\cong\mathbb{R}_{>0}\times SO^{+}(1,3)\;},
 $$
 
 the Lorentz group together with the dilatations — the **similitude** group, the Lorentz group extended by the scale — with no phase anywhere. Physically this is the statement that a general biquaternion operator is a Lorentz transformation together with a change of units, and that the unit of length is not the phase. No choice of $\tilde{Q}$ produces a phase in the sandwich, and no choice produces anything outside this group. The sandwich preserves the two Hermitian sectors and the rank of the matrix image, as the scalar factor $r^{2}$ cannot change either.

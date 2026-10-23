@@ -9,7 +9,7 @@ A massless element of the framework is an element of zero biquaternion norm, and
 The null cone is the zero set of the biquaternion norm,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0,
+\boxed{\;\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0\;},
 $$
 
 and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm is the interval,
@@ -25,7 +25,7 @@ so the null cone of the algebra restricts to the **light cone** of the material 
 The cone is a cone over its own directions. Two nonzero null elements define the **same direction** when one is a nonzero scalar multiple of the other; the set of directions is the **projectivisation** of the null cone, and on the material sector it is a two-dimensional sphere,
 
 $$
-\mathcal{C} \;=\; \bigl\{\text{null directions of }\mathbb{M}_-\bigr\} \;\cong\; S^2,
+\boxed{\;\mathcal{C} \;=\; \bigl\{\text{null directions of }\mathbb{M}_-\bigr\} \;\cong\; S^2\;},
 $$
 
 which is the **celestial sphere** of the light cone: the sphere of lightlike directions at a point, the sphere a photon's momentum points along, swept by the two angles $(\theta,\varphi)$. The Lorentz group acts on it transitively: the future lightlike directions form one orbit of the proper orthochronous Lorentz group, the past directions the other, and time reversal exchanges the two. No direction is preferred, which is the statement that the sphere is a single orbit. A **massless element** is determined by its direction and its scale, and the scale is not a Lorentz datum of the direction; so the sphere, and not the cone, is the Lorentz-homogeneous object.
@@ -35,7 +35,7 @@ which is the **celestial sphere** of the light cone: the sphere of lightlike dir
 Over the complex numbers the cone has a second structure, and it is the one the spinors see. Complexifying, the null cone of the biquaternion algebra is a complex three-dimensional cone in $\mathbb{B}\cong\mathbb{C}^4$, and its projectivisation is a **quadric in the projective three-space**, the **Segre quadric**
 
 $$
-\mathbb{P}^1\times\mathbb{P}^1 \;\subset\; \mathbb{P}^3,
+\boxed{\;\mathbb{P}^1\times\mathbb{P}^1 \;\subset\; \mathbb{P}^3\;},
 $$
 
 whose two rulings are the two families of chiral spinor lines. This is the projective null cone the corpus records in *The Null Quadric and Its Projective Geometry*, and it is the object the twistor article compares with twistor space: the quadric is a product of two complex projective lines, the two **chiral celestial spheres**, and the two rulings are the two chiral spinor families. The relation between the two pictures is a real slice: the two chiral spheres of the complex cone are complex conjugates of one another, and the real celestial sphere of the material sector is their diagonal, the fixed set of the conjugation. So the real sphere $S^2$ is one sphere and the complex cone carries two, and the pair of them, not the one, is what the complexified cone projectivises to. The complex cone comes with a circle bundle of its own: its **link** in the unit sphere is an $S^1$-bundle over the pair of chiral spheres,

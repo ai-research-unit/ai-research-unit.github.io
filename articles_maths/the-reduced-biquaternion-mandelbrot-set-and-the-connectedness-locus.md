@@ -14,8 +14,6 @@ The result is that the connectedness locus is the product of the Mandelbrot set 
 
 The article owns the connectedness locus, the bifurcation locus, the escape-time algorithm and its exactness, the singular parameters and the singular slices. The fractal and its product structure are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the global decomposition is *The Idempotent Decomposition and the Split Fractal*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the topological norm that measures the escape is *Topology and Metric for Each of the Operations*. The companion is *The Biquaternion Mandelbrot Set and the Connectedness Locus*, where the escape criterion meets an obstruction.
 
-**Conventions.** The complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$, Julia set $J_{c}$ and Mandelbrot set $\mathcal{M}=\{c:K_{c}\text{ connected}\}$; the reduced biquaternion family is parametrised by $C=c_{1}\Pi_++c_{2}\Pi_-$; the topological norm is $K(\breve Q)=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$.
-
 ## The Mandelbrot Set of the Complex Family
 
 **Proposition (the complex locus).** For the complex quadratic family the connectedness locus is the Mandelbrot set
@@ -33,7 +31,9 @@ which is compact, connected and full, of interior the union of the hyperbolic co
 **Theorem (the locus is the product).** The connectedness locus of the reduced biquaternion quadratic family is
 
 $$
-\mathfrak{M}=\{C:\mathcal{K}_{C}\text{ is connected}\}=\{C:c_{1}\in\mathcal{M}\text{ and }c_{2}\in\mathcal{M}\}=\mathcal{M}\times\mathcal{M},
+\boxed{\;
+\mathfrak{M}=\{C:\mathcal{K}_{C}\text{ is connected}\}=\{C:c_{1}\in\mathcal{M}\text{ and }c_{2}\in\mathcal{M}\}=\mathcal{M}\times\mathcal{M}
+\;},
 $$
 
 the product of the Mandelbrot set with itself, read in the idempotent coordinates.
@@ -43,7 +43,9 @@ the product of the Mandelbrot set with itself, read in the idempotent coordinate
 **Corollary (the elementary properties).** The locus $\mathfrak{M}$ is compact, connected and full in the complex two-space; its boundary is the union of the two products of a boundary with the whole,
 
 $$
-\partial\mathfrak{M}=\bigl(\partial\mathcal{M}\times\mathcal{M}\bigr)\cup\bigl(\mathcal{M}\times\partial\mathcal{M}\bigr),
+\boxed{\;
+\partial\mathfrak{M}=\bigl(\partial\mathcal{M}\times\mathcal{M}\bigr)\cup\bigl(\mathcal{M}\times\partial\mathcal{M}\bigr)
+\;},
 $$
 
 and the same formula holds for the boundary of the locus inside the product.
@@ -57,7 +59,9 @@ and the same formula holds for the boundary of the locus inside the product.
 **Theorem (the bifurcation locus).** The parameter $C$ is a bifurcation parameter, that is the dynamics of $F_{C}$ is unstable in the sense that the critical orbit changes its qualitative behaviour under every neighbourhood, exactly when at least one of the two complex parameters is a bifurcation parameter of the complex family, that is exactly when
 
 $$
-C\in\bigl(\partial\mathcal{M}\times\mathbb{C}\bigr)\cup\bigl(\mathbb{C}\times\partial\mathcal{M}\bigr).
+\boxed{\;
+C\in\bigl(\partial\mathcal{M}\times\mathbb{C}\bigr)\cup\bigl(\mathbb{C}\times\partial\mathcal{M}\bigr)
+\;}.
 $$
 
 **Proof.** The dynamics of $F_{C}$ is the product of the two complex dynamics, and a property of the product is stable exactly when it is stable in both factors, because the norm separates the two coordinates; so the instability occurs exactly when one factor is unstable, which is the displayed union.

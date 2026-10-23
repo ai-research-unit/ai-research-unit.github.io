@@ -14,8 +14,6 @@ The article is organized as follows. The next section recalls the chiral decompo
 
 Open questions follow.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The conjugations are the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$ (conjugation of the coefficients) and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*}$; the anti-Hermitian conjugate is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\partial/\partial Q_\mu$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_\mu\partial/\partial Q_\mu$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$; the spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$, and its complex conjugate $\bar{S}=(0,\tfrac12)$ is the right-handed Weyl module. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
-
 ## The Two Chiral Halves and the Projectors
 
 The chiral decomposition is a property of the spinor module, and it is inherited unchanged from the read list. The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a single simple module $S$; the left-handed Weyl spinor is $V_1=(\tfrac12,0)$, carried by $S$, and the right-handed Weyl spinor is its complex conjugate $\bar{S}=(0,\tfrac12)$. Their direct sum
@@ -110,9 +108,9 @@ $$
 The gauge transformation is $\Psi\mapsto\Lambda\Psi$, and the connection transforms as $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, exactly as in the abelian gauge principle. The covariant derivative is the module operator
 
 $$
-D_\mu \;=\; \partial/\partial Q_\mu + \frac{i}{\hbar}\,A_\mu\,Ϙ ,
+\boxed{\;D_\mu \;=\; \partial/\partial Q_\mu + \frac{i}{\hbar}\,A_\mu\,Ϙ ,
 \qquad\text{so that}\qquad
-D_{2,\mu}(\Lambda\Psi) \;=\; \Lambda\,D_\mu\Psi
+D_{2,\mu}(\Lambda\Psi) \;=\; \Lambda\,D_\mu\Psi\;}
 $$
 
 for the derivative $D_2$ built from $A_{2,\mu}=A_\mu-\partial/\partial Q_\mu\,\Gamma$. The covariance is a two-line computation:
@@ -157,7 +155,7 @@ $$
 which is position dependent unless the phase is unity. The bilinear is gauge invariant for all gauge functions $\Gamma$ **if and only if**
 
 $$
-ϙ_R = ϙ_L .
+\boxed{\;ϙ_R = ϙ_L\;}
 $$
 
 This is the **mass selection rule**: a bare Dirac mass is compatible with the gauge symmetry exactly when the two chiralities carry the same charge, i.e. exactly when the fermion is vector-like. A genuinely chiral fermion, $ϙ_R\neq ϙ_L$, has no gauge-invariant bare mass; its mass must wait for a field carrying the compensating charge $ϙ_L-ϙ_R$ (the mass bilinear acquires the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$), which is what the Higgs mechanism supplies. The rule was checked on both branches: it holds for all $\Gamma$ when $ϙ_L=ϙ_R$ (the vector-like case, including $ϙ_L=ϙ_R=0$), and it fails for the chiral case $ϙ_L\neq ϙ_R$, including the axial assignment $ϙ_R=-ϙ_L$. In particular the rule is not merely "some charge is preserved": an axial $\mathrm{U}(1)$, which carries opposite charges on the two halves and is the natural first guess for a chiral symmetry, does not preserve the mass either.

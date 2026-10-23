@@ -21,15 +21,15 @@ Graphene is a single layer of carbon atoms on a honeycomb lattice. The lattice i
 Expanding the tight-binding bands about a zone corner gives the effective Hamiltonian
 
 $$
-H = v_F\,\boldsymbol{\sigma}\cdot\vec p,
+\boxed{\;H = v_F\,\boldsymbol{\sigma}\cdot\vec p,
 \qquad
-v_F \approx 10^6\ \mathrm{m/s} \approx \frac{c}{300},
+v_F \approx 10^6\ \mathrm{m/s} \approx \frac{c}{300}\;},
 $$
 
 acting on the two-component sublattice spinor. This is the massless Dirac equation in two spatial dimensions, with $v_F$ in place of $c$. Its energies are
 
 $$
-E(\vec p) = \pm v_F|\vec p|,
+\boxed{\;E(\vec p) = \pm v_F|\vec p|\;},
 $$
 
 linear in momentum and vanishing at $\vec p = 0$: the bands touch at the Dirac point and there is no gap. A finite **mass** term opens one,
@@ -92,7 +92,7 @@ A **topological insulator** is a material with a gap in the bulk and gapless sta
 For the time-reversal-symmetric topological insulators the invariant takes values in $\mathbb Z_2$: a single bit, trivial or not. Time reversal is essential to the classification, and the reason is a sign. On a spin-$\tfrac12$ state the time-reversal operator is antiunitary and squares to
 
 $$
-\mathcal T^2 = -1 ,
+\boxed{\;\mathcal T^2 = -1\;},
 $$
 
 which forces every $\mathcal T$-invariant Hamiltonian to have its spectrum even-degenerate — **Kramers degeneracy**. The two partners of a Kramers pair cannot be split by any time-reversal-symmetric perturbation. The biquaternion framework treats this structure in the companion article *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*, which constructs the module-level time-reversal operator as a rotation composed with the conjugation, shows that the relevant rotation element is the one squaring to $-e_t$ (the rotor of the $2\pi$ rotation), obtains $\mathcal T^2=-e_t$ on the spinor module, and identifies the resulting two-complex-dimensional commutant with a **quaternionic** line. The $\mathbb Z_2$ nature of the topological classification and the quaternionic nature of the Kramers structure are two faces of one sign, and the framework supplies the sign as an element of $\mathbb B$. The material still supplies the bands.

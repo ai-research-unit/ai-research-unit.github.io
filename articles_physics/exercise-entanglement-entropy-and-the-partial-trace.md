@@ -85,7 +85,7 @@ $$
 So the reduced states are the two products of the coefficient matrix with its adjoint:
 
 $$
-\boxed{\;\rho_1=MM^\dagger,\qquad \rho_2=M^\dagger M.\;}
+\boxed{\;\rho_1=MM^\dagger,\qquad \rho_2=M^\dagger M\;}.
 $$
 
 For the worked family the matrix is $M_\theta=\mathrm{diag}(\cos\theta,\sin\theta)$, so $\rho_1=\rho_2=\mathrm{diag}(\cos^2\theta,\sin^2\theta)$ immediately; the general structural statement is the subject of the next subsection.
@@ -176,7 +176,7 @@ Summing,
 
 $$
 \boxed{\;\tilde{Ϛ}_1=\mathrm{Tr}_2(\tilde\Pi_\theta)=\tfrac12 e_t+\tfrac{i\cos2\theta}{2}\vec e_z
-=\tfrac12\left(e_t+i\cos2\theta\,\vec e_z\right).\;}
+=\tfrac12\left(e_t+i\cos2\theta\,\vec e_z\right)\;}.
 $$
 
 This is a state of $\mathbb{M}_+$ of the standard form $\tfrac12(e_t+i\vec r)$ with Bloch vector
@@ -208,7 +208,7 @@ and therefore
 
 $$
 \boxed{\;S(\tilde{Ϛ}_1)=-\cos^2\theta\,\log\cos^2\theta-\sin^2\theta\,\log\sin^2\theta
-=h(\cos^2\theta).\;}
+=h(\cos^2\theta)\;}.
 $$
 
 This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\psi_\theta\rangle$ are $(\cos\theta,\sin\theta)$, and $h(\cos^2\theta)=h(s_1^2)$. The biquaternion route reaches the same number by a different mechanism — it never diagonalises $M$; it reads the Bloch vector off the partial trace and then uses the single-qubit entropy formula on $\mathbb{M}_+$.
@@ -237,10 +237,10 @@ $$
 be its reduced states. Then $\tilde{Ϛ}_1$ and $\tilde{Ϛ}_2$ are states of $\mathbb{M}_+$, and their spectra are $(1\pm|\vec r_1|)/2$ and $(1\pm|\vec r_2|)/2$. The Schmidt theorem says the spectra coincide, hence
 
 $$
-|\vec r_1|=|\vec r_2|,
+\boxed{\;|\vec r_1|=|\vec r_2|,
 \qquad
 S(\tilde{Ϛ}_1)=S(\tilde{Ϛ}_2)
-=h\!\left(\frac{1+|\vec r_1|}{2}\right).
+=h\!\left(\frac{1+|\vec r_1|}{2}\right)\;}.
 $$
 
 So the entanglement entropy of a pure two-qubit state is a function of a single invariant, the **length of either reduced Bloch vector**. Maximal entanglement is $|\vec r_1|=0$; a product state is $|\vec r_1|=1$. The reduced Bloch vectors may point in different directions — they do, in general, since they live on different factors — but their lengths agree.
@@ -286,9 +286,9 @@ $$
 the last equality being the general trace identity $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$. Hence
 
 $$
--2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
+\boxed{\;-2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
 =-\mathrm{Tr}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
-=S(\tilde{Ϛ}).
+=S(\tilde{Ϛ})\;}.
 $$
 
 **The candidate is correct**, for states in the interior of the Bloch ball, with the principal branch of the logarithm. The maximally mixed case $\vec r=0$ is the scalar case, where the same computation with $\log(\tfrac12 e_t)=\log\tfrac12\,e_t$ gives $S=\log2$; the case $|\vec r|=1$ is excluded and is discussed below. The scalar part is not an obstruction: because the trace on $\mathbb{B}$ *is* twice the scalar part, the candidate is not an analogue of the trace formula but the trace formula itself.

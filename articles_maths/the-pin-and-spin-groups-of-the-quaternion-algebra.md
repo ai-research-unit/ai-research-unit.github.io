@@ -32,9 +32,7 @@ is a subgroup of the group of units $\mathbb{H}^{\times}$.
 
 **Theorem.** For the definite form $\langle\cdot,\cdot\rangle_{\natural}$ the pin and spin groups are subgroups of $\mathbb{H}^{\times}$:
 
-$$
-\operatorname{Pin}(N)=\{\tilde q:\langle\tilde q\rangle_{\natural}=\pm1\}=\mathbb{H}^1,\qquad \operatorname{Spin}(N)=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}=\mathbb{H}^1.
-$$
+$$ \boxed{\; \operatorname{Pin}(N)=\{\tilde q:\langle\tilde q\rangle_{\natural}=\pm1\}=\mathbb{H}^1,\qquad \operatorname{Spin}(N)=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}=\mathbb{H}^1 \;} .$$
 
 *Proof.* An element of the pin group of a definite form is a product of vectors of norm $\pm1$; in dimension four with a multiplicative norm the products are exactly the elements of norm $\pm1$, and since the norm is never negative the two conditions coincide. Equivalently, on the three-dimensional vector subspace the algebra is the even part of the Clifford algebra of the form, and the norm-one shell is that even part. The spin group is the even subgroup and equals the shell.
 
@@ -62,10 +60,8 @@ Thus the spin group of the definite form is the unit sphere of the algebra, and 
 
 **Theorem.** Let $\tilde u\in V$ with $\langle\tilde u\rangle_{\natural}=1$, so that $\tilde u\in\mathbb{H}^1$, and let $\tilde q_3\in V$. Then
 
-$$
-\tilde u\tilde q_3\tilde u=\tilde q_3-2\,\mathrm B_N(\tilde u,\tilde q_3)\tilde u,\qquad
-\operatorname{Ad}_{\tilde u}(\tilde q_3)=\tilde u\tilde q_3\tilde u^{-1}=2\,\mathrm B_N(\tilde u,\tilde q_3)\tilde u-\tilde q_3,
-$$
+$$ \boxed{\; \tilde u\tilde q_3\tilde u=\tilde q_3-2\,\mathrm B_N(\tilde u,\tilde q_3)\tilde u,\qquad
+\operatorname{Ad}_{\tilde u}(\tilde q_3)=\tilde u\tilde q_3\tilde u^{-1}=2\,\mathrm B_N(\tilde u,\tilde q_3)\tilde u-\tilde q_3 \;} ,$$
 
 where $\mathrm B_N$ is the polar form of $\langle\cdot,\cdot\rangle_{\natural}$ restricted to $V$; the first map fixes the plane $\tilde u^{\perp}$ and negates the line $\mathbb{R}\tilde u$, and the second is its negative, fixing the line $\mathbb{R}\tilde u$ and negating the plane $\tilde u^{\perp}$.
 

@@ -12,10 +12,6 @@ This article studies the family $\{L^{\star}_{\tilde Q_3}, R^{\star}_{\tilde Q_3
 
 The result that organises the article is the pair of facts that the operators are **rank one** and that the adjoint question has a **negative answer**. Every nonzero operator of the block has image the centre $\mathbb{C}_{\mathbb{B}}$, kernel the hyperplane $H(\tilde Q_3,\cdot\,) = 0$, and trace the scalar part of the parameter — $\overline{Q_{3t}}$ for the right family and $Q_{3t}$ for the left one in the conjugate-linear convention — so the right family carries the conjugation of the parameter and the left family does not, the trace-level mark of the sesquilinear class in contrast with the bilinear quaternionic block whose traces are both linear. And the adjoint of $L^{\star}_{\tilde Q_3}$ with respect to $H$ is **not** $L^{\star}_{\tilde Q_3}$, and it is **not** $R^{\star}_{\tilde Q_3}$ either: it is the conjugate-linear map $\tilde S\mapsto \overline{S_t}\,\tilde Q_3$, which is not a multiplication operator of the block. The failure is the operator expression of the conjugate-linearity, and it is the sharpest difference from the one-sided operators of the general sesqualgebra, where the adjoint of a multiplication is again a multiplication.
 
-**Boundaries.** The general sesquilinear operator theory, the composition and the adjoints of the left and right multiplications of the general plain sesquilinear product, and the mixed operators with two independent parameters, are *One-Sided Operators on the General Plain Sesqualgebra*, *Two-Sided Operators on the General Plain Sesqualgebra* and *Mixed Inner Conjugation on the General Plain Sesqualgebra*; they are cited here and not restated. The form $H$ is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*. The operators of the sibling blocks are *The Multiplication Operators of the Symmetric Plain Algebra* and *The Multiplication Operators of the Symmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde Q_3\star\tilde{Q}_2 = \langle\tilde Q_3,\tilde{Q}_2\rangle_{*}e_t$ with $\langle\tilde Q_3,\tilde{Q}_2\rangle_{*} = \sum_\mu Q_{3\mu}\overline{R_\mu}$; the form $H$ is linear in the first argument and conjugate-linear in the second. The adjoint of a conjugate-linear operator $T$ with respect to $H$ is the map $T^{\dagger}$ with $\langle T\tilde{Q}_2,\tilde S\rangle_{*} = \overline{\langle\tilde{Q}_2,T^{\dagger}\tilde S\rangle_{*}}$ for all $\tilde{Q}_2,\tilde S$, the natural conjugate of the linear convention; that a conjugate-linear operator has no adjoint in the linear convention is the content of the last section.
-
 ## The Operators and Their Linearity
 
 **Definition.** For $\tilde Q_3\in\mathbb{B}$ the **left** and the **right multiplication** by $\tilde Q_3$ are the maps
@@ -34,9 +30,7 @@ $$
 
 **Proposition (the relation through the coefficientwise conjugation).** The two families are the pointwise conjugates of one another:
 
-$$
-R^{\star}_{\tilde Q_3}\tilde{Q}_2 = \overline{L^{\star}_{\tilde Q_3}\tilde{Q}_2} = \overline{\tilde Q_3\star\tilde{Q}_2} ,
-$$
+$$ \boxed{\; R^{\star}_{\tilde Q_3}\tilde{Q}_2 = \overline{L^{\star}_{\tilde Q_3}\tilde{Q}_2} = \overline{\tilde Q_3\star\tilde{Q}_2} \;}, $$
 
 the bar acting on the central value. Equivalently $R^{\star}_{\tilde Q_3} = \overline{L^{\star}_{\tilde Q_3}}$, where the bar is applied to the value; this is the conjugate-commutative law read on the operators.
 
@@ -72,9 +66,7 @@ the first the ordinary trace of the $\mathbb{C}$-linear operator $R^{\star}_{\ti
 
 **Theorem (the adjoint, and it is neither family).** Let $\tilde Q_3\in\mathbb{B}$ and let $L^{\star}_{\tilde Q_3}$ be the left multiplication, of conjugate-linear kind. Its adjoint with respect to $H$ in the conjugate-linear convention is the conjugate-linear map
 
-$$
-\bigl(L^{\star}_{\tilde Q_3}\bigr)^{\dagger}\tilde S = \overline{S_t}\,\tilde Q_3 ,
-$$
+$$ \boxed{\; \bigl(L^{\star}_{\tilde Q_3}\bigr)^{\dagger}\tilde S = \overline{S_t}\,\tilde Q_3 \;}, $$
 
 which is **neither** $L^{\star}_{\tilde Q_3}$ nor $R^{\star}_{\tilde Q_3}$.
 
@@ -98,9 +90,7 @@ The two agree because $\langle\tilde Q_3,\tilde{Q}_2\rangle_{*}\overline{S_t} = 
 
 **Theorem (the four composition laws).** For all $\tilde Q_3,\tilde Q_1$,
 
-$$
-L^{\star}_{\tilde Q_3}L^{\star}_{\tilde Q_1} = Q_{3t}\,R^{\star}_{\tilde Q_1} , \qquad R^{\star}_{\tilde Q_3}R^{\star}_{\tilde Q_1} = \overline{Q_{3t}}\,R^{\star}_{\tilde Q_1} , \qquad L^{\star}_{\tilde Q_3}R^{\star}_{\tilde Q_1} = Q_{3t}\,L^{\star}_{\tilde Q_1} , \qquad R^{\star}_{\tilde Q_3}L^{\star}_{\tilde Q_1} = \overline{Q_{3t}}\,L^{\star}_{\tilde Q_1} .
-$$
+$$ \boxed{\; L^{\star}_{\tilde Q_3}L^{\star}_{\tilde Q_1} = Q_{3t}\,R^{\star}_{\tilde Q_1} , \qquad R^{\star}_{\tilde Q_3}R^{\star}_{\tilde Q_1} = \overline{Q_{3t}}\,R^{\star}_{\tilde Q_1} , \qquad L^{\star}_{\tilde Q_3}R^{\star}_{\tilde Q_1} = Q_{3t}\,L^{\star}_{\tilde Q_1} , \qquad R^{\star}_{\tilde Q_3}L^{\star}_{\tilde Q_1} = \overline{Q_{3t}}\,L^{\star}_{\tilde Q_1} \;}. $$
 
 In particular the family of operators is closed under composition; the composition of two operators is again a rank-one operator of the family, scaled by the scalar part of the first parameter.
 
@@ -146,9 +136,7 @@ the endomorphisms **skew with respect to $H$**.
 
 **Theorem (the automorphisms of the block).** A $\mathbb{C}$-linear bijection $T$ is an automorphism of the product, $T(\tilde Q\star\tilde{Q}_2) = T\tilde Q\star T\tilde{Q}_2$, if and only if it preserves the form and fixes the idempotent $e_t$:
 
-$$
-\operatorname{Aut}(\star) = \{\,T\in G_H : Te_t = e_t\,\} .
-$$
+$$ \boxed{\; \operatorname{Aut}(\star) = \{\,T\in G_H : Te_t = e_t\,\} \;}. $$
 
 *Proof.* If $T\in G_H$ with $Te_t = e_t$, then $T(\tilde Q\star\tilde{Q}_2) = \langle\tilde Q,\tilde{Q}_2\rangle_{*}Te_t = \langle\tilde Q,\tilde{Q}_2\rangle_{*}e_t$ and $T\tilde Q\star T\tilde{Q}_2 = \langle T\tilde Q,T\tilde{Q}_2\rangle_{*}e_t = \langle\tilde Q,\tilde{Q}_2\rangle_{*}e_t$, so $T$ is an automorphism. Conversely, let $T$ be an automorphism. Applying it to the identity exhibited in the central form gives $\langle\tilde Q,\tilde{Q}_2\rangle_{*}Te_t = \langle T\tilde Q,T\tilde{Q}_2\rangle_{*}e_t$ for all $\tilde Q,\tilde{Q}_2$; comparing the vector part gives $Te_t = c_te_t$ a central element, and comparing the scalar part then gives $\langle T\tilde Q,T\tilde{Q}_2\rangle_{*} = c_t\langle\tilde Q,\tilde{Q}_2\rangle_{*}$; taking $\tilde Q = \tilde{Q}_2 = e_t$ gives $c_t = \lvert c_t\rvert^{2}$, so $c_t\in\{0,1\}$, and the invertibility of $T$ forces $c_t = 1$. Hence $T\in G_H$ and $Te_t = e_t$.
 

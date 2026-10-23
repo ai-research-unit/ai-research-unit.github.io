@@ -88,8 +88,10 @@ nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if the product
 $\tilde{Q}\tilde{Q}^{\natural}$ vanishes:
 
 $$
-\tilde{Q}\tilde{Q}^{\natural} = 0.
-$$
+\boxed{\;
+\tilde{Q}\tilde{Q}^{\natural} = 0
+\;}
+$$.
 
 **Proof.** Suppose $\tilde{Q}_1 \neq 0$ and $\tilde{Q}_1\tilde{Q}_1^{\natural} = 0$. Then
 $\tilde{Q}_1 \tilde{Q}_1^{\natural} = 0$. Since $\tilde{Q}_1 \neq 0$, we also have
@@ -185,8 +187,10 @@ The vector part vanishes, because $\epsilon_{\mu\nu\lambda}$ is antisymmetric in
 symmetric. Therefore
 
 $$
-\tilde{Q}^2 = -(Q_x^2 + Q_y^2 + Q_z^2) e_t = -\tilde{Q}\tilde{Q}^{\natural} e_t.
-$$
+\boxed{\;
+\tilde{Q}^2 = -(Q_x^2 + Q_y^2 + Q_z^2) e_t = -\tilde{Q}\tilde{Q}^{\natural} e_t
+\;}
+$$.
 
 ### The Criterion in the Pure Case
 
@@ -232,8 +236,10 @@ $\vec\rho\,\vec\sigma = -\vec\rho\cdot\vec\sigma + \vec\rho\times\vec\sigma$
 for two real vectors, the square of a pure biquaternion is
 
 $$
-\tilde{Q}^2 = \bigl(|\vec\rho'|^2 - |\vec\rho|^2\bigr)\, e_t - 2i\,(\vec\rho\cdot\vec\rho')\, e_t .
-$$
+\boxed{\;
+\tilde{Q}^2 = \bigl(|\vec\rho'|^2 - |\vec\rho|^2\bigr)\, e_t - 2i\,(\vec\rho\cdot\vec\rho')\, e_t
+\;}
+$$.
 
 The square is therefore a complex scalar, and it vanishes exactly when the two conditions
 

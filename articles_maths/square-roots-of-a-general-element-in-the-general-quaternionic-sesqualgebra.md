@@ -12,8 +12,6 @@ of *Introduction to the General Quaternionic Sesqualgebra*, and its content is a
 
 The reduction is the central-square identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$, which turns the equation into the plain equation $\overline{\tilde\Xi}\tilde\Xi = \tilde Q_1^{\natural}$ on the element $\tilde\Xi = a+\vec q$; the criterion below is the coordinate form of that equation, and the four cases it produces, the free scalar part, the bounded scalar part, the boundary and the central exception, are the four cases of the plain product's quadratic in a different arrangement.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x \vec e_y = \vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q = Q_te_t+\vec Q$. The conjugations are $\tilde Q^{\natural} = Q_t-\vec Q$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The **scalar part** of $\tilde Q$ is $Q_t$ and the **vector part** is $\vec Q$. The product is $\tilde\Xi\star\tilde Q = \tilde\Xi^{\natural}\tilde Q^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. The **Krein form** is $\mathrm{Sc}(\overline{\tilde\Xi}\tilde\Xi) = \sum_\mu\varepsilon_\mu\lvert \Xi_\mu\rvert^2$ with $\varepsilon = (1,-1,-1,-1)$. For a vector $\vec v$ of the complex three-space the **real and imaginary parts** $\operatorname{Re}\vec v$, $\operatorname{Im}\vec v$ are the real vectors of the coordinates, and $\lvert\vec v\rvert$ is the real modulus of $\vec v$; the dot product of two real vectors is written $(\cdot,\cdot)$.
-
 **The results.** A general element $\tilde Q_1$ with scalar part $Q_{1t}$ and vector part $\vec R+i\vec S$, with $\vec R,\vec S$ real vectors, is the square of an element of the general quaternionic sesquilinear product $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q^{*}$ if and only if $Q_{1t}$ is real, the two real vectors $\vec R$ and $\vec S$ are orthogonal, and the scalar bound holds: every real $Q_{1t}$ when $\lvert\vec R\rvert>\lvert\vec S\rvert$, $Q_{1t}<0$ when $\lvert\vec R\rvert=\lvert\vec S\rvert>0$ or when $\lvert\vec R\rvert<\lvert\vec S\rvert$ with $Q_{1t}^{2}\ge\lvert\vec S\rvert^{2}-\lvert\vec R\rvert^{2}$, and every real $Q_{1t}$ in the central case $\vec R=\vec S=0$. The image of the square map is therefore a real six-dimensional set of the real eight-dimensional space, and the square map is **not surjective**. At a generic element of the image the roots form a real two-dimensional family, at the central elements a real four-dimensional one, and the nonzero nilpotents such as $e_t+i\vec e_x$ are never squares. Each section below states its result first and then proves it.
 
 ## The Reduction to the Plain Equation
@@ -23,7 +21,7 @@ The reduction is the central-square identity $\tilde\Xi\star\tilde\Xi = (\overli
 **Proposition (the square of an element).** For every $\tilde\Xi$,
 
 $$
-\tilde\Xi\star\tilde\Xi = \bigl(\overline{\tilde\Xi}\,\tilde\Xi\bigr)^{\natural} ,
+\boxed{\; \tilde\Xi\star\tilde\Xi = \bigl(\overline{\tilde\Xi}\,\tilde\Xi\bigr)^{\natural} \;},
 $$
 
 so $\tilde\Xi\star\tilde\Xi = \tilde Q_1$ if and only if $\overline{\tilde\Xi}\tilde\Xi = \tilde Q_1^{\natural}$.
@@ -33,7 +31,7 @@ so $\tilde\Xi\star\tilde\Xi = \tilde Q_1$ if and only if $\overline{\tilde\Xi}\t
 **Proposition (the coordinate system).** Write $\tilde\Xi = a+\vec q$ with $a = \xi_t+i\xi'_t$, $\xi_t,\xi'_t\in\mathbb{R}$, and $\vec q = \vec\xi+i\vec\xi'$, $\vec\xi,\vec\xi'\in\mathbb{R}^3$, and write $\tilde Q_1$ with scalar part $Q_{1t}$ and vector part $\vec v = \vec R+i\vec S$, $\vec R,\vec S\in\mathbb{R}^3$. Then $\tilde\Xi\star\tilde\Xi = \tilde Q_1$ if and only if
 
 $$
-\xi_t^2+\xi'^2_t-\lvert\vec\xi\rvert^2-\lvert\vec\xi'\rvert^2 = Q_{1t} , \qquad 2(\xi_t\vec\xi+\xi'_t\vec\xi') = -\vec R , \qquad 2\,\vec\xi\times\vec\xi' = -\vec S .
+\boxed{\; \xi_t^2+\xi'^2_t-\lvert\vec\xi\rvert^2-\lvert\vec\xi'\rvert^2 = Q_{1t} , \qquad 2(\xi_t\vec\xi+\xi'_t\vec\xi') = -\vec R , \qquad 2\,\vec\xi\times\vec\xi' = -\vec S \;}.
 $$
 
 **Proof.** The plain product $\overline{\tilde\Xi}\tilde\Xi = (\overline{a}+\overline{\vec q})(a+\vec q)$ has scalar part $\xi_t^2+\xi'^2_t-\lvert\vec\xi\rvert^2-\lvert\vec\xi'\rvert^2$, real vector part $2(\xi_t\vec\xi+\xi'_t\vec\xi')$ and imaginary vector part $2i\,\vec\xi\times\vec\xi'$, as in §*The Reduction of the Root Equation* of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*; the equation $\overline{\tilde\Xi}\tilde\Xi = \tilde Q_1^{\natural}$ has scalar part $Q_{1t}$ because the natural conjugation fixes the scalar part, and vector part $-\vec v = -\vec R-i\vec S$; the identification of the three parts is the displayed system.

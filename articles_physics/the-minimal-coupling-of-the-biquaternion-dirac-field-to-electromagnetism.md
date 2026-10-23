@@ -27,8 +27,6 @@ The division between what is established and what is interpretation is stated at
 
 The article is organized as follows. The next section recalls the Dirac field and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case, where the linear mass term preserves the covariance and the axial symmetry is what the mass breaks. A section examines the interaction current and the Maxwell source, reports the negative result, and records one external identity of the same shape, due to Arbab, which is verified here and cited without being adopted as framework content. A section relates the construction to the standard spinor-module minimal coupling. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_t + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The Dirac field is $\tilde{\Psi}\in\mathbb{B}$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ and $\tilde{\Psi}^{*} = \overline{\tilde{\Psi}^{\natural}}$. The mass term is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; the conjugation $\tilde{\Psi}^\flat$ is the algebra's real structure and is **not** the mass. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
-
 ## The Dirac Field and Its Phase Symmetry
 
 The **biquaternion Dirac field** is a biquaternion-valued field $\tilde{\Psi}(\tilde{Q}) \in \mathbb{B}$ satisfying the free equation
@@ -166,7 +164,7 @@ $$
 The two $\tilde{\nabla}\Gamma$ terms cancel and the central $\lambda$ moves to the left. Consequently
 
 $$
-D\tilde{\Psi} = 0 \qquad \Longleftrightarrow \qquad D_2\tilde{\Psi}_2 = 0 :
+\boxed{\;D\tilde{\Psi} = 0 \qquad \Longleftrightarrow \qquad D_2\tilde{\Psi}_2 = 0 :\;}
 $$
 
 the **massless minimally coupled biquaternion Dirac equation is exactly gauge covariant**. It holds in every gauge when it holds in one, and the phase of the field is not observable on its own. This is the charged massless fermion — the biquaternion form of the gauged Weyl field.
@@ -256,7 +254,6 @@ where $\vec E_g = -\nabla\varphi_g - \partial/\partial t'\,\vec A_g$ and $\vec B
 
 **Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four components: the constraint $\psi_0 = -c\beta\,\vec{\gamma}\cdot\vec{\psi}$ must be imposed, and the source's Appendix B gives the modified system that replaces it, with an extra real field $\Lambda=\beta\psi_0+c\vec{\gamma}\cdot\vec{\psi}$ appearing in all four equations. The identity is therefore stated on the constrained system, and it is a statement about the source's field strengths, not about the corpus's $\tilde{\Psi}$ or about its $\sqrt{\mu}\,\tilde{J}$.
 
-
 $$
 \vec B_g\cdot\vec B_D - \frac{1}{c^2}\vec E_g\cdot\vec E_D - \mu_0\left(\vec A_g\cdot\vec J_D - \varphi_g\rho_D\right)
 = \frac{\hbar}{qc}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\varphi_g}{c^2}\,r_5 - \frac{\hbar}{qc}\,\partial/\partial t' r_8 ,
@@ -271,7 +268,7 @@ so that the identity holds exactly on the solution set of the four equations and
 The construction meets the standard theory in the spinor-module transcription. The biquaternion field, viewed as an element of $\mathbb{B}\cong M_2(\mathbb{C})$, is a pair of two-component Weyl spinors, and the biquaternion gradient plays the role of the Dirac operator $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ on the spinor module. Under that transcription, left multiplication by the connection $\tilde{A} = \sum_\mu A_\mu e_\mu$ is the representative of the matrix $\gamma^\mu A_\mu$, and the coupled biquaternion equation becomes the standard minimally coupled Dirac equation
 
 $$
-\left(i\hbar\gamma^\mu D_\mu - mc\right)\psi = 0, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu ,
+\boxed{\;\left(i\hbar\gamma^\mu D_\mu - mc\right)\psi = 0, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\;},
 $$
 
 **provided the mass term is the linear Dirac mass** $m\psi$. With the linear mass the equation is gauge covariant in the standard way, the conserved current is $j^\mu = \bar{\psi}\gamma^\mu\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is that they are obtained with a **linear** mass term, which is exactly the form the parent's biquaternion equation carries, so the transcription and the standard treatment agree on the massive sector as well as on the massless one.

@@ -94,12 +94,59 @@ a rotation about the axis normal to the plane of the two boost directions, by an
 
 **The boundary.** The reconstruction is exact and kinematic. It says that a product of two boosts is a boost times a compact factor, and it identifies the factor. It does not say that the factor is a precession in time. Thomas precession is the time integral of that factor along an accelerated path, and it needs the acceleration and the dynamics (*Thomas Precession as a Biquaternion Rotor Effect*). The algebra supplies the decomposition and the angle at each step. The orbit supplies the rate.
 
+### The Hamilton Angle and the BCH Defect
+
+Each boost is a Hamilton word of a degenerate kind. On the Hermitian axis $\vec U=i\vec u_{\mathrm b}$, which satisfies $\vec U^{2}=e_t$, the rotor is
+
+$$
+\tilde U_{\mathrm b}(\psi)=\exp\!\Big(\frac{\psi}{2}i\vec u_{\mathrm b}\Big)
+=\Rho\,e^{\vec U\Theta},
+\qquad
+\Rho=e_t,\quad \Theta=\frac{\psi}{2}\in\mathbb{R},
+$$
+
+and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\psi/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\psi\vec u_{\mathrm b}/2$.
+
+**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde H_k=\frac{\psi_k}{2}i\vec u_k$,
+
+$$
+\operatorname{Log}\bigl(\exp\tilde H_2\exp\tilde H_1\bigr)
+=\tilde H_2+\tilde H_1+\frac12[\tilde H_2,\tilde H_1]+\cdots,
+\qquad
+\frac12[\tilde H_2,\tilde H_1]
+=\frac{\psi_1\psi_2}{4}\,\vec u_1\times\vec u_2 .
+$$
+
+The commutator is a real pure quaternion, hence a rotation generator, and its magnitude is the half-angle of the leading Wigner rotation. The leading angle is therefore
+
+$$
+\alpha\simeq\frac{\psi_1\psi_2}{2}\sin\vartheta,
+$$
+
+where $\vartheta$ is the angle between the two boost directions. For small rapidities this is the $\alpha\approx\frac12\psi\chi\sin\theta$ recorded in the summary, and for right angles and $\psi_1=1,\psi_2=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
+
+**The exact factor.** The Cartan decomposition of the product is the exact statement,
+
+$$
+\boxed{\ \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}=\tilde U_{\mathrm b}\tilde W\ }
+\qquad
+\tilde U_{\mathrm b}=\sqrt{\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}\bigl(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}\bigr)^{*}},
+\qquad
+\tilde W\in SU(2).
+$$
+
+The positive factor is the net boost and the unitary factor is the Wigner rotation. This is the Cartan pairing of the composed boost: the amplitude is the boost, the phase is the rotation, and the split is exact. The BCH defect is its infinitesimal form; the two agree to first order in the rapidities and not beyond.
+
+**The reading.** The Wigner rotation is the compact part of the BCH defect of two boost exponents. The Hamilton angle of a product is not the sum of the Hamilton angles, and the correction is a rotation: the boosts do not form a subgroup of the Lorentz group, and the composition law is twisted by the little group. The defect is the algebraic origin of the cocycle of the next section, and the reason a boost is a controlled rotation rather than a spin-independent operation.
+
+**The boundary.** The defect is kinematic and exact; it is not a dynamical phase. The angle follows from the two rapidities and the angle between the axes, with no trajectory. Thomas precession is its time integral along an accelerated path, and that needs the orbit.
+
 ### The cocycle condition
 
 The Wigner rotation of a composition is not additive, but it obeys a composition law inherited from the group. Writing $\tilde{W}(\tilde U_{\mathrm b},\tilde{V})$ for the rotation and using $\tilde{V}_3 = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}\tilde{V}\tilde U_{\mathrm b,1}^{*}\tilde U_{\mathrm b,2}^{*}$, a direct calculation gives
 $$
-\tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V})
-= \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\;\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V}) .
+\boxed{\ \tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V})
+= \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\;\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V}) .\ }
 $$
 This is a **one-cocycle condition**: the rotation of the composed transformation is the rotation of the second evaluated at the momentum carried by the first, composed with the rotation of the first. The derivation is immediate from the definition. Writing $\tilde{V}_2 = \tilde U_{\mathrm b,1}\tilde{V}\tilde U_{\mathrm b,1}^{*}$ and $\tilde{V}_3 = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}\tilde{V}\tilde U_{\mathrm b,1}^{*}\tilde U_{\mathrm b,2}^{*}$, one has
 $$
@@ -118,9 +165,9 @@ The cocycle is the source of the momentum dependence, and therefore of every fra
 
 On a state with definite momentum, the boost acts on the spin by the single unitary $\tilde{W}$. On a superposition of momentum eigenstates it acts by a rotation on each branch,
 $$
-|\Psi\rangle = \sum_i\sqrt{w_i}\,|p_i\rangle\otimes|\chi_i\rangle
+\boxed{\ |\Psi\rangle = \sum_i\sqrt{w_i}\,|p_i\rangle\otimes|\chi_i\rangle
 \ \longmapsto\
-\sum_i\sqrt{w_i}\,|p_{i,2}\rangle\otimes\bigl(\tilde{W}_i|\chi_i\rangle\bigr),
+\sum_i\sqrt{w_i}\,|p_{i,2}\rangle\otimes\bigl(\tilde{W}_i|\chi_i\rangle\bigr)\ },
 \qquad \tilde{W}_i = \tilde{W}(\tilde U_{\mathrm b},\tilde{V}_i),
 $$
 which is a **controlled unitary** in the standard sense of quantum information: the momentum plays the role of the control and the spin of the target, and the operation on the target is the branch-dependent Wigner rotation. When the branch momenta are orthogonal, the spin channel obtained by tracing the momentum is
@@ -139,7 +186,7 @@ then the spin operation would be momentum-independent, the cocycle would be a ho
 
 The information content of a boost, in its narrowest sense, is the rotation it imprints on a spin, and the amount is governed by the Wigner angle. For a boost of rapidity $\psi$ and a particle of rapidity $\chi = \mathrm{atanh}(v/c)$ at angle $\theta$ to the boost axis, the angle vanishes at $\theta = 0,\pi$ and is largest for transverse momentum, and for $\theta = \pi/2$ it is given exactly by
 $$
-\tan\alpha = \frac{\sinh\psi\,\sinh\chi}{\cosh\psi + \cosh\chi}.
+\boxed{\ \tan\alpha = \frac{\sinh\psi\,\sinh\chi}{\cosh\psi + \cosh\chi} .\ }
 $$
 For a particle of speed $0.5c$ this gives the following values, with the dephasing factor $\cos\alpha$ and the entropy $h((1+\cos\alpha)/2)$ that the boost imprints on a transverse spin:
 
@@ -201,7 +248,7 @@ with rotors $\tilde{P} = 0.99821\,e_t + 0.05988\,\vec e_z$, $0.99366\,e_t + 0.11
 
 **The angle is the area.** For small rapidities the holonomy angle is bilinear in the two loop parameters,
 $$
-\alpha \simeq \tfrac12\,a\,b ,
+\boxed{\ \alpha \simeq \tfrac12\,a\,b\ },
 $$
 and $\tfrac12 ab$ is exactly the area enclosed by the loop in velocity space: the vertices of the path are at rapidities $(0,0)$, $(a,0)$, and $(a,b)$ in the $(v_x,v_y)$ plane, and the enclosed area is $\tfrac12 ab$. The coefficient has been confirmed numerically, giving $\alpha/(ab) = 0.499792$ at $a = b = 0.05$ and drifting slowly below $1/2$ as the rapidities grow, through $0.497921$ at $(0.2,0.1)$ to $0.492514$ at $(0.3,0.3)$. The holonomy is therefore the **curvature integral**: the rotation angle accumulated around a loop is the area the loop encloses, the discrete statement of Gauss–Bonnet for the boost connection, and the reason the Thomas precession rate is proportional to the area swept by the velocity per unit time.
 
@@ -235,7 +282,8 @@ $$
 $$
 and the compact factor is the **Wigner rotation**
 $$
-\tilde{W}(\tilde U_{\mathrm b},\tilde{V}) = \tilde U_{\tilde{V}_2}\tilde U_{\mathrm b}\tilde U_{\tilde{V}}^{-1}, \qquad \tilde{V}_2 = \tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} ,
+\boxed{\ \tilde{W}(\tilde U_{\mathrm b},\tilde{V}) = \tilde U_{\tilde{V}_2}\tilde U_{\mathrm b}\tilde U_{\tilde{V}}^{-1}\ },
+\qquad \tilde{V}_2 = \tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} ,
 $$
 obeying the cocycle condition $\tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V}) = \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V})$. For a boost along $x$ of rapidity $1$ followed by one along $y$ of rapidity $0.5$, the rotation is $0.99366\,e_t+0.11246\,\vec e_z$, an angle of $12.9146^\circ$ about $\vec u_z$.
 
@@ -258,6 +306,8 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $SL(2,\mathbb{C}) = SU(2)\cdot\exp(p)$ | Cartan decomposition |
 | $\tilde{W}(\tilde U_{\mathrm b},\tilde{V})$ | Wigner rotation, $\in SU(2)$ |
 | $\alpha$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
+| $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\psi/2$ | Hamilton data of a boost on the Hermitian axis |
+| $\frac12[\tilde H_2,\tilde H_1]=\frac{\psi_1\psi_2}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
 | $\tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V}) = \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V})$ | Cocycle condition |
 | $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde{W}_i$ | Boost as a controlled rotation |
 | $\tan\alpha = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$ | Exact angle at $\theta = \pi/2$ |
@@ -268,6 +318,9 @@ Because the boost parameter space is curved, a closed path of boosts that return
 ## Further Reading
 
 - E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
+- [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the Hamilton angle, the two regimes and the BCH defect.
+- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the Cartan amplitude and the word.
+- [The Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hamilton angle with a complex axis.
 - L. H. Thomas, "The motion of the spinning electron," *Nature* **117** (1926) 514, for the precession of the spin of an accelerated electron.
 - L. H. Thomas, "The kinematics of an electron with an axis," *Philosophical Magazine* **3** (1927) 1–22, for the detailed kinematical derivation.
 - F. R. Halpern, *Special Relativity and Quantum Mechanics* (Prentice-Hall, 1968), for the Wigner rotation and its composition properties.

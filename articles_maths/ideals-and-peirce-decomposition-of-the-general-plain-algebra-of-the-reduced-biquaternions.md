@@ -27,7 +27,7 @@ with the two middle ideals minimal and incomparable. The structure is **semisimp
 
 **Boundaries.** The multiplication and its axioms are *Introduction to the Algebra of the Reduced Biquaternions*; the idempotents and the roots of one are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*; the zero divisors and the two lines are *Zero Divisors of the Algebra of the Reduced Biquaternions*; and the unit group is *The Group of Units of the Algebra of the Reduced Biquaternions*. The criterion that makes the ideal theory available — left alternativity, here associativity — is *The Specificities of the Algebra of the Reduced Biquaternions*, above this article. The multiplication operators and the enveloping algebra are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the matrix model is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*.
 
-**Conventions.** The algebra is $\mathbb{B}_{\mathrm{r}}$ with product $\breve Q_{1}\breve Q_{2}$, basis $1,i,j,ij$, and general element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$. The idempotents are $\Pi_\pm=\tfrac12(1\pm j)$, the idempotent coordinates are $Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$, and $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The **standard pair** is $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$. The involutions are the bar $\bar{\cdot}$, the tessarine sign ${}_{\mathrm{ts}}$, the star ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$ and the flat ${}^{\flat}=-{}^{*}$. The base field is $\mathbb{C}$ unless a statement names $\mathbb{R}$; the notation is that of *Conventions in Mathematics*.
+**Conventions.** The algebra is $\mathbb{B}_{\mathrm{r}}$ with product $\breve Q_{1}\breve Q_{2}$, basis $1,i,j,ij$, and general element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$. The idempotents are $\Pi_\pm=\tfrac12(1\pm j)$, the idempotent coordinates are $Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$, and $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The left-regular model in the basis $1,j$ is written $\varphi$, and the Peirce-coordinate model is written $\varphi^{\Pi}$. The **standard pair** is $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$. The involutions are the bar $\bar{\cdot}$, the tessarine sign ${}_{\mathrm{ts}}$, the star ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$ and the flat ${}^{\flat}=-{}^{*}$. The base field is $\mathbb{C}$ unless a statement names $\mathbb{R}$; the notation is that of *Conventions in Mathematics*.
 
 ## Ideals in an Algebra
 
@@ -254,10 +254,10 @@ The bar is $\mathbb{C}$-antilinear and preserves the ordered Peirce decompositio
 
 **In the idempotent basis the Peirce decomposition is the diagonal decomposition of the matrix model; the two projectors are the diagonal matrix units, and the scalar coefficients of the Peirce coordinates are the two eigenvalues.**
 
-The matrix element representation sends $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ to the diagonal matrix
+In the Peirce-coordinate model the element is the diagonal matrix
 
 $$
-\varphi(\breve Q)=\operatorname{diag}(Q_{+},Q_{-})
+\varphi^{\Pi}(\breve Q)=\operatorname{diag}(Q_{+},Q_{-})
 =\begin{pmatrix}Q_{\blacktriangle}+Q_{\blacktriangledown}&0\\0&Q_{\blacktriangle}-Q_{\blacktriangledown}\end{pmatrix}
 $$
 
@@ -275,11 +275,25 @@ $$
 
 with $P_{+}+P_{-}=\mathrm I_{2}$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the matrix units $E_{12}$ and $E_{21}$, are absent: the image is the subalgebra of diagonal matrices in $M_{2}(\mathbb{C})$, not the full matrix algebra.
 
+**Two matrix models.** The diagonal matrix $\varphi^{\Pi}(\breve Q)=\operatorname{diag}(Q_+,Q_-)$ is the **Peirce-coordinate model**: its two entries are the Peirce coordinates, and in this model the two Peirce components are the two matrix units $E_{11}$ and $E_{22}$. The **left-regular model** in the basis $(1,j)$ is the full matrix
+$$
+\varphi(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}.
+$$
+The two are related by the change of basis
+$$
+\mathsf{C}=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \mathsf{C}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \varphi^{\Pi}(\breve Q)=\mathsf{C}^{-1}\varphi(\breve Q)\mathsf{C}.
+$$
+The columns of $\mathsf{C}$ are the coordinate vectors of $\Pi_+$ and $\Pi_-$ in the basis $(1,j)$, and they are eigenvectors of $\varphi(\breve Q)$ with eigenvalues $Q_+$ and $Q_-$. The idempotent basis $(\Pi_+,\Pi_-)$ is a complex eigenbasis of $\breve Q$. In the left-regular model the matrices of the two idempotents are
+$$
+\varphi(\Pi_+)=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad \varphi(\Pi_-)=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix}.
+$$
+In the scalar case $Q_{\blacktriangledown}=0$, $\varphi(\breve Q)=Q_{\blacktriangle}\mathrm I_2$, every nonzero complex vector is an eigenvector, and every complex basis is an eigenbasis. The eigenbasis is developed in *Eigenbasis of a Reduced Biquaternion*, §*The Eigenbasis*; the two models are developed in *Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations*.
+
 ## The Decomposition into Minimal Ideals
 
 **The two idempotent lines are the minimal left ideals and the minimal right ideals, and they are the two simple modules.**
 
-**Theorem.** The minimal left ideals of $(\mathbb{B}_{\mathrm{r}},\cdot)$ are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are also the minimal right ideals, the minimal two-sided ideals and the simple left modules.
+**Theorem.** The minimal left ideals of $(\mathbb{B}_{\mathrm{r}},\cdot)$ are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are also the minimal right ideals, the minimal two-sided ideals and the simple left modules. They are the two spinor spaces of *Eigenbasis of a Reduced Biquaternion*, §*The Spinor Spaces*: each is a complex line, and a spinor is a single complex coefficient on one of them.
 
 **Proof.** Every left ideal is two-sided by commutativity, and the only proper nonzero two-sided ideals are the two lines by the ideal theorem; a left ideal contained in a line is $0$ or the line, so the line is minimal. The left modules $\mathbb{B}_{\mathrm{r}}\Pi_+$ and $\mathbb{B}_{\mathrm{r}}\Pi_-$ are simple because they have no proper nonzero submodules, the submodules being the left ideals inside them.
 

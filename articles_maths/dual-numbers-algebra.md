@@ -129,7 +129,9 @@ The first formula is well-defined because $2$ is invertible in $R$. The second f
 This gives the direct sum decomposition
 
 $$
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'},
+\boxed{\;
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}
+\;},
 $$
 
 where $\varepsilon R_{\mathbb{D}'}$ is the maximal ideal. Both are $R$-modules of rank $1$, and their direct sum is the full algebra $\mathbb{D}'_R$ of rank $2$.
@@ -174,7 +176,9 @@ The maximal ideal is the obstruction to the algebra being a field, and it is the
 **Theorem (group of units).** The **group of units** of $\mathbb{D}'_R$ is
 
 $$
-(\mathbb{D}'_R)^\times = \{q + \varepsilon q' : q \in R^\times\}.
+\boxed{\;
+(\mathbb{D}'_R)^\times = \{q + \varepsilon q' : q \in R^\times\}
+\;}.
 $$
 
 An element is invertible if and only if its real part is invertible in $R$. The inverse is
@@ -216,7 +220,9 @@ $$
 **Theorem.** Every derivation of $\mathbb{D}'_R$ is of the form
 
 $$
-D(q + \varepsilon q') = c \varepsilon q',
+\boxed{\;
+D(q + \varepsilon q') = c \varepsilon q'
+\;},
 $$
 
 for some $c \in R$. In other words, the derivation is determined by its value on $\varepsilon$, and it maps the real part to zero.

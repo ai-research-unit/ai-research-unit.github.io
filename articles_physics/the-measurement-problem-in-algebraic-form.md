@@ -54,7 +54,7 @@ $$
 
 where $\vec u_h = \vec h/|\vec h|$ is the measurement direction. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
 
-**Normal is the precondition.** The vocabulary above uses Hermitian observables, and a Hermitian element is normal, $\tilde H\tilde H^{*}=\tilde H^{*}\tilde H$. For an element with distinct eigenvalues, normality is exactly what makes the eigenprojections Hermitian, so that the two outcomes are orthogonal projectors of the sector. Otherwise $\tilde\Pi_+\tilde\Pi_-=0$ still holds, but the eigenprojections are not Hermitian (*Eigenvalue Decomposition of a Biquaternion*, §*The Hermitian Case*). For a non-normal element the left and right eigenbases differ, the eigenvalues need not be real, and the Born formula above is not available. The measurement problem is therefore posed here for normal observables. A non-normal reading needs a biorthogonal probability calculus, and the framework supplies one: *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* gives the left and right eigenbases, the biorthogonal weights and the density matrix as the normal contrast class. The measurement problem as posed here remains the normal case.
+**Normal is the precondition.** The vocabulary above uses Hermitian observables, and a Hermitian element is normal, $\tilde H\tilde H^{*}=\tilde H^{*}\tilde H$. For an element with distinct eigenvalues, normality is exactly what makes the eigenprojections Hermitian, so that the two outcomes are orthogonal projectors of the sector. Otherwise $\tilde\Pi_+\tilde\Pi_-=0$ still holds, but the eigenprojections are not Hermitian (*Eigenbasis of a Biquaternion*, §*The Hermitian Case*). For a non-normal element the left and right eigenbases differ, the eigenvalues need not be real, and the Born formula above is not available. The measurement problem is therefore posed here for normal observables. A non-normal reading needs a biorthogonal probability calculus, and the framework supplies one: *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* gives the left and right eigenbases, the biorthogonal weights and the density matrix as the normal contrast class. The measurement problem as posed here remains the normal case.
 
 ### One Operation Form, Two Kinds of Element
 
@@ -117,7 +117,7 @@ Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_t e_t
 3. **Their statistical average**, the element
 
 $$
-\tilde{Ϛ}_d \;=\; p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 \;=\; \tfrac{1}{2}\left(e_t + i\,(\vec u_h\cdot\vec r)\,\vec u_h\right) .
+\boxed{\;\tilde{Ϛ}_d \;=\; p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 \;=\; \tfrac{1}{2}\left(e_t + i\,(\vec u_h\cdot\vec r)\,\vec u_h\right)\;}.
 $$
 
 The third object is the fully dephased state of *Decoherence as Idempotent Projection*, restricted to the measurement direction $\vec u_h$; it is developed in the next section. It is the element obtained when the outcome is not retained.
@@ -169,7 +169,7 @@ $$
 Each $\Lambda_\pm$ is completely positive, trace preserving, and idempotent as a channel; each is what "select the outcome $\pm$" means as an operation. For every state $\tilde{Ϛ}$ (so $\mathrm{Tr}(\tilde{Ϛ}) = 1$),
 
 $$
-\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = p_+\,\Lambda_+(\tilde{Ϛ}) + p_-\,\Lambda_-(\tilde{Ϛ}) ,
+\boxed{\;\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = p_+\,\Lambda_+(\tilde{Ϛ}) + p_-\,\Lambda_-(\tilde{Ϛ})\;},
 $$
 
 since $\Lambda_\pm(\tilde{Ϛ}) = \tilde\Pi_{1,2}$ and $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, read through the trace only at normalisation. The fully dephased element is exactly the convex average of the two possible outcomes with their Born weights. Two differences between $\Lambda_\pm$ and $\Phi^{\mathrm{deph}}_1$ are decisive for the problem:
@@ -271,7 +271,7 @@ What the reformulation changes is the form of the statement: two dynamics become
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the Hermitian case and the normality criterion behind the Born pairing.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the Hermitian case and the normality criterion behind the Born pairing.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the biorthogonal weights that a non-normal observable would need.
 - [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the strength and backaction of the acting element and the null-cone boundary of the sharp case.
 - John von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton, 1932), for the projection postulate, the density matrix, and the regress that bears his name.

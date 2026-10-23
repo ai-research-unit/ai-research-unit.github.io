@@ -207,7 +207,7 @@ which is the direction of $\vec a\times\vec v=a\,\vec e_y\times v\,\vec e_x=-av\
 
 For $v=0.6c$ and $a$ such that $av/c^2=|a\times v|/c^2=0.6$ per unit time (units $c=1$), $\gamma=1.25$, $\gamma^2/(\gamma+1)=0.694444$, and
 $$
-|\vec\omega_T|=0.694444\times0.6=0.4166667\ \text{rad per unit lab time},\qquad \text{direction }-\vec e_z .
+\boxed{\;|\vec\omega_T|=0.694444\times0.6=0.4166667\ \text{rad per unit lab time},\qquad \text{direction }-\vec e_z\;}.
 $$
 The parent's formula (4) evaluated on the same step gives $\theta_W/dt'=0.41666667$ rad per unit time, to the printed digits.
 
@@ -245,8 +245,8 @@ which is (17). The precession is **opposite to the orbital angular velocity**: i
 
 **(b)** Over one orbit the lab time is $T=2\pi/\Omega$, so from (17)
 $$
-\Delta\theta=|\vec\omega_T|\,T=(\gamma-1)\,\Omega\,\frac{2\pi}{\Omega}=2\pi(\gamma-1)
-\quad\text{with the sense opposite to }\vec\Omega,
+\boxed{\;\Delta\theta=|\vec\omega_T|\,T=(\gamma-1)\,\Omega\,\frac{2\pi}{\Omega}=2\pi(\gamma-1)
+\quad\text{with the sense opposite to }\vec\Omega\;},
 $$
 i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\approx v^2/2c^2$, so $\omega_T/\Omega\approx-\tfrac12 v^2/c^2$: the precession is half the orbital rate, to leading order, and opposite in sense. Formally the factor $\tfrac12$ is the value of $\gamma^2/(\gamma+1)$ at $\gamma=1$, first displayed in (15).
 

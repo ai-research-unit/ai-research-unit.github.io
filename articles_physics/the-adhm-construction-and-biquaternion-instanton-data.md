@@ -8,8 +8,6 @@ The ADHM construction is unusual among the results of gauge theory in that its n
 
 The article proceeds in four steps. It writes the self-duality equation and identifies its quaternionic content; it states the ADHM equations and the quotient; it derives the dimension of the moduli space by counting the data, the constraints and the gauge redundancy, and checks the counting against the known cases; and it verifies the minimal ($k=1$) datum against the equations and against the BPST solution. It then separates the algebraic content from the analytic input, because the existence and completeness of the construction — that every self-dual connection arises this way and that the quotient is a manifold — are theorems of analysis, not identities of the algebra.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central $i$; the real-quaternion subspace is $\mathbb H_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ and the compact factor is $SU(2)=\{\tilde U\in\mathbb H_{\mathbb B}:\tilde U\bar{\tilde U}=e_t\}$. On the Euclidean slice the coordinates are $x_4,x_1,x_2,x_3$ with the self-dual 't Hooft symbols $\eta^a_{\mu\nu}$ of *Instantons and Solitons in Biquaternionic Form*, and the curvature is written without the explicit factor of $i$ in the commutator, $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+[\mathcal A_\mu,\mathcal A_\nu]$, on Hermitian generators with $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$; the placement of the factor $i$ is the signature convention recorded in that article. The matrix trace on the gauge factor is distinguished from the informational trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
-
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the instanton solutions and the topological charge.
 - Companion article *The Hopf Fibration and the Biquaternion Gauge Bundle*, for the boundary data and the structure group.
 - Companion article *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*, for the zero-mode count on the background.
@@ -124,9 +122,9 @@ $$
 This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_k=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's gauge factor $N=2$,
 
 $$
-\dim_{\mathbb R}\mathcal M_k = 8k ,
+\boxed{\;\dim_{\mathbb R}\mathcal M_k = 8k ,
 \qquad
-\dim_{\mathbb R}\mathcal M_k^{\text{physical}} = 8k-3 ,
+\dim_{\mathbb R}\mathcal M_k^{\text{physical}} = 8k-3\;},
 $$
 
 the second after removing the three-dimensional global $SU(2)$ rotation that acts trivially on the physical configuration. Thus $k=1$ has the five moduli of the BPST solution — four translations and one dilatation — and $k=2$ has thirteen. The dimension count is a check on the construction, not a substitute for it: it says that the data can locally parametrise a space of the right size, and it fixes the count of collective coordinates that the semiclassical expansion integrates over.
@@ -201,9 +199,9 @@ What is standard and imported is equally clear. The ADHM theorem itself — exis
 The self-duality equation $F=\star F$ on the Euclidean slice is a quaternionic equation: with $\mathbb R^4\cong\mathbb H_{\mathbb B}$ and $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, a self-dual curvature is quaternionic-holomorphic and its three independent components carry the adjoint of the compact factor $\mathrm{SU}(2)\subset\mathbb M_-$. The ADHM construction parametrises all self-dual connections of charge $k$ by matrices $B_1,B_2\in M_k(\mathbb C)$, $I\in M_{k\times N}(\mathbb C)$, $J\in M_{N\times k}(\mathbb C)$ satisfying the real and complex equations
 
 $$
-\mu_{\mathbb R}=[B_1,B_1^\dagger]+[B_2,B_2^\dagger]+II^\dagger-J^\dagger J=0 ,
+\boxed{\;\mu_{\mathbb R}=[B_1,B_1^\dagger]+[B_2,B_2^\dagger]+II^\dagger-J^\dagger J=0 ,
 \qquad
-\mu_{\mathbb C}=[B_1,B_2]+IJ=0 ,
+\mu_{\mathbb C}=[B_1,B_2]+IJ=0\;},
 $$
 
 modulo the $\mathrm{U}(k)$ action. The equations are the vanishing of a quaternionic moment map, and the quotient is the hyperkähler quotient $\mathcal M_k=\mu^{-1}(0)/\mathrm{U}(k)$.

@@ -70,7 +70,9 @@ So every map into $\mathbb{D}'$ is null-homotopic, and every subset of $\mathbb{
 The two submodules are star-shaped, hence contractible, and homeomorphic to $\mathbb{R}$:
 
 $$
-R_{\mathbb{D}'} = \{q' = 0\} \cong \mathbb{R}, \qquad \mathrm{M} = \varepsilon R_{\mathbb{D}'} = \{q = 0\} \cong \mathbb{R}.
+\boxed{\;
+R_{\mathbb{D}'} = \{q' = 0\} \cong \mathbb{R}, \qquad \mathrm{M} = \varepsilon R_{\mathbb{D}'} = \{q = 0\} \cong \mathbb{R}
+\;}.
 $$
 
 So the two eigenspaces of dual conjugation carry no topology beyond that of the line. The entire topological content of the algebra lies in the complement of the maximal ideal and in the interaction of the two lines, not in the lines themselves.
@@ -98,7 +100,9 @@ So the norm-one set of the dual numbers is not a circle, as in the complex case,
 **Theorem.** The group of units is $(\mathbb{D}')^\times = \{q \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{q > 0\}$ and $\{q < 0\}$, each contractible. The homotopy type of $(\mathbb{D}')^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $Q \mapsto \operatorname{sgn}(q)$; hence
 
 $$
-\pi_0\bigl((\mathbb{D}')^\times\bigr) = \mathbb{Z}/2, \qquad \pi_n\bigl((\mathbb{D}')^\times\bigr) = 0 \quad (n \geq 1).
+\boxed{\;
+\pi_0\bigl((\mathbb{D}')^\times\bigr) = \mathbb{Z}/2, \qquad \pi_n\bigl((\mathbb{D}')^\times\bigr) = 0 \quad (n \geq 1)
+\;}.
 $$
 
 **Proof.** $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$ is the complement of the closed line $\mathrm{M}$, hence two open half-planes, each star-shaped with respect to $\pm 1$ and contractible. The map $H(t, Q) = (1-t)Q + t\operatorname{sgn}(q)$ is a continuous deformation retraction onto $\{\pm 1\}$.
@@ -110,7 +114,9 @@ $$
 The group of units is $\mathbb{D}' \setminus \mathrm{M}$, an open dense subset of the plane with two connected components, distinguished by the sign of the real part. Its complement, hence its boundary, is the maximal ideal:
 
 $$
-\partial\bigl((\mathbb{D}')^\times\bigr) = \mathrm{M}.
+\boxed{\;
+\partial\bigl((\mathbb{D}')^\times\bigr) = \mathrm{M}
+\;}.
 $$
 
 **Proposition.** The boundary $\mathrm{M}$ is a closed subset of the plane of empty interior, homeomorphic to $\mathbb{R}$, and it is the closure of the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$. Each of the two components of the unit group is homeomorphic to an open half-plane, and the boundary separates them.

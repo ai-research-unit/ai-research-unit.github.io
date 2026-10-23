@@ -6,8 +6,6 @@ This article reads the split-complex numbers in the **real matrix algebras**: th
 
 The **element reading** of the $2\times2$ matrix, its Cayley form, its multiplicativity, the determinant as the norm, the trace, the characteristic polynomial, the idempotent diagonalisation and the identification of the unit-norm elements with the hyperbolic rotations are *Split-Complex Regular Element Representation*, which owns them; this article states the model and cites that article rather than repeating it. The two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*; the invertibility criterion and the group of units are *Norm and Invertibility in the General Split-Complex Algebra*. The degeneracy of the models is *The Specificities of the Split-Complex Algebra*, and the general representation theory is *Split-Complex Element Representations*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$ with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$; the norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. In this article $M_2(\mathbb{D})=\{qI+q'J\}$ denotes the image of the $2\times2$ model inside $M_2(\mathbb{R})$, and $M_4(\mathbb{R})$ the ambient algebra of the $4\times4$ model.
-
 ## The $2\times2$ Model
 
 **Definition.** The **$2\times2$ matrix model** is the $\mathbb{R}$-linear map
@@ -21,7 +19,7 @@ fixed by its values on the basis, $\mathsf{M}_2(1)=\begin{pmatrix}1&0\\0&1\end{p
 **Theorem.** $\mathsf{M}_2$ is an injective algebra homomorphism; its image is the commutative subalgebra
 
 $$
-M_2(\mathbb{D}) = \left\{ \begin{pmatrix} q & q' \\ q' & q \end{pmatrix} : q, q' \in \mathbb{R} \right\} = \{qI+q'J\} \cong \mathbb{R}[J]/(J^2-I),
+\boxed{\; M_2(\mathbb{D}) = \left\{ \begin{pmatrix} q & q' \\ q' & q \end{pmatrix} : q, q' \in \mathbb{R} \right\} = \{qI+q'J\} \cong \mathbb{R}[J]/(J^2-I) \;},
 $$
 
 of real dimension two, and $\mathbb{D}\cong M_2(\mathbb{D})$ as algebras.
@@ -33,7 +31,7 @@ The matrices of the image are the **real matrices of hyperbolic type**: symmetri
 **The determinant and the trace.** For $Q=q+jq'$,
 
 $$
-\det \mathsf{M}_2(Q) = q^2-q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{Tr} \mathsf{M}_2(Q) = 2q = q_+ + q_- .
+\boxed{\; \det \mathsf{M}_2(Q) = q^2-q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{Tr} \mathsf{M}_2(Q) = 2q = q_+ + q_- \;}.
 $$
 
 The determinant is the **second algebraic norm** $\langle Q\rangle_{*}=Q\bar Q$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the trace is twice the scalar part, the sum of the two eigenvalues. The **first algebraic norm** $\langle Q\rangle=Q^2$ appears not as a determinant or a trace but as the square of the matrix, $\mathsf{M}_2(Q)^2=\mathsf{M}_2(Q^2)$, which is the multiplicativity of $\mathsf{M}_2$ read on the square. The eigenvalues of $\mathsf{M}_2(Q)$ are the idempotent coordinates $q_+=q+q'$ and $q_-=q-q'$, both real, and the characteristic polynomial factors as $(\lambda-q_+)(\lambda-q_-)$.
@@ -79,7 +77,7 @@ The two models are told apart by their **commutants**, the matrices that commute
 **The $4\times4$ commutant.** A matrix $C=\begin{pmatrix}P_{11}&P_{12}\\P_{21}&P_{22}\end{pmatrix}$, written in $2\times2$ blocks, commutes with every $\operatorname{diag}(X,X)$, $X\in M_2(\mathbb{D})$, exactly when $P_{11}X=XP_{11}$, $P_{12}X=XP_{12}$, $P_{21}X=XP_{21}$ and $P_{22}X=XP_{22}$ for all such $X$, that is exactly when each of the four blocks lies in the commutant of $M_2(\mathbb{D})$, namely in $M_2(\mathbb{D})$. Hence
 
 $$
-\{C \in M_4(\mathbb{R}) : C\,\mathsf{M}_4(Q)=\mathsf{M}_4(Q)\,C \text{ for all } Q\} = \left\{ \begin{pmatrix} P_{11} & P_{12} \\ P_{21} & P_{22} \end{pmatrix} : P_{11},P_{12},P_{21},P_{22} \in M_2(\mathbb{D}) \right\} \cong M_2(M_2(\mathbb{D})) \cong M_2(\mathbb{D}),
+\boxed{\; \{C \in M_4(\mathbb{R}) : C\,\mathsf{M}_4(Q)=\mathsf{M}_4(Q)\,C \text{ for all } Q\} = \left\{ \begin{pmatrix} P_{11} & P_{12} \\ P_{21} & P_{22} \end{pmatrix} : P_{11},P_{12},P_{21},P_{22} \in M_2(\mathbb{D}) \right\} \cong M_2(M_2(\mathbb{D})) \cong M_2(\mathbb{D}) \;},
 $$
 
 of real dimension **eight**, four times the dimension two of the image. The commutant of the $4\times4$ image is therefore strictly larger than the image, unlike the $2\times2$ case, and it is the ring of $2\times2$ matrices over the commutative ring $\mathbb{D}$: the doubling of the module and the doubling of the commutant are the same fact.

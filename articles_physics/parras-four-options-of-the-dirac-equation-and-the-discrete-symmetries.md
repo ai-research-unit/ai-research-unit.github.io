@@ -36,12 +36,12 @@ $$
 The four spinors carry the same eight real fields in four different arrangements. With a Clifford basis $\{e_i\}$ (distinct from the biquaternion base $e_t,\vec e_x,\vec e_y,\vec e_z$), $e_ie_j+e_je_i=2\eta_{ij}$, and with $\nabla$ the gradient, $A$ the potential, $m$ the mass and $ϙ$ the charge, the four options satisfy the four equations
 
 $$
-\begin{aligned}
+\boxed{\;\begin{aligned}
 \{2\} &\quad \nabla\Psi_{\{2\}}e_{21} + ϙA\Psi_{\{2\}} + m\Psi_{\{2\}}e_0 = 0, && e^+_\uparrow,\\
 \{0\} &\quad -\nabla\Psi_{\{0\}}e_{21} + ϙA\Psi_{\{0\}} + m\Psi_{\{0\}}e_0 = 0, && e^+_\downarrow,\\
 \{3\} &\quad \nabla\Psi_{\{3\}}e_{21} - ϙA\Psi_{\{3\}} + m\Psi_{\{3\}}e_0 = 0, && e^-_\uparrow,\\
 \{1\} &\quad -\nabla\Psi_{\{1\}}e_{21} - ϙA\Psi_{\{1\}} + m\Psi_{\{1\}}e_0 = 0, && e^-_\downarrow.
-\end{aligned}
+\end{aligned}\;}
 $$
 
 The second column is Parra's identification of each equation with a "particle": the sign $\pm$ distinguishes electron from positron and the arrow $\uparrow\downarrow$ distinguishes spin up from spin down. The identification is a choice — one may exchange the two labels within each pair — and the corpus records it as Parra's interpretation rather than as a derivation.
@@ -59,7 +59,7 @@ The second column is Parra's identification of each equation with a "particle": 
 **Statement (the permutations of the options).** The transformations that connect the four Parra options form the quotient
 
 $$
-D = \Gamma_{1,3}/\Gamma^{+}_{1,3},
+\boxed{\;D = \Gamma_{1,3}/\Gamma^{+}_{1,3}\;},
 $$
 
 the Clifford–Lipschitz group modulo its even part. Its non-identity elements are, up to the identification, **space inversion**, **charge conjugation** and **time reversal**. The four options are the orbit of any one of them under $D$, and the four particle labels $e^\pm_{\uparrow\downarrow}$ are the labels of that orbit.
@@ -116,7 +116,7 @@ This is the algebraic content of a familiar physical fact. In passing from the D
 Parra's spinors have a compact quaternion form. With the quaternion basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ and quaternion conjugation $\phantom{q}^{\natural}$, the spinor of option $\{r\}$ is
 
 $$
-\Psi_r = q_{r1} + i\,\bar q_{r2},
+\boxed{\;\Psi_r = q_{r1} + i\,\bar q_{r2}\;},
 $$
 
 the sum of a quaternion and $i$ times a conjugate quaternion. Since the Hestenes spinor is an element of the even subalgebra $\mathrm{Cl}_{1,3}^+\subset\mathrm{Cl}_{1,3}\cong M_2(\mathbb H)$, this extends to the matrix spinor

@@ -4,8 +4,6 @@
 
 The two forms of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ and the quaternion form $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$, are read here on the two **remarkable subspaces** of the quaternion space, the scalar line $\mathbb{R}_{\mathbb{H}}=\{q_te_t\}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})=\{\vec q\}$, the fixed and the anti-fixed space of the quaternion conjugation. The two subspaces are orthogonal for both forms, so the restrictions are the two summands of the two forms, and the two forms are definite on each summand with **opposite signs for the plain form** and with the **same sign for the quaternion form**.
 
-**Conventions.** Throughout, $\tilde q=q_te_t+\vec q$ names an element, the scalar line has the natural basis $e_t$ and the vector subspace the natural basis $\vec e_x,\vec e_y,\vec e_z$, and $(\vec q_1,\vec q_2)$ is the dot product of the vector parts. The plain form is $\langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ and the quaternion form is $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=q_{1t}q_{2t}+(\vec q_1,\vec q_2)$.
-
 ## The Restriction Matrices
 
 **Proposition (the restrictions).** The two subspaces are orthogonal for both forms, and the restrictions have the matrices
@@ -20,7 +18,7 @@ The two forms of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, the plai
 So the two forms are the orthogonal sums of their two restrictions,
 
 $$
-B=B|_{\mathbb{R}_{\mathbb{H}}}\perp B|_{\operatorname{Vect}(\mathbb{H})} , \qquad N=N|_{\mathbb{R}_{\mathbb{H}}}\perp N|_{\operatorname{Vect}(\mathbb{H})} ,
+\boxed{\;B=B|_{\mathbb{R}_{\mathbb{H}}}\perp B|_{\operatorname{Vect}(\mathbb{H})} , \qquad N=N|_{\mathbb{R}_{\mathbb{H}}}\perp N|_{\operatorname{Vect}(\mathbb{H})}\;},
 $$
 
 and the **signature** of each restriction is read off the matrices: $\langle\cdot,\cdot\rangle$ has signature $(1,0)$ on the scalar line and $(0,3)$ on the vector subspace, of opposite signs, and their sum is the signature $(1,3)$ of $\langle\cdot,\cdot\rangle$ on the whole space; $\langle\cdot,\cdot\rangle_{\natural}$ has signature $(1,0)$ on the scalar line and $(3,0)$ on the vector subspace, of the same sign, and their sum is the signature $(4,0)$ of $\langle\cdot,\cdot\rangle_{\natural}$ on the whole space. The plain form is **definite on each subspace with opposite signs**, the scalar line positive and the vector subspace negative; the quaternion form is **definite on each with the same sign**, the two subspaces positive.

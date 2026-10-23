@@ -7,8 +7,6 @@ Three linear involutions act on the split-quaternion algebra $\mathbb{H}_{\mathr
 
 The article gives the three involutions and their general properties of linearity and (anti-)automorphism type; the two composition relations among them; the eigenspaces of each involution taken separately; the common eigenspaces of the commuting pair $(\alpha, \rho)$, which is the finest decomposition; the reason one two-dimensional piece of that decomposition does not split further; and the relation to the operators the analysis places on the pieces. The group that the three involutions generate, and the lattice of their fixed spaces, are the subject of the companion article *Split-Quaternion Involution Lattice*.
 
-**Conventions.** A split-quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$, $\vec e_x \vec e_y = -\vec e_y \vec e_x$; the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$. The scalar and vector subspaces are $S = \mathbb{R}\cdot 1$ and $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$, and the split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$, $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$, as in *Split-Quaternion Scalar and Vector Subspaces* and *Split-Quaternion Split-Complex Subspaces*.
-
 ## The Three Involutions
 
 **Definition.** The **conjugation** is the map ${}^{\natural}$ with
@@ -62,8 +60,10 @@ $$
 The three involutions satisfy the **composition relations**
 
 $$
-\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q)),
-$$
+\boxed{\;
+\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))
+\;}
+$$,
 
 so that, as maps, ${}^{\natural} = \alpha\rho = \rho\alpha$. Equivalently, $\alpha{}^{\natural} = \rho$ and $\rho{}^{\natural} = \alpha$. In particular $\alpha$ and $\rho$ commute, and the set $\{\operatorname{id}, \alpha, \rho, {}^{\natural}\}$ is closed under composition with every element of order two; it is the Klein four-group. The structure of this group and the way it permutes its members are developed in *Split-Quaternion Involution Lattice*.
 
@@ -82,8 +82,10 @@ The fixed space is the scalar line, of dimension $1$; the anti-fixed space is th
 ### The Principal Involution
 
 $$
-\{\tilde q : \alpha(\tilde q) = \tilde q\} = \operatorname{span}\{1, \vec e_z\} = \mathbb{D}_3, \qquad \{\tilde q : \alpha(\tilde q) = -\tilde q\} = \operatorname{span}\{\vec e_x, \vec e_y\}.
-$$
+\boxed{\;
+\{\tilde q : \alpha(\tilde q) = \tilde q\} = \operatorname{span}\{1, \vec e_z\} = \mathbb{D}_3, \qquad \{\tilde q : \alpha(\tilde q) = -\tilde q\} = \operatorname{span}\{\vec e_x, \vec e_y\}
+\;}
+$$.
 
 Both eigenspaces have dimension $2$. The fixed space is the split-complex plane $\mathbb{D}_3$; the anti-fixed space is the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, which carries the hyperbolic form $q_x^2 - q_y^2$ of signature $(1,1)$ and is spanned by the two basis elements that anticommute into $\pm \vec e_z$.
 
@@ -110,8 +112,10 @@ Because $\alpha$ and $\rho$ commute, they are simultaneously diagonalisable, and
 **Theorem.** The common eigenspaces of $\alpha$ and $\rho$ are
 
 $$
-\mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y\} \;\oplus\; \mathbb{R} \vec e_z,
-$$
+\boxed{\;
+\mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y\} \;\oplus\; \mathbb{R} \vec e_z
+\;}
+$$,
 
 of dimensions $1, 2, 1$, on which the sign pair $(\alpha, \rho)$ takes the values $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The sign pair $(-,-)$ does not occur.
 

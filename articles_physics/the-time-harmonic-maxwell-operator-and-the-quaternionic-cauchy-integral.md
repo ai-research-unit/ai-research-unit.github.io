@@ -128,7 +128,7 @@ $$
 which is the physical time-harmonic Maxwell operator $M$ up to the ordering of the two rows, with the solenoidal pairs as its natural domain. The difference between the two is exactly what the source means by a "better" object. The domain of the physical operator is a subspace cut out by the divergence conditions, so that the system can only be posed on pairs satisfying them and the operator cannot be iterated without re-imposing them; the domain of $N$ is all pairs of complex-quaternionic functions, with no side condition at all. And the algebra improves with the domain:
 
 $$
-N N^{\dagger}=-(\Delta+\lambda)\,I_2,
+\boxed{\;N N^{\dagger}=-(\Delta+\lambda)\,I_2\;},
 \qquad
 N^{\dagger}=\begin{pmatrix} D_3 & i\omega\mu \\[2pt] \sigma & D_3 \end{pmatrix},
 \tag{8}
@@ -195,9 +195,10 @@ which is $(8)$ seen through the diagonalisation: the two factors multiply to the
 This gives the paper's central theorem. Because $(11)$ is invertible, the pairs annihilated by $N$ are in bijection with the pairs annihilated by the diagonal operator, that is, with the pairs $(\Phi,\Psi)$ whose first component is $\alpha$-hyperholomorphic and whose second is $\alpha$-hyperholomorphic for the conjugate operator:
 
 $$
+\boxed{\;
 \ker N
 \;\cong\;
-\ker(D_3-\alpha)\times\ker(D_3+\alpha) .
+\ker(D_3-\alpha)\times\ker(D_3+\alpha)\;}.
 \tag{14}
 $$
 
@@ -310,7 +311,7 @@ $$
 **Theorem (Cauchy integral formula).** If in addition $N[f]=0$ in $\Omega$, then
 
 $$
-f=\mathcal{K}_N[f]
+\boxed{\;f=\mathcal{K}_N[f]\;}
 \qquad\text{in }\Omega ,
 \tag{23}
 $$

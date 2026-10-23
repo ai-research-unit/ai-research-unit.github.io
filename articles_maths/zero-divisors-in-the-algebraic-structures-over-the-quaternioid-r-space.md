@@ -12,8 +12,6 @@ $$
 
 the **symmetric plain algebra** of the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$, the **antisymmetric plain algebra** of the cross product $\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$, and the **general quaternionic algebra** of the product $\tilde q_1^{\natural}\tilde q_2$. A zero divisor names its product, so the generic definition poses three questions, answered once here. The fourth structure of the space, the algebra product, is a division algebra and owns its element theory in the *Quaternions* category, in *Zero Divisors of the Quaternion Algebra*; the table below names it once for the contrast and cites it rather than restating it.
 
-**Scope and owners.** The general vocabulary, the zero divisor, the annihilator, the idempotent and the nilpotent stated once for a general product, is *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. The criteria of the three companion structures stay owned by their articles, cited one by one in §*The Three Companion Structures and the Zero-Divisor Set*. The products are *The 6 Products of the Quaternioid Real Space* and the names *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the two forms are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*. The property table is *Comparison Between the Two General Products*; the idempotents and the roots of $+1$ are *Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the roots of $0$, the square-zero sets and the nilpotents are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the root equation at a general value is *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; and the annihilators of one element are *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. The space being real and the norm definite, the empty set is finally read against the complex case in §*The Empty Set against the Complex Case*.
-
 ## The Empty Zero-Divisor Set
 
 **Definition.** The **zero-divisor set of the general quaternionic product** is the vanishing set of the norm with the apex removed,
@@ -33,7 +31,7 @@ The vanishing set $\{N=0\}$ is the smallest real cone, the apex alone, of dimens
 The elements of $\mathbb{H}$ fall into two classes, and there is no third. The invertible elements of the algebra product, the units, are exactly those of non-vanishing norm, $\mathbb{H}^{\times}=\{\tilde q:\langle\tilde q\rangle_{\natural}\neq0\}=\mathbb{H}\setminus\{0\}$ (*Zero Divisors of the Quaternion Algebra*); the origin is never a zero divisor; and an element of nonzero norm is invertible in the general quaternionic algebra as well, so it admits no annihilating partner there. Hence
 
 $$
-\mathbb{H}=\{0\}\cup\mathbb{H}^{\times} .
+\boxed{\;\mathbb{H}=\{0\}\cup\mathbb{H}^{\times}\;}.
 $$
 
 So an element is a unit exactly when it lies off the vanishing set of the norm, and the zero-divisor set of the general quaternionic product is the complement of the group of units with the apex removed, which is empty.
@@ -87,7 +85,7 @@ The general quaternionic product has the empty set. The symmetric plain structur
 **Theorem (the zero-divisor set is empty).** A nonzero element $\tilde q_1$ is a left, a right or a two-sided zero divisor of neither the general quaternionic product nor the algebra product. In symbols,
 
 $$
-\{\tilde q_1\neq0:\tilde q_1\text{ admits an annihilating factor in }\star\}=\varnothing \qquad\text{for }\star=\tilde q_1^{\natural}\tilde q_2\text{ and }\star=\tilde q_1\tilde q_2 .
+\boxed{\;\{\tilde q_1\neq0:\tilde q_1\text{ admits an annihilating factor in }\star\}=\varnothing \qquad\text{for }\star=\tilde q_1^{\natural}\tilde q_2\text{ and }\star=\tilde q_1\tilde q_2\;}.
 $$
 
 *Proof.* The natural product is the algebra product with the natural conjugation in the first slot, so its left multiplication by $\tilde q_1$ is the left multiplication of the algebra by $\tilde q_1^{\natural}$, and the conjugation is a bijection that leaves the norm unchanged. The kernel of the algebra left multiplication by $\tilde q_1^{\natural}$ is $\{0\}$, the element $\tilde q_1^{\natural}$ being nonzero; hence a nonzero element admits no annihilating factor in the general quaternionic product. For the algebra product this is the division property itself: from $\tilde q_1\tilde q_2=0$ with $\tilde q_1\neq0$ one multiplies by $\tilde q_1^{-1}$ and gets $\tilde q_2=0$.
@@ -110,7 +108,7 @@ $$
 and the norm is $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$. **The zero-divisor set is the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$, of real dimension three.** If $\tilde q_1$ is pure, $\tilde q_1=\vec q_a$, and the partner is pure, $\tilde q_2=\vec v$, the product is $\tilde q_1\bullet\tilde q_2=-(\vec q_a,\vec v)e_t$, which vanishes exactly when $\vec q_a$ and $\vec v$ are orthogonal; a nonzero pure element has a nonzero orthogonal vector in the three-dimensional vector subspace. If $\tilde q_1$ is not pure the left multiplication operator is nonsingular, of determinant
 
 $$
-\det L^{\bullet}_{\tilde q_1}=q_{1t}^{2}\langle\tilde q_1\rangle_{\natural} ,
+\boxed{\;\det L^{\bullet}_{\tilde q_1}=q_{1t}^{2}\langle\tilde q_1\rangle_{\natural}\;},
 $$
 
 which does not vanish; the computation is in *The Multiplication Operators of the Symmetric Plain Algebra*. The plane $q_t=0$ of the pure elements is the zero-divisor set of the structure, and the regular elements are the non-pure ones together with the origin.
@@ -155,7 +153,7 @@ The sets of this article are read over $\mathbb{R}$, where the norm is definite 
 **Proposition (over $\mathbb{R}$ the two squares vanish together).** The square of the algebra product and the natural square have the same vanishing set, the origin:
 
 $$
-\tilde q^{2}=0\iff\tilde q=0,\qquad \tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t=0\iff\tilde q=0 .
+\boxed{\;\tilde q^{2}=0\iff\tilde q=0,\qquad \tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t=0\iff\tilde q=0\;}.
 $$
 
 Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ still vanishes only at the origin, but the natural square $\tilde Q\tilde Q^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternion Sesqualgebra*).
@@ -183,7 +181,7 @@ Of the two structures with the empty zero-divisor set only the algebra product h
 **Theorem (the inverse equations).** Let $\star$ be the general quaternionic product and let $\tilde q\neq0$. Then $\tilde q$ admits no annihilating factor in $\star$, and the two equations
 
 $$
-\tilde q\star\tilde q_3=e_t , \qquad \tilde q_3\star\tilde q=e_t
+\boxed{\;\tilde q\star\tilde q_3=e_t , \qquad \tilde q_3\star\tilde q=e_t\;}
 $$
 
 have the common solution $\tilde q_3=(\tilde q^{-1})^{\natural}$; equivalently, both have a solution exactly when $\langle\tilde q\rangle_{\natural}\neq0$, which is every nonzero element.

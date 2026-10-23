@@ -82,7 +82,7 @@ $$
 A pure vector is a unit exactly when $(\vec P,\vec P) \neq 0$. Since a pure vector satisfies $\vec P^2 = -(\vec P,\vec P)e_t$, the nonzero non-units of the vector subspace are exactly its **square-zero** elements:
 
 $$
-(\vec P,\vec P) = 0 \iff \vec P^2 = 0 .
+\boxed{\;(\vec P,\vec P) = 0 \iff \vec P^2 = 0\;}.
 $$
 
 An explicit example is $\vec P = \vec e_x + i\vec e_y$, whose square vanishes: $(\vec e_x + i\vec e_y)^2 = -e_t + i\vec e_z - i\vec e_z + e_t = 0$. Writing the complex vector as $\vec\rho + i\vec\rho'$ with $\vec\rho, \vec\rho'$ real,
@@ -206,7 +206,7 @@ $$
 **The idempotents.** The Hermitian subspace is the one of the remarkable subspaces that carries a nontrivial family of idempotents. Besides $0$ and $e_t$,
 
 $$
-\tilde\Pi = \tfrac{1}{2}\left(e_t + i\vec q_a\right) , \qquad \vec q_a \in \mathbb{R}^3 , \quad (\vec q_a,\vec q_a) = 1 .
+\boxed{\;\tilde\Pi = \tfrac{1}{2}\left(e_t + i\vec q_a\right) , \qquad \vec q_a \in \mathbb{R}^3 , \quad (\vec q_a,\vec q_a) = 1\;}.
 $$
 
 The parameter $\vec q_a$ runs over the real unit vectors, so the nontrivial idempotents of the Hermitian subspace form a two-parameter family; each is a Hermitian idempotent of the algebra, and its multiplication is a projector. Three properties hold for every member, and they are the ones the projector theory uses. **First, the norm vanishes, so every nontrivial idempotent of the Hermitian subspace is a zero divisor.** The norm of $\tfrac{1}{2}(e_t + i\vec q_a)$ is $\tfrac{1}{4}(1 - (\vec q_a,\vec q_a)) = 0$, and the nontrivial idempotents are exactly the zero divisors of the Hermitian subspace with scalar part $\tfrac{1}{2}$, every other zero divisor of the subspace being a real multiple of one of them. **Second, the complement and the orthogonality.** The complement $e_t - \tilde\Pi = \tfrac{1}{2}(e_t - i\vec q_a)$ is again a nontrivial idempotent of the subspace, and
@@ -355,7 +355,7 @@ $$
 **The ideals.** $\mathbb{B}$ is **simple**, its only two-sided ideals being $0$ and $\mathbb{B}$, and it has **length two** as a left module over itself, so that every nonzero proper left ideal is **minimal**, of real dimension $4$, and dually every nonzero proper right ideal is a minimal right ideal of real dimension $4$. Two consequences are immediate. Since the only two-sided ideals are $0$ and $\mathbb{B}$, **no subspace of the remarkable subspaces is a two-sided ideal**. And each of the remarkable subspaces **generates the whole algebra on both sides**,
 
 $$
-\mathbb{B}\mathbb{S} = \mathbb{S}\mathbb{B} = \mathbb{B} \qquad \text{for each of the remarkable subspaces } \mathbb{S} ,
+\boxed{\;\mathbb{B}\mathbb{S} = \mathbb{S}\mathbb{B} = \mathbb{B} \qquad \text{for each of the remarkable subspaces } \mathbb{S}\;},
 $$
 
 because a left ideal containing a unit is everything, and each of the remarkable subspaces contains a unit: $e_t$ is in the centre, in the quaternion subspace and in $\mathbb{M}_+$, the element $\vec e_x$ is in the vector subspace and in $\mathbb{M}_-$, and $ie_t$ is in the anti-quaternion subspace.
@@ -365,7 +365,7 @@ because a left ideal containing a unit is everything, and each of the remarkable
 **Theorem (the ideal generated against the annihilator).** For a nonzero **nilpotent** of the vector subspace, $\vec P^2 = 0$, the ideal generated and the annihilator coincide, $\mathbb{B}\vec P = I_{\vec P}$ and $\vec P\mathbb{B} = J_{\vec P}$; for every other zero divisor $\tilde Q$ the two are distinct and therefore complementary,
 
 $$
-\mathbb{B} = \mathbb{B}\tilde Q \oplus I_{\tilde Q} = \tilde Q\mathbb{B} \oplus J_{\tilde Q} .
+\boxed{\;\mathbb{B} = \mathbb{B}\tilde Q \oplus I_{\tilde Q} = \tilde Q\mathbb{B} \oplus J_{\tilde Q}\;}.
 $$
 
 **Proof of the nilpotent case.** If $\vec P^2 = 0$ then $(\tilde Q_3\vec P)\vec P = \tilde Q_3\vec P^2 = 0$ for every $\tilde Q_3$, so $\mathbb{B}\vec P \subseteq I_{\vec P}$, and $\mathbb{B}\vec P$ contains $\vec P \neq 0$ while $I_{\vec P}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\vec P\tilde Q_3)\vec P = 0$ on the left instead.

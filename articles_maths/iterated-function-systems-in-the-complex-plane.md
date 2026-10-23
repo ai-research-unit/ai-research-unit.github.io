@@ -30,9 +30,7 @@ and the **ratio** (or linear contraction factor) of $S$ is $|u|$. The similarity
 
 **Theorem (the attractor, Hutchinson).** For every such family there is a unique nonempty compact set $\Lambda \subseteq \mathbb{C}$ with
 
-$$
-\Lambda = \bigcup_{i=1}^{m} S_i(\Lambda) ,
-$$
+$$\boxed{\;\Lambda = \bigcup_{i=1}^{m} S_i(\Lambda)\;},$$
 
 the **attractor** of the system; it is the fixed point of the Hutchinson operator $E \mapsto \bigcup_i S_i(E)$ on the complete metric space of nonempty compact sets with the Hausdorff metric, and for every starting compact set the iterated union converges to $\Lambda$ in the Hausdorff metric.
 
@@ -48,9 +46,7 @@ It exists and is unique when $m \geq 2$ and every $|u_i| < 1$, because the left-
 
 **Theorem (the dimension under the open set condition).** If the system satisfies the **open set condition** — there is a nonempty open set $O$ with $\bigcup_i S_i(O) \subseteq O$, the union disjoint — then
 
-$$
-0 < \mathcal{H}^s(\Lambda) < \infty, \qquad \dim_H \Lambda = s ,
-$$
+$$\boxed{\;0 < \mathcal{H}^s(\Lambda) < \infty, \qquad \dim_H \Lambda = s\;},$$
 
 where $s$ is the similarity dimension; likewise the box dimension of $\Lambda$ is $s$. Without the open set condition the attractor may have dimension strictly less than the similarity dimension, because the pieces may overlap.
 

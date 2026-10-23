@@ -5,7 +5,7 @@
 The probability band is the general plain sesqualgebra,
 
 $$
-\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*},
+\boxed{\;\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}\;},
 $$
 
 whose scalar form is the positive definite Hermitian pairing and whose job in the framework is probability. It is one of the four general products, and this article reads what that product carries: a weight, a cone at the third power, three grades of reality, a purity gap, an arrow from a process to an observable, and a phase.
@@ -13,10 +13,6 @@ whose scalar form is the positive definite Hermitian pairing and whose job in th
 It also carries an absence, and the absence organises the rest. The band has no element whose square is $-e_t$, so it has no algebraic clock. The clock is owned by the composition band, where the central imaginary squares to minus the identity, and the probability band imports it as the parameter of a unitary family whose generator is material. A band that measures weights does not also generate the phase it measures.
 
 The order is the order of the readings. Each section states the algebraic result first, the interpretation second, and its boundary last.
-
-**Placement.** The article belongs to the Algebra block, after *The Krein Form and the Indefinite Structure*, because it closes the state side of the block. It is not a fifth product: the product is *The Four General Products: Composition, Probability, Causality, Gauge*, and this article reads the band that article names probability.
-
-**Boundaries.** No dynamics is supplied. The Born rule is the normalised Hermitian form, read as the trace formula, and is not derived here. The three species are grades of a reality condition, and the identification of a grade with a particle type is a hypothesis. The square is the minimal crossing of the sectors, not the only map that crosses them. The geometric phase is cited from its owners. The purity gap is a reading on the positive slice $\mathrm{Sc}=\tfrac12$ (trace one in the $2\times2$ image).
 
 ## The Results It Uses
 
@@ -76,7 +72,7 @@ $$
 The phase of $z$ disappears. A central value $\lambda e_t$ has a root exactly when $\lambda$ is a non-negative real number. For $\lambda>0$ the roots are the elements with $\tilde Q\tilde Q^{*}=\lambda e_t$, equivalently the matrices $\sqrt{\lambda}\,U$ with $U$ unitary; the central roots $z e_t$ with $\lvert z\rvert^{2}=\lambda$ are a subset, not the whole root set. The negative central values have no root. The central imaginary is the sharpest case:
 
 $$
-(ie_t)\star(ie_t)=ie_t\,\overline{ie_t}=i(-i)e_t=e_t .
+\boxed{\;(ie_t)\star(ie_t)=ie_t\,\overline{ie_t}=i(-i)e_t=e_t\;}.
 $$
 
 The element that generates the phase in the composition band squares to $+e_t$ here. It is not a root of $-e_t$; it is a unitary. The central phase $e^{i\theta}e_t$ is likewise a unitary, and its logarithm $i\theta e_t$ is a coefficient, not a band element with a negative square.
@@ -156,7 +152,7 @@ so the index is a property of the pair $(\tilde Q,\tilde Q^{*})$ and can exceed 
 The nilpotent set is the parent's pure isotropic cone,
 
 $$
-\mathcal{N}_{\star}=\{\tilde\Upsilon\neq0:\ \Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\},
+\boxed{\;\mathcal{N}_{\star}=\{\tilde\Upsilon\neq0:\ \Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\}\;},
 $$
 
 of complex dimension two. The non-pure zero divisors are zero divisors of the band and are not nilpotent. The set is inherited and the index is not: the same cone, one power further out.
@@ -269,9 +265,9 @@ $$
 The two are complementary on the slice:
 
 $$
-P+I=\tfrac{1}{2},
+\boxed{\;P+I=\tfrac{1}{2},
 \qquad
-P-I=\tfrac{1}{2}\lvert\vec r\rvert^{2}.
+P-I=\tfrac{1}{2}\lvert\vec r\rvert^{2}\;}.
 $$
 
 The sum is constant because the trace is one; the difference is the purity. The half-difference is the information content:

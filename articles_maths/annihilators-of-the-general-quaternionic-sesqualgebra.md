@@ -62,8 +62,8 @@ Algebra*.
 
 **Theorem (the left annihilator and the plain annihilator).** For every $\tilde Q_1$,
 $$
-A_\star(\tilde Q_1)=\bigl\{\tilde Q_2^{*}:\tilde Q_2\in \langle\tilde Q_1^{\natural}\rangle_{\natural*}\bigr\}=\langle\tilde Q_1^{\natural}\rangle_{\natural*}^{*},
-\qquad \langle\tilde Q_1^{\natural}\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1^{\natural}\tilde Q_2=0\},
+\boxed{\; A_\star(\tilde Q_1)=\bigl\{\tilde Q_2^{*}:\tilde Q_2\in \langle\tilde Q_1^{\natural}\rangle_{\natural*}\bigr\}=\langle\tilde Q_1^{\natural}\rangle_{\natural*}^{*},
+\qquad \langle\tilde Q_1^{\natural}\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1^{\natural}\tilde Q_2=0\} \;},
 $$
 the image under the involution of the plain annihilator of $\tilde Q_1^{\natural}$. For a nonzero
 element of the cone the left annihilator is of complex dimension two, and off the cone it is
@@ -87,8 +87,8 @@ examples below, whose second generators differ.
 **Example.** For the non-pure zero divisor $\tilde Q_1=e_t+i\vec e_x$, of central square $1-1=0$, the two
 annihilators are
 $$
-A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y-i\vec e_z\},\qquad
-B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\},
+\boxed{\; A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y-i\vec e_z\},\qquad
+B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\} \;},
 $$
 two distinct planes sharing the line $\mathbb{C}\tilde Q_1$.
 

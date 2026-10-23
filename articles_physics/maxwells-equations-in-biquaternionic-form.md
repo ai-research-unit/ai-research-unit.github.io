@@ -193,7 +193,7 @@ i.e., the scalar part of $\tilde{\nabla}^{\natural} \tilde J$ vanishes. This is 
 With these definitions, Maxwell's equations take the single compact form
 
 $$
-\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}.
+\boxed{\;\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}\;}.
 $$
 
 One equation replaces the four standard Maxwell equations. No explicit $\epsilon$ appears: the medium is carried by the definition of $\tilde{F}$ and by the single factor $\sqrt{\mu}$.
@@ -234,7 +234,7 @@ where $G_\Box(R,t') = (4\pi R)^{-1}\delta(t' - R/c)$ is the scalar retarded kern
 The solution of the inhomogeneous equation is then the retarded convolution
 
 $$
-\tilde{F}(\tilde{Q}) = -\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde R_2)\,\tilde{J}(\tilde R_2)\,d^4R_2,
+\boxed{\;\tilde{F}(\tilde{Q}) = -\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde R_2)\,\tilde{J}(\tilde R_2)\,d^4R_2\;},
 $$
 
 where the integral is over the past light cone of $\tilde{Q}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.
@@ -519,7 +519,7 @@ The three-vector form in *Maxwell's Equations in a Material Medium* above is the
 The energy and momentum of the electromagnetic field are encoded in a **biquaternionic energy–momentum**, the halved Hermitian form of the field strength:
 
 $$
-\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\vec{S},
+\boxed{\;\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\vec{S}\;},
 $$
 
 where $W$ is the energy density and $\vec S$ is the energy flow density (the Poynting vector). For the electromagnetic field in a medium, these are
@@ -571,7 +571,7 @@ The argument closes under weaker hypotheses than differentiability. In Alexeyeva
 The transformation of the four-potential under a Lorentz boost is the **rotor conjugation**
 
 $$
-\tilde{A}_2 = \tilde U\,\tilde{A}\,\tilde U^{*},
+\boxed{\;\tilde{A}_2 = \tilde U\,\tilde{A}\,\tilde U^{*}\;},
 $$
 
 where $\tilde U$ is the boost biquaternion. For a pure boost with velocity $\vec v_b$, the boost biquaternion is

@@ -93,7 +93,7 @@ The superluminality must be read with the corpus's usual care, and the source's 
 The structural heart of the paper is the representation of the field as a **spinor bilinear**. With $\psi$ a Dirac–Hestenes spinor, an element of the even subalgebra $C\ell^+(M)$, the field is written
 
 $$
-F = \psi\,\gamma_{21}\,\psi^{\mathrm{c}},
+\boxed{\;F = \psi\,\gamma_{21}\,\psi^{\mathrm{c}}\;}
 $$
 
 where $\psi^{\mathrm{c}}$ is the **reverse** of $\psi$. The counting matters: a general even spinor has **eight** real degrees of freedom, while the field $F$ has **six**, so two constraints must be imposed on $\psi$ for the correspondence to be one-to-one up to a normalisation. The source chooses them as $\partial\cdot j=0$ and $\partial\cdot g=0$, where $j$ and $g$ are the vector and axial-vector currents read off the derivatives of $\psi$. This is the same eight-versus-six counting the corpus records in its Dirac–Hestenes article, which reaches it through the parameters of the rotor decomposition; the constraints are the source's extra data.
@@ -123,7 +123,7 @@ $$
 The non-linearity is exactly the factor $\exp(\beta\gamma_5)$: when $\beta$ is **constant** the factor is a constant duality rotation and the equation becomes linear. Concretely, with $\psi=\varphi\,\exp(\gamma_5\beta/2)$ and $\varphi=\sqrt{\rho}\,R$, the phase factor on the right is cancelled by the phase factor of the decomposition — $\exp(\gamma_5\beta/2)\gamma_0=\gamma_0\exp(-\gamma_5\beta/2)$ because $\gamma_5$ anticommutes with $\gamma_0$ — and the free equation reduces to the **linear Dirac–Hestenes equation**
 
 $$
-\partial\varphi\gamma_{21} = m\,\varphi\gamma_0 ,
+\boxed{\;\partial\varphi\gamma_{21} = m\,\varphi\gamma_0\;}
 $$
 
 with $\Lambda=m$ identified as the mass. The criterion is therefore sharp, and it is the source's key structural statement: **the Maxwell equation for the field is equivalent to the linear Dirac equation for the spinor exactly when the Takabayasi angle is constant**, and the particular values $\beta=0$ and $\beta=\pi$ select the electron and the positron. The plane-wave solutions of the corpus's own Dirac exercise have constant $\beta$ — zero for the positive-energy ones — so they sit on precisely this linearisable class, and the source supplies the general reason why.
@@ -163,7 +163,7 @@ $$
 with both an electric current $J_e$ and an **axial (magnetic) current** $-\gamma_5J_m$. For the positive-parity eigenstate $\psi^\uparrow$ the electric current vanishes, $j_e=0$, and the equivalent Maxwell equation reads
 
 $$
-\partial F^\uparrow = -\gamma_5 J_m ,
+\boxed{\;\partial F^\uparrow = -\gamma_5 J_m\;}
 $$
 
 that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\gamma_5B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\gamma_5B\psi^\uparrow_-=0$, so that a single $\psi^\uparrow$ coupled to a potential describes a particle of charge $+g$ and a particle of charge $-g$ — which the source reads as a pair of opposite charges. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\gamma_\mu F$.

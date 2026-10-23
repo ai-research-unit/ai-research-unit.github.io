@@ -14,8 +14,6 @@ This article asks what the Reeh–Schlieder theorem is in the biquaternion frame
 
 The article proceeds as follows. The theorem is stated with its hypotheses and its two halves, and the role of the spectrum condition is explained. Cyclicity and separating are then characterized in the GNS construction, where cyclicity is automatic and separating is faithfulness. The biquaternion vacuum is examined and its failure to be separating is exhibited with an explicit algebra element. The infinite-dimensional field algebra on the biquaternion module is described, and the theorem is located there. The article closes with the established/interpretation/open split. The Bisognano–Wichmann theorem is referred to rather than re-derived: it is the statement that the modular flow the Reeh–Schlieder property makes possible is, for a wedge, the boost.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$, with $\mathrm{Tr}(e_t)=2$. The states are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\ge0$, $\mathrm{Tr}\tilde{Ϛ}=1$; the vacuum idempotent is $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and the single-mode ladder is $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, as in *The Biquaternion Vacuum as a Minimal Idempotent* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The modular operator, modular conjugation and modular flow are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*.
-
 ## The Reeh–Schlieder Theorem
 
 ### Statement and Hypotheses
@@ -79,8 +77,8 @@ that is, if and only if the radical $\mathcal{N}_{\tilde{Ϛ}}$ is trivial. But $
 
 The proof is the dimension count of the GNS companion article. Writing $\tilde{Ϛ}=\sum_i\lambda_i\tilde\Pi_i$ in its spectral projectors, the radical is
 $$
-\mathcal{N}_{\tilde{Ϛ}}=\big\{\tilde Q_3:\tilde Q_3\,\tilde{Ϛ}=0\big\}
-=\big\{\tilde Q_3:\tilde Q_3\,\mathrm{range}(\tilde{Ϛ})=0\big\},
+\boxed{\;\mathcal{N}_{\tilde{Ϛ}}=\big\{\tilde Q_3:\tilde Q_3\,\tilde{Ϛ}=0\big\}
+=\big\{\tilde Q_3:\tilde Q_3\,\mathrm{range}(\tilde{Ϛ})=0\big\}\;},
 $$
 of complex dimension $2(2-r)$ with $r=\mathrm{rank}\,\tilde{Ϛ}$. It is trivial exactly when $r=2$, that is, when $\tilde{Ϛ}$ is faithful, which for a biquaternion state means $\det\mathsf{M}_2(\tilde{Ϛ})=\tfrac14(1-|\vec r|^2)>0$, the open Bloch ball. On the pure boundary $|\vec r|=1$ the radical is two-dimensional and the vector is not separating.
 
@@ -106,9 +104,9 @@ the classes $\Omega=[e_t]$ and $\vec\Upsilon_y\Omega=[\vec\Upsilon_y]$ are ortho
 
 The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ and $\tilde\Pi_+\tilde\Pi_-=0$,
 $$
-\big\langle\Omega_{\tilde{Ϛ}}\big|\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)^\dagger\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)\big|\Omega_{\tilde{Ϛ}}\big\rangle
+\boxed{\;\big\langle\Omega_{\tilde{Ϛ}}\big|\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)^\dagger\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)\big|\Omega_{\tilde{Ϛ}}\big\rangle
 =\mathrm{Tr}\big(\tilde\Pi_+\,\vec\Upsilon_y\vec\Upsilon_x\big)
-=\mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big)=0 .
+=\mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big)=0\;}.
 $$
 So $\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)\Omega_{\tilde{Ϛ}}=0$ with $\vec\Upsilon_x\ne0$: the vacuum fails to be separating, and the witness is the annihilation operator. Equivalently, the vacuum idempotent is a **zero divisor** — $\langle\tilde\Pi_+\rangle_{\natural}=0$ — and the zero-divisor direction is the state's failure of faithfulness. The two facts are the same fact.
 
@@ -195,8 +193,8 @@ a^{\mathrm{fop}\dagger}(f)=\bar f\,\vec\Upsilon_y,
 $$
 with the mode functions running over the one-particle space of the field, subject to the canonical anticommutation relations
 $$
-\big\{a^{\mathrm{fop}}(f),a^{\mathrm{fop}\dagger}(g)\big\}=\langle f,g\rangle\,e_t,\qquad
-\big\{a^{\mathrm{fop}}(f),a^{\mathrm{fop}}(g)\big\}=0 .
+\boxed{\;\big\{a^{\mathrm{fop}}(f),a^{\mathrm{fop}\dagger}(g)\big\}=\langle f,g\rangle\,e_t,\qquad
+\big\{a^{\mathrm{fop}}(f),a^{\mathrm{fop}}(g)\big\}=0\;}.
 $$
 This is the CAR algebra over the one-particle module. Its finite truncations are the tensor powers of the Fock-space companion article; its infinite form, with a positive-energy one-particle space of infinite dimension, is the algebra on which the field vacuum is a state and on which the Reeh–Schlieder theorem is proved.
 

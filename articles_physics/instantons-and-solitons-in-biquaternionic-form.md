@@ -16,8 +16,6 @@ The article is organised around four questions, and it keeps the affirmative ans
 - **Do the framework's invariants supply the density?** Section *Do the Framework's Invariants Supply the Density?* checks this against $I_1$ and $I_2$, the two invariants of the field-strength article. The answer is yes in the abelian case — the imaginary part of the biquaternion norm *is* the Pontryagin density — and no in the non-abelian case, where the density needs a matrix trace that the framework's rank-two biquaternion norm does not supply. The second is stated as a gap.
 - **The concrete solution and the soliton gap.** Section *The BPST Instanton and Its Equation of Motion* exhibits the standard $SU(2)$ instanton inside the framework's $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ and checks by substitution that it solves the equation of motion. Section *Solitons: What Stability Requires* shows that the framework's only topological charge has no finite-energy configuration to occupy it, so the framework has no soliton of its own; the reasons are stated rather than smoothed over.
 
-**Conventions.** We use those of the companion articles throughout, unchanged. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The abelian field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and its invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$. The non-abelian connection and curvature of the parent are $\mathcal{A}_\mu=\mathcal{A}_\mu^a \vec e_a\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa=ϙ/\hbar$ and the biquaternion representative $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged; where a matrix trace on the gauge factor is meant it is written $\mathrm{Tr}$ and distinguished from it, as the non-abelian article does. Because the two parents use $F_{\mu\nu}$ for the abelian field components and for the non-abelian components, the same symbol is used here with the context made explicit in each section; the biquaternion objects are $\tilde{F}$ in the abelian case and $\mathcal{F}$ in the non-abelian case. Throughout, $\partial/\partial Q_t=\partial/\partial(ict')=-i\partial/\partial t'$ and $\partial/\partial Q_k=\partial/\partial x_k$.
-
 ## Two Signatures, Two Kinds of Localised Solution
 
 The framework's differential operators are Lorentzian. With the material coordinates $(ict',x,y,z)$,
@@ -83,9 +81,9 @@ The two families are contrasted in the following table.
 The charge that classifies an instanton is the integral of a four-form built from the field strength. In the non-abelian case, with $F=d\mathcal{A}+i\kappa\,\mathcal{A}\wedge\mathcal{A}$ the curvature of the parent article and $\mathrm{Tr}$ the matrix trace on the gauge factor,
 
 $$
-Ϙ \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}\!\left(F\wedge F\right)
+\boxed{\;Ϙ \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}\!\left(F\wedge F\right)
 \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4} d^4x\;\frac{1}{4}\,\epsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(F_{\mu\nu}F_{\rho\sigma}\right),
-\qquad Ϙ\in\mathbb Z ,
+\qquad Ϙ\in\mathbb Z\;},
 $$
 
 for configurations of finite action. The density is
@@ -100,7 +98,7 @@ using the definition of the star. The trace here is the **matrix trace** on the 
 In the abelian case the same object collapses to the framework's second invariant. With the field-strength biquaternion $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and its components, the density is
 
 $$
-\frac{1}{4}\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+\boxed{\;\frac{1}{4}\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = \frac{1}{2}\,F_{\mu\nu}\star F^{\mu\nu}
 =
 \begin{cases}
@@ -108,7 +106,7 @@ $$
 2\,I_2 & \text{(Euclidean)},
 \end{cases}
 \qquad
-I_2=\vec E\cdot\vec B,
+I_2=\vec E\cdot\vec B\;},
 $$
 
 which was recomputed symbolically from the component matrix of the field-strength article in both signatures. Thus in the Maxwell sector the topological density *is* a function of the framework's invariant $I_2$ alone; no new invariant is required. That is the affirmative half of the answer to the parent's question, and it is developed in Section *Do the Framework's Invariants Supply the Density?*. The non-abelian density, by contrast, is not a function of $I_2$; it requires the matrix trace and has no biquaternion-norm expression, which is the gap of that section.
@@ -202,7 +200,7 @@ $$
 and therefore, with the Euclidean action $S=\frac{1}{2g^2}\int\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ of the non-abelian sector (Hermitian generators, $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$),
 
 $$
-S\;\ge\;\frac{8\pi^2}{g^2}\,|Ϙ| ,
+\boxed{\;S\;\ge\;\frac{8\pi^2}{g^2}\,|Ϙ|\;},
 $$
 
 with equality if and only if $F=\pm\star F$. The bound is the Bogomolny argument transposed from the Lorentzian soliton to the Euclidean instanton: the *same* completing-the-square mechanism that will be described in Section *Solitons: What Stability Requires* is what makes the instanton the minimiser of the action in its topological sector. Two remarks complete the statement. First, the minimising configuration is stable within the sector: any finite-energy variation that keeps the boundary data fixed keeps $Ϙ$, and the bound says the action cannot fall below $\frac{8\pi^2}{g^2}|Ϙ|$, so the self-dual configuration is the bottom of its sector. Second, the bound is a lower bound, not an existence theorem; the existence of the minimiser is the separate content of the explicit solution of the next section.
@@ -267,9 +265,9 @@ $$
 The instanton is
 
 $$
-\mathcal{A}_\mu^a(x)=2\,\eta^a_{\mu\nu}\,\frac{x_\nu}{r^2+\rho^2},
+\boxed{\;\mathcal{A}_\mu^a(x)=2\,\eta^a_{\mu\nu}\,\frac{x_\nu}{r^2+\rho^2},
 \qquad
-r^2=x_4^2+x_1^2+x_2^2+x_3^2,
+r^2=x_4^2+x_1^2+x_2^2+x_3^2\;},
 $$
 
 where $\eta^a_{\mu\nu}$ are the self-dual 't Hooft symbols ($\eta^a_{jk}=\epsilon_{ajk}$ for spatial indices, $\eta^a_{4k}=\delta_{ak}$, $\eta^a_{k4}=-\delta_{ak}$), $\rho>0$ is the instanton radius, and $x_4=c\tau$ is the Euclidean time. Replacing $\eta$ by the anti-self-dual symbols $\bar{\eta}$ ($\bar{\eta}^a_{jk}=\epsilon_{ajk}$, $\bar{\eta}^a_{4k}=-\delta_{ak}$, $\bar{\eta}^a_{k4}=\delta_{ak}$) gives the anti-instanton.
@@ -285,7 +283,7 @@ The residual in the self-duality check is at the level of the arithmetic, and th
 The charge, the action and the moduli are those of the standard solution. The self-dual configuration has $|Ϙ|=1$ (the sign is the orientation of the self-dual half and depends on the sign convention for the generators and for $\epsilon$: with Hermitian generators and $Ϙ=(1/8\pi^2)\int\mathrm{Tr}(F\wedge F)$, the self-dual representative has $Ϙ=+1$), and by the saturated bound its action is
 
 $$
-S=\frac{8\pi^2}{g^2},
+\boxed{\;S=\frac{8\pi^2}{g^2}\;},
 $$
 
 with $g$ the gauge coupling. The radius $\rho$ does not appear in the action; it is a modulus, and its constancy is the conformal invariance of the Euclidean theory noted earlier. The moduli of a single instanton are the five translation and dilatation parameters $(x_0,\rho)$ together with the three global $SU(2)$ orientations, and it is this eight-dimensional family that the framework's instanton sector carries.

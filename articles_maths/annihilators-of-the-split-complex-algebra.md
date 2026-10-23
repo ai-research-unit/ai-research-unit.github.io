@@ -44,7 +44,7 @@ the left and the right multiplication of the plain algebra. The block is the par
 **Proposition (the two sides coincide).** For every $Q_2\in\mathbb{D}$,
 
 $$
-A(Q_2)=B(Q_2).
+\boxed{\;A(Q_2)=B(Q_2)\;}.
 $$
 
 **Proof.** The plain product is commutative, so $Q_2Q_1=Q_1Q_2$ for every $Q_1$, and the two defining equations are the same.
@@ -78,12 +78,12 @@ with trace $2q$ and determinant $q^{2}-q'^{2}=Q\bar Q$.
 **Proposition (the rank).** The rank of $L_Q$ is
 
 $$
-\operatorname{rank}L_Q=
+\boxed{\;\operatorname{rank}L_Q=
 \begin{cases}
 2, & Q\bar Q\neq0,\\
 1, & Q\bar Q=0\text{ and }Q\neq0,\\
 0, & Q=0.
-\end{cases}
+\end{cases}\;}
 $$
 
 **Proof.** The determinant is $Q\bar Q$, so the rank is $2$ exactly when the determinant is nonzero. When $Q\neq0$ and $Q\bar Q=0$, the matrix is nonzero and singular, so its rank is $1$. At $Q=0$ the matrix is zero.
@@ -147,8 +147,8 @@ For an ideal $I$ the annihilator is an ideal, and it is the intersection of the 
 **Proposition (the minimal ideals).** The two minimal ideals are the two null lines, and
 
 $$
-\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-},\qquad
-\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}.
+\boxed{\;\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-},\qquad
+\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}\;}.
 $$
 
 **Proof.** The annihilator of $\mathbb{R}\Pi_{+}$ is the intersection over $\lambda\neq0$ of $\operatorname{ann}(\lambda\Pi_{+})$, each of which is $\mathbb{R}\Pi_{-}$; the intersection is $\mathbb{R}\Pi_{-}$. The other case is symmetric.

@@ -112,8 +112,8 @@ The immediate consequence is a **ceiling inside the algebra**. The adjoint actio
 Let $T^{(k)}_\mu$ be an irreducible tensor operator of rank $k$, and let $|jm\rangle$ be the angular-momentum multiplets of a rotation-invariant system. Then the **Wigner–Eckart theorem** states that
 
 $$
-\langle j_2m_2|T^{(k)}_\mu|jm\rangle
-=\langle j,m;k,\mu|j_2,m_2\rangle\;\langle j_2\,\|T^{(k)}\|\,j\rangle ,
+\boxed{\;\langle j_2m_2|T^{(k)}_\mu|jm\rangle
+=\langle j,m;k,\mu|j_2,m_2\rangle\;\langle j_2\,\|T^{(k)}\|\,j\rangle\;},
 $$
 
 where the first factor is the Clebsch–Gordan coefficient of the coupling $|jm\rangle\otimes|kq\rangle\to|j_2m_2\rangle$ and the second is the **reduced matrix element**, a number that depends on $j,j_2,k$ and on the operator but not on $m,m_2,\mu$. The conventions are those of the companion problem of the coupling: the Clebsch–Gordan coefficients satisfy the Condon–Shortley phase convention, and the reduced matrix element is defined by the equation above.
@@ -132,8 +132,8 @@ The proof is standard and short. Both sides of the claimed identity satisfy the 
 Two selection rules follow from the Clebsch–Gordan factor and hold independently of the dynamics:
 
 $$
-m_2=m+\mu,\qquad
-|j-k|\le j_2\le j+k ,
+\boxed{\;m_2=m+\mu,\qquad
+|j-k|\le j_2\le j+k\;},
 $$
 
 the first from the vanishing of the Clebsch–Gordan coefficient unless the magnetic quantum numbers add, the second from the multiplet range of the coupling. For a scalar operator, $k=\mu=0$ and $\langle j,m;0,0|j_2,m_2\rangle=\delta_{j j_2}\delta_{m m_2}$, so the theorem reduces to the statement that a scalar operator is diagonal in the multiplets and has one reduced matrix element per $j$ — the content of Schur's lemma for the trivial representation. For a vector operator, $k=1$ and the selection rule is $\Delta j\in\{-1,0,+1\}$ with $m_2=m+\mu$.
@@ -230,8 +230,8 @@ $$
 as required. The same construction with the total spin $\tilde S$ gives the **quadrupole operator**, whose $\mu=0$ component is
 
 $$
-T^{(2)}_0=\tfrac{1}{\sqrt6}\left(2\tilde S_0\tilde S_0+\tilde S_{+1}\tilde S_{-1}+\tilde S_{-1}\tilde S_{+1}\right)
-=\tfrac{1}{\sqrt6}\left(3\tilde S_3^2-\tilde S^2\right),
+\boxed{\;T^{(2)}_0=\tfrac{1}{\sqrt6}\left(2\tilde S_0\tilde S_0+\tilde S_{+1}\tilde S_{-1}+\tilde S_{-1}\tilde S_{+1}\right)
+=\tfrac{1}{\sqrt6}\left(3\tilde S_3^2-\tilde S^2\right)\;},
 $$
 
 using $\tilde S_{+1}\tilde S_{-1}+\tilde S_{-1}\tilde S_{+1}=-(\tilde S_1^2+\tilde S_2^2)$ and $\tilde S_1^2+\tilde S_2^2=\tilde S^2-\tilde S_3^2$, where $\tilde S_\mu$ denotes the spherical component of order $\mu$ and $\tilde S_k$ the Cartesian component along axis $k$. On a coherent state pointing at polar angle $\theta$ — an eigenstate of the adjoint rotation with $\langle\vec S\rangle=\vec u$ — its expectation is

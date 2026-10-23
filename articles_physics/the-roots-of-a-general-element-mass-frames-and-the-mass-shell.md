@@ -5,7 +5,7 @@
 The root problem of the biquaternion algebra asks for the elements that square to a given element. For a central value $\lambda e_t$ the question is the one the two companion articles answer at $\lambda=-1,0,+1$; for a general element $\tilde Q$ it is the question of this article,
 
 $$
-\tilde\Xi^2=\tilde Q .
+\boxed{\;\tilde\Xi^2=\tilde Q\;}.
 $$
 
 The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde\Xi^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **natural square** $\tilde\Xi\tilde\Xi^{\natural}=\langle\tilde\Xi\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde\Xi\tilde\Xi^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
@@ -112,13 +112,13 @@ The sign is not decoration. A mass term built with the wrong conjugation places 
 The natural root set is the level set of the norm; the Hamilton pairing names the invariant that the level set carries. For a four-momentum,
 
 $$
-\tilde P=\Rho e^{\vec U\Theta},
+\boxed{\;\tilde P=\Rho e^{\vec U\Theta},
 \qquad
 \Rho=imc,
 \qquad
 \vec U=\hat p,
 \qquad
-\Theta=-i\psi,
+\Theta=-i\psi\;},
 $$
 
 and the mass is $m=\lvert\Rho\rvert/c$. The root set of the value $-m^{2}c^{2}$ is the orbit of the element $\Rho e^{\vec U\Theta}$ under the frame factor: every point of the shell has the same $\lvert\Rho\rvert$ and a different angle. The level set is the geometric form of the statement, and the modulus is the invariant that defines it.
@@ -219,7 +219,7 @@ $$
 The radius is the quaternion norm,
 
 $$
-r=\sqrt{x_1^2+x_2^2+x_3^2}=\varsigma_1^2+\varsigma_2^2+\varsigma_3^2+\varsigma_0^2=\langle\varsigma\rangle_{\natural},
+\boxed{\;r=\sqrt{x_1^2+x_2^2+x_3^2}=\varsigma_1^2+\varsigma_2^2+\varsigma_3^2+\varsigma_0^2=\langle\varsigma\rangle_{\natural}\;},
 $$
 
 and the Coulomb singularity is the reciprocal of the norm,

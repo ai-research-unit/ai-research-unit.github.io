@@ -7,8 +7,6 @@ The split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ is the two-dimens
 
 The article owns the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D})$, the derivation space $\operatorname{Der}_{\mathbb{R}}(\mathbb{D})$, the reason the derivation space vanishes, the two-dimensional space of **twisted** (conjugation-)derivations that replaces it, and the comparison with $\mathbb{C}$. It assumes the algebra, the idempotents and the norm of *Split-Complex Algebra*, *Square Roots of One and the Idempotents of the Split-Complex Algebra* and *Norm and Invertibility in the General Split-Complex Algebra*, and it cites the general theory of automorphisms and derivations of an algebra as the companion article *Automorphisms and Derivations of Algebras*. No physics is invoked and no new results are claimed beyond the explicit computations for $\mathbb{D}$.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, commutative, of real dimension $2$; basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{*} = q^2-q'^2$. The **centre** is written $Z(\mathbb{D})$.
-
 ## Standing Facts: Commutativity, the Centre and Separability
 
 Three structural facts govern the two invariants below. They are recorded here and used throughout.

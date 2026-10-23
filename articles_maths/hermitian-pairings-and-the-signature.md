@@ -9,8 +9,6 @@ The vocabulary is needed because the intersection form of a manifold is only the
 
 **The article assumes** the linear algebra of bilinear and sesquilinear forms over a field or a ring (*Bilinear Forms*, *Linear Spaces*), the intersection form and the signature of *Poincaré Duality*, the group ring and its involution from *The Involution as an Operator on the Homology*, and the tensor and exterior algebra.
 
-**The boundaries of the article.** The intersection form of a manifold, its signature and the signature theorem are *Poincaré Duality* and the differential topology of Part III; the equivariant version is *Hermitian Pairings and the Equivariant Signature*, the next article; the surgery obstruction and the Wall groups as the obstructions of the surgery are *Cobordism and Surgery Theory*; the analytic index theory of the signature is Part IV. The higher algebraic K-theory and the Hermitian K-theory are named and belong to *Higher Algebraic K-Theory*, written in Part II of the algebraic topology material. No analysis is used.
-
 ## Hermitian and $\varepsilon$-Hermitian Forms
 
 **Definition.** Let $A$ be a ring with an involution $a\mapsto\bar a$ (an additive map with $\overline{ab} = \bar b\bar a$ and $\bar{\bar a} = a$). A **sesquilinear form** on a left $A$-module $M$ is a biadditive map $\varphi : M\times M\to A$ with $\varphi(ax,by) = a\varphi(x,y)\bar b$; it is **$\varepsilon$-Hermitian** for a central unit $\varepsilon$ with $\bar\varepsilon\varepsilon = 1$ if

@@ -27,20 +27,13 @@ Antisymmetric Plain Algebra* and *The Killing Form of the Antisymmetric Plain Al
 article in this category. The companion article is *The Antisymmetric Plain Algebra in the $2\times2$
 Matrix Element Representation $M_2(\mathbb{C})$*, above this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the left regular representation is the map $\mathsf{M}_4$ sending $\tilde q$ to
-the matrix of the left multiplication $r\mapsto\tilde q r$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and the
-right regular representation is $\mathsf{R}_4$, the matrix of $r\mapsto r\tilde q$. The **quaternion
-form** is $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=q_{1t}q_{2t}+\vec q_1\cdot\vec q_2$ and the **plain form**
-$\langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2$.
-
 ## The Left Regular Model
 
 **Proposition.** The map $\mathsf{M}_4$ is an injective $\mathbb{R}$-algebra homomorphism,
 
 $$
-\mathsf{M}_4(\tilde q_1\tilde q_2)=\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2),\qquad
-\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T},
+\boxed{\;\mathsf{M}_4(\tilde q_1\tilde q_2)=\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2),\qquad
+\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}\;},
 $$
 
 with $\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t$ and
@@ -64,7 +57,7 @@ characteristic scale of the left multiplication, $\langle\tilde q\rangle_{\natur
 **Theorem (the bracket is the halved commutator).**
 
 $$
-\mathsf{M}_4(\tilde q_1\times\tilde q_2)=\tfrac12\bigl[\mathsf{M}_4(\tilde q_1),\mathsf{M}_4(\tilde q_2)\bigr].
+\boxed{\;\mathsf{M}_4(\tilde q_1\times\tilde q_2)=\tfrac12\bigl[\mathsf{M}_4(\tilde q_1),\mathsf{M}_4(\tilde q_2)\bigr]\;}.
 $$
 
 *Proof.* The model is multiplicative, so
@@ -76,8 +69,8 @@ and half of it is the image of the bracket.
 **Theorem.** The image of the block is the trace-free part of the image of the model,
 
 $$
-\mathsf{M}_4\bigl(\mathrm{Vect}(\mathbb{H})\bigr)
-=\{\mathsf{M}_4(\vec q):\ \operatorname{Tr}\mathsf{M}_4(\vec q)=0\},
+\boxed{\;\mathsf{M}_4\bigl(\mathrm{Vect}(\mathbb{H})\bigr)
+=\{\mathsf{M}_4(\vec q):\ \operatorname{Tr}\mathsf{M}_4(\vec q)=0\}\;},
 $$
 
 a three-dimensional real subspace, and the kernel of the model map is $\{0\}$.
@@ -126,7 +119,7 @@ of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-modul
 **Proposition.** The trace form of the model is the plain form multiplied by four,
 
 $$
-\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\bigr)=4\langle\tilde q_1,\tilde q_2\rangle,
+\boxed{\;\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\bigr)=4\langle\tilde q_1,\tilde q_2\rangle\;},
 $$
 
 which on the derived algebra is twice the Killing form,

@@ -13,8 +13,6 @@ The example to hold in mind is the torus, where the representation is an isomorp
 
 **The article assumes** the mapping class group, the Dehn twist and its transvection action, and the intersection form and the symplectic group, that is, *The Dehn Twist as an Operator*, *Bilinear Forms*, *Symplectic Forms and Poisson Brackets* and the written *Mapping Class Groups* of this Part.
 
-**The boundaries of the article.** The mapping class group itself — its definition, its presentations, the Nielsen–Thurston classification, the geometry of the curve complex and the detailed study of the Torelli group — is *Mapping Class Groups*, and is cited; this article owns the action on the homology, its kernel and its image. Teichmüller space and the moduli of surfaces belong to *Teichmüller Theory*; the hyperbolic structures to *Hyperbolic Geometry*; the mapping tori and the three-manifold applications to *Low-Dimensional Topology*. The congruence subgroup property and the arithmetic of $\operatorname{Sp}(2g,\mathbb{Z})$ are used only as stated, and the analytic proofs of the rigidity theorems are Part III.
-
 ## The Action and the Symplectic Representation
 
 **Definition.** The **mapping class group** $\mathrm{Mod}(S_g)$ acts on $H_1(S_g;\mathbb{Z})\cong\mathbb{Z}^{2g}$ by the induced maps $\phi\mapsto\phi_*$, and the action preserves the intersection form $i$. The resulting homomorphism

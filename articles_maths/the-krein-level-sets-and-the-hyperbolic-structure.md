@@ -4,17 +4,15 @@
 
 The general quaternionic sesquilinear form is indefinite, so its nonzero level sets are neither spheres nor compact: they are hyperboloids, and the geometry they carry is hyperbolic rather than elliptic. This article describes the three sign level sets of the form $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ — the positive set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}$, the negative set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}$ and the null set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ — and the two models of hyperbolic space that the sign sets produce: the **complex hyperbolic space** of positive definite complex lines, which is the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ and coincides with the symmetric space $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ of *The Krein Cartan Decomposition of the Operator Algebra*, and the **real hyperbolic space** $H^{3}$ of the Lorentzian slice, which is the sheet of the real hyperboloid. The isotropic structure at the boundary is *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the cone of the form is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*.
 
-**Conventions.** $e_t=1$, $\vec e_k^{2}=-e_t$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part; the general quaternionic sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\varepsilon=(1,-1,-1,-1)$; the general plain sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\|\tilde{Q}\|_E^{2}=\langle\tilde{Q},\tilde{Q}\rangle_{*}$.
-
 ## The Three Level Sets
 
 **Theorem (the level sets and their homotopy types).** In the splitting $\tilde{Q}=c+v$ into the centre and vector parts,
 
 $$
-\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}=\Bigl\{(c,v):\|c\|_E^{2}=1+\|v\|_E^{2}\Bigr\}\cong S^{1}\times\mathbb{R}^{6},
+\boxed{\;\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}=\Bigl\{(c,v):\|c\|_E^{2}=1+\|v\|_E^{2}\Bigr\}\cong S^{1}\times\mathbb{R}^{6}\;},
 $$
 $$
-\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}=\Bigl\{(c,v):\|v\|_E^{2}=1+\|c\|_E^{2}\Bigr\}\cong S^{5}\times\mathbb{R}^{2},
+\boxed{\;\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}=\Bigl\{(c,v):\|v\|_E^{2}=1+\|c\|_E^{2}\Bigr\}\cong S^{5}\times\mathbb{R}^{2}\;},
 $$
 $$
 \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}=\{(c,v):\|c\|_E=\|v\|_E\}\cong S^{1}\times S^{5}\times\mathbb{R}_{>0},
@@ -57,7 +55,7 @@ the **complex hyperbolic space** $\mathbb{CH}^{3}$, and the isometry group $\mat
 **Theorem (the Bergman metric).** The ball $\mathbb{B}^{3}\subset\mathbb{V}_{\mathbb{B}}=\mathbb{C}^{3}$ carries the **Bergman metric**
 
 $$
-ds^{2}=\frac{(1-\|\tilde Q_1\|_E^{2})\,\|d\tilde Q_1\|_E^{2}+\lvert\langle d\tilde Q_1,\tilde Q_1\rangle_{*}\rvert^{2}}{(1-\|\tilde Q_1\|_E^{2})^{2}},
+\boxed{\;ds^{2}=\frac{(1-\|\tilde Q_1\|_E^{2})\,\|d\tilde Q_1\|_E^{2}+\lvert\langle d\tilde Q_1,\tilde Q_1\rangle_{*}\rvert^{2}}{(1-\|\tilde Q_1\|_E^{2})^{2}}\;},
 $$
 
 which is Kähler, complete, of constant negative holomorphic sectional curvature, and invariant under the isometries of the form acting on the ball; the boundary $S^{5}$ is at infinite distance.

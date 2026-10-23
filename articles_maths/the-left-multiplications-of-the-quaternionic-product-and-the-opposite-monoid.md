@@ -32,7 +32,7 @@ the product on the right being the *plain* product of the algebra, so that the s
 **Theorem (the composition law).** For all $\tilde Q_1,\tilde Q_3 \in \mathbb{B}$,
 
 $$
-L_{\tilde Q_1}\circ L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1} ,
+\boxed{\; L_{\tilde Q_1}\circ L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1} \;},
 $$
 
 where $\tilde Q_3\tilde Q_1$ is the plain product of the algebra.
@@ -50,7 +50,7 @@ using the associativity of the plain product in the middle step and the fact tha
 **Theorem (the monoid of left multiplications).** The set $M_L = \{L_{\tilde Q_1} : \tilde Q_1 \in \mathbb{B}\}$ is closed under composition and contains the identity $L_{e_t} = \mathrm{id}_{\mathbb{B}}$. The map $\tilde Q_1\mapsto L_{\tilde Q_1}$ is an injective anti-homomorphism of monoids from the multiplicative monoid of $\mathbb{B}$ onto $M_L$, so
 
 $$
-M_L \cong \mathbb{B}^{\mathrm{opp}} ,
+\boxed{\; M_L \cong \mathbb{B}^{\mathrm{opp}} \;},
 $$
 
 the opposite of the multiplicative monoid of $\mathbb{B}$.
@@ -80,7 +80,7 @@ The family that does close on the right is the one with the conjugation on the s
 **Theorem (the twisted right multiplications).** Define $\varrho_{\tilde Q_1}(\tilde Q_2) = \tilde Q_2\,\tilde Q_1^{\natural}$, the plain right multiplication by $\tilde Q_1^{\natural}$. Then
 
 $$
-\varrho_{\tilde Q_1}\circ \varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3} ,
+\boxed{\; \varrho_{\tilde Q_1}\circ \varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3} \;},
 $$
 
 the **direct** law, and $M_R = \{\varrho_{\tilde Q_1}\}$ is a monoid containing $\varrho_{e_t} = \mathrm{id}_{\mathbb{B}}$ and isomorphic to the multiplicative monoid $\mathbb{B}$ itself.

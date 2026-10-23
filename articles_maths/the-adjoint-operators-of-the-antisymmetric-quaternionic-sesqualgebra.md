@@ -12,8 +12,6 @@ the map that pairs $\tilde Q_3$ with the second slot of the multiplication. The 
 
 The block is *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; its pairing with the form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; its diagonal and the failure of the Jacobi identity are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the form is *The Krein Gram Matrix and the Restrictions of the Form*. This article owns the operators of the block.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$; a generic element $\tilde Q_2=Q_{2t}e_t+\vec Q_2$; the product is $\diamond$ and the form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, so that a real-linear map of the space is an eight-by-eight real matrix in it.
-
 ## The Left Multiplication
 
 ### The Rule and the Class
@@ -48,8 +46,10 @@ so, on the vector subspace, its matrix is the conjugate-linear map given by the 
 **Theorem (the rank, the kernel and the image).** For a nonzero vector element $\tilde Q_3$ with $\vec Q_3\neq0$,
 
 $$
+\boxed{\;
 \ker L_{\tilde Q_3}=\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3},\qquad
-\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathrm{Vect}(\mathbb{B}):(\vec Q_3,\vec V)=0\},
+\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathrm{Vect}(\mathbb{B}):(\vec Q_3,\vec V)=0\}
+\;},
 $$
 
 the centre direct sum a complex line in the kernel, and the complex two-dimensional subspace orthogonal to $\vec Q_3$ for the bilinear dot product in the image. The rank of $L_{\tilde Q_3}$ over $\mathbb{R}$ is $4$, its nullity is $4$, and its trace is $0$.
@@ -71,9 +71,7 @@ the conjugate on the right because both $K$ and $T$ are conjugate-linear, the tw
 
 **Theorem.** The adjoint of the left multiplication is its negative:
 
-$$
-L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3},
-$$
+$$ \boxed{\; L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3} \;}, $$
 
 a conjugate-linear map. Equivalently, $\langle\tilde Q_3\diamond\tilde Q_2,\tilde Q_4\rangle_{\natural*}=-\overline{\langle\tilde Q_2,\tilde Q_3\diamond\tilde Q_4\rangle_{\natural*}}$.
 
@@ -92,9 +90,7 @@ $$
 
 **Theorem (the derivations).** The derivations of the block form a real vector space of dimension $7$, the direct sum
 
-$$
-\mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}),
-$$
+$$ \boxed{\; \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}) \;}, $$
 
 where the first summand consists of the maps $\tilde Q_2\mapsto\lambda(Q_{2t})e_t$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.
 

@@ -8,8 +8,6 @@ The subject straddles a boundary that this corpus keeps sharp. The path integral
 
 Two of the framework's own results enter directly. First, the topological charge and its density were identified in *Instantons and Solitons in Biquaternionic Form*: the abelian density is the framework's invariant $I_2=\vec E\cdot\vec B$, and the non-abelian density is the matrix trace $\mathrm{Tr}(F\wedge F)$, which the biquaternion norm does not supply. Second, the moduli space of the saddle is the ADHM quotient of *The ADHM Construction and Biquaternion Instanton Data*, whose dimension fixes the number of collective coordinates and hence the measure. The semiclassical expansion is therefore built on the framework's topology and the framework's moduli; what it adds, and what it must import, is the fluctuation calculus of quantum field theory.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The Euclidean slice has coordinates $x_4,x_1,x_2,x_3$ with $x_4=c\tau$, the 't Hooft symbols of *Instantons and Solitons in Biquaternionic Form* are used for the self-dual solution, and the Euclidean curvature is written without the explicit $i$ in the commutator on Hermitian generators with $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$. The topological charge and action are
-
 $$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
@@ -17,8 +15,6 @@ S=\frac{1}{2g^2}\int\mathrm{Tr}\bigl(F_{\mu\nu}F^{\mu\nu}\bigr)\ge\frac{8\pi^2}{
 $$
 
 with equality for self-dual or anti-self-dual fields. The Lorentzian signature appears only where the continuation is discussed, and there $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ is the series d'Alembertian. As throughout the corpus, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
-
-
 
 - Companion article *The ADHM Construction and Biquaternion Instanton Data*, for the moduli space and its collective coordinates.
 - Companion article *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*, for the fermion zero modes and the 't Hooft vertex.
@@ -68,7 +64,7 @@ $$
 where the weight $\rho^{-5}$ is the measure factor of the four translations and the scale: it is the Jacobian of the five collective coordinates, and it carries the dimension of the volume element, $d^4x_0\,d\rho\,\rho^{-1}\cdot(\text{scale weight})$. The translations integrate to the four-volume $VT$ of the box, so the nontrivial content is the single integral over the size,
 
 $$
-Z_1^{\mathrm{cl}} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) .
+\boxed{\;Z_1^{\mathrm{cl}} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2)\;}.
 $$
 
 The one-loop determinant multiplies this by a power of the coupling and, through renormalisation, by the running of $g$ with the scale. The physical statement is the **dimensional transmutation** of the renormalisation group: the dimensionless coupling $g$ is replaced by the running coupling $g(\rho)$ evaluated at the instanton size, and the 't Hooft one-loop result for the pure gauge theory has the structure
@@ -92,11 +88,10 @@ $$
 A local action cannot mix sectors, since $Ϙ$ is topological, but the vacuum need not be a definite-$Ϙ$ state. The theta vacuum is the superposition
 
 $$
-|\theta\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
+\boxed{\;|\theta\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
 \qquad
-Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ ,
+Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ\;},
 $$
-
 
 the sign in the ket being the one for which the topological charge operator acts as $Ϙ^{\mathrm{fop}}|\theta\rangle=-i\partial/\partial\theta|\theta\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta\rangle$ superposition is the unique one that is, up to the standard subtleties.
 
@@ -123,7 +118,7 @@ $$
 so that the topological susceptibility is
 
 $$
-\chi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots .
+\boxed{\;\chi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots\;}.
 $$
 
 Both were checked on a model instanton sum $Z(\theta)=\sum_{Ϙ=-2}^{2}\exp(iϘ\theta)Z_Ϙ$ with symmetric weights: the periodicity residual $|Z(\theta)-Z(\theta+2\pi)|$ was zero to machine precision, and the numerical second derivative of $2K\cos\theta$ at $\theta=0$ returned $2K$ to six digits, confirming the identification of the susceptibility with the instanton density. The periodicity is a property of the integer charge and not of the framework; the susceptibility is the physical content of the semiclassical sum.
@@ -164,8 +159,6 @@ b_0=\frac{11}{3}C_2(SU(2))-\frac{2}{3}\sum_{\text{Weyl}}T(R)
 $$
 
 using $C_2(SU(2))=2$, the Dynkin index $T(\text{defining})=\tfrac12$ of *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*, and the companion renormalisation-group convention in which the subtraction is the sum over **Weyl** fermions: each Dirac flavour contributes two Weyl fermions, so the sum is $2N_f\cdot\tfrac12=N_f$ and the matter term is $-\tfrac{2}{3}N_f$, not $-\tfrac{1}{3}N_f$. For the pure gauge theory $b_0=22/3$ either way. Asymptotic freedom is lost at $N_f=11$ Dirac flavours, where this coefficient vanishes.
-
-
 
 **Dimensional transmutation.** The running coupling can be traded for a scale $\Lambda$ by
 

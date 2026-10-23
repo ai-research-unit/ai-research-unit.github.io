@@ -125,8 +125,8 @@ The general algebra of the one-sided operators, without the polar word, is *One-
 **Proposition.** With $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$,
 
 $$
-L_{\tilde Q}=L_{\Rho}\circ L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},\qquad
-R_{\tilde Q}=R_{\tilde u_{\mathrm r}}\circ R_{\tilde U_{\mathrm b}}\circ R_{\Rho},
+\boxed{\;L_{\tilde Q}=L_{\Rho}\circ L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},\qquad
+R_{\tilde Q}=R_{\tilde u_{\mathrm r}}\circ R_{\tilde U_{\mathrm b}}\circ R_{\Rho}\;},
 $$
 
 and the modulus acts on either side by the same scalar,
@@ -156,17 +156,15 @@ The table is justified factor by factor below; the phase row is the subject of Â
 
 **Proposition.** For all $\tilde Q,\tilde X$,
 
-$$
-\langle L_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}=\Rho^{2}\langle \tilde X\rangle_{\natural},
+$$ \boxed{\;\langle L_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}=\Rho^{2}\langle \tilde X\rangle_{\natural},
 \qquad
-\langle R_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural},
-$$
+\langle R_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}\;}, $$
 
 and the complex determinant and the trace of the left multiplication are
 
 $$
-\det_{\mathbb{C}}L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}=\Rho^{4},\qquad
-\operatorname{tr}L_{\tilde Q}=4Q_t .
+\boxed{\;\det_{\mathbb{C}}L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}=\Rho^{4},\qquad
+\operatorname{tr}L_{\tilde Q}=4Q_t\;}.
 $$
 
 *Proof.* The norm is multiplicative. In the matrix model $L_{\tilde Q}$ is $\tilde X\mapsto\mathsf M_2(\tilde Q)\tilde X$, the left multiplication by $\mathsf M_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $\mathsf M_2(\tilde Q)\otimes I_2$; its determinant is $\det\mathsf M_2(\tilde Q)^{2}=\langle\tilde Q\rangle_{\natural}^{2}$ and its trace is $2\operatorname{tr}\mathsf M_2(\tilde Q)=4Q_t$. The right multiplication is the mirror, with the same determinant and trace.
@@ -284,9 +282,7 @@ The phase of $-\pi/2$ is $-i$ and its operator is $J^{-1}=L_{-i}$. On the princi
 
 **Proposition.** The operator $J$ is $\mathbb{C}$-linear, exchanges the two real forms,
 
-$$
-J(\mathbb{M}_-)=\mathbb{M}_+,\qquad J(\mathbb{M}_+)=\mathbb{M}_-,
-$$
+$$ \boxed{\;J(\mathbb{M}_-)=\mathbb{M}_+,\qquad J(\mathbb{M}_+)=\mathbb{M}_-\;}, $$
 
 and satisfies
 
@@ -528,7 +524,7 @@ The rule is the number of slots. A one-sided operator is one factor of the word,
 **Proposition (the image on the group of units).** The restriction of $\tilde Q\mapsto L_{\tilde Q}$ to $\mathbb{B}^{\times}$ is a faithful representation whose image is a subgroup of $GL_{\mathbb{C}}(\mathbb{B})$ isomorphic to $\mathbb{B}^{\times}$. As a complex Lie group,
 
 $$
-\mathbb{B}^{\times}\cong GL(2,\mathbb{C}),
+\boxed{\;\mathbb{B}^{\times}\cong GL(2,\mathbb{C})\;},
 $$
 
 of complex dimension four and real dimension eight. The kernel is trivial.

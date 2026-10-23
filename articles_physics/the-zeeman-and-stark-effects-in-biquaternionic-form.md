@@ -57,7 +57,7 @@ $$
 so the **Zeeman splitting** is
 
 $$
-\Delta E_{\mathrm{Zeeman}} = \hbar|\omega_L| = \hbar|\gamma|B,
+\boxed{\;\Delta E_{\mathrm{Zeeman}} = \hbar|\omega_L| = \hbar|\gamma|B\;},
 $$
 
 linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{M}_+$ has eigenvalues $\pm|\vec h|$, and $|\vec h|$ depends on the magnitude of the vector part alone.
@@ -120,7 +120,7 @@ $$
 This is a traceless Hermitian element with $\vec h = (-dE,0,0)$, so its eigenvalues are
 
 $$
-E_\pm = \pm\,dE,
+\boxed{\;E_\pm = \pm\,dE\;},
 $$
 
 a **linear** Stark splitting. The eigenstates are $\tilde\Pi_{1,2}(\vec u_x)$, the equal superpositions of the two parity eigenstates, which carry opposite permanent dipole moments $\pm d$ along $\vec u_x$ and are therefore shifted linearly by the field. This is the situation of the hydrogen $n=2$ manifold, where the $2s$ and $2p$ states are degenerate and the Stark effect is linear; the degeneracy is what permits a permanent dipole moment to exist in the field direction.
@@ -138,7 +138,7 @@ $$
 The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec h = (-Ed,0,-\tfrac{\hbar\omega_0}{2})$:
 
 $$
-E_\pm(E) = \pm\sqrt{\left(\frac{\hbar\omega_0}{2}\right)^2 + (Ed)^2}.
+\boxed{\;E_\pm(E) = \pm\sqrt{\left(\frac{\hbar\omega_0}{2}\right)^2 + (Ed)^2}\;}.
 $$
 
 For small fields, $|Ed|\ll\hbar\omega_0$, expanding the square root gives

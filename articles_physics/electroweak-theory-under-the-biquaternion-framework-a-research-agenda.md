@@ -22,8 +22,6 @@ The discipline this forces on the article is the one the genre requires: **an ag
 
 The four obstacles the agenda treats are the **chiral-fermion obstacle** (the framework's non-abelian construction is vector-like on the spinor module), **weak hypercharge** (nothing derives it), the **scalar sector and symmetry breaking** (needed for masses, not available), and the **inability to fix the gauge** (which bounds the physical content of any orbit). They are not independent: the scalar sector needs the chiral action and the hypercharge assignments, and every physical statement about masses needs a gauge fixing. A closing ledger collects them, and a short synthesis names the upstream items.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$; the spinor module is $S=\mathbb{C}^2=(\tfrac12,0)$, its conjugate $\bar{S}=(0,\tfrac12)$ is the right-handed Weyl module, and $\Delta = S\oplus\bar{S}$ is the Dirac module with chirality operator $\gamma_5$ and projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$. For the non-abelian sector we use the $\mathrm{SU}(2)$ connection and field strength of the read list, $\mathcal{A}_\mu \in \mathrm{SU}(2)$, $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa = ϙ/\hbar$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. The symbols $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$, $\theta_W$, $W^\pm$, $Z$, $H$, $v$, and the hypercharge assignments are **standard electroweak notation, not framework objects**; they are used only where standard results are being quoted or where an object is being named as missing. The framework's non-abelian coupling is written $\kappa=ϙ/\hbar$, never $g$ or $g_{\mathrm Y}$.
-
 ## What the Framework Already Reaches
 
 ### The abelian gauge principle
@@ -60,9 +58,9 @@ $$
 and the material sector decomposes as a direct sum of Lie algebras,
 
 $$
-\mathbb{M}_- \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2),
+\boxed{\;\mathbb{M}_- \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2),
 \qquad\text{so the compact algebra available is}\qquad
-\mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2),\quad \dim_\mathbb{R} = 4 .
+\mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2),\quad \dim_\mathbb{R} = 4\;}.
 $$
 
 This is the read-list article's central algebraic result, and it is the reason the electroweak question can be posed at all: the compact algebra of dimension four that electroweak theory uses is *already present in the material sector*, not adjoined. What is not present is the way electroweak theory uses it. The gauge group of the construction is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field **by left multiplication**, and the connection transforms as
@@ -85,13 +83,11 @@ The Dirac module is $\Delta = S\oplus\bar{S}$; the chirality operator is $\gamma
 
 On the module, a chiral abelian gauge symmetry with independent charges is consistent: with
 
-$$
-Ϙ = ϙ_L P_L + ϙ_R P_R,
+$$\boxed{\;Ϙ = ϙ_L P_L + ϙ_R P_R,
 \qquad
 D_\mu = \partial/\partial Q_\mu + \tfrac{i}{\hbar}A_\mu Ϙ,
 \qquad
-[D_\mu,D_\nu] = \tfrac{i}{\hbar}F_{\mu\nu}Ϙ,
-$$
+[D_\mu,D_\nu] = \tfrac{i}{\hbar}F_{\mu\nu}Ϙ\;},$$
 
 the covariant derivative is gauge covariant for **arbitrary** $ϙ_L, ϙ_R$, and the mass bilinear is gauge invariant **if and only if** $ϙ_L = ϙ_R$. A genuinely chiral fermion has no gauge-invariant bare mass.
 

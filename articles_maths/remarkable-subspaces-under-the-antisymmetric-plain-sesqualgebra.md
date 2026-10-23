@@ -14,8 +14,6 @@ The subspace that carries the sharpest information is the **real span** of $e_t,
 
 The setting is that of *Introduction to the Antisymmetric Plain Sesqualgebra*; the general split is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the subspaces and their bases are *Introduction to the Remarkable Subspaces* and *Decompositions Along the Remarkable Subspaces*; the form that the two halves cut is $H$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the quaternion form $N$ and its comparison with $H$ are *Comparison Between the Four General Products*; the pattern of the reading is *Remarkable Subspaces under the General Plain Sesqualgebra*; and the action of the operation on pairs of subspaces is followed, in its form reading, in *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, above in this block.
 
-**Conventions.** The remarkable subspaces and their real bases are
-
 $$
 \begin{aligned}
 \mathbb{C}_{\mathbb{B}}&=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}, & \mathrm{Vect}(\mathbb{B})&=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z\},\\
@@ -31,8 +29,10 @@ with $\mathbb{M}_+$ the Hermitian and $\mathbb{M}_-$ the anti-Hermitian half, th
 **Proposition (the action of the centre).** For a central element $\lambda e_t$ and any biquaternion,
 
 $$
+\boxed{\;
 (\lambda e_t)\diamond\tilde Q_3=-\lambda\,\overline{\vec Q_3},\qquad
-\tilde Q_3\diamond(\lambda e_t)=\overline{\lambda}\,\vec Q_3.
+\tilde Q_3\diamond(\lambda e_t)=\overline{\lambda}\,\vec Q_3
+\;}.
 $$
 
 *Proof.* The first is $\lambda\,(e_t\diamond\tilde Q_3)=\lambda\,\mathrm{Vect}(\tilde Q_3^{*})=-\lambda\overline{\vec Q_3}$; the second is $\tilde Q_3\diamond(\lambda e_t)=\mathrm{Vect}(\tilde Q_3(\lambda e_t)^{*})=\mathrm{Vect}(\overline{\lambda}\tilde Q_3)=\overline{\lambda}\vec Q_3$.
@@ -51,9 +51,7 @@ so the centre is the kernel of the operator $L^{\diamond}_{e_t}$ and not of the 
 
 **Proposition (closure and the cross product).** For $\tilde Q_1=\vec Q_1$ and $\tilde Q_2=\vec Q_2$ pure vectors,
 
-$$
-\vec Q_1\diamond\vec Q_2=-\vec Q_1\times\overline{\vec Q_2},
-$$
+$$ \boxed{\; \vec Q_1\diamond\vec Q_2=-\vec Q_1\times\overline{\vec Q_2} \;}, $$
 
 so the vector subspace is closed under the block, and its reading is the complex cross product of the first vector part with the conjugate of the second.
 
@@ -73,9 +71,7 @@ which does not vanish in general: at $\vec Q=\vec e_x+i\vec e_y$ it is $2i\vec e
 
 **Proposition (closure and the bracket form).** Let $\tilde Q_1,\tilde Q_2$ have real coefficients, so that they lie in $\mathbb{H}_{\mathbb{B}}$. Then
 
-$$
-\tilde Q_1\diamond\tilde Q_2=-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2,
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 \;}, $$
 
 whose coefficients are real: the value lies in the real vector triple $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, and therefore in $\mathbb{H}_{\mathbb{B}}$. The quaternion subspace is closed under the block.
 

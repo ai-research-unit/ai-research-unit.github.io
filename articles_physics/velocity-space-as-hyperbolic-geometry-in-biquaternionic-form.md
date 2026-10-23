@@ -70,7 +70,7 @@ which is the *hyperbolic velocity* of the classical account: it is what the ordi
 
 **Proposition.** In Weierstrass coordinates the induced metric of the velocity hyperboloid is
 $$
-ds^2 = d\rho^2+c^2\sinh^2\frac{\rho}{c}\;d\Omega^2 ,
+\boxed{\ ds^2 = d\rho^2+c^2\sinh^2\frac{\rho}{c}\;d\Omega^2\ } ,
 $$
 where $d\Omega^2$ is the round metric of the unit sphere on the direction.
 
@@ -90,7 +90,7 @@ so a small ball is Euclidean with a positive fourth-order correction; for the sp
 
 The sheet is usually described not by $(\rho,\vec u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $t' = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\vec u$ into the metric gives
 $$
-ds^2 = c^2\;\frac{(c^2-\vec v^2)\,|d\vec v|^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2} .
+\boxed{\ ds^2 = c^2\;\frac{(c^2-\vec v^2)\,|d\vec v|^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2}\ }\ .
 $$
 
 The metric is not the Euclidean metric of the ball and not the Minkowski metric of any spacetime; it is a Riemannian metric on the abstract space of velocities, with the units of a velocity squared. Its distance is a velocity, and its curvature is $-1/c^2$. This is the precise sense in which the set of velocities is not a vector space: a vector space has a flat metric in its linear coordinates, and the metric above is not flat.
@@ -103,7 +103,7 @@ The distance in this metric is the **relative rapidity**, and it has three equiv
 
 **Proposition.** For two velocities $\vec v_1,\vec v_2$ of the ball, the geodesic distance between them is given by
 $$
-\cosh\frac{d}{c} = \frac{c^2-\vec v_1\cdot\vec v_2}{\sqrt{(c^2-\vec v_1^2)(c^2-\vec v_2^2)}} = \gamma_1\gamma_2\Bigl(1-\frac{\vec v_1\cdot\vec v_2}{c^2}\Bigr) ,
+\boxed{\ \cosh\frac{d}{c} = \frac{c^2-\vec v_1\cdot\vec v_2}{\sqrt{(c^2-\vec v_1^2)(c^2-\vec v_2^2)}} = \gamma_1\gamma_2\Bigl(1-\frac{\vec v_1\cdot\vec v_2}{c^2}\Bigr)\ } ,
 $$
 and $d = c\,\mathrm{artanh}(v_{\mathrm{rel}}/c)$, where $v_{\mathrm{rel}}$ is the speed of $\vec v_2$ in the rest frame of $\vec v_1$.
 
@@ -145,7 +145,7 @@ which is Einstein's addition law, and the statement that the additive variable i
 
 For two boosts along different directions the composition is not a single boost, and the composed *frame* has a rapidity fixed by the same trigonometry. Let the first boost have rapidity $a$ along $\vec u_x$ and the second rapidity $b$ along $\vec u_y$, with $\theta$ the angle between the two directions. Then the rapidity $\rho$ of the frame reached satisfies
 $$
-\cosh\rho = \cosh a\cosh b+\cos\theta\,\sinh a\,\sinh b ,
+\boxed{\ \cosh\rho = \cosh a\cosh b+\cos\theta\,\sinh a\,\sinh b\ } ,
 $$
 the **spherical** law of cosines-type relation — the plus sign — while the *distance* between the two frames' velocities has the minus sign above. The two laws are the two faces of one identity: they are exchanged by $\cos\theta\mapsto-\cos\theta$, and equivalently by $c\mapsto ic$ at fixed rapidities, which is exactly the Sommerfeld interchange between the Lobachevsky and the spherical representation of the velocity composition — the velocities are added on the surface of a sphere of imaginary radius, and the imaginary radius is the $R\mapsto iR$ of Taurinus (1826). The framework's own form of the interchange is the Weierstrass one recorded above: the hyperbolic and the circular functions are the same functions at $c$ and at $ic$.
 
@@ -161,12 +161,11 @@ A boost is a point of velocity space, and a path of boosts is a path in it; the 
 
 **Proposition.** Let $\tilde U_{\mathrm b,1}$ have rapidity $a$ along $\vec u_x$ and $\tilde U_{\mathrm b,2}$ rapidity $b$ along $\vec u_y$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$. Then, in rapidity units,
 $$
-\alpha = \pi-(A+B+C) ,
+\boxed{\ \alpha = \pi-(A+B+C)\ } ,
 $$
 the angle defect of the geodesic triangle of velocity space whose three side lengths are $a$, $b$ and $\rho$; equivalently, since the curvature is $-1$, $\alpha$ is the **hyperbolic area** of that triangle. In physical units the angle is the area divided by $c^2$, $\alpha = A_{\mathrm{hyp}}/c^2$.
 
 The triangle is the **rapidity triangle** of the loop: its sides are the three rapidities, and its existence is the triangle inequality of the geometry, $\rho<a+b$. The proposition says that the whole of the rotation produced by a closed path of boosts is measured by the hyperbolic area the three rapidities span, which is the Gauss–Bonnet theorem for the boost connection.
-
 
 A sharpening of the companion article's interpretation is worth stating, because the triangle is not the one the eye first draws. The companion article places the vertices of the path at rapidities $(0,0)$, $(a,0)$ and $(a,b)$ and calls $\tfrac12 ab$ the enclosed area; that is the flat approximation, and it is the approximation to the **rapidity triangle** — the triangle whose sides are the three rapidities. The image of the path in velocity space is a different triangle. Its vertices are the rest point, the frame after the first boost, and the frame after the second, and its sides are $a$, $\rho$, and the length of the orbit of the first frame under the second boost; that last length is *not* the rapidity $b$ of the second boost, because a boost of rapidity $b$ moves a point that is already moving further than it moves the rest point. For $a = 0.7$, $b = 1.1$ and perpendicular boosts, the side in question is $1.3472$ where $b = 1.1$, and the area of the image triangle is $22.46849^\circ$ where the holonomy is $19.11370^\circ$ — the latter being exactly the defect of the rapidity triangle of sides $0.7$, $1.1$ and $\rho = 1.36975$. So the area that Gauss–Bonnet assigns to the holonomy is the area of the rapidity triangle, and it is that triangle, not the traced figure, that the area statement is about.
 

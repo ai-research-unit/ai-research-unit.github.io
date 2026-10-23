@@ -31,9 +31,9 @@ $$
 The Gordon decomposition expresses it as
 
 $$
-\bar\psi\gamma^\mu\psi
+\boxed{\;\bar\psi\gamma^\mu\psi
 = \frac{i}{2m}\left(\bar\psi\,\nabla^\mu\psi - \left(\nabla^\mu\bar\psi\right)\psi\right)
-+ \frac{1}{m}\,\partial_\nu\left(\bar\psi\,\Sigma^{\mu\nu}\psi\right),
++ \frac{1}{m}\,\partial_\nu\left(\bar\psi\,\Sigma^{\mu\nu}\psi\right)\;},
 $$
 
 where the **spin generator** is
@@ -125,11 +125,11 @@ $$
 Between such spinors the Gordon decomposition reads
 
 $$
-\bar w(p_2)\,\gamma^\mu\,w(p)
+\boxed{\;\bar w(p_2)\,\gamma^\mu\,w(p)
 = \bar w(p_2)\left[
 \frac{(p+p_2)^\mu}{2m}
 + \frac{i\sigma^{\mu\nu}(p_2-p)_\nu}{2m}
-\right]w(p).
+\right]w(p)\;}.
 $$
 
 Equivalently, with the momentum transfer $k = p_2 - p$ and the average momentum $P = \tfrac12(p+p_2)$,
@@ -192,9 +192,9 @@ The same decomposition underlies the companion article on the classical origin o
 The covariant form above needs $m \neq 0$, because both terms carry $1/m$. A decomposition that survives the massless limit uses the energy in place of the mass. Assume a time-harmonic solution $\psi(\vec r, t') = \psi(\vec r)\exp(-iEt')$ with $E = \sqrt{|\vec k|^2 + m^2}$, and use the Dirac equation once more. For the spatial current one finds
 
 $$
-\vec j \equiv e\,\bar\psi\boldsymbol\gamma\psi
+\boxed{\;\vec j \equiv e\,\bar\psi\boldsymbol\gamma\psi
 = \frac{e}{2iE}\left(\psi^\dagger\nabla\psi - \left(\nabla\psi^\dagger\right)\psi\right)
-+ \frac{e}{E}\,\nabla\times\vec S,
++ \frac{e}{E}\,\nabla\times\vec S\;},
 $$
 
 with $\boldsymbol\gamma = (\gamma^1,\gamma^2,\gamma^3)$ and

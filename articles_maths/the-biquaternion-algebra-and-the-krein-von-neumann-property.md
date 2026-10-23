@@ -20,8 +20,6 @@ The property is recovered in exactly two degenerate ways: in the definite readin
 
 The general theory is *Krein–von Neumann Algebras* and *Krein Algebras*; the form and its symmetry are *The Krein Gram Matrix and the Restrictions of the Form* and *The Fundamental Symmetry of the Biquaternion Algebra*; the adjoint of a left multiplication is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the operator families and their commutants are *One-Sided Operators on the General Plain Sesqualgebra*, *Two-Sided Operators on the General Plain Sesqualgebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the modular theory that the negative answer silences is *The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central $i$; $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The involution of the algebra is the Hermitian conjugation ${}^{*}$, $\tilde Q^{*}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$, written $\dagger$ in *Krein–von Neumann Algebras*; the natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$; the bar is the coefficient conjugation, $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$. The general quaternionic sesquilinear form is
-
 $$
 \langle\tilde Q',\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q^{\natural*}\tilde Q'\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu^{*}Q'_\mu ,\qquad \varepsilon=(1,-1,-1,-1),
 $$

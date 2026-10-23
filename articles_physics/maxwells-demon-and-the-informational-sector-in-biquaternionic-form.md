@@ -113,7 +113,7 @@ There are therefore two irreversible steps available in the cycle — the regist
 The feedback step converts the correlation into work. For the Szilard engine in step 2, the particle occupies one half of the box with certainty once the record is definite, and the isothermal expansion from $V/2$ to $V$ against the piston does
 
 $$
-W_{\rm ext} = \int_{V/2}^{V} P\,dV = k_BT\int_{V/2}^{V}\frac{dV}{V} = k_BT\log 2 = 0.6931471806\,k_BT
+\boxed{\;W_{\rm ext} = \int_{V/2}^{V} P\,dV = k_BT\int_{V/2}^{V}\frac{dV}{V} = k_BT\log 2 = 0.6931471806\,k_BT\;}
 $$
 
 of work on the piston, using the ideal-gas relation $P = k_BT/V$ for one particle. The numerical value is that of $\log 2$ in units of $k_BT$. The gas returns to its initial macrostate at the end, so its entropy change over the cycle is zero and its internal energy is unchanged; the work comes from the bath's heat, absorbed during the expansion.
@@ -137,7 +137,7 @@ $$
 where $I$ is the mutual information established by the measurement and $\Delta F_{\rm gas}$ the change of the free energy of the gas. For the isothermal expansion the internal energy of the ideal gas is unchanged, so $-\Delta F_{\rm gas} = k_BT\,\Delta S_{\rm gas}$, and in that case the bound may equally be written $W_{\rm ext} \le k_BT(I + \Delta S_{\rm gas})$. For the cyclic engine the gas returns to its initial macrostate, so $\Delta F_{\rm gas} = 0$ and
 
 $$
-W_{\rm ext} \;\le\; k_BT\,I .
+\boxed{\;W_{\rm ext} \;\le\; k_BT\,I\;}.
 $$
 
 The bound is saturated by a quasistatic feedback that uses all the correlation. For a record with error probability $e$ — the demon's bit agrees with the gas with probability $1-e$ — the mutual information is
@@ -174,7 +174,7 @@ $$
 the non-unital channel of the companion article *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*, whose entropy debit on the memory is $\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_D)$ and whose material cost is at least $k_BT\,\mathcal{S}(\tilde{Ϛ}_D)$. For the ideal demon the record is a full bit, $\mathcal{S}(\tilde{Ϛ}_D) = \log 2$, so
 
 $$
-W_{\rm erase} \;\ge\; k_BT\log 2 .
+\boxed{\;W_{\rm erase} \;\ge\; k_BT\log 2\;}.
 $$
 
 ### The Net Work
@@ -195,7 +195,7 @@ $$
 with equality exactly when the record is a deterministic function of the gas — a perfect copy, or its complement — so that there is no residual uncertainty in the record once the gas is known. Therefore
 
 $$
-\boxed{\;W_{\rm net} \;\le\; k_BT\left(I - H(D)\right) \;\le\; 0 .\;}
+\boxed{\;W_{\rm net} \;\le\; k_BT\left(I - H(D)\right) \;\le\; 0\;}.
 $$
 
 The demon never gains. Three regimes make the accounting concrete.
@@ -268,7 +268,7 @@ $$
 The net work of the closed cycle is therefore
 
 $$
-W_{\rm net} \le k_BT\left(I - H(D)\right) \le 0 ,
+W_{\rm net} \le k_BT\left(I - H(D)\right) \le 0,
 $$
 
 with equality for the perfect demon, which breaks even at $k_BT\log2$ extracted and $k_BT\log2$ spent, and a strict loss $k_BT\,H_2(e)$ for the noisy demon. The demon's reversible steps create and consume the correlation for free; its irreversible steps — registration, when the record is not already definite, and erasure in every case — are where the cost appears. The informational sector can hold a correlation reversibly and cannot dispose of one reversibly, and that asymmetry is the demon's defeat.

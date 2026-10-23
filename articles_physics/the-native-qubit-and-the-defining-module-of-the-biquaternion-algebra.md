@@ -116,7 +116,7 @@ These two facts are the precise content of the word "native." The framework does
 The algebra acts on itself by left multiplication, and this gives a second module worth naming. In a matrix representative the left regular module decomposes as
 
 $$
-\mathbb{B} \;\cong\; S \oplus S \qquad (\text{as left } \mathbb{B}\text{-modules}),
+\boxed{\;\mathbb{B} \;\cong\; S \oplus S \qquad (\text{as left } \mathbb{B}\text{-modules})\;},
 $$
 
 the two summands being the minimal left ideals spanned by the first and second columns. Both are isomorphic to $S$; they are the two Peirce components of any complete set of matrix units. This is the algebraic origin of the framework's two-component spinor structure, and it is the reason the algebra, not the module, is four-complex-dimensional. The qubit's state vectors occupy one copy of $S$; the algebra is *two* copies of the same module, which is what allows an operator to mix the two components.
@@ -136,7 +136,7 @@ $$
 Conversely, every positive normalised idempotent of $\mathbb{B}$ (trace one in the image) has rank one and is the projector onto a ray of $S$. Since two unit vectors define the same projector exactly when they differ by a phase, the map
 
 $$
-\{\text{rays of } S\} \;\longleftrightarrow\; \{\text{rank-one idempotents of } \mathbb{M}_+\}
+\boxed{\;\{\text{rays of } S\} \;\longleftrightarrow\; \{\text{rank-one idempotents of } \mathbb{M}_+\}\;}
 $$
 
 is a bijection. This is the biquaternion form of the standard correspondence between pure states and rays.
@@ -166,7 +166,7 @@ $$
 and the Born weight is $\langle\tilde{Ϛ},\tilde{H}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. For a pure state $\tilde\Pi = |u\rangle\langle u|$ it reproduces the module inner product,
 
 $$
-\frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = \langle u|H|u\rangle ,
+\boxed{\;\frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = \langle u|H|u\rangle\;},
 $$
 
 where $H$ is the matrix image of $\tilde{H}$. On $\mathbb{M}_+$ the star is inert, so the same number is $\mathrm{Sc}(\tilde\Pi\tilde H)/\mathrm{Sc}(\tilde\Pi)$, the plain scalar. The trace appears only to normalise the pure state, $\operatorname{Tr}(\tilde\Pi)=1$, and then $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = \langle u|H|u\rangle$ in the $2\times2$ image. This identity is the bridge between the two descriptions: the Born rule of the algebra is the normalised Hermitian form, read on the module as the ordinary expectation value. Its derivation from the Hermitian form was given in *The Born Rule from the Hermitian Form — Derivation and Comparison*, and it requires nothing beyond the fact that the form is the scalar part of the product.
@@ -201,7 +201,7 @@ $$
 which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $h_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde{H}\rangle_{\natural} = \det M(\tilde{H})\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $h_t$ selects the future cone. For a state
 
 $$
-\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t .
+\boxed{\;\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t\;}.
 $$
 
 The biquaternion norm therefore measures the departure of a state from the boundary of the Bloch ball, and it vanishes precisely on the rank-one idempotents — the rays of the module. On the pure states the algebra's biquaternion norm has a nonzero kernel; that degenerate cone is the module's set of rays, and it is the geometric reason the rank-one idempotents are the zero divisors of $\mathbb{M}_+$.

@@ -67,7 +67,7 @@ The generalized Cartan pairing, read with $\tilde Q=\tilde K$, gives the followi
 It is
 
 $$
-\tilde H_{\mathrm{pos}}=\sqrt{\tilde K\tilde K^{*}},\qquad \tilde U_{\mathrm{p}}=\tilde H_{\mathrm{pos}}^{+}\tilde K,
+\boxed{\;\tilde H_{\mathrm{pos}}=\sqrt{\tilde K\tilde K^{*}},\qquad \tilde U_{\mathrm{p}}=\tilde H_{\mathrm{pos}}^{+}\tilde K\;},
 $$
 
 with $\tilde H_{\mathrm{pos}}^{+}$ the Moore–Penrose inverse. This is the generalized polar decomposition of the mathematical article; it is cited, not re-proved.
@@ -131,7 +131,7 @@ Trace preservation of a one-Kraus channel is not the same as trace preservation 
 The effect of the outcome is
 
 $$
-\tilde E=\tilde K^{*}\tilde K=\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}^{2}\tilde U_{\mathrm{p}}.
+\boxed{\;\tilde E=\tilde K^{*}\tilde K=\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}^{2}\tilde U_{\mathrm{p}}\;}.
 $$
 
 The eigenvalues of $\tilde E$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde K$ and the eigenvalues of $\tilde H_{\mathrm{pos}}^{2}$. The effect is positive, and $\tilde E\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde E_y=e_t$ forces each $\sigma_i\leq1$.
@@ -170,9 +170,9 @@ $$
 The effect and the squared strength are
 
 $$
-\tilde E=\tilde K^{*}\tilde K=4\tilde\Pi_{-\vec e_z}=2e_t-2i\vec e_z,
+\boxed{\;\tilde E=\tilde K^{*}\tilde K=4\tilde\Pi_{-\vec e_z}=2e_t-2i\vec e_z,
 \qquad
-\tilde H_{\mathrm{pos}}^{2}=4\tilde\Pi_{\vec e_z}=2e_t+2i\vec e_z .
+\tilde H_{\mathrm{pos}}^{2}=4\tilde\Pi_{\vec e_z}=2e_t+2i\vec e_z\;} .
 $$
 
 They are different rank-one elements, on opposite Bloch points. The partial isometry carries the initial line $\tilde\Pi_{-\vec e_z}$ to the final line $\tilde\Pi_{\vec e_z}$, and the effect sees the initial line while the squared strength sees the final one. The example is exact; the identities $\tilde K=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$ and $\tilde E=\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}^{2}\tilde U_{\mathrm{p}}$ hold with no residual.
@@ -227,7 +227,7 @@ and the amplitude is $\tilde K=0.692820323e_t+0.4\vec e_x+0.1i\vec e_y-0.1732050
 The effect is
 
 $$
-\tilde E=\tilde K^{*}\tilde K=\tilde H_0^{2}=0.68e_t-0.32i\vec e_z=0.36\tilde\Pi_{\vec e_z}+\tilde\Pi_{-\vec e_z},
+\boxed{\;\tilde E=\tilde K^{*}\tilde K=\tilde H_0^{2}=0.68e_t-0.32i\vec e_z=0.36\tilde\Pi_{\vec e_z}+\tilde\Pi_{-\vec e_z}\;},
 $$
 
 with eigenvalues $0.36$ and $1$. The outcome is unsharp: the effect is full rank, no direction is annihilated, and the backaction is a rotation by $60^{\circ}$ about $\vec e_x$. The strength is the pair $\{0.6,1\}$; the effect sees its squares. The complement $e_t-\tilde E=0.64\tilde\Pi_{\vec e_z}$ is rank one, with Kraus operator $0.8\tilde\Pi_{\vec e_z}$, which is null. The two outcomes resolve the identity: one is unsharp and invertible, the other is rank one and on the cone. The example shows the boundary in a single instrument.

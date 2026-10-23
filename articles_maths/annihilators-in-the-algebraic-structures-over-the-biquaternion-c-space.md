@@ -4,8 +4,6 @@
 
 **The annihilator of an element in a product is the set of partners that the element kills.** It is defined by an equation that names a product, so the twelve products of the biquaternion space define twelve sets, and each of the twelve is computed below, solved in coordinates and written out with the vectors that generate it. **The two one-sided annihilators are equal in ten of the twelve structures, and they differ in exactly two, the plain product and the general quaternionic sesquilinear product, and there only for an element of vanishing norm.**
 
-**Scope and owners.** The cone and the zero-divisor sets are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The general vocabulary is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Each computation is owned by its own article, named at the end of its subsection and listed in §*Further Reading*.
-
 ## The Annihilator of an Element
 
 **Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in $\star$ are
@@ -51,9 +49,7 @@ $$
 **When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, the two annihilators are $\{0\}$.** Then $\tilde Q^{-1}=\tilde Q^{\natural}/\mathrm{Norm}(\tilde Q)$ and $\tilde Q\tilde Q_1=0$ gives $\tilde Q_1=0$, and the same on the right.
 
 **When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, the two annihilators are distinct complex planes that share the line $\mathbb{C}\tilde Q^{\natural}$.** At the non-pure element $e_t+i\vec e_x$ the left annihilator is the plane of $e_t-i\vec e_x$ and $\vec e_z+i\vec e_y$, and the right annihilator is the plane of $e_t-i\vec e_x$ and $\vec e_z-i\vec e_y$:
-$$
-A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z+i\vec e_y\},\qquad B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z-i\vec e_y\}.
-$$
+$$ \boxed{\; A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z+i\vec e_y\},\qquad B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z-i\vec e_y\} \;}. $$
 At the pure element $\vec e_x+i\vec e_y$ the left annihilator is the plane of $\vec e_x+i\vec e_y$ and $e_t+i\vec e_z$, and the right annihilator is the plane of $\vec e_x+i\vec e_y$ and $e_t-i\vec e_z$:
 $$
 A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t+i\vec e_z\},\qquad B_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t-i\vec e_z\}.
@@ -214,9 +210,7 @@ The product is the antisymmetrisation of the plain sesquilinear product, the vec
 **The antisymmetrisation carries no algebraic norm, and the norm $\langle\tilde Q\rangle_{\natural}$ decides.**
 
 **The common annihilator is the set of the Hermitian conjugates of the $\tilde Q_2$ with $\tilde Q\tilde Q_2$ central.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, it is the line $\mathbb{C}\overline{\tilde Q}$.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, it is the plane $A_{\text{plain}}(\tilde Q)^{*}$.** At $\tilde Q=0$ it is all of $\mathbb{B}$:
-$$
-A_\diamond(\tilde Q)=\{\tilde Q_2^{*}:\tilde Q\tilde Q_2\in\mathbb{C}_{\mathbb{B}}\}.
-$$
+$$ \boxed{\; A_\diamond(\tilde Q)=\{\tilde Q_2^{*}:\tilde Q\tilde Q_2\in\mathbb{C}_{\mathbb{B}}\} \;}. $$
 At an element of nonzero norm $\langle\cdot\rangle_{\natural}$ the single solution line is $\mathbb{C}\overline{\tilde Q}$, the conjugate of the element, which at the real element $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ is the line of the element itself; at the element $\vec e_x+i\vec e_y$, of norm zero, the annihilator is the plane
 $$
 A_\diamond(e_t+2\vec e_x+3\vec e_y+4\vec e_z)=\mathbb{C}\{e_t+2\vec e_x+3\vec e_y+4\vec e_z\},\qquad A_\diamond(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x-i\vec e_y,\ e_t+i\vec e_z\}.
@@ -280,7 +274,6 @@ The twelve are tabulated with the annihilator of a general element, the case spl
 | the quaternionic algebra | $\mathrm{AQA}$ | the antisymmetrisation | At an element whose vector part is not zero and whose norm $\langle\tilde Q\rangle_{\natural}$ is not zero, the annihilator is the line $\mathbb{C}\tilde Q$. At an element whose vector part is not zero and whose norm $\langle\tilde Q\rangle_{\natural}$ is zero, the annihilator is the plane of the solutions of $Q_t\vec Q_1-Q_{1t}\vec Q-\vec Q\times\vec Q_1=0$, and that plane contains the line $\mathbb{C}\tilde Q$. At an element whose vector part is zero and which is not zero, the annihilator is the line $\mathbb{C}e_t$. At $\tilde Q=0$, the annihilator is all of $\mathbb{B}$. | the two sides are equal |
 | the quaternionic sesqualgebra | $\mathrm{AQS}$ | the antisymmetrisation | At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q}$. At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$. | the two sides are equal |
 
-
 Four facts follow from the table. The two one-sided annihilators differ in exactly two rows, the plain product and the general quaternionic sesquilinear product, and they differ there only at an element of norm zero. In two rows some nonzero element has the whole space as its annihilator, and those rows are the two antisymmetrisations, whose value is a cross product. In two rows every nonzero element has a hyperplane of dimension three as its annihilator, and those rows are the two symmetrisations that collapse the product to a form. In the remaining six rows the annihilator is small at an element off the cone but not always trivial: the four general products have $\{0\}$ there and a plane on the cone, the two antisymmetric sesquilinear structures already have the line $\mathbb{C}\tilde Q$, or its conjugate, at an element of nonzero norm and a plane on the cone, and the two symmetric structures have a plane at every pure element, whether or not the norm vanishes.
 
 ### The Two One-Sided Annihilators
@@ -294,9 +287,7 @@ Four facts follow from the table. The two one-sided annihilators differ in exact
 Fix a nonzero element of the cone, $\mathrm{Norm}(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=0$. Each of the four general products gives two planes for it, and the eight planes are related as follows.
 
 **Theorem (the planes are read through the two conjugations).** Write $A_{\text{plain}},A_{*},A_{\natural},A_{\natural*}$ for the left annihilators of $\tilde Q$ in the plain, the general plain sesquilinear, the natural and the general quaternionic sesquilinear product. Then
-$$
-A_{\natural}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural}),\qquad A_{*}(\tilde Q)=A_{\text{plain}}(\tilde Q)^{*},\qquad A_{\natural*}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural})^{*},
-$$
+$$ \boxed{\; A_{\natural}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural}),\qquad A_{*}(\tilde Q)=A_{\text{plain}}(\tilde Q)^{*},\qquad A_{\natural*}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural})^{*} \;}, $$
 and the two sides coincide for the natural product and for the general plain sesquilinear product, while for the plain product and for the general quaternionic sesquilinear product they differ.
 
 *Proof.* The first identity is $\tilde Q^{\natural}\tilde Q_1=0$ read as the plain product of $\tilde Q^{\natural}$ and $\tilde Q_1$. For the second, the substitution $\tilde Q_1=\tilde Q_2^{*}$ turns $\tilde Q\tilde Q_1^{*}=0$ into $\tilde Q\tilde Q_2=0$, and the Hermitian conjugation is a bijection, so the plane is the star-image of the plain plane; the third is the first and the second composed. The coincidences are the theorem of §*The Two One-Sided Annihilators*.

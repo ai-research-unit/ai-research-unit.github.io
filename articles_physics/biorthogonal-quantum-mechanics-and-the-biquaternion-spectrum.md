@@ -6,22 +6,18 @@ A non-normal element still has a spectral decomposition. What it loses is the or
 
 The standard language for this situation is **biorthogonal quantum mechanics**. The right eigenvectors of the element and the left eigenvectors of the same element form two bases that are dual to each other, not two orthonormal bases. The spectral projectors are built from one right vector and one left vector, and the probability rule uses the left pairing. When the element is normal, the two bases coincide, the projectors become Hermitian, and the rule reduces to the Born rule.
 
-This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of *Eigenvalue Decomposition of a Biquaternion*. The left and right eigenvalue problem is that of *Biquaternion Spectral Theory*. The article owns the reading and its limits; it proves no spectral theorem.
-
-**Placement.** The article belongs to the informational block of the non-relativistic quantum theory, after *Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum* and before *Quantum Channels and the Reversible/Irreversible Dichotomy*. It uses the matrix model $\mathsf M_2$ and the eigenprojections of the eigenvalue decomposition.
-
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$, and $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The star is Hermitian conjugation, $\tilde Q^{*}=\overline{Q_t}e_t-\overline{\vec Q}$, and $\operatorname{Sc}$ is the scalar part, so that $\operatorname{Tr}\tilde X=2\operatorname{Sc}\tilde X$. The matrix model is $\mathsf M_2(e_t)=I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. The eigenvalues are complex and central, so the left and right **eigenvalue** problems coincide; the biorthogonal structure below is a statement about left and right **eigenvectors**, not about a non-commutative spectrum.
+This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of *Eigenbasis of a Biquaternion*. The left and right eigenvalue problem is that of *Biquaternion Spectral Theory*. The article owns the reading and its limits; it proves no spectral theorem.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The spectrum, the eigenprojections and the two-term writing | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
-| The normality criterion and the Hermitian case | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
+| The spectrum, the eigenprojections and the two-term writing | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
+| The normality criterion and the Hermitian case | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
 | Left and right eigenvalues, and the central-spectrum convention | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
 | The spectral theorem for a normal element | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
 | The matrix model and the determinant | [The Element and Operator Representations](the-element-and-operator-representations.html) |
-| The Jordan and nilpotent regimes | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
+| The Jordan and nilpotent regimes | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
 
 ## The Two Eigenbases
 
@@ -44,13 +40,13 @@ $$
 after the normalization $\ell_\sigma^{\dagger}r_\sigma=1$. The spectral projectors are
 
 $$
-P_\sigma=r_\sigma\ell_\sigma^{\dagger},
+\boxed{\;P_\sigma=r_\sigma\ell_\sigma^{\dagger},
 \qquad
 P_\sigma P_\tau=\delta_{\sigma\tau}P_\sigma,
 \qquad
 P_++P_-=I_2,
 \qquad
-A=\lambda_+P_++\lambda_-P_-.
+A=\lambda_+P_++\lambda_-P_-\;}.
 $$
 
 These are the Riesz projectors of $A$, and they are exactly the matrix images of the biquaternion eigenprojections:
@@ -96,7 +92,7 @@ $$
 For a rank-one projector $P=r\ell^{\dagger}/(\ell^{\dagger}r)$,
 
 $$
-\kappa=\frac{(r^{\dagger}r)(\ell^{\dagger}\ell)}{\lvert\ell^{\dagger}r\rvert^{2}}\ge1,
+\boxed{\;\kappa=\frac{(r^{\dagger}r)(\ell^{\dagger}\ell)}{\lvert\ell^{\dagger}r\rvert^{2}}\ge1\;},
 $$
 
 by the Cauchy–Schwarz inequality, with equality exactly when $r$ and $\ell$ are proportional. The factor is therefore one precisely in the normal case, and it grows as the two bases turn away from each other. It is the standard measure of the excess of a non-normal mode over an orthogonal one.
@@ -131,8 +127,8 @@ $$
 and the normalized weights are
 
 $$
-p_\sigma=\frac{\lvert c_\sigma\rvert^{2}}{\sum_\tau\lvert c_\tau\rvert^{2}}
-=\frac{\lvert\ell_\sigma^{\dagger}\psi\rvert^{2}}{\langle\psi,\eta\psi\rangle}.
+\boxed{\;p_\sigma=\frac{\lvert c_\sigma\rvert^{2}}{\sum_\tau\lvert c_\tau\rvert^{2}}
+=\frac{\lvert\ell_\sigma^{\dagger}\psi\rvert^{2}}{\langle\psi,\eta\psi\rangle}\;}.
 $$
 
 The weights are positive and sum to one for every $\psi$, because $\eta$ is a sum of rank-one positive operators and the left eigenvectors form a basis. The rule is therefore available for every diagonalizable element with distinct eigenvalues, normal or not. What it is not is the Born rule: the denominator is not one in the original Hilbert norm, and the coefficients are not the orthogonal projections.
@@ -144,10 +140,10 @@ The rule has a price. The metric $\eta$ depends on the element, because the left
 A density matrix is the case in which the whole apparatus collapses. A state $\tilde\varrho$ is Hermitian, positive and of trace one; it is normal, its eigenprojections are Hermitian, and its eigenbasis is orthonormal. In the matrix model $\eta=I$, the coefficients are the ordinary projections, and the rule becomes the Born rule,
 
 $$
-p_\sigma=\operatorname{tr}\left(\varrho P_\sigma\right)
+\boxed{\;p_\sigma=\operatorname{tr}\left(\varrho P_\sigma\right)
 =2\operatorname{Sc}\left(\tilde\varrho\tilde\Pi_\sigma\right),
 \qquad
-\tilde\Pi_\sigma=\tilde\Pi_\sigma^{*}.
+\tilde\Pi_\sigma=\tilde\Pi_\sigma^{*}\;}.
 $$
 
 The contrast is the conceptual content of the article. The spectral decomposition alone does not give a probability; **normality** gives it. The density matrix is normal by construction, so the Born rule is the orthogonal case of the biorthogonal rule. A non-normal element is not a state: it is an operator, an effective Hamiltonian or a generator, and its biorthogonal weights are a reading of its modes, not the probabilities of a measurement of that element.
@@ -210,7 +206,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the eigenprojections and the normality criterion.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections and the normality criterion.
 - [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the left and right eigenvalue problems and the spectral theorem.
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the matrix model used throughout.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the degenerate limit of the two bases.

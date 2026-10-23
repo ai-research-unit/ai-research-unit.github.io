@@ -12,11 +12,15 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 **Theorem (the spectrum is the coordinate pair).** The characteristic polynomial of $L_{\breve Q}$ is
 $$
-\chi_{\breve Q}(\lambda)=\det(\lambda L_{1}-L_{\breve Q})=(\lambda-Q_{+})(\lambda-Q_{-})=\lambda^{2}-\operatorname{tr}(\breve Q)\,\lambda+\det(\breve Q),
+\boxed{\;
+\chi_{\breve Q}(\lambda)=\det(\lambda L_{1}-L_{\breve Q})=(\lambda-Q_{+})(\lambda-Q_{-})=\lambda^{2}-\operatorname{tr}(\breve Q)\,\lambda+\det(\breve Q)
+\;},
 $$
 so
 $$
-\sigma(\breve Q)=\{Q_{+},Q_{-}\},
+\boxed{\;
+\sigma(\breve Q)=\{Q_{+},Q_{-}\}
+\;},
 $$
 with the two values counted with multiplicity, where
 $$
@@ -48,7 +52,9 @@ so the spectrum is read directly on the two coordinates and no triangular or Jor
 
 **Theorem (the reduced Cayley–Hamilton identity).** Every element satisfies
 $$
-\breve Q^{2}-\operatorname{tr}(\breve Q)\,\breve Q+\det(\breve Q)\,1=0,\qquad \operatorname{tr}(\breve Q)=2Q_{\blacktriangle},\quad \det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}},
+\boxed{\;
+\breve Q^{2}-\operatorname{tr}(\breve Q)\,\breve Q+\det(\breve Q)\,1=0,\qquad \operatorname{tr}(\breve Q)=2Q_{\blacktriangle},\quad \det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}
+\;},
 $$
 and the same identity holds for the operator, $L_{\breve Q}^{2}-2Q_{\blacktriangle}\,L_{\breve Q}+\langle \breve Q\rangle_{\mathrm{ts}}\,L_{1}=0$.
 

@@ -16,8 +16,6 @@ The honest summary can be stated before the derivation, and it is simple. The no
 
 The title covers the non-relativistic case only. The relativistic case begins from the biquaternion Dirac equation with the Coulomb potential, where the Hamiltonian is no longer central, the spin is no longer a spectator, and the $l$-degeneracy is lifted; it is left to its own article and is described only qualitatively at the end.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$. The isomorphism is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(i\vec e_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde\Pi$, and the idempotents are $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$.
-
 ## The Coulomb Hamiltonian in $\mathbb{M}_+$
 
 ### The kinetic term and a sign
@@ -48,7 +46,7 @@ $$
 The two natural transcriptions therefore agree, and the kinetic energy is
 
 $$
-\boxed{\;T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{p^{\,2}}{2m}e_t . \;}
+\boxed{\;T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{p^{\,2}}{2m}e_t\;}.
 $$
 
 The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_k^2=-e_t$ — that gives the biquaternion norm $\langle\tilde H\rangle_{\natural}=h_t^2-|\vec h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
@@ -68,9 +66,9 @@ It lies in $\mathbb{M}_+$, and in fact in the centre $\mathbb{C}_{\mathbb{B}}$. 
 Adding the two terms,
 
 $$
-H = T+\tilde\Phi
+\boxed{\;H = T+\tilde\Phi
 = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_t
-= h_t\,e_t, \qquad h_t = -\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}.
+= h_t\,e_t, \qquad h_t = -\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\;}.
 $$
 
 The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is zero: $\vec h=0$ in the general form $\tilde H=h_te_t+i\vec h$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
@@ -149,7 +147,7 @@ which is the standard spin-1/2 expectation value, written as the plain form of $
 Separate the field as
 
 $$
-\psi_{nlm m_s}(r,\theta,\phi) = R_{nl}(r)\,Y_l^m(\theta,\phi)\,\chi_{m_s},
+\boxed{\;\psi_{nlm m_s}(r,\theta,\phi) = R_{nl}(r)\,Y_l^m(\theta,\phi)\,\chi_{m_s}\;},
 \qquad \chi_{m_s}\in\mathbb{B}\tilde\Pi ,
 $$
 
@@ -174,7 +172,7 @@ This is the standard radial Coulomb equation. The framework's contribution at th
 The bound-state solutions of the radial equation are the standard ones. The spectrum is
 
 $$
-E_n = -\frac{m\kappa^2}{2\hbar^2 n^2} = -\frac{\kappa}{2a_0 n^2},
+\boxed{\;E_n = -\frac{m\kappa^2}{2\hbar^2 n^2} = -\frac{\kappa}{2a_0 n^2}\;},
 \qquad n=1,2,3,\dots,
 $$
 

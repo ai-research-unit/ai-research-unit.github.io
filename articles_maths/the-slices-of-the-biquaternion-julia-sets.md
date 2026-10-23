@@ -21,7 +21,7 @@ The article owns the three notions of a slice, the invariance criterion and the 
 **Proposition (invariance gives agreement).** Let $V$ be invariant. Then $\mathcal K_{\tilde Q_3}\cap V$ is the filled Julia set of $F_{\tilde Q_3}|_V$, and
 
 $$
-\partial(\mathcal K_{\tilde Q_3}\cap V)\subset J_{\tilde Q_3}\cap V .
+\boxed{\;\partial(\mathcal K_{\tilde Q_3}\cap V)\subset J_{\tilde Q_3}\cap V\;}.
 $$
 
 **Proof.** A point of $V$ has its whole orbit in $V$ by invariance, and boundedness of that orbit is the same whether it is measured in $V$ or in $\mathbb{B}$ because a finite-dimensional subspace is closed. Hence $\mathcal K_{\tilde Q_3}\cap V=\{v\in V: \text{orbit of } v \text{ bounded}\}=\mathcal K_{F|_V}$. For the inclusion, let $p\in\partial(\mathcal K\cap V)$: then $p\in\mathcal K\cap V$ and points $v_n\in V\setminus\mathcal K$ with $v_n\to p$. The points $v_n$ lie in $\mathbb{B}\setminus\mathcal K$ and tend to $p$, so every neighbourhood of $p$ in $\mathbb{B}$ meets $\mathcal K$ (at $p$) and its complement, that is $p\in\partial\mathcal K=J_{\tilde Q_3}$. **The reverse inclusion is a statement about the extension of the dynamics off $V$; it holds for the exact product slices below and is not asserted in general.**
@@ -59,7 +59,7 @@ The real slice is the smallest picture and shows the real Julia set; the quatern
 **Proposition (real and imaginary parts of one orbit).** Write $\tilde Q=\tilde Q_6+i\tilde Q_1$ and $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde Q_6,\tilde Q_1,\tilde Q_4,\tilde Q_5\in\mathbb{H}_{\mathbb{B}}$. Then
 
 $$
-F_{\tilde Q_3}(\tilde Q_6+i\tilde Q_1)=\bigl(\tilde Q_6^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6+\tilde Q_5\bigr),
+\boxed{\;F_{\tilde Q_3}(\tilde Q_6+i\tilde Q_1)=\bigl(\tilde Q_6^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6+\tilde Q_5\bigr)\;},
 $$
 
 so the map preserves the quaternion subspace exactly when $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6+\tilde Q_5=0$ for all initial data, which for $\tilde Q_5=0$ is the anticommutation condition $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6=0$.
@@ -73,7 +73,7 @@ so the map preserves the quaternion subspace exactly when $\tilde Q_6\tilde Q_1+
 **Theorem (the idempotent slice is exact).** Let $\tilde\Pi$ be a primitive idempotent, $\tilde\Pi'=e_t-\tilde\Pi$, and let the parameter lie in $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$, say $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$. Then $W_{\tilde\Pi}$ is invariant, and
 
 $$
-\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi}=K_{C_1}\tilde\Pi+K_{C_2}\tilde\Pi' ,
+\boxed{\;\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi}=K_{C_1}\tilde\Pi+K_{C_2}\tilde\Pi'\;},
 $$
 
 with the identification $A\tilde\Pi+B\tilde\Pi'\leftrightarrow(A,B)$. The slice is the product of two complex filled Julia sets, and the picture is exact in the strong sense: the slice of the boundary is the boundary of the product.

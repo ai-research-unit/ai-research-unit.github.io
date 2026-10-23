@@ -28,9 +28,9 @@ The conventions are those of *Conventions in the Biquaternion Universe*. The alg
 For $\tilde Q\in\mathbb{B}$ with $\tilde Q\neq0$ define
 
 $$
-\tilde{Ϛ}_Q=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
+\boxed{\;\tilde{Ϛ}_Q=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
 \qquad
-\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}>0 .
+\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}>0\;}.
 $$
 
 The image is Hermitian, positive semidefinite and normalised by $\langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12$, so it is a state. The denominator is the Hermitian bracket and not a trace: the star names the form that is positive definite on the whole algebra, and the trace is its $2\times2$ reading, $\operatorname{Tr}=2\,\mathrm{Sc}$. The factor cancels in every probability, because a probability is a ratio of the same bracket.
@@ -56,11 +56,11 @@ $$
 Then
 
 $$
-\tilde{Ϛ}_Q=\frac{\tilde H^{2}}{2\langle\tilde H,\tilde H\rangle_{*}},
+\boxed{\;\tilde{Ϛ}_Q=\frac{\tilde H^{2}}{2\langle\tilde H,\tilde H\rangle_{*}},
 \qquad
 \hat H=\frac{\tilde H}{\sqrt{2\langle\tilde H,\tilde H\rangle_{*}}},
 \qquad
-\tilde{Ϛ}_Q=\hat H^{2}.
+\tilde{Ϛ}_Q=\hat H^{2}\;}.
 $$
 
 The **amplitude** is $\tilde H$; the **normalised amplitude** is $\hat H$; the **state** is the square of the normalised amplitude. The three objects are different. $\tilde H$ carries the scale of the operator; $\hat H$ is normalised in the Hilbert–Schmidt sense, $\langle\hat H,\hat H\rangle_{*}=\tfrac12$, which is $\operatorname{Tr}\hat H^{2}=1$ in the matrix image; $\tilde{Ϛ}_Q$ is the state, with $\langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12$.
@@ -89,9 +89,9 @@ The chain is $\tilde Q\rightsquigarrow\tilde H\rightsquigarrow\hat H\rightsquiga
 The purity of the state is
 
 $$
-\operatorname{Tr}\tilde{Ϛ}_Q^{2}
+\boxed{\;\operatorname{Tr}\tilde{Ϛ}_Q^{2}
 =\frac{\sigma_1^{4}+\sigma_2^{4}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}
-=\frac{1}{2}+\frac{(\sigma_1^{2}-\sigma_2^{2})^{2}}{2(\sigma_1^{2}+\sigma_2^{2})^{2}} .
+=\frac{1}{2}+\frac{(\sigma_1^{2}-\sigma_2^{2})^{2}}{2(\sigma_1^{2}+\sigma_2^{2})^{2}}\;}.
 $$
 
 The second form shows the range at once: $\tfrac12\le\operatorname{Tr}\tilde{Ϛ}_Q^{2}\le1$, with equality at the two ends.

@@ -10,10 +10,6 @@ The whole problem is decided by one identity. The square of every element of thi
 
 **The results.** The roots of $+1$ in the general quaternionic product are the solutions of $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^2+(\vec\Xi,\vec\Xi)=1$, a nondegenerate complex quadric of complex dimension three and real dimension six; they contain the central pair $\pm e_t$, the real vector roots $\vec u$ over the real unit vectors, and a mixed family carrying both a scalar part and a vector part. The idempotents of the product are $0$ and $e_t$ alone, and the product has no nontrivial idempotent. The two sets are not related by the halving map that carries the roots of $+1$ onto the idempotents of the plain product: the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ produces an idempotent of $\star$ only at $\pm e_t$, and every other root of $+1$ is sent out of the idempotent set. The plain Hermitian idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ are idempotents of the plain product and square-zero here, so the plain idempotents are roots of $0$ of this product; on the operator side they recover their role, the left multiplication $L_{\tilde Q}$ being a projector exactly when $\tilde Q$ is a plain idempotent, so the product carries a family of projectors of complex dimension two indexed by elements that are not its own idempotents. Read on the remarkable subspaces, the idempotent equation leaves the two trivial idempotents in the centre, the quaternion subspace and the Hermitian subspace, and only $0$ in the vector, anti-quaternion and anti-Hermitian subspaces.
 
-**Boundaries.** The product, the square and the algebraic norm are *Introduction to the General Quaternionic Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*; the general root problem for an arbitrary radicand is *Square Roots of a General Element in the General Quaternionic Algebra*; the roots of $0$ and the nilpotents of the product are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*; the zero divisors and their two families are *Zero Divisors of the General Quaternionic Algebra*; the idempotents of the plain product, the Hermitian idempotents, the orthogonality and the Peirce decomposition are *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the projectors and the operator theory are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Specificities of the General Quaternionic Algebra*; and the four root problems of the four general products side by side are *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is $\tilde\Xi=\Xi_te_t+\vec\Xi$ with $\vec\Xi=\sum_{\mu=1}^{3}\Xi_\mu\vec e_\mu$, the **algebraic norm** is $\langle\tilde\Xi\rangle_{\natural}=\sum_\mu \Xi_\mu^2=\Xi_t^2+(\vec\Xi,\vec\Xi)$, and $(\vec\Xi,\vec\Xi)=\sum_\mu\Xi_\mu^2$ is the complex bilinear form of the vector part. A **central value** is an element $\lambda e_t$ with $\lambda\in\mathbb{C}$, and $\vec u$ denotes a real unit vector of $\mathbb{R}^3$. The scalar line is written $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$.
-
 ## The Root Equation and Its Reduction
 
 **Definition.** Let $\lambda\in\mathbb{C}$. A **square root of the central value $\lambda$** in the general quaternionic product is an element $\tilde\Xi$ with
@@ -27,7 +23,7 @@ The root is relative to the product, and this article uses the one of $\star$ th
 **Theorem (the reduction).** For every $\tilde\Xi\in\mathbb{B}$,
 
 $$
-\tilde\Xi\star\tilde\Xi=\lambda e_t \iff \langle\tilde\Xi\rangle_{\natural}=\lambda .
+\boxed{\; \tilde\Xi\star\tilde\Xi=\lambda e_t \iff \langle\tilde\Xi\rangle_{\natural}=\lambda \;}.
 $$
 
 **Proof.** The square is $\langle\tilde\Xi\rangle_{\natural}e_t$ by §*The Square Lies in the Scalar Line* of *Introduction to the General Quaternionic Algebra*, and $e_t\neq0$.
@@ -51,7 +47,7 @@ and the set is never empty: the central element $\tilde\Xi=\sqrt\lambda\,e_t$ is
 **Theorem.** The roots of $+1$ in the general quaternionic product are the solutions of
 
 $$
-\langle\tilde\Xi\rangle_{\natural}=\Xi_t^2+(\vec\Xi,\vec\Xi)=1 .
+\boxed{\; \langle\tilde\Xi\rangle_{\natural}=\Xi_t^2+(\vec\Xi,\vec\Xi)=1 \;}.
 $$
 
 The set is a nondegenerate complex quadric of complex dimension three, hence of real dimension six. It contains the two central roots $\pm e_t$ and the elements $\vec u$ over the real unit vectors.
@@ -163,7 +159,7 @@ By *Square Roots of One and the Idempotents of the Biquaternion Algebra* the non
 **Proposition (the standard idempotents are square-zero here).** For every real unit vector $\vec u$,
 
 $$
-\tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=0 , \qquad N\bigl(\tilde\Pi_+(\tilde\Xi)\bigr)=0 .
+\boxed{\; \tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=0 , \qquad N\bigl(\tilde\Pi_+(\tilde\Xi)\bigr)=0 \;}.
 $$
 
 **Proof.** The natural conjugation negates the vector part, $\tilde\Pi_+(\tilde\Xi)^{\natural}=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)$, the **complementary idempotent**. Hence

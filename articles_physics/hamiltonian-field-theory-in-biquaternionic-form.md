@@ -54,7 +54,6 @@ $$
 
 the sum of three squares. Two remarks fix the sign bookkeeping. First, **the Hamiltonian density is not minus the Lagrangian density**, although it is so for a mechanical Lagrangian whose kinetic energy is quadratic in the velocities: here $-\mathcal{L}=\frac{1}{c^2}|\partial\phi/\partial t'|^2-|\nabla\phi|^2-\mu^2|\phi|^2$, which differs from $\mathcal{H}$ by the kinetic term again, since the Legendre transform of a complex field pairs $\pi$ with $\partial\phi/\partial t'$ *and* $\pi^\dagger$ with $\left(\partial\phi/\partial t'\right)^{*}$. Second, **the density is the energy density**: the expression above is exactly the time–time component $T^0{}_0$ that *Noether's Theorem in Biquaternionic Form* obtains from translation invariance, positive because it is a sum of squares. The Hamiltonian of the field and the energy of the field are the same functional, and that is not a coincidence of the conventions but the content of the Legendre transform for a Lagrangian with no explicit time dependence.
 
-
 ### The Hamiltonian Field Equations
 
 Hamilton's equations for the field are the pair
@@ -83,7 +82,7 @@ $$
 so that the canonical brackets are the distributional relations
 
 $$
-\{\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=\delta^3(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
+\boxed{\ \{\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=\delta^3(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\ },
 \qquad
 \{\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\phi(\vec y)\}=\{\pi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=0,
 $$
@@ -95,7 +94,7 @@ with the conjugates carrying the mirrored signs. The bracket is antisymmetric an
 The energy density is conserved along the motion by a local conservation law. Differentiating $\mathcal{H}$ in time and using the equation of motion gives
 
 $$
-\partial/\partial t'\mathcal{H}+\nabla\cdot\vec S=0,
+\boxed{\ \partial/\partial t'\mathcal{H}+\nabla\cdot\vec S=0\ },
 \qquad
 \vec S=-(\left(\partial\phi/\partial t'\right)^{\,*}\nabla\phi+\partial\phi/\partial t'\,\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*});
 $$
@@ -107,7 +106,6 @@ P_\nu=\frac{1}{c}\int T_{t\nu}\,d^3x
 $$
 
 time-independent, the statement that the flux of the companion stress–energy article is a conserved current.
-
 
 ## The Biquaternionic Transcription
 
@@ -126,11 +124,10 @@ the pair $(\tilde\Phi,\tilde\Pi)$ is the field-theoretic analogue of the pair $(
 The density is the sum of two Hermitian forms. With $\tilde\nabla\tilde\Phi$ the biquaternionic gradient of the field — its four coefficients are the four partial derivatives, $(\partial/\partial Q_t\,\phi,\partial/\partial Q_x\phi,\partial/\partial Q_y\phi,\partial/\partial Q_z\phi)$ —
 
 $$
-\boxed{\;\mathcal{H}=\mathrm{Sc}\!\left[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)\right]+\mu^2\,\mathrm{Sc}\!\left[\tilde\Phi^{*}\tilde\Phi\right].\;}
+\boxed{\;\mathcal{H}=\mathrm{Sc}\!\left[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)\right]+\mu^2\,\mathrm{Sc}\!\left[\tilde\Phi^{*}\tilde\Phi\right]\;}.
 $$
 
 The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]=c^{-2}|\partial\phi/\partial t'|^2+|\nabla\phi|^2$ is where the $ict'$ convention does its quiet work: the time coefficient of the gradient is $\partial/\partial Q_t\,\phi=-ic^{-1}\partial\phi/\partial t'$, so $|\partial/\partial Q_t\,\phi|^2=c^{-2}|\partial\phi/\partial t'|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have signature $(3,1)$ and the d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta$; a reader who computes $|\partial/\partial Q_t\,\phi|^2$ as $-\frac{1}{c^2}|\partial\phi/\partial t'|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde Q_1^{*}\tilde Q_1$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{M}_+$ — and it is *this* form, not the holomorphic norm $\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ of signature $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
-
 
 ### The Energy–Momentum Biquaternion
 
@@ -172,7 +169,6 @@ $$
 $$
 
 the sum of the two sectors' kinetic, gradient and mass terms. Three features of this split are the ones the informational articles use. First, **both sectors contribute to the energy with the same sign**, so the energy is positive whichever sector carries the field. Second, the split is not the charge: the energy is the sum of the sector contributions, positive definite, whereas the charge is the pairing of the two sectors' fields that is antisymmetric in them, $j^0\propto\mathrm{Im}(\phi^*\partial\phi/\partial t')\propto\phi_1\partial\phi_{2}/\partial t'-\phi_2\partial\phi_{1}/\partial t'$, and its sign is not fixed. The same two readings appear in the phase-space biquaternion of the companion symplectic article as the real and imaginary parts of the Hermitian pairing: the real part is the metric and is additive over the sectors, the imaginary part is the symplectic form and is antisymmetric. Third, **the split is a split of the kinetic and gradient terms as well as the mass term**, so the sector exchange that the oscillator article realises as a quarter-period advance is, in the field, an exchange of the two real scalars at every point.
-
 
 ## Covariant Hamiltonian Field Theory
 

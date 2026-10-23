@@ -22,32 +22,6 @@ nilpotent family, with the index three instead of two (*Nilpotents of the Genera
 Sesqualgebra*). The article states the coincidence, computes the annihilators, and separates the
 part of the classification that survives from the part that does not.
 
-**Placement.** The article is the third entry of the *Common Theory* section of the block, after
-*Norm and Invertibility in the General Plain Sesqualgebra* and before the square roots of the
-central values. It uses the product and the class of the introduction, the algebraic norm and the
-invertibility criterion of *Norm and Invertibility in the General Plain Sesqualgebra*, and the
-common zero-divisor set of the four general products.
-
-**Boundaries.** The product, its class and its placement are *Introduction to the General Plain
-Sesqualgebra of Biquaternions*; the relative definitions of the zero divisor, the annihilator and
-the regular element are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the common set
-of the four general products and the theorem that the four coincide are **Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**, and the same set read on the plain product with its two families and their geometry is *Zero
-Divisors of the General Plain Algebra*, *Idempotents of the General Plain Algebra* and *Nilpotents
-of the General Plain Algebra*. The algebraic norm and the invertibility criterion are *Norm and
-Invertibility in the General Plain Sesqualgebra*; the square-zero set of the block is *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$
-with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. A general element is
-$\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and
-$Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the
-coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and
-the Hermitian conjugation is
-$\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. Juxtaposition is
-the **plain** product and $\star$ the block, $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The
-**central square** is $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^{2}+(\vec Q,\vec Q)$ with
-$(\vec Q,\vec Q)=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and its vanishing set, the origin removed, is the
-common zero-divisor cone.
-
 **The results.** A nonzero biquaternion is a zero divisor of the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ exactly when its central square vanishes, $C(\tilde Q_1)=Q_{1t}^{2}+(\vec Q_1,\vec Q_1)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_{1t}=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_{1t}\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$ are idempotents of the block.
 
 ## The Criterion
@@ -69,7 +43,7 @@ Algebra*: $\tilde Q$ is a zero divisor of the plain product exactly when $C(\til
 **Corollary (the set).** The zero-divisor set of the block is
 
 $$
-\mathcal{Z}_\star=\{\tilde Q\neq0: C(\tilde Q)=0\}=\{\tilde Q\neq0: Q_t^{2}+(\vec Q,\vec Q)=0\},
+\boxed{\;\mathcal{Z}_\star=\{\tilde Q\neq0: C(\tilde Q)=0\}=\{\tilde Q\neq0: Q_t^{2}+(\vec Q,\vec Q)=0\}\;},
 $$
 
 the nonzero elements of the complex cone $\mathcal{C}$, of complex dimension three; every zero
@@ -113,7 +87,7 @@ pure zero divisor, $\tilde Q=\vec Q$ with $(\vec Q,\vec Q)=0$. Then its plain sq
 vanishes, but its block-square does not:
 
 $$
-\tilde Q^{2}=0,\qquad \tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{*}\bigr)e_t+\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr)\neq0 .
+\boxed{\;\tilde Q^{2}=0,\qquad \tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{*}\bigr)e_t+\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr)\neq0\;}.
 $$
 
 *Proof.* The plain square vanishes because $\tilde Q^{2}=(\vec Q,\vec Q)e_t$ by the product

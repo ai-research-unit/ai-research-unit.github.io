@@ -193,9 +193,9 @@ J_k=\vec e_k,\qquad K_k=i \vec e_k \qquad (k=1,2,3),
 $$
 so that $J_k$ generate rotations and $K_k$ generate boosts. With $\varepsilon_{jkl}$ the Levi-Civita symbol ($\vec e_x\vec e_y=\vec e_z$), the commutation relations, computed by direct expansion in the quaternion basis, are
 $$
-[J_j,J_k]=2\varepsilon_{jkl}J_l,\qquad
+\boxed{\;[J_j,J_k]=2\varepsilon_{jkl}J_l,\qquad
 [J_j,K_k]=2\varepsilon_{jkl}K_l,\qquad
-[K_j,K_k]=-2\varepsilon_{jkl}J_l .
+[K_j,K_k]=-2\varepsilon_{jkl}J_l\;}.
 $$
 The first two say that the rotations form a subalgebra $\mathrm{SU}(2)\cong\mathrm{SO}(3)$ (the compact part) and that the boosts transform as a vector under it. The third is the infinitesimal statement that **the boosts do not close**: the bracket of two boost generators is a rotation generator. This is the Lie-algebraic origin of the Thomas–Wigner rotation and of the non-closure of the preceding section.
 
@@ -230,9 +230,9 @@ $$
 $$
 Thus the complexified algebra is a direct sum of two commuting three-dimensional complex Lie algebras, each isomorphic to the complexification of $\mathrm{SU}(2)$:
 $$
-\mathrm{G}\otimes_{\mathbb{R}}\mathbb{C}
+\boxed{\;\mathrm{G}\otimes_{\mathbb{R}}\mathbb{C}
 \;\cong\;\mathrm{SL}(2,\mathbb{C})\oplus\mathrm{SL}(2,\mathbb{C})
-\;\cong\;\mathrm{SU}(2)_{\mathbb{C}}\oplus\mathrm{SU}(2)_{\mathbb{C}} .
+\;\cong\;\mathrm{SU}(2)_{\mathbb{C}}\oplus\mathrm{SU}(2)_{\mathbb{C}}\;}.
 $$
 The two summands are the **self-dual** and **anti-self-dual** halves of the complexified Lorentz algebra. The rotation generators are the diagonal combination,
 $$
@@ -350,9 +350,9 @@ The map $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ has kernel $\{\pm e_t\}$. Th
 
 Because $\mathrm{Ad}$ is two-to-one and surjective, the groups have the same Lie algebra but different global structure:
 $$
-SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
+\boxed{\;SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
-\pi_x\bigl(SO^+(1,3)\bigr)\cong\mathbb{Z}/2\mathbb{Z},
+\pi_x\bigl(SO^+(1,3)\bigr)\cong\mathbb{Z}/2\mathbb{Z}\;},
 $$
 while $SL(2,\mathbb{C})$ is simply connected. The Lorentz group is doubly connected, and $SL(2,\mathbb{C})$ is its universal cover.
 

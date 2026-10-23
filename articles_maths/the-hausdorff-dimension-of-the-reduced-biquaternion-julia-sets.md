@@ -15,14 +15,14 @@ The result is that the dimension is exact for every hyperbolic parameter of the 
 
 The article owns the product formula for the dimension, the dimension of the filled set and of the Julia set for the hyperbolic parameters, the parameter zero, the hyperbolic, the mixed and the disconnected cases, and the dimension of the singular part. The fractal and its product structure are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the global decomposition is *The Idempotent Decomposition and the Split Fractal*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*; the systems of contractions and their similarity dimension are *The Reduced Biquaternion Iterated Function Systems*; the complex dimension theory is cited from *Hausdorff Dimension of Complex Quadratic Julia Sets*. The companion is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
-**Conventions.** The complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$, Julia set $J_{c}$ and Mandelbrot set $\mathcal{M}$. A parameter is **hyperbolic** when it lies outside the boundary $\partial\mathcal{M}$, that is in the interior of $\mathcal{M}$ — where the map has an attracting cycle and the Julia set is a quasicircle or a Cantor set of circles — or in the exterior of $\mathcal{M}$ — where the Julia set is a Cantor set and the map is expanding. For a hyperbolic parameter the Hausdorff dimension and the upper box dimension of $K_{c}$ and of $J_{c}$ coincide, and the **hyperbolic dimension** of $J_{c}$, for $c$ in the interior of $\mathcal{M}$, is that common value, which lies in the open interval $(1,2)$; a parameter in the exterior of $\mathcal{M}$ has $K_{c}=J_{c}$, a Cantor set of dimension in $(0,2)$.
-
 ## The Product Formula
 
 **Theorem (the product formula).** For a parameter $C$ whose two coordinates are hyperbolic, that is whose two coordinates lie outside the boundary of $\mathcal{M}$,
 
 $$
-\dim_{H}\mathcal{K}_{C}=\dim_{H}K_{c_{1}}+\dim_{H}K_{c_{2}},
+\boxed{\;
+\dim_{H}\mathcal{K}_{C}=\dim_{H}K_{c_{1}}+\dim_{H}K_{c_{2}}
+\;},
 $$
 
 and the identity holds because for a hyperbolic parameter the Hausdorff and the upper box dimensions of the complex filled set coincide, so that the product theorem for Hausdorff dimension applies with equality.
@@ -34,7 +34,9 @@ and the identity holds because for a hyperbolic parameter the Hausdorff and the 
 **Corollary (the dimension of the Julia set).** With $e_{j}=\dim_{H}K_{c_{j}}$ and $f_{j}=\dim_{H}J_{c_{j}}$,
 
 $$
-\dim_{H}\mathcal{J}_{C}=\max\bigl(f_{1}+e_{2},\;e_{1}+f_{2}\bigr),
+\boxed{\;
+\dim_{H}\mathcal{J}_{C}=\max\bigl(f_{1}+e_{2},\;e_{1}+f_{2}\bigr)
+\;},
 $$
 
 because the Julia set is the union of the two products and the dimension of a finite union is the maximum of the dimensions.
@@ -46,7 +48,9 @@ because the Julia set is the union of the two products and the dimension of a fi
 **Theorem (the dimension at the origin).** At $C=0$ the two complex filled Julia sets are the closed unit discs, so
 
 $$
-\dim_{H}\mathcal{K}_{0}=4,\qquad \dim_{H}\mathcal{J}_{0}=3,
+\boxed{\;
+\dim_{H}\mathcal{K}_{0}=4,\qquad \dim_{H}\mathcal{J}_{0}=3
+\;},
 $$
 
 and the singular part of the Julia set, its intersection with the zero-divisor cone, has dimension one.

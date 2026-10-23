@@ -18,15 +18,13 @@ This article asks what the area law is in the biquaternion framework. The framew
 
 The article proceeds as follows. The area law is stated in its field-theoretic form, with the gapped and gapless cases distinguished and the coefficient discussed. The locality mechanism is explained as a bond-cutting bound, with the finite-depth circuit and matrix-product-state versions. The discrete area law is then realized and verified in the biquaternion chain, with the dimer state and a table of region entropies. The field statement, its holographic and black-hole cases, are recalled. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$; on the tensor power the trace is the product trace. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, the entanglement entropy and replica moments those of *Entanglement Entropy and the Replica Trick in Biquaternionic Form*, and the one-particle module that of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
-
 ## The Area Law
 
 ### Statement
 
 Let $A$ be a spatial region of a $d$-dimensional local quantum system, with boundary $\partial A$ and complement $\bar A$. For the ground state of a local Hamiltonian with a spectral gap, the entanglement entropy of $A$ takes the form
 $$
-S_A=\kappa\,\frac{|\partial A|}{\epsilon^{\,d-1}}+c_{d-1}\,\frac{|\partial A|}{\epsilon^{\,d-2}}+\cdots+\text{(universal terms)},
+\boxed{\;S_A=\kappa\,\frac{|\partial A|}{\epsilon^{\,d-1}}+c_{d-1}\,\frac{|\partial A|}{\epsilon^{\,d-2}}+\cdots+\text{(universal terms)}\;},
 $$
 where $\epsilon$ is the short-distance cutoff and the leading term is proportional to the boundary area. The entropy is therefore **not** proportional to the volume of $A$: the degrees of freedom inside $A$ are not independently entangled, and the entanglement is carried by the boundary. The terms with powers of $\epsilon$ are non-universal; the finite terms are universal and are the ones with field-theoretic meaning.
 
@@ -82,7 +80,7 @@ $$
 $$
 and let $A$ be a subset of the sites, with reduced state $\rho_A=\mathrm{Tr}_{\bar A}\,\rho$ obtained by the partial trace of the strong-subadditivity companion article. The one-particle module is $\mathbb{C}^2$, so each site carries a qubit and each bond can carry at most $\log2$ of entanglement. The discrete area law is the bound
 $$
-S_A\ \le\ |\partial A|\,\log2,
+\boxed{\;S_A\ \le\ |\partial A|\,\log2\;},
 $$
 where $|\partial A|$ is the number of bonds between $A$ and its complement, together with the structure statement that states built by local operations saturate or approach it. A state whose entropy is proportional to the number of sites is the discrete volume law, and the contrast between the two is the content of the law.
 
@@ -135,9 +133,9 @@ $$
 $$
 a maximally mixed state of $2^c$ levels, because each cut dimer leaves a maximally mixed qubit behind and the dimers are uncorrelated. The replica moments are therefore
 $$
-Z_n=2^{c}\cdot 2^{-cn}=2^{\,c(1-n)},
+\boxed{\;Z_n=2^{c}\cdot 2^{-cn}=2^{\,c(1-n)},
 \qquad
-S_n=\frac{1}{1-n}\log 2^{\,c(1-n)}=c\log2,
+S_n=\frac{1}{1-n}\log 2^{\,c(1-n)}=c\log2\;},
 $$
 so **every** Rényi entropy equals the number of cuts times $\log2$: the entanglement spectrum is completely flat, and the area law holds at all Rényi orders, not merely at $n\to1$. The moments were checked at $c=1$ and $c=2$ for $n=2,3,5$: $Z_n=2^{c(1-n)}$ and $S_n=c\log2$ in every case. The exponential form $Z_n=2^{\,|\partial A|(1-n)}$, valid where the boundary bonds are the cut dimers and $c=|\partial A|$, is the discrete image of the field-theoretic statement that the replica partition function's leading behaviour is governed by the boundary, since it is the boundary that fixes the exponent.
 

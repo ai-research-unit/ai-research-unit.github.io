@@ -49,7 +49,7 @@ $$
 **Corollary (the covariant expansion).** Every form $\mathfrak{b}_M$ is a unique combination of the covariants,
 
 $$
-M=\sum_{\mu\in\{t,x,y,z\}}c_{\mu}\,\mathsf{M}_2(e_{\mu}),\qquad c_{\mu}=\tfrac12\mathrm{Tr}\bigl(\mathsf{M}_2(e_{\mu})^{\dagger}M\bigr),
+\boxed{\; M=\sum_{\mu\in\{t,x,y,z\}}c_{\mu}\,\mathsf{M}_2(e_{\mu}),\qquad c_{\mu}=\tfrac12\mathrm{Tr}\bigl(\mathsf{M}_2(e_{\mu})^{\dagger}M\bigr) \;},
 $$
 
 because the blades are **orthogonal for the trace form** of the algebra, $\mathrm{Tr}(e_{\mu}^{\dagger}e_{\nu})=2\delta_{\mu\nu}$. The coefficients $c_{\mu}$ are the **Fierz coefficients** of the form, and the expansion is the Fierz rearrangement: a change of basis between the four blades and the four matrix units.
@@ -63,7 +63,7 @@ because the blades are **orthogonal for the trace form** of the algebra, $\mathr
 **Theorem (the dagger classification).** The dagger of $\mathbb{B}$ is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ whose vectors are the $i\vec e_k$; a blade of degree $d$ in that structure satisfies $e_A^{\dagger}=(-1)^{d(d-1)/2}e_A$. In the biquaternion algebra $e_t$ is the identity and the three $\vec e_k$ are, up to sign, the bivectors of that structure, $\vec e_z=-\gamma_1\gamma_2$ with $\gamma_k=i\vec e_k$, so
 
 $$
-e_t^{\dagger}=e_t,\qquad \vec e_k^{\dagger}=-\vec e_k ,\qquad \text{the covariant } \mathfrak{b}_{\mu} \text{ is Hermitian} \iff \mu=t .
+\boxed{\; e_t^{\dagger}=e_t,\qquad \vec e_k^{\dagger}=-\vec e_k ,\qquad \text{the covariant } \mathfrak{b}_{\mu} \text{ is Hermitian} \iff \mu=t \;}.
 $$
 
 Hence the four covariants split as **one Hermitian and three skew-Hermitian**:
@@ -79,7 +79,7 @@ $$
 **Theorem (the Hermitian forms are the Hermitian sector).** The space of Hermitian forms on the spinor module is the real four-dimensional space
 
 $$
-\mathrm{Bil}_{\mathrm{herm}}(S)=\mathbb{R}\{\mathfrak{b}_0,\,ib_1,\,ib_2,\,ib_3\}\cong\mathbb{M}_+ = H_2(\mathbb{C}),
+\boxed{\; \mathrm{Bil}_{\mathrm{herm}}(S)=\mathbb{R}\{\mathfrak{b}_0,\,ib_1,\,ib_2,\,ib_3\}\cong\mathbb{M}_+ = H_2(\mathbb{C}) \;},
 $$
 
 with the covariant coefficients of a Hermitian form real in the scalar slot and **purely imaginary** in the three skew slots; under the matrix model the Hermitian forms are the Hermitian matrices, and the interval form and the cone of $\mathbb{M}_+$ are those of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.

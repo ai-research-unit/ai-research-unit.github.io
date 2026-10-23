@@ -19,7 +19,6 @@ This article writes the free particle and the inertial-frame structure in that l
 
 The conventions are those of the read list. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_j \vec e_k = \epsilon_{jkl}\vec e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ consists of $i q'_t e_t + \vec q$ with $q'_t \in \mathbb{R}$ and $\vec q$ a real pure quaternion, and the Hermitian subspace $\mathbb{M}_+$ of $h_t e_t + i\vec h$ with $h_t, \vec h$ real. They are complementary, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, and exchanged by the scalar imaginary, $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and the trace satisfies $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ for $\tilde H_1,\tilde H_2 \in \mathbb{M}_+$. The symbol $c$ denotes the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light; in vacuum $c = c_0$. The symbol $\vec v$ is reserved for particle velocities and $\vec V$ for frame velocities.
 
-
 ## The Worldline in the Material Sector
 
 ### The Position
@@ -57,7 +56,7 @@ $$
 again an element of the material sector: imaginary scalar part $i\gamma c$, real vector part $\gamma\vec v$. Its biquaternion norm is fixed,
 
 $$
-\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2 ,
+\boxed{\;\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2\;},
 $$
 
 which is the biquaternion form of the relativistic normalization $v^\mu v_\mu = -c^2$. The normalization is a **constraint**, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{M}_-$.
@@ -71,7 +70,7 @@ $$
 and it too lies in $\mathbb{M}_-$. Its biquaternion norm is the mass-shell relation,
 
 $$
-\tilde{P}\tilde{P}^{\natural} = m^2\,\tilde{V}\tilde{V}^{\natural} = -m^2 c^2 .
+\boxed{\;\tilde{P}\tilde{P}^{\natural} = m^2\,\tilde{V}\tilde{V}^{\natural} = -m^2 c^2\;}.
 $$
 
 The four-vectors of relativistic kinematics, and the constraints they satisfy, are those of the companion article *Relativistic Mechanics in Biquaternionic Form*; they are recalled here only so that the free particle can be located within them.
@@ -197,7 +196,7 @@ $$
 Reading off the components,
 
 $$
-ic\,t'_2 = ic\,t' + O\!\left(\frac{V^2}{c^2}\right), \qquad (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec V\,t' + O\!\left(\frac{V^2}{c^2}\right) .
+\boxed{\;ic\,t'_2 = ic\,t' + O\!\left(\frac{V^2}{c^2}\right), \qquad (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec V\,t' + O\!\left(\frac{V^2}{c^2}\right)\;}.
 $$
 
 This is the **Galilean transformation**: the time coordinate is untouched and the position is shifted by $-\vec Vt'$. The exact boost transformation, of which this is the leading term, is the standard one,
@@ -215,7 +214,7 @@ The striking feature of the result is not the relation itself but what it is not
 A rotor conjugation preserves the biquaternion norm, $\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$. The Galilean shear does not:
 
 $$
-\langle\tilde{R}_2\rangle_{\natural} = (ic\,t')^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Vt'|^2 = \langle\tilde{R}\rangle_{\natural} - 2t'\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + {t'}^2\vec V^2 .
+\boxed{\;\langle\tilde{R}_2\rangle_{\natural} = (ic\,t')^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Vt'|^2 = \langle\tilde{R}\rangle_{\natural} - 2t'\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + {t'}^2\vec V^2\;}.
 $$
 
 The change $2t'\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - {t'}^2\vec V^2$ is nonzero for a generic worldline, so no unit-norm biquaternion implements the map. Equivalently, the shear leaves the scalar direction $ie_t$ of the material sector untouched while changing the vector directions, which is exactly what a rotation in a Minkowski plane does not do. The Galilean boost is a **shear of the material sector along its scalar direction**, and the scalar direction is the one the shear fixes.

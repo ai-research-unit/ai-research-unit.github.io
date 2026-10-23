@@ -71,7 +71,7 @@ Four consequences follow from the identification, and they are the article's alg
 **3. The temporal coefficient is not itself invariant; the norm is.** The Lorentz action preserves the biquaternion norm,
 
 $$
-\bigl\langle \tilde U\tilde Q_3\tilde U^{*} \bigr\rangle_{\natural} = \langle \tilde Q_3\rangle_{\natural} ,
+\boxed{\;\bigl\langle \tilde U\tilde Q_3\tilde U^{*} \bigr\rangle_{\natural} = \langle \tilde Q_3\rangle_{\natural}\;},
 $$
 
 so the invariant the action carries is the norm $\sum_\mu Q_\mu^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ by mixing it with the spatial ones, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
@@ -101,7 +101,7 @@ Two features of the placement carry the physical reading.
 **The imaginary unit on the time coordinate produces the signature.** The norm of the material element is
 
 $$
-\langle\tilde Q_-\rangle_{\natural} = (ict')^2 + x^2 + y^2 + z^2 = -c^2{t'}^2 + x^2 + y^2 + z^2 ,
+\boxed{\;\langle\tilde Q_-\rangle_{\natural} = (ict')^2 + x^2 + y^2 + z^2 = -c^2{t'}^2 + x^2 + y^2 + z^2\;},
 $$
 
 the Minkowski interval. The minus sign is not inserted into a metric: it is $i^2$, the square of the coefficient the time direction carries. In the framework the signature is algebraic, and it is the imaginary character of the temporal coefficient that carries it. This is the content of the $ict'$ convention that *Why Complexify Spacetime?* records: the geometry says *what* the interval is, and the placement of the $i$ says *why*.
@@ -143,7 +143,7 @@ Two norms of the informational element are read together, and they place the inf
 The first is the biquaternion norm, which on $\mathbb{M}_+$ is
 
 $$
-\langle\tilde Q_+\rangle_{\natural} = (ct)^2 - {x'}^2 - {y'}^2 - {z'}^2 ,
+\boxed{\;\langle\tilde Q_+\rangle_{\natural} = (ct)^2 - {x'}^2 - {y'}^2 - {z'}^2\;},
 $$
 
 of signature $(1,3)$: the temporal direction is the single positive one and the three spatial directions are the negative ones. This is the reverse of the material sector, where the temporal direction is the negative one; the reversal is the reversal of who carries the $i$.

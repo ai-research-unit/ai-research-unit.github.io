@@ -25,13 +25,6 @@ Lie structure is *The Lie Algebra of the Antisymmetric Plain Algebra* and the fo
 of the Antisymmetric Plain Algebra*, both below this article in this category.
 counterpart is *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* of the
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the centre is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$, the vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\{\vec q\}=\mathbb{R}^3$, and $C_{\vec q_1}$ is the cross-product matrix
-$C_{\vec q_1}\vec q_2=\vec q_1\times\vec q_2$. The bracket of two endomorphisms is
-$[A,B]=AB-BA$; a **derivation** of the block is an endomorphism $D$ with
-$D(\tilde q_1\times\tilde q_2)=D\tilde q_1\times\tilde q_2+\tilde q_1\times D\tilde q_2$.
-
 ## The Adjoint Operators
 
 **Definition.** The **adjoint operator** of $\tilde q_1$ is the left multiplication
@@ -45,8 +38,8 @@ $$
 **Proposition.** In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the adjoint is the block matrix
 
 $$
-\operatorname{ad}_{\tilde q}=\operatorname{diag}(0,C_{\vec q})
-\quad\text{on}\quad \mathbb{H}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H}),
+\boxed{\;\operatorname{ad}_{\tilde q}=\operatorname{diag}(0,C_{\vec q})
+\quad\text{on}\quad \mathbb{H}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H})\;},
 $$
 
 with the invariants
@@ -69,8 +62,8 @@ polynomial $t(t^2+|\vec q|^2)$, and from the vanishing scalar block.
 **Proposition.** For a noncentral element the kernel and the image of the adjoint are
 
 $$
-\ker\operatorname{ad}_{\tilde q_1}=\mathbb{R}e_t\oplus\mathbb{R}\vec q_1,\qquad
-\operatorname{im}\operatorname{ad}_{\tilde q_1}=\vec q_1^{\perp}\cap\mathrm{Vect}(\mathbb{H}),
+\boxed{\;\ker\operatorname{ad}_{\tilde q_1}=\mathbb{R}e_t\oplus\mathbb{R}\vec q_1,\qquad
+\operatorname{im}\operatorname{ad}_{\tilde q_1}=\vec q_1^{\perp}\cap\mathrm{Vect}(\mathbb{H})\;},
 $$
 
 the kernel being the two-dimensional plane spanned by the centre and the element, and the image the
@@ -88,8 +81,8 @@ plane orthogonal to $\vec q_1$ when $\vec q_1\neq0$.
 $\operatorname{ad}_{\tilde q_1}$ is a derivation of the block,
 
 $$
-\operatorname{ad}_{\tilde q_1}(\tilde q_2\times\tilde q_3)
-=\operatorname{ad}_{\tilde q_1}\tilde q_2\times\tilde q_3+\tilde q_2\times\operatorname{ad}_{\tilde q_1}\tilde q_3 ,
+\boxed{\;\operatorname{ad}_{\tilde q_1}(\tilde q_2\times\tilde q_3)
+=\operatorname{ad}_{\tilde q_1}\tilde q_2\times\tilde q_3+\tilde q_2\times\operatorname{ad}_{\tilde q_1}\tilde q_3\;},
 $$
 
 and the identity is exactly the Jacobi identity of the block; equivalently the adjoint representation is
@@ -117,7 +110,7 @@ Algebra*, below this article in this category).
 **Theorem (the derivations).** The derivation algebra of the block is
 
 $$
-\operatorname{Der}(\mathfrak{g})=\operatorname{ad}(\mathfrak{g})\oplus\mathbb{R}D_0,
+\boxed{\;\operatorname{Der}(\mathfrak{g})=\operatorname{ad}(\mathfrak{g})\oplus\mathbb{R}D_0\;},
 $$
 
 of real dimension four, where $\operatorname{ad}(\mathfrak{g})$ is the three-dimensional algebra of
@@ -150,7 +143,7 @@ inner ones are the adjoints and the scaling of the centre is the one outer direc
 **Theorem (the automorphisms).** The automorphism group of the block is
 
 $$
-\operatorname{Aut}(\mathfrak{g})=\mathbb{R}^{\times}\times\operatorname{SO}(3),
+\boxed{\;\operatorname{Aut}(\mathfrak{g})=\mathbb{R}^{\times}\times\operatorname{SO}(3)\;},
 $$
 
 of real dimension four: an automorphism fixes the centre setwise, acts on it by a nonzero scalar, and

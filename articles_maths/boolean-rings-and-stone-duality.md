@@ -80,8 +80,7 @@ The space $\operatorname{Spec}(R)$ with this topology is the **Stone space** of 
 
 **Theorem (Stone representation).** For every Boolean ring $R$ the map
 
-$$
-\alpha \longmapsto U_\alpha
+$$ \boxed{\;\alpha \longmapsto U_\alpha\;}
 $$
 
 is an isomorphism of Boolean rings from $R$ onto the ring of clopen subsets of $\operatorname{Spec}(R)$. Equivalently, every Boolean algebra is isomorphic to the algebra of clopen sets of its Stone space.
@@ -98,8 +97,7 @@ is an isomorphism of Boolean rings from $R$ onto the ring of clopen subsets of $
 
 **Theorem (Stone duality).** The functors
 
-$$
-\mathbf{Bool}^{\mathrm{opp}} \longrightarrow \mathbf{Stone}, \qquad B \mapsto S(B), \qquad \mathbf{Stone}^{\mathrm{opp}} \longrightarrow \mathbf{Bool}, \qquad X \mapsto \operatorname{Clop}(X)
+$$ \boxed{\;\mathbf{Bool}^{\mathrm{opp}} \longrightarrow \mathbf{Stone}, \qquad B \mapsto S(B), \qquad \mathbf{Stone}^{\mathrm{opp}} \longrightarrow \mathbf{Bool}, \qquad X \mapsto \operatorname{Clop}(X)\;}
 $$
 
 are inverse equivalences of categories. In particular, for Boolean algebras $B, C$ the continuous maps $S(B) \to S(C)$ correspond bijectively to the homomorphisms $C \to B$.

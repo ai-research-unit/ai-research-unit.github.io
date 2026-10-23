@@ -12,8 +12,6 @@ a cone whose boundary is the Krein null set; on the **operators** there is the $
 
 The general theory is *Krein Algebras*, *J-Self-Adjoint and J-Unitary Operators* and *Self-Adjoint Elements and the Positive Cone*; the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the $J$-operators are *J-Self-Adjoint and J-Unitary Operators*; and the definite cone, the Cartan involution and the polar decomposition that this article reads indefinitely are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
-**Conventions.** As throughout: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_\mu Q_\mu^{*}Q'_\mu$, $J={}^{\natural}$, and the orthogonal decomposition is the fundamental one, $\tilde{Q}=c+v$ with $c\in\mathbb{C}_{\mathbb{B}}$, $v\in\mathbb{V}_{\mathbb{B}}$, of *The Fundamental Symmetry of the Biquaternion Algebra*.
-
 ## The Krein Cone of the Algebra
 
 **Theorem (the cone in the fundamental decomposition).** Write $\tilde{Q}=c+v$ with $c\in\mathbb{C}_{\mathbb{B}}$, $v\in\mathbb{V}_{\mathbb{B}}$. Then

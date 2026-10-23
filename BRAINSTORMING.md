@@ -52,6 +52,14 @@ Wick 2
 
 
 
+
+use \boxed{} and \fbox{} to highlight results , but without any background colors
+
+
+
+
+
+
 The Spinor Module and Its Two Structures
 
 problem, differentie
@@ -8405,6 +8413,124 @@ Can you improve the structural consistency of these 3 articles ? The concepts sh
 
 
 
+
+
+xxxxxxxxxxxx
+
+
+Read the convention and these 3 articles :
+
+Exponential Polar Decomposition of Split-Complex Numbers
+
+Exponential Polar Decomposition of Reduced Biquaternions
+
+Exponential Polar Decomposition of Biquaternions
+
+Make 3 new articles just after them :
+
+Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers
+
+Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions
+
+Worked Examples of Exponential Polar Decomposition of Biquaternions
+
+In Worked Examples of Exponential Polar Decomposition of Biquaternions, use these 8 successive DETAILED cases, one after another :
+
+
+1. e_t
+
+2. e_x
+
+3. (1/√2) e_t + (1/√2) e_x
+
+4. √2 e_t + i e_x
+
+5. (1 - i/√2) e_t + (1 + i/√2) e_x
+
+6. e_t + e_y + (i/√2) e_x + (i/√2) e_z
+
+7. (1 - i/2) e_t + ((1+i)/√2) e_x + (1/√2) e_y + (i/2) e_z
+
+8. (1+i) e_t + e_x + i e_y
+
+
+and purge the existing article from the worked example you put here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read the convention and these 3 original articles :
+
+Exponential Polar Decomposition of Split-Complex Numbers
+
+Exponential Polar Decomposition of Reduced Biquaternions
+
+Exponential Polar Decomposition of Biquaternions
+
+
+Make 3 new articles just after these articles :
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions
+
+
+
+And purge the 3 original articles of things related to idempotents, Eigenvalue, ...
+
+The 3 new articles should be conceptually and structurally consistent with the related articles of the categories, as well as consistent with the 2 other new articles. The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical. They should rely as much as possible on the results from the Eigenvalue Decomposition, the Elementary Functions and the Exponential Polar Decomposition of their respective category, without duplicating definition and proofs that are already established in these articles.
+
+
+
+
+
+
+
+
+
+
+
+In these 3 articles :
+
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions
+
+Do not use N, B or P, they are only adding confusion.
+
+Use the developed version, using brackets if appropriate.
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 Read the convention and these 3 articles :
 
 The Quaternion Pairing of the Polar Decomposition of Biquaternions
@@ -8414,6 +8540,15 @@ The Hamilton Root Pairing of the Polar Decomposition of Biquaternions
 The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions
 
 Can you improve the structural and conceptual quality of these 3 articles ? The articles should highlight the results in tables, making the presentation clear and logical. They should rely as much as possible on the results from these articles : Eigenvalue Decomposition of a Biquaternion, Biquaternion Elementary Functions, Exponential Polar Decomposition of Biquaternions, without duplicating definition and proofs that are already established in these articles.
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8452,6 +8587,877 @@ Can you read the physics conventions, analyze the physics corpus, and modify /ho
 
 
 
+
+
+
+
+
+
+
+
+I think you could rename the 3 articles : 
+
+Eigenbasis of a Split-Complex Number
+
+Eigenbasis a Reduced Biquaternion
+
+Eigenbasis a Biquaternion
+
+
+and make 3 other articles with the matrix representations : 
+
+
+Eigenbasis of a Split-Complex Number in Matrix Elements Representations
+
+Eigenbasis a Reduced Biquaternion in Matrix Elements Representations
+
+Eigenbasis a Biquaternion in Matrix Elements Representations
+
+and put the developments about matrices in theses articles
+
+for the development, use the 2x2 matrices, and make a section about base changes
+
+at the end of the articles, make a section about 4x4 matric elements representations, at least under the biquaternion framework (read convention and other articles about matrix representations)
+
+
+
+
+
+
+Make 3 articles after the articles about Eigenbasis :
+
+Worked examples of Eigenbasis of a Split-Complex Number
+
+Worked examples of Eigenbasis a Reduced Biquaternion
+
+Worked examples of Eigenbasis a Biquaternion
+
+
+I want the same examples than Worked Examples of 
+
+Exponential Polar Decomposition of Split-Complex Numbers
+
+Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions
+
+Worked Examples of Exponential Polar Decomposition of Biquaternions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read the convention and these 3 articles :
+
+Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number
+
+Eigenvalue Decomposition and Eigenbasis a Reduced Biquaternion
+
+Eigenvalue Decomposition and Eigenbasis a Biquaternion
+
+
+
+Read these articles :
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions
+
+
+RENAME THEM 
+
+Relations between Eigenbasis and Exponential Polar Decomposition of a Split-Complex Number
+
+Relations between Eigenbasis and Exponential Polar Decomposition of a Reduced Biquaternion
+
+Relations between Eigenbasis and Exponential Polar Decomposition of a Biquaternion
+
+
+Modify these 3 articles
+
+For example, for biquaternions, we start with a biquaternion Q, and it's Eigenbasis.
+
+Then you will explain how the Exponential Polar Decomposition behaves under this basis (with both the projectors and the matrices)
+
+
+
+HERE ARE SOME IDEAS :
+
+
+==============================================================================
+EDITORIAL PROPOSAL (revised)
+REVISION OF: Relations between Exponential Polar Decomposition and
+              Eigenvalue Decomposition of Biquaternions
+NEW SECTIONS TO INSERT: two, both AFTER §The Eigenprojections
+                        and BEFORE §The Parallel-Axis Case.
+==============================================================================
+
+
+PREAMBLE: WHAT IS ALREADY IN THE CORPUS AND WHAT IS NEW
+
+The two new sections do NOT re-derive the Peirce basis. The Peirce basis of
+a complete orthogonal pair of primitive idempotents of B is constructed in
+
+    Ideals and Peirce Decomposition of the Biquaternion Algebra,
+    §The Peirce Decomposition and §The Biquaternion Case.
+
+The idempotents themselves, their classification and the halving map from
+roots of +1 are constructed in
+
+    Square Roots of One and the Idempotents of the Biquaternion Algebra.
+
+The explicit form of the two off-diagonal Peirce elements in the STANDARD
+pair (attached to the fixed root i e_z) is given in
+
+    Ideals and Peirce Decomposition of the Biquaternion Algebra,
+    §The Off-Diagonal Elements.
+
+What the present article adds is only this:
+
+  (a) SPECIALISATION of the existing Peirce basis to the ELEMENT-DEPENDENT
+      root Xi_vec = -i Q_vec / B determined by the reference Q itself,
+      instead of the fixed root i e_z;
+
+  (b) the immediate CONSEQUENCE that in this specialised basis Q is
+      diagonal, with the diagonal form of Q and of its unit factor U
+      written down explicitly;
+
+  (c) the identification of the SPINORS with the coordinates on the two
+      minimal left ideals, and of the 1/2 in the polar word with the
+      spin-1/2 representation acting on those coordinates.
+
+Items (a), (b), (c) are the only new content. Every construction is
+quoted from the three source articles and cited at the point of use.
+
+
+==============================================================================
+NEW SECTION 1: §The Q-Adapted Peirce Basis of the Reference Element
+==============================================================================
+
+PLACEMENT: after §The Eigenprojections, before §The Parallel-Axis Case.
+
+1.1 WHAT IS QUOTED AND FROM WHERE
+
+The idempotents. Let
+
+    Q = Q_t e_t + Q_vec,    B^2 = Q_x^2 + Q_y^2 + Q_z^2 != 0,
+    Xi_vec = -i Q_vec / B,
+    Pi~_+ = (e_t + Xi_vec)/2,    Pi~_- = (e_t - Xi_vec)/2.
+
+The fact that Xi_vec^2 = e_t, that Pi~_+ and Pi~_- are primitive, orthogonal
+and complete, and that Xi_vec = Pi~_+ - Pi~_- are the statements of
+
+    Eigenvalue Decomposition of a Biquaternion, §The Eigenprojections,
+    and Square Roots of One and the Idempotents of the Biquaternion
+    Algebra, §The Two Idempotents of a Root.
+
+The Peirce decomposition. For the pair (Pi~_+, Pi~_-), define the corners
+
+    B_st = Pi~_s B Pi~_t,    s,t in {+,-}.
+
+The fact that each corner is one-dimensional over C,
+
+    B_{++} = C Pi~_+,    B_{--} = C Pi~_-,
+    B_{-+} = Pi~_- B Pi~_+  (a complex line),
+    B_{+-} = Pi~_+ B Pi~_-  (a complex line),
+
+and that B = B_{++} (+) B_{+-} (+) B_{-+} (+) B_{--} as C-vector spaces,
+is the statement of
+
+    Ideals and Peirce Decomposition of the Biquaternion Algebra,
+    §The Peirce Decomposition, §The Biquaternion Case.
+
+The off-diagonal elements. The two mixed corners are nonzero and their
+product is nonzero: for any nonzero u in B_{-+} and nonzero v in B_{+-},
+the products uv and vu lie in B_{--} = C Pi~_- and B_{++} = C Pi~_+
+respectively, with the same scalar coefficient. This is the statement of
+
+    Ideals and Peirce Decomposition of the Biquaternion Algebra,
+    §Systems of Matrix Units (the construction from an arbitrary
+    idempotent) and §The Off-Diagonal Elements (the standard pair).
+
+NONE OF THE ABOVE IS RE-PROVED HERE. The two new sections use the
+construction of the cited articles and only specialise it to the root
+Xi_vec determined by Q.
+
+1.2 THE SPECIALISATION: THE ROOT IS DETERMINED BY Q
+
+The difference from §The Peirce Decomposition of the Ideals article is
+that the root there is a free datum (classified in Square Roots of One...),
+while here it is fixed by Q:
+
+    Xi_vec = -i Q_vec / B,    B^2 = Q_x^2 + Q_y^2 + Q_z^2 != 0.
+
+So the Peirce basis constructed in the Ideals article becomes the
+Q-adapted Peirce basis by substituting this root. The construction itself
+does not change; only the choice of root changes.
+
+CONVENTION FOR THE NILPOTENTS (used in this article and in the two new
+sections that follow):
+
+    Upsilon_+ is the generator of B_{-+} = Pi~_- B Pi~_+;
+    Upsilon_- is the generator of B_{+-} = Pi~_+ B Pi~_-.
+
+The normalisation is
+
+    Upsilon_+ Upsilon_- = Pi~_-,    Upsilon_- Upsilon_+ = Pi~_+,
+    Upsilon_+^2 = Upsilon_-^2 = 0,
+
+achieved by the rescaling of the two generators described in the Ideals
+article (§Systems of Matrix Units). The residual freedom is the reciprocal
+rescaling Upsilon_+ -> mu Upsilon_+, Upsilon_- -> mu^{-1} Upsilon_-,
+mu in C^X.
+
+With this convention:
+
+    S_+ := B Pi~_+ = C Pi~_+ (+) C Upsilon_+,
+    S_- := B Pi~_- = C Pi~_- (+) C Upsilon_-.
+
+1.3 CONSEQUENCE: Q IS DIAGONAL IN THIS BASIS
+
+In the Q-adapted Peirce basis
+
+    {Pi~_+, Upsilon_-, Upsilon_+, Pi~_-}
+
+the multiplication by Q acts by
+
+    Q Pi~_+    = lambda_+ Pi~_+,
+    Q Upsilon_- = lambda_+ Upsilon_-,
+    Q Upsilon_+ = lambda_- Upsilon_+,
+    Q Pi~_-    = lambda_- Pi~_-,
+
+because Q = lambda_+ Pi~_+ + lambda_- Pi~_-, and Pi~_pm and Upsilon_pm lie in
+the corners as above. Equivalently, in the Peirce coordinates of the Ideals
+article (a_11, a_12, a_21, a_22),
+
+    a_11 = lambda_+,    a_22 = lambda_-,
+    a_12 = a_21 = 0.
+
+So the matrix of Q in the Q-adapted basis is
+
+    M_2^Q(Q) = diag(lambda_+, lambda_-).
+
+Similarly, the unit factor U = Q / (r e^{i alpha}), with r e^{i alpha} =
+sqrt(lambda_+ lambda_-) in the branch, has Peirce coordinates
+
+    U = mu Pi~_+ + mu^{-1} Pi~_-,
+    mu = lambda_+ / (r e^{i alpha}),
+    mu^{-1} = lambda_- / (r e^{i alpha}),
+
+so its matrix in the same basis is
+
+    M_2^Q(U) = diag(mu, mu^{-1}).
+
+The trace formula of §The Trace of the Unit Factor is the only relation
+between the diagonal entries (mu, mu^{-1}) and the polar parameters:
+
+    mu + mu^{-1} = 2 ( cosh(psi/2) cos(theta/2)
+                       - i (u_b . u_r) sinh(psi/2) sin(theta/2) ).
+
+No new identity is introduced here. The trace formula is already proved in
+§The Trace of the Unit Factor; the present paragraph records it as the
+relation between the diagonal form of U and the polar word.
+
+1.4 ORTHONORMAL CASE: THE POLAR FACTORS ARE ALSO DIAGONAL
+
+The Q-adapted basis is orthonormal for the Hermitian star when
+Pi~_+^* = Pi~_+, Pi~_-^* = Pi~_- and Upsilon_+^* = Upsilon_-, Upsilon_-^* = Upsilon_+.
+This holds in particular when B can be taken real and positive, and covers
+every Q with real vector part.
+
+In the orthonormal case the Cartan factors of the unit factor are diagonal
+in the Q-adapted basis:
+
+    M_2^Q(U_b) = diag(e^{psi/2}, e^{-psi/2}),
+    M_2^Q(u_r) = diag(e^{ i theta/2}, e^{-i theta/2}),
+
+with
+
+    psi/2 = ln |mu|,    theta/2 = arg mu,
+
+and the two axes are both along u = Q_vec / B, with opposite signs:
+
+    u_b = -u,    u_r = u.
+
+Consequently u_b x u_r = 0, the boost and the rotor commute, and the four
+exponents add, collapsing to a single exponential. This is the basis-level
+reading of §One Exponential of Exponential Polar Decomposition of
+Biquaternions.
+
+1.5 GENERAL CASE: THE POLAR FACTORS ARE NOT DIAGONAL
+
+When the Q-adapted basis is not orthonormal for the star (when B is
+genuinely complex), the matrices M_2^Q(U_b) and M_2^Q(u_r) are NOT diagonal.
+They are the Hermitian-positive and unitary parts of diag(mu, mu^{-1})
+with respect to the twisted adjoint on M_2(C). Their off-diagonal entries
+measure the mismatch between the Peirce basis of Q and the star. The
+diagonal of M_2^Q(U) is still (mu, mu^{-1}); only the two factors are no
+longer diagonal.
+
+This is the exact point at which the eigenbasis of Q and the polar word
+of Q diverge. The article should state it explicitly, because it is the
+only place where the reader could be misled into assuming that the
+polar factors are always diagonal in the eigenbasis.
+
+1.6 SUMMARY OF SECTION 1
+
+    Quoted from the corpus:
+        - primitive idempotents Pi~_pm of a root Xi_vec (Square Roots of
+          One..., Eigenvalue Decomposition..., §The Eigenprojections);
+        - Peirce corners B_st (Ideals..., §The Peirce Decomposition,
+          §The Biquaternion Case);
+        - existence and normalisation of Upsilon_pm (Ideals..., §Systems
+          of Matrix Units, §The Off-Diagonal Elements).
+
+    New in this article:
+        - specialisation Xi_vec = -i Q_vec / B;
+        - the resulting diagonal form M_2^Q(Q) = diag(lambda_+, lambda_-)
+          and M_2^Q(U) = diag(mu, mu^{-1});
+        - the orthonormal vs general distinction for the polar factors.
+
+
+==============================================================================
+NEW SECTION 2: §Spinors on the Two Minimal Left Ideals
+==============================================================================
+
+PLACEMENT: immediately after §The Q-Adapted Peirce Basis, before
+§The Parallel-Axis Case.
+
+2.1 WHAT IS QUOTED AND FROM WHERE
+
+The fact that S_+ = B Pi~_+ and S_- = B Pi~_- are minimal left ideals, of
+complex dimension two, and that B = S_+ (+) S_-, is the statement of
+
+    Ideals and Peirce Decomposition of the Biquaternion Algebra,
+    §The Decomposition into Minimal Left and Right Ideals.
+
+The fact that the matrix model M_2 sends Pi~_+, Upsilon_-, Upsilon_+,
+Pi~_- to the four matrix units E_11, E_12, E_21, E_22, hence S_+ to the
+first column and S_- to the second column, is the statement of
+
+    Ideals and Peirce Decomposition of the Biquaternion Algebra,
+    §The Peirce Coordinates and the Matrix Model.
+
+NONE OF THIS IS RE-PROVED HERE. The new content of this section is the
+spin reading.
+
+2.2 DEFINITION: SPINORS AS COORDINATES ON S_+ AND S_-
+
+A spinor of first chirality is an element of S_+, written in the basis
+(Pi~_+, Upsilon_+) as
+
+    xi_+ = alpha Pi~_+ + beta Upsilon_+,    alpha, beta in C.
+
+It is the pair of complex coordinates
+
+    xi_+  <->  ( alpha )
+               ( beta  ).
+
+A spinor of second chirality is an element of S_-, written in the basis
+(Pi~_-, Upsilon_-) as
+
+    xi_- = gamma Pi~_- + delta Upsilon_-,    gamma, delta in C,
+
+with coordinates (gamma, delta).
+
+The two spinor spaces are distinct copies of C^2. A general element of B
+is not a spinor: it has one Peirce component in S_+ and one in S_-, and
+each component is a spinor of the corresponding chirality.
+
+2.3 ACTION OF Q ON THE SPINORS
+
+Multiplication by Q acts on the first column by
+
+    Q xi_+  <->  M_2^Q(Q) ( alpha ) = ( lambda_+ alpha )
+                            ( beta  )   ( lambda_- beta  ),
+
+and on the second column by the same matrix:
+
+    Q xi_-  <->  M_2^Q(Q) ( gamma ) = ( lambda_+ gamma )
+                            ( delta )   ( lambda_- delta ).
+
+So Q acts by the SAME diagonal matrix diag(lambda_+, lambda_-) on both
+spinor spaces.
+
+2.4 THE SPIN-1/2 FACTORS (INTERPRETATION)
+
+The 1/2 in the exponents of the polar word is the spin-1/2 signature.
+On the spinor coordinates, the rotor
+
+    u_r = exp( (theta/2) u_r )
+
+acts by the matrix M_2^Q(u_r). In the orthonormal case, when Q is a pure
+rotor with the same axis,
+
+    M_2^Q(u_r) = diag(e^{ i theta/2}, e^{-i theta/2}),
+
+so a spatial rotation by theta acts on the spinor by theta/2: a rotation
+by 2 pi sends (alpha, beta) to (-alpha, -beta), and a rotation by 4 pi
+returns the spinor to itself. This is the double cover SU(2) -> SO(3),
+i.e. the spin-1/2 representation.
+
+The boost U_b = exp( i (psi/2) u_b ) acts analogously, with the rapidity
+psi acting on the spinor by psi/2.
+
+2.5 ALGEBRA VS INTERPRETATION
+
+The identification of the coordinates on S_pm with physical spinors, of
+the two chiralities with the two Weyl spinors, and of the 1/2 with the
+spin-1/2 representation is an INTERPRETATION that follows from the
+algebra but is not part of it. The article should state this separation
+explicitly: first the algebra (Sections 1 and 2.1-2.3), then the spin
+reading (Sections 2.4-2.5).
+
+
+==============================================================================
+MODIFICATIONS TO EXISTING SECTIONS
+==============================================================================
+
+§The Eigenprojections
+    Add one sentence: "The eigenprojections are completed to a full basis
+    of B by the nilpotents of the Peirce decomposition; in that basis Q
+    is diagonal. See §The Q-Adapted Peirce Basis of the Reference Element."
+
+§The Trace of the Unit Factor
+    Add one sentence: "In the Q-adapted Peirce basis, the trace formula is
+    the only relation between the diagonal entries (mu, mu^{-1}) of the
+    unit factor and the polar parameters."
+
+§The General Case and the One-Parameter Family
+    Add one sentence: "In the Q-adapted basis, the one-parameter family of
+    the proposition appears as a rotation of the nilpotents inside the two
+    mixed corners, while the diagonal entries (mu, mu^{-1}) and the
+    eigenvalues (lambda_+, lambda_-) stay fixed."
+
+§The Matrix Picture
+    Replace the generic M_2 presentation of Q by the Q-adapted one:
+
+        M_2^Q(Q) = diag(lambda_+, lambda_-),
+        M_2^Q(U) = diag(mu, mu^{-1}),
+
+    keeping the generic M_2 as the matrix model of the algebra. State that
+    the two coincide only when Q commutes with i e_z, i.e. when
+    Q_x = Q_y = 0.
+
+§The Regimes
+    Add a line to the table: the Q-adapted Peirce basis exists exactly in
+    the distinct regime B != 0. In the scalar, Jordan and nilpotent
+    regimes B = 0, no such basis exists.
+
+§The Boundary
+    Add one sentence: "At the boundary B -> 0, the root Xi_vec = -i Q_vec/B
+    diverges and the Q-adapted basis degenerates. The nilpotents are not
+    defined in the limit. The boundary is the exact domain where the
+    construction of the eigenbasis fails, while the polar word still
+    exists (Jordan case) or fails (nilpotent case)."
+
+§Worked Examples
+    Replace or supplement the current Jordan example by the family
+
+        Q_eps = (1+i) e_t + e_x + i e_y + eps e_z,    eps != 0,
+
+    with B = eps, Xi_vec = -i (e_x + i e_y + eps e_z)/eps, and explicit
+    Q_eps-adapted basis. The limit eps -> 0 reproduces the Jordan example
+    and shows the degeneration of the nilpotents in one computation.
+
+CROSS-REFERENCES TO ADD
+    - from Ideals and Peirce Decomposition of the Biquaternion Algebra,
+      §The Peirce Decomposition: forward pointer to §The Q-Adapted Peirce
+      Basis as the element-dependent specialisation;
+    - from Eigenvalue Decomposition of a Biquaternion, §The Eigenprojections:
+      forward pointer to §The Q-Adapted Peirce Basis for the completion of
+      the pair (Pi~_+, Pi~_-) to a full basis;
+    - from Exponential Polar Decomposition of Biquaternions, §The
+      Decomposition: forward pointer to §Spinors on the Two Minimal Left
+      Ideals for the reading of the 1/2 factors as spin-1/2.
+
+
+==============================================================================
+WHAT IS NOT DONE IN THESE NEW SECTIONS
+==============================================================================
+
+The two new sections do NOT rebuild:
+
+    - the classification of the roots of +1 (Square Roots of One...);
+    - the construction of the primitive idempotents from a root
+      (Square Roots of One..., §The Two Idempotents of a Root);
+    - the Peirce decomposition of B (Ideals..., §The Peirce Decomposition);
+    - the existence or normalisation of the off-diagonal Peirce elements
+      (Ideals..., §Systems of Matrix Units);
+    - the matrix model M_2 (Ideals..., §The Peirce Coordinates and the
+      Matrix Model).
+
+They use these constructions as quoted, specialise them to the reference
+Q through the root Xi_vec = -i Q_vec/B, write down the resulting diagonal
+form of Q and U, and add the spin reading on the two minimal left ideals.
+That is the entire new content.
+==============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ So any biquaternion can be writen using this basis, the coordinates being spinors (first and second column).
+
+
+
+
+
+
+
+
+
+Read the convention and these 3 articles :
+
+Eigenvalue Decomposition of a Split-Complex Number
+
+Eigenvalue Decomposition of a Reduced Biquaternion
+
+Eigenvalue Decomposition of a Biquaternion
+
+
+RENAME THEM 
+
+
+Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number
+
+Eigenvalue Decomposition and Eigenbasis a Reduced Biquaternion
+
+Eigenvalue Decomposition and Eigenbasis a Biquaternion
+
+And modify them to go more in depth, with matrices, and the nilpotents for biquaternions.
+
+==============================================================================
+ADDITION TO: Eigenvalue Decomposition and Eigenbasis a Biquaternion
+NEW SECTION: §The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis
+PLACEMENT: after §The Peirce Decomposition Relative to the Eigenprojection,
+           before §Powers, Polynomial Calculus, and the Group of Units.
+==============================================================================
+
+
+1. THE ROOT, THE IDEMPOTENTS, THE EIGENVALUES
+
+   Let
+       Q~ = Q_t e_t + Q_vec,    Q_vec = Q_x e_x + Q_y e_y + Q_z e_z,
+       B^2 = Q_x^2 + Q_y^2 + Q_z^2 != 0,
+   and fix a square root B. Define
+       U_vec = Q_vec / B,
+       Xi_vec = -i U_vec = -i Q_vec / B,
+       Pi~_+ = (e_t + Xi_vec)/2,
+       Pi~_- = (e_t - Xi_vec)/2,
+       lambda_+ = Q_t + i B,
+       lambda_- = Q_t - i B.
+   Then
+       Xi_vec^2 = e_t,
+       Pi~_+^2 = Pi~_+,    Pi~_-^2 = Pi~_-,
+       Pi~_+ Pi~_- = Pi~_- Pi~_+ = 0,
+       Pi~_+ + Pi~_- = e_t,
+       Q~ = lambda_+ Pi~_+ + lambda_- Pi~_-.
+   The pair (Pi~_+, Pi~_-) is attached to Q~, not chosen arbitrarily.
+
+
+2. THE PEIRCE CORNERS AND THE NILPOTENTS
+
+   Define the corners
+       B_st = Pi~_s B Pi~_t,    s,t in {+,-}.
+   Each is one-dimensional over C:
+       B_{++} = C Pi~_+,
+       B_{--} = C Pi~_-,
+       B_{-+} = Pi~_- B Pi~_+   (a complex line),
+       B_{+-} = Pi~_+ B Pi~_-   (a complex line).
+
+   CONVENTION:
+       Upsilon_+ is the generator of B_{-+} = Pi~_- B Pi~_+;
+       Upsilon_- is the generator of B_{+-} = Pi~_+ B Pi~_-.
+   Equivalently:
+       S_+ := B Pi~_+ = C Pi~_+ (+) C Upsilon_+,
+       S_- := B Pi~_- = C Pi~_- (+) C Upsilon_-.
+   The indexing is by the LEFT IDEAL, not by the corner.
+
+   NORMALISATION:
+       Choose any nonzero u in B_{-+} and any nonzero v in B_{+-}.
+       Then uv = c Pi~_- and vu = c Pi~_+ for the same scalar c != 0.
+       Choose a square root alpha of c and set
+           Upsilon_+ = u / alpha,
+           Upsilon_- = v / alpha.
+       Then
+           Upsilon_+ Upsilon_- = Pi~_-,
+           Upsilon_- Upsilon_+ = Pi~_+,
+           Upsilon_+^2 = Upsilon_-^2 = 0.
+       The normalisation fixes the products, not the individual generators:
+       it leaves the reciprocal rescaling
+           Upsilon_+ -> mu Upsilon_+,   Upsilon_- -> mu^{-1} Upsilon_-,
+           mu in C^X.
+
+   EXPLICIT FORMULA: let V_vec be any complex unit vector with V_vec . U_vec = 0.
+   Then, up to the reciprocal rescaling,
+           Upsilon_+ = V_vec Pi~_+,
+           Upsilon_- = V_vec Pi~_-.
+
+
+3. THE Q-ADAPTED PEIRCE BASIS AND ITS DIAGONAL PROPERTY
+
+   The four elements
+           Pi~_+,   Upsilon_-,   Upsilon_+,   Pi~_-
+   form a C-basis of B. In this basis, multiplication by Q~ acts diagonally:
+
+           Q~ Pi~_+    = lambda_+ Pi~_+,
+           Q~ Upsilon_- = lambda_+ Upsilon_-,
+           Q~ Upsilon_+ = lambda_- Upsilon_+,
+           Q~ Pi~_-    = lambda_- Pi~_-.
+
+   So each basis element is a scalar multiple of itself under multiplication
+   by Q~, and the diagonal values are
+           diag(lambda_+, lambda_+, lambda_-, lambda_-).
+
+   There is no separate "left" and "right" multiplication in this construction:
+   the product Q~ X is just the product in the algebra, and the four equations
+   above state it for the four basis elements. Calling the basis an eigenbasis
+   of Q~ means exactly this: Q~ sends each basis element to a scalar multiple
+   of itself, with the scalars lambda_+, lambda_+, lambda_-, lambda_-.
+
+
+4. THE EIGENBASIS AND ITS TWO SPINOR SPACES
+
+   The Q-adapted Peirce basis is an eigenbasis of Q~ in the following precise
+   sense: it diagonalises the multiplication map X |-> Q~ X on B. Because
+   lambda_+ and lambda_- each occur twice, the eigenbasis is not unique on the
+   whole of B: any basis of the lambda_+-eigenspace together with any basis
+   of the lambda_-eigenspace is an eigenbasis. The Q-adapted Peirce basis is
+   one specific choice, singled out by the Peirce structure.
+
+   The two eigenspaces of multiplication by Q~ are the two minimal left ideals
+
+           S_+ = B Pi~_+ = C Pi~_+ (+) C Upsilon_+,
+           S_- = B Pi~_- = C Pi~_- (+) C Upsilon_-.
+
+   Each is two-dimensional over C, and Q~ acts on each by the same diagonal
+   matrix with the two eigenvalues lambda_+, lambda_-. On S_+ the eigenbasis
+   is (Pi~_+, Upsilon_+); on S_- it is (Pi~_-, Upsilon_-). On each of the two
+   spaces the eigenvalues are distinct, so the eigenbasis there is unique up
+   to scale.
+
+
+5. SPINORS AS COORDINATES ON S_+ AND S_-
+
+   A SPINOR of first chirality is an element of S_+, written in the eigenbasis
+   of S_+ as
+           xi_+ = alpha Pi~_+ + beta Upsilon_+,    alpha, beta in C.
+   It is therefore the pair of complex coordinates
+           xi_+ <-> ( alpha )
+                    ( beta  ).
+   Under multiplication by Q~,
+           Q~ xi_+ = lambda_+ alpha Pi~_+ + lambda_- beta Upsilon_+,
+   so in coordinates
+           Q~ xi_+ <-> ( lambda_+   0      ) ( alpha )
+                      ( 0        lambda_- ) ( beta  ).
+
+   A SPINOR of second chirality is an element of S_-, written in the eigenbasis
+   of S_- as
+           xi_- = gamma Pi~_- + delta Upsilon_-,    gamma, delta in C.
+   It is the pair of complex coordinates
+           xi_- <-> ( gamma )
+                    ( delta  ).
+   Under multiplication by Q~,
+           Q~ xi_- = lambda_- gamma Pi~_- + lambda_+ delta Upsilon_-,
+   and the same diagonal matrix appears.
+
+   The two spinor spaces are distinct: S_+ and S_- are two separate copies
+   of C^2, each a minimal left ideal of B. The algebra itself is their direct
+   sum, B = S_+ (+) S_-. A general element of B is not a spinor; it has one
+   Peirce component in S_+ and one in S_-, and each component is a spinor of
+   the corresponding chirality.
+
+   The label "first" vs "second" chirality is convention-dependent: it is
+   fixed here by the convention Pi~_+ = (e_t + Xi_vec)/2. Swapping the labels
+   or replacing B by -B swaps the two chiralities.
+
+
+6. MATRICES AND THE COLUMN CORRESPONDENCE
+
+   Fix the assignment
+       Pi~_+ -> E_11,
+       Upsilon_- -> E_12,
+       Upsilon_+ -> E_21,
+       Pi~_- -> E_22.
+
+   Then every P in B has a unique expansion
+       P = a_11 Pi~_+ + a_12 Upsilon_- + a_21 Upsilon_+ + a_22 Pi~_-,
+       a_ij in C,
+   and is represented by
+       M_2^Q(P) = ( a_11  a_12 )
+                  ( a_21  a_22 ).
+
+   The element Q~ itself has
+       a_11 = lambda_+,   a_22 = lambda_-,
+       a_12 = 0,          a_21 = 0,
+   so
+       M_2^Q(Q~) = ( lambda_+   0      )
+                   ( 0        lambda_- ).
+
+   THE TWO COLUMNS ARE THE TWO SPINOR SPACES:
+
+       S_+ = B Pi~_+ <-> span{ E_11, E_21 } = column 1,
+       S_- = B Pi~_- <-> span{ E_12, E_22 } = column 2.
+
+   A spinor of first chirality
+           xi_+ = alpha Pi~_+ + beta Upsilon_+
+                <-> ( alpha )
+                    ( beta  )
+   is represented by the FIRST COLUMN of the matrix, i.e. by the matrix
+           ( alpha   0 )
+           ( beta    0 )
+   whose first column is xi_+ and whose second column is zero.
+
+   A spinor of second chirality
+           xi_- = gamma Pi~_- + delta Upsilon_-
+                <-> ( gamma )
+                    ( delta  )
+   is represented by the SECOND COLUMN, i.e. by the matrix
+           ( 0   gamma )
+           ( 0   delta )
+   whose first column is zero and whose second column is xi_-.
+
+   Multiplication by Q~ acts on the first column by the matrix M_2^Q(Q~),
+           Q~ xi_+ <-> M_2^Q(Q~) ( alpha ) = ( lambda_+ alpha )
+                                    ( beta  )   ( lambda_- beta  ),
+   and on the second column by the same matrix,
+           Q~ xi_- <-> M_2^Q(Q~) ( gamma ) = ( lambda_+ gamma )
+                                    ( delta )   ( lambda_- delta ).
+
+   This is the precise statement that the two spinor spaces are the two
+   columns of the matrix model, and that multiplication by Q~ acts on both
+   columns by the SAME diagonal matrix diag(lambda_+, lambda_-).
+
+
+7. WHAT DEPENDS ON Q~ AND WHAT DOES NOT
+
+   Object                                          Depends on Q~?
+   ---------------------------------------------------------------------
+   root Xi_vec and idempotents Pi~_pm              yes
+   corner lines B_{+-}, B_{-+} as subspaces        yes
+   normalised pair (Upsilon_+, Upsilon_-)          up to reciprocal C^X
+   diagonal matrix M_2^Q(Q~) = diag(lambda_+,lambda_-)   yes
+   Peirce matrix of another P                      yes, generally full 2x2
+   ---------------------------------------------------------------------
+
+   The Q-adapted basis is NOT the standard Peirce basis attached to the fixed
+   root i e_z. The two coincide only when Q~ commutes with i e_z, i.e. when
+   Q_x = Q_y = 0.
+
+
+8. THE DEGENERATE CASE B = 0
+
+   The construction uses B != 0. When B = 0:
+
+   - the root Xi_vec = -i Q_vec / B is undefined;
+   - the pair (Pi~_+, Pi~_-) is not attached to Q~;
+   - there is no Q-adapted Peirce basis;
+   - Q~ is NOT diagonal in any Peirce basis;
+   - in any Peirce basis the Peirce matrix of Q~ is a general 2x2 matrix,
+     Jordan in the Jordan regime Q_t != 0 and nilpotent in the nilpotent
+     regime Q_t = 0.
+
+   So the construction of the nilpotents, the Q-adapted basis, the diagonal
+   form of Q~, the eigenbasis, and the spinor coordinates are properties of
+   the distinct-eigenvalue regime B != 0 only.
+
+
+9. SUMMARY BLOCK
+
+   Given Q~ with B != 0, the following data are attached to Q~:
+
+       Xi_vec = -i Q_vec / B,
+       Pi~_pm = (e_t +/- Xi_vec)/2,
+       lambda_pm = Q_t +/- i B,
+
+       Upsilon_+ in Pi~_- B Pi~_+,    Upsilon_- in Pi~_+ B Pi~_-,
+       Upsilon_+ Upsilon_- = Pi~_-,
+       Upsilon_- Upsilon_+ = Pi~_+,
+       Upsilon_pm^2 = 0,
+
+       B = C Pi~_+ (+) C Upsilon_- (+) C Upsilon_+ (+) C Pi~_-,
+
+       S_+ = B Pi~_+ = C Pi~_+ (+) C Upsilon_+,
+       S_- = B Pi~_- = C Pi~_- (+) C Upsilon_-,
+
+       Pi~_+ -> E_11,   Upsilon_- -> E_12,
+       Upsilon_+ -> E_21,   Pi~_- -> E_22,
+
+       M_2^Q(Q~) = ( lambda_+   0      )
+                   ( 0        lambda_- ),
+
+       M_2^Q(P)  = ( a_11  a_12 )
+                   ( a_21  a_22 )   for general P in B.
+
+   DIAGONAL PROPERTY (eigenbasis):
+
+       Q~ Pi~_+    = lambda_+ Pi~_+,
+       Q~ Upsilon_- = lambda_+ Upsilon_-,
+       Q~ Upsilon_+ = lambda_- Upsilon_+,
+       Q~ Pi~_-    = lambda_- Pi~_-.
+
+       The Q-adapted Peirce basis is an eigenbasis of Q~ on B, with
+       eigenvalues (lambda_+, lambda_+, lambda_-, lambda_-). On each of the
+       two minimal left ideals S_+, S_- it restricts to an eigenbasis with
+       distinct eigenvalues (lambda_+, lambda_-).
+
+   SPINORS:
+
+       A spinor of first chirality is an element of S_+,
+           xi_+ = alpha Pi~_+ + beta Upsilon_+,
+       represented by the FIRST COLUMN of M_2^Q(P):
+           xi_+ <-> ( alpha )
+                   ( beta  ).
+       Under multiplication by Q~, Q~ xi_+ <-> diag(lambda_+, lambda_-) xi_+.
+
+       A spinor of second chirality is an element of S_-,
+           xi_- = gamma Pi~_- + delta Upsilon_-,
+       represented by the SECOND COLUMN of M_2^Q(P):
+           xi_- <-> ( gamma )
+                   ( delta ).
+       Under multiplication by Q~, Q~ xi_- <-> diag(lambda_+, lambda_-) xi_-.
+
+       The two spinor spaces are the two columns; the matrix model acts on
+       both columns by the same diagonal matrix diag(lambda_+, lambda_-).
+
+   DEGENERATE CASE:
+
+       B = 0:  no Q-adapted Peirce basis, no eigenbasis of Q~,
+               Q~ is Jordan or nilpotent in any Peirce basis.
+
+==============================================================================
+CROSS-REFERENCES
+- from §The Eigenprojections: forward pointer to §2 (nilpotent construction).
+- from §The Peirce Decomposition Relative to the Eigenprojection: forward
+  pointer to §2 and §3.
+- from §The Algebraic Fibre of the Decomposition: the Q-adapted basis is
+  the one in which the Peirce coordinates of Q~ are (lambda_+, lambda_-).
+- from Ideals and Peirce Decomposition of the Biquaternion Algebra,
+  §The Peirce Decomposition: this section is the Q-dependent specialisation.
+==============================================================================
+
+
+And check the 3 articles are consistent.
 
 
 

@@ -39,8 +39,9 @@ Here $s$ is the annihilation-channel invariant, $t$ the momentum-transfer invari
 The two tree-level diagrams contribute
 
 $$
+\boxed{\;
 \mathcal M = -e^2\left(\bar v_k\gamma^\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2}\gamma_\mu w_p\right)
-\;+\; e^2\left(\bar v_k\gamma^\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2}\gamma_\nu v_{k_2}\right),
+\;+\; e^2\left(\bar v_k\gamma^\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2}\gamma_\nu v_{k_2}\right)\;},
 $$
 
 the first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.
@@ -50,7 +51,8 @@ the first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, 
 Squaring the amplitude, averaging over the incoming spins and summing over the outgoing ones gives, at leading order and neglecting the electron mass, the spin-averaged differential cross section
 
 $$
-\frac{d\sigma}{d(\cos\theta)} = \frac{\pi\alpha^2}{s}\left[\,w^2\left(\frac1s+\frac1t\right)^2 + \left(\frac{t}{s}\right)^2 + \left(\frac{s}{t}\right)^2\,\right],
+\boxed{\;
+\frac{d\sigma}{d(\cos\theta)} = \frac{\pi\alpha^2}{s}\left[\,w^2\left(\frac1s+\frac1t\right)^2 + \left(\frac{t}{s}\right)^2 + \left(\frac{s}{t}\right)^2\,\right]\;},
 $$
 
 where $\theta$ is the scattering angle and $s,t,w$ are as above. The formula is valid at collision energies well below the $Z$ mass scale, around $91\ \mathrm{GeV}$, where photon exchange dominates; above that energy the $Z$-boson contribution must be added, as in the electroweak treatment of the Møller companion.
@@ -58,7 +60,8 @@ where $\theta$ is the scattering angle and $s,t,w$ are as above. The formula is 
 The structure of the three terms is the same as in Møller scattering, term for term: a $t$-channel square, an $s$-channel square, and the interference, which is here written inside the bracket $w^2(1/s+1/t)^2$ with the cross term carrying its sign. Because $t\to0$ at small angles and the term proportional to $1/t^2$ dominates, the small-angle cross section is
 
 $$
-\frac{d\sigma}{d(\cos\theta)} \;\sim\; \frac{\pi\alpha^2}{s}\cdot\frac{w^2}{t^2},
+\boxed{\;
+\frac{d\sigma}{d(\cos\theta)} \;\sim\; \frac{\pi\alpha^2}{s}\cdot\frac{w^2}{t^2}\;},
 $$
 
 large, positive and calculable in perturbation theory to high precision. This domination by the photon propagator at small angles is why Bhabha scattering is the standard **luminosity monitor**: the rate of small-angle $e^+e^-$ events measures the machine's luminosity, given the known cross section.

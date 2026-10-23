@@ -16,10 +16,6 @@ The inverse is where the two products separate. The definition of an inverse pre
 
 **The results.** The general plain sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ has a central square, $Q\star Q=\langle Q\rangle_{*}1$ with $\langle Q\rangle_{*}=q^{2}-q'^{2}$, and $\langle\cdot\rangle_{*}$ is multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. The product has the right unit $1$ and no left unit, hence no two-sided unit, so **no element is invertible of $\star$** and the product has **no group of units**; what survives is the pair of one-sided equations $Q_1\star Q_2=1$ and $Q_2\star Q_1=1$, soluble exactly when $\langle Q_1\rangle_{*}\neq0$ with the common unique solution $Q_1/\langle Q_1\rangle_{*}$, and insoluble when $\langle Q_1\rangle_{*}=0$. The criterion is therefore the algebraic norm: a nonzero $Q$ is a zero divisor exactly when $\langle Q\rangle_{*}=0$, and the elements of non-vanishing norm form the plain group of units $\mathbb{D}^{\times}=\{\langle Q\rangle_{*}\neq0\}$, stable under $\star$ but not a group under it. Each section below states its result first and then proves it.
 
-**Boundaries.** The algebraic norm of the plain product is $\langle Q\rangle=Q^{2}$, a $\mathbb{D}$-valued form, and its theory is *Norm and Invertibility in the Split-Complex Algebra*; the algebraic norm $\langle\cdot\rangle_{*}$ is the one of this product, and the criterion $\langle Q\rangle_{*}\neq0$ is proved here. The zero divisors are *Zero Divisors of the Split-Complex Algebra*, where the set $\{\langle Q\rangle_{*}=0\}\setminus\{0\}$ is characterised as a set; the annihilators are *Annihilators of the Split-Complex Algebra*; the one-sided inverse equations read on the two products side by side are *Relations and Comparison Between the Two Products of the Split-Complexoid Space*. The product and its element theory are *Split-Complex Algebra*; the two forms and the two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*; and the polar and exponential decompositions that the criterion must agree with are *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*.
-
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)=\mathbb{R}[j]$ with basis $1,j$, $j^{2}=+1$. A general element is $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$ real, the conjugate is $\bar Q=q-jq'$, and the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, with idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ and $Q_{\pm}=q\pm q'$. Juxtaposition is the plain product $Q_1Q_2$, and the product of this article is the general plain sesquilinear product
-
 $$
 Q_1\star Q_2=Q_1\bar Q_2 .
 $$
@@ -43,7 +39,7 @@ Throughout this article the product is the general plain sesquilinear product $Q
 **Proposition.** For every $Q\in\mathbb{D}$,
 
 $$
-Q\star Q=Q\bar Q=\langle Q\rangle_{*}1,\qquad \langle Q\rangle_{*}=q^{2}-q'^{2}.
+\boxed{\;Q\star Q=Q\bar Q=\langle Q\rangle_{*}1,\qquad \langle Q\rangle_{*}=q^{2}-q'^{2}\;}.
 $$
 
 **Proof.** The first display is the definition of the product at equal arguments; the product $Q\bar Q=(q+jq')(q-jq')=q^{2}-j^{2}q'^{2}=q^{2}-q'^{2}$ is real. The same scalar is produced in the two orders, $Q\bar Q=\bar Q Q$, because $\mathbb{D}$ is commutative.
@@ -74,7 +70,7 @@ The polar form is the **split bilinear form** $g$ of signature $(1,1)$; its Gram
 **Proposition.** The algebraic norm is multiplicative for the product,
 
 $$
-\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*},
+\boxed{\;\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}\;},
 $$
 
 and it is invariant under the conjugation, $\langle\bar Q\rangle_{*}=\langle Q\rangle_{*}$.
@@ -192,7 +188,7 @@ $$
 have a solution exactly when $\langle Q_1\rangle_{*}\neq0$, and then each has the **same unique** solution,
 
 $$
-Q_2=\frac{Q_1}{\langle Q_1\rangle_{*}} .
+\boxed{\;Q_2=\frac{Q_1}{\langle Q_1\rangle_{*}}\;}.
 $$
 
 When $\langle Q_1\rangle_{*}=0$ neither equation has a solution.

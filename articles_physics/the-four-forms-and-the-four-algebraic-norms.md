@@ -5,13 +5,13 @@
 The twelve products of the biquaternion complex space carry four **forms** and no more, and the four forms carry four **algebraic norms**. The form of a product is its scalar part, a function of two elements; the algebraic norm of a form is that form read at its two equal arguments, a function of one. The chain is short and rigid: twelve operations, four scalar parts, four functions of one element. This article reads the chain physically. The four forms are the **sector sign** $\langle\cdot,\cdot\rangle$, the **Born form** $\langle\cdot,\cdot\rangle_{*}$, the **interval** $\langle\cdot,\cdot\rangle_{\natural}$ and the **Krein form** $\langle\cdot,\cdot\rangle_{\natural*}$. The four algebraic norms are the four sums
 
 $$
-\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},
+\boxed{\;\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},
 \qquad
 \langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},
 \qquad
 \langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},
 \qquad
-\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2},
+\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}\;},
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$.
@@ -72,7 +72,7 @@ The **algebraic norm** of a form is that form at its two equal arguments. The fo
 Two of the four have a property the others lack, and the two properties are different. The Hermitian algebraic norm $\langle\cdot\rangle_{*}$ is **positive definite**, and its square root is the unique topological norm of the space, $\lVert\tilde Q\rVert_E^{2}=\langle\tilde Q\rangle_{*}$. The quaternionic algebraic norm $\langle\cdot\rangle_{\natural}$ is **multiplicative**,
 
 $$
-\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
+\boxed{\;\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
 $$
 
 and it is the reduced norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$. The group of units is $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.
@@ -167,13 +167,13 @@ On the material sector the Krein form is minus the interval; on the informationa
 The four forms are forms over $\mathbb{C}$. Realifying the space is what a computation, a simulation or a matrix model does, and it moves the forms by two rules. A symmetric bilinear form of complex rank $n$ realifies to the **split** signature $(n,n)$; a Hermitian form of inertia $(n,m)$ realifies by **doubling** its inertia, $(2n,2m)$. The four signatures over $\mathbb{R}$ are therefore
 
 $$
-(4,4)\ \text{for}\ \langle\cdot,\cdot\rangle,
+\boxed{\;(4,4)\ \text{for}\ \langle\cdot,\cdot\rangle,
 \qquad
 (8,0)\ \text{for}\ \langle\cdot,\cdot\rangle_{*},
 \qquad
 (4,4)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural},
 \qquad
-(2,6)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural*}.
+(2,6)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural*}\;}.
 $$
 
 The change of scalars also collapses the count. On the real part of the space the coefficientwise conjugation is the identity, so $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural}$: a computation restricted to real coefficients sees two forms and hides the other two. It sees ten of the twelve products, the pairs $\mathrm{SPS}=\mathrm{SQA}$ and $\mathrm{APA}=\mathrm{AQS}$ having collapsed, and it does not see the complex witness of the Jacobi failure of $\mathrm{AQS}$. The count of twelve is the count over $\mathbb{C}$, and the difference of count is the algebraic size of the complex structure the grid carries.

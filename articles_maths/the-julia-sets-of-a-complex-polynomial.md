@@ -70,9 +70,7 @@ and the **Julia set** is its complement, $J(f) = \hat{\mathbb{C}} \setminus F(f)
 
 **Theorem (Fatou, Julia).** For a polynomial of degree $d \geq 2$,
 
-$$
-J(f) = \overline{\{\text{repelling periodic points of } f\}} .
-$$
+$$\boxed{\;J(f) = \overline{\{\text{repelling periodic points of } f\}}\;}.$$
 
 **Proof sketch.** A repelling periodic point lies in $J$, since at it the iterates are not equicontinuous. For the converse, one shows that the backward orbit of a repelling periodic point is dense in $J$: the set of repelling periodic points is nonempty and infinite, its limit points lie in $J$ by (d), and a counting argument over the $d^n$ preimages of a small disk shows that the backward orbit accumulates at every point of $J$. The argument uses Montel's theorem and the Julia set's complete invariance, and it is the Fatou–Julia theorem of *The Geometry of the Julia Sets*.
 
@@ -82,9 +80,7 @@ $$
 
 **Corollary (the preimages of a generic point).** For every $z$ outside a set of at most two **exceptional** points,
 
-$$
-J(f) = \overline{\bigcup_{n \geq 0} f^{-n}(z)} .
-$$
+$$\boxed{\;J(f) = \overline{\bigcup_{n \geq 0} f^{-n}(z)}\;}.$$
 
 **Proof sketch.** The exceptional set is the set of points whose backward orbit is finite, and it has at most two points for a rational map of degree $d \geq 2$; for a polynomial it is contained in $\{\infty\}$. For a non-exceptional $z$ the backward orbit is infinite and its closure is completely invariant and not a finite set, so by the corollary above it contains $J$, and it is contained in $J$ by the invariance of $J$. The exceptional dichotomy is proved in *The Geometry of the Julia Sets*.
 
@@ -134,9 +130,7 @@ for every continuous $\varphi$ and every $z$ outside the exceptional set, the su
 
 **Theorem (the measure of full dimension).** If $J(f)$ is a hyperbolic Julia set in the sense below, then there is an $f$-invariant ergodic measure $\mu_s$ of Hausdorff dimension exactly $\dim_H J(f)$: it is the equilibrium state of the potential $-s\log|\frac{df}{dz}|$ at the value $s$ solving the pressure equation of *The Hausdorff Dimension of the Julia Sets*, and it satisfies the dimension formula
 
-$$
-\dim_H J(f) = \frac{h_{\mu_s}}{\chi_{\mu_s}}, \qquad \chi_{\mu_s} = \int \log|\frac{df}{dz}| \, d\mu_s ,
-$$
+$$\boxed{\;\dim_H J(f) = \frac{h_{\mu_s}}{\chi_{\mu_s}}, \qquad \chi_{\mu_s} = \int \log|\frac{df}{dz}| \, d\mu_s\;},$$
 
 of Ledrappier and Young, where $h$ is the measure-theoretic entropy. For a polynomial the measure of maximal entropy has dimension $\log d / \chi_{\mu} < \dim_H J(f)$ whenever the Julia set is not a rectifiable curve, and the two coincide only in the exceptional cases such as $J(f) = \hat{\mathbb{C}}$ of a rational map.
 

@@ -15,16 +15,6 @@ each copy isomorphic to the biquaternion algebra. Where $\mathrm{Cl}(2)$ is simp
 
 The article is the Clifford entry of the split biquaternion system, the higher rung of the pair whose lower rung is *Biquaternion Other Algebraic Element Representations*. The split biquaternion algebra, its conjugations, its idempotents $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ and its isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its idempotents, its off-diagonal elements and its minimal left ideals are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the complex Clifford algebra $\mathrm{Cl}(2)\cong\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$, its volume element and its grade structure are *Biquaternion Other Algebraic Element Representations*; and the maximal totally isotropic subspace, the ladder operators and the charge operator are *Spinors as Minimal Left Ideals with Inner Conjugation*.
 
-**Conventions.** The Clifford algebra $\mathrm{Cl}(3)$ is generated over $\mathbb{C}$ by $E_1,E_2,E_3$ with
-$$
-E_\mu^2=-1, \qquad E_\mu E_\nu=-E_\nu E_\mu \quad (\mu\neq\nu),
-$$
-so that $\{E_\mu,E_\nu\}=-2\delta_{\mu\nu}$; the eight monomials $E_1^{\epsilon_1}E_2^{\epsilon_2}E_3^{\epsilon_3}$, $\epsilon_i\in\{0,1\}$, are a $\mathbb{C}$-basis. The scalar imaginary is $i$, central, with $i^2=-1$. The Hermitian adjoint is fixed by
-$$
-E_\mu^{\dagger}=-E_\mu, \qquad i^{\dagger}=-i,
-$$
-so that the rescaled generators $\gamma_\mu=iE_\mu$ are Hermitian, $\gamma_\mu^{\dagger}=\gamma_\mu$; this is the convention that makes the volume element self-adjoint below. The split biquaternion algebra is written with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central split unit $j$, $j^2=+1$, as in *Split-Biquaternion Algebra*. The Clifford algebra $\mathrm{Cl}(0,3)$ of three generators of square $-1$ is written in the series convention $\mathrm{Cl}_{n,m}$; the complex algebra is written interchangeably $\mathrm{Cl}(n)$ and $\mathrm{Cl}_n(\mathbb{C})$.
-
 ## The Algebra and Its Generators
 
 **Proposition (the split biquaternion generators).** In $\mathbb{H}_{\mathbb{D}}$ the three elements
@@ -84,7 +74,9 @@ $$
 $$
 and both are central. Consequently
 $$
+\boxed{\;
 \mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_x \oplus \mathrm{Cl}(3)\Pi_y
+\;}
 $$
 is a decomposition of $\mathrm{Cl}(3)$ into the direct sum of two proper nonzero two-sided ideals, each of complex dimension $4$, and each isomorphic to the biquaternion algebra:
 $$
@@ -102,7 +94,9 @@ $$
 
 **Theorem (the two summands are the two halves).** The idempotents $\Pi_{1,2}$ of $\mathrm{Cl}(3)$ coincide, with the indices reversed, with the split biquaternion idempotents $\tilde\Pi_{1,2}=\tfrac12(1\mp j)$ of $\mathbb{H}_{\mathbb{D}}$ promoted to the complexification, and the central splitting is the complexification of the splitting of the split biquaternion algebra:
 $$
-\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_1\bigr) \oplus \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_2\bigr) \cong \mathbb{B}\oplus\mathbb{B}.
+\boxed{\;
+\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_1\bigr) \oplus \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_2\bigr) \cong \mathbb{B}\oplus\mathbb{B}
+\;}.
 $$
 
 *Proof.* With $\omega=-j$ one has $\Pi_x=\tfrac12(1-j)=\tilde\Pi_2$ and $\Pi_y=\tfrac12(1+j)=\tilde\Pi_1$. The two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}\cong\mathbb{H}$ of *Split-Biquaternion Ideals and Peirce Decomposition* complexify to $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$.
@@ -113,7 +107,9 @@ $$
 $$
 is an algebra automorphism; it fixes the even monomials and negates the odd ones; it satisfies $\sigma(\omega)=-\omega$, and it therefore interchanges the two summands,
 $$
-\sigma(\Pi_x)=\Pi_y, \qquad \sigma(\Pi_y)=\Pi_x .
+\boxed{\;
+\sigma(\Pi_x)=\Pi_y, \qquad \sigma(\Pi_y)=\Pi_x
+\;}.
 $$
 The two summands are the two **pinor representations** of $\mathrm{Cl}(3)$: the two simple modules of $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $\omega$.
 

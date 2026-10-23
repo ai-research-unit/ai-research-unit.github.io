@@ -82,9 +82,7 @@ $$
 
 **Lemma (the identity of the construction).** For every $g$ and every $\tilde q$,
 
-$$
-Q_g(\tilde q) = \omega(g\tilde q) = \omega(L_g\tilde q).
-$$
+$$ \boxed{\; Q_g(\tilde q) = \omega(g\tilde q) = \omega(L_g\tilde q) \;} .$$
 
 *Proof.* Both expressions are $\mathrm{Sc}\bigl((g\tilde q)^2\bigr)$: the product $g\tilde qg\tilde q$ is $(g\tilde q)(g\tilde q)$, and the Minkowski form of a quaternion is the scalar part of its square.
 
@@ -130,14 +128,12 @@ $$
 
 **Proposition.** Write $g = g_0e_t + g_1\vec e_x+g_2\vec e_y+g_3\vec e_z$. The Gram matrix of $Q_g$ is
 
-$$
-M(g) = \begin{pmatrix}
+$$ \boxed{\; M(g) = \begin{pmatrix}
 g_0^2-g_1^2-g_2^2-g_3^2 & -2g_0g_1 & -2g_0g_2 & -2g_0g_3 \\
 -2g_0g_1 & -g_0^2+g_1^2-g_2^2-g_3^2 & 2g_1g_2 & 2g_1g_3 \\
 -2g_0g_2 & 2g_1g_2 & -g_0^2-g_1^2+g_2^2-g_3^2 & 2g_2g_3 \\
 -2g_0g_3 & 2g_1g_3 & 2g_2g_3 & -g_0^2-g_1^2-g_2^2+g_3^2
-\end{pmatrix}.
-$$
+\end{pmatrix} \;} .$$
 
 Its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the scalar coordinate and $2g_jg_k$ against two vector coordinates.
 
@@ -178,9 +174,7 @@ For $g = e_t$ the form is $\omega$ itself, $Q_{e_t}(\tilde q) = q_t^2-q_x^2-q_y^
 
 **Proposition.** For every quaternion $g$,
 
-$$
-\det M(g) = -\langle g\rangle_{\natural}^4.
-$$
+$$ \boxed{\; \det M(g) = -\langle g\rangle_{\natural}^4 \;} .$$
 
 In particular the form $Q_g$ is non-degenerate for every nonzero $g$, and its Gram determinant is a positive multiple of the fourth power of the quaternion norm.
 

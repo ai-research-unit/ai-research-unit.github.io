@@ -90,9 +90,9 @@ so that $\partial_\tau \to -i\omega$. Substituting into the postulate gives the 
 equation**,
 
 $$
-\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\boxed{\;\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 \qquad
-\nabla^{\pm}_{\omega} = \omega \pm \nabla ,
+\nabla^{\pm}_{\omega} = \omega \pm \nabla\;}
 $$
 
 in which the frequency of the field plays the part the mass plays in a massive wave equation. The
@@ -105,9 +105,9 @@ the dictionary exactly and the factorisation to the finite-difference floor.
 The second fact is the factorisation. Because $\nabla\circ\nabla = -\Delta$,
 
 $$
-\nabla^{-}_{\omega}\circ\,\nabla^{+}_{\omega}
+\boxed{\;\nabla^{-}_{\omega}\circ\,\nabla^{+}_{\omega}
 = \nabla^{+}_{\omega}\circ\,\nabla^{-}_{\omega}
-= \omega^{2} + \Delta ,
+= \omega^{2} + \Delta\;}
 $$
 
 the scalar Helmholtz operator. So a first-order operator here has a second-order inverse: the
@@ -157,11 +157,11 @@ evaluated at once and the result is the **elementary photon**: a spherical EGM w
 vector amplitudes are
 
 $$
-\left|\alpha_{0}\right| = \frac{\omega}{4\pi r},
+\boxed{\;\left|\alpha_{0}\right| = \frac{\omega}{4\pi r},
 \qquad
 \left\|\tilde F_{0}\right\| = \frac{\sqrt{\omega^{2} + 1/r^{2}}}{4\pi r} ,
 \qquad
-\vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},
+\vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r}\;}
 $$
 
 both recomputed. The wave is a spherical EGM wave emitted by a point charge, propagating at the speed
@@ -193,10 +193,10 @@ $\|\vec k\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corp
 notation and recomputed exactly,
 
 $$
-\tilde{\Phi}_{\vec k0} = \omega\,\varphi\left(1 + i\,\vec u_k\right),
+\boxed{\;\tilde{\Phi}_{\vec k0} = \omega\,\varphi\left(1 + i\,\vec u_k\right),
 \qquad
 \tilde{\Phi}_{\vec kj} = \varphi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k,\vec e_{j}]\right),
-\qquad j = 1,2,3 ,
+\qquad j = 1,2,3\;}
 $$
 
 with $\varphi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ and $\vec u_k = \vec k/\omega$. All four

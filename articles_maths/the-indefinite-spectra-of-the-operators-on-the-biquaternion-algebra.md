@@ -6,8 +6,6 @@ The spectral theory of the Hermitian adjoint on the biquaternion algebra gives t
 
 The general theory is *Spectral Theory on Krein Spaces* and *Definitizable Operators and the Krein–Naĭmark Theorem*; the definite counterpart is *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the operator classes are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the element spectra that the operator spectra are read from are *Biquaternion Spectral Theory*; and the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*.
 
-**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\mathsf{M}_2(\tilde{Q})\otimes I$ and $R_{\tilde Q_1}\leftrightarrow I\otimes\mathsf{M}_2(\tilde Q_1)^{\mathsf T}$.
-
 ## The Spectral Rules of the Definite Case
 
 The following rules are quoted from the sibling article and are the input to everything below.

@@ -69,9 +69,9 @@ $$
 after integrating by parts and discarding the boundary term; the overall factor is immaterial for the stationarity condition, but it is kept so that the displayed variation is the variation of the action written above. With $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, the stationarity of the action is
 
 $$
-\frac{\delta S}{\delta\phi^*}=0
+\boxed{\;\frac{\delta S}{\delta\phi^*}=0
 \qquad\Longleftrightarrow\qquad
-\left(\Box-\mu^2\right)\phi=0,
+\left(\Box-\mu^2\right)\phi=0\;},
 $$
 
 which is the Klein–Gordon equation of the companion article. The derivation was checked against three independent on-shell modes: for the superposition
@@ -171,7 +171,7 @@ a central scalar times $e_t$, whose closed Yukawa form is given in the companion
 In the continuum the same completion of the square gives
 
 $$
-Z[J]=Z[0]\exp\left(\frac{i}{2}\int d^4x\,d^4y\;J(x)\,G(x-y)\,J(y)\right),
+\boxed{\;Z[J]=Z[0]\exp\left(\frac{i}{2}\int d^4x\,d^4y\;J(x)\,G(x-y)\,J(y)\right)\;},
 $$
 
 where $G$ is the Green's function of $(\Box-\mu^2)$, fixed by the boundary condition ($i\epsilon$ prescription) that the Gaussian's analytic continuation requires. The free two-point function is $G$ up to the overall normalisation convention fixed in the companion article on the propagator, where the same kernel is obtained as the inverse of the differential operator. The two routes agree; the lattice computation is the rigorous version of the statement, and the continuum formula is its formal limit. The determinant $Z[0]$ is the inverse square root of the operator determinant, a central scalar; it is the free vacuum amplitude, and the phase of its analytic continuation is the zero-point phase.

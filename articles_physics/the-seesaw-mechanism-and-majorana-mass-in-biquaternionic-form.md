@@ -5,7 +5,7 @@
 The **seesaw mechanism** explains why the neutrinos are so light: a neutrino of Dirac mass $m_D$ mixes with a heavy state of Majorana mass $M_R$, and the light eigenvalue of the resulting mass matrix is suppressed by the ratio of the two,
 
 $$
-m_\nu \;\simeq\; \frac{m_D^2}{M_R} ,
+\boxed{\;m_\nu \;\simeq\; \frac{m_D^2}{M_R}\;},
 $$
 
 so that a Dirac mass of the electroweak scale and a heavy mass near $10^{14}$–$10^{15}$ GeV produce a light mass of order $0.05$ eV. The mechanism is not a model of the light mass alone but a statement about two masses of different kinds: the **Dirac mass**, which pairs two independent chiralities and conserves fermion number, and the **Majorana mass**, which pairs a field with its own conjugate and violates fermion number by two units. The seesaw is the mixing of the two.
@@ -17,8 +17,6 @@ The biquaternion framework has already separated the two kinds, and that separat
 - **Gap, left visible.** The framework does not fix $m_D$, $M_R$, or $\Lambda$, and therefore does not predict $m_\nu$; it has no leptogenesis mechanism, no scalar triplet for the type-II seesaw (the scalar sector belongs to the spin-$0$ subcategory), and no derivation of why a heavy singlet should exist. What it supplies is the algebraic distinction between the two masses that the seesaw mixes, and the fact — established in the companion article on anomalies — that a gauge-singlet heavy state is unconstrained by anomaly cancellation.
 
 The article is organised as follows. A section recalls the two kinds of mass and why the seesaw needs both. A section sets out the type-I mass matrix, diagonalises it, and verifies its numbers. A section gives the biquaternion form of the mechanism. A section treats the effective dimension-five operator and the scale. A short section records the type-II and type-III variants and their scope. A closing section separates what is supplied, transcribed, and missing.
-
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k$ and $\Box=\partial^2/\partial Q_t^2+\Delta$. The Dirac module is $\Delta=S\oplus\bar{S}$ with $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\gamma_5=\mathrm{diag}(-I_2,I_2)$, and projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$. The mass terms are: the **linear Dirac pair** $\tilde{\nabla}\tilde{\Psi}_R=m_D\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_D\tilde{\Psi}_R$, which conserves fermion number; the **Majorana pairing** $m_M\,(\text{conjugate pairing})$, built on the module reality condition $\psi^{c}=K\psi^{*}$ with $KK^{*}=I_4$; and the algebra's real structure $\flat=-{}^{*}$, kept separate. The spinor representation of a neutrino is written $\nu_L\in S$ and $N_R$ for the singlet; the charge-conjugate of a left-handed field is written $\nu_R^{c}=\mathcal{C}\nu_L$. The Higgs doublet and its vacuum expectation value $v=174$ GeV, the Weinberg operator, and the see-saw scales are **standard-model notation, not framework objects**, used where standard physics is named. Natural units $\hbar=c=1$ are used in the mass-matrix section.
 
 The framework results used here are those of the companion articles:
 
@@ -65,7 +63,7 @@ where the matrix is **symmetric** (both entries are Majorana-type couplings in t
 **Exact eigenvalues.** A real symmetric $2\times2$ matrix has eigenvalues
 
 $$
-\lambda_\pm = \frac{M_R\pm\sqrt{M_R^2+4m_D^2}}{2},
+\boxed{\;\lambda_\pm = \frac{M_R\pm\sqrt{M_R^2+4m_D^2}}{2}\;},
 $$
 
 and for $m_D\ll M_R$ the roots are
@@ -99,7 +97,7 @@ The heavy state is therefore almost purely $\nu_R^{c}$ and the light state almos
 **More than one generation.** For $N_g$ generations $m_D$ becomes a $3\times3$ matrix and $M_R$ a symmetric $3\times3$ Majorana matrix; the mass matrix is $6\times6$, and block diagonalisation gives the light neutrino mass matrix
 
 $$
-m_\nu \;\simeq\; -\,m_D\,M_R^{-1}\,m_D^{T} ,
+\boxed{\;m_\nu \;\simeq\; -\,m_D\,M_R^{-1}\,m_D^{T}\;},
 $$
 
 a complex symmetric $3\times3$ matrix whose eigenvalues are the light masses. This is the standard type-I seesaw formula; the leading term is exact to relative order $(m_D/M_R)^2$. The formula requires only that $M_R$ be invertible and heavy; it is basis-independent in the sense that the light masses are the eigenvalues, whatever basis the blocks are written in. The diagonal case, $m_D=\mathrm{diag}(a_1,a_2,a_3)$ and $M_R=\mathrm{diag}(b_1,b_2,b_3)$, was checked to reproduce the per-generation suppression $\lambda_i\simeq-a_i^2/b_i$, and it is the only multi-generation case that is safely resolvable in double precision at physical scale ratios; the general non-diagonal formula is quoted from the standard literature.
@@ -157,7 +155,7 @@ $$
 where $L$ is the lepton doublet, $H$ the Higgs doublet, and $\Lambda$ the scale of the new physics. After electroweak symmetry breaking, with the Higgs doublet at its expectation value $\langle H\rangle=v=174$ GeV and a coefficient $c_5\sim1$, it generates a Majorana mass for the light neutrino,
 
 $$
-m_\nu = \frac{c_5\,v^2}{\Lambda} .
+\boxed{\;m_\nu = \frac{c_5\,v^2}{\Lambda}\;}.
 $$
 
 The operator violates lepton number by two units, it is the lowest-dimensional operator that does so, and it is the model-independent statement of the seesaw. Its coefficient was recomputed for the electroweak vacuum expectation value $v=174$ GeV:
@@ -220,8 +218,6 @@ which is the leading result of the matrix diagonalisation, obtained now by elimi
 **Type II.** A scalar $SU(2)_L$ triplet with hypercharge one can couple directly to the lepton doublets and, once it acquires an expectation value, generate a light Majorana mass for $\nu_L$ without any heavy fermion. The mechanism is standard, but its agent is a scalar in a triplet representation, and the scalar sector — the doublet, the triplet, the potential, and the symmetry breaking — belongs to the spin-$0$ subcategory of this series and is not developed here. The framework's contribution to a type-II seesaw would be the same as to any scalar: the field is not supplied, and the representation is not a $\mathbb{B}$-module of the required kind. It is recorded for completeness.
 
 **Type III.** A fermionic $SU(2)_L$ triplet can play the role of the heavy state, with the Dirac mass connecting the lepton doublet to the triplet. The mechanism is standard and is closest in structure to the type-I case: the heavy state is again a Majorana fermion, its mass is a self-conjugate pairing, and the light-mass suppression is the same $m_D^2/M_R$. What the framework can say about it is what it can say about type I — the two kinds of mass and their mixing — with the heavy state in a weak triplet rather than a singlet. Nothing in the algebra selects between the types; the selection is a statement about the gauge representations, which the framework does not generate.
-
-**Scope.** All three types share the fermion-sector content of this article: a light state, a heavy self-conjugate state, and a Dirac mixing whose smallness is the source of the suppression. The differences are in the gauge representations of the heavy agent, and those representations are standard-model input. The framework's contribution is the same in all three cases, and this article does not use the variants beyond noting them.
 
 ## What the Framework Supplies, Transcribes, and Does Not Supply
 

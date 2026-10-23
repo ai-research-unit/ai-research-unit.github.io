@@ -34,7 +34,7 @@ and it is written once and for all $\tilde Q\star\tilde Q$; the other square of 
 **Theorem.** For every $\tilde Q$ the square $\tilde Q\star\tilde Q$ is Hermitian,
 
 $$
-\bigl(\tilde Q\star\tilde Q\bigr)^{*}=\tilde Q\star\tilde Q ,
+\boxed{\;\bigl(\tilde Q\star\tilde Q\bigr)^{*}=\tilde Q\star\tilde Q\;},
 $$
 
 and it is the product of $\tilde Q$ with its own conjugate.
@@ -168,7 +168,7 @@ is again an element of the cone, so the congruence of every element carries the 
 **Theorem.** The cone of squares is **proper**,
 
 $$
-C(\mathbb{B})\cap\bigl(-C(\mathbb{B})\bigr)=\{0\} ,
+\boxed{\;C(\mathbb{B})\cap\bigl(-C(\mathbb{B})\bigr)=\{0\}\;},
 $$
 
 so the preorder $\tilde Q_2\preceq\tilde Q_3$ defined by $\tilde Q_3-\tilde Q_2\in C(\mathbb{B})$ is a partial order.
@@ -225,7 +225,7 @@ The remarkable subspaces of *Remarkable Subspaces and the Four General Products*
 **Theorem.** The square of the multiplication vanishes only at the origin,
 
 $$
-\tilde Q\star\tilde Q=0 \quad\Longleftrightarrow\quad \tilde Q=0 ,
+\boxed{\;\tilde Q\star\tilde Q=0 \quad\Longleftrightarrow\quad \tilde Q=0\;},
 $$
 
 whereas the natural square vanishes exactly on the zero divisors of the algebra,

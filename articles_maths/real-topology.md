@@ -7,8 +7,6 @@ This article develops the topology of the real algebra $\mathbb{R}$: the order t
 
 The subject is elementary, and its place in this blog is that of the base case. The topology is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion article *Complex Topology* for the two-dimensional definite algebra $\mathbb{C}$, and in the companion articles on the topology of the other members of the family. The whole structure is one connected line with two ends: every homotopy group vanishes, the unit set is the finite sign group, and the compactification that appears is the circle. The properties that the higher members acquire — a compact unit sphere, a nontrivial fundamental group — are all absent here, and their absence is the mathematical content of the one-dimensionality.
 
-**Conventions.** The basis is $e_t = 1$; a real number is $q = q e_t$ with its single real coordinate $q$; the norm is $N(q) = q^2$ and the modulus and metric are $|q| = \sqrt{N(q)} = \sqrt{q^2}$; the group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$. No physics is invoked.
-
 ## The Algebra as a Topological Space
 
 The map

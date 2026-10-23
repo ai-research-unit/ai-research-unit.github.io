@@ -17,8 +17,6 @@ $$
 
 the parameter replaced by its grade-twisted Clifford conjugate; the involution of parameters is therefore $a\mapsto\alpha(\hat a)$, the self-adjoint members are those with $\alpha(\hat a)=a$, and the isometric members satisfy the same condition $\hat aa=1$ as for the ordinary left multiplication — the signed and the ordinary left multiplication are isometric simultaneously. For the **twisted form** the adjoint is $\mathrm{L}^{\alpha}_{\hat a}$, the parameter conjugated by the Clifford conjugation alone.
 
-**The boundaries.** The signed left multiplication, its composition law and the disambiguation of the two twists are *The Signed Left Multiplication on a Clifford Algebra*; the ordinary adjoints $L_a^*=L_{\hat a}$ and the Clifford conjugation $\hat x=\alpha(x^{r})$ (with $x^{r}$ the reversion) are *The Adjoint of the Left Multiplication on a Clifford Algebra*; the twisted form and the identity $(A^{*\alpha})=\alpha A^*\alpha$ are the latter; the signed sandwich, of which $\mathrm{L}^{\alpha}_a$ is the left factor, is *The Signed Sandwich on a Clifford Algebra* and *The Signed Adjoint Sandwich on a Clifford Algebra*. The parameter-twisted family $\Lambda^{\alpha}_x(y)=\alpha(x)y$ of *The Graded Multiplication Operators* is a different operator and is not treated. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
-
 ## The Adjoint and Its Involution
 
 **Theorem.** For the standard form the adjoint of the signed left multiplication is the signed left multiplication by the twisted conjugate,

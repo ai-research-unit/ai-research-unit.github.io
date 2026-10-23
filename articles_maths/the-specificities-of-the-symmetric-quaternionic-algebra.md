@@ -21,10 +21,6 @@ with $X_t$ the scalar coordinate of $\tilde Q_1$. This article reads the two con
 
 The article states and proves the exclusive law of the block on the same model as the articles that began the family: the **scalar law**, which demands that the product be commutative and that its values be central, is satisfied by the block and by no other operation of the twelve, and the classification of the block's operators is read from it. The projectors do not come from isolated elements and not from the unit: they come from a hyperplane, they are indexed by that hyperplane and not by the idempotents of the algebra, and even the element $e_t$ gives the projection onto the central line and not the identity, because the algebra has no unit. The algebra therefore produces a full family of projectors and disowns all but one of their indices, exactly as the general quaternionic product does; the difference is the size and the shape of the family.
 
-**Placement.** The article is the second and closing entry of the *Specific Theory* section of the symmetric quaternionic algebra, after *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*, and it is the third of the family that *The Specificities of the Biquaternion Algebra* began and *The Specificities of the General Quaternionic Algebra* continued. It uses the governing formula of *Introduction to the Symmetric Quaternionic Algebra*, the non-degeneracy and the trivial radical of the radical article, the composition law of the multiplication operators in *The Multiplication Operators of the Symmetric Quaternionic Algebra*, the element idempotents of *Idempotents of the General Plain Algebra*, and the criterion of the article that began the family.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The product is written $\bullet$, as in the *Specific Theory* entries of the block, and coincides with the $\star$ of *Introduction to the Symmetric Quaternionic Algebra* and of *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; juxtaposition is the plain product and $\natural$ the natural conjugation. An element is $\tilde Q_1=X_t+\vec X$ with $X_t$ its scalar coordinate and $\vec X=(X_x,X_y,X_z)$ its vector part, and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=X_tY_t+(\vec X,\vec Y)$ is the quaternion form, non-degenerate and of Gram matrix the identity. The **left multiplication** is $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\bullet\tilde Q_2$, and the subscript is the element. An **idempotent** of the algebra is an element equal to its own square, and a **projector** is an idempotent operator, that is an idempotent of the morphism space; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of §*The Projectors* is exactly the scalar equation $X_t=1$, together with the origin.
-
 ## The Exclusive Law of the Block
 
 The family of specificities articles states, for each block, one law that the block has and the other eleven do not, and proves it (*The Specificities of the Biquaternion Algebra*, *The Specificities of the General Quaternionic Algebra*). The law of the symmetric quaternionic block is the following.
@@ -36,9 +32,7 @@ The family of specificities articles states, for each block, one law that the bl
 
 **Theorem (the equivalent form).** A product $\circ$ satisfies the scalar law if and only if there is a symmetric $\mathbb{C}$-bilinear form $\beta$ on $\mathbb{B}$ with
 
-$$
-\tilde Q_1\circ\tilde Q_2=\beta(\tilde Q_1,\tilde Q_2)\,e_t\qquad\text{for all }\tilde Q_1,\tilde Q_2 .
-$$
+$$ \boxed{\; \tilde Q_1\circ\tilde Q_2=\beta(\tilde Q_1,\tilde Q_2)\,e_t\qquad\text{for all }\tilde Q_1,\tilde Q_2 \;}. $$
 
 **Proof.** If $\circ$ satisfies the scalar law, its value is central, so it reads $\beta(\tilde Q_1,\tilde Q_2)e_t$ with $\beta$ the scalar coefficient; the bilinearity of the product gives the bilinearity of $\beta$, and its commutativity gives the symmetry. Conversely a product of the displayed shape has central values by construction and is commutative because $\beta$ is symmetric.
 
@@ -48,9 +42,7 @@ $$
 
 **Theorem (the operator reading).** The left multiplications of the block obey the composition law
 
-$$
-L_{\tilde Q_1}L_{\tilde Q_3}=\mathrm{Sc}(\tilde Q_1)\,L_{\tilde Q_3}\qquad\text{for all }\tilde Q_1,\tilde Q_3,
-$$
+$$ \boxed{\; L_{\tilde Q_1}L_{\tilde Q_3}=\mathrm{Sc}(\tilde Q_1)\,L_{\tilde Q_3}\qquad\text{for all }\tilde Q_1,\tilde Q_3 \;}, $$
 
 where $\mathrm{Sc}(\tilde Q_1)=X_t$ is the scalar coordinate; and no other one of the twelve operations admits a law of the form $L^{\circ}_{\tilde Q_1}L^{\circ}_{\tilde Q_3}=\ell(\tilde Q_1)L^{\circ}_{\tilde Q_3}$ with $\ell$ depending on the first factor alone.
 
@@ -62,9 +54,7 @@ where $\mathrm{Sc}(\tilde Q_1)=X_t$ is the scalar coordinate; and no other one o
 
 **Theorem (the shape of the operator).** For all $\tilde Q_1,\tilde Q_2$,
 
-$$
-L_{\tilde Q_1}(\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\,e_t .
-$$
+$$ \boxed{\; L_{\tilde Q_1}(\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\,e_t \;}. $$
 
 For $\tilde Q_1\neq0$ the operator has image the central line $\mathbb{C}e_t$, kernel the hyperplane $\langle\tilde Q_1,\cdot\rangle_{\natural}=0$, and rank one; it is the zero operator exactly at $\tilde Q_1=0$.
 

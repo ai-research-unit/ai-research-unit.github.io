@@ -13,15 +13,15 @@ $$
 so the biquaternion norm carries exactly one real number, the Bloch radius squared; and the spectrum of the state depends on the state only through that number, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$. The entropy is therefore
 
 $$
-S(\tilde{Ϛ}) = h\!\left(\frac{1+|\vec r|}{2}\right)
+\boxed{\;S(\tilde{Ϛ}) = h\!\left(\frac{1+|\vec r|}{2}\right)
 = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right),
-\qquad h(p) = -p\log p - (1-p)\log(1-p),
+\qquad h(p) = -p\log p - (1-p)\log(1-p)\;},
 $$
 
 a function of $\langle\cdot\rangle_{\natural}$ and nothing else. Equivalently, since the deviation of a state from idempotency is
 
 $$
-\tilde{Ϛ}^2 - \tilde{Ϛ} = -\langle\tilde{Ϛ}\rangle_{\natural}\,e_t ,
+\boxed{\;\tilde{Ϛ}^2 - \tilde{Ϛ} = -\langle\tilde{Ϛ}\rangle_{\natural}\,e_t\;},
 $$
 
 the entropy is a function of the single scalar by which the state fails to be idempotent. Pure states are the zero divisors of the biquaternion norm, maximally mixed is its maximum on the state space, and entropy measures the position of the state between them.
@@ -129,9 +129,9 @@ $$
 Since $|\vec r| = \sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}$ on the trace-one slice, this is a function of the biquaternion norm alone:
 
 $$
-S(\tilde{Ϛ}) = H\!\left(\langle\tilde{Ϛ}\rangle_{\natural}\right),
+\boxed{\;S(\tilde{Ϛ}) = H\!\left(\langle\tilde{Ϛ}\rangle_{\natural}\right),
 \qquad
-H(N) = h\!\left(\frac{1+\sqrt{1-4N}}{2}\right).
+H(N) = h\!\left(\frac{1+\sqrt{1-4N}}{2}\right)\;}.
 $$
 
 The function $H$ is defined on the interval $N\in[0,\tfrac14]$ that the biquaternion norm takes on the state space. At the pure-state end $N=0$ it gives $H(0) = h(1) = 0$; at the maximally mixed end $N=\tfrac14$ it gives $H(\tfrac14) = h(\tfrac12) = \log 2$. On the interior it is smooth and strictly increasing, because $h$ is decreasing on $[\tfrac12,1]$ and $\sqrt{1-4N}$ is decreasing. Its derivative,
@@ -186,7 +186,7 @@ On the state space the purity ranges over $[\tfrac12,1]$ and the biquaternion no
 Since $\langle\tilde{Ϛ}\rangle_{\natural}\in[0,\tfrac14]$ and $H$ is increasing,
 
 $$
-0 \;\leq\; S(\tilde{Ϛ}) \;\leq\; \log 2 ,
+\boxed{\;0 \;\leq\; S(\tilde{Ϛ}) \;\leq\; \log 2\;},
 $$
 
 with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log 2$ exactly at the maximally mixed state, the unique maximizer. The upper bound is the dimension of the module in nats, $\log\dim_{\mathbb{C}}S = \log2$, and it is attained at the centre of the Bloch ball, which is also the point where the biquaternion norm takes its maximal value $\tfrac14$ on the trace-one slice.

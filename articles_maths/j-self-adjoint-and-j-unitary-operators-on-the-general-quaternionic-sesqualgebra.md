@@ -12,14 +12,12 @@ for which the operators of the algebra can be self-adjoint, skew-adjoint, unitar
 
 The general theory is *J-Self-Adjoint and J-Unitary Operators* and *Krein Spaces*; the symmetry and the bridge are *The Fundamental Symmetry of the Biquaternion Algebra*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the definite counterpart is *Two-Sided Operators on the General Plain Sesqualgebra*, *One-Sided Operators on the General Plain Sesqualgebra* and *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the spectral consequences are *The Indefinite Spectra of the Operators on the Biquaternion Algebra*.
 
-**Conventions.** Operators act on $\mathbb{B}$; $\Theta_{\tilde{Q}}(\tilde Q_2)=\tilde{Q}\tilde Q_2\tilde{Q}^{*}$ is the dagger sandwich, $L_{\tilde{Q}}(\tilde Q_2)=\tilde{Q}\tilde Q_2$, $R_{\tilde{Q}}(\tilde Q_2)=\tilde Q_2\tilde{Q}$; ${}^{*}$ is the adjoint for the general plain sesquilinear form $\langle\cdot,\cdot\rangle$, so that $L_{\tilde{Q}}^{*}=L_{\tilde{Q}^{*}}$ and $R_{\tilde{Q}}^{*}=R_{\tilde{Q}^{*}}$ (*One-Sided Operators on the General Plain Sesqualgebra*); $J={}^{\natural}$, and $\bar{\tilde{Q}}$ denotes the coefficient (complex) conjugation. The **$J$-adjoint** is $T^{\dagger}=JT^{*}J$; convergence is automatic, $\mathbb{B}$ being finite-dimensional.
-
 ## The $J$-Adjoint
 
 **Proposition (characterisation and calculus).** $T^{\dagger}=JT^{*}J$ is the unique operator with
 
 $$
-\langle\tilde{Q}_1,T\tilde{Q}_2\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}\qquad\text{for all }\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B},
+\boxed{\; \langle\tilde{Q}_1,T\tilde{Q}_2\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}\qquad\text{for all }\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B} \;},
 $$
 
 it is involutive, $(T^{\dagger})^{\dagger}=T$, and antimultiplicative,
@@ -57,10 +55,10 @@ The natural conjugation exchanges the sides, and this propagates to the adjoints
 **Theorem (the adjoints).** For all $\tilde{Q},\tilde Q_3\in\mathbb{B}$,
 
 $$
-\bigl(L_{\tilde{Q}}\bigr)^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
+\boxed{\; \bigl(L_{\tilde{Q}}\bigr)^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
 \bigl(R_{\tilde Q_3}\bigr)^{\dagger}=L_{\bar{\tilde Q_3}},\qquad
 \bigl(L_{\tilde{Q}}R_{\tilde Q_3}\bigr)^{\dagger}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde{Q}}},\qquad
-\bigl(\Theta_{\tilde{Q}}\bigr)^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}},
+\bigl(\Theta_{\tilde{Q}}\bigr)^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}} \;},
 $$
 
 where $\bar{\tilde{Q}}$ is the coefficient conjugate and ${}^{\natural}\tilde{Q}$ the natural conjugate of the parameter.
@@ -90,9 +88,9 @@ $$
 **Theorem (unitarity criteria).**
 
 $$
-L_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff\tilde{Q}\in S^{1}e_t,
+\boxed{\; L_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff\tilde{Q}\in S^{1}e_t,
 \qquad
-\Theta_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1.
+\Theta_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1 \;}.
 $$
 
 **Proof.** $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$, and $R_{\bar{\tilde{Q}}}L_{\tilde{Q}}(\tilde Q_2)=\bar{\tilde{Q}}\tilde Q_2\tilde{Q}$; this is the identity exactly when $\tilde{Q}$ is central and $\bar{\tilde{Q}}\tilde{Q}=e_t$, that is $\tilde{Q}\in S^{1}e_t$. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\cdot\tilde{Q}}=\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t}$, since ${}^{\natural}\tilde{Q}\cdot\tilde{Q}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t$ — the identity $\mathrm{adj}(M)M=\det(M)I$ in the matrix model; and $\Theta_{\tilde{Q}}=\mathrm{id}$ exactly when $\tilde{Q}\in \mathrm{U}(1)e_t$, so the condition is $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1$.

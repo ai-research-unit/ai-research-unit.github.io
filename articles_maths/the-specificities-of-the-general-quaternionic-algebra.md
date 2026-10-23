@@ -14,17 +14,13 @@ the left multiplication of the quaternionic product by $\tilde Q_1$ is the **pla
 
 This article collects the consequences. The projector criterion becomes "(the conjugate of) a plain idempotent", the left ideals of the quaternionic product are exactly the left ideals of the plain product, the square-zero operators come from the pure isotropic cone, and the two classes are strictly smaller than the nilpotent cone of the algebra. The paradoxical corollary is that the plain idempotents are $\star$-**nilpotents** whose left multiplication is a **projector**, so the quaternionic product realises a projector on an element of vanishing square, a combination the plain product forbids. The twinned article is *The Specificities of the Biquaternion Algebra*, which states why the plain product alone carries the theory as a theorem.
 
-**Placement.** The article is the fifth entry, and the synthesis, of the *Specific Theory* section of the general quaternionic algebra, after *The Associator and the Ternary Product of the Quaternionic Product*, *The Symmetrised Quaternionic Product and the Hermitian Subspace*, *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Quaternionic Product on the Quaternion Subspace*. It uses the isotope reading of *Introduction to the General Quaternionic Algebra*, the monoid law of *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, the idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, the norm and the one-sided equations of *Norm and Invertibility in the General Quaternionic Algebra*, the zero divisors and their annihilators of *Zero Divisors of the General Quaternionic Algebra*, the nilpotent cone of *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, the plain element classes of *Idempotents of the General Plain Algebra* and *Nilpotents of the General Plain Algebra*, and the plain left ideals of *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. Juxtaposition is the **plain** product $\tilde Q_1\tilde Q_2$ and $\star$ is the **quaternionic product** $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$; the subscript of an operator is the element it is indexed by, so $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\star\tilde Q_2$ and $L_{\tilde Q_1}L_{\tilde Q_4}$ is the composite. The natural conjugation is ${}^{\natural}$, $\tilde Q_2^{\natural}=Q_{2t}-\vec Q_2$, the coefficientwise conjugation is $\overline{\cdot}$, and the star is their composite ${}^{*}=\overline{\cdot}\circ{}^{\natural}$; all three fix $e_t$. The **norm** is the central square $\langle\tilde Q\rangle_{\natural}e_t=\tilde Q\tilde Q^{\natural}$ with $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, and its vanishing set is the zero-divisor cone (*Norm and Invertibility in the General Quaternionic Algebra*, *Zero Divisors of the General Quaternionic Algebra*). An element is **pure** when its scalar part vanishes, and **isotropic** when its vector part satisfies $(\vec Q_1,\vec Q_1)=0$ for the complex bilinear form $(\vec Q_1,\vec Q_2)=\sum_k Q_{1,k}Q_{2,k}$. An **idempotent** of the algebra is an element equal to its own square, and a **projector** is an idempotent operator, that is an idempotent of the morphism space; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of §*The Projectors* is exactly that correspondence, with the index conjugated.
-
 ## The Isotope Identity
 
 **Proposition (the left multiplications are plain ones).** For every $\tilde Q_1$,
 
 $$
-L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}},\qquad
-L_{\tilde Q_1}L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1} .
+\boxed{\; L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}},\qquad
+L_{\tilde Q_1}L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1} \;}.
 $$
 
 **Proof.** The first display is the definition of $\star$ read as an operator identity, $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1^{\natural}\tilde Q_2$. For the second, $L_{\tilde Q_1}L_{\tilde Q_4}(\tilde Q_2)=\tilde Q_1^{\natural}(\tilde Q_4^{\natural}\tilde Q_2)=(\tilde Q_1^{\natural}\tilde Q_4^{\natural})\tilde Q_2$, and $\tilde Q_1^{\natural}\tilde Q_4^{\natural}=(\tilde Q_4\tilde Q_1)^{\natural}$ because ${}^{\natural}$ is an anti-automorphism, so the composite is $L_{\tilde Q_4\tilde Q_1}(\tilde Q_2)$.
@@ -52,7 +48,7 @@ The faithfulness is what makes the dictionary invertible: an operator identity o
 **Corollary (a projector on a square-zero element).** Every nontrivial plain idempotent $\tilde\Pi$ is a **nilpotent** of $\star$, and its $\star$-left multiplication is a projector,
 
 $$
-\tilde\Pi\star\tilde\Pi=\tilde\Pi^{\natural}\tilde\Pi=\langle\tilde\Pi\rangle_{\natural}e_t=0,\qquad L_{\tilde\Pi}^{2}=L_{\tilde\Pi}\neq0 .
+\boxed{\; \tilde\Pi\star\tilde\Pi=\tilde\Pi^{\natural}\tilde\Pi=\langle\tilde\Pi\rangle_{\natural}e_t=0,\qquad L_{\tilde\Pi}^{2}=L_{\tilde\Pi}\neq0 \;}.
 $$
 
 **Proof.** The middle equality is the central-square identity of the plain product, and $\langle\tilde\Pi\rangle_{\natural}=0$ for a nontrivial idempotent because $\tilde\Pi\tilde\Pi^{\natural}=0$ makes it a zero divisor of the non-pure family (*Zero Divisors of the Biquaternion Algebra*); the first equality is the definition of $\star$, and the operator statement is the theorem of §*The Projectors*. The two displays are compatible because they concern different objects: the *element* is square-zero, the *operator* is a projector.
@@ -64,8 +60,8 @@ The corollary is worth pausing on. In the plain algebra an idempotent and a nilp
 **Proposition (orthogonal projectors).** Let $\tilde\Pi_1$ be a nontrivial plain idempotent and let $\tilde\Pi_2=e_t-\tilde\Pi_1$. Then
 
 $$
-L_{\tilde\Pi_1}+L_{\tilde\Pi_2}=\mathrm{Id},\qquad L_{\tilde\Pi_1}L_{\tilde\Pi_2}=0,\qquad
-\mathbb{B}=\tilde\Pi_1\star\mathbb{B}\oplus\tilde\Pi_2\star\mathbb{B},
+\boxed{\; L_{\tilde\Pi_1}+L_{\tilde\Pi_2}=\mathrm{Id},\qquad L_{\tilde\Pi_1}L_{\tilde\Pi_2}=0,\qquad
+\mathbb{B}=\tilde\Pi_1\star\mathbb{B}\oplus\tilde\Pi_2\star\mathbb{B} \;},
 $$
 
 and each summand is a minimal left ideal of the plain algebra of complex dimension two.

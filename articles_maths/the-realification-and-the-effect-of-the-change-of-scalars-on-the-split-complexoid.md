@@ -13,9 +13,11 @@ The general construction is *The Realification and the Effect of the Change of S
 Read over itself, $\mathbb{D}$ is a free module of rank one on the basis $1$: every element is $\lambda\cdot1$ with $\lambda\in\mathbb{D}$, and the only $\mathbb{D}$-submodules are the ideals. Read over $\mathbb{R}$, it is a real vector space of dimension two on the basis $1,j$. The passage from the first reading to the second is restriction of scalars, and the dimension doubles:
 
 $$
+\boxed{\;
 \dim_{\mathbb{D}}\mathbb{D}=1,
 \qquad
-\dim_{\mathbb{R}}\mathbb{D}=2,
+\dim_{\mathbb{R}}\mathbb{D}=2
+\;},
 $$
 
 the real basis being $1,j$. The general proposition that the dimension doubles holds as stated, with a $\mathbb{D}$-basis $e_1$ giving the $\mathbb{R}$-basis $e_1,je_1$; the difference from the complex prototype is that the scalar algebra is the ring $\mathbb{D}$ rather than a field, so that the module theory over it is the theory of the ideals, not the theory of a vector space over a field. The rank-one module is $\mathbb{D}$ itself, and its proper non-zero submodules are the two idempotent lines.
@@ -71,7 +73,7 @@ $$
 with real $t_1,t_2,s_1,s_2$. The commuting maps are the multiplications by an element of $\mathbb{D}$, $T=\lambda\,\mathrm{id}$, $\lambda=\tfrac12(t_1+t_2)+\tfrac12(t_1-t_2)j$, a family of real dimension two isomorphic to $\mathbb{D}$ itself; the anticommuting maps are the conjugate-$\mathbb{D}$-linear maps, $S(Q)=\lambda\bar Q$, also of real dimension two. The two families span the four-dimensional space of $\mathbb{R}$-linear maps,
 
 $$
-\operatorname{End}_{\mathbb{R}}(\mathbb{D})=\operatorname{End}_{\mathbb{D}}(\mathbb{D})\oplus\operatorname{Ant}_{\mathbb{D}}(\mathbb{D}),
+\boxed{\; \operatorname{End}_{\mathbb{R}}(\mathbb{D})=\operatorname{End}_{\mathbb{D}}(\mathbb{D})\oplus\operatorname{Ant}_{\mathbb{D}}(\mathbb{D}) \;},
 $$
 
 each summand of real dimension two. The shapes are the split reading of the complex blocks: there the commuting maps had the block $\begin{pmatrix}a_1&-a_2\\a_2&a_1\end{pmatrix}$ and the anticommuting ones $\begin{pmatrix}a_1&a_2\\a_2&-a_1\end{pmatrix}$, with real $a_1,a_2$; here the same two shapes, read in the eigenbasis, become the algebraic norm and the anti-algebraic norm, because $J$ has real eigenvalues rather than the pair $+i,-i$.
@@ -83,9 +85,11 @@ each summand of real dimension two. The shapes are the split reading of the comp
 The realification of a form is its real part, read on $\mathbb{D}$ as a two-dimensional real space, and the two kinds of form realify by two rules: a form whose structure-action is $-1$ realifies to the **split signature** $(n,n)$, and a form whose structure-action is $+1$ realifies by **doubling its inertia**. The two signs are the ones of the proposition of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*,
 
 $$
+\boxed{\;
 \langle JQ_1,JQ_2\rangle=+\langle Q_1,Q_2\rangle,
 \qquad
-\langle JQ_1,JQ_2\rangle_{*}=-\langle Q_1,Q_2\rangle_{*},
+\langle JQ_1,JQ_2\rangle_{*}=-\langle Q_1,Q_2\rangle_{*}
+\;},
 $$
 
 so on $\mathbb{D}$ **the two forms take the two rules in the order opposite to the complex one**. The bilinear form has the $+1$ action, so it is the Hermitian rule that applies to it, and its realification is the definite form of signature $(2,0)$; the Hermitian form has the $-1$ action, so it is the bilinear rule that applies, and its realification is the indefinite form of signature $(1,1)$. The general corollary, read on the two forms, is

@@ -12,8 +12,6 @@ The glyph $\mathbb{B}_{\mathrm{r}}$ and the element $\breve Q=Q_{\blacktriangle}
 
 Three warnings are stated at once and repeated wherever they bear on a result. The algebra is **commutative and associative**, so it is not a matrix algebra and not a quaternion algebra; it **has zero divisors**, so it is not a field and not a division algebra, and an element is invertible exactly when a single complex number, its reduced norm, is nonzero; and the **algebraic norm is an element of the algebra**, while the **topological norm is a positive real**. The two are different objects and are never conflated (*Norm and Invertibility in the Algebra of the Reduced Biquaternions*).
 
-**Boundaries.** The space as a real and as a complex vector space, the change of scalars and the realification are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*, below this article in this category. The involutions, their fixed and anti-fixed spaces and the group they generate are *The Two Involutions and the Group of Involutions*, below this article. The four general products and the forms and algebraic norms they carry are *The Four Products, Their Forms and Their Algebraic Norms*, below this article; the multiplication read as an algebra is *Introduction to the Algebra of the Reduced Biquaternions*. The conjugations, the idempotents and the roots are named here only as far as the space requires.
-
 ## The Algebra
 
 ### The Basis and the Defining Relations

@@ -42,7 +42,6 @@ $$
 
 up to the overall normalisation, which is a convention; varying with respect to $\bar{\psi}_\mu$ returns the equation displayed above. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair $\gamma^{\mu\nu}$, not the Clifford metric $g^{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2A_\mu A^\mu$.
 
-
 ### The constraint and the reduction
 
 The massive equation implies the trace in two contractions, and the same two contractions deliver the reduced dynamics. Write $S := \gamma^\sigma\psi_\sigma$ for the trace spinor. Taking the divergence of the equation kills the kinetic term, because $\gamma^{\mu\sigma\rho}$ is antisymmetric in its first and third indices, and leaves, using $\gamma^{\mu\sigma} = \gamma^\mu\gamma^\sigma - g^{\mu\sigma}$,
@@ -160,7 +159,7 @@ the external complex unit $i_{\mathrm{Cl}}$ of the complexified Clifford algebra
 For the free field the antisymmetrized equation is equivalent to the pair of equations
 
 $$
-(i\not\partial-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0 ,
+\boxed{\;(i\not\partial-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0\;},
 $$
 
 in the following sense. If each component satisfies the Dirac equation, if the trace constraint holds and if the divergence constraint $\partial^\mu\psi_\mu=0$ holds, then the antisymmetrized equation follows; conversely, the antisymmetrized equation implies the component Dirac equations and the trace, and in the massive case the divergence as well. The reduction is standard for the free theory, and it is the form adapted to the algebra, because the Dirac equation on a biquaternion component is exactly the biquaternionic Dirac equation of the companion article, and the trace constraint is an algebraic condition on the index contraction. In the rest frame the two descriptions have the same four-dimensional solution space, and the explicit computation below verifies this.
@@ -172,7 +171,6 @@ $$
 $$
 
 up to the index-position conventions that translate $\gamma^\mu$ into the basis, and its independence is what makes the constraint algebraic. In the explicit rest-frame computation below the contraction is carried out with the Dirac matrices directly, so that no convention is left implicit.
-
 
 ## The Rest-Frame Reduction
 
@@ -197,8 +195,8 @@ $$
 so the trace constraint reads, in its two chiral halves,
 
 $$
-\psi_0 = 0 \quad\text{(upper)}, \qquad
--\boldsymbol{\sigma}\cdot\vec\chi = 0 \quad\text{(lower)} .
+\boxed{\;\psi_0 = 0 \quad\text{(upper)}, \qquad
+-\boldsymbol{\sigma}\cdot\vec\chi = 0 \quad\text{(lower)}\;}.
 $$
 
 The lower equation gives $\boldsymbol{\sigma}\cdot\vec\chi=0$; the upper gives $\psi_0 = 0$. The trace constraint therefore forces the time component to vanish **and** imposes the single vector condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the three spatial amplitudes. The combined system of the Dirac equation on all four components and the trace constraint has nullity four, the constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ has nullity four, and the two solution spaces coincide.
@@ -224,7 +222,7 @@ Three further checks were run at a generic on-shell momentum, where $\vec k$ has
 The constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ defines a subspace of the six-dimensional space of spatial amplitudes — three vector directions, two spinor components each — and the projector onto it is elementary. Define, on the vector index,
 
 $$
-P_{ij} = \delta_{ij} - \tfrac13\,\sigma_i\sigma_j .
+\boxed{\;P_{ij} = \delta_{ij} - \tfrac13\,\sigma_i\sigma_j\;}.
 $$
 
 Then $P$ is idempotent,
@@ -249,7 +247,6 @@ $$
 $$
 
 where $\epsilon$ is a Dirac-spinor parameter and $\partial/\partial Q_\mu$ is the coordinate derivative. The shift is the derivative of the parameter, not the gradient component $e_\mu\partial/\partial Q_\mu$: the basis factor $e_\mu$ would survive the antisymmetrization and the invariance would fail. The transformation shifts the field by a gradient, and the antisymmetrized kinetic structure of the equation is insensitive to it, just as the electromagnetic field strength is insensitive to a gradient of the potential. The number of gauge parameters is the number of components of $\epsilon$, namely four, which is one Dirac spinor; and the gauge freedom removes two of the four spin-$\tfrac12$ multiplets of the representation content. The remaining two are removed by the trace condition and the equations of motion — with the difference, recorded above, that in the massless case the trace is a gauge choice and the divergence condition is the consequence of the equation, so that the two mechanisms do not simply add but interlock. What is left is a single spin-$\tfrac32$ multiplet per frequency sign, that is, the two helicities $\pm\tfrac32$.
-
 
 ### Helicities and the two physical states
 

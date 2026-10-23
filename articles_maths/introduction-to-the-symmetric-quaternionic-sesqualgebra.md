@@ -13,8 +13,6 @@ the **symmetric quaternionic sesquilinear product**, abbreviated $\mathrm{SQS}$.
 
 The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the general quaternionic sesquilinear product, its two orders, its one-sided actions and its operators are *Introduction to the General Quaternionic Sesqualgebra*, *The Two One-Sided Actions and the Absence of a Unit* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Krein Gram Matrix and the Restrictions of the Form*; and the two halves of the split, with the antisymmetric part $\vec Q_1\times\overline{\vec Q_2}$, are *The 12 Products of the Biquaternion Complex Space*, whose table places the block among the twelve. This article owns the introduction of the block; the diagonal, the halves, the form, the remarkable subspaces, the operators and the two matrix models are the five articles that follow.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_\mu^{2}=-e_t$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; $i$ is the central scalar imaginary; $\mathrm{Sc}$ is the scalar part and $\vec Q=\sum_\mu Q_\mu\vec e_\mu$ the vector part; ${}^{\natural}$ is the natural conjugation, negating $\vec e_x,\vec e_y,\vec e_z$ and fixing the complex coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation, the bar being the coefficientwise complex conjugation; $(\vec Q_1,\vec Q_2)=\sum_\mu Q_{1\mu}Q_{2\mu}$ is the bilinear dot product and $\times$ the bilinear cross product; $\varepsilon=(1,-1,-1,-1)$ is the sign vector. The product of this article is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$.
-
 ## The Product
 
 **Definition (the class and its two slot involutions).** Let $\star$ be a product on the complex space $\mathbb{B}$ that is $\mathbb{C}$-linear in its first argument and $\bar{\cdot}$-semilinear in its second, so that $(\lambda\tilde Q_1)\star\tilde Q_2=\lambda(\tilde Q_1\star\tilde Q_2)$ and $\tilde Q_1\star(\lambda\tilde Q_2)=\overline{\lambda}(\tilde Q_1\star\tilde Q_2)$; such a product is a **sesquilinear product over $(\mathbb{C},\bar{\cdot}\,)$**, and the definition is stated once and for all in *The Sesquilinear Product*. The four general products of the space are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the product of the fourth general row carries the two slot involutions that the class uses, the natural conjugation ${}^{\natural}$ in the first slot and the Hermitian conjugation ${}^{*}$ in the second; the block is the part of that product that the adapted exchange fixes, and the exchange is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. The definition below fixes the two slot involutions and the two orders, and the tables that follow are read from it.
@@ -29,9 +27,7 @@ the half-sum of the two orders of the general quaternionic sesquilinear product,
 
 **Theorem (the scalar–vector form).** For all biquaternions,
 
-$$
-\tilde Q_1\star\tilde Q_2=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1.
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 \;}. $$
 
 The scalar part is the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ and the vector part is the mixed term $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$.
 
@@ -59,9 +55,7 @@ $$
 
 **Theorem (conjugate-commutativity).** The product is conjugate-commutative:
 
-$$
-\tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1}.
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1} \;}. $$
 
 *Proof.* The coefficientwise conjugation satisfies $\overline{\tilde Q_1^{\natural}}=\tilde Q_1^{*}$ and $\overline{\tilde Q_2^{*}}=\tilde Q_2^{\natural}$, so $\overline{\tilde Q_2\star\tilde Q_1}=\tfrac12\bigl(\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}+\overline{\tilde Q_1^{*}\tilde Q_2^{\natural}}\bigr)=\tfrac12\bigl(\tilde Q_2^{*}\tilde Q_1^{\natural}+\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\tilde Q_1\star\tilde Q_2$.
 
@@ -88,9 +82,11 @@ where $\mathrm{SPA}(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde 
 **Theorem (the two actions of $e_t$).** For every biquaternion,
 
 $$
+\boxed{\;
 e_t\star\tilde Q=\tilde Q^{*},
 \qquad
-\tilde Q\star e_t=\tilde Q^{\natural}.
+\tilde Q\star e_t=\tilde Q^{\natural}
+\;}.
 $$
 
 *Proof.* $e_t\star\tilde Q=\tfrac12\bigl(e_t^{\natural}\tilde Q^{*}+\tilde Q^{*}e_t^{\natural}\bigr)=\tfrac12(\tilde Q^{*}+\tilde Q^{*})=\tilde Q^{*}$, since $e_t^{\natural}=e_t$ is the unit of the plain product; the second is the conjugate-commutative mirror, or the same computation with the factors exchanged.

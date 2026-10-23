@@ -35,7 +35,7 @@ The three families are nested; a left-affine map is two-sided with $\tilde Q_3=e
 **Theorem (the similarity multipliers).** Let $\tilde Q_1$ be a real quaternion of positive norm, $\tilde Q_1\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde Q_1\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde Q_1$ is a similarity of the eight-dimensional space with ratio $\rho$,
 
 $$
-\|\tilde Q_1\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q ,
+\boxed{\;\|\tilde Q_1\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q\;},
 $$
 
 so $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a similarity with ratio $\rho$ and is a contraction exactly when $\rho<1$.
@@ -51,7 +51,7 @@ so $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a similarity with ratio $\rho$
 **Theorem (the attractor).** Let $f_1,\dots,f_m$ be contractions of $\mathbb{B}$ with constants $r_i<1$. There is a unique non-empty compact set $K\subset\mathbb{B}$ with
 
 $$
-K=\bigcup_{i=1}^m f_i(K),
+\boxed{\;K=\bigcup_{i=1}^m f_i(K)\;},
 $$
 
 the **attractor** of the system, and for every non-empty compact $E$ the iterates of $E$ under the Hutchinson operator converge to $K$ in the Hausdorff metric.
@@ -61,7 +61,7 @@ the **attractor** of the system, and for every non-empty compact $E$ the iterate
 **Theorem (the similarity dimension).** If in addition every $f_i$ is a similarity of ratio $r_i$ and the open set condition holds, then the Hausdorff dimension of the attractor is the unique $s$ with
 
 $$
-\sum_{i=1}^m r_i^s=1 ,
+\boxed{\;\sum_{i=1}^m r_i^s=1\;},
 $$
 
 and the Hausdorff measure in dimension $s$ of the attractor is positive and finite.

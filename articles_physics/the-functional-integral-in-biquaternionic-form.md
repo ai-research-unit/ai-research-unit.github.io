@@ -41,16 +41,6 @@ where $\langle\cdot,\cdot\rangle$ is built from $\mathrm{Sc}$ and the determinan
 
 The article proceeds as follows. The next section distinguishes the functional integral from the path integral. A section fixes the field, its two sectors, and the central-scalar action. Two sections evaluate the Gaussian functional integral and verify it in finite dimension. A section exhibits the sector factorization. A section treats the free scalar field explicitly, a section the Euclidean rotation, and a section the measure and the gap. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$. The sectors are
-$$
-\mathbb{M}_- = \mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
-\qquad
-\mathbb{M}_+ = \mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
-\qquad
-\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
-$$
-the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ are the real-quaternion subspace and the centre. The isomorphism is $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ with $\mathrm{Sc}$ the $e_t$ coefficient, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material coordinate is $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the mass shell in momentum space is $\tilde P\tilde P^{\natural}=-m^2$ for $\tilde P=iEe_t+\vec p$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, and *The S-Matrix in Biquaternionic Form*.
-
 ## The Functional Integral and the Path Integral
 
 The distinction is worth making precisely, because the two share a notation and not a meaning.
@@ -115,8 +105,8 @@ a Gaussian in the source.
 
 **The biquaternion case.** A field $\tilde\Phi$ valued in $\mathbb{B}$ has, at each mode, two complex components — the dimension of the spinor module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$. The quadratic form is built from $\mathrm{Sc}$, which is a real bilinear pairing, and the Gaussian integral over the module is
 $$
-\int \mathcal{D}\tilde\Phi\; \exp(-\frac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle + \langle\tilde J,\tilde\Phi\rangle)
-= \big(\det K_{\mathrm{kin}}\big)^{-1/2}\, \exp(\frac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle),
+\boxed{\;\int \mathcal{D}\tilde\Phi\; \exp(-\frac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle + \langle\tilde J,\tilde\Phi\rangle)
+= \big(\det K_{\mathrm{kin}}\big)^{-1/2}\, \exp(\frac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle)\;},
 $$
 where $\langle\tilde\Phi,\tilde\Psi\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde\Phi^{*}\tilde\Psi)$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+m^2$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$; the Lorentzian action's operator $K_{\mathrm{kin}}=\Box-m^2$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $K_{\mathrm{kin}}^{-1}$. The determinant is the object that *The Functional Determinant in Biquaternionic Form* computes; this article records only that the Gaussian integral reduces to it.
 
@@ -144,13 +134,12 @@ $$
 
 **Proof.** It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\Phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\tilde\Phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} K_{\mathrm{kin}} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
 
-
 **Consequence: factorisation.** With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is
 $$
-Z_0[\tilde J] = \int\mathcal{D}\tilde\Phi_-\,\exp(-\frac12\langle\tilde\Phi_-,K_{\mathrm{kin}}\tilde\Phi_-\rangle+\langle\tilde J_-,\tilde\Phi_-\rangle)
+\boxed{\;Z_0[\tilde J] = \int\mathcal{D}\tilde\Phi_-\,\exp(-\frac12\langle\tilde\Phi_-,K_{\mathrm{kin}}\tilde\Phi_-\rangle+\langle\tilde J_-,\tilde\Phi_-\rangle)
 \times
 \int\mathcal{D}\tilde\Phi_+\,\exp(-\frac12\langle\tilde\Phi_+,K_{\mathrm{kin}}\tilde\Phi_+\rangle+\langle\tilde J_+,\tilde\Phi_+\rangle)
-= Z_-[J_-]\,Z_+[J_+] .
+= Z_-[J_-]\,Z_+[J_+]\;}.
 $$
 Each factor is a Gaussian integral on one sector's four-real-dimensional space, of the form evaluated above. The free quadratic form is therefore **block diagonal**, and the free integral factorizes into a Gaussian on each sector; the sectors are coupled only through an interaction $S_{\mathrm{int}}$ that is not sector-diagonal. A central kinetic operator cannot couple them; a chirality-off-diagonal Dirac mass can, because it is a right multiplication and so is not central.
 
@@ -274,9 +263,9 @@ S[\tilde\Phi]=\int d^4x\;\Big\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\Big\ra
 $$
 the cross terms vanishing identically over the sector bases (their real part is exactly zero; the leftover complex cross part is purely imaginary and central), so that
 $$
-Z_0[\tilde J]=Z_-[J_-]\,Z_+[J_+] ,
+\boxed{\;Z_0[\tilde J]=Z_-[J_-]\,Z_+[J_+] ,
 \qquad
-Z_\pm[J_\pm]=\big(\det K_{\mathrm{kin},\pm}\big)^{-1/2}\exp(\frac12\langle J_\pm,K_{\mathrm{kin},\pm}^{-1}J_\pm\rangle).
+Z_\pm[J_\pm]=\big(\det K_{\mathrm{kin},\pm}\big)^{-1/2}\exp(\frac12\langle J_\pm,K_{\mathrm{kin},\pm}^{-1}J_\pm\rangle)\;}.
 $$
 The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.9165$, $Z[J]=23.964$, and $W[J]-W[0]=J^2/(2a)$ in one dimension), and the determinant factorizes for a block-diagonal $K_{\mathrm{kin}}$.
 

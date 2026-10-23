@@ -14,8 +14,6 @@ The evidence base is the framework's established articles, in the order of the r
 | **Obstacle with a known route** | The object does not exist, but the computation that would produce it is identifiable |
 | **Obstacle with no route yet** | No mechanism has been proposed; naming an object is not a route to it |
 
-**Conventions.** The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $\vec e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$. Real coordinates are $x^\mu = (ct',x,y,z)$; a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$. Standard cosmology's $a(t')$, $k$, $H$, $\rho$, $p$, $w$, and $\Lambda$ are **not** framework objects; they are written where the standard constructions are named as targets, and the framework supplies none of them. Nothing inherited is renamed or rederived.
-
 ## The Constructions Cosmology Would Require
 
 Cosmology is a specific application of gravity, and it is worth stating the application precisely so that the gaps can be located. The standard constructions are three, and each is a target here rather than a framework result.
@@ -30,11 +28,9 @@ with a function and a parameter: the **scale factor** $a(t')$, which carries the
 
 **The Friedmann equations, and what closes them.** Evaluating the Einstein equations on that metric gives
 
-$$
-H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
+$$\boxed{\;H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
 \qquad
-\frac{d^2a/d{t'}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3},
-$$
+\frac{d^2a/d{t'}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
 
 where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\nabla_\mu T^{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
 
@@ -65,7 +61,7 @@ $$
 where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_0 = ie_t$, $\tilde{E}_i = a\,\vec e_i$, the Gram matrix is exactly
 
 $$
-\langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right),
+\boxed{\;\langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right)\;},
 $$
 
 recomputed here from the inherited bilinear form. This is the FLRW metric with $k=0$ and arbitrary scale factor, carried in the algebra's own operations.
@@ -144,7 +140,7 @@ This is the obstacle specific to cosmology, and it is where the framework's inva
 The Friedmann equations require the **perfect-fluid stress–energy tensor**, a symmetric rank-two tensor with two independent thermal functions $\rho$ and $p$ and a four-velocity. The framework's objects are different in kind. The algebra has no faithful rank-two object. The bilinear sum
 
 $$
-\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\eta^{\mu\nu}T_{\mu\nu}\right) e_t
+\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\eta^{\mu\nu}T_{\mu\nu}\right) e_t\;}
 $$
 
 collapses the whole tensor to its trace, and that collapse is the framework's most important structural limitation for cosmology: for a traceless symmetric object the packaging vanishes identically. The consequences for the cosmological source are immediate and sharp.

@@ -22,13 +22,11 @@ The binary tetrahedral group $2T$ is the group of units of the Hurwitz order, of
 
 The **McKay correspondence** associates to each finite subgroup $\Gamma\subset Sp(1)$ a graph whose vertices are the irreducible representations of $\Gamma$ and whose edges are the tensoring by the two-dimensional defining representation. The resulting graph is an extended (affine) Dynkin diagram, written here with the **affine superscript** $(1)$ so that the tilde stays the mark of an element of the algebra; the correspondence is
 
-$$
-\mathbb Z/n\leftrightarrow A_{n-1}^{(1)},\qquad
+$$ \boxed{\;\mathbb Z/n\leftrightarrow A_{n-1}^{(1)},\qquad
 2D_n\leftrightarrow D_{n+2}^{(1)},\qquad
 2T\leftrightarrow E_{6}^{(1)},\qquad
 2O\leftrightarrow E_{7}^{(1)},\qquad
-2I\leftrightarrow E_{8}^{(1)} .
-$$
+2I\leftrightarrow E_{8}^{(1)}\;}. $$
 
 The correspondence is the bridge between the finite unit groups and the simply laced Lie algebras, and its Clifford and reflection-group lift — the finite reflection groups and their root systems — is stated in *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Root Systems and Classification* of Part II, cited and not restated here.
 

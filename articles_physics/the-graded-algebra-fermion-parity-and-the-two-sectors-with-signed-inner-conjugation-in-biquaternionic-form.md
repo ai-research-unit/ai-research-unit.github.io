@@ -32,7 +32,7 @@ The twist $\alpha$ of the signed inner conjugation is usually introduced as an a
 **Theorem (the grade involution is a conjugation).** Let $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$ be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$
 
 $$
-\Omega\,x\,\Omega^{-1}=(-1)^{\lvert x\rvert}\,x=\alpha(x).
+\boxed{\;\Omega\,x\,\Omega^{-1}=(-1)^{\lvert x\rvert}\,x=\alpha(x)\;}.
 $$
 
 With the dictionary $i\mapsto-\Omega$, the same statement reads: **the grade involution is the conjugation by the central scalar imaginary**, which is the pseudoscalar read on the algebra.
@@ -54,7 +54,7 @@ so the difference between the two conjugations is exactly one factor of the chir
 **Proposition (the signs cancel on composition).** For units $x,z$ of the ambient algebra,
 
 $$
-\mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz},
+\boxed{\;\mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}\;}
 $$
 
 and if $x$ and $z$ are both odd then $xz$ is even and the composite is the **ordinary** inner conjugation $\mathrm{Ad}_{xz}$. The composite is signed exactly when the two factors have opposite parity.
@@ -117,9 +117,9 @@ The first is the twist on the odd slot, where it contributes $-1$; the second is
 The generators $\gamma^1$ and $\gamma^2$ are both odd and both of square $-1$. Their signed conjugations are the reflections $\mathrm{Ad}^{\alpha}_{\gamma^1}=\rho_{\gamma^1}$ and $\mathrm{Ad}^{\alpha}_{\gamma^2}=\rho_{\gamma^2}$, and their composite is
 
 $$
-\mathrm{Ad}^{\alpha}_{\gamma^1}\circ\mathrm{Ad}^{\alpha}_{\gamma^2}
+\boxed{\;\mathrm{Ad}^{\alpha}_{\gamma^1}\circ\mathrm{Ad}^{\alpha}_{\gamma^2}
 =\mathrm{Ad}^{\alpha}_{\gamma^1\gamma^2}
-=\mathrm{Ad}_{\vec e_z},
+=\mathrm{Ad}_{\vec e_z}\;}
 $$
 
 the last equality because $\gamma^1\gamma^2=\vec e_z$ is an element of the biquaternion algebra. The composite is an ordinary conjugation by a bosonic element and is a rotation. Two reflections of determinant $-1$ have composed to a rotation of determinant $+1$, and the composite element is a quaternion unit: the parity word of the isometry is the grading of the two factors.

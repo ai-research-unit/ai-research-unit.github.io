@@ -7,8 +7,6 @@ The left regular representation $\mathsf{M}_4$ of *Introduction to the 4×4 Matr
 
 The regular representation has the advantage that the transposition is the operation it already carries, so the fundamental symmetry $J={}^{\natural}$ needs no adjugate here: it is the plain transposition of the regular matrix. The adjugate appears only in the form, where it contributes the factor $\langle\tilde Q\rangle_{\natural}$, and on the norm-one slice that factor is one and the pairing is exactly twice the general quaternionic sesquilinear form.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$.
-
 ## The Representation
 
 **Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
@@ -30,7 +28,7 @@ so the model carries the natural conjugation as the transposition and the Hermit
 **Theorem (the transposed conjugate-transposed product).** For all biquaternions,
 
 $$
-\mathsf{M}_4(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_4(\tilde Q_1)^{\mathsf{T}}\,\mathsf{M}_4(\tilde Q_2)^{\dagger} ,
+\boxed{\; \mathsf{M}_4(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_4(\tilde Q_1)^{\mathsf{T}}\,\mathsf{M}_4(\tilde Q_2)^{\dagger} \;},
 $$
 
 the product of the transposed first factor with the conjugate-transposed second factor.
@@ -44,7 +42,7 @@ the product of the transposed first factor with the conjugate-transposed second 
 **Theorem (the adjugated conjugate-transpose pairing of the regular matrices).** For all biquaternions,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_4(\tilde Q_1)^{\dagger}\mathsf{M}_4(\tilde Q_2)\bigr) = 2\,\overline{\langle\tilde Q_1\rangle_{\natural}}\,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} ,
+\boxed{\; \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_4(\tilde Q_1)^{\dagger}\mathsf{M}_4(\tilde Q_2)\bigr) = 2\,\overline{\langle\tilde Q_1\rangle_{\natural}}\,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} \;},
 $$
 
 the general quaternionic sesquilinear form of the algebra multiplied by twice the conjugate of the norm.

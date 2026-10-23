@@ -9,8 +9,6 @@ The coefficient ring is kept general, because the two cases differ: over a field
 
 **The article assumes** the homology and cohomology of a finite CW complex, the Lefschetz number of a self-map, the cup and cap products, and the transfer of a finite covering, all of *Algebraic Topology*, being written in this Part. It uses nothing beyond the operator: the manifold enters through its homology and through the fixed set of the homeomorphism.
 
-**The boundaries of the article.** The involution as a structure on the manifold itself — its fixed set as a manifold, its equivariant surgery and its bordism — is not treated here; the fixed set appears only through the homology the operator computes. The general periodic map, of order divisible by a prime other than two, is the subject of *Periodic Maps and the Smith Theory*. The induced involution on the cohomology ring and its interaction with the intersection form belong to *The Involution on the Homology*. The operators built from the involution, with the adjoint as their archetype, are the subject of *The Involution on the Homology Operators*; the equivariant signature and the $G$-signature theorem are those of *Hermitian Pairings and the Equivariant Signature*. Smooth structures and the analytic proofs of the fixed-point formulae are Part III, and no physics is invoked.
-
 ## The Induced Operator and the Group Ring
 
 **Definition.** Let $M$ be a finite CW complex and let $T : M \to M$ be an involution, $T^2 = \mathrm{id}$. Its **induced operator** is the endomorphism

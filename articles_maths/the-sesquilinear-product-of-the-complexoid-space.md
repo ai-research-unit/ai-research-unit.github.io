@@ -53,7 +53,7 @@ $$
 **Theorem.** For all $Q_1,Q_2,Q_3$,
 
 $$
-[Q_1,Q_2,Q_3]= Q_1\bar Q_2\,(\bar Q_3-Q_3).
+\boxed{\;[Q_1,Q_2,Q_3]= Q_1\bar Q_2\,(\bar Q_3-Q_3)\;}.
 $$
 
 **Proof.** $(Q_1\star Q_2)\star Q_3=(Q_1\bar Q_2)\star Q_3=(Q_1\bar Q_2)\bar Q_3=Q_1\bar Q_2\bar Q_3$, and $Q_1\star(Q_2\star Q_3)=Q_1\star(Q_2\bar Q_3)=Q_1\overline{Q_2\bar Q_3}=Q_1\bar Q_2 Q_3$; the difference is $Q_1\bar Q_2(\bar Q_3-Q_3)$.
@@ -87,7 +87,7 @@ $$
 **Theorem (the Jordan triple identity).** For all $Q_1,Q_2,Q_3,Q_4,Q_5$,
 
 $$
-\{Q_1,Q_2,\{Q_3,Q_4,Q_5\}\}=\{\{Q_1,Q_2,Q_3\},Q_4,Q_5\}-\{Q_3,\{Q_2,Q_1,Q_4\},Q_5\}+\{Q_3,Q_4,\{Q_1,Q_2,Q_5\}\}.
+\boxed{\;\{Q_1,Q_2,\{Q_3,Q_4,Q_5\}\}=\{\{Q_1,Q_2,Q_3\},Q_4,Q_5\}-\{Q_3,\{Q_2,Q_1,Q_4\},Q_5\}+\{Q_3,Q_4,\{Q_1,Q_2,Q_5\}\}\;}.
 $$
 
 **Proof.** Both sides equal $Q_1\bar Q_2 Q_3\bar Q_4 Q_5$. On the right the three terms are
@@ -165,7 +165,7 @@ $$
 **Theorem.** For all $Q_1,Q_2$,
 
 $$
-[Q_1,Q_2]=2i\operatorname{Im}(Q_1\bar Q_2), \qquad Q_1\odot Q_2=2\operatorname{Re}(Q_1\bar Q_2).
+\boxed{\;[Q_1,Q_2]=2i\operatorname{Im}(Q_1\bar Q_2), \qquad Q_1\odot Q_2=2\operatorname{Re}(Q_1\bar Q_2)\;}.
 $$
 
 In particular the commutator is purely imaginary and the symmetrised product is real; the commutator is the imaginary part of the Hermitian form and the symmetrisation its real part, each doubled.

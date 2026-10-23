@@ -7,12 +7,10 @@ This article puts the remarkable subspaces of the reduced biquaternion algebra s
 **The results.** The eight spaces are
 
 $$
-\mathbb{C},\quad \mathbb{C}j,\quad \mathbb{R}\{1,j\},\quad \mathbb{R}\{i,ij\},\quad \mathbb{R}\{1,ij\},\quad \mathbb{R}\{i,j\},\quad \mathbb{C}\Pi_+,\quad \mathbb{C}\Pi_-,
+\boxed{\;\mathbb{C},\quad \mathbb{C}j,\quad \mathbb{R}\{1,j\},\quad \mathbb{R}\{i,ij\},\quad \mathbb{R}\{1,ij\},\quad \mathbb{R}\{i,j\},\quad \mathbb{C}\Pi_+,\quad \mathbb{C}\Pi_-\;},
 $$
 
 and the comparison is summarised by three statements. **The subalgebras among the coordinate planes are the three fixed planes** $\mathbb{C}=\mathbb{R}\{1,i\}$, $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{1,ij\}$; the three anti-fixed planes $\mathbb{C}j$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{i,j\}$ are not closed, because each contains a basis element whose square leaves it. **The ideals are the two idempotent lines alone**, the minimal ideals $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, which are also the two simple modules; no coordinate plane is an ideal, since none is stable under the whole algebra except the whole space. **All eight planes are permuted by the three involutions**, each involution fixing or exchanging them, and this invariance is the reason the space decomposes along them. Among the subalgebras, $\mathbb{C}$, $\mathbb{R}\{1,ij\}$, $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are copies of the complex field — four copies, with the imaginary units $i$, $ij$, $i\Pi_+$ and $i\Pi_-$ respectively — and $\mathbb{R}\{1,j\}$ is a copy of the split-complex numbers.
-
-**Boundaries.** The spaces, their characters and their norms are *Introduction to the Remarkable Subspaces*; the decompositions are *Decompositions Along the Remarkable Subspaces*; the involutions are *The Two Involutions and the Group of Involutions of the Reduced Biquaternions*; the idempotents and the ideals are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The forms restricted to the planes are *Remarkable Subspaces and the Four Forms of the Reduced Biquaternions* and the norms *Remarkable Subspaces and the Four Algebraic Norms of the Reduced Biquaternions*, of the later subsections of this category. The biquaternion counterpart is *Comparison of the Remarkable Subspaces* of the biquaternion category.
 
 ## The Table of the Spaces
 
@@ -49,10 +47,10 @@ The four complex lines $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{C}\Pi_+$, $\mathbb{
 
 **Corollary (the shapes of the subalgebras).** The three coordinate subalgebras and the two idempotent lines are
 $$
-\mathbb{C}\cong\mathbb{C},\qquad \mathbb{R}\{1,j\}\cong\mathbb{R}[j]/(j^{2}-1)\cong\mathbb{R}\times\mathbb{R},\qquad \mathbb{R}\{1,ij\}\cong\mathbb{C},
+\boxed{\;\mathbb{C}\cong\mathbb{C},\qquad \mathbb{R}\{1,j\}\cong\mathbb{R}[j]/(j^{2}-1)\cong\mathbb{R}\times\mathbb{R},\qquad \mathbb{R}\{1,ij\}\cong\mathbb{C}\;},
 $$
 $$
-\mathbb{C}\Pi_+\cong\mathbb{C},\qquad \mathbb{C}\Pi_-\cong\mathbb{C},
+\boxed{\;\mathbb{C}\Pi_+\cong\mathbb{C},\qquad \mathbb{C}\Pi_-\cong\mathbb{C}\;},
 $$
 so the algebra contains **four copies of the complex field** — the scalar line, the Hermitian subspace and the two idempotent lines — and one copy of the split-complex numbers, the real subalgebra.
 

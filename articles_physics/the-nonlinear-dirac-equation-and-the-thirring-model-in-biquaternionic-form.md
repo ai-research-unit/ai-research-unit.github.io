@@ -39,8 +39,8 @@ The reason the axial-axial channel is the physically motivated one is geometric,
 The Thirring model is defined in $1+1$ dimensions by the Lagrangian density
 
 $$
-\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
-- \frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right),
+\boxed{\;\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
+- \frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right)\;},
 $$
 
 with $\psi = \left(\psi_+, \psi_-\right)$ a two-component spinor, $g$ the coupling, $m$ the mass, and $\gamma^\mu$ the two-dimensional gamma matrices. There is only one independent local quartic interaction in two dimensions: the spinor has four real components and the Pauli principle, together with the Fierz rearrangement identities of the two-dimensional Clifford algebra, makes the quartic terms equivalent. The vector-vector and axial-axial combinations are related by the two-dimensional Hodge duality of the currents, so a single coupling $g$ covers the model.
@@ -52,8 +52,8 @@ The **massless** Thirring model is exactly solvable: the multipoint correlation 
 The Soler model is defined in $3+1$ dimensions by
 
 $$
-\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
-+ \frac{g}{2}\left(\bar\psi\psi\right)^2,
+\boxed{\;\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
++ \frac{g}{2}\left(\bar\psi\psi\right)^2\;},
 $$
 
 with $\psi$ a four-component spinor and $\not\partial$ the four-dimensional slash. Its interaction is the square of the **scalar** bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $\left(i\bar\psi\gamma_5\psi\right)^2$, and the two together are the chirally invariant combination of the NJL interaction.
@@ -65,8 +65,8 @@ Recently, exact solutions of the Soler model in closed form have been found, whi
 The geometric route of the earlier section gives the equation
 
 $$
-i\gamma^\mu\nabla_\mu\psi - m\psi
-+ \frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi = 0,
+\boxed{\;i\gamma^\mu\nabla_\mu\psi - m\psi
++ \frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi = 0\;},
 $$
 
 where $\nabla_\mu$ is the general-relativistic covariant derivative of a spinor, $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant, and the interaction is the axial-axial contact term produced by the torsion of the spinor's own spin. The coefficient $3\kappa/8$ is fixed by the geometry, not chosen. The cubic term becomes significant only at densities of order $m^2/\kappa$, which are far outside laboratory matter; the interaction is a high-density effect.

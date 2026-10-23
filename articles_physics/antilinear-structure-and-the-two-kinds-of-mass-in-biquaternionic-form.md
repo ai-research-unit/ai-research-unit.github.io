@@ -99,8 +99,8 @@ Two of those choices are realised in physics, and they are the two extremes of t
 The distinction is visible in the component count before any dynamics is imposed, and the count is decisive. The spinor module has real dimension $8$: four complex components. An antilinear involution on it has a fixed space of real dimension $4$ — half. So
 
 $$
-\text{Dirac field}: 8 \text{ real components}, \qquad
-\text{Majorana field}: 4 \text{ real components},
+\boxed{\;\text{Dirac field}: 8 \text{ real components}, \qquad
+\text{Majorana field}: 4 \text{ real components}\;},
 $$
 
 and the Majorana field is not a Dirac field with a constraint bolted on; it is a different carrier, of half the size, singled out by an antilinear pairing.
@@ -116,7 +116,7 @@ $$
 $$
 
 $$
-\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\big(\psi_L^{T}\mathcal{C}\psi_L + \text{h.c.}\big).
+\boxed{\;\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\big(\psi_L^{T}\mathcal{C}\psi_L + \text{h.c.}\big)\;}.
 $$
 
 The first pairs $\psi_L$ with $\psi_R$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\psi\mapsto \exp(i\alpha)\psi$. The second pairs $\psi_L$ with $\psi_L^{c}$ and is **antilinear**; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
@@ -136,7 +136,7 @@ Both are masses; neither is a mistake. The two rows of the table are what the ph
 In biquaternionic form the Dirac mass is the linear chiral pair of the parent article,
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
+\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;},
 $$
 
 the massless case being $\tilde{\nabla}\tilde{\Psi} = 0$. Applying $\tilde{\nabla}^{\natural}$ to the first and substituting the second, with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives the Klein–Gordon equation for each chirality,

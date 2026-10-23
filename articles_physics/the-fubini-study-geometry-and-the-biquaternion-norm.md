@@ -23,18 +23,6 @@ The **geodesic distance** is $d_{\mathrm{FS}}(\tilde\Pi_1,\tilde\Pi_2) = \arccos
 
 The article proceeds as follows. The state space and its two forms are recalled; the pure states are identified with the rays of the state module and with the points of $\mathbb{P}^1(\mathbb{C})$; the transition probability is computed from the normalised Hermitian form, read through the trace; the Fubini–Study line element is computed from the biquaternion norm in two independent ways, from the Hermitian idempotent displacement and from the spinor, and the two agree; the complex structure and the Kähler form are exhibited; geodesics and distances are collected; and the Bures extension and the limits of the algebra's own contribution are stated. What the article does not do is the informational interpretation of the same geometry, which belongs to the informational articles, and the spin-specific interpretations, which belong to the spin articles.
 
-**Conventions.** The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian and anti-Hermitian subspaces are
-$$
-\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
-\qquad
-\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
-$$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. In the $2\times2$ image the trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$, and the trace formula is $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_te_t+i\vec h$,
-$$
-\langle\tilde{H}\rangle_{\natural}=\bigl(h_t^2-|\vec h|^2\bigr)e_t .
-$$
-A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\vec{u})=\tfrac12(e_t\pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, with matrix units $x=\tfrac12(i\vec e_x-\vec e_y)$, $y=\tfrac12(i\vec e_x+\vec e_y)$ and basis $\{\tilde\Pi_+,y\}$. The unit quaternions act on the Bloch sphere by rotations.
-
 ## The State Space and Its Two Forms
 
 An element of the Hermitian subspace is $\tilde{H}=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$, and the state space is the trace-one slice of the future cone,
@@ -278,11 +266,11 @@ where $\theta$ is the angle between $\vec{u}_1$ and $\vec{u}_2$ and $\lvert\lang
 
 **The equivalent data on the boundary.** The three boundary quantities are monotone functions of one another, and the identities relating them are the content of the geometry:
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2)\bigr)=\cos^2 d_{\mathrm{FS}},
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2)\bigr)=\cos^2 d_{\mathrm{FS}},
 \qquad
 D\bigl(\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\bigr)=\sin d_{\mathrm{FS}},
 \qquad
-d_{\mathrm{FS}}=\arccos\sqrt{\mathrm{Tr}\bigl(\tilde\Pi_1\tilde\Pi_2\bigr)}=\arcsin D .
+d_{\mathrm{FS}}=\arccos\sqrt{\mathrm{Tr}\bigl(\tilde\Pi_1\tilde\Pi_2\bigr)}=\arcsin D\;}.
 $$
 The first is the plain form, the second the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States*, and the third the Fubini–Study distance. They are not three independent geometries but one: the plain form gives the squared cosine, the trace distance gives the sine, and the Fubini–Study distance is the angle. The complementarity identity $D^2+\mathrm{Tr}(\tilde\Pi_1\tilde\Pi_2^{*})=1$ of the exercise article is the Pythagorean identity of the same triangle.
 
@@ -333,7 +321,7 @@ Five statements summarize the result, and two of them are limitations that a rea
 The state space of the biquaternion framework is the trace-one slice of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The normalised Hermitian form, read through the trace, fixes the transition probability of two pure states, $\mathrm{Tr}(\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2)^{*})=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,
 
 $$
-ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
+\boxed{\;ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right)\;},
 $$
 
 one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\tfrac12 i\,\mathrm{Tr}(\tilde\Pi[\delta_1\tilde\Pi,\delta_2\tilde\Pi])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\psi|\phi\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.

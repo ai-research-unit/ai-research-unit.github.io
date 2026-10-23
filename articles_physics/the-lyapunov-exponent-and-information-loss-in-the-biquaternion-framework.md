@@ -164,7 +164,7 @@ $$
 The singular values are the diagonal entries, so the **Lyapunov spectrum** is
 
 $$
-\lambda_1 = 0, \qquad \lambda_2 = \lambda_3 = -\Gamma .
+\boxed{\;\lambda_1 = 0, \qquad \lambda_2 = \lambda_3 = -\Gamma\;}.
 $$
 
 The zero exponent is the pointer axis, along which the state is unchanged; the two negative exponents are the transverse directions, in which distinctions decay at rate $\Gamma$. The sum of the exponents gives the volume contraction,
@@ -204,7 +204,6 @@ $$
 $$
 
 and the factor $\tfrac{1}{2}$ in the definition of $\lambda$ removes it. **The exponent of the length is the vector exponent; the logarithm of the quadratic form decays at twice that rate.**
-
 
 Both numbers were verified numerically on the transverse tangent element $\delta\tilde{Ϛ} = \tfrac{i}{2}\vec e_x$, taken as a tangent to the interior superposition state $\tilde{Ϛ} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than to a single idempotent, under the semigroup with $\Gamma = 0.7$. At $t' = 0.5$, $1.0$ and $2.0$ the displacement ratio $|\delta\vec r(t')|/|\delta\vec r(0)| = \exp(-\Gamma t')$ gives the Lyapunov exponent $\lambda = -0.7000000000 = -\Gamma$, while the logarithm of the quadratic form gives $\tfrac{1}{t'}\log|\langle\delta\tilde{Ϛ}(t')\rangle_{\natural}/\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}| = -1.4000000000 = -2\Gamma$; the two differ by exactly the factor of two that the definition of $\lambda$ absorbs. The representation used is the four-complex-coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with the algebra's product.
 
@@ -251,7 +250,7 @@ The last point locates the boundary precisely. Positive Lyapunov exponents are a
 The Lyapunov exponent of a tangent vector of the informational sector is measured by the sector's biquaternion norm,
 
 $$
-\lambda(v) = \lim_{t'\to\infty}\frac{1}{2t'}\log\frac{\left|\langle\delta\tilde{Ϛ}(t')\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|},
+\boxed{\;\lambda(v) = \lim_{t'\to\infty}\frac{1}{2t'}\log\frac{\left|\langle\delta\tilde{Ϛ}(t')\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|}\;},
 $$
 
 the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\rangle_{\natural}$. Since $\langle\delta\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$ for a tangent vector, this is the Euclidean growth rate of the Bloch displacement.

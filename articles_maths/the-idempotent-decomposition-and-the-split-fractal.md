@@ -39,13 +39,13 @@ $$
 **Theorem (the split fractal).** Let $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$ be a parameter in the idempotent plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$. Then $W_{\tilde\Pi}$ is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$, the restriction of $F_{\tilde Q_3}$ to it is
 
 $$
-A\tilde\Pi+B\tilde\Pi'\longmapsto(A^2+C_1)\tilde\Pi+(B^2+C_2)\tilde\Pi',
+\boxed{\;A\tilde\Pi+B\tilde\Pi'\longmapsto(A^2+C_1)\tilde\Pi+(B^2+C_2)\tilde\Pi'\;},
 $$
 
 and the restriction of the filled Julia set and the Julia set to the plane are
 
 $$
-\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi}=\bigl(K_{C_1}\tilde\Pi\bigr)\oplus\bigl(K_{C_2}\tilde\Pi'\bigr), \qquad J_{\tilde Q_3}\cap W_{\tilde\Pi}=\partial\bigl(K_{C_1}\times K_{C_2}\bigr),
+\boxed{\;\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi}=\bigl(K_{C_1}\tilde\Pi\bigr)\oplus\bigl(K_{C_2}\tilde\Pi'\bigr), \qquad J_{\tilde Q_3}\cap W_{\tilde\Pi}=\partial\bigl(K_{C_1}\times K_{C_2}\bigr)\;},
 $$
 
 the product of two complex filled Julia sets. The **split fractal** is this product, and it is the fractal of the diagonal model.
@@ -83,7 +83,7 @@ $$
 are **central**, $j$ being the central element with $j^2=1$, and the algebra factors as the direct sum of two ideals,
 
 $$
-\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H},
+\boxed{\;\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}\;},
 $$
 
 through central idempotents, so that the decomposition is one of the algebra and of every element and splits the dynamics globally, not on a slice. Then every quadratic map is the pair of two quaternion quadratic maps, the fractal is the product of two quaternion Julia sets, and there is no coupling term. **The biquaternion case is the case of non-central idempotents: the splitting is real but local; the split-biquaternion case is the case of central idempotents: the splitting is global.** The contrast is developed in *The Clifford Decomposition of the Split-Biquaternion Fractals*.

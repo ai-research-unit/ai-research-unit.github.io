@@ -54,7 +54,7 @@ An **involution** of a ring $A$ is an anti-automorphism of order two, so that $\
 **Proposition.** The involution $\sigma$ is an isomorphism of right $\mathbb{B}$-modules
 
 $$
-\sigma:({}_{\mathbb{B}}\mathbb{B})^{\sigma}\longrightarrow\mathbb{B}_{\mathbb{B}},\qquad \tilde Q_1\mapsto\sigma(\tilde Q_1),
+\boxed{\;\sigma:({}_{\mathbb{B}}\mathbb{B})^{\sigma}\longrightarrow\mathbb{B}_{\mathbb{B}},\qquad \tilde Q_1\mapsto\sigma(\tilde Q_1)\;},
 $$
 
 so the twist of the left regular module is the right regular module up to the comparison $\sigma$, and this comparison is exactly the involution.
@@ -104,7 +104,7 @@ it is **Hermitian** if in addition $h(\tilde Q_2,\tilde Q_1)=\sigma\bigl(h(\tild
 **Proposition.** On ${}_{\mathbb{B}}\mathbb{B}$ the formula
 
 $$
-h(\tilde Q_1,\tilde Q_2)=\tilde Q_1\,\tilde Q_2^{*}
+\boxed{\;h(\tilde Q_1,\tilde Q_2)=\tilde Q_1\,\tilde Q_2^{*}\;}
 $$
 
 is a Hermitian ${}^{*}$-sesquilinear form with values in $\mathbb{B}$, and it is non-degenerate: $h(\tilde Q_1,\tilde Q_2)=0$ for all $\tilde Q_2$ forces $\tilde Q_1=0$, and $h(\tilde Q_1,\tilde Q_2)=0$ for all $\tilde Q_1$ forces $\tilde Q_2=0$.
@@ -132,7 +132,7 @@ is the positive definite scalar part of the layer. The form $h$ is thus the modu
 **Proposition.** The quadratic form satisfies $\mathfrak{Q}(\tilde Q_4\tilde Q_1)=\tilde Q_4\,\mathfrak{Q}(\tilde Q_1)\tilde Q_4^{*}$, so it is not $\mathbb{C}$-linear but equivariant; it takes its values in the Hermitian subspace $\mathbb{M}_+$, since $\mathfrak{Q}(\tilde Q_1)^{*}=\mathfrak{Q}(\tilde Q_1)$; it vanishes only at $\tilde Q_1=0$, its scalar part being the sum of the squared moduli; and it determines $h$ by the polarisation identity
 
 $$
-h(\tilde Q_1,\tilde Q_2)+h(\tilde Q_2,\tilde Q_1)^{*}=\mathfrak{Q}(\tilde Q_1+\tilde Q_2)-\mathfrak{Q}(\tilde Q_1)-\mathfrak{Q}(\tilde Q_2)=2\,h(\tilde Q_1,\tilde Q_2),
+\boxed{\;h(\tilde Q_1,\tilde Q_2)+h(\tilde Q_2,\tilde Q_1)^{*}=\mathfrak{Q}(\tilde Q_1+\tilde Q_2)-\mathfrak{Q}(\tilde Q_1)-\mathfrak{Q}(\tilde Q_2)=2\,h(\tilde Q_1,\tilde Q_2)\;},
 $$
 
 so that $h(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(\mathfrak{Q}(\tilde Q_1+\tilde Q_2)-\mathfrak{Q}(\tilde Q_1)-\mathfrak{Q}(\tilde Q_2)\bigr)$.

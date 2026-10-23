@@ -62,7 +62,7 @@ the cone and its plane but differ in the coincidence of the two sides.
 
 **Theorem (the coincidence).** For **every** $\tilde Q_1\in\mathbb{B}$, unit or zero divisor alike,
 $$
-B_\star(\tilde Q_1)=A_\star(\tilde Q_1).
+\boxed{\; B_\star(\tilde Q_1)=A_\star(\tilde Q_1) \;}.
 $$
 
 *Proof.* Let $\tilde Q_2\in\mathbb{B}$. Applying the natural conjugation ${}^{\natural}$ to the
@@ -85,7 +85,7 @@ annihilators are generally distinct.
 $L_{\tilde Q_1}$ of an element $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ has the matrix of multiplication by
 $\tilde Q_1^{\natural}$, of trace $4Q_{1t}$ and determinant
 $$
-\det L_{\tilde Q_1}=C(\tilde Q_1)^{2},\qquad C(\tilde Q_1)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}^{2}.
+\boxed{\; \det L_{\tilde Q_1}=C(\tilde Q_1)^{2},\qquad C(\tilde Q_1)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}^{2} \;}.
 $$
 
 *Proof.* The matrix is the left multiplication matrix of the quaternion $\tilde Q_1^{\natural}$,
@@ -128,7 +128,7 @@ $\tilde Q_1^{\natural}\tilde Q_1=C(\tilde Q_1)e_t=0$, so $\tilde Q_1$ lies in th
 **Example.** For the pure zero divisor $\tilde Q_1=\vec e_x+i\vec e_y$, whose vector part has
 $(\vec Q_1,\vec Q_1)=1-1=0$, the common annihilator is
 $$
-A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ \vec e_z-ie_t\},
+\boxed{\; A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ \vec e_z-ie_t\} \;},
 $$
 and for the non-pure zero divisor $\tilde Q_1=e_t+i\vec e_x$, of algebraic norm $1-1=0$,
 $$

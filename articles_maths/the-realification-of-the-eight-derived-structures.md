@@ -290,7 +290,9 @@ $$
 
 **Theorem (the operator trace form in the two readings).** For all $\tilde Q_6,\tilde Q_3$,
 $$
-\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=2\operatorname{Re}\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*},
+\boxed{\;
+\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=2\operatorname{Re}\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}
+\;},
 $$
 twice the realified invariant form.
 
@@ -308,7 +310,9 @@ so the real adjoint of $L_{\tilde Q_1}$ is $-L_{\tilde Q_1}$.
 
 **Theorem (the derivations grow).** The $\mathbb{R}$-linear derivations of the bracket are
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\operatorname{End}_{\mathbb{R}}\bigl(\mathbb{C}_{\mathbb{B}}\bigr),
+\boxed{\;
+\operatorname{Der}_{\mathbb{R}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\operatorname{End}_{\mathbb{R}}\bigl(\mathbb{C}_{\mathbb{B}}\bigr)
+\;},
 $$
 of real dimension $6+4=10$, against the complex $\operatorname{Der}_{\mathbb{C}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$ of real dimension $6+2=8$. The extra two dimensions are conjugate-linear and act on the centre alone.
 
@@ -316,7 +320,9 @@ of real dimension $6+4=10$, against the complex $\operatorname{Der}_{\mathbb{C}}
 
 **Proposition (the automorphisms grow at the centre).** An $\mathbb{R}$-automorphism of the bracket preserves the centre and the derived algebra, so
 $$
-\operatorname{Aut}_{\mathbb{R}}(\mathfrak{g})\cong GL_2(\mathbb{R})\times\operatorname{Aut}_{\mathbb{R}}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr),
+\boxed{\;
+\operatorname{Aut}_{\mathbb{R}}(\mathfrak{g})\cong GL_2(\mathbb{R})\times\operatorname{Aut}_{\mathbb{R}}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)
+\;},
 $$
 which contains $GL_2(\mathbb{R})\times PGL(2,\mathbb{C})$, while the $\mathbb{C}$-linear group is $\operatorname{Aut}_{\mathbb{C}}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$ (*The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*). The centre contributes the whole of $GL_2(\mathbb{R})$ in place of the complex scalars, and the derived algebra contributes, beside its $\mathbb{C}$-linear automorphisms, the conjugate-linear conjugation $\vec Q_1\mapsto\bar{\vec Q_1}$.
 

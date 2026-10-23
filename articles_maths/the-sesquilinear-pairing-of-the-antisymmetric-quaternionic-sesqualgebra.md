@@ -13,16 +13,16 @@ the form of *The Krein Gram Matrix and the Restrictions of the Form*, written th
 
 The form is owned by *The Krein Gram Matrix and the Restrictions of the Form* and its isotropic structure by *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*; the general construction of a sesqualgebra part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the companion readings of the same form are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* for the four forms on the remarkable subspaces and *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* for the plain-row companion of the block. This article owns the pairing itself.
 
-**Conventions.** As in the two preceding articles of the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x \vec e_y=\vec e_z$, generic elements $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, and the product $\diamond$ for the block. The form $\langle\cdot,\cdot\rangle_{\natural*}$ is linear in the **first** argument and conjugate-linear in the second; the vector subspace $\mathrm{Vect}(\mathbb{B})$ is the complex span of $\vec e_x,\vec e_y,\vec e_z$.
-
 ## The Pairing of a Value with a Third Element
 
 **Proposition (the pairing in coordinates).** For all biquaternions,
 
 $$
+\boxed{\;
 K\bigl(\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\bigr)
 =-\sum_{\mu\in\{x,y,z\}}\bigl(\vec Q_1\times\overline{\vec Q_2}\bigr)_\mu\,\overline{Q_{3\mu}}
-=-\bigl(\vec Q_1\times\overline{\vec Q_2},\overline{\vec Q_3}\bigr),
+=-\bigl(\vec Q_1\times\overline{\vec Q_2},\overline{\vec Q_3}\bigr)
+\;},
 $$
 
 where the bracket on the right is the complex bilinear dot product of the value with the conjugate of the vector part of the third argument.
@@ -32,8 +32,10 @@ where the bracket on the right is the complex bilinear dot product of the value 
 **Proposition (the self-pairing is non-positive).** For all biquaternions,
 
 $$
+\boxed{\;
 K\bigl(\tilde Q_1\diamond\tilde Q_2,\tilde Q_1\diamond\tilde Q_2\bigr)
-=-\bigl|\vec Q_1\times\overline{\vec Q_2}\bigr|^{2}\le0,
+=-\bigl|\vec Q_1\times\overline{\vec Q_2}\bigr|^{2}\le0
+\;},
 $$
 
 and it vanishes exactly when the value of the block vanishes, that is exactly when $\tilde Q_1\diamond\tilde Q_2=0$.
@@ -74,9 +76,11 @@ for all $\tilde Q_1,\tilde Q_2,\tilde Q_3$. The condition is the one of the corp
 **Theorem (the invariant forms form a line).** In each of the four homogeneous classes of forms of the block — complex-bilinear, linear in the first slot and conjugate-linear in the second, conjugate-linear in the first and linear in the second, and conjugate-linear in both — the forms $\beta$ invariant under the block form a space of complex dimension $1$ and real dimension $2$. In every one of the four the space is spanned by the central form
 
 $$
+\boxed{\;
 \beta_0(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}},
 \qquad\text{or}\qquad
-\beta_0(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t},
+\beta_0(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}
+\;},
 $$
 
 or the corresponding doubly conjugate-linear form according to the class, and it contains no other form of that class.

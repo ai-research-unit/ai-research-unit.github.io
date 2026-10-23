@@ -10,14 +10,6 @@ pairing and develops the two objects the article title names: the **radical**, w
 annihilated by the whole algebra on both sides, and the **isotropic elements**, the elements whose square
 vanishes. It then records the derived objects the collapse produces — the derived law and the ternary law — and identifies the isotropic elements with the zero divisors of the parent plain algebra.
 
-**Placement.** The article is the first entry of the *Specific Theory* section of the block, the section that carries the block's own structural theory, and it is followed by *The Specificities of the Symmetric Quaternionic Algebra*. It assumes the operation and its formula from *Introduction to the Symmetric Quaternionic Algebra*, the centrality from *The Symmetrised Quaternionic Product and the Hermitian Subspace*, the norm, its polarisation and its isotropic cone from *Norm and Invertibility in the General Quaternionic Algebra* and *Zero Divisors of the Biquaternion Algebra*; the idempotents, the nilpotents and the zero-divisor set of the block are the Common Theory slots *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, cited here and not restated. The remarkable subspaces are treated in the companion article *Remarkable Subspaces under the Symmetric Quaternionic Algebra*, and the form reader is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
-
-**Conventions.** The operation is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$,
-equal to $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$; the coefficient $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ is the
-quaternion form, and $\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$ is its diagonal; the quaternionic
-bracket is $[\tilde Q_1,\tilde Q_2]_{\natural}=\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$. The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
-$i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*.
-
 ## The Product as a Pairing with Values in the Centre
 
 Because the operation is $\mathbb{C}$-bilinear, it is the same thing as a family of linear maps, and because
@@ -38,9 +30,7 @@ Symmetric Quaternionic Algebra*.
 **Proposition (the operation is a form read on the central line).** The operation is determined by $\langle\cdot\rangle_{\natural}$ and
 $\langle\cdot\rangle_{\natural}$ is recovered from it: for every pair,
 
-$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \operatorname{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr),
-$$
+$$ \boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \operatorname{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr) \;}, $$
 
 the coefficient of $e_t$ in the value. In particular $\star$ is the **quaternion form** placed on the central
 line, and the only datum of the operation is the symmetric $\mathbb{C}$-bilinear form $\langle\cdot\rangle_{\natural}$.
@@ -127,9 +117,7 @@ the radical is a property of the space.
 
 **Proposition (the derived law collapses).** The commutator of the operation vanishes identically,
 
-$$
-[\tilde Q_1,\tilde Q_2]_{\star} = \tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1 = 0 ,
-$$
+$$ \boxed{\; [\tilde Q_1,\tilde Q_2]_{\star} = \tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1 = 0 \;}, $$
 
 so the operation has no derived Lie structure: the derived operation of $\mathrm{SQA}$ is the zero operation
 on the whole space. The derived object of the operation is therefore the one-dimensional algebra
@@ -161,8 +149,10 @@ $\langle \vec e_x,\vec e_x\rangle_{\natural}\cdot 1\cdot e_t=e_t$ and the second
 quaternionic bracket with the product,
 
 $$
+\boxed{\;
 T(\tilde Q_1,\tilde Q_2,\tilde Q_3) = [\tilde Q_1,\tilde Q_3]_{\natural}\star\tilde Q_2
-= N\bigl([\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\bigr)e_t ,
+= N\bigl([\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\bigr)e_t
+\;},
 $$
 
 which is linear in each of its three arguments and alternating in the first and the third, the bracket

@@ -26,8 +26,6 @@ This article asks what the biquaternion framework contributes to that statement,
 
 The article proceeds as follows. The next section fixes the topological charge and the $\theta$ term in the framework's notation. A section constructs the $\theta$ vacuum and identifies the weighting as a central phase. A section relates the angle to the phase of the determinant and works the toy model that exhibits a determinant phase. A section treats periodicity and the parity interpretation of the topological density. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$; the sectors are $\mathbb{M}_-$ (anti-Hermitian, material, basis $ie_t,\vec e_x,\vec e_y,\vec e_z$) and $\mathbb{M}_+$ (Hermitian, informational, basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$), with $\mathbb{M}_-=i\mathbb{M}_+$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form, so that $\mathrm{Tr}(e_t)=2$. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the d'Alembertian is the series $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict'}+\Delta$. The abelian field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ with invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the non-abelian curvature is $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar e_\mu e_\nu$, both as in *Instantons and Solitons in Biquaternionic Form*. The real structure is $\flat=-{}^{*}$. These are the conventions of *Conventions in the Biquaternion Universe*, *Instantons and Solitons in Biquaternionic Form*, *The Functional Determinant in Biquaternionic Form*, and *The Trace Anomaly in Biquaternionic Form*.
-
 ## The Topological Charge and the $\theta$ Term
 
 The topological objects are fixed first, because the $\theta$ vacuum is a statement about them.
@@ -60,15 +58,15 @@ The construction is transcribed, and the algebra's contribution is identified wi
 
 **Sectors and the superposition.** Let $|Ϙ\rangle$ denote a state of definite topological charge. The $\theta$ vacuum is the coherent superposition
 $$
-|\theta\rangle = \sum_{Ϙ\in\mathbb{Z}} \exp(\,i\theta Ϙ)\,|Ϙ\rangle ,
+|\theta\rangle = \sum_{Ϙ\in\mathbb{Z}} \exp(\,i\theta Ϙ)\,|Ϙ\rangle,
 $$
 and its defining property is that the topological charge operator acts on it by a phase, $\hat{Ϙ}|\theta\rangle = -i\frac{\partial}{\partial\theta}|\theta\rangle$; the vacuum is an eigenstate of the large gauge transformation that shifts $Ϙ$ by one, with eigenvalue $\exp(-i\theta)$. This is standard, and it is the statement that the large gauge transformation is implemented on the vacuum by a phase rather than by the identity.
 
 **The weighting is central.** The phase $\exp(i\theta Ϙ)$ is built from the central $i$, and the central scalars are exactly the centre of the algebra:
 $$
-\exp(\,i\theta Ϙ)\,e_t \in \mathbb{C}_{\mathbb{B}} ,
+\boxed{\;\exp(\,i\theta Ϙ)\,e_t \in \mathbb{C}_{\mathbb{B}} ,
 \qquad
-\big[\exp(\,i\theta Ϙ)e_t,\;\tilde Q\big] = 0 \quad\text{for every } \tilde Q\in\mathbb{B}.
+\big[\exp(\,i\theta Ϙ)e_t,\;\tilde Q\big] = 0 \quad\text{for every } \tilde Q\in\mathbb{B}\;}.
 $$
 Three consequences follow and are structural.
 
@@ -127,9 +125,9 @@ $$
 $$
 computed by the Atiyah–Singer theorem as $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, the second Chern number, on a four-dimensional manifold without boundary; since $\mathrm{tr}(F\wedge F)=\tfrac12\,\mathrm{tr}(F_{\mu\nu}\tilde F^{\mu\nu})\,d^4x$, this is the same number as the previous section's $\frac{1}{16\pi^2}\int d^4x\,\mathrm{tr}(F\tilde F)$. Read in the framework, this says that the *sector label* $Ϙ$ is a **central integer** — an element of $\mathbb{Z}e_t$ — and together with the previous section's result that the weighting $\exp(i\theta Ϙ)$ is a **central phase**, the two ingredients of the $\theta$ vacuum both lie in the centre:
 $$
-Ϙ\in\mathbb{Z}\,e_t\subset\mathbb{C}_{\mathbb{B}} ,
+\boxed{\;Ϙ\in\mathbb{Z}\,e_t\subset\mathbb{C}_{\mathbb{B}} ,
 \qquad
-\exp(\,i\theta Ϙ)\in \mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}} .
+\exp(\,i\theta Ϙ)\in \mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}\;}.
 $$
 The topological sector label and its weight are central; only the states $|Ϙ\rangle$ are not. This is a clean and exact framework statement, and it is the sharpest form of the article's general point that the $\theta$ vacuum's data live in the centre.
 

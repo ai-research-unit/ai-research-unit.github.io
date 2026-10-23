@@ -12,8 +12,6 @@ the scalar part of the product of the two elements. This article reads the form,
 
 The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four Forms*; the form is used here with the product and not re-derived.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$. The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$; the general plain bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and $\tau$ denotes it read as the trace form of the block. The multiplication operator of the block is $L^{\bullet}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\bullet\tilde Q_2$, and $L_{\tilde Q_1},R_{\tilde Q_1}$ are the left and right operators of the plain product, still with the halved product and the unhalved ones distinguished as in *The Multiplication Operators of the Symmetric Plain Algebra*.
-
 ## The Trace Form
 
 ### The Definition
@@ -48,7 +46,7 @@ the coefficient matrix $D$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Sp
 **Theorem.** The trace form of the block is the scalar part of the **plain** product:
 
 $$
-\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle .
+\boxed{\; \tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle \;}.
 $$
 
 *Proof.* $\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=\tfrac12\bigl(\mathrm{Sc}(\tilde Q_1\tilde Q_2)+\mathrm{Sc}(\tilde Q_2\tilde Q_1)\bigr)$, and the scalar part of a plain product is symmetric, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$. The half-sum is therefore the common value.
@@ -74,7 +72,7 @@ of signature $(4,4)$.
 **Theorem.** The trace form is **invariant** under the product:
 
 $$
-\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)
+\boxed{\; \tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4) \;}
 $$
 
 for all $\tilde Q_1,\tilde Q_2,\tilde Q_4\in\mathbb{B}$.
@@ -144,7 +142,7 @@ so the sum of the two plain operators is **twice** the multiplication operator o
 **Theorem.** For all $\tilde Q_1,\tilde Q_2$,
 
 $$
-\operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_2}\bigr)=4Q_{1t}Q_{2t}-2(\vec Q_1,\vec Q_2)=2\tau(\tilde Q_1,\tilde Q_2)+\tfrac12T(\tilde Q_1)T(\tilde Q_2).
+\boxed{\; \operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_2}\bigr)=4Q_{1t}Q_{2t}-2(\vec Q_1,\vec Q_2)=2\tau(\tilde Q_1,\tilde Q_2)+\tfrac12T(\tilde Q_1)T(\tilde Q_2) \;}.
 $$
 
 *Proof.* With $L^{\bullet}=\tfrac12(L+R)$, the product expands as

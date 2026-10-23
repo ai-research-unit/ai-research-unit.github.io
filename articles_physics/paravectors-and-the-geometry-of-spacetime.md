@@ -42,7 +42,7 @@ shows that the paravector space is exactly $\mathbb{M}_+$: the identification is
 **The form.** The biquaternion norm of a paravector is real and reads
 
 $$
-p\,\bar p = \left(p_t + \vec p\right)\left(p_t - \vec p\right) = p_t^2 - \vec p^2 = p_t^2 - p_x^2 - p_y^2 - p_z^2,
+p\,\bar p = \left(p_t + \vec p\right)\left(p_t - \vec p\right) = p_t^2 - \vec p^2 = p_t^2 - p_x^2 - p_y^2 - p_z^2
 $$
 
 using $\vec p^2 = p_x^2 + p_y^2 + p_z^2$ for a real three-vector. This is the Minkowski form of signature $(1,3)$, the form of the informational sector $\mathbb{M}_+$ in the corpus's notation. The material sector carries the same form with the opposite sign: for $\tilde Q = ip \in \mathbb{M}_-$,
@@ -111,7 +111,7 @@ $$
 for the components coplanar with the boost and orthogonal to it. Then the rotor conjugation gives
 
 $$
-L\,p\,L^\dagger \;=\; \tilde V_{\mathrm p}\,p_\parallel + p_\perp .
+\boxed{\;L\,p\,L^\dagger \;=\; \tilde V_{\mathrm p}\,p_\parallel + p_\perp\;}
 $$
 
 **Proof.** The two components transform separately. First, $p_\perp$ anticommutes with $\vec u_v$, because two orthogonal paravector-vectors anticommute: $\vec u_vp_\perp = -p_\perp\vec u_v$. Hence
@@ -176,7 +176,7 @@ The table is the whole content of the statement that the algebra of physical spa
 The proper velocity is the natural variable of the composition law. If a frame $B$ moves with proper velocity $\tilde V_{\mathrm p,BA}$ relative to $A$ and a frame $C$ moves with proper velocity $\tilde V_{\mathrm p,CB}$ relative to $B$, then the proper velocity of $C$ relative to $A$ is the **product**
 
 $$
-\tilde V_{\mathrm p,CA} \;=\; \tilde V_{\mathrm p,CB}\,\tilde V_{\mathrm p,BA},
+\boxed{\;\tilde V_{\mathrm p,CA} \;=\; \tilde V_{\mathrm p,CB}\,\tilde V_{\mathrm p,BA}\;}
 $$
 
 an equation that follows from the composition of the rotor conjugations, or directly from the associativity of the algebra of physical space. Writing each factor as $\gamma(e_t+\beta\vec u_v)$ and multiplying, the scalar part gives the composition of the Lorentz factors and the vector part the composition of the velocities. For collinear velocities the vector parts are parallel and the product is the familiar addition law

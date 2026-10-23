@@ -50,8 +50,10 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and linear in the 
 
 **The scalar–vector form.** Collecting the scalar part and the vector part of the two elements,
 $$
-\tilde Q_1\tilde Q_2=\bigl(Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2 .
-$$
+\boxed{\;
+\tilde Q_1\tilde Q_2=\bigl(Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2
+\;}
+$$.
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu} Q_{2,\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the one displayed.
 
@@ -79,8 +81,10 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and conjugate-line
 
 **The scalar–vector form.** The scalar part of the second factor becomes $\overline{Q_t}$ and its vector part becomes $-\overline{\vec Q}$, so the two pairings change sign and are read against the conjugate vector,
 $$
-\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
-$$
+\boxed{\;
+\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}
+\;}
+$$.
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 
@@ -108,8 +112,10 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and linear in the 
 
 **The scalar–vector form.** The scalar part of the first factor stays $Q_{1,0}$ and its vector part becomes $-\vec Q_1$, so the two pairings change sign where that vector part enters,
 $$
-\tilde Q_1^{\natural}\tilde Q_2=\bigl(Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
-$$
+\boxed{\;
+\tilde Q_1^{\natural}\tilde Q_2=\bigl(Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2
+\;}
+$$.
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, and the vector part is the one displayed.
 
@@ -133,8 +139,10 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and conjugate-line
 
 **The scalar–vector form.** The scalar part of the first factor is $Q_{1,0}$ and its vector part is $-\vec Q_1$; the scalar part of the second is $\overline{Q_{2t}}$ and its vector part is $-\overline{\vec Q_2}$, so the dot product enters with a negative sign and the cross product with a positive one, read against the conjugate vector,
 $$
-\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2} .
-$$
+\boxed{\;
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}
+\;}
+$$.
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 

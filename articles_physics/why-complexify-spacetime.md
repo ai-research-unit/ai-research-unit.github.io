@@ -23,7 +23,7 @@ The minus sign sits explicitly in the metric, encoded in $\eta_{\mu\nu} = \mathr
 But it was not always so. Minkowski himself, and most physicists before the 1960s, wrote the interval differently:
 
 $$
-ds^2 = (ic_0\,dt')^2 + dx^2 + dy^2 + dz^2.
+\boxed{\;ds^2 = (ic_0\,dt')^2 + dx^2 + dy^2 + dz^2\;}.
 $$
 
 Here the imaginary unit $i$ multiplies the time coordinate and the vacuum speed of light. The metric is **Euclidean** — all plus signs. The Lorentzian structure is not in the metric; it is in the coordinate. This is the $ict'$ convention.
@@ -55,7 +55,7 @@ $$
 becomes, with $x^0 = ic_0 t'$,
 
 $$
-\Box = \frac{\partial^2}{\partial (x^0)^2} + \nabla^2,
+\boxed{\;\Box = \frac{\partial^2}{\partial (x^0)^2} + \nabla^2\;},
 $$
 
 which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.

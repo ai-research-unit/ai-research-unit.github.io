@@ -9,8 +9,6 @@ The global theory is governed by a dichotomy between **flexibility** and **rigid
 
 This article states the foundational global theorems — Moser's stability theorem, Gromov's $h$-principle for open manifolds, Gray's theorem, the Lutz–Martinet existence theorem for contact structures on three-manifolds, and Eliashberg's classification of overtwisted structures — and the topological constraints that make the closed case rigid. It treats the symplectic topology of four-manifolds, where the invariants of Seiberg–Witten and Gromov–Witten theory give the sharpest results; the toric picture, where a symplectic manifold with a torus action is encoded in a polytope; and the theory of fillings, in which contact structures appear as boundaries of symplectic manifolds. The invariants defined by counting holomorphic curves — the Gromov–Witten and Floer theories — are treated, and are used here only as statements.
 
-**The boundaries of the article.** The symplectic form, its linear algebra, the Darboux theorem, Hamiltonian vector fields, Lagrangian submanifolds, compatible almost complex structures and symplectic reduction are those of *Symplectic Geometry*; the contact form, the Reeb field, Legendrian submanifolds and symplectisation are those of *Contact Geometry*; the Poisson tensor and its leaves are those of *Poisson Geometry*, and these three articles are the immediately preceding ones of this half. The linear-algebraic theory of alternating forms — the canonical form, the Pfaffian, the symplectic group — is that of *Symplectic Forms and Poisson Brackets*, and is not restated. Smooth manifolds, transversality, handlebodies and the topological machinery of four-manifolds are those of *Smooth Manifolds and Differential Geometry*, *Differential Topology* . The homology and cohomology used are those of *Algebraic Topology*, being written by another agent, and the Seiberg–Witten and instanton invariants are analytic objects whose construction belongs to Part III, where the measure and the limit are available; the results are stated here and cited. Lie groups and torus actions are those of *Lie Groups* and its companions. The base field is $\mathbb{R}$ and no physics is invoked.
-
 ## Moser's Stability Theorem and the Space of Structures
 
 **Theorem (Moser, symplectic case).** Let $M$ be a closed manifold and let $\omega_t$, $t\in[0,1]$, be a smooth path of symplectic forms on $M$ with $[\omega_t]$ constant in $H^2(M;\mathbb{R})$. Then there is a smooth isotopy $\phi_t$ of $M$ with $\phi_0 = \mathrm{id}$ and $\phi_t^*\omega_t = \omega_0$.
@@ -162,12 +160,6 @@ In the presence of a torus action the symplectic structure reduces to a Delzant 
 | $b_2^\pm$ | Dimensions of the positive and negative eigenspaces of the intersection form on $H^2$ of a four-manifold |
 | Symplectic sum | $M_1\#_\Sigma \mathsf{M}_2$ along symplectic surfaces of opposite self-intersection |
 | Symplectic filling | $(W,\omega)$ with $\partial W=M$ and $\omega|_\xi$ positive; Stein and Weinstein variants |
-
-
-
-
-
-
 
 ## Further Reading
 

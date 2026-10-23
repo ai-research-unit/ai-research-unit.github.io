@@ -13,8 +13,6 @@ The name is taken from the exterior calculus, where the codifferential $d^*$ is 
 
 The two adjoint relations that organise the account are the following. First, $\delta$ is to $\nabla$ what the divergence is to the gradient: it is the metric contraction of the covariant derivative, and it satisfies $\langle\nabla\sigma,\alpha\rangle = \langle\sigma,\delta\alpha\rangle$ on a closed manifold. Second, the Cauchy–Riemann operator $D=c\circ\nabla$ is the composition of the connection with the Clifford contraction $c$, and its formal adjoint is $\delta\circ c^*$ together with the derivative of the frame; for the spin connection the result is the same operator, $D^*=D$, and this self-adjointness is the reason the codifferential is the natural adjoint partner of the operator of *The Spinor Operator*.
 
-**The boundaries.** The spin connection and the Cauchy–Riemann operator are *The Spinor Operator*; the Clifford multiplication and the contraction $c$ are *The Clifford Multiplication Operator*; the analytic theory of the adjoint operator — the domains, the boundary conditions and the self-adjoint extensions — belongs to Part III, where the measure and the limit are available, and is cited. The exterior codifferential $d^*$ of a Riemannian manifold and the Hodge Laplacian are *The Hodge Laplacian and Harmonic Forms*; the general formal adjoint of a differential operator and the Green formula are *Formal Adjoints and Green's Formula*. The base is a closed Riemannian spin manifold $(M,g)$ with spinor bundle $\mathcal{S}$ and spin connection $\nabla^{\mathcal{S}}$; the fibre form $h$ is positive definite and $c(v)^*=-c(v)$.
-
 ## The Adjoint of the Spin Connection
 
 ### Definition

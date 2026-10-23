@@ -31,7 +31,7 @@ The instance is not a restatement of the general case, and the reason is a **for
 **Theorem (the family is multiplicative).** For each pair $(\theta,\rho)$ and all invertible $\tilde{Q}_1,\tilde Q_2$,
 
 $$
-\Phi^{\theta,\rho}_{\tilde{Q}_1\tilde Q_2}=\Phi^{\theta,\rho}_{\tilde{Q}_1}\circ\Phi^{\theta,\rho}_{\tilde Q_2} .
+\boxed{\; \Phi^{\theta,\rho}_{\tilde{Q}_1\tilde Q_2}=\Phi^{\theta,\rho}_{\tilde{Q}_1}\circ\Phi^{\theta,\rho}_{\tilde Q_2} \;}.
 $$
 
 *Proof.* $\bar{\cdot}(\tilde{Q}_1\tilde Q_2)=\bar{\cdot}(\tilde{Q}_1)\bar{\cdot}(\tilde Q_2)$ because the coefficient conjugation is an automorphism, and $(\tilde{Q}_1\tilde Q_2)^{\dagger}=\tilde Q_2^{*}\tilde{Q}_1^{*}$ because the dagger is an anti-automorphism. Then $\Phi^{\theta,\rho}_{\tilde{Q}_1}(\Phi^{\theta,\rho}_{\tilde Q_2}(\tilde Q))=\theta(\tilde{Q}_1)\theta(\tilde Q_2)\,\tilde Q\,\rho(\tilde Q_2)\rho(\tilde{Q}_1)$, and the two middle factors combine into $\theta(\tilde{Q}_1\tilde Q_2)$ and $\rho(\tilde{Q}_1\tilde Q_2)$ respectively.
@@ -54,7 +54,7 @@ So the inner conjugation is **blind to the central phase**, and the twist is not
 **Theorem (the horizontal defect).** For every $\theta$ and every invertible $\tilde{Q}_1$,
 
 $$
-\Phi^{\theta,{}^{*}}_{\tilde{Q}_1}\circ\bigl(\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}_1}\bigr)^{-1}=R_{\tilde{Q}_1\tilde{Q}_1^{*}},
+\boxed{\; \Phi^{\theta,{}^{*}}_{\tilde{Q}_1}\circ\bigl(\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}_1}\bigr)^{-1}=R_{\tilde{Q}_1\tilde{Q}_1^{*}} \;},
 $$
 
 the right multiplication by $\tilde{Q}_1\tilde{Q}_1^{*}$. The two right factors of the family differ by the right multiplication by the Hermitian element $\tilde{Q}_1\tilde{Q}_1^{*}$, and that element is the image of the identity under the sandwich, $\Theta_{\tilde{Q}_1}(e_t)$.
@@ -106,9 +106,9 @@ $$
 **Theorem (the collapse).** Let $\tilde{Q}_1\in \mathrm{U}(2)$. Then the four operators fall into two pairs,
 
 $$
-\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1}=\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}_1}=\mathrm{Ad}_{\tilde{Q}_1},
+\boxed{\; \Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1}=\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}_1}=\mathrm{Ad}_{\tilde{Q}_1},
 \qquad
-\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1}=\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\mathrm{Ad}_{\tilde{Q}_1},
+\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1}=\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\mathrm{Ad}_{\tilde{Q}_1} \;},
 $$
 
 and the two pairs agree exactly on the rotation group,

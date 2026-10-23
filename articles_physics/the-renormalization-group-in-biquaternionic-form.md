@@ -14,12 +14,6 @@ The finding is stated at the outset, and it has the same shape as the parents'.
 
 The article is organized as follows. The next section fixes what the RG is and states the exact flow equation, taking care to distinguish the *functional* trace from the biquaternion trace. The following section describes the regulator and the shell, and what each costs. Two sections then perform the shell integration explicitly — the scalar quartic coupling, and the non-abelian gauge coupling — and fix the **sign** of each beta function. A section checks the fixed points against the flow equation on independent cases. A section addresses the two-sector question directly. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.
 
-**Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The wave biquaternion is $\tilde{P} = iE\,e_t + \vec p$ (natural units $\hbar = c = 1$), with biquaternion norm $\tilde{P}\tilde{P}^{\natural} = -p^2$ and mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. The **Hermitian form** (the general plain sesquilinear form of the mathematics companions) is
-$$
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
-$$
-real and positive definite of signature $(8,0)$ on $\mathbb{B}$; on the material sector it is the Euclidean square, $\langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$. Euclidean momenta are denoted $k_E$, with $k_E^2 = \langle\tilde{P}_E,\tilde{P}_E\rangle_{*} \ge 0$ for the material element $\tilde{P}_E = ik_E^0\,e_t+\vec p$. The standard route to the Euclidean momentum is the Wick rotation, the identification $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ of the path-integral and Wick-rotation articles, written in coordinates as $E \to ik_E^0$; the alternative route taken for the cutoff is the Hermitian form of that same material element, and the two agree by an identity. Throughout, $\mathrm{Tr}$ in a **functional** expression is the trace over field space, not the biquaternion trace $2\,\mathrm{Sc}(\cdot)$; the distinction is flagged where it matters.
-
 ## The Scale Dependence of the Effective Action
 
 The **effective action** $\Gamma[\phi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\phi\, \exp(-S[\phi] + \int J\phi)$ and $W[J] = \log Z[J]$ (Euclidean signature throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the **Wilsonian** effective action $\Gamma_k$, defined at a sliding scale $k$: $\Gamma_k$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_k$ on $k$ is what the RG computes.
@@ -27,8 +21,8 @@ The **effective action** $\Gamma[\phi]$ is the generating functional of one-part
 The exact statement of that dependence is the **Wetterich equation**,
 
 $$
-\partial/\partial t' \Gamma_k[\phi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\phi] + R_k\Big)^{-1}\,\partial/\partial t' R_k\right],
-\qquad t' = \log\frac{k}{\Lambda},
+\boxed{\;\partial/\partial t' \Gamma_k[\phi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\phi] + R_k\Big)^{-1}\,\partial/\partial t' R_k\right],
+\qquad t' = \log\frac{k}{\Lambda}\;},
 $$
 
 where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with respect to $\phi$, $R_k$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.
@@ -157,9 +151,9 @@ $$
 Writing $\delta\ell = \log b$ and reading the equation as the change of $\lambda$ as the cutoff is lowered from $\Lambda$ to $\Lambda/b$ — that is, toward the infrared — the flow is
 
 $$
-\frac{d\lambda}{d\ell} = -\frac{3\lambda^2}{16\pi^2},
+\boxed{\;\frac{d\lambda}{d\ell} = -\frac{3\lambda^2}{16\pi^2},
 \qquad\text{equivalently}\qquad
-\beta_\lambda = \mu\frac{d\lambda}{d\mu} = +\frac{3\lambda^2}{16\pi^2} .
+\beta_\lambda = \mu\frac{d\lambda}{d\mu} = +\frac{3\lambda^2}{16\pi^2}\;}.
 $$
 
 The relative sign is fixed by $\ell = \log(\Lambda_0/\Lambda)$: increasing $\ell$ lowers the cutoff, so $\mu\,d/d\mu = -d/d\ell$. The sign of the beta function is therefore **positive**, and its consequences are immediate. For $\lambda > 0$, the coupling *grows* toward the ultraviolet and *shrinks* toward the infrared; the Gaussian fixed point $\lambda^* = 0$ is infrared-attractive, and the coupling reaches a Landau pole at a finite ultraviolet scale, at $\ell = \ell_0 - 16\pi^2/(3\lambda_0)$ measured from any reference point $\ell_0$. The one-loop formula is not to be continued past that pole toward the ultraviolet, and a careless continuation through it produces an artifact; toward the infrared the coupling decreases monotonically to zero, which is the same statement as the infrared-attractiveness of the Gaussian fixed point.
@@ -185,7 +179,7 @@ $$
 Besides the Gaussian fixed point $\lambda^* = 0$, this beta function has the **Wilson–Fisher fixed point**
 
 $$
-\lambda^* = \frac{16\pi^2}{3}\,\epsilon ,
+\boxed{\;\lambda^* = \frac{16\pi^2}{3}\,\epsilon\;},
 $$
 
 at which the two competing terms balance. We check this in the next section, rather than assert it.
@@ -197,9 +191,9 @@ The second case is the running of a non-abelian gauge coupling, which is the ind
 The one-loop beta function of a Yang–Mills theory with gauge group $G$ and matter in representations $r$ is
 
 $$
-\beta_g = \mu\frac{dg}{d\mu} = -\frac{g^3}{16\pi^2}\,b_0,
+\boxed{\;\beta_g = \mu\frac{dg}{d\mu} = -\frac{g^3}{16\pi^2}\,b_0,
 \qquad
-b_0 = \frac{11}{3}\,C_2(G) - \frac{2}{3}\sum_{\text{Weyl}} T(r),
+b_0 = \frac{11}{3}\,C_2(G) - \frac{2}{3}\sum_{\text{Weyl}} T(r)\;},
 $$
 
 where $C_2(G)$ is the quadratic Casimir of the adjoint representation and $T(r)$ the Dynkin index of the matter representation. The **sign is negative** for a non-abelian gauge group with sufficiently little matter: the coupling *decreases* toward the ultraviolet, which is asymptotic freedom. This is the opposite sign to the scalar quartic coupling, and the contrast is the point of computing both.

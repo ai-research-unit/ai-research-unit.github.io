@@ -16,8 +16,6 @@ The article computes the operators in the real basis $e_t,\vec e_x,\vec e_y,\vec
 
 The operators of the general quaternionic sesquilinear product are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the operators with the conjugate transpose and the $J$-unitary family are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra*. The adjoint relation used below is the compatibility theorem of the form article.
 
-**Conventions.** The real basis is $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and a real-linear operator is written as an $8\times8$ real matrix in it; the coefficient basis is $e_t,\vec e_x,\vec e_y,\vec e_z$ over $\mathbb{C}$, and a $\mathbb{C}$-linear operator there is a $4\times4$ complex matrix. By the *matrix of an operator* is meant the matrix of its real-linear action in the real basis. The norm is $\langle\tilde Q_4\rangle_{\natural}=\tilde Q_4^{\natural}\tilde Q_4=Q_{4t}^{2}+Q_{4x}^{2}+Q_{4y}^{2}+Q_{4z}^{2}$.
-
 ## The Two Families and Their Parity
 
 **Theorem (parity).** $L^{\star}_{\tilde Q_4}$ is $\bar{\cdot}$-semilinear, $R^{\star}_{\tilde Q_4}$ is $\mathbb{C}$-linear, and the two are related by the conjugate-commutativity,
@@ -37,9 +35,11 @@ $$
 **Theorem (the two operators of $e_t$).** In the real basis,
 
 $$
+\boxed{\;
 L^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,-1,1,1,1),
 \qquad
-R^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1).
+R^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)
+\;}.
 $$
 
 The first is the star conjugation $\tilde Q_1\mapsto\tilde Q_1^{*}$ and the second the natural conjugation $\tilde Q_1\mapsto\tilde Q_1^{\natural}$.
@@ -79,6 +79,7 @@ the two blocks acting on the real coordinates $(e_t,\vec e_x,\vec e_y,\vec e_z)$
 **Theorem (the rank of the two operators).** For an element $\tilde Q_4$,
 
 $$
+\boxed{\;
 \mathrm{rank}\,L^{\star}_{\tilde Q_4}=\mathrm{rank}\,R^{\star}_{\tilde Q_4}=
 \begin{cases}
 0,&\tilde Q_4=0,\\
@@ -86,6 +87,7 @@ $$
 8,&Q_{4t}\neq0,\ \langle\tilde Q_4\rangle_{\natural}\neq0,\\
 6,&Q_{4t}\neq0,\ \langle\tilde Q_4\rangle_{\natural}=0,
 \end{cases}
+\;}
 $$
 
 where the rank is the rank of the real-linear operator on the eight-real-dimensional space.
@@ -145,8 +147,10 @@ the defect of the right composition is the mirrored expression $(\tilde Q_1\star
 **Theorem (the adjoint).** With respect to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$,
 
 $$
+\boxed{\;
 K\bigl(L^{\star}_{\tilde Q_4}\tilde Q_1,\tilde Q_3\bigr)
-=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_4^{\natural}}\tilde Q_3\bigr)},
+=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_4^{\natural}}\tilde Q_3\bigr)}
+\;},
 $$
 
 so the adjoint of the left multiplication by $\tilde Q_4$ is the left multiplication by $\tilde Q_4^{\natural}$.

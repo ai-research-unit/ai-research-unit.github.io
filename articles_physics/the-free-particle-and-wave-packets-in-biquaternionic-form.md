@@ -61,9 +61,9 @@ This is the first instance of a pattern that recurs throughout the subcategory: 
 The free biquaternion Schrödinger equation is
 
 $$
-i\hbar\,\partial/\partial t' \psi = H \psi,
+\boxed{\;i\hbar\,\partial/\partial t' \psi = H \psi,
 \qquad
-H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t ,
+H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t\;},
 $$
 
 with $\psi$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_t e_t$ with $h_t = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads
@@ -103,9 +103,9 @@ $$
 so the equation is satisfied for every constant $\chi$ provided
 
 $$
-\hbar\omega = \frac{\hbar^2 k^2}{2m}
+\boxed{\;\hbar\omega = \frac{\hbar^2 k^2}{2m}
 \qquad\Longleftrightarrow\qquad
-\omega(\vec k) = \frac{\hbar k^2}{2m}.
+\omega(\vec k) = \frac{\hbar k^2}{2m}\;}.
 $$
 
 Two features of the solution are the whole content of the plane-wave section. First, the **energy does not depend on $\chi$**: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{C}_{\mathbb{B}}$.
@@ -188,9 +188,9 @@ $$
 which is real and positive definite, and which equals $2\,\mathrm{Sc}(\psi^\dagger\psi)$ by the trace convention. The **biquaternion norm** $\langle \psi\rangle_{\natural} = \psi\psi^{\natural}$ is a different object. For a spinor in a left ideal it vanishes identically, because a state-module element is a zero divisor of $\mathbb{B}$:
 
 $$
-\psi \in \mathbb{B}\tilde\Pi,\ \psi \neq 0
+\boxed{\;\psi \in \mathbb{B}\tilde\Pi,\ \psi \neq 0
 \qquad\Longrightarrow\qquad
-\langle \psi\rangle_{\natural} = \psi\psi^{\natural} = 0 .
+\langle \psi\rangle_{\natural} = \psi\psi^{\natural} = 0\;}.
 $$
 
 The zero divisor cone therefore carries the states, while the positive trace form carries the probabilities. This distinction is not a defect of the states; it is the algebraic statement that the algebra is not a division algebra, and it is the structural reason that probabilities are read from the normalised Hermitian form, read through the trace rather than from the biquaternion norm.
@@ -274,10 +274,10 @@ $$
 and its density is again a normalised Gaussian,
 
 $$
-|\Phi(x,t')|^2 = \frac{1}{\sqrt{2\pi}\,s(t')}
+\boxed{\;|\Phi(x,t')|^2 = \frac{1}{\sqrt{2\pi}\,s(t')}
 \exp\!\left(-\frac{(x - v_0 t')^2}{2s(t')^2}\right),
 \qquad
-s(t') = s_0\sqrt{1 + \left(\frac{\hbar t'}{2m s_0^2}\right)^2}.
+s(t') = s_0\sqrt{1 + \left(\frac{\hbar t'}{2m s_0^2}\right)^2}\;}.
 $$
 
 The centre moves at the group velocity $v_0 = \hbar k_0/m$, and the width grows as $s(t')$. The spreading is negligible for $t' \ll \tau$ and linear for $t' \gg \tau$, where
@@ -315,10 +315,10 @@ The stationary wave vector is the one whose group velocity carries it to the obs
 The free propagator is the inverse Fourier transform of the free phase,
 
 $$
-K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t') = \int \frac{d^3k}{(2\pi)^3}\,
+\boxed{\;K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t') = \int \frac{d^3k}{(2\pi)^3}\,
 \exp(\,i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - i\hbar k^2 t'/2m)
 = \left(\frac{m}{2\pi i\hbar t'}\right)^{3/2}
-\exp\!\left(\frac{im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2}{2\hbar t'}\right),
+\exp\!\left(\frac{im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2}{2\hbar t'}\right)\;},
 $$
 
 the last equality being the standard Fresnel (Gaussian) integral in three dimensions. The result is a complex scalar times $e_t$:

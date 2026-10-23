@@ -12,8 +12,6 @@ This article constructs those states and reads their biquaternion content. It es
 
 The signs are the delicate part of any Grassmann construction, so every convention is stated at the point of use and every identity used below was recomputed in that convention.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the mass term is the linear chirality-off-diagonal pair; the module carries $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$. The Fock space is $\mathcal{F}=\Lambda S$ over the one-particle module $S=\mathbb{B}\tilde\Pi_+$. **Grassmann conventions.** To each mode belong two odd generators $\theta$ and $\theta^*$ with
-
 $$
 \theta^2=\theta^{*2}=0 ,
 \qquad
@@ -71,9 +69,9 @@ with $|\tilde Q|=0$ for all $\tilde Q\in\mathbb{B}$. Because every $\tilde Q$ is
 For one fermionic mode with $a^{\mathrm{fop}}|0\rangle=0$, $|1\rangle=a^{\mathrm{fop}\dagger}|0\rangle$, define for odd $\theta$
 
 $$
-|\theta\rangle=(1+\theta a^{\mathrm{fop}\dagger})|0\rangle=|0\rangle+\theta|1\rangle ,
+\boxed{\;|\theta\rangle=(1+\theta a^{\mathrm{fop}\dagger})|0\rangle=|0\rangle+\theta|1\rangle ,
 \qquad
-\langle\theta|=\langle0|+\theta^*\langle1| .
+\langle\theta|=\langle0|+\theta^*\langle1|\;}.
 $$
 
 The series terminates because $\theta^2=0$, so $|\theta\rangle=\exp(\theta a^{\mathrm{fop}\dagger})|0\rangle$ exactly, with no convergence question — a feature of fermionic coherent states that has no bosonic analogue.
@@ -101,8 +99,8 @@ The eigenvalue is the Grassmann number $\theta$. Both sides of the equation carr
 **The overlap is a Gaussian.** Using $\langle\theta|=\langle0|+\theta^*\langle1|$ and $|0\rangle,\theta|1\rangle$,
 
 $$
-\langle\theta|\eta\rangle=\big(\langle0|+\theta^*\langle1|\big)\big(|0\rangle+\eta|1\rangle\big)
-=1+\theta^*\eta=\exp(\theta^*\eta),
+\boxed{\;\langle\theta|\eta\rangle=\big(\langle0|+\theta^*\langle1|\big)\big(|0\rangle+\eta|1\rangle\big)
+=1+\theta^*\eta=\exp(\theta^*\eta)\;},
 $$
 
 since $\eta\theta^*=-\theta^*\eta$ and the cross terms vanish. The overlap is not positive: $\langle\theta|\theta\rangle=1+\theta^*\theta$, and $\theta^*\theta$ is an even Grassmann number rather than a number, so the "norm" carries no positivity. This is the fermionic counterpart of the overcompleteness of the bosonic coherent states: the label set is larger than the state space, and the states are not orthogonal.
@@ -117,7 +115,7 @@ $$
 multiplying by $\exp(-\theta^*\theta)=1-\theta^*\theta$ and keeping the top components gives $\theta\theta^*\big(|0\rangle\langle0|+|1\rangle\langle1|\big)=\theta\theta^*\,I$, and integrating with $\int d\theta^*d\theta\,\theta\theta^*=1$,
 
 $$
-\int d\theta^*d\theta\;\exp(-\theta^*\theta)\,|\theta\rangle\langle\theta|=1 .
+\boxed{\;\int d\theta^*d\theta\;\exp(-\theta^*\theta)\,|\theta\rangle\langle\theta|=1\;}.
 $$
 
 The **sign** here is fixed by the Berezin convention and by nothing else: with the opposite convention $\int\theta\theta^*=-1$ the same computation gives $-1$. The convention was stated once and is used throughout; the identity was recomputed in it, and the assignment of signs to the four components of $|\theta\rangle\langle\theta|$ was checked component by component.
@@ -143,9 +141,9 @@ $$
 with $\psi_0,\psi_1\in\mathbb{C}$ (or, in the biquaternion setting, coefficients valued in the even part). Then the mode operators become
 
 $$
-a^{\mathrm{fop}}=\frac{\partial}{\partial\theta^*} ,
+\boxed{\;a^{\mathrm{fop}}=\frac{\partial}{\partial\theta^*} ,
 \qquad
-a^{\mathrm{fop}\dagger}=\theta^*\times ,
+a^{\mathrm{fop}\dagger}=\theta^*\times\;},
 $$
 
 acting on the left, and the canonical anticommutator is the anticommutator of derivation and multiplication:

@@ -13,8 +13,6 @@ The article is organized as follows. The holonomy is defined for the abelian and
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the covariant derivative.
 - Companion article *The Photon in Biquaternionic Form*, for the massless one-particle state.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}=iA_te_t+\vec A\in\mathbb{M}_-$ and the connection one-form is $\tilde{A}=\tilde{A}_\mu dx^\mu$. The field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with the component form $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ in the abelian case. The gauge group is realized by the commutator, in the physics normalization with the Hermitian generators $T^a=i\vec e_a\in\mathbb{M}_+$ obeying $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ with the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the generators are $T^a=i\vec e_a$ in the fundamental representation, normalized so that the trace $\mathrm{Tr}$ is the matrix trace in that representation, equal to twice the scalar part for the quaternion realization. The coupling is $g$ and the path ordering is denoted $\mathcal{P}$. Natural units are used.
-
 ## The Holonomy of the Connection
 
 ### The Abelian Wilson Loop
@@ -84,7 +82,7 @@ The trace is invariant under conjugation, and the Wilson loop is therefore gauge
 A small loop is the local probe of the field strength. For a loop of area $a^2$ in the $\mu\nu$ plane, the holonomy expands as
 
 $$
-W(C) = 1 + i\,a^2 F_{\mu\nu} + O(a^4)
+\boxed{\;W(C) = 1 + i\,a^2 F_{\mu\nu} + O(a^4)\;}
 $$
 
 in the abelian case, and in the non-abelian case as $W=1+ia^2F^a_{\mu\nu}T^a+O(a^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $a=10^{-3}$: the ratio of the deviation of the plaquette from unity to $a^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.
@@ -92,7 +90,7 @@ in the abelian case, and in the non-abelian case as $W=1+ia^2F^a_{\mu\nu}T^a+O(a
 Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, its square is a central element,
 
 $$
-\tilde{F}^2 = \left(|\vec E|^2-|\vec H|^2\right)e_t + 2i\,\vec E\cdot\vec H\,e_t ,
+\boxed{\;\tilde{F}^2 = \left(|\vec E|^2-|\vec H|^2\right)e_t + 2i\,\vec E\cdot\vec H\,e_t\;},
 $$
 
 so that the two Lorentz invariants of the Maxwell field — the difference of the squared field magnitudes and the pseudoscalar $\vec E\cdot\vec H$ — are the real and imaginary scalar parts of $\tilde{F}^2$. This was verified with the $2\times2$ representation $\vec e_k=-i\sigma_k$: for random fields the matrix square of $\tilde{F}$ equaled $ (|\vec E|^2-|\vec H|^2+2i\vec E\cdot\vec H)I_2$ to machine precision. The statement is the framework's: in a biquaternion algebra the square of the field strength is automatically central, and both invariants are read from the single element $\tilde{F}^2$ as its two scalar parts. The Wilson loop of a small loop is the exponentiation of the field strength that this element describes, and the two invariants are its second-order content.
@@ -168,7 +166,7 @@ $$
 is the behaviour of a theory in a phase where the flux between two sources can spread, and an **area law**,
 
 $$
-\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area}(C)) ,
+\boxed{\;\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area}(C))\;},
 $$
 
 is the behaviour of a confining phase, where a flux tube forms and the coefficient $\sigma$ is the string tension. The rectangular loop of width $L$ and time extent $T$ gives the static potential between two heavy sources through $\langle W(C)\rangle\sim \exp(-iT\,V(L))$, so that an area law corresponds to a linearly rising $V(L)=\sigma L$ and a perimeter law to a screened potential. These statements are standard and are the reason the Wilson loop is the natural order parameter of the gauge theory; the lattice regularization in which the area law is established and the strong-coupling expansion that produces it belong to the companion subcategory on gauge fields and are not repeated here.

@@ -7,9 +7,9 @@ The Rarita–Schwinger field is the field of spin $\tfrac32$: a vector-spinor $\
 The biquaternion framework is well suited to this field, because the two indices of $\psi_\mu$ correspond to the two kinds of object the framework distinguishes. The vector index carries the **material** vector representation, which the article on integer-spin quantization identifies with the adjoint action on the vector part $V\subset\mathbb{M}_-$; the spinor index carries the left-ideal representation that the Dirac article identifies as the spin-$\tfrac12$ carrier. The Rarita–Schwinger field is therefore the tensor product of the two, and its decomposition is the framework's own:
 
 $$
-\left(\tfrac12\right)\otimes 1 = \left(\tfrac12\right)\oplus\left(\tfrac32\right),
+\boxed{\;\left(\tfrac12\right)\otimes 1 = \left(\tfrac12\right)\oplus\left(\tfrac32\right),
 \qquad
-2\cdot 3 = 2+4 ,
+2\cdot 3 = 2+4\;},
 $$
 
 so that the tensor product of the spinor with the material vector contains a spin-$\tfrac12$ piece and a spin-$\tfrac32$ piece, and the $\gamma$-trace constraint removes the former. The same pattern appears for the graviton, where the symmetric trace-free square of the vector decomposes as $0\oplus2$; here the antisymmetric structure of the constraint selects the highest spin. The two articles together are the framework's statement of how higher-spin fields are built: tensor a lower-spin carrier with the material vector and project onto the top component.
@@ -19,8 +19,6 @@ The article is organized as follows. The field, its constraint, and the conseque
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spinor carrier as a left ideal and the Clifford structure.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless gauge field whose gauge structure the massless Rarita–Schwinger case generalizes.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the fermionic quantization of half-integer-spin fields.
-
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_i \vec e_j=-\delta_{ij}e_t+\varepsilon_{ijk}\vec e_k$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, on which the adjoint action of the rotation algebra acts as the spin-one representation. The spinor carrier is the left ideal of the Dirac article, with the Clifford algebra $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ defined by $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, so that $(\gamma^0)^2=+I_4$ and $(\gamma^k)^2=-I_4$; the $ict'$ coordinate metric remains $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and $g=-\eta$. The vector-spinor is $\psi_\mu$, with $\mu$ the material vector index and the spinor index suppressed; the $\gamma$-trace is $\gamma^\mu\psi_\mu$. The mass is $m$, natural units are used, and the metric-dependent contractions follow the Clifford convention $g$ while the coordinate contraction of the field with $dx^\mu$ follows the $ict'$ convention $\eta$.
 
 ## The Field, Its Constraint, and Transversality
 
@@ -59,7 +57,7 @@ $$
 where the constraint has been used in the last two terms. Hence the constraint and the field equation together imply the **transversality** condition
 
 $$
-p^\mu\psi_\mu = 0 ,
+\boxed{\;p^\mu\psi_\mu = 0\;},
 $$
 
 which is not independent but follows from the two. Both steps were verified with explicit gamma matrices in the Clifford convention: the Clifford algebra to machine precision, the identity $\gamma^\mu \not p=2p^\mu-\not p\gamma^\mu$ to machine precision at random momenta, and the resulting contraction to zero.
@@ -85,7 +83,7 @@ $$
 so that $\psi_\mu$ is replaced by $P_\mu{}^\nu\psi_\nu$, whose $\gamma$-trace vanishes. This was verified with explicit $4\times4$ gamma matrices in the Clifford convention $g=\mathrm{diag}(+1,-1,-1,-1)$: the idempotency and both transversality conditions held to machine precision. The rank of the $16\times16$ matrix $P^{(\mu i)(\nu j)}$ — the projector acting on the $4\times4$ components of the vector-spinor — is
 
 $$
-\mathrm{rank}\,P = 12 = 16-4 ,
+\boxed{\;\mathrm{rank}\,P = 12 = 16-4\;},
 $$
 
 verified by Gaussian elimination over the complex numbers, so that the $\gamma$-trace constraint removes exactly a four-component spinor from the sixteen components of the vector-spinor.
@@ -217,13 +215,11 @@ The three quantized fields of this subcategory — the vector, the Rarita–Schw
 
 In each case the carrier is a tensor product of a lower-spin object with the **material vector index** — the triplet $V$ for the integer cases, the material four-vector for the Rarita–Schwinger field, whose spatial part is the same triplet — on which the adjoint action generates the spin-one rotation: the vector field is $V$ itself, with dimension three; the Rarita–Schwinger field is the material four-vector tensored with the spinor $S$, of dimension sixteen, reduced to twelve by the $\gamma$-trace constraint; and the graviton is the symmetric trace-free square of $V$, with dimension five. In each case a projector built from the algebra's invariant form selects the top-spin component: the metric pairing for the integer cases, the $\gamma$-trace for the half-integer one, and the traceless-and-symmetric projection for the graviton. And in each case the physical count is the standard one: $2s+1$ states for the massive field, and two states of helicity $\pm s$ for the massless field.
 
-
 | $s$ | $\text{carrier}$ | $\dim$ | $\text{massive} \to \text{massless}$ |
 |---|---|---|---|
 | $1$ | $V$ | $3$ | $3 \to 2$ |
 | $\tfrac32$ | $(\text{material four-vector})\otimes S$ | $12\ (4\ \text{on shell})$ | $4 \to 2$ |
 | $2$ | $(V\odot V)_{\text{traceless}}$ | $5$ | $5 \to 2$ |
-
 
 The massless limit takes the count to two in every case, because the gauge symmetry removes the helicities below $s$; the framework sees this as the removal of the lower-spin components that the tensor product contains, and the projector that performs the removal is the same one that defines the field. The pattern is not a derivation of the fields — their existence and their couplings are inputs — but it is a uniform account of why the higher-spin fields have the carriers, the constraints, and the counts that they do.
 

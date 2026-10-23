@@ -25,7 +25,7 @@ and for a real central parameter the same with the real quaternion subspace and 
 **Theorem (the dimension of a product slice).** Let $\tilde\Pi$ be a primitive idempotent and $\tilde Q_1=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in the idempotent plane $W_{\tilde\Pi}$. Then
 
 $$
-\dim_H\bigl(J_{\tilde Q_1}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr),
+\boxed{\;\dim_H\bigl(J_{\tilde Q_1}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr)\;},
 $$
 
 the maximum of the two products of a boundary and a filled Julia set; when a factor has empty interior its boundary and its filled set coincide and the corresponding terms agree.
@@ -39,7 +39,7 @@ the maximum of the two products of a boundary and a filled Julia set; when a fac
 **Theorem (the dimension at the parameter zero).** For $\tilde Q_1=0$,
 
 $$
-\dim_H\mathcal K_0=8, \qquad \dim_H J_0=7 .
+\boxed{\;\dim_H\mathcal K_0=8, \qquad \dim_H J_0=7\;}.
 $$
 
 Moreover $J_0$ contains the idempotent manifold, a real four-dimensional smooth manifold, so $\dim_H\bigl(J_0\cap\mathscr{Z}\bigr)\ge4$.
@@ -56,7 +56,7 @@ Moreover $J_0$ contains the idempotent manifold, a real four-dimensional smooth 
 2. If the complex filled Julia set has dimension $\alpha$, then
 
 $$
-\dim_H\mathcal K_{Ce_t}\le4+2\alpha .
+\boxed{\;\dim_H\mathcal K_{Ce_t}\le4+2\alpha\;}.
 $$
 
 **Proof.** (1) For $C$ in the interior of the Mandelbrot set the origin is in the interior of the complex filled Julia set, and the set of matrices whose eigenvalues lie in a disc about the origin contained in $K_C$ is an open neighbourhood of $0$ in $\mathcal K_{Ce_t}$; hence the set is full-dimensional. (2) A matrix in $\mathcal K_{Ce_t}$ with distinct eigenvalues $\lambda_1\neq\lambda_2$ is $S\operatorname{diag}(\lambda_1,\lambda_2)S^{-1}$. Fix the unordered pair of eigenvalues in $K_C$: the conjugates of the diagonal matrix form the conjugacy class, the quotient of $GL_2(\mathbb{C})$, of real dimension eight, by the centraliser of a diagonal matrix with distinct eigenvalues, which is the torus of diagonal matrices, of real dimension four; the class therefore has real dimension four, and near a matrix with distinct eigenvalues the conjugacy class and the eigenvalue pair are local coordinates on $\mathcal K_{Ce_t}$, four real dimensions from the class and at most $2\dim_HK_C$ from the pair, since the pair ranges over $K_C\times K_C$ and the product formula holds for these sets. The matrices with repeated eigenvalues form a set of lower dimension and do not affect the bound. Hence $\dim_H\mathcal K_{Ce_t}\le4+2\dim_HK_C$.

@@ -16,8 +16,6 @@ Two structural facts follow and are developed below. First, the Gibbs state of a
 
 The article proceeds as follows. The Gibbs state is defined and its existence condition — the convergence of $Z$ — is treated as part of the content rather than as a technicality. The thermodynamic quantities are then written as functionals of the state and computed through the Hermitian form, with the trace as the final reading at normalisation. The Gibbs state is characterised variationally, as the minimiser of the free-energy functional, and the Legendre structure relating $\log Z$, the entropy, and the free energy is set out with its signs checked against the thermodynamic identities. The low- and high-temperature limits are computed, the KMS condition is identified as the operator-algebraic characterisation of the same state, and the closing section separates what the framework adds from what it does not.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$. The four fixed-point subspaces are the complex subspace $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (the complex scalars, the centre of $\mathbb{B}$), the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part; the informational sector), and the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part; the material sector, whose time coordinate is $ict'$). A Hermitian element is written $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$; a state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$. The Hermitian form is $\langle\tilde H_1,\tilde H_2\rangle_{*}=\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$, whose trace reading at normalisation is $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$. Units are $\hbar=1$ and $k_B=1$, so $\beta=1/T$ and the entropy is measured in units of $k_B$; restoring $k_B$ multiplies the entropy and the heat capacity by $k_B$.
-
 ## The Gibbs State and the Convergence of $Z$
 
 At inverse temperature $\beta$ a quantum system with Hamiltonian $\tilde H$ is described by the **Gibbs state**
@@ -49,7 +47,7 @@ $$
 an element of $\mathbb{M}_+$. Applying the Hermitian form, with its trace reading at normalisation, to $\tilde H_1=e_t$ and $\tilde H_2=\exp(-\beta\tilde H)$ gives
 
 $$
-Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h|),
+\boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h|)\;},
 $$
 
 and division gives the state
@@ -81,13 +79,13 @@ $$
 so
 
 $$
-E=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=h_t-|\vec h|\tanh x .
+\boxed{\;E=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=h_t-|\vec h|\tanh x\;}.
 $$
 
 The eigenvalues of $\tilde{Ϛ}$ are the level populations, $\lambda_\pm=\tfrac12(1\pm\tanh x)$ with $\lambda_+$ the ground-state population, and the entropy is the binary entropy of the pair:
 
 $$
-S=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-=\log 2+\log\cosh x-x\tanh x .
+\boxed{\;S=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-=\log 2+\log\cosh x-x\tanh x\;}.
 $$
 
 The free energy is $F=E-S/\beta$, which also equals $-\beta^{-1}\log Z$:
@@ -152,7 +150,6 @@ $$
 The same statement can be read as the **maximum-entropy principle**: at fixed internal energy $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=E$, the Gibbs state maximises $S[\tilde{Ϛ}]$, and the two variational problems are Legendre transforms of one another. The derivation uses only the Hermitian form and the entropy functional, both of which are framework objects.
 
 One caveat belongs here. The functional $\mathcal F$ is defined where $\log\tilde{Ϛ}$ exists, that is, in the interior of the Bloch ball. The minimiser is interior for every finite $\beta$, since $|\vec r|=\tanh(\beta|\vec h|)<1$, but as $\beta\to\infty$ it approaches the boundary, where the functional is undefined. The variational characterisation therefore describes the finite-$\beta$ states exactly and the zero-temperature state only as a limit — the same boundary already noted for the entropy.
-
 
 ## Legendre Structure and Thermodynamic Identities
 
@@ -266,7 +263,6 @@ The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}]=\mathrm{Tr}(\tilde{�
 
 The framework reproduces standard thermodynamics and claims no new law. Its addition is the interpretation: the potentials are scalar parts of $\mathbb{M}_+$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{M}_-$.
 
-
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -305,4 +301,3 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the modular Hamiltonian $K=-\log\rho$.
 - M. A. Nielsen and I. L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the von Neumann entropy and its properties.
 - Companion articles: [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the thermal operator and $Z$; [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the operator-algebraic characterisation and the modular Hamiltonian; [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the state space, the plain form, and the entropy; [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) and [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the two sectors; [Exercise: Entanglement Entropy and the Partial Trace](exercise-entanglement-entropy-and-the-partial-trace.html), for the entropy functional $-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ and its domain; [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the geometry of the state space; [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the modular structure in the framework.
-

@@ -38,7 +38,7 @@ It is a **material element**; it is what is observed. Its **observable** is the 
 The **invariant interval** between two nearby events in spacetime is the **biquaternion norm** of the displacement biquaternion $d\tilde{R} \in \mathbb{M}_-$:
 
 $$
-ds^2 = d\tilde{R}\,\overline{d\tilde{R}} = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{t'}^2 +dx^2+dy^2+dz^2.
+\boxed{\;ds^2 = d\tilde{R}\,\overline{d\tilde{R}} = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{t'}^2 +dx^2+dy^2+dz^2\;}
 $$
 
 Here $\overline{d\tilde{R}} = ic\,dt'\,e_t - d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
@@ -98,7 +98,7 @@ where $m$ is the rest mass, $E = \gamma m c^2$ is the relativistic energy, and $
 The four-momentum satisfies the **mass-shell relation**
 
 $$
-\tilde{P}\tilde{P}^{\natural} = m^2 \tilde{V}\tilde{V}^{\natural} = -m^2 c^2.
+\boxed{\;\tilde{P}\tilde{P}^{\natural} = m^2 \tilde{V}\tilde{V}^{\natural} = -m^2 c^2\;}
 $$
 
 Expanding in components,
@@ -170,7 +170,7 @@ $$
 where $\rho$ is the charge density and $\vec j$ is the current density. The current biquaternion lies in $\mathbb{M}_-$ (imaginary scalar part, real vector part). The **conservation of charge** is expressed by the biquaternion equation
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0,
+\boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0\;}
 $$
 
 where $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,

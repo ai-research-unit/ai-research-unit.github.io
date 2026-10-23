@@ -21,8 +21,6 @@ The article is organised as follows. The next section derives the functional int
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the central scalar action and the current.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector and the biquaternion norm.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$.
-
 ## From the Operator Formalism to the Functional Integral
 
 The functional integral is derived from the operator formalism by inserting a complete set of field eigenstates at each time. The field operator $\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ has a continuum of eigenstates,
@@ -122,10 +120,10 @@ $$
 and the time-ordered correlation functions of the quantized field are its functional derivatives,
 
 $$
-\langle0|T\,\phi^{\mathrm{fop}}(x_1)\cdots\phi^{\mathrm{fop}}(x_n)\,\phi^{\mathrm{fop}\dagger}(y_1)\cdots\phi^{\mathrm{fop}\dagger}(y_m)|0\rangle
+\boxed{\;\langle0|T\,\phi^{\mathrm{fop}}(x_1)\cdots\phi^{\mathrm{fop}}(x_n)\,\phi^{\mathrm{fop}\dagger}(y_1)\cdots\phi^{\mathrm{fop}\dagger}(y_m)|0\rangle
 =\frac{1}{Z[0]}\left(\frac{1}{i}\right)^{n+m}
 \frac{\delta^{\,n+m}Z[\tilde J]}
-{\delta J^*(x_1)\cdots\delta J^*(x_n)\,\delta J(y_1)\cdots\delta J(y_m)}\bigg|_{\tilde J=0}.
+{\delta J^*(x_1)\cdots\delta J^*(x_n)\,\delta J(y_1)\cdots\delta J(y_m)}\bigg|_{\tilde J=0}\;}.
 $$
 
 This is the equivalence that the next section examines; here the free case is evaluated.
@@ -147,7 +145,7 @@ $$
 and the two-point function is again $A^{-1}$; the factor of two in the real-versus-complex counting is exactly the counting that the central-valued field's single complex component supplies. The verification below is performed in the real form, where the closed result is the one quoted. In the continuum the completion of the square gives
 
 $$
-Z[\tilde J]=Z[0]\exp\!\left(-\int d^4x\,d^4y\;J^*(x)\,\Delta_F(x-y)\,J(y)\right),
+\boxed{\;Z[\tilde J]=Z[0]\exp\!\left(-\int d^4x\,d^4y\;J^*(x)\,\Delta_F(x-y)\,J(y)\right)\;},
 $$
 
 where $\Delta_F$ is the Feynman propagator of the companion article *The Quantized Scalar Field in Biquaternionic Form*, the Green's function of $(\Box-\mu^2)$ with the $i\epsilon$ prescription that makes the Gaussian converge. In material notation $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$, so the pole of the free two-point function is the mass-shell level set of the biquaternion norm. The exponent carries no explicit $i$ because the complex field's bilinear pairs $J^*$ with $J$ and because $\Delta_F$ itself carries the $i$; in the real-field convention the same identity reads $\exp(\frac{i}{2}\int J\,G\,J)$ with $G=i\Delta_F$, the two forms differing only by the overall normalisation of the field. Two functional derivatives return the propagator itself,
@@ -160,7 +158,6 @@ $$
 $$
 
 which is the two-point function of the companion field article; the inverse-of-the-quadratic-form statement is the one verified on the lattice below, where $AA^{-1}$ differed from the identity by $5.6\times10^{-16}$.
-
 
 ## Equivalence with the Operator Formalism
 
@@ -216,7 +213,6 @@ $$
 
 which follows from expanding along the first row. The inverse $A^{-1}$ is the lattice propagator, and in the continuum limit $h\to0$ the matrix $(-\Delta_E+\mu^2)^{-1}$ becomes the Euclidean two-point function. This is the standard lattice definition of a scalar functional integral, and it is the definition that gives the measure a meaning.
 
-
 **The continuum limit and the free energy.** In the limit the functional integral defines $\ln Z_E$, whose per-volume limit is the free energy density of the Euclidean scalar theory; the determinant $\det(-\Delta_E+\mu^2)$ is central, as every object of the scalar sector is, and its logarithm is the one-loop vacuum energy. The divergent part of that logarithm is the Euclidean form of the vacuum energy that the companion quantization's normal ordering removes, and its finite part is the quantity the Casimir companion computes for boundary conditions. The Euclidean formulation adds no new framework content; it makes the measure and the determinant well defined and puts the vacuum energy on the same footing as the propagator.
 
 ## The Vacuum Persistence Amplitude and Pair Creation
@@ -231,8 +227,8 @@ $$
 and the **vacuum persistence amplitude** in the background is
 
 $$
-\big|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle\big|^2
-=\frac{|Z[\tilde Q_5]|^2}{|Z[0]|^2}.
+\boxed{\;\big|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle\big|^2
+=\frac{|Z[\tilde Q_5]|^2}{|Z[0]|^2}\;}.
 $$
 
 For a homogeneous background with a slow or sudden time dependence, the Gaussian in a time-dependent frequency gives the same two-mode squeezed state and the same coefficients as the mode-matching computation of the companion article, and the probability of pair creation is $1-|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2$. The general connection between the imaginary part of the effective action and the pair-creation rate is standard: $\Im\ln Z$ measures the failure of the vacuum to persist. The Gaussian evaluation above is the free case; the background makes the quadratic form time-dependent and the same functional determinant produces the persistence amplitude. The two formulations therefore agree on the process: canonical quantization through the Bogoliubov coefficients, the path integral through the vacuum functional.

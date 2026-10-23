@@ -6,8 +6,6 @@ The general plain sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside
 
 This article collects the *Hermitian* half of the topology of the unit group: the unitary slice, its structure, the two retractions that the dagger supplies, and the homotopy invariants. The *bilinear* half — the units as the complement of the null cone, the centre, the distribution of the units among the three classes — is *The Biquaternion Unit Group as a Topological Group* and *Norm and Invertibility in the General Quaternionic Algebra*, and the ambient Euclidean topology and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*.
 
-**Conventions.** As in the sibling articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix isomorphism of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, which carries the dagger to the conjugate transpose.
-
 ## The Unitary Biquaternions
 
 **Definition.** The **unitary biquaternions** are
@@ -18,9 +16,7 @@ $$
 
 **Theorem ($\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$).** $\mathsf{M}_2$ restricts to an isomorphism of groups $\mathsf{M}_2:\mathrm{U}(\mathbb{B})\to \mathrm{U}(2)$. In particular $\mathrm{U}(\mathbb{B})$ is a compact Lie group of real dimension four, and its elements are exactly the biquaternions of the form
 
-$$
-\tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1,
-$$
+$$ \boxed{\;\tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1\;}, $$
 
 that is, scalar multiples of unit quaternions by phases.
 
@@ -34,9 +30,7 @@ that is, scalar multiples of unit quaternions by phases.
 
 **Theorem (the product decomposition).** $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with $S^{1}\cap S^{3}=\{\pm e_t\}$, where $S^{1}=\mathrm{U}(1)e_t$ is the centre circle and $S^{3}$ the unit quaternions; the multiplication map $S^{1}\times S^{3}\to \mathrm{U}(\mathbb{B})$ is a surjective homomorphism with kernel $\{(e_t,e_t),(-e_t,-e_t)\}$, so
 
-$$
-\mathrm{U}(\mathbb{B})\cong \bigl(S^{1}\times S^{3}\bigr)/\{\pm e_t\}
-$$
+$$ \boxed{\;\mathrm{U}(\mathbb{B})\cong \bigl(S^{1}\times S^{3}\bigr)/\{\pm e_t\}\;} $$
 
 with the diagonal action, and this quotient is homeomorphic to $S^{1}\times S^{3}$.
 
@@ -46,9 +40,7 @@ with the diagonal action, and this quotient is homeomorphic to $S^{1}\times S^{3
 
 **Theorem (the maximal torus and the flag variety).** The central scalars of modulus one form a maximal torus $T^{2}\cong S^{1}\times S^{1}$; every element of $\mathrm{U}(\mathbb{B})$ lies in some maximal torus; and
 
-$$
-\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2},
-$$
+$$ \boxed{\;\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2}\;}, $$
 
 so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^{2}$ with fibre $T^{2}$. It does not deformation retract onto $T^{2}$.
 
@@ -99,7 +91,7 @@ is Hermitian positive definite of norm one (the denominator is a positive real),
 **Theorem.** The homotopy invariants are
 
 $$
-\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3},\qquad \mathbb{B}^{\times}_1\simeq S^{3},
+\boxed{\;\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3},\qquad \mathbb{B}^{\times}_1\simeq S^{3}\;},
 $$
 
 $$

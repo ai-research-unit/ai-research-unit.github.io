@@ -8,10 +8,6 @@ The three statements belong together. The image says which processes have a gene
 
 The article owns no theorem. The closed forms of the exponential and the logarithm, the kernel, the principal branch and the fibre are those of *Biquaternion Elementary Functions*. The boundary behaviour is that of *Exponential Polar Decomposition of Biquaternions*. The reversible/irreversible dichotomy is that of *Quantum Channels and the Reversible/Irreversible Dichotomy*. The article states the results, links to the proofs, and records the interpretation and its limits.
 
-**Placement.** The article belongs to the Algebra block of the category, in the Element and Operator Representations group, after *The Exponential Word and Its Boundary* and before *The Krein Form and the Indefinite Structure*. It is the category article that reads the exponential and the logarithm; the mathematics stays in the Analysis group of the Mathematical menu.
-
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$, and $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The vector part has the complex norm $B=\sqrt{(\vec Q,\vec Q)}$ and, for $B\neq0$, the axis $\vec U=\vec Q/B$ with $\vec U^2=-e_t$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The biquaternion norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\tilde Q$ is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$.
-
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
@@ -28,9 +24,9 @@ The article owns no theorem. The closed forms of the exponential and the logarit
 The exponential is entire and its values are units,
 
 $$
-\exp:\mathbb{B}\longrightarrow\mathbb{B}^{\times},
+\boxed{\;\exp:\mathbb{B}\longrightarrow\mathbb{B}^{\times},
 \qquad
-\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)\neq0.
+\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)\neq0\;}.
 $$
 
 It is surjective. Every unit has a logarithm, because $\mathbb{B}\cong\mathsf M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm. The image is therefore exactly the group of units, and the zero-divisor cone is exactly the complement of the image.
@@ -66,7 +62,7 @@ The characterisation is exact: $\tilde L$ lies in the kernel exactly when it is 
 For $B\neq0$ the complete kernel on the diagonal part is the **parity-matched lattice**
 
 $$
-L=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\right\}.
+\boxed{\;L=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\right\}\;}.
 $$
 
 The scalar and the vector shifts cannot be chosen independently. The rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$ is the sublattice of index two on which both integers are even, and the other coset is $\pi i e_t+\pi\vec U$. The matching is the statement that the two eigenvalue logarithms must be shifted in step.
@@ -156,9 +152,9 @@ The logarithm is defined on the units and nowhere else. The cone is the boundary
 The idempotent stratum is reached by the polar word with the scale collapsing and the boost diverging at the same rate. The nilpotent stratum is reached by the rescaled unipotent line,
 
 $$
-\tilde Q=\lim_{t\to\infty}\frac{\exp(tN)-e_t}{t},
+\boxed{\;\tilde Q=\lim_{t\to\infty}\frac{\exp(tN)-e_t}{t},
 \qquad
-N^2=0.
+N^2=0\;}.
 $$
 
 Neither stratum is a value. The cone is the boundary in the strict sense: every point of it is a limit of units, and no point of it is a unit.

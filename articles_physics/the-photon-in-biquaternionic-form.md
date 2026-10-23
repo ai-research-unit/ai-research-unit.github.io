@@ -21,8 +21,6 @@ The negative parts are equally specific.
 
 A second, less comfortable point belongs in the introduction. Almost every statement the framework makes about "the photon" is a statement about a general massless spin-one field. The algebra does not single the photon out; it describes a massless gluon in the abelian idealization, a massive Proca field if a mass is added, and any other spin-one field by the same objects.
 
-**Conventions.** The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$, and central scalar imaginary $i$ with $i^2=-1$. The material and informational sectors are
-
 $$
 \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{ie_t, \vec e_x, \vec e_y, \vec e_z\},
 \qquad
@@ -82,7 +80,7 @@ This is the precise sense in which the polarization space is native. The framewo
 The physical polarizations are the two spatial directions orthogonal to the propagation direction. Let $\vec u_k$ be the unit vector along $\vec k$, and let $\varepsilon^{\mathrm{fop}}_1,\varepsilon^{\mathrm{fop}}_2$ be a right-handed orthonormal pair with $(\varepsilon^{\mathrm{fop}}_1,\varepsilon^{\mathrm{fop}}_2,\vec u_k)$ a right-handed triad. Transversality is the statement that the physical amplitudes lie in the orthogonal complement of $\vec u_k$ inside the vector part of $\mathbb{M}_-$, whose projector is
 
 $$
-P_{ij} = \delta_{ij} - \vec {u_k}_i \vec {u_k}_j, \qquad \sum_{r=1}^{2}\varepsilon^{\mathrm{fop}( r)}_i \varepsilon^{\mathrm{fop}(r)}_j = P_{ij}.
+\boxed{\;P_{ij} = \delta_{ij} - \vec {u_k}_i \vec {u_k}_j, \qquad \sum_{r=1}^{2}\varepsilon^{\mathrm{fop}( r)}_i \varepsilon^{\mathrm{fop}(r)}_j = P_{ij}\;}.
 $$
 
 The polarization sum that the parent article records is thus the statement that the physical polarization space is the $\vec u_k$-orthogonal plane, an object defined by the algebra's own biquaternion norm.
@@ -100,7 +98,7 @@ $$
 which are complex combinations and therefore do not lie in $\mathbb{M}_-$ itself, but in its complexification, the vector part of $\mathbb{B}$. Their defining property is a statement about quaternion multiplication by the propagation direction. Using $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ together with the definition of the circular combination, one computes
 
 $$
-\vec u_k\,\varepsilon^{\mathrm{fop}}_\pm = \mp\, i\,\varepsilon^{\mathrm{fop}}_\pm .
+\boxed{\;\vec u_k\,\varepsilon^{\mathrm{fop}}_\pm = \mp\, i\,\varepsilon^{\mathrm{fop}}_\pm\;}.
 $$
 
 **The two circular polarization vectors are the eigenvectors of left multiplication by $\vec u_k$, with eigenvalues $\mp i$.** Equivalently, left multiplication by the Hermitian element $i\vec u_k$ acts on the complexified vector part as the identity on $\varepsilon^{\mathrm{fop}}_+$, as minus the identity on $\varepsilon^{\mathrm{fop}}_-$, and carries the longitudinal vector to the scalar direction: $i\vec u_k\,\varepsilon^{\mathrm{fop}}_\pm=\pm\varepsilon^{\mathrm{fop}}_\pm$ and $i\vec u_k\,\vec u_k=-i\,e_t$.
@@ -128,7 +126,7 @@ $$
 where $\vec S$ is the **spin** vector of the angular-momentum article (a different object from the Poynting vector $\vec S$ of the energy–momentum table above, which this auxiliary symbol unfortunately shares). On the complexified vector part, $\lambda$ is the vector part of left multiplication by the Hermitian element $i\vec u_k\in\mathbb{M}_+$: $\lambda = \mathrm{Vect}\circ(\text{left multiplication by } i\vec u_k)$. Its action on the circular basis is diagonal:
 
 $$
-\lambda\,\varepsilon^{\mathrm{fop}}_\pm = \pm\,\varepsilon^{\mathrm{fop}}_\pm, \qquad \lambda\,\vec u_k = 0 .
+\boxed{\;\lambda\,\varepsilon^{\mathrm{fop}}_\pm = \pm\,\varepsilon^{\mathrm{fop}}_\pm, \qquad \lambda\,\vec u_k = 0\;}.
 $$
 
 So the helicity operator has spectrum $\{+1,0,-1\}$ on the complexified vector part. The $\pm1$ eigenvectors are the two circular polarizations; the $0$ eigenvector is the longitudinal direction $\vec u_k$ itself.
@@ -150,8 +148,8 @@ The field-strength article establishes that the Riemann–Silberstein vector $\v
 For a plane wave, Faraday's law gives $\vec B=\vec u_k\times\vec E$ (in vacuum natural units, $c=1$). Decompose the complex transverse amplitude as $\vec E=E_+\varepsilon^{\mathrm{fop}}_+ + E_-\varepsilon^{\mathrm{fop}}_-$. Using $\vec u_k\times\varepsilon^{\mathrm{fop}}_\pm=\mp i\varepsilon^{\mathrm{fop}}_\pm$,
 
 $$
-\vec B = -iE_+\varepsilon^{\mathrm{fop}}_+ + iE_-\varepsilon^{\mathrm{fop}}_-, \qquad\text{so}\qquad
-\vec E+i\vec B = 2E_+\varepsilon^{\mathrm{fop}}_+, \qquad \vec E-i\vec B = 2E_-\varepsilon^{\mathrm{fop}}_- .
+\boxed{\;\vec B = -iE_+\varepsilon^{\mathrm{fop}}_+ + iE_-\varepsilon^{\mathrm{fop}}_-, \qquad\text{so}\qquad
+\vec E+i\vec B = 2E_+\varepsilon^{\mathrm{fop}}_+, \qquad \vec E-i\vec B = 2E_-\varepsilon^{\mathrm{fop}}_-\;}.
 $$
 
 The two combinations $\vec E\pm i\vec B$ therefore separate the helicity $+1$ from the helicity $-1$ amplitude: the first contains only $E_+$, the second only $E_-$. Since $\tilde{F}=i\sqrt{\epsilon}\,\vec N=i\sqrt{\epsilon}\,(\vec E+ic\vec B)$, the field-strength biquaternion of a definite-helicity plane wave is supported on the corresponding self-dual or anti-self-dual component.

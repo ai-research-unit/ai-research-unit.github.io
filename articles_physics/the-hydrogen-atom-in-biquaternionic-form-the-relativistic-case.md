@@ -19,8 +19,6 @@ The article asks what the biquaternion framework contributes to this problem, an
 
 The title covers the relativistic case as the framework's algebraic structures reach it; it is not a claim that the framework derives the Sommerfeld spectrum from its own algebra-level equation. That derivation is not carried out in the corpus, so the claim is not made.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$, its quaternion conjugate is $\tilde\nabla^{\natural} = e_t\partial/\partial Q_t - \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$, and $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$. The isomorphism is $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, so that $\mathsf{M}_2(i\vec e_k) = \sigma_k$. The idempotents are $\tilde\Pi(\pm\vec u) = \tfrac12(e_t \pm i\vec u)$. The orbital operators are the central elements $L_k e_t$ with $L_k = -i\hbar\epsilon_{klm}x_l\partial/\partial x_m$, the spin operators are $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, and $\tilde J_k = L_k e_t + \tilde S_k$. The large and the small component of the four-component spinor $\psi$ are written $\psi_{\mathrm{large}}$ and $\psi_{\mathrm{small}}$, as in the companion exercise on the non-relativistic limit — the words refer to the elimination of the small component and not to the chiral pair $\tilde\Psi_R$, $\tilde\Psi_L$ of the parent — and a finite basis for the large component is written $\{f_\mu\}$, the basis of the small component being generated from it by the framework's balancing operator. The rest of the notation is inherited from the read-list articles unchanged.
-
 ## The Dirac–Coulomb Problem
 
 ### The potential in the framework's notation
@@ -81,7 +79,7 @@ $$
 and in the framework's operators the scalar coupling is
 
 $$
-(L_k e_t)\tilde S_k = \frac{\hbar}{2}\,i\,L_k \vec e_k \in \mathbb{M}_+ .
+\boxed{\;(L_k e_t)\tilde S_k = \frac{\hbar}{2}\,i\,L_k \vec e_k \in \mathbb{M}_+\;}.
 $$
 
 This is a Hermitian element of the informational sector: its scalar part vanishes and its vector part is purely imaginary. It is therefore **not central** — a central element lies in the complex line $\mathbb{C}_{\mathbb{B}}$, and $L_k\tilde S_k$ has a nonzero imaginary vector part whenever the orbital motion is non-trivial. The relativistic Coulomb Hamiltonian is not a scalar multiple of $e_t$.
@@ -144,9 +142,9 @@ The companion non-relativistic article already quotes the following formula in i
 The exact bound-state energies of the Dirac–Coulomb problem are
 
 $$
-E_{nj} = mc^2\left[1 + \frac{(\mathfrak{Z}\alpha)^2}{\bigl(n - \delta_j\bigr)^2}\right]^{-1/2},
+\boxed{\;E_{nj} = mc^2\left[1 + \frac{(\mathfrak{Z}\alpha)^2}{\bigl(n - \delta_j\bigr)^2}\right]^{-1/2},
 \qquad
-\delta_j = j + \tfrac12 - \sqrt{\bigl(j + \tfrac12\bigr)^2 - (\mathfrak{Z}\alpha)^2},
+\delta_j = j + \tfrac12 - \sqrt{\bigl(j + \tfrac12\bigr)^2 - (\mathfrak{Z}\alpha)^2}\;},
 $$
 
 with the labels of the previous section. The spectrum depends on $n$ and $j$ only, which is the analytic statement of the degeneracy pattern: the two $l$ values at fixed $j$ share an energy, and the $2j+1$ values of $m_j$ do as well.
@@ -164,9 +162,9 @@ since otherwise the square root is imaginary. For the lowest value $j = \tfrac12
 Expanding in powers of $(\mathfrak{Z}\alpha)^2$ reproduces the non-relativistic spectrum at leading order and the fine structure at the next. In units of $mc^2$,
 
 $$
-E_{nj} = mc^2 - \frac{mc^2(\mathfrak{Z}\alpha)^2}{2n^2}
+\boxed{\;E_{nj} = mc^2 - \frac{mc^2(\mathfrak{Z}\alpha)^2}{2n^2}
 - \frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{j+\tfrac12} - \frac{3}{4n}\right)
-+ O\bigl((\mathfrak{Z}\alpha)^6\bigr).
++ O\bigl((\mathfrak{Z}\alpha)^6\bigr)\;}.
 $$
 
 The leading term is the non-relativistic $E_n$ of the companion article,

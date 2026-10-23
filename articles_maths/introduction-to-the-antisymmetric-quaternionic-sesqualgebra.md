@@ -13,8 +13,6 @@ scalar part zero and vector part the cross product of the vector part of the fir
 
 The reading is one of the twelve operations of the corpus; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, the product it splits is *Introduction to the General Quaternionic Sesqualgebra*, the sesquilinear obstruction behind its failing law is *Lie Algebras of Sesqualgebras*, and the block that reads the symmetric half is *Introduction to the Symmetric Quaternionic Sesqualgebra*. This article owns the block as a multiplication: the rule, the class, the conjugate-alternation, the pure-vector image, the absence of a unit, the sixteen products of the basis, the non-vanishing diagonal, the failure of the Jacobi identity, and the placement of the block among the twelve. The diagonal and the conjugate cross product are developed in *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the pairing with the Krein form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; the remarkable subspaces are *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*; the operators are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; and the two matrix models are *Introduction to the Symmetric Quaternionic Sesqualgebra*. The element theory of the block is the cycle *Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Idempotents of the Antisymmetric Quaternionic Sesqualgebra* and *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*, and its closing criterion, with the verdict on the eleven other structures, is *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central scalar imaginary $i$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq\nu$. A generic element is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ with $\vec Q_2=\sum_{\mu\in\{x,y,z\}}Q_{2,\mu}\vec e_\mu$ and $Q_{2,\mu}\in\mathbb{C}$; $(\vec Q_1,\vec Q_2)=\sum_\mu Q_{1,\mu} Q_{2,\mu}$ is the complex bilinear dot product, $\times$ the cross product of the vector parts, and $\overline{\vec Q_2}=\sum_\mu\overline{Q_{2,\mu}}\vec e_\mu$ the coefficientwise conjugate of the vector part. The natural conjugation ${}^{\natural}$ negates $\vec e_x,\vec e_y,\vec e_z$, the Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and the Krein form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ with $\varepsilon=(1,-1,-1,-1)$, linear in the first argument and conjugate-linear in the second, as the scalar part of the product $\tilde Q_1^{\natural}\tilde Q_2^{*}$. The operation of the block is written $\diamond$; the comment of the menu entry writes it $\wedge$, and this article prefers $\diamond$ because $\wedge$ names the plain outer product $\vec Q_1\times\vec Q_2$ of *Introduction to the Antisymmetric Plain Algebra*.
-
 ## The Split of the Quaternionic Sesquilinear Product
 
 ### The Rule
@@ -31,9 +29,7 @@ It is the **antisymmetric part** of the general quaternionic sesquilinear produc
 
 **Theorem (the value is a cross product).** For all biquaternions,
 
-$$
-\tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2},
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2} \;}, $$
 
 so the scalar part of the value is zero and its vector part is $\vec Q_1\times\overline{\vec Q}$.
 
@@ -109,9 +105,7 @@ The absence of a unit is shared with the other seven parts of the twelve: of the
 
 **Theorem (the diagonal does not vanish).** For every biquaternion,
 
-$$
-\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q},
-$$
+$$ \boxed{\; \tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q} \;}, $$
 
 which is not zero in general; writing $\vec Q=\vec a+i\vec b$ with $\vec a,\vec b$ real vectors,
 
@@ -152,8 +146,10 @@ the triple $(\tilde Q_1,\tilde Q_2,\tilde{Q}_3)=(\vec e_x,\vec e_x,i\vec e_y)$ g
 **Theorem.** On the real elements the block coincides with the antisymmetric part of the plain product, the map $\tilde Q_1\tilde Q_2\mapsto\vec Q_1\times\vec Q_2$ of *Introduction to the Antisymmetric Plain Algebra*:
 
 $$
+\boxed{\;
 \tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2)
-\qquad(\tilde Q_1,\tilde Q_2\ \text{real}).
+\qquad(\tilde Q_1,\tilde Q_2\ \text{real})
+\;}.
 $$
 
 *Proof.* A real vector is its own conjugate, so the rule reduces to $\vec Q_1\times\vec Q$.

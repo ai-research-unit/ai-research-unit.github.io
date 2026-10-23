@@ -18,8 +18,6 @@ This article asks what entanglement entropy and the replica trick are in the biq
 
 The article proceeds as follows. Entanglement entropy and the Rényi entropies are defined, with the entropy as their $n\to1$ limit. The replica trick is recalled in its field-theoretic form and restated in finite dimension. The replica structure of the biquaternion tensor power is set out, with the shift operator and the swap. A two-qubit biquaternion state is worked out completely, its reduced state, its Rényi entropies and the $n\to1$ limit being computed and tabulated. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$; on the tensor power the trace is the product trace, $\mathrm{Tr}(A_1\otimes\cdots\otimes A_n)=\prod_i\mathrm{Tr}(A_i)$. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, states and the Bloch ball those of *The GNS Construction in the Biquaternion Framework*, and the entropy closed form that of *Relative Entropy and the Biquaternion Framework*.
-
 ## Entanglement Entropy and Rényi Entropies
 
 ### Definitions
@@ -56,7 +54,7 @@ $$
 $$
 using $\left.\frac{dZ_n}{dn}\right|_{n=1}=\sum_i\lambda_i\log\lambda_i$. Hence
 $$
-S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n\Big|_{n=1}.
+\boxed{\;S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n\Big|_{n=1}\;}.
 $$
 The derivation uses only that $\rho_A$ has a finite spectrum, so it holds verbatim in the biquaternion framework.
 
@@ -99,7 +97,7 @@ $$
 $$
 and the replica moment is the expectation of the shift,
 $$
-Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big].
+\boxed{\;Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big]\;}.
 $$
 This is the finite-dimensional image of the $n$-sheeted cover: the sheets are the replicas, the branch locus is the $A$ factor, and the cyclic joining of the sheets is the cyclic permutation. The state is the $n$-fold product, so the expectation is a product-state matrix element, which is why the computation is elementary.
 
@@ -168,9 +166,9 @@ That this equals the binary entropy $h(\cos^2\theta)$ is an identity, and it was
 
 The replica moments of the reduced state are
 $$
-Z_n=\cos^{2n}\theta+\sin^{2n}\theta,
+\boxed{\;Z_n=\cos^{2n}\theta+\sin^{2n}\theta,
 \qquad
-S_n=\frac{1}{1-n}\log\big(\cos^{2n}\theta+\sin^{2n}\theta\big).
+S_n=\frac{1}{1-n}\log\big(\cos^{2n}\theta+\sin^{2n}\theta\big)\;}.
 $$
 The entropies are tabulated for three angles and four orders.
 

@@ -36,9 +36,7 @@ The left and right multiplications of $\mathbb{H}$ generate together an algebra 
 
 **Corollary (structure constants).** Since $e_ae_c=\varepsilon(a,c)e_{a\oplus c}$ with $\varepsilon(a,c)=\pm1$ and $\oplus$ the quaternion group law on the indices, and $e_de_b=\varepsilon(d,b)e_{d\oplus b}$,
 
-$$
-(e_a[\,]e_b)(e_c[\,]e_d)=\varepsilon(a,c)\varepsilon(d,b)\,e_{a\oplus c}[\,]e_{d\oplus b}.
-$$
+$$ \boxed{\; (e_a[\,]e_b)(e_c[\,]e_d)=\varepsilon(a,c)\varepsilon(d,b)\,e_{a\oplus c}[\,]e_{d\oplus b} \;} .$$
 
 *Proof.* Substitute the two basis products in the composition rule.
 
@@ -50,9 +48,7 @@ $$
 
 **Theorem.** The one-sided operators are the edge rows of the Conway basis:
 
-$$
-L_{e_n}=e_n[\,]e_t,\qquad R_{e_m}=e_t[\,]e_m.
-$$
+$$ \boxed{\; L_{e_n}=e_n[\,]e_t,\qquad R_{e_m}=e_t[\,]e_m \;} .$$
 
 *Proof.* The definitions: $e_n[\,]e_t(\tilde q)=e_n\tilde q\,e_t=e_n\tilde q$ and $e_t[\,]e_m(\tilde q)=e_t\tilde qe_m=\tilde qe_m$.
 

@@ -79,7 +79,7 @@ $$
 so the AC connection is
 
 $$
-\mathcal{A}_{AC} = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r,
+\boxed{\;\mathcal{A}_{AC} = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r\;},
 $$
 
 a one-form with values in the Hermitian subspace $\mathbb{M}_+$ (the spin components $i \vec e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
@@ -207,8 +207,8 @@ $$
 and the AC phase is independent of $R$:
 
 $$
-\phi_{AC} = -\frac{1}{\hbar c^2}\cdot 2\pi R E\,\mu_z
-= -\frac{\lambda\,\mu_z}{\epsilon_0\hbar c^2}
+\boxed{\;\phi_{AC} = -\frac{1}{\hbar c^2}\cdot 2\pi R E\,\mu_z
+= -\frac{\lambda\,\mu_z}{\epsilon_0\hbar c^2}\;}
 $$
 
 for the counterclockwise traversal, using $2\pi R E = \lambda/\epsilon_0$. The magnitude depends on the enclosed line charge and on the axial component of the dipole moment, and not on the radius or the speed; the sign is reversed by reversing the traversal. This is the cleanest closed-form instance of the effect, and it is the exact electric dual of the AB phase of a charge encircling a flux line.
@@ -274,7 +274,7 @@ The geometric character of the phase is established by the **reversal tests**. R
 A neutral particle carrying a magnetic dipole moment $\vec\mu$ and moving along a path $\mathcal{C}$ in an electric field acquires the **Aharonov–Casher phase**
 
 $$
-\phi_{AC} = \frac{1}{\hbar c^2}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r,
+\boxed{\;\phi_{AC} = \frac{1}{\hbar c^2}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r\;},
 $$
 
 which follows from the rest-frame field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$ and the Zeeman coupling $-\vec\mu\cdot\vec B_2$. The phase is geometric: it depends on the path and the field but not on the speed, and it reverses sign when the traversal is reversed.

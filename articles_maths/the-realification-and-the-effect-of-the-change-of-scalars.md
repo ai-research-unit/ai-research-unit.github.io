@@ -8,8 +8,6 @@ The construction has one name in the corpus, **realification**: keep the element
 
 Two sibling articles state the theory and are cited and not repeated. This article owns what is left and what is general: the realification of a vector space, of a linear map, of a form and of an operator, the four effects the passage has on a structure, and the reading of the twelve algebraic structures under those effects. Its last section reads the four things specific to the biquaternion instance: the odd real subalgebras, the Galois-twisted automorphisms, the trace form and the real models.
 
-**Boundary.** The products are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *The 12 Products of the Biquaternion Complex Space*; the forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the realified forms, their Gram matrices and their signatures are **The Realification of the Four Forms**, quoted here in the general case and not re-derived; The real reading of the ring itself, with its multiplication table and its admissible bases, is **The Realification and the Effect of the Change of Scalars**, the entry of the General Plain Algebra block over $\mathbb{R}$. The general theory of restriction and extension of scalars and of real forms is *Change of Rings*, *Extension of Scalars* and *Real Forms and the Descent of an Algebra*.
-
 ## The Realification of a Vector Space
 
 **Definition (the realification of a complex vector space).** Let $V$ be a vector space over $\mathbb{C}$, of complex dimension $n$. Its **realification** $V_{\mathbb{R}}$ is the same set with the same addition, with the scalars restricted to $\mathbb{R}$. It is written $\operatorname{Res}_{\mathbb{C}/\mathbb{R}} V$, and the construction is **restriction of scalars**.

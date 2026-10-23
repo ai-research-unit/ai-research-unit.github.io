@@ -21,8 +21,8 @@ $$
 which acts on it by **left multiplication**,
 
 $$
-\psi \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
-\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S .
+\boxed{\;\psi \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
+\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S\;}.
 $$
 
 This is the **spinor representation** of the Lorentz group. Its carrier $S$ is the unique simple module of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, realized inside $\mathbb{B}$ as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$; the detailed construction, together with the bilinear pairings on $S$, belongs to the companion article on the spinor module and is used here without repetition. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
@@ -70,7 +70,7 @@ $$
 On the conjugate module the two Casimirs are interchanged, $C_+\mapsto-3I_2$, $C_-\mapsto0$. Since $C_+$ and $C_-$ are invariants, the ordered pair of eigenvalues is an invariant; $(0,-3)$ and $(-3,0)$ differ, so $S$ and $\bar{S}$ are not isomorphic:
 
 $$
-S=\left(\tfrac12,0\right)\ncong\left(0,\tfrac12\right)=\bar{S}.
+\boxed{\;S=\left(\tfrac12,0\right)\ncong\left(0,\tfrac12\right)=\bar{S}\;}.
 $$
 
 One of the two $\mathrm{SU}(2)$ halves acts as spin $\tfrac12$ on $S$ and trivially on the conjugate half; on $\bar{S}$ the roles are interchanged. That a Weyl spinor has spin $\tfrac12$ under the rotation group and is annihilated by one of the two chiral Casimirs is exactly this statement.
@@ -84,8 +84,8 @@ Two cautions belong here, and both are developed in the companion on the spinor 
 The two fundamental representations combine into the four-vector representation. With $S$ carrying $(\tfrac12,0)$ and $\bar{S}$ carrying $(0,\tfrac12)$, the outer tensor product is
 
 $$
-(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12),
-\qquad \dim_{\mathbb{C}}(\tfrac12,\tfrac12)=2\times2=4,
+\boxed{\;(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12),
+\qquad \dim_{\mathbb{C}}(\tfrac12,\tfrac12)=2\times2=4\;},
 $$
 
 the four-vector representation. The biquaternion algebra carries this representation, not by multiplication but by **conjugation**,
@@ -178,9 +178,9 @@ the four-vector representation, as verified in the preceding section.
 
 Combining these, the irreducible representations carried by the four-dimensional algebra under its natural self-actions are
 $$
-(\tfrac12,0)\quad\text{(left or right multiplication)},
+\boxed{\;(\tfrac12,0)\quad\text{(left or right multiplication)},
 \qquad
-(\tfrac12,\tfrac12)\quad\text{(conjugation)},
+(\tfrac12,\tfrac12)\quad\text{(conjugation)}\;},
 $$
 with the left-handed chirality appearing with multiplicity two. The right-handed chirality $\bar{S}$ requires the conjugate complex structure; it is not a submodule of the left or right regular module.
 

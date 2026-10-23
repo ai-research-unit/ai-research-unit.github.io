@@ -9,8 +9,6 @@ The free case is where the equivariant theory simplifies — the fixed-set part 
 
 **The article assumes** the covering space theory and the fundamental group, the classification of surfaces and of manifolds, the homology and the Euler characteristic, and the fixed-set theory of *Involutions on Manifolds and Equivariant Surgery*. It uses the elementary theory of the groups $\mathbb{Z}/m$ and the Smith normal form of a matrix over $\mathbb{Z}/m$.
 
-**The boundaries of the article.** The general involution of a manifold and its equivariant surgery are *Involutions on Manifolds and Equivariant Surgery*; the classification of the involutions of a surface is *The Classification of Involutions on Surfaces*; the periodic maps of a prime order are *Periodic Maps and the Smith Theory*; the classification of three-manifolds by the geometrisation is *Low-Dimensional Topology*, and the lens spaces as three-manifolds are *Lens Spaces*. The smooth structures and the four-dimensional classifications are Part III and *Cobordism and Surgery Theory*. No analysis is used.
-
 ## Free Involutions and Coverings
 
 **Definition.** An involution $T$ of a space $X$ is **free** if it has no fixed point. The **quotient** $Q = X/T$ is then a space and the orbit map $\pi : X\to Q$ is a two-sheeted covering.

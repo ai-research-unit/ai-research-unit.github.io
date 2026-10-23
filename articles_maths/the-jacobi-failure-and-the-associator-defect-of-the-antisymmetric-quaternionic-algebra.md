@@ -18,9 +18,7 @@ The block satisfies the Jacobi identity exactly when $J$ vanishes identically, a
 
 **Proposition (the closed form).** For all $\tilde Q_1,\tilde Q_2,\tilde{Q}_3$,
 
-$$
-J(\tilde Q_1,\tilde Q_2,\tilde{Q}_3) = -\,Q_{1t}\,(\vec Q_2\times\vec R) + Q_{2t}\,(\vec Q_1\times\vec R) - R_t\,(\vec Q_1\times\vec Q_2) .
-$$
+$$ \boxed{\; J(\tilde Q_1,\tilde Q_2,\tilde{Q}_3) = -\,Q_{1t}\,(\vec Q_2\times\vec R) + Q_{2t}\,(\vec Q_1\times\vec R) - R_t\,(\vec Q_1\times\vec Q_2) \;}. $$
 
 In particular $J(\tilde Q_1,\tilde Q_2,\tilde{Q}_3)$ is a pure vector for every triple, the scalar part of every cyclic sum is zero, and $J$ is a $\mathbb{C}$-trilinear alternating map of its three arguments.
 
@@ -77,9 +75,7 @@ $$
 
 **Corollary (the criterion for the block).** For the antisymmetric quaternionic multiplication, half the commutator and half the associator sum stand in the same relation,
 
-$$
-J(\tilde Q_1,\tilde Q_2,\tilde{Q}_3) = \tfrac14\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,[\tilde Q_{\sigma(1)},\tilde Q_{\sigma(2)},\tilde Q_{\sigma(3)}] ,
-$$
+$$ \boxed{\; J(\tilde Q_1,\tilde Q_2,\tilde{Q}_3) = \tfrac14\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,[\tilde Q_{\sigma(1)},\tilde Q_{\sigma(2)},\tilde Q_{\sigma(3)}] \;}, $$
 
 with the associator taken in the parent quaternionic product. The block is therefore Lie-admissible exactly when the quaternionic product is Lie-admissible, and it is not.
 
@@ -91,9 +87,7 @@ The criterion is the exact measure of what associativity would have contributed.
 
 **Theorem (the associator).** For the parent product, the associator has the closed form
 
-$$
-[\tilde Q_1,\tilde Q_2,\tilde{Q}_3] = \bigl(\tilde Q_2^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_2^{\natural}\bigr)\tilde{Q}_3 ,
-$$
+$$ \boxed{\; [\tilde Q_1,\tilde Q_2,\tilde{Q}_3] = \bigl(\tilde Q_2^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_2^{\natural}\bigr)\tilde{Q}_3 \;}, $$
 
 and it is nonzero at $(\vec e_x,e_t,e_t)$ and at $24$ of the $64$ basis triples.
 

@@ -38,8 +38,6 @@ gives the canonical pion kinetic term $\tfrac12[(\partial/\partial t'\,\pi^a)^2-
 - Companion article *The Neutron in Biquaternionic Form*, for the same couplings in the neutral channel.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spinor context of the axial current.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_ae_b = -\delta_{ab}e_t + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary, $i^2 = -1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the centre. The compact generators of the framework are the anti-Hermitian $e_a$, with $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $[e_a,e_b] = 2\varepsilon_{abc}e_c$; the standard Hermitian generators of the chiral Lagrangian are $T_a = \tfrac{i}{2}e_a$, with $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ and $[T_a,T_b] = i\varepsilon_{abc}T_c$. The pion field is $\vec\pi = \pi^a e_a\in\mathfrak{su}(2)\subset\mathbb{M}_-$, the chiral field is $\tilde U = \exp(\vec\pi/f_\pi)\in\mathbb{H}^1_{\mathbb{B}}$, and the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ and $\Box = \partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the biquaternion-norm contraction $\mathrm{Sc}(\overline{\partial/\partial Q_\mu\,\tilde U}\partial/\partial Q_\mu\,\tilde U)$ is the one in which the positive kinetic term is obtained with the overall sign exhibited below. The quark mass matrix is $M = \mathrm{diag}(m_u,m_d)$ and $B_0 = -\langle\bar qq\rangle/f_\pi^2$. Throughout, $f_\pi$ is the pion decay constant, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and natural units $\hbar = c = 1$ are used in the numerical values.
-
 ## Chiral Symmetry and Its Breaking
 
 The chiral symmetry of two-flavour QCD is a property of the fermion sector, and this article uses it without rebuilding it; the fermionic derivation belongs to the companion spinor articles. The statement is as follows.
@@ -145,8 +143,8 @@ Under the chiral group the field transforms as $\tilde U\mapsto g_L\tilde U g_R^
 **The two-derivative Lagrangian.** It is
 
 $$
-\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial/\partial Q_\mu\,\tilde U\,\partial/\partial Q_\mu\,\tilde U^{*}\right)
-= -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_\mu\,\tilde U}\,\partial/\partial Q_\mu\,\tilde U\right),
+\boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial/\partial Q_\mu\,\tilde U\,\partial/\partial Q_\mu\,\tilde U^{*}\right)
+= -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_\mu\,\tilde U}\,\partial/\partial Q_\mu\,\tilde U\right)\;},
 $$
 
 the second form using $\mathrm{Tr} = 2\mathrm{Sc}$ and $U^{*} = U^{\natural}$ for a unit real quaternion. The overall minus sign is the sign convention that makes the kinetic term positive; the standard literature writes the same term with a plus and a mostly-minus contraction. Expanding,
@@ -164,8 +162,6 @@ $$
 $$
 
 the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
-
-
 
 ## Pion Mass and the Gell-Mann–Oakes–Renner Relation
 
@@ -196,9 +192,9 @@ so that the triplet is degenerate in the isospin limit $m_u = m_d$, and the obse
 **The Gell-Mann–Oakes–Renner relation.** Eliminating $B_0$ between the mass formula and its definition gives the GOR relation,
 
 $$
-m_\pi^2 f_\pi^2 = -\left(m_u + m_d\right)\langle\bar qq\rangle ,
+\boxed{\;m_\pi^2 f_\pi^2 = -\left(m_u + m_d\right)\langle\bar qq\rangle ,
 \qquad\Longleftrightarrow\qquad
-m_\pi^2 = -\frac{m_u+m_d}{f_\pi^2}\,\langle\bar qq\rangle ,
+m_\pi^2 = -\frac{m_u+m_d}{f_\pi^2}\,\langle\bar qq\rangle\;}
 $$
 
 the standard statement that the pion mass-squared is the product of the explicit breaking and the inverse of the condensate scale. It is the leading-order consequence of the chiral Lagrangian and is standard (Gell-Mann, Oakes, and Renner 1968); what the framework supplies is the field $\tilde U$ and the trace that normalises the kinetic term, and hence the normalisation in which $f_\pi$ appears. The relation's content is that the pion mass vanishes with the quark masses while the condensate stays nonzero, which is the precise sense in which the pion is a pseudo-Goldstone boson.
@@ -293,8 +289,8 @@ $$
 and the leading chiral Lagrangian is the biquaternion norm of its derivative,
 
 $$
-\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial/\partial Q_\mu\,\tilde U\,\partial/\partial Q_\mu\,\tilde U^{*}\right)
-= \frac12\left[(\partial/\partial t'\,\pi^a)^2-(\nabla\pi^a)^2\right] + O(\pi^4),
+\boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial/\partial Q_\mu\,\tilde U\,\partial/\partial Q_\mu\,\tilde U^{*}\right)
+= \frac12\left[(\partial/\partial t'\,\pi^a)^2-(\nabla\pi^a)^2\right] + O(\pi^4)\;},
 $$
 
 with the coefficient exactly one, fixed by the trace identity $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ for $T_a = \tfrac{i}{2}e_a$ (equivalently $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$). These identities were checked from the representation $\mathsf{M}_2(e_a) = -i\sigma_a$, and the kinetic coefficient was verified directly, the biquaternion norm divided by $(\epsilon/f_\pi)^2$ coming out exactly $1$.

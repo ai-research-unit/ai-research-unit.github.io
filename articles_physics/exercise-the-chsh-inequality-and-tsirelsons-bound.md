@@ -110,7 +110,7 @@ $$
 Fix $\lambda$. The two signs $B_\lambda(\vec b_1)$ and $B_\lambda(\vec b_2)$ are each $\pm1$, so exactly one of the two combinations $B_\lambda(\vec b_1)-B_\lambda(\vec b_2)$ and $B_\lambda(\vec b_1)+B_\lambda(\vec b_2)$ vanishes and the other is $\pm2$. Hence the bracket is $\pm2$ in absolute value for every $\lambda$, and
 
 $$
-|S| \;\le\; \int d\lambda\,p(\lambda)\cdot 2 \;=\; 2 .
+\boxed{\;|S| \;\le\; \int d\lambda\,p(\lambda)\cdot 2 \;=\; 2\;} .
 $$
 
 This is the classical (CHSH) bound. It is tight: the deterministic model $A_\lambda(\vec a_1)=A_\lambda(\vec a_2)=+1$, $B_\lambda(\vec b_1)=+1$, $B_\lambda(\vec b_2)=-1$ gives $S=2$.
@@ -237,7 +237,7 @@ $$
 The eigenvalues of $(u\cdot\boldsymbol{\sigma})$ are $\pm|u|$, so the eigenvalues of the tensor product are $\pm|u||v|$, and those of $S^2$ are $4\bigl(1\mp|u||v|\bigr)$. Since $|u|=|\sin\theta_{a_1a_2}|\le1$ and $|v|=|\sin\theta_{b_1b_2}|\le1$, the largest eigenvalue of $S^2$ is at most $8$, and every eigenvalue of $S$ is bounded in absolute value by $2\sqrt{2}$:
 
 $$
-\|S\| \le 2\sqrt{2}.
+\boxed{\;\|S\| \le 2\sqrt{2}\;}.
 $$
 
 For any state $\rho$, the expectation $\langle S\rangle=\mathrm{Tr}(\rho S)$ is a convex combination of the eigenvalues of $S$, so $|S|=|\langle S\rangle|\le 2\sqrt{2}$. This is Tsirelson's bound (Cirel'son, 1980). It is saturated, as Step 4 showed, by every Bell state at $\vec a_1\perp\vec a_2$, $\vec b_1\perp\vec b_2$ with the optimal relative orientation.
@@ -349,7 +349,7 @@ Collecting the pieces,
 
 $$
 \boxed{\;\mathcal{S}^2
-= 4\Bigl(e_t\otimes e_t + (\vec a_1\times\vec a_2)\otimes(\vec b_1\times\vec b_2)\Bigr).\;}
+= 4\Bigl(e_t\otimes e_t + (\vec a_1\times\vec a_2)\otimes(\vec b_1\times\vec b_2)\Bigr)\;}.
 $$
 
 This is the biquaternion form of the Bell-operator identity. The square of the CHSH element is the identity of the algebra plus a single tensor product of two cross products.

@@ -36,7 +36,7 @@ The general definition of *The Sesquilinear Associator and the Ternary Product* 
 **Proposition (the closed form).** For all biquaternions $\tilde Q_1, \tilde Q_2, \tilde Q_3$,
 
 $$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \overline{\tilde Q_2}\,\tilde Q_1\,\tilde Q_3 ,
+\boxed{\; \{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \overline{\tilde Q_2}\,\tilde Q_1\,\tilde Q_3 \;},
 $$
 
 the product on the right being the plain product of the algebra.
@@ -62,7 +62,7 @@ $$
 **Proposition (the left model).** Under the relabelling $x = \tilde Q_2^{\natural}$, $y = \tilde Q_1$, $z = \tilde Q_3$, the ternary product is
 
 $$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = x^{*}\,y\,z ,
+\boxed{\; \{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = x^{*}\,y\,z \;},
 $$
 
 the **left model** of *Algebraic J\*-Algebras*, the product of the algebra with its conjugate-linear involution inserted in the first slot.
@@ -181,7 +181,7 @@ For the right-hand side the three terms are as follows. The first is $\{\{e_t,\v
 **Proposition (the operator form).** Let $\Theta_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$ be the linear operator of the pair $(\tilde Q_1,\tilde Q_2)$, and let $\tilde Q_5,\tilde S,\tilde W\in\mathbb{B}$ be arbitrary. The Jordan triple identity is equivalent to the operator identity
 
 $$
-[\Theta_{\tilde Q_1,\tilde Q_2},\Theta_{\tilde Q_5,\tilde S}] = \Theta_{\{\tilde Q_1,\tilde Q_2,\tilde Q_5\},\tilde S} - \Theta_{\tilde Q_5,\{\tilde Q_2,\tilde Q_1,\tilde S\}} ,
+\boxed{\; [\Theta_{\tilde Q_1,\tilde Q_2},\Theta_{\tilde Q_5,\tilde S}] = \Theta_{\{\tilde Q_1,\tilde Q_2,\tilde Q_5\},\tilde S} - \Theta_{\tilde Q_5,\{\tilde Q_2,\tilde Q_1,\tilde S\}} \;},
 $$
 
 the bracket being the commutator in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and for the multiplication of this group the operator identity fails: at $\tilde Q_1=\tilde Q_5=\tilde W=e_t$, $\tilde Q_2=\vec e_x$ and $\tilde S=\vec e_y$, the left-hand side applied to $\tilde W$ is $2\vec e_z$ while the right-hand side applied to $\tilde W$ is $-2\vec e_z$.

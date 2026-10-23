@@ -17,23 +17,20 @@ $$
 contains the only two four-vectors that can be formed linearly from the field strength $F$, the spin $S$ and the four-velocity $v$ subject to $S_\mu v^\mu=0$. The requirement that the orthogonality $S_\mu v^\mu=0$ be preserved by the evolution forces $\alpha+\beta c^{2}=1$, i.e. $\beta=(1-\alpha)/c^{2}$; and the requirement that in the instantaneous rest frame the equation reduce to the gyromagnetic torque fixes $\alpha=g/2$. Hence
 
 $$
-\boxed{\;
 \frac{dS^\mu}{d\tau}
 =\frac{ϙ}{m}\left[\frac{g}{2}\,F^{\mu\nu}S_\nu
 -\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v^\mu\,B\right],
 \qquad
-B=S_\lambda F^{\lambda\nu}v_\nu .\;}
+B=S_\lambda F^{\lambda\nu}v_\nu.
 $$
 
 This is the BMT equation in the metric convention $\eta=\mathrm{diag}(-1,+1,+1,+1)$ used throughout this series, in which $v_\mu v^\mu=-c^{2}$. In the biquaternion algebra it becomes
 
 $$
-\boxed{\;
 \frac{d\tilde{S}}{d\tau}
 =\frac{ϙ}{m}\left[\frac{g}{2}\,\mathrm{F}(\tilde{S})
 -\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,
 \big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle\,\tilde{V}\right],
-\;}
 $$
 
 where
@@ -47,8 +44,6 @@ is the **field action**, the element of $\mathbb{M}_-$ whose four-vector compone
 Two boundaries are respected. The **spin-0 and multipole sectors** are excluded: the relativistic central-force problem belongs to `Biquaternion Relativistic Non Quantum Theory`, subcategory on effects without intrinsic magnetism, and the quadrupole and higher multipoles to the subcategory on higher multipole origins. The **quantum and informational sectors** are excluded: the spinor and Dirac treatments belong to `Biquaternion Relativistic Quantum Theory`, and the information-theoretic interpretation of the Wigner rotation to its subcategory on informational aspects. The **Thomas precession**, which is the free-field kinematic piece of the same physics, is treated in the companion article of the present subcategory and is not re-derived here.
 
 The article proceeds as follows. The next section fixes the spin four-vector and its reduced form. The following section assembles the covariant equation from the two available structures and fixes the coefficients. The next section transcribes it into $\mathbb{B}$ and verifies the transcription. The remaining sections treat the rest-frame limit and the meaning of $g$, the degenerate case $g=2$ in which the spin is transported exactly as the four-velocity, the laboratory-frame reduction to the Larmor term and the Thomas term, and the separation of what the algebra supplies from what is standard.
-
-**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$; the four-force is $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so that the biquaternion representative of a four-vector $Q^\mu$ is $\tilde{Q}=i Q^{0}e_t+Q_\mu \vec e_\mu$, and the invariant pairing of $\tilde Q_1,\tilde Q_2\in\mathbb{M}_-$ is
 
 $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}\!\left(\tilde{Q}_1\,\tilde{Q}_2^{\natural}\right)
@@ -66,7 +61,6 @@ F^{jk}=\epsilon_{jkl}B_l
 $$
 
 and the charge contraction is $\tilde{K}_{\mathrm{f}}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
-
 
 Here $\tau$ is proper time, $t'$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{M}_+$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
@@ -206,7 +200,6 @@ $$
 
 Collecting the two results gives the BMT equation. The derivation shows the division of labour between the two inputs: **the algebra does not choose $g$**, which is a dynamical property of the particle; it chooses the *structure*, i.e. it exhibits the two-term family and the constraint $\alpha+\beta c^{2}=1$, and the rest-frame torque then selects the member labelled by $g$.
 
-
 Two comments on the content of the equation. First, the invariant $B=S_\lambda F^{\lambda\nu}v_\nu$ vanishes when the spin, the field and the velocity are suitably aligned; it is used again, in slightly different form, in the Lorentz-force article. Second, in the absence of a field the equation reduces to $dS^\mu/d\tau=0$: the spin is parallel-transported in the flat metric, so free spinning particles carry their rest-frame orientation unchanged, and the whole of the precession is field-driven.
 
 ## The Biquaternion Form
@@ -267,9 +260,9 @@ $$
 because $F^{tk}S_k=(E_k/c)s_k$ and $F^{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=S_\lambda F^{\lambda\nu}v_\nu=S_kF^{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F^{kt}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
 
 $$
-\frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B
+\boxed{\ \frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B
 =\frac{g\,ϙ}{2m}\,\vec s\times\vec B
-=\vec\mu\times\vec B,
+=\vec\mu\times\vec B\ } ,
 $$
 
 which defines the magnetic moment $\vec\mu=(gq/2m)\vec s$, and the time component
@@ -290,7 +283,7 @@ The gyromagnetic factor is not determined by the classical model. The relativist
 At $g=2$ the second term of the BMT equation vanishes identically, and the equation collapses to
 
 $$
-\frac{dS^\mu}{d\tau}=\frac{ϙ}{m}\,F^{\mu\nu}S_\nu ,
+\boxed{\ \frac{dS^\mu}{d\tau}=\frac{ϙ}{m}\,F^{\mu\nu}S_\nu\ } ,
 $$
 
 which is **the same equation as the Lorentz-force equation for the four-velocity**,
@@ -394,8 +387,7 @@ $$
 =\frac{ϙ}{m}\left[\frac{g}{2}\,F^{\mu\nu}S_\nu
 -\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v^\mu\,B\right],
 \qquad
-B=S_\lambda F^{\lambda\nu}v_\nu ,
-\;}
+B=S_\lambda F^{\lambda\nu}v_\nu\;},
 $$
 
 in the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ with $v_\mu v^\mu=-c^{2}$. The equation is assembled from the only two covariant four-vectors linear in $F$ and $S$, namely $F^{\mu\nu}S_\nu$ and $v^\mu B$; the orthogonality of the spin and the four-velocity forces $\alpha+\beta c^{2}=1$, and the rest-frame gyromagnetic torque fixes $\alpha=g/2$. In the biquaternion algebra the same equation is
@@ -405,8 +397,7 @@ $$
 \frac{d\tilde{S}}{d\tau}
 =\frac{ϙ}{m}\left[\frac{g}{2}\,\mathrm{F}(\tilde{S})
 -\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,
-\big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle\,\tilde{V}\right],
-\;}
+\big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle\,\tilde{V}\right]\;},
 $$
 
 with the **field action**

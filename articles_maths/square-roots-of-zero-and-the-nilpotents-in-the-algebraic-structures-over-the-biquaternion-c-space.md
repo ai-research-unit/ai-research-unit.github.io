@@ -20,10 +20,6 @@ and the **root set** of the value is the set of the solutions of the equation. T
 
 and every table of the article follows the new order: the four general structures first, then their four symmetric parts, then their four antisymmetric parts; and inside each group the plain algebra, then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
-**Scope and owners.** This article owns the value $0$ in the twelve structures, the four square-zero sets of the four general products, their order, the self-annihilation corollary, the reading of the root set of $0$ as a cone, the comparison of the twelve square-zero sets, the nilpotents of index two and the remark on where the square detects the zero divisors. The square-zero set of each structure stays owned by its article *Square Roots of Zero and the Nilpotents of the …*, cited one by one in §*The Twelve Structures and the Roots of Zero*; the vocabulary is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the products and the names are *The 12 Products of the Biquaternion Complex Space* and *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the cone and the zero-divisor sets are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the annihilators, to which the self-annihilation corollary belongs, are *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the invertibility criterion is *Norm and Invertibility in the General Quaternionic Algebra*; the pure part of the antisymmetric squares is *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*; the cone of the fourth product is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*; and the roots of $+1$ and the idempotents named here are the companion *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
-
-**Conventions.** $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ over $\mathbb{C}$ with $\vec e_x\vec e_y=\vec e_z$; the central imaginary is $i$, with $i^{2}=-e_t$ and $i$ commuting with every element; a general element is $\tilde\Xi=\Xi_te_t+\vec\Xi$ with $\Xi_t\in\mathbb{C}$ and $\vec\Xi=\sum_{\mu\in\{x,y,z\}}\Xi_\mu\vec e_\mu$; in the general formulas the generic element is written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$. The natural conjugation is $\tilde\Xi^{\natural}=\Xi_t-\vec\Xi$, the star is $\tilde\Xi^{*}=\overline{\tilde\Xi^{\natural}}$, the coefficientwise conjugation is $\overline{\tilde\Xi}$, the **central square** is $C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$, the **Hermitian square** is $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, and the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert\Xi_\mu\rvert^{2}$. A **central value** is an element $\lambda e_t$ with $\lambda\in\mathbb{C}$; the **cone** is the vanishing set of the central square, $\mathcal C=\{C=0\}$, with the origin as its apex; and $\vec u$ is a real unit vector, of square $-e_t$ and of bilinear square $(\vec u,\vec u)=1$. The root is defined in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots* as a **non-zero** element with $\tilde\Xi\star\tilde\Xi=\lambda e_t$; here a root set is read as a solution set, so the origin is counted with the roots of $0$, and this is the value where the convention is visible.
-
 ## The Roots of Zero
 
 **Definition (the root of a central value; quoted).** Let $\star$ be a product on $\mathbb{B}$, let $\lambda\in\mathbb{C}$ and let $\tilde\Xi\in\mathbb{B}$. The element is a **root of $\lambda e_t$ of $\star$** when $\tilde\Xi\star\tilde\Xi=\lambda e_t$, and the **root set** of the value is the set of the solutions (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots*). The definition names its product, and every statement below names the product it reads.
@@ -35,7 +31,9 @@ The value $0$ is reached by the square of a structure exactly when the square of
 **Theorem (the four square-zero sets).** Write $Z_1$, $Z_2$, $Z_3$, $Z_4$ for the root sets of $0$ of the plain, the natural, the general plain sesquilinear and the general quaternionic sesquilinear product. Then
 
 $$
-Z_1=\{\tilde Q:Q_t=0,\ (\vec Q,\vec Q)=0\} , \qquad Z_2=\mathcal C , \qquad Z_3=\{0\} , \qquad Z_4=\{\tilde Q:\overline{\tilde Q}\tilde Q=0\} ,
+\boxed{\;
+Z_1=\{\tilde Q:Q_t=0,\ (\vec Q,\vec Q)=0\} , \qquad Z_2=\mathcal C , \qquad Z_3=\{0\} , \qquad Z_4=\{\tilde Q:\overline{\tilde Q}\tilde Q=0\}
+\;},
 $$
 
 and $Z_1$ is the **pure isotropic cone**, of real dimension four; $Z_2$ is the whole cone, of real dimension six; $Z_3$ is the origin alone; and $Z_4$ is a proper subfamily of the cone, of real dimension four, containing the non-zero element $e_t+i\vec e_x$.
@@ -51,7 +49,9 @@ The equation of the root of $0$ is the equation of the self-annihilator, so the 
 **Corollary (self-annihilation).** For each of the four general products the root set of $0$ is the set of the elements that lie in their own annihilator,
 
 $$
-\tilde Q\star\tilde Q=0 \iff \tilde Q\in A_\star(\tilde Q) \iff \tilde Q\in B_\star(\tilde Q) ,
+\boxed{\;
+\tilde Q\star\tilde Q=0 \iff \tilde Q\in A_\star(\tilde Q) \iff \tilde Q\in B_\star(\tilde Q)
+\;},
 $$
 
 the annihilator being read in the same product, on the left and on the right (*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The converse that fails is the one of the cone: for the natural product every element of the cone lies in its own annihilator, while for the fourth product the element $ie_t+\vec e_x+\vec e_y+i\vec e_z$ lies in the cone and not in the set.
@@ -61,7 +61,9 @@ the annihilator being read in the same product, on the left and on the right (*A
 **Theorem (the order of the sets).** With $Z_1$, $Z_2$, $Z_3$, $Z_4$ the four root sets of $0$ of the general products,
 
 $$
-Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2 , \qquad Z_3\subsetneq Z_4\subsetneq Z_2 , \qquad Z_1\cap Z_4=\{0\} ,
+\boxed{\;
+Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2 , \qquad Z_3\subsetneq Z_4\subsetneq Z_2 , \qquad Z_1\cap Z_4=\{0\}
+\;},
 $$
 
 so that $Z_1$ and $Z_4$ are incomparable and the four sets are ordered only by the two chains through the whole cone $Z_2$.

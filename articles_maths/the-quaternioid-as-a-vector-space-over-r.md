@@ -21,7 +21,7 @@ so that
 
 The product is $\mathbb{R}$-bilinear and the scalar action passes through it,
 $$
-\lambda(\tilde q_1\tilde q_2)=(\lambda \tilde q_1)\tilde q_2=\tilde q_1(\lambda \tilde q_2),
+\boxed{\;\boxed{\lambda(\tilde q_1\tilde q_2)=(\lambda \tilde q_1)\tilde q_2=\tilde q_1(\lambda \tilde q_2)}\;},
 $$
 because the product is built from sums and products of the coordinates. With this compatibility $\mathbb{H}$ is a real algebra of dimension four, and the two structures — the real vector space and the algebra — are the two readings of one set.
 
@@ -40,7 +40,7 @@ Because $\mathbb{H}$ is a real vector space, its real-linear endomorphisms form 
 
 Both are real-linear, and the assignments $\tilde p\mapsto L_{\tilde p}$ and $\tilde q\mapsto R_{\tilde q}$ are injective, since $L_{\tilde p}(e_t)=\tilde p$ and $R_{\tilde q}(e_t)=\tilde q$. They are algebra embeddings with opposite multiplicativity,
 $$
-L_{\tilde p}L_{\tilde q}=L_{\tilde p\tilde q} , \qquad R_{\tilde p}R_{\tilde q}=R_{\tilde q\tilde p},
+\boxed{\;\boxed{L_{\tilde p}L_{\tilde q}=L_{\tilde p\tilde q} , \qquad R_{\tilde p}R_{\tilde q}=R_{\tilde q\tilde p}}\;},
 $$
 the first from associativity $\tilde p(\tilde q\tilde q_3)=(\tilde p\tilde q)\tilde q_3$ and the second from $(\tilde q_3\tilde p)\tilde q=\tilde q_3(\tilde p\tilde q)$. The two images commute, $L_{\tilde p}R_{\tilde q}=R_{\tilde q}L_{\tilde p}$, both being the left and the right multiplication by fixed elements, and this is associativity again. The left regular representation $\tilde p\mapsto L_{\tilde p}$ is the quaternion algebra read as a four-dimensional subalgebra of $M_4(\mathbb{R})$; it is written $M_4(\mathbb{R})_L$ in the corpus and is the subject of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, below this article in this category.
 
@@ -57,7 +57,7 @@ The two are supplementary, $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect
 
 The three objects form a ladder of real algebras,
 $$
-\mathbb{R}\ \subset\ \mathbb{C}\ \subset\ \mathbb{H},
+\boxed{\;\boxed{\mathbb{R}\ \subset\ \mathbb{C}\ \subset\ \mathbb{H}}\;},
 $$
 in which each rung is a real vector space of dimension $1,2,4$ and the last is the division algebra $\mathbb{H}$.
 

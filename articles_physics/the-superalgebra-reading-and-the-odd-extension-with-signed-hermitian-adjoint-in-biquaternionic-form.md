@@ -16,8 +16,6 @@ so it reverses a commutator and preserves an anticommutator, the reason being th
 
 The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are the ones of the inverse article and are restated only where the Hermitian structure changes them; the parity interpretation of the ambient algebra and the sectors are *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*; the supercharge pair and the chirality grading are *Supersymmetric Quantum Physics in the Biquaternion Framework*; the Grassmann envelope is *Grassmann Coherent States in Biquaternionic Form* and *BRST Symmetry in Biquaternionic Form*; the commutator bracket and the trace-free part are *The 12 Products of the Biquaternion Complex Space*; the one-mode parity is *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. Nothing owned by those articles is re-derived.
 
-**Conventions.** $\mathrm{Cl}_{1,3}$ is the ambient Clifford algebra of Minkowski space in the mostly-minus convention, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ its even part, $\gamma^\mu$ the odd generators; the grading is by parity, $\lvert a\rvert\in\{0,1\}$; the graded commutator is $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$, the commutator for even or mixed pairs and the anticommutator for two odd elements; the dagger is the Hermitian adjoint of the algebra, extended to the envelope by $X^{*}=\sigma(\alpha(X^{r}))$ as in the companion article, so that $(ab)^{*}=b^{*}a^{*}$ and $\lvert a^{*}\rvert=\lvert a\rvert$.
-
 ## The Graded Commutator
 
 **Definition.** On a $\mathbb{Z}/2$-graded algebra $A=A^0\oplus A^1$ the **graded commutator** is
@@ -51,8 +49,8 @@ $$
 **Proposition (the dagger is an even anti-involution of the superalgebra).** The Hermitian adjoint satisfies
 
 $$
-(ab)^{*}=b^{*}a^{*},\qquad (a^{*})^{*}=a,\qquad
-\lvert a^{*}\rvert=\lvert a\rvert ,
+\boxed{\;(ab)^{*}=b^{*}a^{*},\qquad (a^{*})^{*}=a,\qquad
+\lvert a^{*}\rvert=\lvert a\rvert\;},
 $$
 
 so it is an anti-automorphism of the graded algebra and it preserves the grading; it is $\mathbb{C}$-antilinear.
@@ -62,7 +60,7 @@ so it is an anti-automorphism of the graded algebra and it preserves the grading
 **Proposition (the adjoint reverses a commutator and preserves an anticommutator).** For homogeneous $a,b$,
 
 $$
-\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}},
+\boxed{\;\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}\;},
 $$
 
 that is
@@ -92,7 +90,7 @@ $$
 so that the anticommutator of the supercharge with itself is a bosonic operator commuting with it. In the Hermitian interpretation the pairing used by the physics is the one with the **adjoint** rather than with the element itself,
 
 $$
-\{\mathcal{Q},\mathcal{Q}^{*}\}=2H ,
+\boxed{\;\{\mathcal{Q},\mathcal{Q}^{*}\}=2H\;}
 $$
 
 which is the convention of *Supersymmetric Quantum Physics in the Biquaternion Framework*, $\{\mathcal{Q},\mathcal{Q}^{*}\}=H$, $\mathcal{Q}^{2}=(\mathcal{Q}^{*})^{2}=0$ in the nilpotent realisation of the flat theory. The two displays coincide in the real forms in which $\mathcal{Q}^{*}$ is identified with $\mathcal{Q}$, and the numerical factor between the two conventions is a normalisation.

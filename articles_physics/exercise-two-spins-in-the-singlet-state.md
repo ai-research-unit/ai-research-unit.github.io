@@ -88,7 +88,7 @@ $$
 In terms of the angle $\theta$ between the two directions,
 
 $$
-p(+,+) = \frac{1}{4}\left(1 - \cos\theta\right) = \frac{1}{2}\sin^2\!\left(\frac{\theta}{2}\right).
+\boxed{\;p(+,+) = \frac{1}{4}\left(1 - \cos\theta\right) = \frac{1}{2}\sin^2\!\left(\frac{\theta}{2}\right)\;}.
 $$
 
 ## Solution in the Biquaternion Formulation
@@ -100,9 +100,8 @@ In the biquaternion framework, a single-qubit pure state is an idempotent of $\m
 The singlet state corresponds to the idempotent
 
 $$
-\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
+\boxed{\;\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
 $$
-
 
 *Idempotency.* Using $(x\otimes y)\circ(z\otimes w) = (x\circ z)\otimes(y\circ w)$ and the quaternion multiplication rules,
 

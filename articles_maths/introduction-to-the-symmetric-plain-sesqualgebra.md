@@ -20,10 +20,6 @@ which is the **Hermitian form of the corpus read as a multiplication**. The bloc
 
 Three consequences organise the block, and they are the exact opposites of the quaternionic row. The product is **conjugate-commutative** rather than commutative, and it has **no unit** on either side. Its diagonal is **real and strictly positive off the origin**, so there is **no nonzero isotropic vector and no nonzero element of square zero**; the vanishing products are those of pairs orthogonal for $\langle\cdot,\cdot\rangle_{*}$, $e_\mu\star e_\nu = 0$ for $\mu\neq\nu$. And it **fails the Jordan identity**, with the witness $x = y = \vec e_x$: a symmetrisation of a sesquilinear product is not a Jordan product, and the block is a genuine operation of the sesqualgebra row and of no classical kind. This article owns the sixteen products of the basis, the square and its polarisation, the law, the absence of a unit, the failure of the Jordan identity and the placement of the block among the twelve.
 
-**Boundaries.** The product that is split is *Introduction to the General Plain Sesqualgebra*; the split itself and the general construction of the two parts are *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and this article quotes both and restates neither. The form $\langle\cdot,\cdot\rangle_{*}$, its positivity, its cone and its norm are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* and *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*; the form is not developed here. The other half of the product is the block *Biquaternions as an Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$*, and the twelve operations as a family are *The 12 Products of the Biquaternion Complex Space*. The sibling symmetric rows are the blocks of *Introduction to the Symmetric Plain Algebra* and *Introduction to the Symmetric Quaternionic Algebra*, which this article compares with on the law alone. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_t, \vec e_x, \vec e_y, \vec e_z$, $e_t$ the identity, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \vec e_\lambda$ for $(\mu,\nu,\lambda)$ a cyclic permutation of $(1,2,3)$; a general element is $\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, and $\tilde Q = Q_t e_t + \vec Q$ with $\vec Q = \sum_{k=1}^{3} Q_k \vec e_k$. The scalar part is $\mathrm{Sc}$. The **natural conjugation** ${}^{\natural}$ negates $\vec e_x, \vec e_y, \vec e_z$ and fixes $e_t$, and is $\mathbb{C}$-linear; the **coefficientwise conjugation** $\overline{\cdot}$ conjugates the four coordinates; the **Hermitian conjugation** is ${}^{*} = \overline{\cdot} \circ {}^{\natural}$, so that $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The dot and cross products of vector parts, and the four general products of the space, are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; the product split here is the general plain sesquilinear one.
-
 ## The Product Read as a Multiplication
 
 **Definition.** The **multiplication** of the block is the operation
@@ -36,9 +32,7 @@ It is the symmetric part of the general plain sesquilinear product $\tilde Q_1\t
 
 **Proposition (the value is central).** For all $\tilde Q_1, \tilde Q_2$,
 
-$$
-\tilde Q_1 \star \tilde Q_2 = \mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)\, e_t = \langle\tilde Q_1,\tilde Q_2\rangle_{*}\, e_t , \qquad \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} Q_{1,\mu} \overline{Q_{2,\mu}} = Q_{1t} \overline{Q_{2t}} + (\vec Q_1, \overline{\vec Q_2}) ,
-$$
+$$ \boxed{\; \tilde Q_1 \star \tilde Q_2 = \mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)\, e_t = \langle\tilde Q_1,\tilde Q_2\rangle_{*}\, e_t , \qquad \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} Q_{1,\mu} \overline{Q_{2,\mu}} = Q_{1t} \overline{Q_{2t}} + (\vec Q_1, \overline{\vec Q_2}) \;}, $$
 
 so the image of the multiplication is the centre $\mathbb{C}_{\mathbb{B}} = \{\lambda e_t\}$. Equivalently, in the two other forms of the same identity,
 
@@ -89,9 +83,7 @@ so the table of the block is the identity table:
 
 **Proposition (the square is the form at the two equal arguments).** For every $\tilde Q$,
 
-$$
-\tilde Q \star \tilde Q = \langle\tilde Q,\tilde Q\rangle_{*}\, e_t = \Bigl(\lvert Q_t\rvert^{2} + \sum_{k=1}^{3} \lvert Q_k\rvert^{2}\Bigr) e_t = \Bigl(\sum_{\mu\in\{t,x,y,z\}} \lvert Q_\mu\rvert^{2}\Bigr) e_t ,
-$$
+$$ \boxed{\; \tilde Q \star \tilde Q = \langle\tilde Q,\tilde Q\rangle_{*}\, e_t = \Bigl(\lvert Q_t\rvert^{2} + \sum_{k=1}^{3} \lvert Q_k\rvert^{2}\Bigr) e_t = \Bigl(\sum_{\mu\in\{t,x,y,z\}} \lvert Q_\mu\rvert^{2}\Bigr) e_t \;}, $$
 
 a **central** element whose coefficient is real and non-negative, and strictly positive for $\tilde Q \neq 0$.
 
@@ -113,9 +105,7 @@ so the squared map $\tilde Q \mapsto \tilde Q\star\tilde Q$ determines only the 
 
 **Theorem (the conjugate-commutative law).** For all $\tilde Q_1, \tilde Q_2$,
 
-$$
-\tilde Q_1 \star \tilde Q_2 = \overline{\tilde Q_2 \star \tilde Q_1} ,
-$$
+$$ \boxed{\; \tilde Q_1 \star \tilde Q_2 = \overline{\tilde Q_2 \star \tilde Q_1} \;}, $$
 
 the bar acting on the central value; the law is read on the coefficient of $e_t$.
 

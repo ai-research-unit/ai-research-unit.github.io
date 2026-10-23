@@ -16,7 +16,9 @@ with $\rho$ a root of minus one and the exponential that of *Reduced Biquaternio
 
 **Theorem (the roots of minus one and the kernel).** The roots of minus one are exactly
 $$
-\pm i,\qquad \pm ij,
+\boxed{\;
+\pm i,\qquad \pm ij
+\;},
 $$
 that is the elements with coordinates $Q_{+},Q_{-}\in\{i,-i\}$; the kernel with the choice $\rho=i$ is the complex kernel $W_{N}(n,m)=e^{-2\pi i nm/N}$ read in the algebra, and with $\rho=ij$ it is the same with $ij$ in place of $i$. In either case $W_{N}(n,m)=w_{1}^{nm}\Pi_++w_{2}^{nm}\Pi_-$ with $w_{1},w_{2}$ the two $N$-th roots of unity determined by the chosen root; for the choice $\rho=i$ the two idempotent coordinates of the kernel are equal, while for $\rho=ij$ they are conjugate.
 
@@ -32,7 +34,9 @@ the products being in the algebra, which is why the order of the factors is imma
 
 **Theorem (the transform pair).** The transform is linear and satisfies the inversion
 $$
-f(n)=\frac{1}{N}\sum_{m=0}^{N-1}(\mathcal F f)(m)\,W_{N}(n,-m),
+\boxed{\;
+f(n)=\frac{1}{N}\sum_{m=0}^{N-1}(\mathcal F f)(m)\,W_{N}(n,-m)
+\;},
 $$
 valid for **every** signal. The two formulas are the ordinary discrete transform pair in each idempotent coordinate.
 
@@ -62,7 +66,9 @@ where $\mathcal F g_{1}$ and $\mathcal F g_{2}$ are the ordinary complex discret
 
 **Theorem (the convolution theorem).** The transform of the convolution is the pointwise product of the transforms,
 $$
-(\mathcal F(f*h))(m)=(\mathcal F f)(m)\,(\mathcal F h)(m),
+\boxed{\;
+(\mathcal F(f*h))(m)=(\mathcal F f)(m)\,(\mathcal F h)(m)
+\;},
 $$
 and the convolution splits in the idempotent coordinates into the two ordinary complex convolutions.
 

@@ -30,8 +30,6 @@ For the **vacuum** state $\tilde{Ϛ} = \tilde\Pi_+$ the GNS space is the minimal
 
 The article proceeds as follows. The next section recalls the GNS theorem. The section after that fixes the states of $\mathbb{B}$ as density matrices. Two sections then construct the GNS data explicitly and compute the dimension in the pure, mixed, and trace cases. A section states the modular structure. A section examines the trace state and the algebra's canonical state. A section records the second description of a state, as the Fourier transform of a measure, and locates the point at which the biquaternion algebra's norm fails to supply it. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ is the centre. The isomorphism is $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$, and the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$, the $2\times2$ reading of the plain form, with $\mathrm{Tr}(e_t)=2$. The biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The minimal idempotents are $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, the vacuum idempotent being $\tilde\Pi_+$, and the single-mode ladder is $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, as in *The Biquaternion Vacuum as a Minimal Idempotent*.
-
 ## The GNS Theorem
 
 Let $\mathcal{A}$ be a unital $*$-algebra over $\mathbb{C}$ with a norm making it a $C^*$-algebra, and let $\omega:\mathcal{A}\to\mathbb{C}$ be a **state**: linear, positive in the sense $\omega(\tilde Q_3^{*} \tilde Q_3)\ge 0$ for all $\tilde Q_3$, and normalized, $\omega(e)=1$. Define the sesquilinear form
@@ -91,13 +89,13 @@ $$
 $$
 and the radical, the Hilbert space, the representation, and the cyclic vector are
 $$
-\mathcal{N}_{\tilde{Ϛ}} = \big\{\tilde Q_3 : \mathrm{Tr}(\tilde{Ϛ} \tilde Q_3^{*}\tilde Q_3)=0\big\},
+\boxed{\;\mathcal{N}_{\tilde{Ϛ}} = \big\{\tilde Q_3 : \mathrm{Tr}(\tilde{Ϛ} \tilde Q_3^{*}\tilde Q_3)=0\big\},
 \qquad
 \mathcal{H}_{\tilde{Ϛ}} = \mathbb{B}/\mathcal{N}_{\tilde{Ϛ}},
 \qquad
 \pi_{\tilde{Ϛ}}(\tilde Q_3)[\tilde Q_1]=[\tilde Q_3\tilde Q_1],
 \qquad
-\Omega_{\tilde{Ϛ}} = [e_t].
+\Omega_{\tilde{Ϛ}} = [e_t]\;}.
 $$
 It is convenient to compute the Gram matrix of the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$,
 $$
@@ -111,7 +109,7 @@ $$
 $$
 and it vanishes exactly when $\tilde Q_3 \tilde\Pi_+=0$, i.e. when the image of $\tilde Q_3$ is annihilated by the projector. That is precisely the condition that the class $[\tilde Q_3]$ corresponds to $\tilde Q_3\tilde\Pi_+$, so the quotient is the image:
 $$
-\mathcal{H}_{\tilde\Pi_+} \;\cong\; \mathbb{B}\tilde\Pi_+ \;\cong\; \mathbb{C}^2 .
+\boxed{\;\mathcal{H}_{\tilde\Pi_+} \;\cong\; \mathbb{B}\tilde\Pi_+ \;\cong\; \mathbb{C}^2\;}.
 $$
 Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of *The Biquaternion Vacuum as a Minimal Idempotent*. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_+)=\mathrm{diag}(1,0)$: the inner product $\mathrm{Tr}(\tilde\Pi_+\tilde Q_3^{*}\tilde Q_1)$ sees only the first column of the matrices.
 
@@ -133,7 +131,7 @@ $$
 $$
 which vanishes if and only if $\tilde Q_3$ annihilates the range of $\tilde{Ϛ}$. The radical therefore has dimension $2(2-\mathrm{rank}\,\tilde{\varsigma})$ and
 $$
-\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}} = 4 - 2(2-\mathrm{rank}\,\tilde{\varsigma}) = 2\,\mathrm{rank}\,\tilde{\varsigma} ,
+\boxed{\;\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}} = 4 - 2(2-\mathrm{rank}\,\tilde{\varsigma}) = 2\,\mathrm{rank}\,\tilde{\varsigma}\;}
 $$
 so the dimension is $2$ for the pure boundary ($\mathrm{rank}\,\tilde{\varsigma}=1$) and $4$ throughout the interior of the Bloch ball ($\mathrm{rank}\,\tilde{\varsigma}=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.
 
@@ -176,7 +174,7 @@ K_{\tilde{Ϛ}} \;=\; -\log\tilde{Ϛ} .
 $$
 Since $\tilde{Ϛ}$ is a positive Hermitian element of the algebra, $K_{\tilde{Ϛ}}$ is Hermitian — it is a real function of a Hermitian element — and therefore
 $$
-K_{\tilde{Ϛ}}\in\mathbb{M}_+ .
+\boxed{\;K_{\tilde{Ϛ}}\in\mathbb{M}_+\;}
 $$
 This is the algebraic fact recorded by the companion articles on the KMS condition and on modular theory: the generator of the modular flow is an element of the informational sector, while it acts on fields whose coordinates are read in the material sector. For the Gibbs state of a Hamiltonian $\tilde H\in\mathbb{M}_+$ one has $\tilde{Ϛ} = \exp(-\beta\tilde H)/Z$ with $Z=\mathrm{Tr}\exp(-\beta\tilde H)$ and therefore
 $$
@@ -231,8 +229,6 @@ $$
 is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G,\mu)$, with the regular representation and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two interpretations of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
 
 **Where the framework departs from it.** A state is $\mathbb{C}$-valued, and the framework's own harmonic analysis does not deliver one directly. The transform of a measure in the biquaternion algebra is $\mathbb{B}$-valued, and the algebra's norm is not positive definite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — so a biquaternion-valued transform of a measure is not a positive-definite function and the classical theorem has no source there. That object *is* positive definite under a definite Hermitian pairing, and the pairing is the one this article already uses, $\langle \tilde Q_3,\tilde Q_1\rangle_\omega = \mathrm{Tr}(\tilde{Ϛ}\,\tilde Q_3^{*}\tilde Q_1)$. The measure route and the GNS route therefore meet on the Hermitian pairing, and the biquaternion norm is used by neither. The computation is in *Biquaternion Continuous Harmonic Analysis*, in the section on the transform of a measure; the quaternion statement, where the norm is definite and the classical positivity does hold, is in *Quaternion Harmonic Analysis*.
-
-**Scope.** The theorem is abelian, and the framework's mode algebra is not: it is the CAR algebra of one fermionic mode in $\mathbb{B}$, or the Weyl algebra of an imported bosonic module, and neither is the convolution algebra of an abelian group. The passage from a measure to a state of those algebras is not the abelian passage, and it is not taken here. What is used is the finite-dimensional statement of this article together with the classical abelian theorem as an external fact; the existence direction of that theorem, from positivity back to the measure, is not needed.
 
 ## What Is Established and What Is Interpretation
 

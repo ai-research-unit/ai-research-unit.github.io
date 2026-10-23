@@ -8,8 +8,6 @@ The results are collected here because they are one subject. The block is a Jord
 
 The square of the block is the plain square, so the idempotents of the block are the idempotents of the plain product, classified in *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the norm is the biquaternion norm of *Norm and Invertibility in the General Quaternionic Algebra*. What this article adds is the reading of those facts as the degree-two structure of the Jordan algebra, and the fuller theory of the Jordan inverse. The Common Theory articles of the block are *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Specificities of the Symmetric Plain Algebra*; the trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the idempotents as minimal ideals of the parent are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; and the placement of the block among the twelve operations is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q,\vec Q)=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde Q_1\tilde Q_2$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_te_t-\vec Q$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Norm and Invertibility in the General Quaternionic Algebra*, written $\langle\tilde Q\rangle_{\natural}$ here.
-
 ## The Square and the Quadratic Map
 
 ### The Square
@@ -92,7 +90,7 @@ $$
 **Theorem.** An element $\tilde Q$ of the block is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its Jordan inverse is
 
 $$
-\tilde Q^{-1}=\frac{2Q_te_t-\tilde Q}{\langle\tilde Q\rangle_{\natural}}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} .
+\boxed{\; \tilde Q^{-1}=\frac{2Q_te_t-\tilde Q}{\langle\tilde Q\rangle_{\natural}}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} \;}.
 $$
 
 *Proof.* The quadratic identity of the block, divided by $\langle\tilde Q\rangle_{\natural}$, is
@@ -108,8 +106,8 @@ that is, $\tilde Q\bullet\bigl((T(\tilde Q)e_t-\tilde Q)/\langle\tilde Q\rangle_
 **Theorem.** The Jordan inverse of the block is the inverse of the algebra: for $\langle\tilde Q\rangle_{\natural}\neq0$,
 
 $$
-\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},\qquad
-\tilde Q\bullet\tilde Q^{-1}=\tilde Q\tilde Q^{-1}=e_t .
+\boxed{\; \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},\qquad
+\tilde Q\bullet\tilde Q^{-1}=\tilde Q\tilde Q^{-1}=e_t \;}.
 $$
 
 *Proof.* The inverse formula of the algebra is $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ in *Norm and Invertibility in the General Quaternionic Algebra*, and $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}$. The two formulas are the same element; the Jordan inverse was computed above as the same quotient.
@@ -137,7 +135,7 @@ An element is isotropic exactly when it fails to be invertible, so the invertibl
 **Theorem.** The elements of square zero, $\tilde Q\bullet\tilde Q=0$, are exactly the **pure isotropic vectors**:
 
 $$
-\tilde Q\bullet\tilde Q=0\iff Q_t=0\ \text{and}\ (\vec Q,\vec Q)=0,
+\boxed{\; \tilde Q\bullet\tilde Q=0\iff Q_t=0\ \text{and}\ (\vec Q,\vec Q)=0 \;},
 $$
 
 that is, exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{B})$ on which the norm vanishes. They are a proper subset of the isotropic cone.

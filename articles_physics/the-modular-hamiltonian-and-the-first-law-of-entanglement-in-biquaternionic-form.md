@@ -22,8 +22,6 @@ where $\delta S=S(\tilde{Ϛ})-S(\tilde{Ϛ}_0)$ and $\delta\langle K_0\rangle=\ma
 
 The article proceeds as follows. The modular Hamiltonian is defined and its biquaternion closed form is given. The first law is stated, and the exact identity from which it follows is derived. The identity is verified on the explicit perturbation. The linearity that makes the law exact to first order is explained in the framework's terms, and the entanglement Hamiltonian of a subsystem is discussed. The standard applications are recalled, and the article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$. States are $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)\in\mathbb{M}_+$ with $|\vec r|\le1$; the logarithms, entropies and relative entropies are the closed forms of *Relative Entropy and the Biquaternion Framework*, and the modular operator, flow and generator are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion Framework*.
-
 ## The Modular Hamiltonian
 
 ### Definition
@@ -46,9 +44,9 @@ a Hermitian element of the algebra, so that $\sigma=\exp(-K_\sigma)$ and $\mathr
 
 Let $\tilde{Ϛ}_0=\tfrac12(e_t+i\vec r_0\cdot\mathbf e)$ be faithful, with $r_0=|\vec r_0|<1$, $\vec {u_r}_0=\vec r_0/r_0$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$, and $b=\mathrm{artanh}(r_0)$. The biquaternion logarithm of the relative-entropy companion article gives immediately
 $$
-K_0=-\log\tilde{Ϛ}_0
+\boxed{\;K_0=-\log\tilde{Ϛ}_0
 =\tfrac12\log\frac{4}{1-r_0^2}\,e_t-i\,b\,\gamma_0
-\ \in\ \mathbb{M}_+ .
+\ \in\ \mathbb{M}_+\;}.
 $$
 Each term is Hermitian — the scalar part is real, and the vector part $-i\,b\,\gamma_0$ has $(-i\,b\,\gamma_0)^\dagger=i\,b\,\gamma_0^\dagger=i\,b\,(-\gamma_0)=-i\,b\,\gamma_0$, using $\gamma_0^\dagger=-\gamma_0$ — so the modular Hamiltonian lies in the informational sector, as the KMS and thermal-time companion articles require. It is the difference of a purely informational scalar term and an element of $i\mathbb{M}_-$.
 
@@ -82,7 +80,7 @@ $$
 $$
 The **first law of entanglement** is the statement
 $$
-\delta S=\delta\langle K_\sigma\rangle+O\big(\delta\rho^2\big),
+\boxed{\;\delta S=\delta\langle K_\sigma\rangle+O\big(\delta\rho^2\big)\;},
 $$
 that is, to first order in the perturbation the entropy change equals the change in the expectation of the modular Hamiltonian of the reference state. It holds for every state and every perturbation, in every dimension; it is the entanglement analogue of the first law of thermodynamics, with the modular Hamiltonian playing the role of the energy conjugate to the entropy.
 
@@ -234,7 +232,7 @@ The modular Hamiltonian is $K=-\log\Delta$, the generator of the modular flow; i
 
 In the biquaternion framework the modular Hamiltonian of a faithful state is the closed-form informational-sector element $K_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\,\gamma_0$, with $b=\mathrm{artanh}(r_0)$, and its expectation in any state is $-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$. The first law is the first-order shadow of the exact identity
 $$
-\delta S=\delta\langle K_0\rangle-S(\tilde{Ϛ}\|\tilde{Ϛ}_0),
+\boxed{\;\delta S=\delta\langle K_0\rangle-S(\tilde{Ϛ}\|\tilde{Ϛ}_0)\;},
 $$
 which follows from $K_0=-\log\tilde{Ϛ}_0$ and the definition of relative entropy, and which gives $\delta S\le\delta\langle K_0\rangle$ by the positivity of relative entropy. The identity was verified to machine precision on the reference state $\vec r_0=(0.3,-0.2,0.4)$ displaced along $\vec v=(0.12,0.18,-0.07)$, with the deficit scaling quadratically in the step and equal to the closed-form relative entropy.
 

@@ -17,7 +17,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 In the standard formulation, the singlet state is a single vector $|\Psi^-\rangle$ in $\mathbb{C}^2\otimes\mathbb{C}^2$. In the biquaternion formulation, it is a single idempotent of the tensor product:
 
 $$
-\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
+\boxed{\;\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
 $$
 
 This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_\mu\otimes \vec e_\mu$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.
@@ -53,7 +53,7 @@ is maximally entangled for every $\phi$, whereas the twelve patterns fix the rel
 The state of one subsystem is obtained by tracing out the other:
 
 $$
-\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t.
+\boxed{\;\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t\;}.
 $$
 
 This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\tilde{Ϛ}_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
@@ -63,7 +63,7 @@ This is the maximally mixed state of a qubit, at the centre of the Bloch ball. I
 The spin correlation function, computed in full in *Exercise: The Correlation Function of the Bell States*, is
 
 $$
-E(\vec u_a, \vec u_b) = \frac{\langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}}{\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*}} = \frac{\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}})} = \frac{\operatorname{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\operatorname{Tr}(\tilde\Pi_{\mathrm{singlet}})} = -\vec u_a\cdot\vec u_b.
+\boxed{\;E(\vec u_a, \vec u_b) = \frac{\langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}}{\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*}} = \frac{\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}})} = \frac{\operatorname{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\operatorname{Tr}(\tilde\Pi_{\mathrm{singlet}})} = -\vec u_a\cdot\vec u_b\;}.
 $$
 
 Here $\circ$ denotes the product in $\mathbb{B}\otimes\mathbb{B}$. This is the tensor-product Hermitian form between the state idempotent and the correlation observable, whose trace reading is the last step at normalisation. It is the same algebraic operation — the Hermitian form, with the trace read last — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
@@ -79,7 +79,7 @@ $$
 where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,\vec e_\mu\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_\mu(\vec u_a - ie_t)$ for $\mu\in\{x,y,z\}$ and $\vec u_a - ie_t = -2i\tilde\Pi(\vec u_a)$, gives
 
 $$
-\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a),
+\boxed{\;\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a)\;},
 $$
 
 where $\tilde\Pi(-\vec u_a) = \tfrac{1}{2}(e_t - i\vec u_a)$. The normalized post-measurement state is therefore the product state

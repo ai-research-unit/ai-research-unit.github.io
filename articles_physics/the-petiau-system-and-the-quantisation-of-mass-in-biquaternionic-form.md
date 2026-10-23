@@ -15,8 +15,6 @@ The position is stated at the outset, and the article defends it section by sect
 
 The article is organised as follows. The next section sets up the mass as a field, from the Lanczos feedback through the Einstein–Mayer mass biquaternion to the eigenvalues that read as two masses. A section states Petiau's closure of the system and checks its reduction to Lanczos. Two sections give the double-periodic waves and the quartic Hamiltonian. A section gives Barut's empirical formula and the moduli ratio, with its status. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ and cyclic, central scalar imaginary $i$, $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\,\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta$ is the series' d'Alembertian. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, whose vanishing defines the **singular** (null) biquaternions; the conjugations are ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}={}^{\natural}\circ\bar{\cdot}$ and the anti-Hermitian $\flat=-{}^{*}$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Standard-model quantities — Yukawa couplings, the charged-lepton and quark masses in $\mathrm{MeV}/c^2$, the fine-structure constant $\alpha$ — are used where standard physics is named and are not framework structure.
-
 The framework results used here are those of the companion articles:
 
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, whose sub-section *The Gürsey Reading, the Reversion Test, and the Einstein–Mayer Equation* first records the Lanczos system, the Einstein–Mayer equation and the isospin interpretation; the present article takes the same equations as its starting point and does not repeat the isospin interpretation.
@@ -65,9 +63,9 @@ For a constant central $\tilde{E}=m e_t$ the equations reduce to the Lanczos sys
 The reduction is not the point; the eigenvalue is. Applying the conjugate gradient to the first-order pair, and taking $\tilde{E}$ constant so that the derivatives do not act on it, gives
 
 $$
-\Box\tilde Q_1 = \tilde Q_1\,\bigl(\tilde{E}\tilde{E}^{*}\bigr),
+\boxed{\;\Box\tilde Q_1 = \tilde Q_1\,\bigl(\tilde{E}\tilde{E}^{*}\bigr),
 \qquad
-\Box\tilde Q_2 = \tilde Q_2\,\bigl(\tilde{E}^{*}\tilde{E}\bigr).
+\Box\tilde Q_2 = \tilde Q_2\,\bigl(\tilde{E}^{*}\tilde{E}\bigr)\;}.
 $$
 
 The mass is no longer a number multiplying the field; it is an **operator** acting on the field from the right, and the mass-squareds of the two fields are the eigenvalues of $\tilde{E}\tilde{E}^{*}$ (equivalently of $\tilde{E}^{*}\tilde{E}$, which has the same nonzero spectrum). The mass field $\tilde{E}$ has become the object that **determines** the masses, and the two masses of a doublet are read off from one biquaternion.
@@ -100,11 +98,11 @@ The **content of the construction, in one sentence**: the mass of a spin-$\frac{
 The Einstein–Mayer system has a mass field $\tilde{E}$ that is put in by hand. Petiau's 1965 step, in the same feedback spirit, is to give $\tilde{E}$ an equation of its own and so **close** the system. Adding a spin-0 field $\tilde Q_3$, in place of $\tilde{E}$, gives the closed system
 
 $$
-\tilde{\nabla}\tilde Q_1 = \tilde Q_2\tilde Q_3,
-\qquad
-\tilde{\nabla}\tilde Q_2 = \tilde Q_1\tilde Q_3,
-\qquad
-\tilde{\nabla}\tilde Q_3= \tilde Q_1\tilde Q_2.
+\boxed{\;\begin{aligned}
+\tilde{\nabla}\tilde Q_1 &= \tilde Q_2\tilde Q_3,\\
+\tilde{\nabla}\tilde Q_2 &= \tilde Q_1\tilde Q_3,\\
+\tilde{\nabla}\tilde Q_3 &= \tilde Q_1\tilde Q_2.
+\end{aligned}\;}
 $$
 
 Here $\tilde Q_1$ and $\tilde Q_2$ are the Lanczos spin-$\frac{1}{2}$ fields and $\tilde Q_3$ is an Einstein–Mayer field of spin 0. The system is **closed** in Petiau's sense: every field on the right-hand side is one of the three, so the equations determine one another with no external parameter left, and the third equation $\tilde{\nabla}\tilde Q_3=\tilde Q_1\tilde Q_2$ is the relation that the first two lacked. The price is that the closed system is **nonlinear** — the right-hand sides are products of two fields — and its solutions are correspondingly more constrained than those of any linear wave equation.
@@ -144,7 +142,7 @@ The article records this as the source's result and does not re-derive it. The r
 Taking one of the fields as fundamental — the source takes $\tilde Q_1$ — and constructing the Hamiltonian of the closed system from its first integrals, Petiau obtained the remarkably simple form
 
 $$
-H = C_0\,\mu^4 k^2,
+\boxed{\;H = C_0\,\mu^4 k^2\;},
 $$
 
 where $k$ is the modulus of the elliptic function, $\mu$ the proper mass, and $C_0$ a constant. The Hamiltonian is quartic in the proper mass and quadratic in the modulus. Both dependences are significant: the $k^2$ is what the empirical formula of the next section will compare with, and the $\mu^4$ is the striking part.

@@ -14,8 +14,6 @@ with $s=|l-\bar l|$ the spin. The last form is the whole content: **the mass is 
 
 The article records this formula, its derivation from the determinant of the Bhabha operator, the interlocking chains that organise the representations, and the resulting spectrum with its three successes and its one important non-uniqueness. It stands beside the companion *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, which reaches a mass formula by the opposite route — a mass term that is itself a field — and beside *Antilinear Structure and the Two Kinds of Mass*, which distinguishes the Dirac and Majorana masses at the level of a single field's pairing; the present formula is a third thing, a spectrum over representations.
 
-**Conventions.** The Lorentz-group conventions are those of the corpus's spinor-module and angular-momentum articles: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l,\bar l\in\frac12\mathbb{Z}_{\ge0}$, spin $s=|l-\bar l|$, and the $ict'$ metric of the corpus, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ with an overall sign immaterial to the ratios. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, its Clifford form the corpus's *Clifford Algebra Representation*. The mass formula and the interlocking scheme are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400), whose route is the finite-dimensional Bhabha–Gel'fand–Yaglom equation.
-
 - Companion article *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, for the other mass formula — the mass term as a field, the Einstein–Mayer mass biquaternion, and Barut's empirical ratio — and for the corpus's standing that the framework does not derive masses.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the Dirac/Majorana distinction and the statement that the framework does not fix the mass values.
 - Companion article *Addition of Angular Momenta and Clebsch–Gordan Coefficients in Biquaternionic Form*, for the tensor-product decomposition of the Lorentz representations used to build the chains.
@@ -42,7 +40,7 @@ $$
 Because $D(p)$ is Lorentz-invariant, it depends only on $s^{2}(p)=p_0^{2}-p_1^{2}-p_2^{2}-p_3^{2}$ and factors as
 
 $$
-D\bigl(s^{2}\bigr) = \kappa\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_k^{2}\bigr),
+\boxed{\;D\bigl(s^{2}\bigr) = \kappa\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_k^{2}\bigr)\;},
 $$
 
 so the masses $m_i$ are the roots: the representation carries a **discrete set of masses**, one for each distinct positive root of the determinant, and the field is a **multi-mass** field. This is the sense in which mass can be "quantised" by the representation, and it is the content the bivector-space article *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* develops in full.
@@ -68,8 +66,8 @@ $$
 The formula is a statement about the eigenvalues of $\Gamma^{0}$ in the representation. Its clean form is the asymptotic one: for the infinite-dimensional representations that arise as the limits of the chains, $l\to\infty$ and $\bar l\to\infty$, the eigenvalues degenerate and
 
 $$
-m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right),
-\qquad s=|l-\bar l| .
+\boxed{\;m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right),
+\qquad s=|l-\bar l|\;}.
 $$
 
 The identity $(l+\frac12)(\bar l+\frac12) = \frac14(2l+1)(2\bar l+1)$ then gives the dimension form announced above, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$. The mass is thus read from the dimension of the representation, and the constant $\mu_0$ is the single scale.
@@ -101,7 +99,7 @@ The ordering of a chain by degree is the ordering by mass, since $m\propto\deg$.
 Normalising to the electron, the fundamental $\tau^{1/2,0}$ of degree $2$, gives
 
 $$
-\frac{m}{m_e} = \frac{\deg\tau^{l\bar l}}{2} = \frac{(2l+1)(2\bar l+1)}{2}.
+\boxed{\;\frac{m}{m_e} = \frac{\deg\tau^{l\bar l}}{2} = \frac{(2l+1)(2\bar l+1)}{2}\;}.
 $$
 
 The programme assigns the following representations, with the ratios below. The measured ratios are computed from the Particle Data Group values, in units of the electron mass $m_e=0.5110$ MeV: $m_p=938.272$ MeV ($m_p/m_e=1836.15$), the $\Sigma$-octet mean $m_\Sigma=(m_{\Sigma^+}+m_{\Sigma^0}+m_{\Sigma^-})/3=1193.15$ MeV ($2334.9$), $m_{\pi^\pm}=139.570$ MeV ($273.13$), and $m_{\pi^0}=134.977$ MeV ($264.14$). The programme itself quotes $m_\Sigma/m_e\approx2280$, which corresponds to a $\Sigma$ mass near $1165$ MeV and is not the PDG octet mean; the table uses the PDG value and the discrepancy is noted.

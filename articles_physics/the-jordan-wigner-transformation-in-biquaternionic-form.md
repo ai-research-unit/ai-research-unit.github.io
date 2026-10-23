@@ -13,12 +13,10 @@ This article establishes:
 
 The standard material is transcribed with explicit signs; the biquaternion content is the one-site identification and the parity interpretation of the string.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_t=1$, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and its cyclic permutations, central $i$ with $i^{*}=-i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the one-mode ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$; the spin generators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$; the dictionary identification $\mathsf{M}_2(i\vec e_k)=\gamma^0\gamma^k$ of the algebra into the even Clifford subalgebra; the spin operators act on the ideals as the Pauli matrices (the parent's $\mathsf{M}_2(i\vec e_k)$ restricted to the invariant subspace, $\tfrac{\hbar}{2}i\vec e_k\mapsto\tfrac{\hbar}{2}\sigma_k$). **Jordan–Wigner convention.** For $N$ sites with Pauli operators $\sigma^x_j,\sigma^y_j,\sigma^z_j$ in the ordered product $\bigotimes_{j=1}^{N}$, set
-
 $$
-c^{\mathrm{fop}}_j=\Big(\prod_{k<j}\sigma^z_k\Big)\sigma^+_j ,
+\boxed{\;c^{\mathrm{fop}}_j=\Big(\prod_{k<j}\sigma^z_k\Big)\sigma^+_j ,
 \qquad
-\sigma^\pm_j=\tfrac12\big(\sigma^x_j\pm i\sigma^y_j\big),
+\sigma^\pm_j=\tfrac12\big(\sigma^x_j\pm i\sigma^y_j\big)\;},
 $$
 
 with the spin-down state ($\sigma^z=-1$) occupied. All signs below are in this convention and were verified by exact matrix computation on chains up to $N=4$.
@@ -36,13 +34,13 @@ $$
 as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* defines them. Then, by exact multiplication in the basis,
 
 $$
-\vec\Upsilon_x^2=0 ,
+\boxed{\;\vec\Upsilon_x^2=0 ,
 \qquad
 \vec\Upsilon_y^{2}=0 ,
 \qquad
 \{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t ,
 \qquad
-[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z ,
+[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z\;},
 $$
 
 so the pair $\vec\Upsilon_x,\vec\Upsilon_y$ satisfies the canonical anticommutation relations and the commutator fails the bosonic relation by an element of $\mathbb{M}_+$ rather than by a c-number. The tracelessness of a commutator ($\mathrm{Tr}[\tilde{Q},\tilde Q_1]=0$, while $\mathrm{Tr}\,e_t=2$) shows that no bosonic mode with a central commutator exists here, so the algebra's one mode is fermionic — the algebra's finite content is the fermionic Fock space.
@@ -98,9 +96,9 @@ The string $\prod_{k<j}\sigma^z_k$ is Hermitian and unitary, and it commutes wit
 **The anticommutator.** For $i,j$ in any order,
 
 $$
-\{c^{\mathrm{fop}}_i,c^{\mathrm{fop}}_j\}=0 ,
+\boxed{\;\{c^{\mathrm{fop}}_i,c^{\mathrm{fop}}_j\}=0 ,
 \qquad
-\{c^{\mathrm{fop}}_i,c^{\mathrm{fop}\dagger}_j\}=\delta_{ij}\,I .
+\{c^{\mathrm{fop}}_i,c^{\mathrm{fop}\dagger}_j\}=\delta_{ij}\,I\;}.
 $$
 
 The verification on $N=4$ returned a maximum error of exactly $0$ over all $16$ pairs and all $256$ matrix entries. The cancellation of the string requires that the two sites be ordered; for $i<j$ the strings differ by $\sigma^z_i$, whose square is the identity, and it is precisely the anticommutation of the two modes that makes the square cancel.
@@ -172,8 +170,8 @@ The Jordan–Wigner map has a sharp algebraic description that the biquaternion 
 **Free fermions.** The hopping identity converts the XY Hamiltonian into a quadratic fermionic form:
 
 $$
-H_{XY}=-J\sum_j\Big(\sigma^x_j\sigma^x_{j+1}+\sigma^y_j\sigma^y_{j+1}\Big)
-=-2J\sum_j\Big(c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+c^{\mathrm{fop}\dagger}_{j+1}c^{\mathrm{fop}}_j\Big),
+\boxed{\;H_{XY}=-J\sum_j\Big(\sigma^x_j\sigma^x_{j+1}+\sigma^y_j\sigma^y_{j+1}\Big)
+=-2J\sum_j\Big(c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+c^{\mathrm{fop}\dagger}_{j+1}c^{\mathrm{fop}}_j\Big)\;},
 $$
 
 which is a free-fermion Hamiltonian, diagonalised by a Bogoliubov transformation in momentum space. The transverse-field Ising chain is brought to the same free-fermion form up to a pairing term $c^{\mathrm{fop}}_jc^{\mathrm{fop}}_{j+1}+c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}\dagger}_{j+1}$, which a Majorana decomposition absorbs. The transcription is standard and is recorded as such; the biquaternion framework adds nothing to the solution.

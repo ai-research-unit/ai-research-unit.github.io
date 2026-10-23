@@ -130,11 +130,11 @@ which is Hermitian, positive, and trace one — an element of the Bloch ball, he
 With these objects separated, the equation reads
 
 $$
-i\hbar\,\partial/\partial t'\psi(t') = \tilde{H}\,\psi(t'),
+\boxed{\;i\hbar\,\partial/\partial t'\psi(t') = \tilde{H}\,\psi(t'),
 \qquad
 \tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+,
 \qquad
-\psi(t') \in \mathbb{B}\tilde\Pi,
+\psi(t') \in \mathbb{B}\tilde\Pi\;},
 $$
 
 where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde{H}\psi \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.
@@ -142,10 +142,10 @@ where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{
 **Solution.** Since $-i\tilde{H} = -ih_te_t + \vec h$ and the scalar and vector parts commute,
 
 $$
-\tilde{U}(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
+\boxed{\;\tilde{U}(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
 = \exp(-ih_tt'/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
 \qquad
-\theta = \frac{|\vec h|t'}{\hbar},
+\theta = \frac{|\vec h|t'}{\hbar}\;},
 $$
 
 and $\psi(t') = \tilde{U}(t')\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t') = \tilde{U}\psi(0)$,
@@ -163,10 +163,10 @@ Differentiating the solution gives $i\hbar\,\partial/\partial t'\psi = i\hbar(-i
 **Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \psi\psi^\dagger$ and using $\partial/\partial t'\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t'\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
 
 $$
-\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
+\boxed{\;\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
 = -\frac{i}{\hbar}[\tilde{H},\tilde{Ϛ}],
 \qquad\text{i.e.}\qquad
-i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}],
+i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]\;},
 $$
 
 which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,
@@ -273,7 +273,7 @@ A structural caution belongs here. The wave function $\psi$ itself is an element
 The Schrödinger equation in biquaternionic form is
 
 $$
-i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi,
+\boxed{\;i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi\;},
 $$
 
 with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.

@@ -37,7 +37,9 @@ with the Wirtinger derivatives of the two idempotent coordinates.
 
 **Theorem (the two-factor factorization).** The operator $\mathcal{D}$ acts coefficientwise, $\mathcal{D}=\Pi_+\partial/\partial\bar Q_{+}+\Pi_-\partial/\partial\bar Q_{-}$ on a function $g_{1}\Pi_++g_{2}\Pi_-$, and the scalar reading of its square is the Laplacian,
 $$
-8\,\mathrm{scal}\bigl(\mathcal{D}\bar{\mathcal{D}}\bigr)=\Delta,\qquad \Delta=8\bigl(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-}\bigr),
+\boxed{\;
+8\,\mathrm{scal}\bigl(\mathcal{D}\bar{\mathcal{D}}\bigr)=\Delta,\qquad \Delta=8\bigl(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-}\bigr)
+\;},
 $$
 where the scalar reading replaces the two idempotents by $1$ and adds the two components. In each idempotent coordinate the operator is the ordinary complex Cauchy–Riemann operator, so $\mathcal{D}$ is the square root of the Laplacian in each factor.
 
@@ -53,7 +55,9 @@ where the scalar reading replaces the two idempotents by $1$ and adds the two co
 
 **Theorem (the regularity class).** A $C^{1}$ function $f=g_{1}\Pi_++g_{2}\Pi_-$ is Fueter-regular if and only if
 $$
-\partial/\partial\bar Q_{+}\,g_{1}=0,\qquad\partial/\partial\bar Q_{-}\,g_{2}=0,
+\boxed{\;
+\partial/\partial\bar Q_{+}\,g_{1}=0,\qquad\partial/\partial\bar Q_{-}\,g_{2}=0
+\;},
 $$
 the pair of complex Cauchy–Riemann systems; the reduced-analytic class is $f=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ with $G_{1},G_{2}$ holomorphic in one complex variable. This is exactly the regular class of *Reduced Biquaternion Regular Functions*, and the two notions agree.
 
@@ -79,7 +83,9 @@ the pair of complex Cauchy–Riemann systems; the reduced-analytic class is $f=G
 
 **Theorem (the construction in the reduced case).** Let $G$ be a holomorphic function of one complex variable. Then the induced function
 $$
+\boxed{\;
 F(\breve Q)=G(Q_{+})\,\Pi_++G(Q_{-})\,\Pi_-
+\;}
 $$
 is Fueter-regular, and conversely every reduced-analytic function is induced from a pair of holomorphic functions. The construction is therefore the **identity** in each idempotent coordinate: the passage from the one-variable holomorphic function to the regular function of the algebra requires no power of the Laplacian, because the algebra is a product of two complex planes and the two-factor calculus is already holomorphic.
 

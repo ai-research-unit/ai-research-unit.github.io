@@ -6,10 +6,6 @@ The group of units $\mathbb{B}^\times$ is a real Lie group, and its exponential 
 
 The exponential itself — its series, its closed form, the logarithm and the power functions — is computed in *Biquaternion Elementary Functions*, and only its group-theoretic consequences are used here; the Lie algebra is in Algebra, and the topology of the group is in *The Biquaternion Unit Group as a Topological Group*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). Throughout, a biquaternion is written $\tilde{Q}=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k \vec e_k$.
-
----
-
 ## The Unit Quaternions and Their Complexification
 
 The **unit quaternions** are the elements of $\mathbb{H}_{\mathbb{B}}$ of norm $1$:

@@ -10,8 +10,6 @@ $$
 
 The **plain form** $\langle\cdot,\cdot\rangle$ and the **quaternion form** $\langle\cdot,\cdot\rangle_{\natural}$ are the scalar parts of the plain product and of the quaternionic product, and on the coordinates they are $\langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ and $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=q_{1t}q_{2t}+(\vec q_1,\vec q_2)$. The two forms are symmetric and $\mathbb{R}$-bilinear, both are nondegenerate, and they differ in **signature**: $\langle\cdot,\cdot\rangle$ has signature $(1,3)$, the form of the quaternion coordinates, and $\langle\cdot,\cdot\rangle_{\natural}$ is positive definite with the identity Gram matrix.
 
-**Conventions.** Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ is the dot product of the vector parts, $\mathrm{Sc}$ is the scalar part, $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation, and $\langle\tilde q\rangle_{\natural}=\lvert\tilde q\rvert^2=\tilde q^{\natural}\tilde q$ is the quaternion norm of the element. The unit basis is $e_t,\vec e_x,\vec e_y,\vec e_z$.
-
 ## The Two Forms
 
 **Definition.** The **plain form** and the **quaternion form** are the scalar parts
@@ -29,7 +27,7 @@ $$
 Both are symmetric and $\mathbb{R}$-bilinear. They differ by twice the dot product of the vector parts,
 
 $$
-\langle\tilde q_1,\tilde q_2\rangle_{\natural}-\langle\tilde q_1,\tilde q_2\rangle=2(\vec q_1,\vec q_2) , \qquad \langle\tilde q_1,\tilde q_2\rangle_{\natural}+\langle\tilde q_1,\tilde q_2\rangle=2q_{1t}q_{2t} ,
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle_{\natural}-\langle\tilde q_1,\tilde q_2\rangle=2(\vec q_1,\vec q_2) , \qquad \langle\tilde q_1,\tilde q_2\rangle_{\natural}+\langle\tilde q_1,\tilde q_2\rangle=2q_{1t}q_{2t}\;},
 $$
 
 so the sum of the two forms separates the scalar parts of the two elements and their difference the vector parts. The two are the two **scalar products of the two products**: $\langle\cdot,\cdot\rangle$ is the scalar part of the plain product, read in *Comparison Between the Two General Products*, and $\langle\cdot,\cdot\rangle_{\natural}$ is the scalar part of the quaternionic product, read in *Relations Between the Two General Products*; the two forms are therefore the two scalar parts of the two products, and no third scalar part is available over $\mathbb{R}$.
@@ -39,7 +37,7 @@ so the sum of the two forms separates the scalar parts of the two elements and t
 **Proposition (the Gram matrices).** In the unit basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
 
 $$
-\operatorname{Gram}(B)=\operatorname{diag}(1,-1,-1,-1) , \qquad \operatorname{Gram}(N)=I_4 .
+\boxed{\;\operatorname{Gram}(B)=\operatorname{diag}(1,-1,-1,-1) , \qquad \operatorname{Gram}(N)=I_4\;}.
 $$
 
 The plain form has signature $(1,3)$, one positive and three negative squares; the quaternion form has signature $(4,0)$, being positive definite, and its Gram matrix is the identity.
@@ -61,7 +59,7 @@ The two quadratic forms are the algebraic norm of the plain form and the quatern
 **Proposition (the polarisation).** The two forms are recovered from their quadratic forms by the polarisation identity
 
 $$
-f(\tilde q_1,\tilde q_2)=\tfrac12\bigl(Q_f(\tilde q_1+\tilde q_2)-Q_f(\tilde q_1)-Q_f(\tilde q_2)\bigr) ,
+\boxed{\;f(\tilde q_1,\tilde q_2)=\tfrac12\bigl(Q_f(\tilde q_1+\tilde q_2)-Q_f(\tilde q_1)-Q_f(\tilde q_2)\bigr)\;},
 $$
 
 and the values of the quadratic forms on the units are $Q_B(e_t)=1$, $Q_B(\vec e_k)=-1$ for $k\neq0$, and $Q_N(\vec e_k)=1$ for every $k$.

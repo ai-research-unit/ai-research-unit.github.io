@@ -5,7 +5,7 @@
 Classical Hamiltonian mechanics and quantum physics each equip their observables with a bracket. In classical mechanics the observables are real functions on phase space and the bracket is the **Poisson bracket** $\{f,g\}$. In quantum physics the observables are Hermitian operators and the bracket is the **commutator** $[f,g]$. The two brackets have the same abstract shape — each is bilinear, antisymmetric, and satisfies the Jacobi identity — and the standard statement of the correspondence between the two theories is the assignment
 
 $$
-\{f,g\} \;\longleftrightarrow\; \frac{1}{i\hbar}\,[f,g].
+\boxed{\;\{f,g\} \;\longleftrightarrow\; \frac{1}{i\hbar}\,[f,g]\;}.
 $$
 
 This article is about that assignment: where it holds, and where it fails. Its thesis has to be stated at the outset, because the notation invites the opposite interpretation. The assignment is **not an isomorphism** of the two bracket algebras. It is a leading-order correspondence that becomes exact only in a limit, and the terms that spoil it are not technical noise: they are the content of the relation between the two theories.
@@ -239,7 +239,7 @@ $$
 $$
 On the Moyal side,
 $$
-\{\{q^3,p^3\}\} = 9q^2p^2 - \tfrac{3}{2}\hbar^2.
+\boxed{\;\{\{q^3,p^3\}\} = 9q^2p^2 - \tfrac{3}{2}\hbar^2\;}.
 $$
 The difference is the pure number $-\tfrac{3}{2}\hbar^2$. In operator language it is a multiple of the identity: it is not a function on phase space that happens to be small, it is a constant with no classical counterpart at all, and it does not vanish at any point of phase space. The bracket of two observables that both vanish at the origin has acquired a term that does not.
 
@@ -269,7 +269,7 @@ The phrase "$\hbar\to0$" needs care, because $\hbar$ is a dimensionful constant 
 
 **The limit of the normalized bracket.** In the position representation $p_j=-i\hbar\partial/\partial q_j$ depends on $\hbar$, so the operators $f$ do too. The commutator is of order $\hbar$, and the normalized quantity $(1/i\hbar)[f,g]$ has a finite limit in the following sense: for polynomial observables and Weyl quantization,
 $$
-\lim_{\hbar\to0}\operatorname{symb}\!\left(\frac{1}{i\hbar}[f,g]\right) = \{f,g\},
+\boxed{\;\lim_{\hbar\to0}\operatorname{symb}\!\left(\frac{1}{i\hbar}[f,g]\right) = \{f,g\}\;},
 $$
 where $\operatorname{symb}$ denotes the Weyl symbol, and the approach is controlled by the Moyal bracket: the error is $O(\hbar^2)$. So the Poisson bracket is the leading term of the deformation, and the correspondence becomes exact as a statement about leading terms.
 
@@ -292,7 +292,7 @@ $$
 $$
 of the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. For two such elements $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$, their **commutator** is
 $$
-[\tilde H_1,\tilde H_2] = -2\,(\vec h_1\times\vec h_2),
+\boxed{\;[\tilde H_1,\tilde H_2] = -2\,(\vec h_1\times\vec h_2)\;},
 $$
 a pure real quaternion lying in $\mathbb{M}_-\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $h_{1t}e_t$ and $h_{2t}e_t$ are central and drop out. This bracket is a statement of the algebra alone: **it contains no $\hbar$.** The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.
 

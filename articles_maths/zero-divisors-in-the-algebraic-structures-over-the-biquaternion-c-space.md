@@ -14,8 +14,6 @@ Let $\star$ be a product on the biquaternion algebra $\mathbb{B}$. A nonzero $\t
 
 and every table of the article follows the new order: the four general structures first, then their four symmetric parts, then their four antisymmetric parts; and inside each group the plain algebra, then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
-**Scope and owners.** The general vocabulary, the zero divisor, the annihilator, the idempotent and the nilpotent stated once for a general product, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The plain-product criterion and the classification of the cone's elements are *Zero Divisors of the Biquaternion Algebra*. The four general products and their eight parts are *The 12 Products of the Biquaternion Complex Space* and *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, whose three-letter code is used throughout. The eight criteria of the derived structures stay owned by their articles, cited one by one in §*The Twelve Structures and the Cone*. The property table and the four unit entries are *Comparison Between the Four General Products*; the four idempotent sets are *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the four root problems are *Square Roots of Minus One, Zero and Plus One in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the annihilators of one element are *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the square-zero sets are *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The cone's own geometry, topology and ideals, which name no product, are gathered in §*The Cone in the Wider Mathematics*.
-
 ## The Zero-Divisor Cone
 
 **Definition.** The **zero-divisor cone** is the vanishing set of the norm,
@@ -126,9 +124,7 @@ The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mat
 
 **The zero-divisor set is the enlarged set**
 
-$$
-\bigl(\{Q_{1t}=0\}\cup\mathcal{C}\bigr)\setminus\{0\} .
-$$
+$$ \boxed{\; \bigl(\{Q_{1t}=0\}\cup\mathcal{C}\bigr)\setminus\{0\} \;}. $$
 
 Read the Jordan product from the quaternion table, $\tilde Q_1\circ\tilde Q_2=Q_{1t}Q_{2t}e_t+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-(\vec Q_1,\vec Q_2)e_t$. If $Q_{1t}\neq0$ the vector part forces $\vec Q_2=-(Q_{2t}/Q_{1t})\vec Q_1$, and the scalar part becomes $Q_{2t}\,\mathrm{Norm}(\tilde Q_1)/Q_{1t}$; a nonzero annihilator therefore exists exactly when $\mathrm{Norm}(\tilde Q_1)=0$, and it is then $\tilde Q_1^{\natural}$. If $Q_{1t}=0$ and $\tilde Q_1\neq0$, any nonzero $\vec Q_2$ orthogonal to $\vec Q_1$ annihilates.
 
@@ -245,9 +241,7 @@ The four general products have one and the same set, the punctured cone. The six
 
 **Theorem (the four zero-divisor sets coincide, and they are the cone).** For the four general products the zero-divisor sets coincide. A nonzero element $\tilde Q_1$ is a left, a right or a two-sided zero divisor of one of the four general products exactly when $\mathrm{Norm}(\tilde Q_1)=0$, that is exactly when $\tilde Q_1$ lies on the cone $\mathcal{C}$, and then it is a zero divisor of all four, on both sides. In symbols,
 
-$$
-\{\tilde Q_1\neq0:\tilde Q_1\text{ admits an annihilating factor in }\star\}=\mathcal{C}\setminus\{0\} \qquad\text{for each of the four general products }\star .
-$$
+$$ \boxed{\; \{\tilde Q_1\neq0:\tilde Q_1\text{ admits an annihilating factor in }\star\}=\mathcal{C}\setminus\{0\} \qquad\text{for each of the four general products }\star \;}. $$
 
 *Proof.* Read each product in the model $\mathsf{M}_2$. Each general product is the plain product with a conjugation in one or both slots, a bijection of $\mathbb{B}$; a bijection in a slot identifies the kernel of the left multiplication by $\tilde Q_1$ with the kernel of the plain left multiplication by $\tilde Q_1$ or by $\tilde Q_1^{\natural}$. Now $\mathsf{M}_2(\tilde Q_1^{\natural})$ is $\mathsf{M}_2(\tilde Q_1)$ up to conjugation by a fixed invertible matrix, and $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$, so the plain left multiplication is singular exactly when $\mathrm{Norm}(\tilde Q_1)=0$. In each case the deciding condition is the vanishing of the norm, read from the singularity of $\mathsf{M}_2(\tilde Q_1)$ or of its conjugate $\mathsf{M}_2(\tilde Q_1^{\natural})$. For the cone itself and for a nonzero $\tilde Q_1$ with $\mathrm{Norm}(\tilde Q_1)=0$, the witness is the natural conjugate, $\tilde Q_1\tilde Q_1^{\natural}=\tilde Q_1^{\natural}\tilde Q_1=\mathrm{Norm}(\tilde Q_1)e_t=0$, on both sides.
 
@@ -266,9 +260,7 @@ The four rows are identical, and that is the theorem. **The word is *coincide*, 
 
 Written on the coordinates, the cone common to the four general products is one complex equation in the four complex coordinates,
 
-$$
-Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}=0 .
-$$
+$$ \boxed{\; Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}=0 \;}. $$
 
 **Proposition (the cone and its singular point).** The set $\mathcal{C}$ is a complex cone with apex at the origin, and the origin is its only singular point. Away from the apex it is a complex manifold of complex dimension three, hence a real manifold of real dimension six.
 

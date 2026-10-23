@@ -33,8 +33,10 @@ $$
 **Theorem (the identity with the cross product).** For all $\tilde Q_1,\tilde Q_3$,
 
 $$
+\boxed{\;
 \operatorname{ad}^{\wedge}_{\tilde Q_1}(\tilde Q_3)=\vec Q_1\times\vec Q_3,\qquad
-\operatorname{ad}_{\tilde Q_1}(\tilde Q_3)=2\,(\vec Q_1\times\vec Q_3),
+\operatorname{ad}_{\tilde Q_1}(\tilde Q_3)=2\,(\vec Q_1\times\vec Q_3)
+\;},
 $$
 
 so the halved adjoint coincides with the operator $\vec Q_1\times$ on the vector subspace and vanishes on the centre, and the adjoint is twice that operator.
@@ -96,8 +98,10 @@ for all $\tilde Q_1,\tilde Q_2$; the derivations form a Lie algebra $\operatorna
 **Theorem.** Every adjoint is a derivation, because the bracket is the half-commutator of an associative product and the associativity gives the Leibniz rule:
 
 $$
+\boxed{\;
 \operatorname{ad}_{\tilde Q_1}(\tilde Q_2\wedge\tilde Q_4)
-=\operatorname{ad}_{\tilde Q_1}\tilde Q_2\wedge\tilde Q_4+\tilde Q_2\wedge\operatorname{ad}_{\tilde Q_1}\tilde Q_4.
+=\operatorname{ad}_{\tilde Q_1}\tilde Q_2\wedge\tilde Q_4+\tilde Q_2\wedge\operatorname{ad}_{\tilde Q_1}\tilde Q_4
+\;}.
 $$
 
 The inner derivations are the adjoints of the vector subspace; the adjoints of the centre vanish, so
@@ -116,9 +120,7 @@ of complex dimension three and real dimension six.
 
 **Theorem.** The outer derivations form a complex line, spanned by the derivation
 
-$$
-D_0:\quad D_0(e_t)=e_t,\qquad D_0(ie_t)=ie_t,\qquad D_0(\tilde Q_3)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}),
-$$
+$$ \boxed{\; D_0:\quad D_0(e_t)=e_t,\qquad D_0(ie_t)=ie_t,\qquad D_0(\tilde Q_3)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}) \;}, $$
 
 which scales the centre and annihilates the derived algebra; it is the derivation induced by the dual number $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ acting on the centre in the description below. Hence
 

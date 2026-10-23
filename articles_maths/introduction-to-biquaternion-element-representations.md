@@ -49,7 +49,7 @@ Because $\mathbb{B}$ is semisimple, every representation is completely reducible
 **Theorem.** Up to isomorphism the algebra $\mathbb{B}$ has exactly one simple left module $S$, and
 
 $$
-S\cong\mathbb{C}^2,\qquad \operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C},\qquad {}_{\mathbb{B}}\mathbb{B}\cong S\oplus S .
+\boxed{\; S\cong\mathbb{C}^2,\qquad \operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C},\qquad {}_{\mathbb{B}}\mathbb{B}\cong S\oplus S \;}.
 $$
 
 The simple module is the defining module $S=\mathbb{B}\tilde\Pi_1$ of *Modules over the Biquaternion Algebra*, cut by the idempotent $\tilde\Pi_1=\tfrac12(e_t+i\vec e_z)$.
@@ -59,7 +59,7 @@ The simple module is the defining module $S=\mathbb{B}\tilde\Pi_1$ of *Modules o
 **Corollary (classification).** Every left $\mathbb{B}$-module is a direct sum of copies of $S$,
 
 $$
-M\cong S^{\oplus k},\qquad \dim_{\mathbb{C}}M=2k \quad (k\geq 0),
+\boxed{\; M\cong S^{\oplus k},\qquad \dim_{\mathbb{C}}M=2k \quad (k\geq 0) \;},
 $$
 
 so a representation is determined up to equivalence by its dimension, and the dimension is even. A representation of dimension $2k$ is irreducible exactly when $k=1$; for $k=0$ it is the zero representation.
@@ -143,7 +143,7 @@ Restriction of scalars relates the two categories. A complex representation $V$ 
 **Theorem.** Every real representation of $\mathbb{B}$ is a direct sum of copies of the realification $S_{\mathbb{R}}$ of the defining module, of real dimension four:
 
 $$
-M\cong S_{\mathbb{R}}^{\oplus k},\qquad \dim_{\mathbb{R}}M=4k \quad (k\geq0).
+\boxed{\; M\cong S_{\mathbb{R}}^{\oplus k},\qquad \dim_{\mathbb{R}}M=4k \quad (k\geq0) \;}.
 $$
 
 *Proof.* The real algebra $\mathbb{B}_{\mathbb{R}}$ is the realification of $M_2(\mathbb{C})$, which is a simple Artinian real algebra with a single simple module, the realification of $\mathbb{C}^2$; complete reducibility and the multiplicity count are as over $\mathbb{C}$. The statement is the real reading of the classification, and it matches the complex classification through $\dim_{\mathbb{R}}M=2\dim_{\mathbb{C}}M$.

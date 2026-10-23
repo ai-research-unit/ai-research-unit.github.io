@@ -6,20 +6,18 @@ The two algebraic norms of *The 2 Algebraic Norms over the Quaternioid $\mathbb{
 
 The norms are *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*, the article preceding this one; the subspaces are *Introduction to the Remarkable Subspaces of the Quaternions*, in the Linear Spaces group above; the forms on the same subspaces are *Remarkable Subspaces and the Two Forms*, the article preceding this one; and the comparison is *Remarkable Subspaces and the Four Algebraic Norms*.
 
-**Conventions.** Throughout, $\tilde q=q_te_t+\vec q$ names an element, the scalar line has basis $e_t$ and the vector subspace has basis $\vec e_x,\vec e_y,\vec e_z$, and the two norms are $\langle\tilde q\rangle$ and $\langle\tilde q\rangle_{\natural}$. The associated forms of the two norms are $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ and $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$, of signatures $(1,3)$ and $(4,0)$.
-
 ## The Two Norms on the Two Subspaces
 
 **Proposition (the restrictions of the two norms).** On a scalar element $\tilde q=q_te_t$,
 
 $$
-\langle\tilde q\rangle=q_t^2=\langle\tilde q\rangle_{\natural} ,
+\boxed{\;\langle\tilde q\rangle=q_t^2=\langle\tilde q\rangle_{\natural}\;},
 $$
 
 the two norms coinciding and being the square of the scalar, a nonnegative real number. On a vector element $\tilde q=\vec q$,
 
 $$
-\langle\tilde q\rangle=-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=+\lvert\vec q\rvert^2 ,
+\boxed{\;\langle\tilde q\rangle=-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=+\lvert\vec q\rvert^2\;},
 $$
 
 the plain norm being the negative of $(\vec q,\vec q)$ and the quaternion norm the positive one; and the two agree on the vector subspace exactly at the origin.
@@ -45,7 +43,7 @@ The plain norm is **indefinite**, of the signature $(1,3)$ of its form: one posi
 **Proposition (the splitting).** The two subspaces are orthogonal for both forms, so the space splits as the orthogonal sum
 
 $$
-\mathbb{H}=\mathbb{R}_{\mathbb{H}}\perp\operatorname{Vect}(\mathbb{H})
+\boxed{\;\mathbb{H}=\mathbb{R}_{\mathbb{H}}\perp\operatorname{Vect}(\mathbb{H})\;}
 $$
 
 for the polarised forms of both norms. For the plain norm the two summands carry opposite signs, the form being positive on the scalar line and negative on the vector subspace; for the quaternion norm the two summands carry the same sign, the form being positive on both, and **the whole space is definite**, every nonzero element having a positive value of the form.

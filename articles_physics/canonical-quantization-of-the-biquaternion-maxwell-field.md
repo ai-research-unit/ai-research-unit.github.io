@@ -16,14 +16,12 @@ The article has the same standard/open division as its parent, and it is worth s
 
 The article is organized as follows. The next section fixes the natural variable and explains why it is natural and why that is a problem. The following section develops the gauge freedom and the two equivalent formulations of the classical theory. The next section carries out the constraint analysis. The section after that writes the constraints in the biquaternion notation and isolates what the algebra does and does not determine. The next section performs the Gupta–Bleuler quantization and exhibits the two transverse physical polarizations with positive norm. A section compares the result with the scalar field, a section compares it with the Dirac case, and the article closes with an explicit accounting of what is standard and what is open.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A}=i\phi/c\,e_t+\vec A$ and $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$. For the quantization of a free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $\tilde{F}=i\vec E-\vec H$; dimensionful factors are restored only where they carry meaning. The spacetime metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the signature of the biquaternion norm on $\mathbb{M}_-$; the Clifford metric of the parent Dirac article is $g=-\eta$.
-
 ## The Natural Variable and Why It Is Not Canonical
 
 The classical theory of the companion article is one equation for one object:
 
 $$
-\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J},\qquad \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad \tilde J=ic\rho\,e_t+\vec J.
+\boxed{\;\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J},\qquad \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad \tilde J=ic\rho\,e_t+\vec J\;}.
 $$
 
 The field strength $\tilde{F}$ is a biquaternion with vanishing scalar part. It is **gauge invariant**, and it is the object that the equation is written for. This is what it means to say that the field strength is the natural variable of the biquaternionic formulation. Two properties make it natural, and both are worth recording before the difficulty is described.
@@ -138,7 +136,7 @@ $$
 so that on the constraint surface, where $\pi^0\approx0$,
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)\approx0.
+\boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)\approx0\;}.
 $$
 
 The two constraints are therefore the scalar parts of $\tilde{\pi}$ and of $\tilde{\nabla}^{\natural}\tilde{\pi}$. This is the same shape as the **integrability condition** of the companion article, $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which expresses charge conservation; Gauss's law and charge conservation are written with the same operator. That is a genuine feature of the notation: the constraint is not an extra object appended to the algebra but a scalar-part projection that already appears in it.
@@ -164,8 +162,8 @@ $$
 with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\eta_{\mu\nu}\epsilon^{(r)\mu}\epsilon^{(s)\nu}=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$. The mode operators carry the corresponding commutators,
 
 $$
-\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
+\boxed{\;\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
+=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)\;},
 $$
 
 with all other commutators vanishing. The signs are not optional: the timelike mode has $\zeta_0=-1$, so the one-particle state $a^{\mathrm{fop}\dagger}_0|0\rangle$ has **negative norm**, $\langle0|a^{\mathrm{fop}}_0a^{\mathrm{fop}\dagger}_0|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.
@@ -179,7 +177,7 @@ $$
 which for a mode with momentum along $\vec e_z$ reduces to
 
 $$
-\big(a^{\mathrm{fop}}_0(\vec k)-a^{\mathrm{fop}}_3(\vec k)\big)|\psi\rangle=0 .
+\boxed{\;\big(a^{\mathrm{fop}}_0(\vec k)-a^{\mathrm{fop}}_3(\vec k)\big)|\psi\rangle=0\;}.
 $$
 
 This condition does not set the timelike and longitudinal excitations to zero individually; it leaves the combination $a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3$. That combination is annihilated by the condition,
@@ -199,8 +197,8 @@ $$
 so, lying in the physical subspace and being null, it is orthogonal to every state in that subspace and decouples from all physical amplitudes. On the quotient by the zero-norm states, the physical subspace has **positive-definite norm** and consists exactly of the two transverse polarizations. Their polarization sum is the transverse projector,
 
 $$
-\sum_{\lambda=1}^{2}\epsilon_i^{(\lambda)}(\vec k)\,\epsilon_j^{(\lambda)}(\vec k)
-=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j,
+\boxed{\;\sum_{\lambda=1}^{2}\epsilon_i^{(\lambda)}(\vec k)\,\epsilon_j^{(\lambda)}(\vec k)
+=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j\;},
 $$
 
 which makes the physical field transverse: the polarization sum annihilates every component along $\vec u_k$.

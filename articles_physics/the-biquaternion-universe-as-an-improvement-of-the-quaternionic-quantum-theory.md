@@ -162,7 +162,7 @@ The biquaternion theory of this corpus does not contest the conclusion reached a
 
 The biquaternion algebra is the complexification of the quaternions:
 $$
-\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C}).
+\boxed{\;\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})\;}.
 $$
 Its elements are written
 $$
@@ -258,13 +258,13 @@ This is the one limit that has to be divided into two parts, and the division is
 
 **What is repaired: the scalars.** The scalar field of the biquaternion theory is $\mathbb{C}$, and
 $$
-\mathbb{C}\otimes_{\mathbb{C}}\mathbb{C}\cong\mathbb{C}.
+\boxed{\;\mathbb{C}\otimes_{\mathbb{C}}\mathbb{C}\cong\mathbb{C}\;}.
 $$
 The scalars compose. The scalar-level composition limit, which is the form in which it closed the quaternionic programme, does not arise here at all.
 
 **What remains: the observable algebra.** The algebra is not closed under the tensor product,
 $$
-\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_{4}(\mathbb{C})\neq\mathbb{B},
+\boxed{\;\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_{4}(\mathbb{C})\neq\mathbb{B}\;},
 $$
 the dimensions being $16\neq4$. A pair of two-state systems does not have $\mathbb{B}$ as its algebra, and the corpus records this as a numbered obstruction (*What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, entry O13).
 

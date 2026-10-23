@@ -13,15 +13,11 @@ real span is the whole algebra.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the Restrictions of the Form*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *The 12 Products of the Biquaternion Complex Space*.
 
-**Conventions.** $\tilde Q=\sum_\mu Q_\mu e_\mu$; $\mathbb{B}=\mathbb{C}e_t\oplus\mathbf{e}$ is the scalar–vector decomposition; $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$; a real element has real coefficients, a Hermitian element has a real scalar coefficient and purely imaginary vector coefficients, and an anti-Hermitian element the reverse. The product is $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$.
-
 ## The Product Rule on Each Subspace
 
 **Theorem (the scalar–vector form is the common rule).** On each of the remarkable subspaces the product is read from the single rule
 
-$$
-\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1,
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 \;}, $$
 
 the first summand lying in the centre and the second in the vector subspace.
 
@@ -46,9 +42,11 @@ The centre is closed, and with this product it is a conjugate-commutative, non-a
 **Theorem (the product lands in the centre).** For $\tilde Q_1,\tilde Q_2$ in the vector subspace,
 
 $$
+\boxed{\;
 \tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}\,e_t,
 \qquad
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1,\overline{\vec Q_2}),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1,\overline{\vec Q_2})
+\;},
 $$
 
 a central element. The vector subspace is not closed; the image of the product on it is the centre, of real rank two.
@@ -99,8 +97,10 @@ an element of the real quaternion subspace. The anti-quaternion subspace is not 
 **Theorem (closure).** For $\tilde Q_1=a_t+i\vec\alpha$, $\tilde Q_2=b_t+i\vec\beta$ with real scalar coefficients and real vector parts,
 
 $$
+\boxed{\;
 \tilde Q_1\star\tilde Q_2=\Bigl(a_tb_t-\sum_{\mu\in\{x,y,z\}}\alpha_\mu\beta_\mu\Bigr)e_t
-+i\bigl(a_t\vec\beta-b_t\vec\alpha\bigr),
++i\bigl(a_t\vec\beta-b_t\vec\alpha\bigr)
+\;},
 $$
 
 an element of the Hermitian subspace: a real scalar part and a purely imaginary vector part. The Hermitian subspace is closed under the product, and its image is itself, of real rank four.

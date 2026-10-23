@@ -55,7 +55,7 @@ Since $S$ carries no reality structure, the structure that exists is the conjuga
 **Remark (where $\varepsilon$ belongs, and where it does not).** The antisymmetric form
 
 $$
-\varepsilon=i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}=\mathsf{M}_2(-\vec e_y),\qquad \varepsilon^{\mathsf{T}}=-\varepsilon,\qquad \varepsilon^2=-I
+\boxed{\; \varepsilon=i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}=\mathsf{M}_2(-\vec e_y),\qquad \varepsilon^{\mathsf{T}}=-\varepsilon,\qquad \varepsilon^2=-I \;}
 $$
 
 is **not** an intertwiner $S\to\bar S$; an intertwiner would have to be $\mathbb{C}$-linear, and there is none. What $\varepsilon$ does is implement the algebra's own conjugation on the module up to the automorphism $\bar{\cdot}$: the matrix dictionary $\mathsf{M}_2(\bar{\tilde{Q}})=\varepsilon\,\overline{\mathsf{M}_2(\tilde{Q})}\,\varepsilon^{-1}$ says $\varepsilon\,\overline{c}(v)\,\varepsilon^{-1}=c(\bar v)$, that is, $\varepsilon$ intertwines the conjugate action with the action twisted by the coefficient conjugation. So $\bar{\cdot}$ reaches the module as a $\mathbb{C}$-linear form composed with entrywise conjugation, which is exactly why it supplies a conjugation of the action and not a reality structure: a reality structure would be an antilinear map commuting with the *given* action, and neither $\kappa$ nor $\varepsilon$ is that.
@@ -71,7 +71,7 @@ is **not** an intertwiner $S\to\bar S$; an intertwiner would have to be $\mathbb
 **The same basis against the negative definite form is quaternionic.** The basis elements satisfy $e_k^{2}=-e_t$ and $e_je_k+e_ke_j=0$ for $j\neq k$, which are the relations of $\mathrm{Cl}_{0,3}$, and the action $c(e_k)=-i\sigma_k$ is a representation of $\mathrm{Cl}_{0,3}$ on $S$. Against this form the module carries a quaternionic structure,
 
 $$
-J(s)=\sigma_2\,\bar s,\qquad J^2=-1,
+\boxed{\; J(s)=\sigma_2\,\bar s,\qquad J^2=-1 \;},
 $$
 
 with $\overline{c}(\vec e_x)=-c(\vec e_x)$, $\overline{c}(\vec e_y)=+c(\vec e_y)$, $\overline{c}(\vec e_z)=-c(\vec e_z)$, so that $J$ commutes with the $\mathrm{Cl}_{0,3}$-action. The same form $\varepsilon=i\sigma_2$ **is** a $\mathbb{C}$-linear intertwiner $\bar S\to S$ against the $e_k$-action, because $\bar{e}_k=e_k$ and therefore $\varepsilon\,\overline{c}(e_k)\,\varepsilon^{-1}=c(\bar{e}_k)=c(e_k)$. So $\bar S\cong S$ over $\mathrm{Cl}_{0,3}$ and $\bar S\not\cong S$ over $\mathrm{Cl}_{3,0}$, on the same space and with the same form: self-conjugacy is a property of the reading, like the type itself, and the real and quaternionic types have it while the complex type does not.
@@ -79,7 +79,7 @@ with $\overline{c}(\vec e_x)=-c(\vec e_x)$, $\overline{c}(\vec e_y)=+c(\vec e_y)
 **The real form in a matrix model.** The third form is realised on the same $\mathbb{C}^2$ by real matrices: with
 
 $$
-a=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad b=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad c=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\boxed{\; a=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad b=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad c=\begin{pmatrix}0&1\\-1&0\end{pmatrix} \;},
 $$
 
 one has $a^2=b^2=+I$, $c^2=-I$ and pairwise anticommutation, so $a,b,c$ generate a representation of $\mathrm{Cl}_{2,1}$; the module carries the real structure $J(s)=\bar s$ with $J^2=+1$.

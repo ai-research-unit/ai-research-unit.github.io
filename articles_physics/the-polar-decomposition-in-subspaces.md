@@ -99,7 +99,7 @@ $$
 with $B$ the unique Hermitian positive square root. In terms of the element itself,
 
 $$
-B = \frac{\sqrt{\tilde{Q}\tilde{Q}^{*}}}{r} , \qquad \tilde q = B^{-1}\frac{\tilde{Q}}{\rho} , \qquad \tilde{Q}\tilde{Q}^{*} = r^2B^2 .
+\boxed{\;B = \frac{\sqrt{\tilde{Q}\tilde{Q}^{*}}}{r} , \qquad \tilde q = B^{-1}\frac{\tilde{Q}}{\rho} , \qquad \tilde{Q}\tilde{Q}^{*} = r^2B^2\;}.
 $$
 
 The last identity is the one that decides the whole of what follows, because it shows that the boost factor is a scalar exactly when the product $\tilde{Q}\tilde{Q}^{*}$ is one.
@@ -140,7 +140,7 @@ Read on the remarkable subspaces, the membership follows from the same two produ
 An element of both classes has $B = e_t$ and $\tilde q = \pm e_t$, hence $\tilde{Q} = \pm\rho e_t = \pm r\exp(i\alpha)e_t$, so the intersection is the nonzero part of the centre,
 
 $$
-\mathcal{U}\cap\mathcal{H} = \mathbb{C}_{\mathbb{B}}\setminus\{0\} , \qquad \dim_{\mathbb{R}}\left(\mathcal{U}\cap\mathcal{H}\right) = 2 .
+\boxed{\;\mathcal{U}\cap\mathcal{H} = \mathbb{C}_{\mathbb{B}}\setminus\{0\} , \qquad \dim_{\mathbb{R}}\left(\mathcal{U}\cap\mathcal{H}\right) = 2\;}.
 $$
 
 The count closes against the group of units, whose real dimension is $8$: $5+5-8 = 2$. The two conditions are therefore as independent as the ambient group allows, and the two five-dimensional families meet on the complex line and nowhere else. On the unit-norm slice the classes become the two factors of the Cartan decomposition — $\mathcal{U}\cap\{N = 1\}$ is the rotor group $\mathrm{Sp}(1)$ and $\mathcal{H}\cap\{N = 1\}$ is the boosts with a discrete sign — and their intersection there is the two-element group $\{\pm e_t\}$, the kernel of the double cover. The slice is thus the one place where the two criteria can be read against each other: the rotor and the boost factor are its two halves, and the only element of the slice on which both halves are trivial is the discrete unit $\pm e_t$.
@@ -255,9 +255,7 @@ where $\vec u_{\mathrm b} = \vec q\times\vec q'/|\vec q\times\vec q'|$ is the bo
 
 The count of the six dimensions of the subspace is then complete:
 
-$$
-\underbrace{2}_{r,\ \alpha} + \underbrace{3}_{B:\ \text{axis}\ (2) + \text{rapidity}\ (1)} + \underbrace{2}_{\tilde q} - \underbrace{1}_{\tilde q\perp\vec u_{\mathrm b}} = 6 ,
-$$
+$$\boxed{\;\underbrace{2}_{r,\ \alpha} + \underbrace{3}_{B:\ \text{axis}\ (2) + \text{rapidity}\ (1)} + \underbrace{2}_{\tilde q} - \underbrace{1}_{\tilde q\perp\vec u_{\mathrm b}} = 6\;},$$
 
 or, in the plane, $2$ for the modulus, $2$ for the axis, $1$ for the rapidity and $1$ for the angle of the rotor in the plane.
 
@@ -293,7 +291,7 @@ $$
 a positive scalar, so the first criterion gives $B = e_t$, and the rotor is the unit quaternion $\tilde q = \tilde{Q}/|\tilde{Q}|$. The four-factor representation reduces to
 
 $$
-\tilde{Q} = r\,\tilde q , \qquad r = |\tilde{Q}| > 0 , \qquad \tilde q\in\mathrm{Sp}(1) ,
+\boxed{\;\tilde{Q} = r\,\tilde q , \qquad r = |\tilde{Q}| > 0 , \qquad \tilde q\in\mathrm{Sp}(1)\;},
 $$
 
 which is the classical polar form of a quaternion, with the boost factor absent: **the real quaternion subspace is the subspace on which the representation carries a rotor and no boost**. Writing $\tilde q = \cos\tfrac{\theta}{2} + \sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ a unit real vector, the rotor is a rotation of angle $\theta$ about the axis $\vec u_{\mathrm r}$, and the four real parameters of the subspace are $r$ and the three parameters of $\vec u_{\mathrm r}$ and $\theta$.

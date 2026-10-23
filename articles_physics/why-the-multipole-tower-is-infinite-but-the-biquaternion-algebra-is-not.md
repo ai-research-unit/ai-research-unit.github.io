@@ -45,7 +45,7 @@ The finiteness is not an accident of the basis. An algebra that contains the uni
 The multipole moment of order $l$ is an element of the irreducible representation $D^{(l)}$ of the rotation group, of complex dimension $2l+1$. The orders run over all $l = 0, 1, 2, \dots$ without bound, and the field's angular dependence is the direct sum
 
 $$
-L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)} ,
+\boxed{\;L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)}\;},
 $$
 
 in which each $D^{(l)}$ appears exactly once; the spherical harmonic $Y_l^m$ belongs to $D^{(l)}$. The expansion coefficients — the multipole moments — are the components of the field in this decomposition, and a generic source populates every $l$. The same tower appears in the vibrating body of the second article, one normal mode per order, with $2l+1$ amplitudes $a_{lm}$ at order $l$. In both cases the tower is infinite because the space of angular functions is infinite-dimensional.
@@ -75,8 +75,8 @@ Before the decomposition can be read correctly, it is necessary to separate thre
 The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{\natural}$ with $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the centre $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
 
 $$
-\mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
-\qquad 1 + 3 = 4 .
+\boxed{\;\mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
+\qquad 1 + 3 = 4\;}.
 $$
 
 The weight spectrum confirms it, and it also shows why only integral $l$ can occur. The action is rotor conjugation, and $-\tilde{U}$ gives the same conjugation as $\tilde{U}$, so this action factors through the rotation group $SO(3)$ and cannot see the double cover: every irreducible representation it can contain has integral angular momentum. (The half-integral representations are not excluded from the algebra, but they cannot appear from this action; they appear from the *left multiplication* discussed in the next subsection.) For a rotation about a fixed axis, the centre is fixed, the axis element is fixed, and the two combinations transverse to the axis are eigenvectors with phases $\exp(\mp i\theta)$; the weights are $0$, $0$, $+1$, $-1$, and there is no weight $\pm2$ state that a $D^{(2)}$ would require. Equivalently, the character of the conjugation action equals
@@ -109,9 +109,9 @@ $$
 and the algebra's product is the part of this tensor product that lands back in $\mathbb{B}$,
 
 $$
-D^{(1)}\times D^{(1)} \longrightarrow D^{(0)}\oplus D^{(1)} \subset \mathbb{B} ,
+\boxed{\;D^{(1)}\times D^{(1)} \longrightarrow D^{(0)}\oplus D^{(1)} \subset \mathbb{B} ,
 \qquad
-\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v .
+\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v\;}.
 $$
 
 The dot product is the $D^{(0)}$ channel and the cross product is the $D^{(1)}$ channel; the symmetric traceless $D^{(2)}$ channel is not in the image. This is the role that closes the argument: the algebra does not merely fail to contain a quadrupole, its product cannot create one from vectors.

@@ -36,8 +36,8 @@ with $\mathsf{M}_2(i) = i\,\mathsf{M}_2(e_t)$ on the central scalar $\mathbb{C}_
 This is the assignment, taken as fixed for the whole series. A general biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$ therefore maps to
 
 $$
-\mathsf{M}_2(\tilde{Q}) = Q_t\,\mathsf{M}_2(e_t) + Q_x \mathsf{M}_2(\vec e_x) + Q_y \mathsf{M}_2(\vec e_y) + Q_z \mathsf{M}_2(\vec e_z)
-= \begin{pmatrix} Q_t - i Q_z & -i Q_x - Q_y \\ -i Q_x + Q_y & Q_t + i Q_z \end{pmatrix}.
+\boxed{\; \mathsf{M}_2(\tilde{Q}) = Q_t\,\mathsf{M}_2(e_t) + Q_x \mathsf{M}_2(\vec e_x) + Q_y \mathsf{M}_2(\vec e_y) + Q_z \mathsf{M}_2(\vec e_z)
+= \begin{pmatrix} Q_t - i Q_z & -i Q_x - Q_y \\ -i Q_x + Q_y & Q_t + i Q_z \end{pmatrix} \;}.
 $$
 
 **Remark (the choice, stated).** The assignment above is the corpus's choice, held fixed so that the realization agrees with *The Realification and the Effect of the Change of Scalars*. It is convenient because the three images of $\vec e_x,\vec e_y,\vec e_z$ are $-i$ times the Pauli matrices, mentioned once as a shorthand and nothing more: every proposition is a statement about $\mathbb{B}$ and about $M_2(\mathbb{C})$. The choice is not canonical; a different isomorphism differs from this one by conjugation by an invertible matrix, and the invariants below are unchanged.
@@ -149,8 +149,8 @@ where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the m
 **The determinant is the biquaternion norm.** Expanding,
 
 $$
-\det(\tilde{Q}) = (Q_t - iQ_3)(Q_t + iQ_3) - (-iQ_1 - Q_y)(-iQ_1 + Q_y)
-= (Q_t^2 + Q_z^2) - \big[(-iQ_1)^2 - Q_y^2\big] = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \langle\tilde{Q}\rangle_{\natural}.
+\boxed{\; \det(\tilde{Q}) = (Q_t - iQ_3)(Q_t + iQ_3) - (-iQ_1 - Q_y)(-iQ_1 + Q_y)
+= (Q_t^2 + Q_z^2) - \big[(-iQ_1)^2 - Q_y^2\big] = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \langle\tilde{Q}\rangle_{\natural} \;}.
 $$
 
 This is the central fact of the representation. The biquaternion norm, defined algebraically as $\tilde{Q}\tilde{Q}^{\natural}$, is the determinant of the corresponding matrix — not merely similar to it, but equal to it. Three consequences follow at once.
@@ -188,7 +188,7 @@ The trace identity of §*Trace, Determinant and the Biquaternion Norm* is a pair
 **Theorem (the trace pairing).** For all biquaternions,
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)\bigr),
+\boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)\bigr) \;},
 $$
 
 so the matrix trace is the carrier of the scalar part, and on the diagonal
@@ -467,10 +467,10 @@ The symmetric part of a product is the half-sum of its word and of the word with
 **The four forms are four traces.** The four products are four matrix traces, and the four forms of the algebra are read from them:
 
 $$
-\tfrac12\operatorname{Tr}(XY)=\langle\tilde Q_1,\tilde Q_2\rangle,\qquad
+\boxed{\; \tfrac12\operatorname{Tr}(XY)=\langle\tilde Q_1,\tilde Q_2\rangle,\qquad
 \tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\qquad
 \tfrac12\operatorname{Tr}(XY^{\dagger})=\langle\tilde Q_1,\tilde Q_2\rangle_{*},\qquad
-\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*},
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} \;},
 $$
 
 the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear form, in the two slots the table of the words prescribes. The adjugate is quaternion conjugation and the dagger is Hermitian conjugation, so in the two slots the four words are the two conjugations switched on and off, and the four forms are one trace read four times.
@@ -521,7 +521,7 @@ $$
 so the unit-norm biquaternions map into the special linear group,
 
 $$
-\{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} = e_t\} \;\cong\; \mathrm{SL}(2,\mathbb{C}).
+\boxed{\; \{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} = e_t\} \;\cong\; \mathrm{SL}(2,\mathbb{C}) \;}.
 $$
 
 This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm elements of $\mathbb{H}_{\mathbb{B}}$, which map to the $SU(2)$ matrices

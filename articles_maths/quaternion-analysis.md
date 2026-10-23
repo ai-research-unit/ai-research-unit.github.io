@@ -189,9 +189,7 @@ Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) \vec e_x + v_2(\tilde q) \vec e
 
 **Theorem.** $f$ is quaternion differentiable at $\tilde q_1$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $\tilde q_1$ and satisfy the **quaternion Cauchy–Riemann equations**
 
-$$
-\frac{\partial u}{\partial q_t} = \frac{\partial v_1}{\partial q_x} = \frac{\partial v_2}{\partial q_y} = \frac{\partial v_3}{\partial q_z},
-$$
+$$ \boxed{\; \frac{\partial u}{\partial q_t} = \frac{\partial v_1}{\partial q_x} = \frac{\partial v_2}{\partial q_y} = \frac{\partial v_3}{\partial q_z} \;} ,$$
 
 $$
 \frac{\partial u}{\partial q_k} = -\frac{\partial v_k}{\partial q_t}, \qquad k = 1, 2, 3,
@@ -243,9 +241,7 @@ Equivalently, if $D = \partial/\partial q_t + \vec e_x \partial/\partial q_x + \
 
 The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial/\partial q_t - \vec e_x \partial/\partial q_x - \vec e_y \partial/\partial q_y - \vec e_z \partial/\partial q_z$ satisfy
 
-$$
-D \bar{D} = \bar{D} D = \partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 + \partial^2/\partial q_y^2 + \partial^2/\partial q_z^2 = \Delta,
-$$
+$$ \boxed{\; D \bar{D} = \bar{D} D = \partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 + \partial^2/\partial q_y^2 + \partial^2/\partial q_z^2 = \Delta \;} ,$$
 
 where $\Delta$ is the Laplacian on $\mathbb{R}^4$. So monogenic functions are harmonic:
 
@@ -315,9 +311,7 @@ $$
 
 **Theorem (Cauchy–Goursat, quaternion version).** If $f$ is monogenic on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then
 
-$$
-\oint_\gamma f(\tilde q) \, dq = 0.
-$$
+$$ \boxed{\; \oint_\gamma f(\tilde q) \, dq = 0 \;} .$$
 
 **Proof.** The integral of a monogenic function over a closed surface in $\mathbb{R}^4$ vanishes by the divergence theorem, because the Cauchy–Riemann operator annihilates $f$. The contour case follows by approximation.
 
@@ -385,9 +379,7 @@ The differentiated series has the same radius of convergence.
 
 **Theorem (Taylor, quaternion version).** If $f$ is monogenic on a domain containing the closed ball $\overline{B}(\tilde q_1, r)$, then $f$ has a power series expansion
 
-$$
-f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(\tilde q_1)}{n!} (\tilde q - \tilde q_1)^n
-$$
+$$ \boxed{\; f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(\tilde q_1)}{n!} (\tilde q - \tilde q_1)^n \;} $$
 
 valid for $|\tilde q - \tilde q_1| < r$.
 
@@ -435,9 +427,7 @@ $$
 
 **Theorem (Residue Theorem).** Let $f$ be monogenic on a simply connected domain except for isolated singularities $\tilde q_1, \dots, \tilde q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $\tilde q_k$ and winds once around each. Then
 
-$$
-\oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, \tilde q_k).
-$$
+$$ \boxed{\; \oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, \tilde q_k) \;} .$$
 
 The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, and it is the quaternion analogue of the factor $2\pi i$ in complex analysis.
 

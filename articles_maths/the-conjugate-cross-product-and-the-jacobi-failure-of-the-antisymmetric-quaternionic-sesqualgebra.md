@@ -12,8 +12,6 @@ the cross product of the vector part of the first argument with the **conjugate*
 
 The product the block splits and its two halves are *Introduction to the General Quaternionic Sesqualgebra* and *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*; the general construction of a sesqualgebra part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the obstruction behind the failing law is *Lie Algebras of Sesqualgebras*; the ordinary cross product of the real elements is *Introduction to the Antisymmetric Plain Algebra*; and the three failing brackets are tabulated in *The 12 Products of the Biquaternion Complex Space*.
 
-**Conventions.** As in *Introduction to the Antisymmetric Quaternionic Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_\mu^2=-e_t$; a generic element is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $\vec Q_2=\sum_{\mu\in\{x,y,z\}}Q_{2,\mu}\vec e_\mu$, $\overline{\vec Q_2}=\sum_{\mu\in\{x,y,z\}}\overline{Q_{2,\mu}}\vec e_\mu$, and $Q_{2,\mu}=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu$ real. The product is written $\diamond$ for the block.
-
 ## The Conjugate Cross Product
 
 ### The Rule and the Conjugation
@@ -23,9 +21,11 @@ The product the block splits and its two halves are *Introduction to the General
 **Proposition (coordinate rule).** In coordinates,
 
 $$
+\boxed{\;
 \tilde Q_1\diamond\tilde Q_2=\bigl(Q_{1,y}\overline{Q_{2,z}}-Q_{1,z}\overline{Q_{2,y}}\bigr)\vec e_x
 +\bigl(Q_{1,z}\overline{Q_{2,x}}-Q_{1,x}\overline{Q_{2,z}}\bigr)\vec e_y
-+\bigl(Q_{1,x}\overline{Q_{2,y}}-Q_{1,y}\overline{Q_{2,x}}\bigr)\vec e_z .
++\bigl(Q_{1,x}\overline{Q_{2,y}}-Q_{1,y}\overline{Q_{2,x}}\bigr)\vec e_z
+\;}.
 $$
 
 *Proof.* The three components of the cross product of $\vec Q_1$ and $\overline{\vec Q_2}$, read in the quaternion basis.
@@ -37,8 +37,10 @@ $$
 **Proposition (the value intertwines the two cross products).** For all biquaternions,
 
 $$
+\boxed{\;
 \overline{\tilde Q_1\diamond\tilde Q_2}=\overline{\vec Q_1}\times\vec Q_2,\qquad
-\tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2}.
+\tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2}
+\;}.
 $$
 
 *Proof.* $\overline{\vec Q_1\times\overline{\vec Q_2}}=\overline{\vec Q_1}\times\vec Q_2$, and the second identity is the first applied to the swapped pair.
@@ -51,9 +53,7 @@ The block and its conjugate share the value $\vec Q_1\times\overline{\vec Q_2}$ 
 
 **Theorem.** For every biquaternion,
 
-$$
-\tilde Q_2\diamond\tilde Q_2=\vec Q_2\times\overline{\vec Q_2},
-$$
+$$ \boxed{\; \tilde Q_2\diamond\tilde Q_2=\vec Q_2\times\overline{\vec Q_2} \;}, $$
 
 and if $\vec Q_2=\vec a+i\vec b$ with $\vec a,\vec b$ real vectors, then
 

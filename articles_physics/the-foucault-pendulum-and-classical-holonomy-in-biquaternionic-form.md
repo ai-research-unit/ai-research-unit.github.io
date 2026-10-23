@@ -10,8 +10,6 @@ This article treats the Foucault pendulum in the biquaternion framework. Three t
 
 The treatment is classical and non-quantum. The geometric phase of a quantum system, the Berry phase, and its biquaternion formulation belong to the companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*; the classical Hannay angle is a separate construction. What is used here is the elementary holonomy of a frame carried around a loop on a sphere, and the pendulum that realizes it. The particle is structureless — the bob carries no intrinsic angular momentum and no magnetic moment — so the effect is one of the spin-zero subcategory, and it is the purely geometric end of it.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. Position vectors, velocities, angular velocities and forces are real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-$; the energy is a central scalar. For two real vectors $\vec a,\vec b$,
-
 $$
 \vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
 $$
@@ -69,7 +67,7 @@ $$
 since $[\vec a,\vec b] = 2\vec a\times\vec b$, and the centrifugal term is the double commutator,
 
 $$
--m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = -\frac{m}{4}\left[\vec\Omega,\left[\vec\Omega,\vec\rho\right]\right] ,
+\boxed{\;-m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = -\frac{m}{4}\left[\vec\Omega,\left[\vec\Omega,\vec\rho\right]\right]\;},
 $$
 
 since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{M}_-$, and the adjoint action of its exponential produces the correction terms.
@@ -133,7 +131,7 @@ $$
 to machine precision, which is the statement that the ellipse of the motion returns after one fast period but rotated by the angle $-\Omega\sin\lambda\,T$. Over one sidereal day, $T_{\text{day}} = 2\pi/\Omega$, the accumulated precession is
 
 $$
-\Delta\phi = \Omega\sin\lambda\cdot\frac{2\pi}{\Omega} = 2\pi\sin\lambda ,
+\boxed{\;\Delta\phi = \Omega\sin\lambda\cdot\frac{2\pi}{\Omega} = 2\pi\sin\lambda\;},
 $$
 
 the Foucault angle.
@@ -177,7 +175,6 @@ The correction is of second order in the small parameter $\Omega\sin\lambda/\ome
 
 Both statements were verified by computation. The closed-form frequencies above give a relative correction of $1.2394\times10^{-6}$ at $\Omega\sin\lambda/\omega_0 = 0.01$, against $1.2392\times10^{-6}$ predicted by the leading coefficient; and integrating the equations with the centrifugal term retained, then measuring the direction of the bob at successive turning points of the swing, gives a swing-plane drift whose relative deviation from $\Omega\sin\lambda$ is $5.3\times10^{-4}$ at $\Omega\sin\lambda/\omega_0 = 0.2$ and $2.3\times10^{-5}$ at $0.05$, in agreement with the coefficient above, while the same measurement applied to the retained equations reproduces the exact rate to $10^{-6}$.
 
-
 ### What the Angle Does Not Depend On
 
 The derivation shows that the precession rate $-\Omega\sin\lambda$ is independent of the pendulum frequency $\omega_0$. The frequency appears only in the fast oscillation $\omega \approx \omega_0$; the envelope's rotation is fixed by the coupling. Reparametrizing the pendulum — changing its length, its mass or the local gravity — changes $\omega_0$ and leaves the precession untouched. This is the first indication that the angle is geometric: it depends on the angular velocity of the frame and on the latitude, that is, on the path of the pivot, and not on the dynamics of the bob.
@@ -199,11 +196,10 @@ and it is a closed loop on the sphere, traversed once per sidereal day.
 For a curve on a surface, the **geodesic curvature** $\kappa_g$ measures how fast the tangent turns relative to a parallel-transported (geodesically straight) frame. For a circle of latitude on the unit sphere it is $\kappa_g = \cot\theta_0$ per unit arc length, and the arc length of one circuit is $2\pi\sin\theta_0$, so the total geodesic turning is
 
 $$
-\oint\kappa_g\,ds = 2\pi\cos\theta_0 = 2\pi\sin\lambda .
+\boxed{\;\oint\kappa_g\,ds = 2\pi\cos\theta_0 = 2\pi\sin\lambda\;}.
 $$
 
 This was computed numerically by evaluating $\kappa_g = \vec u\cdot(\frac{d^2\boldsymbol\gamma}{ds^2}\times\frac{d\boldsymbol\gamma}{ds})/|\frac{d\boldsymbol\gamma}{ds}|^3$ along the curve and integrating, with the orientation of the curve and of the normal $\vec u$ fixed by the Gauss–Bonnet statement below: for $\lambda = 0.9$ rad the integral is $4.921788$, equal to $2\pi\sin(0.9)$ to six decimal places. The sign of $\kappa_g$ is itself a convention — reversing either the normal or the sense of traversal reverses it — and only the magnitude $2\pi\sin\lambda$ is invariant. The total geodesic turning is exactly the Foucault angle.
-
 
 ### Gauss–Bonnet and the Solid Angle
 
@@ -266,8 +262,8 @@ The Foucault precession is the oldest and simplest member of the family of geome
 The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\vec u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,
 
 $$
-\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dt'], \qquad
-\vec F_{\text{cf}} = -\frac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]] .
+\boxed{\;\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dt'], \qquad
+\vec F_{\text{cf}} = -\frac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]\;}.
 $$
 
 For a pendulum of frequency $\omega_0$ at latitude $\lambda$, the horizontal motion satisfies

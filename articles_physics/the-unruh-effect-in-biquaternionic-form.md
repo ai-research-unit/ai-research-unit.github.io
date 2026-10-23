@@ -18,7 +18,7 @@ Three structures carry the effect, and all three have a definite home in the fra
 
 The trap in this subject is to *assert* the thermality — to write down the exponential spectrum and the temperature as if the algebra had produced them. It has not. Thermality is a statement about the **analyticity of the two-point function**, and the section that derives it shows the step: the two-point function along the accelerated orbit is an explicit function whose analytic continuation to imaginary proper time is periodic, and the period *is* the KMS width. The temperature is then recomputed a second time, from the **surface gravity** of the boost orbit, so that it is not a single formula asserted twice.
 
-**Relation to the parent.** *The KMS Condition and the Biquaternion Framework* is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $K=-\log\rho$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{M}_+$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a **finite-dimensional** setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the **Bisognano–Wichmann theorem** — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.
+**Relation to the parent.** *The KMS Condition and the Biquaternion Framework* is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $K=-\log\tilde{Ϛ}$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{M}_+$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a **finite-dimensional** setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the **Bisognano–Wichmann theorem** — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.
 
 - **Established, and recomputed below.** In the right wedge, the boost Killing vector $\xi=x\partial/\partial t'+t'\partial/\partial Q_x$ is future-directed; a boost by rapidity $\psi$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\psi$ under the Lorentz rotor $\tilde U_{\mathrm b}(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec e_x$; the rotor lies in $\mathbb{M}_+$, preserves $\mathbb{M}_-$ and preserves the biquaternion norm. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\chi=a\xi$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
 - **Standard, and imported.** The Unruh effect itself; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium; the massless Wightman function and its pole structure; the definition of surface gravity.
@@ -26,8 +26,6 @@ The trap in this subject is to *assert* the thermality — to write down the exp
 - **Gaps, left visible.** The general modular operator of a field algebra is not constructed in the framework; the algebra of observables of a quantum field theory is infinite-dimensional, so the finite-dimensional interpretation of the modular flow as an inner automorphism is a model, not a derivation; and the framework does not derive thermality, only house it. These are collected in the open questions.
 
 The article is organized as follows. The next section fixes the wedge, the Rindler coordinates, and the boost. The section after that states the modular Hamiltonian and identifies the flow, with the parent's gap stated explicitly. The next section computes the two-point function and derives the KMS relation from its analytic strip. Two short sections recompute the temperature, one from the imaginary-time period and one from the surface gravity. A section isolates what the biquaternion framework adds and what it only transcribes, and a short section records the statistics. The article closes with the established/interpretation split, open questions, and the summary.
-
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_\mu$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$, with biquaternion norm $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=-c^2{t'}^2+x^2+y^2+z^2$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants, and $c$ is the speed of light. The two-point-function computation is done in units $c=1$, restoring $c$ only in the temperature.
 
 ## The Rindler Wedge and the Boost
 
@@ -130,7 +128,7 @@ $$
 K = -\log\Delta, \qquad \Delta=\rho \ \ (\text{finite dimension}),
 $$
 
-so that $K=-\log\rho$ is Hermitian and therefore lies in $\mathbb{M}_+$. It states that the KMS correlation functions are analytic in the strip $0<\mathrm{Im}\,t'<\beta$ and satisfy
+so that $K=-\log\tilde{Ϛ}$ is Hermitian and therefore lies in $\mathbb{M}_+$. It states that the KMS correlation functions are analytic in the strip $0<\mathrm{Im}\,t'<\beta$ and satisfy
 
 $$
 F_{\tilde Q_2\tilde{Q}_1}(t'+i\beta) = F_{\tilde{Q}_1\tilde Q_2}(-t'),
@@ -138,7 +136,7 @@ $$
 
 and it records the imaginary time of $\mathbb{M}_-$ as intrinsic.
 
-The gap is the one anticipated in the introduction. In a quantum field theory the state of the vacuum restricted to a wedge is not given by a density matrix: the local algebra is a von Neumann algebra of type III, on which no trace, and hence no $\rho$, exists. The parent's $K=-\log\rho$ therefore does **not** extend to this case, and the parent says nothing about a modular **flow** $\alpha_s$ for a field algebra. The step from "there is a modular Hamiltonian" to "the modular flow is the boost at this temperature" is not in the parent and is not supplied by the biquaternion algebra. It is supplied by a theorem.
+The gap is the one anticipated in the introduction. In a quantum field theory the state of the vacuum restricted to a wedge is not given by a density matrix: the local algebra is a von Neumann algebra of type III, on which no trace, and hence no $\rho$, exists. The parent's $K=-\log\tilde{Ϛ}$ therefore does **not** extend to this case, and the parent says nothing about a modular **flow** $\alpha_s$ for a field algebra. The step from "there is a modular Hamiltonian" to "the modular flow is the boost at this temperature" is not in the parent and is not supplied by the biquaternion algebra. It is supplied by a theorem.
 
 ### The Bisognano–Wichmann Identification
 
@@ -166,7 +164,7 @@ $$
 
 the argument $-2\pi s$ being the orientation that advances $\eta$ (the opposite sign gives the left wedge). The sign is the one fixed above: the abstract boost by rapidity $2\pi s$ is represented here by the **inverse** rotor $\tilde U_{\mathrm b}(-2\pi s)$ precisely because $\tilde U_{\mathrm b}(+\psi)$ shifts $\eta$ by $-\psi$. Three features of this are worth separating.
 
-- **The generator is in $\mathbb{M}_+$.** The modular Hamiltonian is represented by a Hermitian element of the informational sector, in agreement with the parent's algebraic fact that $K=-\log\rho$ lies in $\mathbb{M}_+$. Here the element is $G_1=i\vec e_x$, the boost generator, and the agreement is exact up to that normalization rather than analogical.
+- **The generator is in $\mathbb{M}_+$.** The modular Hamiltonian is represented by a Hermitian element of the informational sector, in agreement with the parent's algebraic fact that $K=-\log\tilde{Ϛ}$ lies in $\mathbb{M}_+$. Here the element is $G_1=i\vec e_x$, the boost generator, and the agreement is exact up to that normalization rather than analogical.
 - **The flow is an inner automorphism of the algebra** by a one-parameter family of unit-norm Hermitian rotors in $\mathbb{M}_+$. In the finite-dimensional model in which observables are elements of $\mathbb{B}$, this realizes the modular flow as conjugation. In a genuine field theory the observable algebra is infinite-dimensional and the flow is not inner; the identification is a model, and it is flagged as such.
 - **The flow acts on the field algebra, not on spacetime points.** The rotor conjugation above is the Lorentz action on the four-vector representative $\tilde{R}$; identifying the boost flow of spacetime with the modular flow of the field algebra is exactly the content of Bisognano–Wichmann, not a consequence of the notation.
 
@@ -202,8 +200,8 @@ $$
 Since $\delta\tau=\rho\,\delta\eta$ on the orbit of radius $\rho$, and $a=1/\rho$,
 
 $$
-W(\delta\tau) = -\frac{a^2}{16\pi^2}\,
-\frac{1}{\sinh^2\!\big(\tfrac{a}{2}(\delta\tau-i\epsilon)\big)} .
+\boxed{\;W(\delta\tau) = -\frac{a^2}{16\pi^2}\,
+\frac{1}{\sinh^2\!\big(\tfrac{a}{2}(\delta\tau-i\epsilon)\big)}\;}.
 $$
 
 All of the thermal content is now in this elementary function.
@@ -223,7 +221,7 @@ $$
 $$
 3. Consequently, on the boundary of the strip,
 $$
-W(\delta\tau+i\beta) = W(-\delta\tau), \qquad \beta=\frac{2\pi}{a}.
+\boxed{\;W(\delta\tau+i\beta) = W(-\delta\tau), \qquad \beta=\frac{2\pi}{a}\;}.
 $$
 
 The last display is the **KMS boundary relation** of the parent, with $A=B=\phi(0)$: the two-point function continued to imaginary time $\delta\tau+i\beta$ equals the reversed two-point function at $-\delta\tau$. The step that produces it is the pair of elementary identities in item 2; without them, "the accelerated observer sees a thermal state" is an assertion. The $i\epsilon$ in the displayed two-point function fixes which boundary values are meant, and the relation above is the standard one between the two edges of the strip in that convention; we do not re-fix the convention here.
@@ -272,7 +270,7 @@ $$
 and restoring the constants,
 
 $$
-T = \frac{\hbar a}{2\pi c\,k_B}.
+\boxed{\;T = \frac{\hbar a}{2\pi c\,k_B}\;}.
 $$
 
 This is the Unruh temperature. In the orbit parametrization used here, $a=1/\rho$, so the temperature of the orbit of radius $\rho$ is $T=(2\pi\rho)^{-1}$ in natural units; the near-horizon orbits, $\rho\to0$, are the hot ones, which is the field-theoretic reason a horizon is hot. Equivalently, the same period expressed in imaginary **Rindler time** is $2\pi i$, and $\beta=2\pi/a$ follows from $\tau=\rho\eta$; the two statements are the same period in different time variables, and we have checked the conversion.
@@ -308,14 +306,54 @@ $$
 
 in agreement with the imaginary-time route. The two computations are independent in the sense that one uses the pole structure of the two-point function and the other the normalization of the boost on its horizon; that they agree is a check on the whole construction, not a restatement. The relation between them is transparent once stated: the imaginary-time period is $2\pi$ in the boost parameter, and the boost parameter is the Rindler time whose gradient is the surface gravity. The **surface gravity is the rate of change of the boost rapidity per unit proper time**, and the imaginary-time period $\beta=2\pi/\kappa$ is the reciprocal of the temperature $T=\kappa/(2\pi)$ — equivalently, the period is $2\pi$ times the reciprocal of the surface gravity.
 
+## The Polar Word at the Horizon
+
+The boost is a unit for every finite rapidity, so its polar word has scale one and no phase:
+
+$$
+\tilde U_{\mathrm b}(\psi)=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\qquad
+r=1,\quad \alpha=0,\quad \tilde u_{\mathrm r}=e_t,
+$$
+
+with the boost factor equal to the element itself. The rapidity is twice the Hamilton angle of that factor, and the word has no other content. The horizon is not a value of this word; it is the boundary of the chart in which the word is written.
+
+**The scale collapse.** Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$:
+
+$$
+\tilde U_{\mathrm b}(\psi)=e^{\psi/2}\,\tilde\Pi_+ + e^{-\psi/2}\,\tilde\Pi_- .
+$$
+
+At finite $\psi$ both terms are nonzero. As $\psi\to\infty$ the second vanishes and the first diverges, so the rotor has no limit in the algebra. The **renormalised** rotor does:
+
+$$
+e^{-\psi/2}\,\tilde U_{\mathrm b}(\psi)\longrightarrow\tilde\Pi_+,
+\qquad \psi\to\infty,
+$$
+
+with the error $e^{-\psi}/2$ on each coefficient. The limit is a Hermitian idempotent and therefore a null element, $\langle\tilde\Pi_+\rangle_{\natural}=0$. This is the boundary value computed in *The Massless Limit as a Boundary Value of the Polar Word*, §*The Limit at Infinite Rapidity*: the scale $r=e^{-\psi/2}$ collapses, the rapidity diverges, and the direction $e_t+i\vec e_x$ survives.
+
+**The rate.** The rapidity is not a free parameter along the orbit; it is the Rindler time. On the orbit $\rho=\text{const}$ the proper time is $\tau=\rho\eta$ in units $c=1$, and a boost by $\psi$ advances $\eta$ by $\psi$, so
+
+$$
+\frac{d\psi}{d\tau}=\frac{1}{\rho}=a,
+$$
+
+the proper acceleration. This is the statement of the preceding section read on the word: the surface gravity is the rate of the rapidity, and at the horizon the rate is the redshifted one, $\kappa$. The temperature is the period of the imaginary rapidity: the continuation $\psi\mapsto\psi+2\pi i$ closes the thermal circle, and the proper-time period is $\beta=2\pi/\kappa$. In the polar language, the thermal circle is the compactification of the imaginary rapidity of the boost factor, and the horizon is where the real part of that rapidity diverges.
+
+**The reading.** The horizon is the boundary of the polar chart, not a point of the algebra. The boost is a unit at every finite rapidity; the limit that reaches the horizon is a null idempotent, and the physical frame there is lightlike. The word supplies three things and no more: the two-term splitting that makes the collapse visible, the identification of the rapidity rate with the proper acceleration, and the period $2\pi$ of the imaginary angle that fixes the temperature. It does not supply the horizon geometry, the two-point function, or the thermal interpretation; those are the preceding sections' inputs.
+
+**The boundary.** Do not read the limit as a Lorentz transformation. $\tilde\Pi_+$ is not a unit and does not act as a frame change; it is the boundary value of a family of frames none of which is lightlike. The divergence is in the chart, not in the algebra: every finite-rapidity rotor is a regular Hermitian unit. This is the distinction the massless-limit article draws between a value of the word and a boundary value of its family.
+
 ## What the Biquaternion Framework Adds, and What It Transcribes
 
 **What it adds (algebra and structure).**
 
-- *The flow generator is in $\mathbb{M}_+$.* The modular Hamiltonian of the wedge is represented by the Hermitian boost generator $G_1=i\vec e_x$, up to the normalization of the modular generator noted above. This is the exact form of the parent's statement that $K=-\log\rho\in\mathbb{M}_+$ — the same Hermitian element that rotates $\mathbb{M}_-$ by rotor conjugation is the generator of the thermal flow — and it is not an analogy.
+- *The flow generator is in $\mathbb{M}_+$.* The modular Hamiltonian of the wedge is represented by the Hermitian boost generator $G_1=i\vec e_x$, up to the normalization of the modular generator noted above. This is the exact form of the parent's statement that $K=-\log\tilde{Ϛ}\in\mathbb{M}_+$ — the same Hermitian element that rotates $\mathbb{M}_-$ by rotor conjugation is the generator of the thermal flow — and it is not an analogy.
 - *The horizon is the zero-divisor cone.* The Rindler horizon of the accelerated observer is the null cone of the material sector, the zero-divisor set of the algebra. The wedge is a connected region on which the biquaternion norm has one sign; the horizon is where it changes.
 - *The thermal circle lies along the material time.* The KMS analyticity is a continuation in the $ict'$ direction, i.e. the complexification of the Rindler time, and the flow that acts is an inner automorphism by rotors in $\mathbb{M}_+$. The material sector supplies the time in which the state is thermal; the informational sector supplies the operator that generates the flow.
 - *The boost is two-sided.* The generator acts on $\mathbb{M}_-$ through the rotor anticommutator $G_1\tilde{R}+\tilde{R}G_1$, not through the commutator. This is the curved-spacetime companion's caution, and the Unruh flow is a case where it is load-bearing: the commutator generates a rotation in the plane orthogonal to the boost (it vanishes on the boost plane itself) and does not produce the boost.
+- *The horizon is the boundary of the polar chart.* The boost rotor is a unit at every finite rapidity; the renormalised word collapses to a null idempotent as the rapidity diverges, and the surface gravity is the rate of the divergence. The algebra contains the boundary value, not the horizon geometry.
 
 **What it only transcribes.**
 
@@ -338,7 +376,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 **Gaps.**
 
-- *The modular operator in the field setting.* The parent's $K=-\log\rho$ is finite-dimensional and does not extend to the wedge algebra; the article imports Bisognano–Wichmann for the flow and does not construct $\Delta$ in the framework.
+- *The modular operator in the field setting.* The parent's $K=-\log\tilde{Ϛ}$ is finite-dimensional and does not extend to the wedge algebra; the article imports Bisognano–Wichmann for the flow and does not construct $\Delta$ in the framework.
 - *The inner-automorphism model.* Realizing the flow as conjugation by rotors in $\mathbb{M}_+$ uses the finite-dimensional algebra as a model of the observables. The physical algebra is infinite-dimensional, where the modular flow is not inner. The model is stated as a model.
 - *Derivation of thermality.* The framework houses the effect; it does not derive it. The calculation of the two-point function is standard field theory written in the framework's coordinates.
 - *Curved spacetime.* The Hawking effect is the same KMS structure with the surface gravity of a black-hole horizon, and it lies outside this article. The companion article on curved spacetime records that the framework generates no dynamics, and the same limitation applies.
@@ -372,8 +410,8 @@ $$
 whose poles at $\delta\tau=2\pi i n/a$ and the identity $\sinh^2(z+i\pi)=\sinh^2 z$ give the strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the KMS boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$ with
 
 $$
-\beta = \frac{2\pi}{a}, \qquad T=\frac{1}{\beta}=\frac{a}{2\pi}
-\quad(\hbar=k_B=1),
+\boxed{\;\beta = \frac{2\pi}{a}, \qquad T=\frac{1}{\beta}=\frac{a}{2\pi}
+\quad(\hbar=k_B=1)\;},
 $$
 
 or $T=\hbar a/(2\pi c k_B)$ with the constants restored. The temperature is recomputed independently from the surface gravity of the redshift-normalized boost $\chi=a\xi$, for which $\chi^\nu\nabla_\nu\chi^\mu=a\chi^\mu$ on the horizon, giving $T=\kappa/(2\pi)=a/(2\pi)$.
@@ -398,6 +436,8 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\xi=x\partial/\partial t'+t'\partial/\partial Q_x$ | Boost Killing vector, $\xi=\partial/\partial\eta$ |
 | $\chi=a\xi$ | Redshift-normalized boost; $\kappa=a$ its surface gravity |
 | $\kappa$ | Surface gravity of the boost horizon |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$ | Idempotents of the boost axis; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
+| $d\psi/d\tau=a$ | Rapidity rate along the orbit (units $c=1$); the redshifted rate is $\kappa$ |
 | $G_1=i\vec e_x\in\mathbb{M}_+$ | Boost generator (Hermitian) |
 | $\tilde U_{\mathrm b}(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde{R}\mapsto\tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}$ | Boost = rotor conjugation on $\mathbb{M}_-$ |
@@ -413,6 +453,9 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 ## Further Reading
 
 - W. G. Unruh, "Notes on black-hole evaporation," *Physical Review D* **14** (1976) 870–892, for the original Unruh effect.
+- [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html), for the infinite-rapidity limit and the two strata of the cone.
+- [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the scale collapse and the two regimes of the word.
+- [Black Hole Thermodynamics in Biquaternionic Form](black-hole-thermodynamics-in-biquaternionic-form.html), for the boundary datum and the area law.
 - P. C. W. Davies, "Scalar production in Schwarzschild and Rindler metrics," *Journal of Physics A* **8** (1975) 609–616, for the independent discovery of the acceleration temperature.
 - S. A. Fulling, "Nonunitary Bogoliubov transformations and extension of Wick's theorem," *Nuovo Cimento A* **26** (1973) 375–397, for the Rindler quantization and the inequivalent vacua.
 - J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," *Journal of Mathematical Physics* **16** (1975) 985–1007, and "On the duality condition for quantum fields," **17** (1976) 303–321, for the modular identification used here.

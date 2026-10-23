@@ -11,8 +11,6 @@ The distribution is the result the article establishes, and it is worth stating 
 
 The article is organised as follows. The next section fixes what the scalar part of an operation is and states the two facts that decide the distribution. A table of the eight non-vanishing forms follows. Then the twelve operations are read one by one, in the order of *The 12 Products of the Biquaternion Complex Space*, each with its form, its inertia, its level set and its group, and its metric verdict. A summary table, a section on the one topology, and a section on the indefinite forms and their groups of motions close the article.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, central scalar imaginary, and a general element $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. For the two arguments $\tilde{Q}_2$ and $\tilde{Q}_1$ of a form, the coefficients of $\tilde{Q}_2$ are written $P_\mu$ and those of $\tilde{Q}_1$ are written $Q_\mu$. The real and the imaginary part of the coefficient $Q_\mu$ are written $q_\mu$ and $q'_\mu$, and those of $P_\mu$ are written $p_\mu$ and $p'_\mu$; every form below is written in these eight real coordinates. The four forms of the region are written with one bracket, whose subscript records the conjugation entering the argument (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*):
-
 $$
 \langle\tilde{Q}_2,\tilde{Q}_1\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad
 \langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural}=\sum_\mu P_\mu Q_\mu,\qquad
@@ -21,8 +19,6 @@ $$
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$. They are the **general plain bilinear form**, the **general quaternionic bilinear form**, the **Hermitian form** and the **Krein form**; each is the scalar part of the product the corpus names with the same letters, and each is non-degenerate. The last two are the Hermitian forms of the region, the Hermitian form being positive definite and the Krein form indefinite.
-
-**Conventions.** Two words are fixed here, because both are used in two senses in the literature and both are needed below.
 
 - **Inertia is quoted over $\mathbb{R}$.** For a real symmetric or a real alternating form the inertia (the pair of the numbers of positive and of negative eigenvalues) is an invariant, by Sylvester's law. For a **complex symmetric bilinear** form it is not: over $\mathbb{C}$ the form $\operatorname{diag}(1,-1,-1,-1)$ is congruent to the identity, since the change of basis $\vec e_k\mapsto i\vec e_k$ flips the three negative signs, so the only invariant is the rank. For a **complex Hermitian** form the signature is an invariant again. So in the tables below the inertias are always the realified ones, and a complex signature is given only for the two Hermitian forms, where it is an invariant.
 - **Two objects carry the name *norm*, and they are complementary.** The **biquaternion norm** is

@@ -9,8 +9,6 @@ The split-complex subspaces are the split-quaternion analogues of the **centre**
 
 The article gives the two subalgebras, their bases, dimensions and defining conditions; their idempotents, which are exactly the standard idempotents $\tilde\pi_{1,2}$ for the first plane; the zero divisors they carry; the module structure of the algebra over each, with the twisted multiplication; and the comparison with the centre of $\mathbb{B}$. It closes with examples.
 
-**Conventions.** The algebra $\mathbb{H}_{\mathrm{s}}$ has basis $1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$, $\vec e_x \vec e_y = -\vec e_y \vec e_x$, and norm $\langle q_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$. The scalar subspace $S$ and the vector subspace $V$ are as in *Split-Quaternion Scalar and Vector Subspaces*. The split-complex numbers are $\mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R} \oplus \mathbb{R}$, an algebra over the commutative ring $\mathbb{R}$; their idempotents are $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.
-
 ## Definition and Basis
 
 **Definition.** The two **split-complex subspaces** of $\mathbb{H}_{\mathrm{s}}$ are
@@ -24,9 +22,11 @@ Each is the $\mathbb{R}$-linear span of the scalar unit and one hyperbolic basis
 **Proposition.** Each of $\mathbb{D}_2, \mathbb{D}_3$ is a two-dimensional commutative subalgebra with identity, isomorphic to $\mathbb{D}$ by $j \mapsto \vec e_y$ and $j \mapsto \vec e_z$ respectively. Their intersection and their relation to the scalar–vector splitting are
 
 $$
+\boxed{\;
 \mathbb{D}_2 \cap \mathbb{D}_3 = S = \mathbb{R}\cdot 1, \qquad
-\mathbb{D}_2 \cap V = \mathbb{R} \vec e_y, \qquad \mathbb{D}_3 \cap V = \mathbb{R} \vec e_z .
-$$
+\mathbb{D}_2 \cap V = \mathbb{R} \vec e_y, \qquad \mathbb{D}_3 \cap V = \mathbb{R} \vec e_z
+\;}
+$$.
 
 **Proof.** Since $\vec e_y^2 = +1$ and $\vec e_z^2 = +1$, each span is closed under multiplication and commutative, so each is a subalgebra, and the unique $\mathbb{R}$-algebra map $j \mapsto \vec e_k$ is an isomorphism $\mathbb{D} \to \mathbb{D}_k$ because $j^2 = 1 = \vec e_k^2$. An element of $\mathbb{D}_2 \cap \mathbb{D}_3$ has the form $q_t + q_y\vec e_y = q_t + q_z \vec e_z$, and linear independence of $1, \vec e_y, \vec e_z$ forces $q_y = q_z = 0$, so the intersection is $S$. The last two identities are read off the bases.
 
@@ -73,9 +73,11 @@ $$
 where $\bar{\cdot}$ is the conjugation of the split-complex plane, the nontrivial involution of $\mathbb{D}$. Consequently the product in $\mathbb{H}_{\mathrm{s}}$, written in the $\mathbb{D}_2$-basis $\{1, \vec e_x\}$ as $\tilde q_1 = A_1 + A_2 \vec e_x$ and $\tilde q_2 = B_1 + B_2 \vec e_x$ with $A_i, B_i \in \mathbb{D}_2$, is the **twisted multiplication**
 
 $$
+\boxed{\;
 (A_1 + A_2 \vec e_x)(B_1 + B_2 \vec e_x)
-= \big(A_1 B_1 - A_2 \bar{B_2}\big) + \big(A_1 B_2 + A_2 \bar{B_1}\big)\vec e_x .
-$$
+= \big(A_1 B_1 - A_2 \bar{B_2}\big) + \big(A_1 B_2 + A_2 \bar{B_1}\big)\vec e_x
+\;}
+$$.
 
 This is the multiplication of a quaternion-like algebra over the commutative ring $\mathbb{D}_2$, in which the anticommuting generator $\vec e_x$ acts by the conjugation of the coefficient algebra. The same computation with $\vec e_y$ in place of $\vec e_x$ gives the rank-$2$ module structure over $\mathbb{D}_3$. Because $\mathbb{D}_2$ and $\mathbb{D}_3$ are not central, the algebra is a module and a bimodule over each, but not an algebra over either, and the twist $\bar{\cdot}$ is exactly what obstructs the algebra structure.
 
@@ -86,8 +88,10 @@ This is the multiplication of a quaternion-like algebra over the commutative rin
 The split-quaternion norm restricts to each plane as the two-dimensional form
 
 $$
-\langle q_t + q_y \vec e_y\rangle_{\natural} = q_t^2 - q_y^2, \qquad \langle q_t + q_z \vec e_z\rangle_{\natural} = q_t^2 - q_z^2,
-$$
+\boxed{\;
+\langle q_t + q_y \vec e_y\rangle_{\natural} = q_t^2 - q_y^2, \qquad \langle q_t + q_z \vec e_z\rangle_{\natural} = q_t^2 - q_z^2
+\;}
+$$,
 
 of signature $(1,1)$. Each restriction is the hyperbolic or **Minkowski** form of the plane, indefinite and non-degenerate, and each is the form of the split-complex algebra itself.
 

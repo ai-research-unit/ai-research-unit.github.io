@@ -15,11 +15,9 @@ $$
 which is the four-wavevector $\tilde P = \frac{i\omega}{c}e_t + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with Lorentz rotor $\tilde U_{\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
 
 $$
-\boxed{\;
 \tilde P_2 \;=\; \tilde U_{\mathrm b}\,\tilde P\,\tilde U_{\mathrm b}^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P\,\tilde{u}^{\natural},
 \qquad
-\tilde{F}_2 \;=\; \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
-\;}
+\tilde{F}_2 \;=\; \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural}.
 $$
 
 Since $\tilde{u}$ is a real quaternion, $\tilde{u}^{\natural} = \tilde{u}^{-1}$ and the action $\tilde{u}\,\cdot\,\tilde{u}^{\natural}$ is a **rotation of physical space**; the scalar $\exp(d)$ is a dilation. A boost of a wave, then, is not a mixture of three effects but a similarity of Euclidean three-space, the same one acting on the wave element and on the field.
@@ -64,7 +62,6 @@ $$
 $$
 
 is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde\Pi$, so it is a Hermitian idempotent; and it is exactly the rank-one idempotent $\tilde\Pi_1(\vec u_k) = \tfrac12(e_t+i\vec u_k)$ of the idempotent convention of *Conventions in the Biquaternion Universe*. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the idempotent removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously an idempotent of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
-
 
 ## The Boost of the Null Wave Element
 
@@ -212,9 +209,9 @@ $$
 where $\alpha$ is the angle between $\vec u$ and $\vec u_k$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_k$. Then
 
 $$
-\tilde P_2 = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{\natural},
+\boxed{\;\tilde P_2 = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{\natural},
 \qquad
-\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b} = \exp(d)\tilde{u}\tilde{F}\tilde{u}^{\natural} .
+\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b} = \exp(d)\tilde{u}\tilde{F}\tilde{u}^{\natural}\;}.
 $$
 
 Transversely the dilation is $\gamma$ — the transverse Doppler factor — and $\tan\frac{\theta}{2} = \tanh\frac{w}{2}$; parallel to the boost there is no rotation and the dilation is $\exp(\mp w)$. The reduction is possible only because the wave is null, and the field statement is a vacuum statement.

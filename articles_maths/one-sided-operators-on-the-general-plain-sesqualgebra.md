@@ -39,7 +39,7 @@ and $L_{\tilde Q_3}=0$ or $R_{\tilde Q_4}=0$ implies $\tilde Q_3=0$ or $\tilde Q
 **Theorem (the four composition laws).** For all $\tilde Q_3,\tilde Q_4\in\mathbb{B}$,
 
 $$
-L_{\tilde Q_3}L_{\tilde Q_4} = L_{\tilde Q_3\tilde Q_4},\qquad R_{\tilde Q_3}R_{\tilde Q_4} = R_{\tilde Q_4\tilde Q_3},\qquad L_{\tilde Q_3}R_{\tilde Q_4} = R_{\tilde Q_4}L_{\tilde Q_3},\qquad L_{\tilde Q_3}R_{\tilde Q_3^{*}} = \Theta_{\tilde Q_3}.
+\boxed{\; L_{\tilde Q_3}L_{\tilde Q_4} = L_{\tilde Q_3\tilde Q_4},\qquad R_{\tilde Q_3}R_{\tilde Q_4} = R_{\tilde Q_4\tilde Q_3},\qquad L_{\tilde Q_3}R_{\tilde Q_4} = R_{\tilde Q_4}L_{\tilde Q_3},\qquad L_{\tilde Q_3}R_{\tilde Q_3^{*}} = \Theta_{\tilde Q_3} \;}.
 $$
 
 *Proof.* Associativity gives the first two, and the third is the associativity identity $\tilde Q_3\,(\tilde{Q}_1\,\tilde Q_4)=(\tilde Q_3\,\tilde{Q}_1)\,\tilde Q_4$; the fourth is the definition of the two-sided operator.
@@ -71,8 +71,8 @@ and the same computation on the right with $(\tilde{Q}_1\tilde Q_4)^{\dagger}=\t
 **Theorem (the type criteria).** Let $\tilde Q_3\in\mathbb{B}$ and let $L_{\tilde Q_3}$ be the left multiplication. Then
 
 $$
-L_{\tilde Q_3}\ \text{self-adjoint} \iff \tilde Q_3\in\mathbb{M}_+,\qquad
-L_{\tilde Q_3}\ \text{skew-adjoint} \iff \tilde Q_3\in\mathbb{M}_-,
+\boxed{\; L_{\tilde Q_3}\ \text{self-adjoint} \iff \tilde Q_3\in\mathbb{M}_+,\qquad
+L_{\tilde Q_3}\ \text{skew-adjoint} \iff \tilde Q_3\in\mathbb{M}_- \;},
 $$
 
 $$
@@ -99,8 +99,8 @@ This is the sharpest contrast with the companion article, where both sectors giv
 **Theorem (the double centraliser).** An operator $S\in\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ commutes with every left multiplication if and only if it is a right multiplication, and conversely:
 
 $$
-\{\,S : SL_{\tilde Q_3}=L_{\tilde Q_3}S\ \ \forall \tilde Q_3\,\} = \{\,R_{\tilde Q_4} : \tilde Q_4\in\mathbb{B}\,\},\qquad
-\{\,S : SR_{\tilde Q_4}=R_{\tilde Q_4}S\ \ \forall \tilde Q_4\,\} = \{\,L_{\tilde Q_3} : \tilde Q_3\in\mathbb{B}\,\}.
+\boxed{\; \{\,S : SL_{\tilde Q_3}=L_{\tilde Q_3}S\ \ \forall \tilde Q_3\,\} = \{\,R_{\tilde Q_4} : \tilde Q_4\in\mathbb{B}\,\},\qquad
+\{\,S : SR_{\tilde Q_4}=R_{\tilde Q_4}S\ \ \forall \tilde Q_4\,\} = \{\,L_{\tilde Q_3} : \tilde Q_3\in\mathbb{B}\,\} \;}.
 $$
 
 *Proof.* Let $S$ commute with all $L_{\tilde Q_3}$ and put $\tilde Q_4=S(e_t)$. For every $\tilde Q_3$, using $\tilde Q_3=L_{\tilde Q_3}(e_t)$ and the commutation,

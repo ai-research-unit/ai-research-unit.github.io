@@ -13,8 +13,6 @@ This article develops that three-variable operation on its own: its linearity an
 
 The ternary product is already met twice: as the derived operation of the general plain sesqualgebra, and as the ternary product of the quaternionic product in the quaternion analogue. What this article adds is the isolated treatment: the operation as an object, its identities, and the reason the commutative base is degenerate. The general theory is *Jordan Triples with an Involution*, *Algebraic J\*-Algebras* and *Introduction to the General Plain Sesqualgebra*; the sesquilinear product itself is *The Sesquilinear Product of the Complexoid Space*.
 
-**Conventions.** $A,B,C,D,E$ are elements of $\mathbb{C}$, $A = a+ia'$; $\bar\cdot$ is the conjugation; the sesquilinear product is $A\star B = A\bar B$; the field product is juxtaposition. The ternary product is written with braces and is the value of a $J^{*}$-triple.
-
 ## Definition and Linearity
 
 **Definition.** The **ternary product** of the complex space is the operation

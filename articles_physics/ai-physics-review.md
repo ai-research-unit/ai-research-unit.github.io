@@ -198,7 +198,7 @@ Five reasons, in increasing order of strength.
 
 1. **It is a four-dimensional real space with a real form of the right signature.** On $\mathbb{M}_-$, with $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the biquaternion norm reads
 $$
-\langle\tilde{R}\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2,
+\boxed{\;\langle\tilde{R}\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2\;},
 $$
 a real form of signature $(3,1)$. Position, velocity, momentum, energy–momentum, four-current and four-potential are all elements of this one subspace, so the kinematical content of relativity — that these are one kind of object — is a statement about the algebra.
 
@@ -220,15 +220,15 @@ Seven reasons. The first is decisive.
 
 2. **The sector is the observable algebra of a two-state system, exactly.** $\mathsf{M}_2(\mathbb{M}_+)$ is the Hermitian $2\times2$ matrices; an element is
 $$
-\mathsf{M}_2(\tilde{H}) = h_tI_2 + \vec h\cdot\boldsymbol{\sigma}, \qquad \tilde{H} = h_te_t + i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z),
+\boxed{\;\mathsf{M}_2(\tilde{H}) = h_tI_2 + \vec h\cdot\boldsymbol{\sigma}, \qquad \tilde{H} = h_te_t + i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)\;},
 $$
 with real $h_t,\vec h$, and its spectrum is $h_t+\lvert\vec h\rvert$ and $h_t-\lvert\vec h\rvert$. This is not an analogy with quantum mechanics: it is the operator algebra of one qubit.
 
 3. **The probability weight is the normalised Hermitian form, and on $\mathbb{M}_+$ it is the Born rule.** The form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on $\mathbb{M}_+$ it coincides with the plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is its restriction, but the weight below is written with the star on the sector and on the algebra alike; the scalar part is the coefficient of $e_t$ and needs no matrix. On $\mathbb{M}_+$ the form is real and positive definite, of signature $(4,0)$, and it does not multiply — which is exactly what a probability needs. The unit satisfies $\langle e_t\rangle_{*}=1$; a state is normalised against it by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ})=\tfrac12$; and the weight of an outcome with effect $\tilde{H}$ is
 $$
-p=\frac{\langle\tilde{Ϛ},\tilde{H}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+\boxed{\;p=\frac{\langle\tilde{Ϛ},\tilde{H}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
-=h_t+\vec r\cdot\vec h .
+=h_t+\vec r\cdot\vec h\;}.
 $$
 In the $2\times2$ image, where $\mathrm{Tr}:=\mathrm{tr}\circ\mathsf{M}_2$ as declared above, $\mathrm{Tr}=2\,\mathrm{Sc}$ and $\mathrm{Tr}(e_t)=2$, so $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=h_t+\vec r\cdot\vec h$ and the weight reads $p=\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})/\mathrm{Tr}(\tilde{Ϛ})$. This is the trace formula, a reading of the pairing and not one of the four algebraic norms. On $\mathbb{M}_+$ the star in the numerator is inert, since $\tilde H^{*}=\tilde H$, so the same number is $\operatorname{Tr}(\tilde{Ϛ}\tilde H)/\operatorname{Tr}(\tilde{Ϛ})$. The star is what makes the pairing positive definite on the whole algebra. On the sector the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes $\mathrm{tr}(AB)$ equal to its conjugate; it is non-negative for $0\le\tilde H\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. The weight is therefore $p=\operatorname{Tr}(\tilde{Ϛ}\tilde H)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.
 

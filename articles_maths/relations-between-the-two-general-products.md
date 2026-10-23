@@ -12,8 +12,6 @@ This article collects the identities that link the two. The two rules are not un
 
 The article assumes the two products and their coordinate rules from *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, the article preceding this one, and the conjugation from *The Group of Involutions of the Quaternioid*. It uses the separation identities of that article for the reading of one product through the other. The property table is *Comparison Between the Two General Products*, below this article in this category; the symmetric and antisymmetric halves are *The 6 Products of the Quaternioid Real Space*, below this article in this category.
 
-**Conventions.** Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)=\sum_{\mu\in\{x,y,z\}}q_{1\mu} q_{2\mu}$ is the dot product of the vector parts and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation. The scalar part is $\mathrm{Sc}$. The two products are read as in *The Two General Products of the Quaternioid $\mathbb{R}$ Space*.
-
 ## The Exchange Relation
 
 The two products are read on the same pair with the conjugation in the first slot for the second product and in no slot for the first, and the conjugation is an anti-automorphism: it reverses the order of a product and conjugates the two factors.
@@ -21,7 +19,7 @@ The two products are read on the same pair with the conjugation in the first slo
 **Proposition (the conjugate of a product).** For all $\tilde q_1,\tilde q_2$,
 
 $$
-(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural} , \qquad (\tilde q_1^{\natural}\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1 .
+\boxed{\;(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural} , \qquad (\tilde q_1^{\natural}\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1\;}.
 $$
 
 The first identity conjugates both the factors of the plain product and transposes them; the second conjugates the first factor alone, and transposes the two factors.
@@ -31,7 +29,7 @@ The first identity conjugates both the factors of the plain product and transpos
 **Theorem (the exchange relation).** For all $\tilde q_1,\tilde q_2$,
 
 $$
-\tilde q_2^{\natural}\tilde q_1=(\tilde q_1^{\natural}\tilde q_2)^{\natural} , \qquad \tilde q_1^{\natural}\tilde q_2=(\tilde q_2^{\natural}\tilde q_1)^{\natural} .
+\boxed{\;\tilde q_2^{\natural}\tilde q_1=(\tilde q_1^{\natural}\tilde q_2)^{\natural} , \qquad \tilde q_1^{\natural}\tilde q_2=(\tilde q_2^{\natural}\tilde q_1)^{\natural}\;}.
 $$
 
 The two are the same identity read from its two sides, and they read the quaternionic product of the pair $(\tilde q_2,\tilde q_1)$ as the conjugate of the plain product of the pair $(\tilde q_1,\tilde q_2)$, with the two orders exchanged.
@@ -69,7 +67,7 @@ $$
 whence
 
 $$
-\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)+\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=2q_{1t}q_{2t} , \qquad \mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)-\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=-2(\vec q_1,\vec q_2) .
+\boxed{\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)+\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=2q_{1t}q_{2t} , \qquad \mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)-\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=-2(\vec q_1,\vec q_2)}.
 $$
 
 Both scalar parts are symmetric in the two slots, and the difference of the two is twice the dot product of the vector parts; the two are the two bilinear forms $B$ and $N$ of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, below this article in this category, read on the pair.
@@ -81,7 +79,7 @@ The difference of the two products is the term $2\vec q_1\tilde q_2$, and its va
 **Theorem (the annihilation identity).** For all $\tilde q_1,\tilde q_2$,
 
 $$
-\tilde q_1^{\natural}\tilde q_2=\tilde q_1\tilde q_2 \quad\Longleftrightarrow\quad \vec q_1\tilde q_2=0 ,
+\boxed{\;\tilde q_1^{\natural}\tilde q_2=\tilde q_1\tilde q_2 \quad\Longleftrightarrow\quad \vec q_1\tilde q_2=0\;},
 $$
 
 and for a fixed $\tilde q_2\neq0$ this holds exactly when $\tilde q_1$ is real, $\tilde q_1=q_{1t}e_t$. If $\tilde q_1$ is real then the two products agree on every second factor, $\tilde q_1\tilde q_2=\tilde q_1^{\natural}\tilde q_2=q_{1t}\tilde q_2$.

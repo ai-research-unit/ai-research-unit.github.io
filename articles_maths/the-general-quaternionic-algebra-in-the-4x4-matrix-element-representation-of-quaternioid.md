@@ -4,8 +4,6 @@
 
 The left regular representation of $\mathbb{H}$ is the map that sends a quaternion to the matrix of left multiplication by it in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. On that image the **quaternionic product** of the block is the matrix product with the transpose in the first slot, the **quaternionic form** is a quarter of the trace pairing with the transpose in the second slot, the invariants are the trace $4q_t$ and the determinant $\langle\tilde q\rangle_{\natural}^2$, and the centraliser of the image is the second, commuting copy of the algebra, the right regular representation of the opposite. This article reads the objects of the block in that model and compares with the plain block and with the complex case; the complex matrix model is *The General Quaternionic Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, above this article in this category; the product is *Introduction to the General Quaternionic Algebra*, above this article in this category; the form is *The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category; the operators are *Two-Sided Operators on the General Quaternionic Algebra*, above this article in this category; and the shell is *The Pin and Spin Groups of the General Quaternionic Algebra*, above this article in this category.
 
-**Conventions of the block.** The quaternionic product is written with the star, $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$, and the plain product by juxtaposition; the basis is $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the unit; the generic element is $\tilde q$; the conjugation is ${}^{\natural}$, negating $\vec e_x,\vec e_y,\vec e_z$; the two forms are the quaternionic form $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ of signature $(4,0)$ and the plain form $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$ of signature $(1,3)$; the products of the block are the plain product $\tilde q_1\tilde q_2$ and the quaternionic product $\tilde q_1 \star \tilde q_2$, and none other; $L_{\tilde q_3}$ and $R_{\tilde q_4}$ are the plain left and right multiplications; $\tilde q_3[\,]\tilde q_4$ is the sandwich $\tilde q \mapsto \tilde q_3\tilde q\tilde q_4$ of the plain block, and its quaternionic companion is the transposed sandwich $\tilde q \mapsto \tilde q_3^{\natural}\tilde q\tilde q_4$. Each name is used in one sense only.
-
 *Remark.* The conventions are collected here because the article is the last of the block and uses the whole apparatus: a reader who meets a symbol above reads its fixed sense here. The list is a convention and not a mathematical result. The bracket $[\,]$ is never the generic product of this block; where it occurs it is the commutator.
 
 ## The Left Regular Representation
@@ -27,7 +25,7 @@ the matrix of the plain left multiplication $L_{\tilde q}$ in the basis $e_t,\ve
 **Theorem (the product in the model).** On the image the quaternionic product is the **transposed product**
 
 $$
-\mathsf M_4(\tilde q_1 \star \tilde q_2) = \mathsf M_4(\tilde q_1^{\natural}\tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\,\mathsf M_4(\tilde q_2) ,
+\boxed{\;\mathsf M_4(\tilde q_1 \star \tilde q_2) = \mathsf M_4(\tilde q_1^{\natural}\tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\,\mathsf M_4(\tilde q_2)\;},
 $$
 
 the matrix product with the transpose taken in the first factor.
@@ -59,7 +57,7 @@ so the operator family of *Two-Sided Operators on the General Quaternionic Algeb
 **Theorem (the form in the model).** The quaternionic form is a quarter of the trace pairing with the transpose,
 
 $$
-\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac14\operatorname{tr}\bigl(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)^{\mathsf T}\bigr) .
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac14\operatorname{tr}\bigl(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)^{\mathsf T}\bigr)\;}.
 $$
 
 *Proof.* $\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t$, because the diagonal entry $(\mathsf M_4(\tilde q))_{\mu\mu}$ is the $e_\mu$-coordinate of $\tilde q e_\mu$ and the vector contributions cancel pairwise; hence $\operatorname{tr}(\mathsf M_4(\tilde q_1\tilde q_2^{\natural})) = 4\,\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$.
@@ -91,7 +89,7 @@ of signature $(4,0)$, the identity matrix, and not the diagonal $D$ of the plain
 **Theorem (trace and determinant).** For every $\tilde q$,
 
 $$
-\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t , \qquad \det\mathsf M_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 .
+\boxed{\;\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t , \qquad \det\mathsf M_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2\;}.
 $$
 
 *Proof.* The trace is above. For the determinant, the operator $L_{\tilde q}$ has the complex eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha = q_t + |\vec q|i$ is a root of $\alpha^2 - 2q_t\alpha + \langle\tilde q\rangle_{\natural} = 0$, so $\det L_{\tilde q} = \alpha^2\overline{\alpha}^2 = \langle\tilde q\rangle_{\natural}^2$.
@@ -101,7 +99,7 @@ $$
 **Theorem (the shell).** The shell $N = 1$ corresponds to the orthogonal matrices of the image:
 
 $$
-\mathsf M_4(\tilde q)^{\mathsf T}\mathsf M_4(\tilde q) = \mathrm I_4 \iff \langle\tilde q\rangle_{\natural} = 1 ,
+\boxed{\;\mathsf M_4(\tilde q)^{\mathsf T}\mathsf M_4(\tilde q) = \mathrm I_4 \iff \langle\tilde q\rangle_{\natural} = 1\;},
 $$
 
 so that the image of $\mathbb{H}^1$ is the intersection of the image with the special orthogonal group $SO(4)$; it is the pin and spin group of the quaternionic form by *The Pin and Spin Groups of the General Quaternionic Algebra*, above this article in this category, and the left regular representation is its orthogonal matrix model.

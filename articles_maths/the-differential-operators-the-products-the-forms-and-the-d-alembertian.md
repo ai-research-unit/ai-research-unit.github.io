@@ -12,14 +12,6 @@ The four general products are *The Four General Products of the Biquaternion $\m
 $\mathbb{C}$ Space*; the four norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; and the gradient, its
 conjugate and the d'Alembertian are developed at length in *Biquaternion Analysis*, §*The Differential Operators*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
-$e_t=1$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$
-with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, its four coefficients complex. The field is element-valued,
-$\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$ with $\vec Q_{\mathrm f}=Q_{\mathrm{f}x}\vec e_x+Q_{\mathrm{f}y}\vec e_y+Q_{\mathrm{f}z}\vec e_z$, and depends on the
-coordinates $Q_t,Q_x,Q_y,Q_z$. The conjugations are those of the algebra, the natural one $\tilde Q^{\natural}$, the coefficientwise one
-$\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$, and the field carries them coefficientwise, the same three marks being written on $\tilde Q_{\mathrm f}$; the scalar part is $\mathrm{Sc}$; and the sign vector is
-$\varepsilon=(1,-1,-1,-1)$. All conventions are those of *Conventions in Mathematics*.
-
 ## Conventions for Derivation
 
 In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is

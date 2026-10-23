@@ -21,7 +21,7 @@ They are the two eigenspaces of the conjugation, of real dimensions one and thre
 **Proposition (the mixed products).** The scalar line acts on the vector subspace by scaling, on both sides:
 
 $$
-(q_{1t}e_t) \star \vec q_2 = q_{1t}\vec q_2 , \qquad \vec q_1 \star (q_{2t}e_t) = -q_{2t}\vec q_1 .
+\boxed{\;(q_{1t}e_t) \star \vec q_2 = q_{1t}\vec q_2 , \qquad \vec q_1 \star (q_{2t}e_t) = -q_{2t}\vec q_1\;}.
 $$
 
 *Proof.* $e_t^{\natural} = e_t$ and $\vec q^{\natural} = -\vec q$, so $(q_{1t}e_t)^{\natural}\vec q_2 = q_{1t}\vec q_2$ and $\vec q_1^{\natural}(q_{2t}e_t) = -q_{2t}\vec q_1$.
@@ -33,7 +33,7 @@ $$
 **Theorem (the restriction).** For pure elements $\vec q_1, \vec q_2 \in V$,
 
 $$
-\vec q_1 \star \vec q_2 = \vec q_1^{\natural}\vec q_2 = -\vec q_1\vec q_2 = \bigl(\vec q_1 \cdot \vec q_2\bigr)e_t - \vec q_1 \times \vec q_2 .
+\boxed{\;\vec q_1 \star \vec q_2 = \vec q_1^{\natural}\vec q_2 = -\vec q_1\vec q_2 = \bigl(\vec q_1 \cdot \vec q_2\bigr)e_t - \vec q_1 \times \vec q_2\;}.
 $$
 
 The restriction of the quaternionic product to the vector subspace is therefore the **negative of the plain product** of the two pure quaternions; its value lies in $S \oplus V$, its scalar part is the Euclidean pairing, and its pure part is the negative of the cross product.

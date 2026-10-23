@@ -7,8 +7,6 @@ The split-complex numbers are a commutative ring, and that ring is the subject o
 
 The guiding distinction is the one the whole synthetic part of the corpus draws: a *number system* is one object and its *algebraic structures* are the several algebras the same carrier admits. For $\mathbb{D}$ the carrier is the plane $\mathbb{D}_{\mathbb{R}}$ of real dimension two, and the structures are obtained from the single datum of the algebra together with its conjugation. The split sign $j^2=+1$ is the whole difference from the complex field, and it is the source of every degeneracy recorded below: the carrier is a ring and not a field, the Hermitian form is indefinite, the commutator lies on the split imaginary line, and no definite multiplicative norm exists. There is no third product and no hidden operation: the count below is exhaustive.
 
-**Conventions.** $Q_1 = q_1 + jq'_1$ and $Q_2 = q_2 + jq'_2$ are elements of $\mathbb{D}$, with $q_1,q'_1,q_2,q'_2\in\mathbb{R}$; $\bar Q_1 = q_1 - jq'_1$ is the conjugate; $j^2 = +1$; the idempotents are $\Pi_1 = \tfrac12(1+j)$ and $\Pi_2 = \tfrac12(1-j)$, the idempotent coordinates are $q_{1+} = q_1+q'_1$ and $q_{1-} = q_1-q'_1$, and $Q_1 = q_{1+}\Pi_1 + q_{1-}\Pi_2$; $\mathrm{Sc}$, $\mathrm{Re}$ and $\mathrm{Im}$ are read in $\mathbb{D}$. The algebra read over $\mathbb{R}$ is written $\mathbb{D}_{\mathbb{R}}$, with real basis $1, j$. The two products are written $Q_1Q_2$ for the ring product and $Q_1\bar Q_2$ for the sesquilinear one, following *Conventions in Mathematics*; the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ are reserved for forms and norms.
-
 ## The Split-Complexoid
 
 **Definition.** The **split-complexoid** is the pair $(\mathbb{D}, \bar\cdot)$ read as an algebra over $\mathbb{R}$: the real vector space $\mathbb{D}_{\mathbb{R}}$ together with the involution $\bar\cdot$. Every structure of this category is built from that pair alone.
@@ -34,7 +32,9 @@ $$
 **Remark (the idempotent coordinates).** With $Q_1 = q_{1+}\Pi_1 + q_{1-}\Pi_2$ and $Q_2 = q_{2+}\Pi_1 + q_{2-}\Pi_2$ the ring product is componentwise and the sesquilinear one exchanges the two coordinates of the second factor,
 
 $$
-Q_1Q_2 \leftrightarrow (q_{1+}q_{2+}, q_{1-}q_{2-}), \qquad\qquad Q_1\bar Q_2 \leftrightarrow (q_{1+}q_{2-}, q_{1-}q_{2+}),
+\boxed{\;
+Q_1Q_2 \leftrightarrow (q_{1+}q_{2+}, q_{1-}q_{2-}), \qquad\qquad Q_1\bar Q_2 \leftrightarrow (q_{1+}q_{2-}, q_{1-}q_{2+})
+\;},
 $$
 
 which is the reason $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ and the reason the sesquilinear product has no left unit and cannot be associative.
@@ -66,7 +66,9 @@ named the **general plain bilinear form** and the **Hermitian form**; their **al
 **Theorem.** The algebra carries exactly one nontrivial involution, the conjugation, and it splits the algebra as the direct sum of its fixed and anti-fixed subspaces,
 
 $$
-\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad \mathbb{R}_{\mathbb{D}} = \mathbb{R}1, \qquad j\mathbb{R}_{\mathbb{D}} = \mathbb{R}j ,
+\boxed{\;
+\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad \mathbb{R}_{\mathbb{D}} = \mathbb{R}1, \qquad j\mathbb{R}_{\mathbb{D}} = \mathbb{R}j
+\;},
 $$
 
 of real dimension one each; the idempotent basis gives the finer decomposition $\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2$, whose two lines are the minimal ideals. The real line is closed under the product and is a copy of $\mathbb{R}$; the split imaginary line is not closed, since $j^2 = +1$ lands in $\mathbb{R}1$; the idempotent lines carry the vanishing of the norm. The four lines are pairwise independent, and every pair of distinct ones spans the algebra.

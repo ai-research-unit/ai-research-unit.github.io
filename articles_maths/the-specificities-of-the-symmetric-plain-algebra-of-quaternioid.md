@@ -6,8 +6,6 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the norm is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, the generic trace is $T(\tilde q)=2q_t$, and the scalar line and the vector subspace are those of *Introduction to the Remarkable Subspaces of the Quaternions*. The names of the companion products are those of *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
-
 ## The Properties of the Block
 
 ### Commutativity, the Unit and the Jordan Identity
@@ -15,7 +13,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 **Theorem.** The product $\bullet$ is **commutative**, **unital** with two-sided unit $e_t$, satisfies the **Jordan identity**
 
 $$
-(\tilde q_1\bullet\tilde q_2)\bullet(\tilde q_1\bullet\tilde q_1)=\tilde q_1\bullet\bigl(\tilde q_2\bullet(\tilde q_1\bullet\tilde q_1)\bigr),
+\boxed{\;(\tilde q_1\bullet\tilde q_2)\bullet(\tilde q_1\bullet\tilde q_1)=\tilde q_1\bullet\bigl(\tilde q_2\bullet(\tilde q_1\bullet\tilde q_1)\bigr)\;},
 $$
 
 and is **not associative**; it is **power-associative**, all bracketings of a power of one element agreeing.
@@ -69,7 +67,7 @@ whose vector-vector sign is opposite to the block's; it is the spin factor of *J
 **Theorem.** The idempotents of the block are exactly $0$ and $e_t$:
 
 $$
-\tilde\pi\bullet\tilde\pi=\tilde\pi\iff\tilde\pi\in\{0,e_t\}.
+\boxed{\;\tilde\pi\bullet\tilde\pi=\tilde\pi\iff\tilde\pi\in\{0,e_t\}\;}.
 $$
 
 *Proof.* The square of the block is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_t-1)\vec\pi=0$, so either $\vec\pi=0$, and then $\pi_t^2=\pi_t$, giving $\tilde\pi\in\{0,e_t\}$, or $\pi_t=\tfrac12$, and then the scalar part gives $|\vec\pi|^2=-\tfrac14$, which has no real solution.
@@ -81,7 +79,7 @@ $$
 **Theorem.** The block has no nonzero nilpotent; its square-zero elements are exactly the origin:
 
 $$
-\tilde q\bullet\tilde q=0\iff\tilde q=0 .
+\boxed{\;\tilde q\bullet\tilde q=0\iff\tilde q=0\;}.
 $$
 
 *Proof.* The equation is $\tilde q^2=0$, whose scalar and vector equations are $q_t^2-|\vec q|^2=0$ and $2q_t\vec q=0$. If $\vec q=0$ then $q_t=0$; if $q_t=0$ then $|\vec q|^2=0$ and $\vec q=0$.
@@ -95,8 +93,8 @@ $$
 **Theorem.** Every element satisfies the quadratic identity $\tilde q^2-T(\tilde q)\tilde q+\langle\tilde q\rangle_{\natural}e_t=0$, and it is invertible exactly when $\langle\tilde q\rangle_{\natural}\neq0$, that is, when $\tilde q\neq0$, with Jordan inverse
 
 $$
-\tilde q^{-1}=\frac{T(\tilde q)e_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}},\qquad
-\det L^{\bullet}_{\tilde q}=q_t^2\,\langle\tilde q\rangle_{\natural}.
+\boxed{\;\tilde q^{-1}=\frac{T(\tilde q)e_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}},\qquad
+\det L^{\bullet}_{\tilde q}=q_t^2\,\langle\tilde q\rangle_{\natural}\;}.
 $$
 
 *Proof.* These are *Norm and Invertibility in the Symmetric Plain Algebra*, and the determinant is *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category. The block is of degree two, so the whole degree-two structure is carried by the trace $T$, the norm $\langle\cdot\rangle_{\natural}$ and the unit.

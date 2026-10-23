@@ -18,14 +18,18 @@ $$
 By *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*, the group $\mathrm{SO}^{+}(2,1)$ acts transitively on $\mathbb{H}^{+}$ with stabiliser a copy of $SO(2)$, so that
 
 $$
-\mathbb{H}^{+} \cong \mathrm{SO}^{+}(2,1)/SO(2) \cong \mathrm{PSL}_2(\mathbb{R})/SO(2).
-$$
+\boxed{\;
+\mathbb{H}^{+} \cong \mathrm{SO}^{+}(2,1)/SO(2) \cong \mathrm{PSL}_2(\mathbb{R})/SO(2)
+\;}
+$$.
 
 **Theorem (The Hyperboloid Model).** The form $-B$ restricted to the tangent spaces of $\mathbb{H}^{+}$ is a Riemannian metric of constant curvature $-1$, and with this metric $\mathbb{H}^{+}$ is a model of the hyperbolic plane. The distance is
 
 $$
-\cosh d(v,w) = \langle v,w\rangle \qquad (v, w \in \mathbb{H}^{+}),
-$$
+\boxed{\;
+\cosh d(v,w) = \langle v,w\rangle \qquad (v, w \in \mathbb{H}^{+})
+\;}
+$$,
 
 and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint action. The geodesics are the intersections of $\mathbb{H}^{+}$ with the planes through the origin of $V$.
 
@@ -72,8 +76,10 @@ $$
 and it is equivariant: for $g \in \mathrm{SL}_2(\mathbb{R})$ acting by the fractional linear transformation $A \mapsto (\alpha A + \beta)/(\gamma A + \delta)$,
 
 $$
-\zeta(g \tilde\xi g^{-1}) = \frac{\alpha\,\zeta(\tilde\xi) + \beta}{\gamma\,\zeta(\tilde\xi) + \delta}.
-$$
+\boxed{\;
+\zeta(g \tilde\xi g^{-1}) = \frac{\alpha\,\zeta(\tilde\xi) + \beta}{\gamma\,\zeta(\tilde\xi) + \delta}
+\;}
+$$.
 
 The metric on the sheet is carried to the hyperbolic metric of the half-plane, $\mathrm{d}s^2 = |\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$, and the two-sheeted structure corresponds to the pair consisting of the upper and the lower half-planes.
 

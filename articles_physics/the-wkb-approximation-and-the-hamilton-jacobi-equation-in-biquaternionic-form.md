@@ -106,7 +106,7 @@ $$
 the central element $\nabla S\,\nabla S^{\natural}=|\nabla S|^2\,e_t$. The Hamilton–Jacobi equation is therefore the statement
 
 $$
-\frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V ,
+\boxed{\;\frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V\;},
 $$
 
 an equation in the centre of the algebra: **the kinetic energy is the biquaternion norm of the phase gradient**. This is the same identity that the free-particle article records for the momentum operator, $T_{\mathrm{kin}}=\tilde p\tilde p^{\natural}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the biquaternion norm of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the biquaternion norm would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy defect and vanishes only where the classical particle stops.
@@ -174,7 +174,7 @@ which is the WKB amplitude: the wave function is large where the particle moves 
 In three dimensions the transport equation is solved by the **van Vleck determinant**,
 
 $$
-A(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2},
+\boxed{\;A(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}\;}
 $$
 
 which measures the focusing of the ray congruence: $A^2$ is the density of trajectories, and the determinant is the Jacobian of the map from initial to final positions. This is the same object that the path-integral article extracts from the Gaussian fluctuation determinant of the semiclassical kernel; the transport equation and the stationary-phase evaluation of the path integral give the same amplitude, as they must, since both are the leading order of the same expansion.
@@ -210,7 +210,7 @@ Across a soft turning point the oscillatory solution acquires a phase $-\pi/2$ r
 For a bound state in a smooth one-dimensional well with two soft turning points, the phase must return to itself after a round trip. The single-valuedness of $\exp(iS/\hbar)$ around the closed orbit, together with the two Maslov phases, gives the **Bohr–Sommerfeld condition**
 
 $$
-\oint p\,dx = 2\pi\hbar\left(n + \tfrac12\right),
+\boxed{\;\oint p\,dx = 2\pi\hbar\left(n + \tfrac12\right)\;}
 \qquad n = 0,1,2,\dots
 $$
 
@@ -232,7 +232,7 @@ That WKB is nonetheless an approximation is visible in a genuinely anharmonic we
 In the classically forbidden region the momentum is imaginary, $p=i\kappa$ with $\kappa=\sqrt{2m(V-E)}$, and the phase becomes a real exponential. Matching the exponential across the barrier gives the WKB transmission
 
 $$
-T\ \approx\ \exp\!\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\;dx\right),
+\boxed{\;T\ \approx\ \exp\!\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\;dx\right)\;}
 $$
 
 whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier of the scattering article is the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T_{\mathrm{WKB}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.

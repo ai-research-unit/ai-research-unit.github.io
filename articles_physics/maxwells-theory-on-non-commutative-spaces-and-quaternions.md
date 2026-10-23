@@ -111,15 +111,15 @@ $$
 The pair with sources closes on the **displacement and magnetic fields**, and these differ from $\vec E$ and $\vec B$ by $\vec\theta$-dependent corrections that are **quadratic in the fields**:
 
 $$
-\vec D = \vec E + \vec d,
+\boxed{\;\vec D = \vec E + \vec d,
 \qquad
-\vec d = (\vec\theta\cdot\vec B)\vec E - (\vec\theta\cdot\vec E)\vec B - (\vec E\cdot\vec B)\vec\theta,
+\vec d = (\vec\theta\cdot\vec B)\vec E - (\vec\theta\cdot\vec E)\vec B - (\vec E\cdot\vec B)\vec\theta\;},
 $$
 
 $$
-\vec H = \vec B + \vec h,
+\boxed{\;\vec H = \vec B + \vec h,
 \qquad
-\vec h = (\vec\theta\cdot\vec B)\vec B + (\vec\theta\cdot\vec E)\vec E - \tfrac12\left(\vec E^2 - \vec B^2\right)\vec\theta .
+\vec h = (\vec\theta\cdot\vec B)\vec B + (\vec\theta\cdot\vec E)\vec E - \tfrac12\left(\vec E^2 - \vec B^2\right)\vec\theta\;}.
 $$
 
 This is the central structural result of the paper, and it is worth stating in the corpus's own terms. At small $\vec\theta$ the displacement and magnetic fields are not proportional to $\vec E$ and $\vec B$: they are `$(\text{linear}) + \vec\theta\times(\text{quadratic})$`, and the quadratic terms mix the two fields and the background. The relations are exactly what a **non-linear medium** supplies. Both follow from the Lagrangian by $\vec D = \partial\mathcal L/\partial\vec E$ and $\vec H = -\partial\mathcal L/\partial\vec B$, which is the check that fixes the signs (verified numerically for the companion `.context`). The casting of the deformed field equation into the sourced Maxwell form with these $\vec d$ and $\vec h$ is attributed by the source to Guralnik, Jackiw, Pi and Polychronakos; the Lagrangian and the $\vec\theta$-expansion are the source's own.
@@ -266,7 +266,7 @@ forms, the printed $T_{4m}$, and the mixed antisymmetry to machine precision.
 Both tensors have **non-zero trace**. For the canonical tensor,
 
 $$
-T^\mu{}_\mu = (\vec\theta\cdot\vec B)\left(\vec E^2-\vec B^2\right) - 2(\vec\theta\cdot\vec E)(\vec E\cdot\vec B),
+\boxed{\;T^\mu{}_\mu = (\vec\theta\cdot\vec B)\left(\vec E^2-\vec B^2\right) - 2(\vec\theta\cdot\vec E)(\vec E\cdot\vec B)\;},
 $$
 
 and for the symmetric tensor the trace is exactly twice this,
@@ -286,7 +286,7 @@ The corpus must **not** conflate this with its own trace anomaly. *The Trace Ano
 The paper's title promises quaternions, and the last section supplies them. Multiplying the source-free equation by $i$ and adding it to the sourced one, and using the Pauli-matrix identity, the whole system collapses into a single matrix equation,
 
 $$
-\nabla F + \tfrac12\left(\nabla G + G^+\overleftarrow{\nabla}\right) = -J,
+\boxed{\;\nabla F + \tfrac12\left(\nabla G + G^+\overleftarrow{\nabla}\right) = -J\;},
 $$
 
 where $\nabla = \tau^\mu\partial_\mu$, $F = f_\mu\tau^\mu$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau^m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau^\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The complex vector $\vec g = \vec d + i\vec h$ has the compact form

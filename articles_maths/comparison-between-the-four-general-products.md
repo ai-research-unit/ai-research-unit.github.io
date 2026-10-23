@@ -142,14 +142,16 @@ The **four readings** of $f$ are $f$ itself, its image under the first insertion
 **Theorem (the four general products are one rule and its three readings).** Read on the general plain bilinear product, the four readings give the four general products,
 
 $$
+\boxed{\;
 \tilde Q_1\tilde Q_2,
 \qquad
 \tilde Q_1^{\natural}\tilde Q_2,
 \qquad
 \tilde Q_1\tilde Q_2^{*},
 \qquad
-\tilde Q_1^{\natural}\tilde Q_2^{*},
-$$
+\tilde Q_1^{\natural}\tilde Q_2^{*}
+\;}
+$$,
 
 in the order (none), (${}^{\natural}$), (${}^{*}$), (both). The four are pairwise distinct, so the group permutes them faithfully and the orbit of the general plain bilinear product is the four. **The four general products are therefore one rule and the three modifications of it, a modification being one insertion.**
 
@@ -246,14 +248,18 @@ which is not a scalar multiple of $\mathrm{I}_2$. **The scalar square is a prope
 The four general products are told apart on a single element by the **square**, and the idempotent and the root problems follow from it. Writing $\tilde Q_1 = Q_{1,0}e_t + \vec Q_1$ and $(\vec Q_1,\vec Q_1) = Q_{1,1}^2 + Q_{1,2}^2 + Q_{1,3}^2$, the scalar part of the square is
 
 $$
+\boxed{\;
 \mathrm{Sc}\bigl(\tilde Q_1\tilde Q_1\bigr) = Q_{1,0}^2 - (\vec Q_1,\vec Q_1), \qquad
-\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_1^{*}\bigr) = \sum_\mu\lvert Q_{1,\mu}\rvert^2,
-$$
+\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_1^{*}\bigr) = \sum_\mu\lvert Q_{1,\mu}\rvert^2
+\;}
+$$,
 
 $$
+\boxed{\;
 \mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_1\bigr) = Q_{1,0}^2 + (\vec Q_1,\vec Q_1) = \langle\tilde Q_1\rangle_{\natural}, \qquad
-\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_1^{*}\bigr) = \lvert Q_{1,0}\rvert^2 - \sum_k\lvert Q_{1,k}\rvert^2 .
-$$
+\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_1^{*}\bigr) = \lvert Q_{1,0}\rvert^2 - \sum_k\lvert Q_{1,k}\rvert^2
+\;}
+$$.
 
 These are the four algebraic norms of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the same four expressions are the scalar parts of the four general products of *Relations Between the Four General Products*. Two of them decide the two problems on the spot. The $\natural$-square lies in the centre for every element, being $\langle\tilde Q_1\rangle_{\natural}e_t$, so its roots of a central value are the single equation $\langle\tilde Q_1\rangle_{\natural} = \lambda$. The general plain sesquilinear square has the **non-negative** scalar part $\sum_\mu\lvert Q_{1,\mu}\rvert^2$, so that product has no root of a negative value at all. The remaining two squares are elements, and their scalar parts are the indefinite general plain bilinear and Krein values.
 

@@ -7,8 +7,6 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries a non-degenerate 
 
 The article owns the projective and quadric structure of the algebra. It relies on *Split-Quaternion Norm and Invertibility* for the form and the units, on *Split-Quaternion Zero Divisors* for the null structure, on *Split-Quaternion Topology* for the link and the rulings as topological objects, and on *Split-Quaternion Geometry* for the geometric reading. The split-quaternion norm and its polarisation are developed in *Split-Quaternion Norm and Invertibility* and are used here only geometrically. No physics is invoked.
 
-**Conventions.** Coordinates are $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $N = q_t^2+q_x^2-q_y^2-q_z^2$ and polarisation $\langle\tilde q,\tilde q_2\rangle = q_t q_{2t} + q_x q_{2x} - q_y q_{2y} - q_z q_{2z}$, whose matrix in the basis $1, \vec e_x, \vec e_y, \vec e_z$ is $G = \operatorname{diag}(1,1,-1,-1)$, so that $\langle\tilde q,\tilde q_2\rangle = X^{\mathsf{T}} G Y$ for the coordinate columns $X, Y$. The vector subspace is $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ with $N|_V = q_x^2-q_y^2-q_z^2$. The projective space of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{P}^3 = \mathbb{P}(\mathbb{H}_{\mathrm{s}})$.
-
 ## The Null Cone
 
 **Definition.** The **null cone** is the quadric
@@ -32,8 +30,10 @@ Restricted to the vector subspace $V$, where $q_t = 0$, the null cone meets $V$ 
 **Theorem.** The form has Witt index $2$: every maximal isotropic subspace has dimension $2$. The maximal isotropic planes fall into two families
 
 $$
-\mathcal{L} = \{\, L_\lambda : \lambda \in \mathbb{P}^1 \,\}, \qquad \mathcal{M} = \{\, M_\mu : \mu \in \mathbb{P}^1 \,\},
-$$
+\boxed{\;
+\mathcal{L} = \{\, L_\lambda : \lambda \in \mathbb{P}^1 \,\}, \qquad \mathcal{M} = \{\, M_\mu : \mu \in \mathbb{P}^1 \,\}
+\;}
+$$,
 
 each parametrised by a projective line; the two families are disjoint, every maximal isotropic plane lies in exactly one of them, and their union is the null cone. In the examples,
 
@@ -52,8 +52,10 @@ is a member of one family, with both generators null and mutually $B$-orthogonal
 **Theorem.** Under the identification $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ of *Split-Quaternion Algebra*, the nonzero null elements are exactly the matrices of rank one:
 
 $$
-\{\, \tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0 \,\} \longleftrightarrow \{\text{matrices of rank } 1\}.
-$$
+\boxed{\;
+\{\, \tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0 \,\} \longleftrightarrow \{\text{matrices of rank } 1\}
+\;}
+$$.
 
 Every such element is an outer product
 
@@ -70,8 +72,10 @@ determined by the pair $(u,v)$ up to $(u,v) \mapsto (\lambda u, \lambda^{-1} v)$
 **Theorem.** The projective quadric $\mathcal{Q} = \mathbb{P}(\mathcal{N}) \subset \mathbb{P}^3$ is, up to a projective transformation, the image of the **Segre embedding**
 
 $$
-\sigma : \mathbb{P}^1 \times \mathbb{P}^1 \longrightarrow \mathbb{P}^3, \qquad ([s:t],[u:v]) \longmapsto (su : sv : tu : tv),
-$$
+\boxed{\;
+\sigma : \mathbb{P}^1 \times \mathbb{P}^1 \longrightarrow \mathbb{P}^3, \qquad ([s:t],[u:v]) \longmapsto (su : sv : tu : tv)
+\;}
+$$,
 
 whose image is the smooth quadric surface $\{q_t q_z - q_x q_y = 0\}$. The two factors of $\mathbb{P}^1\times\mathbb{P}^1$ are the two families of isotropic lines, and $\mathcal{Q} \cong \mathbb{P}^1 \times \mathbb{P}^1$.
 

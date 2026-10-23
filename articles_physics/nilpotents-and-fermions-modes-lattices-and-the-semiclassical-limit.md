@@ -5,7 +5,7 @@
 A nilpotent is a nonzero element of the biquaternion algebra whose square is zero,
 
 $$
-\vec\Upsilon^2=0,\qquad \vec\Upsilon\neq0 .
+\boxed{\;\vec\Upsilon^2=0,\qquad \vec\Upsilon\neq0\;}.
 $$
 
 It is the extreme case of a zero divisor: it does not merely fail to be invertible, it annihilates itself. The algebra places this object in a small and rigid locus, the pure elements whose complex vector part is isotropic. The question of this article is what physics that locus carries.
@@ -49,11 +49,11 @@ The pure condition is what separates the nilpotent from the rest of the cone. An
 The fermionic interpretation needs a pair, not a single nilpotent. A canonical pair is
 
 $$
-\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),
+\boxed{\;\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),
 \qquad
 \vec\Upsilon_y=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
 \qquad
-\bigl\{\vec\Upsilon_x,\vec\Upsilon_y\bigr\}=e_t .
+\bigl\{\vec\Upsilon_x,\vec\Upsilon_y\bigr\}=e_t\;}.
 $$
 
 Both are pure nilpotents, $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$. Their products are orthogonal idempotents,
@@ -138,7 +138,7 @@ $$
 The Hamilton–Jacobi equation fixes its norm to the energy defect,
 
 $$
-\langle\nabla S\rangle_{\natural}=2m(E-V).
+\boxed{\;\langle\nabla S\rangle_{\natural}=2m(E-V)\;}.
 $$
 
 In the classically allowed region this is positive, and the gradient is never a nonzero nilpotent. The cone $\langle\nabla S\rangle_{\natural}=0$ is reached only where $\nabla S=0$, at a turning point: the gradient vanishes, and the origin is not a nilpotent either. A material four-momentum is a different object, since it carries the energy as its imaginary scalar part; its mass shell is not the level set of the phase gradient.

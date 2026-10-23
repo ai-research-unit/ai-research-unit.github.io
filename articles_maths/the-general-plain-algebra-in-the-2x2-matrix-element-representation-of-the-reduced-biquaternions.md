@@ -22,8 +22,6 @@ $$
 
 The model is the reduced biquaternion analogue of the matrix realisation $\mathbb{B}\cong M_{2}(\mathbb{C})$ of the biquaternion category, and the difference is the content of the article: the biquaternion algebra is the **whole** of $M_{2}(\mathbb{C})$, the reduced biquaternion algebra is its **diagonal** subalgebra, and the missing off-diagonal entries are the missing matrix units $E_{12},E_{21}$ of the Peirce decomposition.
 
-**Boundaries.** The general plain algebra and its multiplication are *Introduction to the Algebra of the Reduced Biquaternions*; the norm and the units are *Norm and Invertibility in the Algebra of the Reduced Biquaternions* and *The Group of Units of the Algebra of the Reduced Biquaternions*; the ideals and the Peirce decomposition are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the multiplication operators are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; and the forms are *The Forms of the Algebra of the Reduced Biquaternions*. The general $2\times2$ element representation of the category, of which this article reads the algebra, is *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*; the four-vector model is *The Four-Vector Element Representation of the Reduced Biquaternions*; and the non-commutative matrix realisation is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
-
 ## The Representation
 
 ### The Map on the Basis

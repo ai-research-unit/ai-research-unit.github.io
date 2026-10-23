@@ -51,7 +51,9 @@ $$
 for $s\in\mathbb{B}_{\mathrm{r}}$ and $z\in\mathbb{C}$. This is the scalar Moore-Penrose inverse with respect to the bar conjugation; it satisfies $ss^\dagger s=s$, $s^\dagger ss^\dagger=s^\dagger$, and $ss^\dagger$ and $s^\dagger s$ are each $0$ or $1$ in each idempotent coordinate. Then
 
 $$
-A^\dagger=V\ast S^\dagger\ast U^{\mathsf H}.
+\boxed{\;
+A^\dagger=V\ast S^\dagger\ast U^{\mathsf H}
+\;}.
 $$
 
 **Remark (the inversion is in the transform).** The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm{r}}$, but it is not inverted entry by entry in the time domain. A diagonal tube of units can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. **The reciprocal-or-zero is taken on the transform slices**, as in the display.
@@ -75,7 +77,9 @@ and $A\ast X=U\ast S\ast S^\dagger\ast U^{\mathsf H}$ and $X\ast A=V\ast S^\dagg
 The theorem of the first section can be read as a statement about the two idempotent coordinates:
 
 $$
-A^\dagger=A_{(1)}^\dagger\Pi_++A_{(2)}^\dagger\Pi_-,
+\boxed{\;
+A^\dagger=A_{(1)}^\dagger\Pi_++A_{(2)}^\dagger\Pi_-
+\;},
 $$
 
 where $A_{(i)}^\dagger$ is the Moore-Penrose inverse of the complex tensor $A_{(i)}$ under the complex t-product. The two complex inverses are computed independently. In the Fourier domain, for each $k$,
@@ -105,7 +109,9 @@ $$
 **Proposition (unitary invariance).** If $P$ and $Q$ are unitary tensors of compatible sizes, then
 
 $$
-(P\ast A\ast Q)^\dagger=Q^{\mathsf H}\ast A^\dagger\ast P^{\mathsf H}.
+\boxed{\;
+(P\ast A\ast Q)^\dagger=Q^{\mathsf H}\ast A^\dagger\ast P^{\mathsf H}
+\;}.
 $$
 
 *Proof.* Substitute $X=Q^{\mathsf H}\ast A^\dagger\ast P^{\mathsf H}$ into the four equations for $P\ast A\ast Q$ and cancel the unitary factors using $P^{\mathsf H}\ast P=Q\ast Q^{\mathsf H}=\mathrm I$.

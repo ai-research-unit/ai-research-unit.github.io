@@ -15,8 +15,6 @@ Four qualifications discipline the article, and they are stated at the outset be
 
 The article proceeds as follows. The order parameter is reviewed and the two laws are given their information-theoretic interpretation, with the scaling of the loop's "information cost" recomputed. The loss of the partonic labels is then formulated as a superselection statement and made precise with the relative entropy of the accessible restrictions, recomputed on generic states. The scale-dependence of the parton picture is stated as an ultraviolet-to-infrared coarse-graining, and confinement is modelled as an effectively idempotent channel onto the colour-neutral algebra, with the decoherence article as the closest written model. The other confinement picture — the bag as a linear boundary condition, and its reduction to a boundary equation in the algebra — is then given, because it is the part of confinement the framework houses. The framework's own objects are then separated from the imports in a ledger, and the ceiling that makes the colour group a no-route obstacle is recorded.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$, and central scalar imaginary $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu \in \mathbb{M}_-$; the gauge group is realized in the informational sector, the canonical example being $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ with generators $T^a = ie_a$ and $[ie_i,ie_j] = 2i\varepsilon_{ijk}i\vec e_k$. The holonomy and Wilson loop are
-
 $$
 U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 \qquad
@@ -49,7 +47,7 @@ is the behaviour of a theory in which the flux between two sources can spread: t
 
 - An **area law**,
 $$
-\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area}(C)),
+\boxed{\;\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area}(C))\;},
 $$
 is the behaviour of a confining theory: a flux tube forms, the cost is proportional to the enclosed area, and the coefficient $\sigma$ is the **string tension**.
 
@@ -130,7 +128,7 @@ $$
 the projection of the Bloch vector onto the axis, which is the full-dephasing limit of the companion article on idempotent projection. Two states that differ by a charge rotation have **the same accessible state**:
 
 $$
-\vec r\cdot\vec u = (R_{\vec u}(\theta)\vec r)\cdot\vec u,
+\boxed{\;\vec r\cdot\vec u = (R_{\vec u}(\theta)\vec r)\cdot\vec u\;},
 $$
 
 because a rotation about $\vec u$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}\|\tilde{Ϛ}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.
@@ -308,7 +306,7 @@ with $M_\alpha$ right multiplication by $\alpha$. So the massive time-harmonic D
 The parameter of the reduced equation is not a wave number but an element of the algebra, and its norm is the mass-shell relation,
 
 $$
-\langle \alpha\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}}\alpha_\mu^{2} = m^2 - \omega^2 ,
+\boxed{\;\langle \alpha\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}}\alpha_\mu^{2} = m^2 - \omega^2\;},
 $$
 
 so that $\alpha$ is a **zero divisor exactly on the mass shell**, $\alpha \in S \iff \omega^2 = m^2$. This is the meeting point of the algebra's degeneracy and the physics of the mass shell: the shift $\alpha$ fails to be invertible on the same locus on which the bag's frequency is on shell. It also places the bag systematically: the operators $T_\alpha$ and $K_\alpha$ are defined for every $\alpha\in\mathbb{B}$, but with different formulas on the three branches — $\alpha\notin S$, $\alpha\in S$ with $\alpha_0\neq0$, and $\alpha\in S$ with $\alpha_0 = 0$ — and the bag's parameter has $\alpha_0 = 0$ and lies in the last of the three. The mass shell is thus not an obstruction but the branch on which the algebra is richest (*Zero Divisors of the Biquaternion Algebra*, *Zero Divisors as a Physical Locus in Biquaternionic Form*). It is also the point at which this framework's shift meets the scalar Helmholtz shift of *Electromagnetism in Media: The Local Complex Structure at Work*: for a scalar parameter, $D_\alpha = i(D_3 - i\alpha)$ with $D_3 = \sum_k \vec e_k\,\partial/\partial Q_k$, and the corpus's $D_{3\alpha} = D_3 + \alpha$ is the same operator with the factor $i$ absorbed; the bag needs the genuinely non-scalar case.
@@ -324,7 +322,7 @@ $$
 where $S^\pm$ are complementary projectors assembled from the boundary normal and a fixed unit direction. Combined with the boundary-value criterion for $D_\alpha$ — a Hölder function on $\partial\Omega$ is the boundary value of a $D_\alpha$-regular function in $\Omega$ if and only if $P_\alpha f = f$, with $P_\alpha = \tfrac12(I + S_\alpha)$ built from the Cauchy-type operator $K_\alpha$ — the bag model reduces to the single boundary equation
 
 $$
-\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p} \qquad \text{on } \partial\Omega .
+\boxed{\;\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p} \qquad \text{on } \partial\Omega\;}.
 $$
 
 That is the shape of the result: a linear bag model becomes a **boundary singular integral equation** for the biquaternionic operator $D_\alpha$, and the solvability and Fredholmness of the bag become properties of that equation. The framework supplies the reduction, the function theory that makes the criterion available, and the place to ask the Fredholm question.

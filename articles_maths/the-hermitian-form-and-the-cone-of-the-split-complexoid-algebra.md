@@ -6,10 +6,6 @@ The sesquilinear product of the split-complex space is the form $\langle Q_1,Q_2
 
 The results are the two-dimensional end of the family and they are sharper than in the four-dimensional case. The form $\langle\cdot,\cdot\rangle_{*}$ is conjugate-symmetric, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second, and its realified scalar part is the indefinite form $g(Q_1,Q_2) = q_1q_2-q'_1q'_2$ of signature $(1,1)$. The form is **indefinite**: $\langle 1,1\rangle_{*} = 1$ and $\langle j,j\rangle_{*} = -1$. It therefore defines no positive cone through its Hermitian square, since $Q\bar Q = \langle Q\rangle_{*} = q^2-q'^2$ already takes every real value; the cone that survives is the **cone of squares** of the plain product, $\mathcal{C} = \{q_+\ge0, q_-\ge0\} = \{q\ge\lvert q'\rvert\}$, the order cone, closed, convex, pointed, generating and self-dual for $g$, whose boundary meets the null cone in the two positive rays. On $\mathcal{C}$ the reversed Cauchy–Schwarz inequality holds. The Hermitian forms on the modules are classified by a real matrix, hence up to isometry by its rank; every nondegenerate form is isometric to the standard one and is **hyperbolic**, the two idempotent halves supplying a Lagrangian, so the Witt group of the ring is trivial.
 
-**Placement.** The article is the second entry of the split-complex general-plain-sesqualgebra block, after *The Sesquilinear Product of the Split-Complexoid Space*, and it closes the sesquilinear side; the slot reading of the two products and the two pairings with their adjoints are *Relations and Comparison Between the Two Products of the Split-Complexoid Space*, above this article in this category. The product itself, its associator, its one-sided multiplications, its sandwich, its adjoints and its commutator are the first article of the block. The scalar form $g$ and the norm are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space* and *Norm and Invertibility in the General Split-Complex Algebra*; the cone of squares, its order and the classes of element are *The Classes of Element of the Split-Complex Algebra*; the null cone and the zero divisors are *Zero Divisors of the Split-Complex Algebra*; and the subspaces with their forms are *Remarkable Subspaces of the Split-Complexoid and the Two Forms*.
-
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$, general element $Q = q+jq'$, conjugate $\bar Q = q-jq'$, idempotents $\Pi_1 = \tfrac12(1+j)$ and $\Pi_2 = \tfrac12(1-j)$, idempotent coordinates $q_+ = q+q'$ and $q_- = q-q'$, real part $\operatorname{Sc}Q = q$. The form is written $\langle\cdot,\cdot\rangle_{*}$ and is the general plain sesquilinear form of the space; the associated symmetric bilinear form is $g$; the conjugation of the coefficient ring is trivial, since the coefficients are real, so only the bar has a sense. A **module** is a left $\mathbb{D}$-module, and the regular module is $\mathbb{D}$ itself.
-
 ## The Canonical Hermitian Form
 
 ### Definition
@@ -107,7 +103,9 @@ the set on which both idempotent coordinates are non-negative.
 **Theorem.** The cone $\mathcal{C}$ is a **symmetric cone**: it is closed, convex, salient (pointed), generating, and self-dual with respect to the scalar form $g$,
 
 $$
-\mathcal{C}^{*} = \{Q_2 : g(Q_1,Q_2) \ge 0 \ \text{for all } Q_1 \in \mathcal{C}\} = \mathcal{C}.
+\boxed{\;
+\mathcal{C}^{*} = \{Q_2 : g(Q_1,Q_2) \ge 0 \ \text{for all } Q_1 \in \mathcal{C}\} = \mathcal{C}
+\;}.
 $$
 
 **Proof.** The identification of the image with the coordinate description is the criterion of square roots of *The Classes of Element of the Split-Complex Algebra*. Closure and convexity: the idempotent coordinates of a non-negative combination of elements of $\mathcal{C}$ are non-negative. Salience: if $Q_1$ and $-Q_1$ both lie in $\mathcal{C}$ then $q_{1+} \ge 0$, $q_{1-} \ge 0$ and $-q_{1+} \ge 0$, $-q_{1-} \ge 0$, so $Q_1 = 0$. Generating: $Q_1 = q_{1+}\Pi_1 + q_{1-}\Pi_2$ is the difference of the two elements $\max(q_{1+},0)\Pi_1 + \max(q_{1-},0)\Pi_2$ and $\max(-q_{1+},0)\Pi_1+\max(-q_{1-},0)\Pi_2$ of $\mathcal{C}$, so $\mathcal{C}-\mathcal{C} = \mathbb{D}$. Self-duality: in idempotent coordinates $g(Q_1,Q_2) = \tfrac12(q_{1+}q_{2-} + q_{1-}q_{2+})$, so $g(\Pi_1,Q_2) = \tfrac12 q_{2-}$ and $g(\Pi_2,Q_2) = \tfrac12 q_{2+}$; if $Q_2 \notin \mathcal{C}$ then one of $q_{2+}, q_{2-}$ is negative, and taking $Q_1 = \Pi_2$ (if $q_{2+} < 0$) or $Q_1 = \Pi_1$ (if $q_{2-} < 0$) gives $g(Q_1,Q_2) < 0$ with $Q_1 \in \mathcal{C}$, so $Q_2 \notin \mathcal{C}^{*}$; conversely $q_{1+},q_{1-},q_{2+},q_{2-} \ge 0$ give $g(Q_1,Q_2)\ge0$, so $\mathcal{C}\subset\mathcal{C}^{*}$. Hence $\mathcal{C}^{*} = \mathcal{C}$.
@@ -119,7 +117,9 @@ The coordinates $q_+$ and $q_-$ diagonalise the cone and the form together, whic
 **Theorem.** The isotropic cone of $\langle\cdot,\cdot\rangle_{*}$ is the null cone, and it is the union of the two boundaries of the double cone of non-negativity:
 
 $$
-\{Q : \langle Q,Q\rangle_{*} = 0\} = \mathcal{N} = \partial\mathcal{C} \cup \partial(-\mathcal{C}) = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2,
+\boxed{\;
+\{Q : \langle Q,Q\rangle_{*} = 0\} = \mathcal{N} = \partial\mathcal{C} \cup \partial(-\mathcal{C}) = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2
+\;},
 $$
 
 where $\partial\mathcal{C} = \mathbb{R}_{\ge0}\Pi_1\cup\mathbb{R}_{\ge0}\Pi_2$. The zero divisors are $\mathcal{N}\setminus\{0\}$.
@@ -133,7 +133,9 @@ So the isotropic set of $\langle\cdot,\cdot\rangle_{*}$ is the null cone, a cros
 **Theorem (reversed Cauchy–Schwarz).** For $Q_1, Q_2$ in the closed cone $\mathcal{C}$, with $g$ the scalar form,
 
 $$
-g(Q_1,Q_2)^2 \;\ge\; g(Q_1,Q_1)\,g(Q_2,Q_2),
+\boxed{\;
+g(Q_1,Q_2)^2 \;\ge\; g(Q_1,Q_1)\,g(Q_2,Q_2)
+\;},
 $$
 
 with equality if and only if $Q_1$ and $Q_2$ are proportional. On the interior of the cone all three quantities are positive, and the inequality is the reverse of the definite one.

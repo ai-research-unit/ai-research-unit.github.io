@@ -29,10 +29,10 @@ Three features of the framework's contexts matter here.
 A **noncontextual value assignment** is a function $v$ on the observables satisfying
 
 $$
-v(e_t) = 1, \qquad
+\boxed{\;v(e_t) = 1, \qquad
 v(\tilde{H}_2+\tilde{H}_1) = v(\tilde{H}_2)+v(\tilde{H}_1), \qquad
 v(\tilde{H}_2\tilde{H}_1) = v(\tilde{H}_2)\,v(\tilde{H}_1)
-\quad\text{whenever }[\tilde{H}_2,\tilde{H}_1]=0,
+\quad\text{whenever }[\tilde{H}_2,\tilde{H}_1]=0\;},
 $$
 
 and, for observables with spectrum in $\{0,1\}$, taking values in $\{0,1\}$. The first two conditions make $v$ linear on each context; the third makes it multiplicative, hence an algebra homomorphism on each context. Restricted to the idempotents of a context, $v$ is a $\{0,1\}$-valued function with
@@ -64,7 +64,7 @@ The conclusion for the framework is structural: the obstruction cannot be exhibi
 **Kochen–Specker theorem.** Let $\mathcal{H}$ be a Hilbert space of dimension $d\geq3$. There is no function $v$ from the rank-one projectors of $\mathcal{H}$ to $\{0,1\}$ that is noncontextual and consistent on every orthogonal resolution of the identity:
 
 $$
-v(P)\in\{0,1\}, \qquad \sum_{i}P_i = I \ \Longrightarrow\ \sum_i v(P_i) = 1 .
+\boxed{\;v(P)\in\{0,1\}, \qquad \sum_{i}P_i = I \ \Longrightarrow\ \sum_i v(P_i) = 1\;}.
 $$
 
 Equivalently, no noncontextual deterministic hidden-variable model reproduces the predictions of quantum physics for a system of dimension at least three. The theorem is state-independent: it concerns the structure of observables, not any particular state.
@@ -94,13 +94,11 @@ $$
 
 On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_t$ and with one another to form the nine elements
 
-
 |  |  |  |
 |---|---|---|
 | $\vec U_x\otimes e_t$ | $e_t\otimes\vec U_x$ | $\vec U_x\otimes\vec U_x$ |
 | $e_t\otimes\vec U_z$ | $\vec U_z\otimes e_t$ | $\vec U_z\otimes\vec U_z$ |
 | $\vec U_x\otimes\vec U_z$ | $\vec U_z\otimes\vec U_x$ | $\vec U_y\otimes\vec U_y$ |
-
 
 Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\{\pm1\}$; this is why the array is called a **magic square**. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_k\leftrightarrow i\vec e_k$.
 
@@ -108,14 +106,12 @@ Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\
 
 Within each row and each column the three entries commute, so their product is unambiguous. Direct computation in the biquaternion algebra — using $(x\otimes y)(x_2\otimes y_2) = (xx_2)\otimes(yy_2)$ and the products of the units — gives
 
-
 |  | $\text{column }1$ | $\text{column }2$ | $\text{column }3$ | $\text{row product}$ |
 |---|---|---|---|---|
 | **row 1** | $\vec U_x\otimes e_t$ | $e_t\otimes\vec U_x$ | $\vec U_x\otimes\vec U_x$ | $\prod = e_t\otimes e_t$ |
 | **row 2** | $e_t\otimes\vec U_z$ | $\vec U_z\otimes e_t$ | $\vec U_z\otimes\vec U_z$ | $\prod = e_t\otimes e_t$ |
 | **row 3** | $\vec U_x\otimes\vec U_z$ | $\vec U_z\otimes\vec U_x$ | $\vec U_y\otimes\vec U_y$ | $\prod = e_t\otimes e_t$ |
 | **column product** | $\prod = e_t\otimes e_t$ | $\prod = e_t\otimes e_t$ | $\prod = -e_t\otimes e_t$ |  |
-
 
 That is: the product of every row is $+e_t\otimes e_t$, the products of the first two columns are $+e_t\otimes e_t$, and the product of the third column is $-e_t\otimes e_t$. Each of these statements was verified by explicit multiplication in the algebra of the sixteen basis elements $e_\mu\otimes e_\nu$, and each row and column was verified to be a commuting set.
 
@@ -146,13 +142,13 @@ $$
 Multiplying the three row equations gives
 
 $$
-\prod_{\text{all nine entries}} v(\cdot) = (+1)(+1)(+1) = +1 ,
+\boxed{\;\prod_{\text{all nine entries}} v(\cdot) = (+1)(+1)(+1) = +1\;},
 $$
 
 while multiplying the three column equations gives the same product equal to
 
 $$
-(+1)(+1)(-1) = -1 .
+\boxed{\;(+1)(+1)(-1) = -1\;}.
 $$
 
 The two evaluations of one and the same product disagree. Hence no noncontextual $\{\pm1\}$ assignment exists for the two-qubit observables: **the Kochen–Specker obstruction is present in the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$**. The contradiction uses only the multiplicativity of the value assignment on each commuting context and the noncontextuality that lets a single value be used for each entry in both its row and its column.

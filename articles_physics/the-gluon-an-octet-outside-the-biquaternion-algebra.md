@@ -138,7 +138,7 @@ $$
 $$
 the compact real form of the complex algebra $\mathrm{GL}(2,\mathbb{C})$, whose Cartan decomposition is $\mathrm{GL}(2,\mathbb{C})=\mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ with both factors of real dimension four. The colour algebra is compact of dimension eight,
 $$
-\dim_\mathbb{R}\mathrm{SU}(3)=8 ,
+\boxed{\;\dim_\mathbb{R}\mathrm{SU}(3)=8\;},
 $$
 and a compact Lie algebra of dimension eight cannot embed in a compact Lie algebra of dimension four. The same count is visible in the group: the compact group the algebra's gauge structure generates is $\mathrm{U}(2)$, of real dimension four, and $SU(3)$ has real dimension eight. The number eight that suggests an embedding is the real dimension of $\mathbb{B}$, not the dimension of its compact part; the compact part is half the algebra, and the half is $\mathrm{U}(2)$.
 
@@ -158,7 +158,7 @@ $$
 $$
 which was verified in the defining representation. The anticommutator is therefore central, proportional to the trace rather than to a generator, and the traceless symmetric invariant of the compact factor — the analogue of the colour tensor — vanishes,
 $$
-d^{abc}=0 .
+\boxed{\;d^{abc}=0\;}.
 $$
 $SU(3)$, by contrast, has a nonzero totally symmetric invariant, the tensor $d^{abc}$ whose independent components were listed above, and it is part of the group's invariant data. A framework whose invariant tensors are exhausted by the antisymmetric $\varepsilon$ supplies the three-gluon and four-gluon vertices in form — they are built from $f$ alone — but not the full invariant tensor algebra of the colour group. The symmetric tensor would have to be imported along with the group.
 
@@ -195,7 +195,7 @@ an identity verified in the standard realization of $\mathbb{O}$, so a nonvanish
 
 The octet can always be embedded if the carrier is enlarged. The algebra of $2\times2$ matrices over $\mathbb{B}$ is
 $$
-M_2(\mathbb{B})\cong \mathsf{M}_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C}),
+\boxed{\;M_2(\mathbb{B})\cong \mathsf{M}_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C})\;},
 $$
 and the unitary group of $\mathbb{C}^4$ contains $\mathrm{U}(3)$ and hence $SU(3)$ as a block-diagonal subgroup,
 $$

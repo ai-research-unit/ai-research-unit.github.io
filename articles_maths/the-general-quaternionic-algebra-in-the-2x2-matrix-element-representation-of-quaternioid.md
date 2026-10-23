@@ -4,8 +4,6 @@
 
 The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_t$ to the identity and $\vec e_x,\vec e_y,\vec e_z$ to the negative imaginary multiples of the Pauli matrices (*The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, the companion reading of the plain algebra of quaternions). On that image the **quaternionic product** of the block is the matrix product with the conjugate transpose in the first slot, the **quaternionic form** is half the trace pairing with the conjugate transpose in the second slot, and the invariants of the element are the trace and the determinant of its image.
 
-**Conventions.** The embedding is $\mathsf{M}_2(e_t) = \mathbb{1}$ and $\mathsf{M}_2(\vec e_k) = -i\sigma_k$; the conjugate transpose of a matrix is written ${}^{\dagger}$; the quaternionic product is $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$ and the quaternionic form is $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \sum_\mu q_{1\mu} q_{2\mu}$, of signature $(4,0)$.
-
 ## The Embedding
 
 **Definition.** The **matrix element representation** is the map $\mathsf{M}_2 : \mathbb{H} \to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = \mathbb{1}$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ for $k = 1,2,3$. In coordinates, $\mathsf{M}_2(\tilde q) = \begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$ with $\alpha = q_t - iq_3$ and $\beta = -iq_1 - q_y$.
@@ -19,7 +17,7 @@ The quaternion algebra is embedded in the $2\times2$ complex matrices by the ass
 **Theorem (the product in the model).** On the image the quaternionic product is the **transposed product**
 
 $$
-\mathsf{M}_2(\tilde q_1 \star \tilde q_2) = \mathsf{M}_2(\tilde q_1^{\natural}\tilde q_2) = \mathsf{M}_2(\tilde q_1)^{\dagger}\,\mathsf{M}_2(\tilde q_2) ,
+\boxed{\;\mathsf{M}_2(\tilde q_1 \star \tilde q_2) = \mathsf{M}_2(\tilde q_1^{\natural}\tilde q_2) = \mathsf{M}_2(\tilde q_1)^{\dagger}\,\mathsf{M}_2(\tilde q_2)\;},
 $$
 
 the matrix product with the conjugate transpose taken in the first factor.
@@ -45,7 +43,7 @@ a positive scalar matrix; the quaternionic square of an element is the scalar of
 **Theorem (the form in the model).** The quaternionic form is half the trace pairing with the dagger,
 
 $$
-\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)^{\dagger}\bigr) .
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)^{\dagger}\bigr)\;}.
 $$
 
 *Proof.* $\operatorname{tr}(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)^{\dagger}) = \operatorname{tr}(\mathsf{M}_2(\tilde q_1\tilde q_2^{\natural})) = 2\,\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = 2\langle\tilde q_1,\tilde q_2\rangle_{\natural}$, because the trace of a quaternion image is twice its scalar part.
@@ -69,7 +67,7 @@ of signature $(4,0)$; the Gram matrix is the identity and not the diagonal $D$ o
 **Theorem (trace and determinant).** For every $\tilde q$,
 
 $$
-\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_t , \qquad \det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural} ,
+\boxed{\;\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_t , \qquad \det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}\;},
 $$
 
 so that the quaternionic form is the determinant of the image, read positively.
@@ -83,7 +81,7 @@ so that the quaternionic form is the determinant of the image, read positively.
 **Theorem (the shell).** The shell $N = 1$ corresponds to the matrices of the image with $\det = 1$ and $A^{\dagger}A = \mathbb{1}$; it is the special unitary group,
 
 $$
-\mathsf{M}_2(\mathbb{H}^1) = SU(2) ,
+\boxed{\;\mathsf{M}_2(\mathbb{H}^1) = SU(2)\;},
 $$
 
 a compact group of real dimension three.

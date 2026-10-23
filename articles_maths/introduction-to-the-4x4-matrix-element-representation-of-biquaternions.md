@@ -25,12 +25,12 @@ $$
 and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. In the basis $e_t, \vec e_x, \vec e_y, \vec e_z$, the $\mu$-th column of $\mathsf{M}_4^{L}(\tilde Q)$ is the coordinate column of $\tilde Q e_\mu$:
 
 $$
-\mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix}
+\boxed{\; \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix}
 Q_t & -Q_x & -Q_y & -Q_z \\
 Q_x & Q_t & -Q_z & Q_y \\
 Q_y & Q_z & Q_t & -Q_x \\
 Q_z & -Q_y & Q_x & Q_t
-\end{pmatrix}.
+\end{pmatrix} \;}.
 $$
 
 This is the Cayley matrix of the left multiplication, written $\mathsf{M}_4(\tilde Q)$ in the shorter notation; every entry is a single coefficient of $\tilde Q$ with a sign, and no entry is a sum of two or more coefficients.
@@ -51,7 +51,7 @@ The column of $\tilde Q_4=e_t+\vec e_x$, namely $R=(1,1,0,0)$, is carried to the
 **Theorem (the left regular matrix is an injective algebra homomorphism).** For all $\tilde Q_1, \tilde Q_2 \in \mathbb{B}$,
 
 $$
-\mathsf{M}_4^{L}(\tilde Q_1)\,\mathsf{M}_4^{L}(\tilde Q_2) = \mathsf{M}_4^{L}(\tilde Q_1\tilde Q_2), \qquad \mathsf{M}_4^{L}(\tilde Q_2) = 0 \iff \tilde Q_2 = 0,
+\boxed{\; \mathsf{M}_4^{L}(\tilde Q_1)\,\mathsf{M}_4^{L}(\tilde Q_2) = \mathsf{M}_4^{L}(\tilde Q_1\tilde Q_2), \qquad \mathsf{M}_4^{L}(\tilde Q_2) = 0 \iff \tilde Q_2 = 0 \;},
 $$
 
 so the assignment is an injective algebra homomorphism, of complex dimension $4$, and the coefficient space is a left $\mathbb{B}$-module under it.
@@ -195,8 +195,8 @@ The regular matrix carries the same pairing as the $2\times2$ one, with the trac
 **Theorem (the trace pairing of the regular matrices).** For all biquaternions,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr)=2\,\langle\tilde Q_1,\tilde Q_2\rangle,\qquad
-\langle\tilde Q_1,\tilde Q_2\rangle=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr),
+\boxed{\; \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr)=2\,\langle\tilde Q_1,\tilde Q_2\rangle,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr) \;},
 $$
 
 so the plain trace pairing of the regular matrices is twice the general plain bilinear form of the algebra, and on the diagonal
@@ -247,7 +247,7 @@ For $\tilde{Q} = \vec e_x$ the left matrix is $\mathsf{M}_4^{L}(\vec e_x) = \beg
 **Theorem (the correct relation).** Let $D = \operatorname{diag}(-1, 1, 1, 1)$, so that $D^2 = I$. Then for every biquaternion $\tilde{Q}$,
 
 $$
-\mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}\,D = D\,\mathsf{M}_4^{L}(\tilde{Q}^{\natural})\,D .
+\boxed{\; \mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}\,D = D\,\mathsf{M}_4^{L}(\tilde{Q}^{\natural})\,D \;}.
 $$
 
 Hence the right regular matrix is the contragredient of the left one up to the fixed change of basis $D$.
@@ -300,7 +300,7 @@ $$
 with the four corner entries zero: the subspaces spanned by $\tilde\Pi_+, \vec e_x\tilde\Pi_+$ and by $\tilde\Pi_-, \vec e_x\tilde\Pi_-$ are invariant under $\mathsf{M}_4^{L}(\tilde{Q})$, and on each of them the action is that of a minimal left ideal, hence a copy of the simple module $V$, so that the left regular representation is
 
 $$
-\mathbb{B} \cong V \oplus V
+\boxed{\; \mathbb{B} \cong V \oplus V \;}
 $$
 
 as a left $\mathbb{B}$-module. The regular representation is therefore reducible, and it is the first reducible realization in this subcategory.

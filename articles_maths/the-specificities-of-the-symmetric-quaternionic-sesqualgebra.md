@@ -33,13 +33,6 @@ Sesqualgebra*, *Square Roots of a General Element in the Algebraic Structures ov
 Sesqualgebra*; and its operators are *The Multiplication Operators of the Symmetric Quaternionic
 Sesqualgebra*, where the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness that the law delivers is computed.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
-$\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
-scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$; ${}^{\natural}$ negates
-$\vec e_x,\vec e_y,\vec e_z$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
-${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde Q_1)=Q_{1t}$ is the scalar part;
-$\varepsilon=(1,-1,-1,-1)$; and
-
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}
 =Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})
@@ -80,9 +73,7 @@ each is invariant under the change of the product, so they can be tested one str
 *Proof.* The scalar–vector form of *Introduction to the Symmetric Quaternionic Sesqualgebra of
 Biquaternions* is
 
-$$
-\tilde Q_1\star\tilde Q_2=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1;
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 \;}; $$
 
 the bracket is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ and is the scalar part, which is (C2). For (C1), conjugate the product with the arguments exchanged and use that the two
 conjugations are anti-automorphisms of the plain product: the scalar bracket is fixed because $\langle\cdot,\cdot\rangle_{\natural*}$ is
@@ -129,8 +120,10 @@ Quaternionic Sesqualgebra*.
 compatibility involution, gives the operator identity
 
 $$
+\boxed{\;
 K\bigl(L^{\star}_{\tilde Q_3}\tilde Q_1,\tilde Q_2\bigr)
-=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_3^{\natural}}\tilde Q_2\bigr)} ,
+=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_3^{\natural}}\tilde Q_2\bigr)}
+\;},
 $$
 
 so the adjoint of the left multiplication by $\tilde Q_3$ with respect to $\langle\cdot,\cdot\rangle_{\natural*}$ is the left multiplication by

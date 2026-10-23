@@ -6,8 +6,6 @@ The three companion structures of *The Algebraic Structures over the Quaternioid
 
 Nothing here is a theorem about the quaternion space; the article is the common grammar of the blocks that follow, and every statement in it is a definition or an implication among definitions. The products and the three structures are those of *The 6 Products of the Quaternioid Real Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, the two articles preceding this one. The algebra product $\tilde q_1\tilde q_2$, which makes the space a division algebra, belongs to the *Quaternions* category.
 
-**Conventions.** Throughout, $f$ is a real-bilinear binary rule on the space $\mathbb{H}$, written multiplicatively $f(x,y)=xy$ in the statements about a general product, and $x,y,z$ name elements. When the product of a statement is one of the three, it is named by its abbreviation of *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. The element $0$ is the zero vector and $e$ names a unit.
-
 ## The Element Vocabulary
 
 Let $f$ be a real-bilinear rule on $\mathbb{H}$.

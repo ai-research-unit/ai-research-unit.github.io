@@ -7,8 +7,6 @@ A Clifford algebra is a $\mathbb{Z}/2$-graded algebra, with the even elements $\
 
 The geometric reading is the chirality grading. The module grading of a Clifford module is the decomposition of a spinor bundle into its two chiral halves, the parity of the operator $c(v)$ for a vector is the statement that the Clifford multiplication exchanges the halves, and the parity of the Cauchy–Riemann operator is the analytic consequence: $D$ is an odd operator and therefore exchanges the chiral summands. The sign rule is what makes the parity a rule and not a convention, and the two examples that keep the account concrete are the exterior algebra $\Lambda^\bullet V$ with $c(v)=v\wedge-\iota_v$ and the spinor module with the chirality operator.
 
-**The boundaries.** The parity of the one-sided and two-sided multiplication operators is *One-Sided Operators on a Clifford Algebra* and *The Two-Sided Multiplication Operators*; the twisting of those operators by the grading is *The Graded Multiplication Operators*; the module theory of the regular module is *Left Multiplication and the Clifford Module Structure*; the abstract algebra of the grading is *Clifford Algebras* and its companions in Part II. The chirality operator of the spinor bundle and the parity of the Cauchy–Riemann operator are *Spin Geometry* and *The Spinor Operator*. The base is a field $F$ of characteristic not $2$, $q$ a quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$, and a $\mathbb{Z}/2$-graded module (a supermodule) over $\mathrm{Cl}(V,\mathfrak{Q})$.
-
 ## The Graded Module Structure
 
 ### Definition and Parity

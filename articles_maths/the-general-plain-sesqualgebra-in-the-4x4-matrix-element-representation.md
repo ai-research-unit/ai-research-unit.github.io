@@ -6,8 +6,6 @@ The left regular representation $\mathsf{M}_4$ of *Introduction to the 4×4 Matr
 
 The regular representation adds one thing to the $2\times2$ reading: the positive definite form makes the Hermitian subspace a definite space on which the norm-one group acts, and that action is the two-to-one cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ of the identity component of the Lorentz group. The Frobenius norm of the regular matrix is twice the definite norm of the element.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_\mu^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ and $\tilde{Q}_2=\sum_\mu Q_{2\mu}e_\mu$ with $Q_\mu,Q_{2\mu}\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{Q}\star\tilde{Q}_2=\tilde{Q}\tilde{Q}_2^{*}$; sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$.
-
 ## The Representation
 
 **Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
@@ -29,7 +27,7 @@ so $\mathsf{M}_4$ is a $*$-representation for the Hermitian conjugation and the 
 **Theorem (the product is the conjugate-transposed product of the regular matrices).** For all biquaternions,
 
 $$
-\mathsf{M}_4(\tilde{Q}\star\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q})\,\mathsf{M}_4(\tilde{Q}_2)^{\dagger} ,
+\boxed{\; \mathsf{M}_4(\tilde{Q}\star\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q})\,\mathsf{M}_4(\tilde{Q}_2)^{\dagger} \;},
 $$
 
 so the sesquilinear product is read on the regular matrices by conjugating and transposing the second factor and multiplying.
@@ -45,7 +43,7 @@ so the sesquilinear product is read on the regular matrices by conjugating and t
 **Theorem (the Hilbert–Schmidt pairing of the regular matrices).** For all biquaternions,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})^{\dagger}\mathsf{M}_4(\tilde{Q}_2)\bigr) = 2\,\langle\tilde{Q}_2,\tilde{Q}\rangle_{*} ,
+\boxed{\; \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})^{\dagger}\mathsf{M}_4(\tilde{Q}_2)\bigr) = 2\,\langle\tilde{Q}_2,\tilde{Q}\rangle_{*} \;},
 $$
 
 so the Hilbert–Schmidt pairing of the regular matrices is twice the general plain sesquilinear form of the algebra.
@@ -55,7 +53,7 @@ so the Hilbert–Schmidt pairing of the regular matrices is twice the general pl
 **Theorem (the Frobenius norm).** On the diagonal,
 
 $$
-\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})^{\dagger}\mathsf{M}_4(\tilde{Q})\bigr)=4\sum_\mu|Q_\mu|^2=4\,\lVert\tilde{Q}\rVert_E^2 ,
+\boxed{\; \lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})^{\dagger}\mathsf{M}_4(\tilde{Q})\bigr)=4\sum_\mu|Q_\mu|^2=4\,\lVert\tilde{Q}\rVert_E^2 \;},
 $$
 
 so the Frobenius norm of the regular matrix is twice the definite norm of the element, and the Hilbert–Schmidt pairing reads the definite form of the algebra on the matrices.

@@ -144,7 +144,7 @@ whose trace reading is $\operatorname{Tr}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\v
 Since both $\vec u_x$ and $\vec u_y$ lie in the $xz$-plane, the scalar product is $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, and the second factor is
 
 $$
-2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+\boxed{\;2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr)\;}.
 $$
 
 ### Step 4: The result
@@ -152,7 +152,7 @@ $$
 Multiplying the two factors,
 
 $$
-p(+,+) = \cos^2(\theta_1/2) \cdot \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+\boxed{\;p(+,+) = \cos^2(\theta_1/2) \cdot \cos^2\bigl((\theta_2 - \theta_1)/2\bigr)\;}.
 $$
 
 ## Limiting Cases

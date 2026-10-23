@@ -43,7 +43,9 @@ the conjugate kernel $\overline{W(t,\omega)}=W(t,-\omega)$ inverting $W(t,\omega
 
 **Theorem (the transform pair and the basic theorems).** For $f$ in the Schwartz class the transform pair holds, $\hat f$ is continuous and vanishes at infinity, the inversion is valid pointwise, and the Plancherel identity holds:
 $$
-\int_{\mathbb{R}}\lvert\hat f(\omega)\rvert^{2}_{K}\,\mathrm{d}\omega=\int_{\mathbb{R}}\lvert f(t)\rvert^{2}_{K}\,\mathrm{d}t ,
+\boxed{\;
+\int_{\mathbb{R}}\lvert\hat f(\omega)\rvert^{2}_{K}\,\mathrm{d}\omega=\int_{\mathbb{R}}\lvert f(t)\rvert^{2}_{K}\,\mathrm{d}t
+\;},
 $$
 where $\lvert\cdot\rvert_{K}=\sqrt{K(\cdot)}$ is the Euclidean norm of the algebra.
 
@@ -69,7 +71,9 @@ where $\hat g_{1}$ and $\hat g_{2}$ are the ordinary complex Fourier transforms 
 
 **Theorem (the convolution theorem).** For $f,h\in L^{1}$, the convolution is in $L^{1}$ and
 $$
-\widehat{f*h}(\omega)=\hat f(\omega)\,\hat h(\omega),
+\boxed{\;
+\widehat{f*h}(\omega)=\hat f(\omega)\,\hat h(\omega)
+\;},
 $$
 and the convolution splits in the idempotent coordinates into the two ordinary complex convolutions.
 
@@ -83,7 +87,9 @@ and the convolution splits in the idempotent coordinates into the two ordinary c
 
 **Theorem (the derivative and the Laplacian).** If $f$ is differentiable with integrable derivative, then
 $$
-\widehat{\partial/\partial t\,f}(\omega)=2\pi\rho\,\omega\,\hat f(\omega),
+\boxed{\;
+\widehat{\partial/\partial t\,f}(\omega)=2\pi\rho\,\omega\,\hat f(\omega)
+\;},
 $$
 so the derivative becomes multiplication by the algebra element $2\pi\rho\omega$, and the transform in the four real coordinates of the algebra replaces the Euclidean Laplacian by the multiplier
 $$

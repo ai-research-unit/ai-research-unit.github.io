@@ -11,9 +11,11 @@ The products themselves, their laws and their coordinate forms are *The Two Prod
 On the coordinates the two products are
 
 $$
+\boxed{\;
 Q_1Q_2=(q_1q_2+q'_1q'_2)+(q_1q'_2+q'_1q_2)j,
 \qquad
-Q_1\overline{Q_2}=(q_1q_2-q'_1q'_2)+(q'_1q_2-q_1q'_2)j,
+Q_1\overline{Q_2}=(q_1q_2-q'_1q'_2)+(q'_1q_2-q_1q'_2)j
+\;},
 $$
 
 so the bilinear product is the multiplication of the ring and the sesquilinear product is its reflection in the second slot, as in *The Two Products of the Split-Complexoid Space*.

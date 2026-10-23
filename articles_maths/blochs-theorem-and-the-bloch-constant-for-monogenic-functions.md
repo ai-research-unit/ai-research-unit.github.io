@@ -22,9 +22,7 @@ Bloch's theorem, in its classical form, fixes the size of an image disk by the d
 
 The number $1/12$ is not best possible. The **Bloch constant** $B$ is the supremum of the radii that may be asserted in the theorem with the normalisation $\frac{df}{dz}(0) = 1$, and it satisfies
 
-$$
-\frac{1}{12} < \frac{3}{2}-\sqrt{2} \leq B,
-$$
+$$ \boxed{\; \frac{1}{12} < \frac{3}{2}-\sqrt{2} \leq B \;} ,$$
 
 where the middle number is $0.085786\ldots$ and is the sharper of the two elementary lower bounds; the exact value of $B$ is unknown, and it is known only that $1/12<B<1/2$. The two features of the classical proof that survive the passage to several variables are, first, that the argument is local and then made global by a normalisation, and second, that the two ingredients are an estimate for the derivative and an estimate for its primitive. Both are reproduced below.
 
@@ -156,9 +154,7 @@ The passage from the local statement to a statement with no pointwise hypothesis
 
 **Theorem (the global normalisation).** Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$. Then the image of $f$ contains balls of radius
 
-$$
-R = \left(\frac{1}{120}-\frac{31096}{20511149}\sqrt3\right)\mathcal{M}\!\left(\left|(\tfrac12\bar D)f(\tilde q)\right|(1-|\tilde q|),\,r\right).
-$$
+$$ \boxed{\; R = \left(\frac{1}{120}-\frac{31096}{20511149}\sqrt3\right)\mathcal{M}\!\left(\left|(\tfrac12\bar D)f(\tilde q)\right|(1-|\tilde q|),\,r\right) \;} .$$
 
 *Proof.* Assign to $f$ the continuous function $|(\tfrac12\bar D)f(\tilde q)|(1-|\tilde q|)$ on the closed ball; it attains its maximum at a point $q\in B_r$. With $t = \tfrac12(1-|q|)$ one has $\mathcal{M}(|(\tfrac12\bar D)f|(1-|\tilde q|),r) = 2t\,|(\tfrac12\bar D)f(q)|$ and $B_t(q)\subseteq B_r$, and $1-|\tilde q|\geq t$ on $B_t(q)$. From $|(\tfrac12\bar D)f(\tilde q)|(1-|\tilde q|)\leq 2t|(\tfrac12\bar D)f(q)|$ it follows that $|(\tfrac12\bar D)f(\tilde q)|\leq 2|(\tfrac12\bar D)f(q)|$ on $B_t(q)$, so the local lemma applies on the ball $B_t(q)$ and gives balls of radius $(1/60-62192\sqrt3/20511149)\,t\,|(\tfrac12\bar D)f(q)|$. Substituting the value of $t$ halves the local constant, producing the factor $1/120$ and the coefficient $31096 = 62192/2$ of $\sqrt3$.
 
@@ -176,10 +172,8 @@ The constant is a specific real number, and it is worth recording its value and 
 
 **Proposition (the value).** With exact arithmetic,
 
-$$
-\frac{1}{120}-\frac{31096}{20511149}\sqrt3 = 0.005707451579\ldots = \frac{1}{175.2095\ldots}, \qquad
-\frac{1}{60}-\frac{62192}{20511149}\sqrt3 = 0.011414903158\ldots = \frac{1}{87.6047\ldots},
-$$
+$$ \boxed{\; \frac{1}{120}-\frac{31096}{20511149}\sqrt3 = 0.005707451579\ldots = \frac{1}{175.2095\ldots}, \qquad
+\frac{1}{60}-\frac{62192}{20511149}\sqrt3 = 0.011414903158\ldots = \frac{1}{87.6047\ldots} \;} ,$$
 
 and $20511149 = 29^5$.
 

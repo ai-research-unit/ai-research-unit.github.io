@@ -68,7 +68,7 @@ and eight real parameters $a,b,c,d,e,f,g,h$. The **Daviau map** sends the eight 
 **Proposition (the expansion on the eight-element basis).** With the basis $(\mathbb 1,\sigma_1,\sigma_2,\sigma_3,i\sigma_1,i\sigma_2,i\sigma_3,i)$ of $\mathcal P$ over $\mathbb{R}$,
 
 $$
-\varphi = a\,\mathbb 1 + d\,\sigma_1 + b\,\sigma_2 + c\,\sigma_3 + e\,i\sigma_1 - f\,i\sigma_2 + g\,i\sigma_3 + h\,i .
+\boxed{\;\varphi = a\,\mathbb 1 + d\,\sigma_1 + b\,\sigma_2 + c\,\sigma_3 + e\,i\sigma_1 - f\,i\sigma_2 + g\,i\sigma_3 + h\,i\;}.
 $$
 
 *Proof.* Expand the four matrix entries from the definitions and collect the coefficients of the eight basis elements. The computation was carried out symbolically on the eight parameters; the coefficients are $(a,d,b,c,e,-f,g,h)$ in the order displayed. The paper prints the same expansion with the sign of the last term as a minus in one place and a plus in another; the plus is the correct one, as the symbolic expansion shows, and it is the sign that makes the mass term of the equation below consistent with the star of the next section.
@@ -110,7 +110,7 @@ The sign pattern is exactly `\bar\varphi`'s pattern in disguise. The star flips 
 **Theorem (the star is the corpus's complex conjugation).** Under the identification $\mathcal P\cong\mathbb B$ of the first section,
 
 $$
-\mathsf{M}_2(\tilde Q^{*})=\sigma_2\,\overline{\mathsf{M}_2(\tilde Q)}\,\sigma_2 \qquad\text{for all } \tilde Q\in\mathbb B ,
+\boxed{\;\mathsf{M}_2(\tilde Q^{*})=\sigma_2\,\overline{\mathsf{M}_2(\tilde Q)}\,\sigma_2 \qquad\text{for all } \tilde Q\in\mathbb B\;},
 $$
 
 where $\bar{\cdot}$ on the left is the corpus's complex conjugation, the involution that fixes the real-quaternion subspace $\mathbb H_\mathbb{B}$ and negates $i\mathbb H_\mathbb{B}$ (*Conventions in the Biquaternion Universe*, *Comparison of the Remarkable Subspaces*).
@@ -126,7 +126,7 @@ This is the article's central algebraic result. **Daviau's star conjugation is n
 **Definition (the Daviau equation).** With $\varphi$ the Daviau spinor of $\mathcal P$, the equation is
 
 $$
-\nabla\,\varphi\,i\sigma_1 = m\,\varphi^{*} + q\,A\,\varphi ,
+\boxed{\;\nabla\,\varphi\,i\sigma_1 = m\,\varphi^{*} + q\,A\,\varphi\;},
 $$
 
 with the gradient, the potential and the star

@@ -11,8 +11,6 @@ The forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the four c
 
 ## Conventions and the Four Forms
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; $\mathrm{Sc}$ is the scalar part. The four conjugations on elements are the identity, the **natural conjugation** $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the **coefficient conjugation** $\bar{\tilde Q}=\overline{Q_t}e_t+\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y+\overline{Q_z}\vec e_z$, and the **Hermitian conjugation** ${}^{\ast}={}^{\natural}\bar{\cdot}=\bar{\cdot}\,{}^{\natural}$, so that $\tilde Q^{\ast}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$. The natural conjugation is the sign of the algebra, equal to $+1$ on the centre and $-1$ on the vector subspace $V=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; in the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ it is the Clifford conjugation $\alpha(X^{r})$, the grade involution itself being the coefficient conjugation (*The Number Systems as Clifford Algebras*). It is $\mathbb{C}$-linear and an anti-automorphism; the coefficient conjugation is conjugate linear and an automorphism; the Hermitian conjugation is conjugate linear and an anti-automorphism.
-
 **Theorem (the four forms and their Gram matrices).** The four pairings of the algebra are
 
 $$

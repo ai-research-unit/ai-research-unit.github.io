@@ -12,8 +12,6 @@ These two families are the one-sided operators of the block. They are the two co
 
 **A word on the two left multiplications.** The left multiplication *of the quaternionic product* is the plain left multiplication by the conjugate, $L^{(\star)}_{\tilde q_3} = L_{\tilde q_3^{\natural}}$, and its composition law and monoid are the object of *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category. Here the subject is the two plain families $L$ and $R$ themselves, which are the ones that carry the adjoints and the sectors.
 
-**Conventions.** $\tilde q_1 = \sum_\mu q_{1\mu} e_\mu$, the conjugation ${}^{\natural}$ negates $\vec e_x,\vec e_y,\vec e_z$, the quaternionic form is $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \sum_\mu q_{1\mu} q_{2\mu}$ of signature $(4,0)$, and the plain form is $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$ of signature $(1,3)$; the adjoints are written ${}^{N}$ and ${}^{\sim}$.
-
 ## The Two Multiplications
 
 **Definition.** For $\tilde q_3,\tilde q_4 \in \mathbb{H}$ the **left multiplication** by $\tilde q_3$ and the **right multiplication** by $\tilde q_4$ are the real-linear maps $L_{\tilde q_3}(\tilde q) = \tilde q_3\tilde q$ and $R_{\tilde q_4}(\tilde q) = \tilde q\tilde q_4$. The two families are $\mathcal L = \{L_{\tilde q_3}\}$ and $\mathcal R = \{R_{\tilde q_4}\}$.
@@ -29,7 +27,7 @@ These two families are the one-sided operators of the block. They are the two co
 **Theorem (the composition laws).** For all parameters,
 
 $$
-L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5} , \qquad R_{\tilde q_4}R_{\tilde q_6} = R_{\tilde q_6\tilde q_4} , \qquad L_{\tilde q_3}R_{\tilde q_4} = R_{\tilde q_4}L_{\tilde q_3} .
+\boxed{\;L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5} , \qquad R_{\tilde q_4}R_{\tilde q_6} = R_{\tilde q_6\tilde q_4} , \qquad L_{\tilde q_3}R_{\tilde q_4} = R_{\tilde q_4}L_{\tilde q_3}\;}.
 $$
 
 The left law preserves the order of the parameters and the right law reverses it, so $\mathcal L$ is a copy of the algebra and $\mathcal R$ a copy of the opposite algebra; the two families commute.
@@ -49,7 +47,7 @@ The left law preserves the order of the parameters and the right law reverses it
 **Theorem (the plain adjoints).** With respect to the plain form $\mathrm B$,
 
 $$
-L_{\tilde q_3}^{\sim} = R_{\tilde q_3} , \qquad R_{\tilde q_4}^{\sim} = L_{\tilde q_4} .
+\boxed{\;L_{\tilde q_3}^{\sim} = R_{\tilde q_3} , \qquad R_{\tilde q_4}^{\sim} = L_{\tilde q_4}\;}.
 $$
 
 The plain adjoint therefore exchanges the two families and is the identity on their intersection.
@@ -65,7 +63,7 @@ The plain adjoint therefore exchanges the two families and is the identity on th
 **Theorem (the quaternionic adjoints).** With respect to the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$,
 
 $$
-L_{\tilde q_3}^{N} = L_{\tilde q_3^{\natural}} , \qquad R_{\tilde q_4}^{N} = R_{\tilde q_4^{\natural}} .
+\boxed{\;L_{\tilde q_3}^{N} = L_{\tilde q_3^{\natural}} , \qquad R_{\tilde q_4}^{N} = R_{\tilde q_4^{\natural}}\;}.
 $$
 
 The quaternionic adjoint therefore **keeps each family in place** and conjugates the parameter, and it is the identity on the scalars.

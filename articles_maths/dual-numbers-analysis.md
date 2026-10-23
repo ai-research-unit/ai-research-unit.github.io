@@ -186,7 +186,9 @@ Write $f(Q) = u(q, q') + v(q, q') \varepsilon$, where $Q = q + \varepsilon q'$ a
 **Theorem.** $f$ is dual differentiable at $Q_0 = q_0 + \varepsilon q'_0$ iff $u$ and $v$ are real differentiable at $(q_0, q'_0)$ and satisfy the **dual Cauchy–Riemann equations**
 
 $$
-\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = 0.
+\boxed{\;
+\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = 0
+\;}.
 $$
 
 **Proof.** Write $h = h_1 + h_2 \varepsilon$. The difference quotient is
@@ -200,7 +202,9 @@ For the limit to exist independently of the direction of $h$, the numerator must
 **Corollary.** If $f$ is dual differentiable on a domain, then $u$ depends only on $q$, and $v$ is affine in $q'$ with slope $\frac{du}{dq}$:
 
 $$
-f(q + \varepsilon q') = u(q) + \left( q' \frac{du}{dq} + c(q) \right) \varepsilon,
+\boxed{\;
+f(q + \varepsilon q') = u(q) + \left( q' \frac{du}{dq} + c(q) \right) \varepsilon
+\;},
 $$
 
 where $u$ and $c$ are ordinary differentiable functions of one variable. So a dual differentiable function is determined by two ordinary differentiable functions of one real variable, and it is constant in the infinitesimal direction only when $u$ is constant.
@@ -302,7 +306,9 @@ $$
 **Theorem (Cauchy–Goursat, dual version).** If $f$ is dual differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then
 
 $$
+\boxed{\;
 \oint_\gamma f(Q) \, dQ = 0
+\;}
 $$
 
 provided the contour does not cross the maximal ideal in a way that makes the integral diverge.
@@ -350,7 +356,9 @@ The differentiated series has the same radius of convergence.
 **Theorem (Taylor, dual version).** If $f$ is dual differentiable on a domain containing the closed disk $\overline{B}(Q_0, r)$, then $f$ has a power series expansion
 
 $$
+\boxed{\;
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
+\;}
 $$
 
 valid for $\|Q - Q_0\|_E < r$.

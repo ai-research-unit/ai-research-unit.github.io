@@ -20,9 +20,7 @@ $$
 
 **Theorem.** $\mathsf{M}_2$ is an injective $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_2(\tilde q_1\tilde q_2)=\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)$; its image is the real four-dimensional subspace
 
-$$
-\mathsf{M}_2(\mathbb{H})=\Bigl\{\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}:\alpha,\beta\in\mathbb{C}\Bigr\}.
-$$
+$$ \boxed{\; \mathsf{M}_2(\mathbb{H})=\Bigl\{\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}:\alpha,\beta\in\mathbb{C}\Bigr\} \;} .$$
 
 *Proof.* The Pauli matrices satisfy $\sigma_\mu^2=\mathbb{1}$ and $\sigma_1\sigma_2=i\sigma_3$ with the cyclic companions, so $\mathsf{M}_2(\vec e_\mu)^2=-\mathbb{1}$ and $\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)=\mathsf{M}_2(\vec e_z)=-\mathsf{M}_2(\vec e_y)\mathsf{M}_2(\vec e_x)$; the defining relations of $\mathbb{H}$ are respected, and a bilinear map respecting them is a homomorphism. The image is as displayed by expanding, and $\alpha,\beta$ are free complex parameters, so the real dimension is $4$; injectivity is read from the coordinates: $q_t=\mathrm{Re}\,\alpha$, $q_z=-\mathrm{Im}\,\alpha$, $q_x=-\mathrm{Im}\,\beta$, $q_y=-\mathrm{Re}\,\beta$, so $\mathsf{M}_2(\tilde q)=0$ forces $\tilde q=0$.
 
@@ -40,9 +38,7 @@ $$
 
 **Theorem.** The plain form is half the trace pairing:
 
-$$
-\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)\bigr).
-$$
+$$ \boxed{\; \langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)\bigr) \;} .$$
 
 *Proof.* $\operatorname{tr}(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2))=\operatorname{tr}(\mathsf{M}_2(\tilde q_1\tilde q_2))=2(\tilde q_1\tilde q_2)_t=2\,\mathrm{Sc}(\tilde q_1\tilde q_2)$, because the trace of a quaternion image is twice its scalar part, as the diagonal entries $\alpha,\overline{\alpha}$ show.
 
@@ -62,9 +58,7 @@ of signature $(1,3)$.
 
 **Theorem (trace and determinant).** For every $\tilde q$,
 
-$$
-\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_t,\qquad \det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2+q_y^2+q_z^2.
-$$
+$$ \boxed{\; \operatorname{tr}\mathsf{M}_2(\tilde q)=2q_t,\qquad \det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2+q_y^2+q_z^2 \;} .$$
 
 *Proof.* The trace is $\alpha+\overline{\alpha}=2\mathrm{Re}\,\alpha=2q_t$. The determinant is $\alpha\overline{\alpha}+\beta\overline{\beta}=|\alpha|^2+|\beta|^2=(q_t^2+q_z^2)+(q_x^2+q_y^2)=\langle\tilde q\rangle_{\natural}$, the second term because $-\overline{\beta}$ is the companion of $\beta$.
 
@@ -76,9 +70,7 @@ $$
 
 **Theorem (conjugation).** For a unit $\tilde q$ the inner automorphism $\operatorname{Ad}_{\tilde q}$ corresponds to conjugation by the matrix $\mathsf{M}_2(\tilde q)$:
 
-$$
-\mathsf{M}_2(\operatorname{Ad}_{\tilde q}\tilde p)=\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{-1}.
-$$
+$$ \boxed{\; \mathsf{M}_2(\operatorname{Ad}_{\tilde q}\tilde p)=\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{-1} \;} .$$
 
 *Proof.* Multiplicativity and $\mathsf{M}_2(\tilde q^{-1})=\mathsf{M}_2(\tilde q)^{-1}$.
 

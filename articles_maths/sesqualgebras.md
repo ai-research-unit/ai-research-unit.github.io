@@ -22,10 +22,6 @@ is linear in $x$ and $\varsigma$-semilinear in $y$, so $(A,\star)$ is a sesqualg
 
 **Terminology.** In this article a **sesqualgebra** is an $R$-module with a product additive in each variable and satisfying the two scalar rules above; it need not be associative, need not have a unit and need not be commutative, and each of these properties is named where it is used, exactly as in *Algebras*. The base involution is written $\varsigma$, and the product is called $\varsigma$-sesquilinear; $\sigma$ is reserved for an involution of the algebra itself.
 
-**Layout and boundaries.** The article treats the definition and the conjugate module, the collapse at the identity, the standard example with its associativity criterion and its units, the ternary product that the failure forces, and the elementary properties with the examples. It stays inside the algebra and uses no form and no distance: no norm, no length, no topology, no orthogonality, no sesquilinear or Hermitian form. The vocabulary is that of *Algebras*, *Associative Algebras* and *Unital Algebras* for the object, *Ideals and Quotients of Algebras* for the ideals, *Centre, Units, Zero Divisors and Division Algebras* for the centre and the units, *Tensor Products of Algebras* for the tensor product, *Involutive Algebras* for the involution of an algebra, and *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System* for the ternary structure. Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an $R$-module carrying a product $A \times A \to A$.
-
----
-
 ## The Definition
 
 ### The Two Scalar Rules

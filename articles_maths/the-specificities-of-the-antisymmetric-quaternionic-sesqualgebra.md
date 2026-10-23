@@ -16,8 +16,6 @@ The criterion is different in kind from the one of the model block. For the plai
 
 The form and its pairing with the block are *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; the operator form of the law is *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; the element theory it delivers is *Norm and Invertibility*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Minus One, Zero and Plus One in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*; the twelve products are *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The 12 Products of the Biquaternion Complex Space*; and the model article of the same construction is *The Specificities of the Biquaternion Algebra*.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$ and $\vec e_\mu^2=-e_t$, a generic element $\tilde Q=Q_te_t+\vec Q$, and the product $\diamond$ for the block, $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$. The Krein form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ with $\varepsilon_t=1$ and $\varepsilon_x=\varepsilon_y=\varepsilon_z=-1$, linear in the first argument and conjugate-linear in the second, and the complex bilinear dot product of two vector parts is $(\vec A,\vec B)=\sum_\mu A_\mu B_\mu$. The other products are named by their three-letter codes when they are named at all, and the vector subspace $\mathrm{Vect}(\mathbb{B})$ is the complex span of $\vec e_x,\vec e_y,\vec e_z$.
-
 ## The Definition, Relative to a Form
 
 **Definition (the law of a product against a form).** Let $\star$ be a product on $\mathbb{B}$ and let $\beta$ be a form on $\mathbb{B}$. The product $\star$ is **$\beta$-orthogonal to its second argument** when
@@ -36,17 +34,13 @@ The law is read for the block with the Krein form $\langle\cdot,\cdot\rangle_{\n
 
 **Theorem (the block is $\langle\cdot,\cdot\rangle_{\natural*}$-orthogonal to its second argument).** For all biquaternions,
 
-$$
-\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=0 .
-$$
+$$ \boxed{\; \langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=0 \;}. $$
 
 *Proof.* By the rule of the block, $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ is a pure vector, so its scalar coordinate is zero and the pairing reads $\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1\times\overline{\vec Q_2},\overline{\vec Q_2})$, the complex bilinear dot product of the value with the conjugate of the vector part of the second argument. The cross product is orthogonal to its second entry in the bilinear dot, $(\vec a\times\vec b,\vec b)=0$ for all $\vec a,\vec b$, and the identity with $\vec a=\vec Q_1$ and $\vec b=\overline{\vec Q_2}$ gives the vanishing.
 
 **Corollary (the induced form is alternating).** For all biquaternions,
 
-$$
-\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}+\langle\tilde Q_1\diamond\tilde Q_3,\tilde Q_2\rangle_{\natural*}=0 ,
-$$
+$$ \boxed{\; \langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}+\langle\tilde Q_1\diamond\tilde Q_3,\tilde Q_2\rangle_{\natural*}=0 \;}, $$
 
 that is, the form induced by the block at each element is alternating; equivalently,
 
@@ -72,9 +66,7 @@ for the adjoint with respect to the Krein form: the left multiplication is the n
 
 **Theorem (no other product of the twelve satisfies the law).** For each of the eleven products $\star\neq\diamond$ there are biquaternions $\tilde Q_1,\tilde Q_2$ with
 
-$$
-\langle\tilde Q_1\star\tilde Q_2,\tilde Q_2\rangle_{\natural*}\neq0 .
-$$
+$$ \boxed{\; \langle\tilde Q_1\star\tilde Q_2,\tilde Q_2\rangle_{\natural*}\neq0 \;}. $$
 
 *Proof.* The witnesses are in the table, one entry per family; each is verified by the computation of the product and of the pairing, and the failure is genuine, that is the pairing is not zero and not merely undefined.
 

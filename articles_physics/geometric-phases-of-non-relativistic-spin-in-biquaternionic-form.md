@@ -113,7 +113,7 @@ it returns to its initial position. The spinor returns only up to a phase, which
 In the matrix representation the spinor is $\psi(0) = (\cos\tfrac{\theta_0}{2},\,\sin\tfrac{\theta_0}{2})^{\!T}$ and the propagator is
 
 $$
-U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2 ,
+\boxed{\;U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2\;},
 $$
 
 so the total phase is $\phi_{\mathrm{tot}} = \pi$ and $\psi(T) = -\psi(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
@@ -126,7 +126,7 @@ $$
 Hence the AA phase is
 
 $$
-\gamma_{AA} = \pi - \pi\cos\theta_0 = \pi(1-\cos\theta_0) = \frac{\Omega}{2},
+\boxed{\;\gamma_{AA} = \pi - \pi\cos\theta_0 = \pi(1-\cos\theta_0) = \frac{\Omega}{2}\;},
 \qquad \Omega = 2\pi(1-\cos\theta_0).
 $$
 
@@ -165,9 +165,9 @@ and a spinor phase $\psi\mapsto \exp(i\alpha)\psi$ cancels between $\psi$ and $\
 The evolution over a closed loop of the state is, in the algebra, the product of a rotor and a central phase,
 
 $$
-\tilde{U} = \exp(i\alpha)\,\tilde{u},
+\boxed{\;\tilde{U} = \exp(i\alpha)\,\tilde{u},
 \qquad
-\tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x) = \cos\frac{\Phi}{2}\,e_t - \sin\frac{\Phi}{2}\,\vec u_x,
+\tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x) = \cos\frac{\Phi}{2}\,e_t - \sin\frac{\Phi}{2}\,\vec u_x\;},
 $$
 
 for some axis $\vec u_x$, where $\Phi$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde{H}\rangle dt')$. The two faces are:

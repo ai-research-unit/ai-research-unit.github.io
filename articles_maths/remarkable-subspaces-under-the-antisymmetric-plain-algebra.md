@@ -13,11 +13,13 @@ The bracket is introduced in *Introduction to the Antisymmetric Plain Algebra* a
 **Lemma (the sector rule).** Let $\tilde Q_1,\tilde Q_2$ have vector parts in the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ or in the imaginary triple $i\mathbf{B}_1=\mathbb{R}(i\vec e_x)\oplus\mathbb{R}(i\vec e_y)\oplus\mathbb{R}(i\vec e_z)$. Then
 
 $$
+\boxed{\;
 \vec Q_1\times\vec Q_2\in
 \begin{cases}
 \mathbf{B}_1, & \vec Q_1,\vec Q_2\in\mathbf{B}_1\text{ or }\vec Q_1,\vec Q_2\in i\mathbf{B}_1,\\[2pt]
 i\mathbf{B}_1, & \text{one in }\mathbf{B}_1\text{ and one in }i\mathbf{B}_1.
 \end{cases}
+\;}
 $$
 
 *Proof.* Write $\vec Q_1=i^{\varepsilon}\vec p$, $\vec Q_2=i^{\eta}\vec q$ with $\vec p,\vec q$ in the real vector triple and $\varepsilon,\eta\in\{0,1\}$. Then $\vec Q_1\times\vec Q_2=i^{\varepsilon+\eta}(\vec p\times\vec q)$, and $\vec p\times\vec q\in\mathbf{B}_1$; the sector is $\varepsilon+\eta$ modulo two, which is the statement.
@@ -48,9 +50,7 @@ $$
 
 and it is a Lie subalgebra of complex dimension three and real dimension six, an ideal, and the derived algebra of the whole block. It is identified with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$,
 
-$$
-\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)\cong\bigl(\mathbb{C}^3,\times\bigr)\cong\mathfrak{sl}(2,\mathbb{C}),
-$$
+$$ \boxed{\; \bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)\cong\bigl(\mathbb{C}^3,\times\bigr)\cong\mathfrak{sl}(2,\mathbb{C}) \;}, $$
 
 and it is simple: it has no nonzero proper ideal.
 
@@ -130,9 +130,7 @@ $$
 
 is stable under the bracket: the bracket of two of its elements is the cross product of two real vectors. It is a real Lie subalgebra of dimension four,
 
-$$
-\mathbb{M}_-\cong\mathfrak{u}(2),\qquad[\mathbb{M}_-,\mathbb{M}_-]=\mathbf{B}_1\cong\mathfrak{su}(2).
-$$
+$$ \boxed{\; \mathbb{M}_-\cong\mathfrak{u}(2),\qquad[\mathbb{M}_-,\mathbb{M}_-]=\mathbf{B}_1\cong\mathfrak{su}(2) \;}. $$
 
 *Proof.* An element of $\mathbb{M}_-$ has purely imaginary scalar part and real vector part; the bracket sees only the vector parts, so it is a real vector in $\mathbf{B}_1$, which lies in $\mathbb{M}_-$. The derived algebra is $\mathbf{B}_1$, and the real Lie algebra with a central line and derived algebra $\mathfrak{su}(2)$ is $\mathfrak{u}(2)$, read on the skew-Hermitian elements in *The Unitary Lie Algebra*. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis.
 

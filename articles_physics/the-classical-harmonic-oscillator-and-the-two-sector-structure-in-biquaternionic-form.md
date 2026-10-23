@@ -7,7 +7,7 @@ The harmonic oscillator is the first system in this subcategory with a **restori
 The observation the article develops is the following. The state of a one-dimensional oscillator is a pair of conjugate real numbers, the displacement $x$ and the momentum $p$, or, in the normalization that makes the motion a rigid rotation, the complex amplitude
 
 $$
-a = x + i\,\frac{p}{m\omega} \in \mathbb{C} .
+\boxed{\;a = x + i\,\frac{p}{m\omega} \in \mathbb{C}\;}.
 $$
 
 Because $a$ is a complex number, it embeds in the algebra as a **central** element,
@@ -21,9 +21,6 @@ The centre $\mathbb{C}_{\mathbb{B}}$ is the intersection of the algebra with the
 This is a genuinely classical statement and it is deliberately different from the quantum one. In the quantum oscillator the two quadratures are Hermitian operators and both lie in $\mathbb{M}_+$; the companion article *The Harmonic Oscillator in Biquaternionic Form* shows that the canonical commutator cannot be realized by two elements of $\mathbb{M}_+$ and treats the sector structure accordingly. Here there is no commutator and no operator: a classical real number is not an element of a sector until one chooses where to place it, and the placement that makes the oscillator's phase a rotation places the two quadratures in the two sectors. The two treatments agree that the phase is the sector exchange; they differ in what carries the quadratures, because operators and classical numbers are different objects.
 
 The article is organized as follows. The oscillator is first written in the material sector, where its trajectory and its restoring force live. The complex amplitude is then constructed and decomposed into its two sector parts. The phase advance is identified with the sector exchange, and its generator with the timelike direction of the material sector. The energy is identified with the Hermitian form, and its positivity is contrasted with the signature of the biquaternion norm. The article closes by asking the quantum companion's question — whether the complexification makes the two sectors two oscillators — and answering it in the classical case.
-
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector, the Hermitian subspace $\mathbb{M}_+$ the informational sector, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ with $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$. The trace is normalized so that $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$ for $\tilde\Pi, \tilde{H} \in \mathbb{M}_+$, and the real part of a biquaternion is written $\mathrm{Sc}$. The classical phase-space bracket is the Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*; the quantum treatment of the same system, which is not used here, is that of *The Harmonic Oscillator in Biquaternionic Form*.
-
 
 ## The Oscillator in the Material Sector
 
@@ -135,7 +132,7 @@ $$
 which is equivalent to the single complex equation
 
 $$
-\frac{d\tilde{A}}{dt'} = -i\omega\,\tilde{A} .
+\boxed{\;\frac{d\tilde{A}}{dt'} = -i\omega\,\tilde{A}\;}.
 $$
 
 Its solution is the phase rotation
@@ -177,8 +174,8 @@ It is worth recording the geometric picture. The classical phase plane is coordi
 This gives a compact statement of the oscillator's sector structure:
 
 $$
-\text{phase plane} = \mathbb{C}_{\mathbb{B}} = \left(\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}}\right) \oplus \left(\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}}\right), \qquad
-J = i\big|_{\mathbb{C}_{\mathbb{B}}} \ \text{swaps the two summands.}
+\boxed{\;\text{phase plane} = \mathbb{C}_{\mathbb{B}} = \left(\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}}\right) \oplus \left(\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}}\right), \qquad
+J = i\big|_{\mathbb{C}_{\mathbb{B}}} \ \text{swaps the two summands.}\;}
 $$
 
 The oscillator is the system that makes this picture dynamical. A general classical system with $n$ degrees of freedom has a $2n$-dimensional phase space; the oscillator is the case $n=1$ in which the phase space is the centre and the flow is the algebra's complex structure. The higher-dimensional and nonlinear cases are the business of the companions on central forces.
@@ -196,7 +193,7 @@ $$
 In the algebra, $|a|^2$ is the scalar part of the Hermitian form of the central element $\tilde{A}$:
 
 $$
-\tilde{A}\,\tilde{A}^{*} = |a|^2\,e_t, \qquad E = \frac{1}{2}m\omega^2\,\mathrm{Sc}\!\left(\tilde{A}\tilde{A}^{*}\right) .
+\boxed{\;\tilde{A}\,\tilde{A}^{*} = |a|^2\,e_t, \qquad E = \frac{1}{2}m\omega^2\,\mathrm{Sc}\!\left(\tilde{A}\tilde{A}^{*}\right)\;}.
 $$
 
 The energy is therefore the **Hermitian form** of the amplitude, and it is positive definite: $\tilde{A}\tilde{A}^{*} = 0$ if and only if $\tilde{A} = 0$. This is what makes the oscillator bounded — the orbit in the centre is a circle and the energy is the squared radius. The positivity of the energy and the compactness of the orbit are the same fact.

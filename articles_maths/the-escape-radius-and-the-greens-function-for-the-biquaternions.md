@@ -53,7 +53,7 @@ where the two comparisons use $|\log^+(mt)-\log^+t|\le|\log m|$ for $m,t>0$, and
 **Proposition (the functional equation and the vanishing locus).** Wherever $G_{\tilde Q_2}$ is defined,
 
 $$
-G_{\tilde Q_2}(F_{\tilde Q_2}(\tilde Q))=2\,G_{\tilde Q_2}(\tilde Q),
+\boxed{\;G_{\tilde Q_2}(F_{\tilde Q_2}(\tilde Q))=2\,G_{\tilde Q_2}(\tilde Q)\;},
 $$
 
 and $G_{\tilde Q_2}=0$ on $\mathcal K_{\tilde Q_2}$: on every bounded orbit the sequence $2^{-n}\log^+\|F^n(\tilde Q)\|_E$ is $O(2^{-n})$ and tends to $0$.
@@ -67,7 +67,7 @@ and $G_{\tilde Q_2}=0$ on $\mathcal K_{\tilde Q_2}$: on every bounded orbit the 
 **Proposition (conditional existence and normalization).** Let $\delta>0$ and let $\Omega_{\tilde Q_2,\delta}$ be the set of the points $\tilde Q\in\Omega_{\tilde Q_2}$ whose orbit satisfies $\sigma_2(M_n)\ge\delta\,\sigma_1(M_n)$ for every $n$, where $M_n=\mathsf{M}_2(F_{\tilde Q_2}^n(\tilde Q))$. Then $G_{\tilde Q_2}$ is defined on $\Omega_{\tilde Q_2,\delta}$, and on it
 
 $$
-G_{\tilde Q_2}(\tilde Q)=\log\|\tilde Q\|_E+O(1), \qquad \tilde Q\to\infty .
+\boxed{\;G_{\tilde Q_2}(\tilde Q)=\log\|\tilde Q\|_E+O(1), \qquad \tilde Q\to\infty\;}.
 $$
 
 **Proof.** By the conditional escape proposition of *The Biquaternion Mandelbrot Set and the Connectedness Locus*, $\|F_{\tilde Q_2}(\tilde Q)\|_E\ge\delta^2\|\tilde Q\|_E^2$ on the condition, so with $\tilde Q_n=F_{\tilde Q_2}^n(\tilde Q)$ and $t=\|\tilde Q\|_E$ one gets $\log\|\tilde Q_n\|_E\ge 2^n(\log t+2\log\delta)+O(1)$, and submultiplicativity up to the fixed factor gives the matching upper bound $\log\|\tilde Q_n\|_E\le 2^n(\log t+\tfrac12\log2)+O(1)$. Dividing by $2^n$ and letting $n\to\infty$ the limit exists and lies between $\log t+2\log\delta$ and $\log t+\tfrac12\log2$, whence $G_{\tilde Q_2}(\tilde Q)=\log\|\tilde Q\|_E+O(1)$ with a constant depending on $\delta$. When $\delta^2\|\tilde Q\|_E\ge1$ the sizes increase from the first iterate, so the limit is an increasing limit, well defined whether finite or $+\infty$.
@@ -81,7 +81,7 @@ For a central parameter the whole pluripotential picture collapses to the comple
 **Theorem (the Green's function of a central parameter).** Let $\tilde Q_2=Ce_t$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then
 
 $$
-G_{\tilde Q_2}(\tilde Q)=\max\bigl(G_C(\lambda_1),\,G_C(\lambda_2)\bigr),
+\boxed{\;G_{\tilde Q_2}(\tilde Q)=\max\bigl(G_C(\lambda_1),\,G_C(\lambda_2)\bigr)\;},
 $$
 
 and in particular $\tilde Q\in\Omega_{\tilde Q_2}$ if and only if at least one eigenvalue escapes, while $\tilde Q\in\mathcal K_{\tilde Q_2}$ if and only if both eigenvalues lie in the filled Julia set $K_C$.

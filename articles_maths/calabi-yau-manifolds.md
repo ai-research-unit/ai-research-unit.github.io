@@ -7,8 +7,6 @@ A **Calabi–Yau manifold** is a compact Kähler manifold whose first Chern clas
 
 This article develops the condition, its equivalent forms, the holomorphic volume form and the Hodge-theoretic consequences that the holonomy restriction forces, and the two standard families of examples: the hypersurfaces of degree $n+1$ in $\mathbb{CP}^n$, among them the elliptic curves, the quartic $K3$ surfaces and the quintic threefolds, and the torus and orbifold constructions. It states Yau's theorem as the source of the metrics and the Bogomolov decomposition as the structure theorem for the whole class of manifolds with $c_1=0$. It closes with the period map and the mirror phenomenon, which exchanges the two Hodge numbers $h^{1,1}$ and $h^{2,1}$ of a Calabi–Yau threefold.
 
-**The boundaries of the article.** The Riemannian metric, the Levi-Civita connection, holonomy and Berger's classification are those of *Riemannian Geometry*. The complex structure, the Chern connection and the fundamental form are those of *Hermitian Geometry and Almost Complex Structures*; the Kähler condition, the Hodge decomposition, the Lefschetz theorems and the Ricci form are those of *Kähler Geometry*, and Yau's theorem is stated there and used here. The quaternionic and hyperkähler structures are those of *Quaternionic Geometry* and *Hyperkähler Geometry*; a Calabi–Yau manifold of even complex dimension whose holonomy is smaller than $SU(2n)$ is hyperkähler, and the hyperkähler manifolds are treated separately. The exceptional holonomy cases $G_2$ and $\mathrm{Spin}(7)$, which occur in real dimensions seven and eight and are the relatives of the Calabi–Yau condition, are not covered here. The characteristic classes of a complex manifold are those of *Characteristic Classes*, earlier in this Part. The Hodge theory of a compact Kähler manifold, the finiteness of the cohomology and the existence theory of the Monge–Ampère equation require the analysis of Part III, where the measure and the limit are available; the results are stated here and their proofs cited. The period map, the Torelli problem, mirror symmetry and the enumeration of rational curves belong to algebraic geometry and to the enumerative theory, and are mentioned only as consequences of the geometry. The base field is $\mathbb{C}$ for the manifolds and $\mathbb{R}$ for the metrics; no physics is invoked.
-
 ## The Calabi–Yau Condition
 
 **Definition.** A **Calabi–Yau manifold** is a compact Kähler manifold $M$ of complex dimension $n$ with $c_1(M) = 0$ in $H^2(M;\mathbb{R})$.
@@ -162,10 +160,6 @@ The standard examples are the elliptic curves in dimension one, the tori and $K3
 | $T^6/\mathbb{Z}_3$ | Rigid Calabi–Yau threefold from a resolved orbifold: $h^{1,1}=36$, $h^{2,1}=0$, $\chi=72$ |
 | Period map | $\mathcal{M}\to\mathcal{D}$, $M_t\mapsto$ Hodge filtration of $H^n(M;\mathbb{C})$ |
 | Mirror | $h^{1,1}(\check X)=h^{2,1}(X)$, $h^{2,1}(\check X)=h^{1,1}(X)$, $\chi(\check X)=-\chi(X)$ |
-
-
-
-
 
 ## Further Reading
 

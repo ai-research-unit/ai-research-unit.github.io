@@ -9,8 +9,6 @@ The handle is the local companion of *The Surgery Operator*: a surgery is what a
 
 **The article assumes** the homology of a manifold and of a pair, the boundary operator, the fundamental group and cell attachments, and the intersection form, that is, *Simplicial and Singular Homology*, *CW Complexes and Cellular Approximation*, *The Fundamental Group and Covering Spaces* and *Poincaré Duality* of this Part, together with *The Surgery Operator*.
 
-**The boundaries of the article.** The surgery classification, the $h$- and $s$-cobordism theorems and the group of homotopy spheres are *Cobordism and Surgery Theory*. The Morse-theoretic reading — the correspondence between handles and the critical points of a smooth function, the Morse inequalities and the cancellation theorems — is the differential topology of *Smooth Manifolds and Differential Topology* in Part III, and is stated here as a forward reference; the topological handle decomposition is what the article proves. The equivariant handle attachments are *Involutions on Manifolds and Equivariant Surgery*. No smooth function, no derivative and no analysis is used.
-
 ## The Handle Operator
 
 **Definition.** Let $W$ be a compact $n$-manifold with boundary and let $0 \leq k \leq n$. A **$k$-handle attachment** to $W$ is the operation of forming

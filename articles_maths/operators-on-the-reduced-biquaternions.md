@@ -4,10 +4,6 @@
 
 Each of the four general products of the reduced biquaternion algebra has a **left multiplication operator**, $L^{\circ}_{\breve Q}:\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$, and the four operators are collected here and compared. Two of them are complex-linear, those of the two bilinear products; two are conjugate-linear, those of the two sesquilinear products. On the complex basis $1,j$ each is a $2\times2$ matrix, and in the idempotent basis each becomes diagonal or off-diagonal of a simple shape, which makes the trace, the determinant, the eigenvalues and the invertibility visible at once. The multiplication of the algebra is **commutative**, so the left and the right multiplication operators of the plain product coincide; the algebra **has zero divisors**, so an operator may be singular at a non-zero element; and it is **not a division algebra**, so no operator calculus makes it one. The plain operator alone, with its matrix, trace, determinant and adjoints, is *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; this article is the collection and the comparison of the four.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The four general products are the general plain bilinear $\breve Q_{1}\breve Q_{2}$, the general tessarine bilinear $\breve Q_{1,\mathrm{ts}}\breve Q_{2}$, the general plain sesquilinear $\breve Q_{1}\breve Q_{2}^{*}$ and the general tessarine sesquilinear $\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}$, with the forms $B,N,H,K$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde; a product written $\circ$ is generic and its identity is stated at each use.
-
-**Boundaries.** The four products and their forms are *The Four Products, Their Forms and Their Algebraic Norms*, and the forms are *The Forms of the Algebra of the Reduced Biquaternions*; the plain operator alone is *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the idempotent splitting is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the invertibility criterion is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; and the matrices of the element are *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*. The biquaternion counterpart is *Operators on the Biquaternions*.
-
 ## The Four Left Multiplication Operators
 
 **Definition.** For a product $\circ$ and an element $\breve Q$, the **left multiplication** is the map
@@ -39,8 +35,10 @@ where $\kappa$ is the coefficient conjugation $\kappa\binom{Q_{2\blacktriangle}}
 
 **Theorem (the idempotent form).** In the idempotent basis, acting on the column $\binom{Q_{2+}}{Q_{2-}}$ of $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$, the four operators are
 $$
+\boxed{\;
 L_{\breve Q}=\operatorname{diag}(Q_{+},Q_{-}),\qquad
-L_{\mathrm{ts},\breve Q}=\operatorname{diag}(Q_{-},Q_{+}),
+L_{\mathrm{ts},\breve Q}=\operatorname{diag}(Q_{-},Q_{+})
+\;},
 $$
 $$
 L^{*}_{\breve Q}=\begin{pmatrix}0&Q_{+}\\ Q_{-}&0\end{pmatrix}\circ\kappa,\qquad
@@ -76,8 +74,10 @@ $$
 
 **Theorem (the invariants).** For $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$,
 $$
+\boxed{\;
 \operatorname{tr}L_{\breve Q}=\operatorname{tr}L_{\mathrm{ts},\breve Q}=Q_{+}+Q_{-}=2Q_{\blacktriangle},\qquad
-\det L_{\breve Q}=\det L_{\mathrm{ts},\breve Q}=Q_{+}Q_{-}=\langle \breve Q\rangle_{\mathrm{ts}},
+\det L_{\breve Q}=\det L_{\mathrm{ts},\breve Q}=Q_{+}Q_{-}=\langle \breve Q\rangle_{\mathrm{ts}}
+\;},
 $$
 with eigenvalues $Q_{+}$ and $Q_{-}$. The two sesquilinear operators satisfy
 $$
@@ -101,7 +101,9 @@ $$
 
 **Theorem (the adjoints).** For the definite form $\langle\cdot\rangle_{\mathrm{ts}*}$, the adjoint of the plain multiplication is the bar-conjugate element,
 $$
-(L_{\breve Q})^{K}=L_{\bar{\breve Q}};
+\boxed{\;
+(L_{\breve Q})^{K}=L_{\bar{\breve Q}}
+\;};
 $$
 for the indefinite form $\langle\cdot,\cdot\rangle_{*}$, the adjoint is the star-conjugate element,
 $$

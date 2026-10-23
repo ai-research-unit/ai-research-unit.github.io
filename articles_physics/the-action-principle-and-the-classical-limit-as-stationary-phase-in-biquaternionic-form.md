@@ -106,7 +106,7 @@ $$
 The bulk term vanishes for an arbitrary variation if and only if the **Euler–Lagrange equation** holds,
 
 $$
-\frac{d}{dt'}\frac{\partial L}{\partial\left(d\tilde q/dt'\right)}-\frac{\partial L}{\partial\tilde q}=0 ,
+\boxed{\;\frac{d}{dt'}\frac{\partial L}{\partial\left(d\tilde q/dt'\right)}-\frac{\partial L}{\partial\tilde q}=0\;},
 $$
 
 which is the four real equations of the preceding article. The boundary term is the part that does not vanish when the endpoints are free. Writing $\tilde p=\partial L/\partial\left(d\tilde q/dt'\right)$, it is
@@ -253,7 +253,7 @@ $$
 the **geodesic equation on the group**. Writing $\vec\eta=\tilde u^{\natural}d\tilde u/dt'$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt'}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/d{t'}^2=d\vec\eta/dt'+\vec\eta^2$ with $\vec\eta^2$ a real scalar; the equation therefore says that the vector part of $d\vec\eta/dt'$ vanishes, and since $\vec\eta$ is pure real for all $t'$ this is $d\vec\eta/dt'=0$. Equivalently, the equation with the constraint is $\frac{d}{dt'}(\tilde u^{\natural}d\tilde u/dt')=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
 
 $$
-\boxed{\;\tilde u(t')=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\vec\omega_b t'\right),\qquad \vec\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-,\;}
+\boxed{\;\tilde u(t')=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\vec\omega_b t'\right),\qquad \vec\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-\;},
 $$
 
 with $\vec\omega_b$ constant in the body frame. This is the free rigid body's motion, and it is derived here purely from the stationarity of the rotor action. The same calculation with the body-frame angular velocity replaced by the space-frame one gives the equivalent form $\tilde u(t')=\exp(+\tfrac12\vec\omega_s t')\tilde u(0)$. The rigid-body article takes this result as its starting point and adds the inertia and the torque.
@@ -267,11 +267,11 @@ The rotor action is the second reason the biquaternion formulation is useful for
 The purely analytic statement is the following. Let $S(x)$ be a real smooth function with a single nondegenerate critical point $x_0$, $dS/dx(x_0)=0$, $d^2S/dx^2(x_0)\neq0$, and let $g$ be smooth. Then as $\hbar\to0^+$,
 
 $$
-\int g(x)\,\exp(\,iS(x)/\hbar)\,dx
+\boxed{\;\int g(x)\,\exp(\,iS(x)/\hbar)\,dx
 \;\sim\;
 g(x_0)\,\sqrt{\frac{2\pi\hbar}{\left|\frac{d^2S}{dx^2}(x_0)\right|}}\;
 \exp(\,iS(x_0)/\hbar)\;
-\exp(\,i\frac{\pi}{4}\operatorname{sgn}\!\left(\frac{d^2S}{dx^2}(x_0)\right)) .
+\exp(\,i\frac{\pi}{4}\operatorname{sgn}\!\left(\frac{d^2S}{dx^2}(x_0)\right))\;}.
 $$
 
 The dominant phase is $S(x_0)/\hbar$; the prefactor is the Gaussian fluctuation determinant about the critical point; the last factor is the Maslov phase of the critical point. Points away from $x_0$ contribute to lower order because their phases oscillate rapidly and cancel. This is the **stationary-phase lemma**, and it contains no physics.
@@ -279,9 +279,9 @@ The dominant phase is $S(x_0)/\hbar$; the prefactor is the Gaussian fluctuation 
 The path-integral version applies the same lemma to a sum over trajectories weighted by $\exp(iS[\tilde q]/\hbar)$. The critical points of the action are the solutions of $\delta S=0$, that is, the classical paths, and the leading asymptotic is a sum over them,
 
 $$
-\int\mathcal{D}\tilde q\;\exp(\,iS[\tilde q]/\hbar)
+\boxed{\;\int\mathcal{D}\tilde q\;\exp(\,iS[\tilde q]/\hbar)
 \;\sim\;
-\sum_{\tilde q_c}\exp(\,iS[\tilde q_c]/\hbar)\,A[\tilde q_c]\;\bigl(1+O(\hbar)\bigr),
+\sum_{\tilde q_c}\exp(\,iS[\tilde q_c]/\hbar)\,A[\tilde q_c]\;\bigl(1+O(\hbar)\bigr)\;},
 $$
 
 where $A[\tilde q_c]$ is the square root of the inverse fluctuation determinant (the van Vleck factor) and a Maslov phase. The classical content of the statement is exactly this: **the set of critical points of the action is the set of classical trajectories.** The identification of the critical-point equations with the Euler–Lagrange equations was made in the first section, and in the phase-space form with Hamilton's equations in the second.

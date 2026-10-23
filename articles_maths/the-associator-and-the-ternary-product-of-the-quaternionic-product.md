@@ -32,7 +32,7 @@ which reduces the defect to the insertion of the conjugation and shows at once t
 **Theorem (the associator).** For all $\tilde Q_1,\tilde Q_2,\tilde Q_3 \in \mathbb{B}$,
 
 $$
-[\tilde Q_1,\tilde Q_2,\tilde Q_3] = \bigl(\tilde Q_2^{\natural}\tilde Q_1 - \tilde Q_1^{\natural}\tilde Q_2^{\natural}\bigr)\tilde Q_3 .
+\boxed{\; [\tilde Q_1,\tilde Q_2,\tilde Q_3] = \bigl(\tilde Q_2^{\natural}\tilde Q_1 - \tilde Q_1^{\natural}\tilde Q_2^{\natural}\bigr)\tilde Q_3 \;}.
 $$
 
 **Proof.** Expand the definition and use that ${}^{\natural}$ is an anti-automorphism of order two: $(\tilde Q_1\star\tilde Q_2)^{\natural} = (\tilde Q_1^{\natural}\tilde Q_2)^{\natural} = \tilde Q_2^{\natural}\tilde Q_1$. Therefore
@@ -88,7 +88,7 @@ the commutative companion of $\star$, written with the bare bullet as in the sym
 **Lemma.** The symmetrised product is central-valued:
 
 $$
-\tilde Q_1\bullet\tilde Q_2 = \beta(\tilde Q_1,\tilde Q_2)\,e_t , \qquad \beta(\tilde Q_1,\tilde Q_2) = Q_{1t}Q_{2t} + (\vec Q_1,\vec Q_2) .
+\boxed{\; \tilde Q_1\bullet\tilde Q_2 = \beta(\tilde Q_1,\tilde Q_2)\,e_t , \qquad \beta(\tilde Q_1,\tilde Q_2) = Q_{1t}Q_{2t} + (\vec Q_1,\vec Q_2) \;}.
 $$
 
 **Proof.** The two summands are $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_2^{\natural}\tilde Q_1$, whose vector parts are $Q_{1t}\vec Q_2 - Q_{2t}\vec Q_1 - \vec Q_1\times\vec Q_2$ and $Q_{2t}\vec Q_1 - Q_{1t}\vec Q_2 - \vec Q_2\times\vec Q_1$; the cross products cancel against one another by antisymmetry, leaving zero, and the two copies of $Q_{1t}\vec Q_2 - Q_{2t}\vec Q_1$ cancel by the half-sum. The scalar parts are equal and add to $2\beta(\tilde Q_1,\tilde Q_2)$.
@@ -102,7 +102,7 @@ $$
 **Theorem (the ternary product).** For all $\tilde Q_1,\tilde Q_2,\tilde Q_3 \in \mathbb{B}$,
 
 $$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \Bigl(\beta(\tilde Q_1,\tilde Q_2)\,Q_{3t} + \beta(\tilde Q_3,\tilde Q_2)\,Q_{1t} - \beta(\tilde Q_1,\tilde Q_3)\,Q_{2t}\Bigr)e_t .
+\boxed{\; \{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \Bigl(\beta(\tilde Q_1,\tilde Q_2)\,Q_{3t} + \beta(\tilde Q_3,\tilde Q_2)\,Q_{1t} - \beta(\tilde Q_1,\tilde Q_3)\,Q_{2t}\Bigr)e_t \;}.
 $$
 
 In particular the ternary product is central-valued, and it depends only on the scalar coordinates $Q_{1t},Q_{2t},Q_{3t}$ and on the pairings $\beta$ among the three arguments.

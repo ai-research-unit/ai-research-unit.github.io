@@ -85,7 +85,7 @@ The decisive structural fact is that, in $\mathbb{M}_+$, the algebra's positive 
 **Proposition.** For $\tilde{H} \in \mathbb{M}_+$,
 
 $$
-\tilde{H} \geq 0 \quad\Longleftrightarrow\quad \langle\tilde{H}\rangle_{\natural} = h_t^2 - |\vec h|^2 \geq 0 \ \ \text{and}\ \ h_t \geq 0 .
+\boxed{\;\tilde{H} \geq 0 \quad\Longleftrightarrow\quad \langle\tilde{H}\rangle_{\natural} = h_t^2 - |\vec h|^2 \geq 0 \ \ \text{and}\ \ h_t \geq 0\;}.
 $$
 
 The right-hand side is exactly the statement that $\tilde{H}$ lies in the closed future cone of the biquaternion norm. Thus the **positive cone of $\mathbb{M}_+$ coincides with the future light cone**, region for region, boundary included. In particular the positive cone is the future cone of a form of signature $(1,3)$, and the rank-one projections — the extreme rays of the positive cone — are precisely its null generators, $\langle\tilde{H}\rangle_{\natural} = 0$.
@@ -161,7 +161,7 @@ so the biquaternion norm is exactly the product of the two eigenvalues. Because 
 **The state space.** The states of a qubit — the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) — are exactly the elements of that hyperplane that lie in the closed future light cone:
 
 $$
-\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r), \qquad |\vec r| \leq 1 .
+\boxed{\;\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r), \qquad |\vec r| \leq 1\;}.
 $$
 
 The intersection with the null cone $\langle\tilde{Ϛ}\rangle_{\natural} = 0$, i.e. the sphere $|\vec r| = 1$, is the boundary of the ball; the intersection with the interior of the cone, $\langle\tilde{Ϛ}\rangle_{\natural} > 0$, i.e. $|\vec r| < 1$, is the interior of the ball.
@@ -206,7 +206,7 @@ $$
 **Zero divisors.** On the boundary $\langle\tilde{Ϛ}\rangle_{\natural} = 0$ with $\tilde{Ϛ} \neq 0$, so $\tilde{Ϛ}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\vec r| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,
 
 $$
-\text{pure state} \quad\Longleftrightarrow\quad \text{idempotent} \quad\Longleftrightarrow\quad \text{zero divisor} \quad\Longleftrightarrow\quad \langle\tilde{Ϛ}\rangle_{\natural} = 0 .
+\boxed{\;\text{pure state} \quad\Longleftrightarrow\quad \text{idempotent} \quad\Longleftrightarrow\quad \text{zero divisor} \quad\Longleftrightarrow\quad \langle\tilde{Ϛ}\rangle_{\natural} = 0\;}.
 $$
 
 This is the sense in which "the pure states are the zero divisors at trace one": the ideal boundary of the state space is exactly the set of elements at which the algebra ceases to be invertible. An interior state has $\langle\tilde{Ϛ}\rangle_{\natural} > 0$ and is invertible; a pure state has $\langle\tilde{Ϛ}\rangle_{\natural} = 0$ and is not. Purity is the loss of invertibility at the boundary of the cone.
@@ -216,7 +216,7 @@ This is the sense in which "the pure states are the zero divisors at trace one":
 The transition probability between two pure states is the normalised Hermitian form, read through the trace,
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec v)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr) = \cos^2\frac{\theta}{2},
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec v)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr) = \cos^2\frac{\theta}{2}\;},
 $$
 
 where $\theta$ is the angle between $\vec u$ and $\vec v$. It equals $1$ for $\vec u = \vec v$ and $0$ for $\vec u = -\vec v$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the plain form is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
@@ -384,9 +384,9 @@ $$
 with $h_t = \tfrac{1}{2}ct'$ and $\vec h = -\tfrac{1}{2}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and
 
 $$
-\mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct',
+\boxed{\;\mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct',
 \qquad
-\langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}.
+\langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}\;}.
 $$
 
 Each of the two relations is exact. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the trace-one slice of the future cone, at $ct' = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; there the relations specialize to
@@ -427,7 +427,6 @@ $$
 $$
 
 both non-negative for $ct' > 0$ and both non-positive for $ct' < 0$. The sign of the trace is the sign of $ct'$, so it is the **trace sign and not the sign of the norm** that separates the two sheets: $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ is positive on both timelike cones, and the quadratic form alone cannot tell them apart.
-
 
 The maximally mixed state is the image the map singles out. It is $\tilde{Ϛ} = \tfrac{1}{2}e_t$, the centre of the ball, and its mirror on the trace-one slice is $\tilde{R} = i\,e_t$: timelike, of the largest interval in magnitude on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
 
@@ -519,7 +518,6 @@ $$
 
 of trace $\cosh\phi$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the trace, and not preserving the trace is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the trace, the normalization of a state, is not a Lorentz invariant.
 
-
 ### The Sectors Are Anti-Isometric, Not Isomorphic
 
 The map above is a real-linear bijection, and it is tempting to read it as an isomorphism of the two sectors. It is not, and the failure is one line. Multiplication by $i$ is central, so $i(\tilde{Q}_1\tilde{Q}_2) = (i\tilde{Q}_1)\tilde{Q}_2 = \tilde{Q}_1(i\tilde{Q}_2)$; but
@@ -545,7 +543,6 @@ $$
 $$
 
 The material sector is therefore closed under the bracket and not under the product, which is the form in which the Minkowski signature re-enters the algebra: the antilinear involution $\flat$ makes $\mathbb{M}_-$ a real slice whose complexification is $\mathbb{B}$, and $i$ identifies the two sectors only as anti-isometric real quadratic spaces, with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not as algebras.
-
 
 ## What the Slice Picture Shows
 

@@ -111,15 +111,19 @@ $$
 so its two solutions are
 
 $$
-x_+ = \frac{Q_t+\sqrt{n}}{2}, \qquad x_- = \frac{Q_t-\sqrt{n}}{2},
-$$
+\boxed{\;
+x_+ = \frac{Q_t+\sqrt{n}}{2}, \qquad x_- = \frac{Q_t-\sqrt{n}}{2}
+\;}
+$$,
 
 where $\sqrt{n}$ is either square root of the complex number $n$; the choice of square root only exchanges $x_+$ and $x_-$.
 
 **Proposition (the roots with non-vanishing vector part).** Let $\vec Q\neq0$, and let $x_+$ and $x_-$ be the two solutions of the reduced quadratic. For each solution $x\in\{x_+,x_-\}$ with $x\neq0$, and for each of the two square roots $\Xi_t=\pm\sqrt{x}$, the element
 
 $$
+\boxed{\;
 \tilde\Xi = \Xi_te_t + \frac{\vec Q}{2\Xi_t}
+\;}
 $$
 
 is a square root of $\tilde Q$, and every square root of $\tilde Q$ with $\vec Q\neq0$ arises this way.
@@ -183,8 +187,10 @@ The generic case is four roots. The complex square $(\vec Q,\vec Q)$ of the vect
 **Four roots.** If $\vec Q\neq0$, $(\vec Q,\vec Q)\neq0$ and $n\neq0$, then the root set is two pairs, one for each solution of the reduced quadratic:
 
 $$
-\tilde\Xi = \pm\Bigl(\sqrt{x_+}\,e_t+\frac{\vec Q}{2\sqrt{x_+}}\Bigr), \qquad \tilde\Xi = \pm\Bigl(\sqrt{x_-}\,e_t+\frac{\vec Q}{2\sqrt{x_-}}\Bigr).
-$$
+\boxed{\;
+\tilde\Xi = \pm\Bigl(\sqrt{x_+}\,e_t+\frac{\vec Q}{2\sqrt{x_+}}\Bigr), \qquad \tilde\Xi = \pm\Bigl(\sqrt{x_-}\,e_t+\frac{\vec Q}{2\sqrt{x_-}}\Bigr)
+\;}
+$$.
 
 **A complex scalar.** If $\tilde Q$ is a complex scalar, $\tilde Q=Q_te_t$, then the root set is the two elements $\pm\sqrt{Q_t}e_t$ together with the four-real-parameter family of pure $\vec\Xi$ with $(\vec\Xi,\vec\Xi)=-Q_t$.
 

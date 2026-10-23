@@ -6,8 +6,6 @@ This article defines the **two products** carried by the split-complex space —
 
 The two products are defined and their structures asserted here. The associator of the sesquilinear product, its ternary product, its left and right multiplications, its sandwich and its commutator are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The forms and the norms the two products define are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the products read on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The ring multiplication alone, with its zero divisors, its idempotents and its ideals, is *Split-Complex Algebra* and its companions.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$, with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$. The Hermitian conjugation coincides with the bar. In this article $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ name elements, and the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$ are kept for the forms and norms of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
-
 ## The Two Products
 
 **Definition.** The **general plain bilinear product** and the **general plain sesquilinear product** of the elements $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are
@@ -29,7 +27,7 @@ and the two products coincide exactly when the second factor is real or the firs
 **Proof.** Bilinearity of $Q_1Q_2$ is the distributivity of the algebra. For $Q_1\overline{Q_2}$, linearity in $Q_1$ is clear from the coordinates; in the second argument, $Q_1\overline{\lambda Q_2}=Q_1\,\bar\lambda\,\overline{Q_2}=\bar\lambda\,Q_1\overline{Q_2}$, so the argument is conjugate-linear. The difference is
 
 $$
-Q_1Q_2 - Q_1\overline{Q_2} = 2q'_2(q'_1+q_1j),
+\boxed{\; Q_1Q_2 - Q_1\overline{Q_2} = 2q'_2(q'_1+q_1j) \;},
 $$
 
 which vanishes if and only if $q'_2=0$, that is $Q_2\in\mathbb{R}$, or $Q_1=0$.
@@ -63,7 +61,7 @@ The failure of the field condition is the subject of *Zero Divisors of the Split
 **Theorem (the sesqualgebra).** Over the algebra with involution $(\mathbb{D},\bar{\cdot})$, the product $Q_1\overline{Q_2}$ is conjugate-commutative,
 
 $$
-Q_1\overline{Q_2} = \overline{Q_2\overline{Q_1}},
+\boxed{\; Q_1\overline{Q_2} = \overline{Q_2\overline{Q_1}} \;},
 $$
 
 it has the **right** unit $1$ and no left unit, and it is **not** associative.
@@ -98,7 +96,7 @@ The associator, the left and right multiplications, the sandwich and the commuta
 The idempotent coordinates separate the two products completely. With $Q_1=q_{1+}\Pi_1+q_{1-}\Pi_2$ and $Q_2=q_{2+}\Pi_1+q_{2-}\Pi_2$, and with the bar exchanging the coordinates, $\overline{Q_2}=q_{2-}\Pi_1+q_{2+}\Pi_2$, one has
 
 $$
-Q_1Q_2 = q_{1+}q_{2+}\Pi_1 + q_{1-}q_{2-}\Pi_2, \qquad Q_1\overline{Q_2} = q_{1+}q_{2-}\Pi_1 + q_{1-}q_{2+}\Pi_2 .
+\boxed{\; Q_1Q_2 = q_{1+}q_{2+}\Pi_1 + q_{1-}q_{2-}\Pi_2, \qquad Q_1\overline{Q_2} = q_{1+}q_{2-}\Pi_1 + q_{1-}q_{2+}\Pi_2 \;}.
 $$
 
 So the ring product is the **componentwise** product of the two idempotent coordinates, and the sesquilinear product is the componentwise product with the second factor's coordinates **exchanged**. Writ large on the pairs,

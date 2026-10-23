@@ -8,10 +8,6 @@ The parametrization fails in two ways, and they are different. The four exponent
 
 The article reads the word, the defect and the boundary. The decomposition, the defect and the boundary limits are those of *Exponential Polar Decomposition of Biquaternions* and *The Polar Decomposition of Biquaternions*. The article owns the physical reading and its limits.
 
-**Placement.** The article belongs to the Algebra block of the category, after *The Polar Decomposition and Its Three Pairings* and before *The Exponential, the Logarithm and the Generator*. It is the boundary companion of the polar article: that article reads the four factors in the interior, and this one reads what happens at the edge.
-
-**Conventions.** The word is
-
 $$
 \tilde Q=r\,e^{i\alpha}\,\tilde B\,\tilde u_{\mathrm r},
 \qquad
@@ -74,11 +70,11 @@ $$
 It is the element that the quaternion case would call the logarithm. Here it is not one:
 
 $$
-\exp\left(\tilde Q_{\log}\right)\neq\tilde Q
+\boxed{\;\exp\left(\tilde Q_{\log}\right)\neq\tilde Q
 \qquad\text{unless}\qquad
 [\vec u_{\mathrm b},\vec u_{\mathrm r}]=0
 \quad\text{or}\quad
-\psi\theta=0.
+\psi\theta=0\;}.
 $$
 
 The defect is the Baker–Campbell–Hausdorff correction. To first order,
@@ -161,9 +157,9 @@ $$
 Every member is a unit, and the limit is
 
 $$
-\tilde Q(\psi)\longrightarrow
+\boxed{\;\tilde Q(\psi)\longrightarrow
 \frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
-\qquad(\psi\to\infty).
+\qquad(\psi\to\infty)\;}.
 $$
 
 The limit is a nonzero null element of rank one. Its stratum is decided by the rotor. Write
@@ -198,9 +194,9 @@ so the distance to the cone is exponential in the rapidity. The word approaches 
 The idempotents are not values of the exponential, because every exponential is a unit and an idempotent is not. They are limits of values:
 
 $$
-\tilde\Pi_+=\frac12\left(e_t+i\vec u\right)
+\boxed{\;\tilde\Pi_+=\frac12\left(e_t+i\vec u\right)
 =\lim_{\psi\to\infty}\frac{\exp\left(i\frac{\psi}{2}\vec u\right)}{2\cosh\frac{\psi}{2}}
-=\lim_{\psi\to\infty}e^{-\psi/2}\exp\left(i\frac{\psi}{2}\vec u\right).
+=\lim_{\psi\to\infty}e^{-\psi/2}\exp\left(i\frac{\psi}{2}\vec u\right)\;}.
 $$
 
 The idempotent is the direction of an infinite boost, with the scale removed. The nilpotent stratum has its own version. For $N^2=0$,

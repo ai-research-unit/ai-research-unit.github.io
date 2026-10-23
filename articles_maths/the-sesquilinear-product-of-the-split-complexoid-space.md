@@ -18,10 +18,6 @@ $$
 
 which vanishes exactly when the third factor is real; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{D}$ an algebraic $J^{*}$-algebra. The right multiplications $R_Q$ generate the opposite monoid of the multiplicative monoid of $\mathbb{D}$, while the left ones $L_Q$ do not close; the sandwich $X \mapsto Q_1X\bar Q_2$ decomposes into one ordinary and one sesquilinear multiplication and is adjoint to the sandwich with the parameters exchanged; and the commutator $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2 - q_1q'_2)j$ lies on the split imaginary line, its halved antisymmetrisation is the area form and its symmetrisation is the scalar form $q_1q_2 - q'_1q'_2$ that the norm polarises. The bracket defined by the commutator satisfies the Jacobi identity.
 
-**Placement.** The article opens the split-complex general-plain-sesqualgebra block, after the general-plain-algebra block; the two products as a family and the collapse to two are *The Two Products of the Split-Complexoid Space*, and the slot reading of the two products, with the two pairings and the two adjoints they carry, is *Relations and Comparison Between the Two Products of the Split-Complexoid Space*, above this article in this category. The form theory of the second slot — $\langle\cdot,\cdot\rangle_{*}$ as a form on the regular module, the positivity cone, the modules and the Witt group — is *The Hermitian Form and the Cone of the Split-Complexoid Algebra*, below this article in this category. The multiply-unrelated material is *Split-Complex Algebra*, which owns the plain product, and *Norm and Invertibility in the General Split-Complex Algebra*.
-
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$, general element $Q = q+jq'$, conjugate $\bar Q = q-jq'$, idempotents $\Pi_1 = \tfrac12(1+j)$ and $\Pi_2 = \tfrac12(1-j)$, idempotent coordinates $q_+ = q+q'$ and $q_- = q-q'$. The product is written with a star, $Q_1 \star Q_2 = Q_1\bar Q_2$, and never with a bare juxtaposition, which is reserved for the plain product; the conjugation is never written as an operator symbol. The involution of the algebra is the bar, the coefficients being real and the idempotent swap coinciding with it, so the symbol $*$ of the general theory is realised here by the bar alone; the words **linear** and **conjugate-linear** are read over the ring $(\mathbb{D},\bar\cdot)$, in the sense of the two scalar rules below.
-
 ## The Product and Its Two Slots
 
 ### The Rule
@@ -88,7 +84,9 @@ $$
 **Theorem.** For all $Q_1,Q_2,Q_3 \in \mathbb{D}$,
 
 $$
-[Q_1,Q_2,Q_3] = Q_1\bar Q_2\,(\bar Q_3 - Q_3),
+\boxed{\;
+[Q_1,Q_2,Q_3] = Q_1\bar Q_2\,(\bar Q_3 - Q_3)
+\;},
 $$
 
 an element of $\mathbb{D}$ that vanishes exactly when $Q_1 = 0$, or $Q_2 = 0$, or $Q_3$ is real.
@@ -198,7 +196,9 @@ the sandwich at the unit is the product, and the two families of one-sided multi
 **Proposition.** The sandwich is $\mathbb{D}$-linear in $X$, and its value at $1$ is the sesquilinear product $Q_1 \star Q_2$. Its composite with another sandwich is again a sandwich,
 
 $$
-S_{Q_1,Q_2} \circ S_{Q_3,Q_4} = S_{Q_1Q_3,\,Q_2Q_4} .
+\boxed{\;
+S_{Q_1,Q_2} \circ S_{Q_3,Q_4} = S_{Q_1Q_3,\,Q_2Q_4}
+\;}.
 $$
 
 **Proof.** Direct substitution, using the associativity of the plain product and the multiplicativity of the conjugation: $S_{Q_1,Q_2}(S_{Q_3,Q_4}(X)) = Q_1(Q_3X\bar Q_4)\bar Q_2 = (Q_1Q_3)X\bar Q_4\bar Q_2 = (Q_1Q_3)X\overline{Q_2Q_4} = S_{Q_1Q_3,Q_2Q_4}(X)$.
@@ -226,7 +226,9 @@ the symmetric bilinear form $g$ that the norm polarises, of signature $(1,1)$.
 **Theorem.** The adjoints of the one-sided multiplications and of the sandwich are
 
 $$
-M_Q^{*} = M_{\bar Q}, \qquad R_Q^{*} = M_Q, \qquad L_Q^{*} = L_Q, \qquad S_{Q_1,Q_2}^{*} = S_{Q_2,Q_1} .
+\boxed{\;
+M_Q^{*} = M_{\bar Q}, \qquad R_Q^{*} = M_Q, \qquad L_Q^{*} = L_Q, \qquad S_{Q_1,Q_2}^{*} = S_{Q_2,Q_1}
+\;}.
 $$
 
 In particular the ordinary multiplication by a real element is self-adjoint, $M_t^{*} = M_t$ for $t \in \mathbb{R}$; the left multiplication is self-adjoint; and the sandwich is adjoint to the sandwich with the parameters exchanged.
@@ -274,8 +276,10 @@ So the commutator of the sesquilinear product is a hyperbolic vector: it lies on
 **Theorem (the symmetrisation and the antisymmetrisation).** The symmetric and antisymmetric halves of the product are
 
 $$
+\boxed{\;
 \tfrac12(Q_1\bar Q_2 + Q_2\bar Q_1) = q_1q_2-q'_1q'_2 = g(Q_1,Q_2), \qquad
-\tfrac12(Q_1\bar Q_2 - Q_2\bar Q_1) = (q'_1q_2-q_1q'_2)\,j .
+\tfrac12(Q_1\bar Q_2 - Q_2\bar Q_1) = (q'_1q_2-q_1q'_2)\,j
+\;}.
 $$
 
 The **symmetrisation** is the real scalar $g(Q_1,Q_2)$, the symmetric bilinear form that the norm polarises, and it does not depend on the product beyond the definition; the **antisymmetrisation** is the element $(q'_1q_2-q_1q'_2)j$ of the split imaginary line. In particular the symmetrisation recovers the scalar form $g(Q_1,Q_2) = q_1q_2-q'_1q'_2$ from the sesquilinear product, and the antisymmetrisation is the commutator halved.

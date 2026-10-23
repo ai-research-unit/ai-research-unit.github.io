@@ -22,8 +22,6 @@ a statement about the two arguments and the coefficientwise conjugate of the val
 
 Three boundaries are stated at once. The product that is split, its two-sided operators and its two models are *Introduction to the General Plain Sesqualgebra*, *The Left and Right Multiplications of the Biquaternion Sesqualgebra* and the two articles *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*, and none of the three is repeated here. The product itself, the four general products as a family and the row table are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*. The general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and its long development, with the conjugation, the projections and the structure constants, is *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*; both are cited and not restated. The **other** antisymmetrisation of the same product, the sesquilinear commutator of *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*, is the half of the **bare** interchange and is a different operation; §*The Adapted Exchange* of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product* sets the two side by side, and the exact defect between them is computed in *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*, below in this block.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, $\vec e_k^2=-e_t$, and central scalar imaginary $i$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$ and $\overline{\vec Q}$ the coefficientwise conjugate of the vector part. The natural conjugation ${}^{\natural}$ negates the vector part, the coefficientwise conjugation $\bar{\cdot}$ conjugates the coefficients, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, with coordinates $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$. The dot and cross products of vector parts are the complex bilinear ones of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*. Throughout, $\diamond$ is the operation of this block.
-
 ## The Operation
 
 ### The Definition and the Coordinate Rule
@@ -70,9 +68,7 @@ $$
 
 **Theorem (the operation is conjugate-alternating).** For all biquaternions,
 
-$$
-\tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1}.
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1} \;}. $$
 
 *Proof.* $\tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)$ and $\tilde Q_2\diamond\tilde Q_1=\tfrac12\bigl(\tilde Q_2\tilde Q_1^{*}-\overline{\tilde Q_1\tilde Q_2^{*}}\bigr)$; conjugating the second and negating, $-\overline{\tilde Q_2\diamond\tilde Q_1}=\tfrac12\bigl(\overline{\tilde Q_2\tilde Q_1^{*}}-\tilde Q_1\tilde Q_2^{*}\bigr)=\tilde Q_1\diamond\tilde Q_2$.
 
@@ -92,9 +88,7 @@ $$
 
 **Proposition (the image is the vector subspace; the centre is not in it).** The image of $\diamond$ is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three over $\mathbb{C}$; the operation is central-free, so no value lies in the centre $\mathbb{C}_{\mathbb{B}}$ except $0$. The two one-sided actions of the unit are
 
-$$
-\tilde Q_1\diamond e_t=\vec Q_1,\qquad e_t\diamond\tilde Q=-\overline{\vec Q} .
-$$
+$$ \boxed{\; \tilde Q_1\diamond e_t=\vec Q_1,\qquad e_t\diamond\tilde Q=-\overline{\vec Q} \;}. $$
 
 *Proof.* Every value is a vector part, so the image is contained in $\mathrm{Vect}(\mathbb{B})$. The first display gives the whole vector subspace, since $\vec Q_1$ is an arbitrary vector part, and it is the computation of $\mathrm{Vect}(\tilde Q_1 e_t^{*})=\mathrm{Vect}(\tilde Q_1)$. The second is $\mathrm{Vect}(\tilde Q^{*})=\mathrm{Vect}(-\overline{\vec Q})=-\overline{\vec Q}$. The scalar part vanishing with a nonzero vector part is not central, and the zero value is central.
 
@@ -123,9 +117,7 @@ while off the real basis it is not, by the next section. The real basis therefor
 
 **Proposition (the diagonal is the vector part of the square).** For every biquaternion,
 
-$$
-\tilde Q\diamond\tilde Q=\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr),
-$$
+$$ \boxed{\; \tilde Q\diamond\tilde Q=\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr) \;}, $$
 
 the vector part of the square of the row. It does not vanish in general: at $\tilde Q=\vec e_x+i\vec e_y$ it is
 

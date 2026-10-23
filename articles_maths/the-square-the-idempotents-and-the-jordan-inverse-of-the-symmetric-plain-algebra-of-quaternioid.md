@@ -6,8 +6,6 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the norm is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, the generic trace is $T(\tilde q)=2q_t$, and the multiplication operator is $L^{\bullet}_{\tilde q_1}\tilde q_2=\tilde q_1\bullet\tilde q_2$ of *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category.
-
 ## The Square Map
 
 **Definition.** The **square map** of the block is
@@ -39,7 +37,7 @@ and by the quadratic identity $\tilde q^2-T(\tilde q)\tilde q+\langle\tilde q\ra
 **Theorem.** The idempotents of the block are exactly
 
 $$
-\tilde\pi\in\{0,\ e_t\},
+\boxed{\;\tilde\pi\in\{0,\ e_t\}\;},
 $$
 
 the two trivial idempotents; there is no nontrivial one.
@@ -55,7 +53,7 @@ the two trivial idempotents; there is no nontrivial one.
 **Theorem (the cubic identity).** The multiplication operator satisfies the cubic Peirce identity
 
 $$
-2\,(L^{\bullet}_{\tilde\pi})^3-3\,(L^{\bullet}_{\tilde\pi})^2+L^{\bullet}_{\tilde\pi}=0
+\boxed{\;2\,(L^{\bullet}_{\tilde\pi})^3-3\,(L^{\bullet}_{\tilde\pi})^2+L^{\bullet}_{\tilde\pi}=0\;}
 $$
 
 at every idempotent $\tilde\pi$, so the spectrum is contained in $\{0,\tfrac12,1\}$.
@@ -81,7 +79,7 @@ where $J_\lambda(\tilde\pi)=\{\tilde q : \tilde\pi\bullet\tilde q=\lambda\tilde 
 **Theorem.** An element is invertible exactly when $\langle\tilde q\rangle_{\natural}\neq0$, that is, when $\tilde q\neq0$, and the inverse is
 
 $$
-\tilde q^{-1}=\frac{T(\tilde q)e_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{2q_te_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}} .
+\boxed{\;\tilde q^{-1}=\frac{T(\tilde q)e_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{2q_te_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}}\;}.
 $$
 
 *Proof.* This is *Norm and Invertibility in the Symmetric Plain Algebra*; the inverse satisfies $\tilde q\bullet\tilde q^{-1}=e_t$ and $\tilde q^{\bullet2}\bullet\tilde q^{-1}=\tilde q$.
@@ -103,8 +101,8 @@ $$
 **Theorem.** The quadratic representation is the plain sandwich operator and it is multiplicative in the norm:
 
 $$
-U_{\tilde q_1}(\tilde q_2)=\tilde q_1\,\tilde q_2\,\tilde q_1,\qquad
-N\bigl(U_{\tilde q_1}\tilde q_2\bigr)=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}.
+\boxed{\;U_{\tilde q_1}(\tilde q_2)=\tilde q_1\,\tilde q_2\,\tilde q_1,\qquad
+N\bigl(U_{\tilde q_1}\tilde q_2\bigr)=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}\;}.
 $$
 
 *Proof.* Expanding $U_{\tilde q_1}(\tilde q_2)$ in the symmetrised plain product, $U_{\tilde q_1}(\tilde q_2)=\tfrac12\bigl(\tilde q_1(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)+(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)\tilde q_1\bigr)-\tfrac12(\tilde q_1^2\tilde q_2+\tilde q_2\tilde q_1^2)=\tilde q_1\tilde q_2\tilde q_1$ by the associativity of the plain product. The norm identity is the multiplicativity of $\langle\cdot\rangle_{\natural}$ applied twice, $\langle\tilde q_1\tilde q_2\tilde q_1\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$.

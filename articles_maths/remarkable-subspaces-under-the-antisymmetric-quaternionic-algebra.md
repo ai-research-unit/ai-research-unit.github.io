@@ -18,9 +18,7 @@ The centre is thus an abelian subalgebra of the block, of complex dimension one,
 
 **Proposition.** The vector subspace $\mathrm{Vect}(\mathbb{B})=\{\tilde Q:\tilde Q^{\natural}=-\tilde Q\}$ is closed under the operation; on it the operation is the negative of the cross product,
 
-$$
-\tilde Q_1\diamond\tilde Q_2 = -\,\vec Q_1\times\vec Q_2 \qquad (\vec Q_1,\vec Q_2 \text{ pure}) ,
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2 = -\,\vec Q_1\times\vec Q_2 \qquad (\vec Q_1,\vec Q_2 \text{ pure}) \;}, $$
 
 it is a Lie algebra, and it is the image of the operation on the whole algebra. Its complex dimension is three and its real dimension six.
 
@@ -32,9 +30,7 @@ Apart from the centre, whose operation vanishes, the vector subspace and the qua
 
 **Proposition.** The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is closed under the operation and its image is the real span of $\vec e_x,\vec e_y,\vec e_z$, of real dimension three. On it the operation is the real mixed term with the real cross term subtracted,
 
-$$
-\tilde Q_1\diamond\tilde Q_2 = p_t\vec Q_2-q_t\vec Q_1-\vec Q_1\times\vec Q_2 , \qquad p_t,q_t\in\mathbb{R},\ \vec Q_1,\vec Q_2\in\mathbb{R}^3 ,
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2 = p_t\vec Q_2-q_t\vec Q_1-\vec Q_1\times\vec Q_2 , \qquad p_t,q_t\in\mathbb{R},\ \vec Q_1,\vec Q_2\in\mathbb{R}^3 \;}, $$
 
 and the Jacobi identity fails on it, at the triple $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $-\vec e_z$.
 
@@ -46,9 +42,7 @@ The quaternion subspace is the largest of the remarkable subspaces on which the 
 
 **Proposition.** The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ is **not** closed under the operation. It maps into the quaternion subspace,
 
-$$
-(i\mathbb{H}_{\mathbb{B}})\diamond(i\mathbb{H}_{\mathbb{B}}) \subseteq \mathbb{H}_{\mathbb{B}} , \qquad (i\mathbb{H}_{\mathbb{B}})\diamond\mathbb{H}_{\mathbb{B}} \subseteq i\mathbb{H}_{\mathbb{B}} ,
-$$
+$$ \boxed{\; (i\mathbb{H}_{\mathbb{B}})\diamond(i\mathbb{H}_{\mathbb{B}}) \subseteq \mathbb{H}_{\mathbb{B}} , \qquad (i\mathbb{H}_{\mathbb{B}})\diamond\mathbb{H}_{\mathbb{B}} \subseteq i\mathbb{H}_{\mathbb{B}} \;}, $$
 
 its image is the real span of $\vec e_x,\vec e_y,\vec e_z$, and the smallest witness of the failure of closure is $i\vec e_x\diamond i\vec e_y=\vec e_z$.
 

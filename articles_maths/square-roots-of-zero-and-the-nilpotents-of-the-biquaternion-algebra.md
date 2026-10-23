@@ -16,8 +16,6 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are *Zero Divisors of the Biquaternion Algebra*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the minimal ideals the nilpotents generate are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the star is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The general plain bilinear form of two vector parts is
-
 $$
 (\vec Q_1,\vec Q_2)=\sum_{k=1}^{3}Q_{1k}Q_{2k},
 $$
@@ -25,8 +23,10 @@ $$
 and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The **central square** is
 
 $$
-\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2 .
-$$
+\boxed{\;
+\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2
+\;}
+$$.
 
 The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
@@ -115,8 +115,10 @@ $$
 **The null cone.** The pure biquaternions of vanishing complex square, a four-real-parameter family,
 
 $$
-\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z,\qquad \Xi_x^2+\Xi_y^2+\Xi_z^2=0,
-$$
+\boxed{\;
+\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z,\qquad \Xi_x^2+\Xi_y^2+\Xi_z^2=0
+\;}
+$$,
 
 that is, writing $\Xi_k=\xi_k+i\xi'_k$, the pair of real equations $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$. Its nonzero elements are the nilpotents of the algebra.
 
@@ -201,8 +203,10 @@ that is $\sum_kp_k^2=\sum_k(p'_k)^2$ and $\sum_kp_kp'_k=0$: the two real parts o
 **Proposition (the cone).** The nilpotents form the **nilpotent cone**
 
 $$
-\{\tilde\Upsilon=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z : Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0\},
-$$
+\boxed{\;
+\{\tilde\Upsilon=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z : Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0\}
+\;}
+$$,
 
 a complex cone of complex dimension two and real dimension four, a four-real-parameter family. Its nonzero elements are written
 

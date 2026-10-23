@@ -294,9 +294,11 @@ a union of two-dimensional spheres, one for each positive integer, together with
 
 **Corollary.** The kernel is not a subgroup of $(\mathbb{H},+)$. The elements $2\pi\vec e_x$ and $2\pi\vec e_y$ lie in the kernel, but their sum $2\pi(\vec e_x+\vec e_y)$ has norm $8\pi^2$, which is not the square of a multiple of $2\pi$, so the sum is not in the kernel.
 
-The fibre over a non-real element is the discrete line of §*The General Logarithm*. It is not a translate of the kernel: the kernel is a union of spheres and the fibre is a line. The fibre over a positive real element is the translate $\ln r+\ker\exp$, because $\ker\exp$ contains the origin and the spheres of radius $2\pi k$. The fibre over a negative real element is a union of spheres of radius $(2k+1)\pi$, also not a translate of the kernel. In the complex case the kernel $2\pi i\mathbb{Z}$ is a subgroup and every fibre is a coset; here only the positive real axis gives cosets.
+The fibre over a non-real element is the discrete line of §*The General Logarithm*. It is not a translate of the kernel: the kernel is a union of spheres and the fibre is a line. The fibre over a positive real element is the translate $\ln r+\ker\exp$, because $\ker\exp$ contains the origin and the spheres of radius $2\pi k$. The fibre over a negative real element is a union of spheres of radius $(2k+1)\pi$, also not a translate of the kernel. In the complex case the kernel $2\pi i\mathbb{Z}$ is a subgroup and every fibre is a coset; here only the positive real axis gives a translate of the kernel.
 
 ## Worked Examples
+
+A full set of eight cases, with reconstruction and logarithm tables and the boundary family, is in *Worked Examples of Exponential Polar Decomposition of Quaternions*. The examples here show the generic computation and the table.
 
 ### A Generic Quaternion
 
@@ -620,6 +622,7 @@ The differential of the exponential is invertible exactly off the spheres $\sqrt
 
 ## Further Reading
 
+- [Worked Examples of Exponential Polar Decomposition of Quaternions](worked-examples-of-exponential-polar-decomposition-of-quaternions.html), for the eight cases, the reconstruction and logarithm tables, the real axis family and the product defect.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 1985), for the matrix exponential, the matrix logarithm and the polar decomposition.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map of $SU(2)$ and the unit quaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition 2001), for the quaternion exponential and its relation to the rotation group.

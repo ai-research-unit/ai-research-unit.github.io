@@ -83,7 +83,7 @@ $$
 $$
 It is a unit quaternion, its trace is gauge invariant, and it is the lattice representative of the curvature. Expanding the links at small $a$ and collecting the leading term,
 $$
-\tilde U_{\mu\nu}(n)=\exp\!\big(ia^2\kappa\,F_{\mu\nu}(n)+O(a^3)\big),
+\boxed{\;\tilde U_{\mu\nu}(n)=\exp\!\big(ia^2\kappa\,F_{\mu\nu}(n)+O(a^3)\big)\;},
 $$
 where $F_{\mu\nu}$ is the continuum curvature of the companion article. The identity was checked numerically on a constant non-abelian field configuration: with $\tilde U_\mu=\exp(ia\kappa\mathcal{A}_\mu)$ and $\mathcal{A}_\mu$ a generic superposition of all three generators $T_a$ — not a single generator, so that the commutator contributes — the residual $\|\tilde U_{\mu\nu}-\exp(ia^2\kappa F_{\mu\nu})\|$ was $2.6\times10^{-9}$ at $a=2\times10^{-3}$ and fell by a factor of $8$ for each halving of $a$, that is as $a^3$, as the expansion requires. The two facts that make the plaquette the right object are visible in the formula: it is built from the group, so it is bounded, and its small-$a$ limit is the curvature, so its action has the continuum action as its limit.
 
@@ -91,7 +91,7 @@ where $F_{\mu\nu}$ is the continuum curvature of the companion article. The iden
 
 The Wilson action is the sum over plaquettes of the trace deficit,
 $$
-S_W[\tilde U]=\beta\sum_{n}\sum_{\mu<\nu}\left(1-\frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}(n)\right),
+\boxed{\;S_W[\tilde U]=\beta\sum_{n}\sum_{\mu<\nu}\left(1-\frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}(n)\right)\;},
 \qquad
 N=2,
 \qquad
@@ -176,10 +176,10 @@ the last of which is the statement that only a link and its conjugate, paired be
 
 For a rectangular Wilson loop of dimensions $R\times T$ in lattice units, the leading strong-coupling contribution tiles the rectangle with plaquettes, each plaquette contributing a factor $\beta/(2N^2)$ for $N\ge3$ and $\beta/N^2$ for $N=2$, and each link in the interior being integrated against its neighbours. The result is the **area law**,
 $$
-\langle W(C)\rangle=\left\langle\frac{1}{N}\mathrm{Tr}\prod_{l\in C}\tilde U_l\right\rangle
+\boxed{\;\langle W(C)\rangle=\left\langle\frac{1}{N}\mathrm{Tr}\prod_{l\in C}\tilde U_l\right\rangle
 \;\sim\;\exp\!\big(-\sigma\,A\big),
 \qquad
-A=R\,T\,a^2 ,
+A=R\,T\,a^2\;},
 $$
 with a string tension $\sigma$ that at leading strong coupling is
 $$
@@ -232,7 +232,6 @@ Three remarks place the construction.
 The lattice of this article is a regulator, imported to make the continuum path integral finite: the link variable, the plaquette and the Wilson action are the continuum's, discretised. The algebra also carries integral structures of its own, the Lipschitz and Hurwitz orders and the integral biquaternions, whose interpretation is the **discrete spacetime lattice** of the framework: the real sector is a Euclidean lattice, because the biquaternion norm is definite there, and the nilpotent direction of the complex order is a discrete **lightlike** direction (*Biquaternion Orders and Finite Groups of Units*).
 
 Read together, the two lattices answer different questions. The regulator here supplies the coupling, the continuum limit and the running; the algebra's orders supply the arithmetic that a **quantum simulation** of the framework would use, a discrete arena whose local variables are lattice biquaternions, whose Euclidean part is definite and whose null direction makes the light cone a lattice cone. The interpretation is labelled and it does not replace the regulator: the orders carry no coupling and no dynamics. The owner of the orders is *Biquaternion Orders and Finite Groups of Units*.
-
 
 ## Summary
 

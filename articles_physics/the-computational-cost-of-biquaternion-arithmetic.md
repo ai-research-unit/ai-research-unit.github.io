@@ -102,7 +102,6 @@ evaluates each of the eight in three real multiplications instead of four, so th
 
 For the slices the scheme already terminates at the coefficient level: a real-quaternion product has real coefficients and needs the eight Hadamard and corner products alone, that is **eight** real multiplications against the naive sixteen; the same holds with purely imaginary coefficients. The reduction is therefore a factor of two on each slice and of $64/24 \approx 2.7$ on the full algebra.
 
-
 ## Matrix-Valued Biquaternions
 
 The scheme above has coefficients that are complex *scalars*, and it is bilinear over the real numbers: every output is a scalar linear combination of the eight intermediate products. **Nothing in it uses the commutativity of the coefficients**, so it applies unchanged when the coefficients are replaced by matrices. That is the step from a biquaternion to a *matrix-valued* biquaternion, an element of $\mathbb{B}^{n\times m}$: each of the four coefficients becomes an $n\times m$ complex matrix, and the product rule keeps exactly its scalar-vector shape,
@@ -144,13 +143,13 @@ Three properties of this image are used constantly, and each is exact:
 The inner $2\times2$ blocks of the image carry the slice structure. For a real-quaternion array, whose coefficients are complex matrices with real entries only, the image takes the **time-reversal symmetric** block form
 
 $$
-M^+ = \begin{pmatrix} A & B \\ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_t - iQ_z,\quad B = -iQ_x - Q_y ,
+\boxed{\;M^+ = \begin{pmatrix} A & B \\ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_t - iQ_z,\quad B = -iQ_x - Q_y\;},
 $$
 
 and for an antiquaternion array, whose coefficients are purely imaginary, the **time-reversal antisymmetric** form
 
 $$
-M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y .
+\boxed{\;M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y\;}.
 $$
 
 In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{M}_\pm$ split, a point returned to below.
@@ -174,7 +173,7 @@ $$
 a Hadamard-type unitary transformation turns it into a block-diagonal matrix whose two blocks differ by a sign. With
 
 $$
-U_\alpha = \frac{1}{\sqrt2}\begin{pmatrix} I & I \\ \alpha I & -\alpha I \end{pmatrix}, \qquad |\alpha| = 1 ,
+\boxed{\;U_\alpha = \frac{1}{\sqrt2}\begin{pmatrix} I & I \\ \alpha I & -\alpha I \end{pmatrix}, \qquad |\alpha| = 1\;},
 $$
 
 one has $M_{\mathrm{rot}} = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $\vec e_y$ alone gives $B = -A$ and $\vec e_x$ alone gives $B = A$, while $\vec e_z$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.

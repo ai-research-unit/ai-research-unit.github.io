@@ -45,9 +45,7 @@ is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product 
 
 **Theorem.** The map $\tilde q\mapsto(|\tilde q|,\tilde q/|\tilde q|)$ is a homeomorphism
 
-$$
-\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3,
-$$
+$$ \boxed{\; \mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3 \;} ,$$
 
 and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivalence; hence the group of units is homotopy equivalent to the sphere $S^3$.
 
@@ -61,9 +59,7 @@ and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivale
 
 **Theorem.** The group of units is simply connected and has the homotopy groups of the sphere,
 
-$$
-\pi_1(\mathbb{H}^{\times}) = 0, \qquad \pi_2(\mathbb{H}^{\times}) = 0, \qquad \pi_3(\mathbb{H}^{\times})\cong\mathbb{Z},
-$$
+$$ \boxed{\; \pi_1(\mathbb{H}^{\times}) = 0, \qquad \pi_2(\mathbb{H}^{\times}) = 0, \qquad \pi_3(\mathbb{H}^{\times})\cong\mathbb{Z} \;} ,$$
 
 and more generally $\pi_n(\mathbb{H}^{\times})\cong\pi_n(S^3)$ for every $n$.
 
@@ -71,9 +67,7 @@ and more generally $\pi_n(\mathbb{H}^{\times})\cong\pi_n(S^3)$ for every $n$.
 
 **Theorem.** The rotation group of the vector subspace is the projective space,
 
-$$
-SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3,
-$$
+$$ \boxed{\; SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3 \;} ,$$
 
 with homotopy groups
 

@@ -15,7 +15,7 @@ The article owns the three conjugations used for symmetry (the fourth is exclude
 **Proposition (the equivariance of the group).** For every $g\in G$ and every parameter,
 
 $$
-g\circ F_{\tilde Q_3}=F_{g(\tilde Q_3)}\circ g ,
+\boxed{\;g\circ F_{\tilde Q_3}=F_{g(\tilde Q_3)}\circ g\;},
 $$
 
 where the left action of $g$ on the parameter is the definition of $g(\tilde Q_3)$. Hence $g(\mathcal K_{\tilde Q_3})=\mathcal K_{g(\tilde Q_3)}$ and $g(J_{\tilde Q_3})=J_{g(\tilde Q_3)}$.
@@ -25,7 +25,7 @@ where the left action of $g$ on the parameter is the definition of $g(\tilde Q_3
 **Remark (the fourth conjugation is excluded by a sign).** The natural, the complex and the Hermitian conjugations are anti-automorphisms or automorphisms of the ring; the anti-Hermitian conjugation is an anti-automorphism only up to the central sign,
 
 $$
-(\tilde Q_2\tilde Q_1)^{\flat}=-\tilde Q_1^{\flat}\tilde Q_2^{\flat} ,
+\boxed{\;(\tilde Q_2\tilde Q_1)^{\flat}=-\tilde Q_1^{\flat}\tilde Q_2^{\flat}\;},
 $$
 
 so that $(\tilde Q_1^2)^{\flat}=-(\tilde Q_1^{\flat})^2$ and $\flat\circ F_{\tilde Q_3}=F^{-}_{\flat(\tilde Q_3)}\circ\flat$, where $F^{-}_{\tilde Q_3'}(\tilde Q_1)=-\tilde Q_1^2+\tilde Q_3'$ is the *odd* quadratic family. **The anti-Hermitian conjugation relates the even family to the odd family, not to itself, and is therefore not a symmetry of the even fractal.** The three conjugations ${}^{\natural},\bar{\cdot},{}^{*}$ are the ones the article uses.
@@ -59,7 +59,7 @@ where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q_1\mapst
 **Theorem (the four symmetric fractals and the generic one).** The symmetry group $\Gamma_{\tilde Q_3}$ is one of
 
 $$
-G\times\{\pm\mathrm{id}\}\ (\text{order }8), \quad \{\mathrm{id},{}^{\natural}\}\times\{\pm\mathrm{id}\}\ (\text{order }4), \quad \{\mathrm{id},\bar{\cdot}\}\times\{\pm\mathrm{id}\}, \quad \{\mathrm{id},{}^{*}\}\times\{\pm\mathrm{id}\}, \quad \{\pm\mathrm{id}\}\ (\text{order }2),
+\boxed{\;G\times\{\pm\mathrm{id}\}\ (\text{order }8), \quad \{\mathrm{id},{}^{\natural}\}\times\{\pm\mathrm{id}\}\ (\text{order }4), \quad \{\mathrm{id},\bar{\cdot}\}\times\{\pm\mathrm{id}\}, \quad \{\mathrm{id},{}^{*}\}\times\{\pm\mathrm{id}\}, \quad \{\pm\mathrm{id}\}\ (\text{order }2)\;},
 $$
 
 according as the parameter is a real central element, a non-real central element, a non-central real quaternion, a non-central Hermitian element, or a general element. The corresponding fractals are the **fully symmetric**, the **centrally symmetric**, the **quaternion-symmetric**, the **Hermitian-symmetric** and the **generic** biquaternion Julia sets.

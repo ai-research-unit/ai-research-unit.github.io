@@ -179,10 +179,8 @@ in both cases: the criterion becomes the vanishing of a sum of squares of real c
 **Proposition (the pure family is empty).** A pure quaternion $\vec q$ has
 $\vec q\vec q^{\natural} = |\vec q|^2 e_t$ and $\vec q^2 = -|\vec q|^2 e_t$, so
 
-$$
-\vec q^2 = 0 \quad\Longleftrightarrow\quad |\vec q|^2 = q_x^2 + q_y^2 + q_z^2 = 0
-\quad\Longleftrightarrow\quad \vec q = 0.
-$$
+$$ \boxed{\; \vec q^2 = 0 \quad\Longleftrightarrow\quad |\vec q|^2 = q_x^2 + q_y^2 + q_z^2 = 0
+\quad\Longleftrightarrow\quad \vec q = 0 \;} .$$
 
 So there is no nonzero pure zero divisor, and the pure family of the complexified block has no real
 member.
@@ -194,9 +192,7 @@ A sum of three squares of real numbers vanishes only at $\vec q = 0$.
 
 **Proposition (the non-pure family is empty).** A quaternion with $q_t \neq 0$ has
 
-$$
-\tilde q\tilde q^{\natural} = q_t^2 + |\vec q|^2 \geq q_t^2 > 0,
-$$
+$$ \boxed{\; \tilde q\tilde q^{\natural} = q_t^2 + |\vec q|^2 \geq q_t^2 > 0 \;} ,$$
 
 so it satisfies the criterion at no point. There is no non-pure zero divisor.
 
@@ -213,9 +209,7 @@ class is empty, with square-zero set the single point $0$.
 
 The zero divisor set $\mathcal{Z} \subset \mathbb{H}$ is
 
-$$
-\mathcal{Z} = \{\tilde q \in \mathbb{H} : \tilde q \neq 0, \; \tilde q\tilde q^{\natural} = 0\} = \varnothing.
-$$
+$$ \boxed{\; \mathcal{Z} = \{\tilde q \in \mathbb{H} : \tilde q \neq 0, \; \tilde q\tilde q^{\natural} = 0\} = \varnothing \;} .$$
 
 It is the complement of the invertible elements in the complement of the zero element,
 $\mathcal{Z} = \mathbb{H} \setminus (\{0\} \cup \mathbb{H}^\times)$, and here that complement is empty

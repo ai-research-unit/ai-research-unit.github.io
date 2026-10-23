@@ -19,8 +19,6 @@ We therefore make no claim that the extension is canonical in the biquaternion f
 
 The article is organized as follows. The next section fixes the classical field and its conjugate momentum, and identifies the constraint that forces the canonical structure to be imposed rather than assumed. The following section states the equal-time anticommutation relations and the reasons they, rather than commutators, are the consistent choice. The next section carries out the expansion in the parent article's plane-wave solutions. The section after that derives the anticommutators of the mode operators and builds the Fock space. The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which is the subject of a planned companion article. A section relates the result to the KMS thermal-state framework. The article closes with an explicit accounting of what is standard and what is open.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The Clifford metric of the gamma matrices is $g=\mathrm{diag}(+1,-1,-1,-1)$, through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric of the $ict'$ gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$; the relative sign is the convention the companion article flags. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution and quantization sections we work in natural units $\hbar=c=1$, as the parent solution article does, restoring $\hbar$ and $c$ only where they carry meaning, namely in the mass-shell relation and in the thermal frequency.
-
 ## The Classical Field and Its Conjugate Momentum
 
 The biquaternion Dirac field of the companion article is the map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$ satisfying the linear, chirality-off-diagonal pair
@@ -76,7 +74,7 @@ Written on the spinor module, the Lagrangian and the canonical momentum are the 
 Quantization promotes the classical field and its momentum to operators $\psi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}}$ and imposes equal-time brackets. For the Dirac field the brackets are **anticommutators**:
 
 $$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$
+\boxed{\;\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\;}$$
 
 $$
 \{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\psi^{\mathrm{fop}}_b(\vec y,t')\}=0,\qquad
@@ -122,9 +120,9 @@ $$
 Quantization consists in replacing the constant coefficients of the classical expansion by operators:
 
 $$
-\psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\boxed{\;\psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
 \sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big].
++b^{\mathrm{fop}\dagger}_r(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big]\;}.
 $$
 
 The field and its adjoint,
@@ -245,9 +243,9 @@ $$
 where the **normal-ordered Hamiltonian** is
 
 $$
-:\!H\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}
+\boxed{\;:\!H\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}
 \Big(a^{\mathrm{fop}\dagger}_r(\vec p)a^{\mathrm{fop}}_r(\vec p)
-+b^{\mathrm{fop}\dagger}_r(\vec p)b^{\mathrm{fop}}_r(\vec p)\Big),
++b^{\mathrm{fop}\dagger}_r(\vec p)b^{\mathrm{fop}}_r(\vec p)\Big)\;},
 $$
 
 manifestly non-negative, and the **normal-ordering constant** is the c-number
@@ -325,7 +323,7 @@ $$
 The KMS condition $F_{a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}}(t'+i\beta)=F_{a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}}(-t')$ then gives $\exp(-\beta E)\,\omega_\beta(a^{\mathrm{fop}}a^{\mathrm{fop}\dagger})=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$. Writing $n=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$ and using the anticommutator in the form $a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}=e_t-a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ yields $1-n=\exp(\beta E)n$, i.e.
 
 $$
-n=\frac{1}{\exp(\beta E)+1},
+\boxed{\;n=\frac{1}{\exp(\beta E)+1}\;},
 $$
 
 the **Fermi–Dirac** distribution. The same computation for a bosonic mode, where the relevant relation is the commutator $a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}=e_t+a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$, gives $n=1/(\exp(\beta E)-1)$, the Bose–Einstein distribution. This is the cleanest sense in which the statistics is carried by the (anti)commutator and not by the KMS boundary relation, exactly as the KMS article states. In the continuum, the free-field thermal two-point function is

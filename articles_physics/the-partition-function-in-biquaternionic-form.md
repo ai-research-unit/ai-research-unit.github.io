@@ -18,8 +18,6 @@ The second part is the only place where the sector split changes the answer. If 
 
 The article proceeds as follows: the standard partition function and thermal state are recalled; the trace is identified with twice the scalar part in the $2\times2$ image; the thermal operator and the partition function are computed explicitly; the part the trace discards is examined; the place where the material sector genuinely enters — imaginary time — is made precise against the companion article on the KMS condition; and the non-Hermitian extension is computed.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of the Hermitian conjugation ${}^{*}$; its elements have real scalar part and imaginary vector part. The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation $\flat=-{}^{*}$; its elements have imaginary scalar part and real vector part. The real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation. We work in units with $\hbar=1$, so that $\beta=1/(k_BT)$ coincides with the KMS article's $\beta=\hbar/(k_BT)$; restoring $\hbar$ multiplies $\tilde H$ in the exponent by $1/\hbar$.
-
 ## The Partition Function and the Thermal State
 
 For a quantum system with Hamiltonian $\tilde H$ at inverse temperature $\beta$, the partition function and thermal state are
@@ -100,9 +98,9 @@ $$
 The imaginary vector part therefore behaves like a **real** number of square $+|\vec h|^2$ — it is a boost-type generator, not a phase — and the scalar part $h_te_t$ commutes with it. Hence
 
 $$
-\exp(-\beta\tilde H)=\exp(-\beta h_t)\exp(-\beta i\vec h)
+\boxed{\;\exp(-\beta\tilde H)=\exp(-\beta h_t)\exp(-\beta i\vec h)
 =\exp(-\beta h_t)\Big(\cosh(\beta|\vec h|)\,e_t-i\sinh(\beta|\vec h|)\,\vec u_h\Big),
-\qquad \vec u_h=\frac{\vec h}{|\vec h|}.
+\qquad \vec u_h=\frac{\vec h}{|\vec h|}\;}.
 $$
 
 This is the **thermal operator**. It is Hermitian, since $\tilde H^{*}=\tilde H$ implies $(\exp(-\beta\tilde H))^\dagger=\exp(-\beta\tilde H)$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta h_t)$ times the unit-norm element $\tilde U_{\mathrm b}=\cosh(\beta|\vec h|)e_t-i\sinh(\beta|\vec h|)\vec u_h$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\vec h|$ in the parametrization $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u$, with $\vec u=-\vec u_h$.
@@ -110,7 +108,7 @@ This is the **thermal operator**. It is Hermitian, since $\tilde H^{*}=\tilde H$
 Applying the Hermitian form, with its trace reading at normalisation, to $\tilde H_1=e_t$ (the identity, which lies in $\mathbb{M}_+$) and $\tilde H_2=\exp(-\beta\tilde H)$, which also lies in $\mathbb{M}_+$,
 
 $$
-Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h|),\qquad\text{with trace reading } \operatorname{Tr}\big(\exp(-\beta\tilde H)\big)=Z.
+\boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h|),\qquad\text{with trace reading } \operatorname{Tr}\big(\exp(-\beta\tilde H)\big)=Z\;}.
 $$
 
 This is the ordinary partition function of a two-level system with energies $h_t\pm|\vec h|$, since
@@ -234,7 +232,7 @@ $$
 which is itself an element of $\mathbb{M}_+$: a scalar Boltzmann weight times a boost biquaternion. The trace is the $2\times2$ reading of twice the scalar part, so
 
 $$
-Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h|),
+\boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h|)\;},
 $$
 
 the ordinary two-level partition function with energies $h_t\pm|\vec h|$. The thermal state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r=-\tanh(\beta|\vec h|)\vec u_h$, and the internal energy $E=h_t-|\vec h|\tanh(\beta|\vec h|)$ agrees with $-\partial_\beta\log Z$.

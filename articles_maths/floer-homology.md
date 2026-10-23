@@ -9,8 +9,6 @@ There are four principal theories, and they share a common template. **Hamiltoni
 
 This article states the construction of each theory, the index formula that grades the complexes, the compactness and gluing statements that give $\partial^2 = 0$ and the invariance, the isomorphism theorems that compute the homologies in the standard cases, and the applications that the invariants yield. The analytic content of the theory — the construction of the moduli spaces, the Fredholm theory, the transversality, the compactness and the gluing — is the analysis of Part III, and its citation is explicit throughout. The Khovanov homology that one obtains by the same template applied to a link diagram is the subject, and the topological applications to three- and four-manifolds are standard.
 
-**The boundaries of the article.** The symplectic form, the Hamiltonian vector fields, the almost complex structures compatible with $\omega$ and the Lagrangian submanifolds are those of *Symplectic Geometry*; the contact form, the Reeb field and the symplectisation are those of *Contact Geometry*; the $h$-principle, the tight–overtwisted dichotomy and the Seiberg–Witten constraints are those of *Symplectic and Contact Topology*. The homology and cohomology of spaces and the algebra of chain complexes are those of *Algebraic Topology*, being written by another agent; the complexes are constructed here and their homological algebra is taken from there. Connections, covariant derivatives, curvature and the Chern–Simons form are those of *Fibre Bundles, Connections and Curvature*, and the characteristic classes those of *Characteristic Classes*, earlier in this Part. Smooth manifolds, transversality, moduli spaces and the compactness of the spaces of maps are those of *Smooth Manifolds and Differential Geometry* and *Differential Topology*, being written in parallel. The existence of the moduli spaces, the Sard–Smale transversality, the elliptic regularity, the compactness theorems of Gromov and Uhlenbeck and the gluing theorems require the measure, the limit and the theory of elliptic operators, and are the subject of Part III; the results are stated here and their proofs cited.
-
 ## The Floer Template
 
 **Definition.** Let $X$ be a smooth infinite-dimensional space — a loop space, a path space or a space of connections modulo gauge — let $\mathcal{A} : X\to\mathbb{R}$ be a function, and let $\nabla_{\mathcal{A}}$ be a section of a Banach bundle over $X$ whose zero set is the critical set of $\mathcal{A}$. The **Floer complex** of $\mathcal{A}$ is the free module on the critical points of $\mathcal{A}$ that are of **Floer type**, graded by the **Fredholm index** of the linearised problem, with a differential that counts, with signs, the solutions of the gradient flow equation connecting critical points of index difference one:
@@ -175,8 +173,6 @@ Hamiltonian Floer homology counts the periodic orbits of a Hamiltonian flow; its
 | $\widehat{HF}(Y)$ | Heegaard Floer homology; isomorphic to Seiberg–Witten Floer homology |
 | $HC_*(\xi)$, SFT | Contact homology and symplectic field theory of the symplectisation |
 | Fukaya category | $A_\infty$-category with objects Lagrangians and morphism spaces Lagrangian Floer complexes |
-
-
 
 ## Further Reading
 

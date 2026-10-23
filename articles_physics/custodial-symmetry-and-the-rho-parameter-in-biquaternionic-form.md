@@ -38,8 +38,6 @@ gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet ad
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the vector-like obstruction and the electroweak quantum numbers.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_ae_b = -\delta_{ab}e_t + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ its centre. The compact group is the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong SU(2)$, with Lie algebra $\mathrm{span}_\mathbb{R}\{e_a\}\subset\mathbb{M}_-$; the standard Hermitian generators are $T_a = \tfrac{i}{2}e_a$, with $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ and $[T_a,T_b] = i\varepsilon_{abc}T_c$. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ and the $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The symbols $SU(2)_L$, $\mathrm{U}(1)_Y$, $T$, $T_3$, $Y$, $\theta_W$, $W^\pm$, $Z$, $H$ and $v$ are **standard electroweak notation, not framework objects**; they are used where standard structures are quoted or named as missing, following the agenda articles. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and natural units $\hbar = c = 1$ are used in the mass formulas.
-
 ## The Custodial Symmetry of a Scalar Sector
 
 The custodial symmetry is a property of the scalar sector of a spontaneously broken gauge theory, and it is worth stating in its standard form before it is read in the framework.
@@ -59,7 +57,6 @@ T^a_L = \frac{\tau^a}{2},\quad T_3^R = \frac{\tau^3}{2} .
 $$
 
 The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's biquaternion norm of the derivative,
-
 
 $$
 -\,\frac12\,\mathrm{Tr}\!\left(\partial_\mu H^\dagger\,\partial_\mu H\right)
@@ -142,7 +139,6 @@ $$
 
 and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_tg_R^{-1} = \frac{v}{\sqrt2}g_Lg_R^{-1}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal gauge modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
 
-
 ## The Mass Matrices and the Value of $\rho$
 
 The value of $\rho$ is read off the gauge-boson mass matrix, and the custodial invariance of that matrix is what makes it one.
@@ -172,7 +168,7 @@ $$
 whose nonzero eigenvalue is $M_Z^2 = \frac{v^2}{4}(g^2+g_{\mathrm Y}^2)$. Hence
 
 $$
-\rho = \frac{M_W^2}{M_Z^2\cos^2\theta_W} = \frac{g^2v^2/4}{\frac{v^2}{4}(g^2+g_{\mathrm Y}^2)\cdot\frac{g^2}{g^2+g_{\mathrm Y}^2}} = 1 ,
+\boxed{\;\rho = \frac{M_W^2}{M_Z^2\cos^2\theta_W} = \frac{g^2v^2/4}{\frac{v^2}{4}(g^2+g_{\mathrm Y}^2)\cdot\frac{g^2}{g^2+g_{\mathrm Y}^2}} = 1\;}
 $$
 
 using $\cos^2\theta_W = g^2/(g^2+g_{\mathrm Y}^2)$. The zero eigenvalue is the photon, and the equality of the two masses is the statement that the neutral and charged mass matrices have the same custodial structure. The framework's contribution to this computation is the identifying of the scalar's $SU(2)_L\times SU(2)_R$ action with the left–right multiplication of the algebra; the mass formulas themselves are standard.
@@ -180,11 +176,10 @@ using $\cos^2\theta_W = g^2/(g^2+g_{\mathrm Y}^2)$. The zero eigenvalue is the p
 **Departures from custodial symmetry.** The relation $\rho = 1$ holds when the scalar sector consists of any number of $SU(2)$ doublets with $Y = \pm\tfrac12$ and vanishing relative hypercharge, because each doublet contributes equally to the charged and neutral matrices in the custodial limit. It fails when the scalar sector contains a multiplet of higher isospin with nonvanishing vacuum expectation value, and the general formula is
 
 $$
-\rho = \frac{\sum_i v_i^2\left[T_i\left(T_i+1\right)-T_{3i}^2\right]}{\sum_i 2\,v_i^2\,T_{3i}^2},
+\boxed{\;\rho = \frac{\sum_i v_i^2\left[T_i\left(T_i+1\right)-T_{3i}^2\right]}{\sum_i 2\,v_i^2\,T_{3i}^2}\;}
 $$
 
 where the sum runs over the components that acquire vacuum expectation values, with isospin $T_i$ and third component $T_{3i}$. The electroweak $\mathrm{U}(1)_Y$ breaks custodial symmetry explicitly, so the formula is exact only at tree level in the limit $g_{\mathrm Y}\to0$; the hypercharge and the multiplet splittings generate corrections at higher order.
-
 
 **The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group, and the triplet $\vec\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the gauge bosons while the pion triplet is physical, which is a statement about the gauging and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
 
@@ -231,7 +226,7 @@ The $\rho$ parameter is measured to be one within about a part in a thousand by 
 The $\rho$ parameter is the measure of custodial symmetry, the approximate global $SU(2)_V$ that survives the breaking of $SU(2)_L\times \mathrm{U}(1)_Y$ when the scalar vacuum is a custodial singlet. In the Standard Model the vacuum is $\langle H\rangle = \frac{v}{\sqrt2}I_2$, a matrix proportional to the identity, which is invariant under the diagonal of the $SU(2)_L\times SU(2)_R$ acting on the scalar, and the gauge-boson mass matrices in the custodial limit are proportional to the identity, giving $M_W = M_Z\cos\theta_W$ and $\rho = 1$. The general multiplet formula is
 
 $$
-\rho = \frac{\sum_i v_i^2\left[T_i(T_i+1)-T_{3i}^2\right]}{\sum_i 2\,v_i^2\,T_{3i}^2},
+\boxed{\;\rho = \frac{\sum_i v_i^2\left[T_i(T_i+1)-T_{3i}^2\right]}{\sum_i 2\,v_i^2\,T_{3i}^2}\;}
 $$
 
 which was recomputed: it gives $\rho = 1$ for one or several doublets, $\rho > 1$ (here $1.16$) for a doublet with a $T = 1$, $T_3 = 0$ triplet admixture, and $\rho = \tfrac12$ for a $T = 1$, $T_3 = 1$ multiplet.

@@ -14,8 +14,6 @@ The result is a degeneracy that is exact and worth stating plainly: the indefini
 
 The article owns the signature pattern of the indefinite form, the split-complex subalgebra and its hyperbolic line, the hyperboloid model with its metric and geodesics, the boundary and the conformal picture, the classification of the isometries the algebra supplies, and the negative statement about the signature-$(2,1)$ subspaces. The form and its Gram matrix are *The Four Products, Their Forms and Their Algebraic Norms*; the idempotent coordinates are *Reduced Biquaternion Space*; the null cone and its projective geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions* and *The Null Quadric and Its Projective Geometry*; the multiplicative action of the units and the isometry groups of the four forms are *Reduced Biquaternion Rotations and Lorentz Transformations*; the remarkable subspaces and the involutions are *Introduction to the Remarkable Subspaces* and *The Two Involutions and the Group of Involutions*. The split-complex companion, which is the same algebra over $\mathbb{R}$, is *Hyperbolic Geometry* and *Hyperbolic Rotations*; the split-biquaternion companion, where the hyperbolic three-space is carried by the anti-Hermitian subspace, is *Split-Biquaternions and Hyperbolic Geometry*.
 
-**Conventions.** The four real coordinates of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the form $\langle \breve Q\rangle_{*}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}-q'^{2}_{\blacktriangledown}$ is the quadratic form of $\langle\cdot,\cdot\rangle_{*}$; a **hyperbolic line** is a one-dimensional hyperbolic space, that is one sheet of a hyperbola, and a **hyperbolic plane** is a two-dimensional hyperbolic space.
-
 ## The Indefinite Form and the Subspaces it Defines
 
 **Proposition (the signature pattern).** On the real four-space the form $\langle\cdot,\cdot\rangle_{*}$ has signature $(2,2)$; on the real plane $\mathbb{R}\{1,j\}$ it has signature $(1,1)$; on the real plane $\mathbb{R}\{1,i\}$ it has signature $(2,0)$; on the real plane $\mathbb{R}\{j,ij\}$ it has signature $(0,2)$; and on each of the two real three-spaces $\mathbb{R}\{1,i,j\}$ and $\mathbb{R}\{1,i,ij\}$ it has signature $(2,1)$.
@@ -41,7 +39,9 @@ $$
 with its two branches $q_{\blacktriangledown}\geq1$ and $q_{\blacktriangledown}\leq-1$; each branch is a hyperbolic line under the metric whose distance is
 
 $$
-\cosh d(P,Q)=-\langle P,Q\rangle_{*},\qquad \langle P,Q\rangle_{*}=a_{P}a_{Q}-b_{P}b_{Q},
+\boxed{\;
+\cosh d(P,Q)=-\langle P,Q\rangle_{*},\qquad \langle P,Q\rangle_{*}=a_{P}a_{Q}-b_{P}b_{Q}
+\;},
 $$
 
 and its isometry group is $O(1,1)$, of four components.
@@ -51,7 +51,9 @@ and its isometry group is $O(1,1)$, of four components.
 **Proposition (the boosts are the translations).** For a real parameter $\phi$ the element $\exp(j\phi)=\cosh\phi+j\sinh\phi$ is a unit of norm one, and its multiplication acts on the coordinates $(q_{\blacktriangle},q_{\blacktriangledown})$ of $\mathbb{D}$ by
 
 $$
-(q_{\blacktriangle},q_{\blacktriangledown})\longmapsto(q_{\blacktriangle}\cosh\phi+q_{\blacktriangledown}\sinh\phi,\;q_{\blacktriangle}\sinh\phi+q_{\blacktriangledown}\cosh\phi),
+\boxed{\;
+(q_{\blacktriangle},q_{\blacktriangledown})\longmapsto(q_{\blacktriangle}\cosh\phi+q_{\blacktriangledown}\sinh\phi,\;q_{\blacktriangle}\sinh\phi+q_{\blacktriangledown}\cosh\phi)
+\;},
 $$
 
 which is the translation by $\phi$ along the hyperbolic line; the elements $\exp(j\phi)$ form a one-parameter subgroup isomorphic to $\mathbb{R}$, the identity component of $O(1,1)$.
@@ -77,7 +79,9 @@ while the coefficient conjugation restricts to the identity; the second reflecti
 **Proposition (the distance formula in coordinates).** For two points $P$ and $Q$ of the sheet $b>0$ the distance is
 
 $$
-\cosh d(P,Q)=b_{P}b_{Q}-a_{P}a_{Q},
+\boxed{\;
+\cosh d(P,Q)=b_{P}b_{Q}-a_{P}a_{Q}
+\;},
 $$
 
 and the sphere of radius $t$ about $P$ is the intersection of the hyperboloid with the affine line $\langle X,P\rangle_{*}=-\cosh t$, which consists of two points.

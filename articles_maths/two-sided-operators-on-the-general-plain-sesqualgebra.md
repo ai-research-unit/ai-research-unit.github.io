@@ -53,7 +53,7 @@ and, as a function of the pair $(\tilde Q_1,\tilde Q_2)$, the form is $\mathbb{C
 **Proposition (composition).** For all $\tilde Q_1,\tilde Q_2$,
 
 $$
-\Theta_{\tilde Q_1\tilde Q_2} = \Theta_{\tilde Q_1}\circ\Theta_{\tilde Q_2}.
+\boxed{\; \Theta_{\tilde Q_1\tilde Q_2} = \Theta_{\tilde Q_1}\circ\Theta_{\tilde Q_2} \;}.
 $$
 
 *Proof.* $\Theta_{\tilde Q_1}(\Theta_{\tilde Q_2}(\tilde Q_3)) = \tilde Q_1(\tilde Q_2\,\tilde Q_3\,\tilde Q_2^{*})\tilde Q_1^{*} = (\tilde Q_1\tilde Q_2)\,\tilde Q_3\,(\tilde Q_1\tilde Q_2)^{\dagger} = \Theta_{\tilde Q_1\tilde Q_2}(\tilde Q_3)$, since the dagger is an anti-automorphism and $(\tilde Q_1\tilde Q_2)^{\dagger}=\tilde Q_2^{*}\tilde Q_1^{*}$.
@@ -93,7 +93,7 @@ The form is positive definite, hence non-degenerate, so the adjoint exists and i
 **Theorem (the adjoint of a two-sided operator).** For every $\tilde{Q}\in\mathbb{B}$,
 
 $$
-(\Theta_{\tilde{Q}})^{*} = \Theta_{\tilde{Q}^{*}} .
+\boxed{\; (\Theta_{\tilde{Q}})^{*} = \Theta_{\tilde{Q}^{*}} \;}.
 $$
 
 *Proof.* Let $\tilde Q_1,\tilde Q_2,\tilde Q_3\in\mathbb{B}$, with $\tilde Q_1$ the parameter, $\tilde Q_2$ the argument and $\tilde Q_3$ the test element. Since the dagger is an anti-involution and an involution,
@@ -153,7 +153,7 @@ In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *Introduction to the 
 **Theorem (the unitary two-sided operators).** For $\tilde Q_1\in\mathbb{B}$, the operator $\Theta_{\tilde Q_1}$ is unitary, $\langle\Theta_{\tilde Q_1}\tilde Q_3,\Theta_{\tilde Q_1}\tilde Q_2\rangle_{*}=\langle\tilde Q_3,\tilde Q_2\rangle_{*}$ for all $\tilde Q_2,\tilde Q_3$, if and only if $\tilde Q_1^{*}\tilde Q_1$ is a central scalar of modulus one:
 
 $$
-\Theta_{\tilde Q_1}\ \text{unitary} \iff \tilde Q_1^{*}\tilde Q_1\in \mathrm{U}(1)\,e_t.
+\boxed{\; \Theta_{\tilde Q_1}\ \text{unitary} \iff \tilde Q_1^{*}\tilde Q_1\in \mathrm{U}(1)\,e_t \;}.
 $$
 
 In particular every $\tilde Q_1\in U$, and every $\tilde Q_1$ of the form $\omega \tilde U$ with $\lvert\omega\rvert=1$ and $\tilde U\in U$, gives a unitary operator.

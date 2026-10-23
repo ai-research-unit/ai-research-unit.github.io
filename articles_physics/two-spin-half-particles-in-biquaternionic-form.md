@@ -112,7 +112,7 @@ $$
 so that $\sum_k \vec e_k\otimes \vec e_k=e_t\otimes e_t-2F$, the coupling term becomes
 
 $$
-\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=\frac{\hbar^2}{2}\,F-\frac{\hbar^2}{4}\,e_t\otimes e_t .
+\boxed{\;\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=\frac{\hbar^2}{2}\,F-\frac{\hbar^2}{4}\,e_t\otimes e_t\;}.
 $$
 
 The exchange operator is therefore the algebraic carrier of the interaction. Its properties are immediate:
@@ -147,8 +147,8 @@ with traces $3$ and $1$ and trace-orthonormality $\mathrm{Tr}(\tilde\Pi_{\mathrm
 The total Casimir now follows in closed form. Substituting the coupling term,
 
 $$
-\tilde S^2=\tfrac{3\hbar^2}{2}\,e_t\otimes e_t+2\left(\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}e_t\otimes e_t\right)
-=\hbar^2\left(e_t\otimes e_t+F\right),
+\boxed{\;\tilde S^2=\tfrac{3\hbar^2}{2}\,e_t\otimes e_t+2\left(\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}e_t\otimes e_t\right)
+=\hbar^2\left(e_t\otimes e_t+F\right)\;},
 $$
 
 the central term being the sum of the two one-factor Casimirs $\left(\tilde S^{(a)}\right)^2=\tfrac{3\hbar^2}{4}e_t\otimes e_t$; equivalently, since $e_t\otimes e_t+F=2\tilde\Pi_{\mathrm{sym}}$,
@@ -290,7 +290,7 @@ $$
 with the **singlet–triplet splitting**
 
 $$
-\Delta E=E_{\text{singlet}}-E_{\text{triplet}}=J\hbar^2 .
+\boxed{\;\Delta E=E_{\text{singlet}}-E_{\text{triplet}}=J\hbar^2\;}.
 $$
 
 For $J>0$ the ferromagnetic case the triplet lies lower; for $J<0$ the antiferromagnetic case the singlet lies lower. Both signs are realised in nature — the triplet lies below in the two-electron system of an $s$-band ferromagnet, the singlet below in a molecular antiferromagnet — and the framework's contribution is only to express the Hamiltonian and its spectrum as algebra elements; the sign of $J$ is dynamical input.

@@ -7,8 +7,6 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ car
 
 This article owns the exponential and the Lie group structure: the algebra as a Lie algebra, the closed form of the exponential, the group of units, the norm-one group and its identification with $SL_2(\mathbb{R})$, the elliptic and hyperbolic subgroups, and the polar and exponential parametrisation. It relies on *Split-Quaternion Rotations and the Lorentz Group* for the Lorentz action, on *Split-Quaternion Automorphisms and Derivations* for the derivations. No physics is invoked.
 
-**Conventions.** A general element is $\tilde q = q_t + \vec v$ with $q_t = \operatorname{Sc}(\tilde q) \in \mathbb{R}$ and $\vec v = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in V$. The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + \langle \vec v\rangle_{\natural}$ with $\langle \vec v\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$, and on a vector $\vec v^2 = -\langle \vec v\rangle_{\natural}$. Under the commutator $V$ is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
-
 ## The Algebra as a Lie Algebra
 
 **Definition.** The **commutator** $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$ makes $\mathbb{H}_{\mathrm{s}}$ into a real Lie algebra. Its centre is again the scalar line $S = \mathbb{R}\cdot1$, and the associated Lie algebra modulo the centre is
@@ -56,8 +54,10 @@ convergent for every $\tilde q$, because the algebra is finite-dimensional and a
 **Theorem (closed form).** Write $\tilde q = q_t + \vec v$ and put $\mu = \langle \vec v\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$. Then
 
 $$
-\exp(\tilde q) = \exp(q_t) \Bigl( \cosh\sqrt{-\mu} + \frac{\sinh\sqrt{-\mu}}{\sqrt{-\mu}}\,\vec v \Bigr), \qquad \mu < 0,
-$$
+\boxed{\;
+\exp(\tilde q) = \exp(q_t) \Bigl( \cosh\sqrt{-\mu} + \frac{\sinh\sqrt{-\mu}}{\sqrt{-\mu}}\,\vec v \Bigr), \qquad \mu < 0
+\;}
+$$,
 
 $$
 \exp(\tilde q) = \exp(q_t) \bigl( 1 + \vec v \bigr), \qquad \mu = 0,
@@ -98,8 +98,10 @@ a series in the free Lie algebra on $\tilde q_1,\tilde q_2$, convergent near the
 **Theorem.** The kernel of the exponential on the algebra is
 
 $$
-\ker \exp = \{\, 2\pi k\,\vec\xi \;:\; k \in \mathbb{Z},\ \vec\xi \in V,\ \vec\xi^2 = -1 \,\} \cup \{0\},
-$$
+\boxed{\;
+\ker \exp = \{\, 2\pi k\,\vec\xi \;:\; k \in \mathbb{Z},\ \vec\xi \in V,\ \vec\xi^2 = -1 \,\} \cup \{0\}
+\;}
+$$,
 
 that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.
 
@@ -128,7 +130,9 @@ The positive scalar $\rho$ carries the scale, and the unit $\tilde u$ carries th
 **Theorem.** The norm-one group
 
 $$
+\boxed{\;
 U = \{\, \tilde q : \langle\tilde q\rangle_{\natural} = 1 \,\} = \mathrm{SL}_2(\mathbb{R})
+\;}
 $$
 
 is a connected three-dimensional Lie group, a double cover of the identity component $\mathrm{SO}^{+}(2,1)$ of the Lorentz group by the adjoint action of *Split-Quaternion Rotations and the Lorentz Group*; its Lie algebra is $\mathrm{SL}_2(\mathbb{R}) = V$. The other component of the group of units is the coset $\{N = -1\} = \vec e_y U$ of $U$, so any negative-norm unit is a root of $-1$ times a norm-one unit.

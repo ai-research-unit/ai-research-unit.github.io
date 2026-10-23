@@ -28,8 +28,6 @@ whose thermal factor is a **central scalar**, so it multiplies every entry of th
 
 The article proceeds as follows. A section fixes the contour and the doubled fields. A section separates the branch doubling from the algebra's doubling. A section gives the Keldysh rotation and the matrix of Green's functions, with the verification. A section treats the equilibrium relations and the fluctuation–dissipation theorem, a section the relation to Matsubara and the thermal states of the companion articles, and a section the non-equilibrium case. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The Matsubara Thermal Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the material coordinate; $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$. The branch index is written $a,b\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
-
 ## The Closed-Time-Path Contour and the Doubled Fields
 
 The formalism begins with a contour and produces a doubling; the doubling is what needs to be placed correctly with respect to the algebra.
@@ -75,7 +73,7 @@ This is where a plausible-looking identification is wrong, and it is worth being
 
 **The branch factor is external.** The CTP field is a map from the contour pair to the field's own value space; the field's value space is the module (a two-dimensional complex space for a scalar, the spinor module for a spinor). Hence the doubled field space is a **tensor product**,
 $$
-\mathcal{V}_{\mathrm{CTP}} = \mathcal{V}_{\mathrm{field}}\otimes\mathbb{C}^2_{\mathrm{br}} ,
+\boxed{\;\mathcal{V}_{\mathrm{CTP}} = \mathcal{V}_{\mathrm{field}}\otimes\mathbb{C}^2_{\mathrm{br}}\;},
 $$
 with $\mathbb{C}^2_{\mathrm{br}}$ the branch space. Multiplying dimensions, a biquaternion scalar has $2\times2=4$ complex components per mode, a biquaternion spinor has more; and the branch factor is a bookkeeping index with no relation to the algebra's centre or to its minimal ideals.
 
@@ -105,7 +103,7 @@ so $R\in O(2)$. The group $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$ is the group o
 
 **The rotated matrix.** Rotating the CTP matrix $G=\left(\begin{smallmatrix}G^{++}&G^{+-}\\G^{-+}&G^{--}\end{smallmatrix}\right)$ by $R$, $\mathcal G=R\,G\,R^{T}$ (with $R^T=R$), and using the sum rules gives
 $$
-\mathcal G = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}.
+\boxed{\;\mathcal G = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}\;}.
 $$
 The $qq$ entry vanishes identically. With the consistent real set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$ (so that $G^{++}+G^{--}=G^{+-}+G^{-+}=4$), the rotation gives
 $$
@@ -133,8 +131,8 @@ A(\omega)\ \ge 0 .
 $$
 The Keldysh component at inverse temperature $\beta$ is
 $$
-G^K(\omega) = \coth\frac{\beta\omega}{2}\big(G^R(\omega)-G^A(\omega)\big)
-= \big(1+2n_{\mathrm B}(\omega)\big)\big(G^R(\omega)-G^A(\omega)\big),
+\boxed{\;G^K(\omega) = \coth\frac{\beta\omega}{2}\big(G^R(\omega)-G^A(\omega)\big)
+= \big(1+2n_{\mathrm B}(\omega)\big)\big(G^R(\omega)-G^A(\omega)\big)\;},
 $$
 the **fluctuation–dissipation relation**. With the model retarded and advanced functions $G^{R/A}(\omega)=1/(\omega-E\pm i\gamma)$, $E=1.1$, $\gamma=0.3$, $\beta=2$, the two forms of the coefficient — $\coth(\beta\omega/2)$ and $1+2n_{\mathrm B}(\omega)$ — agree identically, and both reproduce $G^K$ at $\omega=0.2,1.1,2.5$; the identity $\coth(\beta\omega/2)=1+2n_{\mathrm B}(\omega)$ was checked at several frequencies to machine precision.
 

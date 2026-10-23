@@ -8,10 +8,6 @@ The reason a table is enough is that each of the twelve products is additive in 
 
 The article does three things. It defines the table of a product and the two extension rules, and proves that the table together with the class determines the product and is determined by it. It writes the twelve tables out, one to a product, in three groups — the four general products, their four symmetric parts and their four antisymmetric parts. And it reads the correspondence between the tables and the products: the extension of each table recovers its product, the table of a part is the entrywise symmetrisation or antisymmetrisation of the table of its parent, and the table is the structure-constant datum of the product. On the four-element basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the twelve tables take ten distinct values, the two collisions being the two coincidences that the corpus records on the real forms; on the eight-element real basis the twelve are distinct. The count of **structures** is twelve in both readings, because a structure is a product on the complex space and its datum is the table **together with the class**, so the two colliding tables are two structures and not one.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the central scalar imaginary $i$, with $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, the basis, the conjugations and the remarkable subspaces of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_te_t+\vec Q$. The natural conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\varepsilon_0\overline{Q_t}e_t+\varepsilon_1\overline{Q_x}\vec e_x+\varepsilon_2\overline{Q_y}\vec e_y+\varepsilon_3\overline{Q_z}\vec e_z$ with $\varepsilon=(1,-1,-1,-1)$; on the basis they act by $e_\mu^{\natural}=e_\mu^{*}=\varepsilon_\mu e_\mu$ and $\overline{e_\mu}=e_\mu$. A generic product is written $\star$, and the twelve particular products carry the codes $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*: the first letter is the part ($\mathrm G$ general, $\mathrm S$ symmetric, $\mathrm A$ antisymmetric), the second the first slot ($\mathrm P$ plain, $\mathrm Q$ quaternionic) and the third the class ($\mathrm A$ algebra, that is $\mathbb{C}$-bilinear, and $\mathrm S$ sesqualgebra, that is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$). The twelve products themselves, with their formulas, laws and units, are *The 12 Products of the Biquaternion Complex Space*, and each of the twelve structure articles owns its own sixteen basis products; the present article sets the twelve side by side and reads what the tables do and do not decide.
-
----
-
 ## The Table of a Product
 
 ### The Table
@@ -219,15 +215,15 @@ The four symmetric and the four antisymmetric products are built from the four g
 **Theorem (the entrywise part).** For the two $\mathbb{C}$-bilinear families the exchange is the interchange of the two arguments, and the tables of the parts are the entrywise symmetrisation and antisymmetrisation of the table of the parent,
 
 $$
-T(\mathrm{SPA})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPA})_{\mu\nu}+T(\mathrm{GPA})_{\nu\mu}\bigr),\qquad
-T(\mathrm{APA})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPA})_{\mu\nu}-T(\mathrm{GPA})_{\nu\mu}\bigr),
+\boxed{\;T(\mathrm{SPA})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPA})_{\mu\nu}+T(\mathrm{GPA})_{\nu\mu}\bigr),\qquad
+T(\mathrm{APA})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPA})_{\mu\nu}-T(\mathrm{GPA})_{\nu\mu}\bigr)\;},
 $$
 
 and the same two identities with $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$ in place of $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$. For the two sesquilinear families the exchange is the interchange followed by the coefficientwise conjugation of the value, and the tables of the parts are the entrywise conjugate-symmetrisation and conjugate-antisymmetrisation of the table of the parent,
 
 $$
-T(\mathrm{SPS})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPS})_{\mu\nu}+\overline{T(\mathrm{GPS})_{\nu\mu}}\bigr),\qquad
-T(\mathrm{APS})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPS})_{\mu\nu}-\overline{T(\mathrm{GPS})_{\nu\mu}}\bigr),
+\boxed{\;T(\mathrm{SPS})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPS})_{\mu\nu}+\overline{T(\mathrm{GPS})_{\nu\mu}}\bigr),\qquad
+T(\mathrm{APS})_{\mu\nu}=\tfrac12\bigl(T(\mathrm{GPS})_{\mu\nu}-\overline{T(\mathrm{GPS})_{\nu\mu}}\bigr)\;},
 $$
 
 and the same two identities with $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ in place of $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$.
@@ -237,7 +233,7 @@ and the same two identities with $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ 
 **Corollary (the reconstruction, entrywise).** The eight identities invert:
 
 $$
-T(\mathrm{GPA})=T(\mathrm{SPA})+T(\mathrm{APA}),\qquad T(\mathrm{GQA})=T(\mathrm{SQA})+T(\mathrm{AQA}),
+\boxed{\;T(\mathrm{GPA})=T(\mathrm{SPA})+T(\mathrm{APA}),\qquad T(\mathrm{GQA})=T(\mathrm{SQA})+T(\mathrm{AQA})\;},
 $$
 
 $$

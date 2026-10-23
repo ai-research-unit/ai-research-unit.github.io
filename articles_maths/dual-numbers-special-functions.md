@@ -41,7 +41,9 @@ $$
 Because $\varepsilon^2 = 0$, the series truncates at the first order in the infinitesimal part. For $Q = q + \varepsilon q'$,
 
 $$
-\exp(Q) = \exp(q) + \exp(q) q' \varepsilon = \exp(q) (1 + q' \varepsilon).
+\boxed{\;
+\exp(Q) = \exp(q) + \exp(q) q' \varepsilon = \exp(q) (1 + q' \varepsilon)
+\;}.
 $$
 
 So the dual exponential is the ordinary real exponential applied to the real part, multiplied by the factor $1 + \varepsilon q'$ in the infinitesimal part.
@@ -278,7 +280,9 @@ This follows from the corresponding identity for the real gamma function, applie
 ### The Reflection Formula
 
 $$
-\Gamma(Q) \Gamma(1 - Q) = \frac{\pi}{\sin(\pi Q)},
+\boxed{\;
+\Gamma(Q) \Gamma(1 - Q) = \frac{\pi}{\sin(\pi Q)}
+\;},
 $$
 
 where the sine is the dual trigonometric sine. This follows from the real reflection formula, with the infinitesimal corrections computed by differentiation.
@@ -506,7 +510,9 @@ The pattern in all the definitions above is the same: every dual special functio
 **Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $F^{\mathrm{ext}}$ be its extension to the dual numbers defined by the same formula. Then for $Q = q + \varepsilon q'$ with $q \in I$,
 
 $$
-F^{\mathrm{ext}}(Q) = F(q) + q' F'(q) \varepsilon.
+\boxed{\;
+F^{\mathrm{ext}}(Q) = F(q) + q' F'(q) \varepsilon
+\;}.
 $$
 
 **Proof.** The extension $F^{\mathrm{ext}}$ is dual differentiable, and by the structure theorem it is of the form $u(q) + (q' u'(q) + c(q))\varepsilon$. Evaluating at $q' = 0$ gives $u(q) = F(q)$, hence $u'(q) = F'(q)$. The coefficient of $q'$ in the infinitesimal part is therefore $F'(q)$, and the term $c(q)$ is the value of the infinitesimal part at $q' = 0$, which is zero because the extension reduces to the real function $F$ when $q' = 0$.

@@ -39,8 +39,8 @@ $$
 for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. Then, formally,
 
 $$
-S_F = \left(i\not\partial + \frac{mc}{\hbar}\right)\Delta_F
-\quad\text{up to the overall factor } i,
+\boxed{\;S_F = \left(i\not\partial + \frac{mc}{\hbar}\right)\Delta_F
+\quad\text{up to the overall factor } i\;},
 $$
 
 and the verification is the same one-line Dirac square used in the companion article: in momentum space,
@@ -121,9 +121,9 @@ $$
 in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The path integral over the odd variables, with the boundary conditions appropriate to the propagator (periodic for the fermionic trace, anti-periodic for the matrix element), is a **spin factor** $\Phi[x]$ multiplying the scalar measure:
 
 $$
-K(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,\exp(\,iS_0[x]),
+\boxed{\;K(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,\exp(\,iS_0[x]),
 \qquad
-\Phi[x] = \int_{\text{b.c.}}\mathcal{D}\psi\,\exp(\,i\int_0^T \frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau\,d\tau).
+\Phi[x] = \int_{\text{b.c.}}\mathcal{D}\psi\,\exp(\,i\int_0^T \frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau\,d\tau)\;}.
 $$
 
 The spin factor is the path-ordered exponential of the odd kinetic term; expanded, it is a sum of products of pairs $\psi^\mu\psi^\nu$, i.e. of Clifford bivectors, which is why the path integral over $\psi$ produces a Clifford-algebra-valued weight. The complete worldline path integral, with the correct measure and boundary conditions, reproduces the Dirac propagator $S_F$; this is the Berezin–Marinov / Brink–Di Vecchia–Howe construction, and it is standard. The same construction in a background electromagnetic field replaces the free kinetic term by the minimally coupled one and produces the spin factor $\Phi[x]=\mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int \sigma_{\mu\nu}F^{\mu\nu}\,d\tau\right)$ quoted in the literature (with the sign conventions of the cited works).
@@ -149,7 +149,7 @@ $$
 and the odd kinetic term is unchanged. The path integral over the odd variables now produces the spin factor
 
 $$
-\Phi[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sigma_{\mu\nu}F^{\mu\nu}(x(\tau))\right),
+\boxed{\;\Phi[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sigma_{\mu\nu}F^{\mu\nu}(x(\tau))\right)\;},
 \qquad
 \sigma_{\mu\nu} = \frac{i}{2}[\gamma_\mu,\gamma_\nu],
 $$

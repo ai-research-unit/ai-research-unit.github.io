@@ -16,7 +16,7 @@ be the left multiplication by $\nu$. Then $J^2=-\operatorname{id}$, since $\nu^2
 
 **Proposition (dimension two).** With the scalar action
 $$
-(a+b\nu)\cdot \tilde q=a\tilde q+b\nu\tilde q=a \tilde q+b\,J(\tilde q) , \qquad a,b\in\mathbb{R},
+\boxed{\;(a+b\nu)\cdot \tilde q=a\tilde q+b\nu\tilde q=a \tilde q+b\,J(\tilde q) , \qquad a,b\in\mathbb{R}\;},
 $$
 the real vector space $\mathbb{H}$ becomes a complex vector space of dimension two, a module over the field $\mathbb{C}_\nu=\mathbb{R}\oplus\mathbb{R}\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$. A complex basis is $(e_t,\mu)$ for any unit imaginary $\mu$ with $\mu\perp\nu$; the third unit is $\nu\mu$.
 
@@ -28,7 +28,7 @@ using $\nu\cdot e_t=\nu e_t$ and $\nu\cdot \mu=\nu\mu$, so $\tilde q=(q_t+q_x\nu
 
 **Proposition (not a complex algebra).** For this scalar action the product of $\mathbb{H}$ is $\mathbb{R}$-bilinear but not $\mathbb{C}_\nu$-bilinear, so $\mathbb{H}$ is a module over $\mathbb{C}_\nu$ and not a $\mathbb{C}_\nu$-algebra. Explicitly, with $\lambda=\nu$, $\tilde q_1=\mu$ and $\tilde q_2=e_t$,
 $$
-\lambda(\tilde q_1\tilde q_2)=\nu(\mu e_t)=\nu\mu , \qquad \tilde q_1(\lambda \tilde q_2)=\mu(\nu e_t)=\mu\nu=-\nu\mu ,
+\boxed{\;\boxed{\lambda(\tilde q_1\tilde q_2)=\nu(\mu e_t)=\nu\mu , \qquad \tilde q_1(\lambda \tilde q_2)=\mu(\nu e_t)=\mu\nu=-\nu\mu}\;},
 $$
 so the second slot fails; the first slot does not fail, since $\lambda(\tilde q_1\tilde q_2)=(\lambda \tilde q_1)\tilde q_2$ by associativity.
 
@@ -44,7 +44,7 @@ so the second slot fails; the first slot does not fail, since $\lambda(\tilde q_
 
 For the reading of the previous section, the $\mathbb{C}_\nu$-linear endomorphisms of $\mathbb{H}$ are the real-linear endomorphisms commuting with $J$,
 $$
-\operatorname{End}_{\mathbb{C}_\nu}(\mathbb{H})=\{T\in\operatorname{End}_{\mathbb{R}}(\mathbb{H}):TJ=JT\}.
+\boxed{\;\boxed{\operatorname{End}_{\mathbb{C}_\nu}(\mathbb{H})=\{T\in\operatorname{End}_{\mathbb{R}}(\mathbb{H}):TJ=JT\}}\;}.
 $$
 In a complex basis $(e_t,\mu)$ this is the matrix ring $M_2(\mathbb{C}_\nu)$, of complex dimension four and real dimension eight. Inside it the left multiplications $L_{\tilde p}$ of *The Quaternioid as a Vector Space over $\mathbb{R}$* occupy a distinguished part: $L_{\tilde p}$ is $\mathbb{C}_\nu$-linear exactly when $\tilde p$ commutes with $\nu$, that is, exactly when $\tilde p\in\mathbb{C}_\nu$, and then $L_{\tilde p}$ is the scalar multiplication by $\tilde p$. For $\tilde p$ outside $\mathbb{C}_\nu$ the left multiplication $L_{\tilde p}$ is real-linear alone. The right multiplications all commute with $J$ as well, since $R_{\tilde q}J(\tilde p)=R_{\tilde q}(\nu \tilde p)=(\nu \tilde p)\tilde q=\nu(\tilde p\tilde q)=JR_{\tilde q}(\tilde p)$ by associativity, so $R_{\tilde q}J=JR_{\tilde q}$ for every $\tilde q$; the two families sit in $\operatorname{End}_{\mathbb{C}_\nu}(\mathbb{H})$ on different footings, which is the asymmetry visible in the two slots of the product.
 

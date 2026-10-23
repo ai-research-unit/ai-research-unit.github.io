@@ -115,7 +115,7 @@ $$
 In the biquaternion formulation each is an idempotent of $\mathbb{B}\otimes\mathbb{B}$. Following *Exercise: The Correlation Function of the Bell States*, write
 
 $$
-\tilde\Pi_\epsilon=\tfrac{1}{4}\left(e_t\otimes e_t+\epsilon_1\,\vec e_x\otimes \vec e_x+\epsilon_2\,\vec e_y\otimes \vec e_y+\epsilon_3\,\vec e_z\otimes \vec e_z\right),
+\boxed{\;\tilde\Pi_\epsilon=\tfrac{1}{4}\left(e_t\otimes e_t+\epsilon_1\,\vec e_x\otimes \vec e_x+\epsilon_2\,\vec e_y\otimes \vec e_y+\epsilon_3\,\vec e_z\otimes \vec e_z\right)\;},
 $$
 
 where $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3)$ is a triple of signs satisfying
@@ -204,7 +204,7 @@ $$
 is the joint spectral projector onto the common eigenspace with eigenvalues $(s_1,s_3)\in\{\pm1\}^2$. Each factor $\tfrac12(e_t\otimes e_t+s_\mu S_\mu)$ is idempotent and Hermitian because $S_\mu$ is an involution, and the two factors commute; hence the product is idempotent and Hermitian as well. Summing over the four sign pairs,
 
 $$
-\sum_{s_1,s_3=\pm1}\tilde\Pi_{(s_1,s_3)}=e_t\otimes e_t .
+\boxed{\;\sum_{s_1,s_3=\pm1}\tilde\Pi_{(s_1,s_3)}=e_t\otimes e_t\;} .
 $$
 
 Substituting $S_1=-\vec e_x\otimes \vec e_x$, $S_3=-\vec e_z\otimes \vec e_z$, and $S_1S_3=\vec e_y\otimes \vec e_y$ gives
@@ -254,7 +254,7 @@ It is worth noting what the Hadamard structure does **not** yet show. The relati
 The projector formula of the previous section already contains the eigenvalue relations. Since $\tilde\Pi_{(s_1,s_3)}$ is by construction the joint spectral projector for eigenvalues $(s_1,s_3)$, and since $\tilde\Pi_\epsilon=\tilde\Pi_{(s_1,s_3)}$ with $s_1=-\epsilon_1$ and $s_3=-\epsilon_3$, we have
 
 $$
-S_1\tilde\Pi_\epsilon=-\epsilon_1\,\tilde\Pi_\epsilon,\qquad S_3\tilde\Pi_\epsilon=-\epsilon_3\,\tilde\Pi_\epsilon .
+\boxed{\;S_1\tilde\Pi_\epsilon=-\epsilon_1\,\tilde\Pi_\epsilon,\qquad S_3\tilde\Pi_\epsilon=-\epsilon_3\,\tilde\Pi_\epsilon\;} .
 $$
 
 Equivalently, $\tilde\Pi_\epsilon$ is a joint eigen-idempotent of the two stabiliser involutions, with eigenvalue table
@@ -407,7 +407,7 @@ $$
 The same computation with the roles of the factors exchanged gives
 
 $$
-\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\tfrac{1}{2}\,e_t .
+\boxed{\;\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\tfrac{1}{2}\,e_t\;} .
 $$
 
 The reason is exactly the one identified in the entangled-subsystems article: the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \neq t$ are traceless in each factor, so the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
@@ -440,8 +440,8 @@ Whether the tensor-product algebra is itself canonical for the biquaternion fram
 The four Bell states of two qubits are, in the biquaternion framework, four idempotents of the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. Following *Exercise: The Correlation Function of the Bell States*, they are written
 
 $$
-\tilde\Pi_\epsilon=\tfrac{1}{4}\left(e_t\otimes e_t+\epsilon_1\,\vec e_x\otimes \vec e_x+\epsilon_2\,\vec e_y\otimes \vec e_y+\epsilon_3\,\vec e_z\otimes \vec e_z\right),
-\qquad \epsilon_1\epsilon_2\epsilon_3=+1 ,
+\boxed{\;\tilde\Pi_\epsilon=\tfrac{1}{4}\left(e_t\otimes e_t+\epsilon_1\,\vec e_x\otimes \vec e_x+\epsilon_2\,\vec e_y\otimes \vec e_y+\epsilon_3\,\vec e_z\otimes \vec e_z\right),
+\qquad \epsilon_1\epsilon_2\epsilon_3=+1\;} ,
 $$
 
 one for each of the four admissible sign triples.

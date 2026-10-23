@@ -85,7 +85,7 @@ A nonzero module is **simple** if it has no submodules other than $0$ and itself
 
 Over $\mathbb{C}$, every descending chain of left ideals of $\mathbb{B}$ is a descending chain of $\mathbb{C}$-subspaces, so it stabilizes; thus $\mathbb{B}$ is artinian. By Wedderburn–Artin, a unital ring is semisimple if and only if it is artinian with zero Jacobson radical, and every simple artinian ring is semisimple. Hence $\mathbb{B}$ is **semisimple**, and every left ideal is a direct sum of minimal left ideals.
 
-All simple left $\mathbb{B}$-modules are isomorphic, since a simple artinian ring has a unique simple module up to isomorphism. With the idempotents $\tilde\Pi_+, \tilde\Pi_-$ of §*Idempotents and Orthogonal Idempotents*, the algebra as a left module over itself reads $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$, with $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ both minimal left ideals. Hence $0 \subset \mathbb{B}\tilde\Pi_+ \subset \mathbb{B}$ is a composition series, and the **length of $\mathbb{B}$ as a left module over itself is $2$**, with both factors isomorphic. The right regular module has length $2$ as well. All of this is over $\mathbb{C}$.
+All simple left $\mathbb{B}$-modules are isomorphic, since a simple artinian ring has a unique simple module up to isomorphism. With the idempotents $\tilde\Pi_+, \tilde\Pi_-$ of §*Idempotents and Orthogonal Idempotents*, the algebra as a left module over itself reads $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$, with $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ both minimal left ideals. These minimal left ideals are the two spinor spaces of *Eigenbasis of a Biquaternion*, §*The Spinor Spaces and their Coordinates*: each is a complex plane, and a spinor is a pair of complex coordinates. Hence $0 \subset \mathbb{B}\tilde\Pi_+ \subset \mathbb{B}$ is a composition series, and the **length of $\mathbb{B}$ as a left module over itself is $2$**, with both factors isomorphic. The right regular module has length $2$ as well. All of this is over $\mathbb{C}$.
 
 ## Idempotents and Orthogonal Idempotents
 
@@ -240,6 +240,8 @@ $$
 | $\mathbb{B}_{+-}$ | $\tilde\Pi_+\mathbb{B}\tilde\Pi_-$ | $\vec\Upsilon_x$ | $1$ | $E_{12}$ |
 | $\mathbb{B}_{-+}$ | $\tilde\Pi_-\mathbb{B}\tilde\Pi_+$ | $\vec\Upsilon_y$ | $1$ | $E_{21}$ |
 | $\mathbb{B}_{--}$ | $\tilde\Pi_-\mathbb{B}\tilde\Pi_-$ | $\tilde\Pi_-$ | $1$ | $E_{22}$ |
+
+**The Q-adapted case.** The basis above is attached to the fixed root $i\vec e_z$. For a general element $\tilde Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$, the root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ is not $i\vec e_z$, and the corresponding Peirce basis is the Q-adapted basis of *Eigenbasis of a Biquaternion*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. Its nilpotents are written $\vec\Upsilon_\pm$, with $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$; for the standard pair they are $\vec\Upsilon_+=\vec\Upsilon_y$ and $\vec\Upsilon_-=\vec\Upsilon_x$, the choice $\mu=1$ of the reciprocal rescaling. In that basis left multiplication by $\tilde Q$ is diagonal with $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, whereas in the standard basis above it is generally a full matrix.
 
 **The root on the corners.** The two signs of the pair are the two eigenvalues of multiplication by the root, and each corner collects one eigenvalue on the left and one on the right:
 
@@ -408,6 +410,19 @@ $$
 **Proof.** The map is $\mathbb{C}$-linear and bijective, since the four basis elements of $\mathbb{B}$ go to the four basis matrices of $M_2(\mathbb{C})$; it is multiplicative because the four Peirce basis elements multiply as the four matrix units do — the Peirce table of §*The Peirce Table* is the table $E_{ij}E_{kl} = \delta_{jk}E_{il}$ of *Matrix Algebras*, §*Matrix Units* — and both multiplications are bilinear.
 
 The isomorphism is the corpus's $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, written there as an assignment on the basis; what the Peirce decomposition adds is the reading of its four entries as the coordinates of the four corners. Its trace and its determinant are the two invariants of the Peirce decomposition, $\operatorname{tr} = a_{11}+a_{22} = 2Q_t$ and $\det = a_{11}a_{22}-a_{12}a_{21} = \langle\tilde Q\rangle_{\natural}$, so that the scalar part and the norm of the algebra are the two symmetric functions of the corner coordinates (§*The Peirce Coordinates*). In this model the left ideals are the columns and the right ideals the rows, which is the content of §*The Decomposition into Minimal Left and Right Ideals* read on the matrix side: $\mathbb{B}\tilde\Pi_+$ is the first column $\mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ and $\tilde\Pi_+\mathbb{B}$ is the first row $\mathbb{C}E_{11}\oplus\mathbb{C}E_{12}$, the two groupings of the four matrix units that *Matrix Algebras*, §*The Case $n = 2$* distinguishes.
+
+**The Q-adapted model.** The model above is the Peirce-coordinate model of the standard pair. For a general element $\tilde Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$, the Q-adapted model is
+$$
+\mathsf{M}_2^{Q}(P)=\mathsf{C}_Q^{-1}\mathsf{M}_2(P)\mathsf{C}_Q,
+$$
+where $\mathsf{C}_Q$ is the coordinate-change matrix whose columns are the eigenvectors of $\mathsf{M}_2(\tilde Q)$ expressed in the standard Peirce basis. It sends
+$$
+\tilde\Pi_+\mapsto E_{11},\quad
+\vec\Upsilon_-\mapsto E_{12},\quad
+\vec\Upsilon_+\mapsto E_{21},\quad
+\tilde\Pi_-\mapsto E_{22},
+$$
+and $\tilde Q\mapsto\operatorname{diag}(\lambda_+,\lambda_-)$. The standard model is the special case $\vec Q\parallel\vec e_z$, up to the reciprocal rescaling of the two mixed generators. In both models the left ideals are the columns and the right ideals the rows; the Q-adapted model changes the basis, not the grouping. The construction is that of *Eigenbasis of a Biquaternion*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*.
 
 ### Systems of Matrix Units
 

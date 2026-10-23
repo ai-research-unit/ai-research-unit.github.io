@@ -17,8 +17,6 @@ $$
 
 and the reflection condition $\alpha(a)=a^{-1}$ collapses the two parameters: **every reflection is self-adjoint**. The article proves this, generalises it to the criterion that a reflection-shaped sandwich is self-adjoint exactly when $\alpha(a)a$ is central, exhibits the failure of self-adjointness by an explicit non-central element, and reads the $\pm1$-eigenspace decomposition of a reflection as the spectral decomposition of a self-adjoint involution.
 
-**The boundaries.** The reflection-shaped signed sandwich, the reflection condition and its failure for a degenerate form are *Reflections as Signed Two-Sided Operators on a Clifford Algebra*; the geometric reflection formula $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$, the composition law and the reflection correspondence are *The Signed Sandwich on a Clifford Algebra* and *One-Sided Operators with the Signed Product*; the adjoint of the general signed sandwich and the isometry criterion are *The Signed Adjoint Sandwich on a Clifford Algebra*; the Clifford conjugation and the standard form are *The Adjoint of the Left Multiplication on a Clifford Algebra*; the group generated and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The analytic spectral theory of a self-adjoint operator belongs to a later Part and is named only. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
-
 ## The Adjoint of a Reflection
 
 **Definition.** A **reflection** of the Clifford algebra is a signed sandwich $\Sigma^{\alpha}_{a,a^{-1}}$ with $a$ a unit satisfying the **reflection condition** $a\,\alpha(a)=1$, equivalently $\alpha(a)=a^{-1}$; the **reflection-shaped** sandwiches are those of the form $\Sigma^{\alpha}_{a,a^{-1}}$ with no condition on $a\alpha(a)$.
@@ -96,7 +94,6 @@ For $\mathrm{Cl}\cong\mathbb{H}$ with the quaternionic conjugation $\hat x=\bar 
 ### The Failure: Conjugation by an Even Element
 
 In $\mathrm{Cl}_4$ with the negative-definite form and the even unit $a=1+e_1e_2$, the conjugation $\Sigma^{\alpha}_{a,a^{-1}}=T_{a,a^{-1}}$ is not self-adjoint, as displayed; it is nevertheless an isometry by the general criterion, and its adjoint is the inverse conjugation $T_{a^{-1},a}$. On the $e_1$ direction the two maps send $e_1$ to $e_2$ and $-e_2$ respectively.
-
 
 ## Summary
 

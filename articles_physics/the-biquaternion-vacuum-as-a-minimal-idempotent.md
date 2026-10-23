@@ -20,14 +20,6 @@ It is an element of the informational sector $\mathbb{M}_+$, it is **minimal** i
 
 The article proceeds as follows. The next section recalls the standard vacuum and the sense in which it is a state. The following section fixes the idempotents of $\mathbb{B}$ and the notion of minimality. The next two sections construct the one-mode vacuum and prove that it is a minimal idempotent, and then that it is a zero divisor. The following sections describe the minimal left ideal it defines, the vacuum manifold, and the field case. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu,\lambda$, and scalar imaginary $i$ with $i^2=-1$, central in $\mathbb{B}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian), and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The fixed-point subspaces are
-$$
-\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\} = \mathrm{span}_{\mathbb{R}}\{ie_t, \vec e_x, \vec e_y, \vec e_z\},
-\qquad
-\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\},
-$$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The isomorphism is $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, the **biquaternion norm** is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace is $\mathrm{Tr}(\tilde H_1\tilde H_2) = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2) = 2\langle\tilde H_1,\tilde H_2\rangle_{*}$, the $2\times2$ reading of the plain form, so that $\mathrm{Tr}(e_t)=2$. The single-mode ladder is $\vec\Upsilon_x = \tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y = \tfrac12(i\vec e_x+\vec e_y)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
-
 ## The Vacuum as a State
 
 In the standard formulation the vacuum is characterized in two equivalent ways, and it is worth keeping both in view because the biquaternion interpretation uses one and not the other.
@@ -104,7 +96,7 @@ $$
 $$
 The number operator is a projector, so its spectrum is $\{0,1\}$: the mode is either empty or occupied. The **vacuum projector** is the spectral projector onto the empty eigenvalue,
 $$
-|0\rangle\langle 0| \;=\; e_t - \tilde\Pi_- \;=\; \tfrac12\big(e_t + i\vec e_z\big) \;=\; \tilde\Pi_+.
+\boxed{\;|0\rangle\langle 0| \;=\; e_t - \tilde\Pi_- \;=\; \tfrac12\big(e_t + i\vec e_z\big) \;=\; \tilde\Pi_+\;}.
 $$
 Here and below
 $$
@@ -204,7 +196,7 @@ $$
 $$
 and every identity above holds with $\vec u$ in place of $\vec e_z$, because $\vec u^2 = -e_t$ for every unit vector. The family
 $$
-\mathcal{M}_{\text{vac}} \;=\; \big\{\,\tilde\Pi(\vec u) : \vec u\in S^2\,\big\} \;\cong\; S^2
+\boxed{\;\mathcal{M}_{\text{vac}} \;=\; \big\{\,\tilde\Pi(\vec u) : \vec u\in S^2\,\big\} \;\cong\; S^2\;}
 $$
 is the **vacuum manifold**. Its three properties, all immediate from the definitions, are worth naming.
 
@@ -255,9 +247,9 @@ The minimal-idempotent interpretation is not a diminution of the field vacuum. I
 
 For a single fermionic mode the vacuum of the biquaternion framework is a concrete algebra element: the Hermitian, idempotent, unit-trace, **minimal** idempotent
 $$
-|0\rangle_{*}\langle 0| = \tilde\Pi_+ = \tfrac12\big(e_t+i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
+\boxed{\;|0\rangle_{*}\langle 0| = \tilde\Pi_+ = \tfrac12\big(e_t+i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
 \qquad
-\tilde\Pi_- = \tfrac12\big(e_t-i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}0&0\\0&1\end{pmatrix},
+\tilde\Pi_- = \tfrac12\big(e_t-i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}0&0\\0&1\end{pmatrix}\;}
 $$
 with $\tilde\Pi_++\tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_-=0$, and $(-1)^F = i\vec e_z = \tilde\Pi_+-\tilde\Pi_-$. Minimality is equivalently rank one, equivalently the one-dimensional Peirce corner $\tilde\Pi\mathbb{B}\tilde\Pi\cong\mathbb{C}$, equivalently the minimality of the left ideal $\mathbb{B}\tilde\Pi_+$. That ideal is the two-complex-dimensional fundamental module — the one-particle spinor space — so the vacuum idempotent determines the module on which the field lives.
 

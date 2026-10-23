@@ -26,8 +26,6 @@ The Proca equation in biquaternionic form is the classical parent of this articl
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the gauge scalar $S$.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the rotation generators and the adjoint action.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_i \vec e_j=-\delta_{ij}e_t+\varepsilon_{ijk}\vec e_k$, $i$ is the central scalar imaginary, and the fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector). The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta$. The material basis is $\varepsilon_0=ie_t$, $\varepsilon_\mu=\vec e_\mu$, with $\eta_{\mu\nu}=\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}=\mathrm{diag}(-1,+1,+1,+1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. For the free-field quantization natural units $\hbar=c=1$ are used, in which $\mu$ is the mass, and the dimensionful equation is restored by $\mu\to mc/\hbar$. The potential is the material four-vector $\tilde{A}=iA_0e_t+\vec A\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, and the series metric is the $ict'$ metric of signature $(-,+,+,+)$.
-
 ## The Proca Field in Biquaternionic Form
 
 ### The Lagrangian and the Field Equation
@@ -51,11 +49,10 @@ $$
 This is the Maxwell equation with a mass term, and it is the component form of the single biquaternion equation
 
 $$
-\tilde{\nabla}\tilde{F} = \mu^2\tilde{A},
+\boxed{\;\tilde{\nabla}\tilde{F} = \mu^2\tilde{A}\;},
 $$
 
 whose massless case $\tilde{\nabla}\tilde{F}=0$ is the source-free Maxwell equation of the companion article. The right-hand side $\mu^2\tilde{A}$ lies in the material sector, as does the left-hand side, so the biquaternion equation is sector-consistent: the algebra does not mix $\mathbb{M}_-$ with $\mathbb{M}_+$.
-
 
 ### The Lorenz Condition Is a Consequence
 
@@ -112,12 +109,11 @@ $$
 
 in the components appropriate to the series metric. The minus sign in the spatial entry is forced by transversality: with the plus sign the contraction $p^\mu\varepsilon^{L}_\mu$ is $2\omega_{\vec p}|\vec p|/\mu$ instead of zero.
 
-
 The three polarizations are orthonormal and complete: they satisfy $\varepsilon^{r}_\mu\varepsilon^{s\mu}=\delta_{rs}$, all three norms being $+1$, and the completeness relation
 
 $$
-\sum_{r=1}^{3}\varepsilon^{r}_\mu\varepsilon^{r}_\nu
-= \eta_{\mu\nu} + \frac{p_\mu p_\nu}{\mu^2},
+\boxed{\;\sum_{r=1}^{3}\varepsilon^{r}_\mu\varepsilon^{r}_\nu
+= \eta_{\mu\nu} + \frac{p_\mu p_\nu}{\mu^2}\;},
 $$
 
 and its right-hand side was checked directly: it is idempotent, $P^2=P$, it has trace $3$, and it annihilates the momentum, $P_{\mu\nu}p^\nu=0$. The trace three is the statement that three polarizations are physical; the annihilation is the statement that $P$ projects onto the three-plane orthogonal to $p$, which for a massive vector is the full on-shell polarization space. At rest, $p^\mu=(\mu,\mathbf{0})$, the projector is $\mathrm{diag}(0,1,1,1)$, the three spatial directions, and the longitudinal polarization is the spatial direction of the momentum in the boosted frame. The three vectors were exhibited explicitly at $\vec p=0$, $p=1.5\,\vec u_z$ and $p=-3\,\vec u_z$, and the completeness relation was verified to machine precision at each, together with $p^\mu\varepsilon^r_\mu=0$.
@@ -181,7 +177,7 @@ $$
 and the constraints are **second class**. This is the single structural difference from the Maxwell case, and everything else follows from it. A second-class constraint pair removes two phase-space dimensions — one for each constraint, with no gauge direction left over — so the count is
 
 $$
-\frac{1}{2}\left(8-2\right) = 3
+\boxed{\;\frac{1}{2}\left(8-2\right) = 3\;}
 $$
 
 field degrees of freedom, against the massless count $\frac12(8-2\times2)=2$. The second-class system no longer generates a gauge transformation, and the constraint must be solved rather than used to fix a gauge.

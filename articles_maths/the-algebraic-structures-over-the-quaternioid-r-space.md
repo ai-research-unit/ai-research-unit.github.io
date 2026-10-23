@@ -5,14 +5,12 @@
 The companion products of *The 6 Products of the Quaternioid Real Space* carry three structures on the same four-dimensional real space, and the three are named once here and cited by their abbreviations throughout the category:
 
 $$
-\mathrm{SPA} , \qquad \mathrm{APA} , \qquad \mathrm{GQA} .
+\boxed{\;\mathrm{SPA} , \qquad \mathrm{APA} , \qquad \mathrm{GQA}\;}.
 $$
 
 The **symmetric plain algebra** $\mathrm{SPA}$ is the space with the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$; the **antisymmetric plain algebra** $\mathrm{APA}$ with the cross product $\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$; and the **general quaternionic algebra** $\mathrm{GQA}$ with the general quaternionic product $\tilde q_1^{\natural}\tilde q_2$. The algebra product $\tilde q_1\tilde q_2$ makes the space a fourth structure, the quaternionic division algebra, and that one belongs to the *Quaternions* category, cited from here and never restated. The same space carries the three companion structures, and the three are told apart by the laws their products satisfy; this article gives the names, the structure of each, the law table and the two laws that single out two of the three.
 
 The article assumes the products and their coordinate rules from *The 6 Products of the Quaternioid Real Space*, the article preceding this one, and the definitions of the vocabulary it uses from *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, below this article in this category.
-
-**Conventions.** Throughout, $\mathbb{H}$ is the real quaternion algebra with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, and the companion products are written $\tilde q_1\bullet\tilde q_2$, $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ and $\tilde q_1^{\natural}\tilde q_2$. The **support** of a structure is the underlying real vector space, which is $\mathbb{H}$ for all three.
 
 ## The Three Names and Their Structures
 

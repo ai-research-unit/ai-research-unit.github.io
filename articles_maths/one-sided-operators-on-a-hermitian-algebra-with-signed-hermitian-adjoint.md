@@ -24,8 +24,6 @@ The second fact is that the adjoint of each one-sided operator, for the form $(x
 
 The algebra, the dagger and the involution of the base are *Hermitian Algebras*; the general two one-sided families, their composition laws, their mutual commutants and the adjoint theorem are *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint*; the two-sided operator and its parameter rule are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the module consequences are *Pin Representations and Hermitian Modules with Signed Hermitian Adjoint*; the ideal-theoretic consequences are *Spinors as Minimal Left Ideals with Signed Hermitian Adjoint*. Nothing owned by those entries is re-derived.
 
-**Conventions.** $A$ is a commutative ring with involution $\sigma$, $V$ is free of finite rank with a non-degenerate $q$, $x^{\dagger}=\sigma(\alpha(x^{r}))$, $\varepsilon_x=(-1)^{|x|}$, $U=\{x:x^{\dagger}x=1\}$. The forms are on the regular module: $(x,y)=\mathrm{Sc}(x^{\dagger}y)$ for the dagger, and the adjoint of an operator is written ${}^{*}$.
-
 ## The Signed Left Multiplication
 
 **Definition.** For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **signed left multiplication** by $x$ is the $A$-linear map

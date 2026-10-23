@@ -103,8 +103,8 @@ and the correction terms vanish for all $\tilde{Q}$ only when $\tilde{R}_0=0$. T
 
 The infinitesimal statement should be distinguished from the finite one. The translation generators $P_\mu$ do belong to the Lie algebra of the Poincaré group, which is the semidirect sum
 $$
-\mathrm{P}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
-\qquad [P_\mu,P_\nu]=0,
+\boxed{\;\mathrm{P}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
+\qquad [P_\mu,P_\nu]=0\;},
 $$
 with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(a^\mu\partial_\mu)$, and on a plane wave of four-wavevector $\tilde P\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{R}_0)\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{R}_0$, the multiplier is $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_0))$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde P\tilde{R}_0) = \langle\tilde P,\tilde{R}_0\rangle$, not $\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}) = \langle\tilde P,\tilde{R}_0\rangle_{\natural}$: for $\tilde P,\tilde{R}_0\in\mathbb{M}_-$ the latter equals $-(p_0a_0)+\vec p\cdot\vec a$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.
 
@@ -121,7 +121,7 @@ $$
 $$
 The displacement slot returns to $e_t$: the residual translations $\tilde{R}_1$ cancel, and what survives is exactly the rotor conjugation of $\tilde{R}_0$. In other words, the homogeneous factor acts on the translation subgroup by the **vector representation** $\mathrm{Ad}$ on $\mathbb{M}_-$ — the same action that defines four-vectors. The semidirect product is therefore
 $$
-P_+^{\uparrow}\cong SL(2,\mathbb{C})\ltimes_{\mathrm{Ad}}\mathbb{R}^4,
+\boxed{\;P_+^{\uparrow}\cong SL(2,\mathbb{C})\ltimes_{\mathrm{Ad}}\mathbb{R}^4\;},
 $$
 which is the double cover of the restricted Poincaré group $SO^+(1,3)\ltimes\mathbb{R}^4$. The whole structure is determined by data already present in $\mathbb{B}$: the group $SL(2,\mathbb{C})$ of unit-norm biquaternions, and the conjugation action $\mathrm{Ad}$ of that group on the subspace $\mathbb{M}_-$. The algebra does not need to be told what a translation is; it needs only to be told that there is one, in the form of an additive copy of $\mathbb{M}_-$.
 
@@ -205,7 +205,7 @@ $$
 $$
 Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
 $$
-\tilde{\nabla}_{\mathrm{Ad}}\left(\tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}\right) = \tilde U_{\mathrm L}\left(\tilde{\nabla}\tilde\Phi\right)\tilde U_{\mathrm L}^{*} ,
+\boxed{\;\tilde{\nabla}_{\mathrm{Ad}}\left(\tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}\right) = \tilde U_{\mathrm L}\left(\tilde{\nabla}\tilde\Phi\right)\tilde U_{\mathrm L}^{*}\;},
 $$
 which was checked on random rotors and random $\tilde\Phi$. The equation $\tilde{\nabla}\tilde\Phi = \tilde{G}$ therefore maps to $\tilde{\nabla}_{\mathrm{Ad}}\tilde\Phi_{\mathrm{Ad}} = \tilde{G}_{\mathrm{Ad}}$ with $\tilde\Phi_{\mathrm{Ad}} = \tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}$ and $\tilde{G}_{\mathrm{Ad}} = \tilde U_{\mathrm L}\tilde{G}\tilde U_{\mathrm L}^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
 

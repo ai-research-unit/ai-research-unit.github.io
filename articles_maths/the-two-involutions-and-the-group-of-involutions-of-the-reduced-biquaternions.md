@@ -10,8 +10,6 @@ This article fixes the four maps, their fixed and anti-fixed spaces and the grou
 
 **The results.** The bar, the tessarine sign and the star are involutions of the algebra; they commute pairwise, and $\{\mathrm{id},\bar{\cdot},{}_{\mathrm{ts}},{}^{*}\}$ is a Klein four-group with the multiplication ${}^{*}\circ{}^{*}=\mathrm{id}$, ${}^{*}\circ\bar{\cdot}={}_{\mathrm{ts}}$, ${}^{*}\circ{}_{\mathrm{ts}}=\bar{\cdot}$, so that each of the three non-identity marks is the composite of the other two. The bar and the star are $\mathbb{C}$-antilinear, the tessarine sign is $\mathbb{C}$-linear. Every one of the three is an **algebra automorphism**, because the algebra is commutative: the order-reversing character of the tessarine sign and of the star over the non-commutative biquaternions disappears. The flat is not an involution of the group; it is the negative of the star, it exchanges the star's fixed and anti-fixed spaces, and it is not multiplicative, $(\lambda \breve Q)^{\flat}=\bar\lambda \breve Q^{\flat}$ and $(\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}$.
 
-**Boundaries.** The space, the bases and the linear or antilinear character of the maps are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*, above this article in this category. The idempotents $\Pi_{\pm}$ and their fixed or exchanged behaviour are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, below this article, and the idempotent decomposition is *Reduced Biquaternion Space*. The products are used here only as far as the multiplicativity of the maps requires.
-
 ## The Two Involutions
 
 ### The Bar

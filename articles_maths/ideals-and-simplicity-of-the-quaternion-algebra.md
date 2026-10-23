@@ -48,9 +48,7 @@ The argument uses nothing about the specific multiplication of $\mathbb{H}$; it 
 
 **Theorem.** The algebra $\mathbb{H}$ is a central simple $F$-algebra of degree two: its centre is $F$, and
 
-$$
-\dim_F \mathbb{H} = 4 = 2^2.
-$$
+$$ \boxed{\; \dim_F \mathbb{H} = 4 = 2^2 \;} .$$
 
 *Proof.* An element commuting with every quaternion is central, and the centre of the quaternion algebra over a field of characteristic not $2$ is the scalar field $F$, as in *Quaternion Algebra*. Simplicity is the theorem of the preceding section. The dimension is four by the definition of the presentation, and it is the square of the degree $2$.
 

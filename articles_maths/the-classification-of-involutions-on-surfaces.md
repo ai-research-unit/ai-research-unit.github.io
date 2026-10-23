@@ -9,8 +9,6 @@ The classification is the surface case of *Involutions on Manifolds and Equivari
 
 **The article assumes** the mapping class group and the Dehn twist of *Mapping Class Groups* and *The Dehn Twist as an Operator*, the structure theory of *Involutions on Manifolds and Equivariant Surgery*, the Euler characteristic and the classification of surfaces, and the elementary Nielsen fixed-point theory of *Degree Theory and the Brouwer Fixed Point Theorem*.
 
-**The boundaries of the article.** The general involution of a manifold of dimension at least three, its equivariant surgery and its classification are *Involutions on Manifolds and Equivariant Surgery*; the free involutions and their quotients are *Free Involutions and Lens Spaces*; the fixed sets of periodic maps of prime order are *Periodic Maps and the Smith Theory*. The hyperbolic metrics realising the involutions as isometries are *Hyperbolic Geometry* and *Teichmüller Theory*; the higher-dimensional orbifolds and their fundamental groups are modelled on the two-dimensional case treated here. The analytic Teichmüller theory is Part III, and no physics is invoked.
-
 ## Local Models on a Surface
 
 **Proposition (fixed sets of involutions of surfaces).** Let $T$ be a locally linear involution of a surface $S$.

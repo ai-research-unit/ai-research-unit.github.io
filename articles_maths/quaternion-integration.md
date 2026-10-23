@@ -213,9 +213,7 @@ Thus $D$ is the divergence of the quaternion-valued field with components $e_\mu
 
 **Theorem (divergence theorem).** Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be $C^1$ on $\bar{\Omega}$. Then
 
-$$
-\int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS.
-$$
+$$ \boxed{\; \int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS \;} .$$
 
 **Proof.** For each real component, the ordinary divergence theorem in $\mathbb{R}^4$ applied to the field with components $e_\mu f$ gives $\int_\Omega \sum_\mu \partial/\partial q_\mu\,(e_\mu f)\,dV = \int_{\partial\Omega}\sum_\mu n_\mu e_\mu f\,dS$. The left side is $\int_\Omega Df\,dV$ by the divergence form, and the right side is $\int_{\partial\Omega}\nu f\,dS$ by the definition of the conormal element. The right-handed identity is the same computation for the field with components $f e_\mu$.
 
@@ -341,9 +339,7 @@ The collapse of the product to a scalar is special to the quaternion case, where
 
 **Theorem (Cauchy–Pompeiu).** Let $\Omega$ be a bounded domain with smooth boundary, let $f$ be $C^1$ on $\bar{\Omega}$, and let $\tilde p \in \Omega$. Then
 
-$$
-f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,(Df)(w)\,dV(w).
-$$
+$$ \boxed{\; f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,(Df)(w)\,dV(w) \;} .$$
 
 **Proof (sketch).** Fix $\tilde p$ and remove from $\Omega$ a closed ball $\overline{B(\tilde p,\varepsilon)}$ to obtain $\Omega_\varepsilon$. Apply the divergence theorem to the field with components $F_\mu(w) = E(w - \tilde p)\,e_\mu\,f(w)$, where $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4$ is the fundamental solution. Its divergence is
 
@@ -365,9 +361,7 @@ The representation is the quaternionic instance of the general Cauchy–Pompeiu 
 
 **Theorem (Cauchy integral formula).** Let $f$ be left regular and $C^1$ on a domain containing the closed ball $\overline{B(\tilde p, r)}$. Then for every $\tilde q$ with $|\tilde q - \tilde p| < r$,
 
-$$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w).
-$$
+$$ \boxed{\; f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) \;} .$$
 
 **Proof.** Apply the Cauchy–Pompeiu representation with $\Omega = B(\tilde p,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = ((w-\tilde q))^{\natural}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.
 

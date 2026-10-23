@@ -5,9 +5,9 @@
 The Dirac oscillator is the relativistic quantum system obtained from the free Dirac Hamiltonian by the non-minimal substitution
 
 $$
-\vec p \;\longrightarrow\; \vec p - i m\omega \beta\vec r,
+\boxed{\;\vec p \;\longrightarrow\; \vec p - i m\omega \beta\vec r,
 \qquad
-H = c\,\boldsymbol\alpha\cdot\left(\vec p - i m\omega\beta\vec r\right) + \beta mc^2 ,
+H = c\,\boldsymbol\alpha\cdot\left(\vec p - i m\omega\beta\vec r\right) + \beta mc^2\;},
 $$
 
 introduced by Marcos Moshinsky and Adam Szczepaniak in 1989. The substitution is "non-minimal" in the precise sense that it cannot be obtained from a gauge potential: it adds, to the odd (frame-anticommuting) part of the Dirac operator, a term linear in the position. The resulting system is exactly solvable, its non-relativistic limit is the three-dimensional isotropic harmonic oscillator together with a spin–orbit coupling of the same order as the level spacing, and it has become the standard laboratory for the relativistic treatment of confining interactions.
@@ -159,12 +159,12 @@ $$
 so that, using $\vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega = 2m\hbar\omega N$ and $N = 2n_r + l$,
 
 $$
-E^2 = m^2c^4 + 2m\hbar\omega c^2\left(N - \frac{\boldsymbol\sigma\cdot\vec L}{\hbar}\right)
+\boxed{\;E^2 = m^2c^4 + 2m\hbar\omega c^2\left(N - \frac{\boldsymbol\sigma\cdot\vec L}{\hbar}\right)
 =
 \begin{cases}
 m^2c^4 + 4m\hbar\omega c^2\,n_r, & j = l+\tfrac12, \\[4pt]
 m^2c^4 + 2m\hbar\omega c^2\left(2n_r + 2l + 1\right), & j = l-\tfrac12 .
-\end{cases}
+\end{cases}\;}
 $$
 
 This is the Dirac-oscillator spectrum. Its structure is the two-branch pattern familiar from the literature: one branch is a tower in the radial quantum number $n_r$ alone, the other a tower shifted by the orbital quantum number; both are positive, so $E^2 \geq m^2c^4$ and the spectrum has a gap. The ground state has $n_r = 0$, $l = 0$, $j = \tfrac12$, and energy $E = \pm mc^2$; the first excited level stands at $E^2 = m^2c^4 + 4m\hbar\omega c^2$.
@@ -201,7 +201,7 @@ $$
 The oscillator's zero point is $\tfrac12\hbar\omega$, so $p^2 + m^2\omega^2x^2 = 2m\hbar\omega(n+\tfrac12)$ and the constant removes exactly the zero point:
 
 $$
-E^2 = m^2c^4 + 2m\hbar\omega c^2\,n, \qquad n = 0,1,2,\dots
+\boxed{\;E^2 = m^2c^4 + 2m\hbar\omega c^2\,n, \qquad n = 0,1,2,\dots\;}
 $$
 
 Each level is non-degenerate in the oscillator quantum number and the ground state sits at $E = \pm mc^2$, as in the three-dimensional aligned branch but without the orbital multiplicity. The one-dimensional result is the cleanest check that the constant $-m\hbar\omega$ (which becomes $-3m\hbar\omega$ in three dimensions) is not a convention but a consequence of the commutator $[x,p] = i\hbar$; the zero-point cancellation that produces the $E \propto n$ spectrum is the same mechanism in both cases.

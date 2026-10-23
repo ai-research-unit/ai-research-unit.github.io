@@ -12,10 +12,6 @@ The second is the **sandwich monoid**. The conjugate-indexed parametrisation $(\
 
 The third is the **bi-module** read through the involution. The block's regular bimodule is the algebra's, with the plain actions, which commute; the block's own one-sided multiplications are those actions **twisted by the involution** in the appropriate slot, and they no longer commute, $L_{\tilde Q_6}R_{\tilde Q_4}=L_{\tilde Q_6\tilde Q_4}$ against $R_{\tilde Q_4}L_{\tilde Q_6}=S_{\tilde Q_6,\tilde Q_4}$. So the block is a bi-module over its enveloping algebra, and the two-sidedness of the algebra's own is spent on the twist.
 
-**Boundaries.** The block's one-sided multiplications, their parities and their composition laws are *The Left and Right Multiplications of the Biquaternion Sesqualgebra*; the sandwich is *The Sesquilinear Sandwich on the Biquaternion*; the one-sided and two-sided operators of the block are *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*; the general operator theory of a sesqualgebra is *The Left and Right Multiplication Operators of a Sesqualgebra* and *The Sesquilinear Sandwich Operator*; the algebra's envelope, its Peirce decomposition, its bi-module and its left-versus-right question are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the multiplication and the associator of the block are *Introduction to the General Plain Sesqualgebra* and *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*; the projections are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*; and the Peirce lines of the block are *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the unit, and $i$ is the central scalar imaginary. ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation; the block's product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$; the involution as an operator is $\eta(\tilde Q_3)=\tilde Q_3^{*}$. The four operator families are
-
 $$
 L_{\tilde Q_6}(\tilde Q_3)=\tilde Q_6\star\tilde Q_3=\tilde Q_6\tilde Q_3^{*},\qquad
 R_{\tilde Q_6}(\tilde Q_3)=\tilde Q_3\star\tilde Q_6=\tilde Q_3\tilde Q_6^{*},
@@ -49,8 +45,8 @@ So the block's family is the ordinary two-sided multiplication read with the con
 **Theorem.** For all $\tilde Q_1,\tilde Q_2,\tilde{Q}_5,\tilde Q_7$,
 
 $$
-T_{\tilde Q_1,\tilde Q_2}\,T_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde{Q}_5,\tilde Q_7\tilde Q_2} , \qquad
-S_{\tilde Q_1,\tilde Q_2}\,S_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde Q_7,(\tilde Q_2\tilde{Q}_5)^{*}}=W_{\tilde Q_1\tilde Q_7,\tilde Q_2\tilde{Q}_5} .
+\boxed{\; T_{\tilde Q_1,\tilde Q_2}\,T_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde{Q}_5,\tilde Q_7\tilde Q_2} , \qquad
+S_{\tilde Q_1,\tilde Q_2}\,S_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde Q_7,(\tilde Q_2\tilde{Q}_5)^{*}}=W_{\tilde Q_1\tilde Q_7,\tilde Q_2\tilde{Q}_5} \;}.
 $$
 
 **Proof.** For the first, $T_{\tilde Q_1,\tilde Q_2}(T_{\tilde{Q}_5,\tilde Q_7}(\tilde Q_3))=\tilde Q_1(\tilde{Q}_5\tilde Q_3\tilde Q_7)\tilde Q_2=\tilde Q_1\tilde{Q}_5\,\tilde Q_3\,\tilde Q_7\tilde Q_2$. For the second, $S_{\tilde Q_1,\tilde Q_2}(S_{\tilde{Q}_5,\tilde Q_7}(\tilde Q_3))=S_{\tilde Q_1,\tilde Q_2}(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})=\tilde Q_1(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})^{*}\tilde Q_2^{*}=\tilde Q_1\tilde Q_7\tilde Q_3\tilde{Q}_5^{*}\tilde Q_2^{*}=T_{\tilde Q_1\tilde Q_7,\tilde{Q}_5^{*}\tilde Q_2^{*}}(\tilde Q_3)$, and $\tilde{Q}_5^{*}\tilde Q_2^{*}=(\tilde Q_2\tilde{Q}_5)^{*}$.
@@ -145,7 +141,7 @@ $$
 **Theorem.** The sandwich action defines an isomorphism of $\mathbb{C}$-algebras
 
 $$
-\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2\bigr),
+\boxed{\; \mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2\bigr) \;},
 $$
 
 so that $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the left action of $\mathbb{B}^{\mathrm e}$ on $\mathbb{B}$ is faithful and exhausts all $\mathbb{C}$-linear operators.
@@ -197,7 +193,7 @@ are idempotent and pairwise orthogonal, $E_{ik}E_{jl}=\delta_{ij}\delta_{kl}E_{i
 **Proposition (the sixteen corners).** The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to the family $E_{ik}$ has sixteen one-dimensional corners
 
 $$
-E_{ik}\,\mathbb{B}^{\mathrm e}\,E_{jl}=\bigl(\tilde\Pi_i\mathbb{B}\tilde\Pi_j\bigr)\otimes\bigl(\tilde\Pi_l\mathbb{B}\tilde\Pi_k\bigr)^{\mathrm{opp}}=\mathbb{C}\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
+\boxed{\; E_{ik}\,\mathbb{B}^{\mathrm e}\,E_{jl}=\bigl(\tilde\Pi_i\mathbb{B}\tilde\Pi_j\bigr)\otimes\bigl(\tilde\Pi_l\mathbb{B}\tilde\Pi_k\bigr)^{\mathrm{opp}}=\mathbb{C}\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr) \;},
 $$
 
 where $\Lambda_{ij}$ generates the block's corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is $\tilde\Pi,\vec\Upsilon_x,\vec\Upsilon_y,\tilde\Pi^{\perp}$ for $(i,j)=(+,+),(+,-),(-,+),(-,-)$ — and the corners multiply by

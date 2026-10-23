@@ -16,10 +16,6 @@ The invertibility is where the article records an **absence**. The plain product
 
 **The results.** The plain product carries one algebraic norm, the diagonal of its scalar-part form, $\langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$, complex-valued and indefinite, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, with the complex cone as its vanishing set. It is **not multiplicative**. It does **not** decide invertibility: $\langle\tilde Q\rangle=0$ does not force $\tilde Q$ non-invertible, and $\langle\tilde Q\rangle\neq0$ does not force $\tilde Q$ invertible. Each section below states its result first and then proves it.
 
-**Boundaries.** The three other algebraic norms of the space are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, and they are not read here: the general quaternionic algebraic norm $\langle\cdot\rangle_{\natural}$ is that of the quaternionic algebra, the general plain sesquilinear algebraic norm $\langle\cdot\rangle_{*}$ is that of the general plain sesqualgebra, and the general quaternionic sesquilinear algebraic norm $\langle\cdot\rangle_{\natural*}$ is that of the general quaternionic sesqualgebra. The product and its element theory are *Introduction to the Biquaternion Algebra*; the conjugations and the remarkable subspaces are the basic algebra article; the unit tables of the four products are *Comparison Between the Four General Products*; the definitions of the unit, the inverse and the group of units are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The scalar part is $\mathrm{Sc}$, the natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $(\vec Q_2,\vec Q_1)=\sum_{k=1}^{3}Q_{2k}Q_{1k}$ is the complex bilinear dot product of the vector parts. Throughout this article the product is the general plain bilinear product, written by juxtaposition, $\tilde Q_2\tilde Q_1$.
-
 ## The Algebraic Norm of the Plain Product
 
 **The general plain bilinear product carries exactly one algebraic norm**, the diagonal of its scalar-part form, $\langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$; it is complex-valued and indefinite, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, and its vanishing set is the complex cone.
@@ -41,8 +37,10 @@ which is the general plain bilinear form of *The 4 Forms over the Biquaternion $
 The form is symmetric, $\langle\tilde Q_2,\tilde Q_1\rangle=\langle\tilde Q_1,\tilde Q_2\rangle$, and non-degenerate, and on the diagonal the splitting of the coefficients into real and imaginary parts gives
 
 $$
-\operatorname{Re}B=\sum_{\mu\in\{t,x,y,z\}}\bigl(q_\mu^{2}-(q'_\mu)^{2}\bigr),\qquad \operatorname{Im}B=2\sum_{\mu\in\{t,x,y,z\}}q_\mu q'_\mu,\qquad Q_\mu=q_\mu+iq'_\mu .
-$$
+\boxed{\;
+\operatorname{Re}B=\sum_{\mu\in\{t,x,y,z\}}\bigl(q_\mu^{2}-(q'_\mu)^{2}\bigr),\qquad \operatorname{Im}B=2\sum_{\mu\in\{t,x,y,z\}}q_\mu q'_\mu,\qquad Q_\mu=q_\mu+iq'_\mu
+\;}
+$$.
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -59,7 +57,9 @@ $$
 **Proposition.** The algebraic norm of the plain product is **not** multiplicative:
 
 $$
+\boxed{\;
 \langle\tilde Q_2\tilde Q_1\rangle\neq \langle\tilde Q_2\rangle\,\langle\tilde Q_1\rangle\quad\text{in general.}
+\;}
 $$
 
 *Proof.* The pair $\tilde Q_2=\vec e_x$, $\tilde Q_1=\vec e_y$ separates the two sides: $\vec e_x\vec e_y=\vec e_z$, so $\langle\tilde Q_2\tilde Q_1\rangle=\langle \vec e_z\rangle=-1$, while $\langle \vec e_x\rangle\langle \vec e_y\rangle=(-1)(-1)=1$. The two values differ, so no multiplicativity holds.
@@ -83,10 +83,12 @@ The algebraic norm of a product would decide invertibility if the invertible ele
 **Theorem (the algebraic norm does not decide invertibility).** Neither implication holds:
 
 $$
+\boxed{\;
 \langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\text{ non-invertible},
 \qquad
-\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible}.
-$$
+\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible}
+\;}
+$$.
 
 *Proof.* For the first implication, the element $\tilde Q=e_t+\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-1^{2}=0$, and it is a unit of the plain product: $(e_t+\vec e_x)(e_t-\vec e_x)=e_t^{2}-e_t\vec e_x+\vec e_xe_t-\vec e_x^{2}=e_t-\vec e_x+\vec e_x+e_t=2e_t$, so $\tilde Q^{-1}=\tfrac12(e_t-\vec e_x)$ and $\tilde Q$ is invertible while its algebraic norm vanishes. For the second implication, the element $\tilde Q=e_t+i\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-(i)^{2}=1+1=2\neq0$, and it is a zero divisor, $(e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^{2}-(i\vec e_x)^{2}=e_t-e_t=0$, hence non-invertible while its algebraic norm does not vanish.
 

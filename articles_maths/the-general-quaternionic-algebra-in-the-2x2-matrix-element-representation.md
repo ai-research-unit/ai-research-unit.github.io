@@ -7,8 +7,6 @@ The reading group *Topology on the Introduction to the General Quaternionic Alge
 
 The natural conjugation is the characteristic operation of the group, and in the model it is the **adjugate**: $\mathsf{M}_2(\tilde Q_2^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q_2)$. The quaternionic product is therefore the ordinary matrix product with the adjugate inserted in the first slot, $\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\operatorname{adj}\mathsf{M}_2(\tilde Q_1)\,\mathsf{M}_2(\tilde Q_2)$, and the general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_1)\operatorname{adj}\mathsf{M}_2(\tilde Q_2))$. The determinant is the norm, so the whole element theory of the group is read off the determinant of the matrix.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde Q_2=\sum_\mu Q_{2,\mu} e_\mu$ with $Q_{2,\mu}\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ and its norm is $\langle\tilde Q_2\rangle_{\natural}=\langle\tilde Q_2,\tilde Q_2\rangle_{\natural}$.
-
 ## The Representation
 
 **Definition.** The **matrix realization** is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
@@ -32,7 +30,7 @@ The adjugate is also the conjugate of the transpose by a fixed matrix, $\operato
 **Theorem (the product is the adjugated matrix product).** For all biquaternions,
 
 $$
-\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\operatorname{adj}\mathsf{M}_2(\tilde Q_1)\,\mathsf{M}_2(\tilde Q_2),
+\boxed{\; \mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\operatorname{adj}\mathsf{M}_2(\tilde Q_1)\,\mathsf{M}_2(\tilde Q_2) \;},
 $$
 
 the ordinary matrix product with the adjugate in the first slot.
@@ -80,7 +78,7 @@ the failure of the transpose-conjugation to be multiplicative in the same order:
 **Theorem (the adjugated trace pairing).** For all biquaternions,
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr),
+\boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr) \;},
 $$
 
 the trace pairing in which the second argument is adjugated.
@@ -90,7 +88,7 @@ the trace pairing in which the second argument is adjugated.
 **Theorem (the diagonal is the determinant).** On the diagonal,
 
 $$
-\langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_2)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr) = \det \mathsf{M}_2(\tilde Q_2) = \sum_\mu Q_{2,\mu}^2 ,
+\boxed{\; \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_2)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr) = \det \mathsf{M}_2(\tilde Q_2) = \sum_\mu Q_{2,\mu}^2 \;},
 $$
 
 so the form is the polarisation of the norm, and it is the determinant read as a quadratic form.

@@ -80,8 +80,8 @@ This is the standard action of the Lorentz group on definite-momentum one-partic
 
 The spin state is therefore transformed by a **local unitary** $\tilde{W}_1\otimes\tilde{W}_2$. Local unitaries preserve every entanglement measure:
 $$
-C\bigl((\tilde{W}_1\otimes\tilde{W}_2)|\chi\rangle\bigr) = C(|\chi\rangle), \qquad
-S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{(\tilde{W}_1\otimes\tilde{W}_2)\chi}\bigr) = S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{\chi}\bigr),
+\boxed{\;C\bigl((\tilde{W}_1\otimes\tilde{W}_2)|\chi\rangle\bigr) = C(|\chi\rangle), \qquad
+S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{(\tilde{W}_1\otimes\tilde{W}_2)\chi}\bigr) = S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{\chi}\bigr)\;},
 $$
 because $\tilde{W}_1\otimes\tilde{W}_2$ preserves the tensor product structure and the trace pairing, and because the Schmidt coefficients are the singular values of the coefficient matrix, which a pair of unitaries leaves unchanged. Hence:
 
@@ -133,7 +133,7 @@ $$
 $$
 rotations about a common axis $\vec u_{\mathrm r}$ by opposite angles, and the channel is
 $$
-\tilde{Ϛ}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{Ϛ}_A\tilde{W}_{A,+}^{*} + \tilde{W}_{A,-}\tilde{Ϛ}_A\tilde{W}_{A,-}^{*}\bigr).
+\boxed{\;\tilde{Ϛ}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{Ϛ}_A\tilde{W}_{A,+}^{*} + \tilde{W}_{A,-}\tilde{Ϛ}_A\tilde{W}_{A,-}^{*}\bigr)\;}.
 $$
 Writing the Bloch vector of $\tilde{Ϛ}_A$ as $\vec r = r_\parallel\vec u_{\mathrm r} + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
 $$
@@ -191,8 +191,8 @@ $$
 $$
 satisfies
 $$
-\mathcal{C}\bigl((\tilde U_{\mathrm L}\otimes\tilde U_{\mathrm L})\psi\bigr)
-= \bigl|\det\tilde U_{\mathrm L}\bigr|^2\,\mathcal{C}(\psi) = \mathcal{C}(\psi).
+\boxed{\;\mathcal{C}\bigl((\tilde U_{\mathrm L}\otimes\tilde U_{\mathrm L})\psi\bigr)
+= \bigl|\det\tilde U_{\mathrm L}\bigr|^2\,\mathcal{C}(\psi) = \mathcal{C}(\psi)\;}.
 $$
 The unnormalized concurrence is therefore exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant. What is not invariant is the **normalized** concurrence $\mathcal{C}(\psi)/\langle\psi|\psi\rangle$, because the spinor norm is not preserved by a boost: $\langle\tilde U_{\mathrm L}\psi|\tilde U_{\mathrm L}\psi\rangle = \langle\psi|\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}|\psi\rangle \neq\langle\psi|\psi\rangle$ for a single boosted factor. This is the sharpest way to state the origin of the frame dependence in the framework. The invariant is a bilinear pairing of spinors, and a boost preserves it as a bilinear form; but the physically normalized state divides by a norm that the boost changes, and the ratio is frame-dependent. For a sharp momentum the normalization is common to both branches and cancels; for a momentum superposition the branch norms differ and the ratio does not.
 

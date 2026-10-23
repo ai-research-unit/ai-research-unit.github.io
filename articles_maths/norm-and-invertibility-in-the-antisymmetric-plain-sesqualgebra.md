@@ -16,10 +16,6 @@ A norm is relative to a product, and the algebraic norm of a product is the diag
 
 Both notions of the title are therefore **absences**. The block has no two-sided unit, so no element is invertible and the group of units is empty; the one-sided inverse equations to the centre have no solution. What replaces the invertibility is not a norm but an operator reading: the one-sided multiplication by an element has a kernel and an image, and the relative inverse below accounts for the loss on the quotient.
 
-**Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Plain Sesqualgebra*; the general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the element theory that uses the substitute is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the structural reading of the diagonal is *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*. The algebraic norm of the general plain sesquilinear product is $\langle\cdot\rangle_{*}$, a different form, and its theory is *Norm and Invertibility in the General Plain Sesqualgebra*. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the vector subspace is $\operatorname{Vect}(\mathbb{B})$; the projection $\operatorname{Vect}$ removes the scalar part, and it is $\mathbb{C}$-linear and surjective with kernel $\mathbb{C}_{\mathbb{B}}$.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general plain sesquilinear product is $\tilde Q_1\tilde Q_2^{*}$, and the product of the block is $\diamond$.
-
 **The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $\langle\cdot,\cdot\rangle_{*}$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde Q_3$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec Q_3$.
 
 ## The Relative Definitions
@@ -81,9 +77,11 @@ and for an operation whose scalar part vanishes identically the algebraic norm i
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric plain sesqualgebra,
 
 $$
+\boxed{\;
 \mathrm{Sc}\bigl(\tilde Q_1\diamond\tilde Q_2\bigr)=0\quad\text{for all }\tilde Q_1,\tilde Q_2,
 \qquad\text{hence}\qquad
-\varphi_{\diamond}(\tilde Q)=0\quad\text{for all }\tilde Q .
+\varphi_{\diamond}(\tilde Q)=0\quad\text{for all }\tilde Q
+\;}.
 $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
@@ -92,9 +90,7 @@ The algebraic norm of the operation is identically zero, and by the convention o
 
 **Remark (the diagonal of the block).** The sesquilinear product is not alternating in the bilinear sense — its second slot is conjugate-linear — so the diagonal need not vanish as an element of the block:
 
-$$
-\tilde Q\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr)\in\operatorname{Vect}(\mathbb{B}),
-$$
+$$ \boxed{\; \tilde Q\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr)\in\operatorname{Vect}(\mathbb{B}) \;}, $$
 
 the vector part of the Hermitian square $\tilde Q\tilde Q^{*}$; it is central exactly when it is zero, that is exactly when $\tilde Q\tilde Q^{*}$ is central. The witness $\tilde Q=\vec e_x+i\vec e_y$ gives $\tilde Q\diamond\tilde Q=2i\vec e_z\neq0$. The diagonal is a value and not a norm, and it is not central in general, so no central-valued quadratic map is built from the product.
 

@@ -18,8 +18,6 @@ This article asks what the biquaternion framework contributes to that statement.
 
 The article proceeds as follows. The next section reduces the framework to the two-dimensional arena and fixes the two-dimensional Clifford data. A section states the abelian bosonization dictionary in the framework's notation. A section identifies the module–centre correspondence and states the counting it implies. A section shows how the framework's mass term and its central phase bosonize, and a section treats the anomaly and the central-charge matching. A section states the non-abelian result and its status. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles unless a reduction is stated. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{M}_-=i\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form, with $\mathrm{Tr}(e_t)=2$. The series d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict'}+\Delta$. In the two-dimensional reduction the Clifford generators are $\gamma^0,\gamma^1$ with $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_2$ and the level-3 tool metric $g=\mathrm{diag}(+1,-1)$, so that $(\gamma^0)^2=+I_2$ and $(\gamma^1)^2=-I_2$; the chirality operator is $\gamma^5=\gamma^0\gamma^1$ and $(\gamma^5)^2=+I_2$; the antisymmetric symbol is $\epsilon^{01}=+1$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Trace Anomaly in Biquaternionic Form*, and *The Theta Vacuum in Biquaternionic Form*.
-
 ## The Two-Dimensional Arena
 
 Bosonization lives in two dimensions, and the framework must be reduced before it can be stated.
@@ -54,9 +52,9 @@ The dictionary is stated first in its standard form, then in the framework's not
 
 **The standard dictionary.** For a massless Dirac field $\psi$ and a real scalar $\phi$, with a normalisation constant $\alpha$ setting the short-distance cutoff,
 $$
-\bar\psi\gamma^\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon^{\mu\nu}\partial_\nu\phi ,
+\boxed{\;\bar\psi\gamma^\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon^{\mu\nu}\partial_\nu\phi ,
 \qquad
-\bar\psi\psi \;\longleftrightarrow\; -\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big),
+\bar\psi\psi \;\longleftrightarrow\; -\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big)\;},
 $$
 and the fermion number current's divergence vanishes while the axial current's does not:
 $$
@@ -96,7 +94,7 @@ one complex dimension, and the real boson is its real part $\mathbb{R}e_t$ — t
 
 **The counting.** The equivalence's counting is the standard match between a complex fermion and a real boson. A complex (Dirac) fermion in two dimensions has four real components, which assemble into two Majorana fields of central charge $c=\tfrac12$ each; a real boson has $c=1$. The two sides therefore agree, and the agreement is the arithmetic
 $$
-2\times\tfrac12 = 1 ,
+2\times\tfrac12 = 1,
 $$
 the factor $2$ being the number of Majorana fields in the Dirac field. In the framework's terms the fermionic side is the spinor module $\mathbb{C}^2$, four real components, and the bosonic side is the centre's single real scalar; the module's two complex dimensions carry the two chiral eigenspaces of $\gamma^5$, each of one complex dimension, and the boson carries the one real dimension of the central field. The counting is a component count of the kind the partition-function and harmonic-oscillator articles perform, and it is the statement that the two sides' operator algebras agree, not that the two spaces are isomorphic.
 
@@ -122,9 +120,9 @@ which is the bilinear the dictionary sends to the cosine.
 
 **The bosonization of the mass.** Under the dictionary,
 $$
-m\,\bar\psi\psi \;\longleftrightarrow\; -\frac{m}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big) = -\frac{2\mu}{\beta^2}\cos(\beta\phi) ,
+\boxed{\;m\,\bar\psi\psi \;\longleftrightarrow\; -\frac{m}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big) = -\frac{2\mu}{\beta^2}\cos(\beta\phi) ,
 \qquad
-\mu = \frac{2m}{\alpha},
+\mu = \frac{2m}{\alpha}\;},
 $$
 the second form exhibiting the sine-Gordon parameters $\beta=2\sqrt\pi$ and $\mu\propto m/\alpha$, and the fermion's mass $m$ becoming the *coupling* of the bosonic cosine. The equivalence is therefore a statement about the mass: the fermion's mass is the boson's interaction strength, and the massless fermion is the free boson. This is the standard content of the Coleman–Mandelstam equivalence and is cited.
 
@@ -148,7 +146,7 @@ from *The Trace Anomaly in Biquaternionic Form*, and the matching of $c$ on the 
 
 **The matching.** The matching is the arithmetic of the previous section:
 $$
-c_{\text{Dirac}} = 2\,c_{\text{Majorana}} = 2\times\tfrac12 = 1 = c_{\text{boson}} .
+\boxed{\;c_{\text{Dirac}} = 2\,c_{\text{Majorana}} = 2\times\tfrac12 = 1 = c_{\text{boson}}\;}.
 $$
 The framework supplies the factor $2$ as the two Majorana fields into which the module's four real components assemble, and the boson's $1$ as the real part of the centre. The matching is therefore a component count, and it is the same kind of count that appears in the partition-function and harmonic-oscillator articles; once again, it is a count and not a claim of a multiplicity of independent fields.
 

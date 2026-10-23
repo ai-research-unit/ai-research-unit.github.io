@@ -23,8 +23,6 @@ which was verified numerically to the finite-difference error. The two-derivativ
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the matter representation and the chiral obstruction at the level of the target manifold.
 - Companion article *The Skyrme Model and the Topological Baryon in Biquaternionic Form*, for the stabilising fourth-order term that turns the three-dimensional model into a soliton theory.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\nu \vec e_\mu = \varepsilon_{\nu\mu\lambda}\vec e_\lambda$ for distinct $\mu,\nu,\lambda$ in cyclic order, and $i$ is the scalar imaginary, $i^2 = -1$, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Sc}(\tilde{Q}_1\tilde Q_2) = \mathrm{Sc}(\tilde Q_2\tilde{Q}_1)$ for the scalar part. The gradient is $\tilde\nabla = e_t\partial/\partial Q_{1t} + \vec e_\mu\,\partial/\partial Q_{1,\mu}$ and $\Box = \partial^2/\partial Q_{1t}^2 + \Delta$. The nonlinear field is $\tilde U(\tilde{Q}_1)$, valued in $\mathbb{H}^1_{\mathbb{B}} = \{\tilde U\in\mathbb{H}_{\mathbb{B}} : \tilde U\tilde U^{\natural} = e_t\}$ in the non-abelian case and in the central phase in the abelian case; the Goldstone field is $\vec\pi = \pi^a e_a \in\mathfrak{su}(2)\subset\mathbb{M}_-$, so that $\exp(\vec\pi/f)$ is unitary. The $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction $\mathrm{Sc}(\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\partial/\partial Q_{1,\mu}\,\tilde U)$ carries both indices down, so it is summed over the four coordinate derivatives without a metric factor; the positive kinetic term is obtained with the overall sign exhibited below, and at quadratic order equals $\frac12[(\partial/\partial t'\pi^a)^2-(\nabla\pi^a)^2]$. Throughout, $f$ is the decay constant of the broken symmetry, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and the non-abelian gauge and spinor structures are not used.
-
 ## The Nonlinear Realisation of a Broken Symmetry
 
 The nonlinear sigma model is the low-energy theory of a spontaneously broken continuous symmetry, and its construction begins with the coset.
@@ -132,7 +130,7 @@ and the unit-norm condition is the identity $\cos^2 + \sin^2 = 1$.
 **The Lagrangian.** The two-derivative Lagrangian of the group-valued field is the biquaternion norm of its derivative,
 
 $$
-\mathcal{L}_2 = -\,\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\,\partial/\partial Q_{1,\mu}\,\tilde U\right),
+\boxed{\;\mathcal{L}_2 = -\,\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\,\partial/\partial Q_{1,\mu}\,\tilde U\right)\;},
 $$
 
 the overall minus sign being the one that makes the kinetic term positive; at quadratic order, expanding $\tilde U = e_t + \vec\pi/f + \cdots$ and using $\mathrm{Sc}(e_ae_b) = -\delta_{ab}$,
@@ -143,7 +141,6 @@ $$
 
 the canonical kinetic term of three real Goldstone fields. The higher terms are the interactions, all of them derivative and all of them fixed by the geometry: the coefficient of each is the corresponding structure constant of $\mathrm{SU}(2)$ contracted with the momenta.
 
-
 **The metric on the target.** The same biquaternion norm defines the invariant metric on the group. A small displacement $\tilde U\to\tilde U + d\tilde U$ has invariant line element
 
 $$
@@ -151,7 +148,6 @@ ds^2 = \frac{1}{2}\,\mathrm{Sc}\!\left(\overline{\tilde U^{-1}d\tilde U}\,\tilde
 $$
 
 which is positive for a tangent displacement and is invariant under $\tilde U\mapsto g_L\tilde U g_R^{-1}$ for constant unit quaternions, because $\tilde U^{-1}d\tilde U \mapsto g_R\tilde U^{-1}d\tilde U g_R^{-1}$ and the scalar part is invariant under conjugation. On $\mathbb{H}^1_{\mathbb{B}}$ this is the round metric of $\mathbb{S}^3$: an invariant metric on a compact simple group is unique up to scale, and the scale is the one fixed by $f$. The framework's contribution to the target manifold is therefore the identification of the metric with the algebra's biquaternion norm, and the statement that the two are the same object.
-
 
 ## Symmetries, Currents and the Flat Connection
 
@@ -184,7 +180,7 @@ so that $j^R_\mu$ is a singlet of $SU(2)_L$ and transforms in the adjoint of $SU
 **Flatness.** The Maurer–Cartan form is flat: it satisfies the zero-curvature equation
 
 $$
-\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + \left[j_\mu, j_\nu\right] = 0 ,
+\boxed{\;\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + \left[j_\mu, j_\nu\right] = 0\;}
 $$
 
 for either current. The identity is algebraic, not dynamical: it is the statement that the components of $\tilde U^{-1}\partial/\partial Q_{1,\mu}\,\tilde U$ are a pure gauge connection, so the field strength of the connection vanishes, and the dynamics of the group-valued field is that of a connection constrained to be pure gauge. The equation of motion of the principal chiral model is the conservation of the flat current,
@@ -192,7 +188,6 @@ $$
 \langle\tilde\nabla,\tilde J^{R}\rangle_{\natural}=0 ,
 $$
 and the two statements together are the content of the model: flatness is what distinguishes the group-valued field from a general algebra-valued gauge potential.
-
 
 **What the framework does not supply here.** The two currents above are a left and a right adjoint current of $SU(2)$, but the framework's $SU(2)_V$ is realised on the group manifold and not on chirality. The axial current that a chiral Lagrangian pairs with the vector current — the $j^{\mu 5}$ whose conservation would tie the sigma model to the fermion sector — is not produced by the centre, which is vector-like. The principal chiral model is therefore a global-symmetry construction available to the framework; the chiral current algebra is not. This is the same distinction that the companion articles on chiral fermions and on the Standard Model agenda record for the spinor sector, seen here at the level of the target manifold.
 
@@ -216,7 +211,6 @@ $$
 $$
 
 the equality being exact for the phase field, whose biquaternion norm carries no $\pi$-dependent factor: the abelian model is free. The target is the circle $\mathbb{S}^1$ of phases, with the shift symmetry $\pi\to\pi+\text{const}$ realised nonlinearly. The compactness of the phase is the statement $\pi\sim\pi+2\pi f$, so the target is a circle of circumference proportional to $f$ and the field's values are angles. This is the abelian sigma model of the Goldstone companion, and it is also the structure that the axion's shift symmetry requires: the axion is the pseudo-Goldstone boson of a broken global $\mathrm{U}(1)$, and its low-energy Lagrangian is the abelian nonlinear sigma model with the shift symmetry broken only by the anomaly. The companion article on the axion and the Peccei–Quinn mechanism develops that case.
-
 
 ## Power Counting and the Effective-Field-Theory Reading
 
@@ -269,8 +263,8 @@ The nonlinear sigma model is the low-energy theory of a spontaneously broken con
 The two-derivative Lagrangian is the biquaternion norm of the derivative,
 
 $$
-\mathcal{L}_2 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\,\partial/\partial Q_{1,\mu}\,\tilde U\right)
-= \frac12\left[(\partial/\partial t'\pi^a)^2 - (\nabla\pi^a)^2\right] + O(\pi^4),
+\boxed{\;\mathcal{L}_2 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\,\partial/\partial Q_{1,\mu}\,\tilde U\right)
+= \frac12\left[(\partial/\partial t'\pi^a)^2 - (\nabla\pi^a)^2\right] + O(\pi^4)\;},
 $$
 
 with the invariant metric $ds^2 = \frac12\mathrm{Sc}(\overline{\tilde U^{-1}d\tilde U}\tilde U^{-1}d\tilde U)$ the same object. It is invariant under the global left–right action $\tilde U\mapsto g_L\tilde U g_R^{-1}$, whose diagonal is the unbroken subgroup and whose axial directions are the broken ones, and the Maurer–Cartan form $j^R_\mu = \tilde U^{-1}\partial/\partial Q_{1,\mu}\,\tilde U$ is flat,

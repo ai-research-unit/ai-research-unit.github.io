@@ -8,10 +8,6 @@ The equation names a product, and throughout this article the square is the one 
 
 **The results.** The quaternionic square is always central, $\tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$, so the equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ has a solution if and only if $\tilde Q$ is a central value: **an element with nonzero vector part has no square root** in this product. For a central radicand $\tilde Q=\lambda e_t$ the root set is $R(\lambda)=\{\tilde\Xi:\langle\tilde\Xi\rangle_{\natural}=\lambda\}$, which is a nondegenerate complex quadric of complex dimension $3$ and real dimension $6$ when $\lambda\neq0$, and the zero-divisor cone of real dimension $6$ when $\lambda=0$, and it is never empty. The sets are not new: $R(\lambda)=\alpha R(1)=(i\alpha)R(-1)$ for $\alpha^2=\lambda\neq0$, so the three central values generate every value, and a root of a nonzero value is a unit of the algebra while a nonzero root of $0$ is a zero divisor. Each section below states its result first and then proves it.
 
-**Boundaries.** The plain square-root problem, its vector–scalar reduction and its two branches are *Square Roots of a General Element in the Biquaternion Algebra*; the roots of $+1$ and of $-1$ in the plain product with its idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the roots of $0$ with its nilpotents are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*. The four central-value problems of the four general products side by side are *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, which owns the comparison; this article owns the block reading and the existence criterion for an arbitrary radicand. The algebraic norm is *Norm and Invertibility in the General Quaternionic Algebra*, the cone and the zero divisors are *Zero Divisors of the General Quaternionic Algebra*, the roots of $+1$ and of $-1$ with the idempotents of the product are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, and the roots of $0$ with the nilpotents are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is $\tilde\Xi=\Xi_te_t+\vec\Xi$ with $\vec\Xi=\sum_{k=1}^{3}\Xi_k\vec e_k$, the **algebraic norm** is $\langle\tilde\Xi\rangle_{\natural}=\sum_\mu \Xi_\mu^2=\Xi_t^2+(\vec\Xi,\vec\Xi)$, and a **central value** is an element $\lambda e_t$ with $\lambda\in\mathbb{C}$; the scalar line $\mathbb{C}e_t$ is denoted $\mathbb{C}_{\mathbb{B}}$.
-
 ## The Reduction
 
 **Definition.** Let $\tilde Q\in\mathbb{B}$. A **square root of $\tilde Q$** in the general quaternionic product is an element $\tilde\Xi$ with
@@ -25,7 +21,7 @@ The root is relative to the product, and this article uses the one of $\star$ th
 **Theorem (the square is central).** For every $\tilde\Xi\in\mathbb{B}$ the square $\tilde\Xi\star\tilde\Xi$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$, and
 
 $$
-\tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t .
+\boxed{\; \tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t \;}.
 $$
 
 **Proof.** The scalar–vector form of the product gives $\tilde\Xi^{\natural}\tilde\Xi=(\Xi_t-\vec\Xi)(\Xi_t+\vec\Xi)=\Xi_t^2-\vec\Xi^2=\bigl(\Xi_t^2+(\vec\Xi,\vec\Xi)\bigr)e_t$; the statement is §*The Square Lies in the Scalar Line* of *Introduction to the General Quaternionic Algebra*.
@@ -47,7 +43,7 @@ $$
 **Theorem (the root set of a central value).** Let $\lambda\in\mathbb{C}$ and let $\tilde Q=\lambda e_t$. The root set of $\tilde Q$ is
 
 $$
-R(\lambda)=\{\tilde\Xi\in\mathbb{B}:\langle\tilde\Xi\rangle_{\natural}=\lambda\} .
+\boxed{\; R(\lambda)=\{\tilde\Xi\in\mathbb{B}:\langle\tilde\Xi\rangle_{\natural}=\lambda\} \;}.
 $$
 
 - If $\lambda\neq0$, $R(\lambda)$ is a nondegenerate complex quadric of complex dimension three and real dimension six.
@@ -65,7 +61,7 @@ $$
 **Theorem.** Let $\lambda\neq0$ and let $\alpha\in\mathbb{C}$ satisfy $\alpha^2=\lambda$. Then multiplication by $\alpha$ is a bijection of the roots of $1$ onto the roots of $\lambda$, and multiplication by $i\alpha$ is a bijection of the roots of $-1$ onto the roots of $\lambda$:
 
 $$
-R(\lambda)=\alpha\,R(1)=(i\alpha)\,R(-1) .
+\boxed{\; R(\lambda)=\alpha\,R(1)=(i\alpha)\,R(-1) \;}.
 $$
 
 **Proof.** The algebraic norm is homogeneous of degree two and $\mathbb{C}$-linear in the scaling, $\langle\alpha\tilde E\rangle_{\natural}=\alpha^2\langle\tilde E\rangle_{\natural}$, so $\alpha$ carries the level set $N=1$ onto the level set $N=\alpha^2=\lambda$; the scaling is a bijection of $\mathbb{B}$ because $\alpha\neq0$. For the second display, $(i\alpha)^2=-\alpha^2=-\lambda$, so $i\alpha$ carries the level set $N=-1$ onto the level set $N=(-1)(-\lambda)=\lambda$.

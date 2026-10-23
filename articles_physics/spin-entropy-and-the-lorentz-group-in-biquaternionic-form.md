@@ -116,8 +116,8 @@ $$
 $$
 Since $\tilde{W}$ is unitary, the previous computation applies verbatim,
 $$
-\langle\tilde{W}\tilde{Ϛ}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}, \qquad
-S(\tilde{W}\tilde{Ϛ}\tilde{W}^{*}) = S(\tilde{Ϛ}) ,
+\boxed{\ \langle\tilde{W}\tilde{Ϛ}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}, \qquad
+S(\tilde{W}\tilde{Ϛ}\tilde{W}^{*}) = S(\tilde{Ϛ})\ } ,
 $$
 and the spin entropy of a momentum eigenstate is a **Lorentz invariant**. This is the entropy form of the sharp-momentum theorem of the relativistic-qubit article, and it is exact: a frame change rotates the spin and leaves its entropy alone, because a rotation moves a state along its $SU(2)$ orbit and the entropy is constant on the orbit.
 
@@ -181,9 +181,9 @@ $$
 $$
 that is, it leaves the component along the axis untouched and shrinks the transverse component by $\cos\alpha$. Hence
 $$
-|\vec r_2|^2 = (\vec r\cdot\vec u_{\mathrm r})^2 + \cos^2\alpha\bigl(|\vec r|^2 - (\vec r\cdot\vec u_{\mathrm r})^2\bigr),
+\boxed{\ |\vec r_2|^2 = (\vec r\cdot\vec u_{\mathrm r})^2 + \cos^2\alpha\bigl(|\vec r|^2 - (\vec r\cdot\vec u_{\mathrm r})^2\bigr),
 \qquad
-S_2 = h\!\left(\frac{1+|\vec r_2|}{2}\right),
+S_2 = h\!\left(\frac{1+|\vec r_2|}{2}\right)\ } ,
 $$
 and the entropy is unchanged only for $\vec r\parallel\vec u_{\mathrm r}$ or $\alpha = 0$. Some values for the Wigner angle of a rapidity-$1$ boost at transverse momentum, $\alpha = 14.11732^\circ$ and $\cos\alpha = 0.969798$, are
 
@@ -246,7 +246,7 @@ This is the whole content of the Lorentz group's action on spin entropy, and it 
 
 The spin state of the qubit is $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, and its von Neumann entropy is
 $$
-S(\tilde{Ϛ}) = h\!\left(\frac{1+|\vec r|}{2}\right) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right),
+\boxed{\ S(\tilde{Ϛ}) = h\!\left(\frac{1+|\vec r|}{2}\right) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right)\ },
 \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
 $$
 a function of the algebra's biquaternion norm alone. It vanishes on the pure states, where $N = 0$, and equals one bit on the maximally mixed state, where $N = \tfrac14$.

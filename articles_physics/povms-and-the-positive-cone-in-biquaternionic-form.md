@@ -7,8 +7,8 @@ The most general measurement that quantum physics admits is not a projective mea
 The central observation is that the positive cone of $\mathbb{M}_+$ is the positive cone of the biquaternion norm. For a Hermitian element $\tilde{E} = a_te_t + i\vec a$ with $a_t\in\mathbb{R}$, $\vec a\in\mathbb{R}^3$, positivity of the operator is
 
 $$
-\tilde{E}\geq0 \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_t\geq0
-\quad\Longleftrightarrow\quad a_t\geq|\vec a| ,
+\boxed{\;\tilde{E}\geq0 \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_t\geq0
+\quad\Longleftrightarrow\quad a_t\geq|\vec a|\;},
 $$
 
 so the cone of the algebra is the future light cone of the biquaternion norm. An **effect** is an element of the operator interval $0\leq\tilde{E}\leq e_t$, which in coefficients reads $|\vec a|\leq\min(a_t,1-a_t)$; a **POVM** is a resolution of the identity by effects, $\sum_y\tilde{E}_y = e_t$; and the Born weight for the measurement is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde{E}_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $p_y = \mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})$; the trace reading is given once, at normalisation. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.
@@ -86,7 +86,7 @@ $$
 because $e_t-\tilde{E} = (1-a_t)e_t - i\vec a$ is positive exactly when $1-a_t\geq|\vec a|$. Equivalently,
 
 $$
-|\vec a| \;\leq\; \min\bigl(a_t,\ 1-a_t\bigr),
+\boxed{\;|\vec a| \;\leq\; \min\bigl(a_t,\ 1-a_t\bigr)\;},
 $$
 
 which requires $0\leq a_t\leq1$. The set of effects is thus the intersection of the cone $C_+$ with its reflection $e_t - C_+$; it is a compact convex body, the **operator interval** $[0,e_t]$.
@@ -96,7 +96,7 @@ which requires $0\leq a_t\leq1$. The set of effects is thus the intersection of 
 The extreme points of the operator interval are exactly the idempotents,
 
 $$
-\tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_t],
+\boxed{\;\tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_t]\;},
 $$
 
 i.e. the elements $a_t = 1$ with $|\vec a|=0$ (the identity) and $a_t = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one Hermitian idempotents). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
@@ -181,7 +181,7 @@ The strata are the strata of the effect body. A **sharp** effect is $\tilde E_y=
 Every POVM on the defining module $S$ is the compression of a projective measurement on a larger module. There is an ancillary space $\mathbb{C}^d$, an isometry $V:S\to S\otimes\mathbb{C}^d$, and a PVM $\{\tilde{F}_y\}$ on the larger space such that
 
 $$
-\tilde{E}_y = V^\dagger \tilde{F}_y V .
+\boxed{\;\tilde{E}_y = V^\dagger \tilde{F}_y V\;}.
 $$
 
 This is **Naimark's dilation theorem**, the measurement analogue of Stinespring's dilation for channels. In the framework's language, the dilation adjoins an ancillary factor and replaces the general effects by orthogonal idempotents; the price is that the ancillary system must be traced out, which is precisely the information loss that a non-projective measurement represents. The dilation is standard; it is cited, not derived, and it belongs to the same circle of ideas as the Kraus representation of channels. It also shows why the framework's general measurement theory does not require abandoning the idempotent picture of a projective measurement: it embeds it in a larger algebra.

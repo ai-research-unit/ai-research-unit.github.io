@@ -19,12 +19,6 @@ Rotation: Phase, Duality and the Wick Rotation as One Generator*; the clock stru
 Other's Clock: the Sector Exchange as Relational Time*; and the discrete charge is *Particle Types, Discrete
 Charge and Three-Particle Couplings*.
 
-**Conventions.** $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ is the unitary slice,
-$Sp(1)\cong SU(2)$ its real-quaternion part; the thermal circle is the compact imaginary-time direction of
-circumference $\beta$ in the coordinate $t'$, with $\beta=\hbar/(k_BT)$ the inverse temperature as throughout
-the corpus (its length in the material sector's units is $c\beta$), and the Matsubara frequencies are
-$\omega_n=2\pi n/\beta$.
-
 ## One Principle
 
 The principle is a single sentence and it covers both disciplines.
@@ -79,7 +73,7 @@ two compactnesses of different origins, and the article states both rather than 
 A third lattice appears in the algebra, and it is neither of the two above. For a unit $\tilde Q=Q_te_t+\vec Q$ with $B\neq0$, write $\vec U=\vec Q/B$ for the pure unit element of the vector part, $\vec U^2=-e_t$, and $B^2=Q_x^2+Q_y^2+Q_z^2$. The logarithm is defined up to the kernel of the exponential on the diagonal part of the element,
 
 $$
-L(\tilde Q)=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb Z,\ m\equiv n\pmod 2\right\}.
+\boxed{\;L(\tilde Q)=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb Z,\ m\equiv n\pmod 2\right\}\;}.
 $$
 
 A central shift by $2\pi i k\,e_t$ and a rotation shift by $2\pi\ell\,\vec U$ are both allowed on their own. The half-shifts $\pi i e_t$ and $\pi\vec U$ occur only together, because the two eigenvalue logarithms must be shifted in step. The matching is the parity condition.
@@ -138,7 +132,7 @@ named as a gap and not proposed as a formula.
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the parity-matched lattice and its two cosets.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the parity-matched lattice and its two cosets.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the kernel of the exponential and the eigenvalue formula.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite

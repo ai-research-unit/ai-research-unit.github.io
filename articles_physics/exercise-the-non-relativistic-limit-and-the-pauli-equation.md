@@ -14,8 +14,6 @@ Five problems are worked:
 
 **On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.
 
-**Conventions.** The biquaternion algebra is $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$, the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary. The subspace $\mathbb M_+$ is the Hermitian subspace (real scalar, imaginary vector) and $\mathbb M_-$ the anti-Hermitian subspace (imaginary scalar, real vector), with $\mathbb B=\mathbb M_+\oplus\mathbb M_-$ and $i\mathbb M_\pm=\mathbb M_\mp$. The isomorphism, written $\mathsf{M}_2$ as in the companion Dirac article, is $e_t\mapsto I_2$, $\vec e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$, so that $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\sigma_k\leftrightarrow i\vec e_k$. The gamma matrices are the parent's Dirac-basis matrices,
-
 $$
 \gamma^0=\begin{pmatrix} I_2&0\\0&-I_2\end{pmatrix}=\beta,\qquad
 \gamma^k=\begin{pmatrix} 0&\sigma_k\\-\sigma_k&0\end{pmatrix},

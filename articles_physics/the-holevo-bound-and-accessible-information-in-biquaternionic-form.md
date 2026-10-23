@@ -95,8 +95,8 @@ $$
 which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{Ϛ}_x) = 0$, and the Holevo quantity is simply the entropy of the average state,
 
 $$
-\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
-= H\bigl(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\bigr),
+\boxed{\;\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
+= H\bigl(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\bigr)\;},
 $$
 
 a function of the biquaternion norm of the average state alone. This is the case of greatest interest, because a source of pure states is what a preparation device most naturally produces and because the maximal accessible information is achieved with pure states.
@@ -131,7 +131,7 @@ This identity is the conceptual core: **the Holevo quantity is the mutual inform
 Because the register entropy is at most $\log|\mathcal{X}|$ and the quantum entropy at most $\log\dim_{\mathbb{C}}S = \log 2$, the Holevo quantity obeys
 
 $$
-0 \;\leq\; \chi \;\leq\; \min\bigl\{H(X),\ \log 2\bigr\} .
+\boxed{\;0 \;\leq\; \chi \;\leq\; \min\bigl\{H(X),\ \log 2\bigr\}\;}.
 $$
 
 The lower bound is attained when the average state equals a pure state, so that the ensemble is trivial; the upper bound $\log2$ is the qubit's one-bit ceiling and is attained by an ensemble of two orthogonal pure states with equal weights, as the examples below show. The bound $\chi\leq H(X)$ is the statement that the source index's own entropy limits the information carried, and it is an instance of $I(X:Q)\leq H(X)$.
@@ -143,7 +143,7 @@ The lower bound is attained when the average state equals a pure state, so that 
 For every ensemble $\mathcal{E}$ and every measurement $\{\tilde{E}_y\}$,
 
 $$
-I(X:Y) \;\leq\; \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x),
+\boxed{\;I(X:Y) \;\leq\; \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x)\;},
 $$
 
 and therefore

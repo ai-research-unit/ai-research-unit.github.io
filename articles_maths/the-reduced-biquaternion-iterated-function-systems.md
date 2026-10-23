@@ -8,8 +8,6 @@ The algebra forces three simplifications and one structural fact. The simplifica
 
 The article owns the affine maps of the algebra, the contraction and similarity criteria, the similarity dimension, the existence and the shape of the attractor, the inverse branches of the square and the symmetries of a system. The operator norm and the multiplication operators are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the group of units and the torus are *The Group of Units of the Algebra of the Reduced Biquaternions* and *The Unitary Group of the Reduced Biquaternion Algebra*; the zero-divisor cone that is the branching set of the square is *Zero Divisors of the Algebra of the Reduced Biquaternions*; the attractor structure is *The Idempotent Decomposition and the Split Fractal*; the quadratic map and its fractal are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*. The companion is *The Biquaternion Iterated Function Systems*.
 
-**Conventions.** A contraction of the algebra is a map of the algebra Lipschitz of ratio strictly less than one for the topological norm $\langle\cdot\rangle_{\mathrm{ts}*}$; the **linear part** of an affine map is its derivative; the **branches** of a map are the inverse maps of its local inverses; the attractor of a system $\{f_{1},\dots,f_{m}\}$ is the unique non-empty compact set $\mathcal{K}$ with $\mathcal{K}=\bigcup_{i}f_{i}(\mathcal{K})$.
-
 ## Affine Maps of the Algebra
 
 **Proposition (every affine map is a pair of complex affine maps).** An $\mathbb{R}$-affine map of the algebra has the form $\breve Q\mapsto M(\breve Q)+R$ with $M$ real-linear, and if $M$ is one of the two-sided multiplication maps $\breve Q\mapsto P\,\breve Q\,Q$, then in the idempotent coordinates
@@ -37,7 +35,9 @@ $$
 **Theorem (the operator norm).** For the left multiplication by an element $\breve Q$ on the algebra with the topological norm,
 
 $$
-\lVert L_{\breve Q}\rVert=\max(|Q_{+}|,|Q_{-}|),
+\boxed{\;
+\lVert L_{\breve Q}\rVert=\max(|Q_{+}|,|Q_{-}|)
+\;},
 $$
 
 the maximum of the moduli of the two idempotent coordinates; in terms of the topological norm, $\max(|Q_{+}|,|Q_{-}|)^{2}\leq 2\langle\breve Q\rangle_{\mathrm{ts}*}$, with equality exactly when one of the two moduli vanishes, so that the operator norm is at most $\sqrt{2\langle\breve Q\rangle_{\mathrm{ts}*}}$ and equals $\sqrt{\langle\breve Q\rangle_{\mathrm{ts}*}}$ precisely when the two moduli coincide.
@@ -57,7 +57,9 @@ the maximum of the moduli of the two idempotent coordinates; in terms of the top
 **Theorem (the similarity dimension).** Let the system have $m$ generators, each a similarity of the algebra of ratio $r_{i}<1$ with the same ratio in the two coordinates. Then the attractor is a self-similar set, and under the open set condition its Hausdorff dimension is the unique $s$ with
 
 $$
-\sum_{i=1}^{m}r_{i}^{s}=1,
+\boxed{\;
+\sum_{i=1}^{m}r_{i}^{s}=1
+\;},
 $$
 
 the same equation as for each of the two coordinate systems.
@@ -81,7 +83,9 @@ the same equation as for each of the two coordinate systems.
 **Theorem (the branches of the square).** The squaring map $\breve Q\mapsto \breve Q^{2}$ is surjective, and the solutions of $\breve Q^{2}=W$ with $W=w_{1}\Pi_++w_{2}\Pi_-$ are
 
 $$
-\breve Q=\pm\sqrt{w_{1}}\;\Pi_+\pm\sqrt{w_{2}}\;\Pi_-,
+\boxed{\;
+\breve Q=\pm\sqrt{w_{1}}\;\Pi_+\pm\sqrt{w_{2}}\;\Pi_-
+\;},
 $$
 
 four of them when $w_{1}w_{2}\neq0$, two when exactly one coordinate is zero, and one when $W=0$. The branching set is the zero-divisor cone $\{w_{1}=0\}\cup\{w_{2}=0\}$.

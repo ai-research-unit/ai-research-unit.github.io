@@ -13,8 +13,6 @@ The operation is the plain product with the cross term dropped, and the space it
 
 The split that produces the operation, its two projections and the two admissibility conditions are *The Symmetric and Antisymmetric Parts of an Algebra Product*, and the order-symmetry reading of the same split, with the worked examples on the four general products, is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. This article owns the operation as a multiplication: the rule, the class, the laws, the sixteen products of the basis, the square and its polarisation, the reconstruction, and the placement of the block among the twelve. The algebra it builds is read further in the companions of the block: the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, which close with *The Specificities of the Symmetric Plain Algebra*; the Specific Theory article *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; and, in the other sections of the block, *The Trace Form and the Invariance of the Symmetric Plain Algebra*, *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions*, *The Multiplication Operators of the Symmetric Plain Algebra* and the two articles *Introduction to the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central scalar imaginary $i$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_j \vec e_k=-\vec e_k \vec e_j$ for $j\neq k$. A generic element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ is the complex bilinear dot product of the vector parts. The product $\tilde Q_1\tilde Q_2$ is the general plain bilinear one throughout. The inner product $(\cdot,\cdot)$ and the general plain product are as in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*.
-
 ## The Symmetrisation of the Plain Product
 
 ### The Rule
@@ -79,7 +77,7 @@ for every $A\in\mathbb{C}$.
 **Proposition.** The symmetric plain product is **commutative**:
 
 $$
-\tilde Q_1\bullet\tilde Q_2=\tilde Q_2\bullet\tilde Q_1 .
+\boxed{\; \tilde Q_1\bullet\tilde Q_2=\tilde Q_2\bullet\tilde Q_1 \;}.
 $$
 
 *Proof.* The half-sum of the plain product and its exchange is unchanged when the two arguments are interchanged; equivalently, the scalar part is the symmetric bilinear form $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ is symmetric in the two elements.
@@ -113,7 +111,7 @@ and a commutative algebra with a Jordan product is a **Jordan algebra**. The ide
 **Theorem.** The symmetric plain product satisfies the Jordan identity: for all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
 $$
-(\tilde Q_1\bullet\tilde Q_2)\bullet(\tilde Q_1\bullet\tilde Q_1)=\tilde Q_1\bullet\bigl(\tilde Q_2\bullet(\tilde Q_1\bullet\tilde Q_1)\bigr).
+\boxed{\; (\tilde Q_1\bullet\tilde Q_2)\bullet(\tilde Q_1\bullet\tilde Q_1)=\tilde Q_1\bullet\bigl(\tilde Q_2\bullet(\tilde Q_1\bullet\tilde Q_1)\bigr) \;}.
 $$
 
 *Proof.* The symmetrisation of an associative product always satisfies the Jordan identity: for an associative algebra $A$, the algebra $A^{\bullet}$ with the product $\tfrac12(xy+yx)$ is the classical special Jordan algebra, and the identity is the theorem of *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*, that $A^{+}$ is a Jordan algebra, proved there by the direct expansion with the product $xy+yx$ (the halved product satisfies it as well, every coefficient being halved). Expanding both sides in the associative product of $\mathbb{B}$ and using its associativity verifies the identity directly.
@@ -185,8 +183,8 @@ So the square map $\tilde Q\mapsto\tilde Q\bullet\tilde Q$ determines the whole 
 **Theorem.** The plain product is the sum of its two parts:
 
 $$
-\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
-\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2,
+\boxed{\; \tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2 \;},
 $$
 
 and the symmetric part is $\mathrm{SPA}$ and the antisymmetric part $\mathrm{APA}$.

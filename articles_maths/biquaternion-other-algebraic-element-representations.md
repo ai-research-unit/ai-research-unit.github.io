@@ -37,7 +37,7 @@ so that $\gamma_0^2=+\mathrm{I}$ and $\gamma_\mu^2=-\mathrm{I}$ for $\mu\in\{x,y
 The biquaternion algebra is the even Clifford algebra of the Minkowski form,
 
 $$
-\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R}),\qquad \vec e_x\mapsto\gamma_2\gamma_3,\quad \vec e_y\mapsto\gamma_3\gamma_1,\quad \vec e_z\mapsto\gamma_1\gamma_2,\qquad i\mapsto-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3 .
+\boxed{\; \mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R}),\qquad \vec e_x\mapsto\gamma_2\gamma_3,\quad \vec e_y\mapsto\gamma_3\gamma_1,\quad \vec e_z\mapsto\gamma_1\gamma_2,\qquad i\mapsto-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3 \;}.
 $$
 
 *Proof.* The three spacelike bivectors $\gamma_2\gamma_3,\gamma_3\gamma_1,\gamma_1\gamma_2$ anticommute pairwise and each squares to $-\mathrm{I}$, so they satisfy the quaternion relations: $(\gamma_\rho\gamma_\mu)^2=-\gamma_\rho^2\gamma_\mu^2=-(-1)(-1)=-1$ and $\gamma_2\gamma_3\cdot\gamma_3\gamma_1=\gamma_2\gamma_3\gamma_3\gamma_1=-\gamma_2\gamma_1=\gamma_1\gamma_2$. The pseudoscalar $\omega$ is central in the even subalgebra and $\omega^2=-1$, so $-\omega$ is a central square root of $-1$ commuting with them. Hence $\mathbb{C}[\omega]\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, embeds in $\mathrm{Cl}^{+}_{1,3}$, which also has real dimension eight, so the embedding is an isomorphism. The isomorphism is one of $\mathbb{C}$-algebras, $\omega$ playing the role of the scalar imaginary, so the Clifford reading is a second reading of the same ring and not a second structure; the change of scalars that exhibits it as a real reading is *The Realification and the Effect of the Change of Scalars*.
@@ -98,7 +98,7 @@ $$
 so the action depends on $\tilde Q$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$. By Skolem–Noether every $\mathbb{C}$-linear automorphism of the central simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, so the image of the action is the whole automorphism group,
 
 $$
-\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})\cong\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}),
+\boxed{\; \mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})\cong\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;},
 $$
 
 and over $\mathbb{R}$ complex conjugation adds one conjugate-linear coset; the group, its real forms and the derivations are *Biquaternion Automorphisms and Derivations*.
@@ -181,7 +181,7 @@ where $Q_\mu$ gathers the $\mu$-th coefficients of all the entries and the produ
 For $n=m$, entrywise addition and the matrix product make $\mathbb{B}^{n\times n}$ a unital associative ring, the full matrix ring $M_\nu(\mathbb{B})$. Multiplication is non-commutative for two independent reasons: the entries are multiplied in the non-commutative algebra $\mathbb{B}$, and the array product is the matrix product. Since $\mathbb{B}$ is not a division algebra, neither is the array ring; it has zero divisors already at $n=1$, from the zero divisors of the algebra. The structure of the ring is fixed by the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$:
 
 $$
-M_\nu(\mathbb{B})\cong M_\nu\bigl(M_2(\mathbb{C})\bigr)\cong M_{2\nu}(\mathbb{C}).
+\boxed{\; M_\nu(\mathbb{B})\cong M_\nu\bigl(M_2(\mathbb{C})\bigr)\cong M_{2\nu}(\mathbb{C}) \;}.
 $$
 
 So an $n\times n$ array of biquaternions **is** the full complex matrix algebra of twice the size; every isomorphism-invariant statement about $M_\nu(\mathbb{B})$ is a statement about complex matrices of size $2n$.

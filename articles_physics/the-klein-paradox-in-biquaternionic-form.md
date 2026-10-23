@@ -83,11 +83,11 @@ $$
 whose solution is
 
 $$
-r = \frac{\alpha\beta - 1}{\alpha\beta + 1},
+\boxed{\;r = \frac{\alpha\beta - 1}{\alpha\beta + 1},
 \qquad
 R = r^2 = \left(\frac{\alpha\beta - 1}{\alpha\beta + 1}\right)^2,
 \qquad
-T = 1 - R = \frac{4\alpha\beta}{(\alpha\beta + 1)^2}.
+T = 1 - R = \frac{4\alpha\beta}{(\alpha\beta + 1)^2}\;}.
 $$
 
 The current of the reduced equation is $j^x \propto \mathrm{Re}(\psi_1^*\psi_2)$, so the incident flux is $2\alpha$, the reflected flux $2\alpha r^2$ and the transmitted flux $2t^2/\beta$. The matching conditions make current conservation an identity,
@@ -103,8 +103,8 @@ which was verified exactly on the cases below, so that $T$ as defined above is t
 Two features distinguish this from the non-relativistic step. First, **the reflection does not tend to one as the step grows**. The parameter $\beta$ is bounded above by one and increases to one as $V_0 \to \infty$; hence $r$ tends to the finite limit $(\alpha - 1)/(\alpha + 1)$, and
 
 $$
-\lim_{V_0\to\infty} R = \left(\frac{\alpha - 1}{\alpha + 1}\right)^2, \qquad
-\lim_{V_0\to\infty} T = \frac{4\alpha}{(\alpha + 1)^2},
+\boxed{\;\lim_{V_0\to\infty} R = \left(\frac{\alpha - 1}{\alpha + 1}\right)^2, \qquad
+\lim_{V_0\to\infty} T = \frac{4\alpha}{(\alpha + 1)^2}\;},
 $$
 
 both strictly between zero and one for $0 < \alpha < 1$. The step becomes more transparent as it grows, not less. Second, in the **massless limit** $\alpha = \beta = 1$ exactly, so $r = 0$ and $T = 1$ for every step height: a massless Dirac particle passes through any electrostatic step with unit transmission. This is Klein tunnelling in its cleanest form, and it is the reason the effect is seen in graphene.
@@ -130,7 +130,7 @@ $$
 whose two roots $\omega = \pm\sqrt{k^2c^2 + m^2c^4}/\hbar$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
 
 $$
-\omega \;\longmapsto\; \omega - \frac{ϙ\phi}{\hbar} \quad\text{with}\quad \omega - \frac{ϙ\phi}{\hbar} < 0 .
+\boxed{\;\omega \;\longmapsto\; \omega - \frac{ϙ\phi}{\hbar} \quad\text{with}\quad \omega - \frac{ϙ\phi}{\hbar} < 0\;}.
 $$
 
 This is the algebraic content of the phrase "the far side is reached by an antiparticle". The exchange of the two roots is the same operation that the corpus's conjugation articles study as charge conjugation and the real structure $\flat$; here it is produced not by conjugation of the field but by a central shift of the momentum, which is why the framework can describe it without leaving the algebra. What the framework cannot do is change the particle number; that is the second-quantized statement, and it belongs to the companion articles on the Dirac sea and on pair creation.

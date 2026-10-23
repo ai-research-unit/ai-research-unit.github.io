@@ -7,8 +7,6 @@ The **versors** of the complex numbers are the units of the definite algebraic n
 
 The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The identification of $\mathrm{U}(1)$ with the rotation group, the reflections, the group $O(2)$ and the parameter of a rotation are *Rotations and Reflections in the Complex Plane*; they are cited and not restated. The general definition of a versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
-**Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$ with real $q_1,q'_1,q_2,q'_2$, and conjugation is $\bar Q_1=q_1-iq'_1$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complexoid Subspaces*, *Conventions in Mathematics*). The definite form is the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, with diagonal $\langle Q_1\rangle_{*}=Q_1\bar Q_1$; the brackets of the four general forms are reserved for the forms, so elements are written $Q_1$ and $Q_2$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*).
-
 ## The Versors and Their Group
 
 **Definition.** A **versor** of the complex numbers is a unit of the definite algebraic norm,
@@ -37,9 +35,7 @@ $$
 
 The map $u\mapsto R_{u}$ is an injective homomorphism of groups, because $R_{uv}=R_{u}\circ R_{v}$ and $R_{1}=\mathrm{id}$, and it is injective since $R_{u}(1)=u$ recovers $u$. Each $R_{u}$ preserves the definite form,
 
-$$
-H(R_{u}Q_1,R_{u}Q_2)=H(uQ_1,uQ_2)=\lvert u\rvert^{2}H(Q_1,Q_2)=H(Q_1,Q_2),
-$$
+$$\boxed{\;H(R_{u}Q_1,R_{u}Q_2)=H(uQ_1,uQ_2)=\lvert u\rvert^{2}H(Q_1,Q_2)=H(Q_1,Q_2)\;},$$
 
 so every versor acts by a map preserving the form. These are the rotations of the plane, and the identification of the image with the rotation group $\mathrm{SO}(2)$, together with the reading of the parameter, is recorded in *Rotations and Reflections in the Complex Plane*. The two-to-one cover read on this action is the subject of the next section.
 
@@ -49,9 +45,7 @@ so every versor acts by a map preserving the form. These are the rotations of th
 
 **The full orthogonal group.** The $\mathbb{R}$-linear maps preserving $H$ are more numerous: with the matrix $M$ of the map in the real basis $1$, $i$, they are the solutions of the matrix condition
 
-$$
-M^{\mathsf T}M=\mathrm{I}_{2},
-$$
+$$\boxed{\;M^{\mathsf T}M=\mathrm{I}_{2}\;},$$
 
 that is the group $O(2)$. The versors give the maps of determinant $+1$ in it; the maps of determinant $-1$ are the reflections $Q_1\mapsto u\bar Q_1$ with $\lvert u\rvert=1$ (*Rotations and Reflections in the Complex Plane*). The group of the title is thus $O(2)$, and the versors are its determinant-one half.
 

@@ -37,7 +37,9 @@ The real parts multiply, and the infinitesimal part is $q_1\,q'_2 + q'_1\,q_2$; 
 **Example (squaring, worked).** For $Q = q + \varepsilon q'$, the square is
 
 $$
-Q^2 = q^2 + 2qq'\,\varepsilon.
+\boxed{\;
+Q^2 = q^2 + 2qq'\,\varepsilon
+\;}.
 $$
 
 In particular $(2 + 3\varepsilon)^2 = 4 + 12\varepsilon$ and $(\varepsilon)^2 = 0$.
@@ -77,7 +79,9 @@ $$
 and the $-1$-eigenspace is the infinitesimal submodule
 
 $$
-\varepsilon R_{\mathbb{D}'} = \{Q : \bar Q = -Q\} = \{\varepsilon q' : q' \in \mathbb{R}\}.
+\boxed{\;
+\varepsilon R_{\mathbb{D}'} = \{Q : \bar Q = -Q\} = \{\varepsilon q' : q' \in \mathbb{R}\}
+\;}.
 $$
 
 **Proof.** $\bar{q + \varepsilon q'} = q - \varepsilon q'$ equals $q + \varepsilon q'$ exactly when $q' = 0$, and equals $-(q + \varepsilon q')$ exactly when $q = 0$; the two sets are as displayed.
@@ -182,7 +186,9 @@ $$
 **Example (worked).** For $Q = q + \varepsilon q'$ with $q \neq 0$, the inverse formula gives
 
 $$
-Q^{-1} = \frac{1}{q} - \frac{q'}{q^2}\,\varepsilon,
+\boxed{\;
+Q^{-1} = \frac{1}{q} - \frac{q'}{q^2}\,\varepsilon
+\;},
 $$
 
 and the general check is

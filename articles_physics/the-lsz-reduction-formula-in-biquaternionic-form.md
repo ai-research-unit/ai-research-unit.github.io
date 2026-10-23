@@ -4,11 +4,11 @@
 
 The **LSZ reduction formula** (Lehmann, Symanzik, Zimmermann) expresses an S-matrix element as the on-shell residue of a time-ordered correlation function. It is the bridge between the vacuum expectation values that the functional integral produces and the scattering amplitudes that experiment measures. Schematically, for $n$ incoming and $m$ outgoing particles,
 $$
-\langle f|S|i\rangle
+\boxed{\;\langle f|S|i\rangle
 = \Big[\prod_{\text{legs}}\int d^4x_j\, \exp(\pm ip_j\cdot x_j)\Big]
 \Big[\prod_{\text{legs}}\big(\Box_j-m^2\big)\Big]
 \big\langle 0\big|T\,\tilde\Phi(x_1)\cdots\tilde\Phi(x_n)\big|0\big\rangle
-\Big|_{\text{on shell}},
+\Big|_{\text{on shell}}\;},
 $$
 with a wave-function renormalization factor $Z^{-1/2}$ per leg. The two operations are *Fourier transform* and *amputate*: put each external leg on the mass shell and replace the propagator that carried it by the free plane wave. The companion article *The S-Matrix in Biquaternionic Form* uses this reduction and records that it is not rederived there; this article supplies the derivation in the framework's terms.
 
@@ -31,8 +31,6 @@ and for a central scalar operator on the biquaternion module the residue is the 
 - **Standard, and transcribed.** The derivation of LSZ from the asymptotic conditions, the adiabatic switching, the $Z$ factors, the free-field limit, and the momentum-conservation delta functions. The algebra supplies the mass-shell symbol and the plane waves, not the reduction theorem.
 
 The article proceeds as follows. The next section states the LSZ formula and sketches its derivation from asymptotic fields. A section identifies the amputation with the inverse mass-shell operator. A section fixes the external wavefunctions as biquaternion plane waves. A section treats the wave-function renormalization as a residue, verified numerically. A section treats the scalar and spinor cases separately, and a section the one-mode truncation and the module gap. A section separates what is established from what is interpretation.
-
-**Conventions.** We use those of the companion articles, in particular *The S-Matrix in Biquaternionic Form* and *The Feynman Propagator in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The wave biquaternion is $\tilde P=iEe_t+\vec p$ with **quaternion** conjugate $\tilde P^{\natural}=iEe_t-\vec p$ and $\tilde P\tilde P^{\natural}=(-E^2+\vec p^2)e_t=-p^2e_t$, where $p^2=E^2-\vec p^2$; the mass shell is $\tilde P\tilde P^{\natural}=-m^2c^2$ (in the dynamical expressions we set $\hbar=c=1$). On the spinor module the Dirac operator is $\not p-m$ with $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\eta=-g$. The mode algebra is $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, with all other anticommutators zero; the matrix isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the trace is $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$, the $2\times2$ reading of the plain form.
 
 ## The LSZ Formula
 
@@ -66,7 +64,6 @@ $$
 $$
 so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde P)$ in momentum space, equivalently by the negative of the wave operator's symbol. The mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=m^2-p^2$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde P)=0$, i.e. $\tilde P\tilde P^{\natural}=-m^2$. The remaining sections spell out the consequences of the fact that $\mathcal{M}$ is a *central* scalar for a scalar field and a *matrix* for a spinor field.
 
-
 ## Amputation as the Inverse Mass-Shell Operator
 
 The propagator and the mass-shell operator are algebraic inverses, and LSZ is the statement of that inversion.
@@ -79,7 +76,7 @@ D_F(\tilde P) = \frac{1}{\mathcal{M}(\tilde P)-i\epsilon} = -\,\frac{1}{p^2-m^2+
 $$
 so that
 $$
-\mathcal{M}(\tilde P)\,D_F(\tilde P) = -\,\big(p^2-m^2\big)\,D_F(\tilde P) = 1 \qquad ({\epsilon\to0,\ \text{off shell}}).
+\boxed{\;\mathcal{M}(\tilde P)\,D_F(\tilde P) = -\,\big(p^2-m^2\big)\,D_F(\tilde P) = 1 \qquad ({\epsilon\to0,\ \text{off shell}})\;}.
 $$
 Multiplying a correlation function by $\mathcal{M}(\tilde P)$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of a module-valued function by the central scalar $\mathcal{M}(\tilde P)$. This is the normalization of the propagator article, whose Klein–Gordon Green's function is $G_F=1/(\vec p^2+m^2-\omega^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$ with $(\Box-m^2)G_F=-\delta^{(4)}$, and in which the free-field residue is $+1$; the textbook normalization $1/(p^2-m^2+i\epsilon)$ is its negative.
 
@@ -123,7 +120,7 @@ D_F(p^2) = \frac{Z}{m^2-p^2-i\epsilon}+c_0+c_1\,(m^2-p^2)+\cdots ,
 $$
 the wave-function renormalization is
 $$
-Z = \lim_{p^2\to m^2}\big(m^2-p^2\big)\,D_F(p^2) = \lim_{\mathcal{M}\to0}\mathcal{M}(\tilde P)\,D_F ,
+Z = \lim_{p^2\to m^2}\big(m^2-p^2\big)\,D_F(p^2) = \lim_{\mathcal{M}\to0}\mathcal{M}(\tilde P)\,D_F,
 $$
 the coefficient of the simple pole. In the framework the pole is at $\mathcal{M}(\tilde P)=0$, i.e. at $p^2=m^2$; the residue is a central scalar, and the physical normalization is $\sqrt Z$ per external leg.
 

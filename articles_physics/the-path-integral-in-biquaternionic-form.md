@@ -92,7 +92,7 @@ The generator of the phase is thus $i e_t$, the central element that exchanges t
 Because the exponent is a complex scalar, the phase factor is a **central** element of $\mathbb{B}$:
 
 $$
-\exp(iS/\hbar)=\cos\!\Big(\frac{S}{\hbar}\Big)e_t+\sin\!\Big(\frac{S}{\hbar}\Big)\,i e_t\;\in\;\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}.
+\boxed{\;\exp(iS/\hbar)=\cos\!\Big(\frac{S}{\hbar}\Big)e_t+\sin\!\Big(\frac{S}{\hbar}\Big)\,i e_t\;\in\;\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}\;}.
 $$
 
 Its Hermitian conjugate is its inverse, $(\exp(iS/\hbar))^\dagger=\exp(-iS/\hbar)$, so it is **unitary** in the sense of the framework's unitary group $\mathrm{U}(2)$:
@@ -155,8 +155,8 @@ For a free particle the sum over paths can be computed exactly, and the result m
 The free kernel is
 
 $$
-K_0(x_f,t'_f;x_i,t'_i)=\Big(\frac{m}{2\pi i\hbar T}\Big)^{1/2}
-\exp\!\Big[\frac{i}{\hbar}\frac{m(x_f-x_i)^2}{2T}\Big],\qquad T=t'_f-t'_i,
+\boxed{\;K_0(x_f,t'_f;x_i,t'_i)=\Big(\frac{m}{2\pi i\hbar T}\Big)^{1/2}
+\exp\!\Big[\frac{i}{\hbar}\frac{m(x_f-x_i)^2}{2T}\Big],\qquad T=t'_f-t'_i\;},
 $$
 
 which is the stationary-phase result: the phase is the classical action $S_{\mathrm{cl}}=m(x_f-x_i)^2/(2T)$ divided by $\hbar$, and the prefactor is the Gaussian fluctuation determinant. In the biquaternion interpretation, both factors are central:
@@ -201,7 +201,7 @@ $$
 where $S_E$ is the Euclidean action. The phase therefore becomes
 
 $$
-\exp(iS/\hbar)=\exp(i(iS_E)/\hbar)=\exp(-S_E/\hbar),
+\boxed{\;\exp(iS/\hbar)=\exp(i(iS_E)/\hbar)=\exp(-S_E/\hbar)\;},
 $$
 
 a decaying real exponential.
@@ -227,9 +227,9 @@ $$
 where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $\exp(iS_{\mathrm{cl}}/\hbar)$ times the Gaussian integral over the fluctuations, giving the **van Vleck determinant** formula
 
 $$
-K(x_f,t'_f;x_i,t'_i)\;\approx\;\frac{1}{\sqrt{2\pi i\hbar}}\,
+\boxed{\;K(x_f,t'_f;x_i,t'_i)\;\approx\;\frac{1}{\sqrt{2\pi i\hbar}}\,
 \sqrt{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}\;
-\exp(iS_{\mathrm{cl}}/\hbar),
+\exp(iS_{\mathrm{cl}}/\hbar)\;},
 $$
 
 with the Maslov index supplying a phase $\exp(-i\pi\nu/2)$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\hbar$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.

@@ -81,7 +81,7 @@ The table is read off from the definition; the entry $\vec e_x \vec e_z = -\vec 
 **Not a division algebra.** The element $1 + \vec e_y$ is nonzero and
 
 $$
-(1 + \vec e_y)(1 - \vec e_y) = 1 - \vec e_y^2 = 0,
+\boxed{\;(1 + \vec e_y)(1 - \vec e_y) = 1 - \vec e_y^2 = 0\;},
 $$
 
 so $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero zero divisors. The algebra therefore has zero divisors and is not a division algebra. Frobenius' theorem, recalled in *Normed Division Algebras and the Hurwitz Theorem*, states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the split-quaternion algebra is a fourth four-dimensional associative real algebra, and the failure of the division property is exactly the appearance of the zero divisors above. The zero divisor set is the subject of *Split-Quaternion Zero Divisors*.
@@ -89,7 +89,7 @@ so $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero zero divisors. The algebra ther
 **The matrix model.** The algebra is isomorphic to the algebra of $2\times2$ real matrices: the low-dimensional Clifford classification gives
 
 $$
-\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})
+\boxed{\;\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})\;}
 $$
 
 (*The Number Systems as Clifford Algebras*), and this abstract identification is used throughout the category, in the ideal theory of *Split-Quaternion Ideals and Peirce Decomposition*, in the idempotent theory of *Split-Quaternion Idempotents and Projections*, and in the spectral and exponential theory of the later articles.
@@ -183,7 +183,7 @@ are the **split-quaternion idempotents**.
 **Theorem.** The elements $\tilde\pi_1$ and $\tilde\pi_2$ satisfy
 
 $$
-\tilde\pi_1^2 = \tilde\pi_1, \qquad \tilde\pi_2^2 = \tilde\pi_2, \qquad \tilde\pi_1 \tilde\pi_2 = \tilde\pi_2 \tilde\pi_1 = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1,
+\boxed{\;\tilde\pi_1^2 = \tilde\pi_1, \qquad \tilde\pi_2^2 = \tilde\pi_2, \qquad \tilde\pi_1 \tilde\pi_2 = \tilde\pi_2 \tilde\pi_1 = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1\;},
 $$
 
 and they are not central. Moreover
@@ -224,7 +224,7 @@ which exhibits $\mathbb{H}_{\mathrm{s}}$ as a two-dimensional module over the sp
 **Theorem (The Centre).** The centre of $\mathbb{H}_{\mathrm{s}}$ is the scalar line:
 
 $$
-Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q_1 : \tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1 \ \text{for all} \ \tilde q_2\} = \mathbb{R} \cdot 1 .
+\boxed{\;Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q_1 : \tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1 \ \text{for all} \ \tilde q_2\} = \mathbb{R} \cdot 1\;}.
 $$
 
 **Proof.** The scalars are central. Conversely, suppose $\tilde q = q_t + \vec v$ is central. Commuting $\tilde q$ with $\vec e_x$ gives
@@ -258,7 +258,7 @@ The algebra is thus **associative, non-commutative, simple**, with centre $\math
 The algebra carries the commutator bracket $[\tilde q_1, \tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$, which makes it a real Lie algebra. The bracket of two elements of $V$ lies in $V$, since
 
 $$
-[\vec e_x, \vec e_y] = 2 \vec e_z, \qquad [\vec e_y, \vec e_z] = -2 \vec e_x, \qquad [\vec e_z, \vec e_x] = 2 \vec e_y .
+\boxed{\;[\vec e_x, \vec e_y] = 2 \vec e_z, \qquad [\vec e_y, \vec e_z] = -2 \vec e_x, \qquad [\vec e_z, \vec e_x] = 2 \vec e_y\;}.
 $$
 
 So $V$ is a three-dimensional Lie subalgebra of $\mathbb{H}_{\mathrm{s}}$, and the displayed relations are those of the three-dimensional simple real Lie algebra $\mathrm{SL}_2(\mathbb{R})$; the bracket algebra on $V$ is therefore $\mathrm{SL}_2(\mathbb{R})$. This is the algebraic origin of the relation between the split-quaternions and the Lorentz group: the vector subspace is a Lie algebra of infinitesimal Lorentz transformations, and the exponential of the bracket gives the rotations of *Split-Quaternion Rotations and the Lorentz Group*.

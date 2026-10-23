@@ -93,8 +93,8 @@ The composition of rotations is quaternion multiplication: if $\tilde u_1$ and $
 Differentiate the rotor and form the two logarithmic derivatives
 
 $$
-\vec\omega_b=+2\,\tilde u^{\natural}\,d\tilde u/dt',\qquad
-\vec\omega_s=+2\,d\tilde u/dt'\,\tilde u^{\natural}.
+\boxed{\;\vec\omega_b=+2\,\tilde u^{\natural}\,d\tilde u/dt',\qquad
+\vec\omega_s=+2\,d\tilde u/dt'\,\tilde u^{\natural}\;}.
 $$
 
 Both are **real pure quaternions**. The claim is immediate from the constraint: $\tilde u^{\natural}d\tilde u/dt'$ is real because both factors are real, and its scalar part is
@@ -155,10 +155,10 @@ $$
 and the kinetic energy and angular momentum are
 
 $$
-T=-\tfrac12\,\mathrm{Sc}\!\left(\vec\omega_b\,\vec L_b\right)
+\boxed{\;T=-\tfrac12\,\mathrm{Sc}\!\left(\vec\omega_b\,\vec L_b\right)
 =\tfrac12\sum_k I_k\omega_k^2 ,
 \qquad
-\vec L_b=I(\vec\omega_b)=\sum_k I_k\omega_k \vec e_k ,
+\vec L_b=I(\vec\omega_b)=\sum_k I_k\omega_k \vec e_k\;},
 $$
 
 using $\mathrm{Sc}(\vec a\vec b)=-\vec a\cdot\vec b$ for pure real quaternions. The quadratic form $\mathrm{Sc}(\vec\omega_b\vec L_b)$ is negative-definite because the quaternion product of two pure vectors has the sign of the negative dot product; the two minus signs give a positive energy.
@@ -244,7 +244,7 @@ $$
 so that the rotor is
 
 $$
-\tilde u(t')=\exp\!\left(+\tfrac{\phi(t')}{2}\vec e_z\right)\exp\!\left(+\tfrac{\theta}{2}\vec e_y\right)\exp\!\left(+\tfrac{\psi(t')}{2}\vec e_z\right),
+\boxed{\;\tilde u(t')=\exp\!\left(+\tfrac{\phi(t')}{2}\vec e_z\right)\exp\!\left(+\tfrac{\theta}{2}\vec e_y\right)\exp\!\left(+\tfrac{\psi(t')}{2}\vec e_z\right)\;},
 $$
 
 a product of three rotations, of which two are time-dependent one-parameter subgroups and one is constant. The general free top ($I_1,I_2,I_3$ all distinct) is not a one-parameter subgroup; its solution is Euler's problem, and the body-frame angular velocity is given by Jacobi elliptic functions. The biquaternion form changes nothing about that classical integrability and its elliptic character; it expresses the orientation as a rotor and the equation as a commutator.

@@ -18,10 +18,6 @@ $$
 
 the **symmetric plain algebra** of the Jordan product, the **antisymmetric plain algebra** of the cross product and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
 
-**Scope and owners.** This article owns the general value for the three companion structures of the quaternion space: the two squares and their reductions of §*The Two General Products at a General Value*, the table of §*The Three Root Sets at a General Value*, the three existence classes, the roots of $0$ and the scaling. The two signed values $+1$ and $-1$, with the idempotents, are *Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the value $0$ and the nilpotents are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. The products are *The 6 Products of the Quaternioid Real Space* and *The Two General Products of the Quaternioid $\mathbb{R}$ Space*; the three companion structures are *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the vocabulary stated once for a general product is *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the two forms are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*; and the neighbouring classes of elements are *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* and *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, below this article in this category. The algebra-product root at the general value is owned by *Square Roots of a General Element in the Quaternion Algebra* in the *Quaternions* category.
-
-**Conventions.** $\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$ and $\vec e_x\vec e_y=\vec e_z$; a general element is $\tilde\xi=\xi_te_t+\vec\xi$ with $\xi_t\in\mathbb{R}$ and $\vec\xi=\sum_k\xi_k\vec e_k$; the conjugation is $\tilde\xi^{\natural}=\xi_t-\vec\xi$; the **plain form** is $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ and the **quaternion form** is $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$, with $\lvert\vec\xi\rvert^{2}=\sum_k\xi_k^{2}$. The algebra product is $\tilde\xi\tilde q$, the general quaternionic product is $\tilde\xi^{\natural}\tilde q$, the Jordan product is $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and the plain cross product is $\tilde\xi\wedge\tilde q=\tfrac12(\tilde\xi\tilde q-\tilde q\tilde\xi)=\vec\xi\times\vec q$. The root is defined in *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* §*The Element Vocabulary* as a **non-zero** element with $\tilde\xi\star\tilde\xi=\lambda e_t$; a root set is read here as a solution set, so the origin is counted with the roots of $0$, and the places where an owner counts the non-zero roots alone are read as the origin alone.
-
 ## The Two General Products at a General Value
 
 The quaternion space carries the algebra product $\tilde\xi\tilde q$ and the general quaternionic product $\tilde\xi^{\natural}\tilde q$; the two squares are the plain square and the quaternion form, and they are the two models of the general value.
@@ -31,7 +27,7 @@ The quaternion space carries the algebra product $\tilde\xi\tilde q$ and the gen
 The plain square is $\tilde\xi^{2}=\langle\tilde\xi\rangle e_t+2\xi_t\vec\xi$, an element with scalar part the plain form $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_t\vec\xi$, and the equation $\tilde\xi^{2}=\lambda e_t$ is the pair
 
 $$
-\langle\tilde\xi\rangle=\lambda , \qquad 2\xi_t\vec\xi=0 .
+\boxed{\;\langle\tilde\xi\rangle=\lambda , \qquad 2\xi_t\vec\xi=0\;}.
 $$
 
 The second equation is the **vector–scalar reduction**: $\xi_t=0$ or $\vec\xi=0$. The case $\vec\xi=0$ gives the two central roots $\tilde\xi=\pm\sqrt\lambda\,e_t$, present for $\lambda>0$ and collapsing to the origin at $\lambda=0$, and absent for $\lambda<0$. The case $\xi_t=0$ gives the roots in the vector subspace, the solutions of $-\lvert\vec\xi\rvert^{2}=\lambda$, which are the sphere $\lvert\vec\xi\rvert^{2}=-\lambda$ of real dimension two for $\lambda<0$ and nothing for $\lambda>0$. So the plain product reads **every** real value: the negative values with the sphere of the vector subspace, the value $0$ with the origin, and the positive values with the two central points. The sphere of a negative value is the family of the complex structures on the vector subspace scaled by $\sqrt{-\lambda}$: a pure unit vector squares to $-e_t$, so the whole sphere is the family that the conversion of the plain product into an algebra over $\mathbb{C}$ uses.
@@ -41,7 +37,7 @@ The second equation is the **vector–scalar reduction**: $\xi_t=0$ or $\vec\xi=
 The square of the quaternionic product is already central,
 
 $$
-\tilde\xi^{\natural}\tilde\xi=\langle\tilde\xi\rangle_{\natural}e_t , \qquad \langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2} ,
+\boxed{\;\tilde\xi^{\natural}\tilde\xi=\langle\tilde\xi\rangle_{\natural}e_t , \qquad \langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}\;},
 $$
 
 so the equation $\tilde\xi^{\natural}\tilde\xi=\lambda e_t$ is the single real equation $\langle\tilde\xi\rangle_{\natural}=\lambda$. The quaternion form is a sum of four real squares, hence non-negative, so a root exists exactly for a non-negative value: the origin alone at $\lambda=0$, and the sphere $\langle\tilde\xi\rangle_{\natural}=\lambda$ of real dimension three at $\lambda>0$. **Every positive value has a root and no negative value has one.**

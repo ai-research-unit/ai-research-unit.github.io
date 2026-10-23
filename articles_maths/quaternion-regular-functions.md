@@ -66,9 +66,7 @@ $$
 
 so $f$ is left-regular if and only if it solves the **Cauchy–Riemann–Fueter system**
 
-$$
-\partial/\partial Q_t\,f_0 = \mathrm{div}\,\vec f, \qquad \partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0.
-$$
+$$ \boxed{\; \partial/\partial Q_t\,f_0 = \mathrm{div}\,\vec f, \qquad \partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0 \;} .$$
 
 *Proof.* Multiply out $e_\mu\partial/\partial Q_\mu(f_0+\vec f)$ term by term, using $\vec a\vec b = -\langle\vec a,\vec b\rangle+\vec a\times\vec b$ for pure quaternions: the scalar part collects $\partial/\partial Q_t\,f_0-\mathrm{div}\,\vec f$, and the vector part collects $\partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f$. Both parts must vanish.
 
@@ -98,9 +96,7 @@ is regular on $\mathbb{H}\setminus\{0\}$; and every classical holomorphic functi
 
 **Theorem.** Every left-regular function is harmonic,
 
-$$
-Df = 0 \implies \Delta f = \bar D(Df) = 0,
-$$
+$$ \boxed{\; Df = 0 \implies \Delta f = \bar D(Df) = 0 \;} ,$$
 
 and every right-regular function is harmonic as well; the harmonic functions form a strictly larger class, since the coordinate $q_t$ is harmonic but $Dq_t = e_t\neq0$.
 
@@ -456,9 +452,7 @@ $$
 
 **Theorem (Cauchy integral formula).** Let $f$ be continuously differentiable on a bounded domain $\Omega\subseteq\mathbb{H}$ with piecewise smooth boundary $\partial\Omega$, and let $q_t$ be an interior point. Then
 
-$$
-f(q_t) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_t)\,n(\tilde q)f(\tilde q)\,dS - \frac{1}{2\pi^2}\int_{\Omega}G(\tilde q-q_t)\,(Df)(\tilde q)\,dV,
-$$
+$$ \boxed{\; f(q_t) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_t)\,n(\tilde q)f(\tilde q)\,dS - \frac{1}{2\pi^2}\int_{\Omega}G(\tilde q-q_t)\,(Df)(\tilde q)\,dV \;} ,$$
 
 where $n$ is the $\mathbb{H}$-valued outward unit normal. If $f$ is regular, the volume term vanishes and
 

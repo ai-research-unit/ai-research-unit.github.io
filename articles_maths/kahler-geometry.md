@@ -7,8 +7,6 @@ A **Kähler manifold** is a complex manifold with a Hermitian metric whose funda
 
 This article develops the Kähler condition and its consequences. It states the equivalent formulations of the Kähler condition — the closedness of $\Omega$, the parallelism of $J$ for the Levi-Civita connection, the local existence of a Kähler potential, and the reduction of the holonomy group to $\mathrm{U}(n)$ — and treats the standard examples, the complex projective space with its Fubini–Study metric above all. It then develops the two central machines that the condition makes available: the Hodge theory of a compact Kähler manifold, whose analytic proofs are deferred to Part III, and the Lefschetz operators, whose $sl_2$ structure packages the cohomology. It closes with the Ricci form and the Kähler–Einstein condition, which is the doorway.
 
-**The boundaries of the article.** The Riemannian metric, the Levi-Civita connection, the curvature tensor, the Ricci tensor and the holonomy group are those of the companion article *Riemannian Geometry*, and are used without derivation. The almost complex structures, the Nijenhuis tensor, the Hermitian metrics, the fundamental form $\Omega(X,Y) = g(JX,Y)$ and the Chern connection are those, which is the immediately preceding article of this half; they are assumed. The symplectic structure on a Kähler manifold, the Darboux theorem and the compatible almost complex structures are those of *Symplectic Geometry*. The Laplace operator on forms, harmonic forms, Hodge theory and the finiteness of the cohomology of the $\bar\partial$-complex require the measure, the limit and the theory of elliptic operators, which belong to Part III, where the measure and the limit are available; the results are stated here and their proofs deferred there in that explicit form. The Chern classes of a complex manifold and their expression through the curvature of a connection are those of *Characteristic Classes*, earlier in this Part; the article states the identity $[\rho] = 2\pi c_1(M)$ and cites it. The projective and algebraic-geometric consequences — the Kodaira embedding theorem, the structure of algebraic varieties, the Hodge conjecture — belong to algebraic geometry and are only pointed at. The base field is $\mathbb{R}$ and no physics is invoked.
-
 ## Kähler Manifolds
 
 **Definition.** A **Kähler manifold** is a Hermitian manifold $(M, J, g)$ — a complex manifold with a Hermitian metric — whose fundamental form
@@ -268,8 +266,6 @@ Finally, the Ricci form $\rho(X,Y)=\mathrm{Ric}(JX,Y)$ is a closed real $(1,1)$-
 | $\rho(X,Y)=\mathrm{Ric}(JX,Y)$ | Ricci form; $\rho=-i\partial\bar\partial\log\det(g_{i\bar j})$, $[\rho]=2\pi c_1(M)$ |
 | Kähler–Einstein | $\rho = \lambda\Omega$; $\lambda=0$ is Calabi–Yau |
 | $K_M = \Lambda^n(T^{1,0}M)^*$ | Canonical bundle; $c_1(M) = -c_1(K_M)$ |
-
-
 
 ## Further Reading
 

@@ -29,11 +29,11 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 The four products are not four independent definitions. Each is the plain product with a conjugation inserted in one or both slots:
 
 $$
-\tilde Q_1\star_{K_1K_2}\tilde Q_2=K_1(\tilde Q_1)\,K_2(\tilde Q_2),
+\boxed{\;\tilde Q_1\star_{K_1K_2}\tilde Q_2=K_1(\tilde Q_1)\,K_2(\tilde Q_2),
 \qquad
 K_1\in\{\mathrm{id},{}^{\natural}\},
 \qquad
-K_2\in\{\mathrm{id},{}^{*}\},
+K_2\in\{\mathrm{id},{}^{*}\}\;},
 $$
 
 where ${}^{\natural}$ is the natural conjugation, fixing the central $i$ and negating the three vector units, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is the Hermitian conjugation. The two insertions commute, each is its own inverse, and the four settings form a group isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$. The four general products are the four settings of that one rule.
@@ -71,9 +71,9 @@ The associativity row is the one row the slots decide only jointly: it holds exa
 **Exactly one setting makes the square scalar for every element.** For every element,
 
 $$
-\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,
+\boxed{\;\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,
 \qquad
-\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
+\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2\;}.
 $$
 
 At the other three settings the square is not scalar in general: at $(\mathrm{id},\mathrm{id})$ the element $e_t+\vec e_x$ has the square $2\vec e_x$, at $(\mathrm{id},{}^{*})$ the element $e_t+i\vec e_x$ has the square $2e_t+2i\vec e_x$, and at $({}^{\natural},{}^{*})$ the element $e_t+\vec e_x$ has the square $-2\vec e_x$. This theorem is the algebraic root of the causal reading. The quaternionic bilinear product is the only one of the four whose square is central for every element, and the central value is the interval.
@@ -140,9 +140,9 @@ of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb
 The form is **multiplicative**,
 
 $$
-\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}
+\boxed{\;\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}
 =
-\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
+\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
 $$
 
 so the causal type of a composite is the product of the causal types. The null set $\{\langle\tilde Q\rangle_{\natural}=0\}$ is closed under multiplication, and so are the units and the zero divisors; on the material sector this null set is the light cone. The product of two material elements is material exactly when they anticommute, so the light cone is not closed under composition within the sector; the closure is a statement about the algebra and not about the sector. For units, the logarithm $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ is additive over the composition and is read as a dilation potential; the rapidity is the length of the pure part of the polar angle, not the potential.

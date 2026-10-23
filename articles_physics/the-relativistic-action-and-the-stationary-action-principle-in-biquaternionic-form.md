@@ -80,8 +80,9 @@ S = -mc\int\sqrt{-\,d\tilde{R}\,\overline{d\tilde{R}}} = -mc\int\sqrt{-\,\langle
 $$
 with $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position biquaternion. With $d\tilde{R} = (ic\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt')\,dt'$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
 $$
+\boxed{\;
 S = -mc^2\int\frac{dt'}{\gamma} = \int L\,dt' , \qquad
-L = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}} ,
+L = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}}\;},
 $$
 as the companion *Relativistic Mechanics in Biquaternionic Form* records. The reduction from the invariant to the standard Lagrangian was checked at three velocities, the two expressions agreeing to six decimal places in each case. The integrand is built from the biquaternion norm of the displacement, which is what makes the action a Lorentz scalar: a rotor acts on $d\tilde{R}$ and its conjugate in the same way, and $\langle d\tilde{R}\rangle_{\natural}$ is invariant.
 
@@ -142,9 +143,10 @@ The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\nat
 
 For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$. Its action is
 $$
+\boxed{\;
 S[\tilde{\Phi}] = \int\mathcal{L}\,d^4x ,
 \qquad
-\mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] - \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right] ,
+\mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] - \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right]\;},
 $$
 the form fixed by the companion *Noether's Theorem in Biquaternionic Form* and the companion *The Klein–Gordon Equation in Biquaternionic Form*. Expanding the scalar parts,
 $$
@@ -153,8 +155,9 @@ $$
 $$
 which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $ict'$ convention gives it. Its Euler–Lagrange equation is
 $$
+\boxed{\;
 \left(\Box - \mu^2\right)\tilde{\Phi} = 0 ,
-\qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta ,
+\qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta\;},
 $$
 the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box\phi - \mu^2\phi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring.
 
@@ -214,9 +217,10 @@ S_{\mathrm{Maxwell}} = -\frac14\int F_{\mu\nu}F^{\mu\nu}\,d^4x ,
 $$
 and in terms of the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the companion *Maxwell's Equations in the Biquaternionic Formulation* its Lagrangian density is the biquaternion norm
 $$
+\boxed{\;
 \mathcal{L}_{\mathrm{Maxwell}} = -\frac12\,\mathrm{Re}\,\mathrm{Sc}\!\left(\langle\tilde{F}\rangle_{\natural}\right) ,
 \qquad
-\langle\tilde{F}\rangle_{\natural} = -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H ,
+\langle\tilde{F}\rangle_{\natural} = -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H\;},
 $$
 so that the real and imaginary parts of the single complex invariant carry the two classical invariants, $\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = -(\epsilon\vec E^2 - \mu\vec H^2)$ and $\mathrm{Im}\,\langle\tilde{F}\rangle_{\natural} = -2\sqrt{\epsilon\mu}\,\vec E\cdot\vec H$; with the overall minus sign the Lagrangian is $-\frac12\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = \frac12(\epsilon\vec E^2 - \mu\vec H^2)$, the standard Maxwell density. The identity was verified on a representative field; it is the reason the framework can write the electromagnetic Lagrangian as a norm, exactly as it writes the mass term of the scalar field. Varying with respect to $\tilde{A}$ gives the source-free Maxwell equations $\partial_\mu F^{\mu\nu} = 0$, the standard result.
 

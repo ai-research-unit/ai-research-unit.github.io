@@ -67,7 +67,7 @@ $$
 Therefore
 
 $$
-p_+ = \bigl|\cos(\theta/2)\bigr|^2 = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}.
+\boxed{\;p_+ = \bigl|\cos(\theta/2)\bigr|^2 = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}\;}.
 $$
 
 ## Solution in the Biquaternion Formulation
@@ -201,7 +201,7 @@ $$
 The scalar part is $\tfrac{\hbar}{4}\cos\theta$. Therefore
 
 $$
-\langle \tilde{H}\rangle_{\tilde\Pi_z} = 2 \cdot \tfrac{\hbar}{4}\cos\theta = \frac{\hbar}{2}\cos\theta.
+\boxed{\;\langle \tilde{H}\rangle_{\tilde\Pi_z} = 2 \cdot \tfrac{\hbar}{4}\cos\theta = \frac{\hbar}{2}\cos\theta\;}.
 $$
 
 Both formulations give the same result.

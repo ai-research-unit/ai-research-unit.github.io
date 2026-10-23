@@ -72,7 +72,7 @@ So $\mathbb{D}$ is not a field, and not a division algebra. This is the fundamen
 The product of two split complex numbers is defined by extending the real multiplication bilinearly:
 
 $$
-Q B = (q + j q')(b + j b') = (q b + q' b') + (q b' + q' b) j, \qquad Q = q + j q', \quad B = b + j b'.
+\boxed{\;Q B = (q + j q')(b + j b') = (q b + q' b') + (q b' + q' b) j, \qquad Q = q + j q', \quad B = b + j b'\;}.
 $$
 
 In developed form,
@@ -175,7 +175,7 @@ $$
 A general split complex number is written uniquely in the idempotent basis as
 
 $$
-Q = q + j q' = (q + q') \Pi_+ + (q - q') \Pi_-.
+\boxed{\;Q = q + j q' = (q + q') \Pi_+ + (q - q') \Pi_-\;}.
 $$
 
 This is the **idempotent decomposition** of $Q$. It is the single most important structural fact about the split complex algebra, and the two lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$ are the finest direct summands of the algebra.
@@ -185,7 +185,7 @@ This is the **idempotent decomposition** of $Q$. It is the single most important
 The map
 
 $$
-\varphi : \mathbb{D} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(q + j q') = (q + q', q - q'),
+\boxed{\;\varphi : \mathbb{D} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(q + j q') = (q + q', q - q')\;},
 $$
 
 is an algebra isomorphism. It is bijective, and it satisfies

@@ -29,9 +29,7 @@ acting on the left, with $\vec D = \vec e_x\partial/\partial Q_x+\vec e_y\partia
 
 **Theorem.** On $\mathbb{H}$ the operator and its conjugate factor the Laplacian,
 
-$$
-D\bar D = \bar DD = \Delta_4,
-$$
+$$ \boxed{\; D\bar D = \bar DD = \Delta_4 \;} ,$$
 
 so $D$ is a square root of $\Delta_4$.
 
@@ -127,9 +125,7 @@ componentwise, and the converse fails.
 
 **Theorem (mean value property).** A regular function $F$ near a closed ball $\bar B(q_t,r)$ satisfies
 
-$$
-F(q_t) = \frac{1}{|B(q_t,r)|}\int_{B(q_t,r)}F\,dV = \frac{1}{|\partial B(q_t,r)|}\int_{\partial B(q_t,r)}F\,dS,
-$$
+$$ \boxed{\; F(q_t) = \frac{1}{|B(q_t,r)|}\int_{B(q_t,r)}F\,dV = \frac{1}{|\partial B(q_t,r)|}\int_{\partial B(q_t,r)}F\,dS \;} ,$$
 
 with the ordinary Lebesgue measures on $\mathbb{R}^4$.
 
@@ -153,9 +149,7 @@ defined for $\rho>0$ by replacing $a$ by $q_t$, $a'$ by $\rho$ and the complex u
 
 **Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $f^{\mathrm{ax}}_0$. Then
 
-$$
-F(\tilde q) = \Delta_4f^{\mathrm{ax}}_0(\tilde q) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho}+\vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho}-\frac{2\,v(q_t,\rho)}{\rho^2}\right)
-$$
+$$ \boxed{\; F(\tilde q) = \Delta_4f^{\mathrm{ax}}_0(\tilde q) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho}+\vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho}-\frac{2\,v(q_t,\rho)}{\rho^2}\right) \;} $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
 

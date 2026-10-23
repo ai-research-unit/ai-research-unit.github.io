@@ -86,9 +86,9 @@ $$
 because the trace of every $i\vec e_k$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so
 
 $$
-S(\tilde{Ϛ}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
+\boxed{\;S(\tilde{Ϛ}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
 \qquad
-I(A:B) = 2 - S(\tilde{Ϛ}_{AB}) .
+I(A:B) = 2 - S(\tilde{Ϛ}_{AB})\;} .
 $$
 
 For Bell-diagonal states the quantum mutual information is thus a function of the three plain-form readings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the biquaternion norm.
@@ -147,9 +147,9 @@ $$
 and minimizing over the three coordinate measurements gives
 
 $$
-J(A|B) = 1 - \min_{j\in\{1,2,3\}} h_2\!\left(\frac{1+|c_j|}{2}\right),
+\boxed{\;J(A|B) = 1 - \min_{j\in\{1,2,3\}} h_2\!\left(\frac{1+|c_j|}{2}\right),
 \qquad
-D(A|B) = 1 - S(\tilde{Ϛ}_{AB}) + \min_{j} h_2\!\left(\frac{1+|c_j|}{2}\right),
+D(A|B) = 1 - S(\tilde{Ϛ}_{AB}) + \min_{j} h_2\!\left(\frac{1+|c_j|}{2}\right)\;},
 $$
 
 using $I(A:B) = 2 - S(\tilde{Ϛ}_{AB})$. For this family the minimum of the conditional entropy over all projective measurements is attained on a coordinate axis; that fact is standard, and the values below were in addition checked against a direct numerical minimization over measurement directions on the states reported. Every conditional state above was verified to have the stated eigenvalues, and the closed forms were checked against the explicit $4\times4$ computation.
@@ -191,9 +191,9 @@ $$
 The smallest is attained at the largest coefficient, $|c_1| = 0.4$, giving
 
 $$
-J(A|B) = 1 - 0.8813 = 0.1187,
+\boxed{\;J(A|B) = 1 - 0.8813 = 0.1187,
 \qquad
-D(A|B) = 0.3496 - 0.1187 = 0.2308 \ \text{bits}.
+D(A|B) = 0.3496 - 0.1187 = 0.2308 \ \text{bits}\;}.
 $$
 
 The state is separable because $0.4+0.35+0.2 = 0.95\leq1$, yet the discord is positive. This is the numerical content of the article, and every figure above was checked against the explicit $4\times4$ state. Note also that for this family the discord is **symmetric**, $D(A|B) = D(B|A)$, because the state is invariant under the exchange of the two factors; the minimization over measurements on both sides therefore gives the same value as the one-sided discord, and no separate two-sided calculation is needed.

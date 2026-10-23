@@ -67,7 +67,7 @@ $$
 On this basis the number operator takes the values $0,1,1,1,2,2,2,3$, so the charge $Ϙ = N/3$ takes the values
 
 $$
-0,\quad \tfrac13,\tfrac13,\tfrac13,\quad \tfrac23,\tfrac23,\tfrac23,\quad 1 ,
+\boxed{\;0,\quad \tfrac13,\tfrac13,\tfrac13,\quad \tfrac23,\tfrac23,\tfrac23,\quad 1\;},
 $$
 
 which is the charge spectrum of one generation's worth of states in the four multiplet pattern $1 + 3 + 3 + 1$: a singlet of charge $0$, a triplet of charge $1/3$, a triplet of charge $2/3$, and a singlet of charge $1$. The charge is quantised because it is the eigenvalue of a number operator, and the denominator three is the dimension of the isotropic subspace; this is the mechanism the framework does not possess, where the abelian charge is a continuous central label.
@@ -81,7 +81,7 @@ $$
 is also primitive, is orthogonal to $\Pi$, and generates a second eight-dimensional left ideal. The literature's interpretation takes its states to be the conjugates of the first ideal's states, with the charges negated, so that the sixteen states of the two ideals together are
 
 $$
-\underbrace{1(0)+3(\tfrac13)+3(\tfrac23)+1(1)}_{S^u} \ \oplus\ \underbrace{1(0)+3(-\tfrac13)+3(-\tfrac23)+1(-1)}_{S^{u,c}} ,
+\boxed{\;\underbrace{1(0)+3(\tfrac13)+3(\tfrac23)+1(1)}_{S^u} \ \oplus\ \underbrace{1(0)+3(-\tfrac13)+3(-\tfrac23)+1(-1)}_{S^{u,c}}\;},
 $$
 
 and this is one generation: the two neutral states, the three up-type and three down-type colour states and their conjugates, and the electron and the positron. The identification of the second ideal's spectrum with the negated spectrum of the first is the literature's bookkeeping rather than a computation reproduced in the corpus, and the mathematics article that establishes the first ideal records exactly this bookkeeping of the conjugate half as not reproduced. It is the first of two places in the construction where an interpretation is doing work.

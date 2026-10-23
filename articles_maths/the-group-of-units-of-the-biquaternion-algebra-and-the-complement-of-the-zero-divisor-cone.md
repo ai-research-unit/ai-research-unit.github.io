@@ -23,27 +23,6 @@ two statements of the article are the pair of these facts: **the units of the pl
 elements of non-vanishing norm $\langle\cdot\rangle_{\natural}$, and their complement is a group for the plain product and for no
 other of the twelve structures.**
 
-**Placement and boundaries.** The article closes the *Specific Theory* of the biquaternion algebra,
-after *The Specificities of the Biquaternion Algebra*. It states the invertibility criterion of the
-plain product that *Norm and Invertibility in the Biquaternion Algebra* declines to read from the
-product's own algebraic norm, and it cites *Zero Divisors in the Algebraic Structures over the
-Biquaternion $\mathbb{C}$ Space* for the one-sided inverse equations read across the four general
-products. The topology of the group — the polar decomposition, the retractions onto the compact
-subgroups, the homotopy groups and the universal cover — is proved in *The Biquaternion Unit Group
-as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*; the ambient topology of
-the cone is *The Topology of the Zero-Divisor Cone*; the distribution of the units over the
-remarkable subspaces is *Norm and Invertibility in the General Quaternionic Algebra*, §*The
-Algebraic Norm on the Remarkable Subspaces*; the invertibility of the symmetrised product is *Norm
-and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. None of those is reproved here.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$
-with $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$; a general element is $\tilde
-Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the
-coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is
-${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The product is the general plain bilinear product $\tilde
-Q_1\tilde Q_2$, written by juxtaposition, and the **general quaternionic bilinear algebraic norm** $\langle\cdot\rangle_{\natural}$,
-the reduced norm, is
-
 $$
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{\natural}\bigr),
 $$
@@ -480,4 +459,3 @@ element at all.
   structures, their units and their images.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the unit, the
   inverse, the zero divisor and the annihilator stated once for a general product.
-

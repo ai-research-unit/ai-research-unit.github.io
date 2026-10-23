@@ -25,7 +25,7 @@ $$
 This gives the direct sum decomposition
 
 $$
-\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}),
+\boxed{\; \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) \;},
 $$
 
 the two summands being of real dimensions 2 and 6. It is the decomposition into scalar and vector parts, and it is the one with summands of unequal dimension: the other two decompositions split $\mathbb{B}$ into two halves of dimension 4.
@@ -57,7 +57,7 @@ so $\tilde{Q}_i$ lies in $\mathbb{H}_{\mathbb{B}}$ as well. The sum is $\tilde{Q
 This gives the direct sum decomposition
 
 $$
-\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}},
+\boxed{\; \mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}} \;},
 $$
 
 where $i\mathbb{H}_{\mathbb{B}}$ is the set of biquaternions of the form $i \tilde{Q}$ with $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}$ of real dimension 8.
@@ -83,7 +83,7 @@ Indeed, $\tilde{Q}_+$ is fixed by Hermitian conjugation, so it lies in $\mathbb{
 This gives the direct sum decomposition
 
 $$
-\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
+\boxed{\; \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- \;},
 $$
 
 where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}$ of real dimension 8.

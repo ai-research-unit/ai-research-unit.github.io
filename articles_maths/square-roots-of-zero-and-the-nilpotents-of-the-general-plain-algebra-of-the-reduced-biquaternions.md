@@ -17,8 +17,6 @@ The two **bilinear** products split: the general plain bilinear product has no n
 
 **The results.** The roots of zero of the multiplication are $\{0\}$, and the multiplication has no nonzero nilpotent; the algebra is **reduced**, its nilradical and its Jacobson radical are $\{0\}$, and it is semisimple. The tessarine bilinear product and the plain sesquilinear product each have the two idempotent lines as their nonzero square-zero set, and each is **nilpotent of index two** on those lines. The tessarine sesquilinear product has no nonzero square-zero element, and its nilpotents are the two lines with **index three**: $\breve Q^{\star2}\neq0$ and $\breve Q^{\star3}=0$ for a nonzero element of a line. The plain bilinear product is the multiplication and has none.
 
-**Boundaries.** The four products and their forms and norms are *The Four Products, Their Forms and Their Algebraic Norms*, above this article in this category; the multiplication and its axioms are *Introduction to the Algebra of the Reduced Biquaternions*; the zero divisors and the two lines are *Zero Divisors of the Algebra of the Reduced Biquaternions*, above this article; and the idempotents are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, above this article. The nilpotent glyph of the reduced biquaternion layer, the plain capital of *Conventions in Mathematics*, §*The Nilpotent Convention*, is not used here because there is no nilpotent to name in the multiplication; the products of the biquaternion layer with their two nilpotent families are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
-
 ## The Roots of Zero of the Multiplication
 
 ### The Equation and the Single Root

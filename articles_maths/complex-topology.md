@@ -7,8 +7,6 @@ This article collects the topology of the complex algebra $\mathbb{C}$ as a spac
 
 The complex case is the simplest in the family and the whole of its topology is the topology of the plane and the circle. The algebra itself is $\mathbb{R}^2$, hence contractible; the group of units is the punctured plane, homotopy equivalent to the unit circle, with fundamental group $\mathbb{Z}$. No richer topology is available here: the definiteness of the norm and the emptiness of the zero-divisor class rule out the higher sphere, the null cone and its link. The group structure of the units and their connectedness are the subject of the companion article *Complex Exponential and Lie Group Structure*; this article owns the ambient space and its distinguished subsets, the unit circle and its homotopy, and the punctured plane.
 
-**Conventions.** The basis is $1$, $i$ with $i^2 = -1$; a complex number is $Q = q+i q'$ with real coordinates $(q,q')$; the norm is $\langle Q\rangle_{*} = q^2+q'^2$ and the Euclidean norm is $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2+q'^2}$; the group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$.
-
 ## The Algebra as a Topological Space
 
 The map

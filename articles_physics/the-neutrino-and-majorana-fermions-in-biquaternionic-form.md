@@ -15,8 +15,6 @@ The presentation is organized around one question — *which real structure on t
 
 The article is organized as follows. The next section fixes the three notions and their component counts. A section then constructs charge conjugation as a real structure on $\Delta$, states the basis and signature, and separates basis-independent existence from basis-dependent form. A section treats the Majorana condition, its consistency with the massive equation, and the surviving and vanishing bilinears. A section identifies which conjugation of the biquaternion algebra plays the role of charge conjugation. A section tests the sector split against the reality condition and reports the obstruction. A section states what in the neutrino's description is empirical input rather than a consequence of the framework, and a closing section separates what the framework supplies, transcribes, and does not supply. Open questions follow.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, and $i$ is the scalar imaginary, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The conjugations are the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$ (conjugation of the coefficients) and the Hermitian conjugate ${}^{*}=({}^{\natural})^{\,*}$; the anti-Hermitian conjugate is $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$; its complex conjugate $\bar{S}=(0,\tfrac12)$ is the right-handed Weyl module, on which $\tilde{U}\in SL(2,\mathbb{C})$ acts by $\mathsf{M}_2(\tilde{U}^{*})$. The Dirac module is $\Delta=S\oplus\bar{S}$, and a Dirac spinor is written in blocks as $\Psi=(\psi_L,\psi_R)^{T}$ with $\psi_L\in S$, $\psi_R\in\bar{S}$. The chirality operator is $\gamma_5=\mathrm{diag}(-I_2,I_2)$, $\gamma_5^2=I_4$, and the chiral projectors are $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$.
-
 For the matrix form of the Clifford algebra we use the **block (chiral) basis**
 
 $$
@@ -90,7 +88,7 @@ The relation $KK^{*}=I_4$ is the statement that $\mathcal{C}:\psi\mapsto\psi^{c}
 The consistency of this real structure with the Dirac operator is a second, independent condition. It is
 
 $$
-K\,\gamma^{\mu\,*}\,K^{-1} \;=\; -\,\gamma^{\mu},
+\boxed{\;K\,\gamma^{\mu\,*}\,K^{-1} \;=\; -\,\gamma^{\mu}\;},
 $$
 
 which holds for $\mu=0,1,2,3$ in the block basis. Because $\mathcal{C}$ is conjugate-linear, this is what makes $\mathcal{C}$ commute with the kinetic operator: for a constant matrix $M$, $\mathcal{C}(M\psi)=K M^{*}\psi^{*}$, so $\mathcal{C}(i\gamma^\mu\partial/\partial Q_\mu\,\psi)=i\gamma^\mu\partial/\partial Q_\mu\,(\mathcal{C}\psi)$ if and only if $K(i\gamma^\mu)^{*}K^{-1}=i\gamma^\mu$, which is exactly the displayed condition. In words: **charge conjugation commutes with the massless Dirac operator and anticommutes with the Clifford generators**. This is the property that makes the Majorana constraint consistent with the wave equation, and it is verified independently of any statement about a mass.
@@ -141,7 +139,7 @@ and it determines $\psi_R$ from $\psi_L$. It is not an extra equation imposed on
 **The massive equation.** For a single self-conjugate field the mass term cannot be the Dirac term $m\bar{\psi}\psi$ of a Dirac field, because the two chiral halves are conjugate, not independent. The equation that carries a mass is the **Majorana equation**
 
 $$
-i\gamma^\mu\partial/\partial Q_\mu \psi \;=\; m\,\psi^{c}.
+\boxed{\;i\gamma^\mu\partial/\partial Q_\mu \psi \;=\; m\,\psi^{c}\;}.
 $$
 
 If its solution also satisfies $\psi^{c}=\psi$, then it satisfies the ordinary massive Dirac equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$; conversely the massive Dirac equation restricted to the fixed space implies the Majorana equation. The content is therefore in the consistency of the constraint with the equation, and that consistency is a computation, not a convention.
@@ -239,9 +237,9 @@ $$
 and left multiplication by the spatial generators $\vec e_x,\vec e_y,\vec e_z$ does not preserve $\mathbb{M}_-$. The sharpest single instance is
 
 $$
-\vec e_x\in\mathbb{M}_-,
+\boxed{\;\vec e_x\in\mathbb{M}_-,
 \qquad
-\vec e_x \vec e_x=-e_t\in\mathbb{M}_+ .
+\vec e_x \vec e_x=-e_t\in\mathbb{M}_+\;}.
 $$
 
 So the spatial part of the Dirac operator does not preserve $\mathbb{M}_-$; more generally, for a generic $\tilde{\Psi}\in\mathbb{M}_-$ the products $\vec e_\mu\tilde{\Psi}$ lie in neither sector. The time term fails for the same reason: $\partial/\partial Q_t$ contributes a factor $-i$, and $i\,\tilde{\Psi}\in\mathbb{M}_+$ whenever $\tilde{\Psi}\in\mathbb{M}_-$. Hence $\nabla\tilde{\Psi}\notin\mathbb{M}_-$ for generic $\tilde{\Psi}\in\mathbb{M}_-$: **the Dirac operator does not preserve the material sector, so the sector cannot be a Majorana real form.** A Majorana reduction requires a subspace that the equation carries into itself, and $\mathbb{M}_-$ is not one.

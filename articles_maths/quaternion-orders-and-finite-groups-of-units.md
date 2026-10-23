@@ -4,10 +4,6 @@
 
 The quaternion algebra carries a norm with integer values on certain lattices, and the lattices that are also rings are the **orders**. The two classical orders, the Lipschitz and the Hurwitz orders, have finitely many units, and the unit groups that occur are exactly the finite subgroups of the unit sphere. This article states the orders, their unit groups, the classification of the finite subgroups of the sphere, and the McKay correspondence; the topological group of units of the whole algebra is the article before it, and the finite groups are read here once.
 
-**Boundaries.** The norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the group of units of the whole algebra and its topology are *The Quaternion Unit Group as a Topological Group*, above this article in this category; the unit sphere as a topological group is the same article.
-
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$; an element is $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$. The **quaternion form** is $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.
-
 ## The Quaternion Orders
 
 **Definition (order).** An **order** of $\mathbb{H}$ is a subring $\mathcal O$ that is a lattice, that is a finitely generated abelian group spanning $\mathbb{H}$ over $\mathbb{R}$, and on which the norm is integral.
@@ -34,15 +30,11 @@ is a subring of $\mathbb{H}$, a lattice of rank $4$, with $\mathcal L\subseteq\m
 
 **Theorem (the two unit groups).** The units of the Lipschitz order are the eight elements
 
-$$
-\mathcal L^\times=\{\pm1,\pm i,\pm j,\pm k\}=Q_8,
-$$
+$$ \boxed{\; \mathcal L^\times=\{\pm1,\pm i,\pm j,\pm k\}=Q_8 \;} ,$$
 
 the quaternion group of order eight; the units of the Hurwitz order are the twenty-four elements
 
-$$
-\mathcal H^\times=\{\pm1,\pm i,\pm j,\pm k\}\cup\bigl\{\tfrac12(\pm1\pm i\pm j\pm k)\bigr\}=2T,
-$$
+$$ \boxed{\; \mathcal H^\times=\{\pm1,\pm i,\pm j,\pm k\}\cup\bigl\{\tfrac12(\pm1\pm i\pm j\pm k)\bigr\}=2T \;} ,$$
 
 the binary tetrahedral group of order twenty-four.
 

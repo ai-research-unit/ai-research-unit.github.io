@@ -10,8 +10,6 @@ The reformulation is a diagonalisation. Two complex quaternionic combinations of
 
 **A word on the word.** In this series *chiral* usually names a property of a fermion: the inequivalence of the left- and right-handed components of a spinor, the subject of *Chiral Fermions in the Biquaternion Framework*. Here it names a property of a material medium — an electric–magnetic cross-response. The two senses are unrelated, and the word is disambiguated here once and not again.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and scalar imaginary $i$ commuting with the units. The fields are **time-harmonic**, taken in the $\exp(-i\omega t')$ convention, so that $\partial/\partial t'\to-i\omega$ and the four Maxwell equations become algebraic in $\omega$. In this article the only differential operator that appears is the **spatial Moisil–Theodoresco operator**
-
 $$
 D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,
 \qquad
@@ -98,9 +96,9 @@ $$
 with
 
 $$
-\alpha_1=\frac{k}{1+k\beta},
+\boxed{\;\alpha_1=\frac{k}{1+k\beta},
 \qquad
-\alpha_2=\frac{k}{1-k\beta}.
+\alpha_2=\frac{k}{1-k\beta}\;}.
 \tag{17}
 $$
 
@@ -118,9 +116,9 @@ and the bracket is $D_3\Phi+\mathrm{div}\,\vec{\mathcal E}$. Collecting the $D_3
 In the absence of charges and currents, $\rho=0$ and $\vec j_{\mathrm n}=0$, and $(18)$ reduces to the **diagonal** system
 
 $$
-\bigl(D_3-\alpha_2\bigr)\Phi=0,
+\boxed{\;\bigl(D_3-\alpha_2\bigr)\Phi=0,
 \qquad
-\bigl(D_3+\alpha_1\bigr)\Psi=0 .
+\bigl(D_3+\alpha_1\bigr)\Psi=0\;}.
 \tag{20}
 $$
 
@@ -157,7 +155,7 @@ $$
 satisfy the two Beltrami equations and reconstruct the fields through $(14)$. They are the two circular polarisations, and they carry the two different wavenumbers. An incident linearly polarised wave is their superposition; over a distance $L$ the phases of the two components differ by $(\alpha_2-\alpha_1)L$, and a linear polarisation whose two circular components differ in phase by $\delta$ has its plane rotated by $\delta/2$, so the plane of polarisation has rotated by
 
 $$
-\Delta\theta=\tfrac12(\alpha_2-\alpha_1)L=\frac{k^2\beta}{1-k^2\beta^2}\,L \;\xrightarrow{\;\beta\ \text{small}\;}\; k^2\beta\,L,
+\boxed{\;\Delta\theta=\tfrac12(\alpha_2-\alpha_1)L=\frac{k^2\beta}{1-k^2\beta^2}\,L \;\xrightarrow{\;\beta\ \text{small}\;}\; k^2\beta\,L\;},
 $$
 
 the standard law of optical activity. This is the quantity a measurement of the rotation angle determines. It also fixes the domain of the linearised Drude–Born–Fedorov description: the denominators $1-k^2\beta^2$ show that the description is a low-chirality expansion, valid for $k|\beta|<1$.
@@ -441,11 +439,12 @@ Two restrictions bound the scope. The chirality parameter is taken real and the 
 A chiral medium is an isotropic medium with a magnetoelectric response, described by the Drude–Born–Fedorov relations with the third parameter $\beta$. Its time-harmonic Maxwell system is diagonalised by the two combinations $\Phi=\vec{\mathcal E}+i\vec{\mathcal H}$ and $\Psi=\vec{\mathcal E}-i\vec{\mathcal H}$, each of which satisfies a first-order equation of Beltrami type with one of the two chiral wavenumbers
 
 $$
+\boxed{\;
 \alpha_1=\frac{k}{1+k\beta},
 \qquad
 \alpha_2=\frac{k}{1-k\beta},
 \qquad
-\alpha_1\alpha_2=\frac{k^2}{1-k^2\beta^2},
+\alpha_1\alpha_2=\frac{k^2}{1-k^2\beta^2}\;},
 $$
 
 reducing to the ordinary wavenumber $k$ when $\beta=0$. The two wavenumbers are the two circular polarisations; their difference $2k^2\beta/(1-k^2\beta^2)$ is the optical activity, and the rotation of the plane of polarisation is half of it per unit length. The combination $\Phi$ is, up to $-ic$, the field-strength biquaternion $\tilde F$ of the rest of the series, so the diagonalisation is by a complex structure already present in the algebra.

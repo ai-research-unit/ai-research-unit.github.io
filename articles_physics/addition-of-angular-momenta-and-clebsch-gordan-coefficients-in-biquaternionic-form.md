@@ -141,7 +141,7 @@ One caution belongs here, because it is the reason the tensor product is an assu
 Let $V_j$ denote the rotation multiplet of spin $j$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2j+1$: the representation carried by $|j,m\rangle$ with $m=-j,\dots,j$, and the irreducible module of highest weight $2j$ in the labelling of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*. For the polynomial representations of the rotation group the decomposition of a tensor product — the **Clebsch–Gordan series** — is
 
 $$
-V_{j_1}\otimes V_{j_2}\;\cong\;\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}V_j ,
+\boxed{\;V_{j_1}\otimes V_{j_2}\;\cong\;\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}V_j\;},
 $$
 
 the coupled spin running in unit steps from $j_1+j_2$ down to $|j_1-j_2|$. The dimension count is the product of the factor dimensions,
@@ -231,8 +231,8 @@ which is the relation $\tilde S_-|1,1\rangle=\hbar\sqrt{(1+1)(1-1+1)}|1,0\rangle
 The two coupled subspaces are the symmetric and antisymmetric parts of the tensor square. In the algebra $\mathbb{B}\otimes\mathbb{B}$ they are the ranges of the two idempotents
 
 $$
-\tilde\Pi_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),\qquad
-\tilde\Pi_{\mathrm{asym}}=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right).
+\boxed{\;\tilde\Pi_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),\qquad
+\tilde\Pi_{\mathrm{asym}}=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right)\;}.
 $$
 
 Both are Hermitian; both are idempotent; they are orthogonal and sum to the identity,
@@ -293,7 +293,7 @@ $$
 that is, $j(j+1)\hbar^2$ with $j=1$ and $j=0$. The same result is obtained more directly by writing $\tilde S^2=\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)+\tilde S_3^2$ and acting on the four product states; the two computations agree. In the form of a spectral decomposition,
 
 $$
-\tilde S^2=2\hbar^2\,\tilde\Pi_{\mathrm{sym}}+0\cdot \tilde\Pi_{\mathrm{asym}} ,
+\boxed{\;\tilde S^2=2\hbar^2\,\tilde\Pi_{\mathrm{sym}}+0\cdot \tilde\Pi_{\mathrm{asym}}\;},
 $$
 
 which exhibits the coupled idempotents as the spectral projectors of the total Casimir and shows that the Clebsch–Gordan transformation is exactly the transformation that diagonalises $\tilde S^2$ and $\tilde S_3$ simultaneously.

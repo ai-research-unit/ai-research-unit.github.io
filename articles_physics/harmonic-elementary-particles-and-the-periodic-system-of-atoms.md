@@ -51,8 +51,8 @@ $$
 The **biamplitude** $\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ therefore obeys a first-order equation in which the frequency appears as a mass-like term. The first thing to note is the factorisation. Because $\nabla\circ\nabla = -\Delta$,
 
 $$
-\left(\omega + \nabla\right)\circ\left(\omega - \nabla\right)
-= \omega^2 + \Delta ,
+\boxed{\;\left(\omega + \nabla\right)\circ\left(\omega - \nabla\right)
+= \omega^2 + \Delta\;}
 $$
 
 which is the Helmholtz operator. Hence every solution of the second-order equation
@@ -64,7 +64,7 @@ $$
 generates a solution of the first-order equation through
 
 $$
-\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \left(\omega - \nabla\right)\circ\,\tilde{\Psi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\boxed{\;\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \left(\omega - \nabla\right)\circ\,\tilde{\Psi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\;}
 $$
 
 and conversely every biamplitude is of that form for some $\tilde{\Psi}$.
@@ -149,9 +149,9 @@ $$
 the conjugation negates the vector part and complex-conjugates the coefficients, exactly the corpus's ${}^{*}$. Its scalar part is the energy density and its vector part the Poynting analogue. For the spherical pulsar,
 
 $$
-W_{00}^{\,0} = \tfrac12\,\omega^2\left(j_0^2(\omega r) + j_1^2(\omega r)\right),
+\boxed{\;W_{00}^{\,0} = \tfrac12\,\omega^2\left(j_0^2(\omega r) + j_1^2(\omega r)\right),
 \qquad
-\vec P_{00}^{\,0} \equiv 0 .
+\vec P_{00}^{\,0} \equiv 0\;}
 $$
 
 Both were verified numerically, the density against the closed form and the vanishing of $\vec P$ against the computed product. The vanishing is not an accident of this solution. Because ${}^{*}$ negates the vector part, the vector part of $\tilde J_{\mathrm{eg}}\tilde J_{\mathrm{eg}}^{*}$ is $-s\bar{\vec V} + \bar{s}\vec V - [\vec V,\bar{\vec V}]_{\mathrm{vec}}$, which vanishes identically whenever the amplitude's four components are **real**, as they are for every standing monochromatic solution of this kind. A standing wave has no net energy flux, and the model's expression for it says so algebraically. The programme's interpretation is that a harmonic particle does not radiate, and on this point the algebra agrees: $\vec P \equiv 0$ is a theorem about the conjugation, not a hypothesis.
@@ -159,13 +159,13 @@ Both were verified numerically, the density against the closed form and the vani
 The asymptotics follow from the same two closed forms and are the quantitative content of the model at short and long range. As $r\to 0$, with $j_0(0) = 1$ and $j_1(z)\sim z/3$,
 
 $$
-\rho_{00}^{\,0} \to \omega ,
+\boxed{\;\rho_{00}^{\,0} \to \omega ,
 \qquad
 \left\|\vec J_{00}^{\,0}\right\| \to \frac{\omega^2 r}{3},
 \qquad
 W_{00}^{\,0} \to \tfrac12\omega^2 ,
 \qquad
-\vec P_{00}^{\,0} \equiv 0 ,
+\vec P_{00}^{\,0} \equiv 0\;}
 $$
 
 so the charge density at the centre is **equal to the oscillation frequency**, the current density vanishes linearly, and the energy density is half the frequency squared. As $r\to\infty$, $j_0(\omega r) = \sin(\omega r)/(\omega r)$ gives

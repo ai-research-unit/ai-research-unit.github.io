@@ -20,7 +20,7 @@ $$
 T = \frac{\hbar\,\kappa}{2\pi c\,k_B},
 $$
 
-with $\kappa$ the surface gravity of the horizon. This article takes that result as its input, together with the framework interpretation that accompanies it — the horizon-generating flow as the modular flow, the modular Hamiltonian $K=-\log\rho$ as a Hermitian element of $\mathbb{M}_+$, and the Euclidean period as a period along the intrinsic imaginary time of $\mathbb{M}_-$ — and asks what else the horizon's thermodynamics contains. The three things it contains are the **entropy**, the **first law**, and the **Smarr relation**.
+with $\kappa$ the surface gravity of the horizon. This article takes that result as its input, together with the framework interpretation that accompanies it — the horizon-generating flow as the modular flow, the modular Hamiltonian $K=-\log\tilde{Ϛ}$ as a Hermitian element of $\mathbb{M}_+$, and the Euclidean period as a period along the intrinsic imaginary time of $\mathbb{M}_-$ — and asks what else the horizon's thermodynamics contains. The three things it contains are the **entropy**, the **first law**, and the **Smarr relation**.
 
 **Three traps organise the treatment, and one prohibition closes it.**
 
@@ -102,9 +102,9 @@ The four laws of black hole mechanics were formulated by Bardeen, Carter, and Ha
 The **dictionary** that turns the right-hand column into the left is the pair of identifications
 
 $$
-T=\frac{\kappa}{2\pi},
+\boxed{\;T=\frac{\kappa}{2\pi},
 \qquad
-S=\frac{A}{4G},
+S=\frac{A}{4G}\;},
 $$
 
 the second being the Bekenstein–Hawking entropy (in units $c=\hbar=k_B=1$; the full restoration is in the Conventions). With it, the geometric first law becomes the thermodynamic one, $dM=T\,dS+\Omega\,dJ+\Phi\,dϘ$, provided the coefficient in the area term is $1/(8\pi G)$ and the entropy is the area over $4G$. This is the sense in which the four laws "are" thermodynamics: the dictionary is fixed by the temperature, and the first law then determines the entropy's conjugate coefficient.
@@ -134,16 +134,16 @@ $$
 
 Two features of the parent's result are used below and are not re-established here. First, $\kappa$ is the **redshifted** surface gravity — finite at the horizon, the limit of $a(r)\sqrt f$ for the static observer, not the divergent proper acceleration $a(r)$ — so the temperature is the same function of the state regardless of the observer. Second, the parent identified the inverse temperature with the Euclidean period, $\beta=2\pi c/\kappa=8\pi GM/c^3$, which is the length of the compact imaginary-time circle. That identification is the operational meaning of the imaginary time of $\mathbb{M}_-$ and is the reason the thermodynamics below can be read as a statement about the horizon's own geometry rather than about a distant observer's detector.
 
-The framework content inherited here is likewise the parent's: the horizon-generating flow is the modular flow, and its modular Hamiltonian $K=-\log\rho$ is a Hermitian element of the informational sector $\mathbb{M}_+$. The horizon's temperature is fixed by the period of that flow. The entropy developed in the next section is, by contrast, **not** a functional of an $\mathbb{M}_+$ state; the framework supplies no such state for a horizon, and the distinction is kept explicit.
+The framework content inherited here is likewise the parent's: the horizon-generating flow is the modular flow, and its modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element of the informational sector $\mathbb{M}_+$. The horizon's temperature is fixed by the period of that flow. The entropy developed in the next section is, by contrast, **not** a functional of an $\mathbb{M}_+$ state; the framework supplies no such state for a horizon, and the distinction is kept explicit.
 
 ## The Entropy Is the Horizon Area
 
 The entropy of a black hole is the **Bekenstein–Hawking entropy**
 
 $$
-S=\frac{k_B c^3 A}{4G\hbar}=\frac{k_B A}{4\ell_P^2},
+\boxed{\;S=\frac{k_B c^3 A}{4G\hbar}=\frac{k_B A}{4\ell_P^2},
 \qquad
-\ell_P^2=\frac{\hbar G}{c^3},
+\ell_P^2=\frac{\hbar G}{c^3}\;},
 $$
 
 and in Planck units simply $S=A/4$, with $A$ the area of the horizon cross-section. For Schwarzschild, $A=16\pi G^2M^2/c^4$ and $S=4\pi k_BGM^2/(\hbar c)$; for Kerr–Newman,
@@ -190,14 +190,53 @@ The formula $S=A/4$ is **thermodynamic and geometric**. It is obtained from the 
 
 It is important not to conflate this entropy with the framework's own entropy functional. The informational sector $\mathbb{M}_+$ carries the von Neumann functional $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ on its states (the biquaternion form of $-\mathrm{Tr}(\rho\log\rho)$), and that functional is a transcription of the standard quantum-mechanical entropy of a qubit; the series records it as posited and not yet verified. It applies to a density matrix in $\mathbb{M}_+$, and it is a different object from the black-hole entropy. The black-hole entropy is a property of the horizon's geometry; reading $S=A/4$ as the von Neumann entropy of some $\mathbb{M}_+$ state would require a horizon state that the framework does not provide. Whether such a state exists is the central open question of this article, and it is left as a question.
 
+## The Boundary Datum of the Horizon
+
+The horizon is a null surface, and in the polar chart of the boost it is the locus where the chart's scale collapses. This is the geometric reading behind the area law, and it is worth isolating because it says exactly what the area is the measure of.
+
+**The collapse.** A static observer near a non-extremal Killing horizon is, in the near-horizon Rindler chart, related to the horizon's generator by a boost whose rapidity diverges as the horizon is approached. Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\xi)$:
+
+$$
+\tilde U_{\mathrm b}(\psi)=e^{\psi/2}\,\tilde\Pi_+ + e^{-\psi/2}\,\tilde\Pi_- .
+$$
+
+The component along $\tilde\Pi_-$ vanishes and the component along $\tilde\Pi_+$ diverges, so the rotor has no limit. The renormalised rotor does:
+
+$$
+e^{-\psi/2}\,\tilde U_{\mathrm b}(\psi)\longrightarrow\tilde\Pi_+,
+\qquad \psi\to\infty,
+$$
+
+a Hermitian idempotent on the zero-divisor cone. The horizon is therefore the boundary of the polar chart, not a value of the word: no finite Lorentz transformation is null, and the limit is a null element. The frame at the horizon is lightlike, and the transformation that would carry a static frame to it does not exist as a unit.
+
+**The rate and the measure.** The boundary datum has two pieces. The **rate** is the surface gravity: the rapidity grows along the orbit at the proper rate $a$, its redshifted value at the horizon is $\kappa$, and the imaginary rapidity is periodic with period $2\pi$, so the corresponding proper-time period is
+
+$$
+\beta=\frac{2\pi}{\kappa}.
+$$
+
+The **measure** is the area $A$ of the horizon cross-section, the transverse measure of the codimension-two locus on which the time circle shrinks. The first piece is the algebra's limit; the second is the geometry's. The pair $(\beta,A)$ is the boundary datum from which the temperature and the entropy are read,
+
+$$
+T=\frac{1}{\beta}=\frac{\kappa}{2\pi},
+\qquad
+S=\frac{A}{4G},
+$$
+
+and the coefficient $1/4$ is fixed by the Euclidean action, not by the collapse.
+
+**The reading.** The polar word explains why the entropy is an area: the collapse is codimension two, so the locus that carries the boundary datum is a surface, not a volume. It does not explain why the coefficient is $1/4$, and it does not count microstates. The area law is the measure of the collapse; the collapse is the algebra's contribution, and the measure is the geometry's. The area term of the first law, $(\kappa/8\pi G)\,\delta A$, is the variation of this datum: $\kappa$ is the rate, $\delta A$ the variation of the measure, and the product is the heat term $T\,\delta S$.
+
+**The boundary.** The horizon is not an element of $\mathbb{B}$. The algebra contains the boost at every finite rapidity and the null idempotent as a boundary value; it does not contain the horizon's metric, its area, or its Euclidean action. The Cartan amplitude of the horizon flow is the boost factor, not a density matrix, and reading $S=A/4G$ as the von Neumann entropy of a horizon state would require a state the framework does not supply. The entropy here remains geometric, as the preceding section argues in detail.
+
 ## The First Law, Term by Term
 
 The first law of black hole mechanics is
 
 $$
-dM=\frac{\kappa}{8\pi G}\,dA+\Omega\,dJ+\Phi\,dϘ
+\boxed{\;dM=\frac{\kappa}{8\pi G}\,dA+\Omega\,dJ+\Phi\,dϘ
 \qquad\longleftrightarrow\qquad
-dM=T\,dS+\Omega\,dJ+\Phi\,dϘ,
+dM=T\,dS+\Omega\,dJ+\Phi\,dϘ\;},
 $$
 
 in units $c=\hbar=k_B=1$, with the dictionary of the Conventions. In the explicit checks below we set $G=1$ as well — equivalently, $G$ is absorbed into the normalization of the mass and the area — so that the coefficient in the area term is $\kappa/8\pi$. Everything on the right is a function of the state $(M,J,Ϙ)$, and the statement is an identity among one-forms on that three-dimensional space. The coefficients are not free: the $\kappa/(8\pi G)$ multiplies $\delta A$, and $\Omega$ and $\Phi$ are the horizon's angular velocity and electric potential. This section checks all three terms on the general Kerr–Newman horizon.
@@ -321,7 +360,7 @@ $$
 The first law supplies the partial derivatives: $T=\partial M/\partial S$, $\Omega=\partial M/\partial J$, and $\Phi=\partial M/\partial Ϙ$ are precisely its intensive coefficients. Substituting,
 
 $$
-M=2TS+2\Omega J+\Phi Ϙ=\frac{\kappa A}{4\pi G}+2\Omega J+\Phi Ϙ,
+\boxed{\;M=2TS+2\Omega J+\Phi Ϙ=\frac{\kappa A}{4\pi G}+2\Omega J+\Phi Ϙ\;},
 $$
 
 where the second form uses $T=\kappa/2\pi$ and $S=A/(4G)$, so that $2TS=\kappa A/(4\pi G)$. This is the Smarr relation, and it was obtained by scaling.
@@ -366,7 +405,7 @@ $$
 and the mass is weighted-homogeneous in $(S,J,Ϙ,P)$ with weights $(2,2,1,-2)$ — the last being the weight of $P$ under the scaling. Euler's relation then gives the **corrected Smarr formula**
 
 $$
-M=2TS+2\Omega J+\Phi Ϙ-2PV .
+\boxed{\;M=2TS+2\Omega J+\Phi Ϙ-2PV\;}.
 $$
 
 The correction is therefore a term $-2PV$, absent in the asymptotically flat case, and it is not a small rescaling of the flat relation but a genuinely new term proportional to the volume conjugate to $\Lambda$.
@@ -404,13 +443,15 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 
 - The sectors $\mathbb{M}_-$ and $\mathbb{M}_+$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the complex scalars $\mathbb{C}_{\mathbb{B}}$, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and the plain form $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$, read as the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$.
 - The intrinsic imaginary time $ict'$ of $\mathbb{M}_-$, whose compactification period is the inverse temperature, and the KMS condition of the parent.
-- The modular Hamiltonian $K=-\log\rho$ of the horizon flow as a Hermitian element of $\mathbb{M}_+$.
+- The modular Hamiltonian $K=-\log\tilde{Ϛ}$ of the horizon flow as a Hermitian element of $\mathbb{M}_+$.
+- The boost word in the two-term form $\tilde U_{\mathrm b}(\psi)=e^{\psi/2}\tilde\Pi_+ + e^{-\psi/2}\tilde\Pi_-$, whose renormalised limit $\psi\to\infty$ is the null idempotent $\tilde\Pi_+$.
 - The charges $(M,J,Ϙ)$ as material-sector Noether quantities: energy–momentum is an $\mathbb{M}_-$ four-vector, angular momentum the associated bivector, and charge the time component of the conserved current.
 
 **Interpretation.**
 
 - That the horizon-generating Killing flow is the modular flow (the Bisognano–Wichmann/Hartle–Hawking identification, imported), so that the thermodynamic temperature is the modular temperature. The parent already reads the KMS imaginary time as the intrinsic imaginary time of $\mathbb{M}_-$.
 - That the entropy is a **geometric** property of the horizon rather than the von Neumann entropy of an $\mathbb{M}_+$ state. This is an interpretation consistent with the algebra; it is not a derivation, and it is the interpretation that keeps the framework honest about the missing microstate count.
+- That the horizon is the **boundary of the polar chart** of the boost, and that the area is the measure of the collapsing codimension-two locus. This reads the area law as the boundary datum of the collapse; it does not derive the coefficient $1/4$ or the horizon geometry.
 
 **Gaps, left visible.**
 
@@ -455,7 +496,7 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_-$ | Material sector: imaginary time, real space; home of the four-vectors |
-| $\mathbb{M}_+$ | Informational sector: real time, imaginary space; home of $K=-\log\rho$ |
+| $\mathbb{M}_+$ | Informational sector: real time, imaginary space; home of $K=-\log\tilde{Ϛ}$ |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | Complex scalars; real-quaternion subspace |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
@@ -474,17 +515,22 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 | $S=k_B c^3A/(4G\hbar)=k_B A/(4\ell_P^2)$ | Bekenstein–Hawking entropy |
 | $\ell_P^2=\hbar G/c^3$ | Planck area |
 | $\beta=\hbar/(k_BT)=2\pi c/\kappa$ | Inverse temperature, Euclidean period |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\xi)$, $\tilde U_{\mathrm b}(\psi)=e^{\psi/2}\tilde\Pi_+ + e^{-\psi/2}\tilde\Pi_-$ | Idempotents of the boost axis and the boost rotor; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
 | $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+\Phi\,dϘ$ | First law (units $c=\hbar=k_B=1$) |
 | $M=2TS+2\Omega J+\Phi Ϙ$ | Smarr relation |
 | $\Lambda$, $P=-\Lambda/(8\pi G)$, $V$ | Cosmological constant, pressure, thermodynamic volume |
 | $M=2TS+2\Omega J+\Phi Ϙ-2PV$ | Smarr relation with a cosmological constant |
-| $K=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
+| $K=-\log\tilde{Ϛ}$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\xi)$ | Idempotents of the horizon-generating boost; the renormalised rotor tends to $\tilde\Pi_+$ |
+| $(\beta,A)$ | Boundary datum: Euclidean period and horizon area |
 
 ## Further Reading
 
 **Companion articles (this series).**
 
 - [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html), the parent: the surface gravity, the Hawking temperature, the Euclidean period, and the KMS identification of the horizon flow.
+- [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html), for the infinite-rapidity limit and the null idempotent.
+- [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the scale collapse and the two regimes.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the imaginary-time strip, the intrinsic imaginary time of $\mathbb{M}_-$, and the modular Hamiltonian in $\mathbb{M}_+$.
 - [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html), for the modular generator, its spectral form, and the Gibbs structure.
 - [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the wedge/horizon identification of the modular flow with the boost.

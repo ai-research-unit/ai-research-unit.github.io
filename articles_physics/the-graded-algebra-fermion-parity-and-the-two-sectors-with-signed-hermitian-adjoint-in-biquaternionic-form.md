@@ -16,8 +16,6 @@ Three facts organise the Hermitian interpretation. The first is that the dagger 
 
 The ambient graded algebra, the two slots, the dictionary $\vec e_x\mapsto\gamma^2\gamma^3$, $i\mapsto-\Omega$ and the chirality operator $\gamma^5=i\Omega$ are *Biquaternion Other Algebraic Element Representations*; the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors are *Biquaternion Versors and the Orthogonal Group*; the fermionic mode and $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The inverse-conjugation interpretation is cited and never reused; the graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension with Signed Hermitian Adjoint in Biquaternionic Form*; the abstract algebra of the operator is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; the Hermitian dagger is $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, the coefficient conjugation composed with the quaternion conjugation; the norm is $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=\tilde{Q}\tilde{Q}^{\natural}$; $\sigma$ is the coefficient conjugation, fixing the quaternion units and negating $i$; $\mathrm{Cl}_{1,3}$ is the ambient algebra of the Dirac matrices in the mostly-minus convention, $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$; the twist is the grade involution, $\alpha(x)=\varepsilon_x x$ with $\varepsilon_x=(-1)^{\lvert x\rvert}$; and the two operators are $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}$ and $\Theta_x(y)=x\,y\,x^{*}$.
-
 ## The Grading of the Ambient Algebra
 
 **Given.** The Clifford algebra of Minkowski space is graded by parity, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with $\mathrm{Cl}^i\mathrm{Cl}^j\subseteq\mathrm{Cl}^{i+j}$. The even part is $\mathbb{B}$, and the odd part is the slot containing the generators; the dictionary sends the algebra to the even slot, so every element of the algebra in which the series computes is even.
@@ -61,7 +59,7 @@ the informational and the material sector, and the algebra is their direct sum, 
 **Proposition (the dagger and the inverse).** For every invertible $x\in\mathbb{B}$,
 
 $$
-x^{*}=\sigma(\langle x\rangle_{\natural})\,\sigma(x)^{-1}.
+\boxed{\;x^{*}=\sigma(\langle x\rangle_{\natural})\,\sigma(x)^{-1}\;}.
 $$
 
 *Proof.* The norm identity $\bar x=\langle x\rangle_{\natural}\,x^{-1}$ of the algebra gives $x^{*}=\sigma(\bar x)=\sigma(\langle x\rangle_{\natural})\,\sigma(x)^{-1}$, the coefficient conjugation being an automorphism.
@@ -71,7 +69,7 @@ $$
 **Remark (the norm factor of the sandwich).** The Hermitian sandwich multiplies the norm by the modulus squared of the parameter,
 
 $$
-\langle x\,y\,x^{*}\rangle_{\natural}=\lvert \langle x\rangle_{\natural}\rvert^{2}\,\langle y\rangle_{\natural},
+\boxed{\;\langle x\,y\,x^{*}\rangle_{\natural}=\lvert \langle x\rangle_{\natural}\rvert^{2}\,\langle y\rangle_{\natural}\;}
 $$
 
 so the operator is a similarity of the spinor form of ratio $\lvert \langle x\rangle_{\natural}\rvert^{2}$ and an isometry exactly on the unit slice $\lvert\langle x\rangle_{\natural}\rvert=1$. The signed **inner** conjugation of the companion article, $\alpha(x)\,y\,x^{-1}$, preserves the norm exactly, its ratio being $1$; the two interpretations therefore differ on the norm by the scalar $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and they differ only by a phase of the parameter on the unit slice. That scalar is the whole difference between the two interpretations of the parity below.
@@ -111,7 +109,7 @@ The signed and the unsigned Hermitian sandwich are the same operator on the boso
 **Proposition (the composition).** For all $x,z$,
 
 $$
-\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\,\Theta_{xz},
+\boxed{\;\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\,\Theta_{xz}\;}
 $$
 
 so for homogeneous parameters the composite is the **ordinary** Hermitian sandwich exactly when the parities agree, and in particular it is ordinary whenever both factors are odd.
@@ -161,7 +159,7 @@ The odd slot is where the parity sign is visible, and the simplest odd elements 
 **Proposition (the vector identity).** Let $a,v$ be vectors of the Minkowski space of the envelope, with $q$ the quadratic form, $B$ its polar form, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
 
 $$
-\Theta^{\alpha}_a(v)=-q(a)\,\rho_a(v).
+\boxed{\;\Theta^{\alpha}_a(v)=-q(a)\,\rho_a(v)\;}.
 $$
 
 *Proof.* The derivation is the one of the maths article: $\Theta^{\alpha}_a(v)=\alpha(a)\,v\,a^{*}=(-a)\,v\,(-a)=a\,v\,a=2B(a,v)\,a-a^{2}v=2B(a,v)a-q(a)v=-q(a)\rho_a(v)$, using $\alpha(a)=-a$ on the odd slot, $a^{*}=-a$ on the vectors, and $a^{2}=q(a)$.

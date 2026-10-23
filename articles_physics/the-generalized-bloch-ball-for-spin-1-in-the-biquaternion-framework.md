@@ -131,7 +131,7 @@ the **unit-ball condition**, is necessary for every state. It is not sufficient:
 **Proposition.** *A Hermitian unit-trace matrix $\rho$ is a state if and only if*
 
 $$
-|\vec b|\le1\qquad\text{and}\qquad \det\rho\ge0 .
+\boxed{\;|\vec b|\le1\qquad\text{and}\qquad \det\rho\ge0\;}.
 $$
 
 *Proof.* Positivity is equivalent to the non-negativity of all three eigenvalues. If $|\vec b|\le1$ then $\mathrm{Tr}(\rho^2)\le1$. Suppose an eigenvalue $\lambda_1<0$; then $\det\rho\ge0$ forces $\lambda_2\lambda_3\le0$, and since $\lambda_1\le\lambda_2\le\lambda_3$ and $\lambda_1<0$ the only possibility is $\lambda_2\le0$, whence $\lambda_3=1-\lambda_1-\lambda_2\ge1$ and $\mathrm{Tr}(\rho^2)\ge\lambda_3^2>1$, contradicting $|\vec b|\le1$. Thus $\det\rho\ge0$ together with $|\vec b|\le1$ forces $\lambda_1\ge0$. The converse is immediate.
@@ -200,7 +200,7 @@ The **generalized Bloch ball** of the spin-$1$ state space is this inscribed bal
 The pure states are the unit-trace states of rank one. For a positive unit-trace matrix the purity invariant is $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$, so $|\vec b|=1$ is equivalent to $\mathrm{Tr}(\rho^2)=1$, which for a positive unit-trace matrix is exactly the rank-one condition. Hence, among states,
 
 $$
-\rho^2=\rho\iff|\vec b|=1\iff\det\rho=0\ \text{with}\ |\vec b|=1 .
+\boxed{\;\rho^2=\rho\iff|\vec b|=1\iff\det\rho=0\ \text{with}\ |\vec b|=1\;}.
 $$
 
 The set of pure states is therefore the intersection of the unit sphere $S^7$ with the cubic $\det\rho=0$, and it is a four-real-dimensional manifold: the complex projective plane $\mathbb{CP}^2$, of real dimension $4$. Not every point of the unit sphere is a state — those with $\det\rho<0$ satisfy the necessary condition but not the cubic one — and a random point of the sphere is almost never a state, since a four-dimensional manifold has measure zero in a seven-sphere. The dimension count $4<7$ is the reason.
@@ -224,7 +224,7 @@ $$
 and they are obtained from the highest-weight state by the rotation that carries $\vec u_z$ to $\vec u$. In the three-level system they have a closed form in the algebra. With $M=\vec u\cdot\vec F$ and $P_0=|1,1\rangle\langle1,1|$,
 
 $$
-\rho_{\mathrm{coh}}(\vec u)=\tfrac{1}{2}\left(M^2+M\right),
+\boxed{\;\rho_{\mathrm{coh}}(\vec u)=\tfrac{1}{2}\left(M^2+M\right)\;},
 $$
 
 which is verified to be the projector onto the rotated highest-weight state for every direction; the three eigenvalues of $M$ along the $\vec u$ axis are $+1,0,-1$, and the eigenvalues of $\rho_{\mathrm{coh}}$ are $\tfrac12(m^2+m)$, namely $1,0,0$, so that the projector selects $m=+1$.

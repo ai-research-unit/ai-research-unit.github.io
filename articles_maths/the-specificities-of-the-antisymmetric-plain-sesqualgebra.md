@@ -56,9 +56,7 @@ $$
 
 **Theorem (the identity of the block).** The product of the block realises the splitting on the right,
 
-$$
-R^{\diamond}_{e_t}\tilde Q_1=\tilde Q_1\diamond e_t=\operatorname{Vect}\bigl(\tilde Q_1e_t^{*}\bigr)=\operatorname{Vect}\tilde Q_1 ,
-$$
+$$ \boxed{\; R^{\diamond}_{e_t}\tilde Q_1=\tilde Q_1\diamond e_t=\operatorname{Vect}\bigl(\tilde Q_1e_t^{*}\bigr)=\operatorname{Vect}\tilde Q_1 \;}, $$
 
 and the left multiplication by $e_t$ is the conjugate of the projection,
 
@@ -78,9 +76,7 @@ The identity $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ says that one particul
 
 **Theorem (the projectors of the right multiplications).** For the block the right multiplication $R^{\diamond}_{\tilde Q_1}$ is an idempotent operator,
 
-$$
-R^{\diamond}_{\tilde Q_1}\circ R^{\diamond}_{\tilde Q_1}=R^{\diamond}_{\tilde Q_1},
-$$
+$$ \boxed{\; R^{\diamond}_{\tilde Q_1}\circ R^{\diamond}_{\tilde Q_1}=R^{\diamond}_{\tilde Q_1} \;}, $$
 
 if and only if $\tilde Q_1\in\{0,e_t\}$. The projector $R^{\diamond}_{e_t}$ is the projection onto the vector subspace and $R^{\diamond}_{0}$ is the zero operator.
 
@@ -133,9 +129,7 @@ The criteria of the twin articles are not the criterion of the block, and the bl
 
 **Remark (the companion law).** The block carries a second law, and it is not unique. The product is **conjugate-alternating**,
 
-$$
-\tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2},
-$$
+$$ \boxed{\; \tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2} \;}, $$
 
 and of the twelve structures exactly two are conjugate-alternating, the block and the quaternionic sesquilinear antisymmetrisation $\mathrm{AQS}=\vec Q_1\times\overline{\vec Q_2}$. The law isolates the pair and not the block, and the criterion $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ separates the pair: $\mathrm{AQS}$ has $R^{\mathrm{AQS}}_{e_t}=0$ while the block has $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$. **The distinction between the two conjugate-alternating structures is exactly the nonvanishing of the square**: the diagonal of the block, $\tilde Q_1\diamond\tilde Q_1=\operatorname{Vect}(\tilde Q_1\tilde Q_1^{*})$, is the Hermitian square and is generally nonzero, while the diagonal of $\mathrm{AQS}$, $\vec Q_1\times\overline{\vec Q_1}$, vanishes on the elements whose two real parts are linearly dependent. This is the reading of the root of $0$ in *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*.
 

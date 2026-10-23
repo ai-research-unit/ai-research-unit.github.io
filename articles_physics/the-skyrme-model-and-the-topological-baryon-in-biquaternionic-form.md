@@ -36,8 +36,6 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context of the Wess–Zumino–Witten term.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the flavour and matter content.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_a e_b = -\delta_{ab}e_t + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U\in\mathfrak{su}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_a e_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$, the $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $(x,y,z)\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\vec\pi = \pi^a e_a\in\mathfrak{su}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\vec\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.
-
 ## The Skyrme Field and the Skyrme Term
 
 The Skyrme model is the pion effective theory with one extra term, and both terms are built from the same flat current.
@@ -89,7 +87,6 @@ $$
 
 The two invariants $\mathcal{L}_2$ and $\mathcal{L}_4$ are the first two terms of the derivative expansion of the pion effective theory; the first fixes the target geometry and $f_\pi$, and the second is weighted by $1/e^2$. The framework's contribution is that both are biquaternion norms of the algebra-valued current, and the reason the Skyrme term is a commutator is that $\mathrm{SU}(2)$ is the algebra the current lies in.
 
-
 **Why the fourth-order term is needed.** A term with four derivatives has dimension of length to the minus four in four spacetime dimensions and is therefore non-renormalizable; it is admitted in the effective theory because it is the leading term that can stabilise a soliton. The next section shows that the two-derivative term alone cannot.
 
 ## Derrick's Theorem and the Need for a Fourth-Order Term
@@ -133,7 +130,6 @@ $$
 
 is a minimum. With $E_4 = 0$ the function $E(\lambda) = E_2/\lambda$ has no minimum: it decreases without bound as $\lambda\to\infty$, so the configuration shrinks, and a purely two-derivative static soliton is unstable to collapse. The four-derivative term supplies the increasing branch and bounds the energy from below. This is Derrick's theorem (Derrick 1964) applied to the Skyrme model, and it is standard.
 
-
 **The energy functional.** In the static gauge the two terms give the Skyrme energy
 
 $$
@@ -149,9 +145,9 @@ Baryon number is the degree of the skyrmion field, and it is computed from the f
 **The topological current.** Define
 
 $$
-B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
+\boxed{\;B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
-j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U .
+j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U\;}
 $$
 
 The normalisation $\frac{1}{24\pi^2}$ is chosen so that the charge is an integer, and the trace is the matrix trace on $\mathrm{SU}(2)$. The current is **conserved identically**,
@@ -189,13 +185,12 @@ $$
 and the charge reduces to the radial integral
 
 $$
-B = 4\pi\int_0^\infty r^2 B^0(r)\,dr
+\boxed{\;B = 4\pi\int_0^\infty r^2 B^0(r)\,dr
 = -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,\frac{dF}{dr}\,dr
-= \frac{1}{\pi}\Big[F - \frac12\sin 2F\Big]_{F(\infty)}^{F(0)} .
+= \frac{1}{\pi}\Big[F - \frac12\sin 2F\Big]_{F(\infty)}^{F(0)}\;}
 $$
 
 For a profile that starts at $F(0) = \pi$ and falls to $F(\infty) = 0$, the bracket is $\pi$ and $B = 1$; for $F(0) = k\pi$ it is $k\pi$ and $B = k$. The profile function is fixed by minimising the energy functional at fixed $B$; its equation of motion is the nonlinear Skyrme equation, and the solution interpolates monotonically between the two endpoints.
-
 
 ## The Hedgehog, the Soliton and the Nucleon
 
@@ -250,7 +245,7 @@ because the topological charge is conserved for the same reason baryon number is
 The Skyrme model is the pion effective theory with the fourth-order Skyrme term, whose solitons are identified with baryons through a topological winding number. In the biquaternion framework the field is the unit real quaternion $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, the target is the group manifold $\mathbb{S}^3$ with $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, the flat current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$, the Lagrangian is
 
 $$
-\mathcal{L} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_\mu j_\mu\right) + \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_\mu,j_\nu][j_\mu,j_\nu]\right),
+\boxed{\;\mathcal{L} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_\mu j_\mu\right) + \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_\mu,j_\nu][j_\mu,j_\nu]\right)\;},
 $$
 
 and the topological current is

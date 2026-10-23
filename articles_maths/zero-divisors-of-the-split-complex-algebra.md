@@ -58,7 +58,7 @@ So $QB=0$ exactly when $Q_{+}B_{+}=0$ and $Q_{-}B_{-}=0$. If $Q$ is a zero divis
 **Corollary.** The zero-divisor set is exactly the nonzero part of the null cone,
 
 $$
-\mathcal{Z}=\{Q\neq0:q^{2}=q'^{2}\}=\{Q:Q_{+}=0\text{ or }Q_{-}=0,\ Q\neq0\}.
+\boxed{\;\mathcal{Z}=\{Q\neq0:q^{2}=q'^{2}\}=\{Q:Q_{+}=0\text{ or }Q_{-}=0,\ Q\neq0\}\;}.
 $$
 
 **Remark (no norm of the plain product is used).** The criterion is expressed by the idempotent coordinates and by the norm $\langle Q\rangle_{*}=Q\bar Q$; it is **not** expressed by the algebraic norm of the plain product, $\langle Q\rangle=Q^{2}$, whose vanishing set is the origin (*Norm and Invertibility in the Split-Complex Algebra*). The two algebraic norms are different objects, and the zero divisors are the vanishing set of the second.
@@ -129,7 +129,7 @@ where $Q=(q,q')$ in the basis $1,j$.
 **Proposition (the primitive zero divisors).** Every zero divisor is a nonzero real multiple of exactly one of the two idempotents. The idempotents $\Pi_{+}$ and $\Pi_{-}$ are the **primitive** zero divisors, and
 
 $$
-\mathcal{Z}=\mathbb{R}^{\times}\Pi_{+}\cup\mathbb{R}^{\times}\Pi_{-}.
+\boxed{\;\mathcal{Z}=\mathbb{R}^{\times}\Pi_{+}\cup\mathbb{R}^{\times}\Pi_{-}\;}.
 $$
 
 **Proof.** A point of $\mathbb{R}^{\times}\Pi_{+}$ is $t\Pi_{+}$ with $t\neq0$, and a point of $\mathbb{R}^{\times}\Pi_{-}$ is $s\Pi_{-}$ with $s\neq0$; the two lines meet only at $0$, so the multiple and the line are unique.
@@ -137,8 +137,8 @@ $$
 **Proposition (the annihilators).** The annihilator of a nonzero multiple of $\Pi_{+}$ is the opposite line, and symmetrically:
 
 $$
-\operatorname{ann}(\lambda\Pi_{+})=\mathbb{R}\Pi_{-},\qquad
-\operatorname{ann}(\lambda\Pi_{-})=\mathbb{R}\Pi_{+},\qquad \lambda\neq0.
+\boxed{\;\operatorname{ann}(\lambda\Pi_{+})=\mathbb{R}\Pi_{-},\qquad
+\operatorname{ann}(\lambda\Pi_{-})=\mathbb{R}\Pi_{+},\qquad \lambda\neq0\;}.
 $$
 
 **Proof.** Write $Q=\lambda\Pi_{+}$ and $B=B_{+}\Pi_{+}+B_{-}\Pi_{-}$. Then $QB=\lambda B_{+}\Pi_{+}$, which vanishes exactly when $B_{+}=0$, that is $B\in\mathbb{R}\Pi_{-}$. The other case is symmetric.

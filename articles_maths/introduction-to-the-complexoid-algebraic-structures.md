@@ -7,8 +7,6 @@ The complex numbers are a field, and that field is the subject of *The Complex N
 
 The guiding distinction is the one the whole synthetic part of the corpus draws: a *number system* is one object and its *algebraic structures* are the several algebras the same carrier admits. For $\mathbb{C}$ the carrier is the plane $\mathbb{C}_{\mathbb{R}}$ of real dimension two, and the structures are obtained from the single datum of the field together with its conjugation. There is no third product and no hidden operation: the count below is exhaustive.
 
-**Conventions.** $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$ are elements of $\mathbb{C}$, with $q_1,q'_1,q_2,q'_2\in\mathbb{R}$; $\bar Q_1 = q_1 - iq'_1$ is the conjugate; $i^2 = -1$; $\mathrm{Sc}$, $\mathrm{Re}$ and $\mathrm{Im}$ are read in $\mathbb{C}$. The algebra $\mathbb{C}$ read over $\mathbb{R}$ is written $\mathbb{C}_{\mathbb{R}}$, with real basis $1, i$. The two products are written by juxtaposition: $Q_1Q_2$ for the field product and $Q_1\bar Q_2$ for the sesquilinear one, following *Conventions in Mathematics*.
-
 ## The Complexoid
 
 **Definition.** The **complexoid** is the pair $(\mathbb{C}, \bar{\cdot})$ read as an algebra over $\mathbb{R}$: the real vector space $\mathbb{C}_{\mathbb{R}}$ together with the involution $\bar{\cdot}$. Every structure of this category is built from that pair alone.
@@ -57,9 +55,7 @@ named the **general plain bilinear form** and the **Hermitian form**; their **al
 
 **Theorem.** The complex algebra carries exactly one nontrivial involution, the conjugation, and it splits the algebra as the direct sum of its fixed and anti-fixed subspaces,
 
-$$
-\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}, \qquad \mathbb{R}_{\mathbb{C}} = \mathbb{R}1, \qquad i\mathbb{R}_{\mathbb{C}} = \mathbb{R} i ,
-$$
+$$\boxed{\;\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}, \qquad \mathbb{R}_{\mathbb{C}} = \mathbb{R}1, \qquad i\mathbb{R}_{\mathbb{C}} = \mathbb{R} i\;},$$
 
 of real dimension one each. The real subspace is closed under multiplication and is a field isomorphic to $\mathbb{R}$; the imaginary subspace is not closed, $(iq'_1)(iq'_2) = -q'_1q'_2\in\mathbb{R}1$. The commutator bracket vanishes identically and there is no Lie-algebra slot, which is the commutativity of the field.
 

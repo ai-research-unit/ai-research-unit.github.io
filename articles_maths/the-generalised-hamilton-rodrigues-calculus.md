@@ -57,9 +57,7 @@ since $\partial/\partial q_\mu\,\bar f = \overline{\partial/\partial q_\mu f}$ a
 
 **Theorem.** With $D = \sum_\mu e_\mu\,\partial/\partial q_\mu$ the Fueter operator and $\bar D = \sum_\mu e_\mu^{\natural}\,\partial/\partial q_\mu$ its conjugate,
 
-$$
-\frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14 Df, \qquad \frac{\partial f}{\partial\tilde q} = \frac14\bar Df.
-$$
+$$ \boxed{\; \frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14 Df, \qquad \frac{\partial f}{\partial\tilde q} = \frac14\bar Df \;} .$$
 
 Consequently $f$ is left-regular if and only if $\partial f/\partial\bar{\tilde{q}} = 0$, and $f$ is right-regular if and only if the left derivative defined below vanishes, $\frac14\sum_\mu\partial/\partial q_\mu f\,e_\mu = 0$.
 
@@ -158,9 +156,7 @@ the derivative of $f$ being taken in the variable $\tilde q_\star = \iota_{\tild
 
 **Theorem.** Let $f,p$ be differentiable with $f(\tilde q)\neq0$. Then
 
-$$
-\frac{\partial(fp)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac{\partial f}{\partial\bar{\tilde{q}}}(\tilde q)\,p(\tilde q)+f(\tilde q)\,\frac{\partial p_\star}{\partial\tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{f(\tilde q)^{-1}}\tilde q},
-$$
+$$ \boxed{\; \frac{\partial(fp)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac{\partial f}{\partial\bar{\tilde{q}}}(\tilde q)\,p(\tilde q)+f(\tilde q)\,\frac{\partial p_\star}{\partial\tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{f(\tilde q)^{-1}}\tilde q} \;} ,$$
 
 where $p_\star(\tilde q_\star) = p(\tilde q)$.
 
@@ -180,9 +176,7 @@ the first term being the product of the derivative of $f$ with $p$. In the secon
 
 **Theorem.** Let $p$ be differentiable and let $g$ be differentiable on a neighbourhood of $p(\Omega)$, with $p_\nu$ the $e_\nu$-component of $p$. Then
 
-$$
-\frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac14\sum_{\mu,\nu\in\{t,x,y,z\}}e_\mu\,(\partial/\partial q_\nu g)\bigl(p(\tilde q)\bigr)\,\partial/\partial q_\mu p_\nu(\tilde q).
-$$
+$$ \boxed{\; \frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac14\sum_{\mu,\nu\in\{t,x,y,z\}}e_\mu\,(\partial/\partial q_\nu g)\bigl(p(\tilde q)\bigr)\,\partial/\partial q_\mu p_\nu(\tilde q) \;} .$$
 
 *Proof.* The chain rule of *Differential Calculus on Normed Spaces* gives $\partial/\partial q_\mu\,(g\circ p)(\tilde q) = \sum_\nu(\partial/\partial q_\nu g)(p(\tilde q))\,\partial/\partial q_\mu p_\nu(\tilde q)$, the derivative of $g$ at $p(\tilde q)$ being applied to the vector $\partial/\partial q_\mu p$, whose coordinates in the basis are $\partial/\partial q_\mu p_\nu$. Multiplying by $e_\mu$ and summing over $\mu$ with the factor $\frac14$ is the definition.
 

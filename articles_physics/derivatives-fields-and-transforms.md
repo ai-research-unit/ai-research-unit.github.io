@@ -89,7 +89,7 @@ At the two equal arguments the four forms give two operators:
 The d'Alembertian is the quaternionic bilinear and the Hermitian norm:
 
 $$
-\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q.
+\boxed{\;\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q\;}.
 $$
 
 The other operator is the plain bilinear and the Krein norm. On the material sector the two read $\Delta-c^{-2}\partial^2/\partial {t'}^2$ and $-c^{-2}\partial^2/\partial {t'}^2-\Delta$. The corpus keeps one d'Alembertian and one sign.
@@ -105,7 +105,7 @@ $$
 The matrix is block diagonal in a basis adapted to the two minimal left ideals; write $A_+(\tilde\nabla)$ for the block on the first. The two blocks have the same determinant, and each carries one factor:
 
 $$
-\det A_+(\tilde\nabla)=\Box.
+\boxed{\;\det A_+(\tilde\nabla)=\Box\;}.
 $$
 
 The second-order wave operator is therefore the determinant of a first-order operator. The partial derivatives commute, so the substitution of the derivative for the coefficient is legitimate; the determinant formula and the block decomposition are the mathematics article's, and the computation read on the operator is a matrix computation, not a new theorem.
@@ -135,8 +135,8 @@ The roots of $-1$ fall into three families: the central imaginary $\rho=\pm i$; 
 For a function $f:\mathbb{R}\to\mathbb{B}$, the **continuous transform** and its inverse are
 
 $$
-F(\omega)=\int_{-\infty}^{\infty}W(t',\omega)f(t')\,dt',\qquad
-f(t')=\int_{-\infty}^{\infty}W(t',\omega)^{-1}F(\omega)\,d\omega,
+\boxed{\;F(\omega)=\int_{-\infty}^{\infty}W(t',\omega)f(t')\,dt',\qquad
+f(t')=\int_{-\infty}^{\infty}W(t',\omega)^{-1}F(\omega)\,d\omega\;},
 $$
 
 under the standard convergence hypotheses. The kernel may stand on the left or on the right; the placement is part of the convention. The kernel is invertible for every root. The Plancherel identity holds for square-integrable functions when the root is unitary, $\rho^{*}=-\rho$ — the central imaginary and the unit real roots — and it is that unitarity which the condition encodes,

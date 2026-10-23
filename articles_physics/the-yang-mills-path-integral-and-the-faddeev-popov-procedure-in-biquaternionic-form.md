@@ -74,7 +74,7 @@ with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge trans
 
 Let $G^a[\mathcal{A}]=0$ be a gauge-fixing condition, one equation for each generator, and let $\mathcal{A}^{\tilde U}$ denote the gauge transform of $\mathcal{A}$ by $\tilde U$. The Faddeev–Popov identity is
 $$
-1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^{\tilde U}]\right),
+\boxed{\;1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^{\tilde U}]\right)\;},
 $$
 which defines the determinant $\Delta[\mathcal{A}]$: it is the inverse of the volume, in the space of gauge transformations, of the set that satisfies the condition, and it therefore compensates the infinite factor. The determinant is gauge invariant,
 $$
@@ -137,7 +137,7 @@ $$
 =\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(iS_{\mathrm{gh}}\right),
 $$
 $$
-S_{\mathrm{gh}}=-\int d^4x\;\bar c_a\,\partial/\partial Q_\mu(D^\mu c)^a ,
+\boxed{\;S_{\mathrm{gh}}=-\int d^4x\;\bar c_a\,\partial/\partial Q_\mu(D^\mu c)^a\;},
 \qquad
 (D^\mu c)^a=\partial^\mu c^a+i\kappa f^{abc}\mathcal{A}^{b\mu}c^c .
 $$

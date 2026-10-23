@@ -12,10 +12,6 @@ the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new s
 
 The construction is short and the consequences long. The multiplication $\tilde Q_1 \tilde Q_2$ is $\mathbb{C}$-bilinear, associative and unital, so the complex vector space $\mathbb{B}$ becomes an associative unital $\mathbb{C}$-algebra; a bilinear map is determined by its values on a basis, so the sixteen products of the basis elements carry the whole multiplication, and the table is the quaternion table with the central imaginary admitted only as a coefficient. Once the algebra is in place its scalar structure, its centre, its generators, its presentation by relations, its conjugations and its matrix model are read off in turn. The algebra is central and simple of complex dimension four, hence isomorphic to the matrix algebra $M_2(\mathbb{C})$, and it is not a division algebra: the element $e_t + i\vec e_x$ is a zero divisor.
 
-**Boundaries.** The multiplication is the **general plain bilinear product**; it is not developed here. The four general products the same space carries are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the four forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and the four algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. The elements, the basis and the conjugation formulas are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; the conjugations as a group, its Cayley table and the place of the anti-Hermitian conjugation are *The Group of Involutions*. The invertibility criterion and the group of units are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the Biquaternion Algebra*; the simplicity and the two-sided ideals read here as cited are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the modules are *Modules over the Biquaternion Algebra*; the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the real reading is *The Realification and the Effect of the Change of Scalars*. The general theory is *Algebras: A General Introduction*, *Associative Algebras*, *Unital Algebras*, *Tensor Products of Algebras*, *Quotients of the Tensor Algebra* and *Opposite Algebras and Anti-Isomorphisms*.
-
-**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_t, \vec e_x, \vec e_y, \vec e_z$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_t e_t + \vec Q$ with $\vec Q = \sum_{k=1}^{3} Q_k \vec e_k$ the **vector part**, and a coefficient splits as $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$. The sign vector of the natural conjugation is $\varepsilon = (1, -1, -1, -1)$, and $(\vec Q_1, \vec Q_2) = \sum_{k=1}^{3} Q_{1k} Q_{2k}$ is the complex bilinear dot product of the vector parts.
-
 ## The Construction of the Algebra
 
 ### The Tensor Product
@@ -81,11 +77,13 @@ $$
 the general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t, \dots, \vec e_z$: **the rule is a map into $\mathbb{B}$ and is well defined**. On the four coordinates it reads
 
 $$
+\boxed{\;
 \tilde Q_1 \tilde Q_2 = (Q_{1,0} Q_{2t} - Q_{1,1} Q_{2x} - Q_{1,2} Q_{2y} - Q_{1,3} Q_{2z})
 + (Q_{1,0} Q_{2x} + Q_{1,1} Q_{2t} + Q_{1,2} Q_{2z} - Q_{1,3} Q_{2y})\, \vec e_x
 + (Q_{1,0} Q_{2y} - Q_{1,1} Q_{2z} + Q_{1,2} Q_{2t} + Q_{1,3} Q_{2x})\, \vec e_y
-+ (Q_{1,0} Q_{2z} + Q_{1,1} Q_{2y} - Q_{1,2} Q_{2x} + Q_{1,3} Q_{2t})\, \vec e_z .
-$$
++ (Q_{1,0} Q_{2z} + Q_{1,1} Q_{2y} - Q_{1,2} Q_{2x} + Q_{1,3} Q_{2t})\, \vec e_z
+\;}
+$$.
 
 ### The Scalar–Vector Form
 
@@ -321,8 +319,10 @@ The algebra is central simple of complex dimension four. Since the base field $\
 **Theorem.** As a $\mathbb{C}$-algebra, $\mathbb{B}$ is isomorphic to the algebra of $2 \times 2$ complex matrices,
 
 $$
-\mathbb{B} \;\cong\; M_2(\mathbb{C}) ,
-$$
+\boxed{\;
+\mathbb{B} \;\cong\; M_2(\mathbb{C})
+\;}
+$$,
 
 under the assignment
 
@@ -349,9 +349,11 @@ $$
 The scalar $\sum_\mu Q_\mu^2$ is the **reduced norm** $\langle\tilde Q\rangle_{\natural}$, and it is the determinant in the matrix model,
 
 $$
+\boxed{\;
 \langle\tilde Q\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = \det\bigl(\rho(\tilde Q)\bigr) , \qquad
-\rho(\tilde Q) = \begin{pmatrix} Q_t + iQ_3 & Q_x + iQ_2 \\ -Q_x + iQ_2 & Q_t - iQ_3 \end{pmatrix} .
-$$
+\rho(\tilde Q) = \begin{pmatrix} Q_t + iQ_3 & Q_x + iQ_2 \\ -Q_x + iQ_2 & Q_t - iQ_3 \end{pmatrix}
+\;}
+$$.
 
 **Theorem.** The reduced norm is multiplicative, $\langle\tilde Q_1 \tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and an element $\tilde Q$ is invertible if and only if $\langle\tilde Q\rangle_{\natural} \neq 0$; then $\tilde Q^{-1} = \tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. A nonzero element is a zero divisor exactly when $\langle\tilde Q\rangle_{\natural} = 0$.
 

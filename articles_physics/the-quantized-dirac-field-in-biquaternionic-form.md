@@ -13,8 +13,6 @@ This article takes up that question. It does not repeat the quantization, which 
 
 The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and scalar imaginary $i$, $i^2=-1$, central. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, $\mathbb{M}_-=i\,\mathbb{M}_+$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed set of complex conjugation. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The mass term is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the anti-Hermitian conjugate $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ is the algebra's real structure and **not** the mass. On the spinor module the equation is $(i\gamma^\mu\partial_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict'$ gradient. We work in natural units $\hbar=c=1$ except in the mass-shell relation and the charge. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form.
-
 ## The Operator-Valued Field
 
 The classical field is a map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators. Two transcriptions are available, and the parents use the second:
@@ -113,9 +111,9 @@ $$
 Every term of the field expansion carries exactly one fermionic operator — $a^{\mathrm{fop}}$ or $b^{\mathrm{fop}\dagger}$ — so the field *anticommutes* with $(-1)^F$, and it is the odd generator of the operator algebra:
 
 $$
-(-1)^F\,\psi^{\mathrm{fop}}(x)\,(-1)^F=-\psi^{\mathrm{fop}}(x),
+\boxed{\;(-1)^F\,\psi^{\mathrm{fop}}(x)\,(-1)^F=-\psi^{\mathrm{fop}}(x),
 \qquad
-(-1)^F\,\bar{\psi^{\mathrm{fop}}}(x)\,(-1)^F=-\bar{\psi^{\mathrm{fop}}}(x).
+(-1)^F\,\bar{\psi^{\mathrm{fop}}}(x)\,(-1)^F=-\bar{\psi^{\mathrm{fop}}}(x)\;}.
 $$
 
 This was checked on the two-mode truncation of the algebra in the parent article's grading discussion, and it extends to the field term by term.
@@ -131,13 +129,13 @@ The parity has three consequences that organize the rest of the article.
 The single-mode truncation of this structure lives *inside* $\mathbb{B}$. The spin–statistics companion computes the truncated ladder
 
 $$
-\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)=\frac{\tilde S_+}{\hbar},
+\boxed{\;\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)=\frac{\tilde S_+}{\hbar},
 \qquad
 \vec\Upsilon_x^2=0,
 \qquad
 \{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,
 \qquad
-(-1)^F=i\vec e_z,
+(-1)^F=i\vec e_z\;},
 $$
 
 so that for one mode the mode algebra, the spin ladder, and the parity element are all elements of $\mathbb{B}$. For the field they are not: the mode algebra is infinite-dimensional and the grading is external. The two statements are compatible, and the parent records the gap between them.
@@ -194,7 +192,7 @@ was verified exactly, with spectra $\{-1,0,0,1\}$ for the left side and $\{0,1,1
 Because $i$ is central and the $\vec e_k$ are anti-Hermitian, the four-momentum assembles into an operator-valued element of the material sector,
 
 $$
-\tilde P=iH\,e_t+P^{\mathrm{fop}}_k\,\vec e_k\in\mathcal{A}\otimes\mathbb{M}_- ,
+\boxed{\;\tilde P=iH\,e_t+P^{\mathrm{fop}}_k\,\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-\;},
 $$
 
 whose square is the operator mass shell $\tilde P\tilde P^{\natural}=-P^{\mathrm{fop}\mu}P^{\mathrm{fop}}_\mu e_t$, the operator counterpart of the classical condition $\tilde P\tilde P^{\natural}=-m^2$. The charge is different in kind: $Ϙ^{\mathrm{fop}}$ is a Hermitian scalar, hence central,
@@ -255,7 +253,7 @@ $$
 a multiple of the identity. Substituting the expansion gives
 
 $$
-\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\not\partial/\partial Q_x+m)\,\Delta_{\mathrm{A}}(x-y),
+\boxed{\;\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\not\partial/\partial Q_x+m)\,\Delta_{\mathrm{A}}(x-y)\;},
 $$
 
 where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.

@@ -78,7 +78,9 @@ Hence $\tilde\Pi^2 = \tilde\Pi$ is equivalent to the pair of equations $\tilde\p
 The quaternion algebra is a division algebra, so its only idempotents are $0$ and $1$: if $\tilde\pi = a + \vec v$ with $a \in \mathbb{R}$ and $\vec v$ pure, then $\tilde\pi^2 = \tilde\pi$ gives $2a\vec v = \vec v$ and $a^2 - |\vec v|^2 = a$; if $\vec v = 0$ then $a^2 = a$, so $a \in \{0, 1\}$; if $\vec v \neq 0$ then $a = 1/2$ and then $|\vec v|^2 = -1/4$, which is impossible. Hence $\tilde\pi_{1,2} \in \{0, 1\}$, and the four combinations give
 
 $$
-\tilde\Pi = 0, \qquad \tilde\Pi = \tilde\Pi_1, \qquad \tilde\Pi = \tilde\Pi_2, \qquad \tilde\Pi = \tilde\Pi_1 + \tilde\Pi_2 = 1.
+\boxed{\;
+\tilde\Pi = 0, \qquad \tilde\Pi = \tilde\Pi_1, \qquad \tilde\Pi = \tilde\Pi_2, \qquad \tilde\Pi = \tilde\Pi_1 + \tilde\Pi_2 = 1
+\;}.
 $$
 
 These four are idempotent, and there are no others.
@@ -96,7 +98,9 @@ In the biquaternion algebra $\mathbb{B}$, the idempotents are in bijection with 
 **Theorem.** The roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ form the set
 
 $$
-\{\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2 : \mu_\pm \text{ unit pure real quaternions}\},
+\boxed{\;
+\{\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2 : \mu_\pm \text{ unit pure real quaternions}\}
+\;},
 $$
 
 a set of real dimension $4$, parametrised by a pair of unit pure real quaternions. That the set is the topological product $S^2 \times S^2$, and its manifold structure, are established in *Split-Biquaternion Analysis*. The idempotents of $\mathbb{H}_{\mathbb{D}}$ number $4$. Hence there is no bijection between the two sets.
@@ -122,7 +126,9 @@ $$
 and the two summands are ideals. This is the algebraic content of the idempotent decomposition: the idempotent selects one summand, its complement the other, and the algebra splits into the image of one and the image of the other. The decomposition attached to $\tilde\Pi = \tilde\Pi_1$ is the idempotent decomposition
 
 $$
-\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2,
+\boxed{\;
+\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2
+\;},
 $$
 
 with $\mathbb{H} \tilde\Pi_1 = \mathbb{H}_{\mathbb{D}} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2 = \mathbb{H}_{\mathbb{D}} \tilde\Pi_2$.

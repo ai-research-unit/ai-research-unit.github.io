@@ -44,7 +44,7 @@ The prescription is stated on the mass-shell relation and then translated into t
 **Minimal coupling replaces the canonical four-momentum by $\tilde P_{\mathrm{can}} - ϙ\tilde{A}$ in the mass-shell relation:**
 
 $$
-\boxed{\;\left\langle\tilde P_{\mathrm{can}} - ϙ\tilde{A}\right\rangle_{\natural} = -m^2c^2.\;}
+\boxed{\;\left\langle\tilde P_{\mathrm{can}} - ϙ\tilde{A}\right\rangle_{\natural} = -m^2c^2\;}.
 $$
 
 Here the four-momentum before the replacement is the **canonical** four-momentum $\tilde P_{\mathrm{can}}$, and the shifted object is the **kinetic (mechanical)** four-momentum $\tilde{P}_{\mathrm{kin}}$. In the free theory the two coincide; the coupling is what separates them. To keep them apart we write
@@ -84,7 +84,7 @@ $$
 Solving for the canonical energy gives the **relativistic Hamiltonian**
 
 $$
-\boxed{\;E_{\mathrm{can}} = ϙ\phi + c\sqrt{\left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2 + m^2c^2}.\;}
+\boxed{\;E_{\mathrm{can}} = ϙ\phi + c\sqrt{\left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2 + m^2c^2}\;}.
 $$
 
 This is the standard result: the potential energy $ϙ\phi$ is added, and the kinetic energy is built from the kinetic momentum $\vec p_{\mathrm{can}} - ϙ\vec A$, not from the canonical momentum $\vec p_{\mathrm{can}}$. The kinetic energy in the bracket is the one that would be computed for a free particle whose momentum is $\vec p = \vec p_{\mathrm{can}} - ϙ\vec A$.
@@ -115,7 +115,7 @@ $$
 so the free term contributes $m\,d\tilde{R}/d\tau = \tilde{P}$. The coupling contributes $ϙ\langle\tilde{A}, \delta\left(d\tilde{R}/d\tau\right)\rangle$, hence $ϙ\tilde{A}$. The conjugate momentum is therefore
 
 $$
-\boxed{\;\tilde P_{\mathrm{can}} = m\,d\tilde{R}/d\tau + ϙ\tilde{A} = \tilde{P} + ϙ\tilde{A},\;}
+\boxed{\;\tilde P_{\mathrm{can}} = m\,d\tilde{R}/d\tau + ϙ\tilde{A} = \tilde{P} + ϙ\tilde{A}\;},
 $$
 
 that is, **canonical = kinetic + $ϙ\tilde{A}$**, which is exactly the component statement above. The prescription $\tilde P \to \tilde P - ϙ\tilde A$ of the mass-shell form and the conjugate momentum of the action form are the same equation read in opposite directions.
@@ -184,7 +184,7 @@ $$
 Since $mdX_{\mu}/d\tau = P_{\mathrm{kin},\mu}$ on shell and $dX_{\nu}/d\tau = U_\nu$, this is the standard contraction
 
 $$
-\boxed{\;\frac{dP_{\mathrm{kin}}^\mu}{d\tau} = ϙ\,F^{\mu\nu}U_\nu , \qquad \tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}_{\mathrm{kin}}}{d\tau}.\;}
+\boxed{\;\frac{dP_{\mathrm{kin}}^\mu}{d\tau} = ϙ\,F^{\mu\nu}U_\nu , \qquad \tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}_{\mathrm{kin}}}{d\tau}\;}.
 $$
 
 The contraction $\tilde{K}_{\mathrm{f}} = ϙ\,F(\tilde{V})$ is an element of $\mathbb{M}_-$, as it must be, and it is the **component form** of the Lorentz four-force. In components, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$, the contraction is exactly the four-force of the read-list article,
@@ -220,9 +220,9 @@ The first independent check is a purely electric field. This case is *not* the o
 Take $\vec B = 0$ and a static, uniform electric field $\vec E = E_0\vec u_x$, described by the potential $\phi = -E_0 x$, $\vec A = 0$, so that $\tilde{A} = -(iE_0/c)\,x\,e_t$. In this gauge the vector potential vanishes, so the canonical and kinetic momenta coincide in all three spatial components, $p_{\mathrm{can},k} = p_k$, and differ only in the time component: $E_{\mathrm{can}} = E + ϙ\phi$. The contraction $\tilde{K}_{\mathrm{f}} = ϙF^{\mu\nu}U_\nu$ gives
 
 $$
-\frac{d\vec p}{dt'} = ϙ\vec E = ϙE_0\,\vec u_x,
+\boxed{\;\frac{d\vec p}{dt'} = ϙ\vec E = ϙE_0\,\vec u_x,
 \qquad
-\frac{dE}{dt'} = ϙ\,\vec E\cdot\vec v = ϙE_0\,v_x .
+\frac{dE}{dt'} = ϙ\,\vec E\cdot\vec v = ϙE_0\,v_x\;}.
 $$
 
 The first equation is exact and undamped by $\gamma$: the kinetic three-momentum grows linearly in laboratory time, $p_x = ϙE_0 t'$ for a particle released from rest at $t'=0$, and the energy follows from the mass shell,
@@ -252,7 +252,7 @@ $$
 The energy is constant, hence $\gamma$ and $|\vec p|$ are constant, and the motion in the plane perpendicular to $\vec B$ is circular with the relativistic cyclotron frequency
 
 $$
-\omega_c = \frac{ϙB_0}{\gamma m}.
+\boxed{\;\omega_c = \frac{ϙB_0}{\gamma m}\;}.
 $$
 
 The field does no work: a pure magnetic field changes the direction of the kinetic momentum but not its magnitude or the energy. Both statements follow from the contraction alone, without solving the equations.
@@ -331,7 +331,7 @@ With that convention the four-velocity, the four-momentum, and the four-force al
 A particle of charge $ϙ$ and rest mass $m$ in a prescribed external field is described in biquaternionic form by the **minimal-coupling prescription**, the replacement of the canonical four-momentum by $\tilde P_{\mathrm{can}} \to \tilde P_{\mathrm{can}} - ϙ\tilde{A}$ in the mass-shell relation:
 
 $$
-\left\langle\tilde P_{\mathrm{can}} - ϙ\tilde{A}\right\rangle_{\natural} = -m^2c^2 .
+\left\langle\tilde P_{\mathrm{can}} - ϙ\tilde{A}\right\rangle_{\natural} = -m^2c^2.
 $$
 
 The object $\tilde P_{\mathrm{can}} - ϙ\tilde{A}$ is the **kinetic** four-momentum and $\tilde P_{\mathrm{can}}$ is the **canonical** four-momentum, $\tilde P_{\mathrm{can}} = \tilde{P}_{\mathrm{kin}} + ϙ\tilde{A}$. The prescription has two faces, and they agree: on the mass-shell relation it yields the relativistic Hamiltonian $E_{\mathrm{can}} = ϙ\phi + c\sqrt{(\vec p_{\mathrm{can}}-ϙ\vec A)^2 + m^2c^2}$; on the action $S = -mc\int\sqrt{-\langle d\tilde{R}/d\tau\rangle_{\natural}}\,d\tau + ϙ\int\mathrm{Sc}(\tilde{A}\,\overline{d\tilde R/d\tau})\,d\tau$ it yields the conjugate momentum $\tilde P_{\mathrm{can}} = m\,d\tilde{R}/d\tau + ϙ\tilde{A}$. The two distinctions that carry the physical content are that the **kinetic momentum is gauge-invariant** and the **canonical momentum is not**, and that the kinetic, not the canonical, momentum is the one that obeys the free mass-shell relation and appears in the velocity $\vec v = \vec pc^2/E$.
@@ -339,10 +339,10 @@ The object $\tilde P_{\mathrm{can}} - ϙ\tilde{A}$ is the **kinetic** four-momen
 The equation of motion is the Lorentz force in its contracted form,
 
 $$
-\frac{dP_{\mathrm{kin}}^\mu}{d\tau} = ϙ\,F^{\mu\nu}U_\nu,
+\boxed{\;\frac{dP_{\mathrm{kin}}^\mu}{d\tau} = ϙ\,F^{\mu\nu}U_\nu,
 \qquad
 \tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}_{\mathrm{kin}}}{d\tau}
-= -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
+= -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)\;},
 $$
 
 with $\tilde{K}_{\mathrm{f}} = i\frac{\gamma ϙ}{c}(\vec E\cdot\vec v)e_t + \gamma ϙ(\vec E+\vec v\times\vec B)$ in components. It preserves the rest mass, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}_{\mathrm{kin}} + \tilde{P}_{\mathrm{kin}}\tilde{K}_{\mathrm{f}}^{\natural} = 0$, and it is a proper-time equation about a single worldline. Two independent cases were checked — a purely electric field, where $d\vec p/dt' = ϙ\vec E$ and the field does work, and a purely magnetic field, where $d\vec p/dt' = ϙ\vec v\times\vec B$, the energy is constant, and the motion is circular at $\omega_c = ϙB_0/(\gamma m)$ — together with the general contraction at random fields. The two cases test the time-like and space-like parts of the coupling separately, so agreement on both is not agreement on the general case.

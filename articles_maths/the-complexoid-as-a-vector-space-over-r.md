@@ -27,7 +27,7 @@ $$
 so $\dim_{\mathbb{C}} \mathbb{C}_{\mathbb{C}} = 1$. The two readings have the same elements and the same addition; only the scalars differ, and the scalar domain has been cut from $\mathbb{C}$ to $\mathbb{R}$. This is the operation called restriction of scalars.
 
 $$
-\dim_{\mathbb{R}} \mathbb{C}_{\mathbb{R}} = 2 = 2 \dim_{\mathbb{C}} \mathbb{C}_{\mathbb{C}} .
+\boxed{\;\dim_{\mathbb{R}} \mathbb{C}_{\mathbb{R}} = 2 = 2 \dim_{\mathbb{C}} \mathbb{C}_{\mathbb{C}}\;}.
 $$
 
 The complex reading is not the real reading with more scalars in another sense: the real reading is over the subfield $\mathbb{R}_{\mathbb{C}}$ of the fixed points of the bar, and the complex reading is over the whole field, so the same set is a two-dimensional space over a subfield and a one-dimensional space over the field that contains it.
@@ -53,7 +53,7 @@ $$
 So the passage from the real reading to the complex one is the adjunction of the single operator $J$, and nothing else. In the basis $1, i$ the operator has the matrix
 
 $$
-J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix},
+\boxed{\;J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\;},
 $$
 
 which has no real eigenvector, since $J^2 = -\operatorname{id}$ has no real solution. There is therefore no real scalar $\mu$ with $J = \mu\operatorname{id}$, and the real reading does not by itself single out the element $i$: the complex structure is an extra operator, not a scalar of the real reading.
@@ -101,7 +101,7 @@ $$
 So the complex-linear maps are the two-real-dimensional space $\operatorname{End}_{\mathbb{C}}(\mathbb{C}) \cong \mathbb{C}$, the conformal shape in the matrix algebra, and the conjugate-linear maps form the complementary two-real-dimensional space, on which $1$ is sent to the arbitrary complex number $Q_1$. The two together fill the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{C}) \cong M_2(\mathbb{R})$, of real dimension four:
 
 $$
-\operatorname{End}_{\mathbb{R}}(\mathbb{C}) = \operatorname{End}_{\mathbb{C}}(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}, \qquad 4 = 2 + 2 .
+\boxed{\;\operatorname{End}_{\mathbb{R}}(\mathbb{C}) = \operatorname{End}_{\mathbb{C}}(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}, \qquad 4 = 2 + 2\;}.
 $$
 
 The splitting is the $\pm 1$ eigenspace decomposition of the involution $T \mapsto JTJ^{-1}$ of the endomorphism algebra, the operator $T \mapsto JTJ^{-1}$ being the conjugation by $J$.

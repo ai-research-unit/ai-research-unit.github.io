@@ -256,7 +256,7 @@ K_{\rm beam}^{\rm thr} = \tfrac{1}{2}\left(\sum_{f\ge3}m_f\right)c^2 - m_1c^2 .
 $$
 For $p+p\to p+p+\pi^0$ this is $E_{\rm beam}^{\rm thr} = 1005.761$ MeV and $K_{\rm beam}^{\rm thr} = 67.489$ MeV. The collider threshold is lower by the factor
 $$
-\frac{K_1^{\rm thr}}{K_{\rm beam}^{\rm thr}} = \frac{279.663}{67.489} = 4.14 ,
+\boxed{\;\frac{K_1^{\rm thr}}{K_{\rm beam}^{\rm thr}} = \frac{279.663}{67.489} = 4.14\;},
 $$
 for this reaction. The origin of the factor is visible in the fixed-target expression: $s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2$ grows only linearly with $E_1$ when one body is at rest, whereas in a collider $s=4E^2$ grows quadratically. A fixed-target beam must supply most of its energy to the centre-of-mass motion, which the conservation law leaves kinematically present; only the invariant $s$ is available for production.
 
@@ -326,7 +326,7 @@ u = -2p^{*2}(1+\cos 90^\circ) = -2m^2,
 $$
 so
 $$
-s + t + u = 8m^2 - 2m^2 - 2m^2 = 4m^2 = \left(m_1^2+m_2^2+m_3^2+m_4^2\right),
+\boxed{\;s + t + u = 8m^2 - 2m^2 - 2m^2 = 4m^2 = \left(m_1^2+m_2^2+m_3^2+m_4^2\right)\;},
 $$
 as the sum rule requires.
 
@@ -350,9 +350,9 @@ which for $M_{\rm out} = m_1+m_2+\Delta m$ becomes $K_1^{\rm thr}\approx \frac{(
 
 **Solution (c).** For elastic equal-mass scattering, expand the laboratory angle relations of Problem 3(c). With $V\ll c$, $\gamma\to1$, and the COM relations $p^* = mV + O(V^3/c^2)$,
 $$
-\tan\theta_3 = \frac{\sin\theta^*}{\gamma(1+\cos\theta^*)} \to \tan\frac{\theta^*}{2},
+\boxed{\;\tan\theta_3 = \frac{\sin\theta^*}{\gamma(1+\cos\theta^*)} \to \tan\frac{\theta^*}{2},
 \qquad
-\tan\theta_4 = \frac{\sin\theta^*}{\gamma(1-\cos\theta^*)} \to \cot\frac{\theta^*}{2},
+\tan\theta_4 = \frac{\sin\theta^*}{\gamma(1-\cos\theta^*)} \to \cot\frac{\theta^*}{2}\;},
 $$
 so $\theta_3+\theta_4\to\theta^*/2+(\pi-\theta^*)/2 = \pi/2$. The two final particles emerge at right angles in the laboratory, the standard Newtonian result for equal masses; the relativistic opening angle is always less than $\pi/2$, the deficit growing with $\gamma$. Problem 5 makes this concrete: at $K_1 = 2mc^2$ the opening angle is $70.53^\circ$, $19.5^\circ$ below the Newtonian value, so the non-relativistic limit is nowhere near valid at twice the rest energy. For $K_1\ll mc^2$ the expansion is accurate, with relative corrections of order $V^2/c^2\sim K_1/(mc^2)$.
 

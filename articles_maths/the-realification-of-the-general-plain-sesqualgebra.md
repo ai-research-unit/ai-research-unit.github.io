@@ -48,7 +48,7 @@ L_{\tilde Q_4}(\tilde Q_1)=\tilde Q_4\star\tilde Q_1\ \text{ is conjugate-linear
 $$
 because the conjugation sits in the second slot alone. Read over $\mathbb{R}$ the two parities are the two summands of the space of the real operators. Every $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ splits as the sum of a commuting and an anticommuting one,
 $$
-\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\oplus\operatorname{Ant}_{\mathbb{C}}(\mathbb{B}),
+\boxed{\; \operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\oplus\operatorname{Ant}_{\mathbb{C}}(\mathbb{B}) \;},
 $$
 of real dimensions $32$ and $32$, and the two families of the block lie in the two different summands:
 $$
@@ -56,7 +56,7 @@ L_{\tilde Q_4}J=-J L_{\tilde Q_4},\qquad R_{\tilde Q_4}J=+J R_{\tilde Q_4}.
 $$
 In the real basis the two criteria are the two block shapes,
 $$
-R_{\tilde Q_4}\rightsquigarrow\begin{pmatrix}A&-B\\B&A\end{pmatrix},\qquad L_{\tilde Q_4}\rightsquigarrow\begin{pmatrix}A&B\\B&-A\end{pmatrix},
+\boxed{\; R_{\tilde Q_4}\rightsquigarrow\begin{pmatrix}A&-B\\B&A\end{pmatrix},\qquad L_{\tilde Q_4}\rightsquigarrow\begin{pmatrix}A&B\\B&-A\end{pmatrix} \;},
 $$
 the first commuting with $J$ and the second anticommuting with it.
 
@@ -100,7 +100,7 @@ the opposite of the case of a bilinear form. The map $J$ is therefore an isometr
 
 The square of the block is positive for this form. The element $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is Hermitian, and its scalar part is the squared Euclidean norm,
 $$
-\mathrm{Sc}(\tilde Q\star\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^2 ,
+\boxed{\; \mathrm{Sc}(\tilde Q\star\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^2 \;},
 $$
 so the diagonal of the realified Hermitian form is the square of the real norm of the element, and the form the block carries is the positive definite one of the four forms of the corpus.
 

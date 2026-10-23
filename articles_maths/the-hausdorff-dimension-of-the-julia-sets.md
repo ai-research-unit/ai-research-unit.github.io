@@ -58,15 +58,11 @@ the sum being over the fixed points of $f^n$ or, equivalently, over any conforma
 
 **Theorem (Bowen).** For a hyperbolic Julia set the function $t \mapsto P(t)$ is strictly decreasing, convex and real-analytic, with $P(0) = \log d > 0$ and $P(t) \to -\infty$ as $t \to \infty$. Hence there is a unique $s > 0$ with
 
-$$
-P(s) = 0 ,
-$$
+$$\boxed{\;P(s) = 0\;},$$
 
 the **Bowen equation**, and
 
-$$
-\dim_H J(f) = s .
-$$
+$$\boxed{\;\dim_H J(f) = s\;}.$$
 
 The equilibrium state $\mu_s$ of the potential $-s\log|\frac{df}{dz}|$ is the invariant measure of **full dimension**: it is ergodic, its measure-theoretic entropy is $h_{\mu_s} = s\,\chi_{\mu_s}$ with $\chi_{\mu_s} = \int\log|\frac{df}{dz}|\,d\mu_s$, and its Hausdorff dimension is $s$, so that $\dim_H \mu_s = \dim_H J(f)$.
 
@@ -90,9 +86,7 @@ the denominator being nonzero because $P$ is strictly decreasing in $t$.
 
 **Theorem (Shishikura).** For every parameter $c$ on the boundary of the Mandelbrot set, the Julia set has full dimension:
 
-$$
-c \in \partial M \implies \dim_H J(f_c) = 2 .
-$$
+$$\boxed{\;c \in \partial M \implies \dim_H J(f_c) = 2\;}.$$
 
 There are also parameters with a Siegel disc at which the Julia set has dimension two; the theorem of Shishikura produces them by a quasiconformal surgery from the boundary parameters.
 

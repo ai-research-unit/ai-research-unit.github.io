@@ -7,8 +7,6 @@ The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces 
 
 The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $Q = q+jq'$; conjugate $\bar Q = q-jq'$; idempotents $\Pi_1 = \tfrac12(1+j)$ and $\Pi_2 = \tfrac12(1-j)$; idempotent coordinates $q_+ = q+q'$ and $q_- = q-q'$; norm $\langle Q\rangle = Q\bar Q = q^2-q'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.
-
 ## The Two Involutions
 
 The algebra carries two involutions: the split-complex conjugation $\bar{Q} = q-jq'$ and the idempotent conjugation (the swap) $\tilde{Q} = (q-q')\Pi_1 + (q+q')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:
@@ -37,7 +35,9 @@ Two of these are the members of a decomposition induced by the involution, and t
 The involution gives the **scalar–split-vector decomposition**
 
 $$
-\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad Q = q_r + j q_i, \qquad q_r = \tfrac12(Q+\bar Q), \quad q_i = \tfrac12 j^{-1}(Q-\bar Q) = q',
+\boxed{\;
+\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad Q = q_r + j q_i, \qquad q_r = \tfrac12(Q+\bar Q), \quad q_i = \tfrac12 j^{-1}(Q-\bar Q) = q'
+\;},
 $$
 
 and the idempotent basis gives the **idempotent decomposition**
@@ -55,7 +55,9 @@ $$
 so the change from the eigenbasis $\{1, j\}$ of the involution to the idempotent basis $\{\Pi_1, \Pi_2\}$ is the linear map
 
 $$
-\begin{pmatrix} q_+ \\ q_- \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} q_r \\ q_i \end{pmatrix}.
+\boxed{\;
+\begin{pmatrix} q_+ \\ q_- \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} q_r \\ q_i \end{pmatrix}
+\;}.
 $$
 
 Here there are two such decompositions, and only the first is induced by an involution.
@@ -146,7 +148,9 @@ The conjugation $\bar{\cdot}$ preserves each of the four lines, acting on each b
 The first two lines are the eigenspaces of the involution, and the last two are exchanged by it:
 
 $$
-\bar \Pi_1 = \tfrac12(1-j) = \Pi_2, \qquad \bar \Pi_2 = \tfrac12(1+j) = \Pi_1.
+\boxed{\;
+\bar \Pi_1 = \tfrac12(1-j) = \Pi_2, \qquad \bar \Pi_2 = \tfrac12(1+j) = \Pi_1
+\;}.
 $$
 
 So the involution is diagonal on the eigenbasis and the swap on the idempotent basis. In the four-dimensional case the four involutions act on the remarkable subspaces with mixed signs; here a single involution acts with the two signs on its own eigenspaces, and interchanges the two idempotent lines. The action table is the whole of the involution information, and it is consistent with the earlier statement $Q = \bar Q$: the idempotent swap is neither more nor less than the conjugation.

@@ -19,8 +19,6 @@ The framework's contribution is therefore the tensor structure of the flavour se
 
 The article is organised as follows. A section defines the CKM matrix and places it on the flavour factor. A section gives the parameter count and the CP phase. A section explains why the phase is not central. A section gives the mass-matrix origin of the mixing. A section treats the Jarlskog invariant and the condition for CP violation. A section collects the Wolfenstein parametrisation, the unitarity triangle, and the measured values. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$; $\mathbb{B}\cong M_2(\mathbb{C})$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The Dirac module is $\Delta=S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta=4$, with $P_L,P_R$ the chiral projectors. The generation space is $\mathcal{F}=\mathbb{C}^{N_g}$ and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$; the flavour operators are $I_\Delta\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The quark mass matrices are $M_u,M_d\in M_{N_g}(\mathbb{C})\otimes I_\Delta$ and are diagonalised by unitary rotations on $\mathcal{F}$. The **CKM matrix** is $V=X_u^\dagger X_d$; the parametrisation and the numerical values are the Particle Data Group's, with $\lambda=0.22500$, $A=0.826$, $\bar\rho=0.159$, $\bar\eta=0.348$ and $\delta$ the CP-violating phase. Natural units $\hbar=c=1$ are used.
-
 The framework results used here are those of the companion articles:
 
 - Companion article *The Neutrino and Majorana Fermions in Biquaternionic Form*, for the lepton mixing that parallels the quark mixing.
@@ -35,7 +33,7 @@ The framework results used here are those of the companion articles:
 $$
 \mathcal{L}_{W} \supset \frac{g}{\sqrt2}\,W^+_\mu\,
 \bar{\mathrm u}_{iL}\gamma^\mu V_{ij}\,d_{jL} + \text{h.c.},
-\qquad V = X_u^\dagger X_d ,
+\qquad \boxed{\;V = X_u^\dagger X_d\;},
 $$
 
 where $X_u$ and $X_d$ diagonalise the up- and down-type mass matrices. In the framework the mass matrices are flavour operators, $M_u=I_\Delta\otimes M_u^{\mathcal{F}}$ and $M_d=I_\Delta\otimes M_d^{\mathcal{F}}$, with the module factor common and the flavour factor carrying the generation dependence; the diagonalising matrices are unitary operators on $\mathcal{F}$, and $V$ is their relative rotation. The whole construction lives on $\mathcal{F}$.
@@ -57,7 +55,7 @@ on $\Delta\otimes\mathcal{F}$, i.e. the framework's Lorentz-and-chirality struct
 **Counting the parameters.** A general $N_g\times N_g$ unitary matrix has $N_g^2$ real parameters. Of these, $N_g$ are removed by rephasing the $N_g$ up-type quarks and $N_g$ by rephasing the $N_g$ down-type quarks, except that one overall phase is unobservable, leaving
 
 $$
-N_g^2-2N_g+1=(N_g-1)^2
+\boxed{\;N_g^2-2N_g+1=(N_g-1)^2\;}
 $$
 
 physical parameters. They divide into
@@ -105,14 +103,16 @@ with $D_u,D_d$ diagonal and positive. The mixing is a measure of how differently
 **The rephasing invariant.** Because the individual phases of the CKM matrix are convention-dependent, CP violation is measured by rephasing-invariant combinations. The lowest-order one is the **Jarlskog invariant**,
 
 $$
-J = \mathrm{Im}\big(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\big)
-= c_{12}\,c_{23}\,c_{13}^{2}\,s_{12}\,s_{23}\,s_{13}\,\sin\delta ,
+\boxed{\;\begin{aligned}
+J &= \mathrm{Im}\big(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\big)\\
+&= c_{12}\,c_{23}\,c_{13}^{2}\,s_{12}\,s_{23}\,s_{13}\,\sin\delta ,
+\end{aligned}\;}
 $$
 
 where the second form uses the standard three-angle parametrisation with the phase $\delta$, and $c_{ij}=\cos\theta_{ij}$, $s_{ij}=\sin\theta_{ij}$. The invariant is the imaginary part of a quartet of matrix elements and it vanishes if and only if the theory is CP-conserving (for three generations); it is the determinant
 
 $$
-J \propto \mathrm{Im}\,\det\big[M_uM_u^\dagger,\,M_dM_d^\dagger\big] ,
+\boxed{\;J \propto \mathrm{Im}\,\det\big[M_uM_u^\dagger,\,M_dM_d^\dagger\big]\;}
 $$
 
 the commutator of the two mass-matrix products, up to normalisation by the mass differences. **CP violation for three generations is the noncommutativity of the two mass-matrix products, measured by the Jarlskog invariant.**

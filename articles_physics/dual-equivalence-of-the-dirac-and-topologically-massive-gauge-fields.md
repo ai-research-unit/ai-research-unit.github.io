@@ -6,8 +6,6 @@ A massive spin-1 field can acquire its mass in more than one way. The **Proca** 
 
 This article records that equivalence and the machinery it uses. It is the physics companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* and of *Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form*: the parent action is written in the s-vector variables, and the two eliminations pass through the self-dual field strength and the cubic (order-three ding) form of those articles.
 
-**Scope and honesty.** The construction is Liu's. What this article does is state the equivalence, its mechanism, and the role of the corpus's verified identities in it; it does **not** claim to have independently recomputed the variational eliminations. Where a statement is the source's and rests on an elimination this pass did not perform, the article says so, both here and in the companion `.context` file. The algebraic identities that the equivalence *uses* — the normed condition, the associativity, the bilinear dictionary, the anti-self-duality of $H^{\mu\nu}$, and the Chern–Pontryagin density being a total derivative — are verified in the companion articles.
-
 The conventions are those of the companion articles: four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon^{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon^{0123} = 1$; and the structure constants $c^{\mu\nu\lambda}$ and $\check c^{\mu\nu\lambda}$ are those of the s-vector article.
 
 ## The Parent Action
@@ -27,13 +25,13 @@ the first two terms being the bosonic kinetic form of the s-vector article and $
 Eliminating the auxiliary field leaves the **Dirac Lagrangian** in the vector representation,
 
 $$
-\mathcal{L}_D = \tfrac12\Bigl[\bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c^{\nu\mu\lambda} G_\lambda - G^*_\nu\, i\check c^{\nu\mu\lambda}\, \tilde\nabla_\mu G_\lambda + m\bigl(G^{*}_\nu G^{*\nu} + G_\nu G^\nu\bigr)\Bigr],
+\boxed{\;\mathcal{L}_D = \tfrac12\Bigl[\bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c^{\nu\mu\lambda} G_\lambda - G^*_\nu\, i\check c^{\nu\mu\lambda}\, \tilde\nabla_\mu G_\lambda + m\bigl(G^{*}_\nu G^{*\nu} + G_\nu G^\nu\bigr)\Bigr]\;},
 $$
 
 whose mass term $m(G^*G^* + GG)$ couples $G$ to $G^*$ — the chirality-off-diagonal mass, and the reason the s-vector is not simply a pair of independent complex vectors. Eliminating $G$ instead leaves a **second-order gauge Lagrangian** for the field $A_\mu$, with a mass term built from the antisymmetric symbol,
 
 $$
-\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac{m}{4}\,\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda,
+\boxed{\;\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac{m}{4}\,\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda\;},
 $$
 
 the second term being the topological (Chern–Simons-type / BF-type) mass. The two Lagrangians describe the same propagating modes.
@@ -68,7 +66,7 @@ where $B$ and $N$ are the two real four-vectors of the semi-spinors (the real an
 The third ingredient is the interpretation of the mass. In the vector representation the mass term is
 
 $$
-m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N^\nu - B_\nu B^\nu\bigr) = \bar\Psi\, K_\mu\gamma^\mu\Psi
+\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N^\nu - B_\nu B^\nu\bigr) = \bar\Psi\, K_\mu\gamma^\mu\Psi\;}
 $$
 
 for a unit complex vector $K^\mu$ built from the field. The mass is carried by a unit vector, which the source reads as a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.

@@ -13,8 +13,6 @@ The companion article *Canonical Quantization of the Biquaternion Maxwell Field*
 - Companion article *The Path Integral in Biquaternionic Form*, for the sum-over-paths framework of the series.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation, the gauge scalar, and the covariant derivative.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is the material four-vector $\tilde{A}=iA_0e_t+\vec A\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the gauge scalar is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. The Lagrangian is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$, with $\tilde{F}$ the field-strength biquaternion of the Maxwell companion, the series metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the series momentum invariant is $p^2=\omega^2-\vec p^2$, so that $p_\mu p^\mu=-p^2$ and $p_\mu p^\mu=-\mu^2$ is the mass shell, and natural units $\hbar=c=1$ are used for the integral. The integral is over $\tilde{A}$-configurations, the measure being written $\mathcal{D}\tilde{A}$; in components it is the fourfold product of measures for $A_0,A_1,A_2,A_3$. The gauge coupling is $g$ and, where a non-abelian structure is indicated, its generators are realized in $\mathbb{M}_+$ as in the BRST construction.
-
 ## The Functional Integral for a Gauge Field
 
 ### The Integral and Its Gauge Invariance
@@ -77,7 +75,7 @@ $$
 because the composition of two gauge transformations is a gauge transformation. One may therefore shift the integration variable $\tilde{A}\to\tilde{A}^{\Gamma^{-1}}$ at fixed $\Gamma$, use the invariance of the measure and of $\Delta$ and of $S$, and obtain
 
 $$
-Z = \int\mathcal{D}\tilde{A}\;\Delta[\tilde{A}]\;\delta\!\left(G[\tilde{A}]\right)\;\exp(iS[\tilde{A}]),
+\boxed{\;Z = \int\mathcal{D}\tilde{A}\;\Delta[\tilde{A}]\;\delta\!\left(G[\tilde{A}]\right)\;\exp(iS[\tilde{A}])\;},
 $$
 
 in which the gauge-group integral has been absorbed and only the gauge-fixed configurations contribute. This is the content of the construction: the infinite factor has been traded for a delta functional and a determinant, both of which depend on the gauge-fixing condition but neither of which depends on the volume of the gauge group.
@@ -95,8 +93,8 @@ $$
 with $\omega$ a fixed function. Under a gauge transformation $S\mapsto S-\Box\Gamma$, so the condition $G[\tilde{A}^\Gamma]=0$ is $S-\Box\Gamma-\omega=0$, i.e., $\Box\Gamma=S-\omega$. The Faddeev–Popov determinant is the Jacobian of the map $\Gamma\mapsto G[\tilde{A}^\Gamma]$, which is the operator $-\Box$ acting on $\Gamma$; the identity $1=\Delta[\tilde{A}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}^\Gamma])$ fixes it to be the determinant of that variation, the reciprocal of the factor the delta functional alone would contribute:
 
 $$
-\Delta[\tilde{A}] = \det\left(\frac{\delta G[\tilde{A}^\Gamma]}{\delta\Gamma}\right)
-= \det\left(-\Box\right),
+\boxed{\;\Delta[\tilde{A}] = \det\left(\frac{\delta G[\tilde{A}^\Gamma]}{\delta\Gamma}\right)
+= \det\left(-\Box\right)\;},
 $$
 
 up to a sign convention. This is **independent of $\tilde{A}$**: it is a constant functional, built from the central scalar d'Alembertian, and it can be absorbed into the normalization of the integral. For the abelian gauge field there are therefore no ghost fields in the path integral: the determinant is a constant, and the gauge-fixing delta functional is all that survives. The result is the biquaternion statement that the Faddeev–Popov determinant of the Maxwell field is a power of the central scalar operator $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, and that its only biquaternionic content is the centrality of that operator.
@@ -163,7 +161,7 @@ $$
 up to the field-independent factors, so that the two-point function is the inverse of $K$,
 
 $$
-D_{\mu\nu}(p) = \frac{1}{p^2}\left(\eta_{\mu\nu}+\frac{(1-\xi)p_\mu p_\nu}{p^2}\right),
+\boxed{\;D_{\mu\nu}(p) = \frac{1}{p^2}\left(\eta_{\mu\nu}+\frac{(1-\xi)p_\mu p_\nu}{p^2}\right)\;},
 $$
 
 the momentum-space propagator. The residue structure is worth separating into its two pieces. The first is the **transverse projector**

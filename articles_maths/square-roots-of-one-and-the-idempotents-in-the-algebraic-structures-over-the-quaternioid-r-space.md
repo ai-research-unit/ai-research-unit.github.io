@@ -26,10 +26,6 @@ $$
 
 the **symmetric plain algebra** of the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, the **antisymmetric plain algebra** of the cross product $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
 
-**Scope and owners.** This article owns the comparison of the three root sets of $+1$ and of the three idempotent sets, the unit theorem for a root of $+1$, the halving map between the two questions, and the reading of the collapse against the biquaternion case. The per-structure results stay owned by their articles, cited one by one below: for the general quaternionic algebra *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, for the symmetric plain algebra *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, and for the antisymmetric plain algebra *Introduction to the Antisymmetric Plain Algebra*; the algebra-product results are owned by *Square Roots of One and the Idempotents of the Quaternion Algebra* in the *Quaternions* category. The products are *The 6 Products of the Quaternioid Real Space*; the vocabulary stated once for a general product, the root of a central value and the idempotent, is *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the two forms are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*; the value $0$ and the square-zero sets are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the zero divisors and the unit criterion $N\neq0$ are *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; and the biquaternion case that §*The Contrast with the Biquaternion Case* reads is *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
-
-**Conventions.** $\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$; a general element is $\tilde\xi=\xi_te_t+\vec\xi$ with $\xi_t\in\mathbb{R}$ and $\vec\xi=\sum_k\xi_k\vec e_k$; the natural conjugation is $\tilde\xi^{\natural}=\xi_t-\vec\xi$; the **plain form** is $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$; and the **quaternion form** is $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$, the norm. The algebra product is $\tilde\xi\tilde q$, the general quaternionic product is $\tilde\xi^{\natural}\tilde q$, the Jordan product is $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and the plain cross product is $\tilde\xi\wedge\tilde q=\tfrac12(\tilde\xi\tilde q-\tilde q\tilde\xi)=\vec\xi\times\vec q$. The **square root of a central value** is defined in *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* §*The Element Vocabulary* as an element with $\tilde\xi^{2}=c$ and $c$ central, the class of them being the set of its solutions, with no non-zero requirement; the **idempotent** is defined in the same section as an element with $\tilde\pi^{2}=\tilde\pi$.
-
 ## The Roots of One in the Three Companion Structures
 
 The square of a structure is its operation read at the two equal arguments, so each of the three carries a root problem of its own, and the three squares are two. They are read off the squares of *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* §*The Two General Products at a General Value*, recalled here:
@@ -57,7 +53,7 @@ The value is signed, and the quaternion form decides the nature of every root, b
 The algebra is a division algebra, so it decomposes as
 
 $$
-\mathbb{H}=\{0\}\cup\mathbb{H}^{\times} , \qquad \mathcal R_{+1}\subseteq\mathbb{H}^{\times} ,
+\boxed{\;\mathbb{H}=\{0\}\cup\mathbb{H}^{\times} , \qquad \mathcal R_{+1}\subseteq\mathbb{H}^{\times}\;},
 $$
 
 with no zero-divisor term, the algebra product having no zero divisor at all (*Zero Divisors of the Quaternion Algebra*). The roots of $+1$ are therefore the units at which the square reaches the unit.
@@ -115,7 +111,7 @@ $$
 so that a two-sided unit, $e_t\star e_t=e_t$ and $e_t\star\tilde\xi=\tilde\xi=\tilde\xi\star e_t$, together with $\tilde\xi\star\tilde\xi=e_t$, gives
 
 $$
-\tilde\pi\star\tilde\pi=\tfrac14\bigl(2e_t+2\tilde\xi\bigr)=\tfrac12(e_t+\tilde\xi)=\tilde\pi .
+\boxed{\;\tilde\pi\star\tilde\pi=\tfrac14\bigl(2e_t+2\tilde\xi\bigr)=\tfrac12(e_t+\tilde\xi)=\tilde\pi\;}.
 $$
 
 The map is therefore a bijection of the root set of $+1$ onto the idempotent set wherever $e_t$ is a two-sided unit, that is for the symmetric plain algebra, where it pairs the roots $\pm e_t$ of $+1$ with the idempotents $e_t$ and $0$; the inverse $\tilde\xi=2\tilde\pi-e_t$ reads an idempotent as a root of $+1$. The same bijection holds for the algebra product, $e_t$ being its two-sided unit, and that reading is owned by the *Quaternions* category.

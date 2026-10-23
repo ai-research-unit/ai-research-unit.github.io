@@ -115,8 +115,8 @@ $$
 with $\varepsilon=t'/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^{t'} L\,d\tau$ and the multiple integral becomes the formal path integral
 
 $$
-K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t';x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
-=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\;\exp(\,iS[x,y,z]/\hbar)\,e_t .
+\boxed{\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t';x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
+=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\;\exp(\,iS[x,y,z]/\hbar)\,e_t\;}.
 $$
 
 The measure $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ is defined by the limit above; it is the product of the position integrations, including the Gaussian normalisation factors. The kernel is central term by term, hence in the limit: the path integral for a spin-0 particle is a complex scalar, and the module factor is untouched. The measure is not supplied by the algebra — the paths are trajectories in the material sector's configuration space, and the algebra labels their endpoints and supplies the phase — and this is one of the gaps the companion article records.
@@ -128,10 +128,10 @@ The measure $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ is defined by the limit a
 For $V=0$ the short-time kernel is exact for every $\varepsilon$, and the Trotter product telescopes. The momentum integral can be done once for all time,
 
 $$
-K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
+\boxed{\;K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
 = \int\frac{d^3p}{(2\pi\hbar)^3}\,\exp(\,i\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\hbar)\,\exp(-i\varepsilon p^2/2m\hbar)\Big|_{\varepsilon\to t'}
 = \left(\frac{m}{2\pi i\hbar t'}\right)^{3/2}
-\exp\left(\frac{im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2}{2\hbar t'}\right),
+\exp\left(\frac{im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2}{2\hbar t'}\right)\;},
 $$
 
 which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2t'$ over $\hbar$. The squared modulus is the spreading density $|K_0|^2=(m/2\pi\hbar t')^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
@@ -162,10 +162,10 @@ and which was verified numerically on a superposition of two Gaussian packets to
 For $V=\frac12m\omega^2x^2$ the kernel can still be computed exactly, and it is the standard oscillator propagator
 
 $$
-K_\omega(x,t';x_0,0)
+\boxed{\;K_\omega(x,t';x_0,0)
 =\left(\frac{m\omega}{2\pi i\hbar\sin\omega t'}\right)^{1/2}
 \exp\left[\frac{im\omega}{2\hbar\sin\omega t'}
-\Big((x^2+x_0^2)\cos\omega t'-2xx_0\Big)\right],
+\Big((x^2+x_0^2)\cos\omega t'-2xx_0\Big)\right]\;},
 $$
 
 a complex scalar times $e_t$. It is obtained by the Feynman–Hibbs ansatz: because the action is quadratic, the kernel has the form $K=F(t')\exp(iS_{\mathrm{cl}}/\hbar)$ with
@@ -271,12 +271,12 @@ $$
 the quadratic fluctuation integral is Gaussian and gives the **van Vleck kernel**
 
 $$
-K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)
+\boxed{\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)
 \ \approx\
 \left(\frac{1}{2\pi i\hbar}\right)^{3/2}
 \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}
 \exp\left(\frac{i}{\hbar}S_{\mathrm{cl}}\right)
-\ =\ A_{\mathrm{WKB}}\,\exp(\,iS_{\mathrm{cl}}/\hbar),
+\ =\ A_{\mathrm{WKB}}\,\exp(\,iS_{\mathrm{cl}}/\hbar)\;},
 $$
 
 where the determinant is the van Vleck determinant, the same amplitude that the transport equation of the semiclassical wave-function method produces. In the biquaternion interpretation the semiclassical kernel is central for the same reason as the exact kernel: the action is a real scalar, the determinant is real, and the prefactor is a function of the central $i$ and $\hbar$. The square root $\sqrt{i}$ in $(2\pi i\hbar)^{-3/2}$ is taken inside the centre, which is where the Maslov phases $\pm\frac{\pi}{2}$ and $\pm\frac{\pi}{4}$ come from; the companion article on the path integral develops that point, and the free kernel and the oscillator kernel above are the exact cases in which the semiclassical form is exact (the free kernel everywhere, the oscillator kernel away from caustics).

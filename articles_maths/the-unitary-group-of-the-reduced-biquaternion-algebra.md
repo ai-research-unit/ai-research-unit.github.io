@@ -20,8 +20,6 @@ The classical unitary condition reads $P_{\mathrm{ts}}P^{*}=1$, and in the idemp
 
 The article owns the two unitary groups, the retraction of the unit group onto the compact one, the retraction of the norm-one group onto its compact part, and the homotopy invariants of all of them. The dagger and the involutions are *The Two Involutions and the Group of Involutions*; the four products and the four norms are *The Four Products, Their Forms and Their Algebraic Norms*; the group of units and its Lie structure are *The Group of Units of the Algebra of the Reduced Biquaternions* and *Reduced Biquaternion Lie Group and Exponential Structure*; the metric and the topology of the space are *Topology and Metric for Each of the Operations* and *The Euclidean Topology of the Reduced Biquaternion Algebra*; the norm-one group of the multiplication is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*. The non-commutative companion, where the unitary group is $\mathrm{U}(2)$ and the topology of the unit group follows from it, is *The Unitary Group of the Biquaternion Algebra*.
 
-**Conventions.** A general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, and the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The group of units is $\mathbb{B}_{\mathrm{r}}^{\times}=\{Q_{+}Q_{-}\neq0\}$, the topological norm is $\langle\cdot\rangle_{\mathrm{ts}*}$, and the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ is the algebraic norm, an element of the algebra, not a positive real.
-
 ## The Unitary Group of the Definite Form
 
 **Proposition (the classical condition).** For a unit $P$ the following are equivalent: $P_{\mathrm{ts}}P^{*}=1$; $\langle P \breve Q\rangle_{\mathrm{ts}*}=\langle \breve Q\rangle_{\mathrm{ts}*}$ for every $\breve Q$; and $|p|=|q|=1$ in the idempotent coordinates $P=p\Pi_++q\Pi_-$.
@@ -31,7 +29,9 @@ The article owns the two unitary groups, the retraction of the unit group onto t
 **Theorem (the unitary group is a torus).** The unitary group of the definite form,
 
 $$
-\mathrm{U}(\mathbb{B}_{\mathrm{r}})=\{P\in\mathbb{B}_{\mathrm{r}}^{\times}:P_{\mathrm{ts}}P^{*}=1\}=\{p\Pi_++q\Pi_-:|p|=|q|=1\}\cong \mathrm{U}(1)\times \mathrm{U}(1)=\mathbb{T}^{2},
+\boxed{\;
+\mathrm{U}(\mathbb{B}_{\mathrm{r}})=\{P\in\mathbb{B}_{\mathrm{r}}^{\times}:P_{\mathrm{ts}}P^{*}=1\}=\{p\Pi_++q\Pi_-:|p|=|q|=1\}\cong \mathrm{U}(1)\times \mathrm{U}(1)=\mathbb{T}^{2}
+\;},
 $$
 
 is a compact abelian real two-dimensional torus; it is the maximal compact subgroup and the maximal torus of the group of units, and it is the group of multiplicative isometries of $\langle\cdot\rangle_{\mathrm{ts}*}$.
@@ -41,7 +41,9 @@ is a compact abelian real two-dimensional torus; it is the maximal compact subgr
 **Corollary (the decomposition).** The group of units is the direct product of the unitary torus and the positive part,
 
 $$
-\mathbb{B}_{\mathrm{r}}^{\times}=\mathbb{T}^{2}\times\mathbb{R}_{>0}^{2},
+\boxed{\;
+\mathbb{B}_{\mathrm{r}}^{\times}=\mathbb{T}^{2}\times\mathbb{R}_{>0}^{2}
+\;},
 $$
 
 through the polar decomposition $p=|p|\exp(i\theta_{1})$, $q=|q|\exp(i\theta_{2})$, and the topological norm of a unit is $\langle P\rangle_{\mathrm{ts}*}=\tfrac12(r_{1}^{2}+r_{2}^{2})$.
@@ -53,7 +55,9 @@ through the polar decomposition $p=|p|\exp(i\theta_{1})$, $q=|q|\exp(i\theta_{2}
 **Proposition (the indefinite unitary group).** The units that preserve the indefinite Hermitian form $\langle\cdot,\cdot\rangle_{*}$ are
 
 $$
-\mathrm{U}(\mathbb{B}_{\mathrm{r}},H)=\{p\Pi_++q\Pi_-:p\bar q=1\}=\{p\Pi_++\bar p^{-1}\Pi_-\}\cong\mathbb{C}^{\times},
+\boxed{\;
+\mathrm{U}(\mathbb{B}_{\mathrm{r}},H)=\{p\Pi_++q\Pi_-:p\bar q=1\}=\{p\Pi_++\bar p^{-1}\Pi_-\}\cong\mathbb{C}^{\times}
+\;},
 $$
 
 a non-compact abelian group isomorphic to the multiplicative group of the complex field, homotopy equivalent to a circle.

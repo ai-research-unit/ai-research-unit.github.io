@@ -7,10 +7,6 @@ This article collects the topology of the split-complex algebra $\mathbb{D}=\mat
 
 The article uses the algebra of *Split-Complex Algebra*, the norm $\langle Q\rangle_{*}=q^2-q'^2$ and the invertibility criterion of *Norm and Invertibility in the General Split-Complex Algebra*, the zero-divisor set of *Zero Divisors of the Split-Complex Algebra*, the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, and the group structure of *Split-Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
 
-**Scope.** The topology of the **group of units** beyond its component count — the exponential, the Lie correspondence and the homotopy of the components — is treated in *Split-Complex Exponential and Lie Group Structure*; the component count of $\mathbb{D}^\times$ is in *Norm and Invertibility in the General Split-Complex Algebra*; this article owns the ambient space and its distinguished subsets, and takes the component structure of $\mathbb{D}^\times$ from those articles for the comparison. The null quadric of the norm as a projective object is the subject of *Split-Complex Null Quadric and Projective Geometry*.
-
-**Conventions.** The basis is $1$, $j$ with $j^2=+1$; $Q=q+jq'$ with $q,q'\in\mathbb{R}$; conjugate $\bar Q=q-jq'$; idempotents $\Pi_\pm=\tfrac12(1\pm j)$; idempotent coordinates $Q_\pm=q\pm q'$. The norm is $\langle Q\rangle_{*}=q^2-q'^2$, the units are $\mathbb{D}^\times=\{\langle Q\rangle_{*}\neq 0\}$, and the Euclidean norm is $\lVert Q\rVert_E=(q^2+q'^2)^{1/2}$.
-
 ## The Algebra as a Topological Space
 
 The real basis $\{1,j\}$ gives a linear isometry

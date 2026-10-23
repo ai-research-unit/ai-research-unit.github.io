@@ -4,9 +4,7 @@
 
 This article treats the **modulus–unit polar decomposition** of a quaternion: the writing
 
-$$
-\tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
-$$
+$$ \boxed{\; \tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1 \;} ,$$
 
 with $r$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the **rotor**: a unit real quaternion is a rotor (*Conventions in Mathematics*, §*Symbols*), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the sandwich by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (*Exponential Polar Decomposition of Quaternions*, §*The Rotor Part*). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
 
@@ -56,9 +54,7 @@ $$
 
 It satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}/r^2 = 1$, so it lies on the **unit sphere**
 
-$$
-\mathrm{Sp}(1) = \{\,\tilde u\in\mathbb{H} : \langle\tilde u\rangle_{\natural} = 1\,\} = S^3 .
-$$
+$$ \boxed{\; \mathrm{Sp}(1) = \{\,\tilde u\in\mathbb{H} : \langle\tilde u\rangle_{\natural} = 1\,\} = S^3 \;} .$$
 
 The sphere is a group under multiplication. If $\langle\tilde u_1\rangle_{\natural} = \langle\tilde u_2\rangle_{\natural} = 1$ then multiplicativity gives $\langle\tilde u_1\tilde u_2\rangle_{\natural}=1$, and the inverse of a unit is its conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, because $\tilde u\tilde u^{\natural}=1$. The sphere is a closed and bounded subset of $\mathbb{H}\cong\mathbb{R}^4$, hence compact, and it is connected. It is not abelian: $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. The complex unit circle is abelian, and this is the first structural difference between the two cases.
 
@@ -102,9 +98,7 @@ $$
 
 Hence
 
-$$
-\mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times S^3,
-$$
+$$ \boxed{\; \mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times S^3 \;} ,$$
 
 the product of the positive scale line and the unit sphere. The product is direct because every positive real is central: the two factors commute, and their intersection is the identity.
 

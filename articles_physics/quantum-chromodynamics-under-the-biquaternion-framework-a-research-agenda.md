@@ -20,8 +20,6 @@ The discipline this forces on the article is the one the genre requires: **an ag
 
 The four obstacles the agenda treats are the **colour group** (§"The Colour Group"), **confinement** (§"Confinement"), the **chiral-fermion issue** as it bears on the quark couplings (§"The Chiral-Fermion Issue"), and the **running coupling and asymptotic freedom** (§"The Running Coupling"). They are not independent: the last needs the first and the third, and confinement needs apparatus all of them need. A closing ledger collects them, and a short synthesis names the two upstream items.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. For the non-abelian sector we use the $\mathrm{SU}(2)$ connection and field strength of the read list, $\mathcal{A}_\mu \in \mathrm{SU}(2)$, $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa = ϙ/\hbar$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. The symbols $SU(3)$, $N_c$, $T^a$, $N_f$, and $\alpha_s$ are **standard QCD notation, not framework objects**; they are used only where standard results are being quoted or where an object is being named as missing.
-
 ## What the Framework Already Reaches
 
 ### The non-abelian gauge construction
@@ -65,18 +63,16 @@ $$
 
 so the compact algebra present is $\mathrm{U}(1)\oplus\mathrm{SU}(2) = \mathrm{U}(2)$, of real dimension $4$. This is exactly the anti-Hermitian subspace of $\mathbb{B}\cong M_2(\mathbb{C})$: anti-Hermitian $2\times2$ complex matrices *are* the Lie algebra $\mathrm{u}(2)$, and the Cartan decomposition of the real Lie algebra $\mathrm{GL}(2,\mathbb{C})$ is
 
-$$
-\mathrm{GL}(2,\mathbb{C}) \;=\; \mathrm{U}(2) \;\oplus\; i\,\mathrm{U}(2),
-\qquad \dim_\mathbb{R} = 4 + 4 = 8,
-$$
+$$\boxed{\;\mathrm{GL}(2,\mathbb{C}) \;=\; \mathrm{U}(2) \;\oplus\; i\,\mathrm{U}(2),
+\qquad \dim_\mathbb{R} = 4 + 4 = 8\;},$$
 
 with $[\mathrm{U}(2),\mathrm{U}(2)]\subseteq\mathrm{U}(2)$ and $[\mathrm{U}(2),i\mathrm{U}(2)]\subseteq i\mathrm{U}(2)$. The decomposition was checked on a basis of $\mathrm{U}(2)$ and the brackets close as stated. Because every compact subalgebra of a real Lie algebra lies in a maximal compact subalgebra, and the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$ is $\mathrm{U}(2)$, **any compact gauge algebra that is a subalgebra of $\mathbb{B}$ under the commutator has real dimension at most $4$.**
 
 The matter side has the matching ceiling. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and Artinian, so every module is a direct sum of copies of its unique simple module, which is $\mathbb{C}^2$. Consequently **every $\mathbb{B}$-module has complex dimension divisible by two.** A colour triplet — a complex three-dimensional internal space for the quark — is not a $\mathbb{B}$-module.
 
 $$
-\dim_\mathbb{C} M = 2k \ \ (k \in \mathbb{Z}_{\ge 0}) \quad\text{for every } \mathbb{B}\text{-module } M,
-\qquad\text{so } \dim_\mathbb{C} = 3 \text{ is impossible.}
+\boxed{\;\dim_\mathbb{C} M = 2k \ \ (k \in \mathbb{Z}_{\ge 0}) \quad\text{for every } \mathbb{B}\text{-module } M,
+\qquad\text{so } \dim_\mathbb{C} = 3 \text{ is impossible.}\;}
 $$
 
 This is the precise ceiling of the present construction, and it is what makes the colour group an obstacle rather than a gap with a known route. It is not a failure of the framework's arithmetic; it is a statement about the carrier. The non-abelian machinery is real, and it is real for $\mathrm{U}(2)$; colour needs a compact simple algebra of dimension $8$ and a three-dimensional module, and neither is available in $\mathbb{B}$ on the present construction.

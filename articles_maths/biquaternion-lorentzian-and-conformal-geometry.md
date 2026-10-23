@@ -6,10 +6,6 @@ The biquaternion algebra carries two real slices whose geometries differ, and th
 
 The article presupposes the biquaternion norm and its real forms (*Norm and Invertibility in the General Quaternionic Algebra*), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (*The Null Quadric and Its Projective Geometry*), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Criterion*, is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
-
----
-
 ## The Sign of the Form as the Organising Data
 
 In the Cayley–Klein picture a geometry is its group of motions, and the geometry the algebra carries is read from the real form of the norm. The norm is complex-valued, so it has no signature by itself; the signature appears on a real form, and the sign of the restricted form is the organising datum:
@@ -26,7 +22,7 @@ The same algebra carries the several geometries at once, and the passage from on
 By the table of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2$. Either subspace is thereby identified with Lorentzian space $\mathbb{R}^{1,3}$, and its null set,
 
 $$
-\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_t)^2=q_x^2+q_y^2+q_z^2,
+\boxed{\;\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_t)^2=q_x^2+q_y^2+q_z^2\;},
 $$
 
 is the **null cone**, a double cone with apex at the origin. With this identification, the **null biquaternions of the Lorentzian subspace** are exactly the elements of the null cone.
@@ -47,7 +43,7 @@ One further distinction belongs here. The Lorentz group acts on the slice and is
 
 Take the Lorentzian real form $\mathbb{M}_+\cong\mathbb{R}^{1,3}$ of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*. Its null cone, whose projectivisation is the sphere
 $$
-\mathbb{P}(\mathcal{N}\cap\mathbb{M}_+)\cong S^2,
+\boxed{\;\mathbb{P}(\mathcal{N}\cap\mathbb{M}_+)\cong S^2\;},
 $$
 the **celestial sphere** of null directions. This $S^2$ is a real slice of $Q^2$, the real locus of one real form.
 
@@ -62,7 +58,7 @@ The Lorentz group is the conformal group of the projective null cone. The confor
 
 **The group.** The conformal compactification of $\mathbb{R}^{1,3}$ is a quadric in $\mathbb{R}^{2,4}$, and its transformation group is $O(2,4)$, of real dimension $15$; its identity component is $SO^+(2,4)\cong SO(4,2)$. Its double cover is
 $$
-SU(2,2)\cong Spin(4,2),
+\boxed{\;SU(2,2)\cong Spin(4,2)\;},
 $$
 acting on a four-dimensional complex space that carries a Hermitian form of signature $(2,2)$, the biquaternion algebra read as a complex vector space. The fifteen dimensions are the six of the Lorentz group, the four of the translations, the four of the special conformal transformations, and the dilation.
 

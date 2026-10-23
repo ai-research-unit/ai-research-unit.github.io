@@ -21,13 +21,15 @@ The map $\tilde Q_3\mapsto L_{\tilde Q_3}$ is $\mathbb{C}$-linear and injective:
 **Proposition (the matrix in the coefficient basis).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with the columns the images of the basis elements,
 
 $$
+\boxed{\;
 M_{\tilde Q_3} = L_{\tilde Q_3} =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 -Q_{3x} & Q_{3t} & Q_{3z} & -Q_{3y} \\
 -Q_{3y} & -Q_{3z} & Q_{3t} & Q_{3x} \\
 -Q_{3z} & Q_{3y} & -Q_{3x} & Q_{3t}
-\end{pmatrix}.
+\end{pmatrix}
+\;}.
 $$
 
 In the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and writing $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde Q_4,\tilde Q_5$ real, the matrix is the realification of the complex one,
@@ -54,9 +56,7 @@ where $P$ is the projection onto the vector part and the vector block of $\Lambd
 
 **Proposition (the trace).** The trace of the operator is
 
-$$
-\operatorname{Tr}L_{\tilde Q_3} = 3Q_{3t} ,
-$$
+$$ \boxed{\; \operatorname{Tr}L_{\tilde Q_3} = 3Q_{3t} \;}, $$
 
 the sum of the three diagonal entries $Q_{3t}$ on the vector lines. The trace vanishes exactly on the vector subspace, and it vanishes identically on the quotient by the image, since the operator maps into $\mathrm{Vect}(\mathbb{B})$ and the induced operator on the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ is zero.
 
@@ -87,9 +87,7 @@ The rank therefore drops exactly on the isotropic cone of the norm, where $\lang
 
 **Proposition.** The kernel of $L_{\tilde Q_3}$ always contains $\tilde Q_3$, since $\tilde Q_3\diamond\tilde Q_3=0$; the image is always contained in the vector subspace, since the values of the operation are pure vectors. Off the isotropic cone, with $\langle\tilde Q_3\rangle_{\natural}\neq0$,
 
-$$
-\ker L_{\tilde Q_3} = \mathbb{C}\tilde Q_3 , \qquad \operatorname{Im}L_{\tilde Q_3} = \mathrm{Vect}(\mathbb{B}) ,
-$$
+$$ \boxed{\; \ker L_{\tilde Q_3} = \mathbb{C}\tilde Q_3 , \qquad \operatorname{Im}L_{\tilde Q_3} = \mathrm{Vect}(\mathbb{B}) \;}, $$
 
 of complex dimensions one and three; on the isotropic cone, for $\langle\tilde Q_3\rangle_{\natural}=0$ and $\tilde Q_3\neq0$, the kernel and the image are both of dimension two.
 

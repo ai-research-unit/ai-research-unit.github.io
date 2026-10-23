@@ -8,8 +8,6 @@ This article states the three-dimensional scattering theory of the same operator
 
 The article is organised as follows. A first section fixes the three-dimensional setting and the two one-sided multiplications, which are the source's notational pivot. A second recalls how Maxwell's equations become a Dirac-type system in a medium and states the force-free case. A third gives the two factorisations of the Helmholtz equation, by a scalar shift and by a vector one. A fourth states the outgoing fundamental solution of the Helmholtz operator, the boundary representation it gives, and the radiation condition, including the zero-divisor caveat recorded beside that condition in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*. A fifth states the scattering problem and the integral equation equivalent to it. A sixth assembles the two inputs of the uniqueness theorem. A seventh gives Faddeev's Green's function. A closing section separates what the source establishes from what it transcribes, and lists the open questions.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe*, *Introduction to the Biquaternion Universe* and *Biquaternion Regular Functions*. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu+\vec e_\nu \vec e_\mu=-2\delta_{\mu\nu}e_t$ for $\mu,\nu\ge1$, and central scalar imaginary $i$. The spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions* is $D_3 = \sum_{\mu=1}^{3}\vec e_\mu\,\partial/\partial Q_\mu$, with $D_3^2=-\Delta$ and $\Delta$ the Laplacian of $\mathbb{R}^3$; the corpus's other square root is $D = iD_3$, with $D^2=\Delta$, and the source writes its operator $D$ and means $D_3$, so **every occurrence of the source's $D$ is read here as $D_3$**. The Helmholtz fundamental solution is $\Theta_\alpha = -\exp(i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ of *Biquaternion Regular Functions* and *Electromagnetism in Media — The Local Complex Structure at Work*, and the shifted family is $D_{3\pm\alpha} = D_3\pm\alpha$ of *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*, with fundamental solutions $\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\Theta_\alpha$ there. The null quadric $\langle\tilde Q\rangle_{\natural}=0$, the zero divisors $\mathcal Z$ and the scalar/vector/paravector subspaces are those of *Zero Divisors of the Biquaternion Algebra*, *Zero Divisors as a Physical Locus in Biquaternionic Form* and *The Light Cone as the Biquaternion Zero-Divisor Cone*. The fields live on $\mathbb{R}^3$ unless a variable is named, $G$ is a domain there, and $\vec u_x = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert$. We write $S(q)$ for the scalar part of a biquaternion $q$ and $V(q)$ for its pure part, and the quaternion conjugation is $\bar q = S(q)-V(q)$; in the source the pure part is written $q$ again, and its display of $V(q)$ in the preliminaries omits the summands, an evident slip for $V(q)=\sum_{\mu=1}^3 q_\mu \vec e_\mu$.
-
 The interpretation list for the parts the corpus already owns is short: *Biquaternion Regular Functions* for the shifted operator; *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* for the radiation condition and its reductions; *Electromagnetism in Media — The Local Complex Structure at Work* for the Helmholtz kernel; *The Biquaternion D'Alembertian and Its Green's Functions* and *Exercise: The Retarded Potentials and the Green's Function* for the four-dimensional Green's functions, which this article does not use; and *Quaternion Harmonic Analysis* for the Radon and Fourier-slice side of tomography, which is the measured side rather than the scattering side. The mathematics sources for the ingredients the article transcribes are *Clifford Analysis* for monogenic functions, *Integrable Systems* and *Soliton Theory* for the one-dimensional inverse scattering transform, and *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form* for the Born approximation as the corpus already has it.
 
 ## The Three-Dimensional Setting and the Two Multiplications
@@ -221,7 +219,7 @@ and if $k$ is a zero divisor, the additional hypothesis $u^s(x)=o(1)$. The multi
 The source's Theorem 8.2 states that the differential problem and an integral equation of Lippmann–Schwinger type have the same solutions. If $u$ solves (8.1)–(8.4), then $u$ restricted to $G$ solves
 
 $$
-u(x) = u^{i}(x) - \int_G \Bigl[(-D_3F_k)(x-y)\,u(y)\,m(y)\,k + u(y)\,m(y)\,k\,F_k(x-y)\,k\Bigr] dy , \tag{8.5}
+\boxed{\;u(x) = u^{i}(x) - \int_G \Bigl[(-D_3F_k)(x-y)\,u(y)\,m(y)\,k + u(y)\,m(y)\,k\,F_k(x-y)\,k\Bigr] dy , \tag{8.5}\;}
 $$
 
 and conversely every solution of (8.5) solves the scattering problem. The equivalence is not a formality, and its two halves are computed in the source. In the forward direction one forms the integral $b$ on the right of (8.5); since the kernel of the Helmholtz operator is a fundamental solution, $b$ solves the same inhomogeneous equation as $u$, so $w=u-b$ solves the **homogeneous** equation $D_3w+wk=0$; and because each kernel decays like $\lvert x\rvert^{-2}$ and $u,m$ have compact support, $w$ is an outgoing solution of the homogeneous equation, whence $w=0$ by the representation of the radiation-condition proposition. That is, the integral equation is the differential problem with the radiation condition solved out, and the forcing term is the potential. In the other direction the same computation is read backwards, and the source notes that the region of integration may be replaced by any domain containing the support of $m$, which is what makes the equation a Fredholm equation on a bounded domain.
@@ -324,8 +322,8 @@ $$
 Its Fourier transform is multiplication by $\xi^2+2t\gamma\cdot\xi-\lambda^2$; replacing the real $t$ by a complex parameter $z$, the symbol is invertible away from $\operatorname{Im}(z)=0$, and the **Faddeev Green's operator** is defined by the inverse of that symbol,
 
 $$
-\bigl(g_\gamma(\lambda,z)f\bigr)(x) = \frac{1}{(2\pi)^3}\int \frac{\exp(ix\cdot\xi)}{\xi^2+2z\gamma\cdot\xi-\lambda^2}\,f(\xi)\,d\xi ,
-\qquad \gamma\in S^2,\ \lambda\ge0,\ z\in\mathbb{C}_+ = \{z : \operatorname{Im}(z)>0\} ,
+\boxed{\;\bigl(g_\gamma(\lambda,z)f\bigr)(x) = \frac{1}{(2\pi)^3}\int \frac{\exp(ix\cdot\xi)}{\xi^2+2z\gamma\cdot\xi-\lambda^2}\,f(\xi)\,d\xi ,
+\qquad \gamma\in S^2,\ \lambda\ge0,\ z\in\mathbb{C}_+ = \{z : \operatorname{Im}(z)>0\}\;},
 $$
 
 with the boundary value $g_\gamma(\lambda,t+i0)$ for real $t$. The symbol is non-degenerate for $\operatorname{Im}(z)\ne0$, so the integral converges absolutely for Schwartz $f$: this is the gain of the construction, an invertible symbol where the Helmholtz symbol is not.
@@ -341,13 +339,13 @@ $$
 The two Green's functions of the shifted operators are then obtained by applying the first-order operator to $g_\gamma$: the source gives
 
 $$
-G^{\mathrm L}_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-k)\,g_\gamma(\lambda,z)
+\boxed{\;G^{\mathrm L}_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-k)\,g_\gamma(\lambda,z)\;}
 $$
 
 for the left-multiplication case, obtained from $(D_3+M^{iz\gamma}-k)(D_3+M^{iz\gamma}+k) = -\Delta-2iz\gamma\cdot\nabla-\lambda^2$ with $\lambda^2=k^2-z^2$, and a **different** Faddeev Green's function
 
 $$
-G^{\mathrm R}_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-M_{ik})\,g_\gamma(\lambda,z)
+\boxed{\;G^{\mathrm R}_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-M_{ik})\,g_\gamma(\lambda,z)\;}
 $$
 
 for the right-multiplication case, from the corresponding factorisation with the right multiplications. The two differ because the two sides of the multiplication differ, and the source's own remark is the blunt one: "the multiplication from the other side leads to a different Faddeev's Green's function". The properties are restated as a theorem: the same continuity and analyticity as $g_\gamma$, and for $s>\tfrac12$, $\lambda+\lvert z\rvert\ge\delta_0$ and $0\le\alpha\le1$ a constant $C$ with

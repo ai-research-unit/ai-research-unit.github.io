@@ -13,8 +13,6 @@ the ordinary left multiplication applied to the twisted argument. It agrees with
 
 A word of disambiguation begins the account, because the corpus writes two different operators with the adjective signed in front of "left multiplication". In this article the twist is on the **argument**, $\mathrm{L}^{\alpha}_a=L_a\alpha$; in *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* and *The Graded Multiplication Operators* the twist is on the **parameter**, $\Lambda^{\alpha}_x(y)=\alpha(x)y$. The two agree only on the even part, and their purposes differ: the parameter twist belongs to the inner conjugation and the versor theory, the argument twist to the signed product and the reflections. Only the argument twist is treated here.
 
-**The boundaries.** The one-sided calculus, the commutant and the composition of the ordinary families are *One-Sided Operators on a Clifford Algebra*; the signed product, its composition law and its fixed elements are *One-Sided Operators with the Signed Product*, and the two-sided version is *Two-Sided Operators with the Signed Product*; the parameter-twisted family is *The Graded Multiplication Operators*. The signed sandwich formed from the two factors is *The Signed Sandwich on a Clifford Algebra*, and the reflections are *Reflections as Signed Two-Sided Operators on a Clifford Algebra*. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
-
 ## The Operator
 
 ### Definition and Elementary Properties

@@ -91,7 +91,7 @@ where $\{\partial/\partial Q_\mu \tilde{F}\}$ denotes the classical derivative a
 Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ in a homogeneous medium, and separating the surface terms, one obtains the **jump condition** on $S$:
 
 $$
-\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0.
+\boxed{\;\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0\;}.
 $$
 
 **Consequence for a homogeneous medium.** In a homogeneous medium, the normal $\tilde U_{\mathrm n}$ is invertible for any **non-characteristic** surface. For such surfaces, the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ forces the jump to vanish:
@@ -111,7 +111,7 @@ So a discontinuity cannot propagate on a non-characteristic surface; the field m
 If the surface $S$ is a **characteristic** surface (the light cone), the jump condition admits nontrivial solutions. On the light cone, the normal is a zero divisor, and the jump condition becomes the **wave-front condition**
 
 $$
-[\tilde{F}]_S = -i\,[\tilde{F}]_S \times n,
+\boxed{\;[\tilde{F}]_S = -i\,[\tilde{F}]_S \times n\;},
 $$
 
 where $n$ is the spatial part of the normal to the moving surface. This is the condition for a **propagating wave front** in linear vacuum Maxwell. It is the same as the boundary condition for a wave front in the geometric-optics limit, and it does not describe a shock in the fluid-dynamic sense.
@@ -351,7 +351,7 @@ For a shock front in a nonlinear medium, the **energy** of the electromagnetic f
 Let $\tilde{W}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde U_{\mathrm n}$, the jump satisfies
 
 $$
-[\tilde U_{\mathrm n}\tilde{W}]_S = -[\tilde{\mathcal F}]_S,
+\boxed{\;[\tilde U_{\mathrm n}\tilde{W}]_S = -[\tilde{\mathcal F}]_S\;},
 $$
 
 where $\tilde{\mathcal F}$ is the biquaternionic power–force density. This is the biquaternionic form of the **Rankine–Hugoniot condition** for electromagnetic shocks, and it is the counterpart of the standard conservation-law relation for fluid shocks.

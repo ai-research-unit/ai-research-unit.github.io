@@ -6,17 +6,11 @@ The symmetric plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2 = \
 
 The result that organises the article is that the form is the **definite** form of the algebra, of signature $(8,0)$ on the real space, while the product it defines is **rank one** and central: the image is the centre $\mathbb{C}_{\mathbb{B}}$, the form is recovered as the trace form $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and the invariance that the trace form of the symmetric plain block enjoys — the invariance of a Jordan product — **fails** here. The two facts are one: a product whose values are central and whose form is definite cannot carry an associative or Jordan invariance, because the invariance is exactly the identity that forces the product to have a vector part.
 
-**Boundaries.** The form $\langle\cdot,\cdot\rangle_{*}$, its positivity, its cone, its signature and its Gram matrix are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* and *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*; they are cited here and not restated, and this article owns only the reading of $\langle\cdot,\cdot\rangle_{*}$ as the product of the block. The trace form and the invariance of the symmetric plain block are *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$ and its comparison are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* and *Comparison Between the Four General Products*. The remarkable subspaces are *Introduction to the Remarkable Subspaces*, and their reading under the general plain sesquilinear product is *Remarkable Subspaces under the General Plain Sesqualgebra*. Nothing topological and nothing metric appears; the form is used as an algebraic datum and no length, distance or norm of positive real values is written.
-
-**Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block product is $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ and $\langle\cdot,\cdot\rangle_{*}$ is the Hermitian form. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
-
 ## The Identification and the Rank-One Structure
 
 **Theorem (the block is the form read as a product).** For all $\tilde Q_1,\tilde Q_2$,
 
-$$
-\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t ,
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t \;}, $$
 
 and the assignment $\tilde Q_1\star\tilde Q_2 \mapsto \langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is a bijection between the products of the block and the values of the form; the block carries no information beyond the form.
 
@@ -30,9 +24,7 @@ and the assignment $\tilde Q_1\star\tilde Q_2 \mapsto \langle\tilde Q_1,\tilde Q
 
 **Proposition (the Gram matrix is the identity).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
 
-$$
-\langle e_\mu,e_\nu\rangle_{*} = \delta_{\mu\nu} , \qquad e_\mu\star e_\nu = \delta_{\mu\nu}e_t ,
-$$
+$$ \boxed{\; \langle e_\mu,e_\nu\rangle_{*} = \delta_{\mu\nu} , \qquad e_\mu\star e_\nu = \delta_{\mu\nu}e_t \;}, $$
 
 so the Gram matrix of the form on the algebra basis is the identity matrix, and the multiplication table of the block is that matrix times $e_t$.
 
@@ -62,9 +54,7 @@ real and strictly positive for $\tilde Q \neq 0$. Hence the form has **no isotro
 
 **Theorem (the inequality).** For all $\tilde Q_1,\tilde Q_2$,
 
-$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{*}\,\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}} \le \langle\tilde Q_1,\tilde Q_1\rangle_{*}\,\langle\tilde Q_2,\tilde Q_2\rangle_{*} ,
-$$
+$$ \boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{*}\,\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}} \le \langle\tilde Q_1,\tilde Q_1\rangle_{*}\,\langle\tilde Q_2,\tilde Q_2\rangle_{*} \;}, $$
 
 that is $\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2} \le \langle\tilde Q_1,\tilde Q_1\rangle_{*}\langle\tilde Q_2,\tilde Q_2\rangle_{*}$, with equality if and only if $\tilde Q_1$ and $\tilde Q_2$ are linearly dependent over $\mathbb{C}$.
 

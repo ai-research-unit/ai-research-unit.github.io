@@ -46,7 +46,7 @@ First, the **determinant classifies the transformation by the parity of the refl
 Second, and this is the point, the parity of the reflection count **is the grading of the Clifford algebra**:
 
 $$
-\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+} \oplus \mathrm{Cl}_{1,3}^{-}.
+\boxed{\;\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+} \oplus \mathrm{Cl}_{1,3}^{-}\;}.
 $$
 
 The even part is spanned by the identity, the six bivectors, and the pseudoscalar; the odd part by the four vectors and the four trivectors. An even element is a product of an even number of vectors — that is, of an even number of reflections — and an odd element of an odd number. The biquaternion algebra is the even part,
@@ -122,7 +122,7 @@ The frame $\gamma^0$ is not merely a bookkeeping element. It has a definite acti
 For every $\tilde{Q}\in\mathbb{B}$,
 
 $$
-\gamma^0\,\mathsf{M}_4(\tilde{Q})\,\gamma^0 = \mathsf{M}_4(\tilde{Q}^*),
+\boxed{\;\gamma^0\,\mathsf{M}_4(\tilde{Q})\,\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)\;},
 $$
 
 where $\tilde{Q}^*$ is the complex conjugate, $i\mapsto -i$ with the quaternion units fixed. Since complex conjugation is exactly the map that fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, this says that **conjugation by $\gamma^0$ is the sector-exchanging conjugation**: it is the spacetime-side avatar of the operation that separates the material and informational sectors.
@@ -262,7 +262,7 @@ $$
 from which the whole chirality behaviour follows. Every **even** element commutes with $\gamma_5$, so an even element maps each chiral half into itself; every **odd** element anticommutes with it — vectors and trivectors alike, hence every odd element — so an odd element exchanges the halves:
 
 $$
-\gamma^\mu \tilde\Pi_R = \tilde\Pi_L\,\gamma^\mu .
+\boxed{\;\gamma^\mu \tilde\Pi_R = \tilde\Pi_L\,\gamma^\mu\;}.
 $$
 
 Combine this with the grading of the second section and the statement is: **rotations preserve chirality, reflections reverse it.** A rotation cannot change which chiral half a spinor belongs to, and a reflection always does. Chirality is not an extra label attached to the spinor; it is the eigenvalue of the operator that tells the two halves of the algebra apart, and only the odd half moves it.

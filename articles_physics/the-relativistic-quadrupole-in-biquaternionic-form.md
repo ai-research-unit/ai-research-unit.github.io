@@ -165,11 +165,11 @@ $$
 and it is automatically traceless. For a boost along the $z$-axis it evaluates, in terms of the rest-frame second moments $D_{2,ij} = \int\rho_2x_{i,2}x_{j,2}\,d^3x_2$, to
 
 $$
-\Theta_{xx} = 2D_{2,xx} - D_{2,yy} - \frac{D_{2,zz}}{\gamma^2} ,
+\boxed{\;\Theta_{xx} = 2D_{2,xx} - D_{2,yy} - \frac{D_{2,zz}}{\gamma^2} ,
 \qquad
 \Theta_{yy} = 2D_{2,yy} - D_{2,xx} - \frac{D_{2,zz}}{\gamma^2} ,
 \qquad
-\Theta_{zz} = \frac{2D_{2,zz}}{\gamma^2} - D_{2,xx} - D_{2,yy} ,
+\Theta_{zz} = \frac{2D_{2,zz}}{\gamma^2} - D_{2,xx} - D_{2,yy}\;},
 $$
 
 $$
@@ -187,9 +187,9 @@ The trace vanishes identically, as it must. The transformation is a linear map o
 The transformation has a consequence worth isolating. A rest-frame **sphere** has $D_{2,ij} = \tfrac{1}{3}T_2\delta_{ij}$ with $T_2 = \int\rho_2r_2^{\,2}d^3x_2$, and therefore $\mathcal{Q}_{2,ij} = 0$: it is a pure monopole. Under the boost it acquires
 
 $$
-\Theta_{zz} = -\frac{2\beta^2}{3}\,T_2 ,
+\boxed{\;\Theta_{zz} = -\frac{2\beta^2}{3}\,T_2 ,
 \qquad
-\Theta_{xx} = \Theta_{yy} = +\frac{\beta^2}{3}\,T_2 ,
+\Theta_{xx} = \Theta_{yy} = +\frac{\beta^2}{3}\,T_2\;}
 $$
 
 an oblate quadrupole proportional to the square of the speed and to the source's mean-square radius. The result is purely kinematic and follows from the contraction of the slice on which the moment is measured; it is the tensor expression of the fact that a moving sphere is seen as an oblate spheroid. For a general rest-frame quadrupole the two effects add, and the longitudinal component reads
@@ -265,8 +265,8 @@ $$
 a consequence of the tracelessness of $\mathcal{Q}$ and of the elementary angular averages $\oint n_in_j\,d\Omega = \tfrac{4\pi}{3}\delta_{ij}$ and $\oint n_in_jn_kn_l\,d\Omega = \tfrac{4\pi}{15}(\delta_{ij}\delta_{kl}+\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk})$. The total radiated power is therefore
 
 $$
-P_{E2} = \frac{\mu_0\,\omega^6}{1440\,\pi\,c^3}\,\Theta_{ij}\Theta_{ij}
-= \frac{1}{4\pi\epsilon_0}\,\frac{1}{180\,c^5}\,\langle \,d^3Q_{ij}/d{t'}^3 d^3Q_{ij}/d{t'}^3\rangle ,
+\boxed{\;P_{E2} = \frac{\mu_0\,\omega^6}{1440\,\pi\,c^3}\,\Theta_{ij}\Theta_{ij}
+= \frac{1}{4\pi\epsilon_0}\,\frac{1}{180\,c^5}\,\langle \,d^3Q_{ij}/d{t'}^3 d^3Q_{ij}/d{t'}^3\rangle\;}
 $$
 
 where the second form is the standard one, and the two agree because a harmonic quadrupole $\Theta_{ij}\cos\omega t'$ has $\langle\,d^3Q_{ij}/d{t'}^3 d^3Q_{ij}/d{t'}^3\rangle = \tfrac{1}{2}\omega^6\Theta_{ij}\Theta_{ij}$. This is the standard long-wavelength electric-quadrupole result, reconstructed here from the radiation vector; the sixth power of the frequency is the reason each successive multipole is harder to excite.
@@ -352,13 +352,13 @@ The relativistic quadrupole is the first multipole above the dipole, and it diff
 Its tensor is symmetric and traceless, $\Theta_{ij} = \int\rho(3x_{i,2}x_{j,2}-r_2^2\delta_{ij})d^3x_2$, five components transforming as $D^{(2)}$. Under a boost along the motion, the lab-frame tensor of a source that is static in its rest frame is
 
 $$
-\Theta_{xx} = 2D_{2,xx}-D_{2,yy}-\frac{D_{2,zz}}{\gamma^2} ,
+\boxed{\;\Theta_{xx} = 2D_{2,xx}-D_{2,yy}-\frac{D_{2,zz}}{\gamma^2} ,
 \quad
 \Theta_{zz} = \frac{2D_{2,zz}}{\gamma^2}-D_{2,xx}-D_{2,yy} ,
 \quad
 \Theta_{xy} = 3D_{2,xy} ,
 \quad
-\Theta_{xz} = \frac{3D_{2,xz}}{\gamma} ,
+\Theta_{xz} = \frac{3D_{2,xz}}{\gamma}\;},
 $$
 
 with $\Theta_{yy}$ following from the trace condition. A rest-frame sphere acquires the oblate contraction quadrupole $\Theta_{zz} = -\tfrac{2}{3}\beta^2T_2$, $\Theta_{xx} = \Theta_{yy} = +\tfrac{1}{3}\beta^2T_2$, proportional to the mean-square radius $T_2 = \int\rho_2r_2^{\,2}d^3x_2$.

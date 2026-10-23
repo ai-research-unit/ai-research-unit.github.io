@@ -26,8 +26,6 @@ The biquaternion framework makes the first of the three exact, because the abeli
 
 The article proceeds as follows. The orbit is defined and its structure as a torsor is established. The orbit is then identified as the fibre of the curvature map, and the counting of physical degrees of freedom is extracted from the rank of that map. The information-theoretic invariance of the orbit is proved through the relative entropy, and the central triviality of the abelian phase is exhibited. The global information of the orbit — its holonomy — is then separated from its local emptiness. A comparison of redundancy, loss and relocation sets the article against its two companions. A closing ledger states what the algebra supplies and what it only transcribes.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ is the centre of the algebra and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and
-
 $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2 ,
 $$
@@ -53,7 +51,7 @@ $$
 forces every partial derivative of $\Gamma$ to vanish, so $\Gamma$ is constant. The kernel of $\Gamma \mapsto \tilde{\nabla}\Gamma$ is therefore the one-dimensional space of constants, and the group that acts freely and transitively on the orbit is $\mathcal{G}$ modulo those constants. The orbit is a copy of that group:
 
 $$
-\mathcal{O}(\tilde{A}) \;\cong\; \mathcal{G}\big/\mathbb{R}.
+\boxed{\;\mathcal{O}(\tilde{A}) \;\cong\; \mathcal{G}\big/\mathbb{R}\;}.
 $$
 
 A space on which a group acts freely and transitively is a **torsor**: it is a copy of the group, but with no distinguished identity point. There is no preferred member of the orbit — no "the" connection — because singling one out would require a gauge-fixing condition, and the canonical-quantization article of the series records that the framework supplies none.
@@ -184,7 +182,7 @@ $$
 Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:
 
 $$
-S(\tilde{Ϛ}_{\tilde{A}_2}\,\|\,\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1}) .
+\boxed{\;S(\tilde{Ϛ}_{\tilde{A}_2}\,\|\,\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1})\;}.
 $$
 
 This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde U\rho \tilde U^\dagger\|\tilde U\sigma \tilde U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
@@ -212,7 +210,7 @@ The orbit is locally trivial — a single point can always be gauged away — bu
 **Local elimination is always possible; global elimination is not.** As shown above, a connection can be gauged to zero at any point. It can be gauged to zero on a neighbourhood precisely when its curvature vanishes there, because a flat connection is locally a gradient. Globally, a flat connection need not be a gradient: its **holonomy** around a non-contractible loop is the obstruction. The holonomy is the path-ordered exponential of the connection around a closed curve,
 
 $$
-\tilde U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
+\boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right)\;},
 $$
 
 and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{M}_-$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.

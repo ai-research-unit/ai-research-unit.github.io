@@ -13,8 +13,6 @@ This is the **conjugation sandwich** of the biquaternion algebra, the member of 
 
 This article treats the operator: its factors, its multiplication law, its injectivity up to sign, its adjoint for the general quaternionic bilinear form, the criterion that singles it out among the products $L_aR_b$, its automorphisms, and its dagger adjoint. The general Clifford theory of the family is *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, to which this is the biquaternion instance; the one-sided factors are *One-Sided Operators on the General Quaternionic Algebra*; the groups cut out by the norm are *The Pin and Spin Groups of the General Quaternionic Algebra*; and the corresponding family over the Hermitian form is *Mixed Inner Conjugation on the General Plain Sesqualgebra*. The form, its matrix and its adjoint are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; nothing of the general theory is re-derived here.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The natural conjugation is $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, an anti-automorphism and an involution; the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, central and multiplicative; the general quaternionic bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, with $\langle\cdot,\cdot\rangle_{\natural}$-adjoint written ${}^{N}$, so that $\langle T\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,T^{N}\tilde Q_2\rangle_{\natural}$. The Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and its adjoint is written ${}^{*}$.
-
 ## The Operator and Its Factors
 
 **Definition.** For $\tilde Q_6\in\mathbb{B}$ the **twisted two-sided operator** of $\tilde Q_6$, or the **conjugation sandwich** by $\tilde Q_6$, is the $\mathbb{C}$-linear map
@@ -80,7 +78,7 @@ that is on the homogeneous elements of $\mathrm{Pin}$ — odd with $\langle\cdot
 **Proposition (composition).** For all $\tilde Q_6,\tilde Q_2$,
 
 $$
-\Theta_{\tilde Q_6}\circ\Theta_{\tilde Q_2}=\Theta_{\tilde Q_6\tilde Q_2}.
+\boxed{\; \Theta_{\tilde Q_6}\circ\Theta_{\tilde Q_2}=\Theta_{\tilde Q_6\tilde Q_2} \;}.
 $$
 
 *Proof.* $\Theta_{\tilde Q_6}\bigl(\Theta_{\tilde Q_2}(\tilde Q_1)\bigr)=\tilde Q_6\tilde Q_2\tilde Q_1\tilde Q_2^{\natural}\tilde Q_6^{\natural}=\tilde Q_6\tilde Q_2\tilde Q_1(\tilde Q_6\tilde Q_2)^{\natural}$ because ${}^{\natural}$ is an anti-automorphism.
@@ -102,8 +100,8 @@ $$
 **Proposition (the adjoint for the general quaternionic bilinear form).** The adjoint of $\Theta_{\tilde Q_6}$ for the general quaternionic bilinear form is $\Theta_{\tilde Q_6^{\natural}}$,
 
 $$
-\bigl(\Theta_{\tilde Q_6}\bigr)^{N}=\Theta_{\tilde Q_6^{\natural}},\qquad\text{that is}\qquad
-\bigl\langle\Theta_{\tilde Q_6}\tilde Q_1,\tilde Q_3\bigr\rangle_{\natural}=\bigl\langle\tilde Q_1,\Theta_{\tilde Q_6^{\natural}}\tilde Q_3\bigr\rangle_{\natural}.
+\boxed{\; \bigl(\Theta_{\tilde Q_6}\bigr)^{N}=\Theta_{\tilde Q_6^{\natural}},\qquad\text{that is}\qquad
+\bigl\langle\Theta_{\tilde Q_6}\tilde Q_1,\tilde Q_3\bigr\rangle_{\natural}=\bigl\langle\tilde Q_1,\Theta_{\tilde Q_6^{\natural}}\tilde Q_3\bigr\rangle_{\natural} \;}.
 $$
 
 *Proof.* The adjoint of a product of one-sided operators is the product of the adjoints in the reverse order, and the adjoints are $(L_{\tilde Q_6})^{N}=L_{\tilde Q_6^{\natural}}$ and $(R_{\tilde Q_2})^{N}=R_{\tilde Q_2^{\natural}}$ (*One-Sided Operators on the General Quaternionic Algebra*); hence $(\Theta_{\tilde Q_6})^{N}=(L_{\tilde Q_6}R_{\tilde Q_6^{\natural}})^{N}=(R_{\tilde Q_6^{\natural}})^{N}(L_{\tilde Q_6})^{N}=R_{\tilde Q_6^{\natural\,\natural}}L_{\tilde Q_6^{\natural}}=R_{\tilde Q_6}L_{\tilde Q_6^{\natural}}=\Theta_{\tilde Q_6^{\natural}}$, the factors commuting.
@@ -135,7 +133,7 @@ so it is multiplicative up to the scalar $\tilde Q_2\tilde Q_6$ – that is $L(\
 **Proposition (the norm of the image and the automorphisms).** For all $\tilde Q_6,\tilde Q_4$,
 
 $$
-\langle\Theta_{\tilde Q_6}(\tilde Q_4)\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}^{2}\langle\tilde Q_4\rangle_{\natural},
+\boxed{\; \langle\Theta_{\tilde Q_6}(\tilde Q_4)\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}^{2}\langle\tilde Q_4\rangle_{\natural} \;},
 $$
 
 so that $\Theta_{\tilde Q_6}$ is an automorphism of the general quaternionic bilinear form exactly when $\langle\tilde Q_6\rangle_{\natural}=\pm1$; its determinant is $\det\Theta_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}^{4}$ in the coefficient basis.

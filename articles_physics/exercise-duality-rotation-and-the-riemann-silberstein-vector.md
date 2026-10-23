@@ -27,7 +27,7 @@ with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian fo
 $$
 \boxed{\;\vec N \mapsto \exp(-i\theta)\,\vec N,
 \qquad \tilde F \mapsto \exp(-i\theta)\,\tilde F,
-\qquad \langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural},\;}
+\qquad \langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural}\;},
 $$
 it preserves $W$ and $\vec S$, rotates $(I_1,2cI_2)$ by $2\theta$, is a symmetry of the source-free equations and, with magnetic sources admitted, of the sourced equations as well. The exercise also records two defects in the parent: the ambiguous use of $\bar{\vec N}$ where $\vec N^*$ is meant, and the missing biquaternion Lorentz transformation law of $\tilde F$, whose obvious candidate fails for a boost.
 
@@ -325,8 +325,8 @@ $$
 $$
 so
 $$
-\tilde U^{\natural}\,\tilde F\,\tilde U
-= i\cosh\psi\,E_0\,\vec e_x + \sinh\psi\,E_0\,\vec e_y = \tilde F_{\mathrm D} .
+\boxed{\;\tilde U^{\natural}\,\tilde F\,\tilde U
+= i\cosh\psi\,E_0\,\vec e_x + \sinh\psi\,E_0\,\vec e_y = \tilde F_{\mathrm D}\;}.
 $$
 The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the rotation of part (a) is reproduced by $\tilde U\tilde F\tilde U^{*} = \tilde U\tilde F\tilde U^{-1}$. The two cases require different orderings, so no single one of these adjoint actions, with the parents' rotor conventions, is the Lorentz transformation law of $\tilde F$. The parent gives no law at all, and its claim that the two pieces "transform independently under the Lorentz group" is therefore unverified: the abstract representation-theoretic statement that the self-dual and anti-self-dual pieces carry the two complex conjugate three-dimensional representations is standard, but the biquaternion realization of that statement is not supplied, and the obvious candidate for it is false. Determining the correct biquaternion action — plausibly an adjoint action conjugated by a fixed linear map on the field-strength space — is left open. **This is the gap this exercise reports in its parent.**
 
@@ -348,9 +348,9 @@ The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the 
 
 The duality rotation of the electromagnetic field is the central phase rotation of the Riemann–Silberstein vector,
 $$
-\vec E \mapsto \vec E\cos\theta + c\,\vec B\sin\theta,
+\boxed{\;\vec E \mapsto \vec E\cos\theta + c\,\vec B\sin\theta,
 \qquad
-\vec B \mapsto \vec B\cos\theta - \frac{1}{c}\,\vec E\sin\theta,
+\vec B \mapsto \vec B\cos\theta - \frac{1}{c}\,\vec E\sin\theta\;},
 $$
 which is exactly $\vec N\mapsto \exp(-i\theta)\vec N$ and, because $\tilde F = i\sqrt{\epsilon}\vec N$, exactly $\tilde F\mapsto \exp(-i\theta)\tilde F$. The phase is the scalar imaginary $i$; it is central, so the rotation is an internal $\mathrm{U}(1)$ symmetry and not a Lorentz transformation.
 

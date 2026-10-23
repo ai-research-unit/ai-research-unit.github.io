@@ -9,8 +9,6 @@ The structure is the one of the two earlier articles on the homology with one la
 
 **The article assumes** everything of the group: *The Involution as an Operator on the Homology* (the module $H_*$ over $k[\mathbb{Z}/2]$ and the transfer), *The Involution on the Homology* (the interaction with the intersection form), *The Surgery Operator*, *The Handle Operator*, *The Dehn Twist as an Operator* and *The Mapping Class Group Action* (the operators whose equivariance is decided here), and the Steenrod operations of *The Steenrod Squares and the Cohomology Operations*.
 
-**The boundaries of the article.** The homology of an involution and the intersection form are the two articles of the group's first-homology family; the classification of the Hermitian forms and the surgery obstruction groups are *Hermitian Pairings and the Signature*, the next article of this group; the equivariant signature is *Hermitian Pairings and the Equivariant Signature*. The index theory of an equivariant elliptic operator is Part IV (*Index Theory and the Atiyah–Singer Theorem*). No analysis and no smooth structure is used beyond the statement of the Lefschetz fixed point theorem.
-
 ## The Conjugation Action on the Operators
 
 **Definition.** Let $T$ be an involution of a finite complex $M$ and let $H = H_*(M;k)$ be its homology over a ring $k$ in which $2$ is invertible. The involution acts on the endomorphism algebra by **conjugation**,

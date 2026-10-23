@@ -36,7 +36,7 @@ Both are additive in $\tilde Q_1$, since the multiplication is additive in each 
 **Proposition (the parities).** For every $\tilde Q_5$ the left multiplication $L_{\tilde Q_5}$ is conjugate-linear and the right multiplication $R_{\tilde Q_5}$ is linear:
 
 $$
-L_{\tilde Q_5}(\lambda\tilde Q_1)=\overline{\lambda}\,L_{\tilde Q_5}(\tilde Q_1), \qquad R_{\tilde Q_5}(\lambda\tilde Q_1)=\lambda\,R_{\tilde Q_5}(\tilde Q_1), \qquad \lambda\in\mathbb{C} .
+\boxed{\;L_{\tilde Q_5}(\lambda\tilde Q_1)=\overline{\lambda}\,L_{\tilde Q_5}(\tilde Q_1), \qquad R_{\tilde Q_5}(\lambda\tilde Q_1)=\lambda\,R_{\tilde Q_5}(\tilde Q_1), \qquad \lambda\in\mathbb{C}\;}.
 $$
 
 Consequently $L_{\tilde Q_5}$ is $\mathbb{R}$-linear and lies in the space of the conjugate-linear operators, while $R_{\tilde Q_5}$ is $\mathbb{C}$-linear.
@@ -92,7 +92,7 @@ the involution and the identity.
 **Theorem (the composite of two left multiplications).** For all $\tilde Q_5,\tilde Q_2$,
 
 $$
-L_{\tilde Q_5}L_{\tilde Q_2}=T_{\tilde Q_5,\tilde Q_2^{*}} ,
+\boxed{\;L_{\tilde Q_5}L_{\tilde Q_2}=T_{\tilde Q_5,\tilde Q_2^{*}}\;},
 $$
 
 the ordinary two-sided multiplication with the parameters $\tilde Q_5$ and $\tilde Q_2^{*}$. A nonzero such composite is $\mathbb{C}$-linear, so it is not a left multiplication; the left family is therefore not closed under composition, contains no identity, and forms no monoid.
@@ -106,7 +106,7 @@ the ordinary two-sided multiplication with the parameters $\tilde Q_5$ and $\til
 **Theorem (the composite of two right multiplications).** For all $\tilde Q_5,\tilde Q_2$,
 
 $$
-R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2} .
+\boxed{\;R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2}\;}.
 $$
 
 So the right multiplications are closed under composition, they contain the identity $R_{e_t}$, and they form a monoid isomorphic to the multiplicative monoid $(\mathbb{B},\cdot)$ of the algebra under $\tilde Q_5\mapsto R_{\tilde Q_5}$, in the forward order.

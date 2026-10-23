@@ -4,10 +4,6 @@
 
 Each of the four general products of the reduced biquaternion algebra carries a scalar-part form, and each form gives a real quantity on the space, the **modulus of the form at the difference of two elements**. This article collects the four quantities and asks, for each, whether it is a metric. Only the general tessarine sesquilinear form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ gives a genuine metric, $d(\breve Q_{1},\breve Q_{2})=\sqrt{\langle \breve Q_{1}-\breve Q_{2}\rangle_{\mathrm{ts}*}}$; the other three give **degenerate or indefinite** quantities, which vanish on non-zero differences or violate the triangle inequality, and the failures are exactly the sets the algebra is known for: the zero divisors, the isotropic sets of the bilinear forms and the null set of the indefinite form. The four products, however, are all continuous and all induce the **same** topology, the Euclidean one: the products differ in their metric-like quantities, not in their topology. The multiplication is **commutative**, **has zero divisors** and is **not a division algebra**, and the three degenerate quantities are the metrical shadow of the zero divisors.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$. The four products and the forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\mathrm{ts}}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ are *The Four Products, Their Forms and Their Algebraic Norms*, and the forms are *The Forms of the Algebra of the Reduced Biquaternions*. The element glyph is $\breve Q$, with the breve and without a tilde.
-
-**Boundaries.** The topology and the Euclidean norm are *Topology in the Space of Reduced Biquaternions*; the metric properties of the Euclidean space and the unit group are *The Euclidean Topology of the Reduced Biquaternion Algebra*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the analysis built on the metric is *Reduced Biquaternion Analysis*. The biquaternion counterpart is *Topology and Metric for Each of the Operations* of the biquaternion category.
-
 ## The Four Candidate Metrical Quantities
 
 **For each product, take the modulus of the form at the difference of two elements.**
@@ -56,7 +52,9 @@ where $F(\breve Q)$ is the algebraic norm of the form. The four quantities are $
 
 **Theorem.** The bar, the tessarine sign and the star preserve each of the four algebraic norms in modulus,
 $$
+\boxed{\;
 \lvert F(\bar{\breve Q})\rvert=\lvert F(\breve Q_{\mathrm{ts}})\rvert=\lvert F(\breve Q^{*})\rvert=\lvert F(\breve Q)\rvert
+\;}
 $$
 for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{r}}$ for each of the four quantities, and the three form a Klein four-group of isometries.
 

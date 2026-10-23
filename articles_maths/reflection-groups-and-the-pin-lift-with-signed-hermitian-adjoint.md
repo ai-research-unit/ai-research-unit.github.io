@@ -22,8 +22,6 @@ Two things follow and are developed below. The first is that the Clifford lift i
 
 The root systems, the reflection groups and the Clifford lift are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation*; the pin group, the norm and the double cover are *The Pin and Spin Groups with Signed Hermitian Adjoint*; the operator and the vector formula are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the Hurwitz units and the 24-cell are *Biquaternion Orders and Finite Groups of Units*. Nothing owned by those entries is reproved.
 
-**Conventions.** $V$ is a positive- or negative-definite space of dimension $n$ over $\mathbb{R}$, $q$ the form, $\rho_a(v)=v-2g(v,a)\mathfrak{Q}(a)^{-1}a$, $\sigma=\mathrm{id}$ unless stated, $x^{\dagger}=\sigma(\alpha(x^{r}))$, $U=\{x:x^{\dagger}x=1\}$, $\varepsilon_x=(-1)^{|x|}$. The root system $\Phi$ is finite, its roots are normalised so that $\mathfrak{Q}(a_\alpha)=-1$ when the form is negative definite, and $a_\alpha$ denotes the normalised root.
-
 ## Reflection Groups and Their Roots
 
 **Definition.** A **root system** in $V$ is a finite set $\Phi$ of nonzero vectors, the roots, closed under the reflections $\rho_\alpha$ for $\alpha\in\Phi$ and containing no multiple of a root except its negative. Its **reflection group** is

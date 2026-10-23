@@ -12,8 +12,6 @@ positive definite of signature $(4,0)$ (*The Isotropic Structure of the General 
 
 The contrast that organises the article is with the plain algebra. There the block carries **two** degree-two structures: the plain form $\mathrm B$, indefinite of signature $(1,3)$, whose shells are not groups and whose pin group therefore lives in a Clifford algebra rather than in $\mathbb{H}$; and the norm $\langle\cdot\rangle_{\natural}$, definite and multiplicative, whose shell is the unit sphere. Over the quaternion real space the quaternionic block takes $\langle\cdot\rangle_{\natural}$ itself for its form, so the definite case is the case of the block; the indefinite form keeps its own theory in the plain block, which is *The Pin and Spin Groups of the Quaternion Algebra* in the companion reading of the plain algebra of quaternions, cited here and not repeated.
 
-**Conventions.** The quaternionic product is $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$, with ${}^{\natural}$ the conjugation negating $\vec e_x,\vec e_y,\vec e_z$; the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \sum_\mu q_\mu^2$; the vector subspace is $V = \mathrm{Vect}(\vec e_x,\vec e_y,\vec e_z)$; the shell is $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$.
-
 ## The Shells of the Form
 
 **Theorem (the shells).** The form $\langle\cdot,\cdot\rangle_{\natural}$ is positive definite and multiplicative, $\langle\tilde q_1 \star \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$; its shells are $N = \lambda$ for $\lambda \geq 0$, the shell $N = 1$ is the unit sphere $\mathbb{H}^1$ of $\mathbb{H} \cong \mathbb{R}^4$, of real dimension three, and the shell $N = -1$ is empty.
@@ -31,7 +29,7 @@ The contrast that organises the article is with the plain algebra. There the blo
 **Theorem (the pin and spin groups).** For the quaternionic form the pin and spin groups are the shell itself:
 
 $$
-\operatorname{Pin}(N) = \{\tilde q : \langle\tilde q\rangle_{\natural} = \pm1\} = \mathbb{H}^1 , \qquad \operatorname{Spin}(N) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\} = \mathbb{H}^1 .
+\boxed{\;\operatorname{Pin}(N) = \{\tilde q : \langle\tilde q\rangle_{\natural} = \pm1\} = \mathbb{H}^1 , \qquad \operatorname{Spin}(N) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\} = \mathbb{H}^1\;}.
 $$
 
 *Proof.* An element of the pin group of a form is a product of vectors of norm $\pm1$; in dimension four with a multiplicative norm the products are exactly the elements of norm $\pm1$, and since the norm is never negative the two conditions coincide. Equivalently the algebra is its own Clifford algebra and the shell is its even part; the spin group is the even subgroup and equals the shell.
@@ -61,7 +59,7 @@ $$
 **Theorem (the reflections).** Let $\tilde u \in V$ with $\langle\tilde u\rangle_{\natural} = 1$. Then for $\tilde q_3 \in V$,
 
 $$
-\tilde u\tilde q_3\tilde u = \tilde q_3 - 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u , \qquad \operatorname{Ad}_{\tilde u}(\tilde q_3) = \tilde u\tilde q_3\tilde u^{-1} = 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u - \tilde q_3 ,
+\boxed{\;\tilde u\tilde q_3\tilde u = \tilde q_3 - 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u , \qquad \operatorname{Ad}_{\tilde u}(\tilde q_3) = \tilde u\tilde q_3\tilde u^{-1} = 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u - \tilde q_3\;},
 $$
 
 where $\langle\tilde u,\tilde q_3\rangle_{\natural}$ is the polar form restricted to $V$. The first map is the reflection in the hyperplane $\tilde u^{\perp}$, and the second is its negative, the rotation by $\pi$ about the axis $\mathbb{R}\tilde u$. On the scalar line the same operators act as the negation, $\tilde u s \tilde u = -s$ for $s \in \mathbb{R}e_t$.

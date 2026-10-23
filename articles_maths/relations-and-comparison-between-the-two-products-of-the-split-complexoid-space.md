@@ -6,14 +6,14 @@ This article collects the **relations** between the two products $Q_1Q_2$ and $Q
 
 The two products and their structures are *The Two Products of the Split-Complexoid Space*, the article preceding this one; the associator, the ternary product, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complexoid Space*, both below this article in this category. The degree-two reading of the two products, that is the two forms and the two algebraic norms, is *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the products on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The only computations the article adds are the two adjoints of §*The Two Pairings and the Two Adjoints*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$, with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$. The Hermitian conjugation coincides with the bar. In this article the ring product is written $Q_1\cdot Q_2$ where it must be told from the sesquilinear one.
-
 ## The Products Determine Each Other
 
 **Proposition (the two products are related by the bar).** For all $Q_1,Q_2\in\mathbb{D}$,
 
 $$
-Q_1\overline{Q_2} = \overline{\bar Q_1 Q_2}, \qquad Q_1Q_2 = \overline{\bar Q_1\,\overline{Q_2}} .
+\boxed{\;
+Q_1\overline{Q_2} = \overline{\bar Q_1 Q_2}, \qquad Q_1Q_2 = \overline{\bar Q_1\,\overline{Q_2}}
+\;}.
 $$
 
 Each of the two products is recovered from the other by the conjugation, so the two products carry the same information and neither can be omitted from the description of the space.
@@ -66,7 +66,9 @@ The sum and the difference of the two values on the same pair separate the two c
 **Proposition (the sum and the difference).** With $q_2=\operatorname{Re}Q_2$ and $q'_2=\operatorname{Im}Q_2$,
 
 $$
-Q_1Q_2 + Q_1\overline{Q_2} = 2q_2\,Q_1, \qquad Q_1Q_2 - Q_1\overline{Q_2} = 2q'_2\,jQ_1 .
+\boxed{\;
+Q_1Q_2 + Q_1\overline{Q_2} = 2q_2\,Q_1, \qquad Q_1Q_2 - Q_1\overline{Q_2} = 2q'_2\,jQ_1
+\;}.
 $$
 
 **Proof.** From the coordinates, $Q_1Q_2+Q_1\overline{Q_2}=(2q_1q_2)+(2q'_1q_2)j=2q_2(q_1+jq'_1)=2q_2Q_1$ and $Q_1Q_2-Q_1\overline{Q_2}=(2q'_1q'_2)+(2q_1q'_2)j=2q'_2(q'_1+q_1j)=2q'_2j(q_1+jq'_1)=2q'_2jQ_1$.
@@ -157,7 +159,9 @@ The collapse of the tables is the collapse of the products themselves: the table
 **Theorem (the two pairings).** The two slots carry the two pairings of the space,
 
 $$
-\langle Q_1,Q_2\rangle=\operatorname{Sc}(Q_1Q_2), \qquad \langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1\bar Q_2)=g(Q_1,Q_2),
+\boxed{\;
+\langle Q_1,Q_2\rangle=\operatorname{Sc}(Q_1Q_2), \qquad \langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1\bar Q_2)=g(Q_1,Q_2)
+\;},
 $$
 
 the first bilinear and symmetric, $\mathbb{D}$-valued with Gram matrix $[1]$ in the basis $1$, the second sesquilinear and conjugate-symmetric. Their real scalar parts are

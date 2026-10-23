@@ -129,8 +129,8 @@ $$
 This is the **biquaternion entropy functional**. It is a real number, it is computed from the algebra's own product, logarithm and trace, and it is the classical Shannon entropy of the two-outcome distribution $(\lambda_+,\lambda_-)$ that the state induces in its eigenbasis. Written out in the Bloch radius it is the binary entropy function,
 
 $$
-\mathcal{S}(\tilde{Ϛ}) = h(|\vec r|), \qquad
-h(x) = -\frac{1+x}{2}\log\frac{1+x}{2} - \frac{1-x}{2}\log\frac{1-x}{2},
+\boxed{\;\mathcal{S}(\tilde{Ϛ}) = h(|\vec r|), \qquad
+h(x) = -\frac{1+x}{2}\log\frac{1+x}{2} - \frac{1-x}{2}\log\frac{1-x}{2}\;},
 $$
 
 with the boundary values $h(0) = \log 2$ and $h(1) = 0$.
@@ -181,7 +181,7 @@ $$
 and substituting into $\mathcal{S} = h(|\vec r|)$ gives the central identity of the article:
 
 $$
-\boxed{\;\mathcal{S}(\tilde{Ϛ}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\right).\;}
+\boxed{\;\mathcal{S}(\tilde{Ϛ}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\right)\;}.
 $$
 
 The identity says that **the entropy of a state of the informational sector is a function of its biquaternion norm and of nothing else**. The biquaternion norm is the quantitatively meaningful invariant of the algebra; the entropy is a monotone reparametrisation of it. Three consequences are immediate, and they are the reason the identity is worth isolating.
@@ -252,7 +252,7 @@ $$
 the classical probabilities of the two pointer outcomes. The coarse-grained entropy is therefore the binary Shannon entropy
 
 $$
-\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};\Phi_{\vec u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\vec u\cdot\vec r|\right).
+\boxed{\;\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};\Phi_{\vec u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\vec u\cdot\vec r|\right)\;}.
 $$
 
 This is the article's second main formula. It is the entropy of the classical record the coarse description keeps, and it is manifestly a function of the retained component of the Bloch vector alone.
@@ -398,9 +398,9 @@ A coarse-graining of the informational sector is a conditional expectation $\Phi
 The **biquaternion entropy functional** is
 
 $$
-\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
+\boxed{\;\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
 = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_- = h(|\vec r|),
-\qquad \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec r|\right),
+\qquad \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec r|\right)\;},
 $$
 
 with $0 \le \mathcal{S} \le \log 2$. It is computed from the algebra's logarithm, which exists exactly on the group of units, that is, on the interior of the Bloch ball: the pure states are the zero divisors, and the entropy is singular there and vanishes there.

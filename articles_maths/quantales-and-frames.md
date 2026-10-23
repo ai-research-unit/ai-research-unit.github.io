@@ -23,8 +23,7 @@ for every $\alpha \in L$ and every family $(\beta_i)_{i \in I}$. A **frame homom
 
 **Theorem.** Every frame is a complete Heyting algebra, with
 
-$$
-\alpha \to \beta = \bigvee \{\gamma \in L : \gamma \wedge \alpha \leq \beta\},
+$$ \boxed{\;\alpha \to \beta = \bigvee \{\gamma \in L : \gamma \wedge \alpha \leq \beta\}\;},
 $$
 
 and conversely every complete Heyting algebra is a frame. The underlying lattice of a frame is distributive.
@@ -75,8 +74,7 @@ The assignment $L \mapsto \operatorname{pt}(L)$ is a functor $\operatorname{pt} 
 
 **Theorem.** The functor $\mathcal{O}$ is left adjoint to $\operatorname{pt}$:
 
-$$
-\operatorname{Hom}_{\mathbf{Loc}}(\mathcal{O}(X), L) \cong \operatorname{Hom}_{\mathbf{Top}}(X, \operatorname{pt}(L)),
+$$ \boxed{\;\operatorname{Hom}_{\mathbf{Loc}}(\mathcal{O}(X), L) \cong \operatorname{Hom}_{\mathbf{Top}}(X, \operatorname{pt}(L))\;},
 $$
 
 the unit $X \to \operatorname{pt}(\mathcal{O}(X))$ assigns to a point $x$ the frame homomorphism $\Omega \mapsto 1$ if $x \in \Omega$ and $0$ otherwise.
@@ -153,8 +151,7 @@ is a unital quantale, and it is the free unital quantale on the monoid $M$; when
 
 **Theorem.** Let $Q$ be an involutive quantale. Then the involution is an order isomorphism, and its fixed points,
 
-$$
-Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\},
+$$ \boxed{\;Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\}\;},
 $$
 
 form a frame for the order inherited from $Q$, with the joins and meets of $Q$.

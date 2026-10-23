@@ -42,8 +42,10 @@ that is, the set of isotropic lines of the form.
 **Theorem (The Quadric Is Doubly Ruled).** The quadric $\mathcal{Q}$ is a smooth surface, and it is the union of the projective lines of the two families of maximal isotropic planes of (*Split-Quaternion Zero Divisors*, §*The Two Families*):
 
 $$
-\mathcal{Q} = \bigcup_{P \in \mathcal{K}} \mathbb{P}(P) = \bigcup_{P \in \mathcal{R}} \mathbb{P}(P),
-$$
+\boxed{\;
+\mathcal{Q} = \bigcup_{P \in \mathcal{K}} \mathbb{P}(P) = \bigcup_{P \in \mathcal{R}} \mathbb{P}(P)
+\;}
+$$,
 
 where $\mathbb{P}(P)$ denotes the projective line of the plane $P$. Every point of $\mathcal{Q}$ lies in exactly one plane of each family; the two families are each parametrised by a projective line and are exchanged by the anti-automorphism $\tau$.
 
@@ -96,8 +98,10 @@ The quadric $U$ in $\mathbb{R}^{2,2}$ is the three-dimensional Lorentzian space 
 **Theorem (The Homogeneous Descriptions).** The level sets are homogeneous spaces of the isometry group:
 
 $$
-\{N = 1\} \subset V \ \cong\ \mathrm{SO}^{+}(2,1)/SO(2),
-$$
+\boxed{\;
+\{N = 1\} \subset V \ \cong\ \mathrm{SO}^{+}(2,1)/SO(2)
+\;}
+$$,
 
 each sheet being one connected component of the coset space; and
 
@@ -112,8 +116,10 @@ and the nappes of the null cone are orbits with stabiliser the one-parameter uni
 **Corollary (The Decomposition of the Vector Subspace).** The vector subspace decomposes into the orbits
 
 $$
-V = \{0\} \ \sqcup\ \{N = 1\} \ \sqcup\ \{N = -1\} \ \sqcup\ \{N = 0, v \neq 0\},
-$$
+\boxed{\;
+V = \{0\} \ \sqcup\ \{N = 1\} \ \sqcup\ \{N = -1\} \ \sqcup\ \{N = 0, v \neq 0\}
+\;}
+$$,
 
 and the last term is the union of the two nappes of the cone. The trichotomy of timelike, lightlike and spacelike elements is the orbit decomposition of the Lorentzian geometry.
 

@@ -49,8 +49,10 @@ $$
 **Proposition (the dual recursion).** Let $\mathrm{Nv}(c)=0$, so $\mathbb{R}[c]$ is the algebra of dual numbers and an element of the subalgebra is $A=u+bn$ with $n$ null. The critical orbit obeys
 
 $$
-u_{n+1}=u_n^2+c_t , \qquad b_{n+1}=2u_nb_n+b_0 , \qquad u_0=0,\ b_0=b .
-$$
+\boxed{\;
+u_{n+1}=u_n^2+c_t , \qquad b_{n+1}=2u_nb_n+b_0 , \qquad u_0=0,\ b_0=b
+\;}
+$$.
 
 Hence the scalar part must lie in the real Mandelbrot interval, and the nilpotent coefficient then evolves by a linear recursion with the time-dependent factor $2u_n$; the null stratum of $\mathcal{M}_{\mathrm{s}}$ is the subset of the null cone over the real interval on which the second recursion stays bounded.
 

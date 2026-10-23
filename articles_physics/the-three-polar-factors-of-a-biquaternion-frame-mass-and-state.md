@@ -69,7 +69,7 @@ The table is another way to see the count. Each factor sees the scale and one bl
 The quaternion factor is
 
 $$
-\tilde q=r\,\tilde u_{\mathrm r},\qquad \langle\tilde q\rangle_{\natural}=r^{2}>0 .
+\boxed{\;\tilde q=r\,\tilde u_{\mathrm r},\qquad \langle\tilde q\rangle_{\natural}=r^{2}>0\;}.
 $$
 
 It is an ordinary quaternion, and its decomposition is the ordinary quaternion polar decomposition: a positive scale times a unit rotor. It is the factor that carries the rotation. In the word it stands on the right, and its conjugation is the spatial rotation of the frame.
@@ -91,7 +91,7 @@ The element is off the cone and its word exists; the construction from the parts
 The Hamilton factor is
 
 $$
-\Rho=\sqrt N=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
+\boxed{\;\Rho=\sqrt N=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]\;}.
 $$
 
 It is the only one of the three that is central, and the only one that is a scalar. It carries the scale and the phase and nothing else. Its modulus is $r$ and its argument is the phase of the norm; the branch fixes the sign.
@@ -116,7 +116,7 @@ The failure at $B=0$ has two physical faces. A **scalar** element is the rest fr
 The Cartan factor is the Hermitian positive factor
 
 $$
-\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\,\tilde U_{\mathrm b},\qquad \tilde H=\tilde H^{*},\qquad \tilde H>0 .
+\boxed{\;\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\,\tilde U_{\mathrm b},\qquad \tilde H=\tilde H^{*},\qquad \tilde H>0\;}.
 $$
 
 It is the amplitude of the state that the element defines. The state itself is the normalized square,
@@ -126,7 +126,7 @@ $$
 \qquad \langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12 .
 $$
 
-The factor $\tilde H$ is unnormalised; the state is $\tilde H^{2}$ up to the trace. The distinction matters: the amplitude carries the scale, the state does not.
+The factor $\tilde H$ is unnormalised; the state is $\tilde H^{2}$ up to the normalisation. The distinction matters: the amplitude carries the scale, the state does not.
 
 The physical reading is the **state amplitude**. The positive factor is the part of the element that changes norms and not phases. In the informational sector it is the amplitude of the prepared or measured state; in the material sector it is the positive congruence that a boost applies. The same factor has both readings because the congruence is the same operation on the two sectors; the sectors differ in the sign of the cross terms, not in the factor.
 
@@ -157,9 +157,9 @@ No domain contains another, so a statement proved in one pairing cannot be trans
 The factors are three **products**, not three terms:
 
 $$
-\tilde Q=\tilde q\,e^{i\tilde\Psi}
+\boxed{\;\tilde Q=\tilde q\,e^{i\tilde\Psi}
 =\Rho\,e^{\tilde U\Theta}
-=\tilde H\,\tilde U .
+=\tilde H\,\tilde U\;}.
 $$
 
 There is no sense in which $\tilde Q=\tilde q+\Rho+\tilde H$, and no sense in which a physical quantity is the sum of the three. Each identity is the whole element, written three times. The consequences are:

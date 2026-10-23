@@ -193,7 +193,6 @@ Each of the three bivector entries is a left multiplication by a unit of the alg
 
 **The chirality sign.** The source's volume element is the negative of the corpus's: it sets $\gamma_5 = -i\gamma_0\gamma_1\gamma_2\gamma_3$, whereas the chirality operator of *Chirality and the Gamma-Five Operator* below is $\gamma_5 = +i\gamma^0\gamma^1\gamma^2\gamma^3$. In the corpus's convention the last identity above therefore reads $A(\gamma_5\Phi) = +iA(\Phi)\,i_3$, and the sign has to be carried along whenever the two are compared. What does not depend on that one sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication through the unit $i_3$, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
 
-
 **Which conjugation.** The $C$ of the dictionary is the algebra's **complex conjugation** $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces — $\bar{\cdot}$ fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, $\flat$ fixes the material sector $\mathbb{M}_-$ — and the corpus keeps them apart (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and the convention remark of *The Massive Case* above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde{\nabla}D = mD^{*}i\vec{\nu}$ of *The Lanczos Route* is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $M_{i_3}$ standing where the Lanczos unit vector $\vec{\nu}$ stands. The corpus reads the two as one structure — a conjugation together with a direction, rather than the algebra's real structure — and the dictionary is the second explicit instance of it.
 
 **The price, and its refund.** Because $C$ is antilinear, $\mathcal{N}$ is not left multiplication by an element of the algebra, so the Cauchy kernel, the Teodorescu transform and the boundary-value theory do not apply to it as it stands. The conjugation is removed by factoring $\mathcal{N}$ into two complex-linear equations and changing variable; the time-harmonic amplitude then obeys a **shifted** equation with a biquaternionic parameter, $D_\alpha\tilde{p} = 0$, treated in *Biquaternion Regular Functions* and used in *Confinement and the Loss of Partonic Information in Biquaternionic Form*. The conjugation is thus the cost of shrinking a four-component spinor to a single biquaternion, and it is refunded whenever the boundary-value theory is what is wanted.
@@ -412,13 +411,13 @@ These kinematic relations are the biquaternion form of standard relativistic mec
 Let $\tilde{\Psi}$ be a biquaternion-valued field, and let $\tilde{\nabla}$ be the biquaternionic gradient. The **biquaternionic Dirac equation** for a massless field is
 
 $$
-\tilde{\nabla}\tilde{\Psi} = 0.
+\boxed{\;\tilde{\nabla}\tilde{\Psi} = 0\;}.
 $$
 
 For a field of mass $m$ the equation is **linear** in $\tilde{\Psi}$ and **off-diagonal in chirality**. Writing the field as a pair of chiral components, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$, the massive equation is the pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
+\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;}.
 $$
 
 Applying $\tilde{\nabla}^{\natural}$ to the first equation and using the second, together with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$; the pair therefore implies the Klein–Gordon equation for each chirality. On the spinor module the same statement is the matrix equation $(\not\partial - m)\psi = 0$ of the first section, with $\psi = (\psi_L, \psi_R)$ the pair of Weyl spinors.
@@ -496,8 +495,8 @@ in agreement with the companion article on the Klein–Gordon equation, whose op
 Plane-wave solutions of the massless biquaternionic Dirac equation are
 
 $$
-\tilde{\Psi}(\tilde{R}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{R}^{\natural}\right)/\hbar\right)
-= \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')),
+\boxed{\;\tilde{\Psi}(\tilde{R}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{R}^{\natural}\right)/\hbar\right)
+= \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))\;},
 $$
 
 where $\tilde{\Psi}_0 \in \mathbb{B}$ is a constant biquaternion, $\tilde{P}/\hbar = i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde{R} = e_t (ict') + \vec e_x x + \vec e_y y + \vec e_z z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'$ is real, so the exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{\Psi}_0$ and differentiates to left multiplication by $i\tilde{P}/\hbar$,
@@ -657,7 +656,7 @@ $$
 The parameter is the one the corpus already carries, and its square is computed at once: $\alpha^2 = (i\omega i_1 + mi_2)^2 = \omega^2 - m^2$, a central scalar. The condition is therefore
 
 $$
-k^2 = \omega^2 - m^2, \qquad \text{equivalently} \qquad \omega^2 = k^2 + m^2 ,
+\boxed{\;k^2 = \omega^2 - m^2, \qquad \text{equivalently} \qquad \omega^2 = k^2 + m^2\;},
 $$
 
 which is the **mass shell** in the corpus's natural units and, with $\hbar$ and $c$ restored and the Planck and de Broglie relations used, the relativistic dispersion relation $E^2 = p^2c^2 + m^2c^4$. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell. The same interpretation is why the massless (neutrino) case of the harmonic-spinor subsection needs no condition at all: at $m = 0$ the parameter is $\alpha = i\omega i_1$ with $\alpha^2 = \omega^2$, and $k^2 = \alpha^2$ becomes the vacuum null-wave relation $\omega = k$ — the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
@@ -683,7 +682,7 @@ $$
 with $\tilde\Pi$ the idempotent along a unit vector $\vec{\nu}$ and $\bar{\tilde\Pi}$ its conjugate, the two projecting onto the two minimal left ideals — so that one half of $\tilde Q_1$ and half of the conjugate of $\tilde Q_2$ land in **different** ideals, which is what makes the superposition a **bispinor** and not a one-sided spinor; the resulting single equation
 
 $$
-\tilde{\nabla}D = m\,D^{*}\,i\vec{\nu}
+\boxed{\;\tilde{\nabla}D = m\,D^{*}\,i\vec{\nu}\;}
 $$
 
 is strictly equivalent to Dirac's equation. The unit vector on the right is the point of the display: it is the **spin quantization axis**, and it shows that Dirac's equation singles out an arbitrary but unique direction in ordinary space. The corpus's pair is written for a fixed frame and does not exhibit the axis; the Lanczos form shows that the axis is carried by the idempotent that performs the projection, and that any unit vector will do. The complex conjugation on the right-hand side is a second such fact: it is what makes the Dirac field **fermionic**, in contrast with the Maxwell and Proca fields, which are bosonic. The superposition is not unique: the source's second and equally covariant combination — Gürsey's, which the isospin interpretation makes the neutron to the proton above — is recorded in *The Standard Model under the Biquaternion Framework — A Research Agenda*; the fermionic character above is what the two share.

@@ -60,7 +60,7 @@ $$
 Each is unitary, $\vec e_k\,\vec e_k^{*} = \vec e_k(-\vec e_k) = e_t$, and Hermitian up to the central $i$; each acts on the state by
 
 $$
-\tilde{Ϛ} = \tilde\Pi_{\Phi^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{Ϛ}\,(\vec e_k\otimes e_t)^{*} .
+\boxed{\;\tilde{Ϛ} = \tilde\Pi_{\Phi^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{Ϛ}\,(\vec e_k\otimes e_t)^{*}\;}.
 $$
 
 Because $\vec e_k$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a **local unitary of the algebra**, and it preserves the spectrum, the trace, and the idempotency of the state.
@@ -69,14 +69,12 @@ Because $\vec e_k$ is a unit quaternion, the map is an inner automorphism of the
 
 Conjugation by $\vec e_k\otimes e_t$ permutes the four Bell idempotents. Explicit computation gives
 
-
 | $\text{operation}$ | $\text{state received by Bob}$ |
 |---|---|
 | $e_t\ \ (I)$ | $\tilde\Pi_{\Phi^+}$ |
 | $\vec e_x\ \ (\sigma_1)$ | $\tilde\Pi_{\Psi^+}$ |
 | $\vec e_y\ \ (\sigma_2)$ | $\tilde\Pi_{\Psi^-}$ |
 | $\vec e_z\ \ (\sigma_3)$ | $\tilde\Pi_{\Phi^-}$ |
-
 
 so that the four operations produce the four distinct Bell states, one for each. The map $k\mapsto$ (Bell state) is a bijection of the four-element encoding set onto the four-element Bell basis: the encoding is the **regular action** of the Klein four-group on its own elements, a sharply transitive abelian group of permutations. Each operation acts as an involution, since conjugation by $\vec e_k$ twice is conjugation by the central element $\vec e_k^2 = -e_t$, which is trivial; the codeword is the group element Alice applied.
 
@@ -85,7 +83,7 @@ so that the four operations produce the four distinct Bell states, one for each.
 The crucial property for decoding is that the four codewords are mutually orthogonal:
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_{\Phi^+}\tilde\Pi_{\Psi^+}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{\Phi^+}\tilde\Pi_{\Psi^-}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{\Phi^+}\tilde\Pi_{\Phi^-}\bigr) = 0,
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi_{\Phi^+}\tilde\Pi_{\Psi^+}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{\Phi^+}\tilde\Pi_{\Psi^-}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{\Phi^+}\tilde\Pi_{\Phi^-}\bigr) = 0\;},
 $$
 
 and likewise among all pairs, with the diagonal equal to one. Orthogonal states are perfectly distinguishable, so a single measurement on Bob's two qubits can identify the codeword with certainty. This is why the protocol transmits two bits and not merely one: the four codewords live in a four-dimensional space and are orthogonal there, while any four states confined to a single qubit could not be.
@@ -113,7 +111,7 @@ $$
 where $\tilde{Ϛ}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{Ϛ} = \tilde\Pi_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and
 
 $$
-p_\epsilon = \delta_{\epsilon,\epsilon(k)} ,
+\boxed{\;p_\epsilon = \delta_{\epsilon,\epsilon(k)}\;},
 $$
 
 so the outcome identifies the operation with certainty. Bob recovers two bits: the pair of eigenvalues of $S_1$ and $S_3$, or equivalently the Klein-group element Alice applied.
@@ -222,7 +220,7 @@ read in the two directions. It is a statement about the tensor-product algebra: 
 Superdense coding transmits two classical bits by sending one qubit, given a shared maximally entangled pair. In the biquaternion framework the resource is a Bell idempotent $\tilde\Pi_{\Phi^+}$ of the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, whose partial traces are both maximally mixed; the encoding is conjugation on one factor by the four unit quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$, i.e. by the Pauli operations $I,\sigma_1,\sigma_2,\sigma_3$ up to central phase, which permute the four Bell idempotents as
 
 $$
-e_t \to \tilde\Pi_{\Phi^+}, \quad \vec e_x \to \tilde\Pi_{\Psi^+}, \quad \vec e_y \to \tilde\Pi_{\Psi^-}, \quad \vec e_z \to \tilde\Pi_{\Phi^-} ;
+\boxed{\;e_t \to \tilde\Pi_{\Phi^+}, \quad \vec e_x \to \tilde\Pi_{\Psi^+}, \quad \vec e_y \to \tilde\Pi_{\Psi^-}, \quad \vec e_z \to \tilde\Pi_{\Phi^-} ;\;}
 $$
 
 and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.

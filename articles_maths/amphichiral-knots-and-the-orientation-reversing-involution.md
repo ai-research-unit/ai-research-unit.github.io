@@ -9,8 +9,6 @@ The class of amphichiral knots is small and its members have rigid invariants: t
 
 **The article assumes** the knot theory of *Knot Theory* (the knot group, the Seifert surface, the Alexander and Jones polynomials, the signature and the Arf invariant), the fundamental group and covering spaces, and the structure of involutions of *Involutions on Manifolds and Equivariant Surgery*.
 
-**The boundaries of the article.** The general theory of knots — the group, the Seifert surfaces, the genus, the classical and quantum polynomials, the concordance and the slice genus — is *Knot Theory*, and is cited; this article owns the symmetry, the mirror and the consequences. The periodic knots and the equivariant invariants are *Equivariant Knot Theory*, the next article; the link invariants of the three-manifold and the Heegaard–Floer and knot-Floer theories are *Floer Homology* and *Low-Dimensional Topology*. The hyperbolic volume, which is a strong chirality detector, is *Hyperbolic Geometry* and Part IV. No smooth topology of four-manifolds is used, and no physics.
-
 ## The Mirror and the Symmetry
 
 **Definition.** Fix a reflection $r$ of $S^3$ — an orientation-reversing involution whose fixed set is a two-sphere — and let $K\subseteq S^3$ be a knot. The **mirror image** is $K^{*} = r(K)$. The knot is **amphichiral** if $K^{*}$ is isotopic to $K$, and **chiral** otherwise. The **reverse** $-K$ is $K$ with the opposite orientation, and $K$ is **invertible** if $-K$ is isotopic to $K$.

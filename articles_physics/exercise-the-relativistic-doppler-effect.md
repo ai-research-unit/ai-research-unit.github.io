@@ -88,8 +88,8 @@ $$
 $$
 using $\vec k_0\cdot\vec v_b = (\omega_0/c)v_b\cos\theta = \omega_0\beta\cos\theta$. Therefore
 $$
-\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
-= \gamma\,\omega_0\left(1 - \beta\cos\theta\right).
+\boxed{\;\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
+= \gamma\,\omega_0\left(1 - \beta\cos\theta\right)\;}
 $$
 The frequency measured by an observer is thus an invariant contraction of the wave four-vector with the observer's four-velocity. This is the general Doppler formula, obtained without choosing a frame and without composing a boost; Problem 2 obtains the same result from the rotor, and the agreement is a check on the boost-direction convention.
 
@@ -190,7 +190,7 @@ $$
 $$
 and the redshift $z := (\lambda_2-\lambda_0)/\lambda_0$ is
 $$
-1 + z = \sqrt{\frac{1+\beta}{1-\beta}} ,
+\boxed{\;1 + z = \sqrt{\frac{1+\beta}{1-\beta}}\;}
 \qquad
 \beta = \frac{(1+z)^2 - 1}{(1+z)^2 + 1} .
 $$
@@ -224,9 +224,9 @@ The received light is **redshifted** by the Lorentz factor $\gamma$. This is the
 
 **Solution (c).** The two transverse shifts are
 $$
-\omega_{2,A} = \gamma\omega_0 ,
+\boxed{\;\omega_{2,A} = \gamma\omega_0 ,
 \qquad
-\omega_{2,B} = \frac{\omega_0}{\gamma} ,
+\omega_{2,B} = \frac{\omega_0}{\gamma}\;}
 \qquad
 \frac{\omega_{2,A}}{\omega_{2,B}} = \gamma^2 .
 $$
@@ -288,7 +288,7 @@ $$
 $$
 so
 $$
-\omega_2 = \omega_0\left(1 - \beta\cos\theta + \tfrac12\beta^2 - \tfrac12\beta^3\cos\theta + O(\beta^4)\right).
+\boxed{\;\omega_2 = \omega_0\left(1 - \beta\cos\theta + \tfrac12\beta^2 - \tfrac12\beta^3\cos\theta + O(\beta^4)\right)\;}
 $$
 The first-order term $-\beta\cos\theta$ is the classical Doppler shift. The leading transverse effect is $O(\beta^2)$ and is absent from the classical (first-order) formula; its sign depends on which transverse case is meant, $+\tfrac12\beta^2$ for case A and $-\tfrac12\beta^2$ for case B. At $\beta = 0.10$ the case-A shift is $\gamma - 1 = 0.0050378$, against $\tfrac12\beta^2 = 0.0050000$, an error of $0.76\%$ in the leading approximation. The limit requires $\beta\ll1$; for the relativistic sources for which beaming and aberration matter, the expansion is useless and the exact factors of Problems 3 and 4 must be used.
 

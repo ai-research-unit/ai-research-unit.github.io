@@ -62,7 +62,8 @@ $$
 Because the two final states differ only by the exchange of identical fermions, the amplitudes are combined with a relative minus sign,
 
 $$
-i\mathcal M = i(\mathcal M_t - \mathcal M_u),
+\boxed{\;
+i\mathcal M = i(\mathcal M_t - \mathcal M_u)\;},
 $$
 
 the **Pauli exchange sign**. This single sign is the whole of the interference structure: it removes the forward-collinear enhancement in channels where the two electrons would be identical, and it is why the $u$-channel is a subtraction rather than an addition.
@@ -85,7 +86,8 @@ $$
 using the spin sum $\sum_s w^s(p)\bar w^s(p) = \not p+m$ and the trace identity $\operatorname{Tr}[\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = 4(\eta^{\mu\nu}\eta^{\rho\sigma}-\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
 
 $$
-\overline{|\mathcal M|^2} = 2e^4\Big\{ \frac{1}{t^2}\left(s^2+u^2-8m^2(s+u)+24m^4\right) + \frac{1}{u^2}\left(s^2+t^2-8m^2(s+t)+24m^4\right) + \frac{2}{tu}\left(s^2-8m^2s+12m^4\right) \Big\}.
+\boxed{\;
+\overline{|\mathcal M|^2} = 2e^4\Big\{ \frac{1}{t^2}\left(s^2+u^2-8m^2(s+u)+24m^4\right) + \frac{1}{u^2}\left(s^2+t^2-8m^2(s+t)+24m^4\right) + \frac{2}{tu}\left(s^2-8m^2s+12m^4\right) \Big\}\;}.
 $$
 
 Each of the three terms has the same anatomy: the two trace factors are the two electron **currents** contracted with each other through the photon propagator's $1/t$ or $1/u$, and the cross term is the interference, with the minus sign of exchange explicit in the coefficient $-\tfrac{2}{tu}$.
@@ -103,7 +105,8 @@ inserting the centre-of-momentum Mandelstam variables. In the two limits it take
 **Non-relativistic limit** ($m\gg p$, so $E_{\mathrm{CM}} = 2m$):
 
 $$
-\frac{d\sigma}{d\Omega} = \frac{m^4\alpha^2}{E_{\mathrm{CM}}^2\,p^4\sin^4\theta}\,(1+3\cos^2\theta),
+\boxed{\;
+\frac{d\sigma}{d\Omega} = \frac{m^4\alpha^2}{E_{\mathrm{CM}}^2\,p^4\sin^4\theta}\,(1+3\cos^2\theta)\;},
 $$
 
 a Rutherford-like $1/\sin^4\theta$ law modulated by the $(1+3\cos^2\theta)$ factor that is the signature of identical-fermion exchange. It is the relativistic generalisation of the electron–electron repulsion behind the helium atom.

@@ -9,8 +9,6 @@ The two cases are the whole content. An **orientation-preserving** involution le
 
 **The article assumes** the homology and cohomology of a manifold, the cup and cap products, Poincaré duality and the intersection form and its signature, all of *Algebraic Topology* in this Part, and the elementary operator theory of *The Involution as an Operator on the Homology*.
 
-**The boundaries of the article.** The operator on the homology — the group ring, the transfer and the Smith theory — is *The Involution as an Operator on the Homology*, and its results are used here without repetition. The fixed set as a manifold, the equivariant surgery and the classification of involutions are the group `- * Theory`. The operators built from the involution, with the adjoint as their archetype, and the equivariant signature are the group `- * Operator Theory`; in particular the $G$-signature theorem is *Hermitian Pairings and the Equivariant Signature*, and the present article stops at the algebraic consequence $\sigma(M)=0$ for an orientation-reversing involution. No analysis and no smooth structure is used.
-
 ## The Involution on the Homology and the Cohomology
 
 **Definition.** Let $M$ be a finite CW complex and let $T : M \to M$ be an involution. The induced maps are

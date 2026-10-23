@@ -218,7 +218,7 @@ These questions are open.
 The **eigenspinor** $\tilde U(\tau)$ is the Lorentz rotor that carries the rest four-momentum to the lab four-momentum,
 
 $$
-\tilde{P} = \tilde U\,\bigl(imc\,e_t\bigr)\,\tilde U^{*},
+\boxed{\;\tilde{P} = \tilde U\,\bigl(imc\,e_t\bigr)\,\tilde U^{*}\;}
 $$
 
 and it is the natural dynamical variable of a relativistic worldline. For a pure boost of rapidity $\psi$ along $\vec u$ it is $\tilde U = \cosh\frac{\psi}{2}e_t - i\sinh\frac{\psi}{2}\vec u$, the quaternion conjugate of the lab-to-moving boost biquaternion of the companion article.

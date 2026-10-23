@@ -53,7 +53,7 @@ The split is also a split of **roles**, and the two roles belong to the two **fa
 As a complex algebra $\mathbb{B}$ is isomorphic to the full matrix algebra,
 
 $$
-\mathbb{B} \cong M_2(\mathbb{C}),
+\boxed{\;\mathbb{B} \cong M_2(\mathbb{C})\;},
 $$
 
 and this identification is used constantly. It is fixed by a single isomorphism, written $\mathsf{M}_2$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in §*The 2×2 Matrix Representation* below, and the development of the representation — the general element, the remarkable subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The Element and Operator Representations*. Its two **minimal left ideals** are the algebra's two chiralities; the spinor module and the mass term a field equation builds on that structure are the subject of *The Dirac Equation in Biquaternionic Form*.
@@ -842,8 +842,6 @@ The three pairings are three bracketings of the same word, and their domains dif
 **The domains are not nested.** The quaternion construction fails at $\tilde q_r=0$; the Hamilton pairing fails when the vector part is null; the Cartan pairing is the widest and is total off the cone. The generalized polar decomposition extends the Cartan pairing to the cone with a partial isometry, and it is *The Generalized Polar Decomposition of a Biquaternion*.
 
 **The tangent equation on the domain of the word.** The equation $\tan\tilde\Psi=\tilde q_r^{-1}\tilde q_i$ fails to have a real solution in exactly one case, when $\tilde q_r^{-1}\tilde q_i$ is a unit pure quaternion. That case forces $\langle\tilde Q\rangle_{\natural}=0$: writing $\tilde q_i=\tilde q_rT$ with $T$ a unit pure quaternion makes the real inner product of $\tilde q_r$ and $\tilde q_i$ vanish and their norms equal, so the difference of the squared norms and the cross term both vanish. On the complement of the cone, therefore, the construction exists exactly when $\tilde q_r\neq0$. The condition $\tilde q_r\neq0$ alone is not sufficient on the whole algebra: $e_t+i\vec e_x$ has $\tilde q_r=e_t$ and lies on the cone, where the word does not exist. The article's "exactly" is correct on the word's domain; its claim that the set $\{\tilde q_r\neq0\}$ lies inside that domain is not.
-
-
 
 ## The Central Map and Its Restrictions
 

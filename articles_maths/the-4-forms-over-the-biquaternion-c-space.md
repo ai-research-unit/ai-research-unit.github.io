@@ -48,10 +48,12 @@ The reduction from twelve to four is in two steps: the symmetrisation of a famil
 **Lemma (the symmetrisation keeps the scalar part, the antisymmetrisation kills it).** For each of the four general products $f$, with symmetric part $f^{\mathrm s}$ and antisymmetric part $f^{\mathrm a}$,
 
 $$
+\boxed{\;
 \mathrm{Sc}\,f^{\mathrm s}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2),
 \qquad
-\mathrm{Sc}\,f^{\mathrm a}(\tilde Q_1,\tilde Q_2)=0 .
-$$
+\mathrm{Sc}\,f^{\mathrm a}(\tilde Q_1,\tilde Q_2)=0
+\;}
+$$.
 
 *Proof.* For the two bilinear families the scalar part is commutative, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)+\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)\bigr)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$ and $\mathrm{Sc}\,f^{\mathrm a}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)-\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)\bigr)=0$. For the two sesquilinear families the exchange carries the conjugation of the value and the forms are Hermitian, $\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)=\overline{\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)}$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)+\overline{\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)}\bigr)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$ and $\mathrm{Sc}\,f^{\mathrm a}=0$.
 
@@ -119,10 +121,12 @@ A $\mathbb{C}$-linear operator $T$ **preserves** a form $\varphi$ when $\varphi(
 **Theorem (the four isometry groups).** The $\mathbb{C}$-linear operators preserving the four forms are, in the coefficient basis,
 
 $$
+\boxed{\;
 \mathrm{Isom}(B)=\{T:T^{\mathsf T}\mathrm E T=\mathrm E\}=O_4(\mathbb{C}),
 \qquad
-\mathrm{Isom}(H)=\{T:T^{*}T=\mathrm I_4\}=\mathrm{U}(4),
-$$
+\mathrm{Isom}(H)=\{T:T^{*}T=\mathrm I_4\}=\mathrm{U}(4)
+\;}
+$$,
 $$
 \mathrm{Isom}(N)=\{T:T^{\mathsf T}T=\mathrm I_4\}=O_4(\mathbb{C}),
 \qquad
@@ -144,7 +148,9 @@ The general plain bilinear form $\langle\cdot,\cdot\rangle$ is the complex-value
 **Theorem (the form is an orthogonal sum of two hyperbolic planes).** The four elements
 
 $$
+\boxed{\;
 h_1=e_t+\vec e_x,\qquad h_2=\tfrac12(e_t-\vec e_x),\qquad h_3=\vec e_y+i\vec e_z,\qquad h_4=\tfrac12(i\vec e_z-\vec e_y)
+\;}
 $$
 
 are isotropic for $\langle\cdot,\cdot\rangle$, the only non-zero pairings among them are $\langle h_1,h_2\rangle=1$ and $\langle h_3,h_4\rangle=1$, and the Gram matrix in this basis is

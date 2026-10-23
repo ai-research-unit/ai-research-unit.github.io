@@ -26,8 +26,10 @@ Both are groups under multiplication, and $\mathrm{U}$ is a subgroup of $\mathrm
 **Theorem (The Two Components).** The group $\mathrm{U}$ is isomorphic to $\mathrm{SL}_2(\mathbb{R})$ and is connected; the group $\mathrm{U}^{\pm}$ has exactly two connected components,
 
 $$
-\mathrm{U} = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : \langle\tilde q\rangle_{\natural} = -1\} = \mathrm{SL}_2^{-}(\mathbb{R}),
-$$
+\boxed{\;
+\mathrm{U} = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : \langle\tilde q\rangle_{\natural} = -1\} = \mathrm{SL}_2^{-}(\mathbb{R})
+\;}
+$$,
 
 and the two components are interchanged by multiplication by $\vec e_y$. The full group of units is
 
@@ -58,7 +60,9 @@ $$
 whose kernel is the centre $\mathbb{R}^{\times}$ and whose image lies in $SO(2,1)$. On the norm-one group the restriction
 
 $$
+\boxed{\;
 \Theta : \mathrm{U} \cong \mathrm{SL}_2(\mathbb{R}) \longrightarrow \mathrm{SO}^{+}(2,1)
+\;}
 $$
 
 has kernel $\{\pm 1\}$.
@@ -68,8 +72,10 @@ has kernel $\{\pm 1\}$.
 **Corollary (The Image of the Unit Group).** The image of the full unit group is
 
 $$
-\Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R}),
-$$
+\boxed{\;
+\Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R})
+\;}
+$$,
 
 and the image of the norm-one group is $\Theta(\mathrm{U}) = SO^{+}(2,1)$, the identity component.
 

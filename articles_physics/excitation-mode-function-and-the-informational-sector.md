@@ -20,8 +20,6 @@ The distinction is not a technicality; it is the content of the words *definite 
 
 Because "the informational sector carries the state" is precisely the kind of claim that gets asserted and then never checked, the article states separately what is asserted to be in $\mathbb{M}_+$ and verifies each assertion by recomputation. It also counts the degrees of freedom on the two sides. That count closes for exactly one fermionic mode and fails otherwise: two fermionic modes require a sixteen-dimensional operator space and a bosonic mode requires an infinite-dimensional one, against the four real dimensions of $\mathbb{M}_+$. The mismatch is recorded as a finding, not smoothed over.
 
-**Conventions.** The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central scalar imaginary $i$ with $i^2=-1$. The material and informational sectors are
-
 $$
 \mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 \qquad
@@ -81,7 +79,7 @@ $$
 which satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\vec\Upsilon_x^2=(\vec\Upsilon_y)^2=0$. The occupation-number operator of the single mode is then
 
 $$
-\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),
+\boxed{\;\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)\;},
 $$
 
 and the vacuum idempotent is its complement
@@ -122,9 +120,9 @@ The assertions to be checked are now explicit.
 
 **A3. The density matrix of the mode is in $\mathbb{M}_+$.** For $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^3$, the scalar part is real and the vector part is purely imaginary, so $\tilde{Ϛ}\in\mathbb{M}_+$ by the definition of the sector. Direct computation gives
 $$
-\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14\big(|\vec r|^2-1\big)e_t,\qquad
+\boxed{\;\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14\big(|\vec r|^2-1\big)e_t,\qquad
 \mathrm{Tr}(\tilde{Ϛ})=1,\qquad
-\tilde{Ϛ}^{*}=\tilde{Ϛ},
+\tilde{Ϛ}^{*}=\tilde{Ϛ}\;},
 $$
 and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, so positivity is exactly $|\vec r|\leq1$. The set of such $\tilde{Ϛ}$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{M}_+$.
 
@@ -194,7 +192,7 @@ $$
 So the intersection of the definite-solution space with the informational sector is
 
 $$
-\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\,\tilde\Pi_+,
+\boxed{\;\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\,\tilde\Pi_+\;},
 $$
 
 a single real line, spanned by the idempotent itself. This was checked directly on real, imaginary, and generic complex $(\psi_1,\psi_2)$: the only Hermitian spinors are the real multiples of $\tilde\Pi_+$. The upshot is sharp: away from the idempotent ray, a mode function is not an element of $\mathbb{M}_+$, and the representable definite solution that is Hermitian is exactly the pure state whose density matrix is $\tilde\Pi_+$.

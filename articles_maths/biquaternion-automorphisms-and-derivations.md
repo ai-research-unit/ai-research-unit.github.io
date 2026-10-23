@@ -45,21 +45,18 @@ $$
 
 whose kernel is the group of nonzero central scalars $\mathbb{C}^{\times} e_t$. Hence
 
-$$
-\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times} / \mathbb{C}^{\times} .$$
+$$ \boxed{\;\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times} / \mathbb{C}^{\times}\;}. $$
 
 **Dimension.** Since $\mathbb{B}^{\times}$ has complex dimension $4$ and the central scalars have complex dimension $1$, $\dim_{\mathbb{C}} \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$. Equivalently, the group has real dimension $6$, and it is connected.
 
 **Corollary (the projective linear group).** Under the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the units are $GL(2,\mathbb{C})$ and the nonzero central scalars are the scalar matrices, so
 $$
-\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C}),
+\boxed{\;\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C})\;},
 $$
 the projective general linear group, of complex dimension three. This is the biquaternion form of the classical isomorphism $\operatorname{Aut}(M_n(k))\cong PGL(n,k)$.
 
 **Corollary (the orthogonal form of the group).** The centre of $SL(2,\mathbb{C})$ is $\{\pm e_t\}$, and the low-dimensional classical isomorphisms give
-$$
-\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \cong PSL(2,\mathbb{C}) \cong SO(3,\mathbb{C}),
-$$
+$$ \boxed{\;\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \cong PSL(2,\mathbb{C}) \cong SO(3,\mathbb{C})\;}, $$
 the complex orthogonal group in three variables. The reason is visible in the action. Conjugation fixes the trace, so the scalar coordinate is preserved and the action falls on the three-dimensional traceless part $\tilde{S}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_t$ as $\tilde{S}\mapsto g\tilde{S}g^{-1}$, which fixes the quadratic form $\det\tilde{S}$; that is the defining representation of $SO(3,\mathbb{C})$. The group is **complex** of complex dimension three, hence of real dimension six, and as a **real** group it is also $SO^+(1,3)$: the two are both $PSL(2,\mathbb{C})$, connected and six-real-dimensional, and are therefore the same real group. So the group that appears here as the abstract automorphism group of the algebra is the restricted Lorentz group. It sits inside the automorphism group of the biquaternion norm, $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$ with $\tilde{Q}\mapsto\tilde Q_3\tilde{Q}\tilde{Q}_1^{-1}$, as the **diagonal** $\tilde Q_3=\tilde{Q}_1=g$; that placement, and the physical construction built on it in the complexified-coordinates setting, are the subject of the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* of the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
 **Corollary (the norm).** Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $\langle g\tilde{Q}g^{-1}\rangle_{\natural}=\langle g\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle g\rangle_{\natural}^{-1}=\langle\tilde{Q}\rangle_{\natural}$; complex conjugation reverses the sign of the imaginary part, $\langle\bar{\tilde{Q}}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}^{*}$, and so preserves $|N|$ without preserving $\langle\cdot\rangle_{\natural}$ itself.
@@ -83,7 +80,7 @@ Now the ground field is $\mathbb{R}$: $\mathbb{B}$ is eight-dimensional, and aut
 **The full real automorphism group.** There is a short exact sequence $1 \to \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \xrightarrow{\rho} \mathbb{Z}/2 \to 1$, split by $c$ because $c^{2} = \mathrm{id}$. Hence
 
 $$
-\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2,
+\boxed{\;\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2\;},
 $$
 
 the generator acting on $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ by $\iota_g \mapsto \iota_{g^{*}}$. Concretely, every real automorphism of $\mathbb{B}$ has exactly one of the two forms $\sigma(\tilde{Q}_2) = g \tilde{Q}_2 g^{-1}$ or $\sigma(\tilde{Q}_2) = g\, \bar{\tilde{Q}_2}\, g^{-1}$, with $g \in \mathbb{B}^{\times}$ determined up to a nonzero complex scalar. The first family is the identity coset of $\mathbb{C}$-linear inner automorphisms; the second is the coset of $c$, consisting of **conjugate-linear** automorphisms.
@@ -103,7 +100,7 @@ Every derivation satisfies $D(e_t) = 0$, since $D(e_t) = D(e_t e_t) = 2D(e_t)$.
 **Every derivation is inner.** For a central simple algebra over a field every derivation is inner. Hence $\mathrm{ad}$ is surjective and induces a $\mathbb{C}$-linear isomorphism
 
 $$
-\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B} / \mathbb{C}_{\mathbb{B}}.
+\boxed{\;\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B} / \mathbb{C}_{\mathbb{B}}\;}.
 $$
 
 **Identification with the traceless part.** The quotient $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is the **traceless part** of $\mathbb{B}$, the subspace of vanishing scalar part $\{\tilde{Q} : Q_t = 0\} = \mathrm{span}_{\mathbb{C}}\{\vec e_x, \vec e_y, \vec e_z\}$, the **complex pure-vector part** of $\mathbb{B}$, a complex vector space of dimension $3$. The isomorphism is one of Lie algebras, because $[\mathrm{ad}_{\tilde Q_3}, \mathrm{ad}_{\tilde Q_1}] = \mathrm{ad}_{[\tilde Q_3,\tilde Q_1]}$.

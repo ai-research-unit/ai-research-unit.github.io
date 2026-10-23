@@ -26,7 +26,7 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 **Proposition (the split).** For all $\tilde Q_1,\tilde Q_2$,
 
 $$
-\tilde Q_1\star\tilde Q_2=\tilde Q_1\circ\tilde Q_2+\tfrac12\,[\tilde Q_1,\tilde Q_2]_\varsigma ,
+\boxed{\;\tilde Q_1\star\tilde Q_2=\tilde Q_1\circ\tilde Q_2+\tfrac12\,[\tilde Q_1,\tilde Q_2]_\varsigma\;},
 $$
 
 the symmetrised part being invariant and the bracket part changing sign under the exchange of the two arguments:
@@ -130,7 +130,7 @@ $$
 the Jacobi sum is
 
 $$
-[[\tilde\Pi_+,\tilde\Pi_-]_\varsigma,i\vec e_x]_\varsigma+[[\tilde\Pi_-,i\vec e_x]_\varsigma,\tilde\Pi_+]_\varsigma+[[i\vec e_x,\tilde\Pi_+]_\varsigma,\tilde\Pi_-]_\varsigma=2\vec e_y\neq0 .
+\boxed{\;[[\tilde\Pi_+,\tilde\Pi_-]_\varsigma,i\vec e_x]_\varsigma+[[\tilde\Pi_-,i\vec e_x]_\varsigma,\tilde\Pi_+]_\varsigma+[[i\vec e_x,\tilde\Pi_+]_\varsigma,\tilde\Pi_-]_\varsigma=2\vec e_y\neq0\;}.
 $$
 
 **Proof.** The three elements are Hermitian: the two projections by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and $i\vec e_x$ because $\vec e_x^{*}=-\vec e_x$. The inner brackets are ordinary commutators by the half-theorem. The first vanishes, $[\tilde\Pi_+,\tilde\Pi_-]_\varsigma=\tilde\Pi_+\tilde\Pi_--\tilde\Pi_-\tilde\Pi_+=0$, because $\tilde\Pi_+\tilde\Pi_-=\tfrac14(e_t+i\vec e_z)(e_t-i\vec e_z)=\tfrac14(e_t-e_t)=0$ and likewise in the other order. The other two are
@@ -216,7 +216,7 @@ $$
 the plain symmetrisation, and with this product $\mathbb{M}_+$ is a commutative Jordan algebra over $\mathbb{R}$, with the Jordan identity
 
 $$
-(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ\bigl(\tilde H_2\circ(\tilde H_1\circ\tilde H_1)\bigr) .
+\boxed{\;(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ\bigl(\tilde H_2\circ(\tilde H_1\circ\tilde H_1)\bigr)\;}.
 $$
 
 **Proof.** For Hermitian $\tilde H_1$ the derived operation is the algebra product, $\tilde H_1\star\tilde H_2=\tilde H_1\tilde H_2$ and $\tilde H_2\star\tilde H_1=\tilde H_2\tilde H_1$; the two symmetrisations therefore agree on the half, and the symmetrisation of an associative product satisfies the Jordan identity, by *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. This is the theorem of *The Sesquilinear Symmetrised Product*, §*On the Hermitian Part*.

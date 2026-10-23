@@ -14,8 +14,6 @@ The result is that every slice is exact, because the fractal is a product and th
 
 The article owns the notion of a slice for the algebra, the product rule, the complex slices and their degeneracy, the diagonal and the real slices, the affine one-real-dimensional slices, the slices at the parameter zero and the slices of the connectedness locus. The fractal and its product structure are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the global decomposition is *The Idempotent Decomposition and the Split Fractal*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*; the real subspace and the involution that defines it are *Reduced Biquaternion Space* and *The Two Involutions and the Group of Involutions*. The companion, where only the idempotent slice is exact, is *The Slices of the Biquaternion Julia Sets*.
 
-**Conventions.** The coordinates are $(Q_{+},Q_{-})\in\mathbb{C}^{2}$, identified with the algebra by $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **slice** is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.
-
 ## The Notion of a Slice and the Product Rule
 
 **Definition (the slices used).** The slices of this article are the following subsets of the algebra, each written in the idempotent coordinates:
@@ -47,6 +45,7 @@ so that the slice is obtained by intersecting the slice with the two coordinate 
 **Proposition (complex line slices are all or nothing).** For a complex line slice at a fixed coordinate,
 
 $$
+\boxed{\;
 \{Q_{-}={Q_{-}}_{0}\}\cap\mathcal{K}_{C}=
 \begin{cases}
 K_{c_{1}}, & {Q_{-}}_{0}\in K_{c_{2}},\\[2pt]
@@ -58,6 +57,7 @@ K_{c_{1}}, & {Q_{-}}_{0}\in K_{c_{2}},\\[2pt]
 K_{c_{2}}, & {Q_{+}}_{0}\in K_{c_{1}},\\[2pt]
 \varnothing, & {Q_{+}}_{0}\notin K_{c_{1}}.
 \end{cases}
+\;}
 $$
 
 **Proof.** The complex line is the product of the free coordinate and the single point, and the product rule gives the product of the free complex filled Julia set with the set that is the fixed point when it belongs to the corresponding filled Julia set and empty otherwise.
@@ -69,7 +69,9 @@ $$
 **Theorem (the diagonal slice).** The diagonal slice of the filled Julia set is the intersection of the two complex filled Julia sets,
 
 $$
-\{Q_{+}=Q_{-}\}\cap\mathcal{K}_{C}=\{(\zeta,\zeta):\zeta\in K_{c_{1}}\cap K_{c_{2}}\}\cong K_{c_{1}}\cap K_{c_{2}},
+\boxed{\;
+\{Q_{+}=Q_{-}\}\cap\mathcal{K}_{C}=\{(\zeta,\zeta):\zeta\in K_{c_{1}}\cap K_{c_{2}}\}\cong K_{c_{1}}\cap K_{c_{2}}
+\;},
 $$
 
 and the diagonal slice of the Julia set is the corresponding part of the boundary. In particular, for a central parameter $C=c\cdot1$ the diagonal slice of $\mathcal{K}_{C}$ is the complex filled Julia set $K_{c}$.
@@ -136,7 +138,9 @@ both slices being unit discs; every affine real line slice is an interval, the i
 **Theorem (the slices of the locus).** The connectedness locus of the reduced biquaternion quadratic family is the product $\mathcal{M}\times\mathcal{M}$ of the complex Mandelbrot set with itself, and its slices are:
 
 $$
-\{c_{1}=c_{2}\}\cap(\mathcal{M}\times\mathcal{M})\cong\mathcal{M},
+\boxed{\;
+\{c_{1}=c_{2}\}\cap(\mathcal{M}\times\mathcal{M})\cong\mathcal{M}
+\;},
 $$
 
 the central-parameter line, which is the Mandelbrot set; the conjugate line $\{c_{2}=\bar c_{1}\}$, which is again $\mathcal{M}$; and a translated line $\{c_{2}=c_{1}+\mu\}$, which is the intersection $\mathcal{M}\cap(\mathcal{M}-\mu)$ of the Mandelbrot set with its translate.

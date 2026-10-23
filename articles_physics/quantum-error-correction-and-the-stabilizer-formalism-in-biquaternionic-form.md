@@ -86,8 +86,8 @@ An **error** is an element $\tilde{E}_a$ of the Pauli group, typically a tensor 
 The code with idempotent $\tilde\Pi$ corrects the error set $\{\tilde{E}_a\}$ if and only if
 
 $$
-\tilde\Pi\,\tilde{E}_a^{*}\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
-\qquad \text{for all } a,b,
+\boxed{\;\tilde\Pi\,\tilde{E}_a^{*}\tilde{E}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
+\qquad \text{for all } a,b\;},
 $$
 
 where $c = (c_{ab})$ is a Hermitian matrix of numbers, independent of the encoded state.
@@ -133,7 +133,7 @@ The following were verified by explicit computation with the $8\times8$ matrices
 - **Correction of bit flips.** For the error set $\{e_t^{\otimes3}, X_1, X_2, X_3\}$, the Knill–Laflamme condition holds with $c_{ab} = \delta_{ab}$:
 
 $$
-\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi,
+\boxed{\;\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi\;},
 $$
 
 verified for all $i,j$. A single bit flip is therefore correctable.
@@ -143,11 +143,9 @@ verified for all $i,j$. A single bit flip is therefore correctable.
 
 A bit flip on the $i$-th qubit anticommutes with the stabilizers that involve $Z_i$, so measuring the two generators yields a two-bit **syndrome** that identifies which qubit flipped:
 
-
 | $\text{error}$ | $e_t^{\otimes3}$ | $X_1$ | $X_2$ | $X_3$ |
 |---|---|---|---|---|
 | $\text{syndrome } (s_{Z_1Z_2},\,s_{Z_2Z_3})$ | $(0,0)$ | $(1,0)$ | $(1,1)$ | $(0,1)$ |
-
 
 where the syndrome bit $s_{g}$ is $0$ if the error commutes with the generator $g$ and $1$ if it anticommutes. The four syndromes are distinct, so the error is identified. The measurement is a joint measurement of commuting observables, and in the framework it is the projection onto the joint eigen-idempotents of $Z_1Z_2$ and $Z_2Z_3$ — a Peirce decomposition of the commutative subalgebra they generate. The correction is the application of $X_i$ to the identified qubit.
 
@@ -197,11 +195,10 @@ $$
 where the $\chi$ run over the $|S|$ characters $S\to\{\pm1\}$ and the $\tilde\Pi_\chi$ are the **central idempotents of the group algebra**, satisfying $\tilde\Pi_\chi \tilde\Pi_{\chi_2} = \delta_{\chi\chi_2}\tilde\Pi_\chi$ and $\sum_\chi \tilde\Pi_\chi = e_t^{\otimes n}$. The code idempotent is the trivial-character idempotent,
 
 $$
-\tilde\Pi = \tilde\Pi_{\mathrm{triv}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U,
+\boxed{\;\tilde\Pi = \tilde\Pi_{\mathrm{triv}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U\;},
 $$
 
 and the other $|S|-1$ idempotents $\tilde\Pi_\chi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\chi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\chi \mathrm{Tr}(\tilde\Pi_\chi)$, with each $\mathrm{Tr}(\tilde\Pi_\chi) = 2^k$.
-
 
 ## What the Framework Adds and What It Does Not
 
@@ -243,7 +240,7 @@ $$
 An error set $\{\tilde{E}_a\}$ is correctable if and only if the **Knill–Laflamme condition**
 
 $$
-\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi
+\boxed{\;\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi = c_{ab}\tilde\Pi\;}
 $$
 
 holds for all $a,b$: the error operators, restricted to the code, have a scalar Gram matrix and cannot resolve the encoded state. The syndrome measurement is the joint measurement of the commuting generators, i.e. the projection onto the joint eigen-idempotents of a commutative subalgebra.

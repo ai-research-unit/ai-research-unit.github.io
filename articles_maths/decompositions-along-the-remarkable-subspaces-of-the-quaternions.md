@@ -9,9 +9,7 @@ The article is an offer of the group: the scalar–vector decomposition is devel
 ## The Scalar–Vector Decomposition
 
 The natural sign ${}^{\natural}$ is an involution whose $\pm1$ eigenspaces are the scalar line and the vector space, so the additive decomposition
-$$
-\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H}), \qquad 1+3=4,
-$$
+$$ \boxed{\; \mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H}), \qquad 1+3=4 \;} ,$$
 is the eigenspace decomposition of ${}^{\natural}$. The two projections are
 $$
 \tilde q\longmapsto \mathrm{Sc}(\tilde q)=\tfrac12(\tilde q+\tilde q^{\natural}), \qquad \tilde q\longmapsto \vec q=\tfrac12(\tilde q-\tilde q^{\natural}),
@@ -25,9 +23,7 @@ $$
 \mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu=\{a+b\nu:a,b\in\mathbb{R}\},
 $$
 a commutative two-dimensional subalgebra, and its anti-fixed space is the orthogonal complement $\nu^\perp=\{\vec q\in\mathrm{Vect}(\mathbb{H}):\nu\cdot\vec q=0\}$, a plane. The eigenspace decomposition is therefore
-$$
-\mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp, \qquad 2+2=4,
-$$
+$$ \boxed{\; \mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp, \qquad 2+2=4 \;} ,$$
 with the projections $\tilde q\mapsto\tfrac12(\tilde q+\iota_\nu \tilde q)$ onto $\mathbb{C}_\nu$ and $\tilde q\mapsto\tfrac12(\tilde q-\iota_\nu \tilde q)$ onto $\nu^\perp$. The reflection $\rho_\nu=-\iota_\nu$ has the same two eigenspaces with the labels exchanged, so it cuts the same decomposition.
 
 The **axis decomposition** of the vector subspace is the refinement of the previous line,
@@ -51,9 +47,7 @@ $$
 \mathbb{R}_{\mathbb{H}}\oplus\nu^\perp=\{a+\vec q:a\in\mathbb{R},\ \vec q\in\nu^\perp\},
 $$
 scalar part plus the plane orthogonal to the axis, while reversing the axis line $\mathbb{R}\nu$ alone. Its eigenspace decomposition is therefore
-$$
-\mathbb{H}=(\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp)\oplus\mathbb{R}\nu, \qquad 3+1=4,
-$$
+$$ \boxed{\; \mathbb{H}=(\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp)\oplus\mathbb{R}\nu, \qquad 3+1=4 \;} ,$$
 with the projections $\tilde q\mapsto\tfrac12(\tilde q+\alpha_\nu\tilde q)$ onto the plane and $\tilde q\mapsto\tfrac12(\tilde q-\alpha_\nu\tilde q)$ onto the axis line. The twist is the companion of the inner involution on the same axis: $\iota_\nu$ isolates the negated plane $\nu^\perp$ against the axis plane $\mathbb{C}_\nu$, and $\alpha_\nu$ isolates the axis line against the scalar line and that plane. The three involutions ${}^{\natural}$, $\iota_\nu$ and $\alpha_\nu$ thus cut the orthogonal splitting $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathbb{R}\nu\oplus\nu^\perp$ into its three two-sided groupings, and the twist decomposition is the one in which the axis line stands alone.
 
 The plane $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ is not a subalgebra: for $\nu=\vec e_x$ the units $\vec e_y$ and $\vec e_z$ of the plane multiply to $\vec e_x$, outside it. The decomposition depends on the axis $\mathbb{R}\nu$ and not on the unit chosen to name it, and the negative twist $-\alpha_\nu$ cuts the same two eigenspaces with the labels exchanged, as the reflection does for the inner involution.
@@ -65,9 +59,7 @@ $$
 |\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}\in\mathbb{R}_{>0}
 $$
 is the **modulus** of $\tilde q$, and
-$$
-\tilde q=|\tilde q|\cdot u, \qquad u=\frac{\tilde q}{|\tilde q|}, \qquad \langle u\rangle_{\natural}=\frac{\langle\tilde q\rangle_{\natural}}{|\tilde q|^2}=1.
-$$
+$$ \boxed{\; \tilde q=|\tilde q|\cdot u, \qquad u=\frac{\tilde q}{|\tilde q|}, \qquad \langle u\rangle_{\natural}=\frac{\langle\tilde q\rangle_{\natural}}{|\tilde q|^2}=1 \;} .$$
 The element $u$ is a **unit quaternion** (a **rotor**), and $\tilde q=|\tilde q|u$ is the **polar decomposition** of $\tilde q$. The decomposition is unique: the modulus is the non-negative root of the norm and the rotor is then forced. It multiplies two factors of different nature — a positive scalar and an element of the unit sphere — and it is not additive. The polar decomposition is the subject of *Modulus–Unit Polar Decomposition of Quaternions*, and its argument and its axis are *Exponential Polar Decomposition of Quaternions*, below this article in this category; the unit sphere $N=1$ is the group of rotors, whose topology is *The Quaternion Unit Group as a Topological Group*, below this article in this category.
 
 On the two remarkable subspaces the polar decomposition specialises. A nonzero scalar is already positive or negative and its rotor is $\pm e_t$; a pure element $\vec q$ has square $\vec q^2=-\langle \vec q\rangle_{\natural}$ and rotor $\vec q/|\vec q|$, an element of the sphere of roots of $-1$ of *Introduction to the Remarkable Subspaces of the Quaternions*.

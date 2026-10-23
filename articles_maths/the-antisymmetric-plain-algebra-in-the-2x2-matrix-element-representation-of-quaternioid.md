@@ -28,9 +28,6 @@ Antisymmetric Plain Algebra* and *The Killing Form of the Antisymmetric Plain Al
 article in this category. The companion article is *The Antisymmetric Plain Algebra in the
 $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the model is
-
 $$
 \mathsf{M}_2(\tilde q)=\begin{pmatrix}q_t-iq_z & -iq_x-q_y\\ -iq_x+q_y & q_t+iq_z\end{pmatrix},
 $$
@@ -60,8 +57,8 @@ matrix is $2q_t$, which vanishes exactly on the pure elements.
 **Theorem (the bracket is the halved commutator).**
 
 $$
-\mathsf{M}_2(\tilde q_1\times\tilde q_2)=\tfrac12\bigl[\mathsf{M}_2(\tilde q_1),\mathsf{M}_2(\tilde q_2)\bigr]
-=\tfrac12\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)-\mathsf{M}_2(\tilde q_2)\mathsf{M}_2(\tilde q_1)\bigr).
+\boxed{\;\mathsf{M}_2(\tilde q_1\times\tilde q_2)=\tfrac12\bigl[\mathsf{M}_2(\tilde q_1),\mathsf{M}_2(\tilde q_2)\bigr]
+=\tfrac12\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)-\mathsf{M}_2(\tilde q_2)\mathsf{M}_2(\tilde q_1)\bigr)\;}.
 $$
 
 *Proof.* The model is multiplicative, so
@@ -80,8 +77,8 @@ $XY=\tfrac12(XY+YX)+\tfrac12(XY-YX)$.
 the model,
 
 $$
-\mathsf{M}_2\bigl(\mathrm{Vect}(\mathbb{H})\bigr)
-=\{\mathsf{M}_2(\vec q):\ \operatorname{Tr}\mathsf{M}_2(\vec q)=0\},
+\boxed{\;\mathsf{M}_2\bigl(\mathrm{Vect}(\mathbb{H})\bigr)
+=\{\mathsf{M}_2(\vec q):\ \operatorname{Tr}\mathsf{M}_2(\vec q)=0\}\;},
 $$
 
 a three-dimensional real subspace, and the kernel of the model map is $\{0\}$: the model is faithful.
@@ -123,8 +120,8 @@ $\mathsf{M}_2(e_t)=\mathrm{I}_2$ entering no value.
 **Proposition.** The invariants of the images are
 
 $$
-\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_t,\qquad
-\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2,
+\boxed{\;\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_t,\qquad
+\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2\;},
 $$
 
 $$
@@ -147,8 +144,8 @@ The normality is $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\maths
 **Theorem (the trace form is the Killing form).** On the derived algebra,
 
 $$
-\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)\bigr)=\kappa(\tilde q_1,\tilde q_2)=-2\,\vec q_1\cdot\vec q_2
-\qquad(\tilde q_1,\tilde q_2\in\mathrm{Vect}(\mathbb{H})),
+\boxed{\;\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)\bigr)=\kappa(\tilde q_1,\tilde q_2)=-2\,\vec q_1\cdot\vec q_2
+\qquad(\tilde q_1,\tilde q_2\in\mathrm{Vect}(\mathbb{H}))\;},
 $$
 
 is the Killing form of the block, and on general elements

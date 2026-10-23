@@ -28,7 +28,9 @@ the bracket is identically zero and $\mathbb{B}_{\mathrm{r}}$ is an **abelian** 
 
 **Theorem (the closed form and the group law).** The exponential is the Lie-group exponential of the abelian Lie algebra, it is
 $$
-\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}\bigl(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown}\bigr),
+\boxed{\;
+\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}\bigl(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown}\bigr)
+\;},
 $$
 and it satisfies $\exp(\breve Q_{1}+\breve Q_{2})=\exp \breve Q_{1}\exp \breve Q_{2}$ for **all** $\breve Q_{1},\breve Q_{2}$, with $\exp 0=1$. The differential of $\exp$ at the origin is the identity, so $\exp$ is a local diffeomorphism near $0$.
 
@@ -46,7 +48,9 @@ isomorphic to $\mathbb{Z}^{2}$; consequently $\exp$ is a covering map $\mathbb{B
 
 **Theorem (the structure of the unit group).** The group of units is
 $$
-\mathbb{B}_{\mathrm{r}}^{\times}=\mathbb{C}^{\times}\times\mathbb{C}^{\times},
+\boxed{\;
+\mathbb{B}_{\mathrm{r}}^{\times}=\mathbb{C}^{\times}\times\mathbb{C}^{\times}
+\;},
 $$
 abelian, of real dimension four, connected but not simply connected, with fundamental group $\mathbb{Z}^{2}$. As a Lie group it is the product of the two complex multiplicative groups, and it is isomorphic to $\mathbb{R}^{2}\times T^{2}$ with $T^{2}=S^{1}\times S^{1}$ the two-torus.
 
@@ -96,7 +100,9 @@ the maximal compact subgroup being the maximal torus $T^{2}$.
 
 **Theorem (the polar form).** Every element has a polar form
 $$
-\breve Q=\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-,\qquad \rho_{1}=\lvert Q_{+}\rvert,\ \rho_{2}=\lvert Q_{-}\rvert\ge0,\ \theta_{1},\theta_{2}\in(-\pi,\pi],
+\boxed{\;
+\breve Q=\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-,\qquad \rho_{1}=\lvert Q_{+}\rvert,\ \rho_{2}=\lvert Q_{-}\rvert\ge0,\ \theta_{1},\theta_{2}\in(-\pi,\pi]
+\;},
 $$
 unique under the phase-range convention, and it is a unit exactly when $\rho_{1}\rho_{2}>0$. Every **unit** has the exponential parametrisation $\breve Q=\exp S$ with $S=\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-$.
 

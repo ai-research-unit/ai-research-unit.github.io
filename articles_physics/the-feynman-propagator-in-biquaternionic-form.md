@@ -7,7 +7,7 @@ The companion article *Canonical Quantization of the Biquaternion Dirac Field* q
 This article is about the next object in that construction: the **two-point function** of the quantized field, the Feynman propagator
 
 $$
-S_F(x-y) \;=\; \langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle ,
+\boxed{\;S_F(x-y) \;=\; \langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle\;},
 $$
 
 with $T$ the fermionic time-ordering operator. The two-point function is where the boundary condition of the theory is stored. Its momentum-space amplitude is not a function but a distribution, and what makes it the *Feynman* amplitude rather than the retarded or advanced one is a contour prescription in the complex energy plane — the $i\epsilon$.
@@ -15,8 +15,6 @@ with $T$ the fermionic time-ordering operator. The two-point function is where t
 The specific question this article asks is a question about the algebra. The biquaternion framework already carries a complex structure: the scalar imaginary $i$ is a fixed central element with $i^2=-1$, it is what turns the material time coordinate into $ict'$, and it is what lets the mass shell be written as the single quadratic condition $\tilde{P}\tilde{P}^{\natural}=-m^2c^2/\hbar^2$ whose two solutions in the frequency are the positive- and negative-frequency branches (the particle and antiparticle modes in the standard interpretation). The Feynman prescription is also an insertion of $i$: $m^2\mapsto m^2-i\epsilon$. Are these the same $i$ doing the same work? Is the contour deformation the algebra's own complex structure, or is it an independent analytic input that the algebra can only write down?
 
 We answer this on a concrete case, by computing the pole structure and the contour explicitly and by recomputing every displayed formula on a momentum chosen for the purpose. The finding is stated at the outset because it is the article's content. **The algebra supplies the complex plane in which the contour is drawn, and a natural notation for the prescription — the deformed mass-shell scalar $\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon$, whose imaginary part lies along the $ict'$ direction of the material sector — but it does not select the contour.** The deformation's *axis* is algebraically natural; its *orientation*, which is what distinguishes the Feynman propagator from the retarded and advanced ones, is an analytic boundary condition. In this problem the algebra adds notation and a home for the $i\epsilon$, not the physics that fixes it. If that is all it adds, we say so.
-
-**Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace (the fixed-point set of complex conjugation) and $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is the centre. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. On the spinor module the biquaternion Dirac equation reads $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict'$ gradient, and $\not p=\gamma^0E-\boldsymbol{\gamma}\cdot\vec p$ for $p^\mu=(E,\vec p)$. The wave biquaternion is $\tilde{P}=iE\,e_t+\vec p$ (natural units $\hbar=c=1$), with $\tilde{P}\tilde{P}^{\natural}=-E^2+\vec p^2=-p^2$ and mass shell $\tilde{P}\tilde{P}^{\natural}=-m^2$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form.
 
 ## The Two-Point Function of the Quantized Dirac Field
 
@@ -74,9 +72,9 @@ The relative minus is not a convention; it is the statement that the two field o
 The two $\theta$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is
 
 $$
-S_F(x-y)\;=\;i\int\!\frac{d^4p}{(2\pi)^4}\;
+\boxed{\;S_F(x-y)\;=\;i\int\!\frac{d^4p}{(2\pi)^4}\;
 \exp(-ip\cdot(x-y))\;\frac{\not p+m}{p^2-m^2+i\epsilon},
-\qquad \epsilon\to0^+ .
+\qquad \epsilon\to0^+\;}.
 $$
 
 The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p^0$ integral reproduce the two branches with their relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.
@@ -84,10 +82,10 @@ The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p^0$ integr
 Write the $p^0$ integral at fixed $\vec p$. Since $p^2-m^2=(p^0)^2-E_{\vec p}^2$, the integrand has poles where
 
 $$
-(p^0)^2-E_{\vec p}^2+i\epsilon=0,
+\boxed{\;(p^0)^2-E_{\vec p}^2+i\epsilon=0,
 \qquad\text{i.e.}\qquad
 p^0=\pm\sqrt{E_{\vec p}^2-i\epsilon}
-=\pm\Big(E_{\vec p}-\frac{i\epsilon}{2E_{\vec p}}\Big)+O(\epsilon^2).
+=\pm\Big(E_{\vec p}-\frac{i\epsilon}{2E_{\vec p}}\Big)+O(\epsilon^2)\;}.
 $$
 
 The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}$ pole **above** it. This is the whole content of the prescription: the two poles move in *opposite* directions. The decay of $\exp(-ip^0(x^0-y^0))$ then selects one pole or the other:
@@ -137,7 +135,6 @@ $$
 \tilde{P}\tilde{P}^{\natural}=(iE)^2+\vec p^2=-E^2+\vec p^2=-p^2 .
 $$
 
-
 $$
 \tilde{P}\tilde{P}^{\natural}=-m^2 \quad\Longleftrightarrow\quad E_{\vec p}^2=\vec p^2+m^2 ,
 $$
@@ -145,8 +142,8 @@ $$
 whose two frequency branches $E=\pm E_{\vec p}$ are the two poles above. Inverting the relation gives the biquaternion form of the momentum-space amplitude,
 
 $$
-S_F(p)\;=\;\frac{i(\not p+m)}{p^2-m^2+i\epsilon}
-\;=\;-\,\frac{i(\not p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon},
+\boxed{\;S_F(p)\;=\;\frac{i(\not p+m)}{p^2-m^2+i\epsilon}
+\;=\;-\,\frac{i(\not p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon}\;},
 $$
 
 the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde{P})=\tilde{P}\tilde{P}^{\natural}+m^2$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.

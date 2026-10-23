@@ -18,7 +18,7 @@ in the notation of *The Quaternioid as a Vector Space over $\mathbb{R}$*, with $
 
 **Proposition.** The map ${}^{\natural}$ is an anti-automorphism of $\mathbb{H}$ and an involution:
 $$
-(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural} , \qquad (\tilde q^{\natural})^{\natural}=\tilde q .
+\boxed{\;\boxed{(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural} , \qquad (\tilde q^{\natural})^{\natural}=\tilde q}\;}.
 $$
 Its fixed space is the scalar line $\mathbb{R}_{\mathbb{H}}$ and its anti-fixed space is the vector subspace $\mathrm{Vect}(\mathbb{H})$, so that $\tilde q=\tfrac12(\tilde q+\tilde q^{\natural})+\tfrac12(\tilde q-\tilde q^{\natural})$ is the scalar–vector decomposition.
 
@@ -60,7 +60,7 @@ The natural sign is an anti-automorphism; the inner conjugations are automorphis
 
 **Theorem (classification).** Every anti-automorphism of $\mathbb{H}$ is of the form
 $$
-\sigma_a(\tilde q)=a\,\tilde q^{\natural}\,a^{-1} , \qquad a\in\mathbb{H},\ a\neq0 ,
+\boxed{\;\boxed{\sigma_a(\tilde q)=a\,\tilde q^{\natural}\,a^{-1} , \qquad a\in\mathbb{H},\ a\neq0}\;},
 $$
 and $\sigma_a$ is an involution exactly when $a^2$ is central, that is, exactly when $a$ is real or pure. Up to scale and up to the sign, the involutive anti-automorphisms are therefore
 
@@ -106,13 +106,13 @@ $$
 $$
 is a Klein four-group. The natural sign commutes with each $\iota_{\nu_k}$ and is not one of them, and adjoining it gives the abelian group of order eight
 $$
-G=\{id,{}^{\natural}\}\times\{id,\iota_{\nu_1},\iota_{\nu_2},\iota_{\nu_3}\}\cong(\mathbb{Z}/2)^3 ,
+\boxed{\;\boxed{G=\{id,{}^{\natural}\}\times\{id,\iota_{\nu_1},\iota_{\nu_2},\iota_{\nu_3}\}\cong(\mathbb{Z}/2)^3}\;},
 $$
 whose seven non-identity elements are the sign ${}^{\natural}$, the three inner involutions $\iota_{\nu_1},\iota_{\nu_2},\iota_{\nu_3}$ (automorphisms) and the three twists $\alpha_{\nu_1},\alpha_{\nu_2},\alpha_{\nu_3}$ (anti-automorphisms).
 
 **Proposition (orbit sizes).** The group $G$ fixes the scalar line pointwise and acts on the vector subspace by all the sign changes $q_k\mapsto\pm q_k$ of the coordinates $(\nu_x,\nu_y,\nu_z)$, that is, by the group $(\mathbb{Z}/2)^3$ of diagonal sign changes. Hence the orbit of $\tilde q$ has size
 $$
-1,\ 2,\ 4,\ 8
+\boxed{\;1,\ 2,\ 4,\ 8\;}
 $$
 according as the number of nonzero coordinates of its vector part is $0,1,2,3$. In particular the scalar line is the fixed set of $G$, and the generic element has the full orbit of eight.
 

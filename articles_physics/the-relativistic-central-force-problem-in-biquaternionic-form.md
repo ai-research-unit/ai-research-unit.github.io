@@ -24,12 +24,6 @@ The article is deliberately parallel to its non-relativistic counterparts. *Cent
 
 The companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre* supplies the field-theoretic origin of the potential treated here: the static field of a central scalar source is the $1/r$ potential, and a test particle in it is the problem of this article.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Position, momentum, force and angular momentum are real vectors in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the energy, the potential and the rest mass are central scalars, real multiples of $e_t$. For two real vectors,
-$$
-\vec a\vec b=-\vec a\cdot\vec b\,e_t+\vec a\times\vec b, \qquad [\vec a,\vec b]=2\,\vec a\times\vec b,
-$$
-so that the angular momentum is $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$, the vector part of the quaternion product $\vec r\vec p$, and its magnitude is $L=|\vec L|=\sqrt{\langle \vec L\rangle_{\natural}}$. The four-position is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ and the four-momentum is $\tilde{P}=iE/c\,e_t+\vec p$, whose biquaternion norm is the mass-shell relation. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\vec v$ is reserved for particle and frame velocities. The coupling $\kappa$ is positive for an attractive inverse-square force; for gravity $\kappa=GMm$, and for the Coulomb problem $\kappa=-ϙ_1ϙ_2/(4\pi\epsilon_0)$, as fixed in the companion article on the classical Coulomb problem.
-
 ## The Relativistic Central Force
 
 ### The Conserved Quantities
@@ -132,7 +126,7 @@ $$
 Differentiating the right-hand side of (1) gives $c^2L^2\left(2\frac{du}{d\theta}\frac{d^2u}{d\theta^2}+2u\frac{du}{d\theta}\right)$. Equating and dividing by $2\,du/d\theta$ — the case $du/d\theta=0$ is the circular orbit, treated separately below — yields the **relativistic Binet equation**
 
 $$
-\boxed{\;\frac{d^2u}{d\theta^2}+u=-\frac{(E-V)F(1/u)}{c^2L^2u^2}=-\frac{m_{\text{rel}}F(1/u)}{L^2u^2}.\;}
+\boxed{\;\frac{d^2u}{d\theta^2}+u=-\frac{(E-V)F(1/u)}{c^2L^2u^2}=-\frac{m_{\text{rel}}F(1/u)}{L^2u^2}\;}.
 $$
 
 The second form is the one to read. Since $m_{\text{rel}}=(E-V)/c^2=\gamma m$, the relativistic Binet equation is **the non-relativistic Binet equation with the rest mass replaced by the relativistic mass**, the latter evaluated at the running radius. In the non-relativistic limit $\gamma\to1$ and $E\to mc^2$, and the equation reduces to
@@ -168,7 +162,7 @@ $$
 which rearranges into a linear equation with constant coefficients,
 
 $$
-\frac{d^2u}{d\theta^2}+\omega^2u=\frac{\kappa E}{c^2L^2}, \qquad \omega^2=1-\frac{\kappa^2}{c^2L^2}.
+\boxed{\ \frac{d^2u}{d\theta^2}+\omega^2u=\frac{\kappa E}{c^2L^2}, \qquad \omega^2=1-\frac{\kappa^2}{c^2L^2}\ }\ .
 $$
 
 This is the central result of the article: **the relativistic inverse-square problem is exactly linear, with the frequency $\omega$ replacing the unit frequency of the non-relativistic problem.** The frequency is real precisely when
@@ -207,13 +201,13 @@ The second form separates the rest energy and is useful in the non-relativistic 
 The orbit is therefore
 
 $$
-r(\theta)=\frac{p}{1+e\cos\omega(\theta-\theta_0)},
+\boxed{\ r(\theta)=\frac{p}{1+e\cos\omega(\theta-\theta_0)}\ } ,
 $$
 
 a **conic in the rescaled angle** $\varphi=\omega\theta$. In the plane coordinatized by $(r,\varphi)$ it is an ordinary Kepler conic with its focus at the centre; in the physical plane the apsidal line advances by
 
 $$
-\Delta=\frac{2\pi}{\omega}-2\pi=2\pi\left(\frac{1}{\sqrt{1-\kappa^2/(c^2L^2)}}-1\right)
+\boxed{\ \Delta=\frac{2\pi}{\omega}-2\pi=2\pi\left(\frac{1}{\sqrt{1-\kappa^2/(c^2L^2)}}-1\right)\ }
 $$
 
 per revolution. For small $\kappa^2/(c^2L^2)$ the advance is

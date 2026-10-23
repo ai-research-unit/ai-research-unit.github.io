@@ -116,11 +116,11 @@ $$
 Over a closed loop at fixed $\theta = \theta_0$, traversed once counterclockwise,
 
 $$
-S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle\,dt'
+\boxed{\;S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle\,dt'
 = -\hbar\cdot 2\pi\sin^2\frac{\theta_0}{2}
 = -\hbar\cdot\frac{\Omega}{2},
 \qquad
-\Omega = 2\pi(1-\cos\theta_0).
+\Omega = 2\pi(1-\cos\theta_0)\;}.
 $$
 
 The Wess–Zumino term is therefore $-\hbar$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle z|dz/dt'\rangle dt'$ equals $-\Omega/2$ for every value.
@@ -163,8 +163,8 @@ $$
 which is $\hbar$ times the Berry curvature of the geometric-phase analysis. The Hamiltonian term supplies the energy. The resulting equation is the precession
 
 $$
-d\vec r/dt' = \gamma\,\vec r\times\vec B
-= \omega_L\,\vec r\times\vec u_t,
+\boxed{\;d\vec r/dt' = \gamma\,\vec r\times\vec B
+= \omega_L\,\vec r\times\vec u_t\;},
 $$
 
 the Larmor/Bloch equation for the classical spin, with $|\vec r| = 1$. The classical spin is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.
@@ -255,8 +255,8 @@ $$
 with the invariant measure $\frac{2}{\pi}\frac{d^2z}{(1+|z|^2)^2}$ from the resolution of identity. The kinetic term is the **Wess–Zumino term**, and over a closed loop it equals
 
 $$
-S_{WZ} = -\hbar\cdot\frac{\Omega}{2},
-\qquad \Omega = 2\pi(1-\cos\theta_0),
+\boxed{\;S_{WZ} = -\hbar\cdot\frac{\Omega}{2},
+\qquad \Omega = 2\pi(1-\cos\theta_0)\;},
 $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.

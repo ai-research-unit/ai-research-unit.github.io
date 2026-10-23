@@ -169,7 +169,7 @@ $$
 Each is a real vector space of dimension $4$, and since ${}^{*}$ has eigenvalues $\pm1$ only,
 
 $$
-\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-.
+\boxed{\;\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-\;}.
 $$
 
 **Neither sector is a subalgebra.** This is a derived negative fact, with witnesses: $(e_t+i\vec e_x)(e_t+i\vec e_y)=e_t+i\vec e_x+i\vec e_y-\vec e_z\notin\mathbb{M}_+$, because the vector part contains the real term $-\vec e_z$; and $(ie_t+\vec e_x)^2=-2e_t+2i\vec e_x\notin\mathbb{M}_-$, because the scalar part is real. The sector decomposition is a decomposition of vector spaces, not of algebras, and this too follows from the multiplication table rather than being posited.
@@ -201,7 +201,7 @@ $$
 as one checks from $[\vec e_y,\vec e_z]=2\vec e_x$ and its cyclic analogues. Therefore a trace functional, normalized by $\mathrm{Tr}(e_t)=2$ — the degree of the central simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$ — is
 
 $$
-\mathrm{Tr}(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1).
+\boxed{\;\mathrm{Tr}(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1)\;}.
 $$
 
 The normalization is rigidly derived rather than a presentation: the reduced trace of the degree-two matrix model fixes it, and every automorphism of the base fixes $e_t$ and hence the value $\mathrm{Tr}(e_t)$; the vanishing on the vector units is forced. Consequently, for any two biquaternions $\tilde Q_1,\tilde Q_2$,
@@ -255,7 +255,7 @@ $$
 which is a copy of $\mathbb{C}$ inside $\mathbb{B}$; this is read off from the requirement that a central element commute with $\vec e_x,\vec e_y,\vec e_z$, which forces its vector coefficients to vanish. The elements of the centre that square to $-e_t$ are exactly the solutions of $z_0^2=-1$ for $z=z_0e_t$ among these, namely
 
 $$
-z=\pm i.
+\boxed{\;z=\pm i\;}.
 $$
 
 Thus the pair $\{i,-i\}$ is rigidly derived from the algebra, while each of the two elements is derived up to presentation.

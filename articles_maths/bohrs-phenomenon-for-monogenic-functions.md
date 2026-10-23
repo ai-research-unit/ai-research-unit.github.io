@@ -10,9 +10,7 @@ This article records the monogenic Bohr phenomenon as it stands after the paper 
 
 **Theorem (Bohr, 1914).** Let $f(A) = \sum_{n\ge 0} a_n A^n$ be holomorphic in the unit disk with $\lvert f(A)\rvert \le 1$ there. Then
 
-$$
-\sum_{n\ge 0} \lvert a_n\rvert r^n \le 1 \qquad \text{for } 0 \le r \le \frac13,
-$$
+$$ \boxed{\; \sum_{n\ge 0} \lvert a_n\rvert r^n \le 1 \qquad \text{for } 0 \le r \le \frac13 \;} ,$$
 
 and the radius $1/3$ is optimal.
 
@@ -65,9 +63,7 @@ The monogenic analogue of Bohr's theorem has two readings, which differ in where
 
 **Corollary (the case $f(0) = 0$).** Let $f$ be a square-integrable monogenic function with $f(0) = 0$ and $\lvert f(\tilde q)\rvert < 1$ in $B$. Then
 
-$$
-\sum_{n\ge 1}\Big\lvert X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big(X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big\rvert < 1
-$$
+$$ \boxed{\; \sum_{n\ge 1}\Big\lvert X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big(X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big\rvert < 1 \;} $$
 
 in the ball $\lvert \tilde q\rvert = r < 0.125$.
 
@@ -95,9 +91,7 @@ The engine of the coefficient estimate is an inequality for the hypercomplex der
 
 **Theorem.** Let $f$ be a square-integrable monogenic function in $B$. Then for $0 \le r < 1$,
 
-$$
-\mathcal{M}\Big(\tfrac12\bar Df, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big(\mathcal{M}_f(1) - \lvert \operatorname{Sc}f(0)\rvert \Big).
-$$
+$$ \boxed{\; \mathcal{M}\Big(\tfrac12\bar Df, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big(\mathcal{M}_f(1) - \lvert \operatorname{Sc}f(0)\rvert \Big) \;} .$$
 
 **Corollary.** Let $f$ be a square-integrable monogenic function in $B$ orthogonal to the non-trivial hyperholomorphic constants. Then for $0 \le r < 1$,
 

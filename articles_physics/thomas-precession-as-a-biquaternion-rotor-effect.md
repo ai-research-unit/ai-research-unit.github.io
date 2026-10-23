@@ -24,8 +24,6 @@ Three boundaries are respected. The **Wigner rotation as an information-theoreti
 
 The article is organized as follows. The next section fixes the boost rotor and the instantaneous rest frame. The following section develops the composition of two boosts and the exact Wigner angle. The next two sections take the continuous limit and identify the Thomas rotor. The remaining sections treat uniform circular motion, the connection to the spin of a relativistic particle, and the factor $\tfrac12$ in the spin–orbit coupling, and separate what the algebra supplies from what is standard relativistic kinematics.
 
-**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^{2}=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and the scalar imaginary is $i$, central and with $i^{2}=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector, home of the four-vectors) and $\mathbb{M}_+$ (Hermitian, the informational sector, home of the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the central scalar subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and the Hermitian conjugate is $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^{2}$, the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force is $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau\in\mathbb{M}_-$. Throughout, $\tau$ is proper time, $t'$ laboratory time, $\vec v$ the particle velocity, $\vec a=d\vec v/dt'$ its laboratory acceleration, $\vec u$ a unit direction, and $\psi$ a rapidity with $\tanh\psi=v/c$. The trace on the informational sector is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.
-
 ## The Boost Rotor and the Instantaneous Rest Frame
 
 The **boost rotor** of a frame moving with velocity $\vec v_b$ is the unit-norm biquaternion
@@ -45,7 +43,6 @@ $$
 $$
 
 and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v_2=c\tanh(\psi_v-\psi_b)$.
-
 
 The rotor associated with a four-velocity is the positive Hermitian square root
 
@@ -82,9 +79,9 @@ The product is Hermitian, and hence a pure boost with no rotation factor, if and
 For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the angle $\omega$ of $\tilde{u}$ is
 
 $$
-\tan\frac{\omega}{2}
+\boxed{\ \tan\frac{\omega}{2}
 =\frac{\sinh^{2}\dfrac{\psi}{2}\,\sin\theta}
-{\cosh^{2}\dfrac{\psi}{2}+\sinh^{2}\dfrac{\psi}{2}\,\cos\theta},
+{\cosh^{2}\dfrac{\psi}{2}+\sinh^{2}\dfrac{\psi}{2}\,\cos\theta}\ } ,
 $$
 
 and its axis is the normal to the plane of the two boost directions. The general case of unequal rapidities is the same formula with two different rapidities, and it is derived in Companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the composition law and the finite Wigner angle. The formula has two instructive limits: for small rapidity it gives $\omega\approx\tfrac{1}{2}\psi^{2}\sin\theta$, a purely relativistic effect vanishing as $v^{2}/c^{2}$, and for large rapidity it saturates at $\omega\to\theta$, the angle between the two directions.
@@ -164,7 +161,7 @@ $$
 and restoring the vector character with the axis $\vec u_{\vec a\times\vec v}$ gives the boxed result
 
 $$
-\boxed{\;\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v.\;}
+\boxed{\;\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v\;}.
 $$
 
 The **Thomas half** is the non-relativistic value of the coefficient: as $v\to0$ one has $\gamma\to1$ and $\gamma^{2}/(\gamma+1)\to\tfrac12$, so
@@ -235,9 +232,9 @@ $$
 and the rate becomes
 
 $$
-\vec\omega_T
+\boxed{\ \vec\omega_T
 =\frac{\gamma^{2}}{\gamma+1}\left(-\Omega\frac{v^{2}}{c^{2}}\right)\vec e_z
-=-(\gamma-1)\,\Omega\,\vec e_z,
+=-(\gamma-1)\,\Omega\,\vec e_z\ } ,
 $$
 
 using $\gamma^{2}v^{2}/c^{2}=\gamma^{2}-1=(\gamma-1)(\gamma+1)$. The precession is therefore **retrograde**: it is opposite in sense to the orbital motion. Over one orbit the laboratory time is $T=2\pi/\Omega$, and the frame turns through
@@ -326,7 +323,7 @@ $$
 whose rotation factor is the Thomas–Wigner rotation of the interval. Its continuous limit is the Thomas precession
 
 $$
-\boxed{\;\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v,\;}
+\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v,
 \qquad
 \vec\omega_T\approx\frac{1}{2c^{2}}\,\vec a\times\vec v\quad(v\ll c),
 $$

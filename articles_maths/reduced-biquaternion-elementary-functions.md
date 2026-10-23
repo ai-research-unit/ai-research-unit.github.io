@@ -4,13 +4,9 @@
 
 This article defines the elementary functions of a reduced biquaternion variable: the exponential, the logarithm, the powers and roots, and the trigonometric and hyperbolic functions. Each function is defined once, its basic properties are recorded, and its value is read on the two eigenvalues.
 
-The article rests on *Eigenvalue Decomposition of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*: the eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, the central idempotents $\Pi_\pm$, the decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$, and the spectral calculus. They are collected in §*The Eigenvalue Data* and used here without proof. The algebra and its bar are *Introduction to the Algebra of the Reduced Biquaternions*; the norm and the unit criterion are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*.
+The article rests on *Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*: the eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, the central idempotents $\Pi_\pm$, the decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$, and the spectral calculus. They are collected in §*The Eigenvalue Data* and used here without proof. The algebra and its bar are *Introduction to the Algebra of the Reduced Biquaternions*; the norm and the unit criterion are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*.
 
 Every claim is either proved or stated as a definition. Complex analysis is assumed: holomorphic functions, power series, the complex exponential and logarithm, and the branch structure of the argument are used throughout.
-
-**Boundaries.** This article owns the exponential and the logarithm, with their domains, their fibres, their inverses and their derivatives, the power and root functions, and the trigonometric and hyperbolic functions. The higher special functions are *Reduced Biquaternion Higher Special Functions*; *Exponential Polar Decomposition of Reduced Biquaternions* cites the exponential and the logarithm and does not derive them. The polar decomposition, the Lie group structure and the harmonic analysis are later articles.
-
-**Placement.** The article is in the Analysis group of the Reduced Biquaternion category, after *Reduced Biquaternion Analysis* and before *Reduced Biquaternion Higher Special Functions* and *Exponential Polar Decomposition of Reduced Biquaternions*. The complex member is *Complex Special Functions*, and the split-complex members are *Split-Complex Elementary Functions* and *Split-Complex Higher Special Functions*.
 
 **Plan.** The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§*The Spectral Setting*). The exponential and the logarithm follow, with their kernels, images and fibres (§*The Exponential*, §*The Logarithm*); the powers and roots follow from the logarithm (§*Powers and Roots*); the trigonometric and hyperbolic functions and their inverses follow (§*The Trigonometric and Hyperbolic Functions*); the relations to the complex line and the split-complex plane close the theory (§*Relations to the Neighbouring Cases*). The results are collected in tables in §*Summary*, including the comparison with the split-complex and biquaternion cases.
 
@@ -22,7 +18,7 @@ Every numerical value displayed below was recomputed in double precision.
 
 ### The Eigenvalue Data
 
-The spectral data are those of *Eigenvalue Decomposition of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
+The spectral data are those of *Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
 
 | Quantity | Value |
 |---|---|
@@ -46,7 +42,7 @@ and the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=\lambda_1\lambda_2
 
 ### The Regimes
 
-The characteristic polynomial is $(X-\lambda_1)(X-\lambda_2)$, and the algebra has two spectral regimes; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenvalue Decomposition of a Reduced Biquaternion*, §*Degenerate Regimes*.
+The characteristic polynomial is $(X-\lambda_1)(X-\lambda_2)$, and the algebra has two spectral regimes; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenbasis of a Reduced Biquaternion*, §*Degenerate Regimes*.
 
 | Regime | Condition | Consequence for the functions |
 |---|---|---|
@@ -63,10 +59,12 @@ Every elementary function of this article is the spectral function of its comple
 **Theorem (Idempotent Principle).** Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $\rho$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<\rho$. Then
 
 $$
-f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-.
+\boxed{\;
+f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-
+\;}.
 $$
 
-**Proof.** The polynomial calculus of *Eigenvalue Decomposition of a Reduced Biquaternion*, §*Powers, Polynomial Calculus, and the Group of Units*, gives $\breve Q^n=\lambda_1^n\Pi_++\lambda_2^n\Pi_-$ for every $n\geq0$. Summing termwise and using $\Pi_+^2=\Pi_+$, $\Pi_-^2=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$ gives the display; the rearrangement is legitimate because the series converges absolutely in each component. For a function defined by an integral, an inverse or another complex formula, the display is the definition of its reduced biquaternion extension, and the value is defined exactly when both eigenvalue expressions are defined.
+**Proof.** The polynomial calculus of *Eigenbasis of a Reduced Biquaternion*, §*Powers, Polynomial Calculus, and the Group of Units*, gives $\breve Q^n=\lambda_1^n\Pi_++\lambda_2^n\Pi_-$ for every $n\geq0$. Summing termwise and using $\Pi_+^2=\Pi_+$, $\Pi_-^2=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$ gives the display; the rearrangement is legitimate because the series converges absolutely in each component. For a function defined by an integral, an inverse or another complex formula, the display is the definition of its reduced biquaternion extension, and the value is defined exactly when both eigenvalue expressions are defined.
 
 This is the **Idempotent Principle** of the algebra, and it is the exact analogue of *Split-Complex Elementary Functions*, §*The Idempotent Principle*, with two real eigenvalues replaced by two complex ones. It is the only rule the rest of the article uses.
 
@@ -223,8 +221,10 @@ $$
 with the **principal logarithm**
 
 $$
+\boxed{\;
 \operatorname{Log}\breve Q=\frac{\operatorname{Log}(\lambda_1)+\operatorname{Log}(\lambda_2)}{2}
-+j\,\frac{\operatorname{Log}(\lambda_1)-\operatorname{Log}(\lambda_2)}{2},
++j\,\frac{\operatorname{Log}(\lambda_1)-\operatorname{Log}(\lambda_2)}{2}
+\;},
 $$
 
 where $\operatorname{Log}$ on the right is the principal complex logarithm, with argument in $(-\pi,\pi]$.
@@ -349,7 +349,6 @@ for the integers that bring the two phases into the principal diamond.
 **Proof.** Both sides are logarithms of $\exp\breve Q_{\log}$, so they differ by an element of $\ker\exp$. The principal value is the representative whose two phases lie in the half-open diamond.
 
 The asymmetry is the content of the word "multivalued". The exponential forgets two integers, one for each eigenvalue; the principal logarithm chooses one representative. The split-complex exponential forgets none, and the complex exponential forgets one.
-
 
 ### The Derivative
 
@@ -737,7 +736,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Reduced Biquaternion](eigenvalue-decomposition-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the central idempotents and the polynomial calculus used throughout.
+- [Eigenbasis of a Reduced Biquaternion](eigenbasis-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the central idempotents and the polynomial calculus used throughout.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the polar reading of the logarithm.
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the exponential, the trigonometric functions and the logarithm of one complex variable.
 - Lars V. Ahlfors, *Complex Analysis*, 3rd edition (McGraw-Hill, 1979), for the branch structure of the logarithm and the power functions.

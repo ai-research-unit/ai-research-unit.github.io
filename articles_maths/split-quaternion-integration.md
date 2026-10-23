@@ -34,8 +34,10 @@ $$
 with $\mathrm{d}\sigma$ the Euclidean surface element, and taking scalar parts and summing,
 
 $$
-\int_\Omega \operatorname{Sc}\big(D f\big) \;=\; \int_{\partial\Omega} \operatorname{Sc}\big(f\, n\big) .
-$$
+\boxed{\;
+\int_\Omega \operatorname{Sc}\big(D f\big) \;=\; \int_{\partial\Omega} \operatorname{Sc}\big(f\, n\big)
+\;}
+$$.
 
 The normalisation is the Euclidean one, which exists on every smooth hypersurface. What degenerates on a boundary tangent to the null cone is not the normalisation but the boundary term: if $\langle n\rangle_{\natural} = 0$ at a point, then $n$ is a zero divisor there and the functional $f \mapsto \operatorname{Sc}(fn)$ has a kernel, so the boundary term loses information. The algebra-valued form $\int_\Omega Df = \int_{\partial\Omega} fn$ with the normal on the right is *not* valid as it stands; the componentwise theorem gives $\int_\Omega Df = \int_{\partial\Omega}\sum_\mu (\vec e_\mu\,f)n_\mu$, and only after taking the scalar part does the sum collapse to the single product $fn$.
 
@@ -90,8 +92,10 @@ $$
 For $f, g$ with continuous first derivatives on the closure,
 
 $$
-\int_\Omega \Big[\operatorname{Sc}\big((Df)\,g\big) + \operatorname{Sc}\big(f\,(\bar D g)\big)\Big] = \int_{\partial\Omega} \operatorname{Sc}\big(f\, g\, n\big) .
-$$
+\boxed{\;
+\int_\Omega \Big[\operatorname{Sc}\big((Df)\,g\big) + \operatorname{Sc}\big(f\,(\bar D g)\big)\Big] = \int_{\partial\Omega} \operatorname{Sc}\big(f\, g\, n\big)
+\;}
+$$.
 
 Two features of the algebra are responsible for the form of this formula, and both are statements that are true for scalar-valued functions and false in general.
 
@@ -141,8 +145,10 @@ which is the display because $\operatorname{Sc}(nDu) = -n_{q_x}\partial/\partial
 **Theorem (Divergence and Stokes for the Algebra).** For a split-quaternion-valued function $F = F_t + F_x\vec e_x + F_y\vec e_y + F_z\vec e_z$ with continuous first derivatives,
 
 $$
-\int_\Omega \Big(\frac{\partial F_t}{\partial q_t} + \frac{\partial F_x}{\partial q_x} + \frac{\partial F_y}{\partial q_y} + \frac{\partial F_z}{\partial q_z}\Big) = \int_{\partial\Omega} \big(F_t n_{q_t} + F_x n_{q_x} + F_y n_{q_y} + F_z n_{q_z}\big),
-$$
+\boxed{\;
+\int_\Omega \Big(\frac{\partial F_t}{\partial q_t} + \frac{\partial F_x}{\partial q_x} + \frac{\partial F_y}{\partial q_y} + \frac{\partial F_z}{\partial q_z}\Big) = \int_{\partial\Omega} \big(F_t n_{q_t} + F_x n_{q_x} + F_y n_{q_y} + F_z n_{q_z}\big)
+\;}
+$$,
 
 and the Stokes theorem holds for the three-form of the vector subspace with the orientation fixed above.
 
@@ -207,8 +213,10 @@ and both right-hand sides vanish for the stated $h$, since $\partial/\partial q_
 **Theorem (The Inversion on the Left).** What holds is the inversion on the left,
 
 $$
-f = D\,(E_D * f),
-$$
+\boxed{\;
+f = D\,(E_D * f)
+\;}
+$$,
 
 for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomogeneous equation $Dg = f$ for every datum $f$, while the homogeneous solutions are as numerous as the kernel theorem says.
 

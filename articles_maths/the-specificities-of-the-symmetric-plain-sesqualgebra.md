@@ -13,12 +13,6 @@ $$
 
 that is, when it is **conjugate-commutative** and when its **image is the centre**. The block satisfies both clauses: C1 is the conjugate-commutative law of the block and C2 is the centrality of its value. **No other of the twelve structures satisfies both**, and this is the specificity: the block is the only **Hermitian** product of the twelve, and the only one whose multiplication is a Hermitian form. The two clauses are not a matter of taste, and each is separately necessary: the symmetric quaternionic sesqualgebra $\mathrm{SQS}$ satisfies C1 and fails C2, the symmetric plain product satisfies neither, and the four general products fail C2.
 
-**Placement.** The article is the closing entry of the *Specific Theory* section of the block, after *The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra* and the form and operator articles. It is the fourth of the family that *The Specificities of the Biquaternion Algebra* began and that *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra* continued; it is the entry that carries the Hermitian clause of the family's comparison table.
-
-**Boundaries.** The product, its class and its table are *Introduction to the Symmetric Plain Sesqualgebra*; the conjugate-commutative law, its two reading involutions and its comparison with the siblings are *The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra*. The eleven other products are *The 12 Products of the Biquaternion Complex Space*, their generation by the twists is *The Symmetric and Antisymmetric Parts of an Algebra Product* and *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and the general comparison table is *The Specificities of the Biquaternion Algebra*. The multiplication operators and the composition law of the block are *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y = \vec e_z$ and central scalar imaginary $i$. A general element is $\tilde Q_2 = \sum_{\mu\in\{t,x,y,z\}}Q_{2,\mu} e_\mu = Q_{2t}e_t + \vec Q_2$ with $Q_{2,\mu}\in\mathbb{C}$; the natural conjugation is $\tilde Q_2^{\natural} = \sum_\mu\varepsilon_\mu Q_{2,\mu} e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde Q_2} = \sum_\mu\overline{Q_{2,\mu}}e_\mu$, and the Hermitian conjugation is $\tilde Q_2^{*} = \overline{\tilde Q_2^{\natural}}$. The product of the block is written $\star$ and the products of the other blocks keep the signs of *The 12 Products of the Biquaternion Complex Space*; a general product in a statement is written $\circ$. The centre is $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{B}) = \{Q_{2t} = 0\}$.
-
 ## The Criterion
 
 **Definition (Hermitian product).** Let $\circ$ be a product on $\mathbb{B}$. It is **conjugate-commutative** when
@@ -31,9 +25,7 @@ for all $\tilde Q_1,\tilde Q_2$, the bar acting coefficientwise, and it has **ce
 
 **Theorem (the Hermitian reading).** For a product $\circ$ on $\mathbb{B}$ the following are equivalent: $\circ$ is Hermitian; the product has central image and there is a Hermitian form $\Lambda$ on $\mathbb{B}$ with
 
-$$
-\tilde Q_1\circ\tilde Q_2 = \Lambda(\tilde Q_1,\tilde Q_2)e_t .
-$$
+$$ \boxed{\; \tilde Q_1\circ\tilde Q_2 = \Lambda(\tilde Q_1,\tilde Q_2)e_t \;}. $$
 
 *Proof.* If $\circ$ has central image, the coefficient $\Lambda(\tilde Q_1,\tilde Q_2)$ of $e_t$ in $\tilde Q_1\circ\tilde Q_2$ is well defined; conjugate-commutativity of the product is then exactly the Hermitian symmetry of the coefficient, $\Lambda(\tilde Q_1,\tilde Q_2) = \overline{\Lambda(\tilde Q_2,\tilde Q_1)}$. Conversely a product defined by a Hermitian form has central image and is conjugate-commutative. The sesquilinearity of $\Lambda$ is the class of the product: a product that is conjugate-commutative and bilinear is zero, since $\lambda(\tilde Q_1\circ\tilde Q_2) = \tilde Q_1\circ(\lambda\tilde Q_2) = \overline{(\lambda\tilde Q_2)\circ\tilde Q_1} = \overline{\lambda}\,(\tilde Q_1\circ\tilde Q_2)$ for every $\lambda$, forcing $\tilde Q_1\circ\tilde Q_2 = 0$; and a product that is conjugate-linear in both arguments is zero as well, since $\tilde Q_1\circ(\lambda\tilde Q_2) = \overline{\lambda}\,(\tilde Q_1\circ\tilde Q_2)$ on the one hand and $\tilde Q_1\circ(\lambda\tilde Q_2) = \overline{(\lambda\tilde Q_2)\circ\tilde Q_1} = \lambda\,(\tilde Q_1\circ\tilde Q_2)$ on the other. So a nonzero conjugate-commutative product is sesquilinear, linear in one argument and conjugate-linear in the other, which is the class of the twelve.
 
@@ -62,9 +54,7 @@ The two clauses are independent, each with a witness among the four symmetric pa
 
 The criterion has an operator reading, taken from *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. The left and the right multiplications of the block are $L^{\star}_{\tilde Q_4}\tilde Q_3 = \langle\tilde Q_4,\tilde Q_3\rangle_{*}e_t$ and $R^{\star}_{\tilde Q_4}\tilde Q_3 = \langle\tilde Q_3,\tilde Q_4\rangle_{*}e_t$, and they obey the composition law
 
-$$
-L^{\star}_{\tilde Q_4}L^{\star}_{\tilde Q_1} = Q_{4t}\,R^{\star}_{\tilde Q_1}, \qquad R^{\star}_{\tilde Q_4} = \overline{L^{\star}_{\tilde Q_4}},
-$$
+$$ \boxed{\; L^{\star}_{\tilde Q_4}L^{\star}_{\tilde Q_1} = Q_{4t}\,R^{\star}_{\tilde Q_1}, \qquad R^{\star}_{\tilde Q_4} = \overline{L^{\star}_{\tilde Q_4}} \;}, $$
 
 in which $Q_{4t}$ is the scalar coordinate and the bar is the coefficientwise conjugation of an operator. The second identity is the operator form of C1: the right multiplication is the conjugate of the left, which is exactly the operator statement of conjugate-commutativity. The first identity is the operator form of C2: the composite is a scalar times a single right multiplication, because the image of every operator is the centre.
 

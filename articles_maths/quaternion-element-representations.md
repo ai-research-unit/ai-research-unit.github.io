@@ -58,9 +58,7 @@ Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q
 
 **Theorem.** Let $F$ be a field of characteristic not two over which $\mathbb{H}$ is a division algebra. Every finite-dimensional representation of $\mathbb{H}$ over $F$ is isomorphic to a direct sum of copies of the regular representation:
 
-$$
-V \cong \mathbb{H}^{\oplus n}, \qquad \rho(\tilde q)(v_1, \dots, v_n) = (\tilde q v_1, \dots, \tilde q v_n).
-$$
+$$ \boxed{\; V \cong \mathbb{H}^{\oplus n}, \qquad \rho(\tilde q)(v_1, \dots, v_n) = (\tilde q v_1, \dots, \tilde q v_n) \;} .$$
 
 **Proof.** Let $V$ be a finite-dimensional representation. Since $\mathbb{H}$ is a division algebra and $\rho$ is non-zero (unless $V = 0$), the image $\rho(\mathbb{H})$ is isomorphic to $\mathbb{H}$. So $V$ is a module over the division algebra $\mathbb{H}$, and every module over a division algebra is free. Hence $V \cong \mathbb{H}^{\oplus n}$ for some $n$, and the action is by left multiplication.
 
@@ -102,9 +100,7 @@ The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{H}}(
 
 **Dimension count.** For $V \cong \mathbb{H}^{\oplus p}$ and $W \cong \mathbb{H}^{\oplus q}$,
 
-$$
-\dim_F \operatorname{Hom}_{\mathbb{H}}(V, W) = 4 pq.
-$$
+$$ \boxed{\; \dim_F \operatorname{Hom}_{\mathbb{H}}(V, W) = 4 pq \;} .$$
 
 The factor of $4$ comes from the endomorphism ring of the regular representation, which is $\mathbb{H}$.
 
@@ -112,9 +108,7 @@ The factor of $4$ comes from the endomorphism ring of the regular representation
 
 The **endomorphism ring** of a representation $V$ is $\operatorname{End}_{\mathbb{H}}(V) = \operatorname{Hom}_{\mathbb{H}}(V, V)$. For $V \cong \mathbb{H}^{\oplus n}$,
 
-$$
-\operatorname{End}_{\mathbb{H}}(V) \cong M_n(\mathbb{H}),
-$$
+$$ \boxed{\; \operatorname{End}_{\mathbb{H}}(V) \cong M_n(\mathbb{H}) \;} ,$$
 
 the ring of $n \times n$ matrices over $\mathbb{H}$. This is a simple ring, and it is the prototypical example of a central simple algebra over $F$ of degree $2n$.
 

@@ -19,7 +19,7 @@ The two-sided operators $\tilde q \mapsto \tilde q_4^{\natural}\tilde q\,\tilde 
 **Theorem (the composition law).** For all $\tilde p,\tilde q \in \mathbb{H}$,
 
 $$
-L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p} , \qquad \text{and} \qquad L_{\tilde p^{\natural}}L_{\tilde q^{\natural}} = L_{\tilde p\tilde q} .
+\boxed{\;L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p} , \qquad \text{and} \qquad L_{\tilde p^{\natural}}L_{\tilde q^{\natural}} = L_{\tilde p\tilde q}\;}.
 $$
 
 The composition is therefore the **opposite** of the plain multiplication in the index, and the family closes under composition.

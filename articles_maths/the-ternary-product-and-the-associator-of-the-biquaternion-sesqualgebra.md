@@ -48,7 +48,7 @@ $$
 **Theorem.** For the multiplication of $\mathbb{B}$,
 
 $$
-[\tilde Q_1,\tilde Q_2,\tilde Q_4]=\tilde Q_1\bigl(\tilde Q_2^{*}\tilde Q_4^{*}-\tilde Q_4\tilde Q_2^{*}\bigr)=\tilde Q_1\bigl((\tilde Q_4\tilde Q_2)^{*}-\tilde Q_4\tilde Q_2^{*}\bigr) .
+\boxed{\;[\tilde Q_1,\tilde Q_2,\tilde Q_4]=\tilde Q_1\bigl(\tilde Q_2^{*}\tilde Q_4^{*}-\tilde Q_4\tilde Q_2^{*}\bigr)=\tilde Q_1\bigl((\tilde Q_4\tilde Q_2)^{*}-\tilde Q_4\tilde Q_2^{*}\bigr)\;}.
 $$
 
 In particular the associator is the product of $\tilde Q_1$ with the defect $\tilde Q_2^{*}\tilde Q_4^{*}-\tilde Q_4\tilde Q_2^{*}$ of the multiplication in the second and third slots.
@@ -92,7 +92,7 @@ $$
 **Proposition (the parity).** The ternary product is additive in each variable, $\mathbb{C}$-linear in the first and the third variables and conjugate-linear in the middle variable; it satisfies the Hermitian symmetry
 
 $$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_4\}^{*}=\{\tilde Q_4^{*},\tilde Q_2^{*},\tilde Q_1^{*}\} ,
+\boxed{\;\{\tilde Q_1,\tilde Q_2,\tilde Q_4\}^{*}=\{\tilde Q_4^{*},\tilde Q_2^{*},\tilde Q_1^{*}\}\;},
 $$
 
 and the plain symmetry $\{\tilde Q_1,\tilde Q_2,\tilde Q_4\}=\{\tilde Q_4,\tilde Q_2,\tilde Q_1\}$ fails as soon as the algebra is noncommutative.
@@ -106,7 +106,7 @@ and the plain symmetry $\{\tilde Q_1,\tilde Q_2,\tilde Q_4\}=\{\tilde Q_4,\tilde
 **Theorem.** For $\mathbb{B}$, which is unital with unit $e_t$,
 
 $$
-\{\tilde Q_1,\tilde Q_2,e_t\}=\tilde Q_1\star\tilde Q_2 , \qquad \{e_t,\tilde Q,e_t\}=\tilde Q^{*} ,
+\boxed{\;\{\tilde Q_1,\tilde Q_2,e_t\}=\tilde Q_1\star\tilde Q_2 , \qquad \{e_t,\tilde Q,e_t\}=\tilde Q^{*}\;},
 $$
 
 so the ternary product determines the multiplication and the involution, and it determines the algebra together with its involution.

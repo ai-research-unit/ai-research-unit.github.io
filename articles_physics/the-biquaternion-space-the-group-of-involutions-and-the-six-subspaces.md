@@ -164,6 +164,10 @@ The six subspaces are not six arbitrary slices. Each is the fixed or anti-fixed 
 
 The quaternionic norm is one complex quadratic form, and the four four-dimensional subspaces are its four real restrictions. The signature depends only on which real slice is taken.
 
+$$
+\boxed{\;\mathbb{H}_{\mathbb{B}}:(4,0),\quad i\mathbb{H}_{\mathbb{B}}:(0,4),\quad \mathbb{M}_-:(3,1),\quad \mathbb{M}_+:(1,3)\;}
+$$
+
 | Subspace | Blocks | Norm on the subspace | Signature | Reading |
 | --- | --- | --- | --- | --- |
 | $\mathbb{H}_{\mathbb{B}}$ | $A_1\oplus B_1$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | Euclidean |

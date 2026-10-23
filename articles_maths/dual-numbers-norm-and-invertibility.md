@@ -45,7 +45,9 @@ The norm is **degenerate**: it is a quadratic form of rank one on the two-dimens
 **Theorem.** The norm is multiplicative:
 
 $$
-\langle Q_1 Q_2\rangle = \langle Q_1\rangle\,\langle Q_2\rangle.
+\boxed{\;
+\langle Q_1 Q_2\rangle = \langle Q_1\rangle\,\langle Q_2\rangle
+\;}.
 $$
 
 **Proof.** With $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$ one has $Q_1 Q_2 = q_1 q_2 + (q_1 q'_2 + q'_1 q_2)\varepsilon$, so
@@ -199,7 +201,9 @@ so $Q$ is invertible, and (1) follows from (2). Since $q^2 \in R^\times$ exactly
 **Corollary.** When $Q$ is invertible,
 
 $$
-Q^{-1} = \frac{1}{q} - \frac{q'}{q^2}\,\varepsilon.
+\boxed{\;
+Q^{-1} = \frac{1}{q} - \frac{q'}{q^2}\,\varepsilon
+\;}.
 $$
 
 This is the degeneration of the complex formula $Q^{-1} = \bar Q/\langle Q\rangle_{*}$: the conjugate is $\bar Q = q - \varepsilon q'$ and the "modulus squared" is $\langle Q\rangle = q^2$, so $\bar Q/\langle Q\rangle = (q - \varepsilon q')/q^2$, which is the inverse above.
@@ -247,7 +251,9 @@ using $\varepsilon^2 = 0$ and the commutativity of $R$.
 So the group of units is the **direct product** $R^\times \times (R, +)$. Read as a semidirect product $R^\times \ltimes (R, +)$, the action of $R^\times$ on $(R, +)$ is trivial — because $\mathbb{D}'_R$ is commutative, the conjugation action of the first factor on the shear group $1 + \mathrm{M}$ is trivial — so the semidirect structure degenerates to the direct product:
 
 $$
-(\mathbb{D}'_R)^\times \cong R^\times \times (R, +).
+\boxed{\;
+(\mathbb{D}'_R)^\times \cong R^\times \times (R, +)
+\;}.
 $$
 
 The extension

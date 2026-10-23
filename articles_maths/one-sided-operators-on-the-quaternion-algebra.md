@@ -26,9 +26,7 @@ The one-sided operators are the left and the right multiplications, $L_{\tilde q
 
 **Theorem.** With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$,
 
-$$
-L_{\tilde q_3}^{\sim}=R_{\tilde q_3},\qquad R_{\tilde q_4}^{\sim}=L_{\tilde q_4}.
-$$
+$$ \boxed{\; L_{\tilde q_3}^{\sim}=R_{\tilde q_3},\qquad R_{\tilde q_4}^{\sim}=L_{\tilde q_4} \;} .$$
 
 *Proof.* $\langle\tilde q_3\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_3\tilde q_1\tilde q_2)=\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)=\langle\tilde q_1,\tilde q_2\tilde q_3\rangle$ by the cyclic invariance of the association functional, which is *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the second identity is the mirror.
 
@@ -42,9 +40,7 @@ $$
 
 **Theorem.** The self-adjoint operators of the span $\mathcal L+\mathcal R$ are the symmetric sums
 
-$$
-\{L_{\tilde q_3}+R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\},
-$$
+$$ \boxed{\; \{L_{\tilde q_3}+R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\} \;} ,$$
 
 a four-dimensional space; its one-dimensional part in the scalar line is $\{\lambda\,\mathrm{id}\}$, the self-adjoint left multiplications of the corollary above.
 
@@ -58,9 +54,7 @@ a four-dimensional space; its one-dimensional part in the scalar line is $\{\lam
 
 **Theorem.** The skew-adjoint operators of the span $\mathcal L+\mathcal R$ are the **inner derivations**
 
-$$
-\{L_{\tilde q_3}-R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\}=\{\operatorname{ad}_{\tilde q_3}:\tilde q\mapsto\tilde q_3\tilde q-\tilde q\tilde q_3\},
-$$
+$$ \boxed{\; \{L_{\tilde q_3}-R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\}=\{\operatorname{ad}_{\tilde q_3}:\tilde q\mapsto\tilde q_3\tilde q-\tilde q\tilde q_3\} \;} ,$$
 
 a three-dimensional space, vanishing exactly for central $\tilde q_3$.
 

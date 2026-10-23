@@ -50,9 +50,7 @@ $$
 
 **Theorem.** For the sandwich $T_{\tilde q_4,\tilde q_5}=L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$,
 
-$$
-T_{\tilde q_4,\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}=T_{\tilde q_5,\tilde q_4}.
-$$
+$$ \boxed{\; T_{\tilde q_4,\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}=T_{\tilde q_5,\tilde q_4} \;} .$$
 
 *Proof.* The transpose is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\sim}=\tilde q_2^{\sim}\tilde q_1^{\sim}$, so $T_{\tilde q_4,\tilde q_5}^{\sim}=(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=R_{\tilde q_5}^{\sim}L_{\tilde q_4}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$, which is $T_{\tilde q_5,\tilde q_4}$.
 
@@ -68,9 +66,7 @@ $$
 
 **Theorem.** Let $T$ be real-linear with matrix $G$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and let $D=\operatorname{diag}(1,-1,-1,-1)$. Then $T^{\sim}$ has matrix
 
-$$
-G^{\sim}=D\,G^{\mathsf T}D.
-$$
+$$ \boxed{\; G^{\sim}=D\,G^{\mathsf T}D \;} .$$
 
 *Proof.* For all $\tilde q_1,\tilde q_2$, $\langle T\tilde q_1,\tilde q_2\rangle=(Gq_1)^{\mathsf T}Dq_2=q_1^{\mathsf T}G^{\mathsf T}Dq_2$ and $\langle\tilde q_1,T^{\sim}\tilde q_2\rangle=q_1^{\mathsf T}D(G^{\sim}q_2)=q_1^{\mathsf T}DG^{\sim}q_2$, where $q_1,q_2$ are the coordinate columns; equating the two for all $q_1,q_2$ gives $G^{\mathsf T}D=DG^{\sim}$, that is $G^{\sim}=D^{-1}G^{\mathsf T}D=D\,G^{\mathsf T}D$ because $D^{-1}=D= D^{\mathsf T}$.
 
@@ -93,9 +89,7 @@ $$
 
 **Theorem.** The product form read through the natural sign in either slot is the positive definite coordinate pairing:
 
-$$
-\langle\tilde q_1^{\natural},\tilde q_2\rangle=\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\sum_{\mu}q_{1\mu} q_{2\mu}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2).
-$$
+$$ \boxed{\; \langle\tilde q_1^{\natural},\tilde q_2\rangle=\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\sum_{\mu}q_{1\mu} q_{2\mu}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) \;} .$$
 
 *Proof.* $\tilde q_1^{\natural}\tilde q_2=\sum_\mu q_{1\mu} q_{2\mu}+\text{(a vector part)}$ and $\tilde q_1\tilde q_2^{\natural}$ likewise; the scalar part is the sum of the coordinate products, the vector parts being sums of the basis vectors without a scalar component.
 

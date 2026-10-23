@@ -46,7 +46,11 @@ This article describes the left, right and two-sided modules over the quaternion
 
 ## The Endomorphism Rings
 
-**Theorem.** $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}}$ and $\operatorname{End}_{\mathbb{H}^{\mathrm{opp}}}(\mathbb{H})\cong\mathbb{H}$ as rings, while the bimodule endomorphisms are the scalars, $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$.
+**Theorem.** As rings,
+$$
+\boxed{\;\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}},\qquad \operatorname{End}_{\mathbb{H}^{\mathrm{opp}}}(\mathbb{H})\cong\mathbb{H},\qquad \operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}\;}
+$$
+the last equality being the statement that the bimodule endomorphisms are the scalars.
 
 *Proof.* An $\mathbb{H}$-linear endomorphism of ${}_\mathbb{H}\mathbb{H}$ is determined by the image of $e_t$, and $F(\tilde q)=F(\tilde q\,e_t)=\tilde q\,F(e_t)$, so $F$ is right multiplication by $F(e_t)$; the assignment $F\mapsto F(e_t)$ is an anti-isomorphism, whence $\mathbb{H}^{\mathrm{opp}}$. The right-sided case is the mirror, and an endomorphism that is linear on both sides is multiplication by a central element, that is by a real scalar.
 

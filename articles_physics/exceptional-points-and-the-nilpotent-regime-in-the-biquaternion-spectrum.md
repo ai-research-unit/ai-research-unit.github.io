@@ -6,19 +6,15 @@ An exceptional point is a degeneracy at which two eigenvalues coincide **and** t
 
 The biquaternion spectrum has both. For $\tilde Q=Q_te_t+\vec Q$ the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=(\vec Q,\vec Q)$. They coincide exactly when $B=0$. If $\vec Q=0$ the element is central and semisimple: the degeneracy is diabolic. If $\vec Q\neq0$ and $B=0$ the element is a single Jordan block: the degeneracy is exceptional. The second case is the subject of this article.
 
-The article owns the question, not the theorem. The spectrum, the degenerate regimes, the eigenprojections and the Jordan normal form are those of *Eigenvalue Decomposition of a Biquaternion*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
-
-**Placement.** The article belongs to the informational block of the non-relativistic quantum theory, before *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* and beside *The Unstable State and the Complex Energy Pole in Biquaternionic Form*. It is the spectral article of the non-Hermitian programme.
-
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$, and $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The quaternion conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$, the star is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$, and the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+(\vec Q,\vec Q)$, where $(\vec X,\vec Y)$ is the complex bilinear form on the vector part. The element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$.
+The article owns the question, not the theorem. The spectrum, the degenerate regimes, the eigenprojections and the Jordan normal form are those of *Eigenbasis of a Biquaternion*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The spectrum, the characteristic polynomial and the discriminant | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
-| The eigenprojections and the Hermitian case | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
-| The four degenerate regimes and the Jordan form | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
+| The spectrum, the characteristic polynomial and the discriminant | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
+| The eigenprojections and the Hermitian case | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
+| The four degenerate regimes and the Jordan form | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
 | The exponential in the nilpotent regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The logarithm of a Jordan block | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The two strata of the zero-divisor cone | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
@@ -29,9 +25,9 @@ The article owns the question, not the theorem. The spectrum, the degenerate reg
 The characteristic polynomial and its discriminant are
 
 $$
-p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural},
+\boxed{\;p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural},
 \qquad
-\Delta=4\left(Q_t^2-\langle\tilde Q\rangle_{\natural}\right)=4B^2.
+\Delta=4\left(Q_t^2-\langle\tilde Q\rangle_{\natural}\right)=4B^2\;}.
 $$
 
 The spectrum degenerates exactly on the discriminant locus $\Delta=0$, that is, on $B=0$. That locus is one complex equation on the vector part, hence two real equations: the **isotropic cone** $(\vec Q,\vec Q)=0$ of the complex vector space, of real dimension four inside the six real dimensions of $\vec Q$.
@@ -64,13 +60,13 @@ and it is not defined at $B=0$. In the exceptional approach, with $\vec Q\to\vec
 The element is a single Jordan block. In the matrix model,
 
 $$
-\mathsf M_2(\tilde Q)\sim
+\boxed{\;\mathsf M_2(\tilde Q)\sim
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}
 =Q_tI_2+N,
 \qquad
 N=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 \qquad
-N^2=0.
+N^2=0\;}.
 $$
 
 The two normal forms are separated by the scalar part.
@@ -103,9 +99,9 @@ $$
 with $\tilde Q_0$ on the discriminant. For a generic direction $(\vec Q_0,\vec V)\neq0$,
 
 $$
-B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec V)}\left(1+O(\epsilon)\right),
+\boxed{\;B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec V)}\left(1+O(\epsilon)\right),
 \qquad
-\lambda_\pm(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon).
+\lambda_\pm(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon)\;}.
 $$
 
 The splitting is of order $\sqrt{\epsilon}$, not $\epsilon$. That is the defining behaviour of an exceptional point: a perturbation that is linear in the parameter produces a square-root response, because the two eigenvalues are the two branches of a square root. The sign of the branch is a choice, and the two branches meet at $\epsilon=0$.
@@ -129,7 +125,7 @@ The two degeneracies are different normal forms, and the difference is visible w
 
 A diabolic point is a degeneracy of the spectrum with the algebra still semisimple. A Dirac point in a band structure is of this kind when the two bands touch with independent states. An exceptional point is a degeneracy with the algebra non-semisimple: the two states have become one. The names are standard in the non-Hermitian literature, and the table is the translation of the two normal forms into the biquaternion spectrum.
 
-The diabolic case is the scalar regime of *Eigenvalue Decomposition of a Biquaternion*, and it is the only degeneracy available in the Hermitian sector. The exceptional case is the Jordan regime, and it is the only one that destroys the eigenprojections. The two are not two degrees of a single phenomenon: one is a coincidence of eigenvalues, the other is a coincidence of eigenvalues and eigenvectors.
+The diabolic case is the scalar regime of *Eigenbasis of a Biquaternion*, and it is the only degeneracy available in the Hermitian sector. The exceptional case is the Jordan regime, and it is the only one that destroys the eigenprojections. The two are not two degrees of a single phenomenon: one is a coincidence of eigenvalues, the other is a coincidence of eigenvalues and eigenvectors.
 
 ## Physical Readings
 
@@ -176,7 +172,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the degenerate regimes, the eigenprojections and the Jordan form.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectrum, the degenerate regimes, the eigenprojections and the Jordan form.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the boundary of the word and the two strata of the cone.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotents and their square-zero property.

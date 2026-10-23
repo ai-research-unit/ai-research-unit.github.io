@@ -71,15 +71,15 @@ $$
 and the second term vanishes by the field equation $\nabla F=0$. The variation of the action is then $\delta A=-\int dt'\int dx\,F^*\cdot(\nabla\alpha)F=0$, and the paper reports that an integration by parts, with the requirement that $\delta A$ vanish for arbitrary $\alpha$, gives
 
 $$
-F^*\cdot(\nabla F) = 0 ,
+F^*\cdot(\nabla F) = 0
 $$
 
 which the paper calls the conservation of energy for the electromagnetic field. Expanding the left side using the two curl equations gives
 
 $$
-\partial/\partial t' u + \mathrm{div}\,(\vec E\times\vec B) = 0 ,
+\boxed{\;\partial/\partial t' u + \mathrm{div}\,(\vec E\times\vec B) = 0 ,
 \qquad
-u = \tfrac12\bigl(E_x^2+E_y^2+E_z^2+B_x^2+B_y^2+B_z^2\bigr),
+u = \tfrac12\bigl(E_x^2+E_y^2+E_z^2+B_x^2+B_y^2+B_z^2\bigr)\;}
 $$
 
 which is the Poynting theorem, with $\vec S=\vec E\times\vec B$ the energy flux.

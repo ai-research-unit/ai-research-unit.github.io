@@ -14,14 +14,14 @@ The result is the strongest possible reduction. A self-map of the algebra writte
 
 The article owns the global decomposition, the proof of the reduction, the coupling term and its vanishing, the matched structure of the split fractal, and the effect of the zero divisors on the singular sets. The algebra, the idempotents and the coordinates are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the quadratic map and its fractal are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the systems of contractions are *The Reduced Biquaternion Iterated Function Systems*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*. The companion is *The Idempotent Decomposition and the Split Fractal*, where the idempotents are not central and the decomposition is only local.
 
-**Conventions.** The element is $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $Q_{+},Q_{-}\in\mathbb{C}$; the topological norm is $\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$ with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **map of the algebra** is a map written in the coordinates, and a **generator** is one of the maps of a finite system.
-
 ## The Global Decomposition
 
 **Theorem (the decomposition is a direct sum of rings).** The algebra is the direct sum of its two idempotent lines,
 
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,
+\boxed{\;
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
+\;},
 $$
 
 and the two projections $\breve Q\mapsto Q_{+}$ and $\breve Q\mapsto Q_{-}$ are algebra homomorphisms onto $\mathbb{C}$, the two characters of the algebra.
@@ -37,7 +37,9 @@ and the two projections $\breve Q\mapsto Q_{+}$ and $\breve Q\mapsto Q_{-}$ are 
 **Theorem (the reduction).** Let $F:\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}}$ be a map that in the coordinates is continuous and written as $F(Q_{+},Q_{-})=(F_{1}(Q_{+}),F_{2}(Q_{-}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $\breve Q=(Q_{+},Q_{-})$ is the pair of the orbits of the two coordinates,
 
 $$
-F^{n}(\breve Q)=\bigl(F_{1}^{n}(Q_{+}),\,F_{2}^{n}(Q_{-})\bigr),
+\boxed{\;
+F^{n}(\breve Q)=\bigl(F_{1}^{n}(Q_{+}),\,F_{2}^{n}(Q_{-})\bigr)
+\;},
 $$
 
 and the filled set of bounded orbits is
@@ -79,7 +81,9 @@ $$
 **Theorem (the attractor is the matched set of the coding space).** Let $\Sigma=\{1,\dots,m\}^{\mathbb{N}}$ be the coding space and let $h^{+},h^{-}:\Sigma\to\mathbb{C}$ be the two coding maps, so that $h^{\pm}(\sigma)=\lim_{n}f^{\pm}_{\sigma_{1}}\circ\cdots\circ f^{\pm}_{\sigma_{n}}(0)$; then $K^{\pm}=h^{\pm}(\Sigma)$ and the attractor of the system is
 
 $$
-\mathcal{K}=\Bigl\{\bigl(h^{+}(\sigma),\,h^{-}(\sigma)\bigr):\sigma\in\Sigma\Bigr\},
+\boxed{\;
+\mathcal{K}=\Bigl\{\bigl(h^{+}(\sigma),\,h^{-}(\sigma)\bigr):\sigma\in\Sigma\Bigr\}
+\;},
 $$
 
 the set of the pairs of points of $K^{+}$ and $K^{-}$ that are **matched**, that is coded by the same sequence of generators. Consequently $\mathcal{K}\subseteq K^{+}\times K^{-}$, the two projections of $\mathcal{K}$ are $K^{+}$ and $K^{-}$, the attractor has the dimension of one coordinate attractor and not the sum when the two systems have the same ratios, and the inclusion is strict as soon as neither coordinate attractor is a single point; for one generator the attractor is the single matched pair, which is the product of the two fixed points.

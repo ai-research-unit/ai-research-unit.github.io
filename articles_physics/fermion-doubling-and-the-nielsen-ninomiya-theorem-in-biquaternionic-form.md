@@ -37,13 +37,13 @@ which reduces to the continuum action as $a\to0$. It therefore looks like a theo
 The lattice propagator following from this action is
 
 $$
-S(p) = \frac{m - i\,a^{-1}\sum_\mu\gamma_\mu\sin(p^\mu a)}{m^2 + a^{-2}\sum_\mu\sin^2(p^\mu a)}.
+\boxed{\;S(p) = \frac{m - i\,a^{-1}\sum_\mu\gamma_\mu\sin(p^\mu a)}{m^2 + a^{-2}\sum_\mu\sin^2(p^\mu a)}\;}.
 $$
 
 The kinetic denominator vanishes at $m=0$ when $\sin(p^\mu a) = 0$ for every $\mu$, that is, at the points
 
 $$
-ap^\mu = \pi_A^\mu,
+\boxed{\;ap^\mu = \pi_A^\mu\;},
 $$
 
 where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. There is the expected pole near the origin, and there are **fifteen additional poles** at the corners of the Brillouin zone. For $m\ne0$ the mass shifts the poles off the real zone, but the same sixteen species appear in the dispersion relation below. Each is a distinct fermion species. The mechanism is the $\sin(p^\mu a)$ symbol: unlike the bosonic case, where the symbol is built from $\sin(p^\mu a/2)$ and has a single zero per period, $\sin(p^\mu a)$ has two zeros over $p^\mu\in[-\pi/a,\pi/a]$.
@@ -61,11 +61,11 @@ whose minima sit at the zeros of the spatial sine — eight from the three spati
 The naive action carries a symmetry absent from the continuum: for each of the sixteen sign patterns $\pi_A$ there is a transformation
 
 $$
-\psi_n \;\to\; \exp(-in\cdot\pi_A)\,S_A\,\psi_n,
+\boxed{\;\psi_n \;\to\; \exp(-in\cdot\pi_A)\,S_A\,\psi_n,
 \qquad
 \bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,\exp(in\cdot\pi_A),
 \qquad
-S_0 = I,\quad S_\nu = i\gamma_5\gamma_\nu ,
+S_0 = I,\quad S_\nu = i\gamma_5\gamma_\nu\;},
 $$
 
 with $S_A$ the product of the $S_\nu$ over the indices in $A$. Fourier transforming shows that this shifts the momentum by $\pi_A$ and flips the signs of a subset of the gamma matrices, $(\gamma_1,\gamma_2,\gamma_3,\gamma_4)\to(\pm\gamma_1,\pm\gamma_2,\pm\gamma_3,\pm\gamma_4)$, which is still a representation of the Dirac algebra. The transformation therefore exchanges the tastes; since it is a symmetry of the action, the tastes are physically indistinguishable. In an interacting theory they cannot even be ignored, because momentum is conserved only modulo $2\pi/a$: two $\pi_t$-taste fermions can scatter through a highly virtual gauge boson into two $\pi_x$-taste fermions.
@@ -109,7 +109,7 @@ The theorems that survive all of this are the ones with experimental consequence
 The framework's gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. A lattice discretization replaces each partial derivative by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial Q_\mu$ is $i\sin(p^\mu a)/a$ in each direction, and the biquaternion gradient acquires the symbol
 
 $$
-\tilde\nabla \;\longrightarrow\; e_\mu\,\frac{i\sin(p^\mu a)}{a},
+\boxed{\;\tilde\nabla \;\longrightarrow\; e_\mu\,\frac{i\sin(p^\mu a)}{a}\;},
 $$
 
 acting on plane waves on the lattice. The denominator of the lattice propagator is then built from $\sum_\mu\sin^2(p^\mu a)$, which has the sixteen zeros identified above.

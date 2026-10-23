@@ -12,10 +12,6 @@ the multiplication of *Introduction to the Symmetric Plain Algebra*. It makes th
 
 The block is exact in the opposite sense as well. The Jordan law is weaker than associativity, so the block does not inherit the parent's operator calculus: no non-trivial idempotent gives a projector, a square-zero element gives an operator of index three rather than a square-zero operator, the Peirce decomposition is cubic rather than quadratic, and the invertible elements form no group. Those absences are stated with the theorems they accompany, and §*The Isolation among the Twelve* names the one law from which the theorems and the absences both follow.
 
-**Placement.** The article closes the *Specific Theory* section of the block, after *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, whose element theory it reads as a consequence of the law, and after the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, its operators are *The Multiplication Operators of the Symmetric Plain Algebra*, and the plain product it symmetrises is *Introduction to the Biquaternion Algebra*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ with $\vec Q_2=\sum_{k=1}^{3}Q_{2,k}\vec e_k$ and $Q_{2,\mu}\in\mathbb{C}$, and $(\vec Q_2,\vec Q_2)=\sum_kQ_{2,k}^2$. The plain product is juxtaposition $\tilde Q_1\tilde Q_2$; the product of the block is $\bullet$, the symmetrisation above, and $\tilde Q_1^{\bullet2}=\tilde Q_1\bullet\tilde Q_1$. The natural conjugation is $\tilde Q_2^{\natural}=Q_{2t}e_t-\vec Q_2$, and the biquaternion norm is $\langle\tilde Q_2\rangle_{\natural}=\tilde Q_2\tilde Q_2^{\natural}=\sum_\mu Q_{2,\mu}^2$. The **left multiplication** of the block is $L^{\bullet}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\bullet\tilde Q_2$, and $L_{\tilde Q_1},R_{\tilde Q_1}$ without a mark are the plain left and right multiplications. An **idempotent** is an element equal to its square, a **projector** an idempotent operator.
-
 ## The Product and Its Square
 
 **Proposition (the shape of the product).** For $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$,
@@ -71,7 +67,7 @@ The operator of the block is thus the mean of a plain left and a plain right mul
 **Theorem (the operator identity of the block).** The block satisfies
 
 $$
-L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_1^{\bullet2}}=L^{\bullet}_{\tilde Q_1^{\bullet2}}L^{\bullet}_{\tilde Q_1}\qquad\text{for every }\tilde Q_1,
+\boxed{\; L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_1^{\bullet2}}=L^{\bullet}_{\tilde Q_1^{\bullet2}}L^{\bullet}_{\tilde Q_1}\qquad\text{for every }\tilde Q_1 \;},
 $$
 
 equivalently the Jordan identity $(\tilde Q_1^{\bullet2}\bullet\tilde Q_2)\bullet\tilde Q_1=\tilde Q_1^{\bullet2}\bullet(\tilde Q_2\bullet\tilde Q_1)$.
@@ -136,8 +132,8 @@ This is the Peirce theory of the block, and it is **cubic**: the decomposition i
 **Theorem (the quadratic identity).** Every element satisfies
 
 $$
-\tilde Q^{\bullet2}-T(\tilde Q)\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0,\qquad
-T(\tilde Q)=2Q_t,\qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2 .
+\boxed{\; \tilde Q^{\bullet2}-T(\tilde Q)\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0,\qquad
+T(\tilde Q)=2Q_t,\qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2 \;}.
 $$
 
 *Proof.* On the square of §*The Product and Its Square* and $T(\tilde Q)\tilde Q=2Q_t^2e_t+2Q_t\vec Q$, the difference is $\bigl(Q_t^2-(\vec Q,\vec Q)-2Q_t^2+\langle\tilde Q\rangle_{\natural}\bigr)e_t$, and the coefficient vanishes because $\langle\tilde Q\rangle_{\natural}=Q_t^2+(\vec Q,\vec Q)$.
@@ -153,7 +149,7 @@ which vanishes exactly on the isotropic cone of the vector part; there the two g
 **Theorem (the inverse).** An element with $\langle\tilde Q\rangle_{\natural}\neq0$ is invertible in the Jordan sense, with
 
 $$
-\tilde Q^{-1}=\frac{2Q_te_t-\tilde Q}{\langle\tilde Q\rangle_{\natural}}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
+\boxed{\; \tilde Q^{-1}=\frac{2Q_te_t-\tilde Q}{\langle\tilde Q\rangle_{\natural}}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} \;},
 $$
 
 which is the inverse of the algebra; the invertibility criterion is $\langle\tilde Q\rangle_{\natural}\neq0$.

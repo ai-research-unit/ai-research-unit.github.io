@@ -92,7 +92,9 @@ This coincides with the trivial representation. In the dual case, there is no no
 **Theorem.** Let $V$ be an $R$-module. The representations of $\mathbb{D}'$ on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, via the correspondence
 
 $$
-E \longleftrightarrow \rho_E(q + \varepsilon q') = q \cdot \mathrm{id}_V + q' E.
+\boxed{\;
+E \longleftrightarrow \rho_E(q + \varepsilon q') = q \cdot \mathrm{id}_V + q' E
+\;}.
 $$
 
 **Proof.** Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(q + \varepsilon q') = q \cdot \mathrm{id}_V + q' E$ defines an algebra homomorphism, because
@@ -147,7 +149,9 @@ So over a field, there are exactly two indecomposable representations, and the c
 Over a field, a square-zero endomorphism $E$ has a Jordan form consisting of blocks of size one (corresponding to the trivial representation) and blocks of size two (corresponding to the regular representation). So an arbitrary representation of $\mathbb{D}'$ decomposes as
 
 $$
-V \cong R^{\oplus p} \oplus (R^2)^{\oplus q},
+\boxed{\;
+V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}
+\;},
 $$
 
 with $E$ acting as zero on the first summand and as the nilpotent Jordan block on each copy of $R^2$.
@@ -303,7 +307,9 @@ The extension class of this sequence is the generator of $\operatorname{Ext}^1_{
 The **Ext algebra** of $\mathbb{D}'$ is
 
 $$
-\operatorname{Ext}^\bullet_{\mathbb{D}'}(R, R) \cong R[x],
+\boxed{\;
+\operatorname{Ext}^\bullet_{\mathbb{D}'}(R, R) \cong R[x]
+\;},
 $$
 
 the polynomial algebra on one generator of degree one. So $\operatorname{Ext}^i_{\mathbb{D}'}(R, R) \cong R$ in every degree $i \geq 0$: the minimal free resolution $\cdots \to \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \to R \to 0$ has one free module in each degree, and after applying $\operatorname{Hom}_{\mathbb{D}'}(-, R)$ all the differentials vanish because $\varepsilon$ acts as zero on $R$. This is a general phenomenon: for a local ring with maximal ideal $\mathrm{M}$ satisfying $\mathrm{M}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathrm{M}$ (untruncated).

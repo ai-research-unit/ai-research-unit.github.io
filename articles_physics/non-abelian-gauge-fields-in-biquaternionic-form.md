@@ -19,8 +19,6 @@ The division between what is established and what is interpretation is kept expl
 - **Defect in the parent, reported rather than inherited.** The parent's packaging of the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and $\tilde{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does **not** survive the non-abelian extension. The object $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is not even in the reality class of the field strength, and it is not the adjoint-covariant object. This is stated in its own section and the repair is given.
 - **Gap, left visible.** The reality condition on the *connection* that would make the non-abelian construction close inside a fixed Hermitian-conjugation eigenspace is obstructed in the time direction by the $ict'$ derivative, $\partial/\partial Q_t = -i\partial/\partial t'$. The obstruction is sharp, is exhibited, and is not smoothed over.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength of the abelian sector are $\tilde{A} = i\phi/c\,e_t + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. For the non-abelian sector we write $\kappa = ϙ/\hbar$ for the coupling and use the components $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = -i\partial/\partial t'$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index: in the $ict'$ convention the coordinate sum $\sum_\mu$ is the Lorentz-invariant contraction.
-
 ## The Gauge Algebra Inside the Material Sector
 
 The parent article identifies the abelian gauge group with the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and it records that the commutator algebra of $\mathbb{B}\cong M_2(\mathbb{C})$ is $\mathrm{GL}(2,\mathbb{C})$, which is not compact. It is worth stating precisely what *is* available before any reality condition is imposed, because more is available than that remark suggests.
@@ -92,7 +90,7 @@ $$
 so that $\partial/\partial Q_\mu \tilde U + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde U = i\kappa\,\tilde U\mathcal{A}_\mu$, that is,
 
 $$
-\mathcal{A}_{\mathrm g,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1}.
+\boxed{\;\mathcal{A}_{\mathrm g,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1}\;}.
 $$
 
 This is the non-abelian transformation law. Two features separate it from the parent's additive law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$.
@@ -109,7 +107,8 @@ The covariance was verified numerically on a generic non-commuting connection: w
 The field strength is defined as the curvature of the connection. In component form, and in parallel with the parent's $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$,
 
 $$
-F_{\mu\nu} = \partial/\partial Q_\mu \mathcal{A}_\nu - \partial/\partial Q_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu] \;\in\; \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}),
+\boxed{\;F_{\mu\nu} = \partial/\partial Q_\mu \mathcal{A}_\nu - \partial/\partial Q_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu]\;}
+\;\in\; \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}),
 $$
 
 or as an algebra-valued two-form,
@@ -207,9 +206,9 @@ $$
 so the local density
 
 $$
-\mathcal{L} = -\frac{1}{2}\,\mathrm{Tr}\!\left(F_{\mu\nu}F^{\mu\nu}\right),
+\boxed{\;\mathcal{L} = -\frac{1}{2}\,\mathrm{Tr}\!\left(F_{\mu\nu}F^{\mu\nu}\right),
 \qquad
-S_{\mathrm{YM}} = \int d^4x\;\mathcal{L},
+S_{\mathrm{YM}} = \int d^4x\;\mathcal{L}\;},
 $$
 
 is gauge invariant. The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.

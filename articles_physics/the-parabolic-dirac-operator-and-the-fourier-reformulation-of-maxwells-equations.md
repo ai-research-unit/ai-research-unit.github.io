@@ -23,7 +23,7 @@ $$
 with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units of the algebra $\mathbb{B}$ of *Conventions in the Biquaternion Universe*, and $i$ the scalar imaginary unit commuting with them. The source's first statement is the **factorization of the wave operator**
 
 $$
--\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t'),
+\boxed{\;-\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')\;},
 \tag{1}
 $$
 
@@ -152,7 +152,7 @@ $$
 The solution is the **quaternionic exponential function**
 
 $$
-\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi k t') = \cos\bigl(2\pi|k|t'\bigr) \mp \frac{k}{|k|}\sin\bigl(2\pi|k|t'\bigr),
+\boxed{\;\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi k t') = \cos\bigl(2\pi|k|t'\bigr) \mp \frac{k}{|k|}\sin\bigl(2\pi|k|t'\bigr)\;},
 \tag{9}
 $$
 
@@ -188,7 +188,7 @@ and Plancherel's theorem turns the $k$-integral at each $s$ into $\|w(\cdot,s)\|
 The source's Theorem 10 states that $T_{\mathcal{C},\pm}[\mp i\,\cdot\,]$ is a right inverse of $D \pm i\partial/\partial t'$ on $L^2(\mathcal{C},\mathbb{B})$:
 
 $$
-(D \pm i\partial/\partial t')\, T_{\mathcal{C},\pm}[\mp i\, w] = w.
+\boxed{\;(D \pm i\partial/\partial t')\, T_{\mathcal{C},\pm}[\mp i\, w] = w\;}.
 \tag{11}
 $$
 
@@ -251,7 +251,7 @@ $$
 so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,T_{\mathcal{C},-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial t'$. Subtracting it cancels the scalar part and leaves
 
 $$
-\vec{\varphi} = \mathrm{Vec}\,T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0],
+\boxed{\;\vec{\varphi} = \mathrm{Vec}\,T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
 \tag{15}
 $$
 
@@ -279,8 +279,6 @@ $$
 reduced to a single equation of the form $(D - \tfrac{i}{c}\partial/\partial t')\Phi = -\Psi$ with $c = 1/\sqrt{\epsilon\mu}$, solved with $\lambda = \sqrt{\epsilon\mu}$. **The constants of this section were not verified, and as extracted they do not all agree with the standard SI forms.** The extraction of the system (17) shows the ampèrian equation as $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \epsilon\,\partial/\partial t'\vec{E}$, whereas the standard SI form in terms of $\vec{B}$ is $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \mu\epsilon\,\partial/\partial t'\vec{E}$, the form that follows from $\mathrm{rot}\,\vec{H} = \vec{\jmath} + \partial/\partial t'\vec{D}$ with $\vec{B} = \mu\vec{H}$, $\vec{D} = \epsilon\vec{E}$; the factor $\mu$ is either dropped in the extraction or absent in the source, and it changes both the biquaternionic field that cancels the curl terms and the compatibility condition. The condition the source prints, $\mathrm{div}\,\vec{\jmath} + \sqrt{\epsilon\mu}\,\partial/\partial t'\rho = 0$, does not reduce to the plain conservation law $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation of (17), which is a second sign that the printed constants could not be read faithfully. What this section contributes is its **structure** — a single equation $(D - \tfrac{i}{c}\partial/\partial t')\Phi = -\Psi$ with the parameter $\lambda = \sqrt{\epsilon\mu}$ — and that structure should be re-derived from the published text before any constant from it is quoted.
 
 ## What Is Verified and What Is Not
-
-
 
 **Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial/\partial t')\Phi_\pm = 0$ for $x \neq 0$, $t' \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $\Phi_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $k$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
 

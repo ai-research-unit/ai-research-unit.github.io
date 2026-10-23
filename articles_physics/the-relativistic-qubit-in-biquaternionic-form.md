@@ -90,7 +90,7 @@ $$
 $$
 A boost fails the condition maximally: for $\tilde U_{\mathrm b}$ Hermitian one has $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^2 = e_t + i\sinh\psi\,\vec u_{\mathrm b}$, so
 $$
-\langle\tilde U_{\mathrm b}u|\tilde U_{\mathrm b}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle .
+\boxed{\;\langle\tilde U_{\mathrm b}u|\tilde U_{\mathrm b}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle\;}.
 $$
 The norm is scaled by a positive factor rather than rotated, so the ray is preserved but the normalization is not.
 
@@ -156,9 +156,9 @@ The map takes a pure state of the informational sector to the unit-length future
 
 **It is equivariant.** The map intertwines the spinor action with the four-vector action,
 $$
-\tilde{\mathcal L}\bigl(\tilde U_{\mathrm L}u\bigr)
+\boxed{\;\tilde{\mathcal L}\bigl(\tilde U_{\mathrm L}u\bigr)
 = i\,\mathsf{M}_2^{-1}\!\bigl(\mathsf{M}_2(\tilde U_{\mathrm L})|u\rangle_{*}\langle u|\mathsf{M}_2(\tilde U_{\mathrm L})^\dagger\bigr)
-= \tilde U_{\mathrm L}\,\tilde{\mathcal L}(u)\,\tilde U_{\mathrm L}^{*} ,
+= \tilde U_{\mathrm L}\,\tilde{\mathcal L}(u)\,\tilde U_{\mathrm L}^{*}\;},
 $$
 which is the statement that the diagram of the two actions commutes: the informational ray and its material null direction are carried by the same Lorentz transformation. The verification is the associativity of the matrix product together with $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \mathsf{M}_2(\tilde U_{\mathrm L})^\dagger$.
 
@@ -211,7 +211,7 @@ $$
 $$
 Because the congruence preserves the biquaternion norm, the stabilizer of the timelike direction $\tilde{V}$ is conjugate to the stabilizer of the rest four-velocity $ic\,e_t$; and the stabilizer of $ic\,e_t$ consists of the elements with $\tilde U\tilde U^{*} = e_t$ (the central factor cancels), which is $\mathrm{U}(2)$, whose unit-determinant part is $SU(2)$. Hence
 $$
-\mathrm{Little}(\tilde{V}) \cong \mathrm{U}(2), \qquad \text{its unit-norm part} = SU(2),
+\boxed{\;\mathrm{Little}(\tilde{V}) \cong \mathrm{U}(2), \qquad \text{its unit-norm part} = SU(2)\;},
 $$
 and this is the little group of a **massive** particle. Its representations are the spin representations: the spin-$\tfrac12$ representation is the defining two-dimensional one, and the qubit at rest is the carrier of that representation.
 
@@ -283,7 +283,7 @@ so the informational ray and its material null direction are carried by the same
 
 The physical spin state at definite four-velocity transforms not by the non-unitary congruence but by the little-group **Wigner rotation**
 $$
-\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}_2}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2), \qquad \tilde{V}_2 = \tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} ,
+\boxed{\;\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}_2}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2), \qquad \tilde{V}_2 = \tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*}\;},
 $$
 which fixes the rest four-velocity, is a unit real quaternion, and acts on the Bloch ball by a rotation. The massive little group is $SU(2)$ and carries spin; the massless little group is $E(2)$ and carries helicity, so the massless qubit has one state per momentum for each helicity. The congruence by a non-unitary element is a map on the algebra that moves the maximally mixed state and scales the trace, and the physical state transformation is the unitary Wigner rotation; the two coincide only on the compact subgroup. Because $\tilde{W}$ depends on the four-velocity, the relativistic qubit is a momentum-labelled family of qubits, and a boost acts as a momentum-controlled rotation — the mechanism behind the frame-dependent entanglement of the next article.
 

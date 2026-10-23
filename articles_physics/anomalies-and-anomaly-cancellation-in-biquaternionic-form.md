@@ -16,8 +16,6 @@ This article treats both in the biquaternion framework. The framework's contribu
 
 The article is organised as follows. A section states the anomaly as a quantum failure of a classical symmetry. A section gives the axial anomaly and its biquaternion density. A section sets out the triangle coefficient and computes the group factors. A section states the gauge cancellation conditions and verifies them on the Standard Model spectrum. A section proves the framework's own gauge structure anomaly-free. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material), with basis $ie_t,\vec e_x,\vec e_y,\vec e_z$, and $\mathbb{M}_+$ (Hermitian, informational), with basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The Dirac module is $\Delta=S\oplus\bar{S}$, $S=\mathbb{C}^2$, with $\gamma_5=\mathrm{diag}(-I_2,I_2)$, projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$, and block representation
-
 $$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
@@ -54,13 +52,13 @@ which was recomputed for all $4!=24$ permutations: the trace vanishes unless the
 **The result.** For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_5^\mu=\bar{\psi}\gamma^\mu\gamma_5\psi$ satisfies
 
 $$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2im\,\bar{\psi}\gamma_5\psi \;+\; \frac{e^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2im\,\bar{\psi}\gamma_5\psi \;+\; \frac{e^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;},
 $$
 
 with the conventions stated above. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$. The coefficient is the standard Adler–Bell–Jackiw one and is quoted from the standard literature. With $F_{ti}=E_i$ and $F_{ij}=-\epsilon_{ijk}B_k$ the density evaluates to $\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=-8\,\vec E\cdot\vec B$, so the anomaly density is, up to the conventional factor, the second field invariant
 
 $$
-\mathcal{A}(x) \;\propto\; \vec E\cdot\vec B \;=\; I_2 .
+\boxed{\;\mathcal{A}(x) \;\propto\; \vec E\cdot\vec B \;=\; I_2\;}.
 $$
 
 **The biquaternion form of the density.** The framework's field is the biquaternion
@@ -107,7 +105,7 @@ The same conclusion holds for every $SU(2)$ representation: each is real or pseu
 **The abelian factor and the plain form.** For the central $\mathrm{U}(1)$ the coefficient is the cubic charge sum. The framework's own central phase, however, acts as a **scalar** on the algebra and its module: multiplication by $\exp(i\theta)$ multiplies every component of the module by the same factor, so the left- and right-handed spectra carry the *same* charge $ϙ$. The left-handed and right-handed contributions to $\sum Y^3$ therefore have equal magnitude and opposite sign,
 
 $$
-\sum_{\text{L}} ϙ^3 - \sum_{\text{R}} ϙ^3 = 0 ,
+\boxed{\;\sum_{\text{L}} ϙ^3 - \sum_{\text{R}} ϙ^3 = 0\;},
 $$
 
 identically, for every module and every charge. This is the algebraic statement that the framework's abelian gauge factor is **vector-like**, and it is the reason that factor cannot be weak hypercharge: hypercharge is chiral, with independent left and right charges, and it is precisely the independent left and right charges that make the cubic sum a condition rather than a tautology. The companion articles on chiral fermions and on the Standard Model agenda make the same point.

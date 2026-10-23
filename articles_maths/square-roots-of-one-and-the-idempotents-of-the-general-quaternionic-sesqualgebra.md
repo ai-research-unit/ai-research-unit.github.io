@@ -12,8 +12,6 @@ whose rule, scalar–vector form and table are *Introduction to the General Quat
 
 **What the article does not do.** The roots of the central value $0$ and the nilpotents are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*; the roots of a **general** element are *Square Roots of a General Element in the General Quaternionic Sesqualgebra*, and the central value is the special case of that problem. The roots of $-1$ are **not** a subject of this article; they are quoted in one short paragraph at the end of §*The Roots of One*, they are used by no other passage, and the idempotent part rests on the roots of $+1$ alone. The zero divisors are *Zero Divisors of the General Quaternionic Sesqualgebra*, the criterion of invertibility of the plain algebra that the article uses is *Norm and Invertibility in the General Quaternionic Sesqualgebra*, and the four idempotent sets of the four general products are compared in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x \vec e_y = \vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q_2 = Q_{2t}e_t+\vec Q_2$ with $\vec Q_2 = \sum_{\mu\in\{x,y,z\}}Q_{2,\mu}\vec e_\mu$; $Q_{2t}$ is the scalar part and $\vec Q_2$ the vector part. The natural conjugation is $\tilde Q_2^{\natural} = Q_{2t}-\vec Q_2$, the star is $\tilde Q_2^{*} = \overline{\tilde Q_2^{\natural}} = \overline{Q_{2t}}-\overline{\vec Q_2}$, and the Hermitian conjugation is $\overline{\tilde Q}_2 = \tilde Q_2^{\natural*} = \tilde Q_2^{*\natural}$. The **central square** is $C(\tilde Q_2) = \sum_\mu Q_{2,\mu}^2$, with $C(\tilde Q_2)e_t = \tilde Q_2\tilde Q_2^{\natural}$. The product throughout is the **general quaternionic sesquilinear product** $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$, the fourth of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second: the two **slot involutions** are ${}^{\natural}$ and ${}^{*}$. The juxtaposition $\tilde Q_1\tilde Q_2$ is the general plain bilinear product, the multiplication of the algebra. The dot and cross products of vector parts are the general plain bilinear ones, and $\vec u$ denotes a real unit vector, $\sum_{\mu\in\{x,y,z\}}u_\mu^2 = 1$. A **root of the central value $\lambda$** is a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_t$, and a **root of one** is a root of $+1$.
-
 **The results.** In the general quaternionic sesquilinear product the square reduces to $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$, so a root of $\lambda$ exists only for real $\lambda$, and for real $\lambda$ the nonzero roots are the family $\tilde\Xi = c(\vec u+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_t$ and $i$; every root of one is a unit of the plain algebra. The idempotents are exactly the two trivial elements $0$ and $e_t$ together with the two-parameter family $\tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ over the real vectors $\vec u$ with $(\vec u,\vec u)=1$; every nontrivial idempotent has central square $1$, so it is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$, and it lies outside the Hermitian subspace, being neither Hermitian nor skew-Hermitian. The four general products carry four different idempotent sets, and only this one has nontrivial idempotents that are units of the plain algebra; the idempotents of the sibling sesquilinear product are isotropic here, each of them square-zero. Each section below states its result first and then proves it.
 
 ## The Reduction of the Root Equation
@@ -45,7 +43,7 @@ $$
 **Theorem (the roots of a central value).** Let $\lambda\in\mathbb{C}$. The value $\lambda$ has a root in $\star$ if and only if $\lambda\in\mathbb{R}$, and then the nonzero roots are exactly
 
 $$
-\tilde\Xi = c\bigl(\vec u + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \vec u\in\mathbb{R}^3 , \quad \sum_{\mu\in\{x,y,z\}}u_\mu^2 = 1 , \quad t\in\mathbb{R} , \quad (t^2-1)\lvert c\rvert^2 = \lambda ,
+\boxed{\; \tilde\Xi = c\bigl(\vec u + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \vec u\in\mathbb{R}^3 , \quad \sum_{\mu\in\{x,y,z\}}u_\mu^2 = 1 , \quad t\in\mathbb{R} , \quad (t^2-1)\lvert c\rvert^2 = \lambda \;},
 $$
 
 together with, when $\lambda>0$, the **central circle** of the scalar roots $\tilde\Xi = ae_t$ with $\lvert a\rvert^2 = \lambda$.
@@ -73,7 +71,7 @@ and a scalar root has $C(ae_t) = a^2$.
 **Theorem (the roots of one).** The roots of $+1$ in $\star$ are exactly the central circle $\lvert a\rvert^2 = 1$ together with the family
 
 $$
-\tilde\Xi = c\bigl(\vec u + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \lvert t\rvert>1 , \quad \lvert c\rvert^2 = \frac{1}{t^2-1} , \qquad \lvert\vec u\rvert = 1 ,
+\boxed{\; \tilde\Xi = c\bigl(\vec u + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \lvert t\rvert>1 , \quad \lvert c\rvert^2 = \frac{1}{t^2-1} , \qquad \lvert\vec u\rvert = 1 \;},
 $$
 
 a real four-dimensional family beside the circle; the elements $e_t$ and $i$ are roots, and no root of $+1$ is square-zero.
@@ -151,7 +149,7 @@ The two vector relations are of different kinds: the first constrains $\vec a$ a
 **Theorem (the classification).** The idempotents of the multiplication are exactly
 
 $$
-0 , \qquad e_t , \qquad\text{and}\qquad \tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec u,\vec u)=1 .
+\boxed{\; 0 , \qquad e_t , \qquad\text{and}\qquad \tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec u,\vec u)=1 \;}.
 $$
 
 **Proof.** Let $\tilde Q_2$ be idempotent and write $\tilde Q_2 = u + \vec a + i\vec b$ as above. The proof splits on whether the real vector $\vec a$ vanishes.

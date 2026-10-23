@@ -37,9 +37,9 @@ $$
 **Proposition (the axiom is the sector criterion).** The axiom is equivalent to the pair of demands that every element of the anti-Hermitian sector act by a **skew-adjoint** operator and every element of the Hermitian sector act by a **self-adjoint** one:
 
 $$
-\langle t,\tilde Q_3\cdot s\rangle_{*}=-\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_-),
+\boxed{\;\langle t,\tilde Q_3\cdot s\rangle_{*}=-\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_-),
 \qquad
-\langle t,\tilde Q_3\cdot s\rangle_{*}=+\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_+).
+\langle t,\tilde Q_3\cdot s\rangle_{*}=+\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_+)\;}.
 $$
 
 *Proof.* An element with $\tilde Q_3^{*}=-\tilde Q_3$ gives the first identity and an element with $\tilde Q_3^{*}=\tilde Q_3$ the second; conversely the two identities, applied to the components of an arbitrary element in the direct sum $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, give the axiom. The sum is direct because $2$ is invertible in $\mathbb{C}$.
@@ -59,7 +59,7 @@ so a Hermitian Clifford module is exactly a $*$-representation of the $*$-algebr
 **Theorem (the algebra over itself).** On the left regular module ${}_{\mathbb{B}}\mathbb{B}$ the scalar form
 
 $$
-\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_3^{*}\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{3\bar{\mu}}Q_\mu
+\boxed{\;\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_3^{*}\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{3\bar{\mu}}Q_\mu\;}
 $$
 
 is a Hermitian form, positive definite and non-degenerate, and it satisfies the adjointness axiom; so the algebra over itself is a Hermitian Clifford module.
@@ -143,7 +143,7 @@ since $\exp(\dagger)\tilde\Pi$ is a nonzero positive semidefinite matrix and its
 **Theorem (the slice acts by unitaries).** Let $U=\{\tilde U\in\mathbb{B}:\tilde{U}^{*}\tilde U=e_t\}=\mathrm{U}(2)$ be the unitary slice. Then left multiplication by $\tilde U$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:
 
 $$
-\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle t,s\rangle_{*}\qquad\text{for all }s,t\in S .
+\boxed{\;\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle t,s\rangle_{*}\qquad\text{for all }s,t\in S\;}.
 $$
 
 *Proof.* By the axiom, $\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle\tilde{U}^{*}\cdot(\tilde U\cdot t),s\rangle_{*}=\langle (\tilde{U}^{*}\tilde U)\cdot t,s\rangle_{*}=\langle t,s\rangle_{*}$ for $\tilde{U}^{*}\tilde U=e_t$.

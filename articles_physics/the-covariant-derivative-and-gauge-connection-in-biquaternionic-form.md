@@ -33,8 +33,6 @@ The division between what is established and what is interpretation is kept expl
 - **Interpretation.** Reading $\tilde{A}$ as a connection on a bundle, the covariant derivative as parallel transport, and $\bar D D$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
 - **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact gauge algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}} A_\mu e_\mu = i\phi/c\,e_t + \vec A$, with $A_0 = i\phi/c$ purely imaginary and $A_1, A_2, A_3$ real, so that $\tilde{A} \in \mathbb{M}_-$; the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
-
 ## The Covariant Derivative and Its Components
 
 In the abelian case the connection coefficients $A_\mu$ are complex scalars. Writing $\tilde{A} = \sum_\mu A_\mu e_\mu$, the covariant derivative is the first-order operator
@@ -127,7 +125,7 @@ $$
 and comparing with $\lambda(\tilde{\nabla}\tilde{\Psi} + \Omega\tilde{\Psi})$ gives
 
 $$
-\Omega_2 = \Omega - \left(\tilde{\nabla}\lambda\right)\lambda^{-1}.
+\boxed{\;\Omega_2 = \Omega - \left(\tilde{\nabla}\lambda\right)\lambda^{-1}\;}.
 $$
 
 For the exponential phase this is, by the chain rule $\tilde{\nabla}\lambda = \frac{iϙ}{\hbar}(\tilde{\nabla}\Gamma)\lambda$,
@@ -225,7 +223,7 @@ $$
 Here $\tilde{A}^{\natural} \neq -\tilde{A}$ in general; quaternion conjugation is not charge conjugation, and $\bar D$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
 
 $$
-\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F}
+\boxed{\;\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F}\;}
 $$
 
 holds, where $D_\mu^2$ means $D_\mu D_\mu$ and $\sum_\mu D_\mu^2 = \sum_\mu\left(\partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ when $\tilde{A} = 0$.
@@ -306,9 +304,9 @@ Covariance determines the connection rather than merely holding for it: the requ
 The curvature is the commutator of covariant derivatives, $[D_\mu,D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$, and contracts to the field strength $\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu\nu}[D_\mu,D_\nu]\bar{e}_\mu e_\nu$. Unlike $D_\mu$, the commutator is an element of the algebra. The covariant square separates cleanly,
 
 $$
-\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F},
+\boxed{\;\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F},
 \qquad
-\mathrm{Sc}(\bar D D) = \sum_\mu D_\mu^2, \quad \mathrm{Vect}(\bar D D) = \frac{iϙ}{\hbar}\tilde{F},
+\mathrm{Sc}(\bar D D) = \sum_\mu D_\mu^2, \quad \mathrm{Vect}(\bar D D) = \frac{iϙ}{\hbar}\tilde{F}\;},
 $$
 
 with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact gauge algebra. The gauge connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.

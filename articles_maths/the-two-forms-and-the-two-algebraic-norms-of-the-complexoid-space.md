@@ -6,8 +6,6 @@ The two products of the complex space carry two **forms**, and their algebraic n
 
 The two forms are the scalar parts of the two general products, and the two products and their collapse are *The Two Products of the Complexoid Space*. The topological norm $\sqrt{\langle\cdot\rangle_{*}}$, its multiplicativity, the invertibility criterion and the group of units are owned by *Complex Norm and Invertibility*, below this article in this category, and are named here and not developed.
 
-**Conventions.** **Bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $Q_1$ and $Q_2$, and $\langle\cdot,\cdot\rangle$ is not used for an element: $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are the four forms, of which $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ survive here. The letter $\langle\cdot,\cdot\rangle_{\natural}$ is read with care: *Complex Norm and Invertibility*, below this article in this category, writes the positive definite norm as $\langle Q\rangle_{*}=Q\bar Q$, which is the algebraic norm of $\langle\cdot\rangle_{*}$. The two readings are told apart by their argument count and by their chapter.
-
 ## The Two Forms
 
 The **form** of a product is its scalar part, a function of two elements. On the complex space, read over itself, there is no vector direction, so the scalar part of a product is the product, and the two forms are
@@ -23,13 +21,13 @@ The forms collapse to these two in the first slot alone. The settings with the i
 The two forms carry two symmetries. The form $\langle\cdot,\cdot\rangle$ is **symmetric**,
 
 $$
-\langle Q_1,Q_2\rangle=Q_1Q_2=Q_2Q_1=\langle Q_2,Q_1\rangle,
+\boxed{\;\langle Q_1,Q_2\rangle=Q_1Q_2=Q_2Q_1=\langle Q_2,Q_1\rangle\;},
 $$
 
 because the field is commutative. The form $\langle\cdot,\cdot\rangle_{*}$ is **conjugate-symmetric**,
 
 $$
-\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2=\overline{Q_2\bar Q_1}=\overline{\langle Q_2,Q_1\rangle_{*}},
+\boxed{\;\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2=\overline{Q_2\bar Q_1}=\overline{\langle Q_2,Q_1\rangle_{*}}\;},
 $$
 
 and it is symmetric exactly on the real subspace, when the bar fixes both arguments. The two forms of the complex space are therefore told apart by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric against $\langle\cdot,\cdot\rangle_{*}$ conjugate-symmetric, and not by their Gram matrix, which is $[1]$ for both. The complex reading has no second separator, since the sign vector $\varepsilon=(1)$ on a one-dimensional space is the identity.
@@ -39,7 +37,7 @@ and it is symmetric exactly on the real subspace, when the bar fixes both argume
 The **algebraic norm** of a form is the form read at equal arguments. The two forms therefore give two algebraic norms,
 
 $$
-\langle Q\rangle=\langle Q,Q\rangle=Q^{2},\qquad \langle Q\rangle_{*}=\langle Q,Q\rangle_{*}=Q\bar Q=q^{2}+q'^{2},
+\boxed{\;\langle Q\rangle=\langle Q,Q\rangle=Q^{2},\qquad \langle Q\rangle_{*}=\langle Q,Q\rangle_{*}=Q\bar Q=q^{2}+q'^{2}\;},
 $$
 
 the square and the squared Euclidean norm of the element. So the complex space carries two norms and no more.

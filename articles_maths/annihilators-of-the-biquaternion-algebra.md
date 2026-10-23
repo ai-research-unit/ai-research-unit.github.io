@@ -66,9 +66,11 @@ General Quaternionic Sesqualgebra* each have an involution that modifies the rea
 operators $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ of an element $\tilde Q_2=Q_{2,0}e_t+\vec Q_2$ have trace
 $4Q_{2,0}$ each and determinant
 $$
+\boxed{\;
 \det L_{\tilde Q_2}=\det R_{\tilde Q_2}=C(\tilde Q_2)^{2},\qquad
-C(\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{2\mu}^{2}.
-$$
+C(\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{2\mu}^{2}
+\;}
+$$.
 
 *Proof.* The matrix of $L_{\tilde Q_2}$ is the left multiplication matrix of the quaternion
 $\tilde Q_2$, of determinant the square of the quaternion norm $C(\tilde Q_2)$ and trace $4Q_{2,0}$; the

@@ -6,8 +6,6 @@ A matrix representation is usually read as a computing device: it turns the mult
 
 The article states these four readings and their boundaries. The representations and their theorems are *The Element and Operator Representations* and the four representation articles it cites; this article owns no matrix identity. It reads invariants the matrices already carry, and it keeps apart the two things a matrix can be: a number and a map.
 
-**Placement.** The article belongs to the Algebra block, after *The Element and Operator Representations*, whose correspondence table it reads through four further invariants. It is not a fifth representation. The $2\times2$ element image, the $4\times4$ regular image and the sandwich operator are cited, not re-derived.
-
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
@@ -16,7 +14,7 @@ The article states these four readings and their boundaries. The representations
 | The regular image $\mathsf{M}_4^{L}(\tilde Q)$, $\det=N^{2}$, $\operatorname{Tr}=4Q_t$, and the block splitting $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$ | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The sandwich operator, its matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$, its spectrum $\lambda_i\bar\lambda_j$, its determinant $\lvert N\rvert^{4}$ and its trace $4\lvert Q_t\rvert^{2}$ | [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The named objects and their matrix correspondences | [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html) |
-| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
+| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
 | The positive cone and the pure states as rank-one idempotents | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The principal bundle, the connection, the curvature and the holonomy | [Fibre Bundles, Connections and Curvature](../articles_maths/fibre-bundles-connections-and-curvature.html) |
 
@@ -71,7 +69,7 @@ the standard Bloch form, with the three matrices $\mathsf{M}_2(i\vec e_k)$ Hermi
 The determinant of this matrix is
 
 $$
-\det\mathsf{M}_2(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr).
+\boxed{\;\det\mathsf{M}_2(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr)\;}.
 $$
 
 It is the biquaternion norm $N(\tilde{Ϛ})$ of the state, and it is real and non-negative on the ball. The two eigenvalues of the matrix are $\tfrac12(1\pm\lvert\vec r\rvert)$, so the determinant is their product, the two-dimensional volume the two eigen-directions span. On the Bloch ball it is the radial gap to the pure boundary: it vanishes on the sphere and is maximal at the centre.
@@ -146,8 +144,8 @@ $$
 so its two eigenvalues are
 
 $$
-\lambda_\pm=Q_t\pm\sqrt{Q_t^{2}-N}
-=Q_t\pm\sqrt{-\bigl(Q_x^{2}+Q_y^{2}+Q_z^{2}\bigr)} .
+\boxed{\;\lambda_\pm=Q_t\pm\sqrt{Q_t^{2}-N}
+=Q_t\pm\sqrt{-\bigl(Q_x^{2}+Q_y^{2}+Q_z^{2}\bigr)}\;}.
 $$
 
 The pair is the eigenvalue map of the element. It is not a homomorphism: the eigenvalues of a product are not a function of the two pairs, because the factors need not commute. Its product is multiplicative,
@@ -156,7 +154,7 @@ $$
 \lambda_+\lambda_-=\det\mathsf{M}_2(\tilde Q)=N(\tilde Q),
 $$
 
-and that product is the reason the determinant is the one invariant of the pair. The map is a similarity invariant and not a complete one: a scalar $Q_te_t$ and a non-scalar element with $(\vec Q,\vec Q)=0$ share the pair $\{Q_t,Q_t\}$ and are not similar. The eigenprojections, not the pair, carry the remaining information, and they are the subject of *Eigenvalue Decomposition of a Biquaternion*, §*The Eigenvalue Decomposition*.
+and that product is the reason the determinant is the one invariant of the pair. The map is a similarity invariant and not a complete one: a scalar $Q_te_t$ and a non-scalar element with $(\vec Q,\vec Q)=0$ share the pair $\{Q_t,Q_t\}$ and are not similar. The eigenprojections, not the pair, carry the remaining information, and they are the subject of *Eigenbasis of a Biquaternion*, §*The Eigenvalue Decomposition*.
 
 The sandwich has the four eigenvalues $\lambda_i\bar\lambda_j$, so the nontrivial pair of the operator is the **square** of the pair of the element. The element stores half of the frame change; the congruence stores the whole of it.
 
@@ -225,7 +223,7 @@ $$
 That phase is the **central phase**: the element $e^{i\alpha}e_t$ acts on the spinor as the scalar matrix $e^{i\alpha}\mathrm{I}_2$. The bundle
 
 $$
-\mathrm{U}(1)\hookrightarrow S^{3}\longrightarrow S^{2}
+\boxed{\;\mathrm{U}(1)\hookrightarrow S^{3}\longrightarrow S^{2}\;}
 $$
 
 is the Hopf bundle, of first Chern number one. The state carries the axis and no phase; the phase is the fibre.
@@ -307,7 +305,7 @@ The element-data and map-data distinction is an interpretation of the doubling $
 ## Further Reading
 
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the correspondence table this article extends.
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the eigenprojections and the point where the pair stops being a complete invariant.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections and the point where the pair stops being a complete invariant.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the ball, its centre and its boundary.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state conditions and the Born pairing.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the boundary of the state space.

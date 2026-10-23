@@ -21,7 +21,7 @@ $$
 and the retarded solution of the potential equation $\Box\tilde{A} = -\mu\tilde J$ is
 $$
 \boxed{\;\tilde{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y,
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec y|, \;}
+\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec y|\;},
 $$
 whose scalar and vector parts are the standard retarded potentials
 $$
@@ -115,7 +115,7 @@ the last equality because $\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ fo
 $$
 G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{\delta(t' - R/c)}{4\pi R},
 \qquad
-\Box\,G_{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}).
+\Box\,G_{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}) .
 $$
 
 Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $\frac{du}{dg}$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $\frac{du}{dg}$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the *argument* $g$: because $(\nabla g)^2 = 1/c^2$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.
@@ -166,7 +166,6 @@ G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
 $$
 using $\int_0^\infty \sin(kR)\sin(ckt')\,dk = \frac{\pi}{2c}\bigl[\delta(t' - R/c) - \delta(t' + R/c)\bigr]$ and discarding the past-cone term because $t'>0$. The Fourier route and the light-cone route agree, coefficient included. The contour computation was also checked numerically: for fixed $k,c,t'>0$ the retarded contour reproduces $\frac{c}{k}\sin(ckt')$ and the advanced contour gives zero, and conversely for $t'<0$.
 
-
 ## Problem 3: Retarded, Advanced, and the Boundary Condition
 
 **Statement.** (a) Exhibit the advanced kernel $G_{\mathrm{adv}}$ and show that it satisfies the same defining equation $\Box G = -\delta^{(4)}$. (b) Show that the difference $G_{\mathrm{ret}} - G_{\mathrm{adv}}$ solves the homogeneous wave equation, so the defining equation alone does not select the retarded kernel. (c) State the boundary condition that selects the retarded kernel for radiation problems and the boundary condition that selects the advanced one, and identify the contour prescription that implements each.
@@ -199,7 +198,7 @@ The exercise's answer to "why is the physically relevant Green's function the re
 $$
 \tilde{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
 = \mu\int \frac{\delta\!\left(t' - t'_2 - R/c\right)}{4\pi R}\,\tilde J(\vec y,t'_2)\,d^3y\,dt'_2
-= \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y ,
+= \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y
 $$
 the $t'_2$ integral having been performed against the delta. Every source contribution is evaluated at its own *retarded time* $t' - R/c$: the field at $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ is assembled from sources on the past light cone of that event, exactly as the causality condition requires. This is the biquaternionic form of the retarded solution, and it is the object the companion radiation article specializes to a point charge.
 
@@ -246,11 +245,11 @@ $$
 $$
 and likewise $\Delta\vec A = -\mu\vec J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A} = -\mu\tilde J$, which is the static limit of $\Box\tilde{A} = -\mu\tilde J$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
 $$
-\phi = \frac{ϙ}{4\pi\epsilon R},
+\boxed{\;\phi = \frac{ϙ}{4\pi\epsilon R},
 \qquad
 \vec E = -\nabla\phi = \frac{ϙ\,\vec u_R}{4\pi\epsilon R^2},
 \qquad
-\tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iϙ\,\vec u_R}{4\pi\sqrt{\epsilon}\,R^2},
+\tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iϙ\,\vec u_R}{4\pi\sqrt{\epsilon}\,R^2}\;}
 $$
 which is exactly the parent's static point-charge field; the retarded construction reproduces it as a limiting case. The parent reaches this field from the first-order static equation by taking the gradient of the Newton kernel; here the same field follows from the second-order potential equation, whose static solution is the Newton kernel itself, differentiated once to give $\vec E$. Both routes yield the same Coulomb field, and the retarded potentials supply the second-order route. For a steady current, starting from $\vec A$ and using $\nabla(1/R) = -\vec u_R/R^2$,
 $$
@@ -301,10 +300,10 @@ derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u
 
 The defining equation does not select the kernel: the advanced kernel $\frac{1}{4\pi R}\delta(t'+R/c)$ solves it equally, the difference is a solution of the homogeneous equation, and the retarded choice is fixed by the causality (no-incoming-radiation) boundary condition, implemented by displacing both frequency poles below the real axis. Convolving the retarded kernel with the source gives the retarded potentials
 $$
-\phi = \frac{1}{4\pi\epsilon}\int \frac{\rho_{\mathrm{ret}}}{R}\,d^3y,
+\boxed{\;\phi = \frac{1}{4\pi\epsilon}\int \frac{\rho_{\mathrm{ret}}}{R}\,d^3y,
 \qquad
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J_{\mathrm{ret}}}{R}\,d^3y,
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|,
+\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|\;}
 $$
 with all sources at the retarded time $t' - R/c$; the retarded solution is automatically in the Lorenz gauge when charge is conserved, because $\Box S = -\mu(\partial/\partial t'\,\rho + \mathrm{div}\,\vec J) = 0$ and the retarded solution of the homogeneous equation with no incoming radiation vanishes. In the static limit the retarded potentials reduce to the Coulomb and Biot–Savart solutions, and for a point charge they reproduce the parent's static field exactly.
 

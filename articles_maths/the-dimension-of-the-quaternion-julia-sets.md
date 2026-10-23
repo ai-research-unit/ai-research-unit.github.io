@@ -39,7 +39,7 @@ $$
 **Theorem (the exact formula for a real parameter).** Let $c \in \mathbb{R}$ and put $d=\dim_H J^{\mathbb{C}}_c$. If the slice $J^{\mathbb{C}}_c$ is not contained in the real axis, then
 
 $$
-\dim_H J_c = \dim_H\bigl(\Phi_c\cap\{r>0\}\bigr) + 2 = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr) + 2,
+\boxed{\;\dim_H J_c = \dim_H\bigl(\Phi_c\cap\{r>0\}\bigr) + 2 = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr) + 2\;},
 $$
 
 and if in addition the top dimension of $J^{\mathbb{C}}_c$ is carried by its off-axis part, then $\dim_H J_c=d+2$. If the slice is contained in the real axis — which happens for the real parameters with $c\leq-2$ or $c>\tfrac14$ — then $\Phi_c\cap\{r>0\}=\emptyset$ and $\dim_H J_c=d$.
@@ -55,7 +55,7 @@ and if in addition the top dimension of $J^{\mathbb{C}}_c$ is carried by its off
 **Theorem (the bounds for a non-real parameter).** Let $c \notin \mathbb{R}$ and $d=\dim_H J^{\mathbb{C}}_{\kappa(c)}$. Then
 
 $$
-d \leq \dim_H J_c \leq \dim_H \Phi_c + 2,
+\boxed{\;d \leq \dim_H J_c \leq \dim_H \Phi_c + 2\;},
 $$
 
 and no equality is asserted.

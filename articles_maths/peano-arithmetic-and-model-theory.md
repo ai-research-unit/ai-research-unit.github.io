@@ -42,8 +42,7 @@ Axioms (PA1)–(PA3) are the successor axioms, (PA4)–(PA7) define addition and
 
 **Theorem.** PA proves the following, for all $n, m, k$:
 
-$$
-n + m = m + n, \qquad (n+m)+k = n+(m+k), \qquad n \cdot m = m \cdot n, \qquad (n \cdot m)\cdot k = n\cdot(m\cdot k),
+$$ \boxed{\;n + m = m + n, \qquad (n+m)+k = n+(m+k), \qquad n \cdot m = m \cdot n, \qquad (n \cdot m)\cdot k = n\cdot(m\cdot k)\;},
 $$
 
 $$
@@ -84,8 +83,7 @@ and the relation $<$ is a discrete linear order with least element $0$ in which 
 
 **Theorem (order type).** Let $\mathcal{M}$ be a nonstandard model of PA and let $N$ be its standard part. Then $\mathcal{M}$ is the disjoint union of $N$ and of the **$\mathbb{Z}$-blocks** $B_a = \{a + n : n \in \mathbb{Z}\}$ for nonstandard $a$, each of which has order type $\mathbb{Z}$ and is an interval in $M$; the set of blocks is densely ordered and has no endpoints, so the order type of $\mathcal{M}$ is
 
-$$
-\mathbb{N} + \sum_{q \in D} \mathbb{Z},
+$$ \boxed{\;\mathbb{N} + \sum_{q \in D} \mathbb{Z}\;},
 $$
 
 where $D$ is a dense linear order without endpoints.
@@ -110,8 +108,7 @@ where $D$ is a dense linear order without endpoints.
 
 **Proof.** Gödel's diagonal construction produces a sentence $G$ with
 
-$$
-\mathrm{PA} \vdash G \leftrightarrow \neg \mathrm{Prov}_{\mathrm{PA}}(\#G),
+$$ \boxed{\;\mathrm{PA} \vdash G \leftrightarrow \neg \mathrm{Prov}_{\mathrm{PA}}(\#G)\;},
 $$
 
 where $\mathrm{Prov}$ is the arithmetised proof predicate, using the representability of the recursive functions in Q and the diagonal lemma. If PA proved $G$ then $\mathrm{Prov}(\#G)$ would hold and, by $\Sigma_1$-completeness, PA would prove it, contradicting the equivalence; if PA proved $\neg G$ and PA is consistent, then $G$ is not provable and, by $\Sigma_1$-completeness of the negation, PA would prove $\mathrm{Prov}(\#G)$, again contradicting the equivalence. The argument is Gödel's and is given in *Proof Theory and Type Theory*.

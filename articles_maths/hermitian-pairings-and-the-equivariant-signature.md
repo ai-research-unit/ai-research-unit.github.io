@@ -9,8 +9,6 @@ The subject is the meeting point of the whole batch. The equivariant form on the
 
 **The article assumes** the Hermitian forms, the Witt and Wall groups and the signature of *Hermitian Pairings and the Signature*, the equivariant homology and the fixed-set theory of *The Involution on the Homology* and *Involutions on Manifolds and Equivariant Surgery*, the representation theory of the finite groups (*Linear Spaces*, Part I), and the equivariant signature as a cobordism invariant from *Involutions and the Cobordism of Group Actions*.
 
-**The boundaries of the article.** The algebra of the forms is *Hermitian Pairings and the Signature*, the previous article; the equivariant surgery obstruction is *Involutions on Manifolds and Equivariant Surgery*; the equivariant cobordism is *Involutions and the Cobordism of Group Actions*; the analytic index theory of the signature operator, the Atiyah–Singer theorem and the $\rho$-invariants are Part IV (*Index Theory and the Atiyah–Singer Theorem*), and the Floer-theoretic secondary invariants are *Floer Homology*. The article states the $G$-signature theorem and its consequences without the analysis, and refers to Part IV for the proof.
-
 ## The Equivariant Form and the Multisignature
 
 **Definition.** Let a finite group $G$ act on a closed oriented $4k$-manifold $M$, and let $H = H_{2k}(M;\mathbb{Q})$ with the nondegenerate symmetric intersection form $\mathfrak{Q}$, made into a $G$-module by the action. For $g\in G$ the $g$-eigenspace decomposition $H\otimes\mathbb{C} = \bigoplus_{\lambda}H_{\lambda}$ by the eigenvalues $\lambda$ of $g_*$ provides the **equivariant signature**

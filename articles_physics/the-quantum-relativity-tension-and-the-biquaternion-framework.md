@@ -8,8 +8,6 @@ This article states the tension and then asks what the biquaternion framework br
 
 The claim is not that the tension is resolved. The claim is that the framework offers **one common language** for the two theories, and that in that one language several of the difficulties turn from compromises between two formalisms into properties of a single biquaternion space. That is a smaller claim than a solution and a larger one than a restatement, and the article tries to keep the two apart throughout.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$ commuting with every $\vec e_k$. It splits into the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The material sector carries the coordinates $(ict',x,y,z)$, and the informational sector carries $(ct,ix',iy',iz')$. The trace is $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$. The speed of light is the local $c=1/\sqrt{\epsilon\mu}$, with $c_0$ its vacuum value. The conventions are those of *Conventions in the Biquaternion Universe*; the two sectors are developed in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*.
-
 ## The Tension
 
 Seven structural difficulties are usually distinguished. They are stated here in their own terms, with the framework out of view, each followed by what an answer would have to deliver.
@@ -43,7 +41,7 @@ The clearest single place to see the two regimes is the **diagonal**. One elemen
 The second half of the structural reason is that **one action form serves both groups**:
 
 $$
-\Gamma_{\tilde{Q}_3}(\tilde{Q}_1)=\tilde{Q}_3\,\tilde{Q}_1\,\tilde{Q}_3^{*}.
+\boxed{\;\Gamma_{\tilde{Q}_3}(\tilde{Q}_1)=\tilde{Q}_3\,\tilde{Q}_1\,\tilde{Q}_3^{*}\;}.
 $$
 
 The relativistic transformations are the unit-norm biquaternions, $\tilde{U}\tilde{U}^{\natural}=e_t$, the group $SL(2,\mathbb{C})$; the quantum operations are the unitary biquaternions, $\tilde{Q}_3\tilde{Q}_3^{*}=e_t$; the measurement update is the same form with $\tilde{Q}_3$ a Hermitian idempotent. The three cases differ only in which class of element acts. The symmetry group and the operator algebra are therefore not two structures in correspondence; they are two subsets of the invertible elements of one biquaternion space acting by one formula, and their intersection is the rotation group $SU(2)$. The two subsets are different groups and neither contains the other: the unit-norm subset induces the full Lorentz group, boosts included, while the unitary subset induces only its rotations, since unitarity, and not unit norm, is the condition that preserves the trace.
@@ -107,7 +105,7 @@ Seven ideas. Six are numbered against the difficulties — ideas 3 and 4 both ag
 **The mechanism.** Both are the operation form $\Gamma_{\tilde{Q}_3}(\tilde{Q}_1)=\tilde{Q}_3\tilde{Q}_1\tilde{Q}_3^{*}$. For the reversible evolution $\tilde{Q}_3$ is unitary, $\tilde{Q}_3\tilde{Q}_3^{*}=e_t$; for the measurement update $\tilde{Q}_3$ is a Hermitian idempotent, $\tilde{Q}_3^2=\tilde{Q}_3=\tilde{Q}_3^{*}$. The two classes are distinguished algebraically — a unitary element preserves the biquaternion norm, since $\langle\tilde{Q}_3\tilde{Q}_1\tilde{Q}_3^{*}\rangle_{\natural}=|\langle\tilde{Q}_3\rangle_{\natural}|^{2}\langle\tilde{Q}_1\rangle_{\natural}$ and $|\langle\tilde{Q}_3\rangle_{\natural}|=1$, while an idempotent projection does not, since $\tilde{\Pi}\tilde{\Pi}^{\natural}=0$ gives $\langle\tilde{\Pi}\tilde{Q}_1\tilde{\Pi}\rangle_{\natural}=\tilde{\Pi}\tilde{Q}_1\,\tilde{\Pi}\tilde{\Pi}^{\natural}\,\tilde{Q}_1^{\natural}\tilde{\Pi}^{\natural}=0$ — so the reversible–irreversible distinction is a distinction between elements of one biquaternion space rather than between two postulates. A third element of the same interpretation is available from the norm: for a Hermitian idempotent the quaternion conjugation returns the complementary idempotent, $\tilde\Pi^{\natural}=e_t-\tilde\Pi$, so the biquaternion norm vanishes,
 
 $$
-\langle\tilde\Pi\rangle_{\natural}=\tilde\Pi\tilde\Pi^{\natural}=\tilde\Pi\,(e_t-\tilde\Pi)=0,
+\boxed{\;\langle\tilde\Pi\rangle_{\natural}=\tilde\Pi\tilde\Pi^{\natural}=\tilde\Pi\,(e_t-\tilde\Pi)=0\;},
 $$
 
 and the idempotents lie on the algebra's **zero-divisor cone**, whose geometry Idea 7 develops.

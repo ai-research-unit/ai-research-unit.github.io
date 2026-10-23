@@ -58,7 +58,7 @@ the middle step being the multiplicativity of the norm. This is worth pausing on
 The mass-shell relation, read backwards, says
 
 $$
-m^2c^2 = -\langle\tilde{P}\rangle_{\natural}.
+\boxed{\ m^2c^2 = -\langle\tilde{P}\rangle_{\natural}\ }\ .
 $$
 
 Mass is the negative of the norm of the four-momentum, up to the constant $c^2$. The norm is the framework's only invariant attached to a four-momentum, so in this interpretation **mass is the value of the invariant** — the invariant is the shell, and the mass is which shell. A particle is characterized, so far as the algebra's quadratic form is concerned, by one real number: the value of $\langle\cdot\rangle_{\natural}$ on its four-momentum.
@@ -80,7 +80,7 @@ For a four-wavevector $\tilde P=i(\omega/c)e_t+\vec k$, the cone article establi
 What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U$ of unit norm acts on the sector, and the norm is multiplicative, so
 
 $$
-N\!\left(\tilde U\tilde{Q}\tilde U^{*}\right) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \left|\langle\tilde U\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural},
+\boxed{\ N\!\left(\tilde U\tilde{Q}\tilde U^{*}\right) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \left|\langle\tilde U\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural}\ } ,
 $$
 
 using $\langle\tilde U^{*}\rangle_{\natural}=\overline{\langle\tilde U\rangle_{\natural}}$ and $\langle\tilde U\rangle_{\natural}=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\vec k|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone.
@@ -112,7 +112,6 @@ At $m=0$ the expression is exactly $1$ for every $|\vec p|$, with no limiting pr
 | $0.001$ | $1.000000$ | $0.999999$ | $-0.000001$ |
 | $0$ | $1.000000$ | $1.000000$ | $0.000000$ |
 
-
 ## What the Cone Does Not Derive
 
 ### Mass is a value, not a structure
@@ -126,7 +125,7 @@ The cone marks the value $m=0$ and only that value. Distinguishing a value is no
 There is a structural reason behind the previous paragraph, and it is stronger than a statement about what the cone happens to say. The norm is homogeneous of degree two,
 
 $$
-\langle\lambda\tilde{Q}\rangle_{\natural} = \lambda^2\langle\tilde{Q}\rangle_{\natural}
+\boxed{\ \langle\lambda\tilde{Q}\rangle_{\natural} = \lambda^2\langle\tilde{Q}\rangle_{\natural}\ }
 $$
 
 The null set is therefore invariant under every rescaling: if $\tilde{Q}$ is null then so is $\lambda\tilde{Q}$, for every $\lambda$. The cone is a scale-invariant object, and an algebra whose special locus is scale-invariant contains no preferred scale. To generate a mass scale one must put one in, and the framework does: the mass term is a term in the Lagrangian or the field equation, not in the algebra. The companion articles record the two choices side by side — *Canonical Quantization of the Biquaternion Maxwell Field* for the massless case and *Canonical Quantization of the Biquaternion Proca Field* for the massive one — and the difference is precisely the presence of a term the algebra does not contain.
@@ -150,7 +149,7 @@ A separate input, often blurred with masslessness, is the transversality of the 
 The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_t+\vec p$ with $\vec u=\vec p/|\vec p|$,
 
 $$
-\tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\vec u),
+\boxed{\ \tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\vec u)\ },
 \qquad
 \tilde\Pi(\vec u) \;=\; \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$
@@ -231,7 +230,7 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the zero-divisor regime and the idempotent stratum.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectrum, the zero-divisor regime and the idempotent stratum.
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover), for the light cone and the null interval.
 - Albert Einstein, "Zur Elektrodynamik bewegter Körper", *Annalen der Physik* **17** (1905) 891–921, for the independence of the speed of light from the state of motion of the emitter.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for isotropic vectors and zero divisors in $\mathbb{C}\otimes\mathbb{H}$ and $M_2(\mathbb{C})$.

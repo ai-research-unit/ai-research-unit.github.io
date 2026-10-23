@@ -16,8 +16,6 @@ Two consequences are developed. The first is that the odd part of the unitary gr
 
 The algebra, the grading and the three involutions are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the dagger is *Hermitian Algebras*; the two-sided family is *Two-Sided Operators on a Clifford Algebra*; the operator and its parity sign are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the inner-conjugation reading of the grading is *The Grading of the Clifford Algebra with Signed Inner Conjugation*; the slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. Nothing of the inverse-conjugation article is reused except the comparison of the two maps, which is quoted and adapted.
 
-**Conventions.** As in the companion articles: $A$ commutative with involution $\sigma$, $V$ free of rank $n$ with a non-degenerate $q$, $x^{\dagger}=\sigma(\alpha(x^{r}))$, $\Gamma$ the Clifford group, $U=\{x:x^{\dagger}x=1\}$ the unitary slice, $\varepsilon_x=(-1)^{|x|}$, and $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{\dagger}$, $\Theta_x(y)=x\,y\,x^{\dagger}$.
-
 ## The Grading and the Sign
 
 **Proposition (the dagger is even).** The dagger preserves the degree mod two, $(\mathrm{Cl}^k)^{\dagger}\subseteq\mathrm{Cl}^k$, and it is an anti-automorphism of the graded algebra: $(xy)^{\dagger}=y^{\dagger}x^{\dagger}$ with $|y^{\dagger}|=|y|$.

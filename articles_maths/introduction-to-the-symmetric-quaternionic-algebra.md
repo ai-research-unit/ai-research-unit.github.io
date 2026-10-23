@@ -10,10 +10,6 @@ $$
 
 The general construction of the splitting is *The Symmetric and Antisymmetric Parts of an Algebra Product*; here it is cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws — commutativity, and the failure of associativity, of power-associativity, of the Jordan identity, of the Jacobi identity and of the alternating law — its image, the absence of a unit, the square and its polarisation, and the placement of the structure $\mathrm{SQA}$ among the twelve. The name $\mathrm{SQA}$ and the verb *collapse* are the two threads: the operation collapses the whole space onto its central line, and every later article of the block is a reading of the single formula $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$.
 
-**Boundaries.** The four general products and their comparison are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*; the catalogue of the twelve operations, whose row $\mathrm{SQA}$ is one line, is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent and the root are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the norm, its polarisation and its isotropic cone are *Norm and Invertibility in the General Quaternionic Algebra* and *Zero Divisors of the Biquaternion Algebra*; the Jordan theory and the symmetrisation of an associative product are *Jordan Algebras*. The companion articles of the block read the same operation through its form (*The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*), on the remarkable subspaces (*Remarkable Subspaces under the Symmetric Quaternionic Algebra*), through its multiplication operators (*The Multiplication Operators of the Symmetric Quaternionic Algebra*) and in the two matrix models.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}Q_{2,\mu} e_\mu=Q_{2t}e_t+\vec Q_2$ with $Q_{2t}\in\mathbb{C}$ and $\vec Q_2=Q_{2x}\vec e_x+Q_{2y}\vec e_y+Q_{2z}\vec e_z$, and $(\vec Q_1,\vec Q_2)=\sum_{k\in\{x,y,z\}}Q_{1,k}Q_{2,k}$ is the complex bilinear form of the two vector parts. The **natural conjugation** is $\tilde Q_2^{\natural}=Q_{2t}-\vec Q_2$, the **star** is $\tilde Q_2^{*}=\overline{Q_{2t}}-\overline{\vec Q_2}$, and the **Hermitian conjugation** is $\overline{\tilde Q_2}=\tilde Q_2^{\natural*}$; all three fix $e_t$, and the star and the Hermitian conjugation are conjugate-linear. The **centre** of the plain product is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the **vector subspace** is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$, and $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ are the remaining remarkable subspaces of *Introduction to the Remarkable Subspaces*. The symmetric quaternionic multiplication is denoted $\star$ throughout the Common Theory entries of the block and $\bullet$ in its Specific Theory and Operators entries; the two are the same operation.
-
 ## The Operation
 
 **Definition.** The **symmetric quaternionic multiplication** of $\mathbb{B}$ is the operation
@@ -38,9 +34,7 @@ and the operation is the multiplication of the structure denoted $\mathrm{SQA}$ 
 
 **Theorem (the value is central and the coefficient is the quaternion form).** For all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
-$$
-\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\,e_t,\qquad \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2).
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\,e_t,\qquad \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2) \;}. $$
 
 *Proof.* Write $\tilde Q_1^{\natural}\tilde Q_2$ in scalar and vector parts (*Introduction to the General Quaternionic Algebra*): scalar part $Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$, vector part $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$. The exchange $\tilde Q_2^{\natural}\tilde Q_1$ has the same scalar part and the vector part $Q_{2t}\vec Q_1-Q_{1t}\vec Q_2-\vec Q_2\times\vec Q_1$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\vec Q_1\times\vec Q_2=-\vec Q_2\times\vec Q_1$.
 
@@ -48,9 +42,7 @@ The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form*
 
 **Corollary (the class and the commutativity).** The operation is $\mathbb{C}$-bilinear and commutative, its value is always central, and its commutator vanishes identically,
 
-$$
-\tilde Q_1\star\tilde Q_2=\tilde Q_2\star\tilde Q_1,\qquad [\tilde Q_1,\tilde Q_2]_{\star}=\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1=0 .
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\tilde Q_2\star\tilde Q_1,\qquad [\tilde Q_1,\tilde Q_2]_{\star}=\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1=0 \;}. $$
 
 *Proof.* Bilinearity is read on the definition, the two slots being linear; commutativity is read on the defining half-sum; centrality is the theorem; and the commutator vanishes because the product is commutative.
 
@@ -175,9 +167,7 @@ so $e_t$ is a unit for the central line alone. An element $\tilde u$ with $\tild
 
 **Proposition (the square).** For every $\tilde Q$,
 
-$$
-\tilde Q\star\tilde Q = \langle\tilde Q\rangle_{\natural}\,e_t,\qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2,
-$$
+$$ \boxed{\; \tilde Q\star\tilde Q = \langle\tilde Q\rangle_{\natural}\,e_t,\qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2 \;}, $$
 
 and the coefficient is the polarisation of the square,
 

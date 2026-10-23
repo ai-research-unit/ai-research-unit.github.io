@@ -46,8 +46,8 @@ The separation is the first physical statement of the article. The physically av
 The halving map is the bridge between the two objects:
 
 $$
-\tilde\Xi\longmapsto\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi),\qquad
-\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi).
+\boxed{\;\tilde\Xi\longmapsto\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi),\qquad
+\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)\;}.
 $$
 
 The two computations are two lines: if $\tilde\Xi^2=e_t$ then $\tfrac14(e_t+\tilde\Xi)^2=\tfrac12(e_t+\tilde\Xi)$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_t)^2=e_t$. The inverse is $\tilde\Xi=2\tilde\Pi-e_t$.
@@ -82,7 +82,7 @@ The boundary is immediate and important. **Not every observable is a root of $+1
 A Hermitian idempotent is an idempotent with $\tilde\Pi^{*}=\tilde\Pi$. The halving map of the Hermitian roots gives the family
 
 $$
-\tilde\Pi_\pm(i\tilde\xi)=\tfrac12(e_t\pm i\tilde\xi),\qquad \tilde\xi\in S^2,
+\boxed{\;\tilde\Pi_\pm(i\tilde\xi)=\tfrac12(e_t\pm i\tilde\xi),\qquad \tilde\xi\in S^2\;},
 $$
 
 which is the **Bloch sphere** of the pure states. The trace is one, $\operatorname{Tr}\tilde\Pi=2\operatorname{Sc}\tilde\Pi=1$, and the norm vanishes, so the state is on the boundary of the positive cone. The trivial cases $e_t$ and $0$ are the degenerate states of the trivial observables.
@@ -94,7 +94,7 @@ The same element carries the other state readings. The von Neumann entropy is a 
 The spectral resolution makes the identification exact. For $\tilde\Xi=i\tilde\xi$,
 
 $$
-\tilde\Xi\tilde\Pi_+=\tilde\Pi_+,\qquad \tilde\Xi\tilde\Pi_-=-\tilde\Pi_-,\qquad \tilde\Xi=\tilde\Pi_+-\tilde\Pi_-.
+\boxed{\;\tilde\Xi\tilde\Pi_+=\tilde\Pi_+,\qquad \tilde\Xi\tilde\Pi_-=-\tilde\Pi_-,\qquad \tilde\Xi=\tilde\Pi_+-\tilde\Pi_-\;}.
 $$
 
 The observable, its two eigenvalues and its two states are one object and its two projections. The physical reading is that a **two-outcome measurement** is a root of $+1$: the root is the observable, the pair is the two outcomes, and the eigenvalues are the two signs.

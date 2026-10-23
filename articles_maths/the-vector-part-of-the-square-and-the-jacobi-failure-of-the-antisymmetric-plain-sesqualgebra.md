@@ -12,9 +12,7 @@ The setting, the notation and the definition of the block are those of *Introduc
 
 **Theorem (the diagonal is the vector part of the square).** For every biquaternion,
 
-$$
-\tilde Q\diamond\tilde Q=\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr),
-$$
+$$ \boxed{\; \tilde Q\diamond\tilde Q=\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr) \;}, $$
 
 the vector part of the square of the general plain sesquilinear product.
 
@@ -38,9 +36,7 @@ a purely imaginary vector. In particular the diagonal takes its values in the th
 
 **Theorem (the criterion).** For a biquaternion $\tilde Q$, the diagonal vanishes,
 
-$$
-\tilde Q\diamond\tilde Q=0,
-$$
+$$ \boxed{\; \tilde Q\diamond\tilde Q=0 \;}, $$
 
 if and only if $\tilde Q=0$ or $\tilde Q\tilde Q^{*}$ is a scalar, $\tilde Q\tilde Q^{*}=\langle\tilde Q,\tilde Q\rangle_{*}e_t$. In the second case $\tilde Q=\rho\,\tilde u$ for a complex $\rho\neq0$ and an element $\tilde u$ with $\tilde u\tilde u^{*}=e_t$.
 
@@ -102,9 +98,7 @@ the outer form of *The Symmetric and Antisymmetric Parts of an Algebra Product*,
 
 **Theorem (the failure, and its witness).** The cyclic sum of the block does not vanish. At the real triple $(e_t,\vec e_x,\vec e_y)$,
 
-$$
-\mathrm{cyc}\,\diamond\,(e_t,\vec e_x,\vec e_y)=\vec e_z\neq0,
-$$
+$$ \boxed{\; \mathrm{cyc}\,\diamond\,(e_t,\vec e_x,\vec e_y)=\vec e_z\neq0 \;}, $$
 
 and at the complex triple $(\vec e_x,\vec e_x,i\vec e_y)$,
 

@@ -8,17 +8,11 @@ The result that organises the article is that the law and the symmetry of the fo
 
 Two further consequences are drawn, both of them consequences of the definiteness of the form. The **two-sided annihilator** of the block is zero, because $\langle\cdot,\cdot\rangle_{*}$ is non-degenerate; and there is **no nonzero element of square zero**, because the form is strictly positive at the two equal arguments off the origin. Both statements are the exact opposites of the quaternionic row, where the form is indefinite and the quadratic map kills nonzero elements. They are proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The article closes with the comparison of the law in the sibling symmetric blocks and with the criterion that comparison feeds, in *The Specificities of the Symmetric Plain Sesqualgebra*.
 
-**Boundaries.** The product, its class, its table and the failure of the Jordan identity are *Introduction to the Symmetric Plain Sesqualgebra*, and the form $\langle\cdot,\cdot\rangle_{*}$, its positivity and its cone are *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; this article cites both and restates neither. The **idempotents** of the block are *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, its **zero divisors and annihilators** are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and its **nilpotents** are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; this article cites them and does not restate them. The comparison blocks are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* for $\mathrm{SPA}$, *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* for $\mathrm{SQA}$ and *Introduction to the Symmetric Quaternionic Sesqualgebra* for $\mathrm{SQS}$, and the criterion they feed is *The Specificities of the Symmetric Plain Sesqualgebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** As in *Introduction to the Symmetric Plain Sesqualgebra*: $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the product is $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ with $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$.
-
 ## The Conjugate-Commutative Law
 
 **Theorem (the law).** For all $\tilde Q_1,\tilde Q_2$,
 
-$$
-\tilde Q_1\star\tilde Q_2 = \overline{\tilde Q_2\star\tilde Q_1} ,
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \overline{\tilde Q_2\star\tilde Q_1} \;}, $$
 
 the bar acting on the central coefficient; the operation is **conjugate-commutative** and not commutative.
 
@@ -26,9 +20,7 @@ the bar acting on the central coefficient; the operation is **conjugate-commutat
 
 **Proposition (the two involutions act, one as an automorphism and one as the reversal).** The natural conjugation preserves the product and the Hermitian conjugation reverses it up to the coefficientwise conjugate:
 
-$$
-\tilde Q_1^{\natural}\star\tilde Q_2^{\natural} = \tilde Q_1\star\tilde Q_2 , \qquad \tilde Q_1^{*}\star\tilde Q_2^{*} = \overline{\tilde Q_1\star\tilde Q_2} = \tilde Q_2\star\tilde Q_1 .
-$$
+$$ \boxed{\; \tilde Q_1^{\natural}\star\tilde Q_2^{\natural} = \tilde Q_1\star\tilde Q_2 , \qquad \tilde Q_1^{*}\star\tilde Q_2^{*} = \overline{\tilde Q_1\star\tilde Q_2} = \tilde Q_2\star\tilde Q_1 \;}. $$
 
 *Proof.* On the coordinates, $(\tilde Q_1^{\natural})_\mu = \varepsilon_\mu Q_{1,\mu}$ and $(\tilde Q_1^{*})_\mu = \varepsilon_\mu\overline{Q_{1,\mu}}$ with $\varepsilon = (1,-1,-1,-1)$. Hence $\langle\tilde Q_1^{\natural},\tilde Q_2^{\natural}\rangle_{*} = \sum_\mu \varepsilon_\mu Q_{1,\mu}\,\overline{\varepsilon_\mu Q_{2,\mu}} = \sum_\mu \varepsilon_\mu^{2}Q_{1,\mu}\overline{Q_{2,\mu}} = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, since $\varepsilon_\mu = \pm1$ is real; and $\langle\tilde Q_1^{*},\tilde Q_2^{*}\rangle_{*} = \sum_\mu \varepsilon_\mu\overline{Q_{1,\mu}}\,\overline{\varepsilon_\mu\overline{Q_{2,\mu}}} = \sum_\mu \varepsilon_\mu^{2}\overline{Q_{1,\mu}}\,Q_{2,\mu} = \overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}}$. The second equality of the display is the conjugate-commutative law.
 
@@ -57,9 +49,7 @@ The two-sided annihilator of the block is $\{0\}$, because the form $\langle\cdo
 The symmetric plain block is the one with a unit and the one whose product has a vector part; the two central blocks have neither, because the identity of a central-valued product cannot reproduce a vector part. The laws are *commutative*, *conjugate-commutative*, and the idempotents follow: the plain block has the two families $\tfrac12(e_t + \tilde\Xi i)$ attached to the square roots of $-1$ (*The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*), the two central blocks have only $0$ and $e_t$ (*Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
 
 **The two conjugate-commutative blocks.** The law does not separate the block from the *other* sesquilinear symmetric part of the twelve, the symmetric quaternionic sesquilinear block $\mathrm{SQS}$, which is conjugate-commutative as well; the two are separated by the image and by the form. There the value is
-$$
-\mathrm{SQS}(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t - Q_{1t}\overline{\vec Q_2} - \overline{Q_{2t}}\,\vec Q_1 , \qquad \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\overline{Q_{2t}} - (\vec Q_1,\overline{\vec Q_2}) ,
-$$
+$$ \boxed{\; \mathrm{SQS}(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t - Q_{1t}\overline{\vec Q_2} - \overline{Q_{2t}}\,\vec Q_1 , \qquad \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\overline{Q_{2t}} - (\vec Q_1,\overline{\vec Q_2}) \;}, $$
 with a non-central value that lies in no subspace of the remarkable subspaces and an indefinite scalar form $\langle\cdot,\cdot\rangle_{\natural*}$, while here the value is the central $\langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ and the form $\langle\cdot,\cdot\rangle_{*}$ is definite. The two blocks share everything else at the level of the law: both are sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, both satisfy $\tilde Q_1\star\tilde Q_2 = \overline{\tilde Q_2\star\tilde Q_1}$, and neither has a unit. The difference is the sign carried by the vector part of the parent pairing, which the plain block cancels and the quaternionic block keeps; the same sign swaps the definite diagonal $\langle\tilde Q_2,\tilde Q_2\rangle_{*} = \sum_\mu\lvert Q_{2,\mu}\rvert^{2}$ for the indefinite $\langle\tilde Q_2,\tilde Q_2\rangle_{\natural*} = \lvert Q_{2t}\rvert^{2} - \lvert\vec Q_2\rvert^{2}$ (*Introduction to the Symmetric Quaternionic Sesqualgebra*).
 
 **The readings through the involutions.** The plain block is $\mathbb{C}$-bilinear, and the natural conjugation is an antiautomorphism of the plain product, hence an **automorphism** of the symmetric block, $(\tilde Q_1\bullet\tilde Q_2)^{\natural} = \tilde Q_1^{\natural}\bullet\tilde Q_2^{\natural}$; there is no conjugation of the base field, and so no second reading. The sesquilinear-central block carries that conjugation, and its law has the two readings, $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\star\tilde Q_2^{\natural}$, an automorphism, and $\tilde Q_1^{*}\star\tilde Q_2^{*} = \overline{\tilde Q_1\star\tilde Q_2}$, the reversal. The pair of readings is the mark that the product carries the conjugation of the base field.

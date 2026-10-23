@@ -134,7 +134,7 @@ so the centre itself carries the material-informational grading: the real scalar
 
 **No central idempotents.** A central idempotent is $\tilde Q_3 = c\,e_t$ with $\tilde Q_3^2 = \tilde Q_3$, that is $c^2 = c$, whose only complex solutions are $c = 0$ and $c = 1$. Hence
 $$
-\{\text{central idempotents of }\mathbb{B}\} = \{0,\ e_t\}.
+\boxed{\;\{\text{central idempotents of }\mathbb{B}\} = \{0,\ e_t\}\;}.
 $$
 A non-trivial decomposition $\mathbb{B} = \mathbb{B}_1\oplus\mathbb{B}_2$ by central projections does not exist, and every non-zero element generates the whole algebra as a two-sided ideal,
 $$
@@ -168,7 +168,7 @@ $$
 $$
 so
 $$
-\tilde U\,\mathbb{M}_\pm\,\tilde U^{*} \subseteq \mathbb{M}_\pm .
+\boxed{\;\tilde U\,\mathbb{M}_\pm\,\tilde U^{*} \subseteq \mathbb{M}_\pm\;}.
 $$
 The Lorentz transformations on four-vectors, the unitary evolution of states, and the reversible operations of the quantum formalism are all congruences of this type, and none of them moves an element from one sector to the other. This is the precise sense in which the grading is a symmetry of the *operations* of the theory.
 
@@ -180,7 +180,7 @@ so a material element carries an informational element to a material one. The tw
 
 **The non-trivial central charge.** The centre contains one element of each sector, $e_t$ and $ie_t$. The imaginary scalar $ie_t$ is central and lies in $\mathbb{M}_-$; it is the algebra's continuous superselection-type charge. As an operator on the module it is the scalar $i$ on every irreducible representation — in the matrix model it is $iI_2$ — so it acts trivially on every ray. Its expectation is the same in every state, and the one-parameter group it generates is the unobservable global phase. The sector-carrying central charge is thus a charge whose eigenvalue is the same everywhere: the strictest possible superselection charge, in the sense that it provides no label at all, and simultaneously the only non-trivial central charge the algebra has.
 
-**The scalar regime as the algebraic model.** The degenerate case of the eigenvalue decomposition is the scalar regime, $\vec Q=0$: the element is central, its minimal polynomial is linear, the spectrum has one value, and the decomposition has one term. That is the algebraic model of a superselection charge in its strictest form. The charge commutes with every operation, so it distinguishes nothing and produces no interference term, because there is no second eigenvalue for a relative phase to sit between. The two sectors remain the eigenspaces of $\flat$, but a central element cannot separate them, and the relative phase it would label is unobservable. The non-scalar element with distinct eigenvalues is the other case: it has two eigenvalues and a two-term decomposition, and the relative phase is a physical observable exactly when the element is non-central. The spectral classification is that of *Eigenvalue Decomposition of a Biquaternion*.
+**The scalar regime as the algebraic model.** The degenerate case of the eigenvalue decomposition is the scalar regime, $\vec Q=0$: the element is central, its minimal polynomial is linear, the spectrum has one value, and the decomposition has one term. That is the algebraic model of a superselection charge in its strictest form. The charge commutes with every operation, so it distinguishes nothing and produces no interference term, because there is no second eigenvalue for a relative phase to sit between. The two sectors remain the eigenspaces of $\flat$, but a central element cannot separate them, and the relative phase it would label is unobservable. The non-scalar element with distinct eigenvalues is the other case: it has two eigenvalues and a two-term decomposition, and the relative phase is a physical observable exactly when the element is non-central. The spectral classification is that of *Eigenbasis of a Biquaternion*.
 
 ## The Unobservable Relative Phase
 
@@ -205,7 +205,7 @@ $$
 $$
 and the two terms have definite reality types. Because $\tilde{Ϛ}$ and $\tilde{Q}_+$ are Hermitian, $\tilde{Ϛ}\tilde{Q}_+$ has a real scalar part, so $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_+^{*})\in\mathbb{R}$. Because $\tilde{Ϛ}$ is Hermitian and $\tilde{Q}_-$ is anti-Hermitian, $\tilde{Ϛ}\tilde{Q}_-$ is anti-Hermitian, so its scalar part is purely imaginary and $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_-^{*})\in i\mathbb{R}$. The observable real part of the pairing therefore involves the informational component alone:
 $$
-\mathrm{Re}\,\mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\mathrm{Re}_{\mathbb{B}}\,\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_+\bigr).
+\boxed{\;\mathrm{Re}\,\mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\mathrm{Re}_{\mathbb{B}}\,\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_+\bigr)\;}.
 $$
 The material component contributes only to the imaginary part, which no Hermitian observable reads out. The material component is invisible to every expectation value, exactly as a superselection charge is invisible to every observable that commutes with it. This is a statement about the pairing and not about the physical importance of the material sector: the material sector enters the theory through invariants — the interval $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the four-velocity norm, the mass shell — and not through expectation values.
 
@@ -230,9 +230,9 @@ with $\mathbb{M}_+^{0}$ Hermitian (traceless) and $\mathbb{M}_-^{0}$ anti-Hermit
 
 **The brackets.** With $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu\in\{1,2,3\}$ and $\mu\neq\nu$, the commutators close on the two summands as
 $$
-[\mathbb{M}_-^{0}, \mathbb{M}_-^{0}]\subseteq\mathbb{M}_-^{0}, \qquad
+\boxed{\;[\mathbb{M}_-^{0}, \mathbb{M}_-^{0}]\subseteq\mathbb{M}_-^{0}, \qquad
 [\mathbb{M}_-^{0}, \mathbb{M}_+^{0}]\subseteq\mathbb{M}_+^{0}, \qquad
-[\mathbb{M}_+^{0}, \mathbb{M}_+^{0}]\subseteq\mathbb{M}_-^{0}.
+[\mathbb{M}_+^{0}, \mathbb{M}_+^{0}]\subseteq\mathbb{M}_-^{0}\;}.
 $$
 Explicitly, the rotation generators and the boost generators satisfy
 $$

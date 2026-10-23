@@ -95,7 +95,7 @@ $$
 This is the commutator formula of the parent article, and its content here is the important part: **the scalar part of the commutator of two Hermitian biquaternions vanishes identically**,
 
 $$
-\mathrm{Sc}\,[\tilde H_1,\tilde H_2]=0 .
+\boxed{\;\mathrm{Sc}\,[\tilde H_1,\tilde H_2]=0\;}.
 $$
 
 The commutator of two observables is a real pure quaternion; it lies in the real vector part $\mathbb{H}_\mathbb{B}\cap\mathbb{M}_-=\mathrm{span}(\vec e_x,\vec e_y,\vec e_z)$, the space-like part of the material sector. It never reaches the scalar direction $ie_t$ of $\mathbb{M}_-$.
@@ -103,7 +103,7 @@ The commutator of two observables is a real pure quaternion; it lies in the real
 The canonical relation requires precisely that direction:
 
 $$
-[\tilde H_1,\tilde H_2]=i\hbar\,e_t,\qquad \mathrm{Sc}(i\hbar e_t)=i\hbar\neq0 .
+\boxed{\;[\tilde H_1,\tilde H_2]=i\hbar\,e_t,\qquad \mathrm{Sc}(i\hbar e_t)=i\hbar\neq0\;}.
 $$
 
 The two sides lie in complementary summands of $\mathbb{M}_-=\mathrm{span}(ie_t)\oplus\mathrm{span}(\vec e_x,\vec e_y,\vec e_z)$: the right side is purely scalar, the left side purely vector. The relation can hold only if $\hbar=0$. There is no Heisenberg pair in $\mathbb{M}_+$.
@@ -131,7 +131,7 @@ These are the ladder operators and the lower-state idempotent of the parent arti
 The truncation is not faithful to the oscillator, and the failures are diagnostic. The commutator is
 
 $$
-[\vec\Upsilon_x,\vec\Upsilon_y]=\sigma_3=i\vec e_z\neq e_t,
+\boxed{\;[\vec\Upsilon_x,\vec\Upsilon_y]=\sigma_3=i\vec e_z\neq e_t\;},
 $$
 
 so the canonical relation fails by the boundary terms of the truncation. The number operator is an idempotent, not an operator with an integer spectrum. And the squeeze generator,

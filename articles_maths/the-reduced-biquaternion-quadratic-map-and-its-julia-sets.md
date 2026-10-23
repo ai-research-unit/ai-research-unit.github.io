@@ -18,14 +18,14 @@ and the dynamics of the reduced biquaternion quadratic map is therefore the dyna
 
 The article owns the map, the unique reading of the square, the family, the filled Julia set and the Julia set with their product description, the equivariance under the involutions, the critical set and the central parameter. The algebra and the idempotents are *Reduced Biquaternion Space*; the zero divisors that form the critical set are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the topological norm that measures the escape is *Topology and Metric for Each of the Operations*; the idempotent decomposition and its consequences for the dynamics are *The Idempotent Decomposition and the Split Fractal*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the iterated function systems are *The Reduced Biquaternion Iterated Function Systems*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*. The companion is *The Biquaternion Quadratic Map and Its Julia Sets*, where the non-commutativity makes the square ambiguous and the fractal is not a product.
 
-**Conventions.** The topological norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$, the Euclidean norm of the four-space; the algebraic norm is $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$, an element of the algebra; a set is **bounded** when it is bounded in that norm. The complex quadratic map of a parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$.
-
 ## The Square and Its Unique Reading
 
 **Proposition (the square is coordinatewise).** For $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ the square is
 
 $$
-\breve Q^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-,
+\boxed{\;
+\breve Q^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-
+\;},
 $$
 
 and the reading is unique: the algebra being commutative, there is only one product of $\breve Q$ with itself, and the left, the right, the plain and the tessarine-sign products all give the same square.
@@ -35,7 +35,9 @@ and the reading is unique: the algebra being commutative, there is only one prod
 **Corollary (the derivative and the critical set).** The derivative of the square is the multiplication by $2\breve Q$, an operator that is singular exactly when $\breve Q$ is a zero divisor; the derivative vanishes identically only at $\breve Q=0$. Hence the critical set of the map in the sense of the points where the derivative is not invertible is the zero-divisor cone
 
 $$
-\mathscr{Z}=\{Q_{+}=0\}\cup\{Q_{-}=0\},
+\boxed{\;
+\mathscr{Z}=\{Q_{+}=0\}\cup\{Q_{-}=0\}
+\;},
 $$
 
 and the unique classical critical point is the origin.
@@ -69,9 +71,11 @@ and the **Julia set** $\mathcal{J}_{C}$ is its boundary.
 **Theorem (the product description).** With $C=c_{1}\Pi_++c_{2}\Pi_-$,
 
 $$
+\boxed{\;
 \mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}},\qquad
 \mathcal{J}_{C}=\partial\bigl(K_{c_{1}}\times K_{c_{2}}\bigr)
-=\bigl(J_{c_{1}}\times K_{c_{2}}\bigr)\cup\bigl(K_{c_{1}}\times J_{c_{2}}\bigr),
+=\bigl(J_{c_{1}}\times K_{c_{2}}\bigr)\cup\bigl(K_{c_{1}}\times J_{c_{2}}\bigr)
+\;},
 $$
 
 the product of the two complex filled Julia sets being read in the idempotent coordinates.

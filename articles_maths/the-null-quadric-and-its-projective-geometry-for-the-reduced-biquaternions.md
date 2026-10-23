@@ -20,8 +20,6 @@ The single most important fact is that the reduced algebra is the direct sum $\m
 
 The article owns the four null sets, the degenerate quadric of the reduced norm with its two components, the smooth quadric of $\langle\cdot\rangle_{*}$ with its two rulings, the Segre identification with $\mathbb{P}^{1}_{\mathbb{R}}\times\mathbb{P}^{1}_{\mathbb{R}}$, the polarity that the forms induce, and the automorphism group of the smooth quadric. The forms and their Gram matrices are *The Four Products, Their Forms and Their Algebraic Norms*; the idempotent coordinates and the two ideals are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the zero divisors whose set is the null cone of $\langle\cdot\rangle_{\mathrm{ts}}$ are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the metric reading of the forms on the space is *Topology and Metric for Each of the Operations*; the real subspaces that the null set meets are *Introduction to the Remarkable Subspaces*. The smooth null quadric of the biquaternion algebra, in complex projective three-space, is *The Null Quadric and Its Projective Geometry*.
 
-**Conventions.** The algebra is read as the real four-dimensional space with coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ where $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the real projective space of its lines is $\mathbb{P}^{3}_{\mathbb{R}}$. The complex reading, with the algebra as a complex 2-dimensional space on the basis $1,j$, has projective space $\mathbb{P}^{1}_{\mathbb{C}}$. The two readings are different and are kept apart throughout.
-
 ## The Four Null Sets
 
 **Proposition (the sign of the forms).** On the real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ the four norms are
@@ -41,7 +39,9 @@ Hence $\langle\cdot,\cdot\rangle_{*}$ is a real quadratic form of signature $(2,
 **Proposition (the null sets).** The zero sets of the four norms are
 
 $$
-\{N=0\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}, \qquad \{B=0\}=\{Q_{\blacktriangle}=iQ_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-iQ_{\blacktriangledown}\},
+\boxed{\;
+\{N=0\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}, \qquad \{B=0\}=\{Q_{\blacktriangle}=iQ_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-iQ_{\blacktriangledown}\}
+\;},
 $$
 
 $$
@@ -53,7 +53,9 @@ $$
 **Corollary (the two lines of the reduced norm).** Each of $\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}$ and $\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}$ is a complex line through the origin of $\mathbb{C}^{2}$, hence a real two-plane in $\mathbb{B}_{\mathrm{r}}$, hence a projective line in $\mathbb{P}^{3}_{\mathbb{R}}$; the two lines meet only at the origin of $\mathbb{B}_{\mathrm{r}}$, so they are skew in $\mathbb{P}^{3}_{\mathbb{R}}$. They are the two minimal ideals
 
 $$
-\mathbb{C}\Pi_+=\{Q_{-}=0\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}, \qquad \mathbb{C}\Pi_-=\{Q_{+}=0\}=\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\},
+\boxed{\;
+\mathbb{C}\Pi_+=\{Q_{-}=0\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}, \qquad \mathbb{C}\Pi_-=\{Q_{+}=0\}=\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}
+\;},
 $$
 
 the two summands of the direct product, and the null cone of the reduced norm is their union.
@@ -79,7 +81,9 @@ the two summands of the direct product, and the null cone of the reduced norm is
 **Theorem (the two rulings).** The quadric $\{H=0\}$ is doubly ruled. Its two families of lines are the projectivisations of the two families of totally isotropic two-planes
 
 $$
-\mathcal{F}_{1}(\phi)=\{(Q_{\blacktriangle},Q_{\blacktriangledown}):Q_{\blacktriangledown}=e^{i\phi}Q_{\blacktriangle}\}, \qquad \mathcal{F}_{2}(\phi)=\{(Q_{\blacktriangle},Q_{\blacktriangledown}):Q_{\blacktriangledown}=e^{i\phi}\bar Q_{\blacktriangle}\}, \qquad \phi\in\mathbb{R}/2\pi\mathbb{Z},
+\boxed{\;
+\mathcal{F}_{1}(\phi)=\{(Q_{\blacktriangle},Q_{\blacktriangledown}):Q_{\blacktriangledown}=e^{i\phi}Q_{\blacktriangle}\}, \qquad \mathcal{F}_{2}(\phi)=\{(Q_{\blacktriangle},Q_{\blacktriangledown}):Q_{\blacktriangledown}=e^{i\phi}\bar Q_{\blacktriangle}\}, \qquad \phi\in\mathbb{R}/2\pi\mathbb{Z}
+\;},
 $$
 
 and every point of the quadric lies on exactly one member of each family. Each family is parametrised by a circle, hence by a projective line, and the quadric is isomorphic to $\mathbb{P}^{1}_{\mathbb{R}}\times\mathbb{P}^{1}_{\mathbb{R}}$ through the Segre map that sends a pair of parameters to the intersection point of the two lines.

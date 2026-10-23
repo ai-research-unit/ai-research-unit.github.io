@@ -16,8 +16,6 @@ the two-factor form of the polar word. The pairing stops at the zero-divisor con
 
 **What this article is not.** It is not the four-factor word. The scale, the phase, the boost and the rotor are not defined on the cone, and the generalized factors are not a regrouping of factors that do not exist. It is not a new decomposition off the cone: there it coincides with the Cartan pairing. It is not the operator polar decomposition of [The Polar Decomposition of an Operator of the Form](the-polar-decomposition-of-an-operator-of-the-form.html), which is a statement about a Tomita operator on a completion. It is the matrix polar decomposition read in the algebra, with the two projection conditions that make the singular case canonical.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, central $i$ with $i^{2}=-1$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients. The conjugations are $\tilde Q^{\natural}=Q_te_t-\vec Q$, $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$ and $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, the Hermitian norm is $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$, and the cone is $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$. The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, the conjugate transpose written ${}^{\dagger}$ in the matrix section; the range $\operatorname{ran}\tilde Q$, the kernel $\ker\tilde Q$ and the orthogonal projection $P_L$ are those of $\mathsf M_2(\tilde Q)$. The symbols $\Rho$, $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ and the four-factor word are those of *Modulus–Unit Polar Decomposition of Biquaternions*. No physical claim is made; the physical reading is confined to §*Physical Interpretation*.
-
 ## The Results Used
 
 | result | established in | used here for |
@@ -39,13 +37,13 @@ The article proves no new matrix theorem. It states the left form of the matrix 
 For a matrix $A\in M_2(\mathbb{C})$, write $A^{\dagger}$ for the conjugate transpose. The **right polar decomposition** is $A=V\lvert A\rvert$ with $\lvert A\rvert=\sqrt{A^{\dagger}A}$ positive semidefinite and $V$ a partial isometry whose kernel is $\ker A$. It is unique. The **left form**, which is the order of the corpus, is the adjoint statement:
 
 $$
-A=\lvert A^{\dagger}\rvert\,U,\qquad \lvert A^{\dagger}\rvert=\sqrt{AA^{\dagger}},\qquad U=\lvert A^{\dagger}\rvert^{+}A,
+\boxed{\; A=\lvert A^{\dagger}\rvert\,U,\qquad \lvert A^{\dagger}\rvert=\sqrt{AA^{\dagger}},\qquad U=\lvert A^{\dagger}\rvert^{+}A \;},
 $$
 
 with ${}^{+}$ the Moore–Penrose inverse. The matrix $U$ is the adjoint of the right factor of $A^{\dagger}$, hence a partial isometry, and its projections are the two projections of $A$:
 
 $$
-U^{\dagger}U=P_{\operatorname{ran}A^{\dagger}},\qquad UU^{\dagger}=P_{\operatorname{ran}A}.
+\boxed{\; U^{\dagger}U=P_{\operatorname{ran}A^{\dagger}},\qquad UU^{\dagger}=P_{\operatorname{ran}A} \;}.
 $$
 
 The condition is stated on the two projections, not on the kernel alone. The kernel condition $\ker U=\ker A$ fixes the initial projection; the range condition $\operatorname{ran}U=\operatorname{ran}A$ fixes the final one. Both are needed for uniqueness, as the examples at the end of this section show.
@@ -135,7 +133,7 @@ The table is the whole content of the next two sections. The first row is the Ca
 An element is non-invertible exactly when $\langle\tilde Q\rangle_{\natural}=0$, because the quaternionic norm is the determinant of the $2\times2$ image. A nonzero element of the cone therefore has rank one: its matrix has one non-zero singular value and one zero singular value. Write $\sigma=\sigma_1>0$. The singular value form gives
 
 $$
-\tilde Q=\sigma\,\tilde U,\qquad \tilde H=\sigma\,\tilde U\tilde U^{*},\qquad \tilde U=\frac{\tilde Q}{\sigma},
+\boxed{\; \tilde Q=\sigma\,\tilde U,\qquad \tilde H=\sigma\,\tilde U\tilde U^{*},\qquad \tilde U=\frac{\tilde Q}{\sigma} \;},
 $$
 
 with $\sigma^{2}=2\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert_{\mathrm F}^{2}$. The element is a positive scalar times a partial isometry, and the positive factor is the scalar times the final projection of that partial isometry. The two equations are the rank-one reading of $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ and $\tilde U=\tilde H^{+}\tilde Q$.

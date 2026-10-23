@@ -27,7 +27,10 @@ The form is positive definite on the whole algebra, so **every restriction is po
 
 ## The Definite Character and the Maximal Definite Subspaces
 
-The form is positive definite on the algebra, of signature $(8,0)$, so the algebra itself is a maximal positive definite subspace, of real dimension $8$, and every subspace of the remarkable subspaces is positive definite, hence a positive definite subspace of dimension its real dimension. The six dimensions are $2$, $6$, $4$, $4$, $4$ and $4$.
+The form is positive definite on the algebra, of signature $(8,0)$, so the algebra itself is a maximal positive definite subspace, of real dimension $8$, and every subspace of the remarkable subspaces is positive definite, hence a positive definite subspace of dimension its real dimension. The six dimensions are
+$$
+\boxed{\; 2,\ 6,\ 4,\ 4,\ 4,\ 4 \;}.
+$$
 
 **Proposition (the maximal definite dimensions).** The maximal dimension of a positive definite subspace of the algebra is $8$, attained by the algebra; among the remarkable subspaces the positive definite dimensions are $2$ on the centre, $6$ on the vector subspace and $4$ on each of the four-dimensional subspaces.
 

@@ -11,8 +11,6 @@ $$
 
 the fibre form being the one for which the Clifford coeffients are skew. This is the manifold form of the abstract statement $L_u^*=-L_u$ for the left multiplication by a vector, and it is the reason the Cauchy–Riemann operator $D=c\circ\nabla^{\mathcal{S}}$ is formally self-adjoint and the Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ has the adjoint $c^*=-\sum_i\theta^i\otimes(e_i\cdot)$ with $cc^*=n\operatorname{id}$. The article collects the pointwise adjoint, the adjoint of the contraction, and the consequences for the first-order operators of the category.
 
-**The boundaries.** The Clifford multiplication and its kernel and image are *The Clifford Multiplication Operator*; the contraction and the projector $\pi$ are *The Twistor Operator*; the Cauchy–Riemann operator, its self-adjointness and the Lichnerowicz formula are *The Spinor Operator*; the adjoint of the spin connection and the connection Laplacian are *The Codifferential on a Spinor Bundle*; the abstract one-sided adjoint is *The Adjoint of the Left Multiplication on a Clifford Algebra* and *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*. The body is a Riemannian spin manifold $(M,g)$ with $c(v)^2=-g(v,v)\operatorname{id}$, $c(v)^*=-c(v)$, and the fibre form $h$.
-
 ## The Pointwise Adjoint
 
 **Theorem.** For the fibre form $h$ and the metric $g$, the Clifford multiplication by a tangent vector is skew-adjoint,

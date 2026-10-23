@@ -39,17 +39,11 @@ There is a finite criterion hiding in the same place, and it must not be confuse
 
 In the framework the obstruction is immediate and is worth stating in its own notation, because it is the technical content behind the word *independent*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$, $i^2=-1$. The Hermitian and anti-Hermitian subspaces are
-$$
-\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad \mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
-$$
-so that $\mathbb{M}_+$ is the set of Hermitian elements, $\mathbb{M}_-$ the set of anti-Hermitian ones, and $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$.
-
 **Theorem.** There are no $\tilde H_1,\tilde H_2\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde H_1,\tilde H_2]=\lambda\,i\,e_t$.
 
 **Proof.** Write $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$ with $h_{1t},h_{2t}\in\mathbb{R}$ and $\vec h_1,\vec h_2\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde H_1\tilde H_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$; the cross terms contribute the symmetric $\vec h_1\cdot\vec h_2$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde H_1$ and $\tilde H_2$ exchanged gives the identical scalar part, so
 $$
-\mathrm{Sc}\bigl([\tilde H_1,\tilde H_2]\bigr)=0 .
+\boxed{\;\mathrm{Sc}\bigl([\tilde H_1,\tilde H_2]\bigr)=0\;}.
 $$
 The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
 
@@ -111,7 +105,7 @@ A finite carrier does carry a commutation relation with a phase in place of the 
 
 **The pair.** On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=\exp(2\pi i/N)$ and let $Z|k\rangle_{*}=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
 $$
-XZ=\omega\,ZX,\qquad [X,Z]=(\omega-1)\,ZX .
+\boxed{\;XZ=\omega\,ZX,\qquad [X,Z]=(\omega-1)\,ZX\;}.
 $$
 The commutator is an **operator**, not a scalar: this is the Weyl (clock-and-shift) pair, and it is the finite model of the canonical relation in which the scalar $i\hbar$ is replaced by the root-of-unity phase $\omega-1$. At $N=2$ it sits inside the framework: with $\mathsf{M}_2(i\vec e_z)=\sigma_3$ and $\mathsf{M}_2(i\vec e_x)=\sigma_1$ one has $XZ=-ZX$ and $[X,Z]=-2\,\vec e_y$, an element of the vector part with no scalar part.
 

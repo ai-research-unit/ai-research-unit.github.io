@@ -16,10 +16,6 @@ The invertibility is where the article records an **absence**. The plain product
 
 **The results.** The plain product carries one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$, $\mathbb{D}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ in the basis $1,j$. It is **multiplicative**, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring. It is **not a real norm**: its value is not real in general, it defines no order and no modulus, and its vanishing set is the single point $\{0\}$. It does **not** decide invertibility: $\langle Q\rangle\neq0$ does not force $Q$ to be a unit, the witness being the zero divisor $1+j$. Each section below states its result first and then proves it.
 
-**Boundaries.** The other algebraic norm is $\langle\cdot\rangle_{*}=Q\bar Q$, a real form of signature $(1,1)$, and its theory, with the criterion of invertibility and the group of units, is *Norm and Invertibility in the General Split-Complex Algebra*. The two forms and the two algebraic norms, their Gram matrices and their realified signatures, are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*; the product and its element theory are *Split-Complex Algebra*; the zero divisors are *Zero Divisors of the Split-Complex Algebra*; and the definitions of the unit, the inverse and the group of units are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, read on this two-dimensional member of the family.
-
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)=\mathbb{R}[j]$ with basis $1,j$, $j^{2}=+1$. A general element is $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$ real, the conjugate is $\bar Q=q-jq'$, and the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, with idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ and $Q_{\pm}=q\pm q'$. Throughout this article the product is the general plain bilinear product, written by juxtaposition, $Q_2Q_1$.
-
 ## The Algebraic Norm of the Plain Product
 
 **The general plain bilinear product carries exactly one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$; it is $\mathbb{D}$-valued and anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$, and its vanishing set is the origin.**
@@ -41,7 +37,7 @@ $$
 the general plain bilinear form of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*. The form is symmetric, because the algebra is commutative. In coordinates,
 
 $$
-\langle Q\rangle=(q+jq')^{2}=q^{2}+q'^{2}+2qq'j,
+\boxed{\;\langle Q\rangle=(q+jq')^{2}=q^{2}+q'^{2}+2qq'j\;},
 $$
 
 so the algebraic norm takes its value in the whole algebra $\mathbb{D}$ and not in the base field.
@@ -71,7 +67,7 @@ and it is $\mathbb{D}$-valued and symmetric.
 **Theorem.** The algebraic norm of the plain product is multiplicative:
 
 $$
-\langle QB\rangle=\langle Q\rangle\langle B\rangle,\qquad Q,B\in\mathbb{D}.
+\boxed{\;\langle QB\rangle=\langle Q\rangle\langle B\rangle,\qquad Q,B\in\mathbb{D}\;}.
 $$
 
 **Proof.** By associativity and commutativity of the ring,
@@ -105,7 +101,7 @@ The real part $B_{0}$ is the **Euclidean quadratic form** of the plane, positive
 **Proposition.** The algebraic norm vanishes only at the origin:
 
 $$
-Q^{2}=0\iff Q=0.
+\boxed{\;Q^{2}=0\iff Q=0\;}.
 $$
 
 **Proof.** $Q^{2}=0$ gives $q^{2}+q'^{2}=0$ and $2qq'=0$. The first equation forces $q=q'=0$ over $\mathbb{R}$, since both squares are non-negative and their sum is zero.

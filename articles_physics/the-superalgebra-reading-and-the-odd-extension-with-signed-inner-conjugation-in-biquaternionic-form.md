@@ -11,7 +11,7 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, which is t
 **Definition.** A **$\mathbb{Z}/2$-graded algebra** is an algebra $A=A^0\oplus A^1$ with $A^iA^j\subseteq A^{i+j}$, written $\lvert a\rvert\in\{0,1\}$ for the parity of a homogeneous element. On it the **graded commutator** is
 
 $$
-[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}\,ba .
+\boxed{\;[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}\,ba\;}.
 $$
 
 For two even elements it is the ordinary commutator; for one even and one odd element it is also the ordinary commutator; for two odd elements it is the **anticommutator** $\{a,b\}=ab+ba$. The single formula carries the whole fermionic sign convention: "bosons commute, fermions anticommute, and a boson and a fermion commute" is the parity of the exponent $(-1)^{\lvert a\rvert\lvert b\rvert}$ read three times.
@@ -19,9 +19,9 @@ For two even elements it is the ordinary commutator; for one even and one odd el
 **Proposition (the super-Jacobi identity).** On a graded algebra the graded commutator satisfies
 
 $$
-(-1)^{\lvert a\rvert\lvert c\rvert}[a,[b,c]_{\mathrm{gr}}]_{\mathrm{gr}}
+\boxed{\;(-1)^{\lvert a\rvert\lvert c\rvert}[a,[b,c]_{\mathrm{gr}}]_{\mathrm{gr}}
 +(-1)^{\lvert b\rvert\lvert a\rvert}[b,[c,a]_{\mathrm{gr}}]_{\mathrm{gr}}
-+(-1)^{\lvert c\rvert\lvert b\rvert}[c,[a,b]_{\mathrm{gr}}]_{\mathrm{gr}}=0 ,
++(-1)^{\lvert c\rvert\lvert b\rvert}[c,[a,b]_{\mathrm{gr}}]_{\mathrm{gr}}=0\;}
 $$
 
 the **graded Jacobi identity**, which is the ordinary Jacobi identity when all three elements are even and the identity of the anticommutator for three odd elements.
@@ -51,9 +51,9 @@ The algebra is graded as a vector space by the Clifford grade, $\mathbb{B}=\math
 **Proposition.** On $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathrm{Cl}^1$ the graded commutator satisfies
 
 $$
-[\mathbb{B},\mathbb{B}]_{\mathrm{gr}}\subseteq\mathbb{B},\qquad
+\boxed{\;[\mathbb{B},\mathbb{B}]_{\mathrm{gr}}\subseteq\mathbb{B},\qquad
 [\mathbb{B},\mathrm{Cl}^1]_{\mathrm{gr}}\subseteq\mathrm{Cl}^1,\qquad
-\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B},
+\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B}\;}
 $$
 
 so the ambient algebra is a Lie superalgebra whose even part is $\mathbb{B}$ and whose odd part is a left and right module over it.

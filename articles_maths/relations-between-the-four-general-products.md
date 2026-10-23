@@ -50,9 +50,11 @@ $$
 the vector part being read as an element where it multiplies. Adding and subtracting,
 
 $$
+\boxed{\;
 \tilde Q_1\tilde Q_2+\tilde Q_1^{\natural}\tilde Q_2=2Q_{1,0}\tilde Q_2 , \qquad
-\tilde Q_1\tilde Q_2-\tilde Q_1^{\natural}\tilde Q_2=2\,\vec Q_1\tilde Q_2 .
-$$
+\tilde Q_1\tilde Q_2-\tilde Q_1^{\natural}\tilde Q_2=2\,\vec Q_1\tilde Q_2
+\;}
+$$.
 
 The same separation applied to the two sesquilinear products gives
 
@@ -76,11 +78,13 @@ which holds in particular for every central $\tilde Q_1$, the vector part being 
 Conjugating a product conjugates the factors and reverses their order, by the two anti-automorphism rules $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ and $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$. Applied to the four general products,
 
 $$
+\boxed{\;
 (\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural} , \qquad
 (\tilde Q_1\tilde Q_2^{*})^{\natural}=\bar{\tilde Q}_2\tilde Q_1^{\natural} , \qquad
 (\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1 , \qquad
-(\tilde Q_1^{\natural}\tilde Q_2^{*})^{\natural}=\bar{\tilde Q}_2\tilde Q_1 ,
-$$
+(\tilde Q_1^{\natural}\tilde Q_2^{*})^{\natural}=\bar{\tilde Q}_2\tilde Q_1
+\;}
+$$,
 
 $$
 (\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*} , \qquad
@@ -126,8 +130,10 @@ The sums separate the scalar parts of the two factors, the differences the vecto
 Three identities move a scalar part from one writing to another. The natural sign may be carried from one factor to the other,
 
 $$
-\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural}) ,
-$$
+\boxed{\;
+\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})
+\;}
+$$,
 
 and the same holds with the star, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)$, while the scalar part is unchanged when both factors are conjugated by the natural sign,
 

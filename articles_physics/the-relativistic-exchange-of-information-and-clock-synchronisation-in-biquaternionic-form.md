@@ -18,8 +18,6 @@ The article develops the following.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_t+\vec a$ of imaginary scalar part and real vector part. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{R} = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the $ict'$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
-
 ## Signals as Null Displacements
 
 ### The Null Condition Between Two Events
@@ -34,9 +32,9 @@ $$
 with biquaternion norm $\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2(\Delta t')^2 + |\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
 
 $$
-|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t',
+\boxed{\;|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t',
 \qquad
-\langle\tilde{Q}_{BA}\rangle_{\natural} = 0 :
+\langle\tilde{Q}_{BA}\rangle_{\natural} = 0\;}
 $$
 
 **an exchange of information between two events along a light signal is possible exactly when their displacement is null.** Because a null displacement is a zero divisor of $\mathbb{B}$ (companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*), the channel through which signals pass is the algebra's degenerate locus. The barrier of the companion article and the channel of this one are the same set; the cone forbids the spacelike separations and carries the null ones.
@@ -100,11 +98,11 @@ $$
 the positive root being taken because $d\tilde{R}$ is timelike along a physical worldline, so that $\langle d\tilde{R}\rangle_{\natural} < 0$ and $-\langle d\tilde{R}\rangle_{\natural} > 0$. Factoring the coordinate time,
 
 $$
-d\tau = \sqrt{1 - \frac{\vec v^2}{c^2}}\;dt' = \frac{dt'}{\gamma},
+\boxed{\;d\tau = \sqrt{1 - \frac{\vec v^2}{c^2}}\;dt' = \frac{dt'}{\gamma},
 \qquad
 \vec v = \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt'},
 \qquad
-\gamma = \left(1-\frac{\vec v^2}{c^2}\right)^{-1/2},
+\gamma = \left(1-\frac{\vec v^2}{c^2}\right)^{-1/2}\;}
 $$
 
 which is the standard time-dilation relation. The interpretation of the clock between two events on the worldline is the integral
@@ -203,9 +201,9 @@ $$
 so the received interval is longer by the reciprocal factor,
 
 $$
-k = \frac{1}{\gamma(1-\beta)} = \sqrt{\frac{1+\beta}{1-\beta}},
+\boxed{\;k = \frac{1}{\gamma(1-\beta)} = \sqrt{\frac{1+\beta}{1-\beta}},
 \qquad
-\beta = \frac{v_b}{c},
+\beta = \frac{v_b}{c}\;}
 $$
 
 where the last equality uses $\gamma(1-\beta) = \sqrt{(1-\beta)/(1+\beta)}$. An approaching observer ($\theta = \pi$) receives at the reciprocal factor $k^{-1} = \sqrt{(1-\beta)/(1+\beta)}$. The two cases are the two signs of the exchange, and their product is unity, as it must be since reversing the relative velocity interchanges emission and reception.
@@ -225,7 +223,7 @@ A round trip is described by two k-factors. If $A$ emits and $B$ reflects, then 
 If a signal passes from $A$ to $B$ with factor $k_1$ and then from $B$ to $C$ with factor $k_2$, all three collinear and receding in a common sense, the total factor is the product:
 
 $$
-k_{AC} = k_{AB}\,k_{BC} = k_1k_2 .
+\boxed{\;k_{AC} = k_{AB}\,k_{BC} = k_1k_2\;}
 $$
 
 This is because each leg multiplies the interval by its own factor. The composition law for $k$ is equivalent to the velocity-addition law. Indeed, if $k_i = \sqrt{(1+\beta_i)/(1-\beta_i)}$ and $\beta = (k_1^2k_2^2-1)/(k_1^2k_2^2+1)$, a short rearrangement gives

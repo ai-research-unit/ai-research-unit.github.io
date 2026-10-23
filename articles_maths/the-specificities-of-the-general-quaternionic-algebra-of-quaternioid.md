@@ -19,7 +19,7 @@ The symmetric plain algebra is the only one of the three companion structures wi
 **Theorem.** The product is not associative, and the associator has the closed form
 
 $$
-[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3 ,
+\boxed{\;[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3\;},
 $$
 
 nonzero at $[\vec e_x,e_t,e_t] = 2\vec e_x$ and at $24$ of the $64$ basis triples. The product fails every rung of the ladder of weaker identities: it is not alternative, the left alternative law failing already at $(\tilde q_1,\tilde q_2) = (\vec e_x,\vec e_y)$ where $(\tilde q_1 \star \tilde q_1) \star \tilde q_2 = \vec e_y$ against $\tilde q_1 \star (\tilde q_1 \star \tilde q_2) = -\vec e_y$; it is not flexible, and it is not power-associative.
@@ -65,7 +65,7 @@ nonzero at $[\vec e_x,e_t,e_t] = 2\vec e_x$ and at $24$ of the $64$ basis triple
 **Theorem (what the conjugation reverses, and what it does not).** The conjugation is an anti-automorphism of the **plain** product, $(\tilde q_1\tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1^{\natural}$, and it is **not** an anti-automorphism of the quaternionic product: $(\tilde q_1 \star \tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1$ and $\tilde q_2^{\natural} \star \tilde q_1^{\natural} = \tilde q_2\tilde q_1^{\natural}$, and the two differ for a non-central factor. What holds instead is the exchange law
 
 $$
-(\tilde q_1 \star \tilde q_2)^{\natural} = \tilde q_2 \star \tilde q_1 ,
+\boxed{\;(\tilde q_1 \star \tilde q_2)^{\natural} = \tilde q_2 \star \tilde q_1\;},
 $$
 
 so the conjugation carries the product to the mirror product and back, and the two products of the block are exchanged by it.

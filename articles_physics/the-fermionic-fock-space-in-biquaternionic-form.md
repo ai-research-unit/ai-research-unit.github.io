@@ -7,9 +7,9 @@ The companion article *Fock Space and Creation/Annihilation Operators in Biquate
 The result is that the fermionic Fock space of the spin-$\tfrac12$ field is the **exterior algebra** over the one-particle spinor module,
 
 $$
-\mathcal{F}=\Lambda S=\bigoplus_{n=0}^{\dim S}\Lambda^n S,
+\boxed{\;\mathcal{F}=\Lambda S=\bigoplus_{n=0}^{\dim S}\Lambda^n S,
 \qquad
-\Lambda(V\oplus W)=\Lambda V\otimes\Lambda W ,
+\Lambda(V\oplus W)=\Lambda V\otimes\Lambda W\;},
 $$
 
 and that this is not an extra assumption but the reflection in the state space of two facts already fixed by the parents: the one-particle space is a module of complex dimension two, and the bracket is the anticommutator. The two together force the antisymmetric tensor algebra, occupation numbers $0$ and $1$, and the Lorentz decomposition $0\oplus\tfrac12\oplus 0$ over the two spin states of one momentum.
@@ -23,8 +23,6 @@ The article develops five things.
 - **The sector content.** States are $\mathbb{M}_+$ elements through their density matrices; the Born rule is the normalised Hermitian form, read through the trace; and the field's Fock space is the tensor product over modes, whose grading is the field's fermionic parity.
 
 The division between transcribed standard material and the algebra's own statements is marked throughout.
-
-**Conventions.** From the companion articles and the conventions article: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ and $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ and the trace $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$ at the Clifford level, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ at the $ict'$ level. All statements about the finite algebra are in $\mathbb{B}$; all statements about the field are on the module.
 
 ## The One-Particle Space
 
@@ -81,9 +79,9 @@ so that $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determina
 Let $S$ have dimension $2$. The fermionic Fock space is
 
 $$
-\mathcal{F}=\Lambda S=\mathbb{C}\oplus S\oplus\Lambda^2S ,
+\boxed{\;\mathcal{F}=\Lambda S=\mathbb{C}\oplus S\oplus\Lambda^2S ,
 \qquad
-\dim_\mathbb{C}\mathcal{F}=1+2+1=4 .
+\dim_\mathbb{C}\mathcal{F}=1+2+1=4\;}.
 $$
 
 Its canonical basis is the occupation-number basis
@@ -155,9 +153,9 @@ $$
 which is the decomposition
 
 $$
-\Lambda S=\mathbb{C}\;\oplus\;S\;\oplus\;\mathbb{C}
+\boxed{\;\Lambda S=\mathbb{C}\;\oplus\;S\;\oplus\;\mathbb{C}
 \qquad\text{i.e.}\qquad
-0\oplus\tfrac12\oplus 0 .
+0\oplus\tfrac12\oplus 0\;}.
 $$
 
 The eigenvalues were recomputed by building the spin operators
@@ -206,7 +204,7 @@ The exterior-power construction is a functor from the one-particle category to t
 **The parity of the negation.** The one-particle space carries the representation of the double cover; the scalar $-1$ acts on $S$ as $-\mathrm{id}$. On $\Lambda^nS$ it acts as $(-1)^n$, hence on the whole Fock space as the operator
 
 $$
-\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}(I-2N_{\mathrm{mode}})=\prod_{\text{modes}}i \vec e_z^{(\text{mode})} ,
+\boxed{\;\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}(I-2N_{\mathrm{mode}})=\prod_{\text{modes}}i \vec e_z^{(\text{mode})}\;},
 $$
 
 where the last equality uses the one-mode identity $(-1)^F=i\vec e_z$ of the parents. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.

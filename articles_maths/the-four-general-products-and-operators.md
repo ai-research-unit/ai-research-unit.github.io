@@ -11,8 +11,6 @@ The answer to the question of the title is therefore a negative one, and it agre
 
 The four general products, their relations and their comparison are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*; the four pairings and their Gram matrices are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; $i$ is the central scalar imaginary; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The three conjugations used are the natural conjugation $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficient conjugation $\bar{\tilde Q}=\overline{Q_t}e_t+\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y+\overline{Q_z}\vec e_z$, and the Hermitian conjugation $\tilde Q^{*}=\tilde Q^{\natural\bar{\bar{\cdot}}}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$. The vector subspace is $V=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, an element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\ne0$, and $\mathrm{Sc}$ is the scalar part.
-
 ## The Four General Products Are One Multiplication with Two Insertions
 
 ### The Four Rules
@@ -48,11 +46,13 @@ of a single rule under the insertion of a conjugation into the first slot and a 
 **Theorem (the scalar parts are the four pairings).** The scalar parts of the four general products are the four pairings of the algebra,
 
 $$
+\boxed{\;
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\quad
 \langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}),
-$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})
+\;}
+$$,
 
 with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
 
@@ -67,11 +67,13 @@ with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\math
 **Theorem (the four adjoints are decided by the four general products).** For the left multiplication $L_{\tilde Q_4}$ the adjoints of the four pairings are
 
 $$
+\boxed{\;
 (L_{\tilde Q_4})^{\approx}=R_{\tilde Q_4},\qquad
 (L_{\tilde Q_4})^{\ast}=L_{\tilde Q_4^{\ast}},\qquad
 (L_{\tilde Q_4})^{N}=L_{\tilde Q_4^{\natural}},\qquad
-(L_{\tilde Q_4})^{\natural\ast}=R_{\bar{\tilde Q_4}},
-$$
+(L_{\tilde Q_4})^{\natural\ast}=R_{\bar{\tilde Q_4}}
+\;}
+$$,
 
 and for the two-sided operator $(L_{\tilde Q_4}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_4}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\ast}=L_{\tilde Q_4^{\ast}}R_{\tilde Q_1^{\ast}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{N}=L_{\tilde Q_4^{\natural}}R_{\tilde Q_1^{\natural}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\natural\ast}=L_{\bar{\tilde Q_1}}R_{\bar{\tilde Q_4}}$.
 
@@ -134,9 +136,11 @@ $$
 Then the two insertions that read the parameter as it stands keep $V$ stable, and
 
 $$
+\boxed{\;
 L_{\tilde Q_4}R_{\tilde Q_4^{-1}}\big|_{V}=-\rho_{\tilde Q_4},\qquad
-L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}\big|_{V}=\rho_{\tilde Q_4},
-$$
+L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}\big|_{V}=\rho_{\tilde Q_4}
+\;}
+$$,
 
 with determinant of the restriction $+1$ and $-1$. The two insertions that read the right factor through ${}^{*}$ behave differently, and the proposition below says exactly how.
 

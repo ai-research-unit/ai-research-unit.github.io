@@ -8,8 +8,6 @@ This article tabulates the properties that separate the two products — bilinea
 
 The article assumes the two products and their coordinate rules from *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, the article preceding this one, and it uses the linking identities of *Relations Between the Two General Products*, the article preceding this one, for the unit and the square rows. The left and right multiplications and the associator are *The Two General Products and Operators*, below this article in this category.
 
-**Conventions.** Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $e_t=1$ is the unit of the algebra, $\vec q_1$ is the vector part of $\tilde q_1$, and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation. The two products are written $\tilde q_1\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2$.
-
 ## The Property Table
 
 | property | $\tilde q_1\tilde q_2$ | $\tilde q_1^{\natural}\tilde q_2$ |
@@ -55,7 +53,7 @@ The square of the plain product is a general quaternion and the square of the qu
 **Proposition (the two squares).** For every $\tilde q=q_te_t+\vec q$,
 
 $$
-\tilde q^2=\langle\tilde q\rangle e_t+2q_t\vec q , \qquad \tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural} e_t=|\tilde q|^2e_t ,
+\boxed{\;\tilde q^2=\langle\tilde q\rangle e_t+2q_t\vec q , \qquad \tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural} e_t=|\tilde q|^2e_t\;},
 $$
 
 with $\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2$ and $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$. The square of the plain product is scalar exactly when $\tilde q$ is real or $\tilde q$ is purely imaginary with $q_t=0$; the square of the quaternionic product is scalar for every $\tilde q$.
@@ -69,7 +67,7 @@ The two squares are the two algebraic norms of the chapter read at the two equal
 The two products take all values in $\mathbb{H}$, each being surjective: for a fixed nonzero second factor $\tilde q_2$ the rule $\tilde q_1\mapsto\tilde q_1\tilde q_2$ is a bijection of $\mathbb{H}$, the algebra being a division algebra, and the same holds for the quaternionic rule. The two differ in their **values on the units**, and the difference is a sign on every pair except those of the first row. On the basis pairs,
 
 $$
-\vec e_x \vec e_y=\vec e_z \quad\text{against}\quad \vec e_x^{\natural} \vec e_y=-\vec e_z , \qquad \vec e_x^2=-e_t \quad\text{against}\quad \vec e_x^{\natural} \vec e_x=e_t ,
+\boxed{\;\vec e_x \vec e_y=\vec e_z \quad\text{against}\quad \vec e_x^{\natural} \vec e_y=-\vec e_z , \qquad \vec e_x^2=-e_t \quad\text{against}\quad \vec e_x^{\natural} \vec e_x=e_t\;},
 $$
 
 and in general $\vec e_\mu^{\natural} e_\nu=-\vec e_\mu e_\nu$ for every pair with $\mu\neq t$, the sign being that of the reflection of the vector part of the first factor. The values on the pairs with a real first factor coincide, $e_t\tilde q=e_t^{\natural}\tilde q=\tilde q$, and the values on the pairs with a real second factor disagree unless the first factor is real as well, by the annihilation identity of *Relations Between the Two General Products*, the article preceding this one.

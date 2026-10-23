@@ -24,9 +24,7 @@ $$
 
 The second is the **reduced quadratic** in the unknown $t=q_{2t}^2$; when $\vec q_1\neq0$ the first determines $\vec q_2=\vec q_1/(2q_{2t})$ and the second becomes the quadratic
 
-$$
-t^2-q_{1t}t-\tfrac14|\vec q_1|^2=0,\qquad \Delta=q_{1t}^2+|\vec q_1|^2,
-$$
+$$ \boxed{\; t^2-q_{1t}t-\tfrac14|\vec q_1|^2=0,\qquad \Delta=q_{1t}^2+|\vec q_1|^2 \;} ,$$
 
 with discriminant $\Delta\geq0$ and $\sqrt\Delta=|\tilde q_1|$.
 
@@ -34,22 +32,18 @@ with discriminant $\Delta\geq0$ and $\sqrt\Delta=|\tilde q_1|$.
 
 **Theorem (non-scalar case).** Let $\vec q_1\neq0$. Then $\tilde q_1$ has exactly two square roots, and they are
 
-$$
-\tilde q_{2\pm}=\pm\Bigl(\sqrt{\tfrac12\bigl(q_{1t}+|\tilde q_1|\bigr)}\;e_t+\frac{\vec q_1}{2\sqrt{\tfrac12(q_{1t}+|\tilde q_1|)}}\Bigr).
-$$
+$$ \boxed{\; \tilde q_{2\pm}=\pm\Bigl(\sqrt{\tfrac12\bigl(q_{1t}+|\tilde q_1|\bigr)}\;e_t+\frac{\vec q_1}{2\sqrt{\tfrac12(q_{1t}+|\tilde q_1|)}}\Bigr) \;} .$$
 
 *Proof.* The vector equation $2q_{2t}\vec q_2=\vec q_1$ forces $q_{2t}\neq0$ and $\vec q_2=\vec q_1/(2q_{2t})$. Substituting in the reduced quadratic gives $4q_{2t}^4-4q_{1t}q_{2t}^2-|\vec q_1|^2=0$, that is $t^2-q_{1t}t-\tfrac14|\vec q_1|^2=0$ with roots $\tfrac12(q_{1t}\pm\sqrt\Delta)$. The minus root is $\tfrac12(q_{1t}-|\tilde q_1|)$, negative because $\vec q_1\neq0$ gives $|\tilde q_1|>|q_{1t}|$; it yields no real $q_{2t}$. The plus root is $\tfrac12(q_{1t}+|\tilde q_1|)>0$, and it yields the two values $q_{2t}=\pm\sqrt{\tfrac12(q_{1t}+|\tilde q_1|)}$ and the two displayed roots. Since $q_{2t}\neq0$ and $\vec q_2$ is determined by $q_{2t}$, there are no others.
 
 **Theorem (scalar case).** Let $\tilde q_1=q_{1t}e_t$, so $\vec q_1=0$. Then
 
-$$
-\tilde q_2^2=q_{1t}e_t\iff
+$$ \boxed{\; \tilde q_2^2=q_{1t}e_t\iff
 \begin{cases}
 \tilde q_2=\pm\sqrt{q_{1t}}\,e_t, & q_{1t}>0,\\
 \tilde q_2=0, & q_{1t}=0,\\
 \tilde q_2=\vec q_2\in V,\quad |\vec q_2|^2=-q_{1t}, & q_{1t}<0.
-\end{cases}
-$$
+\end{cases} \;} $$
 
 *Proof.* With $\vec q_1=0$ the vector equation reads $q_{2t}\vec q_2=0$, so $q_{2t}=0$ or $\vec q_2=0$. If $\vec q_2=0$ the scalar equation is $q_{2t}^2=q_{1t}$, solvable only for $q_{1t}\geq0$, giving $\pm\sqrt{q_{1t}}e_t$ for $q_{1t}>0$ and $0$ for $q_{1t}=0$. If $q_{2t}=0$ the scalar equation is $-|\vec q_2|^2=q_{1t}$, solvable only for $q_{1t}\leq0$, giving $|\vec q_2|^2=-q_{1t}$; for $q_{1t}=0$ this is again $\tilde q_2=0$, and for $q_{1t}<0$ it is the level set of a positive-definite quadratic form on the three-dimensional space $V$, a sphere of roots.
 

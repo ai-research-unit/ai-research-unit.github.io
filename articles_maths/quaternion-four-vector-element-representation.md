@@ -43,10 +43,8 @@ and it is the coordinate expression of the inner product of *Quaternion Norm and
 
 **Theorem.** The product of $\tilde q_2 = q_{2t}e_t+q_{2x}\vec e_x+q_{2y}\vec e_y+q_{2z}\vec e_z$ and $\tilde q_1 = q_{1t} e_t + q_{1x} \vec e_x + q_{1y} \vec e_y + q_{1z} \vec e_z$, in components, is given by the scalar and vector parts
 
-$$
-\mathrm{Sc}(\tilde q_2\tilde q_1) = q_{2t}q_{1t} - \langle\vec q_2,\vec q_1\rangle, \qquad
-\mathrm{Vect}(\tilde q_2\tilde q_1) = q_{2t}\vec q_1 + q_{1t}\vec q_2 + \vec q_2\times\vec q_1,
-$$
+$$ \boxed{\; \mathrm{Sc}(\tilde q_2\tilde q_1) = q_{2t}q_{1t} - \langle\vec q_2,\vec q_1\rangle, \qquad
+\mathrm{Vect}(\tilde q_2\tilde q_1) = q_{2t}\vec q_1 + q_{1t}\vec q_2 + \vec q_2\times\vec q_1 \;} ,$$
 
 that is, in coordinates,
 
@@ -71,11 +69,9 @@ $$
 
 **Theorem.** The three involutions act on the coordinate vector by the diagonal sign matrices
 
-$$
-\varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
+$$ \boxed{\; \varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
 \varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
-\varphi(-\tilde q) = -[\tilde q].
-$$
+\varphi(-\tilde q) = -[\tilde q] \;} .$$
 
 *Proof.* Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four.
 
@@ -104,9 +100,7 @@ is the orthogonal decomposition, in the algebra and in coordinates, into the two
 
 **Theorem.** The quaternion norm in coordinates is the sum of the four squares of the coordinates,
 
-$$
-\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2 = [\tilde q]^{T}[\tilde q],
-$$
+$$ \boxed{\; \langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2 = [\tilde q]^{T}[\tilde q] \;} ,$$
 
 and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(\tilde q_2\tilde q_1^{\natural}) = [\tilde q_2]^{T}[\tilde q_1]$.
 

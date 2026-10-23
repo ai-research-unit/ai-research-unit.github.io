@@ -8,7 +8,7 @@ This article carries out that work. The result is a two-term product formula, bi
 
 $$
 \boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\,\tilde{F}\right),\qquad
-P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).\;}
+P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right)\;}.
 $$
 
 The projection $P_{\mathbb{M}_-}$ is the anti-Hermitian part, and it lands in the material sector $\mathbb{M}_-$ automatically. Written out, the formula is
@@ -222,8 +222,7 @@ which, expanded in the four general products, is
 $$
 \boxed{\;
 \tilde{K}_{\mathrm{f}} = \frac{ϙ}{4}\!\left(\sqrt{\mu} - \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{F}\tilde{V} + \tilde{V}\tilde{F}^{*}\right)
-- \frac{ϙ}{4}\!\left(\sqrt{\mu} + \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).
-\;}
+- \frac{ϙ}{4}\!\left(\sqrt{\mu} + \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)\;}.
 $$
 
 This is the general form, valid for the symbols $c, \epsilon, \mu$ taken independently.
@@ -239,8 +238,7 @@ With this relation the coefficient of the first bracket vanishes identically, an
 $$
 \boxed{\;
 \tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)
-= -\,\frac{ϙ}{2c\sqrt{\epsilon}}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).
-\;}
+= -\,\frac{ϙ}{2c\sqrt{\epsilon}}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)\;}.
 $$
 
 The two coefficients are equal, $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$, so either may be used. Since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may also be written
@@ -594,7 +592,6 @@ The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{K}_{\mathrm{f}}
 
 **Status.** The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The coefficients were previously withheld here because the source's own expansions of the two halves did not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\vec F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\vec D_2$ where the derivation gives $-c\,\rho_H\vec D_2$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde J_{\mathrm{eg}}\circ\tilde F_2 = -\tilde J_{\mathrm{eg},2}\circ\tilde F$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the provenance.
 
-
 ## The Lamb-Vector Reading of the Force Law
 
 The force law of this article is a relativistic fact: $\vec f = ϙ(\vec E+\vec v\times\vec B)$ is what the field does to a charge, and the derivation above takes that law as given. A second interpretation of its *form* comes from fluid mechanics, and it belongs next to the first, because the corpus's magnetic-field material explains magnetism as a relativistic effect of the electric field, while the hydrodynamic correspondence offers an independent interpretation in which magnetism is vorticity.
@@ -625,7 +622,7 @@ which is the contraction $K^\mu = ϙF^{\mu\nu}v_\nu$ written in the biquaternion
 
 $$
 \boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
-= -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).\;}
+= -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)\;}.
 $$
 
 Equivalently, $\tilde{K}_{\mathrm{f}} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}\tilde{F} - \bar{\tilde F}\tilde{V})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}_{\mathrm{f}}$, while $\tilde{F}$ is reserved for the field strength.

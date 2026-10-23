@@ -38,7 +38,7 @@ $$
 Explicitly $P_L = \left(\begin{smallmatrix}I_2&0\\0&0\end{smallmatrix}\right)$ and $P_R = \left(\begin{smallmatrix}0&0\\0&I_2\end{smallmatrix}\right)$. The projector algebra is immediate:
 
 $$
-P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L + P_R = I_4,
+\boxed{\;P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L + P_R = I_4\;},
 $$
 
 and additionally $\gamma_5 = P_R - P_L$, $\operatorname{Tr}P_L = \operatorname{Tr}P_R = 2$, so each projector has rank two. All identities hold to machine accuracy (residual $<10^{-15}$).
@@ -188,12 +188,12 @@ $$
 **Invariance.** Let $g\in SL(2,\mathbb{C})$ and write $g = \left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$ with $ad-bc = 1$. Then
 
 $$
-g^{T}\epsilon\,g
+\boxed{\;g^{T}\epsilon\,g
 = \begin{pmatrix}a&c\\ b&d\end{pmatrix}
 \begin{pmatrix}0&1\\-1&0\end{pmatrix}
 \begin{pmatrix}a&b\\ c&d\end{pmatrix}
 = \begin{pmatrix}0&ad-bc\\ -(ad-bc)&0\end{pmatrix}
-= (\det g)\,\epsilon = \epsilon .
+= (\det g)\,\epsilon = \epsilon\;}.
 $$
 
 Therefore $\varepsilon(g\psi,g\phi) = \psi^{T}g^{T}\epsilon g\,\phi = \varepsilon(\psi,\phi)$: the form is invariant. The same computation applies to the right-handed action, because $\det\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \overline{\det\mathsf{M}_2(\tilde U_{\mathrm L})} = 1$ (and indeed $\tilde U_{\mathrm L}^{*}\in SL(2,\mathbb{C})$ because $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm L}\rangle_{\natural}} = 1$). So $\varepsilon$ is an invariant bilinear form on each chiral half separately.
@@ -231,7 +231,6 @@ V(w,v) = i\,H(w,v) \in \mathbb{M}_- ,
 $$
 
 where the last inclusion uses $i\mathbb{M}_+ = \mathbb{M}_-$.
-
 
 **Biquaternion norm.** Write $H = h_te_t + i\vec h$. Then $V = ih_te_t - \vec h$, and
 
@@ -297,7 +296,7 @@ $$
 while the spinor action $\psi\mapsto\tilde U_{\mathrm L}\psi$ has trivial kernel: $\mathsf{M}_2(-e_t) = -I_2\neq I_2$. Hence
 
 $$
-SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
+\boxed{\;SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}\;},
 $$
 
 and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\vec u_{\mathrm r} = \vec u_z$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde u_{\mathrm r}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.
@@ -319,10 +318,10 @@ which is exactly the rotor conjugation of the material sector. A single spinor c
 **The mixed pairing.** Finally, the pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$, with $\psi\mapsto g\psi$ and $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$, is invariant:
 
 $$
-b\left(g\psi,\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi\right)
+\boxed{\;b\left(g\psi,\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi\right)
 = \psi^{\dagger}g^{\dagger}\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi
 = \psi^{\dagger}g^{\dagger}\,(g^{\dagger})^{-1}\chi
-= \psi^{\dagger}\chi,
+= \psi^{\dagger}\chi\;},
 $$
 
 because the right-handed matrix is the inverse conjugate transpose, $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = (g^{\dagger})^{-1}$, equivalently $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \epsilon^{-1}\bar{g}\epsilon = \epsilon\bar{g}\epsilon^{-1}$, the identity established in Problem 3 for a unit-norm biquaternion. This is the Dirac scalar bilinear (numerical residual $<10^{-12}$).

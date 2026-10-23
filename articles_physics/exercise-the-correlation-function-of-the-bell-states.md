@@ -180,7 +180,6 @@ where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign 
 | $|\Phi^-\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t + \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ |
 | $|\Psi^+\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t - \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z)$ |
 
-
 *Idempotency.* The square of $\tilde\Pi_\epsilon$ is
 
 $$
@@ -270,7 +269,7 @@ $$
 So the correlation function is
 
 $$
-\boxed{\;E(\vec u_x, \vec u_y) = -\epsilon_1\,a_1 b_1 - \epsilon_2\,a_2 b_2 - \epsilon_3\,a_3 b_3.\;}
+\boxed{\;E(\vec u_x, \vec u_y) = -\epsilon_1\,a_1 b_1 - \epsilon_2\,a_2 b_2 - \epsilon_3\,a_3 b_3\;}.
 $$
 
 ### Step 4: The result

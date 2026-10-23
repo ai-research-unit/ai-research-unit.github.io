@@ -53,7 +53,7 @@ The source states that this matrix "can be used for several applications", and t
 **Proof.** The vanishing of $A(q)$ is the vanishing of the two entries $q_t + iq_1$ and $q_y + iq_3$ together with that of the diagonal entry $q_t + iq_1^*$. The first two give $q_t = -iq_1$ and $q_y = -iq_3$; the third then reads $i(q_x^* - q_x) = 0$, that is, $q_x$ real. The solutions are $q_x = x$ real, $q_t = -ix$, and $q_z$ an arbitrary complex number with $q_y = -iq_3$, which is a real three-dimensional space,
 
 $$
-\ker A = \mathrm{span}_\mathbb{R}\left\{-ie_t + \vec e_x,\ -i\vec e_y + \vec e_z,\ \vec e_y + i\vec e_z\right\}.
+\boxed{\;\ker A = \mathrm{span}_\mathbb{R}\left\{-ie_t + \vec e_x,\ -i\vec e_y + \vec e_z,\ \vec e_y + i\vec e_z\right\}\;}.
 $$
 
 The last generator spans, over $\mathbb{C}$, the whole complex line through $-\vec e_y - i\vec e_z$, and this is not an accidental coincidence: **the source's own spin-down state lies in that line**. Its state $q_- = (-\vec e_y - i\vec e_z)/\sqrt2$ is a complex multiple of the third generator, and $A(q_-) = 0$ on a hundred random complex multiples. So $A$ does not merely fail to preserve products; it annihilates one of the two states the source uses, and with it every other element of the down-state line. What the source's table exhibits is an assignment that agrees with a representation on four chosen elements, not a representation.
@@ -109,7 +109,7 @@ The entry worth pausing on is the second in the first column. The source display
 The source's normalisation is $|q|^2 = \mathrm{Sc}(q\bar q^*) = \sum_\mu \left(\mathrm{Re}\,q_\mu\right)^2 + \left(\mathrm{Im}\,q_\mu\right)^2$, the sum of the squared moduli of the coefficients. It is the Hilbert–Schmidt norm of the image matrix, and it is not the algebra norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, which is complex in general. On the source's two states the two forms disagree completely: the source's norm gives $1$ on each, verified, while
 
 $$
-\langle q_+\rangle_{\natural} = 0, \qquad \langle q_-\rangle_{\natural} = 0 .
+\boxed{\;\langle q_+\rangle_{\natural} = 0, \qquad \langle q_-\rangle_{\natural} = 0\;}.
 $$
 
 Both are zero divisors, which is what rank-one matrices are, and the source itself expects this where it says that in the complex quaternions "there are certain objects called zero divisors" and that the inverse is lost. The consequence for the interpretation of the states is sharper than the source draws. Dividing each state by $\sqrt2$ gives an element of the algebra, and the two elements so obtained are of different kinds:
@@ -134,7 +134,7 @@ with $q_p$ the three units written as a vector and $n$ the axis; for the three a
 With $\varphi = 0.7$ about the source's $x$-axis, for instance,
 
 $$
-D^\dagger S_xD = S_x, \qquad D^\dagger S_yD = \cos\varphi\,S_y + \sin\varphi\,S_z, \qquad D^\dagger S_zD = \cos\varphi\,S_z - \sin\varphi\,S_y,
+\boxed{\;D^\dagger S_xD = S_x, \qquad D^\dagger S_yD = \cos\varphi\,S_y + \sin\varphi\,S_z, \qquad D^\dagger S_zD = \cos\varphi\,S_z - \sin\varphi\,S_y\;},
 $$
 
 the component along the axis being invariant and the two transverse components rotating into one another in the standard sense, and the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17), $D^\dagger(n_i,\varphi)S_jD(n_i,\varphi) = \tfrac{\hbar}{2}\left(q_j\cos\varphi + q_k\sin\varphi\right)$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the reader must take the pairing from the computation, and the invariant component $j = i$ is not covered by the pattern at all.
@@ -228,8 +228,6 @@ its equation (30). As printed, the parameter $q_7$ appears in two coefficients a
 The second short section writes four $4\times4$ matrices in biquaternion form and attributes the representation to Silvis (2010); that attribution is the only place in this corpus where Silvis is named. Two things are visible on the page without any reconstruction. The first matrix, $\mathrm{diag}(1,1,-1,-1)$, is sent to $\left(\begin{smallmatrix}e_t&0\\0&e_t\end{smallmatrix}\right)$, which is the identity: both diagonal blocks are printed with $e_t$, where the second should carry the minus of the $4\times4$ matrix, so that as printed the image of $\mathrm{diag}(1,1,-1,-1)$ is not $\mathrm{diag}(e_t,-e_t)$. The three off-diagonal blocks are printed as $\left(\begin{smallmatrix}0&-i\vec e_x\\i\vec e_x&0\end{smallmatrix}\right)$ and the same with $\vec e_z$ and $\vec e_y$. The corpus's side of the same correspondence is in *The Dirac Algebra and Biquaternions — A Dictionary*, in the mostly-minus convention, $\gamma^0 = \left(\begin{smallmatrix}0&e_t\\e_t&0\end{smallmatrix}\right)$ and $\gamma^k = \left(\begin{smallmatrix}0&i\vec e_k\\-i\vec e_k&0\end{smallmatrix}\right)$. The two sets differ in two ways and agree in the algebra: the source's first matrix is the diagonal Dirac form where the corpus's $\gamma^0$ is off-diagonal, and the source's three spacelike blocks are the negatives of the corpus's, a sign that flips all three odd generators at once and therefore leaves every product, and every Clifford relation, unchanged. Which units carry which axes is again the source's own table.
 
 ## What Is Verified and What Is Not
-
-
 
 - The four values of the source's table, exactly.
 - The failure of multiplicativity of $A$, on complex and on real quaternion pairs, with the explicit counterexample $\vec e_x, \vec e_y$.

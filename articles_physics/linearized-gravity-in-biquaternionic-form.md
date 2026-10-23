@@ -29,8 +29,6 @@ The answer developed here is narrower than the title might suggest, and it is wo
 
 **What this article is and is not.** It is a computation of how the frame route of the parent article linearizes, and a comparison of the result with standard linearized gravity. It is not a derivation of general relativity from the biquaternion algebra, and it does not claim that the algebra predicts the linearized Einstein equation. The linear theory is transcribed into the framework's notation; the framework's contribution is the sector structure of the carrier and the form of the gauge transformation, both of which are checked, and neither of which is a dynamics.
 
-**Conventions.** The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_j \vec e_k = -\delta_{jk}e_t + \epsilon_{jkm}\vec e_m$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$.
-
 Two further conventions are needed and are fixed once, here. First, the **material basis** of $\mathbb{M}_-$ is
 
 $$
@@ -151,7 +149,7 @@ $$
 so the metric perturbation is
 
 $$
-\boxed{\;h_{\mu\nu} = \langle \varepsilon_\mu, \delta\tilde{E}_\nu\rangle_{\natural} + \langle \delta\tilde{E}_\mu, \varepsilon_\nu\rangle_{\natural} \;=\; \mathrm{Sc}\!\left(\varepsilon_\mu\,\bar{\delta\tilde{E}}_\nu\right) + \mathrm{Sc}\!\left(\delta\tilde{E}_\mu\,\bar{\varepsilon}_\nu\right).\;}
+\boxed{\;h_{\mu\nu} = \langle \varepsilon_\mu, \delta\tilde{E}_\nu\rangle_{\natural} + \langle \delta\tilde{E}_\mu, \varepsilon_\nu\rangle_{\natural} \;=\; \mathrm{Sc}\!\left(\varepsilon_\mu\,\bar{\delta\tilde{E}}_\nu\right) + \mathrm{Sc}\!\left(\delta\tilde{E}_\mu\,\bar{\varepsilon}_\nu\right)\;}.
 $$
 
 The right-hand side is automatically symmetric in $\mu\nu$, because the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is symmetric. The map is also surjective onto symmetric perturbations: given any symmetric $h_{\mu\nu}$, the choice
@@ -227,7 +225,7 @@ $$
 For symmetric $h_{\mu\nu}$ this element is Hermitian, $\tilde{H}^{*} = \tilde{H}$, and so lies in the informational sector $\mathbb{M}_+$ rather than the material sector $\mathbb{M}_-$. More importantly, it is not faithful. Computing the products $\varepsilon_\mu\bar{\varepsilon}_\nu$ from the multiplication rules gives
 
 $$
-\tilde{H} = \left(\eta^{\mu\nu}h_{\mu\nu}\right)e_t = h\,e_t ,
+\boxed{\;\tilde{H} = \left(\eta^{\mu\nu}h_{\mu\nu}\right)e_t = h\,e_t\;},
 $$
 
 a real multiple of the identity carrying only the **Lorentzian trace** $h = \eta^{\mu\nu}h_{\mu\nu}$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_k h_{kk}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\bar{\varepsilon}_\mu\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the Lorentzian trace in each case; the traceless diagonal case was checked separately and maps to zero.
@@ -312,8 +310,8 @@ $$
 Then the metric perturbation it carries is the trace-reversed one,
 
 $$
-\langle\varepsilon_\mu, \bar{\delta\tilde{E}}_\nu\rangle_{\natural} + \langle\bar{\delta\tilde{E}}_\mu, \varepsilon_\nu\rangle_{\natural}
-= h_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}h = \bar{h}_{\mu\nu},
+\boxed{\;\langle\varepsilon_\mu, \bar{\delta\tilde{E}}_\nu\rangle_{\natural} + \langle\bar{\delta\tilde{E}}_\mu, \varepsilon_\nu\rangle_{\natural}
+= h_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}h = \bar{h}_{\mu\nu}\;},
 $$
 
 because $\langle\varepsilon_\mu, \tfrac{1}{4}h\,\varepsilon_\nu\rangle_{\natural} + \langle\tfrac{1}{4}h\,\varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \tfrac{1}{2}h\,\eta_{\mu\nu}$. The trace-reversal is therefore not an operation that takes the graviton out of the framework: it is a shift of each $\delta\tilde{E}_\mu$ by a multiple of the corresponding basis vector $\varepsilon_\mu$, with the multiple fixed by the biquaternionic trace. The identity was checked on randomly generated $h$ with the two sides agreeing exactly, and it reproduces $\bar{h} = -h$ as it must. The sign is the natural place for an error, so the $\bar{h} = -h$ contraction was checked independently on a random case.
@@ -329,7 +327,7 @@ $$
 Consequently $\Box\bar{h}_{\mu\nu} = 0$ holds if and only if $\Box\bar{\delta\tilde{E}}_\mu$ lies in the local-Lorentz kernel of the map to $h$: a frame perturbation whose $\Box$ is a pure local Lorentz transformation produces no metric perturbation. If the local Lorentz freedom is fixed — for instance by demanding that $\delta\tilde{E}_\mu$ and $\varepsilon_\mu$ be related by a symmetric matrix, as in the surjectivity construction above — then the wave equation takes the direct form
 
 $$
-\Box\,\bar{\delta\tilde{E}}_\mu = 0 .
+\boxed{\;\Box\,\bar{\delta\tilde{E}}_\mu = 0\;}.
 $$
 
 The same structure appears in the electromagnetic analogue: without the Lorenz condition, $\Box\tilde{A}$ is a pure gauge gradient, and in Lorenz gauge it vanishes. Here the harmonic condition plays the role of the Lorenz condition and the local Lorentz transformations play the role of the residual gauge freedom. With a source, the linearized Einstein equation $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ is transcribed componentwise; its right-hand side, the energy–momentum tensor, is the symmetric rank-two object whose biquaternion representation is studied in *Exercise: The Electromagnetic Energy–Momentum Tensor*, where it is built as a bigeneral quaternionic bilinear because no single biquaternion can carry it. The gravitational source belongs to the same class, and the same obstruction applies to it.

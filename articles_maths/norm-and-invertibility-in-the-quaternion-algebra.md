@@ -36,9 +36,7 @@ The equality of the two products is checked from the multiplication table: the v
 
 **Theorem.** The quaternion norm is multiplicative:
 
-$$
-\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\,\langle\tilde q_2\rangle_{\natural}, \qquad \tilde q_1, \tilde q_2 \in \mathbb{H}.
-$$
+$$ \boxed{\; \langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\,\langle\tilde q_2\rangle_{\natural}, \qquad \tilde q_1, \tilde q_2 \in \mathbb{H} \;} .$$
 
 *Proof.* Using $(\tilde q_1\tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1^{\natural}$ and the fact that $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ is central,
 
@@ -94,9 +92,7 @@ In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the Gram matrix of the inner produ
 
 **Proposition.** The quaternion norm is the diagonal of the inner product, $\langle\tilde q\rangle_{\natural} = \langle \tilde q, \tilde q\rangle$, and the inner product is recovered from the quaternion norm by polarisation,
 
-$$
-\langle\tilde q_1, \tilde q_2\rangle = \tfrac{1}{2}\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr).
-$$
+$$ \boxed{\; \langle\tilde q_1, \tilde q_2\rangle = \tfrac{1}{2}\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr) \;} .$$
 
 The two forms are therefore the same datum: a positive definite quadratic form on a four-dimensional real space, whose associated bilinear form is the inner product. The multiplicativity of $\langle\cdot,\cdot\rangle_{\natural}$ is an extra property, not shared by a general positive definite form.
 
@@ -128,9 +124,7 @@ Thus, over a field of characteristic not $2$, the three notions coincide, and an
 
 **Theorem.** If $\langle\tilde q\rangle_{\natural}\neq 0$ then
 
-$$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{\tilde{q}^{\natural}}{\tilde q\tilde{q}^{\natural}}.
-$$
+$$ \boxed{\; \tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{\tilde{q}^{\natural}}{\tilde q\tilde{q}^{\natural}} \;} .$$
 
 *Proof.* $(\tilde q)(\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = (\tilde q\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}/\langle\tilde q\rangle_{\natural} = 1$, and $(\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural})(\tilde q) = (\tilde{q}^{\natural} \tilde q)/\langle\tilde q\rangle_{\natural} = 1$ because $\tilde{q}^{\natural} \tilde q = \langle\tilde q\rangle_{\natural}$ is central.
 
@@ -166,9 +160,7 @@ $$
 
 **Theorem.** Over $\mathbb{R}$ the group of units factors as a direct product
 
-$$
-\mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times \mathbb{H}^1, \qquad \tilde q = |\tilde q|\,\frac{\tilde q}{|\tilde q|},
-$$
+$$ \boxed{\; \mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times \mathbb{H}^1, \qquad \tilde q = |\tilde q|\,\frac{\tilde q}{|\tilde q|} \;} ,$$
 
 where $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the unit sphere, the shell of the norm-one elements, and the two factors commute. The map is an isomorphism of groups; the topological structure of $\mathbb{H}^1$ is owned by *The Quaternion Unit Group as a Topological Group*, below this article in this category.
 

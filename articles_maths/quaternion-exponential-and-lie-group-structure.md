@@ -55,9 +55,7 @@ which converges for every $\tilde q$ because the quaternion norm is multiplicati
 
 **Theorem (closed form).** For $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q\neq0$,
 
-$$
-\exp(\tilde q) = \exp(q_t)\Bigl(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\Bigr),
-$$
+$$ \boxed{\; \exp(\tilde q) = \exp(q_t)\Bigl(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\Bigr) \;} ,$$
 
 and for $\vec q = 0$ it reduces to the real exponential $\exp(q_t) = \exp(q_t)$.
 
@@ -71,9 +69,7 @@ and for $\vec q = 0$ it reduces to the real exponential $\exp(q_t) = \exp(q_t)$.
 
 **Theorem.** The exponential is surjective onto the group of units,
 
-$$
-\exp(\mathbb{H}) = \mathbb{H}^{\times} = \mathbb{H}\setminus\{0\},
-$$
+$$ \boxed{\; \exp(\mathbb{H}) = \mathbb{H}^{\times} = \mathbb{H}\setminus\{0\} \;} ,$$
 
 and it is surjective onto the unit sphere when restricted to the imaginary subspace.
 
@@ -93,9 +89,7 @@ and its restriction to the open set $\{\tilde q : |\vec q| < \pi\}$ is a diffeom
 
 **Theorem.** The group of units is the direct product of the positive scalars and the unit sphere,
 
-$$
-\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1), \qquad \tilde q = |\tilde q|\,\tilde u, \quad \tilde u = \frac{\tilde q}{|\tilde q|},
-$$
+$$ \boxed{\; \mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1), \qquad \tilde q = |\tilde q|\,\tilde u, \quad \tilde u = \frac{\tilde q}{|\tilde q|} \;} ,$$
 
 and the two factors commute and are the image under the exponential of the centre and of the imaginary subspace respectively.
 

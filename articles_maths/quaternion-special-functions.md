@@ -49,9 +49,7 @@ This is a unit quaternion, and it lies on the unit sphere $\mathbb{S}^3$: it is 
 
 For a general quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q \neq 0$ and $\theta = \sqrt{\langle\vec q\rangle_{\natural}}$,
 
-$$
-\exp(\tilde q) = \exp(q_t) \left(\cos\theta + \frac{\vec q}{\theta} \sin\theta \right).
-$$
+$$ \boxed{\; \exp(\tilde q) = \exp(q_t) \left(\cos\theta + \frac{\vec q}{\theta} \sin\theta \right) \;} .$$
 
 So the exponential is the product of a real exponential and a unit quaternion. This is the quaternion analogue of the polar form of a complex number.
 
@@ -166,9 +164,7 @@ The scalar coordinate is unique and carries the scale. The vector coordinate is 
 
 **The principal branch.** A single-valued logarithm is obtained by keeping the representative with $\sqrt{\langle w\rangle_{\natural}}<\pi$. For a non-real element it is $w=\theta\operatorname{sgn}\tilde q$; for a positive real element it is $w=0$; for a negative real element there is none, because every candidate has $\sqrt{\langle w\rangle_{\natural}}\ge\pi$. The domain is therefore $\mathbb{H}\setminus(-\infty,0]$, and the **principal logarithm** is
 
-$$
-\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}\,\frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}},
-$$
+$$ \boxed{\; \log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}\,\frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}} \;} ,$$
 
 with the second term read as $0$ when $\vec q=0$, which within the domain means the positive real axis. The scalar factor is the **argument** $\operatorname{Arg}\tilde q=\arccos(q_t/\sqrt{\langle\tilde q\rangle_{\natural}})\in[0,\pi)$, so that
 
@@ -310,9 +306,7 @@ and the roots tend to $1$ as $n$ grows. The first-order term of that approach is
 
 **Theorem (the root expansion).** For $\tilde q \in \mathbb{H}\setminus(-\infty,0]$,
 
-$$
-\lim_{n \to \infty} n\left(\tilde q^{1/n} - 1\right) = \log\tilde q.
-$$
+$$ \boxed{\; \lim_{n \to \infty} n\left(\tilde q^{1/n} - 1\right) = \log\tilde q \;} .$$
 
 **Proof.** Write $\tilde q_{\log} = \log\tilde q$. If $\tilde q_{\log}$ is real, the statement is the classical real limit. Otherwise put $\vec\omega = \operatorname{sgn}\tilde q_{\log}$, so that $\tilde q_{\log} = \vec\omega\,\sqrt{\langle\tilde q_{\log}\rangle_{\natural}}$ and the powers of $\tilde q_{\log}$ commute. Then
 
@@ -495,9 +489,7 @@ where the integral is along the positive real axis, $t^{\tilde q-1}$ is the quat
 
 ### Functional Equation
 
-$$
-\Gamma(\tilde q + 1) = \tilde q \Gamma(\tilde q).
-$$
+$$ \boxed{\; \Gamma(\tilde q + 1) = \tilde q \Gamma(\tilde q) \;} .$$
 
 This follows from integration by parts, exactly as in the real case, and it holds because the quaternion multiplication by $\tilde q$ commutes with the integration over the real variable $t$.
 
@@ -511,9 +503,7 @@ for non-negative integers $n$, where the factorial is the ordinary real factoria
 
 ### The Reflection Formula
 
-$$
-\Gamma(\tilde q) \Gamma(1 - \tilde q) = \frac{\pi}{\sin(\pi \tilde q)},
-$$
+$$ \boxed{\; \Gamma(\tilde q) \Gamma(1 - \tilde q) = \frac{\pi}{\sin(\pi \tilde q)} \;} ,$$
 
 where the sine is the quaternion sine. This follows from the real reflection formula, applied to the scalar-vector decomposition.
 

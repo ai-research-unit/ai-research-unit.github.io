@@ -95,7 +95,7 @@ $$
 with $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$, $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $\tilde\Pi_1,\tilde\Pi_2$ the primitive orthogonal idempotents: $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$. Therefore
 
 $$
-l = \sqrt2\,i\,\tilde\Pi_1, \qquad n = \sqrt2\,i\,\tilde\Pi_2, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y .
+\boxed{\;l = \sqrt2\,i\,\tilde\Pi_1, \qquad n = \sqrt2\,i\,\tilde\Pi_2, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y\;}.
 \tag{4}
 $$
 
@@ -134,7 +134,7 @@ $$
 and, writing $l_\mu,n_\mu,m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the metric is
 
 $$
-g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu .
+\boxed{\;g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu\;}.
 \tag{7}
 $$
 
@@ -166,7 +166,6 @@ $$
 the form $g^{T}\epsilon\,g = \epsilon$ of the read list; it is exactly this normalization, and not the choice of basis, that produces $l\cdot n = -1$ and $m\cdot\bar m = +1$.
 
 The construction is not tied to the basis dyad. For any dyad with $\varepsilon(o,\iota)=1$ the four legs defined by (8) are null, satisfy $l\cdot n=-1$ and $m\cdot\bar m=+1$, and have all mixed products zero; this was checked symbolically for a general complex dyad, and independently on the explicit real dyad $o=(2,1)$, $\iota=(3,2)$, whose symplectic product is $2\cdot2-1\cdot3=1$. That second dyad was chosen for the check rather than being the one that suggested the construction, and the inner products came out as in (1) on it. For the physical tetrad (2), in which the dyad is real, $\bar m$ is the complex conjugate of $m$; a complex dyad (a spin-boost of the frame) complexifies the legs while leaving the inner products (1) unchanged.
-
 
 ## Spin Coefficients
 
@@ -232,7 +231,6 @@ where the index $0$ refers to the dyad element $o$ and $1$ to $\iota$. Since $S$
 
 A qualification is required, and it is the main gap of this article. The framework hosts $\mathrm{Sym}^4 S$, because it hosts the spinor module $S$; but the Weyl tensor is an external rank-four object, and nothing in $\mathbb{B}$ determines it. The Weyl spinor is $\mathrm{Sym}^4 S$-valued, and the algebra says what that means, but which element of $\mathrm{Sym}^4 S$ a given spacetime produces is not a question the algebra answers. The next two sections use only the representation theory of $\mathrm{Sym}^4 S$, and are therefore independent of this gap; the classification of a specific spacetime is not.
 
-
 ## Boost Weights and the Rotations of the Tetrad
 
 The tetrad is defined up to the six-parameter local Lorentz group, and the five scalars transform by the index structure of (9). It is useful to split that group into the two-parameter boost–spin subgroup and the two null rotations.
@@ -247,7 +245,7 @@ $$
 which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta/2)o$, $\iota\mapsto A^{-1/2}\exp(-i\theta/2)\iota$. Substituting (11) into (9), each scalar picks up a monomial:
 
 $$
-\Psi_k \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\Psi_k, \qquad k=0,\dots,4 .
+\boxed{\;\Psi_k \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\Psi_k, \qquad k=0,\dots,4\;}.
 \tag{12}
 $$
 

@@ -10,8 +10,6 @@ $$
 
 They are the elementary sandwiches of the block, and their family carries the whole operator calculus of the algebra: a composition law, an adjoint for each of the two forms of the space, and the fact — the *type* of the family — that the sandwiches span every real-linear operator of $\mathbb{H}$. The left factor is the left multiplication by the conjugated parameter, $L_{\tilde q_3^{\natural}}$. This article establishes those four facts and compares them with the plain algebra of the same space, where the left multiplication does not carry the conjugation and the two laws are correspondingly different. The one-sided families are *One-Sided Operators on the General Quaternionic Algebra*, below this article in this category, and the left family with its monoid *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category; the forms are *The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category.
 
-**Conventions.** The elements are $\tilde q_1 = \sum_\mu q_{1\mu} e_\mu$ with the conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$; the product is $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$; the two forms of the space are the plain form $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$ of signature $(1,3)$ and the quaternionic form $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \sum_\mu q_{1\mu} q_{2\mu}$ of signature $(4,0)$; a right multiplication is the plain one, $R_{\tilde q_4}(\tilde q) = \tilde q\tilde q_4$.
-
 ## The Family
 
 **Definition.** For $\tilde q_3,\tilde q_4 \in \mathbb{H}$ the **two-sided operator** is $T_{\tilde q_3,\tilde q_4} = L_{\tilde q_3^{\natural}}R_{\tilde q_4}$, the map $\tilde q \mapsto \tilde q_3^{\natural}\tilde q\tilde q_4$. The family is $\mathcal T = \{T_{\tilde q_3,\tilde q_4}\}$.
@@ -29,7 +27,7 @@ They are the elementary sandwiches of the block, and their family carries the wh
 **Theorem (the composition law).** For all $\tilde q_3,\tilde q_4,\tilde q_5,\tilde q_6 \in \mathbb{H}$,
 
 $$
-T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\,\tilde q_6\tilde q_4} .
+\boxed{\;T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\,\tilde q_6\tilde q_4}\;}.
 $$
 
 Both parameters are **reversed**, because both the first factor of the product and the second carry an order-reversing step: the first through the anti-automorphism ${}^{\natural}$ that the left multiplication contains, the second through the opposite algebra.
@@ -43,7 +41,7 @@ which is $T_{\tilde q_5\tilde q_3,\tilde q_6\tilde q_4}(\tilde q)$.
 **Proposition (when two sandwiches agree, and the zero case).** The sandwich $L_\alpha R_\beta$ is zero exactly when $\alpha = 0$ or $\beta = 0$. For **nonzero** parameter pairs, two sandwiches agree as operators exactly when the pairs differ by a single real scalar:
 
 $$
-\alpha,\beta,\alpha',\beta' \neq 0 : \quad L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff \alpha' = \mu\alpha \text{ and } \beta' = \mu^{-1}\beta \text{ for some } \mu \in \mathbb{R}^\times .
+\boxed{\;\alpha,\beta,\alpha',\beta' \neq 0 : \quad L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff \alpha' = \mu\alpha \text{ and } \beta' = \mu^{-1}\beta \text{ for some } \mu \in \mathbb{R}^\times\;}.
 $$
 
 *Proof.* The equality $L_\alpha R_\beta = 0$ says $\alpha\tilde q\beta = 0$ for every $\tilde q$; at $\tilde q = e_t$ this is $\alpha\beta = 0$, and in a division algebra a product vanishes exactly when a factor does, so $\alpha = 0$ or $\beta = 0$, and conversely. Assume now all four parameters nonzero and $\alpha\tilde q\beta = \alpha'\tilde q\beta'$ for every $\tilde q$. Multiply on the left by $\alpha^{-1}$ and put $\gamma = \alpha^{-1}\alpha'$, so that $\tilde q\beta = \gamma\tilde q\beta'$ for every $\tilde q$. At $\tilde q = e_t$ this gives $\beta = \gamma\beta'$, whence $\beta' = \gamma^{-1}\beta$; substituting back gives $(\tilde q\gamma - \gamma\tilde q)\beta' = 0$ for every $\tilde q$, and since $\beta' \neq 0$ the parameter $\gamma$ is central, that is $\gamma = \mu$ real and nonzero. Therefore $\alpha' = \alpha\gamma = \mu\alpha$ and $\beta' = \mu^{-1}\beta$. Conversely, if $\alpha' = \mu\alpha$ and $\beta' = \mu^{-1}\beta$ then $L_{\alpha'}R_{\beta'} = L_{\mu\alpha}R_{\mu^{-1}\beta} = L_\alpha R_\beta$, because the scalar is central.
@@ -69,7 +67,7 @@ Each form of the space defines a transpose on the operators, and the two transpo
 **Theorem (the transpose for the plain form).** With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$, the transpose of a two-sided operator is
 
 $$
-T_{\tilde q_3,\tilde q_4}^{\sim} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}} = L_{\tilde q_4}R_{\tilde q_3^{\natural}} .
+\boxed{\;T_{\tilde q_3,\tilde q_4}^{\sim} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}} = L_{\tilde q_4}R_{\tilde q_3^{\natural}}\;}.
 $$
 
 *Proof.* The transpose is characterised by $\langle T\tilde q_1,\tilde q_2\rangle = \langle\tilde q_1,T^{\sim}\tilde q_2\rangle$. For $T = T_{\tilde q_3,\tilde q_4}$,
@@ -81,7 +79,7 @@ by the cyclic invariance of the scalar part, and the last is $\langle\tilde q_1,
 **Theorem (the transpose for the quaternionic form).** With respect to the quaternionic form $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ of signature $(4,0)$, the transpose of a two-sided operator is
 
 $$
-T_{\tilde q_3,\tilde q_4}^{\dagger} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}} .
+\boxed{\;T_{\tilde q_3,\tilde q_4}^{\dagger} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}\;}.
 $$
 
 *Proof.* The characterisation is $\langle T\tilde q_1,\tilde q_2\rangle_{\natural} = \langle\tilde q_1,T^{\dagger}\tilde q_2\rangle_{\natural}$, and
@@ -93,7 +91,7 @@ using that $(\tilde q_3\tilde q_2\tilde q_4^{\natural})^{\natural} = \tilde q_4\
 **Corollary (the two transposes and the comparison).** The plain transpose swaps the two parameters and conjugates them both, $T^{\sim}_{\tilde q_3,\tilde q_4} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}$; the quaternionic transpose keeps the two parameters in place and conjugates them both, $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$. For a nonzero sandwich, the two transposes coincide exactly when the two parameters are proportional over $\mathbb{R}$,
 
 $$
-\tilde q_3,\tilde q_4 \neq 0 : \quad T^{\sim}_{\tilde q_3,\tilde q_4} = T^{\dagger}_{\tilde q_3,\tilde q_4} \iff \tilde q_4 \in \mathbb{R}\tilde q_3 ,
+\boxed{\;\tilde q_3,\tilde q_4 \neq 0 : \quad T^{\sim}_{\tilde q_3,\tilde q_4} = T^{\dagger}_{\tilde q_3,\tilde q_4} \iff \tilde q_4 \in \mathbb{R}\tilde q_3\;},
 $$
 
 which includes the diagonal case $\tilde q_3 = \tilde q_4$ but is strictly wider; and a nonzero sandwich is self-transpose for the plain form exactly when the second parameter is a real multiple of the conjugate of the first,

@@ -4,8 +4,6 @@
 
 An element annihilates a structure when multiplying by it kills the product on the whole space. Beside the algebra product of the *Quaternions* category, the quaternion space carries the three companion structures of this category, so the question has three answers, and they are read here side by side. The article defines the left, the right and the two-sided annihilating set of a structure, proves them equal for each of the three, and compares the three sets. The answer is $\{0\}$ for the symmetric plain algebra and the general quaternionic algebra, and the scalar line for the antisymmetric plain algebra, and the comparison is the content. **The two one-sided annihilating sets coincide in all three structures**, because the norm $\langle\cdot\rangle_{\natural}$ of the quaternion real space is positive definite: the asymmetry of the biquaternion space, where the plain product and the general quaternionic sesquilinear product separate the two sides at an element of vanishing norm, has no counterpart over $\mathbb{R}$, the structures that separate there being the ones that need the complex coefficients to reach the cone at all.
 
-**Scope and owners.** The products are *The 6 Products of the Quaternioid Real Space*; the three companion structures are *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, the general quaternionic algebra's entry being *Introduction to the General Quaternionic Algebra*, the symmetric plain algebra's *Introduction to the Symmetric Plain Algebra* and the antisymmetric plain algebra's *Introduction to the Antisymmetric Plain Algebra*; and the forms are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*. The algebra-product annihilators are owned by *Annihilators of the Quaternion Algebra* in the *Quaternions* category, and are named once for the contrast.
-
 ## The Annihilating Set of a Product
 
 **Definition.** For a product $\star$ on $\mathbb{H}$, the **left annihilating set** is
@@ -23,7 +21,7 @@ The left annihilating set is the common kernel of the left multiplication operat
 **The criterion of the four units.** For a product $\star$ that is $\mathbb{R}$-linear in its second slot, an element lies in the left annihilating set exactly when it annihilates each of the four units,
 
 $$
-\tilde q_1\in\ell(\star)\iff \tilde q_1\star e_\mu=0\ \text{for}\ \mu=0,1,2,3 ,
+\boxed{\;\tilde q_1\in\ell(\star)\iff \tilde q_1\star e_\mu=0\ \text{for}\ \mu=0,1,2,3\;},
 $$
 
 because the map $\tilde q_2\mapsto\tilde q_1\star\tilde q_2$ is linear and vanishes exactly when it vanishes on a basis of the space, and the four units are such a basis. The same test applies to the right annihilating set, with the order of the factors exchanged. It reduces every computation below to at most four elementary products, and its content is not the linearity, which all three share, but the four values it reads: they are the columns of the left multiplication operator, and the annihilating set is the set of parameters for which all four columns vanish.
@@ -101,7 +99,7 @@ Two of the three structures are faithful in the sense that no nonzero element ki
 **Whatever structure $\star$ of the three is taken, every element of its annihilating set other than the origin is a zero divisor of that same structure.** **The other inclusion fails in the structures that have a zero divisor, that is in every companion structure but the general quaternionic algebra.** The first is definitional: an element that kills the product on every partner kills it on one, so it is a zero divisor with every partner as its witness, and the origin is exempt because the zero of $\mathbb{H}$ is never a zero divisor. The annihilating set therefore lies in the zero-divisor set together with the origin,
 
 $$
-\ell(\star)\subseteq\{0\}\cup\{\text{zero divisors of }\star\} ,
+\boxed{\;\ell(\star)\subseteq\{0\}\cup\{\text{zero divisors of }\star\}\;},
 $$
 
 with equality exactly for the general quaternionic algebra (and the algebra product, owned by the *Quaternions* category), whose zero-divisor set is empty and whose annihilating set is the origin alone. The inclusion is strict for the two structures that have a zero divisor, and the gap is the subject of *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. The two extremes are the general quaternionic product, where both sets are as small as possible, and the cross product, where the zero-divisor set is the whole punctured space while the annihilating set is the scalar line.
@@ -109,7 +107,7 @@ with equality exactly for the general quaternionic algebra (and the algebra prod
 **Consequence for the forms.** A product that vanishes for every second argument has zero scalar part, so the annihilating set of the product is contained in the radical of the associated form,
 
 $$
-\ell(\star)\subseteq\operatorname{rad}\operatorname{Sc}(\tilde q_1\star\tilde q_2) .
+\boxed{\;\ell(\star)\subseteq\operatorname{rad}\operatorname{Sc}(\tilde q_1\star\tilde q_2)\;}.
 $$
 
 The inclusion is strict for the antisymmetric plain product. Its scalar form $\operatorname{Sc}(\tilde q_1\wedge\tilde q_2)$ vanishes identically, of radical all of $\mathbb{H}$, while the annihilating set is the scalar line. For the two other structures the two notions agree and are as small as possible. The quaternion form $\operatorname{Sc}(\tilde q_1^{\natural}\tilde q_2)=\langle\tilde q_1,\tilde q_2\rangle_{\natural}$ is definite, of radical $\{0\}$, by *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*; and the plain form $\operatorname{Sc}(\tilde q_1\tilde q_2)$ on the symmetric product has radical $\{0\}$ on the Jordan algebra's scalar reading, the partner $\tilde q_2=e_t$ giving $\operatorname{Sc}(\tilde q_1)=q_{1t}$ and the partner $\tilde q_2=\vec e_k$ giving $\operatorname{Sc}(\tilde q_1 \vec e_k)=-q_{1k}$ for the algebra product.

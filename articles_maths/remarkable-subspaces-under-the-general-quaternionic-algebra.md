@@ -7,8 +7,6 @@ The general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\na
 
 This article is the development of the restriction table stated in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the form itself, its polarisation and its quadratic space are in *Norm and Invertibility in the General Quaternionic Algebra*. The signatures are the ones recorded in *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the other three forms on the same remarkable subspaces are *Remarkable Subspaces and the Four Forms*, *Remarkable Subspaces under the General Plain Sesqualgebra* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the null structure of the form on the subspaces is *The Isotropic Structure of the General Quaternionic Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde Q=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, $i\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, $\mathbb{M}_+=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ and $\mathbb{M}_-=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$.
-
 ## The Signatures and the Restriction Matrices
 
 The restriction of the form to a subspace is the real symmetric form obtained by taking the real part on the real span; because the form is $\mathbb{C}$-bilinear and $i$ is central, the cross terms between a real direction and its imaginary companion are purely imaginary and drop out, so the restricted form is diagonal in the natural real basis.
@@ -37,7 +35,7 @@ The restriction of the form to a subspace is the real symmetric form obtained by
 The **quaternion subspace** carries the signature $(4,0)$ and the **anti-quaternion subspace** the signature $(0,4)$: these are the definite rows, exchanged by multiplication by $i$, under which the norm changes sign,
 
 $$
-\langle i\tilde Q_1,i\tilde Q_2\rangle_{\natural}=-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}.
+\boxed{\; \langle i\tilde Q_1,i\tilde Q_2\rangle_{\natural}=-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} \;}.
 $$
 
 The quaternion subspace is thus a **maximal positive definite** subspace of the norm, of dimension $4$, and the anti-quaternion subspace a maximal negative definite one; they are orthogonal complements for the realified form, $\mathbb{H}_{\mathbb B}\oplus i\mathbb H_{\mathbb B}=\mathbb B$, since the real part of the pairing of a real direction with its imaginary companion vanishes, while the complex pairing itself takes the value $i$ between them; and the norm is the positive form on the first and its negative on the second. This splitting is the one the norm uses to decide invertibility: on a definite subspace the restriction vanishes only at the origin, so no nonzero element of either quaternion subspace is a zero divisor, and the classical quaternion algebra $\mathbb{H}_{\mathbb B}$ is a division algebra.
@@ -72,7 +70,7 @@ Three of the restrictions are indefinite with an isotropic cone; the centre is i
 **Proposition.** The automorphism group of the restriction of the form to a subspace is the real orthogonal group of its signature,
 
 $$
-O(1,1),\quad O(3,3),\quad O(4),\quad O(4),\quad O(1,3),\quad O(3,1)
+\boxed{\; O(1,1),\quad O(3,3),\quad O(4),\quad O(4),\quad O(1,3),\quad O(3,1) \;}
 $$
 
 on the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. Their real dimensions are $1$, $15$, $6$, $6$, $6$, $6$; the two definite ones are the quaternion and anti-quaternion rows, and the two real forms give the isomorphic groups $O(1,3)$ and $O(3,1)$, the two real forms of the same complex group.

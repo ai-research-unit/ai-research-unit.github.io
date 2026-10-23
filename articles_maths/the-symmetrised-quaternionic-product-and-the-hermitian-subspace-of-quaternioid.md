@@ -19,7 +19,7 @@ The reading is short because of one property: the symmetrisation of the quaterni
 **Theorem (the central value).** For all $\tilde q_1,\tilde q_2 \in \mathbb{H}$,
 
 $$
-\tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)\,e_t , \qquad \beta(\tilde q_1,\tilde q_2) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2 .
+\boxed{\;\tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)\,e_t , \qquad \beta(\tilde q_1,\tilde q_2) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2\;}.
 $$
 
 The product is $\mathbb{R}$-bilinear, commutative, and its values lie in the scalar line.
@@ -49,7 +49,7 @@ $$
 **Theorem (the two subspaces).** $\mathbb{M}_+$ is the scalar line $\mathbb{R}e_t$, of real dimension one; $\mathbb{M}_-$ is the vector subspace $\mathrm{Vect}(\vec e_x,\vec e_y,\vec e_z)$, of real dimension three. They are the two eigenspaces of the conjugation and they give the splitting
 
 $$
-\mathbb{H} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \tilde q = q_te_t + \vec q ,
+\boxed{\;\mathbb{H} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \tilde q = q_te_t + \vec q\;},
 $$
 
 the scalar part being Hermitian and the vector part anti-Hermitian.

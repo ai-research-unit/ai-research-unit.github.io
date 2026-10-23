@@ -13,8 +13,6 @@ a bundle of projective lines whose fibre at $x$ is the sphere of complex structu
 
 The Hermitian content is the fibrewise form and the real structure it carries. Each fibre $\pi^{-1}(x)\cong\mathbb{CP}^1$ is a complex projective line with its Fubini–Study form, the antipodal map of the fibre is the restriction of a global anti-holomorphic involution $\sigma$ of $Z(M)$ without fixed points, and $\sigma$ is the real structure of the twistor space; the fixed loci of $\sigma$ are the twistor lines $\pi^{-1}(x)$, whose normal bundle is $\mathcal{O}(1)\oplus\mathcal{O}(1)$. The conformal structure of $M$ is recovered from the family of these curves, and the Hermitian form on $\mathcal{S}^-$ that defines the real structure is the fibre form of the spinor bundle with its conjugation.
 
-**The boundaries.** The spinor bundle, its chirality and the fibre form are *Spin Geometry*; the twistor operator and the twistor equation are *The Twistor Operator* and *The Penrose Operator*; the complex structure, the Hermitian structure and the correspondence are the sibling `- * Theory` articles. The body is a four-dimensional oriented Riemannian manifold with a spin structure, $c(v)^2=-g(v,v)\operatorname{id}$, and the spinor bundle $\mathcal{S}=\mathcal{S}^+\oplus\mathcal{S}^-$.
-
 ## The Twistor Fibration
 
 **Definition.** The **twistor space** of $(M,[g])$ is $Z(M)=\mathbb{P}(\mathcal{S}^-)$, the projectivisation of the negative spinor bundle; the **twistor projection** is $\pi : Z(M)\to M$, sending a line in $\mathcal{S}^-_x$ to the point $x$.

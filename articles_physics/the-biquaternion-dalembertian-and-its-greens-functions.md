@@ -69,7 +69,8 @@ $$
 $$
 The same computation with the factors exchanged gives $\tilde{\nabla}^{\natural}\tilde{\nabla} = e_t(\partial^2/\partial Q_t^2 + \Delta)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
 $$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta - c^{-2}\partial^2/\partial {t'}^2 .
+\boxed{\;
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta - c^{-2}\partial^2/\partial {t'}^2\;}.
 $$
 
 The result says two things. It says that the d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde{\nabla}\rangle_{\natural}$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $\langle\cdot\rangle_{\natural}$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
@@ -171,9 +172,10 @@ so that the inversion of the wave operator is the classical inversion of the Lap
 
 The rotationally invariant fundamental solution of $-\Delta_4 G = \delta^{(4)}$ in four dimensions is
 $$
+\boxed{\;
 G_{\mathrm{inv}}(\tilde{R}) = \frac{1}{4\pi^2\rho^2} ,
 \qquad
--\Box\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde{R}) .
+-\Box\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde{R})\;}.
 $$
 The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4x$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k)$ conjugate to the $ict'$ coordinate, $\Box \to -k_4^2 - \vec k^2$ and
 $$
@@ -194,7 +196,8 @@ where the Jacobian is $|dg/dt'| = 2c^2|t'| = 2cR$ at either root. Applying the f
 $$
 \Theta(t')\,\delta(\rho^2) = \frac{1}{2cR}\,\delta\!\left(t' - \frac{R}{c}\right) ,
 \qquad\text{hence}\qquad
-G_{\mathrm{ret}}(\tilde{R}) := \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(t')\,\delta(\rho^2) .
+\boxed{\;
+G_{\mathrm{ret}}(\tilde{R}) := \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(t')\,\delta(\rho^2)\;}.
 $$
 The Jacobian identity was checked by smearing $\Theta(t')\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\chi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\chi(R/c)/(2cR)$, whereas $\delta$ of ${t'}^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\chi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
 $$
@@ -240,9 +243,10 @@ $$
 $$
 and the defining equation becomes $(\Box - \mu^2)G = -\delta$. In the $ict'$ variables the shifted operator is Helmholtz's, $-\Delta_4 + \mu^2$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
 $$
+\boxed{\;
 G^{(\mu)}_{\mathrm{inv}}(\tilde{R}) = \frac{\mu}{4\pi^2\rho}\,K_1(\mu\rho) ,
 \qquad
-\left(-\Delta_4 + \mu^2\right) G^{(\mu)}_{\mathrm{inv}} = \delta^{(4)}(\tilde{R}) ,
+\left(-\Delta_4 + \mu^2\right) G^{(\mu)}_{\mathrm{inv}} = \delta^{(4)}(\tilde{R})\;},
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
@@ -260,13 +264,13 @@ which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + \vec 
 
 The Dirac and Maxwell equations are first order, and their kernel is the kernel of $\tilde{\nabla}$ rather than of $\Box$. Since $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, the inverse of left multiplication by $\tilde{\nabla}$ is left multiplication by $\tilde{\nabla}^{\natural}$ followed by the scalar kernel; the subscript names the operator inverted, as $G_\Box$ names $\Box$:
 $$
-\begin{aligned}
+\boxed{\;\begin{aligned}
 \tilde{G}_{\tilde{\nabla}}(\tilde{R}) &:= \tilde{\nabla}^{\natural}\,G_\Box(\tilde{R}) \in \mathbb{M}_- ,\\[2pt]
 \tilde{\nabla}\,\tilde{G}_{\tilde{\nabla}}(\tilde{R})
 &= \tilde{\nabla}\tilde{\nabla}^{\natural}\,G_\Box(\tilde{R})
 = \Box\,G_\Box(\tilde{R})
 = -\,\delta^{(4)}(\tilde{R}) .
-\end{aligned}
+\end{aligned}\;}
 $$
 So $\tilde{G}_{\tilde{\nabla}}$ inverts the first-order operator with the same sign as $G_\Box$ inverts the second. The result is not a scalar. With $G_\Box$ a real scalar kernel,
 $$

@@ -39,8 +39,6 @@ the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\le
 
 The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; the isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Q_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Q_1)$, the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $K_{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the wave biquaternion is $\tilde P=iEe_t+\vec p$ with $\tilde P\tilde P^{\natural}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, as *Conventions in the Biquaternion Universe* fixes.
-
 ## The Determinant of a Module Operator
 
 Let $S^{(2)}$ be a linear operator on the biquaternion module, and suppose for the moment that its spectrum is discrete and its determinant exists. Then
@@ -53,7 +51,7 @@ the second equality making sense on the principal branch. The operator acts on t
 
 **The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde P\tilde P^{\natural}+m^2=\mathcal{M}(\tilde P)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
-\det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2 .
+\boxed{\;\det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2\;}.
 $$
 The factor $\kappa^2$ is the module's two complex dimensions; equivalently, the central eigenvalue contributes once per complex dimension. On the algebra itself, regarded as a four-complex-dimensional space, multiplication by $\kappa$ has determinant $\kappa^4$, and the two are related by the change of the space on which the determinant is taken. The framework's determinant is thus defined once the module is chosen, and the module is fixed by the algebra.
 
@@ -69,7 +67,7 @@ The determinant of a *single* algebra element is an algebraic quantity, and it t
 
 **Proposition.** For every $\tilde Q\in\mathbb{B}$,
 $$
-\det\mathsf{M}_2(\tilde Q) = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big) = \langle\tilde Q\rangle_{\natural},
+\boxed{\;\det\mathsf{M}_2(\tilde Q) = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big) = \langle\tilde Q\rangle_{\natural}\;},
 $$
 where $\mathsf{M}_2$ is the isomorphism onto $M_2(\mathbb{C})$ and $\langle\cdot\rangle_{\natural}$ is the biquaternion norm.
 
@@ -79,7 +77,7 @@ The determinant of $\tilde Q$ is thus the **biquaternion norm**, the same object
 
 **Proposition (regular representation).** Left multiplication $L_{\tilde Q}:\tilde Q_2\mapsto\tilde Q\tilde Q_2$ and right multiplication $R_{\tilde Q}:\tilde Q_2\mapsto \tilde Q_2\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$
-\det L_{\tilde Q} = \det R_{\tilde Q} = \langle\tilde Q\rangle_{\natural}^2 .
+\boxed{\;\det L_{\tilde Q} = \det R_{\tilde Q} = \langle\tilde Q\rangle_{\natural}^2\;}.
 $$
 
 **Proof.** Under the isomorphism $\mathsf{M}_2$, left multiplication becomes left multiplication by the matrix $P=\mathsf{M}_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $P\otimes I_2$ in the basis $E_{ij}$ of matrix units; its determinant is $(\det P)^2$. Right multiplication becomes right multiplication by $P$, which is $I_2\otimes P^T$ in the same basis, with the same determinant $(\det P)^2$. By the previous proposition $\det P=\langle\tilde Q\rangle_{\natural}$, so both determinants equal $\langle\tilde Q\rangle_{\natural}^2$.

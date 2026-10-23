@@ -6,10 +6,6 @@ The biquaternion norm fixes what a motion is: the isometries of the form are the
 
 The article is the Geometry slot of the Lie-theoretic block: the algebra is *The 12 Products of the Biquaternion Complex Space*, the group and its exponential are *Biquaternion Lie Group and Exponential Structure*, and the topology of the group is *The Biquaternion Unit Group as a Topological Group*. The reflections and the Cartan–Dieudonné theorem are stated generally in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* of Part II, and their biquaternion case is worked here; the Clifford reading of the algebra is *Biquaternion Other Algebraic Element Representations*; the transformation group in full is in *Biquaternion Automorphisms and Derivations*; and the finite groups of units, together with the figures they determine, are *Biquaternion Orders and Finite Groups of Units*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde{Q}=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k \vec e_k$. The products are $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. The quaternion conjugation is $\tilde{Q}^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficient conjugation $\bar{\tilde{Q}}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$; the fixed space of ${}^{*}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, of polar form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\sum_\mu Q_{1\mu}Q_{2\mu}$, and $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). The elements with four real coefficients form the **quaternion layer** $\mathbb{H}_{\mathbb{B}}=\{Q_te_t+\vec Q:Q_t,Q_x,Q_y,Q_z\in\mathbb{R}\}$, a copy of the quaternion algebra $\mathbb{H}$ inside $\mathbb{B}$; its unit sphere is the set of **unit quaternions**, $Sp(1)=\{\tilde u\in\mathbb{H}_{\mathbb{B}}:\tilde u\tilde u^{\natural}=e_t\}$, whose elements this article calls **rotors**, and the norm-one group of the algebra is $\mathbb{B}^\times_1=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=e_t\}$. The pure elements, those with no scalar part, form the vector subspace $\mathrm{Vect}(\mathbb{B})=\{\tilde{Q}:Q_t=0\}$, and the unit pure quaternion, the axis of a rotor, is written $\vec u$.
-
----
-
 ## The Double Covers and the Lorentz Group
 
 The unit quaternions are the unit sphere $Sp(1)$, and they carry the motions of the definite form, with the double cover $SU(2)\to SO(3)$; their complexification $\mathbb{B}^\times_1\cong SL(2,\mathbb{C})$ carries the motions of the indefinite one. The centre $\{\pm e_t\}$ of $\mathbb{B}^\times_1$ is discrete, so the quotient is a Lie group, and
@@ -21,7 +17,7 @@ $$
 the proper orthochronous Lorentz group, of real dimension $6$. Hence $\mathbb{B}^\times_1$ is a two-sheeted cover of $SO^+(1,3)$ and, being simply connected, is its universal cover: it is the spin group of Lorentzian signature,
 
 $$
-\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{so}(1,3).
+\boxed{\;\mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{so}(1,3)\;}.
 $$
 
 The parameter count explains why the complexification is needed and what it costs. A Lorentz transformation has six real parameters, three of rotation and three of boost, and the quaternion algebra $\mathbb{H}_{\mathbb{B}}$ has real dimension four; there is no smooth embedding of $SO^+(1,3)$ into $\mathbb{H}_{\mathbb{B}}$, since the differential at any point would inject a six-dimensional tangent space into a four-dimensional one. The group manifold is the object that does not fit, while the action does: $SO^+(1,3)$ acts on the four-dimensional $\mathbb{M}_+$ without being contained in it. The quaternions contain the three-dimensional $S^3$, the double cover of the rotations, and even there the rotation group is the quotient $S^3/\{\pm e_t\}$ rather than a subset.
@@ -81,7 +77,7 @@ so the image is Hermitian and lies in $\mathbb{M}_+$; for $\tilde Q_3\in\mathbb{
 **Theorem (the scaling of the norm).** For every unit $\tilde{Q}$ and every $\tilde Q_3$,
 
 $$
-\langle\mathrm{H}_{\tilde{Q}}(\tilde Q_3)\rangle_{\natural}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}.
+\boxed{\;\langle\mathrm{H}_{\tilde{Q}}(\tilde Q_3)\rangle_{\natural}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}\;}.
 $$
 
 **Proof.** The biquaternion norm is multiplicative and central, $\langle ab\rangle_{\natural}=\langle a\rangle_{\natural}\langle b\rangle_{\natural}$, and $\langle\tilde{Q}^{*}\rangle_{\natural}=\overline{\langle\tilde{Q}\rangle_{\natural}}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $\langle\cdot\rangle_{\natural}$, with complex conjugation, which conjugates it. Hence $\langle\tilde{Q}\tilde Q_3\tilde{Q}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_3\rangle_{\natural}\overline{\langle\tilde{Q}\rangle_{\natural}}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}$.
@@ -107,9 +103,7 @@ $$
 
 The rotor is the block-diagonal $\operatorname{diag}(1,\mathsf R(\theta,\vec u))$ in both halves. For a general unit the matrix of the action is $r^{2}\Lambda_\pm$, with $\Lambda_\pm=B_\pm\operatorname{diag}(1,\mathsf R)\in SO^{+}(1,3)$; the image of the group of units is the linear conformal group
 
-$$
-CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3),
-$$
+$$ \boxed{\;CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)\;}, $$
 
 of real dimension seven, and not the full conformal group of Lorentzian space, whose translations and special conformal transformations are not sandwiches. The projective null cone, the celestial sphere and the Möbius action are in *Biquaternion Lorentzian and Conformal Geometry*.
 
@@ -272,9 +266,7 @@ Two dualities must be distinguished. The defining module is **self-dual** as a r
 
 Group representations tensor with the diagonal action $g \cdot (v \otimes w) = (gv) \otimes (gw)$. For the polynomial representations of $SL(2,\mathbb{C})$ the Clebsch–Gordan rule is
 
-$$
-V_j \otimes V_k \cong \bigoplus_{l=|j-k|}^{j+k} V_l, \qquad j, k \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}.
-$$
+$$ \boxed{\;V_j \otimes V_k \cong \bigoplus_{l=|j-k|}^{j+k} V_l, \qquad j, k \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}\;}. $$
 
 The tensor square of the spinor is the simplest nontrivial case:
 
@@ -287,7 +279,7 @@ The summand $V_1$ is the symmetric square and is the adjoint representation of t
 For the two-parameter family the rule applies to each factor:
 
 $$
-(m,n) \otimes (m',n') \cong \bigoplus_{k=0}^{\min(m,m')} \bigoplus_{k'=0}^{\min(n,n')} (m+m'-2k,\ n+n'-2k').
+\boxed{\;(m,n) \otimes (m',n') \cong \bigoplus_{k=0}^{\min(m,m')} \bigoplus_{k'=0}^{\min(n,n')} (m+m'-2k,\ n+n'-2k')\;}.
 $$
 
 For example, $(\tfrac{1}{2},\tfrac{1}{2}) \otimes (\tfrac{1}{2},\tfrac{1}{2}) \cong (0,0) \oplus (1,0) \oplus (0,1) \oplus (1,1)$, of dimension $1 + 3 + 3 + 9 = 16 = 4 \times 4$.

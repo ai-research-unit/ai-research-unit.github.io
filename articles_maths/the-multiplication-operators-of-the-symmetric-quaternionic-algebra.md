@@ -24,11 +24,6 @@ form $\langle\cdot\rangle_{\natural}$ and its role as the coefficient are *The Q
 Algebra*; the derivation layer of a general algebra is *Automorphisms and Derivations of Algebras*; the matrix models are
 *Introduction to the Symmetric Quaternionic Algebra*. Nothing of the enriched layer of Part II is used.
 
-**Conventions.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$; the product is $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$
-with $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$; an operator is written as a $4\times4$ matrix in the
-basis when its entries are needed, and the matrix of a linear map $T$ is written $[T]$; the transpose of a
-matrix is written with a superscript $\mathsf T$.
-
 ## The Operators, Their Matrices and Their Ranks
 
 **Proposition (the matrix of a multiplication).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the matrix of
@@ -63,8 +58,10 @@ statement is $\langle\tilde Q_5,\tilde Q_5\rangle_{\natural}=\langle\tilde Q_5\r
 **Proposition (trace and determinant).** For every $\tilde Q_5$,
 
 $$
+\boxed{\;
 \operatorname{Tr}\bigl(L^{\star}_{\tilde Q_5}\bigr) = Q_{5t}, \qquad
-\det\bigl(L^{\star}_{\tilde Q_5}\bigr) = 0 .
+\det\bigl(L^{\star}_{\tilde Q_5}\bigr) = 0
+\;}.
 $$
 
 *Proof.* The trace is the sum of the diagonal entries of the matrix above, and only the entry $(t,t)=Q_{5t}$ is
@@ -81,9 +78,7 @@ kernel and not by the trace.
 
 **Proposition (the composition law).** The multiplication operators compose by
 
-$$
-L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1} = Q_{5t}\,L^{\star}_{\tilde Q_1},
-$$
+$$ \boxed{\; L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1} = Q_{5t}\,L^{\star}_{\tilde Q_1} \;}, $$
 
 and the family $\{L^{\star}_{\tilde Q_5}:\tilde Q_5\in\mathbb{B}\}$ is a complex vector space of dimension $4$, the
 **monoid of multiplications** of the block.
@@ -123,9 +118,11 @@ which exists and is unique because $\langle\cdot\rangle_{\natural}$ is non-degen
 **Proposition (the adjoint of a multiplication).** For every $\tilde Q_5$,
 
 $$
+\boxed{\;
 \bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}\tilde Q_3 = \sum_\mu Q_{5\mu} Q_{3t}\,e_\mu ,
 \qquad\text{and}\qquad
-L^{\star}_{\tilde Q_5}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde Q_5\in\mathbb{C}e_t .
+L^{\star}_{\tilde Q_5}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde Q_5\in\mathbb{C}e_t
+\;}.
 $$
 
 *Proof.* $\langle L^{\star}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\rangle_{\natural}=N\bigl(\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu Q_{5\mu} Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu Q_{5\mu} Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} Q_{5\mu} Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For

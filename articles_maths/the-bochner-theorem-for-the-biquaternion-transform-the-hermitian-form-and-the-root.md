@@ -8,10 +8,6 @@ In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}
 
 The answer, and the content of the article, is one sentence. The positivity the theorem needs is the positivity of the general plain sesquilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, positive definite of signature $(8,0)$, and with that form the theorem holds exactly for the roots that are **skew-adjoint** for the Hermitian conjugation, $\tilde\Xi^{*}=-\tilde\Xi$ — the scalar imaginary $\tilde\Xi=\pm i$ and the real roots $\tilde\Xi=\pm\mu$ — and fails for the **genuinely complex** roots $\tilde\Xi=b\mu+d\nu i$. The failure recorded in *Biquaternion Continuous Harmonic Analysis* at the central element $i$ is a different statement: it tests the bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, it is independent of the root, and it belongs to the metric and not to the positivity. Both statements are true, and they are not the same statement.
 
-**Boundaries.** The transform, its kernel, the classification of the roots, the factorisation into four complex transforms and the vanishing-norm issue are *Biquaternion Continuous Harmonic Analysis* and *Biquaternion Discrete Harmonic Analysis*; the transform of a measure and its quadratic form with the natural conjugation are the section §*The Transform of a Measure, and the Failure of Positivity* of the continuous article, whose eighth open question this article answers. The positivity of the form, its cone and its signature are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint* and *Remarkable Subspaces under the General Plain Sesqualgebra*; the classical theorems are *Positive Definite Functions and Hermitian Kernels*, *Reproducing Kernel Hilbert Spaces* and *Positive Definite Distributions*; the quaternion case that does hold is *Quaternion Harmonic Analysis*. The four pairings are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the roots are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; the notation is *Conventions in Mathematics*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity, $\vec e_\mu^{2}=-e_t$ and $\vec e_\mu \vec e_\nu=\vec e_\lambda$ for $(\mu,\nu,\lambda)$ a cyclic permutation of $(1,2,3)$; a general element is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ with $Q_{2,\mu}\in\mathbb{C}$. The **coefficientwise conjugation** $\overline{\cdot}$ conjugates the coefficients; the **natural conjugation** ${}^{\natural}$ fixes $e_t$ and negates $\vec e_x,\vec e_y,\vec e_z$ and is $\mathbb{C}$-linear; the **Hermitian conjugation** is ${}^{*}=\overline{\cdot}\circ{}^{\natural}$, so $Q_{2,\nu}^{*}=\varepsilon_\nu\overline{Q_{2,\nu}}$ with $\varepsilon=(1,-1,-1,-1)$. The four pairings are $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, and $\mathrm{Tr}=2\,\mathrm{Sc}$. A **root** is an element $\tilde\Xi$ with $\tilde\Xi^{2}=-e_t$; following the physics companion, the roots of the first and second families of the classification — the scalar imaginary $\tilde\Xi=\pm i$ and the unit real roots $\tilde\Xi=\pm\mu$ — are called **degenerate**, and the roots $\tilde\Xi=b\mu+d\nu i$ with $\mu\perp\nu$ unit real and $b^{2}-d^{2}=1$ are called **genuinely complex**. The transform articles write the root $\rho$ and the kernel $W$; this article follows *Conventions in Mathematics* and writes $\tilde\Xi$ and $\chi$, the two being the same objects. All conventions are those of *Conventions in Mathematics*.
-
 ## The Context of the Theorem
 
 ### The Two Readings
@@ -103,7 +99,7 @@ The distinction of the columns is the point of the table: the natural conjugatio
 **Proposition.** For the kernel $\chi_\omega$ of a root $\tilde\Xi$, the Hermitian adjoint equals the inverse,
 
 $$
-\chi_\omega^{*}=\chi_\omega^{-1},
+\boxed{\;\chi_\omega^{*}=\chi_\omega^{-1}\;},
 $$
 
 **exactly when** $\tilde\Xi^{*}=-\tilde\Xi$, and this holds exactly for the degenerate roots.
@@ -146,7 +142,7 @@ $$
 The element $ZZ^{*}$ is Hermitian, $(ZZ^{*})^{*}=ZZ^{*}$, and in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$, whose representation $\mathsf{M}_2$ is a $*$-homomorphism, it is the matrix $\mathsf{M}_2(Z)\mathsf{M}_2(Z)^{\dagger}$, positive semidefinite. An integral of positive elements against a positive measure is positive, so $Q(A)\geq 0$. This is the biquaternion Bochner theorem, and it holds **exactly for the degenerate roots**, whose character is unitary:
 
 $$
-\text{every finite positive measure has a positive-definite transform}\ \Longleftrightarrow\ \tilde\Xi^{*}=-\tilde\Xi\ \Longleftrightarrow\ \tilde\Xi\ \text{is degenerate.}
+\boxed{\;\text{every finite positive measure has a positive-definite transform}\ \Longleftrightarrow\ \tilde\Xi^{*}=-\tilde\Xi\ \Longleftrightarrow\ \tilde\Xi\ \text{is degenerate.}\;}
 $$
 
 The factorisation proves the direction from the right to the left, and it is the half a Bochner theorem proves by hand. The other direction is proved in §*The Genuine Failure: Every Genuinely Complex Root*, whose proposition produces for every genuinely complex root a value of the form that is not even Hermitian. Both directions are therefore proved, and the equivalence is a theorem of the algebra and not a choice of convention. The quantifier is a part of the statement: what the factorisation gives is a property of **every** positive measure at once, and what the converse gives is one measure at which the property fails, so the criterion is about the class of measures and not about a transform chosen in advance.
@@ -184,7 +180,7 @@ $$
 Its Hermitian conjugate is $Q^{*}=2e_t-2ib\mu-2d\nu$, so
 
 $$
-Q-Q^{*}=4d\nu\neq0,\qquad \mathrm{Her}\,Q=\tfrac12\bigl(Q+Q^{*}\bigr)=2e_t-2ib\mu=2\bigl(e_t-ib\mu\bigr),
+\boxed{\;Q-Q^{*}=4d\nu\neq0,\qquad \mathrm{Her}\,Q=\tfrac12\bigl(Q+Q^{*}\bigr)=2e_t-2ib\mu=2\bigl(e_t-ib\mu\bigr)\;},
 $$
 
 and $G$ is not positive definite.

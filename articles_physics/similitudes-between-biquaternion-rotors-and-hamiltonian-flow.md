@@ -133,13 +133,13 @@ $$
 which is rotation of $\vec S$ about $\vec u_{\mathrm r}$ by angle $\omega t'$. The generators agree **exactly**: with $\vec S$ treated as a pure quaternion,
 
 $$
-[G, \vec S] \;=\; 2\,G\times\vec S \;=\; \omega\,\vec u_{\mathrm r}\times\vec S \;=\; \{\vec S, H\},
+\boxed{\;[G, \vec S] \;=\; 2\,G\times\vec S \;=\; \omega\,\vec u_{\mathrm r}\times\vec S \;=\; \{\vec S, H\}\;}
 $$
 
 since $[G,\vec S] = G\vec S - \vec SG = 2\,G\times\vec S$ and $2G = \omega\vec u_{\mathrm r}$. Equivalently, the Hamiltonian that generates the flow of the rotor generator $G$ is
 
 $$
-\boxed{\;H_G(\vec S) \;=\; 2\,G\cdot\vec S.\;}
+\boxed{\;H_G(\vec S) \;=\; 2\,G\cdot\vec S\;}.
 $$
 
 The factor $2$ is the spinor double cover: the rotor parameter is half the rotation angle, so the Hamiltonian, which generates the rotation at the full rate, is twice the natural pairing of the generator with the orbit coordinate. If the generator is instead taken in the adjoint (vector) representation, $G_{\mathrm{vec}} = 2G$, the Hamiltonian is the plain pairing $H = G_{\mathrm{vec}}\cdot\vec S$, and no factor appears.
@@ -147,9 +147,8 @@ The factor $2$ is the spinor double cover: the rotor parameter is half the rotat
 Both sides of this identity are derivations of the algebra of functions on the orbit, and they agree on the coordinate functions $S_i$; hence they agree on the whole polynomial algebra they generate, and the agreement descends to the orbit because both annihilate the Casimir ($[G,\vec S^2] = 0$ and $\{\vec S^2, H\} = 0$). Consequently the flows agree as one-parameter groups,
 
 $$
-\rho\big(\exp(t'G)\big) \;=\; \phi^{H_G}_{t'} \qquad \text{on the orbit, for all } t' .
+\boxed{\;\rho\big(\exp(t'G)\big) \;=\; \phi^{H_G}_{t'} \qquad \text{on the orbit, for all } t'\;}.
 $$
-
 
 So: **on the coadjoint orbit, the rotor group action and the Hamiltonian flow of the corresponding linear Hamiltonian are the same one-parameter group.** The map $G \mapsto H_G$ is a linear isomorphism from the compact Lie algebra $\mathrm{SU}(2)$ (the traceless real pure quaternions) onto the space of linear functions $\mathrm{span}\{S_1, S_2, S_3\}$ on the orbit, and it intertwines the exponential map of the rotor group with the Hamiltonian flow. This is the exact sense of the similitude.
 

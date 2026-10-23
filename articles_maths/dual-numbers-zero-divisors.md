@@ -31,7 +31,9 @@ Because $\mathbb{D}'_R$ is commutative, left and right annihilation coincide and
 **Theorem.** Let $R$ be an integral domain and let $Q_1 = q_1 + \varepsilon q'_1 \in \mathbb{D}'_R$ be nonzero. Then $Q_1$ is a zero divisor if and only if its real part vanishes:
 
 $$
-Q_1 \text{ is a zero divisor} \iff q_1 = 0 \iff Q_1 \in \mathrm{M} \setminus \{0\}.
+\boxed{\;
+Q_1 \text{ is a zero divisor} \iff q_1 = 0 \iff Q_1 \in \mathrm{M} \setminus \{0\}
+\;}.
 $$
 
 **Proof.** Suppose $q_1 = 0$, so $Q_1 = \varepsilon q'_1$ with $q'_1 \neq 0$. Then
@@ -93,7 +95,9 @@ The natural invariant here is the real part $q = \operatorname{Re} Q$, and the c
 **Theorem.** Every zero divisor of $\mathbb{D}'_R$ is nilpotent, and in fact squares to zero:
 
 $$
-Q \in \mathcal{Z} \implies Q^2 = 0.
+\boxed{\;
+Q \in \mathcal{Z} \implies Q^2 = 0
+\;}.
 $$
 
 **Proof.** If $Q = \varepsilon q'$ then $Q^2 = q'^2 \varepsilon^2 = 0$.
@@ -111,7 +115,9 @@ $$
 **Proposition.** For every nonzero $Q_1 = \varepsilon q'_1 \in \mathrm{M}$,
 
 $$
-\operatorname{Ann}(Q_1) = \mathrm{M} = (\varepsilon),
+\boxed{\;
+\operatorname{Ann}(Q_1) = \mathrm{M} = (\varepsilon)
+\;},
 $$
 
 the maximal ideal itself; the annihilator of a unit is $0$.

@@ -4,10 +4,6 @@
 
 The Euclidean topology of the reduced biquaternion algebra is the topology of the norm $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}$, and this article develops it: the isometry onto $\mathbb{R}^{4}$, the algebra read as a normed algebra, the contractibility, the unit group as a topological group, the Euclidean unit sphere and the topology of the zero-divisor set. The algebra is **commutative**, and the two facts that shape the topology are that the multiplication **has zero divisors** — so the norm is not submultiplicative with constant one, and the unit group is the complement of the zero-divisor set — and that the algebra is **not a division algebra**. The Euclidean topology is the subject; the algebraic norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is only the tool, and the four algebraic norms are distinguished from it throughout.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$. The Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}$, from the positive definite form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde.
-
-**Boundaries.** The topology and the metric are set up in *Topology in the Space of Reduced Biquaternions*; the metric of each product is *Topology and Metric for Each of the Operations*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the unit group and its complement are *The Group of Units of the Algebra of the Reduced Biquaternions*; and the forms are *The Forms of the Algebra of the Reduced Biquaternions*. The biquaternion counterpart is *The Euclidean Topology of the Biquaternion Algebra*.
-
 ## The Euclidean Norm and the Isometry onto $\mathbb{R}^{4}$
 
 **The norm is the Euclidean norm of the coordinate quadruple, and the coordinate map is an isometry onto $\mathbb{R}^{4}$.**
@@ -30,7 +26,9 @@ is an isometry of $\mathbb{B}_{\mathrm{r}}$ with the norm $\lVert\cdot\rVert$ on
 
 **Theorem (the multiplication inequality).** For all $\breve Q_{1},\breve Q_{2}$,
 $$
-\lVert \breve Q_{1}\breve Q_{2}\rVert\le\sqrt2\,\lVert \breve Q_{1}\rVert\lVert \breve Q_{2}\rVert,
+\boxed{\;
+\lVert \breve Q_{1}\breve Q_{2}\rVert\le\sqrt2\,\lVert \breve Q_{1}\rVert\lVert \breve Q_{2}\rVert
+\;},
 $$
 and the constant $\sqrt2$ is sharp; more precisely
 $$
@@ -74,7 +72,9 @@ $$
 
 **Theorem (the unit group).** The unit group
 $$
+\boxed{\;
 \mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{\breve Q:Q_{+}\neq0,\ Q_{-}\neq0\}
+\;}
 $$
 is open and dense, and it is a topological group: the multiplication and the inversion are continuous.
 
@@ -124,7 +124,9 @@ which are disjoint; the complement of the two circles in $S^{3}$ is the set of *
 
 **Theorem (the shape).** The zero-divisor set is
 $$
-\mathcal Z=\{\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\{Q_{+}=0\}\cup\{Q_{-}=0\}=P_-\cup P_+,
+\boxed{\;
+\mathcal Z=\{\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\{Q_{+}=0\}\cup\{Q_{-}=0\}=P_-\cup P_+
+\;},
 $$
 where $P_-=\mathbb{C}\Pi_-$ is the plane $\{Q_{\blacktriangle}+Q_{\blacktriangledown}=0\}$ and $P_+=\mathbb{C}\Pi_+$ is the plane $\{Q_{\blacktriangle}-Q_{\blacktriangledown}=0\}$, each a copy of $\mathbb{C}$, meeting only at the origin.
 

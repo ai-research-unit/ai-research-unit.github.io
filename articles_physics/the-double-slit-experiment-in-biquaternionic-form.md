@@ -16,8 +16,6 @@ One further finding is reported as a **limit on what the double slit demonstrate
 
 The article is organized as follows. The next section writes the two-route amplitude and its interference. The section after that treats the fringe pattern and its standard geometry. The following section identifies the which-path qubit and its Bloch ball. The next proves the visibility–predictability bound and reads it as the cone condition. A section treats which-path detection and dephasing. A section examines the choice of phase root. A section treats spinor-valued routes and spin-dependent fringes. The article closes with what the algebra supplies, what it does not, and the open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ and its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$. A Hermitian element is written $\tilde{H} = h_t e_t + i\vec h$, an idempotent is $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion, and a state is $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ with $|\vec r|\le 1$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The normalised Hermitian form, read as the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$, is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.
-
 ## The Two-Path Amplitude
 
 Let $K_j(X)$ be the amplitude for the particle to arrive at the screen point $X$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:
@@ -41,7 +39,7 @@ $$
 which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{C}_{\mathbb{B}}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the Hermitian norm of the amplitude:
 
 $$
-K(X)K(X)^{*} = I(X)\,e_t, \qquad I(X) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(X), \qquad \delta(X) := \varphi_1(X) - \varphi_2(X).
+\boxed{\;K(X)K(X)^{*} = I(X)\,e_t, \qquad I(X) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(X), \qquad \delta(X) := \varphi_1(X) - \varphi_2(X)\;}.
 $$
 
 **Only the relative phase is observable.** The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $\exp(ic)$, which cancels in the Hermitian norm $KK^{*}$; and it cancels in any state built from $K$ as well, since $KK^{*} \mapsto \exp(ic)KK^{*} \exp(-ic) = KK^{*}$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
@@ -147,7 +145,7 @@ $$
 so that $|\vec r|^2 = 1 - 4\,\mathrm{Sc}\bigl(\langle\tilde{Ϛ}\rangle_{\natural}\bigr)$, and therefore
 
 $$
-V^2 + P^2 = 1 - 4\,\mathrm{Sc}\bigl(\langle\tilde{Ϛ}\rangle_{\natural}\bigr).
+\boxed{\;V^2 + P^2 = 1 - 4\,\mathrm{Sc}\bigl(\langle\tilde{Ϛ}\rangle_{\natural}\bigr)\;}.
 $$
 
 By *The Bloch Ball as the Normalised Slice of the Future Light Cone*, a trace-one element of $\mathbb{M}_+$ is a physical state exactly when it lies in the future light cone of the biquaternion norm, and it is pure exactly when it lies *on* the cone, where it is a zero divisor. Hence
@@ -233,7 +231,7 @@ $$
 where $\langle s_1,s_2\rangle := \mathrm{Tr}(s_1^\dagger s_2)$ is the module inner product, of modulus at most one. The visibility is therefore
 
 $$
-V = \frac{2a_1a_2\,|\langle s_1,s_2\rangle|}{a_1^2 + a_2^2},
+\boxed{\;V = \frac{2a_1a_2\,|\langle s_1,s_2\rangle|}{a_1^2 + a_2^2}\;},
 $$
 
 maximal when the two route spinors are parallel (the scalar case) and vanishing when they are orthogonal, whatever the relative phase. Here the route label $j$ is the index of the two terms, not a second factor of the module; describing a path and a spin together as two qubits would require the tensor-product extension that *Quantum Physics in Biquaternionic Form* leaves open. This is the **spin-dependent double slit** in the framework's language, and it makes two things visible at once.
@@ -286,7 +284,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 The double-slit experiment in biquaternionic form is the statement that two route amplitudes, each a **central** complex phase $a_j \exp(iS_j/\hbar)$, add, and that the intensity is their squared modulus:
 
 $$
-I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta, \qquad \delta = \frac{S_1 - S_2}{\hbar}.
+\boxed{\;I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta, \qquad \delta = \frac{S_1 - S_2}{\hbar}\;}.
 $$
 
 A common phase shift is unobservable, so only the relative phase $\delta$ — a central element whose exponent lies in $\mathbb{M}_-$ along $ict'$ — is read off. The standard geometry (nodes where $d\sin\theta = (m+\tfrac12)\lambda$, spacing $\lambda D/d$) is unchanged and is an input, not an output, of the algebra.

@@ -23,16 +23,6 @@ Third, and this is the honest boundary of the classical interpretation, **the ce
 
 The article proceeds: the centre is defined and computed; five equivalent characterizations are given; its role as the classical sector is developed, including the superselection question; the state-dependent commuting slices are described and their non-canonicity is contrasted with the centre's canonicity; and the limitations are stated. The companion articles *The Quantum–Classical Divide in the Biquaternion Framework* and *Fundamental and Derived Elements in the Biquaternion Framework* are the companions for the physical and the structural interpretations respectively, and the present article supplies the algebraic identification on which both rest.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central scalar imaginary $i$, $i^2=-1$. Conjugations: ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), $\flat=-{}^{*}$. The Hermitian and anti-Hermitian subspaces are
-$$
-\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
-\qquad
-\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
-\qquad
-\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
-$$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$.
-
 ## The Centre: Definition and Computation
 
 **Definition.** The centre of $\mathbb{B}$ is the set of elements that commute with every element,
@@ -128,7 +118,7 @@ a fact visible in the matrix model (a single non-zero matrix and its two-sided m
 
 **No central idempotents.** A central idempotent is a $\tilde Q_3\in Z(\mathbb{B})$ with $\tilde Q_3^2=\tilde Q_3$. Writing $\tilde Q_3=c\,e_t$ and using $\tilde Q_3^2=c^2e_t$, the equation is $c^2=c$, whose only solutions are $c=0,1$. Hence
 $$
-\bigl\{\text{central idempotents of }\mathbb{B}\bigr\}=\{0,\ e_t\}.
+\boxed{\;\bigl\{\text{central idempotents of }\mathbb{B}\bigr\}=\{0,\ e_t\}\;}.
 $$
 The check was performed numerically on the central candidates and confirms that $0$ and $e_t$ are the only ones.
 
@@ -292,7 +282,7 @@ reason there is none and the weaker rule that is present.
 
 The centre of the biquaternion algebra is
 $$
-Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C},
+\boxed{\;Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C}\;},
 $$
 the two-real-dimensional subalgebra of complex multiples of the unit; its Hermitian part is the one-real-dimensional line $\mathbb{R}e_t$. It is characterized equivalently as the commuting part of the algebra, the fix-point set of the adjoint action of the unitary group, the common kernel of the inner derivations, the locus where the plain form factorizes, and the preimage of the scalar matrices in the matrix model. These characterizations agree, which is what makes the centre canonical rather than conventional, and it is in this sense that it is **the** classical sector.
 

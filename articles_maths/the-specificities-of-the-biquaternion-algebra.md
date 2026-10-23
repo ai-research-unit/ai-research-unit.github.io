@@ -6,10 +6,6 @@ Of the twelve algebraic structures that the complex space $\mathbb{B}=\mathbb{C}
 
 The reason is **left alternativity**, the law $\tilde Q_1(\tilde Q_1\tilde Q_2)=(\tilde Q_1\tilde Q_1)\tilde Q_2$ at every pair; it is equivalent to the operator identity $L_{\tilde Q_1}L_{\tilde Q_1}=L_{\tilde Q_1\tilde Q_1}$, and it is the threshold at which the operator calculus of the block begins. It is strictly weaker than associativity, so it is the sharp statement, and it is the criterion that separates the plain product from the other eleven. What the criterion opens is the block's own subject matter: the projectors of the idempotents, the flags of the nilpotents, the Peirce decomposition with its corner subalgebras and matrix units, the ideal lattice, the enveloping algebra and the module category. This article states the criterion, reads the unital theory of the block as its consequence, and closes by naming the eleven structures that fail the law and the one structure that sits on its boundary.
 
-**Placement.** The article closes the *Specific Theory* section of the biquaternion algebra, after *Ideals and Peirce Decomposition of the Biquaternion Algebra* and *Modules over the Biquaternion Algebra*, whose results it reads back as consequences of one identity; the enveloping algebra of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* is in the *Operators* section of the same block and is cited, not sequenced. It is a synthesis: it uses the classification of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the four products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the property table of *Comparison Between the Four General Products* and the closure failure of *Relations Between the Four General Products* §*The Left Multiplications*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The **plain product** is written as juxtaposition $\tilde Q_1\tilde Q_2$; a product written $\circ$ is a generic one, and its identity is stated at each use. The natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural}=Q_t-\vec Q$; the star is ${}^{*}$, the Hermitian conjugation of the corpus, $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, the composite of the natural conjugation with the conjugation of the coefficients; and the **bar** is $\overline{\tilde Q}=\tilde Q^{\natural*}=\tilde Q^{*\natural}$, the conjugation of the coefficients alone; all three fix $e_t$, and the star and the bar are conjugate-linear. The **left multiplication** of a product $\circ$ by $\tilde Q_1$ is the map $L^{\circ}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\circ\tilde Q_2$, and the superscript is dropped for the plain product. The subscript is the element, never the operator: $L_{\tilde Q_1}L_{\tilde Q_2}$ is the composite $L_{\tilde Q_1}\circ L_{\tilde Q_2}$. An **idempotent** of the algebra is an element equal to its own square, and a **projector** is an idempotent operator, that is an idempotent of the morphism space; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of the criterion below is exactly that correspondence for the plain product.
-
 ## The Criterion
 
 **Definition (left alternativity).** A product $\circ$ on the complex space is **left-alternative** when
@@ -21,7 +17,9 @@ $$
 **Theorem (the criterion).** For a product $\circ$ the operator identity
 
 $$
+\boxed{\;
 L^{\circ}_{\tilde Q_1}\circ L^{\circ}_{\tilde Q_1}=L^{\circ}_{\tilde Q_1\circ\tilde Q_1}\qquad\text{for every }\tilde Q_1
+\;}
 $$
 
 holds exactly when $\circ$ is left-alternative.
@@ -47,8 +45,10 @@ The block is not only the one structure where the criterion holds; it is the one
 **The algebra.** The plain product is associative, unital with unit $e_t$, and $\mathbb{C}$-bilinear, so $\mathbb{B}$ is an associative unital $\mathbb{C}$-algebra. Under the $2\times2$ matrix element representation of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, with $M(e_t)=\mathbb 1$ and $M(\vec e_k)=-i\sigma_k$, the algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, a central simple algebra of complex dimension four. Its centre is the scalar line,
 
 $$
-Z(\mathbb{B})=\mathbb{C}e_t,
-$$
+\boxed{\;
+Z(\mathbb{B})=\mathbb{C}e_t
+\;}
+$$,
 
 and it has no two-sided ideal other than $0$ and $\mathbb{B}$: the block is **simple**, and every non-zero element generates the whole algebra as a two-sided ideal.
 
@@ -63,9 +63,11 @@ for a non-zero element $\tilde\Upsilon$ of square zero, and the mirror for the r
 **The Peirce decomposition.** The idempotents of the block are the idempotent matrices, and each non-trivial idempotent $\tilde\Pi$ with complementary idempotent $\tilde\Pi'=e_t-\tilde\Pi$ gives the **quadratic** Peirce decomposition
 
 $$
+\boxed{\;
 \mathbb{B}=\mathbb{B}_{11}\oplus\mathbb{B}_{12}\oplus\mathbb{B}_{21}\oplus\mathbb{B}_{22},\qquad
-\mathbb{B}_{ij}=\{\tilde Q:\tilde\Pi\tilde Q\tilde\Pi_j=\tilde Q\},\quad \tilde\Pi_1=\tilde\Pi,\ \tilde\Pi_2=\tilde\Pi',
-$$
+\mathbb{B}_{ij}=\{\tilde Q:\tilde\Pi\tilde Q\tilde\Pi_j=\tilde Q\},\quad \tilde\Pi_1=\tilde\Pi,\ \tilde\Pi_2=\tilde\Pi'
+\;}
+$$,
 
 into two **corner subalgebras** $\mathbb{B}_{11}=\tilde\Pi\mathbb{B}\tilde\Pi$ and $\mathbb{B}_{22}=\tilde\Pi'\mathbb{B}\tilde\Pi'$, each isomorphic to $\mathbb{C}$, and two off-diagonal spaces $\mathbb{B}_{12}=\tilde\Pi\mathbb{B}\tilde\Pi'$ and $\mathbb{B}_{21}$, each of complex dimension one, carrying the **matrix units** $E_{ij}\in\mathbb{B}_{ij}$ with
 

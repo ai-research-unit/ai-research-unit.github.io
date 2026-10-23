@@ -36,9 +36,7 @@ The **antisymmetric plain algebra** of the biquaternions is the operation $\wedg
 
 **Proposition (the cross product of the vector parts).** For all $\tilde Q_1,\tilde Q_2$,
 
-$$
-\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2,
-$$
+$$ \boxed{\; \tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2 \;}, $$
 
 where $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$ and $\vec Q_2=(Q_{2x},Q_{2y},Q_{2z})$ are the vector parts, and the scalar part of the product is zero, $\operatorname{Sc}(\tilde Q_1\wedge\tilde Q_2)=0$.
 
@@ -62,9 +60,7 @@ where $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$ and $\vec Q_2=(Q_{2x},Q_{2y},Q_{2z})$ ar
 
 **Proposition.** The operation is half the commutator of the algebra,
 
-$$
-[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1=2\,(\tilde Q_1\wedge\tilde Q_2),
-$$
+$$ \boxed{\; [\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1=2\,(\tilde Q_1\wedge\tilde Q_2) \;}, $$
 
 and the commutator is the cross product of the vector parts with the factor two, $[\tilde Q_1,\tilde Q_2]=2\,\vec Q_1\times\vec Q_2$.
 
@@ -84,9 +80,7 @@ $$
 
 **Theorem (the Jacobi identity).** The operation satisfies
 
-$$
-(\tilde Q_1\wedge\tilde Q_2)\wedge\tilde Q_3+(\tilde Q_2\wedge\tilde Q_3)\wedge\tilde Q_1+(\tilde Q_3\wedge\tilde Q_1)\wedge\tilde Q_2=0
-$$
+$$ \boxed{\; (\tilde Q_1\wedge\tilde Q_2)\wedge\tilde Q_3+(\tilde Q_2\wedge\tilde Q_3)\wedge\tilde Q_1+(\tilde Q_3\wedge\tilde Q_1)\wedge\tilde Q_2=0 \;} $$
 
 for all $\tilde Q_1,\tilde Q_2,\tilde Q_3\in\mathbb{B}$.
 

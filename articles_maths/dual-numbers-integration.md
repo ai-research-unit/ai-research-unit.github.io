@@ -128,7 +128,9 @@ $$
 **Theorem (fibre decomposition).** Let $\gamma : [a,b] \to \Omega$ be piecewise $C^1$ and let $f = u + v\varepsilon$ be continuous on a neighbourhood of $\gamma^*$. Then
 
 $$
-\int_\gamma f(Q)\,dQ = \int_\gamma u\,dq + \varepsilon\left(\int_\gamma u\,dq' + \int_\gamma v\,dq\right),
+\boxed{\;
+\int_\gamma f(Q)\,dQ = \int_\gamma u\,dq + \varepsilon\left(\int_\gamma u\,dq' + \int_\gamma v\,dq\right)
+\;},
 $$
 
 where each integral on the right is an ordinary real line integral of a real $1$-form, taken over the projections $t \mapsto q(\gamma(t))$ and $t \mapsto q'(\gamma(t))$.
@@ -218,7 +220,9 @@ The corollary is the reason every statement of the vanishing half of the theory 
 **Theorem (Cauchy–Goursat, dual form).** Let $f$ be dual differentiable on a domain $\Omega$ and let $\gamma$ be a closed piecewise $C^1$ path in $\Omega$. Then
 
 $$
-\oint_\gamma f(Q)\,dQ = 0.
+\boxed{\;
+\oint_\gamma f(Q)\,dQ = 0
+\;}.
 $$
 
 **Proof.** By the corollary, $f = u(q) + (q'u'(q) + c(q))\varepsilon$ with $u, c$ continuous on the projection of $\Omega$. Choose ordinary antiderivatives $A$ of $u$ and $C$ of $c$ and set
@@ -232,7 +236,9 @@ The real part $A(q)$ satisfies $\partial/\partial q' A = 0$, and the infinitesim
 **Theorem (primitive).** Every dual differentiable function on a domain $\Omega$ has a primitive on $\Omega$, and the integral is given by the endpoint formula
 
 $$
-\int_\gamma f(Q)\,dQ = F(\gamma(b)) - F(\gamma(a)).
+\boxed{\;
+\int_\gamma f(Q)\,dQ = F(\gamma(b)) - F(\gamma(a))
+\;}.
 $$
 
 **Proof.** The function $F$ constructed above is defined on all of $\Omega$, and its construction uses only that $u$ and $c$ are continuous functions of one real variable on the intervals that are the projections of $\Omega$.
@@ -402,7 +408,9 @@ Because the infinitesimal direction is nilpotent, the Taylor expansion of a diff
 **Theorem (exact expansion).** Let $f$ be dual differentiable on an open set $\Omega$ and let $Q \in \Omega$ and $h \in \mathrm{M}$ with $Q + h \in \Omega$. Then
 
 $$
-f(Q + h) = f(Q) + f'(Q)\,h.
+\boxed{\;
+f(Q + h) = f(Q) + f'(Q)\,h
+\;}.
 $$
 
 **Proof.** Write $Q = q + \varepsilon q'$ and $h = s\varepsilon$. By the structure theorem, $f(Q + h) = u(q) + ((q'+s)u'(q) + c(q))\varepsilon = f(Q) + s\,u'(q)\varepsilon$. Since $f'(Q) = u'(q) + (q'u''(q) + c'(q))\varepsilon$ and $\varepsilon\cdot\varepsilon = 0$, one has $f'(Q)h = u'(q)s\varepsilon$, and the two expressions agree. There is no remainder term because $h^2 = 0$.
@@ -424,7 +432,9 @@ The relation between this derivation and the fibre integral is the following.
 **Proposition (fundamental theorem along a fibre).** Let $f$ be dual differentiable on a neighbourhood of the fibre segment $\sigma$ from $q_0 + b_0\varepsilon$ to $q_0 + b_1\varepsilon$. Then
 
 $$
-\int_\sigma f(Q)\,dQ = (b_1 - b_0)\,\pi(f(q_0))\,\varepsilon = (b_1 - b_0)\,\operatorname{Re} f(q_0)\,\varepsilon,
+\boxed{\;
+\int_\sigma f(Q)\,dQ = (b_1 - b_0)\,\pi(f(q_0))\,\varepsilon = (b_1 - b_0)\,\operatorname{Re} f(q_0)\,\varepsilon
+\;},
 $$
 
 and for a differentiable $f$ the infinitesimal part is recovered from the derivative of the real part:

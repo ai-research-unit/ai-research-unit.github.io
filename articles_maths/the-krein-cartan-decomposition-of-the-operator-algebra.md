@@ -4,8 +4,6 @@
 
 The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the **three adjoints** of the operator algebra (the transpose of the general quaternionic bilinear form, the Hermitian adjoint, the Krein adjoint), the **three involutions** they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is *not* a Cartan involution; and the Cartan involution of $\mathrm{U}(1,3)$ itself, whose symmetric space is the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*. The group is *The Krein Isometry Group and Its $J$-Contractions*; the individual operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
-**Conventions.** $\mathbb{B}\cong\mathbb{C}^{4}$ with coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$; the general plain sesquilinear form has Gram matrix $\mathrm{I}_4$, the general quaternionic bilinear form $\mathrm{I}_4$ and the general quaternionic sesquilinear form $E=\mathrm{diag}(1,-1,-1,-1)$; $J={}^{\natural}$ with matrix $E$; the Krein adjoint of an operator $M$ is $M^{\dagger}=JM^{*}J$, where $M^{*}$ is the conjugate transpose; and $\mathfrak{g}=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the real Lie algebra of all $\mathbb{C}$-linear operators, of real dimension $32$.
-
 ## The Three Adjoints of the Operator Algebra
 
 **Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* define three adjoints,
@@ -31,9 +29,9 @@ $$
 **Theorem (the three fixed algebras).** The fixed algebras of the three involutions are the classical Lie algebras
 
 $$
-\mathfrak{g}^{\theta_{\mathsf T}}=\{M:M^{\mathsf T}=-M\}=\mathfrak{so}_4(\mathbb{C}),
+\boxed{\;\mathfrak{g}^{\theta_{\mathsf T}}=\{M:M^{\mathsf T}=-M\}=\mathfrak{so}_4(\mathbb{C}),
 \qquad
-\mathfrak{g}^{\theta_{*}}=\{M:M^{*}=-M\}=\mathfrak{u}(4),
+\mathfrak{g}^{\theta_{*}}=\{M:M^{*}=-M\}=\mathfrak{u}(4)\;},
 $$
 $$
 \mathfrak{g}^{\theta_{J}}=\{M:M^{\dagger}=-M\}=\mathfrak{u}(1,3),
@@ -57,15 +55,13 @@ $$
 
 **Theorem (the decomposition and the bracket pattern).** The decomposition is direct, $\dim_{\mathbb{R}}\mathfrak{k}=\dim_{\mathbb{R}}\mathfrak{p}=16$, the relations
 
-$$
-\langle\mathfrak{k},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{k},
+$$ \boxed{\;\langle\mathfrak{k},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{k},
 \qquad
 \langle\mathfrak{p},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{p},
 \qquad
 \langle\mathfrak{p},\mathfrak{p}\rangle_{\natural*}\subseteq\mathfrak{k},
 \qquad
-\{\mathfrak{p},\mathfrak{p}\}\subseteq\mathfrak{p}
-$$
+\{\mathfrak{p},\mathfrak{p}\}\subseteq\mathfrak{p}\;} $$
 
 hold, with $\{\cdot,\cdot\}$ the anticommutator, so $\mathfrak{k}$ is a Lie subalgebra, $\mathfrak{p}$ is a Jordan subalgebra, and the pair $(\mathfrak{k},\mathfrak{p})$ is a Lie–Jordan pair attached to the general quaternionic sesquilinear form.
 
@@ -105,13 +101,11 @@ $$
 
 to the Krein isometry group is a Cartan involution of $\mathrm{U}(1,3)$; its fixed group is the maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$, and its differential $\theta_{0}(M)=-M^{*}$ splits
 
-$$
-\mathfrak{u}(1,3)=\mathfrak{k}_{0}\oplus\mathfrak{p}_{0},
+$$ \boxed{\;\mathfrak{u}(1,3)=\mathfrak{k}_{0}\oplus\mathfrak{p}_{0},
 \qquad
 \mathfrak{k}_{0}=\mathfrak{u}(1)\oplus\mathfrak{u}(3),
 \qquad
-\dim_{\mathbb{R}}\mathfrak{k}_{0}=10,\quad \dim_{\mathbb{R}}\mathfrak{p}_{0}=6 .
-$$
+\dim_{\mathbb{R}}\mathfrak{k}_{0}=10,\quad \dim_{\mathbb{R}}\mathfrak{p}_{0}=6\;}. $$
 
 **Proof.** For $T\in \mathrm{U}(1,3)$, that is $T^{*}ET=E$, the operator $T^{*}$ is again in $\mathrm{U}(1,3)$ and $\theta_{0}$ preserves the group; its fixed elements are the isometries that are unitary for $\langle\cdot,\cdot\rangle$, i.e. $\mathrm{U}(4)\cap \mathrm{U}(1,3)=\mathrm{U}(1)\times \mathrm{U}(3)$. The differential is $-M^{*}$, whose fixed algebra on $\mathfrak{u}(1,3)$ is $\mathfrak{u}(1)\oplus\mathfrak{u}(3)$ of real dimension $1+9=10$, leaving $\mathfrak{p}_{0}$ of dimension $16-10=6$; the fixed group is compact, which is the definition of a Cartan involution.
 
@@ -125,9 +119,7 @@ is a Riemannian symmetric space of real dimension $6$, and it is the complex hyp
 
 **Proof.** The quotient of a Lie group by a maximal compact subgroup is a symmetric space of non-compact type, of dimension $\dim\mathfrak{p}_{0}=6$; the identification with the space of positive lines and with the ball is the parametrisation of the maximal positive definite subspaces. The Cartan decomposition of the group is
 
-$$
-\mathrm{U}(1,3)=\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)\cdot\exp(\mathfrak{p}_{0}),
-$$
+$$ \boxed{\;\mathrm{U}(1,3)=\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)\cdot\exp(\mathfrak{p}_{0})\;}, $$
 
 the compact part followed by the hyperbolic part, whose exponentials are the boosts and their conjugates.
 

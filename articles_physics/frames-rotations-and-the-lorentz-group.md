@@ -6,8 +6,6 @@ A frame is a choice of axes, and a motion is a change of frame. The biquaternion
 
 The article reads the group that carries the motions, the sandwich that acts, the rotations, the boosts, the orbits and the reflections. Its thesis is that a frame is a unit up to sign, that a change of frame is the dagger sandwich, that the interval is the invariant, that a rotation is an algebra automorphism and that a boost is a motion which is not one. It proves nothing; the theorems are in the mathematics articles of the source table.
 
-**Placement and boundaries.** The article is the Geometry block of the category. It reads the isometries of the biquaternion norm, the double covers, the sandwich action, the orbits and the reflection formula, all of which are *Biquaternion Rotations and Lorentz Transformations*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the group of units and the norm-one slice are *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and *The Biquaternion Unit Group as a Topological Group*; the compact real form and the quotient $SO(3)$ are *The Unitary Group of the Biquaternion Algebra*. The physical companion is *Biquaternion Rotations and Lorentz Transformations*, and the material sector is *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The dynamics is not read here.
-
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
@@ -30,7 +28,7 @@ $$
 $$
 of real dimension six. Its centre is $\{\pm e_t\}$, and the quotient is the proper orthochronous Lorentz group,
 $$
-\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3).
+\boxed{\;\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3)\;}.
 $$
 The group is simply connected, so it is the universal cover,
 $$
@@ -84,7 +82,7 @@ $$
 $$
 it preserves the two sectors $\mathbb{M}_{\pm}$, and it scales the norm by
 $$
-N\bigl(\mathrm{H}_{\tilde Q}(\tilde Q_3)\bigr)=|N(\tilde Q)|^{2}N(\tilde Q_3).
+\boxed{\;N\bigl(\mathrm{H}_{\tilde Q}(\tilde Q_3)\bigr)=|N(\tilde Q)|^{2}N(\tilde Q_3)\;}.
 $$
 On the whole algebra its kernel is the central circle $\mathrm{U}(1)e_t$; on the norm-one slice it is $\{\pm e_t\}$, which is the double cover. On the norm-one slice it is an isometry and its image is $SO^{+}(1,3)$; on the whole unit group the image is a seven-dimensional similarity group.
 
@@ -217,8 +215,8 @@ The rank is always preserved: rank two is a unit, rank one is a nonzero zero div
 
 For $v$ with $\langle v\rangle_{\natural}=1$, the **reflection** in the hyperplane $v^{\perp}$ is
 $$
-\rho_v(\tilde Q_3)=-v\,\tilde Q_3\,v^{-1}
-=-v\,\tilde Q_3\,v^{\natural}.
+\boxed{\;\rho_v(\tilde Q_3)=-v\,\tilde Q_3\,v^{-1}
+=-v\,\tilde Q_3\,v^{\natural}\;}.
 $$
 On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
 $$

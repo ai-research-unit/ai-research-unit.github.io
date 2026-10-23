@@ -79,7 +79,7 @@ $$
 in the time coordinate. Under this substitution, the first coefficient of $\tilde{Q}_-$ changes as
 
 $$
-i c t' \;\longmapsto\; i c\,(-i\tau) = c\tau,
+\boxed{\;i c t' \;\longmapsto\; i c\,(-i\tau) = c\tau\;},
 $$
 
 while the spatial coefficients $x, y, z$ are unchanged. The rotated point is
@@ -93,7 +93,7 @@ with **all four coefficients real**. In the notation of the quaternion subspace 
 So the standard Wick rotation is the identification
 
 $$
-\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict', x, y, z) \;\longmapsto\; (c\tau, x, y, z),
+\boxed{\;\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict', x, y, z) \;\longmapsto\; (c\tau, x, y, z)\;},
 $$
 
 obtained by relabeling the imaginary coefficient $ict'$ as a real coefficient $c\tau$. The transformation is real-linear, but it is not an isometry: the quadratic form changes sign in the time–time component. The signature changes from $(3, 1)$ to $(4, 0)$.
@@ -123,7 +123,7 @@ $$
 becomes the elliptic d'Alembertian on $\mathbb{H}_{\mathbb{B}}$,
 
 $$
-\Box_{\mathbb{H}} = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta.
+\boxed{\;\Box_{\mathbb{H}} = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta\;}.
 $$
 
 The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the transferred field. This is the standard trick, expressed in the biquaternion framework as a transfer between two subspaces of $\mathbb{B}$.

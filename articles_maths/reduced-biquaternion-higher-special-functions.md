@@ -20,7 +20,9 @@ $$
 $$
 the products and the second derivative being taken in the algebra; and it has the power series
 $$
-J_{\nu}(\breve Q)=\sum_{n\ge0}\frac{(-1)^{n}}{n!\,\Gamma(n+\nu+1)}\Bigl(\frac{\breve Q}{2}\Bigr)^{2n+\nu},
+\boxed{\;
+J_{\nu}(\breve Q)=\sum_{n\ge0}\frac{(-1)^{n}}{n!\,\Gamma(n+\nu+1)}\Bigl(\frac{\breve Q}{2}\Bigr)^{2n+\nu}
+\;},
 $$
 convergent for all $\breve Q$ when $\nu$ is an integer and on a disc in each coordinate otherwise.
 
@@ -77,7 +79,9 @@ defined on the elements whose two coordinates avoid the non-positive integers.
 
 **Theorem (the functional equation and the reflection).** The reduced Gamma satisfies
 $$
-\Gamma(\breve Q+1)=\breve Q\,\Gamma(\breve Q),\qquad \Gamma(\breve Q)\Gamma(1-\breve Q)=\frac{\pi}{\sin(\pi \breve Q)},
+\boxed{\;
+\Gamma(\breve Q+1)=\breve Q\,\Gamma(\breve Q),\qquad \Gamma(\breve Q)\Gamma(1-\breve Q)=\frac{\pi}{\sin(\pi \breve Q)}
+\;},
 $$
 the sine being the reduced sine of the elementary functions, and its poles are the elements with a coordinate at a non-positive integer.
 
@@ -119,7 +123,9 @@ holds in the region of convergence, the product over the primes, each factor def
 
 **Theorem (the extension principle).** Let $F$ be a complex function defined on a domain of $\mathbb{C}$ by a power series with a non-zero radius of convergence, or by an integral of the form $F(z)=\int K(z,w)\,g(w)\,\mathrm{d}w$ with a holomorphic kernel. Then there is a unique extension to the reduced biquaternion algebra given by
 $$
-F(\breve Q)=F(Q_{+})\,\Pi_++F(Q_{-})\,\Pi_-,
+\boxed{\;
+F(\breve Q)=F(Q_{+})\,\Pi_++F(Q_{-})\,\Pi_-
+\;},
 $$
 it is defined on the elements whose two coordinates lie in the domain of $F$, it commutes with the pointwise operations and with the two-factor differentiation, and every functional equation, recurrence and series representation of $F$ holds on the algebra coefficientwise.
 

@@ -5,7 +5,7 @@
 The general quaternionic bilinear product $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$ of *Introduction to the General Quaternionic Algebra* carries a degree-two structure, and it is the **quaternionic bilinear form** of the space: the polar form of the norm, equivalently the central coefficient of the symmetrisation,
 
 $$
-\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \beta(\tilde q_1,\tilde q_2) = \tfrac12\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2 , \qquad \tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)e_t .
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \beta(\tilde q_1,\tilde q_2) = \tfrac12\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2 , \qquad \tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)e_t\;}.
 $$
 
 The form is one of the two degree-two forms of the quaternion real space (*The 2 Forms over the Quaternioid $\mathbb{R}$ Space*), and its diagonal is the second of the two algebraic norms (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*); it is quoted from those articles and not re-derived.

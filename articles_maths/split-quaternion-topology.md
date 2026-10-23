@@ -7,8 +7,6 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is a four-dimensional rea
 
 The article owns the topological statements of the category. It relies on *Split-Quaternion Norm and Invertibility* for the group of units, on *Split-Quaternion Exponential and Lie Group Structure* for the norm-one group and the Lorentz double cover, and on *Split-Quaternion Null Quadric and Projective Geometry* for the ruling of the null quadric. All the invariants below are standard; the signs of the indefinite form and the reality of the algebra are what distinguish the picture from the biquaternion one. No physics is invoked.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ with the coordinates $q_t, q_x, q_y, q_z$; the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$; the group of units is $\mathbb{H}_{\mathrm{s}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$; the norm-one group is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$; the null cone is $\mathcal{N} = \{\langle\tilde q\rangle_{\natural} = 0\}$; the vector subspace is $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\cdot\rangle_{\natural}|_V = q_x^2 - q_y^2 - q_z^2$ of signature $(2,1)$. The Euclidean norm of $(q_t,q_x,q_y,q_z)$ is $|\tilde q|_E = (q_t^2+q_x^2+q_y^2+q_z^2)^{1/2}$, and $\Sigma^3$ denotes the Euclidean unit sphere.
-
 ## The Underlying Space and Its Contractibility
 
 **Theorem.** As a topological space, $\mathbb{H}_{\mathrm{s}}$ is homeomorphic to $\mathbb{R}^4$ and is therefore **contractible**: $\pi_t(\mathbb{H}_{\mathrm{s}})$ is a point and $\pi_k(\mathbb{H}_{\mathrm{s}}) = 0$ for every $k \geq 1$.
@@ -22,8 +20,10 @@ Consequently every interesting invariant of the article comes from a *deleted* s
 **Theorem.** The group of units $\mathbb{H}_{\mathrm{s}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ has exactly two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$. Each component deformation retracts onto its intersection with $\Sigma^3$, and each is homotopy equivalent to a circle:
 
 $$
-\{\langle\tilde q\rangle_{\natural} > 0\} \simeq SO(2), \qquad \{\langle\tilde q\rangle_{\natural} < 0\} \simeq SO(2).
-$$
+\boxed{\;
+\{\langle\tilde q\rangle_{\natural} > 0\} \simeq SO(2), \qquad \{\langle\tilde q\rangle_{\natural} < 0\} \simeq SO(2)
+\;}
+$$.
 
 Hence $\pi_t(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}/2$ and $\pi_x(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}$ on each component, so $\pi_x$ of the group is free abelian of rank two.
 
@@ -34,8 +34,10 @@ Hence $\pi_t(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}/2$ and $\pi_x(\mathbb{
 **Theorem.** The norm-one group $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$ is a connected three-dimensional submanifold of $\mathbb{H}_{\mathrm{s}}$, diffeomorphic to $S^1 \times \mathbb{R}^2$; it deformation retracts onto its maximal compact subgroup $SO(2)$,
 
 $$
-\mathrm{U} \simeq S^1, \qquad \pi_x(\mathrm{U}) = \mathbb{Z}.
-$$
+\boxed{\;
+\mathrm{U} \simeq S^1, \qquad \pi_x(\mathrm{U}) = \mathbb{Z}
+\;}
+$$.
 
 **Proof.** The set $\mathrm{U}$ is the level set of the regular value $1$ of $\langle\cdot\rangle_{\natural}$, so it is a smooth three-manifold; it is connected, retracting onto its intersection with $\Sigma^3$, which is the set $\{\langle\tilde q\rangle_{\natural}=1\} \cap \Sigma^3 = \{q_t^2+q_x^2 = 1, q_y=q_z=0\}$, a circle. The KAN (Iwasawa) decomposition $\mathrm{SL}_2(\mathbb{R}) = SO(2)\cdot A \cdot N$ with $A \cong \mathbb{R}$ and $N \cong \mathbb{R}$ gives the diffeomorphism $\mathrm{U} \cong S^1 \times \mathbb{R}^2$.
 
@@ -54,8 +56,10 @@ the set of zero divisors together with the origin; the **link** of the cone is $
 **Theorem.** The null cone is a cone on its link: $\mathcal{N} = \{\, t\, \tilde q : t \geq 0,\ \tilde q \in \mathcal{N}\cap\Sigma^3 \,\}$, and the link is a **torus**,
 
 $$
-\mathcal{N} \cap \Sigma^3 \;\cong\; S^1 \times S^1 = T^2 .
-$$
+\boxed{\;
+\mathcal{N} \cap \Sigma^3 \;\cong\; S^1 \times S^1 = T^2
+\;}
+$$.
 
 Hence $\mathcal{N}\setminus\{0\}$ is homotopy equivalent to $T^2$, with $\pi_x(\mathcal{N}\setminus\{0\}) = \mathbb{Z}^2$.
 

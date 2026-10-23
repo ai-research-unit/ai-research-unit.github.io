@@ -6,10 +6,6 @@ The polar word is a parametrization of the group of units: every biquaternion of
 
 This article owns that limit. It states the boundary value of the four-factor word along a path of infinite rapidity, identifies the two strata on which the limit can land, and records what the limit does and does not inherit from the massive element. The boundary theorem, the two strata and the exponential convergence are those of *Exponential Polar Decomposition of Biquaternions*. The stratum table and the element-level reading of the cone are those of *The Zero-Divisor Cone and the Massless Spectrum* and *The Exponential Word and Its Boundary*. What is added here is the massless question: which massive family has which boundary value, where the mass enters, and why the answer is a boundary value rather than a value.
 
-**Placement.** The article belongs to the material block of the relativistic quantum theory, after *The Zero-Divisor Cone and the Massless Spectrum* and before *Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit*. It is the limit companion of *The Exponential Word and Its Boundary*: that article reads the boundary of the word, and this one reads the physical limit that lands on it.
-
-**Conventions.** The word is
-
 $$
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
@@ -98,7 +94,7 @@ $$
 The limit therefore exists, and it is
 
 $$
-L=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}.
+\boxed{\;L=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;}.
 $$
 
 The convergence is exponential in the rapidity, with the second term of order $e^{-\psi}$. The limit is nonzero, since $(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}\neq0$, and it lies on the cone, since
@@ -134,9 +130,9 @@ $$
 and the square is
 
 $$
-L^2=\tau L,
+\boxed{\;L^2=\tau L,
 \qquad
-\tau=2\operatorname{Sc}L=R\zeta\left(a-ib\right).
+\tau=2\operatorname{Sc}L=R\zeta\left(a-ib\right)\;}.
 $$
 
 The two cases follow from $\tau$.
@@ -194,10 +190,10 @@ so $r e^{\psi_w/2}\to R$ with $R=2E/c$, and the relative defect is $e^{-2\psi}=O
 The boundary value is the massless momentum:
 
 $$
-L=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)
+\boxed{\;L=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)
 =\frac{iE}{c}\left(e_t-i\vec u_p\right)
 =i\frac{E}{c}e_t+\frac{E}{c}\vec u_p
-=2i\frac{E}{c}\,\tilde\Pi(-\vec u_p),
+=2i\frac{E}{c}\,\tilde\Pi(-\vec u_p)\;},
 $$
 
 with $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ the Hermitian minimal idempotent along the direction of motion. The limit is an imaginary multiple of a Hermitian idempotent: a null four-momentum, not a nilpotent.

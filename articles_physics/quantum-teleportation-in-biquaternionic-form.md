@@ -19,8 +19,6 @@ The protocol is therefore a controlled collision between two kinds of object tha
 
 The article is organised as follows. The next section fixes the three-qubit arena and says which algebra each object of the protocol lives in. The section after that fixes the resource and the measurement. The following section proves the teleportation identity, first as a vector identity and then as the projected operator identity that gives the probabilities and Bob's state. The next section reads off the four corrections and records them in terms of the stabiliser observables. Two shorter sections treat no-signalling and the channel-theoretic interpretation of the protocol. The article closes with what the reformulation does and does not claim, and with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$ and the cyclic relations $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and with $i$ the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The Hermitian subspace is $\mathbb{M}_+$ with real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; a single-qubit **state** is a Hermitian, positive element of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image). The $n$-qubit arena is the tensor power $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, with trace $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, where $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. The four **Bell idempotents** of $\mathbb{B}\otimes\mathbb{B}$ are $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\epsilon_1 \vec e_x\otimes \vec e_x+\epsilon_2 \vec e_y\otimes \vec e_y+\epsilon_3 \vec e_z\otimes \vec e_z)$ with $\epsilon_1\epsilon_2\epsilon_3=+1$, in the labelling of the companion article on the Bell basis; the **stabiliser involutions** are $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$, with $S_k\tilde\Pi_\epsilon=-\epsilon_k\tilde\Pi_\epsilon$. The **gates** are the unitary elements $\tilde{U}\tilde{U}^{*}=e_t$ of $\mathbb{B}$, with Pauli representatives $\vec U_x=i\vec e_x$, $\vec U_y=i\vec e_y$, $\vec U_z=i\vec e_z$ and Hadamard $\tilde{H}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$. The single-factor normalised Hermitian form, read as the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$, is inherited unchanged.
-
 ## The Three-Qubit Arena and the Objects of the Protocol
 
 Three qubits are involved, and it matters which is which:
@@ -150,13 +148,11 @@ X\leftrightarrow i\vec e_x,\qquad
 Z\leftrightarrow i\vec e_z,\qquad
 XZ\leftrightarrow \vec e_y\sim i\vec e_y.
 $$
-
 The last equivalence is a statement about **gates**, not about elements: $\vec e_y$ and $i\vec e_y$ differ by the central phase $-i$, which cancels in every conjugation, so they define the same unitary action. We use the Hermitian representative $i\vec e_y$ below.
 
 ### The projected identity
 
 Taking the outer product of the lemma with itself gives the operator identity
-
 $$
 \tilde{Ϛ}_\psi^{(1)}\otimes \tilde\Pi_{\Phi^+}^{(23)}
 =\tfrac14\sum_{\epsilon,\epsilon_2}\Omega_{\epsilon\epsilon_2}^{(12)}\otimes
@@ -170,8 +166,8 @@ Now project onto the outcome $\epsilon_0$. Because the $\tilde\Pi_\epsilon$ are 
 **Proposition (teleportation identity).** For every Bell outcome $\epsilon$, with the Hermitian representatives $\tilde U_\epsilon\in\{e_t,\,i\vec e_x,\,i\vec e_y,\,i\vec e_z\}$ of the four Pauli gates,
 
 $$
-\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}^{(0)}\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)
-=\tfrac14\,\tilde\Pi_\epsilon^{(12)}\otimes\left(\tilde U_\epsilon\,\tilde{Ϛ}_\psi\,\tilde U_\epsilon^{*}\right)^{(3)} .
+\boxed{\;\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}^{(0)}\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)
+=\tfrac14\,\tilde\Pi_\epsilon^{(12)}\otimes\left(\tilde U_\epsilon\,\tilde{Ϛ}_\psi\,\tilde U_\epsilon^{*}\right)^{(3)}\;}.
 $$
 
 Two consequences follow immediately by taking traces and partial traces.
@@ -179,7 +175,7 @@ Two consequences follow immediately by taking traces and partial traces.
 **The probabilities are uniform.** Taking the trace of both sides, and using $\mathrm{Tr}(\tilde\Pi_\epsilon)=1$ and $\mathrm{Tr}(\tilde U_\epsilon\tilde{Ϛ}_\psi\tilde U_\epsilon^{*})=1$,
 
 $$
-p_\epsilon=\mathrm{Tr}\!\left[\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}^{(0)}\right]=\tfrac14 ,
+\boxed{\;p_\epsilon=\mathrm{Tr}\!\left[\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}^{(0)}\right]=\tfrac14\;},
 $$
 
 for each of the four outcomes. The outcome distribution is uniform and independent of $\tilde{Ϛ}_\psi$: the record alone carries no information about the state. The state is transferred to Bob's qubit by the projection itself, and the record's only role is to tell him which Pauli image he now holds and hence which correction to apply.
@@ -234,9 +230,7 @@ $$
 \sum_\epsilon p_\epsilon\,\mathrm{Tr}_{12}\!\left[\text{post}_\epsilon\right]
 =\tfrac14\sum_\epsilon \tilde U_\epsilon\,\tilde{Ϛ}_\psi\,\tilde U_\epsilon^{*} .
 $$
-
 The sum over the four Pauli gates is the elementary Pauli twirl, and it is computed directly on the Bloch vector. Conjugation by $i\vec e_x$ is a rotation by $\pi$ about $\vec e_x$, which fixes $r_1$ and reverses $r_2,r_3$; conjugation by $i\vec e_y$ reverses $r_1,r_3$; conjugation by $i\vec e_z$ reverses $r_1,r_2$; and $e_t$ changes nothing. Adding the four,
-
 $$
 \begin{aligned}
 (r_1,r_2,r_3)&+(r_1,-r_2,-r_3)+(-r_1,r_2,-r_3)+(-r_1,-r_2,r_3)\\
@@ -247,7 +241,7 @@ $$
 so the four terms cancel, and the average is
 
 $$
-\tfrac14\sum_\epsilon \tilde U_\epsilon\,\tilde{Ϛ}_\psi\,\tilde U_\epsilon^{*}=\tfrac12 e_t .
+\boxed{\;\tfrac14\sum_\epsilon \tilde U_\epsilon\,\tilde{Ϛ}_\psi\,\tilde U_\epsilon^{*}=\tfrac12 e_t\;}.
 $$
 
 Bob's unconditional state is the maximally mixed state, independent of $\tilde{Ϛ}_\psi$: Alice's measurement on her pair, however it comes out, has not changed the marginal statistics available to Bob. This is the no-signalling statement of the companion article on entangled subsystems, here in the specific form the protocol needs: all the dependence on the unknown state sits in the *record* $\epsilon$, and none of it sits in Bob's qubit until the record is used.

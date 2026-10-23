@@ -24,16 +24,12 @@ $$
 
 equivalently the factorization $\tilde Q\star\tilde Q_2 = (\overline{\tilde Q_2}\tilde Q)^{\natural}$. The block is the only one of the twelve structures satisfying it, and it is the identity, and not the pair of actions, that is the law: the two actions are a consequence of the identity, while the symmetrisation $\mathrm{SQS}$ shares them and fails the identity. The article states the identity as the criterion, proves it, and isolates the block among the twelve. It then collects the consequences, which are the specificities of the block: the parities of the two slots (linear in the first, conjugate-linear in the second), the absence of projectors and of square-zero operators, the square and the Krein form, the idempotents which are units of the plain algebra, and the failure of the Jordan triple identity.
 
-**Placement.** The article is the fifth entry, and the synthesis, of the *Specific Theory* section of the general quaternionic sesqualgebra, after *The Two One-Sided Actions and the Absence of a Unit*, *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*, *The Associator of the General Quaternionic Sesquilinear Product* and *The Ternary Product and the Failure of the Jordan Triple Identity*. Its twins are *The Specificities of the Biquaternion Algebra*, which states the left-alternativity criterion of the plain product, and *The Specificities of the General Quaternionic Algebra*, which states the isotope criterion of the natural product; the three criteria are the three ways in which one of the four general products can be singled out.
-
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and central scalar imaginary $i$. Juxtaposition is the **plain** product, $\star$ is the general quaternionic sesquilinear product $\tilde Q\star\tilde Q_2 = \tilde Q^{\natural}\tilde Q_2^{*}$ with $\tilde Q = Q_te_t+\vec Q$ and $\tilde Q_2 = Q_{2t}e_t+\vec Q_2$, the natural conjugation ${}^{\natural}$ lying in the first slot and the star ${}^{*}$ in the second, and the subscript of an operator is the element it is indexed by. The natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural} = Q_t-\vec Q$; the star is ${}^{*}$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$; and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$ is the Hermitian conjugation; all three fix $e_t$. The **central square** is $C(\tilde Q) = \sum_\mu Q_\mu^2$ with $C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural}$; the **sandwich** of the pair $(A,B)$ is the map $\tilde Q_1\mapsto A\tilde Q_1 B$ of the plain product.
-
 ## The Law
 
 **Theorem (the criterion).** Among the twelve structures on the biquaternion space the general quaternionic sesquilinear product is the unique one satisfying the **star identity**
 
 $$
-\bigl(\tilde Q\star\tilde Q_2\bigr)^{*} = \tilde Q_2\,\overline{\tilde Q}
+\boxed{\; \bigl(\tilde Q\star\tilde Q_2\bigr)^{*} = \tilde Q_2\,\overline{\tilde Q} \;}
 $$
 
 for all $\tilde Q,\tilde Q_2$, equivalently the unique one that factors as
@@ -70,7 +66,7 @@ The block is the only row whose two entries agree, and the criterion is proved. 
 **Theorem (the parities of the two slots).** The block is $\mathbb{C}$-**linear in the first slot** and **conjugate-linear in the second**:
 
 $$
-(\lambda\tilde Q)\star\tilde Q_2 = \lambda\,\tilde Q\star\tilde Q_2 , \qquad \tilde Q\star(\lambda\tilde Q_2) = \overline{\lambda}\,\tilde Q\star\tilde Q_2 , \qquad \lambda\in\mathbb{C} .
+\boxed{\; (\lambda\tilde Q)\star\tilde Q_2 = \lambda\,\tilde Q\star\tilde Q_2 , \qquad \tilde Q\star(\lambda\tilde Q_2) = \overline{\lambda}\,\tilde Q\star\tilde Q_2 , \qquad \lambda\in\mathbb{C} \;}.
 $$
 
 It is one of the two sesquilinear products of the four *Introduction to the General Quaternionic Sesqualgebra*; at the operator level its left multiplication is conjugate-linear and its right multiplication is **linear**.
@@ -112,7 +108,7 @@ so the scalar part of the square is the **Krein form**, of signature $(2,6)$, an
 **Theorem (the nontrivial idempotents are units of the plain algebra).** The nontrivial idempotents of the block are the elements
 
 $$
-\tilde\Pi = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u = u_x\vec e_x+u_y\vec e_y+u_z\vec e_z , \qquad \sum_{k=1}^{3}u_k^2=1 ,
+\boxed{\; \tilde\Pi = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u = u_x\vec e_x+u_y\vec e_y+u_z\vec e_z , \qquad \sum_{k=1}^{3}u_k^2=1 \;},
 $$
 
 and every one of them has central square $C(\tilde\Pi) = 1$; so the nontrivial idempotents of the block are **units of the plain algebra**, and the block has no unit in which they could be units of the block.

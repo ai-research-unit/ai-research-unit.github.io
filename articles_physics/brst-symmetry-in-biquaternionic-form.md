@@ -18,8 +18,6 @@ The Faddeev–Popov procedure that produces the ghost Lagrangian from the path-i
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the classical non-abelian equations of motion.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the argument that the ladder algebra, like the Grassmann coordinates, is not native to $\mathbb{B}$.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}\in\mathbb{M}_-$, the gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\vec e_k\,\partial/\partial Q_k$, and the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the traceless material part of $\tilde{\nabla}^{\natural}\tilde{A}$. A Lie algebra of a simple gauge group is realized inside the framework by the commutator, the canonical example being $\mathrm{SU}(2)$ with the Hermitian generators $T^a=i\vec e_a\in\mathbb{M}_+$, the brackets $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ and the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ with $[\vec e_j,\vec e_k]=2\varepsilon_{jkl}\vec e_l$. The gauge coupling is $g$, the structure constants are $f^{abc}$, and the covariant derivative is $D_\mu=\partial/\partial Q_\mu+gA_\mu$ in the appropriate representation. Ghosts are Grassmann-odd fields, taking values in the Grassmann envelope $\mathbb{B}\otimes\Lambda$ of the algebra; the graded Leibniz rule is $s(\tilde{Q}_1\tilde{Q}_2)=(s\tilde{Q}_1)\tilde{Q}_2+(-1)^{|\tilde{Q}_1|}\tilde{Q}_1(s\tilde{Q}_2)$ with $|\tilde{Q}_1|$ the Grassmann parity.
-
 ## The Gauge-Fixing Problem and the Ghost Fields
 
 ### The Gauge-Fixed Lagrangian
@@ -77,13 +75,13 @@ $$
 and on the non-abelian fields as
 
 $$
-sA_\mu^a = (D_\mu c)^a = \partial/\partial Q_\mu c^a+g f^{abc}A_\mu^b c^c,
+\boxed{\;sA_\mu^a = (D_\mu c)^a = \partial/\partial Q_\mu c^a+g f^{abc}A_\mu^b c^c,
 \qquad
 sc^a = -\tfrac{g}{2}f^{abc}c^bc^c,
 \qquad
 s\bar{c}^a = B^a,
 \qquad
-sB^a = 0 .
+sB^a = 0\;}.
 $$
 
 The transformation on the gauge field is the gauge transformation $\delta A_\mu^a=(D_\mu\Gamma)^a$ with the parameter $\Gamma^a$ **replaced by the ghost** $c^a$: that is the sense in which the gauge parameter has been promoted to a field. The transformations of $c$ and $\bar{c}$ are the new content, and they are chosen so that $s$ is nilpotent.
@@ -178,7 +176,7 @@ $$
 where the minus sign on the second term is the sign $(-1)^{| \bar{c}|}=-1$ that the oddness of $\bar{c}$ requires. This is exactly $\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$, so
 
 $$
-\mathcal{L} = \mathcal{L}_{\mathrm{gauge}} + s\Psi .
+\boxed{\;\mathcal{L} = \mathcal{L}_{\mathrm{gauge}} + s\Psi\;}.
 $$
 
 Since $\mathcal{L}_{\mathrm{gauge}}$ is gauge invariant and hence $s$-invariant (the gauge transformation is $sA_\mu^a=(D_\mu c)^a$ with $c$ the ghost), the whole gauge-fixed Lagrangian is $s$-invariant, and the invariance is automatic once $s^2=0$:
@@ -220,9 +218,9 @@ so that $s$ is a cochain map of degree $+1$ on the graded algebra, and $s^2=0$ m
 Because the transformation is a symmetry of the action, it has a conserved charge by Noether's theorem: the **BRST charge** $\mathcal{Q}$, a Grassmann-odd operator with
 
 $$
-\mathcal{Q}^2 = 0,
+\boxed{\;\mathcal{Q}^2 = 0,
 \qquad
-s\tilde{Q}_1 = [i\mathcal{Q},\tilde{Q}_1]_\pm ,
+s\tilde{Q}_1 = [i\mathcal{Q},\tilde{Q}_1]_\pm\;},
 $$
 
 the bracket being a commutator for even $\tilde{Q}_1$ and an anticommutator for odd $\tilde{Q}_1$. The nilpotency $\mathcal{Q}^2=0$ is the operator statement of $s^2=0$, and the charge is the generator of the symmetry in the same sense that the ordinary gauge charge generates the gauge transformation. In the biquaternion framework the charge is a Grassmann-odd operator on the Fock space of the gauge and ghost fields; it is not an element of $\mathbb{B}$, for the same reason the ghosts are not.

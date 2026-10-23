@@ -88,10 +88,11 @@ $$
 The quadratic Casimir is therefore
 
 $$
+\boxed{\;
 J_1^2+J_2^2+J_3^2
 =\tfrac{1}{4}\left(\sigma_1^2+\sigma_2^2+\sigma_3^2\right)
 =\tfrac{1}{4}\cdot 3 I_2
-=\tfrac{3}{4}e_t .
+=\tfrac{3}{4}e_t\;}.
 $$
 
 Since $\tfrac{3}{4}=j(j+1)$ gives $j=\tfrac{1}{2}$, the state module carries **spin one-half**, as claimed. The value was confirmed by direct computation in the matrix representation, with the left-multiplication operators checked against the quaternion relations $L_\nu L_\mu=-\delta_{\nu\mu}e_t+\varepsilon_{\nu\mu\lambda}L_\lambda$ and the Casimir evaluated to $\tfrac{3}{4}I_2$ exactly.
@@ -130,9 +131,10 @@ $$
 so $[\vec e_x,\tilde{Q}]=0$ forces $Q_y=Q_z=0$. The condition $[\vec e_y,\tilde{Q}]=0$ then forces $Q_x=Q_z=0$, and together with the first gives $Q_x=Q_y=Q_z=0$. Hence
 
 $$
+\boxed{\;
 \{\tilde{Q}\in\mathbb{B} : [\vec e_\nu,\tilde{Q}]=0,\ j=1,2,3\}
 =\mathbb{C}_{\mathbb{B}}
-=\{Q_te_t : Q_t\in\mathbb{C}\},
+=\{Q_te_t : Q_t\in\mathbb{C}\}\;},
 $$
 
 the **centre** of the algebra. The result was confirmed independently by solving the linear system $[\vec e_\nu,\tilde{Q}]=0$ over the eight real coordinates of $\tilde{Q}$: the coefficient matrix has rank six and nullity two, so the solution space is the real two-dimensional subspace $\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, as stated.
@@ -140,7 +142,8 @@ the **centre** of the algebra. The result was confirmed independently by solving
 The algebraic statement is therefore exact: **the elements of $\mathbb{B}$ that are invariant under the rotation subgroup are precisely the central elements.** The traceless part of $\mathbb{B}$, on the other hand, transforms as the adjoint representation, of spin one. Under rotations,
 
 $$
-\mathbb{B}=\underbrace{\mathbb{C}_{\mathbb{B}}}_{\text{spin }0}\;\oplus\;\underbrace{\{\tilde{Q}:\mathrm{Sc}\,\tilde{Q}=0\}}_{\text{spin }1},
+\boxed{\;
+\mathbb{B}=\underbrace{\mathbb{C}_{\mathbb{B}}}_{\text{spin }0}\;\oplus\;\underbrace{\{\tilde{Q}:\mathrm{Sc}\,\tilde{Q}=0\}}_{\text{spin }1}\;},
 $$
 
 so the algebra under the conjugation action carries spin $0$ and spin $1$, while the state module carries spin $\tfrac{1}{2}$. A spin-$0$ field has no alternative but the centre.

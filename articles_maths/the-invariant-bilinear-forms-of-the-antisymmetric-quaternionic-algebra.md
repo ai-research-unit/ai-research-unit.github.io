@@ -26,9 +26,7 @@ for all $\tilde Q_1,\tilde Q_2,\tilde{Q}_6$; equivalently, for a symmetric $\bet
 
 **Theorem (the invariant forms).** The space of $\mathbb{C}$-bilinear forms invariant under the block is one-dimensional, spanned by
 
-$$
-\varphi(\tilde Q_1,\tilde Q_2) = Q_{1t}Q_{2t} ,
-$$
+$$ \boxed{\; \varphi(\tilde Q_1,\tilde Q_2) = Q_{1t}Q_{2t} \;}, $$
 
 the product of the two scalar parts. Every invariant form is a multiple of $\varphi$.
 
@@ -88,9 +86,7 @@ the trace of the composition of the two left multiplication operators.
 
 **Proposition (the operator trace form is non-degenerate).** For all $\tilde Q_7,\tilde Q_1$,
 
-$$
-\langle\tilde Q_7,\tilde Q_1\rangle_{\natural*} = 3Q_{7t}Q_{1t} - 2\sum_{\mu\in\{x,y,z\}}Q_{7\mu} Q_{1\mu} ,
-$$
+$$ \boxed{\; \langle\tilde Q_7,\tilde Q_1\rangle_{\natural*} = 3Q_{7t}Q_{1t} - 2\sum_{\mu\in\{x,y,z\}}Q_{7\mu} Q_{1\mu} \;}, $$
 
 its Gram matrix in the coefficient basis is $\operatorname{diag}(3,-2,-2,-2)$, of rank $4$, and the form is non-degenerate.
 
@@ -98,9 +94,7 @@ its Gram matrix in the coefficient basis is $\operatorname{diag}(3,-2,-2,-2)$, o
 
 **Proposition (it is not invariant).** The operator trace form is not invariant under the block. The failure
 
-$$
-F(\tilde Q_7,\tilde Q_1,\tilde Q_5) = \langle\tilde Q_7\diamond\tilde Q_1,\tilde Q_5\rangle_{\natural*}+\langle\tilde Q_1,\tilde Q_7\diamond\tilde Q_5\rangle_{\natural*} = -4Q_{7t}(\vec Q_1,\vec Q_5)+2Q_{1t}(\vec Q_7,\vec Q_5)+2Q_{5t}(\vec Q_7,\vec Q_1)
-$$
+$$ \boxed{\; F(\tilde Q_7,\tilde Q_1,\tilde Q_5) = \langle\tilde Q_7\diamond\tilde Q_1,\tilde Q_5\rangle_{\natural*}+\langle\tilde Q_1,\tilde Q_7\diamond\tilde Q_5\rangle_{\natural*} = -4Q_{7t}(\vec Q_1,\vec Q_5)+2Q_{1t}(\vec Q_7,\vec Q_5)+2Q_{5t}(\vec Q_7,\vec Q_1) \;} $$
 
 does not vanish identically; at $(\tilde Q_7,\tilde Q_1,\tilde Q_5)=(e_t,\vec e_x,\vec e_x)$ it is $K(\vec e_x,\vec e_x)+K(\vec e_x,\vec e_x)=-2-2=-4$.
 

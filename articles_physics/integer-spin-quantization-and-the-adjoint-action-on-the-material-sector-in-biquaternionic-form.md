@@ -17,8 +17,6 @@ The article is organized as follows. The rotation algebra is constructed as the 
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the massive vector field whose three on-shell polarizations are the weight basis of this article.
 - Companion article *Canonical Quantization of the Biquaternion Graviton Field*, for the rank-two instance of the tensor-power construction, where the trace removal is performed on the symmetric square of the material vector.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_i \vec e_j=-\delta_{ij}e_t+\varepsilon_{ijk}\vec e_k$, and central $i$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (imaginary scalar plus real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material basis is $\vec u_t=ie_t$, $\vec u_k=\vec e_k$, with $\eta_{\mu\nu}=\langle\vec u_{\mu},\vec u_{\nu}\rangle=\mathrm{diag}(-1,+1,+1,+1)$. The vector part of the material sector is $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$, a three-dimensional complex space on which the rotations act, and it is the carrier of the spin-one representation. The angular momentum operator is $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$, with $\mathrm{ad}_{\tilde{Q}}\tilde{Q}_3=[\tilde{Q},\tilde{Q}_3]=\tilde{Q}\tilde{Q}_3-\tilde{Q}_3\tilde{Q}$. The adjoint action is bracketing, a derivation of the algebra: $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_3\tilde{S})=(\mathrm{ad}_{\tilde{Q}}\tilde{Q}_3)\tilde{S}+\tilde{Q}_3(\mathrm{ad}_{\tilde{Q}}\tilde{S})$.
-
 ## The Rotation Algebra as Inner Derivations
 
 ### Rotations and Their Generators
@@ -38,7 +36,7 @@ $$
 The three derivations $\mathrm{ad}_{\vec e_k}$ span the Lie algebra of the rotation group, and the Hermitian angular-momentum operator is the corresponding anti-Hermitian generator multiplied by $i$:
 
 $$
-J_k = \tfrac12\,\mathrm{ad}_{i\vec e_k} = \tfrac{i}{2}\,\mathrm{ad}_{\vec e_k}.
+\boxed{\;J_k = \tfrac12\,\mathrm{ad}_{i\vec e_k} = \tfrac{i}{2}\,\mathrm{ad}_{\vec e_k}\;}.
 $$
 
 The factor $i$ is the usual one that turns the anti-Hermitian generator $\vec e_k$ of the unitary rotation into a Hermitian observable. The three $J_k$ act on the material sector by bracketing, $\tilde{Q}\mapsto[J_k,\tilde{Q}]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
@@ -122,7 +120,7 @@ $$
 and the eigenvalues $\pm1,0$ were confirmed directly. Equivalently, $J_3$ satisfies its own cubic characteristic identity
 
 $$
-J_3^3 - J_3 = 0,
+\boxed{\;J_3^3 - J_3 = 0\;},
 $$
 
 verified with residual zero: for spin one the third power of a generator returns it to itself, a property of the three eigenvalues $\pm1,0$, and of no other triplet of distinct integers summing to zero. The basis $\{\varepsilon_+,\varepsilon_-,\varepsilon_0\}$ is the circular and longitudinal polarization triad: $\varepsilon_\pm$ are the two circular polarizations, and $\varepsilon_0$ is the linear polarization along the third axis. The raising and lowering operators
@@ -142,7 +140,6 @@ J_\pm\varepsilon_\pm = 0,
 $$
 
 the shift operations of the spin-one multiplet, with the matrix elements $\sqrt{s(s+1)-m(m\pm1)}=\sqrt2$ up to the relative signs shown. Those signs are the phases fixed by the displayed basis; flipping the phase of $\varepsilon_+$ restores the Condon–Shortley signs, so that the weight assignments and the multiplet structure are independent of the convention. The triplet is therefore not merely a list of three vectors; it is a weighted multiplet with the ladder structure that the adjoint action supplies.
-
 
 ### The Triplet as the Polarization Triad
 
@@ -201,9 +198,9 @@ The cases nearest at hand are $s=1$, which is the adjoint action itself and is t
 The dimension count makes the projection explicit. The full tensor square of $V$ has complex dimension $9$ and decomposes as
 
 $$
-1\otimes1 = 0\oplus1\oplus2,
+\boxed{\;1\otimes1 = 0\oplus1\oplus2,
 \qquad
-9 = 1+3+5 .
+9 = 1+3+5\;}.
 $$
 
 The symmetric part of the square has dimension $6$ and contains the spin-$2$ and spin-$0$ pieces, $6=5+1$; the traceless symmetric part has dimension $5$ and is the spin-two carrier; the trace is the spin-zero singlet; and the antisymmetric part, of dimension $3$, is again the adjoint triplet of spin one. Each piece is obtained from the tensor square by a projection that uses only the symmetry of the indices and the bilinear form: no new algebraic structure is needed.

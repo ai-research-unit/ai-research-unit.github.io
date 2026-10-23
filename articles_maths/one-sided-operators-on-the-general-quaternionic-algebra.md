@@ -11,8 +11,6 @@ $$
 
 Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is *Two-Sided Operators on the General Quaternionic Algebra*; the general Clifford theory of the one-sided families is *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are *One-Sided Operators on the General Plain Sesqualgebra*; and the form that supplies the adjoints is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, so that a general element is $\tilde Q_6=\sum_\mu Q_{6\mu} e_\mu$ with $Q_{6\mu}\in\mathbb{C}$. The natural conjugation is $\tilde Q_6^{\natural}=Q_{6t}e_t-Q_{6x}\vec e_x-Q_{6y}\vec e_y-Q_{6z}\vec e_z$; the norm is $\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural}=\sum_\mu Q_{6\mu}^2$, central and multiplicative; the general quaternionic bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, with adjoint written ${}^{N}$; the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and its adjoint is written ${}^{*}$. An operator is a $\mathbb{C}$-linear map of $\mathbb{B}$ to itself.
-
 ## The Two Multiplications
 
 **Definition.** For $\tilde Q_6,\tilde Q_2\in\mathbb{B}$ the **left multiplication** by $\tilde Q_6$ and the **right multiplication** by $\tilde Q_2$ are the $\mathbb{C}$-linear maps
@@ -32,9 +30,9 @@ $$
 **Proposition (the composition laws).** For all $\tilde Q_6,\tilde Q_2$,
 
 $$
-L_{\tilde Q_6}\circ L_{\tilde Q_2}=L_{\tilde Q_6\tilde Q_2},\qquad
+\boxed{\; L_{\tilde Q_6}\circ L_{\tilde Q_2}=L_{\tilde Q_6\tilde Q_2},\qquad
 R_{\tilde Q_6}\circ R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_6},\qquad
-L_{\tilde Q_6}\circ R_{\tilde Q_2}=R_{\tilde Q_2}\circ L_{\tilde Q_6}.
+L_{\tilde Q_6}\circ R_{\tilde Q_2}=R_{\tilde Q_2}\circ L_{\tilde Q_6} \;}.
 $$
 
 *Proof.* $L_{\tilde Q_6}L_{\tilde Q_2}(\tilde Q_1)=\tilde Q_6\tilde Q_2\tilde Q_1=L_{\tilde Q_6\tilde Q_2}(\tilde Q_1)$; $R_{\tilde Q_6}R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2\tilde Q_6=R_{\tilde Q_2\tilde Q_6}(\tilde Q_1)$; and the left and right multiplications commute by associativity, $\tilde Q_6(\tilde Q_1\tilde Q_2)=(\tilde Q_6\tilde Q_1)\tilde Q_2$.
@@ -103,7 +101,7 @@ $$
 so that each multiplication scales the form by the norm of its parameter; in the coefficient basis,
 
 $$
-\det L_{\tilde Q_6}=\det R_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}^{2}.
+\boxed{\; \det L_{\tilde Q_6}=\det R_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}^{2} \;}.
 $$
 
 *Proof.* $\langle\tilde Q_6\tilde Q_4\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}\langle\tilde Q_4\rangle_{\natural}$ is the multiplicativity of the norm, and the right case is the same with the factors interchanged. For the determinant, the matrix realisation $\mathsf{M}_2$ of the algebra sends $L_{\tilde Q_6}$ to the map $B\mapsto\mathsf{M}_2(\tilde Q_6)B$ on $M_2(\mathbb{C})$, which is $\mathsf{M}_2(\tilde Q_6)\otimes I_2$; the determinant of a Kronecker product is $\det(\mathsf{M}_2(\tilde Q_6))^{2}\det(I_2)^{2}=\det(\mathsf{M}_2(\tilde Q_6))^{2}=\langle\tilde Q_6\rangle_{\natural}^{2}$, since $\det\mathsf{M}_2(\tilde Q_6)=\langle\tilde Q_6\rangle_{\natural}$.
@@ -126,8 +124,8 @@ so that $L_{\tilde Q_6}$ is the left factor and $R_{\tilde Q_6}$ the right facto
 **Proposition (the dagger adjoints).** For the general plain sesquilinear form,
 
 $$
-\bigl(L_{\tilde Q_6}\bigr)^{*}=L_{\tilde Q_6^{*}},\qquad
-\bigl(R_{\tilde Q_2}\bigr)^{*}=R_{\tilde Q_2^{*}} .
+\boxed{\; \bigl(L_{\tilde Q_6}\bigr)^{*}=L_{\tilde Q_6^{*}},\qquad
+\bigl(R_{\tilde Q_2}\bigr)^{*}=R_{\tilde Q_2^{*}} \;}.
 $$
 
 *Proof.* $\langle L_{\tilde Q_6}\tilde Q_4,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_6\tilde Q_4\tilde Q_1^{*})$ and $\langle\tilde Q_4,L_{\tilde Q_6^{*}}\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_4(\tilde Q_6^{*}\tilde Q_1)^{*})=\mathrm{Sc}(\tilde Q_4\tilde Q_1^{*}\tilde Q_6)$; the two agree by the cyclicity of the scalar part, since $(\tilde Q_6^{*}\tilde Q_1)^{*}=\tilde Q_1^{*}\tilde Q_6$.

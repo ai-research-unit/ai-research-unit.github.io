@@ -6,12 +6,6 @@ This article collects, in one place, the definitions of the classes of elements 
 
 The point of collecting them is that **every definition is relative to a product**, and this is easy to lose when each structure is read on its own. The words *zero divisor*, *idempotent*, *nilpotent*, *unit* each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.
 
-**Conventions.** The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central imaginary $i$, and an element is $\tilde Q=Q_0e_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$, $Q_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
-$$
-\tilde Q\tilde Q_2,\qquad \tilde Q^{\natural}\tilde Q_2,\qquad \tilde Q\tilde Q_2^{*},\qquad \tilde Q^{\natural}\tilde Q_2^{*}.
-$$
-The **generic product** is written $\star$; the **general plain bilinear product**, the multiplication of the algebra, is written $\tilde Q\tilde Q_2$. Unqualified, a class is taken in the general plain bilinear product, and where another product is meant it is named. The twelve products are the four general products and their symmetric and antisymmetric parts.
-
 - The elements, the basis and the four conjugations are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*.
 - The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *The 12 Products of the Biquaternion Complex Space*.
 - The twelve structures and their three-letter names are *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
@@ -51,7 +45,7 @@ The relativity has one structural counterpart, which is why two products may sha
 
 **Proposition (transport).** Let $\star$ and $\star'$ be two products on $\mathbb{B}$ and let $\theta$ be a bijection of $\mathbb{B}$ with
 $$
-\theta(x\star y)=\theta(x)\star'\theta(y) \qquad\text{for all } x,y .
+\boxed{\;\theta(x\star y)=\theta(x)\star'\theta(y) \qquad\text{for all } x,y\;}.
 $$
 Then $\theta$ carries every class of §2 to §5 from $\star$ onto the corresponding class of $\star'$: the $\star$-units onto the $\star'$-units, the $\star$-invertible elements onto the $\star'$-invertible elements with $\theta(x^{-1})=\theta(x)^{-1}$, the $\star$-idempotents onto the $\star'$-idempotents, the $\star$-nilpotents onto the $\star'$-nilpotents, and the $\star$-zero divisors onto the $\star'$-zero divisors.
 

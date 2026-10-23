@@ -84,7 +84,9 @@ The transform is applied entrywise; it is $\mathbb{B}_{\mathrm{r}}$-linear and i
 **Theorem (the transform carries the product to the slicewise product).** For compatible $A,B$,
 
 $$
-\widehat{A\ast B}^{(k)}=\widehat A^{(k)}\widehat B^{(k)},\qquad 1\le k\le n_3,
+\boxed{\;
+\widehat{A\ast B}^{(k)}=\widehat A^{(k)}\widehat B^{(k)},\qquad 1\le k\le n_3
+\;},
 $$
 
 and equivalently
@@ -146,7 +148,9 @@ is therefore, for square tensors, an isomorphism of algebras from $(\mathbb{B}_{
 **Proposition (associativity).** For compatible tensors,
 
 $$
-(A\ast B)\ast C=A\ast(B\ast C).
+\boxed{\;
+(A\ast B)\ast C=A\ast(B\ast C)
+\;}.
 $$
 
 *Proof.* In the transform, the three factors become $\widehat A^{(k)},\widehat B^{(k)},\widehat C^{(k)}$, and the matrix product is associative. The transform is invertible, so the identity holds in the original variables.
@@ -202,7 +206,9 @@ The conjugate transpose $A^{\mathsf H}$ is defined in *Reduced Biquaternion Tens
 **Proposition (the adjoint identity).** For compatible $A,B$,
 
 $$
-(A\ast B)^{\mathsf H}=B^{\mathsf H}\ast A^{\mathsf H}.
+\boxed{\;
+(A\ast B)^{\mathsf H}=B^{\mathsf H}\ast A^{\mathsf H}
+\;}.
 $$
 
 *Proof.* In the transform, the reversal is exactly what makes the transform of $A^{\mathsf H}$ equal to the slicewise bar-transpose $(\widehat A^{(k)})^{\mathsf H}$. Then

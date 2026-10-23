@@ -189,9 +189,10 @@ $$
 The sign is fixed by the physical branch $E^* = Mc^2 > 0$, possible because a future-timelike four-vector can always be rotated to the time axis by a boost. Writing $\tilde{P}/(Mc)$ for the unit four-velocity of the pair, the companion article's relation gives
 
 $$
+\boxed{\;
 \tilde U_{\rm CM} = \sqrt{-\frac{i}{Mc}\,\tilde{P}^{\natural}},
 \qquad
-\tilde U_{\rm CM}\tilde U^{\natural}_{\rm CM} = e_t.
+\tilde U_{\rm CM}\tilde U^{\natural}_{\rm CM} = e_t\;}.
 $$
 
 Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\vec u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde U_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^* = iMc\,e_t$ unchanged.
@@ -281,7 +282,8 @@ with the two bodies moving in opposite directions in the COM frame. This is the 
 Combining the mass-shell relations with the polarization identity gives the invariant mass of the pair in terms of the individual masses and the relative motion:
 
 $$
-M^2c^4 = m_1^2c^4 + m_2^2c^4 + 2m_1m_2c^4\cosh\psi_{\rm rel}.
+\boxed{\;
+M^2c^4 = m_1^2c^4 + m_2^2c^4 + 2m_1m_2c^4\cosh\psi_{\rm rel}\;}.
 $$
 
 This is the central relation of the two-body kinematics. It exhibits the three contributions to the pair's rest energy: the two rest energies and the relative kinetic energy, the latter encoded in $\cosh\psi_{\rm rel}$. Since $\cosh\psi_{\rm rel} \ge 1$, it immediately gives the subadditivity bound
@@ -365,8 +367,9 @@ so that for a given daughter the lab energy ranges from $\gamma E_a^*(1 - Vv_a^*
 The invariance of $M$ suggests a reduction of the two-body kinematics to a one-body problem. The reduction that is exact and convention-free is kinematic. In the COM frame the pair is described by the single relative momentum $\vec p^*$, and the individual momenta are fixed by $\vec p_1^* = -\vec p_2^* = \vec p^*$ together with the mass-shell constraints. The pair's invariant mass is then the energy of that single relative degree of freedom:
 
 $$
+\boxed{\;
 Mc^2 = E_1^* + E_2^*
-= \sqrt{m_1^2c^4 + p^{*2}c^2} + \sqrt{m_2^2c^4 + p^{*2}c^2}.
+= \sqrt{m_1^2c^4 + p^{*2}c^2} + \sqrt{m_2^2c^4 + p^{*2}c^2}\;}.
 $$
 
 This is an exact one-body dispersion relation for the relative motion, and it can be inverted for the relative momentum:

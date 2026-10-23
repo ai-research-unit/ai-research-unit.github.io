@@ -194,7 +194,7 @@ $$
 where the last step uses $\vec e_k = -i\,(i\vec e_k)$. Multiplying by $(\hbar/2)^2$,
 
 $$
-[\tilde{S}_\mu,\tilde{S}_\nu] = \frac{\hbar^2}{4}\,[i\vec e_\mu,i\vec e_\nu] = \frac{i\hbar^2}{2}\,\epsilon_{\mu\nu\lambda}\,(i\vec e_\lambda) = i\hbar\,\epsilon_{\mu\nu\lambda}\,\tilde{S}_\lambda .
+\boxed{\;[\tilde{S}_\mu,\tilde{S}_\nu] = \frac{\hbar^2}{4}\,[i\vec e_\mu,i\vec e_\nu] = \frac{i\hbar^2}{2}\,\epsilon_{\mu\nu\lambda}\,(i\vec e_\lambda) = i\hbar\,\epsilon_{\mu\nu\lambda}\,\tilde{S}_\lambda\;}.
 $$
 
 The only inputs are the multiplication rule $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$, the square $\vec e_k^2 = -e_t$, and $i^2=-1$. Reading the result backwards, the angular-momentum algebra in the biquaternion setting is the statement that the Hermitian basis elements $i\vec e_k$ close under commutation with a structure constant proportional to $i$ — a fact that follows from the quaternion product and from the sign $i^2=-1$ that makes $i\vec e_k$ Hermitian.
@@ -240,8 +240,8 @@ $$
 Its eigenvalues follow from the Casimir identity $\vec L\cdot\vec S = \tfrac{1}{2}(J^2 - L^2 - S^2)$: on a state of definite $l$ and total $j = l\pm\tfrac12$,
 
 $$
-\vec L\cdot\vec S \;\longrightarrow\; \frac{\hbar^2}{2}\Bigl[j(j+1) - l(l+1) - \tfrac34\Bigr] =
-\begin{cases} +\dfrac{\hbar^2 l}{2}, & j = l+\tfrac12,\\[6pt] -\dfrac{\hbar^2 (l+1)}{2}, & j = l-\tfrac12 .\end{cases}
+\boxed{\;\vec L\cdot\vec S \;\longrightarrow\; \frac{\hbar^2}{2}\Bigl[j(j+1) - l(l+1) - \tfrac34\Bigr] =
+\begin{cases} +\dfrac{\hbar^2 l}{2}, & j = l+\tfrac12,\\[6pt] -\dfrac{\hbar^2 (l+1)}{2}, & j = l-\tfrac12 .\end{cases}\;}
 $$
 
 For a given $l$ the orbital and spin operators therefore commute with $L^2$, $S^2$, $J^2$ and $J_z$, and the simultaneous labels $(l,j,m_j)$ are the ones that diagonalise the spin–orbit coupling. This is exactly the structure that the non-relativistic hydrogen treatment uses: the spin–orbit term splits each orbital level into the two values above.
@@ -251,9 +251,9 @@ For a given $l$ the orbital and spin operators therefore commute with $L^2$, $S^
 For a general angular momentum the Casimir is $J^2=\sum_k J_k^2$, and it is central in the sense that it commutes with every $J_k$. In the biquaternion realisation it is
 
 $$
-\tilde{J}^2 = \sum_{k=1}^{3}\tilde{J}_k^2
+\boxed{\;\tilde{J}^2 = \sum_{k=1}^{3}\tilde{J}_k^2
 = L^2 e_t + \tilde{S}^2 + 2\,(L_k e_t)\tilde{S}_k
-= \Bigl(L^2 + \tfrac{3\hbar^2}{4}\Bigr)e_t + i\hbar\,L_k \vec e_k ,
+= \Bigl(L^2 + \tfrac{3\hbar^2}{4}\Bigr)e_t + i\hbar\,L_k \vec e_k\;},
 $$
 
 where the cross terms combine to $2L_k\tilde S_k = i\hbar L_k\vec e_k$. Unlike the pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, the total Casimir is **not** a multiple of $e_t$ when orbital angular momentum is present: it has a vector part proportional to the spin–orbit operator. It is nevertheless central within each irreducible multiplet, where it takes the value

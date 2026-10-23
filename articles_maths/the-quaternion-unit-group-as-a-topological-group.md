@@ -4,10 +4,6 @@
 
 The quaternions form a division algebra, so the units of the quaternion product are exactly the nonzero elements and the punctured space is the group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.
 
-**Boundaries.** The space and its topology are *Introduction to Topology on the Quaternions*, above this article in this category; the norm and the inverse formula are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the finite subgroups of the unit sphere are *Quaternion Orders and Finite Groups of Units*, below this article in this category; the exponential and the Lie structure are *Quaternion Exponential and Lie Group Structure*, below this article in this category; the rotations are *Quaternion Rotations and Reflections*, in `### Geometry`.
-
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_kq_k\vec e_k$. The **quaternion form** is $\langle\tilde q\rangle_{\natural}=q_t^{2}+|\vec q|^{2}$ and the **norm** is $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_te_t-\vec q$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the **group of units** is $\mathbb{H}^\times=\{\tilde q\neq0\}$.
-
 ## The Group of Units
 
 **Proposition (the units are the nonzero elements).** The group of units of the quaternion product is
@@ -28,10 +24,8 @@ of real dimension $4$, open and dense in the algebra; its centre is $\mathbb{R}^
 
 **Theorem (the units are a product).** The map
 
-$$
-\mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
-\tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr),
-$$
+$$ \boxed{\; \mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
+\tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr) \;} ,$$
 
 is an isomorphism of topological groups, the second factor being the group of unit quaternions and the first the multiplicative group of the positive reals.
 
@@ -45,9 +39,7 @@ is an isomorphism of topological groups, the second factor being the group of un
 
 **Proposition (the maximal compact subgroup).** The unit quaternions
 
-$$
-Sp(1)=S^3=\{\tilde u:\tilde u^{\natural}\tilde u=e_t\}
-$$
+$$ \boxed{\; Sp(1)=S^3=\{\tilde u:\tilde u^{\natural}\tilde u=e_t\} \;} $$
 
 are a compact Lie group of real dimension $3$, the maximal compact subgroup of $\mathbb{H}^\times$; the decomposition $\mathbb{H}^\times=\mathbb{R}_{>0}\cdot Sp(1)$ holds, and the centre of $Sp(1)$ is $\{\pm e_t\}$.
 

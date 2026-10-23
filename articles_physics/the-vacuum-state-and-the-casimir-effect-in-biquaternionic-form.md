@@ -12,21 +12,14 @@ The division between what is established and what is interpretation is stated he
 
 - **Established, and recomputed below.** The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{M}_+$, and the trace formula $\mathrm{Tr}(\tilde\Pi_+\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H^{*})$ gives vacuum expectation values for one fermionic mode once $\tilde\Pi_+$ is defined below. The zero-point energy of the free Maxwell field is a **central scalar** — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
 $$
-\frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}},\qquad
-\frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}},
+\boxed{\;\frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}},\qquad
+\frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}}\;},
 $$
 with the force **attractive**. The factor of two between the electromagnetic result and the Dirichlet-scalar result is fixed by the two physical transverse polarisations, whose sum reproduces the biquaternion norm of $\mathbb{M}_-$.
 - **Interpretation.** Interpreting the vacuum energy as the trace part, or scalar part, of the field Hamiltonian, and reading the framework's local complex structure as a possible home for boundaries, are interpretations of algebraic facts. The first is precise and is developed below; the second is a suggestion, flagged as such.
 - **Gaps, left visible.** There is no bosonic ladder in $\mathbb{B}$, so the photon's Fock vacuum is a standard construction on an imported module rather than an object of the algebra. The perfectly conducting plates and their boundary conditions have no native description in the framework. The algebra does not select a regularisation. And the framework reproduces the standard Casimir result rather than modifying it, so it supplies no empirical discriminator here.
 
 The article is organised as follows. The next section fixes the vacuum state in the framework. The section after that treats the zero-point energy and its central-scalar character. The following section sets up the parallel-plate configuration and exhibits the divergent mode sum. Two sections then regularise it by two independent routes. A section accounts for the polarisations and the factor of two. A section states the force, its sign, and its verification. A section separates what the framework supplies from what it imports, a short section treats boundaries and the local complex structure as an open direction, and the article closes with open questions.
-
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^{2}=-e_t$, and $i$ is the scalar imaginary with $i^{2}=-1$. The material (anti-Hermitian) and informational (Hermitian) sectors are
-$$
-\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},\qquad
-\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
-$$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, normalised so that $\mathrm{Tr}(e_t)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the potential and field strength are $\tilde A=i\phi/c\,e_t+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.
 
 ## The Vacuum State in the Framework
 
@@ -50,7 +43,7 @@ $$
 $$
 so the **vacuum idempotent** is the complementary one
 $$
-\vert 0\rangle\langle 0\vert=e_t-\tilde\Pi_-=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{M}_+.
+\boxed{\;\vert 0\rangle\langle 0\vert=e_t-\tilde\Pi_-=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{M}_+\;}.
 $$
 Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state idempotent of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
 $$
@@ -80,7 +73,7 @@ and the constant discarded in passing to the normal-ordered form is the zero-poi
 
 **Its value.** Reordering the modes produces, per mode, the contribution $\sum_r\zeta_r\,\tfrac12\hbar\omega_k$. Since
 $$
-\sum_{r=0}^{3}\zeta_r=-1+1+1+1=2,
+\boxed{\;\sum_{r=0}^{3}\zeta_r=-1+1+1+1=2\;},
 $$
 the zero-point constant of the covariant field is that of **two** transverse modes, $\hbar\omega_k$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
@@ -165,9 +158,9 @@ $$
 $$
 giving
 $$
-\frac{E_{\mathrm{Dir}}}{A}
+\boxed{\;\frac{E_{\mathrm{Dir}}}{A}
 =\frac{\hbar c}{2}\cdot\frac{1}{4\pi}\Big(-\frac23\Big)\Big(\frac{\pi}{a}\Big)^{3}\frac{1}{120}
-=-\frac{\pi^{2}\hbar c}{1440\,a^{3}} .
+=-\frac{\pi^{2}\hbar c}{1440\,a^{3}}\;}.
 $$
 This is the Casimir energy per unit area of a **single** massless scalar degree of freedom with Dirichlet-type boundary conditions. Every factor has been recomputed; in particular $\zeta(-3)=1/120$ and the gamma ratio $-2/3$ were checked independently.
 
@@ -244,11 +237,11 @@ so a **negative** $F$ is a force that pulls the plates together (attractive), an
 
 **Route one.** Differentiating the electromagnetic energy, which is twice the Dirichlet-scalar result,
 $$
-\frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}}
+\boxed{\;\frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}}
 \quad\Longrightarrow\quad
 \frac{F_{\mathrm{EM}}}{A}
 =-\frac{\partial}{\partial a}\Big(-\frac{\pi^{2}\hbar c}{720\,a^{3}}\Big)
-=-\frac{\pi^{2}\hbar c}{240\,a^{4}}<0 .
+=-\frac{\pi^{2}\hbar c}{240\,a^{4}}<0\;}.
 $$
 The force is **attractive**. Note the sign chain: $E$ is negative and *increases* with $a$ (it goes to zero from below), so its derivative is positive and the force is negative.
 

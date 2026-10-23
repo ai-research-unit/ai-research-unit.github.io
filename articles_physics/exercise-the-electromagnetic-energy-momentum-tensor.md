@@ -137,7 +137,7 @@ $$
 $$
 using $F^{*} = -F^*$ and $\mathrm{Re}(F_\nu F^*_\lambda) = \epsilon E_\nu E_\lambda + \mu H_\nu H_\lambda$. Hence
 $$
-\boxed{\;\tilde F \vec e_\nu\tilde F^{*} = \frac{2i}{c}S_\nu\,e_t + 2\sigma_{\nu\lambda}\,\vec e_\lambda .\;}
+\boxed{\;\tilde F \vec e_\nu\tilde F^{*} = \frac{2i}{c}S_\nu\,e_t + 2\sigma_{\nu\lambda}\,\vec e_\lambda\;}.
 $$
 Now multiply by $\mathcal{E}_\nu$ on the right and take the scalar part. For $\mu = 0$, use $\mathcal{E}_0 = ie_t$ and $\tilde F\mathcal{E}_0\tilde F^{*} = i\tilde F\tilde F^{*} = 2iWe_t - \frac{2}{c}\vec S$:
 $$
@@ -155,7 +155,7 @@ T^\nu{}_\mu = \frac{1}{2}\mathrm{Sc}\!\left(2\sigma_{\nu\lambda}\vec e_\lambda\,
 $$
 Collecting,
 $$
-\boxed{\;T^0{}_0 = -W, \quad T^0{}_\nu = \frac{1}{c}S_\nu, \quad T^\nu{}_0 = -\frac{1}{c}S_\nu, \quad T^\nu{}_\mu = -\sigma_{\nu\mu}.\;}
+\boxed{\;T^0{}_0 = -W, \quad T^0{}_\nu = \frac{1}{c}S_\nu, \quad T^\nu{}_0 = -\frac{1}{c}S_\nu, \quad T^\nu{}_\mu = -\sigma_{\nu\mu}\;}.
 $$
 This is the mixed tensor: it is **not symmetric**, and that is correct, because $T^0{}_\nu$ (energy flux) and $T^\nu{}_0$ (momentum density times $c$) are related through the metric. Contracting the second slot with $\eta = \mathrm{diag}(-1,1,1,1)$ gives the symmetric tensor
 $$
@@ -179,7 +179,7 @@ $$
 $$
 using $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$. Hence
 $$
-T^\mu{}_\mu = -W - (-W) = 0.
+\boxed{\;T^\mu{}_\mu = -W - (-W) = 0\;}.
 $$
 The tensor is traceless. With the contracted components the same statement reads $\eta_{\mu\nu}T^{\mu\nu} = -T^{tt} + T^{\mu\mu} = -W + (-\sigma_{\mu\mu}) = -W + W = 0$. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
 
@@ -248,7 +248,7 @@ $$
 $$
 where $W = \epsilon E_0^2\cos^2(kz-\omega t')$ for this wave and $1/(\mu c^2) = \epsilon$. Hence only $T^{tt} = W$, $T^{tz} = T^{zt} = \frac{1}{c}S_z = W$, and $T^{zz} = -\sigma_{33} = W$ survive:
 $$
-T^{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k^\mu k^\nu .
+\boxed{\;T^{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k^\mu k^\nu\;}.
 $$
 The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $\eta_{\mu\nu}T^{\mu\nu} = -T^{tt} + T^{zz} = -W + W = 0$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\partial/\partial Q_\mu T^{\mu\nu} \propto (\partial/\partial Q_\mu W)k^\mu k^\nu$ with $\partial/\partial Q_\mu W\,k^\mu = k\left(\frac{1}{c}\partial/\partial t'W + \partial/\partial Q_z\,W\right) = 0$, using $\partial/\partial Q_z\,W = -\frac{1}{c}\partial/\partial t'W$. The direct computation confirms $\partial/\partial Q_\mu T^{\mu\nu} = 0$ and $T^\mu{}_\mu = 0$ identically in $z$ and $t'$.
 

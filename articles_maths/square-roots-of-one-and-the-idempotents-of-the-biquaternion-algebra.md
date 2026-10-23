@@ -18,20 +18,24 @@ $$
 
 is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$. A root carries two idempotents and not one: the halving map picks the member attached to $+1$, and the other is its value at $-\tilde\Xi$; with $\tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_{-}(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=\tilde\Pi_{+}(-\tilde\Xi)$, the two are a complete orthogonal pair, $\tilde\Pi_{+}(\tilde\Xi)+\tilde\Pi_{-}(\tilde\Xi)=e_t$ and $\tilde\Pi_{+}(\tilde\Xi)\tilde\Pi_{-}(\tilde\Xi)=0$, and the root is their difference, $\tilde\Xi=\tilde\Pi_{+}(\tilde\Xi)-\tilde\Pi_{-}(\tilde\Xi)$. The reason is a two-line computation: if $\tilde\Xi^2=e_t$ then $\tilde\Pi^2=\tfrac14(e_t+2\tilde\Xi+e_t)=\tilde\Pi$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_t)^2=4\tilde\Pi^2-4\tilde\Pi+e_t=e_t$. Every idempotent of the algebra is read through that map, on the roots of $+1$ alone, and the families of idempotents are the families of the roots of $+1$ read through it.
 
-**The results.** The roots of $+1$ are the two **trivial roots** $\pm e_t$; the **purely imaginary roots** $\pm i\vec u$ over the real unit vectors $\vec u$ with $\vec u^2=-e_t$, a two-real-parameter family; and the **non-Hermitian roots** $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=-1$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$, a four-real-parameter family. There are no others. Every idempotent of the algebra is trivial, $0$ or $e_t$, or of the form $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the **trivial roots** give the trivial idempotents, the **purely imaginary roots** give the **Hermitian idempotents**, and the **non-Hermitian roots** give a four-real-parameter family of **non-Hermitian idempotents** lying in none of the four four-dimensional remarkable subspaces. Each root carries the two idempotents $\tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_{-}(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_{+}(\tilde\Xi)$, a complete orthogonal pair whose difference is the root; the class $\{\tilde\Xi,-\tilde\Xi\}$ gives the same unordered pair.
+**The results.** The roots of $+1$ are the two **trivial roots** $\pm e_t$; the **purely imaginary roots** $\pm i\vec u$ over the real unit vectors $\vec u$ with $\vec u^2=-e_t$, a two-real-parameter family; and the **non-Hermitian roots** $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=-1$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$, a four-real-parameter family. There are no others. Every idempotent of the algebra is trivial, $0$ or $e_t$, or of the form $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the **trivial roots** give the trivial idempotents, the **purely imaginary roots** give the **non-trivial Hermitian idempotents**, and the **non-Hermitian roots** give a four-real-parameter family of **non-Hermitian idempotents** lying in none of the four four-dimensional remarkable subspaces. Each root carries the two idempotents $\tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_{-}(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_{+}(\tilde\Xi)$, a complete orthogonal pair whose difference is the root; the class $\{\tilde\Xi,-\tilde\Xi\}$ gives the same unordered pair.
 
-The following table collects the solution sets and the map between them.
+The following table collects the results at a glance.
 
-| Equation or map | Result | Size |
+| Item | Result | Size |
 |---|---|---|
-| $\tilde\Xi^{2}=e_t$ | $\pm e_t$; $\pm i\vec u$; $\vec\xi+i\vec\xi'$ | two isolated, a two-parameter family, a four-parameter family |
-| $\tilde\Xi^{2}=-e_t$ | $\pm i$; $\pm\vec u$; $-\vec\xi'+i\vec\xi$ | two isolated, a two-parameter family, a four-parameter family |
-| $\tilde\Pi^{2}=\tilde\Pi$ | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$; $\tfrac12(e_t+\vec\xi+i\vec\xi')$ | two isolated, a two-parameter family, a four-parameter family |
-| $H(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ | bijection onto the idempotents | two-to-one on unordered pairs |
+| Roots of $+1$ | $\pm e_t$; $\pm i\vec u$; $\vec\xi+i\vec\xi'$ | two isolated, a two-parameter family, a four-parameter family |
+| Roots of $-1$ | $\pm i$; $\pm\vec u$; $-\vec\xi'+i\vec\xi$ | two isolated, a two-parameter family, a four-parameter family |
+| Root set | not closed under multiplication, hence not a group | — |
+| Idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$; $\tfrac12(e_t+\vec\xi+i\vec\xi')$ | two isolated, a two-parameter family, a four-parameter family |
+| Hermitian idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$, the star fixing them | two isolated, a two-parameter family |
+| Non-Hermitian idempotents | $\tfrac12(e_t+\vec\xi+i\vec\xi')$, not fixed by the star | a four-parameter family |
+| Halving map | bijection $H(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ | two-to-one on unordered pairs |
+| Standard pair | $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive | two elements |
+| Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$ | two families |
+| Involutions | the natural conjugation and the bar exchange the standard pair; the star fixes both | three involutions |
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, which is *Square Roots of a General Element in the Biquaternion Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Biquaternion Algebra*; or the ideals the standard idempotents generate, which are *Ideals and Peirce Decomposition of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
-
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the bar is the coefficient conjugation $\bar{\tilde Q}=\bar Q_t+\bar{\vec Q}$, and the star is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}=\bar{\cdot}\circ{}^{\natural}$. The general plain bilinear form of two vector parts is
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_{k=1}^{3}Q_{1k}Q_{2k},
@@ -43,7 +47,7 @@ The equations name a product, so the roots and the idempotents are relative to i
 
 ## The Roots of One
 
-**The roots of $+1$ are exactly the two trivial roots $\pm e_t$, the two-real-parameter family of purely imaginary roots $\pm i\vec u$ over the real unit vectors $\vec u$ with $\vec u^2=-e_t$, and the four-real-parameter family of non-Hermitian roots $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions; there are no others.**
+**The roots of $+1$ are exactly the trivial roots $\pm e_t$, the purely imaginary roots $\pm i\vec u$, and the non-Hermitian roots $\vec\xi+i\vec\xi'$; there are no others.**
 
 A **root of $+1$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi^2=e_t$, the square being the one of the general plain bilinear product.
 
@@ -77,7 +81,12 @@ $$
 \Xi_t^2-(\vec\Xi,\vec\Xi)=1 .
 $$
 
-Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_t=0$ or $\vec\Xi=0$. The roots of $+1$ therefore split into two disjoint cases: the root is a complex scalar, $\vec\Xi=0$, or the root is pure, $\Xi_t=0$.
+Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_t=0$ or $\vec\Xi=0$. The roots of $+1$ therefore split into two disjoint cases: the root is a complex scalar, $\vec\Xi=0$, or the root is pure, $\Xi_t=0$. The split is collected in the table.
+
+| Case | Equation | Solutions |
+|---|---|---|
+| Scalar | $\Xi_t^{2}=1$ | $\pm e_t$ |
+| Pure | $(\vec\Xi,\vec\Xi)=-1$ | the purely imaginary and the non-Hermitian roots |
 
 ### The Trivial Roots
 
@@ -89,7 +98,13 @@ $$
 
 the **trivial roots** of $+1$. They are the only roots of $+1$ in the centre $\mathbb{C}e_t$, and the only ones with non-vanishing scalar part.
 
-### The Purely Imaginary Roots
+### The Non-Trivial Roots
+
+**The non-trivial roots are the pure roots, $\tilde\Xi=\vec\Xi$ with $(\vec\Xi,\vec\Xi)=-1$; they split into the purely imaginary roots and the non-Hermitian roots.**
+
+The pure case splits by whether the vector part is $i$ times a real vector. The first family is the purely imaginary roots; the second is the non-Hermitian roots.
+
+#### The Purely Imaginary Roots
 
 In the pure case $\tilde\Xi=\vec\Xi$ and the scalar equation reads
 
@@ -111,7 +126,7 @@ $$
 
 a **two-real-parameter family**: three real coefficients of $\vec u$ carrying the single condition $u_x^2+u_y^2+u_z^2=1$. Its members are the only roots of $+1$ whose vector part is $i$ times a real vector, and each is Hermitian, $(\tilde\Xi)^{*}=\tilde\Xi$.
 
-### The Non-Hermitian Roots
+#### The Non-Hermitian Roots
 
 Let now the vector part be genuinely complex, $\vec\Xi=\vec\xi+i\vec\xi'$ with $\vec\xi,\vec\xi'$ real pure. Then
 
@@ -139,7 +154,7 @@ equivalently $\vec\xi\vec\xi'+\vec\xi'\vec\xi=0$. For such a root the imaginary 
 
 ### Statement of the Theorem
 
-**Theorem.** The roots of $+1$ in $\mathbb{B}$ are exactly the elements of the three following families.
+**Theorem (the roots of $+1$).** The roots of $+1$ in $\mathbb{B}$ are exactly the elements of the three following families.
 
 **The trivial roots.** The two central elements
 
@@ -150,8 +165,10 @@ $$
 **The purely imaginary roots.** The two-real-parameter family
 
 $$
-\tilde\Xi=+i\vec u,\qquad \tilde\Xi=-i\vec u,\qquad \vec u=u_x\vec e_x+u_y\vec e_y+u_z\vec e_z,\ u_k\in\mathbb{R},\ u_x^2+u_y^2+u_z^2=1,
-$$
+\boxed{\;
+\tilde\Xi=+i\vec u,\qquad \tilde\Xi=-i\vec u,\qquad \vec u=u_x\vec e_x+u_y\vec e_y+u_z\vec e_z,\ u_k\in\mathbb{R},\ u_x^2+u_y^2+u_z^2=1
+\;}
+$$,
 
 equivalently over the real unit vectors with $\vec u^2=-e_t$; since $i$ is central the family is also written $\tilde\Xi=\pm\vec u i$.
 
@@ -175,11 +192,11 @@ The three families are disjoint, and together they are all the roots.
 
 The roots fall into the three following families.
 
-| Family | Form | Real parameters | Size |
-|---|---|---|---|
-| Trivial roots | $\tilde\Xi=\pm e_t$ | none | two elements |
-| Purely imaginary roots | $\tilde\Xi=\pm i\vec u$, with $\vec u$ a real unit vector | two | two-parameter family |
-| Non-Hermitian roots | $\tilde\Xi=\vec\xi+i\vec\xi'$, with $\vec\xi\neq0$ and the two real conditions | four | four-parameter family |
+| Family | Form | Real parameters | Size | Position | Fixed by the star? |
+|---|---|---|---|---|---|
+| Trivial roots | $\tilde\Xi=\pm e_t$ | none | two elements | the centre $\mathbb{C}e_t$ | yes |
+| Purely imaginary roots | $\tilde\Xi=\pm i\vec u$, with $\vec u$ a real unit vector | two | two-parameter family | the pure subspace | yes |
+| Non-Hermitian roots | $\tilde\Xi=\vec\xi+i\vec\xi'$, with $\vec\xi\neq0$ and the two real conditions | four | four-parameter family | the pure subspace | no |
 
 ### Verification
 
@@ -209,11 +226,25 @@ $$
 
 by the first condition.
 
+The three checks are collected in the table.
+
+| Family | Square | Value |
+|---|---|---|
+| Trivial roots | $(\pm e_t)^{2}$ | $e_t$ |
+| Purely imaginary roots | $(i\vec u)^{2}$ | $e_t$ |
+| Non-Hermitian roots | $(\vec\xi+i\vec\xi')^{2}$ | $e_t$ |
+
 ### The Roots of Minus One
 
 **Proposition (the roots of $-1$).** The equation $\tilde\Xi^{2}=-e_t$ has the two central scalars $\pm i$; the family $\pm\vec u$ over the real unit vectors $\vec u$ with $\vec u^2=-e_t$; and the family $-\vec\xi'+i\vec\xi$ with the same two real conditions as the non-Hermitian roots of $+1$, with the sign of the first reversed.
 
 **Proof.** The central imaginary turns the roots of $+1$ into the roots of $-1$: if $\tilde\Xi^2=e_t$ then $(i\tilde\Xi)^2=i^2\tilde\Xi^2=-e_t$, because $i$ is central, and since $i$ is invertible the map $\tilde\Xi\mapsto i\tilde\Xi$ is a bijection from the roots of $+1$ onto the roots of $-1$. The trivial roots go to $\pm i$, the purely imaginary roots to $\pm\vec u$, and the non-Hermitian roots to $-\vec\xi'+i\vec\xi$.
+
+The result is collected in the table.
+
+| Equation | Solutions | Size | Relation to the roots of $+1$ |
+|---|---|---|---|
+| $\tilde\Xi^{2}=-e_t$ | $\pm i$; $\pm\vec u$; $-\vec\xi'+i\vec\xi$ | two isolated, a two-parameter family, a four-parameter family | $i\{\text{the roots of }+1\}$ |
 
 The mechanism is not universal. It needs a central scalar of square $-1$ that can be moved past the two slots of the product; in a sesquilinear product, where the second slot conjugates, scalar multiplication cannot flip the sign this way, and the roots of $-1$ are then read from the roots of $+1$ by no such map, or are absent altogether. The roots of $-1$ are quoted here and are used nowhere in this article.
 
@@ -239,11 +270,20 @@ is a unit and not a root of $+1$. Hence the roots form no group.
 
 Counting the free real parameters: the trivial roots are two isolated elements, the purely imaginary roots are a two-real-parameter family, and the non-Hermitian roots are a four-real-parameter family.
 
-The non-trivial roots therefore lie in the six-real-dimensional vector subspace of pure biquaternions, while the trivial roots lie in the centre.
+The non-trivial roots therefore lie in the six-real-dimensional vector subspace of pure biquaternions, while the trivial roots lie in the centre. The status of the roots is collected in the table.
+
+| Property | Result |
+|---|---|
+| Closed under multiplication? | no; $(i\vec e_x)(i\vec e_y)=-\vec e_z$ is not a root |
+| Group? | no |
+| Units? | yes, $\tilde\Xi^{-1}=\tilde\Xi$ |
+| Zero divisors? | no |
+| Position | the trivial roots in the centre, the non-trivial roots in the pure subspace |
+| Common with the idempotents | only $e_t$ |
 
 ## The Idempotents
 
-**Every idempotent of $\mathbb{B}$ is trivial, $0$ or $e_t$, or of the form $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; a root carries the two idempotents $\tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_{-}(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_{+}(\tilde\Xi)$, a complete orthogonal pair whose difference is the root; the halving map $H(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents; and the non-Hermitian idempotents form a four-real-parameter family.**
+**The idempotents of $\mathbb{B}$ are exactly the trivial idempotents $0,e_t$, the non-trivial Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$, and the non-Hermitian idempotents $\tfrac12(e_t+\vec\xi+i\vec\xi')$; the standard pair is orthogonal, complete and primitive, and every idempotent is the image of exactly one root of $+1$ under the halving map.**
 
 The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals; they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they drive the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
 
@@ -274,23 +314,21 @@ and every such decomposition arises from an idempotent. A **primitive** idempote
 **Theorem (the two idempotents of a root).** For a root $\tilde\Xi$ of $+1$, the elements
 
 $$
+\boxed{\;
 \tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi),\qquad \tilde\Pi_{-}(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)
+\;}
 $$
 
-are idempotent, complete and orthogonal:
+are idempotent, complete and orthogonal; the identities are collected in the table.
 
-$$
-\tilde\Pi_{+}(\tilde\Xi)^2=\tilde\Pi_{+}(\tilde\Xi),\qquad
-\tilde\Pi_{-}(\tilde\Xi)^2=\tilde\Pi_{-}(\tilde\Xi),\qquad
-\tilde\Pi_{+}(\tilde\Xi)\tilde\Pi_{-}(\tilde\Xi)=\tilde\Pi_{-}(\tilde\Xi)\tilde\Pi_{+}(\tilde\Xi)=0,\qquad
-\tilde\Pi_{+}(\tilde\Xi)+\tilde\Pi_{-}(\tilde\Xi)=e_t,
-$$
-
-and the root is their difference,
-
-$$
-\tilde\Pi_{+}(\tilde\Xi)-\tilde\Pi_{-}(\tilde\Xi)=\tilde\Xi .
-$$
+| Identity | Value |
+|---|---|
+| $\tilde\Pi_{+}(\tilde\Xi)^{2}$ | $\tilde\Pi_{+}(\tilde\Xi)$ |
+| $\tilde\Pi_{-}(\tilde\Xi)^{2}$ | $\tilde\Pi_{-}(\tilde\Xi)$ |
+| $\tilde\Pi_{+}(\tilde\Xi)\tilde\Pi_{-}(\tilde\Xi)$ | $0$ |
+| $\tilde\Pi_{-}(\tilde\Xi)\tilde\Pi_{+}(\tilde\Xi)$ | $0$ |
+| $\tilde\Pi_{+}(\tilde\Xi)+\tilde\Pi_{-}(\tilde\Xi)$ | $e_t$ |
+| $\tilde\Pi_{+}(\tilde\Xi)-\tilde\Pi_{-}(\tilde\Xi)$ | $\tilde\Xi$ |
 
 **Proof.** The idempotence is the computation
 
@@ -361,7 +399,12 @@ $$
 \mathbb{B}=\tilde\Pi_{+}\mathbb{B}\oplus\tilde\Pi_{-}\mathbb{B},\qquad \mathbb{B}=\mathbb{B}\tilde\Pi_{+}\oplus\mathbb{B}\tilde\Pi_{-},
 $$
 
-and these are exactly the eigenspace decompositions of the two multiplications; the operator of left multiplication by the root is an involution, its square being the identity because $\tilde\Xi^2=e_t$.
+and these are exactly the eigenspace decompositions of the two multiplications; the operator of left multiplication by the root is an involution, its square being the identity because $\tilde\Xi^2=e_t$. The action is collected in the table.
+
+| Multiplication by $\tilde\Xi$ | On $\tilde\Pi_{+}$ | On $\tilde\Pi_{-}$ |
+|---|---|---|
+| left | $+1$ | $-1$ |
+| right | $+1$ | $-1$ |
 
 ### The Standard Idempotents
 
@@ -379,7 +422,17 @@ $$
 \tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=\frac{e_t-(i\vec e_z)^2}{4}=0,\qquad \tilde\Pi_{+} + \tilde\Pi_{-}=e_t .
 $$
 
-So $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$ are orthogonal idempotents summing to the unit. They are not central, since $\vec e_x$ anticommutes with $i\vec e_z$ and so does not commute with either. Each is primitive, and these two are the standard idempotents of the algebra.
+So $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$ are orthogonal idempotents summing to the unit. They are not central, since $\vec e_x$ anticommutes with $i\vec e_z$ and so does not commute with either. Each is primitive, and these two are the standard idempotents of the algebra. The properties of the pair are collected in the table.
+
+| Property | $\tilde\Pi_{+},\tilde\Pi_{-}$ |
+|---|---|
+| Orthogonal | $\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0$ |
+| Complete | $\tilde\Pi_{+}+\tilde\Pi_{-}=e_t$ |
+| Central | no |
+| Primitive | yes |
+| Hermitian idempotent | yes, $\tilde\Pi_{\pm}^{*}=\tilde\Pi_{\pm}$ |
+| Zero divisor | yes, $\tilde\Pi_{+}\tilde\Pi_{-}=0$ |
+| Minimal ideals | $\mathbb{B}\tilde\Pi_{\pm}$, the two minimal left ideals |
 
 Left multiplication by $\vec e_z$ and by $\vec e_y$ acts on them as
 
@@ -393,11 +446,13 @@ the first because $\vec e_z\tilde\Pi_{+}=(\vec e_z+i\vec e_z^2)/2=(\vec e_z-i)/2
 
 **Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_t$) or of the form $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi^2=e_t$; there are no others.**
 
-**Theorem.** Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_t$) or of the form
+**Theorem (the idempotents).** Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_t$) or of the form
 
 $$
-\tilde\Pi=\tfrac12 e_t+\tfrac12\tilde\Xi,
-$$
+\boxed{\;
+\tilde\Pi=\tfrac12 e_t+\tfrac12\tilde\Xi
+\;}
+$$,
 
 where $\tilde\Xi\in\mathbb{B}$ is a root of $+1$, that is $\tilde\Xi^2=e_t$. There are no other idempotents in $\mathbb{B}$.
 
@@ -436,7 +491,9 @@ The trivial idempotents correspond to the trivial roots $\tilde\Xi=\pm e_t$: the
 **Theorem (the halving map).** The map
 
 $$
+\boxed{\;
 H(\tilde\Xi)=\tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)
+\;}
 $$
 
 is a **bijection** from the set of roots of $+1$ onto the set of idempotents of $\mathbb{B}$.
@@ -480,17 +537,17 @@ The inverse of the halving map is $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$, and the ro
 
 ### The Families of Idempotents
 
-**The idempotents fall into three families, the trivial idempotents $0,e_t$, the Hermitian idempotents and the non-Hermitian idempotents.**
+**The idempotents fall into three families: the trivial idempotents $0,e_t$, the non-trivial Hermitian idempotents, and the non-Hermitian idempotents.**
 
 The idempotents fall into the three following families.
 
-| Family | Form | Real parameters | Size | Position |
-|---|---|---|---|---|
-| Trivial idempotents | $0,e_t$ | none | two elements | the scalar line |
-| Hermitian idempotents | $\tfrac12(e_t\pm i\vec u)$, with $\vec u$ a real unit vector | two | two-parameter family | $\mathbb{M}_+$ |
-| Non-Hermitian idempotents | $\tfrac12(e_t+\vec\xi+i\vec\xi')$, with $\vec\xi\neq0$ and the two real conditions | four | four-parameter family | none of the four four-dimensional subspaces |
+| Family | Form | Real parameters | Size | Position | Fixed by the star? |
+|---|---|---|---|---|---|
+| Trivial idempotents | $0,e_t$ | none | two elements | the scalar line | yes |
+| Non-trivial Hermitian idempotents | $\tfrac12(e_t\pm i\vec u)$, with $\vec u$ a real unit vector | two | two-parameter family | $\mathbb{M}_+$ | yes |
+| Non-Hermitian idempotents | $\tfrac12(e_t+\vec\xi+i\vec\xi')$, with $\vec\xi\neq0$ and the two real conditions | four | four-parameter family | none of the four four-dimensional subspaces | no |
 
-Since $i\vec u$ is Hermitian for a real unit vector $\vec u$ with $\vec u^2=-e_t$, these are the Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{M}_+$. They are the spectral idempotents of the spectral theorem for a Hermitian element, treated in *Biquaternion Spectral Theory*. A Hermitian idempotent is self-adjoint, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. For the non-Hermitian root the vector part $\tfrac12(\vec\xi+i\vec\xi')$ carries both a nonzero real part $\vec\xi$ and a nonzero imaginary part $\vec\xi'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *Zero Divisors of the Biquaternion Algebra*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being a unit.
+Since $i\vec u$ is Hermitian for a real unit vector $\vec u$ with $\vec u^2=-e_t$, these are the non-trivial Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{M}_+$. They are the spectral idempotents of the spectral theorem for a Hermitian element, treated in *Biquaternion Spectral Theory*. A Hermitian idempotent is self-adjoint, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. For the non-Hermitian root the vector part $\tfrac12(\vec\xi+i\vec\xi')$ carries both a nonzero real part $\vec\xi$ and a nonzero imaginary part $\vec\xi'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of non-trivial Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *Zero Divisors of the Biquaternion Algebra*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being a unit.
 
 ### Idempotents and Their Projectors
 
@@ -517,9 +574,14 @@ $$
 P_{+}^{2}=P_{+},\qquad P_{-}^{2}=P_{-},\qquad P_{+}P_{-}=P_{-}P_{+}=0,\qquad P_{+}+P_{-}=\mathrm{id}.
 $$
 
-The identity $P_{+}+P_{-}=\mathrm{id}$ is the **resolution of the identity**; the images are the two minimal right ideals $\tilde\Pi_{+}\mathbb{B}$ and $\tilde\Pi_{-}\mathbb{B}$. Right multiplication gives the two projections onto the minimal left ideals $\mathbb{B}\tilde\Pi_{+}$ and $\mathbb{B}\tilde\Pi_{-}$, with the same identities.
+The identity $P_{+}+P_{-}=\mathrm{id}$ is the **resolution of the identity**; the images are the two minimal right ideals $\tilde\Pi_{+}\mathbb{B}$ and $\tilde\Pi_{-}\mathbb{B}$. Right multiplication gives the two projections onto the minimal left ideals $\mathbb{B}\tilde\Pi_{+}$ and $\mathbb{B}\tilde\Pi_{-}$, with the same identities. The two left projectors are collected in the table.
 
-A **Hermitian idempotent**, $\tilde\Pi^{*}=\tilde\Pi$, is **self-adjoint** with respect to the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which this article names and does not use; it is the kind occurring in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*}=\overline{\tilde\Pi^{\natural}}$, the Hermitian idempotents are the members of the second family of §*The Families of Idempotents*, and they lie in $\mathbb{M}_+$.
+| Projector | Formula | Image | Kernel |
+|---|---|---|---|
+| $P_{+}$ | $\tilde Q\mapsto\tilde\Pi_{+}\tilde Q$ | $\tilde\Pi_{+}\mathbb{B}$ | $\tilde\Pi_{-}\mathbb{B}$ |
+| $P_{-}$ | $\tilde Q\mapsto\tilde\Pi_{-}\tilde Q$ | $\tilde\Pi_{-}\mathbb{B}$ | $\tilde\Pi_{+}\mathbb{B}$ |
+
+A **Hermitian idempotent**, $\tilde\Pi^{*}=\tilde\Pi$, is **self-adjoint** with respect to the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which this article names and does not use; it is the kind occurring in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*}=\overline{\tilde\Pi^{\natural}}$, the non-trivial Hermitian idempotents are the members of the second family of §*The Families of Idempotents*, and they lie in $\mathbb{M}_+$.
 
 ### Idempotents and the Zero Divisors
 
@@ -537,6 +599,13 @@ $$
 \tilde Q=2Q_t\tilde\Pi,\qquad \tilde\Pi=\frac{\tilde Q}{2Q_t}.
 $$
 
+The two kinds of zero divisor are collected in the table.
+
+| Zero divisor | Form | Relation to the idempotents |
+|---|---|---|
+| Non-pure | $\tilde Q=2Q_t\tilde\Pi$, $Q_t\neq0$ | a complex multiple of a non-trivial idempotent |
+| Pure | separate family | not of this form |
+
 The derivation, from the square relation $\tilde Q^2=2Q_t\tilde Q$ that the non-pure family satisfies, together with the structure of the two families of the zero-divisor set and their distribution among the remarkable subspaces, is *Zero Divisors of the Biquaternion Algebra*.
 
 ### Idempotents and the Minimal Ideals
@@ -548,6 +617,15 @@ The principal left ideals $\mathbb{B}\tilde\Pi_{+}$ and $\mathbb{B}\tilde\Pi_{-}
 $$
 \mathbb{B}=\mathbb{B}\tilde\Pi_{+}\oplus\mathbb{B}\tilde\Pi_{-}.
 $$
+
+The two ideals are collected in the table.
+
+| Ideal | Generator | Form | Minimality |
+|---|---|---|---|
+| Left | $\tilde\Pi_{+}$ | $\mathbb{B}\tilde\Pi_{+}$ | yes |
+| Left | $\tilde\Pi_{-}$ | $\mathbb{B}\tilde\Pi_{-}$ | yes |
+| Right | $\tilde\Pi_{+}$ | $\tilde\Pi_{+}\mathbb{B}$ | yes |
+| Right | $\tilde\Pi_{-}$ | $\tilde\Pi_{-}\mathbb{B}$ | yes |
 
 The minimality is the primitive character of the pair: the only idempotents of $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{+}$ and $\tilde\Pi_{-}\mathbb{B}\tilde\Pi_{-}$ are $0$ and the identity of the corner, so neither ideal contains a proper nonzero ideal of its own. The Peirce decomposition, the corner algebras and the matrix units of the two ideals are *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
 
@@ -563,7 +641,7 @@ The action of the involutions on the idempotents is collected in the table.
 | bar $\bar{\cdot}$ | $0$ | $e_t$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
 | star $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | $0$ | $e_t$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
 
-The natural conjugation changes the sign of the vector part and fixes the central $i$, so it sends $i\vec e_z$ to $-i\vec e_z$ and exchanges the two idempotents. The bar conjugates the complex coefficient $i$ and fixes $\vec e_z$, so it also exchanges them. The star is the composite $\bar{\cdot}\circ{}^{\natural}$, so it fixes each: $\tilde\Pi_{+}^{*}=\tilde\Pi_{+}$ and $\tilde\Pi_{-}^{*}=\tilde\Pi_{-}$. The trivial idempotents $0$ and $e_t$ are fixed by all three. The fixed idempotents of the star are the Hermitian idempotents of §*The Families of Idempotents*; the natural conjugation and the bar exchange the members of the pair without preserving the individual idempotent.
+The natural conjugation changes the sign of the vector part and fixes the central $i$, so it sends $i\vec e_z$ to $-i\vec e_z$ and exchanges the two idempotents. The bar conjugates the complex coefficient $i$ and fixes $\vec e_z$, so it also exchanges them. The star is the composite $\bar{\cdot}\circ{}^{\natural}$, so it fixes each: $\tilde\Pi_{+}^{*}=\tilde\Pi_{+}$ and $\tilde\Pi_{-}^{*}=\tilde\Pi_{-}$. The trivial idempotents $0$ and $e_t$ are fixed by all three. The non-trivial fixed idempotents of the star are the non-trivial Hermitian idempotents of §*The Families of Idempotents*, and the trivial idempotents $0$ and $e_t$ are fixed as well; the natural conjugation and the bar exchange the members of the standard pair without preserving the individual idempotent.
 
 ## Summary
 
@@ -571,8 +649,10 @@ The natural conjugation changes the sign of the vector part and fixes the centra
 |---|---|
 | Roots of $+1$ | $\pm e_t$; $\pm i\vec u$ over real unit $\vec u$; $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions |
 | Roots of $-1$ | $\pm i$; $\pm\vec u$ over real unit $\vec u$; $-\vec\xi'+i\vec\xi$ |
-| Root set | not closed under multiplication: $(i\vec e_x)(i\vec e_y)=-\vec e_z$ is a unit but not a root of $+1$ |
+| Root set | not closed under multiplication: $(i\vec e_x)(i\vec e_y)=-\vec e_z$ is a unit but not a root of $+1$, hence not a group |
 | Idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$; $\tfrac12(e_t+\vec\xi+i\vec\xi')$ with the same conditions |
+| Hermitian idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$, the star fixing them; two isolated and a two-parameter family |
+| Non-Hermitian idempotents | $\tfrac12(e_t+\vec\xi+i\vec\xi')$, a four-parameter family |
 | Halving map | bijection $H(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$, inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$ |
 | Standard pair | $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$, orthogonal, complete and primitive; the two minimal left ideals |
 | Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$; the pure ones form a separate family |
@@ -586,7 +666,7 @@ The roots of $+1$ in $\mathbb{B}$ are, by the vector–scalar split and the prod
 
 All roots except the trivial ones are pure. Every root of $+1$ is a unit, with $\tilde\Xi^{-1}=\tilde\Xi$. The roots of $-1$ are read off the roots of $+1$ by the central imaginary, $\tilde\Xi\mapsto i\tilde\Xi$, a bijection that turns the three families into the two central scalars $\pm i$, the family of pure real roots $\pm\vec u$, and the family $-\vec\xi'+i\vec\xi$; the mechanism needs a central scalar of square $-1$ and is not universal.
 
-The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\Pi=\tfrac12(e_t\pm\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$. Each root carries the two idempotents $\tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_{-}(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_{+}(\tilde\Xi)$, a complete orthogonal pair: their sum is $e_t$, their product is $0$, their difference is the root, and multiplication by the root acts by $+1$ on $\tilde\Pi_{+}$ and $-1$ on $\tilde\Pi_{-}$, so that the pair splits the algebra into the eigenspaces of that multiplication. The **halving map** $H(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$, and the class $\{\tilde\Xi,-\tilde\Xi\}$ gives the complementary pair $\{\tilde\Pi_{+},\tilde\Pi_{-}\}$. The three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$ (a two-real-parameter family), and the non-Hermitian idempotents, lying in none of the four four-dimensional subspaces (a four-real-parameter family). The standard pair $\tilde\Pi_{+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{-}=\tfrac12(e_t-i\vec e_z)$ is orthogonal, sums to $e_t$, is primitive, and generates the two minimal left ideals. An idempotent and its complement split the algebra, $\mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B}$, the algebraic form of a projector and its complementary projector. Every non-trivial idempotent is a zero divisor, and every non-pure zero divisor is the complex multiple $2Q_t\tilde\Pi$ of a non-trivial idempotent, developed in *Zero Divisors of the Biquaternion Algebra*.
+The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\Pi=\tfrac12(e_t\pm\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$. Each root carries the two idempotents $\tilde\Pi_{+}(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_{-}(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_{+}(\tilde\Xi)$, a complete orthogonal pair: their sum is $e_t$, their product is $0$, their difference is the root, and multiplication by the root acts by $+1$ on $\tilde\Pi_{+}$ and $-1$ on $\tilde\Pi_{-}$, so that the pair splits the algebra into the eigenspaces of that multiplication. The **halving map** $H(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$, and the class $\{\tilde\Xi,-\tilde\Xi\}$ gives the complementary pair $\{\tilde\Pi_{+},\tilde\Pi_{-}\}$. The three families of roots give the trivial idempotents, the non-trivial Hermitian idempotents in $\mathbb{M}_+$ (a two-real-parameter family), and the non-Hermitian idempotents, lying in none of the four four-dimensional subspaces (a four-real-parameter family). The standard pair $\tilde\Pi_{+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{-}=\tfrac12(e_t-i\vec e_z)$ is orthogonal, sums to $e_t$, is primitive, and generates the two minimal left ideals. An idempotent and its complement split the algebra, $\mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B}$, the algebraic form of a projector and its complementary projector. Every non-trivial idempotent is a zero divisor, and every non-pure zero divisor is the complex multiple $2Q_t\tilde\Pi$ of a non-trivial idempotent, developed in *Zero Divisors of the Biquaternion Algebra*.
 
 ## Summary of Notation
 
@@ -599,6 +679,7 @@ The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\
 | $\tilde\Xi=\Xi_te_t+\vec\Xi$, $\vec\Xi=\vec\xi+i\vec\xi'$ | The scalar and vector parts of a root; $\vec\xi,\vec\xi'$ real pure |
 | $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ | The general plain bilinear form of two vector parts |
 | $\tilde\Pi$ | An idempotent, $\tilde\Pi^{2}=\tilde\Pi$ |
+| Hermitian idempotent | An idempotent fixed by the star, $\tilde\Pi^{*}=\tilde\Pi$ |
 | $\tilde\Pi_{\pm}=\tfrac12(e_t\pm i\vec e_z)$ | The standard idempotents, the pair of the root $i\vec e_z$ |
 | $\tilde\Pi_{\pm}(\tilde\Xi)=\tfrac12(e_t\pm\tilde\Xi)$ | The two idempotents carried by the root $\tilde\Xi$ |
 | $\tilde\Pi_{+}(\tilde\Xi)+\tilde\Pi_{-}(\tilde\Xi)=e_t$, $\tilde\Pi_{+}(\tilde\Xi)\tilde\Pi_{-}(\tilde\Xi)=0$ | Completeness and orthogonality of the pair |

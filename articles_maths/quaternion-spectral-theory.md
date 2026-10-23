@@ -35,9 +35,7 @@ Thus a single quaternion has no interesting algebra spectrum; the structure appe
 
 **Theorem.** For the $1\times1$ matrix $M = [\tilde q]$ the two spectra are
 
-$$
-\sigma_L([\tilde q]) = \{\tilde q\}, \qquad \sigma_R([\tilde q]) = \{v^{-1}\tilde q v : v\in\mathbb{H}^{\times}\},
-$$
+$$ \boxed{\; \sigma_L([\tilde q]) = \{\tilde q\}, \qquad \sigma_R([\tilde q]) = \{v^{-1}\tilde q v : v\in\mathbb{H}^{\times}\} \;} ,$$
 
 and the right spectrum is the **similarity class** of $\tilde q$,
 
@@ -127,9 +125,7 @@ and both are invariant under similarity, $T(v^{-1}\tilde qv) = T(\tilde q)$ and 
 
 **Theorem (classification).** Two quaternions are similar if and only if they have the same trace and determinant functionals,
 
-$$
-\tilde q_2\sim \tilde q_1\iff T(\tilde q_2) = T(\tilde q_1)\ \text{and}\ D(\tilde q_2) = D(\tilde q_1),
-$$
+$$ \boxed{\; \tilde q_2\sim \tilde q_1\iff T(\tilde q_2) = T(\tilde q_1)\ \text{and}\ D(\tilde q_2) = D(\tilde q_1) \;} ,$$
 
 equivalently if and only if they have the same real part and the same modulus of the vector part. Consequently the similarity class of $\tilde q$ is a point when $\tilde q$ is real and a two-sphere otherwise, and the classes are parametrised by the half-plane $\{(t,d) : d\geq t^2/4\}$ through $(T,D)$.
 
@@ -209,9 +205,7 @@ The definition rests on the identity $s^2-2\operatorname{Re}(s)s+|s|^2 = 0$, whi
 
 **Theorem (quaternionic spectral theorem).** If $M\in M_n(\mathbb{H})$ is normal then there is a unitary $U$ and complex numbers $\lambda_1,\dots,\lambda_n$ in a fixed slice with
 
-$$
-M = U\,\operatorname{diag}(\lambda_1,\dots,\lambda_n)\,U^{*},
-$$
+$$ \boxed{\; M = U\,\operatorname{diag}(\lambda_1,\dots,\lambda_n)\,U^{*} \;} ,$$
 
 so the S-spectrum is the union of the classes, $\sigma_S(M) = \bigcup_{i=1}^{n}[\lambda_i]$; for Hermitian $M$ the $\lambda_i$ are real, and for unitary $M$ they have modulus one, in which case every $s\in\sigma_S(M)$ has modulus one.
 

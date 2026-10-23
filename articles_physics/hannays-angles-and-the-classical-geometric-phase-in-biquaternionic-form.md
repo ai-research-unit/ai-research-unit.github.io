@@ -140,9 +140,9 @@ $$
 It is the rate at which the geodesic frame turns about the direction relative to the frame that is carried parallel; integrating around the cycle,
 
 $$
-\Delta\theta_{\mathrm{Hannay}}=-\oint\omega_b^{\parallel}\,dt'
+\boxed{\;\Delta\theta_{\mathrm{Hannay}}=-\oint\omega_b^{\parallel}\,dt'
 =\oint(1-\cos\theta_0)\,d\phi
-=2\pi(1-\cos\theta_0)=\Omega ,
+=2\pi(1-\cos\theta_0)=\Omega\;},
 $$
 
 the **solid angle** subtended by the cycle of directions. This is Hannay's angle for the classical spin: it equals the solid angle of the loop on the sphere of directions.
@@ -176,7 +176,7 @@ The sign of the Hannay angle is fixed by two independent conventions, and both m
 The connection $\mathcal A=(1-\cos\theta)d\phi$ has curvature
 
 $$
-\mathcal F=d\mathcal A=\sin\theta\,d\theta\wedge d\phi ,
+\boxed{\;\mathcal F=d\mathcal A=\sin\theta\,d\theta\wedge d\phi\;},
 $$
 
 the area form of the unit sphere. By Stokes' theorem the holonomy of any loop is the integral of $\mathcal F$ over the enclosed region,
@@ -249,7 +249,7 @@ in agreement with the twist computation. The two computations use different meth
 The factor of $2$ between the vector angle and the spinor phase is the double cover of the rotor group. The spin-$\tfrac12$ state is a spinor in the algebra, and its adiabatic phase around the same cycle is half the classical angle,
 
 $$
-\gamma_{\text{spinor}}=-\frac{\Omega}{2},
+\boxed{\;\gamma_{\text{spinor}}=-\frac{\Omega}{2}\;},
 $$
 
 with the sign fixed by the orientation convention; the classical vector angle is $\Omega$. The two are related by the standard correspondence: the spin-$S$ coherent state has Berry phase $-S\Omega$, and Hannay's angle is the derivative with respect to the action,

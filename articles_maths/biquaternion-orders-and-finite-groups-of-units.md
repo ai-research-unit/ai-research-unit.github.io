@@ -6,8 +6,6 @@ The biquaternion algebra carries integral structures, and the groups of units of
 
 This article is the integral and finite-group entry of the Topology group. The unit criterion is the biquaternion norm, which is *Norm and Invertibility in the General Quaternionic Algebra*, and the topology of the group of units is *The Biquaternion Unit Group as a Topological Group*. Those results are cited, not re-derived, and the present article owns the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, the figures those groups determine in the real sector, and the infinite unit group of the complex order. The quotient $Sp(1)/\{\pm e_t\}\cong SO(3)$, the rotor, the twofold cover and the rotation $\rho_v(\tilde Q_1)=-v\tilde Q_1v^{-1}$ are *Biquaternion Rotations and Lorentz Transformations*, cited.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and units $\vec e_k^2=-e_t$; the real slice is $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, and the material sector is $\mathbb{M}_-$.
-
 ## The Quaternion Orders
 
 **Definition.** A subset $\Lambda\subseteq\mathbb{H}$ is an **order** if it is a subring and a free abelian group of rank four whose $\mathbb{Q}$-span is $\mathbb{H}$; equivalently, it is a lattice that is also closed under multiplication and contains $e_t$.

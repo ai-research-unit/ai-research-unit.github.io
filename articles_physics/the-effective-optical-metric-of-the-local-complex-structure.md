@@ -46,7 +46,7 @@ so the coordinate speed of light in the medium is $1/n$: the optical metric repr
 
 The framework's metric is $\eta=\mathrm{diag}(-c^2,1,1,1)$ with $c=1/\sqrt{\epsilon\mu}$. In units $c_0=1$ the index is $n=1/c$, so $1/n^2=c^2$, and the static Gordon metric is
 $$
-g^{\mathrm{J}}=\mathrm{diag}\!\left(-c^2,\,1,\,1,\,1\right)=\eta .
+\boxed{\;g^{\mathrm{J}}=\mathrm{diag}\!\left(-c^2,\,1,\,1,\,1\right)=\eta\;}.
 $$
 
 The two metrics are not merely similar or conformally related; they are **the same matrix**, and the agreement was checked numerically for $n=1.00$, $1.50$, $2.00$ and $3.30$, to $10^{-14}$ or better. The identification of the framework's scale with the index is exact:

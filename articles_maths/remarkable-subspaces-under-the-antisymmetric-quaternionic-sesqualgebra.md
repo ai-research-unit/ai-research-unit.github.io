@@ -6,15 +6,11 @@ The block $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ of *I
 
 The remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; the same six are read by the other pairings in *Remarkable Subspaces under the General Quaternionic Sesqualgebra* and its companions; the form that the block pairs with is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; and the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*. This article owns the reading of the block on the remarkable subspaces themselves.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, and a generic element $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $Q_{2,\mu}=q_\mu+iq'_\mu$ real and imaginary parts. The remarkable subspaces are real subspaces of the complex space; the word *stable* means that the value of two elements of the subspace lies in it, in the real sense, and not that the subspace is a complex subspace. The centre and the vector subspace are the only two of the remarkable subspaces that are complex subspaces.
-
 ## The Vanishing on the Centre and the Image
 
 **Proposition.** The block annihilates the centre in both slots: for every central element $\tilde Q_3=Q_{3t}e_t$,
 
-$$
-\tilde Q_3\diamond\tilde Q_2=0,\qquad \tilde Q_2\diamond\tilde Q_3=0 .
-$$
+$$ \boxed{\; \tilde Q_3\diamond\tilde Q_2=0,\qquad \tilde Q_2\diamond\tilde Q_3=0 \;}. $$
 
 *Proof.* A central element has $\vec Q_3=0$, so the value is the cross product of a zero vector; the value is zero from either slot.
 
@@ -36,9 +32,7 @@ The vector subspace is the complex span of $\vec e_x,\vec e_y,\vec e_z$, with re
 
 The quaternion subspace is the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$, of real coefficients. The block is **stable** on it: two real vector parts have a real cross product, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\mathbb{B})$, the real vector directions. On this subspace the block is the ordinary cross product of the real vector parts,
 
-$$
-\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}) \;}, $$
 
 the real coincidence of the block, and its image is the three real dimensions of the real vector directions. The diagonal is **identically zero**, a real vector being its own conjugate.
 
@@ -80,9 +74,11 @@ The anti-Hermitian subspace is the real span of $ie_t,\vec e_x,\vec e_y,\vec e_z
 **Theorem.** For two biquaternions,
 
 $$
+\boxed{\;
 \tilde Q_1\diamond\tilde Q_2=0
 \iff
-\vec Q_1\ \text{and}\ \overline{\vec Q_2}\ \text{are}\ \mathbb{C}\text{-linearly dependent},
+\vec Q_1\ \text{and}\ \overline{\vec Q_2}\ \text{are}\ \mathbb{C}\text{-linearly dependent}
+\;},
 $$
 
 that is, exactly when the vector part of one is a complex multiple of the conjugate of the vector part of the other, or one of the two vector parts is zero.

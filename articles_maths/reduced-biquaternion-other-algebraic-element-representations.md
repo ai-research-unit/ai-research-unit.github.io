@@ -4,10 +4,6 @@
 
 Beside the four-vector, the matrix and the polar readings, the reduced biquaternion element is written in three algebraic presentations that name its structure rather than its numbers: the **Clifford identification**, which builds the algebra from the two two-dimensional real Clifford algebras; the **idempotent-coordinate representation**, which sends the element to the pair $(Q_{+},Q_{-})$ of complex numbers; and the **quotient presentation**, which reads the algebra as a quotient of a polynomial ring. To these this article adds the **array representation**, which sends a matrix of reduced biquaternions to a pair of complex matrices. The four are stated, their relations are recorded, and the choices they involve are named. The multiplication is **commutative**, so all four presentations are commutative; it **has zero divisors**, so none of them is a division ring; and the algebra is **not a division algebra**.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The element glyph is $\breve Q$, with the breve and without a tilde, the reduced algebra having no quaternionic factor.
-
-**Boundaries.** The four-vector and matrix readings are *The Four-Vector Element Representation of the Reduced Biquaternions* and *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*; the umbrella is *Introduction to Reduced Biquaternion Element Representations*; the polar reading is *Modulus–Unit Polar Decomposition of Reduced Biquaternions*; the operators are *Operators on the Reduced Biquaternions*; and the idempotent splitting is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The biquaternion counterpart is *Biquaternion Other Algebraic Element Representations*.
-
 ## The Clifford Identification
 
 **The algebra is the tensor product of the two two-dimensional real Clifford algebras, one definite and one split.**
@@ -87,7 +83,9 @@ the classes of $x$ and $y$ being $i$ and $j$.
 
 **Corollary (the factorisation of the quotient).** $x^{2}+1$ is irreducible over $\mathbb{R}$ and $y^{2}-1=(y-1)(y+1)$ splits, so
 $$
-\mathbb{B}_{\mathrm{r}}\cong\mathbb{R}[x]/(x^{2}+1)\otimes_{\mathbb{R}}\mathbb{R}[y]/(y^{2}-1)\cong\mathbb{C}\otimes_{\mathbb{R}}(\mathbb{R}\times\mathbb{R})\cong\mathbb{C}\times\mathbb{C},
+\boxed{\;
+\mathbb{B}_{\mathrm{r}}\cong\mathbb{R}[x]/(x^{2}+1)\otimes_{\mathbb{R}}\mathbb{R}[y]/(y^{2}-1)\cong\mathbb{C}\otimes_{\mathbb{R}}(\mathbb{R}\times\mathbb{R})\cong\mathbb{C}\times\mathbb{C}
+\;},
 $$
 the definite factor giving the field and the split factor giving the two idempotent lines. The ring is **commutative** and **has zero divisors**, and it is **not a domain**; it is the same algebra as the Clifford identification of §*The Clifford Identification*, written with indeterminates.
 
@@ -99,7 +97,9 @@ the definite factor giving the field and the split factor giving the two idempot
 
 **Theorem (the two complex structures and their product).** The real algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ carries two commuting complex structures, the multiplications by $i$ and by $ij$,
 $$
-J_{1}(\breve Q)=i\breve Q,\qquad J_{2}(\breve Q)=ij\breve Q,\qquad J_{1}^{2}=J_{2}^{2}=-\mathrm{id},\qquad J_{1}J_{2}=J_{2}J_{1},
+\boxed{\;
+J_{1}(\breve Q)=i\breve Q,\qquad J_{2}(\breve Q)=ij\breve Q,\qquad J_{1}^{2}=J_{2}^{2}=-\mathrm{id},\qquad J_{1}J_{2}=J_{2}J_{1}
+\;},
 $$
 each a real-linear map with square $-\mathrm{id}$; their product
 $$
@@ -125,7 +125,9 @@ sending the array to a pair of $n\times n$ complex matrices, the $Q_{+}$-part an
 
 **Theorem (the array ring).** The array representation is an isomorphism of rings
 $$
-M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C}),
+\boxed{\;
+M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})
+\;},
 $$
 it is compatible with the product, with the identity, and with the determinant in the sense $\det M=(\det M^{+},\det M^{-})\in\mathbb{C}\times\mathbb{C}$; the array is invertible exactly when both complex matrices are.
 

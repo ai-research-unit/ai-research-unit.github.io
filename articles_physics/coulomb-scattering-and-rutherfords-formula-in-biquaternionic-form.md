@@ -106,7 +106,7 @@ $$
 in which the phase accumulates a logarithm from the tail and a shift
 
 $$
-\sigma_l=\arg\Gamma(l+1+i\eta)
+\boxed{\;\sigma_l=\arg\Gamma(l+1+i\eta)\;}
 $$
 
 from the short-distance part of the potential. The $\eta\ln2\rho$ term is the irreducible long-range effect: because the Coulomb potential falls off only as $1/r$, the phase of the wave function grows logarithmically with distance and never settles into a constant. The phase shift $\sigma_l$ is the **Coulomb phase**, and it is the whole of the scattering phase in the pure Coulomb problem: there is no short-range phase to add, because there is no short-range potential.
@@ -145,8 +145,8 @@ $$
 This series can be summed in closed form. The standard result, obtained from the generating function of the Coulomb phases and the Legendre expansion, is
 
 $$
-f_C(\theta)=-\frac{\eta}{2k\,\sin^2(\theta/2)}
-\,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right],
+\boxed{\;f_C(\theta)=-\frac{\eta}{2k\,\sin^2(\theta/2)}
+\,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right]\;},
 $$
 
 whose squared modulus is
@@ -170,8 +170,8 @@ $$
 and therefore
 
 $$
-\frac{d\sigma}{d\Omega}=\frac{\eta^2}{4k^2\sin^4(\theta/2)}
-=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)},
+\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{4k^2\sin^4(\theta/2)}
+=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)}\;},
 $$
 
 which is **Rutherford's formula**. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of classical Rutherford scattering, and the quantum cross section coincides with it for the Coulomb potential.

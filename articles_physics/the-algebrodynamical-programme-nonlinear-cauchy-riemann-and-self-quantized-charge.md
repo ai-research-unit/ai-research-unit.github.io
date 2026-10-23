@@ -83,7 +83,7 @@ $$
 and in the Cartesian coordinates $z_0=(\upsilon+v)/2$, $z_3=(\upsilon-v)/2$, $z_1=(w+p)/2$, $z_2=i(w-p)/2$ this is
 
 $$
-\left(\frac{\partial\Sigma}{\partial z_0}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_1}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_2}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_3}\right)^2 = 0 ,
+\boxed{\;\left(\frac{\partial\Sigma}{\partial z_0}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_1}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_2}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_3}\right)^2 = 0\;},
 $$
 
 the **complex eikonal equation** of complexified Minkowski space. The verification of the coordinate change is one line of the chain rule and is confirmed by recomputation in this pass; the rank-one degeneracy is likewise confirmed on random complex matrices. Nothing in the derivation is special to four dimensions at the level of the determinant; what is special is that in the case $\mathbb{B}$ the nonlinear equation is a familiar one.
@@ -141,7 +141,7 @@ under which the spinor is covariantly constant, $d\xi=\Omega\xi$. This connectio
 The curvature is not zero. For a connection of this special form it is $R=(d\Psi-\Psi dZ\Psi)\wedge dZ$, and requiring $R\xi=0$ for the non-trivial spinor forces the **self-dual part of the curvature to vanish**,
 
 $$
-\vec E + i\vec H = 0 ,
+\boxed{\;\vec E + i\vec H = 0\;},
 $$
 
 on the solutions of the GSE — a property the source calls **weak (anti)self-duality**. The Bianchi identity then implies the free equations for the two pieces of the curvature: Maxwell's equations for its trace part, the electromagnetic field, and Yang–Mills equations for its trace-free part. In this sense the linear field equations are not postulated; they are the **integrability conditions of the primary nonlinear system**. Because the field is $\mathbb{C}$-valued but self-dual, it reduces to an ordinary real electromagnetic field by the algebraic relations $\Im\vec H=\Re\vec E$ and $\Im\vec E=-\Re\vec H$, which is a recomputation-verified equivalence, so the number of degrees of freedom is that of the real field.
@@ -344,7 +344,7 @@ A further structure attaches to the congruence. The flat metric can be deformed 
 The programme's headline claim is that the singular solutions of the GSE have **quantised electric charge**. The mechanism is explicit and rests on the self-duality of the curvature together with the weak gauge invariance of the GSE: the two conditions restrict the admissible charge of the electromagnetic field associated with any GSE solution to
 
 $$
-ϙ = \frac{N}{4}, \qquad N\in\mathbb{Z},
+\boxed{\;ϙ = \frac{N}{4}, \qquad N\in\mathbb{Z}\;},
 $$
 
 in the dimensionless units of the programme. The source states that the quantization has both topological and dynamical reasons, the dynamical one being the over-determined structure of the GSE itself, and it points to the general theorem proved in its own later papers.
@@ -446,7 +446,7 @@ $$
 The last step is the programme's only numerical prediction, and it is a single algebraic identity. If the ring radius is fixed by requiring the magnetic moment to take the Dirac value, $|a|=\hbar/2Mc$ and $\mu=qa=e\hbar/2Mc$, then the quadrupole moment is forced to
 
 $$
-\vartheta = \frac{e\hbar^2}{2M^2c^2} .
+\boxed{\;\vartheta = \frac{e\hbar^2}{2M^2c^2}\;}.
 $$
 
 The source states this as a conjecture and explicitly calls it speculative, while noting that the possibility of an experimental test could be discussed; the corpus records it in that status. It is placed here because it is the one place in the programme where a free parameter is used up by a known quantity and what remains is a number rather than a structure.
@@ -510,11 +510,12 @@ $$
 and it splits into a modulus-like part and a phase-like part. The modulus part is the real non-negative invariant $S^2 = \sigma\sigma^{*}$. The claim is that this invariant can be written identically as a Minkowski-like interval,
 
 $$
+\boxed{\;
 S^2 = \sigma\sigma^{*} \equiv T^2 - \lvert\vec X\rvert^2 ,
 \qquad
 T := \vec z\cdot\vec z^{*},
 \qquad
-\vec X := i\,[\vec z\times\vec z^{*}] ,
+\vec X := i\,[\vec z\times\vec z^{*}]\;},
 $$
 
 where the brackets are the scalar and vector products of complex three-vectors. The quantities $T$ and $\vec X$ are real, and under the $SO(3,\mathbb{C})$ automorphisms they transform as the time and space coordinates of Minkowski space under Lorentz transformations. The identity is an instance of the Lagrange identity relating the modulus of the complex quadratic form to the dot and cross products; it is recomputation-verified on random complex vectors in this pass, together with the reality of $\vec X$. What it gives is exactly what *Why Complexify Spacetime?* describes as a motivation and not a derivation: an algebraic origin for the Lorentzian signature, here written as an identity between the complex invariant $\sigma\sigma^{*}$ and a Minkowski interval built from the same vector.

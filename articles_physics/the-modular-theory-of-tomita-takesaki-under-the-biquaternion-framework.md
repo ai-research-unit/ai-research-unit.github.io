@@ -30,8 +30,6 @@ The modular conjugation **conjugates the scalar imaginary** $i$. Every sign in t
 
 The article proceeds as follows. The construction and its structural identities come first. Then the two hypotheses, with an explicit failure when separation is dropped. Then the modular flow and its identification with the KMS flow of the parent article. Then the finite-dimensional realization in $\mathbb{B}$ and the closed-form polar decomposition. Then the biquaternion candidate for $S$ and what the framework does and does not supply. Then the type of $\mathbb{B}$ and the inner/outer classification. It closes with the boundary between what is established and what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is ${}^{*}$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$.
-
 ## The Tomita–Takesaki Construction
 
 ### Cyclic and Separating Vectors
@@ -163,8 +161,8 @@ S_0^*(\tilde Q_1) = \tilde{Ϛ}\,\tilde Q_1^{*}\tilde{Ϛ}^{-1},
 $$
 whence
 $$
-\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = \tilde{Ϛ}\,\tilde{Q}_3\,\tilde{Ϛ}^{-1}, \qquad
-\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}.
+\boxed{\;\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = \tilde{Ϛ}\,\tilde{Q}_3\,\tilde{Ϛ}^{-1}, \qquad
+\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}\;}.
 $$
 The polar decomposition $S_0=J\Delta^{1/2}$ then gives
 $$
@@ -172,7 +170,7 @@ J(\tilde{Q}_3) = \tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}.
 $$
 The **modular flow** is
 $$
-\sigma_{t'}(\tilde{Q}_3) = \Delta^{it'}\tilde{Q}_3\Delta^{-it'} = \tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'},
+\boxed{\;\sigma_{t'}(\tilde{Q}_3) = \Delta^{it'}\tilde{Q}_3\Delta^{-it'} = \tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'}\;},
 $$
 which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde{Ϛ}^{it'}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_{t'}(\tilde{Q}_3^{*})=\sigma_{t'}(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
@@ -290,9 +288,9 @@ S_0:\tilde{Q}_3\mapsto\tilde{Q}_3^{*},
 $$
 and the polar decomposition is
 $$
-\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1},\qquad
+\boxed{\;\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1},\qquad
 J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2},\qquad
-\sigma_{t'}(\tilde{Q}_3)=\tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'}.
+\sigma_{t'}(\tilde{Q}_3)=\tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'}\;}.
 $$
 The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
 

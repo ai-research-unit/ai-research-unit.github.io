@@ -13,8 +13,6 @@ has for its null set the zero-divisor cone of the algebra. This article develops
 
 The form itself, its polarisation and its quadratic space are *Norm and Invertibility in the General Quaternionic Algebra*; the remarkable subspaces and their restriction matrices are *Remarkable Subspaces under the General Quaternionic Algebra*; the classification of the isotropic elements is *Zero Divisors of the Biquaternion Algebra*; the projective picture of the cone, the quadric surface, the Klein quadric and the Plücker embedding are *The Null Quadric and Its Projective Geometry*; and the invertibility criterion that makes the cone the boundary of the group of units is *Norm and Invertibility in the General Quaternionic Algebra*. The topology of the cone, its dimension, its apex and its link are *The Topology of the Zero-Divisor Cone*; the index, the defect and the signature of the realified form are *The Realification of the Four Forms*, and their values on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde{Q}=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$, and $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$ is the definite norm of the coefficient space.
-
 ## The Null Cone
 
 **Definition.** The **null cone** of the general quaternionic bilinear form is
@@ -38,8 +36,8 @@ The projective geometry of the cone is *The Null Quadric and Its Projective Geom
 **Proposition (the maximal totally isotropic planes).** Over $\mathbb{C}$ the maximal totally isotropic dimension is $2$, and the maximal totally isotropic subspaces are the planes of two families. The two planes
 
 $$
-W_{+}=\mathbb{C}\{e_t+i\vec e_x,\;\vec e_y+i\vec e_z\},\qquad
-W_{-}=\mathbb{C}\{e_t+i\vec e_x,\;\vec e_y-i\vec e_z\}
+\boxed{\; W_{+}=\mathbb{C}\{e_t+i\vec e_x,\;\vec e_y+i\vec e_z\},\qquad
+W_{-}=\mathbb{C}\{e_t+i\vec e_x,\;\vec e_y-i\vec e_z\} \;}
 $$
 
 are totally isotropic, one from each family; through each non-singular point of the cone passes one plane of each family, and two planes of the same family meet only at the origin, while two planes of the two families meet along a line.
@@ -67,12 +65,12 @@ so the left ideal $\mathbb{B}\tilde Q$ is totally isotropic; it has complex dime
 The theorem is not an equality of families: the maximal totally isotropic subspaces form a larger family than the one-sided ideals, and the two families meet in the minimal ideals. In the Peirce basis $\tilde\Pi,\vec\Upsilon_x,f,\vec\Upsilon_y$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, where $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$, $f=e_t-\tilde\Pi$, $\vec\Upsilon_x=\vec e_z+i\vec e_y$ and $\vec\Upsilon_y=\vec e_z-i\vec e_y$, the Gram matrix of the form is
 
 $$
-\begin{pmatrix}
+\boxed{\; \begin{pmatrix}
 0 & 0 & \tfrac{1}{2} & 0 \\
 0 & 0 & 0 & 2 \\
 \tfrac{1}{2} & 0 & 0 & 0 \\
 0 & 2 & 0 & 0
-\end{pmatrix},
+\end{pmatrix} \;},
 $$
 
 an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the four Peirce lines are paired by it**, the idempotent line $\mathbb{C}\tilde\Pi$ with the idempotent line $\mathbb{C}f$ and the nilpotent line $\mathbb{C}\vec\Upsilon_x$ with the nilpotent line $\mathbb{C}\vec\Upsilon_y$. The two minimal left ideals $\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\vec\Upsilon_x$ and $\mathbb{B}f=\mathbb{C}f\oplus\mathbb{C}\vec\Upsilon_y$ are maximal totally isotropic by the theorem, and the span of $\tilde\Pi$ and $\vec\Upsilon_y$, one line from each, is a maximal totally isotropic subspace that is **not** a left ideal, since it mixes the two.

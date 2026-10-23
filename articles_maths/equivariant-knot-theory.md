@@ -9,8 +9,6 @@ The subject is the meeting point of two theories already in the corpus: the knot
 
 **The article assumes** the Seifert surfaces, the Seifert form, the Alexander polynomial and the signature of *Knot Theory*, the double branched cover and the Goeritz matrix, the integral group ring and its involutions, and the equivariant surgery obstruction of *Involutions on Manifolds and Equivariant Surgery*.
 
-**The boundaries of the article.** The knot theory without symmetries is *Knot Theory*; the chirality and the mirror are *Amphichiral Knots and the Orientation-Reversing Involution*, the previous article; the periodic maps of a general manifold are *Periodic Maps and the Smith Theory*, and the free involutions and the lens spaces are *Free Involutions and Lens Spaces*. The equivariant signature in its analytic form is *Hermitian Pairings and the Equivariant Signature*; the knot Floer and the $\rho$-invariants are *Floer Homology*. The equivariant homotopy theory of knots and the mapping class group of a knot complement are *Knot Theory* and *Low-Dimensional Topology*.
-
 ## Periodic Knots and their Quotients
 
 **Definition.** A knot $K\subseteq S^3$ is **$n$-periodic** if there is an action of $\mathbb{Z}/n$ on $S^3$ by homeomorphisms preserving $K$ whose fixed set contains a circle **axis** $A$ disjoint from $K$, and such that the action on $S^3\setminus A$ has no other fixed points. The quotient of $S^3\setminus A$ by the action is again a three-sphere (the quotient of the solid torus is a solid torus), and the image of $K$ in the quotient is the **quotient knot** $\bar K$, which is a knot in $S^3$; the pair $(K,\bar K)$ with the integer $n$ is the **periodic knot datum**.

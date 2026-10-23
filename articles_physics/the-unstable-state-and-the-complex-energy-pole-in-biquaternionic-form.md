@@ -11,8 +11,6 @@ This article treats the unstable state in the biquaternion framework of this ser
 
 The article is organised as follows. A first section defines the survival amplitude and the survival probability in the module and records the exact short-time law, which is quadratic and which no pure exponential satisfies. A second writes the resolvent of the interacting Hamiltonian, defines the self-energy, and locates the pole on the second sheet. A third reads the pole in the algebra: its conjugate mirror, and its centrality. A fourth derives the effective central self-energy of a block that couples the two module slots, which is the framework's form of the statement that a state-dependent coupling can be eliminated into a complex central potential. A fifth treats the exactly soluble case and separates what is transcribed from the external literature from what is recomputed here. A sixth gives the decay law and its limits, and a seventh separates what the algebra adds from what it does not. The closing sections are the open questions, the summary, the notation table and the external reading.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe*, *Introduction to the Biquaternion Universe* and *Quantum Physics in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace is $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$; the Hamiltonian is $\tilde H\in\mathbb{M}_+$, so that
-
 $$
 \tilde H = h_t\,e_t + i\,\vec h, \qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
@@ -139,7 +137,7 @@ where $V_0(E)$ is the coupling to the continuum at energy $E$ and $\rho(E)$ is i
 The pole itself is a zero of $z-E_0-\Sigma(z)$,
 
 $$
-z_\star = E_0 + \Delta(E_0) - \tfrac{i}{2}\,\Gamma(E_0) + O(\Gamma^{2}),
+\boxed{\;z_\star = E_0 + \Delta(E_0) - \tfrac{i}{2}\,\Gamma(E_0) + O(\Gamma^{2})\;},
 $$
 
 to leading order in the width. The important point is that this zero does **not** lie on the first sheet, where the analytic structure of $G_{00}$ is the real axis with a cut. It lies on the **second sheet**, the one reached by continuing $z$ through the cut, across which the self-energy jumps by the discontinuity of the integral. That discontinuity is fixed by the same continuum density that gave the width: for a continuum of density $\rho$ and coupling $V_0$ the two boundary values of the self-energy differ by $-2\pi i\lvert V_0\rvert^{2}\rho = -i\,\Gamma$, so the continuation onto a second sheet replaces $\Sigma$ by $\Sigma\mp i\Gamma$, the two signs being the two sheets reached by going round the two ends of the cut. The decaying pole is the one on the sheet with the lower sign, $\Sigma_{\mathrm{II}}=\Sigma-i\Gamma$, whose denominator is $z-E_0-\Sigma(z)+i\Gamma$; its zero sits at $z_\star$ as stated. The opposite sign carries the zero to $E_0+\Delta+\tfrac{i}{2}\Gamma$, the mirror pole of the other sheet. The unstable state is therefore not an eigenstate of a non-Hermitian operator on the physical sheet; it is the shadow of the physical resolvent on the second one.
@@ -162,7 +160,71 @@ The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, an
 
 The centrality is not a coincidence of the models treated below. It is a consequence of taking the trace over the module to reach the scalar Green's function: the trace of a module operator is central, and any quantity read from the trace is central with it.
 
-**The pole is not an exceptional point.** A resonance pole is a complex zero of a scalar denominator, not a coalescence of two eigenvalues of one element. An exceptional point is the spectral event in which two eigenvalues meet and the element becomes a Jordan block, with a single eigenprojection and a nilpotent part (*Eigenvalue Decomposition of a Biquaternion*, §*The Nilpotent Regime*). The spectral object here is a pair of scalar poles, one on each sheet, and it is not a Jordan block. The two notions coincide only if a model is tuned to a degeneracy, and no such tuning is made here. The exceptional-point side, with its coalescence, its single eigenprojection and its nilpotent part, is [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html).
+**The pole is not an exceptional point.** A resonance pole is a complex zero of a scalar denominator, not a coalescence of two eigenvalues of one element. An exceptional point is the spectral event in which two eigenvalues meet and the element becomes a Jordan block, with a single eigenprojection and a nilpotent part (*Eigenbasis of a Biquaternion*, §*The Nilpotent Regime*). The spectral object here is a pair of scalar poles, one on each sheet, and it is not a Jordan block. The two notions coincide only if a model is tuned to a degeneracy, and no such tuning is made here. The exceptional-point side, with its coalescence, its single eigenprojection and its nilpotent part, is [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html).
+
+## The Complex Angle of the Resonance
+
+The pole $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ is a complex energy, and the pole term of the evolution is the central element
+
+$$
+\tilde U_\star(t')=\exp\!\Big(-\frac{i}{\hbar}z_\star t'\Big)
+=\exp\!\Big(-\frac{\Gamma t'}{2\hbar}\Big)\exp\!\Big(-\frac{iE_Rt'}{\hbar}\Big)e_t,
+\qquad E_R=E_0+\Delta .
+$$
+
+The same element carries five descriptions, and they are worth setting side by side because the words "complex energy" and "complex angle" are often used for different entries.
+
+| reading | form | value | what it carries |
+| --- | --- | --- | --- |
+| word | $r\,e^{i\alpha}$ | $r=e^{-\Gamma t'/2\hbar}$, $\alpha=-E_Rt'/\hbar$ | the scale is the survival amplitude, the phase the oscillation |
+| central exponent | $e^{\Theta}$ | $\Theta=-iz_\star t'/\hbar$ | the complex angle |
+| Cartan | $\tilde A\tilde U$ | $\tilde A=e^{-\Gamma t'/2\hbar}e_t$, $\tilde U=e^{-iE_Rt'/\hbar}e_t$ | the amplitude and the phase |
+| generator | $-iz_\star$ | $-\tfrac{\Gamma}{2}e_t-iE_Re_t$ | Hermitian damping plus anti-Hermitian energy |
+| mass-unit angle | $\theta_\star=z_\star/(mc^2)$ | $\epsilon_\star-i\gamma_\star$, $\epsilon_\star=E_R/(mc^2)$, $\gamma_\star=\Gamma/(2mc^2)$ | the half-width is $\gamma_\star$ |
+
+**The complex angle.** The element is central, so the Hamilton pairing does not apply. Its vector part is zero, $B=0$, while the pairing's domain is $B\neq0$ (*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Domain*); a central element has no axis and no Hamilton angle. The angle that remains is the exponent of the central evolution,
+
+$$
+\boxed{\;\Theta(t')=-\frac{i}{\hbar}z_\star t'=-\frac{\Gamma t'}{2\hbar}-\frac{iE_Rt'}{\hbar}\;}
+$$
+
+a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imaginary part is the phase. Its real part is not an angle: it is the decay exponent, the logarithm of the scale. In the Hamilton chart a real angle gives a periodic exponential and a purely imaginary one gives a monotone exponential. The resonance's exponent is central and complex: its imaginary part is the phase, its real part the decay. This is the non-compact regime of *The Exponential Word and Its Boundary*, §*The Two Regimes*, read on the centre.
+
+**The mass scale.** The pole is an energy, so it becomes a dimensionless angle only after a scale is chosen. In units of the mass $m$ of the decaying state, $\theta_\star=z_\star/(mc^2)$ and
+
+$$
+\Theta(t')=-i\,\theta_\star\,\frac{mc^2t'}{\hbar},
+$$
+
+so $\theta_\star$ is the complex angle per unit of the mass time. Its imaginary part is $-\Gamma/(2mc^2)$, the half-width in mass units, and its real part is the energy in mass units. The half-width is therefore the imaginary part of the mass-unit angle, and it appears with a minus sign in the real part of the exponent $\Theta$; the factor $-i$ between them swaps the two readings. Neither part is a Lorentz scalar; both are central, as the pole is.
+
+**The Cartan reading is the cleanest.** The positive factor of the pole term is the survival amplitude in the pole approximation,
+
+$$
+\tilde A(t')=\sqrt{\tilde U_\star(t')\tilde U_\star(t')^{*}}=e^{-\Gamma t'/2\hbar}e_t,
+$$
+
+and the unitary factor is the phase $e^{-iE_Rt'/\hbar}e_t$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(t')\rangle_{*}=e^{-\Gamma t'/\hbar}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(t')\rangle_{\natural}=e^{-2iE_Rt'/\hbar}e^{-\Gamma t'/\hbar}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
+
+**The generator.** With $\hbar=1$, the generator $G_\star=-iz_\star$ splits into a Hermitian and an anti-Hermitian part,
+
+$$
+G_\star=-\frac{\Gamma}{2}e_t-iE_Re_t,
+\qquad
+-\frac{\Gamma}{2}e_t\in\mathbb{M}_+,
+\qquad
+-iE_Re_t\in\mathbb{M}_- .
+$$
+
+The damping is the Hermitian part and the energy is the anti-Hermitian part. A stable state has $\Gamma=0$, its generator is anti-Hermitian, and the evolution is unitary. A resonance adds a Hermitian part to the generator; that part is the absorption, and it is the same object the Cartan factor of a truncated S-matrix reports as an eigenvalue below one (*The S-Matrix in Biquaternionic Form*, §*The Cartan Factor of the S-Matrix*).
+
+**The sheet.** The sign of $\mathrm{Im}\,z_\star$, equivalently of $\mathrm{Im}\,\theta_\star$, is the sheet. The retarded pole has $\mathrm{Im}\,z_\star=-\Gamma/2<0$ and decays; the advanced mirror has $\mathrm{Im}\,z_\star=+\Gamma/2>0$ and grows. In the word, the sign is the sign of $\mathrm{Re}\,\Theta$: a negative scale exponent is decay, a positive one is growth. The algebra does not select the sign; the retarded boundary condition does, as §*The Pole in the Algebra* established.
+
+**The reading.** The pole term is a central element of the non-compact regime: a complex angle whose real part is a scale and whose imaginary part is a phase, with the Cartan amplitude equal to the survival amplitude. The width is not a second energy and not a rapidity; it is the Hermitian part of one central generator, and the lifetime is $\hbar/\Gamma$.
+
+**The boundary.** The identification of the complex angle with the pole is exact for the central element $\exp(-iz_\star t'/\hbar)$; it does not make the resonance an eigenstate of a Hermitian Hamiltonian, and it does not give the pole a module vector. The element is central, so the Hamilton pairing is undefined and the complex angle is the exponent, not a Hamilton angle. If the pole is attached to a complex four-momentum, the complex rapidity $\psi$ with $\Theta=-i\psi$ is a model-dependent reading; the algebra supplies the central exponent exactly, and the rapidity only through that model. The decaying state is not normalisable, as §*Open Questions* records, and the word describes the evolution element, not the state that carries it.
+
+**A check.** For $E_R=2$, $\Gamma=0.5$ and $t'=1$ in units $\hbar=1$, the amplitude is $e^{-0.25}=0.778800783\ldots$, the survival probability $e^{-0.5}=0.606530660\ldots$, and $\Theta=-0.25-2i$; the generator's Hermitian and anti-Hermitian parts are $-0.25$ and $-2i$, and the two bracket readings reproduce the amplitude and the probability to machine precision.
 
 ## Eliminating a Coupling Between the Two Slots
 
@@ -177,10 +239,10 @@ $$
 where $H_{\mathrm{c}}$ governs the first slot, $H_{\mathrm{nc}}$ the second, and $V$ is the off-diagonal entry through which the two are coupled — the entry into which the non-central part $i\vec h$ of $\tilde H$ enters. The block identity of *The Resolvent Operator*, applied to this splitting, gives the Green's function of the first slot its reduced form,
 
 $$
-G_{\mathrm{c}}(z) = \Bigl(z - H_{\mathrm{c}} - V\frac{1}{z-H_{\mathrm{nc}}}V^{*}\Bigr)^{-1}
+\boxed{\;G_{\mathrm{c}}(z) = \Bigl(z - H_{\mathrm{c}} - V\frac{1}{z-H_{\mathrm{nc}}}V^{*}\Bigr)^{-1}
 = \bigl(z - H_{\mathrm{c}} - \Sigma_{\mathrm{nc}}(z)\bigr)^{-1},
 \qquad
-\Sigma_{\mathrm{nc}}(z) = V\frac{1}{z-H_{\mathrm{nc}}}V^{*}.
+\Sigma_{\mathrm{nc}}(z) = V\frac{1}{z-H_{\mathrm{nc}}}V^{*}\;}.
 $$
 
 The coupling $V$ has disappeared from the first slot and reappeared as the energy-dependent addition $\Sigma_{\mathrm{nc}}(z)$. Its entire effect on the first slot is that addition; and because the two slots are one-dimensional, the entries of the block matrix are complex numbers of the centre, so $\Sigma_{\mathrm{nc}}(z)$ is central, and with it the effective Hamiltonian of the first slot, $H_{\mathrm{c}}+\Sigma_{\mathrm{nc}}(z)$.
@@ -233,7 +295,7 @@ $$
 and the lifetime is
 
 $$
-\tau = \frac{\hbar}{\Gamma}.
+\boxed{\;\tau = \frac{\hbar}{\Gamma}\;}.
 $$
 
 The approximation has a definite domain, and outside it the pole does not describe the decay.
@@ -251,6 +313,7 @@ The article therefore states an approximation with its window, not a law. It mak
 - **The pole is central.** The width and the level shift are the imaginary and real parts of one complex number of the centre, and this holds whatever non-central coupling is present. The lifetime is a central quantity even when the state is not the module's only content.
 - **The coupling between the slots is not an independent channel.** A coupling that connects the two slots of the module can be eliminated, and its effect on the surviving slot is an effective central self-energy. The framework thus says in its own terms why a complex effective potential is not an extra degree of freedom but the trace of a removed one.
 - **The two sheets and the branch.** The centrality of the pole and the conjugate symmetry together give the unstable state its place: the first sheet carries no complex pole, and the decaying complex number sits on the second sheet, with its mirror partner on the conjugate (advanced) sheet. The algebra's antiunitary structure supplies the pairing; the boundary condition supplies the choice of sheet.
+- **The complex angle separates decay from oscillation.** The real and imaginary parts of the pole are the Hermitian and anti-Hermitian parts of one central generator, and the Cartan amplitude of the pole term is the survival amplitude in the pole approximation. The width is not a second energy.
 
 **What the algebra does not add.**
 
@@ -299,6 +362,9 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\Delta(E)$, $\Gamma(E)$ | Level shift and width, $\Sigma(E+i0^{+})=\Delta-\tfrac{i}{2}\Gamma$ |
 | $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$ | Golden Rule width |
 | $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
+| $\Theta(t')=-iz_\star t'/\hbar$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
+| $\tilde A(t')=e^{-\Gamma t'/2\hbar}e_t$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
+| $\tilde U_\star(t')=\exp(-iz_\star t'/\hbar)$ | Pole term of the evolution; not unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
 | $\tau=\hbar/\Gamma$ | Lifetime |
 | $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$ | Effective self-energy of an eliminated slot |
 | $H_{\mathrm{c}},H_{\mathrm{nc}},V$ | Entries of the slot block matrix; $V$ couples the two slots |
@@ -308,7 +374,12 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 
 ## Further Reading
 
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the nilpotent regime and the spectral contrast with a Jordan block.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the nilpotent regime and the spectral contrast with a Jordan block.
+- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the word and the Cartan amplitude used in this section.
+- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.
+- [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the compact and non-compact regimes and the complex angle.
+- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the domain $B\neq0$ that excludes the central element from the Hamilton pairing.
+- [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the Cartan factor of a truncated S-matrix.
 - G. Gamow, "Zur Quantentheorie des Atomkernes," *Zeitschrift für Physik* **51** (1928) 204–212, for the complex energy and the exponential decay law of an unstable state.
 - V. Weisskopf and E. Wigner, "Berechnung der natürlichen Linienbreite auf Grund der Diracschen Lichttheorie," *Zeitschrift für Physik* **63** (1930) 54–73, for the self-energy of an unstable state, the level shift and the width.
 - V. Fock and N. Krylov, "On the uncertainty relation between energy and time," *Journal of Physics (USSR)* **11** (1947) 112–115, for the energy–time structure of a decaying state.

@@ -251,9 +251,9 @@ $$
 **Route 1: the line integral.** The loop is at fixed $\theta_0$, so
 
 $$
-\gamma_+ = \oint_{\mathcal{C}}\mathcal{A}_\mu\,dR^\mu = \int_0^{2\pi}\mathcal{A}_\phi\big|_{\theta_0}\,d\phi
+\boxed{\;\gamma_+ = \oint_{\mathcal{C}}\mathcal{A}_\mu\,dR^\mu = \int_0^{2\pi}\mathcal{A}_\phi\big|_{\theta_0}\,d\phi
 = -\frac{1-\cos\theta_0}{2}\cdot 2\pi
-= -\frac{\Omega}{2} ,
+= -\frac{\Omega}{2}\;}
 $$
 
 where
@@ -305,7 +305,7 @@ $$
 so the **first Chern number** of the spin-up eigenbundle is the integer
 
 $$
-C_+ = \frac{1}{2\pi}\int_{S^2}\mathcal{F} = -1 .
+\boxed{\;C_+ = \frac{1}{2\pi}\int_{S^2}\mathcal{F} = -1\;}
 $$
 
 For the spin-down branch, in the gauge adapted to the north pole, the curvature is $+\tfrac12\sin\theta\,d\theta\wedge d\phi$ and $C_- = +1$. The two curvatures are equal and opposite at every point,
@@ -417,7 +417,6 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 1. **The non-abelian case.** The Wilczek–Zee phase needs a degenerate level separated from the rest of the spectrum. In a single qubit this is impossible; it requires $\mathbb{B}^{\otimes_\mathbb{C} n}$, whose tensor product the parent article leaves open. Does the framework's own non-commutativity supply a natural matrix-valued connection on a many-qubit state module, and if so is it the standard one?
 
 2. **A $\mathbb{B}$-valued geometric phase.** The connection defined here is $\mathrm{U}(1)$-valued because the eigenstate's rephasing freedom is central. Could a non-central, $\mathbb{B}$-valued connection on the state module define a geometric phase intrinsic to the algebra, without tensor products? The non-abelian gauge structure of the gauge-principle article suggests the algebra has the wherewithal; nothing here constructs it.
-
 
 3. **The local complex structure.** The series makes the spacetime complex structure local through $c = 1/\sqrt{\epsilon\mu}$, while the scalar imaginary $i$ of the state module is a global central element. If the complex structure is local, does the Berry phase — which uses $i$ as the complex structure of the state module — see the local structure? *The Schrödinger Equation in Biquaternionic Form* records the same tension as an open question, and this article inherits it.
 

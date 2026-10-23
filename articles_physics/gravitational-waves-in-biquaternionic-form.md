@@ -12,8 +12,6 @@ The findings are worth separating at the outset, because one of them is negative
 - **The framework's contribution, and its limit.** The algebra supplies the wave operator $\Box$ and the shape of the gauge transformation, both inherited from the parent, and it supplies the residual gauge freedom as the condition $\Box\tilde Q_{\mathrm d} = 0$ on a material four-vector. It supplies **no natural handle on the polarization count**: the step $6 \to 2$ is a dynamical statement about which of the harmonic-gauge components propagate, and the algebra does not generate it. The physical polarization amplitudes are carried by a symmetric traceless rank-two object, and the algebra's natural single-biquaternion packaging of that object collapses to its trace, which vanishes — so the two polarizations are precisely what a single biquaternion cannot hold. The quadrupole moment is the same kind of object, and the same collapse applies to it; the source $T_{\mu\nu}$ belongs to the same class. Consequently the quadrupole formula is transcribed into the framework's notation, not derived from it, and the prefactor $G/5c^5$ is not fixed by the algebra.
 - **What is not claimed.** Linearized general relativity is not derived from the biquaternion algebra. No action, no field equation, and no representation of diffeomorphism invariance is supplied here; these are the parent's gaps, and nothing in the radiation theory closes them. The framework predicts no deviation from standard gravitational-wave physics.
 
-**Conventions.** The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_j\vec e_k = -\delta_{jk}e_t + \epsilon_{jkm}\vec e_m$; $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. As in the parent, the coordinates in which tensor components are written are the real components $x^\mu = (ct',x,y,z)$, so $\tilde{Q} = X^\mu\varepsilon_\mu$ and $\partial/\partial Q_t = -i\partial/\partial(ct')$; consequently $\Box = \eta^{\mu\nu}\partial_\mu\partial_\nu$. A plane wave of wave vector $k^\mu = (\omega/c)(1,0,0,1)$ then has phase $\omega(z/c - t')$, and $k^\mu k_\mu = 0$.
-
 ## The Trace-Reversed Perturbation and the Wave Equation
 
 This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.
@@ -87,7 +85,7 @@ $$
 The harmonic condition is therefore preserved by precisely those gauge transformations with
 
 $$
-\boxed{\;\Box\xi_\nu = 0\,.\;}
+\boxed{\;\Box\xi_\nu = 0\,\;}.
 $$
 
 Four functions satisfy this, one for each coordinate direction, so the gauge freedom is **not** exhausted by the harmonic condition. It is a residual gauge freedom of the same kind that the Lorenz condition leaves in electromagnetism, where the condition is preserved by $\Box\Gamma = 0$. A count that imposes harmonic gauge and then declares the remaining six components physical has used the gauge freedom twice in the wrong order: the six components include the four that the residual freedom still moves.
@@ -105,7 +103,7 @@ The count is $10 \to 6 \to 2$, and it must be justified at each arrow. The first
 **Two.** The residual gauge freedom acts inside that six-dimensional space. Restricting the residual transformations with $\Box\xi_\nu = 0$ to the harmonic-gauge plane wave, the map from the four gauge parameters $a_\nu$ to the change it induces in the six harmonic components has rank four, and its image is complementary to the transverse-traceless amplitudes. The companion verifies exactly this: on the six-dimensional space, the transverse-traceless subspace has dimension two, the residual-gauge image has dimension four, their direct sum has dimension six, and their intersection is trivial. The count is therefore
 
 $$
-10 \;\xrightarrow[\text{4 harmonic conditions}]{}\; 6 \;\xrightarrow[\text{4 residual gauge functions}]{}\; 2 ,
+\boxed{\;10 \;\xrightarrow[\text{4 harmonic conditions}]{}\; 6 \;\xrightarrow[\text{4 residual gauge functions}]{}\; 2\;},
 $$
 
 with the last quotient exactly the transverse-traceless amplitudes.
@@ -144,7 +142,7 @@ $$
 with all other components zero, a direct check verifies $k^\mu k_\mu = 0$, $k^\mu A_{\mu\nu} = 0$, and $\eta^{\mu\nu}A_{\mu\nu} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{t\mu} = 0$, $k^\mu A_{\mu\nu} = 0$, $\eta^{\mu\nu}A_{\mu\nu} = 0$ on a general symmetric $A_{\mu\nu}$ leaves
 
 $$
-A_{xx} = -A_{yy}, \qquad A_{xy} = A_{yx}, \qquad \text{all other components zero},
+\boxed{\;A_{xx} = -A_{yy}, \qquad A_{xy} = A_{yx}, \qquad \text{all other components zero}\;},
 $$
 
 a two-parameter family: the plus amplitude and the cross amplitude, and nothing else. The two are related by a rotation through $45^\circ$ in the transverse plane, and together they span the two-dimensional space of physical polarizations, whose helicity eigenstates are the two circular combinations $A_{xx}\pm iA_{xy}$.
@@ -197,7 +195,7 @@ where $r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, $\Theta_{ij}$ is the **tracel
 **The power.** The radiated power, averaged over a period, is
 
 $$
-\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\Theta_{ij}/d{t'}^3\,d^3\Theta_{ij}/d{t'}^3 \right\rangle, \;}
+\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\Theta_{ij}/d{t'}^3\,d^3\Theta_{ij}/d{t'}^3 \right\rangle\;},
 $$
 
 with the same traceless quadrupole moment. The power is quadratic in the **third** derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3x$,
@@ -233,7 +231,6 @@ $$
 and the two agree. A direct check of both the traceless and the unreduced forms of the power obtains the same result from each, and also verifies the angular projection identity by which the flux integral over the sphere reduces to the traceless form, so the factor $\tfrac15$ is confirmed twice over rather than read off from one case.
 
 **What the formula is and is not.** It is a weak-field, slow-motion, far-zone result; it is the leading term of a multipole expansion, not an exact statement. Its prefactor is fixed by the coupling constant $8\pi G/c^4$ in the field equation and by the angular structure of the transverse-traceless projection. Nothing in this article derives either from the biquaternion algebra.
-
 
 ## The Wave Operator, the Gauge Freedom, and the Counting in the Framework
 
@@ -340,5 +337,3 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 - Michele Maggiore, *Gravitational Waves*, Vol. 1 (Oxford, 2008), for the quadrupole formula, the binary inspiral power, and the derivation from the transverse-traceless amplitude.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the spin-coefficient and bivector formulation of the curvature on which the Weyl-tensor encoding rests.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the gauge-theoretic treatment of gravity in the same rotor language used here.
-
-

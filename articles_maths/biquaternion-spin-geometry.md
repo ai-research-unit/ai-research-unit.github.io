@@ -6,19 +6,15 @@ The biquaternion algebra is a Clifford algebra in two separate senses, and the s
 
 The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The module itself is realised in the matrix model in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the Clifford multiplication being stated here; the analytic theory of the operator is *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis; the rulings that the spinor lines trace are in *The Null Quadric and Its Projective Geometry*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra* is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
-
----
-
 ## The Spinor Module and Its Two Chiral Halves
 
 As a module over the complexified Lorentz algebra, the complexification of the Lorentzian slice is the tensor product of the two Weyl spinor spaces of *Spin Representations and Clifford Modules with Inner Conjugation*,
 $$
-\mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2 .
+\boxed{\;\mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2\;}.
 $$
 A biquaternion is therefore a **mixed spinor** with one unbarred and one barred index, $A_\alpha{}^{\bar\beta}$, and the null condition is exactly factorisability:
 $$
-A_\alpha{}^{\bar\beta}=\phi_\alpha\,\pi^{\bar\beta},\qquad \phi\in\Delta^+,\ \pi\in\Delta^- .
+\boxed{\;A_\alpha{}^{\bar\beta}=\phi_\alpha\,\pi^{\bar\beta},\qquad \phi\in\Delta^+,\ \pi\in\Delta^-\;}.
 $$
 Matching the matrix form $\mathsf{M}_2(\tilde{Q})=uv^{T}$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the column $u$ is the unbarred spinor $\phi$ and the row $v^{T}$ the barred spinor $\pi$. Hence fixing $\phi$ and varying $\pi$ traces $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)=\mathbb{P}^1$, while fixing $\pi$ and varying $\phi$ traces $m_{[\pi]}\cong\mathbb{P}(\Delta^+)=\mathbb{P}^1$. The two rulings are the **barred and unbarred spinor lines**, and they correspond to the two chiralities, since the complexified algebra splits into two simple summands, the two chirality eigenspaces. Which half-spin module is named $\Delta^+$ is a convention.
 
@@ -44,7 +40,7 @@ in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$; the images satisfy $c(\ga
 
 **Theorem (the volume element acts as a scalar).** The volume element $\omega=\gamma_1\gamma_2\gamma_3$ acts on $S$ by the scalar $i$,
 $$
-c(\omega)=c(\gamma_1)c(\gamma_2)c(\gamma_3)=\sigma_1\sigma_2\sigma_3=iI,
+\boxed{\;c(\omega)=c(\gamma_1)c(\gamma_2)c(\gamma_3)=\sigma_1\sigma_2\sigma_3=iI\;},
 $$
 agreement of the two computations being $\omega\mapsto(i\vec e_x)(i\vec e_y)(i\vec e_z)=i^3\vec e_x\vec e_y\vec e_z=(-i)(-e_t)=i$. Consequently $S$ carries **no chirality splitting**: every vector of $S$ is an eigenvector of $c(\omega)$ with the one eigenvalue $i$, and the volume element does not grade the module.
 

@@ -109,7 +109,7 @@ $$
 and the vanishing of the volume integral for every four-volume gives, point by point,
 
 $$
-(F^{*}DF) = 0, \qquad \mathrm{Re}\bigl\{F^{*}\,DF\bigr\} = 0,
+\boxed{\;(F^{*}DF) = 0, \qquad \mathrm{Re}\bigl\{F^{*}\,DF\bigr\} = 0\;},
 \tag{3.11, 3.12}
 $$
 
@@ -195,9 +195,7 @@ $$
 
 **The first line is wrong as printed.** From the definitions, $\partial/\partial t'e_t = \partial/\partial t'\nabla\cdot\vec E = \nabla\cdot\partial/\partial t'\vec E$, and $\nabla\cdot\vec J_0 = \nabla\cdot(\partial/\partial t'\vec E - \nabla\times\vec H) = \nabla\cdot\partial/\partial t'\vec E$, since the divergence of a curl vanishes. The two are **equal**, not opposite, so the relation that holds is
 
-$$
-\frac{\partial e_t}{\partial t'} - \nabla\cdot\vec J_0 = 0,
-$$
+$$\boxed{\;\frac{\partial e_t}{\partial t'} - \nabla\cdot\vec J_0 = 0\;},$$
 
 and the printed sum is not zero but twice $\partial/\partial t'\nabla\cdot\vec E$, which is $4.9$ at worst over $100$ random samplings of a smooth test field and generically nonzero. The second line is correct as printed, and the two lines are then consistent with each other and with the electric–magnetic symmetry the paper uses everywhere else: the electric pair and the magnetic pair carry the **same** relative sign once the magnetic current is the dual of the electric one. The relation is a consequence of the definitions and of the equality of mixed partial derivatives — a Clairaut identity — which is why the paper could reasonably call it easy to verify and still get one sign wrong.
 
@@ -215,7 +213,7 @@ $$
 then the product
 
 $$
-F = F_0\,f(t',\vec r)
+\boxed{\;F = F_0\,f(t',\vec r)\;\;}
 \tag{9.2}
 $$
 
@@ -235,7 +233,7 @@ Its consequence for the solution set is large. Taking $F_0$ constant — a legit
 The paper's section 12 looks for a centrally symmetric solution of the nonlinear system and finds the **Coulomb field with a running phase**,
 
 $$
-F = \frac{\alpha\,\vec r}{r^3}\,\exp(i\varphi(t')),
+\boxed{\;F = \frac{\alpha\,\vec r}{r^3}\,\exp(i\varphi(t'))\;},
 \tag{12.10}
 $$
 
@@ -313,7 +311,6 @@ $$
 \Omega = 2f\,(\vec b\,\partial/\partial Q_x f - \vec a\,\partial/\partial Q_y f),
 \tag{11.4}
 $$
-
 
 ### Where the Claim Fails
 

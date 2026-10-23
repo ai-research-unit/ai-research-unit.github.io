@@ -13,8 +13,6 @@ The algebra, the conjugations and the remarkable subspaces are *The Biquaternion
 
 ## The Two Candidate Groups
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$; a general element is $\tilde Q_4=\sum_\mu Q_{4\mu} e_\mu$, written $\tilde Q_4=Q_{4t}e_t+\vec Q_4$ with vector part $\vec Q_4=\sum_{\mu\in\{x,y,z\}}Q_{4\mu}\vec e_\mu$. The plain bilinear form is
-
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu},\qquad \varepsilon=(1,-1,-1,-1),
 $$

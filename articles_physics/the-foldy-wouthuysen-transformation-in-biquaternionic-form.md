@@ -61,7 +61,7 @@ where the second term vanishes for a time-independent $S$. Since $H = \beta mc^2
 Expanding $UHU^\dagger = H + i[S,H] + \frac{i^2}{2!}[S,[S,H]] + \cdots$, the condition $i[S,\beta mc^2] = -O$ is satisfied by
 
 $$
-S = S_1 = -\frac{i}{2mc^2}\,\beta O = -\frac{i}{2mc}\,\beta\,\boldsymbol\alpha\cdot\vec\pi ,
+\boxed{\;S = S_1 = -\frac{i}{2mc^2}\,\beta O = -\frac{i}{2mc}\,\beta\,\boldsymbol\alpha\cdot\vec\pi\;},
 $$
 
 because $[S,\beta] = -\frac{i}{2mc^2}\beta[O,\beta] = \frac{i}{mc^2}O$ (using $O\beta = -\beta O$), whence $i[S,\beta mc^2] = i\cdot i\,O = -O$. The remaining terms are evaluated with the same anticommutation:
@@ -73,7 +73,7 @@ $$
 because $[\beta O,O] = 2\beta O^2$ when $O$ is odd. Collecting, and using the full exponential rather than the first-order truncation, the transformed Hamiltonian through order $1/c^2$ is
 
 $$
-H_2 = \beta mc^2 + \mathcal{E} + \frac{\beta O^2}{2mc^2} + \cdots,
+\boxed{\;H_2 = \beta mc^2 + \mathcal{E} + \frac{\beta O^2}{2mc^2} + \cdots\;},
 $$
 
 with the residual odd terms of order $O^3/(m^2c^4)$ removed by a second transformation $S_2 = -\frac{i}{2mc^2}\beta O_2$, where $O_2$ denotes the residual odd part after the first step. For the free particle $O = c\,\boldsymbol\alpha\cdot\vec p$ and $O^2 = c^2\vec p^2$, so $O^2/(2mc^2) = \vec p^2/(2m)$ and
@@ -203,9 +203,9 @@ The transformation can now be located in the two gradings of the algebra, and th
 With an external electromagnetic field, $\vec\pi = \vec p-ϙ\vec A$ and the FW-transformed Hamiltonian acquires the standard non-relativistic terms. To order $1/c^2$ the upper block is the Pauli Hamiltonian
 
 $$
-H_{\mathrm{Pauli}} = \frac{\vec\pi^2}{2m} + ϙA^0 - \frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B
+\boxed{\;H_{\mathrm{Pauli}} = \frac{\vec\pi^2}{2m} + ϙA^0 - \frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B
 - \frac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
-+ \frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0),
++ \frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0)\;},
 $$
 
 whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $\frac{1}{4m^2c^2}$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\vec\pi^4/(8m^3c^2)$, which is displayed in the free-particle expansion above; the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework, and they are quoted here as the standard content of the transformation. The Darwin term is written in its equivalent forms $\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0) = -\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E$ for the electrostatic case $\vec E = -\nabla A^0$, where the identity $\nabla\cdot\vec E = -\nabla^2A^0$ holds. The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
@@ -238,7 +238,7 @@ U = \cos\frac{\theta}{2} + \beta\,\boldsymbol\alpha\cdot\vec u_p\,\sin\frac{\the
 \qquad
 \tan\theta = \frac{|\vec p|}{mc},
 \qquad
-UHU^\dagger = \beta\sqrt{\vec p^2c^2 + m^2c^4},
+\boxed{UHU^\dagger = \beta\sqrt{\vec p^2c^2 + m^2c^4}},
 $$
 
 checked to $9\times10^{-16}$ by direct matrix computation. The transformed position operator is the mean position, $\vec Q = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - i\hbar\beta\boldsymbol\alpha/(2mc) + \cdots$, whose Heisenberg velocity has no trembling term; the Zitterbewegung resides in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec Q$.

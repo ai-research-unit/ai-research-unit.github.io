@@ -8,8 +8,6 @@ We assume the parent article throughout and do not re-derive the equation. We ta
 
 The six problems are: **(1)** write out $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ explicitly at rest and at general momentum; **(2)** verify the covariant normalisations $\bar w w=2m$, $\bar v v=-2m$ and the orthogonality $\bar w v=0$; **(3)** verify the spin sums; **(4)** take the massless limit and exhibit the helicity–chirality locking; **(5)** verify the gamma-matrix algebra in the two representations and determine how the Lorentz generators change basis; **(6)** verify the biquaternionic mass-shell condition.
 
-**Conventions.** These are inherited exactly from the parent article. The Clifford metric carried by the generators is
-
 $$
 g=\mathrm{diag}(+1,-1,-1,-1),\qquad \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,
 $$
@@ -35,7 +33,7 @@ $$
 The second equation gives $w_B=\dfrac{\boldsymbol\sigma\cdot\vec p}{E+m}w_A$, and the first is then satisfied automatically on the mass shell $E^2=\vec p^2+m^2$; the upper two-spinor $w_A$ is free. Choosing $w_A=\sqrt{E+m}\,\xi^{(r)}$ and using $\dfrac{\boldsymbol\sigma\cdot\vec p}{E+m}=\dfrac{\boldsymbol\sigma\cdot\vec p}{\sqrt{E+m}\sqrt{E+m}}$ together with $\sqrt{E^2-m^2}=|\vec p|$ gives the parent's positive-frequency spinors,
 
 $$
-\boxed{\;w^{(r)}(\vec p)=\begin{pmatrix}\sqrt{E+m}\,\xi^{(r)}\\[2pt] \sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\,\xi^{(r)}\end{pmatrix},\qquad \vec u_p=\frac{\vec p}{|\vec p|}.}
+\boxed{\;w^{(r)}(\vec p)=\begin{pmatrix}\sqrt{E+m}\,\xi^{(r)}\\[2pt] \sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\,\xi^{(r)}\end{pmatrix},\qquad \vec u_p=\frac{\vec p}{|\vec p|} }.
 $$
 
 For the negative-frequency branch, $(\not p+m)v=0$ reads, in the same basis,
@@ -47,7 +45,7 @@ $$
 so $v_A=\dfrac{\boldsymbol\sigma\cdot\vec p}{E+m}v_B$, and with $v_B=\sqrt{E+m}\,\eta^{(r)}$,
 
 $$
-\boxed{\;v^{(r)}(\vec p)=\begin{pmatrix}\sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\,\eta^{(r)}\\[2pt] \sqrt{E+m}\,\eta^{(r)}\end{pmatrix}.}
+\boxed{\;v^{(r)}(\vec p)=\begin{pmatrix}\sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\,\eta^{(r)}\\[2pt] \sqrt{E+m}\,\eta^{(r)}\end{pmatrix} }.
 $$
 
 **At rest.** Setting $\vec p=0$, $E=m$, the general formulas collapse to
@@ -310,7 +308,7 @@ $$
 which is exactly the parent's condition
 
 $$
-\boxed{\;\tilde P\tilde P^{\natural}=-m^2c^2.\;}
+\boxed{\;\tilde P\tilde P^{\natural}=-m^2c^2\;}.
 $$
 
 Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the wave biquaternion is $\tilde P/\hbar$; the biquaternion norm being quadratic, $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$, exactly as $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same biquaternion norm as the four-momentum.

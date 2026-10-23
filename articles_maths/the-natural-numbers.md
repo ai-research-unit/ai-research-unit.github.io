@@ -53,8 +53,7 @@ Both are defined by recursion on the second variable, with $X = \mathbb{N}$ and 
 
 **Theorem.** The relation $\leq$ is a total order with least element $0$, and
 
-$$
-m \leq n \iff m = n \ \text{or}\ m < n, \qquad m < n \iff S(m) \leq n .
+$$ \boxed{\;m \leq n \iff m = n \ \text{or}\ m < n, \qquad m < n \iff S(m) \leq n \;}.
 $$
 
 **Proof.** Reflexivity is $m + 0 = m$; antisymmetry follows from cancellation of addition and the successor axioms; transitivity is associativity of addition, proved by induction. For totality, fix $m$ and apply induction to the statement that every $n$ is comparable with $m$: for $n = 0$ use $0 \leq m$; if $n$ is comparable, then $m + k = n$ gives $m + S(k) = S(n)$ and $n + 1 = S(n)$ gives comparability of $S(n)$ in the other case, and the remaining case $m = n$ gives $m \leq S(n)$.
@@ -69,8 +68,7 @@ $$
 
 **Theorem.** For all $m, n, k \in \mathbb{N}$:
 
-$$
-m + n = n + m, \qquad (m+n)+k = m+(n+k), \qquad m\cdot n = n\cdot m, \qquad (m\cdot n)\cdot k = m\cdot(n\cdot k),
+$$ \boxed{\;m + n = n + m, \qquad (m+n)+k = m+(n+k), \qquad m\cdot n = n\cdot m, \qquad (m\cdot n)\cdot k = m\cdot(n\cdot k)\;},
 $$
 
 $$
@@ -107,8 +105,7 @@ Thus $(\mathbb{N}, +, \cdot, 0, 1)$ is a commutative semiring with identity.
 
 **Theorem (division algorithm).** For all $n, m \in \mathbb{N}$ with $m \neq 0$ there are unique $q, r \in \mathbb{N}$ with
 
-$$
-n = qm + r, \qquad 0 \leq r < m .
+$$ \boxed{\;n = qm + r, \qquad 0 \leq r < m \;}.
 $$
 
 **Proof.** Existence by induction on $n$: if $n < m$ take $q = 0$, $r = n$; otherwise $n \geq m$, so $n = n' + 1 = n' + m\cdot 0 + 1$; if $n' = q'm + r'$ with $r' < m$ then $n = q'm + (r'+1)$ and either $r'+1 < m$ or $r' + 1 = m$, in which case $n = (q'+1)m + 0$. Uniqueness: if $qm + r = q'm + r'$ with $r, r' < m$, then $m \mid r - r'$ and $\lvert r - r'\rvert < m$, so $r = r'$ and then $q = q'$ by cancellation.

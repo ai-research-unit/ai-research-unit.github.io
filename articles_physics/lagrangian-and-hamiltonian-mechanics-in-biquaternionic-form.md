@@ -131,7 +131,7 @@ which uses $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$. This is the sta
 Let $\tilde q(t')$ be a trajectory and $d\tilde q/dt'$ its velocity. The **kinetic energy** of a particle of mass $m$ is
 
 $$
-T=\tfrac{1}{2}m\,\langle\,d\tilde q/dt'\rangle_{\natural}=\tfrac{1}{2}m\,d\tilde q/dt'\,(d\tilde q/dt')^{\natural}=\tfrac{1}{2}m\sum_{\mu\in\{t,x,y,z\}}\left(dq_{\mu}/dt'\right)^{2} .
+\boxed{\;T=\tfrac{1}{2}m\,\langle\,d\tilde q/dt'\rangle_{\natural}=\tfrac{1}{2}m\,d\tilde q/dt'\,(d\tilde q/dt')^{\natural}=\tfrac{1}{2}m\sum_{\mu\in\{t,x,y,z\}}\left(dq_{\mu}/dt'\right)^{2}\;}.
 $$
 
 For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|d\vec q/dt'|^2$, the familiar kinetic energy. The kinetic energy is therefore the **biquaternion norm** of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{H}_{\mathbb{B}}$ is positive definite, so $T\ge0$ with equality only for $d\tilde q/dt'=0$; no sign choice has to be made.
@@ -251,7 +251,7 @@ provided the Hessian $\partial^2L/\partial\left(dq_{\mu}/dt'\right)\partial\left
 Differentiating $H(\tilde q,\tilde p)=\sum_\mu p_\mu\,dq_{\mu}/dt'-L(\tilde q,d\tilde q/dt')$ and using the definition of $\tilde p$ gives **Hamilton's equations** in quaternion form,
 
 $$
-\boxed{\;d\tilde q/dt'=\frac{\partial H}{\partial\tilde p},\qquad \,d\tilde p/dt'=-\frac{\partial H}{\partial\tilde q}.\;}
+\boxed{\;d\tilde q/dt'=\frac{\partial H}{\partial\tilde p},\qquad \,d\tilde p/dt'=-\frac{\partial H}{\partial\tilde q}\;}.
 $$
 
 **Check on the free particle.** $H_0=\langle\tilde p\rangle_{\natural}/2m$ gives $\partial H_0/\partial\tilde p=\tilde p/m=d\tilde q/dt'$ and $\partial H_0/\partial\tilde q=0$, hence $d\tilde p/dt'=0$: constant momentum.
@@ -279,7 +279,7 @@ the centrifugal term appearing as a consequence of the transform rather than as 
 For a system with three degrees of freedom the position and momentum are pure real quaternions, $\tilde q,\tilde p\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, and they combine into the single biquaternion
 
 $$
-\tilde Q_3=\tilde q+i\tilde p\in\mathbb{B}.
+\boxed{\;\tilde Q_3=\tilde q+i\tilde p\in\mathbb{B}\;}.
 $$
 
 Its anti-Hermitian and Hermitian parts are
@@ -338,7 +338,6 @@ $$
 
 which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} dX\circ\Pi = 0$. Hamilton's principle is thus, in this formulation, the **exactness of the four-Hamiltonian one-form**; and for a Hamiltonian with no explicit time dependence the same condition is equivalent to Hamilton's equations $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt'=d H/d\vec\pi$, $d\vec\pi/dt'=-d H/d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$.
 
-
 **Two packagings, two sectors.** The contrast with the previous section is exact. The phase-space biquaternion $\tilde Q_3$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies **entirely** in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Q_3$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.
 
 **The Hamilton–Jacobi rewriting.** With the four-Hamiltonian in hand the relativistic mass-shell identity converts the action postulate into the **relativistic Hamilton–Jacobi equation** for a charged particle in an electromagnetic field: the source's form sets the quaternion square of $i\tilde\nabla S+ϙ\tilde A$ equal to $m^2$, the sign of the $ϙ\tilde A$ term following the charge-sign convention. The non-relativistic Hamilton–Jacobi equation and its biquaternion-norm interpretation are the subject of the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*; the four-Hamiltonian is the covariant object beneath that equation, and the corpus records it here.
@@ -358,7 +357,7 @@ Using $\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$ 
 
 $$
 \boxed{\;\{f,g\}=\mathrm{Sc}\!\left((\nabla_{\tilde q}f)^{\natural}\,\nabla_{\tilde p}g\right)
--\mathrm{Sc}\!\left((\nabla_{\tilde p}f)^{\natural}\,\nabla_{\tilde q}g\right).\;}
+-\mathrm{Sc}\!\left((\nabla_{\tilde p}f)^{\natural}\,\nabla_{\tilde q}g\right)\;}.
 $$
 
 Only the scalar part of each quaternion product enters. For pure $\tilde q_1,\tilde q_2$ the product $\tilde q_1^{\natural}\tilde q_2$ has a vector part as well, $-\tilde q_1\times\tilde q_2$; in general the vector part is $q_{1,0}\vec q_2-q_{2,0}\vec q_1-\vec q_1\times\vec q_2$, and only the cross-product term is intrinsic to the pairing. The Poisson bracket discards it, and the discarded part is precisely the cross-product structure that reappears as the angular-momentum bracket below. This is the algebraic content of the statement that the classical bracket is the antisymmetric scalar pairing of two gradients.

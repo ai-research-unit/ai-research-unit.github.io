@@ -10,10 +10,6 @@ The inverse is where the two products separate. The definition of an inverse, st
 
 **The results.** The general quaternionic product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ has a central square, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ with $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+(\vec Q,\vec Q)$, and $\langle\cdot\rangle_{\natural}$ is multiplicative, $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$. The product has the left unit $e_t$ and no right unit, hence no two-sided unit, so **no element is invertible of $\star$** and the product has **no group of units**; what survives is the pair of one-sided equations $\tilde Q_1\star\tilde Q_2=e_t$ and $\tilde Q_2\star\tilde Q_1=e_t$, soluble exactly when $\langle\tilde Q_1\rangle_{\natural}\neq0$ with the common unique solution $(\tilde Q_1^{-1})^{\natural}=\tilde Q_1/\langle\tilde Q_1\rangle_{\natural}$, and insoluble when $\langle\tilde Q_1\rangle_{\natural}=0$. The criterion is therefore the algebraic norm: a nonzero $\tilde Q_1$ is a zero divisor exactly when $\langle\tilde Q_1\rangle_{\natural}=0$, and the elements of non-vanishing norm form the plain group of units $\mathbb{B}^{\times}=\{N\neq0\}$, stable under $\star$ but not a group under it. Each section below states its result first and then proves it.
 
-**Boundaries.** The algebraic norm of the plain product is $\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*; the algebraic norm $\langle\cdot\rangle_{\natural}$ is the one of this product, and the criterion $N\neq0$ is proved here. The zero divisors are *Zero Divisors of the General Quaternionic Algebra*, where the set $\{N=0\}\setminus\{0\}$ is characterised as a set; the one-sided inverse equations of the four general products side by side, and the tabulation of their solutions, are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*, whose table is quoted and not restated. The product and its element theory are *Introduction to the General Quaternionic Algebra*; the left multiplications and the monoid they form are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*; and the signatures of the norm on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra*. The Hermitian form $\tilde Q\tilde Q^{*}$ is a different object, of the informational sector, whose positivity is *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* and whose scalar part carries the Euclidean norm of *The Euclidean Topology of the Biquaternion Algebra*; the polar scale $r$ as a physical reading is *Modulus–Unit Polar Decomposition of Biquaternions* and *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product $\tilde Q_1\tilde Q_2$, and the product of this article is the general quaternionic bilinear product
-
 $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2 ,
 $$
@@ -39,8 +35,10 @@ Throughout this article the product is the general quaternionic bilinear product
 **Proposition.** For every $\tilde Q\in\mathbb{B}$,
 
 $$
-\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}\,e_t , \qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=Q_t^2+(\vec Q,\vec Q) .
-$$
+\boxed{\;
+\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}\,e_t , \qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=Q_t^2+(\vec Q,\vec Q)
+\;}
+$$.
 
 **Proof.** The first display is the definition of the product at equal arguments; the scalar–vector form of *Introduction to the General Quaternionic Algebra* gives $\tilde Q^{\natural}\tilde Q=(Q_t-\vec Q)(Q_t+\vec Q)=Q_t^2-\vec Q^2$, and $\vec Q^2=-(\vec Q,\vec Q)$ for a vector part. The same scalar is produced in the two orders, $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$, because the computation read the other way, $(Q_t+\vec Q)(Q_t-\vec Q)=Q_t^2-\vec Q^2$, gives the same value.
 
@@ -70,8 +68,10 @@ The symmetric half read as an operation, with its centrality, its coefficient on
 **Proposition.** The algebraic norm is multiplicative for the product,
 
 $$
-\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural} ,
-$$
+\boxed{\;
+\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}
+\;}
+$$,
 
 and it is invariant under the natural conjugation, $\langle\tilde Q_1^{\natural}\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}$.
 
@@ -182,8 +182,10 @@ $$
 have a solution exactly when $\langle\tilde Q_1\rangle_{\natural}\neq0$, and then each has the **same unique** solution,
 
 $$
-\tilde Q_2=(\tilde Q_1^{-1})^{\natural}=\frac{\tilde Q_1^{\natural\natural}}{\langle\tilde Q_1^{\natural}\rangle_{\natural}}=\frac{\tilde Q_1}{\langle\tilde Q_1\rangle_{\natural}} ,
-$$
+\boxed{\;
+\tilde Q_2=(\tilde Q_1^{-1})^{\natural}=\frac{\tilde Q_1^{\natural\natural}}{\langle\tilde Q_1^{\natural}\rangle_{\natural}}=\frac{\tilde Q_1}{\langle\tilde Q_1\rangle_{\natural}}
+\;}
+$$,
 
 where $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$ is the inverse of the plain product. When $\langle\tilde Q_1\rangle_{\natural}=0$ neither equation has a solution.
 

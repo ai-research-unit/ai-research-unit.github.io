@@ -27,7 +27,7 @@ of determinant $\langle\tilde Q_1\rangle_{\natural}=Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q
 **Theorem (transport of the family).** For every $n$, $\mathsf{M}_2(F_{\tilde Q_3}^n(\tilde Q_1))=p_n(\mathsf{M}_2(\tilde Q_1))$, where $p_0(M)=M$ and $p_{n+1}(M)=p_n(M)^2+N$. Consequently the map $\mathsf{M}_2$ restricts to a bijection
 
 $$
-\mathcal K_{\tilde Q_3}\;\longleftrightarrow\;\{M\in M_2(\mathbb{C}) : (p_n(M))_{n\ge0} \text{ bounded}\}, \qquad J_{\tilde Q_3}\leftrightarrow \text{the boundary} ,
+\boxed{\;\mathcal K_{\tilde Q_3}\;\longleftrightarrow\;\{M\in M_2(\mathbb{C}) : (p_n(M))_{n\ge0} \text{ bounded}\}, \qquad J_{\tilde Q_3}\leftrightarrow \text{the boundary}\;},
 $$
 
 and the dynamics of the biquaternion family is conjugate to the dynamics of a polynomial map of the four complex entries of the matrix.
@@ -66,7 +66,7 @@ with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are 
 **Proposition (determinant and trace).** Along the orbit,
 
 $$
-\det\mathsf{M}_2(\tilde Q_{1,n})=\langle\tilde Q_{1,n}\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(\tilde Q_{1,n})=2(Q_{1,n})_0 ,
+\boxed{\;\det\mathsf{M}_2(\tilde Q_{1,n})=\langle\tilde Q_{1,n}\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(\tilde Q_{1,n})=2(Q_{1,n})_0\;},
 $$
 
 and for the parameter zero, $\langle\tilde Q_{1,n}\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}^{2^n}$. In the entries of the matrix the two invariants are the classical ones,
@@ -114,7 +114,7 @@ of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with
 **Corollary (where the operator enters the dynamics).** The derivative of the quadratic family is the sum of two operators on the space and not an element,
 
 $$
-dF_{\tilde Q_3}\big|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1=L_{\tilde Q_1}(\tilde Q_2)+R_{\tilde Q_1}(\tilde Q_2),
+\boxed{\;dF_{\tilde Q_3}\big|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1=L_{\tilde Q_1}(\tilde Q_2)+R_{\tilde Q_1}(\tilde Q_2)\;},
 $$
 
 which is why the critical set is read from the pair of eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ — $\det dF=4\langle\tilde Q_1\rangle_{\natural}(2Q_{1t})^2$ — and not from the matrix of the element alone.

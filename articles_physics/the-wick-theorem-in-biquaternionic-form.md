@@ -18,16 +18,6 @@ holds as an identity in $\mathbb{B}$, not merely in expectation.
 
 The article proceeds as follows. The next section states the standard theorem and its fermionic sign. A section defines normal ordering and contraction. A section exhibits the one-mode subalgebra and computes its products. A section proves and verifies the one-mode Wick identity, with a table of all low-order contractions. Sections then identify the contraction with the propagator and the sign with the grading, and state the field case and its gap. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu,\lambda$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ is the centre. The isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, and the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$, the $2\times2$ reading of the plain form, with $\mathrm{Tr}(e_t)=2$. The single-mode ladder and number operator are
-$$
-\vec\Upsilon_x = \tfrac12\big(i\vec e_x-\vec e_y\big),
-\qquad
-\vec\Upsilon_y = \tfrac12\big(i\vec e_x+\vec e_y\big),
-\qquad
-\tilde\Pi_- = \vec\Upsilon_y\vec\Upsilon_x = \tfrac12\big(e_t-i\vec e_z\big),
-$$
-with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $\vec\Upsilon_x^2=(\vec\Upsilon_y)^2=0$, and $(-1)^F=i\vec e_z$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The one-mode vacuum idempotent is $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)=e_t-\tilde\Pi_-$. Throughout, $\langle\cdot\rangle_t$ denotes the vacuum expectation value $\mathrm{Tr}(\tilde\Pi_+\,\cdot\,)$.
-
 ## The Wick Theorem in the Standard Theory
 
 Let $\phi^{\mathrm{fop}}_i = \phi^{\mathrm{fop}}(x_i)$ be free fields, bosonic or fermionic, and let $T$ denote time ordering. The **Wick theorem** states that
@@ -124,9 +114,9 @@ $$
 $$
 using $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$ and their antisymmetric partners. Every product is again in $\mathcal{A}_{\mathrm{tr}}$; for instance $\vec q_x\vec q_y = i\,\vec e_x \vec e_y = i\vec e_z = \vec q_z$, and $\vec q_y\vec q_z = i\,\vec e_y \vec e_z = i\vec e_x = \vec q_x$, while $\vec q_z\vec q_x = i^2 \vec e_z \vec e_x = -\vec e_y = -\vec q_y$. So
 $$
-\mathcal{A}_{\mathrm{tr}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R}),
+\boxed{\;\mathcal{A}_{\mathrm{tr}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R}),
 \qquad
-\mathcal{A}_{\mathrm{tr}}\otimes_\mathbb{R}\mathbb{C} = \mathbb{B}.
+\mathcal{A}_{\mathrm{tr}}\otimes_\mathbb{R}\mathbb{C} = \mathbb{B}\;}.
 $$
 The one-mode truncation is therefore a **real form** of the biquaternion algebra, the one fixed by a Majorana-like reality condition on the module rather than by retaining the complex ladder: its generators are the two anticommuting real combinations of the ladder $\vec q_x=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $\vec q_y=\vec\Upsilon_y-\vec\Upsilon_x=\vec e_y$, with $\vec q_x^2=+e_t$ and $\vec q_y^2=-e_t$. This matches the general statement that $\mathbb{B}\cong M_2(\mathbb{C})$ has real forms determined by the reality condition imposed on the module.
 
@@ -152,8 +142,8 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 >$$
 > and for every product $\tilde{Q}_1\cdots\tilde{Q}_{2m}$ of mode operators,
 >$$
-> \langle \tilde{Q}_1\cdots\tilde{Q}_{2m}\rangle_t
-> = \sum_{\text{complete pairings}} \mathrm{sgn}(\pi)\prod_{(i,j)}\langle \tilde{Q}_i\tilde{Q}_j\rangle_t .
+> \boxed{\;\langle \tilde{Q}_1\cdots\tilde{Q}_{2m}\rangle_t
+> = \sum_{\text{complete pairings}} \mathrm{sgn}(\pi)\prod_{(i,j)}\langle \tilde{Q}_i\tilde{Q}_j\rangle_t\;}.
 >$$
 
 **Proof of the two-point identity.** The contraction is, by the anticommutator,
@@ -172,11 +162,11 @@ Iterating this reduction produces exactly the sum over complete pairings with th
 
 **The contractions explicitly.** The two nonvanishing elementary contractions are
 $$
-\langle \vec\Upsilon_x\vec\Upsilon_y\rangle_t = 1,
+\boxed{\;\langle \vec\Upsilon_x\vec\Upsilon_y\rangle_t = 1,
 \qquad
 \langle \vec\Upsilon_y\vec\Upsilon_x\rangle_t = 0,
 \qquad
-\langle \vec\Upsilon_x\vec\Upsilon_x\rangle_t = \langle \vec\Upsilon_y\vec\Upsilon_y\rangle_t = 0 .
+\langle \vec\Upsilon_x\vec\Upsilon_x\rangle_t = \langle \vec\Upsilon_y\vec\Upsilon_y\rangle_t = 0\;}.
 $$
 The complete table of the four-point function is the following, in which each entry was computed twice: directly as $\mathrm{Tr}(\tilde\Pi_+\tilde{Q}_1\tilde{Q}_2\tilde{Q}_3\tilde{Q}_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
 
@@ -253,11 +243,11 @@ $$
 $$
 which is a real form of the biquaternion algebra, and the vacuum idempotent $\tilde\Pi_+=e_t-\tilde\Pi_-$ lies in it. The nilpotency of the ladder makes the contraction exact:
 $$
-\vec\Upsilon_x\vec\Upsilon_y = -\,\tilde\Pi_- + e_t = \tilde\Pi_+,
+\boxed{\;\vec\Upsilon_x\vec\Upsilon_y = -\,\tilde\Pi_- + e_t = \tilde\Pi_+,
 \qquad
 \langle \vec\Upsilon_x\vec\Upsilon_y\rangle_t = 1,
 \qquad
-\langle \vec\Upsilon_y\vec\Upsilon_x\rangle_t = 0 ,
+\langle \vec\Upsilon_y\vec\Upsilon_x\rangle_t = 0\;},
 $$
 and every $2m$-point one-mode contraction is the signed sum over complete pairings, with the relative sign supplied by the parity of the pairing. The four-point table and the six-point value were recomputed directly in the matrix representation and agree with the pairing sums to machine precision; the nonzero entries are $\langle(\vec\Upsilon_x\vec\Upsilon_y)^k\rangle_t=1$, and the alternating word is the only contractible one.
 

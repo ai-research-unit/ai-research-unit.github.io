@@ -9,8 +9,6 @@ The cobordism of involutions sits between the classification and the invariants:
 
 **The article assumes** the differential topology of the bordism theory, the Stiefel–Whitney and Pontryagin classes, the equivariant surgery of *Involutions on Manifolds and Equivariant Surgery*, the Smith theory of *Periodic Maps and the Smith Theory*, and the ordinary cobordism rings of *Cobordism and Surgery Theory*.
 
-**The boundaries of the article.** The ordinary cobordism rings and the Thom spectra are *Cobordism and Surgery Theory*; the equivariant surgery obstruction is *Involutions on Manifolds and Equivariant Surgery*; the equivariant signature and the $G$-signature theorem are *Hermitian Pairings and the Equivariant Signature*; the equivariant stable homotopy, the equivariant Thom spectra and the completions are *Stable Homotopy Theory*. The differentiable structures and the transversality are Part III. No analysis is used, and the smooth constructions are treated through their bordism-theoretic consequences.
-
 ## Equivariant Bordism
 
 **Definition.** Let $G$ be a finite group. A **$G$-manifold** is a closed manifold with a smooth action of $G$, and two $G$-manifolds $M_0,M_1$ are **$G$-cobordant** if there is a compact $G$-manifold $W$ with $\partial W = M_0\sqcup M_1$ and the induced actions; the classes form the **unoriented $G$-bordism group** $\mathcal{N}_*^{G}$ and, for oriented $G$-manifolds and oriented cobordisms, the **oriented $G$-bordism ring** $\Omega_*^{G}$. For $G = \mathbb{Z}/2$ the elements are the involutions of closed manifolds up to equivariant cobordism.

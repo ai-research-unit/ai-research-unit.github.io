@@ -6,8 +6,6 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the norm is $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$, and the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$. The embedding $\mathsf{M}_2$, its multiplicativity and its invariants are *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, whose conventions are held here.
-
 ## The Representation
 
 ### The Embedding and the Half-Sum
@@ -17,8 +15,8 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 **Theorem.** The embedding is multiplicative for the plain product and carries the Jordan product to the **half-sum of the two orders**:
 
 $$
-\mathsf{M}_2(\tilde q_1\tilde q_2)=\mathsf{M}_2(\tilde q_1)\,\mathsf{M}_2(\tilde q_2),\qquad
-\mathsf{M}_2(\tilde q_1\bullet\tilde q_2)=\tfrac12\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)+\mathsf{M}_2(\tilde q_2)\mathsf{M}_2(\tilde q_1)\bigr).
+\boxed{\;\mathsf{M}_2(\tilde q_1\tilde q_2)=\mathsf{M}_2(\tilde q_1)\,\mathsf{M}_2(\tilde q_2),\qquad
+\mathsf{M}_2(\tilde q_1\bullet\tilde q_2)=\tfrac12\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)+\mathsf{M}_2(\tilde q_2)\mathsf{M}_2(\tilde q_1)\bigr)\;}.
 $$
 
 *Proof.* Multiplicativity is *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the second identity is its linearity applied to the definition $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$.
@@ -30,8 +28,8 @@ $$
 **Proposition.** The trace and the determinant of the representative are
 
 $$
-\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_t=T(\tilde q),\qquad
-\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2 .
+\boxed{\;\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_t=T(\tilde q),\qquad
+\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2\;}.
 $$
 
 *Proof.* The trace is $2q_t$ on the embedding; the determinant is the multiplicativity of the norm, $\det\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})$ read as $\langle\tilde q\rangle_{\natural}$, by *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*.
@@ -43,7 +41,7 @@ $$
 **Theorem.** On the model the trace form is the **half of the matrix trace pairing**:
 
 $$
-\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)\bigr)=2\,\tau(\tilde q_1,\tilde q_2)=2\bigl(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\bigr).
+\boxed{\;\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)\bigr)=2\,\tau(\tilde q_1,\tilde q_2)=2\bigl(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\bigr)\;}.
 $$
 
 *Proof.* $\operatorname{tr}\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)=\operatorname{tr}\mathsf{M}_2(\tilde q_1\tilde q_2)=2\,\mathrm{Sc}(\tilde q_1\tilde q_2)=2\,\tau(\tilde q_1,\tilde q_2)$, using the multiplicativity of the embedding, the trace of the representative, and $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\tilde q_2)$ of *The Trace Form and the Invariance of the Symmetric Plain Algebra*.

@@ -123,13 +123,13 @@ whose indefinite signature on $\mathbb{M}_{-}$ arises algebraically from $i^2 = 
 The single structural fact that organizes the whole subsequent history is the isomorphism
 
 $$
-\mathbb{B} \;\cong\; M_2(\mathbb{C}) ,
+\boxed{\;\mathbb{B} \;\cong\; M_2(\mathbb{C})\;},
 $$
 
 realized by sending the quaternion units to $-i$ times the Pauli matrices, $\vec e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, and the unit-norm elements
 
 $$
-SL(2,\mathbb{C}) = \{\tilde U \in \mathbb{B} : \tilde U\tilde U^{\natural} = e_t\}
+\boxed{\;SL(2,\mathbb{C}) = \{\tilde U \in \mathbb{B} : \tilde U\tilde U^{\natural} = e_t\}\;}
 $$
 
 are the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$, acting on $\mathbb{M}_{-}$ by the rotor conjugation
@@ -163,7 +163,7 @@ The last column is the point of the table. On a line the ratio of two quantities
 **The algebra.** Three mutually perpendicular unit rotors through the origin — the corpus's $\vec e_x$, $\vec e_y$, $\vec e_z$ — satisfy $\vec e_x^{2} = \vec e_y^{2} = \vec e_z^{2} = \vec e_x\vec e_y\vec e_z = -e_t$ by the ordinary rules of quaternions, and the same equations hold when the rotors do not pass through the origin; each symbol carries a second meaning, as the operation of turning a rotor that meets its axis at right angles through a right angle about that axis. A rotor through the origin is $\vec e_xx + \vec e_yy + \vec e_zz$, and the ratio of two such rotors is a quaternion. The general motor is the sum of a rotor through the origin and one polar to a rotor through the origin, and the paper writes it $\alpha + \omega\beta$, where $\omega$ denotes the rectangular twist of pitch 1 and $\omega\alpha$ is the rotor polar to $\alpha$, of the same magnitude, obtained from it by a left-handed twist. The new symbol is not a second copy of the scalar imaginary. Continuing the twist through two right angles restores the rotor to its original position and not to its reverse, so
 
 $$
-\omega^{2} = +1 ,
+\boxed{\;\omega^{2} = +1\;},
 $$
 
 and $\omega$ commutes with the quaternion units. It is the split-complex unit, written $j$ in the corpus's notation, and with $j^{2} = +1$ the two combinations

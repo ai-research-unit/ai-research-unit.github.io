@@ -6,10 +6,6 @@ The symmetric plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2 = \
 
 The central image **flattens the table**, and the point of the article is to say so and to read what is left. Because every value is a scalar multiple of $e_t$, the product of two elements of a subspace $S$ lies in $S$ exactly when $S$ contains the idempotent $e_t$; the closure of the product, which in a product with a vector part is a genuine computation on each subspace, here reduces to the single question *does $S$ contain $e_t$*. The answer is yes for the centre, for the quaternion subspace and for the Hermitian subspace, and no for the vector subspace, for the anti-quaternion subspace and for the anti-Hermitian subspace, each with a smallest witness that is the square of one of its basis elements, $\vec e_x\star \vec e_x = e_t$ in the vector and anti-Hermitian subspaces and $(i\vec e_x)\star(i\vec e_x) = e_t$ in the anti-quaternion subspace. What remains is the reading of each subspace — the restricted form, its rank and signature, the idempotents, the elements of square zero and the isotropic elements — which the sections give one by one; the restricted form is the identity form on the natural real basis, positive definite, of rank the real dimension in every case, so apart from the closure and the idempotents the readings coincide, and this flatness is the mark of the central image.
 
-**Boundaries.** The subspaces and their names are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*; the pattern is the sibling *Remarkable Subspaces under the General Plain Sesqualgebra*; the form $\langle\cdot,\cdot\rangle_{*}$ and its restriction are *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the closure of the remarkable subspaces under the general plain sesquilinear product is the sibling article's. This article owns only the reading of the remarkable subspaces under the product of the block. Nothing topological and nothing metric appears.
-
-**Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ with $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = Q_{1t}\overline{Q_{2t}} + (\vec Q_1,\overline{\vec Q_2})$. The remarkable subspaces are the eigenspaces of the three involutions of the algebra: the centre and the vector subspace for the natural conjugation, the quaternion and the anti-quaternion subspace for the coefficientwise conjugation, the Hermitian and the anti-Hermitian subspace for the Hermitian conjugation.
-
 ## The Closure of the remarkable subspaces, in One Statement
 
 **Theorem (closure, read by the idempotent).** Let $S$ be one of the remarkable subspaces. Then $S$ is closed under the product of the block, $\tilde Q_1\star\tilde Q_2 \in S$ for all $\tilde Q_1,\tilde Q_2 \in S$, if and only if $e_t \in S$.
@@ -32,9 +28,7 @@ the multiplication of the field by the conjugate of the second factor. The centr
 
 The vector subspace is $\mathrm{Vect}(\mathbb{B}) = \{\vec Q_1 : Q_{1t} = 0\}$, of real dimension six. On it the form is $\langle \vec Q_1,\vec Q_2\rangle_{*} = (\vec Q_1,\overline{\vec Q_2})$, so the product of two vectors is the central element
 
-$$
-\vec Q_1\star\vec Q_2 = (\vec Q_1,\overline{\vec Q_2})\,e_t ,
-$$
+$$ \boxed{\; \vec Q_1\star\vec Q_2 = (\vec Q_1,\overline{\vec Q_2})\,e_t \;}, $$
 
 and it is **not closed**: the smallest witness is $\vec e_x\star \vec e_x = \langle \vec e_x,\vec e_x\rangle_{*}e_t = e_t$, which leaves the vector subspace because it has a scalar part. The element $e_t$ is not in the subspace, so the only idempotent the subspace contains is $0$; the elements of square zero are none, since $\langle \vec Q_1,\vec Q_1\rangle_{*} = \sum_{k}\lvert Q_{1,k}\rvert^{2}$ vanishes only at the origin; and the restriction of $\langle\cdot,\cdot\rangle_{*}$ is positive definite of real rank $6$, with isotropic cone $\{0\}$.
 
@@ -42,9 +36,7 @@ and it is **not closed**: the smallest witness is $\vec e_x\star \vec e_x = \lan
 
 The quaternion subspace is $\mathbb{H}_{\mathbb{B}} = \{\sum_\mu P_\mu e_\mu : P_\mu\in\mathbb{R}\}$, the real span of the basis, of real dimension four. On it the form is real and is the quaternion form, $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = Q_{1t}Q_{2t} + (\vec Q_1,\vec Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, so the product is
 
-$$
-\tilde Q_1\star\tilde Q_2 = \bigl(Q_{1t}Q_{2t} + (\vec Q_1,\vec Q_2)\bigr)e_t ,
-$$
+$$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \bigl(Q_{1t}Q_{2t} + (\vec Q_1,\vec Q_2)\bigr)e_t \;}, $$
 
 with a **real** central coefficient. The subspace is **closed**, because the value is a real multiple of $e_t$ and the real multiples of $e_t$ lie in $\mathbb{H}_{\mathbb{B}}$; it is the smallest closed subspace containing the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Its idempotents are $0$ and $e_t$, the same two as the block, and its elements of square zero are none. The restriction of $\langle\cdot,\cdot\rangle_{*}$ is the identity form on the basis, of real rank $4$ and signature $(4,0)$; on this subspace the block coincides with the symmetric quaternionic block, and the section is the bridge between the two rows in coordinates.
 
@@ -62,9 +54,7 @@ with a real central coefficient; the subspace is **not closed**, because its ele
 
 The Hermitian subspace is the fixed space of the Hermitian conjugation, $\mathbb{M}_+ = \{p_te_t + \sum_{k}p_k(i\vec e_k) : p_\mu\in\mathbb{R}\}$, of real dimension four, with real basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. On it the form is real and is the identity form in this basis,
 
-$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{*} = p_tq_t + \sum_{k\in\{x,y,z\}} p_kq_k , \qquad \tilde Q_1,\tilde Q_2\in\mathbb{M}_+ ,
-$$
+$$ \boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{*} = p_tq_t + \sum_{k\in\{x,y,z\}} p_kq_k , \qquad \tilde Q_1,\tilde Q_2\in\mathbb{M}_+ \;}, $$
 
 which is the positive part of the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* restricted to its coordinates, so the product reads
 

@@ -109,7 +109,7 @@ $$
 so $\tilde\Pi_+$ and $\tilde\Pi_-$ are orthogonal idempotents summing to the unit. They are primitive, and they give the Peirce decomposition
 
 $$
-\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-, \qquad \mathbb{B}\tilde\Pi_+ \cong \mathbb{B}\tilde\Pi_- \cong S \quad (\text{as left } \mathbb{B}\text{-modules}).
+\boxed{\;\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-, \qquad \mathbb{B}\tilde\Pi_+ \cong \mathbb{B}\tilde\Pi_- \cong S \quad (\text{as left } \mathbb{B}\text{-modules})\;}.
 $$
 
 The off-diagonal matrix units are recovered in biquaternion coordinates: with
@@ -189,7 +189,7 @@ the two central summands being the two chiralities. The corresponding central id
 The **Dirac spinor module** is the direct sum of the two halves,
 
 $$
-\Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4,
+\boxed{\;\Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4\;},
 $$
 
 on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\mathsf{M}_2(\tilde U_{\mathrm L}^{*})$. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.
@@ -250,8 +250,8 @@ so $\pm\tilde U_{\mathrm L}$ act differently on every spinor. The defining repre
 The Lorentz group acts on the spinor module by **left multiplication**:
 
 $$
-\psi \;\longmapsto\; \tilde U_{\mathrm L}\,\psi \;=\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
-\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S.
+\boxed{\;\psi \;\longmapsto\; \tilde U_{\mathrm L}\,\psi \;=\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
+\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S\;}.
 $$
 
 Equivalently, in the ideal model, $\psi\in\mathbb{B}\tilde\Pi_+$ is sent to $\tilde U_{\mathrm L}\psi\in\mathbb{B}\tilde\Pi_+$; the ideal is stable because $\mathbb{B}(\mathbb{B}\tilde\Pi_+)\subseteq\mathbb{B}\tilde\Pi_+$. The action is $\mathbb{C}$-linear, and it is a group action:

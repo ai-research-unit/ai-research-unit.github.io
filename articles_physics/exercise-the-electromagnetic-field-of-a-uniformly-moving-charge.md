@@ -62,12 +62,10 @@ D = \sqrt{d_\parallel^2 + (1-\beta^2)\,d_\perp^2},
 $$
 the field of a charge in uniform motion is, in closed form about the **present** position,
 $$
-\boxed{\;
 \vec E = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2 + (1-\beta^2)\,d_\perp^2\right)^{3/2}}
 = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2 + d_\perp^2/\gamma^2\right)^{3/2}},
 \qquad
 \vec B = \frac{1}{c^2}\,\vec v\times\vec E,
-\;}
 $$
 with $\gamma = (1-\beta^2)^{-1/2}$. The electric field is radial *from the present position*, falls as $1/d^2$ at fixed direction, and is anisotropic: enhanced by $\gamma$ in the plane transverse to the motion and suppressed by $1/\gamma^2$ along it. Surfaces of constant $D$ — hence of constant scalar potential — are oblate spheroids flattened along the direction of motion, which is the "Heaviside ellipsoid" of the title.
 
@@ -93,7 +91,8 @@ $$
 $$
 (b) Square it to obtain the quadratic $(1-\beta^2)R^2 - 2\beta d_\parallel R - d^2 = 0$ and show that its physical root is
 $$
-R = \frac{\beta d_\parallel + \sqrt{\beta^2 d_\parallel^2 + (1-\beta^2)d^2}}{1-\beta^2},
+\boxed{\;
+R = \frac{\beta d_\parallel + \sqrt{\beta^2 d_\parallel^2 + (1-\beta^2)d^2}}{1-\beta^2}\;},
 $$
 the other root being non-positive. (c) Deduce $D = R\kappa = \sqrt{d_\parallel^2 + (1-\beta^2)d_\perp^2}$ together with the **present-position identities**
 $$
@@ -349,9 +348,10 @@ I_2 = \vec E\cdot\vec B = 0 .
 $$
 In the biquaternion normalization, with $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\vec H=\vec B/\mu$,
 $$
+\boxed{\;
 \langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = -\epsilon\left(I_1 + 2ic\,I_2\right) = -\epsilon I_1 < 0,
 \qquad
-\tilde{F}^2 = -\langle\tilde{F}\rangle_{\natural} = \epsilon I_1 > 0 .
+\tilde{F}^2 = -\langle\tilde{F}\rangle_{\natural} = \epsilon I_1 > 0\;}.
 $$
 The field is of electric type, is **not** null, and is not a zero divisor: $\langle\tilde{F}\rangle_{\natural}\neq0$ and $\tilde{F}^2\neq0$. It therefore carries no radiation, in agreement with $d\vec\beta/dt'_r=0$; the contrast with the parent's acceleration field, whose $\tilde{F}_a$ *is* a zero divisor, is exact.
 
@@ -381,9 +381,10 @@ D = R\kappa = \sqrt{d_\parallel^2+(1-\beta^2)d_\perp^2}
 $$
 The second of these is the key: the retarded combination in the numerator of the parent's velocity field is **parallel to the present separation**, so the field can be written entirely in terms of $\vec d$. Substituting into the parent's $\vec E_v$ gives the Heaviside ellipsoid field
 $$
+\boxed{\;
 \vec E = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2+d_\perp^2/\gamma^2\right)^{3/2}},
 \qquad
-\vec B = \frac{1}{c^2}\,\vec v\times\vec E,
+\vec B = \frac{1}{c^2}\,\vec v\times\vec E\;},
 $$
 which is radial from the *present* position, falls as $1/d^2$ at fixed direction, and is flattened along the motion. The acceleration field vanishes identically, so the field is of electric type and not null: $I_1 = \left(\frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{D^2}\right)^2>0$, $I_2=0$, $\langle\tilde{F}\rangle_{\natural}=-\epsilon I_1\neq0$, $\tilde{F}^2=\epsilon I_1\neq0$; it is never a zero divisor and never radiation.
 

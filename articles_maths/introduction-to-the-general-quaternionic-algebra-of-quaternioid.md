@@ -29,7 +29,7 @@ The product carries the star throughout the corpus; the bare juxtaposition is re
 **Proposition (the coordinate rule).** With $\vec q_1, \vec q_2$ the vector parts and $\vec q_1 \times \vec q_2$ the cross product,
 
 $$
-\tilde q_1 \star \tilde q_2 = \bigl(q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2\bigr)e_t + q_{1t}\vec q_2 - q_{2t}\vec q_1 - \vec q_1 \times \vec q_2 .
+\boxed{\;\tilde q_1 \star \tilde q_2 = \bigl(q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2\bigr)e_t + q_{1t}\vec q_2 - q_{2t}\vec q_1 - \vec q_1 \times \vec q_2\;}.
 $$
 
 *Proof.* Expand $\tilde q_1^{\natural}\tilde q_2 = (q_{1t} - \vec q_1)(q_{2t} + \vec q_2) = q_{1t}q_{2t} - \vec q_1\vec q_2 + q_{1t}\vec q_2 - q_{2t}\vec q_1$ and substitute the product of two pure quaternions, $\vec q_1\vec q_2 = -\,\vec q_1 \cdot \vec q_2 + \vec q_1 \times \vec q_2$ (*Quaternion Algebra*).
@@ -37,7 +37,7 @@ $$
 **Proposition (bilinearity and the exchange law).** The product is $\mathbb{R}$-bilinear. It is neither commutative nor anticommutative. The two orderings are exchanged by the conjugation,
 
 $$
-\tilde q_2 \star \tilde q_1 = (\tilde q_1 \star \tilde q_2)^{\natural} .
+\boxed{\;\tilde q_2 \star \tilde q_1 = (\tilde q_1 \star \tilde q_2)^{\natural}\;}.
 $$
 
 *Proof.* Bilinearity is that of the plain product and of the conjugation. For the exchange law, $(\tilde q_1^{\natural}\tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1^{\natural\natural} = \tilde q_2^{\natural}\tilde q_1$, because the conjugation is an anti-automorphism of order two.
@@ -61,7 +61,7 @@ $$
 **Theorem (the associator).** For all $\tilde q_1,\tilde q_2,\tilde q_3 \in \mathbb{H}$,
 
 $$
-[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3 .
+\boxed{\;[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3\;}.
 $$
 
 In particular the product is **not associative**: $[\vec e_x,e_t,e_t] = 2\vec e_x$, and $24$ of the $64$ triples of basis elements give a nonzero associator.
@@ -75,7 +75,7 @@ In particular the product is **not associative**: $[\vec e_x,e_t,e_t] = 2\vec e_
 **Theorem (the one-sided unit).** The element $e_t$ is a left unit of the product and not a right one:
 
 $$
-e_t \star \tilde q = \tilde q , \qquad \tilde q \star e_t = \tilde q^{\natural} .
+\boxed{\;e_t \star \tilde q = \tilde q , \qquad \tilde q \star e_t = \tilde q^{\natural}\;}.
 $$
 
 There is no right unit: no $\tilde u \in \mathbb{H}$ satisfies $\tilde q \star \tilde u = \tilde q$ for every $\tilde q$.

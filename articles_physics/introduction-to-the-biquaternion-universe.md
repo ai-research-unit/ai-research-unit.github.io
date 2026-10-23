@@ -105,13 +105,13 @@ The **real part** of $\langle d\tilde{Q}\rangle_{\natural} = \sum_\mu (dQ_\mu)^2
 Because each sector retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material sector, where only $dq'_t$ and the $dq_k$ are non-zero,
 
 $$
-\langle d\tilde{Q}\rangle_{\natural} = -(dq'_t)^2 + dq_x^2 + dq_y^2 + dq_z^2 = -c^2\,d{t'}^2 + dx^2 + dy^2 + dz^2,
+\boxed{\;\langle d\tilde{Q}\rangle_{\natural} = -(dq'_t)^2 + dq_x^2 + dq_y^2 + dq_z^2 = -c^2\,d{t'}^2 + dx^2 + dy^2 + dz^2\;},
 $$
 
 the Minkowski interval of signature $(3,1)$. On the informational sector, where only $dq_t$ and the $dq'_k$ are non-zero,
 
 $$
-\langle d\tilde{Q}\rangle_{\natural} = dq_t^2 - (dq'_x)^2 - (dq'_y)^2 - (dq'_z)^2 = c^2\,{dt}^2 - {dx'}^2 - {dy'}^2 - {dz'}^2,
+\boxed{\;\langle d\tilde{Q}\rangle_{\natural} = dq_t^2 - (dq'_x)^2 - (dq'_y)^2 - (dq'_z)^2 = c^2\,{dt}^2 - {dx'}^2 - {dy'}^2 - {dz'}^2\;},
 $$
 
 the mirror interval of signature $(1,3)$. The two are exchanged by $i$, and the sign of the form reverses with them, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$. In both cases the null cone — the zero divisor set, discussed in the companion articles — has the same two interpretations:
@@ -146,7 +146,7 @@ $$
 the imaginary time $ic\,t'$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$; its elements are the Lorentz rotors, written $\tilde U_{\mathrm L}$:
 
 $$
-SL(2,\mathbb{C}) \;\cong\; \{\tilde U_{\mathrm L} \in \mathbb{B} : \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t\}.
+\boxed{\;SL(2,\mathbb{C}) \;\cong\; \{\tilde U_{\mathrm L} \in \mathbb{B} : \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t\}\;}.
 $$
 
 This group **acts** on the material sector by the **rotor conjugation**

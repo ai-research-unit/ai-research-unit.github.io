@@ -94,7 +94,7 @@ The conditional probability is therefore **independent of the filter setting** $
 The distinction in the framework's notation is therefore:
 
 $$
-\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde{U}_A \otimes \tilde\Pi_B.
+\boxed{\;\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde{U}_A \otimes \tilde\Pi_B\;}.
 $$
 
 Two idempotents, or one idempotent and one unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.

@@ -149,7 +149,7 @@ $$
 the scalar part is $\frac{\hbar}{4}\cos(\omega_L t')$. Applying the Hermitian form, with the trace reading last,
 
 $$
-\langle\tilde{S}_x\rangle(t') = \frac{\hbar}{2}\cos(\omega_L t').
+\boxed{\;\langle\tilde{S}_x\rangle(t') = \frac{\hbar}{2}\cos(\omega_L t')\;}.
 $$
 
 ## Limiting Cases
@@ -174,7 +174,7 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 **4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{Ϛ}(t') = \frac{1}{2}(e_t + i\vec r(t'))$ with
 
 $$
-\vec r(t') = \cos(\omega_L t')\,\vec e_x - \sin(\omega_L t')\,\vec e_y.
+\boxed{\;\vec r(t') = \cos(\omega_L t')\,\vec e_x - \sin(\omega_L t')\,\vec e_y\;}.
 $$
 
 This is a **unit vector rotating** in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.

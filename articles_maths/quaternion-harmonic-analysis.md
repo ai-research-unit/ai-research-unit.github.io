@@ -115,9 +115,7 @@ $$
 
 with
 
-$$
-\|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle.
-$$
+$$ \boxed{\; \|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle \;} .$$
 
 This is the Plancherel theorem for $\mathbb{R}^4$, written in quaternion notation. The non-commutativity does not affect the $L^2$ theory, because the transform is defined by an integral against a bounded kernel.
 
@@ -125,9 +123,7 @@ This is the Plancherel theorem for $\mathbb{R}^4$, written in quaternion notatio
 
 **Theorem.** If $f \in L^1(\mathbb{H})$ and $\mathcal F f \in L^1(\mathbb{H})$, then
 
-$$
-f(\tilde q) = \int_{\mathbb{H}} (\mathcal F f)(\xi) \exp(2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)) \, d\xi
-$$
+$$ \boxed{\; f(\tilde q) = \int_{\mathbb{H}} (\mathcal F f)(\xi) \exp(2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)) \, d\xi \;} $$
 
 for almost every $\tilde q$.
 
@@ -278,9 +274,7 @@ where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^4$.
 
 **Convolution theorem.** For functions for which the quaternion Fourier transform is defined,
 
-$$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi),
-$$
+$$ \boxed{\; \widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi) \;} ,$$
 
 with the same ordering on both sides for the left-sided transform. For the two-sided transform, the statement is more complicated, because the two kernels do not commute.
 

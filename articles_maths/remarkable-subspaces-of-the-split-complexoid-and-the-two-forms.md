@@ -35,9 +35,11 @@ Both are real-valued, symmetric, non-degenerate and of **rank $1$**; the algebra
 On $j\mathbb{R}_{\mathbb{D}}$ the elements are $Q_1=jq'_1$, $Q_2=jq'_2$. The product is computed with $j^2=+1$, and the conjugation is $\overline{jq'_2}=-jq'_2$:
 
 $$
+\boxed{\;
 \langle jq'_1,jq'_2\rangle=(jq'_1)(jq'_2)=q'_1q'_2,
 \qquad
-\langle jq'_1,jq'_2\rangle_{*}=jq'_1\overline{jq'_2}=jq'_1(-jq'_2)=-q'_1q'_2 .
+\langle jq'_1,jq'_2\rangle_{*}=jq'_1\overline{jq'_2}=jq'_1(-jq'_2)=-q'_1q'_2
+\;}.
 $$
 
 The two forms no longer coincide: the bilinear form is $+q'_1q'_2$ and the Hermitian form is $-q'_1q'_2$. Both are real-valued and of rank $1$, with null set the origin, but the bilinear form is **positive definite** on the line and the Hermitian form is **negative definite**. The algebraic norms are $(q'_1)^2$ and $-(q'_1)^2$.
@@ -59,7 +61,7 @@ $$
 The Hermitian form therefore vanishes on the line:
 
 $$
-\langle \lambda\Pi_i,\mu\Pi_i\rangle_{*}=\lambda\mu\,\Pi_i\overline{\Pi_i}=\lambda\mu\,\Pi_i\Pi_{3-i}=0 ,
+\boxed{\; \langle \lambda\Pi_i,\mu\Pi_i\rangle_{*}=\lambda\mu\,\Pi_i\overline{\Pi_i}=\lambda\mu\,\Pi_i\Pi_{3-i}=0 \;},
 $$
 
 because the conjugate of an idempotent is the complementary one and the two multiply to zero. So each idempotent line is **totally isotropic** for $\langle\cdot,\cdot\rangle_{*}$: the restriction of $\langle\cdot,\cdot\rangle_{*}$ to the line is the zero form, of **rank $0$**, and its null set is the whole line. The line, which is the null cone, the zero divisors together with the origin (*Zero Divisors of the Split-Complex Algebra*, below this article in this category), is exactly the set where the Hermitian norm vanishes, $\langle \lambda\Pi_i\rangle_{*}=0$.
@@ -84,7 +86,7 @@ a non-zero element of the line for $\lambda,\mu\neq0$, so the restriction of $\l
 The algebraic norm of $\langle\cdot\rangle_{*}$ is the norm $\langle Q\rangle_{*}=q^2-q'^2$, and its level sets are the object that replaces the circles of the complex case. With $Q=q+jq'$,
 
 $$
-\langle Q\rangle_{*}=c\iff q^2-q'^2=c .
+\boxed{\; \langle Q\rangle_{*}=c\iff q^2-q'^2=c \;}.
 $$
 
 For $c>0$ this is a pair of hyperbolas with transverse axis the real line $\mathbb{R}_{\mathbb{D}}$, with vertices at $q=\sqrt c$ and $q=-\sqrt c$; for $c<0$ a pair of hyperbolas with transverse axis the split imaginary line $j\mathbb{R}_{\mathbb{D}}$; and for $c=0$ the degenerate pair of lines $q=q'$ and $q=-q'$, which are the two idempotent lines. So the **two families of hyperbolas**, one spacelike and one timelike, replace the two families of circles of the complex case, and the degenerate level $c=0$ is the null cone itself, the pair of lines on which the form is isotropic and the ring has its zero divisors.

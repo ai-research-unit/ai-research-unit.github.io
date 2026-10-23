@@ -16,8 +16,6 @@ The presentation is split three ways, as in the companions.
 
 The article is organised as follows. The next section states the equation and its three forms and proves the equivalence. A section then treats the charge-conjugation eigenstates and the ELKO companion. A section counts the independent solutions against the Dirac count. A closing section separates what the framework supplies, transcribes, and does not supply.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, $\vec e_x \vec e_y=\vec e_z$, and $i$ the scalar imaginary. The matrix realisation is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The Clifford generators are taken in the **block (chiral) basis** of the series,
-
 $$
 \gamma^{0}=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma^{k}=\begin{pmatrix}0&\sigma^{k}\\ -\sigma^{k}&0\end{pmatrix},\qquad k=1,2,3,
@@ -40,9 +38,9 @@ The Majorana equation is written in three ways, and the reason the three matter 
 The equation is
 
 $$
-i\gamma^{\mu}\partial_\mu\,\psi \;=\; m\,\psi^{c},
+\boxed{\;i\gamma^{\mu}\partial_\mu\,\psi \;=\; m\,\psi^{c},
 \qquad
-\psi^{c} \;=\; C\,\bar\psi^{T} \;=\; C\gamma^{0T}\psi^{*},
+\psi^{c} \;=\; C\,\bar\psi^{T} \;=\; C\gamma^{0T}\psi^{*}\;},
 $$
 
 with $\bar\psi=\psi^{\dagger}\gamma^{0}$. The charge-conjugation matrix, in the block basis and the mostly-minus signature, is
@@ -138,9 +136,9 @@ $$
 Then
 
 $$
-\sigma^{\mu}\bar\sigma^{\nu}+\sigma^{\nu}\bar\sigma^{\mu}=2\eta^{\mu\nu}I_2
+\boxed{\;\sigma^{\mu}\bar\sigma^{\nu}+\sigma^{\nu}\bar\sigma^{\mu}=2\eta^{\mu\nu}I_2
 \qquad\Longrightarrow\qquad
-W_RW_L \;=\; -\,\sigma^{\mu}\bar\sigma^{\nu}\partial_\mu\partial_\nu \;=\; -\,\eta^{\mu\nu}\partial_\mu\partial_\nu\,I_2 \;=\;\Box\,I_2 .
+W_RW_L \;=\; -\,\sigma^{\mu}\bar\sigma^{\nu}\partial_\mu\partial_\nu \;=\; -\,\eta^{\mu\nu}\partial_\mu\partial_\nu\,I_2 \;=\;\Box\,I_2\;}.
 $$
 
 The anticommutator identity was checked for all sixteen pairs $(\mu,\nu)$, and it is the two-component statement of the Clifford relation: the d'Alembertian is the **product** of the two Weyl operators, not the square of either alone. This is why the first-order two-component operators are called square roots of the Klein–Gordon operator, and it is the two-component counterpart of the matrix identity $(\not\partial)^{2}=-\not\partial^{2}=\Box$ used in *Klein–Gordon from the Dirac Square in Biquaternionic Form* for the four-component case. The mass term supplies the $-m^{2}$, so that the second-order equation of the self-conjugate field is the massive Klein–Gordon equation $(\Box-m^{2})\psi=0$, exactly as in the four-component case verified below.
@@ -152,9 +150,9 @@ The charge-conjugation operator is an involution on an eight-real-dimensional sp
 **The spectrum is $\{+1,-1\}$.** Since $\mathcal{C}^{2}=1$, the eigenvalues of $\mathcal{C}$ satisfy $\lambda^{2}=1$; since $\mathcal{C}$ is conjugate-linear and $K$ is real with $K^{2}=I_4$, both eigenvalues occur and the eigenspaces are the kernels of $K\psi^{*}=\pm\psi$. Solving the two linear systems in the eight real variables $(\mathrm{Re}\,\psi,\mathrm{Im}\,\psi)$ gives
 
 $$
-\dim_{\mathbb{R}}\{\psi:\psi^{c}=+\psi\}=4,
+\boxed{\;\dim_{\mathbb{R}}\{\psi:\psi^{c}=+\psi\}=4,
 \qquad
-\dim_{\mathbb{R}}\{\psi:\psi^{c}=-\psi\}=4,
+\dim_{\mathbb{R}}\{\psi:\psi^{c}=-\psi\}=4\;},
 $$
 
 and the two eigenspaces together span $\Delta$. Both were obtained by elimination and both are four-real-dimensional, as the reality of $K$ requires: an involution on a real vector space of even dimension has eigenspaces of equal dimension.
@@ -182,7 +180,7 @@ $$
 Since $(\not\partial)^{2}=g^{\mu\nu}\partial_\mu\partial_\nu=-\Box$ and $i^{2}=-1$, the left side is $\Box\psi$, so
 
 $$
-(\Box-m^{2})\psi \;=\;0 .
+\boxed{\;(\Box-m^{2})\psi \;=\;0\;}.
 $$
 
 Every solution of the Majorana equation, in either eigenspace, obeys the massive Klein–Gordon equation; the ELKO companion is on the mass shell even though it is not a Dirac solution. The two sectors differ in the first-order equation, not in the dispersion, and this is the precise sense in which ELKO "solves Klein–Gordon but not Dirac".

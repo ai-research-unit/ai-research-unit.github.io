@@ -9,8 +9,6 @@ Two things motivate the subject. First, the fixed-set theorem is the qualitative
 
 **The article assumes** the homology and cohomology with field coefficients, the Borel construction and the Serre spectral sequence from *The Leray–Serre Spectral Sequence and the Serre Classes*, the fixed-set theory of *Involutions on Manifolds and Equivariant Surgery*, and the representation theory of the cyclic group $\mathbb{Z}/p$ (*Linear Spaces*, Part I).
 
-**The boundaries of the article.** The structure of a locally linear involution and its equivariant surgery are *Involutions on Manifolds and Equivariant Surgery*; the classification of the involutions of a surface is *The Classification of Involutions on Surfaces*; the free case is *Free Involutions and Lens Spaces*; the periodic knots are *Equivariant Knot Theory*. The equivariant homotopy theory of a compact Lie group, the equivariant stable homotopy and the completions are *Stable Homotopy Theory* and the modern equivariant literature; the cobordism of group actions is *Involutions and the Cobordism of Group Actions*. The differentiable and PL refinements are Part III.
-
 ## Periodic Maps and their Fixed Sets
 
 **Definition.** A **periodic map** on a space $X$ is a homeomorphism $g$ of finite order; when the order is a prime $p$ the group is $\mathbb{Z}/p$ and the map is a **$\mathbb{Z}/p$-action**. The **fixed set** is $F = X^{\mathbb{Z}/p} = \{x : gx = x\}$, and $X$ is a **mod $p$ homology $n$-sphere** if $H_*(X;\mathbb{F}_p)\cong H_*(S^n;\mathbb{F}_p)$.

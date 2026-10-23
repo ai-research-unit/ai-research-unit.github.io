@@ -6,10 +6,6 @@ The general quaternionic bilinear form of the biquaternion algebra, $\langle\til
 
 The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the remarkable subspaces — and of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; and the classical groups that act are *Lie Groups*.
 
-**Scope.** The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, the automorphism group of the complex quadric, and the complement of the quadric, which is the Lorentz group. No physics is invoked and no new result about the algebra is claimed.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\sum_\mu Q_{1,\mu} Q_{2,\mu}$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.
-
 ## The Segre Embedding
 
 Choose on $\mathbb{B}$ the linear coordinates
@@ -97,7 +93,7 @@ $$
 whose image is the **Klein quadric**, the quadric hypersurface of dimension $4$ cut out by the Plücker relation
 
 $$
-p_{01}p_{23}-p_{02}p_{13}+p_{03}p_{12}=0 .
+\boxed{\;p_{01}p_{23}-p_{02}p_{13}+p_{03}p_{12}=0\;}.
 $$
 
 Over $\mathbb{R}$ the Plücker form has signature $(3,3)$. This Klein quadric in $\mathbb{P}^5$ is distinct from the null quadric $Q^2$ in $\mathbb{P}^3$: it is the variety of lines of the projective space in which $Q^2$ sits.
@@ -131,7 +127,7 @@ in which case the two points lie on a common ruling line. A line through $[\tild
 The projective automorphisms of $Q^2$ are induced by the complex orthogonal group of the form:
 
 $$
-\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})=O_4(\mathbb{C})/\{\pm I\},
+\boxed{\;\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})=O_4(\mathbb{C})/\{\pm I\}\;},
 $$
 
 acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, with the $\mathbb{Z}/2$ exchanging the rulings. Its identity component $PSO_4(\mathbb{C})$ preserves each ruling; the outer component swaps them. The Lorentz group is not the whole of this group: $SO^+(1,3)$ is the conformal group of the projective null cone $S^2$ of the Lorentzian real form, and it acts on $Q^2$ as the three-complex-dimensional subgroup of left multiplications, not as the full automorphism group.
@@ -141,7 +137,7 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 The quadric and its complement exhaust the projective space. The condition $\langle\tilde Q\rangle_{\natural}=0$ is homogeneous of degree two, so it descends to $\mathbb{P}^3=\mathbb{P}(\mathbb{B})$, and the complement is the set of the classes of the units,
 
 $$
-\mathbb{P}^3\setminus Q^2=\{[\tilde Q]\in\mathbb{P}^3:\langle\tilde Q\rangle_{\natural}\neq0\}=\mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL(2,\mathbb{C}).
+\boxed{\;\mathbb{P}^3\setminus Q^2=\{[\tilde Q]\in\mathbb{P}^3:\langle\tilde Q\rangle_{\natural}\neq0\}=\mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL(2,\mathbb{C})\;}.
 $$
 
 Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, a class is an invertible matrix up to a nonzero scalar, and the multiplication of classes is the multiplication of matrices up to scalars. Every nonzero complex number is a square, so every class has a representative of determinant one, and

@@ -65,8 +65,7 @@ the least $n$ with $g(\bar n, n) = 0$, is partial recursive; the search diverges
 
 **Theorem (Kleene normal form).** There is a primitive recursive predicate $T(e, n, s)$ and a primitive recursive function $U$ such that
 
-$$
-\varphi_e(n) \simeq U(\mu s\, T(e, n, s)),
+$$ \boxed{\;\varphi_e(n) \simeq U(\mu s\, T(e, n, s))\;},
 $$
 
 where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(n)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,n) = \varphi_e(n)$ being partial recursive and not total.
@@ -77,8 +76,7 @@ where $\simeq$ means equality of partial functions and the search diverges exact
 
 **Theorem (Kleene recursion theorem).** For every total computable function $f : \mathbb{N} \to \mathbb{N}$ there is an index $e$ with
 
-$$
-\varphi_e = \varphi_{f(e)} .
+$$ \boxed{\;\varphi_e = \varphi_{f(e)} \;}.
 $$
 
 **Proof.** By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\varphi_{s(e)}(n) = \varphi_e(e,n)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\varphi_v(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then
@@ -161,8 +159,7 @@ would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e
 
 **Theorem (Matiyasevich, after Davis–Putnam–Robinson).** A set $A \subseteq \mathbb{N}$ is c.e. if and only if it is **Diophantine**: there is a polynomial $P(n, m_1, \dots, m_k)$ with integer coefficients such that
 
-$$
-n \in A \iff \exists m_1 \cdots \exists m_k \in \mathbb{N}\ P(n, m_1, \dots, m_k) = 0 .
+$$ \boxed{\;n \in A \iff \exists m_1 \cdots \exists m_k \in \mathbb{N}\ P(n, m_1, \dots, m_k) = 0 \;}.
 $$
 
 **Proof.** A Diophantine set is c.e. by searching for the witnesses. The converse, the MRDP theorem, is proved by showing that every c.e. set is Diophantine and then eliminating the bounded universal quantifier by a coding trick of Davis–Putnam–Robinson; the argument is in the references.

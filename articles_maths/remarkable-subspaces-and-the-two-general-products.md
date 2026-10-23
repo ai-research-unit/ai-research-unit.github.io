@@ -6,8 +6,6 @@ The quaternion algebra $\mathbb{H}$ carries two **remarkable subspaces**, the **
 
 The products themselves, their laws and their coordinate rules are *The Two General Products of the Quaternioid $\mathbb{R}$ Space*; the two subspaces, their bases and their dimensions are *Introduction to the Remarkable Subspaces of the Quaternions*, in the Linear Spaces group above. None of that is restated here: what the article adds is the reading of the two products on the two subspaces and the table of the restrictions. The symmetric and antisymmetric halves of the products, which are what makes the vector product the cross product and its twin, are *The 6 Products of the Quaternioid Real Space*, below this article in this category; the restriction of the two forms to the same subspaces is *Remarkable Subspaces and the Two Forms*, below this article in this category.
 
-**Conventions.** Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, with $\vec q_1,\vec q_2$ the vector parts; the scalar line is $\mathbb{R}_{\mathbb{H}}=\{q_te_t:q_t\in\mathbb{R}\}$, identified with $\mathbb{R}$, and the vector subspace is $\operatorname{Vect}(\mathbb{H})=\{\vec q\}$, of basis $\vec e_x,\vec e_y,\vec e_z$. The plain product is $\tilde q_1\tilde q_2$, the quaternionic product is $\tilde q_1^{\natural}\tilde q_2$, the dot product is $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ and the cross product is $\vec q_1\times\vec q_2$. The quaternion norm is $\langle\tilde q\rangle_{\natural}=|\tilde q|^2=\tilde q^{\natural}\tilde q$.
-
 ## The Product of Two Vector Elements
 
 The product of two vector elements is the sharpest single computation of the article, and it is where the cross product enters the products of the algebra.
@@ -15,7 +13,7 @@ The product of two vector elements is the sharpest single computation of the art
 **Proposition (the vector products).** For purely vector elements $\tilde q_1=\vec q_1$ and $\tilde q_2=\vec q_2$,
 
 $$
-\vec q_1\vec q_2=-(\vec q_1,\vec q_2)+\vec q_1\times\vec q_2 , \qquad \vec q_1^{\natural}\vec q_2=+(\vec q_1,\vec q_2)-\vec q_1\times\vec q_2 .
+\boxed{\;\vec q_1\vec q_2=-(\vec q_1,\vec q_2)+\vec q_1\times\vec q_2 , \qquad \vec q_1^{\natural}\vec q_2=+(\vec q_1,\vec q_2)-\vec q_1\times\vec q_2\;}.
 $$
 
 The plain product of two vectors is the scalar $-(\vec q_1,\vec q_2)$ together with the vector $\vec q_1\times\vec q_2$; the quaternionic product of the same two vectors is the same rule with the two signs reversed, being $-\vec q_1\vec q_2$ because the conjugation of a vector is its negative.
@@ -46,7 +44,7 @@ The scalar part of the product of two vectors is $\mp(\vec q_1,\vec q_2)$, so th
 **Corollary (the perpendicular case).** For perpendicular vector elements $\vec q_1\perp\vec q_2$, that is $(\vec q_1,\vec q_2)=0$,
 
 $$
-\vec q_1\vec q_2=\vec q_1\times\vec q_2\in\operatorname{Vect}(\mathbb{H}) , \qquad \vec q_1^{\natural}\vec q_2=-\vec q_1\times\vec q_2\in\operatorname{Vect}(\mathbb{H}) .
+\boxed{\;\vec q_1\vec q_2=\vec q_1\times\vec q_2\in\operatorname{Vect}(\mathbb{H}) , \qquad \vec q_1^{\natural}\vec q_2=-\vec q_1\times\vec q_2\in\operatorname{Vect}(\mathbb{H})\;}.
 $$
 
 The subspace of the algebra spanned by two perpendicular vectors is closed under neither product as a plane, the product of its two generators being orthogonal to both.

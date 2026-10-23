@@ -7,8 +7,6 @@ This article collects explicit computations in the split-quaternion algebra $\ma
 
 The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of *Split-Quaternion Algebra*, *Split-Quaternion Idempotents and Projections*, *Split-Quaternion Zero Divisors*, *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
-**Conventions.** A split-quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $q_t, q_x, q_y, q_z \in \mathbb{R}$ and the products $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$, $\vec e_x \vec e_y = -\vec e_y \vec e_x$. Its conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and its central product is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$ are the standard idempotents.
-
 ## The Basis Products
 
 The multiplication table, whose entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$, is
@@ -37,11 +35,13 @@ $$
 The product is associative and distributive, so the multiplication table of the four basis elements determines it completely; the table is collected in the summary. The products of the vector basis elements are
 
 $$
+\boxed{\;
 \vec e_x^2 = -1, \quad \vec e_y^2 = 1, \quad \vec e_z^2 = 1, \qquad
 \vec e_x \vec e_y = \vec e_z, \quad \vec e_y \vec e_x = -\vec e_z, \qquad
 \vec e_x \vec e_z = -\vec e_y, \quad \vec e_z \vec e_x = \vec e_y, \qquad
-\vec e_y \vec e_z = -\vec e_x, \quad \vec e_z \vec e_y = \vec e_x .
-$$
+\vec e_y \vec e_z = -\vec e_x, \quad \vec e_z \vec e_y = \vec e_x
+\;}
+$$.
 
 **Example.** For $\tilde q = 2 + \vec e_x$ and $\tilde p = 1 + \vec e_y + \vec e_z$, the table gives
 
@@ -102,8 +102,10 @@ $$
 and $\tilde\pi_2^2 = \tilde\pi_2$ likewise. Moreover
 
 $$
-\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - \vec e_y^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad \langle\tilde\pi_1\rangle_{\natural} = \langle\tilde\pi_2\rangle_{\natural} = 0 .
-$$
+\boxed{\;
+\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - \vec e_y^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad \langle\tilde\pi_1\rangle_{\natural} = \langle\tilde\pi_2\rangle_{\natural} = 0
+\;}
+$$.
 
 They are not central, since $\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac{1}{2}(\vec e_x - \vec e_z)$.
 
@@ -156,9 +158,11 @@ a pair in which neither factor is a nilpotent.
 **Example (a unit of positive norm).** For $\tilde q = 2 + \vec e_x$, the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = 4 + 1 = 5$, and
 
 $$
+\boxed{\;
 \tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{2 - \vec e_x}{5}, \qquad
-(2 + \vec e_x)\frac{2 - \vec e_x}{5} = \frac{4 - \vec e_x^2}{5} = \frac{5}{5} = 1 .
-$$
+(2 + \vec e_x)\frac{2 - \vec e_x}{5} = \frac{4 - \vec e_x^2}{5} = \frac{5}{5} = 1
+\;}
+$$.
 
 **Example (a unit of norm one).** For $\tilde p = 1 + \vec e_x + \vec e_y$, the split-quaternion norm is $\langle\tilde p\rangle_{\natural} = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - \vec e_x - \vec e_y$; indeed $\tilde p \tilde p^{\natural} = (1+\vec e_x+\vec e_y)(1-\vec e_x-\vec e_y) = 1$. Since $\langle\tilde p\rangle_{\natural} = 1$, the element is a unit split-quaternion.
 

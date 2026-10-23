@@ -6,8 +6,6 @@ The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension eight,
 
 The topology itself — the definitions, the equivalence of norms and the uniqueness of the topology in finite dimension — is built in *Topology in the Space of Biquaternions*. The group of units as a topological group is *The Biquaternion Unit Group as a Topological Group*; the zero divisors, the singular cone and its projective geometry are *The Null Quadric and Its Projective Geometry*; and the matrix reading of the Euclidean norm is *The Matrix Element Representation and the Biquaternion Dynamics*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, and a general element $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The Euclidean norm is the coordinate norm $\|\tilde{Q}\|_E=\bigl(\sum_\mu|Q_\mu|^{2}\bigr)^{1/2}$.
-
 ## The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$
 
 The Euclidean structure is read from the coefficients. Write $\tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ and introduce the real inner product

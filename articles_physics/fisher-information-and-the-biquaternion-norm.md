@@ -139,7 +139,7 @@ $$
 Since $\lambda_+\lambda_- = \tfrac{1}{4}(1-r^2)$, this collapses to
 
 $$
-\boxed{\;F_r(r) = \frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}.\;}
+\boxed{\;F_r(r) = \frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\;}.
 $$
 
 **The Fisher information of the spectral family is the reciprocal of the biquaternion norm.** This is the central identity of the article, and it is a statement about the algebra: the denominator $1-r^2$ is the scalar part of the biquaternion norm of the state, read from $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-r^2)e_t$, so the whole expression is a function of the state's quadratic invariant. The evaluation is elementary and was checked on the interior superposition $\tilde{Ϛ} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$, where $r^2 = \tfrac{1}{2}$, $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{8}e_t$, and both sides give $2$.
@@ -149,9 +149,9 @@ $$
 The spectral distribution depends on the Bloch vector only through its length, so the information matrix of the family labelled by $\vec r$ is obtained by the chain rule. With $\partial/\partial r_i r = \vec{u_r}_i$ one has $\partial/\partial r_i p_\pm = \pm\tfrac{1}{2}\vec{u_r}_i$, and therefore
 
 $$
-g_{ij}(\vec r) = \sum_\pm \frac{\partial/\partial r_i p_\pm\,\partial/\partial r_j p_\pm}{p_\pm}
+\boxed{\;g_{ij}(\vec r) = \sum_\pm \frac{\partial/\partial r_i p_\pm\,\partial/\partial r_j p_\pm}{p_\pm}
 = \frac{\vec{u_r}_i\vec{u_r}_j}{1-r^2}
-= \frac{\vec{u_r}_i\vec{u_r}_j}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}} .
+= \frac{\vec{u_r}_i\vec{u_r}_j}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\;}.
 $$
 
 The metric is **rank one**: it is the outer product of the radial unit vector with itself, scaled by the reciprocal of the biquaternion norm. Its single nonzero eigenvalue is
@@ -183,8 +183,8 @@ $$
 and the chain rule gives
 
 $$
-F(\theta) = \sum_\pm \frac{\left(\partial/\partial\theta p_\pm\right)^2}{p_\pm}
-= \frac{\left(\vec u\cdot\,d\vec r/d\theta\right)^2}{1-\left(\vec u\cdot\vec r\right)^2} ,
+\boxed{\;F(\theta) = \sum_\pm \frac{\left(\partial/\partial\theta p_\pm\right)^2}{p_\pm}
+= \frac{\left(\vec u\cdot\,d\vec r/d\theta\right)^2}{1-\left(\vec u\cdot\vec r\right)^2}\;},
 $$
 
 which is the general classical Fisher information of a binary measurement on a qubit state. Two specialisations are worth recording. If the path is radial and the measurement is along the state, so that $\vec u = \vec u_r$, the result reduces to $F = \left(dr/d\theta\right)^{2}/(1-r^2)$, whose metric coefficient is the rank-one result above. If the measurement axis is orthogonal to the state and to its tangent, the information vanishes: the outcome distribution is uniform, and no parameter can be read from it.
@@ -286,7 +286,7 @@ A state of the informational sector is $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$,
 The **Fisher information of the spectral family** — the classical two-outcome distribution formed by the state's eigenvalues $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ — is
 
 $$
-F_r = \frac{1}{1-|\vec r|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}},
+\boxed{\;F_r = \frac{1}{1-|\vec r|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\;},
 $$
 
 **the reciprocal of the biquaternion norm.** In three dimensions the information metric of the family is the rank-one form

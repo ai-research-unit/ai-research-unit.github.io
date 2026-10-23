@@ -33,31 +33,6 @@ genuine boundary case is the antisymmetric quaternionic product, whose bracket i
 which fails the Jacobi identity; it is *The Jacobi Failure and the Associator Defect of the
 Antisymmetric Quaternionic Algebra*, and it is stated here only as the boundary of the criterion.
 
-**Placement.** The article is the closing entry of the *Specific Theory* section of the block, after
-*The Lie Algebra of the Antisymmetric Plain Algebra* and after the six Common Theory articles
-*Introduction to the Antisymmetric Plain Algebra*, *Norm and Invertibility in the
-Antisymmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of
-One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero and the
-Nilpotents of the Antisymmetric Plain Algebra* and *Square Roots of a General Element in the
-Antisymmetric Plain Algebra*, whose results it reads back as consequences of one law. It is
-the twin of *The Specificities of the Symmetric Plain Algebra*, which states commutativity with the
-Jordan identity as the criterion of the other half of the plain product and proves that the
-symmetric plain product alone satisfies it; the two halves of the plain product are the two unique
-structures of the twelve, the symmetric plain algebra the only Jordan product and the antisymmetric
-plain algebra the only Lie product.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
-$e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The product written $\star$ is
-a generic one, its identity stated at each use. The **left multiplication** of a product $\star$ by
-$\tilde Q_1$ is $L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2$, and the **adjoint map** is
-$\mathrm{ad}^{\star}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1$, so that for an
-alternating product $\mathrm{ad}^{\star}_{\tilde Q_1}=2L^{\star}_{\tilde Q_1}$. The twelve structures are
-coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*: the code has
-three letters, the first $\mathrm G$, $\mathrm S$ or $\mathrm A$ for the general product or its
-symmetrisation or antisymmetrisation, the second $\mathrm P$ or $\mathrm Q$ for the plain or the
-quaternionic row, and the third $\mathrm A$ or $\mathrm S$ for the algebra or sesqualgebra class,
-as in $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$.
-
 ## The Criterion
 
 **Definition (the Leibniz identity).** Let $\star$ be a product on $\mathbb{B}$. The product
@@ -101,9 +76,11 @@ on triples of the units.
 and satisfies the Jacobi identity, so it satisfies the Leibniz identity: every left multiplication
 of the block is a derivation,
 $$
+\boxed{\;
 L_{\tilde Q_1}(\tilde Q_2\wedge\tilde Q_3)=(L_{\tilde Q_1}\tilde Q_2)\wedge\tilde Q_3
 +\tilde Q_2\wedge(L_{\tilde Q_1}\tilde Q_3),\qquad
-L_{\tilde Q_1}\tilde Q_2=\tilde Q_1\wedge\tilde Q_2 .
+L_{\tilde Q_1}\tilde Q_2=\tilde Q_1\wedge\tilde Q_2
+\;}.
 $$
 
 *Proof.* The alternation and the Jacobi identity are *Introduction to the Antisymmetric Plain
@@ -116,19 +93,19 @@ associativity to the block.
 ## The Operator Identity and the Adjoint Representation
 
 **Proposition (the adjoint reading).** For an alternating product $\star$ and every $\tilde Q_1$,
-$$
-\mathrm{ad}^{\star}_{\tilde Q_1}=2L^{\star}_{\tilde Q_1},
-$$
+$$ \boxed{\; \mathrm{ad}^{\star}_{\tilde Q_1}=2L^{\star}_{\tilde Q_1} \;}, $$
 so the Leibniz identity is the statement that the adjoint maps of $\star$ are derivations of
 $\star$; for the block this is the statement that the left multiplications, which are the adjoint
 maps of the block's own bracket, form a representation of the bracket by derivations,
 $$
+\boxed{\;
 \mathrm{ad}^{\wedge}_{\tilde Q_1\wedge\tilde Q_2}=[\mathrm{ad}^{\wedge}_{\tilde Q_1},\mathrm{ad}^{\wedge}_{\tilde Q_2}],
 \qquad
 \mathrm{ad}^{\wedge}_{\tilde Q_1}(\tilde Q_2\wedge\tilde Q_3)
 =\mathrm{ad}^{\wedge}_{\tilde Q_1}\tilde Q_2\wedge\tilde Q_3+\tilde Q_2\wedge\mathrm{ad}^{\wedge}_{\tilde Q_1}\tilde Q_3 ,
 \qquad
-\mathrm{ad}^{\wedge}_{\tilde Q_1}=L_{\tilde Q_1}=\tilde Q_1\wedge\cdot .
+\mathrm{ad}^{\wedge}_{\tilde Q_1}=L_{\tilde Q_1}=\tilde Q_1\wedge\cdot
+\;}.
 $$
 
 *Proof.* For an alternating product the adjoint is twice the left multiplication,

@@ -12,8 +12,6 @@ One word on the two scalar rules, because they are weaker than they look. They a
 
 The general theory is the sesquilinear block: the definition and the standard example are *Sesqualgebras*, the calculus of the product is *The Sesquilinear Product*, the semilinear maps and the conjugate module are *Conjugate-Linear Maps and the Conjugate Dual*, the associator and the ternary product are *The Sesquilinear Associator and the Ternary Product*, the abstract ternary system is *Algebraic J\*-Algebras*, the two halves of an involutive algebra are *Hermitian and Skew-Hermitian Elements*, the squares are *Hermitian Squares and the Algebraic Positive Cone*, and the ideals are *Ideals and Quotients of a Sesqualgebra*. On the biquaternion side, the two-sided ideals of the algebra and the simplicity of the ring are *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the idempotents are *Idempotents of the General Plain Algebra*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_te_t + \vec Q$ with $\vec Q = \sum_{\mu\in\{x,y,z\}} Q_\mu\vec e_\mu$, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part. The base involution is the complex conjugation, written $\varsigma(z) = \bar z$, and the involution of the algebra is the Hermitian conjugation ${}^{*} = \bar{\cdot} \circ {}^{\natural}$, with the coordinates $Q^{*}_t = \overline{Q_t}$ and $Q^{*}_\mu = -\overline{Q_\mu}$ for $\mu\in\{x,y,z\}$, that is $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The four general products and their notation are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
-
 ## The Product Read as a Multiplication
 
 ### The Rule
@@ -83,7 +81,7 @@ The table is not the quaternion table. Its diagonal is $e_t$ throughout, the thr
 **Theorem.** Let $\mathbb{B}$ be read as the associative $\mathbb{C}$-algebra with its conjugate-linear involution ${}^{*}$. Then the general plain sesquilinear product is the **derived operation** of that pair,
 
 $$
-\tilde Q_1 \star \tilde Q_2 = \tilde Q_1\tilde Q_2^{*} ,
+\boxed{\;\tilde Q_1 \star \tilde Q_2 = \tilde Q_1\tilde Q_2^{*}\;},
 $$
 
 in the sense of *Sesqualgebras*: the multiplication of the algebra with the involution inserted in the second slot.
@@ -146,7 +144,7 @@ The associator vanishes exactly when the two groupings agree, that is when the p
 **Proposition.** The involution reverses the multiplication:
 
 $$
-(\tilde Q_1 \star \tilde Q_2)^{*} = \tilde Q_2 \star \tilde Q_1 .
+\boxed{\;(\tilde Q_1 \star \tilde Q_2)^{*} = \tilde Q_2 \star \tilde Q_1\;}.
 $$
 
 **Proof.** $(\tilde Q_1\tilde Q_2^{*})^{*} = \tilde Q_2\tilde Q_1^{*} = \tilde Q_2 \star \tilde Q_1$, using $*^{2} = \mathrm{id}$ and the anti-multiplicativity of ${}^{*}$.
@@ -193,7 +191,7 @@ the first central and the second vector-valued. The two readings are the conjuga
 **Theorem.** The ternary product attached to the multiplication is
 
 $$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = (\tilde Q_1 \star \tilde Q_2) \star \tilde Q_3^{*} = \tilde Q_1\tilde Q_2^{*}\tilde Q_3 ,
+\boxed{\;\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = (\tilde Q_1 \star \tilde Q_2) \star \tilde Q_3^{*} = \tilde Q_1\tilde Q_2^{*}\tilde Q_3\;},
 $$
 
 and $\mathbb{B}$ with this ternary product is an **algebraic $J^{*}$-algebra**: the operation is additive in each variable, $\mathbb{C}$-linear in the first and the third and conjugate-linear in the second, and satisfies the Jordan triple identity (*Algebraic J\*-Algebras*).

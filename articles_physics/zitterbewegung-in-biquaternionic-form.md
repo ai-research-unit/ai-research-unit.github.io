@@ -42,7 +42,7 @@ $$
 in which the first term is the constant drift velocity and the second is the *trembling* term. Its phase evolves as $\exp(\pm 2iEt')$ on the two energy branches, so the angular frequency is $2E/\hbar$, and integrating once gives the position
 
 $$
-x^k(t') = x^k(0) + \frac{c^2p_k}{H}\,t' \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t'/\hbar)-1\Big)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big).
+\boxed{\;x^k(t') = x^k(0) + \frac{c^2p_k}{H}\,t' \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t'/\hbar)-1\Big)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\;}.
 $$
 
 At rest, $H = \beta mc^2$ and the oscillating term has frequency $2mc^2/\hbar$ and amplitude of order $\hbar/(2mc)$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEt'/\hbar)$ and a negative-frequency component $\exp(+iEt'/\hbar)$ beat at $2E/\hbar$, and the trembling term is exactly that beat.
@@ -103,7 +103,7 @@ satisfying $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(
 The operator identity for the Heisenberg velocity is the exact statement
 
 $$
-\alpha^k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar),
+\boxed{\;\alpha^k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar)\;},
 $$
 
 in which $cp_k/H$ denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is a matrix. Because $H$ anticommutes with $\alpha^k - cp_k/H$, the oscillating factor evolves on each energy eigenspace as $\exp(\pm 2iEt'/\hbar)$.
@@ -113,8 +113,8 @@ The identity was checked by direct matrix computation on a case chosen here rath
 The frequency is $2E/\hbar$ on general grounds and $2mc^2/\hbar$ at rest. The numbers for the electron, $m_ec^2 = 0.510998950$ MeV and $\hbar = 6.582119569\times10^{-22}$ MeV s, are
 
 $$
-\omega_Z^{\text{rest}} = \frac{2m_ec^2}{\hbar} = 1.55269\times10^{21}\ \text{rad s}^{-1},
-\qquad f_Z = \frac{\omega_Z}{2\pi} = 2.47118\times10^{20}\ \text{Hz},
+\boxed{\;\omega_Z^{\text{rest}} = \frac{2m_ec^2}{\hbar} = 1.55269\times10^{21}\ \text{rad s}^{-1},
+\qquad f_Z = \frac{\omega_Z}{2\pi} = 2.47118\times10^{20}\ \text{Hz}\;},
 $$
 
 which is the standard value. On a relativistic case chosen independently, with Lorentz factor $2$ so $E = 2mc^2$, the formula gives $2E/\hbar = 4m_ec^2/\hbar = 3.10538\times10^{21}\ \text{rad s}^{-1}$ — twice the rest value, as the formula requires and as the rest case alone would not reveal. The oscillation amplitude is $\hbar/(2mc)$, which for the electron is $193.1$ fm, half the reduced Compton wavelength $386.2$ fm. Both the frequency and the amplitude are the standard ones; the biquaternion notation reproduces them without alteration.

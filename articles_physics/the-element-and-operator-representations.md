@@ -84,8 +84,8 @@ The four-vector is a coordinate list of an element of the algebra. It is **not**
 The isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is written on the Pauli matrices,
 
 $$
-\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\bigl(Q_x\sigma_x+Q_y\sigma_y+Q_z\sigma_z\bigr)
-=\begin{pmatrix}Q_t-iQ_z & -iQ_x-Q_y\\ -iQ_x+Q_y & Q_t+iQ_z\end{pmatrix}.
+\boxed{\;\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\bigl(Q_x\sigma_x+Q_y\sigma_y+Q_z\sigma_z\bigr)
+=\begin{pmatrix}Q_t-iQ_z & -iQ_x-Q_y\\ -iQ_x+Q_y & Q_t+iQ_z\end{pmatrix}\;}.
 $$
 
 The two matrix invariants are the two physical invariants of the element:
@@ -132,7 +132,7 @@ $$
 It is linear in the argument $X$ and quadratic in the parameter $\tilde Q$. In the $2\times2$ picture it is the congruence $X\mapsto M X M^{\dagger}$; in the $4\times4$ picture it is the product of the two regular maps,
 
 $$
-\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\,\mathsf{M}_4^{R}(\tilde Q^{*}).
+\boxed{\;\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\,\mathsf{M}_4^{R}(\tilde Q^{*})\;}.
 $$
 
 The sandwich is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but it is not linear, and on the unit group it is not faithful: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, so every central phase of modulus one gives the same operator. It is a quadratic map that descends to a faithful representation of the unit group modulo its central phase circle, not a linear one.
@@ -160,7 +160,7 @@ $$
 and therefore
 
 $$
-\det\operatorname{H}_{\tilde Q}=|N|^4, \qquad \operatorname{Tr}\operatorname{H}_{\tilde Q}=4|Q_t|^2, \qquad \operatorname{rank}\operatorname{H}_{\tilde Q}=\bigl(\operatorname{rank}\mathsf{M}_2(\tilde Q)\bigr)^2.
+\boxed{\;\det\operatorname{H}_{\tilde Q}=|N|^4, \qquad \operatorname{Tr}\operatorname{H}_{\tilde Q}=4|Q_t|^2, \qquad \operatorname{rank}\operatorname{H}_{\tilde Q}=\bigl(\operatorname{rank}\mathsf{M}_2(\tilde Q)\bigr)^2\;}.
 $$
 
 The invariants are real and non-negative for every element, and they are not the invariants of the element matrix: the element matrix has complex determinant $N^2$ and complex trace $4Q_t$, while the operator has thrown the phase away. The operator is invertible exactly off the cone, has rank four there and rank one on it, and is zero only at zero.

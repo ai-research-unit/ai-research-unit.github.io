@@ -14,10 +14,6 @@ the symmetric quaternionic algebraic norm, complex-valued, indefinite and **not*
 
 The invertibility is where the article records an **absence**. The block has **no left unit, no right unit and no two-sided unit**, so no element is invertible of the block and the block has no group of units. The one object it carries is the dichotomy of its algebraic norm, the non-isotropic class $N\neq0$ and the isotropic cone $\langle\cdot\rangle_{\natural}=0$, and the article records that this dichotomy is the analogue of a group of units without being one: the non-isotropic class coincides with the invertible set of the **plain** product, and it is not closed under the product of the block.
 
-**Boundaries.** The general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*; the definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*. The isotropic cone of the block is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the form read as the multiplication of the block is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the group of linear maps preserving the form and its Lie algebra are *The Multiplication Operators of the Symmetric Quaternionic Algebra*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and $(\vec Q_1,\vec Q_2)=\sum_{k\in\{x,y,z\}}Q_{1,k}Q_{2,k}$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$. The **symmetric quaternionic multiplication** is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)\,e_t$, with $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$; it is written $\bullet$ in the Specific Theory and Operators entries of the block. Its diagonal is the algebraic norm of the block, $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$.
-
 **The results.** The block carries exactly one algebraic norm, the diagonal of its scalar-part form, $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, complex-valued, indefinite, of Gram matrix the identity on $e_t,\vec e_x,\vec e_y,\vec e_z$ and radical $\{0\}$. It is the multiplicative form of the plain product, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ with $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, but it is **not** multiplicative for the block, where $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$. The block has no left unit, no right unit and no two-sided unit, hence no inverse and no group of units. The non-isotropic class $\langle\cdot\rangle_{\natural}\neq0$ is exactly the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 
 ## The General Definitions
@@ -50,9 +46,7 @@ which is the general quaternionic bilinear form of *The 4 Forms over the Biquate
 
 **Theorem (the algebraic norm is the multiplicative form of the plain product).** The algebraic norm of the block satisfies
 
-$$
-\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural},\qquad \langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
-$$
+$$ \boxed{\; \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural},\qquad \langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural} \;}, $$
 
 the second identity being the multiplicativity of the form for the **plain** product, not for the block; and the product of the block is the polarisation read on the central line,
 
@@ -66,9 +60,7 @@ $$
 
 **Proposition (the algebraic norm is not multiplicative for the block).** For the product of the block,
 
-$$
-\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2,\qquad\text{which differs in general from } \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}.
-$$
+$$ \boxed{\; \langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2,\qquad\text{which differs in general from } \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural} \;}. $$
 
 At $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y$ the first is $0$ because $\langle \vec e_x,\vec e_y\rangle_{\natural}=0$, while the second is $1$.
 
@@ -118,9 +110,7 @@ The absence is total and is not repaired by a change of element: it is the absen
 
 **Theorem (the non-isotropic class is the unit class of the plain product).** The non-isotropic elements of the block are precisely the invertible elements of the **plain** product: $\tilde Q$ is a unit of the plain product exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its inverse of that product is
 
-$$
-\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} .
-$$
+$$ \boxed{\; \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} \;}. $$
 
 *Proof.* The plain product has the unit $e_t$ and the identity $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$; for $\langle\tilde Q\rangle_{\natural}\neq0$ the displayed element is a two-sided inverse, and for $\langle\tilde Q\rangle_{\natural}=0$ with $\tilde Q\neq0$ the equation $\tilde Q\tilde Q_1=e_t$ has no solution, the plain product being the multiplication of an algebra with zero divisors. The statement is a statement about the **plain** product read through the form $\langle\cdot,\cdot\rangle_{\natural}$; it is not an invertibility of the block, which has none.
 

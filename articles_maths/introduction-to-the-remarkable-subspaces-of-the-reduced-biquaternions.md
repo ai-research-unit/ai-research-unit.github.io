@@ -16,8 +16,6 @@ The bar and the tessarine sign are the two generators, and the star is their com
 
 **The character of each space.** The six spaces are the sums of the pairs of real lines, and the fourth *character* relation organises them: a space defined by one involution is the sum of the two lines on which that involution has the same sign, and the **Hermitian** subspace is the one fixed by the star while the **anti-Hermitian** is the one negated. On the Hermitian subspace the algebraic norm is positive, $N=a^{2}+b^{2}$, and on the anti-Hermitian it is negative, $N=-(a^{2}+b^{2})$; on the idempotent lines the norm vanishes, and the lines are the zero divisors.
 
-**Boundaries.** The involutions and their fixed spaces are *The Two Involutions and the Group of Involutions of the Reduced Biquaternions*; the bases and the two scalar systems are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*; the idempotents are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*. The norms are those of *The Four Products, Their Forms and Their Algebraic Norms*, and the two sesquilinear forms of the star are *The Forms of the Algebra of the Reduced Biquaternions*. The spaces as subalgebras and their closure under the product are *Decompositions Along the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, below this article in this category; the general biquaternion list is *Introduction to the Remarkable Subspaces* of the biquaternion category, and the complex split-quaternion list is *Remarkable Subspaces of the Split-Complexoid and the Two Forms*.
-
 ## The Three Involutions and Their Spaces
 
 ### The Fixed and Anti-Fixed Space of an Involution

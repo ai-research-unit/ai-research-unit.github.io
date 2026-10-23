@@ -27,11 +27,11 @@ The programme writes the same field as the dual $-i\tilde F = \sqrt{\epsilon}\,\
 The symmetrized Maxwell system for this object is one complex equation and one complex scalar equation,
 
 $$
-\partial_\tau \tilde F + i\,\mathrm{rot}\,\tilde F + i\,\vec J = 0,
+\boxed{\;\partial_\tau \tilde F + i\,\mathrm{rot}\,\tilde F + i\,\vec J = 0,
 \qquad
 \rho = -i\,\mathrm{div}\,\tilde F = \frac{\rho_E}{\sqrt{\epsilon}} - i\,\frac{\rho_H}{\sqrt{\mu}},
 \qquad
-\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H .
+\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H\;}
 $$
 
 Here $\rho_E = \epsilon\,\mathrm{div}\,\vec E$ and $\rho_H = -\mu\,\mathrm{div}\,\vec H$ are the electric and magnetic charge densities, and $\vec j_E$, $\vec j_H$ the corresponding currents. This is the corpus's Maxwell content in the source's sign convention: the corpus writes $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$, and the present equation is the same pair with the combined current $\vec J$ and the source's overall sign. The two conventions must not be mixed.
@@ -108,9 +108,9 @@ From the free-field and interaction equations the programme builds a law structu
 In the absence of other fields the force vanishes, and the interaction equation reduces to the inertia equation
 
 $$
-D^-\tilde J_{\mathrm{eg}} = (\partial_\tau - i\nabla)\,\tilde J_{\mathrm{eg}} = 0,
+\boxed{\;D^-\tilde J_{\mathrm{eg}} = (\partial_\tau - i\nabla)\,\tilde J_{\mathrm{eg}} = 0,
 \qquad
-\tilde J_{\mathrm{eg}} = i\rho + \vec J .
+\tilde J_{\mathrm{eg}} = i\rho + \vec J\;}
 $$
 The subscript marks the programme's own charge–current; it is not the corpus four-current $\tilde J$.
 
@@ -151,9 +151,9 @@ The source also writes the free charge–current as a **spinor**, $\tilde J_{\ma
 A field's charge–current is changed by the field of the other charges, in the direction of the power–force biquaternion. The proposed equations are
 
 $$
-\kappa\,D^-\tilde J_{\mathrm{eg}} = i\,\tilde J_{\mathrm{eg}}\circ\tilde F_2,
+\boxed{\;\kappa\,D^-\tilde J_{\mathrm{eg}} = i\,\tilde J_{\mathrm{eg}}\circ\tilde F_2,
 \qquad
-\kappa\,D^-\tilde J_{\mathrm{eg},2} = i\,\tilde J_{\mathrm{eg},2}\circ\tilde F,
+\kappa\,D^-\tilde J_{\mathrm{eg},2} = i\,\tilde J_{\mathrm{eg},2}\circ\tilde F\;}
 $$
 
 together with the third-law relation below and the Maxwell equation $D^+\tilde F = -i\tilde J_{\mathrm{eg}}$ for each field. Here $\kappa$ is a single dimensional coupling constant and $\tilde F$ is the field strength of that field. The system is closed and nonlinear, and its right-hand side is the force density of the *other* field — the model deliberately makes a field act on other charges, never on its own. When one field dominates, $W_2 \gg W$, the pair collapses to a single equation for the weaker field's charge–current with the stronger field's strength as a known input, which is the form in which the programme's applications are stated.
@@ -279,15 +279,14 @@ which is the pair of the first section with $\mathrm{grad}\,a$ added to the curr
 **The integrability interpretation.** In the corpus's language the ordinary conservation law is the integrability condition of the sourced Maxwell equation. Applying $\mathrm{Sc}\,\tilde{\nabla}^{\natural}$ to $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ annihilates the left side, because $\tilde{\nabla}^{\natural}\tilde{\nabla}$ is the scalar d'Alembertian and $\tilde{F}$ has no scalar part; what survives is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$. With the scalar part $ia$ retained in $\tilde F_a$, the same calculation gives
 
 $$
-\sqrt{\mu}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = -\,\Box\,(i a)
+\boxed{\;\sqrt{\mu}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = -\,\Box\,(i a)
 \qquad\Longleftrightarrow\qquad
-\Box\,a \;\propto\; M,
+\Box\,a \;\propto\; M\;}
 $$
 
 so the scalar field is sourced by the external power — the very quantity whose presence breaks the conservation law — and propagates as a wave. This is the cleanest form of the revision. Where the corpus's definition of the field strength discards the scalar part of $\tilde{\nabla}^{\natural}\vec F$ as gauge, the programme retains it, and the retained scalar is exactly the field whose d'Alembertian absorbs the failure of conservation.
 
 **The word "modified" is not this corpus's modification, and the two must not be conflated.** The programme's repair adds a scalar field to the field strength and turns the Maxwell system into an **open** one: the source is no longer closed, and the added scalar is what absorbs the failure of conservation. The corpus has a modification of its own, in *Electromagnetism in Media: The Local Complex Structure at Work*, where the local complex structure of a material slice changes the constitutive relations — the medium, not the conservation law, is what is modified there. The two are different modifications, of different objects, for different reasons: one changes whether the source is closed, the other changes how the field and the medium are tied. The corpus's own Maxwell article and the entries of *the-field-strength-biquaternion-and-its-invariants* are unaffected by the programme's revision, and a reader who carries the programme's open system into them will change what the corpus states. The one thing that does transfer is negative and stated above: the corpus's own definition of the field strength discards the scalar part of $\tilde{\nabla}^{\natural}\vec F$ as gauge, and the programme's revision is exactly the choice to retain it. That contrast is the content; the modification itself is the programme's.
-
 
 **One coefficient that does not close, and is therefore not carried.** The source expands the vector part of the power–force biquaternion into two real halves, $\vec F_H$ and $\vec F_E$, and lists four named terms in $\vec F_H$ (Coulomb, gravitational, Lorentz, electromass). The scalar part closes exactly, and the split closes once the factor of $i$ that the source suppresses is placed correctly, which is done in the companion article on the density force; the single coefficient that does not close there is the second term of $\vec F_E$, which the derivation gives as $c\,\rho_H\vec D_2$. The 2009 paper prints $\vec F_E$ twice and inconsistently — $c\,\rho_E\vec B_2 - \rho_H\vec D_2 + c^{-1}(\cdots)$ in §8 and $\rho_E\vec B_2 - \rho_H\vec D_2 + c^{-1}(\cdots)$ in §12 — so one factor of $c$ sits in a different term in each place, while the derivation puts it on both terms. Every named force sits in the half that closes and is unaffected. See the companion article for the properties and the `.context` for the residuals. The programme's 2019 statement of the same product carries **five** named terms rather than four: it keeps the four above, adds the **resistance–attraction force** $-\mathrm{Im}(\alpha\vec J)$, built from the attraction–resistance scalar $\alpha$, and renames the fourth term — the corpus's **electromass force** $\vec j_H\times\vec D_2$ — the **gravielectric force**. The author marks the gravielectric and the resistance–attraction terms as the model's **new forces**, the ones offered for an experimental test. The 2019 paper writes $\tilde J_{\mathrm{eg}}$ with the opposite overall sign to the 2007/2009 pair, so its printed list is the negative of the expansion above term by term; the names and the count are what the corpus takes from it.
 
@@ -329,7 +328,6 @@ while the mutual bigradients transform by the same conjugation — the paper's L
 
 **The Lorentz condition, in a different role.** The 2017 paper fixes the representation by requiring the potential to satisfy the Lorentz condition $\partial_\tau\phi = \mathrm{div}\,\vec\Phi$, imposed rather than chosen, and the ordinary Maxwell case $\alpha = 0$, $\rho_H = 0$ is recovered once it holds. The corpus's own Maxwell article treats the same condition as a free gauge fixing — "a choice of gauge, not a physical condition", with the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ a gauge artifact. The formula is the same; the logical role is not, and the corpus records the difference without choosing between the two. The gauge section of *Maxwell's Equations in the Biquaternionic Formulation* carries the cross-reference.
 
-
 ## The Static Limit and the Coupling
 
 The revision adds the scalar field to the strength, and with it the model can be compared with Newtonian gravity in the static case. The static form of the modified system is
@@ -347,7 +345,7 @@ $$
 with $\alpha = \alpha_1 + i\alpha_2$, the two real weights being the source's $a_1, a_2$ in $\alpha = i\,a_1/\epsilon + a_2/\mu$, so that $\alpha_1 = a_2/\mu$ and $\alpha_2 = a_1/\epsilon$. The last equation is the one that carries gravity. Writing the potential part of $\vec H$ as the negative gradient of a Newtonian potential, $\vec H = -\mathrm{grad}\,\phi$, it becomes
 
 $$
-\Delta\phi = \frac{\rho_H}{\mu},
+\boxed{\;\Delta\phi = \frac{\rho_H}{\mu}\;}
 $$
 
 so the potential of the gravitational field obeys Poisson's equation and the field $\vec H = -\mathrm{grad}\,\phi$ points towards its source: for a positive mass density the static field is **attractive**. At this point the identification $\rho_H \leftrightarrow \rho_{\text{mass}}$ becomes quantitative, because the strength of the Poisson equation fixes the field constant of the medium. The source states the choice,
@@ -405,7 +403,7 @@ $$
 and it has a simplifying property worth recording: **for a purely electric charge and current, $\rho_H = 0$ and $\vec j_H = 0$ in both fields, the vector part vanishes identically and the pair term is the central real scalar**
 
 $$
-\tilde{\Sigma}_{kl} = \rho_k\rho_l - \left(\vec J_k,\vec J_l\right),
+\boxed{\;\tilde{\Sigma}_{kl} = \rho_k\rho_l - \left(\vec J_k,\vec J_l\right)\;}
 $$
 
 the Minkowski pairing of the two charge–current four-vectors under the signature $(+,-,-,-)$ — the same bilinear pairing that the algebra's pseudonorm is built from. The interaction energy of a pair of sources is thus the pairing of the sources, with the central scalar that the algebra's own bilinear form supplies and no new object. With magnetic charge present the cancellation fails and the pair term carries a vector part; the corpus records the general form above and the central special case, which was verified exactly.

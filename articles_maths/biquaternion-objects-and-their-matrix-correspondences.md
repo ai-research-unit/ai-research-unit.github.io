@@ -41,10 +41,8 @@ $$
 
 It is bijective, and injective in the strong sense: a given $2\times2$ matrix has one preimage, recovered by the same four entries. Two functionals transfer exactly:
 
-$$
-\operatorname{tr}\mathsf{M}_2(\tilde{Q}_1)=2Q_{1t},\qquad
-\det\mathsf{M}_2(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}.
-$$
+$$ \boxed{\;\operatorname{tr}\mathsf{M}_2(\tilde{Q}_1)=2Q_{1t},\qquad
+\det\mathsf{M}_2(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}\;}. $$
 
 ### The Left Regular Map $\mathsf{M}_4$
 
@@ -56,10 +54,8 @@ $$
 
 and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. Its functionals are
 
-$$
-\operatorname{tr}\mathsf{M}_4(\tilde{Q}_1)=4Q_{1t},\qquad
-\det\mathsf{M}_4(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}^2.
-$$
+$$ \boxed{\;\operatorname{tr}\mathsf{M}_4(\tilde{Q}_1)=4Q_{1t},\qquad
+\det\mathsf{M}_4(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}^2\;}. $$
 
 Unlike $\mathsf{M}_2$, the map $\mathsf{M}_4$ is not onto: its image is a four-complex-dimensional family inside the sixteen-dimensional algebra $M_4(\mathbb{C}).$ Concretely, it is the family of matrices of left multiplication by a biquaternion, and nothing else.
 
@@ -78,7 +74,7 @@ $$
 The basis that exhibits this form is the column-adapted one: the four elements whose $\mathsf{M}_2$-images are the matrix units, grouped as the first column of $\mathsf{M}_2$, then the second. In that basis the equality above holds exactly, block for block. Equivalently, the left regular module is a direct sum of two copies of the simple module,
 
 $$
-\mathbb{B}\cong V\oplus V,\qquad \mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2,
+\boxed{\;\mathbb{B}\cong V\oplus V,\qquad \mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2\;},
 $$
 
 which is the module-theoretic content of the display. The two functionals agree with this: $4Q_{1t}$ is twice $2Q_{1t}$, and $N^2$ is the square of $\langle\cdot\rangle_{\natural}$.
@@ -191,7 +187,7 @@ which is unitary exactly because the coefficients are real and their squares sum
 
 **$2\times2$.** Every automorphism is inner, because the algebra is a full matrix algebra, so the group is the image of the conjugation action of the units, with kernel the central scalars:
 $$
-\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C}).
+\boxed{\;\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C})\;}.
 $$
 In the $2\times2$ realization the automorphism attached to a unit $g$ is $X\mapsto \mathsf{M}_2(g)\,X\,\mathsf{M}_2(g)^{-1}$, taken modulo an overall scalar because a central multiple of $g$ gives the same automorphism. Over the complex field the projective general and projective special linear groups coincide, $PGL(2,\mathbb{C})=PSL(2,\mathbb{C})$, because every nonzero complex number is a square and so every projective class has a representative of determinant one.
 
@@ -256,8 +252,8 @@ $$
 the compact part $\mathrm{U}(2)$ of real dimension $4$ is the rotor $SU(2)$ together with the phase $\mathrm{U}(1)$, and the non-compact part $\exp(\mathfrak{p})$, also of real dimension $4$, is the **boosts** (Hermitian traceless, three parameters) together with the **dilatation** (the scalar, one parameter). The polar form is this decomposition read factor by factor,
 
 $$
-\tilde{Q}_1=r\,\exp(i\alpha)\,B\,\tilde u
-=\underbrace{(\exp(i\alpha)\tilde u)}_{\text{compact, }\mathrm{U}(2)}\;\underbrace{(rB)}_{\text{non-compact, }\exp(\mathfrak{p})},
+\boxed{\;\tilde{Q}_1=r\,\exp(i\alpha)\,B\,\tilde u
+=\underbrace{(\exp(i\alpha)\tilde u)}_{\text{compact, }\mathrm{U}(2)}\;\underbrace{(rB)}_{\text{non-compact, }\exp(\mathfrak{p})}\;},
 $$
 
 so the boost is the non-compact factor of the Lorentz group, the symmetric space $SL(2,\mathbb{C})/SU(2)=H^3$ of real dimension $3$, and it sits beside the dilatation as the four non-compact directions of the twisted group. With Lorentz alone the boost is present and the dilatation is not; with the twist the two are the two halves of the non-compact part.
@@ -282,10 +278,8 @@ The groups reached in the table are classical, and two of them sit over another 
 
 **The two double covers.** The definite form and the indefinite form each carry a two-sheeted cover, and the two are the same construction applied to the compact group and to its complexification:
 
-$$
-SU(2)\longrightarrow SO(3),\qquad
-\mathbb{B}^{\times}_1=\mathrm{Spin}(1,3)\longrightarrow SO^{+}(1,3).
-$$
+$$ \boxed{\;SU(2)\longrightarrow SO(3),\qquad
+\mathbb{B}^{\times}_1=\mathrm{Spin}(1,3)\longrightarrow SO^{+}(1,3)\;}. $$
 
 In both, the kernel is the order-two centre, $\{\pm I\}$ in the matrix picture and $\{\pm e_t\}$ in the algebra, and in both a full turn of the covering element gives the negative of the identity cover element while two turns give the identity. The first cover is between compact groups; the second is between non-compact ones, and it is the complexification of the first, the unit quaternions being replaced by $SL(2,\mathbb{C})$.
 

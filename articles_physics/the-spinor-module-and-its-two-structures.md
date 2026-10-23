@@ -5,8 +5,8 @@
 The spinor space of the biquaternion framework is the minimal left ideal
 
 $$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},\qquad
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
+\boxed{\;S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},\qquad
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)\;},
 $$
 
 of complex dimension two. The algebra acts on it by left multiplication, and the action carries the defining representation of the double cover of the Lorentz group. That is one structure. The same carrier also carries a positive definite Hermitian form and a Born pairing, and that is a second structure, belonging to a different product of the same algebra.
@@ -85,8 +85,8 @@ $$
 which is positive definite on the algebra. Restricted to the carrier, its Gram matrix on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ is
 
 $$
-G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*} & \langle\tilde\Pi_+,\vec\Upsilon_y\rangle_{*}\\[2pt]\langle\vec\Upsilon_y,\tilde\Pi_+\rangle_{*} & \langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_{*}\end{pmatrix}
-=\tfrac12 I_2 .
+\boxed{\;G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*} & \langle\tilde\Pi_+,\vec\Upsilon_y\rangle_{*}\\[2pt]\langle\vec\Upsilon_y,\tilde\Pi_+\rangle_{*} & \langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_{*}\end{pmatrix}
+=\tfrac12 I_2\;}.
 $$
 
 The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the difference is exactly the phase. In module coordinates the same form is the spinor inner product $h(\psi,\phi)=\psi^{\dagger}\phi$. The **Born pairing** is the trace formula
@@ -108,7 +108,7 @@ $$
 is non-degenerate on $\mathbb{B}$, of signature $(4,4)$ on the real space. On the carrier its Gram matrix is
 
 $$
-B_S=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix},
+\boxed{\;B_S=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix}\;},
 $$
 
 of rank one, with radical $\mathbb{C}\vec\Upsilon_y$. The nilpotent is orthogonal to both basis spinors and to every element of $S$: it has zero scalar part and squares to zero. **The algebra's own form cannot separate the two basis spinors and cannot produce a norm on the carrier.** Positivity is not a property of the plain product at all; it needs the second slot.

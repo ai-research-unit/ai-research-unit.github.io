@@ -137,9 +137,9 @@ $$
 and the Liénard–Wiechert potential takes the compact biquaternion form
 
 $$
-\tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma
+\boxed{\;\tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma
 = -\frac{\mu ϙ\,c}{4\pi}\,
-\frac{\tilde{V}/\gamma}{\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural}\right)} .
+\frac{\tilde{V}/\gamma}{\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural}\right)}\;}
 $$
 
 This is the central object of the retarded theory. Its scalar part is the scalar potential and its vector part the vector potential:
@@ -260,11 +260,11 @@ $$
 with
 
 $$
-\vec E_v = \frac{ϙ}{4\pi\epsilon}\,
+\boxed{\;\vec E_v = \frac{ϙ}{4\pi\epsilon}\,
 \frac{(1-\beta^2)\left(\vec u_R - \vec\beta\right)}{\kappa^3 R^2},
 \qquad
 \vec E_a = \frac{ϙ}{4\pi\epsilon c}\,
-\frac{\vec u_R\times\left[\left(\vec u_R - \vec\beta\right)\times\,d\vec\beta/dt'_r\right]}{\kappa^3 R}.
+\frac{\vec u_R\times\left[\left(\vec u_R - \vec\beta\right)\times\,d\vec\beta/dt'_r\right]}{\kappa^3 R}\;}
 $$
 
 Here the derivative is with respect to the **retarded time**, written $d/dt'_r$, and every source quantity is evaluated at $t'_r$. This derivative convention matters, and it is the one for which the formulas above are correct; the alternative of using the derivative with respect to the observer's time $t'$ rescales $d\vec\beta/dt'_r$ by the factor $\kappa = dt'/dt'_r$ and moves a power of $\kappa$ between the two display formulas. We use the retarded-time derivative throughout.
@@ -378,16 +378,16 @@ so the energy flux through a sphere of radius $R$ is $R^2|\vec E_a|^2/(\mu c)$ p
 The power crossing a large sphere per unit solid angle, per unit of the observer's time, is the radial Poynting flux times $R^2$:
 
 $$
-\frac{dP}{d\Omega} = R^2\,\vec S_a\cdot\vec u_R
+\boxed{\;\frac{dP}{d\Omega} = R^2\,\vec S_a\cdot\vec u_R
 = \frac{ϙ^2}{16\pi^2\epsilon c}\,
-\frac{\left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]\right|^2}{\kappa^6},
+\frac{\left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]\right|^2}{\kappa^6}\;}
 $$
 
 with the retarded-time derivative convention fixed above. This is the relativistic generalization of the Larmor angular distribution. Its integral over the sphere gives the total radiated power. Because $\vec\beta$, $d\vec\beta/dt'_r$ and $\kappa$ are functions of the retarded time, the integral is most transparent in the invariant form: writing $\tilde{V} = d\tilde{Q}_q/d\tau$ for the four-velocity, the radiated power is
 
 $$
-P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right)
-= \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}\right),
+\boxed{\;P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right)
+= \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}\right)\;}
 $$
 
 where in the second expression the index contraction uses the Minkowski metric. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.

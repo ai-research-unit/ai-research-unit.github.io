@@ -13,8 +13,6 @@ This is the article of the **definition of the four products and of the four alg
 
 **The one warning of this article.** An **algebraic norm** is an element of the algebra — a complex number here for $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\mathrm{ts}}$, a real number for $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\mathrm{ts}*}$ — and it is the diagonal of the scalar-part form of a product; it is **not** the positive real that the word *norm* means in topology and analysis. Only $\langle\cdot\rangle_{\mathrm{ts}*}$ is positive definite, so only $\langle\cdot\rangle_{\mathrm{ts}*}$ is a topological norm (squared). The two uses of the word are never conflated, and *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article, reads the algebraic norm of the multiplication against the criterion of invertibility.
 
-**Boundaries.** The space, the bases and the linear or antilinear characters are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*, above this article. The involution that defines the tessarine-sign slot and the star is *The Two Involutions and the Group of Involutions*, above this article. The multiplication read as an algebra, with its unit, its zero divisors and its group of units, is *Introduction to the Algebra of the Reduced Biquaternions*, below this article. The zero divisors and the annihilators are the next articles of the category.
-
 ## The Four General Products
 
 **Each product has a coordinate table in the two complex coordinates $Q_{1\blacktriangle}$ and $Q_{1\blacktriangledown}$, read off from the relations $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$ and the four maps of the involutions.**

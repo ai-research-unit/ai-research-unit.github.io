@@ -50,7 +50,7 @@ $$
 **Theorem.** The relation $\leq$ is a partial order with least element $0$ and greatest element $1$, and the operations
 
 $$
-\alpha \wedge \beta = \alpha \odot (\alpha \to \beta), \qquad \alpha \vee \beta = (\alpha \to \beta) \to \beta
+\boxed{\;\alpha \wedge \beta = \alpha \odot (\alpha \to \beta), \qquad \alpha \vee \beta = (\alpha \to \beta) \to \beta\;}
 $$
 
 are the meet and the join for it. Under these operations $A$ is a distributive lattice, and $\neg$ is an order-reversing involution with $\neg 0 = 1$, $\neg 1 = 0$. The monoid operation is monotone: $\alpha \leq \beta$ implies $\alpha \oplus \gamma \leq \beta \oplus \gamma$ and $\alpha \odot \gamma \leq \beta \odot \gamma$.
@@ -86,7 +86,7 @@ $$
 and the residuation law
 
 $$
-\gamma \leq \alpha \to \beta \iff \alpha \odot \gamma \leq \beta
+\boxed{\;\gamma \leq \alpha \to \beta \iff \alpha \odot \gamma \leq \beta\;}
 $$
 
 holds.
@@ -240,7 +240,7 @@ A formula is a **tautology** if $v(\varphi) = 1$ for every valuation, and $\math
 **Theorem (Chang completeness).** For every formula $\varphi$ of $\mathrm{L}$,
 
 $$
-\vdash_{\mathrm{L}} \varphi \iff v(\varphi) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1] .
+\boxed{\;\vdash_{\mathrm{L}} \varphi \iff v(\varphi) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1]\;}.
 $$
 
 **Proof.** Soundness is induction on the length of the derivation: the Łukasiewicz axioms of the Hilbert system for $\mathrm{L}$ are identities of MV-algebras, each of which is verified in $[0,1]_{\mathrm{L}}$, and the rules preserve the value $1$. For completeness, the Lindenbaum algebra $F$ of $\mathrm{L}$ is an MV-algebra, and the valuations are exactly the homomorphisms from the term algebra to $[0,1]_{\mathrm{L}}$ that respect provable equivalence; by Chang's theorem the homomorphisms to $[0,1]_{\mathrm{L}}$ separate the points of $F$, so if $\varphi$ is not a theorem and its class is therefore not $1$, some valuation sends $\varphi$ to a value different from $1$.

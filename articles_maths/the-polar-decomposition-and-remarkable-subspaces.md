@@ -18,8 +18,6 @@ The algebra carries six **remarkable subspaces**, defined in *Introduction to th
 
 **The result, in one sentence.** The four exponents of a generic polar word lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of them, and the polar word fails on a subspace exactly on the origin or its nonzero zero divisors.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$, with $Q_\mu\in\mathbb{C}$.
-
 Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}}$, the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the reversal is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$.
 
 The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
@@ -33,11 +31,11 @@ No physics is invoked; the physical interpretation is cited where it clarifies t
 Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\alpha=\arg\zeta$, and the square of the root decides the character of the factor. The four factors and their exponents are
 
 $$
-\tilde{Q}=r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\boxed{\; \tilde{Q}=r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \bigl(r,\zeta,\tilde U_{\mathrm b},\tilde u_{\mathrm r}\bigr)
 \longleftrightarrow
-\bigl(\ln r,\,i\alpha,\,i\tfrac{\psi}{2}\vec u_{\mathrm b},\,\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) .
+\bigl(\ln r,\,i\alpha,\,i\tfrac{\psi}{2}\vec u_{\mathrm b},\,\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) \;}.
 $$
 
 | factor | exponent | root | square of the root | character |
@@ -234,7 +232,7 @@ The rotor set is a **group**: the product of two unit real quaternions is a unit
 The boost set is **not** a group: the product of two Hermitian positive elements is not Hermitian in general, so the product of two boosts does not stay in the boost set. The product of two boosts is a boost times a rotor,
 
 $$
-\tilde U_{\mathrm b}(a,\vec u_1)\,\tilde U_{\mathrm b}(b,\vec u_2) = \tilde U_{\mathrm b}(\psi,\vec u_{\mathrm b})\,\tilde u_{\mathrm r}(\theta,\vec u_{\mathrm r}) ,
+\boxed{\; \tilde U_{\mathrm b}(a,\vec u_1)\,\tilde U_{\mathrm b}(b,\vec u_2) = \tilde U_{\mathrm b}(\psi,\vec u_{\mathrm b})\,\tilde u_{\mathrm r}(\theta,\vec u_{\mathrm r}) \;},
 $$
 
 and the parameters are the classical ones. The rapidity of the product is fixed by the axes through their scalar and vector products,
@@ -288,7 +286,7 @@ The first gives $\cos\tfrac{\theta}{2} = 0$, that is $\theta = \pi$, since $\the
 **Corollary (the normalised piece of a pure vector is a root of $-1$).** With the notation of the proposition, the unit-norm part $\vec Q/\Rho$ satisfies
 
 $$
-\left(\frac{\vec Q}{\Rho}\right)^{\natural} = -\frac{\vec Q}{\Rho} , \qquad \left(\frac{\vec Q}{\Rho}\right)^{2} = -e_t ,
+\boxed{\; \left(\frac{\vec Q}{\Rho}\right)^{\natural} = -\frac{\vec Q}{\Rho} , \qquad \left(\frac{\vec Q}{\Rho}\right)^{2} = -e_t \;},
 $$
 
 so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the natural conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$, and the dot product of the two axes vanished to $2.6\times10^{-15}$ whenever the boost was nontrivial.
@@ -335,7 +333,7 @@ $$
 according as $\tilde Q_1^{*}=\pm\tilde Q_1$. Stability is a consequence of the involution, not of a norm-one hypothesis. The word factorises the action,
 
 $$
-\Theta_{\tilde Q}=r^{2}\,\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}},
+\boxed{\; \Theta_{\tilde Q}=r^{2}\,\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}} \;},
 $$
 
 since the phase is central of modulus one and acts trivially, the scale multiplies every image by $r^{2}$, and the two non-central factors act in the order rotor first, boost second.

@@ -135,7 +135,7 @@ $$
 The **Born rule** gives the probability of an outcome of a measurement. For an observable $A$ with spectral decomposition $A = \sum_a a P_a$ and a state $\rho$, the probability of measuring outcome $a$ is
 
 $$
-p(a) = \mathrm{Tr}(P_a \rho).
+\boxed{\;p(a) = \mathrm{Tr}(P_a \rho)\;}.
 $$
 
 The **expectation value** of $A$ in the state $\rho$ is
@@ -189,7 +189,7 @@ $$
 The **positivity** of $\rho$ is equivalent to the condition
 
 $$
-|\vec r| \leq 1.
+\boxed{\;|\vec r| \leq 1\;}.
 $$
 
 The state is **pure** if and only if $|\vec r| = 1$, and **mixed** otherwise. The **maximally mixed state** has $\vec r = 0$, i.e., $\rho = I/2$.
@@ -257,7 +257,7 @@ i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.
 In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t')\rangle$, the evolution is governed by the **Schrödinger equation**:
 
 $$
-i\hbar\, \frac{\partial}{\partial t'}|\psi(t')\rangle = H\, |\psi(t')\rangle,
+\boxed{\;i\hbar\, \frac{\partial}{\partial t'}|\psi(t')\rangle = H\, |\psi(t')\rangle\;},
 $$
 
 where $H$ is the Hamiltonian. The solution is

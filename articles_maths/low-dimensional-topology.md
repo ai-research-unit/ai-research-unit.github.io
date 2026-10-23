@@ -7,8 +7,6 @@ Low-dimensional topology is the topology of manifolds of dimension two, three an
 
 The article develops the four strata in order. The classification of surfaces is recalled for the language it supplies — genus, Euler characteristic, connected sum, boundary — and the uniformisation of surfaces is cited to *Hyperbolic Geometry*. The prime decomposition of three-manifolds and the torus decomposition reduce the study of a three-manifold to its Seifert fibred and hyperbolic pieces, and the eight geometries of Thurston organise the closed case; the statements of geometrisation, the spherical space form problem and the Poincaré conjecture are given, together with the hyperbolic Dehn surgery theorem and the rigidity phenomena that make the hyperbolic pieces computable. The Heegaard splittings and the surgery descriptions of three-manifolds supply the combinatorial models in which computations are made. Four-manifolds enter through their intersection forms, whose algebraic classification, combined with the theorems of Freedman and Donaldson, gives simultaneously the topological classification in the simply connected case and the obstruction to smoothing it. The article closes with the exotic phenomena — exotic smooth structures on $\mathbb{R}^4$ and on other four-manifolds, and the failure of the $h$-cobordism theorem in dimension four — that make the dimension-four theory exceptional.
 
-**The boundaries of the article.** Hyperbolic geometry, the models $\mathbb{H}^n$ and the volume computations of hyperbolic manifolds are those of *Hyperbolic Geometry*, and the hyperbolic 3-manifolds of this article are built on it. Surfaces and their mapping class groups are those of *Mapping Class Groups*, the final article of this half; the Teichmüller spaces of their complex structures are not developed in this Part, and the moduli-theoretic facts are taken as standard. Knots, their invariants and their complements are those, and the lens spaces of the classification are those of *Lens Spaces*, both of which follow. The cobordism groups, the surgery exact sequence and the $h$-cobordism theorem are those; the four-dimensional phenomena are stated here and the general theory is there. The symplectic and contact structures on three- and four-manifolds, and the tight–overtwisted dichotomy, are those of *Symplectic and Contact Topology*; the Floer-theoretic invariants — the instanton, Heegaard Floer and contact homologies — are those of *Floer Homology*, and are used here as statements. The homology, cohomology, intersection forms, cup products and the homology of cell complexes are those of *Algebraic Topology*, being written by another agent. The Sobolev and elliptic analysis behind the gauge-theoretic invariants, the Ricci flow and the analytic content of geometrisation belong to Part III, where the measure and the limit are available; the results are stated and cited. Lie groups and homogeneous spaces are those of Part I. No physics is invoked.
-
 ## Surfaces
 
 **Theorem (classification of compact surfaces).** Every compact connected surface is homeomorphic to exactly one of:
@@ -197,10 +195,6 @@ The combinatorial models of a three-manifold are the Heegaard splittings, unique
 | Kirby moves | Blow-up/blow-down and handle slides relating surgery presentations |
 | $S^3\setminus 4_1$ | Figure-eight knot complement, volume $2.0298832\ldots$ |
 | Weeks manifold | Closed hyperbolic three-manifold of minimal volume $0.94270736\ldots$ |
-
-
-
-
 
 ## Further Reading
 

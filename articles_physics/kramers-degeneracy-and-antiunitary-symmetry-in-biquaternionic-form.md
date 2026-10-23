@@ -15,8 +15,6 @@ It establishes four things.
 
 The article closes with what breaks the symmetry, and with the framework's standing disclaimer: the algebra names the axis along which the symmetry is lost, and does not choose it.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_t=1$, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, central $i$ with $i^{*}=-i$; the antilinear involutions $\bar{\tilde{Q}}$ (complex conjugation), $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ (Hermitian), $\tilde{Q}^\flat=-\tilde{Q}^{*}$ (anti-Hermitian), and the linear quaternion conjugation $\tilde{Q}^{\natural}$; $\flat(\tilde\Psi)=+\tilde\Psi$ on $\mathbb{M}_-$ and $-\tilde\Psi$ on $\mathbb{M}_+$; $\mathbb{M}_-=i\,\mathbb{M}_+$; $\mathrm{Tr}=2\,\mathrm{Sc}$; the module carries $(i\gamma^\mu\partial_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$; the spin generators are $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ with $[\tilde S_a,\tilde S_b]=i\hbar\epsilon_{abc}\tilde S_c$, and the rotation by angle $\theta$ about the unit direction $n$ in the module is $R(\theta)=\exp(\tfrac{\theta}{2}\,n\cdot e)$ with $R(2\pi)=-e_t$; the dictionary representative is $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i\vec e_k)=\sigma_k$.
-
 ## Antiunitary Maps and the Two Spaces
 
 **Antiunitary.** A map $\mathcal T$ on a complex Hilbert space is antiunitary when it is antilinear and preserves the transition probabilities,
@@ -100,8 +98,8 @@ which is the standard result: $-1$ for half-integer spin, $+1$ for integer spin.
 *(ii) The partner is orthogonal, hence independent.* Using antiunitarity with $\mathcal T^2v=-v$,
 
 $$
-\langle \mathcal Tv,v\rangle=\langle \mathcal Tv,-\mathcal T^2v\rangle=-\langle \mathcal Tv,\mathcal T(\mathcal Tv)\rangle
-=-\overline{\langle v,\mathcal Tv\rangle}=-\langle\mathcal Tv,v\rangle ,
+\boxed{\;\langle \mathcal Tv,v\rangle=\langle \mathcal Tv,-\mathcal T^2v\rangle=-\langle \mathcal Tv,\mathcal T(\mathcal Tv)\rangle
+=-\overline{\langle v,\mathcal Tv\rangle}=-\langle\mathcal Tv,v\rangle\;},
 $$
 
 where the last step uses the Hermiticity of the inner product. Hence $\langle\mathcal Tv,v\rangle=0$. Since $\mathcal Tv$ is orthogonal to $v$ and non-zero ($\|\mathcal Tv\|=\|v\|$ by antiunitarity), it is an independent eigenvector with the same energy, and the multiplicity is even.
@@ -135,18 +133,18 @@ held with maximum error $1.1\times10^{-16}$. The Kramers partner is the $\vareps
 **The counting of $\mathcal T$-invariant Hamiltonians.** The degeneracy has a parameter count behind it. On $\mathbb{C}^{2N}$ with $\mathcal T^2=-1$, an invariant Hermitian operator can be written in the block form
 
 $$
-H=\begin{pmatrix}A & B\\ -B^* & A^*\end{pmatrix},
+\boxed{\;H=\begin{pmatrix}A & B\\ -B^* & A^*\end{pmatrix},
 \qquad
 A=A^\dagger ,
 \qquad
-B=-B^{T} ,
+B=-B^{T}\;},
 $$
 
 which is Hermitian and satisfies $[\mathcal T,H]=0$ identically; the two conditions were verified on a random instance (residual $0$ in both). The real dimension count is then
 
 $$
-\dim_\mathbb{R}\{A\text{ Hermitian}\}+\dim_\mathbb{R}\{B\text{ complex antisymmetric}\}
-=N^2+N(N-1)=N(2N-1),
+\boxed{\;\dim_\mathbb{R}\{A\text{ Hermitian}\}+\dim_\mathbb{R}\{B\text{ complex antisymmetric}\}
+=N^2+N(N-1)=N(2N-1)\;},
 $$
 
 against $4N^2$ for a general Hermitian operator of the same size. The dimension was also obtained independently by a rank count of the invariance conditions, for $N=1,2,3$, giving $(1,6,15)=N(2N-1)$ in each case, with the constraint rank $N(2N+1)$. The antisymmetric block $B$ is the pairing structure on the Kramers pairs — the same antisymmetric form that the two-particle state of the spin-$\tfrac12$ Fock space carries — and its antisymmetry is why the pair behaves as a single quaternionic line rather than as two independent states.

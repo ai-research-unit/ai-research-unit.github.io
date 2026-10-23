@@ -127,8 +127,7 @@ $$
 
 and Euler's pentagonal number theorem states
 
-$$
-\phi(x) = \prod_{k \geq 1}(1 - x^k) = \sum_{j \in \mathbb{Z}} (-1)^j x^{j(3j-1)/2} .
+$$ \boxed{\;\phi(x) = \prod_{k \geq 1}(1 - x^k) = \sum_{j \in \mathbb{Z}} (-1)^j x^{j(3j-1)/2} \;}.
 $$
 
 **Proof.** The first identity is the expansion of each factor as a geometric series $1 + x^k + x^{2k} + \cdots$ and the collection of the contributions to $x^n$, each partition of $n$ contributing once. The pentagonal theorem is Euler's; the standard proof multiplies out the product and observes that the surviving terms are those in which the parts form a strictly decreasing then strictly decreasing-by-one pattern, giving the pentagonal exponents $j(3j\pm1)/2$ with signs $(-1)^j$.
@@ -179,8 +178,7 @@ $$
 
 **Theorem (Lagrange inversion).** With $w$ as above and $n \geq 1$,
 
-$$
-[x^n]\, \bar w(x) = \frac{1}{n} [x^{n-1}] \left( \frac{x}{w(x)} \right)^{n} .
+$$ \boxed{\;[x^n]\, \bar w(x) = \frac{1}{n} [x^{n-1}] \left( \frac{x}{w(x)} \right)^{n} \;}.
 $$
 
 More generally, for any formal power series $H$,
@@ -209,8 +207,7 @@ so the coefficient of $x^n/n!$ is $n^{n-1}$, as claimed; dividing by $n$ to forg
 
 **Theorem (Stirling).** As $n \to \infty$,
 
-$$
-n! \sim \sqrt{2\pi n}\left(\frac{n}{e}\right)^n ,
+$$ \boxed{\;n! \sim \sqrt{2\pi n}\left(\frac{n}{e}\right)^n \;},
 $$
 
 so that $\log(n!) = n\log n - n + \tfrac12 \log(2\pi n) + O(1/n)$.

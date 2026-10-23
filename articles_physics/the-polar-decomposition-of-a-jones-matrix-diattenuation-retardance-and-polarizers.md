@@ -8,8 +8,6 @@ The decomposition is the **Cartan pairing**. A general Jones matrix is neither H
 
 The article states the correspondence, computes the standard optical parameters from the factors, and treats the boundary case. A polarizer is a rank-one Jones matrix. It lies on the zero-divisor cone, where the norm vanishes, the element is not invertible, and the classical Cartan pairing stops. The generalized Cartan pairing continues there with a positive semidefinite factor and a partial isometry, and the polarizer becomes the canonical example of that extension.
 
-**Placement.** The article belongs to the Optics block, beside *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*, whose Jones vectors and Stokes parameters it uses. The mathematics is owned by *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions* and *The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone*; this article derives no matrix identity and reads the optical content of the pair.
-
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
@@ -17,7 +15,7 @@ The article states the correspondence, computes the standard optical parameters 
 | The element image $\mathsf{M}_2(\tilde J)$ and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ | [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
 | The Cartan pairing $\tilde J=\tilde H\tilde U$, the positive factor and the unitary factor | [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html) |
 | The generalized pairing on the cone, the partial isometry and its projections | [The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html) |
-| The eigenvalue decomposition, the eigenprojections and the rank-one case | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
+| The eigenvalue decomposition, the eigenprojections and the rank-one case | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
 | The norm, the invertibility criterion and the zero-divisor cone | [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html) |
 | The unitary group and its matrix model | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The square root of a positive element | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
@@ -63,9 +61,9 @@ A general Jones matrix is none of the three. It is not Hermitian, because it has
 For an invertible Jones matrix the Cartan pair is
 
 $$
-\tilde J=\tilde H\tilde U,\qquad
+\boxed{\;\tilde J=\tilde H\tilde U,\qquad
 \tilde H=\sqrt{\tilde J\tilde J^{*}},\qquad
-\tilde U=\tilde H^{-1}\tilde J .
+\tilde U=\tilde H^{-1}\tilde J\;}.
 $$
 
 The factor $\tilde H$ is Hermitian positive and the factor $\tilde U$ is unitary. The pair is unique: the positive square root is unique, and the unitary factor is then fixed. In the matrix image this is the polar decomposition $\mathsf{J}=\mathsf{H}\mathsf{U}$, with $\mathsf{H}$ positive definite and $\mathsf{U}$ unitary.
@@ -77,9 +75,9 @@ The factor $\tilde H$ is Hermitian positive and the factor $\tilde U$ is unitary
 **On the cone.** When $N(\tilde J)=0$ the element is not invertible and $\tilde H^{-1}$ does not exist. The generalized pair replaces the inverse by the Moore–Penrose inverse, the positive factor by a positive semidefinite one, and the unitary factor by a partial isometry:
 
 $$
-\tilde J=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm p},\qquad
+\boxed{\;\tilde J=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm p},\qquad
 \tilde H_{\mathrm{pos}}=\sqrt{\tilde J\tilde J^{*}},\qquad
-\tilde U_{\mathrm p}=\tilde H_{\mathrm{pos}}^{+}\tilde J .
+\tilde U_{\mathrm p}=\tilde H_{\mathrm{pos}}^{+}\tilde J\;}.
 $$
 
 The pair is unique once the projections of $\tilde U_{\mathrm p}$ are fixed to be those of $\tilde J$. On the cone the positive factor becomes a scaled projection and the partial isometry carries one polarization direction to one output direction.
@@ -102,7 +100,7 @@ $$
 with orthogonal eigenpolarizations $\vec u_H$ and $-\vec u_H$. The eigenvalues $T_1,T_2$ are the **principal amplitude transmissions**; their squares are the principal intensity transmissions. The mean intensity transmission is $\bar T=\tfrac12(T_1^{2}+T_2^{2})$, and the **diattenuation** is
 
 $$
-D=\frac{T_1^{2}-T_2^{2}}{T_1^{2}+T_2^{2}}\in[0,1].
+\boxed{\;D=\frac{T_1^{2}-T_2^{2}}{T_1^{2}+T_2^{2}}\in[0,1]\;}.
 $$
 
 A pure retarder has $T_1=T_2$, hence $D=0$; an ideal polarizer has $T_2=0$, hence $D=1$.
@@ -135,7 +133,7 @@ $$
 and the **retardance** is the phase difference
 
 $$
-\delta=\phi_1-\phi_2 \pmod{2\pi}.
+\boxed{\;\delta=\phi_1-\phi_2 \pmod{2\pi}\;}.
 $$
 
 The eigenpolarizations $\vec u_U$ and $-\vec u_U$ are the **retarder axes**; one is fast and one is slow, and the sign convention for $\delta$ fixes which is which. The global phase $\tfrac12(\phi_1+\phi_2)$ is not a retardance. It is the central phase of the element and has no optical consequence.
@@ -288,6 +286,6 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 - [The Matrix Images: Mixedness, Rapidity and the Phase Fibre](the-matrix-images-mixedness-rapidity-and-the-phase-fibre.html), for the singular values of the amplitude and the determinant as a volume.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the theorem and its uniqueness.
 - [The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html), for the extension to the cone and the polarizer.
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectral decomposition of the factors.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectral decomposition of the factors.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the partition that the polarizer sits on.
 - Max Born and Emil Wolf, *Principles of Optics* (Cambridge, 7th edn, 1999), for the Jones calculus, the Stokes parameters and the polar decomposition of optical elements.

@@ -12,15 +12,13 @@ The division between what is established and what is only transcribed is kept ex
 
 - **Established, and recomputed below.** The three operations on the spinor-module Dirac field,
   $$
-  C[\psi]=\eta_C\,\psi^{*},\qquad
+  \boxed{\;C[\psi]=\eta_C\,\psi^{*},\qquad
   P[\psi](t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\gamma^0\,\psi(t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),\qquad
-  T[\psi](t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\eta_T\,\psi^{*}(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+  T[\psi](t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\eta_T\,\psi^{*}(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\;},
   $$
   with $\eta_C=i\gamma^2$ and $\eta_T=\gamma^1\gamma^3$, each maps every solution of the free equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$ to a solution. Each was verified separately on the differential equation, on three on-shell momenta and on a superposition of both frequency branches. $T$ is anti-unitary, $T[i\psi]=-i\,T[\psi]$, so it conjugates the scalar imaginary. $C$ and $P$ anticommute with $\gamma_5$ and exchange the chiral halves; $T$ commutes with $\gamma_5$ and preserves them; hence $CPT$ preserves chirality. $C$ exchanges the two frequency branches, so at the operator level it exchanges the particle and antiparticle modes. Of the internal matrices, $T$'s factor $\gamma^1\gamma^3=-\vec e_y$ is an even element of $\mathrm{Cl}_{1,3}^{+}\cong\mathbb{B}$ (a real quaternion), while $C$'s $i\gamma^2$ and $P$'s $\gamma^0$ are **odd** and have no representative in $\mathbb{B}$. The composition $\Theta=C\circ P\circ T$ acts as $\Theta[\psi](x)=\eta_{CPT}\,\psi(-x)$ with $\eta_{CPT}=\eta_C\eta_P^{*}\eta_T^{*}$; in the phase convention above, $\eta_{CPT}=\gamma_5=i\omega$. Here $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ is the volume element, the element the framework identifies with the biquaternion scalar imaginary, and on the Dirac module $\omega$ acts as $\mathrm{diag}(i,-i)$, this being the image of the biquaternion scalar imaginary under the even-Clifford identification.
 - **Transcribed, not derived.** The CPT theorem itself, together with the hypotheses that prove it: locality, Hermiticity of the Lagrangian, Lorentz invariance, positivity and spin–statistics. The computation below exhibits the composition as a symmetry of *one* free equation; it does not show that the composition survives interactions, which is the content of the theorem. Nothing here derives CPT from the biquaternion algebra. Also transcribed is the Clifford-algebra classification of the operations as the fundamental automorphisms of $\mathrm{Cl}_{n,m}$ together with the charge-conjugation pseudoautomorphism, which is recorded below as a second interpretation of the same eight operations and as the source of their $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group structure.
 - **Gap, left visible.** The framework does not fix a $\mathbb{B}$-intrinsic form of $C$ and $P$: their internal matrices are odd Clifford elements, outside $\mathbb{B}$, so they are operations of the Clifford algebra or of the module, not inner operations of the biquaternion algebra. Whether they admit a $\mathbb{B}$-intrinsic realization is unbuilt. Separately, the parent's mass term is the linear chiral pair of the Dirac article, whose spinor representative is the massive Dirac equation verified above to be $C$-invariant; the algebra's anti-linear object is the real structure $\flat=-{}^{*}$, a separate Majorana-type pairing, and whether $C$ is a symmetry of the single-field equation built on $\flat$ is the open reading developed in the neutrino companion.
-
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_i \vec e_j=\epsilon_{ijk}\vec e_k$ for $i\ne j$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}=\mathbb{C}e_t$ is the centre. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex, i.e. conjugation of the coefficients), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); the anti-Hermitian conjugate is $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, satisfying $\mathsf{M}_2(\tilde Q_1\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)$ and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$, and the Dirac module is $\Delta=S\oplus\bar{S}=(\tfrac12,0)\oplus(0,\tfrac12)$, $\dim_{\mathbb{C}}\Delta=4$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, with $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_k\partial/\partial Q_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form, inherited unchanged. The biquaternion Dirac field is $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$, with massless equation $\tilde{\nabla}\tilde{\Psi}=0$ and massive equation the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, and its spinor-module representative $\psi$ satisfies $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$.
 
 We use the **block representation** of the gamma matrices of the canonical-quantization and spin–statistics articles,
 $$
@@ -186,19 +184,17 @@ The anti-linear part of $C$ and of $T$ is exactly the algebra's complex conjugat
 ## The Composition CPT, Checked as a Composition
 
 Compose the three operations in the order $C$, then $P$, then $T$, and write $\Theta=C\circ P\circ T$. Because $C$ and $T$ are anti-linear, the composition must be evaluated as a composition, not by multiplying the three internal matrices. Applied to a field $\psi$,
-$$
-\psi\xrightarrow{\;T\;}\eta_T\,\psi^{*}(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+$$\psi\xrightarrow{\;T\;}\eta_T\,\psi^{*}(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 \xrightarrow{\;P\;}\eta_P\eta_T\,\psi^{*}(-t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))
-\xrightarrow{\;C\;}\eta_C\big(\eta_P\eta_T\big)^{*}\psi(-t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
-$$
+\xrightarrow{\;C\;}\eta_C\big(\eta_P\eta_T\big)^{*}\psi(-t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),$$
 so that
 $$
-\Theta[\psi](x)=\eta_{CPT}\,\psi(-x),\qquad
-\eta_{CPT}=\eta_C\,\eta_P^{*}\,\eta_T^{*}.
+\boxed{\;\Theta[\psi](x)=\eta_{CPT}\,\psi(-x),\qquad
+\eta_{CPT}=\eta_C\,\eta_P^{*}\,\eta_T^{*}\;}.
 $$
 The internal factor is built from the **conjugates** of $\eta_P$ and $\eta_T$, which is the bookkeeping that a naive product $\eta_C\eta_P\eta_T$ would miss. In the convention of this article, $\eta_P=\gamma^0$ and $\eta_T=\gamma^1\gamma^3$ are real, so $\eta_P^{*}=\eta_P$ and $\eta_T^{*}=\eta_T$, and
 $$
-\eta_{CPT}=\eta_C\eta_P\eta_T=i\gamma^2\gamma^0\gamma^1\gamma^3=i\omega=\gamma_5 .
+\boxed{\;\eta_{CPT}=\eta_C\eta_P\eta_T=i\gamma^2\gamma^0\gamma^1\gamma^3=i\omega=\gamma_5\;}.
 $$
 The agreement with the naive product in *this* convention is an accident of real internal matrices and should not be taken as general. If, for example, the phase convention $\eta_T=i\gamma^1\gamma^3$ is used — equally admissible, since the equation-preservation condition leaves the phase of the internal matrix free — then the true composition has $\eta_{CPT}=\eta_C\eta_P^{*}\eta_T^{*}=\omega$, while the naive product gives $i\omega=-\omega$. The two differ by a sign. The operation $T$ and the composition were re-verified in that convention as well, and both still map solutions to solutions; the point is that the internal factor is a convention-dependent phase and can only be read off from the composition itself. This is the concrete sense in which verifying $C$, $P$, $T$ individually and multiplying is not the same as verifying $CPT$.
 
@@ -232,7 +228,7 @@ The conjugation is the composite of the involution and the reversion, so the non
 **The correspondence with $P$ and $T$.** The literature attaches the discrete operations to these maps by the dictionary: space inversion $P$ is the involutive automorphism $A\to A^{\star}$; time reversal $T$ is the antiautomorphism $A\to A^{\sim}$; and the full reflection $PT$ is the antiautomorphism $A\to A^{\mathrm{rev}}$. The four operations obtained from these by composing with charge conjugation, $C$, $CP$, $CT$ and $CPT$, correspond to the correspondingly twisted maps. Every operation is then a product of the three generators $P$, $T$ and $C$, each of order two, and the eight products close on themselves:
 
 $$
-\{1,\,P,\,T,\,PT,\,C,\,CP,\,CT,\,CPT\}\;\cong\;\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2 .
+\boxed{\;\{1,\,P,\,T,\,PT,\,C,\,CP,\,CT,\,CPT\}\;\cong\;\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2\;}.
 $$
 
 This is the group-theoretic fact behind the standard statement that the discrete operations form an eight-element group. In the classification it is a statement about the intrinsic maps of $\mathrm{Cl}_{n,m}$ rather than an empirical input, and it is the reason the "more involutions than the standard four" of this article's opening is not an embarrassment: the eight operations are the four fundamental automorphisms *and* their composites with charge conjugation.

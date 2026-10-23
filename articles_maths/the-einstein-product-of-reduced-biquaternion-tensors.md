@@ -8,14 +8,6 @@ The article defines the product, proves that it is associative and unital, and p
 
 **The results.** The product of a tensor of order $m+n$ and a tensor of order $n+s$ has order $m+s$; it is bilinear over the algebra, associative, and unital in the square case. The matricisation is a bijection onto the matrices and satisfies $\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)$, so the square tensors of order $2m$ form an associative algebra isomorphic to $M_{N}(\mathbb{B}_{\mathrm{r}})$, $N=n_{1}\cdots n_{m}$, which is unital and, for $N\ge2$, not commutative. A square tensor is a unit exactly when its two complex coordinate matrices are nonsingular, and then its inverse is the pair of the two complex inverses; a nonzero square tensor is a zero divisor exactly when one coordinate matrix is singular, and a tensor whose entries are all units may still be a zero divisor.
 
-**Boundaries.** The tensor, its slices, its coefficient tensors and its Frobenius norm are *Reduced Biquaternion Tensors as a Vector Space*, above this article. The t-product of the third-order tensors is *The t-Product of Reduced Biquaternion Tensors*, below this article; it is a different product on a different class. The tensor product $\otimes$ of *Tensor Products of Algebras* is a product of algebras, not the contraction of arrays, and it is not the product of this article. The zero divisors of the element algebra are *Zero Divisors of the Algebra of the Reduced Biquaternions*; those of the t-product algebra are *Zero Divisors of the Reduced Biquaternion Tensor Algebra*, below this article.
-
-**Conventions.** A tensor is a plain capital typed by its exponent, $A\in\mathbb{B}_{\mathrm{r}}^{n_{1}\times\cdots\times n_{m}\times c_{1}\times\cdots\times c_{n}}$ as in the definition of the product, the order carried by the type and never by a script letter; its entries are lower case, $a_{p_{1}\cdots p_{m}l_{1}\cdots l_{n}}$, and the sizes of the modes are $n_{i}$, $c_{j}$ and $d_{k}$. A multi-index $P=(p_{1},\dots,p_{m})$ is written as one capital letter, and $a_{PL}$ abbreviates the entry with the row multi-index $P$ and the column multi-index $L$. The four real coefficient tensors are $A_{0},A_{1},A_{2},A_{3}$, the tensor being $A=A_{0}+A_{1}i+A_{2}j+A_{3}ij$, and the two complex coordinate tensors are
-$$
-A_{(1)}=A_{0}+A_{2}+i(A_{1}+A_{3}),\qquad A_{(2)}=A_{0}-A_{2}+i(A_{1}-A_{3}),
-$$
-these are the components written $X^{+}$ and $X^{-}$ in *Least Squares and Total Least Squares over the Reduced Biquaternions*; they satisfy $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$ with $\Pi_+=\tfrac12(1+j)$ and $\Pi_-=\tfrac12(1-j)$. The **Einstein product is written by juxtaposition**, $AB$, as the matrix product is: the source writes it $\ast$, and the corpus keeps the mark $\ast$ for the t-product, so the two products are not confused. The identity tensor is $\mathrm I$.
-
 ## The Product
 
 **Definition.** Let $A$ be a tensor of order $m+n$, with modes of sizes $n_{1},\dots,n_{m}$ before the contracted modes of sizes $c_{1},\dots,c_{n}$, and let $B$ be a tensor of order $n+s$, with the same contracted modes first and then modes of sizes $d_{1},\dots,d_{s}$. Their **Einstein product** is the tensor $AB$ of order $m+s$ with entries
@@ -58,7 +50,9 @@ the two index sets being read in row-major order when the matrix is written as a
 
 **Theorem (multiplicativity).** For $A$ of order $m+n$ and $B$ of order $n+s$ with the shapes of the definition,
 $$
-\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B).
+\boxed{\;
+\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)
+\;}.
 $$
 
 *Proof.* The entry of the right-hand side at $(P,Q)$ is $\sum_{L}\mathrm{mat}(A)_{PL}\mathrm{mat}(B)_{LQ}=\sum_{L}a_{PL}b_{LQ}$, which is the entry of $\mathrm{mat}(AB)$ at the same place by the definition of the product.
@@ -71,7 +65,9 @@ $$
 
 **Theorem (the unit criterion).** A square tensor $A$ is a unit of the algebra of square tensors if and only if both complex coordinate matrices $\mathrm{mat}(A_{(1)})$ and $\mathrm{mat}(A_{(2)})$ are nonsingular, and then the coordinate matrices of the inverse are their inverses,
 $$
-\mathrm{mat}\bigl((A^{-1})_{(1)}\bigr)=\mathrm{mat}(A_{(1)})^{-1},\qquad \mathrm{mat}\bigl((A^{-1})_{(2)}\bigr)=\mathrm{mat}(A_{(2)})^{-1}.
+\boxed{\;
+\mathrm{mat}\bigl((A^{-1})_{(1)}\bigr)=\mathrm{mat}(A_{(1)})^{-1},\qquad \mathrm{mat}\bigl((A^{-1})_{(2)}\bigr)=\mathrm{mat}(A_{(2)})^{-1}
+\;}.
 $$
 
 *Proof.* A matrix over $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ is invertible exactly when both its components are nonsingular complex matrices, by *Least Squares and Total Least Squares over the Reduced Biquaternions*, §*The Solution as a Zero Divisor*, and the components of the product are the products of the components; the matricisation carries the product to the matrix product.

@@ -18,13 +18,6 @@ article for the form itself. The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ 
 question for a symmetric product is *Jordan Algebras*; the matrix reading of the same form is
 *Introduction to the Symmetric Quaternionic Algebra*.
 
-**Conventions.** The operation is $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ with
-$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$; the norm is $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$;
-the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$; the real basis
-of the algebra is $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ over $\mathbb{R}$; the remarkable subspaces are
-$\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$,
-$\mathbb{M}_+$ and $\mathbb{M}_-$.
-
 ## The Form Read as a Product
 
 **Definition.** The **quaternion form** of the block is the symmetric $\mathbb{C}$-bilinear form
@@ -56,9 +49,7 @@ the diagonal $\langle\tilde Q\rangle_{\natural}$ is multiplicative and takes val
 **Proposition (the Gram matrix and the rank).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the Gram matrix of $\langle\cdot,\cdot\rangle_{\natural}$ is the
 unit matrix,
 
-$$
-G = I_4, \qquad \langle e_\mu,e_\nu\rangle_{\natural}=\delta_{\mu\nu},
-$$
+$$ \boxed{\; G = I_4, \qquad \langle e_\mu,e_\nu\rangle_{\natural}=\delta_{\mu\nu} \;}, $$
 
 so $\langle\cdot,\cdot\rangle_{\natural}$ is non-degenerate of rank $4$ over $\mathbb{C}$, and its radical — the set of elements paired to zero
 with the whole space — is $\{0\}$. The form is the standard symmetric form of $\mathbb{C}^4$ in the basis,
@@ -106,8 +97,10 @@ signature are both recorded here.
 **Proposition (the trace form).** The form is the trace pairing of the parent product,
 
 $$
+\boxed{\;
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \operatorname{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr)
-= \tfrac12\operatorname{Tr}\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr),
+= \tfrac12\operatorname{Tr}\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr)
+\;},
 $$
 
 and the trace of the left multiplication is the scalar part of the argument,
@@ -193,8 +186,10 @@ drawn from the quaternion subspace, the form $\langle\cdot,\cdot\rangle_{\natura
 over the Biquaternion $\mathbb{C}$ Space*,
 
 $$
+\boxed{\;
 \tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}} \quad\Longrightarrow\quad
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_2\rangle_{*}.
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_2\rangle_{*}
+\;}.
 $$
 
 For general complex elements the two differ: writing

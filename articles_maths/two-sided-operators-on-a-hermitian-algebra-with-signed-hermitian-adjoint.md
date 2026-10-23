@@ -22,8 +22,6 @@ Two facts decide the theory, and both are the Hermitian translation of facts of 
 
 The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*. The dagger, the involution $\sigma$ of the base and the correction of the semilinearity claims are from *Hilbert Algebras*. The general two-sided family, its five members and the composition law are *Two-Sided Operators on a Clifford Algebra*; the four-operator family with its horizontal and vertical defects is *Mixed Inner Conjugation and Hermitian Adjoint*; the unsigned member is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the unitary slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*. Nothing owned by those entries is re-derived; what is proved here is what the sign changes.
 
-**Conventions.** The base $A$ is a commutative ring with involution $\sigma$, the module $V$ is free of finite rank $n$ with a non-degenerate quadratic form $\mathfrak{Q}$, and $\mathrm{Cl}(V,\mathfrak{Q})$ is its Clifford algebra. The dagger is $x^{\dagger}=\sigma(\alpha(x^{r}))$, $\sigma$-semilinear over $A$ and of order two. The Clifford norm is $N(x)=x x^{\natural}=x^{\natural} x$ where it is a scalar, $\Gamma(V,\mathfrak{Q})$ is the Clifford group, and $U=\{x:x^{\dagger}x=1\}$ is the unitary slice. The grade involution $\alpha$ multiplies a homogeneous element of degree $k$ by $\varepsilon_x=(-1)^{k}$.
-
 ## The Operator and the Parity Sign
 
 **Definition.** The **signed Hermitian sandwich** of an element $x\in\mathrm{Cl}(V,\mathfrak{Q})$ is the map

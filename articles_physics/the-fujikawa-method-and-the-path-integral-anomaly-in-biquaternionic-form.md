@@ -22,8 +22,6 @@ recomputed here for all permutations. Because $\gamma_5=i\omega$ with $\omega$ t
 
 The article is organised as follows. A section sets up the measure and the chiral rotation. A section computes the Jacobian with the heat-kernel regulator. A section extracts the coefficient and identifies the density. A section gives the integrated form and the index. A section states the biquaternion interpretation of the rotation and the sector placement of $\alpha$. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ and $\Box=\partial^2/\partial Q_t^2+\Delta$. The Dirac module is $\Delta=S\oplus\bar{S}$ with $S=\mathbb{C}^2$, $\gamma_5=\mathrm{diag}(-I_2,I_2)$, projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$, and block representation
-
 $$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
@@ -130,7 +128,7 @@ and the trace vanishes for any repeated index; the identity was recomputed in th
 **The result.** Putting the pieces together, the anomaly density is
 
 $$
-A(x) = \frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\boxed{\;A(x) = \frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
 \qquad
 \mathcal{D}\psi\,\mathcal{D}\bar{\psi}\ \longmapsto\ \exp\!\left(-i\int d^4x\,\alpha(x)\,A(x)\right)\mathcal{D}\psi\,\mathcal{D}\bar{\psi},
 $$
@@ -173,8 +171,8 @@ $$
 evaluated directly with $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$ for sample fields; hence
 
 $$
-A(x) = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B
-= -\frac{ϙ^2}{2\pi^2}\,I_2 ,
+\boxed{\;A(x) = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B
+= -\frac{ϙ^2}{2\pi^2}\,I_2\;},
 $$
 
 which is the framework's second invariant $I_2$ of the biquaternion field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, in the normalization of the instanton article. The anomalous divergence is therefore the divergence of the axial current into the framework's own pseudoscalar invariant; the parity-odd density is parity-odd because $I_2$ is a pseudoscalar, and the topological character noted in the companion article is the total-derivative form of the same contraction.
@@ -252,8 +250,8 @@ so the axial charge transported in a background is twice the index. The index is
 The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. The massless Dirac action is invariant under $\psi\mapsto \exp(i\alpha(x)\gamma_5)\psi$; the measure is not; the Jacobian is $\exp(-i\int\alpha A)$, and the regulated trace defines the anomaly density. Regulating with $\mathcal{H}=(\gamma^\mu D_\mu)^2$ and the heat-kernel factor $\exp(-\mathcal{H}/M^2)$, the density is the trace of $\gamma_5$ against the heat kernel; the only surviving gamma-matrix trace is $\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$, recomputed for all $4!$ permutations with residual exactly zero, and the result is
 
 $$
-A(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-= -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B,
+\boxed{\;A(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+= -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B\;},
 $$
 
 so the anomaly density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one.

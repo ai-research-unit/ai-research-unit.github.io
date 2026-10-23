@@ -14,8 +14,6 @@ The article is the frame around the two central-force articles that follow. It d
 
 The treatment is classical and non-quantum throughout. The companion articles *The Harmonic Oscillator in Biquaternionic Form* and *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* treat the operator versions of two of these systems; the states, the operators and the canonical commutator do not appear here, and the only bracket used is the classical Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$, its pure part is the real three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$, and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$. For a quaternion $\vec a = a_1\vec e_x + a_2\vec e_y + a_3\vec e_z$ the biquaternion norm is $\langle \vec a\rangle_{\natural} = \vec a\vec a^{\natural} = |\vec a|^2e_t$, so that $\langle\cdot\rangle_{\natural}$ restricts to the positive Euclidean square on the real three-space. The trace satisfies $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ for $\tilde H_1,\tilde H_2 \in \mathbb{M}_+$.
-
 ## The Non-Relativistic Configuration
 
 ### Where the World Is Placed
@@ -95,7 +93,7 @@ The articles of this subcategory take **both** restrictions at once: they are no
 A force is **central** (about the origin) when it is everywhere directed along the position, $\vec F \parallel \vec r$. In the real-quaternion subalgebra this condition has three equivalent forms:
 
 $$
-\vec F\parallel\vec r \;\Longleftrightarrow\; \vec r\times\vec F = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 \;\Longleftrightarrow\; \vec F\,\vec r = -\vec F\cdot\vec r\,e_t \ \text{is central} .
+\boxed{\;\vec F\parallel\vec r \;\Longleftrightarrow\; \vec r\times\vec F = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 \;\Longleftrightarrow\; \vec F\,\vec r = -\vec F\cdot\vec r\,e_t \ \text{is central}\;}.
 $$
 
 The middle form uses the identity for two real pure quaternions,
@@ -117,7 +115,7 @@ A central force is therefore exactly a force that **commutes with the position**
 For a particle of momentum $\vec p$ the angular momentum is $\vec L = \vec r\times\vec p$. By the identity above,
 
 $$
-\vec L = \vec r\times\vec p = \tfrac12[\vec r, \vec p] .
+\boxed{\;\vec L = \vec r\times\vec p = \tfrac12[\vec r, \vec p]\;}.
 $$
 
 The three components $L_k$ are the three real coefficients of the commutator of the position and momentum quaternions. The product $\vec r\vec p$ contains both $\vec L$ and the scalar $-\vec r\cdot\vec p$,
@@ -139,7 +137,7 @@ $$
 because $[d\vec r/dt', d\vec r/dt'] = 0$ and $d\vec p/dt' = \vec F$. Hence
 
 $$
-d\vec L/dt' = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 ,
+\boxed{\;d\vec L/dt' = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0\;},
 $$
 
 which is precisely the criterion for a central force. **The conservation of angular momentum and the centrality of the force are the same algebraic condition**, and the derivation is a two-line computation in the algebra rather than a vector identity about torque. The torque $\vec\tau = \vec r\times\vec F$ is $\tfrac12[\vec r, \vec F]$, so the result is the standard $d\vec L/dt' = \vec\tau$ written as a commutator.
@@ -191,7 +189,7 @@ The reduction is the standard one; its role here is to display the scalar charac
 The orbit $r(\theta)$ is obtained from the radial equation by the substitution $u = 1/r$. With $h = L/m$ the areal law gives $d\theta/dt' = hu^2$, and differentiating $u$ with respect to $\theta$ rather than to $t'$ converts the radial equation into **Binet's equation** for a general central force:
 
 $$
-\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2},
+\boxed{\;\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}\;},
 $$
 
 where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt' = -h\,du/d\theta$ and $d^2r/d{t'}^2 = -h^2u^2\,d^2u/d\theta^2$ (with $u=1/r$), substituting into $md^2r/d{t'}^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.

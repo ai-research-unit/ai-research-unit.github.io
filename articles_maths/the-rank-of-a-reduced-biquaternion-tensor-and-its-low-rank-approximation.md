@@ -27,7 +27,9 @@ The rank counts the nonzero **diagonal tubes**, not the nonzero entries and not 
 **Theorem (the rank is the largest rank of the transform slices).** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$,
 
 $$
-\operatorname{rank}_{\mathrm t}(A)=\max_{1\le k\le n_3}\operatorname{rank}\bigl(\widehat A^{(k)}\bigr),
+\boxed{\;
+\operatorname{rank}_{\mathrm t}(A)=\max_{1\le k\le n_3}\operatorname{rank}\bigl(\widehat A^{(k)}\bigr)
+\;},
 $$
 
 where $\operatorname{rank}(\widehat A^{(k)})$ is the rank of the matrix over $\mathbb{B}_{\mathrm{r}}$, the larger of the two complex ranks of its idempotent coordinates.
@@ -65,9 +67,11 @@ plus $O(n_3k(n_1+n_2))$ for the reconstruction. The truncation is performed slic
 **Theorem (Eckart-Young for the tubal rank).** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ and every $1\le k\le w$,
 
 $$
+\boxed{\;
 \|A-A_k\|_{\mathrm F}
 =\min_{\operatorname{rank}_{\mathrm t}(B)\le k}\|A-B\|_{\mathrm F}
-=\Bigl(\sum_{i=k+1}^{w}\|S(i,i,:)\|_{\mathrm F}^2\Bigr)^{1/2}.
+=\Bigl(\sum_{i=k+1}^{w}\|S(i,i,:)\|_{\mathrm F}^2\Bigr)^{1/2}
+\;}.
 $$
 
 The minimum is attained at $A_k$; it is not unique when singular values coincide.

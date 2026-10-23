@@ -11,8 +11,6 @@ $$
 
 where $x\mapsto x^{r}$ is the reversion; this is an operator of the same family with the parameter conjugated. The adjoint therefore defines an involution on the parameters, and its consequences are geometric: the **self-adjoint** left multiplications are those with $\hat a=a$, the **orthogonal** ones are the units $a$ with $\hat aa=1$, and the multiplication by a vector is skew-adjoint, $L_u^*=-L_u$. The article collects these consequences and the corresponding statements for the twisted form of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*.
 
-**The boundaries.** The operator and its calculus are *The Left and Right Multiplication Operators on a Clifford Algebra*; the form, the Clifford conjugation and the twisted form are *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*; the right-hand mirror of the article is *The Adjoint of the Right Multiplication*; the two-sided operators are *The Adjoint of the Sandwich on a Hermitian Algebra* and *The Two-Sided Operators on a Hermitian Algebra*. The unitary and versor conditions in the geometry of the orthogonal group are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The base is a field $F$ of characteristic not $2$ with a non-degenerate $q$, $\mathfrak{Q}(u)=B(u,u)$, $uv+vu=2B(u,v)$.
-
 ## The Adjoint and Its Involution
 
 **Theorem.** For every $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the adjoint of the left multiplication for the standard form is $L_a^*=L_{\hat a}$; the map $a\mapsto\hat a$ is an anti-automorphism and an involution of the algebra, $\widehat{a+b}=\hat a+\hat b$, $\widehat{ab}=\hat b\hat a$, $\hat{\hat a}=a$, and $\vec u=-u$ for a vector $u$.

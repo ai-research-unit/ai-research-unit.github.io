@@ -6,8 +6,6 @@ The two forms of the complex space, the plain bilinear form $\langle Q_1,Q_2\ran
 
 The restriction here is read on a base of dimension one over $\mathbb{R}$; the forms and their algebraic norms are those of *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, above this article in this category, and the subspaces are those of *Complexoid Subspaces*. The topological norm $|\cdot|=\sqrt{\langle\cdot\rangle_{*}}$ and the invertibility criterion are *Complex Norm and Invertibility*, below this article in this category.
 
-**Conventions.** **Bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements of the two subspaces are written $Q_1=q_1$ and $Q_2=q_2$ on the real subspace and $Q_1=iq'_1$ and $Q_2=iq'_2$ on the imaginary one; the letters $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ are the two forms and are never elements. The form $\langle\cdot,\cdot\rangle_{\natural}$ coincides with $\langle\cdot,\cdot\rangle$ here, and the form $\langle\cdot,\cdot\rangle_{\natural*}$ with $\langle\cdot,\cdot\rangle_{*}$; *Complex Norm and Invertibility*, below this article in this category, writes the positive definite norm as $\langle Q\rangle_{*}=Q\bar Q$, the algebraic norm of $\langle\cdot\rangle_{*}$, not as $\langle Q\rangle_{\natural}=Q^2$.
-
 ## The Restriction Rule
 
 The **restriction** of a form $\varphi$ to a subspace $U$ is the form read on the elements of $U$,
@@ -23,7 +21,7 @@ and the only thing that happens is that the two arguments are confined to the su
 On the real subspace the bar is the identity, so the two forms coincide, and both are the multiplication of the coordinates,
 
 $$
-\langle q_1,q_2\rangle=\langle q_1,q_2\rangle_{*}=q_1q_2.
+\boxed{\;\langle q_1,q_2\rangle=\langle q_1,q_2\rangle_{*}=q_1q_2\;}.
 $$
 
 Both values are real, so the imaginary parts of the two forms vanish identically on the subspace; the algebraic norms are $\langle q_1\rangle=q_1^{2}$ and $\langle q_1\rangle_{*}=q_1^{2}$, the same square; both forms are positive definite, since $q_1^{2}>0$ for $q_1\neq0$; each has rank $1$ and is non-degenerate; and each has the null set $\{0\}$ alone, because $q_1^{2}=0$ forces $q_1=0$. The subspace carries one form, not two, and it is the definite one.
@@ -33,13 +31,13 @@ Both values are real, so the imaginary parts of the two forms vanish identically
 On the imaginary subspace the bar is the negation, so the two forms differ by a sign, and both are real again,
 
 $$
-\langle iq'_1,iq'_2\rangle=(iq'_1)(iq'_2)=-q'_1q'_2,\qquad \langle iq'_1,iq'_2\rangle_{*}=(iq'_1)\overline{(iq'_2)}=+q'_1q'_2.
+\boxed{\;\langle iq'_1,iq'_2\rangle=(iq'_1)(iq'_2)=-q'_1q'_2,\qquad \langle iq'_1,iq'_2\rangle_{*}=(iq'_1)\overline{(iq'_2)}=+q'_1q'_2\;}.
 $$
 
 The two forms are therefore the negative of each other on the subspace, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{*}$, and their common value is real, so the imaginary parts vanish there as well. The algebraic norms are opposite,
 
 $$
-\langle iq'_1\rangle=(iq'_1)^{2}=-q'^2_1,\qquad \langle iq'_1\rangle_{*}=(iq'_1)\overline{(iq'_1)}=+q'^2_1=-\langle iq'_1\rangle,
+\boxed{\;\langle iq'_1\rangle=(iq'_1)^{2}=-q'^2_1,\qquad \langle iq'_1\rangle_{*}=(iq'_1)\overline{(iq'_1)}=+q'^2_1=-\langle iq'_1\rangle\;},
 $$
 
 so the algebraic norm of $\langle\cdot\rangle$ is the negative square and the algebraic norm of $\langle\cdot\rangle_{*}$ the positive one. The form $\langle\cdot,\cdot\rangle$ is **negative definite** on the subspace, its value $-q'^2_1$ vanishing only at the origin; the form $\langle\cdot,\cdot\rangle_{*}$ is **positive definite**, its value $+q'^2_1$ vanishing only at the origin; each has rank $1$, is non-degenerate, and has the null set $\{0\}$ alone.

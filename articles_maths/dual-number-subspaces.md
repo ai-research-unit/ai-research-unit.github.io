@@ -26,7 +26,9 @@ The scope boundaries are these. This article owns the submodule lattice, the rel
 Dual conjugation $\bar{\cdot}$ is an involution of $\mathbb{D}'_R$ with eigenvalues $+1$ and $-1$, and its eigenspace decomposition is
 
 $$
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Q = \underbrace{q}_{+1} + \underbrace{\varepsilon q'}_{-1}.
+\boxed{\;
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Q = \underbrace{q}_{+1} + \underbrace{\varepsilon q'}_{-1}
+\;}.
 $$
 
 The two projections are $Q \mapsto \tfrac{1}{2}(Q + \bar Q) = \operatorname{Re}(Q)$ and $Q \mapsto \tfrac{1}{2}(Q - \bar Q) = \operatorname{Inf}(Q)\varepsilon$.
@@ -257,7 +259,9 @@ $$
 **Theorem.** $f = u + v\varepsilon$ is dual differentiable, that is $\bar{\partial} f = 0$, if and only if $u$ and $v$ satisfy
 
 $$
-u_{q'} = 0, \qquad v_{q'} = u_q.
+\boxed{\;
+u_{q'} = 0, \qquad v_{q'} = u_q
+\;}.
 $$
 
 **Proof.** Both components of $\bar{\partial} f = u_{q'} + (v_{q'} - u_q)\varepsilon$ must vanish.
@@ -291,7 +295,9 @@ in the variable $\eta = \varepsilon$, and the first-order neighbourhood of a poi
 For a smooth function $g : \mathbb{R} \to \mathbb{R}$ the extension to the first-order neighbourhood is
 
 $$
-g(q + \varepsilon q') = g(q) + q'\,g'(q)\,\varepsilon,
+\boxed{\;
+g(q + \varepsilon q') = g(q) + q'\,g'(q)\,\varepsilon
+\;},
 $$
 
 exact because $\varepsilon^2 = 0$: the Taylor series of $g$ terminates at its first-order term. The same statement for the whole dual algebra is that the differential of $g$ is recovered from the first-order part,
@@ -343,7 +349,9 @@ $$
 and this factorisation is the reason holomorphic functions are harmonic. In the dual algebra the corresponding operators are $\partial/\partial q$ and $\bar{\partial} = \partial/\partial q' - \varepsilon\partial/\partial q$, and
 
 $$
-\partial/\partial q\,\bar{\partial} = \partial^2/\partial q\partial q' - \varepsilon\,\partial^2/\partial q^2 = \partial^2/\partial q\partial q' - \varepsilon\,\partial^2/\partial q^2,
+\boxed{\;
+\partial/\partial q\,\bar{\partial} = \partial^2/\partial q\partial q' - \varepsilon\,\partial^2/\partial q^2 = \partial^2/\partial q\partial q' - \varepsilon\,\partial^2/\partial q^2
+\;},
 $$
 
 which is not $\Delta$ in any sign, and cannot be brought into the form $\partial^2/\partial q^2 + \partial^2/\partial q'^2$ by any choice of the two first-order factors. The reason is the degeneracy: the two complex Wirtinger operators $\partial/\partial A$, $\partial/\partial\bar A$ are conjugates of one another and their product recovers a positive form, whereas here the conjugate of $\bar{\partial}$ in the sense of dual conjugation changes the sign of the nilpotent term only,

@@ -7,8 +7,6 @@ The norm $\langle Q\rangle_{*}=q^2-q'^2$ of the split-complex algebra decides in
 
 The article owns the quadratic space $(\mathbb{D},N)$ read geometrically, the projective null quadric and the two points at infinity, the action of the hyperbolic group as a projectivity, and the cross-ratio description of the hyperbolic distance; the norm and its polarisation are defined and owned by *Norm and Invertibility in the General Split-Complex Algebra*, and are used here as the geometric input. No physics is invoked and no new result is claimed.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1$, $j$ with $j^2=+1$; a general element is $Q=q+j q'$ with $q,q'\in\mathbb{R}$; idempotents $\Pi_\pm=\tfrac12(1\pm j)$; norm $\langle Q\rangle_{*}=q^2-q'^2$, of signature $(1,1)$. The projective line of one-dimensional subspaces is written $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$, with homogeneous coordinates $[q:q']$ and affine coordinate $t=q'/q$.
-
 ## The Quadratic Space
 
 The norm $\langle q,q'\rangle_{*}=q^2-q'^2$ and its polarisation are defined and owned by *Norm and Invertibility in the General Split-Complex Algebra*; the present article reads them geometrically. The form is homogeneous of degree two, and it polarises to the symmetric real-bilinear form

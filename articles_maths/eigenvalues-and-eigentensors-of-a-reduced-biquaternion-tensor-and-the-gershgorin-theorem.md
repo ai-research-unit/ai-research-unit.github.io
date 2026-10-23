@@ -8,10 +8,6 @@ The article defines the problem, proves the reduction to the two complex coordin
 
 **The results.** The spectrum of a square tensor is the union of the two coordinate spectra of its two complex coordinate tensors; it is nonempty and unbounded. The eigenvalues with an eigentensor whose two coordinates are both nonzero are exactly the pairs of an eigenvalue of each coordinate tensor, which is the pairing theorem of the source. The Gershgorin theorem locates at least one coordinate of an eigenvalue in the Gershgorin set of the corresponding complex tensor, so the spectrum lies in the union of the two sets over the complex Gershgorin sets. If $A^{n}=a\mathrm I$, every coordinate of an eigenvalue whose eigentensor coordinate does not vanish is an $n$-th root of the corresponding coordinate of $a$; the $n^{2}$ roots of the source, displayed for a unit $a$, are computed coordinatewise but are neither the spectrum, nor a subset of it, nor a superset of it.
 
-**Boundaries.** The Einstein product, the matricisation and the units are *The Einstein Product of Reduced Biquaternion Tensors*, above this article. The spectrum of an **element**, the pair of its idempotent coordinates, is *Reduced Biquaternion Spectral Theory*; this article treats the spectrum of a **tensor**. The bar, the tessarine sign and the star are *The Two Involutions and the Group of Involutions*, and the algebraic norm $\langle\cdot\rangle_{\mathrm{ts}}$ is *The Four Products, Their Forms and Their Algebraic Norms*. The t-product is a different product, and its spectral reading is not the subject here. The complex eigenvalue problem, the discs and the maximal-entry argument are the classical ones of Horn and Johnson, *Matrix Analysis*.
-
-**Conventions.** The tensor is a plain capital typed by its exponent, $A\in\mathbb{B}_{\mathrm{r}}^{n_{1}\times\cdots\times n_{m}\times n_{1}\times\cdots\times n_{m}}$ in the square case, and its entries are $a_{PL}$ at the row multi-index $P$ and the column multi-index $L$. The two complex coordinate tensors are $A_{(1)}$ and $A_{(2)}$, with $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$, and the element $\lambda$ is written $\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-$; the coordinates $\lambda_{(1)},\lambda_{(2)}$ are the idempotent coordinates written $q_{1},q_{2}$ in *Reduced Biquaternion Spectral Theory*. The **spectrum** of $A$ is $\sigma(A)$; the **spectrum** of a complex tensor $M$ is the set of complex $z$ with $MX=zX$ for some nonzero $X$, and its Gershgorin set is $\Gamma(M)$. The idempotents are $\Pi_+=\tfrac12(1+j)$ and $\Pi_-=\tfrac12(1-j)$.
-
 ## The Eigenvalue Problem
 
 **Definition.** Let $A$ be square of order $2m$, with the modes $n_{1},\dots,n_{m}$ on both sides, and let $X$ be a tensor of order $m$ with the modes $n_{1},\dots,n_{m}$. A reduced biquaternion $\lambda$ is an **eigenvalue** of $A$ when $AX=\lambda X$ for some nonzero $X$, and $X$ is an **eigentensor** of $\lambda$. The **spectrum** $\sigma(A)$ is the set of eigenvalues.
@@ -33,7 +29,9 @@ $$
 
 **Theorem (the spectrum is the union of the two coordinate spectra).**
 $$
-\sigma(A)=\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\sigma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\sigma(A_{(2)})\bigr\}.
+\boxed{\;
+\sigma(A)=\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\sigma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\sigma(A_{(2)})\bigr\}
+\;}.
 $$
 
 *Proof.* If $\lambda$ is an eigenvalue with eigentensor $X$, then $X\neq0$, so at least one coordinate $X_{(i)}$ is nonzero, and the coordinate equation of the reduction makes $\lambda_{(i)}$ an eigenvalue of $A_{(i)}$. Conversely, if $\lambda_{(1)}\in\sigma(A_{(1)})$ with eigentensor $Y\neq0$, the tensor $X=Y\Pi_+$ is nonzero and $AX=\lambda X$ for every $\lambda_{(2)}$, because the second coordinate of $X$ vanishes; symmetrically for the second coordinate.
@@ -63,7 +61,9 @@ $$
 
 **Theorem (the Gershgorin theorem for reduced biquaternion tensors).**
 $$
-\sigma(A)\subseteq\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\Gamma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\Gamma(A_{(2)})\bigr\}.
+\boxed{\;
+\sigma(A)\subseteq\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\Gamma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\Gamma(A_{(2)})\bigr\}
+\;}.
 $$
 
 *Proof.* Let $\lambda$ be an eigenvalue with eigentensor $X$. Some coordinate $X_{(i)}$ is nonzero, and the coordinate reduction makes $\lambda_{(i)}$ an eigenvalue of $A_{(i)}$; the complex lemma gives $\lambda_{(i)}\in\Gamma(A_{(i)})$, and the conclusion follows.
@@ -87,7 +87,9 @@ $$
 
 **Corollary (the roots).** With $a$ a unit, so that $a_{(1)},a_{(2)}\neq0$, and $a_{(k)}=r_{k}e^{i\theta_{k}}$, $0\le\theta_{k}<2\pi$, the roots of $\lambda^{n}=a$ are
 $$
-\lambda_{s,t}=(\sqrt[n]{a_{(1)}})_{s}\Pi_++(\sqrt[n]{a_{(2)}})_{t}\Pi_-,\qquad (\sqrt[n]{z})_{s}=r^{1/n}e^{i(\theta+2\pi s)/n},
+\boxed{\;
+\lambda_{s,t}=(\sqrt[n]{a_{(1)}})_{s}\Pi_++(\sqrt[n]{a_{(2)}})_{t}\Pi_-,\qquad (\sqrt[n]{z})_{s}=r^{1/n}e^{i(\theta+2\pi s)/n}
+\;},
 $$
 with $s,t=0,\dots,n-1$.
 

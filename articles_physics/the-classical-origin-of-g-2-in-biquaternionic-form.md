@@ -98,7 +98,7 @@ The gyromagnetic ratio is the convective value
 
 $$
 \boxed{\;\gamma_{\rm conv} = \frac{ϙ}{2m},
-\qquad g = 1,\;}
+\qquad g = 1\;},
 $$
 
 and this is the **classical theorem**: any rigid distribution of charge whose density is proportional to its mass density has $g = 1$, independently of the shape of the body. The theorem is the reason $g = 1$ is the reference value, and the reason a measured value different from one is evidence of magnetism that is not a convective current.
@@ -165,7 +165,6 @@ $$
 $$
 
 and its eigenvalues are $\pm\hbar/2$. The half in the angular-momentum generator $g_k = -\tfrac{1}{2}\vec e_k$ is the half-integer weight of the spin; the same half is the reason the intrinsic angular momentum of a spin comes in units of $\hbar/2$ and not $\hbar$.
-
 
 ### The Double Cover of the Rotor
 
@@ -303,7 +302,7 @@ so that the orbital case ($w_{\rm rot}=1$) gives $\mu/L = ϙ/2m$ and $g=1$, and 
 $$
 \frac{\mu}{S} = \frac{ϙ}{m},
 \qquad
-\boxed{\;g = 2\;.}
+\boxed{\;g = 2\; }.
 $$
 
 The factor two is thus the double-cover factor of the biquaternion rotor, an algebraic property of the representation and not a dynamical coincidence; it is present in the non-relativistic, non-quantum algebra, and it is the factor that the companion articles on Larmor precession and on the Einstein–de Haas and Barnett effects presuppose. The same value follows dynamically from the coefficient $1/2m$ produced by eliminating the small component of the relativistic Dirac field, and the two accounts agree because they compute the same double cover. The algebra fixes the ratio and hence $g$; the scale of the moment, one Bohr magneton $\mu_B = e\hbar/2m_e$, is imported from the quantum normalization. The measured anomaly $a=(g-2)/2\approx\alpha/2\pi$ is a radiative correction outside the classical account.

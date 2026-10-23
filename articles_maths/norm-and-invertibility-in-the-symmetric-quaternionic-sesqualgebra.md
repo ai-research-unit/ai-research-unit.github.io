@@ -31,25 +31,6 @@ Biquaternions* and is recalled here because the whole of the invertibility quest
 then reads the algebraic norm, its failure of multiplicativity, the regularity that replaces invertibility,
 and the **absence of a criterion**: $\langle\cdot\rangle_{\natural*}$ does not detect the zero divisors.
 
-**Boundaries.** The product, its class and its two one-sided actions are *Introduction to the Symmetric
-Quaternionic Sesqualgebra of Biquaternions* and *The Two One-Sided Actions and the Absence of a Unit*; the
-zero divisors and the regular elements are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the
-operators are *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ and its
-isotropy are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Isotropic
-Structure of the General Quaternionic Sesqualgebra*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a
-different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
-$\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
-scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$; ${}^{\natural}$ negates
-$\vec e_x,\vec e_y,\vec e_z$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
-${}^{*}={}^{\natural}\circ\bar{\cdot}$. The **algebraic norm of the block** is
-$\langle\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$,
-the diagonal of the **Krein form** $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ with
-$\varepsilon=(1,-1,-1,-1)$; the square of an element is
-$\tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$.
-Throughout this article the product is the block.
-
 **The results.** The block has no unit, so no element has an inverse and the group of units is empty. It carries one algebraic norm, the Krein form $\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, real and indefinite of signature $(2,6)$, which is **not multiplicative** and does **not** detect the zero divisors: $\langle e_t+\vec e_x\rangle_{\natural*}=0$ on a regular element and $\langle \vec e_x\rangle_{\natural*}=-1$ on a pure zero divisor. Invertibility is replaced by regularity, $Q_t\neq0$ and $C(\tilde Q)\neq0$, where the left multiplication is injective with rank eight, six and four on the regular, non-pure and pure classes and rank zero at the origin.
 
 ## Definition
@@ -118,9 +99,7 @@ form, with one argument its diagonal.
 **Theorem (the square and the algebraic norm).** For every $\tilde Q$ the square is a real quaternion,
 $\mathrm{Sc}(\tilde Q\star\tilde Q)=\langle\tilde Q\rangle_{\natural*}$, and
 
-$$
-\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q,
-$$
+$$ \boxed{\; \tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q \;}, $$
 
 with vector part $-2\mathrm{Re}(Q_t\overline{\vec Q})$.
 
@@ -145,9 +124,7 @@ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternio
 
 **Theorem (neither the algebraic norm nor the square is multiplicative).** For the block,
 
-$$
-\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\,\langle\tilde Q_2\rangle_{\natural*}\quad\text{in general},
-$$
+$$ \boxed{\; \langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\,\langle\tilde Q_2\rangle_{\natural*}\quad\text{in general} \;}, $$
 
 and the square map is not multiplicative,
 $(\tilde Q_1\star\tilde Q_2)\star(\tilde Q_1\star\tilde Q_2)\neq(\tilde Q_1\star\tilde Q_1)\star(\tilde Q_2\star\tilde Q_2)$.
@@ -195,9 +172,11 @@ no criterion can name one; and the algebraic norm does not decide the zero-divis
 implications
 
 $$
+\boxed{\;
 \langle\tilde Q\rangle_{\natural*}=0\ \Longrightarrow\ \tilde Q\text{ is a zero divisor},
 \qquad
 \tilde Q\text{ is a zero divisor}\ \Longrightarrow\ \langle\tilde Q\rangle_{\natural*}=0
+\;}
 $$
 
 both failing.

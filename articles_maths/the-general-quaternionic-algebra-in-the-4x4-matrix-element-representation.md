@@ -7,8 +7,6 @@ The left regular representation $\mathsf{M}_4$ of *Introduction to the 4×4 Matr
 
 The regular representation has one advantage over the $2\times2$ realization in this group: the characteristic operation ${}^{\natural}$ is a transposition, and the transposition is the operation that the regular matrix already carries. The general quaternionic bilinear form therefore needs no adjugate, and the determinant of the regular matrix is the square of the norm, the two factors being the two copies of the simple module.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde{Q}_1=\sum_\mu Q_{1,\mu} e_\mu$ and $\tilde{Q}_2=\sum_\mu Q_{2,\mu} e_\mu$ with $Q_{1,\mu},Q_{2,\mu}\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$; the quaternionic product $\tilde{Q}_1\star\tilde{Q}_2=\tilde{Q}_1^{\natural}\tilde{Q}_2$ with norm $\langle\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$.
-
 ## The Representation
 
 **Definition.** The **left regular matrix** is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,
@@ -34,7 +32,7 @@ $$
 **Theorem (the product is the transposed product of the regular matrices).** For all biquaternions,
 
 $$
-\mathsf{M}_4(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q}_1)^{\mathsf{T}}\,\mathsf{M}_4(\tilde{Q}_2) ,
+\boxed{\; \mathsf{M}_4(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q}_1)^{\mathsf{T}}\,\mathsf{M}_4(\tilde{Q}_2) \;},
 $$
 
 so the quaternionic product is read on the regular matrices by transposing the first factor and multiplying.
@@ -50,7 +48,7 @@ so the quaternionic product is read on the regular matrices by transposing the f
 **Theorem (the trace pairing of the transposed regular matrix).** For all biquaternions,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)^{\mathsf{T}}\bigr) = 2\,\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} ,
+\boxed{\; \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)^{\mathsf{T}}\bigr) = 2\,\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} \;},
 $$
 
 so the trace pairing of the regular matrices with the second factor transposed is twice the general quaternionic bilinear form of the algebra.
@@ -60,7 +58,7 @@ so the trace pairing of the regular matrices with the second factor transposed i
 **Theorem (the diagonal is the norm).** On the diagonal,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_1)^{\mathsf{T}}\bigr) = 2\,\langle\tilde{Q}_1\rangle_{\natural} = 2\det\mathsf{M}_4(\tilde{Q}_1) ,
+\boxed{\; \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_1)^{\mathsf{T}}\bigr) = 2\,\langle\tilde{Q}_1\rangle_{\natural} = 2\det\mathsf{M}_4(\tilde{Q}_1) \;},
 $$
 
 so the pairing at the two equal arguments is twice the determinant of the element, the determinant of the regular matrix being its square.

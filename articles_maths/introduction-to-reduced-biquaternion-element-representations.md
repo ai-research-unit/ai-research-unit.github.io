@@ -4,10 +4,6 @@
 
 An **element representation** writes the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ as an object of another kind — a quadruple of real numbers, a pair of complex numbers, a pair of idempotent coordinates, a $2\times2$ matrix, a pair of polar data. This article names the representations of the block and fixes the two structural facts that make the block short. The first is that the algebra is **commutative**, **associative** and **unital**, so its multiplication is the general plain product. The second is that it is **semisimple** and a direct product of two copies of $\mathbb{C}$, so **every representation is a direct sum of copies of the two one-dimensional characters** and no irreducible representation has dimension greater than one. That is the exact opposite of the biquaternion case, where the algebra is simple and carries a single irreducible representation, of complex dimension two.
 
-**Conventions.** $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; a general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with the two complex coordinates $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$. The idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, the **idempotent coordinates** are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The multiplication is commutative, it **has zero divisors** — the two idempotent lines — and it is **not a division algebra**. The four general products and the forms $B,N,H,K$ are *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, upper case, with the breve and without a tilde, the reduced algebra having no quaternionic factor.
-
-**Boundaries.** The algebra is *Reduced Biquaternion Space* and *Introduction to the Algebra of the Reduced Biquaternions*; the bases and the linear or antilinear characters are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*; the involutions are *The Two Involutions and the Group of Involutions*; the idempotent coordinates and the splitting $\mathbb{C}\oplus\mathbb{C}$ are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, and the matrices already written for the algebra are *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*. The representations of an element are written in the four articles below: *The Four-Vector Element Representation of the Reduced Biquaternions*, *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*, *Reduced Biquaternion Other Algebraic Element Representations* and *Modulus–Unit Polar Decomposition of Reduced Biquaternions*; the operators of the four products are *Operators on the Reduced Biquaternions*. The biquaternion counterpart is *Introduction to Biquaternion Element Representations*.
-
 ## Representations and Modules
 
 **A representation of the algebra is a homomorphism of $\mathbb{C}$-algebras into an endomorphism algebra, and a module is the same data read as an action.**
@@ -22,7 +18,7 @@ A **(left) module** is a complex vector space $V$ with a multiplication $\mathbb
 
 **Theorem (the regular representation is faithful).** $L_{\breve Q}=0$ if and only if $\breve Q=0$, so $\rho_{\mathrm{reg}}$ is injective and its image is an algebra isomorphic to $\mathbb{B}_{\mathrm{r}}$,
 $$
-\rho_{\mathrm{reg}}(\mathbb{B}_{\mathrm{r}})=\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm{r}}\}\cong\mathbb{B}_{\mathrm{r}},
+\boxed{\;\rho_{\mathrm{reg}}(\mathbb{B}_{\mathrm{r}})=\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm{r}}\}\cong\mathbb{B}_{\mathrm{r}}\;},
 $$
 a commutative two-dimensional subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})\cong M_{2}(\mathbb{C})$.
 
@@ -60,7 +56,7 @@ Each is a $\mathbb{C}$-algebra homomorphism into the one-dimensional algebra $\m
 
 **Theorem (complete reducibility).** Every module is a direct sum of copies of $\lambda_+$ and $\lambda_-$; the regular representation is
 $$
-\rho_{\mathrm{reg}}\cong\lambda_+\oplus\lambda_-,
+\boxed{\;\rho_{\mathrm{reg}}\cong\lambda_+\oplus\lambda_-\;},
 $$
 each character with multiplicity one.
 
@@ -103,7 +99,7 @@ each character with multiplicity one.
 
 **Theorem.** $U=Q_{+}\Pi_++Q_{-}\Pi_-$ is a unit if and only if $\langle U\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$, that is $Q_{+}\neq0$ and $Q_{-}\neq0$; the unit group is
 $$
-\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\cong (S^{1}\times S^{1})\times(\mathbb{R}_{>0}\times\mathbb{R}_{>0}),
+\boxed{\;\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\cong (S^{1}\times S^{1})\times(\mathbb{R}_{>0}\times\mathbb{R}_{>0})\;},
 $$
 connected and abelian.
 

@@ -7,8 +7,6 @@ The twisted two-sided operator $\Theta_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde
 
 The two constituents are the **pin group** $\mathrm{Pin}=\{\tilde Q_5\in\mathbb{B}^\times:\langle\tilde Q_5\rangle_{\natural}=\pm1\}$ and the **spin group** $\mathrm{Spin}=\{\tilde Q_5\in\mathbb{B}^\times:\langle\tilde Q_5\rangle_{\natural}=1\}$, the latter of index two. The twisted operator is *Two-Sided Operators on the General Quaternionic Algebra*; the one-sided factors are *One-Sided Operators on the General Quaternionic Algebra*; the form and its orthogonal group are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the unit group into which both groups sit is *The Biquaternion Unit Group as a Topological Group*; the general Clifford theory of the pin and spin groups is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, of which this is the biquaternion instance; and the vector subspace and the reflection are *Introduction to the Remarkable Subspaces* and *Biquaternion Rotations and Lorentz Transformations*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde Q_5=\sum_\mu A_\mu e_\mu$, and is written $\tilde Q_5=A_te_t+\vec A$ with the vector part $\vec A=\sum_{k=1}^{3}A_k\vec e_k$. The natural conjugation is $\tilde Q_5^{\natural}=A_te_t-\vec A$; it is $\mathbb{C}$-linear, an involution, and the sign character of the algebra, since it fixes the centre and negates the vector subspace. The norm is $\langle\tilde Q_5\rangle_{\natural}=\tilde Q_5\tilde Q_5^{\natural}=\sum_\mu A_\mu^2$, central and multiplicative, and the general quaternionic bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, so that $\langle\tilde Q_5\rangle_{\natural}=\langle\tilde Q_5,\tilde Q_5\rangle_{\natural}$. The vector subspace is $V=\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, of complex dimension $3$, and the reflection in it is $\rho_{\tilde{Q}_4}(\tilde W)=\tilde W-2\langle\tilde W,\tilde{Q}_4\rangle_{\natural}\langle\tilde{Q}_4\rangle_{\natural}^{-1}\tilde{Q}_4$ for $\tilde{Q}_4\in V$ with $\langle\tilde{Q}_4\rangle_{\natural}\neq0$.
-
 ## The Two Groups
 
 **Definition.** The **pin group** and the **spin group** of the general quaternionic bilinear form are
@@ -27,8 +25,8 @@ $$
 **Proposition (the matrix identifications).** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, with $\det\mathsf{M}_2(\tilde Q_5)=\langle\tilde Q_5\rangle_{\natural}$,
 
 $$
-\mathrm{Spin}\cong SL_2(\mathbb{C}),\qquad
-\mathrm{Pin}\cong\{\tilde Q_5\in GL_2(\mathbb{C}):\det\mathsf{M}_2(\tilde Q_5)^{2}=1\},
+\boxed{\; \mathrm{Spin}\cong SL_2(\mathbb{C}),\qquad
+\mathrm{Pin}\cong\{\tilde Q_5\in GL_2(\mathbb{C}):\det\mathsf{M}_2(\tilde Q_5)^{2}=1\} \;},
 $$
 
 and $\mathrm{Spin}$ is the norm-one subgroup of real dimension $6$ of *The Biquaternion Unit Group as a Topological Group*.
@@ -40,7 +38,7 @@ and $\mathrm{Spin}$ is the norm-one subgroup of real dimension $6$ of *The Biqua
 **Theorem (the cover).** The assignment $\tilde Q_5\mapsto\Theta_{\tilde Q_5}$ is a group homomorphism from $\mathrm{Pin}$ to the group of automorphisms of the general quaternionic bilinear form, with kernel $\{\pm e_t\}$; it is therefore a two-to-one cover of its image,
 
 $$
-\mathrm{Pin}/\{\pm e_t\}\ \cong\ \{\Theta_{\tilde Q_5}:\langle\tilde Q_5\rangle_{\natural}=\pm1\}\ \subset\ O(\mathbb{B},N).
+\boxed{\; \mathrm{Pin}/\{\pm e_t\}\ \cong\ \{\Theta_{\tilde Q_5}:\langle\tilde Q_5\rangle_{\natural}=\pm1\}\ \subset\ O(\mathbb{B},N) \;}.
 $$
 
 *Proof.* The composition law $\Theta_{\tilde Q_5}\Theta_{\tilde Q_2}=\Theta_{\tilde Q_5\tilde Q_2}$ makes the assignment a homomorphism; the preservation condition is $\langle\Theta_{\tilde Q_5}\tilde Q_1\rangle_{\natural}=\langle\tilde Q_5\rangle_{\natural}^{2}\langle\tilde Q_1\rangle_{\natural}$, which is preservation exactly for $\langle\tilde Q_5\rangle_{\natural}=\pm1$; and the kernel is $\{\pm e_t\}$ by the injectivity up to sign of the assignment, $\Theta_{\tilde Q_5}=\Theta_{\tilde Q_2}$ for units being $\tilde Q_2=\pm\tilde Q_5$.
@@ -48,7 +46,7 @@ $$
 **Proposition (the norm-one image is the rotation group of the vector subspace).** On $\mathrm{Spin}$ the twisted operator is the inner automorphism, $\Theta_{\tilde Q_5}=\mathrm{Ad}_{\tilde Q_5}$ for $\langle\tilde Q_5\rangle_{\natural}=1$, and the image is the group of inner automorphisms of the algebra,
 
 $$
-\Theta(\mathrm{Spin})\ \cong\ \mathrm{Spin}/\{\pm e_t\}\ \cong\ \mathrm{Inn}(\mathbb{B})\ \cong\ PGL_2(\mathbb{C})\ \cong\ SO_3(\mathbb{C}),
+\boxed{\; \Theta(\mathrm{Spin})\ \cong\ \mathrm{Spin}/\{\pm e_t\}\ \cong\ \mathrm{Inn}(\mathbb{B})\ \cong\ PGL_2(\mathbb{C})\ \cong\ SO_3(\mathbb{C}) \;},
 $$
 
 of complex dimension $3$, acting on $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus V$ by fixing the centre pointwise and rotating the vector subspace. Under this action $\mathrm{Spin}\cong SL_2(\mathbb{C})$ is the classical two-to-one cover of the rotation group.

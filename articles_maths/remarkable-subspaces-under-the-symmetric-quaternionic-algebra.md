@@ -21,13 +21,6 @@ recomputed. The isotropic elements are *Zero Divisors of the Biquaternion Algebr
 Elements of the Symmetric Quaternionic Algebra*; the staying-inside statement for the symmetrised quaternionic
 product is *Remarkable Subspaces and the Four General Products*.
 
-**Conventions.** A general element is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ with $\vec Q_2=\sum_{\mu\in\{x,y,z\}}Q_{2,\mu}\vec e_\mu$ and
-$Q_{2,\mu}\in\mathbb{C}$; $A,B$ are complex numbers; $h,g$ are real quaternions, $h=h_te_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ with
-$h_\mu\in\mathbb{R}$; and $\vec p,\vec q,\vec r$ are real vectors of $\mathbb{R}^3$. The remarkable subspaces have the real bases $\{e_t,ie_t\}$ for the centre, $\{\vec e_k,i\vec e_k\}$ for the vector subspace,
-$\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ for $\mathbb{H}_{\mathbb{B}}$, $\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ for
-$i\mathbb{H}_{\mathbb{B}}$, $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ for $\mathbb{M}_+$ and $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ for
-$\mathbb{M}_-$.
-
 **Definition.** A subspace $U$ **stays inside itself** under $\star$, or is **kept inside itself** by $\star$,
 when $\tilde Q_1,\tilde Q_2\in U$ implies $\tilde Q_1\star\tilde Q_2\in U$.
 
@@ -54,9 +47,7 @@ form.
 On $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ the general elements are $\vec Q_1$ and
 $\vec Q_2$, and
 
-$$
-\vec Q_1\star\vec Q_2 = \bigl(\vec Q_1,\vec Q_2\bigr)e_t .
-$$
+$$ \boxed{\; \vec Q_1\star\vec Q_2 = \bigl(\vec Q_1,\vec Q_2\bigr)e_t \;}. $$
 
 The product does not stay in the vector subspace: it is central, and it is in the subspace only when the
 coefficient vanishes. The **smallest nonzero value off the subspace** is $e_t$, produced by the pair
@@ -70,9 +61,7 @@ $\sum_kQ_{2,k}^2=0$ of *Zero Divisors of the Biquaternion Algebra*.
 On $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ the general elements are real quaternions $h$ and
 $g$, and
 
-$$
-h\star g = \bigl(h_tg_t+h_xg_x+h_yg_y+h_zg_z\bigr)e_t .
-$$
+$$ \boxed{\; h\star g = \bigl(h_tg_t+h_xg_x+h_yg_y+h_zg_z\bigr)e_t \;}. $$
 
 The coefficient is real, so the product is a real multiple of $e_t$, an element of the real line
 $\mathbb{R}e_t\subset\mathbb{H}_{\mathbb{B}}$: the quaternion subspace is kept inside itself by $\star$. It is a **definite**
@@ -101,9 +90,7 @@ negative sign, so there is no isotropic element; the idempotent is $0$ alone, $e
 On $\mathbb{M}_+=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the general elements are $a_te_t+i\vec p$ and
 $b_te_t+i\vec q$ with $a_t,b_t$ real and $\vec p,\vec q$ real vectors, and
 
-$$
-(a_te_t+i\vec p)\star(b_te_t+i\vec q) = \bigl(a_tb_t-(\vec p,\vec q)\bigr)e_t .
-$$
+$$ \boxed{\; (a_te_t+i\vec p)\star(b_te_t+i\vec q) = \bigl(a_tb_t-(\vec p,\vec q)\bigr)e_t \;}. $$
 
 The coefficient is real, so the product is a real multiple of $e_t$, an element of the real line
 $\mathbb{R}e_t\subset\mathbb{M}_+$: the Hermitian subspace is kept inside itself by $\star$. The idempotents of the

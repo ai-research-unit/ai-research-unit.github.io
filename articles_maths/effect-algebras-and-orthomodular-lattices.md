@@ -69,7 +69,7 @@ The theorem is the reason the present article belongs to the Boolean category: t
 Let $H$ be a Hilbert space over $\mathbb{K} \in \{\mathbb{R}, \mathbb{C}\}$, with inner product written $\langle \cdot, \cdot \rangle$, and let $P(H)$ be the set of closed subspaces of $H$, ordered by inclusion. The meet of two closed subspaces is their intersection and the join is the closure of their sum,
 
 $$
-M \wedge N = M \cap N, \qquad M \vee N = \overline{M + N},
+\boxed{\;M \wedge N = M \cap N, \qquad M \vee N = \overline{M + N}\;},
 $$
 
 and the orthocomplement is the orthogonal complement $M^{\perp}$. This makes $P(H)$ a complete ortholattice.
@@ -125,7 +125,7 @@ and the element $\gamma$, when it exists, is unique and is written $\beta \ominu
 **Theorem.** In an effect algebra the relation $\leq$ is a partial order with least element $0$ and greatest element $1$; moreover $\alpha \oplus 0 = \alpha$ for all $\alpha$, $\alpha'' = \alpha$, $0' = 1$, $1' = 0$, and
 
 $$
-\alpha \leq \beta \iff \beta' \leq \alpha', \qquad \beta \ominus \alpha = (\alpha \oplus \beta')' .
+\boxed{\;\alpha \leq \beta \iff \beta' \leq \alpha', \qquad \beta \ominus \alpha = (\alpha \oplus \beta')'\;}.
 $$
 
 **Proof.** Reflexivity is $\alpha \oplus 0 = \alpha$, which follows from (EA3) applied to $\alpha'$ and (EA1); antisymmetry and transitivity are the standard cancellativity and associativity consequences of (EA2) and (EA3). The order-reversing property of the orthosupplement and the formula for the difference are the standard identities of the theory: if $\alpha \le \beta$, say $\beta = \alpha \oplus \gamma$, then $\beta' = (\alpha\oplus \gamma)' = \alpha' \ominus \gamma \le \alpha'$. The full verification is in the standard references.
@@ -203,7 +203,7 @@ The two theorems place the Boolean category in a single picture. An effect algeb
 **Theorem (Gleason).** Let $H$ be a Hilbert space with $\dim H \geq 3$. Then every state $s$ on the projection lattice $P(H)$ has the form
 
 $$
-s(M) = \operatorname{tr}(\rho \, p_M)
+\boxed{\;s(M) = \operatorname{tr}(\rho \, p_M)\;}
 $$
 
 for a unique positive trace-class operator $\rho$ of trace one, where $p_M$ is the orthogonal projection onto $M$; conversely every such operator defines a state. In the finite-dimensional case with $\dim H \geq 3$ the same formula holds, and the state $M \mapsto \dim M / \dim H$ is the one given by the scalar density $\rho = (\dim H)^{-1} I$, which is faithful.

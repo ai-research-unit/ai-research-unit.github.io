@@ -335,7 +335,7 @@ The fixed subspace of the conjugation is the real line $\mathbb{R}_{\mathbb{D}}$
 The regular representation sends $Q$ to the matrix
 
 $$
-\mathsf{M}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+\mathsf{M}_2(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
 $$
 
 which is diagonal in the idempotent basis with eigenvalues $Q_{+}$ and $Q_{-}$, the scalar coefficients of the Peirce coordinates (*The Matrix Element Representations of the Split-Complexoid*). The Peirce components are the two eigenspaces:
@@ -352,6 +352,16 @@ P_{-}=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
 $$
 
 with $P_{+}+P_{-}=I$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the off-diagonal matrix units, are absent: the model is a commutative subalgebra of $M_2(\mathbb{R})$, not the full matrix algebra.
+
+**The eigenbasis and the change of basis.** The idempotent basis $(\Pi_+,\Pi_-)$ is an eigenbasis of $Q$: the columns of the matrix
+$$
+\mathsf{C}=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \mathsf{C}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+$$
+are the coordinate vectors of $\Pi_+=\tfrac12(1,1)$ and $\Pi_-=\tfrac12(1,-1)$ in the basis $(1,j)$, and they are eigenvectors of $\mathsf{M}_2(Q)$ with eigenvalues $Q_+=q+q'$ and $Q_-=q-q'$. The diagonalisation is
+$$
+\mathsf{C}^{-1}\mathsf{M}_2(Q)\mathsf{C}=\operatorname{diag}(Q_+,Q_-).
+$$
+The Peirce coordinates of $Q$ in the idempotent basis are therefore the eigenvalues, and the two spectral projectors $P_\pm$ are the matrices of the two Peirce components. This is the matrix form of the eigenbasis developed in *Eigenbasis of a Split-Complex Number*, §*The Eigenbasis*. In the scalar case $q'=0$ the matrix is $\mathsf{M}_2(Q)=q\mathrm I_2$, every nonzero vector is an eigenvector, and every basis is an eigenbasis.
 
 ## The Decomposition into Minimal Ideals
 
@@ -373,7 +383,7 @@ as a direct sum of ideals, the two summands being the two copies of $\mathbb{R}$
 
 **Proof.** Every $Q$ satisfies $Q=Q(\Pi_{+}+\Pi_{-})=Q\Pi_{+}+Q\Pi_{-}$, so the two ideals span; their intersection is zero because $\Pi_{+}\Pi_{-}=0$: if $Q\Pi_{+}=B\Pi_{-}$ then multiplying by $\Pi_{+}$ gives $Q\Pi_{+}=0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_{+}$ contains some $\lambda\Pi_{+}$ with $\lambda\neq0$, hence contains $\Pi_{+}$ and equals $\mathbb{R}\Pi_{+}$; so each is minimal.
 
-The two ideals are the two **minimal ideals** in the sense of the lattice of all ideals, and they are the images of the two idempotents. The quotient by one is the other, and the algebra is the product of the two.
+The two ideals are the two **minimal ideals** in the sense of the lattice of all ideals, and they are the images of the two idempotents. The quotient by one is the other, and the algebra is the product of the two. They are the two spinor spaces of *Eigenbasis of a Split-Complex Number*, §*The Spinor Spaces*: each is a real line, and a spinor is a single real coefficient on one of them.
 
 ## The Lattice of Ideals
 

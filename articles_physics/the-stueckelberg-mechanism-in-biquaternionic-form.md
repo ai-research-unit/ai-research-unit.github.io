@@ -59,7 +59,7 @@ $$
 $$
 The combination
 $$
-\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi ,
+\boxed{\;\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi\;},
 $$
 which is what the connection becomes in the unitary gauge $\chi=0$, is then gauge invariant,
 $$
@@ -67,7 +67,7 @@ $$
 $$
 a cancellation that was checked explicitly on polynomial test fields, and the Stueckelberg Lagrangian is
 $$
-\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural} .
+\boxed{\;\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}\;}.
 $$
 It is invariant under the abelian gauge transformation for any $\Gamma$, because $\tilde F$ and $\tilde A_{\mathrm u}$ are. The symmetry is the original abelian symmetry, not a new one: the Stueckelberg field transforms with the same parameter as the connection, so the gauge group is unchanged and the mass term is now compatible with it.
 
@@ -96,7 +96,7 @@ The mixing is removed by the gauge transformation that the symmetry permits, and
 
 The equation of motion for the vector is
 $$
-\tilde\nabla\tilde F-\mu^2\tilde A_{\mathrm u}=0 ,
+\boxed{\;\tilde\nabla\tilde F-\mu^2\tilde A_{\mathrm u}=0\;},
 $$
 and the equation for the scalar is
 $$

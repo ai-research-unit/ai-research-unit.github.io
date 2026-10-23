@@ -28,9 +28,7 @@ since $|z| - (R-1) > 1$ and $|z|^{d-1} \geq |z|$ for $|z| > 1$ and $d \geq 2$. H
 
 **Theorem (the optimal radius for the quadratic family).** For $f_c(z) = z^2+c$ the number
 
-$$
-R(c) = \frac{1 + \sqrt{1+4|c|}}{2}
-$$
+$$\boxed{\;R(c) = \frac{1 + \sqrt{1+4|c|}}{2}\;}$$
 
 is the least escape radius; it is the positive root of $x^2 - x - |c| = 0$, and
 
@@ -80,9 +78,7 @@ exists and is finite. The function $G$ so defined is the **Green's function of t
 
 **Theorem.** For $f_c(z) = z^2+c$ and $z$ outside the filled Julia set,
 
-$$
-G(z) = \log|z| + \sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \log\left| 1 + \frac{c}{f_c^n(z)^2} \right| ,
-$$
+$$\boxed{\;G(z) = \log|z| + \sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \log\left| 1 + \frac{c}{f_c^n(z)^2} \right|\;},$$
 
 the series converging because $|f_c^n(z)| \to \infty$.
 
@@ -110,9 +106,7 @@ whose weighted sum $2^{-(k+1)}$ over $k$ and normalisation by $2^n$ produce the 
 
 **Theorem.** Let $\mu$ be the equilibrium measure of the filled Julia set, that is, the unique probability measure of minimal energy in the logarithmic kernel of *Potential Theory*. Then
 
-$$
-G(z) = \int \log|z - w| \, d\mu(w) , \qquad z \in \mathbb{C},
-$$
+$$\boxed{\;G(z) = \int \log|z - w| \, d\mu(w) , \qquad z \in \mathbb{C}\;},$$
 
 the logarithmic potential of $\mu$; the function $G$ is the unique harmonic function on $A(\infty)$ that vanishes on $\partial A(\infty) = J(f)$ and is tangent to $\log|z|$ at infinity; and
 

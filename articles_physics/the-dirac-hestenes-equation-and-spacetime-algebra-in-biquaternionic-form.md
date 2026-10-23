@@ -57,7 +57,7 @@ with eight real components, and the fixed bivectors $\sigma_k = \gamma_k\gamma_0
 Hestenes' form of the Dirac equation for an electron in an electromagnetic four-potential $A = A_\mu\gamma^\mu$ is
 
 $$
-\nabla\psi\, I\sigma_3 - eA\psi = m\psi\gamma_0 ,
+\boxed{\;\nabla\psi\, I\sigma_3 - eA\psi = m\psi\gamma_0\;},
 $$
 
 with $\nabla = \gamma^\mu\partial_\mu$, a fixed spin plane $I\sigma_3$, and the mass term multiplying on the right by $\gamma_0$. Each term is odd-graded, as it must be, since the vector derivative, the potential and the $\gamma_0$ are all vectors, and $\psi$ is even. The equation is manifestly covariant under Lorentz transformations, which act by $\psi\mapsto R\psi$ with $R$ a rotor ($R\tilde Q_1 = 1$), and it is written in the algebra rather than in a matrix representation.
@@ -79,7 +79,7 @@ is recovered from the STA equation by mapping the spinor's upper and lower compo
 Hestenes decomposes a general Dirac spinor as
 
 $$
-\psi = R\left(\rho \exp(i\beta)\right)^{1/2},
+\boxed{\;\psi = R\left(\rho \exp(i\beta)\right)^{1/2}\;},
 $$
 
 where $R$ is a unimodular even multivector — a **rotor**, i.e. a Lorentz transformation — $\rho\ge0$ is a scalar **density**, and $\beta$ is a scalar angle (the Yvon–Takabayasi angle, zero for a pure electron state). The counting is exact: $R$ has the six parameters of a Lorentz transformation, $\rho$ and $\beta$ add two, giving eight real components, the dimension of a Dirac spinor. The **physical interpretation** is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
@@ -89,9 +89,9 @@ where $R$ is a unimodular even multivector — a **rotor**, i.e. a Lorentz trans
 The Dirac current is the geometric vector
 
 $$
-J^\mu = \bar\psi\,\gamma^\mu\psi ,
+\boxed{\;J^\mu = \bar\psi\,\gamma^\mu\psi ,
 \qquad
-\bar\psi = \psi^\dagger\gamma_0 ,
+\bar\psi = \psi^\dagger\gamma_0\;},
 $$
 
 equivalently $J = \psi\gamma_0\psi^{\mathrm{rev}}$, with $\psi^{\mathrm{rev}}$ the reverse of the spinor, in the rotor normalisation. It is a future-pointing timelike vector built from the spinor, and its time component is the probability density. The remaining bilinear covariants — the axial current, the magnetisation and the scalar and pseudoscalar densities — are similarly geometric multivectors of definite grade. The framework's statement that the conserved current is the material-sector object $\tilde J\in\mathbb M_-$ is the algebra-level counterpart: the current is a specific real vector built from the field and a fixed Clifford-odd element.
@@ -166,8 +166,6 @@ the sign in the second identification being the convention of the $\gamma$-order
 **Two structural differences follow.** First, the volume element. In the algebra of physical space $i$ is the **pseudoscalar**, and because the underlying dimension is odd it is **central**: it commutes with the vectors $\sigma_k$ as well as with the bivectors, so it can be treated as the scalar imaginary of a complexification and the algebra is literally $\mathbb C\otimes_\mathbb R\mathbb H$. In the spacetime algebra the pseudoscalar $I$ commutes with the even elements but **anticommutes with the four vectors** $\gamma_\mu$; on the spinor (even) subalgebra it too is a central imaginary unit, but on the full algebra it is an oriented volume element rather than a scalar imaginary, and this is why the spacetime algebra is normally presented as a real algebra where the complex structure appears only on restriction. Second, the presentation. The spacetime algebra is usually developed through the outer product and the grade decomposition of its sixteen dimensions; the algebra of physical space works with the geometric product alone, the outer product being the bivector part of a product and the duality being multiplication by $i$, so that no separate exterior calculus has to be carried.
 
 **The compensating cost and gain.** The algebra of physical space needs the extra **Clifford conjugate** $p\mapsto \bar p$ to express the Minkowski form of a paravector, which the spacetime algebra gets from its indefinite signature directly. In exchange it gives the paravector identity $p\bar p = p_0^2-\vec p^2$ *inside* a definite algebra, and with it a metric relation that the spacetime algebra cannot state in the same way: the **measured** (Euclidean) length of a displacement on a spacetime diagram is the modulus of the paravector, while the **Minkowski** length is the same modulus combined with a hyperbolic angle read off from the diagram — the source's §III.C result. The series uses the biquaternion algebra, which is the algebra of physical space with the generators squared to $-1$; the comparison above is the whole of the difference between them.
-
-
 
 ### The space Clifford formulation and the equivalence of the three
 

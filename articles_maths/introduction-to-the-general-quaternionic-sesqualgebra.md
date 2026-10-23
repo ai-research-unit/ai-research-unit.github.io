@@ -8,8 +8,6 @@ The consequences differ from the sibling reading in every place where the first 
 
 The boundaries are stated at once. The product is not defined here, and neither are the four general products as a family: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the identities that link the four general products are *Relations Between the Four General Products*, and their properties are compared in *Comparison Between the Four General Products*, whose sesquilinear row is the one read below. The other three readings and the general theory that each of them uses are the three articles *Introduction to the Biquaternion Algebra*, *Introduction to the General Plain Sesqualgebra* and *Introduction to the General Quaternionic Algebra*, and nothing of theirs is repeated here; where the present product differs from the general plain sesquilinear one, the difference is stated and the sibling is named. The elements, the basis, the conjugations and the remarkable subspaces are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, *Introduction to the Remarkable Subspaces*, *Decompositions Along the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, the two halves cut out by the involution being the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *Zero Divisors of the Biquaternion Algebra*, the idempotents of the algebra are *Idempotents of the General Plain Algebra*, the simplicity of the ring is *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the two bilinear articles are the ones named in the sentence above. The general theory is the sesquilinear block: the definition is *Sesqualgebras*, the calculus of the product is *The Sesquilinear Product*, the associator and the ternary product are *The Sesquilinear Associator and the Ternary Product*, the abstract ternary system is *Algebraic J\*-Algebras*, the operator readings are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, the two halves are *Hermitian and Skew-Hermitian Elements*, and the ideals are *Ideals and Quotients of a Sesqualgebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k e_k$, and $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ and $\vec Q_1\times\vec Q_2$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$, with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$. The base involution of the sesqualgebra is the complex conjugation $\varsigma(z)=\bar z$. The plain product is written $\tilde Q_1\tilde Q_2$, the general plain sesquilinear product of the sibling article is written $\tilde Q_1\tilde Q_2^{*}$, and the product of this article is written $\star$, with
-
 $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}
 $$
@@ -53,9 +51,9 @@ Both displays are quoted from *The Four General Products of the Biquaternion $\m
 **Proposition.** The multiplication is **additive in each variable**; it is $\mathbb{C}$-**linear in the first** variable and $\varsigma$-**semilinear in the second**, with $\varsigma(z)=\bar z$:
 
 $$
-(\lambda\tilde Q_1)\star\tilde Q_2=\lambda\,(\tilde Q_1\star\tilde Q_2) , \qquad
+\boxed{\; (\lambda\tilde Q_1)\star\tilde Q_2=\lambda\,(\tilde Q_1\star\tilde Q_2) , \qquad
 \tilde Q_1\star(\lambda\tilde Q_2)=\bar\lambda\,(\tilde Q_1\star\tilde Q_2) , \qquad \lambda\in\mathbb{C} , \qquad
-(\tilde Q_1+\tilde Q_3)\star\tilde Q_2=\tilde Q_1\star\tilde Q_2+\tilde Q_3\star\tilde Q_2 .
+(\tilde Q_1+\tilde Q_3)\star\tilde Q_2=\tilde Q_1\star\tilde Q_2+\tilde Q_3\star\tilde Q_2 \;}.
 $$
 
 **Proof.** The coordinates of the developed form are sums of terms $Q_{1\mu}\overline{Q_{2\nu}}$ with fixed coefficients, so they are additive and $\mathbb{C}$-linear in the four coordinates of $\tilde Q_1$ alone and additive and conjugate-linear in the four coordinates of $\tilde Q_2$ alone. The three displays are that statement read coordinate by coordinate; the natural conjugation is $\mathbb{C}$-linear and contributes no conjugation.
@@ -301,8 +299,8 @@ $$
 **Proposition.** The involution of the multiplication is the plain product in the reversed order:
 
 $$
-(\tilde Q_1\star\tilde Q_2)^{*}=\tilde Q_2\,\overline{\tilde Q_1} , \qquad\text{equivalently}\qquad
-\tilde Q_2\star\tilde Q_1=\bigl(\overline{\tilde Q_1}\tilde Q_2\bigr)^{\natural} .
+\boxed{\; (\tilde Q_1\star\tilde Q_2)^{*}=\tilde Q_2\,\overline{\tilde Q_1} , \qquad\text{equivalently}\qquad
+\tilde Q_2\star\tilde Q_1=\bigl(\overline{\tilde Q_1}\tilde Q_2\bigr)^{\natural} \;}.
 $$
 
 **Proof.** $(\tilde Q_1\star\tilde Q_2)^{*}=(\tilde Q_1^{\natural}\tilde Q_2^{*})^{*}=(\tilde Q_2^{*})^{*}(\tilde Q_1^{\natural})^{*}=\tilde Q_2\,\overline{\tilde Q_1}$, since ${}^{*}$ is an anti-automorphism, ${}^{*2}=\mathrm{id}$ and $(\tilde Q_1^{\natural})^{*}=\overline{\tilde Q_1}$, the two conjugations commuting. The same computation with ${}^{\natural}$ in place of ${}^{*}$ gives the companion identity $(\tilde Q_1\star\tilde Q_2)^{\natural}=\overline{\tilde Q_2}\tilde Q_1$, which is the one used for the associator below.
@@ -352,7 +350,7 @@ and both are sesquilinear over $\mathbb{C}$: the skew half is the cross product 
 **Proposition.** The square of an element in the multiplication is
 
 $$
-\tilde Q\star\tilde Q=\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}=\tilde Q^{\natural}\tilde Q^{*} ,
+\boxed{\; \tilde Q\star\tilde Q=\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}=\tilde Q^{\natural}\tilde Q^{*} \;},
 $$
 
 its scalar part is the sum of the four coordinates read at the two equal arguments,

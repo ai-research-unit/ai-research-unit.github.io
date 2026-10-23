@@ -51,7 +51,7 @@ $$
 Read on the coefficients, the material element $(t', x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is carried to the informational element $(t = -t',\ (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and the informational element $(t, x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ is carried to the material element $(t' = t,\ (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
 
 $$
-z \mapsto i z = -ct' + i\,ct ,
+\boxed{\;z \mapsto i z = -ct' + i\,ct\;}
 $$
 
 which is the quarter turn of the complex time plane: the informational time becomes the imaginary part and the material time the negative real part.
@@ -59,7 +59,7 @@ which is the quarter turn of the complex time plane: the informational time beco
 Two properties of the map fix what a clock built on it can be. The first is the order. The square of the generator is $-e_t$, the antipodal map of the plane and not the identity, and the fourth power is $e_t$; the orbit of a central coordinate under the generator is therefore the four-element cycle
 
 $$
-z \ \longrightarrow\ iz \ \longrightarrow\ -z \ \longrightarrow\ -iz \ \longrightarrow\ z .
+\boxed{\;z \ \longrightarrow\ iz \ \longrightarrow\ -z \ \longrightarrow\ -iz \ \longrightarrow\ z\;}
 $$
 
 The second is invertibility: the generator is a rotation, so both senses are available, $\exp(i\theta)$ and $\exp(-i\theta)$, and the algebra contains no element that prefers one. Both properties are stated, with the other five restrictions of the same map, in *Conventions in the Biquaternion Universe*.
@@ -71,7 +71,7 @@ A clock assigns a coordinate to an event by a repeatable motion. The framework's
 **The hand.** The hand of the clock is the complex number $z = ct + i\,ct'$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
 
 $$
-ct = \lvert z\rvert\cos\theta, \qquad ct' = \lvert z\rvert\sin\theta .
+\boxed{\;ct = \lvert z\rvert\cos\theta, \qquad ct' = \lvert z\rvert\sin\theta\;}
 $$
 
 The one-parameter group $\exp(i\theta)e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(iS/\hbar)$ of the action articles is the same central phase read on a dynamics.

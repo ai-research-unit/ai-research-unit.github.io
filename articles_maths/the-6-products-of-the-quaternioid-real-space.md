@@ -12,8 +12,6 @@ The first two of the six are the two general products, then come their two symme
 
 This article defines the six, writes each on the coordinates, states the reconstruction and reads the **behaviour at the two equal arguments** of each. It assumes the two products from *The Two General Products of the Quaternioid $\mathbb{R}$ Space* and the annihilation identity of *Relations Between the Two General Products*, both preceding this one; the structures the six define are *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, below this article in this category, and the definitions of their vocabulary are *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, below this article in this category.
 
-**Conventions.** Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ is the dot product and $\vec q_1\times\vec q_2$ is the cross product of the vector parts, and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation. The plain form is $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ and the quaternion form is $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$, read here as the coefficient of the product $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$.
-
 ## The Symmetric and the Antisymmetric Part
 
 **Definition.** For a binary rule $f$ on $\mathbb{H}$, its **symmetric part** and its **antisymmetric part** are
@@ -52,7 +50,7 @@ The plain triple is the general plain product, its symmetric half and its antisy
 **Proposition (the reconstruction).** For all $\tilde q_1,\tilde q_2$,
 
 $$
-\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2 , \qquad \tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2 .
+\boxed{\;\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2 , \qquad \tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2\;}.
 $$
 
 *Proof.* The two general products are the sums of their symmetric and antisymmetric parts by the definition of the split; the four halves are the four products of the table.
@@ -66,11 +64,11 @@ The antisymmetric parts vanish at the two equal arguments, so the square of each
 **Proposition (the algebraic norms).** For every $\tilde q=q_te_t+\vec q$,
 
 $$
-\tilde q^2=\langle\tilde q\rangle e_t+2q_t\vec q , \qquad \tilde q\bullet\tilde q=\tilde q^2 , \qquad \tilde q\wedge\tilde q=0 ,
+\boxed{\;\tilde q^2=\langle\tilde q\rangle e_t+2q_t\vec q , \qquad \tilde q\bullet\tilde q=\tilde q^2 , \qquad \tilde q\wedge\tilde q=0\;},
 $$
 
 $$
-\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t=|\tilde q|^2e_t , \qquad \langle\tilde q,\tilde q\rangle_{\natural}e_t=\langle\tilde q\rangle_{\natural}e_t , \qquad \tilde q\wedge^{\natural}\tilde q=0 ,
+\boxed{\;\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t=|\tilde q|^2e_t , \qquad \langle\tilde q,\tilde q\rangle_{\natural}e_t=\langle\tilde q\rangle_{\natural}e_t , \qquad \tilde q\wedge^{\natural}\tilde q=0\;},
 $$
 
 with $\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2$ and $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$. The square of the plain product is read off the **plain form** $\langle\cdot,\cdot\rangle$ and the square of the quaternionic product off the **quaternion form** $\langle\cdot,\cdot\rangle_{\natural}$; the two antisymmetric products vanish at the two equal arguments, the cross products of a vector with itself being zero.

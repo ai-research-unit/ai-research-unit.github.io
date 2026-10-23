@@ -58,7 +58,9 @@ The two complex tensors $A_{(1)}$ and $A_{(2)}$ are the **idempotent coordinates
 **Proposition (the two complex readings).** The map $A\mapsto(A_{(1)},A_{(2)})$ is a bijection from $\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ onto the pairs of complex tensors of the same shape. Its inverse is
 
 $$
-A_{1,i}=\tfrac12(A_{(1)}+A_{(2)}),\qquad A_{j,k}=\tfrac12(A_{(1)}-A_{(2)}),
+\boxed{\;
+A_{1,i}=\tfrac12(A_{(1)}+A_{(2)}),\qquad A_{j,k}=\tfrac12(A_{(1)}-A_{(2)})
+\;},
 $$
 
 and the real coefficients are recovered by
@@ -113,7 +115,9 @@ where for a matrix $X$ over $\mathbb{B}_{\mathrm{r}}$ the **bar-transpose** is $
 **Proposition.** The conjugate transpose is an involution and is bar-antilinear:
 
 $$
-(A^{\mathsf H})^{\mathsf H}=A,\qquad (aA+bB)^{\mathsf H}=\bar a\,A^{\mathsf H}+\bar b\,B^{\mathsf H},
+\boxed{\;
+(A^{\mathsf H})^{\mathsf H}=A,\qquad (aA+bB)^{\mathsf H}=\bar a\,A^{\mathsf H}+\bar b\,B^{\mathsf H}
+\;},
 $$
 
 for $a,b\in\mathbb{B}_{\mathrm{r}}$.
@@ -144,8 +148,10 @@ $$
 It is the Euclidean norm of the $4n_1n_2n_3$ real coordinates, and it is positive definite. In terms of the real coefficient tensors and of the two complex readings,
 
 $$
+\boxed{\;
 \|A\|_{\mathrm F}^2=\|A_0\|_{\mathrm F}^2+\|A_1\|_{\mathrm F}^2+\|A_2\|_{\mathrm F}^2+\|A_3\|_{\mathrm F}^2
-=\tfrac12\bigl(\|A_{(1)}\|_{\mathrm F}^2+\|A_{(2)}\|_{\mathrm F}^2\bigr).
+=\tfrac12\bigl(\|A_{(1)}\|_{\mathrm F}^2+\|A_{(2)}\|_{\mathrm F}^2\bigr)
+\;}.
 $$
 
 The second identity uses $|a|^2=\tfrac12(|a_{(1)}|^2+|a_{(2)}|^2)$, which follows from the definitions of $a_{(1)}$ and $a_{(2)}$.

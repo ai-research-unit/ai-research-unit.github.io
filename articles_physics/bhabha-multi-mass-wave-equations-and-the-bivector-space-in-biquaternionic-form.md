@@ -10,8 +10,6 @@ It is worth separating this article from the companion that shares the name Bhab
 
 The article is organised as follows. A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction. A fourth works the proton chain and its Dirac limit. A closing section states the biquaternion interpretation.
 
-**Conventions.** The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l=k/2$, $\bar l=r/2$, spin $s=|l-\bar l|$. The equations, the chains and the bivector-space material are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §2.2) and from the Bhabha and Gel'fand–Yaglom papers. One convention differs and is flagged forward: the source's Minkowski metric is $\mathrm{diag}(-1,-1,-1,+1)$, whereas the corpus uses the $ict'$ metric with three positive spacelike directions; the bivector-space signs below are the source's, and a discrepancy in their printed metric is recorded as a convention issue rather than smoothed over.
-
 - Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass spectrum these equations produce.
 - Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space in which the multi-mass fields are placed.
 - Corpus article *The Field-Strength Biquaternion and Its Invariants*, for the biquaternion form of the bivector space.
@@ -86,7 +84,7 @@ $$
 The determinant is a polynomial in $p_0,p_1,p_2,p_3$ and is constant on the transitivity surfaces of the Lorentz group, the hyperboloids $s^2(p)=p_0^2-p_1^2-p_2^2-p_3^2=\text{const}$, so it depends on $s^2$ alone and factors as
 
 $$
-D\bigl(s^2\bigr) = \kappa\bigl(s^2-m_1^2\bigr)\bigl(s^2-m_2^2\bigr)\cdots\bigl(s^2-m_k^2\bigr).
+\boxed{\;D\bigl(s^2\bigr) = \kappa\bigl(s^2-m_1^2\bigr)\bigl(s^2-m_2^2\bigr)\cdots\bigl(s^2-m_k^2\bigr)\;}.
 $$
 
 The equation has a solution exactly when $s^2=m_i^2$, so the roots $m_i$ are the masses the field can carry: a multi-mass field. Putting $\vec p=0$ makes $\Gamma(p)=p_0\Gamma^0$ and
@@ -174,7 +172,7 @@ $$
 The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, a linear superposition of the two spin states $\pm\frac12$, which is the **electron** and satisfies the Dirac equation
 
 $$
-\gamma^{\mu}\frac{\partial\psi}{\partial x^{\mu}}+m_e\psi = 0 .
+\boxed{\;\gamma^{\mu}\frac{\partial\psi}{\partial x^{\mu}}+m_e\psi = 0\;}.
 $$
 
 Mapping the Dirac equation into $\mathbb{R}^6$ gives generators $\Lambda^{1/2,0}_j$ and $\Lambda^{*\,0,1/2}_j$ whose explicit matrices — built from $\mathbf{1}$ and the companion $2\times2$ block — coincide with the **Pauli matrices** $\sigma_j$ when their normalisation constant takes the value $c_{\frac12,\frac12}=2$. This is the concrete way in which the algebra's first member is the Dirac equation's carrier, and it is the same statement the corpus makes in its Dirac–Hestenes and bispinor articles.
@@ -189,7 +187,7 @@ $$
 as the proton, because the mass ratio fixes it. The rule is the mass formula: normalising so that the electron's fundamental representation gives $m_e=\mu_0/2$, the ratio is
 
 $$
-\frac{m_p}{m_e} = \frac{(2l+1)(2\bar l+1)}{2},
+\boxed{\;\frac{m_p}{m_e} = \frac{(2l+1)(2\bar l+1)}{2}\;},
 $$
 
 and $(59/2,29)$ gives $60\times59/2=1770$. The programme's own text states the condition as $(l+\frac12)(\bar l+\frac12)\approx1800$. The product for this member is $30\times29.5=885$, so the stated figure is a factor of two above it; that factor is exactly the one that converts the product into the ratio $m_p/m_e$ when the electron is normalised at $m_e=\mu_0/2$. In that normalisation $m_p/m_e=1770$, $3.6\%$ below the measured $1836$. The proton's wave equation in $\mathbb{R}^6$ is then the $3540$-component version of the equations above, with $\Lambda^{59/2,29}_j$ replacing $\Lambda^{1/2,0}_j$. The programme's reason for not keeping the electron's chain — that the chain $(\frac12,0)\leftrightarrow(0,\frac12)$ is algebraically too simple to describe the proton's internal structure — is recorded, and the replacement of the simple chain by the high member is recorded as a **choice**, not a derivation.

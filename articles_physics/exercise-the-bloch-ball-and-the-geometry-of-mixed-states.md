@@ -92,8 +92,8 @@ so the Bloch vector *is* the vector of single-qubit expectation values, $\vec r 
 **Solution.** All three quantities are functions of the radius alone:
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 + |\vec r|^2\bigr), \qquad
-S_{\mathrm{lin}} = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 - |\vec r|^2\bigr),
+\boxed{\;\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 + |\vec r|^2\bigr), \qquad
+S_{\mathrm{lin}} = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 - |\vec r|^2\bigr)\;},
 $$
 
 $$
@@ -150,9 +150,9 @@ $$
 The mixture therefore lies on the chord joining $\vec u$ and $\vec u_\nu$, at the point that divides it in the ratio $(1-p) : p$. Its purity and linear entropy are
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 + |\vec r|^2\bigr) = 1 - p(1-p)\bigl(1-\cos\theta\bigr),
+\boxed{\;\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 + |\vec r|^2\bigr) = 1 - p(1-p)\bigl(1-\cos\theta\bigr),
 \qquad
-S_{\mathrm{lin}} = p(1-p)\bigl(1-\cos\theta\bigr).
+S_{\mathrm{lin}} = p(1-p)\bigl(1-\cos\theta\bigr)\;}.
 $$
 
 (c) From the second form, $|\vec r| = 1$ requires $p(1-p)(1-\cos\theta) = 0$, i.e. $p = 0$, or $p = 1$, or $\cos\theta = 1$ (the two pure states coincide). Apart from these degenerate cases the mixture is **strictly interior**: $|\vec r| < 1$, and the ball is strictly convex. In particular, a nontrivial mixture of two distinct pure states is never pure.
@@ -198,9 +198,9 @@ $$
 the positive square root in $\mathbb{M}_+$. Hence
 
 $$
-D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2|
+\boxed{\;D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2|
 = \tfrac12\cdot\tfrac12|\vec r-\vec s|\cdot\mathrm{Tr}(e_t)
-= \tfrac12|\vec r-\vec s| .
+= \tfrac12|\vec r-\vec s|\;}.
 $$
 
 Setting $\vec s = 0$ recovers the parent's statement $D(\tilde{Ϛ},\tfrac12 e_t) = \tfrac12|\vec r|$. Comparing with (a), the trace distance and the Hilbert–Schmidt distance carry the same information on a qubit,
@@ -258,7 +258,7 @@ because the mean of the unit vector over the sphere vanishes.
 (b) The boundary is $|\vec r| = 1$. For these states the biquaternion norm vanishes,
 
 $$
-\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac14(1 - |\vec r|^2)e_t = 0 \quad\Longleftrightarrow\quad |\vec r| = 1,
+\boxed{\;\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac14(1 - |\vec r|^2)e_t = 0 \quad\Longleftrightarrow\quad |\vec r| = 1\;},
 $$
 
 so a boundary state is a zero divisor of $\mathbb{B}$; the deviation from idempotency,
@@ -282,9 +282,9 @@ A boundary state is an **extreme point** of the ball. Suppose $\tilde{P} = \lamb
 (b) The Hermitian form on the slice is $\langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*})=\tfrac14(1 + \vec r\cdot\vec s)$, with trace reading at normalisation $\operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
 
 $$
-\langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*}=0
+\boxed{\;\langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*}=0
 \quad\Longleftrightarrow\quad \operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*})=0
-\quad\Longleftrightarrow\quad \vec r\cdot\vec s = -1 .
+\quad\Longleftrightarrow\quad \vec r\cdot\vec s = -1\;}.
 $$
 
 Since $|\vec r\cdot\vec s| \leq |\vec r|\,|\vec s| \leq 1$, the equality $\vec r\cdot\vec s = -1$ forces both Cauchy–Schwarz and the ball bounds to be saturated:

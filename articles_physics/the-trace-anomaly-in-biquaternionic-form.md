@@ -18,8 +18,6 @@ This article asks what the biquaternion framework contributes to that statement.
 
 The article proceeds as follows. The next section fixes what is meant by the trace and recalls the classical vanishing. A section derives the quantum trace from the conformal variation of the determinant, and a section evaluates the coefficient in two and four dimensions with the standard heat-kernel results. A section identifies the framework's trace pairing with the counting of components and verifies the agreement of the two interpretations. A section treats the Weyl transformation at the three metric levels and states what does and does not rescale. A section relates the anomaly to the renormalisation-group $\beta$ function of *The Renormalization Group in Biquaternionic Form*, and a section separates what is established from what is interpretation. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$; the cyclic products are $\vec e_x \vec e_y=\vec e_z$ and its cyclic images. The sectors are $\mathbb{M}_-=\{ie_t,\vec e_x,\vec e_y,\vec e_z\}_\mathbb{R}$ (anti-Hermitian, material) and $\mathbb{M}_+=\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}_\mathbb{R}$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $\mathbb{M}_-=i\mathbb{M}_+$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\mathrm{Sc}$ the real part of the $e_t$ coefficient, so that $\mathrm{Tr}(e_t)=2$. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the d'Alembertian is the series $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The level-1 biquaternion norm is the identity on $\mathbb{C}^4$, the primary convention; the Clifford metric $g$ is a level-3 tool and is not used here. These are the conventions of *Conventions in the Biquaternion Universe*, *The Functional Determinant in Biquaternionic Form*, and *The Generating Functional and the Effective Action in Biquaternionic Form*.
-
 ## The Classical Trace and Its Vanishing
 
 The classical statement is fixed first, because the anomaly is the deviation from it.
@@ -84,13 +82,13 @@ The standard values are recalled, and the multiplicity is exhibited.
 
 **Two dimensions.** For a massless scalar field on a two-dimensional background the anomalous trace is
 $$
-T^\mu{}_\mu = \frac{c}{24\pi}\,R ,
+\boxed{\;T^\mu{}_\mu = \frac{c}{24\pi}\,R\;},
 $$
 and the central charge is $c=1$ for a real scalar, $c=2$ for a complex scalar, and it is additive over decoupled fields. The value $c=1$ per real scalar is the standard one (Polyakov 1981), and it is proportional to the number of real components: the anomaly's coefficient counts components.
 
 **Four dimensions.** In four dimensions the trace for a free field is a linear combination of the Euler density, the Weyl-square term, and $\Box R$:
 $$
-T^\mu{}_\mu = a\,E_4 + c\,W^2 + b\,\Box R ,
+\boxed{\;T^\mu{}_\mu = a\,E_4 + c\,W^2 + b\,\Box R\;},
 $$
 with $E_4$ the Euler density and $W$ the Weyl tensor. The coefficients $a$ and $c$ are fixed by the field content — the $a$-coefficient by the Euler term's contribution and the $c$-coefficient by the Weyl term's — and they too are additive over decoupled fields. For a scalar, a Dirac fermion, and a vector the standard values are tabulated (Duff 1994), and each is proportional to the field's internal multiplicity. The $\Box R$ term is scheme-dependent and is fixed by the choice of the renormalised coupling; the $a$ and $c$ terms are not.
 
@@ -102,9 +100,9 @@ This is where the algebra enters, and it enters twice: through the trace pairing
 
 **The plain form.** The framework reads a number off a biquaternion with
 $$
-\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2),
+\boxed{\;\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2),
 \qquad
-\mathrm{Tr}(e_t)=2 .
+\mathrm{Tr}(e_t)=2\;}.
 $$
 The factor $2$ is the trace of the identity on the module, and it is the algebraic origin of the "$2\,\mathrm{Sc}$" that recurs throughout the series. On the algebra regarded as a complex four-dimensional space the trace of the identity in the regular representation would be $4$; on the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, which is the space the determinant and the anomaly's trace are taken over, the trace is $2$. The two numbers are *not* interchangeable, and the anomaly's coefficient depends on which space the field is valued in; the determinant article's treatment of the module resolves which is meant in a given calculation.
 
@@ -213,7 +211,7 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 
 The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
 $$
-T^\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2} ,
+\boxed{\;T^\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
 $$
 proportional to the Seeley–DeWitt coefficient, which is local and one-loop exact. In two dimensions $T^\mu{}_\mu=\frac{c}{24\pi}R$ with $c$ counting real components; in four dimensions $T^\mu{}_\mu=aE_4+cW^2+b\Box R$ with $a$ and $c$ fixed by the field content. The framework's contributions are the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\mathrm{Tr}(e_t)=2$, the level-1 biquaternion norm with trace $4$, and the component count four complex and eight real; the two interpretations are related by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}$, verified numerically. The Weyl transformation rescales the level-1 form and nothing else, and the regularisation of the determinant, the curvature invariants, and the coefficients of $E_4$ and $W^2$ are standard and transcribed.
 

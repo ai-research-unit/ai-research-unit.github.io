@@ -24,12 +24,12 @@ The article develops the Hermitian form and its naturalness; identifies the idem
 The series states the reading in a fixed order, and the order is part of the statement. Each line is the same number read at a coarser level of structure, and the trace is the last line, used only where normalisation is stated.
 
 $$
-\begin{aligned}
+\boxed{\;\begin{aligned}
 &\text{(1) form, with star:} && \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\\
 &\text{(2) scalar, with star:} && \mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}),\\
 &\text{(3) scalar, without star, on } \mathbb{M}_+: && \mathrm{Sc}(\tilde{Ϛ}\tilde H)=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}),\\
 &\text{(4) trace, at normalisation, last:} && \operatorname{Tr}(\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde{Ϛ})=1,\qquad p=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})}{\operatorname{Tr}(\tilde{Ϛ})}=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde H)}{\operatorname{Tr}(\tilde{Ϛ})}.
-\end{aligned}
+\end{aligned}\;}
 $$
 
 ```text
@@ -190,7 +190,7 @@ $$
 so $\langle\tilde\Pi_1(\vec u_h),\tilde{Ϛ}\rangle_{*}=\tfrac14(1+\vec u_h\cdot\vec r)$ and, dividing by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$,
 
 $$
-p_+=\tfrac{1}{2}(1+\vec u_h\cdot\vec r),\qquad p_-=\tfrac{1}{2}(1-\vec u_h\cdot\vec r).
+\boxed{\;p_+=\tfrac{1}{2}(1+\vec u_h\cdot\vec r),\qquad p_-=\tfrac{1}{2}(1-\vec u_h\cdot\vec r)\;}.
 $$
 
 The pairing also reproduces the variance. From $\tilde{H}^2=(h_t^2+|\vec h|^2)e_t+2h_t\,i\vec h$,
@@ -216,8 +216,8 @@ The derivation above uses no trace. The trace is the final reading, taken in the
 **The star in the numerator is inert on $\mathbb{M}_+$.** Both factors are Hermitian, $\tilde{Ϛ}^{*}=\tilde{Ϛ}$ and $\tilde H^{*}=\tilde H$, so the star may be dropped inside the trace and $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)$. Intrinsically this is $\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=\mathrm{Sc}(\tilde{Ϛ}\tilde H)$; the trace statement is its $2\times2$ reading. The unstarred trace is real: for Hermitian matrices $A,B$, $(AB)^{\dagger}=BA$, hence $\overline{\mathrm{tr}(AB)}=\mathrm{tr}((AB)^{\dagger})=\mathrm{tr}(BA)=\mathrm{tr}(AB)$. It is non-negative for $A,B\ge0$ by the positivity argument above. The weight therefore needs no star on the sector, and it is
 
 $$
-p=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})}{\operatorname{Tr}(\tilde{Ϛ})}
-=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde H)}{\operatorname{Tr}(\tilde{Ϛ})}\in[0,1],
+\boxed{\;p=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})}{\operatorname{Tr}(\tilde{Ϛ})}
+=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde H)}{\operatorname{Tr}(\tilde{Ϛ})}\in[0,1]\;},
 $$
 
 which is the standard formula. The factor $2$ is the dimension of the image and cancels in the ratio; it is not a normalisation constant of the form. Traciality, $\operatorname{Tr}(\tilde Q\tilde Q_1)=\operatorname{Tr}(\tilde Q_1\tilde Q)$, is the symmetry of the form on Hermitian arguments, $\mathrm{Sc}(\tilde Q\tilde Q_1)=Q_tQ_{1t}-\sum_kQ_kQ_{1k}$. The star is retained because it names the pairing that is positive definite on the whole algebra, and because it cannot be dropped when one factor is not Hermitian, as in the Kraus form.

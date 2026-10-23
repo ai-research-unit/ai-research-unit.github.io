@@ -50,8 +50,8 @@ So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ 
 **Theorem (the double centraliser).** The commutant of the left multiplications is exactly the right multiplications, and likewise with the roles exchanged:
 
 $$
-\{T\in\operatorname{End}_{\mathbb C}(\mathbb B) : T\,L_a=L_a\,T\ \ \forall a\}=\{R_b\}_{b\in\mathbb B},\qquad
-\{T : T\,R_b=R_b\,T\ \ \forall b\}=\{L_a\}_{a\in\mathbb B},
+\boxed{\; \{T\in\operatorname{End}_{\mathbb C}(\mathbb B) : T\,L_a=L_a\,T\ \ \forall a\}=\{R_b\}_{b\in\mathbb B},\qquad
+\{T : T\,R_b=R_b\,T\ \ \forall b\}=\{L_a\}_{a\in\mathbb B} \;},
 $$
 
 and the bicommutant is the centre, $\{T: T\,\text{commutes with all }L_a\text{ and all }R_b\}=\mathbb C_{\mathbb B}=\mathbb C\cdot\mathbb 1$. Consequently $L_{\mathbb B}$ and $R_{\mathbb B}$ are mutual commutants, each of complex dimension four.
@@ -97,7 +97,7 @@ So the left and right multiplications are the two "one-sided" elements of the en
 **Theorem (the enveloping algebra is the endomorphism algebra).** The sandwich action defines an isomorphism of $\mathbb C$-algebras
 
 $$
-\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb C}(\mathbb B),\qquad \tilde Q_1\otimes \tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto \tilde Q_1\tilde Q_3\tilde Q_2\bigr),
+\boxed{\; \mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb C}(\mathbb B),\qquad \tilde Q_1\otimes \tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto \tilde Q_1\tilde Q_3\tilde Q_2\bigr) \;},
 $$
 
 so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mathbb B^{\mathrm e}$ on $\mathbb B$ is faithful and exhausts all $\mathbb C$-linear operators on $\mathbb B$.
@@ -125,7 +125,7 @@ by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\til
 The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to this complete orthogonal family has sixteen corners, and each is one-dimensional over $\mathbb{C}$:
 
 $$
-E_{ik}\mathbb{B}^{\mathrm e}E_{jl} = (\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}} = \mathbb{C}\,\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
+\boxed{\; E_{ik}\mathbb{B}^{\mathrm e}E_{jl} = (\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}} = \mathbb{C}\,\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr) \;},
 $$
 
 where $\Lambda_{ij}$ is the basis element of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is, $\tilde\Pi_1, \vec\Upsilon_x, \vec\Upsilon_y, \tilde\Pi_2$ for $(i,j) = (1,1),(1,2),(2,1),(2,2)$. The corners multiply by the rule
@@ -174,7 +174,7 @@ which is the coordinate form of $L_a=a\otimes\mathbb 1^{\mathrm{opp}}$ and $R_b=
 **Proposition (the composition rule).** For all $a,b,c,d\in\mathbb B$,
 
 $$
-(a[\,]b)\circ(c[\,]d)=(ac)[\,](db) .
+\boxed{\; (a[\,]b)\circ(c[\,]d)=(ac)[\,](db) \;}.
 $$
 
 *Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde Q_3)\bigr)=a\,c\,\tilde Q_3\,d\,b=(ac)\tilde Q_3(db)$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.

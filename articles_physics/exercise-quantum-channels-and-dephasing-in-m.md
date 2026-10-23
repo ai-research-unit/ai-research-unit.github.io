@@ -78,7 +78,7 @@ Combining with the mixture,
 $$
 \boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_{\mathrm{out}}\right),
 \qquad
-\vec r_{\mathrm{out}} = (1-p)\,\vec r + p\,(\vec u_x\cdot\vec r)\,\vec u_x.\;}
+\vec r_{\mathrm{out}} = (1-p)\,\vec r + p\,(\vec u_x\cdot\vec r)\,\vec u_x\;}.
 $$
 The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. At $p=0$ the channel is the identity; at $p=1$ it is the projection $\vec r \mapsto (\vec u_x\cdot\vec r)\vec u_x$, the "measure-and-forget" channel of the parent.
 
@@ -118,11 +118,11 @@ $$
 $$
 Thus $J \succeq 0$ for $0 \leq p \leq 2$, confirming complete positivity (the parent restricts to the sub-range $0 \leq p \leq 1$, where $\Phi^{\mathrm{deph}}_p$ is a convex mixture of the identity and the full-dephasing measurement channel), and
 $$
-\mathrm{rank}\,J = 2 \text{ for } 0 < p < 2, \qquad \mathrm{rank}\,J = 1 \text{ at } p=0 \text{ and at } p=2 .
+\boxed{\;\mathrm{rank}\,J = 2 \text{ for } 0 < p < 2, \qquad \mathrm{rank}\,J = 1 \text{ at } p=0 \text{ and at } p=2\;} .
 $$
 By the parent's rank theorem, the **minimal Kraus rank is two** for $0<p<2$, and a minimal representation is
 $$
-\tilde{K}_0 = \sqrt{1-\tfrac{p}{2}}\;e_t, \qquad \tilde{K}_1 = \sqrt{\tfrac{p}{2}}\;i\vec u_x .
+\boxed{\;\tilde{K}_0 = \sqrt{1-\tfrac{p}{2}}\;e_t, \qquad \tilde{K}_1 = \sqrt{\tfrac{p}{2}}\;i\vec u_x\;} .
 $$
 At $p=2$ the first operator vanishes, $\tilde{K}_0=0$, and the pair collapses to the single operator $\tilde{K}_1=i\vec u_x$, which is unitary; that endpoint lies outside the parent's physical range $0\le p\le 1$.
 
@@ -160,7 +160,7 @@ J_T = E_{00}\otimes E_{00} + E_{11}\otimes E_{11} + E_{01}\otimes E_{10} + E_{10
 $$
 This is the **swap operator**, $J_T|jk\rangle = |kj\rangle$. Its eigenvalues are $+1$ on the symmetric subspace $\{|00\rangle, |11\rangle, (|01\rangle+|10\rangle)/\sqrt{2}\}$ and $-1$ on the antisymmetric (singlet) direction $(|01\rangle-|10\rangle)/\sqrt{2}$, so
 $$
-\mathrm{spec}\,J_T = \{\,1,\;1,\;1,\;-1\,\}.
+\boxed{\;\mathrm{spec}\,J_T = \{\,1,\;1,\;1,\;-1\,\}\;}.
 $$
 The Choi matrix is therefore not positive semidefinite, and by the parent's criterion $\Phi_T$ is **not completely positive**. Equivalently, transposing one qubit of a maximally entangled state can produce an operator with a negative eigenvalue: the antisymmetric direction of $J_T$ is exactly the singlet, which acquires the eigenvalue $-1$. No physical process can act that way on half of an entangled pair, so $\Phi_T$ is not a channel, despite being positive and trace preserving. This is the parent's point that positivity must be strengthened to complete positivity, made explicit on the simplest example.
 
@@ -182,9 +182,9 @@ K_1 = \begin{pmatrix}0 & \sqrt{\gamma}\\ 0 & 0\end{pmatrix} = \sqrt{\gamma}\,|0\
 $$
 Writing $s = \sqrt{1-\gamma} \in [0,1]$ and using $\sigma_3 = i\vec e_z$ and $|0\rangle\langle 1| = \tfrac{1}{2}(i\vec e_x - \vec e_y)$, these translate to
 $$
-\tilde{K}_0 = \frac{1+s}{2}\,e_t + i\,\frac{1-s}{2}\,\vec e_z \;\in \mathbb{M}_+,
+\boxed{\;\tilde{K}_0 = \frac{1+s}{2}\,e_t + i\,\frac{1-s}{2}\,\vec e_z \;\in \mathbb{M}_+,
 \qquad
-\tilde{K}_1 = \frac{\sqrt{\gamma}}{2}\left(i \vec e_x - \vec e_y\right) \in \mathbb{B}.
+\tilde{K}_1 = \frac{\sqrt{\gamma}}{2}\left(i \vec e_x - \vec e_y\right) \in \mathbb{B}\;}.
 $$
 Here $\tilde{K}_0$ is Hermitian (it is an element of $\mathbb{M}_+$), while $\tilde{K}_1$ is not. Trace preservation follows from
 $$
@@ -240,7 +240,7 @@ D(\vec u_y,q)\,D(\vec u_x,p)
 $$
 For **parallel axes**, $\vec u_y = \vec u_x$, the projector identity $\vec u_x\vec u_x^{\mathsf{T}}\vec u_x\vec u_x^{\mathsf{T}} = \vec u_x\vec u_x^{\mathsf{T}}$ collapses the sum to
 $$
-D(\vec u_x,q)\,D(\vec u_x,p) = D(\vec u_x,\,p+q-pq),
+\boxed{\;D(\vec u_x,q)\,D(\vec u_x,p) = D(\vec u_x,\,p+q-pq)\;},
 $$
 so the composite is again a dephasing channel, with effective parameter $p_{\mathrm{out}} = p+q-pq$; its Kraus rank is at most two.
 
@@ -250,7 +250,7 @@ D(\vec e_x,1)\,D(\vec e_z,1) = \vec e_x\left(\vec e_x^{\mathsf{T}}\vec e_z\right
 $$
 The composite is the **completely depolarizing channel**, $\tilde{Ϛ} \mapsto \tfrac{1}{2}e_t$ for every state: every Bloch vector is sent to the origin. Its Choi matrix is
 $$
-J = \sum_{jk} E_{jk}\otimes\Phi(E_{jk}) = \sum_{k} E_{kk}\otimes \tfrac{1}{2}e_t = \tfrac{1}{2}I_4,
+\boxed{\;J = \sum_{jk} E_{jk}\otimes\Phi(E_{jk}) = \sum_{k} E_{kk}\otimes \tfrac{1}{2}e_t = \tfrac{1}{2}I_4\;},
 $$
 of rank four. Thus composing two rank-two channels produces a rank-four channel, saturating the qubit bound $4 = 2\times 2$. More generally, for two distinct axes and $0<p,q<1$ the composite also saturates the bound and has Kraus rank four (checked numerically over the parameter range); the rank drops to two only when the axes are parallel or one of the channels is trivial.
 
@@ -291,8 +291,8 @@ with equality if and only if $p=0$ or the state is on the dephasing axis. Dephas
 
 **Concrete case.** Take the pure state $\tilde{Ϛ} = \tilde\Pi_1(\vec e_x) = \tfrac{1}{2}(e_t + i\vec e_x)$, with $\vec r = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $\vec e_z$ with $p = \tfrac{1}{2}$. Then $\vec r_{\mathrm{out}} = (\tfrac{1}{2},0,0)$, so $|\vec r_{\mathrm{out}}| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
 $$
-S = -\tfrac{3}{4}\log\tfrac{3}{4} - \tfrac{1}{4}\log\tfrac{1}{4}
-= \tfrac{3}{4}\log\tfrac{4}{3} + \tfrac{1}{4}\log 4 \approx 0.562335 \ \text{nats},
+\boxed{\;S = -\tfrac{3}{4}\log\tfrac{3}{4} - \tfrac{1}{4}\log\tfrac{1}{4}
+= \tfrac{3}{4}\log\tfrac{4}{3} + \tfrac{1}{4}\log 4 \approx 0.562335 \ \text{nats}\;},
 $$
 while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625$. At $p=1$ the Bloch vector collapses to the origin, the state becomes maximally mixed, and $S = \log 2 \approx 0.693147$ nats. The entropy rises monotonically from $0$ to $\log 2$ as $p$ runs from $0$ to $1$.
 

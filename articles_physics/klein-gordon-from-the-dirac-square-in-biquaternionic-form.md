@@ -59,7 +59,7 @@ $$
 Therefore
 
 $$
-(i\not\partial + m)(i\not\partial - m) = \Box - m^2 .
+\boxed{\;(i\not\partial + m)(i\not\partial - m) = \Box - m^2\;}.
 $$
 
 This is the **Dirac square**. It is an operator identity in the spinor module, and it is the precise sense in which the Dirac operator is a square root of the Klein–Gordon operator: $i\not\partial$ is first order, its square is the second-order central scalar $\Box$, and the mass enters the squared equation as $m^2$. The companion articles record the same reduction in the form without an explicit factor $i$ on the slash: with $\not\partial^2 = g^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu = -\Box$, the $i$-less product is $(\not\partial + m)(\not\partial - m) = \not\partial^2 - m^2 = -\Box - m^2$, whereas carrying the $i$ explicitly as above gives $(i\not\partial + m)(i\not\partial - m) = \Box - m^2$. It is the second form that is used in this article, and the reduction the companion records, $(\Box - m^2)\tilde{\Psi} = 0$, is the kernel that this identity produces. The numerical section below verifies the reduction on a superposition of two plane waves in the Dirac representation.
@@ -83,7 +83,7 @@ $$
 where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ is central, this is
 
 $$
-\left(\Box - m^2\right)\tilde{\Psi}_R = 0 .
+\boxed{\;\left(\Box - m^2\right)\tilde{\Psi}_R = 0\;}.
 $$
 
 Applying $\tilde{\nabla}$ to the second member instead gives the same statement for $\tilde{\Psi}_L$:
@@ -156,11 +156,11 @@ $$
 so that $\mathcal{D}_-$ is the Dirac pair and $\mathcal{D}_+$ its opposite-mass partner. Because $m$ is central — it commutes with $\tilde{\nabla}$ and with $\tilde{\nabla}^{\natural}$ — the two matrices multiply cleanly:
 
 $$
-\mathcal{D}_-\mathcal{D}_+
+\boxed{\;\mathcal{D}_-\mathcal{D}_+
 = \begin{pmatrix} -m & \tilde{\nabla} \\ \tilde{\nabla}^{\natural} & -m\end{pmatrix}
 \begin{pmatrix} m & \tilde{\nabla} \\ \tilde{\nabla}^{\natural} & m\end{pmatrix}
 = \begin{pmatrix} \Box - m^2 & 0 \\ 0 & \Box - m^2\end{pmatrix}
-= \left(\Box - m^2\right)I ,
+= \left(\Box - m^2\right)I\;},
 $$
 
 the off-diagonal entries cancelling because the mass passes through the gradients.

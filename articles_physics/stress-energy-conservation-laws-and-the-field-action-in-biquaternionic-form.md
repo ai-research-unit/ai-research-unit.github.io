@@ -24,10 +24,6 @@ Three threads are developed.
 - **The Noether construction.** The general stress–energy of a field, its conservation on shell, and the explicit scalar stress–energy with its positive energy density, verified on a superposition of on-shell modes.
 - **The electromagnetic tensor as a bigeneral quaternionic bilinear.** The construction $T^\mu{}_\nu = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, its component table, its symmetry, its tracelessness, and its conservation, including the source term that couples it to matter.
 
-**Boundaries.** This article is classical and non-quantum: it concerns the classical field action, its Noether currents, and the classical conservation laws. The quantisation of these fields, the associated Hilbert-space structures and the generating functionals belong to the sibling categories and to the companion article *Canonical Quantization of the Biquaternion Maxwell Field*, and they are not developed here. The informational interpretation of any of these quantities is likewise outside the scope; the stress–energy tensor constructed here is an element of the field's tensor algebra, and its bilinear form takes values in the Hermitian sector $\mathbb{M}_+$ only in the sense that the contraction $\tfrac12\tilde{F}\tilde{F}^{*}$ is Hermitian, which is recorded in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The multipole and spin-direction effects are treated elsewhere in the category.
-
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector, with basis $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$ and
-
 $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2+\Delta .
 $$
@@ -60,7 +56,7 @@ and the statement that a continuous transformation of the field leaves $S$ uncha
 Let $\tilde{\Phi}$ be a biquaternion-valued field and take the Lagrangian density
 
 $$
-\mathcal{L}_\phi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural} - \tfrac12\mu^2\,\tilde{\Phi}\tilde{\Phi}^{\natural} ,
+\boxed{\ \mathcal{L}_\phi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural} - \tfrac12\mu^2\,\tilde{\Phi}\tilde{\Phi}^{\natural}\ } ,
 \qquad
 \mu = \frac{mc}{\hbar} .
 $$
@@ -144,13 +140,13 @@ The four conserved quantities are the components of energy–momentum (from $\nu
 For a real scalar field with the Lagrangian $\mathcal{L}_\phi$ of the previous section, the conserved, symmetric stress–energy tensor with positive energy is
 
 $$
-T_{\mu\nu} = \partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\nu\,\phi + \eta_{\mu\nu}\mathcal{L}_\phi ,
+\boxed{\ T_{\mu\nu} = \partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\nu\,\phi + \eta_{\mu\nu}\mathcal{L}_\phi\ } ,
 $$
 
 the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and $x^0=ct'$,
 
 $$
-T^{tt} = T_{tt} = \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2} + \frac12(\nabla\phi)^2 + \frac12\mu^2\phi^2 > 0 ,
+\boxed{\ T^{tt} = T_{tt} = \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2} + \frac12(\nabla\phi)^2 + \frac12\mu^2\phi^2 > 0\ } ,
 $$
 
 $$

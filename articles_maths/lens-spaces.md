@@ -7,8 +7,6 @@ The lens spaces are the quotient manifolds $L(n,m) = S^3/(\mathbb{Z}/n)$, where 
 
 The lens spaces occupy a special place in topology as the first manifolds for which the classification by homeomorphism and by homotopy type were shown to differ, and for which the invariant that detects the difference — the Reidemeister torsion — was found. Reidemeister and Franz classified them up to homeomorphism by the arithmetic of the parameter $m$, Whitehead classified them up to homotopy type by a congruence involving squares, and the gap between the two classifications is the classical example of a homotopy-theoretic invariant that is not a homeomorphism invariant. The lens spaces are also the standard example in the theory of the $s$-cobordism: two lens spaces can be homotopy equivalent, $h$-cobordant and not diffeomorphic, so that the Whitehead torsion of a homotopy equivalence is the essential ingredient in the classification of the cobordisms of dimension at least five.
 
-**The boundaries of the article.** The three-manifold topology involved — Heegaard splittings, Dehn surgery, the Seifert fibrations, the prime and torus decompositions, the classification of the spherical space forms and the geometrisation theorem — is not treated here, and the surgery and cobordism frame, the $s$-cobordism theorem and the Whitehead torsion are standard; the lens spaces are treated here as the class of examples in which the arithmetic of the classification is visible. The knots whose surgeries produce lens spaces are the standard ones. The Floer-theoretic $d$-invariants and correction terms that constrain the rational homology cobordisms of lens spaces are standard. The fundamental group, the homology, the Reidemeister torsion and the chain complexes are the algebraic-topological input of *Algebraic Topology*, being written by another agent; the present article states the classification and identifies the invariant, without re-deriving the algebra. The linear algebra of the cyclic lattices and the plumbing forms, and the signature and the Rochlin invariant, are those of *Symplectic Forms and Poisson Brackets* and of *Characteristic Classes* respectively, both written by other agents. The quotient singularities and the weighted projective constructions belong to algebraic geometry, and the analytic theory of the eigenvalues of the Laplacian — the spectral geometry of the lens spaces, the eta invariant and the multiplicities — is part of the spectral theory of Part III, where the measure and the limit are available. No physics is invoked.
-
 ## Constructions of the Lens Spaces
 
 **Definition.** Let $n\geq1$ and let $m$ be coprime to $n$. The **lens space** $L(n,m)$ is the quotient of the unit sphere
@@ -145,8 +143,6 @@ The classification is arithmetic. Up to homeomorphism $L(n,m)\cong L(n,m')$ if a
 | $n$ perfect square | Necessary condition for $L(n,m)$ to bound a rational homology four-ball |
 | $d(L(n,m))$ | Heegaard Floer correction term; obstructs rational homology balls |
 | $\Sigma(2,3,5)$ | Poincaré homology sphere $S^3/I^*$ among the non-lens spherical space forms |
-
-
 
 ## Further Reading
 

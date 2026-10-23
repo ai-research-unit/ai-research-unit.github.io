@@ -19,13 +19,17 @@ The article owns the dictionary and the list of objects. The model and the map o
 **Proposition (the matrix of an element).** In the basis $1,j$ the matrix of the left multiplication by $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is
 
 $$
-\mathsf{M}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
+\boxed{\;
+\mathsf{M}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}
+\;},
 $$
 
 of trace $2Q_{\blacktriangle}$ and determinant $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$; its eigenvalues are $Q_{\blacktriangle}+Q_{\blacktriangledown}=Q_{+}$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}=Q_{-}$, with eigenvectors $1+j$ and $1-j$; and the change of basis to $(\Pi_+,\Pi_-)$ conjugates it to the diagonal form
 
 $$
-\mathsf{M}_{\mathrm{d}}(\breve Q)=\begin{pmatrix}Q_{+}&0\\ 0&Q_{-}\end{pmatrix}.
+\boxed{\;
+\mathsf{M}_{\mathrm{d}}(\breve Q)=\begin{pmatrix}Q_{+}&0\\ 0&Q_{-}\end{pmatrix}
+\;}.
 $$
 
 **Proof.** $L_{\breve Q}(1)=\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and $L_{\breve Q}(j)=\breve Q j=Q_{\blacktriangledown}+Q_{\blacktriangle}j$, giving the two columns; the trace and the determinant are read from the matrix; the eigenvector $1+j$ has $L_{\breve Q}(1+j)=Q_{\blacktriangle}+Q_{\blacktriangledown}+(Q_{\blacktriangle}+Q_{\blacktriangledown})j=Q_{+}(1+j)$, and likewise $1-j$; the change of basis is the involution $\left(\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}\right)$ up to the factor $\tfrac12$, and it diagonalises the matrix.
@@ -76,7 +80,9 @@ $$
 **Proposition (the forms in the model).** In the diagonal model
 
 $$
-\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(\breve Q)^{*}\mathsf{M}_{\mathrm{d}}(\breve Q)\bigr)=\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(\breve Q)\rVert_{F}^{2},
+\boxed{\;
+\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(\breve Q)^{*}\mathsf{M}_{\mathrm{d}}(\breve Q)\bigr)=\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(\breve Q)\rVert_{F}^{2}
+\;},
 $$
 
 and $\langle \breve Q\rangle_{*}=\operatorname{Re}(Q_{+}\bar Q_{-})$, the real part of the Hermitian pairing of the two eigenvalues, while the algebraic norm is the determinant.

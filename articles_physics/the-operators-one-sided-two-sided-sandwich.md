@@ -59,7 +59,7 @@ $$
 and the sandwich is the special case in which the right parameter is the Hermitian conjugate of the left:
 
 $$
-\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}.
+\boxed{\;\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}\;}.
 $$
 
 The sandwich is therefore multiplicative in its parameter. It is not linear: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, and $\operatorname{H}_{\tilde Q+\tilde U}\neq\operatorname{H}_{\tilde Q}+\operatorname{H}_{\tilde U}$ in general. It is a quadratic map that happens to preserve composition, a representation of the unit group modulo its central phase circle rather than a linear one.
@@ -101,9 +101,9 @@ This adjoint is **not** the physical adjoint of the observables. Self-adjointnes
 A two-sided operator is a pair of parameters, and only the relative data of the pair are physical. The identity is
 
 $$
-L_{\tilde A}R_{\tilde B}=\mathrm{id}
+\boxed{\;L_{\tilde A}R_{\tilde B}=\mathrm{id}
 \iff \tilde A\tilde B=e_t \ \text{and}\ \tilde A\ \text{central}
-\iff (\tilde A,\tilde B)=(\lambda e_t,\lambda^{-1}e_t),\quad \lambda\in\mathbb{C}^{\times}.
+\iff (\tilde A,\tilde B)=(\lambda e_t,\lambda^{-1}e_t),\quad \lambda\in\mathbb{C}^{\times}\;}.
 $$
 
 For invertible parameters, more generally,
@@ -229,7 +229,7 @@ The monoid is not a $C^{*}$-algebra. It has no involution that makes it one, it 
 Relative to a Hermitian idempotent $\tilde\Pi$ ($\tilde\Pi^2=\tilde\Pi=\tilde\Pi^{*}$), the algebra splits into four corners:
 
 $$
-X=\tilde\Pi X\tilde\Pi+\tilde\Pi X(1-\tilde\Pi)+(1-\tilde\Pi)X\tilde\Pi+(1-\tilde\Pi)X(1-\tilde\Pi).
+\boxed{\;X=\tilde\Pi X\tilde\Pi+\tilde\Pi X(1-\tilde\Pi)+(1-\tilde\Pi)X\tilde\Pi+(1-\tilde\Pi)X(1-\tilde\Pi)\;}.
 $$
 
 In the block matrix form,

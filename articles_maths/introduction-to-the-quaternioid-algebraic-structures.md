@@ -27,9 +27,9 @@ $$
 **Theorem.** The algebra product is the sum of its two halves, and the quaternionic product is separated from it by the scalar and the vector part of the first factor,
 
 $$
-\tilde q_1\tilde q_2 = \tilde q_1\bullet\tilde q_2 + \tilde q_1\wedge\tilde q_2, \qquad
+\boxed{\;\tilde q_1\tilde q_2 = \tilde q_1\bullet\tilde q_2 + \tilde q_1\wedge\tilde q_2, \qquad
 \tilde q_1\tilde q_2 + \tilde q_1^{\natural}\tilde q_2 = 2q_{1t}\tilde q_2, \qquad
-\tilde q_1\tilde q_2 - \tilde q_1^{\natural}\tilde q_2 = 2\vec q_1\,\tilde q_2 .
+\tilde q_1\tilde q_2 - \tilde q_1^{\natural}\tilde q_2 = 2\vec q_1\,\tilde q_2\;}.
 $$
 
 **Proof.** The symmetrisation keeps the scalar product and the two linear terms of $\tilde q_1\tilde q_2$ and the antisymmetrisation keeps the cross product, so their sum is the algebra product; the quaternionic product is the algebra product with $\tilde q_1$ replaced by $\tilde q_1^{\natural}=q_{1t}e_t-\vec q_1$, which flips the signs of $(\vec q_1,\vec q_2)$, of $q_{2t}\vec q_1$ and of $\vec q_1\times\vec q_2$, and adding or subtracting the two displays kills the vector terms of the first factor. The algebra product and the general quaternionic product are the **two general products** of the space in the sense of the general theory of a product with an involution; the two halves of the first are the symmetric and antisymmetric plain products. The products and their tables are *The 6 Products of the Quaternioid $\mathbb{R}$ Space* and *The Two General Products of the Quaternioid $\mathbb{R}$ Space*.
@@ -53,7 +53,7 @@ $$
 **Theorem.** The companion products carry **two bilinear forms**, the plain form and the quaternion form,
 
 $$
-\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2) = q_{1t}q_{2t}-(\vec q_1,\vec q_2), \qquad \langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) = q_{1t}q_{2t}+(\vec q_1,\vec q_2),
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2) = q_{1t}q_{2t}-(\vec q_1,\vec q_2), \qquad \langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) = q_{1t}q_{2t}+(\vec q_1,\vec q_2)\;},
 $$
 
 of Gram matrices $\operatorname{diag}(1,-1,-1,-1)$ and $\mathrm I_4$, hence of signatures $(1,3)$ and $(4,0)$; the first is carried by the algebra product and by the symmetric plain structure, the second by the general quaternionic structure. The forms are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*.

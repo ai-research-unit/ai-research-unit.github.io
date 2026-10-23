@@ -17,16 +17,6 @@ The contribution is an interpretation, and it is small.
 
 The article proceeds as follows. A section fixes the total-derivative argument on which both relations rest. Two sections derive the Schwinger–Dyson equations — the quantum equation of motion and the master equation — and specialise them to the scalar field, the gauge field, and the fermion. A section derives the Ward–Takahashi identities in general form, and two sections treat the central phase, which is the framework's canonical case, and the axial identity with its anomaly. A section separates what the algebra supplies from what it imports, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form* and *The Generating Functional and the Effective Action in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central imaginary $i$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $\flat=-{}^{*}$ the anti-Hermitian conjugation. The real bilinear form,
-$$
-\langle \tilde Q,\tilde Q_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde Q^{*}\tilde Q_1\big),
-$$
-is the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\mathrm{Tr}(e_t)=2$. The material coordinate is $\tilde R=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the quadratic operator is $K_{\mathrm{kin}}=\Box-m^2$. The functional integral with source is
-$$
-Z[\tilde J]=\int\mathcal{D}\tilde\Phi\;\exp(\,iS[\tilde\Phi]/\hbar+\langle\tilde J,\tilde\Phi\rangle),
-$$
-with $\tilde J$ valued in the module; the connectivity of $\tilde J$ with *The Generating Functional and the Effective Action in Biquaternionic Form* is recorded there, and the source convention $+\langle\tilde J,\tilde\Phi\rangle$ — a real pairing and no explicit $i$ — is the one used throughout the series.
-
 ## The Total-Derivative Argument
 
 Both relations come from one identity, and it is worth having it before either is named.
@@ -163,8 +153,8 @@ $$
 $$
 For $F$ a product of fields the identity relates the divergence of the current to the variation of the product, and when $Q$ is a local generator, $Q=\int d^4x\,q(x)$, the identity holds locally as
 $$
-\partial/\partial Q_\mu\,\big\langle j^\mu(x)\,F\big\rangle
-=-\big\langle q(x)F\big\rangle+\text{contact terms},
+\boxed{\;\partial/\partial Q_\mu\,\big\langle j^\mu(x)\,F\big\rangle
+=-\big\langle q(x)F\big\rangle+\text{contact terms}\;},
 $$
 the **Ward–Takahashi identity**. The contact terms are the variation of the inserted fields, exactly as in the Schwinger–Dyson case, and they are distributional at coincident points.
 

@@ -297,17 +297,17 @@ The author notes the inversion that looks like a slip and is not: the derivative
 The result the paper is built to reach is the **cyclic representation**,
 
 $$
-F^- \odot \bar{D} + D \otimes F^+ = im\,\overset{⤺}{F},
+\boxed{\;F^- \odot \bar{D} + D \otimes F^+ = im\,\overset{⤺}{F}\;},
 \tag{20}
 $$
 
 the Dirac equation for the biquaternion wave function $F$, written as one expression in which the two chiralities appear as the two signed parts $F^\pm$, the two gradient orderings appear as the two products $\odot$ and $\otimes$, and the mass appears on the right through the cyclic conjugate of $F$. Its component form, as printed, is
 
 $$
-\partial/\partial\xi f_\alpha - \partial/\partial\beta f_\xi = im\,f_\beta, \qquad
+\boxed{\;\partial/\partial\xi f_\alpha - \partial/\partial\beta f_\xi = im\,f_\beta, \qquad
 \partial/\partial\eta f_\xi - \partial/\partial\alpha f_\alpha = im\,f_\eta, \qquad
 \partial/\partial\eta f_\beta + \partial/\partial\beta f_\eta = im\,f_\alpha, \qquad
-\partial/\partial\xi f_\eta + \partial/\partial\alpha f_\beta = im\,f_\xi.
+\partial/\partial\xi f_\eta + \partial/\partial\alpha f_\beta = im\,f_\xi\;}.
 \tag{21}
 $$
 
@@ -387,7 +387,7 @@ $$
 whose first two determine the longitudinal amplitudes $a_\xi, a_\eta$ from the free pair $a_\alpha, a_\beta$; the remaining two are then satisfied identically precisely when
 
 $$
-\epsilon^2 - \vec k^2 = k_\xi k_\eta - k_\alpha k_\beta = m^2 .
+\boxed{\;\epsilon^2 - \vec k^2 = k_\xi k_\eta - k_\alpha k_\beta = m^2\;}.
 \tag{30}
 $$
 

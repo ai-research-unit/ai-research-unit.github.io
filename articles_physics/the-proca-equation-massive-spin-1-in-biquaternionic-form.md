@@ -75,9 +75,9 @@ The three polarizations are easiest to see in the rest frame, $\vec k = \mathbf{
 The Proca system is transcribed into the framework by replacing the four-vector by the material-sector biquaternion and the gradient by the biquaternionic gradient. The single equation is
 
 $$
-\tilde{\nabla}\tilde{F} = \frac{m^2c^2}{\hbar^2}\,\tilde{A},
+\boxed{\;\tilde{\nabla}\tilde{F} = \frac{m^2c^2}{\hbar^2}\,\tilde{A},
 \qquad
-\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right),
+\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\;},
 $$
 
 or, in natural units $\hbar=c=1$,
@@ -87,7 +87,6 @@ $$
 $$
 
 The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, with the external source $\sqrt{\mu}\,\tilde{J}$ replaced by a current proportional to the potential itself.
-
 
 ### Why the equation is the right one
 
@@ -117,13 +116,12 @@ $$
 Now take the scalar part of both sides. The d'Alembertian $\Box$ is a central scalar differential operator, so it preserves the scalar–vector decomposition and $\mathrm{Sc}(\Box\tilde{F}) = \Box\,\mathrm{Sc}(\tilde{F})$. The field strength $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is a **pure vector**, so $\mathrm{Sc}(\tilde{F}) = 0$, and the left-hand side vanishes identically. Hence
 
 $$
-0 = \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
+\boxed{\;0 = \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
 \qquad\Longrightarrow\qquad
-S := \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0 ,
+S := \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0\;},
 $$
 
 which is the **Lorenz condition** of the companion Maxwell article, whose components are $\partial/\partial Q_t\,A_t + \mathrm{div}\,\vec A = 0$. The derivation uses only three facts: the field strength is a pure vector, the d'Alembertian is central and scalar, and the mass parameter is nonzero. In the massless case the same computation gives $0 = 0$ and no constraint, which is exactly why the gauge freedom survives there and is absent here.
-
 
 ## Reduction to the Klein–Gordon Equation
 
@@ -148,7 +146,7 @@ $$
 the Klein–Gordon equation for the biquaternion-valued potential. Because $\Box$ is central and scalar, it acts on the four coefficients of $\tilde{A}$ separately, and the equation is the statement that each coefficient of the potential satisfies the scalar Klein–Gordon equation. The reduction is therefore exact and reversible: the Proca equation for $\tilde{A}$ and the pair
 
 $$
-\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{A} = 0, \qquad \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0
+\boxed{\;\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{A} = 0, \qquad \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0\;}
 $$
 
 are equivalent. This is the biquaternion transcription of the standard statement that the Proca equation is equivalent to the Klein–Gordon equation together with the Lorenz condition.
@@ -190,9 +188,9 @@ $$
 as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires
 
 $$
-\frac{\omega^2}{c^2} - \vec k^2 = \frac{m^2c^2}{\hbar^2},
+\boxed{\;\frac{\omega^2}{c^2} - \vec k^2 = \frac{m^2c^2}{\hbar^2},
 \qquad\text{i.e.}\qquad
-\omega^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2},
+\omega^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2}\;},
 $$
 
 the physical relativistic dispersion relation.
@@ -286,7 +284,6 @@ $$
 $$
 
 The **reversal-even** combination is Proca's equation; the **reversal-odd** combination is the vanishing of the odd source. The mass term is reversal-even and that constraint is reversal-odd, so the two are halves of one equation, and the Maxwell equation of the companion article is what remains when the even half is massless. The splitting requires the potential to be ordinal-invariant — this is the assumption the source notes is made silently when Maxwell's equation is first written — and it is the same assumption under which the field strength is the vector part of the conjugate gradient of the potential.
-
 
 ### The two parities and the two massive particles
 

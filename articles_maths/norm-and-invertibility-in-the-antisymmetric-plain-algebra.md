@@ -14,10 +14,6 @@ A norm is relative to a product, and the algebraic norm of a product is the diag
 
 The invertibility is a second and independent absence. The block has **no left unit, no right unit and no two-sided unit**, hence no inverse and an empty group of units; the inverse equation to the centre has no solution, because the block cannot produce a central value at all.
 
-**Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Plain Algebra*; the general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the antisymmetrisation from which the block is written is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The algebraic norm of the general plain bilinear product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*; the invariant forms of the block are *The Killing Form of the Antisymmetric Plain Algebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$, and $\tilde Q_1\tilde Q_2$ is the general plain bilinear product. The product of the block is $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\wedge$.
-
 **The results.** The antisymmetric plain multiplication $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ has no left unit, no right unit and no two-sided unit, hence no invertible element and an empty group of units; the inverse equation $\tilde Q_1\wedge\tilde Q_2=e_t$ has no solution, because every value of the block is a pure vector. Its scalar part vanishes identically, $\mathrm{Sc}(\tilde Q_1\wedge\tilde Q_2)=0$, so the algebraic norm of the block is the zero function and the block carries **no algebraic norm**. Both canonical quadratics built from the product, the square $\tilde Q_1\wedge\tilde Q_1$ and the conjugated square $\tilde Q_1\wedge\tilde Q_1^{\natural}$, vanish identically as well.
 
 ## The Relative Definitions
@@ -71,9 +67,11 @@ and for an operation whose scalar part vanishes identically the algebraic norm i
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric plain multiplication,
 
 $$
+\boxed{\;
 \mathrm{Sc}\bigl(\tilde Q_1\wedge\tilde Q_2\bigr)=0\quad\text{for all }\tilde Q_1,\tilde Q_2,
 \qquad\text{hence}\qquad
-\varphi_{\wedge}(\tilde Q)=0\quad\text{for all }\tilde Q .
+\varphi_{\wedge}(\tilde Q)=0\quad\text{for all }\tilde Q
+\;}.
 $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
@@ -82,9 +80,7 @@ The algebraic norm of the operation is identically zero, and by the convention o
 
 **Remark (the two canonical quadratics of the block).** The product being alternating, the square and the conjugated square both vanish identically:
 
-$$
-\tilde Q_1\wedge\tilde Q_1=0,\qquad \tilde Q_1\wedge\tilde Q_1^{\natural}=\vec X\times(-\vec X)=0 .
-$$
+$$ \boxed{\; \tilde Q_1\wedge\tilde Q_1=0,\qquad \tilde Q_1\wedge\tilde Q_1^{\natural}=\vec X\times(-\vec X)=0 \;}. $$
 
 There is therefore no central-valued quadratic map built from the product, neither $\tilde Q_1\wedge\tilde Q_1$ nor the conjugated square $\tilde Q_1\wedge\tilde Q_1^{\natural}$; the two coincide at the zero map and neither descends to an algebraic norm. The parent product $\tilde Q_1\tilde Q_2$ removes its scalar part in the block, and with the scalar part removed from a square the central quadratic form is gone.
 

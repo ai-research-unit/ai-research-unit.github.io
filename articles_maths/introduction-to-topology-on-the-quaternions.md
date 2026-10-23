@@ -4,10 +4,6 @@
 
 This article opens the topological half of the chapter. The quaternion algebra is a real vector space of dimension four, so it carries the Euclidean topology of that space; its multiplicative structure cuts out three objects, the whole space, the unit sphere, and the complement of the origin, and the article names them and maps the articles that study them. It states the topology and does not develop it: the algebra of the block is the article before it, and the metric statements are the concern of the articles below.
 
-**Boundaries.** This is the entry of the topological half. The algebra is *Introduction to the Quaternion Algebra* and its block, above this article in this category; the topology of the algebra is *Quaternion Topology*, below this article in this category; the group of units is *The Quaternion Unit Group as a Topological Group* and the arithmetic of its finite subgroups is *Quaternion Orders and Finite Groups of Units*, both below this article in this category; the metrics are *Quaternion Metrics*, below this article in this category.
-
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$; an element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_kq_k\vec e_k$. The **quaternion form** is $\langle\tilde q_2,\tilde q_1\rangle_{\natural}=q_{2t}q_{1t}+\vec q_2\cdot\vec q_1$, the **quadratic form** is $\langle\tilde q\rangle_{\natural}=q_t^{2}+|\vec q|^{2}$, and the **quaternion conjugation** is $\tilde q^{\natural}=q_te_t-\vec q$; the bar is the identity. Metric words are used in this half of the chapter only, and the *norm* here is the function $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$.
-
 ## The Space and Its Norm
 
 **Proposition (the space).** The identification $\tilde q\mapsto(q_t,q_x,q_y,q_z)$ is a vector-space isomorphism $\mathbb{H}\cong\mathbb{R}^4$, and $\mathbb{H}$ carries the Euclidean topology of $\mathbb{R}^4$: the product and the addition and the scalar multiplication are continuous, and the topology is induced by the norm $\lvert\tilde q\rvert=\sqrt{q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}}$.
@@ -38,10 +34,8 @@ $$
 
 **Remark (the punctured space is a product).** The map
 
-$$
-\mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
-\tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr),
-$$
+$$ \boxed{\; \mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
+\tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr) \;} ,$$
 
 is a homeomorphism, and an isomorphism of topological groups when the first factor is given its multiplicative structure; the display is the decomposition of the group of units, and its proof, together with the topology of the group, is *The Quaternion Unit Group as a Topological Group*, below this article in this category. The homeomorphism is named here because it is the bridge between the punctured space and the sphere, and it is not reproved here.
 

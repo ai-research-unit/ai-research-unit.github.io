@@ -16,9 +16,11 @@ object it has one sharp feature, and the feature is the whole of the present art
 
 The feature is the action of the algebra unit. For the block,
 $$
+\boxed{\;
 L_{e_t}\tilde Q_1=e_t\diamond\tilde Q_1=\vec Q_1 , \qquad
 R_{e_t}\tilde Q_1=\tilde Q_1\diamond e_t=-\vec Q_1 , \qquad
-L_{e_t}^{2}=L_{e_t},
+L_{e_t}^{2}=L_{e_t}
+\;},
 $$
 so the left multiplication by $e_t$ is the **projection onto the vector subspace** along the
 centre, and the right multiplication is its negative. The block is the **only** one of the twelve
@@ -91,9 +93,7 @@ left action. The identity $R_{e_t}=-L_{e_t}$ is the alternation of the block rea
 
 **Theorem (the criterion of the block).** The left multiplication of an element is a projector
 exactly at the origin and at the algebra unit,
-$$
-L_{\tilde Q_1}^{2}=L_{\tilde Q_1}\iff \tilde Q_1=0\ \text{or}\ \tilde Q_1=e_t .
-$$
+$$ \boxed{\; L_{\tilde Q_1}^{2}=L_{\tilde Q_1}\iff \tilde Q_1=0\ \text{or}\ \tilde Q_1=e_t \;}. $$
 The two projectors are the zero operator and the projection onto the vector subspace.
 
 *Proof.* Write $L_{\tilde Q_1}\tilde Q_2=\tilde{Q}_3$ with
@@ -122,11 +122,13 @@ opposite of the general plain algebra, whose projector class is indexed by the w
 the vector subspace and the centre is realised by the multiplication of the single element
 $e_t$:
 $$
+\boxed{\;
 \mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}},
 \qquad
 \mathrm{Vect}(\mathbb{B})=\operatorname{im}L_{e_t},
 \qquad
-\mathbb{C}_{\mathbb{B}}=\ker L_{e_t}.
+\mathbb{C}_{\mathbb{B}}=\ker L_{e_t}
+\;}.
 $$
 The vector subspace is the image of the block and a left ideal of the block, and the centre is
 the kernel of $L_{e_t}$.

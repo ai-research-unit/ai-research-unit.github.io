@@ -55,9 +55,9 @@ so it changes the envelope and leaves the module orientation exactly as it was. 
 The standard Bogoliubov transformation follows from the central algebra,
 
 $$
-S^{*}\,a\,S=a\cosh r-\exp(\,i\theta)\sinh r\,a^\dagger ,
+\boxed{\;S^{*}\,a\,S=a\cosh r-\exp(\,i\theta)\sinh r\,a^\dagger ,
 \qquad
-S^{*}\,a^\dagger\,S=a^\dagger\cosh r-\exp(-i\theta)\sinh r\,a ,
+S^{*}\,a^\dagger\,S=a^\dagger\cosh r-\exp(-i\theta)\sinh r\,a\;},
 $$
 
 and in terms of quadratures it is the general Bogoliubov dilation. Writing $x$ and $p$ in terms of $a$ and $a^\dagger$ and using their transformation,
@@ -80,11 +80,11 @@ $$
 up to a phase. The quadrature variances are
 
 $$
-\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r),
+\boxed{\;\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r),
 \qquad
 \Delta p^2=\frac{\hbar m\omega}{2}\exp(2r),
 \qquad
-\Delta x\,\Delta p=\frac{\hbar}{2},
+\Delta x\,\Delta p=\frac{\hbar}{2}\;},
 $$
 
 so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\hbar/2$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[x,p]=i\hbar e_t$.
@@ -182,9 +182,9 @@ $$
 the elements $1+J$ and $1+K$ are zero divisors:
 
 $$
-(1+J)(1-J)=0,
+\boxed{\;(1+J)(1-J)=0,
 \qquad
-(1+K)(1-K)=0 .
+(1+K)(1-K)=0\;}.
 $$
 
 Both identities were verified in the two-dimensional representation $I=i\sigma_z$, $J=\sigma_x$: the products vanish exactly, while $I^2=-1$ and $J^2=+1$ were confirmed. The split algebra is what one obtains when the biquaternion norm is contracted in one direction, and its zero divisors are the real image of the biquaternion null cone. The real quaternion algebra $\mathbb{H}$ is a division algebra — every nonzero element of $\mathbb{H}$ has $\langle x\rangle_{\natural}>0$ and is invertible — but $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not: the complex coefficients supply the null cone that the last article of this subcategory treats. The contraction exhibits that locus in a real basis, where it becomes the lightlike cone of the split algebra.

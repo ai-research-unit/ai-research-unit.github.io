@@ -89,7 +89,7 @@ For $\tilde U\in S$ one has $\tilde U\tilde\Pi_S=\tilde\Pi_S$, so $\tilde\Pi_S^2
 The **Knill–Laflamme condition** for an error set $\{\tilde E_a\}$ is
 
 $$
-\tilde\Pi_S\tilde E_a^{*}\tilde E_b\tilde\Pi_S=c_{ab}\tilde\Pi_S
+\boxed{\;\tilde\Pi_S\tilde E_a^{*}\tilde E_b\tilde\Pi_S=c_{ab}\tilde\Pi_S\;}
 $$
 
 for all $a,b$. It says that the errors, compressed to the code, are scalar multiples of the code idempotent, so they can be detected and reversed without distinguishing the encoded states.
@@ -123,7 +123,7 @@ $$
 Two bases are **mutually unbiased** when every overlap across them is $1/d$; for the qubit $d=2$, so every cross trace is $\tfrac12$. The three bases are the eigenbases of the three Hermitian involutions $i\vec e_x$, $i\vec e_y$ and $i\vec e_z$. The units pairwise anticommute, and the normalised Hermitian form of idempotents from different bases, read as the trace pairing, is
 
 $$
-\operatorname{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr)=\tfrac12\qquad(b\ne b_2).
+\boxed{\;\operatorname{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr)=\tfrac12\qquad(b\ne b_2)\;}.
 $$
 
 **Interpretation.** The three coordinate measurements are the three unbiased bases, and their completeness is the tomographic statement that three outcome probabilities determine the Bloch vector. The outcome probabilities in the basis along $\vec e_k$ are
@@ -141,9 +141,9 @@ so the three bases reconstruct the state. The algebra's three imaginary units ar
 The four **Bell idempotents** of $\mathbb{B}\otimes\mathbb{B}$ are
 
 $$
-\tilde\Pi_\epsilon=\tfrac14\bigl(e_t\otimes e_t+\epsilon_1\vec e_x\otimes\vec e_x
+\boxed{\;\tilde\Pi_\epsilon=\tfrac14\bigl(e_t\otimes e_t+\epsilon_1\vec e_x\otimes\vec e_x
 +\epsilon_2\vec e_y\otimes\vec e_y+\epsilon_3\vec e_z\otimes\vec e_z\bigr),
-\qquad \epsilon_1\epsilon_2\epsilon_3=+1 .
+\qquad \epsilon_1\epsilon_2\epsilon_3=+1\;}.
 $$
 
 Each is Hermitian, idempotent and of trace one; the four are pairwise orthogonal and sum to $e_t\otimes e_t$; the partial trace of each is the maximally mixed state $\tfrac12 e_t$. The identities follow from $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$: distinct signs give a traceless product, the trace of each is $2^2/4=1$, and tracing the second factor leaves $\tfrac12e_t$. None is unitary, since $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\ne e_t\otimes e_t$.

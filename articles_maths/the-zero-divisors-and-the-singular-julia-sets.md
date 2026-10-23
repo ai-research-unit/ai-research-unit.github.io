@@ -15,7 +15,7 @@ The article owns the two kinds of zero divisor and the closed form of their squa
 **Proposition (the square of a zero divisor).** Every $\tilde Q\in\mathscr{Z}$ satisfies
 
 $$
-\tilde Q^2=2Q_t\,\tilde Q ,
+\boxed{\;\tilde Q^2=2Q_t\,\tilde Q\;},
 $$
 
 and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line $\mathbb{C}\tilde Q$. In particular the cone is closed under squaring.
@@ -36,7 +36,7 @@ and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line 
 **Theorem (the affine dynamics of the cone and its lines).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q=\lambda\tilde\Pi$, $\lambda\in\mathbb{C}$. Then under $F_{\tilde Q_2}$ with central parameter $\tilde Q_2=Ce_t$,
 
 $$
-F_{\tilde Q_2}(\lambda\tilde\Pi)=\lambda^2\tilde\Pi+C e_t ,
+\boxed{\;F_{\tilde Q_2}(\lambda\tilde\Pi)=\lambda^2\tilde\Pi+C e_t\;},
 $$
 
 so the orbit leaves the line unless $C=0$; for $C=0$ the line $\mathbb{C}\tilde\Pi$ is invariant and the restriction is the complex map $\lambda\mapsto\lambda^2$ on the coordinate. For the pure square-zero elements and $C=0$, the orbit reaches $0$ in one step.
@@ -62,7 +62,7 @@ The name records that on $\Sigma(\mathbb{B})$ the derivative of $F_{\tilde Q_2}$
 **Theorem (the idempotent manifold lies on the Julia set of the parameter zero).** For $\tilde Q_2=0$, every idempotent $\tilde\Pi$ lies in $J_0$. The idempotents form the smooth complex surface $\{\tilde\Pi^2=\tilde\Pi\}$ inside the cone $\mathscr{Z}$, and hence
 
 $$
-\{\tilde\Pi : \tilde\Pi^2=\tilde\Pi\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z} .
+\boxed{\;\{\tilde\Pi : \tilde\Pi^2=\tilde\Pi\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z}\;}.
 $$
 
 **Proof.** An idempotent is a fixed point, $F_0(\tilde\Pi)=\tilde\Pi$, and its matrix has spectrum $\{0,1\}$ with distinct eigenvalues, so $\rho(\mathsf{M}_2(\tilde\Pi))=1$ and $\mathsf{M}_2(\tilde\Pi)$ is diagonalisable; hence $\tilde\Pi\in\mathcal K_0$ by the corollary on the parameter zero of *The Biquaternion Quadratic Map and Its Julia Sets*. For $\lambda>1$ the element $\lambda\tilde\Pi$ has $\rho=\lambda>1$ and lies outside $\mathcal K_0$, while $\lambda\tilde\Pi\to\tilde\Pi$ as $\lambda\to1$. So every neighbourhood of $\tilde\Pi$ meets the complement of $\mathcal K_0$, and $\tilde\Pi\in\partial\mathcal K_0=J_0$. The variety of idempotents is the orbit of a single rank-one idempotent under the group of units, hence smooth of complex dimension two, and it is contained in the cone by $\langle\tilde\Pi\rangle_{\natural}=0$ for an idempotent.

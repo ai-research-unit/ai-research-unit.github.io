@@ -46,8 +46,10 @@ the transform of the four scalar components of $f$.
 **Theorem (Inversion and Plancherel).** For $f$ in the Schwartz class of algebra-valued functions,
 
 $$
-f(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi ,
-$$
+\boxed{\;
+f(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi
+\;}
+$$,
 
 the transform extends to a unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.
 
@@ -70,8 +72,10 @@ with the product of the algebra inside the integral.
 **Theorem (The Convolution Theorem).** For $f, g \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the convolution is well defined almost everywhere, and
 
 $$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi),
-$$
+\boxed{\;
+\widehat{f * g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi)
+\;}
+$$,
 
 the product being the product of the algebra.
 
@@ -130,8 +134,10 @@ exists exactly when $\langle\tilde q-\tilde q_2\rangle_{\natural} \neq 0$, that 
 **Theorem (The Vanishing Determinant, Stated Precisely).** Let $D = \vec e_x\partial/\partial q_x + \vec e_y\partial/\partial q_y + \vec e_z\partial/\partial q_z$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then
 
 $$
-\widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, (\mathcal F f)(\xi),
-$$
+\boxed{\;
+\widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, (\mathcal F f)(\xi)
+\;}
+$$,
 
 so that the **symbol** of the operator is the frequency vector $\xi \in V$; the symbol is invertible exactly when $\xi$ is a unit, that is exactly when $\langle \xi\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with *Split-Quaternion Analysis*, §*The Differential Operators*.
 

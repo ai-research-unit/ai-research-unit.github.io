@@ -30,9 +30,9 @@ The reading has three parts, and the article keeps them apart. The first is the 
 The complement is a left ideal for the same reason $S$ is. The Peirce decomposition with respect to the pair $(\tilde\Pi_+,\tilde\Pi_-)$ cuts the algebra into four one-dimensional complex corners, and the second column is the sum of its diagonal and off-diagonal corners:
 
 $$
-\mathbb{B}\tilde\Pi_-=
+\boxed{\;\mathbb{B}\tilde\Pi_-=
 \tilde\Pi_-\mathbb{B}\tilde\Pi_-\oplus\tilde\Pi_+\mathbb{B}\tilde\Pi_-
-=\mathbb{C}\tilde\Pi_-\oplus\mathbb{C}\vec\Upsilon_x .
+=\mathbb{C}\tilde\Pi_-\oplus\mathbb{C}\vec\Upsilon_x\;}.
 $$
 
 In the matrix model $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ the four elements are the matrix units
@@ -86,10 +86,10 @@ $$
 It is a module map because it acts on the right and the algebra acts on the left: $\tilde Q(x\vec\Upsilon_x)=(\tilde Qx)\vec\Upsilon_x$. It is nonzero between simple modules of the same dimension, so it is an isomorphism. Symmetrically, right multiplication by $\vec\Upsilon_y$ returns:
 
 $$
-\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y,\qquad
+\boxed{\;\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y,\qquad
 \vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+,
 \qquad
-(\mathbb{B}\tilde\Pi_-)\vec\Upsilon_y=S .
+(\mathbb{B}\tilde\Pi_-)\vec\Upsilon_y=S\;}.
 $$
 
 The naive basis swap is **not** the map. The relabelling $\tilde\Pi_+\leftrightarrow\tilde\Pi_-$, $\vec\Upsilon_y\leftrightarrow\vec\Upsilon_x$ does not commute with the left action: $\tilde\Pi_-\tilde\Pi_+=0$ while $\tilde\Pi_-\tilde\Pi_-=\tilde\Pi_-$. The isomorphism must mix the two idempotents, and right multiplication by the nilpotent is exactly such a mixing.
@@ -137,7 +137,7 @@ The coincidence is not automatic. **It holds because $\tilde\Pi_+$ is Hermitian.
 The **algebra's-own-form complement** is a third subspace. Because the symmetric form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is degenerate on the carrier, with $B_S=\operatorname{diag}(\tfrac12,0)$ and radical $\mathbb{C}\vec\Upsilon_y$, the orthogonal complement of $S$ is
 
 $$
-S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\},
+\boxed{\;S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}\;},
 $$
 
 which shares the idempotent $\tilde\Pi_-$ with the module complement and differs in its nilpotent. Equivalently,

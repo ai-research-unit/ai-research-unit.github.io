@@ -57,7 +57,7 @@ $$
 Consequently, if $\delta^2\|\tilde Q\|_E^2-\|\tilde Q_2\|_E>\|\tilde Q\|_E$, in particular for
 
 $$
-\|\tilde Q\|_E>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde Q_2\|_E}}{2\delta^2},
+\boxed{\;\|\tilde Q\|_E>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde Q_2\|_E}}{2\delta^2}\;},
 $$
 
 then $\|F_{\tilde Q_2}(\tilde Q)\|_E>\|\tilde Q\|_E$ and the orbit of $\tilde Q$ escapes.
@@ -81,7 +81,7 @@ and dividing by $\sqrt2$ gives $\|\tilde Q^2\|_E=\|M^2\|_F/\sqrt2\ge\delta^2\|\t
 **Proposition (the critical orbit of a central parameter is classical).** Let $\tilde Q_2=Ce_t$. Then $F_{\tilde Q_2}^n(0)=q_n(0)e_t$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\zeta\mapsto\zeta^2+C$. In particular
 
 $$
-0\in\mathcal C_{\text{central}}:=\{\tilde Q_2=Ce_t : F_{\tilde Q_2}^n(0) \text{ bounded}\} \iff C\in\mathcal M ,
+\boxed{\;0\in\mathcal C_{\text{central}}:=\{\tilde Q_2=Ce_t : F_{\tilde Q_2}^n(0) \text{ bounded}\} \iff C\in\mathcal M\;},
 $$
 
 the complex Mandelbrot set.
@@ -111,7 +111,7 @@ $$
 Hence
 
 $$
-W_{\tilde\Pi}\cap\mathcal K_{\tilde Q_2}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\} ,
+\boxed{\;W_{\tilde\Pi}\cap\mathcal K_{\tilde Q_2}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\}\;},
 $$
 
 and the critical-orbit locus of the plane is the product $\mathcal M\times\mathcal M$. The general plain bilinear product therefore gives the **intersection** of the two conditions, not their union.

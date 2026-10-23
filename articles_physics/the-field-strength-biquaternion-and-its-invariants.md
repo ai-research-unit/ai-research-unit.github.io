@@ -156,8 +156,8 @@ $$
 which is a complex scalar. Substituting $F_\mu = i\sqrt{\epsilon}E_\mu - \sqrt{\mu}H_\mu$ and expanding,
 
 $$
-\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{\mu=1}^{3}\left(i\sqrt{\epsilon}E_\mu - \sqrt{\mu}H_\mu\right)^2
-= -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H.
+\boxed{\;\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{\mu=1}^{3}\left(i\sqrt{\epsilon}E_\mu - \sqrt{\mu}H_\mu\right)^2
+= -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H\;}.
 $$
 
 This is the central computation of the article. Written with the magnetic induction $\vec B = \mu\vec H$ and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$, the real and imaginary parts become
@@ -477,8 +477,8 @@ The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\m
 The biquaternion norm of the field strength is the complex scalar
 
 $$
-\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_{\mu=1}^{3} F_\mu^2
-= -\epsilon\left(I_1 + 2ic\,I_2\right),
+\boxed{\;\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_{\mu=1}^{3} F_\mu^2
+= -\epsilon\left(I_1 + 2ic\,I_2\right)\;},
 \qquad
 I_1 = \vec E^2 - c^2\vec B^2,
 \qquad

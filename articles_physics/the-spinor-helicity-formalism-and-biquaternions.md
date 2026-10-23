@@ -28,8 +28,6 @@ The division between what is established, what is transcribed, and what is left 
 
 The article is organized as follows. The next section identifies the massless momentum as a zero divisor and shows its image is rank one. The section after that turns rank one into the factorisation and identifies it with spinor helicity. A section derives the brackets as the invariant symplectic pairing and records the one identity that links them to the momenta. The following section treats the little group, the reality condition, and helicity as its weight. A section states the Parke–Taylor formula and checks its little-group weights on concrete cases. The next section shows that the massless limit is singular. A section separates what the algebra supplies from what it only transcribes, and a short section records the gaps. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The conjugations are the quaternion conjugate $\tilde Q^{\natural}$, the complex conjugate $\bar{\tilde Q}$, and the Hermitian conjugate $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$. The subspaces are $\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}$ (material, anti-Hermitian), $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ (informational, Hermitian), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The matrix realization is
-
 $$
 \mathsf{M}_2:\;\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu \;\longmapsto\;
 \begin{pmatrix}
@@ -103,7 +101,7 @@ The pair is determined up to the scaling $(\lambda,\bar\lambda) \mapsto (t'\lamb
 Applying the lemma to the null momentum,
 
 $$
-\mathsf{M}_2(\tilde P) \;=\; \lambda\,\bar\lambda^{T},
+\boxed{\;\mathsf{M}_2(\tilde P) \;=\; \lambda\,\bar\lambda^{T}\;},
 \qquad
 \tilde P \text{ null},\quad \lambda \in S,\ \bar\lambda \in \bar S,
 $$
@@ -125,7 +123,6 @@ $$
 which is the real-momentum reality condition of the spinor-helicity formalism. The two factors are the two Weyl spinors of opposite chirality, related here by the framework's complex conjugation, which is the real structure that exchanges the defining module $S$ and its conjugate $\bar S$. For a *complexified* momentum — the general kinematical setting of the formalism — the components $Q_\mu$ are complex, $\tilde P$ lies in the complexified four-vector representation carried by $\mathbb{B}$, and $\lambda$ and $\bar\lambda$ become independent. That complexification is a genuine extension of the real material sector, and it is flagged as such below.
 
 **The two representations in which the factorisation is read.** Two conventions describe the same content and it is worth naming both, because the factor of $i$ between them is a frequent source of sign errors. In the framework's own interpretation the null momentum $\tilde P\in\mathbb{M}_-$ is the zero divisor and $\mathsf{M}_2(\tilde P)$ is the anti-Hermitian rank-one matrix factorised above. In the textbook interpretation the Hermitian bispinor $p_{\alpha\bar\beta} = \frac Ec\delta_{\alpha\bar\beta} - \vec p\cdot\boldsymbol\sigma = \mathsf{M}_2(\tilde H)$ is factorised, where $\tilde H = -i\tilde P \in \mathbb{M}_+$. The two matrices differ by the factor $i$, which can be absorbed into either spinor; the rank, the factorisation, the scaling freedom, and all little-group weights are unchanged. We work with $\mathsf{M}_2(\tilde P)$ throughout and translate only where the textbook form is wanted.
-
 
 ## The Brackets as the Invariant Symplectic Pairing
 
@@ -152,7 +149,7 @@ This is the antisymmetry stressed at the start of the article; it is the antisym
 **The bracket–momentum identity.** The polar form of the norm is $\langle\tilde Q_1,\tilde Q_2\rangle = \tfrac12\big(\langle\tilde Q_1+\tilde Q_2\rangle_{\natural}-\langle\tilde Q_1\rangle_{\natural}-\langle\tilde Q_2\rangle_{\natural}\big) = \sum_\mu Q_{1\mu} Q_{2\mu}$. For two null momenta factorised as above, the determinant of the sum of two rank-one matrices is a product of two brackets, and one finds
 
 $$
-\langle ij\rangle\,[ij] \;=\; \det\!\big(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)\big) \;=\; 2\,\langle\tilde P_i,\tilde P_j\rangle.
+\boxed{\;\langle ij\rangle\,[ij] \;=\; \det\!\big(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)\big) \;=\; 2\,\langle\tilde P_i,\tilde P_j\rangle\;}.
 $$
 
 The determinant identity was verified symbolically for two independently factorised momenta with independent complex spinors (all eight spinor components free), and the equality with $2\langle\tilde P_i,\tilde P_j\rangle$ was verified on the same general symbols. For real momenta, $\langle\tilde P_i,\tilde P_j\rangle = -\frac{E_iE_j}{c^2} + \vec p_i\cdot\vec p_j$ in the framework's $ict'$ (mostly-plus) convention; in the mostly-minus convention common in amplitude reviews the same identity carries the opposite overall sign. The relative sign of $\langle ij\rangle$ and $[ij]$ is convention-dependent; once both are defined by the same $\varepsilon$, their product is the momentum contraction.
@@ -211,13 +208,12 @@ The complete amplitude carries a coupling constant, a color factor (for the part
 The formula is a function of the $\lambda$'s only. Since each particle appears twice in the product of adjacent brackets $\langle 12\rangle\langle 23\rangle\cdots\langle n1\rangle$, the denominator is homogeneous of degree $2$ in each $\lambda_k$, while the numerator $\langle ij\rangle^4$ is homogeneous of degree $4$ in $\lambda_i$ and in $\lambda_j$ and of degree $0$ in the others. Hence the $\lambda$-degree of particle $k$ is
 
 $$
-d_{\lambda,k} \;=\;
+\boxed{\;d_{\lambda,k} \;=\;
 \begin{cases} +2, & k = i \text{ or } k = j \quad (\text{helicity } -1),\\[2pt] -2, & \text{otherwise} \quad (\text{helicity } +1),\end{cases}
-\qquad\text{that is, } d_{\lambda,k} = -2h_k .
+\qquad\text{that is, } d_{\lambda,k} = -2h_k\;}.
 $$
 
 This is exactly the little-group weight required of an amplitude whose particle $k$ has helicity $h_k$. The $\bar\lambda$-degree is zero for every particle, so the $\lambda$-degree is the whole weight and the condition $d_{\lambda,k} = -2h_k$ is satisfied.
-
 
 **Sign check.** The numerator $\langle ij\rangle^4$ is invariant under $i\leftrightarrow j$ because the exponent is even, so the formula does not depend on the order in which the two negative-helicity labels are written. Every bracket entering linearly does depend on the order: replacing one $\langle 12\rangle$ by $\langle 21\rangle$ in a bracket ratio sends the ratio to its negative. This is the concrete sense in which the antisymmetry $\langle ij\rangle = -\langle ji\rangle$ is the classic source of sign errors in the Parke–Taylor formula, and it was checked directly.
 

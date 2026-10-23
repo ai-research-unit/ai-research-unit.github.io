@@ -8,8 +8,6 @@ The construction is short and the consequences are of two kinds. The product is 
 
 The boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the identities that link the four general products are *Relations Between the Four General Products*, and their properties are compared in *Comparison Between the Four General Products*. The same space read with the plain product is *Introduction to the Biquaternion Algebra* and with the star in the second slot is *Introduction to the General Plain Sesqualgebra*; the fourth product is *Introduction to the General Quaternionic Sesqualgebra*. The question of the base rings is *The Realification and the Effect of the Change of Scalars*, and the centre is proved in *Introduction to the Biquaternion Algebra*, §*The Scalars Are the Centre*; what is done here with the base ring is narrower and sharp: the three quaternionic scalar laws are tested on the product and the answer fixes the base at $\mathbb{C}$. The elements, the basis, the conjugations and the remarkable subspaces are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, *Introduction to the Remarkable Subspaces*, *Decompositions Along the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, and the span table of the plain product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*; what is done here with the subspaces is narrower, the agreement with the plain product on the scalar line, the negated quaternion product on the vector part, and the $\mathbb{Z}/2$-grading that the real quaternion splitting gives to this multiplication. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the three weaker identities are *Non-Associative Algebras and the Property Ladder*, and the anti-automorphisms are *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *Zero Divisors of the Biquaternion Algebra*, and the idempotents of the algebra are *Idempotents of the General Plain Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu=1}^{3}Q_\mu\vec e_\mu$, and $(\vec Q_1,\vec Q_2)=\sum_\mu Q_{1,\mu} Q_{2,\mu}$ and $\vec Q_1\times\vec Q_2$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$, so that $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$. The plain product is written $\tilde Q_1\tilde Q_2$ and the product of this article is written $\star$, with
-
 $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2
 $$
@@ -126,7 +124,7 @@ The laws are gathered in the table, "yes" meaning that the law holds for every $
 **Proposition.** The multiplication $\star$ is the **isotope** of the plain multiplication determined by the pair $(\natural,\mathrm{id})$, that is,
 
 $$
-\tilde Q_1\star\tilde Q_2=\natural(\tilde Q_1)\,\tilde Q_2 \qquad\text{with}\qquad \natural(\tilde Q_1)=\tilde Q_1^{\natural} ,
+\boxed{\; \tilde Q_1\star\tilde Q_2=\natural(\tilde Q_1)\,\tilde Q_2 \qquad\text{with}\qquad \natural(\tilde Q_1)=\tilde Q_1^{\natural} \;},
 $$
 
 the insertion of $\natural$ in the first slot being the isotope, and $\natural$ being a $\mathbb{C}$-linear anti-automorphism of the algebra.
@@ -220,7 +218,7 @@ The three classical weakenings of associativity are settled by the witnesses alr
 **Proposition.** The square of an element in the multiplication is
 
 $$
-\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\Bigl(\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2\Bigr)e_t ,
+\boxed{\; \tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\Bigl(\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2\Bigr)e_t \;},
 $$
 
 so the square is a scalar element, in the scalar line $\mathbb{C}e_t$.
@@ -259,7 +257,7 @@ $$
 **Proposition.** For a nonzero element the following are equivalent:
 
 $$
-\tilde Q\star\tilde Q=0 \iff \sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=0 \iff \tilde Q\ \text{is a zero divisor of the algebra} .
+\boxed{\; \tilde Q\star\tilde Q=0 \iff \sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=0 \iff \tilde Q\ \text{is a zero divisor of the algebra} \;}.
 $$
 
 The origin has a vanishing square and is not a zero divisor, the two factors of the defining equation being required to be nonzero.

@@ -8,8 +8,6 @@ This article works the biquaternion case of the Clifford group. It fixes the two
 
 The general theory is cited and not restated. The Clifford group, its norm, the groups Pin and Spin, the signed inner conjugation $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$, the reflection $\rho_\xi(\eta)=-\xi\eta\xi^{-1}$ and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The versor, the rotor and the sandwich action in general are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The even-part identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the volume element and the Clifford dictionary are *Biquaternion Other Algebraic Element Representations*. The sandwich, its kernel, its failure to be an automorphism and the contrast with the inner automorphism are *Biquaternion Rotations and Lorentz Transformations*, which owns the sandwich. The isometries read on the algebra itself, the rotor $\tilde{U}$ and the double covers, are the same article; the reflections of that article are the reflections of the vector subspace $\mathrm{Vect}(\mathbb{B})$, a three-dimensional subspace of the algebra, and the reflections of this article are the Lorentz transformations of Lorentzian space, which are different maps on a different carrier. The group of units read against its matrix images is *Biquaternion Objects and Their Matrix Correspondences*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The products are $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. The norm and its polar form are $\langle \tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=\tilde{Q}\tilde{Q}^{\natural}$ and $B(\tilde{Q}_1,\tilde{Q}_2)=\sum_\mu Q_{1,\mu}Q_{2,\mu}$. The quaternion conjugation is $\tilde{Q}^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the complex conjugation $\bar{\tilde{Q}}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$; the fixed space of ${}^{*}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The matrix realisation is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf{M}_2(e_t)=I$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. A Clifford algebra is written $\mathrm{Cl}_{n,m}$ when $n$ generators square to $+1$ and $m$ to $-1$, in the convention $\eta^2=q(\eta)\cdot1$; the real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ is the set of elements with four real coefficients.
-
 ## The Form and its Isometries
 
 **Definition.** The Hermitian sector is
@@ -30,7 +28,7 @@ and the norm restricts to it with signature $(3,1)$.
 
 **Theorem (the envelope is two copies of the algebra).** Let $V$ be a real four-dimensional space with a form of signature $(1,3)$, let $\mathrm{Cl}(V)$ be its Clifford algebra, of real dimension $16$, and let $\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ be its even and odd parts. Then
 $$
-\mathrm{Cl}^{+}\cong\mathbb{B},\qquad \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}\xi,
+\boxed{\;\mathrm{Cl}^{+}\cong\mathbb{B},\qquad \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}\xi\;},
 $$
 for every non-isotropic $\xi\in V$, and the odd slot $\mathbb{B}\xi$ is a second copy of the algebra, of real dimension eight, containing the space $V$ itself.
 
@@ -62,8 +60,8 @@ $$
 
 **Corollary (Pin is not contained in the algebra).** Every non-isotropic vector can be rescaled to a vector of square $\pm1$, and such a vector lies in $\mathrm{Pin}$ and is odd, hence is not an element of $\mathbb{B}$. Therefore
 $$
-\mathrm{Pin}(1,3)\not\subseteq\mathbb{B},\qquad
-\mathrm{Pin}(1,3)\cap\mathrm{Cl}^{+}=\mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_1 .
+\boxed{\;\mathrm{Pin}(1,3)\not\subseteq\mathbb{B},\qquad
+\mathrm{Pin}(1,3)\cap\mathrm{Cl}^{+}=\mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_1\;}.
 $$
 The only part of the Pin group that is an object of the biquaternion algebra is the spin group, which is its even part.
 
@@ -107,9 +105,7 @@ $$
 be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, and $\Omega$ commutes with the even slot and anticommutes with every vector. In the biquaternion dictionary the quaternion units are the spatial bivectors, $\vec e_x\mapsto\gamma^{2}\gamma^{3}$, $\vec e_y\mapsto\gamma^{3}\gamma^{1}$, $\vec e_z\mapsto\gamma^{1}\gamma^{2}$, and the central scalar imaginary is $i\mapsto-\Omega$.
 
 **Theorem (the volume element is minus the identity on Lorentzian space).** On the odd slot the signed inner conjugation of the volume element negates every vector,
-$$
-\mathrm{Ad}^{\alpha}_{\Omega}(\eta)=\Omega \eta\Omega^{-1}=-\eta ,
-$$
+$$ \boxed{\;\mathrm{Ad}^{\alpha}_{\Omega}(\eta)=\Omega \eta\Omega^{-1}=-\eta\;}, $$
 so that $\Omega$ acts on the Lorentzian space as $-\mathrm{id}$, the product of parity with time reversal, of determinant $+1$ and anti-orthochronous. On the Hermitian copy of the same space the sandwich of the corresponding element, the central scalar imaginary, is the identity, since $i$ is central and $i^{\dagger}=-i$.
 
 **Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every vector: moving $\gamma^{j}$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\gamma^{j}\Omega=-\Omega\gamma^{j}$, and the same for every generator. Hence $\Omega \eta\Omega^{-1}=-\Omega\Omega^{-1}\eta=-\eta$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(\tilde U)=iUi^{\dagger}=iU(-i)=-i^2\tilde U=\tilde U$.
@@ -131,8 +127,8 @@ $$
 
 **Corollary (they agree on the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$, the elements with four real coefficients, the coefficient conjugation is the identity and the two involutions coincide. Consequently on that slice the sandwich is the inner automorphism scaled by the norm,
 $$
-\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\cdot\mathrm{Ad}_{\tilde{Q}},\qquad
-\mathrm{Ad}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{-1},
+\boxed{\;\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\cdot\mathrm{Ad}_{\tilde{Q}},\qquad
+\mathrm{Ad}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{-1}\;},
 $$
 and off the slice the two differ.
 

@@ -14,8 +14,6 @@ The two sandwiches must not be confused, and the algebra makes the difference vi
 
 The forms and the algebra are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; the definite form and the dagger sandwich are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *Two-Sided Operators on the General Plain Sesqualgebra*; the indefinite form, its symmetry and its adjoint are *The Krein Gram Matrix and the Restrictions of the Form*, *The Fundamental Symmetry of the Biquaternion Algebra* and *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the positive cone of the indefinite order is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; the group of $J$-unitary parameters is *The Krein Isometry Group and Its J-Contractions*; and the general operator is *The Hermitian Sandwich on a Krein Space*.
 
-**Conventions.** The algebra is read in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, so that $\tilde Q_1 = \sum_\mu Q_{1,\mu} e_\mu$ is a vector of coefficients; the definite form is $(\tilde Q_1,\tilde W) = \sum_\mu\overline{Q_{1,\mu}}W_\mu$ and the general quaternionic sesquilinear form is $\langle\tilde W,\tilde Q_1\rangle_{\natural*} = \sum_\mu\varepsilon_\mu\overline{Q_{1,\mu}}W_\mu$ with $\varepsilon = (1,-1,-1,-1)$. The fundamental symmetry is $J={}^{\natural}$, the operator $\tilde Q_1\mapsto \tilde Q_1^{\natural}$ of matrix $E = \mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and
-
 $$
 \langle\tilde W,\tilde Q_1\rangle_{\natural*} = (J\tilde Q_1,\tilde W) , \qquad J^{2} = \mathrm{id}, \qquad E^{2} = \mathrm{I}_4 .
 $$
@@ -57,8 +55,8 @@ $$
 **Proposition (composition and multiplicativity).** For all operators $A,S,T$,
 
 $$
-H_{A}\bigl(H_{S}(T)\bigr) = H_{AS}(T) , \qquad
-H_{A}(ST) = H_{A}(S)\,H_{A}(T) \iff A^{\dagger}A = \mathrm{id} .
+\boxed{\; H_{A}\bigl(H_{S}(T)\bigr) = H_{AS}(T) , \qquad
+H_{A}(ST) = H_{A}(S)\,H_{A}(T) \iff A^{\dagger}A = \mathrm{id} \;}.
 $$
 
 *Proof.* The composition is associativity: $A(S\,T\,S^{\dagger})A^{\dagger} = (AS)T(AS)^{\dagger}$. For the second, $H_A(S)H_A(T) = ASA^{\dagger}ATA^{\dagger} = AS(A^{\dagger}A)TA^{\dagger}$, which equals $ASTA^{\dagger}=H_A(ST)$ identically exactly when $A^{\dagger}A=\mathrm{id}$.
@@ -78,8 +76,8 @@ $$
 **Theorem (form preservation by $J$-unitary parameters).** Let $A$ be $J$-unitary, $A^{\dagger}A = AA^{\dagger} = \mathrm{id}$. Then for every operator $T$ and all $\tilde Q_1,\tilde W\in\mathbb{B}$,
 
 $$
-\langle H_{A}(T)\tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle TA^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} , \qquad
-\langle \tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle A^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} ,
+\boxed{\; \langle H_{A}(T)\tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle TA^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} , \qquad
+\langle \tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle A^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} \;},
 $$
 
 the first identity being the second applied twice; and $H_{A}(T)$ is a $J$-unitary operator whenever $T$ is.
@@ -101,7 +99,7 @@ Consequently, if $A$ is $J$-unitary then $H_{A}$ maps $J$-self-adjoint operators
 **Theorem (kernel and image).** Let $A$ be invertible. Then for every $T$,
 
 $$
-\ker H_{A}(T) = \bigl(A^{\dagger}\bigr)^{-1}\bigl(\ker T\bigr) , \qquad \mathrm{im}\,H_{A}(T) = A\bigl(\mathrm{im}\,T\bigr) ,
+\boxed{\; \ker H_{A}(T) = \bigl(A^{\dagger}\bigr)^{-1}\bigl(\ker T\bigr) , \qquad \mathrm{im}\,H_{A}(T) = A\bigl(\mathrm{im}\,T\bigr) \;},
 $$
 
 and for $J$-unitary $A$ these read $\ker H_{A}(T) = A\ker T$ and $\mathrm{im}\,H_{A}(T) = A\,\mathrm{im}\,T$.

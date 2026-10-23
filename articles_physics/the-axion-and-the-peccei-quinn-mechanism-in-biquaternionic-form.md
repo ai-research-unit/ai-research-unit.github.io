@@ -35,8 +35,6 @@ is minimised at $a/f_a = -\bar\theta$ modulo $2\pi$, which is the dynamical rela
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context and the axial rotation.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the programme the axion belongs to.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and the central scalar is $\tilde\Phi = \varphi e_t$ with complex $\varphi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$, whose phase is the axion angle $a/f_a$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box = \partial^2/\partial Q_t^2+\Delta$, and the $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$. The theta term is $S_\theta = \frac{\theta}{32\pi^2}\int F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}$ with ${F^{\mathrm{dual}}}^{\mu\nu} = \tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ and the physical parameter $\bar\theta = \theta + \arg\det M_q$, following the companion article; the strong-CP bound is $|\bar\theta|\lesssim10^{-10}$. The Peccei–Quinn field is $a$, its decay constant $f_a$, and the anomaly-generated scale is $\Lambda^2 = \frac{\sqrt{m_um_d}}{m_u+m_d}m_\pi f_\pi$ with $m_\pi = 135$ MeV, $f_\pi = 92$ MeV and $m_u/m_d = 0.47$. The axion–photon coupling is $g_{a\gamma\gamma} = \frac{\alpha}{2\pi f_a}(E/N - 1.92)$ with $E/N$ the model-dependent anomaly ratio. Natural units $\hbar = c = 1$ are used in the numerical values.
-
 ## The Strong CP Problem and the Theta Parameter
 
 The Peccei–Quinn mechanism is a response to strong CP, and this section states the problem in the form the companion theta-parameter article establishes.
@@ -122,19 +120,19 @@ $$
 where $\Lambda$ is the QCD scale and the omission denotes higher-derivative terms of the chiral expansion. The potential is periodic in the total angle with period $2\pi$, exactly as the theta dependence is, and its minimum sits at
 
 $$
-\frac{a}{f_a} + \bar\theta = 0 \pmod{2\pi}
+\boxed{\;\frac{a}{f_a} + \bar\theta = 0 \pmod{2\pi}
 \qquad\Longrightarrow\qquad
-\bar\theta_{\text{eff}} = 0 ,
+\bar\theta_{\text{eff}} = 0\;}
 $$
 
 which is the dynamical relaxation of strong CP. Expanding about the minimum,
 
 $$
-V(a) = \frac{\Lambda^4}{2f_a^2}\,a^2 + O(a^4)
+\boxed{\;V(a) = \frac{\Lambda^4}{2f_a^2}\,a^2 + O(a^4)
 \qquad\Longrightarrow\qquad
 m_a^2 = \frac{d^2V}{da^2}(0) = \frac{\Lambda^4}{f_a^2}
 \qquad\Longrightarrow\qquad
-m_a = \frac{\Lambda^2}{f_a} .
+m_a = \frac{\Lambda^2}{f_a}\;}
 $$
 
 The axion mass is therefore inversely proportional to the breaking scale, and the axion is light when $f_a$ is large — the regime in which the Peccei–Quinn mechanism is phenomenologically viable.
@@ -160,7 +158,6 @@ m_a = 5.79\ \mu\mathrm{eV}\times\frac{10^{12}\ \mathrm{GeV}}{f_a} ,
 $$
 
 recomputed for a range of $f_a$ and matching the standard value of about $5.7\ \mu\mathrm{eV}$ at $f_a = 10^{12}$ GeV to within the spread of the quark-mass inputs. This is the standard axion mass formula (Weinberg 1978; Wilczek 1978; Bardeen and Tye 1978; the modern determination via the chiral Lagrangian is reviewed in the axion literature), and the framework's contribution is the periodic field and the kinetic normalisation of the phase, not the coefficient.
-
 
 **The axion's couplings.** The axion couples to two photons through the anomaly,
 
@@ -243,11 +240,11 @@ $$
 the axion is the angular mode $a$, and its kinetic term follows from the central kinetic term with $\rho\to f_a$, giving a canonical and shift-symmetric phase. The anomaly-generated potential is
 
 $$
-V\!\left(\bar\theta + \frac{a}{f_a}\right) = \Lambda^4\left[1-\cos\!\left(\bar\theta+\frac{a}{f_a}\right)\right],
+\boxed{\;V\!\left(\bar\theta + \frac{a}{f_a}\right) = \Lambda^4\left[1-\cos\!\left(\bar\theta+\frac{a}{f_a}\right)\right],
 \qquad
 \frac{dV}{d(a/f_a)} = 0 \text{ at } \bar\theta + \frac{a}{f_a} = 0 ,
 \qquad
-m_a = \frac{\Lambda^2}{f_a} ,
+m_a = \frac{\Lambda^2}{f_a}\;}
 $$
 
 with $\Lambda^2 = \frac{\sqrt{m_um_d}}{m_u+m_d}m_\pi f_\pi = 5.79\times10^{15}$ eV² (i.e. $\Lambda = 76.1$ MeV) and hence $m_a = 5.79\ \mu\mathrm{eV}\times(10^{12}\ \mathrm{GeV}/f_a)$; the curvature, the position of the minimum and the $1/f_a$ scaling were all recomputed. The axion couples to photons as $g_{a\gamma\gamma} = \frac{\alpha}{2\pi f_a}(E/N-1.92)$ and its misalignment abundance is $\Omega_ah^2\sim0.1(f_a/10^{12}\ \mathrm{GeV})^{7/6}$, both standard.

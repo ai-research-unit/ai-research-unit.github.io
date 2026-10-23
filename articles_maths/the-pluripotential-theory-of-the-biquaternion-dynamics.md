@@ -15,7 +15,7 @@ The article owns the Monge–Ampère current of the biquaternion map, the invari
 **Theorem (the equilibrium measure of a polynomial map).** Let $P:\mathbb{C}^k\to\mathbb{C}^k$ be a polynomial map of algebraic degree $d$ whose leading homogeneous part is proper, and let $G_P=\lim_{n\to\infty}d^{-n}\log^+\|P^n\|$ be its Green's function. Then $G_P$ is plurisubharmonic on $\mathbb{C}^k$ or identically $-\infty$, $P^*G_P=d\,G_P$, and
 
 $$
-\mu_P=(dd^cG_P)^k
+\boxed{\;\mu_P=(dd^cG_P)^k\;}
 $$
 
 is a probability measure with $P^*\mu_P=d^k\mu_P$, supported on the Julia set of $P$, of maximal entropy $k\log d$, satisfying the equidistribution of preimages.
@@ -29,7 +29,7 @@ is a probability measure with $P^*\mu_P=d^k\mu_P$, supported on the Julia set of
 **Proposition (the current and its invariance).** Let $\tilde Q_3=Ce_t$ be central and let $G_{\tilde Q_3}$ be the Green's function, defined on the regular part of the escaping set. On the open set where $G_{\tilde Q_3}$ is plurisubharmonic and smooth, the current
 
 $$
-\gamma_{\tilde Q_3}=(dd^cG_{\tilde Q_3})^4
+\boxed{\;\gamma_{\tilde Q_3}=(dd^cG_{\tilde Q_3})^4\;}
 $$
 
 is positive and satisfies $F^*\gamma_{\tilde Q_3}=16\,\gamma_{\tilde Q_3}$.
@@ -41,7 +41,7 @@ is positive and satisfies $F^*\gamma_{\tilde Q_3}=16\,\gamma_{\tilde Q_3}$.
 **Theorem (the product form on the idempotent plane).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$ be in the idempotent plane. Then the equilibrium measure of the restriction is the product
 
 $$
-\mu_{\tilde Q_3}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2},
+\boxed{\;\mu_{\tilde Q_3}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2}\;},
 $$
 
 the product of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2+C_j$, and its entropy is $2\log2$.

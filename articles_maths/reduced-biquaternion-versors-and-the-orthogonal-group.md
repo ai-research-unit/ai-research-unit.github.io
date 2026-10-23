@@ -35,7 +35,9 @@ so the form is the split form of rank two, the hyperbolic plane.
 **Proposition (scaling of the form by a multiplication).** For every element $P$ and all $\breve Q_{1},\breve Q_{2}$,
 
 $$
-\langle P \breve Q_{1},P \breve Q_{2}\rangle_{\mathrm{ts}}=\langle P\rangle_{\mathrm{ts}}\,\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}.
+\boxed{\;
+\langle P \breve Q_{1},P \breve Q_{2}\rangle_{\mathrm{ts}}=\langle P\rangle_{\mathrm{ts}}\,\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}
+\;}.
 $$
 
 **Proof.** $\mathrm{Sc}((P \breve Q_{1})_{\mathrm{ts}}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}\breve Q_{1,\mathrm{ts}}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}P\,\breve Q_{1,\mathrm{ts}}\breve Q_{2})=\langle P\rangle_{\mathrm{ts}}\,\mathrm{Sc}(\breve Q_{1,\mathrm{ts}}\breve Q_{2})$, using that the algebra is commutative and that $P_{\mathrm{ts}}P=\langle P\rangle_{\mathrm{ts}}$.
@@ -47,7 +49,9 @@ $$
 **Theorem (the versor group).** The versors of the algebra form the abelian group
 
 $$
-\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})=\{P:\langle P\rangle_{\mathrm{ts}}=1\}=\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-:Q_{+}\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
+\boxed{\;
+\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})=\{P:\langle P\rangle_{\mathrm{ts}}=1\}=\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-:Q_{+}\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times}
+\;},
 $$
 
 which is the split torus of real dimension two; it is non-compact and has fundamental group $\mathbb{Z}$.
@@ -57,7 +61,9 @@ which is the split torus of real dimension two; it is non-compact and has fundam
 **Theorem (the action gives the identity component).** The map $P\mapsto L_{P}$ from the versor group to the orthogonal group is an injective homomorphism onto the identity component $SO(2,\mathbb{C})$, with trivial kernel, so it is an isomorphism
 
 $$
-\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})\cong SO(2,\mathbb{C})\cong\mathbb{C}^{\times},
+\boxed{\;
+\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})\cong SO(2,\mathbb{C})\cong\mathbb{C}^{\times}
+\;},
 $$
 
 sending the versor $Q_{+}\Pi_++Q_{+}^{-1}\Pi_-$ to the hyperbolic rotation of parameter $Q_{+}$ in the coordinates above.

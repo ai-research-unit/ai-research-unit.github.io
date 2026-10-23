@@ -16,8 +16,6 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 The article is algebraic. The zero-divisor set, its families and the criterion on the norm are *Zero Divisors of the Quaternion Algebra*; the roots of $+e_t$ and the idempotents are *Square Roots of One and the Idempotents of the Quaternion Algebra*; the general root problem is *Square Roots of a General Element in the Quaternion Algebra*; and the folding of the empty classes is *The Specificities of the Quaternion Algebra*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_\nu^2=-e_t$ and $\vec e_\mu\vec e_\nu=-\vec e_\nu\vec e_\mu$ for $\mu\neq\nu$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{\nu\in\{x,y,z\}}q_\nu\vec e_\nu$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_t=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_te_t-\vec q$, and the **norm** is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the Quaternion Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, so there is no zero divisor. The scalar line $\mathbb{R}e_t$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\nu$ (§*The Nilpotent Convention*), and a generic element $\tilde q$.
-
 The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Algebras: A General Introduction*. Throughout this article the square is the one of the quaternion product, the multiplication of the algebra.
 
 ## The Roots of Zero
@@ -72,9 +70,7 @@ that is $\vec\xi=0$: the pure branch returns the origin and no other element. **
 
 **Theorem.** The roots of $0$ of the algebra are exactly the origin,
 
-$$
-\Sigma_0=\{0\}.
-$$
+$$ \boxed{\; \Sigma_0=\{0\} \;} .$$
 
 *Proof.* By the reduction the root is pure or scalar. The scalar case gives $\xi_t=0$; the pure case gives $\vec\xi=0$; both return the origin, and the origin is a root. The two cases exhaust the equation and the class has one element.
 
@@ -132,9 +128,7 @@ Over the complexified block the same computation passes through the complex bili
 
 The direct computation of the cube agrees, and it is worth recording because it mirrors the complexified expansion:
 
-$$
-\tilde q^2=\bigl[q_t^2-|\vec q|^2\bigr]e_t+2q_t\vec q,\qquad \tilde q^3=q_t\bigl[q_t^2-3|\vec q|^2\bigr]e_t+\bigl[3q_t^2-|\vec q|^2\bigr]\vec q.
-$$
+$$ \boxed{\; \tilde q^2=\bigl[q_t^2-|\vec q|^2\bigr]e_t+2q_t\vec q,\qquad \tilde q^3=q_t\bigl[q_t^2-3|\vec q|^2\bigr]e_t+\bigl[3q_t^2-|\vec q|^2\bigr]\vec q \;} .$$
 
 If $\vec q=0$ then $\tilde q^3=q_t^3e_t$ vanishes only for $q_t=0$; if $\vec q\neq0$ the vanishing of the vector coefficient forces $|\vec q|^2=3q_t^2$, and the central coefficient is then $q_t[q_t^2-9q_t^2]=-8q_t^3$, which vanishes only for $q_t=0$, whereupon $|\vec q|^2=0$, a contradiction. So $\tilde q^3=0$ if and only if $\tilde q=0$, and the same conclusion holds for every higher power.
 

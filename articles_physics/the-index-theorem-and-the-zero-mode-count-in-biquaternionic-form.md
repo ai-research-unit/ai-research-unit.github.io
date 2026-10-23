@@ -12,8 +12,6 @@ The framework enters through two facts that are genuinely its own and one that i
 
 The article states the index theorem as the standard result it is, derives the specialisations that the framework uses, and separates the two.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$, and central $i$. The material sector is $\mathbb M_-$ and the informational sector is $\mathbb M_+$. The compact gauge algebra is $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ with generators $T_a=\tfrac12 \vec e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ on the anti-Hermitian convention. The gauge connection and curvature are $\mathcal A_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal A_\nu-\partial/\partial Q_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$, with $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$. The topological charge is $Ϙ=\frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}(F\wedge F)\in\mathbb Z$ and the matrix trace $\mathrm{Tr}$ is distinguished from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. On the Euclidean slice the curvature is written without the explicit factor $i$ in the commutator, as in *Instantons and Solitons in Biquaternionic Form*.
-
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the operator whose index is taken.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module and its chirality.
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the topological background and its charge.
@@ -51,7 +49,7 @@ an integer that is invariant under continuous deformations of the connection and
 For a closed even-dimensional spin manifold $M$ and a twisted Dirac operator, the index is the integral of a characteristic class,
 
 $$
-\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge \mathrm{A}(TM) ,
+\boxed{\;\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge \mathrm{A}(TM)\;},
 $$
 
 where $\mathrm{ch}(E_R)$ is the Chern character of the twisted bundle and $\mathrm{A}(TM)$ is the A-roof genus of the tangent bundle. This is the Atiyah–Singer index theorem; it is standard and is transcribed here, not derived. Its power in the gauge-theoretic setting is that the right-hand side is purely topological: it depends on the bundle data and not on the shape of the connection.
@@ -59,8 +57,8 @@ where $\mathrm{ch}(E_R)$ is the Chern character of the twisted bundle and $\math
 On the flat four-dimensional slice that the framework uses, the tangent bundle is trivial and its A-roof genus is $1$ to all orders that contribute: $\mathrm{A}=1-\frac{p_1}{24}+\cdots$ requires the Pontryagin class of a curved manifold, which is absent. The index is therefore the degree-four part of the Chern character alone. With the trace in the representation $R$ and the standard normalisation, the degree-four part is proportional to $\mathrm{Tr}_R(F\wedge F)$, so that
 
 $$
-\mathrm{ind}\,\slashed{D}_R \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}_R\bigl(F\wedge F\bigr)
-\;=\; 2\,T(R)\,Ϙ ,
+\boxed{\;\mathrm{ind}\,\slashed{D}_R \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}_R\bigl(F\wedge F\bigr)
+\;=\; 2\,T(R)\,Ϙ\;},
 $$
 
 where $T(R)$ is the Dynkin index of the representation, normalised so that the defining representation of $SU(2)$ has $T=\tfrac12$, and $Ϙ$ is the integer topological charge of the companion article. The two statements to read from this formula are that the index is proportional to the topological charge, and that its constant of proportionality is a representation-theoretic number.
@@ -76,9 +74,9 @@ $$
 Both are computed from the same commutation relations $[T_a,T_b]=\varepsilon_{abc}T_c$ that define $\mathrm{SU}(2)\subset\mathbb M_-$ in *Non-Abelian Gauge Fields in Biquaternionic Form*, so the group theory here is the framework's group theory. The index formula then reads
 
 $$
-\mathrm{ind}\,\slashed{D}_{\text{defining}}=Ϙ ,
+\boxed{\;\mathrm{ind}\,\slashed{D}_{\text{defining}}=Ϙ ,
 \qquad
-\mathrm{ind}\,\slashed{D}_{\text{adjoint}}=4Ϙ .
+\mathrm{ind}\,\slashed{D}_{\text{adjoint}}=4Ϙ\;}.
 $$
 
 For a self-dual configuration of charge $Ϙ=k>0$, the index is exhausted by positive-chirality modes, $n_+=k$ and $n_-=0$ in the defining representation, and $n_+=4k$ and $n_-=0$ in the adjoint. A single BPST instanton therefore supports one fermion zero mode in the doublet and four in the triplet.
@@ -126,7 +124,6 @@ $$
 \qquad
 I_2=\vec E\cdot\vec B ,
 $$
-
 
 so the abelian index density is the framework's own invariant $I_2$ up to a constant. This is the affirmative half of the story: for the abelian sector the index and the charge are written in the invariant calculus the framework already possesses.
 

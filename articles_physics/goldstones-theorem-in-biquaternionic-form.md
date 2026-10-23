@@ -22,8 +22,6 @@ The article is organised as follows. The next section states the symmetry and it
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector and the biquaternion norm.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex, written in real components as
-
 $$
 \phi=\frac{1}{\sqrt2}\left(\phi_1+i\phi_2\right),
 \qquad
@@ -91,7 +89,6 @@ $$
 
 The choice is a choice of phase; no physical quantity depends on it, and the remaining symmetry is trivial, $\mathrm{U}(1)\to\{1\}$. The order parameter is central-valued, as the field is, and it is the framework's scalar condensate.
 
-
 ## The Goldstone Mode and the Mass Matrix
 
 Expand about the chosen minimum in the two real fields,
@@ -118,11 +115,11 @@ $$
 Expanding to second order in the fluctuations,
 
 $$
-V=\frac{\lambda}{2}\,v^2 h^2+O(h^3,h\theta^2,\dots)
+\boxed{\;V=\frac{\lambda}{2}\,v^2 h^2+O(h^3,h\theta^2,\dots)
 \qquad\Longrightarrow\qquad
 m_h^2=\lambda v^2 ,
 \qquad
-m_G^2=0 ,
+m_G^2=0\;},
 $$
 
 where the masses are read from $\mathcal L\supset-\frac12 m^2(\text{field})^2$. The **mass matrix** is diagonal with entries $(m_h^2,0)$: the radial mode is massive, with a mass that is nonzero for every $\lambda>0$ and every $v\ne0$, and the angular mode is **exactly massless**.
@@ -152,15 +149,15 @@ $$
 where the second line is the expansion about the minimum with $\phi_1=\sqrt2v+h$, $\phi_2=\theta$. To leading order in the fluctuations,
 
 $$
-\tilde J=-f\,\tilde\nabla\theta+O(\text{two fields}),
+\boxed{\;\tilde J=-f\,\tilde\nabla\theta+O(\text{two fields}),
 \qquad
-f=\sqrt2\,v ,
+f=\sqrt2\,v\;},
 $$
 
 so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3x\,d\theta/dt'$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
 
 $$
-\langle0|\tilde J(0)|\theta(p)\rangle=i f\,p^\mu ,
+\boxed{\;\langle0|\tilde J(0)|\theta(p)\rangle=i f\,p^\mu\;},
 $$
 
 which is the statement that the current interpolates the Goldstone boson with strength $f$ and that no massive state contributes at zero momentum.
@@ -201,7 +198,7 @@ Both forms of the proof use only the existence of the continuous symmetry, the n
 For a continuous symmetry group $G$ spontaneously broken to a subgroup $H$, the number of Goldstone bosons is the dimension of the coset,
 
 $$
-n_{\mathrm{NG}}=\dim G-\dim H=\dim(G/H)=(\text{number of broken generators}) .
+\boxed{\;n_{\mathrm{NG}}=\dim G-\dim H=\dim(G/H)=(\text{number of broken generators})\;}.
 $$
 
 Three cases fix the rule and situate the scalar sector.

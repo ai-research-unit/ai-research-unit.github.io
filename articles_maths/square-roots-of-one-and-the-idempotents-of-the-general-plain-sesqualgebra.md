@@ -20,12 +20,6 @@ The article is algebraic. The roots of the general quadratic $\tilde\Xi\star\til
 
 **The results.** The block-square is the Hermitian element $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2})e_t+2i(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v)$ in the real halves $\tilde\Xi=q_r+iq_i$, whose scalar part is the definite $\sum_\mu\lvert\Xi_\mu\rvert^{2}\geq0$. The scalar part decides the roots of $+1$: a central value has a root only when it is a non-negative real, the value $0$ forcing the origin, and the roots of $+1$ are exactly the single family $\tilde\Xi=Aw$ over the unit complex scalars $A$ and the real unit quaternions $w$, that is $\mathrm{U}(1)\cdot S^{3}$, of real dimension four, containing $e_t$, $-e_t$ and the pure imaginary unit vectors $\tilde\Xi$. The **Hermitian** roots of $+1$ are $\pm e_t$ and the roots $\tilde\Xi=i\vec u$, and the halving map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection from them onto the idempotents of the block, which are $0$, $e_t$ and the $\tfrac12(e_t+\tilde\Xi)$ over the real unit vectors $\vec u$: a real two-parameter family of rank-one Hermitian idempotents. Each Hermitian root carries the complete pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_t\pm\tilde\Xi)$, the two members orthogonal in the block and in the algebra at once, summing to $e_t$, differing by the root, and their two subscripts the two eigenvalues of multiplication by the root.
 
-**Placement.** The article is the fifth entry of the *Common Theory* section of the block, after the zero divisors and the annihilators, and before the roots of zero and the nilpotents and before the general value. It uses the product and the class of the introduction, the algebraic norm and the scalar part of the square from *Norm and Invertibility in the General Plain Sesqualgebra* and *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*, and the Hermitian subspace and the positive cone from *Hermitian and Skew-Hermitian Elements* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; it feeds the general-value article and the nilpotent article.
-
-**Boundaries.** The product, its class and its placement are *Introduction to the General Plain Sesqualgebra*; the relative definition of the power, the square and the root of a central value, and the designation of the three central values, are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; the general definition of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, is the same article, §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition*. The parent's roots of $+1$ and the parent's idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Idempotents of the General Plain Algebra*; the two-involution arithmetic of the parent is *Square Roots of a General Element in the Biquaternion Algebra*. The other three general products carry roots and idempotents of their own, and they are *Comparison Between the Four General Products*; the zero-divisor criterion the roots miss is *Zero Divisors of the General Plain Sesqualgebra*; and the matrix model is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}Q_{2,\mu} e_\mu=Q_{2t}e_t+\vec Q_2$ with $\vec Q_2=\sum_{\mu\in\{x,y,z\}}Q_{2,\mu}\vec e_\mu$ and $Q_{2,\mu}\in\mathbb{C}$; the natural conjugation is $\tilde Q_2^{\natural}=Q_{2t}-\vec Q_2$, the coefficientwise conjugation is $\overline{\tilde Q_2}=\overline{Q_{2t}}e_t+\overline{\vec Q_2}$, and the Hermitian conjugation is $\tilde Q_2^{*}=\overline{\tilde Q_2^{\natural}}$, with $\varepsilon=(1,-1,-1,-1)$ giving $Q_{2,\nu}^{*}=\varepsilon_\nu\overline{Q_{2,\nu}}$. The product is the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. In the imaginary decomposition $\tilde Q_2=q_r+iq_i$ the halves $q_r,q_i$ are **real** quaternions, with real scalar parts $q_{r0},q_{i0}$ and vector parts $\vec q,\vec v$. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), and a generic element $\tilde Q_1$ or $\tilde Q_2$. The **central square** is $C(\tilde\Xi)=\tilde\Xi\tilde\Xi^{\natural}=\sum_\mu\Xi_\mu^{2}$, and the algebraic norm of the block is $\langle\tilde\Xi\rangle_{*}=\mathrm{Sc}(\tilde\Xi\star\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$. A **unit complex scalar** is a complex number $A$ with $\lvert A\rvert=1$, and a **real unit quaternion** is a real quaternion $w$ with $\lvert w\rvert=1$; the product $Aw$ of the two is the element of $\mathbb{B}$ obtained by multiplying the central scalar $Ae_t$ and $w$.
-
 The equations name a product, so the roots and the idempotents are relative to it. Throughout this article the square is the one of the general plain sesquilinear product, the Hermitian square $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}$; the unqualified word *idempotent* means an idempotent of that product, and an idempotent of the associative multiplication $\tilde Q_1\tilde Q_2$ is called an **idempotent of the algebra**.
 
 ## The Roots of One
@@ -41,7 +35,7 @@ A **root of $+1$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\star\t
 **Theorem (the Hermitian square and its scalar part).** For $\tilde\Xi=q_r+iq_i$ with $q_r,q_i$ real quaternions,
 
 $$
-\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=\bigl(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}\bigr)e_t+2i\Bigl(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v\Bigr),
+\boxed{\;\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=\bigl(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}\bigr)e_t+2i\Bigl(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v\Bigr)\;},
 $$
 
 where $q_{r0},q_{i0}$ are the real scalar parts of $q_r,q_i$ and $\vec q,\vec v$ their vector parts. The square is **Hermitian**, its scalar part is
@@ -69,7 +63,7 @@ Consequently a central value $\lambda$ has a root only when $\lambda$ is a **non
 **Theorem (the roots of $+1$).** The roots of $+1$ are exactly the elements
 
 $$
-\tilde\Xi=Aw,\qquad A\in\mathbb{C}\ \text{with}\ \lvert A\rvert=1,\ w\in\mathbb{H}\ \text{real with}\ \lvert w\rvert=1,
+\boxed{\;\tilde\Xi=Aw,\qquad A\in\mathbb{C}\ \text{with}\ \lvert A\rvert=1,\ w\in\mathbb{H}\ \text{real with}\ \lvert w\rvert=1\;},
 $$
 
 that is, the family $\{Aw\}=\mathrm{U}(1)\cdot S^{3}$, of real dimension four, containing $e_t$, $-e_t$ and the pure imaginary unit vectors, the roots $\tilde\Xi=i\vec u$ over the real unit vectors $\vec u$.
@@ -161,7 +155,7 @@ a real number, and it is nonzero unless $\tilde\Pi=0$.
 **Theorem (the idempotents of the block).** The idempotents of the sesquilinear multiplication $\star$ are $0$, $e_t$ and the elements
 
 $$
-\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_t+\tilde\Xi\bigr) , \qquad \tilde\Xi=i\vec u , \qquad \vec u\in\mathbb{R}^{3},\ (\vec u,\vec u)=1 ,
+\boxed{\;\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_t+\tilde\Xi\bigr) , \qquad \tilde\Xi=i\vec u , \qquad \vec u\in\mathbb{R}^{3},\ (\vec u,\vec u)=1\;},
 $$
 
 where $\vec u=\sum_{\mu\in\{x,y,z\}}u_\mu\vec e_\mu$ ranges over the real vectors of the vector subspace with $(\vec u,\vec u)=\sum_\mu u_\mu^{2}=1$. There are no others.

@@ -15,10 +15,6 @@ A norm is relative to a product, and the algebraic norm of a product is the diag
 
 Both notions of the title are therefore **absences**, and they fail for one reason: the unit of the parent algebra is a square-zero element of the block. The block has no unit on either side, so no element is invertible and the group of units is empty; the one-sided inverse equations to the centre have no solution. What replaces the invertibility is not a norm but an operator reading: the one-sided multiplication by an element has a kernel and an image, and the relative inverse below accounts for the loss on the quotient.
 
-**Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; the general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the element theory that uses the substitute is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The algebraic norm of the general quaternionic sesquilinear product is $\langle\cdot\rangle_{\natural*}$, a different form, and its theory is *Norm and Invertibility in the General Quaternionic Sesqualgebra*; the invariant forms of the block are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_\mu^2=-e_t$, central scalar imaginary $i$ and $Q_{1\mu}\in\mathbb{C}$; an element is $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1=\sum_{\mu\in\{x,y,z\}}Q_{1\mu}\vec e_\mu$, and a second is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$. The natural conjugation is $\tilde Q_1^{\natural}=Q_{1t}-\vec Q_1$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general quaternionic sesquilinear product is $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and the product of the block is $\diamond$. The complex bilinear dot product of two vector parts is $(\vec A,\vec B)=\sum_\mu A_\mu B_\mu$.
-
 **The results.** The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$, the conjugate cross product, has no unit on either side, so no element is invertible and the group of units is empty; the unit $e_t$ of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The scalar part vanishes identically, so the algebraic norm of the operation is the zero function and the block carries **no algebraic norm** by the convention that counts a vanishing quadratic form as no norm; the diagonal $\tilde Q_1\diamond\tilde Q_1=\vec Q_1\times\overline{\vec Q_1}$ is a pure vector, a value and not a norm. The substitute for the inverse is the relative inverse: the multiplication by a non-central element $\tilde Q_3$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec Q_3$ in the complex bilinear dot, so that $\tilde Q_3\diamond\tilde{Q}_2=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel. Each section below states its result before it is proved.
 
 ## The Relative Definitions
@@ -74,9 +70,11 @@ and for an operation whose scalar part vanishes identically the algebraic norm i
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric quaternionic sesqualgebra,
 
 $$
+\boxed{\;
 \mathrm{Sc}\bigl(\tilde Q_1\diamond\tilde Q_2\bigr)=0\quad\text{for all }\tilde Q_1,\tilde Q_2,
 \qquad\text{hence}\qquad
-\varphi_{\diamond}(\tilde Q_1)=0\quad\text{for all }\tilde Q_1 .
+\varphi_{\diamond}(\tilde Q_1)=0\quad\text{for all }\tilde Q_1
+\;}.
 $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
@@ -85,9 +83,7 @@ The algebraic norm of the operation is identically zero, and by the convention o
 
 **Remark (the diagonal is a pure vector).** The sesquilinear product is not alternating in the bilinear sense — its second slot is conjugate-linear — so the diagonal need not vanish as an element of the block:
 
-$$
-\tilde Q_1\diamond\tilde Q_1=\vec Q_1\times\overline{\vec Q_1},
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_1=\vec Q_1\times\overline{\vec Q_1} \;}, $$
 
 a pure vector, generally nonzero. It is central exactly when it vanishes, so there is no quadratic form $N_\diamond$ with $\tilde Q_1\diamond\tilde Q_1=N_\diamond(\tilde Q_1)e_t$ for every $\tilde Q_1$: the equation would hold only on the cone of vanishing diagonal and define nothing outside. No central-valued quadratic map is built from the product.
 

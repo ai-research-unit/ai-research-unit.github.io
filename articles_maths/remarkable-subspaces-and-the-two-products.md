@@ -8,8 +8,6 @@ Its result is a collapse, and it is written so that the collapse is visible: the
 
 The subspaces are those of *Complexoid Subspaces*; the two involutions and the field are those of *Complex Algebra*, below this article in this category; the products are those of *The Two Products of the Complexoid Space*; the forms the products carry are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, and their restriction to the two subspaces is *Remarkable Subspaces of the Complexoid and the Two Forms*, both below this article in this category. The multiplication $AC$ is owned by *Complex Algebra*, and the topological norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*, both below this article in this category.
 
-**Conventions.** The complex space is read over itself: **bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A=a+ia'$ and $C=c+ic'$, and no bracket is used for an element, since the four forms are written with brackets, of which the plain and the Hermitian survive (*Complex Algebra*, *Complexoid Subspaces*).
-
 ## The Two Subspaces and the Two Products
 
 The two subspaces are the fixed subspace and the anti-fixed subspace of the bar,

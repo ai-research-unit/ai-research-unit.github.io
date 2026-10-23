@@ -80,7 +80,9 @@ where $\mu_+, \mu_- \in \mathbb{H}$ are unit pure real quaternions.
 **Theorem.** The roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form
 
 $$
-\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2,
+\boxed{\;
+\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2
+\;},
 $$
 
 where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the standard basis,
@@ -195,7 +197,9 @@ $$
 In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements
 
 $$
-0, \qquad \tilde\Pi_1, \qquad \tilde\Pi_2, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
+\boxed{\;
+0, \qquad \tilde\Pi_1, \qquad \tilde\Pi_2, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1
+\;}.
 $$
 
 These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are the ones associated with the two components.

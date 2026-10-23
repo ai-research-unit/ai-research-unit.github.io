@@ -8,10 +8,6 @@ The article has one job. It gives the geometry of a **connection with torsion** 
 
 One warning belongs in the introduction, because a reader who has seen an external construction may expect the opposite. There is a claim in the literature that the torsion of spacetime *is* the commutator of the quaternionic units, and that the tetrad and the contorsion are bilinear composites of a biquaternionic spinor, so that geometry emerges from matter. That construction is recorded and tested separately, in *Matter Makes Space — An External Construction from Quaternionic Spinors*, where the parts that do not reproduce are listed. Nothing in this article depends on it. Here the torsion is an independent tensor field, exactly as in the standard Einstein–Cartan–Sciama–Kibble programme, and the algebra's role is only that its Lie subspace can carry the connection.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and central scalar imaginary $i$. The metric has signature $(+,-,-,-)$, the tetrad is $\exp(a){}_\mu$, the metric is $g_{\mu\nu} = \eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$ with $\eta = \mathrm{diag}(+1,-1,-1,-1)$, and index-free geometric statements are written in the text rather than displayed when the index order would carry no information. The biquaternion frame of Route Two is the $\mathbb{M}_-$-valued field $\tilde E_\mu$, with the frame form $\langle \tilde E_\mu, \tilde E_\nu\rangle_{\natural}$ equal to $g_{\mu\nu}$ up to the overall sign that separates the metric of the material sector from the level-3 convention of this article (*Conventions in the Biquaternion Universe*); its components in a fixed basis of $\mathbb{M}_-$ are the tetrad components $\exp(a){}_\mu$ of the standard formalism, and the two notations are used side by side below. The spin connection one-form is $\omega^{ab}{}_\mu$, equivalently the algebra-valued $\vec\Gamma_\mu$ of Route Three. The dictionary between the algebra's six generators and the six Lorentz bivectors is that of *The Dirac Algebra and Biquaternions — A Dictionary*, where $\mathsf{M}_2(\vec e_k)$ is a spacelike bivector and $\mathsf{M}_2(i\vec e_k)$ a timelike one. The Dirac bilinears carry the Clifford-odd $\gamma^0$ and the axial $\gamma_5$, as *Conventions in the Biquaternion Universe* and the minimal-coupling articles require.
-
----
-
 ## The Torsion Tensor
 
 An affine connection $\Gamma^\lambda{}_{\mu\nu}$ need not be symmetric under the exchange of its two last labels. Its antisymmetric part is the **torsion tensor**,
@@ -51,7 +47,7 @@ because the Christoffel symbols are symmetric and the antisymmetric part of $\Ga
 **Torsion is twice the alternating contorsion.** Since the Christoffel part cancels in the difference,
 
 $$
-T^\lambda{}_{\mu\nu} = 2\,K^\lambda{}_{[\mu\nu]} .
+\boxed{\;T^\lambda{}_{\mu\nu} = 2\,K^\lambda{}_{[\mu\nu]}\;}.
 $$
 
 For the totally antisymmetric contorsions used in the framework this is simply $T = 2K$, that is $K = \tfrac12 T$. In the same case the inverse relation is the permutation sum
@@ -65,7 +61,7 @@ verified here at residual exactly zero; the three terms are cyclic permutations 
 **Metric compatibility is exactly total antisymmetry.** With the metric constant in the Levi-Civita sense, the covariant derivative of the metric acquires only contorsion terms,
 
 $$
-\nabla_\mu g_{\nu\rho} = -\left(K_{\nu\mu\rho} + K_{\rho\mu\nu}\right) .
+\boxed{\;\nabla_\mu g_{\nu\rho} = -\left(K_{\nu\mu\rho} + K_{\rho\mu\nu}\right)\;}.
 $$
 
 This vanishes for every index order if and only if the contorsion is **totally antisymmetric**. The count was verified here: the 24 components of a contorsion antisymmetric in its last pair are cut by the 20 independent conditions $K_{\nu\mu\rho} + K_{\rho\mu\nu} = 0$ to a **four-dimensional** solution space, and four is the number of components of a totally antisymmetric third-rank tensor in four dimensions. So the corpus's sentence "metric compatibility is a condition, not a consequence" can be stated with precision:
@@ -126,7 +122,6 @@ $$
 A^\mu = \bar\psi\,\gamma_5\gamma^\mu\,\psi .
 $$
 
-
 **The antisymmetric spin density is the dual of the axial current.** On the antisymmetrised triple product,
 
 $$
@@ -138,7 +133,7 @@ which is exact, at every index triple and for every spinor, with the constant ve
 **The spin density contracts to the axial current.** Contracting the identity with itself gives
 
 $$
-\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6\,A_\rho A^\rho ,
+\boxed{\;\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6\,A_\rho A^\rho\;},
 $$
 
 because $\epsilon_{\lambda\mu\nu\rho}\epsilon^{\lambda\mu\nu\sigma} = -6\,\delta_\rho{}^\sigma$. The numerical check gave the ratio $6.000000$ with spread $3\times 10^{-13}$, that is, six to within the arithmetic.

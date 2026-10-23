@@ -84,7 +84,7 @@ As a device it requires two things that are not generally available: a single ti
 
 What is available at every point is the following. The material tangent space at a point has the real basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Choose the temporal direction of the local frame and map it to the imaginary scalar generator by
 $$
-t' \;\longmapsto\; i\,c\,t'\,e_t ,
+\boxed{\;t' \;\longmapsto\; i\,c\,t'\,e_t\;},
 $$
 with $c>0$ a local scale. Equivalently, the temporal coordinate of $\mathbb{M}_-$ is $ict'$, with $c$ allowed to depend on the point — and, in a dispersive medium, on the frequency. This is the **local complex structure**: the phase is the algebra's fixed $i$, and the scale is the local $c$.
 
@@ -96,7 +96,7 @@ Three features of this definition are the content of its locality.
 
 At each point the local structure induces the quadratic form of the material sector. With $d\tilde{R}=ic\,dt'\,e_t+d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 $$
-\langle d\tilde{R}\rangle_{\natural}=(ic\,dt')^2+dx^2+dy^2+dz^2=-c^2\,d{t'}^2+dx^2+dy^2+dz^2 .
+\boxed{\;\langle d\tilde{R}\rangle_{\natural}=(ic\,dt')^2+dx^2+dy^2+dz^2=-c^2\,d{t'}^2+dx^2+dy^2+dz^2\;}.
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the metric.
 
@@ -148,7 +148,7 @@ c_{em}=\frac{1}{\sqrt{\epsilon\mu}},
 $$
 and plane waves satisfy $k^2=\omega^2\epsilon\mu$, so the characteristic speed of the medium's operator is $c_{em}$. The local complex structure's operator has characteristic speed $c$; the medium's has characteristic speed $c_{em}$. They are the same operator only if
 $$
-c=c_{em}=\frac{1}{\sqrt{\epsilon\mu}} .
+\boxed{\;c=c_{em}=\frac{1}{\sqrt{\epsilon\mu}}\;}.
 $$
 The wave-operator route uses the field equation and the constitutive relations, and nothing about the null cone of the biquaternion norm.
 

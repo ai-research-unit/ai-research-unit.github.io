@@ -7,8 +7,6 @@
 
 The two directions of the correspondence are the following. From the manifold to the twistor space, each point $x$ gives the curve $\pi^{-1}(x)\cong\mathbb{CP}^1$ with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and the conformal structure of $M$ is recovered from the family of curves; this is the content of *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*. From the twistor space to the manifold, a holomorphic object on $Z$ restricts to each curve and produces a field on $M$; the restriction defines the transform, and the Hermitian form is what turns complex-linear data into fields with reality conditions.
 
-**The boundaries.** The twistor space and its real, complex and Hermitian structures are *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*; the twistor operator and the twistor equation are *The Twistor Operator* and *The Penrose Operator*; the spinor bundle, the chirality and the charge conjugation are *Spin Geometry*; the complex analysis of the transform, the cohomology of the sheaves and the massless field equations are the referenced twistor literature. The body is a four-dimensional oriented spin manifold with an anti-self-dual conformal structure.
-
 ## Hermitian Spin Geometry
 
 **Definition.** A **Hermitian spin structure** on a spin manifold is a positive definite Hermitian form $h$ on the spinor bundle $\mathcal{S}$ with respect to which the Clifford multiplication is skew, $c(v)^*=-c(v)$, together with the induced conjugation $\kappa : \mathcal{S}\to\bar{\mathcal{S}}$ of the spin representation. The form $h$ is the fibre form of the earlier articles, and the conjugation is the reality structure.

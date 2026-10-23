@@ -10,8 +10,6 @@ $$
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{\mu=1}^{3}q_\mu\vec e_\mu$ and $q_\mu\in\mathbb{R}$; the scalar part is $\mathrm{Sc}$, the vector subspace is $\mathrm{Vect}(\mathbb{H})$, the norm is $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$, and the multiplication operator is $L^{\bullet}_{\tilde q_1}\tilde q_2=\tilde q_1\bullet\tilde q_2$ of *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category. The plain bilinear form $(\tilde q_1,\tilde q_2)\mapsto\mathrm{Sc}(\tilde q_1\tilde q_2)$ is *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*.
-
 ## The Trace Form
 
 ### The Definition
@@ -25,7 +23,7 @@ $$
 **Proposition.** The trace form is symmetric and bilinear, and coincides with the plain bilinear form of the same space:
 
 $$
-\tau(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2=\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr).
+\boxed{\;\tau(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2=\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)\;}.
 $$
 
 *Proof.* $\tilde q_1\bullet\tilde q_2$ is symmetric and bilinear, so $\tau$ is; and $\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)=\mathrm{Sc}\bigl(\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)\bigr)=\mathrm{Sc}(\tilde q_1\tilde q_2)$ because the scalar part is invariant under reversal, $\mathrm{Sc}(\tilde q_1\tilde q_2)=\mathrm{Sc}(\tilde q_2\tilde q_1)$. Expanding the plain scalar part gives $q_{1t}q_{2t}-\vec q_1\cdot\vec q_2$.
@@ -49,7 +47,7 @@ $$
 **Proposition.** The trace form is non-degenerate and its radical is trivial:
 
 $$
-\operatorname{rad}\tau=\{\tilde q_1 : \tau(\tilde q_1,\tilde q_2)=0\ \text{for all}\ \tilde q_2\}=0 .
+\boxed{\;\operatorname{rad}\tau=\{\tilde q_1 : \tau(\tilde q_1,\tilde q_2)=0\ \text{for all}\ \tilde q_2\}=0\;}.
 $$
 
 *Proof.* The Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ is invertible, so the form is non-degenerate.
@@ -63,7 +61,7 @@ $$
 **Theorem (associativity).** The trace form is **associative** and **invariant** for the product:
 
 $$
-\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(\tilde q_1,\tilde q_2\bullet\tilde q_3)=\tau(\tilde q_2,\tilde q_1\bullet\tilde q_3).
+\boxed{\;\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(\tilde q_1,\tilde q_2\bullet\tilde q_3)=\tau(\tilde q_2,\tilde q_1\bullet\tilde q_3)\;}.
 $$
 
 *Proof.* $\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\mathrm{Sc}((\tilde q_1\bullet\tilde q_2)\tilde q_3)$. Writing $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ and using the associativity of the plain product and the invariance of the scalar part under reversal, $\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)=\mathrm{Sc}(\tilde q_3\tilde q_1\tilde q_2)=\mathrm{Sc}(\tilde q_2\tilde q_3\tilde q_1)$, gives the equalities.
@@ -79,7 +77,7 @@ $$
 **Theorem.** Every **derivation** of the block is skew for the trace form:
 
 $$
-\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0 .
+\boxed{\;\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0\;}.
 $$
 
 *Proof.* The trace form is associative, so for a derivation $D$, $0=D\,\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(D(\tilde q_1\bullet\tilde q_2),\tilde q_3)+\tau(\tilde q_1\bullet\tilde q_2,D\tilde q_3)$; expanding the derivation rule and using the associativity of $\tau$ twice gives $\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0$. The derivations are *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category, and the statement is the general invariance of the trace form of a Jordan algebra quoted in *Jordan Algebras*.

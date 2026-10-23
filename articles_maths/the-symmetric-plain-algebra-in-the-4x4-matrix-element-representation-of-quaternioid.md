@@ -6,8 +6,6 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the norm is $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$, the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$, and the left and right regular representations $\mathsf{M}_4$, $\mathsf{M}_4'$ are those of *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
-
 ## The Representation
 
 ### The Regular Matrices and the Half-Sum
@@ -17,8 +15,8 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 **Theorem.** The left representation is multiplicative for the plain product and carries the Jordan product to the **half-sum of the two orders**:
 
 $$
-\mathsf{M}_4(\tilde q_1\tilde q_2)=\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4(\tilde q_2),\qquad
-\mathsf{M}_4(\tilde q_1\bullet\tilde q_2)=\tfrac12\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)+\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)\bigr).
+\boxed{\;\mathsf{M}_4(\tilde q_1\tilde q_2)=\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4(\tilde q_2),\qquad
+\mathsf{M}_4(\tilde q_1\bullet\tilde q_2)=\tfrac12\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)+\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)\bigr)\;}.
 $$
 
 *Proof.* Multiplicativity is the associativity of the plain product, $\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\tilde q_3=\tilde q_1(\tilde q_2\tilde q_3)=\tilde q_1\tilde q_2\,\tilde q_3$; the second identity is linearity applied to $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$.
@@ -30,8 +28,8 @@ $$
 **Proposition.** The trace and the determinant of the regular matrix are
 
 $$
-\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t=2\,T(\tilde q),\qquad
-\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2 .
+\boxed{\;\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t=2\,T(\tilde q),\qquad
+\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2\;}.
 $$
 
 *Proof.* The left multiplication by $\tilde q$ has the eigenvalues $q_t\pm|\vec q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_t$ and the determinant is $(q_t^2+|\vec q|^2)^2=\langle\tilde q\rangle_{\natural}^2$; both are quoted from *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
@@ -43,7 +41,7 @@ $$
 **Theorem.** On the model the trace form is a **quarter of the matrix trace pairing**:
 
 $$
-\operatorname{tr}\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\bigr)=4\,\tau(\tilde q_1,\tilde q_2)=4\bigl(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\bigr).
+\boxed{\;\operatorname{tr}\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\bigr)=4\,\tau(\tilde q_1,\tilde q_2)=4\bigl(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\bigr)\;}.
 $$
 
 *Proof.* $\operatorname{tr}\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)=\operatorname{tr}\mathsf{M}_4(\tilde q_1\tilde q_2)=4\,\mathrm{Sc}(\tilde q_1\tilde q_2)=4\,\tau(\tilde q_1,\tilde q_2)$, using the multiplicativity, the trace of the regular matrix and $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\tilde q_2)$ of *The Trace Form and the Invariance of the Symmetric Plain Algebra*.
@@ -55,7 +53,7 @@ $$
 **Theorem.** The left and the right regular representations commute:
 
 $$
-\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4'(\tilde q_2)=\mathsf{M}_4'(\tilde q_2)\,\mathsf{M}_4(\tilde q_1)\qquad\text{for all }\tilde q_1,\tilde q_2,
+\boxed{\;\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4'(\tilde q_2)=\mathsf{M}_4'(\tilde q_2)\,\mathsf{M}_4(\tilde q_1)\qquad\text{for all }\tilde q_1,\tilde q_2\;},
 $$
 
 and the two together generate the **full** matrix algebra, $\mathrm{alg}\{\mathsf{M}_4,\mathsf{M}_4'\}=M_4(\mathbb{R})$.

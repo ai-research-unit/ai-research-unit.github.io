@@ -16,10 +16,6 @@ The invertibility is where the article records an **absence**. The block is comm
 
 **The results.** The block carries one algebraic norm, the diagonal of its scalar-part form, $\langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$, complex-valued and indefinite, of Gram matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, with the complex cone as its vanishing set. It is **not multiplicative**, the pair $(\vec e_x,\vec e_y)$ separating the two sides. It does **not** decide invertibility: the unit $e_t+\vec e_x$ has $\langle\cdot\rangle=0$ and the zero divisor $e_t+i\vec e_x$ has $\langle\cdot\rangle=2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient; the invertibility the block does have is that of the Jordan theory, carried by a different quadratic form. Each section below states its result first and then proves it.
 
-**Boundaries.** The algebraic norm of the general plain bilinear product is *Norm and Invertibility in the Biquaternion Algebra*, and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; none of the four is read here beyond $\langle\cdot\rangle$. The product, its unit and its non-associativity are *Introduction to the Symmetric Plain Algebra*; the trace form the algebraic norm polarises is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the square and the quadratic identity are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; the zero divisors are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; the two elements of a product are $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ the complex bilinear dot product of the vector parts. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. Juxtaposition is the plain product and $\bullet$ is the product of the block, $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$.
-
 ## The Algebraic Norm of the Block
 
 **The block carries exactly one algebraic norm**, the diagonal of its scalar-part form, $\langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$; it is complex-valued and indefinite, of Gram matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, and its vanishing set is the complex cone.
@@ -53,7 +49,7 @@ which is the general plain bilinear form of *The 4 Forms over the Biquaternion $
 **Proposition.** The algebraic norm of the block is **not** multiplicative:
 
 $$
-\langle\tilde Q_1\bullet\tilde Q_2\rangle\neq \langle\tilde Q_1\rangle\,\langle\tilde Q_2\rangle\quad\text{in general.}
+\boxed{\; \langle\tilde Q_1\bullet\tilde Q_2\rangle\neq \langle\tilde Q_1\rangle\,\langle\tilde Q_2\rangle\quad\text{in general.} \;}
 $$
 
 *Proof.* The pair $\vec e_x,\vec e_y$ separates the two sides: $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=\tfrac12(\vec e_z-\vec e_z)=0$, so $\langle \vec e_x\bullet \vec e_y\rangle=\langle 0\rangle=0$, while $\langle \vec e_x\rangle\langle \vec e_y\rangle=(-1)(-1)=1$. The two values differ, so no multiplicativity holds.
@@ -75,9 +71,9 @@ The algebraic norm of a product would decide invertibility if the invertible ele
 **Theorem (the algebraic norm does not decide invertibility).** Neither implication holds:
 
 $$
-\langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\text{ non-invertible},
+\boxed{\; \langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\text{ non-invertible},
 \qquad
-\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible}.
+\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible} \;}.
 $$
 
 *Proof.* For the first implication, the element $\tilde Q=e_t+\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-1^{2}=0$, and it is invertible: $(e_t+\vec e_x)\bullet\tfrac12(e_t-\vec e_x)=\tfrac12(e_t+\vec e_x)(e_t-\vec e_x)=\tfrac12\cdot2e_t=e_t$ and $\tilde Q^{\bullet2}\bullet\tfrac12(e_t-\vec e_x)=\tilde Q$, so $\tfrac12(e_t-\vec e_x)$ is its inverse of the block. For the second implication, the element $\tilde Q=e_t+i\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-(i)^{2}=1+1=2\neq0$, and it is a zero divisor, $(e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^{2}-(i\vec e_x)^{2}=e_t-e_t=0$, hence non-invertible while its algebraic norm does not vanish.

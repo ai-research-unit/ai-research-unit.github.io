@@ -97,14 +97,12 @@ The preservation of the two sectors is the structural reason the action splits i
 
 **Theorem (the sandwich of the polar word).** Let $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. Then
 
-$$
-\Theta_{\tilde Q}=\Theta_r\circ\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}},
-$$
+$$ \boxed{\;\Theta_{\tilde Q}=\Theta_r\circ\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}\;}, $$
 
 that is,
 
 $$
-\Theta_{\tilde Q}(\tilde X)=r^{2}\,\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\bigr)\tilde U_{\mathrm b},
+\boxed{\;\Theta_{\tilde Q}(\tilde X)=r^{2}\,\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\bigr)\tilde U_{\mathrm b}\;},
 $$
 
 and $\Theta_{\exp(i\alpha)}=\mathrm{id}$.
@@ -155,7 +153,7 @@ $$
 The exponent is $\ln r$, and the sandwich sends it to
 
 $$
-\ln r\longmapsto 2\ln r .
+\boxed{\;\ln r\longmapsto 2\ln r\;}.
 $$
 
 There is no angle. The factor two is nevertheless the same factor two as in the boost and the rotor: the exponent of the factor is half the exponent of its image. The scale is the case in which the doubled parameter is a dilation and not a rotation or a rapidity. The map $r\mapsto r^{2}$ is an isomorphism of $\mathbb{R}_{>0}$, so the scale is recovered from its sandwich; only the sign of the factor is lost, and the polar word has $r>0$.
@@ -407,7 +405,7 @@ $$
 
 **(b)** The image is the linear conformal Lorentz group,
 $$
-\operatorname{im}\Theta\cong CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3),
+\boxed{\;\operatorname{im}\Theta\cong CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)\;},
 $$
 acting on $\mathbb{M}_-$ by a dilation of ratio $r^{2}$ composed with a proper orthochronous Lorentz transformation.
 
@@ -429,9 +427,7 @@ $$
 
 **Corollary (the isometry slice).** The sandwich is an isometry of the Lorentzian norm on $\mathbb{M}_-$ exactly when $r=1$. For general $r$,
 
-$$
-L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8},
-$$
+$$ \boxed{\;L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}\;}, $$
 
 so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type is preserved and the transformation is a similarity of ratio $r^{2}$.
 

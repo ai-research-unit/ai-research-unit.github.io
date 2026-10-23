@@ -30,11 +30,6 @@ Plain Algebra*, *Square Roots of One and the Idempotents in the Algebraic Struct
 in this category. The law vocabulary is *Definitions for the Study of
 the Algebraic Structures* and the law table *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; a generic element is $\tilde q=q_te_t+\vec q$, the centre is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
-The laws are those of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
-
 ## The Criterion
 
 ### The Two Properties
@@ -42,14 +37,14 @@ The laws are those of *Definitions for the Study of the Algebraic Structures ove
 **Theorem (the isolating pair).** The block is **alternating**,
 
 $$
-\tilde q\times\tilde q=0\qquad\text{for every }\tilde q,
+\boxed{\;\tilde q\times\tilde q=0\qquad\text{for every }\tilde q\;},
 $$
 
 and satisfies the **Jacobi identity**,
 
 $$
-\tilde q_1\times(\tilde q_2\times\tilde q_3)+\tilde q_2\times(\tilde q_3\times\tilde q_1)+\tilde q_3\times(\tilde q_1\times\tilde q_2)=0
-\qquad\text{for all }\tilde q_1,\tilde q_2,\tilde q_3 .
+\boxed{\;\tilde q_1\times(\tilde q_2\times\tilde q_3)+\tilde q_2\times(\tilde q_3\times\tilde q_1)+\tilde q_3\times(\tilde q_1\times\tilde q_2)=0
+\qquad\text{for all }\tilde q_1,\tilde q_2,\tilde q_3\;}.
 $$
 
 *Proof.* The alternation is $\tfrac12(\tilde q\tilde q-\tilde q\tilde q)=0$, the two terms of the
@@ -113,7 +108,7 @@ alone.
 **Theorem.** The idempotents of the block are only $0$,
 
 $$
-\tilde\pi\times\tilde\pi=\tilde\pi\iff\tilde\pi=0 .
+\boxed{\;\tilde\pi\times\tilde\pi=\tilde\pi\iff\tilde\pi=0\;}.
 $$
 
 *Proof.* The square is zero for every element, so the equation is $\tilde\pi=0$. The idempotent set
@@ -126,8 +121,8 @@ Antisymmetric Plain Algebra*, below this article in this category, and the class
 of index one, and every other element is a nilpotent of index two,
 
 $$
-\tilde\nu\times\tilde\nu=0\qquad\text{for every }\tilde\nu,\qquad
-\tilde\nu\neq0\implies\tilde\nu\ \text{is of index }2 .
+\boxed{\;\tilde\nu\times\tilde\nu=0\qquad\text{for every }\tilde\nu,\qquad
+\tilde\nu\neq0\implies\tilde\nu\ \text{is of index }2\;}.
 $$
 
 The nonzero nilpotents are the punctured space, and the class coincides with the zero-divisor set and

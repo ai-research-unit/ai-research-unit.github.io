@@ -65,6 +65,10 @@ Two examples show how narrowly the agreement should be read.
 
 **The electron.** The framework forces the tree-level $g=2$, which is Dirac's result; the measured anomalous part $a=(g-2)/2\approx1.1597\times10^{-3}$ is outside the classical equation and is not contained. The framework therefore cannot claim the measured moment at the precision the measurement achieves; its agreement is with tree-level Dirac theory, one part in $10^3$ away from the measured value.
 
+$$
+\boxed{\;a_{\text{framework}}=0,\qquad a_{\text{measured}}\approx1.1597\times10^{-3}\;}
+$$
+
 **Hydrogen.** The exact relativistic spectrum is the standard Dirac–Coulomb result, quoted and reproduced; the corpus states that the bound-state solution is not derived anywhere in the series. The framework supplies the spin algebra and the level bookkeeping, but not the radial dynamics or the coupling constant, and the agreement is with an imported result.
 
 **The Lorentz group.** The experiments that fix the kinematics — aberration of starlight, the Fizeau drag and the Michelson–Morley null result — select the group $SO^+(1,3)$, not a representation of it, and they are recorded with their ownership in *The Lorentz Transformation as a Biquaternionic Rotation*. The rotor conjugation reproduces them because it is a faithful representation of that group and cannot do otherwise; here the agreement is not even an achievement of transcription, since the experiments never test which faithful representation is used.

@@ -34,9 +34,9 @@ Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_
 Let a bounded source radiate at a single frequency. Outside the source the field satisfies the source-free equations, and the scalar potentials that generate it are expanded in spherical harmonics with radial functions that solve the spherical Bessel equation. The angular dependence of the field is therefore the direct sum
 
 $$
-L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)} ,
+\boxed{\;L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)} ,
 \qquad
-\dim_{\mathbb{C}} D^{(l)} = 2l+1 ,
+\dim_{\mathbb{C}} D^{(l)} = 2l+1\;}
 $$
 
 each $D^{(l)}$ appearing once. The coefficients of the expansion are the **multipole moments**, functionals of the source:
@@ -124,9 +124,9 @@ This is the first of the two decompositions, and it is the algebraic form of the
 The split into electric and magnetic pieces is the projection onto the two real subspaces by the Hermitian conjugate,
 
 $$
-\tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E ,
+\boxed{\;\tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H ,
+\tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\;}
 $$
 
 with $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H$. The Hermitian conjugate is thus the algebraic operation that separates the two fields. The decomposition is **not** Lorentz-covariant: a boost mixes the two summands, because it mixes $\vec E$ and $\vec B$. It is, however, rotation-covariant: a spatial rotation acts on $\vec E$ and $\vec H$ separately, so the split survives the rotation subgroup.
@@ -263,11 +263,11 @@ $$
 and the two chiralities transform independently. In terms of the Riemann–Silberstein vector, the boost is a complex rotation
 
 $$
-\vec N_2 = \Lambda\,\vec N ,
+\boxed{\;\vec N_2 = \Lambda\,\vec N ,
 \qquad
 \vec N_2^{*} = \Lambda^{*}\,\vec N^* ,
 \qquad
-\Lambda \in SO(3,\mathbb{C}) ,
+\Lambda \in SO(3,\mathbb{C})\;}
 $$
 
 with $\Lambda$ a complex orthogonal matrix of unit determinant, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$. The matrices for the two chiralities are complex conjugates of one another, so on the complexified field space the two halves rotate independently and do not mix; this is the statement that the self-dual and anti-self-dual combinations transform in the two complex three-dimensional representations of the Lorentz group, the two chiralities. The verification is direct: a boost of a vector with $\vec N^* = 0$ keeps $\vec N_2^{*} = 0$, and a boost of a vector with $\vec N = 0$ keeps $\vec N_2 = 0$, so each eigenspace of $\star$ is preserved.
@@ -372,9 +372,9 @@ The multipole series of a bounded source is the decomposition of the field's ang
 The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ admits two decompositions of its six-real-dimensional vector part. The **Hermitian decomposition** separates the electric and magnetic fields,
 
 $$
-\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+ ,
+\boxed{\;\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+ ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{M}_- ,
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{M}_-\;}
 $$
 
 and is rotation-covariant but not boost-covariant. It coincides with the electric/magnetic multipole distinction only in the static limit: a static charge distribution gives a purely Hermitian field strength and a stationary current a purely anti-Hermitian one, while a radiating multipole of either type has both parts. The **self-dual decomposition** uses the Hodge dual $\star:(\vec E,\vec B)\mapsto(c\vec B,-\vec E/c)$, $\star^2 = -1$, and the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$ with $\star\vec N = -i\vec N$; its two halves are $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ and $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ with $\vec N^* = \vec E-ic\vec B$. It is Lorentz-covariant, and for radiation its two halves are the two helicities, so that a circularly polarised multipole of definite helicity lies entirely in one half.

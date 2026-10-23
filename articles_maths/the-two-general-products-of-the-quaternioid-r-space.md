@@ -6,8 +6,6 @@ The quaternion space $\mathbb{H}$ is a four-dimensional real vector space and an
 
 The two products and their two structures are defined here. The identities that link them are *Relations Between the Two General Products*, below this article in this category, and the table of their laws is *Comparison Between the Two General Products*, below this article in this category. The symmetrisation and the antisymmetrisation of the two are *The 6 Products of the Quaternioid Real Space*, and the three companion structures they define are *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, both below this article in this category. The left and right multiplications of the two are *The Two General Products and Operators*, the reading on the distinguished subspaces is *Remarkable Subspaces and the Two General Products*, and the degree-two reading is *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space* and *Remarkable Subspaces and the Two Forms*, all below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$, the real quaternion algebra, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_\mu^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$, and the general element $\tilde q=q_te_t+\vec q$, $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, with real coefficients $q_\mu$. The **dot product** is $\vec q_1\cdot\vec q_2=q_{1x}q_{2x}+q_{1y}q_{2y}+q_{1z}q_{2z}$ and the **cross product** $\vec q_1\times\vec q_2$ is the usual one, $(q_{1y}q_{2z}-q_{1z}q_{2y})\vec e_x+(q_{1z}q_{2x}-q_{1x}q_{2z})\vec e_y+(q_{1x}q_{2y}-q_{1y}q_{2x})\vec e_z$. The **scalar part** is $\mathrm{Sc}(\tilde q)=q_t$ and the **vector part** is $\operatorname{Vect}(\tilde q)=\vec q$. In this article $\tilde q_1$ and $\tilde q_2$ name elements, so that the brackets stay free for the forms.
-
 ## The Two Products
 
 **Definition.** The **general plain bilinear product** and the **general quaternionic bilinear product** of the elements $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ are
@@ -27,13 +25,13 @@ Both products are $\mathbb{R}$-bilinear, being built from the bilinear operation
 **Proposition (the two products separate the scalar and the vector part of the first factor).** For all $\tilde q_1,\tilde q_2$,
 
 $$
-\tilde q_1\tilde q_2+\tilde q_1^{\natural}\tilde q_2=2q_{1t}\,\tilde q_2 , \qquad \tilde q_1\tilde q_2-\tilde q_1^{\natural}\tilde q_2=2\,\vec q_1\,\tilde q_2 ,
+\boxed{\;\tilde q_1\tilde q_2+\tilde q_1^{\natural}\tilde q_2=2q_{1t}\,\tilde q_2 , \qquad \tilde q_1\tilde q_2-\tilde q_1^{\natural}\tilde q_2=2\,\vec q_1\,\tilde q_2\;},
 $$
 
 where $\vec q_1\tilde q_2$ is read as an element multiplying $\tilde q_2$, and the two products agree exactly when the vector part of the first factor annihilates the second,
 
 $$
-\tilde q_1^{\natural}\tilde q_2=\tilde q_1\tilde q_2 \quad\Longleftrightarrow\quad \vec q_1\tilde q_2=0 .
+\boxed{\;\tilde q_1^{\natural}\tilde q_2=\tilde q_1\tilde q_2 \quad\Longleftrightarrow\quad \vec q_1\tilde q_2=0\;}.
 $$
 
 *Proof.* The two rules differ only in the signs attached to $\vec q_1\cdot\vec q_2$, $\vec q_1\times\vec q_2$ and $q_{2t}\vec q_1$, so adding them cancels those terms and leaves $2q_{1t}q_{2t}+2q_{1t}\vec q_2=2q_{1t}\tilde q_2$; subtracting them leaves $-2\vec q_1\cdot\vec q_2+2q_{2t}\vec q_1+2\vec q_1\times\vec q_2$, which is $2\vec q_1\tilde q_2$ by the plain rule read with the vector part alone in the first slot. The agreement condition is the vanishing of the difference.
@@ -73,8 +71,8 @@ The associator of the quaternionic product and the rest of its laws are *Compari
 The two products are read from one construction: the plain product with the natural conjugation inserted in a slot. The first-slot choice gives the plain and the quaternionic families, $(\mathrm{id},\mathrm{id})$ and $({}^{\natural},\mathrm{id})$; the second-slot choice gives the same two products read with both arguments conjugated, because the base field $\mathbb{R}$ carries no involution other than the identity, so the conjugation in the two slots is the same map ${}^{\natural}$.
 
 $$
-(\mathrm{id},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) , \qquad
-({}^{\natural},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) .
+\boxed{\;(\mathrm{id},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) , \qquad
+({}^{\natural},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural})\;}.
 $$
 
 The count is developed in *The Two General Products and the Reason There Are Only Two*, below this article in this category.

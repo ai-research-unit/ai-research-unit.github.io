@@ -88,7 +88,7 @@ Four statements are worth separating.
 **The current is derived.** Given the equation, the Dirac current $j^\mu = \bar{\psi}\gamma^\mu\psi$ is conserved, and in the series' notation it is the four-vector biquaternion
 
 $$
-\tilde{J} = ic\,j^0 e_t + \vec j\in\mathbb{M}_-, \qquad j^0 = \psi^\dagger\psi \ge 0 .
+\boxed{\;\tilde{J} = ic\,j^0 e_t + \vec j\in\mathbb{M}_-, \qquad j^0 = \psi^\dagger\psi \ge 0\;}.
 $$
 
 That the electron's conserved current is a material-sector object is a structural consequence of the equation, not an added assumption.
@@ -147,13 +147,13 @@ $$
 Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$ with $\vec S = \tfrac{\hbar}{2}\boldsymbol{\sigma}$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
 
 $$
-\boxed{\;g = 2\;}
+g = 2
 $$
 
 The coefficient $1/2m_e$ is produced by the elimination, not put in by hand: this is Dirac's tree-level prediction, here a property of the biquaternionic mass term. For the electron, $ϙ = -e$, so
 
 $$
-\vec\mu_e = -\frac{e}{m_e}\vec S = -g\,\frac{e}{2m_e}\vec S, \qquad g = 2,
+\boxed{\;\vec\mu_e = -\frac{e}{m_e}\vec S = -g\,\frac{e}{2m_e}\vec S, \qquad g = 2\;},
 $$
 
 of magnitude one Bohr magneton $\mu_B = e\hbar/2m_e = 9.274010\times10^{-24}$ J T$^{-1}$ when $\vec S$ is aligned with $\vec B$.

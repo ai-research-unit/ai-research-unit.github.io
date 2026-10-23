@@ -8,14 +8,12 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1}$ is fo
 One fact organizes the whole discussion. As a real algebra,
 
 $$
-\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R}),
+\boxed{\;\mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})\;},
 $$
 
 and $M_2(\mathbb{R})$ is **simple**: its only two-sided ideals are $0$ and the whole algebra. The algebra $\mathbb{H}_{\mathrm{s}}$ is therefore simple, and yet it is **not** a division algebra — it carries nonzero zero divisors, as *Split-Quaternion Zero Divisors* records. This combination is what makes its ideal theory interesting: the two-sided ideal lattice is trivial, while the one-sided ideal lattice is rich and governed by the matrix structure.
 
 The article treats, in order, the definitions of ideals; the two-sided ideals and simplicity; the artinian and semisimple structure and the length of the algebra as a module over itself; the two idempotents and their orthogonal complementarity; the explicit matrix units; the Peirce decomposition into four one-dimensional corners; the grouping of the matrix units into minimal left and minimal right ideals; and the lattice of left ideals, which is a real projective line. It closes with the contrast with the quaternions $\mathbb{H}$, where there are no proper ideals at all, and with the biquaternions $\mathbb{B}$, whose ideal theory has the same shape over $\mathbb{C}$.
-
-**Conventions.** The basis is $1, \vec e_x, \vec e_y, \vec e_z$, with $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$; a general element is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation and the central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ are assumed from *Split-Quaternion Algebra*, the idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$ from *Split-Quaternion Idempotents and Projections*, and the metrical reading of $\langle\cdot\rangle_{\natural}$ from *Split-Quaternion Norm and Invertibility*. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.
 
 ## Ideals in an Algebra
 
@@ -105,7 +103,7 @@ The **Peirce decomposition** is the decomposition of an algebra relative to a fa
 **One idempotent.** Let $e \in A$ be idempotent and $f = 1 - e$. Every $a \in A$ expands as $a = eae + eaf + fae + faf$, giving the direct sum
 
 $$
-A = eAe \oplus eAf \oplus fAe \oplus fAf,
+\boxed{\;A = eAe \oplus eAf \oplus fAe \oplus fAf\;},
 $$
 
 whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with identity $e$; the other corners are only one-sided pieces. The expansion and the directness are proved in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, where the case of a **central** idempotent is also separated: for a central $e$ the off-diagonal corners vanish and the sum is a product of algebras. That special case does not arise here, since the idempotents lie in a simple algebra.
@@ -121,7 +119,7 @@ Each diagonal corner $e_i A e_i$ is an algebra with identity $e_i$, and each off
 **The split-quaternion case.** Take $e_1 = \tilde\pi_1$ and $e_2 = \tilde\pi_2$. The Peirce decomposition of $\mathbb{H}_{\mathrm{s}}$ is
 
 $$
-\mathbb{H}_{\mathrm{s}} = \tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{s}} \tilde\pi_2,
+\boxed{\;\mathbb{H}_{\mathrm{s}} = \tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{s}} \tilde\pi_2\;},
 $$
 
 and by the table above each summand is one-dimensional over $\mathbb{R}$:
@@ -169,7 +167,7 @@ $$
 the matrices annihilating $W$. This is a left ideal, since $\ker(AM) \supseteq \ker M$ for every $A$. The assignment $W \mapsto L_W$ reverses inclusions, and
 
 $$
-L_0 = \mathbb{H}_{\mathrm{s}}, \qquad L_{\mathbb{R}^2} = 0, \qquad L_W \text{ is minimal when } \dim_{\mathbb{R}} W = 1 .
+\boxed{\;L_0 = \mathbb{H}_{\mathrm{s}}, \qquad L_{\mathbb{R}^2} = 0, \qquad L_W \text{ is minimal when } \dim_{\mathbb{R}} W = 1\;}.
 $$
 
 Conversely every left ideal is of this form: a left ideal is a submodule of the left regular module $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$, and since $\mathbb{R}^2$ is simple and $\mathbb{H}_{\mathrm{s}}$ has length $2$, the only submodules of $\mathbb{R}^2 \oplus \mathbb{R}^2$ are $0$, a copy of $\mathbb{R}^2$, and the whole module. A minimal left ideal $L$ is thus a copy of $\mathbb{R}^2$, determined by the line $W = \bigcap_{M \in L} \ker M$.
@@ -183,7 +181,7 @@ $$
 which is a circle, and they form the middle layer of the lattice:
 
 $$
-0 \;\subset\; \{\, L_W : W \in \mathbb{P}^1(\mathbb{R}) \,\} \;\subset\; \mathbb{H}_{\mathrm{s}} .
+\boxed{\;0 \;\subset\; \{\, L_W : W \in \mathbb{P}^1(\mathbb{R}) \,\} \;\subset\; \mathbb{H}_{\mathrm{s}}\;}.
 $$
 
 The middle elements are pairwise incomparable; each covers $0$ and is covered by $\mathbb{H}_{\mathrm{s}}$. Because the length of $\mathbb{H}_{\mathrm{s}}$ as a left module over itself is $2$, every minimal left ideal is also a **maximal** left ideal: nothing lies strictly between it and $\mathbb{H}_{\mathrm{s}}$. Right ideals admit the same description, with lines in the dual space and the rows as coordinate members.

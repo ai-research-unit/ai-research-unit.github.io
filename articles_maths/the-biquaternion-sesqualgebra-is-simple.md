@@ -6,7 +6,7 @@
 The general plain sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ makes $\mathbb{B}$ a sesqualgebra by *Introduction to the General Plain Sesqualgebra*, and the two-sided ideals of that multiplication are the two trivial ones,
 
 $$
-0 \quad\text{and}\quad \mathbb{B} .
+\boxed{\;0 \quad\text{and}\quad \mathbb{B}\;}.
 $$
 
 This article proves the statement in full. The proof is a single computation: a two-sided ideal of the multiplication is a two-sided ideal of the algebra, because in a unital derived model the involution drags the conjugate of an element into every ideal it lies in; and the algebra $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$, which has no proper two-sided ideal. So one nonzero element of a two-sided ideal generates a nonzero two-sided ideal of the algebra, which is the whole algebra, and the ideal contains the unit.

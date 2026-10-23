@@ -104,7 +104,9 @@ with real coefficients $Q_\mu', Q_\mu'' \in \mathbb{R}$.
 The map
 
 $$
-\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-),
+\boxed{\;
+\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}, \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)
+\;},
 $$
 
 is an algebra isomorphism, where the multiplication on $\mathbb{H} \oplus \mathbb{H}$ is componentwise. This is the **idempotent decomposition** of the split biquaternion algebra.
@@ -137,7 +139,9 @@ $$
 **Proposition (identification and volume element).** The eight monomials in $E_1,E_2,E_3$ are linearly independent and span $\mathbb{H}_{\mathbb{D}}$, so
 
 $$
-\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}(0,3) \cong \mathrm{Cl}_{0,3},
+\boxed{\;
+\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}(0,3) \cong \mathrm{Cl}_{0,3}
+\;},
 $$
 
 the Clifford algebra of a three-dimensional negative definite space. The volume element is
@@ -153,7 +157,9 @@ which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E
 **Proposition (the complexification).** The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ is the complex Clifford algebra
 
 $$
-\mathrm{Cl}(3) \cong \mathrm{Cl}_3(\mathbb{C}) \cong M_2(\mathbb{C}) \oplus M_2(\mathbb{C}) \cong \mathbb{B} \oplus \mathbb{B},
+\boxed{\;
+\mathrm{Cl}(3) \cong \mathrm{Cl}_3(\mathbb{C}) \cong M_2(\mathbb{C}) \oplus M_2(\mathbb{C}) \cong \mathbb{B} \oplus \mathbb{B}
+\;},
 $$
 
 whose two simple summands are the complexified quaternion halves; its volume element is the element $-j$, central and an involution, and it is the algebra studied in *Complex Split Biquaternions and the Clifford Algebra Cl(3)*.

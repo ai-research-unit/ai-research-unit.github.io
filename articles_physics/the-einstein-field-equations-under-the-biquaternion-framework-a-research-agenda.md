@@ -10,8 +10,6 @@ The central question is therefore stated here in the form the evidence can suppo
 
 The article is organised as follows. The next section fixes the three kinds of statement this agenda must keep apart, because the failure mode it exists to prevent is the upgrading of a transcribed result into a framework result. The two sections after it record, separately, what the curved-spacetime article and the linearised and wave articles actually established. The central section states what would settle the non-linear question, naming the object and the computation. The remaining open items follow, each with what would close it, and a short section orders those items by what could be achieved short of the full equation. The closing sections summarise.
 
-**Conventions.** The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $\vec e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre of the algebra. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$. Real coordinates are $x^\mu = (ct',x,y,z)$, so a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$ and $\partial/\partial Q_t = -i\partial/\partial(ct')$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \eta^{\mu\nu}\partial/\partial Q_\mu\,\partial/\partial Q_\nu$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$, and the local-Lorentz generators are the rotations $J_k = \vec e_k$ and the boosts $K_k = i\vec e_k$, spanning the six-dimensional traceless subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$. Nothing inherited is renamed or rederived.
-
 ## How to Read the Evidence: Three Kinds of Statement
 
 An agenda for this subject has to do one thing before anything else: keep apart the statements that look alike. Three kinds occur in the gravity articles, and they carry different weight.
@@ -83,7 +81,7 @@ $$
 collapses to the Lorentzian trace,
 
 $$
-\tilde{H} = (\eta^{\mu\nu}h_{\mu\nu})\,e_t = h\,e_t .
+\boxed{\;\tilde{H} = (\eta^{\mu\nu}h_{\mu\nu})\,e_t = h\,e_t\;}.
 $$
 
 The traceless part of $h_{\mu\nu}$ — nine of the ten components, and the whole of the transverse-traceless content that carries the two polarisations — maps to zero. The correct carrier is the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, not an algebra element.
@@ -104,9 +102,7 @@ The two polarisations were checked on an explicit plane-wave ansatz. For each of
 
 The quadrupole formula was verified by matching it to an independent result. For the equal-mass circular binary, the traceless quadrupole moment's third derivatives give $d^3\mathcal{Q}_{ij}/d{t'}^3 d^3\mathcal{Q}_{ij}/d{t'}^3 = 128\,m^2R^4\omega^6$, and with Kepler's law and $R = d/2$ the power
 
-$$
-P = \frac{G}{5c^5}\left\langle \,d^3\mathcal{Q}_{ij}/d{t'}^3\,d^3\mathcal{Q}_{ij}/d{t'}^3 \right\rangle
-$$
+$$\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\mathcal{Q}_{ij}/d{t'}^3\,d^3\mathcal{Q}_{ij}/d{t'}^3 \right\rangle\;}$$
 
 equals $\tfrac{64}{5}\tfrac{G^4}{c^5}\tfrac{m^5}{d^5}$, in agreement with the standard equal-mass binary power $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$. The absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.
 

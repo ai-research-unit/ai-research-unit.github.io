@@ -36,7 +36,7 @@ The KMS condition is a statement about the *same* algebraic direction, and its s
 
 **The period is $\beta$, and the length is $c\beta$.** The imaginary-time direction is compact with circumference $\beta$ *in the coordinate $t'$*, so the thermal circle has circumference $c\beta=\hbar c/(k_BT)$ in the material sector's units. The identity
 $$
-c\beta=\frac{\hbar c}{k_BT}
+\boxed{\;c\beta=\frac{\hbar c}{k_BT}\;}
 $$
 is exact, and it was checked numerically for $T=2.725$, $300$ and $1000\,\mathrm{K}$: the ratio $(\hbar c/k_BT)/(\beta c)$ is $1$ to twelve decimal places. So the two scales multiply, and they are independent: $c$ comes from $\epsilon\mu$ and $\beta$ from $T$.
 
@@ -66,9 +66,9 @@ That distinction has a checkable consequence, because the pointwise character of
 
 **Tolman's law on the framework's metric.** In a static metric the local temperature satisfies $T\sqrt{-g_{tt}}=\text{const}$. With the framework's $g_{tt}=-c^2$ this reads
 $$
-T\,c=\text{const},
+\boxed{\;T\,c=\text{const},
 \qquad\text{so}\qquad
-T\propto\frac{1}{c}\propto n .
+T\propto\frac{1}{c}\propto n\;}.
 $$
 The local temperature is inversely proportional to the local speed of light: where the medium is optically denser, the local temperature is higher. The relation was checked directly: with a reference $T_0=300\,\mathrm{K}$ at $c_1=1$, a point at $c_2=1.5$ carries $T=200\,\mathrm{K}$, and $Tc=300$ at both points. The pointwise character is the same as that of $c$: the temperature varies from point to point precisely as the local complex structure does, and the two variations are tied by the metric.
 

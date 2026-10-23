@@ -7,8 +7,6 @@ This article studies **regular** (equivalently **monogenic**) split-quaternion-v
 
 The article owns the regularity theory of the category: the operator and its conjugate, the system of regularity equations, the failure of ellipticity, the examples, the harmonicity that survives as a wave equation, and the failure of the complex analogy where the zero divisors intervene. It relies on *Split-Quaternion Analysis* for the differential operators and the Peirce coordinates, on *Split-Quaternion Analysis* for the subalgebra operators, and on the biquaternion counterpart *Biquaternion Regular Functions* for the structural comparison. No physics is invoked; the object called a "Dirac operator" in older literature is here the **Cauchy–Riemann operator**, and that name is used throughout.
 
-**Conventions.** Coordinates are $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$. For a function $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ on an open set $\Omega$ in a four-dimensional subspace, the partial derivatives are written $\partial/\partial q_t, \partial/\partial q_x, \partial/\partial q_y, \partial/\partial q_z$.
-
 ## The Cauchy–Riemann Operator and Its Conjugate
 
 **Definition.** The **Cauchy–Riemann operator** (the split-quaternion gradient) and its **conjugate** are
@@ -21,8 +19,10 @@ $$
 The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial/\partial\bar A, \partial/\partial A)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_t$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and
 
 $$
-\nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) e_t .
-$$
+\boxed{\;
+\nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) e_t
+\;}
+$$.
 
 The second-order operator $\Box$ is the **ultrahyperbolic operator** of signature $(2,2)$: a wave operator, not a Laplacian. This single sign difference from the quaternion and biquaternion cases governs the whole of the regularity theory below.
 
@@ -53,8 +53,10 @@ hold. This is the **split-quaternion Cauchy–Riemann system**, four scalar equa
 **Theorem.** The principal symbol of $\nabla$ is $s(\xi) = \xi_t + \xi_x \vec e_x + \xi_y \vec e_y + \xi_z \vec e_z$, and
 
 $$
-s(\xi)\,s^{\natural}(\xi) = \xi_t^2 + \xi_x^2 - \xi_y^2 - \xi_z^2 = \langle \xi\rangle_{\natural} e_t,
-$$
+\boxed{\;
+s(\xi)\,s^{\natural}(\xi) = \xi_t^2 + \xi_x^2 - \xi_y^2 - \xi_z^2 = \langle \xi\rangle_{\natural} e_t
+\;}
+$$,
 
 which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy–Riemann system is **not elliptic**: it is of ultrahyperbolic (wave) type, and its characteristic variety is exactly the null cone $\mathcal{N}$, the same set that carries the zero divisors.
 
@@ -85,8 +87,10 @@ which satisfies $\nabla G = 0$ away from the null set. But because $\mathbb{H}_{
 **Theorem.** Every regular function is **harmonic** for the ultrahyperbolic operator: if $\nabla F = 0$ then $\Box F = \bar{\nabla}(\nabla F) = 0$, i.e.
 
 $$
-\bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) F = 0 .
-$$
+\boxed{\;
+\bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) F = 0
+\;}
+$$.
 
 Right-regular functions are likewise harmonic, and the factorization $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ is the analogue of $\partial^2/\partial A\partial\bar A = \tfrac14 \Delta$ in one complex variable.
 

@@ -14,8 +14,6 @@ whose laws are *Biquaternion Rotations and Lorentz Transformations*, and the who
 
 The article owns the two-step component rule, the image of the basis elements, the reading of the operator on the scalar and the vector part, the coordinate form of the two regimes, and the worked collapse of a null operator on the basis. The purpose of that material is the one the component realization always serves in this corpus: it turns a structural statement into arithmetic that can be checked on a chosen element.
 
-**Conventions.** The product of two elements with four-vectors $Q_4^\mu$ and $Q_1^\mu$ has components
-
 $$
 (\tilde Q_4\tilde{Q}_1)^0 = Q_4^0Q_1^0 - \sum_{k=1}^{3} Q_4^kQ_1^k, \qquad
 (\tilde Q_4\tilde{Q}_1)^i = Q_4^0Q_1^i + Q_1^0Q_4^i + \sum_{j,k=1}^{3}\epsilon^{ijk}Q_4^jQ_1^k ,
@@ -34,19 +32,15 @@ with the bar denoting complex conjugation of a component. Indices are written up
 **Theorem (the two-step rule).** For every $\tilde{Q}$ and every $\tilde{Q}_2$, the four-vector of $\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2) = \tilde{Q}\tilde{Q}_2\tilde{Q}^{*}$ is obtained by applying the product rule twice: first form the four-vector $S^\mu$ of $\tilde{Q}\tilde{Q}_2$,
 
 $$
-S^0 = Q^0U^0 - \vec Q\cdot\vec U, \qquad
-S^i = Q^0U^i + U^0Q^i + (\vec Q\times\vec U)^i ,
+\boxed{\;S^0 = Q^0U^0 - \vec Q\cdot\vec U, \qquad
+S^i = Q^0U^i + U^0Q^i + (\vec Q\times\vec U)^i\;},
 $$
 
 and then multiply by the four-vector of $\tilde{Q}^{*}$,
 
-$$
-\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^0 = \overline{Q^0}\,S^0 + \sum_{k=1}^{3}\overline{Q^k}\,S^k ,
-$$
+$$ \boxed{\;\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^0 = \overline{Q^0}\,S^0 + \sum_{k=1}^{3}\overline{Q^k}\,S^k\;}, $$
 
-$$
-\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^i = -\,S^0\,\overline{Q^i} + \overline{Q^0}\,S^i - (\vec S\times(\vec Q)^{\natural})^i .
-$$
+$$ \boxed{\;\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^i = -\,S^0\,\overline{Q^i} + \overline{Q^0}\,S^i - (\vec S\times(\vec Q)^{\natural})^i\;}. $$
 
 **Proof.** The general product formula applied to the pair $(\tilde{Q}, \tilde{Q}_2)$ gives $S^\mu$. Applying it again to the pair $(S, \tilde{Q}^{*})$ gives $H^0 = S^0(\tilde{Q}^{*})^0 - \sum_k S^k(\tilde{Q}^{*})^k$ and $H^i = S^0(\tilde{Q}^{*})^i + (\tilde{Q}^{*})^0S^i + \sum_{jk}\epsilon^{ijk}S^j(\tilde{Q}^{*})^k$; substituting $(\tilde{Q}^{*})^0 = \overline{Q^0}$ and $(\tilde{Q}^{*})^k = -\overline{Q^k}$ and collecting gives the two displays.
 
@@ -65,7 +59,7 @@ Applied to the four basis elements, the rule gives the four columns of the opera
 **Proposition (the image of the identity).** $\mathrm{H}_{\tilde{Q}}(e_t) = \tilde{Q}\tilde{Q}^{*}$, with four-vector
 
 $$
-\bigl(\tilde{Q}\tilde{Q}^{*}\bigr)^0 = \sum_{\mu\in\{t,x,y,z\}}\lvert Q^\mu\rvert^{2} = \mathrm{Sc}\bigl(\tilde{Q}\tilde{Q}^{*}\bigr) \geq 0,
+\boxed{\;\bigl(\tilde{Q}\tilde{Q}^{*}\bigr)^0 = \sum_{\mu\in\{t,x,y,z\}}\lvert Q^\mu\rvert^{2} = \mathrm{Sc}\bigl(\tilde{Q}\tilde{Q}^{*}\bigr) \geq 0\;},
 $$
 
 $$
@@ -135,7 +129,7 @@ for a unit vector $\vec u$ determined by $\vec Q$. Moreover $\mathrm{H}_{\tilde{
 **Proof.** Off the cone, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{*}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{*}$ is minimal of complex dimension $2$ (*Ideals and Peirce Decomposition of the Biquaternion Algebra*), and
 
 $$
-\operatorname{im}\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}}\bigl(\mathbb{B}\tilde{Q}^{*}\bigr) = \mathbb{B}\,\tilde{Q}\tilde{Q}^{*} = \mathbb{C}\cdot\tilde{Q}\tilde{Q}^{*},
+\boxed{\;\operatorname{im}\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}}\bigl(\mathbb{B}\tilde{Q}^{*}\bigr) = \mathbb{B}\,\tilde{Q}\tilde{Q}^{*} = \mathbb{C}\cdot\tilde{Q}\tilde{Q}^{*}\;},
 $$
 
 a single complex line, because the Hermitian element $\tilde{Q}\tilde{Q}^{*}$ has norm zero and is a nonzero multiple of a minimal idempotent (*Idempotents of the Biquaternion Algebra*); hence the rank is $1$. The scalar $4\lvert Q^0\rvert^{2}$ is the trace of the operator: in the matrix realization the congruence $X \mapsto MXM^{\dagger}$ has trace $\lvert\operatorname{Tr}M\rvert^{2} = \lvert 2Q^0\rvert^{2} = 4\lvert Q^0\rvert^{2}$, and a rank-one endomorphism $T$ satisfies $T^{2} = (\operatorname{Tr}T)\,T$, so $\mathrm{H}_{\tilde{Q}} \circ \mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. The coordinate form of the image is the statement that every column $\mathrm{H}_{\tilde{Q}}(e_k)$ is a multiple of the single element $\tilde{Q}\tilde{Q}^{*}$, which is displayed in the worked case below.

@@ -48,7 +48,7 @@ The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscal
 **Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=J_\mu J^\mu=\eta^{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
 
 $$
-J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 .
+\boxed{\; J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 \;}.
 $$
 
 *Proof.* The identity expresses two facts at once: the square of the vector $J$ equals the sum of the squares of the two scalars, and the square of the axial vector is non-positive (or zero) exactly when the square of the vector is non-negative, the two squares being opposite.
@@ -70,7 +70,7 @@ where $J=J_\mu\gamma^\mu$, $K=K_\mu\gamma^\mu$ and $S=S_{\mu\nu}\gamma^{\mu\nu}$
 **Statement (the aggregate form of the FPK identities).** The aggregate satisfies
 
 $$
-Z^2=4\sigma Z,\qquad Z\gamma_\mu Z=4J_\mu Z,\qquad Z i\gamma_5 Z=4\omega Z,\qquad Z\gamma_5\gamma_\mu Z=4K_\mu Z,\qquad Z\sigma_{\mu\nu}Z=4S_{\mu\nu}Z .
+\boxed{\; Z^2=4\sigma Z,\qquad Z\gamma_\mu Z=4J_\mu Z,\qquad Z i\gamma_5 Z=4\omega Z,\qquad Z\gamma_5\gamma_\mu Z=4K_\mu Z,\qquad Z\sigma_{\mu\nu}Z=4S_{\mu\nu}Z \;}.
 $$
 
 **Statement (the inversion theorem).** If $\xi$ is a fixed spinor with $\xi^{\dagger}\gamma_0\psi\neq0$, then $\psi$ is recovered from its aggregate by $\psi=Z\xi$. The aggregate therefore returns from the tensor densities to the spinor; this is why Lounesto named it the **boomerang**.
@@ -97,14 +97,13 @@ Classes $1$–$3$ are the **regular** spinors, those with at least one of $\sigm
 **Proposition (all six classes are non-empty).** In the Dirac representation and with the covariants above, the following spinors are representatives:
 
 $$
-\begin{aligned}
+\boxed{\; \begin{aligned}
 \text{class 1:}&\quad \psi=\frac{1}{\sqrt3}\,(1,\,i,\,0,\,1)^{\mathsf T} &&(\sigma=\tfrac13,\ \omega=\tfrac23),\\
 \text{class 2:}&\quad \psi=(1,\,0,\,1/\sqrt2,\,0)^{\mathsf T} &&(\sigma=\tfrac12,\ \omega=0),\\
 \text{class 3:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,i,\,0)^{\mathsf T} &&(\sigma=0,\ \omega=-1),\\
 \text{class 4:}&\quad \psi=\frac{1}{\sqrt6}\,(1,\,1+i,\,1,\,-1-i)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S\neq0),\\
 \text{class 5:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,0,\,1)^{\mathsf T} &&(\sigma=\omega=0,\ K=0,\ S\neq0),\\
-\text{class 6:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,1,\,0)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S=0).
-\end{aligned}
+\text{class 6:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,1,\,0)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S=0)\end{aligned} \;}.
 $$
 
 *Proof.* Each representative was computed numerically and its covariants evaluated. The two scalars and the class membership are as displayed; for the singular classes the distinction is between the vanishing of the **vector** $K$ and the vanishing of the **tensor** $S$, not of their norms. Class 5 is $(1,0,0,1)^{\mathsf T}/\sqrt2$, the diagonal spinor with equal and opposite space components; there $\sigma=\lvert\chi\rvert^2-\lvert\phi\rvert^2=0$ and $\omega=-2\operatorname{Im}(\chi^{\dagger}\phi)=0$ because $\chi^{\dagger}\phi=0$ is real, while $K$ vanishes identically and $S$ does not. Class 6 is $(1,0,1,0)^{\mathsf T}/\sqrt2$, the spinor with equal upper and lower two-spinors; there $\sigma=0$ and $\omega=0$, $S$ vanishes identically, and $K$ does not — it is null, $K^2=0$, which is why it is invisible to the square $K^2$ and visible only to the vector itself. Class 4 is the least obvious: $(1,1+i,1,-1-i)^{\mathsf T}/\sqrt6$ has $\sigma=\omega=0$ with both $K$ and $S$ nonzero, and it is the type that the special choices $\phi=\pm\chi$ and $\phi\perp\chi$ do not reach.

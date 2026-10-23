@@ -5,18 +5,18 @@
 The Hamilton pairing writes an element as a complex scalar times the exponential of a complex angle:
 
 $$
-\tilde Q=\Rho\,e^{\vec U\Theta}=\Rho\bigl(\cos\Theta+\vec U\sin\Theta\bigr),
+\boxed{\;\tilde Q=\Rho\,e^{\vec U\Theta}=\Rho\bigl(\cos\Theta+\vec U\sin\Theta\bigr),
 \qquad
 \Rho=\sqrt N,\qquad
 \vec U=\frac{\vec Q}{B},\qquad
-B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}} .
+B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}\;}.
 $$
 
 It is the only one of the three pairings whose first factor is central, and the only one whose first factor is a scalar. That single fact is what makes it the natural home for an invariant: a central scalar is the one thing that a change of frame cannot touch.
 
 The thesis is one sentence. **The Hamilton modulus $\Rho$ is the invariant of the element — the mass when the element is a four-momentum and the complex amplitude otherwise — and the second factor is the frame, a Lorentz transformation whose angle $\Theta$ is real for a rotation, imaginary for a boost and complex in general.** Two consequences follow and are the substance of the article. The mass is not the energy: the energy is a component of the four-momentum in a frame, and the modulus is the invariant left when the frame is divided out. And the angle is not a single number with a single convention: the spinor word stores $\psi/2$, the four-vector factor stores $\psi$, and the modulus may itself be imaginary, so the pair $(\Theta,\vec U)$ is the invariant object and $\Theta$ alone is not.
 
-The article is a synthesis. The pairing, its theorem and its domain are owned by *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*; the eigenvalue decomposition and the mass shell by *Eigenvalue Decomposition of a Biquaternion* and *The Spectral Reading of a Four-Vector*; the branch of the modulus by *Modulus–Unit Polar Decomposition of Biquaternions*. What is added here is the physical reading of the first factor, the anatomy of the complex angle, and the boundaries of the mass identification.
+The article is a synthesis. The pairing, its theorem and its domain are owned by *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*; the eigenvalue decomposition and the mass shell by *Eigenbasis of a Biquaternion* and *The Spectral Reading of a Four-Vector*; the branch of the modulus by *Modulus–Unit Polar Decomposition of Biquaternions*. What is added here is the physical reading of the first factor, the anatomy of the complex angle, and the boundaries of the mass identification.
 
 The conventions are those of *Conventions in the Biquaternion Universe*, §*The Polar Word and the Three Pairings*, including its warning on the four objects called a boost. The norm is $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B$.
 
@@ -25,7 +25,7 @@ The conventions are those of *Conventions in the Biquaternion Universe*, §*The 
 | result | established in | used here for |
 |---|---|---|
 | the Hamilton pairing, its theorem and its domain | [*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement*, §*The Domain* | $\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle |
-| the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*Eigenvalue Decomposition of a Biquaternion*](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), §*The Spectrum and the Characteristic Polynomial* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=N$ |
+| the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*Eigenbasis of a Biquaternion*](../articles_maths/eigenbasis-of-a-biquaternion.html), §*The Spectrum and the Characteristic Polynomial* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=N$ |
 | the four factors and the branch of the modulus | [*Modulus–Unit Polar Decomposition of Biquaternions*](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html), §*The Four Factors* | $\Rho=r e^{i\alpha}$ with $\alpha\in(-\pi/2,\pi/2]$ |
 | the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$ |
 | the four objects called a boost and the factor of two | [*Conventions in the Biquaternion Universe*](conventions-in-the-biquaternion-universe.html), §*The Four Objects Called a Boost* | the $\psi/2$ versus $\psi$ warning |
@@ -49,9 +49,9 @@ The modulus is central and complex. The second factor is a unit-norm element, an
 The two eigenvalues of the element are the polar form of the spectrum,
 
 $$
-\lambda_\pm=Q_t\pm iB=\Rho\,e^{\pm i\Theta},
+\boxed{\;\lambda_\pm=Q_t\pm iB=\Rho\,e^{\pm i\Theta},
 \qquad
-\lambda_+\lambda_-=\Rho^{2}=N .
+\lambda_+\lambda_-=\Rho^{2}=N\;}.
 $$
 
 The product identity is the reason the modulus is an invariant: the two eigenvalues are the two light-cone combinations of the element, and their product is the norm. The sum, $2Q_t$, is the trace and is frame-dependent for a four-momentum; the product is not.
@@ -80,7 +80,7 @@ The phase of $\Rho$ carries the causal character when the norm is real.
 For a four-momentum the norm is $N=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are
 
 $$
-\lambda_\pm=i mc\,e^{\pm\psi}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right),
+\boxed{\;\lambda_\pm=i mc\,e^{\pm\psi}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;},
 $$
 
 the two light-cone combinations, and their product is $-m^{2}c^{2}$. The mass shell is the level set of the modulus, not of the trace.
@@ -247,7 +247,7 @@ The reading that changes the theory most is the identification of the modulus wi
 ## Further Reading
 
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the theorem, the domain and the roots of one.
-- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the eigenprojections and the multiplicativity of the norm.
+- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections and the multiplicativity of the norm.
 - [Modulus–Unit Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html), for the four-factor word and the branch of the modulus.
 - [The Three Polar Factors of a Biquaternion: Frame, Mass and State](the-three-polar-factors-of-a-biquaternion-frame-mass-and-state.html), for the comparison with the quaternion and Cartan first factors.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the mass shell and the eigenvalues of a four-momentum.

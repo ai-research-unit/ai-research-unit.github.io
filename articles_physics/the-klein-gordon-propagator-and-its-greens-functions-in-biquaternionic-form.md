@@ -290,8 +290,8 @@ It is worth stating the two kernels' structure in the algebra. Both are complex 
 The difference of the two kernels is the framework's causal kernel. Define the **Pauli–Jordan** (commutator) function by
 
 $$
-G_C(\tilde{R})=G_R(\tilde{R})-G_A(\tilde{R})
-=\frac{\mathrm{sgn}(t')}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
+\boxed{\;G_C(\tilde{R})=G_R(\tilde{R})-G_A(\tilde{R})
+=\frac{\mathrm{sgn}(t')}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right]\;},
 $$
 
 and normalize the field so that the field commutator, of which $G_C$ is the kernel, reads
@@ -344,8 +344,8 @@ $$
 which is the standard interpretation of the asymmetric prescription: the two boundary values are the positive- and negative-frequency Wightman functions, and the $t'$-ordering puts them in the order that makes the amplitude a causal Green's function. The two-point function of the biquaternion field is therefore
 
 $$
-\langle0|\,T\,\tilde{\Phi}(\tilde{R})\,\tilde{\Phi}^{*}(\tilde R_2)\,|0\rangle
-=G_F(\tilde{R}-\tilde R_2)\,e_t,
+\boxed{\;\langle0|\,T\,\tilde{\Phi}(\tilde{R})\,\tilde{\Phi}^{*}(\tilde R_2)\,|0\rangle
+=G_F(\tilde{R}-\tilde R_2)\,e_t\;},
 $$
 
 a complex scalar times the identity; the module factor is absent, as it must be for a central field. The identification fixes the field-normalization convention, the kernels throughout being the distributions defined by $(\Box-\mu^2)G=-\delta^{(4)}$; the standard canonical normalization of the complex scalar differs from it by the explicit factor of $i$ carried by the canonical commutation relation, and that constant, unlike the support, is not physical.

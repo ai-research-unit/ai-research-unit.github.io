@@ -15,10 +15,6 @@ A norm is relative to a product, and the algebraic norm of a product is the diag
 
 The invertibility is a second and independent absence. The block has **no left unit, no right unit and no two-sided unit**, hence no inverse and an empty group of units; the inverse equation to the centre has no solution, because the block cannot produce a central value at all.
 
-**Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Quaternionic Algebra*; the general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the antisymmetrisation from which the block is written is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The algebraic norm of the general quaternionic bilinear product is $\langle\cdot\rangle_{\natural}$, a different form, and its theory is *Norm and Invertibility in the General Quaternionic Algebra*; the invariant forms of the block are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and $\tilde Q_1^{\natural}\tilde Q_2$ is the general quaternionic bilinear product. The product of the block is $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\diamond$.
-
 **The results.** The antisymmetric quaternionic multiplication has no left unit, no right unit and no two-sided unit, hence no inverse and an empty group of units, and the inverse equation $\tilde Q_1\diamond\tilde Q_2=e_t$ has no solution because every value of the block is a pure vector. Its scalar part vanishes identically, so its algebraic norm is the zero function and the block carries no algebraic norm rather than a zero one. Its square vanishes identically, $\tilde Q_1\diamond\tilde Q_1=0$, and its conjugated square is the pure vector $\tilde Q_1\diamond\tilde Q_1^{\natural}=-2Q_{1t}\vec Q_1$, so neither canonical quadratic is central-valued. The invertibility criterion $N\neq0$ of the parent quaternionic product is not transferred.
 
 ## The Relative Definitions
@@ -72,9 +68,11 @@ and for an operation whose scalar part vanishes identically the algebraic norm i
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric quaternionic multiplication,
 
 $$
+\boxed{\;
 \mathrm{Sc}\bigl(\tilde Q_1\diamond\tilde Q_2\bigr)=0\quad\text{for all }\tilde Q_1,\tilde Q_2,
 \qquad\text{hence}\qquad
-\varphi_{\diamond}(\tilde Q)=0\quad\text{for all }\tilde Q .
+\varphi_{\diamond}(\tilde Q)=0\quad\text{for all }\tilde Q
+\;}.
 $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
@@ -83,9 +81,7 @@ The algebraic norm of the operation is identically zero, and by the convention o
 
 **Remark (the two canonical quadratics of the block).** The product being alternating, the square vanishes identically, and the conjugated square is a pure vector:
 
-$$
-\tilde Q_1\diamond\tilde Q_1=0,\qquad \tilde Q_1\diamond\tilde Q_1^{\natural}=-2Q_{1t}\vec Q_1 .
-$$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_1=0,\qquad \tilde Q_1\diamond\tilde Q_1^{\natural}=-2Q_{1t}\vec Q_1 \;}. $$
 
 The square is the zero map, and the conjugated square is central exactly on the vector subspace and on the centre, not everywhere; neither takes its values in the centre at every element, so no central-valued quadratic map is built from the product. The parent product $\tilde Q_1^{\natural}\tilde Q_2$ removes its scalar part in the block, and with the scalar part removed from a square the central quadratic form is gone.
 

@@ -10,12 +10,10 @@ $$
 
 into a single simple group $G_{\mathrm{GUT}}$, so that the three independent couplings become one at a high scale and the electric charge is quantised by the group's structure. The standard candidates are Georgi–Glashow $SU(5)$, Pati–Salam $SU(4)\times SU(2)_L\times SU(2)_R$, $SO(10)$ and $E_6$, with characteristic ranks and dimensions:
 
-
 |  | $SU(3)\times SU(2)\times \mathrm{U}(1)$ | $SU(5)$ | $SO(10)$ | $E_6$ |
 |---|---|---|---|---|
 | $\text{rank}$ | $2+1+1=4$ | $4$ | $5$ | $6$ |
 | $\text{dimension}$ | $8+3+1=12$ | $24$ | $45$ | $78$ |
-
 
 The preceding article of this group, *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, proved that the biquaternion algebra's intrinsic compact gauge structure is
 
@@ -30,8 +28,6 @@ $$
 This article draws the consequence for unification. The conclusion is a sharp structural statement: **the framework unifies the electroweak and abelian factors, because those are exactly the $\mathrm{U}(2)$ that the algebra carries, and it cannot unify them with colour, because $SU(3)_c$ is not inside the algebra and no grand-unified group containing both has rank at most two.** Grand unification in the strict sense is outside the algebra's reach. It is reachable only by enlarging the carrier, and every enlargement pays in canonicity and in unwanted structure. As in the companion ceiling article, this is a result about the framework and not a failure of effort.
 
 The article first sets the threshold that any unified group must clear, then locates the framework's reach below it, then shows what the enlargement to $M_n(\mathbb B)$ would cost, and finally states what the framework's unification actually is: electroweak, with the strong sector present only through its gauge-invariant composites.
-
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\cong M_2(\mathbb C)$, the compact sector is $\mathbb M_-=\mathrm{U}(2)$ with generators $T_a=\tfrac12\vec e_a$ and $T_0=\tfrac12ie_t$, and the defining module is $S\cong\mathbb C^2$. The Standard-Model group is written $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ with $Y$ the weak hypercharge, and the electric charge is $Ϙ=T_3+Y$ in the normalisation of the electroweak article. The enlargement carries $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ with compact part $\mathrm{U}(2n)$. The trace is the matrix trace on the defining module, distinguished from the informational trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the programme this article constrains.
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the unification of the electroweak and abelian factors.
@@ -60,9 +56,9 @@ Two further requirements are structural rather than numerical. First, the unifie
 **The framework against the threshold.** The algebra's intrinsic group is $\mathrm{U}(2)$, with
 
 $$
-\mathrm{rank}\,\mathrm{U}(2)=2<4,
+\boxed{\;\mathrm{rank}\,\mathrm{U}(2)=2<4,
 \qquad
-\dim_{\mathbb R}\mathrm{U}(2)=4<12 .
+\dim_{\mathbb R}\mathrm{U}(2)=4<12\;}.
 $$
 
 It fails both numerical conditions, and it fails the structural one: $\mathrm{U}(2)$ does not contain $SU(3)_c$, by the dimension argument of *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, since $\dim\mathrm{SU}(3)=8>4=\dim\mathrm{U}(2)$. The framework is therefore below the grand-unification threshold on every count. No group of rank two and dimension four can contain the Standard-Model group, and the algebra supplies no larger intrinsic group.
@@ -182,10 +178,10 @@ $$
 has rank $2+1+1+1=5$ and dimension $8+3+3+1=15$. Both are above the framework's rank $2$. The rank ladder is
 
 $$
-\underbrace{2}_{\mathrm{U}(2),\ \text{framework}}<
+\boxed{\;\underbrace{2}_{\mathrm{U}(2),\ \text{framework}}<
 \underbrace{4}_{G_{\mathrm{SM}},\ SU(5)}<
 \underbrace{5}_{SO(10),\ \text{Pati–Salam},\ \text{left–right}}<
-\underbrace{6}_{E_6}<\underbrace{7}_{E_7}<\underbrace{8}_{E_8}<\underbrace{16}_{E_8\times E_8} ,
+\underbrace{6}_{E_6}<\underbrace{7}_{E_7}<\underbrace{8}_{E_8}<\underbrace{16}_{E_8\times E_8}\;},
 $$
 
 and every rung above the first is inaccessible to the algebra's intrinsic structure. The framework sits strictly below the lowest unification threshold, and the gap is a property of the algebra and not of any particular model.
@@ -213,9 +209,9 @@ The general structural statement is the following. **The biquaternion algebra un
 Grand unification requires a group of rank at least four and dimension at least twelve containing $SU(3)_c$, with the correct representation content. The biquaternion algebra's intrinsic compact gauge structure is $\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1)$, of rank two and dimension four, which fails both numerical thresholds and does not contain $SU(3)_c$:
 
 $$
-\mathrm{rank}\,\mathrm{U}(2)=2<4=\mathrm{rank}\,G_{\mathrm{SM}},
+\boxed{\;\mathrm{rank}\,\mathrm{U}(2)=2<4=\mathrm{rank}\,G_{\mathrm{SM}},
 \qquad
-\dim_{\mathbb R}\mathrm{U}(2)=4<12=\dim G_{\mathrm{SM}} .
+\dim_{\mathbb R}\mathrm{U}(2)=4<12=\dim G_{\mathrm{SM}}\;}.
 $$
 
 The framework does unify its two gauge factors, and the unification is electroweak: the $W$ triplet and the $B$ singlet are the coefficients of a single $\mathbb M_-$-valued field, and their generators close in one Lie algebra with $[T_a,T_b]=\varepsilon_{abc}T_c$ and $[T_a,T_0]=0$. But the two couplings remain separate, because the abelian factor is central and the algebra is not simple; and the framework does not quantise the hypercharge by itself, since the central $\mathrm{U}(1)$ has continuous charge, so quantisation must be imposed through the Dirac condition or through embedding into the non-abelian factor.

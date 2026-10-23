@@ -41,7 +41,7 @@ with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Under it, $\sigma_k$ is th
 **Definition.** A **gate** is a unitary element of $\mathbb{B}$,
 
 $$
-\mathcal{U} \;=\; \{\tilde{U} \in \mathbb{B} : \tilde{U}\tilde{U}^{*} = e_t\} \;\cong\; \mathrm{U}(2),
+\boxed{\;\mathcal{U} \;=\; \{\tilde{U} \in \mathbb{B} : \tilde{U}\tilde{U}^{*} = e_t\} \;\cong\; \mathrm{U}(2)\;},
 $$
 
 acting on a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ by **rotor conjugation**
@@ -112,7 +112,7 @@ $$
 Hence the kernel of $\tilde{U}\mapsto\Phi_{\tilde{U}}$ is the unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, and the effective group of gates is
 
 $$
-\mathrm{U}(2)/\mathrm{U}(1) \;\cong\; PU(2) \;\cong\; SO(3),
+\boxed{\;\mathrm{U}(2)/\mathrm{U}(1) \;\cong\; PU(2) \;\cong\; SO(3)\;},
 $$
 
 acting on the Bloch ball by rotations. This is the algebraic form of the unobservability of the global phase: two unitaries that differ by a central phase define the same gate.
@@ -242,7 +242,7 @@ $$
 So the composite gate is the **product** $\tilde{W} = \tilde{V}\tilde{U}$, and the map on channels is
 
 $$
-\Phi_{\tilde{V}} \circ \Phi_{\tilde{U}} = \Phi_{\tilde{V}\tilde{U}} .
+\boxed{\;\Phi_{\tilde{V}} \circ \Phi_{\tilde{U}} = \Phi_{\tilde{V}\tilde{U}}\;}.
 $$
 
 The product is the biquaternion product (for several qubits, the product in $\mathbb{B}^{\otimes n}$). Because that product is associative, a circuit is well defined without any bracketing convention: it is one element, the ordered product of its gates, and its action is a single conjugation by that element. The identity gate is $e_t$; the inverse of $\tilde{U}$ is $\tilde{U}^{*} = \tilde{U}^{-1}$; and the set of gates is closed under the product, which is the statement that the gate group is a group.
@@ -413,8 +413,8 @@ The right-hand side is the **Bell idempotent** $\tilde\Pi_\epsilon$ of the compa
 The whole circuit is thus the single element $\tilde{W} = \tilde{Q}_{\vec U_x}(\tilde{H}\otimes e_t)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
 
 $$
-\tilde{W}\left[\tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z)\right]\tilde{W}^{*}
-= \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right].
+\boxed{\;\tilde{W}\left[\tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z)\right]\tilde{W}^{*}
+= \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right]\;}.
 $$
 
 The output is not a product of idempotents; its partial trace is $\tfrac12 e_t$, the maximally mixed qubit state, by the computation of the companion article. The circuit has converted a product state into a maximally entangled state by a single conjugation, and every step of the conversion is an algebraic product and conjugation in $\mathbb{B}\otimes\mathbb{B}$.

@@ -37,8 +37,6 @@ Three structures carry the effect, and their homes in the framework differ.
 
 The article is organized as follows. The next section fixes the Schwarzschild horizon, computes the proper acceleration and the surface gravity, and separates them. The section after that reduces the near-horizon geometry to Rindler and states the identification with the Unruh effect precisely. A short section records what the biquaternion framework carries and what it imports. Two sections construct the Bogoliubov transformation and derive the Planck spectrum from it. A section computes the temperature, checks it against the Euclidean period and against the mass scaling, and records the observational status. The article closes with the established/interpretation split, open questions, and the summary.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$, with biquaternion norm $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=-c^2{t'}^2+x^2+y^2+z^2$; the biquaternionic gradient is $\tilde\nabla=e_t\,\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $G$ is Newton's constant, $M$ the black-hole mass, $f=1-r_s/r$, $r_s=2GM/c^2$; $\kappa$ is the surface gravity in the **acceleration normalization**, in which the temperature is $T=\hbar\kappa/(2\pi c k_B)$, and $\kappa_\omega=\kappa/c$ is the same quantity in the **frequency normalization**, in which $T=\hbar\kappa_\omega/(2\pi k_B)$. Bogoliubov coefficients carry mode indices and are written $\alpha_{ji}$ and $\mathcal B_{ji}$; the index-free scalar $\beta=\hbar/(k_BT)$ is the inverse temperature. Natural units $\hbar=c=k_B=1$ are used in the mode analysis and restored in every physical result.
-
 ## The Schwarzschild Horizon and Its Surface Gravity
 
 ### The Metric and the Horizon
@@ -108,7 +106,7 @@ $$
 which has the dimensions of a frequency ($1/\text{time}$). The **acceleration-normalized** surface gravity is
 
 $$
-\kappa = c\,\kappa_\omega = \frac{c^2 \frac{df}{dr}(r_s)}{2} = \frac{c^2}{2r_s} = \frac{c^4}{4GM},
+\boxed{\;\kappa = c\,\kappa_\omega = \frac{c^2 \frac{df}{dr}(r_s)}{2} = \frac{c^2}{2r_s} = \frac{c^4}{4GM}\;},
 $$
 
 which is the finite limit of $a(r)\sqrt f$ found above, and has the dimensions of an acceleration. The temperature formula of the Introduction uses this normalization,
@@ -315,7 +313,7 @@ $$
 The two branches of the continuation differ by the factor $\exp(2\pi\omega/\kappa)$, and the combination that is positive-frequency with respect to Kruskal time — the one that defines the vacuum — has its negative-frequency component suppressed relative to its positive-frequency component by
 
 $$
-\frac{|\mathcal B|}{|\alpha|}=\exp(-\pi\omega/\kappa).
+\boxed{\;\frac{|\mathcal B|}{|\alpha|}=\exp(-\pi\omega/\kappa)\;}.
 $$
 
 This is the exponential that makes the spectrum thermal, and its origin is the branch point where the horizon is. In the mode-mixing language it is a statement about the analyticity of the modes across the horizon; in the two-point-function language it is exactly the sibling article's statement that the two-point function is periodic under a shift of $2\pi/\kappa$ in imaginary time, equivalently the detailed-balance factor $\exp(-2\pi\omega/\kappa)$. The two are the same analytic fact written in the mode basis and in the correlator basis. The branch-point factor was checked directly: with $\kappa=1.3$, $\omega=0.7$, the continuation multiplies the mode by $\exp(\pm\pi\omega/\kappa)=5.428$ in one half-plane and $\exp(-\pi\omega/\kappa)=0.1842$ in the other, and the two differ by $\exp(2\pi\omega/\kappa)$, as stated.
@@ -347,11 +345,11 @@ where the sum is restricted to $n\in\{0,1\}$ by Pauli exclusion, which the singl
 **Bosons.** With $\tanh r_\omega=\exp(-\pi\omega/\kappa)$,
 
 $$
-\langle N_R\rangle
+\boxed{\;\langle N_R\rangle
 =\frac{\tanh^2 r_\omega}{1-\tanh^2 r_\omega}
 =\frac{\exp(-2\pi\omega/\kappa)}{1-\exp(-2\pi\omega/\kappa)}
 =\frac{1}{\exp(2\pi\omega/\kappa)-1}
-=n_{\mathrm B}(\omega).
+=n_{\mathrm B}(\omega)\;}.
 $$
 
 **Fermions.** With the same squeeze parameter,
@@ -412,7 +410,7 @@ $$
 and for Schwarzschild
 
 $$
-T_{\mathrm H}=\frac{\hbar c^3}{8\pi G M k_B}.
+\boxed{\;T_{\mathrm H}=\frac{\hbar c^3}{8\pi G M k_B}\;}.
 $$
 
 ### Independent Check: the Euclidean Period

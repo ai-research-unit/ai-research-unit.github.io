@@ -22,8 +22,6 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ for $k=x,y,z$, $\vec e_i \vec e_j=\epsilon_{ijk}\vec e_k$ for $i\neq j$ in $\{x,y,z\}$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ for $k=x,y,z$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. States are $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$; pure states are $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
-
 ## How an Obstruction Is Certified
 
 An item enters this catalogue only if it satisfies three conditions, and the conditions are worth stating so that the reader can tell a genuine no-go statement from a limitation of effort.
@@ -192,7 +190,7 @@ a finite direct sum when the configuration group is finite. The infinite dimensi
 
 **Proof.** The two complex dimensions differ,
 $$
-\dim_\mathbb{C}\bigl(\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\bigr)=16\neq4=\dim_\mathbb{C}\mathbb{B},
+\boxed{\;\dim_\mathbb{C}\bigl(\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\bigr)=16\neq4=\dim_\mathbb{C}\mathbb{B}\;},
 $$
 and under the matrix model $M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\cong M_4(\mathbb{C})$.
 
@@ -222,11 +220,11 @@ $$
 $$
 which is anti-Hermitian; so $\mathbb{M}_+\mathbb{M}_+\not\subseteq\mathbb{M}_+$. More precisely, products and commutators behave as
 $$
-\mathbb{M}_+\mathbb{M}_+\subseteq\mathbb{M}_++\mathbb{M}_-,
+\boxed{\;\mathbb{M}_+\mathbb{M}_+\subseteq\mathbb{M}_++\mathbb{M}_-,
 \qquad
 [\mathbb{M}_+,\mathbb{M}_+]\subseteq\mathbb{M}_-,
 \qquad
-[\mathbb{M}_+,\mathbb{M}_-]\subseteq\mathbb{M}_+ ,
+[\mathbb{M}_+,\mathbb{M}_-]\subseteq\mathbb{M}_+\;},
 $$
 the last two verified numerically on random elements of each sector. The commutator therefore grades the real Lie algebra $\mathbb{B}$ under $[\cdot,\cdot]$, while the product mixes the sectors.
 
@@ -240,7 +238,7 @@ the last two verified numerically on random elements of each sector. The commuta
 
 **Proof.** For every basis element of $\mathbb{M}_+$, $i(i\vec e_k)=-\vec e_k$ for $k=x,y,z$ and $i e_t=ie_t$, so
 $$
-i\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{M}_- .
+\boxed{\;i\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{M}_-\;}.
 $$
 
 Since the two subspaces intersect only at zero, no non-zero Hermitian element is $i$ times a Hermitian element.

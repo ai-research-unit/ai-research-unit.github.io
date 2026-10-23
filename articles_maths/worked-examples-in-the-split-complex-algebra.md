@@ -20,7 +20,7 @@ $$
 while
 
 $$
-Q = (3-2)\Pi_+ + (3+2)\Pi_- = 1\cdot\tfrac{1+j}{2} + 5\cdot\tfrac{1-j}{2} = \tfrac{1+5}{2} + \tfrac{1-5}{2}j = 3 - 2j.
+\boxed{\;Q = (3-2)\Pi_+ + (3+2)\Pi_- = 1\cdot\tfrac{1+j}{2} + 5\cdot\tfrac{1-j}{2} = \tfrac{1+5}{2} + \tfrac{1-5}{2}j = 3 - 2j\;}.
 $$
 
 So $Q = \bar Q$ for this element; since the identity is polynomial in $Q$, it holds for every $Q$. The two involutions are one and the same map.
@@ -81,7 +81,7 @@ $$
 Then
 
 $$
-Q_1 Q_2 = (1+j)(2-2j) = 2(1+j)(1-j) = 2(1-j^2) = 0,
+\boxed{\;Q_1 Q_2 = (1+j)(2-2j) = 2(1+j)(1-j) = 2(1-j^2) = 0\;},
 $$
 
 with $Q_1 \neq 0$ and $Q_2 \neq 0$. So $Q_1$ and $Q_2$ are zero divisors; each is a non-zero multiple of an idempotent.
@@ -109,7 +109,7 @@ $$
 so $Q$ is a hyperbolic unit, and indeed $Q = 2\Pi_+ + \tfrac12\Pi_-$. Its powers are computed in the idempotent basis, where multiplication is componentwise:
 
 $$
-Q^n = 2^n\Pi_+ + 2^{-n}\Pi_- = \frac{2^n+2^{-n}}{2} + \frac{2^n-2^{-n}}{2}\,j,
+\boxed{\;Q^n = 2^n\Pi_+ + 2^{-n}\Pi_- = \frac{2^n+2^{-n}}{2} + \frac{2^n-2^{-n}}{2}\,j\;},
 $$
 
 so the powers stay in the hyperbolic class and satisfy $Q^m Q^n = Q^{m+n}$. For $n=2$,

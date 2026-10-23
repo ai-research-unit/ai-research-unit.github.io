@@ -4,8 +4,6 @@
 
 The isometries of the general quaternionic sesquilinear form make up the **Krein isometry group** $U_{J}(\mathbb{B})$ of the biquaternion algebra, and its shape is the surprise of the indefinite theory: it is not compact, it is not the group $\mathrm{U}(2)$ that the two-sided structure of the algebra might suggest, and it contains the Lorentz boosts of the Lorentzian slices among its elements. This article determines the group, computes its dimension, identifies its centre and its maximal compact subgroup, lists the Krein isometries inside the algebra's own operator families, describes the spectrum of a Krein isometry and the one-parameter subgroups of boosts, and ends with the $J$-contractions and their defect operators. The group appears in *The Krein Cartan Decomposition of the Operator Algebra* as the fixed group of the Krein-adjoint involution and in *The Krein Level Sets and the Hyperbolic Structure* as the isometry group of the complex hyperbolic ball; the adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
-**Conventions.** $\mathbb{B}$ is the biquaternion algebra; $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}=\sum_{\mu}\bar Q_{1,\mu}Q_{2,\mu}$ is the general plain sesquilinear form (Gram matrix $\mathrm{I}_4$), $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{1,\mu}Q_{2,\mu}$ is the general quaternionic sesquilinear form (Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$), $J={}^{\natural}$, and the Krein adjoint is $T^{\dagger}=JT^{*}J$. In the coefficient basis a $\mathbb{C}$-linear operator is a matrix $T$ and the general quaternionic sesquilinear form is $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\tilde{Q}_1^{\mathsf T*}E\tilde{Q}_2$, where $T^{\mathsf T*}$ is the conjugate transpose of the matrix or vector.
-
 ## The Group of Krein Isometries
 
 **Definition.** An **isometry of the general quaternionic sesquilinear form**, or a **Krein isometry**, or a **$J$-unitary operator**, is a $\mathbb{C}$-linear operator $T$ with $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle T\tilde{Q}_2,T\tilde{Q}_1\rangle_{\natural*}$ for all $\tilde{Q}_1,\tilde{Q}_2$. The **Krein isometry group** is
@@ -26,13 +24,11 @@ $$
 
 **Theorem (the isometries among the three families).** For a biquaternion $\tilde{Q}_1$,
 
-$$
-L_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
+$$ \boxed{\;L_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
 \qquad
 R_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
 \qquad
-\Theta_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|=1,
-$$
+\Theta_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|=1\;}, $$
 
 where $S^{1}e_t$ is the circle of central phases.
 
@@ -41,7 +37,7 @@ where $S^{1}e_t$ is the circle of central phases.
 **Corollary (the compact algebraic subgroup).** The central phases and the unitary sandwiches generate the compact subgroup
 
 $$
-\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3),
+\boxed{\;\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)\;},
 $$
 
 of real dimension $4$: the phases are the scalar isometries and the unitary sandwiches are the inner automorphisms $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\tilde{Q}_1^{\dagger}$ of the algebra, which depend only on the class of $\tilde{Q}_1$ in $\mathrm{U}(2)/\mathrm{U}(1)=PU(2)\cong SO(3)$. The two families commute, and their only common element is the identity. This subgroup is far from the whole group, whose dimension is $16$.
@@ -52,9 +48,7 @@ of real dimension $4$: the phases are the scalar isometries and the unitary sand
 
 **Theorem (inversion symmetry; no confinement to the circle).** If $T$ is $J$-unitary then
 
-$$
-\lambda\in\mathrm{spec}(T)\iff\frac{1}{\bar\lambda}\in\mathrm{spec}(T),
-$$
+$$ \boxed{\;\lambda\in\mathrm{spec}(T)\iff\frac{1}{\bar\lambda}\in\mathrm{spec}(T)\;}, $$
 
 with the same multiplicity; the eigenvalues on the unit circle are paired by conjugation, and the eigenvalues off the circle occur in inverted pairs. The spectrum need not lie on the unit circle.
 
@@ -74,9 +68,7 @@ $$
 
 **Theorem (the boosts are Krein isometries).** Each $T_{t}$ is a Krein isometry, the assignment $t\mapsto T_{t}$ is a one-parameter subgroup of $U_{J}(\mathbb{B})$, and the spectrum is
 
-$$
-\mathrm{spec}(T_{t})=\{\exp(t),\exp(-t),1,1\},
-$$
+$$ \boxed{\;\mathrm{spec}(T_{t})=\{\exp(t),\exp(-t),1,1\}\;}, $$
 
 so the boosts are the elements of the group whose spectrum is real and off the unit circle. The restriction of $T_{t}$ to the Lorentzian slice $\mathbb{H}_{\mathbb{B}}$ is the Lorentz boost of rapidity $t$ along the $\vec e_x$ direction, that is of velocity $\tanh t$.
 

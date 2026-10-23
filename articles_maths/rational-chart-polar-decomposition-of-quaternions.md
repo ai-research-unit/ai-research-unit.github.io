@@ -105,9 +105,7 @@ Geometrically, the line through $-1$ and $u(\vec v)$ meets the pure subspace at 
 
 **Proposition.** Let $u\in\mathrm{Sp}(1)$ with $u\neq-1$. Then $u=u(\vec v)$ for the pure quaternion
 
-$$
-\vec v = (1-u)(1+u)^{-1}.
-$$
+$$ \boxed{\; \vec v = (1-u)(1+u)^{-1} \;} .$$
 
 **Proof.** Write $u=a+w$ with $a\in\mathbb{R}$ and $w$ pure. Since $\langle u\rangle_{\natural}=1$, one has $a^2+\langle w\rangle_{\natural}=1$, and since $u\neq-1$, one has $a\neq-1$. The inverse of $1+u=(1+a)+w$ is
 
@@ -168,9 +166,7 @@ The chart is therefore one-to-one, and its image is the sphere with the single p
 
 **Theorem.** Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition
 
-$$
-\tilde q = r\,(1-\vec v)(1+\vec v)^{-1}, \qquad r>0, \quad \vec v\in\operatorname{Im}\mathbb{H}.
-$$
+$$ \boxed{\; \tilde q = r\,(1-\vec v)(1+\vec v)^{-1}, \qquad r>0, \quad \vec v\in\operatorname{Im}\mathbb{H} \;} .$$
 
 **Existence.** Let $\tilde q\notin(-\infty,0]$, and put $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$. Then $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-r$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $\vec v$ with $\tilde u_{\mathrm r}=u(\vec v)$. Hence $\tilde q=ru(\vec v)$.
 
@@ -202,10 +198,8 @@ The product of two unit factors is a unit factor, and the coordinate of the prod
 
 **Proposition.** For pure $\vec v_1,\vec v_2$ with $1+\vec v_1\vec v_2\neq0$,
 
-$$
-u(\vec v_1)u(\vec v_2) = u(\vec v_3), \qquad
-\vec v_3 = (1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1).
-$$
+$$ \boxed{\; u(\vec v_1)u(\vec v_2) = u(\vec v_3), \qquad
+\vec v_3 = (1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1) \;} .$$
 
 **Proof.** Write $A=1+\vec v_1$ and $B=1+\vec v_2$. From $1-u(\vec v)=2\vec v(1+\vec v)^{-1}$ and $1+u(\vec v)=2(1+\vec v)^{-1}$, applied to each factor,
 

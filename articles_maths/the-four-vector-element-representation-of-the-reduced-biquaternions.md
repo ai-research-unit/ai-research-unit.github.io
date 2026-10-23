@@ -4,10 +4,6 @@
 
 The **four-vector element representation** reads the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ as a quadruple of real numbers, $\breve Q=(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$, and at the same time as a pair of complex numbers, $\breve Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$. The $j$-part carries one complex coordinate, hence two real ones, so the reading is a real quadruple and a complex pair of the same element. The algebra has no vector part; the name *four-vector* refers to the quadruple of real coordinates, not to a part of the algebra. This article writes the two, the multiplication in each, the four conjugations in coordinates, the remarkable subspaces as coordinate planes, and the four algebraic norms as formulas on the quadruple. The multiplication is **commutative**, which makes the row reading of the element equal to the column one, and it **has zero divisors**, which the unit criterion records.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the generic element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$. The idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The multiplication is the general plain product, the only associative and commutative one of the four; the four products and the forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\mathrm{ts}}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ are *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde.
-
-**Boundaries.** The basis and the two scalar systems are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*; the multiplication table in the abstract is *Reduced Biquaternion Space*; the involutions and their fixed spaces are *The Two Involutions and the Group of Involutions*; the subspaces read as coordinate planes are *Introduction to the Remarkable Subspaces of the Reduced Biquaternions*; the four algebraic norms are *The Four Products, Their Forms and Their Algebraic Norms* and *The Forms of the Algebra of the Reduced Biquaternions*. The other element representations are *Introduction to Reduced Biquaternion Element Representations*, *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*, *Reduced Biquaternion Other Algebraic Element Representations* and *Modulus–Unit Polar Decomposition of Reduced Biquaternions*. The biquaternion counterpart is *The Four-Vector Element Representation of Biquaternions*.
-
 ## The Coefficient Space
 
 **The element is a real quadruple on the real basis and a complex pair on the complex basis, the two readings carrying the same four real coordinates.**
@@ -51,7 +47,7 @@ so that $\breve Q_{1}\breve Q_{2}=\breve Q_{2}\breve Q_{1}$ in the representatio
 
 **Theorem (the real four-vector matrix).** For $\breve Q=q_{\blacktriangle}+iq'_{\blacktriangle}+q_{\blacktriangledown}j+iq'_{\blacktriangledown}j$, the left multiplication $\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ on the real basis $1,i,j,ij$ has the matrix
 $$
-L_{\breve Q}=\begin{pmatrix}
+\boxed{\;L_{\breve Q}=\begin{pmatrix}
 q_{\blacktriangle}&-q'_{\blacktriangle}&q_{\blacktriangledown}&-q'_{\blacktriangledown}\\
 q'_{\blacktriangle}&q_{\blacktriangle}&q'_{\blacktriangledown}&q_{\blacktriangledown}\\
 q_{\blacktriangledown}&-q'_{\blacktriangledown}&q_{\blacktriangle}&-q'_{\blacktriangle}\\
@@ -59,7 +55,7 @@ q'_{\blacktriangledown}&q_{\blacktriangledown}&q'_{\blacktriangle}&q_{\blacktria
 \end{pmatrix}
 =\begin{pmatrix}A_+&A_-\\ A_-&A_+\end{pmatrix},
 \qquad
-A_+=\begin{pmatrix}q_{\blacktriangle}&-q'_{\blacktriangle}\\ q'_{\blacktriangle}&q_{\blacktriangle}\end{pmatrix},\quad A_-=\begin{pmatrix}q_{\blacktriangledown}&-q'_{\blacktriangledown}\\ q'_{\blacktriangledown}&q_{\blacktriangledown}\end{pmatrix},
+A_+=\begin{pmatrix}q_{\blacktriangle}&-q'_{\blacktriangle}\\ q'_{\blacktriangle}&q_{\blacktriangle}\end{pmatrix},\quad A_-=\begin{pmatrix}q_{\blacktriangledown}&-q'_{\blacktriangledown}\\ q'_{\blacktriangledown}&q_{\blacktriangledown}\end{pmatrix}\;},
 $$
 where $A_+$ and $A_-$ are the real $2\times2$ matrices of the multiplication by the complex numbers $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$.
 
@@ -67,7 +63,7 @@ where $A_+$ and $A_-$ are the real $2\times2$ matrices of the multiplication by 
 
 **Corollary (the trace and the determinant).** The real matrix has trace $4q_{\blacktriangle}=2\operatorname{Re}(Q_{+}+Q_{-})$ and determinant
 $$
-\det L_{\breve Q}=\bigl|Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}\bigr|^{2}=\lvert \langle \breve Q\rangle_{\mathrm{ts}}\rvert^{2}=\lvert Q_{+}\rvert^{2}\lvert Q_{-}\rvert^{2},
+\boxed{\;\det L_{\breve Q}=\bigl|Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}\bigr|^{2}=\lvert \langle \breve Q\rangle_{\mathrm{ts}}\rvert^{2}=\lvert Q_{+}\rvert^{2}\lvert Q_{-}\rvert^{2}\;},
 $$
 so the element is a unit exactly when the real matrix of its multiplication is invertible, and the zero divisors are exactly the non-zero elements whose matrix is singular. The complex matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ has trace $2Q_{\blacktriangle}$ and determinant $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$.
 
@@ -158,7 +154,7 @@ $$
 $$
 that is $\lvert Q_{+}\rvert^{2}\neq0$ and $\lvert Q_{-}\rvert^{2}\neq0$; the two failure conditions are the two idempotent lines, $\lvert Q_{+}\rvert^{2}=0$ and $\lvert Q_{-}\rvert^{2}=0$, whose union is the zero-divisor set. The inverse in coordinates is
 $$
-\breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{\langle \breve Q\rangle_{\mathrm{ts}}}=Q_{+}^{-1}\Pi_++Q_{-}^{-1}\Pi_-,
+\boxed{\;\breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{\langle \breve Q\rangle_{\mathrm{ts}}}=Q_{+}^{-1}\Pi_++Q_{-}^{-1}\Pi_-\;},
 $$
 with $Q_{+}^{-1}$ and $Q_{-}^{-1}$ the complex inverses.
 

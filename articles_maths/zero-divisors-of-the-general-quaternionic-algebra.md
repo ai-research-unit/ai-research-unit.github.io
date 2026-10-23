@@ -23,20 +23,6 @@ the one product of the block whose annihilators are not exchanged by the conjuga
 
 **The results.** A nonzero biquaternion is a zero divisor of the general quaternionic product exactly when its algebraic norm vanishes, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+(\vec Q,\vec Q)=0$, so the zero divisors are the nonzero points of the **zero-divisor cone** $C=\{N=0\}$, a real cone of real dimension $6$ that is not a subspace and is stable under the product. The cone splits into the **pure** family, the plain nilpotents with $Q_t=0$ and $(\vec Q,\vec Q)=0$ forming an isotropic cone of real dimension $4$, and the **non-pure** family, the complex multiples $\tilde Q=2Q_t\tilde\Pi$ of the nontrivial plain idempotents, on which $\tilde Q\star\tilde Q=0$ while the plain square is the nonzero multiple $2Q_t\tilde Q$. The two annihilators of an element coincide, are $\{0\}$ off the cone and a complex plane on it, and the four general products select one and the same zero-divisor set. Each section below states its result first and then proves it.
 
-**Boundaries.** The zero divisors of the algebra, the two families, the criterion in the plain
-product and the structure of the cone are *Zero Divisors of the Biquaternion Algebra*; the plain
-nilpotents are *Nilpotents of the General Plain Algebra*, and the plain idempotents *Idempotents of
-the General Plain Algebra*. The fact that the four general products select one and the same
-zero-divisor set, with its proof, and the one-sided inverse equations, are **Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**; the article quotes that coincidence and does not reprove it. The algebraic norm and the
-one-sided equations of this product are *Norm and Invertibility in the General Quaternionic
-Algebra*; the nilpotents of the product are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*; and
-the form on the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic
-Algebra of Biquaternions*.
-
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
-with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product
-and $\star$ the general quaternionic bilinear product,
-
 $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2 ,
 $$
@@ -78,7 +64,7 @@ which are plain-product equations in the conjugated first factor.
 $\tilde Q\in\mathbb{B}$, $\tilde Q$ is a zero divisor of $\star$ if and only if
 
 $$
-\langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=0 .
+\boxed{\; \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=0 \;}.
 $$
 
 **Proof.** Suppose $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$. Then
@@ -225,7 +211,7 @@ displacement is the subject of *Square Roots of One and the Idempotents of the G
 algebraic norm,
 
 $$
-C=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}=\{\tilde Q:\tilde Q\star\tilde Q=0\} .
+\boxed{\; C=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}=\{\tilde Q:\tilde Q\star\tilde Q=0\} \;}.
 $$
 
 **Proposition (shape).** The set $C$ is a real cone of real dimension $6$ in the real
@@ -274,7 +260,7 @@ give four definitions of a zero divisor, hence four zero-divisor sets. For the b
 the four sets are one and the same set,
 
 $$
-\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\} ,
+\boxed{\; \{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\} \;},
 $$
 
 and this is a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*,

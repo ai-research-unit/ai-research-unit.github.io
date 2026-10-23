@@ -21,14 +21,14 @@ The choice is the insertion of the conjugation in one slot, in the other, in bot
 **Proof.** The conjugation in the second slot and the conjugation in the first slot are the same map ${}^{\natural}$, because the base field $\mathbb{R}$ has a single involution, the identity, so the coefficientwise bar is the identity and the only conjugation available is ${}^{\natural}$. Hence
 
 $$
-(\mathrm{id},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) , \qquad
-({}^{\natural},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) ,
+\boxed{\;(\mathrm{id},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) , \qquad
+({}^{\natural},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural})\;},
 $$
 
 that is, the quaternionic product and the plain product with both arguments conjugated. The four pairings therefore carry the two products
 
 $$
-\tilde q_1\tilde q_2\quad(\text{general plain}) , \qquad \tilde q_1^{\natural}\tilde q_2\quad(\text{general quaternionic}) .
+\boxed{\;\tilde q_1\tilde q_2\quad(\text{general plain}) , \qquad \tilde q_1^{\natural}\tilde q_2\quad(\text{general quaternionic})\;}.
 $$
 
 **Table (the four pairings, the two products).**
@@ -49,8 +49,8 @@ The count is two because the algebra has a single non-trivial conjugation and th
 Each general product splits into a **symmetric part** and an **antisymmetric part** under the exchange of its two slots. Over $\mathbb{R}$ the base ring has no nontrivial involution, the two slots are both linear, and the exchange is the bare interchange of the two arguments, so the split is
 
 $$
-\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2 ,\qquad
-\tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2 ,
+\boxed{\;\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2 ,\qquad
+\tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2\;},
 $$
 
 with the four halves

@@ -14,10 +14,6 @@ An idempotent corresponds to a projector under its multiplication, and in $\math
 
 The last two items are developed in the companion articles *Split-Quaternion Zero Divisors* and *Split-Quaternion Ideals and Peirce Decomposition*; here they enter only as forward pointers.
 
-**Placement.** The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\tilde{q}^{\natural}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.
-
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, \vec e_x, \vec e_y, \vec e_z$, the relations $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$. A general element is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, its scalar part is $q_t = \operatorname{Sc}(\tilde q)$ and its vector part is $\vec v = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written
-
 $$
 \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 ;
 $$
@@ -77,7 +73,7 @@ so the four general products $e_\mu \tilde\pi_1$ reduce to $\tilde\pi_1$ and $\v
 **Theorem.** Every idempotent of $\mathbb{H}_{\mathrm{s}}$ is either trivial ($0$ or $1$) or of the form
 
 $$
-\tilde\pi = \tfrac{1}{2}(1 + \eta),
+\boxed{\;\tilde\pi = \tfrac{1}{2}(1 + \eta)\;},
 $$
 
 where $\eta \in V$ is a root of $+1$, i.e. $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$. There are no other idempotents in $\mathbb{H}_{\mathrm{s}}$.
@@ -111,7 +107,7 @@ The roots of $+1$ in $V$ are the vectors of the **spacelike unit hyperboloid** $
 **Theorem.** The map
 
 $$
-\eta \longmapsto \tilde\pi(\eta), \qquad \tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta),
+\boxed{\;\eta \longmapsto \tilde\pi(\eta), \qquad \tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta)\;},
 $$
 
 is a **bijection** from the set $\{\eta \in V : \eta^2 = 1\}$ of roots of $+1$ in the vector subspace onto the set of non-scalar idempotents of $\mathbb{H}_{\mathrm{s}}$.
@@ -151,9 +147,9 @@ and equally $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi \oplus 
 For the standard pair this reads
 
 $$
-\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2, \qquad
+\boxed{\;\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2, \qquad
 \mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\}, \qquad
-\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\},
+\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\}\;},
 $$
 
 each summand of real dimension $2$. The decomposition is a decomposition of the underlying module. It is **not** an algebra decomposition: since $\tilde\pi_1$ is not central, the off-diagonal product $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ does not vanish. Indeed
@@ -181,7 +177,7 @@ $$
 and for a general non-scalar idempotent $\tilde\pi = \tfrac{1}{2}(1+\eta)$ with $\eta \in V$ and $\eta^2 = 1$,
 
 $$
-\tilde\pi \bar{\tilde\pi} = \tfrac{1}{4}(1 + \eta)(1 - \eta) = \tfrac{1}{4}(1 - \eta^2) = 0,
+\boxed{\;\tilde\pi \bar{\tilde\pi} = \tfrac{1}{4}(1 + \eta)(1 - \eta) = \tfrac{1}{4}(1 - \eta^2) = 0\;},
 $$
 
 so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde q\tilde{q}^{\natural} = 0\}$. The idempotents are the non-nilpotent points of that set: $\tilde\pi^2 = \tilde\pi \neq 0$, whereas the nilpotents of the algebra are exactly the nonzero vectors of $V$ whose square vanishes, treated in *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.

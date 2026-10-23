@@ -18,8 +18,6 @@ Three distinct questions must be separated, because they have different answers 
 
 The article answers all three, and the answers are consistent: the algebra's intrinsic compact gauge algebra is $\mathrm{U}(2)$, of real dimension four; $SU(3)$ needs an eight-dimensional compact algebra and cannot be contained in it; and the smallest carrier that contains $SU(3)$ is $M_2(\mathbb B)$, whose intrinsic group is $\mathrm{U}(4)$.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$, central $i$, and $\mathbb B\cong M_2(\mathbb C)$ as a complex algebra. The compact (anti-Hermitian) sector is $\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and the informational sector is $\mathbb M_+=\mathrm{span}_{\mathbb R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$. The commutator bracket is $[x,y]=xy-yx$, the generators of the compact factor are $T_a=\tfrac12\vec e_a$ with $[T_a,T_b]=\varepsilon_{abc}T_c$, and the abelian generator is $T_0=\tfrac12 ie_t$. The matrix trace on the defining module is distinguished from the informational trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
-
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian gauge structure.
 - The mathematics articles *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Other Algebraic Element Representations*, for the representation theory of the algebra and for its spinor and Clifford realizations.
 - The mathematics article *The Biquaternion Unit Group as a Topological Group*, for the topological obstructions.
@@ -57,11 +55,11 @@ $$
 of real dimensions $4$ and $4$, with $x^\flat=-x^{*}$ and $x^{*}=\bar x^{\,*}$; quaternion conjugation alone ($\vec e_k\mapsto-\vec e_k$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, unitary direction: exponentiating it gives the unitary group of the defining module,
 
 $$
-\exp\bigl(\mathbb M_-\bigr)=\mathrm{U}(2),
+\boxed{\;\exp\bigl(\mathbb M_-\bigr)=\mathrm{U}(2),
 \qquad
 \mathbb M_-\;=\;\mathrm{U}(2)\;=\;\mathrm{SU}(2)\oplus\mathrm{U}(1) ,
 \qquad
-\dim_{\mathbb R}\mathrm{U}(2)=4 .
+\dim_{\mathbb R}\mathrm{U}(2)=4\;}.
 $$
 
 This is the algebra's intrinsic gauge structure, and it is verified by the dimension count and the commutators: the three $\vec e_a$ close on $\mathrm{SU}(2)$ with the structure constants $\varepsilon_{abc}$, and $ie_t$ is central and spans the $\mathrm{U}(1)$. The gauge group of fields valued in $\mathbb B$ is therefore
@@ -88,7 +86,7 @@ The obstruction to $SU(3)$ has a dimension form, a module form, and an algebraic
 **Dimension.** The compact gauge algebra of the algebra is $\mathrm{U}(2)$, of real dimension $4$. The Lie algebra $\mathrm{SU}(3)$ has real dimension $8$. A subalgebra cannot be larger than its parent,
 
 $$
-\dim_{\mathbb R}\mathrm{SU}(3)=8 \;>\; 4=\dim_{\mathbb R}\mathrm{U}(2) ,
+\boxed{\;\dim_{\mathbb R}\mathrm{SU}(3)=8 \;>\; 4=\dim_{\mathbb R}\mathrm{U}(2)\;},
 $$
 
 so no eight-dimensional compact algebra is contained in the four-dimensional compact sector of $\mathbb B$. This is the crudest form of the ceiling and it is already decisive. The full algebra $\mathbb B$ has real dimension $8$, equal to the dimension of $\mathrm{SU}(3)$; but its eight dimensions are the six dimensions of $\mathrm{SL}(2,\mathbb C)$ — three compact and three non-compact — together with the two-dimensional centre, of which one direction is compact and one is not, so the compact directions among them number only four. The equality of dimensions is a numerical coincidence and not an embedding: $\mathrm{SL}(2,\mathbb C)$ is not compact and is not $\mathrm{SU}(3)$, and no change of basis inside $\mathbb B$ turns the non-compact directions into compact ones, because compactness of the generators is a property of the conjugation that defines the norm and is preserved by it. The same count can be read on the group: $\mathrm{U}(2)$ has dimension four, $SU(3)$ has dimension eight.
@@ -96,7 +94,7 @@ so no eight-dimensional compact algebra is contained in the four-dimensional com
 **Module.** A field of the framework is valued in a module of $\mathbb B$, and the simple module is the defining module $S\cong\mathbb C^2$. Every $\mathbb B$-module is a direct sum of copies of $S$, so its complex dimension is **even**:
 
 $$
-V\;\text{a }\mathbb B\text{-module}\quad\Longrightarrow\quad \dim_{\mathbb C}V=2r\in2\mathbb Z .
+\boxed{\;V\;\text{a }\mathbb B\text{-module}\quad\Longrightarrow\quad \dim_{\mathbb C}V=2r\in2\mathbb Z\;}.
 $$
 
 The colour degree of freedom of quantum chromodynamics is an irreducible three-dimensional complex representation of $SU(3)$, the triplet $\mathbf 3$. A three-dimensional complex space is not a $\mathbb B$-module, because $3$ is odd; and it cannot be embedded in one either, because a submodule of a $\mathbb B$-module is again a $\mathbb B$-module and therefore has even complex dimension, so no three-dimensional subspace of a $\mathbb B$-module is closed under the algebra. Enlarging the algebra does not remove the parity: $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ has simple module of dimension $2n$, still even. The colour triplet therefore has no home as a module of the biquaternion algebra: the algebra's modules come in even complex dimension, and colour is irreducibly odd. Combined with the dimension count, this is the module-level statement of the ceiling.
@@ -198,9 +196,9 @@ Two consequences follow, and both are genuine results for the framework's partic
 The biquaternion algebra's intrinsic compact gauge structure is the anti-Hermitian sector
 
 $$
-\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
+\boxed{\;\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
 \qquad
-\dim_{\mathbb R}=4 ,
+\dim_{\mathbb R}=4\;},
 $$
 
 with the non-abelian part generated by the imaginary quaternions, $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, and the abelian part by the central $ie_t$. The unit group of the defining module, the compact part of the automorphism group, the diagonal norm-preserving rotors and the maximal torus all give the same group $\mathrm{U}(2)$, and the derived algebra is $\mathrm{SL}(2,\mathbb C)$ with compact form $\mathrm{SU}(2)$.

@@ -17,8 +17,6 @@ $$
 
 with $D$ the self-adjoint Cauchy–Riemann operator, and reads from it the consequences for the twistor equation $\mathcal{T}\sigma=0$: the equivalent form $\nabla_X\sigma=-\frac1nc(X)D\sigma$ of the equation and the scalar identity satisfied by the twistor spinors.
 
-**The boundaries.** The operator, its projection $\pi$ and the contraction $c$ are *The Twistor Operator*; the Cauchy–Riemann operator, its self-adjointness $D^*=D$ and the Lichnerowicz formula are *The Spinor Operator*; the adjoint connection and its calculus are *The Codifferential on a Spinor Bundle*; the Clifford multiplication and its adjoint are *The Clifford Multiplication Operator* and *The Adjoint of the Clifford Multiplication*. The involutions, the conjugate symmetry and the Hermitian pairing of the kernel are *Involutions of the Twistor Operator*, the preceding entry of the group. The spectral theory of $\mathcal{T}^*\mathcal{T}$ is Part III's. The body is a Riemannian spin manifold with the fibre form $h$, $c(v)^*=-c(v)$ and the twistor operator of *The Twistor Operator*.
-
 ## The Formal Adjoint
 
 **Definition.** The **formal adjoint** $\mathcal{T}^*$ of the twistor operator is the differential operator $\Gamma(T^*M\otimes\mathcal{S})\to\Gamma(\mathcal{S})$ with

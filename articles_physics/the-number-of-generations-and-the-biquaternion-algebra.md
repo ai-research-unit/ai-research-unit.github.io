@@ -12,8 +12,6 @@ This article asks what the biquaternion framework says about the number. The ans
 
 The article is organised as follows. A section recalls how the Standard Model counts generations. A section shows how the framework carries a generation index. A section exhibits the invariants that are $N_g$-independent and concludes that the algebra does not fix the number. A section collects the constraints that do touch $N_g$. A section disposes of the "three imaginary units" identification. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and central scalar imaginary $i$, $i^2=-1$; as an algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and $\dim_{\mathbb{R}}\mathbb{B}=8$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), each of real dimension four; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The irrep of $\mathbb{B}$ is two-dimensional complex, denoted $S=\mathbb{C}^2$; the Dirac module is $\Delta=S\oplus\bar{S}$ with $S=(\tfrac12,0)$ and $\bar{S}=(0,\tfrac12)$, and $\dim_{\mathbb{C}}\Delta=4$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. A **generation index** $a=1,\dots,N_g$ is carried by a multiplicity space $\mathcal{F}=\mathbb{C}^{N_g}$, and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$. The flavour matrices of the companion article on the CKM matrix are operators on $\mathcal{F}$. Standard-model notation — the $Z$ width, the gauge quantum numbers, the CKM parameters — is used where standard physics is named, and is not framework structure.
-
 The framework results used here are those of the companion articles:
 
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral module and the mass selection rule.
@@ -49,9 +47,9 @@ The pattern is that the theory is consistent with a range of $N_g$ and experimen
 **The multiplicity factor.** The framework can accommodate any number of generations without changing its algebra. The $N_g$-generation fermion space is
 
 $$
-\mathcal{V} = \Delta\otimes\mathcal{F} = \Delta\otimes\mathbb{C}^{N_g},
+\boxed{\;\mathcal{V} = \Delta\otimes\mathcal{F} = \Delta\otimes\mathbb{C}^{N_g},
 \qquad
-\dim_{\mathbb{C}}\mathcal{V} = 4N_g ,
+\dim_{\mathbb{C}}\mathcal{V} = 4N_g\;},
 $$
 
 with the algebra acting as
@@ -96,15 +94,13 @@ Every entry is fixed by the algebra alone, and none contains $N_g$. A framework 
 
 **The full algebra and its centre.** With $N_g$ generations the algebra acting on $\mathcal{V}=\Delta\otimes\mathcal{F}$ is
 
-$$
-\mathbb{B}\otimes M_{N_g}(\mathbb{C}) \;\cong\; M_2(\mathbb{C})\otimes M_{N_g}(\mathbb{C})
-\;\cong\; M_{2N_g}(\mathbb{C}),
-$$
+$$\boxed{\;\mathbb{B}\otimes M_{N_g}(\mathbb{C}) \;\cong\; M_2(\mathbb{C})\otimes M_{N_g}(\mathbb{C})
+\;\cong\; M_{2N_g}(\mathbb{C})\;},$$
 
 and its centre is the tensor product of the centres,
 
 $$
-Z\big(\mathbb{B}\otimes M_{N_g}(\mathbb{C})\big) = \mathbb{C}_{\mathbb{B}}\otimes I_{N_g} \;\cong\; \mathbb{C} .
+\boxed{\;Z\big(\mathbb{B}\otimes M_{N_g}(\mathbb{C})\big) = \mathbb{C}_{\mathbb{B}}\otimes I_{N_g} \;\cong\; \mathbb{C}\;}.
 $$
 
 A single copy of the centre therefore survives: the algebra's central phase acts on every generation in the same way, and there is no central phase that distinguishes one generation from another. A generation-dependent phase would have to live in $I_\Delta\otimes M_{N_g}(\mathbb{C})$, i.e. in a broken flavour symmetry, not in the centre. This is the algebraic statement of the neutrality of the framework's central structure with respect to generations, and it is the reason the companion article on the CKM matrix must put the CP-violating phase in the flavour factor rather than in the centre.
@@ -160,9 +156,9 @@ The anomaly rows are zero for every $N_g$, and no row contains a condition that 
 **CP violation requires at least three.** Although the anomaly conditions are generation-blind, the **existence of a CP-violating phase** is not. The quark mixing matrix is $N_g\times N_g$ and unitary, with
 
 $$
-\frac{N_g(N_g-1)}{2}\ \text{angles},\qquad
+\boxed{\;\frac{N_g(N_g-1)}{2}\ \text{angles},\qquad
 \frac{(N_g-1)(N_g-2)}{2}\ \text{phases},\qquad
-\text{total } (N_g-1)^2\ \text{parameters},
+\text{total } (N_g-1)^2\ \text{parameters}\;},
 $$
 
 and the number of phases vanishes for $N_g=1$ and $N_g=2$ and is one for $N_g=3$. CP violation in the quark sector therefore requires $N_g\ge3$, and this was one of the original motivations of the Kobayashi–Maskawa paper. The framework inherits the counting and states it as a consistency condition: a CP-violating quark sector needs at least three generations.

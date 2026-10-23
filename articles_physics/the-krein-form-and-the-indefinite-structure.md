@@ -5,8 +5,8 @@
 The fourth form of the biquaternion algebra is Hermitian and indefinite. On two elements it is
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu},
-\qquad \varepsilon=(1,-1,-1,-1),
+\boxed{\;\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu},
+\qquad \varepsilon=(1,-1,-1,-1)\;},
 $$
 
 and at two equal arguments it is real. It has signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, it fixes no overall sign, and it cannot normalise a state. Those are not defects of the form; they are the structure it carries. Its level sets are hyperboloids rather than spheres, its positive lines form a complex hyperbolic space, and its isometry group is $\mathrm{U}(1,3)$, not the Lorentz group.
@@ -57,9 +57,9 @@ The indefiniteness is what makes the form unable to normalise. A definite Hermit
 The indefinite form is a definite form in disguise. Let $J={}^{\natural}$ be the natural conjugation, fixing the central $i$ and negating the three vector units. Then
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*},
+\boxed{\;\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*},
 \qquad
-\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu},
+\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}\;},
 $$
 
 and $J^2=\mathrm{id}$. The operator $J$ is the **fundamental symmetry** of the form: it is a real linear involution with eigenvalue $+1$ on the centre and $-1$ on the vector space, and it is an isometry of the Krein form.
@@ -203,8 +203,8 @@ The operator cone itself is larger than the set of contractions. It is closed an
 The **Krein cone** is the set of non-negative square,
 
 $$
-P_K=\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}\ge0\}
-=\{\tilde Q:\lVert c\rVert_E\ge\lVert v\rVert_E\}.
+\boxed{\;P_K=\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}\ge0\}
+=\{\tilde Q:\lVert c\rVert_E\ge\lVert v\rVert_E\}\;}.
 $$
 
 It is closed, star-shaped and contractible, but it is neither convex nor pointed: it has two opposite nappes, and the segment between a point and its negative leaves it. Its interior is the positive region, its boundary is the Krein null set, and it contains the whole positive axis and no negative element. On the Hermitian subspace its intersection is the full light cone of the interval form, whose future nappe is the Hermitian cone $P$ of the dagger; on a Minkowski slice the intersection is the full light cone, with no nappe selected by the algebra.

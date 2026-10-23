@@ -97,9 +97,10 @@ where $\vec N_+$ is the self-dual half and $\vec N_- = \vec N^*$ the anti-self-d
 
 A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega t')$, so $\partial/\partial t' \to -i\omega$ and the equation $md\vec v/dt' = -e\vec E$ gives that velocity, radiates as an oscillating dipole, and the time-averaged power per unit solid angle is the Larmor result. Dividing by the incident intensity gives the Thomson differential cross-section
 $$
+\boxed{\;
 \frac{d\sigma_T}{d\Omega} = r_e^2\,\bigl|\varepsilon^{\mathrm{fop}}_{\mathrm{out}}\cdot\varepsilon^{\mathrm{fop}}\bigr|^2 ,
 \qquad
-r_e = \frac{e^2}{4\pi\epsilon_0 mc^2} ,
+r_e = \frac{e^2}{4\pi\epsilon_0 mc^2}\;},
 $$
 where $\varepsilon^{\mathrm{fop}}$ and $\varepsilon^{\mathrm{fop}}_{\mathrm{out}}$ are the incident and outgoing **linear** polarization unit vectors. In the biquaternion form the geometric factor is a pairing in the material sector,
 $$
@@ -141,7 +142,8 @@ $$
 $$
 whose integral is the Thomson cross-section
 $$
-\sigma_T = \frac{8\pi}{3}r_e^2 = 0.66524587\ \text{barn} .
+\boxed{\;
+\sigma_T = \frac{8\pi}{3}r_e^2 = 0.66524587\ \text{barn}\;}.
 $$
 Both statements were checked numerically: the angular integral of $r_e^2(1+\cos^2\theta)/2$ over the sphere was computed by a $2\times10^5$-point quadrature and agreed with $8\pi r_e^2/3$ in the eleventh decimal, and the value $8\pi r_e^2/3$ with the CODATA classical electron radius is $0.66524587$ barn against the tabulated $0.66524587$ barn. The cross-section is independent of frequency, which is the signature of the limit: the only length in the problem is $r_e$, and no photon energy enters.
 
@@ -177,7 +179,8 @@ The frequency independence of the Thomson cross-section is a symmetry statement.
 
 When the photon energy is comparable with the electron rest energy the electron recoils and the scattered frequency is lower:
 $$
-\omega_{\mathrm{out}} = \frac{\omega}{1 + \dfrac{\hbar\omega}{mc^2}\,(1-\cos\theta)} ,
+\boxed{\;
+\omega_{\mathrm{out}} = \frac{\omega}{1 + \dfrac{\hbar\omega}{mc^2}\,(1-\cos\theta)}\;},
 $$
 the **Compton shift**, where $\theta$ is the scattering angle. It follows from the conservation of the four-momentum, $\tilde P_\gamma + \tilde P_e = \tilde P_{\gamma,\mathrm{out}} + \tilde P_{e,\mathrm{out}}$, together with the on-shell conditions
 $$
@@ -199,11 +202,12 @@ $$
 $$
 and its integral over the sphere is the total Klein–Nishina cross-section
 $$
+\boxed{\;
 \sigma_{\mathrm{KN}}(x) = 2\pi r_e^2\left[
 \frac{1+x}{x^3}\left(\frac{2x(1+x)}{1+2x} - \ln(1+2x)\right)
 + \frac{\ln(1+2x)}{2x} - \frac{1+3x}{(1+2x)^2}
 \right] ,
-\qquad x = \frac{\hbar\omega}{mc^2} .
+\qquad x = \frac{\hbar\omega}{mc^2}\;}.
 $$
 The differential formula was integrated over the sphere by a $4\times10^5$-point quadrature at five energies ($x = 0.01, 0.1, 0.5, 1, 5$), and the result agreed with the analytic total to a relative error of order $10^{-11}$ at every energy; the analytic total itself is the standard closed form and was used only as the comparison. The **Thomson limit** was checked separately: at $x = 10^{-4}$ the total is $8.3760\,r_e^2$ against $8\pi r_e^2/3 = 8.3776\,r_e^2$, so the Klein–Nishina cross-section tends to the Thomson value as the recoil vanishes, as it must. The energy scale that breaks the conformal invariance of the Thomson limit is the same $x$: the cross-section depends on the single dimensionless ratio $\hbar\omega/mc^2$, and only in its vanishing does the scale-free classical result return.
 

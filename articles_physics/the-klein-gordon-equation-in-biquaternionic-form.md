@@ -23,8 +23,9 @@ The conventions are those of the read list. The biquaternion algebra is $\mathbb
 Write the Klein–Gordon equation in biquaternion form as
 
 $$
+\boxed{\;
 \left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi} = 0,
-\qquad \tilde{\Phi} = \Phi_0 e_t + \Phi_1 \vec e_x + \Phi_2 \vec e_y + \Phi_3 \vec e_z .
+\qquad \tilde{\Phi} = \Phi_0 e_t + \Phi_1 \vec e_x + \Phi_2 \vec e_y + \Phi_3 \vec e_z\;}.
 $$
 
 The operator $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ is a **central scalar** differential operator with real coefficients. Because $\Box$ is central and scalar, it acts on a biquaternion-valued field component by component:
@@ -66,7 +67,6 @@ $$
 $$
 
 which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde Q_1=(m^2c^2/\hbar^2)\tilde Q_1$, whose scalar restriction is the equation above.
-
 
 ## Second Order in Time and the Conjugate Pair
 
@@ -129,10 +129,11 @@ $$
 with $B$ and $G$ biquaternion-valued and $\vec F$ a **constant complex vector** — a structural coefficient carrying no scalar part [Alexeyeva 2014]. The two mutual operators compose into one second-order operator,
 
 $$
+\boxed{\;
 \left(\nabla^- - \vec F\right)\circ\left(\nabla^+ + \vec F\right)
 = \Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla),
 \qquad
-\Box_A = \partial^2_\tau - \Delta ,
+\Box_A = \partial^2_\tau - \Delta\;},
 $$
 
 which is the Klein–Gordon–Fock operator $\Box_A + m^2$ with $m^2 = (\vec F,\vec F)$ — the coefficient's own norm supplies the mass — **plus** the first-order directional term $2i(\vec F,\nabla)$. That term is of exactly the kind that made the scalar factorisation impossible above; here it is not an obstruction but the product structure itself, and the operator is a genuine composition of two first-order operators.
@@ -188,7 +189,8 @@ $$
 that is,
 
 $$
-\omega^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2}.
+\boxed{\;
+\omega^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2}\;}.
 $$
 
 This is the standard relativistic dispersion relation $E^2 = \vec p^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$, and in biquaternion language it is exactly the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ for the four-momentum. The two roots
@@ -246,10 +248,11 @@ $$
 so $\tilde{\Phi}$ solves the Klein–Gordon equation if and only if $\tilde{\Phi}_+$ and $\tilde{\Phi}_-$ each solve it separately. There is no equation coupling the two sectors, and the decomposition is not a decomposition into interacting parts. Worse for the hoped-for interpretation, the two sectors are not independent: because $i$ is central and commutes with $\Box$, multiplication by $i$ maps Klein–Gordon solutions in $\mathbb{M}_+$ to Klein–Gordon solutions in $\mathbb{M}_-$,
 
 $$
+\boxed{\;
 \left(\Box-\mu^2\right)\tilde{\Phi}_+ = 0
 \qquad\Longrightarrow\qquad
 \left(\Box-\mu^2\right)(i\tilde{\Phi}_+) = i\left(\Box-\mu^2\right)\tilde{\Phi}_+ = 0,
-\qquad i\tilde{\Phi}_+\in\mathbb{M}_- .
+\qquad i\tilde{\Phi}_+\in\mathbb{M}_-\;}.
 $$
 
 So every $\mathbb{M}_-$-valued solution is the $i$-image of an $\mathbb{M}_+$-valued one, and the two sectors host two copies of the same real solution space, exchanged by multiplication by $i$. The sector split of a Klein–Gordon field is therefore the real/imaginary-part decomposition of a complex field — the statement that a complex scalar splits into a part in the real scalar direction and a part in the imaginary scalar direction, with $i$ the map between them — and not the particle–antiparticle pairing of the previous section. The particle–antiparticle pairing is complex conjugation, which we have seen preserves both sectors, so it acts *within* a sector rather than across them.

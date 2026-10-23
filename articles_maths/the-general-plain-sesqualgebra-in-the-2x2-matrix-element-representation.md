@@ -6,8 +6,6 @@ The reading group *Topology on the Introduction to the General Plain Sesqualgebr
 
 The Hermitian conjugation is the characteristic operation of the group, and in the model it is the **conjugate transpose**: $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The sesquilinear product is therefore the matrix product with the conjugate transpose of the second factor, $\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)^{\dagger}$, and the general plain sesquilinear form is the **Hilbert–Schmidt pairing** of the matrices. The form is positive definite, so its matrix reading is the one of the five that is definite rather than indefinite, and the Frobenius norm is its carrier.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{Q}_1\star\tilde{Q}_2=\tilde{Q}_1\tilde{Q}_2^{*}$.
-
 ## The Representation
 
 **Definition.** The **matrix realization** is the isomorphism written $\mathsf{M}_2$. It converts a biquaternion into a $2 \times 2$ complex matrix,
@@ -31,7 +29,7 @@ The realization is a $*$-isomorphism: it is multiplicative and it carries the He
 **Theorem (the product is the conjugate-transposed matrix product).** For all biquaternions,
 
 $$
-\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\,\mathsf{M}_2(\tilde{Q}_2)^{\dagger} ,
+\boxed{\; \mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\,\mathsf{M}_2(\tilde{Q}_2)^{\dagger} \;},
 $$
 
 the ordinary matrix product with the conjugate transpose in the second slot.
@@ -109,7 +107,7 @@ The ordinary matrix algebra, with no transpose, is the bilinear reading of the a
 **Theorem (the Hilbert–Schmidt pairing).** For all biquaternions,
 
 $$
-\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2)\bigr),
+\boxed{\; \langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2)\bigr) \;},
 $$
 
 the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{Q})^{\dagger}=\mathsf{M}_2(\tilde{Q}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1^{*}\tilde{Q}_2))=\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ by the trace identity $\mathrm{Sc}(\tilde{Q}_2\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_2)\mathsf{M}_2(\tilde{S}))$.
@@ -149,7 +147,7 @@ so $\mathsf{M}_2$, regarded as a real-linear map $\mathbb{B}_{\mathbb{R}}\to M_2
 **Proposition (the unit groups in matrix form).** Under $\mathsf{M}_2$,
 
 $$
-\mathbb{B}^{\times}\cong GL_2(\mathbb{C}),\qquad \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1\}\cong SL_2(\mathbb{C}),
+\boxed{\; \mathbb{B}^{\times}\cong GL_2(\mathbb{C}),\qquad \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1\}\cong SL_2(\mathbb{C}) \;},
 $$
 
 and their unitary slices are $\mathrm{U}(2)$ and $SU(2)$, with $SU(2)\cong\mathrm{Spin}(3)$ and $SU(2)/\{\pm I\}\cong SO(3)$. The unit-norm group is the group that acts on the Hermitian subspace by $*$-congruence, $\tilde{Q}\mapsto\tilde{Q}_4\tilde{Q}\tilde{Q}_4^{*}$, which in the model is $X\mapsto AXA^{\dagger}$ on the Hermitian matrices. Three representatives in the model are

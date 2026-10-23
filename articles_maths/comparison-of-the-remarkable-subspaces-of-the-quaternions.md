@@ -7,16 +7,12 @@ This is the reference article of the remarkable-subspace group of the chapter. T
 ## The Two Subspaces
 
 The two remarkable subspaces are
-$$
-\mathbb{R}_{\mathbb{H}}=\{\tilde q:\tilde q^{\natural}=\tilde q\}=\mathbb{R}e_t, \qquad
-\mathrm{Vect}(\mathbb{H})=\{\tilde q:\tilde q^{\natural}=-\tilde q\}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z.
-$$
+$$ \boxed{\; \mathbb{R}_{\mathbb{H}}=\{\tilde q:\tilde q^{\natural}=\tilde q\}=\mathbb{R}e_t, \qquad
+\mathrm{Vect}(\mathbb{H})=\{\tilde q:\tilde q^{\natural}=-\tilde q\}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z \;} .$$
 
 **Proposition.** They are supplementary and their intersection is the origin:
-$$
-\mathbb{R}_{\mathbb{H}}\cap\mathrm{Vect}(\mathbb{H})=0, \qquad
-\mathbb{R}_{\mathbb{H}}+\mathrm{Vect}(\mathbb{H})=\mathbb{H}, \qquad 1+3=4.
-$$
+$$ \boxed{\; \mathbb{R}_{\mathbb{H}}\cap\mathrm{Vect}(\mathbb{H})=0, \qquad
+\mathbb{R}_{\mathbb{H}}+\mathrm{Vect}(\mathbb{H})=\mathbb{H}, \qquad 1+3=4 \;} .$$
 The first is a subalgebra, indeed the centre, and the second is not closed under the product.
 
 **Proof.** A quaternion fixed by ${}^{\natural}$ has $\vec q=0$ and a quaternion anti-fixed has $q_t=0$, so the intersection is $\tilde q=0$; every $\tilde q=q_t+\vec q$ is the sum of one of each. The subalgebra and centre statements are *Introduction to the Remarkable Subspaces of the Quaternions*; the failure of closure is the product law $\vec q_1\vec q_2=-\langle\vec q_1,\vec q_2\rangle+\vec q_1\times\vec q_2$ recalled there.
@@ -51,9 +47,7 @@ The reflection $\rho_\nu=-\iota_\nu$ has the same sign pattern with the labels e
 ## The Two-Subspace Lattice
 
 The remarkable subspaces of an algebra over $\mathbb{R}$ under inclusion form its **lattice of fixed spaces**, the intersections acting as meets and the sums as joins. For $\mathbb{H}$ the lattice is the diamond
-$$
-0\subsetneq\mathbb{R}_{\mathbb{H}}\subsetneq\mathbb{H}, \qquad 0\subsetneq\mathrm{Vect}(\mathbb{H})\subsetneq\mathbb{H},
-$$
+$$ \boxed{\; 0\subsetneq\mathbb{R}_{\mathbb{H}}\subsetneq\mathbb{H}, \qquad 0\subsetneq\mathrm{Vect}(\mathbb{H})\subsetneq\mathbb{H} \;} ,$$
 the two chains meeting only at their ends: the two proper subspaces are incomparable, they meet in $0$ and they join to $\mathbb{H}$. The lattice has exactly the four elements $0,\mathbb{R}_{\mathbb{H}},\mathrm{Vect}(\mathbb{H}),\mathbb{H}$, with no intermediate subspace beyond those.
 
 ## Why the List of the Two Is the Whole List
