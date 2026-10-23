@@ -102,7 +102,7 @@ $$</p>
 <h3 id="the-adjoint-of-the-operator">The Adjoint of the Operator</h3>
 <p><strong>Theorem (the adjoint of the conjugate left multiplication).</strong> For every $a\in A$ the operator $L_{a}$ has the adjoint</p>
 <p>$$
-L_{a}^{\dagger}=S_{1,a},\qquad L_{a}^{\dagger}(y)=y^{*}a .
+\boxed{\;L_{a}^{\dagger}=S_{1,a},\qquad L_{a}^{\dagger}(y)=y^{*}a\;} .
 $$</p>
 <p>The adjoint is $\varsigma$-semilinear, it is a sandwich and not a one-sided multiplication, and it is a left multiplication $L_{a}$ again exactly when $a$ is central.</p>
 <p><strong>Proof.</strong> The defining identity is $\varphi(L_{a}x,y)=\varsigma\bigl(\varphi(x,L_{a}^{\dagger}y)\bigr)$, and for the candidate $L_{a}^{\dagger}(y)=y^{*}a$ the right-hand side is $\varsigma\bigl(\tau(x(y^{*}a)^{*})\bigr)=\varsigma\bigl(\tau(xa^{*}y)\bigr)=\tau\bigl((xa^{*}y)^{*}\bigr)=\tau(y^{*}ax^{*})=\tau(ax^{*}y^{*})$, using the anti-multiplicativity of $*$ and the compatibility of $\tau$; the cyclicity of $\tau$ turns the last expression into $\tau(ax^{*}y^{*})=\varphi(L_{a}x,y)$, which is the identity. The operator is $\varsigma$-semilinear by its definition, and the sandwich $S_{1,a}$ is a left multiplication $L_{c}$ only if $y^{*}a=cy^{*}$ for all $y$, that is only if $a=c$ is central.</p>
@@ -128,7 +128,7 @@ $$</p>
 <h3 id="the-square-of-the-operator">The Square of the Operator</h3>
 <p><strong>Theorem (the two squares).</strong> For every $a\in A$,</p>
 <p>$$
-L_{a}^{\dagger}L_{a}=R_{a^{*}a}, \qquad L_{a}L_{a}^{\dagger}=T_{aa^{*},1} .
+\boxed{\;L_{a}^{\dagger}L_{a}=R_{a^{*}a}, \qquad L_{a}L_{a}^{\dagger}=T_{aa^{*},1}\;} .
 $$</p>
 <p>Both squares are self-adjoint, and both are the identity when $a$ is unitary.</p>
 <p><strong>Proof.</strong> The two identities are the theorem above at $b=a$. For the self-adjointness, $R_{c}^{\dagger}=R_{c^{*}}$, so $R_{a^{*}a}^{\dagger}=R_{(a^{*}a)^{*}}=R_{a^{*}a}$; and $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$, so $T_{aa^{*},1}^{\dagger}=T_{(aa^{*})^{*},1}=T_{aa^{*},1}$, since $aa^{*}$ is Hermitian. If $aa^{*}=a^{*}a=1$ then $R_{a^{*}a}=R_{1}=\mathrm{id}$ and $T_{aa^{*},1}=T_{1,1}=\mathrm{id}$.</p>
@@ -139,7 +139,7 @@ $$</p>
 <h3 id="the-criterion">The Criterion</h3>
 <p><strong>Theorem (which left multiplications are self-adjoint).</strong> For $a\in A$ the operator $L_{a}$ is self-adjoint if and only if $a$ is central,</p>
 <p>$$
-L_{a}^{\dagger}=L_{a}\quad\Longleftrightarrow\quad a\in Z(A) .
+\boxed{\;L_{a}^{\dagger}=L_{a}\quad\Longleftrightarrow\quad a\in Z(A)\;} .
 $$</p>
 <p><strong>Proof.</strong> By the adjoint theorem $L_{a}^{\dagger}=S_{1,a}$, and $S_{1,a}=L_{a}$ means $y^{*}a=ay^{*}$ for every $y$. As $y$ runs over $A$ the elements $y^{*}$ run over $A$, so the condition is that $a$ commute with every element, that is $a$ central.</p>
 <p><strong>Remark.</strong> The criterion is the element-level statement of the asymmetry: a conjugate left multiplication is self-adjoint exactly when the element does not see the order, and otherwise its adjoint is a sandwich. On a commutative algebra every conjugate left multiplication is self-adjoint, and on a noncommutative one only the scalars are.</p>

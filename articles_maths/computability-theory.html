@@ -106,15 +106,13 @@ $$</p>
 <p><strong>Theorem (Church–Turing).</strong> A partial function $\mathbb{N}^k \to \mathbb{N}$ is partial recursive if and only if it is computable by a Turing machine. This identification is the <strong>Church–Turing thesis</strong>; it is a thesis because it identifies a formal class with an informal notion.</p>
 <p><strong>Proof.</strong> The direction from machines to functions is a simulation of a machine by primitive recursion on its configurations, with unbounded search for the halting time; the other direction is the encoding of the recursion scheme by a machine. Both simulations are carried out in <em>Formal Logic and Computability</em>.</p>
 <p><strong>Theorem (Kleene normal form).</strong> There is a primitive recursive predicate $T(e, n, s)$ and a primitive recursive function $U$ such that</p>
-<p>$$
-\varphi_e(n) \simeq U(\mu s\, T(e, n, s)),
+<p>$$ \boxed{\;\varphi_e(n) \simeq U(\mu s\, T(e, n, s))\;},
 $$</p>
 <p>where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(n)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,n) = \varphi_e(n)$ being partial recursive and not total.</p>
 <p><strong>Proof.</strong> $T(e,n,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $n$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of <em>Formal Logic and Computability</em>, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.</p>
 <h3 id="the-recursion-theorem">The Recursion Theorem</h3>
 <p><strong>Theorem (Kleene recursion theorem).</strong> For every total computable function $f : \mathbb{N} \to \mathbb{N}$ there is an index $e$ with</p>
-<p>$$
-\varphi_e = \varphi_{f(e)} .
+<p>$$ \boxed{\;\varphi_e = \varphi_{f(e)} \;}.
 $$</p>
 <p><strong>Proof.</strong> By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\varphi_{s(e)}(n) = \varphi_e(e,n)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\varphi_v(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then</p>
 <p>$$
@@ -158,8 +156,7 @@ $$</p>
 <p><strong>Proof.</strong> The construction builds $A$ and $B$ by a priority argument with requirements $A \neq \varphi_e^B$ and $B \neq \varphi_e^A$, meeting each requirement on a finite initial segment and preserving the finitely many restraints imposed by earlier requirements. The priority method is Friedberg's and Muchnik's; the density and non-lattice results are later refinements of the same method.</p>
 <h3 id="diophantine-sets">Diophantine Sets</h3>
 <p><strong>Theorem (Matiyasevich, after Davis–Putnam–Robinson).</strong> A set $A \subseteq \mathbb{N}$ is c.e. if and only if it is <strong>Diophantine</strong>: there is a polynomial $P(n, m_1, \dots, m_k)$ with integer coefficients such that</p>
-<p>$$
-n \in A \iff \exists m_1 \cdots \exists m_k \in \mathbb{N}\ P(n, m_1, \dots, m_k) = 0 .
+<p>$$ \boxed{\;n \in A \iff \exists m_1 \cdots \exists m_k \in \mathbb{N}\ P(n, m_1, \dots, m_k) = 0 \;}.
 $$</p>
 <p><strong>Proof.</strong> A Diophantine set is c.e. by searching for the witnesses. The converse, the MRDP theorem, is proved by showing that every c.e. set is Diophantine and then eliminating the bounded universal quantifier by a coding trick of Davis–Putnam–Robinson; the argument is in the references.</p>
 <p><strong>Corollary (Hilbert's tenth problem).</strong> There is no algorithm deciding, for an arbitrary polynomial with integer coefficients, whether it has a solution in natural numbers; more generally the decision problem for Diophantine equations is undecidable, and this is the effective counterpart of the incompleteness phenomena of <em>Peano Arithmetic and Model Theory</em>.</p>

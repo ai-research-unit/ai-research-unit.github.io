@@ -100,7 +100,7 @@ and if $X$ has $n$ finite moments then $\phi_X$ is $n$ times differentiable and 
 <h3 id="conjugate-symmetry">Conjugate symmetry</h3>
 <p><strong>Theorem (conjugate symmetry).</strong> For every real random variable $X$,
 $$
-\phi_X(-t)=\overline{\phi_X(t)}\qquad (t\in\mathbb R),
+\boxed{\;\phi_X(-t)=\overline{\phi_X(t)}\qquad (t\in\mathbb R)\;},
 $$
 that is, the characteristic function is <strong>Hermitian</strong> as a function on the line with the conjugation, and consequently its real part is even and its imaginary part is odd:
 $$
@@ -116,7 +116,7 @@ so the joint characteristic function is Hermitian under the simultaneous reflect
 <h3 id="positive-definiteness-and-bochner">Positive definiteness and Bochner</h3>
 <p><strong>Theorem (positive definiteness).</strong> The characteristic function is positive definite:
 $$
-\sum_{i,j=1}^k c_i\,\overline{c_j}\,\phi_X(t_i-t_j)\ge0
+\boxed{\;\sum_{i,j=1}^k c_i\,\overline{c_j}\,\phi_X(t_i-t_j)\ge0\;}
 $$
 for all real $t_1,\dots,t_k$ and complex $c_1,\dots,c_k$.</p>
 <p><em>Proof.</em> The double sum is $\mathbb E\bigl[|\sum_ic_i\exp(it_iX)|^2\bigr]\ge0$, since the exponential is a complex-valued random variable with modulus one and the expectation of a squared modulus is nonnegative.</p>
@@ -128,7 +128,7 @@ for all real $t_1,\dots,t_k$ and complex $c_1,\dots,c_k$.</p>
 <p><em>Proof.</em> If $\phi_X$ is real then $\phi_X(t)=\overline{\phi_X(t)}=\phi_X(-t)=\phi_{-X}(t)$ for all $t$, so by the uniqueness of the characteristic function the laws of $X$ and $-X$ coincide, which is the symmetry. Conversely if $X\overset d=-X$ then $\phi_X(t)=\phi_{-X}(t)=\phi_X(-t)=\overline{\phi_X(t)}$, so $\phi_X$ is real. The symmetry of the law and the reality of the transform are the same statement seen from the two sides.</p>
 <p><strong>Corollary (the law as a Fourier transform).</strong> The law is recovered from the characteristic function by the inversion formula,
 $$
-\mu_X([a,b])=\lim_{T\to\infty}\frac{1}{2\pi}\int_{-T}^{T}\frac{\exp(-ita)-\exp(-itb)}{it}\,\phi_X(t)\,dt
+\boxed{\;\mu_X([a,b])=\lim_{T\to\infty}\frac{1}{2\pi}\int_{-T}^{T}\frac{\exp(-ita)-\exp(-itb)}{it}\,\phi_X(t)\,dt\;}
 $$
 at the continuity points $a<b$ of the distribution function, and the characteristic function determines the law.</p>
 <p><em>Proof.</em> This is the Fourier inversion for the finite measure $\mu_X$; the convergence and the form of the kernel are the standard theorem, <em>Fourier Analysis and Distributions</em>, written.</p>

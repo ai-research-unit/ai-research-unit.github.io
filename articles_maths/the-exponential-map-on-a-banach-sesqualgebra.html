@@ -80,7 +80,7 @@
 <h3 id="the-convergence">The Convergence</h3>
 <p><strong>Theorem (the exponential series).</strong> For every $x \in A$ the series</p>
 <p>$$
-\exp x = \sum_{n \geq 0} \frac{x^{n}}{n!}
+\boxed{\;\exp x = \sum_{n \geq 0} \frac{x^{n}}{n!}\;}
 $$</p>
 <p>converges absolutely, $\exp 0 = 1$, and</p>
 <p>$$
@@ -96,7 +96,7 @@ $$</p>
 <h3 id="the-involution-and-the-exponential">The Involution and the Exponential</h3>
 <p><strong>Theorem (the involution commutes with the exponential).</strong> For every $x \in A$,</p>
 <p>$$
-(\exp x)^{*} = \exp(x^{*}) .
+\boxed{\;(\exp x)^{*} = \exp(x^{*})\;} .
 $$</p>
 <p><em>Proof.</em> The involution is anti-multiplicative and of order two, so $(x^{n})^{*} = (x^{*})^{n}$ by induction; it is isometric by the standing hypothesis, hence continuous by <em>The Continuity of the Involution</em>, §<em>The $\mathrm{C}^{*}$-Condition</em>, and a continuous map commutes with the limits of convergent series. Applying it termwise to $\sum x^{n}/n!$ gives $\sum (x^{*})^{n}/n! = \exp(x^{*})$.</p>
 <p><strong>Corollary (the parities pass to the exponential).</strong> If $x$ is Hermitian, $x^{*} = x$, then $\exp x$ is Hermitian; if $x$ is skew-Hermitian, $x^{*} = -x$, then $\exp x$ is unitary with</p>
@@ -111,7 +111,7 @@ $$</p>
 <h3 id="the-exponential-into-the-unitary-group">The Exponential into the Unitary Group</h3>
 <p><strong>Theorem (the exponential of the skew-Hermitian part lands in the identity component).</strong> The exponential restricts to a continuous map</p>
 <p>$$
-\exp : S(A) \longrightarrow \mathrm{U}(A) , \qquad \exp(S(A)) \subseteq \mathrm{U}(A)_{0},
+\boxed{\;\exp : S(A) \longrightarrow \mathrm{U}(A) , \qquad \exp(S(A)) \subseteq \mathrm{U}(A)_{0}\;},
 $$</p>
 <p>where $\mathrm{U}(A)_{0}$ is the component of the identity of the unitary group of <em>The Unitary Group as a Topological Group</em>.</p>
 <p><em>Proof.</em> The corollary gives $\exp x \in \mathrm{U}(A)$ for $x \in S(A)$. The path $t \mapsto \exp(tx)$, $t \in [0,1]$, is continuous by §<em>The Functional Equation</em>, takes the value $\exp 0 = 1$ at $0$ and $\exp x$ at $1$, and its values are unitary because $tx$ is skew-Hermitian for every real $t$; so $\exp x$ is joined to $1$ inside $\mathrm{U}(A)$, which is the definition of the identity component.</p>

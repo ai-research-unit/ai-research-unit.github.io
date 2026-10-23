@@ -106,7 +106,7 @@ $$</p>
 <h3 id="the-kernel">The Kernel</h3>
 <p><strong>Theorem (the annihilated elements).</strong> The kernel of the signed left multiplication is the centraliser of $\alpha(a)$,</p>
 <p>$$
-\ker\ell^{\alpha}_a = \{x : [a,\alpha(x)] = 0\} = \mathfrak{c}(\alpha(a)) ,
+\boxed{\;\ker\ell^{\alpha}_a = \{x : [a,\alpha(x)] = 0\} = \mathfrak{c}(\alpha(a))\;} ,
 $$</p>
 <p>and the operator is injective exactly when $\alpha(a)$ is not central in any summand.</p>
 <p><em>Proof.</em> The equation $[a,\alpha(x)] = 0$ becomes, after applying $\alpha$, $[\alpha(a),x] = 0$; conversely $x\in\mathfrak{c}(\alpha(a))$ gives $[a,\alpha(x)] = \alpha([\alpha(a),x]) = 0$. The injectivity statement is the vanishing of the kernel.</p>
@@ -115,7 +115,7 @@ $$</p>
 <h3 id="the-fixed-set">The Fixed Set</h3>
 <p><strong>Theorem (the fixed elements).</strong> The fixed set of the signed left multiplication as a linear map is</p>
 <p>$$
-\operatorname{Fix}(\ell^{\alpha}_a) = \{x : [a,\alpha(x)] = x\} ,
+\boxed{\;\operatorname{Fix}(\ell^{\alpha}_a) = \{x : [a,\alpha(x)] = x\}\;} ,
 $$</p>
 <p>and it is nonempty exactly when the operator has a fixed point; it is the solution set of the linear equation $\operatorname{ad}_a\alpha(x) = x$, an affine subspace that is a coset of the kernel, and it is a single point exactly when $\operatorname{ad}_a\alpha$ has no eigenvalue $1$.</p>
 <p><em>Proof.</em> The fixed equation is the definition; the solution set of a linear equation is empty or an affine subspace with direction the kernel; the uniqueness of the solution is the invertibility of $\mathrm{id} - \operatorname{ad}_a\alpha$, that is the absence of the eigenvalue $1$.</p>
@@ -124,7 +124,7 @@ $$</p>
 <h2 id="the-relation-to-the-sandwich">The Relation to the Sandwich</h2>
 <p><strong>Theorem.</strong> The signed sandwich is the signed left multiplication followed by a signed right multiplication,</p>
 <p>$$
-\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_a\,R_{\alpha(b)} = r^{\alpha}_{b}\,L_{\alpha(a)} ,
+\boxed{\;\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_a\,R_{\alpha(b)} = r^{\alpha}_{b}\,L_{\alpha(a)}\;} ,
 $$</p>
 <p>and it is the composite of the signed left multiplication with a right multiplication of the $\alpha$-transformed parameter; the unsigned sandwich is the special case $\alpha = \mathrm{id}$.</p>
 <p><em>Proof.</em> From $\Sigma^{\alpha}_{a,b} = L_aR_b\alpha$ and the commutation $\alpha R_b = R_{\alpha(b)}\alpha$ one gets $L_aR_b\alpha = L_a\alpha R_{\alpha(b)} = \ell^{\alpha}_aR_{\alpha(b)}$; the second form is analogous.</p>

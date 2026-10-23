@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> An <strong>involution</strong> of $B(H)$ is a map $T \mapsto T^{\sharp}$ that is conjugate-linear, reverses products, $(ST)^{\sharp} = T^{\sharp}S^{\sharp}$, is its own inverse, $T^{\sharp\sharp} = T$, and fixes the identity. The canonical adjoint $T \mapsto T^{*}$ is one; the form-adjoint $T \mapsto T^{\dagger}$ of a non-degenerate bounded form is another.</p>
 <p><strong>Theorem (existence of the form-adjoint).</strong> Let $B$ be a non-degenerate bounded sesquilinear form with induced operator $\Phi$, $B(x,y) = \langle x, \Phi y\rangle$, and suppose $\Phi$ is invertible with bounded inverse. Then for every $T \in B(H)$ there is a unique $T^{\dagger} \in B(H)$ with</p>
 <p>$$
-B(Tx, y) = B(x, T^{\dagger}y) \qquad (x, y \in H),
+\boxed{\;B(Tx, y) = B(x, T^{\dagger}y) \qquad (x, y \in H)\;},
 $$</p>
 <p>and</p>
 <p>$$
@@ -87,7 +87,7 @@ $$</p>
 <p><strong>Proof.</strong> $B(Tx,y) = \langle Tx,\Phi y\rangle = \langle x, T^{*}\Phi y\rangle = B(x, \Phi^{-1}T^{*}\Phi y)$, so $T^{\dagger} = \Phi^{-1}T^{*}\Phi$ is a solution, and it is unique because $B$ is non-degenerate. The map is conjugate-linear and reverses products as a composite of the canonical adjoint with the conjugation by the invertible $\Phi$, and $(\Phi^{-1}T^{*}\Phi)^{*}$-computation gives $T^{\dagger\dagger} = \Phi^{-1}T\Phi = T$. It equals the canonical adjoint iff $\Phi^{-1}T^{*}\Phi = T^{*}$ for all $T$, that is iff $\Phi$ is central in $B(H)$, i.e. a scalar.</p>
 <p><strong>Proposition (the involutions are conjugate).</strong> The form-adjoint is the canonical adjoint transported by the similarity $\Phi$,</p>
 <p>$$
-T^{\dagger} = \Phi^{-1}\,T^{*}\,\Phi ,
+\boxed{\;T^{\dagger} = \Phi^{-1}\,T^{*}\,\Phi\;} ,
 $$</p>
 <p>so it is an involution of $B(H)$ of the same kind as the canonical one, and the map $T \mapsto \Phi T$ is an isomorphism of $B(H)$ with the canonical involution onto $B(H)$ with the form involution. In particular the two involutions have the same structural properties: both reverse products, both are isometric for the operator norm, and both are homeomorphisms for the weak, strong and weak-star topologies.</p>
 <p><strong>Proof.</strong> The displayed identity is the theorem; the transport of the involution is the definition of an isomorphism of involutive algebras, and the structural properties are inherited because the similarity by $\Phi$ is a bounded isomorphism with bounded inverse and preserves the operator topologies.</p>
@@ -101,7 +101,7 @@ $$</p>
 <p>a group under multiplication; for the canonical involution it is the unitary group $\mathrm{U}(H)$, and for the form-adjoint of $B$ it is the group of $B$-isometries.</p>
 <p><strong>Theorem (the unitary group of a form).</strong> For the form-adjoint of a non-degenerate bounded form $B$ with induced operator $\Phi$,</p>
 <p>$$
-T^{\dagger}T = \mathrm{id} \iff T^{*}\Phi T = \Phi \iff B(Tx, Ty) = B(x, y) \ \text{for all } x, y ,
+\boxed{\;T^{\dagger}T = \mathrm{id} \iff T^{*}\Phi T = \Phi \iff B(Tx, Ty) = B(x, y) \ \text{for all } x, y\;} ,
 $$</p>
 <p>so the unitary group of the form is the group of bounded operators preserving $B$; it is a closed subgroup of $B(H)$ for the norm topology, hence a topological group, and it contains the identity and is closed under inverses by the involution.</p>
 <p><strong>Proof.</strong> $T^{\dagger}T = \Phi^{-1}T^{*}\Phi T = \mathrm{id}$ iff $T^{*}\Phi T = \Phi$; evaluating gives $B(Tx,Ty) = \langle Tx,\Phi Ty\rangle = \langle x, T^{*}\Phi Ty\rangle = \langle x,\Phi y\rangle = B(x,y)$. The group is closed because it is the common zero set of the continuous maps $T \mapsto T^{*}\Phi T - \Phi$ and $T \mapsto TT^{\dagger}-\mathrm{id}$; it is a topological group with the induced topology.</p>

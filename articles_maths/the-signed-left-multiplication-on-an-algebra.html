@@ -109,7 +109,7 @@ $$</p>
 <h3 id="the-commutators-with-the-left-multiplications">The Commutators with the Left Multiplications</h3>
 <p><strong>Proposition.</strong> For all $a, b \in A$,</p>
 <p>$$
-\bigl[L(b),\, \Lambda(a)\bigr] = \Lambda\bigl(ba - a\alpha(b)\bigr),
+\boxed{\;\bigl[L(b),\, \Lambda(a)\bigr] = \Lambda\bigl(ba - a\alpha(b)\bigr)\;},
 $$</p>
 <p>and $\Lambda(a)$ commutes with $L(b)$ if and only if $ba = a\alpha(b)$, that is, if and only if $L(b)$ fixes the image of $\Lambda(a)$ in the appropriate sense.</p>
 <p><em>Proof.</em> By the elementary identities, $L(b)\Lambda(a) = \Lambda(ba)$ and $\Lambda(a)L(b) = \Lambda(a\alpha(b))$, so the difference is $\Lambda(ba - a\alpha(b))$, which vanishes exactly when the argument vanishes, by the injectivity of $\Lambda$.</p>
@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-invertible-signed-left-multiplications">The Invertible Signed Left Multiplications</h3>
 <p><strong>Proposition.</strong> Let $A$ be finite-dimensional. The signed left multiplication $\Lambda(a)$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ is a unit, and then</p>
 <p>$$
-\Lambda(a)^{-1} = \Lambda\bigl(\alpha(a^{-1})\bigr) = \Lambda\bigl(\alpha(a)^{-1}\bigr).
+\boxed{\;\Lambda(a)^{-1} = \Lambda\bigl(\alpha(a^{-1})\bigr) = \Lambda\bigl(\alpha(a)^{-1}\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> The form $\Lambda(a) = L(a)\alpha$ is the composite of the invertible operator $\alpha$ and the left multiplication $L(a)$, so it is invertible exactly when $L(a)$ is, which by the injectivity of $L$ and finite dimension is exactly when $a$ is a unit. For the inverse, use the identity $\Lambda(a)\Lambda(c) = L(a\alpha(c))$: with $c = \alpha(a^{-1})$ one gets $a\alpha(c) = a\alpha(\alpha(a^{-1})) = aa^{-1} = 1$, so $\Lambda(a)\Lambda(\alpha(a^{-1})) = L(1) = \mathrm{id}$; the same computation in the other order gives the two-sided inverse. The second form uses $\alpha(a^{-1}) = \alpha(a)^{-1}$.</p>
 <p><strong>Corollary.</strong> The units of $A$ act on $A$ by the operators $\Lambda(a)$, $a \in A^\times$, and the assignment $a \mapsto \Lambda(a)$ is an injective map from the unit group into the general linear group of the twist $\alpha$; the composite $\Lambda(a) = L(a)\alpha$ is the left multiplication twisted by the involution.</p>
@@ -163,7 +163,7 @@ $$</p>
 <h3 id="the-factorisation">The Factorisation</h3>
 <p><strong>Theorem.</strong> For all $a, b \in A$,</p>
 <p>$$
-S_{a,b} = \Lambda(a)\,R\bigl(\alpha(b)\bigr) = L(a)\,\alpha\,R\bigl(\alpha(b)\bigr),
+\boxed{\;S_{a,b} = \Lambda(a)\,R\bigl(\alpha(b)\bigr) = L(a)\,\alpha\,R\bigl(\alpha(b)\bigr)\;},
 $$</p>
 <p>so the signed sandwich is the signed left multiplication followed by a right multiplication.</p>
 <p><em>Proof.</em> On the one hand $\Lambda(a)R(\alpha(b))(x) = \Lambda(a)(x\alpha(b)) = a\alpha(x\alpha(b)) = a\alpha(x)\alpha^2(b) = a\alpha(x)b = S_{a,b}(x)$. On the other hand $L(a)\alpha R(\alpha(b))(x) = a\alpha(x\alpha(b)) = a\alpha(x)b = S_{a,b}(x)$, the same value, since $\Lambda(a) = L(a)\alpha$; so the three operators agree. Note the second index of the right multiplication in the last form is $\alpha(b)$, not $b$: the twist moves to the right factor.</p>

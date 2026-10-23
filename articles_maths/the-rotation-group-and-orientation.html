@@ -161,7 +161,7 @@ R(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta 
 $$</p>
 <p><strong>Proposition.</strong> The assignment $\theta \mapsto R(\theta)$ is a surjective homomorphism $\mathbb{R} \to \operatorname{SO}(2)$ with kernel $2\pi\mathbb{Z}$. Hence</p>
 <p>$$
-\operatorname{SO}(2) \cong \mathbb{R}/2\pi\mathbb{Z} \cong S^1,
+\boxed{\;\operatorname{SO}(2) \cong \mathbb{R}/2\pi\mathbb{Z} \cong S^1\;},
 $$</p>
 <p>the unit circle, and $\operatorname{SO}(2)$ is abelian.</p>
 <p><strong>Proof.</strong> Matrix multiplication gives $R(\theta)R(\phi) = R(\theta + \phi)$ and $R(\theta)^{-1} = R(-\theta)$, so the map is a homomorphism; the kernel is the set of $\theta$ with $\cos\theta = 1$ and $\sin\theta = 0$, namely $2\pi\mathbb{Z}$. An orientation-preserving orthogonal $2 \times 2$ matrix has columns that are orthonormal and positively oriented, hence is of the form $R(\theta)$; this proves surjectivity.</p>
@@ -172,7 +172,7 @@ $$</p>
 <p>The subgroups of the circle that arise from finite symmetry are cyclic, and this is the simplest instance of the classification of finite rotation groups.</p>
 <p><strong>Proposition.</strong> Every finite subgroup of $\operatorname{SO}(2)$ is cyclic. If $H$ is finite and nontrivial, there is an integer $m \geq 1$ with</p>
 <p>$$
-H = \langle R(2\pi/m)\rangle \cong \mathbb{Z}/m\mathbb{Z},
+\boxed{\;H = \langle R(2\pi/m)\rangle \cong \mathbb{Z}/m\mathbb{Z}\;},
 $$</p>
 <p>and $m$ is the order of $H$.</p>
 <p><strong>Proof.</strong> Let $A = \{\theta \in \mathbb{R}/2\pi\mathbb{Z} : R(\theta) \in H\}$, a finite subgroup of the circle group. If $A \neq 0$ let $\alpha$ be its smallest positive element; for any $\beta \in A$ write $\beta = k\alpha + \rho$ with $k$ an integer and $0 \leq \rho < \alpha$, so that $\rho = \beta - k\alpha \in A$, and minimality of $\alpha$ forces $\rho = 0$. Hence $A = \mathbb{Z}\alpha$, and finiteness forces $m\alpha \equiv 0$ modulo $2\pi$ for some $m \geq 1$, so $\alpha = 2\pi/m$ and $A$ has order $m$.</p>
@@ -187,7 +187,7 @@ $$</p>
 <p>Euler's theorem generalises: a rotation of a definite space of any dimension is a product of planar rotations in mutually orthogonal planes.</p>
 <p><strong>Theorem (normal form of a rotation).</strong> Let $V$ be a finite-dimensional real space with a positive definite form $m$ and let $T \in \operatorname{SO}(V, \mathfrak{Q})$. Then there is an orthonormal basis of $V$ in which $T$ is the block diagonal matrix</p>
 <p>$$
-T = \operatorname{diag}\bigl(R(\theta_1), \ldots, R(\theta_m), \underbrace{1, \ldots, 1}_{n - 2m}\bigr), \qquad 0 < \theta_1 \leq \cdots \leq \theta_m \leq \pi,
+\boxed{\;T = \operatorname{diag}\bigl(R(\theta_1), \ldots, R(\theta_m), \underbrace{1, \ldots, 1}_{n - 2m}\bigr), \qquad 0 < \theta_1 \leq \cdots \leq \theta_m \leq \pi\;},
 $$</p>
 <p>where $2m = n - \dim\ker(T - \mathrm{id})$ is the number of eigenvalues of $T$, counted with multiplicity, that differ from $1$; equivalently $2m$ is the codimension of the fixed subspace. In particular $T$ fixes pointwise a subspace of dimension $n - 2m$, and the multiset $\{\theta_1, \ldots, \theta_m\}$ is determined by $T$: the angles $\theta_j < \pi$ are read off from the non-real eigenvalues $\exp(\pm i\theta_j)$, and $\theta_j = \pi$ corresponds to a pair of eigenvalues $-1$.</p>
 <p><strong>Proof.</strong> Because $T$ preserves $m$, every complex eigenvalue has modulus one: if $Tv = \lambda v$ with $v \neq 0$ then $\mathfrak{Q}(v) = \mathfrak{Q}(Tv) = |\lambda|^2 \mathfrak{Q}(v)$, and $\mathfrak{Q}(v) > 0$ gives $|\lambda| = 1$. The characteristic polynomial is real, so the non-real eigenvalues occur in conjugate pairs $\lambda, \bar\lambda$ with $\lambda \neq \bar\lambda$, and each such pair has $\lambda = \cos\theta + i\sin\theta$ for a unique $\theta \in (0, \pi)$. If $z = u + iv$ is an eigenvector for $\lambda$, then $u, v$ are real, linearly independent vectors of equal norm with $B(u, v) = 0$, and separating real and imaginary parts of $Tz = \lambda z$ gives</p>

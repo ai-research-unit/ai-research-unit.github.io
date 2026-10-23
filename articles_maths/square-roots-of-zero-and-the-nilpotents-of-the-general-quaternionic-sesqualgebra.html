@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Definition (root of a central value, quoted).</strong> A <strong>root of the central value $\lambda$</strong> in a product $\star$ is a nonzero element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_t$; a <strong>root of zero</strong> is a root of $0$. The definition is <em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> §6.</p>
 <p><strong>Proposition (the reduction, quoted).</strong> For every $\tilde Q$,</p>
 <p>$$
-\tilde Q\star\tilde Q = \bigl(\overline{\tilde Q}\,\tilde Q\bigr)^{\natural} ,
+\boxed{\;\tilde Q\star\tilde Q = \bigl(\overline{\tilde Q}\,\tilde Q\bigr)^{\natural}\;}
 $$</p>
 <p>so $\tilde Q$ is a root of zero if and only if $\overline{\tilde Q}\,\tilde Q = 0$; the identity is proved on the coordinates in <em>Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra</em> §<em>The Reduction of the Root Equation</em>, and the equation $\overline{\tilde Q}\tilde Q = 0$ is the square-zero equation of this article.</p>
 <p><strong>Proposition (the coordinate equations).</strong> Write $\tilde Q = a + \vec q$ with $a = q_t+iq'_t$ and $\vec q = \vec p+i\vec p'$, where $q_t,q'_t\in\mathbb{R}$ and $\vec p,\vec p'\in\mathbb{R}^3$. Then $\tilde Q\star\tilde Q = 0$ if and only if</p>
@@ -95,7 +95,7 @@ $$</p>
 <p><strong>The roots of zero are exactly the elements $\tilde\Xi = c(\vec u+i)$ with $c\in\mathbb{C}^{*}$ and $\vec u$ a real unit vector, equivalently $\tilde\Xi = c(1+\tilde\Xi_2)$, together with the origin; they form a real four-dimensional family, the union of the complex lines based at the real unit directions, and every nonzero member is non-pure with scalar part $i c$.</strong></p>
 <p><strong>Theorem (the roots of zero).</strong> The roots of zero of $\star$ are exactly the elements</p>
 <p>$$
-\tilde\Xi = c\bigl(\vec u + i\bigr) , \qquad c\in\mathbb{C}^{*} , \qquad \vec u\in\mathbb{R}^3 , \qquad \sum_{k=1}^{3}u_k^2 = 1 ,
+\boxed{\; \tilde\Xi = c\bigl(\vec u + i\bigr) , \qquad c\in\mathbb{C}^{*} , \qquad \vec u\in\mathbb{R}^3 , \qquad \sum_{k=1}^{3}u_k^2 = 1 \;},
 $$</p>
 <p>together with the origin; equivalently, $\tilde\Xi = c\,(1 + \tilde\Xi_2)$ over the complex numbers $c$ and the real unit vectors $\vec u_{m}$, and the two parametrizations agree under $\vec u_{m}\mapsto-\vec u$ and $c\mapsto ic$.</p>
 <p><strong>Proof.</strong> Let $\tilde Q = a+\vec q$ satisfy the coordinate system. The third equation $\vec p\times\vec p' = 0$ says that the real vectors $\vec p$ and $\vec p'$ are linearly dependent; when $\vec p' = 0$ this is automatic and it holds trivially when $\vec p = 0$. If $\vec p$ and $\vec p'$ are not both zero they are parallel to a common real unit vector $\vec u$, so $\vec q = c\,\vec u$ for a complex number $c$, and the second equation becomes $\operatorname{Re}(\overline{a}c)\,\vec u = 0$, that is $\operatorname{Re}(\overline{a}c) = 0$. When $a \neq 0$ this says that $c$ is a real multiple of $ia$, $c = ita$ with $t\in\mathbb{R}$; substituting into the first equation gives $\lvert a\rvert^2 = t^2\lvert a\rvert^2$, so $t^2 = 1$ and $c = \pm ia$; then $\tilde Q = a\pm ia\vec u = \pm ia(\vec u\mp i)$, of the displayed form. When $a = 0$ the first equation gives $\lvert c\rvert^2 = 0$, that is $c = 0$ and $\tilde Q = 0$, which is excluded for a root of zero. The two parametrizations are related by $c(\vec u+i) = ic\,(1-\tilde\Xi) = ic\,(1+i(-\vec u))$. Since $\vec u+i$ has square zero and the set is stable under the multiplication by a complex scalar (the scalar $c$ is central), every displayed element is square-zero, which proves the equivalence.</p>
@@ -111,7 +111,7 @@ $$</p>
 <p><strong>Every root of zero is a two-sided zero divisor with itself as partner, lying on the cone $C(\tilde\Xi)=0$, so the family is a proper real four-dimensional subfamily of the real six-dimensional cone, its complement containing the pure zero divisor $\vec e_x+i\vec e_y$.</strong></p>
 <p><strong>Theorem (the roots of zero are two-sided zero divisors).</strong> Every root of zero $\tilde\Xi$ satisfies $\tilde\Xi\star\tilde\Xi = 0$, so it is a zero divisor of $\star$ with itself as partner on both sides, and it lies in the zero-divisor cone</p>
 <p>$$
-C(\tilde\Xi) = 0 .
+\boxed{\; C(\tilde\Xi) = 0 \;}.
 $$</p>
 <p><strong>Proof.</strong> The relation $\tilde\Xi\star\tilde\Xi = 0$ is the product of the element with itself and exhibits the partner; the cone is the criterion of <em>Zero Divisors of the General Quaternionic Sesqualgebra</em>, and $\overline{\tilde\Xi}\tilde\Xi = 0$ implies $C(\tilde\Xi) = 0$.</p>
 <p>The family is therefore a real four-dimensional subfamily of the real six-dimensional cone, and it is a <strong>proper</strong> subfamily: the pure zero divisor $\vec e_x+i\vec e_y$ of the cone is not square-zero, its square being $-2e_t-2i\vec e_z$. This is the difference between the block and the plain algebra. There, every square-zero element is pure; here the square-zero elements are exactly the roots of zero, they lie in the non-pure family, and the cone is split into a pure part, where the square-zero condition is never met, and a non-pure part, where it cuts out the proper subfamily $c(\vec u+i)$.</p>

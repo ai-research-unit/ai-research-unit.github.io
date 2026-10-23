@@ -82,7 +82,7 @@ $$</p>
 <p>with $K_{+}$ positive definite and complete for the norm $x\mapsto[x,x]^{1/2}$, $K_{-}$ negative definite and complete for the norm $x\mapsto(-[x,x])^{1/2}$.</p>
 <p><strong>Proposition (the induced Hilbert space).</strong> Let $J$ act as $+\mathrm{id}$ on $K_{+}$ and $-\mathrm{id}$ on $K_{-}$. Then</p>
 <p>$$
-\langle x, y \rangle = [Jx, y] = [x_{+}, y_{+}] - [x_{-}, y_{-}], \qquad x = x_{+}+x_{-},\ y = y_{+}+y_{-},
+\boxed{\;\langle x, y \rangle = [Jx, y] = [x_{+}, y_{+}] - [x_{-}, y_{-}], \qquad x = x_{+}+x_{-},\ y = y_{+}+y_{-}\;},
 $$</p>
 <p>is a positive definite inner product on $K$, $K$ is complete for its norm $\|x\|^{2} = \langle x,x\rangle = \|x_{+}\|^{2} + \|x_{-}\|^{2}$, and the indefinite form is recovered by $[x,y] = \langle Jx,y\rangle$. So a Krein space is a Hilbert space with an involutive self-adjoint operator $J$.</p>
 <p><strong>Proof.</strong> The sum of two complete positive definite forms on orthogonal summands is a complete positive definite form, so $K$ is complete for $\langle\cdot,\cdot\rangle$; the recovery is $[x,y] = [J^{2}x,y] = \langle Jx,y\rangle$; the involutivity and the self-adjointness of $J$ are those of <em>Indefinite Inner Product Spaces</em>.</p>
@@ -92,7 +92,7 @@ $$</p>
 <p><strong>Proof.</strong> Two fundamental symmetries differ by an operator of the form $\mathrm{id} + T$ with $T$ bounded and $\|T\| < 1$ relative to either induced norm, so each is bounded with bounded inverse for the other; the two norms therefore define the same topology and the same Cauchy sequences.</p>
 <p><strong>Proposition (the form is continuous).</strong> In any of the induced norms the indefinite form is continuous and bounded,</p>
 <p>$$
-|[x,y]| \leq \|x\|\,\|y\| ,
+\boxed{\;|[x,y]| \leq \|x\|\,\|y\|\;} ,
 $$</p>
 <p>and the bound is attained on $K_{+}$; on the whole space it is not coercive, since $[x,x]$ takes both signs on the unit sphere.</p>
 <p><strong>Proof.</strong> Cauchy–Schwarz for the positive definite form gives $|[x,y]| = |\langle Jx,y\rangle| \leq \|x\|\|y\|$ since $J$ is an isometry of $\langle\cdot,\cdot\rangle$; the attainment and the failure of coercivity follow from the two summands.</p>

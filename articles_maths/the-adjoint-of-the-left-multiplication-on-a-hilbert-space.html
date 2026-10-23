@@ -85,7 +85,7 @@ $$</p>
 <p>linear in the first argument and conjugate-linear in the second; it is an inner product, and $S_2(H)$ is a Hilbert space in it. The <strong>adjoint</strong> of a bounded operator is taken with respect to this form.</p>
 <p><strong>Theorem (the adjoint of the left multiplication).</strong> For every $U\in B(H)$ the left multiplication $L_U$ is bounded on $S_2(H)$ and</p>
 <p>$$
-(L_U)^*=L_{U^*},
+\boxed{\;(L_U)^*=L_{U^*}\;},
 $$</p>
 <p>so the adjoint of a left multiplication is the left multiplication by the adjoint; the same computation gives $R_V^*=R_{V^*}$ for the right multiplication, and each one-sided family is closed under the adjunction.</p>
 <p><em>Proof.</em> The adjoint identity follows from the trace identity: $\langle L_UT,S\rangle_{\mathrm{HS}}=\operatorname{tr}(UTS^*)=\operatorname{tr}(T(U^*S)^*)=\langle T,U^*S\rangle_{\mathrm{HS}}=\langle T,L_{U^*}S\rangle_{\mathrm{HS}}$; the right case is $\operatorname{tr}(TVS^*)=\operatorname{tr}(T(SV^*)^*)$; uniqueness of the Hilbert adjoint and the density of $S_2(H)$ in the operators of the form give the identities for all elements.</p>
@@ -112,7 +112,7 @@ $$</p>
 <p><em>Proof.</em> (i) $L_U^*=L_{U^*}$ equals $L_U$ iff $U^*=U$, the map being injective. (ii) $L_UL_U^*=L_{UU^*}$ and $L_U^*L_U=L_{U^*U}$ coincide iff $UU^*=U^*U$. (iii) $(L_U)^*L_U=L_{U^*U}$ is the identity iff $U^*U=I$, and $L_UL_U^*=I$ iff $UU^*=I$; the identity of $S_2(H)$ is $L_I$. (iv) $L_U$ is positive iff it is self-adjoint, so $U$ is, and $\langle L_UT,T\rangle_{\mathrm{HS}}=\operatorname{tr}(UTT^*)=\operatorname{tr}(T^*UT)$ is nonnegative for all $T$ iff $U\ge0$. (v) An orthogonal projection is a positive idempotent; $L_U^2=L_{U^2}$ is $L_U$ iff $U^2=U$, and the positivity is (iv).</p>
 <p><strong>Proposition (the adjoint and the involution).</strong> The involution $U\mapsto U^*$ on the elements and the adjunction on the operators agree under the representation:</p>
 <p>$$
-(L_U)^*=L_{U^*},\qquad (R_V)^*=R_{V^*},
+\boxed{\;(L_U)^*=L_{U^*},\qquad (R_V)^*=R_{V^*}\;},
 $$</p>
 <p>so the two representations are $*$-representations of $B(H)$ (and of its opposite) on $S_2(H)$, and the compatibility of the involution with the multiplications, $(UV)^*=V^*U^*$, is the compatibility of the adjunction with the composition, $(L_UL_V)^*=(L_V)^*(L_U)^*$.</p>
 <p><em>Proof.</em> The two identities are the theorem; passing to adjoints reverses the order of a product, $(L_UL_V)^*=L_V^*L_U^*$, which is the operator form of the anti-multiplicativity of the involution.</p>
@@ -121,7 +121,7 @@ $$</p>
 <h2 id="the-signed-case">The Signed Case</h2>
 <p><strong>Proposition (the signed left multiplication to be adjointed).</strong> With the same form, the signed left multiplication of the graded Hilbert space, $\ell_U=L_U\circ\alpha$, has adjoint</p>
 <p>$$
-(\ell_U)^*=\alpha\,L_{U^*}=\ell_{\alpha(U^*)},
+\boxed{\;(\ell_U)^*=\alpha\,L_{U^*}=\ell_{\alpha(U^*)}\;},
 $$</p>
 <p>because the grade involution is a $*$-automorphism and is self-adjoint for the Hilbert–Schmidt form, $\alpha^*=\alpha$; so the adjoint of a signed left multiplication is again a signed left multiplication, and the explicit computation is <em>The Signed Adjoint of the Left Multiplication on a Hilbert Space</em> below.</p>
 <p><em>Proof.</em> $(L_U\alpha)^*=\alpha^*L_U^*=\alpha L_{U^*}$, and $\alpha L_{U^*}$ acts by $X\mapsto\alpha(U^*X)=\alpha(U^*)\alpha(X)$, which is $\ell_{\alpha(U^*)}$; the self-adjointness of $\alpha$ is $\langle\alpha X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(\Gamma X\Gamma Y^*)=\operatorname{tr}(X\Gamma Y^*\Gamma)=\langle X,\alpha Y\rangle_{\mathrm{HS}}$.</p>

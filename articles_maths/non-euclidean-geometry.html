@@ -113,7 +113,7 @@
 <h3 id="the-angle-sum-and-the-defect">The Angle Sum and the Defect</h3>
 <p><strong>Theorem (angle sum).</strong> For a geodesic triangle in each geometry,</p>
 <p>$$
-A + B + C = \begin{cases} \pi + \Delta/R^2, & K = +1/R^2, \\ \pi, & K = 0, \\ \pi - \Delta/R^2, & K = -1/R^2, \end{cases}
+\boxed{\;A + B + C = \begin{cases} \pi + \Delta/R^2, & K = +1/R^2, \\ \pi, & K = 0, \\ \pi - \Delta/R^2, & K = -1/R^2, \end{cases}\;}
 $$</p>
 <p>where $\Delta$ is the area of the triangle. In the spherical case the <strong>spherical excess</strong> $A + B + C - \pi$ is the area divided by $R^2$; in the hyperbolic case the <strong>defect</strong> $\pi - (A + B + C)$ is the area divided by $R^2$.</p>
 <p><strong>Proof.</strong> All three are the Gauss–Bonnet theorem for a geodesic triangle in a surface of constant curvature, which is the surface case of <em>Curvature and Geodesics</em>; the sign of the curvature is the sign of the deviation from $\pi$.</p>
@@ -126,7 +126,7 @@ s_K(t) = \begin{cases} \sin(t\sqrt K)/\sqrt K, & K > 0, \\ t, & K = 0, \\ \sinh(
 $$</p>
 <p>Then for a geodesic triangle with sides $a, b, c$ and the interior angle $C$ between the sides $a$ and $b$, writing $C_{\mathrm{ext}} = \pi - C$ for the exterior angle at that vertex,</p>
 <p>$$
-c_K(c) = c_K(a)c_K(b) - K\,s_K(a)s_K(b)\cos C_{\mathrm{ext}} ,
+\boxed{\;c_K(c) = c_K(a)c_K(b) - K\,s_K(a)s_K(b)\cos C_{\mathrm{ext}}\;} ,
 $$</p>
 <p>where $c_K(t) = s_K'(t)$ is the cosine in the positive case, the constant $1$ in the flat case, and the hyperbolic cosine in the negative case. The three classical laws of cosines are the three cases: for $K > 0$ the formula reads $\cos c = \cos a\cos b + \sin a\sin b\cos C$, for $K = 0$ it reads $c^2 = a^2 + b^2 - 2ab\cos C$, and for $K < 0$ it reads $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$.</p>
 <p><strong>Proof sketch.</strong> In the flat and spherical cases this is the computation with the inner product of $\mathbb{R}^2$ and $\mathbb{R}^3$ respectively; in the hyperbolic case with the indefinite form of $\mathbb{R}^{1,2}$; the four laws of trigonometry of <em>Spherical Geometry</em> and <em>Hyperbolic Geometry</em> are instances. The single curvature factor $K$ multiplies the product of the two model sines, and the passage from the circular to the hyperbolic functions is the passage from the positive definite form to the indefinite; the exterior angle is used because the sign of the cosine term is the sign of the curvature in the interior-angle form.</p>
@@ -250,7 +250,7 @@ $$</p>
 <h3 id="the-gaussbonnet-theorem-in-the-three-geometries">The Gauss–Bonnet Theorem in the Three Geometries</h3>
 <p><strong>Theorem (Gauss–Bonnet for a geodesic polygon).</strong> For a geodesic $n$-gon with angles $\alpha_1, \ldots, \alpha_n$ in the model of curvature $K$ and radius $R = 1/\sqrt{|K|}$,</p>
 <p>$$
-\sum_{i=1}^{n}\alpha_i = (n - 2)\pi + K\,\Delta ,
+\boxed{\;\sum_{i=1}^{n}\alpha_i = (n - 2)\pi + K\,\Delta\;} ,
 $$</p>
 <p>where $\Delta$ is the area of the polygon, so that the angle sum exceeds the Euclidean value by $K\Delta$.</p>
 <p><strong>Proof.</strong> Triangulate the polygon into $n-2$ triangles by diagonals drawn from a single vertex, so that no vertex of the triangulation lies in the interior; applying the angle-sum theorem to each triangle and summing, the angles at the boundary vertices contribute exactly the angles of the polygon and the areas add.</p>

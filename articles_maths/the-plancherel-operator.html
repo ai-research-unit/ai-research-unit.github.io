@@ -85,7 +85,7 @@ $$</p>
 <p>the field of Hilbert–Schmidt operators on the fibres; it is extended to $L^2(G)$ by continuity.</p>
 <p><strong>Theorem (unitarity).</strong> The transform $\mathcal{F}$ is isometric on $L^1(G)\cap L^2(G)$,</p>
 <p>$$
-\int_{\operatorname{Irr}(G)}\bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) = \int_G |f(x)|^2\,dx ,
+\boxed{\;\int_{\operatorname{Irr}(G)}\bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) = \int_G |f(x)|^2\,dx\;} ,
 $$</p>
 <p>and it extends to a surjective isometry, hence a unitary operator, $\mathcal{F} : L^2(G)\to\mathcal{H}_P$; consequently $\|\mathcal{F}\| = \|\mathcal{F}^{-1}\| = 1$ and $\mathcal{F}$ is invertible.</p>
 <p><strong>Proof.</strong> The isometry is the Plancherel theorem of <em>The Plancherel Theorem</em>; an isometry from a dense subspace of a Hilbert space extends to the whole space with the same norm, and the image is dense because it contains the finite-rank fields supported on compact subsets of the dual, which are total in $\mathcal{H}_P$; a surjective isometry of Hilbert spaces is unitary and has an isometric inverse.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="intertwining">Intertwining</h2>
 <p><strong>Theorem (convolution becomes multiplication).</strong> For every $f \in L^1(G)$ the Plancherel operator intertwines left convolution with the field of its transforms,</p>
 <p>$$
-\mathcal{F}\,\lambda(f)\,\mathcal{F}^{-1} = \int_{\operatorname{Irr}(G)}^{\oplus} (\mathcal F f)(\pi)\,d\mu_P(\pi) ,
+\boxed{\;\mathcal{F}\,\lambda(f)\,\mathcal{F}^{-1} = \int_{\operatorname{Irr}(G)}^{\oplus} (\mathcal F f)(\pi)\,d\mu_P(\pi)\;} ,
 $$</p>
 <p>the field acting on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ by left multiplication, $A\mapsto(\mathcal F f)(\pi)A$; the operator $\lambda(f)$ is thereby unitarily equivalent to a decomposable operator with the fibres $(\mathcal F f)(\pi)$.</p>
 <p><strong>Proof.</strong> The convolution theorem gives $(\mathcal{F}\lambda(f)h)(\pi) = \widehat{f*h}(\pi) = (\mathcal F f)(\pi)(\mathcal F h)(\pi) = (\mathcal F f)(\pi)(\mathcal{F}h)(\pi)$, which is the displayed identity on the dense subspace and hence everywhere.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p>the integral converging in $L^2(G)$ and defining the inverse transform.</p>
 <p><strong>Theorem (inversion).</strong> For $f \in L^1(G)\cap L^2(G)$ with $\pi\mapsto\operatorname{Tr}((\mathcal F f)(\pi)\pi(x)^{-1})$ integrable against $\mu_P$ for almost every $x$,</p>
 <p>$$
-f(x) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(x)^{-1}\bigr)\,d\mu_P(\pi)
+\boxed{\;f(x) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(x)^{-1}\bigr)\,d\mu_P(\pi)\;}
 $$</p>
 <p>for almost every $x$; equivalently $\mathcal{F}^{-1}\mathcal{F} = \mathrm{id}$ and $\mathcal{F}\mathcal{F}^{-1} = \mathrm{id}$.</p>
 <p><strong>Proof.</strong> The formula is the inversion theorem of <em>The Plancherel Theorem</em>; it identifies the right-hand side with $f$ and hence with $\mathcal{F}^{-1}(\mathcal{F}f)$, which gives the two identities by the unitarity of $\mathcal{F}$.</p>

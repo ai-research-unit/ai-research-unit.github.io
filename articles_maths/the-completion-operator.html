@@ -76,7 +76,7 @@
 <h2 id="the-completion">The Completion</h2>
 <p><strong>Definition.</strong> Let $R$ be a topological ring with a linear topology given by a fundamental system of neighbourhoods of zero consisting of ideals $\{I_\lambda\}_{\lambda \in \Lambda}$, directed by containment. The <strong>completion</strong> of $R$ is the inverse limit</p>
 <p>$$
-\widehat{R} = \varprojlim_{\lambda} R/I_\lambda ,
+\boxed{\;\widehat{R} = \varprojlim_{\lambda} R/I_\lambda\;} ,
 $$</p>
 <p>taken in the category of rings, with the inverse limit topology, and the <strong>canonical map</strong> $\iota_R : R \to \widehat{R}$ sends $x$ to the family of its classes. When the topology is the $I$-adic topology of a single ideal $I$, so that the fundamental system is $\{I^n\}_{n\geq 0}$, this reads $\widehat{R} = \varprojlim_n R/I^n$.</p>
 <p><strong>Proposition (the completion is a topological ring).</strong> $\widehat{R}$ is a ring under componentwise operations, the projections $\pi_\lambda : \widehat{R} \to R/I_\lambda$ are ring homomorphisms, the inverse limit topology is a linear topology with fundamental system the kernels of the $\pi_\lambda$, and $\widehat{R}$ is complete and Hausdorff for it. The map $\iota_R$ is a continuous ring homomorphism.</p>
@@ -106,7 +106,7 @@ $$</p>
 <h2 id="behaviour-on-ideals-and-quotients">Behaviour on Ideals and Quotients</h2>
 <p><strong>Proposition (ideals).</strong> Let $I$ be an ideal of $R$ with the subspace topology and the induced linear topology. Then $\widehat{I}$ is an ideal of $\widehat{R}$, the inclusion extends to a continuous injective map $\widehat{I} \to \widehat{R}$, and when $I$ is closed and $R$ is complete the map is a homeomorphism onto $I$. The completion of the quotient is the quotient of the completion,</p>
 <p>$$
-\widehat{R/I} \cong \widehat{R}/\widehat{I} ,
+\boxed{\;\widehat{R/I} \cong \widehat{R}/\widehat{I}\;} ,
 $$</p>
 <p>for the topology on $R/I$ given by the images of the $I_\lambda$.</p>
 <p><strong>Proof.</strong> The completion of the inclusion is a continuous homomorphism by functoriality, injective because an element of $\widehat I$ has a vanishing image in each $R/I_\lambda$ only if it vanishes in $I/I_\lambda$ for all $\lambda$, which means it is zero; the image is an ideal because the multiplication of limits is the limit of the products. The quotient statement follows from the exactness of the inverse limit over a directed set for sequences of surjections: $\varprojlim (R/I_\lambda)/(I/I_\lambda) = \varprojlim R/I_\lambda$ modulo the closures of the images.</p>

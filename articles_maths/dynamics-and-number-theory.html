@@ -88,7 +88,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the Gauss measure).</strong> The measure</p>
 <p>$$
-\mu(A)=\frac1{\log2}\int_A\frac{dx}{1+x} \qquad (A \subseteq(0,1] \text{ measurable})
+\boxed{\;\mu(A)=\frac1{\log2}\int_A\frac{dx}{1+x} \qquad (A \subseteq(0,1] \text{ measurable})\;}
 $$</p>
 <p>is $T$-invariant and ergodic; it is the unique absolutely continuous invariant probability measure of the Gauss map. Its density $\frac{1}{(1+x)\log2}$ is the <strong>Gauss density</strong>, and the invariance is the identity</p>
 <p>$$
@@ -98,7 +98,7 @@ $$</p>
 <p><em>Proof.</em> The preimage of $(y,1]$ under $T$ is the union of the intervals $(\frac{1}{k+y},\frac1k)$, $k \ge1$; summing the Gauss measure of these intervals gives the identity by the telescoping of $\log(1+\frac{1}{k})-\log(1+\frac{1}{k+y})$, and the identity is the stated invariance. The ergodicity follows from the exactness of $T$, or from the spectral gap of the Gauss–Kuzmin–Wirsing operator acting on the functions of bounded variation, which makes the invariant density unique; the uniqueness of the absolutely continuous invariant measure is then the standard consequence.</p>
 <p><strong>Theorem (Gauss–Kuzmin).</strong> For every interval $A \subseteq(0,1]$,</p>
 <p>$$
-\mu(T^{-n}A)\to\mu(A) \qquad (n\to\infty),
+\boxed{\;\mu(T^{-n}A)\to\mu(A) \qquad (n\to\infty)\;},
 $$</p>
 <p>so that the distribution of the preimages converges to the Gauss measure, whatever the initial measure; more precisely, the <strong>Gauss–Kuzmin–Wirsing</strong> theorem gives the rate</p>
 <p>$$
@@ -136,7 +136,7 @@ $$</p>
 <p><em>Proof.</em> The set $\{a_1=k\}$ is the interval $(\frac{1}{k+1},\frac1k]$, whose Gauss measure is $\frac{1}{\log2}\log\frac{1+1/k}{1+1/(k+1)}=\frac1{\log2}\log\frac{(k+1)^2}{k(k+2)}$; the distribution of $a_n$ converges to the law of $a_1$ by the Gauss–Kuzmin theorem, and the divergence of the mean is the divergence of the harmonic tail.</p>
 <p><strong>Theorem (law of large numbers and Lévy's constant).</strong> For Lebesgue-almost every $x$,</p>
 <p>$$
-\frac1n\log q_n\to\frac{\pi^2}{12\log2}=1.186569\ldots,
+\boxed{\;\frac1n\log q_n\to\frac{\pi^2}{12\log2}=1.186569\ldots\;},
 $$</p>
 <p>the <strong>Lévy constant</strong>, and in particular the denominators of the convergents grow like $\exp(n\pi^2/(12\log2))$.</p>
 <p><em>Proof.</em> The recursion for the denominators gives $\log q_n=\log q_0+\sum_{k=1}^n\log\frac{q_k}{q_{k-1}}$, and the ratios $\frac{q_{k}}{q_{k-1}}=a_k+\frac{q_{k-2}}{q_{k-1}}$ converge to the corresponding function of $T^{k}x$; since $\frac{q_{k-2}}{q_{k-1}}\in(0,1)$, the summand is $\log(a_k+\theta_k)$ and is not $\log a_k$, and the Birkhoff ergodic theorem applied to the natural extension, whose second coordinate carries the backward digits, gives the limit as the mean of $\log(1/T^{k}x)$ along the orbit, that is $\frac1{\log2}\int_0^1\frac{-\log x}{1+x}\,dx$, since the ratios $q_k/q_{k-1}$ and $1/T^kx$ differ by a bounded factor. The value is</p>

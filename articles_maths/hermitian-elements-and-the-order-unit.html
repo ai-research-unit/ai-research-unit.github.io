@@ -79,14 +79,14 @@
 <p><em>Proof.</em> If $h^{*} = h$ and $k^{*} = k$ then $(\alpha h + \beta k)^{*} = \alpha h + \beta k$ for real $\alpha,\beta$, so $H(A)$ is a real subspace, and its real dimension is that of $A$ over $\mathbb{C}$ because the map $a\mapsto\operatorname{Re}a$ is a real isomorphism onto $H(A)$; the symmetrised product of two Hermitian elements is Hermitian because $hk + kh$ is, using the anti-multiplicativity; the cone is proper by the reducedness; the identity is Hermitian and $1 = 1^{*}1$.</p>
 <p><strong>Proposition (every element is a complex combination of two Hermitian elements).</strong> Every $a\in A$ has a unique decomposition</p>
 <p>$$
-a = h + ik, \qquad h = \tfrac12(a + a^{*}) = \operatorname{Re}a, \quad k = \tfrac1{2i}(a - a^{*}) = \operatorname{Im}a ,
+\boxed{\;a = h + ik, \qquad h = \tfrac12(a + a^{*}) = \operatorname{Re}a, \quad k = \tfrac1{2i}(a - a^{*}) = \operatorname{Im}a\;} ,
 $$</p>
 <p>with $h,k\in H(A)$; and $a$ is normal, Hermitian, or positive according as $hk = kh$, $k = 0$, or $k = 0$ and $h\geq0$.</p>
 <p><em>Proof.</em> The verification that $h$ and $k$ are Hermitian and that $a = h + ik$ is direct; conversely if $a = h + ik$ with $h,k$ Hermitian then $\tfrac12(a + a^{*}) = h$ and $\tfrac1{2i}(a - a^{*}) = k$, so the decomposition is unique. The normality criterion is $a^{*}a = aa^{*}$, which reads $hk = kh$ for the decomposition; the Hermitian and the positive cases are specialisations.</p>
 <h2 id="the-order-unit">The Order Unit</h2>
 <p><strong>Definition.</strong> An <strong>order unit</strong> of $H(A)$ is an element $u > 0$ such that for every $h$ there is $\lambda>0$ with $-\lambda u\leq h\leq\lambda u$; an order unit is <strong>strong</strong> when in addition every nonempty majorised set has a least upper bound, and the <strong>order-unit seminorm</strong> is</p>
 <p>$$
-\lVert h\rVert_u = \inf\{\lambda>0 : -\lambda u\leq h\leq\lambda u\} .
+\boxed{\;\lVert h\rVert_u = \inf\{\lambda>0 : -\lambda u\leq h\leq\lambda u\}\;} .
 $$</p>
 <p><strong>Proposition (the identity is an order unit).</strong> When $A$ is a unital reduced involutive algebra the identity is a positive order unit of $H(A)$; in a $\ast$-normed algebra with $\lVert a^{*}a\rVert = \lVert a\rVert^{2}$ the order-unit norm at the identity is the given norm, $\lVert h\rVert_1 = \lVert h\rVert$, and the order interval $[-1,1]$ is the unit ball of $H(A)$ in that norm.</p>
 <p><em>Proof.</em> $1>0$; for a Hermitian $h$ the bound $-\lVert h\rVert1\leq h\leq\lVert h\rVert1$ is the spectral bound in a $\ast$-normed algebra, so $1$ is an order unit and $\lVert h\rVert_1\leq\lVert h\rVert$; conversely the order interval estimate $-\lambda1\leq h\leq\lambda1$ gives $\lVert h\rVert\leq\lambda$ by the norm estimate on the positive cone, so $\lVert h\rVert = \lVert h\rVert_1$. The interval $[-1,1]$ is the set of Hermitian elements of norm at most one, which is the unit ball.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="the-decomposition-with-respect-to-the-order-unit">The Decomposition with Respect to the Order Unit</h2>
 <p><strong>Theorem (the Jordan decomposition).</strong> Let $A$ be a unital reduced involutive algebra that is $\ast$-normed with $\lVert a^{*}a\rVert = \lVert a\rVert^{2}$, and let $h\in H(A)$. Then there are unique commuting positive elements $h_+,h_-$ with</p>
 <p>$$
-h = h_+ - h_-, \qquad h_+h_- = 0, \qquad \lVert h\rVert = \max(\lVert h_+\rVert,\lVert h_-\rVert) ,
+\boxed{\;h = h_+ - h_-, \qquad h_+h_- = 0, \qquad \lVert h\rVert = \max(\lVert h_+\rVert,\lVert h_-\rVert)\;} ,
 $$</p>
 <p>the <strong>positive part</strong> $h_+$ and the <strong>negative part</strong> $h_-$; the decomposition is produced by the functional calculus, $h_\pm = \tfrac12(\lvert h\rvert\pm h)$ with $\lvert h\rvert = (h^{2})^{1/2}$, and it is the decomposition of $h$ with respect to the order unit.</p>
 <p><em>Proof.</em> The element $\lvert h\rvert$ is defined by the functional calculus and commutes with $h$; then $h_\pm = \tfrac12(\lvert h\rvert\pm h)$ are positive, commute, satisfy $h_+ - h_- = h$ and $h_+h_- = \tfrac14(\lvert h\rvert^{2} - h^{2}) = 0$, so the decomposition exists; the norm identity is the spectral identity $\lVert h\rVert = \max(\lVert h_+\rVert,\lVert h_-\rVert)$, because the spectra are separated by the sign. Uniqueness: if $h = p - q$ with $p,q\geq0$ commuting and $pq = 0$, then $p - q = h$ and $p + q = \lvert h\rvert$ by the square $\lvert h\rvert^{2} = h^{2} = (p+q)^{2}$ and the positivity of $p+q$, so $p = \tfrac12(\lvert h\rvert + h) = h_+$ and $q = h_-$.</p>

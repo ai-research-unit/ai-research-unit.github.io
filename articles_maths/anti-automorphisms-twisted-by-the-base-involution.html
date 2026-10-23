@@ -95,7 +95,7 @@ $$</p>
 <h3 id="the-multiplicativity-of-the-twist">The Multiplicativity of the Twist</h3>
 <p><strong>Theorem.</strong> Let $f$ and $g$ be bijective semilinear maps of $A$ with twists $\varsigma_{f}$ and $\varsigma_{g}$. Then the composite $f \circ g$ has twist $\varsigma_{f} \circ \varsigma_{g}$, and the two orientations multiply as the rule</p>
 <p>$$
-(\text{anti}) \circ (\text{anti}) = \text{auto} , \qquad (\text{anti}) \circ (\text{auto}) = \text{anti} , \qquad (\text{auto}) \circ (\text{auto}) = \text{auto} .
+\boxed{\;(\text{anti}) \circ (\text{anti}) = \text{auto} , \qquad (\text{anti}) \circ (\text{auto}) = \text{anti} , \qquad (\text{auto}) \circ (\text{auto}) = \text{auto}\;} .
 $$</p>
 <p><strong>Proof.</strong> For the twist, $(f \circ g)(\lambda x) = f\bigl(\varsigma_{g}(\lambda)g(x)\bigr) = \varsigma_{f}\bigl(\varsigma_{g}(\lambda)\bigr)(f \circ g)(x)$. For the orientations, if $f$ and $g$ both reverse products then $(f \circ g)(xy) = f(g(y)g(x)) = f(g(x))f(g(y)) = (f \circ g)(x)(f \circ g)(y)$, so the composite is multiplicative; the other two cases are the same computation with one reversal.</p>
 <p><strong>Corollary.</strong> The product of two $\varsigma$-twisted anti-automorphisms is an $R$-linear automorphism, and a twisted anti-automorphism composed with a linear automorphism on either side is again a twisted anti-automorphism.</p>
@@ -104,7 +104,7 @@ $$</p>
 <h3 id="the-four-classes-and-the-klein-group">The Four Classes and the Klein Group</h3>
 <p><strong>Theorem.</strong> Let $R$ be a domain, let $A$ be a noncommutative unital $R$-algebra, and let the twist take values in $\{\mathrm{id},\varsigma\}$, so that the twist of a semilinear map is unique by the lemma above. Then the four sets</p>
 <p>$$
-\operatorname{Aut}_{R}(A) , \qquad \operatorname{Aut}_{\varsigma}(A) , \qquad \operatorname{Tw}_{\mathrm{id}}(A) , \qquad \operatorname{Tw}_{\varsigma}(A)
+\boxed{\;\operatorname{Aut}_{R}(A) , \qquad \operatorname{Aut}_{\varsigma}(A) , \qquad \operatorname{Tw}_{\mathrm{id}}(A) , \qquad \operatorname{Tw}_{\varsigma}(A)\;}
 $$</p>
 <p>form a group $P$ under composition, each of them is either empty or a coset of the linear automorphism group $\operatorname{Aut}_{R}(A)$, and the map that records the twist and the orientation,</p>
 <p>$$
@@ -126,7 +126,7 @@ $$</p>
 <h3 id="the-coset-theorem">The Coset Theorem</h3>
 <p><strong>Theorem.</strong> Let $\operatorname{Tw}_{\varsigma}(A)$ be nonempty and let $f_{0}$ be an element of it. Then the map $\sigma \mapsto f_{0}\sigma$ is a bijection</p>
 <p>$$
-\operatorname{Aut}_{R}(A) \longrightarrow \operatorname{Tw}_{\varsigma}(A) ,
+\boxed{\;\operatorname{Aut}_{R}(A) \longrightarrow \operatorname{Tw}_{\varsigma}(A)\;} ,
 $$</p>
 <p>so that $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ is a right coset of the linear automorphism group; it is also the left coset $\operatorname{Aut}_{R}(A)f_{0}$, because $f_{0}\sigma f_{0}^{-1}$ is an $R$-linear automorphism for every $\sigma$.</p>
 <p><strong>Proof.</strong> For $\sigma \in \operatorname{Aut}_{R}(A)$ the composite $f_{0}\sigma$ is bijective, additive, $\varsigma$-semilinear and anti-multiplicative, so it lies in $\operatorname{Tw}_{\varsigma}(A)$; the map is injective because $f_{0}$ is, and it is surjective because $f \in \operatorname{Tw}_{\varsigma}(A)$ gives $f = f_{0}(f_{0}^{-1}f)$ with $f_{0}^{-1}f$ of twist $\mathrm{id}$ and orientation auto, that is in $\operatorname{Aut}_{R}(A)$. For the left coset, $f_{0}^{-1}$ has twist $\varsigma$ and orientation anti, so $f_{0}\sigma f_{0}^{-1}$ has twist $\varsigma \cdot \mathrm{id} \cdot \varsigma = \mathrm{id}$ and orientation auto, hence it is in $\operatorname{Aut}_{R}(A)$; this conjugation is the inner automorphism of the group $P$ induced by $f_{0}$, and it preserves the kernel $\operatorname{Aut}_{R}(A)$.</p>

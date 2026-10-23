@@ -89,7 +89,7 @@ $$</p>
 <h3 id="the-trilinear-bound">The Trilinear Bound</h3>
 <p><strong>Theorem (the ternary product is bounded).</strong> Let $A$ be a normed sesqualgebra with submultiplicative norm and isometric involution. Then for all $x,y,z$,</p>
 <p>$$
-\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert ,
+\boxed{\;\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert\;} ,
 $$</p>
 <p>and $\{x,y,z\}$ is continuous as a map $A \times A \times A \to A$ for the product topology.</p>
 <p><em>Proof.</em> By the definition and the submultiplicative estimate, $\lVert(x \star y) \star z^{*}\rVert \leq \lVert x \star y\rVert\lVert z^{*}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$, the last step by the isometry of the involution. A trilinear map bounded by a constant is continuous.</p>
@@ -116,7 +116,7 @@ $$</p>
 <h3 id="the-lie-triple-system">The Lie Triple System</h3>
 <p><strong>Theorem (the pair operators under the commutator).</strong> For all $x,y,u,v,p,q$,</p>
 <p>$$
-[\Theta_{x,y}, \Theta_{u,v}] = T_{[x \star y,\,u \star v],\,1} , \qquad [[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}] = T_{[[x \star y,\,u \star v],\,p \star q],\,1} ,
+\boxed{\;[\Theta_{x,y}, \Theta_{u,v}] = T_{[x \star y,\,u \star v],\,1} , \qquad [[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}] = T_{[[x \star y,\,u \star v],\,p \star q],\,1}\;} ,
 $$</p>
 <p>where the brackets in the right-hand members are the commutators of the envelope. The operators $\Theta$ form a bounded Lie triple system: the bracket is bounded with $\lVert[\Theta_{x,y},\Theta_{u,v}]\rVert \leq 2\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert$, and the triple commutator is again a left multiplication of the same shape, $T_{b,1}$ with $b = [[x \star y, u \star v], p \star q]$, hence a pair operator $\Theta_{b,1}$ in the unital case, of norm at most $4\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert\lVert p\rVert\lVert q\rVert$.</p>
 <p><em>Proof.</em> The two identities are the theorem of <em>The Ternary Product as an Operator</em>, §<em>The Bracket and the Lie Triple System</em>: with $\Theta_{x,y} = T_{a,1}$ for $a = x \star y$ and $\Theta_{u,v} = T_{c,1}$ for $c = u \star v$ one has $T_{a,1}T_{c,1} = T_{ac,1}$, so the commutator is $T_{ac-ca,1}$, and the second identity is the first applied twice. The bounds follow from $\lVert T_{b,1}\rVert \leq \lVert b\rVert$, from $\lVert[b,c]\rVert \leq 2\lVert b\rVert\lVert c\rVert$ and from the bound of the pair operator.</p>
@@ -141,7 +141,7 @@ $$</p>
 <h3 id="the-preservation-of-the-jordan-triple-identity">The Preservation of the Jordan Triple Identity</h3>
 <p><strong>Theorem (the identity survives the completion).</strong> The ternary product of $\widehat{A}$ satisfies the Jordan triple identity</p>
 <p>$$
-\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\} ,
+\boxed{\;\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\}\;} ,
 $$</p>
 <p>so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple.</p>
 <p><em>Proof.</em> Both sides are obtained from the extended product and involution by composition of bounded multilinear maps, hence are continuous functions of $(x,y,u,v,w)$; they agree on the dense subset $A^{5}$ by the Jordan triple identity of <em>The Sesquilinear Associator and the Ternary Product</em>, §<em>The Jordan Triple Identity</em>; and a continuous function vanishing on a dense subset vanishes everywhere in a Hausdorff space.</p>

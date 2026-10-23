@@ -109,7 +109,7 @@ $$</p>
 <p>The definition is the statement that $f_n$ lies eventually in every ball of $B(X,Y)$ about $f$, so uniform convergence is convergence in the metric of the supremum norm. It implies pointwise convergence, and the converse fails exactly when the rate of convergence depends on $x$.</p>
 <p><strong>Proposition (uniform Cauchy criterion).</strong> Let $Y$ be complete. Then $(f_n)$ converges uniformly if and only if $(f_n)$ is Cauchy for the supremum norm, that is, if and only if</p>
 <p>$$
-\sup_{x \in X} \|f_m(x) - f_n(x)\| \longrightarrow 0 \qquad (m, n \to \infty).
+\boxed{\;\sup_{x \in X} \|f_m(x) - f_n(x)\| \longrightarrow 0 \qquad (m, n \to \infty)\;}.
 $$</p>
 <p><strong>Proof.</strong> Uniform convergence implies the Cauchy condition by the triangle inequality. Conversely, if the condition holds, then for each $x$ the sequence $(f_n(x))$ is Cauchy in the complete space $Y$, so it has a limit $f(x)$; given $\epsilon > 0$, choose $N$ with $\sup_x \|f_m(x) - f_n(x)\| < \epsilon$ for $m, n \geq N$ and let $m \to \infty$ in the estimate $\|f_m(x) - f_n(x)\| < \epsilon$ to get $\|f(x) - f_n(x)\| \leq \epsilon$ for all $x$ and $n \geq N$.</p>
 <p><strong>Theorem.</strong> $B(X, Y)$ with the supremum norm is a Banach space when $Y$ is a Banach space; the subspace $C_b(X,Y)$ of bounded continuous functions is closed in it, hence itself a Banach space, and a uniform limit of continuous functions is continuous.</p>
@@ -137,7 +137,7 @@ $$</p>
 <p>Equivalently, for every $\epsilon > 0$ there is $N$ with $\mu(\{\|f_n - f\| > \epsilon\}) < \epsilon$ for $n \geq N$. Convergence in measure does not require the measure to be finite, and the limit is unique up to a null set.</p>
 <p><strong>Theorem (a metric for convergence in measure).</strong> On a $\sigma$-finite measure space the formula</p>
 <p>$$
-d_\mu(f, g) = \inf \Bigl\{ \epsilon > 0 : \mu\bigl(\{\|f - g\| > \epsilon\}\bigr) \leq \epsilon \Bigr\}
+\boxed{\;d_\mu(f, g) = \inf \Bigl\{ \epsilon > 0 : \mu\bigl(\{\|f - g\| > \epsilon\}\bigr) \leq \epsilon \Bigr\}\;}
 $$</p>
 <p>defines a metric on the measurable functions, and $f_n \xrightarrow{\mu} f$ if and only if $d_\mu(f_n, f) \to 0$. The metric is complete, so the measurable functions modulo a.e. equality form a complete metric space under it.</p>
 <p><strong>Proof sketch.</strong> The triangle inequality uses the union bound: if $\|f - g\| \leq \epsilon$ off a set of measure $\leq \epsilon$ and $\|g - h\| \leq \delta$ off a set of measure $\leq \delta$, then $\|f - h\| \leq \epsilon + \delta$ off the union, of measure $\leq \epsilon + \delta$. The stated equivalence follows from the definitions, and completeness is proved by extracting a subsequence that converges a.e. and applying the Cauchy condition to its differences.</p>
@@ -206,7 +206,7 @@ $$</p>
 <h3 id="limit-and-derivative">Limit and Derivative</h3>
 <p><strong>Theorem.</strong> Let $f_n : (a,b) \to \mathbb{R}$ be differentiable with $f_n(x_0)$ convergent for some $x_0$ and $f_n' \rightrightarrows g$ uniformly on $(a,b)$. Then $f_n$ converges uniformly to a differentiable $f$ with $\frac{df}{dx} = g$, and</p>
 <p>$$
-\frac{d}{dx} \lim_{n} f_n = \lim_n \frac{d}{dx} f_n .
+\boxed{\;\frac{d}{dx} \lim_{n} f_n = \lim_n \frac{d}{dx} f_n\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> For $x \in (a,b)$ the mean value theorem gives $\|f_m(x) - f_n(x) - (f_m(x_0) - f_n(x_0))\| \leq \|f_m' - f_n'\|_\infty \, |x - x_0|$; the uniform Cauchy hypothesis for the derivatives and the convergence at $x_0$ therefore imply the uniform Cauchy condition for the $f_n$, so there is a uniform limit $f$. Passing to the limit in the difference quotient, the same estimate shows that $f$ is differentiable with derivative $g$.</p>
 <p>The theorem uses the mean value theorem and hence the order of $\mathbb{R}$; it has no general form in a non-Archimedean field, where the mean value theorem fails, and the appropriate substitute in that setting is discussed. Pointwise convergence of the derivatives does not suffice: the functions $f_n(x) = x^n/n$ on $[0,1]$ converge uniformly to $0$, their derivatives $x^{n-1}$ converge pointwise to $0$ on $[0,1)$ and to $1$ at $1$, and the limit of the derivatives is not the derivative of the limit at $1$.</p>

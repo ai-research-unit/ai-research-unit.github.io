@@ -77,7 +77,7 @@
 <h3 id="the-structure">The Structure</h3>
 <p><strong>Definition.</strong> A <strong>graded involution</strong> of $A$ is a $k$-linear map $\sigma : A \to A$ with</p>
 <p>$$
-\sigma^2 = \mathrm{id}, \qquad \sigma(A_g) \subseteq A_g, \qquad \sigma(xy) = \sigma(y)\sigma(x),
+\boxed{\;\sigma^2 = \mathrm{id}, \qquad \sigma(A_g) \subseteq A_g, \qquad \sigma(xy) = \sigma(y)\sigma(x)\;},
 $$</p>
 <p>and a <strong>superinvolution</strong> is a $k$-linear map with $\sigma^2 = \mathrm{id}$, $\sigma(A_g)\subseteq A_g$ and</p>
 <p>$$
@@ -101,13 +101,13 @@ $$</p>
 <p>and the <strong>graded centre</strong> of $A$ is the set of the elements $z$ with $[z, x] = 0$ for every homogeneous $x$.</p>
 <p><strong>Theorem.</strong> Let $\sigma$ be a superinvolution of the superalgebra $A$. Then $\sigma$ carries the graded commutator to the graded commutator with the arguments exchanged and the sign reversed,</p>
 <p>$$
-\sigma([x,y]) = -[\sigma(x), \sigma(y)] ,
+\boxed{\;\sigma([x,y]) = -[\sigma(x), \sigma(y)]\;} ,
 $$</p>
 <p>and it preserves the graded centre; restricted to the even part, where the graded commutator is the ordinary commutator, it is an anti-automorphism of the Lie algebra $A_0$.</p>
 <p><em>Proof.</em> Apply $\sigma$ to $xy - (-1)^{|x||y|}yx$: the first term is $(-1)^{|x||y|}\sigma(y)\sigma(x)$ and the second is $-(-1)^{|x||y|}\cdot(-1)^{|x||y|}\sigma(x)\sigma(y) = -\sigma(x)\sigma(y)$; so the image is $(-1)^{|x||y|}\sigma(y)\sigma(x) - \sigma(x)\sigma(y) = -[\sigma(x),\sigma(y)]$. The graded centre is preserved because the condition $[z,x]=0$ is carried to $-[\sigma(z),\sigma(x)] = 0$. On the even part the sign is $1$ and the graded commutator is the commutator, so $\sigma$ reverses the bracket.</p>
 <p><strong>Corollary.</strong> A graded involution satisfies the companion identity</p>
 <p>$$
-\sigma([x,y]) = -(-1)^{|x||y|}\,[\sigma(x),\sigma(y)]
+\boxed{\;\sigma([x,y]) = -(-1)^{|x||y|}\,[\sigma(x),\sigma(y)]\;}
 $$</p>
 <p>for the same graded commutator; on the even part, and on any pair with one even factor, where the Koszul sign is $1$, this is $\sigma([x,y]) = -[\sigma(x),\sigma(y)]$, the Lie anti-automorphism of $A_0$, while on two odd elements it reads $\sigma([x,y]) = +[\sigma(x),\sigma(y)]$. The two classes therefore differ by the Koszul sign of the two arguments: the superinvolution carries no sign of its own, the graded involution carries the sign in front of the bracket.</p>
 <p><em>Proof.</em> The computation of the theorem with the Koszul sign omitted from the defining rule of $\sigma$: the image of $xy - (-1)^{|x||y|}yx$ is $\sigma(y)\sigma(x) - (-1)^{|x||y|}\sigma(x)\sigma(y)$, and this equals $-(-1)^{|x||y|}\bigl(\sigma(x)\sigma(y) - (-1)^{|x||y|}\sigma(y)\sigma(x)\bigr)$ because the square of the Koszul sign is $1$; the two parity cases are then read off the front sign.</p>

@@ -82,19 +82,19 @@ $$</p>
 <p><strong>Proof.</strong> Well-definedness and bilinearity are inherited; non-degeneracy follows because $\varphi \mapsto x_\varphi$ is a bijection, being the composite of the linear isomorphism $V \to V^{*}$, $x \mapsto \langle x,\cdot\rangle$, with the inverse. The reflexivity and the sign are inherited from $B$, and the semilinearity is that of the identification.</p>
 <p><strong>Lemma (the transpose transported is the adjoint).</strong> For $C \in \operatorname{End}_F(V)$ and $\varphi \in V^{*}$ the representing vector of the transpose is</p>
 <p>$$
-x_{C^{\mathsf{T}}\varphi} = C^{*}x_{\varphi} .
+\boxed{\;x_{C^{\mathsf{T}}\varphi} = C^{*}x_{\varphi}\;} .
 $$</p>
 <p><strong>Proof.</strong> For every $z$, $B(C^{*}x_{\varphi}, z) = B(x_{\varphi}, Cz) = \varphi(Cz) = (C^{\mathsf{T}}\varphi)(z)$; the representing vector is unique, giving the identity.</p>
 <p><strong>Proposition (the transpose as an adjoint).</strong> For $A \in \operatorname{End}_F(V)$ the transpose $A^{\mathsf{T}} : V^{*} \to V^{*}$ satisfies</p>
 <p>$$
-B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}\bigl(\varphi, (A^{*})^{\mathsf{T}}\psi\bigr) ,
+\boxed{\;B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}\bigl(\varphi, (A^{*})^{\mathsf{T}}\psi\bigr)\;} ,
 $$</p>
 <p>so the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint; under the identification $V^{*} \cong V$ the transpose of $A$ corresponds to the adjoint of $A$.</p>
 <p><strong>Proof.</strong> By the lemma applied to $C=A$, the left side is $B(A^{*}x_{\varphi},x_{\psi}) = B(x_{\varphi}, A x_{\psi})$; by the lemma applied to $C=A^{*}$ and $(A^{*})^{*}=A$, the right side is $B(x_{\varphi}, A x_{\psi})$. For the last statement, the lemma with $C=A$ says exactly that $A^{\mathsf{T}}$ transported to $V$ is $A^{*}$.</p>
 <h2 id="the-two-dualities-commute">The Two Dualities Commute</h2>
 <p><strong>Theorem.</strong> On the endomorphisms of the dual the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint:</p>
 <p>$$
-\bigl(A^{\mathsf{T}}\bigr)^{*_{B^{*}}} = \bigl(A^{*_B}\bigr)^{\mathsf{T}} ,
+\boxed{\;\bigl(A^{\mathsf{T}}\bigr)^{*_{B^{*}}} = \bigl(A^{*_B}\bigr)^{\mathsf{T}}\;} ,
 $$</p>
 <p>and the assignment $A \mapsto A^{*_B}$ transported to $V^{*}$ by the identification $V^{*}\cong V$ is the $B^{*}$-involution on $\operatorname{End}_F(V^{*})$.</p>
 <p><strong>Proof.</strong> The transposition is a contravariant functor, so $(A^{\mathsf{T}})^{\mathsf{T}} = A$ under the double-dual identification, and the adjoint is an involution; applying the previous proposition to the transpose and to the adjoint gives the displayed identity, and the transport statement is the definition of the involution transported by an isomorphism.</p>

@@ -99,7 +99,7 @@ $$</p>
 <h3 id="the-extension">The Extension</h3>
 <p><strong>Theorem (the form extends uniquely).</strong> Let $A$ be a normed sesqualgebra with a form and let $\widehat{A}$ be its completion, with $\iota : A \to \widehat{A}$ the canonical isometric embedding of dense image. Then there is exactly one continuous map $\widehat{h} : \widehat{A} \times \widehat{A} \to R$ with $\widehat{h}(\iota x, \iota y) = h(x,y)$, and it is a Hermitian form, linear in the first slot and $\varsigma$-semilinear in the second, with</p>
 <p>$$
-\widehat{h}(x,x) = \lVert x\rVert^{2} \geq 0 , \qquad \lvert\widehat{h}(x,y)\rvert \leq \lVert x\rVert\lVert y\rVert ,
+\boxed{\;\widehat{h}(x,x) = \lVert x\rVert^{2} \geq 0 , \qquad \lvert\widehat{h}(x,y)\rvert \leq \lVert x\rVert\lVert y\rVert\;} ,
 $$</p>
 <p>so $\widehat{h}$ is positive definite, and its radical is zero.</p>
 <p><em>Proof.</em> By the boundedness theorem $h$ is uniformly continuous on the products of bounded sets, and every element of $\widehat{A}$ is the limit of a bounded sequence from $\iota(A)$; for sequences $x_{n}\to x$, $y_{n}\to y$ the values $h(x_{n},y_{n})$ form a Cauchy sequence in the complete field $R$, because $\lvert h(x_{n},y_{n})-h(x_{m},y_{m})\rvert \leq \lVert x_{n}-x_{m}\rVert\lVert y_{n}\rVert+\lVert x_{m}\rVert\lVert y_{n}-y_{m}\rVert$, and the limit is independent of the chosen sequences by the same estimate; that limit is the definition of $\widehat{h}(x,y)$. The extension is biadditive because addition and the scalar rules are continuous on the completion and the two sides agree on the dense set $\iota(A)\times\iota(A)$; the Hermitian property, the slot rules and the bound are identities of continuous functions verified on that set. The diagonal is $\widehat{h}(x,x) = \lim_n h(x_n,x_n) = \lim_n\lVert x_n\rVert^{2} = \lVert x\rVert^{2}$ for a sequence $x_n \to x$, which is non-negative, and vanishes exactly at $x = 0$; the bound is the Cauchy–Schwarz inequality applied in the limit.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h3 id="the-product">The Product</h3>
 <p><strong>Theorem (the product extends).</strong> The product of $A$ extends uniquely to a jointly continuous bilinear map $\widehat{A} \times \widehat{A} \to \widehat{A}$, which is</p>
 <p>$$
-xy = \lim_n x_n y_n \qquad \text{for } x_n \to x, \ y_n \to y ,
+\boxed{\;xy = \lim_n x_n y_n \qquad \text{for } x_n \to x, \ y_n \to y\;} ,
 $$</p>
 <p>associative, submultiplicative, and with the same unit when $A$ has one.</p>
 <p><em>Proof.</em> This is the theorem of <em>The Completion of a Sesqualgebra</em>, §<em>The Completion</em>: submultiplicativity makes the product jointly continuous, so it is uniformly continuous on the products of bounded sets; the extension exists by density and completeness of $\widehat{A}$, associativity and submultiplicativity are identities on a dense set, and the unit is a fixed point of the formula.</p>
@@ -123,7 +123,7 @@ $$</p>
 <h3 id="the-compatibility-of-the-extension">The Compatibility of the Extension</h3>
 <p><strong>Theorem (the compatibility extends).</strong> The forms and the operations of the completion satisfy</p>
 <p>$$
-\widehat{h}(xy, z) = \widehat{h}(y, x^{*}z) \qquad \text{for all } x, y, z \in \widehat{A} ,
+\boxed{\;\widehat{h}(xy, z) = \widehat{h}(y, x^{*}z) \qquad \text{for all } x, y, z \in \widehat{A}\;} ,
 $$</p>
 <p>so that $(\widehat{A}, \widehat{h})$ is a Banach sesqualgebra with a form over $(R,\varsigma)$, with the derived operation $x \star y = xy^{*}$ and the same involution.</p>
 <p><em>Proof.</em> Both sides are continuous functions of the triple $(x,y,z)$ on $\widehat{A}^{3}$, and they agree on the dense subset $\iota(A)^{3}$ by the compatibility of $h$ on $A$. Two continuous maps that agree on a dense set are equal.</p>

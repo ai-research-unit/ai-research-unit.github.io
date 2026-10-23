@@ -149,7 +149,7 @@ $$</p>
 <p><strong>Proof.</strong> Reflexivity is (EPT1); symmetry is the definition; transitivity holds because $x \sim y$ and $y \sim z$ give $x \mid y \mid z$ and $z \mid y \mid x$, whence $x \mid z$ and $z \mid x$ by (EPT2). The second statement is immediate from the definition and (EPT2).</p>
 <p><strong>Theorem.</strong> The relation $\preceq$ on the quotient $M/{\sim}$ given by
 $$
-[x] \preceq [y] \quad\iff\quad x \mid y
+\boxed{\;[x] \preceq [y] \quad\iff\quad x \mid y\;}
 $$
 is well defined and is a partial order.</p>
 <p><strong>Proof.</strong> If $[x]=[x']$ and $[y]=[y']$ then $x' \mid x \mid y \mid y'$, so $x' \mid y'$ by (EPT2), and $\preceq$ does not depend on the representatives. Reflexivity and transitivity of $\preceq$ are those of $\mid$. For antisymmetry, if $[x] \preceq [y]$ and $[y] \preceq [x]$ then $x \sim y$, so $[x]=[y]$.</p>
@@ -217,7 +217,7 @@ $$</p>
 <h3 id="the-two-forms-of-strong-supplementation">The Two Forms of Strong Supplementation</h3>
 <p>The literature states strong supplementation in two forms, which differ exactly in whether the witness is required to be disjoint from the second object or merely not a part of it. The <strong>disjoint form</strong> is</p>
 <p>$$
-x \nleq y \;\Rightarrow\; \exists z\,(z \le x \wedge z \perp y) ,
+\boxed{\;x \nleq y \;\Rightarrow\; \exists z\,(z \le x \wedge z \perp y)\;} ,
 $$</p>
 <p>written $(\mathrm{SSP}_\perp)$ below.</p>
 <p><strong>Proposition.</strong> $(\mathrm{SSP}_\perp)$ implies (SSP).</p>
@@ -277,7 +277,7 @@ $$</p>
 <h2 id="extensionality">Extensionality</h2>
 <p><strong>Definition.</strong> Parthood $\le$ is <strong>extensional</strong> when objects with the same proper parts are equal:</p>
 <p>$$
-\forall z\,(z < x \iff z < y) \;\Rightarrow\; x = y .
+\boxed{\;\forall z\,(z < x \iff z < y) \;\Rightarrow\; x = y\;} .
 $$</p>
 <p>The condition is written (EXT) below.</p>
 <p>Extensionality is the mereological form of the axiom of the same name in set theory, and it is a separate postulate: the parthood axioms do not imply it. What is less often said is that it is also independent of antisymmetry, in the strong sense that neither property implies the other. Two orders of two elements settle it.</p>

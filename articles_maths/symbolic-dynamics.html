@@ -78,7 +78,7 @@
 <h3 id="the-full-shift">The Full Shift</h3>
 <p><strong>Definition.</strong> Let $\mathcal A=\{0,1,\dots,d-1\}$ be a finite <strong>alphabet</strong> of cardinality $d \ge2$. The <strong>full shift</strong> on $\mathcal A$ is the set</p>
 <p>$$
-\Sigma_d=\mathcal A^{\mathbb{Z}}=\{x=(x_n)_{n \in\mathbb{Z}}:x_n \in\mathcal A\}
+\boxed{\;\Sigma_d=\mathcal A^{\mathbb{Z}}=\{x=(x_n)_{n \in\mathbb{Z}}:x_n \in\mathcal A\}\;}
 $$</p>
 <p>with the <strong>shift</strong> $\sigma:\Sigma_d\to\Sigma_d$, $(\sigma x)_n=x_{n+1}$; the one-sided full shift is $\Sigma_d^+=\mathcal A^{\mathbb{N}}$ with the same formula. The set carries the product topology of the discrete topologies, which is induced by the metric</p>
 <p>$$
@@ -97,7 +97,7 @@ $$</p>
 <p>with $\mathcal L_n(X)=\mathcal L(X)\cap\mathcal A^n$; a subshift is <strong>determined</strong> by its language, and the <strong>forbidden words</strong> of $X$ are the words that do not occur in it, so that $X=\{x:\text{no block of } x \text{ is forbidden}\}$.</p>
 <p><strong>Theorem (entropy and the language).</strong> Let $X$ be a subshift. Then the topological entropy of the shift restricted to $X$ is</p>
 <p>$$
-h_{\mathrm{top}}(\sigma|_X)=\lim_{n\to\infty}\frac1n\log|\mathcal L_n(X)|,
+\boxed{\;h_{\mathrm{top}}(\sigma|_X)=\lim_{n\to\infty}\frac1n\log|\mathcal L_n(X)|\;},
 $$</p>
 <p>the exponential growth rate of the language.</p>
 <p><em>Proof (sketch).</em> The language of the join of the covers by the cylinders gives exactly $|\mathcal L_n(X)|$, and the limit formula for the entropy of a subshift follows from the Morse–Hedlund theory of the complexity; the logarithm of the number of the words of length $n$ counts the orbits distinguishable at resolution $n$.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p>(i) $h_{\mathrm{top}}(\sigma|_X)=\log\rho(A)$, where $\rho(A)$ is the spectral radius, and the entropy is realised by the measure corresponding to the Perron eigenvector of $A$;</p>
 <p>(ii) the number of fixed points of $\sigma^n$ satisfies $p_n=\operatorname{tr}(A^n)$, and the <strong>zeta function</strong> of the subshift,</p>
 <p>$$
-\zeta_X(t)=\exp\Bigl(\sum_{n\ge1}\frac{p_n}{n}t^n\Bigr)=\frac1{\det(I-tA)},
+\boxed{\;\zeta_X(t)=\exp\Bigl(\sum_{n\ge1}\frac{p_n}{n}t^n\Bigr)=\frac1{\det(I-tA)}\;},
 $$</p>
 <p>is rational, the identity being the formula of Bowen and Lanford;</p>
 <p>(iii) the entropy is positive exactly when $\rho(A)>1$; for a primitive $A$ the growth of the periodic points is $p_n=\operatorname{tr}(A^n)\sim\rho(A)^n$, while for an irreducible matrix that is periodic of period $m$ the maximal eigenvalues are $m$ distinct numbers of modulus $\rho(A)$ and $p_n$ carries a periodic factor, so that no single exponential asymptotic holds.</p>

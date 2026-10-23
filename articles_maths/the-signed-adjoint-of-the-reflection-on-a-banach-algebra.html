@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-reflection">The Adjoint of the Reflection</h2>
 <p><strong>Theorem (the explicit form).</strong> For every unit $u$, the reflection is adjointable and</p>
 <p>$$
-(\rho_u)^\dagger = \rho_{\delta(u)} , \qquad (\rho_u)^\dagger(x) = \delta(u)\,\alpha(x)\,\delta(u)^{-1} .
+\boxed{\;(\rho_u)^\dagger = \rho_{\delta(u)} , \qquad (\rho_u)^\dagger(x) = \delta(u)\,\alpha(x)\,\delta(u)^{-1}\;} .
 $$</p>
 <p>The adjoint of a reflection is the reflection at the image of the parameter under the composite $\delta = \sigma\alpha$.</p>
 <p><strong>Proof.</strong> The reflection is the signed sandwich $\Sigma^\alpha_{u,u^{-1}}$, whose adjoint is $\Sigma^\alpha_{\delta(u),\delta(u^{-1})} = \Sigma^\alpha_{\delta(u),\delta(u)^{-1}}$ by <em>The Signed Adjoint Sandwich on a Banach Algebra</em>; this is exactly $\rho_{\delta(u)}$.</p>
@@ -89,7 +89,7 @@ $$</p>
 <h2 id="self-adjointness-and-unitarity">Self-Adjointness and Unitarity</h2>
 <p><strong>Theorem (the centrality criterion).</strong> The reflection $\rho_u$ is self-adjoint if and only if the defect $\delta(u)u^{-1}$ is central:</p>
 <p>$$
-(\rho_u)^\dagger = \rho_u \iff \delta(u)u^{-1} \in Z(A) \quad (\text{a central unit}) .
+\boxed{\;(\rho_u)^\dagger = \rho_u \iff \delta(u)u^{-1} \in Z(A) \quad (\text{a central unit})\;} .
 $$</p>
 <p>Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whenever $u$ is a fixed point of $\delta$; the self-adjointness fails for a unit whose defect is not central.</p>
 <p><strong>Proof.</strong> $\rho_{\delta(u)} = \rho_u$ iff the two parametrising units differ by a central unit, because the parametrisation of the reflection group has kernel the central units: $\rho_p = \rho_q$ iff $q^{-1}p$ is central. With $p = \delta(u)$ and $q = u$ this is the centrality of $u^{-1}\delta(u)$, equivalently of $\delta(u)u^{-1}$.</p>

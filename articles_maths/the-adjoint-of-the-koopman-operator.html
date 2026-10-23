@@ -87,13 +87,13 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>adjoint</strong> $U_T^*$ is the bounded operator with $\int_X(U_Tf)\,\overline g\,d\mu=\int_X f\,\overline{U_T^*g}\,d\mu$ for all $f,g\in L^2(X,\mu)$; the adjoint exists by the Riesz representation theorem, and $U_T^*$ is an isometry because $U_T$ is.</p>
 <p><strong>Theorem (the adjoint is the Perron–Frobenius operator).</strong> Let $T$ preserve $\mu$ and let $U_T^*$ be the adjoint. Then $U_T^*$ is the <strong>Perron–Frobenius operator</strong> $P_T$, characterised by</p>
 <p>$$
-\int_A P_Tg\,d\mu=\int_{T^{-1}A}g\,d\mu \qquad \text{for all measurable } A,
+\boxed{\;\int_A P_Tg\,d\mu=\int_{T^{-1}A}g\,d\mu \qquad \text{for all measurable } A\;},
 $$</p>
 <p>and equivalently by $\int_X (U_Tf)\,g\,d\mu=\int_X f\,(P_Tg)\,d\mu$; if $T$ is invertible and measure-preserving, then $P_T=U_{T^{-1}}$ and $U_T^*=U_T^{-1}$, so that the adjoint is again a Koopman operator and the operator is unitary.</p>
 <p><em>Proof.</em> For $g\ge0$ the map $A\mapsto\int_{T^{-1}A}g\,d\mu$ is a measure absolutely continuous with respect to $\mu$ (by the preservation) and the Radon–Nikodym derivative is $P_Tg$; the change of variables $\int_X f(Tx)g(x)\,d\mu(x)=\int_X f(y)\,(P_Tg)(y)\,d\mu(y)$ is the defining duality. In the invertible case, $\int_{T^{-1}A}g\,d\mu=\int_A g(T^{-1}y)\,d\mu(y)$, so $P_Tg=g\circ T^{-1}=U_{T^{-1}}g$.</p>
 <p><strong>Theorem (the pointwise formula).</strong> Let $T$ be a smooth expanding map of a compact manifold preserving the measure with density $\rho$, and let $P_T$ act on functions; then</p>
 <p>$$
-(P_Tg)(x)=\sum_{y:\,T(y)=x}\frac{g(y)}{|\det DT(y)|}\cdot\frac{\rho(y)}{\rho(x)},
+\boxed{\;(P_Tg)(x)=\sum_{y:\,T(y)=x}\frac{g(y)}{|\det DT(y)|}\cdot\frac{\rho(y)}{\rho(x)}\;},
 $$</p>
 <p>that is, the sum over the preimages of $x$ of the value of $g$ divided by the Jacobian and weighted by the density ratio; in the case of the density $\rho=1$ of the Lebesgue measure of the doubling map the formula reduces to $P_Tg(x)=\tfrac12[g(x/2)+g((x+1)/2)]$, verified below.</p>
 <p><em>Proof.</em> The formula is the change of variables for each branch of the inverse of $T$ on a small neighbourhood of $x$; the sum is over the preimages, and the Jacobian and the density ratio are the local Radon–Nikodym factors. The formula is the standard one of the Perron–Frobenius theory, and the details of the branches and the overlaps are those of <em>The Transfer Operator</em>.</p>
@@ -113,7 +113,7 @@ $$</p>
 <h2 id="the-involution-and-the-adjoint">The Involution and the Adjoint</h2>
 <p><strong>Theorem (the reversible Koopman operator).</strong> Let $T$ be reversible with reversor $R$, $RTR=T^{-1}$, and suppose that $R$ preserves the measure $\mu$. Then the Koopman operator $U_R$ is unitary and</p>
 <p>$$
-U_T^*=U_{T^{-1}}=U_R\,U_T\,U_R,
+\boxed{\;U_T^*=U_{T^{-1}}=U_R\,U_T\,U_R\;},
 $$</p>
 <p>so that $U_T$ is conjugated to its inverse by the involution $U_R$; equivalently $U_T^*U_R=U_RU_T$, and the pair $(U_T,U_R)$ is a <strong>reversible operator</strong> structure: the unitary involution $U_R$ reverses the operator, in the exact operator analogue of the reversibility of the dynamics.</p>
 <p><em>Proof.</em> $U_R^2=U_{R^2}=\mathrm{id}$ because $R^2=\mathrm{id}$; $U_RU_TU_R=U_{RTR}=U_{T^{-1}}$; and $U_{T^{-1}}=U_T^*$ because $T$ is invertible and measure-preserving, by the adjoint theorem.</p>

@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> The <strong>self-adjoint set</strong> is $D^\sigma = \{x : \sigma(x) = x\}$ and the <strong>skew set</strong> is $\mathrm{Skew}(D) = \{x : \sigma(x) = -x\}$; an element is self-adjoint, or symmetric, if it lies in the first, and skew, or antisymmetric, if it lies in the second.</p>
 <p><strong>Theorem (closedness and the additive decomposition).</strong> Both $D^\sigma$ and $\mathrm{Skew}(D)$ are closed in $D$, being the equalizers of the continuous maps $\sigma$ and $\mathrm{id}$, respectively $\sigma$ and $-\mathrm{id}$; they are additive subgroups. When $2 = 1+1$ is invertible in $D$ the averaging elements $\tfrac12(x+\sigma(x))$ and $\tfrac12(x-\sigma(x))$ are continuous in $x$ and</p>
 <p>$$
-D = D^\sigma \oplus \mathrm{Skew}(D)
+\boxed{\;D = D^\sigma \oplus \mathrm{Skew}(D)\;}
 $$</p>
 <p>is a topological direct sum of additive topological groups; the projections are $\tfrac12(\mathrm{id}\pm\sigma)$. When $2$ is not invertible the two sets meet in the elements of order two of the characteristic, and the decomposition is not available.</p>
 <p><strong>Proof.</strong> The sets are equalizers of continuous maps, hence closed; they are additive because σ and −id are additive; the identities $\sigma(\tfrac12(x+\sigma(x)))=\tfrac12(\sigma(x)+x)$ and $\sigma(\tfrac12(x-\sigma(x)))=\tfrac12(\sigma(x)-x)=-\tfrac12(x-\sigma(x))$ show that the two averages lie in $D^\sigma$ and in the skew set, and their sum is $x$; the projections are continuous because σ and the scalar $\tfrac12$ are. When $2 = 0$ the two equations $\sigma(x)=x$ and $\sigma(x)=-x$ coincide, so the intersection is the whole kernel of $\sigma-\mathrm{id}$ read twice and the decomposition fails.</p>
@@ -92,11 +92,11 @@ $$</p>
 <h2 id="the-norm-form-and-anisotropy">The Norm Form and Anisotropy</h2>
 <p><strong>Theorem (the norm form).</strong> For every $x\in D$ the norm form $N(x) = x\sigma(x)$ is self-adjoint,</p>
 <p>$$
-\sigma(N(x)) = N(x) ,
+\boxed{\;\sigma(N(x)) = N(x)\;} ,
 $$</p>
 <p>and $N(x) = 0$ if and only if $x = 0$; hence $N$ is anisotropic. The norm form of $\sigma(x)$ is the $\sigma$-image of the norm form, $N(\sigma(x)) = \sigma(N(x))$, and the norm-one set</p>
 <p>$$
-\mathrm{U}(D,\sigma) = \{x\in D^\times : N(x) = 1\}
+\boxed{\;\mathrm{U}(D,\sigma) = \{x\in D^\times : N(x) = 1\}\;}
 $$</p>
 <p>is a closed subgroup of $D^\times$.</p>
 <p><strong>Proof.</strong> $\sigma(x\sigma(x)) = \sigma(\sigma(x))\sigma(x) = x\sigma(x)$, so the value is self-adjoint; in a division ring a product of nonzero elements is nonzero, so $N(x) = 0$ only for $x = 0$; and $N(\sigma(x)) = \sigma(x)\sigma(\sigma(x)) = \sigma(x)x = \sigma(N(x))$. For the subgroup: if $N(u) = 1$ then $\sigma(u)u = \sigma(u\sigma(u)) = \sigma(N(u)) = 1$, so $\sigma(u) = u^{-1}$ and $N(u^{-1}) = u^{-1}\sigma(u)^{-1} = u^{-1}u = 1$; and if $N(u) = N(v) = 1$ then $N(uv) = uv\,\sigma(v)\sigma(u) = u\,(v\sigma(v))\,\sigma(u) = u\,\sigma(u) = 1$, the middle factor telescoping. Closedness is the continuity of $N$ on $D^\times$.</p>

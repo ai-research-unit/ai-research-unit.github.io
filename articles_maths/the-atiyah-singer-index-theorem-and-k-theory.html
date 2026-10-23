@@ -157,7 +157,7 @@ $$</p>
 <p>in which the first map is the Thom isomorphism of the normal bundle, the second is the excision isomorphism carried by the tubular neighbourhood, and the last is the Bott periodicity isomorphism of the tangent bundle of $\mathbb{R}^{N}$. The composite is independent of the embedding, and it is the map that assigns to a symbol class the index of any elliptic operator having that symbol.</p>
 <p><strong>Theorem (Atiyah–Singer).</strong> Let $M$ be a closed smooth manifold and let $D$ be an elliptic operator on $M$. Then</p>
 <p>$$
-\operatorname{ind}_a(D)=\operatorname{ind}_t\bigl([\sigma(D)]\bigr).
+\boxed{\;\operatorname{ind}_a(D)=\operatorname{ind}_t\bigl([\sigma(D)]\bigr)\;}.
 $$</p>
 <p>In particular the analytic index depends only on the symbol class, and the symbolic homomorphism $\operatorname{ind}_a$ of the previous section equals the topological homomorphism.</p>
 <p><strong>Proof sketch.</strong> Both sides are homomorphisms $K^0_c(TM)\to\mathbb{Z}$; the symbol map $\sigma\mapsto[\sigma(D)]$ is an isomorphism from the symbol classes to $K^0_c(TM)$ (the difference construction), so it suffices to verify the identity on a generating set. One checks it for the Bott class, for which the operator is the Dolbeault operator on a projective space and the index is computed by a direct dimension count; multiplicativity under products and the naturality of the symbol and the topological index then extend the identity to all classes. This is the proof of Atiyah–Singer; the heat-kernel proof of the next section is the alternative.</p>
@@ -167,7 +167,7 @@ $$</p>
 $$</p>
 <p>and for the Cauchy–Riemann operator of the spinor bundle twisted by a Clifford module bundle $W$ on a closed spin manifold $M$,</p>
 <p>$$
-\operatorname{ind}=\int_M\hat{A}(TM)\wedge\operatorname{ch}(W).
+\boxed{\;\operatorname{ind}=\int_M\hat{A}(TM)\wedge\operatorname{ch}(W)\;}.
 $$</p>
 <p>In general the Chern character converts the $K$-theoretic statement into a cohomological one: the cohomological Thom isomorphism is multiplication by a characteristic class of the bundle — the Todd class in the complex case — and the remaining step is the integration over the manifold.</p>
 <p><strong>Proof sketch.</strong> The cohomological version follows from the $K$-theoretic statement by applying the Chern character, which converts the Thom isomorphism into multiplication by the Todd class and the pushforward into integration over the manifold.</p>
@@ -182,7 +182,7 @@ $$</p>
 <h2 id="the-spin-case-and-examples">The Spin Case and Examples</h2>
 <p><strong>Theorem (spin case).</strong> Let $(M,g)$ be a closed spin manifold of even dimension, let $E=S\otimes W$ be a twisted Clifford module bundle with twisting bundle $W$, and let $D_E$ be the twisted Cauchy–Riemann operator. Then the symbol class is the class of the spinor bundle together with the twisting, and the index reduces to the characteristic number</p>
 <p>$$
-\operatorname{ind}(D_E)=\int_M\hat{A}(TM)\operatorname{ch}(W).
+\boxed{\;\operatorname{ind}(D_E)=\int_M\hat{A}(TM)\operatorname{ch}(W)\;}.
 $$</p>
 <p>In particular, for untwisted $W$ the index is the $\hat{A}$-genus of $M$, and the spin case of the theorem is the statement that the index of the Cauchy–Riemann operator is a topological characteristic number.</p>
 <p><strong>Proof.</strong> The symbol of $D_E$ is Clifford multiplication by $i\xi$, invertible off the zero section, so the operator is elliptic and its symbol class is the $K$-theory class of the twisted spinor bundle, the class of the spinor bundle multiplied by the class of $W$. Substituting this class in the cohomological form of the theorem gives the stated density: the Thom isomorphism converts the symbol class into a characteristic class on $M$, and the standard computation of the index density of the Cauchy–Riemann operator — the Chern character of the spinor bundle under the Thom isomorphism, its multiplicativity $\operatorname{ch}(S\otimes W)=\operatorname{ch}(S)\operatorname{ch}(W)$, and the identification of the spinor class with the $\hat{A}$-class — produces $\hat{A}(TM)\operatorname{ch}(W)$ in the top degree. For $W$ trivial the density is $\hat{A}(TM)$, and the index is the $\hat{A}$-genus.</p>

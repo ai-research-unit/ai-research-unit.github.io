@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-doob-decomposition">The Doob Decomposition</h3>
 <p><strong>Theorem (Doob decomposition).</strong> Let $\{X_n\}$ be a submartingale. Then there is a martingale $\{M_n\}$ and a predictable increasing process $\{A_n\}$ with $A_0 = 0$ such that</p>
 <p>$$
-X_n = M_n + A_n \qquad \text{for all } n,
+\boxed{\;X_n = M_n + A_n \qquad \text{for all } n\;},
 $$</p>
 <p>and the decomposition is unique up to an a.s. equivalence. Here predictable means $A_n$ is $\mathcal{F}_{n-1}$-measurable, and increasing means $A_{n+1} \geq A_n$ a.s. The first differences are $A_{n+1} - A_n = \mathbb{E}[X_{n+1} - X_n \mid \mathcal{F}_n]$.</p>
 <p>The decomposition separates a submartingale into its martingale part and its systematic drift, and it is the discrete form of the Doob–Meyer decomposition of continuous-time semimartingales. The predictable increasing process is the compensator, and in the theory of the stochastic integral it is the object against which an integrand is integrated.</p>
@@ -119,7 +119,7 @@ $$</p>
 <p>The maximal inequality is the martingale form of the Kolmogorov inequality of <em>Laws of Large Numbers and the Central Limit Theorem</em>, and it is the engine of the almost-sure convergence theorem below. Its $L^{n}$ version is the following.</p>
 <p><strong>Theorem (Doob's $L^{n}$ inequality).</strong> For a nonnegative submartingale and $p > 1$,</p>
 <p>$$
-\|X_n^*\|_p \leq \frac{p}{p-1}\,\|X_n\|_p,
+\boxed{\;\|X_n^*\|_p \leq \frac{p}{p-1}\,\|X_n\|_p\;},
 $$</p>
 <p>and for a martingale the same inequality holds with $|X|$ in place of $X$ and $X_n^{**} = \max_{k\leq n}|X_k|$.</p>
 <p>The constant $p/(p-1)$ is the best possible, and the inequality is the reason the martingale transform and the stochastic integral are bounded operators on $L^{n}$. The case $p = 2$ gives $\|X_n^*\|_2 \leq 2\|X_n\|_2$ and is the form used in the martingale central limit theorem.</p>
@@ -155,7 +155,7 @@ $$</p>
 <h3 id="optional-stopping">Optional Stopping</h3>
 <p><strong>Theorem (optional stopping).</strong> Let $\{X_n\}$ be a uniformly integrable martingale and let $\sigma \leq \tau$ be stopping times. Then $X_\sigma, X_\tau$ are integrable and</p>
 <p>$$
-\mathbb{E}[X_\tau \mid \mathcal{F}_\sigma] = X_\sigma \qquad \text{a.s.}; \qquad \text{in particular } \mathbb{E}[X_\tau] = \mathbb{E}[X_0].
+\boxed{\;\mathbb{E}[X_\tau \mid \mathcal{F}_\sigma] = X_\sigma \qquad \text{a.s.}; \qquad \text{in particular } \mathbb{E}[X_\tau] = \mathbb{E}[X_0]\;}.
 $$</p>
 <p><em>Proof.</em> The stopped process $X^\tau$ is a uniformly integrable martingale, and by the convergence theorem it converges a.s. and in $L^1$ to $X_\tau$. Applying the martingale property at the stopping time $\sigma$ to the stopped process gives the displayed identity, the measurability of $X_\sigma$ being established by the definition of $\mathcal{F}_\sigma$.</p>
 <p><strong>Corollary.</strong> If $\{X_n\}$ is a martingale and $\tau$ is a stopping time with $\mathbb{P}(\tau \leq N) = 1$ for some finite $N$, then $\mathbb{E}[X_\tau] = \mathbb{E}[X_0]$. Consequently for a simple symmetric random walk $\{S_n\}$ and the passage times $\tau_a = \inf\{n : S_n = a\}$, $\tau_{-b} = \inf\{n : S_n = -b\}$, the <strong>gambler's ruin</strong> probability is</p>

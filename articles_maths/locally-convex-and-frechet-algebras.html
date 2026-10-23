@@ -111,7 +111,7 @@ $$</p>
 <p>is a Banach algebra, the <strong>Banach quotient algebra</strong> associated with $p_\alpha$. For $\beta \geq \alpha$, meaning $p_\alpha \leq C p_\beta$ for a constant, the canonical map $\pi_{\alpha\beta} : A_\beta \to A_\alpha$ is a continuous algebra homomorphism of norm at most $C$; the family $\{A_\alpha, \pi_{\alpha\beta}\}$ is an inverse system of Banach algebras.</p>
 <p><strong>Theorem.</strong> Let $A$ be a locally m-convex algebra. Then the canonical map</p>
 <p>$$
-A \longrightarrow \varprojlim_\alpha A_\alpha , \qquad x \longmapsto (x + N_\alpha)_\alpha ,
+\boxed{\;A \longrightarrow \varprojlim_\alpha A_\alpha , \qquad x \longmapsto (x + N_\alpha)_\alpha\;} ,
 $$</p>
 <p>is a topological algebra isomorphism onto its image; it is onto, and therefore a topological isomorphism onto the projective limit, if and only if $A$ is complete.</p>
 <p><strong>Proof.</strong> The map is an algebra homomorphism because each quotient map is; it is continuous because the topology on the projective limit is the initial topology of the maps to the $A_\alpha$ and each of these is continuous. It is injective because $\bigcap_\alpha N_\alpha = \{0\}$ by the Hausdorff condition on the seminorm family. Its inverse on the image is continuous because a seminorm $p_\alpha$ of the algebra is recovered from the norm of the factor $A_\alpha$, and a net converging in the projective limit converges in each $A_\alpha$, hence is Cauchy for each $p_\alpha$. If $A$ is complete the image is closed, being the image of a complete space under an embedding, and the image is dense because a thread $(x_\alpha)$ may be approximated by elements of $A$: for each $\alpha$ the density of $A/N_\alpha$ in $A_\alpha$ lets one lift the components, and a diagonal argument using the completeness of $A$ produces a preimage.</p>
@@ -149,7 +149,7 @@ $$</p>
 <p><strong>Proof.</strong> This is the Gelfand theory of <em>Topological Algebras and Banach Algebras</em>: the characters are the continuous homomorphisms to $\mathbb{C}$, the maximal ideals are their kernels and are closed, the character space is compact in the weak-star topology by Banach–Alaoglu, and the spectral radius formula is the consequence of the convergence of the resolvent series.</p>
 <p><strong>Theorem (Gelfand theory of Fréchet m-algebras).</strong> Let $A$ be a commutative unital Fréchet locally m-convex algebra over $\mathbb{C}$. Then every character is continuous, the Gelfand transform $x \mapsto \mathcal F x$ is a continuous algebra homomorphism of $A$ into $C(\operatorname{Max}(A))$, and</p>
 <p>$$
-\sigma_A(x) \supseteq \{\chi(x) : \chi \in \operatorname{Max}(A)\}, \qquad r_A(x) \geq \sup_{\chi \in \operatorname{Max}(A)}\lvert\chi(x)\rvert .
+\boxed{\;\sigma_A(x) \supseteq \{\chi(x) : \chi \in \operatorname{Max}(A)\}, \qquad r_A(x) \geq \sup_{\chi \in \operatorname{Max}(A)}\lvert\chi(x)\rvert\;} .
 $$</p>
 <p>If $A$ is a Banach algebra the inclusions are equalities and the supremum is attained.</p>
 <p><strong>Proof.</strong> Continuity of every character is Michael's theorem. The Gelfand transform is multiplicative and continuous because each $\mathcal F x$ is continuous in the weak-star topology and because a character satisfies $\lvert\chi(x)\rvert \leq p(x)$ for a generating submultiplicative seminorm, whence the transform is bounded by that seminorm. The inclusion $\{\chi(x)\} \subseteq \sigma_A(x)$ holds because a character carries invertible elements to invertible elements of $\mathbb{C}$: if $xy = 1$ then $\chi(x)\chi(y) = 1$, so $\chi(x) \neq 0$ and $x - \chi(x)$ is not invertible. The inequality for the spectral radius follows; the Banach case is the preceding proposition.</p>
@@ -173,7 +173,7 @@ $$</p>
 <p>for an increasing generating sequence $(p_n)$, as in <em>Fréchet Spaces</em>.</p>
 <p><strong>Proposition.</strong> The following inclusions are strict:</p>
 <p>$$
-\{\text{Banach algebras}\} \subsetneq \{\text{Fréchet m-algebras}\} \subsetneq \{\text{Fréchet algebras}\} .
+\boxed{\;\{\text{Banach algebras}\} \subsetneq \{\text{Fréchet m-algebras}\} \subsetneq \{\text{Fréchet algebras}\}\;} .
 $$</p>
 <p><strong>Proof.</strong> A Banach algebra is a Fréchet m-algebra, and $C^\infty[0,1]$ with its usual topology is a Fréchet algebra which is not normable: by the criterion of <em>Locally Convex Spaces</em>, a metrisable locally convex space is normable exactly when it has a bounded neighbourhood of $0$, and no neighbourhood of $0$ in $C^\infty[0,1]$ is bounded, since a neighbourhood defined by bounds on finitely many derivatives contains functions whose derivatives of the next order are arbitrarily large. Hence the first inclusion is strict. Arens's algebra below is a Fréchet algebra which is not locally m-convex, so the second inclusion is strict.</p>
 <p><strong>Theorem (Arens–Michael, Fréchet case).</strong> A Fréchet algebra which is locally m-convex is the projective limit of a sequence of Banach algebras; equivalently, a Fréchet m-algebra is exactly a closed subalgebra of a countable product of Banach algebras.</p>

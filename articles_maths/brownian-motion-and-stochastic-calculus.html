@@ -99,7 +99,7 @@ $$</p>
 <p><strong>Definition.</strong> For a partition $\Pi = \{0 = t_0 < t_1 < \dots < t_n = t\}$ of $[0,t]$ the <strong>quadratic variation</strong> of a process $X$ along $\Pi$ is $V_\Pi(X)_t = \sum_{i}(X_{t_{i+1}}-X_{t_i})^2$, and the process has finite quadratic variation if the sums converge in probability as the mesh of the partition tends to $0$.</p>
 <p><strong>Theorem (quadratic variation of Brownian motion).</strong> The quadratic variation of Brownian motion exists and equals the elapsed time:</p>
 <p>$$
-\sum_{i=1}^{n}(B_{t_{i+1}}-B_{t_i})^2 \longrightarrow t \qquad \text{in } L^2 \text{ and a.s. along refining sequences},
+\boxed{\;\sum_{i=1}^{n}(B_{t_{i+1}}-B_{t_i})^2 \longrightarrow t \qquad \text{in } L^2 \text{ and a.s. along refining sequences}\;},
 $$</p>
 <p>as the mesh of the partition tends to $0$. In particular the total variation of the path is infinite a.s. on every interval.</p>
 <p><em>Proof.</em> The expectation of the sum is $t$ and the variance is $2\sum_i(t_{i+1}-t_i)^2 \leq 2\,t\,|\Pi|$, which tends to $0$; the $L^2$ convergence follows, and the almost-sure statement from a subsequence and a Borel–Cantelli argument.</p>
@@ -144,7 +144,7 @@ $$</p>
 <h3 id="itos-formula">Itô's Formula</h3>
 <p><strong>Theorem (Itô's formula).</strong> Let $f : \mathbb{R}\times\mathbb{R}\to\mathbb{R}$ be of class $C^{1,2}$ and let $X_t = X_0 + \int_0^t K_s\,ds + \int_0^t H_s\,dB_s$ be a continuous semimartingale. Then</p>
 <p>$$
-f(t, X_t) = f(0, X_0) + \int_0^t \partial/\partial t\,f(s,X_s)\,ds + \int_0^t \partial/\partial x\,f(s,X_s)\,dX_s + \frac{1}{2}\int_0^t \partial^2/\partial x^2f(s,X_s)\,d\langle X\rangle_s,
+\boxed{\;f(t, X_t) = f(0, X_0) + \int_0^t \partial/\partial t\,f(s,X_s)\,ds + \int_0^t \partial/\partial x\,f(s,X_s)\,dX_s + \frac{1}{2}\int_0^t \partial^2/\partial x^2f(s,X_s)\,d\langle X\rangle_s\;},
 $$</p>
 <p>where the middle integral is the sum of a Lebesgue integral against $K$ and an Itô integral against $H$, and $\langle X\rangle_s = \int_0^s H_u^2\,du$ is the quadratic variation of the martingale part. For the Brownian motion itself, with $dX = dB$ and $d\langle X\rangle = dt$,</p>
 <p>$$
@@ -210,7 +210,7 @@ $$</p>
 <h3 id="the-feynmankac-formula">The Feynman–Kac Formula</h3>
 <p><strong>Theorem (Feynman–Kac).</strong> Let $V : \mathbb{R}^d\to\mathbb{R}$ be bounded and continuous from below, let $f$ be bounded and continuous, and define</p>
 <p>$$
-u(t,x) = \mathbb{E}^x\!\left[\exp\!\left(-\int_0^tV(B_s)\,ds\right)f(B_t)\right].
+\boxed{\;u(t,x) = \mathbb{E}^x\!\left[\exp\!\left(-\int_0^tV(B_s)\,ds\right)f(B_t)\right]\;}.
 $$</p>
 <p>Then $u$ is of class $C^{1,2}$ on $(0,\infty)\times\mathbb{R}^d$, and it solves the parabolic equation</p>
 <p>$$

@@ -104,7 +104,7 @@ m_t=m_0+t m_1+t^2m_2+\cdots \in C^2(A,A)[[t]]
 $$</p>
 <p>of the <strong>Maurer–Cartan equation</strong></p>
 <p>$$
-\partial m_t+\tfrac{1}{2}[m_t,m_t]=0,
+\boxed{\;\partial m_t+\tfrac{1}{2}[m_t,m_t]=0\;},
 $$</p>
 <p>where $m_0$ is the multiplication of $A$ and $\partial=[m_0,-]$ is the Hochschild coboundary, and where two solutions are equivalent when they differ by the gauge action of the degree-zero part of the differential graded Lie algebra. The first-order coefficient $m_1$ is a $2$-cocycle, the obstruction to extending a partial deformation to the next order is the class of $\tfrac{1}{2}[m_t,m_t]$ in $HH^3(A,A)$, and the deformation is unobstructed when this class vanishes at every stage.</p>
 <p><em>Proof (in outline).</em> The associativity of $m_t$ is equivalent to the single equation $\tfrac{1}{2}[m_t,m_t]=0$ in the convolution algebra of cochains, where the bracket is the Gerstenhaber bracket of <em>Hochschild Homology</em>; the homotopy invariance of the bracket under the differential gives $\partial m_t+\tfrac12[m_t,m_t]=0$ once the linear term is separated. Expanding in powers of $t$, the coefficient of $t^n$ expresses $2\partial m_n$ in terms of the lower coefficients and their brackets; a partial deformation to order $n$ extends to order $n+1$ exactly when a certain $3$-cocycle is a coboundary, and this cocycle is $\sum_{i+j=n}[m_i,m_j]$. The gauge action is the action of the degree-zero cochains by the inner automorphisms of the differential graded Lie algebra, and it implements the change of variable $a\mapsto a+tg(a)+\cdots$ that leaves the multiplication equivalent.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>formal moduli space</strong> of $A$ is the functor $\operatorname{Def}_A$ of the first definition; when it is represented by a complete local $k$-algebra $\widehat{\mathcal{O}}$ in the sense that $\operatorname{Def}_A(R)=\operatorname{Hom}_{\mathrm{loc}}(\widehat{\mathcal{O}},R)$ for every Artinian local $R$, the algebra $\widehat{\mathcal{O}}$ is the <strong>versal base</strong> of the deformations.</p>
 <p><strong>Theorem.</strong> If the deformation functor is unobstructed and $HH^2(A,A)$ is finite-dimensional over $k$ then the formal moduli space is the formal spectrum of the power series ring $k[[t_1,\dots,t_d]]$ with $d=\dim_kHH^2(A,A)$, and the <strong>Kuranishi map</strong></p>
 <p>$$
-\kappa:HH^2(A,A)\longrightarrow HH^3(A,A)
+\boxed{\;\kappa:HH^2(A,A)\longrightarrow HH^3(A,A)\;}
 $$</p>
 <p>given by the quadratic obstruction $\kappa(\alpha)=\tfrac12[\alpha,\alpha]$ is the only data needed to present the versal deformation as the zero locus of the Maurer–Cartan equation.</p>
 <p><em>Proof (in outline).</em> Unobstructedness makes the deformation functor isomorphic to the functor of points of the power series ring on the dual of $HH^2$, by the theorem of the Maurer–Cartan equation; the Kuranishi map is the quadratic form induced by the bracket, and its vanishing locus is the image of the deformation functor in the tangent space.</p>
@@ -145,7 +145,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>Hochschild cochain complex</strong> of $A$ with coefficients in $A$ is the differential graded Lie algebra $C^{\bullet}(A,A)$ with the composition product of <em>Hochschild Homology</em>, whose associated graded Lie bracket is the Gerstenhaber bracket $[,]$ and whose differential is $\partial=[m,-]$ with $m$ the multiplication; the bracket satisfies the graded Jacobi identity and the Leibniz rule with respect to $\partial$, so $(C^{\bullet}(A,A),\partial,[,])$ is a differential graded Lie algebra.</p>
 <p><strong>Theorem (Deligne, as formulated in the associative case).</strong> The deformation functor $\operatorname{Def}_A$ is the <strong>Maurer–Cartan functor</strong> of the differential graded Lie algebra $C^{\bullet}(A,A)$:</p>
 <p>$$
-\operatorname{Def}_A(R)=\operatorname{MC}\bigl(C^{\bullet}(A,A)\otimes_k\mathrm{M}_R\bigr)/\text{gauge},
+\boxed{\;\operatorname{Def}_A(R)=\operatorname{MC}\bigl(C^{\bullet}(A,A)\otimes_k\mathrm{M}_R\bigr)/\text{gauge}\;},
 $$</p>
 <p>where $\operatorname{MC}(\mathrm{G}\otimes\mathrm{M})=\{x \in \mathrm{G}^1\otimes\mathrm{M}:\partial x+\tfrac12[x,x]=0\}$ is the set of Maurer–Cartan elements and the gauge group is the degree-zero part of the differential graded Lie algebra acting by the exponential. In particular the tangent space of the deformation functor is $HH^2(A,A)$, the obstruction space is $HH^3(A,A)$, and the automorphism group of a deformation is computed by $HH^1$ and $HH^0$.</p>
 <p><em>Proof (in outline).</em> The identification of the Maurer–Cartan elements with the associative products is the theorem of the Maurer–Cartan equation above; the gauge action is the action of the degree-zero cochains by conjugating the product, and its orbits are the equivalence classes. The tangent space of the functor at the trivial deformation is the space of $1$-cocycles modulo coboundaries by the standard computation in the differential graded Lie algebra, and the obstruction space is the next cohomology.</p>

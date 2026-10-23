@@ -82,7 +82,7 @@ $$</p>
 <p>The two sums agree by the substitution $z = y^{-1}x$, and both are finite: only the finitely many $y$ in $\operatorname{supp} f$ contribute, and for each of them only the finitely many $z$ in $\operatorname{supp} g$ contribute.</p>
 <p><strong>Proposition (bilinearity).</strong> Convolution is bilinear: $(f_1+f_2)*g = f_1*g + f_2*g$, $f*(g_1+g_2) = f*g_1 + f*g_2$, and $(\lambda f)*g = f*(\lambda g) = \lambda(f*g)$ for $\lambda \in k$. Its support satisfies</p>
 <p>$$
-\operatorname{supp}(f*g) \subseteq (\operatorname{supp} f)(\operatorname{supp} g),
+\boxed{\;\operatorname{supp}(f*g) \subseteq (\operatorname{supp} f)(\operatorname{supp} g)\;},
 $$</p>
 <p>and in particular is finite.</p>
 <p><strong>Proof.</strong> Bilinearity is the distributivity of the finite sum. If $yz = x$ with $f(y) \neq 0$ and $g(z) \neq 0$ then $x$ is a product of an element of $\operatorname{supp} f$ and one of $\operatorname{supp} g$, which is the inclusion; it is finite because a product of two finite sets is finite.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p>The only point to check is that the reorganisation is legitimate, and it is: the index set is finite, so the sum is a finite sum and associativity of addition applies term by term.</p>
 <p><strong>Corollary.</strong> The finitely supported functions form an associative $k$-algebra under convolution, with identity $\delta_e$. The map $a \mapsto \delta_a$ is an injective homomorphism of the group $G$ into the units of this algebra, and</p>
 <p>$$
-\delta_a * \delta_b = \delta_{ab}, \qquad \delta_a^{-1} = \delta_{a^{-1}} .
+\boxed{\;\delta_a * \delta_b = \delta_{ab}, \qquad \delta_a^{-1} = \delta_{a^{-1}}\;} .
 $$</p>
 <p><strong>Proof.</strong> The identity is $\delta_e$, since $(\delta_e*g)(x) = g(\exp(-1)x) = g(x)$ and $(g*\delta_e)(x) = g(xe^{-1}) = g(x)$. For the products, $\delta_a*\delta_b = \delta_{ab}$ by the definition with the unique contributing pair $y = a$, $z = b$. Injectivity is clear from $\delta_a(e) \neq \delta_b(e)$ for $a \neq b$.</p>
 <p>The corollary identifies the convolution algebra of finitely supported functions with the <strong>group algebra</strong> $k[G]$ of <em>Group Algebras</em>: the definition above is the multiplication of that algebra, written on functions instead of on formal sums. The identification is the reason convolution is the natural product on functions on a group, and it is used without further comment.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p><strong>Definition.</strong> For a finitely supported $\phi$ the <strong>convolution operator</strong> $T_\phi$ is the map $f \mapsto \phi * f$ on functions.</p>
 <p><strong>Proposition.</strong> $T_\phi$ is a continuous linear operator on $C(G)$, and it is a finite linear combination of translations,</p>
 <p>$$
-T_\phi = \sum_{a} \phi(a)\,L_a .
+\boxed{\;T_\phi = \sum_{a} \phi(a)\,L_a\;} .
 $$</p>
 <p><strong>Proof.</strong> $\phi = \sum_a \phi(a)\delta_a$ as a finite sum, and convolution is bilinear, so $\phi * f = \sum_a \phi(a)(\delta_a * f) = \sum_a \phi(a) L_a f$, a finite linear combination of the continuous operators $L_a$; a finite linear combination of continuous operators is continuous.</p>
 <p><strong>Corollary.</strong> The assignment $\phi \mapsto T_\phi$ is an injective algebra homomorphism from $k[G]$ into the algebra of continuous operators on $C(G)$; its image is the algebra of finite linear combinations of translations, and $T_{\phi*\psi} = T_\phi \circ T_\psi$.</p>

@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> For $T : X \to X$ linear, $T$ is <strong>bounded</strong> when $\lVert T\rVert = \sup\{\lVert Tx\rVert : \lVert x\rVert \leq 1\} < +\infty$, and $B(X)$ is the set of bounded linear operators on $X$.</p>
 <p><strong>Theorem ($B(X)$ is a unital Banach algebra).</strong> $B(X)$ is a unital associative algebra under pointwise linear structure, composition and the identity $\mathrm{id}$, the operator norm is submultiplicative,</p>
 <p>$$
-\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1 ,
+\boxed{\;\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1\;} ,
 $$</p>
 <p>and $B(X)$ is complete for it. The multiplication $(S,T) \mapsto ST$ is continuous, and a linear $T$ is bounded exactly when it is continuous.</p>
 <p><strong>Proof.</strong> Composition is associative and bilinear, with unit $\mathrm{id}$. Submultiplicativity is $\lVert STx\rVert \leq \lVert S\rVert\lVert Tx\rVert \leq \lVert S\rVert\lVert T\rVert\lVert x\rVert$. Completeness and the equivalence of boundedness with continuity are those of the operator space of <em>Normed and Banach Spaces</em>: a Cauchy sequence of operators converges uniformly on the unit ball, its limit is linear and bounded, and continuity of $T$ is the existence of the bound $\lVert Tx\rVert \leq \lVert T\rVert\lVert x\rVert$.</p>
@@ -112,12 +112,12 @@ $$</p>
 <p>and the <strong>resolvent set</strong> is its complement; the <strong>spectral radius</strong> is $r(T) = \sup\{\lvert\lambda\rvert : \lambda \in \sigma(T)\}$.</p>
 <p><strong>Theorem (the unit group is open and inversion is continuous).</strong> The unit group $B(X)^{\times}$ is open in $B(X)$, inversion $T \mapsto T^{-1}$ is continuous on it, and $B(X)^{\times}$ is a topological group for the subspace topology. If $\lVert T - \mathrm{id}\rVert < 1$ then $T$ is invertible with</p>
 <p>$$
-T^{-1} = \sum_{n\geq0}(\mathrm{id} - T)^n .
+\boxed{\;T^{-1} = \sum_{n\geq0}(\mathrm{id} - T)^n\;} .
 $$</p>
 <p><strong>Proof.</strong> The Neumann series $\sum(\mathrm{id}-T)^n$ converges absolutely when $\lVert \mathrm{id} - T\rVert < 1$, by submultiplicativity and completeness, and its sum is an inverse. For openness at a general invertible $T$, write $S = T + H = T(\mathrm{id} + T^{-1}H)$, invertible when $\lVert T^{-1}H\rVert < 1$ by the series, so a small ball about $T$ lies in $B(X)^\times$. Continuity of inversion follows from $(T+H)^{-1} - T^{-1} = -T^{-1}H(T+H)^{-1}$ and the local boundedness of the inverse.</p>
 <p><strong>Theorem (the spectrum is compact and nonempty).</strong> For every $T$ the spectrum $\sigma(T)$ is a nonempty compact subset of $\mathbb{K}$ contained in the disk of radius $\lVert T\rVert$, and the spectral radius satisfies</p>
 <p>$$
-r(T) = \lim_{n\to\infty}\lVert T^n\rVert^{1/n} = \inf_n\lVert T^n\rVert^{1/n} .
+\boxed{\;r(T) = \lim_{n\to\infty}\lVert T^n\rVert^{1/n} = \inf_n\lVert T^n\rVert^{1/n}\;} .
 $$</p>
 <p><strong>Proof.</strong> Nonemptiness and the spectral radius formula are the Gelfand–Mazur and Beurling–Gelfand theorems of <em>Topological Algebras and Banach Algebras</em>; compactness follows because $\sigma(T) \subseteq \{\lvert\lambda\rvert \leq \lVert T\rVert\}$ is closed, the complement being the preimage of the open unit group under the continuous map $\lambda \mapsto T - \lambda\,\mathrm{id}$.</p>
 <p><strong>Corollary (the finite-dimensional case).</strong> If $X$ is finite-dimensional of dimension $n$ then $B(X)$ is isomorphic to $M_n(\mathbb{K})$ as a unital Banach algebra, every element is invertible exactly when its determinant is nonzero, the spectrum is the set of eigenvalues, and $\sigma(T)$ has at most $n$ points.</p>

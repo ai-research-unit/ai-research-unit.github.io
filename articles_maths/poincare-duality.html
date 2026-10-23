@@ -102,7 +102,7 @@ $$</p>
 <h3 id="the-cap-product-isomorphism">The Cap Product Isomorphism</h3>
 <p><strong>Theorem (Poincaré duality).</strong> Let $M$ be a closed connected orientable $n$-manifold with fundamental class $[M] \in H_n(M;\mathbb{Z})$, and let $G$ be any coefficient module. Then the cap product</p>
 <p>$$
--\frown [M] : H^k(M;G) \longrightarrow H_{n-k}(M;G)
+\boxed{\;-\frown [M] : H^k(M;G) \longrightarrow H_{n-k}(M;G)\;}
 $$</p>
 <p>is an isomorphism for every $k$. With coefficients in a ring $R$, and with $[M] \in H_n(M;R)$ the image of the integral fundamental class, the same statement holds.</p>
 <p><em>Proof sketch.</em> The proof is by induction over a finite cover of $M$ by open discs whose intersections are discs or empty, comparing both sides by Mayer–Vietoris. For a single disc $D$, both sides vanish in the range where they can be nonzero except in degrees $0$ and $n$: $H^k(D;G) = 0$ for $k \neq 0$ and $H_{n-k}(D;G) = 0$ for $n-k \neq 0$ when $k \neq n$, and in degrees $0$ and $n$ the cap product with the fundamental class of the disc is an isomorphism. The Mayer–Vietoris sequences for $H^*$ and for $H_*$ and the naturality of the cap product in the diagram then extend the statement to unions, and the induction terminates because $M$ is covered by finitely many such discs.</p>
@@ -148,8 +148,8 @@ $$</p>
 <h3 id="lefschetz-duality-and-manifolds-with-boundary">Lefschetz Duality and Manifolds with Boundary</h3>
 <p><strong>Theorem (Lefschetz duality).</strong> Let $M$ be a compact connected orientable $n$-manifold with boundary $\partial M$, oriented by a relative fundamental class $[M,\partial M]\in H_n(M,\partial M;\mathbb{Z})$. Then cap product with $[M,\partial M]$ gives isomorphisms</p>
 <p>$$
--\frown[M,\partial M] : H^k(M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M,\partial M;\mathbb{Z}), \qquad
--\frown[M,\partial M] : H^k(M,\partial M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M;\mathbb{Z}),
+\boxed{\;-\frown[M,\partial M] : H^k(M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M,\partial M;\mathbb{Z}), \qquad
+-\frown[M,\partial M] : H^k(M,\partial M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M;\mathbb{Z})\;},
 $$</p>
 <p>and, with coefficients in an arbitrary module $G$, the same statements hold. Moreover, if $M$ is connected, non-compact and orientable, with $H^*_c$ denoting cohomology with compact supports — the colimit of the cohomology of the compact subsets — then</p>
 <p>$$
@@ -161,7 +161,7 @@ $$</p>
 <h3 id="poincare-duals-of-submanifolds-and-intersections">Poincaré Duals of Submanifolds and Intersections</h3>
 <p><strong>Theorem (the Poincaré dual of a submanifold).</strong> Let $M$ be a closed connected orientable $n$-manifold and let $S\subseteq M$ be a closed connected orientable $k$-submanifold, oriented and with inclusion $i : S\to M$. Then there is a class $\eta_S\in H^{n-k}(M;\mathbb{Z})$, unique, the <strong>Poincaré dual</strong> of $S$, such that</p>
 <p>$$
-\eta_S\frown[M] = i_*[S]\in H_k(M;\mathbb{Z}),
+\boxed{\;\eta_S\frown[M] = i_*[S]\in H_k(M;\mathbb{Z})\;},
 $$</p>
 <p>and it is characterised by the property that its restriction to a small neighbourhood of $S$ is the image of the generator of $H^{n-k}(M,M\setminus S;\mathbb{Z})\cong\mathbb{Z}$ under the excision isomorphism $H^{n-k}(M,M\setminus S)\cong H^{n-k}(M)$.</p>
 <p><strong>Corollary (intersections by cup products).</strong> If $S,T\subseteq M$ are closed oriented submanifolds meeting transversely, of codimension $p$ and $q$, then the Poincaré dual of $S\cap T$ is the cup product:</p>

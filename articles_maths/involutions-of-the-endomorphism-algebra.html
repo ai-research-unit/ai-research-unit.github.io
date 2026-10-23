@@ -81,7 +81,7 @@ B(Ax,y) = B(x,A^{*}y) \qquad \text{for all } x,y \in V .
 $$</p>
 <p><strong>Proposition.</strong> The adjoint $A^{*}$ exists, is unique and is linear; the assignment $A \mapsto A^{*}$ is $\varsigma$-semilinear, and it is an involution of the algebra $E$:</p>
 <p>$$
-(A^{*})^{*} = A, \qquad (A+B)^{*} = A^{*}+B^{*}, \qquad (\lambda A)^{*} = \varsigma(\lambda)A^{*}, \qquad (AB)^{*} = B^{*}A^{*} .
+\boxed{\;(A^{*})^{*} = A, \qquad (A+B)^{*} = A^{*}+B^{*}, \qquad (\lambda A)^{*} = \varsigma(\lambda)A^{*}, \qquad (AB)^{*} = B^{*}A^{*}\;} .
 $$</p>
 <p><strong>Proof.</strong> Fix $y$. The map $x \mapsto B(Ax,y)$ is linear, and since $x \mapsto B(x,z)$ is a bijection $V \to V^{*}$ by the non-degeneracy of $B$, there is a unique $A^{*}y$ with $B(x,A^{*}y) = B(Ax,y)$; the uniqueness for each $y$ makes $A^{*}$ a well-defined map. For linearity, $B(x,A^{*}(y+\lambda z)) = B(Ax,y+\lambda z) = B(Ax,y)+\overline{\lambda}B(Ax,z) = B(x,A^{*}y) + \overline{\lambda}B(x,A^{*}z) = B(x, A^{*}y+\overline{\lambda}A^{*}z)$, so $A^{*}(y+\lambda z) = A^{*}y+\overline{\lambda}A^{*}z$ and $A^{*}$ is linear in the bilinear case and satisfies $A^{*}(\lambda y) = \overline{\lambda}A^{*}y$ otherwise. The four laws follow by uniqueness: $B(x,(A^{*})^{*}y) = B(A^{*}x,y) = \overline{B(y,A^{*}x)} = \overline{B(Ay,x)} = B(x,Ay)$; additivity and semilinearity are the definitions; and $B(x,(AB)^{*}y) = B(ABx,y) = B(Bx,A^{*}y) = B(x,B^{*}A^{*}y)$.</p>
 <p><strong>Remark (the kinds).</strong> If $\varsigma = \mathrm{id}$ the involution is <strong>of the first kind</strong>, and it is $F$-linear; if $\varsigma \neq \mathrm{id}$ it is <strong>of the second kind</strong>, and it is conjugate-linear. The reflexive hypothesis is what makes the involution have order two; a general bilinear pairing gives an adjoint with $(A^{*})^{*} = A$ only after the pairing is replaced by its reflexivisation.</p>
@@ -89,14 +89,14 @@ $$</p>
 <p><strong>Definition.</strong> An endomorphism is <strong>self-adjoint</strong> when $A^{*} = A$, <strong>skew-adjoint</strong> when $A^{*} = -A$, and <strong>normal</strong> when $AA^{*} = A^{*}A$.</p>
 <p><strong>Proposition.</strong> If $\varsigma = \mathrm{id}$ and $2 \neq 0$ in $F$, then $E$ is the direct sum of its self-adjoint and skew-adjoint parts,</p>
 <p>$$
-E = E^{+} \oplus E^{-}, \qquad E^{\pm} = \{A : A^{*} = \pm A\} ,
+\boxed{\;E = E^{+} \oplus E^{-}, \qquad E^{\pm} = \{A : A^{*} = \pm A\}\;} ,
 $$</p>
 <p>and the dimensions are $\dim_F E^{+} = n(n+1)/2$ and $\dim_F E^{-} = n(n-1)/2$ for a symmetric pairing, and the two dimensions exchanged for an antisymmetric one. In the sesquilinear case the self-adjoint elements form an $F^{\varsigma}$-linear space only, and the decomposition is not an $F$-linear decomposition.</p>
 <p><strong>Proof.</strong> For $A \in E$ write $A = \tfrac12(A+A^{*}) + \tfrac12(A-A^{*})$, a sum of a self-adjoint and a skew-adjoint element; the sum is direct because an element that is both satisfies $A = -A$, hence $A = 0$ when $2 \neq 0$. The dimensions are those of the two eigenspaces of the involution $A \mapsto A^{*}$ and are computed in the matrix form below; an antisymmetric pairing exchanges them because the adjoint of $A$ with respect to $-B$ is the negative of its adjoint with respect to $B$.</p>
 <h3 id="the-matrix-form">The Matrix Form</h3>
 <p><strong>Proposition.</strong> Let $\Phi$ be the Gram matrix of $B$, $\Phi_{ij} = B(v_i,v_j)$, in a basis $v_1,\dots,v_n$. Then $\Phi$ is invertible and</p>
 <p>$$
-[A^{*}] = \Phi^{-1}\,\overline{[A]}^{\mathsf{T}}\,\Phi ,
+\boxed{\;[A^{*}] = \Phi^{-1}\,\overline{[A]}^{\mathsf{T}}\,\Phi\;} ,
 $$</p>
 <p>where the bar applies $\varsigma$ to each entry and the transpose is the matrix transpose. Consequently $\operatorname{tr}A^{*} = \varsigma(\operatorname{tr}A)$ and, in the bilinear case, $\det A^{*} = \det A$.</p>
 <p><strong>Proof.</strong> Writing $B(x,y) = x^{\mathsf{T}}\Phi\overline{y}$ in coordinates and substituting the defining identity gives $A^{\mathsf{T}}\Phi\overline{y} = \Phi\overline{A^{*}y}$ for all $y$, hence $A^{*}= \Phi^{-1}A^{\mathsf{T}}\Phi$ up to the bar; the trace of $\Phi^{-1}A^{\mathsf{T}}\Phi$ is that of $A^{\mathsf{T}}$, and the determinant is the same because the conjugating factors cancel.</p>

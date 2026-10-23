@@ -109,7 +109,7 @@ $$</p>
 <p>With the left Haar measure, this is the standard choice: for abelian $G$ it reduces to $f*g(x) = \int f(y)g(x-y)dy$, and the substitution $y \mapsto x-y$ gives $f*g = g*f$. On a non-unimodular group the analogous right convolution, built from $g(xy^{-1})$, differs from $f*g$ by a modular factor in the variable of integration; the choice between the two conventions is dictated by the requirement that the convolution theorem hold with the operator product in the order $\mathcal F f\mathcal F g$, and the convention above is the one held throughout this corpus.</p>
 <p><strong>Proposition ($L^1$ bound and Young's inequality).</strong> Let $f \in L^{n}(G)$ and $g \in L^{m}(G)$ with $1 \leq p, q, r \leq \infty$ and $1/n + 1/m = 1 + 1/r$. Then $f*g$ is defined almost everywhere, belongs to $L^r(G)$, and</p>
 <p>$$
-\|f*g\|_r \leq \|f\|_p\,\|g\|_q .
+\boxed{\;\|f*g\|_r \leq \|f\|_p\,\|g\|_q\;} .
 $$</p>
 <p>In particular, taking $p = q = r = 1$, $L^1(G)$ is closed under convolution and $\|f*g\|_1 \leq \|f\|_1\|g\|_1$. The inequality holds for all locally compact $G$ when $p = q = r = 1$, and for unimodular $G$ in general.</p>
 <p><strong>Proof.</strong> The case $p = q = r = 1$: Tonelli's theorem and the left invariance of $dy$ give</p>
@@ -122,7 +122,7 @@ $$</p>
 <p><strong>Proof.</strong> Associativity is Fubini's theorem applied to the triple integral defining $(f*g)*h$ and $f*(g*h)$ and the change of variable that moves the compositional structure to the middle variable; the argument is the same as in the compact case of <em>Analysis on Compact Groups</em>, §Convolution and the Banach Algebra $L^1(K)$. If $u$ is a two-sided identity then $u*f = f$ for $f \in C_c(G)$; testing at points and using approximate identity arguments forces $u$ to be the point mass $\delta_e$, which is in $L^1(G)$ only when $G$ is discrete.</p>
 <p><strong>Theorem (adjoint of a convolution).</strong> For $f, g \in L^1(G)$ the adjoints of the operators of convolution are</p>
 <p>$$
-(f*g)^*(x) = (g^* * f^*)(x), \qquad (f^*)^* = f ,
+\boxed{\;(f*g)^*(x) = (g^* * f^*)(x), \qquad (f^*)^* = f\;} ,
 $$</p>
 <p>and the involution $f \mapsto f^*$ is an isometric anti-automorphism of the Banach algebra $L^1(G)$: $(f*g)^* = g^* * f^*$, $(\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*$ and $\|f^*\|_1 = \|f\|_1$.</p>
 <p><strong>Proof.</strong> The adjoint-producing involution is isometric: by the inversion identity applied with $g(x) = |f(x^{-1})|$,</p>
@@ -163,7 +163,7 @@ $$</p>
 <p>A <strong>$*$-representation</strong> of $L^1(G)$ on a Hilbert space $H$ is a homomorphism $\pi$ into the bounded operators with $\pi(f^*) = \pi(f)^*$. It is <strong>nondegenerate</strong> if $\pi(L^1(G))H$ is dense in $H$.</p>
 <p><strong>Theorem (the correspondence).</strong> There is a bijection between nondegenerate $*$-representations $\pi$ of $L^1(G)$ on a Hilbert space $H$ and continuous unitary representations $U$ of $G$ on $H$, given by</p>
 <p>$$
-\pi(f) = \int_G f(g)\,U(g)\,dg ,
+\boxed{\;\pi(f) = \int_G f(g)\,U(g)\,dg\;} ,
 $$</p>
 <p>the integral converging in the strong operator topology. The bijection respects direct sums, subrepresentations, irreducibility and unitary equivalence, and it satisfies $\|\pi(f)\| \leq \|f\|_1$ and $\pi(L_x f) = U(x)\pi(f)$, $\pi(R_x f) = \pi(f)U(x)^{-1}$.</p>
 <p><strong>Proof sketch.</strong> For $f \in L^1(G)$ the map $f \mapsto \int f(g)U(g)dg$ is a bounded linear map into the bounded operators, with the norm bound by $\|f\|_1$, and the multiplicativity is the convolution theorem in integrated form; the *-property uses the modular factor in $f^*$ and the unitarity of $U$. Conversely, given a nondegenerate representation, the operators $U(x)$ are recovered as the strong limits of $\pi(f)$ for $f$ an approximate identity concentrated near $x$, or equivalently by the formula $U(x)\pi(f) = \pi(L_xf)$ extended to $H$ by nondegeneracy; continuity of $x \mapsto U(x)$ and the representation identities follow from the continuity of translation in $L^1(G)$. The details are standard.</p>

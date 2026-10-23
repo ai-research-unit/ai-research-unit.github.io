@@ -82,7 +82,7 @@
 <h3 id="the-product-and-the-twisted-slot">The Product and the Twisted Slot</h3>
 <p><strong>Theorem (the seminorm criterion for the product).</strong> Let $\{p_\alpha\}$ be a separating family generating the topology of a locally convex $\mathbb{K}$-space $A$ with a product additive in each variable. If for every $\alpha$ there are $\beta$ and a constant $C \geq 1$ with</p>
 <p>$$
-p_\alpha(xy) \leq C\,p_\beta(x)\,p_\beta(y) \qquad (x, y \in A) ,
+\boxed{\;p_\alpha(xy) \leq C\,p_\beta(x)\,p_\beta(y) \qquad (x, y \in A)\;} ,
 $$</p>
 <p>then the product is jointly continuous, hence separately continuous, and $A$ is a locally convex sesqualgebra over $(\mathbb{K},\varsigma)$. Conversely, if the product is jointly continuous, then for every $\alpha$ there are $\beta, \gamma$ and $C$ with $p_\alpha(xy) \leq C\,p_\beta(x)p_\gamma(y)$; for a directed family this is equivalent to the estimate above with a single index.</p>
 <p><em>Proof.</em> The estimate bounds the product on the product of two $\beta$-balls, so the product is continuous at the origin, and a bilinear map continuous at the origin is jointly continuous; joint continuity implies separate continuity, which is the hypothesis of the layer. Conversely, joint continuity at the origin gives a basic neighbourhood $U_\beta \times U_\gamma$ on which $p_\alpha$ is bounded, hence the displayed estimate, and a directed family absorbs the two indices into one, <em>Locally Convex and Fréchet Algebras</em>, §<em>The Continuity Conditions</em>. The estimate with $\beta = \gamma$ is the classical condition for a locally convex algebra. That a separately continuous product need not be jointly continuous is the remark of <em>Topological Sesqualgebras</em>, §<em>Joint Continuity</em>, so the estimate is sufficient but not necessary for an object of the layer; the product on the pair $(A,A^{\varsigma})$ obeys the same criterion because the two factors carry the same seminorms, and the two scalar rules are algebraic, <em>Sesqualgebras</em>, §<em>The Two Scalar Rules</em>.</p>
@@ -91,7 +91,7 @@ $$</p>
 <h3 id="the-one-sided-multiplications">The One-Sided Multiplications</h3>
 <p><strong>Proposition (the one-sided multiplications).</strong> Let $a \in A$ and let $L_a(x) = ax$ and $R_a(x) = xa$. Then $L_a$ is continuous and $\varsigma$-semilinear, and $R_a$ is continuous and $\mathbb{K}$-linear. Moreover, if the product satisfies the estimate of §<em>The Product and the Twisted Slot</em> for a constant $C$ independent of $a$, then for each $\alpha$ there are $\beta$ with</p>
 <p>$$
-p_\alpha(L_a x) \leq C\,p_\beta(a)\,p_\beta(x), \qquad p_\alpha(R_a x) \leq C\,p_\beta(x)\,p_\beta(a) .
+\boxed{\;p_\alpha(L_a x) \leq C\,p_\beta(a)\,p_\beta(x), \qquad p_\alpha(R_a x) \leq C\,p_\beta(x)\,p_\beta(a)\;} .
 $$</p>
 <p><em>Proof.</em> The parities are <em>Topological Sesqualgebras</em>, §<em>The One-Sided Multiplications</em>. Continuity is separate continuity, which the locally convex hypothesis assumes, with the bound depending on the fixed $a$: for each $\alpha$ there are $\beta$ and $C_a$ with $p_\alpha(ax) \leq C_a p_\beta(x)$. The uniform estimate with the factor $p_\beta(a)$ is the joint-continuity criterion of §<em>The Product and the Twisted Slot</em> read with one variable fixed, and it is asserted under that hypothesis and not under separate continuity alone, which need not supply it.</p>
 <h2 id="locally-m-convex-sesqualgebras">Locally m-Convex Sesqualgebras</h2>
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-banach-quotients">The Banach Quotients</h3>
 <p><strong>Theorem (the kernels and the quotients).</strong> Let $A$ be a locally m-convex sesqualgebra with generating family $\{p_\alpha\}$ of submultiplicative seminorms and put $N_\alpha = \ker p_\alpha$. Then each $N_\alpha$ is a closed two-sided ideal, the quotient $A/N_\alpha$ is a normed sesqualgebra over the same datum $(\mathbb{K},\varsigma)$ with the norm induced by $p_\alpha$, and its completion</p>
 <p>$$
-A_\alpha = \widehat{A/N_\alpha}
+\boxed{\;A_\alpha = \widehat{A/N_\alpha}\;}
 $$</p>
 <p>is a Banach sesqualgebra over $(\mathbb{K},\varsigma)$.</p>
 <p><em>Proof.</em> Submultiplicativity gives $p_\alpha(xy) \leq p_\alpha(x)p_\alpha(y)$ and $p_\alpha(yx) \leq p_\alpha(y)p_\alpha(x)$, so an element with $p_\alpha(x) = 0$ multiplies both ways into the kernel; $N_\alpha$ is closed because $p_\alpha$ is continuous, and it is a submodule by the homogeneity and subadditivity of the seminorm. The quotient is a sesqualgebra by <em>Ideals and Quotients of a Sesqualgebra</em>, §<em>The Product Descends</em>, and the quotient norm $\bar p_\alpha(x + N_\alpha) = p_\alpha(x)$ is well defined and submultiplicative, so $A/N_\alpha$ is a normed sesqualgebra; its completion is a Banach sesqualgebra by <em>The Completion of a Sesqualgebra</em>, §<em>The Product on the Completion</em>.</p>

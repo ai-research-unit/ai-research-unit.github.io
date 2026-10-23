@@ -75,7 +75,7 @@
 <p><strong>Definition.</strong> The <strong>Gram matrix</strong> of the general quaternionic sesquilinear form in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $G_{\mu\nu}=\langle e_{\nu},e_{\mu}\rangle_{\natural*}$.</p>
 <p><strong>Theorem (the Gram matrix is the sign matrix).</strong> In the coefficient basis</p>
 <p>$$
-G=\mathrm{diag}(1,-1,-1,-1)=E ,
+\boxed{\; G=\mathrm{diag}(1,-1,-1,-1)=E \;},
 $$</p>
 <p>so the diagonal entries are $+1,-1,-1,-1$, the off-diagonal entries vanish, and $\det G=-1$; displayed in full,</p>
 <p>$$
@@ -101,8 +101,8 @@ $$</p>
 <h2 id="the-krein-form-in-the-matrix-representation">The Krein Form in the Matrix Representation</h2>
 <p><strong>Proposition (the form as a matrix trace).</strong> For all biquaternions,</p>
 <p>$$
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\,\mathsf{M}_2(\tilde{Q}_1)\bigr)
-=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_2^{\natural})^{\dagger}\mathsf{M}_2(\tilde{Q}_1)\bigr),
+\boxed{\; \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\,\mathsf{M}_2(\tilde{Q}_1)\bigr)
+=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_2^{\natural})^{\dagger}\mathsf{M}_2(\tilde{Q}_1)\bigr) \;},
 $$</p>
 <p>where $\dagger$ is the conjugate transpose in the matrix algebra. For $\tilde{Q}=e_t+i\vec e_x$ the model is</p>
 <p>$$
@@ -219,10 +219,10 @@ $$</p>
 <p><strong>Definition.</strong> Two subspaces are <strong>Krein-orthogonal</strong>, written $\mathbb{W}\perp_{K}\mathbb{U}$, when $\langle\tilde Q_3,\tilde{Q}\rangle_{\natural*}=0$ for all $\tilde{Q}\in\mathbb{W}$ and $\tilde Q_3\in\mathbb{U}$. The <strong>Krein-orthogonal complement</strong> is $\mathbb{W}^{\perp_{K}}=\{\tilde Q_3:\langle\tilde Q_3,\tilde{Q}\rangle_{\natural*}=0\ \forall\tilde{Q}\in\mathbb{W}\}$.</p>
 <p><strong>Theorem (the orthogonal splitting).</strong> The general quaternionic sesquilinear form splits the algebra as an orthogonal sum</p>
 <p>$$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}},
+\boxed{\; \mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}},
 \qquad
 \mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}},\qquad
-\mathbb{V}_{\mathbb{B}}^{\perp_{K}}=\mathbb{C}_{\mathbb{B}},
+\mathbb{V}_{\mathbb{B}}^{\perp_{K}}=\mathbb{C}_{\mathbb{B}} \;},
 $$</p>
 <p>and the four subspaces of signature $(1,3)$ are <strong>non-degenerate</strong>, $\mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\}$, and are pairwise <strong>not</strong> Krein-orthogonal.</p>
 <p><strong>Proof.</strong> $\langle \vec e_k,e_t\rangle_{\natural*}=0$ and $\langle \vec e_k,ie_t\rangle_{\natural*}=0$ give the splitting and the two complements. In coefficients $\langle\tilde Q_3,e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}T_{\mu}$ and $\langle\tilde Q_3,ie_{\mu}\rangle_{\natural*}=-i\varepsilon_{\mu}T_{\mu}$, so an element of one of the four subspaces that is Krein-orthogonal to that subspace has all its coefficients zero, hence vanishes: those four subspaces are non-degenerate. For the failure of mutual orthogonality, $\langle ie_t,e_t\rangle_{\natural*}=i\neq0$ shows that $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are not orthogonal, and $\langle e_t,ie_t\rangle_{\natural*}=-i\neq0$ does the same for $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$.</p>

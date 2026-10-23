@@ -79,7 +79,7 @@ $$</p>
 <h2 id="the-standard-involution">The Standard Involution</h2>
 <p><strong>Definition.</strong> The <strong>standard involution</strong> of $K[G]$ is the map</p>
 <p>$$
-\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,g^{-1},
+\boxed{\;\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,g^{-1}\;},
 $$</p>
 <p>extended linearly.</p>
 <p><strong>Theorem.</strong> The standard involution is an involution of $K[G]$; it restricts to $\sigma$ on the copy of $K$ inside $K[G]$, and it commutes with the augmentation, $\varepsilon(x^{*}) = \varepsilon(x)$.</p>
@@ -103,7 +103,7 @@ u_e = 1, \qquad u_{gh} = u_h\,u_g, \qquad u_g\,u_{\iota(g)} = 1 \quad \text{for 
 $$</p>
 <p>Then</p>
 <p>$$
-\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,u_g\,\iota(g)
+\boxed{\;\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,u_g\,\iota(g)\;}
 $$</p>
 <p>is an involution of $K[G]$ restricting to $\sigma$ on the coefficients; the involution induced by $\iota$ is the case $u = 1$, and the standard involution is the case $u = 1$ and $\iota(g) = g^{-1}$.</p>
 <p><strong>Proof.</strong> Additivity and $1^{*} = 1$ are immediate, the restriction to $K$ is $\sigma$, and $\sigma^2 = \mathrm{id}$ with $\iota^2 = \mathrm{id}$ and $u_g u_{\iota(g)} = 1$ give $(x^{*})^{*} = x$. For the anti-multiplicativity, it suffices to check the products of group elements: $(g h)^{*} = \sigma(1)u_{gh}\iota(gh) = u_{gh}\iota(h)\iota(g)$, while $h^{*}g^{*} = u_h\iota(h)\,u_g\iota(g) = u_hu_g\,\iota(h)\iota(g)$, and the two agree by $u_{gh} = u_hu_g$ (the coefficients $u_g$ are central scalars). The case $u = 1$ is the involution induced by $\iota$.</p>
@@ -115,7 +115,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The assignment $\bar g^{*} = \overline{g^{-1}}$ extends to an involution of $K^{\alpha}[G]$ with coefficient involution $\sigma$ if and only if</p>
 <p>$$
-\alpha(g,h) = \alpha(h^{-1},g^{-1}) \qquad \text{for all } g, h \in G .
+\boxed{\;\alpha(g,h) = \alpha(h^{-1},g^{-1}) \qquad \text{for all } g, h \in G\;} .
 $$</p>
 <p><strong>Proof.</strong> By linearity it suffices to check the products of basis elements. On the one hand $(\bar g\bar h)^{*} = \alpha(g,h)\,\overline{gh}^{*} = \alpha(g,h)\overline{(gh)^{-1}}$. On the other hand $\bar h^{*}\bar g^{*} = \overline{h^{-1}}\,\overline{g^{-1}} = \alpha(h^{-1},g^{-1})\overline{h^{-1}g^{-1}} = \alpha(h^{-1},g^{-1})\overline{(gh)^{-1}}$. The two agree for all $g, h$ exactly under the stated identity. The square is the identity because $\overline{g^{-1}}^{*} = \bar g$ and $\sigma^2 = \mathrm{id}$, and additivity and the unit are immediate.</p>
 <p><strong>Corollary.</strong> For the untwisted group ring, where $\alpha = 1$, the condition is automatic and the standard involution exists for every $G$; the twist obstructs the involution exactly by the difference between $\alpha(g,h)$ and $\alpha(h^{-1},g^{-1})$, and the obstruction vanishes when $\alpha$ is symmetric in this sense. The twisted group ring is the algebra of a projective representation of $G$ of cocycle $\alpha$, and the involution it carries is the one that makes that algebra involutive.</p>

@@ -81,7 +81,7 @@ $$</p>
 <p>with $\tau$ linear and continuous, $\tau(xy) = \tau(yx)$, and it is assumed <strong>non-degenerate</strong>: $\langle x, y\rangle = 0$ for all $y$ only when $x = 0$, and dually. The <strong>trace-adjoint</strong> of a continuous operator $S$ of $E$, when it exists, is the unique continuous $S^{\dagger}$ with $\langle Sx, y\rangle = \langle x, S^{\dagger}y\rangle$ for all $x, y$.</p>
 <p><strong>Proposition (associativity and symmetry).</strong> The trace form is symmetric, $\langle x, y\rangle = \langle y, x\rangle$, and associative with respect to the multiplication,</p>
 <p>$$
-\langle xy, z\rangle = \langle x, yz\rangle ,
+\boxed{\;\langle xy, z\rangle = \langle x, yz\rangle\;} ,
 $$</p>
 <p>and the multiplications are adjoint families for it; the associativity is the compatibility of the form with the algebra structure, and it is the identity that all the adjoint computations of this group use.</p>
 <p><strong>Proof.</strong> Symmetry is $\tau(xy) = \tau(yx)$; associativity is $\langle xy,z\rangle = \tau(xyz) = \langle x, yz\rangle$, the middle factor moving through the trace by cyclicity; non-degeneracy makes the form a pairing, so that an adjoint is unique when it exists.</p>
@@ -89,7 +89,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-one-sided-multiplications">The Adjoint of the One-Sided Multiplications</h2>
 <p><strong>Theorem (the adjointness of the multiplications).</strong> For every $a \in E$ the left and the right multiplication have adjoints with respect to the trace form, given by</p>
 <p>$$
-(L_{a})^{\dagger} = R_{a} , \qquad (R_{a})^{\dagger} = L_{a} .
+\boxed{\;(L_{a})^{\dagger} = R_{a} , \qquad (R_{a})^{\dagger} = L_{a}\;} .
 $$</p>
 <p>Consequently the adjoint of a left multiplication is a right multiplication, and conversely; the adjoint operation exchanges the two sides.</p>
 <p><strong>Proof.</strong> For $x, y \in E$, $\langle L_{a}x, y\rangle = \tau(axy) = \tau(xya) = \langle x, R_{a}y\rangle$, using the trace cyclicity; the uniqueness of the adjoint gives $(L_{a})^{\dagger} = R_{a}$. The second identity is the first with the multiplication reversed, or the direct computation $\langle R_{a}x, y\rangle = \tau(xay) = \tau(axy) = \langle x, L_{a}y\rangle$.</p>
@@ -104,7 +104,7 @@ $$</p>
 <h2 id="compatibility-with-the-involution">Compatibility with the Involution</h2>
 <p><strong>Theorem (the involution is self-adjoint for the trace form).</strong> Let $\theta$ be a continuous algebra involution of $E$ preserving the trace, $\tau \circ \theta = \varsigma \circ \tau$. Then $\theta$ is metrically $\varsigma$-self-adjoint,</p>
 <p>$$
-\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta y\rangle\bigr) \qquad (x, y \in E),
+\boxed{\;\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta y\rangle\bigr) \qquad (x, y \in E)\;},
 $$</p>
 <p>so $\theta^{\dagger} = \theta$ up to the scalar involution, and $\theta$ is an isometry of the trace form, $\langle \theta x, \theta y\rangle = \varsigma(\langle x, y\rangle)$.</p>
 <p><strong>Proof.</strong> $\langle\theta x, y\rangle = \tau(\theta(x)y)$; applying $\tau\circ\theta = \varsigma\circ\tau$ and $\theta^{2} = \mathrm{id}$ and the trace cyclicity, $\tau(\theta(x)y) = \varsigma(\tau(\theta(\theta(x)y))) = \varsigma(\tau(x\theta(y))) = \varsigma(\langle x, \theta y\rangle)$. The isometry identity is the same computation with $y$ replaced by $\theta y$.</p>

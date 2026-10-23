@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-composition-law">The Composition Law</h2>
 <p><strong>Theorem (composition).</strong> For all $\tilde Q_5,\tilde Q_3,\tilde Q_4,\tilde D\in\mathbb{B}$,</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)\circ\bigl(L_{\tilde Q_4}R_{\tilde D}\bigr)=L_{\tilde Q_5\tilde Q_4}\,R_{\tilde D\tilde Q_3},
+\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)\circ\bigl(L_{\tilde Q_4}R_{\tilde D}\bigr)=L_{\tilde Q_5\tilde Q_4}\,R_{\tilde D\tilde Q_3} \;},
 $$</p>
 <p>the parameters of the second slot reversing their order.</p>
 <p><em>Proof.</em> $\tilde Q_5\bigl(\tilde Q_4\tilde Q\tilde D\bigr)\tilde Q_3=\tilde Q_5\tilde Q_4\,\tilde Q\,\tilde D\tilde Q_3$ by associativity.</p>
@@ -122,7 +122,7 @@ $$</p>
 <h2 id="the-adjoint-and-the-swap">The Adjoint and the Swap</h2>
 <p><strong>Theorem (the adjoint exchanges the parameters).</strong> For all $\tilde Q_5,\tilde Q_3\in\mathbb{B}$,</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}.
+\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5} \;}.
 $$</p>
 <p><em>Proof.</em> The transpose of a composite reverses the order, $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ (<em>The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples</em>), and the transposes of the factors are the crossed one-sided operators, $(L_{\tilde Q_5})^{\approx}=R_{\tilde Q_5}$ and $(R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}$ (<em>One-Sided Operators on the Biquaternion Algebra</em>):</p>
 <p>$$
@@ -132,8 +132,8 @@ $$</p>
 <h2 id="the-self-adjoint-and-the-skew-adjoint-sectors">The Self-Adjoint and the Skew-Adjoint Sectors</h2>
 <p><strong>Theorem (the self-adjoint criterion).</strong> For $\tilde Q_5\neq0$ the operator $L_{\tilde Q_5}R_{\tilde Q_3}$ is self-adjoint if and only if the two parameters are proportional,</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_5}R_{\tilde Q_3}
-\iff \tilde Q_3=\lambda\tilde Q_5\quad\text{for some }\lambda\in\mathbb{C}.
+\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_5}R_{\tilde Q_3}
+\iff \tilde Q_3=\lambda\tilde Q_5\quad\text{for some }\lambda\in\mathbb{C} \;}.
 $$</p>
 <p>Consequently the self-adjoint two-sided operators are the scalar multiples $\lambda\,L_{\tilde Q_5}R_{\tilde Q_5}$ of the diagonal products, together with the zero operator.</p>
 <p><em>Proof.</em> By the swap theorem, self-adjointness is $L_{\tilde Q_3}R_{\tilde Q_5}=L_{\tilde Q_5}R_{\tilde Q_3}$, that is $\tilde Q_3\tilde Q\tilde Q_5=\tilde Q_5\tilde Q\tilde Q_3$ for all $\tilde Q$. At $\tilde Q=e_t$ the two parameters commute. Substitute $\tilde Q=\tilde Q_5^{-1}\tilde Q_4\tilde Q_5^{-1}$ for an arbitrary $\tilde Q_4$, which is legitimate when $\tilde Q_5$ is a unit: the identity becomes $\tilde Q_3\tilde Q_5^{-1}\tilde Q_4=\tilde Q_4\tilde Q_5^{-1}\tilde Q_3$ for all $\tilde Q_4$, so $\tilde Q_3\tilde Q_5^{-1}$ is central, that is $\tilde Q_3=\lambda\tilde Q_5$. Conversely $\tilde Q_3=\lambda\tilde Q_5$ gives $\tilde Q_3\tilde Q\tilde Q_5=\lambda\tilde Q_5\tilde Q\tilde Q_5=\tilde Q_5\tilde Q\lambda\tilde Q_5=\tilde Q_5\tilde Q\tilde Q_3$. The case of a non-unit $\tilde Q_5$ is the same computation with the parameter of the other slot, or follows by evaluating the identity at $\tilde Q=e_t$ and using centrality.</p>

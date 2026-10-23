@@ -98,7 +98,7 @@
 <p><strong>Definition.</strong> The <strong>homotopy category</strong> $\operatorname{Ho}(\mathcal{C})$ of a model category $\mathcal{C}$ is the localisation $\mathcal{C}[\mathcal{W}^{-1}]$: the category obtained from $\mathcal{C}$ by adjoining formal inverses to all weak equivalences.</p>
 <p><strong>Theorem (existence).</strong> The localisation $\mathcal{C}[\mathcal{W}^{-1}]$ exists and has the same objects as $\mathcal{C}$; its morphisms are computed by</p>
 <p>$$
-\operatorname{Hom}_{\operatorname{Ho}(\mathcal{C})}(X,Y) \cong \pi\bigl(\operatorname{Hom}_{\mathcal{C}}(QX, RY)\bigr),
+\boxed{\;\operatorname{Hom}_{\operatorname{Ho}(\mathcal{C})}(X,Y) \cong \pi\bigl(\operatorname{Hom}_{\mathcal{C}}(QX, RY)\bigr)\;},
 $$</p>
 <p>the homotopy classes of morphisms between a cofibrant replacement of $X$ and a fibrant replacement of $Y$, where the homotopy relation is defined through cylinder and path objects.</p>
 <p><em>Proof sketch.</em> Cofibrant and fibrant replacements exist by the factorisation axiom, weak equivalences between cofibrant (or fibrant) objects are the homotopy equivalences of a cylinder-object deformation, and the quotient of $\operatorname{Hom}_{\mathcal{C}}(QX,RY)$ by this relation is a category in which weak equivalences become isomorphisms; the universal property of the localisation shows it is $\operatorname{Ho}(\mathcal{C})$.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Definition.</strong> The category $\Delta$ has as objects the finite nonempty ordered sets $[n] = \{0 < 1 < \cdots < n\}$ and as morphisms the order-preserving maps. A <strong>simplicial set</strong> is a functor $\Delta^{\mathrm{opp}} \to \mathbf{Set}$; a <strong>simplicial object</strong> in a category $\mathcal{C}$ is a functor $\Delta^{\mathrm{opp}}\to\mathcal{C}$. The value on $[n]$ is the set of $n$-simplices, the face maps $\partial_i$ are induced by the injections omitting $i$, and the degeneracies $s_i$ by the surjections repeating $i$.</p>
 <p><strong>Theorem (geometric realisation).</strong> There is a Quillen adjunction $|\!-\!| \dashv \operatorname{Sing}$ between simplicial sets with the Quillen model structure and topological spaces with the Quillen model structure, where $|\Delta_n|$ is the standard simplex of <em>Simplicial and Singular Homology</em> and $\operatorname{Sing}(X)_n = \operatorname{Hom}_{\mathbf{Top}}(\Delta_n, X)$. The derived functors give equivalences of homotopy categories</p>
 <p>$$
-\operatorname{Ho}(\mathbf{sSet}) \simeq \operatorname{Ho}(\mathbf{Top}),
+\boxed{\;\operatorname{Ho}(\mathbf{sSet}) \simeq \operatorname{Ho}(\mathbf{Top})\;},
 $$</p>
 <p>and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.</p>
 <p><strong>Theorem (Dold–Kan correspondence).</strong> For a commutative ring $R$ with $1 \neq 0$, there is an equivalence of categories between simplicial $R$-modules and nonnegatively graded chain complexes of $R$-modules, under which the homotopy groups of a simplicial module correspond to the homology of the associated complex, and the <strong>normalised</strong> chain complex is obtained by quotienting by the degenerate simplices.</p>

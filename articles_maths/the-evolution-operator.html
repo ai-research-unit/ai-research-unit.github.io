@@ -93,7 +93,7 @@ $$</p>
 <p><em>Proof.</em> Fix $x\in X$ and let $u(t)=\Phi(t,s)x$ be the solution with $u(s)=x$. The function $v(t)=\Phi(t,r)u(r)$ solves the same equation with $v(r)=\Phi(r,r)u(r)=u(r)$, so by the uniqueness of the solution of the initial value problem $v(t)=u(t)$ for all $t\ge r$; at $t$ this reads $\Phi(t,s)x=\Phi(t,r)\Phi(r,s)x$, and $x$ was arbitrary.</p>
 <p><strong>Theorem (the Peano series).</strong> Let $A:J\to B(X)$ be continuous and let the interval be $[s,t]$. Then the fundamental solution is given by the norm-convergent <strong>Peano series</strong></p>
 <p>$$
-\Phi(t,s)=\sum_{n\ge0}\ \int_{s\le t_1\le\cdots\le t_n\le t}A(t_1)\cdots A(t_n)\,dt_1\cdots dt_n,
+\boxed{\;\Phi(t,s)=\sum_{n\ge0}\ \int_{s\le t_1\le\cdots\le t_n\le t}A(t_1)\cdots A(t_n)\,dt_1\cdots dt_n\;},
 $$</p>
 <p>with the $n=0$ term the identity, and $\|\Phi(t,s)\|\le \exp(\int_s^t\|A(u)\|\,du)$.</p>
 <p><em>Proof.</em> The integral equation $u(t)=x+\int_s^tA(u)u(u)\,du$ is solved by the Volterra iteration $u_0=x$, $u_{n+1}(t)=x+\int_s^tA(u)u_n(u)\,du$, whose $n$-th increment is the displayed $n$-fold integral; the estimate $\|u_{n+1}-u_n\|\le\frac{1}{(n+1)!}\bigl(\int_s^t\|A\|\bigr)^{n+1}\|x\|$ makes the series converge uniformly to the unique solution, and the norm bound follows by summing.</p>
@@ -110,7 +110,7 @@ $$</p>
 <p>on the tangent space $T_xM$, and its fundamental solution is the derivative $D\varphi_t(x)$ of the flow, since differentiating $\varphi_t$ in the initial condition gives this equation with $Y(0)=I$.</p>
 <p><strong>Theorem (the evolution operator along an orbit).</strong> The derivative of the flow is the evolution operator of the variational equation, and</p>
 <p>$$
-D\varphi_{t-s}(\varphi_s(x))=D\varphi_t(x)\,D\varphi_s(x)^{-1}, \qquad \Phi(t,s)=D\varphi_{t-s}(\varphi_s(x)) ;
+\boxed{\;D\varphi_{t-s}(\varphi_s(x))=D\varphi_t(x)\,D\varphi_s(x)^{-1}, \qquad \Phi(t,s)=D\varphi_{t-s}(\varphi_s(x))\;} ;
 $$</p>
 <p>the cocycle law is the chain rule for the flow. For a diffeomorphism $T$ with orbit $\{T^nx\}$ the corresponding family is $\Phi(n,m)=DT^{n-m}(T^mx)$ on the tangent space.</p>
 <p><em>Proof.</em> The chain rule for $\varphi_t=\varphi_{t-s}\circ\varphi_s$ gives $D\varphi_t(x)=D\varphi_{t-s}(\varphi_s(x))\,D\varphi_s(x)$; composing with $D\varphi_s(x)^{-1}$, which exists because each $\varphi_s$ is a diffeomorphism, gives the identity. The discrete statement follows from $DT^{n}=DT^{n-m}(T^mx)\,DT^m(x)$.</p>
@@ -143,7 +143,7 @@ $$</p>
 <p>the values of the evolution operator at later periods are the powers of the monodromy, $\Phi(nT,0)=M^n$, and $\Phi(t+nT,s+nT)=\Phi(t,s)$.</p>
 <p><strong>Theorem (Floquet–Lyapunov).</strong> Let $A(t)$ be $T$-periodic and let $M$ be its monodromy. Then there is a $T$-periodic family $P(t)\in B(X)$ with $P(0)=I$ and a bounded operator $B$ with $\exp(TB)=M$ such that</p>
 <p>$$
-\Phi(t,0)=P(t)\exp(tB), \qquad \Phi(t,s)=P(t)\exp((t-s)B)P(s)^{-1}.
+\boxed{\;\Phi(t,0)=P(t)\exp(tB), \qquad \Phi(t,s)=P(t)\exp((t-s)B)P(s)^{-1}\;}.
 $$</p>
 <p>The eigenvalues of $M$ are the <strong>Floquet multipliers</strong> and the numbers $\lambda$ with $\exp(T\lambda)\in\sigma(M)$ the <strong>Floquet exponents</strong>; the zero solution of the equation is exponentially stable exactly when every Floquet multiplier lies inside the unit circle, and unstable when one lies outside.</p>
 <p><em>Proof.</em> One defines $P(t)=\Phi(t,0)\exp(-tB)$, where $B$ is a logarithm of $M$; then $P(t+T)=\Phi(t+T,0)\exp(-tB)\exp(-TB)=\Phi(t,0)M\exp(-TB)\exp(-tB)=P(t)$ by the periodicity of the equation and the choice $\exp(TB)=M$, so $P$ is $T$-periodic and $P(0)=I$. The stability statement is the spectral radius formula for the powers of the monodromy, $M^n=\Phi(nT,0)$.</p>

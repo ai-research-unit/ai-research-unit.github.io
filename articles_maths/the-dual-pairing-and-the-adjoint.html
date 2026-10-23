@@ -80,7 +80,7 @@
 $$</p>
 <p><strong>Theorem (existence and uniqueness).</strong> Every weakly continuous $T$ has a unique adjoint $T^{*}$; the assignment $T \mapsto T^{*}$ is linear, reverses composition, $(ST)^{*} = T^{*}S^{*}$, fixes the identity, and is an algebra anti-isomorphism</p>
 <p>$$
-\mathcal{L}_{\sigma}(E) \longrightarrow \mathcal{L}_{\sigma}(F) .
+\boxed{\;\mathcal{L}_{\sigma}(E) \longrightarrow \mathcal{L}_{\sigma}(F)\;} .
 $$</p>
 <p><strong>Proof.</strong> For fixed $y \in F$ the functional $x \mapsto \langle Tx, y\rangle$ is continuous for $\sigma(E,F)$, because $T$ is, so it is $\langle x, y^{*}\rangle$ for a unique $y^{*} \in F$ by the non-degeneracy of the pairing; set $T^{*}y = y^{*}$. Linearity in $y$ is the bilinearity of the pairing, continuity of $T^{*}$ for $\sigma(F,E)$ is the same computation with the roles exchanged, and the composition rule is $\langle STx, y\rangle = \langle Tx, S^{*}y\rangle = \langle x, T^{*}S^{*}y\rangle$.</p>
 <p><strong>Proposition (the adjoint preserves the annihilator calculus).</strong> For $T \in \mathcal{L}_{\sigma}(E)$,</p>
@@ -92,7 +92,7 @@ $$</p>
 <h2 id="the-two-adjoints-and-the-transpose">The Two Adjoints and the Transpose</h2>
 <p><strong>Theorem (the adjoint is the transpose read through the duality).</strong> Let $E$ be reflexive and let $T \in \mathcal{L}(E)$. Then the transpose $T'' = (T')'$ acts on $E'' = E$ and equals the adjoint of $T$ with respect to the canonical pairing $\langle E, E'\rangle$:</p>
 <p>$$
-\iota_{E}\,T^{*} = T''\,\iota_{E}, \qquad T^{*} = \iota_{E}^{-1}T''\iota_{E} .
+\boxed{\;\iota_{E}\,T^{*} = T''\,\iota_{E}, \qquad T^{*} = \iota_{E}^{-1}T''\iota_{E}\;} .
 $$</p>
 <p>Consequently the adjoint of $T$ with respect to the canonical pairing exists, is the double transpose under the identification, and is denoted by the same symbol $T^{*}$; for a general dual pair which is not the canonical one, the adjoint exists exactly when $T$ is weakly continuous.</p>
 <p><strong>Proof.</strong> For $x \in E$ and $y' \in E'$, $\langle T''\iota_{E}x, y'\rangle = \langle \iota_{E}x, T'y'\rangle = \langle x, T'y'\rangle = \langle Tx, y'\rangle = \langle \iota_{E}Tx, y'\rangle$, so $T''\iota_{E} = \iota_{E}T$; under the identification $E'' = E$ of reflexivity the left side is the transpose of $T$, and the adjoint with respect to the canonical pairing is $T^{*}$.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h2 id="reflexive-cases-and-duality-of-the-algebra">Reflexive Cases and Duality of the Algebra</h2>
 <p><strong>Theorem (the double adjoint).</strong> For $T \in \mathcal{L}_{\sigma}(E)$ the double adjoint $T^{**}$ acts on $E$ and equals $T$, so that</p>
 <p>$$
-(T^{*})^{*} = T ,
+\boxed{\;(T^{*})^{*} = T\;} ,
 $$</p>
 <p>and the adjoint operation is an involution exchanging the two sides, $\mathcal{L}_{\sigma}(E) \to \mathcal{L}_{\sigma}(F)$.</p>
 <p><strong>Proof.</strong> Read the pairing in the other order, $\langle y, x\rangle_{F,E} = \langle x, y\rangle_{E,F}$; then $T^{*}$ is defined by $\langle T^{*}y, x\rangle = \langle y, Tx\rangle$, so the adjoint of $T^{*}$ satisfies $\langle T^{*}y, x\rangle = \langle y, T^{**}x\rangle$ and hence $\langle y, Tx\rangle = \langle y, T^{**}x\rangle$ for all $y \in F$. Non-degeneracy gives $T^{**}x = Tx$ for every $x$, and $T^{**} = T$.</p>

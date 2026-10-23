@@ -91,7 +91,7 @@ $$</p>
 <h2 id="the-general-quaternionic-sesquilinear-product-in-the-model">The General Quaternionic Sesquilinear Product in the Model</h2>
 <p><strong>Theorem (the product is the adjugated conjugate-transposed matrix product).</strong> For all biquaternions,</p>
 <p>$$
-\mathsf{M}_2(\tilde{Q}_4\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)\,\mathsf{M}_2(\tilde{Q})^{\dagger} ,
+\boxed{\; \mathsf{M}_2(\tilde{Q}_4\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)\,\mathsf{M}_2(\tilde{Q})^{\dagger} \;},
 $$</p>
 <p>the ordinary matrix product with the adjugate in the first slot and the conjugate transpose in the second.</p>
 <p><em>Proof.</em> $\tilde{Q}_4\star\tilde{Q}=\tilde{Q}_4^{\natural}\tilde{Q}^{*}$, the realization is multiplicative, and it carries the two conjugations to the adjugate and the conjugate transpose.</p>
@@ -152,7 +152,7 @@ $$</p>
 <p>For an invertible idempotent this is equivalent to $\det(M)M^{\dagger}=M^{2}$, and for an idempotent of norm one to $M^{\dagger}=M^{2}$. The matrix of an idempotent is therefore not a projection in general, nor is the matrix of a projection an idempotent: $\operatorname{diag}(1,\omega)$ satisfies $M^{2}=M^{\dagger}$ but not the idempotent equation, so the adjugate is essential.</p>
 <p><strong>Theorem (the family of idempotents as a unitary orbit).</strong> The nontrivial idempotents of the multiplication are exactly the elements whose matrices are the unitary conjugates of the diagonal matrix $\operatorname{diag}(\omega,\omega^{2})$, where $\omega=\exp(2\pi i/3)$:</p>
 <p>$$
-\tilde{\Pi}\longleftrightarrow M=U\operatorname{diag}(\omega,\omega^{2})U^{\dagger},\qquad U\in \mathrm{U}(2).
+\boxed{\; \tilde{\Pi}\longleftrightarrow M=U\operatorname{diag}(\omega,\omega^{2})U^{\dagger},\qquad U\in \mathrm{U}(2) \;}.
 $$</p>
 <p><em>Proof.</em> A norm-one idempotent satisfies $M^{\dagger}=M^{2}$; applying the dagger gives $(M^{\dagger})^{2}=M$, and substituting yields $M^{4}=M$, so $M^{3}=I$ for the invertible $M$. Then $MM^{\dagger}=MM^{2}=M^{3}=I$ and $M^{\dagger}M=I$, so $M$ is unitary of determinant one, and a unitary matrix with $M^{3}=I$ and $\det M=1$ has spectrum $\{1,1\}$ or $\{\omega,\omega^{2}\}$; the first case is $M=I$, the identity $\tilde{\Pi}=e_t$, and the second, by the spectral theorem, is the displayed unitary conjugacy class. Conversely each matrix of the class satisfies $M^{\dagger}=M^{2}$, $M^{3}=I$ and $\det M=1$, hence $\operatorname{adj}(M)M^{\dagger}=\det(M)M^{-1}M^{2}=M$. The trace of $\operatorname{diag}(\omega,\omega^{2})$ is $\omega+\omega^{2}=-1$, so $Q_t=-\tfrac12$; $\operatorname{adj}(M^{\dagger})=\operatorname{adj}(M^{2})=\operatorname{adj}(M)^{2}=M^{-2}=M$ gives $\mathsf{M}_2(\overline{\tilde{\Pi}})=\mathsf{M}_2(\tilde{\Pi})$, so the three vector coordinates are real; and unitarity gives $\sum_\mu|Q_\mu|^{2}=1$, so $|Q_x|^{2}+|Q_y|^{2}+|Q_z|^{2}=\tfrac34$. The class is connected of real dimension two, the family of the idempotents.</p>
 <p><strong>Corollary (the order-three matrices).</strong> The matrix of a nontrivial idempotent satisfies $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$ and $\det M=1$; consequently $\operatorname{Tr}M=-1$ and the characteristic polynomial is $\lambda^{2}+\lambda+1$. The nontrivial idempotents are therefore units, and they are disjoint from the zero divisors: in the model they are unitary matrices of order three, while the zero divisors are the singular matrices, $\langle\tilde{Q}\rangle_{\natural}=\det \mathsf{M}_2(\tilde{Q})=0$. This is the sharpest contrast with the sibling general plain sesquilinear product, where the nontrivial idempotents have rank-one Hermitian projections as matrix images, and those images are singular.</p>
@@ -174,7 +174,7 @@ $$</p>
 <h2 id="the-general-quaternionic-sesquilinear-form-in-the-model">The General Quaternionic Sesquilinear Form in the Model</h2>
 <p><strong>Theorem (the adjugated conjugate-transpose pairing).</strong> For all biquaternions,</p>
 <p>$$
-\langle\tilde{Q}_4,\tilde{Q}\rangle_{\natural*} = \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),
+\boxed{\; \langle\tilde{Q}_4,\tilde{Q}\rangle_{\natural*} = \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr) \;},
 $$</p>
 <p>the pairing in which the conjugate transpose of the first argument is adjugated.</p>
 <p><em>Proof.</em> $\operatorname{adj}\mathsf{M}_2(\tilde{Q}_4)^{\dagger}=\mathsf{M}_2(\tilde{Q}_4^{\natural})^{\dagger}=\mathsf{M}_2((\tilde{Q}_4^{\natural})^{*})=\mathsf{M}_2(\bar{\tilde{Q}_4})$, since $(\tilde{Q}_4^{\natural})^{*}=\bar{\tilde{Q}_4}$ is the coefficient conjugate; the right-hand side is then $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\bar{\tilde{Q}_4})\mathsf{M}_2(\tilde{Q}))=\mathrm{Sc}(\bar{\tilde{Q}_4}\tilde{Q})=\sum_\mu\varepsilon_\mu\overline{Q_{4\mu}}Q_\mu$.</p>

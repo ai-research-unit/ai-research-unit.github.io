@@ -81,7 +81,7 @@ $$</p>
 <p>defined on the distributions $f$ for which the convolution with $E$ is defined: on $\mathcal{E}'(\mathbb{R}^n)$ by the convolution theorem of <em>Distributions and Fundamental Solutions</em>, on $\mathcal{S}'(\mathbb{R}^n)$ when $E$ is tempered, and on $C_c^\infty(\mathbb{R}^n)$ by the action on the second factor.</p>
 <p><strong>Theorem (the inverse property).</strong> Let $E$ be a fundamental solution of the constant-coefficient operator $L$. Then</p>
 <p>$$
-L\,T_E = I \ \text{on } \mathcal{E}'(\mathbb{R}^n), \qquad T_E\,L = I \ \text{on } C_c^\infty(\mathbb{R}^n) ,
+\boxed{\;L\,T_E = I \ \text{on } \mathcal{E}'(\mathbb{R}^n), \qquad T_E\,L = I \ \text{on } C_c^\infty(\mathbb{R}^n)\;} ,
 $$</p>
 <p>the second identity meaning that $E*(Lf)=f$ for every compactly supported smooth $f$; more generally $T_EL=I$ on every space on which the convolution with $E$ and with $Lf$ is defined and on which the fundamental solution is admissible.</p>
 <p><em>Proof.</em> For $f\in\mathcal{E}'$ the operator $L$ may be brought under the convolution, $L(E*f)=(LE)*f=\delta*f=f$, which is the first identity. For the second, the identity $\partial^\alpha(E*g)=(\partial^\alpha E)*g$ for the convolution of a distribution with a compactly supported smooth function gives $E*(Lf)=\sum_\alpha a_\alpha E*(\partial^\alpha f)=\sum_\alpha a_\alpha(\partial^\alpha E)*f=(LE)*f=\delta*f=f$. The identity for the wider spaces is the same computation with the convolution defined.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h2 id="the-symbol-and-the-multiplier">The Symbol and the Multiplier</h2>
 <p><strong>Theorem (the Fourier multiplier).</strong> Let $L$ have constant coefficients with symbol $\sigma_L(\xi)$, and let $E$ be a tempered fundamental solution. On the Schwartz space,</p>
 <p>$$
-\widehat{T_E f}(\xi) = \frac{(\mathcal F f)(\xi)}{\sigma_L(\xi)} ,
+\boxed{\;\widehat{T_E f}(\xi) = \frac{(\mathcal F f)(\xi)}{\sigma_L(\xi)}\;} ,
 $$</p>
 <p>in the sense that the distribution $1/\sigma_L(\xi)$ is the Fourier transform of $E$ and multiplication by it is the action of $T_E$; the operator $T_E$ is the <strong>Fourier multiplier</strong> by $1/\sigma_L$.</p>
 <p><em>Proof.</em> Taking the Fourier transform of $E*f$ gives the product $\mathcal F E\mathcal F f$ for tempered distributions, and taking the transform of $LE=\delta$ gives $\sigma_L(\xi)\mathcal F E(\xi)=1$, so $\mathcal F E=1/\sigma_L$ in the sense of distributions; substituting gives the display. The multiplier acts on $\mathcal{S}$ or on $L^2$ according to whether $1/\sigma_L$ is a bounded function, and otherwise as an operator between the Sobolev spaces.</p>
@@ -181,7 +181,7 @@ $$</p>
 <p>where $S$ is a <strong>smoothing operator</strong>: $S$ maps the compactly supported distributions into $C^\infty$. The convolution reading fails for variable coefficients, but the <strong>parametrix operator</strong> $T_E$, defined locally by the action of $E$, remains meaningful and is an approximate inverse.</p>
 <p><strong>Theorem (approximate inversion).</strong> Let $E$ be a properly supported parametrix of $L$. Then</p>
 <p>$$
-L\,T_E = I - S , \qquad T_E\,L = I - S' ,
+\boxed{\;L\,T_E = I - S , \qquad T_E\,L = I - S'\;} ,
 $$</p>
 <p>where $S$ and $S'$ are smoothing operators, and on every Sobolev space of finite order the operators $S$ and $S'$ are compact. Consequently $L$ is <strong>Fredholm</strong> on the Sobolev scale: it has finite-dimensional kernel and cokernel, and $Lu=f$ is solvable exactly when $f$ is orthogonal to the kernel of the formal adjoint.</p>
 <p><em>Proof.</em> The identity $LT_E=I-S$ is the defining equation of the parametrix applied to the operator; the second, on the other side, follows from the parametrix being two-sided modulo smoothing, which is the statement that the remainders $I-T_EL$ and $I-LT_E$ have smooth kernels. A smoothing operator on a bounded domain gains all derivatives, hence is compact on each Sobolev space by Rellich–Kondrachov; an operator that is the identity modulo a compact operator is Fredholm, and the Fredholm alternative gives the solvability condition.</p>

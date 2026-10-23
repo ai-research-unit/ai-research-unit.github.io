@@ -79,9 +79,7 @@
 <p><strong>Definition.</strong> A <strong>slice of the Julia set</strong> $J_c$ is an intersection $J_c \cap \mathbb{C}_\nu$. The slice is <strong>invariant</strong> if $\mathbb{C}_\nu$ is $\mathbb{C}_c$, the plane of the parameter.</p>
 <h2 id="the-invariant-slice">The Invariant Slice</h2>
 <p><strong>Theorem (the invariant slice is the complex Julia set).</strong> Let $c \notin \mathbb{R}$ and let $\mathbb{C}_c=\operatorname{span}\{e_t,c\}$ be the plane of the parameter, with the identification $\varphi_c : \mathbb{C}_c \to \mathbb{C}$ sending $c$ to $\kappa(c)=c_0+i|\vec c|$; when $c \in \mathbb{R}$ take $\mathbb{C}_c=\mathbb{R}$ and $\varphi_c(c)=c$. Then $\mathbb{C}_c$ is invariant under $f_c$, and</p>
-<p>$$
-J_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr), \qquad K_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr),
-$$</p>
+<p>$$ \boxed{\; J_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr), \qquad K_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr) \;} ,$$</p>
 <p>where $J^{\mathbb{C}}_{\kappa}$ and $K^{\mathbb{C}}_{\kappa}$ are the Julia set and the filled Julia set of $z \mapsto z^2+\kappa$. In particular <strong>the slice of the parameter is an honest complex Julia set</strong>.</p>
 <p><em>Proof.</em> The invariance of $\mathbb{C}_c$ and the conjugacy of the restriction of $f_c$ to $\mathbb{C}_c$ with $z \mapsto z^2+\kappa(c)$ are the critical slice theorem of <em>The Quaternion Mandelbrot Set</em>. A conjugacy of dynamical systems carries bounded orbits to bounded orbits and unbounded orbits to unbounded orbits, so it carries $K_c\cap\mathbb{C}_c$ to $K^{\mathbb{C}}_{\kappa(c)}$; and it is a homeomorphism, so it carries the boundary to the boundary, giving the Julia sets. The real case is the same statement with $\mathbb{R}$ in place of $\mathbb{C}_c$.</p>
 <p><strong>Remark.</strong> The invariant slice is the only slice that is a complex Julia set in general: for $\nu \neq \pm\hat c$ the plane is not invariant, the orbit of a point of the slice leaves the slice after one step, and the intersection $J_c\cap\mathbb{C}_\nu$ is a real two-dimensional section and not the Julia set of any complex quadratic map. <strong>A computation of a slice by a complex iteration is legitimate exactly for the invariant slice</strong>; for every other slice the four-dimensional iteration must be used, and it produces a different set.</p>
@@ -93,9 +91,7 @@ $$</p>
 <p>and for every axis $\nu$ the slice is the same complex Julia set under the identification $\mathbb{C}_\nu \to \mathbb{C}$, $\nu \mapsto i$. Thus <strong>for a real parameter the set is recovered from one slice, and the slices for different axes are congruent</strong>.</p>
 <p><em>Proof.</em> This is the hull theorem of <em>The Quaternion Quadratic Map and Its Julia Sets</em>, whose proof uses the invariance under the full rotation group $SO(3)$ of a real parameter and the transitivity of the rotations on the spheres of the vector subspace. The congruence of the slices is the invariance together with the same transitivity.</p>
 <p><strong>Corollary (the profile).</strong> For a real parameter $c$, define the <strong>profile</strong> $\sigma_c \subset \mathbb{R}^2$ by $\sigma_c=\{(q_t,|\vec q|) : \tilde q \in J_c\}$, a subset of the closed half-plane. Then $\sigma_c$ determines $J_c$ by</p>
-<p>$$
-J_c = \{\tilde q \in \mathbb{H} : (q_t,|\vec q|) \in \sigma_c\},
-$$</p>
+<p>$$ \boxed{\; J_c = \{\tilde q \in \mathbb{H} : (q_t,|\vec q|) \in \sigma_c\} \;} ,$$</p>
 <p>and $\sigma_c$ is the image of the complex Julia set $J^{\mathbb{C}}_c \subset \mathbb{C}$ under $z=x+iy \mapsto (x,|y|)$. The set is the union of the spheres of radius $|\vec q|$ centred at $q_te_t$ over the points of the profile; <strong>every picture of $J_c$ for a real parameter is the revolution about the real axis of a picture of the complex Julia set.</strong></p>
 <p><em>Proof.</em> The profile determines the point set because a quaternion is determined by its scalar part, the modulus of its vector part and the axis of its vector part, and the invariance under $SO(3)$ makes the axis irrelevant. The identification of the profile is the theorem.</p>
 <h2 id="general-parameters-equivariance-instead-of-a-hull">General Parameters: Equivariance Instead of a Hull</h2>
@@ -113,9 +109,7 @@ $$</p>
 <p>from <em>The Quaternion Quadratic Map and Its Julia Sets</em>; the whole family over the orbit $SO(3)c$ is one dynamical object read in rotating frames, and a statement about the slices of one member is a statement about the corresponding planes of the whole orbit. The reduction $\rho_c$ intertwines the dynamics for a real parameter, where it generates the symmetry; for a general non-real parameter it does not, and the purely imaginary parameter $c=\tfrac12 \vec e_y$ exhibits the failure; whether it also occurs for a non-real parameter with a nonzero scalar part was not decided by the numerical search recorded in the companion file.</p>
 <h2 id="reconstruction-from-all-the-slices">Reconstruction from All the Slices</h2>
 <p><strong>Theorem (the slices determine the set).</strong> For every parameter $c$,</p>
-<p>$$
-J_c = \bigcup_{\nu \in S^2} \bigl(J_c \cap \mathbb{C}_\nu\bigr), \qquad K_c = \bigcup_{\nu \in S^2} \bigl(K_c \cap \mathbb{C}_\nu\bigr).
-$$</p>
+<p>$$ \boxed{\; J_c = \bigcup_{\nu \in S^2} \bigl(J_c \cap \mathbb{C}_\nu\bigr), \qquad K_c = \bigcup_{\nu \in S^2} \bigl(K_c \cap \mathbb{C}_\nu\bigr) \;} .$$</p>
 <p><em>Proof.</em> Every quaternion lies in at least one plane $\mathbb{C}_\nu$ by the first proposition of the article, and the union is therefore the whole set; the reverse inclusion is trivial.</p>
 <p><strong>Remark (what the union costs).</strong> The theorem is a tautology with content only in what it forbids: because the union is over the whole sphere $S^2$, the reconstruction of a four-dimensional set from slices is not the reconstruction from <em>finitely many</em> or from <em>one</em>; a numerical picture of a quaternion Julia set is a picture of a slice, and a finite collection of slices is a finite collection of sections and not the set. The computational content of the article is therefore the invariant slice of the theorem above, its congruence with the other slices for a real parameter, and the equivariance as the tool that moves a computation from one parameter to a rotated one.</p>
 <h2 id="the-slice-discipline">The Slice Discipline</h2>

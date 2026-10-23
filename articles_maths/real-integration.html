@@ -135,15 +135,13 @@ $$</p>
 $$</p>
 <p>and the absolute value is at most $\sup_{\lvert t-c_0\rvert \leq \lvert h\rvert}\lvert f(t) - f(c_0)\rvert$, which tends to $0$ with $h$.</p>
 <p><strong>Theorem (fundamental theorem, second form).</strong> If $F$ is differentiable on $[a,b]$ with $F'$ Riemann integrable, then</p>
-<p>$$
-\int_a^b F' = F(b) - F(a) .
+<p>$$ \boxed{\;\int_a^b F' = F(b) - F(a) \;}.
 $$</p>
 <p>Consequently every Riemann integrable function with a primitive satisfies the evaluation formula, and primitives differ by constants.</p>
 <p><strong>Proof.</strong> For a partition $P$, the mean value theorem applied on each subinterval gives $\xi_i$ with $F(c_i) - F(c_{i-1}) = F'(\xi_i)(c_i - c_{i-1})$, and summing gives the tagged Riemann sum $F(b)-F(a)$; as the mesh tends to $0$ the sums converge to $\int_a^b F'$ by integrability. Hence $F(b) - F(a) = \int_a^b F'$, and two primitives of the same function have zero derivative, hence differ by a constant.</p>
 <h3 id="techniques">Techniques</h3>
 <p><strong>Theorem (integration by parts).</strong> If $u, v$ are differentiable on $[a,b]$ with $u', v'$ Riemann integrable, then</p>
-<p>$$
-\int_a^b u\,v' = u(b)v(b) - u(a)v(a) - \int_a^b u'\, v .
+<p>$$ \boxed{\;\int_a^b u\,v' = u(b)v(b) - u(a)v(a) - \int_a^b u'\, v \;}.
 $$</p>
 <p><strong>Proof.</strong> The product rule gives $(uv)' = u'v + uv'$, and both sides are Riemann integrable; the second fundamental theorem applied to $uv$ gives the identity.</p>
 <p><strong>Theorem (substitution).</strong> Let $\varphi : [\alpha,\beta] \to [a,b]$ be continuously differentiable and increasing with $\varphi(\alpha) = a$, $\varphi(\beta) = b$, and let $f$ be continuous on $[a,b]$. Then</p>
@@ -179,8 +177,7 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> Both sides are obtained by the Abel summation identity applied to a partition: the identity rearranges a Stieltjes sum for $f$ against $g$ into a boundary term minus a Stieltjes sum for $g$ against $f$, and the existence of one integral therefore gives the existence of the other and the displayed formula.</p>
 <p><strong>Theorem (Riesz representation).</strong> Every bounded linear functional $\Lambda$ on the space $C[a,b]$ of continuous functions with the supremum norm is of the form</p>
-<p>$$
-\Lambda(f) = \int_a^b f\,dg
+<p>$$ \boxed{\;\Lambda(f) = \int_a^b f\,dg\;}
 $$</p>
 <p>for a function $g$ of bounded variation, unique if normalised by $g(a) = 0$ and right-continuity in the interior. The functional is positive if and only if $g$ is increasing, and its norm is the total variation of $g$.</p>
 <p><strong>Proof.</strong> The theorem is Riesz's. A bounded linear functional on $C[a,b]$ is uniformly continuous for the supremum norm, so it extends uniquely to the uniform closure of the step functions, which is the space of regulated functions; the representing function is then $g(c) = \Lambda^{\mathrm{rep}}(\mathbf{1}_{(a,c]})$, which has bounded variation with $g(a) = 0$ and is right-continuous on $(a,b)$, and the Stieltjes integral of $f$ against it recovers $\Lambda(f)$. Positivity of $\Lambda$ makes $g$ increasing, and the norm of $\Lambda$ is the total variation of $g$ by the definition of the Stieltjes integral. The proof is in <em>Measure Theory and Integration</em>.</p>

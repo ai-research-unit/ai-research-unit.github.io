@@ -112,7 +112,7 @@ $$</p>
 <p>where $m_i$ is the algebraic multiplicity and $e_i$ is the multiplicity of $\lambda_i$ in the minimal polynomial. The equality of the two kernels holds because $e_i\le m_i$ and the nilpotent index of $A-\lambda_iI$ on $V_i$ is $e_i$. The subspaces $V_i$ are the <strong>generalized eigenspaces</strong>, they are stable under $A$, and the restriction of $A-\lambda_iI$ to $V_i$ is nilpotent of index $e_i$. The <strong>spectral projection</strong> $P_i$ is the projection onto $V_i$ along the sum of the other $V_j$. It is a polynomial in $A$ (the Chinese remainder idempotent of the primary factors $(x-\lambda_j)^{e_j}$ of $m_A$), it satisfies the orthogonality and resolution identities, and it commutes with $A$.</p>
 <p><strong>Theorem.</strong> Let $A$ have the primary decomposition over a splitting field. Then the spectral projections $P_i$ exist, are polynomials in $A$, satisfy</p>
 <p>$$
-P_i^2=P_i, \qquad P_iP_j=\delta_{ij}P_i, \qquad \sum_iP_i=I,
+\boxed{\;P_i^2=P_i, \qquad P_iP_j=\delta_{ij}P_i, \qquad \sum_iP_i=I\;},
 $$</p>
 <p>and the matrix</p>
 <p>$$
@@ -130,7 +130,7 @@ $$</p>
 $$</p>
 <p>where $m_i$ is the algebraic multiplicity of $\lambda_i$. Consequently</p>
 <p>$$
-\operatorname{Tr}A=\sum_{i=1}^{r}\lambda_im_i, \qquad \det A=\prod_{i=1}^{r}\lambda_i^{m_i}.
+\boxed{\;\operatorname{Tr}A=\sum_{i=1}^{r}\lambda_im_i, \qquad \det A=\prod_{i=1}^{r}\lambda_i^{m_i}\;}.
 $$</p>
 <p><em>Proof.</em> The projection $P_i$ is the identity on $V_i$ and zero on $V_j$ for $j\neq i$. Hence its rank is $\dim V_i=m_i$, and its trace is the trace of the identity on $V_i$, which is $m_i$. On $V_i$ the matrix has the form $\lambda_iI+N_i$ with $N_i$ nilpotent, so its trace is $\lambda_im_i$ and its determinant is $\lambda_i^{m_i}$; the trace and the determinant of $A$ are the sum and the product of the contributions of the primary blocks.</p>
 <p><strong>Corollary.</strong> The characteristic polynomial is</p>
@@ -171,7 +171,7 @@ D=\bigoplus_{i=1}^{r}P_iM_n(k)P_i
 $$</p>
 <p>is the algebra of block-diagonal matrices, of dimension $\sum_i m_i^2$. It contains the centraliser $C(A)=\{X:AX=XA\}$, and it equals the centraliser exactly when $A$ is diagonalisable. In that case the off-diagonal part is the image of the commutator operator $\operatorname{ad}_A(X)=AX-XA$, and</p>
 <p>$$
-M_n(k)=C(A)\oplus\operatorname{im}\operatorname{ad}_A .
+\boxed{\;M_n(k)=C(A)\oplus\operatorname{im}\operatorname{ad}_A\;} .
 $$</p>
 <p><em>Proof.</em> A matrix commuting with $A$ preserves each generalized eigenspace $V_i$, because $V_i$ is the kernel of $(A-\lambda_iI)^{m_i}$ and $X(A-\lambda_iI)^{m_i}=(A-\lambda_iI)^{m_i}X$. Hence it is block diagonal, so $C(A)\subseteq D$. If $A$ is diagonalisable, $A=\lambda_iI$ on each $V_i$, and every block-diagonal matrix commutes with $A$, so $C(A)=D$. Conversely, if $C(A)=D$, then every matrix of the corner $P_iM_nP_i$ commutes with $A$. The corner is isomorphic to $M_{m_i}(k)$ and acts faithfully on $V_i$; the only matrices commuting with all endomorphisms of $V_i$ are the scalars, so $A$ is scalar on $V_i$ for every $i$, and $A$ is diagonalisable. In the diagonalisable case $\operatorname{ad}_A$ acts on $P_iM_nP_j$ by multiplication by $\lambda_i-\lambda_j$, which is nonzero for $i\neq j$; hence the kernel is the diagonal part $D=C(A)$ and the image is the off-diagonal part, and the decomposition follows from the rank–nullity theorem.</p>
 <p><strong>Remark.</strong> In the non-diagonalisable case the centraliser is strictly smaller than the diagonal Peirce part whenever some nilpotent part $N_i$ is nonzero, and the image of $\operatorname{ad}_A$ is not a complement of the centraliser. The Jordan block $J=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ is the smallest example: $D=M_2(k)$, the centraliser is $k[J]$, of dimension $2$, and the image of $\operatorname{ad}_J$ is the set of matrices $\begin{pmatrix}c&e\\0&-c\end{pmatrix}$, which meets $k[J]$ in the strictly upper triangular matrices. The sum is not direct and does not fill $M_2(k)$. The Peirce decomposition is treated in <em>The Centraliser and the Diagonal Peirce Part</em> and <em>Left and Right Multiplication on the Diagonal Peirce Part</em>; the matrix case is the concrete model.</p>

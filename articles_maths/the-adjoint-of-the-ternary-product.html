@@ -91,7 +91,7 @@ $$</p>
 <h3 id="the-adjoint-swaps-the-parameters">The Adjoint Swaps the Parameters</h3>
 <p><strong>Theorem (the adjoint of the ternary operator).</strong> For all $x,y\in A$,</p>
 <p>$$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x};\qquad\text{that is,}\qquad \varphi(\Theta_{x,y}z,w)=\varphi(z,\Theta_{y,x}w)\quad\text{for all }z,w\in A .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{y,x};\qquad\text{that is,}\qquad \varphi(\Theta_{x,y}z,w)=\varphi(z,\Theta_{y,x}w)\quad\text{for all }z,w\in A\;} .
 $$</p>
 <p><strong>Proof.</strong> By the definition of the pairing, $\varphi(\Theta_{x,y}z,w)=\tau\bigl(xy^{*}zw^{*}\bigr)$, and the cyclicity of $\tau$ turns it into $\tau\bigl(zw^{*}xy^{*}\bigr)$. On the other side, $\varphi(z,\Theta_{y,x}w)=\tau\bigl(z(yx^{*}w)^{*}\bigr)=\tau\bigl(zw^{*}xy^{*}\bigr)$, by the anti-multiplicativity of $*$. The two are equal, and the adjoint is unique.</p>
 <p><strong>Corollary (the order of the operation).</strong> $\Theta_{x,y}^{\dagger\dagger}=\Theta_{x,y}$, and $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$: the diagonal of the pair map is self-adjoint.</p>
@@ -101,14 +101,14 @@ $$</p>
 <h3 id="the-self-adjointness-of-the-diagonal">The Self-Adjointness of the Diagonal</h3>
 <p><strong>Theorem (the quadratic representation is self-adjoint).</strong> For every $x\in A$ the operator $\Theta_{x,x}$ is self-adjoint, and</p>
 <p>$$
-\Theta_{x,x}=T_{x\star x,1},\qquad \Theta_{x,x}^{\dagger}=T_{(x\star x)^{*},1} .
+\boxed{\;\Theta_{x,x}=T_{x\star x,1},\qquad \Theta_{x,x}^{\dagger}=T_{(x\star x)^{*},1}\;} .
 $$</p>
 <p><strong>Proof.</strong> The first identity is the factorisation of the pair through the derived product, $\Theta_{x,x}=T_{x\star x,1}$, and the diagonal is self-adjoint by the corollary of the adjoint theorem. The second identity is the same factorisation read on the adjoint, and it agrees with the first because the derived square is Hermitian: $(x\star x)^{*}=(xx^{*})^{*}=(x^{*})^{*}x^{*}=xx^{*}=x\star x$.</p>
 <p><strong>Remark.</strong> The quadratic representation of the Jordan theory is the diagonal of the pair map, and the theorem says that it is self-adjoint whatever the involution and whatever the algebra. In the degenerate case of a commutative algebra with $*=\mathrm{id}$ the operator $U_x=\Theta_{x,x}$ is $2T_{x,1}^{2}-T_{x^{2},1}$ of <em>The Ternary Product as an Operator</em>, and its self-adjointness is the classical self-adjointness of the quadratic representation; the general theorem recovers it.</p>
 <h3 id="the-hermitian-criterion">The Hermitian Criterion</h3>
 <p><strong>Theorem (when the ternary operator is self-adjoint).</strong> For $x,y\in A$,</p>
 <p>$$
-\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y\;} .
 $$</p>
 <p>The operator of a pair is therefore self-adjoint exactly when the derived product of the pair is Hermitian.</p>
 <p><strong>Proof.</strong> By the adjoint theorem, $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two operators agree exactly when the derived products $x\star y$ and $y\star x$ agree, because the factorisation $\Theta_{p,q}=T_{p\star q,1}$ identifies the operator with its derived product and the left multiplication does not lose the element. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement of the two derived products is the Hermitian condition.</p>

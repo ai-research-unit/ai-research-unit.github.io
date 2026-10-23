@@ -81,7 +81,7 @@
 $$</p>
 <p><strong>Proposition.</strong> The assignment $X \mapsto \nabla_X$ is $C^\infty(M)$-linear, $\nabla_{fX+gY} = f\nabla_X + g\nabla_Y$, and for each $X$ the operator $\nabla_X$ is a first-order differential operator on the sections of $E$ in the sense of <em>Differential Operators on a Manifold</em>, with the Leibniz rule</p>
 <p>$$
-\nabla_X(fs) = (Xf)\,s + f\,\nabla_X s, \qquad f \in C^\infty(M),\ s \in \Gamma(E).
+\boxed{\;\nabla_X(fs) = (Xf)\,s + f\,\nabla_X s, \qquad f \in C^\infty(M),\ s \in \Gamma(E)\;}.
 $$</p>
 <p>Its principal symbol is $\sigma_1(\nabla_X)(x,\xi) = \langle \xi, X_x\rangle\, \mathrm{id}_{E_x}$.</p>
 <p><em>Proof.</em> The $C^\infty(M)$-linearity in $X$ is the pairing of the $1$-form $\nabla s$ with $X$; the Leibniz rule is the defining Leibniz rule of the connection evaluated on $X$. In a chart with a frame $(e_a)$ the operator reads $(\nabla_X s)^a = X(s^a) + \sum_b \omega^a_{\ b}(X)\,s^b$ with smooth coefficients, which is a first-order operator whose top-order part is $X(s^a)$ on each component; the symbol follows.</p>
@@ -113,7 +113,7 @@ $$</p>
 <h3 id="the-operator-identity">The Operator Identity</h3>
 <p><strong>Theorem.</strong> For every connection $\nabla$ on $E$ there is a unique section $R$ of $\Lambda^2T^*M \otimes \operatorname{End}(E)$, the <strong>curvature</strong>, such that for every pair of vector fields $X, Y$ and every section $s$,</p>
 <p>$$
-R(X, Y)s = \nabla_X\nabla_Y s - \nabla_Y\nabla_X s - \nabla_{[X,Y]}s .
+\boxed{\;R(X, Y)s = \nabla_X\nabla_Y s - \nabla_Y\nabla_X s - \nabla_{[X,Y]}s\;} .
 $$</p>
 <p>Equivalently, $R \wedge \cdot = (d^\nabla)^2$ on the $E$-valued forms, and in a frame $R = d\omega + \omega \wedge \omega$. The contraction $R(X,Y)$ is $C^\infty(M)$-linear in $X$ and $Y$ and in $s$, so it is a tensor; and it is the obstruction to the operators $\nabla_X$ forming a representation of the Lie algebra of vector fields, the failure being measured by the bracket $[X,Y]$.</p>
 <p><em>Proof.</em> The difference of the three terms is $C^\infty(M)$-linear in $s$: the terms involving derivatives of $f$ in $\nabla_X\nabla_Y(fs) - \nabla_Y\nabla_X(fs)$ cancel against those of $\nabla_{[X,Y]}(fs)$, by the Leibniz rule and the identity $XYf - YXf = [X,Y]f$. It is also $C^\infty(M)$-linear in $X$ and $Y$, because $\nabla_X$ depends on $X$ through its value pointwise and the bracket is skew. Hence the expression defines a bundle map $\Lambda^2T^*M \to \operatorname{End}(E)$, which is the section $R$. The identification with $(d^\nabla)^2$ and with $d\omega + \omega\wedge\omega$ is the computation of <em>Fibre Bundles, Connections and Curvature</em>, where the structure equation is proved.</p>
@@ -160,7 +160,7 @@ $$</p>
 <p>The <strong>torsion</strong> of a connection $\nabla$ on the tangent bundle $TM$ is the tensor $T(X,Y) = \nabla_XY - \nabla_YX - [X,Y]$, a section of $\Lambda^2T^*M \otimes TM$; the connection is <strong>torsion-free</strong> if $T = 0$.</p>
 <p><strong>Theorem (fundamental theorem of Riemannian geometry).</strong> On a Riemannian manifold $(M,g)$ there is exactly one connection on $TM$ that is metric-compatible and torsion-free, the <strong>Levi–Civita connection</strong>. It is determined by the Koszul formula</p>
 <p>$$
-2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y]),
+\boxed{\;2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y])\;},
 $$</p>
 <p>which expresses its covariant derivative in terms of the metric and the Lie bracket alone.</p>
 <p><em>Proof.</em> The right-hand side is $C^\infty(M)$-linear in $X$, $Y$ and $Z$, so it defines the three contractions with the Levi–Civita symbol, hence a connection; substituting the formula into the metric and the torsion conditions verifies them. Uniqueness follows because the difference of two metric and torsion-free connections is a tensor $S(X,Y)$ that is skew in $X,Y$ and satisfies $g(S(X,Y),Z) + g(S(X,Z),Y) = 0$, a tensor that polarises to zero; the Koszul formula computes the covariant derivative from the data, so there is nothing left free.</p>

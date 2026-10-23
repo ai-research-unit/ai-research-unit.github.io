@@ -94,7 +94,7 @@ $$</p>
 <h2 id="the-parity-of-the-ideal">The Parity of the Ideal</h2>
 <p><strong>Proposition (the splitting).</strong> The ideal splits according to the grading,</p>
 <p>$$
-I=I^0\oplus I^1,\qquad I^i=\mathrm{Cl}^i(V,\mathfrak{Q})\,\pi,
+\boxed{\;I=I^0\oplus I^1,\qquad I^i=\mathrm{Cl}^i(V,\mathfrak{Q})\,\pi\;},
 $$</p>
 <p>and left multiplication by an even element preserves the two summands while left multiplication by an odd element interchanges them.</p>
 <p><em>Proof.</em> An element of the algebra is the sum of its even and its odd part, giving the splitting; and $\mathrm{Cl}^i\mathrm{Cl}^j\subseteq\mathrm{Cl}^{i+j}$ gives $L_a(I^j)\subseteq I^{i+j}$ for $a\in\mathrm{Cl}^i$, the exponent read modulo two.</p>
@@ -104,15 +104,15 @@ $$</p>
 <h2 id="the-signed-hermitian-sandwich-on-the-ideal">The Signed Hermitian Sandwich on the Ideal</h2>
 <p><strong>Proposition (the operator realised by left multiplications).</strong> For $x\in\mathrm{Cl}(V,\mathfrak{Q})$, $v\in V$ and $\psi\in I$,</p>
 <p>$$
-\Theta^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
-=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi .
+\boxed{\;\Theta^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
+=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi\;} .
 $$</p>
 <p>So the signed Hermitian sandwich is realised on the ideal as the conjugation of the Clifford multiplication by the left multiplication of $\alpha(x)$ and the <strong>adjoint</strong> of the left multiplication of $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the dagger right multiplication, read on the ideal as the adjoint operator $\rho(x)^{*}=\rho(x^{\dagger})$. On the unitary slice the adjoint is the inverse and the formula is that of the inverse formulation.</p>
 <p><em>Proof.</em> Both sides are the same product of three factors in the algebra, applied to $\psi$; the first factor is $\rho(\alpha(x))=\Lambda^{\alpha}_x$ and the third is $\rho(x^{\dagger})=\rho(x)^{*}$ by the adjoint proposition of the pin-representation article, since the ideal is a Hermitian Clifford module. On the slice $x^{\dagger}=x^{-1}$ and $\rho(x)^{*}=\rho(x)^{-1}$.</p>
 <p><strong>Corollary (the reflection, on and off the slice).</strong> Let $u\in V$ with $\mathfrak{Q}(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $\psi\in I$,</p>
 <p>$$
-\Theta^{\alpha}_u(v)\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi,\qquad
-\rho(u)\,\rho(v)\,\rho(u)^{*}\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi ,
+\boxed{\;\Theta^{\alpha}_u(v)\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi,\qquad
+\rho(u)\,\rho(v)\,\rho(u)^{*}\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi\;} ,
 $$</p>
 <p>and on the unitary slice, $\mathfrak{Q}(u)=-1$, both reduce to $\rho_u(v)\psi$; the unsigned sandwich is the negative of this on the slice. So on the ideal the sandwich with a slice-normalised vector is the reflection, and the sign that the two-sided operator removes is $-\mathfrak{Q}(u)$, which is $+1$ exactly on the slice.</p>
 <p><em>Proof.</em> The first identity is the previous proposition with $x=u$ and the vector formula $\Theta^{\alpha}_u=-\mathfrak{Q}(u)\rho_u$; the second is the corollary of the pin-representation article.</p>

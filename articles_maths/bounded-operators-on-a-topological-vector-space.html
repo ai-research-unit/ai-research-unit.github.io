@@ -79,13 +79,13 @@
 <p><strong>Proof.</strong> Continuity of a linear map is translation-invariant, so continuity at one point is continuity everywhere; a continuous homomorphism of topological groups is uniformly continuous for the left uniformity, and an additive map preserves it, so the same holds for the right uniformity. The kernel is the preimage of the closed set $\{0\}$. Bilinearity of composition is the associativity and the linearity of the operators. The separation statement is the Hahn–Banach theorem in <em>Locally Convex Spaces</em>.</p>
 <p><strong>Proposition (continuity is boundedness on a normed space).</strong> Let $X, Y$ be normed spaces and let $T : X \to Y$ be linear. The following are equivalent: $T$ is continuous; $T$ is continuous at $0$; there is $C \geq 0$ with $\lVert Tx\rVert \leq C\lVert x\rVert$ for all $x$; $T$ maps bounded sets to bounded sets; $T$ is uniformly continuous. In this case the least constant is</p>
 <p>$$
-\lVert T\rVert = \sup_{x \neq 0}\frac{\lVert Tx\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert Tx\rVert = \sup_{\lVert x\rVert = 1}\lVert Tx\rVert ,
+\boxed{\;\lVert T\rVert = \sup_{x \neq 0}\frac{\lVert Tx\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert Tx\rVert = \sup_{\lVert x\rVert = 1}\lVert Tx\rVert\;} ,
 $$</p>
 <p>the <strong>operator norm</strong> of $T$.</p>
 <p><strong>Proof.</strong> This is the theorem on bounded linear maps of <em>Normed and Banach Spaces</em>; the three expressions for the norm agree by homogeneity and the continuity of the norm, and the least constant is attained by the supremum over the unit sphere.</p>
 <p><strong>Proposition (the operator norm makes $B(X, Y)$ a normed space).</strong> With the operator norm, $B(X, Y)$ is a normed space, complete when $Y$ is complete; the norm is <strong>submultiplicative</strong>,</p>
 <p>$$
-\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert ,
+\boxed{\;\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert\;} ,
 $$</p>
 <p>for composable bounded maps, so $B(X) = B(X, X)$ is a normed algebra with unit of norm one; and $\lVert T^{n}\rVert \leq \lVert T\rVert^{n}$ for every $n \geq 1$.</p>
 <p><strong>Proof.</strong> The norm axioms and submultiplicativity are <em>Normed and Banach Spaces</em>; the inequality for powers follows by induction from submultiplicativity, and the unit has norm one because $\lVert \mathrm{id}\rVert = \sup_{\lVert x\rVert \leq 1}\lVert x\rVert = 1$.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h2 id="products-quotients-and-the-induced-map">Products, Quotients and the Induced Map</h2>
 <p><strong>Proposition (products and quotients).</strong> Let $T : E \to F \times G$ be linear with components $T_{1}, T_{2}$. Then $T$ is continuous if and only if both components are. Let $M \subseteq E$ be a subspace and let $q : E \to E/M$ be the quotient map; a linear map $S : E/M \to F$ is continuous if and only if $Sq$ is, and the <strong>induced map</strong></p>
 <p>$$
-\overline{T} : E/{\ker T} \longrightarrow F, \qquad \overline{T}(q x) = Tx ,
+\boxed{\;\overline{T} : E/{\ker T} \longrightarrow F, \qquad \overline{T}(q x) = Tx\;} ,
 $$</p>
 <p>is a well-defined continuous linear injection when $T$ is continuous.</p>
 <p><strong>Proof.</strong> For the product, continuity of $T$ is continuity of each composite $\pi_{i}T = T_{i}$, and conversely the components assemble because the product topology is initial. For the quotient, $Sq$ continuous gives $S$ continuous by the universal property of the quotient topology, which is final; $S$ continuous gives $Sq$ continuous as a composite. The induced map is well defined because $T$ vanishes on $\ker T$, it is injective by construction, and it is continuous because $\overline{T}q = T$ and $q$ is a quotient map.</p>

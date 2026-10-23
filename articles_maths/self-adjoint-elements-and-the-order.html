@@ -85,7 +85,7 @@ $$</p>
 <p><strong>Definition.</strong> For $a\in A$ the <strong>left multiplication</strong> is $L_a : x\mapsto ax$ and the <strong>right multiplication</strong> is $R_a : x\mapsto xa$; the <strong>trace form</strong> is $\langle x,y\rangle = \operatorname{tr}(x^{*}y)$ when $A$ carries a faithful trace, and the <strong>adjoint</strong> is taken with respect to it.</p>
 <p><strong>Proposition (the adjoint of the one-sided multiplications).</strong> The adjoints of the one-sided multiplications are</p>
 <p>$$
-(L_a)^{*} = L_{a^{*}}, \qquad (R_a)^{*} = R_{a^{*}} ;
+\boxed{\;(L_a)^{*} = L_{a^{*}}, \qquad (R_a)^{*} = R_{a^{*}}\;} ;
 $$</p>
 <p>consequently $L_a$ is <strong>self-adjoint</strong> if and only if $a$ is self-adjoint, and the map $a\mapsto L_a$ is a <strong>*-homomorphism</strong>: $L_{ab} = L_aL_b$ and $L_{a^{*}} = (L_a)^{*}$, so it carries the involution of the algebra to the adjoint involution of the operators.</p>
 <p><em>Proof.</em> $\langle L_ax,y\rangle = \operatorname{tr}((ax)^{*}y) = \operatorname{tr}(x^{*}a^{*}y) = \langle x,a^{*}y\rangle = \langle x,L_{a^{*}}y\rangle$, so $(L_a)^{*} = L_{a^*}$; the right-handed computation is the same with the factors in the other order. The *-homomorphism property is the associativity $L_{ab} = L_aL_b$ together with the adjoint statement.</p>
@@ -98,13 +98,13 @@ $$</p>
 <h2 id="the-order-of-the-self-adjoint-elements">The Order of the Self-Adjoint Elements</h2>
 <p><strong>Theorem (the order of the self-adjoint elements is the order of their operators).</strong> For self-adjoint $a,b$ the following are equivalent:</p>
 <p>$$
-\text{(i)} \ a\leq b ; \quad \text{(ii)} \ L_{b-a}\geq0 ; \quad \text{(iii)} \ \langle (b-a)x,x\rangle\geq0 \ \text{ for every } x ; \quad \text{(iv)} \ \varphi(b-a)\geq0 \ \text{ for every positive functional } \varphi ,
+\boxed{\;\text{(i)} \ a\leq b ; \quad \text{(ii)} \ L_{b-a}\geq0 ; \quad \text{(iii)} \ \langle (b-a)x,x\rangle\geq0 \ \text{ for every } x ; \quad \text{(iv)} \ \varphi(b-a)\geq0 \ \text{ for every positive functional } \varphi\;} ,
 $$</p>
 <p>so the map $a\mapsto L_a$ is an <strong>order isomorphism</strong> of the self-adjoint part onto its image in the self-adjoint operators, and the order of the elements is the <strong>quadratic order</strong> of the multiplication operators.</p>
 <p><em>Proof.</em> The equivalence (i) $\iff$ (iv) is the theorem that the order is the intersection of the forms of <em>Positive Definite Forms and the Order</em>; (i) $\iff$ (iii) is the quadratic form of $L_{b-a}$ computed at $x$: $\langle (b-a)x,x\rangle = \langle L_{b-a}x,x\rangle$ for the trace form; (ii) $\iff$ (iii) is the definition of the positivity of an operator. Hence the four conditions are equivalent, and the transport is an order isomorphism because it is injective (the algebra is faithful) and preserves the order in both directions.</p>
 <p><strong>Corollary (the positivity of an element and of its multiplication).</strong> An element is positive if and only if its left multiplication is positive, and if and only if its right multiplication is positive,</p>
 <p>$$
-a\geq0 \iff L_a\geq0 \iff R_a\geq0 ;
+\boxed{\;a\geq0 \iff L_a\geq0 \iff R_a\geq0\;} ;
 $$</p>
 <p>the map $a\mapsto L_a$ carries the order unit to the identity operator, the Jordan decomposition to the decomposition of $L_a$ into self-adjoint parts, and the order interval $[0,1]$ to the interval $[0,L_1] = [0,I]$ of the multiplication operators.</p>
 <p><em>Proof.</em> The equivalences are the theorem with $b - a = a$ and $a = 0$; the order unit is carried to $L_1 = I$; the Jordan decomposition is the spectral decomposition transported by the *-homomorphism; the interval statement is the order isomorphism applied to $[0,1]$.</p>

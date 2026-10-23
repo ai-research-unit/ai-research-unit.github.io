@@ -79,7 +79,7 @@
 <p><em>Proof.</em> A subset of a metric space is relatively compact exactly when every sequence in it has a convergent subsequence; applying this to $T(B)$ and rescaling by $\|x_n\|$ gives the equivalence.</p>
 <p><strong>Proposition (closure and limits of finite rank).</strong> $K(H)$ is a closed linear subspace of $B(H)$ containing $F(H)$, and</p>
 <p>$$
-K(H)=\overline{F(H)}^{\ \|\cdot\|} .
+\boxed{\;K(H)=\overline{F(H)}^{\ \|\cdot\|}\;} .
 $$</p>
 <p>An operator is compact exactly when it is the norm limit of a sequence of finite-rank operators.</p>
 <p><em>Proof.</em> Linear combinations of compact operators are compact and a norm limit of compact operators is compact, so $K(H)$ is a closed subspace containing $F(H)$. For the density, let $T$ be compact and let $P_\alpha$ be the projection onto a finite-dimensional reducing subspace spanned by the vectors $x_1,\dots,x_n$ on which $\|Tx_i\|$ is nearly maximal; the standard approximation argument over a finite $\varepsilon$-net of $T(B)$ produces $P$ of finite rank with $\|T-TP\|<\varepsilon$, and $TP$ has finite rank.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><em>Proof.</em> The compactness of $K$ makes $K(B)$ totally bounded, and an application of the spectral theorem to $K^*K$ gives the polar form $K=U|K|$ with $|K|$ compact and self-adjoint; the spectral theorem for a compact self-adjoint operator, quoted from <em>Banach and Hilbert Spaces</em>, gives the discrete spectrum of $|K|$, and the singular values tend to $0$. The Fredholm statement is the Fredholm alternative of the same article.</p>
 <p><strong>Corollary (the self-adjoint case).</strong> If $K$ is compact and self-adjoint then there is an orthonormal basis $(e_n)$ of $H$ with $K e_n=\lambda_n e_n$ and $\lambda_n\in\mathbb{R}$, $|\lambda_1|\ge|\lambda_2|\ge\cdots$, $\lambda_n\to0$ if the basis is infinite, and</p>
 <p>$$
-K=\sum_n\lambda_n\langle\cdot,e_n\rangle e_n
+\boxed{\;K=\sum_n\lambda_n\langle\cdot,e_n\rangle e_n\;}
 $$</p>
 <p>in operator norm.</p>
 <p><strong>Remark.</strong> The statement that a compact normal operator is diagonalised by the eigenvectors of its modulus is the reason the compact operators are said to have a discrete spectrum: the essential spectrum of a compact operator is $\{0\}$, and the continuous part of the spectrum is empty. The <strong>essential spectrum</strong> is the spectrum of the image in the Calkin algebra, and its computation is <em>Fredholm Theory</em>.</p>
@@ -137,7 +137,7 @@ $$</p>
 <p><em>Proof.</em> The triangle inequality for $\|\cdot\|_p$ is the majorisation form of the triangle inequality in $\ell^{n}$; the limiting statement is immediate from $s_n\to0$; Hölder's inequality for singular values gives the product estimate; the Hilbert–Schmidt inner product is linear in the first argument and conjugate-linear in the second by the properties of the trace.</p>
 <p><strong>Theorem (trace and duality).</strong> For $T\in S_1(H)$ the series $\operatorname{tr}T=\sum_n\langle Te_n,e_n\rangle$ converges absolutely and is independent of the orthonormal basis; $\operatorname{tr}(ST)=\operatorname{tr}(TS)$ for $S\in B(H)$, $T\in S_1(H)$; and the pairing $(S,T)\mapsto\operatorname{tr}(ST)$ identifies</p>
 <p>$$
-S_1(H)^*=B(H),\qquad K(H)^*=S_1(H),\qquad B(H)_*=S_1(H),
+\boxed{\;S_1(H)^*=B(H),\qquad K(H)^*=S_1(H),\qquad B(H)_*=S_1(H)\;},
 $$</p>
 <p>so $S_1(H)$ is the predual of $B(H)$ and the weak operator topology is the weak-* topology of this predual.</p>
 <p><em>Proof.</em> For $T\in S_1$ the series is absolutely summable by $|\langle Te_n,e_n\rangle|\le s_n$ and basis-independence is the standard trace computation; the cyclicity is the trace property; the duality $B(H)_*=S_1$ is the trace-class duality, and $K(H)^*=S_1$ is the same pairing restricted to the compact ideal. The statement that the WOT is the weak-* topology is then the identification of the rank-one trace-class functionals $\langle\cdot x,y\rangle$ with a total set of predual elements.</p>

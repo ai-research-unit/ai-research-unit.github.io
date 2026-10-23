@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
 <p><strong>Theorem (the explicit form).</strong> For all $a,b$ the signed sandwich is adjointable, with</p>
 <p>$$
-\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)} ,
+\boxed{\;\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)}\;} ,
 $$</p>
 <p>the signed sandwich of the conjugate parameters $(\delta(a),\delta(b))$; the order of the parameters is restored rather than reversed.</p>
 <p><strong>Proof.</strong> The adjoint is anti-multiplicative, and $\alpha$, $L$, $R$ have adjoints $\alpha^\dagger = \alpha$, $(L_a)^\dagger = L_{\sigma(a)}$, $(R_b)^\dagger = R_{\sigma(b)}$, so</p>
@@ -93,13 +93,13 @@ $$</p>
 <h2 id="composition-inverse-and-unitarity">Composition, Inverse and Unitarity</h2>
 <p><strong>Theorem (composition and inverse).</strong> The signed sandwiches form a monoid under composition with</p>
 <p>$$
-\Sigma^\alpha_{p,q}\circ\Sigma^\alpha_{r,s} = \Sigma^\alpha_{p\,\alpha(r),\,\alpha(s)\,q} ,
+\boxed{\;\Sigma^\alpha_{p,q}\circ\Sigma^\alpha_{r,s} = \Sigma^\alpha_{p\,\alpha(r),\,\alpha(s)\,q}\;} ,
 $$</p>
 <p>as in the operator theory of the signed sandwich; the inverse of $\Sigma^\alpha_{a,b}$ for invertible $a,b$ is $\Sigma^\alpha_{\alpha(a)^{-1},\alpha(b)^{-1}}$, and the adjoint of the inverse is $(\Sigma^\alpha_{a,b})^{\dagger\,-1} = \Sigma^\alpha_{\delta(a)^{-1},\delta(b)^{-1}} = \bigl(\Sigma^\alpha_{a,b}{}^{-1}\bigr)^\dagger$ when $a,b$ and $\delta(a),\delta(b)$ are invertible.</p>
 <p><strong>Proof.</strong> The composition table is the computation $\Sigma^\alpha_{p,q}\Sigma^\alpha_{r,s} = L_pR_q\alpha L_rR_s\alpha = L_pR_qL_{\alpha(r)}R_{\alpha(s)}\alpha^2 = L_{p\alpha(r)}R_{\alpha(s)q}$, using $\alpha L_r = L_{\alpha(r)}\alpha$, $R_qL_{\alpha(r)} = L_{\alpha(r)}R_q$ and $\alpha^2 = \mathrm{id}$; the inverse is the two-sided application, and the adjoint of the inverse is the inverse of the adjoint because the adjoint is an anti-automorphism of order two.</p>
 <p><strong>Theorem (the unitarity defect).</strong> The signed sandwich $\Sigma^\alpha_{a,b}$ is <strong>unitary</strong>, $\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a,b}\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \mathrm{id}$, if and only if the <strong>defect</strong> $\delta(a)\alpha(a)$ is a central unit and</p>
 <p>$$
-\alpha(b)\,\delta(b) = \bigl(\delta(a)\,\alpha(a)\bigr)^{-1} .
+\boxed{\;\alpha(b)\,\delta(b) = \bigl(\delta(a)\,\alpha(a)\bigr)^{-1}\;} .
 $$</p>
 <p>Equivalently, $\Sigma^\alpha_{a,b}$ is unitary if and only if $\delta(a)\alpha(a)$ is central and $\alpha(b)\delta(b)$ is its inverse; in particular, when the parameters are <strong>unitary</strong> and $\delta = \sigma\alpha$ acts as inversion on them, $\delta(a)\alpha(a) = 1 = \alpha(b)\delta(b)$ and the sandwich is unitary.</p>
 <p><strong>Proof.</strong> By the composition table, $\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{\delta(a),\delta(b)}\Sigma^\alpha_{a,b} = \Sigma^\alpha_{\delta(a)\alpha(a),\,\alpha(b)\delta(b)}$. The operator $\Sigma^\alpha_{u,v} = L_uR_v$ evaluated on $1$ is $uv$, so $\Sigma^\alpha_{u,v} = \mathrm{id}$ forces $uv = 1$ and hence $v = u^{-1}$ and $u$ central (from the identity $uxv = x$ for all $x$); thus the product is the identity exactly when $u = \delta(a)\alpha(a)$ is a central unit with inverse $v = \alpha(b)\delta(b)$. The second product gives the same condition, and the specialisation is $\delta(a)\alpha(a) = \sigma(\alpha(a))\alpha(a) = 1$ when $\alpha(a)$ is unitary.</p>

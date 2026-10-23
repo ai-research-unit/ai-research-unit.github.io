@@ -141,7 +141,7 @@ $$</p>
 <h2 id="the-divergence-theorem">The Divergence Theorem</h2>
 <p><strong>Theorem (divergence theorem).</strong> Let $F^{\mathrm{fn}}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
-\int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS,
+\boxed{\; \int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS \;},
 $$</p>
 <p>where $\tilde u_{\mathrm n} = \sum_{\mu\in\{t,x,y,z\}} n_\mu e_\mu$ is the biquaternion-valued outward unit normal.</p>
 <p><strong>Proof.</strong> The gradient $\tilde{\nabla}F^{\mathrm{fn}}$ is a biquaternion-valued function with components</p>
@@ -250,7 +250,7 @@ $$</p>
 <h3 id="the-distributional-gradient">The Distributional Gradient</h3>
 <p><strong>Theorem.</strong> In the sense of distributions on $\mathbb{H}_{\mathbb{B}}$,</p>
 <p>$$
-\tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t,
+\boxed{\; \tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t \;},
 $$</p>
 <p>where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.</p>
 <p><strong>Proof.</strong> The function $G^{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde{\nabla} G^{\mathrm{fn}}, \phi \rangle$ is defined by integration by parts:</p>
@@ -287,7 +287,7 @@ $$</p>
 <h3 id="the-regular-case">The Regular Case</h3>
 <p><strong>Theorem (Cauchy integral formula for regular functions).</strong> If $F^{\mathrm{fn}}$ satisfies $\tilde{\nabla}F^{\mathrm{fn}} = 0$ on $\Omega$ (the biquaternion analogue of the Cauchy–Riemann equations), then</p>
 <p>$$
-F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}).
+\boxed{\; F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) \;}.
 $$</p>
 <h3 id="proof-of-the-cauchy-integral-formula">Proof of the Cauchy Integral Formula</h3>
 <p>Apply the divergence theorem to the product $G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) F^{\mathrm{fn}}(\tilde{Q})$ on the domain $\Omega_\varepsilon = \Omega \setminus B(\tilde{Q}_0, \varepsilon)$, where $B(\tilde{Q}_0, \varepsilon)$ is the ball of radius $\varepsilon$ centred at $\tilde{Q}_0$. The boundary of $\Omega_\varepsilon$ consists of $\partial \Omega$ and the sphere $\partial B(\tilde{Q}_0, \varepsilon)$.</p>
@@ -345,7 +345,7 @@ $$</p>
 <h3 id="the-residue-theorem">The Residue Theorem</h3>
 <p><strong>Theorem (residue theorem).</strong> Let $F^{\mathrm{fn}}$ be regular on a domain $\Omega$ except at isolated singularities $\tilde{Q}_1, \dots, \tilde{Q}_n$. Then</p>
 <p>$$
-\frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) = \sum_{k=1}^{n} \mathrm{Res}(F^{\mathrm{fn}}, \tilde{Q}_k)
+\boxed{\; \frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) = \sum_{k=1}^{n} \mathrm{Res}(F^{\mathrm{fn}}, \tilde{Q}_k) \;}
 $$</p>
 <p>for any $\tilde{Q}_0$ outside the singularities.</p>
 <p><strong>Proof.</strong> Apply the Cauchy integral formula to the domain with small spheres removed around each singularity, and use the definition of the residue.</p>

@@ -76,13 +76,13 @@
 <h2 id="the-identities">The Identities</h2>
 <p><strong>Theorem (the $\mathrm{C}^*$-identity and the spectral radius).</strong> For every $a \in A$,</p>
 <p>$$
-\lVert a\rVert^2 = \lVert a^*a\rVert = r(a^*a) = r(a)^2 \;\;\text{for normal } a , \qquad \lVert a\rVert = r(a^*a)^{1/2} \;\;\text{in general} .
+\boxed{\;\lVert a\rVert^2 = \lVert a^*a\rVert = r(a^*a) = r(a)^2 \;\;\text{for normal } a , \qquad \lVert a\rVert = r(a^*a)^{1/2} \;\;\text{in general}\;} .
 $$</p>
 <p>For a normal $a$, $\lVert a\rVert = r(a)$; for a self-adjoint $a$, likewise $\lVert a\rVert = r(a)$.</p>
 <p><strong>Proof.</strong> The first equality is the $\mathrm{C}^*$-identity; $a^*a$ is self-adjoint, so $\lVert a^*a\rVert = r(a^*a)$ by <em>The Spectrum of a Self-Adjoint Element</em>; if $a$ is normal then $a^*a$ and the commuting $a$ satisfy $r(a^*a) = r(a)^2$, and $\lVert a\rVert^2 = r(a)^2$ gives $\lVert a\rVert = r(a)$.</p>
 <p><strong>Proposition (the involution and the spectrum).</strong> For every $a$,</p>
 <p>$$
-\sigma(a^*) = \overline{\sigma(a)} , \qquad r(a^*) = r(a) , \qquad r(a^*a) = r(a)^2 ,
+\boxed{\;\sigma(a^*) = \overline{\sigma(a)} , \qquad r(a^*) = r(a) , \qquad r(a^*a) = r(a)^2\;} ,
 $$</p>
 <p>and the involution is isometric, $\lVert a^*\rVert = \lVert a\rVert$.</p>
 <p><strong>Proof.</strong> $\lambda \in \sigma(a)$ iff $\bar\lambda \in \sigma(a^*)$, because $a - \lambda$ is invertible iff $a^* - \bar\lambda = (a-\lambda)^*$ is; hence the spectra are conjugate and the spectral radii agree. For the third identity, $\lVert a^*a\rVert = \lVert a\rVert^2$ and $a^*a$ is self-adjoint, so $r(a^*a) = \lVert a\rVert^2 = r(a)^2$ read from the first identity and the spectral radius formula $r(a) \leq \lVert a\rVert$ (with equality in the normal case). The isometry of the involution is the proposition of <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>.</p>
@@ -94,7 +94,7 @@ $$</p>
 <h2 id="rigidity">Rigidity</h2>
 <p><strong>Theorem (the unique $\mathrm{C}^*$-norm and the isometric maps).</strong> A $*$-algebra carries at most one $\mathrm{C}^*$-norm; every $*$-isomorphism of $\mathrm{C}^*$-algebras is isometric; and every unital $*$-homomorphism $\varphi : A \to B$ of unital $\mathrm{C}^*$-algebras is contractive, with</p>
 <p>$$
-\lVert\varphi(a)\rVert = r\bigl(\varphi(a^*a)\bigr)^{1/2} \leq r(a^*a)^{1/2} = \lVert a\rVert .
+\boxed{\;\lVert\varphi(a)\rVert = r\bigl(\varphi(a^*a)\bigr)^{1/2} \leq r(a^*a)^{1/2} = \lVert a\rVert\;} .
 $$</p>
 <p>An injective unital $*$-homomorphism is isometric.</p>
 <p><strong>Proof.</strong> Uniqueness: the norm is $\lVert a\rVert = r(a^*a)^{1/2}$, and the spectral radius is defined by invertibility, an algebraic notion, so two $\mathrm{C}^*$-norms on the same $*$-algebra agree; a $*$-isomorphism preserves invertibility, hence the spectral radius of $a^*a$, hence the norm. Contractivity: $\sigma(\varphi(a^*a)) \subseteq \sigma(a^*a)$ under a unital homomorphism, so $r(\varphi(a^*a)) \leq r(a^*a)$; the displayed chain follows. For an injective unital $*$-homomorphism the spectra agree by the same argument applied to the range, so the inequality is an equality.</p>

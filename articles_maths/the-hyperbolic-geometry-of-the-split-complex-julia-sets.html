@@ -102,7 +102,7 @@ $$
 The solutions of $\alpha^2 = \alpha$ in $\mathbb{D}$ are $0$, $1$ and the two idempotents $\Pi_\pm$, and only $\alpha = 1$ is a unit; a bijection requires $\alpha$ to be a unit, so $\alpha = 1$, and then $2\beta = 0$ forces $\beta = 0$, because $\mathbb{D}$ has no nonzero element of additive order two. Hence $h$ is the identity.</p>
 <p><strong>Theorem (the even symmetries).</strong> The map $f_c$ is even in the strong sense that $f_c(uz) = f_c(z)$ for every unit with $u^2 = 1$, that is for $u \in \{\pm1,\pm j\}$; hence the Fatou and the Julia sets are invariant under each of the four maps $z \mapsto uz$,
 $$
-J_c = uJ_c \qquad (u^2 = 1),
+\boxed{\; J_c = uJ_c \qquad (u^2 = 1) \;},
 $$
 although none of the three nontrivial ones commutes with $f_c$. Among the hyperbolic rotations $\exp(js)$ only $u = 1$ satisfies $u^2 = 1$, so no nontrivial rotation of $SO^+(1,1)$ preserves $J_c$: the invariance is the even symmetry of the family, not a rotation symmetry.</p>
 <p><strong>Proof.</strong> $f_c(uz) = u^2z^2+c = z^2+c = f_c(z)$ when $u^2 = 1$, and then $f_c^n(uz) = f_c^n(z)$ for every $n$ by induction. Since $z \mapsto uz$ is a bi-Lipschitz bijection of the plane, the family $\{f_c^n\}$ is equicontinuous at $z$ if and only if it is at $uz$, so both sets are invariant. For a hyperbolic rotation $u = \exp(js)$ one has $u^2 = \exp(2js)$, which is $1$ only for $s = 0$.</p>
@@ -117,13 +117,13 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>coordinate foliations</strong> of the split plane are the two families of lines $\{z_+ = \text{const}\}$ and $\{z_- = \text{const}\}$, whose directions are the null directions; the <strong>norm foliation</strong> is the family of hyperbolas $\{\langle z\rangle_{*} = t\}$ and the two null lines $t = 0$.</p>
 <p><strong>Theorem (the trace on a hyperbola).</strong> For each $t \neq 0$ the level set $\langle z\rangle_{*} = t$ is an orbit of $SO(1,1)$ and is foliated by the level curves of the two coordinates; the Julia set $J_c$ meets it in the set</p>
 <p>$$
-J_c \cap \{\langle z\rangle_{*} = t\} = \left\{z : z_+z_- = t,\ (z_+ \in J_+ \text{ or } z_- \in J_-)\right\} ,
+\boxed{\; J_c \cap \{\langle z\rangle_{*} = t\} = \left\{z : z_+z_- = t,\ (z_+ \in J_+ \text{ or } z_- \in J_-)\right\} \;},
 $$</p>
 <p>a union of the two coordinate-line families restricted to the hyperbola. On the null lines $t = 0$ the description degenerates: the hyperbola splits into the two null lines, and the two families of coordinate lines coincide with them.</p>
 <p><strong>Proof.</strong> Immediate from the product formula $J_c = \varphi^{-1}((J_+\times\mathbb{R})\cup(\mathbb{R}\times J_-))$ of <em>The Split-Complex Julia Sets</em> and from $N = z_+z_-$; the level set $\langle z\rangle_{*} = t$ in the coordinates is the hyperbola $z_+z_- = t$, which the two coordinate foliations cut into the two families, and its intersections with $J_c$ are exactly those on which a coordinate lies in the corresponding real Julia set.</p>
 <p><strong>Theorem (the dimension).</strong> For every $c \in \mathbb{D}$ the Hausdorff dimension of the split Julia set is</p>
 <p>$$
-\dim_H J_c = 1 + \max\{\dim_H J_+,\ \dim_H J_-\} ,
+\boxed{\; \dim_H J_c = 1 + \max\{\dim_H J_+,\ \dim_H J_-\} \;},
 $$</p>
 <p>whenever the two real Julia sets are nonempty, the product rule $\dim_H(A\times\mathbb{R}) = \dim_H A + 1$ for $A \subseteq \mathbb{R}$ being that of <em>Fractal Geometry</em>, and the dimension of a finite union being the maximum. If one of the real Julia sets is empty the corresponding product is absent, and if both are empty the set is empty.</p>
 <p><strong>Proof.</strong> $J_c$ is the union of the two products $\varphi^{-1}(J_+\times\mathbb{R})$ and $\varphi^{-1}(\mathbb{R}\times J_-)$, and $\varphi$ is a linear isomorphism, hence bi-Lipschitz and dimension-preserving; the dimension of a product $A\times\mathbb{R}$ is $\dim_H A + 1$ for a subset of the line, and the dimension of a finite union is the maximum of the dimensions.</p>

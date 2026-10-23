@@ -82,7 +82,7 @@ $$</p>
 <p>For a commutative $A$ the two notions agree, and for $A = \mathbb{C}$ they are the usual complex differentiability; the class of such functions is the class of holomorphic functions, which is as large as complex analysis requires. In the non-commutative case the class collapses.</p>
 <p><strong>Theorem (rigidity over $\mathbb{H}$).</strong> Let $\Omega \subseteq \mathbb{H}$ be a domain. A $C^1$ function $f : \Omega \to \mathbb{H}$ that is left $\mathbb{H}$-differentiable at every point of $\Omega$ is of the form</p>
 <p>$$
-f(x) = ax + b, \qquad a, b \in \mathbb{H}.
+\boxed{\;f(x) = ax + b, \qquad a, b \in \mathbb{H}\;}.
 $$</p>
 <p><em>Proof.</em> Writing the differential as left multiplication by $\frac{df}{dx}$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion.</p>
 <p><strong>Corollary.</strong> Over $\mathbb{H}$ the requirement that the differential be left multiplication by an element of $A$ is too strong: the only such functions on a domain are the affine ones. The same collapse occurs over each real algebra for which the rigidity theorem holds. A theory rich enough to be useful must therefore weaken the differentiability requirement, and the weakening adopted in the subject is to require the vanishing of a fixed first-order operator.</p>
@@ -137,7 +137,7 @@ B_j B_k + B_k B_j = -2\delta_{jk}\,1, \qquad j, k \geq 1.
 $$</p>
 <p>Then</p>
 <p>$$
-D \bar D = \bar D D = \Delta \cdot 1,
+\boxed{\;D \bar D = \bar D D = \Delta \cdot 1\;},
 $$</p>
 <p>where $\Delta = \sum_{\alpha} \partial^2/\partial x_\alpha^2$ is the Laplacian of $\mathbb{R}^m$.</p>
 <p><em>Proof.</em> Expand</p>
@@ -220,7 +220,7 @@ $$</p>
 <p><em>Proof.</em> This is the Malgrange–Ehrenpreis theorem; the case at hand is the constant-coefficient case, where the fundamental solution may be taken as a finite combination of distributions of the form $P(\xi)^{-1}$ under the Fourier transform, with the singularities of the symbol handled by a suitable cut-off.</p>
 <p><strong>Theorem (Cauchy–Pompeiu formula).</strong> Let $\Omega \subseteq A$ be a bounded domain with smooth boundary $\partial\Omega$, oriented by the outward normal, and let $E$ be a Cauchy kernel for $D$. Then for $f$ of class $C^1$ on $\bar\Omega$ and $x \in \Omega$,</p>
 <p>$$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_\Omega E(x-y)\,(Df)(y)\,dy,
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_\Omega E(x-y)\,(Df)(y)\,dy\;},
 $$</p>
 <p>where $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ is the <strong>conormal element</strong>, $\nu_\alpha$ the components of the outward unit normal, and $dS$ the surface measure.</p>
 <p><strong>Corollary (Cauchy integral formula).</strong> If $f$ is left regular on $\Omega$, the second integral vanishes and</p>

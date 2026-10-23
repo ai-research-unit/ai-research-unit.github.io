@@ -156,13 +156,13 @@ $$</p>
 <h3 id="the-inversion-theorem">The Inversion Theorem</h3>
 <p><strong>Theorem (inversion).</strong> Let $f : \mathbb{R} \to \mathbb{B}$ be integrable and continuous at a point $t \in \mathbb{R}$, and let $F$ be integrable. Then</p>
 <p>$$
-f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
+\boxed{\; f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega \;}.
 $$</p>
 <p><strong>Proof.</strong> The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_t, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.</p>
 <h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
 <p><strong>Theorem (Plancherel).</strong> For a root with $\rho^{*} = -\rho$ — the scalar imaginary and the real roots — the transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{B})$ of square-integrable biquaternion-valued functions, with</p>
 <p>$$
-\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
+\boxed{\; \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega \;}.
 $$</p>
 <p><strong>Proof.</strong> The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \xi\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.</p>
 <p><strong>Remark (the genuinely complex roots).</strong> Off the degenerate families the factorization still holds and the transform is still invertible on $L^2(\mathbb{R}, \mathbb{B})$, but it is <strong>not</strong> an isometry for the Euclidean norm. What it preserves is the coefficient norm of the root-adapted basis, and the two norms differ because a genuinely complex root is not a Euclidean unit vector, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$ for $\rho = b\mu + d\nu i$. The unitary statement is therefore exactly the statement $\rho^{*} = -\rho$, the same dichotomy that governs the positivity of the transform of a measure (<em>The General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>), and the transform remains a faithful change of description for every root.</p>
@@ -245,7 +245,7 @@ $$</p>
 $$</p>
 <p>Then</p>
 <p>$$
-\mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega),
+\boxed{\; \mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega) \;},
 $$</p>
 <p>where the product on the right is the biquaternion product.</p>
 <p><strong>Proof.</strong> Compute</p>
@@ -282,7 +282,7 @@ $$</p>
 <h3 id="the-dalembertian">The d'Alembertian</h3>
 <p>The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,</p>
 <p>$$
-\mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
+\boxed{\; \mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega) \;}.
 $$</p>
 <p>The multiplier is a scalar (times $e_t$), and it vanishes on the <strong>null cone</strong></p>
 <p>$$

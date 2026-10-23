@@ -98,7 +98,7 @@ $$</p>
 <p><strong>Definition.</strong> For $w\in W$ with reduced word $w = s_1\cdots s_l$, set $T_w = T_{s_1}\cdots T_{s_l}$; the braid relations are exactly the statement that $T_w$ does not depend on the reduced word chosen, so that the assignment is well defined.</p>
 <p><strong>Theorem (the standard basis).</strong> The elements $T_w$, $w\in W$, form a basis of $H_q(W)$ as an $A$-module; consequently $H_q(W)$ is free of rank $\lvert W\rvert$ over $A$ and is a deformation of the group algebra $k[W]$ over the ring $k[q^{\pm1}]$. The multiplication is determined by</p>
 <p>$$
-T_wT_s = \begin{cases} T_{ws}, & l(ws) = l(w)+1,\\[2pt] q\,T_{ws} + (q-1)T_w, & l(ws) = l(w)-1 .\end{cases}
+\boxed{\;T_wT_s = \begin{cases} T_{ws}, & l(ws) = l(w)+1,\\[2pt] q\,T_{ws} + (q-1)T_w, & l(ws) = l(w)-1 .\end{cases}\;}
 $$</p>
 <p><em>Proof (outline).</em> One shows that the submodule spanned by the $T_w$ is closed under right multiplication by the generators: if $l(ws) = l(w)+1$ the product is $T_{ws}$ by definition, while if $l(ws) = l(w)-1$ one writes $w = w's$ with $l(w) = l(w')+1$ and computes</p>
 <p>$$
@@ -116,7 +116,7 @@ $$</p>
 <p>that is, $\tau$ is the $A$-linear functional that reads off the coefficient of $T_1$ in the standard basis and the form is the associated bilinear form.</p>
 <p><strong>Theorem.</strong> The functional $\tau$ is a <strong>trace</strong>: $\tau(T_xT_y) = \tau(T_yT_x)$ for all $x,y\in W$. The form $\langle-,-\rangle$ is symmetric, nondegenerate and <strong>associative</strong>: $\langle T_xT_y,T_z\rangle = \langle T_x,T_yT_z\rangle$. Moreover</p>
 <p>$$
-\langle T_x,T_y\rangle = \begin{cases} q^{l(x)}, & xy = 1,\\ 0, & xy\neq1 .\end{cases}
+\boxed{\;\langle T_x,T_y\rangle = \begin{cases} q^{l(x)}, & xy = 1,\\ 0, & xy\neq1 .\end{cases}\;}
 $$</p>
 <p>Consequently $H_q(W)$ is a <strong>symmetric algebra</strong> in the sense of <em>Frobenius Algebras</em>: it is a free $A$-module of finite rank carrying an associative, symmetric, nondegenerate bilinear form, and it is additionally a <strong>Frobenius algebra</strong> with the symmetrising form $\tau$ as its Frobenius form.</p>
 <p><em>Proof.</em> The rule of the standard basis shows that the coefficient of $T_1$ in $T_xT_y$ is zero unless $xy = 1$, and in that case equals $q^{l(x)}$: iterating the rule, the only way to reduce a reduced word for $xy$ to the identity is to reduce each generator in turn against its own inverse, each reduction producing a factor $q$. The displayed formula follows, and from it the symmetry $\tau(T_xT_y) = \tau(T_yT_x)$ is immediate, since both sides vanish unless $x = y^{-1}$. Nondegeneracy is the pairing of the basis with the inverse basis: $\langle T_x,T_{x^{-1}}\rangle = q^{l(x)}\neq0$ and all other pairings of $T_x$ with basis elements vanish. Associativity is the associativity of the multiplication together with the trace property. For the case $W = S_3$ the identity was checked on all $36$ pairs of basis elements: the coefficient of $T_1$ in $T_xT_y$ is $q^{l(x)}$ when $xy = 1$ and $0$ otherwise.</p>
@@ -156,7 +156,7 @@ $$</p>
 <h2 id="the-kazhdanlusztig-basis">The Kazhdan–Lusztig Basis</h2>
 <p><strong>Theorem (Kazhdan–Lusztig, standard).</strong> Let $(W,S)$ be a finite Coxeter system and write $\iota$ for the ring involution of $H_q(W)$ with $\iota(q) = q^{-1}$ and $\iota(T_w) = (T_{w^{-1}})^{-1}$. There is a unique basis $\{C'_w : w\in W\}$ of $H_q(W)$ over the Laurent polynomials in $q^{1/2}$ such that</p>
 <p>$$
-C'_w = \sum_{y\leq w}(-1)^{l(w)-l(y)}q^{(l(w)-l(y))/2}\,P_{y,w}(q)\,T_y , \qquad \iota(C'_w) = C'_w ,
+\boxed{\;C'_w = \sum_{y\leq w}(-1)^{l(w)-l(y)}q^{(l(w)-l(y))/2}\,P_{y,w}(q)\,T_y , \qquad \iota(C'_w) = C'_w\;} ,
 $$</p>
 <p>where $P_{y,w}(q)\in\mathbb{Z}[q]$ are the <strong>Kazhdan–Lusztig polynomials</strong>, with $P_{w,w} = 1$, with $P_{y,w} = 0$ unless $y\leq w$ and $l(y)\equiv l(w)$ modulo $2$, and with the degree of $P_{y,w}$ at most $(l(w)-l(y)-1)/2$ for $y<w$. For $W = S_3$ all the polynomials take the value $1$. The multiplication constants of the $C'$-basis are polynomials in $q$ with non-negative integer coefficients, and this <strong>positivity</strong> is what defines the cells of the algebra.</p>
 <p><strong>Definition.</strong> For $x,y\in W$ write $x\preceq_L y$ if the coefficient of $C'_x$ in $C'_sC'_y$ is non-zero for some $s\in S$; the equivalence classes of the transitive closure are the <strong>left cells</strong>, and the analogous relations on the right and on both sides give the <strong>right cells</strong> and the <strong>two-sided cells</strong>. A <strong>cell representation</strong> of $H_q(W)$ is the representation on the span of a left cell.</p>

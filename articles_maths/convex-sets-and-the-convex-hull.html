@@ -87,7 +87,7 @@ $$</p>
 <h3 id="the-convex-hull">The Convex Hull</h3>
 <p><strong>Definition.</strong> The <strong>convex hull</strong> of $A\subseteq E$ is</p>
 <p>$$
-\operatorname{conv}(A) = \Bigl\{\sum_{i=1}^{k} t_i a_i : k\geq1,\ a_i\in A,\ t_i\geq0,\ \sum_{i=1}^{k} t_i = 1\Bigr\},
+\boxed{\;\operatorname{conv}(A) = \Bigl\{\sum_{i=1}^{k} t_i a_i : k\geq1,\ a_i\in A,\ t_i\geq0,\ \sum_{i=1}^{k} t_i = 1\Bigr\}\;},
 $$</p>
 <p>the set of all convex combinations of finite families of points of $A$.</p>
 <p><strong>Proposition (the hull is a convex set, and it is the least one).</strong> $\operatorname{conv}(A)$ is convex, contains $A$, and is contained in every convex set that contains $A$.</p>
@@ -106,7 +106,7 @@ $$</p>
 <h3 id="the-kreinmilman-theorem">The Krein–Milman Theorem</h3>
 <p><strong>Theorem (Krein–Milman).</strong> Let $K$ be a compact convex subset of a locally convex space. Then</p>
 <p>$$
-K = \overline{\operatorname{conv}}\bigl(\operatorname{ext}(K)\bigr).
+\boxed{\;K = \overline{\operatorname{conv}}\bigl(\operatorname{ext}(K)\bigr)\;}.
 $$</p>
 <p>In particular a nonempty compact convex set has extreme points, and two compact convex sets with the same extreme points coincide.</p>
 <p><em>Proof.</em> The inclusion $\supseteq$ holds because $K$ is convex and closed and the extreme points lie in $K$. For the converse, suppose some point $a\in K$ were outside the closed convex subset $L = \overline{\operatorname{conv}}(\operatorname{ext} K)$. The separation theorem of <em>Duality Theory</em> would give a continuous linear functional $f$ with $f(a) > \sup_L f$; the set $F = \{x\in K : f(x) = \sup_K f\}$ is a nonempty compact face of $K$ and misses $L$, so it contains no extreme point of $K$. But by the previous proposition applied to $F$, which is compact convex, $F$ has an extreme point $x$; and $x$, being extreme in $F$, is extreme in $K$, a contradiction.</p>

@@ -91,7 +91,7 @@ $$</p>
 <p><strong>Proof.</strong> Symmetry is immediate from the definition. For the triangle inequality, $|\varphi(a)-\psi(a)|\leq|\varphi(a)-\chi(a)|+|\chi(a)-\psi(a)|$ pointwise, and the supremum over the constraint set is subadditive. The vanishing statement is the definition: $d(\varphi,\psi)=0$ says that $\varphi$ and $\psi$ take the same value at every element of $C$. Norm-boundedness of $C$ bounds $d$, because $|\varphi(a)-\psi(a)|\leq2\|a\|$ for states of norm one.</p>
 <p><strong>Theorem (commutative case).</strong> Let $M$ be a closed spin Riemannian manifold, let $A=C^{\infty}(M)$ act on $H=L^{2}(M,S)$ by pointwise multiplication, and let $D$ be the Cauchy–Riemann operator of the spinor bundle. Then the pure states of $A$ are the points of $M$ and</p>
 <p>$$
-d(x,y)=\text{the geodesic distance from }x\text{ to }y.
+\boxed{\;d(x,y)=\text{the geodesic distance from }x\text{ to }y\;}.
 $$</p>
 <p><strong>Proof.</strong> For $f\in C^{\infty}(M)$ the commutator of $D$ with multiplication by $f$ is Clifford multiplication by the gradient, $[D,f]=c(df)$, so $\|[D,f]\|=\|df\|_{\infty}=\sup_M|\nabla f|$. The Connes distance is therefore</p>
 <p>$$
@@ -176,7 +176,7 @@ $$</p>
 <h2 id="the-commutative-case-and-reconstruction">The Commutative Case and Reconstruction</h2>
 <p><strong>Theorem (Connes' reconstruction).</strong> Let $(A,H,D)$ be a commutative spectral triple satisfying the axioms of dimension, regularity, finiteness, reality, first order and orientation, with $A$ commutative as a $*$-algebra. Then there is a closed spin Riemannian manifold $M$, a spinor bundle $S\to M$ and a spin structure such that</p>
 <p>$$
-A\cong C^{\infty}(M), \qquad H\cong L^{2}(M,S), \qquad D\cong\text{the Cauchy–Riemann operator of }S,
+\boxed{\;A\cong C^{\infty}(M), \qquad H\cong L^{2}(M,S), \qquad D\cong\text{the Cauchy–Riemann operator of }S\;},
 $$</p>
 <p>and the reconstruction is functorial.</p>
 <p><strong>Proof sketch.</strong> The algebra $A$ is the algebra of smooth functions on the space of characters, a closed manifold $M$; the boundedness axiom makes $D$ a first-order differential operator and the compactness of the resolvent makes $M$ compact; the dimension axiom fixes the dimension of $M$; the orientation axiom identifies the Hochschild cycle with the volume form and gives the volume element; and the reality axiom produces the spin structure together with the spinor bundle whose charge conjugation is $J$. The identification of $D$ with the Cauchy–Riemann operator is the local computation of the symbol.</p>
@@ -191,7 +191,7 @@ $$</p>
 <p>of even degree, a closed cyclic cocycle modulo coboundaries; the operator $\exp(-D^{2})$ regularises the trace, and the boundedness of the commutators makes each term trace-class.</p>
 <p><strong>Theorem (index pairing).</strong> Let $e\in M_N(A)$ be an idempotent representing a class $[e]\in K_0(A)$. Then the compression $eDe$ is a Fredholm operator on the range of $e$, the pairing of its index with the Connes–Chern character is</p>
 <p>$$
-\langle\operatorname{ch}(D),[e]\rangle=\operatorname{index}(eDe),
+\boxed{\;\langle\operatorname{ch}(D),[e]\rangle=\operatorname{index}(eDe)\;},
 $$</p>
 <p>computed in the graded sense, and it depends only on the cyclic cohomology class of $\operatorname{ch}(D)$ and the $K$-theory class of $e$.</p>
 <p><strong>Proof sketch.</strong> The compressed operator $eDe$ is essentially self-adjoint with compact resolvent; its grading splitting has finite-dimensional kernel and cokernel, and the McKean–Singer supertrace argument expresses the index as the trace of $\gamma e\,\exp(-(eDe)^{2})$, which expands into the cyclic expression defining the character. The pairing is well defined because a coboundary in cyclic cohomology pairs trivially with $K$-theory.</p>

@@ -89,13 +89,13 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> The conjugation is an algebra automorphism of $\operatorname{End}_{k}(V)$ of order two:</p>
 <p>$$
-\operatorname{Ad}_{\sigma}^{2} = \mathrm{id}, \qquad \operatorname{Ad}_{\sigma}(S + T) = \operatorname{Ad}_{\sigma}(S) + \operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(ST) = \operatorname{Ad}_{\sigma}(S)\operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(\mathrm{id}) = \mathrm{id}.
+\boxed{\;\operatorname{Ad}_{\sigma}^{2} = \mathrm{id}, \qquad \operatorname{Ad}_{\sigma}(S + T) = \operatorname{Ad}_{\sigma}(S) + \operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(ST) = \operatorname{Ad}_{\sigma}(S)\operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(\mathrm{id}) = \mathrm{id}\;}.
 $$</p>
 <p>Its fixed points are the operators commuting with $\sigma$: $\operatorname{Ad}_{\sigma}(T) = T$ if and only if $\sigma T = T\sigma$. It is an <strong>inner</strong> automorphism, represented by the unit $\sigma$ of the algebra of operators, and it is not the identity unless $\sigma$ is central in $\operatorname{End}_{k}(V)$, which happens exactly when $\sigma$ is a scalar endomorphism.</p>
 <p><strong>Proof.</strong> $\operatorname{Ad}_{\sigma}^{2}(T) = \sigma^{2}T\sigma^{-2} = T$ because $\sigma^{2} = \mathrm{id}$; the additivity, the multiplicativity and the unit are the identity $(\sigma S\sigma)(\sigma T\sigma) = \sigma ST\sigma$ and the relations $\sigma(\mathrm{id})\sigma = \mathrm{id}$; the fixed points are the solutions of $\sigma T\sigma = T$, which is $\sigma T = T\sigma$ after multiplying by $\sigma$ on the right. The centrality statement is that $\sigma T = T\sigma$ for every $T$ if and only if $\sigma$ commutes with every endomorphism, which for a free module of finite rank means that $\sigma$ is a scalar.</p>
 <p><strong>Corollary (the decomposition).</strong> If $2$ is invertible in $k$, every operator splits uniquely as</p>
 <p>$$
-T = \frac{T + \operatorname{Ad}_{\sigma}(T)}{2} + \frac{T - \operatorname{Ad}_{\sigma}(T)}{2},
+\boxed{\;T = \frac{T + \operatorname{Ad}_{\sigma}(T)}{2} + \frac{T - \operatorname{Ad}_{\sigma}(T)}{2}\;},
 $$</p>
 <p>the first summand equivariant and the second anti-equivariant, meaning fixed by $\operatorname{Ad}_{\sigma}$ up to the sign $-1$. The two summands are the projections onto the fixed and the anti-fixed subalgebras along the two eigenspaces of the involution $\operatorname{Ad}_{\sigma}$ of the operator algebra.</p>
 <p><strong>Proof.</strong> The two summands are the images under the projection operators $(1 \pm \operatorname{Ad}_{\sigma})/2$ of the linear involution $\operatorname{Ad}_{\sigma}$; they lie in the $+1$ and $-1$ eigenspaces, and their sum is $T$. Uniqueness is the uniqueness of the eigenspace decomposition of a linear involution over a ring in which two is invertible.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h3 id="operators-and-the-eigenspaces">Operators and the Eigenspaces</h3>
 <p><strong>Theorem.</strong> An equivariant operator preserves the fixed and the anti-fixed submodules: if $T\sigma = \sigma T$ then $T(V^{\sigma}) \subseteq V^{\sigma}$ and $T(V^{-\sigma}) \subseteq V^{-\sigma}$. Conversely, if $2$ is invertible and a linear operator preserves the two eigenspaces of $\sigma$, then it is equivariant. When $2$ is invertible, the algebra $\operatorname{End}_{k}(V)^{\sigma}$ of equivariant operators is the direct sum of the two endomorphism algebras of the eigenspaces,</p>
 <p>$$
-\operatorname{End}_{k}(V)^{\sigma} \;\cong\; \operatorname{End}_{k}(V^{\sigma}) \oplus \operatorname{End}_{k}(V^{-\sigma}),
+\boxed{\;\operatorname{End}_{k}(V)^{\sigma} \;\cong\; \operatorname{End}_{k}(V^{\sigma}) \oplus \operatorname{End}_{k}(V^{-\sigma})\;},
 $$</p>
 <p>as algebras, and the fixed elements of the involution $\sigma$ are the elements of $V^{\sigma}$.</p>
 <p><strong>Proof.</strong> If $v \in V^{\sigma}$ then $\sigma(Tv) = T(\sigma v) = Tv$, so $Tv$ is fixed; the anti-fixed case is the same with the sign. Conversely an operator preserving the eigenspaces satisfies $T\sigma = \sigma T$ on each summand, hence on $V$. The algebra isomorphism sends an equivariant $T$ to the pair of its restrictions, which is injective and surjective by the eigenspace decomposition and the first statement; the last clause is the definition of the fixed submodule.</p>

@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Definition.</strong> A diffeomorphism $f:M\to M$ satisfies <strong>Axiom A</strong> if the non-wandering set $\Omega(f)$ is hyperbolic and the periodic points are dense in $\Omega(f)$; a basic set is a hyperbolic set on which $f$ is topologically transitive.</p>
 <p><strong>Theorem (spectral decomposition).</strong> Let $f$ be a diffeomorphism of a compact manifold satisfying Axiom A. Then the non-wandering set decomposes into finitely many disjoint closed invariant basic sets,</p>
 <p>$$
-\Omega(f)=\Lambda_1\cup\cdots\cup\Lambda_s, \qquad f(\Lambda_i)=\Lambda_i,
+\boxed{\;\Omega(f)=\Lambda_1\cup\cdots\cup\Lambda_s, \qquad f(\Lambda_i)=\Lambda_i\;},
 $$</p>
 <p>each of which is closed, open in $\Omega(f)$ and invariant, with $f|_{\Lambda_i}$ topologically transitive; each $\Lambda_i$ decomposes further into finitely many pieces that are cyclically permuted by $f$, so that $f^{m_i}$ restricted to each piece is topologically mixing for the cycle length $m_i$. The decomposition is unique, and the ergodic invariant measures of $f$ are supported on the basic sets.</p>
 <p><em>Proof (sketch).</em> One defines an equivalence relation on the non-wandering points by the existence of a point whose orbit passes near both infinitely often in the appropriate order; the classes are open and closed in $\Omega(f)$ and invariant, finitely many by compactness, and the transitivity on each is the definition of the class.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $\Lambda$ be a hyperbolic set for $f$. A <strong>Markov partition</strong> of $\Lambda$ is a finite cover $\mathcal R=\{R_1,\dots,R_k\}$ by closed subsets with disjoint interiors, each the closure of the intersection of $\Lambda$ with the local product of a piece of stable manifold and a piece of unstable manifold, such that the image of each piece crosses the pieces in a <strong>Markov</strong> (directed) way: if $f(\operatorname{int}R_i)$ meets $\operatorname{int}R_j$ then it crosses it fully in the unstable direction.</p>
 <p><strong>Theorem (Sinai–Bowen).</strong> Let $\Lambda$ be a locally maximal hyperbolic set for a diffeomorphism $f$ with $f|_\Lambda$ topologically transitive. Then $\Lambda$ admits a Markov partition, and the corresponding transition matrix $A$ of order $k$ defines a two-sided subshift of finite type $(\Sigma_A,\sigma)$ with the following property: there is a continuous surjective map $\pi:\Sigma_A\to\Lambda$ with $\pi\circ\sigma=f\circ\pi$, the map $\pi$ is injective on a residual set and finite-to-one, and the periodic points of $\Lambda$ biject with the periodic points of $\Sigma_A$ through $\pi$ up to the finite multiplicity. Consequently</p>
 <p>$$
-h_{\mathrm{top}}(f|_\Lambda)=\log\rho(A),
+\boxed{\;h_{\mathrm{top}}(f|_\Lambda)=\log\rho(A)\;},
 $$</p>
 <p>the logarithm of the spectral radius of the transition matrix, and the topological entropy of the hyperbolic set is computed from its symbolic model.</p>
 <p><em>Proof (sketch).</em> The Markov partition is constructed by taking a sufficiently fine cover by rectangles built from the local product structure, choosing the pieces so small that the image of each crosses the pieces in the required way; the itinerary of a point with respect to the partition is the sequence of pieces it visits, and the Markov property makes the set of itineraries exactly the subshift of finite type $A$. The semiconjugacy $\pi$ maps a sequence to the unique point whose orbit realises the itinerary, and the injectivity on a residual set follows from the countability of the exceptional set of points whose orbit hits the boundary of a partition element. The entropy identity is the standard computation for a subshift of finite type.</p>
@@ -149,7 +149,7 @@ $$</p>
 <p>and the <strong>Oseledets theorem</strong> gives the existence of the exponents, of the filtration and of the corresponding subspaces for $\mu$-almost every $x$, under the hypothesis $\log^+\|Df^{\pm1}\| \in L^1(\mu)$; the functions $x\mapsto\lambda_i(x)$ are measurable, $f$-invariant, and the sum of the positive exponents is written $\lambda^+(x)=\sum_{\lambda_i>0}\lambda_i(x)$.</p>
 <p><strong>Theorem (Ruelle's inequality and Pesin's formula).</strong> Let $f$ be a $C^1$ diffeomorphism preserving a probability measure $\mu$. Then the measure-theoretic entropy satisfies</p>
 <p>$$
-h_\mu(f)\le\int\lambda^+\,d\mu ,
+\boxed{\;h_\mu(f)\le\int\lambda^+\,d\mu\;} ,
 $$</p>
 <p>with equality — <strong>Pesin's formula</strong> — when $\mu$ is absolutely continuous with respect to the volume in the unstable directions, that is, when $\mu$ is an SRB measure; for a $C^{1+\alpha}$ diffeomorphism the equality holds for every measure whose conditional measures on the unstable manifolds are absolutely continuous.</p>
 <h3 id="the-bowenruelle-measure">The Bowen–Ruelle Measure</h3>

@@ -101,7 +101,7 @@ $$</p>
 <p>Both are $R$-submodules of $E$.</p>
 <p><strong>Theorem.</strong> If $2$ is invertible in $R$, then</p>
 <p>$$
-E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*}),
+\boxed{\;E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*})\;},
 $$</p>
 <p>and the two summands have intersection $0$.</p>
 <p><em>Proof.</em> The displayed decomposition writes $f$ as the sum of a self-adjoint and a skew-adjoint element because ${}^{*}$ is $R$-linear and of order two; if $f$ is both, then $f=-f$ and $2f=0$, so $f=0$ when $2$ is invertible.</p>
@@ -109,7 +109,7 @@ $$</p>
 <h3 id="the-self-adjoint-part-is-a-jordan-algebra">The self-adjoint part is a Jordan algebra</h3>
 <p><strong>Theorem.</strong> The self-adjoint part is closed under the <strong>Jordan product</strong></p>
 <p>$$
-f \bullet g=\tfrac12(fg+gf),
+\boxed{\;f \bullet g=\tfrac12(fg+gf)\;},
 $$</p>
 <p>and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operatorname{Sym}(M)$ is a unital Jordan subalgebra of $E$, and it is a <strong>special</strong> Jordan algebra.</p>
 <p><em>Proof.</em> If $f^{*}=f$ and $g^{*}=g$ then $(fg+gf)^{*}=g^{*}f^{*}+f^{*}g^{*}=gf+fg=fg+gf$, so $(f\bullet g)^{*}=f\bullet g$; taking $g=f$ gives $f^{2}$ self-adjoint; the identity is self-adjoint.</p>
@@ -137,7 +137,7 @@ $$</p>
 <h3 id="the-isometry-characterisation">The isometry characterisation</h3>
 <p><strong>Theorem.</strong> An endomorphism $u$ is unitary if and only if it preserves the pairing:</p>
 <p>$$
-u \in \mathrm{U}(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M .
+\boxed{\;u \in \mathrm{U}(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M\;} .
 $$</p>
 <p><em>Proof.</em> $\langle u(m),u(n)\rangle=\langle m,u^{*}u(n)\rangle$. If $u^{*}u=\mathrm{id}$ this is $\langle m,n\rangle$. Conversely, if the identity holds for all $m,n$, then $\langle m,u^{*}u(n)-n\rangle=0$ for all $m$, so $u^{*}u(n)=n$ by non-degeneracy in the first variable, that is $u^{*}u=\mathrm{id}$; a one-sided inverse in a group of units is two-sided, so $u\in \mathrm{U}(M)$.</p>
 <p>Thus the unitary elements are exactly the automorphisms of $M$ that preserve the pairing, and $\mathrm{U}(M)$ is the <strong>unitary group</strong> of the pairing; in the classical cases it is the orthogonal group, the unitary group or the symplectic group, as the examples show.</p>

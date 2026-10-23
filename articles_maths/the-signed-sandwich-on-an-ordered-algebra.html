@@ -111,7 +111,7 @@ $$</p>
 <h3 id="composition-and-the-parameter-law">Composition and the Parameter Law</h3>
 <p><strong>Theorem (the composition law).</strong> The signed sandwiches compose by the twisted parameter rule</p>
 <p>$$
-\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b} ,
+\boxed{\;\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b}\;} ,
 $$</p>
 <p>which for $\alpha = \mathrm{id}$ is the unsigned law $\Theta_{a,b}\Theta_{c,d} = \Theta_{ac,\,db}$.</p>
 <p><em>Proof.</em> Compute $\Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{c,d}(x)\bigr) = a\,\alpha\bigl(c\,\alpha(x)\,d\bigr)b = a\,\alpha(c)\,\alpha^2(x)\,\alpha(d)\,b = a\alpha(c)\,x\,\alpha(d)\,b$, using that $\alpha$ is an algebra homomorphism and $\alpha^2 = \mathrm{id}$; the result is $\Theta^{\alpha}_{a\alpha(c),\,\alpha(d)b}(x)$.</p>
@@ -120,7 +120,7 @@ $$</p>
 <h3 id="positivity">Positivity</h3>
 <p><strong>Proposition (positivity of the signed sandwich).</strong> If the grade involution is <strong>positive</strong> and $a\geq0$, $b\geq0$, then $\Theta^{\alpha}_{a,b}\geq0$. If the grade involution is not positive the signed sandwich of positive parameters need not be positive, and the obstruction is exactly the sign of $\alpha$ on the odd part of the cone; in the graded case with the parity $\varepsilon$, the signed sandwich acts as</p>
 <p>$$
-\Theta^{\alpha}_{a,b}(x) = \varepsilon_x\,\Theta_{a,b}(x) \quad (x \ \text{homogeneous}) ,
+\boxed{\;\Theta^{\alpha}_{a,b}(x) = \varepsilon_x\,\Theta_{a,b}(x) \quad (x \ \text{homogeneous})\;} ,
 $$</p>
 <p>so on the odd part it is the negative of the unsigned sandwich.</p>
 <p><em>Proof.</em> Positivity of $\alpha$ gives $\alpha(x)\geq0$ for $x\geq0$, and the product of two positive elements with a positive middle is positive by the positive bilinearity of the ordered algebra. For the parity formula, $\alpha(x) = \varepsilon_x x$, which is the second display; on the odd part $\varepsilon_x = -1$, and the unsigned sandwich of positive parameters is positive while the signed one is negative.</p>
@@ -132,7 +132,7 @@ $$</p>
 <p>that is, when the grade involution inverts it; it is <strong>normalised</strong> when in addition $a^2 = 1$, and <strong>skew</strong> when $a^2 = -1$.</p>
 <p><strong>Theorem (the signed conjugation is an involution exactly on the reflection elements).</strong> The signed sandwich with $b = a^{-1}$, the <strong>signed conjugation</strong></p>
 <p>$$
-\tau_a : x\mapsto a\,\alpha(x)\,a^{-1} ,
+\boxed{\;\tau_a : x\mapsto a\,\alpha(x)\,a^{-1}\;} ,
 $$</p>
 <p>is an involution, $\tau_a^2 = \mathrm{id}$, if and only if $\alpha(a) = a^{-1}$. When $\alpha = \mathrm{id}$ the same operator is the ordinary inner conjugation $\tau_a(x) = axa^{-1}$, an automorphism of the algebra for every invertible $a$, and it is an involution if and only if $a^2$ is central.</p>
 <p><em>Proof.</em> By the composition law, $\tau_a^2 = \Theta^{\alpha}_{a\alpha(a),\,a^{-1}\alpha(a)^{-1}}$, which is the identity exactly when $a\alpha(a) = 1$ and its inverse, that is, $\alpha(a) = a^{-1}$. In the unsigned case $\tau_a = \Theta_{a,a^{-1}}$ is the conjugation by $a$, and $\tau_a^2 = \Theta_{a^2,\,a^{-2}}$ is the identity exactly when $a^2$ is central.</p>

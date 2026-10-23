@@ -104,7 +104,7 @@ $$</p>
 <p>an ideal containing the radical $\sqrt I$ and contained in the set of polynomials vanishing on $\mathcal{V}(I)$.</p>
 <p><strong>Theorem (real Nullstellensatz).</strong> Let $R$ be real closed and $I \subseteq R[x_1,\ldots,x_n]$ an ideal. Then</p>
 <p>$$
-\mathcal{I}(\mathcal{V}(I)) = \sqrt[\mathbb{R}]{I} .
+\boxed{\;\mathcal{I}(\mathcal{V}(I)) = \sqrt[\mathbb{R}]{I}\;} .
 $$</p>
 <p>In particular, $I$ is a real ideal, meaning $I = \mathcal{I}(\mathcal{V}(I))$, if and only if whenever $f_1^2+\cdots+f_k^2 \in I$ all the $f_i$ lie in $I$; and the real Nullstellensatz is the exact analogue over $R$ of the Hilbert Nullstellensatz over an algebraically closed field.</p>
 <p><strong>Proof sketch.</strong> The inclusion $\sqrt[\mathbb{R}]{I} \subseteq \mathcal{I}(\mathcal{V}(I))$ is clear, since a sum of squares vanishes at a common zero only when each term does. For the converse, one shows that if $f \notin \sqrt[\mathbb{R}]{I}$ then there is a point of $\mathcal{V}(I)$ at which $f$ does not vanish; the argument adjoins a square root of $-1$ formally and uses the algebraic Nullstellensatz over the algebraically closed field $R(\sqrt{-1})$, together with the existence of an ordering of the residue field compatible with the maximal ideal — the passage from the algebraic to the real statement being exactly the passage from all points of the algebraic variety to its real points.</p>
@@ -118,7 +118,7 @@ F + G^2 + H = 0 ;
 $$</p>
 <p><strong>(b)</strong> $f \geq 0$ on $W$ if and only if there are $F, F' \in \operatorname{cone}(f_1,\ldots,f_r)$, $G \in \operatorname{mono}(g_1,\ldots,g_s)$ and $H \in (h_1,\ldots,h_t)$ with</p>
 <p>$$
-f G^2 - F - H \in \operatorname{cone}(f_1,\ldots,f_r) \quad\text{or, equivalently,}\quad f G^2 = F + H ;
+\boxed{\;f G^2 - F - H \in \operatorname{cone}(f_1,\ldots,f_r) \quad\text{or, equivalently,}\quad f G^2 = F + H\;} ;
 $$</p>
 <p><strong>(c)</strong> $f > 0$ on $W$ if and only if there are $F, F'$ and $H$ in the same sense with $f F' = 1 + F + H$.</p>
 <p><strong>Proof sketch.</strong> The implications from the algebraic identity to the vanishing or sign condition follow by evaluating: a sum of nonnegative terms vanishes only if each does, and a square of a product of the $g_j$ is positive where the $g_j$ do not vanish. The converse direction is the hard one, and the standard proof proceeds by introducing one variable for each inequality and reducing to the real Nullstellensatz in a larger polynomial ring: the absence of a common solution of the enlarged system is the vanishing of a variety, and the Nullstellensatz converts that into the polynomial identity displayed.</p>
@@ -128,7 +128,7 @@ $$</p>
 <h3 id="sums-of-squares">Sums of Squares</h3>
 <p><strong>Theorem (Hilbert's seventeenth problem, Artin).</strong> Let $R$ be a real closed field and $f \in R(x_1,\ldots,x_n)$ a rational function which is nonnegative at every point of $R^n$ at which it is defined. Then $f$ is a sum of squares of rational functions of $R(x_1,\ldots,x_n)$:</p>
 <p>$$
-f = \sum_{i=1}^{k}\frac{p_i^2}{q_i^2}, \qquad p_i, q_i \in R[x_1,\ldots,x_n] .
+\boxed{\;f = \sum_{i=1}^{k}\frac{p_i^2}{q_i^2}, \qquad p_i, q_i \in R[x_1,\ldots,x_n]\;} .
 $$</p>
 <p>Equivalently, writing $f = p/q$ with $p, q \in R[x_1,\ldots,x_n]$, the product $p q$ is a sum of squares of polynomials.</p>
 <p><strong>Proof sketch (Artin).</strong> One shows that if $f$ is not a sum of squares of rational functions, then $-1$ is a sum of squares in the field obtained by adjoining a square root of $-f$; hence that field is not formally real, so by the Artin–Schreier theory it carries no ordering, and a transfer argument with the orderings of the function field produces an ordering of $R(x_1,\ldots,x_n)$ in which $f$ is negative at a suitable "point" — that is, an ordering specialising to a point of $R^n$ at which $f$ takes a negative value, contradicting the hypothesis. The proof is thus a proof about orderings, and it uses no analysis: the "points" are the orderings of the function field, and the specialisation is the extension of orderings from the ring $R[x_1,\ldots,x_n]$ to its field of fractions.</p>

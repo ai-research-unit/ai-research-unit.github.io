@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-residue-pairing">The Residue Pairing</h2>
 <p><strong>Theorem (sesquilinearity and the radical).</strong> The residue pairing is additive in each variable and sesquilinear for the residue involution,</p>
 <p>$$
-\langle ax,by\rangle = \mathrm{res}(a)\,\bar\sigma\bigl(\mathrm{res}(b)\bigr)\,\langle x,y\rangle , \qquad a,b,x,y\in\mathcal{O} ,
+\boxed{\;\langle ax,by\rangle = \mathrm{res}(a)\,\bar\sigma\bigl(\mathrm{res}(b)\bigr)\,\langle x,y\rangle , \qquad a,b,x,y\in\mathcal{O}\;} ,
 $$</p>
 <p>and its radical on the right, $\{x : \langle x,y\rangle = 0 \text{ for all } y\}$, is the maximal ideal $\mathrm{M}$; hence it induces a nondegenerate form on the residue field $k$.</p>
 <p><strong>Proof.</strong> Additivity is the additivity of the product, the residue operator and $\sigma$; for the sesquilinearity, $\langle ax,by\rangle = \mathrm{res}(ax\sigma(by)) = \mathrm{res}(a\,x\,\sigma(y)\,\sigma(b)) = \mathrm{res}(a)\mathrm{res}(x\sigma(y))\bar\sigma(\mathrm{res}(b))$, using that $\mathrm{res}(\sigma(b)) = \bar\sigma(\mathrm{res}(b))$ and the commutativity of $k$. For the radical, $\langle x,y\rangle = 0$ for all $y$ means $\mathrm{res}(x\sigma(y)) = 0$ for all $y$, that is $x\sigma(y)\in\mathrm{M}$ for all $y$, which for $y$ with $\sigma(y)$ a unit gives $x\in\mathrm{M}$; conversely $x\in\mathrm{M}$ gives the vanishing. Hence the radical is $\mathrm{M}$ and the induced form on $k$ is nondegenerate.</p>
@@ -89,7 +89,7 @@ $$</p>
 <h2 id="the-adjoints-of-the-elementary-operators">The Adjoints of the Elementary Operators</h2>
 <p><strong>Theorem (the adjoint exchanges the sides).</strong> For a unit $a\in\mathcal{O}^\times$ the left and right multiplications are adjointable under the residue pairing, with</p>
 <p>$$
-(L_a)^\dagger = R_{\sigma(a)} , \qquad (R_b)^\dagger = L_{\sigma(b)} ,
+\boxed{\;(L_a)^\dagger = R_{\sigma(a)} , \qquad (R_b)^\dagger = L_{\sigma(b)}\;} ,
 $$</p>
 <p>so the adjoint of a left multiplication is a <strong>right</strong> multiplication, and conversely; the adjoint operation therefore exchanges the two one-sided families.</p>
 <p><strong>Proof.</strong> The identity $\langle ax,y\rangle = \langle x,T^\dagger y\rangle$ for all $x,y$ reads $\mathrm{res}(ax\sigma(y)) = \mathrm{res}(x\sigma(T^\dagger y))$; putting $x = 1$ gives $\mathrm{res}(a\sigma(y)) = \mathrm{res}(\sigma(T^\dagger y))$ for all $y$, so $\sigma(T^\dagger y)\equiv a\sigma(y)\pmod{\mathrm{M}}$. Applying $\sigma$ gives $T^\dagger y\equiv\sigma(a\sigma(y)) = \sigma(\sigma(y))\sigma(a) = y\,\sigma(a)$, that is $T^\dagger y = R_{\sigma(a)}y$ modulo $\mathrm{M}$. Conversely, for $T^\dagger = R_{\sigma(a)}$ the two sides are $\mathrm{res}(ax\sigma(y))$ and $\mathrm{res}(xa\sigma(y))$, which agree because $k$ is commutative; the adjoint is unique because the pairing is nondegenerate on the residue.</p>
@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-self-adjoint-elements">The Self-Adjoint Elements</h2>
 <p><strong>Theorem (the self-adjoint elements of the residue pairing).</strong> An element $a\in\mathcal{O}^\times$ is such that $L_a$ is self-adjoint for the residue pairing exactly when</p>
 <p>$$
-a \text{ is central modulo } \mathrm{M} \text{ and } \sigma(a) \equiv a \pmod{\mathrm{M}} ,
+\boxed{\;a \text{ is central modulo } \mathrm{M} \text{ and } \sigma(a) \equiv a \pmod{\mathrm{M}}\;} ,
 $$</p>
 <p>that is when the residue $\bar a = \mathrm{res}(a)$ is a central self-adjoint element of $k$; the self-adjoint elements in this sense form the central self-adjoint part of the residue field, and they form a subring of $k$ when $k$ is commutative, namely the fixed field $k^{\bar\sigma}$.</p>
 <p><strong>Proof.</strong> $L_a^\dagger = R_{\sigma(a)}$ by the theorem, and $L_a = R_{\sigma(a)}$ as operators on the residue exactly when $ax\equiv x\sigma(a)\pmod{\mathrm{M}}$ for all $x$, that is $xa\equiv x\sigma(a)$, which for $x$ a unit is $a\equiv\sigma(a)$ together with the centrality; the last statement is that the fixed field of $\bar\sigma$ is a subfield.</p>

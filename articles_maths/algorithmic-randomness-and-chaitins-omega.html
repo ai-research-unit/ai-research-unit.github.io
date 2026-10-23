@@ -99,7 +99,7 @@ $$</p>
 <h2 id="chaitins-math53">Chaitin's $\Omega$</h2>
 <p><strong>Definition.</strong> Fix a prefix-free universal partial computable function $\Omega$, as in the definition of $K$. <strong>Chaitin's constant</strong> is</p>
 <p>$$
-\Omega = \sum_{p : \Omega(p) \text{ halts}} 2^{-|p|} ,
+\boxed{\;\Omega = \sum_{p : \Omega(p) \text{ halts}} 2^{-|p|}\;} ,
 $$</p>
 <p>the halting probability of $\Omega$: the measure of the set of infinite binary sequences that begin with a program on which $\Omega$ halts.</p>
 <p><strong>Theorem.</strong> The series defining $\Omega$ converges, and $\Omega$ is a real number in $(0,1)$. It is a computably enumerable real: its left Dedekind cut is computably enumerable, by enumerating the halting programs and summing the dyadic contributions.</p>
@@ -110,7 +110,7 @@ $$</p>
 <p><strong>Proof.</strong> Every algebraic real is computable: a defining polynomial with integer coefficients is evaluated exactly at rationals, its roots are isolated by rational intervals, and bisection on such an interval computes the real to any prescribed precision. No computable real is random, by the theorem below, and $\Omega$ is random; so $\Omega$ is not algebraic.</p>
 <p><strong>Corollary (incompressibility criterion).</strong> A real $x$ is Martin-Löf random exactly when there is a constant $c$ with</p>
 <p>$$
-K(x \upharpoonright n) \geq n - c
+\boxed{\;K(x \upharpoonright n) \geq n - c\;}
 $$</p>
 <p>for every $n$, where $x \upharpoonright n$ is the first $n$ bits of $x$.</p>
 <p><strong>Proof.</strong> If $x$ has incompressible initial segments then no effective null set contains $x$, because membership in an effective null set is certified by a computable sequence of tests each of which could be used to compress the initial segments; conversely if $x$ is random then the set of reals whose initial segments are compressible by more than a fixed amount is an effective null set, by the counting bound, so randomness forbids it. The equivalence is the standard one, cited from the literature.</p>

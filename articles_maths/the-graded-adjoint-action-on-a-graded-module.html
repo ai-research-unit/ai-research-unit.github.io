@@ -82,14 +82,14 @@ $$</p>
 <p><strong>Proof.</strong> $\ell_r^\pi\ell_t^\pi = \pi(r)\gamma\pi(t)\gamma = \pi(r)\pi(\alpha(t))\gamma^2 = \pi(r\alpha(t))$, which is $\ell_{r\alpha(t)}^\pi$, giving the composition law after $\alpha(t) = \delta^{-1}(s)$; additivity is the linearity of $\pi$; and on the regular module $\pi(r) = L_r$, $\gamma = \alpha$, so $\ell_r^\pi = L_r\alpha = \ell_r$.</p>
 <p><strong>Theorem (the adjoint of the graded action).</strong> For every $r$, the graded adjoint action is adjointable and</p>
 <p>$$
-\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi , \qquad \bigl(\ell_r^\pi\bigr)^\dagger(m) = \pi(\delta(r))\gamma(m) ,
+\boxed{\;\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi , \qquad \bigl(\ell_r^\pi\bigr)^\dagger(m) = \pi(\delta(r))\gamma(m)\;} ,
 $$</p>
 <p>the graded adjoint action by the conjugate element $\delta(r)$; the adjoint is the action conjugated by the composite involution.</p>
 <p><strong>Proof.</strong> The adjoint is anti-multiplicative, $\gamma^\dagger = \gamma$ and $\pi(\sigma(r)) = \pi(r)^\dagger$, so $\bigl(\pi(r)\gamma\bigr)^\dagger = \gamma^\dagger\pi(r)^\dagger = \gamma\pi(\sigma(r))$; by semilinearity $\gamma\pi(\sigma(r)) = \pi(\alpha(\sigma(r)))\gamma = \pi(\delta(r))\gamma$ (using $\alpha\sigma = \sigma\alpha$), which is $\ell_{\delta(r)}^\pi$. Uniqueness is the nondegeneracy of the module form.</p>
 <h2 id="the-graded-commutant-and-the-structure">The Graded Commutant and the <code>*</code>-Structure</h2>
 <p><strong>Definition.</strong> The <strong>graded commutant</strong> of the representation $\pi$ is</p>
 <p>$$
-\pi(A)^{\mathrm{g}} = \{T \in \mathrm{End}(M) : T\pi(r) = \pi(\delta(r))T \ \text{for all } r\} ,
+\boxed{\;\pi(A)^{\mathrm{g}} = \{T \in \mathrm{End}(M) : T\pi(r) = \pi(\delta(r))T \ \text{for all } r\}\;} ,
 $$</p>
 <p>the operators that intertwine the representation with its conjugate; the <strong><code>*</code>-module structure</strong> is the datum of $\pi$, $\gamma$ and the forms for which $\pi$ is a <code>*</code>-representation.</p>
 <p><strong>Proposition (the commutant and the adjoint).</strong> For a <code>*</code>-representation $\pi$ the graded commutant is closed under the adjoint when the module form is invariant, the adjoint of $\ell_r^\pi$ is $\ell_{\delta(r)}^\pi$, and $\ell_r^\pi$ is self-adjoint exactly when $\delta(r) = r$; it is unitary in the graded sense exactly when the defect $\delta(r)\alpha(r)$ is the unit of the module, i.e. $\pi(\delta(r)\alpha(r)) = \mathrm{id}_M$.</p>

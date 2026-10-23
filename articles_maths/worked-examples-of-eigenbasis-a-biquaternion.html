@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples of Eigenbasis a Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-of-eigenbasis-a-biquaternion"><strong>Worked Examples of Eigenbasis a Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article computes the eigenvalue decomposition, the $Q$-adapted Peirce basis, the nilpotents and the eigenbasis of eight biquaternions, one after another. The eight elements are those of <em>Worked Examples of Exponential Polar Decomposition of Biquaternions</em>, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections, the $Q$-adapted basis and the nilpotents are those of <em>Eigenbasis of a Biquaternion</em>; no definition or proof is repeated.</p>
+<p>Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$ of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Write</p>
+<p>$$
+B^2=Q_x^2+Q_y^2+Q_z^2,
+\qquad
+B=\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2},
+$$</p>
+<p>and fix one square root $B$. The eigenvalues, the eigenprojections, the nilpotents and the matrices are computed from them by the formulas of §<em>The Method</em>. The eigenbasis is checked by the four identities</p>
+<p>$$
+\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,
+\qquad
+\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,
+\qquad
+\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,
+\qquad
+\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
+$$</p>
+<p>The eight cases cover five elements with $B\neq0$, one scalar and two elements with $B=0$ and $\vec Q\neq0$. In the Q-adapted basis a general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with the matrix $\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}$; its two columns are the two spinors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Case</th>
+<th>Spectral reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distinct, vector part along $\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$B=1$, $\lambda_\pm=\pm i$</td>
+</tr>
+<tr>
+<td>Distinct, same direction</td>
+<td>$\frac{1}{\sqrt2}(e_t+\vec e_x)$</td>
+<td>$B=\frac{1}{\sqrt2}$, $\lambda_\pm=\frac{1\pm i}{\sqrt2}$</td>
+</tr>
+<tr>
+<td>Distinct, real eigenvalues</td>
+<td>$\sqrt2\,e_t+i\vec e_x$</td>
+<td>$B=i$, $\lambda_+=\sqrt2-1$, $\lambda_-=\sqrt2+1$</td>
+</tr>
+<tr>
+<td>Distinct, same direction</td>
+<td>$\bigl(1-\frac{i}{\sqrt2}\bigr)e_t+\bigl(1+\frac{i}{\sqrt2}\bigr)\vec e_x$</td>
+<td>$B=1+\frac{i}{\sqrt2}$, $\lambda_+=a(1+i)$, $\lambda_-=b(1-i)$</td>
+</tr>
+<tr>
+<td>Distinct, generic direction</td>
+<td>$\bigl(1-\frac{i}{2}\bigr)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z$</td>
+<td>$B=\sqrt{\frac14+i}$, $\lambda_\pm=1-\frac{i}{2}\pm iB$</td>
+</tr>
+<tr>
+<td>Scalar</td>
+<td>$e_t$</td>
+<td>$B=0$, $\lambda_\pm=1$</td>
+</tr>
+<tr>
+<td>Jordan</td>
+<td>$e_t+\vec e_y+\frac{i}{\sqrt2}\vec e_x+\frac{i}{\sqrt2}\vec e_z$</td>
+<td>$B=0$, $\lambda_\pm=1$</td>
+</tr>
+<tr>
+<td>Jordan</td>
+<td>$(1+i)e_t+\vec e_x+i\vec e_y$</td>
+<td>$B=0$, $\lambda_\pm=1+i$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Here $a=1-\frac{1}{\sqrt2}$ and $b=1+\frac{1}{\sqrt2}$.</p>
+<p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its spectrum, its eigenprojections, its nilpotents when they exist, its eigenbasis and its matrix. The summary collects the results in three tables and reads the patterns across the cases (§<em>Summary</em>).</p>
+<h2 id="the-method">The Method</h2>
+<h3 id="the-coordinates-and-the-spectrum">The Coordinates and the Spectrum</h3>
+<p>For $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ the four complex coordinates are $Q_t,Q_x,Q_y,Q_z$, and the vector part is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with square</p>
+<p>$$
+\vec Q^2=-(Q_x^2+Q_y^2+Q_z^2)e_t=-B^2e_t.
+$$</p>
+<p>The two eigenvalues are</p>
+<p>$$
+\lambda_+=Q_t+iB,
+\qquad
+\lambda_-=Q_t-iB.
+$$</p>
+<p>Their sum and product are</p>
+<p>$$
+\lambda_++\lambda_-=2Q_t,
+\qquad
+\lambda_+\lambda_-=Q_t^2+B^2=\langle\tilde Q\rangle_{\natural}.
+$$</p>
+<p>The eigenvalues are distinct exactly when $B\neq0$, because</p>
+<p>$$
+\lambda_+-\lambda_-=2iB.
+$$</p>
+<p>The characteristic polynomial is</p>
+<p>$$
+p_{\tilde Q}(X)=(X-Q_t)^2+B^2=(X-\lambda_+)(X-\lambda_-),
+$$</p>
+<p>with discriminant $-4B^2$. The element is a unit exactly when $Q_t^2+B^2\neq0$.</p>
+<h3 id="the-eigenprojections">The Eigenprojections</h3>
+<p>Put</p>
+<p>$$
+\vec U=\frac{\vec Q}{B},
+\qquad
+\vec\Xi=-i\vec U=-\frac{i\vec Q}{B}.
+$$</p>
+<p>Then $\vec\Xi^2=e_t$, and the two eigenprojections are</p>
+<p>$$
+\tilde\Pi_+=\frac12(e_t+\vec\Xi),
+\qquad
+\tilde\Pi_-=\frac12(e_t-\vec\Xi).
+$$</p>
+<p>They are idempotent, orthogonal and complete:</p>
+<p>$$
+\tilde\Pi_+^2=\tilde\Pi_+,
+\qquad
+\tilde\Pi_-^2=\tilde\Pi_-,
+\qquad
+\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,
+\qquad
+\tilde\Pi_++\tilde\Pi_-=e_t.
+$$</p>
+<p>For every $\tilde Q$ with $B\neq0$,</p>
+<p>$$
+\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,
+\qquad
+\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-,
+$$</p>
+<p>and the eigenvalue decomposition is</p>
+<p>$$
+\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
+$$</p>
+<p>The swap $B\mapsto-B$ exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$ and the two eigenvalues. The decomposition is unique up to this exchange.</p>
+<h3 id="the-peirce-corners-and-the-nilpotents">The Peirce Corners and the Nilpotents</h3>
+<p>The Peirce corners relative to $\tilde\Pi_+$ are</p>
+<p>$$
+\mathbb{B}_{++}=\tilde\Pi_+\mathbb{B}\tilde\Pi_+,
+\qquad
+\mathbb{B}_{+-}=\tilde\Pi_+\mathbb{B}\tilde\Pi_-,
+\qquad
+\mathbb{B}_{-+}=\tilde\Pi_-\mathbb{B}\tilde\Pi_+,
+\qquad
+\mathbb{B}_{--}=\tilde\Pi_-\mathbb{B}\tilde\Pi_-.
+$$</p>
+<p>The two diagonal corners are the complex lines of the idempotents:</p>
+<p>$$
+\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_+,
+\qquad
+\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_-.
+$$</p>
+<p>The two mixed corners are one-dimensional over $\mathbb{C}$. The convention is:</p>
+<p>$$
+\vec\Upsilon_+\in\mathbb{B}_{-+}=\tilde\Pi_-\mathbb{B}\tilde\Pi_+,
+\qquad
+\vec\Upsilon_-\in\mathbb{B}_{+-}=\tilde\Pi_+\mathbb{B}\tilde\Pi_-.
+$$</p>
+<p>The indexing is by the left ideal, not by the corner.</p>
+<p><strong>Construction.</strong> Choose a pure element $\tilde Q_1$ with</p>
+<p>$$
+(\tilde Q_1,\tilde Q_1)+\frac{(\tilde Q_1,\vec Q)^2}{B^2}\neq0,
+\qquad
+(\tilde Q_1,\vec Q)=\operatorname{Sc}(\tilde Q_1\vec Q).
+$$</p>
+<p>Put</p>
+<p>$$
+u=\tilde\Pi_-\tilde Q_1\tilde\Pi_+,
+\qquad
+v=\tilde\Pi_+\tilde Q_1\tilde\Pi_-.
+$$</p>
+<p>Then</p>
+<p>$$
+uv=c\,\tilde\Pi_-,
+\qquad
+vu=c\,\tilde\Pi_+,
+\qquad
+c=(\tilde Q_1,\tilde Q_1)+\frac{(\tilde Q_1,\vec Q)^2}{B^2},
+$$</p>
+<p>and</p>
+<p>$$
+u^2=v^2=0.
+$$</p>
+<p>Choose a square root $\alpha$ of $c$ and set</p>
+<p>$$
+\vec\Upsilon_+=\frac{u}{\alpha},
+\qquad
+\vec\Upsilon_-=\frac{v}{\alpha}.
+$$</p>
+<p>Then</p>
+<p>$$
+\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,
+\qquad
+\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,
+\qquad
+\vec\Upsilon_+^2=\vec\Upsilon_-^2=0.
+$$</p>
+<p>The normalisation fixes the products, not the individual generators: it leaves the reciprocal rescaling</p>
+<p>$$
+\vec\Upsilon_+\longmapsto\mu\vec\Upsilon_+,
+\qquad
+\vec\Upsilon_-\longmapsto\mu^{-1}\vec\Upsilon_-,
+\qquad
+\mu\in\mathbb{C}^{\times}.
+$$</p>
+<p><strong>The shared solution for $\vec Q=Q_x\vec e_x$.</strong> For cases 2 to 5 the vector part is along $\vec e_x$, so</p>
+<p>$$
+\vec\Xi=-i\vec e_x,
+\qquad
+\tilde\Pi_+=\frac12(e_t-i\vec e_x),
+\qquad
+\tilde\Pi_-=\frac12(e_t+i\vec e_x).
+$$</p>
+<p>Choose $\tilde Q_1=\vec e_y$. Then</p>
+<p>$$
+u=\frac12(\vec e_y+i\vec e_z),
+\qquad
+v=\frac12(\vec e_y-i\vec e_z),
+\qquad
+uv=-\tilde\Pi_-,
+\qquad
+vu=-\tilde\Pi_+.
+$$</p>
+<p>Thus $c=-1$, and the choice $\alpha=i$ gives</p>
+<p>$$
+\boxed{\;
+\vec\Upsilon_+=\frac12(\vec e_z-i\vec e_y),
+\qquad
+\vec\Upsilon_-=\frac12(-\vec e_z-i\vec e_y).
+\;}
+$$</p>
+<p>The pair is the same for the four elements, because it depends only on $\vec\Xi$, not on the eigenvalues.</p>
+<h3 id="the-q-adapted-peirce-basis">The Q-Adapted Peirce Basis</h3>
+<p>The four elements</p>
+<p>$$
+\tilde\Pi_+,
+\qquad
+\vec\Upsilon_-,
+\qquad
+\vec\Upsilon_+,
+\qquad
+\tilde\Pi_-
+$$</p>
+<p>form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the <strong>$Q$-adapted Peirce basis</strong>. Write $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$ and $R_{\tilde Q}(\tilde P)=\tilde P\tilde Q$ for left and right multiplication. In this basis multiplication by $\tilde Q$ is diagonal:</p>
+<p>$$
+\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,
+\qquad
+\tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,
+\qquad
+\tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,
+\qquad
+\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
+$$</p>
+<p>Thus the matrix of left multiplication $L_{\tilde Q}$ in the $Q$-adapted basis is</p>
+<p>$$
+\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
+$$</p>
+<p>Because each eigenvalue occurs twice, the eigenbasis is not unique: any basis of the $\lambda_+$-eigenspace together with any basis of the $\lambda_-$-eigenspace is an eigenbasis. The $Q$-adapted basis is the choice singled out by the Peirce structure.</p>
+<p>The two minimal left ideals are</p>
+<p>$$
+S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
+\qquad
+S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
+$$</p>
+<p>and</p>
+<p>$$
+\mathbb{B}=S_+\oplus S_-.
+$$</p>
+<p>On $S_+$ the eigenbasis is $(\tilde\Pi_+,\vec\Upsilon_+)$, with eigenvalues $\lambda_+$ and $\lambda_-$; on $S_-$ it is $(\vec\Upsilon_-,\tilde\Pi_-)$, with eigenvalues $\lambda_+$ and $\lambda_-$. Each is an eigenbasis with distinct eigenvalues, because $B\neq0$.</p>
+<p>The spaces $S_\pm$ are the spinor spaces, the minimal left ideals. They are not the eigenspaces of $L_{\tilde Q}$: the $\lambda_+$-eigenspace is the right ideal $\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-$. The spaces $S_\pm$ are the eigenspaces of right multiplication $R_{\tilde Q}$. The $Q$-adapted basis is an eigenbasis of $L_{\tilde Q}$; on each $S_\pm$, $L_{\tilde Q}$ carries both eigenvalues, while $R_{\tilde Q}$ is scalar. The side of the multiplication is the whole difference. The labels first and second are fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing $B$ by $-B$ exchanges them.</p>
+<h3 id="spinors-and-the-math128-model">Spinors and the $2\times2$ Model</h3>
+<p>A spinor of first chirality is an element of $S_+$,</p>
+<p>$$
+\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+,
+\qquad
+Q_{\mathrm{sp},11},Q_{\mathrm{sp},21}\in\mathbb{C},
+$$</p>
+<p>with coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$, the first column of the matrix. Under multiplication by $\tilde Q$,</p>
+<p>$$
+\tilde Q\xi_+=\lambda_+Q_{\mathrm{sp},11}\tilde\Pi_++\lambda_-Q_{\mathrm{sp},21}\vec\Upsilon_+.
+$$</p>
+<p>A spinor of second chirality is an element of $S_-$,</p>
+<p>$$
+\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-,
+\qquad
+Q_{\mathrm{sp},12},Q_{\mathrm{sp},22}\in\mathbb{C},
+$$</p>
+<p>with coordinates $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$, the second column, and</p>
+<p>$$
+\tilde Q\xi_-=\lambda_+Q_{\mathrm{sp},12}\vec\Upsilon_-+\lambda_-Q_{\mathrm{sp},22}\tilde\Pi_-.
+$$</p>
+<p>The same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ acts on the coordinates of both spinor spaces.</p>
+<p>Every element of $\mathbb{B}$ splits as $\tilde P=\tilde P\tilde\Pi_++\tilde P\tilde\Pi_-$, a spinor of first chirality plus a spinor of second chirality. A general element is therefore a pair of spinors, not a spinor.</p>
+<p>The assignment</p>
+<p>$$
+\tilde\Pi_+\longmapsto E_{11},
+\qquad
+\vec\Upsilon_-\longmapsto E_{12},
+\qquad
+\vec\Upsilon_+\longmapsto E_{21},
+\qquad
+\tilde\Pi_-\longmapsto E_{22}
+$$</p>
+<p>gives the $Q$-adapted model $\mathsf M_2^Q$. For a general element</p>
+<p>$$
+\tilde P=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
+$$</p>
+<p>the matrix is</p>
+<p>$$
+\mathsf M_2^Q(\tilde P)=
+\begin{pmatrix}
+a_{11}&a_{12}\\
+a_{21}&a_{22}
+\end{pmatrix},
+$$</p>
+<p>and for $\tilde Q$ itself</p>
+<p>$$
+\mathsf M_2^Q(\tilde Q)=
+\begin{pmatrix}
+\lambda_+&0\\
+0&\lambda_-
+\end{pmatrix}.
+$$</p>
+<p>The first column is $S_+$ and the second column is $S_-$.</p>
+<h3 id="the-fixed-matrix-model">The Fixed Matrix Model</h3>
+<p>The fixed model sends</p>
+<p>$$
+\mathsf M_2(e_t)=I_2,
+\qquad
+\mathsf M_2(\vec e_x)=
+\begin{pmatrix}0&-i\\-i&0\end{pmatrix},
+\qquad
+\mathsf M_2(\vec e_y)=
+\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+\qquad
+\mathsf M_2(\vec e_z)=
+\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$</p>
+<p>For a general element,</p>
+<p>$$
+\mathsf M_2(\tilde Q_{\mathrm{sp}})=
+\begin{pmatrix}
+Q_{\mathrm{sp},t}-iQ_{\mathrm{sp},z}&-iQ_{\mathrm{sp},x}-Q_{\mathrm{sp},y}\\
+-iQ_{\mathrm{sp},x}+Q_{\mathrm{sp},y}&Q_{\mathrm{sp},t}+iQ_{\mathrm{sp},z}
+\end{pmatrix},
+$$</p>
+<p>with trace $2Q_{\mathrm{sp},t}$ and determinant $Q_{\mathrm{sp},t}^2+Q_{\mathrm{sp},x}^2+Q_{\mathrm{sp},y}^2+Q_{\mathrm{sp},z}^2$.</p>
+<p>The spectral projectors are</p>
+<p>$$
+\rho_\pm=\mathsf M_2(\tilde\Pi_\pm)
+=\frac12\left(I_2\pm\mathsf M_2(\vec\Xi)\right),
+$$</p>
+<p>and they satisfy</p>
+<p>$$
+\rho_\pm^2=\rho_\pm,
+\qquad
+\rho_+\rho_-=\rho_-\rho_+=0,
+\qquad
+\rho_++\rho_-=I_2,
+\qquad
+\mathsf M_2(\tilde Q)=\lambda_+\rho_++\lambda_-\rho_-.
+$$</p>
+<h3 id="the-regimes">The Regimes</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Condition</th>
+<th>Spectrum</th>
+<th>Eigenbasis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distinct</td>
+<td>$B\neq0$</td>
+<td>$\lambda_+\neq\lambda_-$</td>
+<td>the $Q$-adapted basis; unique up to the reciprocal rescaling of $\vec\Upsilon_\pm$ and the exchange from $B\mapsto-B$</td>
+</tr>
+<tr>
+<td>Jordan</td>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>$\lambda_+= \lambda_-=Q_t$</td>
+<td>none: the eigenspace is two-dimensional</td>
+</tr>
+<tr>
+<td>Scalar</td>
+<td>$\vec Q=0$</td>
+<td>$\lambda_+= \lambda_-=Q_t$</td>
+<td>every basis</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the Jordan regime, write $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$. The minimal polynomial is $(X-Q_t)^2$. When $Q_t\neq0$ the element is unipotent up to the scalar $Q_t$; when $Q_t=0$ it is nilpotent. In both subcases the eigenspace is $\ker L_{\vec N}$, of dimension two. A two-dimensional eigenspace in a four-dimensional algebra is not a basis of eigenvectors, so there is no eigenbasis. In the scalar regime the operator is $Q_t\,\mathrm{id}$, every nonzero vector is an eigenvector, and every basis is an eigenbasis; the $Q$-adapted construction does not apply because $\vec\Xi$ is undefined.</p>
+<h2 id="the-eight-cases">The Eight Cases</h2>
+<h3 id="case-1-the-identity">Case 1: The Identity</h3>
+<p><strong>Coordinates.</strong> For $\tilde Q=e_t$,</p>
+<p>$$
+Q_t=1,
+\qquad
+Q_x=Q_y=Q_z=0,
+\qquad
+B=0,
+\qquad
+\langle\tilde Q\rangle_{\natural}=1.
+$$</p>
+<p><strong>The scalar regime.</strong> The vector part vanishes, so the element is the scalar $1$. The two eigenvalues coincide, $\lambda_\pm=1$, and the left multiplication is the identity:</p>
+<p>$$
+L_{\tilde Q}=\mathrm{id}.
+$$</p>
+<p>Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the eigenspace is the whole algebra, of dimension four. There is no $Q$-adapted Peirce basis attached to $\tilde Q$, because the root $\vec\Xi=-i\vec Q/B$ is undefined. The standard Peirce pair $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ is a choice; in it the matrix of $L_{\tilde Q}$ is the identity.</p>
+<p><strong>Spinors.</strong> There is no Q-adapted spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
+$$
+\mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+the first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is the spinor in the first minimal left ideal and the second column $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is the spinor in the second. Their matrices are
+$$
+\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$ In the special case
+$$
+\mathsf M_2(\tilde Q)=\begin{pmatrix}1&0\\0&1\end{pmatrix},
+$$
+the two columns are $(1,0)$ and $(0,1)$. Both columns are eigenvectors with eigenvalue $1$: every idempotent is an eigenprojection, so every pair of complementary minimal left ideals is a pair of spinor spaces.</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=I_2,
+\qquad
+\mathrm{tr}=2,
+\qquad
+\det=1.
+$$</p>
+<p>The eigenprojections of the matrix are not unique: the spectral projector of the only eigenvalue is $I_2$, and every decomposition of $I_2$ into two complementary idempotents is a choice.</p>
+<p><strong>Consequences.</strong> $\tilde Q^2=e_t$ and $\tilde Q^{-1}=e_t$. The case is the trivial eigenbasis: the algebra is already diagonal, and the element does not select a basis.</p>
+<h3 id="case-2-a-pure-vector-of-the-unit-sphere">Case 2: A Pure Vector of the Unit Sphere</h3>
+<p><strong>Coordinates.</strong> For $\tilde Q=\vec e_x$,</p>
+<p>$$
+Q_t=0,
+\qquad
+Q_x=1,
+\qquad
+Q_y=Q_z=0,
+\qquad
+B=1,
+\qquad
+\langle\tilde Q\rangle_{\natural}=1.
+$$</p>
+<p><strong>Spectrum.</strong> The eigenvalues are</p>
+<p>$$
+\lambda_+=i,
+\qquad
+\lambda_-=-i.
+$$</p>
+<p><strong>Eigenprojections.</strong> With $\vec\Xi=-i\vec e_x$,</p>
+<p>$$
+\tilde\Pi_+=\frac12(e_t-i\vec e_x),
+\qquad
+\tilde\Pi_-=\frac12(e_t+i\vec e_x),
+$$</p>
+<p>and</p>
+<p>$$
+\tilde Q\tilde\Pi_+=i\tilde\Pi_+,
+\qquad
+\tilde Q\tilde\Pi_-=-i\tilde\Pi_-,
+\qquad
+\tilde Q=i\tilde\Pi_+-i\tilde\Pi_-.
+$$</p>
+<p><strong>Nilpotents.</strong> The shared solution of §<em>The Method</em> gives</p>
+<p>$$
+\vec\Upsilon_+=\frac12(\vec e_z-i\vec e_y),
+\qquad
+\vec\Upsilon_-=\frac12(-\vec e_z-i\vec e_y).
+$$</p>
+<p>The checks are</p>
+<p>$$
+\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,
+\qquad
+\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,
+\qquad
+\vec\Upsilon_+^2=\vec\Upsilon_-^2=0.
+$$</p>
+<p><strong>The eigenbasis.</strong> The $Q$-adapted basis is</p>
+<p>$$
+\tilde\Pi_+,
+\qquad
+\vec\Upsilon_-,
+\qquad
+\vec\Upsilon_+,
+\qquad
+\tilde\Pi_-,
+$$</p>
+<p>with the diagonal action</p>
+<p>$$
+\tilde Q\tilde\Pi_+=i\tilde\Pi_+,
+\qquad
+\tilde Q\vec\Upsilon_-=i\vec\Upsilon_-,
+\qquad
+\tilde Q\vec\Upsilon_+=-i\vec\Upsilon_+,
+\qquad
+\tilde Q\tilde\Pi_-=-i\tilde\Pi_-.
+$$</p>
+<p>Thus $L_{\tilde Q}$ has the diagonal form</p>
+<p>$$
+\operatorname{diag}(i,i,-i,-i),
+$$</p>
+<p>and the $2\times2$ model is</p>
+<p>$$
+\mathsf M_2^Q(\tilde Q)=\operatorname{diag}(i,-i).
+$$</p>
+<p><strong>Spinors.</strong> A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+$$
+\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+$$
+in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
+$$
+\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\qquad
+\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+with matrices
+$$
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$
+Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
+$$
+(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+\qquad
+(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+$$
+In the special case $\tilde Q=\vec e_x$ one has $Q_{\mathrm{sp},11}=\lambda_+=i$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=-i$, so
+$$
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}i&0\\0&-i\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}i&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&-i\end{pmatrix}.
+$$</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=
+\begin{pmatrix}
+0&-i\\
+-i&0
+\end{pmatrix},
+\qquad
+\mathrm{tr}=0,
+\qquad
+\det=1.
+$$</p>
+<p>The spectral projectors are</p>
+<p>$$
+\rho_+=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+\qquad
+\rho_-=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},
+$$</p>
+<p>and indeed</p>
+<p>$$
+i\rho_+-i\rho_-=
+\begin{pmatrix}0&-i\\-i&0\end{pmatrix}.
+$$</p>
+<p><strong>Consequences.</strong> The element is a square root of $-e_t$:</p>
+<p>$$
+\tilde Q^2=-e_t,
+\qquad
+\tilde Q^{-1}=-\tilde Q=-\vec e_x,
+\qquad
+\tilde Q^3=-\vec e_x,
+\qquad
+\tilde Q^4=e_t.
+$$</p>
+<h3 id="case-3-a-sum-of-the-identity-and-a-pure-vector">Case 3: A Sum of the Identity and a Pure Vector</h3>
+<p><strong>Coordinates.</strong> For $\tilde Q=\frac{1}{\sqrt2}(e_t+\vec e_x)$,</p>
+<p>$$
+Q_t=\frac{1}{\sqrt2},
+\qquad
+Q_x=\frac{1}{\sqrt2},
+\qquad
+Q_y=Q_z=0,
+\qquad
+B=\frac{1}{\sqrt2},
+\qquad
+\langle\tilde Q\rangle_{\natural}=1.
+$$</p>
+<p><strong>Spectrum.</strong> The eigenvalues are</p>
+<p>$$
+\lambda_+=\frac{1+i}{\sqrt2},
+\qquad
+\lambda_-=\frac{1-i}{\sqrt2}.
+$$</p>
+<p><strong>Eigenprojections.</strong> The vector part is again along $\vec e_x$, so the projectors and the nilpotents are those of case 2:</p>
+<p>$$
+\tilde\Pi_+=\frac12(e_t-i\vec e_x),
+\qquad
+\tilde\Pi_-=\frac12(e_t+i\vec e_x),
+\qquad
+\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y).
+$$</p>
+<p>Therefore</p>
+<p>$$
+\tilde Q=\frac{1+i}{\sqrt2}\tilde\Pi_++\frac{1-i}{\sqrt2}\tilde\Pi_-.
+$$</p>
+<p><strong>The eigenbasis.</strong> The $Q$-adapted basis is again</p>
+<p>$$
+(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-),
+$$</p>
+<p>with the diagonal action</p>
+<p>$$
+\operatorname{diag}\left(\frac{1+i}{\sqrt2},\frac{1+i}{\sqrt2},\frac{1-i}{\sqrt2},\frac{1-i}{\sqrt2}\right).
+$$</p>
+<p>The $2\times2$ model is</p>
+<p>$$
+\mathsf M_2^Q(\tilde Q)=
+\operatorname{diag}\left(\frac{1+i}{\sqrt2},\frac{1-i}{\sqrt2}\right).
+$$</p>
+<p><strong>Spinors.</strong> A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+$$
+\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+$$
+in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
+$$
+\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\qquad
+\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+with matrices
+$$
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$
+Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
+$$
+(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+\qquad
+(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+$$
+In the special case $\tilde Q=\tfrac{1}{\sqrt2}(e_t+\vec e_x)$ one has $Q_{\mathrm{sp},11}=\lambda_+=\tfrac{1+i}{\sqrt2}$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=\tfrac{1-i}{\sqrt2}$, so
+$$
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix}.
+$$</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=
+\frac{1}{\sqrt2}
+\begin{pmatrix}
+1&-i\\
+-i&1
+\end{pmatrix},
+\qquad
+\mathrm{tr}=\sqrt2,
+\qquad
+\det=1.
+$$</p>
+<p>Its spectral projectors are the same $\rho_\pm$ as in case 2, and</p>
+<p>$$
+\lambda_+\rho_++\lambda_-\rho_-=
+\frac{1}{\sqrt2}
+\begin{pmatrix}
+1&-i\\
+-i&1
+\end{pmatrix}.
+$$</p>
+<p><strong>Consequences.</strong> The square is</p>
+<p>$$
+\tilde Q^2=\vec e_x,
+$$</p>
+<p>the cube is</p>
+<p>$$
+\tilde Q^3=\frac{\vec e_x-e_t}{\sqrt2}=-\tilde Q^{-1},
+$$</p>
+<p>and the inverse is</p>
+<p>$$
+\tilde Q^{-1}=\frac{e_t-\vec e_x}{\sqrt2}.
+$$</p>
+<p>The fourth power is $-e_t$. The element is a square root of $\vec e_x$.</p>
+<h3 id="case-4-a-real-spectrum-from-an-imaginary-root">Case 4: A Real Spectrum from an Imaginary Root</h3>
+<p><strong>Coordinates.</strong> For $\tilde Q=\sqrt2\,e_t+i\vec e_x$,</p>
+<p>$$
+Q_t=\sqrt2,
+\qquad
+Q_x=i,
+\qquad
+Q_y=Q_z=0,
+\qquad
+B=i,
+\qquad
+\langle\tilde Q\rangle_{\natural}=1.
+$$</p>
+<p><strong>Spectrum.</strong> With the root $B=i$,</p>
+<p>$$
+\lambda_+=\sqrt2-1,
+\qquad
+\lambda_-=\sqrt2+1.
+$$</p>
+<p>The two eigenvalues are real and distinct, although $B$ is imaginary. The other root $-i$ exchanges them.</p>
+<p><strong>Eigenprojections.</strong> The vector part is along $\vec e_x$, so</p>
+<p>$$
+\tilde\Pi_+=\frac12(e_t-i\vec e_x),
+\qquad
+\tilde\Pi_-=\frac12(e_t+i\vec e_x),
+$$</p>
+<p>and</p>
+<p>$$
+\tilde Q=(\sqrt2-1)\tilde\Pi_++(\sqrt2+1)\tilde\Pi_-.
+$$</p>
+<p><strong>Nilpotents.</strong> The nilpotents are the shared pair</p>
+<p>$$
+\vec\Upsilon_+=\frac12(\vec e_z-i\vec e_y),
+\qquad
+\vec\Upsilon_-=\frac12(-\vec e_z-i\vec e_y).
+$$</p>
+<p><strong>The eigenbasis.</strong> The diagonal action is</p>
+<p>$$
+\operatorname{diag}(\sqrt2-1,\sqrt2-1,\sqrt2+1,\sqrt2+1),
+$$</p>
+<p>and the $2\times2$ model is</p>
+<p>$$
+\mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\sqrt2-1,\sqrt2+1).
+$$</p>
+<p><strong>Spinors.</strong> A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+$$
+\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+$$
+in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
+$$
+\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\qquad
+\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+with matrices
+$$
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$
+Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
+$$
+(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+\qquad
+(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+$$
+In the special case $\tilde Q=\sqrt2\,e_t+i\vec e_x$ one has $Q_{\mathrm{sp},11}=\lambda_+=\sqrt2-1$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=\sqrt2+1$, so
+$$
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\sqrt2-1&0\\0&\sqrt2+1\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}\sqrt2-1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&\sqrt2+1\end{pmatrix}.
+$$</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=
+\begin{pmatrix}
+\sqrt2&1\\
+1&\sqrt2
+\end{pmatrix},
+\qquad
+\mathrm{tr}=2\sqrt2,
+\qquad
+\det=1.
+$$</p>
+<p>This is a real symmetric matrix with eigenvectors $(1,-1)$ and $(1,1)$, which are the columns of the projectors up to scale.</p>
+<p><strong>Consequences.</strong> The square is</p>
+<p>$$
+\tilde Q^2=3+2\sqrt2\,i\vec e_x,
+$$</p>
+<p>the cube is</p>
+<p>$$
+\tilde Q^3=5\sqrt2+7i\vec e_x,
+$$</p>
+<p>and the inverse is</p>
+<p>$$
+\tilde Q^{-1}=\sqrt2-i\vec e_x.
+$$</p>
+<h3 id="case-5-a-generic-element-on-the-same-axis">Case 5: A Generic Element on the Same Axis</h3>
+<p><strong>Coordinates.</strong> For</p>
+<p>$$
+\tilde Q=\left(1-\frac{i}{\sqrt2}\right)e_t+\left(1+\frac{i}{\sqrt2}\right)\vec e_x,
+$$</p>
+<p>the coordinates are</p>
+<p>$$
+Q_t=1-\frac{i}{\sqrt2},
+\qquad
+Q_x=1+\frac{i}{\sqrt2},
+\qquad
+Q_y=Q_z=0,
+\qquad
+B=1+\frac{i}{\sqrt2},
+\qquad
+\langle\tilde Q\rangle_{\natural}=1.
+$$</p>
+<p><strong>Spectrum.</strong> Put $a=1-\frac{1}{\sqrt2}$ and $b=1+\frac{1}{\sqrt2}$. Then</p>
+<p>$$
+\lambda_+=a(1+i),
+\qquad
+\lambda_-=b(1-i).
+$$</p>
+<p>Numerically,</p>
+<p>$$
+\lambda_+\approx 0.2928932188+0.2928932188\,i,
+\qquad
+\lambda_-\approx 1.7071067812-1.7071067812\,i.
+$$</p>
+<p><strong>Eigenprojections.</strong> The vector part is along $\vec e_x$, so</p>
+<p>$$
+\tilde\Pi_+=\frac12(e_t-i\vec e_x),
+\qquad
+\tilde\Pi_-=\frac12(e_t+i\vec e_x),
+$$</p>
+<p>and</p>
+<p>$$
+\tilde Q=a(1+i)\tilde\Pi_++b(1-i)\tilde\Pi_-.
+$$</p>
+<p><strong>Nilpotents.</strong> The shared pair is</p>
+<p>$$
+\vec\Upsilon_+=\frac12(\vec e_z-i\vec e_y),
+\qquad
+\vec\Upsilon_-=\frac12(-\vec e_z-i\vec e_y).
+$$</p>
+<p><strong>The eigenbasis.</strong> The diagonal action is</p>
+<p>$$
+\operatorname{diag}\bigl(a(1+i),a(1+i),b(1-i),b(1-i)\bigr),
+$$</p>
+<p>and the $2\times2$ model is</p>
+<p>$$
+\mathsf M_2^Q(\tilde Q)=\operatorname{diag}\bigl(a(1+i),b(1-i)\bigr).
+$$</p>
+<p><strong>Spinors.</strong> A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+$$
+\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+$$
+in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
+$$
+\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\qquad
+\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+with matrices
+$$
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$
+Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
+$$
+(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+\qquad
+(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+$$
+In the special case $\tilde Q=(1-\tfrac{i}{\sqrt2})e_t+(1+\tfrac{i}{\sqrt2})\vec e_x$ one has $Q_{\mathrm{sp},11}=\lambda_+=a(1+i)$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=b(1-i)$, so
+$$
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}a(1+i)&0\\0&b(1-i)\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}a(1+i)&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&b(1-i)\end{pmatrix}.
+$$</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=
+\begin{pmatrix}
+1-\frac{i}{\sqrt2}&\frac{1}{\sqrt2}-i\\
+\frac{1}{\sqrt2}-i&1-\frac{i}{\sqrt2}
+\end{pmatrix},
+\qquad
+\mathrm{tr}=2-i\sqrt2,
+\qquad
+\det=1.
+$$</p>
+<p><strong>Consequences.</strong> The square is</p>
+<p>$$
+\tilde Q^2=3\vec e_x-2\sqrt2\,i\,e_t,
+$$</p>
+<p>and the inverse is</p>
+<p>$$
+\tilde Q^{-1}=\left(1-\frac{i}{\sqrt2}\right)-\left(1+\frac{i}{\sqrt2}\right)\vec e_x.
+$$</p>
+<h3 id="case-6-orthogonal-axes-and-a-unipotent-element">Case 6: Orthogonal Axes and a Unipotent Element</h3>
+<p><strong>Coordinates.</strong> For</p>
+<p>$$
+\tilde Q=e_t+\vec e_y+\frac{i}{\sqrt2}\vec e_x+\frac{i}{\sqrt2}\vec e_z,
+$$</p>
+<p>the coordinates are</p>
+<p>$$
+Q_t=1,
+\qquad
+Q_x=\frac{i}{\sqrt2},
+\qquad
+Q_y=1,
+\qquad
+Q_z=\frac{i}{\sqrt2},
+\qquad
+B=0,
+\qquad
+\langle\tilde Q\rangle_{\natural}=1.
+$$</p>
+<p><strong>The Jordan regime.</strong> The vector part is nonzero and null:</p>
+<p>$$
+Q_x^2+Q_y^2+Q_z^2=-\frac12+1-\frac12=0.
+$$</p>
+<p>Write</p>
+<p>$$
+\tilde N=\frac{i}{\sqrt2}\vec e_x+\vec e_y+\frac{i}{\sqrt2}\vec e_z.
+$$</p>
+<p>Then</p>
+<p>$$
+\tilde N^2=-\frac12+1-\frac12=0,
+\qquad
+\tilde Q=e_t+\tilde N.
+$$</p>
+<p>The minimal polynomial is $(X-1)^2$, the only eigenvalue is $1$, and the eigenspace is</p>
+<p>$$
+\ker L_{\tilde N}=\{\tilde P:\tilde N\tilde P=0\},
+$$</p>
+<p>of dimension two. A two-dimensional eigenspace does not span the four-dimensional algebra, so there is no eigenbasis. The element is unipotent: it is a unit, with inverse</p>
+<p>$$
+\tilde Q^{-1}=e_t-\tilde N
+=e_t-\frac{i}{\sqrt2}\vec e_x-\vec e_y-\frac{i}{\sqrt2}\vec e_z.
+$$</p>
+<p><strong>Spinors.</strong> There is no Q-adapted spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
+$$
+\mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+the first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is the spinor in the first minimal left ideal and the second column $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is the spinor in the second. Their matrices are
+$$
+\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$ In the special case
+$$
+\mathsf M_2(\tilde Q)=\begin{pmatrix}1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\[2pt]1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}\end{pmatrix},
+$$
+the two columns are $(1+\frac{1}{\sqrt2},\,1+\frac{1}{\sqrt2})$ and $(\frac{1}{\sqrt2}-1,\,1-\frac{1}{\sqrt2})$. The first column is an eigenvector with eigenvalue $1$; the second is not. The eigenspace is one line, so there is one eigenspinor and no second one, and no spinor decomposition of $\tilde Q$.</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=
+\begin{pmatrix}
+1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\
+1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}
+\end{pmatrix}
+=I_2+\mathsf N,
+\qquad
+\mathsf N=
+\begin{pmatrix}
+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\
+1+\frac{1}{\sqrt2}&-\frac{1}{\sqrt2}
+\end{pmatrix},
+$$</p>
+<p>with $\mathsf N^2=0$. The kernel of $\mathsf N$ is the line spanned by $(1,1+\sqrt2)$, and the eigenspace of $\mathsf M_2(\tilde Q)$ is the two-dimensional space of matrices whose two columns lie on that line.</p>
+<p><strong>Consequences.</strong> The powers are</p>
+<p>$$
+\tilde Q^n=e_t+n\tilde N,
+$$</p>
+<p>so</p>
+<p>$$
+\tilde Q^2=e_t+2\tilde N
+=e_t+i\sqrt2\,\vec e_x+2\vec e_y+i\sqrt2\,\vec e_z.
+$$</p>
+<p>The element is a unit of norm one, not a zero divisor, although its vector part is null.</p>
+<h3 id="case-7-a-generic-direction">Case 7: A Generic Direction</h3>
+<p><strong>Coordinates.</strong> For</p>
+<p>$$
+\tilde Q=\left(1-\frac{i}{2}\right)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z,
+$$</p>
+<p>the coordinates are</p>
+<p>$$
+Q_t=1-\frac{i}{2},
+\qquad
+Q_x=\frac{1+i}{\sqrt2},
+\qquad
+Q_y=\frac{1}{\sqrt2},
+\qquad
+Q_z=\frac{i}{2}.
+$$</p>
+<p>The vector part has square</p>
+<p>$$
+B^2=\frac{(1+i)^2}{2}+\frac12+\frac{i^2}{4}
+=i+\frac12-\frac14=\frac14+i,
+$$</p>
+<p>so</p>
+<p>$$
+B=\sqrt{\frac14+i}\approx 0.8002425902+0.6248105338\,i.
+$$</p>
+<p><strong>Spectrum.</strong> The eigenvalues are</p>
+<p>$$
+\lambda_+=1-\frac{i}{2}+iB\approx 0.3751894662+0.3002425902\,i,
+$$</p>
+<p>$$
+\lambda_-=1-\frac{i}{2}-iB\approx 1.6248105338-1.3002425902\,i.
+$$</p>
+<p>Their product is $1$. The element is a unit.</p>
+<p><strong>Eigenprojections.</strong> With $\vec\Xi=-i\vec Q/B$,</p>
+<p>$$
+\vec\Xi=\frac{1-i}{\sqrt2\,B}\vec e_x-\frac{i}{\sqrt2\,B}\vec e_y+\frac{1}{2B}\vec e_z,
+$$</p>
+<p>and $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$. Numerically,</p>
+<p>$$
+\tilde\Pi_+\approx \frac12e_t+(0.0601727-0.4887892\,i)\vec e_x+(-0.2143082-0.2744809\,i)\vec e_y+(0.1940873-0.1515388\,i)\vec e_z,
+$$</p>
+<p>$$
+\tilde\Pi_-\approx \frac12e_t+(-0.0601727+0.4887892\,i)\vec e_x+(0.2143082+0.2744809\,i)\vec e_y+(-0.1940873+0.1515388\,i)\vec e_z.
+$$</p>
+<p>The decomposition is</p>
+<p>$$
+\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
+$$</p>
+<p><strong>Nilpotents.</strong> Choose the transverse pure element</p>
+<p>$$
+\tilde Q_1=i\vec e_y-\sqrt2\,\vec e_z,
+\qquad
+\tilde Q_1^2=-e_t.
+$$</p>
+<p>The construction gives</p>
+<p>$$
+u=\tilde\Pi_-\tilde Q_1\tilde\Pi_+,
+\qquad
+v=\tilde\Pi_+\tilde Q_1\tilde\Pi_-,
+\qquad
+uv=-\tilde\Pi_-,
+\qquad
+vu=-\tilde\Pi_+.
+$$</p>
+<p>With $\alpha=i$,</p>
+<p>$$
+\vec\Upsilon_+=\frac{u}{i}
+\approx (-0.1940873+0.1515388\,i)\vec e_x+(1.1912523+0.0850970\,i)\vec e_y+(-0.0601727+1.1958960\,i)\vec e_z,
+$$</p>
+<p>$$
+\vec\Upsilon_-=\frac{v}{i}
+\approx (0.1940873-0.1515388\,i)\vec e_x+(-0.1912523-0.0850970\,i)\vec e_y+(0.0601727+0.2183176\,i)\vec e_z.
+$$</p>
+<p>The checks hold for the computed values to machine precision:</p>
+<p>$$
+\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,
+\qquad
+\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,
+\qquad
+\vec\Upsilon_+^2=\vec\Upsilon_-^2=0.
+$$</p>
+<p>The nilpotents are not simple coordinate expressions, because the direction of $\vec Q$ is not aligned with an axis. They are computed from the projection formula, which is the general construction.</p>
+<p><strong>The eigenbasis.</strong> The $Q$-adapted basis is</p>
+<p>$$
+(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-),
+$$</p>
+<p>with the diagonal action</p>
+<p>$$
+\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),
+$$</p>
+<p>and the $2\times2$ model is</p>
+<p>$$
+\mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-).
+$$</p>
+<p><strong>Spinors.</strong> A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+$$
+\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+$$
+in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
+$$
+\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\qquad
+\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+with matrices
+$$
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$
+Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
+$$
+(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+\qquad
+(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+$$
+In the special case $\tilde Q=(1-\tfrac{i}{2})e_t+\tfrac{1+i}{\sqrt2}\vec e_x+\tfrac{1}{\sqrt2}\vec e_y+\tfrac{i}{2}\vec e_z$ one has $Q_{\mathrm{sp},11}=\lambda_+=1-\tfrac{i}{2}+iB$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=1-\tfrac{i}{2}-iB$, so
+$$
+\mathsf M_2^Q(\tilde Q)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix}.
+$$</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=
+\begin{pmatrix}
+\frac32-\frac{i}{2}&-\frac{i}{\sqrt2}\\
+\frac{2-i}{\sqrt2}&\frac12-\frac{i}{2}
+\end{pmatrix},
+\qquad
+\mathrm{tr}=2-i,
+\qquad
+\det=1.
+$$</p>
+<p>The spectral projectors are</p>
+<p>$$
+\rho_+=\frac{1}{2B}
+\begin{pmatrix}
+B-\frac{i}{2}&-\frac{1}{\sqrt2}\\
+-\frac{1+2i}{\sqrt2}&B+\frac{i}{2}
+\end{pmatrix},
+\qquad
+\rho_-=I_2-\rho_+,
+$$</p>
+<p>and $\mathsf M_2(\tilde Q)=\lambda_+\rho_++\lambda_-\rho_-$.</p>
+<p><strong>Consequences.</strong> The square is</p>
+<p>$$
+\tilde Q^2=\left(\frac12-2i\right)e_t+\frac{3+i}{\sqrt2}\vec e_x+\frac{2-i}{\sqrt2}\vec e_y+\left(\frac12+i\right)\vec e_z,
+$$</p>
+<p>and the inverse is the conjugate, because the norm is one:</p>
+<p>$$
+\tilde Q^{-1}=\left(1-\frac{i}{2}\right)e_t-\frac{1+i}{\sqrt2}\vec e_x-\frac{1}{\sqrt2}\vec e_y-\frac{i}{2}\vec e_z.
+$$</p>
+<h3 id="case-8-a-null-vector-part-and-a-unipotent-unit">Case 8: A Null Vector Part and a Unipotent Unit</h3>
+<p><strong>Coordinates.</strong> For</p>
+<p>$$
+\tilde Q=(1+i)e_t+\vec e_x+i\vec e_y,
+$$</p>
+<p>the coordinates are</p>
+<p>$$
+Q_t=1+i,
+\qquad
+Q_x=1,
+\qquad
+Q_y=i,
+\qquad
+Q_z=0,
+\qquad
+B=0,
+\qquad
+\langle\tilde Q\rangle_{\natural}=2i.
+$$</p>
+<p><strong>The Jordan regime.</strong> The vector part is nonzero and null:</p>
+<p>$$
+Q_x^2+Q_y^2=1+i^2=0.
+$$</p>
+<p>Write</p>
+<p>$$
+\tilde N=\vec e_x+i\vec e_y.
+$$</p>
+<p>Then</p>
+<p>$$
+\tilde N^2=-e_t+0+e_t=0,
+\qquad
+\tilde Q=(1+i)e_t+\tilde N.
+$$</p>
+<p>The only eigenvalue is $1+i$, the minimal polynomial is $(X-(1+i))^2$, and the eigenspace is $\ker L_{\tilde N}$, of dimension two. There is no eigenbasis. The element is a unit, with inverse</p>
+<p>$$
+\tilde Q^{-1}=\frac{1-i}{2}e_t+\frac{i}{2}\vec e_x-\frac12\vec e_y.
+$$</p>
+<p><strong>Spinors.</strong> There is no Q-adapted spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
+$$
+\mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+$$
+the first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is the spinor in the first minimal left ideal and the second column $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is the spinor in the second. Their matrices are
+$$
+\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\qquad
+\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+$$ In the special case
+$$
+\mathsf M_2(\tilde Q)=\begin{pmatrix}1+i&-2i\\0&1+i\end{pmatrix},
+$$
+the two columns are $(1+i,\,0)$ and $(-2i,\,1+i)$. The first column is an eigenvector with eigenvalue $1+i$; the second is not. The eigenspace is one line, so there is one eigenspinor and no second one, and no spinor decomposition of $\tilde Q$.</p>
+<p><strong>Matrix.</strong> In the fixed model,</p>
+<p>$$
+\mathsf M_2(\tilde Q)=
+\begin{pmatrix}
+1+i&-2i\\
+0&1+i
+\end{pmatrix}
+=(1+i)I_2+\mathsf N,
+\qquad
+\mathsf N=
+\begin{pmatrix}
+0&-2i\\
+0&0
+\end{pmatrix},
+\qquad
+\mathsf N^2=0.
+$$</p>
+<p>The matrix is a single Jordan block. The kernel of $\mathsf N$ is the line spanned by $(1,0)$, and the eigenspace of $\mathsf M_2(\tilde Q)$ under left multiplication is the two-dimensional space of matrices whose two columns lie on that line, that is, whose second row is zero.</p>
+<p><strong>Consequences.</strong> The square is</p>
+<p>$$
+\tilde Q^2=2i\,e_t+2(1+i)\vec e_x+2(i-1)\vec e_y,
+$$</p>
+<p>and the general power is</p>
+<p>$$
+\tilde Q^n=(1+i)^n\left(e_t+\frac{n}{1+i}\tilde N\right).
+$$</p>
+<p>The vector part is null, but the norm is $2i\neq0$: the element is not a zero divisor. A null vector part is not a null element.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="main-results">Main Results</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\tilde Q$</th>
+<th>$B$</th>
+<th>$\lambda_+$</th>
+<th>$\lambda_-$</th>
+<th>$\langle\tilde Q\rangle_{\natural}$</th>
+<th>Regime</th>
+<th>Eigenbasis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$e_t$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>scalar</td>
+<td>every basis</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\vec e_x$</td>
+<td>$1$</td>
+<td>$i$</td>
+<td>$-i$</td>
+<td>$1$</td>
+<td>distinct</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\frac{1}{\sqrt2}(e_t+\vec e_x)$</td>
+<td>$\frac{1}{\sqrt2}$</td>
+<td>$\frac{1+i}{\sqrt2}$</td>
+<td>$\frac{1-i}{\sqrt2}$</td>
+<td>$1$</td>
+<td>distinct</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\sqrt2\,e_t+i\vec e_x$</td>
+<td>$i$</td>
+<td>$\sqrt2-1$</td>
+<td>$\sqrt2+1$</td>
+<td>$1$</td>
+<td>distinct</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\bigl(1-\frac{i}{\sqrt2}\bigr)e_t+\bigl(1+\frac{i}{\sqrt2}\bigr)\vec e_x$</td>
+<td>$1+\frac{i}{\sqrt2}$</td>
+<td>$a(1+i)$</td>
+<td>$b(1-i)$</td>
+<td>$1$</td>
+<td>distinct</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$e_t+\vec e_y+\frac{i}{\sqrt2}\vec e_x+\frac{i}{\sqrt2}\vec e_z$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>Jordan</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$\bigl(1-\frac{i}{2}\bigr)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z$</td>
+<td>$\sqrt{\frac14+i}$</td>
+<td>$1-\frac{i}{2}+iB$</td>
+<td>$1-\frac{i}{2}-iB$</td>
+<td>$1$</td>
+<td>distinct</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$(1+i)e_t+\vec e_x+i\vec e_y$</td>
+<td>$0$</td>
+<td>$1+i$</td>
+<td>$1+i$</td>
+<td>$2i$</td>
+<td>Jordan</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-eigenbasis-table">The Eigenbasis Table</h3>
+<p>For the five distinct cases the $Q$-adapted basis is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonal values are $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\tilde\Pi_+$</th>
+<th>$\vec\Upsilon_\pm$</th>
+<th>$\operatorname{diag}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$\frac12(e_t-i\vec e_x)$</td>
+<td>$\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y)$</td>
+<td>$(i,i,-i,-i)$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\frac12(e_t-i\vec e_x)$</td>
+<td>$\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y)$</td>
+<td>$\bigl(\frac{1+i}{\sqrt2},\frac{1+i}{\sqrt2},\frac{1-i}{\sqrt2},\frac{1-i}{\sqrt2}\bigr)$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\frac12(e_t-i\vec e_x)$</td>
+<td>$\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y)$</td>
+<td>$(\sqrt2-1,\sqrt2-1,\sqrt2+1,\sqrt2+1)$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\frac12(e_t-i\vec e_x)$</td>
+<td>$\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y)$</td>
+<td>$(a(1+i),a(1+i),b(1-i),b(1-i))$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$\frac12(e_t+\vec\Xi)$</td>
+<td>computed from $\tilde Q_1=i\vec e_y-\sqrt2\vec e_z$</td>
+<td>$(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>For cases 1, 6 and 8 there is no $Q$-adapted basis: case 1 is scalar, and cases 6 and 8 are Jordan.</p>
+<h3 id="the-matrices">The Matrices</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\mathsf M_2(\tilde Q)$</th>
+<th>$\mathrm{tr}$</th>
+<th>$\det$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$I_2$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\frac{1}{\sqrt2}\begin{pmatrix}1&-i\\-i&1\end{pmatrix}$</td>
+<td>$\sqrt2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\begin{pmatrix}\sqrt2&1\\1&\sqrt2\end{pmatrix}$</td>
+<td>$2\sqrt2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\begin{pmatrix}1-\frac{i}{\sqrt2}&\frac{1}{\sqrt2}-i\\\frac{1}{\sqrt2}-i&1-\frac{i}{\sqrt2}\end{pmatrix}$</td>
+<td>$2-i\sqrt2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\begin{pmatrix}1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}\end{pmatrix}$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$\begin{pmatrix}\frac32-\frac{i}{2}&-\frac{i}{\sqrt2}\\\frac{2-i}{\sqrt2}&\frac12-\frac{i}{2}\end{pmatrix}$</td>
+<td>$2-i$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$\begin{pmatrix}1+i&-2i\\0&1+i\end{pmatrix}$</td>
+<td>$2+2i$</td>
+<td>$2i$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-the-cases-show">What the Cases Show</h3>
+<ul>
+<li>Cases 2 to 5 have the same vector direction $\vec e_x$. They therefore have the same root $\vec\Xi=-i\vec e_x$, the same eigenprojections $\tilde\Pi_\pm$, and the same nilpotents $\vec\Upsilon_\pm$. Only the two eigenvalues change. The eigenbasis is attached to the direction of the vector part, not to its magnitude or to the scalar part. This is the biquaternion form of the statement that the eigenbasis is attached to the root.</li>
+<li>Case 4 has $B=i$ and real eigenvalues. The root need not be real for the spectrum to be real. The sign of the root exchanges the two eigenvalues and the two projectors.</li>
+<li>Case 6 is the unipotent case with a real scalar part. The vector part is null, $B=0$, and the element is $e_t$ plus a square-zero element. The eigenspace has dimension two, so there is no eigenbasis.</li>
+<li>Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is a unit. A null vector part does not imply a zero divisor.</li>
+<li>None of the eight is a zero divisor. The zero-divisor regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.</li>
+<li>Case 1 is the scalar regime. Every basis is an eigenbasis, and the $Q$-adapted construction does not apply.</li>
+<li>Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the projection formula. The symmetric closed form of <em>Eigenbasis of a Biquaternion</em> gives the same pair up to the reciprocal rescaling when the direction is off the exceptional cone; the projection formula is the construction used here.</li>
+<li>In the distinct regime the eigenvalues repeat twice in the four-dimensional eigenbasis, and they are distinct on each two-dimensional spinor space. The $2\times2$ model records the two values once, one for each column.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
+<td>a biquaternion</td>
+</tr>
+<tr>
+<td>$B=\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$</td>
+<td>a fixed square root of the vector part</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\vec\Xi=-i\vec Q/B$</td>
+<td>the pure root of $+1$ attached to $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$</td>
+<td>the two eigenprojections</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_\pm$</td>
+<td>the normalised nilpotents of the mixed Peirce corners</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>the two minimal left ideals, the spinor spaces</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>the fixed $2\times2$ matrix model</td>
+</tr>
+<tr>
+<td>$\mathsf M_2^Q$</td>
+<td>the $Q$-adapted matrix model</td>
+</tr>
+<tr>
+<td>$\rho_\pm=\mathsf M_2(\tilde\Pi_\pm)$</td>
+<td>the spectral projectors</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q},R_{\tilde Q}$</td>
+<td>left and right multiplication by $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the eigenvalue decomposition, the Peirce decomposition, the nilpotents and the eigenbasis.</li>
+<li><a href="eigenbasis-of-a-biquaternion-in-matrix-elements-representations.html">Eigenbasis of a Biquaternion in Matrix Elements Representations</a>, for the fixed model, the $Q$-adapted model and the diagonalising matrix.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Biquaternions</a>, for the same eight elements read through the polar word.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions</a>, for the same eight cases read in the Q-adapted basis, with the nilpotents and the spinors.</li>
+<li><a href="worked-examples-of-eigenbasis-of-a-split-complex-number.html">Worked Examples of Eigenbasis of a Split-Complex Number</a>, for the two-dimensional commutative companion.</li>
+<li><a href="worked-examples-of-eigenbasis-a-reduced-biquaternion.html">Worked Examples of Eigenbasis a Reduced Biquaternion</a>, for the four-dimensional commutative companion.</li>
+<li><a href="ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html">Ideals and Peirce Decomposition of the Biquaternion Algebra</a>, for the Peirce corners and the minimal left ideals.</li>
+<li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential and the logarithm built on the decomposition.</li>
+<li><a href="nilpotent-elements-and-the-jordan-chevalley-decomposition.html">Nilpotent Elements and the Jordan–Chevalley Decomposition</a>, for the Jordan and nilpotent regimes.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the algebraic structure of the biquaternion algebra.</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the notation used throughout.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

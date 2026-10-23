@@ -88,19 +88,19 @@ $$</p>
 <h2 id="the-adjoint">The Adjoint</h2>
 <p><strong>Theorem (existence, uniqueness and the elementary laws).</strong> Let $T \in B(A)$ be adjointable. Then $T^\dagger$ is unique, and the assignment $T \mapsto T^\dagger$ is additive, conjugate-linear when the scalar twist is present, involutive and anti-multiplicative:</p>
 <p>$$
-(S + T)^\dagger = S^\dagger + T^\dagger , \qquad (ST)^\dagger = T^\dagger S^\dagger , \qquad (T^\dagger)^\dagger = T , \qquad (\lambda T)^\dagger = \bar\lambda\,T^\dagger .
+\boxed{\;(S + T)^\dagger = S^\dagger + T^\dagger , \qquad (ST)^\dagger = T^\dagger S^\dagger , \qquad (T^\dagger)^\dagger = T , \qquad (\lambda T)^\dagger = \bar\lambda\,T^\dagger\;} .
 $$</p>
 <p>Hence the adjoint is an anti-automorphism of the algebra $\mathcal{A}(A)$ of order two, an isomorphism $\mathcal{A}(A) \to \mathcal{A}(A)^{\mathrm{opp}}$, and the adjointable operators form a subalgebra of $B(A)$.</p>
 <p><strong>Proof.</strong> Uniqueness and additivity are the nondegeneracy of the form: $\{x,(S+T)^\dagger y\} = \{(S+T)x,y\} = \{Sx,y\} + \{Tx,y\} = \{x,S^\dagger y\} + \{x,T^\dagger y\}$, and the form is conjugate-linear in the second argument. For the product, $\{x,(ST)^\dagger y\} = \{STx,y\} = \{Tx,S^\dagger y\} = \{x,T^\dagger S^\dagger y\}$. The order two is $\{x,Ty\} = \{T^\dagger x,y\} = \{x,(T^\dagger)^\dagger y\}$, and the compatibility with the scalars is the conjugation.</p>
 <p><strong>Theorem (self-adjoint and skew operators).</strong> An operator $T$ is <strong>self-adjoint</strong> when $T^\dagger = T$ and <strong>skew</strong> when $T^\dagger = -T$; the self-adjoint operators form a real linear subspace and the skew operators the real subspace $i\mathcal{A}(A)^+$; every adjointable $T$ decomposes as</p>
 <p>$$
-T = \tfrac12(T + T^\dagger) + \tfrac12(T - T^\dagger) ,
+\boxed{\;T = \tfrac12(T + T^\dagger) + \tfrac12(T - T^\dagger)\;} ,
 $$</p>
 <p>and the self-adjoint and the skew operators are closed when the adjoint is continuous. The self-adjoint operators are exactly the operators fixed by the involution, and they are the analogue in $\mathcal{A}(A)$ of the self-adjoint elements of $A$.</p>
 <p><strong>Proof.</strong> The decomposition is formal and the parts are self-adjoint and skew by the involutivity and conjugate-linearity; closedness is the closedness of the fixed set of a continuous map, the adjoint being continuous for the topology of bounded convergence when $\sigma$ and $\tau$ are.</p>
 <p><strong>Theorem (the left regular representation is a <code>*</code>-representation).</strong> The left and right multiplications are adjointable, with</p>
 <p>$$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} ,
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} ,
 $$</p>
 <p>and the map $a \mapsto L_a$ is a <code>*</code>-representation of $(A,\sigma)$ in $\mathcal{A}(A)$: $L_{ab} = L_aL_b$, $L_{a^*} = (L_a)^\dagger$. Hence the involution of the elements and the adjoint of the operators agree on the image of the regular representation, an agreement proved and not assumed.</p>
 <p><strong>Proof.</strong> $\{L_ax,y\} = \tau(ax\sigma(y)) = \tau(x\sigma(y)a) = \tau(x\sigma(\sigma(a)y)) = \{x,L_{\sigma(a)}y\}$ by the cyclicity of $\tau$ and $\sigma^2 = \mathrm{id}$; the right-handed computation is the mirror. Multiplicativity is associativity and the adjoint formula is the computation.</p>

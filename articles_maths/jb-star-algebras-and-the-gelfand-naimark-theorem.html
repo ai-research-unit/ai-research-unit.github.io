@@ -80,7 +80,7 @@ $$</p>
 <p>where $a^{2} = a\bullet a$; it is <strong>unital</strong> when there is an identity $1$. An element is <strong>positive</strong> when it is a sum of squares, $a = \sum x_i^{2}$, and the <strong>positive cone</strong> is the set $J_+$ of such sums.</p>
 <p><strong>Proposition (the cone of a unital Jordan algebra).</strong> The set $J_+$ of the sums of squares is closed under addition and nonnegative scaling and contains $1 = 1^{2}$; it is a proper cone under the formally real hypothesis</p>
 <p>$$
-x_1^{2} + \dots + x_n^{2} = 0 \implies x_1 = \dots = x_n = 0 ,
+\boxed{\;x_1^{2} + \dots + x_n^{2} = 0 \implies x_1 = \dots = x_n = 0\;} ,
 $$</p>
 <p>that is, when the algebra is <strong>formally real</strong>, and then it orders $J$ by $a\leq b\iff b - a\in J_+$ with $1$ as order unit.</p>
 <p><em>Proof.</em> The closure properties are immediate from the definition of a sum of squares; the formal reality is exactly the pointedness, by the same argument as in <em>The Positive Cone of an Involutive Algebra</em>; the order unit is the identity, which dominates every element in the indicated sense in the bounded case.</p>
@@ -103,12 +103,12 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>JC-algebra</strong> is a norm-closed real Jordan subalgebra of the self-adjoint part of $B(H)$ for some Hilbert space $H$, closed under the Jordan product $\{a,b\} = \frac12(ab+ba)$; a <strong>JC*-algebra</strong> is a norm-closed complex Jordan $\ast$-subalgebra of $B(H)$.</p>
 <p><strong>Theorem (Gelfand–Naimark for JB-algebras).</strong> Every JB-algebra is isometrically isomorphic, as an ordered Jordan algebra, to a JC-algebra: there is a Hilbert space $H$, a norm-closed real Jordan subalgebra $J\subseteq B(H)_{\mathrm{sa}}$, and a bijective linear isomorphism $\Phi : A\to J$ with</p>
 <p>$$
-\Phi(a\bullet b) = \{\Phi(a),\Phi(b)\}, \qquad \Phi(A_+) = J_+, \qquad \lVert\Phi(a)\rVert = \lVert a\rVert ,
+\boxed{\;\Phi(a\bullet b) = \{\Phi(a),\Phi(b)\}, \qquad \Phi(A_+) = J_+, \qquad \lVert\Phi(a)\rVert = \lVert a\rVert\;} ,
 $$</p>
 <p>so that $\Phi$ preserves the order, the order unit and the positive cone.</p>
 <p><strong>Theorem (Gelfand–Naimark for JB*-algebras).</strong> Every JB*-algebra is isometrically $\ast$-isomorphic to a JC*-algebra: there is a Hilbert space $H$, a norm-closed complex Jordan $\ast$-subalgebra $A_0\subseteq B(H)$, and a bijective linear map $\Phi : A\to A_0$ with</p>
 <p>$$
-\Phi(a\bullet b) = \Phi(a)\bullet\Phi(b), \qquad \Phi(a^{*}) = \Phi(a)^{*}, \qquad \Phi(A_+) = A_{0+} , \qquad \lVert\Phi(a)\rVert = \lVert a\rVert ,
+\boxed{\;\Phi(a\bullet b) = \Phi(a)\bullet\Phi(b), \qquad \Phi(a^{*}) = \Phi(a)^{*}, \qquad \Phi(A_+) = A_{0+} , \qquad \lVert\Phi(a)\rVert = \lVert a\rVert\;} ,
 $$</p>
 <p>preserving the involution, the order, the cone and the norm.</p>
 <p><strong>Corollary (the order is the concrete one).</strong> In a JB-algebra, $a\geq0$ if and only if $\Phi(a)\geq0$ as an operator, $a\geq b$ if and only if $\Phi(a)\geq\Phi(b)$ in the Loewner order, the order unit is the image of the identity, and the order is the operator order inherited from $B(H)$; consequently the order interval $[a,b]$, the order ideals and the order units are transported by $\Phi$, and every order-theoretic statement about a JB-algebra can be proved in the concrete Jordan algebra of a Hilbert space.</p>

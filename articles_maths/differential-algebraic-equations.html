@@ -104,7 +104,7 @@ $$</p>
 <p>uniformly on compact intervals, and the <strong>tractability index</strong> is a variant computed by a finite sequence of matrix operations on the coefficients. For the linear systems considered here the three generally agree, and the difference between the differentiation index and the perturbation index measures the amplification of a perturbation of the constraint.</p>
 <p><strong>Theorem (the differentiation index counts derivatives of the data).</strong> For a linear system $Ey' + Ay = q(t)$ with regular pencil and index $\nu$, every solution is of the form</p>
 <p>$$
-y = \sum_{k=0}^{\nu-1} c_k\,q^{(k)} + y_{\mathrm{hom}},
+\boxed{\;y = \sum_{k=0}^{\nu-1} c_k\,q^{(k)} + y_{\mathrm{hom}}\;},
 $$</p>
 <p>where the $c_k$ are matrices and $y_{\mathrm{hom}}$ solves the homogeneous system; consequently the solution depends on the first $\nu-1$ derivatives of $q$, and the initial value $y(t_0)$ must satisfy $\nu-1$ consistency conditions for a solution to exist.</p>
 <p><em>Proof.</em> Quoted as standard, and proved in the next section by the Kronecker form. The statement follows from the explicit representation $v = \sum_{k=0}^{\nu-1}(-N)^kq_2^{(k)}$ for the algebraic part; each differentiation of $q_2$ raises the order of the derivative appearing, and there are exactly $\nu-1$ terms because $N^\nu = 0$.</p>
@@ -122,7 +122,7 @@ u' + Ju = q_1, \qquad N v' + v = q_2 .
 $$</p>
 <p>The first is an ordinary linear system with the solution of <em>Ordinary Differential Equations</em>. The second is solved by</p>
 <p>$$
-v = \sum_{k=0}^{\nu-1}(-N)^k q_2^{(k)},
+\boxed{\;v = \sum_{k=0}^{\nu-1}(-N)^k q_2^{(k)}\;},
 $$</p>
 <p>a finite sum because $N$ is nilpotent of index $\nu$; it involves no free constant, so the value of $v$ is completely determined by $q_2$ and its derivatives, and in particular the initial value $v(t_0)$ must equal $\sum_{k}(-N)^kq_2^{(k)}(t_0)$.</p>
 <p><em>Proof.</em> Multiply the equation $Ey' + Ay = q$ by $P$ and change variable $y = Qw$ to obtain $PEQ w' + PAQ w = Pq$; with $w = (u,v)$ this is the displayed uncoupled system. For the second equation, the identity $v + Nv' = q_2$ gives $v = q_2 - Nv'$ and, differentiating and iterating, the induction</p>
@@ -136,7 +136,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>constraints</strong> of a semi-explicit system are the equations $0 = g(t,y_1,y_2)$; the <strong>hidden constraints</strong> are the equations obtained by differentiating the constraints along solutions and eliminating the derivatives by the differential equations. An initial value is <strong>consistent</strong> if it satisfies the constraints and all the hidden constraints.</p>
 <p><strong>Theorem (index one).</strong> For the semi-explicit system $y_1' = f(t,y_1,y_2)$, $0=g(t,y_1,y_2)$ with $\partial/\partial y_2\,g$ invertible in a neighbourhood of a point $(t_0,y_1^0,y_2^0)$ satisfying $g(t_0,y_1^0,y_2^0)=0$, the constraint can be solved locally for $y_2 = G(t,y_1)$, $y_2^0 = G(t_0,y_1^0)$, and the system becomes the ordinary equation</p>
 <p>$$
-y_1' = f\bigl(t, y_1, G(t,y_1)\bigr) .
+\boxed{\;y_1' = f\bigl(t, y_1, G(t,y_1)\bigr)\;} .
 $$</p>
 <p>Hence through every consistent point with $y_2^0 = G(t_0,y_1^0)$ there passes a unique solution; the only consistency condition is the constraint itself.</p>
 <p><em>Proof.</em> The implicit function theorem applied to $g$ in $y_2$ gives $G$ of class $C^1$ with $g(t,y_1,G(t,y_1))=0$; substituting into the differential equation gives an ordinary equation with a locally Lipschitz right-hand side, to which Picard–Lindelöf applies. Every solution of the original system satisfies this equation, and conversely a solution of the reduced equation with $y_2 = G(t,y_1)$ satisfies both the differential equation and the constraint.</p>

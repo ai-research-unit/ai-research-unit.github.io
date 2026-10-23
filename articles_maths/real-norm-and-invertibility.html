@@ -92,8 +92,7 @@ $$</p>
 <p>The difference from the complex algebra is only in the number of squares: $\langle A\rangle = u^2+v^2$ is a sum of two squares, and $\langle q\rangle = q^2$ is the single-square base case of that sum.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The norm is multiplicative:</p>
-<p>$$
-\langle q_1 q_2\rangle = \langle q_1\rangle\,\langle q_2\rangle.
+<p>$$ \boxed{\;\langle q_1 q_2\rangle = \langle q_1\rangle\,\langle q_2\rangle\;}.
 $$</p>
 <p><strong>Proof.</strong> By definition $\langle q_1 q_2\rangle = (q_1 q_2)^2$, and commutativity and associativity of the real product give $(q_1 q_2)^2 = q_1 q_2 q_1 q_2 = q_1^2 q_2^2 = \langle q_1\rangle\langle q_2\rangle$.</p>
 <p><strong>Corollary.</strong> If $\langle q_1\rangle \neq 0$ and $\langle q_2\rangle \neq 0$ then $\langle q_1 q_2\rangle \neq 0$. Equivalently, the product of two units is a unit.</p>
@@ -160,8 +159,7 @@ $$</p>
 <p>The criterion $\langle q\rangle \neq 0$ is the general form of the invertibility test of the family; in $\mathbb{R}$ it is equivalent to the elementary statement $q \neq 0$ because the norm is definite.</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
 <p>For $q \neq 0$ the inverse is</p>
-<p>$$
-q^{-1} = \frac{1}{\langle q\rangle}\,q = \frac{1}{q}.
+<p>$$ \boxed{\;q^{-1} = \frac{1}{\langle q\rangle}\,q = \frac{1}{q}\;}.
 $$</p>
 <p><strong>Proof.</strong> The verification is the computation in the first part of the proof of the criterion.</p>
 <p><strong>Corollary.</strong> If $q$ is invertible then so is $-q$, and $(-q)^{-1} = -q^{-1}$. If $q$ is invertible then so is $q^{-1}$, and $(q^{-1})^{-1} = q$. Inversion reverses the order of a product, which in a commutative algebra is invisible: $(q_1 q_2)^{-1} = q_2^{-1}q_1^{-1} = q_1^{-1}q_2^{-1}$.</p>
@@ -221,8 +219,7 @@ $$</p>
 <p>The unit group is the base case of the family: below it lies only the non-unit $0$, and every nonzero element is a unit because the algebra is a field.</p>
 <h3 id="the-split-into-positive-scale-and-the-sign-group">The Split into Positive Scale and the Sign Group</h3>
 <p><strong>Theorem.</strong> The map</p>
-<p>$$
-\mathbb{R}^\times \longrightarrow \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl( |q|, \operatorname{sgn} q \bigr),
+<p>$$ \boxed{\;\mathbb{R}^\times \longrightarrow \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl( |q|, \operatorname{sgn} q \bigr)\;},
 $$</p>
 <p>where $\operatorname{sgn} q = q/|q| \in \{\pm1\}$ for $q \neq 0$, is an isomorphism of groups and a homeomorphism of topological spaces onto the product of the positive ray and the two-element group.</p>
 <p><strong>Proof.</strong> The map is well defined because $|q| > 0$ for $q \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \{\pm1\}$. It is a group homomorphism: $|q_1 q_2| = |q_1||q_2|$ and $\operatorname{sgn}(q_1 q_2) = \operatorname{sgn}q_1\,\operatorname{sgn}q_2$, since each is positive exactly when the two factors have the same sign. Its inverse is $(r, \sigma) \mapsto r\sigma$, continuous in the product topology, so the map is a homeomorphism.</p>

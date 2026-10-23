@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Proof.</strong> If $T$ is bounded with norm $M$ then $\lVert Tx - Ty\rVert \leq M\lVert x - y\rVert$, so $T$ is Lipschitz and continuous. Conversely a continuous $T$ is continuous at $0$, so there is a neighbourhood of $0$ on which $\lVert Tx\rVert \leq 1$; by the definition of the topology of a normed space this neighbourhood contains a ball $B(0,r)$, whence $\lVert Tx\rVert \leq 1$ whenever $\lVert x\rVert \leq r$ and $\lVert Tx\rVert \leq r^{-1}\lVert x\rVert$ for all $x$ by scaling. The last two conditions are recastings of the first, and the least constant is the supremum in the definition.</p>
 <p><strong>Theorem ($B(A)$ is a Banach algebra).</strong> $B(A)$ is a unital algebra under the pointwise linear structure, the composition of operators and the identity $\mathrm{id}$, and</p>
 <p>$$
-\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1 \ (A \neq 0),
+\boxed{\;\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1 \ (A \neq 0)\;},
 $$</p>
 <p>so the operator norm is a submultiplicative norm on $B(A)$; $B(A)$ is complete for it, hence a unital Banach algebra, and the multiplication of $B(A)$ is continuous.</p>
 <p><strong>Proof.</strong> Composition is bilinear and associative, and $\mathrm{id}$ is its unit. Submultiplicativity is $\lVert STx\rVert \leq \lVert S\rVert\lVert Tx\rVert \leq \lVert S\rVert\lVert T\rVert\lVert x\rVert$. For completeness, let $(T_n)$ be Cauchy in $B(A)$; then $(T_nx)$ is Cauchy in the Banach space $A$ for every $x$, so $Tx = \lim_n T_nx$ defines a linear $T$, and the uniform bound $\lVert T_n\rVert \leq M$ transfers to $\lVert Tx\rVert \leq M\lVert x\rVert$, so $T$ is bounded, and $\lVert T - T_n\rVert \leq \sup_{m \geq n}\lVert T_m - T_n\rVert \to 0$. Continuity of the product is submultiplicativity.</p>
@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Proof.</strong> $\lVert L_ax\rVert = \lVert ax\rVert \leq \lVert a\rVert\lVert x\rVert$ by submultiplicativity, so $L_a$ is bounded with norm at most $\lVert a\rVert$, and likewise on the right. If $A$ has a unit then $L_a(1) = a$ and $R_a(1) = a$, so $\lVert L_a\rVert \geq \lVert a\rVert$ and $\lVert R_a\rVert \geq \lVert a\rVert$ on the unit vector $1/\lVert 1\rVert$.</p>
 <p><strong>Proposition (composition and commutation).</strong> For all $a,b \in A$,</p>
 <p>$$
-L_{ab} = L_aL_b , \qquad R_{ab} = R_bR_a , \qquad L_aR_b = R_bL_a .
+\boxed{\;L_{ab} = L_aL_b , \qquad R_{ab} = R_bR_a , \qquad L_aR_b = R_bL_a\;} .
 $$</p>
 <p>Hence $a \mapsto L_a$ is a unital algebra homomorphism and $a \mapsto R_a$ a unital anti-homomorphism, and the two families commute.</p>
 <p><strong>Proof.</strong> $L_a(L_bx) = a(bx) = (ab)x = L_{ab}x$; $R_a(R_bx) = (xb)a = x(ba) = R_{ba}x$; and $L_aR_bx = a(xb) = (ax)b = R_bL_ax$ by associativity.</p>
@@ -147,7 +147,7 @@ $$</p>
 <p><strong>Proof.</strong> If $D_1,D_2$ are derivations then so is $D_1 - D_2$ and so is $[D_1,D_2]$: $[D_1,D_2](ab) = D_1(D_2(ab)) - D_2(D_1(ab))$, expanded, gives $[D_1,D_2](a)b + a[D_1,D_2](b)$. If $D_n \to D$ in $B(A)$ and each $D_n$ is a derivation, then $D(ab) = \lim D_n(ab) = \lim(D_n(a)b + aD_n(b)) = D(a)b + aD(b)$, so the derivation property is closed; $\operatorname{Der}(A)$ is closed in the Banach space $B(A)$. The inner derivations are in $\operatorname{Der}(A)$ and are an ideal by $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x,\operatorname{ad}_y]$ and $[D,\operatorname{ad}_x] = \operatorname{ad}_{D(x)}$.</p>
 <p><strong>Theorem (the exponential of a bounded derivation).</strong> Let $D \in \operatorname{Der}(A) \cap B(A)$ be a bounded derivation. Then the series $\exp D = \sum_{n \geq 0} D^n/n!$ converges in the Banach algebra $B(A)$, its sum is a bounded algebra automorphism of $A$, and</p>
 <p>$$
-(\exp D)^{-1} = \exp(-D) , \qquad \exp D = \sum_{n\geq0}\frac{D^n}{n!} , \qquad \exp(D)(ab) = (\exp D\,a)(\exp D\,b) .
+\boxed{\;(\exp D)^{-1} = \exp(-D) , \qquad \exp D = \sum_{n\geq0}\frac{D^n}{n!} , \qquad \exp(D)(ab) = (\exp D\,a)(\exp D\,b)\;} .
 $$</p>
 <p>Hence the exponential carries the bounded derivations into the automorphism group $\operatorname{Aut}(A)$.</p>
 <p><strong>Proof.</strong> The series converges absolutely because $\lVert D^n\rVert \leq \lVert D\rVert^n$ and $\sum\lVert D\rVert^n/n!$ is finite; $B(A)$ is complete. That $\exp D$ is multiplicative is the Leibniz rule reorganized: $D^n(ab) = \sum_{i=0}^{n} \binom{n}{i} D^i(a)D^{n-i}(b)$, which is the binomial theorem for the derivation, and summing against $1/n!$ gives $(\exp D)(ab) = (\exp Da)(\exp Db)$. The identity $\exp(D)\exp(-D) = \mathrm{id}$ is the Cauchy product and $\exp(0) = \mathrm{id}$.</p>

@@ -144,7 +144,7 @@ $$</p>
 <h3 id="definition-and-examples">Definition and Examples</h3>
 <p><strong>Definition.</strong> Let $F : \mathcal{C} \to \mathcal{D}$ and $G : \mathcal{D} \to \mathcal{C}$ be functors. $F$ is <strong>left adjoint</strong> to $G$, written $F \dashv G$, if there is a bijection</p>
 <p>$$
-\mathcal{D}(F(C), D) \cong \mathcal{C}(C, G(D))
+\boxed{\;\mathcal{D}(F(C), D) \cong \mathcal{C}(C, G(D))\;}
 $$</p>
 <p>for all objects $C$ of $\mathcal{C}$ and $D$ of $\mathcal{D}$, natural in $C$ and in $D$. The functor $G$ is the <strong>right adjoint</strong> of $F$.</p>
 <p><strong>Example.</strong> The free-monoid functor $(-)^* : \mathbf{Set} \to \mathbf{Mon}$ is left adjoint to the forgetful functor $U : \mathbf{Mon} \to \mathbf{Set}$: the universal property of the free monoid is exactly the natural bijection $\mathbf{Mon}(X^*, M) \cong \mathbf{Set}(X, \mathrm{U}(M))$. In the same way, a forgetful functor from any category of algebras to sets has a left adjoint, the free algebra on the set.</p>
@@ -156,9 +156,9 @@ $$</p>
 <p><strong>Definition.</strong> Let $F \dashv G$ with bijection $\varphi_{C,D} : \mathcal{D}(F(C),D) \to \mathcal{C}(C,G(D))$. The <strong>unit</strong> $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ has components $\eta_C = \varphi_{C,F(C)}(\mathrm{id}_{F(C)}) : C \to G(F(C))$, and the <strong>counit</strong> $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ has components $\varepsilon_D = \varphi_{G(D),D}^{-1}(\mathrm{id}_{G(D)}) : F(G(D)) \to D$.</p>
 <p><strong>Theorem (triangular identities).</strong> With the notation above, the composites</p>
 <p>$$
-F \xrightarrow{\ F\eta\ } F \circ G \circ F \xrightarrow{\ \varepsilon F\ } F,
+\boxed{\;F \xrightarrow{\ F\eta\ } F \circ G \circ F \xrightarrow{\ \varepsilon F\ } F,
 \qquad
-G \xrightarrow{\ \eta G\ } G \circ F \circ G \xrightarrow{\ G\varepsilon\ } G
+G \xrightarrow{\ \eta G\ } G \circ F \circ G \xrightarrow{\ G\varepsilon\ } G\;}
 $$</p>
 <p>are the identities of $F$ and of $G$. Conversely, a pair of natural transformations $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ and $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ satisfying the two identities makes $F$ left adjoint to $G$.</p>
 <p><strong>Proof sketch.</strong> The first identity is checked on components using the naturality of $\varphi$: $(\varepsilon F)_C \circ (F\eta)_C = \varepsilon_{F(C)} \circ F(\eta_C)$, and under the adjunction bijection this is the identity of $F(C)$. The converse defines $\varphi$ by $\varphi(f) = G(f) \circ \eta_C$ and $\varphi^{-1}(g) = \varepsilon_D \circ F(g)$, and the triangular identities are what make the two inverse.</p>
@@ -169,7 +169,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $\mathcal{C}$ be locally small. The <strong>Yoneda embedding</strong> is the functor $Y : \mathcal{C} \to [\mathcal{C}^{\mathrm{opp}}, \mathbf{Set}]$ sending an object $A$ to the presheaf $\mathcal{C}(-,A)$ and a morphism $f : A \to B$ to the natural transformation $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ given by composition with $f$. A presheaf is <strong>representable</strong> if it is naturally isomorphic to $\mathcal{C}(-,A)$ for some $A$, and then $A$ <strong>represents</strong> it.</p>
 <p><strong>Theorem (Yoneda lemma).</strong> For a locally small category $\mathcal{C}$, an object $A$ and a presheaf $F : \mathcal{C}^{\mathrm{opp}} \to \mathbf{Set}$, the map</p>
 <p>$$
-[\mathcal{C}^{\mathrm{opp}},\mathbf{Set}](\mathcal{C}(-,A), F) \longrightarrow F(A), \qquad \eta \mapsto \eta_A(\mathrm{id}_A),
+\boxed{\;[\mathcal{C}^{\mathrm{opp}},\mathbf{Set}](\mathcal{C}(-,A), F) \longrightarrow F(A), \qquad \eta \mapsto \eta_A(\mathrm{id}_A)\;},
 $$</p>
 <p>is a bijection, natural in $A$ and in $F$.</p>
 <p><strong>Proof.</strong> Given $\eta : \mathcal{C}(-,A) \Rightarrow F$, the component $\eta_A$ sends $\mathrm{id}_A$ to an element of $F(A)$; this defines the map. In the other direction, an element $x \in F(A)$ determines $\eta_x$ by $\eta_x{}_B(f) = F(f)(x)$ for $f : B \to A$; naturality is the equation $F(g)(F(f)(x)) = F(f \circ g)(x)$ for $g : C \to B$, which holds because $F$ is a functor. The two assignments are inverse: from $x$ one recovers $x$ as $\eta_x{}_A(\mathrm{id}_A)$, and from $\eta$ one recovers $\eta$ because $\eta_B(f) = \eta_B(\mathcal{C}(-,A)(f)(\mathrm{id}_A)) = F(f)(\eta_A(\mathrm{id}_A))$ by naturality. Naturality in $A$ and $F$ is a diagram chase.</p>

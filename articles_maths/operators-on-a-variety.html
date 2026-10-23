@@ -85,7 +85,7 @@ s \longmapsto m_s, \qquad m_s(t) = st,
 $$
 is an isomorphism of sheaves of $\mathcal{O}_X$-algebras $\mathcal{O}_X\xrightarrow{\ \sim\ }\mathcal{E}nd(\mathcal{O}_X)$. Consequently every endomorphism of $\mathcal{O}_X$ linear over itself is the multiplication by a unique function, and the algebra of global operators is
 $$
-\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\Gamma(X,\mathcal{O}_X),
+\boxed{\;\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\Gamma(X,\mathcal{O}_X)\;},
 $$
 a commutative ring. Its group of units is $\Gamma(X,\mathcal{O}_X^\times)$, the group of invertible global functions.</p>
 <p><em>Proof.</em> The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\varphi$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $\Xi$ and put $s = \varphi(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $\Xi$, $\mathcal{O}_X$-linearity gives $\varphi(t) = \varphi(t\cdot 1) = t\,\varphi(1) = ts$, so $\varphi = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.</p>
@@ -102,7 +102,7 @@ $$
 $$</p>
 <p><strong>Theorem (the operator structure of the vector fields).</strong> On each open $\Xi$ the derivations $\operatorname{Der}_k(\mathcal{O}_X(\Xi))$ form a Lie algebra under the commutator
 $$
-[D_1,D_2] = D_1D_2 - D_2D_1,
+\boxed{\;[D_1,D_2] = D_1D_2 - D_2D_1\;},
 $$
 and a module over the ring $\mathcal{O}_X(\Xi)$ under $(fD)(g) = f\,D(g)$. The two are compatible in the Leibniz rule for the bracket,
 $$
@@ -112,7 +112,7 @@ so that $\mathcal{D}er_k(\mathcal{O}_X)$ is a sheaf of Lie algebras over $k$ and
 <p><em>Proof.</em> The bracket of two derivations is a derivation: the Leibniz rule applied twice gives $[D_1,D_2](fg) = f[D_1,D_2](g) + [D_1,D_2](f)g$, since the four cross-terms cancel in pairs. The bracket is $k$-bilinear, alternating and satisfies the Jacobi identity because the commutator of operators always does, by Part I's <em>Algebras of Endomorphisms</em>. The module axioms and the displayed Leibniz rule are checked by expanding both sides and cancelling the two terms in which $D_1(g)$ or $D_2(f)$ is differentiated.</p>
 <p><strong>Proposition (the tangent sheaf is the dual of the cotangent sheaf).</strong> There is a natural isomorphism of $\mathcal{O}_X$-modules
 $$
-\mathcal{T}_X \cong \mathcal{H}om_{\mathcal{O}_X}(\Omega^1_{X/k},\mathcal{O}_X),
+\boxed{\;\mathcal{T}_X \cong \mathcal{H}om_{\mathcal{O}_X}(\Omega^1_{X/k},\mathcal{O}_X)\;},
 $$
 where $\Omega^1_{X/k}$ is the cotangent sheaf of <em>Schemes</em>. On an affine chart $X = \operatorname{Spec} A$ it is the identification $\operatorname{Der}_k(A)\cong\operatorname{Hom}_A(\Omega^1_{A/k},A)$.</p>
 <p><em>Proof.</em> The universal derivation $d : A\to\Omega^1_{A/k}$ of the module of Kähler differentials has the universal property that every $k$-derivation $\delta : A\to M$ factors uniquely through $\operatorname{Hom}_A(\Omega^1_{A/k},M)$; taking $M = A$ gives the duality on the chart, and the two sides are sheaves, so the identification glues.</p>

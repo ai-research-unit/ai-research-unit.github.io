@@ -77,14 +77,14 @@
 <p><strong>Definition.</strong> Let $A$ be a commutative ring with identity. The <strong>spectrum</strong> $\operatorname{Spec} A$ is the set of prime ideals of $A$. For a subset $S\subseteq A$ one writes $V(S) = \{\mathrm{P} : S\subseteq\mathrm{P}\}$, the sets $V(\mathrm{A})$ for ideals $\mathrm{A}$ are the closed sets of the <strong>Zariski topology</strong>, and for $f\in A$ the <strong>distinguished open set</strong> is $D(f) = \operatorname{Spec} A\setminus V(f)$; the sets $D(f)$ form a basis of the topology closed under finite intersections, since $D(f)\cap D(g) = D(fg)$, and the distinguished opens $D(f_i)$ for a family $f_i$ generate the unit ideal cover $\operatorname{Spec} A$.</p>
 <p><strong>Theorem (the structure sheaf).</strong> There is a unique sheaf of commutative rings $\mathcal{O}_X$ on $X = \operatorname{Spec} A$ with $\mathcal{O}_X(D(f)) = A_f$ for every $f\in A$, the restriction $A_f\to A_{fg}$ being the localisation, and the sheaf is characterised by these values on the basis. Its stalks are the local rings</p>
 <p>$$
-\mathcal{O}_{X,\mathrm{P}} = \varinjlim_{f\notin\mathrm{P}}A_f = A_{\mathrm{P}}, \qquad \mathrm{P}\in X,
+\boxed{\;\mathcal{O}_{X,\mathrm{P}} = \varinjlim_{f\notin\mathrm{P}}A_f = A_{\mathrm{P}}, \qquad \mathrm{P}\in X\;},
 $$</p>
 <p>with maximal ideal $\mathrm{P}A_{\mathrm{P}}$ and residue field $\kappa(\mathrm{P}) = A_{\mathrm{P}}/\mathrm{P}A_{\mathrm{P}}$, the fraction field of the domain $A/\mathrm{P}$. Hence $(X,\mathcal{O}_X)$ is a locally ringed space.</p>
 <p><em>Proof.</em> This is the theorem of <em>Sheaves in Algebraic Geometry</em>, where it is proved by the sheaf-on-a-basis criterion of <em>Presheaves and Sheaves</em>: for a cover of $D(f)$ by distinguished opens $D(f_i)$ the sequence $0\to A_f\to\prod_iA_{f_{f_i}}\to\prod_{i,j}A_{f_{f_if_j}}$ is exact, which is the localisation sequence of Part I's <em>Localization and the Fraction Field</em>, and exactness is checked after localising at each prime. The identification of the stalk is the filtered colimit of the $A_f$ over the $f$ outside $\mathrm{P}$.</p>
 <p><strong>Example (the points of a spectrum).</strong> The points of $\operatorname{Spec} A$ are of three kinds with respect to a prime $\mathrm{P}$: the closed point, if $\mathrm{P}$ is maximal, with residue field $A/\mathrm{P}$ a field; the generic point of a one-dimensional subvariety if $\mathrm{P}$ has height one; and the generic point of the whole space if $\mathrm{P} = (0)$ and $A$ is a domain. For $A = k[x]$ with $k$ algebraically closed the points are the maximal ideals $(x-a)$, $a\in k$, and the zero ideal, whose closure is all of $\operatorname{Spec} k[x]$ and whose residue field is $k(x)$; the closed points are dense, so every nonempty open set contains a closed point, and yet the generic point is not closed.</p>
 <p><strong>Theorem (the contravariant equivalence for affine schemes).</strong> The functor $A\mapsto\operatorname{Spec} A$ extends to an equivalence of categories</p>
 <p>$$
-\{\text{commutative rings with } 1\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{affine schemes}\},
+\boxed{\;\{\text{commutative rings with } 1\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{affine schemes}\}\;},
 $$</p>
 <p>under which a ring homomorphism $\varphi : A\to B$ corresponds to the morphism $\operatorname{Spec}\varphi = {}^{a}\varphi : \operatorname{Spec} B\to\operatorname{Spec} A$ with ${}^{a}\varphi(\mathrm{Q}) = \varphi^{-1}(\mathrm{Q})$ and the map on structure sheaves induced by $A_f\to B_{\varphi(f)}$. For every ring $B$ one has</p>
 <p>$$
@@ -113,7 +113,7 @@ $$</p>
 <p><strong>Theorem (fibre products).</strong> Let $f : X\to S$ and $g : Y\to S$ be morphisms of schemes.</p>
 <ol>
 <li>The <strong>fibre product</strong> $X\times_SY$ exists in the category of schemes: a scheme with morphisms $p : X\times_SY\to Y$ and $q : X\times_SY\to X$ making the square commute and universal among such data, with
-   $$\operatorname{Hom}_S(T,X\times_SY)\cong\operatorname{Hom}_S(T,X)\times_{\operatorname{Hom}_S(T,S)}\operatorname{Hom}_S(T,Y)$$
+   $$\boxed{\;\operatorname{Hom}_S(T,X\times_SY)\cong\operatorname{Hom}_S(T,X)\times_{\operatorname{Hom}_S(T,S)}\operatorname{Hom}_S(T,Y)\;}$$
    for every $S$-scheme $T$.</li>
 <li>On affine charts it is computed by the tensor product: if $X = \operatorname{Spec} A$, $Y = \operatorname{Spec} B$, $S = \operatorname{Spec} C$, then $X\times_SY = \operatorname{Spec}(A\otimes_CB)$, and the construction glues over the charts.</li>
 <li>The <strong>fibre</strong> of $f$ over a point $s\in S$, $X_s = X\times_S\operatorname{Spec}\kappa(s)$, is a scheme over the residue field, and the formation of fibres and of fibre products commutes with base change; the fibre product is the categorical form of the intersection of the two families over $S$.</li>

@@ -111,9 +111,9 @@ $$</p>
 <p><em>Proof.</em> For the first pair, $\mathrm{Sc}(\tilde Q_6\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_6)$ by the cyclicity of $\mathrm{Sc}$, which is $\langle L_{\tilde Q_6}\tilde Q_1,\tilde Q_2\rangle=\langle\tilde Q_1,R_{\tilde Q_6}\tilde Q_2\rangle$, and the two-sided formula follows from the reversal of the adjoint of a composite, $(FG)^{\approx}=G^{\approx}F^{\approx}$. For the second, $\mathrm{Sc}((\tilde Q_6\tilde Q_1)^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_6^{\natural}\tilde Q_2)=\langle\tilde Q_1,L_{\tilde Q_6^{\natural}}\tilde Q_2\rangle_{\natural}$, and the factors are <strong>not</strong> reversed because the adjoint of a left multiplication is again a left multiplication; the two-sided formula is $R_{\tilde Q_3^{\natural}}L_{\tilde Q_6^{\natural}}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$. The third is the same computation with the conjugate linear $\ast$ in place of $\natural$. For the fourth, $\mathrm{Sc}((\tilde Q_6\tilde Q_1)^{\natural}\tilde Q_2^{\ast})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_6^{\natural}\tilde Q_2^{\ast})$ and $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_6^{\natural}\tilde Q_2^{\ast})=\mathrm{Sc}(\tilde Q_1^{\natural}(\tilde Q_2\bar{\tilde Q_6})^{\ast})$ by the cyclic property together with $(\tilde Q_2\bar{\tilde Q_6})^{\ast}=\tilde Q_6^{\natural}\tilde Q_2^{\ast}$, so the adjoint of $L_{\tilde Q_6}$ is $R_{\bar{\tilde Q_6}}$; the two-sided formula again reverses. Every identity was verified on the sixteen pairs of basis elements.</p>
 <p><strong>Corollary (the plain adjoint swaps, the signed adjoint conjugates).</strong> The first two lines above read</p>
 <p>$$
-(L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6},
+\boxed{\; (L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6},
 \qquad
-(L_{\tilde Q_6}R_{\tilde Q_3})^{N}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}.
+(L_{\tilde Q_6}R_{\tilde Q_3})^{N}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}} \;}.
 $$</p>
 <p>The associate <strong>reverses the two parameters and leaves them alone</strong>; the $N$-adjoint <strong>keeps the parameters in place and replaces each by its image under the sign $\natural$</strong>. So the word <em>association</em> names a transpose, and it is the suffix of a family exactly when the form of that family is the plain one; the word <em>signed inner conjugation</em> names the adjoint of the $\natural$-form, and no factor is reversed there. The third adjoint conjugates in place with the conjugate linear $\ast$, and the fourth swaps and conjugates.</p>
 <p><strong>Remark (why this answers the naming question).</strong> Each of the four names is the name of an adjoint of one form: $\approx$ is printed as "Association", $\langle\cdot,\cdot\rangle_{\natural}$ as "Signed Inner Conjugation", $\ast$ as "Hermitian Adjoint". The form decides the adjoint, and the adjoint supplies the name. The fourth adjoint above, for the general quaternionic sesquilinear form, is computed for completeness; the biquaternion corpus names that form in the Krein articles and has no separate operator family for it, and the suffix "Signed Hermitian Adjoint" belongs to the Hermitian-algebra layer, where it names the operators with the sign inserted on the <em>same</em> form as the Hermitian family.</p>
@@ -138,7 +138,7 @@ $$</p>
 <p><em>Proof.</em> $\langle(a[\,]b)\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(a\tilde Q_1b\tilde Q_2)$ and the scalar part is invariant under the cyclic permutation of its three factors, $\mathrm{Sc}(a\tilde Q_1b\tilde Q_2)=\mathrm{Sc}(\tilde Q_1b\tilde Q_2a)=\langle\tilde Q_1,(b[\,]a)\tilde Q_2\rangle$; the identity is satisfied by $b[\,]a$ and it is unique by non-degeneracy. The edge rows are the special cases $b=e_t$ and $a=e_t$. The Conway basis is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, §<em>The Conway Operator Basis</em>.</p>
 <p><strong>Proposition (the matrix of the associate).</strong> Let $F$ have matrix $M$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Then the matrix of the associate is</p>
 <p>$$
-M^{\approx}=\mathrm{E}\,M^{\mathsf T}\mathrm{E},
+\boxed{\; M^{\approx}=\mathrm{E}\,M^{\mathsf T}\mathrm{E} \;},
 $$</p>
 <p>the sign matrix $\mathrm{E}$ conjugating the plain transpose.</p>
 <p><em>Proof.</em> Write the form as $\langle\tilde Q_1,\tilde Q_2\rangle=Q_1^{\mathsf T}\mathrm{E}Q_2$ on the coordinate columns. Then $\langle F\tilde Q_1,\tilde Q_2\rangle=(MQ_1)^{\mathsf T}\mathrm{E}Q_2=Q_1^{\mathsf T}M^{\mathsf T}\mathrm{E}Q_2$ and $\langle\tilde Q_1,F^{\approx}\tilde Q_2\rangle=Q_1^{\mathsf T}\mathrm{E}M^{\approx}Q_2$ for all $Q_1,Q_2$, so $M^{\mathsf T}\mathrm{E}=\mathrm{E}M^{\approx}$, that is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$ because $\mathrm{E}^{-1}=\mathrm{E}$.</p>
@@ -207,7 +207,7 @@ $$</p>
 <p>the <strong>unsigned inner conjugation</strong> and the <strong>signed inner conjugation</strong>; the second is the first with the grade involution $\alpha=\natural$ inserted on the left factor, and it is the operator of the general theory of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, where $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$.</p>
 <p><strong>Proposition (the difference is the vector part).</strong> For an invertible $\tilde Q_6$ with scalar part $Q_{6t}$ and vector part $\vec Q_6$,</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q)-\mathrm{Ad}_{\tilde Q_6}(\tilde Q)=\bigl(\tilde Q_6^{\natural}-\tilde Q_6\bigr)\tilde Q\tilde Q_6^{-1}=-2\,\vec Q_6\,\tilde Q\tilde Q_6^{-1},
+\boxed{\; \mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q)-\mathrm{Ad}_{\tilde Q_6}(\tilde Q)=\bigl(\tilde Q_6^{\natural}-\tilde Q_6\bigr)\tilde Q\tilde Q_6^{-1}=-2\,\vec Q_6\,\tilde Q\tilde Q_6^{-1} \;},
 $$</p>
 <p>moreover $\mathrm{Ad}^{\alpha}_{\tilde Q_6}=\mathrm{Ad}_{\tilde Q_6}$ when $\tilde Q_6$ is central, and $\mathrm{Ad}^{\alpha}_{\tilde Q_6}=-\mathrm{Ad}_{\tilde Q_6}$ when $\tilde Q_6$ lies in the vector subspace $V$. The second case is the insertion of the sign at its sharpest: for $\tilde Q_6\in V$ the whole operator is negated.</p>
 <p><em>Proof.</em> The first two displays are the definition, and $\tilde Q_6^{\natural}-\tilde Q_6=-2\vec Q_6$ with $\vec Q_6=\tilde Q_6-Q_{6t}e_t$. If $\vec Q_6=0$ the difference vanishes; if $Q_{6t}=0$ then $\tilde Q_6^{\natural}=-\tilde Q_6$.</p>
@@ -249,11 +249,11 @@ $$</p>
 <p><strong>Corollary (the sign costs multiplicativity).</strong> The unsigned inner conjugation is an algebra automorphism for every unit, $\mathrm{Ad}_{\tilde Q_6}(\tilde Q_1\tilde Q_2)=\mathrm{Ad}_{\tilde Q_6}(\tilde Q_1)\mathrm{Ad}_{\tilde Q_6}(\tilde Q_2)$. The signed inner conjugation with a parameter in $V$ is <strong>anti</strong>-multiplicative, $\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1\tilde Q_2)=-\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1)\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_2)$; both statements were verified on one hundred pairs. This is the concrete cost of the insertion, and it is the reason the signed operators of the corpus are read for their own laws and not as automorphisms.</p>
 <p><strong>Remark (two places for the sign, and the norm reads it).</strong> The corpus inserts the sign on the left factor in $\mathrm{Ad}^{\alpha}$, and it writes the twisted two-sided operator $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, with the sign on the right factor. The two are exchanged by the inverse and by the norm:</p>
 <p>$$
-\Theta_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Ad}_{\tilde Q_6},
+\boxed{\; \Theta_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Ad}_{\tilde Q_6},
 \qquad
 \mathrm{Ad}^{\alpha}_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}\,L_{\tilde Q_6^{-1}}R_{\tilde Q_6^{-1}},
 \qquad
-\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural},
+\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural} \;},
 $$</p>
 <p>verified on one hundred invertible elements. On the shell $\langle\tilde Q_6\rangle_{\natural}=\pm1$ the first line reads $\Theta_{\tilde Q_6}=\pm\mathrm{Ad}_{\tilde Q_6}$: the same operator is the inner automorphism or its negative according to the sign of the norm, which is the second reading of the word <em>signed</em>: the operator $\Theta_{\tilde Q_6}$ is the inner automorphism or its negative according to the sign of the norm, and it is the operator of the family of <em>Two-Sided Operators on the General Quaternionic Algebra</em>, whose old title carried that name before the title was changed to name the subcategory's algebra.</p>
 <h2 id="the-two-switches-math208-and-math209">The Two Switches $\sigma$ and $\alpha$</h2>

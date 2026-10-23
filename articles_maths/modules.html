@@ -77,7 +77,7 @@
 <h2 id="1-definition-of-a-module">1. Definition of a Module</h2>
 <p>A <strong>left $R$-module</strong> is an abelian group $(M,+)$ with a scalar multiplication $R \times M \to M$, $(r,m) \mapsto rm$, such that for all $r,s \in R$ and $m,n \in M$:</p>
 <p>$$
-r(m+n)=rm+rn, \qquad (r+s)m=rm+sm, \qquad (rs)m=r(sm), \qquad 1m=m.
+\boxed{\;r(m+n)=rm+rn, \qquad (r+s)m=rm+sm, \qquad (rs)m=r(sm), \qquad 1m=m\;}.
 $$</p>
 <p>These are axioms (M1)–(M4) of <em>Rings</em> §14, now for a possibly noncommutative $R$. A <strong>right $R$-module</strong> uses $M \times R \to M$, $(m,r) \mapsto mr$, with $(m+n)r=mr+nr$, $m(r+s)=mr+ms$, $m(rs)=(mr)s$, $m1=m$. Over a commutative ring a left module becomes a right module by $mr := rm$, so the two notions coincide. The <strong>zero module</strong> $\{0\}$ has one element.</p>
 <h2 id="2-elementary-properties">2. Elementary Properties</h2>
@@ -163,7 +163,7 @@ $$</p>
 <h2 id="15-the-structure-theorem-for-finitely-generated-modules-over-a-pid">15. The Structure Theorem for Finitely Generated Modules over a PID</h2>
 <p><strong>Structure theorem.</strong> Let $R$ be a principal ideal domain and let $M$ be a finitely generated $R$-module. Then</p>
 <p>$$
-M \cong R^r \oplus R/(d_1) \oplus \cdots \oplus R/(d_k)
+\boxed{\;M \cong R^r \oplus R/(d_1) \oplus \cdots \oplus R/(d_k)\;}
 $$</p>
 <p>for some $r \geq 0$ and nonzero non-units $d_1 \mid d_2 \mid \cdots \mid d_k$ in $R$. The <strong>free rank</strong> $r$ and the <strong>invariant factors</strong> $d_i$ (up to multiplication by units) are uniquely determined by $M$. Thus $M$ is the direct sum of a free module and a torsion module, and the torsion part is a finite direct sum of cyclic torsion modules.</p>
 <p>Applying the Chinese remainder theorem to the prime-power factors of the $d_i$ gives the <strong>elementary divisor form</strong> $M \cong R^r \oplus \bigoplus_i R/(p_i^{e_i})$ with $p_i$ prime and $e_i \geq 1$; the prime powers are unique up to units and reordering. The invariant factors are recovered by grouping, for each prime, the exponents in nondecreasing order.</p>

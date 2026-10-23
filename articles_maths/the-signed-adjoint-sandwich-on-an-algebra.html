@@ -76,7 +76,7 @@
 <h2 id="the-signed-adjoint">The Signed Adjoint</h2>
 <p><strong>Theorem.</strong> With respect to the twisted pairing,</p>
 <p>$$
-\{S_{a,b}x,y\}=\{x,\,S_{\delta(a),\delta(b)}y\}, \qquad \text{that is} \qquad S_{a,b}^{*_\sigma}=S_{\delta(a),\delta(b)} .
+\boxed{\;\{S_{a,b}x,y\}=\{x,\,S_{\delta(a),\delta(b)}y\}, \qquad \text{that is} \qquad S_{a,b}^{*_\sigma}=S_{\delta(a),\delta(b)}\;} .
 $$</p>
 <p>The signed adjoint of a sandwich is the sandwich of the two $\delta$-images, with the order of the parameters <strong>not</strong> reversed, and the assignment $S_{a,b}\mapsto S_{\delta(a),\delta(b)}$ is an involution of the signed sandwich space.</p>
 <p><em>Proof.</em> Compute the left side, $\{S_{a,b}x,y\}=\tau(a\alpha(x)b\,\sigma(y))=\tau(\sigma(y)a\alpha(x)b)$ by cyclicity, and use the $\alpha$-invariance of the trace to write it as $\tau(\alpha(\sigma(y)a\alpha(x)b))=\tau(\alpha\sigma(y)\alpha(a)x\alpha(b))$; by the commutation $\alpha\sigma=\sigma\alpha$ this is $\tau(\sigma(\alpha(y))\alpha(a)x\alpha(b))=\tau(x\alpha(b)\sigma(\alpha(y))\alpha(a))$, again by cyclicity. On the other side, $\{x,S_{\delta(a),\delta(b)}y\}=\tau(x\,\sigma(\delta(a)\alpha(y)\delta(b)))=\tau(x\,\sigma(\delta(b))\sigma(\alpha(y))\sigma(\delta(a)))$, and $\sigma\delta=\sigma\sigma\alpha=\alpha$ gives $\sigma(\delta(a))=\alpha(a)$ and $\sigma(\delta(b))=\alpha(b)$, so this is the same expression. Hence the identity; the order-two property is $\delta^{2}=\mathrm{id}$, and the image is again a signed sandwich, so the signed sandwich space is stable.</p>
@@ -94,7 +94,7 @@ $$</p>
 <h2 id="the-inverse-and-the-composition">The Inverse and the Composition</h2>
 <p><strong>Theorem.</strong> The signed sandwich satisfies the composition rules of <em>The Signed Sandwich on an Algebra</em>,</p>
 <p>$$
-S_{a,b}S_{c,d}=T_{a\alpha(c),\,\alpha(d)b}, \qquad S_{a,b}^{-1}=S_{\alpha(a)^{-1},\,\alpha(b)^{-1}},
+\boxed{\;S_{a,b}S_{c,d}=T_{a\alpha(c),\,\alpha(d)b}, \qquad S_{a,b}^{-1}=S_{\alpha(a)^{-1},\,\alpha(b)^{-1}}\;},
 $$</p>
 <p>and the unsigned sandwich $T_{c,d}$ is the identity exactly when $c$ is a central unit and $d=c^{-1}$.</p>
 <p><em>Proof.</em> The composition and the inverse are read from <em>The Signed Sandwich on an Algebra</em>: the product of two signed sandwiches is an unsigned sandwich, and the sandwich $S_{a,b}=T_{a,b}\alpha$ is invertible exactly when $a$ and $b$ are units. For the identity criterion, $T_{c,d}(x)=cxd=x$ for all $x$ gives $cd=1$ at $x=1$ and then $cx=xc$ for all $x$, that is $c$ central with $d=c^{-1}$; conversely a central $c$ with $d=c^{-1}$ gives $cxc^{-1}=x$.</p>
@@ -120,7 +120,7 @@ $$</p>
 <p><em>Proof.</em> In the general condition $d=\alpha(1)\delta(1)=1$, so $c^{-1}=1$ and $c=1$, that is $\delta(a)\alpha(a)=1$; with $\delta=\sigma\alpha$ and $v=\alpha(a)$ this is $\sigma(v)v=1$, the unitarity of $v$. The full development of the one-sided operator is <em>The Signed Adjoint of the Left Multiplication on an Algebra</em>.</p>
 <p><strong>Corollary (the unitary elements).</strong> The <strong>unitary elements</strong> of the algebra for the anti-automorphism $\delta$ are the units $u$ with</p>
 <p>$$
-u^{*_\sigma}u=uu^{*_\sigma}=1, \qquad u^{*_\sigma}=\delta(u),
+\boxed{\;u^{*_\sigma}u=uu^{*_\sigma}=1, \qquad u^{*_\sigma}=\delta(u)\;},
 $$</p>
 <p>and they form a subgroup of $A^{\times}$; the one-sided signed operators $\Lambda(u)$ with $u$ of this form are unitary, and the signed sandwiches with $a$ and $b$ satisfying the two conditions above are the unitary sandwiches.</p>
 <p><em>Proof.</em> The group statement is <em>Unitary Elements of an Involutive Algebra</em> applied to the involutive algebra $(A,\delta)$; the identification of the unitary one-sided operators is the corollary above with $\delta(u)=u^{-1}$, and the two-sided statement is the theorem.</p>

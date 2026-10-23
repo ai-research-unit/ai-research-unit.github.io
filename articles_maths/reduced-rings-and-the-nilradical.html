@@ -85,7 +85,7 @@
 <p>Nilpotent elements do not change the unit group, and this is the technical reason the nilradical is invisible to much of the arithmetic.</p>
 <p><strong>Proposition.</strong> Let $u \in R$ be a unit and let $x \in R$ be nilpotent. Then $u + x$ is a unit. In particular, if $x^n = 0$ then $1 - x$ is a unit with</p>
 <p>$$
-(1-x)^{-1} = 1 + x + x^2 + \cdots + x^{n-1} .
+\boxed{\;(1-x)^{-1} = 1 + x + x^2 + \cdots + x^{n-1}\;} .
 $$</p>
 <p><strong>Proof.</strong> The displayed identity follows from $(1-x)(1 + x + \cdots + x^{n-1}) = 1 - x^n = 1$; the sum is finite and so needs no convergence. In general $u + x = u\,(1 + u^{-1}x)$, and $u^{-1}x$ is nilpotent since $(u^{-1}x)^n = u^{-n}x^n$.</p>
 <p><strong>Corollary.</strong> Let $\pi : R \to R/\operatorname{nil}(R)$ be the quotient map. Then an element $u \in R$ is a unit if and only if $\pi(u)$ is a unit. In particular $\pi$ induces a surjection $R^{\times} \to (R/\operatorname{nil}(R))^{\times}$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>The nilradical is characterised by the prime ideals, and this is the structural statement that makes reducedness checkable.</p>
 <p><strong>Theorem (Krull).</strong> Let $R$ be a commutative ring with $1 \neq 0$. Then</p>
 <p>$$
-\operatorname{nil}(R) = \bigcap_{\mathrm{P} \in \operatorname{Spec} R} \mathrm{P} = \sqrt{(0)} .
+\boxed{\;\operatorname{nil}(R) = \bigcap_{\mathrm{P} \in \operatorname{Spec} R} \mathrm{P} = \sqrt{(0)}\;} .
 $$</p>
 <p><strong>Proof.</strong> This is the case $I = (0)$ of Krull's theorem in <em>Commutative Rings</em>, where the radical of an ideal is identified with the intersection of the prime ideals containing it; the second identity is the definition of the nilradical as the radical of the zero ideal.</p>
 <p><strong>Corollary.</strong> $R$ is reduced if and only if the intersection of its prime ideals is zero. Every ring has a reduced ring as a quotient, namely $R/\operatorname{nil}(R)$, and $R/\operatorname{nil}(R)$ embeds injectively into a product of integral domains.</p>
@@ -154,7 +154,7 @@ $$</p>
 <p>The prime ideals of $R$ can be used to separate the elements of $R$ from one another, and reducedness says exactly that the separation is complete.</p>
 <p><strong>Theorem.</strong> Let $R$ be a commutative ring with $1 \neq 0$. The map</p>
 <p>$$
-R \longrightarrow \prod_{\mathrm{P} \in \operatorname{Spec} R} R/\mathrm{P}, \qquad r \mapsto (r + \mathrm{P})_{\mathrm{P}},
+\boxed{\;R \longrightarrow \prod_{\mathrm{P} \in \operatorname{Spec} R} R/\mathrm{P}, \qquad r \mapsto (r + \mathrm{P})_{\mathrm{P}}\;},
 $$</p>
 <p>is a ring homomorphism whose kernel is $\operatorname{nil}(R)$. Consequently $R$ is reduced if and only if this map is injective.</p>
 <p><strong>Proof.</strong> The map is the product of the quotient maps $R \to R/\mathrm{P}$, so it is a homomorphism, and an element lies in its kernel exactly when it lies in every prime, that is, when it lies in $\bigcap_{\mathrm{P}} \mathrm{P} = \operatorname{nil}(R)$ by Krull's theorem.</p>

@@ -90,7 +90,7 @@ $$</p>
 <p>The general definition of <em>The Sesquilinear Associator and the Ternary Product</em> is $(x,y,z) \mapsto (x \star y) \star z^{*}$ for a multiplication $\star$ and an involution ${}^{*}$; the definition above is that general one read with the multiplication of this group.</p>
 <p><strong>Proposition (the closed form).</strong> For all biquaternions $\tilde Q_1, \tilde Q_2, \tilde Q_3$,</p>
 <p>$$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \overline{\tilde Q_2}\,\tilde Q_1\,\tilde Q_3 ,
+\boxed{\; \{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \overline{\tilde Q_2}\,\tilde Q_1\,\tilde Q_3 \;},
 $$</p>
 <p>the product on the right being the plain product of the algebra.</p>
 <p><strong>Proof.</strong> Expanding the outer multiplication, $(\tilde Q_1 \star \tilde Q_2) \star \tilde Q_3^{*} = (\tilde Q_1^{\natural}\tilde Q_2^{*})^{\natural}(\tilde Q_3^{*})^{*}$. The first factor is $(\tilde Q_2^{*})^{\natural}(\tilde Q_1^{\natural})^{\natural} = \overline{\tilde Q_2}\,\tilde Q_1$ by the anti-multiplicativity of ${}^{\natural}$ and the identity $(\tilde Q_1^{*})^{\natural} = \overline{\tilde Q_1}$; the second factor is $(\tilde Q_3^{*})^{*} = \tilde Q_3$. Multiplying gives the closed form.</p>
@@ -105,7 +105,7 @@ $$</p>
 <h3 id="the-left-model">The Left Model</h3>
 <p><strong>Proposition (the left model).</strong> Under the relabelling $x = \tilde Q_2^{\natural}$, $y = \tilde Q_1$, $z = \tilde Q_3$, the ternary product is</p>
 <p>$$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = x^{*}\,y\,z ,
+\boxed{\; \{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = x^{*}\,y\,z \;},
 $$</p>
 <p>the <strong>left model</strong> of <em>Algebraic J*-Algebras</em>, the product of the algebra with its conjugate-linear involution inserted in the first slot.</p>
 <p><strong>Proof.</strong> The relabelling uses $\overline{\tilde Q_2} = (\tilde Q_2^{\natural})^{*}$, which is the identity $\overline{\tilde Q_2} = \tilde Q_2^{\natural *}$ read on the coordinates; substituting, $\overline{\tilde Q_2}\tilde Q_1\tilde Q_3 = x^{*}yz$.</p>
@@ -199,7 +199,7 @@ $$</p>
 <h3 id="the-operator-form-of-the-failure">The Operator Form of the Failure</h3>
 <p><strong>Proposition (the operator form).</strong> Let $\Theta_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$ be the linear operator of the pair $(\tilde Q_1,\tilde Q_2)$, and let $\tilde Q_5,\tilde S,\tilde W\in\mathbb{B}$ be arbitrary. The Jordan triple identity is equivalent to the operator identity</p>
 <p>$$
-[\Theta_{\tilde Q_1,\tilde Q_2},\Theta_{\tilde Q_5,\tilde S}] = \Theta_{\{\tilde Q_1,\tilde Q_2,\tilde Q_5\},\tilde S} - \Theta_{\tilde Q_5,\{\tilde Q_2,\tilde Q_1,\tilde S\}} ,
+\boxed{\; [\Theta_{\tilde Q_1,\tilde Q_2},\Theta_{\tilde Q_5,\tilde S}] = \Theta_{\{\tilde Q_1,\tilde Q_2,\tilde Q_5\},\tilde S} - \Theta_{\tilde Q_5,\{\tilde Q_2,\tilde Q_1,\tilde S\}} \;},
 $$</p>
 <p>the bracket being the commutator in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and for the multiplication of this group the operator identity fails: at $\tilde Q_1=\tilde Q_5=\tilde W=e_t$, $\tilde Q_2=\vec e_x$ and $\tilde S=\vec e_y$, the left-hand side applied to $\tilde W$ is $2\vec e_z$ while the right-hand side applied to $\tilde W$ is $-2\vec e_z$.</p>
 <p><strong>Proof.</strong> Expanding the two compositions at an argument $\tilde W$ gives $\Theta_{\tilde Q_1,\tilde Q_2}\Theta_{\tilde Q_5,\tilde S}(\tilde W) = \{\tilde Q_1,\tilde Q_2,\{\tilde Q_5,\tilde S,\tilde W\}\}$ and $\Theta_{\tilde Q_5,\tilde S}\Theta_{\tilde Q_1,\tilde Q_2}(\tilde W) = \{\tilde Q_5,\tilde S,\{\tilde Q_1,\tilde Q_2,\tilde W\}\}$, so the commutator is the difference of the two sides of the Jordan triple identity after the standard rearrangement, which is the equivalence of <em>The Ternary Product as an Operator</em> §<em>The Bracket and the Lie Triple System</em>. At the displayed arguments, $\Theta_{\tilde Q_5,\tilde S}(\tilde W) = \{e_t,\vec e_y,e_t\} = \vec e_y$ and $\Theta_{\tilde Q_1,\tilde Q_2}(\tilde W) = \{e_t,\vec e_x,e_t\} = \vec e_x$, so the left-hand side applied to $\tilde W$ is $\{e_t,\vec e_x,\vec e_y\} - \{e_t,\vec e_y,\vec e_x\} = \vec e_z - (-\vec e_z) = 2\vec e_z$; and $\{\tilde Q_1,\tilde Q_2,\tilde Q_5\} = \{e_t,\vec e_x,e_t\} = \vec e_x$ with $\{\tilde Q_2,\tilde Q_1,\tilde S\} = \{\vec e_x,e_t,\vec e_y\} = \vec e_z$ give the right-hand side applied to $\tilde W$ as $\{\vec e_x,\vec e_y,e_t\} - \{e_t,\vec e_z,e_t\} = -\vec e_z - \vec e_z = -2\vec e_z$.</p>

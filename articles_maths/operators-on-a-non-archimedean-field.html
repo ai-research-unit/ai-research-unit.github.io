@@ -76,7 +76,7 @@
 <h2 id="the-bounded-operators-and-the-operator-norm">The Bounded Operators and the Operator Norm</h2>
 <p><strong>Definition.</strong> An additive operator $T : F \to F$ is <strong>bounded</strong> if the set $\{\lvert Tx \rvert : \lvert x \rvert \leq 1\}$ is bounded above in $\mathbb{R}$, and the <strong>operator norm</strong> of a bounded $T$ is</p>
 <p>$$
-\lVert T\rVert = \sup_{\lvert x \rvert \leq 1} \lvert Tx \rvert .
+\boxed{\;\lVert T\rVert = \sup_{\lvert x \rvert \leq 1} \lvert Tx \rvert\;} .
 $$</p>
 <p><strong>Proposition (bounded is continuous).</strong> For an additive operator $T$, the following are equivalent: $T$ is bounded; $T$ is uniformly continuous; $T$ is continuous at $0$; there is a constant $C$ with $\lvert Tx \rvert \leq C\lvert x \rvert$ for all $x$. The least such $C$ is the operator norm, and the operator norm is a norm on the space of bounded operators, submultiplicative under composition.</p>
 <p><strong>Proof.</strong> Boundedness gives the estimate on the unit ball and hence, by scaling, everywhere; an estimate gives continuity at $0$ and therefore, additivity being compatible with the uniform structure, uniform continuity; continuity at $0$ gives a ball $B(0,\rho)$ mapped into $B(0,1)$, whence the estimate with $C = \rho^{-1}$ after scaling. The norm axioms are checked termwise; submultiplicativity is $\lvert(ST)x\rvert \leq \lVert S\rVert\lvert Tx\rvert \leq \lVert S\rVert\lVert T\rVert\lvert x\rvert$ for the least constant.</p>
@@ -86,7 +86,7 @@ $$</p>
 <p><strong>Definition.</strong> A bounded operator $T$ is <strong>contractive</strong> if $\lVert T\rVert \leq 1$, equivalently $T(\mathcal{O}) \subseteq \mathcal{O}$; it is <strong>infinitesimal</strong> if $\lVert T\rVert < 1$, equivalently $T(\mathcal{O}) \subseteq \mathrm{M}$. The contractive operators form a subring $\mathcal{B}_1$ of the ring $\mathcal{B}$ of bounded operators, with the identity as unit, and the infinitesimal operators form a two-sided ideal of $\mathcal{B}_1$.</p>
 <p><strong>Proposition (contractive operators and the filtration).</strong> For a bounded $T$,</p>
 <p>$$
-\lVert T\rVert \leq 1 \iff T(\mathcal{O}) \subseteq \mathcal{O}, \qquad \lVert T\rVert < 1 \iff T(\mathcal{O}) \subseteq \mathrm{M} .
+\boxed{\;\lVert T\rVert \leq 1 \iff T(\mathcal{O}) \subseteq \mathcal{O}, \qquad \lVert T\rVert < 1 \iff T(\mathcal{O}) \subseteq \mathrm{M}\;} .
 $$</p>
 <p>Consequently an infinitesimal operator satisfies $T(\mathrm{M}) \subseteq \mathrm{M}$ and has zero residual operator; a general contractive operator has a residual operator as soon as $T(\mathrm{M}) \subseteq \mathrm{M}$, which holds when $T$ is multiplicative, when $T$ is a scalar multiplication $x \mapsto cx$ with $c$ a unit, and more generally when $T$ carries the open unit ball into itself.</p>
 <p><strong>Proof.</strong> The equivalence of $\lVert T\rVert \leq 1$ with $T(\mathcal{O}) \subseteq \mathcal{O}$ is the definition of the operator norm as a supremum; the second equivalence is the same statement with a strict bound, since $\lVert T\rVert < 1$ means $\lvert Tx\rvert < 1$ for all $x$ of $\lvert x\rvert \leq 1$. An infinitesimal operator therefore carries $\mathcal{O}$ into $\mathrm{M}$, hence $\mathrm{M}$ into $\mathrm{M}$, and its residual operator is zero. A multiplicative operator carries $\mathrm{M}$ into $\mathrm{M}$ because the product of an element of $\mathrm{M}$ with any element of $\mathcal{O}$ lies in $\mathrm{M}$; a scalar multiplication by a unit reverses $\mathcal{O}$ and $\mathrm{M}$ onto themselves.</p>

@@ -76,7 +76,7 @@
 <h2 id="the-reduction">The Reduction</h2>
 <p><strong>Definition.</strong> The <strong>residue map</strong> of the valued field $(F, \lvert \cdot \rvert)$ is the quotient map</p>
 <p>$$
-\mathrm{res} : \mathcal{O} \longrightarrow k = \mathcal{O}/\mathrm{M}, \qquad \mathrm{res}(x) = x + \mathrm{M} .
+\boxed{\;\mathrm{res} : \mathcal{O} \longrightarrow k = \mathcal{O}/\mathrm{M}, \qquad \mathrm{res}(x) = x + \mathrm{M}\;} .
 $$</p>
 <p>The element $\mathrm{res}(x)$ is the <strong>residue</strong> of $x$; the operator $\mathrm{res}$ is also called the <strong>reduction</strong> modulo $\mathrm{M}$, and written $x \mapsto \bar x$.</p>
 <p><strong>Proposition (it is a ring homomorphism).</strong> The residue map is a surjective ring homomorphism with kernel $\mathrm{M}$; it carries $1$ to $1$, it is additive and multiplicative, and it is the unique ring homomorphism from $\mathcal{O}$ onto $k$ with kernel $\mathrm{M}$.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="the-residue-operator-and-the-completion">The Residue Operator and the Completion</h2>
 <p><strong>Theorem (the residue operator of the completion).</strong> Let $\widehat{F}$ be the completion of $F$. Then $\widehat{\mathcal{O}}$ is the valuation ring of $\widehat{F}$ and the natural map</p>
 <p>$$
-\mathcal{O}/\mathrm{M} \longrightarrow \widehat{\mathcal{O}}/\widehat{\mathrm{M}}, \qquad x + \mathrm{M} \longmapsto \iota(x) + \widehat{\mathrm{M}} ,
+\boxed{\;\mathcal{O}/\mathrm{M} \longrightarrow \widehat{\mathcal{O}}/\widehat{\mathrm{M}}, \qquad x + \mathrm{M} \longmapsto \iota(x) + \widehat{\mathrm{M}}\;} ,
 $$</p>
 <p>is an isomorphism; hence the residue map of the completion has the same residue field as the residue map of $F$, and the two operators are related by $\mathrm{res}_{\widehat{F}} \circ \iota = \mathrm{res}_F$ on $\mathcal{O}$.</p>
 <p><strong>Proof.</strong> The completion of a non-Archimedean valued field preserves the value group and the residue field, which is the standard theorem of <em>Absolute Values, Valuations and Completions</em>; the natural map is a ring homomorphism and is bijective by that theorem. The identity of the two reductions is then the commutativity of the square defining the map on classes.</p>
@@ -104,7 +104,7 @@ $$</p>
 <h2 id="the-multiplicative-residue">The Multiplicative Residue</h2>
 <p><strong>Proposition (the residue is multiplicative on the units).</strong> The restriction $\mathrm{res} : \mathcal{O}^\times \to k^\times$ is a surjective group homomorphism with kernel the <strong>principal units</strong> $U^1 = 1 + \mathrm{M}$, so that</p>
 <p>$$
-\mathcal{O}^\times / (1 + \mathrm{M}) \cong k^\times .
+\boxed{\;\mathcal{O}^\times / (1 + \mathrm{M}) \cong k^\times\;} .
 $$</p>
 <p><strong>Proof.</strong> A unit of $\mathcal{O}$ has nonzero residue and a nonzero residue has a unit preimage, because reduction is surjective and the units of a local ring are the elements of nonzero residue; the kernel is the set of units congruent to $1$ modulo $\mathrm{M}$, namely $1 + \mathrm{M}$. The first isomorphism theorem for groups gives the isomorphism.</p>
 <p><strong>Corollary (the two parts of the residue operator).</strong> The residue map splits the study of $\mathcal{O}$ into an additive part, in which it is the quotient by the maximal ideal, and a multiplicative part, in which it exhibits $k^\times$ as the quotient of the units by the principal units. The filtration $U^n = 1 + \mathrm{M}^n$ of the principal units and its quotients $U^n/U^{n+1} \cong k^+$ are the structure of the multiplicative group of a local field and belong to <em>Local Fields</em>.</p>

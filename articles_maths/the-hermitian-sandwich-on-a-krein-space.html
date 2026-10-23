@@ -85,7 +85,7 @@ H_{Q}(T) = Q\,T\,Q^{\dagger} , \qquad Q^{\dagger} = JQ^{*}J .
 $$</p>
 <p><strong>Proposition (adjoint and composition laws).</strong> For all bounded $Q, S, T$,</p>
 <p>$$
-H_{Q}(T)^{\dagger} = H_{Q}(T^{\dagger}) , \qquad H_{Q}(H_{S}(T)) = H_{QS}(T) , \qquad H_{Q}(ST) = H_{Q}(S)H_{Q}(T) \text{ if } Q^{\dagger}Q = 1 .
+\boxed{\;H_{Q}(T)^{\dagger} = H_{Q}(T^{\dagger}) , \qquad H_{Q}(H_{S}(T)) = H_{QS}(T) , \qquad H_{Q}(ST) = H_{Q}(S)H_{Q}(T) \text{ if } Q^{\dagger}Q = 1\;} .
 $$</p>
 <p><strong>Proof.</strong> $(QTQ^{\dagger})^{\dagger} = Q^{\dagger\dagger}T^{\dagger}Q^{\dagger} = QT^{\dagger}Q^{\dagger}$; the composition is associativity; the multiplicativity uses $Q^{\dagger}Q = 1$ to cancel the middle pair.</p>
 <p><strong>Proposition (the parameter rule).</strong> For a scalar $\alpha$ one has $H_{\alpha Q}(T) = |\alpha|^{2}H_{Q}(T)$; the sandwich is a semilinear, homogeneous quadratic operation in the parameter and linear in the argument.</p>
@@ -94,7 +94,7 @@ $$</p>
 <h2 id="preservation-of-the-form-and-of-j-positivity">Preservation of the Form and of J-Positivity</h2>
 <p><strong>Theorem (form preservation by $J$-unitary parameters).</strong> Let $Q$ be $J$-unitary, $Q^{\dagger}Q = QQ^{\dagger} = 1$. Then for every $T$ and all $x, y$</p>
 <p>$$
-[H_{Q}(T)x, H_{Q}(T)y] = [TQ^{\dagger}x, TQ^{\dagger}y] , \qquad [H_{Q}(T)x,y] = [TQ^{\dagger}x, Q^{\dagger}y] ,
+\boxed{\;[H_{Q}(T)x, H_{Q}(T)y] = [TQ^{\dagger}x, TQ^{\dagger}y] , \qquad [H_{Q}(T)x,y] = [TQ^{\dagger}x, Q^{\dagger}y]\;} ,
 $$</p>
 <p>and $H_{Q}(T)$ is $J$-isometric whenever $T$ is; in particular the $J$-unitary group acts on the operators by sandwiches preserving the indefinite geometry.</p>
 <p><strong>Proof.</strong> The elementary rule is $[Qx,y] = [x,Q^{\dagger}y]$, which follows from $[x,y] = \langle Jx,y\rangle$ and $(Qx,y) = (x,Q^{*}y)$. With $x$ replaced by $TQ^{\dagger}x$ it gives $[QTQ^{\dagger}x,y] = [TQ^{\dagger}x,Q^{\dagger}y]$, the second identity; the first follows by applying the rule once more with $y$ replaced by $H_{Q}(T)y$. If $T$ is $J$-isometric then $[TQ^{\dagger}x,TQ^{\dagger}y] = [Q^{\dagger}x,Q^{\dagger}y]$, and $Q^{\dagger}$ is $J$-unitary with $Q$, so this is $[x,y]$.</p>
@@ -105,7 +105,7 @@ $$</p>
 <h2 id="the-kernel-and-the-image">The Kernel and the Image</h2>
 <p><strong>Theorem (kernel and image for invertible parameters).</strong> Let $Q$ be invertible. Then for every $T$</p>
 <p>$$
-\ker H_{Q}(T) = Q^{\dagger-1}\bigl(\ker T\bigr) = (Q^{\dagger})^{-1}\ker T , \qquad \mathrm{im}\,H_{Q}(T) = Q\bigl(\mathrm{im}\,T\bigr) ,
+\boxed{\;\ker H_{Q}(T) = Q^{\dagger-1}\bigl(\ker T\bigr) = (Q^{\dagger})^{-1}\ker T , \qquad \mathrm{im}\,H_{Q}(T) = Q\bigl(\mathrm{im}\,T\bigr)\;} ,
 $$</p>
 <p>and for $J$-unitary $Q$ these read $\ker H_{Q}(T) = Q\ker T$ and $\mathrm{im}\,H_{Q}(T) = Q\,\mathrm{im}\,T$.</p>
 <p><strong>Proof.</strong> $QTQ^{\dagger}x = 0 \iff TQ^{\dagger}x = 0$, so $x\in\ker H_Q(T) \iff Q^{\dagger}x\in\ker T$; the image statement is the same computation with the roles reversed, and $Q$ maps the image of $T$ onto the image of the sandwich.</p>

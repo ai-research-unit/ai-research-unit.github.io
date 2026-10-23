@@ -100,7 +100,7 @@ $$</p>
 <h3 id="the-coding-map-and-the-invariance-equation">The Coding Map and the Invariance Equation</h3>
 <p><strong>Definition.</strong> Let $S_1,\dots,S_m$ be a self-similar iterated function system of ratios $r_i$ on a complete metric space, with attractor $\Lambda$, satisfying the open set condition of <em>Fractal Geometry</em> (the maps are written $f_i$ there). Let $p=(p_1,\dots,p_m)$ be a probability vector. A Borel probability measure $\mu$ on $\Lambda$ is <strong>self-similar</strong> with weights $p$ if</p>
 <p>$$
-\mu=\sum_{i=1}^m p_i\,\mu\circ S_i^{-1},
+\boxed{\;\mu=\sum_{i=1}^m p_i\,\mu\circ S_i^{-1}\;},
 $$</p>
 <p>that is, $\mu(A)=\sum_i p_i\,\mu(S_i^{-1}A)$ for every Borel $A$.</p>
 <p><strong>Theorem (existence and uniqueness).</strong> There is exactly one Borel probability measure $\mu_p$ on $\Lambda$ satisfying the invariance equation, and it is the pushforward of the Bernoulli measure by the coding map.</p>
@@ -115,7 +115,7 @@ $$</p>
 <p>when the limit exists; the <strong>dimension of the measure</strong> is $\dim_H\mu=\sup\{\alpha : \alpha(x)\ge\alpha\ \text{for }\mu\text{-a.e. }x\}$, equivalently the essential supremum of the local dimension.</p>
 <p><strong>Theorem (the exact dimension).</strong> Let the system be self-similar with ratios $r_i$ satisfying the open set condition, and let $p$ be a probability vector. Then the local dimension of $\mu_p$ exists and is constant $\mu_p$-almost everywhere, and</p>
 <p>$$
-\dim_H\mu_p=\alpha=\frac{H(p)}{\chi}, \qquad H(p)=-\sum_i p_i\log p_i, \qquad \chi=\sum_i p_i\log\frac1{r_i}.
+\boxed{\;\dim_H\mu_p=\alpha=\frac{H(p)}{\chi}, \qquad H(p)=-\sum_i p_i\log p_i, \qquad \chi=\sum_i p_i\log\frac1{r_i}\;}.
 $$</p>
 <p><em>Proof sketch.</em> The ball $B(\pi(\xi),\rho)$ with $r_{\xi_1}\cdots r_{\xi_{n+1}}\le\rho<r_{\xi_1}\cdots r_{\xi_n}$ contains the piece $S_{\xi_1}\cdots S_{\xi_{n+1}}\Lambda$ and is contained in a bounded number of pieces at the level $n$, so $\mu(B(\pi(\xi),\rho))\asymp p_{\xi_1}\cdots p_{\xi_n}$ and $\log\rho\approx-\sum_{i\le n}\log(1/r_{\xi_i})$. The numerator is $-\sum_{i\le n}\log p_{\xi_i}$ and the denominator is $\sum_{i\le n}\log(1/r_{\xi_i})$; both are Birkhoff sums of the shift, and the Shannon–McMillan–Breiman theorem of <em>Ergodic Theory</em> gives the ratio of the means. The constants are $H(p)/\chi$.</p>
 <p><strong>Corollary (the measure of maximal dimension).</strong> If $s$ solves $\sum_i r_i^s=1$ and $p_i=r_i^s$, then $\dim_H\mu_p=s=\dim_H\Lambda$ and $\mu_p$ is, up to normalisation, the restriction of the Hausdorff measure $\mathcal{H}^s$ to $\Lambda$. If $s<\dim_H\Lambda$ then $s<H(p)/\chi$.</p>
@@ -129,7 +129,7 @@ $$</p>
 <p><em>Proof.</em> The group acts by automorphisms of the tree, permuting at each level the $d^n$ words, so it preserves the masses $d^{-n}$ and hence $\nu$; uniqueness is the level-transitivity. The coding map $\pi$ is equivariant for the shift, so $\mu=\pi_*\nu$ is $s$-invariant. For the tiles: the tile $T_{xv}$ is a subset of $T_v$ of half the $\mu$-mass because $\nu[xv]=d^{-1}\nu[v]$, and the shift collapses the $d$ sub-tiles of $T_v$ onto $T_v$ with equal mass.</p>
 <p><strong>Corollary (the measure-preserving property).</strong> The shift $s$ preserves $\mu$, and its inverse branches $\sigma_x:\mathcal{J}_G\to T_x$, $s\circ\sigma_x=\mathrm{id}$, satisfy $\mu\circ\sigma_x^{-1}=\mu$ restricted to $T_x$ with weight $d^{-1}$: for every Borel $A$,</p>
 <p>$$
-\mu(s^{-1}A)=\sum_{x\in X}\mu(\sigma_x^{-1}(A\cap T_x))=\mu(A).
+\boxed{\;\mu(s^{-1}A)=\sum_{x\in X}\mu(\sigma_x^{-1}(A\cap T_x))=\mu(A)\;}.
 $$</p>
 <p><em>Proof.</em> The preimage $s^{-1}A$ is the disjoint union of the $d$ sets $\sigma_x(A\cap T_x)$, each of mass $d^{-1}\mu(A\cap T_x)$ by the theorem, and the sum is $\mu(A)$ as $\{T_x\}$ partitions $\mathcal{J}_G$.</p>
 <h3 id="the-transport-of-the-tiles-and-the-general-weights">The Transport of the Tiles and the General Weights</h3>

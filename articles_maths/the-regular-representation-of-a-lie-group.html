@@ -90,7 +90,7 @@ $$</p>
 <p>sending $X$ to the left-invariant vector field $X^{\mathrm{lift}}$ of <em>Operators on a Lie Group</em>; it is a representation of the Lie algebra by derivations of $C^\infty(G)$, $[X^{\mathrm{lift}}, Y^{\mathrm{lift}}] = [X,Y]^{\mathrm{lift}}$.</p>
 <p><strong>Theorem (the derived representation is the derivative of the regular representation).</strong> For $X \in \mathrm{G}$ and $f \in C^\infty(G)$,</p>
 <p>$$
-X^{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} L_{\exp(tX)}f .
+\boxed{\;X^{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} L_{\exp(tX)}f\;} .
 $$</p>
 <p>Hence the derived representation of the left regular representation is the representation by the left-invariant fields, and the right regular representation has the derived representation $X \mapsto -{X^{\mathrm{lift}}}^{R}$, where ${X^{\mathrm{lift}}}^{R}$ is the right-invariant field equal to $X$ at the identity.</p>
 <p><em>Proof.</em> The value is $\frac{d}{dt}\big|_{t=0} f(\exp(-tX)x)$, which is the definition of the left-invariant field. The right statement is the same computation with $R_{\exp(tX)}$ and the right-trivialisation, the sign being that of the inverse in the flow.</p>
@@ -108,7 +108,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>two-sided action</strong> of $\mathrm{U}(\mathrm{G})\otimes \mathrm{U}(\mathrm{G})$ on $C^\infty(G)$ is the extension of $(X,Y)\mapsto X^{\mathrm{lift}} - {Y^{\mathrm{lift}}}^{R}$, sending $u\otimes v$ to the operator $u^{\mathrm{lift}}\,{v^{\mathrm{lift}}}^{R}$; it is an algebra homomorphism from $\mathrm{U}(\mathrm{G})\otimes \mathrm{U}(\mathrm{G})$ to $\operatorname{End}_\mathbb{C}(C^\infty(G))$.</p>
 <p><strong>Theorem (the bi-invariant operators are the invariants).</strong> An operator $D \in \operatorname{End}_\mathbb{C}(C^\infty(G))$ commutes with every left and every right translation if and only if it lies in the image of the centre $Z(\mathrm{U}(\mathrm{G}))$,</p>
 <p>$$
-D_L(G)\cap D_R(G) = Z^{\mathrm{lift}}(\mathrm{U}(\mathrm{G})) .
+\boxed{\;D_L(G)\cap D_R(G) = Z^{\mathrm{lift}}(\mathrm{U}(\mathrm{G}))\;} .
 $$</p>
 <p><em>Proof.</em> This is the identification of the bi-invariant differential operators with the centre of the enveloping algebra from <em>Operators on a Lie Group</em>, restated as the statement that the operators fixed by the two-sided action are the elements of the centre. An operator commuting with all translations is in particular left-invariant and right-invariant, hence bi-invariant; the converse is the centrality.</p>
 <h3 id="the-comparison-with-the-group-algebra">The Comparison with the Group Algebra</h3>
@@ -118,7 +118,7 @@ $$</p>
 <h3 id="the-peter-weyl-decomposition">The Peter--Weyl Decomposition</h3>
 <p><strong>Theorem (Peter--Weyl).</strong> Let $G$ be compact. The left regular representation on $L^2(G)$ decomposes as the Hilbert direct sum</p>
 <p>$$
-L^2(G) = \bigoplus_{\pi\in\widehat{G}} V_\pi\otimes V_\pi^{*},
+\boxed{\;L^2(G) = \bigoplus_{\pi\in\widehat{G}} V_\pi\otimes V_\pi^{*}\;},
 $$</p>
 <p>over the set $\widehat{G}$ of equivalence classes of irreducible unitary representations, each occurring with multiplicity its dimension; the matrix coefficients $\pi\mapsto \langle \pi(g)v,w\rangle$ span a dense subspace. The decomposition is stated and proved in <em>Unitary Representations of a Lie Group</em> and in <em>Harmonic Analysis on Groups</em>; the operator-theoretic content is that the regular representation is the direct integral of the irreducible unitary representations.</p>
 <p><em>Proof (statement).</em> The proof is by the spectral theorem for the compact self-adjoint convolution operators, which is the analysis of <em>Harmonic Analysis on Groups</em>; the operator layer uses only the decomposition, and the Casimir operator of <em>The Casimir Operator of a Lie Group</em> acts on each summand by the scalar attached to $\pi$.</p>

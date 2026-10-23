@@ -94,7 +94,7 @@ $$</p>
 <h3 id="the-induced-topology">The Induced Topology</h3>
 <p><strong>Theorem.</strong> Let $(X, \delta)$ be a proximity space and define, for $A \subseteq X$,
 $$
-\operatorname{cl}_\delta(A) = \{ x \in X : \{x\} \delta A \} .
+\boxed{\;\operatorname{cl}_\delta(A) = \{ x \in X : \{x\} \delta A \}\;} .
 $$
 Then $\operatorname{cl}_\delta$ is a Kuratowski closure operator, so it is the closure operator of a topology on $X$, the <strong>topology induced by the proximity</strong>.</p>
 <p><strong>Proof.</strong> One checks the four axioms. $A \subseteq \operatorname{cl}_\delta(A)$ by (P3). Monotonicity follows from (P4): if $A \subseteq B$ then $B = A \cup B$, so $A \delta E$ implies $B \delta E$. Idempotence uses the Efremovič axiom: if $x \in \operatorname{cl}_\delta(\operatorname{cl}_\delta(A))$ and $x \notin \operatorname{cl}_\delta(A)$, then $\{x\} \bar\delta A$, so there is $E$ with $\{x\} \bar\delta E$ and $A \bar\delta (X \setminus E)$; the second says $\operatorname{cl}_\delta(A) \subseteq E$, so $\{x\} \delta \operatorname{cl}_\delta(A)$ contradicts $\{x\} \bar\delta E$. Additivity $\operatorname{cl}_\delta(A \cup B) = \operatorname{cl}_\delta(A) \cup \operatorname{cl}_\delta(B)$ is (P4). Finally $\operatorname{cl}_\delta(\emptyset) = \emptyset$ by (P2).</p>
@@ -149,7 +149,7 @@ An <strong>entourage</strong> is a subset $U \subseteq X \times X$ containing th
 <p><strong>Definition.</strong> A proximity is <strong>totally bounded</strong> if it is induced by a totally bounded uniformity, equivalently if the finest uniformity inducing it is totally bounded.</p>
 <p><strong>Theorem (Smirnov).</strong> Let $X$ be a completely regular Hausdorff space. There is a bijective correspondence, up to equivalence, between the compactifications of $X$ and the totally bounded proximities on $X$: to a compactification $\gamma X$ one assigns the proximity
 $$
-A \delta_\gamma B \iff \operatorname{cl}_{\gamma X}(A) \cap \operatorname{cl}_{\gamma X}(B) \neq \emptyset ,
+\boxed{\;A \delta_\gamma B \iff \operatorname{cl}_{\gamma X}(A) \cap \operatorname{cl}_{\gamma X}(B) \neq \emptyset\;} ,
 $$
 and to a totally bounded proximity one assigns its completion, which is compact. Under this correspondence, finer proximities correspond to larger compactifications, the Čech–Stone proximity corresponds to $\beta X$, and the one-point compactification of a locally compact space corresponds to the coarsest totally bounded proximity.</p>
 <p>The proof is due to Smirnov and is the proximity-theoretic form of the classification of the compactifications of a completely regular space; the completion of the totally bounded uniform space is compact by the theorem on total boundedness and completeness in <em>Metric, Uniform and Complete Spaces</em>, and the nearness relation extends to the completion.</p>

@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Proof.</strong> The central slice is the image of the classical sets under the isometry $A\mapsto Ae_t$ of the Euclidean plane onto the centre (<em>The Slices of the Biquaternion Julia Sets</em>), and the quaternion slice is the classical quaternion picture; Hausdorff dimension is invariant under isometries.</p>
 <p><strong>Theorem (the dimension of a product slice).</strong> Let $\tilde\Pi$ be a primitive idempotent and $\tilde Q_1=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in the idempotent plane $W_{\tilde\Pi}$. Then</p>
 <p>$$
-\dim_H\bigl(J_{\tilde Q_1}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr),
+\boxed{\;\dim_H\bigl(J_{\tilde Q_1}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr)\;},
 $$</p>
 <p>the maximum of the two products of a boundary and a filled Julia set; when a factor has empty interior its boundary and its filled set coincide and the corresponding terms agree.</p>
 <p><strong>Proof.</strong> The slice is the boundary of the product, $J_{\tilde Q_1}\cap W_{\tilde\Pi}=\partial(K_{C_1}\times K_{C_2})=(J_{C_1}\times K_{C_2})\cup(K_{C_1}\times J_{C_2})$ (<em>The Idempotent Decomposition and the Split Fractal</em>). For a product of two sets in Euclidean spaces the Hausdorff dimension satisfies $\dim_H(A\times B)=\dim_H A+\dim_H B$ when one of the factors is sufficiently regular, in particular for the Julia sets and the filled Julia sets of the quadratic family (<em>Fractal Geometry</em>, §<em>Products and the Dimension Formula</em>); applying it to the two products of the displayed union and taking the maximum gives the value.</p>
@@ -91,7 +91,7 @@ $$</p>
 <h2 id="the-parameter-zero">The Parameter Zero</h2>
 <p><strong>Theorem (the dimension at the parameter zero).</strong> For $\tilde Q_1=0$,</p>
 <p>$$
-\dim_H\mathcal K_0=8, \qquad \dim_H J_0=7 .
+\boxed{\;\dim_H\mathcal K_0=8, \qquad \dim_H J_0=7\;}.
 $$</p>
 <p>Moreover $J_0$ contains the idempotent manifold, a real four-dimensional smooth manifold, so $\dim_H\bigl(J_0\cap\mathscr{Z}\bigr)\ge4$.</p>
 <p><strong>Proof.</strong> $\mathcal K_0$ contains the open set $\{\rho(\mathsf{M}_2(\tilde Q))<1\}$, because the orbit of a matrix of spectral radius below one tends to zero (<em>The Biquaternion Quadratic Map and Its Julia Sets</em>, §<em>The Central Parameter and the Eigenvalue Reduction</em>), so $\dim_H\mathcal K_0=8$. The Julia set is $J_0=\{\rho(\mathsf{M}_2(\tilde Q))=1\}$: the filled set $\mathcal K_0$ has closure $\{\rho\le1\}$ and interior $\{\rho<1\}$ — the matrices of spectral radius one that are not diagonalisable lie outside $\mathcal K_0$ but are limits of diagonalisable ones — so its boundary is the level set $\{\rho=1\}$. That level set is a semialgebraic set of real dimension seven: on the open dense set where exactly one eigenvalue has modulus one (or the two are distinct), $\rho$ is real-analytic with non-vanishing differential and the level set is a real hypersurface, and a semialgebraic set has Hausdorff dimension equal to its real dimension. The idempotent manifold is contained in $J_0$ and has real dimension four (<em>The Zero Divisors and the Singular Julia Sets</em>).</p>
@@ -103,7 +103,7 @@ $$</p>
 <li>If the complex filled Julia set has dimension $\alpha$, then</li>
 </ol>
 <p>$$
-\dim_H\mathcal K_{Ce_t}\le4+2\alpha .
+\boxed{\;\dim_H\mathcal K_{Ce_t}\le4+2\alpha\;}.
 $$</p>
 <p><strong>Proof.</strong> (1) For $C$ in the interior of the Mandelbrot set the origin is in the interior of the complex filled Julia set, and the set of matrices whose eigenvalues lie in a disc about the origin contained in $K_C$ is an open neighbourhood of $0$ in $\mathcal K_{Ce_t}$; hence the set is full-dimensional. (2) A matrix in $\mathcal K_{Ce_t}$ with distinct eigenvalues $\lambda_1\neq\lambda_2$ is $S\operatorname{diag}(\lambda_1,\lambda_2)S^{-1}$. Fix the unordered pair of eigenvalues in $K_C$: the conjugates of the diagonal matrix form the conjugacy class, the quotient of $GL_2(\mathbb{C})$, of real dimension eight, by the centraliser of a diagonal matrix with distinct eigenvalues, which is the torus of diagonal matrices, of real dimension four; the class therefore has real dimension four, and near a matrix with distinct eigenvalues the conjugacy class and the eigenvalue pair are local coordinates on $\mathcal K_{Ce_t}$, four real dimensions from the class and at most $2\dim_HK_C$ from the pair, since the pair ranges over $K_C\times K_C$ and the product formula holds for these sets. The matrices with repeated eigenvalues form a set of lower dimension and do not affect the bound. Hence $\dim_H\mathcal K_{Ce_t}\le4+2\dim_HK_C$.</p>
 <p><strong>Remark (the expectation and the evidence).</strong> The bound is expected to be an equality, the four dimensions coming from the conjugacy class of a matrix and the $2\alpha$ from the pair of eigenvalues; the equality holds at $C=0$, where $\alpha=2$ and $4+2\alpha=8$. <strong>The exact dimension of the biquaternion Julia set at a central parameter is the dimension of the complex Julia set, doubled and shifted by four, and this is the only clean formula the category has.</strong> No such formula exists for a non-central parameter, because the orbit is not a polynomial in one element and the spectrum does not separate.</p>

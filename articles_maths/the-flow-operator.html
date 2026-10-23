@@ -91,7 +91,7 @@ $$</p>
 <h3 id="the-pushforward-and-the-invariance-of-a-measure">The Pushforward and the Invariance of a Measure</h3>
 <p><strong>Theorem (invariance as a divergence condition).</strong> Let $m$ be a smooth volume with $\operatorname{div}_mX=\mathcal{L}_Xm/m$; the measure $m$ is invariant under the flow if and only if $\operatorname{div}_mX=0$, and the density $\rho$ evolves as</p>
 <p>$$
-\frac{\partial\rho}{\partial t}=-\operatorname{div}(\rho X) \qquad \text{(the Liouville equation)},
+\boxed{\;\frac{\partial\rho}{\partial t}=-\operatorname{div}(\rho X) \qquad \text{(the Liouville equation)}\;},
 $$</p>
 <p>so a smooth positive density $\rho$ gives an invariant measure exactly when $\operatorname{div}(\rho X)=0$.</p>
 <p><em>Proof.</em> For a domain $\Omega$ with smooth boundary, the rate of change of $m(\varphi_t(\Omega))$ at $t=0$ is $\int_\Omega\operatorname{div}_mX\,dm$ by the divergence theorem, so the volume is preserved for all $\Omega$ exactly when $\operatorname{div}_mX=0$; the same computation applied to the measure $\rho m$ gives $\frac{d}{dt}\big|_{0}\int_{\varphi_t(\Omega)}\rho\,dm=\int_\Omega\operatorname{div}(\rho X)\,dm$, which is the weak form of the transport equation and vanishes for all $\Omega$ exactly when $\rho$ solves $\operatorname{div}(\rho X)=0$ in the invariant case.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h3 id="the-derivation-property-and-the-commutator">The Derivation Property and the Commutator</h3>
 <p><strong>Theorem (the Lie derivative is a derivation).</strong> For $f,g\in C^1(M)$ and vector fields $X,Y$,</p>
 <p>$$
-\mathcal{L}_X(fg)=(\mathcal{L}_Xf)g+f(\mathcal{L}_Xg), \qquad [\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]},
+\boxed{\;\mathcal{L}_X(fg)=(\mathcal{L}_Xf)g+f(\mathcal{L}_Xg), \qquad [\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}\;},
 $$</p>
 <p>where $[X,Y]=XY-YX$ is the Lie bracket of vector fields and $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_X\mathcal{L}_Y-\mathcal{L}_Y\mathcal{L}_X$; consequently $X\mapsto\mathcal{L}_X$ is a representation of the Lie algebra $\mathrm{X}(M)$ by derivations of $C^\infty(M)$.</p>
 <p><em>Proof.</em> The derivation property is the Leibniz rule of the directional derivative. For the commutator, apply both sides to $f$; the second-order terms in the two compositions cancel because mixed partial derivatives commute, and the remainder is the first-order operator associated with $[X,Y]$.</p>
@@ -122,7 +122,7 @@ $$</p>
 <h3 id="the-unitary-case-and-the-self-adjoint-generator">The Unitary Case and the Self-Adjoint Generator</h3>
 <p><strong>Theorem (Stone for the flow operator).</strong> If $\mu$ is a $\varphi_t$-invariant probability measure, then $\Phi_tf=f\circ\varphi_t$ is a strongly continuous one-parameter unitary group on $L^2(M,\mu)$, and there is a unique self-adjoint operator $A$ with</p>
 <p>$$
-\Phi_t=\exp(itA), \qquad A=-i\mathcal{L}_X ,
+\boxed{\;\Phi_t=\exp(itA), \qquad A=-i\mathcal{L}_X\;} ,
 $$</p>
 <p>on the domain where the generator exists, with $\mathcal{L}_X$ essentially skew-adjoint; the spectral measure $E$ of $A$ gives $\Phi_t=\int_{\mathbb{R}}\exp(it\lambda)dE(\lambda)$.</p>
 <p><em>Proof.</em> The unitarity is the change of variables in the theorem above. Stone's theorem supplies the self-adjoint generator $A$; differentiating $\Phi_t=\exp(itA)$ at $t=0$ gives $iA=\mathcal{L}_X$, hence $A=-i\mathcal{L}_X$. The skew-adjointness of $\mathcal{L}_X$ is the integration by parts $\int\mathcal{L}_Xf\,\overline{g}\,d\mu=-\int f\,\overline{\mathcal{L}_Xg}\,d\mu$, valid when $\operatorname{div}_\mu X=0$; the general adjoint, with the divergence correction for a reference measure that is not invariant, is <em>The Involution on the Flow Operator</em>, later in this category.</p>

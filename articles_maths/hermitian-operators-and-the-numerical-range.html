@@ -99,14 +99,14 @@ $$</p>
 <p><em>Proof.</em> Convexity is inherited by compression: if $P$ is the orthogonal projection onto a subspace $M$, then for $x\in M$ of norm one one has $\langle PTPx,x\rangle=\langle TPx,Px\rangle=\langle Tx,x\rangle$, so $W(PTP)\subseteq W(T)$. Given two unit vectors $x,y$, let $M$ be the span of $x$ and $y$, of dimension at most two, and let $T_2=PTP$ be the compression. The numerical range of a $2\times2$ matrix is an ellipse with foci at its eigenvalues, by the elliptical range theorem, hence convex; it contains $\langle Tx,x\rangle$ and $\langle Ty,y\rangle$, and it lies in $W(T)$ by the compression inclusion. Therefore $W(T)$ contains the segment joining any two of its points, and since the points were arbitrary it is convex.</p>
 <p><strong>Theorem (the spectrum lies in the closure).</strong> For every $T\in B(H)$,</p>
 <p>$$
-\sigma(T)\subseteq\overline{W(T)} ,
+\boxed{\;\sigma(T)\subseteq\overline{W(T)}\;} ,
 $$</p>
 <p>and the boundary of the spectrum is contained in the boundary of the closure of the numerical range, $\partial\sigma(T)\subseteq\partial\overline{W(T)}$.</p>
 <p><em>Proof.</em> If $\lambda\notin\overline{W(T)}$ then the distance $d=\operatorname{dist}(\lambda,\overline{W(T)})$ is positive, and for $\|x\|=1$ one has $\|(\lambda I-T)x\|\ge|\langle(\lambda I-T)x,x\rangle|\ge d$, so $\lambda I-T$ is injective with closed range; the same estimate for $T^*$ shows the range is dense, so $\lambda\notin\sigma(T)$. The boundary statement is the standard improvement using the resolvent's analyticity.</p>
 <h2 id="the-numerical-radius-and-the-norm">The Numerical Radius and the Norm</h2>
 <p><strong>Theorem (equivalence of the norms).</strong> For every $T\in B(H)$,</p>
 <p>$$
-\tfrac12\|T\|\le w(T)\le\|T\| ,
+\boxed{\;\tfrac12\|T\|\le w(T)\le\|T\|\;} ,
 $$</p>
 <p>and the constant $\tfrac12$ is sharp: on the two-dimensional Hilbert space the shift matrix $T=\begin{pmatrix}0&2\\0&0\end{pmatrix}$ has $\|T\|=2$ and $w(T)=1$.</p>
 <p><em>Proof.</em> The upper bound is Cauchy–Schwarz. For the lower bound, the norm is recovered from the diagonal by polarisation and the identity $|\langle Tx,y\rangle|\le\frac12 w(T)(\|x\|^2+\|y\|^2)$, obtained from the two-point computation with the phase chosen so that $\langle Tx,y\rangle$ is real; optimising over $x,y$ of norm one gives $\|T\|\le2w(T)$. The claimed example has $W(T)$ the disc of radius $1$ and operator norm $2$, so the bound is attained.</p>
@@ -124,7 +124,7 @@ $$</p>
 <p><em>Proof.</em> If $T=T^*$ then $\langle Tx,x\rangle=\overline{\langle Tx,x\rangle}$ is real, giving (i) $\Rightarrow$ (iii); (iii) $\Rightarrow$ (ii) is trivial; for (ii) $\Rightarrow$ (i), the polarisation identity shows that the sesquilinear form of $T$ equals that of $T^*$, and an operator is determined by its form, so $T=T^*$.</p>
 <p><strong>Corollary.</strong> For Hermitian $T$,</p>
 <p>$$
-\|T\|=w(T)=\sup_{x\in W(T)}|x| ,
+\boxed{\;\|T\|=w(T)=\sup_{x\in W(T)}|x|\;} ,
 $$</p>
 <p>and the numerical range is the interval $[m,M]$ with $m=\inf W(T)$ and $M=\sup W(T)$ equal to the infimum and supremum of the spectrum; in particular $T$ is positive exactly when $W(T)\subseteq[0,\infty)$ and $T$ is positive and invertible exactly when $W(T)\subseteq[c,\infty)$ for some $c>0$.</p>
 <p><em>Proof.</em> The equality of the norm and the numerical radius is the norm formula of the self-adjoint theory; the endpoints of the interval are the infimum and supremum of the spectrum because $\sigma(T)\subseteq\overline{W(T)}$ and the extreme spectral values are extreme values of the quadratic form; the positivity statements translate the interval.</p>

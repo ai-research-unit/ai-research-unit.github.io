@@ -83,7 +83,7 @@ $$</p>
 <h2 id="the-quaternionic-product">The Quaternionic Product</h2>
 <p><strong>Theorem (the product in the model).</strong> On the image the quaternionic product is the <strong>transposed product</strong></p>
 <p>$$
-\mathsf M_4(\tilde q_1 \star \tilde q_2) = \mathsf M_4(\tilde q_1^{\natural}\tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\,\mathsf M_4(\tilde q_2) ,
+\boxed{\;\mathsf M_4(\tilde q_1 \star \tilde q_2) = \mathsf M_4(\tilde q_1^{\natural}\tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\,\mathsf M_4(\tilde q_2)\;},
 $$</p>
 <p>the matrix product with the transpose taken in the first factor.</p>
 <p><em>Proof.</em> The transposition relation $\mathsf M_4(\tilde q)^{\mathsf T} = \mathsf M_4(\tilde q^{\natural})$, which is the theorem of the companion reading of the plain algebra, together with the multiplicativity of $\mathsf M_4$, gives $\mathsf M_4(\tilde q_1^{\natural}\tilde q_2) = \mathsf M_4(\tilde q_1^{\natural})\mathsf M_4(\tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\mathsf M_4(\tilde q_2)$.</p>
@@ -102,7 +102,7 @@ $$</p>
 <h2 id="the-form">The Form</h2>
 <p><strong>Theorem (the form in the model).</strong> The quaternionic form is a quarter of the trace pairing with the transpose,</p>
 <p>$$
-\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac14\operatorname{tr}\bigl(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)^{\mathsf T}\bigr) .
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac14\operatorname{tr}\bigl(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)^{\mathsf T}\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> $\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t$, because the diagonal entry $(\mathsf M_4(\tilde q))_{\mu\mu}$ is the $e_\mu$-coordinate of $\tilde q e_\mu$ and the vector contributions cancel pairwise; hence $\operatorname{tr}(\mathsf M_4(\tilde q_1\tilde q_2^{\natural})) = 4\,\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$.</p>
 <p><strong>Theorem (the coefficient Gram matrix).</strong> In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$,</p>
@@ -120,13 +120,13 @@ $$</p>
 <h2 id="the-invariants-and-the-shell">The Invariants and the Shell</h2>
 <p><strong>Theorem (trace and determinant).</strong> For every $\tilde q$,</p>
 <p>$$
-\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t , \qquad \det\mathsf M_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 .
+\boxed{\;\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t , \qquad \det\mathsf M_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2\;}.
 $$</p>
 <p><em>Proof.</em> The trace is above. For the determinant, the operator $L_{\tilde q}$ has the complex eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha = q_t + |\vec q|i$ is a root of $\alpha^2 - 2q_t\alpha + \langle\tilde q\rangle_{\natural} = 0$, so $\det L_{\tilde q} = \alpha^2\overline{\alpha}^2 = \langle\tilde q\rangle_{\natural}^2$.</p>
 <p><strong>Corollary (the units).</strong> $\mathsf M_4(\tilde q)$ is invertible exactly when $\tilde q \neq 0$, with positive determinant; the image of the unit group is the group of invertible matrices in the image, isomorphic to $\mathbb{H}^{\times}$.</p>
 <p><strong>Theorem (the shell).</strong> The shell $N = 1$ corresponds to the orthogonal matrices of the image:</p>
 <p>$$
-\mathsf M_4(\tilde q)^{\mathsf T}\mathsf M_4(\tilde q) = \mathrm I_4 \iff \langle\tilde q\rangle_{\natural} = 1 ,
+\boxed{\;\mathsf M_4(\tilde q)^{\mathsf T}\mathsf M_4(\tilde q) = \mathrm I_4 \iff \langle\tilde q\rangle_{\natural} = 1\;},
 $$</p>
 <p>so that the image of $\mathbb{H}^1$ is the intersection of the image with the special orthogonal group $SO(4)$; it is the pin and spin group of the quaternionic form by <em>The Pin and Spin Groups of the General Quaternionic Algebra</em>, above this article in this category, and the left regular representation is its orthogonal matrix model.</p>
 <p><em>Proof.</em> $\mathsf M_4(\tilde q)^{\mathsf T}\mathsf M_4(\tilde q) = \mathsf M_4(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}\mathrm I_4$ by the transposed product and the transposition relation, so orthogonality is $\langle\tilde q\rangle_{\natural} = 1$; the determinant of such a matrix is $\langle\tilde q\rangle_{\natural}^2 = 1$, so the matrices are in $SO(4)$, and conversely.</p>

@@ -154,7 +154,7 @@ $$</p>
 <p>and it satisfies $R(X, Y)s = \nabla_X\nabla_Y s - \nabla_Y\nabla_X s - \nabla_{[X,Y]}s$ for vector fields $X, Y$ and a section $s$.</p>
 <p><strong>Theorem (structure equation).</strong> The curvature of a connection on a vector bundle is the obstruction to the connection being flat and it is tensorial: for a change of frame $g$,</p>
 <p>$$
-R' = g^{-1} R\, g,
+\boxed{\;R' = g^{-1} R\, g\;},
 $$</p>
 <p>so the curvature is a well-defined section of $\Lambda^2 T^*M \otimes \operatorname{End}E$.</p>
 <p><strong>Proof.</strong> The formula $\nabla^2 s = R\wedge s$ follows from $R = d\omega+\omega\wedge\omega$ and the identity $d^2 = 0$; the transformation rule follows by substituting $\omega' = g^{-1}\omega g + g^{-1}dg$ into the expression for $R'$ and cancelling the terms involving $dg$, using $d(g^{-1}) = -g^{-1}dg\,g^{-1}$.</p>
@@ -162,7 +162,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>exterior covariant derivative</strong> of a $k$-form $\alpha$ with values in $E$ is $d^\nabla\alpha = d\alpha + \omega\wedge\alpha$, and for an $\operatorname{End}E$-valued form $\beta$ the operator acts as $d^\nabla\beta = d\beta + [\omega, \beta]$ with the graded bracket.</p>
 <p><strong>Theorem (Bianchi identity).</strong> For a connection $\nabla$ with curvature $R$,</p>
 <p>$$
-d^\nabla R = 0, \qquad \text{that is} \quad dR + [\omega, R] = 0.
+\boxed{\;d^\nabla R = 0, \qquad \text{that is} \quad dR + [\omega, R] = 0\;}.
 $$</p>
 <p>For a principal bundle, the same identity reads $d\Omega + [\omega, \Omega] = 0$.</p>
 <p><strong>Proof.</strong> Apply $d$ to $R = d\omega + \omega\wedge\omega$ and use $d^2 = 0$ and the graded Leibniz rule:</p>
@@ -211,7 +211,7 @@ $$</p>
 <h3 id="the-tangent-bundle-and-the-levi-civita-connection">The Tangent Bundle and the Levi-Civita Connection</h3>
 <p><strong>Theorem.</strong> Let $(M, g)$ be a Riemannian manifold. Then there is a unique connection $\nabla$ on the tangent bundle $TM$ that is <strong>metric</strong>, $X\langle Y, Z\rangle = \langle\nabla_XY, Z\rangle + \langle Y, \nabla_XZ\rangle$, and <strong>torsion-free</strong>, $\nabla_XY - \nabla_YX = [X, Y]$. It is the <strong>Levi-Civita connection</strong>, and its curvature is the Riemann curvature tensor</p>
 <p>$$
-R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z.
+\boxed{\;R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> The Koszul formula determines $\nabla_XY$ uniquely from $g$ and the bracket; the right-hand side is $C^\infty(M)$-linear in each slot, so it defines a connection, and the two required properties are consequences of the formula.</p>
 <p><strong>Remark.</strong> In a local frame the connection form of the Levi-Civita connection is the matrix of Christoffel symbols, $\omega^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$, and the Bianchi identity for its curvature is the differential identity satisfied by the Riemann tensor. The Chern–Weil forms of the Levi-Civita connection give the Pontryagin classes of $TM$ and, in the oriented even-dimensional case, the Euler class of the Gauss–Bonnet theorem.</p>

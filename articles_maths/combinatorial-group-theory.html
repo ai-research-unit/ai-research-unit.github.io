@@ -112,7 +112,7 @@ $$</p>
 <h3 id="the-rank-formula">The Rank Formula</h3>
 <p><strong>Theorem (Schreier index formula).</strong> Let $F_n$ be free of rank $n$ and let $H \leq F_n$ have finite index $k$. Then</p>
 <p>$$
-\operatorname{rk}(H) = k(n - 1) + 1 = 1 + k(n-1).
+\boxed{\;\operatorname{rk}(H) = k(n - 1) + 1 = 1 + k(n-1)\;}.
 $$</p>
 <p><strong>Proof.</strong> Let $T$ be a Schreier transversal with $|T| = k$. The <strong>Schreier graph</strong> $\Gamma$ has the $k$ cosets as vertices, and for each coset $Hg$ and each generator $x \in X$ an undirected edge joining $Hg$ to $Hgx$; thus $\Gamma$ has $k$ vertices and $nk$ edges, and it is connected because $F_n$ permutes the cosets transitively by right multiplication. A spanning tree of $\Gamma$ has $k-1$ edges, and the subgroup $H$ is the fundamental group of $\Gamma$, free of rank</p>
 <p>$$
@@ -127,7 +127,7 @@ $$</p>
 <h2 id="the-kurosh-subgroup-theorem">The Kurosh Subgroup Theorem</h2>
 <p><strong>Theorem (Kurosh).</strong> Let $G = *_{i \in I} A_i$ be a free product of groups. Every subgroup $H \leq G$ decomposes as a free product</p>
 <p>$$
-H = F * \Big( *_{i \in I} *_{j \in J_i} H_{ij} \Big),
+\boxed{\;H = F * \Big( *_{i \in I} *_{j \in J_i} H_{ij} \Big)\;},
 $$</p>
 <p>where $F$ is a free group, and for each $i$ the groups $H_{ij}$ are conjugates of subgroups of $A_i$ in $G$. If $H$ has finite index in $G$ and the index set $I$ and the factors are finite, then $F$ has finite rank and the $J_i$ are finite.</p>
 <p><strong>Proof sketch.</strong> One chooses a Schreier transversal for $H$ exactly as in the Nielsen–Schreier theorem and forms the Schreier graph, whose vertices are the cosets and whose edges carry labels in the free factors. The graph is a tree of graphs glued along vertices, one piece for each $A_i$; the subgroup $H$ is the fundamental group of the quotient graph, and a graph that is a tree of one-vertex-with-loops components has fundamental group the free product of the fundamental groups of the components and a free group for the excess edges. Reading off the components gives the factors $H_{ij}$ as conjugates of subgroups of the $A_i$, and the excess edges give the free factor $F$.</p>
@@ -149,7 +149,7 @@ $$</p>
 <p>where $t$ is a new generator, the <strong>stable letter</strong>. The subgroup $G$ is the <strong>base</strong>, and $A$ and $B$ are the <strong>associated subgroups</strong>.</p>
 <p><strong>Theorem (Britton's lemma and normal form).</strong> Every element of $G*_\alpha$ has a unique <strong>normal form</strong></p>
 <p>$$
-g_0\, t^{\epsilon_1} g_1\, t^{\epsilon_2} \cdots t^{\epsilon_n} g_n,
+\boxed{\;g_0\, t^{\epsilon_1} g_1\, t^{\epsilon_2} \cdots t^{\epsilon_n} g_n\;},
 $$</p>
 <p>where $g_0 \in G$, $\epsilon_i = \pm 1$, $g_i \in G$ for $i < n$, and no subword $t^{-1} g_i t$ with $g_i \in A$ or $t g_i t^{-1}$ with $g_i \in B$ occurs. In particular the base $G$ embeds in $G*_\alpha$, and an element is trivial if and only if its normal form reduces to the empty word by the applications of the relations $t a t^{-1} = \alpha(a)$ and $t^{-1} b t = \alpha^{-1}(b)$.</p>
 <p><strong>Proof sketch.</strong> As in the amalgamated case, one defines $G*_\alpha$ as a group of normal forms and lets it act on itself by left multiplication; the rewriting of a product into normal form is confluent, because the only possible rewritings involve the associated subgroups and the isomorphism identifications are consistent. Britton's lemma is the statement that this rewriting system terminates in a unique normal form, and its contrapositive gives the embedding of $G$.</p>

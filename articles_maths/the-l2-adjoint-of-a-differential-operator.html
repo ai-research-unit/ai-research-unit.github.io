@@ -102,11 +102,11 @@ $$</p>
 <h3 id="the-boundary-conditions-and-the-formal-adjoint">The Boundary Conditions and the Formal Adjoint</h3>
 <p><strong>Theorem (the formal and the global adjoint).</strong> Let $P$ be a differential operator and let $P^{\dagger}$ be its formal adjoint, defined by the pairing on $\Gamma_c(F)$ with $P$ acting on $\Gamma_c(E)$. Then the adjoint of $P$ with the minimal domain contains the operator $P^{\dagger}$ with the minimal domain,</p>
 <p>$$
-P_{\min}^{\ *} \supseteq P^{\dagger}_{\min},
+\boxed{\;P_{\min}^{\ *} \supseteq P^{\dagger}_{\min}\;},
 $$</p>
 <p>with equality if and only if the boundary term of Green's formula vanishes for all compactly supported sections, which holds automatically when $M$ is closed; and the density of the maximal domain makes the maximal operator the adjoint of $P^{\dagger}_{\min}$,</p>
 <p>$$
-(P^{\dagger}_{\min})^* = P_{\max}, \qquad (P_{\min})^* = P^{\dagger}_{\max},
+\boxed{\;(P^{\dagger}_{\min})^* = P_{\max}, \qquad (P_{\min})^* = P^{\dagger}_{\max}\;},
 $$</p>
 <p>on a manifold without boundary, up to the closures. On a manifold with boundary the maximal domain is cut down by the boundary conditions, and the adjoint of a boundary-value problem is another boundary-value problem, whose boundary conditions are read from the Green formula.</p>
 <p><em>Proof.</em> For $u,v\in\Gamma_c$ the integration by parts gives $\langle Pu,v\rangle_{L^2}=\langle u,P^{\dagger}v\rangle_{L^2}$ with no boundary term, so $P^{\dagger}$ acts on $\Gamma_c(F)$ as a restriction of $P^*_{\min}$. Conversely, if $v\in\mathrm{dom}(P^*_{\min})$ with $P^*v=w$, then $w-P^{\dagger}v$ is a distribution vanishing on the test sections $\Gamma_c(E)$, hence $w=P^{\dagger}v$ in the distribution sense. The characterisation of the maximal domain of $P$ as the domain of the adjoint of $P^{\dagger}_{\min}$ is the standard computation with the distributional pairing: the condition $\langle Pu,v\rangle=\langle u,w\rangle$ for all test $u$ says exactly that the distribution $P^{\dagger}v$ is represented by the $L^2$ function $w$, which is the definition of the maximal domain. The boundary case reduces to the vanishing of the boundary term of Green's formula, which is the statement that the adjoint boundary conditions are the orthogonal complement of the given ones.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p><em>Proof.</em> This is the von Neumann theory of the deficiency indices of a symmetric operator, proved in <em>Unbounded Operators and Spectral Measures</em>; the criterion $\ker(T^*\pm i)=0$ for self-adjointness is the special case of the projection onto the eigenspaces of the Cayley transform, whose domain is all of the Hilbert space exactly when the two deficiency indices vanish. The parametrisation of the extensions is the parametrisation of the isometric isomorphisms between the deficiency subspaces, and the boundary conditions of the previous section are the differential-geometric realisation of these extensions.</p>
 <p><strong>Proposition (the variational characterisation of the spectrum).</strong> Let $T$ be self-adjoint and bounded below, with the associated quadratic form $\mathfrak{Q}(u)=\langle Tu,u\rangle$ on $\mathrm{dom}(T)$. Then the bottom of the spectrum is</p>
 <p>$$
-\inf\sigma(T) = \inf_{u\neq0}\frac{\mathfrak{Q}(u)}{\lVert u\rVert_{L^2}^2},
+\boxed{\;\inf\sigma(T) = \inf_{u\neq0}\frac{\mathfrak{Q}(u)}{\lVert u\rVert_{L^2}^2}\;},
 $$</p>
 <p>the <strong>Rayleigh quotient</strong>; if $T$ has compact resolvent, its spectrum is discrete, $\lambda_1\le\lambda_2\le\cdots$, and the eigenvalues are characterised by the min–max principle.</p>
 <p><em>Proof.</em> The min–max principle and the Rayleigh quotient are the spectral theorem for a self-adjoint operator bounded below, as in <em>Unbounded Operators and Spectral Measures</em>; the compactness of the resolvent makes the spectrum discrete and the eigenvalues accumulate only at infinity.</p>

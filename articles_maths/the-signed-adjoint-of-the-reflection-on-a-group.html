@@ -75,7 +75,7 @@
 <h2 id="the-adjoint-of-a-reflection">The Adjoint of a Reflection</h2>
 <p><strong>Theorem (the adjoint is a reflection).</strong> For every $a\in G$,</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(a)}=\Sigma^{\alpha}_{\alpha(a)^{-1},\,(\alpha(a)^{-1})^{-1}},
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(a)}=\Sigma^{\alpha}_{\alpha(a)^{-1},\,(\alpha(a)^{-1})^{-1}}\;},
 $$</p>
 <p>which is the signed conjugation with parameter $\alpha(a)^{-1}$. Hence the adjoint of a reflection is a reflection, and the reflections are closed under the adjoint.</p>
 <p><strong>Proof.</strong> The adjoint formula of <em>The Signed Adjoint Sandwich on a Group</em> gives $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$; with $b=a^{-1}$ this is $\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a^{-1})^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, since $\alpha(a^{-1})=\alpha(a)^{-1}$ and its inverse is $\alpha(a)$. The result is the signed conjugation with parameter $\alpha(a)^{-1}$, whose second parameter is $(\alpha(a)^{-1})^{-1}=\alpha(a)$. Every reflection has this form, because $\alpha(a)^{-1}=b$ for the parameter $b=\alpha^{-1}(a^{-1})=\alpha(a^{-1})$, so the adjoint of a reflection is a reflection.</p>
@@ -86,11 +86,11 @@ $$</p>
 <h2 id="self-adjointness">Self-Adjointness</h2>
 <p><strong>Theorem (a signed conjugation is self-adjoint if and only if it is a reflection).</strong> For every $a\in G$,</p>
 <p>$$
-\Sigma^{\alpha}_{a,a^{-1}}\text{ is self-adjoint}
+\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}\text{ is self-adjoint}
 \quad\Longleftrightarrow\quad
 a\,\alpha(a)\in Z(G)
 \quad\Longleftrightarrow\quad
-\Sigma^{\alpha}_{a,a^{-1}}\text{ is a reflection}.
+\Sigma^{\alpha}_{a,a^{-1}}\text{ is a reflection}\;}.
 $$</p>
 <p>Hence every reflection is self-adjoint, and the signed conjugations that are not reflections are exactly the signed conjugations that are not self-adjoint.</p>
 <p><strong>Proof.</strong> Self-adjointness is the equality $\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which by the equality criterion of <em>The Signed Adjoint Sandwich on a Group</em> is the existence of $z\in Z(G)$ with $\alpha(a)^{-1}=a z^{-1}$ and $\alpha(a)=z a^{-1}$. The first relation gives $z=\alpha(a)a$, and the second gives the same, since $\alpha(a)=za^{-1}$ is $z=\alpha(a)a$. So self-adjointness is exactly the centrality of $\alpha(a)a$, and $\alpha(a)a$ is central if and only if $a\alpha(a)$ is, because the two are conjugate: $a\,\alpha(a)=a\,(\alpha(a)a)\,a^{-1}$. The centrality of $a\alpha(a)$ is the reflection criterion of <em>Reflections as Signed Two-Sided Operators on a Group</em>, which completes the equivalence. The final sentence restates it.</p>

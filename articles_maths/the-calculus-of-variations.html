@@ -102,7 +102,7 @@ $$</p>
 <p>The lemma is the step that converts the vanishing of an integral against every variation into the vanishing of its density, and the derivation of the Euler–Lagrange equation rests on it.</p>
 <p><strong>Theorem (Euler–Lagrange equation).</strong> Let $\Omega$ be bounded, let $L$ be of class $C^1$ and let $w$ be a stationary point of $J$ of class $C^2$ with respect to variations $v \in C_c^\infty(\Omega)$, that is, with $v$ vanishing near $\partial\Omega$. Then</p>
 <p>$$
-\partial L/\partial w\bigl(x,w,\nabla w\bigr) - \sum_{i=1}^{n}\frac{\partial}{\partial x_i}\Bigl(\partial L/\partial p_i\bigl(x,w,\nabla w\bigr)\Bigr) = 0
+\boxed{\;\partial L/\partial w\bigl(x,w,\nabla w\bigr) - \sum_{i=1}^{n}\frac{\partial}{\partial x_i}\Bigl(\partial L/\partial p_i\bigl(x,w,\nabla w\bigr)\Bigr) = 0\;}
 $$</p>
 <p>at every point of $\Omega$.</p>
 <p><em>Proof.</em> For $v \in C_c^\infty(\Omega)$ the first variation vanishes, and the divergence theorem applied to the second term, whose boundary contribution vanishes because $v$ is compactly supported, gives</p>
@@ -229,7 +229,7 @@ $$</p>
 <h3 id="the-lagrange-multiplier-rule">The Lagrange Multiplier Rule</h3>
 <p><strong>Theorem (Lagrange multipliers).</strong> Let $J, K_1,\dots,K_m$ be $C^1$ functionals on an open subset of a Banach space $V$ and let $w$ be a stationary point of $J$ subject to the constraints $K_j(w)=0$, with the derivatives $DK_j(w)$ linearly independent. Then there are constants $\lambda_1,\dots,\lambda_m$ with</p>
 <p>$$
-DJ(w) = \sum_{j=1}^m\lambda_j\,DK_j(w),
+\boxed{\;DJ(w) = \sum_{j=1}^m\lambda_j\,DK_j(w)\;},
 $$</p>
 <p>so that $w$ is a stationary point of the unconstrained functional $J - \sum_j\lambda_jK_j$.</p>
 <p><em>Proof.</em> Quoted as standard (the Lagrange multiplier rule in Banach space, the Lyusternik form). The surjectivity of the derivative of the constraint map $K=(K_1,\dots,K_m)$ onto $\mathbb{R}^m$ permits the implicit function theorem to write the constraint set as a graph over the kernel of $DK(w)$, reducing the problem to an unconstrained one on that kernel, and the abstract multiplier rule gives the coefficients.</p>
@@ -258,7 +258,7 @@ $$</p>
 <p><em>Proof.</em> The derivative of $\mathcal{S}$ with respect to the endpoint is the boundary term obtained by differentiating the integral along the extremal: $\partial \mathcal{S}/\partial x = L - w'\partial L/\partial p$ and $\partial \mathcal{S}/\partial w = \partial L/\partial p$. Substituting $p^* = \partial L/\partial p = \partial \mathcal{S}/\partial w$ into the identity $L - w'\partial \mathcal{S}/\partial w$ and using the definition of $H$ as the Legendre transform gives $\partial \mathcal{S}/\partial x = -H(x,w,\partial \mathcal{S}/\partial w)$.</p>
 <p><strong>Theorem (Noether).</strong> Let $G$ be a one-parameter group of transformations of the variables $(x,w)$ leaving the functional $J$ invariant, with infinitesimal generator $(\xi,\eta)$. Then the quantity</p>
 <p>$$
-N = \xi\Bigl(L - \sum_iw_i'\partial L/\partial p_i\Bigr) + \sum_i\eta_i\partial L/\partial p_i
+\boxed{\;N = \xi\Bigl(L - \sum_iw_i'\partial L/\partial p_i\Bigr) + \sum_i\eta_i\partial L/\partial p_i\;}
 $$</p>
 <p>is constant along every solution of the Euler–Lagrange equation.</p>
 <p><em>Proof.</em> Quoted as standard. The invariance of the integral under the group means that the derivative of $J$ with respect to the group parameter vanishes identically for every curve, not merely at an extremal; writing this derivative as an integral, integrating by parts and using the Euler–Lagrange equation leaves only the boundary term, which is the derivative of the displayed quantity.</p>

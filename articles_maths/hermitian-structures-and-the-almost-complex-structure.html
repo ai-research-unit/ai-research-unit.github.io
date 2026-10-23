@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> An <strong>almost complex structure</strong> on a smooth manifold $M$ is a bundle endomorphism $J : TM \to TM$ with $J^2 = -\mathrm{id}_{TM}$; the pair $(M,J)$ is an <strong>almost complex manifold</strong>. It exists only in even dimensions, where it reduces the structure group of the tangent bundle from $GL(2n,\mathbb{R})$ to $GL(n,\mathbb{C})$, as in <em>Hermitian Geometry and Almost Complex Structures</em>.</p>
 <p><strong>Proposition.</strong> The complexified tangent bundle $T_{\mathbb{C}}M = TM\otimes_{\mathbb{R}}\mathbb{C}$ splits into the eigenbundles of $J$ with eigenvalues $\pm i$,</p>
 <p>$$
-T_{\mathbb{C}}M = T^{1,0}M \oplus T^{0,1}M, \qquad T^{1,0}M = \{v : Jv = iv\}, \quad T^{0,1}M = \{v : Jv = -iv\},
+\boxed{\;T_{\mathbb{C}}M = T^{1,0}M \oplus T^{0,1}M, \qquad T^{1,0}M = \{v : Jv = iv\}, \quad T^{0,1}M = \{v : Jv = -iv\}\;},
 $$</p>
 <p>with $T^{0,1}M = \overline{T^{1,0}M}$; the projection onto $T^{1,0}M$ is $\tfrac12(\mathrm{id}-iJ)$. Dually, the complexified cotangent bundle splits as $T^*_{\mathbb{C}}M = \Lambda^{1,0}M\oplus\Lambda^{0,1}M$, and the complexified $k$-forms decompose into the <strong>forms of type $(n,m)$</strong>,</p>
 <p>$$
@@ -102,14 +102,14 @@ $$</p>
 <p>where $\pi^{n+1,m}$ and $\pi^{n,m+1}$ are the projections onto the two types; they are the <strong>$(1,0)$-part</strong> and the <strong>$(0,1)$-part</strong> of $d$, and the remaining components of $d$ on a $(n,m)$-form are the projections onto the other bidegrees.</p>
 <p><strong>Proposition.</strong> The exterior derivative decomposes as</p>
 <p>$$
-d = \partial + \bar\partial \quad \text{on the complexified forms},
+\boxed{\;d = \partial + \bar\partial \quad \text{on the complexified forms}\;},
 $$</p>
 <p>that is, $d$ preserves the bidegree in the sense $d\,\Omega^{n,m}\subseteq\Omega^{n+1,m}\oplus\Omega^{n,m+1}$, if and only if the almost complex structure is integrable, $N_J = 0$.</p>
 <p><em>Proof.</em> The type of $d\omega$ is determined by the Leibniz rule and the fact that $d$ of a function is a $(1,0)$-form plus a $(0,1)$-form; the failure of $d$ to preserve the bidegree is measured by the $(0,2)$- and $(2,0)$-components of $d$ of the $(1,0)$- and $(0,1)$-forms, and these components are precisely the Nijenhuis tensor. The identification is the theorem of Newlander and Nijenhuis in its operator form, quoted from <em>Hermitian Geometry and Almost Complex Structures</em>; for an integrable structure the Dolbeault complex is the standard complex of a complex manifold.</p>
 <h3 id="the-dolbeault-double-complex">The Dolbeault Double Complex</h3>
 <p><strong>Theorem.</strong> Suppose $J$ is integrable, so $d = \partial + \bar\partial$. Then</p>
 <p>$$
-\partial^2 = 0, \qquad \bar\partial^2 = 0, \qquad \partial\bar\partial + \bar\partial\partial = 0,
+\boxed{\;\partial^2 = 0, \qquad \bar\partial^2 = 0, \qquad \partial\bar\partial + \bar\partial\partial = 0\;},
 $$</p>
 <p>so the forms carry a <strong>double complex</strong>: for each $m$ the operators $\bar\partial$ make the rows $\Omega^{\bullet,m}$ into cochain complexes, for each $n$ the operators $\partial$ make the columns $\Omega^{n,\bullet}$ into cochain complexes, and the two commute with the sign, giving the anticommutation.</p>
 <p><em>Proof.</em> The identity $d^2 = 0$ and the bidegree decomposition $d = \partial+\bar\partial$ give, by separating the bidegrees of $d^2 = \partial^2 + (\partial\bar\partial+\bar\partial\partial) + \bar\partial^2$, the three displays: the $(p+2,q)$-part of $d^2$ is $\partial^2$, the $(n+1,m+1)$-part is $\partial\bar\partial+\bar\partial\partial$, and the $(n,m+2)$-part is $\bar\partial^2$. Since $d^2=0$, each homogeneous part vanishes.</p>

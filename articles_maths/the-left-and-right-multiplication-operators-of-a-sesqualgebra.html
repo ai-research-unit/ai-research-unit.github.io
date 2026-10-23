@@ -84,7 +84,7 @@ $$</p>
 <h3 id="the-two-parities">The Two Parities</h3>
 <p><strong>Proposition (the parity of the two operators).</strong> For every $a \in A$ the left multiplication $L_a$ is $\varsigma$-semilinear and the right multiplication $R_a$ is $R$-linear:</p>
 <p>$$
-L_a(\lambda x) = \varsigma(\lambda)L_a(x) , \qquad R_a(\lambda x) = \lambda R_a(x) .
+\boxed{\;L_a(\lambda x) = \varsigma(\lambda)L_a(x) , \qquad R_a(\lambda x) = \lambda R_a(x)\;} .
 $$</p>
 <p>Consequently $L_a$ is $R^{\varsigma}$-linear and lies in $\operatorname{End}_{R^{\varsigma}}(A)$, while $R_a$ lies in $\operatorname{End}_{R}(A)$.</p>
 <p><strong>Proof.</strong> The two displayed identities are the two scalar rules of the sesqualgebra read at $x$, and they are the computation of <em>Sesqualgebras</em>, §<em>The Left and the Right Multiplication</em>. For the last statement, a map $f$ with $f(\lambda x) = \varsigma(\lambda)f(x)$ satisfies $f(\mu x) = \varsigma(\mu)f(x) = \mu f(x)$ for $\mu \in R^{\varsigma}$, so it is $R^{\varsigma}$-linear; the same reading gives the $R$-linearity of $R_a$.</p>
@@ -99,7 +99,7 @@ $$</p>
 <h3 id="the-associative-case">The Associative Case</h3>
 <p><strong>Proposition.</strong> Suppose the product of $A$ is associative. Then</p>
 <p>$$
-L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a .
+\boxed{\;L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a\;} .
 $$</p>
 <p><strong>Proof.</strong> The three identities are the associative law read in the three possible orders, and they are the ones of <em>Sesqualgebras</em>, §<em>The Left and the Right Multiplication</em>: for $x \in A$ one has $L_aL_b(x) = a \star (b \star x) = (a \star b) \star x = L_{a \star b}(x)$, and the other two are the same computation.</p>
 <p><strong>Corollary.</strong> When the product is associative, $a \mapsto L_a$ is an algebra homomorphism $A \to \operatorname{End}_{R^{\varsigma}}(A)$ with $\varsigma$-semilinear values, $a \mapsto R_a$ is an algebra anti-homomorphism $A \to \operatorname{End}_{R}(A)$ with $R$-linear values, and the two images commute.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h3 id="the-standard-example">The Standard Example</h3>
 <p><strong>Proposition (the composition in the standard example).</strong> Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution and let $x \star y = xy^{*}$. Write $T_{p,q}(x) = p\,x\,q$ for the ordinary two-sided multiplication. Then</p>
 <p>$$
-L_aL_b = T_{a,\,b^{*}} , \qquad R_aR_b = T_{1,\,(a b)^{*}} ,
+\boxed{\;L_aL_b = T_{a,\,b^{*}} , \qquad R_aR_b = T_{1,\,(a b)^{*}}\;} ,
 $$</p>
 <p>and $L_aR_b \neq R_bL_a$ in general.</p>
 <p><strong>Proof.</strong> In the standard example $L_a(x) = a x^{*}$, so $L_aL_b(x) = a(b x^{*})^{*} = a x b^{*} = T_{a,b^{*}}(x)$, and $R_a(x) = x a^{*}$, so $R_aR_b(x) = (x b^{*})a^{*} = x b^{*}a^{*} = x(ab)^{*} = T_{1,(ab)^{*}}(x)$. For the last statement $L_aR_b(x) = a(x b^{*})^{*} = ab\,x^{*}$ while $R_bL_a(x) = (a x^{*})b^{*} = a x^{*} b^{*}$, and the two are equal for all $a$ and $b$ exactly when $A$ is commutative and the involution is trivial, so they differ for some pair as soon as $A$ is noncommutative or the involution is nontrivial.</p>

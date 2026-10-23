@@ -101,7 +101,7 @@ $$</p>
 <p><strong>Proof.</strong> $a(xb) = (ax)b$ by associativity.</p>
 <p><strong>Theorem (the failure of commutation is the ring commutator).</strong> For all $a,b \in A$,</p>
 <p>$$
-[L_a,L_b] = L_{[a,b]} , \qquad [R_a,R_b] = R_{[b,a]} = -R_{[a,b]} , \qquad [L_a,R_b] = 0 ,
+\boxed{\;[L_a,L_b] = L_{[a,b]} , \qquad [R_a,R_b] = R_{[b,a]} = -R_{[a,b]} , \qquad [L_a,R_b] = 0\;} ,
 $$</p>
 <p>where $[L_a,L_b] = L_aL_b - L_bL_a$. Hence the left multiplications commute pairwise exactly when $A$ is commutative, and the same holds for the right multiplications; the cross family always commutes.</p>
 <p><strong>Proof.</strong> $[L_a,L_b] = L_{ab} - L_{ba} = L_{ab-ba} = L_{[a,b]}$ by the composition law. For the right family, $[R_a,R_b] = R_{ba} - R_{ab} = R_{ba-ab} = R_{[b,a]}$. The cross family commutes by the proposition. The family $\{L_a\}$ is commutative exactly when $L_{[a,b]} = 0$ for all $a,b$, that is, by faithfulness on a unital algebra, exactly when $[a,b] = 0$ for all $a,b$.</p>
@@ -112,7 +112,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> is $\lambda : A \to B(A)$, $a \mapsto L_a$, and the <strong>right regular representation</strong> is $\rho : A \to B(A)$, $a \mapsto R_a$.</p>
 <p><strong>Theorem (boundedness, norm and closed range).</strong> For every $a$ the operators $L_a$ and $R_a$ are bounded with</p>
 <p>$$
-\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_a\rVert \leq \lVert a\rVert ,
+\boxed{\;\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_a\rVert \leq \lVert a\rVert\;} ,
 $$</p>
 <p>and on a unital algebra both are equalities, so that $\lambda$ and $\rho$ are isometric unital homomorphisms. Moreover $\lambda(A)$ is a closed subalgebra of $B(A)$ when $\lambda$ is isometric, and likewise $\rho(A)$, and both are complete.</p>
 <p><strong>Proof.</strong> Boundedness and the norm bound are in <em>Operators on a Banach Algebra</em>: $\lVert L_ax\rVert \leq \lVert a\rVert\lVert x\rVert$, and $L_a(1) = a$ forces equality on a unital algebra. An isometry from the complete space $A$ onto its image is a homeomorphism onto that image, so the image is complete, hence closed in the Hausdorff space $B(A)$; the image is a subalgebra by the composition law, and it is unital when $A$ is.</p>
@@ -152,7 +152,7 @@ $$</p>
 <p><strong>Proof.</strong> If $T$ commutes with every $L_a$ then $T(a) = T(L_a1) = L_aT(1) = a\,T(1) = R_{T(1)}(a)$ for all $a$, so $T = R_{T(1)} \in \rho(A)$; conversely every $R_b$ commutes with every $L_a$ by the proposition. This gives $\lambda(A)' = \rho(A)$, and the other identity is the mirror image. An operator in both families is $L_c = R_{c'}$; evaluating at $1$ gives $c = c'$, and $L_c = R_c$ is the statement that $c$ is central.</p>
 <p><strong>Corollary (the double centraliser theorem).</strong> Let $A$ be a unital Banach algebra and let $\mathcal{M}(A)$ be the multiplication algebra. Then the centraliser of $\mathcal{M}(A)$ in $B(A)$ is the set of central multiplications, and $A$ is recovered from either family as its centraliser:</p>
 <p>$$
-\mathcal{M}(A)' = \lambda(Z(A)) = \rho(Z(A)) , \qquad \lambda(A)'' = \lambda(A) , \qquad \rho(A)'' = \rho(A) .
+\boxed{\;\mathcal{M}(A)' = \lambda(Z(A)) = \rho(Z(A)) , \qquad \lambda(A)'' = \lambda(A) , \qquad \rho(A)'' = \rho(A)\;} .
 $$</p>
 <p><strong>Proof.</strong> An operator commuting with $\mathcal{M}(A)$ commutes in particular with $\lambda(A)$ and with $\rho(A)$, so it is a central multiplication by the theorem; conversely a central multiplication commutes with $\mathcal{M}(A)$, since $L_c$ and $R_c$ commute with every $L_aR_b$. The bicommutant identities are the theorem applied twice: $\lambda(A)'' = \rho(A)' = \lambda(A)$.</p>
 <p><strong>Remark (the boundary with the multiplier algebra).</strong> The double centraliser theorem above is the operator-level statement. The algebra of double centralisers and its strict topology, which is the right object for a non-unital algebra, are <em>Multipliers of a Banach Algebra</em>, later in this group; the definitions of a left and right multiplier are in <em>Operators on a Banach Algebra</em>. Here the operators are those of the two families, and no multiplier algebra is constructed.</p>

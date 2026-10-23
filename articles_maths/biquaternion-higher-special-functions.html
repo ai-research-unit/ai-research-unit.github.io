@@ -119,7 +119,7 @@ $$</p>
 <p>The parity of $\vec u^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an integer, the sum splits into two cases: $\nu$ even gives only the identity $e_t$, and $\nu$ odd gives only $\vec u$. In general, for non-integer $\nu$, the series does not split into two separate series.</p>
 <p>For integer $\nu = n$, the result is</p>
 <p>$$
-J_n(\theta \vec u) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases}
+\boxed{\; J_n(\theta \vec u) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
 $$</p>
 <p>where $I_n(\theta)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\vec u$.</p>
 <h3 id="the-pure-case-nilpotent-regime">The Pure Case, Nilpotent Regime</h3>
@@ -155,7 +155,7 @@ $$</p>
 <p>The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients (the coefficients are the ordinary Legendre coefficients, embedded as real scalars). So they are defined for every $\tilde{Q} \in \mathbb{B}$ by the recurrence, and the recurrence involves only the multiplication and addition of biquaternions.</p>
 <p><strong>The pure oscillatory case.</strong> For $\tilde{Q} = \theta \vec u$ with $\theta \neq 0$ and $\vec u^2 = -e_t$, the recurrence gives</p>
 <p>$$
-P_n(\theta \vec u) = \begin{cases} P_n(i\theta) \, e_t & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases}
+\boxed{\; P_n(\theta \vec u) = \begin{cases} P_n(i\theta) \, e_t & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
 $$</p>
 <p>where $P_n(i\theta)$ is the ordinary Legendre polynomial evaluated at the complex number $i\theta$. The generator $\vec u$ plays the role of the imaginary unit, so no reduction to $P_n(\theta)$ holds: only the even part of $P_n$ survives on $e_t$ and only the odd part on $\vec u$. For instance $P_2(\theta\vec u) = -(3\theta^2+1)/2$, whereas $P_2(\theta) = (3\theta^2-1)/2$. This follows from the recurrence and the alternating powers of $\vec u$.</p>
 <p><strong>The pure nilpotent case.</strong> For $\tilde{Q} = \vec Q$ with $\vec Q^2 = 0$, the recurrence involves powers of $\vec Q$ that truncate. In particular, $P_n(\vec Q)$ is a polynomial in $\vec Q$ of degree at most one, because $\vec Q^2 = 0$. The explicit form is obtained from the recurrence.</p>
@@ -200,7 +200,7 @@ $$</p>
 <h3 id="the-pure-nilpotent-case">The Pure Nilpotent Case</h3>
 <p>For $\tilde{Q} = \vec Q$ with $\vec Q^2 = 0$, the powers of $\tilde{Q}$ truncate, and the hypergeometric series reduces to</p>
 <p>$$
-{}_2F_1(a, b; c; \vec Q) = e_t + \frac{ab}{c} \vec Q.
+\boxed{\; {}_2F_1(a, b; c; \vec Q) = e_t + \frac{ab}{c} \vec Q \;}.
 $$</p>
 <p>The higher terms vanish because $\vec Q^n = 0$ for $n \geq 2$. This is the analogue of the linear approximation of the hypergeometric function near zero.</p>
 <h3 id="special-cases">Special Cases</h3>

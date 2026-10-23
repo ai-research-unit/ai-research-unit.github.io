@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-signed-adjoint">The Signed Adjoint</h2>
 <p><strong>Theorem.</strong> With respect to the twisted pairing,</p>
 <p>$$
-\Lambda(a)^{*_\sigma}=S_{\delta(a),\,\delta(1)}=\Lambda\bigl(\delta(a)\bigr),
+\boxed{\;\Lambda(a)^{*_\sigma}=S_{\delta(a),\,\delta(1)}=\Lambda\bigl(\delta(a)\bigr)\;},
 $$</p>
 <p>so the signed adjoint of the signed left multiplication by $a$ is the signed left multiplication by $\delta(a)$, and it stays on the <strong>same side</strong>; the assignment $a\mapsto\delta(a)$ on the parameter is the element involution twisted by the grade involution.</p>
 <p><em>Proof.</em> $\Lambda(a)=S_{a,1}$ by <em>The Signed Left Multiplication on an Algebra</em>, and the signed adjoint of a sandwich is $S_{a,b}^{*_\sigma}=S_{\delta(a),\delta(b)}$ by <em>The Signed Adjoint Sandwich on an Algebra</em>; with $b=1$ and $\delta(1)=1$ this is $S_{\delta(a),1}=\Lambda(\delta(a))$. Since $\delta=\sigma\alpha$ is an anti-automorphism of order two and $\Lambda$ is injective, the assignment is involutive.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="the-plain-adjoint-and-the-two-sides">The Plain Adjoint and the Two Sides</h2>
 <p><strong>Proposition.</strong> With respect to the plain pairing,</p>
 <p>$$
-\Lambda(a)^{*}=S_{\alpha(1),\,\alpha(a)}=S_{1,\,\alpha(a)}=R_{\alpha(a)}\,\alpha,
+\boxed{\;\Lambda(a)^{*}=S_{\alpha(1),\,\alpha(a)}=S_{1,\,\alpha(a)}=R_{\alpha(a)}\,\alpha\;},
 $$</p>
 <p>so the plain adjoint of the signed left multiplication is the signed sandwich $S_{1,\alpha(a)}$, the operator $x\mapsto\alpha(x)\alpha(a)$, which multiplies on the <strong>other</strong> side after the twist; and the two adjoints are related by the conjugation of the operator algebra,</p>
 <p>$$
@@ -119,9 +119,9 @@ $$</p>
 <h2 id="self-adjointness-unitarity-and-involution">Self-Adjointness, Unitarity and Involution</h2>
 <p><strong>Theorem.</strong> For the twisted pairing,</p>
 <p>$$
-\Lambda(a) \text{ is self-adjoint} \iff \delta(a)=a, \qquad
+\boxed{\;\Lambda(a) \text{ is self-adjoint} \iff \delta(a)=a, \qquad
 \Lambda(a) \text{ is unitary} \iff \delta(a)\alpha(a)=1, \qquad
-\Lambda(a) \text{ is an involution} \iff a\alpha(a)=1 .
+\Lambda(a) \text{ is an involution} \iff a\alpha(a)=1\;} .
 $$</p>
 <p>The unitary signed left multiplications are exactly the operators $\Lambda(a)$ with $\alpha(a)$ a unitary element of the algebra, and they form a subgroup of the unit group of $E$ isomorphic to a subgroup of the units of $A$.</p>
 <p><em>Proof.</em> Injectivity of $\Lambda$ makes $\Lambda(\delta(a))=\Lambda(a)$ equivalent to $\delta(a)=a$; for unitarity, $\Lambda(a)^{*_\sigma}\Lambda(a)=\Lambda(\delta(a))\Lambda(a)=L(\delta(a)\alpha(a))$ by the product rule, and a left multiplication is the identity exactly when its parameter is $1$, so $\delta(a)\alpha(a)=1$; with $\delta=\sigma\alpha$ and $v=\alpha(a)$ this is $\sigma(v)v=1$, the unitarity of $v$ in $(A,\sigma)$. For the involution, $\Lambda(a)^{2}=L(a\alpha(a))$, which is the identity exactly when $a\alpha(a)=1$. The group statement is <em>Unitary Operators of an Involutive Algebra</em> applied to the image.</p>

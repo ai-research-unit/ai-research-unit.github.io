@@ -90,14 +90,18 @@ $$</p>
 <p>The idempotents give a decomposition of every representation.</p>
 <p><strong>Theorem (The Idempotent Splitting).</strong> Let $M$ be a representation and let $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ be the non-central idempotents. Then</p>
 <p>$$
+\boxed{\;
 M = \tilde\pi_1 M \oplus \tilde\pi_2 M
+\;}
 $$</p>
 <p>as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\mathsf{M}_2(\vec e_y)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$.</p>
 <p><strong>Proof.</strong> The identities $\tilde\pi_1 + \tilde\pi_2 = 1$ and $\tilde\pi_1\tilde\pi_2 = 0$ give $v = \tilde\pi_1v + \tilde\pi_2v$ for every $v$, so the sum is all of $M$; and if $v \in \tilde\pi_1M \cap \tilde\pi_2M$, say $v = \tilde\pi_1v'$, then $v = \tilde\pi_1v$ because $\tilde\pi_1^2 = \tilde\pi_1$, while $v = \tilde\pi_2v''$ gives $\tilde\pi_1v = \tilde\pi_1\tilde\pi_2v'' = 0$; hence $v = 0$ and the sum is direct. Both summands are invariant under $\tilde\pi_1$ and $\tilde\pi_2$, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ and $\tilde\pi_1\tilde\pi_2 = 0$. For the last statement, $\mathsf{M}_2(\tilde\pi_1)$ and $\mathsf{M}_2(\tilde\pi_2)$ are the rank-one projections of (<em>Split-Quaternion Matrix Element Representations</em>, §<em>The Image as a Linear Subspace</em>), with images $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$.</p>
 <h2 id="classification">Classification</h2>
 <p><strong>Theorem (The Classification of Representations).</strong> Let $M$ be a finite-dimensional representation of $\mathbb{H}_{\mathrm{s}}$, and let $\mathbb{R}^2$ be the defining module with the action $\tilde q \cdot v = \mathsf{M}_2(\tilde q)v$. Then there is a unique integer $d \geq 0$ with</p>
 <p>$$
-M \cong (\mathbb{R}^2)^{\oplus d},
+\boxed{\;
+M \cong (\mathbb{R}^2)^{\oplus d}
+\;},
 $$</p>
 <p>so $\dim_{\mathbb{R}} M = 2d$, every module has even dimension, and the isomorphism class of $M$ is determined by its dimension alone.</p>
 <p><strong>Proof.</strong> Let $e = E_{11} = \mathsf{M}_2\big(\tfrac12(1 - \vec e_z)\big)$ and $f = E_{22} = 1 - e$ be the two complementary rank-one idempotents. Since $e + f = 1$, every $v$ is $ev + fv$ with $ev \in eV$ and $fv \in fV$, so $M = eV + fV$; applying $e$ to a relation $v_1 + v_2 = 0$ with $v_1 \in eV$ gives $v_1 = 0$, so the sum is direct. The maps</p>
@@ -145,7 +149,9 @@ $$</p>
 <h2 id="the-category-of-representations">The Category of Representations</h2>
 <p><strong>Theorem (Morita Triviality).</strong> The category of finite-dimensional representations of $\mathbb{H}_{\mathrm{s}}$ is equivalent, as an abelian category, to the category of finite-dimensional real vector spaces:</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}}\text{-}\mathbf{mod} \;\simeq\; \mathbf{Vect}_{\mathbb{R}} .
+\boxed{\;
+\mathbb{H}_{\mathrm{s}}\text{-}\mathbf{mod} \;\simeq\; \mathbf{Vect}_{\mathbb{R}}
+\;}.
 $$</p>
 <p>The equivalence sends a vector space $W$ to $\mathbb{R}^2 \otimes_{\mathbb{R}} W$ and a module $M$ to $\operatorname{Hom}_{\mathbb{H}_{\mathrm{s}}}(\mathbb{R}^2, M)$. Under it the simple module corresponds to $\mathbb{R}$, direct sums to direct sums, and tensor products to tensor products with the algebra acting on the first factor.</p>
 <p><strong>Proof.</strong> This is the standard equivalence of module categories induced by $M_2(\mathbb{R}) = \operatorname{End}_{\mathbb{R}}(\mathbb{R}^2)$, treated in <em>Matrix Algebras</em>: a module $M$ is recovered from $\operatorname{Hom}_{\mathbb{H}_{\mathrm{s}}}(\mathbb{R}^2,M) \otimes_{\mathbb{R}} \mathbb{R}^2$ by evaluation, and the classification theorem is precisely the statement that the evaluation map is an isomorphism.</p>

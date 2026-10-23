@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> The <strong>equivariant derived category</strong> of a $G$-space $X$ is the derived category $D^b_G(X)=D^b(\mathrm{Sh}_G(X))$ of the abelian category of equivariant sheaves; its objects are the bounded complexes of equivariant sheaves and its morphisms are the morphisms in the derived category, in the sense of <em>Derived Categories</em> of Part I.</p>
 <p><strong>Proposition (identification with the groupoid).</strong> The category $\mathrm{Sh}_G(X)$ of equivariant sheaves is the category of sheaves on the action groupoid $X/\!/G$, and the equivariant derived category is $D^b_G(X)\cong D^b(X/\!/G)$; when the action is free and properly discontinuous the descent of <em>Equivariant Sheaves and Descent</em> is an equivalence of abelian categories and induces an equivalence of derived categories,</p>
 <p>$$
-D^b_G(X)\simeq D^b(X/G).
+\boxed{\;D^b_G(X)\simeq D^b(X/G)\;}.
 $$</p>
 <p><em>Proof.</em> The identification of the abelian categories is that of <em>Equivariant Sheaves and Descent</em>; an equivalence of abelian categories induces an equivalence of their derived categories because it is exact and preserves injectives and acyclic resolutions. The descent equivalence is the theorem of <em>Equivariant Sheaves and Descent</em> for a free properly discontinuous action.</p>
 <p><strong>Proposition (Grothendieck structure).</strong> For a discrete group $G$ the category $\mathrm{Sh}_G(X)$ is a Grothendieck category with enough injectives and a generator, and $D^b_G(X)$ is well defined with the usual functoriality; the forgetful functor is exact and faithful.</p>
@@ -90,7 +90,7 @@ $$</p>
 $$</p>
 <p>each with the equivariant structure under which $\varphi_h$ permutes the summands or the factors; on the derived categories the forgetful functor of the equivariant derived category has the derived adjoints</p>
 <p>$$
-\operatorname{Ind}\ \dashv\ \operatorname{For}\ \dashv\ \operatorname{Coind},\qquad \operatorname{Ind},\operatorname{Coind}:D^b(X)\to D^b_G(X),
+\boxed{\;\operatorname{Ind}\ \dashv\ \operatorname{For}\ \dashv\ \operatorname{Coind},\qquad \operatorname{Ind},\operatorname{Coind}:D^b(X)\to D^b_G(X)\;},
 $$</p>
 <p>and when $G$ is finite, $\operatorname{Ind}$ and $\operatorname{Coind}$ are exact and the derived adjoints are the adjoints themselves.</p>
 <p><em>Proof.</em> A morphism $\operatorname{Ind}(\mathcal{F})\to\mathcal{G}$ of equivariant sheaves is determined by its restriction to the $e$-summand, which is an arbitrary morphism $\mathcal{F}\to\operatorname{For}(\mathcal{G})$, and conversely an arbitrary morphism extends uniquely by equivariance: this is the universal property of the free equivariant sheaf, giving $\operatorname{Ind}\dashv\operatorname{For}$. A morphism $\mathcal{G}\to\operatorname{Coind}(\mathcal{F})$ is by the adjunction $g^*\dashv g_*$ a compatible family of morphisms $g^*\mathcal{G}\to\mathcal{F}$, which is to say a morphism $\operatorname{For}(\mathcal{G})\to\mathcal{F}$: this gives $\operatorname{For}\dashv\operatorname{Coind}$. Exactness for finite $G$: a finite direct sum or product of the exact functors $g_*$ is exact, so the functors pass to the derived categories without derivation; for infinite $G$ one takes the derived functors, which exist because $\mathrm{Sh}_G(X)$ has enough injectives.</p>

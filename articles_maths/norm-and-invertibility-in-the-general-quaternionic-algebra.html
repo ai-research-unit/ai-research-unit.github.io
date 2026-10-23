@@ -89,7 +89,9 @@ $$</p>
 <p>Throughout this article the product is the general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$, whose square is central, so that the algebraic norm is the scalar coefficient of the square; it means the algebraic norm of that product.</p>
 <p><strong>Proposition.</strong> For every $\tilde Q\in\mathbb{B}$,</p>
 <p>$$
-\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}\,e_t , \qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=Q_t^2+(\vec Q,\vec Q) .
+\boxed{\;
+\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}\,e_t , \qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=Q_t^2+(\vec Q,\vec Q)
+\;}.
 $$</p>
 <p><strong>Proof.</strong> The first display is the definition of the product at equal arguments; the scalar–vector form of <em>Introduction to the General Quaternionic Algebra</em> gives $\tilde Q^{\natural}\tilde Q=(Q_t-\vec Q)(Q_t+\vec Q)=Q_t^2-\vec Q^2$, and $\vec Q^2=-(\vec Q,\vec Q)$ for a vector part. The same scalar is produced in the two orders, $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$, because the computation read the other way, $(Q_t+\vec Q)(Q_t-\vec Q)=Q_t^2-\vec Q^2$, gives the same value.</p>
 <p>The algebraic norm is therefore an element of $\mathbb{C}$ and not a length: it is the value of a quadratic form on the complex space $\mathbb{B}$, and its vanishing set is a cone and not a sphere.</p>
@@ -108,7 +110,9 @@ $$</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Proposition.</strong> The algebraic norm is multiplicative for the product,</p>
 <p>$$
-\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural} ,
+\boxed{\;
+\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}
+\;},
 $$</p>
 <p>and it is invariant under the natural conjugation, $\langle\tilde Q_1^{\natural}\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}$.</p>
 <p><strong>Proof.</strong> Since $\natural$ is an anti-automorphism and an involution, $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural\natural}=\tilde Q_2^{\natural}\tilde Q_1$, so</p>
@@ -179,7 +183,9 @@ $$</p>
 $$</p>
 <p>have a solution exactly when $\langle\tilde Q_1\rangle_{\natural}\neq0$, and then each has the <strong>same unique</strong> solution,</p>
 <p>$$
-\tilde Q_2=(\tilde Q_1^{-1})^{\natural}=\frac{\tilde Q_1^{\natural\natural}}{\langle\tilde Q_1^{\natural}\rangle_{\natural}}=\frac{\tilde Q_1}{\langle\tilde Q_1\rangle_{\natural}} ,
+\boxed{\;
+\tilde Q_2=(\tilde Q_1^{-1})^{\natural}=\frac{\tilde Q_1^{\natural\natural}}{\langle\tilde Q_1^{\natural}\rangle_{\natural}}=\frac{\tilde Q_1}{\langle\tilde Q_1\rangle_{\natural}}
+\;},
 $$</p>
 <p>where $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$ is the inverse of the plain product. When $\langle\tilde Q_1\rangle_{\natural}=0$ neither equation has a solution.</p>
 <p><strong>Proof.</strong> The first equation is $\tilde Q_1^{\natural}\tilde Q_2=e_t$, a plain-product equation with the fixed right-hand side $e_t$; composing on the left with the plain inverse of $\tilde Q_1^{\natural}$, legitimate exactly when that element is invertible, gives $\tilde Q_2=(\tilde Q_1^{\natural})^{-1}$. The plain algebra is associative, so the solution is unique when it exists. Now $\tilde Q_1^{\natural}$ is a unit of the plain product exactly when $\langle\tilde Q_1^{\natural}\rangle_{\natural}\neq0$, that is exactly when $\langle\tilde Q_1\rangle_{\natural}\neq0$, and its inverse is $(\tilde Q_1^{\natural})^{-1}=(\tilde Q_1^{\natural})^{\natural}/\langle\tilde Q_1^{\natural}\rangle_{\natural}=\tilde Q_1/\langle\tilde Q_1\rangle_{\natural}=(\tilde Q_1^{-1})^{\natural}$. This proves the statement for the first equation. For the second, $\tilde Q_2\star\tilde Q_1=\tilde Q_2^{\natural}\tilde Q_1=e_t$; composing on the right with the plain inverse of $\tilde Q_1$ gives $\tilde Q_2^{\natural}=\tilde Q_1^{-1}$, hence $\tilde Q_2=(\tilde Q_1^{-1})^{\natural}$, the same element, and the same invertibility condition. If $\langle\tilde Q_1\rangle_{\natural}=0$ and $\tilde Q_1\neq0$ then $\tilde Q_1^{\natural}$ is a zero divisor of the plain product, so the equation $\tilde Q_1^{\natural}\tilde Q_2=e_t$ has no solution; and if $\tilde Q_1=0$ the equations read $0=e_t$, also with no solution.</p>

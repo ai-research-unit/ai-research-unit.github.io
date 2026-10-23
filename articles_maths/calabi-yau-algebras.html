@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Definition.</strong> A $k$-algebra $A$ is <strong>homologically smooth</strong> if $A$, regarded as a DG module over $A^{\mathrm{e}}$, is a compact object of $D(A^{\mathrm{e}})$; equivalently, if the diagonal bimodule $A$ admits a finite resolution by finitely generated projective $A^{\mathrm{e}}$-modules. $A$ is <strong>proper</strong> if the graded $k$-modules $A$ have finite total dimension, and in the differential graded case if $H^\bullet(A)$ is finite-dimensional in each degree.</p>
 <p><strong>Definition (Ginzburg).</strong> Let $A$ be a homologically smooth $k$-algebra and let $d$ be an integer. Then $A$ is a <strong>Calabi–Yau algebra of dimension</strong> $d$, or $d$-<strong>CY</strong>, if there is an isomorphism</p>
 <p>$$
-\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}}) \;\cong\; A[-d]
+\boxed{\;\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}}) \;\cong\; A[-d]\;}
 $$</p>
 <p>in the derived category $D(A^{\mathrm{e}})$ of DG $A^{\mathrm{e}}$-modules. The shift convention is fixed once and for all as follows: $\operatorname{RHom}^{\bullet}_{A^{\mathrm{e}}}(A,-)$ is computed by a projective resolution $P_\bullet$ of $A$ whose term $P_i$ sits in homological degree $i$, with $\operatorname{Hom}_{A^{\mathrm{e}}}(P_i,-)$ placed in cohomological degree $i$; with this convention the polynomial algebra in $n$ variables has dimension $n$, as verified below, and the sign of $d$ in the display is the sign of the dimension. Other sources differ by the sign of the shift, and the invariant content is the pair (existence of the isomorphism, absolute value of the shift) together with the convention.</p>
 <p><strong>Proposition.</strong> If $A$ is $d$-CY then the integer $d$ is determined by $A$ once the convention on the shift is fixed, because $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})$ has cohomology concentrated in a single degree.</p>
@@ -100,7 +100,7 @@ $$</p>
 <p>The Calabi–Yau condition is a duality for the Hochschild theories, and this is its most useful form for calculation.</p>
 <p><strong>Theorem (standard).</strong> Let $A$ be a homologically smooth $k$-algebra. Then $A$ is $d$-CY if and only if there is an isomorphism of graded $k$-modules</p>
 <p>$$
-HH^i(A,A) \;\cong\; \bigl(HH_{d-i}(A,A)\bigr)^* ,
+\boxed{\;HH^i(A,A) \;\cong\; \bigl(HH_{d-i}(A,A)\bigr)^*\;} ,
 $$</p>
 <p>the <strong>Hochschild Poincaré duality</strong>: the Hochschild cohomology in degree $i$ is dual to the Hochschild homology in degree $d-i$, functorially for the $A$-bimodule structures.</p>
 <p><em>Proof (outline).</em> For a homologically smooth $A$ there is an isomorphism $HH^\bullet(A,A)\cong \operatorname{RHom}_{A^{\mathrm{e}}}(A,A)$ with a shift, and $HH_\bullet(A,A)\cong A\otimes^{\mathbb{L}}_{A^{\mathrm{e}}}A$; the duality between $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})$ and the diagonal bimodule, together with the standard duality between $\operatorname{Hom}$ and $\otimes^{\mathbb{L}}$ for the compact objects of $D(A^{\mathrm{e}})$, converts the isomorphism of the definition into the displayed duality between the Hochschild groups.</p>

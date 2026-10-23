@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers — Biquaternion Universe</title>
+  <title>Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-split-complex-numbers"><strong>Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers</strong></h1>
+        <h1 id="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number"><strong>Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A split-complex number carries two decompositions of the same element. The <strong>eigenvalue decomposition</strong> of <em>Eigenbasis of a Split-Complex Number</em> writes $Q=q+jq'$ as</p>
 <p>$$
@@ -381,9 +381,9 @@ $$</p>
 <h3 id="the-polar-parameters-from-the-eigenvalues">The Polar Parameters from the Eigenvalues</h3>
 <p>For a unit $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, the modulus and the angle are</p>
 <p>$$
-r=\sqrt{\lvert\lambda_+\lambda_-\rvert}=\sqrt{\lvert q^2-q'^2\rvert},
+\boxed{\; r=\sqrt{\lvert\lambda_+\lambda_-\rvert}=\sqrt{\lvert q^2-q'^2\rvert},
 \qquad
-\phi=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert.
+\phi=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert \;}
 $$</p>
 <p>The component sign is recovered from the signs of the two eigenvalues:</p>
 <div class="table-scroll"><table>
@@ -420,7 +420,7 @@ $$</p>
 <p>The exponent is then $Q_{\log}=\ln r+j\phi$, with real eigenvalues $\ln r\pm\phi=\ln\lvert\lambda_\pm\rvert$. The imaginary parts of the complex logarithms of $\lambda_\pm$ are $0$ or $\pi$, and they are carried by $\epsilon$, not by a continuous angle. This is the exact point at which the split-complex dictionary differs from the complex one: the sign of a real eigenvalue is a discrete datum, not a phase.</p>
 <p><strong>Proposition (the dictionary).</strong> On the unit group, the map</p>
 <p>$$
-(r,\phi,\epsilon)\longmapsto(\lambda_+,\lambda_-)=(\sigma_+re^{\phi},\sigma_-re^{-\phi})
+\boxed{\; (r,\phi,\epsilon)\longmapsto(\lambda_+,\lambda_-)=(\sigma_+re^{\phi},\sigma_-re^{-\phi}) \;}
 $$</p>
 <p>is a bijection from the four components, each parametrised by $(r,\phi)\in(0,\infty)\times\mathbb{R}$, onto the four open quadrants of $\mathbb{R}^2$. Its inverse is the formula above.</p>
 <p><em>Proof.</em> The forward map gives $\lambda_+\lambda_-=\sigma_+\sigma_-r^2e^{0}=q^2-q'^2$, whose sign is $\sigma_+\sigma_-$, and $\lvert\lambda_+/\lambda_-\rvert=e^{2\phi}$. Hence $r$ and $\phi$ are recovered by the displayed formulas, and the sign pair is recovered from $\lambda_\pm$. Conversely, the formulas reproduce $\lambda_\pm$ from $(r,\phi,\epsilon)$.</p>
@@ -666,8 +666,8 @@ $$</p>
 <h3 id="the-fibre">The Fibre</h3>
 <p>For a unit $Q$, the equation $\exp X=Q$ has exactly one solution, and it exists exactly when $Q$ lies in the future cone $F$. In spectral coordinates the condition is $\lambda_\pm>0$, and the solution is</p>
 <p>$$
-X=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12\ln\frac{\lambda_+}{\lambda_-}\,j
-=\ln r+j\phi.
+\boxed{\; X=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12\ln\frac{\lambda_+}{\lambda_-}\,j
+=\ln r+j\phi \;}
 $$</p>
 <p>For the other three components, the polar writing is not a logarithm of $Q$ but a logarithm of $\epsilon Q$:</p>
 <p>$$
@@ -1111,13 +1111,14 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html">Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers</a>, for the eight cases and the reconstruction tables.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers</a>, for the same eight cases read in the eigenbasis, with the idempotents and the spinors.</li>
 <li><a href="eigenbasis-of-a-split-complex-number.html">Eigenbasis of a Split-Complex Number</a>, for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.</li>
 <li><a href="split-complex-elementary-functions.html">Split-Complex Elementary Functions</a>, for the exponential, the logarithm and the branches.</li>
 <li><a href="exponential-polar-decomposition-of-split-complex-numbers.html">Exponential Polar Decomposition of Split-Complex Numbers</a>, for the decomposition, the components, existence and uniqueness, and the matrix picture.</li>
 <li><a href="modulus-unit-polar-decomposition-of-split-complex-numbers.html">Modulus–Unit Polar Decomposition of Split-Complex Numbers</a>, for the modulus and the unit factor.</li>
 <li><a href="split-complex-exponential-and-lie-group-structure.html">Split-Complex Exponential and Lie Group Structure</a>, for the group of units and the exponential parametrisation.</li>
-<li><a href="relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-reduced-biquaternions.html">Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions</a>, for the reduced biquaternion analogue.</li>
-<li><a href="relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-biquaternions.html">Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions</a>, for the noncommutative analogue.</li>
+<li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion</a>, for the reduced biquaternion analogue.</li>
+<li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</a>, for the noncommutative analogue.</li>
 <li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the notation.</li>
 </ul>
       </div>

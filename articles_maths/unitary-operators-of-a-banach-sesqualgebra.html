@@ -86,7 +86,7 @@ $$</p>
 <p>and is <strong>multiplicative</strong> when moreover $T(1)=1$.</p>
 <p><strong>Theorem (the identification with the unital $*$-maps).</strong> Let $T$ be a bounded operator of one of the two parities with $T(1)=1$. Then $T$ preserves the product if and only if $T$ is a unital $*$-endomorphism of the corresponding parity:</p>
 <p>$$
-T(xy)=Tx\,Ty,\qquad T(y^{*})=(Ty)^{*} .
+\boxed{\;T(xy)=Tx\,Ty,\qquad T(y^{*})=(Ty)^{*}\;} .
 $$</p>
 <p>For a $\mathbb{K}$-linear $T$ these are the ordinary unital $*$-endomorphisms, and for a $\varsigma$-semilinear $T$ they are the $\varsigma$-semilinear ones, with $T(\lambda y)=\varsigma(\lambda)Ty$.</p>
 <p><strong>Proof.</strong> If $T$ is a unital $*$-map then $T(xy^{*})=Tx\,T(y^{*})=Tx\,(Ty)^{*}=Tx\star Ty$. Conversely the identity is $T(xy^{*})=Tx(Ty)^{*}$. At $y=1$ it reads $T(x)=Tx(T1)^{*}=Tx$, and at $x=1$ it reads $T(y^{*})=T1\,(Ty)^{*}=(Ty)^{*}$, which is the commutation with the involution; then $T(xy)=T\bigl(x(y^{*})^{*}\bigr)=Tx\,(T(y^{*}))^{*}=Tx\,Ty$, which is the multiplicativity. The parity statements are the scalar rules, which are part of the definition of the two classes.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-relation-to-the-unitary-group-of-the-elements">The Relation to the Unitary Group of the Elements</h3>
 <p><strong>Theorem (the inner automorphisms).</strong> For $u\in \mathrm{U}(A)$ the map $\alpha_{u}(x)=uxu^{*}$ is a bounded unital $*$-automorphism, hence an element of $G_{0}$, and it is isometric with $\alpha_{u}^{-1}=\alpha_{u^{*}}$. The assignment $u\mapsto\alpha_{u}$ is a continuous homomorphism of topological groups</p>
 <p>$$
-\mathrm{U}(A)\longrightarrow G_{0},\qquad \alpha_{u}\alpha_{v}=\alpha_{uv},
+\boxed{\;\mathrm{U}(A)\longrightarrow G_{0},\qquad \alpha_{u}\alpha_{v}=\alpha_{uv}\;},
 $$</p>
 <p>whose kernel is the group $\mathrm{U}(A)\cap Z(A)$ of the central unitary elements; its image is the normal subgroup $\operatorname{Inn}(A)$ of the inner $*$-automorphisms, and $G_{0}/\operatorname{Inn}(A)$ is the group of the outer $*$-automorphisms.</p>
 <p><strong>Proof.</strong> The multiplicativity of $\alpha_{u}$ is $u(xy)u^{*}=(uxu^{*})(uyu^{*})$, and its commutation with the involution is $(uxu^{*})^{*}=u x^{*}u^{*}$ because $u^{*}u=uu^{*}=1$; the unit is fixed. The bound is $\lVert uxu^{*}\rVert\le\lVert x\rVert$ and the inverse is $\alpha_{u^{*}}$, so $\alpha_{u}$ is isometric. The homomorphism law is $\alpha_{u}\alpha_{v}(x)=uvxv^{*}u^{*}=\alpha_{uv}(x)$, the kernel is the set of $u$ with $uxu^{*}=x$ for all $x$, that is the central unitaries, and the continuity is the continuity of the product and of the involution in the norm. The normality of the image is the conjugation law $\alpha_{v}\alpha_{u}\alpha_{v}^{-1}=\alpha_{vuv^{*}}$, and $uvu^{*}\in \mathrm{U}(A)$ for unitary $u,v$.</p>
@@ -111,7 +111,7 @@ $$</p>
 <h2 id="the-relation-to-the-unitary-operators">The Relation to the Unitary Operators</h2>
 <p><strong>Theorem (the two classes are different).</strong> A multiplicative operator $T$ is unitary in the sense of <em>The Unitary Operators of a Sesqualgebra</em>, $T^{\dagger}=T^{-1}$, exactly when it also preserves the reduction of the pairing by a continuous central functional $\tau$,</p>
 <p>$$
-\tau\circ T=\tau ,
+\boxed{\;\tau\circ T=\tau\;} ,
 $$</p>
 <p>the adjoint being taken for the reduced form $h_{\tau}$ of <em>Adjoints of Bounded Sesquilinear Operators</em>. In particular every inner $*$-automorphism $\alpha_{u}$ of a unitary element is unitary, and the left multiplication $L_{u}$ of a unitary element is antiunitary and is <strong>not</strong> product-preserving.</p>
 <p><strong>Proof.</strong> For a multiplicative $T$ one has $\varphi(Tx,Ty)=\tau\bigl(Tx\,(Ty)^{*}\bigr)=\tau\bigl(T(xy^{*})\bigr)=(\tau\circ T)(xy^{*})$, which equals $\varphi(x,y)$ for all $x,y$ exactly when $\tau\circ T=\tau$, by the nondegeneracy of the reduced form; this is the proposition of <em>The Unitary Operators of a Sesqualgebra</em>, §<em>The Operators that Preserve the Product</em>. For the inner automorphism, $\tau\alpha_{u}(x)=\tau(uxu^{*})=\tau(xu^{*}u)=\tau(x)$ by the cyclicity of $\tau$ and $u^{*}u=1$. The left multiplication $L_{u}$ satisfies $L_{u}^{\dagger}=S_{1,u}=L_{u}^{-1}$ for unitary $u$, by <em>The Adjoint of the Bounded Conjugate Left Multiplication</em>, so it is antiunitary; it is not product-preserving, because $L_{u}(x\star y)=u\,y\,x^{*}$ while $L_{u}x\star L_{u}y=u\,x^{*}\,y\,u^{*}$, which differ unless $x$, $y$ and $u$ commute suitably.</p>

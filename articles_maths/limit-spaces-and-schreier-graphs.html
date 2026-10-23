@@ -90,7 +90,7 @@ $$</p>
 $$</p>
 <p>is a surjective morphism of labelled graphs. The labelled Schreier graph of the action on the whole tree is the disjoint union of the graphs $\Gamma_n(G,S)$ over $n$, and the labelled Schreier graph of the action on the boundary is their inverse limit</p>
 <p>$$
-\Gamma(G,S,X^{\omega}) = \varprojlim_n \Gamma_n(G,S).
+\boxed{\;\Gamma(G,S,X^{\omega}) = \varprojlim_n \Gamma_n(G,S)\;}.
 $$</p>
 <p><strong>Proof.</strong> The projection deletes the last letter and commutes with the action, because an automorphism of the tree carries a word $x_1x_2\cdots x_{n+1}$ to a word of the same length whose prefix is the image of $x_1\cdots x_n$: the recursion $g(x_1\cdots x_nx_{n+1}) = g(x_1\cdots x_n)\,g|_{x_1\cdots x_n}(x_{n+1})$ exhibits the projection as equivariant. An edge $v \to sv$ of $\Gamma_{n+1}$ is carried to the edge $\pi_n(v) \to s\pi_n(v)$ of $\Gamma_n$, and every vertex and every edge of $\Gamma_n$ is the image of one of $\Gamma_{n+1}$, because a word of length $n$ has children and the projection is onto. The graph on $X^*$ is the disjoint union by the invariance of the levels, and the graph on $X^{\omega}$ is the inverse limit of the labelled graphs because the cylinder $[x_1\cdots x_n]$ is the inverse image of the vertex $x_1\cdots x_n$ and the action is continuous.</p>
 <p>The inverse limit of finite labelled graphs is a <strong>profinite graph</strong>, and the theorem is the graph-theoretic form of the wreath recursion: the recursion at each vertex is the statement that the fibre of the projection over a vertex splits into the $d$ subtrees of its children, and the labelled edges of the finer graph record the sections.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> The relation is reflexive, symmetric and transitive because the products of finitely many elements of $K$ lie in a finite set depending on $K$; closedness follows from the compactness of $X^{-\omega} \times X^{-\omega}$ together with the finiteness of the choices.</p>
 <p><strong>Theorem (the nucleus criterion).</strong> Two sequences $\cdots x_2x_1$ and $\cdots y_2y_1$ are asymptotically equivalent if and only if there is a sequence $h_n$ of elements of the nucleus $N$ such that</p>
 <p>$$
-h_n(x_n) = y_n, \qquad h_n|_{x_n} = h_{n-1} \qquad \text{for every } n \geq 1
+\boxed{\;h_n(x_n) = y_n, \qquad h_n|_{x_n} = h_{n-1} \qquad \text{for every } n \geq 1\;}
 $$</p>
 <p>(with $h_0$ arbitrary). Equivalently, the Moore diagram of the nucleus contains a path $\cdots e_2e_1$ in which the edge $e_n$ carries the label $(x_n, y_n)$.</p>
 <p><strong>Proof sketch.</strong> Given the sequence $g_k$ of the definition, the element $g_k$ maps the prefix $x_k\cdots x_1$ to the prefix $y_k\cdots y_1$; the section relation of <em>Self-Similar Groups</em> applied at the last letter gives, from $g_k$, a section of $g_k$ at $x_k$ which maps $x_{k-1}\cdots x_1$ to $y_{k-1}\cdots y_1$, and the deep sections of a contracting action lie in the nucleus; iterating gives the sequence $h_n$, and conversely a sequence $h_n$ in the nucleus builds the elements $g_k$ of the definition. The Moore diagram statement is the same equation read as an edge with the label $(\text{input}, \text{output}) = (x_n,y_n)$ from the state $h_n$ to the state $h_{n-1}$.</p>
@@ -169,7 +169,7 @@ $$</p>
 <p><strong>Definition (self-similarity complex).</strong> Let $G$ be a finitely generated self-similar group with finite generating set $S$. The <strong>self-similarity complex</strong> $\Sigma(G,S)$ is the $1$-complex with vertex set $X^*$ in which two vertices $v_1, v_2$ are joined by an edge when either $v_i = xv_j$ for a letter $x$, an edge of the first type, or $s(v_i) = v_j$ for a generator $s$, an edge of the second type, the generators acting on the tree as automorphisms. The edges of the first type join consecutive levels and make the complex a tree above the root; the edges of the second type span the disjoint union of the finite Schreier graphs $\Gamma_n(G,S)$.</p>
 <p><strong>Theorem (the limit space is a boundary).</strong> If the action of the finitely generated group $G$ is contracting, then the self-similarity complex $\Sigma(G,S)$ is a Gromov-hyperbolic space, and the limit space is homeomorphic to its boundary at infinity:</p>
 <p>$$
-\mathcal{J}_G \cong \partial\Sigma(G,S),
+\boxed{\;\mathcal{J}_G \cong \partial\Sigma(G,S)\;},
 $$</p>
 <p>by a homeomorphism compatible with the projection $X^{-\omega} \to \mathcal{J}_G$, the boundary point of a sequence being the limit of the sequence of its finite prefixes read as vertices of the complex.</p>
 <p>The theorem is Nekrashevych's. Hyperbolicity, the boundary at infinity and its topology are defined and studied in <em>Hyperbolic Groups</em>; the statement here is that the limit space, which was built as a quotient of a Cantor space, is also the boundary of a hyperbolic space, and the two descriptions agree. This second description is the source of the dimension theorem below and of the quasi-isometric invariants of the action; it is the analogue for self-similar groups of the boundary of a hyperbolic group, and it is why the limit space of a self-similar group sits in the same family of objects as the visual boundaries of the group theory of <em>Hyperbolic Groups</em>.</p>

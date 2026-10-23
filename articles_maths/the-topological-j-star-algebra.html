@@ -77,7 +77,7 @@
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> A <strong>normed $J^{*}$-algebra</strong> is a normed space $A$ over $(\mathbb{K},\varsigma)$ with a map $\{\cdot,\cdot,\cdot\} : A \times A \times A \to A$ that is additive in each variable, $\mathbb{K}$-linear in the first and the third and $\varsigma$-semilinear in the second, and satisfies</p>
 <p>$$
-\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\} ,
+\boxed{\;\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\}\;} ,
 $$</p>
 <p>together with</p>
 <p>$$
@@ -92,7 +92,7 @@ $$</p>
 <h3 id="the-unit-and-the-recovered-binary-product">The Unit and the Recovered Binary Product</h3>
 <p><strong>Proposition (the recovered operations are submultiplicative and isometric).</strong> Let $A$ be a normed $J^{*}$-algebra with the constant $C$ of the definition. Then for all $x,y$,</p>
 <p>$$
-\lVert xy\rVert \leq C\lVert x\rVert\lVert y^{*}\rVert , \qquad \lVert y^{*}\rVert \leq C\lVert y\rVert ,
+\boxed{\;\lVert xy\rVert \leq C\lVert x\rVert\lVert y^{*}\rVert , \qquad \lVert y^{*}\rVert \leq C\lVert y\rVert\;} ,
 $$</p>
 <p>and at $C = 1$ the recovered involution is an isometry, $\lVert y^{*}\rVert = \lVert y\rVert$, and the recovered product is submultiplicative, $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$. At a general $C$ the two estimates give $C \geq 1$ for a nonzero $A$.</p>
 <p><em>Proof.</em> The recovery gives $\lVert xy\rVert = \lVert\{x,y^{*},1\}\rVert \leq C\lVert x\rVert\lVert y^{*}\rVert\lVert1\rVert$, which is the first estimate, and $\lVert y^{*}\rVert = \lVert\{1,y,1\}\rVert \leq C\lVert1\rVert\lVert y\rVert\lVert1\rVert$, which is the second. At $C = 1$ the second estimate applied to $y^{*}$ and the involution $*^{2} = \mathrm{id}$ give $\lVert y\rVert \leq \lVert y^{*}\rVert \leq \lVert y\rVert$, so the involution is an isometry; substituting it into the first estimate gives $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$. For a general $C$ the two inequalities compose to $\lVert y\rVert \leq C^{2}\lVert y\rVert$, so $C \geq 1$ as soon as $A \neq 0$.</p>

@@ -86,13 +86,13 @@ $$</p>
 <p><strong>Proof.</strong> Linearity is the bilinearity of the multiplication: $L_{a}(x + \lambda y) = a(x + \lambda y) = ax + \lambda ay$, and the same for $R_{a}$. Continuity is the separate continuity of the multiplication: $L_{a}$ is continuous at $0$ because $a \cdot 0 = 0$ and the multiplication is continuous in its second variable, and likewise $R_{a}$ in its first variable. Linearity of $a \mapsto L_{a}$ and $a \mapsto R_{a}$ is the bilinearity again, and the recovery formula is the definition.</p>
 <p><strong>Proposition (composition laws).</strong> Assume the multiplication associative. Then for all $a, b \in E$,</p>
 <p>$$
-L_{a}L_{b} = L_{ab}, \qquad R_{a}R_{b} = R_{ba}, \qquad L_{a}R_{b} = R_{b}L_{a} .
+\boxed{\;L_{a}L_{b} = L_{ab}, \qquad R_{a}R_{b} = R_{ba}, \qquad L_{a}R_{b} = R_{b}L_{a}\;} .
 $$</p>
 <p>Thus $a \mapsto L_{a}$ is a homomorphism and $a \mapsto R_{a}$ an anti-homomorphism of $E$ into $\mathcal{L}(E)$, and the two images commute with one another.</p>
 <p><strong>Proof.</strong> $L_{a}L_{b}(x) = a(bx) = (ab)x = L_{ab}(x)$ by associativity; $R_{a}R_{b}(x) = (xb)a = x(ba) = R_{ba}(x)$; $L_{a}R_{b}(x) = a(xb) = (ax)b = R_{b}L_{a}(x)$. Commutation of the images is the third identity.</p>
 <p><strong>Proposition (identity and faithfulness).</strong> If the multiplication is associative and unital with unit $1$, then $L_{1} = R_{1} = \mathrm{id}$, the algebras $\{L_{a}\}$ and $\{R_{a}\}$ are the images of the regular representations, and the kernels are the annihilators,</p>
 <p>$$
-\ker(L_{\bullet}) = \{a : aE = 0\}, \qquad \ker(R_{\bullet}) = \{a : Ea = 0\} .
+\boxed{\;\ker(L_{\bullet}) = \{a : aE = 0\}, \qquad \ker(R_{\bullet}) = \{a : Ea = 0\}\;} .
 $$</p>
 <p>If the multiplication is associative with unit and the representation is faithful on one side, then $E$ acts faithfully as operators on itself on that side.</p>
 <p><strong>Proof.</strong> $L_{1}(x) = 1x = x$ and $R_{1}(x) = x1 = x$; the kernel computation is the definition, $L_{a} = 0$ exactly when $ax = 0$ for all $x$; the faithfulness statement is that a coalgebra of the representations vanishes identically.</p>
@@ -102,7 +102,7 @@ $$</p>
 <p><strong>Proof.</strong> The module axioms are the associativity and the unit laws; the commutation of the two actions is $L_{a}R_{b} = R_{b}L_{a}$, which also exhibits $\{R_{b}\}$ inside the commutant of $\{L_{a}\}$. Conversely, if $S$ commutes with every $L_{a}$, then for every $a$ one has $S(a) = S(a \cdot 1) = aS(1) = R_{S(1)}(a)$, so $S = R_{S(1)}$; the symmetric argument identifies the other commutant. This is the double centraliser computation for the regular representation of a unital associative algebra.</p>
 <p><strong>Proposition (the bimodule of operators).</strong> Let $F$ be a topological vector space and let $E = \mathcal{L}(F)$ be its algebra of continuous operators. Then the left and right multiplications on $E$ are the operators</p>
 <p>$$
-L_{A}(T) = AT, \qquad R_{B}(T) = TB \qquad (A, B, T \in E),
+\boxed{\;L_{A}(T) = AT, \qquad R_{B}(T) = TB \qquad (A, B, T \in E)\;},
 $$</p>
 <p>they are continuous for the topology of bounded convergence, and the two-sided operator $T \mapsto ATB = L_{A}R_{B}(T)$ is the general product operator. This is the primary instance of the construction, and the two-sided family of this group is formed on it.</p>
 <p><strong>Proof.</strong> Composition of operators is associative and bilinear, and it is separately continuous for the topology of bounded convergence by <em>Operators on a Locally Convex Space</em>; hence $L_{A}$ and $R_{B}$ are continuous, and the composition law $L_{A}R_{B}(T) = ATB$ is the associativity of composition.</p>

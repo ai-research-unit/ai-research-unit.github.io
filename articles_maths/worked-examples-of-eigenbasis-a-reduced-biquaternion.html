@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples of Eigenbasis a Reduced Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-of-eigenbasis-a-reduced-biquaternion"><strong>Worked Examples of Eigenbasis a Reduced Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article computes the eigenvalue decomposition and the eigenbasis of eight reduced biquaternions, one after another. The eight elements are those of <em>Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</em>, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections and the eigenbasis are those of <em>Eigenbasis of a Reduced Biquaternion</em>; no definition or proof is repeated.</p>
+<p>Each case is read from the two complex coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. The eigenvalues, the eigenprojections, the eigenbasis, the matrix of multiplication and its diagonal form are computed from them by the formulas of §<em>The Method</em>. The eigenbasis is checked by the two identities</p>
+<p>$$
+\breve Q\Pi_+=\lambda_+\Pi_+,
+\qquad
+\breve Q\Pi_-=\lambda_-\Pi_-.
+$$</p>
+<p>The eight cases cover the generic element, the complex scalar, the two pure phases, the boundary of the principal diamond, the hyperbolic line, the central discrete element and the zero divisor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Case</th>
+<th>Spectral reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generic</td>
+<td>$3+4i+j(1-i)$</td>
+<td>$\lambda_+=4+3i$, $\lambda_-=2+5i$</td>
+</tr>
+<tr>
+<td>Complex scalar</td>
+<td>$1+i$</td>
+<td>$\lambda_+= \lambda_-=1+i$</td>
+</tr>
+<tr>
+<td>Central phase</td>
+<td>$i$</td>
+<td>$\lambda_+=\lambda_-=i$</td>
+</tr>
+<tr>
+<td>Split phase</td>
+<td>$ij$</td>
+<td>$\lambda_+=i$, $\lambda_-=-i$</td>
+</tr>
+<tr>
+<td>Boundary of the diamond</td>
+<td>$j$</td>
+<td>$\lambda_+=1$, $\lambda_-=-1$</td>
+</tr>
+<tr>
+<td>Hyperbolic line</td>
+<td>$\exp(j\ln2)=\tfrac54+\tfrac34j$</td>
+<td>$\lambda_+=2$, $\lambda_-=\tfrac12$</td>
+</tr>
+<tr>
+<td>Central discrete</td>
+<td>$-1$</td>
+<td>$\lambda_+=\lambda_-=-1$</td>
+</tr>
+<tr>
+<td>Zero divisor</td>
+<td>$1+j$</td>
+<td>$\lambda_+=2$, $\lambda_-=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its components, its eigenvalues, its eigenprojections, its eigenbasis and its matrix. The summary collects the results in three tables and reads the patterns across the cases (§<em>Summary</em>).</p>
+<h2 id="the-method">The Method</h2>
+<h3 id="the-coordinates-and-the-spectrum">The Coordinates and the Spectrum</h3>
+<p>For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the two complex coordinates are</p>
+<p>$$
+Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle},
+\qquad
+Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}.
+$$</p>
+<p>The two eigenvalues are the idempotent coordinates</p>
+<p>$$
+\lambda_+=Q_{\blacktriangle}+Q_{\blacktriangledown},
+\qquad
+\lambda_-=Q_{\blacktriangle}-Q_{\blacktriangledown}.
+$$</p>
+<p>Their sum and product are</p>
+<p>$$
+\lambda_++\lambda_-=2Q_{\blacktriangle},
+\qquad
+\lambda_+\lambda_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2
+=\langle\breve Q\rangle_{\mathrm{ts}}.
+$$</p>
+<p>The eigenvalues are distinct exactly when $Q_{\blacktriangledown}\neq0$, because</p>
+<p>$$
+\lambda_+-\lambda_-=2Q_{\blacktriangledown}.
+$$</p>
+<p>The characteristic polynomial is</p>
+<p>$$
+p_{\breve Q}(X)=X^2-2Q_{\blacktriangle}X+(Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2)
+=(X-\lambda_+)(X-\lambda_-),
+$$</p>
+<p>with discriminant $4Q_{\blacktriangledown}^2$. The element is a unit exactly when $\lambda_+\lambda_-\neq0$.</p>
+<h3 id="the-eigenprojections">The Eigenprojections</h3>
+<p>The two eigenprojections are the fixed idempotents</p>
+<p>$$
+\Pi_+=\frac12(1+j),
+\qquad
+\Pi_-=\frac12(1-j).
+$$</p>
+<p>They are idempotent, orthogonal and complete:</p>
+<p>$$
+\Pi_+^2=\Pi_+,
+\qquad
+\Pi_-^2=\Pi_-,
+\qquad
+\Pi_+\Pi_-=\Pi_-\Pi_+=0,
+\qquad
+\Pi_++\Pi_-=1.
+$$</p>
+<p>For every $\breve Q$ with $Q_{\blacktriangledown}\neq0$,</p>
+<p>$$
+\breve Q\Pi_+=\lambda_+\Pi_+,
+\qquad
+\breve Q\Pi_-=\lambda_-\Pi_-,
+$$</p>
+<p>and the eigenvalue decomposition is</p>
+<p>$$
+\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-.
+$$</p>
+<p>The Peirce corners relative to $\Pi_+$ are</p>
+<p>$$
+\mathbb{B}_{\mathrm{r},++}=\mathbb{C}\Pi_+,
+\qquad
+\mathbb{B}_{\mathrm{r},--}=\mathbb{C}\Pi_-,
+\qquad
+\mathbb{B}_{\mathrm{r},+-}=\mathbb{B}_{\mathrm{r},-+}=0.
+$$</p>
+<p>The mixed corners vanish because the idempotents are central. The eigenvalue decomposition is the Peirce decomposition read on the element, and the two Peirce coordinates of $\breve Q$ are its two eigenvalues.</p>
+<h3 id="the-eigenbasis">The Eigenbasis</h3>
+<p>The pair $(\Pi_+,\Pi_-)$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$, and in this basis multiplication by $\breve Q$ is diagonal:</p>
+<p>$$
+\breve Q\Pi_+=\lambda_+\Pi_+,
+\qquad
+\breve Q\Pi_-=\lambda_-\Pi_-.
+$$</p>
+<p>A general element $\breve P=P_{\blacktriangle}+jP_{\blacktriangledown}$ has eigenbasis coordinates</p>
+<p>$$
+\breve P=(P_{\blacktriangle}+P_{\blacktriangledown})\Pi_++(P_{\blacktriangle}-P_{\blacktriangledown})\Pi_-,
+$$</p>
+<p>so</p>
+<p>$$
+\breve P\longleftrightarrow(P_{\blacktriangle}+P_{\blacktriangledown},\,P_{\blacktriangle}-P_{\blacktriangledown}).
+$$</p>
+<p>For $\breve Q$ itself the coordinates are $(\lambda_+,\lambda_-)$. The two spinor spaces are the two complex lines</p>
+<p>$$
+S_+=\mathbb{C}\Pi_+,
+\qquad
+S_-=\mathbb{C}\Pi_-,
+$$</p>
+<p>and a spinor of first chirality is $\xi_+=A_1\Pi_+$, with coordinates $(A_1,0)$, while a spinor of second chirality is $\xi_-=A_2\Pi_-$, with coordinates $(0,A_2)$, with $A_1,A_2\in\mathbb{C}$.</p>
+<p>When $Q_{\blacktriangledown}\neq0$ the eigenvalues are distinct, and every eigenbasis is</p>
+<p>$$
+(\alpha\Pi_+,\beta\Pi_-),
+\qquad
+\alpha,\beta\in\mathbb{C}^{\times}.
+$$</p>
+<p>The pair $(\Pi_+,\Pi_-)$ is the normalised choice $\alpha=\beta=1$.</p>
+<h3 id="the-matrix-picture">The Matrix Picture</h3>
+<p>In the basis $(1,j)$ the matrix of multiplication by $\breve Q$ is</p>
+<p>$$
+\mathsf M(\breve Q)=
+\begin{pmatrix}
+Q_{\blacktriangle}&Q_{\blacktriangledown}\\
+Q_{\blacktriangledown}&Q_{\blacktriangle}
+\end{pmatrix},
+$$</p>
+<p>with trace $2Q_{\blacktriangle}$ and determinant $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\lambda_+\lambda_-$. The change to the eigenbasis is the same fixed matrix as in the split-complex case:</p>
+<p>$$
+C=\begin{pmatrix}\tfrac12&\tfrac12\\\tfrac12&-\tfrac12\end{pmatrix},
+\qquad
+C^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
+$$</p>
+<p>Then</p>
+<p>$$
+C^{-1}\mathsf M(\breve Q)C=\operatorname{diag}(\lambda_+,\lambda_-).
+$$</p>
+<p>The two columns of $C$ are the two spinor spaces in coordinates.</p>
+<h3 id="powers-inverse-and-polynomials">Powers, Inverse and Polynomials</h3>
+<p>The eigenbasis gives every power and every polynomial by the same rule:</p>
+<p>$$
+\breve Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-,
+\qquad
+f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-.
+$$</p>
+<p>When $\breve Q$ is a unit,</p>
+<p>$$
+\breve Q^{-1}=\lambda_+^{-1}\Pi_++\lambda_-^{-1}\Pi_-.
+$$</p>
+<p>The reduced norm reads $\langle\breve Q\rangle_{\mathrm{ts}}=\lambda_+\lambda_-$ and the trace reads $2Q_{\blacktriangle}=\lambda_++\lambda_-$.</p>
+<h3 id="the-three-regimes">The Three Regimes</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Condition</th>
+<th>Spectrum</th>
+<th>Eigenbasis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distinct</td>
+<td>$Q_{\blacktriangledown}\neq0$</td>
+<td>$\lambda_+\neq\lambda_-$</td>
+<td>$(\Pi_+,\Pi_-)$, unique up to two scales</td>
+</tr>
+<tr>
+<td>Scalar</td>
+<td>$Q_{\blacktriangledown}=0$</td>
+<td>$\lambda_+=\lambda_-=Q_{\blacktriangle}$</td>
+<td>every basis; $(\Pi_+,\Pi_-)$ is a choice</td>
+</tr>
+<tr>
+<td>Zero divisor</td>
+<td>$Q_{\blacktriangledown}\neq0$, $Q_{\blacktriangle}^2=Q_{\blacktriangledown}^2$</td>
+<td>$\{2Q_{\blacktriangle},0\}$</td>
+<td>$(\Pi_+,\Pi_-)$ still exists</td>
+</tr>
+</tbody>
+</table></div>
+<p>The scalar regime is the only one in which the eigenbasis fails to be determined by $\breve Q$. The zero-divisor regime is distinct: the two eigenvalues are different, the eigenbasis exists, but one eigenvalue is zero, so $\breve Q$ is not invertible. Case 8 is this regime.</p>
+<h2 id="the-eight-cases">The Eight Cases</h2>
+<h3 id="case-1-a-generic-element">Case 1: A Generic Element</h3>
+<p><strong>Components.</strong> For $\breve Q=3+4i+j(1-i)$,</p>
+<p>$$
+Q_{\blacktriangle}=3+4i,
+\qquad
+Q_{\blacktriangledown}=1-i,
+\qquad
+\lambda_+=4+3i,
+\qquad
+\lambda_-=2+5i,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=-7+26i.
+$$</p>
+<p><strong>Eigenprojections.</strong> The projectors are $\Pi_\pm=\tfrac12(1\pm j)$, and</p>
+<p>$$
+\breve Q\Pi_+=(4+3i)\Pi_+,
+\qquad
+\breve Q\Pi_-=(2+5i)\Pi_-.
+$$</p>
+<p>Therefore</p>
+<p>$$
+\breve Q=(4+3i)\Pi_++(2+5i)\Pi_-.
+$$</p>
+<p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(4+3i,\,2+5i)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=
+\begin{pmatrix}
+3+4i&1-i\\
+1-i&3+4i
+\end{pmatrix},
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+4+3i&0\\
+0&2+5i
+\end{pmatrix}.
+$$</p>
+<p>The trace is $6+8i=2Q_{\blacktriangle}$ and the determinant is $-7+26i=(4+3i)(2+5i)$.</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=3+4i+j(1-i)$ one has $A_1=\lambda_+=4+3i$ and $A_2=\lambda_-=2+5i$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}4+3i&0\\0&2+5i\end{pmatrix}=\begin{pmatrix}4+3i&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&2+5i\end{pmatrix}.
+$$</p>
+<p><strong>Consequences.</strong> The square is</p>
+<p>$$
+\breve Q^2=(4+3i)^2\Pi_++(2+5i)^2\Pi_-
+=-7+22i+j(14+2i),
+$$</p>
+<p>and the inverse is</p>
+<p>$$
+\breve Q^{-1}=\frac{\Pi_+}{4+3i}+\frac{\Pi_-}{2+5i}
+=\frac{83-106i+j(33+19i)}{725}.
+$$</p>
+<h3 id="case-2-a-complex-scalar">Case 2: A Complex Scalar</h3>
+<p><strong>Components.</strong> For $\breve Q=1+i$,</p>
+<p>$$
+Q_{\blacktriangle}=1+i,
+\qquad
+Q_{\blacktriangledown}=0,
+\qquad
+\lambda_+=\lambda_-=1+i,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=2i.
+$$</p>
+<p><strong>The scalar regime.</strong> The two eigenvalues coincide. The operator is $L_{\breve Q}=(1+i)\,\mathrm{id}$, every nonzero vector is an eigenvector, and every complex basis is an eigenbasis. The idempotent basis is a choice:</p>
+<p>$$
+\breve Q=(1+i)\Pi_++(1+i)\Pi_-=(1+i)(\Pi_++\Pi_-).
+$$</p>
+<p><strong>Eigenbasis and matrix.</strong> In the chosen eigenbasis the coordinates are $(1+i,\,1+i)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=(1+i)I_2,
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+1+i&0\\
+0&1+i
+\end{pmatrix}.
+$$</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=1+i$ one has $A_1=\lambda_+=1+i$ and $A_2=\lambda_-=1+i$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}1+i&0\\0&1+i\end{pmatrix}=\begin{pmatrix}1+i&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&1+i\end{pmatrix}.
+$$ The two eigenvalues coincide: the two spinor lines carry the same scale, and the pair $(\Pi_+,\Pi_-)$ is a choice.</p>
+<p><strong>Consequences.</strong> $\breve Q^2=2i$ and $\breve Q^{-1}=\tfrac{1-i}{2}$. The two spinor spaces are the two coordinate lines, and $\breve Q$ acts on both by the same complex scalar.</p>
+<h3 id="case-3-the-central-phase">Case 3: The Central Phase</h3>
+<p><strong>Components.</strong> For $\breve Q=i$,</p>
+<p>$$
+Q_{\blacktriangle}=i,
+\qquad
+Q_{\blacktriangledown}=0,
+\qquad
+\lambda_+=\lambda_-=i,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=-1.
+$$</p>
+<p><strong>The scalar regime.</strong> Again every basis is an eigenbasis, and the idempotent pair is a choice:</p>
+<p>$$
+\breve Q=i\Pi_++i\Pi_-=i(\Pi_++\Pi_-).
+$$</p>
+<p><strong>Eigenbasis and matrix.</strong> In the chosen eigenbasis the coordinates are $(i,i)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=iI_2,
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+i&0\\
+0&i
+\end{pmatrix}.
+$$</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=i$ one has $A_1=\lambda_+=i$ and $A_2=\lambda_-=i$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}i&0\\0&i\end{pmatrix}=\begin{pmatrix}i&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&i\end{pmatrix}.
+$$ The two eigenvalues coincide: the two spinor lines carry the same scale, and the pair $(\Pi_+,\Pi_-)$ is a choice.</p>
+<p><strong>Consequences.</strong> $\breve Q^2=-1$ and $\breve Q^{-1}=-i$. The element is the central complex phase of angle $\pi/2$.</p>
+<h3 id="case-4-the-split-phase">Case 4: The Split Phase</h3>
+<p><strong>Components.</strong> For $\breve Q=ij$,</p>
+<p>$$
+Q_{\blacktriangle}=0,
+\qquad
+Q_{\blacktriangledown}=i,
+\qquad
+\lambda_+=i,
+\qquad
+\lambda_-=-i,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=1.
+$$</p>
+<p><strong>Eigenprojections.</strong> The action is</p>
+<p>$$
+\breve Q\Pi_+=i\Pi_+,
+\qquad
+\breve Q\Pi_-=-i\Pi_-,
+$$</p>
+<p>so</p>
+<p>$$
+\breve Q=i\Pi_+-i\Pi_-.
+$$</p>
+<p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(i,-i)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=
+\begin{pmatrix}
+0&i\\
+i&0
+\end{pmatrix},
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+i&0\\
+0&-i
+\end{pmatrix}.
+$$</p>
+<p>The trace is $0=i-i$ and the determinant is $1=i(-i)$.</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=ij$ one has $A_1=\lambda_+=i$ and $A_2=\lambda_-=-i$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}i&0\\0&-i\end{pmatrix}=\begin{pmatrix}i&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&-i\end{pmatrix}.
+$$</p>
+<p><strong>Consequences.</strong> The element is a square root of $-1$:</p>
+<p>$$
+\breve Q^2=-1,
+\qquad
+\breve Q^{-1}=-\breve Q=-ij.
+$$</p>
+<p>The eigenvalues are the two imaginary units, and the eigenbasis separates them.</p>
+<h3 id="case-5-the-boundary-of-the-diamond">Case 5: The Boundary of the Diamond</h3>
+<p><strong>Components.</strong> For $\breve Q=j$,</p>
+<p>$$
+Q_{\blacktriangle}=0,
+\qquad
+Q_{\blacktriangledown}=1,
+\qquad
+\lambda_+=1,
+\qquad
+\lambda_-=-1,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=-1.
+$$</p>
+<p><strong>Eigenprojections.</strong> The action is</p>
+<p>$$
+\breve Q\Pi_+=\Pi_+,
+\qquad
+\breve Q\Pi_-=-\Pi_-,
+$$</p>
+<p>so</p>
+<p>$$
+\breve Q=\Pi_+-\Pi_-.
+$$</p>
+<p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(1,-1)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix},
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+1&0\\
+0&-1
+\end{pmatrix}.
+$$</p>
+<p>The trace is $0$ and the determinant is $-1$.</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=j$ one has $A_1=\lambda_+=1$ and $A_2=\lambda_-=-1$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}1&0\\0&-1\end{pmatrix}=\begin{pmatrix}1&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&-1\end{pmatrix}.
+$$</p>
+<p><strong>Consequences.</strong> The element is an involution,</p>
+<p>$$
+\breve Q^2=\Pi_++\Pi_-=1,
+\qquad
+\breve Q^{-1}=\breve Q=j.
+$$</p>
+<p>The eigenbasis is the pair of null lines spanned by $\Pi_+$ and $\Pi_-$.</p>
+<h3 id="case-6-the-hyperbolic-line">Case 6: The Hyperbolic Line</h3>
+<p><strong>Components.</strong> For $\breve Q=\exp(j\ln2)=\tfrac54+\tfrac34j$,</p>
+<p>$$
+Q_{\blacktriangle}=\tfrac54,
+\qquad
+Q_{\blacktriangledown}=\tfrac34,
+\qquad
+\lambda_+=2,
+\qquad
+\lambda_-=\tfrac12,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=1.
+$$</p>
+<p><strong>Eigenprojections.</strong> The action is</p>
+<p>$$
+\breve Q\Pi_+=2\Pi_+,
+\qquad
+\breve Q\Pi_-=\tfrac12\Pi_-,
+$$</p>
+<p>so</p>
+<p>$$
+\breve Q=2\Pi_++\tfrac12\Pi_-.
+$$</p>
+<p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(2,\tfrac12)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=
+\begin{pmatrix}
+\tfrac54&\tfrac34\\
+\tfrac34&\tfrac54
+\end{pmatrix},
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+2&0\\
+0&\tfrac12
+\end{pmatrix}.
+$$</p>
+<p>The trace is $\tfrac52=2+\tfrac12$ and the determinant is $1=2\cdot\tfrac12$.</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=\exp(j\ln2)=\tfrac54+\tfrac34j$ one has $A_1=\lambda_+=2$ and $A_2=\lambda_-=\tfrac12$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}2&0\\0&\tfrac12\end{pmatrix}=\begin{pmatrix}2&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&\tfrac12\end{pmatrix}.
+$$</p>
+<p><strong>Consequences.</strong> The square is</p>
+<p>$$
+\breve Q^2=4\Pi_++\tfrac14\Pi_-=\tfrac{17}{8}+\tfrac{15}{8}j,
+$$</p>
+<p>and the inverse is</p>
+<p>$$
+\breve Q^{-1}=\tfrac12\Pi_++2\Pi_-=\tfrac54-\tfrac34j.
+$$</p>
+<h3 id="case-7-the-central-discrete-element">Case 7: The Central Discrete Element</h3>
+<p><strong>Components.</strong> For $\breve Q=-1$,</p>
+<p>$$
+Q_{\blacktriangle}=-1,
+\qquad
+Q_{\blacktriangledown}=0,
+\qquad
+\lambda_+=\lambda_-=-1,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=1.
+$$</p>
+<p><strong>The scalar regime.</strong> Every basis is an eigenbasis, and the idempotent pair is a choice:</p>
+<p>$$
+\breve Q=-\Pi_+-\Pi_-=-(\Pi_++\Pi_-).
+$$</p>
+<p><strong>Eigenbasis and matrix.</strong> In the chosen eigenbasis the coordinates are $(-1,-1)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=-I_2,
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+-1&0\\
+0&-1
+\end{pmatrix}.
+$$</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=-1$ one has $A_1=\lambda_+=-1$ and $A_2=\lambda_-=-1$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}=\begin{pmatrix}-1&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&-1\end{pmatrix}.
+$$ The two eigenvalues coincide: the two spinor lines carry the same scale, and the pair $(\Pi_+,\Pi_-)$ is a choice.</p>
+<p><strong>Consequences.</strong> $\breve Q^2=1$ and $\breve Q^{-1}=-1$. The element is the central discrete element of order two.</p>
+<h3 id="case-8-the-zero-divisor">Case 8: The Zero Divisor</h3>
+<p><strong>Components.</strong> For $\breve Q=1+j$,</p>
+<p>$$
+Q_{\blacktriangle}=1,
+\qquad
+Q_{\blacktriangledown}=1,
+\qquad
+\lambda_+=2,
+\qquad
+\lambda_-=0,
+\qquad
+\langle\breve Q\rangle_{\mathrm{ts}}=0.
+$$</p>
+<p><strong>Eigenprojections.</strong> The eigenvalues are distinct, because $Q_{\blacktriangledown}=1\neq0$, and the fixed projectors are the eigenprojections:</p>
+<p>$$
+\breve Q\Pi_+=2\Pi_+,
+\qquad
+\breve Q\Pi_-=0.
+$$</p>
+<p>Therefore</p>
+<p>$$
+\breve Q=2\Pi_+.
+$$</p>
+<p>The element is a zero divisor, yet it has an eigenbasis. The two properties are independent: diagonalisability is not invertibility.</p>
+<p><strong>Eigenbasis and matrix.</strong> The eigenbasis coordinates are $(2,0)$, and</p>
+<p>$$
+\mathsf M(\breve Q)=
+\begin{pmatrix}
+1&1\\
+1&1
+\end{pmatrix},
+\qquad
+C^{-1}\mathsf M(\breve Q)C=
+\begin{pmatrix}
+2&0\\
+0&0
+\end{pmatrix}.
+$$</p>
+<p>The matrix has rank one and determinant zero. Its image is the line of $\Pi_+$ and its kernel is the line of $\Pi_-$.</p>
+<p><strong>Spinors.</strong> A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+$$
+\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+$$
+in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
+$$
+\mathsf M(\xi_+)=\begin{pmatrix}A_1&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M(\xi_-)=\begin{pmatrix}0&0\\0&A_2\end{pmatrix};
+$$
+the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
+$$
+\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+$$
+that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=1+j$ one has $A_1=\lambda_+=2$ and $A_2=\lambda_-=0$, so
+$$
+\mathsf M(\breve Q)=\begin{pmatrix}2&0\\0&0\end{pmatrix}=\begin{pmatrix}2&0\\0&0\end{pmatrix}+\begin{pmatrix}0&0\\0&0\end{pmatrix}.
+$$ The second spinor vanishes, its column is zero, and the matrix has rank one.</p>
+<p><strong>Consequences.</strong> The powers are</p>
+<p>$$
+\breve Q^n=2^n\Pi_+=2^{n-1}\breve Q,
+\qquad n\geq1,
+$$</p>
+<p>and in particular $\breve Q^2=2\breve Q=2+2j$. There is no inverse. The two spinor spaces read the element exactly: $\breve Q$ acts on $S_+$ by the scalar $2$ and kills $S_-$.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="main-results">Main Results</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\breve Q$</th>
+<th>$Q_{\blacktriangle}$</th>
+<th>$Q_{\blacktriangledown}$</th>
+<th>$\lambda_+$</th>
+<th>$\lambda_-$</th>
+<th>$\langle\breve Q\rangle_{\mathrm{ts}}$</th>
+<th>Eigenbasis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$3+4i+j(1-i)$</td>
+<td>$3+4i$</td>
+<td>$1-i$</td>
+<td>$4+3i$</td>
+<td>$2+5i$</td>
+<td>$-7+26i$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$1+i$</td>
+<td>$1+i$</td>
+<td>$0$</td>
+<td>$1+i$</td>
+<td>$1+i$</td>
+<td>$2i$</td>
+<td>every basis</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$0$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$-1$</td>
+<td>every basis</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$ij$</td>
+<td>$0$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$-i$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$j$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\tfrac54+\tfrac34j$</td>
+<td>$\tfrac54$</td>
+<td>$\tfrac34$</td>
+<td>$2$</td>
+<td>$\tfrac12$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>every basis</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$1+j$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-eigenbasis-table">The Eigenbasis Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\Pi_+$ coordinate</th>
+<th>$\Pi_-$ coordinate</th>
+<th>$\breve Q\Pi_+$</th>
+<th>$\breve Q\Pi_-$</th>
+<th>Diagonal form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$4+3i$</td>
+<td>$2+5i$</td>
+<td>$(4+3i)\Pi_+$</td>
+<td>$(2+5i)\Pi_-$</td>
+<td>$\operatorname{diag}(4+3i,2+5i)$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$1+i$</td>
+<td>$1+i$</td>
+<td>$(1+i)\Pi_+$</td>
+<td>$(1+i)\Pi_-$</td>
+<td>$\operatorname{diag}(1+i,1+i)$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$i\Pi_+$</td>
+<td>$i\Pi_-$</td>
+<td>$\operatorname{diag}(i,i)$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$i$</td>
+<td>$-i$</td>
+<td>$i\Pi_+$</td>
+<td>$-i\Pi_-$</td>
+<td>$\operatorname{diag}(i,-i)$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$\Pi_+$</td>
+<td>$-\Pi_-$</td>
+<td>$\operatorname{diag}(1,-1)$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$2$</td>
+<td>$\tfrac12$</td>
+<td>$2\Pi_+$</td>
+<td>$\tfrac12\Pi_-$</td>
+<td>$\operatorname{diag}(2,\tfrac12)$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-\Pi_+$</td>
+<td>$-\Pi_-$</td>
+<td>$\operatorname{diag}(-1,-1)$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2\Pi_+$</td>
+<td>$0$</td>
+<td>$\operatorname{diag}(2,0)$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="powers-inverses-and-matrices">Powers, Inverses and Matrices</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\breve Q^2$</th>
+<th>$\breve Q^{-1}$</th>
+<th>$\mathsf M(\breve Q)$</th>
+<th>$\mathrm{tr}$</th>
+<th>$\det$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$-7+22i+j(14+2i)$</td>
+<td>$\dfrac{83-106i+j(33+19i)}{725}$</td>
+<td>$\begin{pmatrix}3+4i&1-i\\1-i&3+4i\end{pmatrix}$</td>
+<td>$6+8i$</td>
+<td>$-7+26i$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$2i$</td>
+<td>$\dfrac{1-i}{2}$</td>
+<td>$(1+i)I_2$</td>
+<td>$2+2i$</td>
+<td>$2i$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$-1$</td>
+<td>$-i$</td>
+<td>$iI_2$</td>
+<td>$2i$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$-1$</td>
+<td>$-ij$</td>
+<td>$\begin{pmatrix}0&i\\i&0\end{pmatrix}$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$1$</td>
+<td>$j$</td>
+<td>$\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>$0$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\tfrac{17}{8}+\tfrac{15}{8}j$</td>
+<td>$\tfrac54-\tfrac34j$</td>
+<td>$\begin{pmatrix}\tfrac54&\tfrac34\\\tfrac34&\tfrac54\end{pmatrix}$</td>
+<td>$\tfrac52$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$-I_2$</td>
+<td>$-2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$2+2j$</td>
+<td>none</td>
+<td>$\begin{pmatrix}1&1\\1&1\end{pmatrix}$</td>
+<td>$2$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-the-cases-show">What the Cases Show</h3>
+<ul>
+<li>Case 1 is the generic element. Its two eigenvalues are distinct complex numbers, and the eigenbasis is the fixed pair $(\Pi_+,\Pi_-)$. The matrix is symmetric in the complex sense, and its two eigenvalues are the diagonal entries of the diagonal form.</li>
+<li>Cases 2, 3 and 7 are the scalar regime. The two eigenvalues coincide, every complex basis is an eigenbasis, and the idempotent pair is a choice. The spectral data carry only the common scalar.</li>
+<li>Cases 4 and 5 are the two pure phases. Their eigenvalues are $(\pm i)$ and $(\pm1)$, and both are square roots of $\pm1$, with squares $-1$ and $+1$. The eigenbasis separates the two signs.</li>
+<li>Case 6 is the hyperbolic line. Its eigenvalues are $2$ and $\tfrac12$, reciprocal to each other, and the element is the exponential of $j\ln2$. The product of the eigenvalues is $1$, so the element is a unit of reduced norm one.</li>
+<li>Case 8 is the zero divisor. The eigenvalues are distinct, the eigenbasis exists, and one eigenvalue is zero. This is the case in which the eigenbasis exists while the polar word of the companion article does not. The element is the projection $2\Pi_+$ onto the first spinor space, with kernel the second.</li>
+<li>The eigenbasis depends only on $j$, not on $\breve Q$, in every non-scalar case. The element enters only through the two eigenvalues.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>the reduced biquaternion algebra, $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\times\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$</td>
+<td>a reduced biquaternion</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\Pi_\pm=\tfrac12(1\pm j)$</td>
+<td>the two eigenprojections</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r},\sigma\tau}$</td>
+<td>the Peirce corners</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{C}\Pi_\pm$</td>
+<td>the two spinor spaces</td>
+</tr>
+<tr>
+<td>$\mathsf M(\breve Q)$</td>
+<td>the matrix of multiplication by $\breve Q$ in the basis $(1,j)$</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>the change to the eigenbasis</td>
+</tr>
+<tr>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$</td>
+<td>the reduced norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="eigenbasis-of-a-reduced-biquaternion.html">Eigenbasis of a Reduced Biquaternion</a>, for the eigenvalue decomposition, the Peirce decomposition and the eigenbasis.</li>
+<li><a href="eigenbasis-of-a-reduced-biquaternion-in-matrix-elements-representations.html">Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations</a>, for the matrix models, the spectral projectors and the change of basis.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</a>, for the same eight elements read through the polar word.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions</a>, for the same eight cases read in the eigenbasis, with the idempotents and the spinors.</li>
+<li><a href="worked-examples-of-eigenbasis-of-a-split-complex-number.html">Worked Examples of Eigenbasis of a Split-Complex Number</a>, for the two-dimensional commutative companion.</li>
+<li><a href="worked-examples-of-eigenbasis-a-biquaternion.html">Worked Examples of Eigenbasis a Biquaternion</a>, for the noncommutative companion with nilpotents.</li>
+<li><a href="ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</a>, for the ideals and the Peirce corners.</li>
+<li><a href="reduced-biquaternion-elementary-functions.html">Reduced Biquaternion Elementary Functions</a>, for the exponential and the logarithm built on the decomposition.</li>
+<li>G. Baley Price, <em>An Introduction to Multicomplex Spaces and Functions</em> (Marcel Dekker, 1991), for the idempotent decomposition and the coordinatewise product.</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the notation used throughout.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

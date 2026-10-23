@@ -89,9 +89,7 @@ $$</p>
 <p><em>Proof.</em> The scalar part of $\tilde q\tilde{q}^{\natural}$ is $\sum_\mu q_\mu^2$, a scalar, and a scalar commutes with every quaternion; this is the centrality. The coordinate expression is homogeneous of degree two and its polarisation is $\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$, as the polar form of a sum of squares.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The quaternion norm is multiplicative:</p>
-<p>$$
-\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\,\langle\tilde q_2\rangle_{\natural}, \qquad \tilde q_1, \tilde q_2 \in \mathbb{H}.
-$$</p>
+<p>$$ \boxed{\; \langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\,\langle\tilde q_2\rangle_{\natural}, \qquad \tilde q_1, \tilde q_2 \in \mathbb{H} \;} .$$</p>
 <p><em>Proof.</em> Using $(\tilde q_1\tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1^{\natural}$ and the fact that $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ is central,</p>
 <p>$$
 \langle\tilde q_1\tilde q_2\rangle_{\natural} = (\tilde q_1\tilde q_2)(\tilde q_1\tilde q_2)^{\natural} = \tilde q_1\tilde q_2\,\tilde q_2^{\natural}\,\tilde q_1^{\natural} = \tilde q_1\,\langle\tilde q_2\rangle_{\natural}\,\tilde q_1^{\natural} = \langle\tilde q_2\rangle_{\natural}\,\tilde q_1 \tilde q_1^{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}.
@@ -122,9 +120,7 @@ $$</p>
 <p>In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the Gram matrix of the inner product is the identity, $\langle\cdot,\cdot\rangle=\sum_\mu q_{1\mu} q_{2\mu}$, so a linear map $T$ preserves the form exactly when its matrix satisfies the algebraic condition $T^{\mathsf T}T=\mathrm I_4$; the group of linear maps preserving the form is therefore the group defined by that matrix condition, $T^{\mathsf T}T=\mathrm I_4$, named here algebraically. The inner automorphisms $\tilde q\mapsto u\tilde q u^{-1}$ of the units are elements of that group, since conjugation by a unit preserves the scalar part; their further reading is in <em>Quaternion Rotations and Reflections</em>, below this article in this category and <em>Quaternion Automorphisms and Derivations</em>, below this article in this category.</p>
 <h3 id="relation-between-the-quaternion-norm-and-the-inner-product">Relation Between the Quaternion Norm and the Inner Product</h3>
 <p><strong>Proposition.</strong> The quaternion norm is the diagonal of the inner product, $\langle\tilde q\rangle_{\natural} = \langle \tilde q, \tilde q\rangle$, and the inner product is recovered from the quaternion norm by polarisation,</p>
-<p>$$
-\langle\tilde q_1, \tilde q_2\rangle = \tfrac{1}{2}\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr).
-$$</p>
+<p>$$ \boxed{\; \langle\tilde q_1, \tilde q_2\rangle = \tfrac{1}{2}\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr) \;} .$$</p>
 <p>The two forms are therefore the same datum: a positive definite quadratic form on a four-dimensional real space, whose associated bilinear form is the inner product. The multiplicativity of $\langle\cdot,\cdot\rangle_{\natural}$ is an extra property, not shared by a general positive definite form.</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
@@ -140,9 +136,7 @@ $$</p>
 <p><em>Proof.</em> Over $\mathbb{R}$ the quaternion norm is positive definite, so $\langle\tilde q\rangle_{\natural} = 0$ holds only for $\tilde q = 0$; by the criterion of the preceding paragraph every non-zero $\tilde q$ is a unit.</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
 <p><strong>Theorem.</strong> If $\langle\tilde q\rangle_{\natural}\neq 0$ then</p>
-<p>$$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{\tilde{q}^{\natural}}{\tilde q\tilde{q}^{\natural}}.
-$$</p>
+<p>$$ \boxed{\; \tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{\tilde{q}^{\natural}}{\tilde q\tilde{q}^{\natural}} \;} .$$</p>
 <p><em>Proof.</em> $(\tilde q)(\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = (\tilde q\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}/\langle\tilde q\rangle_{\natural} = 1$, and $(\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural})(\tilde q) = (\tilde{q}^{\natural} \tilde q)/\langle\tilde q\rangle_{\natural} = 1$ because $\tilde{q}^{\natural} \tilde q = \langle\tilde q\rangle_{\natural}$ is central.</p>
 <p>For a unit quaternion $\langle\tilde q\rangle_{\natural} = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\vec q$ one has $\vec q^{\natural} = -\vec q$ and $\vec q^{-1} = -\vec q/\langle \vec q\rangle_{\natural}$, so the imaginary line is closed under inversion up to the real scale.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
@@ -161,9 +155,7 @@ $$</p>
 <p><em>Proof.</em> $(\tilde q_1\tilde q_2)(\tilde q_2^{-1}\tilde q_1^{-1}) = \tilde q_1(\tilde q_2\tilde q_2^{-1})\tilde q_1^{-1} = \tilde q_1\tilde q_1^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ then exhibits the composite.</p>
 <h3 id="the-polar-split-of-the-units">The Polar Split of the Units</h3>
 <p><strong>Theorem.</strong> Over $\mathbb{R}$ the group of units factors as a direct product</p>
-<p>$$
-\mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times \mathbb{H}^1, \qquad \tilde q = |\tilde q|\,\frac{\tilde q}{|\tilde q|},
-$$</p>
+<p>$$ \boxed{\; \mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times \mathbb{H}^1, \qquad \tilde q = |\tilde q|\,\frac{\tilde q}{|\tilde q|} \;} ,$$</p>
 <p>where $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the unit sphere, the shell of the norm-one elements, and the two factors commute. The map is an isomorphism of groups; the topological structure of $\mathbb{H}^1$ is owned by <em>The Quaternion Unit Group as a Topological Group</em>, below this article in this category.</p>
 <p><em>Proof.</em> The map $\tilde q\mapsto(|\tilde q|, \tilde q/|\tilde q|)$ is a bijection with inverse $(r,u)\mapsto ru$, and it is a homomorphism because the modulus is multiplicative and positive. Every positive real is central, so the two factors commute and the product is direct. The identification $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the definition.</p>
 <p>Thus every unit is the product of a positive scale and a unit quaternion, and the two factors are unique. This is the polar decomposition of the quaternion algebra, and it divides the group theory of the units into the multiplicative group $\mathbb{R}_{>0}$ and the norm-one shell $\mathbb{H}^1$.</p>

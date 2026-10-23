@@ -118,12 +118,12 @@ $$</p>
 $$</p>
 <p>sending the germ of a local morphism to its stalk map. It is injective; it is an isomorphism when $\mathcal{F}$ is of finite presentation over $\mathcal{O}_X$, in particular when $\mathcal{F}$ is locally free of finite rank or coherent. For such $\mathcal{F}$,</p>
 <p>$$
-\mathcal{E}nd(\mathcal{F})_x\cong\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x).
+\boxed{\;\mathcal{E}nd(\mathcal{F})_x\cong\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x)\;}.
 $$</p>
 <p><em>Proof.</em> The stalk of the hom sheaf is the filtered colimit $\varinjlim_{x\in \Omega}\operatorname{Hom}(\mathcal{F}|_\Omega,\mathcal{G}|_\Omega)$, and passing to the colimit of the stalk maps is the comparison map, since a morphism sends germs to germs. If the stalk map of a local morphism vanishes, the morphism is zero on a neighbourhood of $x$, so the germ is zero: the map is injective. For finite presentation, the restriction and the colimit are inverse: an element of $\operatorname{Hom}(\mathcal{F}_x,\mathcal{G}_x)$ is represented on a small open $\Omega$ by a morphism $\mathcal{F}|_\Omega\to\mathcal{G}|_\Omega$ because $\mathcal{F}$ admits a local presentation by finitely many generators and relations, and two representatives agree on a smaller open set. When $\mathcal{G}=\mathcal{F}$ the source is $\mathcal{E}nd(\mathcal{F})_x$ and the target is $\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x)$.</p>
 <p><strong>Corollary (locally free sheaves).</strong> If $\mathcal{F}$ is locally free of rank $r$ over $\mathcal{O}_X$, then</p>
 <p>$$
-\mathcal{E}nd(\mathcal{F})_x\cong M_r(\mathcal{O}_{X,x}),\qquad \mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{F}^{\vee},
+\boxed{\;\mathcal{E}nd(\mathcal{F})_x\cong M_r(\mathcal{O}_{X,x}),\qquad \mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{F}^{\vee}\;},
 $$</p>
 <p>with $\mathcal{F}^{\vee}=\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\mathcal{O}_X)$ the dual sheaf; $\mathcal{E}nd(\mathcal{F})$ is locally free of rank $r^2$.</p>
 <p><em>Proof.</em> For a free module of finite rank over a ring, $\operatorname{End}(A^r)\cong M_r(A)$ and $A^r\otimes_A(A^r)^{\vee}\cong M_r(A)$; the statements are these identifications on stalks, read as sheaves through the comparison map.</p>
@@ -134,7 +134,7 @@ $$</p>
 <h2 id="the-structure-sheaf">The Structure Sheaf</h2>
 <p><strong>Proposition (operators on the structure sheaf).</strong> For a ringed space $(X,\mathcal{O}_X)$,</p>
 <p>$$
-\mathcal{E}nd_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X,\qquad \operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X(X),
+\boxed{\;\mathcal{E}nd_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X,\qquad \operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X(X)\;},
 $$</p>
 <p>as sheaves of rings and as rings. The inverse map is evaluation at the unit section: the operator $T$ is sent to $T(1)$.</p>
 <p><em>Proof.</em> An $\mathcal{O}_X$-linear endomorphism $T$ of $\mathcal{O}_X$ is determined by $T(1)$ because $T(a)=T(a\cdot 1)=a\,T(1)$ for a local function $a$; conversely a local function $b$ defines the operator $a\mapsto ab$, which is $\mathcal{O}_X$-linear. The two assignments are inverse, and they are compatible with restrictions.</p>

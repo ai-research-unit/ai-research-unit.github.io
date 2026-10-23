@@ -76,7 +76,7 @@
 <h2 id="the-norm-map-and-its-polarisation">The Norm Map and Its Polarisation</h2>
 <p><strong>Definition.</strong> The <strong>norm map</strong> of the algebra is $N(x) = xx^{*}$, valued in the fixed ring when $x^{*}x = xx^{*}$, and the <strong>trace form</strong> of the involution is</p>
 <p>$$
-\langle x, y \rangle = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = \tfrac{1}{2}\bigl(xy^{*} + yx^{*}\bigr) .
+\boxed{\;\langle x, y \rangle = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = \tfrac{1}{2}\bigl(xy^{*} + yx^{*}\bigr)\;} .
 $$</p>
 <p><strong>Proposition.</strong> The polarisation of the norm map is the bilinear map $\langle x,y\rangle = \tfrac{1}{2}(xy^{*}+yx^{*})$, and the <strong>trace form</strong> of the involution is its functional image $\varphi(\langle x,y\rangle)$, which is symmetric and $R^{\varsigma}$-bilinear.</p>
 <p><strong>Proof.</strong> Expand $N(x+y) = (x+y)(x^{*}+y^{*}) = xx^{*} + xy^{*} + yx^{*} + yy^{*}$ and subtract $N(x) + N(y)$; the result is $xy^{*} + yx^{*}$, whose $R$-linearity is clear. The functional image $\varphi(xy^{*}+yx^{*})$ is symmetric because the two products are exchanged by the involution and $\varphi$ is $\varsigma$-linear.</p>
@@ -85,7 +85,7 @@ $$</p>
 <p>Let $A = (\alpha,\beta)_{R}$ be the quaternion algebra with basis $1, i, j, k = ij$, $i^{2} = \alpha$, $j^{2} = \beta$, and the conjugation $\bar{x} = a - bi - cj - dk$ for $x = a + bi + cj + dk$.</p>
 <p><strong>Proposition.</strong> The norm $N(x) = x\bar{x}$ is the quadratic form</p>
 <p>$$
-N(x) = a^{2} - \alpha b^{2} - \beta c^{2} + \alpha\beta d^{2},
+\boxed{\;N(x) = a^{2} - \alpha b^{2} - \beta c^{2} + \alpha\beta d^{2}\;},
 $$</p>
 <p>and it is <strong>multiplicative</strong>: $N(xy) = N(x)N(y)$ for all $x, y$.</p>
 <p><strong>Proof.</strong> $x\bar{x} = a^{2} - b^{2}i^{2} - c^{2}j^{2} - d^{2}k^{2}$ because the cross terms cancel pairwise by the anticommutation of $i, j, k$; with $i^{2} = \alpha$, $j^{2} = \beta$ and $k^{2} = -\alpha\beta$ this is the displayed form. For multiplicativity, $N(xy) = xy\,\overline{xy} = xy\bar{y}\bar{x} = xN(y)\bar{x}$ because the conjugation is an anti-automorphism; $N(y)$ is central, so $xN(y)\bar{x} = N(y)x\bar{x} = N(x)N(y)$.</p>
@@ -95,7 +95,7 @@ $$</p>
 <p><strong>Definition.</strong> For a central simple $R$-algebra $A$ the <strong>reduced norm</strong> $N = \operatorname{Nrd}$ is the multiplicative polynomial map defined by the determinant of the regular representation, and the <strong>reduced trace</strong> $T = \operatorname{Trd}$ is its polarisation.</p>
 <p><strong>Proposition.</strong> The reduced norm is multiplicative, $N(xy) = N(x)N(y)$. For an algebra of <strong>degree two</strong> — a quaternion algebra, $\mathsf{M}_2$, or the biquaternion algebra — the reduced norm is a quadratic form and its polarisation is the bilinear form</p>
 <p>$$
-B(x,y) = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = T\bigl(x\,\operatorname{adj}(y)\bigr),
+\boxed{\;B(x,y) = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = T\bigl(x\,\operatorname{adj}(y)\bigr)\;},
 $$</p>
 <p>the reduced trace against the adjugate. It is <strong>not</strong> the Hermitian form $h(x,y) = T(xy^{*})$. For degree $n \geq 3$ the reduced norm is a form of degree $n$ and its full polarisation is $n$-linear, of which $T(x\operatorname{adj}(y))$ is only the quadratic part.</p>
 <p><strong>Proof.</strong> Multiplicativity is the multiplicativity of the determinant. For the polarisation on $\mathsf{M}_2$, $\det(X+Y) = \det X + \det Y + \tau(X\operatorname{adj}Y)$ directly; for $n \geq 3$ the expansion $\det(X+Y) = \det X + \sum_{ij}X_{ij}\operatorname{adj}(Y)_{ji} + \dots$ has the higher-degree terms that the dots conceal. The last clause is the identity of the two quadratic forms on $\mathsf{M}_2$ checked below.</p>

@@ -78,13 +78,13 @@
 <p><strong>Definition.</strong> Let $H$ be a non-degenerate invariant Hermitian form on $\mathrm{G}$, preserved by the grade involution, and let $\ell^{\alpha}_a = L_a\alpha$ be the signed left multiplication. The <strong>adjoint</strong> is the operator $(\ell^{\alpha}_a)^{*}$ with $H(\ell^{\alpha}_ax,y) = H(x,(\ell^{\alpha}_a)^{*}y)$.</p>
 <p><strong>Theorem (the explicit adjoint).</strong> The adjoint of the signed left multiplication is the signed left multiplication by the negative of the image of the parameter,</p>
 <p>$$
-\bigl(\ell^{\alpha}_a\bigr)^{*} = \alpha^{*}L_a^{*} = -\alpha L_a = -L_{\alpha(a)}\alpha = \ell^{\alpha}_{-\alpha(a)} = -\ell^{\alpha}_{\alpha(a)} .
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*} = \alpha^{*}L_a^{*} = -\alpha L_a = -L_{\alpha(a)}\alpha = \ell^{\alpha}_{-\alpha(a)} = -\ell^{\alpha}_{\alpha(a)}\;} .
 $$</p>
 <p><em>Proof.</em> The adjoint reverses the order, so $(\ell^{\alpha}_a)^{*} = \alpha^{*}L_a^{*}$; the involution is a self-adjoint isometry, $\alpha^{*} = \alpha$, and the left multiplication is skew-adjoint, $L_a^{*} = -L_a$, as in <em>The Signed Adjoint Sandwich on a Lie Algebra</em>; hence the adjoint is $-\alpha L_a$, and the naturality $\alpha L_a = L_{\alpha(a)}\alpha$ together with the linearity in the parameter gives the forms displayed.</p>
 <h3 id="the-parity-dichotomy">The Parity Dichotomy</h3>
 <p><strong>Theorem (self-adjoint and skew-adjoint).</strong> The signed left multiplication is self-adjoint exactly for the odd parameters and skew-adjoint exactly for the even parameters:</p>
 <p>$$
-\bigl(\ell^{\alpha}_a\bigr)^{*} = \ell^{\alpha}_a \iff \alpha(a) = -a \iff a\in\mathrm{G}^{-} ,
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*} = \ell^{\alpha}_a \iff \alpha(a) = -a \iff a\in\mathrm{G}^{-}\;} ,
 $$
 $$
 \bigl(\ell^{\alpha}_a\bigr)^{*} = -\ell^{\alpha}_a \iff \alpha(a) = a \iff a\in\mathrm{G}^{+} .
@@ -95,7 +95,7 @@ $$</p>
 <h3 id="unitarity">Unitarity</h3>
 <p><strong>Theorem.</strong> The signed left multiplication is unitary for $H$ exactly when the ordinary left multiplication is a complex structure,</p>
 <p>$$
-\bigl(\ell^{\alpha}_a\bigr)^{*}\ell^{\alpha}_a = \mathrm{id} \iff L_a^{2} = -\mathrm{id} \ \text{and}\ L_{\alpha(a)}^{2} = -\mathrm{id} ,
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*}\ell^{\alpha}_a = \mathrm{id} \iff L_a^{2} = -\mathrm{id} \ \text{and}\ L_{\alpha(a)}^{2} = -\mathrm{id}\;} ,
 $$</p>
 <p>and in that case the operator is a unitary complex structure on the algebra.</p>
 <p><em>Proof.</em> Compute $(\ell^{\alpha}_a)^{*}\ell^{\alpha}_a = \ell^{\alpha}_{-\alpha(a)}\ell^{\alpha}_a = -\ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a$; using the square of <em>The Signed Sandwich on a Lie Algebra</em>, $-\ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = -L_{\alpha(a)}L_{\alpha(a)} = -L_{\alpha(a)}^{2}$; the product is the identity exactly when $L_{\alpha(a)}^{2} = -\mathrm{id}$, and the analogous computation for the reversed product gives $L_a^{2} = -\mathrm{id}$.</p>

@@ -115,7 +115,7 @@ $$</p>
 <h3 id="the-sobolev-inequalities">The Sobolev Inequalities</h3>
 <p><strong>Theorem (Gagliardo–Nirenberg–Sobolev).</strong> Let $1\le p<n$ and $k\ge1$ with $kp<n$. Then there is a constant $C$ with</p>
 <p>$$
-\|u\|_{L^{n}}^*(\mathbb{R}^n) \le C\sum_{|\gamma|=k}\|\partial^\gamma u\|_{L^{n}}(\mathbb{R}^n), \qquad \frac1{p^*} = \frac1p - \frac{k}{n},
+\boxed{\;\|u\|_{L^{n}}^*(\mathbb{R}^n) \le C\sum_{|\gamma|=k}\|\partial^\gamma u\|_{L^{n}}(\mathbb{R}^n), \qquad \frac1{p^*} = \frac1p - \frac{k}{n}\;},
 $$</p>
 <p>for every $u \in C_c^\infty(\mathbb{R}^n)$; consequently $W^{k,n}(\mathbb{R}^n) \hookrightarrow L^{n^*}(\mathbb{R}^n)$, the embedding being continuous. The exponent $p^*$ is the <strong>Sobolev conjugate</strong> of $p$ at order $k$, and it is the largest $q$ for which such an estimate can hold.</p>
 <p><em>Proof.</em> Quoted as standard. For $k=1$ the inequality follows from the one-dimensional fundamental theorem of calculus applied in each coordinate and the Hölder and arithmetic–geometric inequalities; the case $k>1$ follows by iterating it. Sharpness is shown by testing the inequality on the family $u_\varepsilon(x) = \varepsilon^{-n/p^*}\eta(x/\varepsilon)$ for a fixed $\eta \in C_c^\infty$: all the norms on the left are then constant in $\varepsilon$ while the right-hand side stays bounded only for $q\le p^*$.</p>
@@ -145,7 +145,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $a : H\times H \to \mathbb{R}$ be a bilinear form on a real Hilbert space $H$. It is <strong>bounded</strong> if $|\mathfrak{a}(u,v)| \le M\|u\|\|v\|$ and <strong>coercive</strong> if $\mathfrak{a}(u,u) \ge m\|u\|^2$ for some $m>0$.</p>
 <p><strong>Theorem (Lax–Milgram).</strong> Let $\mathfrak{a}$ be a bounded coercive bilinear form on the Hilbert space $H$ and let $F \in H^*$. Then there is a unique $u \in H$ with</p>
 <p>$$
-\mathfrak{a}(u,v) = F(v) \qquad \text{for every } v \in H ,
+\boxed{\;\mathfrak{a}(u,v) = F(v) \qquad \text{for every } v \in H\;} ,
 $$</p>
 <p>and $\|u\| \le m^{-1}\|F\|_{H^*}$.</p>
 <p><em>Proof.</em> For each $u$ the functional $v \mapsto \mathfrak{a}(u,v)$ is bounded, so there is $Au \in H$ with $\mathfrak{a}(u,v) = \langle Au,v\rangle$; $A$ is bounded with $\|A\|\le M$ and coercive, $\langle Au,u\rangle \ge m\|u\|^2$, hence injective with closed range. The range is also dense: if $\mathfrak{a}(u,w)=0$ for every $u$, then taking $u=w$ gives $0=\mathfrak{a}(w,w)\ge m\|w\|^2$, so $w=0$. A closed dense subspace is all of $H$, so $A$ is bijective and $u = A^{-1}R^{-1}F$ with $R$ the Riesz map. The norm bound follows from coercivity applied to the equation with $v=u$.</p>
@@ -165,7 +165,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (existence and uniqueness).</strong> Under the ellipticity condition, and with $c\ge0$ bounded, the Dirichlet problem has a unique weak solution $u \in H^1_0(\Omega)$ for every $f \in L^2(\Omega)$, and</p>
 <p>$$
-\|u\|_{H^1_0} \le \frac{1+C_P^2}{\lambda}\|f\|_{L^2},
+\boxed{\;\|u\|_{H^1_0} \le \frac{1+C_P^2}{\lambda}\|f\|_{L^2}\;},
 $$</p>
 <p>where $C_P$ is the Poincaré constant of $\Omega$.</p>
 <p><em>Proof.</em> The form $\mathfrak{a}$ is bounded with $M \le \Lambda + \|c\|_\infty$ by Cauchy–Schwarz, and coercive with $m = \lambda\min(1,C_P^{-2})$ after adding the positive term $cu$ if $c$ is not identically zero; the functional $v\mapsto\int fv$ is bounded on $H^1_0$ with norm at most $\|f\|_{L^2}$. Lax–Milgram gives a unique $u$, and the estimate is the coercivity inequality applied with $v=u$.</p>

@@ -111,7 +111,9 @@ $$</p>
 <h2 id="the-t-svd">The t-SVD</h2>
 <p><strong>Theorem (the t-SVD).</strong> For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ there are unitary tensors $U\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_1\times n_3}$ and $V\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_2\times n_3}$ and an f-diagonal tensor $S\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ such that</p>
 <p>$$
-A=U\ast S\ast V^{\mathsf H}.
+\boxed{\;
+A=U\ast S\ast V^{\mathsf H}
+\;}.
 $$</p>
 <p><em>Proof.</em> Transform $A$ along the third mode. For each $k$, apply the matrix decomposition over $\mathbb{B}_{\mathrm{r}}$ to $\widehat A^{(k)}$:</p>
 <p>$$
@@ -145,7 +147,9 @@ $$</p>
 <h2 id="the-norm-identity">The Norm Identity</h2>
 <p><strong>Theorem.</strong> For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$,</p>
 <p>$$
-\|A\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\|_{\mathrm F},
+\boxed{\;
+\|A\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\|_{\mathrm F}
+\;},
 $$</p>
 <p>where $\operatorname{diag}(\widehat A)$ is the block diagonal matrix with blocks $\widehat A^{(1)},\dots,\widehat A^{(n_3)}$.</p>
 <p><em>Proof.</em> The Frobenius norm of the block diagonal is the square root of the sum of the squared Frobenius norms of its blocks. The unnormalised Fourier transform along a mode of length $n_3$ satisfies the Parseval identity</p>
@@ -155,7 +159,9 @@ $$</p>
 <p>because each entry of $A$ is transformed by a vector of squared norm $n_3$ and the transforms of different entries are orthogonal in the sum. Dividing by $n_3$ and taking square roots gives the identity.</p>
 <p><strong>Corollary.</strong> For the t-SVD $A=U\ast S\ast V^{\mathsf H}$,</p>
 <p>$$
-\|A\|_{\mathrm F}=\|S\|_{\mathrm F}.
+\boxed{\;
+\|A\|_{\mathrm F}=\|S\|_{\mathrm F}
+\;}.
 $$</p>
 <p><em>Proof.</em> In the transform, $\widehat A^{(k)}=\widehat U^{(k)}\widehat S^{(k)}(\widehat V^{(k)})^{\mathsf H}$, and the Frobenius norm is invariant under multiplication by the unitary matrices $\widehat U^{(k)}$ and $\widehat V^{(k)\mathsf H}$. Thus $\|\widehat A^{(k)}\|_{\mathrm F}=\|\widehat S^{(k)}\|_{\mathrm F}$ for every $k$; summing and using the theorem gives the identity.</p>
 <p><strong>Remark (the singular value tubes).</strong> The norm of the tensor is also the Euclidean norm of the diagonal tubes,</p>

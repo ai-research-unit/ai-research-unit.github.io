@@ -78,7 +78,7 @@
 <h3 id="means-on-bounded-functions">Means on Bounded Functions</h3>
 <p><strong>Definition.</strong> Let $G$ be a topological group and let $C_b(G)$ be the space of bounded continuous real-valued functions on $G$, with the left action of $G$ given by $(\lambda_g f)(x) = f(g^{-1}x)$. A <strong>mean</strong> on $G$ is a linear functional $m : C_b(G) \to \mathbb{R}$ such that</p>
 <p>$$
-m(f) \geq 0 \ \text{whenever } f \geq 0, \qquad m(1_G) = 1, \qquad m(\lambda_g f) = m(f) \ \text{for all } g\in G ,
+\boxed{\;m(f) \geq 0 \ \text{whenever } f \geq 0, \qquad m(1_G) = 1, \qquad m(\lambda_g f) = m(f) \ \text{for all } g\in G\;} ,
 $$</p>
 <p>where $1_G$ denotes the constant function $1$. The group $G$ is <strong>amenable</strong> if such a mean exists. A mean is <strong>left-invariant</strong> by the third condition; replacing it by $m(f^\vee)$ with $f^\vee(x) = f(x^{-1})$ gives a right-invariant mean, and a group with a left-invariant mean has a two-sided invariant one, so the distinction is immaterial.</p>
 <p><strong>Definition (discrete form).</strong> For a discrete group $G$ a mean may be taken on the space $\ell^\infty(G)$ of all bounded functions, and by restriction to characteristic functions it is the same thing as a <strong>finitely additive left-invariant probability measure</strong> on the power set of $G$: a function $\mu : \mathcal{P}(G) \to [0,1]$ with $\mu(G) = 1$, $\mu(A\cup B) = \mu(A)+\mu(B)$ for disjoint $A,B$, and $\mu(gA) = \mu(A)$ for all $g \in G$. The passage between the two descriptions is by $m(\chi_A) = \mu(A)$ and linearity; the choice of $C_b(G)$, $\ell^\infty(G)$ or the characteristic functions does not change the class of amenable groups.</p>

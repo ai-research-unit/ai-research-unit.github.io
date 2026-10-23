@@ -87,7 +87,7 @@ $$</p>
 <p>It is the two-sided operator of the multiplication, and it is additive in $\tilde Q_1$ because the multiplication is additive in each variable.</p>
 <p><strong>Proposition.</strong> The sandwich is the ordinary two-sided multiplication composed with the involution,</p>
 <p>$$
-S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*} , \qquad T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2^{*} ,
+\boxed{\;S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*} , \qquad T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2^{*}\;},
 $$</p>
 <p>and it is the composite $R_{\tilde Q_2}L_{\tilde Q}$ of the right multiplication by $\tilde Q_2$ and the left multiplication by $\tilde Q$.</p>
 <p><strong>Proof.</strong> $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1^{*})=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$, which is the first display. For the second, $R_{\tilde Q_2}L_{\tilde Q}(\tilde Q_1)=R_{\tilde Q_2}(\tilde Q\tilde Q_1^{*})=(\tilde Q\tilde Q_1^{*})\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$; the composite of the two one-sided operators is the mixed composition $R_{\tilde Q_8}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_8}$ of <em>The Left and Right Multiplications of the Biquaternion Sesqualgebra</em>, §<em>The Mixed Composites</em>, with $\tilde Q_8=\tilde Q_2$ and $\tilde Q_2=\tilde Q$.</p>
@@ -139,7 +139,7 @@ $$</p>
 <h3 id="the-invertible-sandwiches">The Invertible Sandwiches</h3>
 <p><strong>Theorem.</strong> The sandwich $S_{\tilde Q,\tilde Q_2}$ is invertible if and only if $\tilde Q$ and $\tilde Q_2$ are units of $\mathbb{B}$, and then</p>
 <p>$$
-S_{\tilde Q,\tilde Q_2}^{-1}=S_{\tilde Q_2^{-1},\tilde Q^{-1}} .
+\boxed{\;S_{\tilde Q,\tilde Q_2}^{-1}=S_{\tilde Q_2^{-1},\tilde Q^{-1}}\;}.
 $$</p>
 <p><strong>Proof.</strong> If $\tilde Q$ or $\tilde Q_2$ is not a unit then the ordinary multiplication by it is not injective, by <em>Norm and Invertibility in the General Quaternionic Algebra</em>, so $S_{\tilde Q,\tilde Q_2}$ has a nonzero kernel and is not invertible. Conversely, for units, $S_{\tilde Q,\tilde Q_2}S_{\tilde Q_2^{-1},\tilde Q^{-1}}$ is $T_{\tilde Q\tilde Q^{-1},\tilde Q_2^{-1*}\tilde Q_2^{*}}=T_{e_t,e_t}$ by the composition table, and the same computation in the other order gives the identity as well.</p>
 <p><strong>Remark.</strong> The inverse exchanges the two parameters and inverts them, and in the general notation of <em>The Sesquilinear Sandwich Operator</em>, §<em>The Invertible Sandwiches</em>, the same statement is written $S_{a,b}^{-1}=S_{(b^{-1})^{*},(a^{-1})^{*}}$; the translation carries the star from the parameter to the last slot, which is the convention of this batch. The parametrisation is not injective: $S_{\tilde Q\tilde Q_4,\tilde Q_2\tilde Q_4^{-1*}}=S_{\tilde Q,\tilde Q_2}$ for a central unit $\tilde Q_4$, and on the units the kernel of the parametrisation is the group of the central units, which is $\mathbb{C}^{\times}e_t$ here.</p>
@@ -154,7 +154,7 @@ $$</p>
 <h3 id="the-rank">The Rank</h3>
 <p><strong>Theorem.</strong> The dimension of the image of $S_{\tilde Q,\tilde Q_2}$, and hence its rank as a conjugate-linear map, is the product of the ranks of the two parameters:</p>
 <p>$$
-\operatorname{rank}S_{\tilde Q,\tilde Q_2}=\operatorname{rank}\tilde Q\cdot\operatorname{rank}\tilde Q_2 .
+\boxed{\;\operatorname{rank}S_{\tilde Q,\tilde Q_2}=\operatorname{rank}\tilde Q\cdot\operatorname{rank}\tilde Q_2\;}.
 $$</p>
 <p>In the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ of <em>Biquaternion $2\times2$ Matrix Element Representation</em>, the rank of an element is $0$, $1$ or $2$, and the possible ranks of a sandwich are $0$, $1$, $2$ and $4$.</p>
 <p><strong>Proof.</strong> Each parameter has rank $0$, $1$ or $2$ in the two-by-two model. The ordinary two-sided multiplication by a matrix of rank $r$ on the left and a matrix of rank $s$ on the right has image of dimension $rs$, the standard rank identity $\dim(A \mathsf{M}_2 B)=(\operatorname{rank}A)(\operatorname{rank}B)$; the sandwich has the same image by the proposition above, and the conjugation is a bijection.</p>

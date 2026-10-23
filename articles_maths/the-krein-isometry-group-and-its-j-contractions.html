@@ -82,26 +82,22 @@ $$</p>
 <p><strong>Proof.</strong> $\langle T\tilde{Q}_2,T\tilde{Q}_1\rangle_{\natural*}=\langle T\tilde{Q}_2,JT\tilde{Q}_1\rangle_{*}=\langle T^{*}JT\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$ while $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle J\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$, so the preservation of the general quaternionic sesquilinear form is $T^{*}JT=J$; multiplying by $J$ on the right gives $T^{\dagger}T=\mathrm{id}$.</p>
 <h2 id="the-algebraic-krein-isometries">The Algebraic Krein Isometries</h2>
 <p><strong>Theorem (the isometries among the three families).</strong> For a biquaternion $\tilde{Q}_1$,</p>
-<p>$$
-L_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
+<p>$$ \boxed{\;L_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
 \qquad
 R_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
 \qquad
-\Theta_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|=1,
-$$</p>
+\Theta_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|=1\;}, $$</p>
 <p>where $S^{1}e_t$ is the circle of central phases.</p>
 <p><strong>Proof.</strong> $L_{\tilde{Q}_1}^{\dagger}L_{\tilde{Q}_1}=R_{\bar{\tilde{Q}_1}}L_{\tilde{Q}_1}$ is the operator $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\bar{\tilde{Q}_1}$, which is the identity exactly when $\tilde{Q}_1\bar{\tilde{Q}_1}=e_t$ and $\tilde{Q}_1$ is central, that is $\tilde{Q}_1\in S^{1}e_t$; the right case is symmetric. For the sandwich, $\Theta_{\tilde{Q}_1}^{\dagger}\Theta_{\tilde{Q}_1}=\Theta_{\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}e_t}=|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|^{2}\mathrm{id}$.</p>
 <p><strong>Corollary (the compact algebraic subgroup).</strong> The central phases and the unitary sandwiches generate the compact subgroup</p>
 <p>$$
-\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3),
+\boxed{\;\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)\;},
 $$</p>
 <p>of real dimension $4$: the phases are the scalar isometries and the unitary sandwiches are the inner automorphisms $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\tilde{Q}_1^{\dagger}$ of the algebra, which depend only on the class of $\tilde{Q}_1$ in $\mathrm{U}(2)/\mathrm{U}(1)=PU(2)\cong SO(3)$. The two families commute, and their only common element is the identity. This subgroup is far from the whole group, whose dimension is $16$.</p>
 <p><strong>Proof.</strong> On the unitary group the kernel of the map $\tilde{Q}_1\mapsto\Theta_{\tilde{Q}_1}$ is the central circle $\mathrm{U}(1)$, so its image is $\mathrm{U}(2)$ modulo its centre, which is $PU(2)\cong SO(3)$. The phases are central in the operator algebra, hence commute with the sandwiches; and $\Theta_{\tilde{Q}_1}$ is scalar only for $\tilde{Q}_1$ a scalar of modulus one, in which case $\Theta_{\tilde{Q}_1}=\mathrm{id}$.</p>
 <h2 id="the-spectrum-of-a-krein-isometry">The Spectrum of a Krein Isometry</h2>
 <p><strong>Theorem (inversion symmetry; no confinement to the circle).</strong> If $T$ is $J$-unitary then</p>
-<p>$$
-\lambda\in\mathrm{spec}(T)\iff\frac{1}{\bar\lambda}\in\mathrm{spec}(T),
-$$</p>
+<p>$$ \boxed{\;\lambda\in\mathrm{spec}(T)\iff\frac{1}{\bar\lambda}\in\mathrm{spec}(T)\;}, $$</p>
 <p>with the same multiplicity; the eigenvalues on the unit circle are paired by conjugation, and the eigenvalues off the circle occur in inverted pairs. The spectrum need not lie on the unit circle.</p>
 <p><strong>Proof.</strong> $T^{*}=JT^{-1}J$ makes $T^{*}$ similar to $T^{-1}$, so the characteristic polynomials of $T^{*}$ and of $T^{-1}$ agree, and $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$ while $\mathrm{spec}(T^{-1})=\{\lambda^{-1}\}$. The boost of the next section has the eigenvalues $\exp(\pm t)$.</p>
 <p><strong>Example.</strong> The diagonal phases $L_{ce_t}$ with $c\in S^{1}$ have the single eigenvalue $c$ of multiplicity four, on the circle; the unitary sandwiches have the eigenvalues $\lambda_i\bar\lambda_j$ of the conjugating unitary matrix, on the circle as well; the boosts leave the circle.</p>
@@ -113,9 +109,7 @@ T_{t}\vec e_x=\sinh t\,e_t+\cosh t\,\vec e_x,\qquad
 T_{t}=\mathrm{id}\ \text{on}\ \mathbb{C}\vec e_y\perp_{K}\mathbb{C}\vec e_z .
 $$</p>
 <p><strong>Theorem (the boosts are Krein isometries).</strong> Each $T_{t}$ is a Krein isometry, the assignment $t\mapsto T_{t}$ is a one-parameter subgroup of $U_{J}(\mathbb{B})$, and the spectrum is</p>
-<p>$$
-\mathrm{spec}(T_{t})=\{\exp(t),\exp(-t),1,1\},
-$$</p>
+<p>$$ \mathrm{spec}(T_{t})=\{\exp(t),\exp(-t),1,1\}, $$</p>
 <p>so the boosts are the elements of the group whose spectrum is real and off the unit circle. The restriction of $T_{t}$ to the Lorentzian slice $\mathbb{H}_{\mathbb{B}}$ is the Lorentz boost of rapidity $t$ along the $\vec e_x$ direction, that is of velocity $\tanh t$.</p>
 <p><strong>Proof.</strong> In the plane spanned by $e_t,\vec e_x$ the form has the matrix $\mathrm{diag}(1,-1)$ and the matrix of $T_{t}$ is $\begin{pmatrix}\cosh t&\sinh t\\ \sinh t&\cosh t\end{pmatrix}$, whose columns have squares $\cosh^{2}t-\sinh^{2}t=1$, $-\cosh^{2}t+\sinh^{2}t=-1$ and scalar product $\cosh t\sinh t-\sinh t\cosh t=0$: the form is preserved, and the two remaining basis vectors are fixed in their own definite lines, so $T_{t}$ is an isometry. Additivity $T_{s}T_{t}=T_{s+t}$ is the addition formula for the hyperbolic functions, so the family is a one-parameter subgroup. The eigenvalues of the plane block are $\exp(\pm t)$ and the two fixed directions contribute $1,1$. The fixed direction $e_{1}$ of the Lorentzian slice is the boost axis, and the parameter is the rapidity.</p>
 <p><strong>Corollary (the group is non-compact).</strong> The boost family is unbounded in the operator norm as $t\to\infty$, so $U_{J}(\mathbb{B})$ is non-compact; the maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$ is exactly the part that fixes the canonical fundamental decomposition.</p>

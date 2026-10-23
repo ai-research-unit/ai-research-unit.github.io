@@ -86,9 +86,9 @@ $$</p>
 <h2 id="the-composition-laws-and-the-two-actions">The Composition Laws and the Two Actions</h2>
 <p><strong>Proposition (the composition laws).</strong> For all $\tilde Q_6,\tilde Q_2$,</p>
 <p>$$
-L_{\tilde Q_6}\circ L_{\tilde Q_2}=L_{\tilde Q_6\tilde Q_2},\qquad
+\boxed{\; L_{\tilde Q_6}\circ L_{\tilde Q_2}=L_{\tilde Q_6\tilde Q_2},\qquad
 R_{\tilde Q_6}\circ R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_6},\qquad
-L_{\tilde Q_6}\circ R_{\tilde Q_2}=R_{\tilde Q_2}\circ L_{\tilde Q_6}.
+L_{\tilde Q_6}\circ R_{\tilde Q_2}=R_{\tilde Q_2}\circ L_{\tilde Q_6} \;}.
 $$</p>
 <p><em>Proof.</em> $L_{\tilde Q_6}L_{\tilde Q_2}(\tilde Q_1)=\tilde Q_6\tilde Q_2\tilde Q_1=L_{\tilde Q_6\tilde Q_2}(\tilde Q_1)$; $R_{\tilde Q_6}R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2\tilde Q_6=R_{\tilde Q_2\tilde Q_6}(\tilde Q_1)$; and the left and right multiplications commute by associativity, $\tilde Q_6(\tilde Q_1\tilde Q_2)=(\tilde Q_6\tilde Q_1)\tilde Q_2$.</p>
 <p><strong>Remark (the two laws are opposite).</strong> The left law preserves the order of the parameters and the right law reverses it: $L$ is a representation of the algebra and $R$ is a representation of the opposite algebra, $R_{\tilde Q_6}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_6}$. This is the formal reason the two-sided product $L_{\tilde Q_6}R_{\tilde Q_2}$ is not multiplicative in general, and the reason the natural conjugation, which is an anti-automorphism, is the right partner for the left multiplication.</p>
@@ -129,7 +129,7 @@ N\bigl(R_{\tilde Q_6}\tilde Q_4\bigr)=\langle\tilde Q_6\rangle_{\natural}\,\lang
 $$</p>
 <p>so that each multiplication scales the form by the norm of its parameter; in the coefficient basis,</p>
 <p>$$
-\det L_{\tilde Q_6}=\det R_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}^{2}.
+\boxed{\; \det L_{\tilde Q_6}=\det R_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}^{2} \;}.
 $$</p>
 <p><em>Proof.</em> $\langle\tilde Q_6\tilde Q_4\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}\langle\tilde Q_4\rangle_{\natural}$ is the multiplicativity of the norm, and the right case is the same with the factors interchanged. For the determinant, the matrix realisation $\mathsf{M}_2$ of the algebra sends $L_{\tilde Q_6}$ to the map $B\mapsto\mathsf{M}_2(\tilde Q_6)B$ on $M_2(\mathbb{C})$, which is $\mathsf{M}_2(\tilde Q_6)\otimes I_2$; the determinant of a Kronecker product is $\det(\mathsf{M}_2(\tilde Q_6))^{2}\det(I_2)^{2}=\det(\mathsf{M}_2(\tilde Q_6))^{2}=\langle\tilde Q_6\rangle_{\natural}^{2}$, since $\det\mathsf{M}_2(\tilde Q_6)=\langle\tilde Q_6\rangle_{\natural}$.</p>
 <p><strong>Corollary (the form-preserving multiplications).</strong> The multiplications that preserve the form are exactly those by an element of norm one, and their group is the norm-one slice of $\mathbb{B}^\times$; the multiplications by an element of norm $-1$ reverse the sign of the form.</p>
@@ -143,8 +143,8 @@ $$</p>
 <h2 id="the-hermitian-layer">The Hermitian Layer</h2>
 <p><strong>Proposition (the dagger adjoints).</strong> For the general plain sesquilinear form,</p>
 <p>$$
-\bigl(L_{\tilde Q_6}\bigr)^{*}=L_{\tilde Q_6^{*}},\qquad
-\bigl(R_{\tilde Q_2}\bigr)^{*}=R_{\tilde Q_2^{*}} .
+\boxed{\; \bigl(L_{\tilde Q_6}\bigr)^{*}=L_{\tilde Q_6^{*}},\qquad
+\bigl(R_{\tilde Q_2}\bigr)^{*}=R_{\tilde Q_2^{*}} \;}.
 $$</p>
 <p><em>Proof.</em> $\langle L_{\tilde Q_6}\tilde Q_4,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_6\tilde Q_4\tilde Q_1^{*})$ and $\langle\tilde Q_4,L_{\tilde Q_6^{*}}\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_4(\tilde Q_6^{*}\tilde Q_1)^{*})=\mathrm{Sc}(\tilde Q_4\tilde Q_1^{*}\tilde Q_6)$; the two agree by the cyclicity of the scalar part, since $(\tilde Q_6^{*}\tilde Q_1)^{*}=\tilde Q_1^{*}\tilde Q_6$.</p>
 <p><strong>Corollary (the sectors for the dagger).</strong> For the Hermitian form, $L_{\tilde Q_6}$ is self-adjoint exactly for $\tilde Q_6\in\mathbb{M}_+$, skew-adjoint exactly for $\tilde Q_6\in\mathbb{M}_-$, and unitary exactly on the slice $a^{*}a=e_t$; the two sectors are the two halves of the Hermitian splitting, and the dagger layer is where the pair of sectors is symmetric (<em>One-Sided Operators on the General Plain Sesqualgebra</em>).</p>

@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Definition.</strong> An irrational $\alpha$ is <strong>badly approximable</strong> if there is $c > 0$ such that $\lvert \alpha - r/s \rvert > c/s^2$ for all $r/s$. The Lagrange constant of $\alpha$ is $\liminf_{s\to\infty} s\lVert s\alpha\rVert$.</p>
 <p><strong>Theorem (Hurwitz).</strong> For every irrational $\alpha$ there are infinitely many $r/s$ with</p>
 <p>$$
-\left\lvert \alpha - \frac{r}{s} \right\rvert < \frac{1}{\sqrt5\, s^2} .
+\boxed{\;\left\lvert \alpha - \frac{r}{s} \right\rvert < \frac{1}{\sqrt5\, s^2} \;}.
 $$</p>
 <p>The constant $\sqrt5$ is best possible: for $\alpha = \varphi = (1+\sqrt5)/2$ and every $c > \sqrt5$, the inequality $\lvert \varphi - r/s\rvert < 1/(c s^2)$ has only finitely many solutions. Thus $\varphi$ is badly approximable and its Lagrange constant is $1/\sqrt5$.</p>
 <p><strong>Proof.</strong> Since $\alpha$ lies between consecutive convergents, the determinant identity gives</p>
@@ -149,11 +149,10 @@ r_n = a_n r_{n-1} + r_{n-2}, \qquad s_n = a_n s_{n-1} + s_{n-2}.
 $$</p>
 <p><strong>Theorem.</strong> The convergents satisfy</p>
 <p>$$
-r_n s_{n-1} - r_{n-1} s_n = (-1)^{n-1}, \qquad r_n s_{n-2} - r_{n-2} s_n = (-1)^n a_n,
+\boxed{\;r_n s_{n-1} - r_{n-1} s_n = (-1)^{n-1}, \qquad r_n s_{n-2} - r_{n-2} s_n = (-1)^n a_n\;},
 $$</p>
 <p>so that $r_n$ and $s_n$ are coprime, and for every $n$,</p>
-<p>$$
-\left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}} < \frac{1}{s_n^2} .
+<p>$$ \boxed{\;\left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}} < \frac{1}{s_n^2} \;}.
 $$</p>
 <p><strong>Proof.</strong> The determinant identities are inductions on $n$ from the recurrences; the coprimality is the first identity. The estimate follows from the identity</p>
 <p>$$
@@ -170,7 +169,7 @@ $$</p>
 <h3 id="infinite-continued-fractions-and-quadratic-irrationals">Infinite Continued Fractions and Quadratic Irrationals</h3>
 <p><strong>Theorem.</strong> Every irrational $\alpha$ has a unique infinite continued fraction $[a_0; a_1, a_2, \dots]$, and the convergents converge to $\alpha$:</p>
 <p>$$
-\alpha = \lim_{n\to\infty} \frac{r_n}{s_n}, \qquad \left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}} .
+\boxed{\;\alpha = \lim_{n\to\infty} \frac{r_n}{s_n}, \qquad \left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}}\;}.
 $$</p>
 <p>The map $\alpha \mapsto (a_0, a_1, a_2, \dots)$ is a bijection from the irrationals to the sequences with $a_i \geq 1$ for $i \geq 1$, and $\alpha$ is rational exactly when its expansion is finite.</p>
 <p><strong>Proof.</strong> Since $s_n \geq s_{n-1} + s_{n-2}$, the denominators grow at least as fast as the Fibonacci numbers, so $s_n \to \infty$ and the estimate of the preceding theorem shows that the convergents are Cauchy; their limit $\alpha$ is irrational if the expansion is infinite, and the uniqueness of the expansion follows by induction from the uniqueness of the integer part.</p>
@@ -202,8 +201,7 @@ $$</p>
 <p><strong>Proof.</strong> The limit of the frequencies is the Birkhoff ergodic theorem applied to the indicator of the interval, and the identification of the limit with the Gauss measure is the invariance; the exponential error is the Gauss–Kuzmin theorem, proved by the bounded distortion of the inverse branches of $T$ and a contraction argument on the space of densities. The details are in <em>Measure Theory and Integration</em> and in the references.</p>
 <h3 id="the-constrained-averages">The Constrained Averages</h3>
 <p><strong>Theorem (Khinchin's constant).</strong> For almost every $b$ the geometric mean of the partial quotients converges:</p>
-<p>$$
-\lim_{n\to\infty} (a_1 a_2 \cdots a_n)^{1/n} = K_0, \qquad K_0 = \prod_{k=1}^{\infty}\left(1 + \frac{1}{k(k+2)}\right)^{\log_2 k} = 2.6854520010\dots .
+<p>$$ \boxed{\;\lim_{n\to\infty} (a_1 a_2 \cdots a_n)^{1/n} = K_0, \qquad K_0 = \prod_{k=1}^{\infty}\left(1 + \frac{1}{k(k+2)}\right)^{\log_2 k} = 2.6854520010\dots \;}.
 $$</p>
 <p><strong>Theorem (Lévy's constant).</strong> For almost every $b$ the denominators of the convergents grow exponentially:</p>
 <p>$$

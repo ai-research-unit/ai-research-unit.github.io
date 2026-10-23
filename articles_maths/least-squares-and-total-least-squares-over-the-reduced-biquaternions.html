@@ -170,14 +170,18 @@ $$</p>
 <h3 id="the-least-squares-problem-factorises">The Least Squares Problem Factorises</h3>
 <p><strong>Theorem (least squares factorises).</strong> Let $X$ be an arbitrary reduced biquaternion matrix, and let $X^{+}$ and $X^{-}$ range independently over the complex matrices. Then $X$ is a least squares solution of $AX\approx B$ if and only if $X^{+}$ is a least squares solution of $A^{+}X^{+}\approx B^{+}$ and $X^{-}$ is a least squares solution of $A^{-}X^{-}\approx B^{-}$. In that case</p>
 <p>$$
-\min_{X}K_{\mathrm F}(AX-B)=\tfrac12\Bigl(\min_{X^{+}}\bigl\lVert A^{+}X^{+}-B^{+}\bigr\rVert_{F}^{2}+\min_{X^{-}}\bigl\lVert A^{-}X^{-}-B^{-}\bigr\rVert_{F}^{2}\Bigr).
+\boxed{\;
+\min_{X}K_{\mathrm F}(AX-B)=\tfrac12\Bigl(\min_{X^{+}}\bigl\lVert A^{+}X^{+}-B^{+}\bigr\rVert_{F}^{2}+\min_{X^{-}}\bigl\lVert A^{-}X^{-}-B^{-}\bigr\rVert_{F}^{2}\Bigr)
+\;}.
 $$</p>
 <p><em>Proof.</em> By the decoupling theorem $AX-B$ has components $A^{+}X^{+}-B^{+}$ and $A^{-}X^{-}-B^{-}$, and by the metric theorem its norm is half the sum of the two squared Frobenius norms. The two components of $X$ are independent variables, so the minimum of the sum is the sum of the minima.</p>
 <p>The theorem is the whole content of the reduction in the unconstrained case: two complex least squares problems, with no interaction.</p>
 <h3 id="the-total-least-squares-problem-factorises">The Total Least Squares Problem Factorises</h3>
 <p><strong>Theorem (total least squares factorises).</strong> Let $X$ be an arbitrary reduced biquaternion matrix, and let $X^{+},X^{-}$ range independently over the complex matrices. Then $X$ is a total least squares solution of $AX\approx B$ if and only if $X^{+}$ is a total least squares solution of $A^{+}X^{+}\approx B^{+}$ and $X^{-}$ is a total least squares solution of $A^{-}X^{-}\approx B^{-}$. In that case the minimum perturbation size is</p>
 <p>$$
-\min_{X,E,G}K_{\mathrm F}\bigl([E,G]\bigr)=\tfrac12\Bigl(\sum_{k=n+1}^{n+d}\bigl(s_{k}^{+}\bigr)^{2}+\sum_{k=n+1}^{n+d}\bigl(s_{k}^{-}\bigr)^{2}\Bigr),
+\boxed{\;
+\min_{X,E,G}K_{\mathrm F}\bigl([E,G]\bigr)=\tfrac12\Bigl(\sum_{k=n+1}^{n+d}\bigl(s_{k}^{+}\bigr)^{2}+\sum_{k=n+1}^{n+d}\bigl(s_{k}^{-}\bigr)^{2}\Bigr)
+\;},
 $$</p>
 <p>where $s_{k}^{+}:=s_{k}([A^{+},B^{+}])$ and $s_{k}^{-}:=s_{k}([A^{-},B^{-}])$, so that $s_{1}^{+}\ge\cdots\ge s_{n+d}^{+}$ are the singular values of the complex matrix $[A^{+},B^{+}]$, and likewise with the sign $-$ for the other component.</p>
 <p><em>Proof.</em> The constraint $(A+E)X=B+G$ is equivalent, by the decoupling theorem applied to it, to the two complex constraints $(A^{+}+E^{+})X^{+}=B^{+}+G^{+}$ and $(A^{-}+E^{-})X^{-}=B^{-}+G^{-}$, the perturbations $E^{+},G^{+}$ being arbitrary complex matrices when $E,G$ are arbitrary over the algebra; and the objective is half the sum of the two complex objective terms, by the metric theorem. The two complex problems are independent, and the complex total least squares minimum is the sum of the squares of the $d$ smallest singular values of the augmented matrix, the Eckart–Young–Mirsky statement recalled in §<em>Existence and Uniqueness</em>.</p>
@@ -193,7 +197,9 @@ $$</p>
 <p><em>Proof.</em> The element identity is $\langle A\breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*}=\langle\breve Q_{1},\bar A \breve Q_{2}\rangle_{\mathrm{ts}*}$ for all elements, which is the statement that left multiplication by $\bar A$ is adjoint to left multiplication by $A$; on matrices the two identities are summed over the entries, and the transpose of the index pair converts the left multiplication into the bar-transpose. For the components, the bar conjugates the coefficients, that is conjugates each complex component, and the transpose transposes each component; so the bar-transpose acts componentwise as the complex conjugate transpose.</p>
 <p><strong>Theorem (the normal equations).</strong> A matrix $X$ minimises $K_{\mathrm F}(AX-B)$ if and only if</p>
 <p>$$
-A^{\dagger}AX=A^{\dagger}B,
+\boxed{\;
+A^{\dagger}AX=A^{\dagger}B
+\;},
 $$</p>
 <p>and in components the two complex normal equations $(A^{+})^{*}A^{+}X^{+}=(A^{+})^{*}B^{+}$ and $(A^{-})^{*}A^{-}X^{-}=(A^{-})^{*}B^{-}$ hold.</p>
 <p><em>Proof.</em> The objective is convex and smooth, so $X$ is a minimiser if and only if the derivative vanishes, that is if and only if $\mathrm{Re}\,K_{\mathrm F}(A\delta,AX-B)=0$ for every $\delta$. By the adjoint proposition this is $\mathrm{Re}\,K_{\mathrm F}(\delta,A^{\dagger}(AX-B))=0$ for every $\delta$, and a vector whose real pairing with every vector vanishes is zero. Reading the equation in components gives the two complex normal equations.</p>

@@ -95,7 +95,7 @@ $$</p>
 <p>The action preserves the equivariance condition: $f(g^{-1}xh) = \sigma(h)^{-1}f(g^{-1}x)$. The space on which the unitary operator acts is the completion, in the norm below, of the continuous compactly supported $H$-equivariant functions; the completion is deferred to the analysis of Part III, and the dense algebraic subspace is used throughout.</p>
 <p><strong>Theorem (the induced inner product).</strong> Let $H$ be a closed subgroup of $G$ and $\sigma$ a unitary representation of $H$ on $V$. If $\Delta_G|_H = \Delta_H$ there is a $G$-invariant Radon measure $\nu$ on $G/H$, and</p>
 <p>$$
-\langle f_1, f_2\rangle = \int_{G/H} \langle f_1(g), f_2(g)\rangle_V\; d\nu(gH)
+\boxed{\;\langle f_1, f_2\rangle = \int_{G/H} \langle f_1(g), f_2(g)\rangle_V\; d\nu(gH)\;}
 $$</p>
 <p>is a $G$-invariant inner product on the continuous $H$-equivariant functions of type $\sigma^{-1}$ with compact support modulo $H$. In general one replaces $\sigma$ by the <strong>normalised</strong> representation $\sigma^{\mathrm{norm}}(h) = \bigl(\Delta_G(h)/\Delta_H(h)\bigr)^{1/2}\sigma(h)$ and takes for $\nu$ the quasi-invariant measure on $G/H$ of <em>Locally Compact Groups and Haar Measure</em>, §Quotients and Homogeneous Spaces, normalised once and for all; with the type ${\sigma^{\mathrm{norm}}}^{-1}$ the same formula is again a $G$-invariant inner product. In either case the integrand is well defined, because for $h \in H$</p>
 <p>$$
@@ -125,7 +125,7 @@ $$</p>
 <h3 id="transitivity-in-stages">Transitivity in Stages</h3>
 <p><strong>Theorem (induction in stages).</strong> Let $K \leq H \leq G$ be closed subgroups and let $\sigma$ be a unitary representation of $K$. Then there is a natural unitary equivalence</p>
 <p>$$
-\operatorname{Ind}_K^G \sigma \;\cong\; \operatorname{Ind}_H^G\bigl(\operatorname{Ind}_K^H \sigma\bigr) ,
+\boxed{\;\operatorname{Ind}_K^G \sigma \;\cong\; \operatorname{Ind}_H^G\bigl(\operatorname{Ind}_K^H \sigma\bigr)\;} ,
 $$</p>
 <p>and the identification is given by composing the two function-space descriptions.</p>
 <p><strong>Proof.</strong> An element of the right side is a function $F : G \to \mathcal{H}_{\operatorname{Ind}_K^H\sigma}$ with $F(gh) = \bigl(\operatorname{Ind}_K^H\sigma\bigr)(h)^{-1}F(g)$ for $h \in H$; evaluating the inner function at the identity of $H$ gives the function $f(g) = F(g)(e)$ on $G$, and the two equivariance conditions together give $f(gk) = \sigma(k)^{-1}f(g)$ for $k \in K$, so $f$ represents an element of $\operatorname{Ind}_K^G\sigma$. Conversely an element $f$ of $\operatorname{Ind}_K^G\sigma$ defines $F(g)(\cdot)$ by $h \mapsto f(gh)$, and the $H$-equivariance computed above holds. The two constructions are inverse and commute with the left translations of $G$, hence give a unitary equivalence.</p>
@@ -134,7 +134,7 @@ $$</p>
 <p>The fundamental relation between induction and restriction is the adjunction between the two functors.</p>
 <p><strong>Theorem (Frobenius reciprocity).</strong> Let $H \leq G$ be closed subgroups, $\sigma$ a unitary representation of $H$ and $\pi$ a unitary representation of $G$. There is a natural isomorphism of vector spaces</p>
 <p>$$
-\operatorname{Hom}_G\bigl(\pi, \operatorname{Ind}_H^G\sigma\bigr) \;\cong\; \operatorname{Hom}_H\bigl(\pi|_H, \sigma\bigr) ,
+\boxed{\;\operatorname{Hom}_G\bigl(\pi, \operatorname{Ind}_H^G\sigma\bigr) \;\cong\; \operatorname{Hom}_H\bigl(\pi|_H, \sigma\bigr)\;} ,
 $$</p>
 <p>where $\operatorname{Hom}_G$ and $\operatorname{Hom}_H$ denote spaces of intertwining operators. In the finite case with $\sigma$ one-dimensional this is the classical Frobenius reciprocity of <em>Representations of Groups</em>, and its character form is</p>
 <p>$$

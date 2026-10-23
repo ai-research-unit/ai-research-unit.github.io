@@ -86,7 +86,7 @@ $$</p>
 <h2 id="the-square-zero-property">The Square-Zero Property</h2>
 <p><strong>Proposition (the induced map on cohomology is zero).</strong> If $d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$ is a coboundary of a complex, then $d^i$ carries the cocycles $\ker d^i$ into the coboundaries $\operatorname{im}d^i$, and consequently the map induced by $d^i$ on the cohomology sheaves is zero:</p>
 <p>$$
-d^i(\ker d^i)\subseteq\operatorname{im}d^i,\qquad \mathcal{H}^i(\mathcal{F}^\bullet)\to\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\ \text{induced by}\ d^i\ \text{is}\ 0 .
+\boxed{\;d^i(\ker d^i)\subseteq\operatorname{im}d^i,\qquad \mathcal{H}^i(\mathcal{F}^\bullet)\to\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\ \text{induced by}\ d^i\ \text{is}\ 0\;} .
 $$</p>
 <p><em>Proof.</em> If $s\in\ker d^i$, then $d^i(s)\in\operatorname{im}d^i$ by definition of the image, and $d^i(s)\in\ker d^{i+1}$ because $d^{i+1}d^i=0$; so $d^i(s)$ is a coboundary, and its class in $\mathcal{H}^{i+1}$ is zero.</p>
 <p><strong>Proposition (square zero is a local condition).</strong> For a complex of sheaves the identity $d^2=0$ holds if and only if it holds on every stalk; for a complex of sheaves of $\mathcal{O}_X$-modules it suffices that it hold on the sections over a basis of the topology.</p>
@@ -101,7 +101,7 @@ $$</p>
 <p>the quotient in the abelian category of sheaves; the kernel and the image are the sheaf-theoretic ones of <em>Presheaves and Sheaves</em>, and the quotient is well defined because $\operatorname{im}d^{i-1}\subseteq\ker d^i$ is a subsheaf, by the square-zero property. A complex is <strong>exact</strong> at $\mathcal{F}^i$ if $\mathcal{H}^i(\mathcal{F}^\bullet)=0$, and <strong>exact</strong> if it is exact at every degree; a <strong>resolution</strong> of a sheaf $\mathcal{F}$ is an exact complex with $\mathcal{F}$ in degree zero.</p>
 <p><strong>Proposition (stalks of the cohomology sheaves).</strong> For every $x\in X$ and every $i$,</p>
 <p>$$
-\mathcal{H}^i(\mathcal{F}^\bullet)_x\cong H^i(\mathcal{F}^\bullet_x),
+\boxed{\;\mathcal{H}^i(\mathcal{F}^\bullet)_x\cong H^i(\mathcal{F}^\bullet_x)\;},
 $$</p>
 <p>the cohomology of the complex of stalks; and a morphism of complexes is a quasi-isomorphism if and only if it induces an isomorphism on the complexes of stalks at every point.</p>
 <p><em>Proof.</em> The stalk functor is exact, as recorded in <em>Presheaves and Sheaves</em>, so it commutes with the formation of kernels, images and quotients; applying it to the defining quotient gives the isomorphism, and the second statement is the first applied to the induced maps.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p>whose coboundary is the coboundary of $\mathcal{F}^\bullet$ applied to sections, and whose cohomology is written $H^i\bigl(\Gamma(X,\mathcal{F}^\bullet)\bigr)$.</p>
 <p><strong>Theorem (the abstract de Rham theorem).</strong> If $(\mathcal{F}^\bullet,d)$ is a resolution of a sheaf $\mathcal{F}$ by acyclic sheaves, $H^j(X,\mathcal{F}^i)=0$ for $j>0$, then there is a natural isomorphism</p>
 <p>$$
-H^i\bigl(\Gamma(X,\mathcal{F}^\bullet)\bigr)\cong H^i(X,\mathcal{F})
+\boxed{\;H^i\bigl(\Gamma(X,\mathcal{F}^\bullet)\bigr)\cong H^i(X,\mathcal{F})\;}
 $$</p>
 <p>for every $i$. More generally, any resolution whose complex of sections is effaceable computes the cohomology.</p>
 <p><em>Proof.</em> This is the abstract de Rham theorem of <em>Derived Functors and Sheaf Cohomology</em>, where the effaceability argument is given; it is quoted here as the reason the coboundary of a resolution computes the cohomology of the resolved sheaf.</p>

@@ -136,7 +136,7 @@ $$</p>
 <p>The left cosets partition $G$, and $g H = h H$ if and only if $h^{-1} g \in H$; otherwise $g H$ and $h H$ are disjoint. Every left coset has the same cardinality as $H$. The <strong>index</strong> of $H$ in $G$, written $[G : H]$, is the number of distinct left cosets, which equals the number of right cosets.</p>
 <p><strong>Lagrange's theorem.</strong> If $G$ is a finite group and $H \subseteq G$ is a subgroup, then</p>
 <p>$$
-|G| = [G : H] \, |H|.
+\boxed{\;|G| = [G : H] \, |H|\;}.
 $$</p>
 <p>In particular, $|H|$ divides $|G|$.</p>
 <p><strong>Corollaries.</strong> The order of every element of $G$ divides $|G|$; every group of prime order $p$ is cyclic, isomorphic to $\mathbb{Z}/p\mathbb{Z}$; and $a^{|G|} = e$ for every $a \in G$.</p>
@@ -212,7 +212,7 @@ $$</p>
 <p>An element has a singleton conjugacy class exactly when it lies in the centre.</p>
 <p><strong>Class equation.</strong> Let $G$ be finite, and let $x_1, \ldots, x_k$ represent the conjugacy classes of size greater than $1$. Then</p>
 <p>$$
-|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)],
+\boxed{\;|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)]\;},
 $$</p>
 <p>each index being greater than $1$ and dividing $|G|$.</p>
 <p><strong>Example.</strong> In $S_4$ the class sizes are $1, 3, 6, 6, 8$, so $24 = 1 + 3 + 6 + 6 + 8$, the leading term being $|Z(S_4)| = 1$.</p>
@@ -269,7 +269,7 @@ $$</p>
 <h2 id="18-finitely-generated-abelian-groups">18. Finitely Generated Abelian Groups</h2>
 <p><strong>Structure theorem.</strong> Every finitely generated abelian group $G$ is isomorphic to a finite direct sum</p>
 <p>$$
-G \cong \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z},
+\boxed{\;G \cong \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z}\;},
 $$</p>
 <p>where $r \geq 0$ and $d_1 \mid d_2 \mid \cdots \mid d_k$ with each $d_i > 1$. The integer $r$ is the <strong>rank</strong> and the $d_i$ are the <strong>invariant factors</strong>; both are uniquely determined by $G$. The group is finite if and only if $r = 0$.</p>
 <p>Equivalently, $G$ is a direct sum of cyclic groups of prime-power order together with a free part $\mathbb{Z}^r$; the prime powers are the <strong>elementary divisors</strong>, unique up to order. A finitely generated torsion-free abelian group is free abelian.</p>

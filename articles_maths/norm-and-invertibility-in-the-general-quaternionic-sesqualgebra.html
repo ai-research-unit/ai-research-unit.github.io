@@ -85,7 +85,7 @@ $$</p>
 <p><strong>The product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ has no left unit, no right unit and no two-sided unit, so no element has an inverse and the set of invertible elements is empty.</strong></p>
 <p><strong>Proposition (the two one-sided actions of $e_t$).</strong> For every $\tilde Q$,</p>
 <p>$$
-e_t\star\tilde Q = \tilde Q^{*} , \qquad \tilde Q\star e_t = \tilde Q^{\natural} ,
+\boxed{\; e_t\star\tilde Q = \tilde Q^{*} , \qquad \tilde Q\star e_t = \tilde Q^{\natural} \;},
 $$</p>
 <p>so the left action of $e_t$ is the star and the right action is the natural conjugation.</p>
 <p><strong>Proof.</strong> $e_t\star\tilde Q = e_t^{\natural}\tilde Q^{*} = e_t\tilde Q^{*} = \tilde Q^{*}$, and $\tilde Q\star e_t = \tilde Q^{\natural}e_t^{*} = \tilde Q^{\natural}$.</p>
@@ -115,7 +115,7 @@ $$</p>
 <p><strong>The algebraic norm of the block is not multiplicative, $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}$ in general, the pair $\tilde Q_1=\tilde Q_2=e_t+\vec e_x$ separating the two sides.</strong></p>
 <p><strong>Proposition.</strong> The algebraic norm of the block is <strong>not</strong> multiplicative:</p>
 <p>$$
-\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\,\langle\tilde Q_2\rangle_{\natural*}\quad\text{in general.}
+\boxed{\; \langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\,\langle\tilde Q_2\rangle_{\natural*}\quad\text{in general.} \;}
 $$</p>
 <p><em>Proof.</em> The pair $\tilde Q_1=\tilde Q_2=e_t+\vec e_x$ separates the two sides. Here $\langle\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2\rangle_{\natural*}=1-1=0$, so $\langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}=0$, while $\tilde Q_1\star\tilde Q_2=(e_t-\vec e_x)(e_t+\vec e_x)=e_t+\vec e_x-\vec e_x-\vec e_x^{2}=2e_t$ and $\langle 2e_t\rangle_{\natural*}=4$. The two values differ, so no multiplicativity holds.</p>
 <p><strong>Remark (the failure belongs to the block).</strong> The block, whose two slots carry the two conjugations, does not respect its own algebraic norm $\langle\cdot\rangle_{\natural*}$ under its product.</p>
@@ -124,9 +124,9 @@ $$</p>
 <p>The algebraic norm of a product would decide invertibility if the invertible elements were exactly the elements of non-vanishing algebraic norm. For the block that statement has no content in one direction and fails in the other, and the article records the absence rather than a criterion.</p>
 <p><strong>Theorem (the algebraic norm does not decide invertibility).</strong> The set of invertible elements of the block is empty, so no criterion in terms of $\langle\cdot\rangle_{\natural*}$ can name it; and $\langle\cdot\rangle_{\natural*}$ does not decide the one invertibility that is available, the invertibility of the <strong>plain</strong> product either:</p>
 <p>$$
-\langle\tilde Q\rangle_{\natural*}=0\ \not\Longrightarrow\ \tilde Q\text{ not a plain unit},
+\boxed{\; \langle\tilde Q\rangle_{\natural*}=0\ \not\Longrightarrow\ \tilde Q\text{ not a plain unit},
 \qquad
-\langle\tilde Q\rangle_{\natural*}\neq0\ \not\Longrightarrow\ \tilde Q\text{ is a plain unit}.
+\langle\tilde Q\rangle_{\natural*}\neq0\ \not\Longrightarrow\ \tilde Q\text{ is a plain unit} \;}.
 $$</p>
 <p><em>Proof.</em> The first clause is the theorem on the double absence: there is no invertible element, so $\langle\cdot\rangle_{\natural*}$ has nothing to decide for the block. For the two implications, the element $\tilde Q=e_t+\vec e_x$ has $\langle\tilde Q\rangle_{\natural*}=1-1=0$ and is a unit of the plain product, $(e_t+\vec e_x)(e_t-\vec e_x)=2e_t$; the element $\tilde Q=\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural*}=-1-1=-2\neq0$ and is a zero divisor of the plain product, $(\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=\vec e_x^{2}-(i\vec e_y)^{2}=-e_t+e_t=0$.</p>
 <p><strong>Remark (the two witnesses).</strong> The element $e_t+\vec e_x$ is a plain unit with vanishing algebraic norm, so $\langle\cdot\rangle_{\natural*}$ is not necessary; the element $\vec e_x+i\vec e_y$ is a plain non-unit with non-vanishing algebraic norm, so $\langle\cdot\rangle_{\natural*}$ is not sufficient. The vanishing set of $\langle\cdot\rangle_{\natural*}$ is the $\langle\cdot\rangle_{\natural*}$-isotropic cone and the zero-divisor set is the cone of a different quadratic form; the two cones meet, as at $e_t+\vec e_x$ in the first and at the idempotents in the second, and neither contains the other.</p>

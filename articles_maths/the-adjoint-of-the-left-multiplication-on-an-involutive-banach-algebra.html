@@ -76,7 +76,7 @@
 <h2 id="the-adjoint-of-the-left-multiplication">The Adjoint of the Left Multiplication</h2>
 <p><strong>Theorem (the explicit form).</strong> For every $a,b \in A$ the one-sided multiplications are adjointable, with</p>
 <p>$$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} .
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} .
 $$</p>
 <p>Hence the adjoint of a left multiplication is the left multiplication by the image of the parameter under the involution, and the adjoint of a right multiplication is the right multiplication by the image.</p>
 <p><strong>Proof.</strong> For all $x,y$, $\{L_ax,y\} = \tau(ax\sigma(y)) = \tau(x\sigma(y)a)$ by the cyclicity of the trace, and $\tau(x\sigma(y)a) = \tau(x\sigma(\sigma(a)y)) = \{x,L_{\sigma(a)}y\}$ by the $\sigma$-invariance and $\sigma^2 = \mathrm{id}$; thus $L_{\sigma(a)}$ satisfies the defining identity, and it is the adjoint by the nondegeneracy of the form. The right-handed computation is the mirror image.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="the-dictionary">The Dictionary</h2>
 <p><strong>Theorem (the properties of the operator and of the element).</strong> For $a \in A$,</p>
 <p>$$
-L_a \text{ self-adjoint} \iff a = a^* ; \quad L_a \text{ skew} \iff a = -a^* ; \quad L_a \text{ unitary} \iff a \text{ unitary} ; \quad L_a \text{ an involution} \iff a^2 = 1, \ a = a^* .
+\boxed{\;L_a \text{ self-adjoint} \iff a = a^* ; \quad L_a \text{ skew} \iff a = -a^* ; \quad L_a \text{ unitary} \iff a \text{ unitary} ; \quad L_a \text{ an involution} \iff a^2 = 1, \ a = a^*\;} .
 $$</p>
 <p>The same dictionary holds for the right multiplications, and it holds on the image of the regular representation in $\mathcal{A}(A)$.</p>
 <p><strong>Proof.</strong> The left regular representation is injective, since $L_a = L_b$ forces $a = L_a(1) = L_b(1) = b$. Hence $L_a$ is self-adjoint iff $L_{\sigma(a)} = L_a$, that is $\sigma(a) = a$, and the skew case is the same with the sign; $L_a$ is unitary iff $L_{\sigma(a)}L_a = L_{\sigma(a)a} = L_{a^*a} = \mathrm{id}$ and $L_aL_{\sigma(a)} = L_{aa^*} = \mathrm{id}$, that is $a^*a = aa^* = 1$; and $L_a$ is an involution iff $L_a^2 = L_{a^2} = \mathrm{id}$, that is $a^2 = 1$, with $a = a^*$ from self-adjointness.</p>
@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-commutant-of-the-regular-representation">The Commutant of the Regular Representation</h2>
 <p><strong>Theorem (the commutant).</strong> For a unital involutive Banach algebra with a nondegenerate form, the operators commuting with the left regular representation are the right multiplications,</p>
 <p>$$
-\{T \in \mathcal{A}(A) : TL_a = L_aT \ \text{for all } a\} = \{R_b : b \in A\} ,
+\boxed{\;\{T \in \mathcal{A}(A) : TL_a = L_aT \ \text{for all } a\} = \{R_b : b \in A\}\;} ,
 $$</p>
 <p>so the commutant of $\{L_a\}$ is the algebra of the right multiplications, isomorphic to $A^{\mathrm{opp}}$; symmetrically the commutant of the right multiplications is the algebra of the left multiplications, and the bicommutant of the regular representation is the whole adjointable algebra.</p>
 <p><strong>Proof.</strong> If $T$ commutes with every $L_a$ then $T(x) = T(L_x1) = L_xT(1) = x\,T(1) = R_{T(1)}(x)$, so $T = R_b$ with $b = T(1)$; conversely every right multiplication commutes with every left multiplication by associativity. The symmetric statement is the mirror image, and the bicommutant follows by applying the first statement twice.</p>

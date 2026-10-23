@@ -93,7 +93,7 @@ $$</p>
 <p>The theorem is the reason an isometry may be read as an operator: it acts linearly and isometrically on each tangent space, and the action varies smoothly with the point. The word <strong>operator</strong> is used in this Part for a map of this kind, a bundle endomorphism defined by a geometric object, and never for a map of a space of functions; the latter belongs to Part III.</p>
 <p><strong>Theorem (faithfulness).</strong> Let $M$ be connected. An isometry $F$ of $(M, g)$ is determined by its value $F(p)$ and its differential $dF_p$ at one point $p$. Consequently the assignment</p>
 <p>$$
-\operatorname{Isom}(M, g) \longrightarrow \operatorname{Aut}(TM), \qquad F \longmapsto dF,
+\boxed{\;\operatorname{Isom}(M, g) \longrightarrow \operatorname{Aut}(TM), \qquad F \longmapsto dF\;},
 $$</p>
 <p>is a faithful representation of the isometry group by bundle automorphisms of the tangent bundle.</p>
 <p><strong>Proof.</strong> If $F$ and $G$ have $F(p) = G(p)$ and $dF_p = dG_p$, then $H = G^{-1} \circ F$ fixes $p$ and has $dH_p = \mathrm{id}$. Since an isometry intertwines the exponential maps, $\exp_p \circ\, dH_p = H \circ \exp_p$, so $H$ fixes a whole normal neighbourhood of $p$; the set of points fixed by $H$ is closed in $M$, and it is open because each of its points has a normal neighbourhood that it fixes; by connectedness it is all of $M$, so $H = \mathrm{id}$ and $F = G$. The assignment is a homomorphism because $d(G \circ F) = dG \circ dF$ by the chain rule, and it is injective by the first statement.</p>
@@ -117,7 +117,7 @@ $$</p>
 <h3 id="the-lie-structure">The Lie Structure</h3>
 <p><strong>Theorem (Myers–Steenrod).</strong> For a connected Riemannian manifold $(M, g)$ the isometry group is a Lie group, its action on $M$ is smooth, and its Lie algebra is the Lie algebra of the Killing fields of $(M, g)$. An isometry is determined by its value and its differential at one point, so</p>
 <p>$$
-\dim\operatorname{Isom}(M, g) \leq \frac{n(n+1)}{2}, \qquad n = \dim M .
+\boxed{\;\dim\operatorname{Isom}(M, g) \leq \frac{n(n+1)}{2}, \qquad n = \dim M\;} .
 $$</p>
 <p>The theorem is proved in <em>Riemannian Geometry</em>, where the group is realised as a closed subgroup of the bundle of orthonormal frames; it is cited here because the operator reading uses it: the tangent-bundle representation of the theorem above is a smooth representation of a Lie group.</p>
 <h3 id="orbits-and-homogeneity">Orbits and Homogeneity</h3>
@@ -159,7 +159,7 @@ $$</p>
 <h3 id="the-linear-isotropy">The Linear Isotropy</h3>
 <p><strong>Theorem.</strong> For $p \in M$ the map</p>
 <p>$$
-\rho_p : \operatorname{Isom}_p \longrightarrow O(T_pM, g_p), \qquad \rho_p(F) = dF_p,
+\boxed{\;\rho_p : \operatorname{Isom}_p \longrightarrow O(T_pM, g_p), \qquad \rho_p(F) = dF_p\;},
 $$</p>
 <p>is an injective homomorphism of groups, and its image, the <strong>linear isotropy group</strong> at $p$, is a closed subgroup of the orthogonal group. If $M$ is connected, $\rho_p$ is an isomorphism onto the linear isotropy group.</p>
 <p><strong>Proof.</strong> The map is a homomorphism by the chain rule and injective by faithfulness: an isometry fixing $p$ and acting trivially on $T_pM$ is the identity. The image is the set of the $dF_p$ for $F$ fixing $p$; it is the intersection of the closed set $\operatorname{Isom}(M,g)$-translates and is closed in $O(T_pM,g_p)$, being the isotropy of a continuous action. Surjectivity of $\rho_p$ onto its image is the definition.</p>

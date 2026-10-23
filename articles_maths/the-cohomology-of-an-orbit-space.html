@@ -111,7 +111,7 @@ $$</p>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem (Grothendieck).</strong> Let $k$ be a field in which two is invertible. Then the pullback</p>
 <p>$$
-\pi^* : H^*(Q;k) \longrightarrow H^*(X;k)^\sigma
+\boxed{\;\pi^* : H^*(Q;k) \longrightarrow H^*(X;k)^\sigma\;}
 $$</p>
 <p>is an isomorphism onto the invariants, and it is injective with image the invariant subalgebra. Equivalently, the cohomology of the orbit space is the invariant cohomology of the space, and the transfer realises the inverse: $\pi^*\circ\tfrac12\tau = \mathrm{id}$ and $\tfrac12\tau\circ\pi^*=\mathrm{id}$ on the invariants.</p>
 <p><em>Proof.</em> By the second comparison theorem the action is effectively free over $k$ modulo the fixed set, and the transfer argument of <em>The Transfer and the Involution</em> applies: $\tfrac12 N$ is the projection onto the invariants and it factors through $\pi^*$ because $\pi^*\tau=N$, while $\tau\pi^*=2$ shows that $\tfrac12\tau$ is a left inverse; the two together give the isomorphism.</p>
@@ -122,7 +122,7 @@ $$</p>
 <h3 id="the-spectral-sequence">The Spectral Sequence</h3>
 <p><strong>Theorem (Cartan–Leray).</strong> Let the involution act, and consider the two-fold covering $\pi : X\to Q$ of the free part; then the cohomology of the quotient is the abutment of the spectral sequence</p>
 <p>$$
-E_2^{n,m} = H^p(\mathbb{Z}/2; H^q(X;\mathbb{F}_2)) \ \Longrightarrow \ H^{p+q}(Q;\mathbb{F}_2),
+\boxed{\;E_2^{n,m} = H^p(\mathbb{Z}/2; H^q(X;\mathbb{F}_2)) \ \Longrightarrow \ H^{p+q}(Q;\mathbb{F}_2)\;},
 $$</p>
 <p>with coefficients in the cohomology of $X$ regarded as a module over the group ring $\mathbb{F}_2[\mathbb{Z}/2]$ through the action $\sigma^*$; the sequence is natural for equivariant maps, and for the free action it converges to the quotient cohomology from the group cohomology of the coefficient module.</p>
 <p><em>Proof.</em> The Cartan–Leray spectral sequence of the covering with group $\mathbb{Z}/2$, obtained from the filtration of the singular complex of $Q$ by the cover; the identification of the $E_2$ page with the group cohomology of the coefficient module is the standard one for the covering, and the convergence is to the cohomology of the total space of the cover.</p>
@@ -146,7 +146,7 @@ $$</p>
 <p>acting on $H^*(X;k)$.</p>
 <p><strong>Theorem.</strong> The two projections are idempotents with $p_+ + p_- = \mathrm{id}$, $p_+p_-=0$, $p_\pm^2=p_\pm$, and they decompose the cohomology into the invariant and the anti-invariant parts,</p>
 <p>$$
-H^*(X;k) = H^*(X;k)^+ \oplus H^*(X;k)^- , \qquad H^*(X;k)^\pm = p_\pm H^*(X;k) ,
+\boxed{\;H^*(X;k) = H^*(X;k)^+ \oplus H^*(X;k)^- , \qquad H^*(X;k)^\pm = p_\pm H^*(X;k)\;} ,
 $$</p>
 <p>with $H^*(X;k)^+ = H^*(X;k)^\sigma$; the quotient cohomology is the invariant part, $H^*(Q;k)\cong H^*(X;k)^+$, and the coinvariants are canonically isomorphic to the invariants through the averaging, the quotient of $H^*(X;k)$ by the anti-invariant part being the invariant part.</p>
 <p><em>Proof.</em> The idempotent algebra is the computation $p_\pm^2=p_\pm$ and $p_+p_-=0$ from $\sigma^{*2}=\mathrm{id}$; the fixed part is the image of $p_+$ because $p_+a=a$ exactly when $\sigma^*a=a$, and the coinvariant statement follows from the decomposition.</p>

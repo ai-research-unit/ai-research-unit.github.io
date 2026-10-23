@@ -76,7 +76,7 @@
 <h2 id="moduli-functors-fine-and-coarse-spaces">Moduli Functors, Fine and Coarse Spaces</h2>
 <p><strong>Definition.</strong> Let $S$ be a scheme and let $\mathcal{C}$ be a class of objects over $S$-schemes (schemes, sheaves, morphisms) with a notion of base change. The associated <strong>moduli functor</strong> is the contravariant functor</p>
 <p>$$
-\mathcal{M} : (\mathbf{Sch}/S)^{\mathrm{opp}}\to\mathbf{Sets}, \qquad \mathcal{M}(T) = \{\text{objects over } T \text{ of the given kind}\}\big/\cong,
+\boxed{\;\mathcal{M} : (\mathbf{Sch}/S)^{\mathrm{opp}}\to\mathbf{Sets}, \qquad \mathcal{M}(T) = \{\text{objects over } T \text{ of the given kind}\}\big/\cong\;},
 $$</p>
 <p>or, in the more refined form that keeps the automorphisms, the functor to groupoids $T\mapsto$ the groupoid of such objects and their isomorphisms. A <strong>fine moduli space</strong> is a scheme $M$ over $S$ with an isomorphism $\mathcal{M}\cong h_M = \operatorname{Hom}_S(-,M)$; by Yoneda's lemma the functor is then represented by $M$, the identity of $M$ corresponds to a <strong>universal family</strong> $\mathcal{U}\to M$ with $\mathcal{M}(T) = \{$pullbacks of $\mathcal{U}\}$ for every $T$, and $M$ is unique up to unique isomorphism. A <strong>coarse moduli space</strong> is a scheme $M$ with a natural transformation $\mathcal{M}\to h_M$ such that (i) for every scheme $N$ and natural transformation $\mathcal{M}\to h_N$ there is a unique morphism $M\to N$ through which it factors, and (ii) the map on geometric points $\mathcal{M}(\operatorname{Spec}\bar k)\to M(\bar k)$ is a bijection.</p>
 <p><strong>Theorem (the universal family and the failure of representability).</strong> Let $\mathcal{M}$ be a moduli functor.</p>
@@ -126,7 +126,7 @@ $$</p>
 <ol>
 <li>The functor $\mathcal{M}_g$ has a coarse moduli space $M_g$, a quasiprojective variety of dimension $3g-3$ over $k$, irreducible for every $g\geq2$; it is not a fine moduli space, since a curve with a nontrivial automorphism obstructs representability.</li>
 <li>The tangent space to $M_g$ at the point $[C]$ is $H^1(C,T_C)$, of dimension $3g-3$, and the deformations of $C$ are unobstructed; the dimension count is
-   $$\dim H^1(C,T_C) = -\chi(T_C) = 3g-3, \qquad \chi(T_C) = \deg T_C + (1-g) = 3-3g,$$
+   $$\boxed{\;\dim H^1(C,T_C) = -\chi(T_C) = 3g-3, \qquad \chi(T_C) = \deg T_C + (1-g) = 3-3g\;},$$
    using Riemann–Roch and $H^0(C,T_C) = 0$ for $g\geq2$.</li>
 <li>The functor $\overline{\mathcal{M}}_g$ has a coarse moduli space $\overline M_g$, projective of dimension $3g-3$ and irreducible, containing $M_g$ as a dense open subscheme; the boundary parametrises the nodal degenerations. The spaces are constructed as quotients of open subschemes of a Hilbert scheme, the source being the Hilbert scheme of tricanonically embedded curves and the group the change of coordinates in projective space, and the stability conditions are verified by the Hilbert–Mumford criterion.</li>
 <li>$\mathcal{M}_g$ is a Deligne–Mumford stack, the automorphism groups of the curves being finite, and $M_g$ is its coarse space; the stack-theoretic formulation repairs the failure of representability and carries a universal curve.</li>
@@ -144,7 +144,7 @@ $$</p>
 <li>For $g\geq2$ the functors $\mathcal{M}^{s}(r,d)\subseteq\mathcal{M}(r,d)$ have coarse moduli spaces $M^{s}(r,d)\subseteq M(r,d)$, quasiprojective of dimension
    $$r^2(g-1)+1,$$
  the locus of stable bundles being open and the semistable ones forming the projective quotient; the dimension is
-   $$\dim\operatorname{Ext}^1(E,E) = h^1(C,\mathcal{E}nd E) = -\chi(\mathcal{E}nd E) = r^2(g-1)+1,$$
+   $$\boxed{\;\dim\operatorname{Ext}^1(E,E) = h^1(C,\mathcal{E}nd E) = -\chi(\mathcal{E}nd E) = r^2(g-1)+1\;},$$
    using $\mathcal{E}nd E$ of degree zero and $\operatorname{Hom}(E,E) = k$ for stable $E$.</li>
 <li>The tangent space of $M^{s}(r,d)$ at $[E]$ is $H^1(C,\mathcal{E}nd E)$ and the obstructions lie in $H^2(C,\mathcal{E}nd E) = 0$ by dimension, so the deformations are unobstructed; the infinitesimal automorphisms are $H^0(C,\mathcal{E}nd E) = k$, and it is this one-dimensional automorphism group — the scalars — that prevents representability and forces the coarse formulation or the stack.</li>
 <li>The construction of the moduli space is a quotient presentation: the Quot scheme of quotients of a fixed bundle with the appropriate Hilbert polynomial parametrises the bundles with a chosen generating space of sections, the reductive group $\operatorname{GL}$ of change of the basis acts, and the quotient of the stable locus is $M^{s}(r,d)$; the stability condition in the sense of vector bundles agrees with the Hilbert–Mumford stability for this action.</li>

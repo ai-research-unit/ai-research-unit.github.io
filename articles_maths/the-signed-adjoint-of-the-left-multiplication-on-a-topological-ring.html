@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
 <p><strong>Theorem (the explicit form).</strong> With respect to the form of the category,</p>
 <p>$$
-\ell_a^\dagger = \ell_{\delta(a)} , \qquad \varrho_b^\dagger = \varrho_{\delta(b)} , \qquad \delta = \sigma\alpha ,
+\boxed{\;\ell_a^\dagger = \ell_{\delta(a)} , \qquad \varrho_b^\dagger = \varrho_{\delta(b)} , \qquad \delta = \sigma\alpha\;} ,
 $$</p>
 <p>so the adjoint of a signed left multiplication is the signed left multiplication by the $\delta$-image of the parameter, and the adjoint operation is an involution on each of the two signed one-sided families.</p>
 <p><strong>Proof.</strong> $\ell_a = L_a\alpha$, so $\ell_a^\dagger = \alpha^\dagger L_a^\dagger = \alpha L_{\sigma(a)}$ by $(L_a)^\dagger = L_{\sigma(a)}$ and $\alpha^\dagger = \alpha$ from $\tau\circ\alpha = \tau$. Applying this to $x$ gives $\alpha(\sigma(a)x) = \alpha(\sigma(a))\,\alpha(x) = \sigma(\alpha(a))\,\alpha(x) = \delta(a)\,\alpha(x) = \ell_{\delta(a)}(x)$. The computation for the signed right multiplication is the mirror image, and the double adjoint is immediate from $\delta^2 = \mathrm{id}$.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="self-adjointness-unitarity-and-involutivity">Self-Adjointness, Unitarity and Involutivity</h2>
 <p><strong>Theorem (the three conditions).</strong> The signed left multiplication satisfies</p>
 <p>$$
-\ell_a^\dagger = \ell_a \iff \delta(a) = a , \qquad \ell_a^\dagger\ell_a = \mathrm{id} \iff \delta(a)\alpha(a)\in K , \qquad \ell_a^2 = \mathrm{id} \iff a\alpha(a)\in K ,
+\boxed{\;\ell_a^\dagger = \ell_a \iff \delta(a) = a , \qquad \ell_a^\dagger\ell_a = \mathrm{id} \iff \delta(a)\alpha(a)\in K , \qquad \ell_a^2 = \mathrm{id} \iff a\alpha(a)\in K\;} ,
 $$</p>
 <p>and when the grade involution is not inner, $K = \{1\}$, so unitarity is $\delta(a)\alpha(a) = 1$ and involutivity is $a\alpha(a) = 1$.</p>
 <p><strong>Proof.</strong> The parametrisation $u\mapsto\ell_u$ is injective: $\ell_u = \ell_v$ means $u\alpha(x) = v\alpha(x)$ for all $x$, and $\alpha$ is surjective, so $u = v$. Hence $\ell_a^\dagger = \ell_{\delta(a)}$ equals $\ell_a$ exactly when $\delta(a) = a$. For unitarity, $\ell_a^\dagger\ell_a = \ell_{\delta(a)}\ell_a = \ell_{\delta(a)\alpha(a)}$, which is the identity exactly when $\delta(a)\alpha(a)\in K$, where $K$ is the set of units $u$ with $\ell_u = \mathrm{id}$; for involutivity, $\ell_a^2 = \ell_{a\alpha(a)}$, which is the identity exactly when $a\alpha(a)\in K$.</p>
@@ -118,7 +118,7 @@ $$</p>
 <h2 id="relation-to-the-signed-sandwich">Relation to the Signed Sandwich</h2>
 <p><strong>Theorem (the assembly of the sandwich).</strong> The signed sandwich is the composite of a signed left multiplication, a signed right multiplication and the grade involution,</p>
 <p>$$
-\Sigma^\alpha_{a,b} = \ell_a\circ\varrho_{\alpha(b)}\circ\alpha , \qquad \Sigma^\alpha_{a,b}(x) = a\,\alpha(x)\,b ,
+\boxed{\;\Sigma^\alpha_{a,b} = \ell_a\circ\varrho_{\alpha(b)}\circ\alpha , \qquad \Sigma^\alpha_{a,b}(x) = a\,\alpha(x)\,b\;} ,
 $$</p>
 <p>and its adjoint is assembled from the one-sided adjoints and the self-adjointness of the grade involution,</p>
 <p>$$

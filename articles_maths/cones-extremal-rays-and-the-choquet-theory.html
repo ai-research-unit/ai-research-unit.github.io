@@ -82,7 +82,7 @@ $$</p>
 <p>It is <strong>pointed</strong> when $C\cap(-C) = \{0\}$, <strong>generating</strong> when $C - C = E$, and <strong>proper</strong> when it is pointed. A pointed convex cone makes $E$ an ordered vector space by $x\leq y \iff y - x\in C$, and conversely the positive cone of an ordered vector space is a pointed convex cone.</p>
 <p><strong>Definition.</strong> A <strong>ray</strong> of $C$ is the set $\mathbb{R}_{\geq0}\,x = \{tx : t\geq0\}$ of nonnegative multiples of a nonzero $x\in C$. A ray $R$ is <strong>extremal</strong> when</p>
 <p>$$
-x, y\in C,\ x + y\in R \implies x, y\in R .
+\boxed{\;x, y\in C,\ x + y\in R \implies x, y\in R\;} .
 $$</p>
 <p>A vector $x\in C$ is an <strong>extremal generator</strong> when its ray is extremal, and the set of extremal rays is written $\operatorname{ray}(C)$.</p>
 <p><strong>Proposition.</strong> For a convex cone $C$ the extremal rays are exactly the one-dimensional faces of $C$; the cone is the conical hull of its extremal rays when it is closed, polyhedral and pointed; and the sum of two vectors on distinct extremal rays lies on no extremal ray.</p>
@@ -93,7 +93,7 @@ $$</p>
 <p><em>Proof.</em> If $b\in B$ is extreme and $x+y\in\mathbb{R}_{\geq0}b$ with $x,y\in C$, divide by $f(x+y)=1$ and write $x = f(x)\,b_1$, $y = f(y)\,b_2$ with $b_1,b_2\in B$ and $f(x),f(y)\geq0$; then $b$ is the convex combination $f(x)b_1 + f(y)b_2$, and extremality forces $x,y$ onto the ray of $b$. Conversely if the ray of $b$ is extremal and $b = tx_1+(1-t)x_2$ with $x_i\in B$, then $b$ is the sum of $tx_1$ and $(1-t)x_2$ in the cone, so both are on the ray of $b$, and being in $B$ and on that ray they equal $b$.</p>
 <p><strong>Proposition (the dual cone and the base of the dual).</strong> The <strong>dual cone</strong> of $C$ is</p>
 <p>$$
-C^* = \{f\in E' : f(x)\geq0 \ \text{for every } x\in C\},
+\boxed{\;C^* = \{f\in E' : f(x)\geq0 \ \text{for every } x\in C\}\;},
 $$</p>
 <p>a closed convex cone in the dual for the weak-<em> topology; when $C$ is closed, proper and generating with a base, the states $S = \{f\in C^* : f(u) = 1\}$ of </em>Ordered Vector Spaces and the Order Unit<em> are a base of $C^*$, weak-</em> compact when the base of $C$ is compact.</p>
 <p><em>Proof.</em> $C^*$ is the intersection of the closed half-spaces $\{f : f(x)\geq0\}$, hence a closed convex cone. Every nonzero $f\in C^*$ has $f(u)>0$ when $u$ is an order unit in the interior of $C$, so $f/f(u)$ lies in $S$ and the representation is unique; the compactness is that of the polar of the order interval, which is the base.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p><em>Proof.</em> The set $M_x$ of representing measures of $x$ is nonempty (it contains $\delta_x$) and weak-<em> compact, and the order $\preceq$ is inductive on it, an upper bound of a chain being any weak-</em> cluster point; Zorn's lemma gives a maximal element. The delicate point is that the supremum of a chain of measures exists as a measure, which is the Riesz representation theorem of <em>Measure Theory and Integration</em> applied to the limit of the integrals of convex functions, and it is the step where compactness of $K$ is consumed.</p>
 <p><strong>Theorem (Choquet–Bishop–de Leeuw).</strong> Every maximal measure $\mu$ on $K$ is carried by the Choquet boundary, $\mu(K\setminus\partial K) = 0$. Consequently, for a metrizable $K$, where $\partial K = \operatorname{ext} K$, every $x\in K$ is the barycentre of a measure carried by the extreme points,</p>
 <p>$$
-x = \int_{\operatorname{ext} K} e\,d\mu(e) .
+\boxed{\;x = \int_{\operatorname{ext} K} e\,d\mu(e)\;} .
 $$</p>
 <p><em>Proof.</em> If $x\notin\partial K$ there is an upper semicontinuous convex $f$ with $f(x)>0$ and $f\leq0$ on $\partial K$; the set where $f$ attains its positive maximum is a compact convex subset of $K$ disjoint from the boundary, and a maximal measure gives it no mass, by the maximality; iterating over the boundary and using the metrizability to run a countable exhaustion yields the result. The identification $\partial K = \operatorname{ext} K$ in the metrizable case is the Choquet–Bishop–de Leeuw theorem.</p>
 <h3 id="the-bauer-maximum-principle-and-the-simplices">The Bauer Maximum Principle and the Simplices</h3>

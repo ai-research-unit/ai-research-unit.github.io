@@ -96,13 +96,13 @@ $$</p>
 <h3 id="the-euclidean-algorithm">The Euclidean Algorithm</h3>
 <p><strong>Theorem (Euclidean algorithm).</strong> Let $R$ be a Euclidean domain with degree function $N$, let $a, b \in R$ with $b \neq 0$, and define recursively</p>
 <p>$$
-r_{-1} = a, \quad r_0 = b, \quad r_{k-1} = q_k r_k + r_{k+1} \ \ (k \geq 0),
+\boxed{\;r_{-1} = a, \quad r_0 = b, \quad r_{k-1} = q_k r_k + r_{k+1} \ \ (k \geq 0)\;},
 $$</p>
 <p>where $r_{k+1}$ is the remainder of the division of $r_{k-1}$ by $r_k$, and the recursion stops at the first $k$ with $r_{k+1} = 0$. Then the recursion terminates, and the last nonzero remainder $r_k$ is a greatest common divisor of $a$ and $b$.</p>
 <p><strong>Proof.</strong> As long as $r_k \neq 0$ the next remainder satisfies $N(r_{k+1}) < N(r_k)$, since $r_{k+1} \neq 0$ by hypothesis; a strictly decreasing sequence in $\mathbb{Z}_{\geq 0}$ is finite, so the recursion stops. For the gcd statement, the identity $r_{k-1} = q_k r_k + r_{k+1}$ shows that the pair $(r_{k-1}, r_k)$ has the same common divisors as the pair $(r_k, r_{k+1})$: a common divisor of the first pair divides $r_{k+1}$, and a common divisor of the second divides $r_{k-1}$. Hence all consecutive pairs have the same common divisors, and the last pair $(r_k, 0)$ has common divisors exactly the divisors of $r_k$; so $\gcd(a,b) \sim r_k$.</p>
 <p><strong>Theorem (extended Euclidean algorithm).</strong> With the notation of the algorithm, there are $x, y \in R$ with</p>
 <p>$$
-r_k = a x + b y .
+\boxed{\;r_k = a x + b y\;} .
 $$</p>
 <p>The coefficients are computed by running the divisions forwards as in the proof, or equivalently by substituting each division into the one above it, starting from the last nonzero remainder and working upwards.</p>
 <p><strong>Proof.</strong> By induction on $j$ we have $r_j = a x_j + b y_j$ for all $j \geq -1$, starting with $(x_{-1}, y_{-1}) = (1,0)$ and $(x_0, y_0) = (0,1)$; the recursion $r_{j+1} = r_{j-1} - q_j r_j$ gives $(x_{j+1}, y_{j+1}) = (x_{j-1} - q_j x_j, y_{j-1} - q_j y_j)$.</p>
@@ -128,7 +128,7 @@ $$</p>
 <p>with the degree function $N(a + bi) = a^2 + b^2$, which is multiplicative: $N(zw) = N(z)N(w)$ for all $z, w$.</p>
 <p><strong>Lemma (division with remainder in $\mathbb{Z}[i]$).</strong> Let $z, w \in \mathbb{Z}[i]$ with $w \neq 0$. Then there exist $q, r \in \mathbb{Z}[i]$ with</p>
 <p>$$
-z = q w + r, \qquad N(r) \leq \tfrac{1}{2} N(w) < N(w).
+\boxed{\;z = q w + r, \qquad N(r) \leq \tfrac{1}{2} N(w) < N(w)\;}.
 $$</p>
 <p><strong>Proof.</strong> Write $z/w = \alpha + \beta i$ with $\alpha, \beta \in \mathbb{Q}$, possible because $w \neq 0$ and $z/w = z\bar w / N(w)$. Choose integers $m, n$ with $|\alpha - m| \leq \tfrac12$ and $|\beta - n| \leq \tfrac12$, and set $q = m + ni \in \mathbb{Z}[i]$, $r = z - qw$. Then</p>
 <p>$$

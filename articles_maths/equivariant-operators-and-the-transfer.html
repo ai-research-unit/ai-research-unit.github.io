@@ -104,7 +104,7 @@ $$</p>
 <p>the sum over a set of coset representatives of $H$ in $G$; the summands depend only on the coset because $x$ is $H$-fixed, and the sum is $G$-fixed, so the operator is well defined and independent of the choice of the representatives.</p>
 <p><strong>Theorem.</strong> The restriction and the transfer satisfy the composition identities</p>
 <p>$$
-r\circ t = [G:H]\,\mathrm{id}_{M^H}, \qquad t\circ r = [G:H]\,\mathrm{id}_{M^G}, \qquad N_G = t\circ N_H ,
+\boxed{\;r\circ t = [G:H]\,\mathrm{id}_{M^H}, \qquad t\circ r = [G:H]\,\mathrm{id}_{M^G}, \qquad N_G = t\circ N_H\;} ,
 $$</p>
 <p>where $[G:H]$ is the index and $N_G=\sum_{g\in G}\rho(g)$, $N_H=\sum_{h\in H}\rho(h)$ are the norms; the norm of the subgroup acts on the fixed part $M^H$ by the scalar $|H|$. For $H=1$ the transfer is the norm $N_G$ and for $H=G$ the restriction is the identity and the transfer is the identity.</p>
 <p><em>Proof.</em> The sum over the cosets is invariant under replacing the representatives by another set, because a changed summand is replaced by an equal one by the $H$-fixity of $x$ and the $G$-fixity of the sum, which also proves that $t$ lands in $M^G$: $\rho(h)\sum_{\bar g}\rho(g)x=\sum_{\bar g}\rho(hg)x=\sum_{\bar g}\rho(g)x$ for $h\in H$ extended over the cosets. The first composition counts one copy of $x$ per coset and the second one copy of $m$ per coset because $m$ is fixed, giving the index in both; and $t\circ N_H$ sums $\rho(g)\rho(h)$ over the cosets and over $H$, which is the sum over all of $G$.</p>
@@ -125,7 +125,7 @@ $$</p>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem (Shapiro's lemma).</strong> For a subgroup $H\leq G$, a $G$-module $M$ and its restriction to $H$, there is a natural isomorphism</p>
 <p>$$
-H^*(G; \mathrm{Ind}_H^G N) \cong H^*(H;N), \qquad H^*_G(G/H \times Z; \underline M) \cong H^*_H(Z;\underline M),
+\boxed{\;H^*(G; \mathrm{Ind}_H^G N) \cong H^*(H;N), \qquad H^*_G(G/H \times Z; \underline M) \cong H^*_H(Z;\underline M)\;},
 $$</p>
 <p>the cohomology of the induced module is the cohomology of the subgroup, and the same with the Bredon cohomology of the orbit $G/H$ and of the coefficient system restricted to $H$: the induction and the restriction form an adjoint pair on the cohomology.</p>
 <p><em>Proof.</em> The tensor identity $\mathrm{Ind}_H^G N = k[G]\otimes_{k[H]}N$ with the induction, and the standard resolution of the induced module; the equivariant form is the identification of the $G$-cells of the orbit $G/H\times Z$ with the $H$-cells of $Z$, which is the same computation in the equivariant setting.</p>
@@ -158,7 +158,7 @@ $$</p>
 <h3 id="the-double-coset-formula">The Double Coset Formula</h3>
 <p><strong>Theorem (Mackey).</strong> For subgroups $H,K\leq G$ the composite of the transfer from $H$ with the restriction to $K$ is the sum over the double cosets of the conjugates of the transfers and the restrictions:</p>
 <p>$$
-\mathrm{res}_K^G\circ\mathrm{cor}_H^G = \sum_{KgH\in K\backslash G/H} \mathrm{cor}_{K\cap gHg^{-1}}^{K}\circ g\circ\mathrm{res}_{H\cap g^{-1}Kg}^{H} ,
+\boxed{\;\mathrm{res}_K^G\circ\mathrm{cor}_H^G = \sum_{KgH\in K\backslash G/H} \mathrm{cor}_{K\cap gHg^{-1}}^{K}\circ g\circ\mathrm{res}_{H\cap g^{-1}Kg}^{H}\;} ,
 $$</p>
 <p>the <strong>double coset formula</strong>, which is the multiplication rule of the Mackey functor of the equivariant operators; for $H=K=1$ it specialises to the norm and for $H=K$ normal to the sum of the conjugations over the quotient $G/H$.</p>
 <p><em>Proof.</em> The cosets of $H$ in $G$ are partitioned by the double cosets $KgH$, and the restriction to $K$ of the transfer is the sum of the restrictions to $K$ of the summands of each double coset; within a double coset the summands are the conjugates of the transfer from $K\cap gHg^{-1}$ to $K$, which is the stated sum.</p>

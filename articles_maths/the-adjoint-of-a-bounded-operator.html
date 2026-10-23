@@ -76,7 +76,7 @@
 <h2 id="the-adjoint-as-an-involution-of-the-operator-algebra">The Adjoint as an Involution of the Operator Algebra</h2>
 <p><strong>Theorem (existence and the defining properties).</strong> For every $T \in B(H)$ there is a unique $T^{*} \in B(H)$ with</p>
 <p>$$
-\langle Tx, y\rangle = \langle x, T^{*}y\rangle \qquad (x, y \in H),
+\boxed{\;\langle Tx, y\rangle = \langle x, T^{*}y\rangle \qquad (x, y \in H)\;},
 $$</p>
 <p>and $\lVert T^{*}\rVert = \lVert T\rVert$, $(S+T)^{*} = S^{*}+T^{*}$, $(\lambda T)^{*} = \overline{\lambda}T^{*}$, $(\mathrm{id})^{*} = \mathrm{id}$ and $T^{**} = T$.</p>
 <p><strong>Proof.</strong> The existence, the uniqueness, the norm equality and the algebraic identities are established in <em>Banach and Hilbert Spaces</em> from the Riesz representation theorem; they are quoted here and not reproved.</p>
@@ -88,7 +88,7 @@ $$</p>
 <p><strong>Proof.</strong> For $x, y \in H$, $\langle STx, y\rangle = \langle Tx, S^{*}y\rangle = \langle x, T^{*}S^{*}y\rangle$, and the uniqueness of the adjoint gives $(ST)^{*} = T^{*}S^{*}$; the remaining statements are the theorem above.</p>
 <p><strong>Proposition (the $C^{*}$-identity).</strong> For every $T \in B(H)$,</p>
 <p>$$
-\lVert T^{*}T\rVert = \lVert T\rVert^{2} ,
+\boxed{\;\lVert T^{*}T\rVert = \lVert T\rVert^{2}\;} ,
 $$</p>
 <p>and this identity exhibits $B(H)$ as a $C^{*}$-algebra for the adjoint involution.</p>
 <p><strong>Proof.</strong> For $\lVert x\rVert \leq 1$, $\lVert Tx\rVert^{2} = \langle Tx,Tx\rangle = \langle T^{*}Tx,x\rangle \leq \lVert T^{*}T\rVert\lVert x\rVert^{2}$, so $\lVert T\rVert^{2} \leq \lVert T^{*}T\rVert$; the reverse inequality is the submultiplicativity $\lVert T^{*}T\rVert \leq \lVert T^{*}\rVert\lVert T\rVert = \lVert T\rVert^{2}$. The abstract theory of the $C^{*}$-algebras that the identity defines is <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em> and <em>Operator Algebras</em>, named here and not developed.</p>
@@ -106,7 +106,7 @@ $$</p>
 <h2 id="spectral-and-finite-dimensional-properties">Spectral and Finite-Dimensional Properties</h2>
 <p><strong>Proposition (the spectrum transforms by conjugation).</strong> For $T \in B(H)$,</p>
 <p>$$
-\sigma(T^{*}) = \overline{\sigma(T)} ,
+\boxed{\;\sigma(T^{*}) = \overline{\sigma(T)}\;} ,
 $$</p>
 <p>and $T$ is invertible exactly when $T^{*}$ is, with $(T^{-1})^{*} = (T^{*})^{-1}$; the involution therefore preserves invertibility and the unitary group.</p>
 <p><strong>Proof.</strong> $T - \lambda \mathrm{id}$ is invertible with bounded inverse exactly when its adjoint $T^{*} - \overline{\lambda}\,\mathrm{id}$ is, because the adjoint of an invertible operator is invertible with adjoint inverse; hence $\lambda \in \rho(T)$ iff $\overline{\lambda} \in \rho(T^{*})$. The inverse formula follows by taking adjoints in $T T^{-1} = \mathrm{id}$.</p>

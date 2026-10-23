@@ -89,7 +89,7 @@ $$</p>
 <p>Let $A$ be a unital ring and let $P=A^n$ be the free left $A$-module of rank $n$, whose elements we write as column vectors. The ring $M_n(A)$ acts on $P$ on the left by matrix multiplication, and $P$ is a $(M_n(A),A)$-bimodule: the left action of matrices and the right action of scalars commute by associativity. Since $A$ is not assumed commutative, it matters that the scalars act on the right of the matrices.</p>
 <p><strong>Theorem.</strong> The functor</p>
 <p>$$
-\Phi = P \otimes_A - : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(M_n(A)),
+\boxed{\;\Phi = P \otimes_A - : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(M_n(A))\;},
 $$</p>
 <p>given on objects by $M \mapsto P \otimes_A M = A^n \otimes_A M$, is an equivalence of categories.</p>
 <p><em>Pro.</em> First, $A^n \otimes_A M \cong M^n$ naturally in $M$, by the isomorphism $(a_1,\dots,a_n)\otimes m \mapsto (a_1 m,\dots,a_n m)$; so on objects $\Phi(M)=M^n$, the direct sum of $n$ copies of $M$. The $M_n(A)$-action is the evident one, matrices acting on the columns of $M^n$.</p>
@@ -121,7 +121,7 @@ B=\operatorname{End}_A(P)^{\mathrm{opp}}.
 $$</p>
 <p>Then $P$ is an $(A,B)$-bimodule, and</p>
 <p>$$
-\operatorname{Hom}_A(P,-) : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(B)
+\boxed{\;\operatorname{Hom}_A(P,-) : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(B)\;}
 $$</p>
 <p>is an equivalence of categories, with quasi-inverse $P \otimes_B -$. Conversely, every equivalence $\operatorname{Mod}(A)\to\operatorname{Mod}(B)$ arises in this way from a progenerator.</p>
 <p><em>Proof.</em> The right $B$-module structure on $P$ is $p \cdot b = b(p)$, which is a right action because $B$ is the opposite of the endomorphism ring; this makes $P$ an $(A,B)$-bimodule since endomorphisms are $A$-linear. The adjunction $\operatorname{Hom}_A(P \otimes_B -, -)\cong\operatorname{Hom}_B(-,\operatorname{Hom}_A(P,-))$ has unit and counit which are isomorphisms precisely because $P$ is a generator (counit) and finitely generated projective (unit), by the standard argument dual to the matrix case above.</p>
@@ -186,7 +186,7 @@ F[G]^{\mathrm{b}} \cong \prod_{i=1}^{r} D_i,
 $$</p>
 <p>and therefore</p>
 <p>$$
-F[G] \sim_M F[H] \iff \prod_{i} D_i(G) \cong \prod_{i} D_i(H),
+\boxed{\;F[G] \sim_M F[H] \iff \prod_{i} D_i(G) \cong \prod_{i} D_i(H)\;},
 $$</p>
 <p>that is, if and only if the two groups have the same number of simple modules with the same endomorphism division algebras, up to permutation. Over an algebraically closed field every $D_i$ is $F$, so the criterion reduces to equality of the number of simple modules. Over $F=\mathbb{C}$ the number of simple modules is the number of conjugacy classes of $G$, and the criterion becomes</p>
 <p>$$

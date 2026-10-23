@@ -146,13 +146,13 @@ $$</p>
 <p>The three isomorphism theorems and the correspondence theorem carry over from modules without change, with "submodule" replaced by "subalgebra" or "ideal" as appropriate.</p>
 <p><strong>Theorem (first isomorphism theorem).</strong> Let $\varphi : A \to B$ be an algebra homomorphism. Then $\varphi$ induces an isomorphism</p>
 <p>$$
-A/\ker\varphi \;\cong\; \operatorname{im}\varphi,
+\boxed{\;A/\ker\varphi \;\cong\; \operatorname{im}\varphi\;},
 $$</p>
 <p>given by $a + \ker\varphi \mapsto \varphi(a)$.</p>
 <p><em>Proof.</em> The map is well defined and $R$-linear by the module theorem; it is multiplicative because $\varphi$ is, and it is bijective onto the image by construction.</p>
 <p><strong>Theorem (second isomorphism theorem).</strong> Let $B$ be a subalgebra and $I$ a two-sided ideal of $A$. Then $B + I$ is a subalgebra of $A$, $B \cap I$ is a two-sided ideal of $B$, and</p>
 <p>$$
-(B + I)/I \;\cong\; B/(B \cap I).
+\boxed{\;(B + I)/I \;\cong\; B/(B \cap I)\;}.
 $$</p>
 <p><em>Proof.</em> For $b, b' \in B$ and $x, x' \in I$,</p>
 <p>$$
@@ -161,7 +161,7 @@ $$</p>
 <p>since $bb' \in B$ and the remaining three terms lie in $I$; this also shows that $I$ is an ideal of $B + I$. The intersection $B \cap I$ is a submodule of $B$ closed under multiplication by $B$, hence an ideal of $B$, and the map $b + (B\cap I) \mapsto b + I$ is the required isomorphism.</p>
 <p><strong>Theorem (third isomorphism theorem).</strong> Let $I \subseteq J$ be two-sided ideals of $A$. Then $J/I$ is a two-sided ideal of $A/I$, and</p>
 <p>$$
-(A/I)/(J/I) \;\cong\; A/J.
+\boxed{\;(A/I)/(J/I) \;\cong\; A/J\;}.
 $$</p>
 <p><em>Proof.</em> The set $J/I$ is the image of $J$ under the quotient map, so it is an ideal by the proposition on images of ideals. The composite $A \to A/I \to (A/I)/(J/I)$ has kernel $J$, so the first isomorphism theorem applies.</p>
 <p><strong>Theorem (correspondence theorem).</strong> Let $I$ be a two-sided ideal of $A$ and $\pi : A \to A/I$ the quotient map. The map $J \mapsto \pi^{-1}(J)$ is a bijection from the set of two-sided ideals of $A/I$ onto the set of two-sided ideals of $A$ containing $I$, with inverse $J \mapsto J/I$. The bijection preserves inclusion, and it restricts to a bijection between the maximal ideals on the two sides.</p>

@@ -125,21 +125,21 @@ $$</p>
 <p>The density theorem of <em>Automorphisms of Modules over an Algebra</em> says that the action of the algebra realises arbitrary values on finitely many independent elements, as far as the endomorphism division ring permits.</p>
 <p><strong>Theorem (density).</strong> Let $S$ be a simple left $A$-module and put $D=\operatorname{End}_A(S)$, a division ring by Schur's lemma, acting on $S$ on the left. Let $x_1,\dots,x_n \in S$ be $D$-linearly independent and let $y_1,\dots,y_n \in S$ be arbitrary. Then there exists $a \in A$ with</p>
 <p>$$
-a x_i = y_i \qquad (i=1,\dots,n).
+\boxed{\;a x_i = y_i \qquad (i=1,\dots,n)\;}.
 $$</p>
 <p><em>Proof sketch.</em> For $n=1$ simplicity gives $S=A x_1$, so some $a$ carries $x_1$ to $y_1$. For general $n$, form the submodule $N=\{(a x_1,\dots,a x_n) : a \in A\} \subseteq S^n$; one shows $N=S^n$ by using the $D$-independence of the $x_i$ and the simplicity of $S$, and a surjectivity statement on $S^n$ is exactly the existence of $a$ with the prescribed values. The complete argument is in <em>Automorphisms of Modules over an Algebra</em>.</p>
 <h3 id="the-operator-reading">The operator reading</h3>
 <p>The theorem measures the image of the algebra inside the operators of the module.</p>
 <p><strong>Corollary.</strong> Let $S$ be simple and $D=\operatorname{End}_A(S)$. Then the bicommutant of $L_A$ in $\operatorname{End}_R(S)$ is $\operatorname{End}_D(S)$, and the density theorem says that $L_A$ is large inside it: no element of $\operatorname{End}_D(S)$ is separated from $L_A$ by finitely many conditions — for finitely many $D$-independent $x_1,\dots,x_n$ and arbitrary $y_1,\dots,y_n$, some $a \in A$ has $a x_i=y_i$. In particular, if $S$ is finite-dimensional over an algebraically closed field $F$, then $\operatorname{End}_A(S)=F$ and the density theorem gives</p>
 <p>$$
-A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S).
+\boxed{\;A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S)\;}.
 $$</p>
 <p><em>Proof.</em> The centralizer of $L_A$ is $D$, so the centralizer of $D$ — the bicommutant — is $\operatorname{End}_D(S)$. The middle clause is the theorem restated. For the last, Schur's lemma gives $D=F$ when $F$ is algebraically closed and $S$ is finite-dimensional, and $S$ being finite-dimensional over $F$ means the finite conditions already determine every operator, so a subalgebra realising every finite set of values is all of $\operatorname{End}_F(S)$; passing to the image gives $A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S)$.</p>
 <h3 id="isotypic-modules">Isotypic modules</h3>
 <p>The density theorem computes the endomorphism ring of a sum of copies of one simple module.</p>
 <p><strong>Proposition.</strong> Let $S$ be simple with $D=\operatorname{End}_A(S)$ and let $M=S^n$ be a finite direct sum. Then</p>
 <p>$$
-\operatorname{End}_A(M) \cong M_n(D),
+\boxed{\;\operatorname{End}_A(M) \cong M_n(D)\;},
 $$</p>
 <p>and with $D$-linear coordinates the endomorphisms act by matrices.</p>
 <p><em>Proof.</em> An endomorphism of $S^n$ is a map that sends each component to a sum of components; its $(i,j)$-entry is the composite $S \hookrightarrow S^n \to S$, an element of $D$, and composition of endomorphisms composes the matrices. Conversely every matrix over $D$ defines an $A$-linear map because each entry is $A$-linear.</p>

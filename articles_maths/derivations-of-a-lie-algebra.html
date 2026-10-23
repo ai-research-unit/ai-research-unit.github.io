@@ -105,16 +105,16 @@ $$</p>
 <h3 id="the-adjoint-map-and-the-exact-sequence">The Adjoint Map and the Exact Sequence</h3>
 <p><strong>Proposition (the basic exact sequence).</strong> The adjoint map $\operatorname{ad}:\mathrm{G}\to\operatorname{Der}(\mathrm{G})$ is a Lie algebra homomorphism with kernel $\mathrm{Z}(\mathrm{G})$, hence $\operatorname{Inn}(\mathrm{G})\cong\mathrm{G}/\mathrm{Z}(\mathrm{G})$ and</p>
 <p>$$
-0\longrightarrow\mathrm{Z}(\mathrm{G})\longrightarrow\mathrm{G}\xrightarrow{\operatorname{ad}}\operatorname{Der}(\mathrm{G})\longrightarrow\operatorname{Out}(\mathrm{G})\longrightarrow0 .
+\boxed{\;0\longrightarrow\mathrm{Z}(\mathrm{G})\longrightarrow\mathrm{G}\xrightarrow{\operatorname{ad}}\operatorname{Der}(\mathrm{G})\longrightarrow\operatorname{Out}(\mathrm{G})\longrightarrow0\;} .
 $$</p>
 <p><strong>Proof.</strong> The homomorphism property is $\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]$, which is the Jacobi identity; the kernel is the centre; the image is $\operatorname{Inn}(\mathrm{G})$; the quotient is $\operatorname{Out}(\mathrm{G})$.</p>
 <p><strong>Corollary.</strong> $\operatorname{Inn}(\mathrm{G})\cong\mathrm{G}$ exactly when $\mathrm{G}$ has trivial centre, and $\operatorname{Inn}(\mathrm{G})=0$ exactly when $\mathrm{G}$ is abelian.</p>
 <h3 id="the-identification-with-the-first-cohomology">The Identification with the First Cohomology</h3>
 <p><strong>Theorem.</strong> With coefficients in the adjoint module $\mathrm{G}$,</p>
 <p>$$
-\operatorname{Der}(\mathrm{G})=Z^1(\mathrm{G};\mathrm{G}),\qquad
+\boxed{\;\operatorname{Der}(\mathrm{G})=Z^1(\mathrm{G};\mathrm{G}),\qquad
 \operatorname{Inn}(\mathrm{G})=B^1(\mathrm{G};\mathrm{G}),\qquad
-\operatorname{Out}(\mathrm{G})=H^1(\mathrm{G};\mathrm{G}).
+\operatorname{Out}(\mathrm{G})=H^1(\mathrm{G};\mathrm{G})\;}.
 $$</p>
 <p><strong>Proof.</strong> The differential on a one-cochain $\delta:\mathrm{G}\to\mathrm{G}$ is $d\delta(x,y)=[x,\delta(y)]-[y,\delta(x)]-\delta([x,y])$; its vanishing is the Leibniz rule read with one argument transposed. The coboundaries are the inner derivations, by the identification recorded in <em>Lie Algebra Cohomology</em>, and the quotient is $\operatorname{Out}(\mathrm{G})$.</p>
 <p><strong>Corollary.</strong> $\operatorname{Out}(\mathrm{G})=0$ for a semisimple $\mathrm{G}$ over a field of characteristic zero, by the vanishing of the first cohomology with coefficients in the adjoint module, which is the first Whitehead lemma of <em>Lie Algebra Cohomology</em> and the cohomological form of the theorem of <em>Structure of Lie Algebras</em> that every derivation of such an algebra is inner.</p>
@@ -126,7 +126,7 @@ $$</p>
 <h3 id="the-restricted-structure-in-characteristic-math99">The Restricted Structure in Characteristic $p$</h3>
 <p><strong>Proposition (the iterated Leibniz rule).</strong> For a derivation $D$ and all $x,y$ and all $n\geq0$,</p>
 <p>$$
-D^n([x,y])=\sum_{i=0}^{n}\binom{n}{i}\,[D^ix,D^{n-i}y],
+\boxed{\;D^n([x,y])=\sum_{i=0}^{n}\binom{n}{i}\,[D^ix,D^{n-i}y]\;},
 $$</p>
 <p>with $D^0=\operatorname{id}$.</p>
 <p><strong>Proof.</strong> Induction on $n$ using $D([u,v])=[Du,v]+[u,Dv]$ and Pascal's rule.</p>

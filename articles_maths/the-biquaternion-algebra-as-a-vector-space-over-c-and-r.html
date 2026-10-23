@@ -168,7 +168,7 @@ $$</p>
 <h2 id="the-real-scalars">The Real Scalars</h2>
 <p><strong>Definition.</strong> The <strong>real reading</strong> of $\mathbb{B}$ is the same additive group over the subfield $\mathbb{R}$ of $\mathbb{C}$, obtained by restriction of scalars: the elements are unchanged and the scalar domain is cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$. The general element is written in the eight real coordinates of §<em>The Coordinate Systems</em>, on the real basis</p>
 <p>$$
-e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z .
+e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z.
 $$</p>
 <p>Every element is a unique real combination of those eight, so the real dimension is the complex dimension doubled, $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$, as recorded in §<em>The Coordinate Systems</em>.</p>
 <p><strong>Remark.</strong> No complex number is used as a scalar in this reading: the scalars are real, and the complex reading is the stronger structure rather than a different set. Every statement made over $\mathbb{R}$ holds over $\mathbb{C}$, since a complex scalar is a pair of real ones, and the real reading keeps the additive group, the basis and the product while dropping the complex scalars alone.</p>
@@ -179,19 +179,25 @@ J : \tilde{Q} \mapsto i\tilde{Q}, \qquad J^2 = -\mathrm{id},
 $$</p>
 <p>is real-linear, and it is the <strong>complex structure</strong> of the real space, already named in §<em>Developed Form</em>. It carries the whole gap between the readings: for $\lambda = a + bi$, the centrality of the scalars gives</p>
 <p>$$
-\lambda\tilde{Q} = a\tilde{Q} + bJ(\tilde{Q}),
+\boxed{\;
+\lambda\tilde{Q} = a\tilde{Q} + bJ(\tilde{Q})
+\;},
 $$</p>
 <p>so the complex action is the real action together with $J$, and the real space together with $J$ is the complex space.</p>
 <p><strong>Proposition (linearity is the commutator with $J$).</strong> A real-linear map $T$ of $\mathbb{B}$ is $\mathbb{C}$-linear exactly when it commutes with $J$, and antilinear exactly when it anticommutes with it:</p>
 <p>$$
-T(\lambda\tilde{Q}) = \lambda T(\tilde{Q}) \text{ for all } \lambda \iff TJ = JT, \qquad T(\lambda\tilde{Q}) = \bar{\lambda} T(\tilde{Q}) \text{ for all } \lambda \iff TJ = -JT .
+\boxed{\;
+T(\lambda\tilde{Q}) = \lambda T(\tilde{Q}) \text{ for all } \lambda \iff TJ = JT, \qquad T(\lambda\tilde{Q}) = \bar{\lambda} T(\tilde{Q}) \text{ for all } \lambda \iff TJ = -JT
+\;}.
 $$</p>
 <p><strong>Proof.</strong> Let $T$ be real-linear. Then $T(J\tilde{Q}) = T(i\tilde{Q})$ and $J(T\tilde{Q}) = iT(\tilde{Q})$, so the identity $T(i\tilde{Q}) = iT(\tilde{Q})$ is exactly $TJ = JT$; real-linearity then gives $T(\lambda\tilde{Q}) = T(a\tilde{Q} + bJ\tilde{Q}) = aT(\tilde{Q}) + bJT(\tilde{Q}) = \lambda T(\tilde{Q})$ for every $\lambda = a + bi$, and conversely $TJ = JT$ gives $T(i\tilde{Q}) = iT(\tilde{Q})$ and hence the same identity. The antilinear case is the same computation with the sign reversed, $T(i\tilde{Q}) = -iT(\tilde{Q})$, which is $TJ = -JT$.</p>
 <h3 id="linear-and-antilinear-maps">Linear and Antilinear Maps</h3>
 <p>The four conjugations of §<em>Conjugations</em> are all real-linear, and the proposition separates them into two classes: ${}^{\natural}$ commutes with $J$ and is $\mathbb{C}$-linear, while $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and $\flat = -{}^{*}$ anticommute with $J$ and are antilinear. The line between the two kinds of map is thus the commutation with one operator.</p>
 <p>The real reading sees more linear maps than the complex one:</p>
 <p>$$
-\operatorname{End}_\mathbb{R}(\mathbb{B}) \cong M_8(\mathbb{R}), \qquad \operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C}),
+\boxed{\;
+\operatorname{End}_\mathbb{R}(\mathbb{B}) \cong M_8(\mathbb{R}), \qquad \operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})
+\;},
 $$</p>
 <p>of real dimensions $64$ and $32$. The $\mathbb{C}$-linear maps are the real-linear ones commuting with $J$, a subspace of half the dimension; a real-linear map that anticommutes with $J$ is antilinear, an ordinary linear map of the real space that is not a complex-linear operator. The conjugations are the natural examples.</p>
 <h3 id="the-real-form">The Real Form</h3>

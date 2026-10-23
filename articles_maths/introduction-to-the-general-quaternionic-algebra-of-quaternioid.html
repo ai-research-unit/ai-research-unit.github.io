@@ -86,12 +86,12 @@ $$</p>
 <h3 id="the-coordinate-rule">The Coordinate Rule</h3>
 <p><strong>Proposition (the coordinate rule).</strong> With $\vec q_1, \vec q_2$ the vector parts and $\vec q_1 \times \vec q_2$ the cross product,</p>
 <p>$$
-\tilde q_1 \star \tilde q_2 = \bigl(q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2\bigr)e_t + q_{1t}\vec q_2 - q_{2t}\vec q_1 - \vec q_1 \times \vec q_2 .
+\boxed{\;\tilde q_1 \star \tilde q_2 = \bigl(q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2\bigr)e_t + q_{1t}\vec q_2 - q_{2t}\vec q_1 - \vec q_1 \times \vec q_2\;}.
 $$</p>
 <p><em>Proof.</em> Expand $\tilde q_1^{\natural}\tilde q_2 = (q_{1t} - \vec q_1)(q_{2t} + \vec q_2) = q_{1t}q_{2t} - \vec q_1\vec q_2 + q_{1t}\vec q_2 - q_{2t}\vec q_1$ and substitute the product of two pure quaternions, $\vec q_1\vec q_2 = -\,\vec q_1 \cdot \vec q_2 + \vec q_1 \times \vec q_2$ (<em>Quaternion Algebra</em>).</p>
 <p><strong>Proposition (bilinearity and the exchange law).</strong> The product is $\mathbb{R}$-bilinear. It is neither commutative nor anticommutative. The two orderings are exchanged by the conjugation,</p>
 <p>$$
-\tilde q_2 \star \tilde q_1 = (\tilde q_1 \star \tilde q_2)^{\natural} .
+\boxed{\;\tilde q_2 \star \tilde q_1 = (\tilde q_1 \star \tilde q_2)^{\natural}\;}.
 $$</p>
 <p><em>Proof.</em> Bilinearity is that of the plain product and of the conjugation. For the exchange law, $(\tilde q_1^{\natural}\tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1^{\natural\natural} = \tilde q_2^{\natural}\tilde q_1$, because the conjugation is an anti-automorphism of order two.</p>
 <p><strong>Remark (the product against the plain one).</strong> The coordinate rule separates the product into the plain product and a correction. For pure $\tilde q_1$ and pure $\tilde q_2$ one has $\tilde q_1 \star \tilde q_2 = -\,\tilde q_1\tilde q_2$, while a general element obeys</p>
@@ -106,7 +106,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the associator).</strong> For all $\tilde q_1,\tilde q_2,\tilde q_3 \in \mathbb{H}$,</p>
 <p>$$
-[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3 .
+\boxed{\;[\tilde q_1,\tilde q_2,\tilde q_3] = \bigl(\tilde q_2^{\natural}\tilde q_1 - \tilde q_1^{\natural}\tilde q_2^{\natural}\bigr)\tilde q_3\;}.
 $$</p>
 <p>In particular the product is <strong>not associative</strong>: $[\vec e_x,e_t,e_t] = 2\vec e_x$, and $24$ of the $64$ triples of basis elements give a nonzero associator.</p>
 <p><em>Proof.</em> By the exchange law $(\tilde q_1 \star \tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1$, so $(\tilde q_1 \star \tilde q_2) \star \tilde q_3 = (\tilde q_1^{\natural}\tilde q_2)^{\natural}\tilde q_3 = \tilde q_2^{\natural}\tilde q_1\tilde q_3$, while $\tilde q_1 \star (\tilde q_2 \star \tilde q_3) = \tilde q_1^{\natural}(\tilde q_2^{\natural}\tilde q_3) = \tilde q_1^{\natural}\tilde q_2^{\natural}\tilde q_3$; the difference is the displayed product. At $(\vec e_x,e_t,e_t)$ the coefficient is $e_t^{\natural}\vec e_x - \vec e_x^{\natural}e_t^{\natural} = \vec e_x + \vec e_x = 2\vec e_x$, since $\vec e_x^{\natural} = -\vec e_x$. The count is the enumeration of the $64$ triples against the closed form.</p>
@@ -114,7 +114,7 @@ $$</p>
 <h2 id="the-left-unit">The Left Unit</h2>
 <p><strong>Theorem (the one-sided unit).</strong> The element $e_t$ is a left unit of the product and not a right one:</p>
 <p>$$
-e_t \star \tilde q = \tilde q , \qquad \tilde q \star e_t = \tilde q^{\natural} .
+\boxed{\;e_t \star \tilde q = \tilde q , \qquad \tilde q \star e_t = \tilde q^{\natural}\;}.
 $$</p>
 <p>There is no right unit: no $\tilde u \in \mathbb{H}$ satisfies $\tilde q \star \tilde u = \tilde q$ for every $\tilde q$.</p>
 <p><em>Proof.</em> $e_t \star \tilde q = e_t^{\natural}\tilde q = e_t\tilde q = \tilde q$ and $\tilde q \star e_t = \tilde q^{\natural}e_t = \tilde q^{\natural}$. For the non-existence, the condition at $\tilde q = e_t$ reads $\tilde u = e_t$, and at $\tilde q = \vec e_x$ it reads $\vec e_x^{\natural}\tilde u = \vec e_x$, that is $\tilde u = -\vec e_x$; the two requirements are incompatible.</p>

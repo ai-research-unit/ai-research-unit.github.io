@@ -139,7 +139,7 @@ $$</p>
 <p><em>Proof sketch.</em> Form the double complex $K^{n,m} = \check C^n(\mathcal{U}, \mathcal{Q}^m)$ for a resolution $\mathcal{Q}^\bullet$ of $\mathcal{F}$ by injectives, with the Čech differential in $n$ and the resolution differential in $m$. The spectral sequence of the double complex filtered by the total degree has $E_1^{n,m} = \check C^n(\mathcal{U},\mathcal{Q}^m)$; taking the cohomology in $m$ first uses that a section of $H^m(\mathcal{Q}^\bullet)$ over a member of the cover computes $H^m(\Xi_i,\mathcal{F})$, giving $E_2^{n,m} = \check H^n(\mathcal{U},\underline{H}^m(\mathcal{F}))$, and the other filtration converges to the cohomology of the total complex, which is $H^*(X,\mathcal{F})$ because the rows are resolutions and the Čech complex of an injective resolution computes the derived functors.</p>
 <p><strong>Theorem (Leray's theorem).</strong> Let $\mathcal{U}$ be an open cover of $X$ such that $\underline{H}^m(\mathcal{F})(\Xi_{i_0\ldots i_n}) = H^m(\Xi_{i_0\ldots i_n},\mathcal{F}) = 0$ for every nonempty finite intersection and every $m > 0$, that is, every nonempty finite intersection is <strong>acyclic</strong> for $\mathcal{F}$. Then the natural map</p>
 <p>$$
-\check H^n(\mathcal{U},\mathcal{F}) \to H^n(X,\mathcal{F})
+\boxed{\;\check H^n(\mathcal{U},\mathcal{F}) \to H^n(X,\mathcal{F})\;}
 $$</p>
 <p>is an isomorphism for every $n \geq 0$.</p>
 <p><em>Proof.</em> Under the hypothesis the presheaf $\underline{H}^m(\mathcal{F})$ vanishes on each finite intersection of members of $\mathcal{U}$ for $m > 0$; hence every term of the Čech complex $\check C^n(\mathcal{U},\underline{H}^m(\mathcal{F}))$ is a product of zero groups, so $E_2^{n,m} = 0$ for $m > 0$ and the spectral sequence has $E_2^{n,0} = \check H^n(\mathcal{U},\mathcal{F})$ concentrated on the bottom row; the spectral sequence therefore degenerates, and its $E_\infty$ terms are already the $E_2$ terms, giving $\check H^n(\mathcal{U},\mathcal{F}) \cong H^n(X,\mathcal{F})$.</p>
@@ -149,7 +149,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>nerve</strong> of the cover $\mathcal{U} = \{\Xi_i\}_{i\in I}$ is the simplicial complex $N(\mathcal{U})$ with vertex set $I$, in which a finite subset $\{i_0,\ldots,i_n\}$ spans a $n$-simplex if and only if the intersection $\Xi_{i_0\ldots i_n}$ is nonempty. Its geometric realisation is written $|N(\mathcal{U})|$.</p>
 <p><strong>Theorem (the nerve theorem).</strong> Let $X$ be a paracompact space and $\mathcal{U}$ an open cover such that every nonempty finite intersection $\Xi_{i_0\ldots i_n}$ is contractible. Then the geometric realisation of the nerve is homotopy equivalent to $X$:</p>
 <p>$$
-|N(\mathcal{U})| \simeq X.
+\boxed{\;|N(\mathcal{U})| \simeq X\;}.
 $$</p>
 <p><em>Proof sketch.</em> The homotopy equivalence is realised by a map sending the vertex $i$ to a point of $\Xi_i$ and extending over the simplices using the contractibility of the intersections; the inverse is a partition-of-unity map, which exists because the cover may be taken locally finite on a paracompact space, sending $x$ to the barycentric coordinates of the set of members of the cover containing $x$. The two composites are homotopic to the identity by a straight-line homotopy in the simplex of the nerve, the partitions of unity providing the continuity.</p>
 <p><strong>Corollary (Čech cohomology is the cohomology of the nerve).</strong> For a cover $\mathcal{U}$ with all nonempty finite intersections acyclic for the constant sheaf $\underline{A}$, the Čech complex of $\mathcal{U}$ with coefficients in $\underline{A}$ is the simplicial cochain complex of the nerve with coefficients in $A$:</p>
@@ -186,7 +186,7 @@ K^{n,m} = \check C^n(\mathcal{U},\Omega^m),
 $$</p>
 <p>with the Čech differential $\delta$ in the horizontal direction and the exterior derivative $d$ in the vertical direction; the two commute, $\delta d = d\delta$, so that $K^{\bullet,\bullet}$ is a double complex, and the two spectral sequences of the filtration by total degree both converge to the hypercohomology of $\Omega^\bullet$: the first has $E_2^{n,m} = \check H^n(\mathcal{U},\mathcal{H}^m(\Omega^\bullet))$ with $\mathcal{H}^0(\Omega^\bullet) = \underline{\mathbb{R}}$ and $\mathcal{H}^m = 0$ for $m>0$ by the Poincaré lemma, and the second has $E_1^{n,m} = \Omega^m(\Xi_{(n)})$ computing $H^m_{dR}(M)$. The comparison of the two degenerations is the <strong>de Rham theorem</strong>,</p>
 <p>$$
-H^n_{dR}(M) \cong H^n(M;\mathbb{R}),
+\boxed{\;H^n_{dR}(M) \cong H^n(M;\mathbb{R})\;},
 $$</p>
 <p>and the construction is the model for the comparison theorems of the subject. The section is recorded here because it is the Čech complex, not the de Rham complex, that provides the second index; the differential forms themselves are those of the written <em>Differential Forms and Stokes' Theorem</em>, and are not redefined here.</p>
 <h2 id="summary">Summary</h2>

@@ -77,7 +77,7 @@
 <h3 id="sets-membership-and-extensionality">Sets, Membership and Extensionality</h3>
 <p>A <strong>set</strong> is a collection of objects, its <strong>elements</strong>. One writes $x \in X$ for "$x$ is an element of $X$" and $x \notin X$ for its negation. Two sets are equal when they have the same elements: this is the <strong>axiom of extensionality</strong>,</p>
 <p>$$
-X = Y \quad \text{if and only if} \quad (z \in X \iff z \in Y) \ \text{for every } z.
+\boxed{\;X = Y \quad \text{if and only if} \quad (z \in X \iff z \in Y) \ \text{for every } z\;}.
 $$</p>
 <p>Extensionality is the principle that a set is determined by its members and by nothing else. It is the reason that two descriptions of the same collection describe the same set, and it is the tool with which every identity below is proved: to show that two sets are equal one shows that each element of one lies in the other.</p>
 <p>The <strong>empty set</strong> $\emptyset$ is the set with no elements. Extensionality makes it unique: if $\emptyset'$ also had no elements, then no $z$ lies in one and not the other, so $\emptyset = \emptyset'$. A set is <strong>nonempty</strong> if it has at least one element, written $X \neq \emptyset$.</p>
@@ -120,7 +120,7 @@ $$</p>
 </ol>
 <p><strong>Proof.</strong> Each identity is proved by extensionality. For the first De Morgan law, an element $x$ lies in $(A \cup B)^{\mathrm{c}}$ exactly when it is not in $A \cup B$, that is, when it is in neither $A$ nor $B$; and $x \in A^{\mathrm{c}} \cap B^{\mathrm{c}}$ exactly when it is not in $A$ and not in $B$. The two conditions are the same. The second law is the first applied to the complements, or is proved in the same way. The first distributivity law: $x \in A \cap (B \cup C)$ when $x \in A$ and ($x \in B$ or $x \in C$), that is, when ($x \in A$ and $x \in B$) or ($x \in A$ and $x \in C$), that is, when $x \in (A \cap B) \cup (A \cap C)$. The remaining laws follow from the definitions in the same way, and the infinite distributive laws</p>
 <p>$$
-A \cap \bigcup_i B_i = \bigcup_i (A \cap B_i), \qquad A \cup \bigcap_i B_i = \bigcap_i (A \cup B_i)
+\boxed{\;A \cap \bigcup_i B_i = \bigcup_i (A \cap B_i), \qquad A \cup \bigcap_i B_i = \bigcap_i (A \cup B_i)\;}
 $$</p>
 <p>are proved by the same elementwise argument with a quantifier in place of a finite disjunction.</p>
 <p>The laws listed are exactly the axioms of a <strong>Boolean algebra</strong>, with $\cup$, $\cap$, ${}^{\mathrm{c}}$, $\emptyset$ and $X$ playing the roles of sum, product, complement, zero and unit; the algebra of subsets and the algebra of propositions are the same set of laws read in two vocabularies.</p>
@@ -155,7 +155,7 @@ $$</p>
 <p><strong>Example.</strong> The product is not commutative as a set when $X \neq Y$: $X \times Y$ and $Y \times X$ have different elements, though they are in bijection by $(x, y) \mapsto (y, x)$.</p>
 <p><strong>Proposition.</strong> For sets $X, Y, Z$ one has</p>
 <p>$$
-X \times (Y \cup Z) = (X \times Y) \cup (X \times Z), \qquad X \times (Y \cap Z) = (X \times Y) \cap (X \times Z).
+\boxed{\;X \times (Y \cup Z) = (X \times Y) \cup (X \times Z), \qquad X \times (Y \cap Z) = (X \times Y) \cap (X \times Z)\;}.
 $$</p>
 <p><strong>Proof.</strong> An element of the left side of the first identity is a pair $(x, w)$ with $x \in X$ and $w \in Y \cup Z$, so either $w \in Y$ or $w \in Z$; hence the pair lies in $X \times Y$ or in $X \times Z$. The converse is the reverse reading. The second identity is the same argument with "and" in place of "or".</p>
 <h3 id="families-and-indexed-sets">Families and Indexed Sets</h3>

@@ -85,7 +85,7 @@ $$
 and $\mathrm{Li}(x) = \int_2^x\frac{dt}{\log t}$ is the logarithmic integral.</p>
 <p><strong>Theorem (the prime number theorem; Hadamard and de la Vallée Poussin).</strong> As $x\to\infty$,
 $$
-\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \theta(x)\sim x, \qquad p_n \sim n\log n .
+\boxed{\;\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \theta(x)\sim x, \qquad p_n \sim n\log n\;} .
 $$
 All four statements are equivalent.</p>
 <p><strong>Proof of the equivalence.</strong> This is the theorem on the equivalent forms in <em>Analytic Number Theory</em>: $\psi-\theta = \sum_{k\geq2}\theta(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\theta\sim x$ are the same statement; Abel summation converts $\theta(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$.</p>
@@ -120,7 +120,7 @@ where $h$ extends continuously to the closed half-plane $\Re s \geq 1$.</p>
 <h3 id="the-wienerikehara-and-newman-theorems">The Wiener–Ikehara and Newman Theorems</h3>
 <p><strong>Theorem (Wiener–Ikehara).</strong> Let $A:[1,\infty)\to[0,\infty)$ be nondecreasing, with $A(x)=0$ for $x<1$, and let
 $$
-g(s) = \int_1^\infty A(x)\,x^{-s-1}dx = H(s) + \frac{c}{s-1}
+\boxed{\;g(s) = \int_1^\infty A(x)\,x^{-s-1}dx = H(s) + \frac{c}{s-1}\;}
 $$
 for $\Re s>1$, where $c\geq0$ is constant and $H$ extends continuously to the closed half-plane $\Re s\geq1$. Then $A(x) \sim c\,x$ as $x\to\infty$.</p>
 <p><strong>Theorem (Newman's form).</strong> Let $f:[0,\infty)\to\mathbb{C}$ be bounded and locally integrable, and suppose that the Laplace transform $g(s) = \int_0^\infty f(t)\exp(-st)dt$, which converges for $\Re s>0$, extends to a continuous function on the closed half-plane $\Re s\geq0$. Then the improper integral $\int_0^\infty f(t)\,dt$ converges, and its value is $g(0)$.</p>
@@ -148,7 +148,7 @@ $$
 <strong>Proof sketch.</strong> The lemma of the first section is applied at the three points $\sigma$, $\sigma+it$, $\sigma+2it$ with the further information that $\sum_p p^{-2\sigma}$ and similar sums are bounded below; subtracting the pole behaviour of $\log\zeta$ at $s=1$ and using $\lvert\zeta(1+i t)\rvert$ bounded below by a negative power of $\log\lvert t\rvert$ — the standard estimate from the functional equation and the convexity bounds of <em>Zeta Functions</em> — gives the region. The constant depends only on the constants in those estimates.</p>
 <p><strong>Corollary (error terms).</strong> With the region above,
 $$
-\psi(x) = x + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr), \qquad \pi(x) = \mathrm{Li}(x) + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr)
+\boxed{\;\psi(x) = x + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr), \qquad \pi(x) = \mathrm{Li}(x) + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr)\;}
 $$
 for a constant $c'>0$; the zero-free region and the error term are equivalent in the sense that a wider zero-free region gives a smaller error and conversely.</p>
 <p><strong>Theorem (Vinogradov–Korobov).</strong> $\zeta(\sigma+it)\neq0$ for

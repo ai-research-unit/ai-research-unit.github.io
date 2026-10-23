@@ -87,7 +87,7 @@ The indices with $\rho(i)=i$ are <strong>fixed branches</strong>; the pairs $\{i
 <p><em>Proof.</em> The set $R(\Lambda)=\bigcup_i R S_i(\Lambda)=\bigcup_i S_{\rho(i)}R(\Lambda)$ is a compact set satisfying the same invariance equation as $\Lambda$, so $R(\Lambda)=\Lambda$ by the uniqueness of the attractor of <em>Fractal Geometry</em>. Conversely, if $R(\Lambda)=\Lambda$ then $S_i R(\Lambda)$ and $R S_i(\Lambda)$ are two pieces of $\Lambda$ of the same scale and position, so they coincide by the disjointness, and $R S_i=S_{\rho(i)}R$ on the pieces and hence on the attractor.</p>
 <p><strong>Theorem (the coding intertwines the involution).</strong> Let $\pi:\partial\mathcal{T}\to\Lambda$ be the coding map of the iterated function system, and let $R^{\mathrm{flip}}(x_1x_2\cdots)=\rho(x_1)\rho(x_2)\cdots$ be the <strong>letterwise flip</strong> of the boundary. Then
 $$
-R\circ\pi=\pi\circ R^{\mathrm{flip}} ,
+\boxed{\;R\circ\pi=\pi\circ R^{\mathrm{flip}}\;} ,
 $$
 so that $R^{\mathrm{flip}}$ is the coding-level form of the involution.</p>
 <p><em>Proof.</em> $R\pi(x\xi)=R S_x\pi(\xi)=S_{\rho(x)}R\pi(\xi)=S_{\rho(x)}\pi(R^{\mathrm{flip}}\xi)=\pi(\rho(x)R^{\mathrm{flip}}\xi)=\pi(R^{\mathrm{flip}}(x\xi))$, by the exchange relation, the induction, and the definition of the coding. The letterwise flip is the time reversal of the one-sided shift, and it commutes with the shift: $R^{\mathrm{flip}}\tau=\tau R^{\mathrm{flip}}$.</p>
@@ -96,11 +96,11 @@ so that $R^{\mathrm{flip}}$ is the coding-level form of the involution.</p>
 <p><strong>Definition.</strong> Let $G\le\operatorname{Aut}(\mathcal{T})$ be a contracting self-similar group with limit space $\mathcal{J}_G$, tiles $T_v$ and limit map $\varphi$ of <em>The Transfer Operator of the Limit Dynamical System</em>. The group is <strong>reversible</strong> if there is an involutive automorphism of the self-similar structure exchanging the letters by a permutation $\rho$ with $\rho^2=\mathrm{id}$, that is, an involution $R$ of $\mathcal{J}_G$ with $R(T_v)=T_{\rho(v)}$ and $R\circ\sigma_x=\sigma_{\rho(x)}\circ R$ for every letter.</p>
 <p><strong>Theorem (the reversal commutes with the limit map).</strong> For a reversible self-similar group the limit map commutes with the involution,
 $$
-R\circ\varphi=\varphi\circ R ,
+\boxed{\;R\circ\varphi=\varphi\circ R\;} ,
 $$
 the exchange of the inverse branches is $R\circ\sigma_x=\sigma_{\rho(x)}\circ R$, and the time-reversal involution conjugates the transfer operator with the permuted one: with $L_\varphi$ the transfer operator of the previous article and $P_\rho f=f\circ R$ the operator of the involution,
 $$
-P_\rho\,L_\varphi\,P_\rho=L_\varphi .
+\boxed{\;P_\rho\,L_\varphi\,P_\rho=L_\varphi\;} .
 $$</p>
 <p><em>Proof.</em> On the boundary the letterwise flip commutes with the shift, so $R\varphi=\varphi R$ by the coding. The branch relation follows by taking the inverses: $(R\sigma_x)^{-1}=\sigma_x^{-1}R=\varphi|_{T_x}R$ and $(\sigma_{\rho(x)}R)^{-1}=R^{-1}\varphi|_{T_{\rho(x)}}=R\varphi|_{T_{\rho(x)}}$; the two agree because $R$ maps $T_{\rho(x)}$ to $T_x$. For the transfer operator, $P_\rho L_\varphi P_\rho f(x)=\sum_{\varphi(y)=Rx}d(y)f(Ry)=\sum_{\varphi(Ry')=Rx}d(Ry')f(Ry')=\sum_{\varphi(y')=x}d(y')f(y')$ where the change of variables $y=Ry'$ uses $\varphi R=R\varphi$ and the invariance of the local degree under $R$; this is $L_\varphi f(x)$.</p>
 <p><strong>Remark (the reversibility in the sense of Part III).</strong> The involution $R$ is the <strong>time reversal</strong> of <em>Time Reversal and the Transfer Operator</em> in the discrete setting: it commutes with the dynamics, it exchanges the inverse branches pairwise, and its presence is the structure under which the transfer operator has the self-adjointness of the next articles. Because the involution exchanges the branches, it is not the identity of the dynamics but an extra symmetry, and the quotient of the limit space by $R$ is the space of the reversible system.</p>

@@ -77,18 +77,18 @@
 <h2 id="intertwiners-and-their-adjoints">Intertwiners and Their Adjoints</h2>
 <p><strong>Definition.</strong> A bounded operator $T : H\to H'$ is an <strong>intertwiner</strong> of the left representations when</p>
 <p>$$
-T\,\bar L_x = \bar L'_x\,T \qquad \text{for every } x\in A .
+\boxed{\;T\,\bar L_x = \bar L'_x\,T \qquad \text{for every } x\in A\;} .
 $$</p>
 <p><strong>Theorem (the adjoint of an intertwiner is an intertwiner).</strong> If $T$ is an intertwiner then $T^{*} : H'\to H$ is an intertwiner of the left representations in the reverse direction,</p>
 <p>$$
-T^{*}\,\bar L'_x = \bar L_x\,T^{*} \qquad \text{for every } x\in A .
+\boxed{\;T^{*}\,\bar L'_x = \bar L_x\,T^{*} \qquad \text{for every } x\in A\;} .
 $$</p>
 <p><strong>Proof.</strong> Taking adjoints in $T\bar L_x = \bar L'_xT$ gives $\bar L_x^{*}T^{*} = T^{*}\bar L'_x{}^{*}$, which by $\bar L_y^{*} = \bar L_{y^{\dagger}}$ is $\bar L_{x^{\dagger}}T^{*} = T^{*}\bar L'_{x^{\dagger}}$; since the involution is of order two and runs over the algebra, the identity holds with $x$ in place of $x^{\dagger}$.</p>
 <p><strong>Corollary (the class is self-adjoint).</strong> The intertwiners of the left representations form a vector space closed under adjunction; the self-adjoint intertwiners $T = T^{*}$ form its real part, and every intertwiner is $T_1+iT_2$ with $T_1, T_2$ self-adjoint intertwiners.</p>
 <p><strong>Proof.</strong> The first statement is the theorem; the decomposition is $T_1 = \tfrac12(T+T^{*})$, $T_2 = \frac{1}{2i}(T-T^{*})$, which are intertwiners by the theorem and self-adjoint by construction.</p>
 <p><strong>Proposition (the modular conjugation exchanges the two commutation properties).</strong> For the standard representation, an operator $T$ commutes with all the left multiplications exactly when $\jmath T\jmath$ commutes with all the right multiplications; equivalently</p>
 <p>$$
-\{\bar R_x\}' = \jmath\,\{\bar L_x\}'\jmath .
+\boxed{\;\{\bar R_x\}' = \jmath\,\{\bar L_x\}'\jmath\;} .
 $$</p>
 <p><strong>Proof.</strong> $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$ and $\jmath\bar R_x\jmath = \bar L_{x^{\dagger}}$ by <em>The Adjoint of the Left and the Right Multiplication</em>. Conjugating $T\bar L_x = \bar L_xT$ by $\jmath$ gives $\jmath T\jmath\,\bar R_{x^{\dagger}} = \bar R_{x^{\dagger}}\jmath T\jmath$, so $\jmath T\jmath$ commutes with every right multiplication; the converse is the same computation applied to $\jmath S\jmath$.</p>
 <p><strong>Remark (the two commutation properties are not the same).</strong> The commutation with the left multiplications and the commutation with the right multiplications are different conditions, related by the conjugation with $\jmath$ and not equal: the smallest case is a right multiplication $\bar R_y$, which commutes with every right multiplication and commutes with the left ones only when $y$ is central. So the two conditions are exchanged by the modular conjugation, and each of the two commutants is recovered from the other by conjugating back.</p>

@@ -94,7 +94,7 @@ L_a\,\pi_M = (-1)^{|a|}\,\pi_M\,L_a,
 $$</p>
 <p>and then the <strong>sign rule</strong> holds on homogeneous elements,</p>
 <p>$$
-|a\cdot m| = |a| + |m| .
+\boxed{\;|a\cdot m| = |a| + |m|\;} .
 $$</p>
 <p><strong>Proof.</strong> The inclusion $A_{\bar i}M^{\bar j}\subseteq M^{\overline{i+j}}$ says exactly that $L_a$ sends $M^{\bar j}$ into $M^{\overline{i+j}}$, which by the previous proposition is the statement that $L_a$ has parity $|a|$; the sign rule is the degree formula of that proposition.</p>
 <p><strong>Example.</strong> Let $M = A$ with $M^{\bar j} = A_{\bar j}$ and let $A$ act by left multiplication. Then $A_{\bar i}\cdot A_{\bar j} = A_{\bar i}A_{\bar j}\subseteq A_{\overline{i+j}}$, so the regular module is graded, and $L_a$ is the left multiplication of <em>Left and Right Multiplication in a Ring</em>; the parity statement is that an even element preserves the two parts of the ring and an odd element swaps them, which is the conclusion of <em>The Signed Sandwich on a Ring</em>.</p>
@@ -107,7 +107,7 @@ $$</p>
 <p>on homogeneous $a$ and $m$, extended linearly; equivalently $a\triangleright m = a\cdot\pi_M^{|a|}(m)$.</p>
 <p><strong>Proposition (it is a projective action with the Koszul cocycle).</strong> For homogeneous $a, b$ and homogeneous $m$,</p>
 <p>$$
-a\triangleright(b\triangleright m) = (-1)^{|a||b|}\,(ab)\triangleright m .
+\boxed{\;a\triangleright(b\triangleright m) = (-1)^{|a||b|}\,(ab)\triangleright m\;} .
 $$</p>
 <p>Hence the signed action is a <strong>projective action</strong> with cocycle the <strong>Koszul sign</strong> $c(a,b) = (-1)^{|a||b|}$; it is an honest action exactly when the grading is trivial, that is, when $A = A_{\bar 0}$.</p>
 <p><strong>Proof.</strong> The operator of the signed action is $T_a = L_a\pi_M^{|a|}$. The parity of a composite is the sum of the parities, $\pi_M$ has parity $\bar 0$, and $L_a$ has parity $|a|$ by the previous section, so $T_a$ has parity $|a|$. Computing on a homogeneous $m$ of degree $j$,</p>
@@ -124,7 +124,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The graded action of $A$ on $M$ is a homomorphism of graded rings $A \to \operatorname{End}_k(M)$ with the graded commutator as bracket; for homogeneous $a, b \in A$,</p>
 <p>$$
-[L_a, L_b]_{\mathrm g} = L_{ab - (-1)^{|a||b|}ba} .
+\boxed{\;[L_a, L_b]_{\mathrm g} = L_{ab - (-1)^{|a||b|}ba}\;} .
 $$</p>
 <p>In particular the action is a <strong>Lie superalgebra representation</strong> exactly when $A$ is graded-commutative, $ab = (-1)^{|a||b|}ba$ for homogeneous $a, b$; and a graded-commutative ring acts on every graded module by a representation of its Lie superalgebra.</p>
 <p><strong>Proof.</strong> $L_{ab} = L_aL_b$ by associativity, so $[L_a,L_b]_{\mathrm g} = L_aL_b - (-1)^{|a||b|}L_bL_a = L_{ab} - (-1)^{|a||b|}L_{ba} = L_{ab-(-1)^{|a||b|}ba}$, since $L$ is additive in the parameter. The bracket vanishes for all homogeneous $a, b$ exactly under the graded-commutativity condition.</p>

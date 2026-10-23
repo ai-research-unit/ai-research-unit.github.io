@@ -79,7 +79,7 @@ $$</p>
 <h2 id="the-equivariance-of-the-adjoint-representation">The Equivariance of the Adjoint Representation</h2>
 <p><strong>Theorem.</strong> Let $\theta$ be an involution of $\mathrm{G}$ and let $\Theta$ be the conjugation $T\mapsto\theta T\theta^{-1}$ on $\mathfrak{gl}(\mathrm{G})$. Then</p>
 <p>$$
-\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}
+\boxed{\;\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}\;}
 $$</p>
 <p>for every $x\in\mathrm{G}$; equivalently $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$, so the adjoint representation intertwines the involution of $\mathrm{G}$ with the involution of the operator algebra.</p>
 <p><strong>Proof.</strong> For $y\in\mathrm{G}$, $\Theta\operatorname{ad}_x\Theta^{-1}(y)=\theta[x,\theta^{-1}y]=[\theta x,y]=\operatorname{ad}_{\theta x}(y)$, because $\theta$ is an algebra automorphism and $\theta^{-1}=\theta$. The second form is the same statement.</p>
@@ -89,7 +89,7 @@ $$</p>
 <h2 id="the-induced-decomposition-of-the-operator-algebra">The Induced Decomposition of the Operator Algebra</h2>
 <p><strong>Theorem.</strong> The decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ induces a decomposition of the adjoint image,</p>
 <p>$$
-\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})\oplus\operatorname{ad}(\mathrm{P}),
+\boxed{\;\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})\oplus\operatorname{ad}(\mathrm{P})\;},
 $$</p>
 <p>with $\operatorname{ad}(\mathrm{K})$ a Lie subalgebra of $\mathfrak{gl}(\mathrm{G})$, $\operatorname{ad}(\mathrm{P})$ a module over it, and the brackets $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{K})]\subseteq\operatorname{ad}(\mathrm{K})$, $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{P})$, $[\operatorname{ad}(\mathrm{P}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{K})$; the involution $\Theta$ acts by $+1$ on the first summand and by $-1$ on the second.</p>
 <p><strong>Proof.</strong> The image is $\operatorname{ad}(\mathrm{G})$, and $\operatorname{ad}$ is linear with $\theta$-invariant kernel, so $\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})+\operatorname{ad}(\mathrm{P})$ and the sum is direct because $\operatorname{ad}$ is injective on $\mathrm{K}\cap\mathrm{P}=0$ modulo the centre; the brackets are the images of the brackets of $\mathrm{K}$ and $\mathrm{P}$, and the eigenvalue statement is the equivariance.</p>
@@ -100,7 +100,7 @@ $$</p>
 <p><strong>Definition.</strong> A representation $V$ of $\mathrm{G}$ is <strong>self-dual</strong> when it carries a nondegenerate bilinear form $\phi$ invariant under the action, $\phi(x\cdot u,v)+\phi(u,x\cdot v)=0$; the form is then unique up to a scalar when $V$ is irreducible, and the representation is <strong>orthogonal</strong> when $\phi$ is symmetric and <strong>symplectic</strong> when $\phi$ is antisymmetric.</p>
 <p><strong>Theorem.</strong> The adjoint representation is self-dual, with the invariant form the Killing form:</p>
 <p>$$
-B(\operatorname{ad}_x y,z)+B(y,\operatorname{ad}_x z)=0 .
+\boxed{\;B(\operatorname{ad}_x y,z)+B(y,\operatorname{ad}_x z)=0\;} .
 $$</p>
 <p><strong>Proof.</strong> The invariance $B([x,y],z)+B(y,[x,z])=0$ is the associativity of the Killing form; it is exactly the displayed relation.</p>
 <p><strong>Corollary.</strong> The Killing form is symmetric, $B(y,z)=B(z,y)$, so the adjoint representation is of <strong>orthogonal</strong> type; the isomorphism $\mathrm{G}\to\mathrm{G}^{*}$, $x\mapsto \langle x,\cdot\rangle$, intertwines the adjoint action with the negative transpose action, $\operatorname{ad}_x^{*}=-\operatorname{ad}_x$ for the contragredient action on the dual, which is the self-duality expressed on the dual.</p>

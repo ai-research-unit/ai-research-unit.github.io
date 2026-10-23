@@ -91,7 +91,7 @@ x^2 - 1 = (x-1)(x+1),
 $$</p>
 <p>and this single fact governs the whole structure. In the language of the structures, the multiplication by $j$ is a real-linear map $J$ with $J^2=+\mathrm{id}$, where the complex structure of the field extension has $J^2=-\mathrm{id}$; the two structures are the two signs of the same square, and this is the flip that makes the Hermitian side of the split ring indefinite where the complex one is definite. For the complex field the defining polynomial is $x^2+1$, which is irreducible over $\mathbb{R}$, and the field stays a field; for the split-complex algebra the polynomial splits into two distinct linear factors already in $\mathbb{R}[x]$, so by the Chinese remainder theorem</p>
 <p>$$
-\mathbb{D} = \mathbb{R}[x]/\big((x-1)(x+1)\big) \;\cong\; \mathbb{R}[x]/(x-1) \times \mathbb{R}[x]/(x+1) \;\cong\; \mathbb{R}\oplus\mathbb{R} .
+\boxed{\;\mathbb{D} = \mathbb{R}[x]/\big((x-1)(x+1)\big) \;\cong\; \mathbb{R}[x]/(x-1) \times \mathbb{R}[x]/(x+1) \;\cong\; \mathbb{R}\oplus\mathbb{R}\;}.
 $$</p>
 <p><strong>Proposition.</strong> The map</p>
 <p>$$
@@ -115,7 +115,7 @@ $$</p>
 <p>So the algebra has exactly two nontrivial idempotents, orthogonal and complete. This is the property that a field can never have: a field has only the two trivial idempotents, because an idempotent $e$ satisfies $e(e-1) = 0$ and a field is an integral domain. The complex field therefore has no nontrivial idempotent, and its analogue of the split decomposition is the single field copy. The idempotents are also the primitive zero divisors, $\Pi_\pm^2 = \Pi_\pm$, and each annihilates the opposite line; the full description is <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>, and <em>Zero Divisors of the Split-Complex Algebra</em>.</p>
 <p><strong>Corollary (the units).</strong> An element is invertible exactly when both idempotent coordinates are nonzero,</p>
 <p>$$
-\mathbb{D}^\times = \{Q : Q_+ \neq 0,\; Q_- \neq 0\} \;\cong\; \mathbb{R}^\times \times \mathbb{R}^\times ,
+\boxed{\;\mathbb{D}^\times = \{Q : Q_+ \neq 0,\; Q_- \neq 0\} \;\cong\; \mathbb{R}^\times \times \mathbb{R}^\times\;},
 $$</p>
 <p>and the inverse is componentwise, $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$.</p>
 <p><strong>Proof.</strong> The element $Q$ is a unit iff $\varphi(Q) = (Q_+,Q_-)$ is a unit of $\mathbb{R}\oplus\mathbb{R}$, and a pair is a unit iff both of its coordinates are nonzero.</p>
@@ -155,7 +155,7 @@ $$</p>
 <p>the determinant and the trace of the regular element, the determinant being the norm $\langle Q\rangle_{*}$ of <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>.</p>
 <p><strong>Proposition (degeneracy).</strong> The image $\mathsf{M}_2(\mathbb{D})$ is a commutative two-dimensional subalgebra of $M_2(\mathbb{R})$ equal to its own commutant, and a single change of basis diagonalises all of its elements at once:</p>
 <p>$$
-\mathsf{M}_2(Q) \;\sim\; \begin{pmatrix} Q_+ & 0 \\ 0 & Q_- \end{pmatrix}, \qquad Q_\pm = q\pm q' .
+\boxed{\;\mathsf{M}_2(Q) \;\sim\; \begin{pmatrix} Q_+ & 0 \\ 0 & Q_- \end{pmatrix}, \qquad Q_\pm = q\pm q'\;}.
 $$</p>
 <p><strong>Proof.</strong> The image is commutative because $\mathbb{D}$ is, and an $\mathbb{R}$-linear map $\mathsf{M}_2(B)$ commuting with every $\mathsf{M}_2(Q)$ commutes in particular with $\mathsf{M}_2(j) = \left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$ and with $\mathsf{M}_2(1) = I$, which forces $B$ to have the same shape, so the commutant is the image. The conjugating basis is the idempotent basis $\{\Pi_+,\Pi_-\}$: in it the matrices are diagonal with entries $Q_\pm$, since $Q\Pi_+ = Q_+\Pi_+$ and $Q\Pi_- = Q_-\Pi_-$.</p>
 <p><strong>Corollary.</strong> The matrix model $\mathsf{M}_2$ is the algebra $\mathbb{R}\oplus\mathbb{R}$ in disguise: in the idempotent basis it is the diagonal subalgebra of $M_2(\mathbb{R})$, its centre is itself, and the image carries no idempotent other than the four diagonal projections and no nilpotent other than $0$.</p>

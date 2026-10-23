@@ -78,7 +78,7 @@
 <p>Let $E \to M$ be a complex vector bundle of rank $k$ with a Hermitian metric $h$ and the Chern connection $\nabla$, with curvature $\Theta \in \Omega^2(M; \operatorname{End}E)$. The <strong>Chern–Weil homomorphism</strong> assigns to an invariant polynomial $P$ on $\mathfrak{gl}_k(\mathbb{C})$, that is, a polynomial in the entries of a matrix invariant under conjugation, the form $P(\Theta)$; the form is closed, $dP(\Theta) = 0$, by the Bianchi identity, and its de Rham class $[P(\Theta)]$ depends only on the bundle, not on the metric nor on the connection. The construction and the two facts are those of <em>Fibre Bundles, Connections and Curvature</em>; what the Hermitian hypothesis adds is the algebraic form of the curvature, and that is the content of the next proposition.</p>
 <p><strong>Proposition (the curvature is skew-Hermitian).</strong> With respect to the metric $h$, the curvature of the Chern connection satisfies</p>
 <p>$$
-\Theta^* = -\Theta, \qquad \text{equivalently} \qquad H\,\Theta + \Theta^*H = 0 \ \text{ in a holomorphic frame},
+\boxed{\;\Theta^* = -\Theta, \qquad \text{equivalently} \qquad H\,\Theta + \Theta^*H = 0 \ \text{ in a holomorphic frame}\;},
 $$</p>
 <p>so the matrix valued $2$-form $\Theta$ is skew-Hermitian, and $\frac{i}{2\pi}\Theta$ is Hermitian.</p>
 <p><em>Proof.</em> The metric compatibility $dH = \omega^*H+H\omega$ differentiates to $0 = (d\omega)^*H+\omega^*dH + dH\,\omega + H\,d\omega$; substituting $dH=\omega^*H+H\omega$ and comparing with the definition $\Theta = d\omega+\omega\wedge\omega$ gives $\Theta^*H+H\Theta=0$, which is the skew-Hermitian condition. Equivalently, the curvature of a metric connection with respect to the metric is skew-adjoint, as in <em>The Covariant Derivative</em>. Multiplying by $\frac{i}{2\pi}$ conjugates the skew-Hermitian matrix into a Hermitian one.</p>
@@ -99,7 +99,7 @@ $$</p>
 <h2 id="the-first-chern-class-of-a-hermitian-line-bundle">The First Chern Class of a Hermitian Line Bundle</h2>
 <p><strong>Proposition.</strong> Let $L$ be a holomorphic line bundle with a Hermitian metric $h$, and let $\Theta$ be the curvature of its Chern connection. Then in a holomorphic frame</p>
 <p>$$
-\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h, \qquad c_1(L) = \Bigl[\frac{i}{2\pi}\Theta\Bigr] = \Bigl[\frac{i}{2\pi}\bar\partial\partial\log h\Bigr],
+\boxed{\;\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h, \qquad c_1(L) = \Bigl[\frac{i}{2\pi}\Theta\Bigr] = \Bigl[\frac{i}{2\pi}\bar\partial\partial\log h\Bigr]\;},
 $$</p>
 <p>a real closed $(1,1)$-form, and its cohomology class is the first Chern class of $L$.</p>
 <p><em>Proof.</em> For a line bundle the Chern connection form is $\omega = h^{-1}\partial h = \partial\log h$ and the curvature is $\Theta = \bar\partial\partial\log h$ by the previous article, since $\omega\wedge\omega = 0$ for a $1$-form valued in the abelian Lie algebra. The form is real by the skew-Hermitian theorem of the line bundle case, and closed by Chern–Weil; its class is the first Chern class by the definition of the Chern classes.</p>
@@ -113,7 +113,7 @@ $$</p>
 <p>where the $x_j$ are the eigenvalues of $\frac{i}{2\pi}\Theta$; the total Chern character is $\mathrm{ch}(E) = [\mathrm{ch}(\Theta)]$.</p>
 <p><strong>Proposition.</strong> The Chern character is additive and multiplicative,</p>
 <p>$$
-\mathrm{ch}(E \oplus F) = \mathrm{ch}(E) + \mathrm{ch}(F), \qquad \mathrm{ch}(E \otimes F) = \mathrm{ch}(E)\,\mathrm{ch}(F),
+\boxed{\;\mathrm{ch}(E \oplus F) = \mathrm{ch}(E) + \mathrm{ch}(F), \qquad \mathrm{ch}(E \otimes F) = \mathrm{ch}(E)\,\mathrm{ch}(F)\;},
 $$</p>
 <p>for Hermitian bundles with the direct-sum and tensor-product metrics, and it is unchanged by the dual, $\mathrm{ch}(E^*) = \mathrm{ch}(E)$ up to the grading; the classes in the two displays are the topological Chern characters of <em>Characteristic Classes</em>, written with the Hermitian representatives.</p>
 <p><em>Proof.</em> The curvature of a direct sum is block diagonal with the two blocks, so the trace of the exponential is the sum; the curvature of a tensor product is $\Theta_E\otimes I + I\otimes\Theta_F$, whose exponential factors, and the trace of the exponential of a sum of commuting matrices is the product of the characters. The values on the eigenvalues are $\exp(x_j)$ for each bundle, and the identities follow from the multiplicativity of the exponential. The dual bundle's curvature is $-\Theta^T$, whose trace of the exponential agrees with the original up to the parity of the degrees.</p>

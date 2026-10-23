@@ -84,7 +84,7 @@ c^*\sigma = -\sum_{i=1}^{n}\theta^i\otimes(e_i\cdot\sigma), \qquad c(\xi\otimes\
 $$</p>
 <p><strong>Proposition.</strong> The maps $c$ and $c^*$ are adjoint for the tensor product of $g$ and the fibre form $h$, $c$ is a surjection, and</p>
 <p>$$
-c\,c^* = n\,\operatorname{id}_{\mathcal{S}}, \qquad \ker c = \operatorname{im}c^* .
+\boxed{\;c\,c^* = n\,\operatorname{id}_{\mathcal{S}}, \qquad \ker c = \operatorname{im}c^*\;} .
 $$</p>
 <p>Consequently $\pi = \operatorname{id} - \frac1n c^*c$ is the orthogonal projector of $T^*M\otimes\mathcal{S}$ onto $\ker c$, and $\frac1n c^*c$ is the projector onto $\operatorname{im}c^*$; the two subbundles are orthogonal complements and are both parallel only in the flat case.</p>
 <p><strong>Proof.</strong> Adjointness is the comparison of the two displays, using that the Clifford action by $e_i$ is skew-adjoint for $h$ and that the metric identifies $T^*M$ with $TM$; $c$ is surjective because $c(\xi\otimes(\xi\cdot\sigma)) = -g(\xi,\xi)\sigma$ for $\xi\ne0$. Then $cc^*\sigma = -\sum_ie_i\cdot(e_i\cdot\sigma)=\sum_i g(e_i,e_i)\sigma=n\sigma$. The identity $cc^*=n\operatorname{id}$ with $c$ surjective gives $\operatorname{im}c^*=(\ker c)^{\perp}$: for $\tau\in\ker c$, $h(c^*\sigma,\tau) = h(\sigma,c\tau)=0$, giving $\operatorname{im}c^*\subseteq(\ker c)^\perp$, and the dimensions agree because $c^*$ is injective (from $cc^*=n\operatorname{id}$). Hence $\pi$ is the orthogonal projector onto $\ker c$, and the two projectors sum to the identity. Both subbundles are parallel exactly when $\nabla$ preserves them, which in the flat case it does.</p>
@@ -101,7 +101,7 @@ $$</p>
 <p>where $X\cdot$ is the Clifford multiplication and $D=c\circ\nabla$ is the Cauchy–Riemann operator of <em>The Spinor Operator</em>.</p>
 <p><strong>Proposition (the splitting).</strong> The covariant derivative decomposes as</p>
 <p>$$
-\nabla\sigma = \tfrac1n\,c^*\,D\sigma + \mathcal{T}\sigma ,
+\boxed{\;\nabla\sigma = \tfrac1n\,c^*\,D\sigma + \mathcal{T}\sigma\;} ,
 $$</p>
 <p>the first term lying in $\operatorname{im}c^*$ and the second in $\ker c$; the two terms are the orthogonal components. Equivalently $c\circ\mathcal{T}=0$, and the part of $\nabla$ that is visible to the Clifford contraction is exactly the piece that carries $D$.</p>
 <p><strong>Proof.</strong> The definition gives $\mathcal{T}=\nabla-\tfrac1n c^*c\nabla$; and $c\nabla = D$ by definition of $D$, so $c^*c\nabla = c^*D$. Hence $\tfrac1n c^*c\nabla = \tfrac1n c^*D$ lies in $\operatorname{im}c^*$ and $\mathcal{T}\sigma$ lies in $\ker c$, because $c\mathcal{T}\sigma = c\nabla\sigma - \frac1n cc^*D\sigma = D\sigma - \frac1n n D\sigma = 0$. The two terms are orthogonal by the proposition above, and the decomposition is unique.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p><strong>Given.</strong> Two metrics $\hat g=\Omega^2g$ on $M$ with $\Omega>0$ have the same conformal class and hence the same frame bundle up to the scale; the spinor bundles are identified by the standard conformal rescaling of the spin module, and the identification is written $\sigma\mapsto\hat\sigma = \Omega^{-1/2}\sigma$ under the normalisation of the spinor form used in this corpus.</p>
 <p><strong>Proposition (conformal covariance).</strong> Let $\hat g=\Omega^2g$, $\Omega>0$, and let $X$ be a vector field, with $\hat X=\Omega^{-1}X$ its $\hat g$-dual counterpart. Then the twistor operator is conformally covariant,</p>
 <p>$$
-\mathcal{T}^{\hat g}_{\hat X}\bigl(\Omega^{-1/2}\sigma\bigr) = \Omega^{-1/2}\Bigl(\mathcal{T}^{g}_X\sigma\Bigr),
+\boxed{\;\mathcal{T}^{\hat g}_{\hat X}\bigl(\Omega^{-1/2}\sigma\bigr) = \Omega^{-1/2}\Bigl(\mathcal{T}^{g}_X\sigma\Bigr)\;},
 $$</p>
 <p>so that the twistor equation $\mathcal{T}\sigma=0$ is conformally invariant: $\sigma$ is a twistor spinor for $g$ if and only if $\Omega^{-1/2}\sigma$ is a twistor spinor for $\hat g$.</p>
 <p><strong>Proof sketch.</strong> The conformal change of the Levi-Civita connection contributes the term $X\log\Omega$ to the spin connection, the change of the Clifford multiplication contributes the factor $\Omega$, and the change of the Cauchy–Riemann operator contributes its own zeroth-order term; the three contributions combine so that the correction terms to $\mathcal{T}$ cancel, which is the computation recorded by the references. The invariance of the zero set is the only consequence used below; the operator itself is covariant and not invariant because $\nabla$ and $D$ both change, and only their combination in $\mathcal{T}$ is stable.</p>

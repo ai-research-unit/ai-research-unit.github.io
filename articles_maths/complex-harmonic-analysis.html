@@ -125,8 +125,7 @@ $$</p>
 \mathcal{F} : L^2(\mathbb{C}) \to L^2(\mathbb{C}),
 $$</p>
 <p>with</p>
-<p>$$
-\|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle.
+<p>$$ \boxed{\;\|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle\;}.
 $$</p>
 <p>This is the Plancherel theorem for $\mathbb{R}^2$, written in complex notation.</p>
 <h3 id="the-inversion-theorem">The Inversion Theorem</h3>
@@ -150,8 +149,7 @@ $$</p>
 \|f * g\|_r \leq \|f\|_p \|g\|_q.
 $$</p>
 <p><strong>Convolution theorem.</strong> If $f, g \in L^1(\mathbb{C})$, then</p>
-<p>$$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
+<p>$$ \boxed{\;\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)\;}.
 $$</p>
 <p>The convolution is the additive convolution. There is also a <strong>multiplicative convolution</strong> on $\mathbb{C}^\times$, defined by</p>
 <p>$$
@@ -304,8 +302,7 @@ $$</p>
 <p>where the integral is over the line with normal direction $(\cos\theta, \sin\theta)$ and signed distance $t$ from the origin.</p>
 <h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
 <p><strong>Theorem (Fourier Slice).</strong> The one-dimensional Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:</p>
-<p>$$
-\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta).
+<p>$$ \boxed{\;\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta)\;}.
 $$</p>
 <p><strong>Proof.</strong> Write the definition of the Radon transform, take the Fourier transform in $t$, and change variables.</p>
 <p>The Fourier slice theorem is the mathematical basis of computed tomography: it says that the Radon transform can be inverted by taking Fourier transforms along lines, and this is what the filtered back-projection algorithm does.</p>

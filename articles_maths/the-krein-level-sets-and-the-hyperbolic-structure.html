@@ -74,14 +74,12 @@
 <h2 id="the-three-level-sets">The Three Level Sets</h2>
 <p><strong>Theorem (the level sets and their homotopy types).</strong> In the splitting $\tilde{Q}=c+v$ into the centre and vector parts,</p>
 <p>$$
-\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}=\Bigl\{(c,v):\|c\|_E^{2}=1+\|v\|_E^{2}\Bigr\}\cong S^{1}\times\mathbb{R}^{6},
+\boxed{\;\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}=\Bigl\{(c,v):\|c\|_E^{2}=1+\|v\|_E^{2}\Bigr\}\cong S^{1}\times\mathbb{R}^{6}\;},
 $$
 $$
-\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}=\Bigl\{(c,v):\|v\|_E^{2}=1+\|c\|_E^{2}\Bigr\}\cong S^{5}\times\mathbb{R}^{2},
+\boxed{\;\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}=\Bigl\{(c,v):\|v\|_E^{2}=1+\|c\|_E^{2}\Bigr\}\cong S^{5}\times\mathbb{R}^{2}\;},
 $$
-$$
-\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}=\{(c,v):\|c\|_E=\|v\|_E\}\cong S^{1}\times S^{5}\times\mathbb{R}_{>0},
-$$</p>
+$$ \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}=\{(c,v):\|c\|_E=\|v\|_E\}\cong S^{1}\times S^{5}\times\mathbb{R}_{>0}, $$</p>
 <p>all three of real dimension $7$; the first is homotopy equivalent to $S^{1}$, the second to $S^{5}$, the third to $S^{1}\times S^{5}$.</p>
 <p><strong>Proof.</strong> For the first, a pair $(c,v)$ satisfies the equation exactly when $c$ lies on the circle of radius $\sqrt{1+\|v\|_E^{2}}$ in the centre, so the map $(c,v)\mapsto(c/\|c\|_E,\ v)$ identifies the set with $S^{1}\times\mathbb{R}^{6}$: the pair $(v,c/\|c\|_E)$ is free and determines $c$. For the second, in the same way $\|v\|_E=\sqrt{1+\|c\|_E^{2}}>0$, so $v$ is determined by its direction in the five-sphere and by $c$, which is free in $\mathbb{C}$; the set is $S^{5}\times\mathbb{R}^{2}$. For the third, both norms are equal to some $t>0$, and the set is $S^{1}\times S^{5}\times\mathbb{R}_{>0}$ by the two directions and the radius.</p>
 <p><strong>Remark (what is lost and what is kept).</strong> Compared with the Euclidean sphere, the positive level set loses compactness and the sphere: it is the product of a circle with a six-dimensional Euclidean space, a hyperboloid of revolution. All three sets are connected and non-compact, as the signature $(2,6)$ over $\mathbb{R}$ requires, and the negative set has the homotopy type of $S^{5}$ alone because its vector part is forced away from the origin while its scalar part is free.</p>
@@ -102,7 +100,7 @@ $$</p>
 <h2 id="the-metric-of-the-ball-and-its-geodesics">The Metric of the Ball and Its Geodesics</h2>
 <p><strong>Theorem (the Bergman metric).</strong> The ball $\mathbb{B}^{3}\subset\mathbb{V}_{\mathbb{B}}=\mathbb{C}^{3}$ carries the <strong>Bergman metric</strong></p>
 <p>$$
-ds^{2}=\frac{(1-\|\tilde Q_1\|_E^{2})\,\|d\tilde Q_1\|_E^{2}+\lvert\langle d\tilde Q_1,\tilde Q_1\rangle_{*}\rvert^{2}}{(1-\|\tilde Q_1\|_E^{2})^{2}},
+\boxed{\;ds^{2}=\frac{(1-\|\tilde Q_1\|_E^{2})\,\|d\tilde Q_1\|_E^{2}+\lvert\langle d\tilde Q_1,\tilde Q_1\rangle_{*}\rvert^{2}}{(1-\|\tilde Q_1\|_E^{2})^{2}}\;},
 $$</p>
 <p>which is Kähler, complete, of constant negative holomorphic sectional curvature, and invariant under the isometries of the form acting on the ball; the boundary $S^{5}$ is at infinite distance.</p>
 <p><strong>Proof.</strong> The metric is the Bergman metric of the unit ball of $\mathbb{C}^{3}$, invariant under the biholomorphisms of the ball, and the isometry group of the general quaternionic sesquilinear form is the group of these biholomorphisms (<em>The Krein Isometry Group and Its $J$-Contractions</em>); completeness and the constant curvature are the standard properties of the ball, and the boundary is at infinite distance because the metric blows up at $\|\tilde Q_1\|_E=1$.</p>
@@ -112,9 +110,7 @@ $$</p>
 <p><strong>Proof.</strong> On the slice the form is the interval form, and the ball $\{\|\tilde Q_1\|_E<1\}$ meets $\mathbb{R}^{3}$ in the real unit ball, on which the Bergman metric is the hyperbolic metric of the disc model; a real subspace of maximal dimension on which the form is real is totally real, and the standard totally geodesic submanifolds of $\mathbb{CH}^{3}$ are the complex lines and the real hyperbolic spaces.</p>
 <h2 id="the-lorentzian-slices">The Lorentzian Slices</h2>
 <p><strong>Theorem (the real hyperboloids).</strong> On the Hermitian subspace $\mathbb{M}_{+}$ and on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the general quaternionic sesquilinear form is the interval form of Lorentzian space, and with the real coordinates $q$,</p>
-<p>$$
-\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}.
-$$</p>
+<p>$$ \langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}. $$</p>
 <p>The positive level set is the two-sheeted hyperboloid, whose sheet $q_t>0$ is given by $q_t=\sqrt{1+\|\vec q\|^{2}}$ with $\vec q\in\mathbb{R}^{3}$ free, hence is $\mathbb{R}^{3}$; the negative level set is the one-sheeted hyperboloid $q_t^{2}=\|\vec q\|^{2}-1$, diffeomorphic to $S^{2}\times\mathbb{R}$; and the null set is the null cone, of two nappes.</p>
 <p><strong>Proof.</strong> The restricted form is $\sum_{\mu}\varepsilon_{\mu}q_{\mu}^{2}$ in the four real coordinates of the slice (<em>The Krein Gram Matrix and the Restrictions of the Form</em>). Solving $q_t^{2}-\|\vec q\|^{2}=1$ for $q_t$ gives the two sheets, each parametrised by $\vec q\in\mathbb{R}^{3}$. Solving $q_t^{2}-\|\vec q\|^{2}=-1$ gives $\|\vec q\|\ge1$ with $q_t$ free, so the set is $\mathbb{R}\times S^{2}$ by the direction of $\vec q$. The null equation factors as $(q_t-\|\vec q\|)(q_t+\|\vec q\|)=0$, giving the two nappes of the null cone.</p>
 <p><strong>Corollary (the hyperboloid model of $H^{3}$).</strong> The sheet $q_t=\sqrt{1+\|\vec q\|^{2}} $ carries the Riemannian metric induced by the Lorentz form and is the <strong>hyperboloid model of the real hyperbolic space</strong> $H^{3}$; the Lorentz boosts of <em>Biquaternion Rotations and Lorentz Transformations</em> act on it by its isometries. The complex hyperbolic ball of the preceding section is the complexification of this picture: dimension $6$ instead of $3$, the sphere $S^{5}$ instead of $S^{2}$, and the group $\mathrm{U}(1,3)$ instead of the Lorentz group.</p>

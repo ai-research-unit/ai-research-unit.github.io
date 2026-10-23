@@ -82,7 +82,7 @@ $$</p>
 <p>Two points lie in the same orbit exactly when one is carried to the other by an element of $G$, and this is an equivalence relation: reflexivity is $ex = x$, symmetry is $x = g^{-1}(gx)$, transitivity is $(gh)x = g(hx)$. The orbits are the equivalence classes, so they partition $X$, and the orbit map is the quotient map of that partition.</p>
 <p><strong>Proposition.</strong> The stabilisers of two points in the same orbit are conjugate: for $y = gx$,</p>
 <p>$$
-G_{gx} = g\,G_x\,g^{-1}.
+\boxed{\;G_{gx} = g\,G_x\,g^{-1}\;}.
 $$</p>
 <p>Consequently the orbit is $\{gx : g \in G\}$, and the assignment $gG_x \mapsto gx$ is a bijection of the set of left cosets of the stabiliser onto the orbit.</p>
 <p><strong>Proof.</strong> $h \in G_{gx}$ iff $hgx = gx$ iff $g^{-1}hg \in G_x$ iff $h \in gG_xg^{-1}$. The second statement is the same computation read on the left cosets: $gG_x = g'G_x$ iff $g^{-1}g' \in G_x$ iff $gx = g'x$.</p>
@@ -93,7 +93,7 @@ $$</p>
 <p>The definition is not a choice: the quotient topology is the finest topology on $X/G$ making $\pi$ continuous, and it is the only topology with the universal property proved below.</p>
 <p><strong>Theorem.</strong> The orbit map $\pi$ is continuous and surjective, and</p>
 <p>$$
-\pi^{-1}(\Omega) = \bigcup_{O \in \Omega} O \quad \text{for } \Omega \subseteq X/G,
+\boxed{\;\pi^{-1}(\Omega) = \bigcup_{O \in \Omega} O \quad \text{for } \Omega \subseteq X/G\;},
 $$</p>
 <p>so the preimage of a set of orbits is a union of orbits. A subset $\Omega \subseteq X/G$ is open if and only if its preimage is open in $X$, if and only if its preimage is a $G$-invariant open set of $X$.</p>
 <p><strong>Proof.</strong> Continuity is the definition of the quotient topology. For the formula, $x \in \pi^{-1}(\Omega)$ iff $\pi(x) \in \Omega$ iff the orbit of $x$ is a member of $\Omega$. The set $\pi^{-1}(\Omega)$ is a union of orbits, hence invariant: $g\pi^{-1}(\Omega) = \pi^{-1}(\Omega)$ for every $g$, since $g$ permutes each orbit. Conversely an invariant set $W$ satisfies $W = \pi^{-1}(\pi(W))$, so it is the preimage of a set of orbits.</p>
@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-adjoint-pair">The Adjoint Pair</h3>
 <p><strong>Theorem.</strong> The direct image and the preimage of the orbit map are adjoint,</p>
 <p>$$
-\pi_{*} \dashv \pi^{-1}, \qquad \pi_{*}(A) \subseteq \Omega \iff A \subseteq \pi^{-1}(\Omega),
+\boxed{\;\pi_{*} \dashv \pi^{-1}, \qquad \pi_{*}(A) \subseteq \Omega \iff A \subseteq \pi^{-1}(\Omega)\;},
 $$</p>
 <p>and the preimage is a bijection onto the invariants, so the unit and the counit of the adjunction are the saturation and the identity:</p>
 <p>$$

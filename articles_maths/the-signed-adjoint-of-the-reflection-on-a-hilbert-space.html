@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-reflection">The Adjoint of the Reflection</h2>
 <p><strong>Theorem (the adjoint).</strong> For every reflector $U$ the reflection has adjoint</p>
 <p>$$
-(\rho_U)^*=S_{\alpha(U^*),\,\alpha((U^*)^{-1})}=\rho_{\alpha(U^*)},
+\boxed{\;(\rho_U)^*=S_{\alpha(U^*),\,\alpha((U^*)^{-1})}=\rho_{\alpha(U^*)}\;},
 $$</p>
 <p>so the adjoint of a reflection is the reflection by the $\alpha$-adjoint reflector; the adjoint operation on the reflections is an involution, $((\rho_U)^*)^*=\rho_U$, and it commutes with the scalar ambiguity of the reflector.</p>
 <p><em>Proof.</em> The reflection is the signed sandwich $S_{U,U^{-1}}$, whose adjoint is $S_{\alpha(U^*),\alpha((U^{-1})^*)}$ by <em>The Signed Adjoint Sandwich on a Hilbert Space</em>; since $(U^{-1})^*=(U^*)^{-1}$ and $\alpha$ is multiplicative, $\alpha((U^{-1})^*)=\alpha((U^*)^{-1})=(\alpha(U^*))^{-1}$, so the second parameter is the inverse of the first and the sandwich is the reflection $\rho_{\alpha(U^*)}$. The square of the operation is the identity because $U\mapsto U^*$ and $\alpha$ are involutions, and a scalar multiple of $U$ produces the same reflector property and the same adjoint reflection.</p>
@@ -101,7 +101,7 @@ $$</p>
 <p><em>Proof.</em> $\rho_U$ is invertible with inverse $\rho_U^{-1}=\rho_{U^{-1}}$, and $(\rho_U)^*=\rho_{\alpha(U^*)}$; the reflection is unitary exactly when $(\rho_U)^*=\rho_U^{-1}$, and two reflections coincide exactly when their parameters are reciprocal scalar multiples, so the criterion is $\alpha(U^*)=kU^{-1}$, that is, $\alpha(U^*)U=kI$. For a unitary reflector $U^*=U^{-1}$ and $\alpha(U)=\pm U$, so $\alpha(U^*)U=\alpha(U)^{-1}U=\pm U^*U=\pm I$ is a scalar, and the reflection is unitary.</p>
 <p><strong>Theorem (self-adjointness).</strong> The reflection is self-adjoint, $(\rho_U)^*=\rho_U$, if and only if</p>
 <p>$$
-\alpha(U^*)=k\,U
+\boxed{\;\alpha(U^*)=k\,U\;}
 $$</p>
 <p>for a nonzero scalar $k$; for a unitary reflector the criterion is that $U^2$ be a scalar, and it is the same condition for the even and for the odd unitaries. In particular a general unitary reflector does not give a self-adjoint reflection.</p>
 <p><em>Proof.</em> The adjoint is $\rho_{\alpha(U^*)}$, and two reflections coincide exactly when their parameters are reciprocal scalar multiples, which gives the criterion. For unitary $U$ one has $U^*=U^{-1}$ and the criterion $\alpha(U^{-1})=kU$ reads $\alpha(U)^{-1}=kU$; multiplying by $U$ gives $\alpha(U)^{-1}U=kU^2$, and since $\alpha(U)=\pm U$ on a unitary, $U^2$ is a scalar. Conversely $U^2=cI$ makes $U^*=c^{-1}U$ and $\alpha(U)=\pm U$, so $\alpha(U^*)=\pm c^{-1}U$ is a scalar multiple of $U$ and the reflection is self-adjoint.</p>
@@ -111,7 +111,7 @@ $$</p>
 <h2 id="the-degenerate-case">The Degenerate Case</h2>
 <p><strong>Theorem (failure at $\alpha=\mathrm{id}$).</strong> Suppose the grading is trivial, $H^1=0$, so that $\alpha=\mathrm{id}$; then the reflectors are the scalar multiples of the unitaries, the reflection is the inner automorphism $\iota_U$, and</p>
 <p>$$
-(\iota_U)^*=\iota_{U^*} .
+\boxed{\;(\iota_U)^*=\iota_{U^*}\;} .
 $$</p>
 <p>Consequently $\iota_U$ is self-adjoint if and only if $U^*=kU$ for a nonzero scalar $k$; for a unitary $U$ this is $U^2$ scalar. A general inner automorphism of $B(H)$ by a unitary is therefore not self-adjoint on the Hilbert–Schmidt space, and the correspondence between the reflector and the self-adjoint reflection fails beyond the self-adjoint reflections.</p>
 <p><em>Proof.</em> With $\alpha=\mathrm{id}$ the adjoint theorem gives $(\iota_U)^*=\rho_{U^*}=\iota_{U^*}$; the reflection equality $\iota_U=\iota_V$ iff $V=kU$ gives the self-adjointness criterion; for unitary $U$, $U^*=kU$ reads $U^2=k^{-1}I$, so $U^2$ is scalar. Taking a diagonal unitary with distinct unimodular eigenvalues shows $U^2$ is not scalar and the inner automorphism is not self-adjoint.</p>

@@ -102,19 +102,19 @@ $$</p>
 <h3 id="the-adjoint-pair">The Adjoint Pair</h3>
 <p><strong>Definition.</strong> Let $P$ and $Q$ be posets and $g : P \to Q$, $h : Q \to P$ monotone maps. Then $g$ is <strong>left adjoint</strong> to $h$, written $g \dashv h$, when</p>
 <p>$$
-g(p) \leq q \iff p \leq h(q) \qquad (p \in P,\ q \in Q).
+\boxed{\;g(p) \leq q \iff p \leq h(q) \qquad (p \in P,\ q \in Q)\;}.
 $$</p>
 <p>The relation is a <strong>Galois connection</strong>: $g$ is the lower and $h$ the upper adjoint, and each determines the other.</p>
 <p><strong>Theorem.</strong> The closure is left adjoint to the interior between the lattice of open sets and the lattice of closed sets:</p>
 <p>$$
-C \dashv I, \qquad \overline{U} \subseteq F \iff \Omega \subseteq \operatorname{int} F \qquad (\Omega \in \mathcal{O}(X),\ F \in \mathcal{F}(X)).
+\boxed{\;C \dashv I, \qquad \overline{U} \subseteq F \iff \Omega \subseteq \operatorname{int} F \qquad (\Omega \in \mathcal{O}(X),\ F \in \mathcal{F}(X))\;}.
 $$</p>
 <p><strong>Proof.</strong> Suppose $\overline{U} \subseteq F$. Then $\Omega \subseteq \overline{U} \subseteq F$, and since $\Omega$ is open and $F$ is closed with $\Omega \subseteq F$, the open set $\Omega$ is contained in the largest open set inside $F$, which is $\operatorname{int} F$. Conversely suppose $\Omega \subseteq \operatorname{int} F$. Then $\overline{U} \subseteq \overline{\operatorname{int} F}$, and since $\operatorname{int} F \subseteq F$ with $F$ closed, the closure of $\operatorname{int} F$ is contained in $F$. Hence $\overline{U} \subseteq F$.</p>
 <p>The adjunction is the exact sense in which the interior is the best open approximation from below and the closure the best closed approximation from above: the theorem says that the closure of $\Omega$ is the smallest closed set containing $\Omega$ and the interior of $F$ the largest open set contained in $F$, which is the content of <em>Operators on a Fixed Set</em>, read as a Galois connection between the two lattices.</p>
 <h3 id="the-two-interpretations-of-the-adjunction">The Two Interpretations of the Adjunction</h3>
 <p><strong>Corollary.</strong> The adjunction has the two equivalent forms</p>
 <p>$$
-C(\Omega) = \bigcap \{\, F \in \mathcal{F}(X) : \Omega \subseteq I(F) \,\} \quad \text{and} \quad I(F) = \bigcup \{\, \Omega \in \mathcal{O}(X) : C(\Omega) \subseteq F \,\},
+\boxed{\;C(\Omega) = \bigcap \{\, F \in \mathcal{F}(X) : \Omega \subseteq I(F) \,\} \quad \text{and} \quad I(F) = \bigcup \{\, \Omega \in \mathcal{O}(X) : C(\Omega) \subseteq F \,\}\;},
 $$</p>
 <p>which express each operator through the other.</p>
 <p><strong>Proof.</strong> In a Galois connection $g \dashv h$, the lower adjoint is determined by $g(p) = \bigwedge\{q : p \leq h(q)\}$ and the upper adjoint by $h(q) = \bigvee\{p : g(p) \leq q\}$; the stated formulas are these.</p>

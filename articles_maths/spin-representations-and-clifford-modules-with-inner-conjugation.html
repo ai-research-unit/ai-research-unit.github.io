@@ -107,7 +107,7 @@ $$</p>
 <p>Over an algebraically closed field the classification is periodic of period two, and the spinor module is the irreducible module of the complex Clifford algebra.</p>
 <p><strong>Theorem.</strong> Let $n=\dim V$ and let $\mathbb{C}\mathrm{l}_n$ be the complex Clifford algebra. Then</p>
 <p>$$
-\mathbb{C}\mathrm{l}_{2m}\cong M_{2^m}(\mathbb{C}), \qquad \mathbb{C}\mathrm{l}_{2m+1}\cong M_{2^m}(\mathbb{C})\times M_{2^m}(\mathbb{C}).
+\boxed{\;\mathbb{C}\mathrm{l}_{2m}\cong M_{2^m}(\mathbb{C}), \qquad \mathbb{C}\mathrm{l}_{2m+1}\cong M_{2^m}(\mathbb{C})\times M_{2^m}(\mathbb{C})\;}.
 $$</p>
 <p>Consequently, for $n=2m$ there is exactly one irreducible Clifford module, of complex dimension $2^m$; for $n=2m+1$ there are exactly two, each of complex dimension $2^m$. In both cases the dimension of the irreducible complex spinor module is $2^{\lfloor n/2\rfloor}$.</p>
 <p><strong>Proof.</strong> The isomorphisms are those of the classification over $\mathbb{C}$ (period two). The irreducible module of $M_k(\mathbb{C})$ is $\mathbb{C}^k$, of dimension $k$, and a product of two matrix algebras has one irreducible for each factor. With $k=2^m$ this gives the dimensions.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $\omega=e_1\cdots e_n$ be the volume element of an orthogonal basis of $V$, with $\omega^2=(-1)^{n(n-1)/2}\prod_iq(e_i)$. In the complex algebra the product $\prod_iq(e_i)$ is a square, so $\omega^2=\pm1$ and after a normalisation by a scalar one has $\omega^2=1$; the <strong>chirality operator</strong> is the resulting involution, and its $\pm1$-eigenspaces are the <strong>half-spinor spaces</strong>.</p>
 <p><strong>Theorem.</strong> Let $n=2m$ and let $\Delta$ be the irreducible complex Clifford module, of dimension $2^m$. Then $\omega$ acts on $\Delta$ as an involution, $\omega^2=1$, and</p>
 <p>$$
-\Delta=\Delta_+\oplus\Delta_-, \qquad \omega|_{\Delta_\pm}=\pm1,
+\boxed{\;\Delta=\Delta_+\oplus\Delta_-, \qquad \omega|_{\Delta_\pm}=\pm1\;},
 $$</p>
 <p>with $\dim_{\mathbb{C}}\Delta_+=\dim_{\mathbb{C}}\Delta_-=2^{m-1}$. The two summands are the <strong>half-spinor modules</strong>, also called the spaces of <strong>Weyl spinors</strong>; they are interchanged by the action of $V$ (the odd part), and each is preserved by the even subalgebra $\mathrm{Cl}^0$.</p>
 <p><strong>Proof.</strong> In the exterior-algebra model $\Delta=\Lambda^{\bullet}W$ the volume element acts on $\Lambda^kW$ by a sign depending on the parity of $k$: the creation and annihilation operators shift the exterior degree by one, so the product of an even number of them preserves the parity of the degree and the product of $2m$ of them is a scalar on each degree, equal to $(-1)^k$ up to a normalising factor. Hence $\omega$ is diagonalisable with eigenvalues $\pm1$ and the eigenspaces are the even and the odd exterior powers, of dimensions $2^{m-1}$ each. The parity statement follows because the odd elements of the Clifford algebra (in particular the vectors) have degree one and shift $\Delta_\pm$ into $\Delta_\mp$, while the even elements preserve each summand.</p>
@@ -144,7 +144,7 @@ $$</p>
 $$</p>
 <p>is normalised so that $\bigl[\tfrac14(vw-wv),u\bigr]=g(u,w)v-g(u,v)w$ for every $u\in V$, and it is a Lie algebra homomorphism when the right-hand side is given the commutator bracket, with image the even part of degree two. Composing with the spin representation gives the <strong>infinitesimal spin representation</strong></p>
 <p>$$
-d\rho\colon\mathrm{SO}(V,\mathfrak{Q})\longrightarrow\mathrm{GL}(S), \qquad d\rho(v\wedge w)=\tfrac14[c(v),c(w)].
+\boxed{\;d\rho\colon\mathrm{SO}(V,\mathfrak{Q})\longrightarrow\mathrm{GL}(S), \qquad d\rho(v\wedge w)=\tfrac14[c(v),c(w)]\;}.
 $$</p>
 <p><strong>Proof.</strong> The identification $\Lambda^2V\cong\mathrm{SO}(V,\mathfrak{Q})$ is the standard one for a space with a non-degenerate form and is the subject of <em>The Orthogonal Lie Algebra</em>. For the Clifford realisation, the identity $[vw,u]=2\bigl(g(u,w)v-g(u,v)w\bigr)$, obtained from the fundamental relation by writing $vu=2g(u,v)-uv$ and $wu=2g(u,w)-uw$, gives</p>
 <p>$$

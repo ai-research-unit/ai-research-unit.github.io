@@ -89,13 +89,13 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
 <p><strong>Theorem (the explicit form of the adjoint).</strong> With respect to the Haar pairing, in the unimodular case,</p>
 <p>$$
-\bigl(T_{a,b}\bigr)^* = T_{a^*,\,b^*} , \qquad \bigl(S_{a,b}\bigr)^* = S_{\alpha(a^*),\,\alpha(b^*)} ,
+\boxed{\;\bigl(T_{a,b}\bigr)^* = T_{a^*,\,b^*} , \qquad \bigl(S_{a,b}\bigr)^* = S_{\alpha(a^*),\,\alpha(b^*)}\;} ,
 $$</p>
 <p>and the adjoint operation is an involution on each family, $\bigl((S_{a,b})^*\bigr)^* = S_{a,b}$.</p>
 <p><strong>Proof.</strong> By the anti-automorphism property and the elementary adjoints, $(S_{a,b})^* = (L_a\mathrm{A}R_b)^* = R_b^*\mathrm{A}^*L_a^* = R_{b^*}\mathrm{A}L_{a^*}$. Now $\mathrm{A}L_c = L_{\alpha(c)}\mathrm{A}$ and $R_d\mathrm{A} = \mathrm{A}R_{\alpha^{-1}(d)} = \mathrm{A}R_{\alpha(d)}$, so $R_{b^*}\mathrm{A}L_{a^*} = L_{\alpha(a^*)}\mathrm{A}R_{\alpha(b^*)} = S_{\alpha(a^*),\alpha(b^*)}$. The unsigned formula is the case $\alpha = \mathrm{id}$ read off the same computation, and the double adjoint uses $\alpha^2 = \mathrm{id}$ and $a^{**} = a$.</p>
 <p><strong>Corollary (compatibility with the coset structure and the composition law).</strong> The adjoint carries the signed sandwiches to the signed sandwiches and the unsigned to the unsigned, and it is compatible with the composition law of <em>The Signed Sandwich on the Group Algebra</em>,</p>
 <p>$$
-\bigl(S_{c,d}S_{a,b}\bigr)^* = S_{a,b}^*\,S_{c,d}^* , \qquad S_{a,b}^* = T_{a,b}^*\,\mathrm{A} = S_{\alpha(a^*),\alpha(b^*)} ,
+\boxed{\;\bigl(S_{c,d}S_{a,b}\bigr)^* = S_{a,b}^*\,S_{c,d}^* , \qquad S_{a,b}^* = T_{a,b}^*\,\mathrm{A} = S_{\alpha(a^*),\alpha(b^*)}\;} ,
 $$</p>
 <p>and it respects the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$, carrying $\mathrm{A}$ to itself.</p>
 <p><strong>Proof.</strong> The first identity is the anti-automorphism property of the adjoint applied to the composition; the second is the decomposition $S_{a,b}^* = (T_{a,b}\mathrm{A})^* = \mathrm{A}^*T_{a,b}^* = \mathrm{A}T_{a^*,b^*}$ and the intertwining relations; the coset statement is immediate from $\mathrm{A}^* = \mathrm{A}$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Definition.</strong> A signed sandwich is <strong>unitary</strong> when $S_{a,b}^*S_{a,b} = 1$ and $S_{a,b}S_{a,b}^* = 1$; equivalently when it preserves the Haar pairing, $\langle S_{a,b}f,S_{a,b}h\rangle = \langle f,h\rangle$ for all $f,h$.</p>
 <p><strong>Theorem (the unitarity criterion).</strong> In the unital case (in particular for a discrete group, or in the measure algebra $M(G)$) the signed sandwich $S_{a,b}$ is unitary if and only if both parameters are unitary elements of $\mathcal{A}$,</p>
 <p>$$
-S_{a,b}^*S_{a,b} = S_{a,b}S_{a,b}^* = 1 \iff a^*\!*a = a*\!a^* = 1 \ \text{and}\ b^*\!*b = b*\!b^* = 1 .
+\boxed{\;S_{a,b}^*S_{a,b} = S_{a,b}S_{a,b}^* = 1 \iff a^*\!*a = a*\!a^* = 1 \ \text{and}\ b^*\!*b = b*\!b^* = 1\;} .
 $$</p>
 <p>On the group algebra $L^1(G)$ of a non-discrete group there are no unitary elements, so no signed sandwich is unitary there; the unitarity condition is nonvacuous exactly on a discrete group or in the measure algebra, where the point masses are unitary.</p>
 <p><strong>Proof.</strong> By the composition law, $S_{\alpha(a^*),\alpha(b^*)}S_{a,b} = T_{\alpha(a^*)*\alpha(a),\,\alpha(b)*\alpha(b^*)}$ and $S_{a,b}S_{\alpha(a^*),\alpha(b^*)} = T_{a*a^*,\,b^*\!*b}$; the identity criterion for unsigned sandwiches, $T_{c,d} = 1$ iff $c = d = 1$ in the unital case, gives $\alpha(a^*\!*a) = 1$ and $\alpha(b*\!b^*) = 1$ for the first product and $a*a^* = 1$, $b^*\!*b = 1$ for the second. Applying $\alpha^{-1}$ and combining, the condition is that $a$ and $b$ be unitary. The absence of unitary elements on a non-discrete $L^1(G)$ is <em>The Group Algebra as an Involutive Algebra</em>.</p>

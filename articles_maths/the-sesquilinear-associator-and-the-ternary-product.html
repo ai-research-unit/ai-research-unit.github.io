@@ -89,7 +89,7 @@ A(x, y, \lambda z) = \varsigma(\lambda) A(x,y,z), \qquad B(x, y, \lambda z) = \l
 $$</p>
 <p>so</p>
 <p>$$
-[x, y, \lambda z] = \varsigma(\lambda) A(x,y,z) - \lambda B(x,y,z),
+\boxed{\;[x, y, \lambda z] = \varsigma(\lambda) A(x,y,z) - \lambda B(x,y,z)\;},
 $$</p>
 <p>which is neither $\lambda [x,y,z]$ nor $\varsigma(\lambda)[x,y,z]$ unless $[x,y,z] = 0$.</p>
 <p><strong>Proof.</strong> For $A$: it is linear in $x$ because it is a product in the first slot of an outer product; its second variable passes through the inner product as a second slot and then through the outer product as a first slot, so it is $\varsigma$-semilinear in $y$; its third variable is the second slot of the outer product, so $A(x,y,\lambda z) = \varsigma(\lambda) A(x,y,z)$. Reading the second variable on $A^{\varsigma}$ and the third on $A^{\varsigma}$ makes $A$ trilinear. For $B$: it is linear in $x$; its second variable is the first slot of the inner product and then the second slot of the outer product, hence $\varsigma$-semilinear in $y$; its third variable is the second slot of the inner product and then the second slot of the outer product, and the two conjugations cancel, so $B(x,y,\lambda z) = \lambda B(x,y,z)$. Reading the second variable on $A^{\varsigma}$ makes $B$ trilinear on $A \times A^{\varsigma} \times A$. The last display is the two scalar rules subtracted.</p>
@@ -117,14 +117,14 @@ $$</p>
 <h3 id="the-jordan-triple-identity">The Jordan Triple Identity</h3>
 <p><strong>Theorem.</strong> The ternary product satisfies the Jordan triple identity</p>
 <p>$$
-\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\} ,
+\boxed{\;\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\}\;} ,
 $$</p>
 <p>the proof being a finite expansion in the products and the involution, using only the associativity of $A$ and $(uv)^{*} = v^{*}u^{*}$. The verification is in <em>Algebraic J*-Algebras</em>, where the identity is the defining axiom of the $J^{*}$-triple.</p>
 <p><strong>Remark.</strong> The ternary product satisfies a three-variable identity while the binary product carries no associativity identity of its own: the associator of the binary product is a three-variable map with no identity attached to it, and the ternary product is the operation that carries the identity instead. The Jordan triple identity is what remains of the associative law after the operation is twisted by the involution, and it is the reason the ternary product, and not the binary one, is the natural carrier of the structure; the general theory of the triple systems that carry it is <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em> and <em>Jordan Algebras</em>.</p>
 <h3 id="the-passage-from-the-binary-to-the-ternary-product">The Passage from the Binary to the Ternary Product</h3>
 <p><strong>Theorem (the binary product is the shadow of the ternary one).</strong> Let $A$ be unital with unit $1$. Then</p>
 <p>$$
-\{x, y, 1\} = x \star y, \qquad \{1, y, 1\} = y^{*},
+\boxed{\;\{x, y, 1\} = x \star y, \qquad \{1, y, 1\} = y^{*}\;},
 $$</p>
 <p>so the ternary product determines the binary derived operation and the involution; since the original product is $xy = x \star y^{*}$, with $y^{*} = \{1,y,1\}$, the ternary product determines the algebra as well.</p>
 <p><strong>Proof.</strong> $\{x,y,1\} = (x \star y) \star 1^{*} = (x \star y) \star 1 = xy^{*}1 = xy^{*} = x \star y$, and $\{1,y,1\} = (1 \star y) \star 1^{*} = y^{*} \star 1 = y^{*}$. The original product is then $xy = x \star y^{*}$, because $(y^{*})^{*} = y$.</p>

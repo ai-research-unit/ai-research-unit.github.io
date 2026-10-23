@@ -93,7 +93,7 @@ $$</p>
 <h3 id="the-alternating-sum">The Alternating Sum</h3>
 <p><strong>Definition.</strong> The <strong>boundary operator</strong> $\partial_{n} : C_{n} \to C_{n-1}$ is defined on an oriented simplex by</p>
 <p>$$
-\partial_{n}[v_{0}, \ldots, v_{n}] = \sum_{i=0}^{n} (-1)^{i}\,[v_{0}, \ldots, \hat{v}_{i}, \ldots, v_{n}],
+\boxed{\;\partial_{n}[v_{0}, \ldots, v_{n}] = \sum_{i=0}^{n} (-1)^{i}\,[v_{0}, \ldots, \hat{v}_{i}, \ldots, v_{n}]\;},
 $$</p>
 <p>where the hat omits the vertex it covers and the remaining vertices keep their order; for $n = 0$ one sets $\partial_{0} = 0$. The formula is extended $R$-linearly to all of $C_{n}$, so that</p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem.</strong> For every $n \geq 1$,</p>
 <p>$$
-\partial_{n-1} \circ \partial_{n} = 0 .
+\boxed{\;\partial_{n-1} \circ \partial_{n} = 0\;} .
 $$</p>
 <p>Equivalently, every boundary is a cycle: the image of $\partial_{n}$ is contained in the kernel of $\partial_{n-1}$.</p>
 <p><strong>Proof.</strong> It suffices to compute on an oriented simplex $[v_{0}, \ldots, v_{n}]$. Write the outer $\partial_{n-1}$ with summation index $j$ and the inner $\partial_{n}$ with summation index $i$, so that the composite is $\sum_{j}\sum_{i} (-1)^{j+i}\delta^{j}\delta^{i}$, where $\delta^{j}$ acts on the $(n-1)$-simplex produced by $\delta^{i}$. A pair of indices with $i < j$ contributes through the term $(j, i)$; the simplicial identity gives $\delta^{j}\delta^{i} = \delta^{i}\delta^{j-1}$, so the same face map occurs in the term $(i, j-1)$ of the double sum. The signs are $(-1)^{j+i}$ and $(-1)^{i+j-1}$, which are opposite, so the two terms cancel. Every term is paired this way, and the total is zero.</p>

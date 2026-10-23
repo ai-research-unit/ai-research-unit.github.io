@@ -85,7 +85,7 @@ $$</p>
 <h3 id="the-adjoint-of-a-bilinear-operator">The Adjoint of a Bilinear Operator</h3>
 <p><strong>Proposition.</strong> With respect to the module form $(\cdot,\cdot)$ and the induced adjoint on $\mathrm{End}_A(S)$, the adjoint of the bilinear operator $T_b : s\mapsto b(s,\cdot)$ is $T_{b^{*}}$, where $b^{*}(s,t) = \sigma(b(t,s))$; equivalently, the assignment $b\mapsto T_b$ commutes with the adjoint:</p>
 <p>$$
-(T_b)^{*} = T_{b^{*}} .
+\boxed{\;(T_b)^{*} = T_{b^{*}}\;} .
 $$</p>
 <p><strong>Proof.</strong> $\langle T_bs, t\rangle = b(s,t)$ and $\langle s, T_{b^{*}}t\rangle = b^{*}(t,s) = \sigma(b(s,t))$; comparing with the defining property $\langle T_bs,t\rangle = \sigma(\langle s, T_b^{*}t\rangle)$ of the adjoint under the sesquilinear convention gives the identity.</p>
 <p><strong>Corollary.</strong> A bilinear form is Hermitian iff its bilinear operator is self-adjoint; a form is alternating iff its operator is skew-adjoint; and the Hermitian forms are the fixed points of the involution $b\mapsto b^{*}$ on $\mathrm{Bil}_A(S,S;A)$, so the Hermitian forms form the symmetric part of the space of bilinear forms under this involution.</p>
@@ -97,7 +97,7 @@ $$</p>
 $$</p>
 <p>is an <strong>isomorphism</strong> of algebras, and the $2^n$ blade operators $\rho(e_{i_1}\cdots e_{i_k})$ form a basis of $\mathrm{End}_A(S)$; equivalently every endomorphism of the spinor module is a Clifford-linear combination of the blades. In bilinear form, the <strong>bilinear covariants</strong></p>
 <p>$$
-b_A(s,t) = \bigl(s, \rho(\Gamma_A)\,t\bigr), \qquad \Gamma_A \text{ a basis of } \mathrm{Cl}(V,\mathfrak{Q}),
+\boxed{\;b_A(s,t) = \bigl(s, \rho(\Gamma_A)\,t\bigr), \qquad \Gamma_A \text{ a basis of } \mathrm{Cl}(V,\mathfrak{Q})\;},
 $$</p>
 <p>span the space of bilinear forms on $S$, and every bilinear form is a linear combination of the covariants.</p>
 <p><strong>Proof.</strong> The Clifford algebra is simple and $\dim \rho(\mathrm{Cl}) = \dim \mathrm{Cl} = 2^n$ because the module is faithful; and $\dim \mathrm{End}_A(S) = (\dim_A S)^2 = (2^m)^2 = 2^n$. An injective linear map between spaces of the same dimension is an isomorphism, so the blades, being a basis of the algebra, map to a basis of the endomorphisms. The bilinear statement is the isomorphism $\mathrm{Bil}_A(S,S;A)\cong \mathrm{End}_A(S)$ read in the dual basis.</p>
@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-invariance-under-the-slice">The Invariance Under the Slice</h2>
 <p><strong>Theorem.</strong> For $u$ in the unitary slice $U$, the bilinear form $b\circ(u\times u)$ has the same expansion coefficients as $b$ in the covariants:</p>
 <p>$$
-b_A(u\cdot s, u\cdot t) = b_{\,u^{\dagger}\Gamma_Au}(s,t) ,
+\boxed{\;b_A(u\cdot s, u\cdot t) = b_{\,u^{\dagger}\Gamma_Au}(s,t)\;} ,
 $$</p>
 <p>so the slice permutes the covariants by the conjugation $\Gamma_A\mapsto u^{\dagger}\Gamma_A u$ of the Clifford algebra; in particular the scalar covariant is invariant, the space of degree-$k$ covariants is preserved, and the expansion of any form in the covariants is transformed by the adjoint representation of the slice.</p>
 <p><strong>Proof.</strong> $b_A(us,ut) = (us, \rho(\Gamma_A)ut) = (s, \rho(u^{\dagger}\Gamma_A u)t)$ by the adjointness of the action, $= b_{u^{\dagger}\Gamma_Au}(s,t)$, and $u^{\dagger}\Gamma_Au$ is again a blade combination of the same degree.</p>

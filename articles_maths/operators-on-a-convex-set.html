@@ -93,7 +93,7 @@ $$</p>
 <p><em>Proof.</em> Pointwise order and norms are computed pointwise; the supremum norm is the order-unit norm of $1$ because $-\lambda1\leq a\leq\lambda1$ pointwise is $\lvert a\rvert\leq\lambda$ uniformly. The separation statement is the Hahn–Banach theorem applied to two distinct points of the convex set.</p>
 <p><strong>Theorem (the state space of the function system is the convex set).</strong> For a compact convex set $K$ the map</p>
 <p>$$
-\mathrm{ev} : K\to S(A(K)), \qquad \mathrm{ev}(x)(a) = a(x),
+\boxed{\;\mathrm{ev} : K\to S(A(K)), \qquad \mathrm{ev}(x)(a) = a(x)\;},
 $$</p>
 <p>is an affine homeomorphism onto the state space of $A(K)$.</p>
 <p><em>Proof.</em> The evaluation is affine in $x$ and positive unital in $a$, so it lands in the state space. Injectivity is the separation of points by $A(K)$; surjectivity is the fact that a positive unital functional on $A(K)$ extends to a positive functional on $C(K)$ and is therefore integration against a probability measure $\mu$, whose barycentre $x$ satisfies $\int a\,d\mu = a(x)$ for every affine $a$ by the affine character of $a$, so the functional is $\mathrm{ev}(x)$. Continuity of $\mathrm{ev}$ and of its inverse is the weak-* topology against the sup norm, and the map is a homeomorphism by the compactness of the two spaces.</p>
@@ -101,13 +101,13 @@ $$</p>
 <h3 id="the-duality-with-positive-unital-maps">The Duality with Positive Unital Maps</h3>
 <p><strong>Theorem.</strong> For compact convex sets $K$ and $L$ the assignment</p>
 <p>$$
-g\mapsto \Phi_g, \qquad \Phi_g(a) = a\circ g \quad (a\in A(K)),
+\boxed{\;g\mapsto \Phi_g, \qquad \Phi_g(a) = a\circ g \quad (a\in A(K))\;},
 $$</p>
 <p>is an affine bijection from the continuous affine maps $g : L\to K$ onto the positive unital linear maps $\Phi : A(K)\to A(L)$, with inverse sending $\Phi$ to the map whose evaluation at $y\in L$ is $\Phi(\cdot)(y)$.</p>
 <p><em>Proof.</em> If $g$ is affine and continuous then $\Phi_g$ is linear, and it is positive and unital because $a\geq0$ implies $a\circ g\geq0$ and $a = 1$ gives $1$. Conversely if $\Phi$ is positive and unital, the functional $\Phi(\cdot)(y)$ is a state of $A(K)$ for every $y\in L$, so by the previous theorem it is the evaluation at a unique $g(y)\in K$, and $y\mapsto g(y)$ is affine and continuous because each $a\circ g = \Phi(a)$ is; the two assignments are inverse by construction.</p>
 <p><strong>Proposition (affine maps preserve barycentres).</strong> Let $g : L\to K$ be continuous affine and let $\mu$ be a probability measure on $L$ with barycentre $y$. Then $g(y)$ is the barycentre of the pushed-forward measure $g_*\mu$ on $K$,</p>
 <p>$$
-g\bigl(r(\mu)\bigr) = r(g_*\mu).
+\boxed{\;g\bigl(r(\mu)\bigr) = r(g_*\mu)\;}.
 $$</p>
 <p><em>Proof.</em> For $a\in A(K)$ one has $\int a\,d(g_*\mu) = \int (a\circ g)\,d\mu = (a\circ g)(y) = a(g(y))$, using the affinity of $a$ and $g$ through the barycentre of $\mu$; the two sides therefore have the same values against every $a$, and they are equal by the separation of points of $K$.</p>
 <p><strong>Corollary (the group of affine automorphisms acts on the function system).</strong> The affine automorphisms of $K$ correspond to the <strong>order automorphisms</strong> of $A(K)$, that is, the linear bijections preserving the cone and the order unit, by $g\mapsto \Phi_g$; the correspondence is an isomorphism of groups.</p>

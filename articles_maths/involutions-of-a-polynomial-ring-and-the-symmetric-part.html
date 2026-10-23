@@ -80,7 +80,7 @@ $$</p>
 <p>it restricts to $\sigma$ on the constants and sends $x$ to $f$.</p>
 <p><strong>Theorem.</strong> The map $(\,)^{\sigma,f}$ is a ring homomorphism for every $f$, because $R[x]$ is commutative, and it is an involution if and only if</p>
 <p>$$
-\sigma^2 = \mathrm{id}, \qquad f(f(x)) = x, \qquad \text{and the coefficients of } f \text{ are twisted compatibly with } \sigma .
+\boxed{\;\sigma^2 = \mathrm{id}, \qquad f(f(x)) = x, \qquad \text{and the coefficients of } f \text{ are twisted compatibly with } \sigma\;} .
 $$</p>
 <p>The involution is the identity on $R[x]$ exactly when $\sigma = \mathrm{id}$ and $f = x$.</p>
 <p><strong>Proof.</strong> The map is additive by construction, it sends $1$ to $1$, and it is multiplicative because it is an evaluation of the commutative ring $R[x]$ with the coefficients twisted: $(gh)^{\sigma,f} = g^{\sigma,f}h^{\sigma,f}$ for all $g,h$ once the coefficients of $f$ satisfy $\sigma(c)f(x) = f(x)\sigma(c)$, which holds automatically in the commutative ring. Applying the map twice gives $x \mapsto f(f(x))$ and $a_i \mapsto \sigma^2(a_i)$, so the square is the identity exactly under the stated conditions; the triviality statement is the comparison of $x$ and of the coefficients.</p>
@@ -97,11 +97,11 @@ $$</p>
 <h2 id="the-symmetric-part-and-the-grading">The Symmetric Part and the Grading</h2>
 <p><strong>Theorem.</strong> The involution $x \mapsto -x$ of $R[x]$ has fixed subring</p>
 <p>$$
-R[x]^{+} = R[x^2] = \{g(x^2) : g \in R[x]\},
+\boxed{\;R[x]^{+} = R[x^2] = \{g(x^2) : g \in R[x]\}\;},
 $$</p>
 <p>the polynomials in $x^2$, and it induces the $\mathbb{Z}/2$-grading</p>
 <p>$$
-R[x] = R[x^2] \oplus x\,R[x^2],
+\boxed{\;R[x] = R[x^2] \oplus x\,R[x^2]\;},
 $$</p>
 <p>with even part $R[x^2]$ and odd part $xR[x^2]$. The symmetric part is the even part and the skew part is the odd part.</p>
 <p><strong>Proof.</strong> A polynomial $\sum a_i x^i$ is fixed by $x \mapsto -x$ exactly when the coefficients of the odd powers vanish, that is, when it is a polynomial in $x^2$; the direct sum is the grouping of the even and the odd powers, and the product of an element of $x^iR[x^2]$ and one of $x^jR[x^2]$ lies in $x^{i+j}R[x^2]$, which is the grading. The identification of the eigenspaces is the additive decomposition of <em>Involutive Rings</em>.</p>

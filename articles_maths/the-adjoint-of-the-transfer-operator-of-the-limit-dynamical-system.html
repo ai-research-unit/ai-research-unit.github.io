@@ -92,7 +92,7 @@ with the second sum over the other branches, and in the uniform case, $d\equiv d
 <h3 id="the-adjoint-in-the-hermitian-metric">The Adjoint in the Hermitian Metric</h3>
 <p><strong>Theorem (the adjoint is the Koopman operator).</strong> The adjoint of the transfer operator with respect to the invariant measure is the <strong>Koopman operator</strong>,
 $$
-L_\varphi^{\,*}=U_\varphi,\qquad U_\varphi f=f\circ\varphi ,
+\boxed{\;L_\varphi^{\,*}=U_\varphi,\qquad U_\varphi f=f\circ\varphi\;} ,
 $$
 so that $\langle L_\varphi f,g\rangle=\langle f,U_\varphi g\rangle$ for all $f,g\in L^2(\mu)$.</p>
 <p><em>Proof.</em> This is the transpose relation of <em>The Transfer Operator of the Limit Dynamical System</em>: changing the variable $x=\varphi(y)$ in the integral $\int(L_\varphi f)\bar g\,d\mu$ and using the invariance of $\mu$ with the unit Jacobian normalisation turns the sum over the preimage into the single value of $g$ at $\varphi(y)$; hence the pairing with $L_\varphi f$ equals the pairing of $f$ with $U_\varphi g$. The general case carries the Radon–Nikodym factor of the invariant measure, which is one in the normalisation.</p>
@@ -109,7 +109,7 @@ $$
 the transfer operator read through the reversal of the kernel.</p>
 <p><strong>Theorem (the reversed kernel).</strong> With $R\varphi=\varphi R$ and $R_*\mu=\mu$, the adjoint $L_\varphi^*=U_\varphi$ commutes with the involutive unitary $R_*$:
 $$
-R_*U_\varphi R_*=U_{R\varphi R}=U_\varphi=L_\varphi^{\,*},
+\boxed{\;R_*U_\varphi R_*=U_{R\varphi R}=U_\varphi=L_\varphi^{\,*}\;},
 $$
 so the <strong>reversed kernel</strong> $R_*L_\varphi^*R_*$ is the adjoint itself; the transfer operator, being its adjoint, commutes with $R_*$ as well, $R_*L_\varphi R_*=L_\varphi$; and $L_\varphi$ is <strong>self-adjoint up to the involution</strong>,
 $$
@@ -129,7 +129,7 @@ that is, symmetric for the <strong>twisted Hermitian form</strong> $\langle f,g\
 <h3 id="the-adjoint-the-correlations-and-the-decay">The Adjoint, the Correlations and the Decay</h3>
 <p><strong>Theorem (the duality of the correlations).</strong> The correlations of the limit dynamical system are computed through the adjoint:
 $$
-C_n(f,g)=\int f\circ\varphi^n\,\bar g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int\bar g\,d\mu\Bigr)=\langle L_\varphi^{\,n}f,g\rangle-\langle f,1\rangle\langle1,g\rangle ,
+\boxed{\;C_n(f,g)=\int f\circ\varphi^n\,\bar g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int\bar g\,d\mu\Bigr)=\langle L_\varphi^{\,n}f,g\rangle-\langle f,1\rangle\langle1,g\rangle\;} ,
 $$
 and when the spectral gap of <em>The Transfer Operator of the Limit Dynamical System</em> holds the decay is exponential, $|C_n(f,g)|\le C\theta^n$, for $f$ and $g$ in the H\"older class.</p>
 <p><em>Proof.</em> The first identity is the definition of the correlation and the duality $\langle L_\varphi^{\,n}f,g\rangle=\langle f,U_\varphi^{\,n}g\rangle$ of the adjoint; the decay is the spectral gap applied to the shifted operator $L_\varphi-\Pi$ with $\Pi f=\langle f,1\rangle$ the rank-one projection on the invariant function, whose powers decay by $\theta^n$. The central limit theorem follows from the same gap by the standard argument of <em>The Transfer Operator</em>.</p>

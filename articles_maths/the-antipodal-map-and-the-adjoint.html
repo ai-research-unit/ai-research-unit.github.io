@@ -93,7 +93,7 @@ $$</p>
 <h3 id="the-degree-of-the-antipodal-map">The Degree of the Antipodal Map</h3>
 <p><strong>Theorem.</strong> For $n \geq 1$ the degree of the antipodal map of $S^{n}$ is</p>
 <p>$$
-\deg(\alpha) = (-1)^{n+1} .
+\boxed{\;\deg(\alpha) = (-1)^{n+1}\;} .
 $$</p>
 <p><strong>Proof.</strong> The degree is multiplicative, $\deg(f \circ g) = \deg(f)\deg(g)$, for self-maps of the sphere, and the degree of a reflection is $-1$. The linear operator $-I$ of $\mathbb{R}^{n+1}$ is the composite of the $n+1$ reflections $\rho_{i}$ that change the sign of the $i$-th coordinate, and each $\rho_{i}$ restricts to a reflection of the sphere, a homeomorphism that fixes the equator of the $i$-th coordinate and exchanges the two hemispheres, of degree $-1$. Hence the antipodal map, the restriction of $-I = \rho_{1}\circ\cdots\circ\rho_{n+1}$, has degree $(-1)^{n+1}$.</p>
 <p><strong>Corollary.</strong> The antipodal map preserves the orientation of the sphere in the odd dimensions and reverses it in the even dimensions; on the top cohomology it is multiplication by $(-1)^{n+1}$, and the induced map on the fundamental class is</p>
@@ -115,7 +115,7 @@ $$</p>
 <h3 id="the-adjoint-of-the-antipodal-operator">The Adjoint of the Antipodal Operator</h3>
 <p><strong>Theorem.</strong> The antipodal operator scales the cup-product pairing by its degree:</p>
 <p>$$
-b(\alpha^{*}u, \alpha^{*}v) = (-1)^{n+1}\, \mathfrak{b}(u,v) \qquad (u, v \in H^{*}(S^{n};R)).
+\boxed{\;b(\alpha^{*}u, \alpha^{*}v) = (-1)^{n+1}\, \mathfrak{b}(u,v) \qquad (u, v \in H^{*}(S^{n};R))\;}.
 $$</p>
 <p>Consequently the adjoint of the antipodal operator with respect to the pairing is the same operator multiplied by that scalar,</p>
 <p>$$
@@ -136,7 +136,7 @@ $$</p>
 <h2 id="the-fixed-part-of-the-antipodal-operator">The Fixed Part of the Antipodal Operator</h2>
 <p><strong>Theorem.</strong> The fixed part of the antipodal operator on the cohomology of the sphere is</p>
 <p>$$
-H^{*}(S^{n};R)^{\alpha^{*}} = \begin{cases} H^{0}(S^{n};R) \oplus H^{n}(S^{n};R), & n \text{ odd}, \\ H^{0}(S^{n};R), & n \text{ even}, \end{cases}
+\boxed{\;H^{*}(S^{n};R)^{\alpha^{*}} = \begin{cases} H^{0}(S^{n};R) \oplus H^{n}(S^{n};R), & n \text{ odd}, \\ H^{0}(S^{n};R), & n \text{ even}, \end{cases}\;}
 $$</p>
 <p>and the anti-invariant part is the complementary summand when two is invertible: the whole of $H^{n}$ in the even case and zero in the odd case. In the even dimensions the invariant cohomology is only the degree-zero part, and in the odd dimensions it is the whole ring.</p>
 <p><strong>Proof.</strong> The cohomology of the sphere is concentrated in degrees $0$ and $n$, the operator is the identity in degree zero, and in degree $n$ it is the multiplication by $(-1)^{n+1}$; the fixed elements of the multiplication by a scalar $c$ on the rank-one module $R$ are the elements annihilated by $c-1$, which is the whole module when $c = 1$ and is zero when $c - 1$ is not a zero-divisor, in particular for $c = -1$. The two cases are therefore as stated, and the anti-invariant part is the other eigenspace.</p>

@@ -88,7 +88,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>shift</strong> of a complex $C_\bullet$ by $n$ is the complex $C[n]_\bullet$ with $C[n]_k=C_{k+n}$ and differential $(-1)^nd$; a chain map $f:C\to D$ of degree $p$ is a morphism $C\to D[p]$ in the homotopy category.</p>
 <p><strong>Proposition.</strong> The mapping cone of a chain map $f:C\to D$ fits into a diagram</p>
 <p>$$
-C\xrightarrow{\ f\ }D\xrightarrow{\ i\ }\operatorname{Cone}(f)\xrightarrow{\ q\ }C[1],
+\boxed{\;C\xrightarrow{\ f\ }D\xrightarrow{\ i\ }\operatorname{Cone}(f)\xrightarrow{\ q\ }C[1]\;},
 $$</p>
 <p>in which $i$ is the inclusion of $D$ as the degree-$0$ component of the cone and $q$ is the projection onto $C[1]$; the composite of any two consecutive maps is zero, and the induced maps on homology form the long exact sequence of <em>Homological Algebra</em>.</p>
 <p><em>Proof.</em> The maps are $i(d)=(d,0)$ and $q(c,d)=-c$, the sign being chosen with the cone's differential of <em>Homological Algebra</em> so that $q\,i=0$ and $i\,f=0$. The homology statement is the long exact sequence of the cone.</p>
@@ -135,7 +135,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $F:\mathcal{A}\to\mathcal{B}$ be an additive functor between abelian categories. A <strong>right derived functor</strong> of $F$ is an exact functor $\mathbb{R}F:D(\mathcal{A})\to D(\mathcal{B})$ together with a natural transformation $Q_{\mathcal{B}}F\to\mathbb{R}FQ_{\mathcal{A}}$ that is universal among such; the <strong>left derived functor</strong> $\mathbb{L}F$ is defined dually. Universality means that any natural transformation from $Q_{\mathcal{B}}F$ to an exact functor factors uniquely through the comparison.</p>
 <p><strong>Theorem.</strong> If $\mathcal{A}$ has enough injectives then every left exact additive functor $F:\mathcal{A}\to\mathcal{B}$ has a right derived functor $\mathbb{R}F$, and if $\mathcal{A}$ has enough projectives then every right exact $F$ has a left derived functor $\mathbb{L}F$. In either case</p>
 <p>$$
-H^n\bigl(\mathbb{R}F(A)\bigr)\cong R^nF(A), \qquad H_n\bigl(\mathbb{L}F(A)\bigr)\cong L_nF(A),
+\boxed{\;H^n\bigl(\mathbb{R}F(A)\bigr)\cong R^nF(A), \qquad H_n\bigl(\mathbb{L}F(A)\bigr)\cong L_nF(A)\;},
 $$</p>
 <p>so the derived functors of <em>Derived Functors</em> are recovered as the cohomology of the total derived functor.</p>
 <p><em>Proof.</em> Define $\mathbb{R}F$ on the full subcategory of complexes of injectives by applying $F$ degreewise; a quasi-isomorphism between complexes of injectives is a homotopy equivalence, so this descends to the derived category, and the universal property of the localisation extends it to all of $D(\mathcal{A})$. The identification of the cohomology follows from the definition of $R^nF$. The projective case is dual.</p>
@@ -152,7 +152,7 @@ $$</p>
 <p>for a projective resolution $P_\bullet$ of $M$; both are well-defined objects of $D(R\text{-}\mathbf{Mod})$.</p>
 <p><strong>Theorem (adjunction).</strong> The derived functors satisfy</p>
 <p>$$
-\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}(M\otimes_R^{\mathbb{L}}N,P)\cong\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}\bigl(M,\mathbb{R}\operatorname{Hom}_R(N,P)\bigr),
+\boxed{\;\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}(M\otimes_R^{\mathbb{L}}N,P)\cong\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}\bigl(M,\mathbb{R}\operatorname{Hom}_R(N,P)\bigr)\;},
 $$</p>
 <p>so $-\otimes_R^{\mathbb{L}}N$ is left adjoint to $\mathbb{R}\operatorname{Hom}_R(N,-)$ on the derived category. There is also a natural isomorphism $M\otimes_R^{\mathbb{L}}N\cong N\otimes_R^{\mathbb{L}}M$.</p>
 <p><em>Proof.</em> The adjunction of the tensor product and Hom on the level of complexes, together with the fact that a complex of projectives computes the derived tensor product and a complex of injectives the derived hom, gives the displayed bijection; the universal property of the localisation shows that it is the hom set of the derived category. The commutativity follows from the corresponding isomorphism in the homotopy category and the symmetry of the resolutions.</p>

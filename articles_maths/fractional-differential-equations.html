@@ -106,7 +106,7 @@ $$</p>
 <p>The difference is not a technicality. The Caputo derivative is the one for which the initial conditions of a fractional differential equation are the ordinary values $f^{(k)}(a)$, $k<n$, and for which the derivative of a constant vanishes; the Riemann–Liouville derivative is the one that composes cleanly with the fractional integral. The two operators are the two natural completions of the integer-order derivative to non-integer order, and the theory uses both.</p>
 <p><strong>Theorem (composition laws).</strong> For $\alpha>0$ and $n=\lceil\alpha\rceil$:</p>
 <p>$$
-D_a^\alpha I_a^\alpha f = f, \qquad I_a^\alpha D_a^\alpha f(t) = f(t) - \sum_{k=0}^{n-1}\frac{(t-a)^{k-\alpha}}{\Gamma(k-\alpha+1)}\,\Bigl[I_a^{n-\alpha}f\Bigr]^{(k)}(a^+),
+\boxed{\;D_a^\alpha I_a^\alpha f = f, \qquad I_a^\alpha D_a^\alpha f(t) = f(t) - \sum_{k=0}^{n-1}\frac{(t-a)^{k-\alpha}}{\Gamma(k-\alpha+1)}\,\Bigl[I_a^{n-\alpha}f\Bigr]^{(k)}(a^+)\;},
 $$</p>
 <p>(the latter for $f$ with the required regularity), and for the Caputo derivative</p>
 <p>$$
@@ -169,7 +169,7 @@ $$</p>
 <p>The proof is the Picard argument verbatim, with the single change that the kernel is weakly singular: the factor $T^\alpha/\Gamma(\alpha+1)$ replaces the factor $T$ of the ordinary theory, and the singularity is integrable, so no separate treatment is needed.</p>
 <p><strong>Theorem (the linear equation).</strong> The solution of ${}^C D_0^\alpha y = \lambda y$ with $y(0)=y_0$, $\alpha\in(0,1)$, is</p>
 <p>$$
-y(t) = y_0\,E_\alpha(\lambda t^\alpha),
+\boxed{\;y(t) = y_0\,E_\alpha(\lambda t^\alpha)\;},
 $$</p>
 <p>and more generally the solution with $y(0)=y_0$ of ${}^C D_0^\alpha y - \lambda y = t^{\beta-1}g(t)$ is given by the convolution of the Mittag-Leffler kernel with the forcing term.</p>
 <p><em>Proof.</em> The Laplace transform of the equation, using $\mathcal L\{{}^C D_0^\alpha y\}(s) = s^\alpha\mathcal L y(s) - s^{\alpha-1}y_0$, gives $\mathcal L y(s) = \frac{s^{\alpha-1}y_0}{s^\alpha-\lambda} = \frac{y_0s^{-1}}{1-\lambda s^{-\alpha}}$; the inverse transform by the previous theorem with $\beta=1$ is $y_0E_\alpha(\lambda t^\alpha)$.</p>
@@ -191,7 +191,7 @@ $$</p>
 <p><em>Proof.</em> Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\mathcal F w = -|\xi|^2\mathcal F w$ with $\mathcal F w(\xi,0)=(\mathcal F f)(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem.</p>
 <p><strong>Theorem (subdiffusive scaling).</strong> The kernel $K_t^{(\alpha)}$ is a probability density for each $t>0$, it is self-similar,</p>
 <p>$$
-K_t^{(\alpha)}(x) = t^{-\alpha n/2}K_1^{(\alpha)}\bigl(x\,t^{-\alpha/2}\bigr),
+\boxed{\;K_t^{(\alpha)}(x) = t^{-\alpha n/2}K_1^{(\alpha)}\bigl(x\,t^{-\alpha/2}\bigr)\;},
 $$</p>
 <p>and for $0<\alpha<1$ it has the heavy tail</p>
 <p>$$

@@ -92,7 +92,7 @@ $$</p>
 <p>where $|g| = 0$ for even $g$ and $|g| = 1$ for odd $g$. Equivalently, $M$ is a module over the group algebra $kG$ that is graded and whose multiplication respects the grading, the group algebra being a graded algebra by the parity of its basis elements. The action is the <strong>graded action</strong>.</p>
 <p><strong>Proposition.</strong> A graded action decomposes as</p>
 <p>$$
-\rho = \rho_0 \oplus \rho_1, \qquad \rho_0 : G_0 \to GL(M_0)\times GL(M_1), \qquad \rho_1 : G_1 \to \mathrm{Iso}(M_0, M_1),
+\boxed{\;\rho = \rho_0 \oplus \rho_1, \qquad \rho_0 : G_0 \to GL(M_0)\times GL(M_1), \qquad \rho_1 : G_1 \to \mathrm{Iso}(M_0, M_1)\;},
 $$</p>
 <p>so that the even subgroup acts by parity-preserving operators on each part and the odd coset acts by parity-reversing isomorphisms. When $G_1 = \varnothing$, the grading is trivial and a graded action is an ordinary action preserving each part.</p>
 <p><strong>Proof.</strong> A homogeneous $g$ of parity zero satisfies $\rho(g)M_i \subseteq M_i$, so its restriction to each part is an isomorphism; a homogeneous $g$ of parity one satisfies $\rho(g)M_i \subseteq M_{i+1}$, so it exchanges the two parts and restricts to an isomorphism $M_0 \to M_1$ with inverse the restriction of $\rho(g^{-1})$, which has the same parity because $g^{-1}$ is odd. The decomposition over $G_0\sqcup G_1$ assembles the two cases.</p>
@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>equal to $\rho(g)$ on the even part and to $\rho(z)\rho(g)$ on the odd part; when the central sign element acts on the module by the parity operator, $\rho(z) = \Pi$, this reads</p>
 <p>$$
-\rho\bigl(\alpha(g)\bigr) = \Pi^{\,|g|}\,\rho(g), \qquad g \in G,
+\boxed{\;\rho\bigl(\alpha(g)\bigr) = \Pi^{\,|g|}\,\rho(g), \qquad g \in G\;},
 $$</p>
 <p>so that the twist by the grade involution is the identity on the even coset and the parity operator on the odd one. The map $\rho\circ\alpha$ is again a graded action, with the same even part and the opposite odd part, and it is the module-level <strong>parity-reversed action</strong>.</p>
 <p><strong>Proof.</strong> By the definition of α, $\alpha(g) = \varepsilon(g)g$ with $\varepsilon(g) \in \{e,z\}$, so $\rho(\alpha(g)) = \rho(\varepsilon(g))\rho(g)$, and $\rho(\varepsilon(g))$ is $\rho(e) = \mathrm{id}$ on the even coset and $\rho(z)$ on the odd one. If $\rho(z) = \Pi$ then $\rho(\alpha(g)) = \Pi^{|g|}\rho(g)$, which is the displayed form. Multiplicativity and the parity condition for $\rho\circ\alpha$ are inherited from $\rho$ and $\alpha$, so it is a graded action.</p>
@@ -123,7 +123,7 @@ $$</p>
 <h3 id="the-graded-leibniz-rule">The Graded Leibniz Rule</h3>
 <p><strong>Proposition (the graded derivation).</strong> Let $M$ be a graded algebra and let $G$ act by algebra automorphisms of parity $|g|$, $\rho(g)(mn) = \rho(g)(m)\,\rho(g)(n)$. Then every element acts as an automorphism of parity $|g|$, and the associativity of the action is the parity-respecting composition. If instead an element $D$ of parity $|D|$ acts as a <strong>graded derivation</strong>, it obeys the graded Leibniz rule</p>
 <p>$$
-D(mn) = (Dm)\,n + (-1)^{|D||m|}\,m\,(Dn),
+\boxed{\;D(mn) = (Dm)\,n + (-1)^{|D||m|}\,m\,(Dn)\;},
 $$</p>
 <p>and the rule is the sign rule of the odd part of the action.</p>
 <p><strong>Proof.</strong> The automorphism statement is the multiplicativity of $\rho(g)$ and the parity condition $\rho(g)(M_i)\subseteq M_{i+|g|}$; the Leibniz rule is the definition of a graded derivation of parity $|D|$, and it is what the odd elements of a graded action on an algebra become when the action is written infinitesimally. In parity zero the rule is the ordinary product rule, and the only novelty is the sign on the odd part.</p>

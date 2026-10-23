@@ -142,7 +142,7 @@ $$</p>
 <p><strong>Proof.</strong> Each $K_v^\times$ is locally compact by <em>Local Fields</em>, and each $\mathcal{O}_v^\times$ is a compact open subgroup; the restricted product is therefore locally compact by the corollary of the restricted product theorem, and it is a topological group by the proposition. It is abelian because each factor is. Total disconnectedness in the absence of real places follows because each $K_v^\times$ is then totally disconnected; the real places contribute the connected factor $\mathbb{R}_{>0}$.</p>
 <p><strong>Proposition (the norm and the product formula).</strong> The <strong>idele norm</strong> is the continuous homomorphism</p>
 <p>$$
-\lvert \cdot \rvert : \mathbb{I}_K \longrightarrow \mathbb{R}_{>0}, \qquad \lvert x \rvert = \prod_{v \in V_K} \lvert x_v \rvert_v ,
+\boxed{\;\lvert \cdot \rvert : \mathbb{I}_K \longrightarrow \mathbb{R}_{>0}, \qquad \lvert x \rvert = \prod_{v \in V_K} \lvert x_v \rvert_v\;} ,
 $$</p>
 <p>which is well defined because almost all factors equal $1$, and which restricts to $K^\times$ as the trivial character: $\lvert a \rvert = 1$ for every $a \in K^\times$, by the product formula.</p>
 <p><strong>Proof.</strong> Continuity is local: each $\lvert \cdot \rvert_v$ is continuous on $K_v^\times$, and $\lvert x_v \rvert_v = 1$ for almost all $v$, so the product is a finite product in a neighbourhood of the identity. The restriction statement is the product formula of <em>Absolute Values, Valuations and Completions</em>.</p>
@@ -156,7 +156,7 @@ $$</p>
 <p><strong>Proof.</strong> The discreteness of $K^\times$ in $\mathbb{I}_K$ follows from the discreteness of $K$ in $\mathbb{A}_K$: a discrete subgroup of a topological ring is discrete in its unit group for the restricted product topology, since the idele topology is finer. For the compactness one uses that $\mathbb{I}_K^1/K^\times$ is the quotient of the compact set of ideles of norm one lying in a fundamental domain by the discrete acting group; equivalently, the compactness is the conjunction of the finiteness of the class number and Dirichlet's unit theorem, both of which belong to the algebraic number theory of Part I and are quoted as standard. The finiteness of the class group is the case of the compactness statement in which the Archimedean component is held fixed.</p>
 <p><strong>Theorem (structure of the idele class group).</strong> For a number field $K$ there is an isomorphism of topological groups</p>
 <p>$$
-\mathbb{I}_K \cong \mathbb{I}_K^1 \times \mathbb{R}_{>0},
+\boxed{\;\mathbb{I}_K \cong \mathbb{I}_K^1 \times \mathbb{R}_{>0}\;},
 $$</p>
 <p>obtained by choosing a place $v_0$ and sending $x$ to $(x \cdot c(x)^{-1}, \lvert x \rvert)$ for an idele $c(x)$ supported at $v_0$ with $\lvert c(x) \rvert = \lvert x \rvert$; consequently $C_K$ is the product of the compact group $C_K^1$ and $\mathbb{R}_{>0}$. For a function field $K$, the image of the norm is $q^{\mathbb{Z}}$ and $\mathbb{I}_K / \mathbb{I}_K^1 \cong \mathbb{Z}$.</p>
 <p><strong>Proof.</strong> The chosen place $v_0$ has valuation group $\mathbb{Z}$ (or, if Archimedean, an element of norm any prescribed positive real, by the density of $\lvert K_{v_0} \rvert$ in $\mathbb{R}_{>0}$ for a real place and by taking an even power at a complex place), so an idele of any prescribed positive norm supported at $v_0$ may be found; the map is then a topological isomorphism by the open mapping theorem for locally compact groups, or directly from the product decomposition. The function field case is the statement that the norm of an idele is a power of $q$ and that the degree map has image $\mathbb{Z}$.</p>
@@ -187,7 +187,7 @@ $$</p>
 <h3 id="adelic-class-field-theory">Adelic Class Field Theory</h3>
 <p><strong>Theorem (statement of the idelic reciprocity law).</strong> Let $K$ be a global field. There is a continuous homomorphism</p>
 <p>$$
-\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{Gal}(K^{\mathrm{ab}}/K),
+\boxed{\;\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{Gal}(K^{\mathrm{ab}}/K)\;},
 $$</p>
 <p>the <strong>global reciprocity map</strong>, whose kernel is the connected component of the identity in the number field case and the closure of the image of the norm subgroups in general, and which induces a bijection between the open subgroups of $C_K$ of finite index and the finite abelian extensions of $K$, sending an extension $L/K$ to the quotient $C_K / N_{L/K}(C_L)$.</p>
 <p><strong>Proof.</strong> This is the main theorem of global class field theory, resting on the local reciprocity laws at all places assembled into an adelic product; the full proof belongs to Part I, and the statement is recorded here only to display the role of the idele class group as the topological group in which the abelian extensions are parameterised.</p>

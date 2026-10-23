@@ -115,9 +115,9 @@ $$</p>
 <h3 id="composition">Composition</h3>
 <p><strong>Theorem.</strong> For all $a, b, c, d \in A$,</p>
 <p>$$
-S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b}, \qquad
+\boxed{\;S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b}, \qquad
 T_{a,b}\,S_{c,d} = S_{ac,\,db}, \qquad
-S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b} .
+S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b}\;} .
 $$</p>
 <p>In particular the product of two signed sandwiches is an unsigned sandwich, and the signed sandwiches are not closed under composition unless $\alpha = \mathrm{id}$.</p>
 <p><em>Proof.</em> Use the two readings $S_{p,q} = T_{p,q}\alpha = \alpha T_{\alpha(p),\alpha(q)}$ of elementary property (b) and $\alpha^2 = \mathrm{id}$. For the first, $S_{a,b}T_{c,d} = T_{a,b}\alpha T_{c,d} = T_{a,b}T_{\alpha(c),\alpha(d)}\alpha = S_{a\alpha(c),\alpha(d)b}$. For the second, $T_{a,b}S_{c,d} = T_{a,b}T_{c,d}\alpha = S_{ac,db}$. For the third, multiply the first two: $S_{a,b}S_{c,d} = T_{a,b}\alpha T_{c,d}\alpha = T_{a,b}T_{\alpha(c),\alpha(d)}\alpha^2 = T_{a\alpha(c),\alpha(d)b}$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <h3 id="invertibility">Invertibility</h3>
 <p><strong>Theorem.</strong> Let $A$ be finite-dimensional. The signed sandwich $S_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then</p>
 <p>$$
-S_{a,b}^{-1} = S_{\alpha(a)^{-1},\, \alpha(b)^{-1}} .
+\boxed{\;S_{a,b}^{-1} = S_{\alpha(a)^{-1},\, \alpha(b)^{-1}}\;} .
 $$</p>
 <p><em>Proof.</em> The form $S_{a,b} = T_{a,b}\alpha$ is the composite of the invertible operator $\alpha$ with the sandwich $T_{a,b}$, so it is invertible exactly when $T_{a,b}$ is; by <em>The Sandwich Operator on an Algebra</em> this is exactly when $a$ and $b$ are units. For the inverse, apply the composition rule for two signed sandwiches: $S_{a,b}S_{\alpha(a)^{-1},\alpha(b)^{-1}} = T_{a\alpha(\alpha(a)^{-1}),\,\alpha(\alpha(b)^{-1})b} = T_{a\alpha(a)^{-1},\,b^{-1}b} = T_{1,1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$ and $\alpha(\alpha(b)^{-1}) = b^{-1}$; the same computation in the other order gives the two-sided inverse.</p>
 <p><strong>Remark.</strong> The inverse $S_{\alpha(a)^{-1},\alpha(b)^{-1}}$ is again a signed sandwich, so the invertible signed sandwiches are stable under inversion; they are not stable under composition, because the product of two of them is an unsigned sandwich. The stable object is the union of the invertible signed and the invertible unsigned sandwiches, which is the subgroup $G_0 \cup G_0\alpha$ of the remark above. When $\alpha = \mathrm{id}$ the signed and the unsigned sandwiches coincide and this union is the ordinary group of invertible sandwiches.</p>
@@ -152,7 +152,7 @@ $$</p>
 <h3 id="the-relation-to-the-unsigned-sandwich">The Relation to the Unsigned Sandwich</h3>
 <p><strong>Proposition.</strong> The signed sandwich and the unsigned sandwich determine one another through the involution,</p>
 <p>$$
-S_{a,b} = T_{a,b}\,\alpha = \alpha\, T_{\alpha(a),\, \alpha(b)}, \qquad T_{a,b} = S_{a,b}\,\alpha .
+\boxed{\;S_{a,b} = T_{a,b}\,\alpha = \alpha\, T_{\alpha(a),\, \alpha(b)}, \qquad T_{a,b} = S_{a,b}\,\alpha\;} .
 $$</p>
 <p><em>Proof.</em> The first identity is elementary property (b). For the second, compose the first on the right with $\alpha$ and use $\alpha^2 = \mathrm{id}$.</p>
 <p><strong>Corollary.</strong> The signed sandwich space is the image of the unsigned sandwich space under composition with $\alpha$, and the two spaces have the same dimension. In particular the signed sandwich space is all of $\operatorname{End}_k(A)$ exactly when the unsigned sandwich space is, which for a central simple algebra is the case by <em>The Sandwich Operator on an Algebra</em>.</p>

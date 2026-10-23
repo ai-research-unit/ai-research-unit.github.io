@@ -87,23 +87,23 @@ $$</p>
 <p><em>Proof.</em> Conjugation by an invertible element is an automorphism, and $\Gamma^2=I$ makes it involutive; $\Gamma=\Gamma^*$ gives $\alpha(T^*)=\Gamma T^*\Gamma=(\Gamma T\Gamma)^*=(\alpha(T))^*$; the isometry and the Hilbert–Schmidt statement are the invariance of the norms under the unitary $\Gamma$, and $\alpha(I)=\Gamma\Gamma=I$.</p>
 <p><strong>Proposition (boundedness and norm).</strong> $S_{A,B}$ is a bounded operator on $B(H)$ with</p>
 <p>$$
-\|S_{A,B}\|=\|A\|\,\|B\| ,
+\boxed{\;\|S_{A,B}\|=\|A\|\,\|B\|\;} ,
 $$</p>
 <p>the norm being computed with respect to the operator norm; the same formula holds for the Hilbert–Schmidt norm on $S_2(H)$, where $\|S_{A,B}\|_{HS}=\|A\|\,\|B\|$.</p>
 <p><em>Proof.</em> $\|A\alpha(T)B\|\le\|A\|\|B\|\|\alpha(T)\|=\|A\|\|B\|\|T\|$, giving the upper bound; the value is attained at a rank-one $T=\xi\otimes\bar\eta$ for which $\alpha(T)=\varepsilon\,T$ and $\|ATB\|=\|A\|\|B\|$, so the bound is sharp. The Hilbert–Schmidt statement is the same computation with $\|\cdot\|_{\mathrm{HS}}$ in place of $\|\cdot\|$.</p>
 <p><strong>Proposition (relation to the unsigned sandwich and the coset).</strong> Every signed sandwich is the unsigned sandwich composed with the involution,</p>
 <p>$$
-S_{A,B}=T_{A,B}\circ\alpha ,
+\boxed{\;S_{A,B}=T_{A,B}\circ\alpha\;} ,
 $$</p>
 <p>so the signed sandwiches form the coset $T(B(H),B(H))\,\alpha$ of the unsigned ones inside $B(B(H))$, and the signed sandwich is the unsigned sandwich with the argument twisted. In particular $S_{A,B}=T_{A,B}$ for all $A,B$ exactly when $\alpha=\mathrm{id}$, that is when $H^1=0$.</p>
 <p><em>Proof.</em> $T_{A,B}(\alpha(T))=A\alpha(T)B=S_{A,B}(T)$ is the definition; the identity of the two families on all arguments forces $\alpha=\mathrm{id}$, and $\alpha=\mathrm{id}$ means $\Gamma=I$ and $H^1=0$.</p>
 <h2 id="the-composition-table">The Composition Table</h2>
 <p><strong>Theorem (products of two-sided operators).</strong> For $A,B,C,D\in B(H)$,</p>
 <p>$$
-T_{A,B}\,T_{C,D}=T_{AC,\,DB},\qquad
+\boxed{\;T_{A,B}\,T_{C,D}=T_{AC,\,DB},\qquad
 T_{A,B}\,S_{C,D}=S_{AC,\,DB},\qquad
 S_{A,B}\,T_{C,D}=S_{A\alpha(C),\,\alpha(D)B},\qquad
-S_{A,B}\,S_{C,D}=T_{A\alpha(C),\,\alpha(D)B}.
+S_{A,B}\,S_{C,D}=T_{A\alpha(C),\,\alpha(D)B}\;}.
 $$</p>
 <p>So the product of an even number of signed sandwiches is unsigned, the product of an odd number is signed, and the sign rule is the involution acting on the inner factors.</p>
 <p><em>Proof.</em> Each identity is associativity and $\alpha^2=\mathrm{id}$: for the last, $S_{A,B}(S_{C,D}(X))=A\alpha(C\alpha(X)D)B=A\alpha(C)\alpha^2(X)\alpha(D)B=A\alpha(C)X\alpha(D)B$, and the three others are the same computation with the involution applied to any subset of the inner factors.</p>

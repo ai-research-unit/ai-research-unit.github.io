@@ -85,7 +85,7 @@ which express the adjoints of the Cauchy–Riemann operators through the contrac
 <p><strong>Definition.</strong> A Hermitian metric $g$ on a complex manifold is <strong>Kähler</strong> when its associated form $\omega$ is closed, $d\omega = 0$; the manifold with a Kähler metric is a <strong>Kähler manifold</strong>, and $\omega$ is its <strong>Kähler form</strong>.</p>
 <p><strong>Proposition (the equivalent conditions).</strong> For a Hermitian metric $g$ on a complex manifold $(M, J)$ the following are equivalent:
 $$
-d\omega = 0, \qquad \nabla\omega = 0, \qquad \nabla J = 0, \qquad \nabla^{\mathrm{C}}J = J\nabla^{\mathrm C},
+\boxed{\;d\omega = 0, \qquad \nabla\omega = 0, \qquad \nabla J = 0, \qquad \nabla^{\mathrm{C}}J = J\nabla^{\mathrm C}\;},
 $$
 where $\nabla$ is the Levi-Civita connection, $\nabla^{\mathrm C}$ the Chern connection and $\nabla^{\mathrm C}J$ is the covariant derivative of the tensor $J$. Each says that the complex structure of the manifold is parallel for the metric, so that the Riemannian holonomy is contained in the unitary group.</p>
 <p><strong>Proof.</strong> $d\omega$ is a $3$-form of type $(2,1)\oplus(1,2)$, and the $(2,1)$-part is the Nijenhuis-type obstruction $\nabla\omega$ evaluated on holomorphic vectors up to a nonzero factor: the identity $d\omega = 0$ is equivalent to $\nabla\omega = 0$ because the metric is Hermitian and the connection is the Levi-Civita one, which is torsion-free; $\nabla\omega = 0$ is equivalent to $\nabla J = 0$ because $\omega(X,Y) = g(JX,Y)$ and $g$ is parallel; finally $\nabla^{\mathrm C}J = 0$ is the statement that the Chern connection is the Levi-Civita connection, which happens exactly when $\omega$ is closed. The Chern connection $1$-form and the torsion are <em>Hermitian Metrics and the Levi-Civita Connection</em>. This is <em>Kähler Geometry</em>.</p>
@@ -99,7 +99,7 @@ and conversely a real function with $i\partial\bar\partial\varphi$ positive defi
 <h2 id="the-kahler-identities">The Kähler Identities</h2>
 <p><strong>Theorem (the Kähler identities).</strong> On a Kähler manifold the contractions and the Cauchy–Riemann operators satisfy
 $$
-[\Lambda, \partial] = -i\,\bar\partial^{*}, \qquad [\Lambda, \bar\partial] = i\,\partial^{*}, \qquad [\Lambda, d] = d^{*} .
+\boxed{\;[\Lambda, \partial] = -i\,\bar\partial^{*}, \qquad [\Lambda, \bar\partial] = i\,\partial^{*}, \qquad [\Lambda, d] = d^{*}\;} .
 $$
 The last is the sum of the first two, $[\Lambda, d] = [\Lambda,\partial]+[\Lambda,\bar\partial] = d^{*}$.</p>
 <p><strong>Proof.</strong> Work at a point $n$ in holomorphic normal coordinates, so that $\partial/\partial z_k g_{j\bar l}(n) = 0$ and $\omega = i\sum_k dz_k\wedge d\bar z_k$ at $n$ to the relevant order. The operators of exterior multiplication and contraction satisfy the Clifford relations, and the Leibniz rule for $\Lambda$ against $\partial$ and $\bar\partial$ reduces at $n$ to the commutation of $\Lambda$ with the holomorphic and anti-holomorphic derivations; the computation gives $[\Lambda,\partial] = -i\bar\partial^{*}$ and, by conjugation, $[\Lambda,\bar\partial] = i\partial^{*}$. The normal coordinates exist because the metric is Kähler, which is the only place where $d\omega = 0$ enters; the Clifford relations of the exterior algebra and its contraction are <em>The Kähler Form Operator</em> and <em>The Volume Element, Duality and the Hodge Star</em>.</p>
@@ -113,7 +113,7 @@ and consequently the harmonic forms for the three Laplacians coincide; the bideg
 <h2 id="the-hermitian-form-the-positivity-and-the-kahler-cone">The Hermitian Form, the Positivity and the Kähler Cone</h2>
 <p><strong>Proposition (positivity of the Kähler form).</strong> The Kähler form $\omega$ is a <strong>positive</strong> $(1,1)$-form: for every nonzero real tangent vector $v$,
 $$
-\omega(v, Jv) = g(v, v) > 0 ,
+\boxed{\;\omega(v, Jv) = g(v, v) > 0\;} ,
 $$
 and for a complex line $T \subseteq T_pM$ spanned in a unitary frame by the real vectors $u, Ju$ one has $\omega(u,Ju) = |u|^2 > 0$; the form is thus positive in the sense of positivity of the associated Hermitian form $h = g - i\omega$.</p>
 <p><strong>Proof.</strong> $\omega(v,Jv) = g(Jv,Jv) = g(v,v)$ by the compatibility $g(JX,JY) = g(X,Y)$ and $J^2 = -\mathrm{id}$; the positivity of $g$ gives the strict inequality. The evaluation on the complex line is the same computation in a frame adapted to $T$. Positivity of the Hermitian form and of the $(1,1)$-form is <em>Hermitian Geometry and Almost Complex Structures</em>.</p>

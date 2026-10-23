@@ -81,7 +81,7 @@ $$</p>
 <p>Since $\Omega$ is a real $(1,1)$-form, the closedness has a sharper form on a complex manifold.</p>
 <p><strong>Proposition.</strong> Let $(M,J,g)$ be a Hermitian manifold with fundamental form $\Omega$, of type $(1,1)$. Then</p>
 <p>$$
-d\Omega = 0 \iff \partial\Omega = 0 \iff \bar\partial\Omega = 0,
+\boxed{\;d\Omega = 0 \iff \partial\Omega = 0 \iff \bar\partial\Omega = 0\;},
 $$</p>
 <p>and in that case $\Omega$ is locally of the form $i\partial\bar\partial\varphi$ for a real function $\varphi$.</p>
 <p><strong>Proof.</strong> Since $\Omega$ has bidegree $(1,1)$, the exterior derivative splits as $d\Omega = \partial\Omega + \bar\partial\Omega$ with $\partial\Omega$ of bidegree $(2,1)$ and $\bar\partial\Omega$ of bidegree $(1,2)$; the two have different bidegrees, so their sum vanishes exactly when each vanishes. The local form $i\partial\bar\partial\varphi$ is the Poincaré lemma for $\bar\partial$ combined with the reality of $\Omega$: a closed real $(1,1)$-form is locally $\bar\partial$-exact up to the conjugate, which is the content of the $\partial\bar\partial$-lemma on a polydisc.</p>
@@ -147,7 +147,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> The identities are a computation in local holomorphic normal coordinates, using the Clifford-algebra relation satisfied by the operators of exterior multiplication and contraction and the compatibility of the Kähler form with the frame; the consequence for the Laplacians follows from the Kähler identities together with the definitions $\Delta_d = d d^* + d^*d$ and $\Delta_{\bar\partial} = \bar\partial\bar\partial^* + \bar\partial^*\bar\partial$.</p>
 <p><strong>Theorem (Hodge decomposition for a compact Kähler manifold).</strong> Let $M$ be a compact Kähler manifold of complex dimension $n$. Then the cohomology of $M$ with complex coefficients decomposes by type,</p>
 <p>$$
-H^k(M;\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}(M), \qquad H^{n,m}(M) = \overline{H^{m,n}(M)},
+\boxed{\;H^k(M;\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}(M), \qquad H^{n,m}(M) = \overline{H^{m,n}(M)}\;},
 $$</p>
 <p>with $H^{n,m}(M) \cong H^{n,m}_{\bar\partial}(M)$, so that $h^{n,m} = h^{m,n}$, and $H^{n,m} = 0$ unless $0 \leq n,m \leq n$. Consequently the Betti numbers satisfy $b_k = \sum_{n+m=k}h^{n,m}$, the odd Betti numbers $b_{2k+1}$ are even, and $b_{2k} \geq 1$ for $0 \leq k \leq n$.</p>
 <p><strong>Proof sketch.</strong> The analysis: the Hodge theorem for the Laplace operator on a compact manifold identifies de Rham cohomology with the space of harmonic forms, and the equality $\Delta_d = 2\Delta_{\bar\partial}$ of the Kähler identities identifies the harmonic forms with those harmonic for $\Delta_{\bar\partial}$, which are exactly the $\bar\partial$-harmonic representatives of the Dolbeault groups. This identification is the content of the elliptic theory of $\Delta_{\bar\partial}$, and its proof — existence of a parametrix, compactness of the resolvent, the finiteness of the cohomology of an elliptic complex — belongs to Part III, where the measure and the limit are available. The type decomposition follows from $\Delta_d = 2\Delta_{\bar\partial}$ and the fact that $\Delta_{\bar\partial}$ preserves bidegree; conjugation follows from the reality of the Laplace operator; $b_{2k}\geq1$ because $[\Omega]^k \neq 0$, its top power being a nonzero multiple of the volume.</p>
@@ -171,7 +171,7 @@ H^k(M;\mathbb{R}) = \bigoplus_{j\geq0} L^j\,P^{k-2j}(M), \qquad P^\bullet(M) = \
 $$</p>
 <p><strong>Theorem (hard Lefschetz).</strong> Let $M$ be a compact Kähler manifold of real dimension $2n$. Then for every $k \leq n$ the map</p>
 <p>$$
-L^{n-k} : H^k(M;\mathbb{R}) \longrightarrow H^{2n-k}(M;\mathbb{R})
+\boxed{\;L^{n-k} : H^k(M;\mathbb{R}) \longrightarrow H^{2n-k}(M;\mathbb{R})\;}
 $$</p>
 <p>is an isomorphism. Consequently the Betti numbers satisfy $b_k = b_{2n-k}$, and the Poincaré duality of $M$ is compatible with the Lefschetz decomposition.</p>
 <p><strong>Proof sketch.</strong> The $\mathrm{SL}_2$-representation theory of the previous theorem decomposes $H^\bullet$ into finite-dimensional irreducible summands, and the operator $L^{n-k}$ acts invertibly on the summands contributing to degree $k$: on a highest-weight module the powers of the raising operator are isomorphisms in the range where the degree does not exceed the middle dimension.</p>

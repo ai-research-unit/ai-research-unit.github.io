@@ -76,13 +76,13 @@
 <h2 id="the-sections-of-the-sheaf-of-operators">The Sections of the Sheaf of Operators</h2>
 <p><strong>Proposition (sections and their gluing).</strong> For every open $\Omega\subseteq X$ the sections of the sheaf of operators are the operators on the restriction,</p>
 <p>$$
-\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_\Omega),
+\boxed{\;\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_\Omega)\;},
 $$</p>
 <p>and an operator on $\mathcal{F}$ over $\Omega$ is the same thing as a compatible family of operators over the members of an open cover of $\Omega$: if $\Omega=\bigcup_iU_i$ and $T_i\in\operatorname{End}(\mathcal{F}|_{\Omega_i})$ satisfy $T_i|_{\Omega_i\cap \Omega_j}=T_j|_{\Omega_i\cap \Omega_j}$ for all $i,j$, then there is a unique $T\in\operatorname{End}(\mathcal{F}|_\Omega)$ restricting to $T_i$ on each $\Omega_i$.</p>
 <p><em>Proof.</em> The first identity and the gluing are the sheaf property of $\mathcal{E}nd(\mathcal{F})$ established in <em>Operators on a Sheaf</em>; they are restated here only to fix the reading of the sections as operators on the restriction.</p>
 <p><strong>Proposition (the bifunctor).</strong> The sheaf hom $\mathcal{H}om(-,-)$ is a bifunctor on sheaves of $\mathcal{O}_X$-modules, contravariant in the first variable and covariant in the second, so that a morphism $\varphi:\mathcal{F}\to\mathcal{G}$ induces $\mathcal{H}om(\varphi,\mathcal{G}):\mathcal{H}om(\mathcal{G},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$ and $\mathcal{H}om(\mathcal{F},\varphi):\mathcal{H}om(\mathcal{F},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$. For the operator sheaf this gives, for every isomorphism $\varphi:\mathcal{F}\to\mathcal{G}$, an isomorphism of sheaves of rings</p>
 <p>$$
-\mathcal{E}nd(\varphi):\mathcal{E}nd(\mathcal{F})\longrightarrow\mathcal{E}nd(\mathcal{G}),\qquad T\mapsto\varphi\,T\,\varphi^{-1},
+\boxed{\;\mathcal{E}nd(\varphi):\mathcal{E}nd(\mathcal{F})\longrightarrow\mathcal{E}nd(\mathcal{G}),\qquad T\mapsto\varphi\,T\,\varphi^{-1}\;},
 $$</p>
 <p>and $\mathcal{E}nd$ is a functor on the groupoid of sheaves and isomorphisms.</p>
 <p><em>Proof.</em> The bifunctoriality of $\mathcal{H}om$ is the functoriality of morphism sets, contravariant in the source and covariant in the target, sheafified. For an isomorphism the pair of variances composes to the conjugation displayed, which is a ring isomorphism with the displayed inverse $\mathcal{E}nd(\varphi^{-1})$.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p><em>Proof.</em> The stalk statement is the comparison theorem of <em>Operators on a Sheaf</em> with the finite-presentation hypothesis; the coherence of $\mathcal{E}nd(\mathcal{F})$ follows from the local presentation of $\mathcal{F}$ and the coherence of $\mathcal{O}_X$, since $\mathcal{E}nd$ is locally a cokernel of a map of finitely generated free sheaves.</p>
 <p><strong>Proposition (the support).</strong> The support of the operator sheaf is the support of the sheaf,</p>
 <p>$$
-\operatorname{Supp}(\mathcal{E}nd(\mathcal{F}))=\operatorname{Supp}(\mathcal{F}),
+\boxed{\;\operatorname{Supp}(\mathcal{E}nd(\mathcal{F}))=\operatorname{Supp}(\mathcal{F})\;},
 $$</p>
 <p>and over an open set where $\mathcal{F}$ vanishes the operator sheaf vanishes; over a point $x$ where the stalk $\mathcal{F}_x$ is a free module of rank $r$ over the local ring, the operator sheaf is locally free of rank $r^2$ near $x$.</p>
 <p><em>Proof.</em> If $\mathcal{F}$ vanishes on an open set then so does $\mathcal{E}nd(\mathcal{F})$, since the only operator on the zero sheaf is zero; conversely a nonzero operator has a nonzero value on some section, hence a nonzero germ at some point of the support. The local-freeness statement is the matrix model at $x$.</p>

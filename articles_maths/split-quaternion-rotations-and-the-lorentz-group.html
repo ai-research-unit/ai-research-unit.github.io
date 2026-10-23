@@ -84,7 +84,9 @@ $$</p>
 <p>Both are groups under multiplication, and $\mathrm{U}$ is a subgroup of $\mathrm{U}^{\pm}$.</p>
 <p><strong>Theorem (The Two Components).</strong> The group $\mathrm{U}$ is isomorphic to $\mathrm{SL}_2(\mathbb{R})$ and is connected; the group $\mathrm{U}^{\pm}$ has exactly two connected components,</p>
 <p>$$
-\mathrm{U} = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : \langle\tilde q\rangle_{\natural} = -1\} = \mathrm{SL}_2^{-}(\mathbb{R}),
+\boxed{\;
+\mathrm{U} = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : \langle\tilde q\rangle_{\natural} = -1\} = \mathrm{SL}_2^{-}(\mathbb{R})
+\;},
 $$</p>
 <p>and the two components are interchanged by multiplication by $\vec e_y$. The full group of units is</p>
 <p>$$
@@ -104,13 +106,17 @@ $$</p>
 $$</p>
 <p>whose kernel is the centre $\mathbb{R}^{\times}$ and whose image lies in $SO(2,1)$. On the norm-one group the restriction</p>
 <p>$$
+\boxed{\;
 \Theta : \mathrm{U} \cong \mathrm{SL}_2(\mathbb{R}) \longrightarrow \mathrm{SO}^{+}(2,1)
+\;}
 $$</p>
 <p>has kernel $\{\pm 1\}$.</p>
 <p><strong>Proof.</strong> <em>The maps land in $V$.</em> Conjugation by $\tilde u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{\tilde u\vec q\tilde u^{-1}} = \tilde u^{\natural}\,\vec q^{\natural}\,(\tilde u^{\natural})^{-1}$ and $\overline{\tilde u^{-1}} = (\tilde u^{\natural})^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (<em>Split-Quaternion Algebra</em>, §<em>The Two Eigenspaces</em>), so it is mapped to itself. <em>The form is preserved.</em> $\langle \tilde u\vec q\tilde u^{-1}\rangle_{\natural} = \langle\tilde u\rangle_{\natural}\langle\vec q\rangle_{\natural}\langle\tilde u\rangle_{\natural}^{-1} = \langle\vec q\rangle_{\natural}$ by multiplicativity, since $\langle\cdot\rangle_{\natural}$ is real and nonzero on a unit. Hence $\Theta(\tilde u) \in O(V,N)$. <em>Kernel.</em> If $\Theta(\tilde u) = \mathrm{id}$ then $\tilde u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $\tilde u$ is central, so $\tilde u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. <em>Determinant.</em> The map $\det\circ\,\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is connected, so $\det\Theta \equiv 1$ there. On the second component, the computation of (<em>Split-Quaternion Algebra</em>, §<em>The Multiplication Table</em>) gives $\vec e_y \vec e_x \vec e_y = -\vec e_x$, $\vec e_y \vec e_y \vec e_y = \vec e_y$, $\vec e_y \vec e_z \vec e_y = -\vec e_z$, so $\Theta(\vec e_y) = \operatorname{diag}(-1,1,-1)$ in the basis $\vec e_x,\vec e_y,\vec e_z$ and $\det\Theta(\vec e_y) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. <em>The restricted kernel.</em> The kernel on $\mathrm{U}$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$.</p>
 <p><strong>Corollary (The Image of the Unit Group).</strong> The image of the full unit group is</p>
 <p>$$
-\Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R}),
+\boxed{\;
+\Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R})
+\;},
 $$</p>
 <p>and the image of the norm-one group is $\Theta(\mathrm{U}) = SO^{+}(2,1)$, the identity component.</p>
 <p><strong>Proof.</strong> The image of $\mathbb{H}_{\mathrm{s}}^{\times}$ is a subgroup of $SO(2,1)$ containing the image of the connected group $\mathrm{U}$, which is connected and contains the identity, so the image contains the identity component; the domain has exactly two components and the image lies in $SO(2,1)$, which has two components, so the image is all of $SO(2,1)$. The second statement is proved below, where $\Theta(\mathrm{U})$ is identified with $\mathrm{SO}^{+}(2,1)$ through the double cover.</p>

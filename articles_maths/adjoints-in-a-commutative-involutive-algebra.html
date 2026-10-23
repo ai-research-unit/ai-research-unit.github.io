@@ -77,13 +77,13 @@
 <p><strong>Definition.</strong> A <strong>$\sigma$-sesquilinear pairing</strong> on $A$ is an $R$-bilinear map $B : A\times A\to R$ with $B(ax,y) = B(x,\sigma(a)y)$ for all $a, x, y$; it is <strong>reflexive</strong> when $B(x,y) = 0 \iff B(y,x) = 0$, and <strong>non-degenerate</strong> when $B(x,y) = 0$ for all $y$ forces $x = 0$ and dually. The pairing is the algebra-level analogue of the pairing of <em>The Adjoint of an Endomorphism</em>, and it is not a form in the sense of Part II: no symmetry and no sign is assumed, only the reflexivity needed for the adjoint.</p>
 <p><strong>Theorem (existence and uniqueness).</strong> For every $F \in \operatorname{End}_R(A)$ there is a unique $F^{\dagger}\in\operatorname{End}_R(A)$ with</p>
 <p>$$
-B(Fx,y) = B(x,F^{\dagger}y) \qquad \text{for all } x, y \in A .
+\boxed{\;B(Fx,y) = B(x,F^{\dagger}y) \qquad \text{for all } x, y \in A\;} .
 $$</p>
 <p><em>Proof.</em> The map $y\mapsto B(F\,\cdot\,,y)$ is $R$-linear, so it is an element of the dual of $A$; non-degeneracy identifies the dual with $A$ through $z\mapsto B(\,\cdot\,,z)$, so there is a unique $z$ with $B(Fx,y) = B(x,z)$ for all $x$; put $F^{\dagger}y = z$. The assignment is additive and $R$-linear in $F$ and in $y$ because $B$ is bilinear.</p>
 <h3 id="the-adjoint-involution">The Adjoint Involution</h3>
 <p><strong>Theorem.</strong> The map ${}^{\dagger} : \operatorname{End}_R(A)\to\operatorname{End}_R(A)$ is additive, $R$-linear, of order two, and anti-multiplicative:</p>
 <p>$$
-(F+G)^{\dagger} = F^{\dagger}+G^{\dagger}, \qquad (\lambda F)^{\dagger} = \lambda F^{\dagger}, \qquad (FG)^{\dagger} = G^{\dagger}F^{\dagger}, \qquad (F^\dagger)^\dagger = F .
+\boxed{\;(F+G)^{\dagger} = F^{\dagger}+G^{\dagger}, \qquad (\lambda F)^{\dagger} = \lambda F^{\dagger}, \qquad (FG)^{\dagger} = G^{\dagger}F^{\dagger}, \qquad (F^\dagger)^\dagger = F\;} .
 $$</p>
 <p>Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{End}_R(A)$, in the sense of <em>Involutive Algebras</em>.</p>
 <p><em>Proof.</em> Additivity and $R$-linearity are the bilinearity of $B$; the order two is the reflexivity: $B(Fx,y) = B(x,F^{\dagger}y) = B((F^\dagger)^\dagger x,y)$ gives $(F^\dagger)^\dagger = F$ by non-degeneracy; the anti-multiplicativity is $B(FGx,y) = B(Gx,F^{\dagger}y) = B(x,G^{\dagger}F^{\dagger}y)$.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h3 id="the-adjoint-of-a-multiplication">The Adjoint of a Multiplication</h3>
 <p><strong>Theorem.</strong> For every $a \in A$ the adjoint of the multiplication $L_a$ is the multiplication by the image of $a$ under the involution:
 $$
-L_a^{\dagger} = L_{\sigma(a)} .
+\boxed{\;L_a^{\dagger} = L_{\sigma(a)}\;} .
 $$</p>
 <p><em>Proof.</em> $B(L_ax,y) = B(ax,y) = B(x,\sigma(a)y) = B(x,L_{\sigma(a)}y)$ for all $x,y$, so $L_{\sigma(a)}$ satisfies the defining relation of the adjoint, and the adjoint is unique.</p>
 <p><strong>Corollary (consistency with the induced involution).</strong> The restriction of the adjoint involution ${}^{\dagger}$ to the multiplication operators is the induced involution of <em>Involutions of the Multiplication Operators</em>: $L_a^{\dagger} = L_a^{*}$. Hence the fixed part of the multiplication algebra is the multiplication algebra of the fixed subalgebra, and the two constructions of the involution of $\operatorname{Mult}(A)$ coincide.</p>

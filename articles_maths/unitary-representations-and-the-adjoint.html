@@ -78,7 +78,7 @@
 <p><strong>Proof.</strong> For a homomorphism, (i) says $\pi(x)$ is an isometry, (ii) says it is a co-isometry; in a Hilbert space an isometry of the whole space is onto, so (i) implies (ii); (iii) is (i) by the polarisation identity, and (iv) is (iii) expanded. Then $\pi(x)^{-1} = \pi(x)^*$ and $\pi(x^{-1}) = \pi(x)^{-1}$ by the homomorphism property, and a unitary operator has unitary adjoint.</p>
 <p><strong>Theorem (the integrated form is a <code>*</code>-representation).</strong> For every continuous unitary representation $\pi$ and every $f\in L^1(G)$,</p>
 <p>$$
-\pi(f)^* = \pi(f^*), \qquad \pi(f*g) = \pi(f)\pi(g), \qquad \|\pi(f)\|\leq\|f\|_1 ,
+\boxed{\;\pi(f)^* = \pi(f^*), \qquad \pi(f*g) = \pi(f)\pi(g), \qquad \|\pi(f)\|\leq\|f\|_1\;} ,
 $$</p>
 <p>with $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, for every locally compact $G$.</p>
 <p><strong>Proof.</strong> The adjoint of the operator-valued integral is the integral of the adjoints, $\pi(f)^* = \int\overline{f(x)}\pi(x)^*dx = \int\overline{f(x)}\pi(x^{-1})dx$, and the substitution $x = y^{-1}$ with the inversion identity $dx = \Delta(y)^{-1}dy$ turns this into $\int\overline{f(y^{-1})}\Delta(y)^{-1}\pi(y)dy = \pi(f^*)$. The multiplicativity is the convolution theorem in integrated form, and the norm bound is $\|\pi(f)\|\leq\int|f(x)|\|\pi(x)\|dx\leq\|f\|_1$.</p>
@@ -87,7 +87,7 @@ $$</p>
 <h2 id="invariants-and-the-averaging-projection">Invariants and the Averaging Projection</h2>
 <p><strong>Definition.</strong> The <strong>projection onto the invariants</strong> of $\pi$ is the strong limit</p>
 <p>$$
-P = \text{strong-}\!\lim_{\alpha}\pi(u_\alpha), \qquad \mathcal{H}^G = P\mathcal{H},
+\boxed{\;P = \text{strong-}\!\lim_{\alpha}\pi(u_\alpha), \qquad \mathcal{H}^G = P\mathcal{H}\;},
 $$</p>
 <p>where $u_\alpha$ is a normalised approximate identity of $L^1(G)$; equivalently $P\xi$ is the unique invariant element closest to $\xi$.</p>
 <p><strong>Theorem (the averaging identities).</strong> The projection $P$ onto $\mathcal{H}^G$ is the strong limit of $\pi(u_\alpha)$ over a normalised approximate identity, is self-adjoint and idempotent, and commutes with every $\pi(x)$ in the strong sense $P\pi(x) = \pi(x)P = P$ for $x\in G$. If $G$ is compact with $\int_G dx = 1$ then $P = \int_G\pi(x)\,dx$, and a vector $\xi$ is invariant if and only if $\pi(f)\xi = \bigl(\int_G f\bigr)\xi$ for every $f\in L^1(G)$.</p>

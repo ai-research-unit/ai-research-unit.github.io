@@ -171,7 +171,7 @@ $$</p>
 <h3 id="syntax-and-reduction">Syntax and Reduction</h3>
 <p><strong>Definition.</strong> The <strong>terms</strong> of the lambda calculus are the variables $x, y, \ldots$, the <strong>applications</strong> $MN$ and the <strong>abstractions</strong> $\lambda x.\,M$, together with the constant for the identity and function formation. <strong>$\alpha$-conversion</strong> renames bound variables, and <strong>substitution</strong> $M[x := N]$ replaces free occurrences of $x$ by $N$, renaming bound variables to avoid capture. The <strong>$\beta$-reduction</strong> is</p>
 <p>$$
-(\lambda x.\,M)\,N \to_\beta M[x := N],
+\boxed{\;(\lambda x.\,M)\,N \to_\beta M[x := N]\;},
 $$</p>
 <p>and <strong>$\eta$-reduction</strong> is $\lambda x.\,Mx \to_\eta M$ when $x$ is not free in $M$. A term is in <strong>$\beta$-normal form</strong> if it contains no $\beta$-redex $(\lambda x.\,M)N$.</p>
 <p><strong>Theorem (Church–Rosser).</strong> The relation $\to_\beta$ is confluent: if $M \to_\beta^* N_1$ and $M \to_\beta^* N_2$ then there is $P$ with $N_1 \to_\beta^* P$ and $N_2 \to_\beta^* P$. Consequently a term has at most one $\beta$-normal form.</p>
@@ -248,9 +248,9 @@ $$</p>
 </table></div>
 <p><strong>Theorem (Curry–Howard, for implication).</strong> The derivations of the implicational fragment of intuitionistic propositional logic from assumptions $\varphi_1,\ldots,\varphi_n$ correspond exactly to the terms of the simply typed lambda calculus in context $x_1 : \varphi_1, \ldots, x_n : \varphi_n$, with</p>
 <p>$$
-\frac{\Gamma, x : \varphi \vdash M : \psi}{\Gamma \vdash \lambda x.\,M : \varphi \to \psi} \to I
+\boxed{\;\frac{\Gamma, x : \varphi \vdash M : \psi}{\Gamma \vdash \lambda x.\,M : \varphi \to \psi} \to I
 \qquad
-\frac{\Gamma \vdash M : \varphi \to \psi \qquad \Gamma \vdash N : \varphi}{\Gamma \vdash M\,N : \psi} \to E,
+\frac{\Gamma \vdash M : \varphi \to \psi \qquad \Gamma \vdash N : \varphi}{\Gamma \vdash M\,N : \psi} \to E\;},
 $$</p>
 <p>and $\beta$-reduction of terms corresponds to the reduction of detours in the derivation, while $\eta$-conversion corresponds to the two-way equivalence of a detour with the derivation obtained by removing it.</p>
 <p><strong>Proof.</strong> Structural induction on derivations and on terms: each rule of NJ corresponds to a typing rule, and each typing rule to a rule of NJ, with the variables of the context corresponding to undischarged assumptions. The reduction of a detour $(\to I)$ followed by $(\to E)$ is exactly the substitution $(\lambda x.M)N \to_\beta M[x:=N]$.</p>

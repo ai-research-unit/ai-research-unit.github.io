@@ -85,7 +85,7 @@ $$</p>
 <p><strong>Definition.</strong> A scalar $\lambda\in k$ is an <strong>eigenvalue</strong> of $x$ when $x-\lambda1$ is not invertible in the unital algebra $k[x]$. The <strong>spectrum</strong> of $x$ is the set $\sigma(x)$ of its eigenvalues.</p>
 <p><strong>Proposition.</strong> Let $m_x$ be the monic generator of the ideal $\{p\in k[t]:p(x)=0\}$, the <strong>minimal polynomial</strong> of $x$. Then</p>
 <p>$$
-\lambda\in\sigma(x) \quad\Longleftrightarrow\quad m_x(\lambda)=0 .
+\boxed{\;\lambda\in\sigma(x) \quad\Longleftrightarrow\quad m_x(\lambda)=0\;} .
 $$</p>
 <p><em>Proof.</em> The evaluation map $k[t]\to k[x]$, $p\mapsto p(x)$, has kernel $(m_x)$ and induces an isomorphism $k[x]\cong k[t]/(m_x)$. Under it the element $x-\lambda1$ corresponds to the class of $t-\lambda$. That class is invertible in $k[t]/(m_x)$ exactly when $t-\lambda$ is coprime to $m_x$, that is, exactly when $m_x(\lambda)\neq0$. Hence non-invertibility is the vanishing of $m_x$ at $\lambda$.</p>
 <p><strong>Corollary.</strong> The spectrum is finite, of cardinality at most $\deg m_x$, and it is nonempty when $k$ is algebraically closed. It may be empty over a field that is not algebraically closed.</p>
@@ -137,7 +137,7 @@ $$</p>
 <h3 id="the-spectral-theorem-in-a-formally-real-algebra">The Spectral Theorem in a Formally Real Algebra</h3>
 <p><strong>Theorem.</strong> Let $J$ be a finite-dimensional formally real Jordan algebra over $\mathbb{R}$. Then every $x\in J$ has a spectral resolution</p>
 <p>$$
-x=\sum_{i=1}^{r}\lambda_i e_i
+\boxed{\;x=\sum_{i=1}^{r}\lambda_i e_i\;}
 $$</p>
 <p>with $\lambda_i\in\mathbb{R}$ and $e_i$ pairwise orthogonal idempotents. The eigenvalues are the roots of $m_x$, they are real and simple, and the resolution is unique up to the order of the terms.</p>
 <p><em>Proof.</em> By §<em>Formal Reality Forces Real Squarefree Spectrum</em>, $m_x$ has only real roots and is squarefree. The existence theorem applies. The uniqueness is its uniqueness clause.</p>
@@ -145,7 +145,7 @@ $$</p>
 <p><em>Proof.</em> If $x=y^2$ and $y=\sum_j\mu_j f_j$ is the spectral resolution of $y$, then $x=\sum_j\mu_j^2 f_j$, and the uniqueness of the resolution gives the eigenvalues $\mu_j^2\geq0$ (after collecting the equal values). Conversely, if every $\lambda_i\geq0$, then $y=\sum_i\sqrt{\lambda_i}e_i$ satisfies $y^2=\sum_i\lambda_i e_i=x$.</p>
 <p><strong>Corollary (spectral mapping).</strong> For every polynomial $p\in\mathbb{R}[t]$,</p>
 <p>$$
-p(x)=\sum_{i=1}^{r}p(\lambda_i)e_i .
+\boxed{\;p(x)=\sum_{i=1}^{r}p(\lambda_i)e_i\;} .
 $$</p>
 <p>In particular $x^n=\sum_i\lambda_i^n e_i$ for $n\geq0$, with the convention $\lambda_i^0=1$ and $\sum_i e_i=1$. The spectral idempotent $e_i$ is the value at $x$ of the indicator polynomial that is $1$ at $\lambda_i$ and $0$ at the other eigenvalues.</p>
 <p><em>Proof.</em> The polynomial acts on each component $e_i$ by its value at $\lambda_i$; summing gives the formula. The indicator polynomial is the Lagrange polynomial of the existence theorem.</p>

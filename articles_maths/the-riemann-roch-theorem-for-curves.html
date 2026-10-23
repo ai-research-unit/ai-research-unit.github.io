@@ -108,7 +108,7 @@ $$</p>
 <h3 id="statement-and-the-reduction">Statement and the Reduction</h3>
 <p><strong>Theorem (Riemann–Roch).</strong> Let $C$ be a nonsingular projective curve of genus $g$ over a field $K$ and $D$ a divisor on $C$. Then</p>
 <p>$$
-\ell(D) - \ell(K_C-D) = \deg D + 1 - g .
+\boxed{\;\ell(D) - \ell(K_C-D) = \deg D + 1 - g\;} .
 $$</p>
 <p><strong>Theorem (Riemann's inequality).</strong> Under the same hypotheses, $\ell(D) \geq \deg D + 1 - g$; equivalently $\deg D + 1 - \ell(D) \leq g$ for every divisor $D$, so that $g = \max_D\,(\deg D + 1 - \ell(D))$, the maximum being attained at every divisor of degree at least $2g-1$, where the index of speciality vanishes.</p>
 <p><strong>Proof sketch of the theorem.</strong> The argument proceeds in three steps.</p>
@@ -131,13 +131,13 @@ $$</p>
 <h3 id="riemannhurwitz">Riemann–Hurwitz</h3>
 <p><strong>Theorem (Riemann–Hurwitz).</strong> Let $\phi : C \to C'$ be a finite separable morphism of nonsingular projective curves over $K$ of degree $n$, with constant fields $K_C$, $K_{C'}$ and $K'' = C'_{K_{C}}$, so that $[C:K''C'] = n/[K_C:K_{C'}] =: n_0$. Then</p>
 <p>$$
-2g_C - 2 = n_0(2g_{C'}-2) + \deg \mathrm{D}_{C/C'},
+\boxed{\;2g_C - 2 = n_0(2g_{C'}-2) + \deg \mathrm{D}_{C/C'}\;},
 $$</p>
 <p>where $\mathrm{D}_{C/C'}$ is the different of the extension of function fields, of degree $\sum_{P \in C}(d(P)-1)[K(P):K]$ with $d(P) \geq e(P)-1$ the different exponent at $P$ and $e(P)$ the ramification index.</p>
 <p>This is the Riemann–Hurwitz formula of <em>Global Fields</em> in the corrected form stated there, where the factor $n_0$ is explained by the constant field extension; the uncorrected form with the full degree $n$ is false for constant field extensions, as the example $C = \mathbb{P}^1_{\mathbb{F}_{q^2}}$, $C' = \mathbb{P}^1_{\mathbb{F}_q}$ shows, where both genera are $0$ and the different is trivial.</p>
 <p><strong>Corollary (the Hurwitz bound).</strong> Let $C$ be a curve of genus $g \geq 2$ over a field of characteristic $0$. Then the group $\operatorname{Aut}(C)$ of automorphisms of $C$ over $K$ is finite and</p>
 <p>$$
-\lvert \operatorname{Aut}(C)\rvert \leq 84(g-1).
+\boxed{\;\lvert \operatorname{Aut}(C)\rvert \leq 84(g-1)\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> An automorphism of finite order $n > 1$ with quotient $C/\langle\sigma\rangle$ of genus $g_0$ and $r$ branch points gives, by Riemann–Hurwitz, $2g-2 \geq n(2g_0-2)+r(n-1) \geq n(2g_0-2)+n-1$; combining with Riemann–Roch for the quotient map yields the numerical bound $n \leq 84(g-1)$ for a single automorphism, and the full group is bounded by the same argument applied to the whole group acting with its orbit decomposition.</p>
 <p><strong>Example.</strong> The bound is attained for infinitely many genera; for $g = 3$ it gives $84\cdot2 = 168$, and the Klein quartic $x^3y + y^3z + z^3x = 0$ has $g = 3$ and exactly $168$ automorphisms, so the bound is attained there. In characteristic $p > 0$ the bound fails, since a curve such as $y^p - y = x$ has many automorphisms, and the correct statement is the bound $n \leq 2p/(p-2)\cdot(2g-2)$ for the $p$-part, with wild ramification accounting for the difference.</p>

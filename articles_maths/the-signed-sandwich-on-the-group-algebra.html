@@ -100,7 +100,7 @@ $$</p>
 <p><strong>Definition.</strong> For $a, b \in \mathcal{A}$ the <strong>unsigned sandwich</strong> is $T_{a,b} = L_aR_b$ and the <strong>signed sandwich</strong> is $S_{a,b} = L_a\mathrm{A}R_b$; the sets of the two families are $T(\mathcal{A},\mathcal{A})$ and $\Sigma^\alpha(\mathcal{A},\mathcal{A})$.</p>
 <p><strong>Proposition (decomposition and bound).</strong> For all $a, b \in \mathcal{A}$,</p>
 <p>$$
-S_{a,b} = T_{a,b}\,\mathrm{A} = L_a\mathrm{A}R_b = L_a R_{\alpha(b)}\mathrm{A}, \qquad \mathrm{A} = S_{1,1} \ \text{(unital case)},
+\boxed{\;S_{a,b} = T_{a,b}\,\mathrm{A} = L_a\mathrm{A}R_b = L_a R_{\alpha(b)}\mathrm{A}, \qquad \mathrm{A} = S_{1,1} \ \text{(unital case)}\;},
 $$</p>
 <p>and $S_{a,b}$ is bounded with</p>
 <p>$$
@@ -110,7 +110,7 @@ $$</p>
 <p><strong>Proof.</strong> $L_a\mathrm{A}R_b(f) = L_a\mathrm{A}(f*b) = a*\alpha(f*b) = a*\alpha(f)*\alpha(b) = (L_aR_{\alpha(b)}\mathrm{A})(f)$, which gives both forms; the norm is submultiplicativity with $\|L_a\|\leq\|a\|_1$, $\|R_{\alpha(b)}\|\leq\|\alpha\|\|b\|_1$ and $\|\mathrm{A}\| = \|\alpha\|$; bilinearity is the distributivity of convolution. In the unital case $S_{1,1} = \mathrm{A}$.</p>
 <p><strong>Proposition (the multiplication table).</strong> For all $a,b,c,d \in \mathcal{A}$,</p>
 <p>$$
-S_{a,b}T_{c,d} = S_{a*\alpha(c),\,\alpha(d)*b}, \qquad T_{a,b}S_{c,d} = S_{a*c,\,d*b}, \qquad S_{a,b}S_{c,d} = T_{a*\alpha(c),\,\alpha(d)*b} .
+\boxed{\;S_{a,b}T_{c,d} = S_{a*\alpha(c),\,\alpha(d)*b}, \qquad T_{a,b}S_{c,d} = S_{a*c,\,d*b}, \qquad S_{a,b}S_{c,d} = T_{a*\alpha(c),\,\alpha(d)*b}\;} .
 $$</p>
 <p>Hence a signed sandwich followed or preceded by an unsigned one is signed, and the product of two signed sandwiches is unsigned; the signed sandwiches are closed under composition exactly when $\alpha = \mathrm{id}$.</p>
 <p><strong>Proof.</strong> Use $S_{a,b} = T_{a,b}\mathrm{A}$, the unsigned laws $T_{a,b}T_{c,d} = T_{a*c,d*b}$ and the intertwining $\mathrm{A}T_{c,d} = T_{\alpha(c),\alpha(d)}\mathrm{A}$: for the first, $S_{a,b}T_{c,d} = T_{a,b}\mathrm{A}T_{c,d} = T_{a,b}T_{\alpha(c),\alpha(d)}\mathrm{A} = T_{a*\alpha(c),\alpha(d)*b}\mathrm{A} = S_{a*\alpha(c),\alpha(d)*b}$; the second is $T_{a,b}T_{c,d}\mathrm{A}$; the third is $T_{a,b}\mathrm{A}T_{c,d}\mathrm{A} = T_{a*\alpha(c),\alpha(d)*b}\mathrm{A}^2 = T_{a*\alpha(c),\alpha(d)*b}$. When $\alpha = \mathrm{id}$ the two families coincide, and conversely $S_{a,b}S_{c,d}$ is signed for all $a,b,c,d$ only if $\alpha = \mathrm{id}$, since $S_{a,b}S_{c,d} = T_{a*\alpha(c),\alpha(d)*b}$ must be signed for every choice.</p>
@@ -148,7 +148,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the square and the involution condition).</strong> For every unit $u$ the reflection is bounded, invertible and an algebra automorphism of $\mathcal{A}$, and</p>
 <p>$$
-\rho_u^2 = c_{u*\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)} ,
+\boxed{\;\rho_u^2 = c_{u*\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)}\;} ,
 $$</p>
 <p>with $c_t(f) = t*f*t^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector; its fixed set is the closed subalgebra $\{f : u*\alpha(f) = f*u\}$, and its norm satisfies $\|\rho_u\|\leq\|u\|_1\|u^{-1}\|_1\|\alpha\|$.</p>
 <p><strong>Proof.</strong> $\rho_u(\rho_u(f)) = u*\alpha(u*\alpha(f)*u^{-1})*u^{-1} = (u*\alpha(u))*f*(u*\alpha(u))^{-1} = c_{u*\alpha(u)}(f)$; an inner automorphism is the identity exactly when its element is central, so $\rho_u^2 = \mathrm{id}$ exactly for a reflector. The composite description is $\rho_u = c_u\alpha$ and $\alpha c_{\alpha(u)}$ by $\alpha c_t = c_{\alpha(t)}\alpha$. The fixed set is the solution set of the continuous equation $u*\alpha(f) = f*u$, hence the kernel of a continuous map and closed; the norm is submultiplicativity.</p>

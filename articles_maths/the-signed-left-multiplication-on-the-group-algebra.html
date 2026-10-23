@@ -81,7 +81,7 @@ $$</p>
 <p><strong>Definition.</strong> For $a \in \mathcal{A}$ the <strong>signed left multiplication</strong> is the operator $\Lambda_a = L_a\mathrm{A}$ on $\mathcal{A}$.</p>
 <p><strong>Theorem (boundedness and the norm).</strong> $\Lambda_a$ is a bounded linear operator with</p>
 <p>$$
-\|\Lambda_a\| \leq \|a\|_1\,\|\alpha\| ,
+\boxed{\;\|\Lambda_a\| \leq \|a\|_1\,\|\alpha\|\;} ,
 $$</p>
 <p>and $\|\Lambda_a\| = \|a\|_1$ when $\alpha$ is isometric, in particular for the sign character and for a group automorphism of a unimodular group. The map $a\mapsto\Lambda_a$ is linear and Lipschitz, $\|\Lambda_a - \Lambda_{a'}\|\leq\|a-a'\|_1\|\alpha\|$.</p>
 <p><strong>Proof.</strong> $\Lambda_a$ is the composite of the bounded operators $L_a$ and $\mathrm{A}$, so it is bounded with norm at most the product, and $\|L_a\| = \|a\|_1$; the isometric case is $\|\mathrm{A}\| = 1$. The Lipschitz statement is linearity together with the bound.</p>
@@ -91,7 +91,7 @@ $$</p>
 <h2 id="composition-and-the-generated-family">Composition and the Generated Family</h2>
 <p><strong>Proposition (the composition laws).</strong> For all $a, b \in \mathcal{A}$,</p>
 <p>$$
-\Lambda_a\,\Lambda_b = L_{a*\alpha(b)}, \qquad L_a\,\Lambda_b = \Lambda_{a*b}, \qquad \Lambda_a\,L_b = \Lambda_{a*\alpha(b)} .
+\boxed{\;\Lambda_a\,\Lambda_b = L_{a*\alpha(b)}, \qquad L_a\,\Lambda_b = \Lambda_{a*b}, \qquad \Lambda_a\,L_b = \Lambda_{a*\alpha(b)}\;} .
 $$</p>
 <p>Hence a product of two signed left multiplications is an unsigned left convolution, a product of an unsigned and a signed left multiplication is signed, and the sign of a product is the product of the signs.</p>
 <p><strong>Proof.</strong> $\Lambda_a\Lambda_b(f) = a*\alpha(b*\alpha(f)) = a*\alpha(b)*\alpha^2(f) = a*\alpha(b)*f = L_{a*\alpha(b)}(f)$; the second and third are the same computation with the appropriate factor unsigned, using $\alpha(f*b) = \alpha(f)*\alpha(b)$.</p>
@@ -127,7 +127,7 @@ $$</p>
 <h2 id="invertibility-and-the-square">Invertibility and the Square</h2>
 <p><strong>Theorem (invertibility).</strong> The signed left multiplication $\Lambda_a$ is invertible exactly when $a$ is a unit, and then</p>
 <p>$$
-\Lambda_a^{-1} = \mathrm{A}\,L_{a^{-1}} = \Lambda_{\alpha(a)^{-1}} ,
+\boxed{\;\Lambda_a^{-1} = \mathrm{A}\,L_{a^{-1}} = \Lambda_{\alpha(a)^{-1}}\;} ,
 $$</p>
 <p>that is $\Lambda_a^{-1}(g) = \alpha(a^{-1}*g) = \alpha(a)^{-1}*\alpha(g)$; the inverse of a signed left multiplication is again a signed left multiplication, and the invertible signed left multiplications form a coset of the group of invertible left convolutions.</p>
 <p><strong>Proof.</strong> $\Lambda_a = L_a\mathrm{A}$ is invertible exactly when $L_a$ is, that is exactly when $a$ is a unit, and then $\Lambda_a^{-1} = \mathrm{A}^{-1}L_{a^{-1}} = \mathrm{A}L_{a^{-1}}$. For the explicit form, $\Lambda_a^{-1}(g) = \alpha(a^{-1}*g) = \alpha(a)^{-1}*\alpha(g) = \Lambda_{\alpha(a)^{-1}}(g)$, using that $\alpha$ is multiplicative and $\alpha(a^{-1}) = \alpha(a)^{-1}$.</p>

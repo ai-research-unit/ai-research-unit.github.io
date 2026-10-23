@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-differential-of-the-exponential">The Differential of the Exponential</h3>
 <p><strong>Theorem (the differential in the left trivialisation).</strong> Identify the tangent space $T_X\mathrm{G}$ with $\mathrm{G}$ by the left translation $dL_{\exp X}$, so that $d\exp_X$ becomes a linear operator on $\mathrm{G}$. Then</p>
 <p>$$
-d\exp_X = \frac{1 - \exp(-\operatorname{ad}_X)}{\operatorname{ad}_X} = \sum_{k \geq 0}\frac{(-1)^k}{(k+1)!}\,\operatorname{ad}_X^k ,
+\boxed{\;d\exp_X = \frac{1 - \exp(-\operatorname{ad}_X)}{\operatorname{ad}_X} = \sum_{k \geq 0}\frac{(-1)^k}{(k+1)!}\,\operatorname{ad}_X^k\;} ,
 $$</p>
 <p>the series being finite because $\operatorname{ad}_X$ is nilpotent on a finite-dimensional Lie algebra at every $X$ if $\mathrm{G}$ is nilpotent and being convergent in every case for the endomorphism algebra.</p>
 <p><em>Proof.</em> Let $Y \in \mathrm{G}$ and consider the curve $s \mapsto \exp(X + sY)$. Writing the derivative in the right trivialisation and using the left-invariant field equation $d\exp_{X}(Y) = dL_{\exp X}\bigl(\frac{1-\exp(-\operatorname{ad}_X)}{\operatorname{ad}_X}Y\bigr)$, one solves the differential equation $\frac{d}{ds}\big|_{s=0}\exp(X+sY) = dL_{\exp X}\,u(X)Y$ with $u$ the indicated series; the standard computation is that of the left and right trivialisations of the Maurer--Cartan form, and the displayed series is the solution.</p>
@@ -112,7 +112,7 @@ $$</p>
 <h3 id="the-series">The Series</h3>
 <p><strong>Theorem (Campbell--Baker--Hausdorff).</strong> In the neighbourhood of the origin in which the logarithm is defined,</p>
 <p>$$
-\log(\exp X\exp Y) = X + Y + \tfrac12[X,Y] + \tfrac1{12}\bigl([X,[X,Y]] + [Y,[Y,X]]\bigr) + \cdots ,
+\boxed{\;\log(\exp X\exp Y) = X + Y + \tfrac12[X,Y] + \tfrac1{12}\bigl([X,[X,Y]] + [Y,[Y,X]]\bigr) + \cdots\;} ,
 $$</p>
 <p>a series in the free Lie algebra on two generators whose terms of degree $n$ are polynomials of degree $n$ in $X$ and $Y$; the series is the exponential of the Lie series $\log(\exp(X)\exp(Y))$, and its coefficients are the Bernoulli numbers.</p>
 <p><em>Proof.</em> The series is obtained by taking the logarithm of the product of the two exponentials in the free associative algebra on two generators and collecting the result in the free Lie algebra; the bracket operation enters through the associative product, and the integration of the differential equation $\frac{\partial}{\partial t}Z(t) = \frac{\operatorname{ad}_{Z(t)}}{1-\exp(-\operatorname{ad}_{Z(t)})}\left(dZ/dt\right)(t)$ with $Z(t) = \log(\exp(tX)\exp(Y))$ produces the displayed low order terms. The convergence and the closed form are those of the free Lie algebra, developed in <em>Universal Enveloping Algebras</em>.</p>
@@ -121,7 +121,7 @@ $$</p>
 <h3 id="the-adjoint-representation">The Adjoint Representation</h3>
 <p><strong>Theorem.</strong> For all $X \in \mathrm{G}$,</p>
 <p>$$
-\operatorname{Ad}_{\exp X} = \exp(\operatorname{ad}_X) = \sum_{k\geq0}\frac{1}{k!}\operatorname{ad}_X^k ,
+\boxed{\;\operatorname{Ad}_{\exp X} = \exp(\operatorname{ad}_X) = \sum_{k\geq0}\frac{1}{k!}\operatorname{ad}_X^k\;} ,
 $$</p>
 <p>as an identity of automorphisms of $\mathrm{G}$, and the derivative at the origin of $\operatorname{Ad} : G \to \operatorname{Aut}(\mathrm{G})$ is $\operatorname{ad}$.</p>
 <p><em>Proof.</em> The naturality of the exponential applied to the inner automorphism $\Psi_{\exp X}$ gives $\exp(\operatorname{Ad}_{\exp X}Y) = \exp X\,\exp Y\,\exp(-X)$, whose differential at $Y = 0$ is $\operatorname{Ad}_{\exp X}$; expanding the right side by the product rule and the series of the group commutator gives $\exp(\operatorname{ad}_X)Y$, and the derivative statement is the first-order term.</p>

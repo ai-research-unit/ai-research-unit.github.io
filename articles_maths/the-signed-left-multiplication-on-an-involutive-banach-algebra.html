@@ -81,7 +81,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>signed left multiplication</strong> with parameter $a \in A$ is the operator $\ell_a(x) = a\alpha(x)$; the <strong>signed right multiplication</strong> is $\varrho_b(x) = \alpha(x)b$. The unsigned left and right multiplications are $L_a$ and $R_b$.</p>
 <p><strong>Proposition (factorisation, boundedness and the coset).</strong> For all $a,b \in A$,</p>
 <p>$$
-\ell_a = L_a\circ\alpha = S_{a,1} , \qquad \varrho_b = \alpha\circ R_b = S_{1,b} ,
+\boxed{\;\ell_a = L_a\circ\alpha = S_{a,1} , \qquad \varrho_b = \alpha\circ R_b = S_{1,b}\;} ,
 $$</p>
 <p>and $\ell_a$, $\varrho_b$ are bounded linear operators with</p>
 <p>$$
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proof.</strong> $\ell_a\ell_b(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)x = L_{a\alpha(b)}(x)$; $\ell_a\varrho_b(x) = a\alpha(\alpha(x)b) = a\,x\,\alpha(b) = T_{a,\alpha(b)}(x)$; the other two are the mirror images. Composition of two signed operators carries no twist on the argument, so the result is unsigned; when $\alpha = \mathrm{id}$ the signed and the unsigned families coincide.</p>
 <p><strong>Theorem (the generated group).</strong> The signed left multiplications with unit parameter are invertible with</p>
 <p>$$
-\ell_u^{-1} = \ell_{\alpha(u)^{-1}} , \qquad \varrho_v^{-1} = \varrho_{\alpha(v)^{-1}} ,
+\boxed{\;\ell_u^{-1} = \ell_{\alpha(u)^{-1}} , \qquad \varrho_v^{-1} = \varrho_{\alpha(v)^{-1}}\;} ,
 $$</p>
 <p>and they generate, together with the unsigned left multiplications, the subgroup $\{L_a : a \in A^\times\}\cdot\{\mathrm{id},\alpha\}$ of $B(A)^\times$. The grade involution normalises the left multiplications,</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 <p><strong>Proof.</strong> The factorisations are the proposition above; $\ell_a = L_a$ means $a\alpha(x) = ax$ for all $x$, that is $a(\alpha(x)-x) = 0$, and for a unit $a$ this is $\alpha = \mathrm{id}$.</p>
 <p><strong>Theorem (degeneracy, the inner grade involution).</strong> Suppose $\alpha = c_z$ is the inner automorphism by a unit $z$. Then every signed left multiplication is an unsigned two-sided sandwich,</p>
 <p>$$
-\ell_a = T_{az,\,z^{-1}} , \qquad \varrho_b = T_{z,\,z^{-1}b} ,
+\boxed{\;\ell_a = T_{az,\,z^{-1}} , \qquad \varrho_b = T_{z,\,z^{-1}b}\;} ,
 $$</p>
 <p>and the signed family carries no information beyond the unsigned family and the inner automorphism.</p>
 <p><strong>Proof.</strong> $\ell_a(x) = a z x z^{-1} = (az)x(z^{-1}) = T_{az,z^{-1}}(x)$, and $\varrho_b(x) = zxz^{-1}b = T_{z,z^{-1}b}(x)$.</p>

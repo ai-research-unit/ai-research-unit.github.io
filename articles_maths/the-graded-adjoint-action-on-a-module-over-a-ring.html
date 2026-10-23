@@ -84,7 +84,7 @@ $$</p>
 <p>The <strong>grade involution</strong> of the ring acts on homogeneous elements by $a\mapsto (-1)^{\lvert a\rvert}a$; it is the operator $\alpha$ of the signed articles of this group.</p>
 <p><strong>Theorem.</strong> For a homogeneous operator $T$ the adjoint $T^{*}$ defined by $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$ is homogeneous of degree $\lvert T\rvert$, and for homogeneous $S, T$</p>
 <p>$$
-(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}, \qquad (T^{*})^{*} = T, \qquad \mathrm{id}^{*} = \mathrm{id} .
+\boxed{\;(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}, \qquad (T^{*})^{*} = T, \qquad \mathrm{id}^{*} = \mathrm{id}\;} .
 $$</p>
 <p>The adjoint is a <strong>graded involution</strong>: it is anti-multiplicative up to the Koszul sign.</p>
 <p><strong>Proof.</strong> The existence and uniqueness of $T^{*}$ are those of <em>Involutions of the Endomorphism Ring</em>; the degree is read off from $\lvert\langle Tx,y\rangle\rvert = \lvert T\rvert+\lvert x\rvert+\lvert y\rvert = \lvert x\rvert+\lvert T^{*}y\rvert$, so $\lvert T^{*}y\rvert = \lvert T\rvert+\lvert y\rvert$ and $\lvert T^{*}\rvert = \lvert T\rvert$. For the product, $(-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ is the ordinary adjoint of $ST$ with the sign inserted to make the two factors homogeneous of the correct degree: passing $S$ past $T^{*}$ in the chain of the pairing introduces the sign $(-1)^{\lvert S\rvert\lvert T\rvert}$, which is the Koszul rule; the order-two and the unit statements are as in the ungraded case.</p>
@@ -104,13 +104,13 @@ $$</p>
 <p><strong>Proof.</strong> Expand $\operatorname{ad}_x(yz) = xyz-(-1)^{\lvert x\rvert(\lvert y\rvert+\lvert z\rvert)}yzx$ and compare with $\operatorname{ad}_x(y)z + (-1)^{\lvert x\rvert\lvert y\rvert}y\operatorname{ad}_x(z) = xyz-(-1)^{\lvert x\rvert\lvert y\rvert}yxz+(-1)^{\lvert x\rvert\lvert y\rvert}yxz-(-1)^{\lvert x\rvert\lvert y\rvert}(-1)^{\lvert x\rvert\lvert z\rvert}yzx$; the middle terms cancel and the last term is $-(-1)^{\lvert x\rvert(\lvert y\rvert+\lvert z\rvert)}yzx$, matching. The degree is immediate from the homogeneity of the product.</p>
 <p><strong>Theorem (the graded Lie structure).</strong> The adjoint action satisfies the graded antisymmetry and the graded Jacobi identity,</p>
 <p>$$
-\operatorname{ad}_x(y) = -(-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y(x), \qquad \operatorname{ad}_x\operatorname{ad}_y - (-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y\operatorname{ad}_x = \operatorname{ad}_{\operatorname{ad}_x(y)} ,
+\boxed{\;\operatorname{ad}_x(y) = -(-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y(x), \qquad \operatorname{ad}_x\operatorname{ad}_y - (-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y\operatorname{ad}_x = \operatorname{ad}_{\operatorname{ad}_x(y)}\;} ,
 $$</p>
 <p>so the graded commutator turns $A$ into a <strong>graded Lie algebra</strong> and $\operatorname{ad}$ is a representation of it by graded derivations, with kernel the graded centre $Z_{\mathrm{gr}}(A)$.</p>
 <p><strong>Proof.</strong> The antisymmetry is the definition read twice; the Jacobi identity is the expansion of the graded commutator, the same computation as in the ungraded case with the Koszul signs inserted at each transposition; the kernel is the graded centre because $\operatorname{ad}_x = 0$ means $x$ graded-commutes with every element.</p>
 <p><strong>Proposition (compatibility with an involution).</strong> Let $\sigma$ be an involution of $A$ of degree zero commuting with the grade involution $\alpha$. Then</p>
 <p>$$
-\operatorname{ad}_x^{*_\sigma} = -\operatorname{ad}_{\delta(x)} , \qquad \delta = \sigma\alpha ,
+\boxed{\;\operatorname{ad}_x^{*_\sigma} = -\operatorname{ad}_{\delta(x)} , \qquad \delta = \sigma\alpha\;} ,
 $$</p>
 <p>with respect to the twisted pairing: the adjoint of the adjoint action is the adjoint action of $-\delta(x)$, so the adjoint action is skew-adjoint exactly when $\delta(x) = -x$.</p>
 <p><strong>Proof.</strong> $\operatorname{ad}_x = L_x-(-1)^{\lvert x\rvert\lvert\cdot\rvert}R_x$ is the difference of a signed left and a signed right multiplication, and the signed adjoints of the two are $T_{\delta(x)}$ and the corresponding signed right multiplication by $\delta(x)$, by <em>The Signed Adjoint of the Left Multiplication on a Ring</em>; the difference is $-\operatorname{ad}_{\delta(x)}$.</p>

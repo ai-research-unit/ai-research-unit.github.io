@@ -94,7 +94,7 @@ fit into a long exact sequence of period three in the indexing. The existence an
 <p><strong>Definition.</strong> For a $G$-space $X$ the <strong>Borel construction</strong> is $X_G = X\times_G EG$, with $EG\to BG$ the universal $G$-bundle, and the <strong>equivariant homology</strong> is $H_*^G(X;\mathbb{F}_p) = H_*(X_G;\mathbb{F}_p)$, a module over $H^*(BG;\mathbb{F}_p)$.</p>
 <p><strong>Theorem (localisation).</strong> Let $G = \mathbb{Z}/p$ act on a finite-dimensional $G$-CW complex $X$ with finitely many orbit types, and let $F\subseteq X$ be the fixed set. Then the map induced by the inclusion,
 $$
-H^*_G(X;\mathbb{F}_p)\longrightarrow H^*_G(F;\mathbb{F}_p),
+\boxed{\;H^*_G(X;\mathbb{F}_p)\longrightarrow H^*_G(F;\mathbb{F}_p)\;},
 $$
 becomes an isomorphism after localising at the nonzero elements of $H^*(BG;\mathbb{F}_p)$; equivalently, the kernel and the cokernel of the restriction are annihilated by a power of the "positive-degree" classes of $H^*(BG;\mathbb{F}_p)$. In particular the equivariant cohomology of $X$ is determined by that of $F$ over the generic point of $\operatorname{Spec}H^*(BG;\mathbb{F}_p)$.</p>
 <p><strong>Proof sketch.</strong> The theorem is proved by induction on the number of orbit types and the dimension, reducing to the model of a single orbit $G/H$ and using the fact that the Euler class of the equivariant normal bundle of the fixed set becomes invertible after localisation; the orbits that are not fixed have equivariant cohomology annihilated by the positive-degree classes. The statement is due to Borel and Quillen; the details and the compact Lie group generalisations belong to the equivariant cohomology literature and to <em>Stable Homotopy Theory</em>.</p>
@@ -109,7 +109,7 @@ becomes an isomorphism after localising at the nonzero elements of $H^*(BG;\math
 <p><strong>Definition.</strong> A $\mathbb{Z}/p$ action has two orbit types: the orbits of size one, which are the fixed points, and the orbits of size $p$, which are the free orbits; accordingly $X$ is the disjoint union of the fixed set $F$ and the free part $X\setminus F$, and the orbit space $X/\mathbb{Z}/p$ is the union of the image of $F$ and the image of the free part. Over the free part the quotient map is a $p$-fold covering, and the decomposition of the Borel construction into the pieces indexed by the orbit types is the <strong>orbit-type stratification</strong>.</p>
 <p><strong>Theorem (the Euler characteristic of the quotient).</strong> For a finite-dimensional space with a $\mathbb{Z}/p$ action and finitely generated homology, the Euler characteristic of the orbit space is
 $$
-\chi(X/\mathbb{Z}/p) = \frac{\chi(X)+(p-1)\chi(F)}{p}.
+\boxed{\;\chi(X/\mathbb{Z}/p) = \frac{\chi(X)+(p-1)\chi(F)}{p}\;}.
 $$
 In particular $\chi(X/\mathbb{Z}/2) = (\chi(X)+\chi(F))/2$, and the identity $\chi(X) = \chi(F)+p\,\chi(X\setminus F)$ from the orbit count gives the formula.</p>
 <p><strong>Proof.</strong> The free part consists of the orbits of size $p$, so its Euler characteristic satisfies $\chi(X\setminus F) = p\,\chi((X\setminus F)/\mathbb{Z}/p)$ by the multiplicativity of the Euler characteristic for a covering of finite degree; adding $\chi(F)$ to both sides and using $\chi(X) = \chi(F)+\chi(X\setminus F)$ gives the formula. The verification: for the reflection of $S^1$ the formula gives $(0+2)/2 = 1 = \chi([0,1])$, and for the involution $-I$ of the torus it gives $(0+4)/2 = 2 = \chi(S^2)$, both correct.</p>

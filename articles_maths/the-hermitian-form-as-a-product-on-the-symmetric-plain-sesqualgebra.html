@@ -74,18 +74,14 @@
 <p>The result that organises the article is that the form is the <strong>definite</strong> form of the algebra, of signature $(8,0)$ on the real space, while the product it defines is <strong>rank one</strong> and central: the image is the centre $\mathbb{C}_{\mathbb{B}}$, the form is recovered as the trace form $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and the invariance that the trace form of the symmetric plain block enjoys — the invariance of a Jordan product — <strong>fails</strong> here. The two facts are one: a product whose values are central and whose form is definite cannot carry an associative or Jordan invariance, because the invariance is exactly the identity that forces the product to have a vector part.</p>
 <h2 id="the-identification-and-the-rank-one-structure">The Identification and the Rank-One Structure</h2>
 <p><strong>Theorem (the block is the form read as a product).</strong> For all $\tilde Q_1,\tilde Q_2$,</p>
-<p>$$
-\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t ,
-$$</p>
+<p>$$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t \;}, $$</p>
 <p>and the assignment $\tilde Q_1\star\tilde Q_2 \mapsto \langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is a bijection between the products of the block and the values of the form; the block carries no information beyond the form.</p>
 <p><strong>Proposition (the image is the centre, the product has rank one).</strong> The image of the multiplication is the centre $\mathbb{C}_{\mathbb{B}}$; as a map $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}} \to \mathbb{B}$ the product has rank one over $\mathbb{C}$, its single non-zero value direction being $e_t$. The kernel is the hyperplane of pairs with $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = 0$.</p>
 <p><em>Proof.</em> Every value is a complex multiple of $e_t$; the value $e_t$ is attained at $(\tilde Q_1,\tilde Q_2) = (e_t,e_t)$, and no value has a vector part; the condition for vanishing is the single scalar equation $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = 0$.</p>
 <p><strong>Corollary (the product is not a multiplication with a unit).</strong> Because the rank is one and the image is central, the block cannot have a unit and cannot reproduce an element with a vector part on either side; this is the rank-one reason for the absence of a unit proved in the companion article, and it is the reason the block's idempotents are the two central ones alone.</p>
 <h2 id="the-gram-matrix-and-the-positivity">The Gram Matrix and the Positivity</h2>
 <p><strong>Proposition (the Gram matrix is the identity).</strong> In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$,</p>
-<p>$$
-\langle e_\mu,e_\nu\rangle_{*} = \delta_{\mu\nu} , \qquad e_\mu\star e_\nu = \delta_{\mu\nu}e_t ,
-$$</p>
+<p>$$ \boxed{\; \langle e_\mu,e_\nu\rangle_{*} = \delta_{\mu\nu} , \qquad e_\mu\star e_\nu = \delta_{\mu\nu}e_t \;}, $$</p>
 <p>so the Gram matrix of the form on the algebra basis is the identity matrix, and the multiplication table of the block is that matrix times $e_t$.</p>
 <p><em>Proof.</em> $\langle e_\mu,e_\nu\rangle_{*} = \sum_\rho (e_\mu)_\rho\overline{(e_\nu)_\rho} = \delta_{\mu\nu}$.</p>
 <p><strong>Proposition (the positivity on the real basis).</strong> On the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the form has $\langle e_\mu,e_\nu\rangle_{*} = \delta_{\mu\nu}$; on the real basis $e_\mu, ie_\mu$ of the real space $\mathbb{B}\cong\mathbb{R}^{8}$ the associated real symmetric form $\mathrm{Re}\,H$ is the identity form,</p>
@@ -102,9 +98,7 @@ $$</p>
 <p><em>Proof.</em> $\langle\tilde Q,\tilde Q\rangle_{*} = \sum_\mu Q_\mu\overline{Q_\mu} = \sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of non-negative terms, zero only when every coordinate vanishes.</p>
 <h2 id="the-cauchy-and-schwarz-inequality">The Cauchy and Schwarz Inequality</h2>
 <p><strong>Theorem (the inequality).</strong> For all $\tilde Q_1,\tilde Q_2$,</p>
-<p>$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{*}\,\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}} \le \langle\tilde Q_1,\tilde Q_1\rangle_{*}\,\langle\tilde Q_2,\tilde Q_2\rangle_{*} ,
-$$</p>
+<p>$$ \boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{*}\,\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}} \le \langle\tilde Q_1,\tilde Q_1\rangle_{*}\,\langle\tilde Q_2,\tilde Q_2\rangle_{*} \;}, $$</p>
 <p>that is $\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2} \le \langle\tilde Q_1,\tilde Q_1\rangle_{*}\langle\tilde Q_2,\tilde Q_2\rangle_{*}$, with equality if and only if $\tilde Q_1$ and $\tilde Q_2$ are linearly dependent over $\mathbb{C}$.</p>
 <p><em>Proof.</em> If $\tilde Q_2 = 0$ both sides vanish. Let $\tilde Q_2 \neq 0$ and put $\lambda = \langle\tilde Q_1,\tilde Q_2\rangle_{*}/\langle\tilde Q_2,\tilde Q_2\rangle_{*}$ and $\tilde Q_3 = \tilde Q_1 - \lambda\tilde Q_2$. Developing $\langle\tilde Q_3,\tilde Q_3\rangle_{*}$ with the linearity in the first argument and the conjugate-linearity in the second gives $\langle\tilde Q_3,\tilde Q_3\rangle_{*} = \langle\tilde Q_1,\tilde Q_1\rangle_{*} - \lambda \langle\tilde Q_2,\tilde Q_1\rangle_{*} - \overline{\lambda}\langle\tilde Q_1,\tilde Q_2\rangle_{*} + \lvert\lambda\rvert^{2}\langle\tilde Q_2,\tilde Q_2\rangle_{*}$, which reduces to $\langle\tilde Q_1,\tilde Q_1\rangle_{*} - \lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}/\langle\tilde Q_2,\tilde Q_2\rangle_{*}$. The left-hand side is non-negative by the positivity of the form, so the inequality follows; equality is $\langle\tilde Q_3,\tilde Q_3\rangle_{*} = 0$, which by the absence of isotropic vectors is $\tilde Q_3 = 0$, that is $\tilde Q_1 = \lambda\tilde Q_2$.</p>
 <p><strong>Remark (an inequality of the form, not of a distance).</strong> The statement is an inequality between values of the sesquilinear form and is algebraic: it uses the positivity of the form and the quadratic development, and no length is attached to the elements. It is the Cauchy and Schwarz inequality of any positive definite Hermitian form, read here on the biquaternion space; the companion quaternion row, whose form $\langle\cdot,\cdot\rangle_{\natural}$ is indefinite, has no such inequality.</p>

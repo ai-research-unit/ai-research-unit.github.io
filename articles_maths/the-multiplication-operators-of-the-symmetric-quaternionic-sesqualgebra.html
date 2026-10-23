@@ -90,9 +90,11 @@ $$</p>
 <h2 id="the-matrices-in-the-real-basis">The Matrices in the Real Basis</h2>
 <p><strong>Theorem (the two operators of $e_t$).</strong> In the real basis,</p>
 <p>$$
+\boxed{\;
 L^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,-1,1,1,1),
 \qquad
-R^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1).
+R^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)
+\;}.
 $$</p>
 <p>The first is the star conjugation $\tilde Q_1\mapsto\tilde Q_1^{*}$ and the second the natural conjugation $\tilde Q_1\mapsto\tilde Q_1^{\natural}$.</p>
 <p><em>Proof.</em> $L^{\star}_{e_t}(\tilde Q_1)=e_t\star\tilde Q_1=\tilde Q_1^{*}=\tilde Q_1^{\natural}\circ\bar{\cdot}$: the coefficient conjugation negates each imaginary coordinate and the natural conjugation negates the three vector directions, so the diagonal is $(1,-1,-1,-1)$ on the real coordinates followed by $(-1,1,1,1)$ on the imaginary ones, the display. $R^{\star}_{e_t}(\tilde Q_1)=\tilde Q_1\star e_t=\tilde Q_1^{\natural}$, which on the real coordinates negates the three vector directions and leaves the imaginary coordinates' signs after the negation of the vector directions, giving the second display.</p>
@@ -122,6 +124,7 @@ $$</p>
 <h2 id="rank-image-and-trace">Rank, Image and Trace</h2>
 <p><strong>Theorem (the rank of the two operators).</strong> For an element $\tilde Q_4$,</p>
 <p>$$
+\boxed{\;
 \mathrm{rank}\,L^{\star}_{\tilde Q_4}=\mathrm{rank}\,R^{\star}_{\tilde Q_4}=
 \begin{cases}
 0,&\tilde Q_4=0,\\
@@ -129,6 +132,7 @@ $$</p>
 8,&Q_{4t}\neq0,\ \langle\tilde Q_4\rangle_{\natural}\neq0,\\
 6,&Q_{4t}\neq0,\ \langle\tilde Q_4\rangle_{\natural}=0,
 \end{cases}
+\;}
 $$</p>
 <p>where the rank is the rank of the real-linear operator on the eight-real-dimensional space.</p>
 <p><em>Proof.</em> The two families have the same rank, because the two determinants agree, $\det L^{\star}_{\tilde Q_4}=\det R^{\star}_{\tilde Q_4}=|\langle\tilde Q_4\rangle_{\natural}|^{2}|Q_{4t}|^{4}$ as real-linear operators in the real basis: a direct expansion of the two $8\times8$ matrices gives the product of the squared norm and the fourth power of the scalar part in each case, and the two determinants agree because $L^{\star}_{\tilde Q_4}=C\circ R^{\star}_{\tilde Q_4}$ with $C$ the coefficientwise conjugation, whose real matrix $\mathrm{diag}(1,1,1,1,-1,-1,-1,-1)$ has determinant $+1$, by the parity theorem. Hence the rank is eight exactly when $Q_{4t}\neq0$ and $\langle\tilde Q_4\rangle_{\natural}\neq0$, and the remaining values are read directly: $\tilde Q_4=0$ gives the zero map, and $Q_{4t}=0$ with $\tilde Q_4\neq0$ gives rank four by the next corollary. In the remaining case $Q_{4t}\neq0$ the kernel is computed without the determinant. The vector part is $-Q_{4t}\overline{\vec Q_1}-\overline{Q_{1t}}\vec Q_4$, so it vanishes exactly when $\vec Q_1=-(Q_{1t}/\overline{Q_{4t}})\overline{\vec Q_4}$, which determines the vector part of a kernel element by its scalar coefficient; substituting this into the scalar part $Q_{4t}\overline{Q_{1t}}-\sum_kA_k\overline{Q_{1k}}$ leaves $\overline{Q_{1t}}\,\langle\tilde Q_4\rangle_{\natural}/Q_{4t}$. The kernel is therefore zero when $\langle\tilde Q_4\rangle_{\natural}\neq0$ and the complex line $\{\vec Q_1=-(Q_{1t}/\overline{Q_{4t}})\overline{\vec Q_4}\}$, of real dimension two, when $\langle\tilde Q_4\rangle_{\natural}=0$; the rank is $8$ in the first case and $6$ in the second, and at $\tilde Q_4=e_t+i\vec e_y$ that line is spanned by $e_t+i\vec e_y$ and $ie_t-\vec e_y$.</p>
@@ -165,8 +169,10 @@ $$</p>
 <h2 id="the-adjoint-with-respect-to-math146-and-math147-self-adjointness">The Adjoint with Respect to $K$ and $J$-Self-Adjointness</h2>
 <p><strong>Theorem (the adjoint).</strong> With respect to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$,</p>
 <p>$$
+\boxed{\;
 K\bigl(L^{\star}_{\tilde Q_4}\tilde Q_1,\tilde Q_3\bigr)
-=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_4^{\natural}}\tilde Q_3\bigr)},
+=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_4^{\natural}}\tilde Q_3\bigr)}
+\;},
 $$</p>
 <p>so the adjoint of the left multiplication by $\tilde Q_4$ is the left multiplication by $\tilde Q_4^{\natural}$.</p>
 <p><em>Proof.</em> This is the compatibility theorem of <em>The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra</em>: $\langle\tilde Q_4\star\tilde Q_1,\tilde Q_3\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_4^{\natural}\star\tilde Q_3\rangle_{\natural*}}$, which is exactly the display; the conjugate on the right is the parity correction of the conjugate-linear operator.</p>

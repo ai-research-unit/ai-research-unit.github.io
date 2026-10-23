@@ -168,7 +168,7 @@ $$</p>
 $$</p>
 <p>A pure vector is a unit exactly when $(\vec P,\vec P) \neq 0$. Since a pure vector satisfies $\vec P^2 = -(\vec P,\vec P)e_t$, the nonzero non-units of the vector subspace are exactly its <strong>square-zero</strong> elements:</p>
 <p>$$
-(\vec P,\vec P) = 0 \iff \vec P^2 = 0 .
+\boxed{\;(\vec P,\vec P) = 0 \iff \vec P^2 = 0\;}.
 $$</p>
 <p>An explicit example is $\vec P = \vec e_x + i\vec e_y$, whose square vanishes: $(\vec e_x + i\vec e_y)^2 = -e_t + i\vec e_z - i\vec e_z + e_t = 0$. Writing the complex vector as $\vec\rho + i\vec\rho'$ with $\vec\rho, \vec\rho'$ real,</p>
 <p>$$
@@ -244,7 +244,7 @@ $$</p>
 <p><strong>Role.</strong> It is not a subalgebra, but it is closed under the symmetrized product $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$, which makes it a Jordan algebra. It is the set of elements with real scalar part and purely imaginary vector part.</p>
 <p><strong>The idempotents.</strong> The Hermitian subspace is the one of the remarkable subspaces that carries a nontrivial family of idempotents. Besides $0$ and $e_t$,</p>
 <p>$$
-\tilde\Pi = \tfrac{1}{2}\left(e_t + i\vec q_a\right) , \qquad \vec q_a \in \mathbb{R}^3 , \quad (\vec q_a,\vec q_a) = 1 .
+\boxed{\;\tilde\Pi = \tfrac{1}{2}\left(e_t + i\vec q_a\right) , \qquad \vec q_a \in \mathbb{R}^3 , \quad (\vec q_a,\vec q_a) = 1\;}.
 $$</p>
 <p>The parameter $\vec q_a$ runs over the real unit vectors, so the nontrivial idempotents of the Hermitian subspace form a two-parameter family; each is a Hermitian idempotent of the algebra, and its multiplication is a projector. Three properties hold for every member, and they are the ones the projector theory uses. <strong>First, the norm vanishes, so every nontrivial idempotent of the Hermitian subspace is a zero divisor.</strong> The norm of $\tfrac{1}{2}(e_t + i\vec q_a)$ is $\tfrac{1}{4}(1 - (\vec q_a,\vec q_a)) = 0$, and the nontrivial idempotents are exactly the zero divisors of the Hermitian subspace with scalar part $\tfrac{1}{2}$, every other zero divisor of the subspace being a real multiple of one of them. <strong>Second, the complement and the orthogonality.</strong> The complement $e_t - \tilde\Pi = \tfrac{1}{2}(e_t - i\vec q_a)$ is again a nontrivial idempotent of the subspace, and</p>
 <p>$$
@@ -365,13 +365,13 @@ $$</p>
 <p><strong>Corollary.</strong> The nontrivial idempotents present in the remarkable subspaces are exactly the <strong>Hermitian idempotents</strong> $\tfrac{1}{2}(e_t + i\vec q_a)$, and they all lie in the Hermitian subspace. Each is a zero divisor, since its norm is $\tfrac{1}{4}(1 - (\vec q_a,\vec q_a)) = 0$; so is its complement, and the two are orthogonal and sum to $e_t$. Every idempotent of the algebra not of this form — every idempotent built on a non-Hermitian root of minus one — lies in none of the remarkable subspaces, its vector part mixing a real and an imaginary direction. So the remarkable subspaces see exactly one nontrivial family of idempotents, in exactly one subspace.</p>
 <p><strong>The ideals.</strong> $\mathbb{B}$ is <strong>simple</strong>, its only two-sided ideals being $0$ and $\mathbb{B}$, and it has <strong>length two</strong> as a left module over itself, so that every nonzero proper left ideal is <strong>minimal</strong>, of real dimension $4$, and dually every nonzero proper right ideal is a minimal right ideal of real dimension $4$. Two consequences are immediate. Since the only two-sided ideals are $0$ and $\mathbb{B}$, <strong>no subspace of the remarkable subspaces is a two-sided ideal</strong>. And each of the remarkable subspaces <strong>generates the whole algebra on both sides</strong>,</p>
 <p>$$
-\mathbb{B}\mathbb{S} = \mathbb{S}\mathbb{B} = \mathbb{B} \qquad \text{for each of the remarkable subspaces } \mathbb{S} ,
+\boxed{\;\mathbb{B}\mathbb{S} = \mathbb{S}\mathbb{B} = \mathbb{B} \qquad \text{for each of the remarkable subspaces } \mathbb{S}\;},
 $$</p>
 <p>because a left ideal containing a unit is everything, and each of the remarkable subspaces contains a unit: $e_t$ is in the centre, in the quaternion subspace and in $\mathbb{M}_+$, the element $\vec e_x$ is in the vector subspace and in $\mathbb{M}_-$, and $ie_t$ is in the anti-quaternion subspace.</p>
 <p><strong>Theorem (the annihilators of the zero divisors).</strong> Let $\tilde Q_1 \neq 0$ be a zero divisor of $\mathbb{B}$, so that $\langle\tilde Q_1\rangle_{\natural} = 0$. Write $I_{\tilde Q_1}$ for the set of $\tilde Q_2$ with $\tilde Q_2\tilde Q_1 = 0$ and $J_{\tilde Q_1}$ for the set of $\tilde Q_2$ with $\tilde Q_1\tilde Q_2 = 0$. Then $I_{\tilde Q_1}$ is a minimal left ideal, $J_{\tilde Q_1}$ is a minimal right ideal, and each has real dimension $4$.</p>
 <p><strong>Theorem (the ideal generated against the annihilator).</strong> For a nonzero <strong>nilpotent</strong> of the vector subspace, $\vec P^2 = 0$, the ideal generated and the annihilator coincide, $\mathbb{B}\vec P = I_{\vec P}$ and $\vec P\mathbb{B} = J_{\vec P}$; for every other zero divisor $\tilde Q$ the two are distinct and therefore complementary,</p>
 <p>$$
-\mathbb{B} = \mathbb{B}\tilde Q \oplus I_{\tilde Q} = \tilde Q\mathbb{B} \oplus J_{\tilde Q} .
+\boxed{\;\mathbb{B} = \mathbb{B}\tilde Q \oplus I_{\tilde Q} = \tilde Q\mathbb{B} \oplus J_{\tilde Q}\;}.
 $$</p>
 <p><strong>Proof of the nilpotent case.</strong> If $\vec P^2 = 0$ then $(\tilde Q_3\vec P)\vec P = \tilde Q_3\vec P^2 = 0$ for every $\tilde Q_3$, so $\mathbb{B}\vec P \subseteq I_{\vec P}$, and $\mathbb{B}\vec P$ contains $\vec P \neq 0$ while $I_{\vec P}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\vec P\tilde Q_3)\vec P = 0$ on the left instead.</p>
 <p>The subspaces of the remarkable subspaces that carry a zero divisor are the vector subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$, by the sections above; the other three — the centre, the quaternion subspace and the anti-quaternion subspace — consist of $0$ and units, and determine no minimal ideal at all. So the ideal content of the remarkable subspaces is carried by three of them:</p>

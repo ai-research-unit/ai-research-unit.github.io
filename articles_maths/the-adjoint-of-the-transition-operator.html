@@ -89,7 +89,7 @@ $$
 $$</p>
 <p><strong>Theorem (the adjoint formula).</strong> With $\pi$ stationary,
 $$
-P_t^{*}g(y)=\frac{1}{\pi(y)}\int_E\pi(dx)\,p_t(x,dy)\,g(x)=\int_Ep_t^{*}(y,dx)\,g(x)\qquad\pi\text{-a.e.},
+\boxed{\;P_t^{*}g(y)=\frac{1}{\pi(y)}\int_E\pi(dx)\,p_t(x,dy)\,g(x)=\int_Ep_t^{*}(y,dx)\,g(x)\qquad\pi\text{-a.e.}\;},
 $$
 where $p_t^{*}(y,dx)=\pi(dx)p_t(x,dy)/\pi(y)$. Equivalently the adjoint $P_t^*$ is the transition operator of the reversed process.</p>
 <p><em>Proof.</em> The computation is the one of <em>The Adjoint of the Markov Operator</em>, the preceding article, applied to the kernel $p_t$:
@@ -110,7 +110,7 @@ with $\pi$ as a stationary measure, and it is the semigroup of the reversed proc
 <h3 id="the-criterion">The criterion</h3>
 <p><strong>Theorem (reversibility as self-adjointness).</strong> The process is reversible, that is its two-sided stationary version is invariant under the time reversal, if and only if
 $$
-P_t^{*}=P_t\qquad\text{for all }t\ge0,
+\boxed{\;P_t^{*}=P_t\qquad\text{for all }t\ge0\;},
 $$
 equivalently if and only if the kernels satisfy the detailed balance $\pi(dx)p_t(x,dy)=\pi(dy)p_t(y,dx)$ for all $t$. A reversible process has a self-adjoint transition semigroup.</p>
 <p><em>Proof.</em> The adjoint is the reversed semigroup, so $P_t^{*}=P_t$ for all $t$ is the equality of the kernels of the process and of its reverse, which is the detailed balance; the equivalence with the invariance of the law under the time reversal is the finite-dimensional statement of <em>The Reversibility of a Stationary Process</em>, earlier in this category. The time-one case is <em>The Adjoint of the Markov Operator</em>, the preceding article.</p>
@@ -124,7 +124,7 @@ the adjoint of $L$ with respect to the form $\langle\cdot,\cdot\rangle_\pi$, wit
 <h3 id="the-dirichlet-form">The Dirichlet form</h3>
 <p><strong>Theorem (the Dirichlet form).</strong> For a reversible process the Dirichlet form
 $$
-\mathcal{E}(f,g)=-\langle Lf,g\rangle_\pi=-\langle f,Lg\rangle_\pi
+\boxed{\;\mathcal{E}(f,g)=-\langle Lf,g\rangle_\pi=-\langle f,Lg\rangle_\pi\;}
 $$
 is symmetric and nonnegative on the domain of $L$; for the time-one chain it is $\mathcal{E}(f,g)=\langle(I-P_1)f,g\rangle_\pi$, the Dirichlet form of <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category.</p>
 <p><em>Proof.</em> The symmetry is the self-adjointness of $L$, and the nonnegativity is the limit $-\langle Lf,f\rangle_\pi=\lim_{t\downarrow0}\frac1t\langle(I-P_t)f,f\rangle_\pi$, each term of which is nonnegative because $P_t$ is a contraction fixing the constants; the identification with the sum form in the discrete case is the computation of <em>Reversible Markov Chains and Time Reversal</em>.</p>

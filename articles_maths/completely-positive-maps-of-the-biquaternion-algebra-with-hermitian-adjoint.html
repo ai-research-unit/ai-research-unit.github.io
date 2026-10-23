@@ -95,13 +95,13 @@ $$</p>
 <p>so the correspondence $\Phi\leftrightarrow C_{\Phi}$ is a linear bijection between the linear maps of $\mathbb{B}$ and the $4\times4$ matrices.</p>
 <p><strong>Theorem (Choi).</strong> A linear map $\Phi$ of the biquaternion algebra is completely positive if and only if its Choi matrix is positive semidefinite:</p>
 <p>$$
-\Phi\ \text{CP}\iff C_{\Phi}\succeq0 .
+\boxed{\; \Phi\ \text{CP}\iff C_{\Phi}\succeq0 \;}.
 $$</p>
 <p><em>Proof.</em> The forward implication is the positivity of the amplification $\mathrm{id}_{2}\otimes\Phi$ applied to the rank-one positive element $\sum_{i,j}E_{ij}\otimes E_{ij}$, whose image is $C_{\Phi}$; the converse is the spectral decomposition of $C_{\Phi}\succeq0$ used in the theorem below. Both directions were verified: the round trip $\Phi\mapsto C_{\Phi}\mapsto\Phi$ was checked to be the identity, random positive semidefinite Choi matrices were shown to produce positive maps on positive elements, and random Kraus sums were shown to have positive semidefinite Choi matrices.</p>
 <h2 id="kraus-every-completely-positive-map-is-a-sum-of-sandwiches">Kraus: Every Completely Positive Map is a Sum of Sandwiches</h2>
 <p><strong>Theorem (Kraus).</strong> A linear map $\Phi$ of the biquaternion algebra is completely positive if and only if there are elements $\tilde{Q}_{1},\dots,\tilde{Q}_{r}\in\mathbb{B}$, $r\le4$, with</p>
 <p>$$
-\Phi(\tilde{Q}_2) = \sum_{k=1}^{r} \tilde{Q}_{k}\,\tilde{Q}_2\,\tilde{Q}_{k}^{*} = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}}(\tilde{Q}_2).
+\boxed{\; \Phi(\tilde{Q}_2) = \sum_{k=1}^{r} \tilde{Q}_{k}\,\tilde{Q}_2\,\tilde{Q}_{k}^{*} = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}}(\tilde{Q}_2) \;}.
 $$</p>
 <p>The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.</p>
 <p><em>Proof.</em> If $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then $C_{\Phi}=\sum_{k}C_{\Theta_{\tilde{Q}_{k}}}$ with $C_{\Theta_{\tilde{Q}_{k}}}\succeq0$ of rank one, hence $C_{\Phi}\succeq0$ and $\Phi$ is CP. Conversely, if $C_{\Phi}\succeq0$ then its spectral decomposition $C_{\Phi}=\sum_{k=1}^{r}w_{k}\bar{w_{k}}$, $r=\mathrm{rank}\,C_{\Phi}\le4$, produces the elements $\tilde{Q}_{k}$ by the inverse of the vectorisation of the definition; the identity $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then follows from the round-trip property of the Choi correspondence.</p>
@@ -119,7 +119,7 @@ $$</p>
 <h2 id="the-transposition">The Transposition</h2>
 <p><strong>Theorem (the canonical positive map that is not completely positive).</strong> The transposition $\Phi(\tilde{Q}_2)=\tilde{Q}_2^{T}$ is positive on the biquaternion algebra and its Choi matrix is the <strong>flip</strong></p>
 <p>$$
-C_{\Phi}=\sum_{i,j}E_{ij}\otimes E_{ji},
+\boxed{\; C_{\Phi}=\sum_{i,j}E_{ij}\otimes E_{ji} \;},
 $$</p>
 <p>whose eigenvalues are $+1$ with multiplicity three and $-1$ with multiplicity one. Hence $\Phi$ is positive and <strong>not</strong> completely positive.</p>
 <p><em>Proof.</em> Positivity of the transposition is clear on the cone of Hermitian matrices; the Choi matrix of a map sending $E_{ij}$ to $E_{ji}$ is the flip by the definition, and the flip on $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ has the eigenvalues $+1$ (on the symmetric part, of dimension three) and $-1$ (on the antisymmetric part, of dimension one). The computation was verified in the matrix model, eigenvalues $(-1,1,1,1)$.</p>

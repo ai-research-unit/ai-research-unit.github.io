@@ -99,7 +99,7 @@ $$</p>
 <h3 id="ergodicity-mixing-and-entropy">Ergodicity, Mixing and Entropy</h3>
 <p><strong>Theorem (transfer of the ergodic properties, quoted).</strong> Let the flow be the suspension of $(P,\tau)$ with finite mean return time. Then the flow preserves $\mu$ if and only if $P$ preserves the induced $\mu_\Sigma$, and the flow is ergodic if and only if $P$ is ergodic; the flow is mixing if and only if $P$ is mixing and the roof $\tau$ is not cohomologous to a constant, the exceptional case $\tau\equiv\bar\tau$ being the product of $P$ with the rotation of period $\bar\tau$, which is ergodic but not mixing. The entropy is given by <strong>Abramov's formula</strong></p>
 <p>$$
-h_\mu(\varphi_1)=h_{\mu_\Sigma}(P)\big/\bar\tau ,
+\boxed{\;h_\mu(\varphi_1)=h_{\mu_\Sigma}(P)\big/\bar\tau\;} ,
 $$</p>
 <p>the entropy per unit time of the flow being the entropy per return of the return map divided by the mean return time.</p>
 <p><em>Proof.</em> Quoted as standard from <em>Ergodic Theory</em> and <em>Smooth Dynamical Systems</em>; the correspondence of the invariant measures is the bijection between the invariant measures of the flow and those of the return map with finite mean return time, and the formula for the entropy is Abramov's theorem.</p>
@@ -120,7 +120,7 @@ $$</p>
 <p>defined for $x\in A$; it is the Poincaré map of the discrete system on the "section" $A$. The induced measure is the normalisation $\mu_A=\mu|_A/\mu(A)$.</p>
 <p><strong>Theorem (Kac's formula).</strong> If $(X,\mu,T)$ is ergodic and measure-preserving and $\mu(A)>0$, then</p>
 <p>$$
-\int_A r_A\,d\mu=1, \qquad \int_A r_A\,d\mu_A=\frac{1}{\mu(A)} ;
+\boxed{\;\int_A r_A\,d\mu=1, \qquad \int_A r_A\,d\mu_A=\frac{1}{\mu(A)}\;} ;
 $$</p>
 <p>that is, the mean return time to $A$ with respect to the induced probability is the reciprocal of the measure of $A$.</p>
 <p><em>Proof.</em> By the Poincaré recurrence theorem $r_A$ is finite a.e. on $A$, and the sets $A_n=\{x\in A:r_A(x)=n\}$ partition $A$ up to a null set; the images $T^kA_n$, $0\le k<n$, tile the space $X$ up to the measure of the wandering part, so $\sum_n n\mu(A_n)=1$ and the first identity follows; the second is the first divided by $\mu(A)$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $p$ be a periodic point of the flow of period $T$, let $\Sigma$ be a section through $p$, and let $P$ be the return map. The <strong>linearised Poincaré map</strong> at $p$ is the derivative $DP(p)$ acting on the tangent space $T_p\Sigma$; the <strong>monodromy</strong> of the variational equation of <em>The Evolution Operator</em> is $M=D_p\varphi_T$ on $T_pM$.</p>
 <p><strong>Theorem (the two spectra agree off the flow direction).</strong> The vector $X(p)$ is an eigenvector of the monodromy $M=D_p\varphi_T$ with eigenvalue $1$, and</p>
 <p>$$
-\det(\mu I-DP(p))=\frac{\det(\mu I-D_p\varphi_T)}{\mu-1} \quad \text{in the reduced sense},
+\boxed{\;\det(\mu I-DP(p))=\frac{\det(\mu I-D_p\varphi_T)}{\mu-1} \quad \text{in the reduced sense}\;},
 $$</p>
 <p>so the eigenvalues of $DP(p)$, counted with multiplicity, are the eigenvalues of $D_p\varphi_T$ other than the trivial eigenvalue $1$; these are the <strong>Floquet multipliers</strong> of the periodic orbit apart from $1$.</p>
 <p><em>Proof.</em> Differentiating the relation $P(q)=\varphi_{\tau(q)}(q)$ at $q=p$ and using $d\tau(X(p))=1$ from transversality, one finds that $DP(p)$ and $D_p\varphi_T$ differ by a rank-one operator whose image lies in the flow direction; the characteristic polynomials therefore differ by the factor $\mu-1$ attached to that direction, which is the displayed identity. The computation is that of the return map theorem of <em>Smooth Dynamical Systems</em> and of Floquet theory in <em>Ordinary Differential Equations</em>, and is cited rather than reproved.</p>

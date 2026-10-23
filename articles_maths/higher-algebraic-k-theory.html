@@ -119,7 +119,7 @@ $$</p>
 <p><strong>Definition ($S_\bullet$).</strong> For an exact category $\mathcal{M}$, let $S_n\mathcal{M}$ be the category of <strong>filtered objects</strong> $0 = M_0 \rightarrowtail M_1 \rightarrowtail \cdots \rightarrowtail M_n = M$, with the morphisms that are isomorphisms on the graded pieces; the face maps forget a term and the degeneracies repeat one, and the simplicial category $S_\bullet\mathcal{M}$ has geometric realisation $|S_\bullet\mathcal{M}|$.</p>
 <p><strong>Theorem (Waldhausen).</strong> For a ring $R$ and $\mathcal{M} = \mathrm{Proj}(R)$ there is a natural weak homotopy equivalence</p>
 <p>$$
-\Omega|S_\bullet\mathcal{M}| \simeq K(\mathcal{M}) = \Omega BQ\mathcal{M},
+\boxed{\;\Omega|S_\bullet\mathcal{M}| \simeq K(\mathcal{M}) = \Omega BQ\mathcal{M}\;},
 $$</p>
 <p>so that $K_n(\mathcal{M}) \cong \pi_n(\Omega|S_\bullet\mathcal{M}|) \cong \pi_{n+1}(|S_\bullet\mathcal{M}|)$; equivalently $K_n \cong \pi_n$ of the loop space of the realisation.</p>
 <p><em>Proof sketch.</em> The simplicial object $S_\bullet\mathcal{M}$ and the $Q$-construction are related by a comparison of the two filtrations: $S_n\mathcal{M}$ has a filtration by the length of the flags, and the associated graded can be identified with $BQ\mathcal{M}$ iterated; the resulting weak equivalence $\Omega|S_\bullet| \xrightarrow{\sim}\Omega BQ\mathcal{M}$ is the <strong>additivity theorem</strong>'s consequence, and it is the form in which the theory generalises to Waldhausen categories.</p>
@@ -133,7 +133,7 @@ $$</p>
 <h3 id="the-fundamental-theorems">The Fundamental Theorems</h3>
 <p><strong>Theorem (additivity).</strong> Let $\mathcal{A} \to \mathcal{B} \to \mathcal{C}$ be a sequence of exact categories in which $\mathcal{A}$ is a full subcategory of $\mathcal{B}$ closed under extensions and $\mathcal{C}$ is the quotient, so that every object of $\mathcal{B}$ sits in an exact sequence with outer terms in $\mathcal{A}$ and $\mathcal{C}$. Then there is a weak homotopy equivalence</p>
 <p>$$
-K(\mathcal{B}) \xrightarrow{\ \simeq\ } K(\mathcal{A}) \times K(\mathcal{C}),
+\boxed{\;K(\mathcal{B}) \xrightarrow{\ \simeq\ } K(\mathcal{A}) \times K(\mathcal{C})\;},
 $$</p>
 <p>and the corresponding long exact sequence of $K$-groups degenerates into split short exact sequences.</p>
 <p><strong>Theorem (devissage).</strong> Let $\mathcal{A}$ be an abelian category and $\mathcal{B}$ a full abelian subcategory closed under subobjects and quotients, such that every object of $\mathcal{A}$ has a finite filtration with quotients in $\mathcal{B}$. Then the inclusion induces a weak homotopy equivalence $K(\mathcal{B}) \to K(\mathcal{A})$.</p>
@@ -143,7 +143,7 @@ K(\mathcal{B}) \to K(\mathcal{A}) \to K(\mathcal{A}/\mathcal{B}),
 $$</p>
 <p>and hence a long exact sequence</p>
 <p>$$
-\cdots \to K_n(\mathcal{B}) \to K_n(\mathcal{A}) \to K_n(\mathcal{A}/\mathcal{B}) \to K_{n-1}(\mathcal{B}) \to \cdots .
+\boxed{\;\cdots \to K_n(\mathcal{B}) \to K_n(\mathcal{A}) \to K_n(\mathcal{A}/\mathcal{B}) \to K_{n-1}(\mathcal{B}) \to \cdots\;} .
 $$</p>
 <p><em>Proof sketch.</em> All three theorems are proved from the $S_\bullet$-construction and the additivity theorem: the localisation theorem uses the fibration sequence of Waldhausen categories associated to the quotient, and the long exact sequence is the homotopy long exact sequence of the fibration of spectra.</p>
 <p><strong>Remark.</strong> These three theorems are the working tools of the subject. Localisation gives the $K$-theory of a scheme from that of its closed subschemes and open complements; devissage gives the $K$-theory of a noetherian abelian category from that of the semisimple pieces in a filtration; additivity is the mechanism that makes $K$-theory a homology theory of categories rather than a functor with no exactness.</p>

@@ -166,21 +166,21 @@ $$</p>
 <h3 id="the-mutual-commutants">The Mutual Commutants</h3>
 <p><strong>Theorem (double centraliser).</strong> The commutant of the left multiplications is the right multiplications and conversely,</p>
 <p>$$
-\{L_a : a\in\mathrm{Cl}(V,\mathfrak{Q})\}'=\{\,R_b\}, \qquad \{\,R_b\}'=\{L_a\}.
+\boxed{\;\{L_a : a\in\mathrm{Cl}(V,\mathfrak{Q})\}'=\{\,R_b\}, \qquad \{\,R_b\}'=\{L_a\}\;}.
 $$</p>
 <p><strong>Proof.</strong> An operator $T$ commutes with every $L_a$ exactly when $T(ay)=aT(y)$ for all $a,y$, that is exactly when $T$ is left $\mathrm{Cl}(V,\mathfrak{Q})$-linear; such a $T$ is determined by its value at $1$, since $T(y)=T(y\cdot1)=y\,T(1)$, so $T=R_{T(1)}$. The second identity is the same statement with the multiplication reversed.</p>
 <p><strong>Remark.</strong> The theorem is the double centraliser theorem for the regular bimodule, and it is the statement that the left and the right multiplications are each other's commutant. It does not say that they generate all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, and that stronger statement is false in general, as the next proposition shows.</p>
 <h3 id="the-image-of-the-enveloping-algebra">The Image of the Enveloping Algebra</h3>
 <p><strong>Proposition.</strong> The left and the right multiplications together generate the image of the enveloping algebra under</p>
 <p>$$
-\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr),
+\boxed{\;\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr)\;},
 $$</p>
 <p>an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, of dimension $(\dim\mathrm{Cl})^2$, exactly when $\mathrm{Cl}(V,\mathfrak{Q})$ is <strong>central simple</strong> over $F$; otherwise it is a proper subalgebra.</p>
 <p><strong>Counterexample (the naive double centraliser).</strong> For $\mathrm{Cl}_{0,3}(\mathbb{R})$ one has $\dim\mathrm{Cl}=8$ and $\dim\mathrm{End}_F(\mathrm{Cl})=64$, while the maps $L_aR_b$ span only $32$ dimensions. So the claim that the left and the right multiplications always generate $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$ is false; the correct statement carries the central-simplicity hypothesis, and the two-sided family spans the same image, being a subfamily of the same maps.</p>
 <h2 id="the-one-sided-operators-do-not-preserve-the-quadratic-space">The One-Sided Operators Do Not Preserve the Quadratic Space</h2>
 <p><strong>Theorem.</strong> The only left multiplications that carry the space of vectors into itself are the scalars:</p>
 <p>$$
-\{\,x : L_x(V)\subseteq V\,\}=F\cdot 1 .
+\boxed{\;\{\,x : L_x(V)\subseteq V\,\}=F\cdot 1\;} .
 $$</p>
 <p><strong>Example.</strong> In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $e_j^{2}=-1$ the left multiplication $L_{e_1}$ sends the vector $e_1$ to the scalar $-1$ and the vector $e_2$ to the bivector $e_1e_2$, and the even left multiplication by $e_1e_2$ sends $e_1$ to $e_2$ but $e_3$ to the trivector $e_1e_2e_3$. So no non-scalar left multiplication preserves $V$.</p>
 <p><strong>Remark.</strong> This is the structural reason for the two-sided family. The signed inner conjugation $\alpha(x)\,y\,x^{-1}$ preserves $V$ for $x$ in the Clifford group $\Gamma(V,\mathfrak{Q})$, and it does so because the two factors are paired; the individual factors do not preserve $V$, and half of a geometric transformation is not a geometric transformation. The one-sided operators are nevertheless the right objects on the module: on the spinor module the Clifford algebra acts by left multiplication alone, and there the action is one-sided by construction, which is the theme of <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> and of <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>.</p>

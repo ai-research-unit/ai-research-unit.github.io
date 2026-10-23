@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> The <strong>adjoint</strong> of the involutive Banach algebra $(A,\cdot\,{}^*)$ is the map $a \mapsto a^*$; it is an anti-automorphism of the algebra of order two and a topological isomorphism of $A$ onto $A^{\mathrm{opp}}$ when it is continuous.</p>
 <p><strong>Proposition (the calculus of the adjoint).</strong> For all $a,b \in A$,</p>
 <p>$$
-(ab)^* = b^*a^* , \qquad (a + b)^* = a^* + b^* , \qquad (\lambda a)^* = \bar\lambda a^* , \qquad a^{**} = a ,
+\boxed{\;(ab)^* = b^*a^* , \qquad (a + b)^* = a^* + b^* , \qquad (\lambda a)^* = \bar\lambda a^* , \qquad a^{**} = a\;} ,
 $$</p>
 <p>and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves invertibility and $\sigma(a^*) = \overline{\sigma(a)}$. For every integer $n$, $(a^n)^* = (a^*)^n$, and if $a$ is invertible the identity extends to all integers; the adjoint commutes with the exponential, $(\exp(a))^* = \exp(a^*)$, when the involution is continuous.</p>
 <p><strong>Proof.</strong> The first four identities are the definition of the involution; $(a^{-1})^*(a^*) = (a a^{-1})^* = 1$ and $(a^*)(a^{-1})^* = 1$ give the inverse formula; the power formula is induction on the anti-multiplicativity; the exponential is the norm-convergent series, and a continuous conjugate-linear map commutes with its limits, giving $(\exp(a))^* = \sum a^{*n}/n! = \exp(a^*)$.</p>
@@ -97,7 +97,7 @@ $$</p>
 <p><strong>Proof.</strong> Closure under products and inverses is the calculus of the adjoint, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$; the adjoint is continuous for an isometric involution, so $\mathrm{U}(A)$ is a topological group; in a $\mathrm{C}^*$-algebra the unitaries have norm one and form a closed subset of the unit sphere, compact in finite dimension. The exponential statement is the proposition of this article.</p>
 <p><strong>Proposition (the adjoint and the Gelfand transform).</strong> In a commutative unital $\mathrm{C}^*$-algebra the adjoint corresponds to complex conjugation of the Gelfand transform,</p>
 <p>$$
-\mathcal F(a^*) = \overline{\mathcal F a} ,
+\boxed{\;\mathcal F(a^*) = \overline{\mathcal F a}\;} ,
 $$</p>
 <p>so the self-adjoint elements are the elements with real-valued transforms, the positive elements those with non-negative transforms and the unitary elements those with unimodular transforms; the Gelfand transform is a <code>*</code>-isomorphism onto $C(\operatorname{Max}(A))$ and carries the adjoint calculus to pointwise conjugation.</p>
 <p><strong>Proof.</strong> A character satisfies $\chi(a^*) = \overline{\chi(a)}$ by the reality of the self-adjoint elements under the transform, equivalently by the commutative Gelfand–Naimark theorem of <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>; the identification of the three classes is then pointwise.</p>

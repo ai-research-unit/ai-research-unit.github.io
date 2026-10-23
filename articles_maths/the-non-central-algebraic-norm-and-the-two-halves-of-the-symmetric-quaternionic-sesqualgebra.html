@@ -76,18 +76,18 @@
 <h2 id="the-algebraic-norm-as-an-element">The Algebraic Norm as an Element</h2>
 <p><strong>Theorem (the algebraic norm).</strong> For every biquaternion,</p>
 <p>$$
+\boxed{\;
 \tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q,
 \qquad
-\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\sum_{\mu\in\{x,y,z\}}|Q_\mu|^{2}.
+\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\sum_{\mu\in\{x,y,z\}}|Q_\mu|^{2}
+\;}.
 $$</p>
 <p>The scalar part is real and the vector part is $-2\mathrm{Re}(Q_t\overline{\vec Q})=-2\sum_{\mu\in\{x,y,z\}}\mathrm{Re}(Q_t\overline{Q_\mu})\vec e_\mu$, a real vector.</p>
 <p><em>Proof.</em> Put $\tilde Q_1=\tilde Q_2=\tilde Q$ in the scalar–vector form of <em>Introduction to the Symmetric Quaternionic Sesqualgebra</em>: the scalar part becomes $Q_t\overline{Q_t}-(\vec Q,\overline{\vec Q})=|Q_t|^{2}-\sum_{\mu\in\{x,y,z\}}|Q_\mu|^{2}$, a real number, and the vector part becomes $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q=-2\mathrm{Re}(Q_t\overline{\vec Q})$, a real vector.</p>
 <p><strong>Remark (the algebraic norm is a real element).</strong> Both the scalar and the vector part of the algebraic norm are real, so the algebraic norm always lies in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, whatever element one starts from. A general element of the block has two complex components in each slot, but its square has only real ones. The reason is the conjugate-commutativity: the algebraic norm is its own conjugate, $\tilde Q\star\tilde Q=\overline{\tilde Q\star\tilde Q}$, and the fixed elements of the coefficientwise conjugation are exactly the real quaternions.</p>
 <h2 id="the-criterion-of-centrality">The Criterion of Centrality</h2>
 <p><strong>Theorem (centrality of the algebraic norm).</strong> $\tilde Q\star\tilde Q$ lies in the centre exactly when</p>
-<p>$$
-Q_t\overline{Q_\mu}\in i\mathbb{R}\quad\text{for every }\mu\in\{x,y,z\},
-$$</p>
+<p>$$ \boxed{\; Q_t\overline{Q_\mu}\in i\mathbb{R}\quad\text{for every }\mu\in\{x,y,z\} \;}, $$</p>
 <p>that is, when $Q_t\overline{\vec Q}$ is a purely imaginary vector, and in particular when $Q_t=0$.</p>
 <p><em>Proof.</em> The centre is $\mathbb{C}e_t$, so the algebraic norm is central exactly when its vector part vanishes. The $\mu$-th component of the vector part is $-Q_t\overline{Q_\mu}-\overline{Q_t}Q_\mu=-2\mathrm{Re}(Q_t\overline{Q_\mu})$, which vanishes exactly when $\mathrm{Re}(Q_t\overline{Q_\mu})=0$, that is when $Q_t\overline{Q_\mu}$ is purely imaginary. If $Q_t=0$ the three conditions hold.</p>
 <p><strong>Corollary (the two witnesses).</strong> On the two elements</p>
@@ -105,9 +105,11 @@ $$</p>
 <h2 id="the-two-halves-of-the-algebraic-norm">The Two Halves of the Algebraic Norm</h2>
 <p><strong>Theorem (the two orders).</strong> The two orders whose half-sum is the algebraic norm are</p>
 <p>$$
+\boxed{\;
 \tilde Q^{\natural}\tilde Q^{*}
 \quad\text{and}\quad
-\tilde Q^{*}\tilde Q^{\natural},
+\tilde Q^{*}\tilde Q^{\natural}
+\;},
 $$</p>
 <p>their sum is $2\,\tilde Q\star\tilde Q$, their difference is $2\vec Q\times\overline{\vec Q}$, and their scalar parts are equal to $\langle\tilde Q,\tilde Q\rangle_{\natural*}$.</p>
 <p><em>Proof.</em> The definitions give $\tilde Q^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde Q^{\natural}=2\,\tilde Q\star\tilde Q$ and $\tilde Q^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde Q^{\natural}=2\,\vec Q\times\overline{\vec Q}$, the second by the identification of the antisymmetric part with the cross product. The scalar parts are equal because $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$ for the plain product.</p>

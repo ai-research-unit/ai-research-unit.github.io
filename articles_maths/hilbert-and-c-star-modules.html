@@ -110,7 +110,7 @@ $$</p>
 <h3 id="the-math94-valued-norm">The $A$-valued norm</h3>
 <p><strong>Theorem (Cauchy–Schwarz).</strong> Let $E$ be a pre-Hilbert $A$-module. For all $x,y \in E$,</p>
 <p>$$
-\langle x,y\rangle^*\langle x,y\rangle \leq \|x\|^2 \langle y,y\rangle, \qquad \|\langle x,y\rangle\| \leq \|x\|\,\|y\|.
+\boxed{\;\langle x,y\rangle^*\langle x,y\rangle \leq \|x\|^2 \langle y,y\rangle, \qquad \|\langle x,y\rangle\| \leq \|x\|\,\|y\|\;}.
 $$</p>
 <p>The first inequality is in the order of $A$; the second is the numerical consequence.</p>
 <p><em>Proof.</em> For $a \in A$ and a real parameter, positivity of $\langle x a+y, x a+y\rangle$ expanded in the second variable gives</p>
@@ -120,7 +120,7 @@ $$</p>
 <p>Choose $a=-\langle x,x\rangle^{-1}\langle x,y\rangle$ when $\langle x,x\rangle$ is invertible, which cancels the two linear terms of the expansion, and approximate in general; the resulting inequality is the first statement. Taking norms and using the $C^*$-identity $\|a^*a\|=\|a\|^2$ and the inequality $\|u^* v\|\le\|u\|\|v\|$ gives $\|\langle x,y\rangle\|^2\leq\|x\|^2\|y\|^2$, whence the second.</p>
 <p><strong>Theorem.</strong> The $A$-valued norm $\|x\|=\|\langle x,x\rangle\|^{1/2}$ is a norm on $E$. It satisfies the parallelogram law</p>
 <p>$$
-\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2
+\boxed{\;\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2\;}
 $$</p>
 <p>when the inner product is scalar-valued, that is for $A=\mathbb{C}$, and it fails in general.</p>
 <p><em>Proof.</em> Positive definiteness is axiom 3. Homogeneity in the complex scalars, $\|x\lambda\|=|\lambda|\,\|x\|$ for $\lambda\in\mathbb{C}$, holds because $\langle x\lambda,x\lambda\rangle=\bar\lambda\langle x,x\rangle\lambda=|\lambda|^2\langle x,x\rangle$, and the general estimate $\|xa\|\leq\|x\|\,\|a\|$ for $a\in A$ follows from the $C^*$-identity, $\|a^*\langle x,x\rangle a\|\leq\|a\|^2\|\langle x,x\rangle\|$, so that $E$ is a normed complex vector space. The triangle inequality follows from Cauchy–Schwarz:</p>
@@ -189,7 +189,7 @@ $$</p>
 <p>The compatibility relation is the statement that the left inner product acts as a left multiplication operator and the right inner product as a right multiplication operator, so that each is recoverable from the other.</p>
 <p><strong>Theorem (Rieffel).</strong> If $E$ is an $A$-$B$-imprimitivity bimodule, then</p>
 <p>$$
-A \cong \mathcal{K}(E_B), \qquad B \cong \mathcal{K}({}_A E),
+\boxed{\;A \cong \mathcal{K}(E_B), \qquad B \cong \mathcal{K}({}_A E)\;},
 $$</p>
 <p>and the categories of nondegenerate *-representations of $A$ and of $B$ are equivalent. The algebras $A$ and $B$ are then said to be <strong>Morita equivalent</strong> as $C^*$-algebras.</p>
 <p>The theorem is the $C^*$-algebraic counterpart of the Morita theorems of <em>Morita Equivalence</em>: the imprimitivity bimodule plays the role of the progenerator, and the compact-operator algebras $\mathcal{K}$ play the role of the endomorphism algebras $\operatorname{End}$, the equivalence of module categories being implemented by the same balanced-product construction as before. For $A=B=\mathbb{C}$ and $E=\mathbb{C}$ the bimodule is trivial; for $A=M_n(\mathbb{C})$, $B=\mathbb{C}$, the module $E=\mathbb{C}^n$ with the forms of §Examples (e) makes $M_n(\mathbb{C})$ and $\mathbb{C}$ Morita equivalent. The standard algebraic statement that $A$ and $M_n(A)$ are Morita equivalent is the case $E=A^n$.</p>

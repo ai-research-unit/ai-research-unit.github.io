@@ -171,7 +171,7 @@ $$</p>
 <p>It is a subgroup of $G^\vee$, closed in the compact-open topology, and the assignment $H \mapsto H^\perp$ reverses inclusions.</p>
 <p><strong>Theorem (annihilator duality).</strong> Let $G$ be a locally compact abelian group and $H \subseteq G$ a closed subgroup. Then</p>
 <p>$$
-(G/H)^\vee \cong H^\perp, \qquad H^\vee \cong G^\vee / H^\perp,
+\boxed{\;(G/H)^\vee \cong H^\perp, \qquad H^\vee \cong G^\vee / H^\perp\;},
 $$</p>
 <p>as topological groups, the first isomorphism carrying a character of $G/H$ to its composite with the quotient map and the second carrying a character of $H$ to its class modulo the characters vanishing on $H$.</p>
 <p><strong>Proof.</strong> The first map is certainly an injective homomorphism of $H^\perp$ onto $(G/H)^\vee$: a character of $G$ vanishing on $H$ factors through $G/H$, and conversely a character of $G/H$ pulls back to one of $G$ vanishing on $H$; continuity is preserved because the quotient map is continuous and open. The second map is the composite $G^\vee \to H^\vee$ of restriction with the quotient by its kernel $H^\perp$, which is a continuous open homomorphism because restriction to a closed subgroup is continuous for the compact-open topology; injectivity and surjectivity are the statement that every character of a closed subgroup extends to $G$, the extension theorem for locally compact abelian groups, which is deduced from the structure theorem in the standard theory and is quoted here as standard.</p>
@@ -190,7 +190,7 @@ $$</p>
 $$</p>
 <p>where $n \geq 0$ and $K$ is a compact abelian group; equivalently, $G \cong \mathbb{R}^n \times G_1$ with $G_1$ a locally compact abelian group containing a compact open subgroup, and the global product $G \cong \mathbb{R}^n \times K$ with $K$ compact is not available in general. And $G$ is compactly generated if and only if</p>
 <p>$$
-G \cong \mathbb{R}^n \times \mathbb{Z}^m \times K
+\boxed{\;G \cong \mathbb{R}^n \times \mathbb{Z}^m \times K\;}
 $$</p>
 <p>with $K$ compact; the compact factor is finite, $G \cong \mathbb{R}^n \times \mathbb{Z}^m \times F$, exactly when $G$ contains no infinite compact subgroup.</p>
 <p><strong>Proof sketch.</strong> The identity component $G_0$ of $G$ is a connected locally compact abelian group. By the solution of Hilbert's fifth problem in the abelian case — the theorem of Gleason and Montgomery–Zipp, as stated — a connected locally compact group is a projective limit of Lie groups; for an abelian group the limit is a Lie group, and a connected abelian Lie group is of the form $\mathbb{R}^n \times T^k$ with $T^k$ a torus. Passing to the quotient $G/G_0$, which is totally disconnected and locally compact, one uses van Dantzig's theorem that a totally disconnected locally compact group has a compact open subgroup, and hence contains an open compact subgroup; combining the two gives an open subgroup $\mathbb{R}^n \times K$ with $K$ compact. For the compactly generated refinement, the quotient of $G$ by the open subgroup $\mathbb{R}^n \times K$ is a compactly generated discrete abelian group, hence finitely generated; since $G$ is abelian the extension is central, and the compact factor may be enlarged to absorb the finite part, so that $G \cong \mathbb{R}^n \times \mathbb{Z}^m \times K$ with $K$ compact, namely the maximal compact subgroup of $G$. The compact factor is finite exactly when $G$ has no infinite compact subgroup, the case of the classical form $\mathbb{R}^n \times \mathbb{Z}^m \times F$; the compactly generated group $\mathbb{Z}_p$ shows that it can be infinite.</p>
@@ -214,7 +214,7 @@ $$</p>
 <p>The main theorem of the theory is stated here and developed in the companion article <em>Pontryagin Duality</em>.</p>
 <p><strong>Theorem (Pontryagin duality).</strong> For every locally compact abelian group $G$, the evaluation map</p>
 <p>$$
-\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x),
+\boxed{\;\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x)\;},
 $$</p>
 <p>is an isomorphism of topological groups. The assignment $G \mapsto G^\vee$ is a contravariant functor that is an equivalence of categories between the category of locally compact abelian groups and its opposite, and it carries compact groups to discrete groups and conversely.</p>
 <p><strong>Proof sketch.</strong> The evaluation map is a continuous homomorphism by the definition of the compact-open topology, and it is injective by the separation theorem above. Surjectivity and the topological statement reduce, by the structure theorem, to the cases $G = \mathbb{R}^n$, $G = S^1$, $G = \mathbb{Z}$, $G$ finite and $G$ compact; in each the computation is explicit — $\mathbb{R}^n$ is self-dual, $\mathbb{Z}^\vee = S^1$ and $(S^1)^\vee = \mathbb{Z}$ are exchanged, and a finite abelian group is (non-canonically) isomorphic to its dual, with the canonical evaluation being an isomorphism in each case. The general case follows by the exactness of duality on the open subgroup $\mathbb{R}^n \times K$ and the discreteness of the quotient. The complete argument, together with the verification that evaluation is a homeomorphism and not merely a bijection, is not covered here.</p>

@@ -95,7 +95,7 @@ $$</p>
 <h3 id="the-failure-off-the-hermitian-part">The Failure off the Hermitian Part</h3>
 <p><strong>Theorem.</strong> The Jordan identity for the symmetrisation of the derived sesquilinear product fails off the Hermitian part. In $A = M_{2}(\mathbb{C})$ with the conjugate transpose, for $x = E_{12}$ and $y = E_{22}$,</p>
 <p>$$
-(x \circ y) \circ (x \circ x) = \tfrac14\bigl(E_{12} + E_{21}\bigr) \neq 0 = x \circ \bigl(y \circ (x \circ x)\bigr) .
+\boxed{\;(x \circ y) \circ (x \circ x) = \tfrac14\bigl(E_{12} + E_{21}\bigr) \neq 0 = x \circ \bigl(y \circ (x \circ x)\bigr)\;} .
 $$</p>
 <p><strong>Proof.</strong> With the matrix-unit rule $E_{ab}E_{cd} = \delta_{bc}E_{ad}$: $x \circ x = E_{12}E_{21} = E_{11}$, and $y \circ (x \circ x) = E_{22} \circ E_{11} = \tfrac12(E_{22}E_{11} + E_{11}E_{22}) = 0$, so the right-hand side is $x \circ 0 = 0$. On the left, $x \circ y = \tfrac12(E_{12}E_{22} + E_{22}E_{21}) = \tfrac12(E_{12} + E_{21})$, whose symmetrisation with $E_{11}$ is $\tfrac12\bigl(\tfrac12(E_{12}+E_{21})E_{11} + E_{11}\tfrac12(E_{12}+E_{21})\bigr) = \tfrac14\bigl(E_{12}+E_{21}\bigr)$, and the two sides differ.</p>
 <p><strong>Remark.</strong> One of the two elements is Hermitian, $y = E_{22}$, and one is not; a single element off $H(A)$ breaks the identity. The mechanism is the one identified in <em>The Sesquilinear Symmetrised Product</em>: the identity for a symmetrisation is inherited from the associativity of the product being symmetrised, and off the Hermitian part the product being symmetrised is the derived operation $x \star y = xy^{*}$, which is not associative. On $H(A)$ the derived operation coincides with the associative product, and there the identity holds — this is the theorem of the next section.</p>
@@ -110,7 +110,7 @@ $$</p>
 <h3 id="the-theorem">The Theorem</h3>
 <p><strong>Theorem.</strong> The Hermitian part with the symmetrisation,</p>
 <p>$$
-J(A) = \bigl(H(A), \circ\bigr) , \qquad x \circ y = \tfrac12\bigl(xy + yx\bigr) \text{ for } x, y \in H(A) ,
+\boxed{\;J(A) = \bigl(H(A), \circ\bigr) , \qquad x \circ y = \tfrac12\bigl(xy + yx\bigr) \text{ for } x, y \in H(A)\;} ,
 $$</p>
 <p>is a commutative Jordan algebra over the fixed ring $R^{\varsigma}$: the product is commutative and $R^{\varsigma}$-bilinear, and it satisfies the Jordan identity.</p>
 <p><strong>Proof.</strong> On $H(A)$ the derived operation is the associative product, so $\circ$ is the symmetrisation $\tfrac12(xy + yx)$ of that product, and the Jordan identity is inherited from the associativity of $A$; commutativity is by construction and the $R^{\varsigma}$-bilinearity is the scalar rule above. The development of the algebra, its axioms, its envelope, its trace form, its idempotents, its Peirce decomposition, its degree and its quadratic representation is <em>The Hermitian Jordan Algebra</em>.</p>
@@ -144,7 +144,7 @@ $$</p>
 <h3 id="the-binary-product-as-a-shadow">The Binary Product as a Shadow</h3>
 <p><strong>Theorem (recalled, the unital reading).</strong> In the unital case the ternary product determines the binary one and the involution,</p>
 <p>$$
-\{x,y,1\} = x \star y , \qquad \{1,y,1\} = y^{*} , \qquad xy = x \star y^{*} ,
+\boxed{\;\{x,y,1\} = x \star y , \qquad \{1,y,1\} = y^{*} , \qquad xy = x \star y^{*}\;} ,
 $$</p>
 <p>so the derived operation, the involution and the associative product are recovered from the ternary product by inserting the unit.</p>
 <p><strong>Proof.</strong> $\{x,y,1\} = xy^{*}1 = x \star y$ and $\{1,y,1\} = y^{*}$; then $x \star y^{*} = x(y^{*})^{*} = xy$. This is <em>Algebraic J*-Algebras</em>, §<em>The Binary Product as a Shadow</em>.</p>

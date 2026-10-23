@@ -112,19 +112,19 @@ $$</p>
 <p>a formal series in $z,w,u$, so that $\delta(z-w) = \sum_{n\in\mathbb{Z}}z^nw^{-n-1}$; the identities $z^{-1}\delta(\frac{y-x}{z}) - z^{-1}\delta(\frac{y-x}{-z}) = y^{-1}\delta(\frac{x+z}{y})$ hold as identities of formal series, and they are the algebraic form of the elementary relations satisfied by the delta function of analysis.</p>
 <p><strong>Theorem (the Jacobi identity).</strong> The locality axiom for a pair of fields $Y(a,x)$, $Y(b,y)$ is equivalent to the <strong>Jacobi identity</strong></p>
 <p>$$
-z^{-1}\delta\Bigl(\frac{y-x}{z}\Bigr)Y(a,x)Y(b,y) \;- \; z^{-1}\delta\Bigl(\frac{y-x}{-z}\Bigr)Y(b,y)Y(a,x) \;=\; y^{-1}\delta\Bigl(\frac{x+z}{y}\Bigr)Y\bigl(Y(a,z)b,\,y\bigr),
+\boxed{\;z^{-1}\delta\Bigl(\frac{y-x}{z}\Bigr)Y(a,x)Y(b,y) \;- \; z^{-1}\delta\Bigl(\frac{y-x}{-z}\Bigr)Y(b,y)Y(a,x) \;=\; y^{-1}\delta\Bigl(\frac{x+z}{y}\Bigr)Y\bigl(Y(a,z)b,\,y\bigr)\;},
 $$</p>
 <p>an identity between formal series in $x,y,z$ with coefficients in $\operatorname{End}_k(V)$; consequently a vertex algebra is a vector space with a <strong>quasi-symmetric product</strong> in the sense of the identity, and the identity is the algebraic form of the locality in which the theory is usually axiomatised.</p>
 <p><em>Proof (outline).</em> Multiplying the identity by a large power of $z$ and comparing the coefficients of $x^my^nz^n$ reduces both sides to the mode identities; the locality of the two fields says precisely that the coefficients of $Y(a,x)Y(b,y)$ and of $Y(b,y)Y(a,x)$ coincide in all but finitely many of the products, and the right-hand side encodes those differences through the vectors $a_{(n)}b$, so that the two formulations are equivalent. The computation is the standard one, and the two formulations of the axioms are used interchangeably in the literature.</p>
 <p><strong>Theorem (the mode commutator formula).</strong> For $a,b\in V$ the modes satisfy</p>
 <p>$$
-\bigl[a_{(m)},b_{(n)}\bigr] = \sum_{j\geq0}\binom{m}{j}\,\bigl(a_{(j)}b\bigr)_{(m+n-j)},
+\boxed{\;\bigl[a_{(m)},b_{(n)}\bigr] = \sum_{j\geq0}\binom{m}{j}\,\bigl(a_{(j)}b\bigr)_{(m+n-j)}\;},
 $$</p>
 <p>the sum being finite because $a_{(j)}b = 0$ for $j\gg0$.</p>
 <p><em>Proof.</em> The identity is the coefficient form of the Jacobi identity: the terms of the left-hand side of the Jacobi identity produce the binomial coefficients through the expansion of the powers of $(y-x)$, and the right-hand side produces the modes of the field of the vector $a_{(j)}b$.</p>
 <p><strong>Corollary (associativity).</strong> For all $a,b,c\in V$ the <strong>Borcherds identity</strong></p>
 <p>$$
-(a_{(m)}b)_{(n)}c = \sum_{j\geq0}(-1)^j\binom{m}{j}\Bigl(a_{(m-j)}b_{(n+j)}c - (-1)^mb_{(m+n-j)}a_{(j)}c\Bigr)
+\boxed{\;(a_{(m)}b)_{(n)}c = \sum_{j\geq0}(-1)^j\binom{m}{j}\Bigl(a_{(m-j)}b_{(n+j)}c - (-1)^mb_{(m+n-j)}a_{(j)}c\Bigr)\;}
 $$</p>
 <p>holds; it expresses the associativity of the product in terms of the modes and is again equivalent to the Jacobi identity.</p>
 <h2 id="consequences-the-operator-product-expansion">Consequences: the Operator Product Expansion</h2>

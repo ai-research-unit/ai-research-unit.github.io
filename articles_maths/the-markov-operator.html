@@ -93,7 +93,7 @@ $$
 so the measure action is the transpose of the function action. It is not the Hilbert adjoint: the adjoint of $P$ with respect to an invariant measure $\pi$ is computed in <em>The Adjoint of the Markov Operator</em>, later in this category, and it is a different operator whenever the chain is not reversible.</p>
 <p><strong>Theorem (Chapman–Kolmogorov).</strong> For all $m,n\ge0$,
 $$
-P^{m+n}=P^mP^n,\qquad P^nf(x)=\mathbb E_x[f(X_n)],\qquad \mu P^n(B)=\mathbb P_\mu(X_n\in B).
+\boxed{\;P^{m+n}=P^mP^n,\qquad P^nf(x)=\mathbb E_x[f(X_n)],\qquad \mu P^n(B)=\mathbb P_\mu(X_n\in B)\;}.
 $$
 The powers $\{P^n\}$ are the discrete semigroup of the chain, and the identity is the semigroup law of the transition operator in discrete time.</p>
 <p><em>Proof.</em> The measure-preserving form of the Chapman–Kolmogorov equations of <em>Markov Chains and Processes</em> is $p^{(m+n)}(x,B)=\int_E p^{(m)}(y,B)\,p^{(n)}(x,dy)$; reading it as the composition of the two actions gives $P^{m+n}=P^mP^n$, and the probabilistic display is the iteration.</p>
@@ -128,7 +128,7 @@ so $P$ is a contraction of every $L^{n}(\pi)$ that fixes the constants.</p>
 <h3 id="the-mean-ergodic-theorem">The mean ergodic theorem</h3>
 <p><strong>Theorem (mean ergodic theorem for the Markov operator).</strong> Let $\pi$ be invariant and ergodic and let $\Pi$ be the orthogonal projection of $L^2(\pi)$ onto the constants, $\Pi f=\int_E f\,d\pi\,\mathbf 1$. Then for every $f\in L^2(\pi)$,
 $$
-\frac1n\sum_{k=0}^{n-1}P^kf\longrightarrow \Pi f\qquad \text{in } L^2(\pi),
+\boxed{\;\frac1n\sum_{k=0}^{n-1}P^kf\longrightarrow \Pi f\qquad \text{in } L^2(\pi)\;},
 $$
 and the convergence is dominated by $\|f\|_{L^2(\pi)}$.</p>
 <p><em>Proof.</em> The operator $P$ is a contraction of $L^2(\pi)$ with fixed space the constants, and the Cesàro averages of the powers of a contraction converge in the strong operator topology to the orthogonal projection onto the fixed space; this is the von Neumann ergodic theorem applied to $P$, proved in <em>The Ergodic Operator</em>, later in this category, where the general operator statement is given. The identification of the limit with the constant of the mean is the ergodicity criterion, and the domination is the contractivity.</p>
@@ -155,7 +155,7 @@ $$
 a positive number by the theorem above.</p>
 <p><strong>Theorem (mixing rate).</strong> The total variation distance to stationarity is bounded by
 $$
-\|\mathbb P_\mu(X_n\in\cdot)-\pi(\cdot)\|_{\mathrm{TV}}\le\frac12\Bigl(\max_x\frac{\mu(x)}{\pi(x)}\Bigr)^{1/2}(1-\gamma)^n,
+\boxed{\;\|\mathbb P_\mu(X_n\in\cdot)-\pi(\cdot)\|_{\mathrm{TV}}\le\frac12\Bigl(\max_x\frac{\mu(x)}{\pi(x)}\Bigr)^{1/2}(1-\gamma)^n\;},
 $$
 so the chain mixes at the geometric rate of the spectral gap.</p>
 <p><em>Proof.</em> The inequality is the standard spectral bound for a finite chain, obtained by expanding the initial distribution in the eigenbasis of $P$ on $L^2(\pi)$; the sharp theory is <em>Markov Chains and Processes</em>, and the reversibility case, where the spectrum is real, is <em>Reversible Markov Chains and Time Reversal</em>, later in this category.</p>

@@ -132,7 +132,7 @@ p_+ = \tfrac12(\mathrm{id}+\sigma), \qquad p_- = \tfrac12(\mathrm{id}-\sigma)
 $$</p>
 <p>are $F$-linear maps with $p_+^2 = p_+$, $p_-^2 = p_-$, $p_+ + p_- = \mathrm{id}$ and $p_+p_- = p_-p_+ = 0$, and</p>
 <p>$$
-A = A^+ \oplus A^-, \qquad A^+ = \ker(\sigma - \mathrm{id}), \qquad A^- = \ker(\sigma + \mathrm{id}).
+\boxed{\;A = A^+ \oplus A^-, \qquad A^+ = \ker(\sigma - \mathrm{id}), \qquad A^- = \ker(\sigma + \mathrm{id})\;}.
 $$</p>
 <p><strong>Proof.</strong> $(2p_+)^2 = (\mathrm{id}+\sigma)^2 = \mathrm{id} + 2\sigma + \sigma^2 = 2(\mathrm{id}+\sigma) = 4p_+$, so $p_+^2 = p_+$ because $2$ is invertible; the same computation with $\sigma$ replaced by $-\sigma$ gives $p_-^2 = p_-$, and the sum and the products follow from the definitions. The images of $p_+$ and $p_-$ are the fixed and the negated elements, and every element is $a = p_+(a) + p_-(a)$, uniquely.</p>
 <p><strong>Corollary.</strong> The involution $\sigma$ is a linear involution of the underlying space $A$ in the sense of <em>Involutive Linear Spaces</em>, and its type as a linear involution is the pair $(\dim_F A^+, \dim_F A^-)$.</p>
@@ -142,7 +142,7 @@ $$</p>
 <p><strong>Definition.</strong> On $A$ the <strong>commutator</strong> is $[x,y] = xy - yx$; it is $F$-bilinear, alternating, $[x,x] = 0$, and it satisfies the Jacobi identity, so $A$ with the commutator is a Lie algebra over $F$ in the sense of <em>Lie Algebras</em>.</p>
 <p><strong>Theorem.</strong> Let $\sigma$ be an involution of $A$. Then</p>
 <p>$$
-[A^+, A^+] \subseteq A^-, \qquad [A^+, A^-] \subseteq A^+, \qquad [A^-, A^-] \subseteq A^- .
+\boxed{\;[A^+, A^+] \subseteq A^-, \qquad [A^+, A^-] \subseteq A^+, \qquad [A^-, A^-] \subseteq A^-\;} .
 $$</p>
 <p>In particular $A^-$ is a Lie subalgebra, $A^+$ is a module over it, and $A^- \oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra whose even part is $A^-$ and whose odd part is $A^+$.</p>
 <p><strong>Proof.</strong> For symmetric $x$ and $y$, $\sigma(xy) = \sigma(y)\sigma(x) = yx$, so $\sigma([x,y]) = yx - xy = -[x,y]$ and $[x,y]$ is skew. For symmetric $x$ and skew $y$, $\sigma(xy) = \sigma(y)\sigma(x) = (-y)x = -yx$, so $\sigma([x,y]) = -yx + xy = [x,y]$ and $[x,y]$ is symmetric. For skew $x$ and $y$, $\sigma(xy) = \sigma(y)\sigma(x) = (-y)(-x) = yx$, so $\sigma([x,y]) = yx - xy = -[x,y]$ and $[x,y]$ is skew. The Jacobi identity is inherited from $A$, and the grading statement is the three inclusions with the degrees $\deg A^- = 0$ and $\deg A^+ = 1$.</p>
@@ -203,7 +203,7 @@ $$</p>
 <h3 id="tensor-products-and-endomorphisms">Tensor Products and Endomorphisms</h3>
 <p><strong>Theorem.</strong> Let $(A,\sigma)$ and $(B,\tau)$ be involutive $F$-algebras and let $2 \neq 0$. Then $\sigma \otimes \tau$ on $A \otimes_F B$, defined on decomposable elements by $a \otimes b \mapsto \sigma(a) \otimes \tau(b)$, is an $F$-linear involution, and</p>
 <p>$$
-(A \otimes B)^+ = A^+ \otimes B^+ \;\oplus\; A^- \otimes B^-, \qquad (A \otimes B)^- = A^+ \otimes B^- \;\oplus\; A^- \otimes B^+ .
+\boxed{\;(A \otimes B)^+ = A^+ \otimes B^+ \;\oplus\; A^- \otimes B^-, \qquad (A \otimes B)^- = A^+ \otimes B^- \;\oplus\; A^- \otimes B^+\;} .
 $$</p>
 <p><strong>Proof.</strong> The map is the tensor product of two $F$-linear maps, hence $F$-linear; it reverses a product because the two factors do, fixes $1 \otimes 1$, and has square the identity because each factor has. For the decomposition, $A \otimes B$ is spanned by the four spaces on the right, and each of them lies in the stated eigenvalue space by the multiplicativity of $\sigma \otimes \tau$; the sum is direct because the decomposition of each factor is direct and tensor products of independent subspaces are independent.</p>
 <p><strong>Example.</strong> For $A = B = M_2(F)$ with the transpose and $2 \neq 0$, the symmetric part has dimension $3 \cdot 3 + 1 \cdot 1 = 10$ and the skew part has dimension $3 \cdot 1 + 1 \cdot 3 = 6$, and $10 + 6 = 16 = 4^2$; the involution $\sigma \otimes \tau$ on the sixteen-dimensional algebra $M_2(F) \otimes M_2(F)$ is thus a linear involution of the underlying space of type $(10,6)$.</p>

@@ -100,7 +100,7 @@ $$</p>
 <p>The right factor is inverted so that the assignment is a left action.</p>
 <p><strong>Proposition.</strong> The two-sided action is a left action of $G\times G$, and the permutation representation it defines is</p>
 <p>$$
-\rho : G\times G \longrightarrow \operatorname{Sym}(G), \qquad \rho(a,b)(x) = a\,x\,b^{-1} .
+\boxed{\;\rho : G\times G \longrightarrow \operatorname{Sym}(G), \qquad \rho(a,b)(x) = a\,x\,b^{-1}\;} .
 $$</p>
 <p><strong>Proof.</strong> $((e,e)\cdot x)=x$, and</p>
 <p>$$
@@ -109,7 +109,7 @@ $$</p>
 <p>which is the multiplication of the product group; the statement about $\rho$ is the correspondence between actions and homomorphisms of <em>Transformation Groups</em>.</p>
 <p><strong>Proposition (the kernel of the two-sided action).</strong> The kernel of $\rho$ is the diagonal copy of the centre,</p>
 <p>$$
-\ker\rho = \{(z,z) : z \in Z(G)\} \cong Z(G),
+\boxed{\;\ker\rho = \{(z,z) : z \in Z(G)\} \cong Z(G)\;},
 $$</p>
 <p>so the two-sided action is faithful if and only if $G$ has trivial centre; in general it is a faithful action of the quotient $(G\times G)/Z(G)$, where $Z(G)$ is embedded diagonally.</p>
 <p><strong>Proof.</strong> $(a,b)$ lies in the kernel exactly when $a x b^{-1}=x$ for every $x$, that is $ax=xb$ for every $x$. Taking $x=e$ gives $a=b$; substituting back gives $ax=xa$ for every $x$, so $a\in Z(G)$. Conversely a diagonal pair $(z,z)$ with $z$ central satisfies $zx=xz$ and so acts trivially. The identification of the image with the quotient is the first isomorphism theorem, and an action with kernel $K$ gives a faithful action of $G/K$ by <em>Transformation Groups</em>.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p>The permutation representation $\rho : G\times G\to\operatorname{Sym}(G)$ and the two one-sided representations $\rho_L,\rho_R$ are related by the factorisation of a two-sided element.</p>
 <p><strong>Proposition.</strong> For every $(a,b)$,</p>
 <p>$$
-\rho(a,b) = \rho_L(a)\circ\rho_R(b^{-1}) = \rho_R(b^{-1})\circ\rho_L(a).
+\boxed{\;\rho(a,b) = \rho_L(a)\circ\rho_R(b^{-1}) = \rho_R(b^{-1})\circ\rho_L(a)\;}.
 $$</p>
 <p><strong>Proof.</strong> On $x$, both sides give $axb^{-1}$; the two orders agree because $\rho_L(a)\rho_R(c)=\rho_R(c)\rho_L(a)$ for all $a,c$, each side sending $x$ to $axc$.</p>
 <p>The factorisation exhibits the image of $\rho$ inside the symmetric group: it is the set of products of a left and a right translation. The subgroup of $\operatorname{Sym}(G)$ that this image generates, the commutation of the two one-sided families and the two regular representations they define are <em>Left and Right Multiplication in a Group</em>; here the point is only that the two-sided representation is assembled from the one-sided ones.</p>

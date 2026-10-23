@@ -75,7 +75,7 @@
 <h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
 <p><strong>Proposition.</strong> Every operator splits as</p>
 <p>$$
-T = \tfrac{1}{2}\bigl(T + T^{*}\bigr) + \tfrac{1}{2}\bigl(T - T^{*}\bigr) ,
+\boxed{\;T = \tfrac{1}{2}\bigl(T + T^{*}\bigr) + \tfrac{1}{2}\bigl(T - T^{*}\bigr)\;} ,
 $$</p>
 <p>with the first summand self-adjoint and the second skew-adjoint; the splitting is the eigenspace decomposition of the involution $T \mapsto T^{*}$, and it is unique.</p>
 <p><strong>Proof.</strong> $\bigl(\tfrac{1}{2}(T+T^{*})\bigr)^{*} = \tfrac{1}{2}(T^{*}+T)$ by the additivity and the order-two property of the adjoint, and likewise for the difference; the two subspaces meet only at $0$ because an operator with $T^{*} = T = -T$ is $0$ when $2$ is invertible in the fixed ring. The uniqueness is the uniqueness of the eigenvector decomposition of an involution.</p>
@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Definition.</strong> An operator is of <strong>sign</strong> $\varepsilon \in \{1,-1\}$ when $T^{*} = \varepsilon T$; the operators of sign $+1$ are self-adjoint and those of sign $-1$ skew-adjoint.</p>
 <p><strong>Proposition (the sign rule).</strong> If $S$ has sign $\varepsilon$ and $T$ has sign $\delta$ then</p>
 <p>$$
-(ST + TS)^{*} = \varepsilon\delta\,(ST + TS), \qquad (ST - TS)^{*} = -\varepsilon\delta\,(ST - TS) .
+\boxed{\;(ST + TS)^{*} = \varepsilon\delta\,(ST + TS), \qquad (ST - TS)^{*} = -\varepsilon\delta\,(ST - TS)\;} .
 $$</p>
 <p><strong>Proof.</strong> $(ST)^{*} = T^{*}S^{*} = \delta\varepsilon\,TS$ and $(TS)^{*} = \varepsilon\delta\,ST$; adding gives the first identity and subtracting gives the second, and the two signs $\varepsilon, \delta$ commute as central signs.</p>
 <p><strong>Corollary (the Lie algebra).</strong> The skew-adjoint operators close under the commutator, $[S,T] = ST - TS$, and form a Lie subalgebra $\mathfrak{u}(A,h)$ of the operators; the self-adjoint operators close under the anticommutator $S \circ T = \tfrac{1}{2}(ST + TS)$ and form a Jordan subalgebra.</p>
@@ -97,7 +97,7 @@ $$</p>
 <h2 id="the-cayley-transform-and-the-exponential">The Cayley Transform and the Exponential</h2>
 <p><strong>Proposition (the Cayley transform).</strong> Let $S$ be skew-adjoint and suppose $1 + S$ invertible. Then</p>
 <p>$$
-U = (1 - S)(1 + S)^{-1}
+\boxed{\;U = (1 - S)(1 + S)^{-1}\;}
 $$</p>
 <p>is unitary, and the assignment is inverted by $S = (1 - U)(1 + U)^{-1}$ when $1 + U$ is invertible.</p>
 <p><strong>Proof.</strong> With $S^{*} = -S$, $(1+S)^{*} = 1 - S$ and $(1-S)^{*} = 1+S$, so $U^{*} = \bigl((1+S)^{-1}\bigr)^{*}(1+S) = (1-S)^{-1}(1+S)$; then $U^{*}U = (1-S)^{-1}(1+S)(1-S)(1+S)^{-1}$ and $(1+S)(1-S) = 1 - S^{2} = (1-S)(1+S)$ because the powers of $S$ commute with each other, giving $U^{*}U = 1$. The inversion is the same computation solved for $S$.</p>

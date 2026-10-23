@@ -92,7 +92,7 @@
 <p><strong>Definition.</strong> The <strong>degree</strong> $\deg v$ of a vertex $v$ is the number of its neighbours, $\deg v = |\{u : u \sim v\}|$; a vertex of degree $0$ is <strong>isolated</strong> and one of degree $1$ is a <strong>leaf</strong>. The graph is <strong>locally finite</strong> if every degree is finite, and <strong>$d$-regular</strong> if $\deg v = d$ for every $v$. The <strong>maximum degree</strong> and <strong>minimum degree</strong> are written $\Delta(\Gamma)$ and $\delta(\Gamma)$. In a digraph the <strong>out-degree</strong> and <strong>in-degree</strong> count the arcs with tail and head at the vertex.</p>
 <p><strong>Theorem (handshake lemma).</strong> For every finite graph $\Gamma$,</p>
 <p>$$
-\sum_{v \in V(\Gamma)} \deg v = 2\,|E(\Gamma)|.
+\boxed{\;\sum_{v \in V(\Gamma)} \deg v = 2\,|E(\Gamma)|\;}.
 $$</p>
 <p><em>Proof.</em> Count the pairs $(v,e)$ with $v$ an end of $e$. Each vertex $v$ contributes exactly $\deg v$ such pairs and each edge contributes exactly two, one for each of its ends, so the two counts are equal; no loop occurs, which is why every edge contributes two and not one.</p>
 <p><strong>Corollary.</strong> In every finite graph the number of vertices of odd degree is even.</p>
@@ -112,7 +112,7 @@ $$</p>
 <p><strong>Lemma (edge lower bound).</strong> Every connected finite graph on $n$ vertices has at least $n-1$ edges.</p>
 <p><em>Proof.</em> Induct on $n$; the case $n = 1$ is vacuous. Let $v$ be a vertex and let $\Gamma_1, \ldots, \Gamma_k$ be the components of $\Gamma - v$, of orders $n_1, \ldots, n_k$ with $n_1 + \cdots + n_k = n-1$. By induction $|E(\Gamma_i)| \geq n_i - 1$, so $|E(\Gamma-v)| \geq (n-1) - k$. Each $\Gamma_i$ contains a neighbour of $v$: otherwise no edge of $\Gamma$ would join $\Gamma_i$ to $v$ or to any $\Gamma_j$, and $\Gamma$ would be disconnected. Hence $\deg v \geq k$, and</p>
 <p>$$
-|E(\Gamma)| \geq (n-1-k) + k = n-1.
+\boxed{\;|E(\Gamma)| \geq (n-1-k) + k = n-1\;}.
 $$</p>
 <p><strong>Corollary.</strong> For every finite graph $\Gamma$, $|E(\Gamma)| \geq n - c(\Gamma)$.</p>
 <p><em>Proof.</em> Apply the lemma to each component and add.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p><strong>Remark.</strong> This is the distance of <em>Metric, Uniform and Complete Spaces</em> applied to the graph, and it is the sense in which a graph is a metric space. A vertex and the graph are the only objects of the article; the metric language is inherited, and nothing topological beyond the metric — no compactness, no continuity of an invariant — is used in what follows.</p>
 <p><strong>Definition.</strong> Let $\Gamma$ be a finite connected graph. The <strong>eccentricity</strong> of $v$ is $\operatorname{ecc}(v) = \max_{u \in V(\Gamma)} d(v,u)$; the <strong>diameter</strong> is the greatest distance,</p>
 <p>$$
-\operatorname{diam}\Gamma = \max_{u,v \in V(\Gamma)} d(u,v) = \max_{v} \operatorname{ecc}(v),
+\boxed{\;\operatorname{diam}\Gamma = \max_{u,v \in V(\Gamma)} d(u,v) = \max_{v} \operatorname{ecc}(v)\;},
 $$</p>
 <p>and the <strong>radius</strong> is the least eccentricity, $\operatorname{rad}\Gamma = \min_v \operatorname{ecc}(v)$. A <strong>centre</strong> of $\Gamma$ is a vertex attaining the radius, and a finite connected graph has one because its finite set of eccentricities has a minimum. For an infinite connected graph the two maxima become suprema, which may be infinite, and no centre need exist: on the integer line of the growth example below every eccentricity is infinite. The <strong>diameter of a disconnected graph</strong> is infinite if one insists on a single value for all pairs, and is defined componentwise otherwise.</p>
 <p><strong>Proposition.</strong> For every finite connected graph, $\operatorname{rad}\Gamma \leq \operatorname{diam}\Gamma \leq 2\operatorname{rad}\Gamma$.</p>

@@ -87,7 +87,7 @@ $$</p>
 <h3 id="the-two-families">The Two Families</h3>
 <p><strong>Proposition.</strong> The two families convert into each other under the involution:</p>
 <p>$$
-S_{a,b} = T_{a,b} \circ {}^{*} , \qquad {}^{*} \circ T_{p,q} = S_{q^{*},\,p^{*}} .
+\boxed{\;S_{a,b} = T_{a,b} \circ {}^{*} , \qquad {}^{*} \circ T_{p,q} = S_{q^{*},\,p^{*}}\;} .
 $$</p>
 <p><strong>Proof.</strong> The first is the definition. For the second, $({}^{*} \circ T_{p,q})(x) = (p x q)^{*} = q^{*} x^{*} p^{*} = S_{q^{*},p^{*}}(x)$, using $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$.</p>
 <p><strong>Corollary.</strong> The sandwiches are exactly the products of an ordinary two-sided multiplication with the involution, on one side or the other, so the two families generate the same monoid.</p>
@@ -119,7 +119,7 @@ so a sandwich is an involution exactly when $a b^{*} = 1$, equivalently $a^{*} b
 <h2 id="the-invertible-sandwiches">The Invertible Sandwiches</h2>
 <p><strong>Theorem.</strong> The sandwich $S_{a,b}$ is invertible if and only if $a$ and $b$ are units of $A$, and then</p>
 <p>$$
-S_{a,b}^{-1} = S_{(b^{-1})^{*},\, (a^{-1})^{*}} .
+\boxed{\;S_{a,b}^{-1} = S_{(b^{-1})^{*},\, (a^{-1})^{*}}\;} .
 $$</p>
 <p><strong>Proof.</strong> If $a$ or $b$ is not a unit then multiplication by it is not injective, so $S_{a,b}$ has a nonzero kernel and is not invertible. Conversely $S_{a,b}(x) = a x^{*} b$ is inverted by $S_{(b^{-1})^{*},(a^{-1})^{*}}$ by the table: writing the table as $S_{p,q} \circ S_{r,s} = T_{p s^{*},\, r^{*} q}$, the composite $S_{a,b} \circ S_{(b^{-1})^{*},(a^{-1})^{*}}$ is $T_{a d^{*},\, c^{*} b}$ with $c = (b^{-1})^{*}$ and $d = (a^{-1})^{*}$, that is $T_{a a^{-1},\, (b^{-1}) b} = T_{1,1} = \mathrm{id}$, and the same computation in the other order gives $\mathrm{id}$ as well.</p>
 <p><strong>Proposition (the kernel of the parametrisation).</strong> Let $a, b, c, d$ be units of $A$. Then $S_{a,b} = S_{c,d}$ if and only if there is a central unit $p$ with $c = ap$ and $d = p^{-1} b$, and the assignment $(a,b) \mapsto S_{a,b}$ induces a bijection from the quotient of $A^{\times} \times A^{\times}$ by the action $p \cdot (a,b) = (ap,\, p^{-1}b)$ of the central units onto the set of the invertible sandwiches.</p>
@@ -129,7 +129,7 @@ $$</p>
 <h3 id="the-sandwich-as-a-reflection">The Sandwich as a Reflection</h3>
 <p><strong>Proposition.</strong> For a unitary $u$ the sandwich $S_{u,u}$ is an involution of the module:</p>
 <p>$$
-S_{u,u}^{2} = T_{u u^{*},\, u^{*} u} = T_{1,1} = \mathrm{id} , \qquad S_{u,u}(x) = u\,x^{*}\,u .
+\boxed{\;S_{u,u}^{2} = T_{u u^{*},\, u^{*} u} = T_{1,1} = \mathrm{id} , \qquad S_{u,u}(x) = u\,x^{*}\,u\;} .
 $$</p>
 <p><strong>Proof.</strong> The square is read from the table, and for a unitary $u$ one has $u u^{*} = 1 = u^{*} u$.</p>
 <p><strong>Remark.</strong> The reflection $S_{u,u}$ is the composite $T_{u,u} \circ {}^{*}$ of the involution with the two-sided multiplication by the unitary element $u$, so it is the sandwich that carries the unitary element on the two sides; the sandwich $S_{u,u^{*}}$ is instead the inner involution, and it carries the unitary element on the left and its inverse on the right. The datum ${}^{*} = S_{1,1}$ is the sandwich of the identity, and the reflections $S_{u,u}$ are the family read along the unitary elements.</p>

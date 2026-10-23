@@ -102,7 +102,7 @@ $$</p>
 <p><em>Proof.</em> The estimate is the Cauchy–Schwarz inequality applied to each term of the sum: $|A\nabla u\cdot\overline{\nabla v}|\le\Lambda|\nabla u||\nabla v|$, $|b_j\partial/\partial x_j\,u\bar v|\le\|b_j\|_\infty|\nabla u||v|$ and $|cu\bar v|\le\|c\|_\infty|u||v|$, followed by $|\nabla u||v|\le\frac12(|\nabla u|^2+|v|^2)$ and integration; the constants combine into $C$.</p>
 <p><strong>Theorem (coercivity of the elliptic form).</strong> Let $A$ be symmetric and <strong>uniformly elliptic</strong>, $\lambda|\xi|^2\le A(x)\xi\cdot\xi\le\Lambda|\xi|^2$ with $\lambda>0$, and let $c\ge0$ be bounded. Then the elliptic form is coercive on $H^1_0(\Omega)$:</p>
 <p>$$
-\mathfrak{a}(u,u)\ge\lambda\int_\Omega|\nabla u|^2 \ge \frac{\lambda}{1+C_P}\,\|u\|_{H^1}^2 ,
+\boxed{\;\mathfrak{a}(u,u)\ge\lambda\int_\Omega|\nabla u|^2 \ge \frac{\lambda}{1+C_P}\,\|u\|_{H^1}^2\;} ,
 $$</p>
 <p>where $C_P$ is the Poincaré constant; that is, $\operatorname{Re}\mathfrak{a}(u,u)\ge c_*\|u\|_{H^1}^2$ with $c_*=\lambda/(1+C_P)>0$, and the form is coercive.</p>
 <p><em>Proof.</em> For real symmetric $A$ the principal part is $\int A\nabla u\cdot\overline{\nabla u}\ge\lambda\|\nabla u\|^2$, by the ellipticity, and the lower-order term $\int c|u|^2$ is nonnegative. On $H^1_0(\Omega)$ the Poincaré inequality gives $\|u\|_{L^2}^2\le C_P\|\nabla u\|_{L^2}^2$, so $\|u\|_{H^1}^2=\|u\|^2+\|\nabla u\|^2\le(1+C_P)\|\nabla u\|^2$; substituting the bound on $\|\nabla u\|^2$ gives the display.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p>where $\langle f,v\rangle=\int_\Omega f\bar v\,dx$. The equation is the <strong>weak formulation</strong> of $Lu=f$ with the <strong>Dirichlet condition</strong> $u=0$ on $\partial\Omega$; the condition is imposed by the choice of the test space and not stated separately. A <strong>Neumann problem</strong> is the same equation with the full space $H^1(\Omega)$ as test space, and the boundary condition appears there as an extra term.</p>
 <p><strong>Theorem (existence and uniqueness of the weak solution).</strong> Let the elliptic form be bounded and coercive on $H^1_0(\Omega)$ and let $f\in L^2(\Omega)$. Then there is a unique $u\in H^1_0(\Omega)$ with $\mathfrak{a}(u,v)=\langle f,v\rangle$ for every $v$, and</p>
 <p>$$
-\|u\|_{H^1} \le \frac1c\,\|f\|_{L^2} .
+\boxed{\;\|u\|_{H^1} \le \frac1c\,\|f\|_{L^2}\;} .
 $$</p>
 <p><em>Proof.</em> The map $v\mapsto\langle f,v\rangle$ is a bounded conjugate-linear functional on the Hilbert space $H^1_0(\Omega)$, because $|\langle f,v\rangle|\le\|f\|_{L^2}\|v\|_{L^2}\le\|f\|_{L^2}\|v\|_{H^1}$. The form $\mathfrak{a}$ is bounded and coercive, so the Lax–Milgram theorem of <em>Sesquilinear Forms and the Lax–Milgram Theorem</em> represents it by a boundedly invertible operator and gives the unique $u$ solving the equation, with the stated bound on $u$ in the form norm and hence in $H^1$.</p>
 <p><strong>Theorem (equivalence with the classical problem).</strong> If the weak solution $u$ lies in $H^2(\Omega)$, then $Lu=f$ almost everywhere on $\Omega$ and $u=0$ on $\partial\Omega$ in the trace sense; conversely, a classical solution of $Lu=f$ with $u=0$ on the boundary is a weak solution.</p>
@@ -138,7 +138,7 @@ $$</p>
 <p><em>Proof.</em> The bound is the estimate of the existence theorem, and the linearity is that of the equation. If $Sf=0$ then $\mathfrak{a}(0,v)=0=\langle f,v\rangle$ for every $v$ in the dense subspace $H^1_0$, so $f=0$; the range is by definition the set of weak solutions.</p>
 <p><strong>Theorem (elliptic regularity).</strong> Let the coefficients be smooth and the form uniformly elliptic, and let $f\in L^2(\Omega)$. Then the weak solution lies in $H^2_{\mathrm{loc}}(\Omega)$, and</p>
 <p>$$
-\|u\|_{H^2(\Omega)} \le C\bigl(\|f\|_{L^2(\Omega)}+\|u\|_{L^2(\Omega)}\bigr)
+\boxed{\;\|u\|_{H^2(\Omega)} \le C\bigl(\|f\|_{L^2(\Omega)}+\|u\|_{L^2(\Omega)}\bigr)\;}
 $$</p>
 <p>when the boundary is smooth and the Dirichlet condition is imposed; in particular the solution operator factors through $H^2\cap H^1_0$ and is compact on $L^2(\Omega)$.</p>
 <p><em>Proof.</em> The interior regularity is the elliptic regularity theorem of <em>Distributions and Fundamental Solutions</em>, obtained by differentiating the weak equation and testing against the difference quotient, and the boundary regularity is the standard estimate for the Dirichlet problem with smooth data; the compactness is the Rellich–Kondrachov theorem of <em>Sobolev Spaces and Weak Solutions</em> applied to the inclusion $H^2\cap H^1_0\hookrightarrow L^2$. The detailed proof, with the boundary estimates, is that of <em>Partial Differential Equations</em>.</p>

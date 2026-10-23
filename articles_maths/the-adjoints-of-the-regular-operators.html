@@ -92,7 +92,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition (the adjoint is an involution of the operator algebra).</strong> If $\beta$ is non-degenerate then $T^{\dagger}$ exists for every $T$ and is unique; the assignment $T \mapsto T^{\dagger}$ is additive, of order two, and reverses composition,</p>
 <p>$$
-(S T)^{\dagger} = T^{\dagger} S^{\dagger}, \qquad (T^{\dagger})^{\dagger} = T, \qquad (\lambda T)^{\dagger} = \sigma(\lambda)\, T^{\dagger} ,
+\boxed{\;(S T)^{\dagger} = T^{\dagger} S^{\dagger}, \qquad (T^{\dagger})^{\dagger} = T, \qquad (\lambda T)^{\dagger} = \sigma(\lambda)\, T^{\dagger}\;} ,
 $$</p>
 <p>so it is the adjoint involution of <em>Involutions of the Endomorphism Ring</em> carried to the operator algebra, $\sigma$-semilinear when $\sigma$ is not the identity.</p>
 <p><strong>Proof.</strong> Uniqueness and existence are the non-degeneracy of $\beta$, as in <em>The Adjoint of an Endomorphism</em>. Additivity and order two are the two linearities of $\beta$. For the reversal, $\beta(STx,y) = \beta(Tx, S^{\dagger}y) = \beta(x, T^{\dagger}S^{\dagger}y)$, so $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$. The scalar law is the $\sigma$-semilinearity of $\beta$ in the second variable.</p>
@@ -106,7 +106,7 @@ $$</p>
 <h3 id="the-left-and-the-right-regular-representations">The left and the right regular representations</h3>
 <p><strong>Theorem.</strong> With respect to the trace pairing $\beta$, the left and the right regular representations are ${}^{*}$-representations of $A$ on the regular module:</p>
 <p>$$
-(L_a)^{\dagger} = L_{a^{*}}, \qquad (R_b)^{\dagger} = R_{b^{*}} .
+\boxed{\;(L_a)^{\dagger} = L_{a^{*}}, \qquad (R_b)^{\dagger} = R_{b^{*}}\;} .
 $$</p>
 <p>Equivalently, $L : A \to \operatorname{End}_F(A)$ is a ${}^{*}$-homomorphism from $A$ with its involution to the operator algebra with its adjoint, and so is $R$ read through the opposite ring.</p>
 <p><strong>Proof.</strong> For the left multiplication, $\beta(L_a x, y) = \tau(a x y^{*}) = \tau(x y^{*} a)$ by the cyclicity of $\tau$, and $\beta(x, L_{a^{*}}y) = \tau(x\,(a^{*}y)^{*}) = \tau(x\,y^{*}a)$ because $(a^{*}y)^{*} = y^{*}\,a$. The two agree, so $(L_a)^{\dagger} = L_{a^{*}}$ by uniqueness. For the right multiplication, $\beta(R_b x, y) = \tau(x b y^{*}) = \tau(x y^{*} b)$ and $\beta(x, R_{b^{*}}y) = \tau(x\,(y b^{*})^{*}) = \tau(x\, b\, y^{*})$, so $(R_b)^{\dagger} = R_{b^{*}}$; the computation is the same with the sides exchanged, and it is the representation-theoretic form of the twisted-pairing statement of <em>The Adjoint of the Left Multiplication on a Ring</em>.</p>
@@ -118,7 +118,7 @@ $$</p>
 <h3 id="self-adjoint-normal-and-unitary-elements">Self-adjoint, normal and unitary elements</h3>
 <p><strong>Proposition.</strong> For the involution $\sigma$ and an element $a \in A$, the left regular operator $L_a$ satisfies</p>
 <p>$$
-L_a^{\dagger} = L_{a} \iff a = a^{*}, \qquad L_aL_a^{\dagger} = L_a^{\dagger}L_a \iff aa^{*} = a^{*}a, \qquad L_a^{\dagger}L_a = \mathrm{id} \iff a^{*}a = 1 ,
+\boxed{\;L_a^{\dagger} = L_{a} \iff a = a^{*}, \qquad L_aL_a^{\dagger} = L_a^{\dagger}L_a \iff aa^{*} = a^{*}a, \qquad L_a^{\dagger}L_a = \mathrm{id} \iff a^{*}a = 1\;} ,
 $$</p>
 <p>and the same three statements hold for $R_a$. Hence the self-adjoint elements of $A$ become self-adjoint operators, the normal elements become normal operators, and the unitary elements become unitary operators, the last with the one-sided condition made two-sided by invertibility.</p>
 <p><strong>Proof.</strong> By the theorem $L_a^{\dagger} = L_{a^{*}}$, and $L$ is injective, so each identity reduces to the corresponding identity in $A$: $L_a = L_{a^{*}}$ is $a = a^{*}$, $L_aL_{a^{*}} = L_{a^{*}}L_a$ is $aa^{*} = a^{*}a$, and $L_{a^{*}}L_a = L_{a^{*}a} = \mathrm{id}$ is $a^{*}a = 1$, the unitary condition. The statements for $R$ are identical.</p>

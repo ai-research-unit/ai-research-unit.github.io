@@ -90,7 +90,7 @@ $$</p>
 <p>The <strong>unsigned sandwich</strong> is $\Sigma_{a,b} = \Sigma^{\mathrm{id}}_{a,b}$. The operator is also written $\Sigma_{a,b}\alpha$ because it is the composite of the grade involution followed by the unsigned sandwich.</p>
 <p><strong>Proposition (decomposition and additivity).</strong> The signed sandwich is the composite</p>
 <p>$$
-\Sigma^\alpha_{a,b} = L_a \circ \alpha \circ R_{\alpha(b)} ,
+\boxed{\;\Sigma^\alpha_{a,b} = L_a \circ \alpha \circ R_{\alpha(b)}\;} ,
 $$</p>
 <p>it is additive, and it is continuous whenever $\alpha$ is; in particular it lies in $\operatorname{End}_c(R)$. The signed sandwich is the unsigned sandwich followed by the grade involution,</p>
 <p>$$
@@ -107,7 +107,7 @@ $$</p>
 <p><strong>Proof.</strong> Compute $\Sigma^\alpha_{a,b}(\Sigma^\alpha_{c,d}(x)) = a\,\alpha(c\,\alpha(x)\,d)\,b = a\,\alpha(c)\,\alpha(\alpha(x))\,\alpha(d)\,b = a\,\alpha(c)\,x\,\alpha(d)\,b$, using multiplicativity of $\alpha$ and $\alpha^2 = \mathrm{id}$. This is the signed sandwich with left parameter $a\alpha(c)$ and right parameter $\alpha(d)b$.</p>
 <p><strong>Theorem (the signed sandwich group).</strong> The signed sandwiches with both parameters in $R^\times$ are exactly the invertible signed sandwiches, they form a group $\Sigma^\alpha(R^\times)$ under composition, and the map</p>
 <p>$$
-R^\times \times R^\times \longrightarrow \Sigma^\alpha(R^\times), \qquad (a, b) \longmapsto \Sigma^\alpha_{a,b} ,
+\boxed{\;R^\times \times R^\times \longrightarrow \Sigma^\alpha(R^\times), \qquad (a, b) \longmapsto \Sigma^\alpha_{a,b}\;} ,
 $$</p>
 <p>is a surjective group homomorphism whose kernel is</p>
 <p>$$
@@ -117,7 +117,7 @@ $$</p>
 <p><strong>Proof.</strong> For $a, b \in R^\times$ the composition law with $(c,d) = (\alpha(a)^{-1}, b^{-1})$ gives $\Sigma^\alpha_{a,b}\circ\Sigma^\alpha_{\alpha(a)^{-1},b^{-1}} = \Sigma^\alpha_{a\alpha(\alpha(a)^{-1}),\,\alpha(b^{-1})b} = \Sigma^\alpha_{1,1} = \mathrm{id}$ and the same from the other side, so $\Sigma^\alpha_{a,b}$ is invertible with inverse $\Sigma^\alpha_{\alpha(a)^{-1},\,b^{-1}}$, and the image of $R^\times\times R^\times$ is contained in the group of invertible additive operators. Conversely, by the decomposition $\Sigma^\alpha_{a,b} = L_a\circ\alpha\circ R_{\alpha(b)}$ and the invertibility of $\alpha$, the operator $\Sigma^\alpha_{a,b}$ is invertible exactly when $L_a$ and $R_{\alpha(b)}$ are, that is exactly when $a$ and $\alpha(b)$ are units, by <em>Operators on a Topological Ring</em>; so the invertible signed sandwiches are exactly the unit-parametrised ones. The composition law makes $(a,b)\mapsto\Sigma^\alpha_{a,b}$ a surjective homomorphism, and its kernel consists of the pairs with $a\alpha(x)b = x$ for all $x$; setting $x = 1$ gives $ab = 1$, so $b = a^{-1}$, and then $a\alpha(x)a^{-1} = x$ for all $x$, that is $c_a = \alpha$. So the kernel is $\{(a, a^{-1}) : c_a = \alpha\}$, trivial when $\alpha$ is not inner and the coset of the central units over a unit inducing $\alpha$ when $\alpha$ is inner.</p>
 <p><strong>Corollary (the parametrisation of the reflections).</strong> The signed sandwiches $\rho_u = \Sigma^\alpha_{u,u^{-1}}$ for $u \in R^\times$ are the <strong>signed conjugations</strong>; they satisfy the composition law $\rho_u\rho_v = \Sigma^\alpha_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$ and they are involutions exactly when $u\alpha(u)$ is central, because</p>
 <p>$$
-\rho_u^2 = \Sigma^\alpha_{u\alpha(u),\,\alpha(u^{-1})u^{-1}} = c_{u\alpha(u)},
+\boxed{\;\rho_u^2 = \Sigma^\alpha_{u\alpha(u),\,\alpha(u^{-1})u^{-1}} = c_{u\alpha(u)}\;},
 $$</p>
 <p>and $c_{u\alpha(u)} = \mathrm{id}$ exactly when $u\alpha(u) \in Z(R)$.</p>
 <p><strong>Proof.</strong> Apply the composition law with $(a,b) = (c,d) = (u,u^{-1})$: $\Sigma^\alpha_{u,u^{-1}}\Sigma^\alpha_{u,u^{-1}} = \Sigma^\alpha_{u\alpha(u),\,\alpha(u^{-1})u^{-1}}$. Directly, for $t = u\alpha(u)$ one has $\alpha(u^{-1})u^{-1} = \alpha(u)^{-1}u^{-1} = (u\alpha(u))^{-1} = t^{-1}$, so the square is $\Sigma^\alpha_{t,t^{-1}}$, and evaluating at $x$ gives $u\alpha(u\alpha(x)u^{-1})u^{-1} = u\alpha(u)\,x\,\alpha(u)^{-1}u^{-1} = t x t^{-1} = c_t(x)$. Hence $\rho_u^2 = c_{u\alpha(u)}$, which is the identity exactly when $u\alpha(u) \in Z(R)$.</p>

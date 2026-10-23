@@ -133,9 +133,7 @@ $$</p>
 <p>Geometrically, the line through $-1$ and $u(\vec v)$ meets the pure subspace at $-\vec v$. Indeed the point $-1+t(u(\vec v)+1)$ has scalar part $-1+t(1+\operatorname{Sc}u(\vec v))$, which vanishes at $t=1/(1+\operatorname{Sc}u(\vec v))$, and its pure part is then $\operatorname{Vec}u(\vec v)/(1+\operatorname{Sc}u(\vec v))=-\vec v$. The standard stereographic coordinate of $u(\vec v)$ from $-1$ is therefore $-\vec v$: the chart is that coordinate with the sign reversed.</p>
 <h3 id="the-inverse">The Inverse</h3>
 <p><strong>Proposition.</strong> Let $u\in\mathrm{Sp}(1)$ with $u\neq-1$. Then $u=u(\vec v)$ for the pure quaternion</p>
-<p>$$
-\vec v = (1-u)(1+u)^{-1}.
-$$</p>
+<p>$$ \boxed{\; \vec v = (1-u)(1+u)^{-1} \;} .$$</p>
 <p><strong>Proof.</strong> Write $u=a+w$ with $a\in\mathbb{R}$ and $w$ pure. Since $\langle u\rangle_{\natural}=1$, one has $a^2+\langle w\rangle_{\natural}=1$, and since $u\neq-1$, one has $a\neq-1$. The inverse of $1+u=(1+a)+w$ is</p>
 <p>$$
 (1+u)^{-1} = \frac{(1+a)-w}{(1+a)^2+\langle w\rangle_{\natural}} = \frac{(1+a)-w}{2(1+a)} .
@@ -172,9 +170,7 @@ $$</p>
 <h2 id="the-rational-chart-decomposition">The Rational-Chart Decomposition</h2>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition</p>
-<p>$$
-\tilde q = r\,(1-\vec v)(1+\vec v)^{-1}, \qquad r>0, \quad \vec v\in\operatorname{Im}\mathbb{H}.
-$$</p>
+<p>$$ \boxed{\; \tilde q = r\,(1-\vec v)(1+\vec v)^{-1}, \qquad r>0, \quad \vec v\in\operatorname{Im}\mathbb{H} \;} .$$</p>
 <p><strong>Existence.</strong> Let $\tilde q\notin(-\infty,0]$, and put $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$. Then $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-r$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $\vec v$ with $\tilde u_{\mathrm r}=u(\vec v)$. Hence $\tilde q=ru(\vec v)$.</p>
 <p><strong>Uniqueness.</strong> Taking norms gives $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/r$; the chart is injective, so $\vec v$ is determined by $\tilde u_{\mathrm r}$.</p>
 <p>The coordinate is $\vec v=(r-\tilde q)(r+\tilde q)^{-1}$ of §<em>The Inverse</em>, and the reconstruction is exact:</p>
@@ -192,10 +188,8 @@ $$</p>
 <h3 id="the-product-formula">The Product Formula</h3>
 <p>The product of two unit factors is a unit factor, and the coordinate of the product is a rational function of the two coordinates.</p>
 <p><strong>Proposition.</strong> For pure $\vec v_1,\vec v_2$ with $1+\vec v_1\vec v_2\neq0$,</p>
-<p>$$
-u(\vec v_1)u(\vec v_2) = u(\vec v_3), \qquad
-\vec v_3 = (1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1).
-$$</p>
+<p>$$ \boxed{\; u(\vec v_1)u(\vec v_2) = u(\vec v_3), \qquad
+\vec v_3 = (1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1) \;} .$$</p>
 <p><strong>Proof.</strong> Write $A=1+\vec v_1$ and $B=1+\vec v_2$. From $1-u(\vec v)=2\vec v(1+\vec v)^{-1}$ and $1+u(\vec v)=2(1+\vec v)^{-1}$, applied to each factor,</p>
 <p>$$
 1-u(\vec v_1)u(\vec v_2) = \bigl(1-u(\vec v_1)\bigr)+u(\vec v_1)\bigl(1-u(\vec v_2)\bigr)

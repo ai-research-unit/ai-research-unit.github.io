@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Proof.</strong> If $\tau(g\cdot x) = \sigma(g)\cdot\tau(x)$ then conjugating the operators gives $\tau\,g\,\tau = \sigma(g)$; the map $g\mapsto \tau g\tau$ is an automorphism of the image of $G$ in the homeomorphism group of $X$ and $g\mapsto \sigma(g)$ is an isomorphism onto that image only if $\sigma$ is a homomorphism, because $\tau(gh)\tau = \sigma(gh)$ while $(\tau g\tau)(\tau h\tau) = \sigma(g)\sigma(h)$; for an effective action the two force $\sigma(gh) = \sigma(g)\sigma(h)$. Since $\alpha$ is an automorphism the consistency holds, and $\alpha(g) = \sigma(g^{-1}) = \sigma(g)^{-1}$ is the equivalent form.</p>
 <p><strong>Theorem (the extension).</strong> An equivariant involution $\tau$ is exactly the action of the generator of the semidirect product $G\rtimes_\alpha C_2$ on $X$: the formulas</p>
 <p>$$
-(g, t^\epsilon)\cdot x = g\cdot \tau^\epsilon(x) \qquad (\epsilon \in \{0, 1\})
+\boxed{\;(g, t^\epsilon)\cdot x = g\cdot \tau^\epsilon(x) \qquad (\epsilon \in \{0, 1\})\;}
 $$</p>
 <p>define a continuous action of $G\rtimes_\alpha C_2$ on $X$, and conversely every continuous action of the extension restricts to an action of $G$ with equivariant involution the action of the generator.</p>
 <p><strong>Proof.</strong> The multiplication in the extension is $(g,t^\epsilon)(h,t^\delta) = (g\alpha^\epsilon(h), t^{\epsilon+\delta})$, and a direct computation gives $(g,t^\epsilon)\cdot((h,t^\delta)\cdot x) = g\cdot\tau^\epsilon(h\cdot\tau^\delta(x)) = g\,\alpha^\epsilon(h)\cdot\tau^{\epsilon+\delta}(x) = (g\alpha^\epsilon(h),t^{\epsilon+\delta})\cdot x$, using $\tau^\epsilon h \tau^\epsilon = \alpha^\epsilon(h)$; the unit acts by the identity because $\tau^0 = \mathrm{id}$. Continuity is the continuity of the action and of $\tau$, and the equivalence is the restriction to $G$ and the identification of the generator with $\tau$.</p>
@@ -100,7 +100,7 @@ $$</p>
 <p><strong>Proof.</strong> Since $\tau(g\cdot x) = \alpha(g)\cdot\tau(x)$ and $\alpha(G) = G$, the image of an orbit under $\tau$ is the orbit of $\tau(x)$. The induced map is well defined, continuous by the universal property of the quotient map, and its square is the identity because $\tau^2 = \mathrm{id}$; equivariance of $m$ is the definition of $\bar\tau$.</p>
 <p><strong>Theorem (the fixed orbits).</strong> The fixed points of the induced involution are the orbits $G\cdot x$ with $\tau(x) = g\cdot x$ for some $g \in G$. The natural map</p>
 <p>$$
-\rho : X^\tau/G^\alpha \longrightarrow (X/G)^{\bar\tau}, \qquad \rho(G^\alpha\cdot x) = G\cdot x ,
+\boxed{\;\rho : X^\tau/G^\alpha \longrightarrow (X/G)^{\bar\tau}, \qquad \rho(G^\alpha\cdot x) = G\cdot x\;} ,
 $$</p>
 <p>is well defined and injective; it is surjective exactly when every $\tau$-stable orbit contains a $\tau$-fixed point, and it may fail to be surjective.</p>
 <p><strong>Proof.</strong> If $x \in X^\tau$ then $\bar\tau(G\cdot x) = G\cdot\tau(x) = G\cdot x$, so the orbit is fixed and $\rho$ is well defined, because $X^\tau$ is $G^\alpha$-stable. Two fixed points with the same orbit differ by an element $g$ with $g\cdot x = y$; applying $\tau$ gives $\alpha(g)\cdot x = y$, so $\alpha(g)^{-1}g$ stabilises $x$, and for an effective action $g \in G^\alpha$; this gives injectivity in the effective case. For the failure of surjectivity it suffices that a group element carries an orbit to itself without fixing a point of it, the standard example being a free involution on $S^1$ whose orbit space has one point.</p>
@@ -110,7 +110,7 @@ $$</p>
 <h2 id="functions-and-cohomology">Functions and Cohomology</h2>
 <p><strong>Proposition (the induced involution on functions).</strong> Let $C(X)$ be the algebra of continuous functions $X\to k$. The formula $\tau^*f = f\circ\tau$ is an involution of $C(X)$, the subalgebra of $G$-invariants $C(X)^G$ is stable under it, and $C(X)^G$ with the involution $\tau^*$ is the algebra of continuous functions on the orbit space with the induced involution,</p>
 <p>$$
-C(X)^G \;\cong\; C(X/G) , \qquad \tau^*\text{ on } C(X)^G \;\longleftrightarrow\; \bar\tau^*\text{ on } C(X/G) .
+\boxed{\;C(X)^G \;\cong\; C(X/G) , \qquad \tau^*\text{ on } C(X)^G \;\longleftrightarrow\; \bar\tau^*\text{ on } C(X/G)\;} .
 $$</p>
 <p><strong>Proof.</strong> $\tau^*$ is an algebra involution because $\tau$ is a homeomorphism of order two. A $G$-invariant function $f$ satisfies $(\tau^* f)(g\cdot x) = f(\tau(g\cdot x)) = f(\alpha(g)\cdot\tau(x)) = f(\tau(x))$, so $\tau^*f$ is again $G$-invariant. The identification with $C(X/G)$ is the universal property of the quotient map, and the two involutions correspond because $\bar\tau m = m\tau$.</p>
 <p><strong>Remark (cohomology, deferred).</strong> The involution $\tau$ acts on the cohomology of $X$ by transport of structure, the action of $G\rtimes_\alpha C_2$ acts on the equivariant cohomology, and the Lefschetz fixed-point theorem relates the fixed set $X^\tau$ to the trace of the induced involution. All of this needs the cohomology of <em>Algebraic Topology</em>, later in this part, and the equivariant cohomology of <em>Equivariant Cohomology</em>, which is later still; this article states the topological action and its quotient and defers the cohomological statements entirely.</p>

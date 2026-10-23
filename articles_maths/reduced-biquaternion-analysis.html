@@ -111,12 +111,16 @@ f(\breve Q)=g_{1}(\breve Q)\,\Pi_++g_{2}(\breve Q)\,\Pi_-,
 $$
 the function $g_{1}$ depends only on $Q_{+}$ and the function $g_{2}$ only on $Q_{-}$, and each is holomorphic: there are holomorphic functions $G_{1}$ and $G_{2}$ of one complex variable with
 $$
-f(\breve Q)=G_{1}(Q_{+})\,\Pi_++G_{2}(Q_{-})\,\Pi_-,\qquad f'(\breve Q)=G_{1}'(Q_{+})\,\Pi_++G_{2}'(Q_{-})\,\Pi_-.
+\boxed{\;
+f(\breve Q)=G_{1}(Q_{+})\,\Pi_++G_{2}(Q_{-})\,\Pi_-,\qquad f'(\breve Q)=G_{1}'(Q_{+})\,\Pi_++G_{2}'(Q_{-})\,\Pi_-
+\;}.
 $$</p>
 <p><em>Proof.</em> In the idempotent basis the algebra is the direct product and the multiplication is componentwise, so differentiating is componentwise: $f'(\breve Q)=g_{1}'(\breve Q)\Pi_++g_{2}'(\breve Q)\Pi_-$, and the componentwise derivative of $g_{1}$ at $\breve Q$ along increments $\breve Q_{H}=m\Pi_++n\Pi_-$ is the derivative in the coordinate $Q_{+}$ alone, since the product $\breve Q^{n}$ depends on $Q_{+}$ and $Q_{-}$ separately; the limit defining $g_{1}'$ uses only $m$, so $g_{1}$ has no dependence on $Q_{-}$, and likewise $g_{2}$ has none on $Q_{+}$. Each is then a complex function with a complex derivative, that is holomorphic, and the derivative rule is the chain rule in each coordinate.</p>
 <p><strong>Corollary (the system decouples).</strong> The reduced Cauchy–Riemann system is the pair of complex equations
 $$
-\frac{\partial g_{1}}{\partial\bar Q_{+}}=0,\qquad \frac{\partial g_{2}}{\partial\bar Q_{-}}=0,
+\boxed{\;
+\frac{\partial g_{1}}{\partial\bar Q_{+}}=0,\qquad \frac{\partial g_{2}}{\partial\bar Q_{-}}=0
+\;},
 $$
 so the theory of differentiable reduced biquaternion functions is the product of two copies of the theory of holomorphic functions of one complex variable. There is no single complex analysis over the four-dimensional algebra, because the algebra is <strong>not a division algebra</strong>.</p>
 <p><em>Proof.</em> A complex function of one variable is holomorphic exactly when it satisfies the complex Cauchy–Riemann equation, that is when it is annihilated by the Wirtinger derivative in the conjugate coordinate; the system is the pair of the two coordinates, and the two have no coupling, the algebra being a direct product.</p>
@@ -139,7 +143,9 @@ As a check, $\Delta K=8$ and $\Delta Q_{+}=\Delta Q_{-}=0$.</p>
 <p><em>Proof.</em> For a complex variable $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ one has $\partial/\partial q_{\blacktriangle}=\partial/\partial Q_{\blacktriangle}+\partial/\partial\bar Q_{\blacktriangle}$ and $\partial/\partial q'_{\blacktriangle}=i(\partial/\partial Q_{\blacktriangle}-\partial/\partial\bar Q_{\blacktriangle})$, so $\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'^2_{\blacktriangle}=4\partial^2/\partial Q_{\blacktriangle}\partial\bar Q_{\blacktriangle}$, and likewise for $Q_{\blacktriangledown}$; this gives the middle expression. The change of variables $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ gives $\partial/\partial Q_{\blacktriangle}=\partial/\partial Q_{+}+\partial/\partial Q_{-}$ and $\partial/\partial Q_{\blacktriangledown}=\partial/\partial Q_{+}-\partial/\partial Q_{-}$, whence $\partial^2/\partial Q_{\blacktriangle}\partial\bar Q_{\blacktriangle}+\partial^2/\partial Q_{\blacktriangledown}\partial\bar Q_{\blacktriangledown}=2(\partial^2/\partial Q_{+}\partial\bar Q_{+}+\partial^2/\partial Q_{-}\partial\bar Q_{-})$, the last expression. For the check: $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$ and $\partial^2/\partial Q_{+}\partial\bar Q_{+}\lvert Q_{+}\rvert^{2}=1$, so $8(\tfrac12+\tfrac12)=8$; and the holomorphic coordinates are annihilated by the conjugate derivations.</p>
 <p><strong>Corollary (the differentiable functions are harmonic).</strong> A differentiable reduced biquaternion function $f(\breve Q)=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ satisfies
 $$
-\Delta f=0,
+\boxed{\;
+\Delta f=0
+\;},
 $$
 each component being annihilated by the conjugate derivative of its own coordinate, $\partial/\partial\bar Q_{+}G_{1}=0$ and $\partial/\partial\bar Q_{-}G_{2}=0$.</p>
 <p><em>Proof.</em> A holomorphic function of one complex variable has harmonic real and imaginary parts, the Cauchy–Riemann equations giving $\partial^2/\partial q_{\blacktriangle}^2+\partial^2/\partial q'^2_{\blacktriangle}$ applied to each part equal to zero; the components are decoupled and the total Laplacian is the sum of the two-dimensional Laplacians of the two components, up to the factor of the change of variables.</p>

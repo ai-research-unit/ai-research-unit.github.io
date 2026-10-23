@@ -128,7 +128,7 @@ $$</p>
 $$</p>
 <p>the <strong>connecting homomorphism</strong>, natural in maps of short exact sequences, and the resulting triangle</p>
 <p>$$
-H_n(A_*) \xrightarrow{\ i_*\ } H_n(B_*) \xrightarrow{\ j_*\ } H_n(C_*) \xrightarrow{\ \Delta\ } H_{n-1}(A_*) \xrightarrow{\ i_*\ } H_{n-1}(B_*) \to \cdots
+\boxed{\;H_n(A_*) \xrightarrow{\ i_*\ } H_n(B_*) \xrightarrow{\ j_*\ } H_n(C_*) \xrightarrow{\ \Delta\ } H_{n-1}(A_*) \xrightarrow{\ i_*\ } H_{n-1}(B_*) \to \cdots\;}
 $$</p>
 <p>is exact. The map $\Delta$ satisfies $\Delta j_* = 0$ and $i_* \Delta = 0$, and it is the composite of the inverse of $j$ on a lift, an application of $\partial$, and the inverse of $i$ — the <strong>snake</strong> of the diagram.</p>
 <p><em>Proof.</em> This is the snake lemma of <em>Exact Sequences</em>, applied to the $3\times 3$ diagram whose two rows of complexes and two columns are the two adjacent degrees of the short exact sequence; the connecting map is built from $\partial_B$ by the chase, and the naturality is that of the chase.</p>
@@ -143,7 +143,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> The coboundary is the adjoint of the boundary under the evaluation pairing,</p>
 <p>$$
-\langle \delta \alpha, c \rangle = \langle \alpha, \partial c \rangle ,
+\boxed{\;\langle \delta \alpha, c \rangle = \langle \alpha, \partial c \rangle\;} ,
 $$</p>
 <p>so that $\delta = \partial^*$; consequently $\delta^2 = 0$ because $\partial^2 = 0$, and the pairing descends to cohomology and homology,</p>
 <p>$$
@@ -155,7 +155,7 @@ $$</p>
 <h3 id="the-leibniz-rule-for-the-cap-product">The Leibniz Rule for the Cap Product</h3>
 <p><strong>Theorem.</strong> The boundary operator is a graded derivation for the cap product of <em>Cup and Cap Products</em>: for a cochain $\varphi$ of degree $k$ and a chain $c$ of degree $n$,</p>
 <p>$$
-\partial(c \frown \varphi) = (-1)^{k}\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr),
+\boxed{\;\partial(c \frown \varphi) = (-1)^{k}\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr)\;},
 $$</p>
 <p>so that on classes the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$, with the boundary measuring the failure of the two terms on the right to cancel. The dual statement, the Leibniz rule $\delta(\varphi \smile \psi) = (\delta\varphi)\smile\psi + (-1)^{|\varphi|}\varphi\smile(\delta\psi)$, makes the coboundary a graded derivation for the cup product; its operator form is the subject of <em>The Cup Product as an Operator</em>.</p>
 <p><em>Proof.</em> Both are the cochain-level identities of <em>Cup and Cap Products</em>, where the sign is forced by the convention for the evaluation of a cochain on a chain; the first is the boundary rule for the cap product, the second the Leibniz rule for the cup product.</p>

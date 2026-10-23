@@ -93,10 +93,10 @@ $$</p>
 <h2 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h2>
 <p><strong>Proposition.</strong> In components, the product $\tilde Q_3 = \tilde Q_1\tilde Q_2$ is given by</p>
 <p>$$
-Q_{3t} = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z} , \qquad Q_{3x} = Q_{1t}Q_{2x} + Q_{1x}Q_{2t} + Q_{1y}Q_{2z} - Q_{1z}Q_{2y} ,
+\boxed{\;Q_{3t} = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z} , \qquad Q_{3x} = Q_{1t}Q_{2x} + Q_{1x}Q_{2t} + Q_{1y}Q_{2z} - Q_{1z}Q_{2y}\;}
 $$</p>
 <p>$$
-Q_{3y} = Q_{1t}Q_{2y} - Q_{1x}Q_{2z} + Q_{1y}Q_{2t} + Q_{1z}Q_{2x} , \qquad Q_{3z} = Q_{1t}Q_{2z} + Q_{1x}Q_{2y} - Q_{1y}Q_{2x} + Q_{1z}Q_{2t} ,
+\boxed{\;Q_{3y} = Q_{1t}Q_{2y} - Q_{1x}Q_{2z} + Q_{1y}Q_{2t} + Q_{1z}Q_{2x} , \qquad Q_{3z} = Q_{1t}Q_{2z} + Q_{1x}Q_{2y} - Q_{1y}Q_{2x} + Q_{1z}Q_{2t}\;}
 $$</p>
 <p>the structure constants being those of the quaternion basis and the coefficients multiplying in the commutative algebra $\mathbb{D}$.</p>
 <p><strong>Proof.</strong> These are the standard quaternion multiplication formulas with the coefficients taken in $\mathbb{D}$; the multiplication is well defined because $\mathbb{D}$ is commutative and central.</p>
@@ -225,7 +225,9 @@ $$</p>
 <h2 id="the-split-biquaternion-norm">The Split-Biquaternion Norm</h2>
 <p><strong>Proposition.</strong> In the four-vector description the split-biquaternion norm is</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right) ,
+\boxed{\;
+\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right)
+\;},
 $$</p>
 <p>with real part the square of the Euclidean norm and split-imaginary part twice the inner product of the real and split-imaginary coordinate vectors.</p>
 <p><strong>Proof.</strong> Expand each $Q_\mu^2 = (q_\mu + j q'_\mu)^2 = q_\mu^2 + q'^2_\mu + 2j q_\mu q'_\mu$ and sum over $\mu$.</p>
@@ -240,7 +242,9 @@ $$</p>
 <h3 id="the-unit-criterion-in-coordinates">The Unit Criterion in Coordinates</h3>
 <p><strong>Theorem.</strong> A split biquaternion $\tilde{Q}$ is a unit if and only if $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D}$, that is, if and only if</p>
 <p>$$
-\sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0 .
+\boxed{\;
+\sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0
+\;}.
 $$</p>
 <p><strong>Proof.</strong> Under the Peirce decomposition $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.</p>
 <p>The criterion shows directly that the <strong>zero divisors</strong> are the elements whose split-biquaternion norm vanishes in exactly one of the two idempotent components, that is the elements with $\sum_\mu (q_\mu+q'_\mu)^2 = 0$ or $\sum_\mu (q_\mu-q'_\mu)^2 = 0$, which are the two four-dimensional subspaces $Z_\pm$ of <em>Split-Biquaternion Zero Divisors</em>. In the four-vector picture the zero divisors are thus the coefficient quadruples lying in one of the two real four-dimensional subspaces defined by $\sum_\mu(q_\mu\pm q'_\mu)^2 = 0$.</p>

@@ -108,18 +108,18 @@ and $X$ is a <strong>length space</strong> if $d_i = d$; the intrinsic metric al
 <h3 id="the-cayleymenger-determinant">The Cayley–Menger Determinant</h3>
 <p><strong>Definition.</strong> Let $x_0, \ldots, x_k$ be points of a distance space and let $d_{ij} = d(x_i, x_j)$. The <strong>Cayley–Menger determinant</strong> is
 $$
-\operatorname{CM}(x_0,\ldots,x_k) = \det\begin{pmatrix} 0 & 1 & 1 & \cdots & 1 \\ 1 & 0 & d_{01}^2 & \cdots & d_{0k}^2 \\ 1 & d_{10}^2 & 0 & \cdots & d_{1k}^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & d_{k0}^2 & d_{k1}^2 & \cdots & 0 \end{pmatrix},
+\boxed{\;\operatorname{CM}(x_0,\ldots,x_k) = \det\begin{pmatrix} 0 & 1 & 1 & \cdots & 1 \\ 1 & 0 & d_{01}^2 & \cdots & d_{0k}^2 \\ 1 & d_{10}^2 & 0 & \cdots & d_{1k}^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & d_{k0}^2 & d_{k1}^2 & \cdots & 0 \end{pmatrix}\;},
 $$
 the determinant of the $(k+2) \times (k+2)$ matrix with the vanishing diagonal, the unit border and the squares of the distances off the border.</p>
 <p><strong>Theorem (the volume formula).</strong> Let $x_0, \ldots, x_k$ be points of the Euclidean space $\mathbb{R}^k$ and let $V$ be the volume of the simplex they span. Then
 $$
-\operatorname{CM}(x_0,\ldots,x_k) = (-1)^{k+1}\, 2^k\, (k!)^2\, V^2 ,
+\boxed{\;\operatorname{CM}(x_0,\ldots,x_k) = (-1)^{k+1}\, 2^k\, (k!)^2\, V^2\;} ,
 $$
 so that the Cayley–Menger determinant has the sign $(-1)^{k+1}$ for the $k+1$ points spanning a nondegenerate simplex of $\mathbb{R}^k$, vanishes exactly for the points lying in an affine subspace of dimension at most $k-1$, and its absolute value is determined by the volume.</p>
 <p><strong>Proof sketch.</strong> The determinant is the Gram determinant computation: the matrix of the squared distances is obtained from the matrix of the inner products of the translated vectors by a change of basis involving the bordering vector, and the determinant of the Gram matrix of the edges of the simplex is $(k!)^2V^2$; assembling the two gives the displayed identity. The statement is verified by the explicit computation of the low cases, in which the determinant of the three points of the plane is $-16V^2$ and that of the four points of the space is $288V^2$, and the general case follows by the same assembly. The details are in the references.</p>
 <p><strong>Theorem (Menger; the embedding criterion).</strong> A metric space $X$ is isometric to a subset of the Euclidean space $\mathbb{R}^n$ if and only if every subset of $n+3$ points of $X$ is isometric to a subset of $\mathbb{R}^n$; for a finite set $x_0, \ldots, x_m$ the criterion is that the Cayley–Menger determinants satisfy
 $$
-(-1)^{k+1}\operatorname{CM}(x_{i_0},\ldots,x_{i_k}) \geq 0
+\boxed{\;(-1)^{k+1}\operatorname{CM}(x_{i_0},\ldots,x_{i_k}) \geq 0\;}
 $$
 for every subset of $k+1$ points with $k \leq n$, and that $\operatorname{CM}$ vanish for every subset of $n+2$ points. Consequently the metric geometry of the finite subsets of $\mathbb{R}^n$ is the geometry of the signs of the Cayley–Menger determinants, and the <strong>four-point property</strong> of a metric space, the condition that every four points embed in the Euclidean plane, is the case $n = 2$ of the criterion.</p>
 <p><strong>Proof sketch.</strong> The necessity is the volume formula, which gives the signs of the determinants for the points of a Euclidean space. For the sufficiency, the vanishing of the determinants of the $(n+2)$-tuples makes the ambient affine dimension at most $n$, the signs give the positive semidefiniteness of the Gram matrix of the edges, and the standard construction of the coordinates from a positive semidefinite Gram matrix produces the isometric embedding; the reduction to the subsets of $n+3$ points is the finite characterisation of Menger, in which the conditions of the higher-dimensional tuples are implied by those of the tuples of $n+3$ points. The details are in the references.</p>

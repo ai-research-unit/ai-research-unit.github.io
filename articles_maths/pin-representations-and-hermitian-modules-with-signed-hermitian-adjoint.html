@@ -115,7 +115,7 @@ $$</p>
 <p><strong>Remark (why the Hermitian form is the right home for the pin theory).</strong> The pin group contains the odd elements, and an odd element $a\in V$ has $a^{\dagger}=-\sigma(a)$, so its module operator satisfies $\rho(a)^{*}=-\rho(\sigma(a))$, which is the skew-adjointness of the Clifford action of a vector read on the group. On the slice, where $\mathfrak{Q}(a)=-1$, this gives $\rho(a)^{*}=\rho(a)^{-1}$ and the odd elements act by unitary operators as well; the pin representation of a definite form is thus a unitary representation of the pin group on a Hermitian module, and it is the Hermitian form, not the group, that supplies the unitarity.</p>
 <p><strong>Theorem (faithfulness and the kernel).</strong> Suppose $S$ is irreducible. If $\mathrm{Cl}(V,\mathfrak{Q})$ is simple the pin representation is faithful, and its restriction to $\mathrm{Spin}(V,\mathfrak{Q})$ is the spin representation. If $\mathrm{Cl}(V,\mathfrak{Q})\cong A'\times A'$ is a product of two simple algebras and $S$ is the irreducible module of the first factor, then</p>
 <p>$$
-\ker\rho=\mathrm{Pin}(V,\mathfrak{Q})\cap\bigl(\{1\}\times A'\bigr).
+\boxed{\;\ker\rho=\mathrm{Pin}(V,\mathfrak{Q})\cap\bigl(\{1\}\times A'\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> The annihilator of an irreducible module is a proper two-sided ideal, hence vanishes over a simple algebra; over a product the module of one factor is annihilated by the other. Restricting a faithful action to a subgroup is faithful. The argument is independent of the Hermitian form.</p>
 <p><strong>Remark.</strong> The kernel has the same shape as in the inverse formulation; the Hermitian structure adds no kernel, it adds the adjoint.</p>
@@ -128,15 +128,15 @@ $$</p>
 <h2 id="the-sign-in-the-intertwining-identity">The Sign in the Intertwining Identity</h2>
 <p><strong>Proposition (the intertwining identities).</strong> Let $v\in V$ and $x\in\mathrm{Pin}(V,\mathfrak{Q})$. Then</p>
 <p>$$
-\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\Theta_x(v)\bigr),
+\boxed{\;\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\Theta_x(v)\bigr),
 \qquad
-\rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
+\rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*}\;},
 $$</p>
 <p>with $\varepsilon_x=(-1)^{k}$ the parity sign. For $x\in U$ the first identity reads $\rho(x)\rho(v)\rho(x)^{-1}=\rho(\Theta_x(v))$.</p>
 <p><em>Proof.</em> $\rho(x)\rho(v)\rho(x)^{*}=\rho(x)\rho(v)\rho(x^{\dagger})=\rho(x\,v\,x^{\dagger})=\rho(\Theta_x(v))$ by the adjoint proposition and the multiplicativity of $\rho$. The second identity is $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$.</p>
 <p><strong>Corollary (the reflection in the module).</strong> Let $a\in V$ with $\mathfrak{Q}(a)\neq0$ and let $\rho_a$ be the reflection in $a^{\perp}$. Then for every $v\in V$</p>
 <p>$$
-\rho(a)\,\rho(v)\,\rho(a)^{*}=\rho\bigl(-\mathfrak{Q}(a)\,\rho_a(v)\bigr),
+\boxed{\;\rho(a)\,\rho(v)\,\rho(a)^{*}=\rho\bigl(-\mathfrak{Q}(a)\,\rho_a(v)\bigr)\;},
 $$</p>
 <p>and on the unitary slice, $\mathfrak{Q}(a)=-1$, this is $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$: the odd element of the pin group realises the reflection in the module exactly when it is a slice-normalised vector.</p>
 <p><em>Proof.</em> $\Theta_a=-\mathfrak{Q}(a)\rho_a$ by the vector proposition of the two-sided article, and $\rho(a)^{*}=\rho(a^{\dagger})=-\rho(\sigma(a))$; the slice statement is the reflection proposition of the group article.</p>

@@ -89,7 +89,7 @@ $$</p>
 <h2 id="metric-compatibility-as-self-adjointness">Metric Compatibility as Self-Adjointness</h2>
 <p><strong>Theorem (the self-adjointness of a metric connection).</strong> Let $h$ be a Hermitian metric on $E$ and let $\flat : \bar E \to E^*$ be the conjugate-linear isomorphism $s\mapsto h(s,\cdot)$. Then $\nabla$ is metric-compatible if and only if $\flat$ is <strong>parallel</strong> for the pair $(\nabla,\nabla^*)$:</p>
 <p>$$
-\nabla^*\circ\flat = \flat\circ\nabla, \qquad \text{as operators } \Gamma(E)\to\Omega^1(M;E^*),
+\boxed{\;\nabla^*\circ\flat = \flat\circ\nabla, \qquad \text{as operators } \Gamma(E)\to\Omega^1(M;E^*)\;},
 $$</p>
 <p>where $\nabla$ acts on the $E$-valued (or $1$-form-valued) sections through the underlying real structure of $\bar E$ and $\flat$ acts on the values; equivalently, the measurement of the connection by the metric is self-adjoint:</p>
 <p>$$
@@ -103,7 +103,7 @@ $$</p>
 <p>Let the manifold carry a density $d\mu$, as in <em>The Formal Adjoint of a Differential Operator</em>, and let the sections be paired by $\langle s,t\rangle_{L^2}=\int_M h(s,t)\,d\mu$.</p>
 <p><strong>Theorem.</strong> For a metric-compatible connection $\nabla$ and a vector field $X$,</p>
 <p>$$
-(\nabla_X)^* = -\nabla_X - \operatorname{div} X,
+\boxed{\;(\nabla_X)^* = -\nabla_X - \operatorname{div} X\;},
 $$</p>
 <p>acting as a differential operator on the sections, where the divergence is taken with respect to the density; consequently $\nabla_X$ is skew-adjoint exactly when $\operatorname{div}X = 0$.</p>
 <p><em>Proof.</em> Compute with the metric-compatibility identity and the metric nature of the pairing. For the pairing with compact support $\int_M X\,h(s,t)\,d\mu = \int_M h(\nabla_Xs,t)\,d\mu + \int_M h(s,\nabla_Xt)\,d\mu$, and by the integration by parts of the previous entry $\int_M X\,f\,d\mu = -\int_M f\,\operatorname{div}X\,d\mu$ for a function $f$. Substituting and collecting the two terms in $h(s,\cdot)$ gives $\int_M h(\nabla_Xs,t)\,d\mu = -\int_M h(s,\nabla_Xt + \operatorname{div}X\,t)\,d\mu$, which is the display.</p>
@@ -119,7 +119,7 @@ $$</p>
 <h2 id="the-curvature-of-the-adjoint-connection">The Curvature of the Adjoint Connection</h2>
 <p><strong>Theorem.</strong> The curvature of the dual connection is the negative transpose of the curvature of $\nabla$,</p>
 <p>$$
-R_{\nabla^*}(X,Y) = -\,R_\nabla(X,Y)^{t}, \qquad \text{in frames} \ \Omega_{\nabla^*} = -\,\Omega_\nabla^{\,T},
+\boxed{\;R_{\nabla^*}(X,Y) = -\,R_\nabla(X,Y)^{t}, \qquad \text{in frames} \ \Omega_{\nabla^*} = -\,\Omega_\nabla^{\,T}\;},
 $$</p>
 <p>and the curvature of the conjugate connection is the conjugate, $R_{\bar\nabla}(X,Y)=\overline{R_\nabla(X,Y)}$. Consequently, for a metric-compatible connection, the curvature is skew-Hermitian with respect to the metric,</p>
 <p>$$

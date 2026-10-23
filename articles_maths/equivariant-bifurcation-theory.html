@@ -78,7 +78,7 @@
 <h3 id="equivariance-and-the-reduction">Equivariance and the Reduction</h3>
 <p><strong>Definition.</strong> Let a compact group $\Gamma$ act on a manifold $M$, and let $f:M\times\mathbb{R}\to TM$ be a parameter family of vector fields. The family is <strong>$\Gamma$-equivariant</strong> if</p>
 <p>$$
-f(\gamma x,\lambda)=\gamma f(x,\lambda) \qquad (\gamma\in\Gamma),
+\boxed{\;f(\gamma x,\lambda)=\gamma f(x,\lambda) \qquad (\gamma\in\Gamma)\;},
 $$</p>
 <p>so that the flow commutes with the action; a solution and its image under the action are both solutions, and the solution set carries the action. For a map $T$ the condition is $T(\gamma x)=\gamma T(x)$.</p>
 <p><strong>Definition.</strong> For a subgroup $\Sigma\subseteq\Gamma$ the <strong>fixed-point subspace</strong> is $\mathrm{Fix}(\Sigma)=\{x:\gamma x=x\ \text{for all }\gamma\in\Sigma\}$; it is invariant under the equivariant dynamics, and the <strong>isotropy subgroup</strong> of a solution $x$ is $\Gamma_x=\{\gamma:\gamma x=x\}$. A bifurcating solution with isotropy $\Sigma$ is <strong>symmetric</strong> with respect to $\Sigma$ and <strong>breaks</strong> the rest of the symmetry.</p>
@@ -92,7 +92,7 @@ $$</p>
 <h3 id="the-normal-form">The Normal Form</h3>
 <p><strong>Theorem (the $\mathbb{Z}/2$ pitchfork).</strong> Let $f(x,\lambda)$ be an odd function of $x$, $f(-x,\lambda)=-f(x,\lambda)$, the equivariance for the involution $\sigma(x)=-x$ on $\mathbb{R}$, with $f(0,\lambda)=0$ and $\partial f/\partial x(0,0)=0$, $\partial f/\partial x\partial\lambda(0,0)\neq0$. Then in the Taylor expansion of $f$ all the even powers of $x$ vanish, and the lowest non-trivial normal form is</p>
 <p>$$
-f(x,\lambda)=\lambda x+a x^3+\cdots ;
+\boxed{\;f(x,\lambda)=\lambda x+a x^3+\cdots\;} ;
 $$</p>
 <p>the trivial solution $x=0$ is stable for $\lambda<0$ and unstable for $\lambda>0$, the bifurcating branches are $x=\pm\sqrt{-\lambda/a}$ (real for $\lambda>0$ when $a<0$, the <strong>supercritical</strong> case, and for $\lambda<0$ when $a>0$, the <strong>subcritical</strong> case), and the two branches are interchanged by the involution. The bifurcation is a <strong>pitchfork</strong>, and it is the generic one-parameter bifurcation of a $\mathbb{Z}/2$-equivariant scalar system.</p>
 <p><em>Proof.</em> The equivariance $f(-x,\lambda)=-f(x,\lambda)$ forces the even coefficients of the Taylor expansion to vanish, in particular the quadratic coefficient, so the linear term is followed by the cubic; the branch equation $x(\lambda+a x^2)=0$ has the roots $x=0$ and $x=\pm\sqrt{-\lambda/a}$, and the stability is read from $\partial f/\partial x=\lambda+3ax^2$ at each root. The two non-trivial roots differ by the sign of $x$, which is exactly the involution, so the two branches are exchanged by $\sigma$ and each has trivial isotropy: the bifurcation is <strong>symmetry-breaking</strong>.</p>

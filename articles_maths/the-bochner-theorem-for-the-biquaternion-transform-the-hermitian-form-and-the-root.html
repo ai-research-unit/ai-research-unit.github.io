@@ -151,7 +151,7 @@ $$</p>
 <h3 id="the-character-is-unitary-exactly-for-a-skew-adjoint-root">The Character Is Unitary Exactly for a Skew-Adjoint Root</h3>
 <p><strong>Proposition.</strong> For the kernel $\chi_\omega$ of a root $\tilde\Xi$, the Hermitian adjoint equals the inverse,</p>
 <p>$$
-\chi_\omega^{*}=\chi_\omega^{-1},
+\boxed{\;\chi_\omega^{*}=\chi_\omega^{-1}\;},
 $$</p>
 <p><strong>exactly when</strong> $\tilde\Xi^{*}=-\tilde\Xi$, and this holds exactly for the degenerate roots.</p>
 <p><em>Proof.</em> From $\chi_\omega=\cos\theta\,e_t-\sin\theta\,\tilde\Xi$ and $\chi_\omega^{-1}=\cos\theta\,e_t+\sin\theta\,\tilde\Xi$, with $\theta=2\pi\langle\omega,x\rangle$, one reads $\chi_\omega^{*}=\cos\theta\,e_t-\sin\theta\,\tilde\Xi^{*}$, so the two agree for all $\omega$ and $x$ exactly when $\tilde\Xi^{*}=-\tilde\Xi$. Write $\tilde\Xi=a_0e_t+v$ with $a_0\in\mathbb{C}$ and $v=\sum_{\mu\geq1}a_\mu\vec e_\mu$; the condition $\tilde\Xi^{*}=-\tilde\Xi$ is $\overline{a_0}=-a_0$ and $\overline{a_\mu}=a_\mu$, that is $a_0=i\theta$ with $\theta$ real and $v$ a real quaternion. Imposing $\tilde\Xi^{2}=-e_t$ on $\tilde\Xi=i\theta e_t+v$ gives $-\theta^{2}+\lvert v\rvert^{2}=-1$ and $2i\theta v=0$, hence either $\theta=0$, which is the real roots $v$ of unit length, or $v=0$, which is the scalar imaginary $\theta=\pm1$. These are the degenerate roots and no others.</p>
@@ -194,7 +194,7 @@ Q(A)=\int_{\mathbb{R}^n}\Bigl(\sum_{k}A_k\chi_{\omega_k}\Bigr)\Bigl(\sum_{l}A_l\
 $$</p>
 <p>The element $ZZ^{*}$ is Hermitian, $(ZZ^{*})^{*}=ZZ^{*}$, and in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$, whose representation $\mathsf{M}_2$ is a $*$-homomorphism, it is the matrix $\mathsf{M}_2(Z)\mathsf{M}_2(Z)^{\dagger}$, positive semidefinite. An integral of positive elements against a positive measure is positive, so $Q(A)\geq 0$. This is the biquaternion Bochner theorem, and it holds <strong>exactly for the degenerate roots</strong>, whose character is unitary:</p>
 <p>$$
-\text{every finite positive measure has a positive-definite transform}\ \Longleftrightarrow\ \tilde\Xi^{*}=-\tilde\Xi\ \Longleftrightarrow\ \tilde\Xi\ \text{is degenerate.}
+\boxed{\;\text{every finite positive measure has a positive-definite transform}\ \Longleftrightarrow\ \tilde\Xi^{*}=-\tilde\Xi\ \Longleftrightarrow\ \tilde\Xi\ \text{is degenerate.}\;}
 $$</p>
 <p>The factorisation proves the direction from the right to the left, and it is the half a Bochner theorem proves by hand. The other direction is proved in §<em>The Genuine Failure: Every Genuinely Complex Root</em>, whose proposition produces for every genuinely complex root a value of the form that is not even Hermitian. Both directions are therefore proved, and the equivalence is a theorem of the algebra and not a choice of convention. The quantifier is a part of the statement: what the factorisation gives is a property of <strong>every</strong> positive measure at once, and what the converse gives is one measure at which the property fails, so the criterion is about the class of measures and not about a transform chosen in advance.</p>
 <h3 id="the-scalar-imaginary-is-the-classical-theorem">The Scalar Imaginary Is the Classical Theorem</h3>
@@ -216,7 +216,7 @@ Q=2e_t-2i\tilde\Xi=2e_t-2ib\mu+2d\nu .
 $$</p>
 <p>Its Hermitian conjugate is $Q^{*}=2e_t-2ib\mu-2d\nu$, so</p>
 <p>$$
-Q-Q^{*}=4d\nu\neq0,\qquad \mathrm{Her}\,Q=\tfrac12\bigl(Q+Q^{*}\bigr)=2e_t-2ib\mu=2\bigl(e_t-ib\mu\bigr),
+\boxed{\;Q-Q^{*}=4d\nu\neq0,\qquad \mathrm{Her}\,Q=\tfrac12\bigl(Q+Q^{*}\bigr)=2e_t-2ib\mu=2\bigl(e_t-ib\mu\bigr)\;},
 $$</p>
 <p>and $G$ is not positive definite.</p>
 <p><em>Proof.</em> The value of the character at the atom is read from the kernel, $\chi_\omega=-\sin\tfrac{\pi}{2}\tilde\Xi=-\tilde\Xi$, and the sum $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ is the four-term computation written out below for the example. For the Hermitian part put $X=ib\mu$. The element $X$ is Hermitian: $i$ is central with $i^{*}=-i$, and $\mu^{*}=-\mu$ for a real quaternion $\mu$, so $(ib\mu)^{*}=(b\mu)^{*}(i)^{*}=b\mu^{*}(-i)=b(-\mu)(-i)=ib\mu$. And $X^{2}=i^{2}b^{2}\mu^{2}=b^{2}e_t$, since $\mu^{2}=-e_t$ for a unit real $\mu$. In the matrix model $\mathsf{M}_2(X)$ is therefore a Hermitian matrix whose square is $b^{2}I$, so its eigenvalues are $\pm b$, and those of $\mathsf{M}_2(\mathrm{Her}\,Q)=2\bigl(I-\mathsf{M}_2(X)\bigr)$ are</p>

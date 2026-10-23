@@ -107,7 +107,7 @@ $$</p>
 <p><strong>Definition.</strong> A connection $\nabla$ on $TM$ is <strong>metric</strong> if $X\,g(Y, Z) = g(\nabla_XY, Z) + g(Y, \nabla_XZ)$ and <strong>torsion-free</strong> if $\nabla_XY - \nabla_YX = [X, Y]$.</p>
 <p><strong>Theorem (fundamental theorem).</strong> On a Riemannian manifold there is exactly one connection that is both metric and torsion-free, the <strong>Levi-Civita connection</strong>, given by the Koszul formula</p>
 <p>$$
-2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]).
+\boxed{\;2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y])\;}.
 $$</p>
 <p><strong>Proof.</strong> The right-hand side is $C^\infty(M)$-linear in $X, Y, Z$, hence a tensor, and nondegeneracy of $g$ determines $\nabla_XY$; the two properties follow by substitution, the metricity from the first three terms and the torsion-freeness from the last three.</p>
 <p><strong>Definition.</strong> In a coordinate frame the connection is described by the <strong>Christoffel symbols</strong></p>
@@ -184,7 +184,7 @@ $$</p>
 <p><strong>Theorem (Rauch).</strong> Let $\gamma$ be a geodesic in $(M, g)$ and let $\gamma_c$ be a geodesic in a manifold $(M_c, g_c)$ of constant curvature $K_c$, with $|\gamma'(0)| = |\gamma_c'(0)|$ and $K_c \geq K$ along the corresponding planes. Then the norm of a Jacobi field $J$ along $\gamma$ with $J(0) = 0$ and $|DJ/dt(0)| = 1$ is bounded below by the corresponding norm in the comparison manifold for as long as the comparison field exists, and dually if $K_c \leq K$. The subscript $c$ marks the <strong>comparison object</strong> throughout, the geodesic $\gamma_c$ in the constant-curvature model $(M_c,g_c)$ of curvature $K_c$.</p>
 <p>In the constant-curvature model the comparison fields are explicit: with $s(t)$ for the solution of the model Jacobi equation,</p>
 <p>$$
-s_{K_c}(t) = \begin{cases} \sin(t\sqrt{K_c})/\sqrt{K_c}, & K_c > 0, \\ t, & K_c = 0, \\ \sinh(t\sqrt{-K_c})/\sqrt{-K_c}, & K_c < 0. \end{cases}
+\boxed{\;s_{K_c}(t) = \begin{cases} \sin(t\sqrt{K_c})/\sqrt{K_c}, & K_c > 0, \\ t, & K_c = 0, \\ \sinh(t\sqrt{-K_c})/\sqrt{-K_c}, & K_c < 0. \end{cases}\;}
 $$</p>
 <p><strong>Proof sketch.</strong> One compares the two scalar functions $|J|^2$ and the model $s^2$ by means of the Riccati equation satisfied by the logarithmic derivative of $|J|$ and the Sturm comparison theorem for ordinary differential equations; the argument belongs to Part III.</p>
 <p><strong>Theorem (Bonnet–Myers).</strong> If $(M, g)$ is complete and connected of dimension $n$ and there is a constant $k > 0$ with $\operatorname{Ric}(v, v) \geq (n-1)k$ for every unit $v$ and every point, then $M$ is compact, its diameter is at most $\pi/\sqrt{k}$, its fundamental group is finite, and its universal cover is compact.</p>
@@ -228,7 +228,7 @@ $$</p>
 <h2 id="gaussbonnet-and-characteristic-classes">Gauss–Bonnet and Characteristic Classes</h2>
 <p><strong>Theorem (Gauss–Bonnet, surface case).</strong> For a compact oriented Riemannian surface $M$ with Gaussian curvature $K$ and volume form $\mathrm{vol}_g$,</p>
 <p>$$
-\int_M K\,\mathrm{vol}_g = 2\pi\,\chi(M).
+\boxed{\;\int_M K\,\mathrm{vol}_g = 2\pi\,\chi(M)\;}.
 $$</p>
 <p><strong>Theorem (generalised Gauss–Bonnet–Chern).</strong> For a compact oriented Riemannian manifold of even dimension $2k$, the integral of the Pfaffian of the curvature form is the Euler characteristic:</p>
 <p>$$

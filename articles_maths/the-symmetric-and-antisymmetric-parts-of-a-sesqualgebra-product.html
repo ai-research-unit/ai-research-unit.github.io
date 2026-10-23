@@ -144,7 +144,7 @@ f^{\mathrm s}(x,y) = c\bigl(f^{\mathrm s}(y,x)\bigr), \qquad f^{\mathrm a}(x,y) 
 $$</p>
 <p>together with the reconstruction</p>
 <p>$$
-f = f^{\mathrm s} + f^{\mathrm a}, \qquad f^{c} = f^{\mathrm s} - f^{\mathrm a}, \qquad f - f^{c} = 2\,f^{\mathrm a}.
+\boxed{\;f = f^{\mathrm s} + f^{\mathrm a}, \qquad f^{c} = f^{\mathrm s} - f^{\mathrm a}, \qquad f - f^{c} = 2\,f^{\mathrm a}\;}.
 $$</p>
 <p><em>Proof.</em> Sesquilinearity is the proposition of §<em>The Adapted Exchange</em> applied to $f$ and to $f^{c}$ and closed under the halves, and additivity is inherited from $f$ coefficient by coefficient. Exchanging $x$ and $y$ in the definition of $f^{\mathrm s}$ and conjugating gives $c\bigl(f^{\mathrm s}(y,x)\bigr) = \tfrac12\bigl(c(f(y,x)) + c^{2}(f(x,y))\bigr) = \tfrac12\bigl(c(f(y,x)) + f(x,y)\bigr) = f^{\mathrm s}(x,y)$, and the antisymmetric display is the same computation with the sign; the reconstruction is the sum and the difference of the two definitions.</p>
 <p><strong>Theorem (uniqueness of the split).</strong> Suppose $f = s + t$ with $s$ fixed by the exchange, $s(x,y) = c(s(y,x))$, and $t$ negated by it, $t(x,y) = -c(t(y,x))$ for all $x, y$. Then $s = f^{\mathrm s}$ and $t = f^{\mathrm a}$.</p>
@@ -155,7 +155,7 @@ $$</p>
 <h3 id="the-diagonal-and-the-square">The Diagonal and the Square</h3>
 <p><strong>Proposition (the polarisation of the square).</strong> For all $x, y \in A$,</p>
 <p>$$
-f(x+y, x+y) - f(x,x) - f(y,y) = f(x,y) + f(y,x) = 2\,f^{\mathrm{sym}}(x,y),
+\boxed{\;f(x+y, x+y) - f(x,x) - f(y,y) = f(x,y) + f(y,x) = 2\,f^{\mathrm{sym}}(x,y)\;},
 $$</p>
 <p>where $f^{\mathrm{sym}}(x,y) = \tfrac12\bigl(f(x,y) + f(y,x)\bigr)$ is the <strong>plain</strong> symmetrisation, the half of the bare transposition.</p>
 <p><em>Proof.</em> Expand the left-hand side by the additivity in each variable and cancel the two squares:</p>
@@ -165,7 +165,7 @@ $$</p>
 <p><strong>Remark (the polarisation sees the plain symmetrisation, not the symmetric part).</strong> The right-hand side is twice the plain symmetrisation of <em>The Sesquilinear Symmetrised Product</em>, the operation $x \circ y$ of the bare transpose, and it is twice the symmetric part $f^{\mathrm s}$ only when $c$ is the identity, that is in the bilinear case. <strong>The polarisation identity therefore does not recover the symmetric part of a sesqualgebra product</strong>, and it is the first of the two facts of the bilinear theory that the adaptation costs. The reason is that the square of a sum conjugates nothing while the exchange conjugates the value, so the diagonal and the polarisation cannot both see the same operation.</p>
 <p><strong>Proposition (the diagonal is the separated square).</strong> For every $x \in A$,</p>
 <p>$$
-f^{\mathrm s}(x,x) = \tfrac12\bigl(f(x,x) + c(f(x,x))\bigr), \qquad f^{\mathrm a}(x,x) = \tfrac12\bigl(f(x,x) - c(f(x,x))\bigr).
+\boxed{\;f^{\mathrm s}(x,x) = \tfrac12\bigl(f(x,x) + c(f(x,x))\bigr), \qquad f^{\mathrm a}(x,x) = \tfrac12\bigl(f(x,x) - c(f(x,x))\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> The definitions at $y = x$.</p>
 <p><strong>Remark (the antisymmetric part is not zero at equal arguments).</strong> In the bilinear theory the antisymmetric part vanishes identically at equal arguments, $f_{-}(x,x) = \tfrac12(f(x,x) - f(x,x)) = 0$, and that vanishing is what makes the square a function of the symmetric part alone. For a sesqualgebra product the antisymmetric part at equal arguments is the antisymmetrised square $\tfrac12\bigl(f(x,x) - c(f(x,x))\bigr)$, which <strong>need not vanish</strong>: it vanishes exactly when the square of every element is fixed by the conjugation. This is the second fact the adaptation costs, and the two are the same fact read at equal arguments and away from them.</p>

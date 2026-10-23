@@ -83,7 +83,7 @@ $$</p>
 <h3 id="the-order-of-the-general-linear-group">The Order of the General Linear Group</h3>
 <p><strong>Theorem.</strong> The order of the general linear group is</p>
 <p>$$
-|\operatorname{GL}_n(\mathbb{F}_q)|=\prod_{i=0}^{n-1}(q^n-q^i)=q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1) .
+\boxed{\;|\operatorname{GL}_n(\mathbb{F}_q)|=\prod_{i=0}^{n-1}(q^n-q^i)=q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1)\;} .
 $$</p>
 <p><em>Proof.</em> An invertible matrix is exactly an ordered basis of $\mathbb{F}_q^n$, read as the list of its columns: a matrix is invertible if and only if its columns are linearly independent, and every ordered basis occurs exactly once. Hence the order is the number of ordered bases, which is the previous corollary. For the second expression, write $q^n-q^i=q^i(q^{n-i}-1)$ and collect: the exponents sum to $\sum_{i=0}^{n-1}i=n(n-1)/2$, and reindexing gives $\prod_{i=1}^n(q^i-1)$.</p>
 <p><strong>Corollary.</strong> The special linear group has order</p>
@@ -102,7 +102,7 @@ $$</p>
 <p><strong>Theorem.</strong> The number of $k$-dimensional subspaces of an $n$-dimensional vector space over $\mathbb{F}_q$ is $\binom{n}{k}_q$.</p>
 <p><em>Proof.</em> Count the pairs (ordered $k$-tuple of independent vectors, $k$-dimensional subspace containing them) in two ways. The number of independent $k$-tuples is $N(n,k)=\prod_{i=0}^{k-1}(q^n-q^i)$. Each $k$-dimensional subspace $W$ contains $N(k,k)=\prod_{i=0}^{k-1}(q^k-q^i)$ independent $k$-tuples, namely its ordered bases. Dividing,</p>
 <p>$$
-\#\{W:\dim W=k\}=\frac{\prod_{i=0}^{k-1}(q^n-q^i)}{\prod_{i=0}^{k-1}(q^k-q^i)} =\prod_{i=0}^{k-1}\frac{q^n-q^i}{q^k-q^i},
+\boxed{\;\#\{W:\dim W=k\}=\frac{\prod_{i=0}^{k-1}(q^n-q^i)}{\prod_{i=0}^{k-1}(q^k-q^i)} =\prod_{i=0}^{k-1}\frac{q^n-q^i}{q^k-q^i}\;},
 $$</p>
 <p>and simplifying $\dfrac{q^n-q^i}{q^k-q^i}=\dfrac{q^{n-i}-1}{q^{k-i}-1}$ and reindexing gives the stated product.</p>
 <p><strong>Corollary.</strong> The number of lines (one-dimensional subspaces) equals the number of hyperplanes (codimension-one subspaces), both equal to $\dfrac{q^n-1}{q-1}=1+q+\cdots+q^{n-1}$.</p>
@@ -135,7 +135,7 @@ $$</p>
 <p><strong>Example.</strong> $N_1(q)=q$, the linear polynomials; $N_2(q)=(q^2-q)/2$; $N_3(q)=(q^3-q)/3$; $N_4(q)=(q^4-q^2)/4$. For $q=2$ these are $2,1,2,3$: the linear $x,x+1$, the quadratic $x^2+x+1$, the cubics $x^3+x+1$ and $x^3+x^2+1$, and three quartics.</p>
 <p><strong>Theorem (similarity classes).</strong> The number of similarity classes of $n \times n$ matrices over $\mathbb{F}_q$ is the coefficient of $t^n$ in</p>
 <p>$$
-\prod_{m\ge1}(1-t^m)^{-a_m}, \qquad a_m=\sum_{d\mid m}N_d(q) .
+\boxed{\;\prod_{m\ge1}(1-t^m)^{-a_m}, \qquad a_m=\sum_{d\mid m}N_d(q)\;} .
 $$</p>
 <p><em>Proof.</em> By the structure theorem a similarity class is determined by its multiset of elementary divisors, the prime powers $f^e$ with $f$ monic irreducible. For a fixed irreducible $f$ of degree $d$, the possible exponents $e \ge 1$ contribute the factor $\prod_{e\ge1}(1-t^{de})^{-1}$ to the generating function for total degree, so the count is $\prod_d\bigl(\prod_e(1-t^{de})^{-1}\bigr)^{N_d}$. Collecting the factors with $de=m$ gives the displayed product with exponent $a_m$.</p>
 <p><strong>Example.</strong> For $n=2$ the coefficient is $a_2+\binom{a_1+1}{2}=\bigl(N_1+N_2\bigr)+\frac{q(q+1)}{2}=q^2+q$, so there are $q^2+q$ similarity classes of $2\times2$ matrices over $\mathbb{F}_q$; at $q=2$ this is $6$, namely the two scalars, the two Jordan blocks $J_2(0),J_2(1)$, the companion matrix of $x^2+x+1$, and $\operatorname{diag}(0,1)$.</p>

@@ -124,7 +124,7 @@ $$</p>
 <h3 id="the-inverted-set">The Inverted Set</h3>
 <p><strong>Theorem.</strong> The inverted set $I(\sigma)$ is always a subgroup of $G$. In the notation of the bijection $\alpha = \sigma\iota$, it is the fixed subgroup of $\alpha$,</p>
 <p>$$
-I(\sigma) = G^{\sigma\iota} = G^\alpha ,
+\boxed{\;I(\sigma) = G^{\sigma\iota} = G^\alpha\;} ,
 $$</p>
 <p>and dually $I(\alpha) = G^{\sigma}$ for the same pair $(\sigma, \alpha)$.</p>
 <p><strong>Proof.</strong> For $g, h \in I(\sigma)$ one has $\sigma(gh) = \sigma(h)\sigma(g) = h^{-1}g^{-1} = (gh)^{-1}$, so $gh \in I(\sigma)$; also $e \in I(\sigma)$ and $g^{-1} \in I(\sigma)$ since $\sigma(g^{-1}) = \sigma(g)^{-1} = g$. For the identification, $\sigma(g) = g^{-1}$ is equivalent to $\iota\sigma(g) = g$, that is to $\alpha(g) = g$. The dual statement is the same argument with the roles exchanged.</p>
@@ -254,7 +254,7 @@ $$</p>
 <p><strong>Definition.</strong> A subgroup $H \leq G$ is <strong>$\sigma$-stable</strong> if $\sigma(H) = H$.</p>
 <p><strong>Proposition.</strong> Let $H$ be a $\sigma$-stable subgroup. Then $\sigma$ restricts to an involution of $H$, and $H \cap G^\sigma = H^\sigma$ and $H \cap I(\sigma) = I(\sigma|_H)$. If in addition $H \trianglelefteq G$, then $\sigma$ induces an involution $\bar\sigma$ of the quotient $G/H$, and</p>
 <p>$$
-\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma),
+\boxed{\;\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma)\;},
 $$</p>
 <p>where $\pi : G \to G/H$ is the quotient map. Both inclusions can be strict.</p>
 <p><strong>Proof.</strong> The restriction of an anti-automorphism to a stable subgroup is an anti-automorphism of that subgroup, and its square is the identity; the intersections are the definitions. For the quotient, $\bar\sigma(gH) = \sigma(g)H$ is well defined because $\sigma(H) = H$, and it is an anti-automorphism of order at most two, hence an involution because it is a bijection with $\bar\sigma^2(gH) = gH$. An element of $G^\sigma$ visibly has an image in $(G/H)^{\bar\sigma}$, which gives the first inclusion, and the second is the same statement in the inverted set.</p>

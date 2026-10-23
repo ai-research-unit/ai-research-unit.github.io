@@ -87,7 +87,7 @@ Consequently the handle operator on a bordism induces the surgery operator on it
 <p><strong>Proof.</strong> The handle $D^k\times D^{n-k}$ has boundary $S^{k-1}\times D^{n-k}\cup D^k\times S^{n-k-1}$; the first piece is glued to the boundary of $W$ by the embedding $\varphi$, and the gluing theorem for manifolds with boundary applies because $\varphi$ is an embedding of a codimension-zero submanifold of the boundary. The boundary computation is then the definition of the surgered boundary, which is exactly the operation of <em>The Surgery Operator</em>.</p>
 <p><strong>Corollary (the Euler characteristic).</strong> The Euler characteristic changes by the sign of the index,
 $$
-\chi(W') = \chi(W) + (-1)^k ,
+\boxed{\;\chi(W') = \chi(W) + (-1)^k\;} ,
 $$
 because the handle is attached along a cell of dimension $k$.</p>
 <h2 id="the-effect-on-the-homology">The Effect on the Homology</h2>
@@ -103,7 +103,7 @@ $$
 $$
 the connecting map sends the generator to the class $A = [\varphi(S^{k-1})]\in H_{k-1}(W)$ of the attaching sphere. Hence
 $$
-H_i(W')\cong H_i(W)\quad (i \leq k-2,\ i\geq k+1), \qquad H_{k-1}(W')\cong H_{k-1}(W)\big/\langle A\rangle ,
+\boxed{\;H_i(W')\cong H_i(W)\quad (i \leq k-2,\ i\geq k+1), \qquad H_{k-1}(W')\cong H_{k-1}(W)\big/\langle A\rangle\;} ,
 $$
 and $H_k(W')\cong H_k(W)\oplus\mathbb{Z}$ when $A = 0$, while $H_k(W')\cong H_k(W)$ when $A\neq0$.</p>
 <p><strong>Proof.</strong> The exact sequence comes from the pair $(W',W)$ and the identification of the relative group; the connecting homomorphism is the boundary of the core cell, which is the attaching sphere. Reading the sequence: the terms outside degrees $k-1$ and $k$ are unchanged, the cokernel of the map $\mathbb{Z}\to H_{k-1}(W)$ is $H_{k-1}(W)/\langle A\rangle$, and the kernel of that map is $\mathbb{Z}$ or $0$ according as $A = 0$ or not, which is the statement about $H_k(W')$.</p>
@@ -123,7 +123,7 @@ in which $W_k$ is obtained from $W_{k-1}$ by attaching $k$-handles. The <strong>
 <p><strong>Proof sketch.</strong> If the two spheres meet once, one can slide the attaching sphere of the higher handle over the lower one until it becomes a standard sphere in the boundary sphere of $h^k$ and cancel; the slide is realised by an isotopy of the attaching map. The condition is also necessary for the cancellation of a pair in the simplest form. The full treatment is in <em>Cobordism and Surgery Theory</em>.</p>
 <p><strong>Corollary (the number of handles).</strong> A compact manifold with a handle decomposition with $c_k$ handles of index $k$ satisfies
 $$
-c_k \;\geq\; b_k(W) \quad \text{and} \quad c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 = \chi(W)
+\boxed{\;c_k \;\geq\; b_k(W) \quad \text{and} \quad c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 = \chi(W)\;}
 $$
 for every $k$, since the handle decomposition is a CW structure and its chain complex computes the homology; the inequalities are the <strong>Morse inequalities</strong> of the topological decomposition.</p>
 <h2 id="the-morse-theoretic-interpretation-forward-reference">The Morse-Theoretic Interpretation (Forward Reference)</h2>

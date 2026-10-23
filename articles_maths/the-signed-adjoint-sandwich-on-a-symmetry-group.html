@@ -88,7 +88,7 @@ $$</p>
 <h3 id="the-formula">The Formula</h3>
 <p><strong>Theorem (the signed adjoint sandwich).</strong> The adjoint of the signed sandwich on the graded group algebra is the signed sandwich with the involuted and adjointed parameters,</p>
 <p>$$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*} = S^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}, \qquad\text{that is}\qquad \bigl(S^{\alpha}_{a,b}\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\,\alpha(b)^{*} .
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*} = S^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}, \qquad\text{that is}\qquad \bigl(S^{\alpha}_{a,b}\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\,\alpha(b)^{*}\;} .
 $$</p>
 <p><strong>Proof.</strong> Compute the defining identity of the adjoint:
 $$
@@ -106,7 +106,7 @@ so $\langle S^{\alpha}_{a,b}(x), y\rangle = \tau\bigl(x^{*}\,\alpha(a)^{*}\alpha
 <h3 id="the-parity-sign">The Parity Sign</h3>
 <p><strong>Proposition.</strong> The adjoint of the signed sandwich is obtained from the adjoint of the unsigned sandwich by replacing the two parameters by their images under the grade involution; for $\alpha = \mathrm{id}$ it is the familiar $(S_{a,b})^{*} = S_{a^{*},b^{*}}$. The composite $(S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}$ is an <strong>unsigned</strong> sandwich, because the composition of two signed sandwiches is unsigned: by the composition law $S^{\alpha}_{a,b}\circ S^{\alpha}_{c,d} = S_{a\alpha(c),\,\alpha(d)b}$ of <em>The Signed Sandwich on a Symmetry Group</em>,</p>
 <p>$$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*}\,S^{\alpha}_{a,b} = S_{\alpha(a)^{*}\alpha(a),\ \alpha(b)\alpha(b)^{*}},
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*}\,S^{\alpha}_{a,b} = S_{\alpha(a)^{*}\alpha(a),\ \alpha(b)\alpha(b)^{*}}\;},
 $$</p>
 <p>so $S^{\alpha}_{a,b}$ is unitary exactly when $\alpha(a)^{*} = \alpha(a)^{-1}$ and $\alpha(b)^{*} = \alpha(b)^{-1}$.</p>
 <p><strong>Proof.</strong> The first statement is the theorem with $a, b$ replaced by $\alpha(a), \alpha(b)$; the composite is the composition law applied to $S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ and $S^{\alpha}_{a,b}$, which gives the unsigned sandwich displayed, since the two grade involutions in the middle multiply to the identity; the composite is the identity operator exactly when both of its parameters are the unit, which is the unitarity condition.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>signed inner conjugation</strong> is the diagonal signed sandwich $\mathrm{Ad}^{\alpha}_{a} = S^{\alpha}_{a,a^{-1}}$, $\mathrm{Ad}^{\alpha}_{a}(x) = a\,\alpha(x)\,a^{-1}$; it is the operator of the reflection of a quadratic space, <em>Reflections as Signed Two-Sided Operators on a Symmetry Group</em>.</p>
 <p><strong>Proposition.</strong> The adjoint of the signed inner conjugation is the signed inner conjugation by the adjointed parameter,</p>
 <p>$$
-\bigl(\mathrm{Ad}^{\alpha}_{a}\bigr)^{*} = \mathrm{Ad}^{\alpha}_{\alpha(a)^{*}},
+\boxed{\;\bigl(\mathrm{Ad}^{\alpha}_{a}\bigr)^{*} = \mathrm{Ad}^{\alpha}_{\alpha(a)^{*}}\;},
 $$</p>
 <p>and it is unitary exactly when $\alpha(a)^{*} = a^{-1}$, in which case the adjoint is the inverse; the reflection $\rho_u = \mathrm{Ad}^{\alpha}_{u}$ is self-adjoint when the vector $u$ satisfies $u^{*} = u$, and then $\rho_u^{*} = \rho_u = \rho_u^{-1}$.</p>
 <p><strong>Proof.</strong> Put $b = a^{-1}$ in the formula: $(\mathrm{Ad}^{\alpha}_a)^{*} = S^{\alpha}_{\alpha(a)^{*},\alpha(a^{-1})^{*}}$; since $^{*}$ is an anti-automorphism, $\alpha(a^{-1})^{*} = (\alpha(a)^{-1})^{*} = (\alpha(a)^{*})^{-1}$, so the second parameter is the inverse of the first and the adjoint is the signed inner conjugation by $\alpha(a)^{*}$. It is unitary, $(\mathrm{Ad}^{\alpha}_a)^{*} = (\mathrm{Ad}^{\alpha}_a)^{-1} = \mathrm{Ad}^{\alpha}_{a^{-1}}$, exactly when $\alpha(a)^{*} = a^{-1}$; for a reflection, $u^{*} = u$ gives $\alpha(u)^{*} = u$ and unitarity follows from $u^2 = \mathfrak{Q}(u)$ and $u^{-1} = \mathfrak{Q}(u)^{-1}u$ in the Clifford realisation.</p>

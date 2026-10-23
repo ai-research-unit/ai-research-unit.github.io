@@ -76,7 +76,7 @@
 <h2 id="the-fixed-point-set">The Fixed-Point Set</h2>
 <p><strong>Definition.</strong> The <strong>fixed-point set</strong> of the continuous involution $\sigma$ is</p>
 <p>$$
-G^\sigma = \{g \in G : \sigma(g) = g\} .
+\boxed{\;G^\sigma = \{g \in G : \sigma(g) = g\}\;} .
 $$</p>
 <p><strong>Theorem (the elementary properties).</strong> The set $G^\sigma$ contains $e$, it is closed under inversion, it is closed in $G$, and it is inverted elementwise by the associated automorphism: $\alpha(g) = g^{-1}$ for every $g \in G^\sigma$.</p>
 <p><strong>Proof.</strong> $\sigma(e) = e$ because an anti-automorphism preserves the identity; $\sigma(g^{-1}) = \sigma(g)^{-1} = g^{-1}$ for $g \in G^\sigma$; the set is the equalizer of the continuous maps $\sigma$ and $\mathrm{id}$, hence closed in the Hausdorff group. Finally $\alpha(g) = \sigma(\iota(g)) = \sigma(g^{-1}) = \sigma(g)^{-1} = g^{-1}$ for $g \in G^\sigma$, which is the identity $G^\sigma = I(\alpha)$ of the dictionary.</p>
@@ -100,7 +100,7 @@ $$</p>
 <p><strong>Proof.</strong> $\alpha$ is a continuous automorphism of order two, so its fixed set $G^\alpha$ is a closed subgroup; by the dictionary it equals $I(\sigma)$, the set of elements inverted by $\sigma$. Every subgroup on which $\sigma$ acts by the inversion consists of elements inverted by $\sigma$, hence lies in $I(\sigma) = H$, so $H$ is the largest such subgroup. For $h \in H$ one has $\alpha(h) = h$ and therefore $\sigma(h) = h^{-1}$; hence $h \in G^\sigma$ exactly when $h = h^{-1}$, that is $h^2 = e$. Thus $H \subseteq G^\sigma$ if and only if $H$ has exponent two, and then the two sets are equal, because an element $g \in G^\sigma$ has $\sigma(g) = g$, so $g \in I(\sigma)$ if and only if $g^2 = e$. The characterisation of equality with $G^\sigma$ is the criterion of the previous section together with this exponent-two condition.</p>
 <p><strong>Proposition (the two faces differ in general).</strong> The sets $G^\sigma$ and $H = I(\sigma)$ need not be comparable: for $S_3$ with the involution $\sigma = \iota\,c_{(1\,2)}$ one has $\lvert G^\sigma\rvert = 4$ and $\lvert H\rvert = 2$, so neither contains the other. The elementwise statement that always holds is the factorisation of the symmetric map</p>
 <p>$$
-\varphi : G \longrightarrow G^\sigma, \qquad \varphi(g) = g^{-1}\alpha(g) = g^{-1}\sigma(g)^{-1},
+\boxed{\;\varphi : G \longrightarrow G^\sigma, \qquad \varphi(g) = g^{-1}\alpha(g) = g^{-1}\sigma(g)^{-1}\;},
 $$</p>
 <p>which lands in the fixed-point set, is constant on the left cosets of $H$, and induces a continuous bijection of $G/H$ onto its image, the set of <strong>twisted squares</strong>; this is the coset theorem of <em>Involutive Topological Groups</em>, and the image need not be all of $G^\sigma$, as the same source records.</p>
 <h2 id="the-quotient">The Quotient</h2>
@@ -115,7 +115,7 @@ $$</p>
 <p><strong>Proof.</strong> If $g \in G^\sigma$ then $\bar\sigma(gH) = \sigma(g)H = gH$, so the image is contained in the fixed set. The strictness is the quotient phenomenon of <em>Involutive Groups</em>, where $\mathbb{Z}/4\mathbb{Z}$ is the standard witness; the closedness is the continuity of the quotient map, and the subgroup statement is the criterion applied to $G/H$.</p>
 <p><strong>Theorem (the orbit space of the fixed subgroup).</strong> The fixed subgroup $H$ acts on $G$ on both sides, and the square of the involution factors through the two-sided quotient: the map</p>
 <p>$$
-G \longrightarrow H\backslash G/H, \qquad g \mapsto HgH ,
+\boxed{\;G \longrightarrow H\backslash G/H, \qquad g \mapsto HgH\;} ,
 $$</p>
 <p>identifies $g$ and $\sigma(g)$ up to the action of $H$ in the sense that $\sigma(HgH) = H\sigma(g)H$, so $\sigma$ induces an involution of the double coset space $H\backslash G/H$; when $G$ is compact, this double coset space is compact Hausdorff and the induced involution has a closed fixed set.</p>
 <p><strong>Proof.</strong> The double cosets are the orbits of the action of $H\times H$ by $(h,k)\cdot g = hgk^{-1}$; since $\sigma(H) = H$, the involution permutes them and descends to the quotient. For compact $G$ the quotient by a closed subgroup is compact Hausdorff, and the fixed set of the induced involution is closed by the equalizer argument.</p>

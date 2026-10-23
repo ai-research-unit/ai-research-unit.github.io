@@ -117,8 +117,7 @@ $$</p>
 <h3 id="the-identification-with-so2">The Identification with SO(2)</h3>
 <p><strong>Definition.</strong> The <strong>orthogonal group</strong> of the plane is the group $O(2)$ of distance-preserving $\mathbb{R}$-linear maps $\mathbb{C} \to \mathbb{C}$, and the <strong>special orthogonal group</strong> $SO(2)$ is its subgroup of orientation-preserving elements, those of determinant $+1$.</p>
 <p><strong>Theorem.</strong> The map $u \mapsto R_u$ is an injective group homomorphism $\mathrm{U}(1) \to SO(2)$, and it is surjective. Hence</p>
-<p>$$
-\mathrm{U}(1) \cong SO(2),
+<p>$$ \boxed{\;\mathrm{U}(1) \cong SO(2)\;},
 $$</p>
 <p>and every element of $SO(2)$ is the rotation $R_u$ for exactly one $u \in \mathrm{U}(1)$, that is, one angle $\theta \in \mathbb{R}/2\pi\mathbb{Z}$.</p>
 <p><strong>Proof.</strong> The product rule $R_{uv} = R_u \circ R_v$ and $R_1 = \mathrm{id}$ follow from associativity of multiplication, so the map is a homomorphism; it is injective because $R_u = R_v$ implies $u = R_u(1) = R_v(1) = v$. For surjectivity, let $L \in SO(2)$ and put $u = L(1)$, so that $|u| = |1| = 1$ and $u \in \mathrm{U}(1)$. The map $R_u^{-1} \circ L$ then fixes $1$ and preserves distances; a distance-preserving $\mathbb{R}$-linear map fixing $1$ and preserving the determinant is the identity, since it carries the orthonormal basis $\{1, i\}$ to an orthonormal basis with the same orientation and the same first vector. Hence $L = R_u$.</p>
@@ -176,8 +175,7 @@ $$</p>
 <p>using $\bar u^{-1} = u$ for $|u| = 1$. As $u$ ranges over $\mathrm{U}(1)$, $u^2$ ranges over $\mathrm{U}(1)$, so every reflection is conjugate to conjugation; the reflections form one conjugacy class.</p>
 <h3 id="composition-of-two-reflections">Composition of Two Reflections</h3>
 <p><strong>Theorem.</strong> For $u, v \in \mathrm{U}(1)$,</p>
-<p>$$
-S_u \circ S_v = R_{u\bar v}.
+<p>$$ \boxed{\;S_u \circ S_v = R_{u\bar v}\;}.
 $$</p>
 <p>In particular the composition of two reflections is a rotation.</p>
 <p><strong>Proof.</strong> For every $Q$,</p>
@@ -302,8 +300,7 @@ $$</p>
 <h2 id="isometries-of-the-plane">Isometries of the Plane</h2>
 <p>The isometries that do not fix the origin complete the picture. An <strong>isometry of the plane</strong> is a map $T : \mathbb{C} \to \mathbb{C}$ preserving distances. Its value $c = T(0)$ is a translation, and the map $L(Q) = T(Q) - c$ fixes the origin and is again an isometry, hence lies in $O(2)$; so every isometry is a translation composed with a linear isometry.</p>
 <p><strong>Theorem.</strong> Every isometry of $\mathbb{C}$ has exactly one of the two forms</p>
-<p>$$
-T(Q) = uQ + c \quad \text{or} \quad T(Q) = u\bar Q + c, \qquad u \in \mathrm{U}(1), \ c \in \mathbb{C},
+<p>$$ \boxed{\;T(Q) = uQ + c \quad \text{or} \quad T(Q) = u\bar Q + c, \qquad u \in \mathrm{U}(1), \ c \in \mathbb{C}\;},
 $$</p>
 <p>and the isometries form the semidirect product</p>
 <p>$$

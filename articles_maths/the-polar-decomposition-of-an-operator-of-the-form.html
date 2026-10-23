@@ -80,7 +80,7 @@
 <p><em>Proof.</em> The adjoint of $T^{\dagger}T$ is $T^{\dagger}(T^{\dagger})^{\dagger} = T^{\dagger}T$, and likewise for $TT^{\dagger}$. If $T^{\dagger}Tx = \lambda x$ with $\lambda \neq 0$, then $x = \lambda^{-1}T^{\dagger}Tx$ lies in the range of $T^{\dagger}$, and $T(T^{\dagger}Tx) = \lambda Tx$ shows that $\lambda$ is an eigenvalue of $TT^{\dagger}$ with eigenvector $Tx \neq 0$; the argument is symmetric in the two products.</p>
 <p><strong>Proposition (the positivity).</strong> Let $h$ be definite. Then $T^{\dagger}T$ is positive,</p>
 <p>$$
-h(T^{\dagger}Tx,x) = h(Tx,Tx) = \lVert Tx\rVert^{2} \geq 0 \qquad \text{for all } x ,
+\boxed{\;h(T^{\dagger}Tx,x) = h(Tx,Tx) = \lVert Tx\rVert^{2} \geq 0 \qquad \text{for all } x\;} ,
 $$</p>
 <p>and the kernel of $T^{\dagger}T$ is the kernel of $T$.</p>
 <p><em>Proof.</em> The identity is $h(T^{\dagger}Tx,x) = h(Tx,(T^{\dagger})^{\dagger}x) = h(Tx,Tx)$, by the defining relation of the adjoint. The kernel statement follows: $T^{\dagger}Tx = 0$ implies $\lVert Tx\rVert^{2} = h(T^{\dagger}Tx,x) = 0$, so $Tx = 0$ by the definiteness of the norm, and the converse is immediate.</p>
@@ -95,14 +95,14 @@ $$</p>
 <h3 id="the-isometry-on-the-range">The Isometry on the Range</h3>
 <p><strong>Theorem (the phase is well defined and isometric).</strong> The formula</p>
 <p>$$
-U(\lvert T\rvert x) = Tx \qquad x \in A ,
+\boxed{\;U(\lvert T\rvert x) = Tx \qquad x \in A\;} ,
 $$</p>
 <p>defines an $R$-linear isometry from the range of $\lvert T\rvert$ onto the range of $T$, and it extends by continuity to an isometry from the closure of the range of $\lvert T\rvert$ onto the closure of the range of $T$; setting $U = 0$ on the kernel of $\lvert T\rvert$ gives an operator $U \in B(A)$.</p>
 <p><em>Proof.</em> If $\lvert T\rvert x = \lvert T\rvert x_{1}$ then $\lvert T\rvert(x - x_{1}) = 0$, so $T(x - x_{1}) = 0$ by the kernel proposition, and $Tx = Tx_{1}$: the formula is well defined. It is $R$-linear by the linearity of $\lvert T\rvert$ and of $T$, and it is isometric because $\lVert U(\lvert T\rvert x)\rVert = \lVert Tx\rVert = \lVert \lvert T\rvert x\rVert$. A uniformly continuous map on a dense subspace of a complete object extends uniquely to the closure, and the kernel is the $h$-orthogonal complement of the closure of the range, on which $U$ is set to zero.</p>
 <h3 id="the-decomposition-and-its-properties">The Decomposition and Its Properties</h3>
 <p><strong>Theorem (the polar decomposition).</strong> With $\lvert T\rvert$ the modulus and $U$ the phase of the theorem above,</p>
 <p>$$
-T = U\lvert T\rvert , \qquad \lvert T\rvert = U^{\dagger}T , \qquad U^{\dagger}U = P_{\mathrm{ran}\lvert T\rvert} , \qquad UU^{\dagger} = P_{\mathrm{ran}T} ,
+\boxed{\;T = U\lvert T\rvert , \qquad \lvert T\rvert = U^{\dagger}T , \qquad U^{\dagger}U = P_{\mathrm{ran}\lvert T\rvert} , \qquad UU^{\dagger} = P_{\mathrm{ran}T}\;} ,
 $$</p>
 <p>where $P_{\mathrm{ran}\lvert T\rvert}$ and $P_{\mathrm{ran}T}$ are the $h$-orthogonal projections onto the closures of the corresponding ranges. The pair $(\lvert T\rvert, U)$ is the unique pair with $\lvert T\rvert$ positive self-adjoint, $U$ an isometry on the range of $\lvert T\rvert$ and $U = 0$ on its kernel.</p>
 <p><em>Proof.</em> The identity $T = U\lvert T\rvert$ is the definition of $U$ on the range of $\lvert T\rvert$, and both sides vanish on the kernel. For the second, $U^{\dagger}U$ is the projection onto the closure of the range of $\lvert T\rvert$, so $U^{\dagger}T = U^{\dagger}U\lvert T\rvert = \lvert T\rvert$. The two projection relations are the two halves of the isometry statement, $U^{\dagger}U$ being the identity on the initial space and $UU^{\dagger}$ the identity on the final space. For the uniqueness, if $T = V S$ with $S$ positive self-adjoint and $V$ an isometry vanishing on $\ker S$, then $T^{\dagger}T = SV^{\dagger}VS = S^{2}$, so $S = (T^{\dagger}T)^{1/2} = \lvert T\rvert$ by the uniqueness of the square root, and $V = U$ on the range of $\lvert T\rvert$ and on its kernel, hence everywhere.</p>

@@ -94,7 +94,7 @@ $$</p>
 <p>for all sections $s$ of $\mathcal{F}$ and $t$ of $\mathcal{G}$ over the same open set.</p>
 <p><strong>Theorem (existence and the dagger laws).</strong> If the Hermitian structures are nondegenerate, every morphism $T:\mathcal{F}\to\mathcal{G}$ has a unique adjoint $T^{\dagger}:\mathcal{G}\to\mathcal{F}$, and the dagger satisfies</p>
 <p>$$
-(T^{\dagger})^{\dagger}=T,\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T+S)^{\dagger}=T^{\dagger}+S^{\dagger},\qquad (aT)^{\dagger}=\sigma(a)T^{\dagger},
+\boxed{\;(T^{\dagger})^{\dagger}=T,\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T+S)^{\dagger}=T^{\dagger}+S^{\dagger},\qquad (aT)^{\dagger}=\sigma(a)T^{\dagger}\;},
 $$</p>
 <p>for composable morphisms and sections $a$ of $\mathcal{O}_X$; the dagger is therefore a $\sigma$-semilinear anti-involution of the sheaf of endomorphisms.</p>
 <p><em>Proof.</em> The pairing $\langle Ts,-\rangle_{\mathcal{G}}$ is a section of $\mathcal{G}^{\vee,\sigma}$ and the nondegeneracy identifies $\mathcal{G}^{\vee,\sigma}$ with $\mathcal{G}$, so there is a unique $t'=T^{\dagger}t$ with $\langle Ts,t\rangle_{\mathcal{G}}=\langle s,t'\rangle_{\mathcal{F}}$ for every $s$; the assignment $t\mapsto t'$ is a morphism because the pairing is morphic in $t$, and the uniqueness is the nondegeneracy. The laws are the equalities of the two sides read through the same pairing: $(T^{\dagger})^{\dagger}=T$ from the symmetry of the definition, $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ from the associativity of the composition, and $(aT)^{\dagger}=\sigma(a)T^{\dagger}$ from the $\sigma$-sesquilinearity.</p>
@@ -105,7 +105,7 @@ $$</p>
 <p><strong>Definition.</strong> An endomorphism $T$ of a sheaf $\mathcal{F}$ with a nondegenerate Hermitian structure is <strong>self-adjoint</strong>, or <strong>Hermitian</strong>, if $T^{\dagger}=T$; <strong>skew-adjoint</strong> if $T^{\dagger}=-T$; <strong>normal</strong> if $TT^{\dagger}=T^{\dagger}T$; <strong>unitary</strong> if $TT^{\dagger}=T^{\dagger}T=\mathrm{id}$; and an <strong>involution</strong> if it is unitary with $T^2=\mathrm{id}$. The endomorphisms are classified by their relation to the dagger, which is the operator-layer involution of the theory.</p>
 <p><strong>Theorem (the endomorphism sheaf is an involutive sheaf of rings).</strong> The dagger is a $\sigma$-semilinear anti-involution of the sheaf of algebras $\mathcal{E}nd(\mathcal{F})$, so that $\mathcal{E}nd(\mathcal{F})$ is an involutive sheaf of rings in the sense of <em>The Involution on the Structure Sheaf</em>: its fixed part is the subsheaf $\mathcal{H}(\mathcal{F})$ of Hermitian endomorphisms and its anti-invariant part the subsheaf $\mathcal{S}(\mathcal{F})$ of skew-adjoint endomorphisms. If $2$ is invertible in $\mathcal{O}_X(X)$,</p>
 <p>$$
-\mathcal{E}nd(\mathcal{F})=\mathcal{H}(\mathcal{F})\oplus\mathcal{S}(\mathcal{F}),\qquad T=\tfrac12(T+T^{\dagger})+\tfrac12(T-T^{\dagger}),
+\boxed{\;\mathcal{E}nd(\mathcal{F})=\mathcal{H}(\mathcal{F})\oplus\mathcal{S}(\mathcal{F}),\qquad T=\tfrac12(T+T^{\dagger})+\tfrac12(T-T^{\dagger})\;},
 $$</p>
 <p>the Hermitian part is closed under the <strong>Jordan product</strong> $T\bullet S=\frac12(TS+ST)$ and is a sheaf of Jordan algebras, and the skew part is closed under the <strong>commutator</strong> $[T,S]=TS-ST$ and is a sheaf of Lie algebras.</p>
 <p><em>Proof.</em> The dagger laws of the previous section are the axioms of a $\sigma$-semilinear anti-involution, with the fixed elements the Hermitian endomorphisms and the anti-invariant elements the skew ones. The decomposition is the sectionwise decomposition of the fixed and anti-invariant parts of an involutive algebra of <em>Involutive Algebras</em>; the Hermitian part is closed under the anticommutator and the skew part under the commutator, and the closure of the Hermitian part under the ordinary product would require $TS=T^{\dagger}S^{\dagger}=ST$, that is, the commutativity of the factors.</p>
@@ -113,7 +113,7 @@ $$</p>
 <p><em>Proof.</em> The unitarity of $\mathrm{id}+\epsilon T$ reads $(\mathrm{id}+\epsilon T)^{\dagger}(\mathrm{id}+\epsilon T)=\mathrm{id}+\epsilon(T+T^{\dagger})$ to first order, which is $\mathrm{id}$ exactly when $T+T^{\dagger}=0$; the group axioms of the unitary sheaf are the dagger laws.</p>
 <p><strong>Theorem (involutions and the eigensheaf decomposition).</strong> Let $T$ be unitary with $T^2=\mathrm{id}$. Then $T$ is self-adjoint, $T^{\dagger}=T$, and if $2$ is invertible the sheaf decomposes as the direct sum of the eigensheaves</p>
 <p>$$
-\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{1,2}=\tfrac12(\mathrm{id}\pm T),
+\boxed{\;\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{1,2}=\tfrac12(\mathrm{id}\pm T)\;},
 $$</p>
 <p>the projections being morphisms of sheaves with $\pi_1+\pi_2=\mathrm{id}$ and $\pi_1\pi_2=0$.</p>
 <p><em>Proof.</em> From $T^{\dagger}T=\mathrm{id}$ and $T^2=\mathrm{id}$ we get $T^{\dagger}=T^{\dagger}TT=(T^{\dagger}T)T=T$, so $T$ is self-adjoint. The projections $\pi_{1,2}$ are idempotent and orthogonal because $T^2=\mathrm{id}$, and they exhibit the sheaf as the direct sum of their images.</p>

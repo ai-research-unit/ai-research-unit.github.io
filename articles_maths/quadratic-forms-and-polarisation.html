@@ -108,7 +108,7 @@ $$</p>
 <p>Polarising the identity $\mathfrak{Q}(u + v) = \mathfrak{Q}(u) + \mathfrak{Q}(v) + 2B(u, v)$ gives the standard formulas relating $m$ to $B$.</p>
 <p><strong>Proposition.</strong> Let $m$ be a quadratic form with polar form $B$ and let $2$ be invertible in $R$. Then for all $u, v \in M$,</p>
 <p>$$
-\mathfrak{Q}(u + v) + \mathfrak{Q}(u - v) = 2q(u) + 2q(v), \qquad \mathfrak{Q}(u + v) - \mathfrak{Q}(u - v) = 4B(u, v),
+\boxed{\;\mathfrak{Q}(u + v) + \mathfrak{Q}(u - v) = 2q(u) + 2q(v), \qquad \mathfrak{Q}(u + v) - \mathfrak{Q}(u - v) = 4B(u, v)\;},
 $$</p>
 <p>$$
 B(u + v, u - v) = \mathfrak{Q}(u) - \mathfrak{Q}(v).
@@ -240,7 +240,7 @@ $$</p>
 <p>Its polar form is $B \perp B'$, given by $(B \perp B')((x, x'), (y, y')) = B(x, y) + B'(x', y')$; a short verification shows that this is bilinear and that its diagonal recovers $m \perp m'$, so the notation is consistent.</p>
 <p><strong>Proposition.</strong> The orthogonal direct sum is commutative and associative up to isometry, with $\operatorname{rad}(m \perp m') = \operatorname{rad}(m) \oplus \operatorname{rad}(m')$ and $\operatorname{rank}(m \perp m') = \operatorname{rank}(m) + \operatorname{rank}(m')$. The discriminant is multiplicative,</p>
 <p>$$
-\Delta(m \perp m') = \Delta(m)\,\Delta(m'),
+\boxed{\;\Delta(m \perp m') = \Delta(m)\,\Delta(m')\;},
 $$</p>
 <p>and for real forms the indices and the nullity add, so $\sigma(m \perp m') = \sigma(m) + \sigma(m')$.</p>
 <p><strong>Proof.</strong> The map $(x, x') \mapsto (x', x)$ is an isometry $m \perp m' \to m' \perp m$, and $(M \oplus M') \oplus M'' \to M \oplus (M' \oplus M'')$ is an isometry for the two bracketings; the radical statement is the vanishing of $B(x,y) + B'(x',y')$ for all $y, y'$, which forces $x \in \operatorname{rad}(m)$ and $x' \in \operatorname{rad}(m')$. The Gram matrix of $m \perp m'$ in the union of orthogonal bases is block diagonal, so it is diagonalisable and the rank and discriminant are as claimed; for the indices, diagonalising both real forms gives a diagonal basis of the sum whose positive, negative and zero entries are the combined entries of the two forms, and by Sylvester's law below the index of a real form is the number of positive entries of any diagonal basis, so the indices and the nullity add.</p>
@@ -250,7 +250,7 @@ $$</p>
 <p>Over $\mathbb{R}$ a diagonal form can be normalised further, because every positive number is a square and every negative number is minus a square.</p>
 <p><strong>Theorem (Sylvester's law of inertia).</strong> Let $m$ be a quadratic form on a finite-dimensional real vector space $V$. Then there are unique integers $n, r, z \geq 0$ with $n + r + z = \dim V$ such that</p>
 <p>$$
-m \cong \underbrace{\langle 1, \ldots, 1\rangle}_{n} \perp \underbrace{\langle -1, \ldots, -1\rangle}_{r} \perp \underbrace{\langle 0, \ldots, 0\rangle}_{z}.
+\boxed{\;m \cong \underbrace{\langle 1, \ldots, 1\rangle}_{n} \perp \underbrace{\langle -1, \ldots, -1\rangle}_{r} \perp \underbrace{\langle 0, \ldots, 0\rangle}_{z}\;}.
 $$</p>
 <p>The numbers $n$ and $r$ are the <strong>positive</strong> and <strong>negative indices</strong>, $z$ is the <strong>nullity</strong>, and $\operatorname{rank}(m) = n + r$.</p>
 <p><strong>Proof.</strong> Diagonalise, $m \cong \langle a_1, \ldots, a_n\rangle$ with $a_i \in \mathbb{R}$. Replacing $a_i$ by $a_i/|a_i|$ when $a_i \neq 0$ gives the displayed normal form, so existence holds. For uniqueness, one of $n, r$ is the largest dimension of a subspace on which $m$ is positive definite, and the other the largest dimension on which it is negative definite. Indeed, on the span of the first $n$ basis vectors $m$ is positive definite, so the largest such dimension is at least $n$; if $W$ were a subspace of dimension exceeding $n$ on which $m$ is positive definite, then $W$ would meet the span of the last $r + z$ basis vectors (dimension $n - n$) in a nonzero vector $w$, and $\mathfrak{Q}(w) \leq 0$, a contradiction. Hence the largest dimension is exactly $n$; the argument for $r$ is the same with $-m$. Both numbers being determined by $m$, the decomposition is unique.</p>

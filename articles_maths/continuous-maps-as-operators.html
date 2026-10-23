@@ -84,9 +84,9 @@ $$</p>
 <p>The preimage is determined by the implication $x \in f^{-1}(B) \iff f(x) \in B$, and it extends the map on points: for a singleton, $f^{-1}(\{y\})$ is the fibre of $f$ over $y$.</p>
 <p><strong>Proposition (the preimage is a lattice homomorphism).</strong> For every family $(B_i)_{i \in I}$ in $\mathcal{P}(Y)$ and all $B, C \subseteq Y$,</p>
 <p>$$
-f^{-1}\Bigl(\bigcup_{i \in I} B_i\Bigr) = \bigcup_{i \in I} f^{-1}(B_i), \qquad
+\boxed{\;f^{-1}\Bigl(\bigcup_{i \in I} B_i\Bigr) = \bigcup_{i \in I} f^{-1}(B_i), \qquad
 f^{-1}(B \cap C) = f^{-1}(B) \cap f^{-1}(C), \qquad
-f^{-1}(B^{c}) = f^{-1}(B)^{c},
+f^{-1}(B^{c}) = f^{-1}(B)^{c}\;},
 $$</p>
 <p>and consequently $f^{-1}(\emptyset) = \emptyset$ and $f^{-1}(Y) = X$.</p>
 <p><strong>Proof.</strong> For the union, $x$ lies in the left side exactly when $f(x) \in B_i$ for some $i$, which is the right side. The intersection and the complement are the same computation on the two clauses. The last two identities are the cases of the empty union and of the union of the whole family.</p>
@@ -101,7 +101,7 @@ $$</p>
 <p>Unlike the preimage, the direct image is not a Boolean homomorphism: it preserves unions, $f_{*}(\bigcup_i A_i) = \bigcup_i f_{*}(A_i)$, but it does not preserve complements, and it preserves intersections only for maps that are injective on the sets in question. It is monotone as well.</p>
 <p><strong>Theorem (the Galois connection).</strong> For $A \subseteq X$ and $B \subseteq Y$,</p>
 <p>$$
-f_{*}(A) \subseteq B \iff A \subseteq f^{-1}(B).
+\boxed{\;f_{*}(A) \subseteq B \iff A \subseteq f^{-1}(B)\;}.
 $$</p>
 <p><strong>Proof.</strong> Both sides say that $f(x) \in B$ for every $x \in A$: the left says every value $f(x)$ with $x \in A$ lies in $B$, and the right says every $x \in A$ lies in the set of points mapped into $B$.</p>
 <p>The theorem is a <strong>Galois connection</strong> between the two power sets ordered by inclusion, with $f_{*}$ the lower and $f^{-1}$ the upper adjoint; equivalently, $f_{*} \dashv f^{-1}$. Two consequences are used repeatedly. The preimage is the <strong>largest</strong> $A$ with $f_{*}(A) \subseteq B$, and the direct image is the <strong>smallest</strong> $B$ with $A \subseteq f^{-1}(B)$; taking $B = f_{*}(A)$ gives $A \subseteq f^{-1}(f_{*}(A))$, and taking $A = f^{-1}(B)$ gives $f_{*}(f^{-1}(B)) \subseteq B$. Equality holds on a set $A$ exactly when $A$ is <strong>saturated</strong>, that is, a union of fibres, and on a set $B$ exactly when $B$ is contained in the image of $f$.</p>
@@ -111,7 +111,7 @@ $$</p>
 <p>The adjunction lets continuity be stated without naming a single open set twice, and it is worth doing so, because the same pattern recurs for the orbit map and for the equivariant maps of the later articles.</p>
 <p><strong>Theorem.</strong> The map $f$ is continuous if and only if</p>
 <p>$$
-f_{*}\bigl(\overline{A}\bigr) \subseteq \overline{f_{*}(A)}, \qquad A \subseteq X,
+\boxed{\;f_{*}\bigl(\overline{A}\bigr) \subseteq \overline{f_{*}(A)}, \qquad A \subseteq X\;},
 $$</p>
 <p>where the closures are taken in $X$ and in $Y$; equivalently, if and only if $f^{-1}$ carries closed sets to closed sets, or if and only if $\overline{f^{-1}(B)} \subseteq f^{-1}(\overline{B})$ for every $B \subseteq Y$.</p>
 <p><strong>Proof.</strong> The first form is the closure criterion of <em>Topological Spaces</em>: a point of $f_{*}(\overline A)$ has a preimage $x \in \overline A$, every neighbourhood of $x$ meets $A$, and continuity carries the image of such a neighbourhood into a neighbourhood of $f(x)$, so every neighbourhood of $f(x)$ meets $f_{*}(A)$ and $f(x) \in \overline{f_{*}(A)}$. The equivalence with the closed-set form is the theorem of the first subsection. The third form is the preimage of the closure criterion applied to $B$: $f_{*}(\overline{f^{-1}(B)}) \subseteq \overline{f_{*}(f^{-1}(B))} \subseteq \overline B$ by the adjunction, and applying $f^{-1}$ gives the displayed inclusion.</p>

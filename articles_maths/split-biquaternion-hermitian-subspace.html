@@ -102,14 +102,18 @@ $$</p>
 <h3 id="the-commutator-lands-in-the-anti-hermitian-subspace">The Commutator Lands in the Anti-Hermitian Subspace</h3>
 <p><strong>Proposition.</strong> For $\tilde{Q}_1 = q_{1t} e_t + j\vec q_1$ and $\tilde{Q}_2 = q_{2t} e_t + j\vec q_2$ in $\mathbb{M}_+$, with $\vec q_1, \vec q_2$ real pure quaternions,</p>
 <p>$$
-[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q_1 \times \vec q_2 \in \mathbb{M}_-.
+\boxed{\;
+[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q_1 \times \vec q_2 \in \mathbb{M}_-
+\;}.
 $$</p>
 <p><strong>Proof.</strong> Expanding the product and using $\vec q_1\vec q_2 = -\vec q_1\cdot\vec q_2 + \vec q_1\times\vec q_2$ gives $\tilde{Q}_1\tilde{Q}_2 = q_{1t}q_{2t} - \vec q_1\cdot\vec q_2 + \vec q_1\times\vec q_2 + j(q_{1t}\vec q_2 + q_{2t}\vec q_1)$ and the conjugate expression for $\tilde{Q}_2\tilde{Q}_1$; the difference is $2\vec q_1\times\vec q_2$, a pure real quaternion, which lies in $\mathbb{M}_-$.</p>
 <p>So the Hermitian subspace is <strong>not</strong> a Lie subalgebra; the bracket of two Hermitian elements is anti-Hermitian. This is the beginning of the Hermitian–anti-Hermitian correspondence developed in <em>Split-Biquaternion Anti-Hermitian Subspace</em>.</p>
 <h3 id="it-is-a-jordan-algebra">It Is a Jordan Algebra</h3>
 <p><strong>Proposition.</strong> The symmetrized product $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ closes on $\mathbb{M}_+$,</p>
 <p>$$
-\tilde{Q}_1 \bullet \tilde{Q}_2 = \left(q_{1t} q_{2t} - \vec q_1\cdot\vec q_2\right) e_t + j\left(q_{1t} \vec q_2 + q_{2t} \vec q_1\right) \in \mathbb{M}_+,
+\boxed{\;
+\tilde{Q}_1 \bullet \tilde{Q}_2 = \left(q_{1t} q_{2t} - \vec q_1\cdot\vec q_2\right) e_t + j\left(q_{1t} \vec q_2 + q_{2t} \vec q_1\right) \in \mathbb{M}_+
+\;},
 $$</p>
 <p>and with it $\mathbb{M}_+$ is a <strong>Jordan algebra</strong> (commutative, with $\tilde{Q}_1 \bullet (\tilde{Q}_1 \bullet \tilde{Q}_1) = (\tilde{Q}_1 \bullet \tilde{Q}_1) \bullet \tilde{Q}_1$).</p>
 <p><strong>Proof.</strong> The symmetrized product of the expansions is as displayed, with real scalar part and purely split-imaginary vector part; commutativity is clear, and the Jordan identity follows from the associativity of the total product and the commutativity of $\bullet$.</p>
@@ -130,7 +134,9 @@ $$</p>
 <h3 id="the-split-biquaternion-norm-and-its-signature">The Split-Biquaternion Norm and Its Signature</h3>
 <p><strong>Theorem.</strong> On the Hermitian subspace the split-biquaternion norm is the <strong>positive definite</strong> real quadratic form</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2, \qquad \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z,
+\boxed{\;
+\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2, \qquad \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z
+\;},
 $$</p>
 <p>of signature $(4,0)$.</p>
 <p><strong>Proof.</strong> Substituting $Q_t = q_t$ and $Q_k = j q'_k$ in $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ gives $q_t^2 + \sum_k (q'_k)^2$, because $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$ — the sign is positive because the split complex unit satisfies $j^2 = +1$.</p>

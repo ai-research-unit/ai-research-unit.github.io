@@ -107,7 +107,7 @@ the dual of the Lie algebra, and the quotient map is the trivialisation followed
 <h3 id="the-reduced-bracket">The Reduced Bracket</h3>
 <p>The bracket on $\mathfrak g^*$ produced by the reduction has a closed form, and it is the definition of the Lie–Poisson structure. For $f,g\in C^\infty(\mathfrak g^*)$ and $\xi\in\mathfrak g^*$,
 $$
-\{f,g\}(\xi)=\bigl\langle\xi,\,[df_\xi,dg_\xi]\bigr\rangle ,
+\boxed{\;\{f,g\}(\xi)=\bigl\langle\xi,\,[df_\xi,dg_\xi]\bigr\rangle\;} ,
 $$
 where $df_\xi$ and $dg_\xi$ are read as elements of $\mathfrak g$ through the pairing. In linear coordinates, $\{x_i,x_j\}=\sum_kc^k_{ij}x_k$ with $c^k_{ij}$ the structure constants of $\mathfrak g$; the bracket is therefore <strong>linear</strong>, that is, the bracket of two linear functions is again linear, and a linear Poisson structure on a vector space is the same thing as a Lie algebra structure on its dual. This is the reason the reduction lands on a <em>linear</em> structure: the quotient of $T^*G$ by the lift of left translation is a vector space, and its Poisson tensor has no quadratic terms.</p>
 <p>Three properties are inherited rather than imposed. <strong>The Jacobi identity</strong> holds because it is the Jacobi identity of $\mathfrak g$; the reduction produces a Poisson structure for free. <strong>Antisymmetry</strong> holds because the bracket of $\mathfrak g$ is antisymmetric. And the <strong>rank</strong> at a point is the codimension of its coadjoint orbit, so the structure is symplectic exactly where the coadjoint orbit is open, that is, on the union of the orbits of maximal dimension. The reduction to $\mathfrak g^*$ therefore does not merely produce a Poisson manifold; it produces the manifold whose leaves are the objects that the orbit method of <em>Lie Groups</em> is about.</p>
@@ -120,7 +120,7 @@ df/dt=\{f,H\},
 $$
 which is the same formula as in the finite-dimensional Hamiltonian theory of <em>Lagrangian and Hamiltonian Systems</em> and is the sense in which the reduction preserves the form of the equations. Written on the momentum itself, the equation is
 $$
-d\xi/dt=\mathrm{ad}^*_{dH_\xi}\xi ,
+\boxed{\;d\xi/dt=\mathrm{ad}^*_{dH_\xi}\xi\;} ,
 $$
 the <strong>Lie–Poisson equation</strong>: the momentum is transported by the coadjoint action of the differential of the Hamiltonian. With the convention of the introduction the equation carries a plus; the equivalent reading $\frac{d}{dt}\langle\xi,X\rangle=\langle\xi,[X,dH]\rangle$, valid for every $X\in\mathfrak g$, is the one to use when the sign is in doubt, since it depends only on the bracket of $\mathfrak g$ and on the pairing.</p>
 <p>The finite-dimensional case is the rotation group. For $\mathfrak g=\mathfrak{so}(3)$ with the bracket of the wedge product and the pairing the Euclidean one, the dual is $\mathbb{R}^3$ and the Lie–Poisson bracket on linear coordinates is
@@ -155,7 +155,7 @@ $$
 $$
 the boundary term vanishes and the fundamental lemma gives the <strong>Euler–Poincaré equation</strong>
 $$
-\boxed{\;\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}.\;}
+\boxed{\;\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}\;}.
 $$
 Two features of the derivation are the content of the equation. First, <strong>the momentum is transported by the coadjoint action of the velocity itself</strong>, so the equation is nonlinear in the velocity and is not the statement that momentum is constant; the reduction of a symmetry does not produce a conserved momentum, it produces a momentum that moves under the coadjoint action. Second, <strong>the equation is a single equation on $\mathfrak g^*$</strong>, not a pair on $T^*G$: the configuration variable $g$ has been eliminated, and it is recovered afterwards by solving the reconstruction equation $dg/dt=g\xi$, which is linear in $g$ once $\xi$ is known. The reduction has hence removed the group and kept the algebra, at the price of a nonlinear equation and the loss of the canonical structure.</p>
 <p>When $\ell$ is the kinetic energy of a left-invariant Riemannian metric on $G$, the Euler–Poincaré equation is the equation of the geodesics of that metric, and the rigid body, the heavy top and the incompressible flow are the three standard cases: the geodesic equation of a left-invariant metric on $SO(3)$, of a left-invariant metric plus a potential on a semidirect product, and of the right-invariant $L^2$ metric on the volume-preserving diffeomorphism group. This is the sense in which the Lie–Poisson reduction is the Hamiltonian side of a statement in Riemannian geometry: the reduced dynamics of a left-invariant kinetic energy is the geodesic flow of a metric, read on the dual of the Lie algebra.</p>

@@ -83,12 +83,14 @@ $$</p>
 <p>The resulting algebra is written $\mathbb{H}$ and called the <strong>quaternion algebra</strong>; its elements are quaternions and its product is the quaternion product of the block.</p>
 <p><strong>Proposition (the coordinate rule).</strong> The product is well defined by the rules above and is given on coordinates by</p>
 <p>$$
+\boxed{\;
 \begin{aligned}
 (\tilde q_1\tilde q_2)_t &= q_{1t}q_{2t}-q_{1x}q_{2x}-q_{1y}q_{2y}-q_{1z}q_{2z},\\
 (\tilde q_1\tilde q_2)_x &= q_{1t}q_{2x}+q_{1x}q_{2t}+q_{1y}q_{2z}-q_{1z}q_{2y},\\
 (\tilde q_1\tilde q_2)_y &= q_{1t}q_{2y}-q_{1x}q_{2z}+q_{1y}q_{2t}+q_{1z}q_{2x},\\
 (\tilde q_1\tilde q_2)_z &= q_{1t}q_{2z}+q_{1x}q_{2y}-q_{1y}q_{2x}+q_{1z}q_{2t}.
 \end{aligned}
+\;}
 $$</p>
 <p><em>Proof.</em> The rules determine the product of every pair of basis elements and hence, by bilinearity, the product of every pair of elements; this is the well-definedness. Expanding $\bigl(\sum_\mu q_{1\mu} e_\mu\bigr)\bigl(\sum_\nu q_{2\nu} e_\nu\bigr)$ with the basis rules and collecting the four coordinates gives the displayed formulas.</p>
 <p><strong>Theorem (the sixteen products).</strong> The products of the basis elements are</p>
@@ -165,7 +167,9 @@ $$</p>
 <p><strong>Theorem.</strong> The elements $\vec e_x,\vec e_y$ generate $\mathbb{H}$ as an $\mathbb{R}$-algebra: $\vec e_z=\vec e_x \vec e_y$, and every element is an $\mathbb{R}$-linear combination of $e_t,\vec e_x,\vec e_y,\vec e_x \vec e_y$.</p>
 <p><strong>Theorem (the presentation).</strong> The algebra $\mathbb{H}$ is presented by two generators and the relations</p>
 <p>$$
-\mathbb{H}\;\cong\;\bigl\langle\, \vec e_x,\vec e_y\;\bigm|\; \vec e_x^2=\vec e_y^2=(\vec e_x \vec e_y)^2=-e_t\,\bigr\rangle,
+\boxed{\;
+\mathbb{H}\;\cong\;\bigl\langle\, \vec e_x,\vec e_y\;\bigm|\; \vec e_x^2=\vec e_y^2=(\vec e_x \vec e_y)^2=-e_t\,\bigr\rangle
+\;},
 $$</p>
 <p>the relations meaning $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x \vec e_y=-\vec e_y \vec e_x$.</p>
 <p><em>Proof.</em> The three relations are the table. For the converse, the free associative algebra on two generators modulo the relations is spanned by the words in $\vec e_x,\vec e_y$; the relations reduce a word to a normal form $\sum a_{mn}\vec e_x^m\vec e_y^n$ with $m,n\in\{0,1\}$, hence to $\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_x \vec e_y$, and the four classes are linearly independent because their images $e_t,\vec e_x,\vec e_y,\vec e_z$ are. So the presented algebra has dimension four, contains $\mathbb{H}$, and equals it.</p>

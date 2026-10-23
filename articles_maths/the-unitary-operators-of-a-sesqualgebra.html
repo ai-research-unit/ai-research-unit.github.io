@@ -81,7 +81,7 @@ $$</p>
 <h3 id="the-definition-and-its-interpretations">The Definition and its Interpretations</h3>
 <p><strong>Definition.</strong> An operator $T:A\to A$ of one of the two parities, so that its adjoint is defined, is <strong>unitary</strong> when it is invertible and</p>
 <p>$$
-T^{\dagger}T=TT^{\dagger}=\mathrm{id},
+\boxed{\;T^{\dagger}T=TT^{\dagger}=\mathrm{id}\;},
 $$</p>
 <p>equivalently when $T^{\dagger}=T^{-1}$; an $R$-linear one is a <strong>unitary operator</strong>, and a $\varsigma$-semilinear one is an <strong>antiunitary operator</strong>.</p>
 <p><strong>Theorem (the readings of the condition).</strong> For an invertible operator $T$ of one of the two parities the following are equivalent:</p>
@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-relation-to-the-unitary-elements">The Relation to the Unitary Elements</h2>
 <p><strong>Theorem (the one-sided operators).</strong> Let $u\in \mathrm{U}(A)$. Then</p>
 <p>$$
-L_{u}^{\dagger}=S_{1,u}=L_{u}^{-1},
+\boxed{\;L_{u}^{\dagger}=S_{1,u}=L_{u}^{-1}\;},
 $$</p>
 <p>so the conjugate left multiplication by a unitary element is an antiunitary operator; and $R_{b}$ is a unitary operator exactly when $b$ is a unitary element, $R_{b}^{\dagger}=R_{b^{*}}$, $R_{b}^{-1}=R_{b^{-1}}$.</p>
 <p><strong>Proof.</strong> For the left multiplication, $L_{u}=S_{u,1}$ and the adjoint of the sandwich is $S_{1,u}$; and $L_{u}(S_{1,u}x)=u(x^{*}u)^{*}=uu^{*}x=x$, $S_{1,u}(L_{u}x)=(ux^{*})^{*}u=xu^{*}u=x$, so the inverse is $S_{1,u}$, the two identities holding because $u$ is unitary. For the right multiplication, $R_{b}$ is $R$-linear with $R_{b}^{\dagger}=R_{b^{*}}$, and $R_{b}(R_{b^{-1}}x)=xb^{-1}b=x$ and $R_{b^{-1}}(R_{b}x)=xbb^{-1}=x$, so $R_{b}^{-1}=R_{b^{-1}}$; the adjoint and the inverse agree exactly when $b^{*}=b^{-1}$, that is when $b$ is unitary.</p>
@@ -113,7 +113,7 @@ $$</p>
 <h2 id="the-operators-that-preserve-the-product">The Operators that Preserve the Product</h2>
 <p><strong>Theorem.</strong> Let $T$ be an $R$-linear operator with $T(1)=1$. Then $T$ preserves the derived product,</p>
 <p>$$
-T(x\star y)=Tx\star Ty\qquad\text{for all }x,y,
+\boxed{\;T(x\star y)=Tx\star Ty\qquad\text{for all }x,y\;},
 $$</p>
 <p>if and only if $T$ is a unital $*$-map: $T(xy)=Tx\,Ty$ and $T(y^{*})=(Ty)^{*}$ for all $x,y$.</p>
 <p><strong>Proof.</strong> If $T$ is a unital $*$-map then $T(xy^{*})=Tx\,T(y^{*})=Tx\,(Ty)^{*}=Tx\star Ty$. Conversely, put $y=1$ and then replace $y$ by $y^{*}$: the identity is $T(xy^{*})=Tx(Ty)^{*}$, so $T(x)=Tx\,(T1)^{*}=Tx$ at $y=1$, and $T(y^{*})=T(1\cdot y^{*})=T1\,(Ty)^{*}=(Ty)^{*}$ at $x=1$, which is the second law; then $T(xy)=T(x(y^{*})^{*})=Tx\,(T(y^{*}))^{*}=Tx\,Ty$, which is the first.</p>

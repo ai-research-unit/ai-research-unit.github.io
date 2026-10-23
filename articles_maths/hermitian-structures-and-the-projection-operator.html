@@ -90,7 +90,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $P \in \operatorname{End}_K(V)$ be a projection, $P^2 = P$ (of <em>The Projection Operator</em>), and let $P^{\dagger}$ be its adjoint with respect to $h$, $h(Px,y) = h(x,P^{\dagger}y)$ (of <em>The Adjoint under a Hermitian Pairing</em>).</p>
 <p><strong>Theorem.</strong> The adjoint $P^{\dagger}$ of a projection is again a projection,</p>
 <p>$$
-(P^{\dagger})^2 = P^{\dagger} ,
+\boxed{\;(P^{\dagger})^2 = P^{\dagger}\;} ,
 $$</p>
 <p>and its image and kernel are the orthogonal complements</p>
 <p>$$
@@ -113,7 +113,7 @@ $$</p>
 <h3 id="the-order-and-the-products">The Order and the Products</h3>
 <p><strong>Definition.</strong> The orthogonal projections onto the subspaces are ordered by the inclusion of the images,</p>
 <p>$$
-P_W \leq P_W' \quad \Longleftrightarrow \quad W \subseteq W' ,
+\boxed{\;P_W \leq P_W' \quad \Longleftrightarrow \quad W \subseteq W'\;} ,
 $$</p>
 <p>and the meet and the join of two orthogonal projections are the orthogonal projections onto $W \cap W'$ and $W + W'$ when the two subspaces have the appropriate position.</p>
 <p><strong>Theorem.</strong> For two orthogonal projections $P$ and $Q$ the product $PQ$ is a projection exactly when $P$ and $Q$ commute, $PQ = QP$, in which case $PQ$ is the orthogonal projection onto $\operatorname{im} P \cap \operatorname{im} Q$; the order satisfies $P \leq Q$ exactly when $PQ = P$, and the orthogonal projections form a lattice under the order with the meet $P \wedge Q$ the projection onto the intersection when the two commute. The difference $P - Q$ of two orthogonal projections with $Q \leq P$ is again an orthogonal projection.</p>
@@ -121,7 +121,7 @@ $$</p>
 <h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
 <p><strong>Theorem (the spectral decomposition).</strong> Let $T$ be a self-adjoint operator on a Hermitian space over a field in which the characteristic is not two, and suppose that $T$ is diagonalisable with the distinct eigenvalues $t_1, \dots, t_k$ in the fixed field; then $T$ decomposes as</p>
 <p>$$
-T = t_1 P_1 + \cdots + t_k P_k ,
+\boxed{\;T = t_1 P_1 + \cdots + t_k P_k\;} ,
 $$</p>
 <p>where $P_i$ is the orthogonal projection onto the eigenspace of $t_i$, the projections are pairwise orthogonal, $P_i P_j = 0$ for $i \neq j$, and they sum to the identity, $P_1 + \cdots + P_k = \mathrm{id}$; conversely every sum of this form with the $t_i$ in the fixed field is self-adjoint.</p>
 <p><strong>Proof.</strong> The eigenspaces of a self-adjoint operator are pairwise orthogonal: for $x$ in the eigenspace of $t_i$ and $y$ in the eigenspace of $t_j$, the identity $h(Tx,y) = t_i h(x,y)$ equals $h(x,Ty) = \bar{t}_j h(x,y) = t_j h(x,y)$ because the eigenvalues are fixed, so $(t_i - t_j)h(x,y) = 0$; the projections onto the eigenspaces are orthogonal and the sum of the operators is $T$ on the sum of the eigenspaces, which is the whole space by the diagonalisability. The statement is in <em>Self-Adjoint Operators and the Spectral Theorem</em>.</p>

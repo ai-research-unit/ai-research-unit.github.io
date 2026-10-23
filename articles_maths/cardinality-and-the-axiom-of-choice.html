@@ -102,7 +102,7 @@ C = X \setminus g\big(Y \setminus f(C)\big), \quad \text{equivalently} \quad X \
 $$</p>
 <p>Define $h : X \to Y$ by</p>
 <p>$$
-h(x) = \begin{cases} f(x), & x \in C, \\ g^{-1}(x), & x \in X \setminus C. \end{cases}
+\boxed{\;h(x) = \begin{cases} f(x), & x \in C, \\ g^{-1}(x), & x \in X \setminus C. \end{cases}\;}
 $$</p>
 <p>The second case is well defined because $X \setminus C = g(Y \setminus f(C))$ is contained in the image of $g$, which is injective. The image of the first case is $f(C)$, and the image of the second is $g^{-1}(X \setminus C) = Y \setminus f(C)$, the equality following from $X \setminus C = g(Y \setminus f(C))$ and the injectivity of $g$; since these two sets are complementary and $f, g^{-1}$ are injective, $h$ is injective. For surjectivity, let $y \in Y$: if $y \in f(C)$ then $y = f(x)$ for some $x \in C$; otherwise $y \notin f(C)$, so $g(y) \in g(Y \setminus f(C)) = X \setminus C$, and $h(g(y)) = g^{-1}(g(y)) = y$. Hence $h$ is bijective.</p>
 <p>The theorem is often stated with the roles of the two injections exchanged, as <strong>Cantor–Bernstein–Schröder</strong>; the form above is the one used in the corpus. Its content is that the relation $|X| \leq |Y|$ between cardinals is antisymmetric, so that cardinals are partially ordered by $\leq$.</p>
@@ -165,7 +165,7 @@ $$</p>
 <p>For infinite cardinals the arithmetic simplifies drastically; the simplification rests on the well-ordering theorem and hence on the axiom of choice.</p>
 <p><strong>Theorem.</strong> Let $\kappa$ and $\lambda$ be infinite cardinals. Then</p>
 <p>$$
-\kappa + \lambda = \kappa \cdot \lambda = \max(\kappa, \lambda), \qquad \kappa^n = \kappa \ \text{for every finite } n \geq 1.
+\boxed{\;\kappa + \lambda = \kappa \cdot \lambda = \max(\kappa, \lambda), \qquad \kappa^n = \kappa \ \text{for every finite } n \geq 1\;}.
 $$</p>
 <p>In particular $\aleph_0 + \aleph_0 = \aleph_0 \cdot \aleph_0 = \aleph_0$, and $\aleph_0 + \mathrm{C} = \aleph_0 \cdot \mathrm{C} = \mathrm{C}$.</p>
 <p><strong>Proof sketch.</strong> The argument is the countability of $\mathbb{N} \times \mathbb{N}$ transposed to an arbitrary infinite $\kappa$. Well-order a set $X$ of cardinality $\kappa$ by the well-ordering theorem and define a bijection $X \times X \to X$ by recursion on that well-order: at the stage of the pair $(x,y)$, the pairs already assigned lie in the initial segments determined by $x$ and by $y$, whose union has cardinality $< \kappa$ by the induction hypothesis, so the values already used form a subset of $X$ of cardinality $< \kappa$; assign to $(x,y)$ the least element of $X$ not already used. Then $|X \times X| = |X|$, and the assertions for $\kappa \cdot \lambda$ follow by padding the smaller cardinal with a set of the larger one's cardinality. The equality $\kappa + \lambda = \max(\kappa,\lambda)$ follows by padding a disjoint union in the same way, and $\kappa^n = \kappa$ by induction on $n$.</p>
@@ -173,7 +173,7 @@ $$</p>
 <h3 id="the-continuum-hypothesis">The Continuum Hypothesis</h3>
 <p><strong>Definition.</strong> The <strong>continuum hypothesis</strong> (CH) is the assertion</p>
 <p>$$
-2^{\aleph_0} = \aleph_1,
+\boxed{\;2^{\aleph_0} = \aleph_1\;},
 $$</p>
 <p>where $\aleph_1$ is the least uncountable cardinal; equivalently, that every subset of a set of cardinality $\mathrm{C}$ is either countable or of cardinality $\mathrm{C}$.</p>
 <p>The formulation uses $\aleph_1$, whose construction as the least uncountable cardinal requires the ordinals and is given. The <strong>generalised continuum hypothesis</strong> (GCH) asserts $2^{\aleph_\alpha} = \aleph_{\alpha+1}$ for every ordinal $\alpha$.</p>

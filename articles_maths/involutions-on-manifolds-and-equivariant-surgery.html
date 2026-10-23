@@ -83,7 +83,7 @@ with $r$ entries $+1$ and $n-r$ entries $-1$; the fixed subspace is the $r$-dime
 <p><strong>Proof.</strong> A linear involution is diagonalisable with eigenvalues $\pm1$ because its minimal polynomial divides $x^2-1$, which has distinct roots over $\mathbb{R}$; the signs of the eigenvalues are the two pieces, and the dimensions are the multiplicities.</p>
 <p><strong>Theorem (the fixed set is a locally flat submanifold).</strong> Let $T$ be a locally linear involution of an $n$-manifold $M$. Then the fixed set $F = M^{T}$ is a closed locally flat submanifold of $M$, possibly empty; each connected component has a dimension $r \leq n$ that is constant on the component; and every point of $F$ has an equivariant neighbourhood
 $$
-F\times D^{k}\longrightarrow M, \qquad T(x,v) = (x,-v), \qquad k = n-r,
+\boxed{\;F\times D^{k}\longrightarrow M, \qquad T(x,v) = (x,-v), \qquad k = n-r\;},
 $$
 the <strong>equivariant tubular neighbourhood</strong>, in which $F$ sits as $F\times\{0\}$ and the involution reflects the normal disc.</p>
 <p><strong>Proof.</strong> On a locally linear chart the fixed set is the fixed subspace of the linear model, a linear subspace, and the chart identifies a neighbourhood of the point with the product of the fixed subspace and the normal disc; the reflection is the action on the normal factor. The product neighbourhoods patch because the local models are the same up to the linear structure, and the constancy of $r$ along a component follows by connectedness.</p>
@@ -103,7 +103,7 @@ $$
 where $E\mathbb{Z}/2\to B\mathbb{Z}/2 = \mathbb{RP}^\infty$ is the universal $\mathbb{Z}/2$-bundle; the <strong>equivariant homology</strong> is $H_*^{\mathbb{Z}/2}(M;\mathbb{Z}) = H_*(M_{\mathbb{Z}/2};\mathbb{Z})$.</p>
 <p><strong>Theorem (the spectral sequence of the Borel construction).</strong> There is a first-quadrant spectral sequence
 $$
-E^2_{n,m} = H_n\bigl(\mathbb{Z}/2;H_q(M;\mathbb{Z})\bigr) \Longrightarrow H_{n+m}^{\mathbb{Z}/2}(M;\mathbb{Z}),
+\boxed{\;E^2_{n,m} = H_n\bigl(\mathbb{Z}/2;H_q(M;\mathbb{Z})\bigr) \Longrightarrow H_{n+m}^{\mathbb{Z}/2}(M;\mathbb{Z})\;},
 $$
 with coefficients in the module $H_q(M;\mathbb{Z})$ carrying the action of the involution. For the trivial action it specialises to $H_n(\mathbb{RP}^\infty;\mathbb{Z})\otimes H_q(M;\mathbb{Z})$, and with $\mathbb{F}_2$ coefficients to the polynomial ring $\mathbb{F}_2[x]$ tensored with the homology; the $E^\infty$ page and the edge maps recover the Smith sequences relating $H_*(M)$, $H_*(F)$ and $H_*(M/T)$.</p>
 <p><strong>Proof sketch.</strong> The spectral sequence is the Serre spectral sequence of the fibration $M\to M_{\mathbb{Z}/2}\to B\mathbb{Z}/2$, with the local coefficients given by the action of $\pi_1(B\mathbb{Z}/2) = \mathbb{Z}/2$ on $H_*(M)$. The identification of the edge maps with the Smith sequences is by comparing the Borel construction with the maps $F\times_{\mathbb{Z}/2}E\mathbb{Z}/2 = F\times B\mathbb{Z}/2$ and $(M/T)_{\mathbb{Z}/2}$, together with the relation $M/T = M_{\mathbb{Z}/2}$ for a free action. The full statements of the resulting exact sequences are <em>Periodic Maps and the Smith Theory</em>.</p>
@@ -118,7 +118,7 @@ of a product carrying an involution, with a linear involution on the second fact
 <p><strong>Proof.</strong> The normal form of the linear involution shows that the model of a handle near the fixed set is determined by the dimensions of the two eigenspaces; the effect on the fixed set is the surgery of $F$ by the restriction of the model, and away from $F$ the operation is the non-equivariant one with an equivariant framing.</p>
 <p><strong>Theorem (the equivariant surgery obstruction).</strong> Let $T$ act on a closed $n$-manifold $X$ with fundamental group $\pi = \pi_1(X)$, and let $(f,b)$ be an equivariant normal map. Then the obstruction to surgering $(f,b)$ equivariantly into an equivariant homotopy equivalence is an element
 $$
-\sigma^{\mathbb{Z}/2}(f,b) \in L_n\bigl(\mathbb{Z}[\pi]\otimes \mathbb{Z}[\mathbb{Z}/2]\bigr) = L_n\bigl(\mathbb{Z}[\pi\times\mathbb{Z}/2]\bigr),
+\boxed{\;\sigma^{\mathbb{Z}/2}(f,b) \in L_n\bigl(\mathbb{Z}[\pi]\otimes \mathbb{Z}[\mathbb{Z}/2]\bigr) = L_n\bigl(\mathbb{Z}[\pi\times\mathbb{Z}/2]\bigr)\;},
 $$
 the Wall surgery obstruction group of the group ring of $\pi\times\mathbb{Z}/2$ with the involution $g\mapsto g^{-1}$ and the orientation character; it vanishes if and only if the equivariant normal map can be corrected by equivariant surgeries to an equivariant homotopy equivalence, for $n\geq5$.</p>
 <p><strong>Proof sketch.</strong> The obstruction is the Wall obstruction of the equivariant normal map, computed in the group ring with its anti-involution and the orientation character. The group ring splits into the trivial and the sign summands, and correspondingly the obstruction has a component on the free part — the surgery obstruction of the quotient — and a component on the fixed part — the surgery obstruction of the fixed set together with its normal data. For a free action only the first component is present. The identification of the components and the vanishing criterion are the equivariant surgery theorem; the full proofs are in the literature and in <em>Cobordism and Surgery Theory</em>.</p>

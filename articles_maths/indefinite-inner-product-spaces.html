@@ -106,7 +106,7 @@ $$</p>
 <h2 id="the-fundamental-decomposition">The Fundamental Decomposition</h2>
 <p><strong>Definition.</strong> A <strong>fundamental decomposition</strong> of $V$ is an orthogonal direct sum</p>
 <p>$$
-V = V_{+} \oplus V_{-}, \qquad V_{+} \perp V_{-},
+\boxed{\;V = V_{+} \oplus V_{-}, \qquad V_{+} \perp V_{-}\;},
 $$</p>
 <p>with $V_{+}$ positive definite and $V_{-}$ negative definite.</p>
 <p><strong>Theorem (existence and non-uniqueness).</strong> Every indefinite inner product space of finite dimension has a fundamental decomposition, with $\dim V_{+} = n$ and $\dim V_{-} = m$; and if both $n$ and $m$ are nonzero the decomposition is not unique, the space admitting as many as the positive definite subspaces of dimension $n$.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p><strong>Proof.</strong> The first two statements are immediate from the definition; for the self-adjointness, both sides are $[x_{+},y_{+}] - [x_{-},y_{-}]$ after decomposing; the converse is the spectral decomposition of an involutive operator with definite eigenspaces.</p>
 <p><strong>Theorem (the bridge).</strong> With $J$ as above, the form</p>
 <p>$$
-\langle x, y \rangle = [Jx, y]
+\boxed{\;\langle x, y \rangle = [Jx, y]\;}
 $$</p>
 <p>is a positive definite inner product on $V$, and the indefinite form is recovered from it by $[x,y] = \langle Jx,y\rangle$. So every indefinite inner product space is, after the choice of a fundamental decomposition, a definite one, and the two differ by the operator $J$.</p>
 <p><strong>Proof.</strong> Decompose $x = x_{+}+x_{-}$ and $y = y_{+}+y_{-}$ with $x_{\pm},y_{\pm}\in V_{\pm}$; the orthogonality of $V_{+}$ and $V_{-}$ kills the mixed terms and $\langle x,y\rangle = [Jx,y] = [x_{+},y_{+}] - [x_{-},y_{-}]$, a sum of two definite forms of the same sign and hence positive definite. For the recovery, $\langle Jx,y\rangle = [J^{2}x,y] = [x,y]$ because $J^{2} = \mathrm{id}$.</p>

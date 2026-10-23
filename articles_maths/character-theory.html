@@ -105,14 +105,14 @@ $$</p>
 <h2 id="orthogonality">Orthogonality</h2>
 <p><strong>Theorem (orthogonality of characters).</strong> Let $k$ be a splitting field for $G$ of characteristic zero with $\lvert G\rvert$ invertible, and let $\chi_1,\dots,\chi_r$ be the distinct irreducible characters of $G$. Then</p>
 <p>$$
-\langle\chi_i,\chi_j\rangle = \delta_{ij},
+\boxed{\;\langle\chi_i,\chi_j\rangle = \delta_{ij}\;},
 $$</p>
 <p>so that the irreducible characters form an orthonormal set in the space of class functions; in particular they are linearly independent, and $r\leq\lvert\operatorname{conj}(G)\rvert$.</p>
 <p><em>Proof.</em> The group algebra $k[G]$ is semisimple, so $k[G]\cong\bigoplus_iM_{n_i}(k)$ with $n_i = \chi_i(1)$ by the theorem of Wedderburn of <em>Simple and Semisimple Modules</em>; the centre $Z(k[G])$ is the direct sum of the centres of the matrix algebras, so it has dimension $r$, and it is also the space of class functions with the basis of the class sums $C = \sum_{g\in C}g$, so that $r\leq\lvert\operatorname{conj}(G)\rvert$ and the class sums form a basis of the centre exactly when $r = \lvert\operatorname{conj}(G)\rvert$ — a statement proved in the next section. The orthogonality is computed in the group algebra: for the simple modules $L_i,L_j$ the tensor product $L_i\otimes_kL_j^* = \operatorname{Hom}_k(L_j,L_i)$ has the invariant subspace $\operatorname{Hom}_{k[G]}(L_j,L_i)$ of dimension $\delta_{ij}$ by Schur's lemma, and the trace of the projection onto the invariants, computed by averaging as in Maschke's theorem, is $\frac{1}{\lvert G\rvert}\sum_g\chi_i(g)\chi_j(g^{-1})$.</p>
 <p><strong>Corollary.</strong> For a finite-dimensional $k[G]$-module $V$ the multiplicity of the simple module $L_i$ in $V$ is $m_i = \langle\chi_V,\chi_i\rangle$, and the <strong>decomposition</strong> of $V$ is determined by the character; in particular $V$ is irreducible if and only if $\langle\chi_V,\chi_V\rangle = 1$, and $\langle\chi_V,\chi_V\rangle$ is the sum of the squares of the multiplicities of the simple constituents of $V$.</p>
 <p><strong>Theorem (column orthogonality).</strong> For $g,h\in G$,</p>
 <p>$$
-\sum_{i=1}^{r}\chi_i(g)\chi_i(h^{-1}) = \begin{cases}\lvert C_G(g)\rvert & \text{if } g \text{ is conjugate to } h,\\ 0 & \text{otherwise,}\end{cases}
+\boxed{\;\sum_{i=1}^{r}\chi_i(g)\chi_i(h^{-1}) = \begin{cases}\lvert C_G(g)\rvert & \text{if } g \text{ is conjugate to } h,\\ 0 & \text{otherwise,}\end{cases}\;}
 $$</p>
 <p>where $C_G(g)$ is the centraliser of $g$; equivalently the columns of the character table are orthogonal with respect to the weights of the class sizes, and $\sum_i\chi_i(1)^2 = \lvert G\rvert$.</p>
 <p><em>Proof.</em> The class sums form a basis of $Z(k[G])$ and the central characters $\omega_i$ defined by $\omega_i(z) = \chi_i(z)/\chi_i(1)$ are algebra homomorphisms $Z(k[G])\to k$; writing the orthogonality as a matrix identity between the table of the $\chi_i$ and its transpose weighted by the class sizes gives the first display, and evaluating at $g = h = 1$, where $C_G(1) = G$, gives $\sum_i\chi_i(1)^2 = \lvert G\rvert$.</p>
@@ -170,7 +170,7 @@ $$</p>
 <p>with $\operatorname{Cl}(G)$ the class functions with the pointwise product.</p>
 <p><strong>Theorem.</strong> Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible. Then the classes of the simple modules form a $\mathbb{Z}$-basis of $R_k(G)$ and the character map extends to an isomorphism of $k$-algebras</p>
 <p>$$
-R_k(G)\otimes_{\mathbb{Z}}k\;\xrightarrow{\ \cong\ }\;\operatorname{Cl}(G);
+\boxed{\;R_k(G)\otimes_{\mathbb{Z}}k\;\xrightarrow{\ \cong\ }\;\operatorname{Cl}(G)\;};
 $$</p>
 <p>consequently the class functions are the characters of virtual modules with coefficients in $k$, the decomposition of a tensor product of two simple modules is read off from the product of their characters, and the structure constants of the ring $R_k(G)$ with respect to the basis of the simple modules are the multiplicities of the tensor product decomposition, the <strong>Kronecker coefficients</strong> of the theory.</p>
 <p><em>Proof.</em> The classes of the simple modules are linearly independent over $\mathbb{Z}$ because their characters are linearly independent over $k$; they span $R_k(G)\otimes k$ because every module is a direct sum of simples, and the character map is injective on the span by the orthogonality relations and surjective onto $\operatorname{Cl}(G)$ because both spaces have dimension $r$; the multiplicativity of the character under tensor products gives the ring statement.</p>

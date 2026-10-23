@@ -88,7 +88,7 @@
 <h3 id="dihedral-groups">Dihedral Groups</h3>
 <p><strong>Definition.</strong> For $n \geq 3$ the <strong>dihedral group</strong> $D_n$ is the group of order $2n$ with presentation</p>
 <p>$$
-D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle .
+\boxed{\;D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle\;} .
 $$</p>
 <p>Every element is uniquely $r^i$ or $r^i s$ with $0 \leq i < n$, the cyclic subgroup $C_n = \langle r \rangle$ is normal of index $2$, and $D_n \cong C_n \rtimes C_2$ with the nontrivial element of $C_2$ acting by inversion. For $n = 3$, $D_3 \cong S_3$. The group is the symmetry group of the regular $n$-gon; that realisation, which needs a distance, belongs to Part II.</p>
 <p><strong>Theorem (conjugacy classes).</strong> In $D_n$ the conjugacy classes are: $\{e\}$; the pairs $\{r^k, r^{-k}\}$ for $1 \leq k < n/2$, together with $\{r^{n/2}\}$ when $n$ is even; and the elements outside $\langle r \rangle$, which form one class if $n$ is odd and two classes if $n$ is even. Hence the number of conjugacy classes is $(n+3)/2$ for odd $n$ and $(n+6)/2$ for even $n$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="conjugacy-classes-of-math188-and-math189">Conjugacy Classes of $S_n$ and $A_n$</h3>
 <p><strong>Theorem.</strong> Two permutations of $S_n$ are conjugate if and only if they have the same cycle type. Hence the conjugacy classes of $S_n$ are indexed by the partitions of $n$, and if the cycle type has $m_k$ cycles of length $k$ then the class has size</p>
 <p>$$
-\frac{n!}{\prod_{k} k^{m_k} m_k!} .
+\boxed{\;\frac{n!}{\prod_{k} k^{m_k} m_k!}\;} .
 $$</p>
 <p><strong>Proof.</strong> Conjugation relabels the points, so it preserves the partition into cycles; conversely, given two permutations with the same cycle structure, the bijection matching the cycles in order conjugates one to the other. For the size, the centraliser of the permutation consists of the permutations preserving the cycle decomposition, and its order is $\prod_k k^{m_k} m_k!$: each of the $m_k$ cycles of length $k$ contributes its $k$ powers and the $m_k$ cycles may be permuted. The class size is the index of the centraliser.</p>
 <p><strong>Example.</strong> In $S_4$ the partitions of $4$ are $1+1+1+1$, $2+1+1$, $2+2$, $3+1$, $4$, giving class sizes $1, 6, 3, 8, 6$, which sum to $24$; in $S_5$ there are $p(5) = 7$ partitions and class sizes $1, 10, 15, 20, 20, 24, 30$, which sum to $120$. The number of conjugacy classes of $S_n$ is the partition number $p(n)$.</p>

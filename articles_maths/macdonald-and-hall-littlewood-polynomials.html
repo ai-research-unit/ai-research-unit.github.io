@@ -92,7 +92,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> With respect to the Hall inner product, the Schur functions are an orthonormal $\mathbb{Z}$-basis, $\langle s_\lambda,s_\mu\rangle = \delta_{\lambda\mu}$; the monomial and the complete homogeneous symmetric functions are dual bases, $\langle m_\lambda,h_\mu\rangle = \delta_{\lambda\mu}$; and the <strong>Cauchy identity</strong></p>
 <p>$$
-\prod_{i,j}\frac{1}{1-x_iy_j} \;=\; \sum_\lambda h_\lambda(x)\,m_\lambda(y) \;=\; \sum_\lambda s_\lambda(x)\,s_\lambda(y)
+\boxed{\;\prod_{i,j}\frac{1}{1-x_iy_j} \;=\; \sum_\lambda h_\lambda(x)\,m_\lambda(y) \;=\; \sum_\lambda s_\lambda(x)\,s_\lambda(y)\;}
 $$</p>
 <p>holds, the two forms of the identity being exchanged by the duality of the two bases. The Kostka matrix is the transition matrix between the Schur and the monomial bases, and it is the matrix of the inner products $\langle h_\mu,s_\lambda\rangle$. </p>
 <p><em>Proof (outline).</em> The orthonormality of the Schur basis is the classical statement that the Schur functions are the characters of the irreducible polynomial representations of the general linear group with the normalisation of the Haar integral, which over $\mathbb{Z}$ becomes the statement that the scalar product of two Schur functions is the number of tableaux condition, computed by the determinant formula $\langle s_\lambda,s_\mu\rangle = \delta_{\lambda\mu}$; the dual-basis statement follows from the triangularity of the Kostka matrix and the identity $\langle m_\lambda,h_\mu\rangle = \delta_{\lambda\mu}$, and the Cauchy identity is the formal expansion of the product $\prod_{i,j}(1-x_iy_j)^{-1}$ in symmetric functions in either of the two ways. The analytic normalisation of the integral is the measure-theoretic statement that belongs to Part III and is not used; the identity above is proved combinatorially from the expansion of the geometric series.</p>
@@ -128,7 +128,7 @@ $$</p>
 <p>so that at $t = 0$ it is the Hall inner product and at $t = 1$ the factor becomes $\lambda_i$, the product being the function $z_\lambda\prod_i\lambda_i$.</p>
 <p><strong>Theorem (orthogonality, standard).</strong> The Hall–Littlewood polynomials are pairwise orthogonal for the $t$-deformed form,</p>
 <p>$$
-\langle P_\lambda(\,\cdot\,;t),P_\mu(\,\cdot\,;t)\rangle_t = 0 \qquad (\lambda\neq\mu),
+\boxed{\;\langle P_\lambda(\,\cdot\,;t),P_\mu(\,\cdot\,;t)\rangle_t = 0 \qquad (\lambda\neq\mu)\;},
 $$</p>
 <p>the form is non-degenerate on $\Lambda_{\mathbb{Q}(t)}$ and the $P_\lambda$ therefore form an orthogonal basis. The values $\langle P_\lambda,P_\lambda\rangle_t$ are explicit rational functions of $t$, products over the multiplicities of the parts of $\lambda$, computed in the standard reference; only the vanishing of the off-diagonal inner products is used below, and the normalisation of the form is the one for which the power sums are orthogonal with $\langle p_r,p_r\rangle_t = r\frac{1-t^r}{1-t}$.</p>
 <p><em>Proof (outline).</em> The standard proof computes the inner products of the symmetrised expressions by transporting the sum over $S_n$ to a sum over the symmetric group of inner products of monomials, where the $t$-deformed form has the triangular matrix in the dominance order; the off-diagonal entries vanish by the orthogonality of distinct orbits, and the diagonal entries are the products displayed.</p>
@@ -169,7 +169,7 @@ $$</p>
 <p>The $q = t$ specialisation reduces the deformed form to the Hall form, since the factor $\frac{1-q^r}{1-t^r}$ becomes $1$; the $t = 0$ specialisation makes the $(q,t)$-form a renormalisation of the $q$-deformed form of the previous section, so that only the normalisation, and not the orthogonality, changes; and the Jack limit is the one-parameter family obtained by the substitution $q = t^{\alpha}$ and the limit $t\to1$ with $\alpha$ fixed. The degenerate cases $q = 0$ and $t = 1$ give the $q$-Whittaker functions and the monomial basis respectively, again up to normalisation.</p>
 <p><strong>Theorem (Macdonald positivity, Haiman).</strong> The change of basis</p>
 <p>$$
-P_\lambda(x;q,t) = \sum_\mu K_{\lambda\mu}(q,t)\,s_\mu(x)
+\boxed{\;P_\lambda(x;q,t) = \sum_\mu K_{\lambda\mu}(q,t)\,s_\mu(x)\;}
 $$</p>
 <p>has coefficients $K_{\lambda\mu}(q,t)\in\mathbb{N}[q,t]$, the <strong>$(q,t)$-Kostka polynomials</strong>; at $q = t$ the form degenerates to the Hall form, the polynomials become the Schur functions, and therefore $K_{\lambda\mu}(t,t) = 0$ for $\lambda\neq\mu$; at $t = 0$ the coefficients are, up to the normalisation of the polynomials, the entries inverse to the Kostka–Foulkes matrix of the previous section, and at $q = 0$ they are the $q$-Kostka polynomials of the Hall–Littlewood theory.</p>
 <p>The positivity was conjectured by Macdonald and proved by Haiman from the geometry of the Hilbert scheme of points of the plane: the polynomials are the Poincaré polynomials of the fibres of a certain graded character, and the geometric proof uses the cohomology of a variety, hence belongs to Part II. The algebraic content, the non-negativity of the coefficients, is stated here and the geometric proof is deferred.</p>

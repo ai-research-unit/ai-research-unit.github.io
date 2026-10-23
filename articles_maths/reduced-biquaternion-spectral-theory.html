@@ -76,11 +76,15 @@
 <p><strong>Definition.</strong> The <strong>spectrum</strong> of $\breve Q$ is the set of complex $\lambda$ for which $\lambda L_{1}-L_{\breve Q}$ is not invertible, $L_{\breve Q}$ being the operator of left multiplication on the complex two-dimensional space $\mathbb{B}_{\mathrm{r}}$ with basis $1,j$. The element is <strong>regular</strong> as an element of the algebra when it is a unit, and <strong>singular</strong> otherwise.</p>
 <p><strong>Theorem (the spectrum is the coordinate pair).</strong> The characteristic polynomial of $L_{\breve Q}$ is
 $$
-\chi_{\breve Q}(\lambda)=\det(\lambda L_{1}-L_{\breve Q})=(\lambda-Q_{+})(\lambda-Q_{-})=\lambda^{2}-\operatorname{tr}(\breve Q)\,\lambda+\det(\breve Q),
+\boxed{\;
+\chi_{\breve Q}(\lambda)=\det(\lambda L_{1}-L_{\breve Q})=(\lambda-Q_{+})(\lambda-Q_{-})=\lambda^{2}-\operatorname{tr}(\breve Q)\,\lambda+\det(\breve Q)
+\;},
 $$
 so
 $$
-\sigma(\breve Q)=\{Q_{+},Q_{-}\},
+\boxed{\;
+\sigma(\breve Q)=\{Q_{+},Q_{-}\}
+\;},
 $$
 with the two values counted with multiplicity, where
 $$
@@ -102,7 +106,9 @@ so the spectrum is read directly on the two coordinates and no triangular or Jor
 <h2 id="cayleyhamilton-and-the-trace-and-determinant-functionals">Cayley–Hamilton and the Trace and Determinant Functionals</h2>
 <p><strong>Theorem (the reduced Cayley–Hamilton identity).</strong> Every element satisfies
 $$
-\breve Q^{2}-\operatorname{tr}(\breve Q)\,\breve Q+\det(\breve Q)\,1=0,\qquad \operatorname{tr}(\breve Q)=2Q_{\blacktriangle},\quad \det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}},
+\boxed{\;
+\breve Q^{2}-\operatorname{tr}(\breve Q)\,\breve Q+\det(\breve Q)\,1=0,\qquad \operatorname{tr}(\breve Q)=2Q_{\blacktriangle},\quad \det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}
+\;},
 $$
 and the same identity holds for the operator, $L_{\breve Q}^{2}-2Q_{\blacktriangle}\,L_{\breve Q}+\langle \breve Q\rangle_{\mathrm{ts}}\,L_{1}=0$.</p>
 <p><em>Proof.</em> In the idempotent coordinates the left side is $Q_{+}^{2}-(Q_{+}+Q_{-})Q_{+}+Q_{+}Q_{-}$ in the first component and $Q_{-}^{2}-(Q_{+}+Q_{-})Q_{-}+Q_{+}Q_{-}$ in the second, both zero; the operator statement follows by applying the identity to the regular module.</p>

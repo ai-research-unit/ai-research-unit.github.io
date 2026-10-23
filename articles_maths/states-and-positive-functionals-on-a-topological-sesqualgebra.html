@@ -94,7 +94,7 @@ $$</p>
 <h3 id="the-cauchyschwarz-inequality-and-the-null-space">The Cauchy–Schwarz Inequality and the Null Space</h3>
 <p><strong>Theorem (Cauchy–Schwarz).</strong> Let $f$ be positive. Then for all $x,y \in A$,</p>
 <p>$$
-\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)\,h_{f}(y,y) = f(x^{*}x)f(y^{*}y) ,
+\boxed{\;\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)\,h_{f}(y,y) = f(x^{*}x)f(y^{*}y)\;} ,
 $$</p>
 <p>with equality if and only if $x$ and $y$ are linearly dependent modulo $N_{f}$.</p>
 <p><em>Proof.</em> For complex $\lambda$ the element $x - \lambda y$ satisfies $h_{f}(x - \lambda y, x - \lambda y) = f((x - \lambda y)^{*}(x - \lambda y)) \geq 0$; expanding with the two parities gives $h_{f}(x,x) - \lambda h_{f}(x,y) - \bar\lambda h_{f}(y,x) + \lvert\lambda\rvert^{2}h_{f}(y,y) \geq 0$. When $h_{f}(y,y) \neq 0$ the choice $\lambda = h_{f}(y,x)/h_{f}(y,y)$ and the Hermitian property reduce it to $h_{f}(x,x) - \lvert h_{f}(x,y)\rvert^{2}/h_{f}(y,y) \geq 0$, which is the inequality; when $h_{f}(y,y) = 0$ the same quadratic in real $\lambda$ forces $h_{f}(x,y) = 0$. The equality case is the degenerate case of a positive semi-definite form, by <em>The Norm Defined by a Form</em>, §<em>The Cauchy–Schwarz Inequality</em>.</p>
@@ -111,7 +111,7 @@ $$</p>
 <h3 id="continuity">Continuity</h3>
 <p><strong>Theorem (a positive functional is continuous).</strong> Let $f$ be positive on the unital $\mathrm{C}^{*}$-algebra $A$. Then $f$ is bounded and</p>
 <p>$$
-\lVert f\rVert = f(1) ,
+\boxed{\;\lVert f\rVert = f(1)\;} ,
 $$</p>
 <p>so a state is exactly a positive functional with $f(1) = 1$, and the pairing of a state is controlled by $h_{f}(x,y) \leq \lVert x\rVert\lVert y\rVert$ in absolute value.</p>
 <p><em>Proof.</em> For $\lVert a\rVert \leq 1$ the Cauchy–Schwarz inequality gives $\lvert f(a)\rvert^{2} = \lvert f(1^{*}a)\rvert^{2} \leq f(1)f(a^{*}a)$, and $a^{*}a \leq \lVert a\rVert^{2}1$ in the $\mathrm{C}^{*}$-order with $f$ positive on the positive cone, so $f(a^{*}a) \leq \lVert a\rVert^{2}f(1)$; hence $\lvert f(a)\rvert \leq f(1)$ and $\lVert f\rVert \leq f(1)$, while $f(1) \leq \lVert f\rVert$ is the definition of the norm. The bound on the pairing is Cauchy–Schwarz applied to $x/\lVert x\rVert$ and $y/\lVert y\rVert$.</p>
@@ -127,7 +127,7 @@ $$</p>
 <h3 id="the-representation">The Representation</h3>
 <p><strong>Theorem (the GNS representation).</strong> Let $f$ be positive. Then the left multiplication by an element of $A$ passes to the quotient as a bounded operator,</p>
 <p>$$
-\pi_{f}(a) : H_{f} \to H_{f} , \qquad \pi_{f}(a)(x + N_{f}) = ax + N_{f} ,
+\boxed{\;\pi_{f}(a) : H_{f} \to H_{f} , \qquad \pi_{f}(a)(x + N_{f}) = ax + N_{f}\;} ,
 $$</p>
 <p>and $\pi_{f}$ is a $*$-representation, $\pi_{f}(a)^{*} = \pi_{f}(a^{*})$, so $\pi_{f}(a^{*}) = \pi_{f}(a)^{*}$ makes the involution of the sesqualgebra into the adjoint.</p>
 <p><em>Proof.</em> Left multiplication preserves $N_{f}$ because the null space is a left ideal, by the corollary above, so the formula is well defined on classes. Boundedness follows from the inequality $h_{f}(ax,ax) = f(x^{*}a^{*}ax) \leq \lVert a\rVert^{2}f(x^{*}x) = \lVert a\rVert^{2}h_{f}(x,x)$, which is the positivity of the functional $z \mapsto f(x^{*}zx)$ on the positive cone of the $\mathrm{C}^{*}$-algebra, with $a^{*}a \leq \lVert a\rVert^{2}1$; the operator is thus bounded with $\lVert\pi_{f}(a)\rVert \leq \lVert a\rVert$ and extends to the completion. The adjoint computation is</p>

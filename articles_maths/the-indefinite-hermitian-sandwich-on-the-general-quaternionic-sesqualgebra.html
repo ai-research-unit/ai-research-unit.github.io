@@ -102,8 +102,8 @@ $$</p>
 <p><em>Proof.</em> $H_A(T)^{\dagger} = (ATA^{\dagger})^{\dagger} = A^{\dagger\dagger}T^{\dagger}A^{\dagger} = AT^{\dagger}A^{\dagger}$, because the operation $T\mapsto T^{\dagger}$ is an involution and an anti-involution: $J^{2}=\mathrm{id}$ gives $A^{\dagger\dagger}=A$. The right-hand side is $H_A(T^{\dagger})$ by definition.</p>
 <p><strong>Proposition (composition and multiplicativity).</strong> For all operators $A,S,T$,</p>
 <p>$$
-H_{A}\bigl(H_{S}(T)\bigr) = H_{AS}(T) , \qquad
-H_{A}(ST) = H_{A}(S)\,H_{A}(T) \iff A^{\dagger}A = \mathrm{id} .
+\boxed{\; H_{A}\bigl(H_{S}(T)\bigr) = H_{AS}(T) , \qquad
+H_{A}(ST) = H_{A}(S)\,H_{A}(T) \iff A^{\dagger}A = \mathrm{id} \;}.
 $$</p>
 <p><em>Proof.</em> The composition is associativity: $A(S\,T\,S^{\dagger})A^{\dagger} = (AS)T(AS)^{\dagger}$. For the second, $H_A(S)H_A(T) = ASA^{\dagger}ATA^{\dagger} = AS(A^{\dagger}A)TA^{\dagger}$, which equals $ASTA^{\dagger}=H_A(ST)$ identically exactly when $A^{\dagger}A=\mathrm{id}$.</p>
 <p><strong>Proposition (the parameter rule).</strong> For a complex scalar $\alpha$ and all $T$,</p>
@@ -115,8 +115,8 @@ $$</p>
 <h2 id="preservation-of-the-form-and-of-j-positivity">Preservation of the Form and of J-Positivity</h2>
 <p><strong>Theorem (form preservation by $J$-unitary parameters).</strong> Let $A$ be $J$-unitary, $A^{\dagger}A = AA^{\dagger} = \mathrm{id}$. Then for every operator $T$ and all $\tilde Q_1,\tilde W\in\mathbb{B}$,</p>
 <p>$$
-\langle H_{A}(T)\tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle TA^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} , \qquad
-\langle \tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle A^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} ,
+\boxed{\; \langle H_{A}(T)\tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle TA^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} , \qquad
+\langle \tilde W,H_{A}(T)\tilde Q_1\rangle_{\natural*} = \langle A^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*} \;},
 $$</p>
 <p>the first identity being the second applied twice; and $H_{A}(T)$ is a $J$-unitary operator whenever $T$ is.</p>
 <p><em>Proof.</em> The one-argument identity is the reading of the elementary rule $\langle\tilde S,A\tilde Q_3\rangle_{\natural*} = \langle A^{\dagger}\tilde S,\tilde Q_3\rangle_{\natural*}$, which holds for every operator $A$ and follows from $\langle\tilde S,\tilde Q_3\rangle_{\natural*}=(J\tilde Q_3,\tilde S)$ and $(A\tilde Q_3,\tilde S)=(\tilde Q_3,A^{*}\tilde S)$. With $\tilde Q_3 = TA^{\dagger}\tilde Q_1$ it gives $\langle\tilde W,ATA^{\dagger}\tilde Q_1\rangle_{\natural*} = \langle A^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*}$; replacing $\tilde W$ by $H_A(T)\tilde W = ATA^{\dagger}\tilde W$ and applying the rule once more gives the first identity. If $T$ is a $J$-unitary operator then $\langle TA^{\dagger}\tilde W,TA^{\dagger}\tilde Q_1\rangle_{\natural*}=\langle A^{\dagger}\tilde W,A^{\dagger}\tilde Q_1\rangle_{\natural*}$, and $A^{\dagger}$ is $J$-unitary with $A$, so this is $\langle\tilde W,\tilde Q_1\rangle_{\natural*}$.</p>
@@ -129,7 +129,7 @@ $$</p>
 <p><em>Proof.</em> The displayed identity is the elementary rule with $\tilde Q_3=TA^{\dagger}\tilde Q_1$ and $\tilde S=\tilde Q_1$, and it holds for every $A$. If $T$ is $J$-self-adjoint then $H_A(T)^{\dagger}=H_A(T^{\dagger})=H_A(T)$ by the adjoint law; if $T$ is $J$-positive the display gives $\langle\tilde Q_1,H_A(T)\tilde Q_1\rangle_{\natural*}=\langle A^{\dagger}\tilde Q_1,TA^{\dagger}\tilde Q_1\rangle_{\natural*}\geq0$; and if $T$ is $J$-unitary then the multiplicativity of the second proposition applies to $T^{*}$ too.</p>
 <p><strong>Theorem (kernel and image).</strong> Let $A$ be invertible. Then for every $T$,</p>
 <p>$$
-\ker H_{A}(T) = \bigl(A^{\dagger}\bigr)^{-1}\bigl(\ker T\bigr) , \qquad \mathrm{im}\,H_{A}(T) = A\bigl(\mathrm{im}\,T\bigr) ,
+\boxed{\; \ker H_{A}(T) = \bigl(A^{\dagger}\bigr)^{-1}\bigl(\ker T\bigr) , \qquad \mathrm{im}\,H_{A}(T) = A\bigl(\mathrm{im}\,T\bigr) \;},
 $$</p>
 <p>and for $J$-unitary $A$ these read $\ker H_{A}(T) = A\ker T$ and $\mathrm{im}\,H_{A}(T) = A\,\mathrm{im}\,T$.</p>
 <p><em>Proof.</em> $ATA^{\dagger}\tilde Q_1 = 0$ iff $TA^{\dagger}\tilde Q_1=0$ because $A$ is invertible, so $\tilde Q_1\in\ker H_A(T)$ iff $A^{\dagger}\tilde Q_1\in\ker T$. The image statement is the same computation with the roles reversed, using the surjectivity of $A^{\dagger}$. For $J$-unitary $A$ one has $A^{\dagger}=A^{-1}$, hence $A\ker T$ and $A\,\mathrm{im}\,T$.</p>

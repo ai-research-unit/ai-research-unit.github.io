@@ -105,7 +105,7 @@ $$</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem (fundamental theorem of pseudo-Riemannian geometry).</strong> On a pseudo-Riemannian manifold $(M, g)$ there is exactly one connection $\nabla$ that is metric, $X\,g(Y, Z) = g(\nabla_XY, Z) + g(Y, \nabla_XZ)$, and torsion-free, $\nabla_XY - \nabla_YX = [X, Y]$. It is given by the Koszul formula</p>
 <p>$$
-2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]),
+\boxed{\;2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y])\;},
 $$</p>
 <p>and in a coordinate frame it has the Christoffel symbols</p>
 <p>$$
@@ -118,13 +118,13 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>curvature tensor</strong> is $R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$, with $R(X, Y, Z, W) = g(R(X, Y)Z, W)$, and the curvature form is $\mathcal{R} = d\theta + \theta\wedge\theta$ in a frame.</p>
 <p><strong>Theorem (symmetries).</strong> The tensor satisfies</p>
 <p>$$
-R(X, Y, Z, W) = -R(Y, X, Z, W) = -R(X, Y, W, Z) = R(Z, W, X, Y)
+\boxed{\;R(X, Y, Z, W) = -R(Y, X, Z, W) = -R(X, Y, W, Z) = R(Z, W, X, Y)\;}
 $$</p>
 <p>and the first Bianchi identity $R(X, Y, Z, W) + R(Y, Z, X, W) + R(Z, X, Y, W) = 0$; the second Bianchi identity $(\nabla_XR)(Y, Z) + (\nabla_YR)(Z, X) + (\nabla_ZR)(X, Y) = 0$ holds as an operator identity.</p>
 <p><strong>Proof.</strong> The proofs use only the metricity, the torsion-freeness and the Jacobi identity, none of which refers to the signature.</p>
 <p><strong>Definition.</strong> Let $\sigma$ be a two-dimensional subspace of $T_pM$. It is <strong>nondegenerate</strong> if $g|_{\sigma \times \sigma}$ is nondegenerate, and if it is nondegenerate the <strong>sectional curvature</strong> of $\sigma$ is</p>
 <p>$$
-K(\sigma) = \frac{R(v, w, w, v)}{g(v, v)g(w, w) - g(v, w)^2}
+\boxed{\;K(\sigma) = \frac{R(v, w, w, v)}{g(v, v)g(w, w) - g(v, w)^2}\;}
 $$</p>
 <p>for a basis $v, w$ of $\sigma$; the number is independent of the basis. If $\sigma$ is degenerate — which happens exactly when it is tangent to the null cone — the denominator vanishes for some basis and the sectional curvature is not defined.</p>
 <p><strong>Remark.</strong> In a Lorentzian manifold the planes through a null vector and other null vectors are degenerate, and the sectional curvature is defined only on the spacelike and the timelike planes. The curvature of a plane is bounded neither above nor below in general, because the denominator can be arbitrarily small on nondegenerate planes approaching the null cone. This is the first genuine difference from the Riemannian case: the sectional curvature no longer determines the curvature tensor at a point, since it is not defined on the degenerate planes, and one must use the algebraic classification of the curvature tensor instead.</p>

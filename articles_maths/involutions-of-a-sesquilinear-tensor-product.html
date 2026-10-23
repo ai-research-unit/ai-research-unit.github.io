@@ -85,7 +85,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> The tensor involution is additive, bijective and of order two; it is $\varsigma$-<strong>semilinear</strong>,</p>
 <p>$$
-\natural(\lambda\, X) = \varsigma(\lambda)\,\natural(X) , \qquad \lambda\in R , \quad X\in A\otimes_RB ;
+\boxed{\;\natural(\lambda\, X) = \varsigma(\lambda)\,\natural(X) , \qquad \lambda\in R , \quad X\in A\otimes_RB\;} ;
 $$</p>
 <p>and when the two factor involutions are anti-automorphisms of their products, it is an anti-automorphism of the envelope,</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> The tensor square $A\otimes_RA$ carries the two anti-involutions $\natural$ and $\natural\tau$, of order two and $\varsigma$-semilinear, and the four maps</p>
 <p>$$
-\mathrm{id}, \quad \natural, \quad \natural\tau, \quad \tau
+\boxed{\;\mathrm{id}, \quad \natural, \quad \natural\tau, \quad \tau\;}
 $$</p>
 <p>form a commutative group of exponent two, of order four when the flip is not the identity and the involution is not trivial: $\natural\,\natural\tau = \tau$, $\tau\,\natural = \natural\tau$ and $\tau\,\natural\tau = \natural$. The tensor involution $\natural$ is the identity exactly when the factor involution is trivial, for a factor that is free and unital over $R$, and the two anti-involutions agree exactly when the flip is the identity.</p>
 <p><em>Proof.</em> The composite of two anti-automorphisms is an automorphism, so $\natural\tau$ and $\tau\natural$ are anti-automorphisms, and they are equal by the commutation of the flip and the twist; $(\natural\tau)^2 = \natural\tau\natural\tau = \natural\natural\tau\tau = \mathrm{id}$. For the products of the group, $\natural(\natural\tau) = \natural\natural\tau = \tau$ because $\natural^2 = \mathrm{id}$, and $\tau(\natural\tau) = \natural\tau\tau = \natural$; the group is commutative because $\natural$ and $\tau$ commute. If ${}^{*} = \mathrm{id}$ then $\natural = \mathrm{id}$. Conversely let $\natural = \mathrm{id}$, so that $x^{*}\otimes y^{*} = x\otimes y$ for all $x, y$; with $y = 1$, which an involution fixes, this reads $x^{*}\otimes 1 = x\otimes 1$, that is $(x^{*}-x)\otimes 1 = 0$. In a factor free with a basis $\{u_i\}$ write $1 = \sum_jc_ju_j$ and $x^{*}-x = \sum_ia_iu_i$; the tensors $u_i\otimes u_j$ are a basis of the tensor square, so the vanishing of $(x^{*}-x)\otimes 1 = \sum_{i,j}a_ic_j\,u_i\otimes u_j$ gives $a_ic_j = 0$ for all $i, j$, and then $x^{*}-x = (x^{*}-x)\cdot1 = \sum_jc_j\,(x^{*}-x)u_j = \sum_{i,j}c_ja_i\,u_iu_j = 0$, so $x^{*} = x$ for every $x$ and ${}^{*} = \mathrm{id}$. The unit is not decorative here: without it the criterion fails, since on the zero-product module of <em>Examples of Sesqualgebras</em>, §<em>The Zero Product</em>, with the involution $x\mapsto-x$ one has $\natural = (-\mathrm{id})\otimes(-\mathrm{id}) = \mathrm{id}$ and ${}^{*}\neq\mathrm{id}$. Finally $\natural\tau = \natural$ if and only if $\tau = \natural\,\natural\tau = \mathrm{id}$, and conversely.</p>
@@ -159,7 +159,7 @@ $$</p>
 <p>the second called the <strong>reversal</strong> of the tensor power.</p>
 <p><strong>Theorem.</strong> Both maps are $\varsigma$-semilinear anti-automorphisms of $A^{\otimes n}$ for the envelope product, of order two; the reversal is the twist composed with the order-reversing permutation,</p>
 <p>$$
-\rho_n = \pi_n\,\natural_n , \qquad \pi_n(a_1\otimes\cdots\otimes a_n) = a_n\otimes\cdots\otimes a_1 ,
+\boxed{\;\rho_n = \pi_n\,\natural_n , \qquad \pi_n(a_1\otimes\cdots\otimes a_n) = a_n\otimes\cdots\otimes a_1\;} ,
 $$</p>
 <p>where $\pi_n$ is an $R$-linear automorphism of order two; and for $n = 2$ these are the two involutions of the tensor square, $\natural_2 = \natural$ and $\rho_2 = \natural\tau$.</p>
 <p><em>Proof.</em> The two maps are the $n$-fold tensor products of ${}^{*}$ and of the order-reversing permutation on the indices, and both are additive and invertible on the basis of decomposable tensors; $\natural_n^2 = \mathrm{id}$ and $\pi_n^2 = \mathrm{id}$ give $\rho_n^2 = \pi_n\natural_n\pi_n\natural_n = \pi_n^2\natural_n^2 = \mathrm{id}$, since a permutation of the factors commutes with the slotwise twist. Semilinearity is the scalar rule on the first factor; anti-multiplicativity is the reversal of the $n$ factors. For $n = 2$ the permutation $\pi_y$ is the flip and the reversal is $\natural\tau$.</p>

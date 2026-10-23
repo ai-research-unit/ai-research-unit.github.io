@@ -91,14 +91,14 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>parity operator</strong> of $M$ is the involution $\beta$ equal to $+\mathrm{id}$ on $M^{+}$ and $-\mathrm{id}$ on $M^{-}$; it is the analogue on $M$ of the grade involution $\alpha$ on $\mathrm{G}$, and the grading of $M$ is the eigenspace decomposition of $\beta$.</p>
 <p><strong>Proposition.</strong> The compatibility condition is equivalent to the two statements</p>
 <p>$$
-x\cdot(\beta m) = (-1)^{\lvert x\rvert}\,\beta(x\cdot m), \qquad x\cdot M^{\delta}\subseteq M^{\delta+\lvert x\rvert} ,
+\boxed{\;x\cdot(\beta m) = (-1)^{\lvert x\rvert}\,\beta(x\cdot m), \qquad x\cdot M^{\delta}\subseteq M^{\delta+\lvert x\rvert}\;} ,
 $$</p>
 <p>the first of which says that the action graded-commutes with the parity operator, $x\beta = (-1)^{\lvert x\rvert}\beta x$ as operators when $x$ is homogeneous; the odd elements of $\mathrm{G}$ reverse the grading of $M$ and the even elements preserve it.</p>
 <p><em>Proof.</em> For $m\in M^{\delta}$ one has $\beta m = (-1)^{\delta}m$ and $x\cdot m\in M^{\delta+\lvert x\rvert}$, so $\beta(x\cdot m) = (-1)^{\delta+\lvert x\rvert}x\cdot m = (-1)^{\lvert x\rvert}x\cdot(\beta m)$; the converse is the same computation read backwards. The last statement is the case distinction on $\lvert x\rvert$.</p>
 <h3 id="the-sign-rule">The Sign Rule</h3>
 <p><strong>Theorem (the sign rule is forced).</strong> Let $M$ be a graded module and let $x,y$ be homogeneous elements of odd parity. Then the two orders of application of $x$ and $y$ are related by</p>
 <p>$$
-x\cdot(y\cdot m) + y\cdot(x\cdot m) = [x,y]\cdot m ,
+\boxed{\;x\cdot(y\cdot m) + y\cdot(x\cdot m) = [x,y]\cdot m\;} ,
 $$</p>
 <p>and the anticommutator replaces the commutator; for two even elements the ordinary commutator appears, and for an even and an odd element the sign is $+1$. Hence the sign $(-1)^{\lvert x\rvert\lvert y\rvert}$ of the definition is the only sign for which the odd-odd case is consistent with the Jacobi identity of the bracket.</p>
 <p><em>Proof.</em> The displayed identity is the definition with both parities odd, where $(-1)^{\lvert x\rvert\lvert y\rvert} = -1$; the compatibility of the three parities with the graded Jacobi identity of $\mathrm{G}$ forces the sign, because the action is a representation and the graded Jacobi identity is the associativity of the action.</p>
@@ -123,7 +123,7 @@ $$</p>
 $$</p>
 <p>the action</p>
 <p>$$
-x\cdot(m\otimes n) = (x\cdot m)\otimes n + (-1)^{\lvert x\rvert\lvert m\rvert}\,m\otimes(x\cdot n) ,
+\boxed{\;x\cdot(m\otimes n) = (x\cdot m)\otimes n + (-1)^{\lvert x\rvert\lvert m\rvert}\,m\otimes(x\cdot n)\;} ,
 $$</p>
 <p>and the <strong>Koszul flip</strong> $\tau(m\otimes n) = (-1)^{\lvert m\rvert\lvert n\rvert}n\otimes m$, which is an isomorphism of graded modules.</p>
 <p><strong>Theorem.</strong> The graded tensor product of two graded modules is a graded module, the action satisfies the graded Leibniz rule, and $\tau$ is an involution on the tensor square up to the identity; the parity of a product is the sum of the parities and the sign rule is preserved under the flip.</p>

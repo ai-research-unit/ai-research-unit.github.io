@@ -90,9 +90,11 @@ A_{(2)}=-A_{\mathrm G}+i(A_{\mathrm R}-A_{\mathrm B}),
 $$</p>
 <p>and the color channels are recovered by</p>
 <p>$$
+\boxed{\;
 A_{\mathrm R}=\frac{A_{(1)}+A_{(2)}}{2i},\qquad
 A_{\mathrm G}=\operatorname{Re}\frac{A_{(1)}-A_{(2)}}{2},\qquad
-A_{\mathrm B}=\operatorname{Im}\frac{A_{(1)}-A_{(2)}}{2}.
+A_{\mathrm B}=\operatorname{Im}\frac{A_{(1)}-A_{(2)}}{2}
+\;}.
 $$</p>
 <p><strong>Remark (the real part).</strong> The encoding uses three of the four real coordinates; the fourth, $A_0$, is zero. The t-product and the t-SVD are taken over the full algebra, and a product or an approximation of pure tensors need not be pure: the real part is a residual, not a color channel. <strong>The color reconstruction reads the coefficients of $i,j,ij$ and discards the real part.</strong> The source's model uses the same pure encoding.</p>
 <p><strong>Remark (the time mode).</strong> The t-product convolves along the third mode circularly. The video is therefore treated as periodic in time. This is the modeling assumption of the t-product, not a property of the video; the first and last frames are coupled by the circular convolution. The source uses the same convention. A non-periodic treatment requires a different transform or a boundary extension, and it is outside this article.</p>
@@ -114,7 +116,9 @@ $$</p>
 <p>with $S_k$ f-diagonal, so the number of reduced biquaternion entries is $n_3k(n_1+n_2+1)$. Each entry is four real numbers, so the compressed representation has $4n_3k(n_1+n_2+1)$ real scalars. The original color video has $3n_1n_2n_3$ real scalars, and the encoded tensor has $4n_1n_2n_3$ real scalars, one of which is zero at every pixel.</p>
 <p><strong>The compression ratio.</strong> Relative to the encoded tensor, the ratio is</p>
 <p>$$
-\rho_{\mathrm{tensor}}=\frac{n_1n_2}{k(n_1+n_2+1)},
+\boxed{\;
+\rho_{\mathrm{tensor}}=\frac{n_1n_2}{k(n_1+n_2+1)}
+\;},
 $$</p>
 <p>and relative to the original RGB video it is</p>
 <p>$$
@@ -155,7 +159,9 @@ $$</p>
 <p>The inverse is computed by the criterion of <em>Zero Divisors of the Reduced Biquaternion Tensor Algebra</em>: transform $H$, invert every transform slice in both idempotent coordinates, and invert the transform. The cost is the cost of the transform and of the slicewise matrix inverses, $O(n_1n_2n_3\log n_3+n_3n_1^3)$ for square tensors.</p>
 <p><strong>The general case.</strong> If $H$ is not a unit, the equation may have no exact solution, and one takes the minimum-norm least-squares solution of <em>Tensor Equations over the Reduced Biquaternions</em>,</p>
 <p>$$
-X=H^\dagger\ast B,
+\boxed{\;
+X=H^\dagger\ast B
+\;},
 $$</p>
 <p>or the Tikhonov solution</p>
 <p>$$

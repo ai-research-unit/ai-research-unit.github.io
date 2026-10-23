@@ -76,14 +76,14 @@
 <h2 id="orthogonality">Orthogonality</h2>
 <p><strong>Definition.</strong> Two elements $x, y$ are <strong>orthogonal</strong> when $h(x,y) = 0$; for a subset $W \subseteq A$ the <strong>right complement</strong> and the <strong>left complement</strong> are</p>
 <p>$$
-W^{\perp} = \{x : h(w,x) = 0 \ \text{for all } w \in W\}, \qquad
-{}^{\perp}W = \{x : h(x,w) = 0 \ \text{for all } w \in W\} .
+\boxed{\;W^{\perp} = \{x : h(w,x) = 0 \ \text{for all } w \in W\}, \qquad
+{}^{\perp}W = \{x : h(x,w) = 0 \ \text{for all } w \in W\}\;} .
 $$</p>
 <p><strong>Proposition.</strong> For a Hermitian form the two complements coincide, $W^{\perp} = {}^{\perp}W$, and orthogonality is a symmetric relation.</p>
 <p><strong>Proof.</strong> $h(x,w) = 0$ is equivalent to $\varsigma(h(w,x)) = 0$ and $\varsigma$ is injective, so the two sets are equal; the same computation gives symmetry.</p>
 <p><strong>Proposition (the radical of a restriction).</strong> For every subset $W$,</p>
 <p>$$
-W \cap W^{\perp} = \operatorname{rad}(h|_{W}) ,
+\boxed{\;W \cap W^{\perp} = \operatorname{rad}(h|_{W})\;} ,
 $$</p>
 <p>and the restriction $h|_{W}$ is non-degenerate exactly when $W \cap W^{\perp} = 0$. For every $W$ one has $W \subseteq W^{\perp\perp}$.</p>
 <p><strong>Proof.</strong> $x \in W \cap W^{\perp}$ means $x \in W$ and $h(x,w) = 0$ for every $w \in W$, which is exactly $x \in \operatorname{rad}(h|_{W})$; the restriction is non-degenerate exactly when that radical vanishes. For the inclusion, if $w \in W$ and $y \in W^{\perp}$ then $h(w,y) = 0$, so every element of $W$ is orthogonal to every element of $W^{\perp}$, which is $W \subseteq W^{\perp\perp}$.</p>
@@ -99,7 +99,7 @@ $$</p>
 <h2 id="the-radical-and-the-quotient">The Radical and the Quotient</h2>
 <p><strong>Proposition.</strong> The radical is the total orthogonal complement,</p>
 <p>$$
-\operatorname{rad} = A^{\perp} = {}^{\perp}A ,
+\boxed{\;\operatorname{rad} = A^{\perp} = {}^{\perp}A\;} ,
 $$</p>
 <p>and it is invariant under the isometries of the form.</p>
 <p><strong>Proof.</strong> The first clause is the definition of the radical as the set of the elements orthogonal to every element of $A$; the Hermitian property identifies the two sides. If $T$ is an invertible isometry — in finite dimension and for a non-degenerate form every isometry is invertible, by <em>Isometries and the Unitary Group of a Form</em> — and $x \in \operatorname{rad}$ then $h(Tx, Ty) = h(x,y) = 0$ for every $y$, and $T$ being onto, $h(Tx, z) = 0$ for every $z$, so $Tx \in \operatorname{rad}$.</p>

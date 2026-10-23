@@ -85,7 +85,7 @@ $$</p>
 <p>extended bilinearly, and the involution $(au_g)^* = \alpha_{g^{-1}}(a^*)u_{g^{-1}}$. It is a unital $*$-algebra when $G$ is a group and $A$ is unital, and an associative $*$-algebra in general; its unit is $1_A u_e$ when $A$ is unital.</p>
 <p><strong>Proposition.</strong> The $*$-algebra $A[G]_\alpha$ is unital with unit $1_A u_e$ when $A$ is unital, and it contains a copy of $A$ as the span of the elements $a u_e$; the elements $u_g$ are unitaries of $A[G]_\alpha$ whose conjugation implements the action,</p>
 <p>$$
-u_g(a u_e)u_g^* = \alpha_g(a)u_e .
+\boxed{\;u_g(a u_e)u_g^* = \alpha_g(a)u_e\;} .
 $$</p>
 <p><strong>Proof.</strong> The associativity is the computation $(au_g)(bu_h)(cu_k) = a\alpha_g(b)\alpha_{gh}(c)u_{ghk}$ from both brackettings, using that $\alpha$ is a homomorphism; the involution axioms are checked similarly. The displayed identity is the definition of the product together with $u_g^* = u_{g^{-1}}$ for $a = 1_A$.</p>
 <h3 id="covariant-representations">Covariant Representations</h3>
@@ -150,7 +150,7 @@ $$</p>
 <h3 id="takai-duality">Takai Duality</h3>
 <p><strong>Theorem (Takai duality).</strong> Let $G$ be a discrete abelian group and let $\alpha : G \to \operatorname{Aut}(A)$. Then there is an isomorphism of $\mathrm{C}^*$-algebras</p>
 <p>$$
-(A\rtimes_\alpha G)\rtimes_{\hat\alpha}\hat G \;\cong\; A\otimes K\bigl(\ell^2(G)\bigr) ,
+\boxed{\;(A\rtimes_\alpha G)\rtimes_{\hat\alpha}\hat G \;\cong\; A\otimes K\bigl(\ell^2(G)\bigr)\;} ,
 $$</p>
 <p>canonical up to the choice of identification, where $\hat\alpha$ is the dual action of $\hat G$ and $K(\ell^2(G))$ is the algebra of compact operators on $\ell^2(G)$; if $G$ is finite then $K(\ell^2(G)) = M_{\lvert G\rvert}(\mathbb{C})$ and the isomorphism is between finite-dimensional algebras.</p>
 <p><strong>Proof (outline).</strong> On the Hilbert space $\ell^2(G,\mathcal{H})$ one constructs the covariant representation for the double crossed product in which $G$ acts by translations and $\hat G$ by multiplication by characters; the two commuting unitary representations generate the algebra of compact operators on $\ell^2(G)$ tensored with the original algebra, and the covariance relations identify the double crossed product with that tensor product. This is Takai's theorem; it is quoted as standard. When $G$ is infinite the second crossed product is taken over the compact group $\hat G$, whose construction uses the Haar measure of $\hat G$ and is treated in Part III; for finite $G$ the group $\hat G$ is finite, the crossed product is the measure-free finite construction of this article, and the identity is a finite-dimensional isomorphism that can be counted.</p>
@@ -163,7 +163,7 @@ $$</p>
 <h3 id="imprimitivity-and-greens-theorem">Imprimitivity and Green's Theorem</h3>
 <p><strong>Theorem (Green's imprimitivity theorem).</strong> Let a locally compact group $G$ act freely and properly on a locally compact Hausdorff space $X$. Then</p>
 <p>$$
-C_0(X)\rtimes G \;\cong\; C_0(X/G)\otimes K\bigl(L^2(G)\bigr),
+\boxed{\;C_0(X)\rtimes G \;\cong\; C_0(X/G)\otimes K\bigl(L^2(G)\bigr)\;},
 $$</p>
 <p>and in the discrete case with $X/G$ compact the algebra is $C(X/G)\otimes K(\ell^2(G))$. The isomorphism is induced by the imprimitivity bimodule of the action.</p>
 <p><strong>Proof.</strong> Green's theorem is the $\mathrm{C}^*$-algebraic form of Mackey's imprimitivity theorem: the crossed product is Morita equivalent to $C_0(X/G)$, with the equivalence bimodule the completion of $C_c(X)$, and the stabilization by the compact operators is the passage from the Morita equivalence to the isomorphism with the tensor product. It is quoted as standard. In the general locally compact case the group $L^2(G)$ and the Haar measure enter, both of which are constructed in Part III; the discrete case needs only $\ell^2(G)$ and the counting measure.</p>

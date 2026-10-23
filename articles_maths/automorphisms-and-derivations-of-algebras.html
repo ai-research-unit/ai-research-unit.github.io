@@ -98,7 +98,7 @@ $$</p>
 <p>The composition and identity statements are direct.</p>
 <p><strong>Theorem.</strong> The homomorphism $A^\times \to \operatorname{Aut}_R(A)$, $u \mapsto \iota_u$, has kernel $Z(A)^\times$, so</p>
 <p>$$
-\operatorname{Inn}_R(A) \;\cong\; A^\times / Z(A)^\times.
+\boxed{\;\operatorname{Inn}_R(A) \;\cong\; A^\times / Z(A)^\times\;}.
 $$</p>
 <p><em>Proof.</em> The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ a unit this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism.</p>
 <p><strong>Proposition.</strong> $\operatorname{Inn}_R(A)$ is a normal subgroup of $\operatorname{Aut}_R(A)$, and for $\sigma \in \operatorname{Aut}_R(A)$,</p>
@@ -201,7 +201,7 @@ $$</p>
 $$</p>
 <p>for all $a, b \in A$. Hence $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism $A \to \operatorname{Der}_R(A)$ whose kernel is the centre $Z(A)$, and</p>
 <p>$$
-\operatorname{InnDer}_R(A) \;\cong\; A/Z(A)
+\boxed{\;\operatorname{InnDer}_R(A) \;\cong\; A/Z(A)\;}
 $$</p>
 <p>as Lie algebras, where $A/Z(A)$ carries the bracket induced by the commutator.</p>
 <p><em>Proof.</em> The Leibniz rule is the identity $[a, xy] = [a,x]y + x[a,y]$, which is associativity. The bracket identity is the Jacobi identity in the form $[[a,b],x] = [a,[b,x]] - [b,[a,x]]$. The kernel of $\mathrm{ad}$ consists of those $a$ with $[a,x] = 0$ for all $x$, which is exactly $Z(A)$.</p>
@@ -246,7 +246,7 @@ $$</p>
 <p>The proposition is the algebraic form of the statement that the infinitesimal automorphisms of $A$ are its derivations. The analytic form, in which a differentiable family $\varphi_t$ of automorphisms with $\varphi_0 = \mathrm{id}$ is differentiated at $t = 0$, is the same computation read with the derivative of Part III, where the limit is available.</p>
 <p><strong>Theorem (inner derivations exponentiate to inner automorphisms).</strong> Let $a \in A$ and suppose $\exp(a)$ is a unit of $A$. Then</p>
 <p>$$
-\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a).
+\boxed{\;\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a)\;}.
 $$</p>
 <p>This is the identity $\mathrm{Ad}_{\exp(a)} = \exp(\mathrm{ad}_a)$ of the adjoint representation. The identity is algebraic when $a$ is nilpotent, the series then terminating; in general it is read with the limit of Part II, where the series may be given a value.</p>
 <p><strong>Failure over a general ring.</strong> The exponential is not available over an arbitrary commutative ring. If $\delta$ is not nilpotent the sum $\sum \delta^k/k!$ is a formal series that need not terminate, the coefficients $1/k!$ need not make sense — over a field of characteristic $p > 0$ the integer $k!$ vanishes for $k \geq p$ — and giving the series a value requires a limit, hence the norms of Part II. There is then no map from derivations to automorphisms in general, and the passage from the Lie algebra to the group is treated in <em>Topological Algebras and Banach Algebras</em>. Nilpotent derivations are the case in which the exponential survives over any $\mathbb{Q}$-algebra, and that is the case used in practice.</p>

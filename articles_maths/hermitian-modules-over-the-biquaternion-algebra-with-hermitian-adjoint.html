@@ -92,9 +92,9 @@ $$</p>
 $$</p>
 <p><strong>Proposition (the axiom is the sector criterion).</strong> The axiom is equivalent to the pair of demands that every element of the anti-Hermitian sector act by a <strong>skew-adjoint</strong> operator and every element of the Hermitian sector act by a <strong>self-adjoint</strong> one:</p>
 <p>$$
-\langle t,\tilde Q_3\cdot s\rangle_{*}=-\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_-),
+\boxed{\;\langle t,\tilde Q_3\cdot s\rangle_{*}=-\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_-),
 \qquad
-\langle t,\tilde Q_3\cdot s\rangle_{*}=+\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_+).
+\langle t,\tilde Q_3\cdot s\rangle_{*}=+\langle\tilde Q_3\cdot t,s\rangle_{*}\quad (\tilde Q_3\in\mathbb{M}_+)\;}.
 $$</p>
 <p><em>Proof.</em> An element with $\tilde Q_3^{*}=-\tilde Q_3$ gives the first identity and an element with $\tilde Q_3^{*}=\tilde Q_3$ the second; conversely the two identities, applied to the components of an arbitrary element in the direct sum $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, give the axiom. The sum is direct because $2$ is invertible in $\mathbb{C}$.</p>
 <p><strong>Corollary (the action is a $*$-representation).</strong> Write $\rho(\tilde Q_3)$ for the action of $\tilde Q_3$ on $S$ and $\bar{\cdot}$ for the adjoint in $\mathrm{End}_{\mathbb{C}}(S)$ with respect to the form. Then</p>
@@ -106,7 +106,7 @@ $$</p>
 <h2 id="the-regular-module">The Regular Module</h2>
 <p><strong>Theorem (the algebra over itself).</strong> On the left regular module ${}_{\mathbb{B}}\mathbb{B}$ the scalar form</p>
 <p>$$
-\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_3^{*}\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{3\bar{\mu}}Q_\mu
+\boxed{\;\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_3^{*}\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{3\bar{\mu}}Q_\mu\;}
 $$</p>
 <p>is a Hermitian form, positive definite and non-degenerate, and it satisfies the adjointness axiom; so the algebra over itself is a Hermitian Clifford module.</p>
 <p><em>Proof.</em> Sesquilinearity and Hermitian symmetry are assembled from the two commuting involutions: the coefficient conjugation $\bar{\cdot}$ conjugates the scalar of the form and the quaternion conjugation ${}^{\natural}$ negates the three vector coefficients. Positivity is $\mathrm{Sc}(\tilde Q_3^{*}\tilde Q_3)=\sum_{\mu}\lvert Q_{3\mu}\rvert^{2}\ge0$, vanishing only at $\tilde Q_3=0$, so the Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the identity and the form is non-degenerate. For the axiom, left multiplication by $\tilde Q_4$ gives</p>
@@ -160,7 +160,7 @@ $$</p>
 <h2 id="the-unitary-slice">The Unitary Slice</h2>
 <p><strong>Theorem (the slice acts by unitaries).</strong> Let $U=\{\tilde U\in\mathbb{B}:\tilde{U}^{*}\tilde U=e_t\}=\mathrm{U}(2)$ be the unitary slice. Then left multiplication by $\tilde U$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:</p>
 <p>$$
-\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle t,s\rangle_{*}\qquad\text{for all }s,t\in S .
+\boxed{\;\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle t,s\rangle_{*}\qquad\text{for all }s,t\in S\;}.
 $$</p>
 <p><em>Proof.</em> By the axiom, $\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle\tilde{U}^{*}\cdot(\tilde U\cdot t),s\rangle_{*}=\langle (\tilde{U}^{*}\tilde U)\cdot t,s\rangle_{*}=\langle t,s\rangle_{*}$ for $\tilde{U}^{*}\tilde U=e_t$.</p>
 <p><strong>Corollary (unitary representation and its Lie algebra).</strong> The assignment $\tilde U\mapsto\rho(\tilde U)|_S$ is a unitary representation of $\mathrm{U}(2)$ on the module $S$. Its Lie algebra is the anti-Hermitian sector, $u(2)=\mathbb{M}_-$; the operators $L_{\tilde Q_1}$ with $\tilde Q_1\in\mathbb{M}_-$ are skew-adjoint, they satisfy $[L_{\tilde Q_1},L_{\tilde Q_2}]=L_{\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}}$, and the exponential stays in the family, $\exp(L_{\tilde Q_1})=L_{\exp(\tilde Q_1)}$, so the correspondence is a Lie-algebra homomorphism followed by the exponential map (<em>One-Sided Operators on the General Plain Sesqualgebra</em>, <em>The 12 Products of the Biquaternion Complex Space</em>).</p>

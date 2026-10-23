@@ -109,7 +109,7 @@ $$</p>
 <h2 id="itos-formula-and-the-generator">Itô's Formula and the Generator</h2>
 <p><strong>Theorem (Itô's formula, one-dimensional).</strong> Let $f\in C^{1,2}([0,\infty)\times\mathbb{R})$ and let $X_t = X_0+\int_0^tb_s\,ds+\int_0^t\sigma_s\,dB_s$ with $b,\sigma$ in the appropriate integrability classes. Then almost surely, for all $t$,</p>
 <p>$$
-f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f(s,X_s)+b_s\partial/\partial x\,f(s,X_s)+\tfrac12\sigma_s^2\partial/\partial xx\,f(s,X_s)\Bigr)ds+\int_0^t\sigma_s\partial/\partial x\,f(s,X_s)\,dB_s .
+\boxed{\;f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f(s,X_s)+b_s\partial/\partial x\,f(s,X_s)+\tfrac12\sigma_s^2\partial/\partial xx\,f(s,X_s)\Bigr)ds+\int_0^t\sigma_s\partial/\partial x\,f(s,X_s)\,dB_s\;} .
 $$</p>
 <p><em>Proof.</em> Quoted as standard. The proof is a Taylor expansion along a partition: the first-order terms converge to the drift and the stochastic integral, and the second-order term in $x$ leaves the sum $\sum(\Delta X_i)^2$, which converges to the quadratic variation $\int\sigma_s^2ds$ rather than to zero. The third- and higher-order terms are of higher order by the finite quadratic variation and the continuity of the paths.</p>
 <p><strong>Definition.</strong> For a diffusion $dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$ with $\sigma\sigma^{\mathrm{T}}$ the diffusion matrix, the <strong>generator</strong> is the second-order operator</p>
@@ -168,7 +168,7 @@ $$</p>
 <h2 id="girsanovs-theorem-and-the-change-of-measure">Girsanov's Theorem and the Change of Measure</h2>
 <p><strong>Theorem (Girsanov).</strong> Let $B$ be a Brownian motion on $(\Omega,\mathcal{F},(\mathcal{F}_t),\mathbb{P})$ and let $\theta$ be an adapted process satisfying Novikov's condition $\mathbb{E}\exp\bigl(\frac12\int_0^T\theta_s^2ds\bigr)<\infty$. Then</p>
 <p>$$
-\frac{d\mathbb{Q}}{d\mathbb{P}}\Bigr|_{\mathcal{F}_t} = \exp\left(-\int_0^t\theta_s\,dB_s-\frac12\int_0^t\theta_s^2\,ds\right)
+\boxed{\;\frac{d\mathbb{Q}}{d\mathbb{P}}\Bigr|_{\mathcal{F}_t} = \exp\left(-\int_0^t\theta_s\,dB_s-\frac12\int_0^t\theta_s^2\,ds\right)\;}
 $$</p>
 <p>defines a probability measure $\mathbb{Q}\sim\mathbb{P}$, and the process</p>
 <p>$$
@@ -190,7 +190,7 @@ $$</p>
 $$</p>
 <p>in the classical sense when the coefficients and $f$ are smooth, and more generally in the weak sense. If $X$ has a transition density $p(t,x,y)$ with respect to Lebesgue measure, then $p$ solves the <strong>forward Kolmogorov</strong> or <strong>Fokker–Planck equation</strong></p>
 <p>$$
-\partial/\partial t\,p = L^*p, \qquad L^*p = -\sum_i\partial/\partial x_i(b_ip)+\frac12\sum_{i,j}\partial/\partial x_ix_j\,\bigl((\sigma\sigma^{\mathrm{T}})_{ij}p\bigr),
+\boxed{\;\partial/\partial t\,p = L^*p, \qquad L^*p = -\sum_i\partial/\partial x_i(b_ip)+\frac12\sum_{i,j}\partial/\partial x_ix_j\,\bigl((\sigma\sigma^{\mathrm{T}})_{ij}p\bigr)\;},
 $$</p>
 <p>with the initial condition $p(0,\cdot,y)\to\delta_y$.</p>
 <p><em>Proof.</em> Apply Itô's formula to $w(T-t,X_t)$: the drift is $(-\partial/\partial t w+Lw)(T-t,X_t)$ and the stochastic integral is a martingale; taking expectations over $[0,T]$ and using $w(0,X_T)=f(X_T)$ gives the backward equation when the drift vanishes for every $f$, and the Fokker–Planck equation is the formal adjoint obtained by integrating the backward equation against a test function.</p>

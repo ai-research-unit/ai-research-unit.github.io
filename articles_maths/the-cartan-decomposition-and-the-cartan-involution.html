@@ -88,12 +88,12 @@ $$</p>
 <h3 id="the-bracket-relations">The Bracket Relations</h3>
 <p><strong>Proposition.</strong> The decomposition satisfies</p>
 <p>$$
-[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}, \qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}, \qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K} .
+\boxed{\;[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}, \qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}, \qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}\;} .
 $$</p>
 <p><em>Proof.</em> The involution $\theta$ is an automorphism, so $\theta[X,Y] = [\theta X,\theta Y]$; taking $X,Y$ in the eigenpieces with signs $\epsilon,\delta\in\{+1,-1\}$ gives $\theta[X,Y] = \epsilon\delta[X,Y]$, so the bracket lies in the eigenspace of the sign $\epsilon\delta$. In particular $\mathrm{K}$ is a subalgebra, $\mathrm{P}$ is a $\mathrm{K}$-module, and the sum is a $\mathbb{Z}/2$-grading of the Lie algebra in the sense of <em>Graded Lie Algebras with an Involution</em>.</p>
 <p><strong>Proposition.</strong> The two pieces are orthogonal for the Killing form and for the twisted form, and the restrictions satisfy</p>
 <p>$$
-B_\theta(X,Y) = \begin{cases} -B(X,Y), & X,Y\in\mathrm{K},\\ B(X,Y), & X,Y\in\mathrm{P},\\ 0, & X\in\mathrm{K},\ Y\in\mathrm{P}, \end{cases}
+\boxed{\;B_\theta(X,Y) = \begin{cases} -B(X,Y), & X,Y\in\mathrm{K},\\ B(X,Y), & X,Y\in\mathrm{P},\\ 0, & X\in\mathrm{K},\ Y\in\mathrm{P}, \end{cases}\;}
 $$</p>
 <p>so that $-B$ is positive definite on $\mathrm{K}$ and $B$ is positive definite on $\mathrm{P}$.</p>
 <p><em>Proof.</em> The decomposition into eigenspaces of an involution that is an automorphism is orthogonal for the invariant form $B$, because $B(X,Y) = B(\theta X,\theta Y) = \epsilon\delta\,B(X,Y)$; the displayed case distinction follows, and the definiteness is the positivity of $B_\theta$ together with the signs.</p>
@@ -121,7 +121,7 @@ $$</p>
 <h3 id="the-polar-decomposition">The Polar Decomposition</h3>
 <p><strong>Theorem (the Cartan decomposition of the group).</strong> Let $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ be the Cartan decomposition. The map</p>
 <p>$$
-\mathrm{K}\times\mathrm{P} \longrightarrow G, \qquad (X,Y) \longmapsto \exp X\,\exp Y ,
+\boxed{\;\mathrm{K}\times\mathrm{P} \longrightarrow G, \qquad (X,Y) \longmapsto \exp X\,\exp Y\;} ,
 $$</p>
 <p>is a diffeomorphism onto $G$; equivalently every $g\in G$ has a unique expression $g = k\exp Y$ with $k\in K$ and $Y\in\mathrm{P}$, and the map $Y\mapsto\exp Y$ is a diffeomorphism from $\mathrm{P}$ onto the image.</p>
 <p><em>Proof.</em> The differential of the map at the identity is the identity because $\mathrm{K}\cap\mathrm{P} = 0$, so it is a local diffeomorphism; the exponential restricted to $\mathrm{P}$ is injective because $B$ is positive definite on $\mathrm{P}$ and the flow of a hyperbolic element is unbounded; the surjectivity follows from the polar decomposition of the linear group and the closedness of the image, which is the standard argument of the Cartan decomposition. The detailed proof is in the references.</p>

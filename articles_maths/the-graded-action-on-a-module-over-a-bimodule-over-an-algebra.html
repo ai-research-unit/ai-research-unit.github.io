@@ -128,7 +128,7 @@ R_b(m)=(-1)^{\deg b\,\deg m}\,bm, \qquad m\text{ homogeneous}.
 $$</p>
 <p>Then $R$ is a right action, $R_{bc}=R_cR_b$, and the left and right actions commute:</p>
 <p>$$
-(m\cdot b)\cdot c=m\cdot(bc), \qquad a\,(m\cdot b)=(am)\cdot b .
+\boxed{\;(m\cdot b)\cdot c=m\cdot(bc), \qquad a\,(m\cdot b)=(am)\cdot b\;} .
 $$</p>
 <p>Consequently $M$ is a graded $(A,A)$-bimodule, and each $R_b$ is $R$-linear of parity $\deg b$.</p>
 <p><em>Proof.</em> For the associativity, $(m\cdot b)\cdot c=(-1)^{\deg c(\deg m+\deg b)}(-1)^{\deg b\deg m}c\,b\,m$ and $m\cdot(bc)=(-1)^{(\deg b+\deg c)\deg m}(bc)m$; the two exponents differ by $\deg b\deg c$, and graded-commutativity of $A$ supplies exactly that sign, $cb=(-1)^{\deg b\deg c}bc$. For the compatibility, $a(m\cdot b)=(-1)^{\deg b\deg m}a\,b\,m$ and $(am)\cdot b=(-1)^{\deg b(\deg a+\deg m)}b\,a\,m$, whose exponents differ again by $\deg a\deg b$, supplied by graded-commutativity. The parity is read from $R_b(M_j) \subseteq M_{j+\deg b}$.</p>
@@ -138,7 +138,7 @@ $$</p>
 <h3 id="the-two-sided-operators-and-their-parity">The two-sided operators and their parity</h3>
 <p><strong>Proposition.</strong> Let ${}_A M_A$ be a graded bimodule with the Koszul right action, and let $S_{a,b}=L_aR_b$ be the unsigned sandwich of <em>The Signed Sandwich on a Bimodule over an Algebra</em>. Then</p>
 <p>$$
-S_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,S_{a,b},
+\boxed{\;S_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,S_{a,b}\;},
 $$</p>
 <p>and $S_{a,b}=L_{ab}\alpha^{\deg b}$. The signed sandwich $S^{\alpha}_{a,b}=S_{a,b}\alpha$ has the same parity $\deg a+\deg b$ and obeys the same sign rule.</p>
 <p><em>Proof.</em> $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $S_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary.</p>
@@ -159,7 +159,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The graded commutator is graded-alternating, $[S,T]=-(-1)^{\deg S\,\deg T}[T,S]$, it is a graded derivation in each argument,</p>
 <p>$$
-[S,TT']=[S,T]T'+(-1)^{\deg S\,\deg T}T[S,T'],
+\boxed{\;[S,TT']=[S,T]T'+(-1)^{\deg S\,\deg T}T[S,T']\;},
 $$</p>
 <p>and an even operator $T$ is $A$-linear exactly when $[T,L_a]=0$ for all homogeneous $a$.</p>
 <p><em>Proof.</em> The alternation is a rewriting of the definition. The derivation identity is the Leibniz rule with the Koszul sign inserted before moving $T$ past $S$, checked by expanding both sides. For the last clause, an even $T$ has $\deg T=0$, so $[T,L_a]=TL_a-L_aT$, whose vanishing is $A$-linearity by <em>Module Endomorphisms</em>; for an odd $T$ the graded bracket carries the sign $(-1)^{\deg a}$ and its vanishing is a twisted condition, not $A$-linearity.</p>

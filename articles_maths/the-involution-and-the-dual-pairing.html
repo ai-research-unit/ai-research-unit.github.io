@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-transposed-involution">The Transposed Involution</h2>
 <p><strong>Theorem (existence and uniqueness).</strong> Let $\theta$ be a $\varsigma$-semilinear involution of $E$. Then there is a unique $\varsigma$-semilinear involution $\theta^{t}$ of $F$ with</p>
 <p>$$
-\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F) ,
+\boxed{\;\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F)\;} ,
 $$</p>
 <p>and $(\theta^{t})^{2} = \mathrm{id}$. It is called the <strong>transposed involution</strong>, and it is linear exactly when $\theta$ is linear.</p>
 <p><strong>Proof.</strong> For fixed $y \in F$ the map $x \mapsto \varsigma(\langle \theta x, y\rangle)$ is linear (the composition of the $\varsigma$-semilinear $\theta$ with the linear functional $\langle\cdot, y\rangle$ and the involution $\varsigma$), so by the non-degeneracy of the pairing it is $\langle x, y^{t}\rangle$ for a unique $y^{t} \in F$; set $\theta^{t}y = y^{t}$. Linearity of $y \mapsto \theta^{t}y$ is the bilinearity of the pairing, and semilinearity follows from $\varsigma^{2} = \mathrm{id}$. Applying the defining relation twice, $\langle\theta^{2}x, y\rangle = \varsigma(\langle\theta x, \theta^{t}y\rangle) = \varsigma^{2}(\langle x, (\theta^{t})^{2}y\rangle) = \langle x, (\theta^{t})^{2}y\rangle$, and $\theta^{2} = \mathrm{id}$ with non-degeneracy gives $(\theta^{t})^{2} = \mathrm{id}$.</p>
@@ -92,7 +92,7 @@ $$</p>
 <p><strong>Proof.</strong> Apply the defining relation with $y$ replaced by $\theta^{t}y$: $\langle\theta x, \theta^{t}y\rangle = \varsigma(\langle x, \theta^{t}\theta^{t}y\rangle) = \varsigma(\langle x, y\rangle)$.</p>
 <p><strong>Proposition (annihilators).</strong> The fixed and negated subspaces of $\theta^{t}$ are the annihilators of the negated and fixed subspaces of $\theta$,</p>
 <p>$$
-F^{\theta^{t}} = (E^{-})^{\circ}, \qquad F^{-} = (E^{\theta})^{\circ} ,
+\boxed{\;F^{\theta^{t}} = (E^{-})^{\circ}, \qquad F^{-} = (E^{\theta})^{\circ}\;} ,
 $$</p>
 <p>and the bipolar theorem of <em>Duality Theory</em> recovers the summands; in particular the transposed involution is injective on $F$ exactly when the summands of $E$ are the whole space.</p>
 <p><strong>Proof.</strong> $y$ is fixed under $\theta^{t}$ exactly when $\langle\theta x, y\rangle = \langle x, y\rangle$ for all $x$, which on $E^{-}$ reads $\langle -x, y\rangle = \langle x, y\rangle$ and forces $\langle x, y\rangle = 0$, and on $E^{\theta}$ is automatic; hence $F^{\theta^{t}}$ is the set of $y$ annihilating $E^{-}$. The rest is the annihilator calculus of <em>Duality Theory</em>.</p>
@@ -108,7 +108,7 @@ $$</p>
 <p>and compatibility is the intertwining of the two involutions.</p>
 <p><strong>Theorem (compatibility is intertwining, linear case).</strong> Let $\theta = T$ be linear and let $B$ be a non-degenerate bilinear form on $E$ with induced isomorphism $\Phi : E \to F$, $B(x,y) = \langle x, \Phi y\rangle$. Then</p>
 <p>$$
-B(Tx, Ty) = B(x, y) \ \text{for all } x, y \iff \Phi\,T = T^{t}\,\Phi ,
+\boxed{\;B(Tx, Ty) = B(x, y) \ \text{for all } x, y \iff \Phi\,T = T^{t}\,\Phi\;} ,
 $$</p>
 <p>so a bilinear form is $T$-compatible exactly when its induced operator intertwines $T$ with the transposed involution.</p>
 <p><strong>Proof.</strong> $B(Tx, Ty) = \langle Tx, \Phi Ty\rangle = \langle x, T^{t}\Phi Ty\rangle$ by the defining relation of the transposed involution, and $B(x,y) = \langle x, \Phi y\rangle$; non-degeneracy of the pairing gives $T^{t}\Phi T = \Phi$, which, multiplied on the right by $T$ and using $T^{2} = \mathrm{id}$, is $\Phi T = T^{t}\Phi$.</p>

@@ -99,7 +99,7 @@ is a $K$-linear derivation: $\partial(fg) = \partial(f)g + f\partial(g)$. The de
 <h3 id="dworks-lemma">Dwork's Lemma</h3>
 <p><strong>Theorem (Dwork's lemma).</strong> Let $f = \sum_{m \geq 0} a_m x^m \in \mathcal{O}[[x]]$ with $a_0 = 1$ and suppose that for some power $q = p^s$ of the residue characteristic the quotient
 $$
-\frac{f(x)}{f(x^q)} = \sum_{m \geq 0} b_m x^m
+\boxed{\;\frac{f(x)}{f(x^q)} = \sum_{m \geq 0} b_m x^m\;}
 $$
 has all its coefficients $b_m$ in $\mathcal{O}$. Then $f$ has all its coefficients in $\mathcal{O}$ and in particular converges on the open unit disc: $f \in K\{x\}$. The conclusion is not coefficient decay — $f = (1-x)^{-1}$ satisfies the hypothesis with $a_m = 1$ for every $m$ — and it is the integrality of the coefficients, not their decay, that the lemma supplies.</p>
 <p><strong>Proof sketch.</strong> The hypothesis gives $f(x) = f(x^q)\,g(x)$ with $g \in \mathcal{O}[[x]]$ of constant term $1$; iterating, $f(x) = f(x^{q^N})\prod_{i=0}^{N-1}g(x^{q^i})$ for every $N$, and letting $N\to\infty$ gives $f(x) = \prod_{i\geq0}g(x^{q^i})$ in $K[[x]]$, the product converging coefficientwise because the exponents $q^i$ tend to infinity and each coefficient of $f$ receives contributions from only finitely many factors. Each coefficient of the product is a finite sum of products of coefficients of $g$, hence has $\lvert \cdot \rvert \leq 1$ by the ultrametric inequality; so $\lvert a_m \rvert \leq 1$ for every $m$, which is convergence of $f$ on the open unit disc.</p>
@@ -130,7 +130,7 @@ the ring of Laurent series that converge on some annulus with outer radius $1$ a
 <p>The definition of the slope of a differential module over $\mathcal{R}$ makes precise the intuitive idea that solutions grow like $\lvert x \rvert^{-s}$ at the boundary; the slope is the $p$-adic analogue of the order of growth of a solution at a singular point, and it is computed by a Newton polygon attached to a basis of the module.</p>
 <p><strong>Theorem (Dwork–Robba).</strong> Let $M$ be a nonzero differential module over $\mathcal{R}$. Then $M$ admits a unique decomposition
 $$
-M = M_{>0} \oplus M_{\leq 0}
+\boxed{\;M = M_{>0} \oplus M_{\leq 0}\;}
 $$
 into differential submodules, where $M_{>0}$ has all slopes $> 0$ and $M_{\leq 0}$ has all slopes $\leq 0$; more generally $M$ decomposes uniquely as a direct sum of isoclinic submodules of distinct slopes, and the slopes are rational numbers. The submodule of slope $0$ is the <strong>unit-root part</strong>, and it is the part whose solutions converge on the open unit disc.</p>
 <p><strong>Proof sketch.</strong> The theorem is proved by a successive approximation argument on the Newton polygon of a basis of $M$: one shows that a sublattice of maximal slope is a direct summand, and iterates; the rationality of the slopes follows from the Newton polygon having rational vertices, and the uniqueness from the maximality of the slope. The full proof is due to Dwork and Robba, and the modern account is that of Kedlaya; the essential input is the Bézout property of $\mathcal{R}$ and the Frobenius.</p>
@@ -140,7 +140,7 @@ into differential submodules, where $M_{>0}$ has all slopes $> 0$ and $M_{\leq 0
 <h3 id="the-formal-fuchs-theorem">The Formal Fuchs Theorem</h3>
 <p><strong>Theorem (formal Fuchs theorem).</strong> Let $B \in M_n(K)$ and consider the equation $xy' = By$. Then there is a formal fundamental solution
 $$
-Y(x) = F(x)\,x^B, \qquad F \in \mathrm{GL}_n(K[[x]]), \quad F(0) = I,
+\boxed{\;Y(x) = F(x)\,x^B, \qquad F \in \mathrm{GL}_n(K[[x]]), \quad F(0) = I\;},
 $$
 where $x^B$ is defined by the formal logarithm of the matrix, and the expansion is valid in a finite extension of $K$ if the eigenvalues of $B$ are not all in $K$.</p>
 <p><strong>Proof sketch.</strong> The matrix $x^B = \exp(B \log x)$ is defined by the finite-dimensional linear algebra of $B$: if $B$ is in Jordan form, $x^B$ is assembled from the powers $x^{\alpha}(\log x)^k$ for the eigenvalues $\alpha$ of $B$ and the sizes of its Jordan blocks. Substituting $Y = Fx^B$ into the equation gives $xF' = BF - FB$, an equation for $F$ with a regular singularity of the second kind whose formal solution is obtained by the recurrence of the existence theorem; the resonance conditions are automatically satisfied in the formal setting.</p>

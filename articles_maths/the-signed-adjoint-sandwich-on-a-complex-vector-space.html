@@ -90,21 +90,21 @@ which is the identity exactly for $a^{\dagger}a = \mathrm{id}$ and $bb^{\dagger}
 <p><strong>Proof.</strong> $\langle\alpha(X), Y\rangle = \operatorname{tr}((TXT)^{\dagger}Y) = \operatorname{tr}(TX^{\dagger}TY) = \operatorname{tr}(X^{\dagger}TYT) = \langle X,\alpha(Y)\rangle$, using $T^{\dagger}=T$ and the trace cyclicity; the second statement is the same computation, $(TXT)^{\dagger} = TX^{\dagger}T$. This is <em>The Involution on a Complex Vector Space</em>.</p>
 <p><strong>Theorem (the signed adjoint).</strong> For all $a,b \in E$,
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\,\alpha(b^{\dagger})},
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\,\alpha(b^{\dagger})}\;},
 $$
 and in particular the unsigned case is $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}$; the adjoint is conjugate-linear in the pair and involutive, $(\Theta^{*})^{*} = \Theta$.</p>
 <p><strong>Proof.</strong> Write $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha$. Then $\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \alpha^{*}\Phi_{a,b}^{*} = \alpha\circ\Phi_{a^{\dagger},b^{\dagger}}$, using $\alpha^{*}=\alpha$ and the unsigned adjoint law; as an operator, $\alpha(\Phi_{a^{\dagger},b^{\dagger}}(Y)) = \alpha(a^{\dagger}Yb^{\dagger}) = Ta^{\dagger}Yb^{\dagger}T = \Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}(Y)$, since $\Theta^{\alpha}_{c,d}(Y) = c\alpha(Y)d$ with $c = \alpha(a^{\dagger}) = Ta^{\dagger}T$, $d=\alpha(b^{\dagger})=Tb^{\dagger}T$ gives $Ta^{\dagger}T\cdot TYT\cdot Tb^{\dagger}T = Ta^{\dagger}Yb^{\dagger}T$. The involutivity is $\alpha^2=\mathrm{id}$ and $(a^{\dagger})^{\dagger}=a$. The unsigned adjoint law is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>, and the sandwich laws are <em>The Signed Sandwich on a Complex Vector Space</em>.</p>
 <p><strong>Corollary (the self-adjoint signed sandwiches).</strong> $\Theta^{\alpha}_{a,b}$ is self-adjoint, $(\Theta^{\alpha}_{a,b})^{*} = \Theta^{\alpha}_{a,b}$, exactly when
 $$
-a = \alpha(a^{\dagger}), \qquad b = \alpha(b^{\dagger}),
+\boxed{\;a = \alpha(a^{\dagger}), \qquad b = \alpha(b^{\dagger})\;},
 $$
 that is when $aT$ and $bT$ are Hermitian; in particular the signed sandwich of a Hermitian $a$ with $b = a$ and $a = \alpha(a)$ is self-adjoint.</p>
 <p><strong>Proof.</strong> The identity $\Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})} = \Theta^{\alpha}_{a,b}$ holds when $\alpha(a^{\dagger})=a$ and $\alpha(b^{\dagger})=b$. The first equation is $Ta^{\dagger}T = a$, equivalently (right-multiplying by $T$) $aT = Ta^{\dagger} = (aT)^{\dagger}$, which is the Hermitian condition on $aT$; the second is the same condition on $bT$. This is the self-adjointness criterion of <em>The Adjoint of a Hermitian Operator</em>.</p>
 <h2 id="the-unitarity-condition">The Unitarity Condition</h2>
 <p><strong>Proposition (the unitarity condition).</strong> The signed sandwich satisfies
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\,\alpha(bb^{\dagger})}, \qquad
-\Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(aa^{\dagger}),\,\alpha(b^{\dagger}b)},
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\,\alpha(bb^{\dagger})}, \qquad
+\Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(aa^{\dagger}),\,\alpha(b^{\dagger}b)}\;},
 $$
 and it is a <strong>unitary</strong> operator on the Hermitian space $E$ exactly when $a$ and $b$ are unitary; the signed sandwiches with $a,b \in \mathrm{U}(h)$ form the group $\mathrm{U}(h)\times \mathrm{U}(h)$ acting on $E$, each factor acting by a one-sided operator.</p>
 <p><strong>Proof.</strong> The products are computed with the composition law $\Theta_{c,d}\Theta_{a,b} = \Theta_{c\alpha(a),\alpha(b)d}$ of <em>The Signed Sandwich on a Complex Vector Space</em>, together with the adjoint formula: $\Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}\Theta^{\alpha}_{a,b}$ has $c=\alpha(a^{\dagger})$, $d=\alpha(b^{\dagger})$, so $c\alpha(a) = \alpha(a^{\dagger})\alpha(a) = \alpha(a^{\dagger}a)$ and $\alpha(b)d = \alpha(b)\alpha(b^{\dagger}) = \alpha(bb^{\dagger})$. The composite is the identity exactly when $a^{\dagger}a = \mathrm{id}$ and $bb^{\dagger} = \mathrm{id}$, that is when $a$ and $b$ are unitary; the map $(a,b)\mapsto\Theta^{\alpha}_{a,b}$ is then multiplicative and injective. This is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em> and <em>The Unitary and Symplectic Groups</em>.</p>

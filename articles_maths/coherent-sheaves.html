@@ -140,17 +140,17 @@ $$</p>
 <p>both of which exist because the categories have enough injectives, as in Part I's <em>Derived Functors</em> and <em>Homological Algebra</em>.</p>
 <p><strong>Theorem (the local-to-global spectral sequence).</strong> For $\mathcal{O}_X$-modules $\mathcal{F},\mathcal{G}$ with $\mathcal{F}$ of finite type over a locally Noetherian $X$ there is a convergent spectral sequence</p>
 <p>$$
-E_2^{n,m} = H^p\bigl(X,\mathcal{E}xt^q_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\bigr)\Longrightarrow\operatorname{Ext}^{p+q}_{\mathcal{O}_X}(\mathcal{F},\mathcal{G}),
+\boxed{\;E_2^{n,m} = H^p\bigl(X,\mathcal{E}xt^q_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\bigr)\Longrightarrow\operatorname{Ext}^{p+q}_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\;},
 $$</p>
 <p>natural in both variables. In particular there is an exact sequence</p>
 <p>$$
-0\to H^1\bigl(X,\mathcal{H}om(\mathcal{F},\mathcal{G})\bigr)\to\operatorname{Ext}^1(\mathcal{F},\mathcal{G})\to H^0\bigl(X,\mathcal{E}xt^1(\mathcal{F},\mathcal{G})\bigr)\to H^2(X,\mathcal{H}om(\mathcal{F},\mathcal{G}))\to\cdots,
+\boxed{\;0\to H^1\bigl(X,\mathcal{H}om(\mathcal{F},\mathcal{G})\bigr)\to\operatorname{Ext}^1(\mathcal{F},\mathcal{G})\to H^0\bigl(X,\mathcal{E}xt^1(\mathcal{F},\mathcal{G})\bigr)\to H^2(X,\mathcal{H}om(\mathcal{F},\mathcal{G}))\to\cdots\;},
 $$</p>
 <p>so that the obstruction to extending a homomorphism lies partly in the global sections of the local Ext sheaf and partly in the first cohomology of the sheaf hom. When $\mathcal{F}$ is locally free the $\mathcal{E}xt^q$ vanish for $q>0$ and the spectral sequence collapses to the isomorphism $\operatorname{Ext}^i(\mathcal{F},\mathcal{G})\cong H^i(X,\mathcal{F}^\vee\otimes\mathcal{G})$.</p>
 <p><em>Proof.</em> The functor $\mathcal{H}om(\mathcal{F},-)$ takes injectives to injectives when $\mathcal{F}$ is of finite type over a locally Noetherian scheme, and the Grothendieck spectral sequence for the composite $\operatorname{Hom}(\mathcal{F},-)\cong\Gamma(X,\mathcal{H}om(\mathcal{F},-))$ is the stated sequence, by <em>Derived Functors and Sheaf Cohomology</em>. The local vanishing for locally free $\mathcal{F}$ is the exactness of $\mathcal{H}om(\mathcal{F},-)$ in that case.</p>
 <p><strong>Corollary (Serre duality as an Ext statement).</strong> Let $X$ be a smooth projective scheme of dimension $n$ over a field and $\omega_X$ its canonical sheaf. Then</p>
 <p>$$
-H^i(X,\mathcal{F})^{\vee}\cong\operatorname{Ext}^{n-i}_{\mathcal{O}_X}(\mathcal{F},\omega_X)
+\boxed{\;H^i(X,\mathcal{F})^{\vee}\cong\operatorname{Ext}^{n-i}_{\mathcal{O}_X}(\mathcal{F},\omega_X)\;}
 $$</p>
 <p>for coherent $\mathcal{F}$, and the local Ext sheaves vanish for $q>0$ when $\mathcal{F}$ is locally free, so that the duality of <em>Sheaves in Algebraic Geometry</em> is the collapse of the local-to-global sequence in the smooth case. The general statement, in which $\omega_X$ is replaced by the dualising complex of a proper morphism, is Grothendieck duality and requires the derived category of Part I's <em>Derived Categories</em> and <em>Derived Functors</em>; the topological model of the same phenomenon is Verdier duality, recorded in <em>Derived Functors and Sheaf Cohomology</em>.</p>
 <p><strong>Remark (deformations).</strong> The Ext groups are the natural home of deformation theory: for a coherent sheaf $\mathcal{F}$ on a scheme $X$ and a square-zero extension of the base by an ideal $I$, the deformations of $\mathcal{F}$ are a torsor under $\operatorname{Ext}^1$, the obstructions lie in $\operatorname{Ext}^2$, and the infinitesimal automorphisms are $\operatorname{Ext}^0 = \operatorname{Hom}(\mathcal{F},\mathcal{F})$; for a subscheme $Z\subseteq X$ the tangent space to the Hilbert scheme at $Z$ is $H^0(Z,\mathcal{N}_{Z/X})$ and the obstructions are in $H^1(Z,\mathcal{N}_{Z/X})$, with $\mathcal{N}$ the normal sheaf. The formal theory of these statements belongs to Part I's <em>Deformation Theory</em>; their geometric application, the construction of the spaces that parametrise the objects, belongs there as well.</p>

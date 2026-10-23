@@ -109,7 +109,7 @@ the base change of the module $M$ along $\varphi$. It preserves direct sums, cok
 <p><strong>Definition.</strong> For an $\mathcal{O}_X$-module $\mathcal{F}$, the <strong>direct image</strong> (or <strong>pushforward</strong>) $f_*\mathcal{F}$ is the sheaf $\Omega\mapsto\mathcal{F}(f^{-1}\Omega)$ on $Y$, with the $\mathcal{O}_Y$-module structure induced by $f^\sharp$: a section $s\in\mathcal{O}_Y(\Omega)$ acts on $t\in\mathcal{F}(f^{-1}\Omega)$ by $f^\sharp(s)\cdot t$.</p>
 <p><strong>Theorem (the adjunction).</strong> For every $\mathcal{O}_Y$-module $\mathcal{G}$ and every $\mathcal{O}_X$-module $\mathcal{F}$ there is a bijection
 $$
-\operatorname{Hom}_{\mathcal{O}_X}\bigl(f^*\mathcal{G},\mathcal{F}\bigr)\ \cong\ \operatorname{Hom}_{\mathcal{O}_Y}\bigl(\mathcal{G},f_*\mathcal{F}\bigr),
+\boxed{\;\operatorname{Hom}_{\mathcal{O}_X}\bigl(f^*\mathcal{G},\mathcal{F}\bigr)\ \cong\ \operatorname{Hom}_{\mathcal{O}_Y}\bigl(\mathcal{G},f_*\mathcal{F}\bigr)\;},
 $$
 natural in $\mathcal{G}$ and $\mathcal{F}$. Equivalently, $f^*$ is left adjoint to $f_*$,
 $$
@@ -122,13 +122,13 @@ $$</p>
 <h2 id="functoriality-and-the-projection-formula">Functoriality and the Projection Formula</h2>
 <p><strong>Theorem (functoriality).</strong> For morphisms $f : X\to Y$ and $g : Y\to Z$ there are natural isomorphisms
 $$
-(g\circ f)^*\cong f^*\circ g^*, \qquad (g\circ f)_*\cong g_*\circ f_* ,
+\boxed{\;(g\circ f)^*\cong f^*\circ g^*, \qquad (g\circ f)_*\cong g_*\circ f_*\;} ,
 $$
 and for the identity morphism $\mathrm{id}^*\cong\mathrm{id}$ and $\mathrm{id}_*\cong\mathrm{id}$. Consequently the pullback is a contravariant functor on the category of varieties and the pushforward is a covariant one, and the adjunction is compatible with composition.</p>
 <p><em>Proof.</em> The pushforward statement is immediate from the definition, $(g\circ f)_*\mathcal{F}(\Omega) = \mathcal{F}((g\circ f)^{-1}\Omega) = \mathcal{F}(f^{-1}(g^{-1}\Omega)) = g_*f_*\mathcal{F}(\Omega)$. The pullback statement follows by the uniqueness of a left adjoint: both sides are left adjoint to $g_*f_* = (g\circ f)_*$, so they are naturally isomorphic, by Part I's <em>Universal Properties and Categories</em>.</p>
 <p><strong>Theorem (the projection formula).</strong> For an $\mathcal{O}_X$-module $\mathcal{F}$ and an $\mathcal{O}_Y$-module $\mathcal{G}$ there is a natural isomorphism
 $$
-f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G}\bigr)\ \cong\ f_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}.
+\boxed{\;f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G}\bigr)\ \cong\ f_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}\;}.
 $$</p>
 <p><em>Proof.</em> On an affine chart it is the identity $(M\otimes_AB)\otimes_BN\cong M\otimes_A(N\otimes_AB)$ for modules over $A\to B$, the module identity of Part I's <em>Extension of Scalars</em>; the two sides are sheaves, so the affine identification glues. The formula is the compatibility of the adjunction with the tensor product, and it is used in the article's last section and in <em>Coherent Sheaves</em>.</p>
 <h2 id="the-pullback-on-cohomology-and-on-the-picard-group">The Pullback on Cohomology and on the Picard Group</h2>

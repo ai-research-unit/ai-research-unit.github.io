@@ -221,16 +221,14 @@ $$</p>
 <p><strong>Theorem (Rolle).</strong> If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $\frac{df}{dx}(c) = 0$.</p>
 <p><strong>Proof.</strong> If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes.</p>
 <p><strong>Theorem (Mean Value Theorem).</strong> If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with</p>
-<p>$$
-\frac{df}{dx}(c) = \frac{f(b) - f(a)}{b - a}.
+<p>$$ \boxed{\;\frac{df}{dx}(c) = \frac{f(b) - f(a)}{b - a}\;}.
 $$</p>
 <p><strong>Proof.</strong> Apply Rolle to $g(c) = f(c) - \frac{f(b) - f(a)}{b - a}(c - a)$.</p>
 <p><strong>Corollary.</strong> If $\frac{df}{dx} = 0$ on an interval, $f$ is constant there.</p>
 <p><strong>Corollary.</strong> If $\frac{df}{dx} > 0$ on an interval, $f$ is strictly increasing there.</p>
 <h3 id="taylors-theorem">Taylor's Theorem</h3>
 <p><strong>Theorem (Taylor).</strong> If $f$ is $n$ times differentiable on an interval containing $a$ and $b$, with $f^{(n)}$ continuous on the interval between them, then</p>
-<p>$$
-f(b) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (b - a)^k + R_n(b),
+<p>$$ \boxed{\;f(b) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (b - a)^k + R_n(b)\;},
 $$</p>
 <p>where the remainder is</p>
 <p>$$
@@ -265,8 +263,7 @@ F(c) = \int_a^c f(t) \, dt,
 $$</p>
 <p>then $F$ is differentiable on $(a, b)$ and $F' = f$.</p>
 <p><strong>Theorem (Fundamental Theorem of Calculus, II).</strong> If $f$ is Riemann integrable on $[a, b]$ and $F$ is an antiderivative of $f$ on $[a, b]$, then</p>
-<p>$$
-\int_a^b f = F(b) - F(a).
+<p>$$ \boxed{\;\int_a^b f = F(b) - F(a)\;}.
 $$</p>
 <h3 id="properties-of-the-integral">Properties of the Integral</h3>
 <p><strong>Linearity.</strong> $\int_a^b (cf + g) = c \int_a^b f + \int_a^b g$.</p>

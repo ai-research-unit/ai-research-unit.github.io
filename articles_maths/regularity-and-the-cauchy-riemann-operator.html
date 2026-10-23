@@ -186,7 +186,7 @@ $$</p>
 <p>using $\Delta|x|^2 = 2m$ and Euler's identity $\sum_j x_j\partial/\partial x_j\,Q = (k-2)Q$. Write $T = \lambda\,\mathrm{id} + |x|^2\Delta$ with $\lambda = 2m + 4(k-2) > 0$. Since $\Delta$ lowers degree by two, the operator $|x|^2\Delta$ satisfies $(|x|^2\Delta)^r = |x|^{2r}\Delta^r$, which is zero as soon as $2r > k-2$; hence $|x|^2\Delta$ is nilpotent on $\mathcal{P}_{k-2}$ and $T$ is invertible, with inverse a finite geometric series in $|x|^2\Delta$. For any $R \in \mathcal{P}_{k-2}$ the element $P = |x|^2T^{-1}R$ therefore satisfies $\Delta P = T T^{-1}R = R$, so $\Delta$ is surjective. Moreover $|x|^2Q \in \mathcal{H}_k$ forces $TQ = 0$, hence $Q = 0$, so the image meets $\mathcal{H}_k$ trivially.</p>
 <p><strong>Theorem (Fischer decomposition; the Stokes decomposition).</strong> For every $k \geq 0$,</p>
 <p>$$
-\mathcal{P}_k = \mathcal{H}_k \oplus |x|^2\mathcal{P}_{k-2} = \bigoplus_{j \geq 0}|x|^{2j}\mathcal{H}_{k-2j},
+\boxed{\;\mathcal{P}_k = \mathcal{H}_k \oplus |x|^2\mathcal{P}_{k-2} = \bigoplus_{j \geq 0}|x|^{2j}\mathcal{H}_{k-2j}\;},
 $$</p>
 <p>and the expansion $P = \sum_j |x|^{2j}h_j$ with $h_j \in \mathcal{H}_{k-2j}$ is unique. In particular every $A$-valued polynomial on $A$ has a unique expansion as a sum of harmonic layers in the radial direction.</p>
 <p><em>Proof.</em> By the lemma, $\Delta : \mathcal{P}_k \to \mathcal{P}_{k-2}$ is surjective with kernel $\mathcal{H}_k$, so $\dim\mathcal{H}_k = \dim\mathcal{P}_k - \dim\mathcal{P}_{k-2}$; the image $|x|^2\mathcal{P}_{k-2}$ has dimension $\dim\mathcal{P}_{k-2}$ and meets $\mathcal{H}_k$ trivially, so the two summands are complementary and $\mathcal{P}_k = \mathcal{H}_k \oplus |x|^2\mathcal{P}_{k-2}$. Applying the same statement to $\mathcal{P}_{k-2}, \mathcal{P}_{k-4}, \dots$ gives the iterated form.</p>
@@ -209,7 +209,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (Cauchy–Goursat).</strong> Let $f$ be left regular and of class $C^1$ on a bounded domain $\Omega$ with smooth boundary. Then</p>
 <p>$$
-\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0.
+\boxed{\;\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0\;}.
 $$</p>
 <p><em>Proof.</em> The divergence theorem applied to the vector field with components $B_\alpha f$ on $\Omega$ gives</p>
 <p>$$
@@ -224,7 +224,7 @@ $$</p>
 <p><em>Proof.</em> Since $D\bar D = \Delta$ and the coefficients are constant, $D E = D\bar D \Phi = \Delta \Phi = \delta_0$, the operators acting on distributions by differentiation.</p>
 <p><strong>Theorem (Cauchy–Pompeiu, derived from the divergence theorem).</strong> Let $E$ be a fundamental solution of $D$ as above and let $\Omega \subseteq A$ be a bounded domain with smooth boundary. Then for $f$ of class $C^1$ on $\bar\Omega$ and $x \in \Omega$,</p>
 <p>$$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_{\Omega} E(x-y)\,(Df)(y)\,dy,
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_{\Omega} E(x-y)\,(Df)(y)\,dy\;},
 $$</p>
 <p>with the normalisation of $E$ chosen so that the signs are as displayed.</p>
 <p><em>Proof (outline).</em> Fix $x \in \Omega$ and apply the divergence theorem to the vector field with components $B_\alpha\,E(x-\cdot)f$ on the punctured domain $\Omega \setminus \overline{B(x,\epsilon)}$. The divergence is</p>

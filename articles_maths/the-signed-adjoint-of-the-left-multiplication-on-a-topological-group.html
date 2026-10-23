@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
 <p><strong>Theorem (the explicit form of the adjoint).</strong> With respect to the signed form $B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$,</p>
 <p>$$
-\Lambda_a^\dagger = \Lambda_{a^{-1}} , \qquad \bigl(\Lambda^{\mathrm{R}}_b\bigr)^\dagger = \Lambda^{\mathrm{R}}_{b^{-1}} ,
+\boxed{\;\Lambda_a^\dagger = \Lambda_{a^{-1}} , \qquad \bigl(\Lambda^{\mathrm{R}}_b\bigr)^\dagger = \Lambda^{\mathrm{R}}_{b^{-1}}\;} ,
 $$</p>
 <p>so the adjoint of the one-sided signed operator is the one-sided signed operator of the inverse, and the adjoint operation is an involution on each of the two signed families.</p>
 <p><strong>Proof.</strong> $\Lambda_a = L_aA$, so $\Lambda_a^\dagger = A^\dagger L_a^\dagger = A\,L_{\sigma(a)}$ by the adjoints of the elementary operators. Applying this to $u$ gives $A(\sigma(a)u) = \alpha(\sigma(a))\,\alpha(u)$. Since $\alpha$ and $\iota$ commute, $\alpha\sigma = \alpha\iota\alpha = \iota\alpha^2 = \iota$, so $\alpha\sigma(a) = a^{-1}$, and the operator is $u\mapsto a^{-1}\alpha(u) = \Lambda_{a^{-1}}(u)$. The computation for the signed right multiplication is the mirror image, and the double adjoint is immediate from $\sigma^2 = \mathrm{id}$.</p>
@@ -89,9 +89,9 @@ $$</p>
 <h2 id="self-adjointness-and-unitarity">Self-Adjointness and Unitarity</h2>
 <p><strong>Theorem (the three conditions).</strong> The signed left multiplication satisfies</p>
 <p>$$
-\Lambda_a \text{ is self-adjoint} \iff a^2 = e , \qquad
+\boxed{\;\Lambda_a \text{ is self-adjoint} \iff a^2 = e , \qquad
 \Lambda_a \text{ is unitary} \iff a \in G^\alpha = H , \qquad
-\Lambda_a \text{ is an involution} \iff a \in I(\alpha) = G^\sigma .
+\Lambda_a \text{ is an involution} \iff a \in I(\alpha) = G^\sigma\;} .
 $$</p>
 <p>It is simultaneously unitary and self-adjoint exactly for the elements of order two in the fixed subgroup, which are the elements of $G^\alpha \cap G^\sigma$, and for those elements it is an orthogonal involution.</p>
 <p><strong>Proof.</strong> Self-adjointness: $\Lambda_a^\dagger = \Lambda_{a^{-1}}$ equals $\Lambda_a = L_aA$ exactly when $L_{a^{-1}} = L_a$, that is $a^{-1} = a$, so $a^2 = e$. Unitarity: $\Lambda_a^\dagger\Lambda_a = \Lambda_{a^{-1}}\Lambda_a = L_{a^{-1}}A\,L_aA = L_{a^{-1}}L_{\alpha(a)}A^2 = L_{a^{-1}\alpha(a)}$, which is the identity exactly when $\alpha(a) = a$, that is $a\in G^\alpha$; the other order gives $L_{a\alpha(a)^{-1}}$, with the same conclusion. Involution: $\Lambda_a^2 = L_{a\alpha(a)}$ by the composition law, which is the identity exactly when $\alpha(a) = a^{-1}$, that is $a \in I(\alpha) = G^\sigma$. The intersection of the two sets is the set of $a$ with $\alpha(a) = a$ and $\alpha(a) = a^{-1}$, hence $a^2 = e$; for such an element the operator is unitary and an involution, and an involution that is unitary is self-adjoint.</p>
@@ -106,7 +106,7 @@ $$</p>
 $$</p>
 <p>and its adjoint is assembled from the one-sided adjoints:</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = R_{b^{-1}}\circ\Lambda_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},b^{-1}} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = R_{b^{-1}}\circ\Lambda_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},b^{-1}}\;} .
 $$</p>
 <p><strong>Proof.</strong> $L_a\Lambda^{\mathrm{R}}_b(u) = L_a(\alpha(u)b) = a\alpha(u)b$ and $\Lambda_aR_{\alpha(b)}(u) = a\alpha(u\alpha(b)) = a\alpha(u)\alpha^2(b) = a\alpha(u)b$. For the adjoint, $(\Sigma^\alpha_{a,b})^\dagger = (\Lambda_aR_{\alpha(b)})^\dagger = R_{\alpha(b)}^\dagger\Lambda_a^\dagger = R_{\sigma\alpha(b)}\Lambda_{a^{-1}}$, and $\sigma\alpha = \sigma(\sigma\iota) = \iota$, so $\sigma\alpha(b) = b^{-1}$ and the adjoint is $R_{b^{-1}}\Lambda_{a^{-1}}(u) = a^{-1}\alpha(u)b^{-1} = \Sigma^\alpha_{a^{-1},b^{-1}}(u)$, consistently with <em>The Signed Adjoint Sandwich on a Topological Group</em>.</p>
 <p><strong>Corollary (the sandwich from a unitary one-sided operator).</strong> If $a\in H$ then $\Lambda_a$ is unitary and the signed sandwich $\Sigma^{\alpha}_{a,e} = \Lambda_a$ is unitary; more generally $\Sigma^{\alpha}_{a,b}$ is unitary for all $a\in H$ and all $b$ with $\alpha(b)b^{-1} = e$, that is for $b\in H$, recovering the fixed-subgroup criterion of <em>The Signed Adjoint Sandwich on a Topological Group</em> from the one-sided one.</p>

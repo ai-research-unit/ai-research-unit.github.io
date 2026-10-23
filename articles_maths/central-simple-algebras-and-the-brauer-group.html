@@ -105,7 +105,7 @@ $$</p>
 <p><em>Pro.</em> The algebra $A$ is simple and finite-dimensional, so by the Wedderburn–Artin theorem it is $M_n(D)$ for a division algebra $D$; the centre of $M_n(D)$ is the centre of $D$, computed, so centrality of $A$ makes $D$ central over $F$. Uniqueness follows because $D$ is recovered as $\operatorname{End}_A(V)^{\mathrm{opp}}$ for the unique simple module $V$, and the simple module is unique because $A$ is simple.</p>
 <p>The theorem reduces the classification of central simple algebras to the classification of central division algebras together with the integer $n$. The division algebra $D$ is called the <strong>division algebra part</strong> of $A$, and</p>
 <p>$$
-\deg(A) = n \sqrt{\dim_F D}, \qquad \operatorname{ind}(A) := \sqrt{\dim_F D}
+\boxed{\;\deg(A) = n \sqrt{\dim_F D}, \qquad \operatorname{ind}(A) := \sqrt{\dim_F D}\;}
 $$</p>
 <p>defines the <strong>index</strong> of $A$. The index is a positive integer, $\deg(A) = n \cdot \operatorname{ind}(A)$, and $\operatorname{ind}(A) = 1$ exactly when $A$ is a matrix algebra over $F$, in which case $A$ is called <strong>split</strong>.</p>
 <h3 id="skolemnoether-and-inner-automorphisms">Skolem–Noether and inner automorphisms</h3>
@@ -155,7 +155,7 @@ $$</p>
 <h3 id="the-group-law">The group law</h3>
 <p><strong>Theorem (the Brauer group).</strong> The set of similarity classes of central simple $F$-algebras, with product</p>
 <p>$$
-[A] \cdot [B] := [A \otimes_F B]
+\boxed{\;[A] \cdot [B] := [A \otimes_F B]\;}
 $$</p>
 <p>and identity the class of $F$, is an abelian group, the <strong>Brauer group</strong> $\operatorname{Br}(F)$. The inverse of $[A]$ is $[A^{\mathrm{opp}}]$, and every element has finite order.</p>
 <p><em>Proof.</em> The product is well defined by the lemma, associative and commutative because the tensor product of algebras is associative and commutative up to canonical isomorphism, and unital because $A \otimes_F F \cong A$. The class of $A^{\mathrm{opp}}$ is inverse to that of $A$ by the isomorphism $A \otimes_F A^{\mathrm{opp}} \cong M_{d^2}(F)$ above. Finiteness of the order is the theorem of the next subsection: the order of $[A]$ is the exponent, and it divides the index, which is finite.</p>
@@ -230,7 +230,7 @@ $$</p>
 <h3 id="number-fields-and-local-fields">Number fields and local fields</h3>
 <p><strong>Theorem (Hasse–Brauer–Noether, standard).</strong> Let $F$ be a number field with places $v$, and for a finite-dimensional central division algebra $D$ over $F$ let $\operatorname{inv}_v(D) \in \mathbb{Q}/\mathbb{Z}$ be its Hasse invariant at $v$, which is zero for all but finitely many $v$. Then the map</p>
 <p>$$
-\operatorname{Br}(F) \longrightarrow \bigoplus_v \mathbb{Q}/\mathbb{Z}, \qquad [D] \longmapsto (\operatorname{inv}_v(D))_v
+\boxed{\;\operatorname{Br}(F) \longrightarrow \bigoplus_v \mathbb{Q}/\mathbb{Z}, \qquad [D] \longmapsto (\operatorname{inv}_v(D))_v\;}
 $$</p>
 <p>is an isomorphism onto the subgroup of the direct sum consisting of the families whose sum is $0$ in $\mathbb{Q}/\mathbb{Z}$, and the index of $[D]$ is the order of the corresponding element of $\mathbb{Q}/\mathbb{Z}$ at any place with nonzero invariant.</p>
 <p>This is the reciprocity law of class field theory, and it belongs to the article <em>Class Field Theory</em>; it is recorded here because it computes the Brauer group of a number field completely and shows that it is infinite, with $\operatorname{Br}(\mathbb{Q}) \cong \bigoplus_p \mathbb{Q}/\mathbb{Z} / \text{(the global relation)}$. For a non-Archimedean local field $F$ the same construction gives $\operatorname{Br}(F) \cong \mathbb{Q}/\mathbb{Z}$, the invariant of a cyclic algebra being $1/n$ for a degree-$n$ unramified cyclic algebra, and for $\mathbb{R}$ it gives $\operatorname{Br}(\mathbb{R}) \cong \frac{1}{2}\mathbb{Z}/\mathbb{Z} \subseteq \mathbb{Q}/\mathbb{Z}$. The local invariant map is additive, so tensor products correspond to sums of invariants, and the global isomorphism is the statement that a central simple algebra over a number field is determined by its local invariants subject to the single reciprocity relation.</p>

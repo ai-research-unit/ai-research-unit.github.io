@@ -82,7 +82,7 @@
 $$</p>
 <p><strong>Proposition.</strong> For all $x, y$ and all $\lambda \in R$,</p>
 <p>$$
-[x,y]_{\varsigma} = -[y,x]_{\varsigma} , \qquad [\lambda x, y]_{\varsigma} = \lambda [x,y]_{\varsigma} + \bigl(\lambda - \varsigma(\lambda)\bigr)(y \star x) ,
+\boxed{\;[x,y]_{\varsigma} = -[y,x]_{\varsigma} , \qquad [\lambda x, y]_{\varsigma} = \lambda [x,y]_{\varsigma} + \bigl(\lambda - \varsigma(\lambda)\bigr)(y \star x)\;} ,
 $$</p>
 <p>and consequently the bracket is linear over the fixed ring $R^{\varsigma}$ in each variable, and linear over all of $R$ exactly in the degenerate case $(\varsigma(\lambda) - \lambda)A = 0$ for every $\lambda$, the case in which the product of $A$ is bilinear.</p>
 <p><strong>Proof.</strong> Antisymmetry is the antisymmetry of the subtraction. For the scalar rule, $(\lambda x) \star y = \lambda(x \star y)$ by the first scalar rule of <em>Sesqualgebras</em> and $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$ by the second, so</p>
@@ -99,7 +99,7 @@ $$</p>
 <h3 id="the-failure-of-the-jacobi-identity">The Failure of the Jacobi Identity</h3>
 <p><strong>Theorem.</strong> The Jacobi identity for the antisymmetrisation of the derived sesquilinear product fails in general. In $A = M_{2}(\mathbb{C})$ with the conjugate transpose, for $x = E_{11}$, $y = E_{22}$ and $z = E_{12}$,</p>
 <p>$$
-[[x,y]_{\varsigma}, z]_{\varsigma} + [[y,z]_{\varsigma}, x]_{\varsigma} + [[z,x]_{\varsigma}, y]_{\varsigma} = E_{21} - E_{12} \neq 0 .
+\boxed{\;[[x,y]_{\varsigma}, z]_{\varsigma} + [[y,z]_{\varsigma}, x]_{\varsigma} + [[z,x]_{\varsigma}, y]_{\varsigma} = E_{21} - E_{12} \neq 0\;} .
 $$</p>
 <p><strong>Proof.</strong> The three inner brackets are</p>
 <p>$$
@@ -139,7 +139,7 @@ $$</p>
 <h3 id="the-graded-structure">The Graded Structure</h3>
 <p><strong>Theorem (the commutator is graded by the involution).</strong> Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $H(A)$ and $S(A)$ be the Hermitian and the skew-Hermitian elements. Then</p>
 <p>$$
-[S,S] \subseteq S , \qquad [S,H] \subseteq H , \qquad [H,H] \subseteq S ,
+\boxed{\;[S,S] \subseteq S , \qquad [S,H] \subseteq H , \qquad [H,H] \subseteq S\;} ,
 $$</p>
 <p>so that $A$, as a Lie algebra over $R$ under the commutator, is <strong>$\mathbb{Z}/2$-graded</strong> with even part $S(A)$ and odd part $H(A)$, the degree of an element being $1$ on $H(A)$ and $0$ on $S(A)$. Moreover $[x,y]^{*} = -[x^{*},y^{*}]$: the involution reverses the commutator, so it is not an automorphism of the Lie algebra but a graded anti-automorphism, and the negation is a central correction.</p>
 <p><strong>Proof.</strong> For $s, t \in S(A)$ one has $(st - ts)^{*} = t^{*}s^{*} - s^{*}t^{*} = (-t)(-s) - (-s)(-t) = ts - st$, so $[s,t] \in S(A)$; for $s \in S(A)$ and $h \in H(A)$, $[s,h]^{*} = (sh - hs)^{*} = h^{*}s^{*} - s^{*}h^{*} = h(-s) - (-s)h = sh - hs$, so $[s,h] \in H(A)$; for $h_1, h_2 \in H(A)$, $[h_1,h_2]^{*} = h_2h_1 - h_1h_2 = -[h_1,h_2]$, so $[h_1,h_2] \in S(A)$. The last identity is the same computation read for arbitrary $x, y$. The gradings are the parity of the degrees under the rule that the degree of $[x,y]$ is the sum of the degrees: $0+0 = 0$, $0+1 = 1$ and $1+1 = 0$ in $\mathbb{Z}/2$.</p>

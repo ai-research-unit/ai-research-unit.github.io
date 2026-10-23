@@ -86,7 +86,9 @@ $$</p>
 <h2 id="the-spectrum-as-the-union-of-the-two-coordinate-spectra">The Spectrum as the Union of the Two Coordinate Spectra</h2>
 <p><strong>Theorem (the spectrum is the union of the two coordinate spectra).</strong>
 $$
-\sigma(A)=\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\sigma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\sigma(A_{(2)})\bigr\}.
+\boxed{\;
+\sigma(A)=\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\sigma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\sigma(A_{(2)})\bigr\}
+\;}.
 $$</p>
 <p><em>Proof.</em> If $\lambda$ is an eigenvalue with eigentensor $X$, then $X\neq0$, so at least one coordinate $X_{(i)}$ is nonzero, and the coordinate equation of the reduction makes $\lambda_{(i)}$ an eigenvalue of $A_{(i)}$. Conversely, if $\lambda_{(1)}\in\sigma(A_{(1)})$ with eigentensor $Y\neq0$, the tensor $X=Y\Pi_+$ is nonzero and $AX=\lambda X$ for every $\lambda_{(2)}$, because the second coordinate of $X$ vanishes; symmetrically for the second coordinate.</p>
 <p><strong>Corollary (the source's pairing theorem).</strong> An eigenvalue $\lambda$ has an eigentensor with both coordinates nonzero if and only if $\lambda_{(1)}\in\sigma(A_{(1)})$ and $\lambda_{(2)}\in\sigma(A_{(2)})$. The source writes the two complex tensors $B_{1}$ and $B_{2}$; they are $A_{(1)}$ and $A_{(2)}$ here.</p>
@@ -104,7 +106,9 @@ $$</p>
 <p><em>Proof.</em> Let $MX=zX$ with $X\neq0$ and choose $Q$ with $\lvert x_{Q}\rvert\ge\lvert x_{L}\rvert$ for every $L$. The $Q$-th entry of $MX=zX$ reads $(z-m_{QQ})x_{Q}=\sum_{L\neq Q}m_{QL}x_{L}$; taking moduli, dividing by $\lvert x_{Q}\rvert>0$ and bounding $\lvert x_{L}\rvert\le\lvert x_{Q}\rvert$ gives $\lvert z-m_{QQ}\rvert\le\sum_{L\neq Q}\lvert m_{QL}\rvert$.</p>
 <p><strong>Theorem (the Gershgorin theorem for reduced biquaternion tensors).</strong>
 $$
-\sigma(A)\subseteq\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\Gamma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\Gamma(A_{(2)})\bigr\}.
+\boxed{\;
+\sigma(A)\subseteq\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\Gamma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\Gamma(A_{(2)})\bigr\}
+\;}.
 $$</p>
 <p><em>Proof.</em> Let $\lambda$ be an eigenvalue with eigentensor $X$. Some coordinate $X_{(i)}$ is nonzero, and the coordinate reduction makes $\lambda_{(i)}$ an eigenvalue of $A_{(i)}$; the complex lemma gives $\lambda_{(i)}\in\Gamma(A_{(i)})$, and the conclusion follows.</p>
 <p><strong>Remark (the modulus of the source).</strong> The source equips an element $\lambda$ with the modulus
@@ -121,7 +125,9 @@ $$</p>
 <p><em>Proof.</em> By induction $A^{n}X=\lambda^{n}X$, and $A^{n}=a\mathrm I$ gives $\lambda^{n}X=aX$. In the coordinate $i$ with $X_{(i)}\neq0$ this is $(\lambda_{(i)}^{n}-a_{(i)})X_{(i)}=0$, and $X_{(i)}$ has a nonzero entry, so $\lambda_{(i)}^{n}=a_{(i)}$. The inclusion follows because some coordinate of $X$ is nonzero.</p>
 <p><strong>Corollary (the roots).</strong> With $a$ a unit, so that $a_{(1)},a_{(2)}\neq0$, and $a_{(k)}=r_{k}e^{i\theta_{k}}$, $0\le\theta_{k}<2\pi$, the roots of $\lambda^{n}=a$ are
 $$
-\lambda_{s,t}=(\sqrt[n]{a_{(1)}})_{s}\Pi_++(\sqrt[n]{a_{(2)}})_{t}\Pi_-,\qquad (\sqrt[n]{z})_{s}=r^{1/n}e^{i(\theta+2\pi s)/n},
+\boxed{\;
+\lambda_{s,t}=(\sqrt[n]{a_{(1)}})_{s}\Pi_++(\sqrt[n]{a_{(2)}})_{t}\Pi_-,\qquad (\sqrt[n]{z})_{s}=r^{1/n}e^{i(\theta+2\pi s)/n}
+\;},
 $$
 with $s,t=0,\dots,n-1$.</p>
 <p><em>Proof.</em> The equation $\lambda^{n}=a$ is the pair of the two coordinate equations $\lambda_{(i)}^{n}=a_{(i)}$, and the $n$-th roots of a nonzero complex number are the displayed $n$ values.</p>

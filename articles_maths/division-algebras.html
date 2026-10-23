@@ -83,7 +83,7 @@
 <h2 id="finite-dimensional-division-algebras-over-math63-frobenius">Finite-Dimensional Division Algebras over $\mathbb{R}$: Frobenius</h2>
 <p><strong>Theorem (Frobenius, standard).</strong> Every finite-dimensional associative division algebra over $\mathbb{R}$ is isomorphic to one of</p>
 <p>$$
-\mathbb{R}, \qquad \mathbb{C}, \qquad \mathbb{H}.
+\boxed{\;\mathbb{R}, \qquad \mathbb{C}, \qquad \mathbb{H}\;}.
 $$</p>
 <p><em>Proof (outline).</em> Let $D$ be such an algebra, of dimension $n$ over $\mathbb{R}$, and let $Z$ be its centre.</p>
 <p>If $D$ is commutative, then $D$ is a field extension of $\mathbb{R}$ of finite degree $n$. Every element of $D$ has a minimal polynomial over $\mathbb{R}$, which is irreducible because $D$ is a field; over $\mathbb{R}$ the irreducible polynomials have degree $1$ or $2$, since every real polynomial of odd degree has a real root. Hence $n \leq 2$ and $D$ is $\mathbb{R}$ or $\mathbb{C}$.</p>
@@ -137,7 +137,7 @@ $$</p>
 <p>The structure theory says that the simple algebras are the matrix algebras over division algebras; the next question is how rigid their embeddings are, and the answer is that they are as rigid as possible.</p>
 <p><strong>Theorem (Skolem–Noether, standard).</strong> Let $k$ be a field, let $A$ be a finite-dimensional central simple $k$-algebra, let $B$ be a finite-dimensional simple $k$-subalgebra of $A$, and let $f, g : B \to A$ be two unital $k$-algebra homomorphisms. Then there is a unit $a \in A^\times$ with</p>
 <p>$$
-g(b) = a\,f(b)\,a^{-1} \qquad \text{for all } b \in B .
+\boxed{\;g(b) = a\,f(b)\,a^{-1} \qquad \text{for all } b \in B\;} .
 $$</p>
 <p><em>Proof (sketch).</em> Write $L = Z(B)$ for the centre of $B$. The tensor product $B \otimes_k A^{\mathrm{opp}}$ is a finite-dimensional simple ring: it is $B \otimes_L (L \otimes_k A^{\mathrm{opp}})$ by the base-change identity $B\otimes_k M \cong B \otimes_L (L \otimes_k M)$, the algebra $L \otimes_k A^{\mathrm{opp}}$ is central simple over $L$ because $A^{\mathrm{opp}}$ is central simple over $k$, and $B$ is central simple over $L$; a tensor product of central simple algebras being central simple, $B \otimes_k A^{\mathrm{opp}}$ is central simple over $L$, hence simple as a ring. Such an algebra has a unique simple module up to isomorphism, because Wedderburn–Artin writes it as $M_n(D)$ for a division algebra $D$ and the unique simple module of $M_n(D)$ is $D^n$. Now $A$ carries two $B \otimes_k A^{\mathrm{opp}}$-module structures,</p>
 <p>$$
@@ -150,7 +150,7 @@ $$</p>
 <p>whence $g(b)a = af(b)$, that is $g(b) = a f(b)a^{-1}$.</p>
 <p><strong>Corollary (every automorphism of a central simple algebra is inner).</strong> For a finite-dimensional central simple $k$-algebra $A$ the map $A^\times \to \operatorname{Aut}_k(A)$, $a \mapsto (x \mapsto axa^{-1})$, is surjective with kernel $k^\times$, so</p>
 <p>$$
-\operatorname{Aut}_k(A) \cong A^\times/k^\times .
+\boxed{\;\operatorname{Aut}_k(A) \cong A^\times/k^\times\;} .
 $$</p>
 <p>For $A = M_n(k)$ this is the projective general linear group $\mathrm{PGL}_n(k) = \mathrm{GL}_n(k)/k^\times$; for $A = M_n(D)$ with $D$ a division algebra it is $\mathrm{PGL}_n(D) = \mathrm{GL}_n(D)/k^\times$, where $\mathrm{GL}_n(D) = M_n(D)^\times$, and in each case the derivations of $A$ are the inner ones, $\delta = \operatorname{ad}_h$, as in <em>Automorphisms and Derivations of Algebras</em>.</p>
 <p><strong>Example (the quaternions, and why centrality is needed).</strong> For $A = \mathbb{H}$ over $\mathbb{R}$ the corollary gives $\operatorname{Aut}_\mathbb{R}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times \cong SU(2)/\{\pm1\} \cong SO(3)$, in agreement with the computation of that automorphism group in <em>Automorphisms and Derivations of Algebras</em>. The algebra $\mathbb{C}$ viewed over $\mathbb{R}$ is simple but <strong>not</strong> central, its centre being $\mathbb{C}$ itself, and the conclusion fails there: complex conjugation is an $\mathbb{R}$-automorphism of $\mathbb{C}$ that is not inner, and indeed every inner automorphism of the commutative algebra $\mathbb{C}$ is trivial. Centrality is thus exactly what the theorem needs, and the example shows it cannot be dropped.</p>

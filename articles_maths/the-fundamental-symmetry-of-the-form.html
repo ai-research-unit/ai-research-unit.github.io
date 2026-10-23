@@ -102,7 +102,7 @@ J^{2} = \mathrm{id}, \qquad J = 2P^{+}-\mathrm{id} = \mathrm{id}-2P^{-} ,
 $$</p>
 <p>the subspaces $A^{+}, A^{-}$ are the eigenspaces of $J$ for the eigenvalues $+1$ and $-1$, the companion form is positive definite and Hermitian, $J$ is self-adjoint for the companion, $\langle Jx,y\rangle = \langle x,Jy\rangle$, and</p>
 <p>$$
-h(x,y) = \langle Jx,y \rangle , \qquad \langle x,y \rangle = h(Jx,y) \qquad \text{for all } x, y \in A .
+\boxed{\;h(x,y) = \langle Jx,y \rangle , \qquad \langle x,y \rangle = h(Jx,y) \qquad \text{for all } x, y \in A\;} .
 $$</p>
 <p>Moreover $J$ is an isometry of both forms,</p>
 <p>$$
@@ -128,7 +128,7 @@ $$</p>
 <p><em>Proof.</em> The bridge $h(x,y) = \langle Jx,y\rangle$ in matrix form is $x^{T}H\varsigma(y) = (Jx)^{T}G\varsigma(y) = x^{T}J^{T}G\varsigma(y)$ for all $x,y$, whence $H = J^{T}G$; the case $G=I$ gives $J=H^{T}=\varsigma(H)$, which is $H$ when $H$ is symmetric.</p>
 <p><strong>Theorem (the canonical symmetry).</strong> Let the form be nondegenerate with Gram matrix $H$ Hermitian and invertible over $R$, and let the companion be the one whose Gram matrix is the <strong>modulus</strong> $|H| = (H^{2})^{1/2}$, the positive definite square root of $H^{2}$. Then the companion has the fundamental symmetry $J$ determined by</p>
 <p>$$
-J^{T} = H\,|H|^{-1} = H\,(H^{2})^{-1/2} , \qquad \text{that is} \qquad J = \varsigma\bigl(H(H^{2})^{-1/2}\bigr) ,
+\boxed{\;J^{T} = H\,|H|^{-1} = H\,(H^{2})^{-1/2} , \qquad \text{that is} \qquad J = \varsigma\bigl(H(H^{2})^{-1/2}\bigr)\;} ,
 $$</p>
 <p>which satisfies $J^{2} = \mathrm{id}$, $J^{T} = \varsigma(J)$, and $h(x,y) = \langle Jx,y\rangle$ for the companion of Gram matrix $|H|$. When $H$ is symmetric — in particular in the bilinear layer, where $\varsigma = \mathrm{id}$ — its transpose is itself and the formula is the classical $J = H(H^{2})^{-1/2} = \operatorname{sign}(H)$; in the general sesquilinear case the transpose on the left is essential, because the bridge reads $H = J^{T}|H|$ in the Gram matrices.</p>
 <p><em>Proof.</em> The matrix $H$ is Hermitian, so $H^{2}$ is Hermitian positive definite and $|H| = (H^{2})^{1/2}$ is Hermitian positive definite and a function of $H$; the product $H|H|^{-1}$ commutes with $|H|$ and has square $\mathrm{id}$, so the matrix $J$ with $J^{T} = H|H|^{-1}$ satisfies $J^{2} = \mathrm{id}$ after transposing, and it is Hermitian, $J^{T} = \varsigma(J)$, because $H|H|^{-1}$ is. The bridge is the identity $H = J^{T}|H|$ read on the vectors, $\langle Jx,y\rangle = x^{T}J^{T}|H|\varsigma(y) = x^{T}H\varsigma(y) = h(x,y)$, by the definition of $J^{T}$.</p>
@@ -140,7 +140,7 @@ $$</p>
 $$</p>
 <p>Then</p>
 <p>$$
-T^{\dagger} = J\,T^{*}\,J ,
+\boxed{\;T^{\dagger} = J\,T^{*}\,J\;} ,
 $$</p>
 <p>and consequently $T$ is $h$-self-adjoint, $T^{\dagger}=T$, if and only if $JT$ is self-adjoint for the companion; $T$ is $h$-unitary, $T^{\dagger}T=TT^{\dagger}=\mathrm{id}$, if and only if $T$ is a $J$-unitary operator, $T^{*}JT = J$; and $T$ is an $h$-isometry, $T^{\dagger}T=\mathrm{id}$, if and only if $T^{*}JT = J$.</p>
 <p><em>Proof.</em> For the first identity, $h(Tx,y) = \langle JTx,y\rangle = \langle x,(JT)^{*}y\rangle$ and $h(x,T^{\dagger}y) = \langle Jx,T^{\dagger}y\rangle = \langle x,JT^{\dagger}y\rangle$, the last step by the self-adjointness of $J$ for the companion; the two are equal for all $x$ when $(JT)^{*} = JT^{\dagger}$, that is $T^{\dagger} = J T^{*} J$, since $J^{*}=J$ and $J^{2}=\mathrm{id}$. For the criteria, $T^{\dagger}T = \mathrm{id}$ reads $JT^{*}JT=\mathrm{id}$, that is $T^{*}JT=J$ after applying $J$ on the left; the unitary case is the same identity together with its companion $TT^{\dagger}=\mathrm{id}$, and the self-adjoint case is $T=JT^{*}J$, that is $(JT)^{*}=JT$.</p>

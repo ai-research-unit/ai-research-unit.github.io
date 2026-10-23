@@ -96,13 +96,13 @@ $$</p>
 <p>The direct sum is a graded algebra under the product induced by that of $\mathrm{Cl}(V,\mathfrak{Q})$: for $x\in F_j$ and $y\in F_l$ the class of $xy$ in $\operatorname{gr}_{j+l}$ depends only on the classes of $x$ and of $y$, because a change of either representative by an element of $F_{j-1}$ or $F_{l-1}$ changes $xy$ by an element of $F_{j+l-1}$.</p>
 <p><strong>Proposition.</strong> The induced product on $\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})$ is associative and graded-commutative, with</p>
 <p>$$
-\bar x\,\bar y=(-1)^{jl}\,\bar y\,\bar x \qquad (\bar x\in\operatorname{gr}_j,\ \bar y\in\operatorname{gr}_l).
+\boxed{\;\bar x\,\bar y=(-1)^{jl}\,\bar y\,\bar x \qquad (\bar x\in\operatorname{gr}_j,\ \bar y\in\operatorname{gr}_l)\;}.
 $$</p>
 <p><strong>Proof.</strong> Associativity is inherited from the associativity of the product of $\mathrm{Cl}(V,\mathfrak{Q})$. For the sign, $xy$ and $yx$ differ by $(xy-yx)$, which for $x$ a product of $j$ vectors and $y$ a product of $l$ vectors lies in $F_{j+l-2}$ by repeated application of $uv=-vu+2B(u,v)$; hence $xy-yx$ is of filtration at most $j+l-2$, and only its class in $\operatorname{gr}$ matters, so $\bar x\bar y=(-1)^{jl}\bar y\bar x$.</p>
 <h3 id="the-theorem-of-poincarebirkhoffwitt">The Theorem of Poincaré–Birkhoff–Witt</h3>
 <p><strong>Theorem.</strong> For every quadratic form $m$ the linear map</p>
 <p>$$
-\Lambda^kV\longrightarrow\operatorname{gr}_k\mathrm{Cl}(V,\mathfrak{Q}), \qquad v_1\wedge v_2\wedge\cdots\wedge v_k\longmapsto\overline{v_1v_2\cdots v_k},
+\boxed{\;\Lambda^kV\longrightarrow\operatorname{gr}_k\mathrm{Cl}(V,\mathfrak{Q}), \qquad v_1\wedge v_2\wedge\cdots\wedge v_k\longmapsto\overline{v_1v_2\cdots v_k}\;},
 $$</p>
 <p>is an isomorphism, and it is an isomorphism of graded algebras from the exterior algebra $\Lambda(V)$ with its wedge product onto $\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})$.</p>
 <p><strong>Proof of well-definedness.</strong> The multilinear map $V^k\to\operatorname{gr}_k$ sending $(v_1,\ldots,v_k)$ to the class of $v_1\cdots v_k$ is alternating: exchanging two adjacent factors changes the product by $2B(v_i,v_{i+1})v_1\cdots\hat v_i\hat v_{i+1}\cdots v_k$, an element of $F_{k-2}\subseteq F_{k-1}$, so the two classes in $\operatorname{gr}_k$ agree up to the sign of the transposition. An alternating multilinear map factors through $\Lambda^kV$. Surjectivity holds because the classes of the products of exactly $k$ vectors span $\operatorname{gr}_k$ by the definition of $F_k$.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p>If $m$ is non-degenerate the grade decomposition of <em>The Geometric Product and the Grade Decomposition</em> gives a second description of the filtration.</p>
 <p><strong>Proposition.</strong> For $m$ non-degenerate and $k\ge0$,</p>
 <p>$$
-F_k=\mathrm{Cl}_0(V,\mathfrak{Q})\oplus\mathrm{Cl}_1(V,\mathfrak{Q})\oplus\cdots\oplus\mathrm{Cl}_k(V,\mathfrak{Q}),
+\boxed{\;F_k=\mathrm{Cl}_0(V,\mathfrak{Q})\oplus\mathrm{Cl}_1(V,\mathfrak{Q})\oplus\cdots\oplus\mathrm{Cl}_k(V,\mathfrak{Q})\;},
 $$</p>
 <p>the sum of the graded pieces of grade at most $k$. Hence $\operatorname{gr}_k\mathrm{Cl}(V,\mathfrak{Q})\cong\mathrm{Cl}_k(V,\mathfrak{Q})$ canonically, and the filtration is the <strong>cumulative</strong> filtration of the grading.</p>
 <p><strong>Proof.</strong> Every monomial $e_{i_1}\cdots e_{i_j}$ with $j\le k$ lies in $\mathrm{Cl}_j$, and every $j$-vector with $j\le k$ is a combination of such monomials, so the two sides have the same spanning set; conversely an element of $\mathrm{Cl}_j$ with $j>k$ is not a combination of monomials of length at most $k$, by the independence of the monomials.</p>

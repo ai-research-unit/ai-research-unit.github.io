@@ -78,25 +78,19 @@
 \mathrm{U}(\mathbb{B})=\{\tilde{U}\in\mathbb{B}:\tilde{U}^{*}\tilde{U}=e_t\}.
 $$</p>
 <p><strong>Theorem ($\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$).</strong> $\mathsf{M}_2$ restricts to an isomorphism of groups $\mathsf{M}_2:\mathrm{U}(\mathbb{B})\to \mathrm{U}(2)$. In particular $\mathrm{U}(\mathbb{B})$ is a compact Lie group of real dimension four, and its elements are exactly the biquaternions of the form</p>
-<p>$$
-\tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1,
-$$</p>
+<p>$$ \tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1, $$</p>
 <p>that is, scalar multiples of unit quaternions by phases.</p>
 <p><strong>Proof.</strong> Since $\mathsf{M}_2$ is an algebra isomorphism and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ (<em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, §<em>The Conjugations in Matrix Form</em>), the equation $\tilde{U}^{*}\tilde{U}=e_t$ is equivalent to $\mathsf{M}_2(\tilde{U})^{\dagger}\mathsf{M}_2(\tilde{U})=I$, which defines $\mathrm{U}(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{U})$ makes $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde{U},\tilde{U}\rangle_{\natural}$ then $\tilde{Q}_3=\zeta^{-1}\tilde{U}$ has $\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=1$; a norm-one element is a unit quaternion (<em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Algebraic Norm on the Remarkable Subspaces</em>), and $\tilde{U}=\zeta\tilde{Q}_3$.</p>
 <p><strong>Corollary (the determinant and the norm coincide).</strong> On $\mathrm{U}(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $N:\mathrm{U}(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $\langle\cdot\rangle_{\natural}$ realises an isomorphism $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$.</p>
 <p><strong>Proof.</strong> $\langle\tilde{U}\tilde{Q}_4,\tilde{U}\tilde{Q}_4\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_4,\tilde{Q}_4\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_t,e_t\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_t$ is unitary of norm $A$. The kernel is $\{N=1\}\cap \mathrm{U}(\mathbb{B})$, which is the unit quaternions.</p>
 <h2 id="the-structure-of-the-unitary-group">The Structure of the Unitary Group</h2>
 <p><strong>Theorem (the product decomposition).</strong> $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with $S^{1}\cap S^{3}=\{\pm e_t\}$, where $S^{1}=\mathrm{U}(1)e_t$ is the centre circle and $S^{3}$ the unit quaternions; the multiplication map $S^{1}\times S^{3}\to \mathrm{U}(\mathbb{B})$ is a surjective homomorphism with kernel $\{(e_t,e_t),(-e_t,-e_t)\}$, so</p>
-<p>$$
-\mathrm{U}(\mathbb{B})\cong \bigl(S^{1}\times S^{3}\bigr)/\{\pm e_t\}
-$$</p>
+<p>$$ \boxed{\;\mathrm{U}(\mathbb{B})\cong \bigl(S^{1}\times S^{3}\bigr)/\{\pm e_t\}\;} $$</p>
 <p>with the diagonal action, and this quotient is homeomorphic to $S^{1}\times S^{3}$.</p>
 <p><strong>Proof.</strong> The normal form writes an element as $A\tilde q$ with $A\in S^{1}$ and $\tilde{q}\in S^{3}$, and the intersection of the two subgroups is $\{A\in S^{1}: A\in\mathbb{H}\}=\{\pm e_t\}$; the product map is a homomorphism because $S^{1}$ is central. The quotient description is the first isomorphism theorem for Lie groups, and the homeomorphism $\mathrm{U}(\mathbb{B})\cong S^{1}\times S^{3}$ is the section $\tilde{U}\mapsto(\langle\tilde{U},\tilde{U}\rangle_{\natural},\langle\tilde{U},\tilde{U}\rangle_{\natural}^{-1/2}\tilde{U})$.</p>
 <p><strong>Remark (not an isomorphism of groups).</strong> The homeomorphism $\mathrm{U}(\mathbb{B})\cong S^{1}\times S^{3}$ is not a group isomorphism: its centre is connected, that of $S^{1}\times S^{3}$ is not, and the product map above is two-to-one.</p>
 <p><strong>Theorem (the maximal torus and the flag variety).</strong> The central scalars of modulus one form a maximal torus $T^{2}\cong S^{1}\times S^{1}$; every element of $\mathrm{U}(\mathbb{B})$ lies in some maximal torus; and</p>
-<p>$$
-\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2},
-$$</p>
+<p>$$ \boxed{\;\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2}\;}, $$</p>
 <p>so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^{2}$ with fibre $T^{2}$. It does not deformation retract onto $T^{2}$.</p>
 <p><strong>Proof.</strong> The diagonal matrices are the maximal tori of $\mathrm{U}(2)$, and $\mathrm{U}(2)/T^{2}$ is the complete flag variety of $\mathbb{C}^{2}$, which is $P^{1}$; a retraction onto a maximal torus would force $\pi_x(\mathrm{U}(\mathbb{B}))\cong\pi_x(T^{2})$, but these are $\mathbb{Z}$ and $\mathbb{Z}^{2}$.</p>
 <h2 id="the-retraction-of-the-unit-group-onto-the-unitary-group">The Retraction of the Unit Group onto the Unitary Group</h2>
@@ -125,7 +119,7 @@ $$</p>
 <h2 id="homotopy-groups-generators-and-the-universal-cover">Homotopy Groups, Generators and the Universal Cover</h2>
 <p><strong>Theorem.</strong> The homotopy invariants are</p>
 <p>$$
-\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3},\qquad \mathbb{B}^{\times}_1\simeq S^{3},
+\boxed{\;\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3},\qquad \mathbb{B}^{\times}_1\simeq S^{3}\;},
 $$</p>
 <p>$$
 \pi_x(\mathbb{B}^{\times})\cong\mathbb{Z},\quad \pi_y(\mathbb{B}^{\times})=0,\quad \pi_z(\mathbb{B}^{\times})\cong\mathbb{Z},\qquad

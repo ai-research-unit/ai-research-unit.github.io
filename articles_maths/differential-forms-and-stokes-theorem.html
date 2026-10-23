@@ -149,7 +149,7 @@ $$</p>
 <p><strong>Definition.</strong> An open set $\Xi \subseteq \mathbb{R}^n$ is <strong>star-shaped</strong> with respect to a point $p$ if for every $x \in \Xi$ the segment from $p$ to $x$ lies in $\Xi$; a manifold is <strong>contractible</strong> if it is homotopy equivalent to a point.</p>
 <p><strong>Theorem (Poincaré lemma).</strong> If $\Xi \subseteq \mathbb{R}^n$ is star-shaped (in particular if $\Xi$ is an open ball or all of $\mathbb{R}^n$), then every closed form of positive degree is exact:</p>
 <p>$$
-H^k_{dR}(\Xi) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(\Xi) = \mathbb{R}.
+\boxed{\;H^k_{dR}(\Xi) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(\Xi) = \mathbb{R}\;}.
 $$</p>
 <p><strong>Proof.</strong> Let $\Xi$ be star-shaped with respect to $0$. Define a <strong>homotopy operator</strong> $h : \Omega^k(\Xi) \to \Omega^{k-1}(\Xi)$ by</p>
 <p>$$
@@ -171,7 +171,7 @@ $$</p>
 <p>To state the theorem one needs the induced orientation on the boundary. If $M$ is an oriented $n$-manifold with boundary and $\mathrm{vol}$ is the orientation, the <strong>boundary orientation</strong> on $\partial M$ is defined by the rule that a basis $(v_2, \ldots, v_n)$ of $T_x\partial M$ at a boundary point is positively oriented when $(\nu, v_2, \ldots, v_n)$ is positively oriented in $T_xM$, where $\nu$ is an outward-pointing normal vector; equivalently, the orientation form of the boundary is the contraction of $\mathrm{vol}$ with the outward normal.</p>
 <p><strong>Theorem (Stokes).</strong> Let $M$ be an oriented smooth $n$-manifold with boundary, and let $\omega \in \Omega^{n-1}(M)$ be a form with compact support. Then</p>
 <p>$$
-\int_M d\omega = \int_{\partial M} \omega,
+\boxed{\;\int_M d\omega = \int_{\partial M} \omega\;},
 $$</p>
 <p>the boundary carrying the induced orientation.</p>
 <p><strong>Proof.</strong> By a partition of unity it suffices to prove the statement for a form supported in a single chart. In a chart mapping an open set of $M$ to an open set of the half-space $\mathbb{R}^n_+ = \{x^n \geq 0\}$ with the standard orientation, a compactly supported $(n-1)$-form can be written as</p>
@@ -240,7 +240,7 @@ $$</p>
 <h2 id="the-theorem-of-de-rham">The Theorem of de Rham</h2>
 <p><strong>Theorem (de Rham).</strong> Let $M$ be a smooth manifold. Then there is a natural isomorphism</p>
 <p>$$
-H^k_{dR}(M) \longrightarrow H^k(M; \mathbb{R})
+\boxed{\;H^k_{dR}(M) \longrightarrow H^k(M; \mathbb{R})\;}
 $$</p>
 <p>between the $k$-th de Rham cohomology and the $k$-th singular cohomology of $M$ with real coefficients, natural with respect to smooth maps. Consequently the de Rham cohomology is a homotopy invariant, its dimension is the $k$-th Betti number of $M$ when finite, and a closed form is exact if and only if all its periods over singular cycles vanish.</p>
 <p><strong>Proof sketch.</strong> Integration of a closed $k$-form over a smooth singular $k$-simplex, $\sigma \mapsto \int_\sigma \omega$, is unchanged by a boundary by Stokes' theorem, so it induces a pairing $H^k_{dR}(M) \times H_k(M;\mathbb{R}) \to \mathbb{R}$ and hence a map $H^k_{dR}(M) \to H^k(M;\mathbb{R})$ by the universal coefficient theorem. The map is an isomorphism; the proof uses the Poincaré lemma and the Mayer–Vietoris sequences on both sides, which are isomorphic as functors, and a comparison on contractible open sets.</p>

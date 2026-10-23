@@ -87,11 +87,15 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>spectrum</strong> of $\tilde{Q}$ is the spectrum of $L_{\tilde{Q}}$ over $\mathbb{C}$, that is the set of complex eigenvalues of the real endomorphism $L_{\tilde{Q}}$.</p>
 <p><strong>Theorem.</strong> The characteristic polynomial of $L_{\tilde{Q}}$ is</p>
 <p>$$
-p_{\tilde{Q}}(\lambda) = \left(\lambda^2 - 2q_t^+\lambda + |\tilde{Q}_+|^2\right)^2\left(\lambda^2 - 2q_t^-\lambda + |\tilde{Q}_-|^2\right)^2 ,
+\boxed{\;
+p_{\tilde{Q}}(\lambda) = \left(\lambda^2 - 2q_t^+\lambda + |\tilde{Q}_+|^2\right)^2\left(\lambda^2 - 2q_t^-\lambda + |\tilde{Q}_-|^2\right)^2
+\;},
 $$</p>
 <p>where $q_t^\pm = \mathrm{Re}\,\tilde{Q}_\pm$ and $|\tilde{Q}_\pm|^2 = \sum_\mu(q_\mu\pm q'_\mu)^2$. Hence</p>
 <p>$$
-\sigma(\tilde{Q}) = \left\{q_t^+ + i|\vec Q_+|,\, q_t^+ - i|\vec Q_+|,\, q_t^- + i|\vec Q_-|,\, q_t^- - i|\vec Q_-|\right\},
+\boxed{\;
+\sigma(\tilde{Q}) = \left\{q_t^+ + i|\vec Q_+|,\, q_t^+ - i|\vec Q_+|,\, q_t^- + i|\vec Q_-|,\, q_t^- - i|\vec Q_-|\right\}
+\;},
 $$</p>
 <p>where $\vec Q_\pm = \mathrm{Vect}\,\tilde{Q}_\pm$ is the vector part of the component and $|\vec Q_\pm| = \sqrt{|\tilde{Q}_\pm|^2 - (q_t^\pm)^2}$ its modulus, the four values with each occurring to multiplicity two.</p>
 <p><strong>Proof.</strong> Left multiplication by a quaternion $\tilde q$ on $\mathbb{H}$ has characteristic polynomial $(\lambda^2 - 2q_t\lambda + |\tilde q|^2)^2$: the eigenvalues of $L_{\tilde q}$ are $q_t \pm i|\vec v|$, where $\vec v = \mathrm{Vect}\,\tilde q$, each occurring to multiplicity two when $\tilde q$ is non-real, since the real vector space $\mathbb{H}$ is two-dimensional over the centraliser plane $\mathbb{R}[\tilde q] \cong \mathbb{C}$, and the real value $q_t$ occurs to multiplicity four when $\tilde q$ is real. Applying this to the two blocks and multiplying gives the displayed polynomial; the roots are as stated.</p>
@@ -148,7 +152,7 @@ $$</p>
 <p><strong>Proof.</strong> Componentwise, $(\tilde q - \lambda)^{-1} = \overline{(\tilde q-\lambda)}/|\tilde q-\lambda|^2$ for a quaternion $\tilde q$ and $\lambda$ not conjugate to $\tilde q$; the denominator is a sum of squares of real numbers and vanishes exactly when $\tilde q = \lambda$. Apply this in each idempotent component.</p>
 <p><strong>Corollary (analyticity and resolvent identity).</strong> The resolvent is real-analytic on its domain, with poles along the two conjugacy classes $[\tilde{Q}_\pm]$; for $\lambda,\mu$ in the resolvent set,</p>
 <p>$$
-R(\lambda) - R(\mu) = (\lambda - \mu)R(\lambda)R(\mu) ,
+\boxed{\;R(\lambda) - R(\mu) = (\lambda - \mu)R(\lambda)R(\mu)\;}
 $$</p>
 <p>since with $A = \tilde{Q} - \lambda e_t$ and $B = \tilde{Q} - \mu e_t$ one has $A^{-1} - B^{-1} = A^{-1}(B - A)B^{-1}$ for central $\lambda, \mu$.</p>
 <h2 id="the-spectral-radius">The Spectral Radius</h2>

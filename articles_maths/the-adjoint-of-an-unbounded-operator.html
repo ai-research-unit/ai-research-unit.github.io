@@ -88,14 +88,14 @@ $$</p>
 <p>and for such a $y$ the vector $T^*y$ is the unique $z$ with $\langle Tx,y\rangle=\langle x,z\rangle$ for all $x\in D(T)$, which exists by the Riesz representation theorem and the density of $D(T)$.</p>
 <p><strong>Proposition (the adjoint is closed and involutive on the closure).</strong> The adjoint $T^*$ is closed, and</p>
 <p>$$
-T\subseteq T^{**},\qquad \overline T=T^{**} ,
+\boxed{\;T\subseteq T^{**},\qquad \overline T=T^{**}\;} ,
 $$</p>
 <p>the second identity holding exactly when $T$ is closable; in that case $T^{**}$ is the smallest closed extension of $T$, and $(T^*)^*=T$ for a closed $T$.</p>
 <p><em>Proof.</em> The graph of $T^*$ is the set of $(y,z)$ with $\langle Tx,y\rangle=\langle x,z\rangle$ for all $x\in D(T)$, which is the orthogonal complement of $\{(Tx,-x)\}$; an orthogonal complement is closed, so $T^*$ is closed. Iterating the definition gives $T\subseteq T^{**}$, and $T^{**}$ is the closed operator whose graph is the closure of $\Gamma(T)$, so it is the closure of $T$ when that closure is an operator; for a closed $T$ one has $\overline T=T$ and the identity gives $(T^*)^*=T$.</p>
 <h2 id="the-graph-and-the-adjoint">The Graph and the Adjoint</h2>
 <p><strong>Theorem (graph relation).</strong> For a densely defined $T$,</p>
 <p>$$
-\Gamma(T^*)=\Gamma(-T)^{\perp}\subseteq H\oplus H ,
+\boxed{\;\Gamma(T^*)=\Gamma(-T)^{\perp}\subseteq H\oplus H\;} ,
 $$</p>
 <p>where the orthogonal complement is taken in the inner product $\langle(x,y),(x',y')\rangle=\langle x,x'\rangle+\langle y,y'\rangle$.</p>
 <p><em>Proof.</em> A pair $(y,z)$ lies in $\Gamma(T^*)$ exactly when $\langle Tx,y\rangle=\langle x,z\rangle$ for all $x\in D(T)$, which is $\langle Tx,y\rangle-\langle x,z\rangle=0$, that is $\langle(Tx,-x),(y,z)\rangle=0$; the set of vectors $(Tx,-x)$ is precisely $\Gamma(-T)$, so the condition is $(y,z)\perp\Gamma(-T)$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <p>(i) $T$ is closed if and only if $\Gamma(T)=U\Gamma(T^*)^{\perp}$;</p>
 <p>(ii) $T$ is self-adjoint if and only if</p>
 <p>$$
-H\oplus H=\Gamma(T)\oplus U\Gamma(T).
+\boxed{\;H\oplus H=\Gamma(T)\oplus U\Gamma(T)\;}.
 $$</p>
 <p><em>Proof.</em> Since $U\Gamma(T)=\Gamma(-T)$ and $U$ is unitary, the theorem is $\Gamma(T^*)=U\Gamma(T)^{\perp}$; taking orthogonal complements and applying $U$ gives $U\Gamma(T^*)^{\perp}=\overline{\Gamma(T)}$, which is (i). For (ii), $\Gamma(T)$ and $U\Gamma(T)$ are orthogonal exactly when $\langle Tx,y\rangle=\langle x,Ty\rangle$ for all $x,y\in D(T)$, that is when $T$ is symmetric; the sum is all of $H\oplus H$ exactly when the orthogonal complement of $U\Gamma(T)$ is $\Gamma(T)$, which by the graph relation is the statement $\Gamma(T^*)=\Gamma(T)$, that is self-adjointness.</p>
 <p><strong>Proposition (the spectrum of the adjoint).</strong> For a closed densely defined $T$ the resolvent of $T$ and of $T^*$ are related by</p>

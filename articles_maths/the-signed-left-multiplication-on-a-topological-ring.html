@@ -81,14 +81,14 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>signed left multiplication</strong> with parameter $a \in R$ is the operator $\ell_a(x) = a\alpha(x)$; the <strong>signed right multiplication</strong> is $\varrho_b(x) = \alpha(x)b$. The unsigned left multiplication is $L_a$ and the unsigned right multiplication is $R_a$.</p>
 <p><strong>Proposition (decomposition and continuity).</strong> The signed left multiplication factors as</p>
 <p>$$
-\ell_a = L_a\circ\alpha = \Sigma^\alpha_{a,1} ,
+\boxed{\;\ell_a = L_a\circ\alpha = \Sigma^\alpha_{a,1}\;} ,
 $$</p>
 <p>it is additive and continuous, and it is the signed sandwich with right parameter $1$; symmetrically $\varrho_b = \alpha\circ R_b = \Sigma^\alpha_{1,b}$. The signed left multiplications with a unit parameter are the invertible ones, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, and the signed left multiplications are the elements of the coset $L(R)\circ\alpha$ of the unsigned left multiplications.</p>
 <p><strong>Proof.</strong> $\ell_a(x) = a\alpha(x) = L_a(\alpha(x))$, and $\Sigma^\alpha_{a,1}(x) = a\alpha(x)1 = a\alpha(x)$; additivity and continuity follow from those of $L_a$ and $\alpha$. The inverse: $\ell_u\ell_{\alpha(u)^{-1}}(x) = u\alpha(\alpha(u)^{-1}\alpha(x)) = u\alpha(\alpha(u)^{-1})x = uu^{-1}x = x$ by the composition law below and $\alpha^2 = \mathrm{id}$, and likewise on the other side; conversely $\ell_a$ is invertible exactly when the sandwich $\Sigma^\alpha_{a,1}$ is, that is exactly when $a$ is a unit, by <em>The Signed Sandwich on a Topological Ring</em>.</p>
 <h2 id="composition-and-the-group">Composition and the Group</h2>
 <p><strong>Proposition (composition law).</strong> For all $a, b \in R$,</p>
 <p>$$
-\ell_a\circ\ell_b = L_{a\,\alpha(b)} = \ell_{a\alpha(b)} ,
+\boxed{\;\ell_a\circ\ell_b = L_{a\,\alpha(b)} = \ell_{a\alpha(b)}\;} ,
 $$</p>
 <p>so the signed left multiplications compose among themselves and the family is closed under composition. The signed right multiplications compose by $\varrho_b\varrho_a = R_{\alpha(b)a}$, and a signed left and a signed right multiplication do not commute in general.</p>
 <p><strong>Proof.</strong> $\ell_a\ell_b(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha(\alpha(x)) = a\alpha(b)x = L_{a\alpha(b)}(x)$; the right statement is the mirror image. For the failure of commutation, $\ell_a\varrho_b(x) = a\alpha(\alpha(x)b) = ax\alpha(b)$ and $\varrho_b\ell_a(x) = \alpha(a\alpha(x))b = \alpha(a)xb$, which differ in general.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p><strong>Proof.</strong> The first identity is the decomposition; the second distinguishes the families: an unsigned left multiplication is $L_u$, a signed one is $L_u\alpha$, and they are equal exactly when $u\alpha(x) = ux$ for all $x$, that is $\alpha(x) = x$ for all $x$ in the range of $L_u^{-1}$, which is all of $R$ when $u$ is a unit, so the equality forces $\alpha = \mathrm{id}$.</p>
 <p><strong>Theorem (the degenerate case: the inner grade involution).</strong> When the grade involution is inner, $\alpha = c_z$ with $z \in R^\times$, the signed left multiplication is an unsigned two-sided sandwich,</p>
 <p>$$
-\ell_a(x) = a z x z^{-1} = \Sigma_{az,\,z^{-1}}(x) ,
+\boxed{\;\ell_a(x) = a z x z^{-1} = \Sigma_{az,\,z^{-1}}(x)\;} ,
 $$</p>
 <p>so the signed left multiplications are the unsigned sandwiches with second parameter fixed at $z^{-1}$, and the signed family is contained in the unsigned sandwich family rather than in the unsigned left family. When the ring is commutative, $\ell_a(x) = a\alpha(x) = \alpha(a x) = \alpha L_a(x)$, so the signed and unsigned left multiplications differ by the fixed automorphism $\alpha$ and the signed left multiplication group is abelian.</p>
 <p><strong>Proof.</strong> For $\alpha = c_z$, $\ell_a(x) = azxz^{-1}$, which is the unsigned sandwich $\Sigma_{az,z^{-1}}(x)$; the signed family is therefore contained in the unsigned sandwich family with second parameter $z^{-1}$. In a commutative ring $\ell_a = \alpha L_a$ because $\alpha$ is a ring automorphism and $a$ is central; the group is abelian because the ring is.</p>

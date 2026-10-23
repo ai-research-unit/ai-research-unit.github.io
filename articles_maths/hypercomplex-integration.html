@@ -98,7 +98,7 @@ $$</p>
 <p>The fundamental integral theorem of the theory is the hypersurface version; it follows from the divergence form of $D$ established in <em>Regularity and the Cauchy–Riemann Operator</em>.</p>
 <p><strong>Theorem (Cauchy–Goursat).</strong> Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be left regular and of class $C^1$ on $\bar\Omega$. Then</p>
 <p>$$
-\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0,
+\boxed{\;\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0\;},
 $$</p>
 <p>where $\nu_B$ is the conormal element and $dS$ the surface measure.</p>
 <p>This is the analogue of $\oint f\,dz = 0$ for a holomorphic function: the boundary integral of a regular function over a closed hypersurface vanishes. When $m = 2$ the hypersurface is a curve, and for the complex system the statement is exactly the classical Cauchy theorem.</p>
@@ -173,7 +173,7 @@ $$</p>
 <p><em>Proof.</em> Integrate $f$ along axis-parallel paths to build $G$; the rectangle hypothesis makes the result path-independent. Then $G$ is differentiable with $f\,d\xi = dG$, so the form is exact and hence closed.</p>
 <p><strong>Theorem (Cauchy integral formula, general form).</strong> Let $\Omega$ be a bounded domain with smooth boundary, $E$ a Cauchy kernel for $D$, and $f$ left regular on a neighbourhood of $\bar\Omega$. Then for every $x \in \Omega$,</p>
 <p>$$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y).
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y)\;}.
 $$</p>
 <p>This was stated in <em>Hypercomplex Analysis</em> and derived there from the Cauchy–Pompeiu formula; in the commutative case it is the classical Cauchy formula, and in the quaternionic case it is the Cauchy formula for monogenic functions. The kernel $E$ is specific to the system; the formula is not.</p>
 <p><strong>Corollary (Cauchy inequalities).</strong> Let $f$ be left regular on a ball $B(p,r)$ and continuous on its closure. Then</p>
@@ -191,7 +191,7 @@ $$</p>
 <p><em>Proof of independence of $\epsilon$.</em> The difference of the integrals over two spheres is the boundary integral of a regular function over the region between them, which vanishes by Cauchy–Goursat.</p>
 <p><strong>Theorem (residue theorem, general form).</strong> Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be left regular on $\bar\Omega$ except at finitely many points $x_1, \dots, x_k$ in the interior, with a removable-type behaviour at the boundary. Then</p>
 <p>$$
-\int_{\partial\Omega} \nu_B(y)\,f(y)\,dS(y) = \sum_{i=1}^{k} \operatorname{Res}_{x_i} f.
+\boxed{\;\int_{\partial\Omega} \nu_B(y)\,f(y)\,dS(y) = \sum_{i=1}^{k} \operatorname{Res}_{x_i} f\;}.
 $$</p>
 <p><em>Proof.</em> Excise a small ball around each $x_i$ and apply Cauchy–Goursat to the punctured domain.</p>
 <p><strong>Expansions.</strong> A regular function is real-analytic (<em>Regularity and the Cauchy–Riemann Operator</em>), so on a ball it has a convergent power series</p>

@@ -82,9 +82,7 @@
 <p>The restriction of a rotation to an invariant plane is an orthogonal map of that plane, hence a rotation or a reflection; the reflection case occurs only for planes that are not among those of the normal form below. For the planes of the normal form the restriction is a rotation, and its angle is called the <strong>rotation angle</strong> of that plane.</p>
 <h3 id="the-normal-form-in-four-dimensions">The Normal Form in Four Dimensions</h3>
 <p><strong>Theorem (normal form; four dimensions).</strong> Let $T\in SO(4)$. Then $T$ is orthogonally similar to the block diagonal matrix</p>
-<p>$$
-\mathrm{diag}\bigl(R(\alpha), R(\beta)\bigr), \qquad 0\le\beta\le\alpha\le\pi,
-$$</p>
+<p>$$ \boxed{\; \mathrm{diag}\bigl(R(\alpha), R(\beta)\bigr), \qquad 0\le\beta\le\alpha\le\pi \;} ,$$</p>
 <p>and the pair $(\alpha,\beta)$ is determined by $T$: the eigenvalues of $T$ are $\exp(\pm i\alpha)$ and $\exp(\pm i\beta)$, an eigenvalue $1$ counting as the angle $0$ and an eigenvalue $-1$ as the angle $\pi$. Consequently $T$ fixes a plane pointwise if and only if $\beta = 0$.</p>
 <p><em>Proof.</em> The theorem of <em>The Rotation Group and Orientation</em>, §<em>The Normal Form of a Rotation</em>, applied with $n = 4$: either $m = 2$, the fixed subspace has dimension $0$ and the normal form is the displayed one with the two angles of the non-real eigenvalue pairs, or $m = 1$, the fixed subspace has dimension $2$ and the normal form is $\mathrm{diag}(R(\alpha),1,1)$, which is the displayed one with $\beta = 0$. The angles lie in $[0,\pi]$ by the choice of the argument of each non-real eigenvalue pair, and their multiset is determined by the eigenvalues of $T$.</p>
 <p><strong>Definition.</strong> The <strong>two angles</strong> of $T\in SO(4)$ are the numbers $\alpha\ge\beta\ge0$ of the normal form; the <strong>angle pair</strong> is the unordered pair $\{\alpha,\beta\}$.</p>
@@ -164,9 +162,7 @@ $$</p>
 \chi(\lambda) = \lambda^4 - 4(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p)\lambda^3 + \bigl(4((\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1)+2\bigr)\lambda^2 - 4(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p)\lambda + 1,
 $$</p>
 <p>so that the two angles of the rotation satisfy</p>
-<p>$$
-\cos\alpha+\cos\beta = 2\,(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p), \qquad \cos\alpha\cos\beta = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1.
-$$</p>
+<p>$$ \boxed{\; \cos\alpha+\cos\beta = 2\,(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p), \qquad \cos\alpha\cos\beta = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1 \;} .$$</p>
 <p>In particular the angles depend only on the real parts of the two factors and not on their axes.</p>
 <p><em>Proof.</em> By the theorem the four eigenvalues are $\exp(\pm i(\theta+\phi)), \exp(\pm i(\theta-\phi))$, so the characteristic polynomial is the product of the quadratics $\lambda^2-2\cos(\theta+\phi)\lambda+1$ and $\lambda^2-2\cos(\theta-\phi)\lambda+1$. Expanding and using $\operatorname{Re}\tilde q = \cos\theta$, $\operatorname{Re}\tilde p = \cos\phi$ together with $\cos(\theta+\phi)\cos(\theta-\phi) = \cos^2\theta+\cos^2\phi-1$ gives the display.</p>
 <h2 id="the-three-types-in-quaternion-terms">The Three Types in Quaternion Terms</h2>
@@ -255,9 +251,7 @@ $$</p>
 <p><em>Proof.</em> The sum of the squares of the four coordinates is $\sin^2\eta+\cos^2\eta = 1$, so every triple of angles gives a unit quaternion, and the four coordinates recover the angles in the stated ranges. The two blocks are $\tilde q_1 = \sin\eta\,\exp(\vec e_x\xi_x)$ and $\tilde q_2 = \cos\eta\,\exp(\vec e_x\xi_y)$, of the stated moduli, and each is an independent circle when $\eta$ is fixed and intermediate.</p>
 <h3 id="the-rotation-as-a-translation">The Rotation as a Translation</h3>
 <p><strong>Theorem.</strong> Let $T$ be a rotation whose two invariant planes of the normal form are $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$, with the angles $a$ and $b$ respectively. Then in Hopf coordinates $T$ acts as</p>
-<p>$$
-(\xi_x,\eta,\xi_y)\longmapsto(\xi_x+a,\ \eta,\ \xi_y+b).
-$$</p>
+<p>$$ \boxed{\; (\xi_x,\eta,\xi_y)\longmapsto(\xi_x+a,\ \eta,\ \xi_y+b) \;} .$$</p>
 <p>In particular the tori $\eta = \mathrm{const}$ and the Clifford torus are invariant, and the two angles of the rotation are the two angular velocities of the translation.</p>
 <p><em>Proof.</em> A rotation with these two invariant planes is $\Phi_{(\tilde q,\tilde p)}$ with $\tilde q = \exp(\vec e_x\theta)$ and $\tilde p = \exp(\vec e_x\phi)$, both factors in $\mathbb{C}_{\vec e_x}$, and by the computation of the angle theorem the angle on $\operatorname{span}(1,\vec e_x)$ is $\theta-\phi = a$ while the angle on $\operatorname{span}(\vec e_y,\vec e_z)$ is $\theta+\phi = b$, so that $\theta = \frac12(a+b)$ and $\phi = \frac12(b-a)$. On the first block the map is right multiplication by $\tilde q\tilde p^{-1} = \exp(\vec e_xa)$, so that $\sin\eta\,\exp(\vec e_x\xi_x)$ becomes $\sin\eta\,\exp(\vec e_x(\xi_x+a))$; on the second block the coordinate is multiplied by $\tilde q\tilde p = \exp(\vec e_xb)$, so that $\cos\eta\,\exp(\vec e_x\xi_y)\vec e_y$ becomes $\cos\eta\,\exp(\vec e_x(\xi_y+b))\vec e_y$. That is the display.</p>
 <h3 id="the-trajectories">The Trajectories</h3>

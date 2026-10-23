@@ -107,7 +107,7 @@ $$</p>
 <p>Over a field the inclusion is an equality.</p>
 <p><strong>Proposition (centre over a field).</strong> Let $k$ be a field and let $A$, $B$ be $k$-algebras. Then</p>
 <p>$$
-Z(A \otimes_k B) = Z(A) \otimes_k Z(B).
+\boxed{\;Z(A \otimes_k B) = Z(A) \otimes_k Z(B)\;}.
 $$</p>
 <p><em>Proof.</em> The inclusion $\supseteq$ is the proposition above. For the reverse, let $z = \sum_{i=1}^{n} a_i \otimes b_i$ be an expression with $n$ minimal; then $\{a_i\}$ and $\{b_i\}$ are each linearly independent over $k$. Commuting $z$ with $a \otimes 1_B$ gives $\sum_i (a_i a - a a_i) \otimes b_i = 0$, so $a_i a = a a_i$ for every $i$ by linear independence of the $b_i$; hence each $a_i \in Z(A)$. Commuting $z$ with $1_A \otimes b$ then gives $\sum_i a_i \otimes (b_i b - b b_i) = 0$, so $b_i b = b b_i$ for every $i$ by linear independence of the $a_i$; hence each $b_i \in Z(B)$. Therefore $z \in Z(A)\otimes_k Z(B)$.</p>
 <p>Over a general commutative ring only the inclusion is asserted here, because the minimal expression need not have linearly independent coefficients.</p>
@@ -125,13 +125,13 @@ $$</p>
 <p>where the third equality uses that the images of $f$ and $g$ commute; unitality is $\Phi(1 \otimes 1) = 1_C$. The two constructions are inverse.</p>
 <p><strong>Corollary (coproduct of commutative algebras).</strong> If $A$, $B$, $C$ are commutative, the commuting condition is automatic, and the theorem reads</p>
 <p>$$
-\operatorname{Hom}_{R\text{-alg}}(A \otimes_R B, C) \;\cong\; \operatorname{Hom}_{R\text{-alg}}(A, C) \times \operatorname{Hom}_{R\text{-alg}}(B, C).
+\boxed{\;\operatorname{Hom}_{R\text{-alg}}(A \otimes_R B, C) \;\cong\; \operatorname{Hom}_{R\text{-alg}}(A, C) \times \operatorname{Hom}_{R\text{-alg}}(B, C)\;}.
 $$</p>
 <p>Thus $A \otimes_R B$, with the maps $a \mapsto a \otimes 1_B$ and $b \mapsto 1_A \otimes b$, is the <strong>coproduct</strong> in the category of commutative unital $R$-algebras. It is not the product: the product of $A$ and $B$ in that category is the direct product $A \times B$, with its coordinatewise operations.</p>
 <p><strong>Corollary (pushout).</strong> Let $C$ be a commutative unital $R$-algebra and let $A$ and $B$ be commutative unital $C$-algebras. Then $A \otimes_C B$, with the maps $a \mapsto a \otimes 1_B$ and $b \mapsto 1_A \otimes b$, is the <strong>pushout</strong> of the diagram $A \leftarrow C \rightarrow B$ in the category of commutative unital $R$-algebras: for every commutative unital $R$-algebra $D$ and every pair of $R$-algebra homomorphisms $A \to D$, $B \to D$ whose restrictions to $C$ agree, there is a unique $R$-algebra homomorphism $A \otimes_C B \to D$ through which both factor. The case $C = R$ is the coproduct above, and the case of two quotients $E/I$ and $E/J$ of a commutative unital $C$-algebra $E$ is the identification $(E/I) \otimes_E (E/J) \cong E/(I+J)$ obtained from the proposition on tensor products of ideals.</p>
 <p><strong>Corollary (the tensor product is a quotient of the free product).</strong> For unital associative $A$ and $B$, let $A \sqcup B$ denote their free product, the coproduct in the category of unital associative $R$-algebras, which is the algebra with no relation imposed between $A$ and $B$. Then</p>
 <p>$$
-A \otimes_R B \;\cong\; (A \sqcup B)\big/\bigl(ab - ba : a \in A, \ b \in B\bigr),
+\boxed{\;A \otimes_R B \;\cong\; (A \sqcup B)\big/\bigl(ab - ba : a \in A, \ b \in B\bigr)\;},
 $$</p>
 <p>the quotient in which every element of $A$ is forced to commute with every element of $B$.</p>
 <p><em>Proof.</em> The free product satisfies the universal property of pairs of homomorphisms with no commuting condition, and imposing the relations $ab = ba$ adds exactly that condition; the universal property of the quotient then matches the theorem above.</p>

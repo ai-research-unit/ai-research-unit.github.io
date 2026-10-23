@@ -98,13 +98,13 @@ $$</p>
 <p>The degree on the group makes the group algebra into a graded algebra, and the graded modules over the group are the graded modules over that algebra.</p>
 <p><strong>Proposition.</strong> If $\varepsilon : G\to\{\pm1\}$ is a degree, then the group algebra is graded by</p>
 <p>$$
-k[G]^{\bar0} = \Bigl\{\sum_{g\in G^{\bar0}} c_g\,g\Bigr\}, \qquad k[G]^{\bar1} = \Bigl\{\sum_{g\in G^{\bar1}} c_g\,g\Bigr\},
+\boxed{\;k[G]^{\bar0} = \Bigl\{\sum_{g\in G^{\bar0}} c_g\,g\Bigr\}, \qquad k[G]^{\bar1} = \Bigl\{\sum_{g\in G^{\bar1}} c_g\,g\Bigr\}\;},
 $$</p>
 <p>and the multiplication respects the grading, $k[G]^{\bar i}\,k[G]^{\bar j}\subseteq k[G]^{\overline{i+j}}$.</p>
 <p><strong>Proof.</strong> The two subspaces span $k[G]$ because $G$ is the disjoint union of $G^{\bar0}$ and $G^{\bar1}$, and they meet only in $0$. The product of a term of degree $i$ and a term of degree $j$ has degree $i+j$ because $\varepsilon$ is a homomorphism, $\varepsilon(gh)=\varepsilon(g)\varepsilon(h)$.</p>
 <p><strong>Corollary (the compatibility of the action).</strong> A graded module over $(G,\varepsilon)$ is a graded module over the graded algebra $k[G]$, in the sense that the action is compatible with the grading,</p>
 <p>$$
-k[G]^{\bar i}\cdot M^{\bar j}\subseteq M^{\overline{i+j}} .
+\boxed{\;k[G]^{\bar i}\cdot M^{\bar j}\subseteq M^{\overline{i+j}}\;} .
 $$</p>
 <p><strong>Proof.</strong> It suffices to check the inclusion on the basis $G\subseteq k[G]$, where it is the defining property of the graded action, and to extend by linearity.</p>
 <p><strong>Remark.</strong> The grading of the group algebra exists exactly when the degree is a homomorphism; a subset of $G$ alone does not make $k[G]$ a graded algebra. This is the group-theoretic analogue of the requirement that the grading of an algebra be compatible with its product, and it is why the degree is part of the structure $(G,\varepsilon)$ and not a property of $G$.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p>on homogeneous $m$, extended linearly.</p>
 <p><strong>Proposition (it is a projective action).</strong> For homogeneous $m$ the signed action satisfies</p>
 <p>$$
-g\triangleright(h\triangleright m) = (-1)^{\varepsilon(g)\varepsilon(h)}\,(gh)\triangleright m .
+\boxed{\;g\triangleright(h\triangleright m) = (-1)^{\varepsilon(g)\varepsilon(h)}\,(gh)\triangleright m\;} .
 $$</p>
 <p>Hence the signed action is a <strong>projective action</strong> with cocycle the <strong>Koszul sign</strong> $c(g,h)=(-1)^{\varepsilon(g)\varepsilon(h)}$; it is an honest action exactly when the degree is trivial. Each operator $g\pi_M^{\varepsilon(g)}$ is even, and the assignment $g\mapsto g\pi_M^{\varepsilon(g)}$ is a projective representation with the same cocycle.</p>
 <p><strong>Proof.</strong> Write $\varepsilon(g)=0$ for even and $1$ for odd. The left side is $\varepsilon(h)^{|m|}\varepsilon(g)^{|h\cdot m|}g\cdot(h\cdot m)$, and $|h\cdot m|=|m|+\varepsilon(h)$, so it equals $\varepsilon(h)^{|m|}\varepsilon(g)^{|m|}\varepsilon(g)^{\varepsilon(h)}(gh)\cdot m$. The right side is $(-1)^{\varepsilon(g)\varepsilon(h)}\varepsilon(gh)^{|m|}(gh)\cdot m=(-1)^{\varepsilon(g)\varepsilon(h)}\varepsilon(g)^{|m|}\varepsilon(h)^{|m|}(gh)\cdot m$. The two agree because the remaining factor $\varepsilon(g)^{\varepsilon(h)}$ equals $(-1)^{\varepsilon(g)\varepsilon(h)}$, an identity that is trivial when $\varepsilon(h)=0$ and is $\varepsilon(g)=(-1)^{\varepsilon(g)}$ when $\varepsilon(h)=1$. The operator $g\pi_M^{\varepsilon(g)}$ is even because $\pi_M^{\varepsilon(g)}$ has parity $\varepsilon(g)$ and $g$ also has parity $\varepsilon(g)$, so the product has parity $0$; the product of two of them picks up the factor computed above, which is the cocycle.</p>

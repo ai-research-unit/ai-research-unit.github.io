@@ -107,8 +107,8 @@ $$</p>
 <p><em>Proof.</em> The product $a_{ij}x$ lies in $A_{ij}A_{rs}$, which is zero unless $j=r$, and then lies in $A_{is}$. Multiplying by $b_{kl}$, the product lies in $A_{is}A_{kl}$, which is zero unless $s=k$, and then lies in $A_{il}$.</p>
 <p><strong>Corollary (the elementary sandwich).</strong> For homogeneous $a\in A_{ij}$ and $b\in A_{kl}$, the sandwich $T_{a,b}$ has a single nonzero block, from the source corner $A_{jk}$ to the target corner $A_{il}$:</p>
 <p>$$
-T_{a,b}(A_{rs})=0 \quad\text{for }(r,s)\neq(j,k), \qquad
-T_{a,b}(A_{jk})\subseteq A_{il}.
+\boxed{\;T_{a,b}(A_{rs})=0 \quad\text{for }(r,s)\neq(j,k), \qquad
+T_{a,b}(A_{jk})\subseteq A_{il}\;}.
 $$</p>
 <p>On the source corner the block is $x\mapsto axb$. Every sandwich is a sum of such elementary sandwiches, one for each pair of Peirce components of $a$ and $b$.</p>
 <h3 id="the-block-matrix-of-a-general-sandwich">The block matrix of a general sandwich</h3>
@@ -160,7 +160,7 @@ E_{ij}:=T_{e_i,e_j}:A\longrightarrow A, \qquad E_{ij}(x)=e_i\,x\,e_j,
 $$</p>
 <p>is the projection of $A$ onto the corner $A_{ij}$ along the other three corners. The four projections are orthogonal and complete:</p>
 <p>$$
-E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}, \qquad \sum_{i,j}E_{ij}=\mathrm{id}_A .
+\boxed{\;E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}, \qquad \sum_{i,j}E_{ij}=\mathrm{id}_A\;} .
 $$</p>
 <p><em>Proof.</em> On $x\in A_{rs}$, the product $e_ix e_j$ is nonzero only when $r=i$ and $s=j$, and then equals $x$; hence $E_{ij}$ is the identity on $A_{ij}$ and zero on the other corners. The composition is</p>
 <p>$$
@@ -176,7 +176,7 @@ $$</p>
 <h3 id="composition">Composition</h3>
 <p><strong>Proposition.</strong> For all $a,b,c,d\in A$,</p>
 <p>$$
-T_{a,b}\,T_{c,d}=T_{ac,\,db}.
+\boxed{\;T_{a,b}\,T_{c,d}=T_{ac,\,db}\;}.
 $$</p>
 <p><em>Proof.</em> $T_{a,b}(T_{c,d}(x))=a(cxd)b=(ac)x(db)$.</p>
 <p><strong>Corollary.</strong> The assignment $(a,b)\mapsto T_{a,b}$ is a $k$-bilinear map $A\times A\to\operatorname{End}_k(A)$ that factors through the enveloping algebra,</p>

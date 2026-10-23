@@ -99,7 +99,7 @@ so that $\breve Q_{1}\breve Q_{2}=\breve Q_{2}\breve Q_{1}$ in the representatio
 <p><strong>The multiplication is a real $4\times4$ matrix on the quadruple and a complex $2\times2$ matrix on the pair, and the two are the real and complex forms of the same operator.</strong></p>
 <p><strong>Theorem (the real four-vector matrix).</strong> For $\breve Q=q_{\blacktriangle}+iq'_{\blacktriangle}+q_{\blacktriangledown}j+iq'_{\blacktriangledown}j$, the left multiplication $\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ on the real basis $1,i,j,ij$ has the matrix
 $$
-L_{\breve Q}=\begin{pmatrix}
+\boxed{\;L_{\breve Q}=\begin{pmatrix}
 q_{\blacktriangle}&-q'_{\blacktriangle}&q_{\blacktriangledown}&-q'_{\blacktriangledown}\\
 q'_{\blacktriangle}&q_{\blacktriangle}&q'_{\blacktriangledown}&q_{\blacktriangledown}\\
 q_{\blacktriangledown}&-q'_{\blacktriangledown}&q_{\blacktriangle}&-q'_{\blacktriangle}\\
@@ -107,13 +107,13 @@ q'_{\blacktriangledown}&q_{\blacktriangledown}&q'_{\blacktriangle}&q_{\blacktria
 \end{pmatrix}
 =\begin{pmatrix}A_+&A_-\\ A_-&A_+\end{pmatrix},
 \qquad
-A_+=\begin{pmatrix}q_{\blacktriangle}&-q'_{\blacktriangle}\\ q'_{\blacktriangle}&q_{\blacktriangle}\end{pmatrix},\quad A_-=\begin{pmatrix}q_{\blacktriangledown}&-q'_{\blacktriangledown}\\ q'_{\blacktriangledown}&q_{\blacktriangledown}\end{pmatrix},
+A_+=\begin{pmatrix}q_{\blacktriangle}&-q'_{\blacktriangle}\\ q'_{\blacktriangle}&q_{\blacktriangle}\end{pmatrix},\quad A_-=\begin{pmatrix}q_{\blacktriangledown}&-q'_{\blacktriangledown}\\ q'_{\blacktriangledown}&q_{\blacktriangledown}\end{pmatrix}\;},
 $$
 where $A_+$ and $A_-$ are the real $2\times2$ matrices of the multiplication by the complex numbers $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$.</p>
 <p><em>Proof.</em> Apply $L_{\breve Q}$ to the four basis elements and read the coefficients. On $1$: $\breve Q=q_{\blacktriangle}\cdot1+q'_{\blacktriangle}\cdot i+q_{\blacktriangledown}\cdot j+q'_{\blacktriangledown}\cdot ij$ gives the first column. On $i$: $i\breve Q=iQ_{\blacktriangle}+iQ_{\blacktriangledown}j=(iq_{\blacktriangle}-q'_{\blacktriangle})+(iq_{\blacktriangledown}-q'_{\blacktriangledown})j=-q'_{\blacktriangle}\cdot1+q_{\blacktriangle}\cdot i-q'_{\blacktriangledown}\cdot j+q_{\blacktriangledown}\cdot ij$, the second column; on $j$: $j\breve Q=Q_{\blacktriangle}j+Q_{\blacktriangledown}=q_{\blacktriangledown}\cdot1+q'_{\blacktriangledown}\cdot i+q_{\blacktriangle}\cdot j+q'_{\blacktriangle}\cdot ij$, the third column; on $ij$: $ij\breve Q=iQ_{\blacktriangle}j+iQ_{\blacktriangledown}=(iq_{\blacktriangle}-q'_{\blacktriangle})j+(iq_{\blacktriangledown}-q'_{\blacktriangledown})=-q'_{\blacktriangledown}\cdot1+q_{\blacktriangledown}\cdot i-q'_{\blacktriangle}\cdot j+q_{\blacktriangle}\cdot ij$, the fourth. The block form is read off the display: the two diagonal blocks are both $A_+$ and the two off-diagonal blocks both $A_-$, because the two coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ play the symmetric roles in the product $\breve Q_{1}\breve Q_{2}=(Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown})+(Q_{1\blacktriangle}Q_{2\blacktriangledown}+Q_{1\blacktriangledown}Q_{2\blacktriangle})j$.</p>
 <p><strong>Corollary (the trace and the determinant).</strong> The real matrix has trace $4q_{\blacktriangle}=2\operatorname{Re}(Q_{+}+Q_{-})$ and determinant
 $$
-\det L_{\breve Q}=\bigl|Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}\bigr|^{2}=\lvert \langle \breve Q\rangle_{\mathrm{ts}}\rvert^{2}=\lvert Q_{+}\rvert^{2}\lvert Q_{-}\rvert^{2},
+\boxed{\;\det L_{\breve Q}=\bigl|Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}\bigr|^{2}=\lvert \langle \breve Q\rangle_{\mathrm{ts}}\rvert^{2}=\lvert Q_{+}\rvert^{2}\lvert Q_{-}\rvert^{2}\;},
 $$
 so the element is a unit exactly when the real matrix of its multiplication is invertible, and the zero divisors are exactly the non-zero elements whose matrix is singular. The complex matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ has trace $2Q_{\blacktriangle}$ and determinant $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$.</p>
 <p><em>Proof.</em> The trace is the sum of the four diagonal entries $q_{\blacktriangle}+q_{\blacktriangle}+q_{\blacktriangle}+q_{\blacktriangle}$. The determinant of $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ with commuting blocks $A_+,A_-$ is $\det(A_+^{2}-A_-^{2})=\det(A_++A_-)\det(A_+-A_-)$; and $\det(A_++A_-)=\lvert Q_{\blacktriangle}+Q_{\blacktriangledown}\rvert^{2}=\lvert Q_{+}\rvert^{2}$, $\det(A_+-A_-)=\lvert Q_{\blacktriangle}-Q_{\blacktriangledown}\rvert^{2}=\lvert Q_{-}\rvert^{2}$, giving the display. The complex matrix has the two real $2\times2$ blocks combined into the complex entries $Q_{\blacktriangle},Q_{\blacktriangledown}$, whence trace $2Q_{\blacktriangle}$ and determinant $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$. The unit and zero-divisor readings are the criterion $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ of <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>.</p>
@@ -213,7 +213,7 @@ $$
 $$
 that is $\lvert Q_{+}\rvert^{2}\neq0$ and $\lvert Q_{-}\rvert^{2}\neq0$; the two failure conditions are the two idempotent lines, $\lvert Q_{+}\rvert^{2}=0$ and $\lvert Q_{-}\rvert^{2}=0$, whose union is the zero-divisor set. The inverse in coordinates is
 $$
-\breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{\langle \breve Q\rangle_{\mathrm{ts}}}=Q_{+}^{-1}\Pi_++Q_{-}^{-1}\Pi_-,
+\boxed{\;\breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{\langle \breve Q\rangle_{\mathrm{ts}}}=Q_{+}^{-1}\Pi_++Q_{-}^{-1}\Pi_-\;},
 $$
 with $Q_{+}^{-1}$ and $Q_{-}^{-1}$ the complex inverses.</p>
 <p><em>Proof.</em> The criterion $Q_{+}Q_{-}\neq0$ is that of <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>; the two factors are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}=(q_{\blacktriangle}+q_{\blacktriangledown})+i(q'_{\blacktriangle}+q'_{\blacktriangledown})$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}=(q_{\blacktriangle}-q_{\blacktriangledown})+i(q'_{\blacktriangle}-q'_{\blacktriangledown})$, whose moduli are the displayed sums of two squares, and a complex number vanishes exactly when its two real coordinates do. The inverse is the idempotent inverse of <em>The Group of Units of the Algebra of the Reduced Biquaternions</em>, read in the two coordinates.</p>

@@ -97,7 +97,7 @@ $$</p>
 <h2 id="the-decomposition-of-the-connection-laplacian">The Decomposition of the Connection Laplacian</h2>
 <p><strong>Theorem (the orthogonal decomposition).</strong> The connection Laplacian decomposes as</p>
 <p>$$
-\nabla^{*}\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2} ,
+\boxed{\;\nabla^{*}\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2}\;} ,
 $$</p>
 <p>where $D$ is the Cauchy–Riemann operator of <em>The Spinor Operator</em>; both summands are non-negative operators on the compactly supported sections, and the decomposition is orthogonal for the $L^2$ form.</p>
 <p><strong>Proof.</strong> Let $\pi=\mathrm{id}-\frac1nc^*c$ be the projection onto $\ker c$ and write the identity $\mathrm{id}=\pi+\frac1nc^*c$. Then</p>
@@ -110,11 +110,11 @@ $$</p>
 <h2 id="the-twistor-equation">The Twistor Equation</h2>
 <p><strong>Theorem.</strong> For a spinor $\sigma$ the twistor equation $\mathcal{T}\sigma=0$ is equivalent to</p>
 <p>$$
-\nabla_X\sigma = -\tfrac1n c(X)D\sigma \qquad\text{for all vector fields } X ,
+\boxed{\;\nabla_X\sigma = -\tfrac1n c(X)D\sigma \qquad\text{for all vector fields } X\;} ,
 $$</p>
 <p>and then $\sigma$ satisfies the scalar identity</p>
 <p>$$
-\nabla^{*}\nabla\sigma = \frac{\operatorname{scal}}{4(n-1)}\,\sigma , \qquad D^{2}\sigma = \frac{n}{4(n-1)}\,\operatorname{scal}\,\sigma ,
+\boxed{\;\nabla^{*}\nabla\sigma = \frac{\operatorname{scal}}{4(n-1)}\,\sigma , \qquad D^{2}\sigma = \frac{n}{4(n-1)}\,\operatorname{scal}\,\sigma\;} ,
 $$</p>
 <p>where $\operatorname{scal}$ is the scalar curvature.</p>
 <p><strong>Proof.</strong> $\mathcal{T}\sigma=0$ means that $\nabla\sigma$, a one-form valued spinor, lies in the kernel of the contraction $c$, that is in the image of $c^*$, and the component form of that membership is $\nabla_X\sigma=-\frac1nc(X)D\sigma$: indeed $c(\nabla\sigma)=0$ means $\sum_ic(e_i)\nabla_i\sigma=0$, and the trace-free condition identifies $\nabla_X\sigma+\frac1nc(X)D\sigma$ as the orthogonal projection onto the trace-free part. For the scalar identity, substitute into the decomposition of the connection Laplacian: $\nabla^*\nabla\sigma=\frac1nD^2\sigma$ because the first summand vanishes, and the Lichnerowicz formula $D^2=\nabla^*\nabla+\frac14\operatorname{scal}$ of <em>The Spinor Operator</em> gives $\nabla^*\nabla\sigma=\frac1n\nabla^*\nabla\sigma+\frac{\operatorname{scal}}{4n}\sigma$, which is the display.</p>

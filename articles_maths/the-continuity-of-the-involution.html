@@ -80,7 +80,7 @@
 <p><em>Proof.</em> If $\varphi$ is continuous at $0$ and $a \in M$, then $\varphi(a + \Omega) \subseteq \varphi(a) + \varphi(\Omega)$ for every neighbourhood $\Omega$ of $0$, because $\varphi$ is additive, so continuity at $a$ follows from continuity at $0$; the converse is immediate.</p>
 <p><strong>Theorem (the twisted action).</strong> Let $A$ be a topological $R$-module and suppose $\varsigma$ continuous. Then the twisted action</p>
 <p>$$
-R \times A \longrightarrow A, \qquad (\lambda,x) \longmapsto \lambda \cdot x = \varsigma(\lambda)x,
+\boxed{\;R \times A \longrightarrow A, \qquad (\lambda,x) \longmapsto \lambda \cdot x = \varsigma(\lambda)x\;},
 $$</p>
 <p>is continuous, so $A^{\varsigma}$ is a topological $R$-module; the identity map $A \to A^{\varsigma}$ is a homeomorphism of the additive topological groups, it is an isomorphism of topological $R$-modules exactly when $\varsigma = \mathrm{id}$, and in general it is a $\varsigma$-semilinear homeomorphism.</p>
 <p><em>Proof.</em> The twisted action is the composite of the continuous map $(\lambda,x) \mapsto (\varsigma(\lambda),x)$ of $R \times A$ with the continuous scalar action of $R$ on $A$; hence it is continuous, and the module axioms of $A^{\varsigma}$ are those of <em>Sesqualgebras</em>, §<em>The Conjugate Module</em>. The identity is a bijection carrying the additive topology of $A$ to that of $A^{\varsigma}$, the two modules sharing the underlying abelian topological group, so it is a homeomorphism; it is $R$-linear exactly when $\varsigma(\lambda)x = \lambda x$ for every $\lambda$ and $x$, which for a module with $\lambda \mapsto \lambda x$ injective for some $x$ is $\varsigma = \mathrm{id}$, and it is $\varsigma$-semilinear in general, $\lambda \cdot x = \varsigma(\lambda)x$ being the definition of the twisted action.</p>
@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-normal-form-of-a-continuous-involution">The Normal Form of a Continuous Involution</h3>
 <p><strong>Theorem (the isometric normal form).</strong> Let $A$ be an associative algebra with a submultiplicative norm $\lVert\cdot\rVert$ and an involution $*$, and put</p>
 <p>$$
-\lVert x\rVert_{*} = \max\bigl(\lVert x\rVert, \lVert x^{*}\rVert\bigr) .
+\boxed{\;\lVert x\rVert_{*} = \max\bigl(\lVert x\rVert, \lVert x^{*}\rVert\bigr)\;} .
 $$</p>
 <p>Then $\lVert\cdot\rVert_{*}$ is a norm on $A$, it is equivalent to $\lVert\cdot\rVert$ as soon as $*$ is continuous for $\lVert\cdot\rVert$, it is submultiplicative, and the involution is isometric for it, $\lVert x^{*}\rVert_{*} = \lVert x\rVert_{*}$. Consequently an algebra with a continuous involution may always be read with an isometric one, and the $\mathrm{C}^{*}$-identity is the sharp case of the construction.</p>
 <p><em>Proof.</em> The maximum of two norms is a norm: it is positive definite because $\lVert x\rVert_{*}=0$ gives $\lVert x\rVert = 0$, homogeneous because both terms are, and subadditive because the maximum of two subadditive functions is subadditive. If $*$ is continuous with $\lVert *\rVert = C$ then $\lVert x^{*}\rVert \leq C\lVert x\rVert$, so $\lVert x\rVert \leq \lVert x\rVert_{*} \leq \max(1,C)\lVert x\rVert$, which is the equivalence. Submultiplicativity is</p>
@@ -149,7 +149,7 @@ $$</p>
 <h3 id="the-product-on-the-pair">The Product on the Pair</h3>
 <p><strong>Theorem (the product is a continuous bilinear map on the pair).</strong> Let $A$ be a sesqualgebra over $(R,\varsigma)$ whose product is separately continuous and suppose $\varsigma$ continuous. Then the product, read as a map</p>
 <p>$$
-A \times A^{\varsigma} \longrightarrow A, \qquad (x,y) \longmapsto xy ,
+\boxed{\;A \times A^{\varsigma} \longrightarrow A, \qquad (x,y) \longmapsto xy\;} ,
 $$</p>
 <p>is $R$-bilinear and separately continuous, and it is jointly continuous as soon as the product is.</p>
 <p><em>Proof.</em> The bilinearity is the theorem of <em>Sesqualgebras</em>, §<em>The Conjugate Module</em>, which identifies the two scalar rules with the bilinearity of the product on the pair; the continuity in the first variable is the continuity of the product of $A$ in its first variable, and the continuity in the second is the continuity of the twisted action followed by the product, by §<em>The Algebra Involution</em> above.</p>

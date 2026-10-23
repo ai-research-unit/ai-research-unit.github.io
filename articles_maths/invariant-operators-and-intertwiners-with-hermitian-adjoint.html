@@ -77,12 +77,12 @@
 <h3 id="the-category-of-clifford-modules-and-the-adjoint-functor">The Category of Clifford Modules and the Adjoint Functor</h3>
 <p><strong>Definition.</strong> Let $S$ be a right/left Clifford module with action $\rho$ and $S'$ one with action $\rho'$. An <strong>intertwiner</strong> (a <strong>Clifford-linear map</strong>) is an $A$-linear map $T : S\to S'$ with</p>
 <p>$$
-T\,\rho(x) = \rho'(x)\,T \qquad \text{for all } x\in\mathrm{Cl}(V,\mathfrak{Q}).
+\boxed{\;T\,\rho(x) = \rho'(x)\,T \qquad \text{for all } x\in\mathrm{Cl}(V,\mathfrak{Q})\;}.
 $$</p>
 <p>The intertwiners are the morphisms of the category of Clifford modules; the identity is an intertwiner and a composite of intertwiners is an intertwiner, so the modules and intertwiners form an $A$-linear category.</p>
 <p><strong>Proposition (the adjoint of an intertwiner interwines the adjoint actions).</strong> Let the modules carry Hermitian forms with spinor adjoints $J, J'$ of <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>, and let $T : S\to S'$ be an intertwiner with adjoint $T^{*} : S'\to S$ for those forms. Then</p>
 <p>$$
-T^{*}\,\rho'(x)^{*} = \rho(x)^{*}\,T^{*} \qquad \text{for all } x,
+\boxed{\;T^{*}\,\rho'(x)^{*} = \rho(x)^{*}\,T^{*} \qquad \text{for all } x\;},
 $$</p>
 <p>so $T^{*}$ intertwines the adjoint action of $\rho'$ with the adjoint action of $\rho$.</p>
 <p><strong>Proof.</strong> Adjoint the identity $T\rho(x) = \rho'(x)T$: $\rho(x)^{*}T^{*} = T^{*}\rho'(x)^{*}$, and use $\rho(x)^{*} = \rho(x^{\dagger})$ of <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> to read it as an intertwining between the adjoint actions.</p>
@@ -101,7 +101,7 @@ $$</p>
 <h3 id="the-unitary-invariant-operators-and-the-slice">The Unitary Invariant Operators and the Slice</h3>
 <p><strong>Theorem (unitary invariants).</strong> An invariant operator $T$ is <strong>unitary</strong> (that is, $T^{*}T = TT^{*} = \mathrm{id}$) iff the invariant endomorphism it defines is an isometry of the module form. On the regular module $R_b$ is unitary iff $b$ lies in the unitary slice $U$ of <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>:</p>
 <p>$$
-R_b^{*}R_b = R_{b^{\dagger}b} = \mathrm{id} \iff b^{\dagger}b = 1 \iff b\in U .
+\boxed{\;R_b^{*}R_b = R_{b^{\dagger}b} = \mathrm{id} \iff b^{\dagger}b = 1 \iff b\in U\;} .
 $$</p>
 <p>So the group of unitary invariant operators on the regular module is a copy of the unitary slice $U$, and it acts on the module by the right regular representation; the map $b\mapsto R_b$ is a group anti-isomorphism of $U$ onto it.</p>
 <p><strong>Proof.</strong> $R_b^{*}R_b = R_{b^{\dagger}}R_b = R_{bb^{\dagger}}$, and also $= R_{b^{\dagger}b}$; each equals $\mathrm{id}$ iff the corresponding product in $A$ is $1$, which is the definition of the slice.</p>

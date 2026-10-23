@@ -85,7 +85,7 @@ $$
 that is when every even endomorphism preserves the two parts of $M$ and every odd endomorphism carries $M_0$ to $M_1$ and $M_1$ to $M_0$. A graded left $E$-module with a compatible action is a <strong>graded module over $E$</strong>.</p>
 <p><strong>Proposition (the equivalent form).</strong> The action is compatible if and only if for every homogeneous $X \in E_i$ and every $m \in M$,
 $$
-X\,\beta(m) = (-1)^{i}\,\beta(X\,m),
+\boxed{\;X\,\beta(m) = (-1)^{i}\,\beta(X\,m)\;},
 $$
 equivalently $\beta(Xm) = (-1)^i X\beta(m)$; the two grade involutions therefore satisfy $\beta\circ\rho_X = (-1)^i\,\rho_X\circ\beta$ on the homogeneous part $E_i$.</p>
 <p><strong>Proof.</strong> If $m \in M_j$ and $X \in E_i$, then $Xm \in M_{i+j}$, so $\beta(Xm) = (-1)^{i+j}Xm = (-1)^iX((-1)^jm) = (-1)^iX\beta(m)$; conversely the identity for all homogeneous $m$ forces $X(M_j)\subseteq M_{i+j}$, since for $m \in M_j$ one has $\beta(Xm) = (-1)^{i+j}Xm$, which is the homogeneity statement.</p>
@@ -98,7 +98,7 @@ equivalently $\beta(Xm) = (-1)^i X\beta(m)$; the two grade involutions therefore
 <p><strong>Proof.</strong> The action is associative and unital by the definition of composition, and the inclusions are the parity statement: $X \in E_i$ satisfies $X(V_j)\subseteq V_{i+j}$ because $XT = (-1)^iTX$ and the $V_j$ are the $T$-eigenspaces. This is <em>Involutions of a Graded Linear Space</em>.</p>
 <p><strong>Proposition (the induced involution on the module endomorphisms).</strong> The algebra $\operatorname{End}_E(M)$ of module endomorphisms is graded by
 $$
-\operatorname{End}_E(M)_i = \{f : f(M_j)\subseteq M_{i+j}\},
+\boxed{\;\operatorname{End}_E(M)_i = \{f : f(M_j)\subseteq M_{i+j}\}\;},
 $$
 with grade involution $\gamma(f) = \beta f \beta$; the same holds for the algebra $\operatorname{End}_{\mathbb C}(M)$ of all complex-linear endomorphisms of $M$ when $M$ is a complex vector space.</p>
 <p><strong>Proof.</strong> The composition of endomorphisms adds parities, and conjugation by $\beta$ is an automorphism of order two with the two eigenspaces $f(M_j)\subseteq M_j$ and $f(M_j)\subseteq M_{1-j}$. This is the computation of <em>Involutions of a Graded Linear Space</em> for the endomorphism algebra of a graded space.</p>
@@ -114,7 +114,7 @@ D(mn) = (Dm)\,n + (-1)^{|D||m|}\,m\,(Dn) .
 $$</p>
 <p><strong>Proposition (the sign rule is the parity of the action).</strong> Let $X \in E_i$ act on the graded module $M$ by $\rho_X$, and suppose $M$ is an algebra on which $E$ acts by derivations. Then $X$ acts as a graded derivation of parity $i$,
 $$
-\rho_X(mn) = \rho_X(m)\,n + (-1)^{i|m|}\,m\,\rho_X(n) ,
+\boxed{\;\rho_X(mn) = \rho_X(m)\,n + (-1)^{i|m|}\,m\,\rho_X(n)\;} ,
 $$
 and the sign is the Koszul sign of the two odd objects $X$ and $m$.</p>
 <p><strong>Proof.</strong> The compatibility $\beta\rho_X = (-1)^i\rho_X\beta$ says that the action of $X$ is even or odd according to $i$; an action of parity $i$ that is a derivation of the algebra $M$ is a graded derivation of parity $i$, which is exactly the displayed rule. The rule is not an extra axiom of the graded action; it is the parity of the graded structure, and its own theory is <em>Superalgebras and Graded Structures</em>.</p>

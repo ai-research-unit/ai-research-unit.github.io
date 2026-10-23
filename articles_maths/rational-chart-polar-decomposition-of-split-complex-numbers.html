@@ -145,11 +145,11 @@ $$</p>
 <h3 id="the-chart">The Chart</h3>
 <p>For real $s\neq\pm1$ define</p>
 <p>$$
-u(s) = \frac{1-sj}{1+sj} = \frac{1+s^2}{1-s^2} - \frac{2s}{1-s^2}\,j .
+u(s) = \frac{1-sj}{1+sj} = \frac{1+s^2}{1-s^2} - \frac{2s}{1-s^2}\,j.
 $$</p>
 <p>The element $1+sj$ has norm $1-s^2$, so it is invertible exactly when $s\neq\pm1$; the displayed form has the real denominator $1-s^2$, which vanishes at $s=\pm1$. The norm is constant on the chart:</p>
 <p>$$
-\langle u(s)\rangle_{*} = \frac{\langle 1-sj\rangle_{*}}{\langle 1+sj\rangle_{*}} = \frac{1-s^2}{1-s^2} = 1.
+\boxed{\;\langle u(s)\rangle_{*} = \frac{\langle 1-sj\rangle_{*}}{\langle 1+sj\rangle_{*}} = \frac{1-s^2}{1-s^2} = 1\;}.
 $$</p>
 <p>The chart is rational, defined over $\mathbb{Q}$, and it uses no hyperbolic function. Its values at small integers and fractions are as follows.</p>
 <div class="table-scroll"><table>
@@ -197,7 +197,7 @@ $$</p>
 <h3 id="the-inverse">The Inverse</h3>
 <p>Let $u=x+yj$ be a unit of norm $1$. The inverse of the chart is</p>
 <p>$$
-s = -\frac{j(u-1)}{u+1} = \frac{j(1-u)}{u+1},
+\boxed{\;s = -\frac{j(u-1)}{u+1} = \frac{j(1-u)}{u+1}\;},
 $$</p>
 <p>defined for $u\neq-1$. Since $\langle u\rangle_{*}=1$, the conjugate is the inverse, $\bar u=u^{-1}$, and the conjugate of $s$ is</p>
 <p>$$
@@ -277,7 +277,7 @@ $$</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ and $Q$ not on the negative real axis has a unique decomposition</p>
 <p>$$
-Q = r\,\epsilon\,u(s), \qquad r>0, \quad \epsilon\in\{1,j,-j\}, \quad s\in\mathbb{R}\setminus\{\pm1\},
+\boxed{\;Q = r\,\epsilon\,u(s), \qquad r>0, \quad \epsilon\in\{1,j,-j\}, \quad s\in\mathbb{R}\setminus\{\pm1\}\;},
 $$</p>
 <p>with $\epsilon=1$ in the timelike regime and $\epsilon=\pm j$ in the spacelike regime, the sign chosen by the sign of $q'$. The decomposition is defined exactly on $\{\langle Q\rangle_{*}\neq0\}\setminus\mathbb{R}_{<0}$.</p>
 <p><strong>Timelike regime.</strong> Let $\langle Q\rangle_{*}>0$. Put $r=\sqrt{\langle Q\rangle_{*}}$ and $u=Q/r$, so $\langle u\rangle_{*}=1$. If $u\neq-1$, let $s$ be the inverse of §<em>The Inverse</em> and write</p>
@@ -353,7 +353,7 @@ u(s_1)u(s_2) = \frac{(1-s_1j)(1-s_2j)}{(1+s_1j)(1+s_2j)} = \frac{1+s_1s_2-(s_1+s
 $$</p>
 <p>where</p>
 <p>$$
-s_3 = \frac{s_1+s_2}{1+s_1s_2}.
+\boxed{\; s_3 = \frac{s_1+s_2}{1+s_1s_2} \;}.
 $$</p>
 <p>The identity is $s=0$, because $u(0)=1$, and the inverse is $s\mapsto-s$, because $u(s)u(-s)=1$. The law is the hyperbolic addition formula, transported from the exponential coordinate by $s=-\tanh(\phi/2)$ on the identity component.</p>
 <p>The pole occurs when $1+s_1s_2=0$, that is $s_1s_2=-1$. At that parameter value the product is</p>

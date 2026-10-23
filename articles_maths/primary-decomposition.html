@@ -122,7 +122,7 @@ $$</p>
 <h3 id="existence">Existence</h3>
 <p><strong>Theorem (Lasker–Noether).</strong> Let $R$ be a commutative Noetherian ring. Every proper ideal $I \subsetneq R$ is a finite intersection of primary ideals,</p>
 <p>$$
-I = \mathrm{Q}_1 \cap \mathrm{Q}_2 \cap \cdots \cap \mathrm{Q}_r .
+\boxed{\;I = \mathrm{Q}_1 \cap \mathrm{Q}_2 \cap \cdots \cap \mathrm{Q}_r\;} .
 $$</p>
 <p><strong>Proof.</strong> By the two lemmas, $I$ is a finite intersection of irreducible ideals, and each irreducible ideal is primary.</p>
 <p><strong>Definition.</strong> A primary decomposition $I = \mathrm{Q}_1 \cap \cdots \cap \mathrm{Q}_r$ is <strong>irredundant</strong> (or minimal) if no $\mathrm{Q}_i$ contains the intersection of the others, and the $\mathrm{Q}_i$ have pairwise distinct radicals. Every decomposition can be made irredundant by deleting redundant components and combining components with the same radical.</p>
@@ -151,7 +151,7 @@ $$</p>
 <p><strong>Proof.</strong> Immediate from the description of the $\mathrm{P}_i$ as the primes of the form $(I : x)$ and the finiteness of the decomposition.</p>
 <p><strong>Theorem (second uniqueness theorem).</strong> Let $I = \bigcap_i \mathrm{Q}_i$ be an irredundant primary decomposition and let $\mathrm{P}_i = \operatorname{rad}(\mathrm{Q}_i)$. If $\mathrm{P}_i$ is a minimal prime of $I$, then the component $\mathrm{Q}_i$ is uniquely determined by $I$ and $\mathrm{P}_i$: with $\iota : R \to R_{\mathrm{P}_i}$ the localization map and $I_{\mathrm{P}_i}$ the localization of the ideal $I$,</p>
 <p>$$
-\mathrm{Q}_i = \iota^{-1}(I_{\mathrm{P}_i}).
+\boxed{\;\mathrm{Q}_i = \iota^{-1}(I_{\mathrm{P}_i})\;}.
 $$</p>
 <p>Equivalently, $\mathrm{Q}_i$ consists of those $r \in R$ with $sr \in I$ for some $s \notin \mathrm{P}_i$.</p>
 <p><strong>Proof.</strong> Localizing at $\mathrm{P}_i$ kills every component $\mathrm{Q}_j$ with $j \neq i$ for which $\mathrm{P}_j \not\subseteq \mathrm{P}_i$, and the minimality of $\mathrm{P}_i$ guarantees this for every $j \neq i$. So $I_{\mathrm{P}_i} = (\mathrm{Q}_i)_{\mathrm{P}_i}$, and the contraction of $(\mathrm{Q}_i)_{\mathrm{P}_i}$ is the set of $r$ with $sr \in \mathrm{Q}_i$ for some $s \notin \mathrm{P}_i$. Since $\mathrm{Q}_i$ is $\mathrm{P}_i$-primary, this contraction equals $\mathrm{Q}_i$; and it is determined by $I$ and $\mathrm{P}_i$ alone.</p>
@@ -198,7 +198,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> A proper ideal is contained in a maximal ideal $\mathrm{M}$, and it suffices to show that a maximal ideal $\mathrm{M} \subseteq k[x_1, \ldots, x_n]$ with $k$ algebraically closed has the form $(x_1 - a_1, \ldots, x_n - a_n)$. This is the algebraic form of the statement that $k[x_1, \ldots, x_n]/\mathrm{M}$ is a finite extension field of $k$, hence equal to $k$ by algebraic closedness. The finiteness of the extension is Zariski's lemma, an instance of the Nullstellensatz that uses the integral extension theory.</p>
 <p><strong>Theorem (strong Nullstellensatz).</strong> Let $k$ be algebraically closed and let $I \subseteq k[x_1, \ldots, x_n]$ be an ideal. Then</p>
 <p>$$
-I(V(I)) = \operatorname{rad}(I).
+\boxed{\;I(V(I)) = \operatorname{rad}(I)\;}.
 $$</p>
 <p>Equivalently, the maps $I \mapsto V(I)$ and $S \mapsto I(S)$ are inverse bijections between radical ideals and algebraic subsets of $k^n$.</p>
 <p><strong>Proof sketch.</strong> The inclusion $\operatorname{rad}(I) \subseteq I(V(I))$ is clear. For the reverse inclusion, let $f$ vanish wherever $I$ does. Introduce a new variable $t$ and consider the ideal $J = I + (t f - 1) \subseteq k[x_1, \ldots, x_n, t]$; it has no common zero, so by the weak Nullstellensatz it is the whole ring, say $1 = \sum g_i h_i + g(tf - 1)$. Substituting $t = 1/f$ and clearing denominators, which is the classical Rabinowitsch trick, produces an identity $f^m = \sum a_i h_i$ with $h_i \in I$, whence $f \in \operatorname{rad}(I)$.</p>

@@ -84,8 +84,8 @@
 $$</p>
 <p>so the functions $\exp(\pi)_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ form an orthonormal basis of $L^2(K)$. Consequently</p>
 <p>$$
-L^2(K) = \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigoplus_{i,j=1}^{d_\pi}\ \mathbb{C}\,\exp(\pi)_{ij}
-\;\cong\; \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigl(\mathcal{H}_\pi \otimes \mathcal{H}_\pi^*\bigr),
+\boxed{\;L^2(K) = \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigoplus_{i,j=1}^{d_\pi}\ \mathbb{C}\,\exp(\pi)_{ij}
+\;\cong\; \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigl(\mathcal{H}_\pi \otimes \mathcal{H}_\pi^*\bigr)\;},
 $$</p>
 <p>the orthogonal direct sum being a Hilbert-space direct sum, and each irreducible $\pi$ occurring with multiplicity $d_\pi$.</p>
 <p><strong>(c) Complete reducibility.</strong> Every continuous unitary representation of $K$ on a Hilbert space is a direct sum of finite-dimensional irreducible unitary representations; equivalently, every closed invariant subspace has a closed invariant complement. In particular every irreducible unitary representation of $K$ is finite-dimensional.</p>
@@ -143,7 +143,7 @@ $$</p>
 <h3 id="finite-dimensionality-and-the-algebraic-structure-of-the-regular-representation">Finite Dimensionality and the Algebraic Structure of the Regular Representation</h3>
 <p><strong>Corollary (algebraic Peter–Weyl).</strong> As an algebra under convolution, appropriately completed, the regular representation gives</p>
 <p>$$
-L^1(K) \;\widehat{\longrightarrow}\; \bigoplus_{\pi\in\operatorname{Irr}(K)} \operatorname{End}(\mathcal{H}_\pi)
+\boxed{\;L^1(K) \;\widehat{\longrightarrow}\; \bigoplus_{\pi\in\operatorname{Irr}(K)} \operatorname{End}(\mathcal{H}_\pi)\;}
 $$</p>
 <p>under $f \mapsto ((\mathcal F f)(\pi))$, the target being the algebraic direct sum of full matrix algebras; equivalently the group von Neumann algebra $L(K) = \lambda(K)''$ is the direct sum $\bigoplus_\pi \operatorname{End}(\mathcal{H}_\pi)$, a type I von Neumann algebra.</p>
 <p><strong>Proof.</strong> The convolution theorem gives the homomorphism; injectivity is the completeness of the coefficient algebra (a function whose transform vanishes is orthogonal to every matrix coefficient); the image of the centre of $L^1(K)$ consists of the scalar operators, and the whole map is onto the algebraic direct sum because the matrix units $\exp(\pi)_{ij}$ have transforms supported on $\mathcal{H}_\pi$. The von Neumann algebra statement is the weak closure of the image, namely the direct sum of the finite-dimensional factors.</p>
@@ -160,7 +160,7 @@ $$</p>
 <h3 id="the-compact-lie-case-and-the-heat-kernel">The Compact Lie Case and the Heat Kernel</h3>
 <p>Let $K$ be a compact connected Lie group with Lie algebra $\mathrm{K}$ and $-\Delta$ the Laplace–Beltrami operator of a bi-invariant metric, a positive essentially self-adjoint operator on $L^2(K)$ commuting with both regular representations. By Peter–Weyl, $L^2(K)$ is the Hilbert sum of the finite-dimensional summands $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$, on each of which $-\Delta$ acts as a scalar $\lambda_\pi \geq 0$, the <strong>Casimir eigenvalue</strong> of $\pi$: $-\Delta f = \lambda_\pi f$ for $f$ in the summand of $\pi$. Hence the heat semigroup is</p>
 <p>$$
-\exp(-t(-\Delta)) f = \sum_{\pi\in\operatorname{Irr}(K)} \exp(-\lambda_\pi t)\, \operatorname{pr}_\pi f ,
+\boxed{\;\exp(-t(-\Delta)) f = \sum_{\pi\in\operatorname{Irr}(K)} \exp(-\lambda_\pi t)\, \operatorname{pr}_\pi f\;} ,
 $$</p>
 <p>where $\operatorname{pr}_\pi$ is the orthogonal projection onto the coefficient space of $\pi$, and the <strong>heat kernel</strong> is</p>
 <p>$$

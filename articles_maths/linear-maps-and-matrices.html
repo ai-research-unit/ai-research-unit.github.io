@@ -86,7 +86,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>rank</strong> of a linear map $T:V \to W$ is $\operatorname{rk}T=\dim_F\operatorname{im}T$, and its <strong>nullity</strong> is $\operatorname{null}T=\dim_F\ker T$.</p>
 <p><strong>Theorem (rank–nullity).</strong> For every $T:V \to W$ with $V$ finite-dimensional,</p>
 <p>$$
-\dim_F V=\dim_F\ker T+\dim_F\operatorname{im}T, \qquad \text{that is} \qquad \dim_F V=\operatorname{null}T+\operatorname{rk}T .
+\boxed{\;\dim_F V=\dim_F\ker T+\dim_F\operatorname{im}T, \qquad \text{that is} \qquad \dim_F V=\operatorname{null}T+\operatorname{rk}T\;} .
 $$</p>
 <p><em>Proof.</em> Let $u_1,\dots,u_k$ be a basis of $\ker T$. By the basis extension theorem it extends to a basis $u_1,\dots,u_k,v_1,\dots,v_r$ of $V$. The images $T(v_1),\dots,T(v_r)$ span $\operatorname{im}T$, because any $T(v)$ with $v=\sum a_i u_i+\sum b_j v_j$ equals $\sum b_j T(v_j)$. They are independent: if $\sum b_j T(v_j)=0$ then $T(\sum b_j v_j)=0$, so $\sum b_j v_j \in \ker T$ and hence is a combination of the $u_i$; independence of the full basis forces all $b_j=0$. Thus $T(v_1),\dots,T(v_r)$ is a basis of $\operatorname{im}T$, so $\operatorname{rk}T=r$ and $k+r=\dim_F V$.</p>
 <p>The theorem fails once $F$ is replaced by a ring, and the failure is structural: the proof extends a basis of $\ker T$ to a basis of $V$, which requires $\ker T$ to be a direct summand. Over $R=\mathbb{Z}$ the map $T:\mathbb{Z}\to\mathbb{Z}$, $T(x)=2x$, has kernel $0$ and image $2\mathbb{Z}\cong\mathbb{Z}$, and the numerical identity $1=0+1$ survives, but the subgroup $2\mathbb{Z}$ has no complement in $\mathbb{Z}$, so no basis of $\mathbb{Z}$ adapted to the kernel exists. Over a non-domain the very notion of dimension disappears; over $R=\mathbb{Z}/4\mathbb{Z}$ the map $x \mapsto 2x$ has kernel and image both equal to the two-element submodule $2R$, which is not free, so no rank is defined.</p>
@@ -142,7 +142,7 @@ $$</p>
 <p><strong>Theorem.</strong> For every matrix, column rank equals row rank.</p>
 <p><em>Proof.</em> Let $T:F^n \to F^m$ be the linear map with matrix $A$ in the standard bases, so that $\operatorname{im}T$ is the column space and $\operatorname{rk}A=\operatorname{rk}T$. The transpose $A^{\mathsf{T}}$ is the matrix of the linear map $T^*:F^m \to F^n$ given by $T^*(y)=A^{\mathsf{T}}y$, whose image is exactly the row space of $A$. Hence row rank $=\operatorname{rk}T^*$. Now $\ker T^*=(\operatorname{im}T)^{\perp}=\{y : y^{\mathsf{T}}Ax=0 \text{ for all } x \in F^n\}$, which has dimension $m-\dim\operatorname{im}T=m-\operatorname{rk}A$; applying rank–nullity to $T^*:F^m \to F^n$ gives</p>
 <p>$$
-\operatorname{rk}T^*=m-\dim\ker T^*=m-(m-\operatorname{rk}A)=\operatorname{rk}A .
+\boxed{\;\operatorname{rk}T^*=m-\dim\ker T^*=m-(m-\operatorname{rk}A)=\operatorname{rk}A\;} .
 $$</p>
 <p>Because the two ranks agree, one writes $\operatorname{rk}A$ without qualification. The rank is the number of pivots in any row-echelon form of $A$, equivalently the size of the largest invertible square submatrix — the last equivalence is proved next.</p>
 <h3 id="rank-and-minors">Rank and Minors</h3>
@@ -178,7 +178,7 @@ $$</p>
 <p>A system $Ax=b$ with $A$ an $m \times n$ matrix over $F$ asks for the $x \in F^n$ with $T(x)=b$, where $T$ is the map with matrix $A$. The system is <strong>consistent</strong> if $b \in \operatorname{im}T$, that is, if $b$ lies in the column space of $A$; and the solution set, when non-empty, is a coset of $\ker T$, of size $|F|^{\operatorname{null}T}$ when $F$ is finite.</p>
 <p><strong>Theorem (rank criterion).</strong> The system $Ax=b$ is consistent if and only if</p>
 <p>$$
-\operatorname{rk}A=\operatorname{rk}[A \mid b],
+\boxed{\;\operatorname{rk}A=\operatorname{rk}[A \mid b]\;},
 $$</p>
 <p>where $[A\mid b]$ is the augmented matrix.</p>
 <p><em>Proof.</em> The column space of $[A\mid b]$ contains the column space of $A$ and is spanned by it together with $b$; the two have the same dimension exactly when $b$ lies in the column space of $A$, which is consistency.</p>

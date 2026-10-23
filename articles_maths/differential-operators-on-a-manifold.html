@@ -114,7 +114,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition (symbols of a composition and of an adjoint).</strong> Let $P \in D^k(E,F)$ and $Q \in D^l(F,G)$. Then</p>
 <p>$$
-\sigma_{k+l}(QP) = \sigma_l(Q)\,\sigma_k(P),
+\boxed{\;\sigma_{k+l}(QP) = \sigma_l(Q)\,\sigma_k(P)\;},
 $$</p>
 <p>the product being the composition of the two homomorphisms of the fibres. If $E$ and $F$ carry metrics and $P^*$ is the formal adjoint of $P$ with respect to them, then $P^*$ has order $k$ and</p>
 <p>$$
@@ -145,7 +145,7 @@ $$</p>
 <h3 id="differential-operators-as-bundle-maps">Differential Operators as Bundle Maps</h3>
 <p><strong>Theorem.</strong> Let $P : \Gamma(E) \to \Gamma(F)$ be an $\mathbb{R}$-linear map. Then $P$ is a differential operator of order at most $k$ if and only if there is a bundle homomorphism $\Phi : J^kE \to F$ such that</p>
 <p>$$
-P(s)(x) = \Phi\bigl(j_k s(x)\bigr) \qquad \text{for all } s \in \Gamma(E),\ x \in M .
+\boxed{\;P(s)(x) = \Phi\bigl(j_k s(x)\bigr) \qquad \text{for all } s \in \Gamma(E),\ x \in M\;} .
 $$</p>
 <p>The homomorphism $\Phi$ is unique, and the assignment $P \leftrightarrow \Phi$ is an isomorphism of $C^\infty(M)$-modules</p>
 <p>$$
@@ -154,7 +154,7 @@ $$</p>
 <p><em>Proof.</em> If such a $\Phi$ exists, its expression in a chart and a frame is $\sum_{|\alpha|\le k} A_\alpha(x)\partial/\partial x_\alpha s(x)$ with $A_\alpha$ the matrix of $\Phi$ on the fibre coordinates, so $P$ has order at most $k$; and $\Phi$ is smooth because $P$ is. Conversely, if $P$ has order at most $k$, its local expression shows that $P(s)(x)$ depends on $s$ only through $j_k s(x)$: two sections agreeing to order $k$ at $x$ have the same $P$-image at $x$, by the shape of the expression in any chart. This defines a map $\Phi_x : J^k_xE \to F_x$ by choosing a section $s$ with the given jet — the Taylor polynomial of the coordinate expression realises every jet — and putting $\Phi_x(j_k s(x)) = P(s)(x)$; the map is linear because $P$ is, and it is smooth because it is given in coordinates by the coefficient matrices, which are smooth. Uniqueness is the surjectivity of $j_k$ on the fibres: a homomorphism vanishing on every jet vanishes on every fibre. The module structure is read from the composition with functions, which act on $J^kE$ through the coordinate functions of the jets.</p>
 <p><strong>Corollary.</strong> The principal symbol of $P$ is the composition of the bundle surjection $S^kT^*M \otimes E \to J^kE$ of the jet exact sequence with $\Phi$:</p>
 <p>$$
-\sigma_k(P) : S^kT^*M \otimes E \longrightarrow J^kE \xrightarrow{\ \Phi\ } F .
+\boxed{\;\sigma_k(P) : S^kT^*M \otimes E \longrightarrow J^kE \xrightarrow{\ \Phi\ } F\;} .
 $$</p>
 <p>In particular the symbol is the top-order part of the bundle map, it is tensorial, and it vanishes exactly when $P$ has order at most $k-1$.</p>
 <p><strong>Corollary.</strong> A differential operator is exactly a map on sections that is local — the value of $Ps$ at $x$ depends on the germ of $s$ at $x$ — and $C^\infty(M)$-linear after composition with the jets. In particular the differential operators are the linear maps on sections that are local, and the operators of finite order are the maps that factor through some $J^k$.</p>

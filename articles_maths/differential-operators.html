@@ -158,7 +158,7 @@ $$</p>
 <p><em>Proof.</em> Each is read from the definition: the derivative brings the exponents of $\xi$ and the multiplication brings the coefficient.</p>
 <p><strong>Theorem (the symbol of a composition).</strong> Let $L_1$ and $L_2$ have symbols $\sigma_1$ and $\sigma_2$ and orders $m_1$ and $m_2$. Then the symbol of the composition is</p>
 <p>$$
-\sigma_{L_1L_2}(x,\xi) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial/\partial\xi^\gamma\,\sigma_1(x,\xi)\,\partial/\partial x^\gamma\,\sigma_2(x,\xi) ,
+\boxed{\;\sigma_{L_1L_2}(x,\xi) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial/\partial\xi^\gamma\,\sigma_1(x,\xi)\,\partial/\partial x^\gamma\,\sigma_2(x,\xi)\;} ,
 $$</p>
 <p>the sum being finite because $\partial/\partial\xi^\gamma\,\sigma_1$ vanishes for $|\gamma|>m_1$; the principal part of the right-hand side is the product $\sigma_{m_1}(x,\xi)\sigma_{m_2}(x,\xi)$ of the principal symbols.</p>
 <p><em>Proof.</em> It is enough to verify the identity for two monomials $a\,\partial^\alpha$ and $b\,\partial^\beta$ and to sum. By the Leibniz rule,</p>
@@ -187,7 +187,7 @@ $$</p>
 <p>Both are differential operators of order at most $m$, with coefficients as smooth as those of $L$. The transpose is the adjoint of $L$ for the bilinear pairing $\int_\Omega u\,v\,dx$ and the formal adjoint is the adjoint of $L$ for the Hermitian pairing $\langle u,v\rangle = \int_\Omega u\,\bar v\,dx$ of <em>Banach and Hilbert Spaces</em>, in the sense of the theorem below; the second is the transpose of the coefficient-conjugate operator, $L^{\dagger}v = \overline{L^{t}\bar v}$, and the two agree when the coefficients are real.</p>
 <p><strong>Theorem (the defining identity).</strong> Let $u$ and $v$ be of class $C_c^\infty(\Omega)$. Then</p>
 <p>$$
-\int_\Omega (Lu)\,\bar v\,dx = \int_\Omega u\,\overline{L^{\dagger}v}\,dx , \qquad \int_\Omega (Lu)\,v\,dx = \int_\Omega u\,(L^{t}v)\,dx .
+\boxed{\;\int_\Omega (Lu)\,\bar v\,dx = \int_\Omega u\,\overline{L^{\dagger}v}\,dx , \qquad \int_\Omega (Lu)\,v\,dx = \int_\Omega u\,(L^{t}v)\,dx\;} .
 $$</p>
 <p><em>Proof.</em> It suffices to treat a single term $a_\alpha\partial^\alpha$ and to sum. For compactly supported smooth functions the boundary terms of the integration by parts vanish, and iterating $|\alpha|$ times gives</p>
 <p>$$
@@ -255,7 +255,7 @@ $$</p>
 <p><em>Proof.</em> Take a fixed bump $\varphi\in C_c^\infty$, nonnegative and not identically zero, and put $u_k(x) = \varphi(x)\,\exp(ikx_i)$ for $k \in \mathbb{N}$. Then $\partial/\partial x_i\,u_k = ik\varphi \exp(ikx_i) + (\partial/\partial x_i\,\varphi)\exp(ikx_i)$, so $\|\partial/\partial x_i\,u_k\|_{L^2} \ge |k|\|\varphi\|_{L^2} - \|\partial/\partial x_i\,\varphi\|_{L^2}$ while $\|u_k\|_{L^2} = \|\varphi\|_{L^2}$; for $k$ large enough the quotient exceeds $M$.</p>
 <p><strong>Theorem (the domain decides self-adjointness).</strong> Let $L$ be a differential operator with smooth coefficients. The formal adjoint is the transpose of the maximal realisation in the sense that, for $v \in \mathcal{D}_{\max}(L)$ and $u \in C_c^\infty(\Omega)$,</p>
 <p>$$
-\langle Lu,v\rangle = \langle u, L^{\dagger}v\rangle ,
+\boxed{\;\langle Lu,v\rangle = \langle u, L^{\dagger}v\rangle\;} ,
 $$</p>
 <p>and the minimal realisation of $L$ is contained in the adjoint of the maximal realisation of $L^{\dagger}$. The equality $\mathcal{D}(L)=\mathcal{D}(L^{\dagger})$ and $L = L^{\dagger}$ holds for some choice of boundary condition but not for the maximal realisation alone: the expression $-\Delta$ on a bounded domain is symmetric on $C_c^\infty(\Omega)$ and has distinct self-adjoint extensions differing in their boundary conditions.</p>
 <p><em>Proof.</em> The pairing identity is the defining identity of the formal adjoint, and it passes to $v\in\mathcal{D}_{\max}(L)$ by density of the test functions because both sides are continuous in the graph norm. The inclusion of the minimal realisation in the adjoint of the maximal one is the statement that a compactly supported test function is annihilated by every boundary term, so that the adjoint, defined by the pairing and free of boundary conditions on the test side, contains it. The failure of self-adjointness for the maximal realisation is the failure of the boundary term to vanish; the self-adjoint extensions and the boundary conditions that select them are constructed in <em>The Adjoint Boundary Condition</em>, and the case of the Sturm–Liouville expression is <em>Self-Adjoint Sturm–Liouville Operators</em>, both below.</p>

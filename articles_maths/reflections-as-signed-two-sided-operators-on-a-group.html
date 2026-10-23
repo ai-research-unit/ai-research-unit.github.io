@@ -76,13 +76,13 @@
 <p><strong>Definition.</strong> For $a\in G$ the <strong>signed conjugation</strong> by $a$ is the signed sandwich $\Sigma^{\alpha}_{a,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}$.</p>
 <p><strong>Proposition.</strong> The signed conjugation is the automorphism $c_a\circ\alpha$ of $G$, with inverse $\Sigma^{\alpha}_{a^{-1},a}=\alpha\circ c_{a^{-1}}=c_{\alpha(a^{-1})}\circ\alpha$; its square is the inner conjugation by $a\alpha(a)$,</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)} ,
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)}\;} ,
 $$</p>
 <p>and it is an involution of the set $G$ exactly when $a\alpha(a)\in Z(G)$.</p>
 <p><strong>Proof.</strong> $c_a(\alpha(x))=a\alpha(x)a^{-1}$ is the definition, and it is an automorphism as a composite of automorphisms. The square was computed in <em>The Signed Sandwich on a Group</em>: the composition law gives $(\Sigma^{\alpha}_{a,a^{-1}})^2=\Sigma_{a\alpha(a),(a\alpha(a))^{-1}}=c_{a\alpha(a)}$. The inner conjugation $c_u$ is the identity exactly when $u$ is central, so the square is the identity exactly when $a\alpha(a)\in Z(G)$.</p>
 <p><strong>Proposition (the fixed subgroup).</strong> The fixed set of the signed conjugation is</p>
 <p>$$
-\operatorname{Fix}(a) = \{ x\in G : \alpha(x) = a^{-1}xa \} = \{ x\in G : \alpha(x)=c_{a^{-1}}(x) \},
+\boxed{\;\operatorname{Fix}(a) = \{ x\in G : \alpha(x) = a^{-1}xa \} = \{ x\in G : \alpha(x)=c_{a^{-1}}(x) \}\;},
 $$</p>
 <p>and it is a subgroup of $G$, nonempty because it contains an element $x$ with $\alpha(x)=a^{-1}xa$ exactly when the operator has a fixed point; when it is nonempty it is a coset of the fixed subgroup $G^{\alpha}=\{x:\alpha(x)=x\}$ of the grade involution.</p>
 <p><strong>Proof.</strong> An automorphism has a fixed set that is a subgroup, and $\Sigma^{\alpha}_{a,a^{-1}}$ is an automorphism, so $\operatorname{Fix}(a)$ is a subgroup; explicitly, if $x,y$ are fixed then $\alpha(xy)=\alpha(x)\alpha(y)=a^{-1}xa\cdot a^{-1}ya=a^{-1}xya$ and $\alpha(x^{-1})=(a^{-1}xa)^{-1}=a^{-1}x^{-1}a$, so the set is closed under multiplication and inversion. If $x_0$ is a fixed point and $h\in G^{\alpha}$ then $\alpha(x_0h)=\alpha(x_0)\alpha(h)=a^{-1}x_0a\,h=a^{-1}x_0ha$, so $x_0h$ is fixed; conversely the quotient of two fixed points is fixed by $\alpha$, so lies in $G^{\alpha}$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Proof.</strong> That $\alpha$ inner forces $\mathfrak{S}^\alpha=\mathfrak{S}$ is <em>The Signed Sandwich on a Group</em>; hence $\rho_a=c_a\circ\alpha=c_a c_z=c_{az}$. An inner conjugation is an involution exactly when the conjugating element squares to a central element.</p>
 <p><strong>Proposition (abelian group).</strong> If $G$ is abelian then every inner conjugation is the identity, so every signed conjugation is the grade involution,</p>
 <p>$$
-\rho_a = c_a\circ\alpha = \alpha \quad\text{for every } a,
+\boxed{\;\rho_a = c_a\circ\alpha = \alpha \quad\text{for every } a\;},
 $$</p>
 <p>and the reflections of $(G,\alpha)$ are the single operator $\alpha$. In particular, if $\alpha=\mathrm{id}$ as well then the only reflection is the identity.</p>
 <p><strong>Proof.</strong> On an abelian group $c_a=\mathrm{id}$ for every $a$, so $\rho_a=\alpha$; and $\alpha^2=\mathrm{id}$ makes $\alpha$ an involution, consistent with $a\alpha(a)=a^2\in Z(G)=G$. The statement about $\alpha=\mathrm{id}$ follows.</p>

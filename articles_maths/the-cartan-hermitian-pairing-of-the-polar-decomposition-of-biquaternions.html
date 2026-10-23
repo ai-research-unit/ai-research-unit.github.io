@@ -77,9 +77,7 @@
 $$</p>
 <p>The four factors are those of <em>Modulus–Unit Polar Decomposition of Biquaternions</em>, §<em>The Four Factors</em>, and their exponential forms those of <em>Exponential Polar Decomposition of Biquaternions</em>, §<em>The Decomposition</em>: the scale $r>0$, the central phase $\exp(i\alpha)$ with $\alpha\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the boost.</p>
 <p><strong>The Cartan Hermitian pairing</strong> is the grouping that multiplies the scale into the boost and the phase into the rotor:</p>
-<p>$$
-\tilde{Q} = \tilde H\,\tilde U , \qquad \tilde H = r\,\tilde U_{\mathrm b} , \qquad \tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r} .
-$$</p>
+<p>$$ \tilde{Q} = \tilde H\,\tilde U , \qquad \tilde H = r\,\tilde U_{\mathrm b} , \qquad \tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r}. $$</p>
 <p>It takes the first and the third factors of the word, the scale and the boost $\tilde U_{\mathrm b}$, into $\tilde H$, and the second and the fourth, the phase and the rotor $\tilde u_{\mathrm r}$, into $\tilde U$. The two factors are therefore of two different kinds: $\tilde H$ is <strong>Hermitian and positive</strong>, $\tilde U$ is <strong>unitary</strong>. The pairing is the matrix polar decomposition of the biquaternion, read in the algebra, and it is the form of the polar word that the physics articles use for a unit-norm Lorentz rotor. It is called the <strong>Cartan pairing</strong> here because the two exponents of its factors lie in the two summands of the Cartan decomposition of the algebra as a real Lie algebra, one Hermitian and one anti-Hermitian; the Hermitian split of the exponents, and not the mere grouping of the factors, is what the name records.</p>
 <p><strong>The approach.</strong> The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and the two equations that determine its factors, the two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It then records the two exponents, which are the precise sense in which the pairing is a Hermitian pairing, the Cartan decomposition of the unit group, and the published form. Each result is collected in a table, and each imported proof is cited rather than repeated.</p>
 <p><strong>The result.</strong> For every biquaternion with $\langle\tilde Q\rangle_{\natural}\neq0$ the word $\tilde{Q} = \tilde H\,\tilde U$ is unique with $\tilde H$ Hermitian positive and $\tilde U$ unitary; the first factor is the Hermitian positive square root $\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$, the second is $\tilde U = \tilde H^{-1}\tilde{Q}$, and the two exponents $\ln \tilde H$ and $\ln \tilde U$ lie in the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The pairing is collected in the table.</p>
@@ -190,7 +188,7 @@ $$</p>
 $$</p>
 <p>using the Hermitian character $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ of the boost. The product $\tilde{Q}\tilde{Q}^{*}$ is therefore the <strong>square of the first factor</strong>, and the first factor is recovered from the element by a square root,</p>
 <p>$$
-\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}} .
+\boxed{\;\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}\;}.
 $$</p>
 <p>This is the only equation the pairing solves directly; the second factor follows from the first by division.</p>
 <h3 id="the-second-factor-is-the-element-divided-by-the-first">The Second Factor Is the Element Divided by the First</h3>
@@ -292,9 +290,7 @@ $$</p>
 <h2 id="the-second-factor-unitary">The Second Factor: Unitary</h2>
 <h3 id="the-unitary-group">The Unitary Group</h3>
 <p>The unitary elements of the algebra are the elements fixed by the equation $\tilde U^{*}\tilde U = e_t$,</p>
-<p>$$
-\mathrm{U}(\mathbb{B}) = \{\tilde U : \tilde U^{*}\tilde U = e_t\} \cong \mathrm{U}(2) \cong \mathrm{U}(1)\cdot\mathrm{Sp}(1) ,
-$$</p>
+<p>$$ \mathrm{U}(\mathbb{B}) = \{\tilde U : \tilde U^{*}\tilde U = e_t\} \cong \mathrm{U}(2) \cong \mathrm{U}(1)\cdot\mathrm{Sp}(1), $$</p>
 <p>a compact group of real dimension four, the product of the central phase circle and the unit sphere of the real quaternions (<em>The Unitary Group of the Biquaternion Algebra</em>, §<em>The Structure of the Unitary Group</em>). The second factor of the Cartan pairing is such an element: $\tilde U = \exp(i\alpha)\tilde u_{\mathrm r}$ is the product of the central phase, of modulus one, and the unit real quaternion, and it satisfies $\tilde U\,\tilde U^{*} = e_t$. Its determinant has modulus one, $|\det\mathsf{M}_2(\tilde U)| = 1$, as it must for a unitary matrix.</p>
 <h3 id="the-phase-and-the-rotor">The Phase and the Rotor</h3>
 <p>The second factor contains the <strong>phase</strong> and the <strong>rotor</strong>. The phase $\exp(i\alpha)$ is central, so it lies in the centre and commutes with everything; the rotor $\tilde u_{\mathrm r}$ is the unit real quaternion of the polar word, the only factor that lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ on the unit sphere, and the only one that is compact and non-central. The two constituents of the second factor commute with each other, the phase being central, so the second factor is itself a product of two exponentials that add, $\exp(i\alpha\,e_t)\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$.</p>
@@ -647,15 +643,13 @@ $$</p>
 \mathsf{M}_2(\mathcal H)^{*} = \mathsf{M}_2(\mathcal H) , \qquad \mathsf{M}_2(\mathcal K)^{*} = -\mathsf{M}_2(\mathcal K) ,
 $$</p>
 <p>and the split is the Cartan decomposition of the algebra as a real Lie algebra under the commutator,</p>
-<p>$$
-\mathfrak{gl}(2,\mathbb{C}) = \mathfrak{u}(2) \oplus \mathfrak{p} , \qquad \mathfrak{u}(2) = \mathfrak{su}(2)\oplus i\mathbb{R} , \qquad \mathfrak{p} = \{\text{Hermitian matrices}\} .
-$$</p>
+<p>$$ \mathfrak{gl}(2,\mathbb{C}) = \mathfrak{u}(2) \oplus \mathfrak{p} , \qquad \mathfrak{u}(2) = \mathfrak{su}(2)\oplus i\mathbb{R} , \qquad \mathfrak{p} = \{\text{Hermitian matrices}\}. $$</p>
 <p>The compact summand $\mathfrak{u}(2)$ is spanned by the anti-Hermitian elements, the anti-Hermitian scalar $ie_t$ and the anti-Hermitian vectors $\tfrac{\theta}{2}\vec u_{\mathrm r}$; the non-compact summand $\mathfrak{p}$ is spanned by the Hermitian elements, the real scalar $\ln r\,e_t$ and the Hermitian vectors $i\tfrac{\psi}{2}\vec u_{\mathrm b}$. The two summands are of real dimension four each, and their sum is the real dimension $8$ of the algebra. The exponent of $\mathfrak{u}(2)$ is the unitary group $\mathrm{U}(2)$ and the exponent of $\mathfrak{p}$ is the positive cone of the Hermitian elements, so the Cartan decomposition of the algebra reads the pairing at the level of the group.</p>
 <h2 id="the-cartan-decomposition-of-the-unit-group">The Cartan Decomposition of the Unit Group</h2>
 <h3 id="the-unit-norm-case">The Unit-Norm Case</h3>
 <p>For an element of unit norm, $\langle\tilde Q\rangle_{\natural} = e_t$, the scale and the phase are trivial, $r = 1$ and $\exp(i\alpha) = e_t$, and the Cartan pairing reduces to the product of the boost and the rotor,</p>
 <p>$$
-\tilde{Q} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \tilde U_{\mathrm b}\in\mathbb{M}_+ , \quad \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} , \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1) .
+\boxed{\;\tilde{Q} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \tilde U_{\mathrm b}\in\mathbb{M}_+ , \quad \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} , \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1)\;}.
 $$</p>
 <p>This is the <strong>Cartan decomposition</strong> of the unit group, $SL(2,\mathbb{C}) = \exp(\mathfrak{p}_0)SU(2)$ with $\mathfrak{p}_0=\mathfrak{p}\cap\mathfrak{sl}(2,\mathbb{C})$ the traceless Hermitian elements, read in the algebra: the unit-norm elements are the products of a Hermitian positive element of determinant one and an element of the maximal compact subgroup $SU(2) = \mathrm{Sp}(1)$.</p>
 <h3 id="the-physical-interpretation">The Physical Interpretation</h3>
@@ -663,7 +657,7 @@ $$</p>
 <h2 id="the-published-form-of-the-pairing">The Published Form of the Pairing</h2>
 <p>The pairing $\tilde H\,\tilde U$ is the factorisation proved by Sangwine and Hitzer for the unit semi-norm elements and, in the general case, by their Corollary 1, in the reversed word, angle first:</p>
 <p>$$
-\tilde{Q} = |\tilde{Q}|\,\exp(\hat\alpha\theta_t)\,\exp(I\hat\beta\theta_\mathcal H) ,
+\boxed{\;\tilde{Q} = |\tilde{Q}|\,\exp(\hat\alpha\theta_t)\,\exp(I\hat\beta\theta_\mathcal H)\;},
 $$</p>
 <p>with two pure real unit quaternions $\hat\alpha$ and $\hat\beta$ (the hats avoid the phase $\alpha$), a pure imaginary unit biquaternion $I\hat\beta$ (with $I$ an imaginary unit), and two real angles $\theta_t$ and $\theta_\mathcal H$. Translating their letters into those of the corpus, the trigonometric exponential $\exp(\hat\alpha\theta_t)$ is the rotor $\tilde u_{\mathrm r} = \exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$, the hyperbolic exponential $\exp(I\hat\beta\theta_\mathcal H)$ is the boost about the axis rotated by the rotor, that is, the boost conjugated by the rotor, and their product is the boost followed by the rotor. Three differences are worth recording.</p>
 <div class="table-scroll"><table>

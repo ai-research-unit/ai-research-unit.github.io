@@ -102,7 +102,7 @@ $$</p>
 <h3 id="the-growth-exponent">The Growth Exponent</h3>
 <p><strong>Definition.</strong> The <strong>growth exponent</strong> $\tau(q)$ is the number, when it exists, with $S_n(q)\asymp (r^n)^{\tau(q)}$ for a common ratio $r$, and in general the unique solution of the <strong>equation of Bowen</strong>,</p>
 <p>$$
-\sum_{i=1}^m p_i^{\,q}\,r_i^{-\tau(q)}=1 .
+\boxed{\;\sum_{i=1}^m p_i^{\,q}\,r_i^{-\tau(q)}=1\;} .
 $$</p>
 <p><strong>Theorem (the exponent exists, is convex and is finitely often differentiable).</strong> For every $q$ the equation $\sum_i p_i^q r_i^{-\tau}=1$ has exactly one real solution $\tau(q)$; the function $\tau$ so defined is convex and decreasing, it satisfies $\tau(0)=-\dim_H\Lambda$ and $\tau(1)=0$, and it is real-analytic with $\tau'(q)$ equal to the mean logarithm of the weights under the Gibbs probability $q_i\propto p_i^q r_i^{-\tau(q)}$.</p>
 <p><em>Proof.</em> The function $\tau\mapsto\sum_i p_i^q r_i^{-\tau}$ is strictly decreasing from $+\infty$ to $0$ (the ratios satisfy $r_i<1$), so the solution is unique. Differentiating the identity $\sum_i p_i^q r_i^{-\tau(q)}=1$ with respect to $q$ gives $\sum_i p_i^q(\log p_i)r_i^{-\tau} - \tau'\sum_i p_i^q(\log r_i)r_i^{-\tau}=0$, whence $\tau'$ is the stated mean; differentiating twice gives the concavity of the mean and the convexity of $\tau$. The values: at $q=0$ the equation is $\sum_i r_i^{-\tau(0)}=1$, so $-\tau(0)$ is the similarity dimension $s$ of <em>Fractal Geometry</em>; at $q=1$ the equation is $\sum_i r_i^{-\tau(1)}=1$ with $\sum_i p_i=1$, whose solution is $\tau(1)=0$.</p>
@@ -123,7 +123,7 @@ f(\alpha)=\tau^*(\alpha)\qquad\text{and}\qquad f(\alpha)=q\alpha-\tau(q)\quad\te
 $$</p>
 <p><strong>Theorem (the formalism for the self-similar measures).</strong> Let $S_1,\dots,S_m$ be a self-similar iterated function system satisfying the open set condition, and let the ratios be distinct or the pieces separated in the sense that the $n$-th level pieces have pairwise disjoint neighbourhoods of comparable size; let $p$ be a probability vector and $\mu_p$ the self-similar measure. Then the local dimension exists at every point, the level sets are nonempty exactly on the interval of exponents $[\tau'(+\infty),\tau'(-\infty)]$, and the multifractal formalism holds:</p>
 <p>$$
-\dim_H K_\alpha=\inf_{q}(q\alpha-\tau(q))=\tau^*(\alpha)
+\boxed{\;\dim_H K_\alpha=\inf_{q}(q\alpha-\tau(q))=\tau^*(\alpha)\;}
 $$</p>
 <p>for every $\alpha$ in that interval.</p>
 <p><em>Proof sketch.</em> The upper bound $f(\alpha)\le\tau^*(\alpha)$ is the covering of $K_\alpha$ at level $n$ by the pieces of mass about $r^n$ and of size about $r^n$, with the exponent $q$ chosen to balance the two; it uses only the definition of $\tau$. The lower bound is the mass distribution principle of <em>Fractal Geometry</em> applied to the <strong>Gibbs measure</strong> $q$ of the theorem on the growth exponent: the Gibbs measure gives to the level-$n$ pieces the masses proportional to $p^q r^{-n\tau(q)}$, it is supported on a subset of $K_\alpha$ with $\alpha=\tau'(q)$, and its local dimension there is $q\alpha-\tau(q)$; the Hausdorff dimension of that subset is at least that value. The full argument, and the precise separation hypotheses, are those of the multifractal formalism in the lecture notes of Falconer and Pesin.</p>

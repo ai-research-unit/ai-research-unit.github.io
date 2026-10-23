@@ -170,7 +170,7 @@ $$</p>
 <h2 id="regularity-on-the-fourier-side">Regularity on the Fourier Side</h2>
 <p><strong>Theorem (the Fourier image of the operator).</strong> For a suitable function or distribution $f$,</p>
 <p>$$
-\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi), \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1}B_k\xi_k,
+\boxed{\;\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi), \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1}B_k\xi_k\;},
 $$</p>
 <p>the multiplication being left multiplication in $A$. Hence $f$ is left regular if and only if</p>
 <p>$$
@@ -187,7 +187,7 @@ $$</p>
 <p>where $A_\mathbb{C} = A \otimes_\mathbb{R}\mathbb{C}$ is the complexification.</p>
 <p><strong>Theorem (the characteristic variety of an elliptic system).</strong> For an elliptic hypercomplex system,</p>
 <p>$$
-\operatorname{Char}(D) = \Bigl\{\zeta \in \mathbb{C}^m : \sum_{\alpha=0}^{m-1}\zeta_\alpha^2 = 0\Bigr\},
+\boxed{\;\operatorname{Char}(D) = \Bigl\{\zeta \in \mathbb{C}^m : \sum_{\alpha=0}^{m-1}\zeta_\alpha^2 = 0\Bigr\}\;},
 $$</p>
 <p>the complex isotropic cone. In particular $\operatorname{Char}(D)$ meets the real subspace only at the origin, which is the ellipticity of $D$.</p>
 <p><em>Proof.</em> By the symbol computation, $\sigma(\zeta)\,\sigma^{\mathrm{refl}}(\zeta) = \sum_\alpha\zeta_\alpha^2$ with $\sigma^{\mathrm{refl}}(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$. If $\sum_\alpha\zeta_\alpha^2 \neq 0$ then $\sigma(\zeta)$ is invertible, with inverse $\sigma^{\mathrm{refl}}(\zeta)/\sum_\alpha\zeta_\alpha^2$. Conversely, if $\sum_\alpha\zeta_\alpha^2 = 0$ and $\zeta \neq 0$, then $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = 0$ with $\sigma^{\mathrm{refl}}(\zeta) \neq 0$ (if both vanished, then $\zeta_0 = 0$ and $\sum_kB_k\zeta_k = 0$, which forces all $\zeta_\alpha = 0$ by linear independence of the $B_k$, including $B_0 = 1$), so $\sigma(\zeta)$ is a zero divisor and not invertible; at $\zeta = 0$ one has $\sigma(0) = 0$, also not invertible. Hence $\operatorname{Char}(D)$ is exactly the isotropic cone. For real $\zeta$ the equation $\sum_\alpha\zeta_\alpha^2 = 0$ has only the solution $\zeta = 0$, so the characteristic variety meets the real subspace only at the origin.</p>
@@ -259,7 +259,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (reproducing property).</strong> Let $f$ be left regular on a neighbourhood of $\bar\Omega$. Then $\mathcal{C}\bigl(f|_{\partial\Omega}\bigr) = f$ on $\Omega$; equivalently, the Cauchy kernel reproduces regular functions,</p>
 <p>$$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y).
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y)\;}.
 $$</p>
 <p>This is the Cauchy integral formula of <em>Hypercomplex Integration</em>, reinterpreted as an integral operator with kernel $E(x-y)\nu_B(y)$ acting on boundary data.</p>
 <p><strong>Theorem (the transform is a projection onto regular functions).</strong> The Cauchy transform maps $L^2(\partial\Omega)$ onto the space of regular functions on $\Omega$, and it is the identity on the boundary values of those functions.</p>

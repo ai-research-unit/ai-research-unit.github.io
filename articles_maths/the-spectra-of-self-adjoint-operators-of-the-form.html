@@ -82,7 +82,7 @@
 <h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
 <p><strong>Theorem (the spectral decomposition).</strong> In the situation of the theorem, let $\lambda_{1},\dots,\lambda_{r}$ be the distinct eigenvalues and let $P_{i}$ be the $h$-orthogonal projection onto the eigenspace $\{x : Tx = \lambda_{i}x\}$. Then</p>
 <p>$$
-P_{i}P_{j} = \delta_{ij}P_{i} , \qquad \textstyle\sum_{i=1}^{r} P_{i} = 1 , \qquad P_{i}^{\dagger} = P_{i} , \qquad T = \sum_{i=1}^{r}\lambda_{i}P_{i} .
+\boxed{\;P_{i}P_{j} = \delta_{ij}P_{i} , \qquad \textstyle\sum_{i=1}^{r} P_{i} = 1 , \qquad P_{i}^{\dagger} = P_{i} , \qquad T = \sum_{i=1}^{r}\lambda_{i}P_{i}\;} .
 $$</p>
 <p><em>Proof.</em> The eigenspaces of a self-adjoint operator for distinct eigenvalues are $h$-orthogonal: if $Tx = \lambda x$ and $Ty = \mu y$ with $\lambda \neq \mu$, then $\lambda h(x,y) = h(Tx,y) = h(x,Ty) = \mu h(x,y)$, and $h(x,y) = 0$ because $\lambda - \mu$ is invertible in $k$. The projections onto the eigenspaces are therefore $h$-orthogonal, which gives the first two relations, and each is self-adjoint because its image and kernel are $h$-orthogonal complements. The last relation is the diagonalisation read in the eigenbasis.</p>
 <p><strong>Remark (the projection is the operator, not the vector).</strong> The $P_{i}$ are operators of the form and not elements of the algebra; they are self-adjoint idempotents, and they are the form-layer analogue of the idempotents of the algebra. The distinction is the same as the one between the multiplication $m_{x}$ and the element $x$ in the regular representation of <em>Self-Adjoint and Skew Operators of the Form</em>.</p>
@@ -98,14 +98,14 @@ $$</p>
 <p>is defined and real for a self-adjoint $T$.</p>
 <p><strong>Theorem (the min-max principle).</strong> Let $T$ be $h$-self-adjoint with eigenvalues $\lambda_{1} \geq \lambda_{2} \geq \dots \geq \lambda_{m}$, counted with multiplicity. Then for every $k$,</p>
 <p>$$
-\lambda_{k} = \max_{\dim V = k}\ \min_{0 \neq x \in V} R_{T}(x) = \min_{\dim W = m-k+1}\ \max_{0 \neq x \in W} R_{T}(x) ,
+\boxed{\;\lambda_{k} = \max_{\dim V = k}\ \min_{0 \neq x \in V} R_{T}(x) = \min_{\dim W = m-k+1}\ \max_{0 \neq x \in W} R_{T}(x)\;} ,
 $$</p>
 <p>the maximum and the minimum running over the subspaces $V, W$ of $A$ of the stated dimension. In particular $\lambda_{1} = \max_{x \neq 0} R_{T}(x)$ and $\lambda_{m} = \min_{x \neq 0} R_{T}(x)$.</p>
 <p><em>Proof.</em> The quotients of the subspaces reduce to the euclidean case by the $h$-orthonormal basis, where the statement is the Courant–Fischer theorem for a hermitian matrix; the Rayleigh quotient is unchanged by the change of basis because both numerator and denominator are computed in the same $h$-orthonormal coordinates.</p>
 <h3 id="the-spectral-radius-and-the-norm">The Spectral Radius and the Norm</h3>
 <p><strong>Theorem (the norm of a self-adjoint operator).</strong> For a self-adjoint operator $T$ of a definite form,</p>
 <p>$$
-\lVert T\rVert = \max_{i}\lvert\lambda_{i}\rvert = \rho(T) ,
+\boxed{\;\lVert T\rVert = \max_{i}\lvert\lambda_{i}\rvert = \rho(T)\;} ,
 $$</p>
 <p>the spectral radius, and the maximum modulus is attained at one of the two extreme eigenvalues, $\lVert T\rVert = \max(\lvert\lambda_{1}\rvert, \lvert\lambda_{m}\rvert)$.</p>
 <p><em>Proof.</em> In an $h$-orthonormal basis the operator is a diagonal matrix with the eigenvalues on the diagonal, and the operator norm of the form is the norm of <em>The Norm Defined by a Form</em>, §<em>The Adjoint Pairs and the Operator Norm</em>, which in those coordinates is the euclidean operator norm; for a diagonal matrix that norm is the largest modulus of a diagonal entry.</p>

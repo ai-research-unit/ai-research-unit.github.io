@@ -87,7 +87,7 @@ $$</p>
 <h3 id="the-minimal-polynomial">The minimal polynomial</h3>
 <p><strong>Theorem.</strong> Let $h$ be self-adjoint and let $m_h$ be its minimal polynomial. Then $m_h$ has coefficients in the fixed field $F_0$:</p>
 <p>$$
-m_h\in F_0[x].
+\boxed{\;m_h\in F_0[x]\;}.
 $$</p>
 <p>Consequently the spectrum of $h$ is stable under $\varsigma$: if $\lambda$ is an eigenvalue of $h$, then so is $\varsigma(\lambda)$.</p>
 <p><em>Proof.</em> The polynomial $m_h^\varsigma$ is monic of degree $\deg m_h$ and vanishes at $h$ by the corollary. The minimal polynomial is the unique monic polynomial of least degree vanishing at $h$, so $m_h^\varsigma=m_h$. A polynomial is fixed by the coefficientwise involution exactly when its coefficients lie in $F_0$. For the last statement, apply $\varsigma$ to $m_h(\lambda)=0$: $m_h^\varsigma(\varsigma(\lambda))=m_h(\varsigma(\lambda))=0$.</p>
@@ -100,7 +100,7 @@ h=\sum_{i=1}^{r}\lambda_i e_i,
 $$</p>
 <p>with the $\lambda_i$ pairwise distinct. Then there is an involution $\pi$ of the index set $\{1,\dots,r\}$ such that</p>
 <p>$$
-e_i^*=e_{\pi(i)}, \qquad \lambda_{\pi(i)}=\varsigma(\lambda_i) \qquad (i=1,\dots,r).
+\boxed{\;e_i^*=e_{\pi(i)}, \qquad \lambda_{\pi(i)}=\varsigma(\lambda_i) \qquad (i=1,\dots,r)\;}.
 $$</p>
 <p><em>Proof.</em> Apply the involution to the decomposition. The left side is $h^*=h$. The right side is $\sum_i\varsigma(\lambda_i)e_i^*$, by semilinearity and anti-multiplicativity. The elements $e_i^*$ are nonzero idempotents: $e_i^*e_i^*=(e_i^2)^*=e_i^*$, and $e_i^*=0$ would give $e_i=(e_i^*)^*=0$. They are orthogonal, $e_i^*e_j^*=(e_je_i)^*=0$ for $i\neq j$, and they resolve the identity, $\sum_i e_i^*=1^*=1$. The scalars $\varsigma(\lambda_i)$ are pairwise distinct because $\varsigma$ is injective. Hence</p>
 <p>$$
@@ -132,7 +132,7 @@ g_J=\sum_{i\in J}e_i .
 $$</p>
 <p>Then the $g_J$ are pairwise orthogonal Hermitian idempotents with $\sum_J g_J=1$, and</p>
 <p>$$
-h=\sum_{J\in\mathcal{O}}h_J, \qquad h_J=h g_J=g_Jhg_J,
+\boxed{\;h=\sum_{J\in\mathcal{O}}h_J, \qquad h_J=h g_J=g_Jhg_J\;},
 $$</p>
 <p>where $h_J$ is self-adjoint and lies in the corner $g_JAg_J$. For a one-element orbit $J=\{\lambda\}$, $h_J=\lambda g_J$ with $\lambda\in F_0$. For a two-element orbit $J=\{\lambda,\bar\lambda\}$, put</p>
 <p>$$

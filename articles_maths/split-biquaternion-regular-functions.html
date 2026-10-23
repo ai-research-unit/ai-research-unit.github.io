@@ -94,7 +94,9 @@ $$</p>
 <p>where on the right $\tilde{\nabla}$ is the quaternion operator acting on each idempotent component.</p>
 <p><strong>Theorem.</strong> The operator factors the scalar d'Alembertian:</p>
 <p>$$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right) e_t .
+\boxed{\;
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right) e_t
+\;}.
 $$</p>
 <p><strong>Proof.</strong> The units satisfy $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_t$, so the cross terms cancel in the product, leaving the sum of the second derivatives.</p>
 <p>The operator $\tilde{\nabla}$ is the first-order operator whose fundamental solution is the Cauchy kernel; it must not be confused with $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2-\Delta) + 2\sum_k \vec e_k\partial^2/(\partial Q_t\,\partial Q_k)$, which is split-biquaternion-valued and is not the d'Alembertian.</p>
@@ -103,7 +105,9 @@ $$</p>
 <p><strong>Convention.</strong> In this category <strong>regular</strong> without qualification means <strong>left-regular</strong>, $\tilde{\nabla}F^{\mathrm{fn}} = 0$; the operator inverted in the integral theory is the first-order operator $\tilde{\nabla}$, not $\Box$ and not $\tilde{\nabla}^2$.</p>
 <p><strong>Theorem (regularity system).</strong> Writing $F^{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1\vec e_x + F_2\vec e_y + F_3\vec e_z$, the function $F^{\mathrm{fn}}$ is left-regular if and only if</p>
 <p>$$
-\partial/\partial Q_t F_0 = \mathrm{div}\,\vec F , \qquad \partial/\partial Q_t\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0 ,
+\boxed{\;
+\partial/\partial Q_t F_0 = \mathrm{div}\,\vec F , \qquad \partial/\partial Q_t\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0
+\;},
 $$</p>
 <p>a system of four first-order equations coupling the scalar part $F_0$ to the vector part $\vec F$.</p>
 <p><strong>Proof.</strong> Expanding $\tilde{\nabla}F^{\mathrm{fn}} = \sum_\mu\sum_\nu (\partial/\partial Q_\mu F_\nu)e_\mu e_\nu$ and separating the scalar and vector parts of the quaternion product gives the displayed system, the same computation as for the quaternions (see <em>Split-Biquaternion Analysis</em>).</p>
@@ -121,7 +125,9 @@ $$</p>
 <h2 id="harmonicity-and-the-factorization-of-the-laplacian">Harmonicity and the Factorization of the Laplacian</h2>
 <p><strong>Theorem.</strong> Every left-regular function is harmonic for the d'Alembertian:</p>
 <p>$$
-\Box F^{\mathrm{fn}} = \tilde{\nabla}^{\natural}\left(\tilde{\nabla}F^{\mathrm{fn}}\right) = 0 , \qquad \Box = \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right)e_t .
+\boxed{\;
+\Box F^{\mathrm{fn}} = \tilde{\nabla}^{\natural}\left(\tilde{\nabla}F^{\mathrm{fn}}\right) = 0 , \qquad \Box = \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right)e_t
+\;}.
 $$</p>
 <p><strong>Proof.</strong> Apply $\tilde{\nabla}^{\natural}$ to $\tilde{\nabla}F^{\mathrm{fn}} = 0$ and use the factorization.</p>
 <p>The converse fails: $Q_t$ is harmonic but $\tilde{\nabla}Q_t = e_t \neq 0$. On the quaternion subspace the d'Alembertian is the ordinary Laplacian in four real variables, so every regular function there is harmonic in the classical sense; on an indefinite subspace it is a wave operator, and the elliptic tools of the complex theory — the mean value property, the maximum principle and Liouville's theorem — are not available.</p>

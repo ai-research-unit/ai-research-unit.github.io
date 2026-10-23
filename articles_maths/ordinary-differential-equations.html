@@ -130,7 +130,7 @@ u(t) \le a + \int_{t_0}^{t}\beta(s)\,u(s)\,ds \qquad (t \in [t_0,t_1]),
 $$</p>
 <p>then</p>
 <p>$$
-u(t) \le a\,\exp\Bigl(\int_{t_0}^{t}\beta(s)\,ds\Bigr) .
+\boxed{\;u(t) \le a\,\exp\Bigl(\int_{t_0}^{t}\beta(s)\,ds\Bigr)\;} .
 $$</p>
 <p><em>Proof.</em> Put $v(t) = a + \int_{t_0}^t \beta u$; then $v \ge u \ge 0$ and $v'(t) = \beta(t)u(t) \le \beta(t)v(t)$, so $(v(t)\exp(-\int_{t_0}^{t}\beta))' \le 0$, and integrating gives $v(t) \le v(t_0)\exp(\int_{t_0}^{t}\beta) = a\,\exp(\int_{t_0}^{t}\beta)$.</p>
 <p><strong>Theorem (continuous dependence).</strong> Let $f : I \times X \to X$ be continuous and Lipschitz with constant $L$ in its second variable, and let $y, z$ be solutions of $y' = f(t,y)$ with $y(t_0) = y_0$, $z(t_0) = z_0$ on a common interval $[t_0,t_1]$. Then</p>
@@ -173,7 +173,7 @@ $$</p>
 <p><em>Proof.</em> The columns of $\Phi$ are the solutions of the initial-value problems with initial data a basis of $X$, and the Picard–Lindelöf theorem gives them locally; the operator $\Phi(t)$ is invertible because $\Phi(t)\Phi(t)^{-1}$ solves the same linear equation as the identity, so if a solution of $y'=A(t)y$ vanished at one point it would vanish identically, and $\det\Phi \neq 0$ follows in finite dimension; equivalently $\Psi(t) = \Phi(t)^{-1}$ solves $\Psi' = -\Psi A(t)$ and a solution with $\Psi(t_0)=I$ exists on all of $I$ by the same theorem. The invertibility in general follows from the identity $\det \Phi(t) = \exp(\int_{t_0}^t \operatorname{tr}A(s)\,ds)$ in finite dimension, and from the group property when $A$ is constant.</p>
 <p><strong>Theorem (variation of constants).</strong> The solution of the inhomogeneous linear system $y' = A(t)y + b(t)$ with $y(t_0) = y_0$ is</p>
 <p>$$
-y(t) = \Phi(t)y_0 + \int_{t_0}^{t}\Phi(t)\Phi(s)^{-1}b(s)\,ds .
+\boxed{\;y(t) = \Phi(t)y_0 + \int_{t_0}^{t}\Phi(t)\Phi(s)^{-1}b(s)\,ds\;} .
 $$</p>
 <p><em>Proof.</em> Write $y(t) = \Phi(t)u(t)$; the product rule and $\Phi' = A\Phi$ give $\Phi u' = b$, so $u' = \Phi^{-1}b$ and $u(t) = y_0 + \int_{t_0}^t \Phi(s)^{-1}b(s)\,ds$.</p>
 <p>When $A$ is constant the formula reads $y(t) = \exp((t-t_0)A)y_0 + \int_{t_0}^{t}\exp((t-s)A)b(s)\,ds$, the second term being the superposition of the responses to impulses at times $s$, which is the interpretation of the exponential as the kernel of the solution operator.</p>
@@ -244,7 +244,7 @@ $$</p>
 <h3 id="the-eigenvalue-expansion">The Eigenvalue Expansion</h3>
 <p><strong>Theorem (Sturm–Liouville).</strong> For a regular Sturm–Liouville problem the eigenvalues are real, form an increasing sequence $\lambda_1 < \lambda_2 < \cdots$ with $\lambda_n \to \infty$, and to each eigenvalue corresponds a one-dimensional eigenspace. The eigenfunctions $y_n$, normalised in $L^2((a,b),w\,dx)$, are orthonormal and complete: every $f \in L^2((a,b),w\,dx)$ has an expansion</p>
 <p>$$
-f = \sum_{n\ge1} c_n y_n, \qquad c_n = \int_a^b f(x)\,y_n(x)\,w(x)\,dx ,
+\boxed{\;f = \sum_{n\ge1} c_n y_n, \qquad c_n = \int_a^b f(x)\,y_n(x)\,w(x)\,dx\;} ,
 $$</p>
 <p>convergent in $L^2$ and uniformly absolutely convergent when $f$ is continuous with $f'$ of bounded variation satisfying the boundary conditions. The eigenvalues obey the <strong>asymptotic law</strong></p>
 <p>$$

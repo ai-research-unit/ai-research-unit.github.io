@@ -159,14 +159,14 @@ $$</p>
 <p>The proofs pass to cosets as in <em>Modules</em> §7. The first isomorphism theorem has the following useful form.</p>
 <p><strong>Proposition.</strong> Let $M$ be a left $A$-module and $f \in \operatorname{Hom}_A(A,M)$, where $A$ is the left regular module. Then $f$ is determined by $m=f(1_A)$, and $f \mapsto f(1_A)$ is an isomorphism of abelian groups</p>
 <p>$$
-\operatorname{Hom}_A(A,M) \cong M.
+\boxed{\;\operatorname{Hom}_A(A,M) \cong M\;}.
 $$</p>
 <p><em>Proof.</em> For $b \in A$, $A$-linearity gives $f(b)=f(b1_A)=bf(1_A)=bm$, so $f$ is determined by $m=f(1_A)$. Conversely, for any $m \in M$ the map $f(b)=bm$ is $A$-linear: $f(b b')=b b' m=b (b'm)=b f(b')$. The two constructions are inverse, and both are additive in $f$ and in $m$.</p>
 <h2 id="the-regular-module-and-its-endomorphisms">The Regular Module and Its Endomorphisms</h2>
 <p>The endomorphism ring of the regular module has a description dual to the preceding proposition and is used repeatedly.</p>
 <p><strong>Theorem.</strong> Multiplication on the right gives a ring isomorphism</p>
 <p>$$
-A^{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a).
+\boxed{\;A^{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a)\;}.
 $$</p>
 <p><em>Proof.</em> For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A^{\mathrm{opp}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$.</p>
 <p>Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A^{\mathrm{opp}})^{\times} \cong A^{\times}$, the group of units of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by units, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.</p>
@@ -188,7 +188,7 @@ $$</p>
 <p>Consequently the cyclic left $A$-modules are exactly the quotients $A/L$ by left ideals $L$, the correspondence being $L \mapsto A/L$ and $M \mapsto \operatorname{Ann}_A(m)$ for a chosen generator $m$. Passing to $A/L$ from $L$ recovers $L$, and the submodules of $A/L$ correspond to the left ideals between $L$ and $A$.</p>
 <p><strong>Schur's lemma.</strong> Let $S$ and $T$ be simple left $A$-modules and let $f \in \operatorname{Hom}_A(S,T)$. Then $\ker f$ and $\operatorname{im} f$ are submodules of $S$ and $T$, so by simplicity each is $0$ or the whole module. If $f \neq 0$ then $\ker f \neq S$ and $\operatorname{im} f \neq 0$, hence $\ker f=0$ and $\operatorname{im} f=T$, so $f$ is an isomorphism. Therefore</p>
 <p>$$
-\operatorname{Hom}_A(S,T)=0 \text{ if } S \not\cong T, \qquad \operatorname{End}_A(S) \text{ is a division ring.}
+\boxed{\;\operatorname{Hom}_A(S,T)=0 \text{ if } S \not\cong T, \qquad \operatorname{End}_A(S) \text{ is a division ring.}\;}
 $$</p>
 <p>In particular $\operatorname{Aut}_A(S)=\operatorname{End}_A(S)^{\times}$ is the multiplicative group of that division ring. The lemma is developed and applied in .</p>
 <p>A nonzero module is simple if and only if it is isomorphic to $A/\mathrm{M}$ for a <strong>maximal left ideal</strong> $\mathrm{M}$: simplicity of $S$ corresponds under the proposition to the absence of left ideals strictly between $\operatorname{Ann}_A(m)$ and $A$ for a nonzero $m$. If $A$ is commutative, the maximal left ideals are the maximal ideals, and this recovers the familiar description of simple modules over a commutative ring.</p>

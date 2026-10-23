@@ -149,8 +149,7 @@ $$</p>
 <h3 id="dimension">Dimension</h3>
 <p><strong>Definition.</strong> For a definable set $A \subseteq M^n$ the <strong>dimension</strong> $\dim A$ is the largest $d$ such that $A$ contains a cell of dimension $d$, or $-\infty$ for the empty set; equivalently, the largest $d$ such that some projection of $A$ onto $d$ coordinates has nonempty interior.</p>
 <p><strong>Theorem.</strong> The dimension is the unique function from definable sets to $\{-\infty, 0, 1, 2, \dots\}$ satisfying</p>
-<p>$$
-\dim A = 0 \iff A \text{ finite}, \qquad \dim(A \cup B) = \max(\dim A, \dim B), \qquad \dim(A \times B) = \dim A + \dim B,
+<p>$$ \boxed{\;\dim A = 0 \iff A \text{ finite}, \qquad \dim(A \cup B) = \max(\dim A, \dim B), \qquad \dim(A \times B) = \dim A + \dim B\;},
 $$</p>
 <p>and for every definable function $f : A \to M^n$, $\dim f(A) \leq \dim A$, with equality holding if $f$ is injective.</p>
 <p><strong>Proof.</strong> The first three properties follow from the cell decomposition, using that the dimension of a cell is additive under products and maximal under unions. The behaviour under definable functions is checked on cells: a definable continuous function on a cell cannot increase the number of free coordinates, and an injective function cannot decrease it.</p>

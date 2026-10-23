@@ -119,7 +119,9 @@ $$</p>
 <h3 id="fueters-theorem">Fueter's Theorem</h3>
 <p><strong>Theorem (Fueter's construction).</strong> Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $f^{\mathrm{ax}}_0$. Then</p>
 <p>$$
+\boxed{\;
 F^{\mathrm{fn}}(\tilde{Q}) = \Delta_4f^{\mathrm{ax}}_0(\tilde{Q}) = \frac{2\partial/\partial\rho\,u(q_t,\rho)}{\rho} + \vec u_{\mathrm d}\left(\frac{2\partial/\partial\rho\,v(q_t,\rho)}{\rho} - \frac{2v(q_t,\rho)}{\rho^2}\right)
+\;}
 $$</p>
 <p>is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.</p>
 <p><strong>Proof.</strong> For $g = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ one has $\tilde{\nabla}g = g\tilde{\nabla}  = (\partial/\partial Q_t\,A - \partial/\partial\rho B - 2B/\rho) + \vec u_{\mathrm d}(\partial/\partial Q_t\,B + \partial/\partial\rho A)$, using $\vec u_{\mathrm d}^2 = -1$ and $\sum_{\mu,\nu\in\{x,y,z\}}(\partial/\partial q_\mu\,(\vec u_{\mathrm d})_\nu)\vec e_\mu \vec e_\nu = (-3-\vec u_{\mathrm d}^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial/\partial Q_t\,A = \partial/\partial\rho B + 2B/\rho$ and $\partial/\partial Q_t\,B = -\partial/\partial\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions.</p>
@@ -134,7 +136,9 @@ $$</p>
 <h3 id="axially-symmetric-functions-and-the-axial-coefficients">Axially Symmetric Functions and the Axial Coefficients</h3>
 <p>A function is <strong>axially symmetric</strong> if $F^{\mathrm{fn}}(q_t + \vec u_{\mathrm d}\rho)$ depends on the direction $\vec u_{\mathrm d}$ only through $\vec u_{\mathrm d}$. Such a function has the axial representation $F^{\mathrm{fn}}(\tilde{Q}) = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ over the basis $\{1,\vec u_{\mathrm d}\}$ of the slice, with <strong>axial coefficients</strong> $A, B$. For such a function the left- and right-regularity conditions coincide and reduce to</p>
 <p>$$
-\partial/\partial Q_t\,A = \partial/\partial\rho B + \frac{2B}{\rho} , \qquad \partial/\partial Q_t\,B = -\partial/\partial\rho A ;
+\boxed{\;
+\partial/\partial Q_t\,A = \partial/\partial\rho B + \frac{2B}{\rho} , \qquad \partial/\partial Q_t\,B = -\partial/\partial\rho A
+\;};
 $$</p>
 <p>eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmonic, while $\Delta_4B = 2B/\rho^2$. On the full algebra, where regularity is the pair of quaternionic regularities, an axially symmetric function is regular if and only if each idempotent component is, so the axial coefficients carry a pair of systems, one per half.</p>
 <h3 id="the-fuetersce-theorem-and-its-hypotheses">The Fueter–Sce Theorem and Its Hypotheses</h3>
@@ -143,7 +147,9 @@ $$</p>
 <h2 id="power-series-representations">Power Series Representations</h2>
 <p>A series with split biquaternion coefficients placed on the right, $f(\tilde{Q}) = \sum_{n\ge0}\tilde{Q}^na_n$, converges absolutely on the set where $\limsup_n\left(\|\tilde{Q}^n\|_E\,\|a_n\|_E\right)^{1/n} < 1$; in particular it converges for $\tilde{Q}$ in the quaternion subspace with $\|\tilde{Q}\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, because on the quaternion subspace the Euclidean norm is multiplicative and $\|\tilde{Q}^n\|_E = \|\tilde{Q}\|_E^n$. Its sum is <strong>slice-regular</strong>, holomorphic on each slice; slice-regular functions form a different class from the Fueter-regular ones. For example $\tilde{Q}\mapsto\tilde{Q}$ is slice-regular, but</p>
 <p>$$
-\tilde{\nabla}\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0 .
+\boxed{\;
+\tilde{\nabla}\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0
+\;}.
 $$</p>
 <p>The Fueter construction is precisely the operation converting slice-regular, or holomorphic, data into Fueter-regular functions.</p>
 <p>For real Taylor coefficients, term-by-term application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n\ge0}a_n\Delta_4(\tilde{Q}^n)$, beginning at $n = 2$ and converging normally on $B(0,R)$ because $\Delta_4(\tilde{Q}^n)$ is homogeneous of degree $n-2$ with at most polynomial growth in $n$. In general, with $\mathcal{P}_k$ the algebra-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P\in\mathcal{P}_k : \tilde{\nabla}P = 0\}$ the monogenic ones, the Fischer decomposition $\mathcal{P}_k = \bigoplus_{j=0}^{k}\tilde{Q}^j\mathcal{M}_{k-j}$ gives every Fueter-regular function on the ball a normally convergent expansion into monogenic homogeneous pieces, the analogue of the Taylor series of complex analysis.</p>

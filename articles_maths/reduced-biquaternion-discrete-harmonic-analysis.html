@@ -80,7 +80,9 @@ $$
 with $\rho$ a root of minus one and the exponential that of <em>Reduced Biquaternion Elementary Functions</em>.</p>
 <p><strong>Theorem (the roots of minus one and the kernel).</strong> The roots of minus one are exactly
 $$
-\pm i,\qquad \pm ij,
+\boxed{\;
+\pm i,\qquad \pm ij
+\;},
 $$
 that is the elements with coordinates $Q_{+},Q_{-}\in\{i,-i\}$; the kernel with the choice $\rho=i$ is the complex kernel $W_{N}(n,m)=e^{-2\pi i nm/N}$ read in the algebra, and with $\rho=ij$ it is the same with $ij$ in place of $i$. In either case $W_{N}(n,m)=w_{1}^{nm}\Pi_++w_{2}^{nm}\Pi_-$ with $w_{1},w_{2}$ the two $N$-th roots of unity determined by the chosen root; for the choice $\rho=i$ the two idempotent coordinates of the kernel are equal, while for $\rho=ij$ they are conjugate.</p>
 <p><em>Proof.</em> An element $\rho=Q_{+}\Pi_++Q_{-}\Pi_-$ has $\rho^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-$, so $\rho^{2}=-1$ exactly when $Q_{+}^{2}=Q_{-}^{2}=-1$, that is $Q_{+},Q_{-}=\pm i$, four elements; the exponential $\exp(-2\pi\rho nm/N)$ acts coefficientwise, $e^{-2\pi Q_{+} nm/N}\Pi_++e^{-2\pi Q_{-} nm/N}\Pi_-$, which is the displayed pair, and the choice $\rho=i$ has $Q_{+}=Q_{-}=i$ while $\rho=ij$ has $Q_{+}=i$, $Q_{-}=-i$.</p>
@@ -92,7 +94,9 @@ $$
 the products being in the algebra, which is why the order of the factors is immaterial.</p>
 <p><strong>Theorem (the transform pair).</strong> The transform is linear and satisfies the inversion
 $$
-f(n)=\frac{1}{N}\sum_{m=0}^{N-1}(\mathcal F f)(m)\,W_{N}(n,-m),
+\boxed{\;
+f(n)=\frac{1}{N}\sum_{m=0}^{N-1}(\mathcal F f)(m)\,W_{N}(n,-m)
+\;},
 $$
 valid for <strong>every</strong> signal. The two formulas are the ordinary discrete transform pair in each idempotent coordinate.</p>
 <p><em>Proof.</em> The kernel satisfies the orthogonality $\sum_{m}W_{N}(n,m)W_{N}(r,-m)=N\,\delta_{n,r}$ in each coordinate, because $w_{1}$ and $w_{2}$ are $N$-th roots of unity; the algebra being commutative and the kernel scalar in each coordinate, the sums reassemble in the algebra, and the standard orthogonality gives the inversion. No divisibility condition is needed, the transform matrix being invertible over the algebra as over the complex numbers.</p>
@@ -111,7 +115,9 @@ where $\mathcal F g_{1}$ and $\mathcal F g_{2}$ are the ordinary complex discret
 <p><strong>Definition.</strong> The <strong>convolution</strong> of two length-$N$ signals is $(f*h)(n)=\sum_{r}f(r)h(n-r)$, the index taken modulo $N$.</p>
 <p><strong>Theorem (the convolution theorem).</strong> The transform of the convolution is the pointwise product of the transforms,
 $$
-(\mathcal F(f*h))(m)=(\mathcal F f)(m)\,(\mathcal F h)(m),
+\boxed{\;
+(\mathcal F(f*h))(m)=(\mathcal F f)(m)\,(\mathcal F h)(m)
+\;},
 $$
 and the convolution splits in the idempotent coordinates into the two ordinary complex convolutions.</p>
 <p><em>Proof.</em> The index-shift computation is the standard one and uses only the commutativity of the algebra and the identity $W_{N}(n,m)=W_{N}(n-r,m)W_{N}(r,m)$, which holds because the kernel factors through the addition in the exponent; the coordinate statement follows from the factorization of the transform.</p>

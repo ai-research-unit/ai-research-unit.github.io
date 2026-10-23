@@ -84,8 +84,8 @@ $$</p>
 <h3 id="the-cartan-formula">The Cartan Formula</h3>
 <p><strong>Proposition.</strong> The differential is given by the <strong>Cartan formula</strong></p>
 <p>$$
-(df)(x_1,\dots,x_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1})
-+\sum_{i<j}(-1)^{i+j}f([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}),
+\boxed{\;(df)(x_1,\dots,x_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1})
++\sum_{i<j}(-1)^{i+j}f([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1})\;},
 $$</p>
 <p>the hats omitting the argument; this is the sign convention fixed in <em>Lie Algebra Cohomology</em>.</p>
 <p><strong>Corollary (trivial coefficients).</strong> For the trivial module $M=K$ the first sum vanishes and $C^n(\mathrm{G};K)\cong\Lambda^n\mathrm{G}^*$; the differential is the transpose of the bracket, $(df)(x,y)=-f([x,y])$ on $\mathrm{G}^*$, extended as the graded derivation of the next section.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-derivation-property">The Derivation Property</h3>
 <p><strong>Theorem.</strong> The differential is a graded derivation of degree one for the cup product:</p>
 <p>$$
-d(\alpha\smile\beta)=d\alpha\smile\beta+(-1)^{p}\,\alpha\smile d\beta,\qquad \alpha\in C^p(\mathrm{G};K).
+\boxed{\;d(\alpha\smile\beta)=d\alpha\smile\beta+(-1)^{p}\,\alpha\smile d\beta,\qquad \alpha\in C^p(\mathrm{G};K)\;}.
 $$</p>
 <p><strong>Proof.</strong> With trivial coefficients the statement is the product rule for the differential on the exterior algebra of $\mathrm{G}^*$; both sides are alternating and bilinear, so it suffices to check on basis cochains, where the two sums over the pairs of a $(p+q+1)$-tuple split according to whether the pair meets the first $\alpha$-block or the second.</p>
 <p><strong>Corollary.</strong> With trivial coefficients the cochains form a <strong>differential graded algebra</strong>: a graded associative algebra with a degree-one derivation of square zero. The cohomology $H^\bullet(\mathrm{G};K)$ inherits the product, which is graded-commutative, and is the subject of <em>Lie Algebra Cohomology</em>.</p>
@@ -125,7 +125,7 @@ L_x f = x\cdot f,
 $$</p>
 <p>and it satisfies the operator identities</p>
 <p>$$
-L_x=d\iota_x+\iota_x d,\qquad [L_x,d]=0,\qquad [L_x,\iota_y]=\iota_{[x,y]},\qquad [L_x,L_y]=L_{[x,y]},\qquad [\iota_x,\iota_y]=0 .
+\boxed{\;L_x=d\iota_x+\iota_x d,\qquad [L_x,d]=0,\qquad [L_x,\iota_y]=\iota_{[x,y]},\qquad [L_x,L_y]=L_{[x,y]},\qquad [\iota_x,\iota_y]=0\;} .
 $$</p>
 <p><strong>Proof.</strong> The magic formula is the definition of $L_x$; the remaining identities are the standard consequences of $d^2=0$ and of the derivation property, each checked by expanding the commutators of the operators $d,\iota_x,\iota_y$ acting on a cochain and using the Jacobi identity.</p>
 <p><strong>Corollary.</strong> The operators $d,\iota_x,L_x$ form the <strong>Cartan calculus</strong> of the cochain complex: $d$ raises the degree, the contractions lower it,$L_x$ preserves it, and the contraction and Lie derivative give a representation of the Lie algebra $\mathrm{G}$ together with the differential.</p>

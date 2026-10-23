@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>Laplacian</strong> on $\mathbb{R}^n$ is $\Delta = \sum_i\partial^2/\partial x_i^2$. A $C^2$ function $w$ with $\Delta w = 0$ on an open set is <strong>harmonic</strong> there; the equation $\Delta w = f$ is the <strong>Poisson equation</strong>, and the equation $\Delta w = 0$ the <strong>Laplace equation</strong>. The <strong>Dirichlet problem</strong> on a bounded domain $\Omega$ with boundary datum $g$ asks for a harmonic $w$ on $\Omega$ with $w|_{\partial\Omega}=g$.</p>
 <p><strong>Theorem (mean value property).</strong> If $w$ is harmonic on an open set containing the closed ball $\overline{B}(x,r)$, then</p>
 <p>$$
-w(x) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}w\,dS = \frac{n}{\omega_{n-1}r^{n}}\int_{B(x,r)}w\,dy ,
+\boxed{\;w(x) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}w\,dS = \frac{n}{\omega_{n-1}r^{n}}\int_{B(x,r)}w\,dy\;} ,
 $$</p>
 <p>where $\omega_{n-1}$ is the area of the unit sphere in $\mathbb{R}^n$. Conversely, a continuous function with the mean value property is harmonic.</p>
 <p><em>Proof.</em> Let $\varphi(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}w\,dS$. Differentiating with respect to $r$ and applying the divergence theorem gives $\varphi'(r) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{B(x,r)}\Delta w\,dy = 0$, so $\varphi$ is constant, and its limit as $r\to0$ is $w(x)$ by continuity; this is the surface form, and integrating in $r$ gives the volume form. Conversely, a continuous function with the mean value property satisfies $\Delta w = 0$ in the distributional sense, and by elliptic regularity, established below by the representation formula, it is harmonic.</p>
@@ -153,7 +153,7 @@ $$</p>
 <p>and the <strong>heat equation</strong> is $\partial/\partial t w = \Delta w$; the <strong>Cauchy problem</strong> asks for $w \in C^2(\mathbb{R}^n\times(0,\infty)) \cap C(\mathbb{R}^n\times[0,\infty))$ with $w(x,0)=f(x)$.</p>
 <p><strong>Theorem (solution by convolution).</strong> If $f$ is continuous and bounded, then</p>
 <p>$$
-w(x,t) = (K_t * f)(x) = \int_{\mathbb{R}^n}K_t(x-y)f(y)\,dy
+\boxed{\;w(x,t) = (K_t * f)(x) = \int_{\mathbb{R}^n}K_t(x-y)f(y)\,dy\;}
 $$</p>
 <p>solves the Cauchy problem, and $\|w(\cdot,t)\|_\infty \le \|f\|_\infty$ with $w(\cdot,t)\to f$ uniformly on compact sets as $t\to0^+$.</p>
 <p><em>Proof.</em> The kernel solves $K_t = \Delta K$ by direct differentiation, and differentiating under the integral gives $\partial/\partial t w = \Delta w$; the kernel is positive with total integral one, so it is an approximate identity as $t\to0^+$, giving the stated convergence and the sup bound.</p>
@@ -172,7 +172,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>wave equation</strong> with speed $c>0$ is $\partial^2/\partial t^2 w = c^2\Delta w$; the Cauchy problem asks for $w(x,0)=f(x)$ and $\partial/\partial t w(x,0)=g(x)$.</p>
 <p><strong>Theorem (d'Alembert, $n=1$).</strong> The solution of the Cauchy problem on $\mathbb{R}$ with $f \in C^2$ and $g \in C^1$ is</p>
 <p>$$
-w(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct}g(s)\,ds .
+\boxed{\;w(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct}g(s)\,ds\;} .
 $$</p>
 <p><em>Proof.</em> Change to characteristic coordinates $\xi = x-ct$, $\eta = x+ct$, in which the equation becomes $w_{\xi\eta}=0$ with general solution $w = F(\xi)+G(\eta)$; the initial conditions determine $F$ and $G$ and give the displayed formula.</p>
 <p><strong>Theorem (finite propagation speed).</strong> If $w$ solves the wave equation in $\mathbb{R}^n\times(0,\infty)$ and $w$ and $\partial/\partial t w$ vanish on the ball $B(x_0,r)$ at $t=0$, then $w$ vanishes on the cone $\{(x,t) : |x-x_0|\le r-ct,\ 0\le t\le r/c\}$. Consequently the value $w(x,t)$ depends only on the data in the ball $B(x,ct)$.</p>

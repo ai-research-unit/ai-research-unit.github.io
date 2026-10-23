@@ -90,20 +90,20 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>orbit space</strong> of $(X,\sigma)$ is $X/\sigma$ with the quotient topology, and the <strong>orbit map</strong> is $\pi : X \to X/\sigma$.</p>
 <p><strong>Theorem.</strong> Let $f : (X,\sigma) \to (Y,\tau)$ be a morphism of $\mathbf{Top}^{\mathbb{Z}/2}$. Then $f$ induces exactly one continuous map</p>
 <p>$$
-\bar f : X/\sigma \longrightarrow Y/\tau, \qquad \bar f(\{x,\sigma x\}) = \{f(x), \tau f(x)\},
+\boxed{\;\bar f : X/\sigma \longrightarrow Y/\tau, \qquad \bar f(\{x,\sigma x\}) = \{f(x), \tau f(x)\}\;},
 $$</p>
 <p>and the assignment $(X,\sigma) \mapsto X/\sigma$, $f \mapsto \bar f$ is a functor, the <strong>orbit-space functor</strong>.</p>
 <p><strong>Proof.</strong> The composite $\pi_{Y} \circ f$ is continuous and constant on the orbits of $\sigma$, because $f(\sigma x) = \tau f(x)$; by the universal property of the quotient of <em>The Orbit Map</em> it factors through the orbit map of $X$ by a unique continuous map, which is $\bar f$. Functoriality is the uniqueness of the factorisation, as in <em>Continuous Maps and the Orbit Map</em>.</p>
 <h3 id="the-adjunction-with-the-trivial-involution">The Adjunction with the Trivial Involution</h3>
 <p><strong>Theorem.</strong> The orbit-space functor is left adjoint to the trivial-involution functor:</p>
 <p>$$
-(-)/\sigma \ \dashv \ (-)_{tr}, \qquad \mathbf{Top}(X/\sigma,\, Y) \ \cong \ \mathbf{Top}^{\mathbb{Z}/2}((X,\sigma),\, Y_{tr})
+\boxed{\;(-)/\sigma \ \dashv \ (-)_{tr}, \qquad \mathbf{Top}(X/\sigma,\, Y) \ \cong \ \mathbf{Top}^{\mathbb{Z}/2}((X,\sigma),\, Y_{tr})\;}
 $$</p>
 <p>naturally in the space $Y$ and the object $(X,\sigma)$.</p>
 <p><strong>Proof.</strong> A continuous map $g : X/\sigma \to Y$ corresponds to the equivariant map $g \circ \pi : X \to Y_{tr}$, and every equivariant map $X \to Y_{tr}$ is constant on orbits, hence of this form by the universal property; the correspondence is a bijection, and naturality is the naturality of the universal property.</p>
 <p><strong>Corollary.</strong> The orbit functor preserves all colimits, and it takes the initial object $\emptyset$ to $\emptyset$ and the coproduct of a family to the coproduct of the quotients: for spaces with involutions $(X_{i},\sigma_{i})$,</p>
 <p>$$
-\Bigl(\bigsqcup_{i} X_{i}\Bigr)/\sigma \ \cong \ \bigsqcup_{i} (X_{i}/\sigma_{i}) .
+\boxed{\;\Bigl(\bigsqcup_{i} X_{i}\Bigr)/\sigma \ \cong \ \bigsqcup_{i} (X_{i}/\sigma_{i})\;} .
 $$</p>
 <p>For a pushout of equivariant maps the orbit space of the pushout is the pushout of the orbit spaces.</p>
 <p><strong>Proof.</strong> A left adjoint preserves colimits; the displayed isomorphism is the coproduct case, with the involution acting componentwise and the orbit map acting componentwise.</p>

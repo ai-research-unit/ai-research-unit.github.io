@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions — Biquaternion Universe</title>
+  <title>Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-reduced-biquaternions"><strong>Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions</strong></h1>
+        <h1 id="relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion"><strong>Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A reduced biquaternion carries two decompositions of the same element. The <strong>eigenvalue decomposition</strong> of <em>Eigenbasis of a Reduced Biquaternion</em> writes $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ as</p>
 <p>$$
@@ -185,9 +185,11 @@ $$</p>
 $$</p>
 <p>The eigenvalues are complex, and they are distinct exactly when $Q_{\blacktriangledown}\neq0$. In that case</p>
 <p>$$
+\boxed{\;
 \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-,
 \qquad
-\Pi_\pm=\frac{1\pm j}{2},
+\Pi_\pm=\frac{1\pm j}{2}
+\;},
 $$</p>
 <p>with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statements of <em>Eigenbasis of a Reduced Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>The Eigenvalue Decomposition</em>. In the scalar case $Q_{\blacktriangledown}=0$, the eigenvalue is repeated, $\lambda_+=\lambda_-=Q_{\blacktriangle}$, and the decomposition is the one-term writing $\breve Q=Q_{\blacktriangle}\cdot1$.</p>
 <div class="table-scroll"><table>
@@ -227,10 +229,12 @@ $$</p>
 <h3 id="the-exponential-polar-decomposition">The Exponential Polar Decomposition</h3>
 <p>Every unit $\breve Q\in\mathbb{B}_{\mathrm{r}}^\times=\{Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ has a unique writing</p>
 <p>$$
+\boxed{\;
 \breve Q=\exp(\breve Q_{\log})
 =\breve r\,u,
 \qquad
-\breve Q_{\log}=\ln\rho+j\phi+i\alpha+ij\beta,
+\breve Q_{\log}=\ln\rho+j\phi+i\alpha+ij\beta
+\;},
 $$</p>
 <p>with</p>
 <p>$$
@@ -396,9 +400,11 @@ $$</p>
 <p>so that $\alpha+\beta=\operatorname{Arg}\lambda_+$ and $\alpha-\beta=\operatorname{Arg}\lambda_-$. The principal diamond contains the pair: $\lvert\alpha\rvert+\lvert\beta\rvert=\max(\lvert\operatorname{Arg}\lambda_+\rvert,\lvert\operatorname{Arg}\lambda_-\rvert)\le\pi$. The formulas for $\alpha$ and $\beta$ use the individual arguments, not the argument of the product or of the ratio: the latter are defined only modulo $2\pi$ and their halves only modulo $\pi$, which is the lattice ambiguity.</p>
 <p><strong>Proposition (the dictionary).</strong> On the unit group, the map</p>
 <p>$$
+\boxed{\;
 (\rho,\phi,\alpha,\beta)\longmapsto
 (\lambda_+,\lambda_-)
 =\bigl(\rho e^{i\alpha}e^{\phi+i\beta},\ \rho e^{i\alpha}e^{-\phi-i\beta}\bigr)
+\;}
 $$</p>
 <p>is a bijection from $\{\rho>0,\ \phi\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\}$, with the boundary half-open, onto the set of pairs of nonzero complex numbers. Its inverse is the formula above.</p>
 <p><em>Proof.</em> The map is the coordinate change of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>, §<em>The Four Real Coordinates</em>, with $C_\pm=\lambda_\pm$; its inverse and its lattice ambiguity are established there. The only new point is the identification $C_\pm=\lambda_\pm$, which is the eigenvalue formula of <em>Eigenbasis of a Reduced Biquaternion</em>.</p>
@@ -1196,12 +1202,13 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</a>, for the eight cases and the reconstruction tables.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions</a>, for the same eight cases read in the eigenbasis, with the idempotents and the spinors.</li>
 <li><a href="eigenbasis-of-a-reduced-biquaternion.html">Eigenbasis of a Reduced Biquaternion</a>, for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.</li>
 <li><a href="reduced-biquaternion-elementary-functions.html">Reduced Biquaternion Elementary Functions</a>, for the exponential, the logarithm, the kernel and the principal domain.</li>
 <li><a href="exponential-polar-decomposition-of-reduced-biquaternions.html">Exponential Polar Decomposition of Reduced Biquaternions</a>, for the decomposition, existence and uniqueness and the matrix picture.</li>
 <li><a href="modulus-unit-polar-decomposition-of-reduced-biquaternions.html">Modulus–Unit Polar Decomposition of Reduced Biquaternions</a>, for the modulus, the torus and the uniqueness of the pair.</li>
-<li><a href="relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-split-complex-numbers.html">Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers</a>, for the real two-dimensional analogue.</li>
-<li><a href="relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-biquaternions.html">Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions</a>, for the noncommutative analogue.</li>
+<li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html">Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number</a>, for the real two-dimensional analogue.</li>
+<li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</a>, for the noncommutative analogue.</li>
 <li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the notation.</li>
 </ul>
       </div>

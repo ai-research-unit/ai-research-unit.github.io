@@ -179,8 +179,7 @@ $$</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
 <p>Write $f(Q) = u(q, q') + i v(q, q')$, where $Q = q + i q'$ and $u, v : \Omega \to \mathbb{R}$.</p>
 <p><strong>Theorem.</strong> $f$ is holomorphic at $Q_0 = q_0 + i q'_0$ iff $u$ and $v$ are real differentiable at $(q_0, q'_0)$ and satisfy the <strong>Cauchy–Riemann equations</strong></p>
-<p>$$
-\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = -\frac{\partial v}{\partial q}.
+<p>$$ \boxed{\;\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = -\frac{\partial v}{\partial q}\;}.
 $$</p>
 <p><strong>Proof.</strong> Write $h = h_1 + i h_2$. The difference quotient is</p>
 <p>$$
@@ -251,8 +250,7 @@ $$</p>
 <p>is well-defined, holomorphic, and satisfies $F' = f$.</p>
 <h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
 <p><strong>Theorem (Cauchy Integral Formula).</strong> Let $f$ be holomorphic on a domain containing the closed disk $\overline{B}(Q_0, r)$. Then for every $Q$ in the open disk,</p>
-<p>$$
-f(Q) = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} \frac{f(Q_1)}{Q_1 - Q} \, dQ_1.
+<p>$$ \boxed{\;f(Q) = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} \frac{f(Q_1)}{Q_1 - Q} \, dQ_1\;}.
 $$</p>
 <p><strong>Proof.</strong> Apply the Cauchy-Goursat theorem to the function $g(Q_1) = (f(Q_1) - f(Q))/(Q_1 - Q)$ on the punctured disk, then let the radius of the small circle around $Q$ tend to zero.</p>
 <p><strong>Corollary (derivatives).</strong> Under the same hypotheses, $f$ is infinitely differentiable, and</p>
@@ -322,8 +320,7 @@ $$</p>
 \operatorname{Res}(f, Q_0) = c_{-1} = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q - Q_0\rangle_{*}} = \rho} f(Q) \, dQ.
 $$</p>
 <p><strong>Theorem (Residue Theorem).</strong> Let $f$ be holomorphic on a simply connected domain except for isolated singularities $Q_1, \dots, Q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $Q_k$ and winds once around each. Then</p>
-<p>$$
-\oint_\gamma f(Q) \, dQ = 2\pi i \sum_{k=1}^n \operatorname{Res}(f, Q_k).
+<p>$$ \boxed{\;\oint_\gamma f(Q) \, dQ = 2\pi i \sum_{k=1}^n \operatorname{Res}(f, Q_k)\;}.
 $$</p>
 <p><strong>Proof.</strong> Apply the Cauchy–Goursat theorem to the domain with small disks removed around each singularity, then use the definition of the residue.</p>
 <h3 id="computation-of-residues">Computation of Residues</h3>

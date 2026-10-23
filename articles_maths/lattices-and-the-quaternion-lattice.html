@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> A <strong>lattice</strong> is a free $\mathbb{Z}$-module $\Lambda$ of finite rank $n$; its <strong>rank</strong> is $n$. A <strong>sublattice</strong> is a subgroup $\Lambda' \subseteq \Lambda$ that is free of the same rank; it then has finite index. An <strong>embedded lattice</strong> is a lattice $\Lambda$ together with an injective linear map $\Lambda \otimes_{\mathbb{Z}}\mathbb{R} \to \mathbb{R}^n$ whose image spans, and a positive definite inner product on $\mathbb{R}^n$.</p>
 <p><strong>Proposition.</strong> Let $\Lambda' \subseteq \Lambda$ be sublattices of the same rank $n$, with $\mathbb{Z}$-bases $u_x,\dots,u_n$ and $v_1,\dots,v_n$. Write $v_j=\sum_i a_{ij}u_i$ with $a_{ij} \in \mathbb{Z}$; then $A=(a_{ij})$ is an integer matrix of nonzero determinant and</p>
 <p>$$
-[\Lambda:\Lambda']=|\det A| .
+\boxed{\;[\Lambda:\Lambda']=|\det A|\;} .
 $$</p>
 <p><em>Proof.</em> By the structure theorem for finitely generated $\mathbb{Z}$-modules, the Smith normal form $\operatorname{diag}(d_1,\dots,d_n)$ of $A$ satisfies $\Lambda/\Lambda' \cong \bigoplus_i\mathbb{Z}/d_i\mathbb{Z}$, where the $d_i$ are the invariant factors, each positive because the rank is the same; the order of the quotient is $\prod_i d_i=|\det A|$, which is the index.</p>
 <p><strong>Definition.</strong> For an embedded lattice $\Lambda$ with a $\mathbb{Z}$-basis $v_1,\dots,v_n$, the <strong>Gram matrix</strong> is $G=(v_i \cdot v_j)$ and the <strong>covolume</strong> is $\operatorname{covol}(\Lambda)=\sqrt{\det G}$, the $n$-dimensional volume of the fundamental parallelepiped. For two sublattices of the same rank,</p>
@@ -110,7 +110,7 @@ $$</p>
 <p>(ii) The norm is integer-valued on $\mathbb{H}'(\mathbb{Z})$: every element of $\mathbb{H}'(\mathbb{Z})$ has coordinates $b_t,b_x,b_y,b_z$ in $\tfrac12\mathbb{Z}$ that are either all integers or all odd half-integers, and then $\langle y\rangle_{\natural}=\sum_\mu b_\mu^2$ is an integer, since a square of an odd half-integer contributes $\tfrac14$ of an odd square and four such contributions sum to an integer.</p>
 <p>(iii) The Gram matrix of the basis $\omega,\vec e_x,\vec e_y,\vec e_z$ for the polar form $(x,y)=\operatorname{Sc}(x y^{\natural})$ is</p>
 <p>$$
-G'=\begin{pmatrix}1&\tfrac12&\tfrac12&\tfrac12\\ \tfrac12&1&0&0\\ \tfrac12&0&1&0\\ \tfrac12&0&0&1\end{pmatrix}, \qquad \det G'=\tfrac14,
+\boxed{\;G'=\begin{pmatrix}1&\tfrac12&\tfrac12&\tfrac12\\ \tfrac12&1&0&0\\ \tfrac12&0&1&0\\ \tfrac12&0&0&1\end{pmatrix}, \qquad \det G'=\tfrac14\;},
 $$</p>
 <p>so $\operatorname{covol}(\mathbb{H}'(\mathbb{Z}))=\tfrac12$ and the index relation $\operatorname{covol}(\mathbb{H})/\operatorname{covol}(\mathbb{H}')=2$ recovers $[\mathbb{H}':\mathbb{H}]=2$.</p>
 <p><em>Proof.</em> (i) Every element is $u+t\omega$ with $u \in \mathbb{H}(\mathbb{Z})$ and $t \in \mathbb{Z}$; writing $u=a_t+a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$, the coefficients of $u+t\omega$ are $a_t+t/2$ and $a_\mu+t/2$. The map $\mathbb{H}'(\mathbb{Z}) \to \mathbb{Z}/2$ sending $u+t\omega$ to $t \bmod 2$ is a surjection with kernel $\mathbb{H}(\mathbb{Z})$, so the quotient is $\mathbb{Z}/2$ and the index is $2$; the elements $\omega,\vec e_x,\vec e_y,\vec e_z$ are visibly independent over $\mathbb{Z}$, so the rank is $4$ and the index formula gives $|\det(\text{inclusion})|=2$, whose Smith normal form is $\operatorname{diag}(1,1,1,2)$.</p>
@@ -121,7 +121,7 @@ $$</p>
 <p><strong>Proposition.</strong> (i) There is no lattice strictly between $\mathbb{H}(\mathbb{Z})$ and $\mathbb{H}'(\mathbb{Z})$; equivalently the quotient $\mathbb{H}'(\mathbb{Z})/\mathbb{H}(\mathbb{Z}) \cong \mathbb{Z}/2\mathbb{Z}$ has prime order.</p>
 <p>(ii) For the form $(x,y)=\operatorname{Sc}(x y^{\natural})$ the Lipschitz lattice is self-dual, $\mathbb{H}(\mathbb{Z})^*=\mathbb{H}(\mathbb{Z})$, while the dual of the Hurwitz lattice is</p>
 <p>$$
-\mathbb{H}'(\mathbb{Z})^*=\{y \in \mathbb{H}(\mathbb{Z}): y_t+y_x+y_y+y_z \equiv 0 \pmod 2\},
+\boxed{\;\mathbb{H}'(\mathbb{Z})^*=\{y \in \mathbb{H}(\mathbb{Z}): y_t+y_x+y_y+y_z \equiv 0 \pmod 2\}\;},
 $$</p>
 <p>a sublattice of $\mathbb{H}(\mathbb{Z})$ of index $2$ and covolume $2$; thus $\mathbb{H}'(\mathbb{Z})$ is not self-dual and $[\mathbb{H}'(\mathbb{Z}):\mathbb{H}'(\mathbb{Z})^*]=4$.</p>
 <p>(iii) The lattice $\tfrac12\mathbb{H}(\mathbb{Z})$ contains $\mathbb{H}'(\mathbb{Z})$ with index $8$ and covolume $\tfrac1{16}$.</p>

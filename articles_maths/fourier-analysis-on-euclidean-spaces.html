@@ -134,7 +134,7 @@ $$
 <h3 id="plancherels-theorem">Plancherel's Theorem</h3>
 <p><strong>Theorem (Plancherel).</strong> The Fourier transform on $\mathcal{S}$ is an isometry of $L^2$,
 $$
-\lVert \mathcal F f\rVert_2 = \lVert f\rVert_2 \qquad (f\in\mathcal{S}),
+\boxed{\;\lVert \mathcal F f\rVert_2 = \lVert f\rVert_2 \qquad (f\in\mathcal{S})\;},
 $$
 and it extends uniquely to a unitary operator $\mathcal{F}:L^2\to L^2$, with $\mathcal{F}^4 = 1$ and $\mathcal{F}^2 = $ reflection; the inverse on $L^2$ is the conjugate transform, $f(x) = \int(\mathcal F f)(\xi)\exp(2\pi ix\cdot\xi)d\xi$ understood as an $L^2$ limit. For $f,g\in L^2$ the <strong>Parseval identity</strong> holds:
 $$
@@ -156,7 +156,7 @@ so that $h_1$ is an eigenfunction with eigenvalue $-i = (-i)^1$, in agreement wi
 <h3 id="the-hausdorffyoung-inequality">The Hausdorff–Young Inequality</h3>
 <p><strong>Theorem (Hausdorff–Young).</strong> For $1\leq p\leq2$ and $1/n + 1/m = 1$,
 $$
-\lVert \mathcal F f\rVert_q\leq\lVert f\rVert_p \qquad (f\in L^{n}\cap L^1),
+\boxed{\;\lVert \mathcal F f\rVert_q\leq\lVert f\rVert_p \qquad (f\in L^{n}\cap L^1)\;},
 $$
 and the transform extends to a bounded linear map $L^{n}\to L^{m}$ of norm $1$; for $p=2$ this is Plancherel, for $p=1$ the trivial bound, and the intermediate cases fail for $p>2$.</p>
 <p><strong>Proof sketch.</strong> The inequality is the interpolation of the two endpoint bounds, the $L^1\to L^\infty$ bound and the $L^2\to L^2$ isometry, by the Riesz–Thorin convexity theorem applied to the analytic family of operators obtained by complexifying the dilation; the failure for $p>2$ is the scaling computation with the rescaled Gaussian, whose transform concentrates: a function in $L^{n}$ for $p>2$ may have a transform outside every $L^{m}$ with $q<2$.</p>
@@ -164,7 +164,7 @@ and the transform extends to a bounded linear map $L^{n}\to L^{m}$ of norm $1$; 
 <h3 id="the-joint-localisation-theorems">The Joint Localisation Theorems</h3>
 <p><strong>Theorem (Heisenberg's inequality).</strong> For $f\in L^2(\mathbb{R})$ with $xf\in L^2$ and $\mathcal F f\in L^2$,
 $$
-\lVert xf\rVert_2\,\lVert \xi(\mathcal F f)(\xi)\rVert_2\geq\frac{1}{4\pi}\lVert f\rVert_2^2 ,
+\boxed{\;\lVert xf\rVert_2\,\lVert \xi(\mathcal F f)(\xi)\rVert_2\geq\frac{1}{4\pi}\lVert f\rVert_2^2\;} ,
 $$
 with equality exactly for the modulated Gaussians $f(x) = c\exp(-ax^2+ibx)$; the rescaled Gaussians $\exp(-\pi ax^2)$ attain the constant for every $a>0$, which is the statement that no function is better localised in both variables than the Gaussian.</p>
 <p><strong>Proof.</strong> Integrating the identity $\int_{\mathbb{R}}(x\lvert f\rvert^2)' = 0$, which holds because $x\lvert f\rvert^2$ vanishes at both ends, gives

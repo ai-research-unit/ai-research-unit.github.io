@@ -91,7 +91,7 @@ B^{\mathrm{s}} = \tfrac{1}{2}(B+B^{\intercal}), \qquad B^{\mathrm{a}} = \tfrac{1
 $$</p>
 <p><strong>Theorem (topological splitting).</strong> Let $V$ be a normed space over $\mathbb{R}$ and let $\operatorname{Bil}(V)$ carry the operator norm. The symmetrisation and the antisymmetrisation are continuous linear projections, they commute, and</p>
 <p>$$
-\operatorname{Bil}(V) = \operatorname{Sym}(V)\oplus\operatorname{Alt}(V)
+\boxed{\;\operatorname{Bil}(V) = \operatorname{Sym}(V)\oplus\operatorname{Alt}(V)\;}
 $$</p>
 <p>is a topological direct sum, the norm of each projection being $1$. The polar forms of the quadratic forms are exactly the symmetric summand, and the summand of the alternating forms is the object of this article.</p>
 <p><em>Proof.</em> The maps are linear in $B$ and $\lVert B^{\mathrm{s}}\rVert\le\tfrac12(\lVert B\rVert+\lVert B^{\intercal}\rVert)=\lVert B\rVert$ because transposition preserves the operator norm, and $\lVert B^{\mathrm{a}}\rVert\le\lVert B\rVert$ likewise. The identities $(B^{\mathrm{s}})^{\mathrm{s}}=B^{\mathrm{s}}$, $(B^{\mathrm{a}})^{\mathrm{a}}=B^{\mathrm{a}}$ and $B^{\mathrm{s}}+B^{\mathrm{a}}=B$ hold algebraically, and the two projections annihilate each other's image; the images are closed, the symmetric forms being the fixed locus of the continuous involution $B\mapsto B^{\intercal}$, and a direct sum of two closed subspaces split by continuous projections is topological.</p>
@@ -116,7 +116,7 @@ $$</p>
 <h3 id="the-hyperbolic-module">The Hyperbolic Module</h3>
 <p><strong>Theorem.</strong> Let $M$ be a normed space over $\mathbb{R}$ and let $M'$ be its continuous dual with the dual norm. The form</p>
 <p>$$
-\omega\bigl((x,f),(y,g)\bigr) = g(x) - f(y)
+\boxed{\;\omega\bigl((x,f),(y,g)\bigr) = g(x) - f(y)\;}
 $$</p>
 <p>on $M\oplus M'$ is continuous, alternating, and non-degenerate.</p>
 <p><em>Proof.</em> Continuity: $\lvert g(x)-f(y)\rvert\le\lVert g\rVert\lVert x\rVert+\lVert f\rVert\lVert y\rVert$, which is a continuous function of the pair. Alternation is immediate by inserting $(x,f)$ twice. Non-degeneracy: if $(x,f)$ pairs to zero with every $(y,g)$, then taking $g=0$ gives $f(y)=0$ for every $y$, so $f=0$, and taking $y=0$ gives $g(x)=0$ for every $g\in M'$; by the Hahn–Banach separation theorem a vector annihilated by every continuous functional is zero, so $x=0$.</p>
@@ -126,7 +126,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $A$ be a commutative topological $F$-algebra with a continuous product. A <strong>continuous Poisson bracket</strong> on $A$ is a bilinear, alternating, continuous map $\{\cdot,\cdot\} : A\times A\to A$ that is a derivation in each argument, $\{f,gh\}=\{f,g\}h+g\{f,h\}$ and $\{fg,h\}=f\{g,h\}+\{f,h\}g$, and satisfies the Jacobi identity; the algebraic definition is <em>Symplectic Forms and Poisson Brackets</em>, §<em>The Poisson Bracket</em>. The <strong>Poisson centre</strong> is $Z=\{f : \{f,g\}=0 \text{ for every } g\}$, and the <strong>Hamiltonian derivation</strong> of $f$ is $X_{f}(g)=\{f,g\}$.</p>
 <p><strong>Proposition.</strong> Let $\{\cdot,\cdot\}$ be a continuous Poisson bracket on $A$. Then each Hamiltonian derivation $X_{f}$ is a continuous derivation of $A$, the map $X : A\to\operatorname{Der}(A)$, $f\mapsto X_{f}$, is linear and continuous for the topology of pointwise convergence on $\operatorname{Der}(A)$, its kernel is the Poisson centre, and</p>
 <p>$$
-X_{\{f,g\}} = [X_{f},X_{g}] .
+\boxed{\;X_{\{f,g\}} = [X_{f},X_{g}]\;} .
 $$</p>
 <p><em>Proof.</em> The derivation property is the algebraic one, and continuity is the continuity of the bracket in its second variable with $f$ fixed. Linearity of $X$ is the bilinearity of the bracket, and continuity is the pointwise continuity of $g\mapsto\{f,g\}$ uniformly over $f$ in a bounded set. The kernel is the centre by the definition of both. The displayed identity is the Jacobi identity, as in <em>Symplectic Forms and Poisson Brackets</em>, §<em>The Poisson Bracket</em>, and it holds in the topological algebra because it is a polynomial identity.</p>
 <p><strong>Corollary.</strong> Endow $A$ with the bracket. Then $A$ is a topological Lie algebra, $X$ is a continuous homomorphism of Lie algebras onto the ideal of Hamiltonian derivations, and both the Poisson centre and the closure of the image of $X$ are Lie subalgebras.</p>

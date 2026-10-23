@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> A <strong>lattice</strong> is a partially ordered set $(L, \leq)$ in which every pair of elements has a least upper bound and a greatest lower bound. The least upper bound of $\{a,b\}$ is the <strong>join</strong> $a \vee b$, and the greatest lower bound is the <strong>meet</strong> $a \wedge b$. A lattice is <strong>bounded</strong> if it has a least element $0$ and a greatest element $1$.</p>
 <p>The two operations are related to the order by the equivalences</p>
 <p>$$
-a \wedge b = a \iff a \leq b \iff a \vee b = b,
+\boxed{\;a \wedge b = a \iff a \leq b \iff a \vee b = b\;},
 $$</p>
 <p>which is the form in which inequalities are verified in a lattice. Written as equations, the operations satisfy the <strong>lattice laws</strong></p>
 <p>$$
@@ -123,7 +123,7 @@ $$</p>
 <p>Uniqueness is what makes $\neg$ an operation and not merely a relation, and it is what fails in the non-distributive ortholattices. The following identities are then forced, and they are the reason Boolean algebra is an equational theory.</p>
 <p><strong>Theorem.</strong> Let $B$ be a Boolean algebra and $\alpha, \beta \in B$. Then</p>
 <p>$$
-\neg \neg \alpha = \alpha, \qquad \neg 0 = 1, \qquad \neg 1 = 0, \qquad \neg(\alpha \wedge \beta) = \neg \alpha \vee \neg \beta, \qquad \neg(\alpha \vee \beta) = \neg \alpha \wedge \neg \beta,
+\boxed{\;\neg \neg \alpha = \alpha, \qquad \neg 0 = 1, \qquad \neg 1 = 0, \qquad \neg(\alpha \wedge \beta) = \neg \alpha \vee \neg \beta, \qquad \neg(\alpha \vee \beta) = \neg \alpha \wedge \neg \beta\;},
 $$</p>
 <p>and</p>
 <p>$$
@@ -164,7 +164,7 @@ $$</p>
 <p>there being one for each exponent vector $e$, hence exactly $2^n$ of them.</p>
 <p><strong>Theorem (algebraic normal form).</strong> Every Boolean function $f$ of $n$ variables has a unique expression</p>
 <p>$$
-f(\alpha) = \bigoplus_{e \in \mathbf{2}^n} c_e \, \alpha^{e}, \qquad c_e \in \mathbb{F}_2,
+\boxed{\;f(\alpha) = \bigoplus_{e \in \mathbf{2}^n} c_e \, \alpha^{e}, \qquad c_e \in \mathbb{F}_2\;},
 $$</p>
 <p>where $\oplus$ is addition in $\mathbb{F}_2$ and the product is taken in $\mathbb{F}_2$.</p>
 <p><strong>Proof.</strong> The $2^n$ reduced monomials are linearly independent over $\mathbb{F}_2$ as functions. Suppose a combination vanishes and let $e$ be an exponent vector with $c_e \neq 0$ minimal for coordinatewise comparison: if $e' < e$ coordinatewise then $c_{e'} = 0$, and evaluating the combination at the point $e$ (read as an element of $\mathbf{2}^n$) kills every monomial $\alpha^{e'}$ with $e'$ not above $e$, while $\alpha^{e}(e) = 1$; hence $c_e = 0$, a contradiction. So the span of the reduced monomials has dimension $2^n$. There are exactly $2^{2^n}$ functions $\mathbf{2}^n \to \mathbf{2}$ and exactly $2^{2^n}$ coefficient vectors $(c_e)$, so the span is everything and the expression is unique.</p>

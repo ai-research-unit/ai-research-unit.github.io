@@ -96,7 +96,7 @@ $$</p>
 <p>The Leibniz rule extends from two factors to any finite list, and the extension is the algebraic statement that a derivation acts as a sum of partial differentiations.</p>
 <p><strong>Proposition (the product rule).</strong> For $x_1, \dots, x_n \in A$,</p>
 <p>$$
-D(x_1 x_2 \cdots x_n) = \sum_{i=1}^{n} x_1 \cdots x_{i-1}\, D(x_i)\, x_{i+1} \cdots x_n .
+\boxed{\;D(x_1 x_2 \cdots x_n) = \sum_{i=1}^{n} x_1 \cdots x_{i-1}\, D(x_i)\, x_{i+1} \cdots x_n\;} .
 $$</p>
 <p><strong>Proof.</strong> Induction on $n$, the case $n = 1$ being the definition and the step being the two-factor rule applied to $x_1\cdots x_{n-1}$ and $x_n$.</p>
 <p><strong>Corollary.</strong> A derivation of a commutative ring is determined by its values on any generating set, and it acts on a monomial by the sum of the partial derivations with respect to the generators. This is the algebraic form of the partial derivative, and it is why the polynomial ring below has a basis of derivations indexed by the individual variables.</p>
@@ -145,7 +145,7 @@ $$</p>
 $$</p>
 <p>Hence $\operatorname{ad}$ is a homomorphism of Lie rings $A \to \operatorname{Der}(A)$ with kernel the centre, so that</p>
 <p>$$
-\operatorname{Inn}_{\mathrm{der}}(A) := \operatorname{ad}(A) \;\cong\; A / Z(A)
+\boxed{\;\operatorname{Inn}_{\mathrm{der}}(A) := \operatorname{ad}(A) \;\cong\; A / Z(A)\;}
 $$</p>
 <p>as Lie rings. The elements of $\operatorname{Inn}_{\mathrm{der}}(A)$ are the <strong>inner derivations</strong>.</p>
 <p><strong>Proof.</strong> $\operatorname{ad}_a(xy) = a xy - xy a$ and $\operatorname{ad}_a(x)y + x\operatorname{ad}_a(y) = (ax-xa)y + x(ay-ya) = axy - xay + xay - xya = axy - xya$. Additivity is immediate. For the bracket, both sides are derivations that agree on a generating set: $[\operatorname{ad}_a,\operatorname{ad}_b](x) = a(bx-xb) - (bx-xb)a - b(ax-xa) + (ax-xa)b = abx - axb - bxa + xba - bax + bxa + axb - xab = (ab-ba)x - x(ab-ba) = \operatorname{ad}_{[a,b]}(x)$, all middle terms cancelling. Finally $\operatorname{ad}_a = 0$ says $ax = xa$ for all $x$, that is, $a \in Z(A)$.</p>
@@ -153,7 +153,7 @@ $$</p>
 <h3 id="the-inner-derivations-as-a-lie-ideal">The inner derivations as a Lie ideal</h3>
 <p><strong>Theorem.</strong> $\operatorname{Inn}_{\mathrm{der}}(A)$ is a Lie ideal of $\operatorname{Der}(A)$: for every derivation $D$ and every $a \in A$,</p>
 <p>$$
-[D, \operatorname{ad}_a] = \operatorname{ad}_{D(a)} .
+\boxed{\;[D, \operatorname{ad}_a] = \operatorname{ad}_{D(a)}\;} .
 $$</p>
 <p>Hence $\operatorname{Inn}_{\mathrm{der}}(A) \trianglelefteq \operatorname{Der}(A)$ as Lie rings, and the quotient $\operatorname{Out}_{\mathrm{der}}(A) = \operatorname{Der}(A)/\operatorname{Inn}_{\mathrm{der}}(A)$ is the Lie ring of <strong>outer derivations</strong>.</p>
 <p><strong>Proof.</strong> Both sides are derivations; compute on $x$: $D(\operatorname{ad}_a(x)) - \operatorname{ad}_a(D(x)) = D(ax - xa) - aD(x) + D(x)a = D(a)x + aD(x) - D(x)a - xD(a) - aD(x) + D(x)a = D(a)x - xD(a) = \operatorname{ad}_{D(a)}(x)$.</p>

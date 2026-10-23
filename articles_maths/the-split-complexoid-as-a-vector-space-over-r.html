@@ -161,7 +161,7 @@ $$</p>
 <p>The two readings of the plane are separated by one operator, and the separation is a commutation condition.</p>
 <p><strong>Proposition (linearity is the commutator with $J$).</strong> A real-linear map $T$ of $\mathbb{D}$ is $\mathbb{D}$-linear exactly when it commutes with $J$, and conjugate-linear over $\mathbb{D}$ exactly when it anticommutes with it:</p>
 <p>$$
-T(Q_1Q_2) = Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = JT, \qquad T(Q_1Q_2) = \bar Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = -JT .
+\boxed{\; T(Q_1Q_2) = Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = JT, \qquad T(Q_1Q_2) = \bar Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = -JT \;}.
 $$</p>
 <p><strong>Proof.</strong> Let $T$ be real-linear. Then $T(JQ_2)=T(jQ_2)$ and $J(TQ_2)=jT(Q_2)$, so the identity $T(jQ_2)=jT(Q_2)$ is exactly $TJ=JT$; real-linearity then gives $T(Q_1Q_2)=T(q_1Q_2+jq'_1Q_2)=q_1T(Q_2)+j q'_1T(Q_2)=Q_1\,T(Q_2)$ for every $Q_1=q_1+jq'_1$, and conversely $TJ=JT$ gives $T(jQ_2)=jT(Q_2)$, hence the same identity for every $Q_1$. The conjugate-linear case is the same computation with the sign reversed: $T(jQ_2)=-jT(Q_2)$, and then $T(Q_1Q_2)=q_1T(Q_2)-jq'_1T(Q_2)=\bar Q_1\,T(Q_2)$.</p>
 <p><strong>The two block shapes.</strong> Writing a real-linear map in the basis as a matrix $T=\begin{pmatrix} p & u \\ r & s \end{pmatrix}$, the two conditions are read off the two products</p>
@@ -202,7 +202,7 @@ $$</p>
 <p>Read over the ring $\mathbb{D}$ itself, the set is a <strong>free module of rank one</strong> on the single basis element $1$: every element is $Q\cdot 1$ for a unique $Q\in\mathbb{D}$, and the module is $\mathbb{D}$ acting on itself. This is the second reading of the table above, and it is not a vector space, because the scalars form a ring and not a field.</p>
 <p>The difference is concrete. A vector space over a field has every nonzero element invertible as a scalar, so every nonzero vector generates; here the scalars include the zero divisors, so a nonzero element of the module need not generate it. Exactly as in the ring, the element $\Pi_1$ is a nonzero scalar that annihilates $\Pi_2$, and $\Pi_1\cdot\mathbb{D}=\mathbb{R}\Pi_1$ is a proper nonzero submodule. The submodules of the rank-one module are the ideals of the ring,</p>
 <p>$$
-0, \quad \mathbb{R}\Pi_1, \quad \mathbb{R}\Pi_2, \quad \mathbb{D},
+\boxed{\; 0, \quad \mathbb{R}\Pi_1, \quad \mathbb{R}\Pi_2, \quad \mathbb{D} \;},
 $$</p>
 <p>the two idempotent lines and the two trivial submodules; each idempotent line is closed under multiplication by every scalar, and it is minimal. This is the two-dimensional case of the ideal theory owned by <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>, and the submodules are the same two lines as the subspaces of <em>Split-Complexoid Subspaces</em>: the module theory and the subspace theory meet at the idempotent lines.</p>
 <p><strong>Remark.</strong> The module is free of rank one, so it has a basis, but the basis element is not interchangeable with every nonzero element: an element $Q\cdot 1$ is again a basis exactly when $Q$ is a unit, by the invertibility criterion $\langle Q\rangle_{*}\neq 0$ of <em>Norm and Invertibility in the General Split-Complex Algebra</em>. A zero divisor such as $\Pi_1$ spans only its own line. This is the sense in which the self-reading is a module and not a vector space: the failure is the same failure of division that makes the ring not a field.</p>
@@ -217,7 +217,7 @@ q_+ = q+q', \qquad q_- = q-q', \qquad q = \tfrac12(q_++q_-), \qquad q' = \tfrac1
 $$</p>
 <p>So the plane is a <strong>pair of real lines</strong>,</p>
 <p>$$
-\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2,
+\boxed{\; \mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2 \;},
 $$</p>
 <p>and in these coordinates the structure is diagonal, $J(q_+\Pi_1+q_-\Pi_2)=q_+\Pi_1-q_-\Pi_2$, hence $J=\operatorname{diag}(1,-1)$. The two coordinate lines are exactly its two eigenspaces, and the coordinates in which they separate are the reason $J$ is a product structure and not a complex structure. The same coordinates carry the multiplication, which is componentwise, and they are developed as a representation in <em>Split-Complex Two-Component Element Representation</em>.</p>
 <h2 id="summary">Summary</h2>

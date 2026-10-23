@@ -194,9 +194,7 @@ $$</p>
 <p>Thus $D$ is the divergence of the quaternion-valued field with components $e_\mu f$, and the divergence theorem of $\mathbb{R}^4$ applies to it directly.</p>
 <h3 id="the-divergence-theorem">The Divergence Theorem</h3>
 <p><strong>Theorem (divergence theorem).</strong> Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be $C^1$ on $\bar{\Omega}$. Then</p>
-<p>$$
-\int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS.
-$$</p>
+<p>$$ \boxed{\; \int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS \;} .$$</p>
 <p><strong>Proof.</strong> For each real component, the ordinary divergence theorem in $\mathbb{R}^4$ applied to the field with components $e_\mu f$ gives $\int_\Omega \sum_\mu \partial/\partial q_\mu\,(e_\mu f)\,dV = \int_{\partial\Omega}\sum_\mu n_\mu e_\mu f\,dS$. The left side is $\int_\Omega Df\,dV$ by the divergence form, and the right side is $\int_{\partial\Omega}\nu f\,dS$ by the definition of the conormal element. The right-handed identity is the same computation for the field with components $f e_\mu$.</p>
 <p><strong>Corollary (conjugate divergence theorem).</strong> Under the same hypotheses,</p>
 <p>$$
@@ -270,9 +268,7 @@ $$</p>
 <p>The collapse of the product to a scalar is special to the quaternion case, where $\tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q$ is central, and it is the reason the boundary integrals below can be read as weighted averages of $f$ over the boundary.</p>
 <h3 id="the-cauchypompeiu-representation">The Cauchy–Pompeiu Representation</h3>
 <p><strong>Theorem (Cauchy–Pompeiu).</strong> Let $\Omega$ be a bounded domain with smooth boundary, let $f$ be $C^1$ on $\bar{\Omega}$, and let $\tilde p \in \Omega$. Then</p>
-<p>$$
-f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,(Df)(w)\,dV(w).
-$$</p>
+<p>$$ \boxed{\; f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,(Df)(w)\,dV(w) \;} .$$</p>
 <p><strong>Proof (sketch).</strong> Fix $\tilde p$ and remove from $\Omega$ a closed ball $\overline{B(\tilde p,\varepsilon)}$ to obtain $\Omega_\varepsilon$. Apply the divergence theorem to the field with components $F_\mu(w) = E(w - \tilde p)\,e_\mu\,f(w)$, where $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4$ is the fundamental solution. Its divergence is</p>
 <p>$$
 \sum_{\mu\in\{t,x,y,z\}} \partial/\partial q_\mu F_\mu = \sum_\mu (\partial/\partial q_\mu E)\, e_\mu f + E \sum_\mu e_\mu \partial/\partial q_\mu f = (ED)f + E(Df) = E(Df),
@@ -285,9 +281,7 @@ $$</p>
 <p>The representation is the quaternionic instance of the general Cauchy–Pompeiu formula of <em>Hypercomplex Integration</em>: the boundary term reproduces $f$ when $f$ is regular, and the volume term corrects for the failure of regularity through $Df$. The kernel depends on the system only through the fundamental solution of its operator.</p>
 <h3 id="the-cauchy-integral-formula-for-regular-functions">The Cauchy Integral Formula for Regular Functions</h3>
 <p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be left regular and $C^1$ on a domain containing the closed ball $\overline{B(\tilde p, r)}$. Then for every $\tilde q$ with $|\tilde q - \tilde p| < r$,</p>
-<p>$$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w).
-$$</p>
+<p>$$ \boxed{\; f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) \;} .$$</p>
 <p><strong>Proof.</strong> Apply the Cauchy–Pompeiu representation with $\Omega = B(\tilde p,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = ((w-\tilde q))^{\natural}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.</p>
 <p>For a ball centred at the point of evaluation, $\tilde q = \tilde p$, the kernel–normal product is the scalar $1/r^3$, and the formula becomes the <strong>mean value property</strong></p>
 <p>$$

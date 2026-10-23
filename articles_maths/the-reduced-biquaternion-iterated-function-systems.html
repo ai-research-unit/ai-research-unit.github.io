@@ -89,7 +89,9 @@ $$</p>
 <h2 id="contractions-and-the-operator-norm">Contractions and the Operator Norm</h2>
 <p><strong>Theorem (the operator norm).</strong> For the left multiplication by an element $\breve Q$ on the algebra with the topological norm,</p>
 <p>$$
-\lVert L_{\breve Q}\rVert=\max(|Q_{+}|,|Q_{-}|),
+\boxed{\;
+\lVert L_{\breve Q}\rVert=\max(|Q_{+}|,|Q_{-}|)
+\;},
 $$</p>
 <p>the maximum of the moduli of the two idempotent coordinates; in terms of the topological norm, $\max(|Q_{+}|,|Q_{-}|)^{2}\leq 2\langle\breve Q\rangle_{\mathrm{ts}*}$, with equality exactly when one of the two moduli vanishes, so that the operator norm is at most $\sqrt{2\langle\breve Q\rangle_{\mathrm{ts}*}}$ and equals $\sqrt{\langle\breve Q\rangle_{\mathrm{ts}*}}$ precisely when the two moduli coincide.</p>
 <p><strong>Proof.</strong> The operator is diagonal with the two entries $Q_{+}$ and $Q_{-}$ in the idempotent basis, and the norm of a diagonal operator for the norm $\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})^{1/2}$ is the largest modulus of an entry; the comparison with $\langle\cdot\rangle_{\mathrm{ts}*}$ follows from $\max(|Q_{+}|,|Q_{-}|)^{2}\leq|Q_{+}|^{2}+|Q_{-}|^{2}\leq2\max(|Q_{+}|,|Q_{-}|)^{2}$, with equality in the first inequality exactly when one modulus vanishes and in the second exactly when $|Q_{+}|=|Q_{-}|$.</p>
@@ -100,7 +102,9 @@ $$</p>
 <p><strong>Proof.</strong> A real-linear map of a Euclidean space is a similarity exactly when its two singular values coincide; the map is diagonal in the idempotent coordinates with entries $\alpha,\beta$, so its singular values are $|\alpha|$ and $|\beta|$. For the left multiplication by $\breve Q$ the entries are $Q_{+}$ and $Q_{-}$, and for $\breve Q=t\,j$ with $t$ real the coordinates are $Q_{+}=t$ and $Q_{-}=-t$, of equal modulus.</p>
 <p><strong>Theorem (the similarity dimension).</strong> Let the system have $m$ generators, each a similarity of the algebra of ratio $r_{i}<1$ with the same ratio in the two coordinates. Then the attractor is a self-similar set, and under the open set condition its Hausdorff dimension is the unique $s$ with</p>
 <p>$$
-\sum_{i=1}^{m}r_{i}^{s}=1,
+\boxed{\;
+\sum_{i=1}^{m}r_{i}^{s}=1
+\;},
 $$</p>
 <p>the same equation as for each of the two coordinate systems.</p>
 <p><strong>Proof.</strong> Each generator is a similarity of ratio $r_{i}$ and the family is a self-similar system; the attractor satisfies the fixed point equation of the system, and the classical dimension formula for a self-similar set with the open set condition gives the equation. The two coordinate systems have the same ratios by hypothesis, so their dimensions solve the same equation.</p>
@@ -113,7 +117,9 @@ $$</p>
 <h2 id="the-inverses-and-the-branches-of-the-square">The Inverses and the Branches of the Square</h2>
 <p><strong>Theorem (the branches of the square).</strong> The squaring map $\breve Q\mapsto \breve Q^{2}$ is surjective, and the solutions of $\breve Q^{2}=W$ with $W=w_{1}\Pi_++w_{2}\Pi_-$ are</p>
 <p>$$
-\breve Q=\pm\sqrt{w_{1}}\;\Pi_+\pm\sqrt{w_{2}}\;\Pi_-,
+\boxed{\;
+\breve Q=\pm\sqrt{w_{1}}\;\Pi_+\pm\sqrt{w_{2}}\;\Pi_-
+\;},
 $$</p>
 <p>four of them when $w_{1}w_{2}\neq0$, two when exactly one coordinate is zero, and one when $W=0$. The branching set is the zero-divisor cone $\{w_{1}=0\}\cup\{w_{2}=0\}$.</p>
 <p><strong>Proof.</strong> The square is coordinatewise, so $\breve Q^{2}=W$ is the pair of the equations $Q_{+}^{2}=w_{1}$ and $Q_{-}^{2}=w_{2}$; each has two solutions in the complex field, one of them double when the value is zero, and none otherwise; the branching is at the values where a solution is multiple, which is the vanishing of a coordinate.</p>

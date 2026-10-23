@@ -145,7 +145,7 @@ $$</p>
 <h3 id="the-matrix-exponential">The Matrix Exponential</h3>
 <p><strong>Theorem.</strong> Let $G \subseteq GL_n(\mathbb{K})$ be a Lie subgroup with Lie algebra $\mathrm{G} \subseteq \mathrm{GL}(n, \mathbb{K})$. Then the exponential map of $G$ agrees with the ordinary matrix exponential on $\mathrm{G}$:</p>
 <p>$$
-\exp(A) = \sum_{k=0}^{\infty} \frac{A^k}{k!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3!} + \cdots,
+\boxed{\;\exp(A) = \sum_{k=0}^{\infty} \frac{A^k}{k!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3!} + \cdots\;},
 $$</p>
 <p>and the series converges absolutely for every $A$.</p>
 <p><strong>Proof.</strong> The series converges because its norm is bounded by $\exp(\|A\|)$; differentiating it term by term gives $\frac{d}{dt}\exp(tA) = A \exp(tA)$, so $t \mapsto \exp(tA)$ is a one-parameter subgroup of $GL_n$ with velocity $A$; by uniqueness it is $\gamma_A(t)$, and evaluating at $t = 1$ gives the claim. For $G$ a subgroup, the curve $\exp(tA)$ lies in $G$ for $A \in \mathrm{G}$ because $G$ is a Lie subgroup with that Lie algebra, so the exponential of $G$ agrees with the matrix exponential.</p>
@@ -174,7 +174,7 @@ $$</p>
 <h3 id="the-formula-for-math216">The Formula for $d\exp$</h3>
 <p><strong>Theorem.</strong> Identify $T_v\mathrm{G}$ with $\mathrm{G}$ for every $v$, and $T_{\exp(v)}G$ with $\mathrm{G}$ by left translation. Then the differential of the exponential is the operator</p>
 <p>$$
-d(\exp)_v = \sum_{k=0}^{\infty} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_v)^k = \frac{1 - \exp(-\operatorname{ad}_v)}{\operatorname{ad}_v},
+\boxed{\;d(\exp)_v = \sum_{k=0}^{\infty} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_v)^k = \frac{1 - \exp(-\operatorname{ad}_v)}{\operatorname{ad}_v}\;},
 $$</p>
 <p>the series being the entire function $\frac{1-\exp(-z)}{z}$ applied to the endomorphism $\operatorname{ad}_v$.</p>
 <p><strong>Proof sketch.</strong> Differentiate the identity $\exp(v + s w) = \exp(v)\exp(sW(s))$ for a curve $W$ in $\mathrm{G}$ with $W(0) = 0$; the derivative at $s = 0$ is $d(\exp)_v(w) = \sum_{k \geq 0}\frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k(w)$, obtained by expanding the Campbell–Baker–Hausdorff series. The expansion is the standard computation, and its coefficients are the Bernoulli-like numbers $\frac{(-1)^k}{(k+1)!}$.</p>
@@ -196,7 +196,7 @@ $$</p>
 $$</p>
 <p>has a unique solution $Z(X, Y)$, and this solution is a <strong>Lie polynomial</strong>: it is a convergent series in $X, Y$ whose every term is obtained from $X, Y$ by iterated brackets. Its first terms are</p>
 <p>$$
-Z(X, Y) = X + Y + \tfrac{1}{2}[X, Y] + \tfrac{1}{12}[X, [X, Y]] - \tfrac{1}{12}[Y, [X, Y]] - \tfrac{1}{24}[Y, [X, [X, Y]]] + \cdots.
+\boxed{\;Z(X, Y) = X + Y + \tfrac{1}{2}[X, Y] + \tfrac{1}{12}[X, [X, Y]] - \tfrac{1}{12}[Y, [X, Y]] - \tfrac{1}{24}[Y, [X, [X, Y]]] + \cdots\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> The derivative formula for the exponential gives the differential equation satisfied by $Z$ along the path $\exp(X)\exp(tY)$, and the solution is obtained by successive approximation; each step introduces one more bracket, and the convergence for small $X, Y$ follows from the analytic dependence on the two variables, by the analytic implicit function theorem.</p>
 <h3 id="consequences">Consequences</h3>

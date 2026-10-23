@@ -94,7 +94,7 @@ $$</p>
 $$</p>
 <p>is an involutive automorphism of $O(V,\mathfrak{Q})$ — the <strong>involutive automorphism</strong> of the pair — and it is a Cartan involution: its fixed subgroup is</p>
 <p>$$
-O(V,\mathfrak{Q})^{\theta} = \{g : gJ = Jg\} = O(V_+)\times O(V_-) = O(n)\times O(m),
+\boxed{\;O(V,\mathfrak{Q})^{\theta} = \{g : gJ = Jg\} = O(V_+)\times O(V_-) = O(n)\times O(m)\;},
 $$</p>
 <p>the metrically diagonal matrices, it is the stabiliser of the definite decomposition, and it is a maximal compact subgroup; the differential $d\theta$ is $+1$ on $\mathfrak{k} = \mathfrak{o}(n)\oplus\mathfrak{o}(m)$ and $-1$ on $\mathfrak{n}$, and $\theta$ is unique up to conjugacy.</p>
 <p><strong>Proof.</strong> Conjugation by $J$ is an automorphism of the group of matrices preserving $J$, of order two because $J^2 = I$; a matrix is fixed exactly when it commutes with $J$, and the matrices commuting with $J$ are the block-diagonal ones; such a matrix preserves the form of signature $(n,m)$ exactly when its blocks preserve the definite forms, so the fixed subgroup is $O(n)\times O(m)$, which is compact. Maximality is the fixed-vector argument: a compact subgroup has an invariant positive vector, and iterating, an invariant definite decomposition, so it lies in a conjugate of $K$. The eigen-decomposition of $d\theta$ is the block decomposition of the Lie algebra, as in the unitary case.</p>
@@ -102,7 +102,7 @@ $$</p>
 <h3 id="the-fixed-subgroup-and-the-cartan-decomposition">The Fixed Subgroup and the Cartan Decomposition</h3>
 <p><strong>Proposition.</strong> The fixed subgroup $K = O(n)\times O(m)$ is a maximal compact subgroup of $O(V,\mathfrak{Q})$, and the quotient $O(V,\mathfrak{Q})/K$ is connected when the identity components are used; the Cartan decomposition is</p>
 <p>$$
-\mathfrak{o}(n,m) = \mathfrak{k}\oplus\mathfrak{n}, \qquad \mathfrak{n} = \left\{\begin{pmatrix} 0 & X \\ X^{t} & 0\end{pmatrix} : X \in \mathbb{R}^{n\times m}\right\} \cong \mathbb{R}^{pq},
+\boxed{\;\mathfrak{o}(n,m) = \mathfrak{k}\oplus\mathfrak{n}, \qquad \mathfrak{n} = \left\{\begin{pmatrix} 0 & X \\ X^{t} & 0\end{pmatrix} : X \in \mathbb{R}^{n\times m}\right\} \cong \mathbb{R}^{pq}\;},
 $$</p>
 <p>with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{n}]\subseteq\mathfrak{n}$ and $[\mathfrak{n},\mathfrak{n}]\subseteq\mathfrak{k}$, so $\dim_{\mathbb{R}} O(n,m)/K = pq$.</p>
 <p><strong>Proof.</strong> The bracket relations are that $d\theta$ is a Lie algebra automorphism with eigenspaces $\mathfrak{k}$ and $\mathfrak{n}$; the identification of $\mathfrak{n}$ is the block computation, and its dimension is $pq$. Compactness of $K$ is the product of the compact orthogonal groups.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p>with base point $o = eK$ and tangent space $T_oX = \mathfrak{n} \cong \mathbb{R}^{pq}$; the <strong>geodesic symmetry</strong> at $o$ is $s_o(gK) = \theta(g)K$.</p>
 <p><strong>Proposition.</strong> The space $X$ is the manifold of $Q$-negative subspaces of dimension $m$,</p>
 <p>$$
-X \cong \{W \leq V : \dim W = m,\ Q|_W < 0\},
+\boxed{\;X \cong \{W \leq V : \dim W = m,\ Q|_W < 0\}\;},
 $$</p>
 <p>by $gK \mapsto gV_-$; it is a symmetric space of noncompact type, of dimension $pq$ and rank $\min(n,m)$, and the stabiliser of a negative subspace is a conjugate of $K$.</p>
 <p><strong>Proof.</strong> The stabiliser of $V_-$ is $K$, so the orbit is the quotient; the map is bijective by Witt's extension theorem for quadratic forms, <em>Bilinear Forms</em>; the rank is the maximal dimension of an abelian subspace of $\mathfrak{n}$, which is $\min(n,m)$ for the diagonal block; the symmetric space axioms are the existence of the involutive geodesic symmetry at each point, which is $s_o$ conjugated, <em>Riemannian Symmetric Spaces and the Involution</em>.</p>

@@ -85,7 +85,7 @@ $$</p>
 $$</p>
 <p>is a well-defined bijection. Consequently, if $G$ is finite, then</p>
 <p>$$
-|\operatorname{Orb}(x)| = [G : \operatorname{Stab}(x)] = \frac{|G|}{|\operatorname{Stab}(x)|},
+\boxed{\;|\operatorname{Orb}(x)| = [G : \operatorname{Stab}(x)] = \frac{|G|}{|\operatorname{Stab}(x)|}\;},
 $$</p>
 <p>so the size of every orbit divides $|G|$.</p>
 <p><strong>Proof.</strong> If $b = a h$ with $h \in \operatorname{Stab}(x)$, then $b \cdot x = a \cdot (h \cdot x) = a \cdot x$, so $\Phi_x$ is well defined. It is surjective by definition of the orbit. If $a \cdot x = b \cdot x$, then $b^{-1} a \cdot x = x$, so $b^{-1} a \in \operatorname{Stab}(x)$ and hence $a \operatorname{Stab}(x) = b \operatorname{Stab}(x)$; so $\Phi_x$ is injective. When $G$ is finite, $G / \operatorname{Stab}(x)$ is a coset space of size $[G : \operatorname{Stab}(x)]$, which equals $|G| / |\operatorname{Stab}(x)|$ by <em>Groups</em>, §6.</p>
@@ -103,7 +103,7 @@ C_G(x) = \{a \in G : a x a^{-1} = x\} = \{a \in G : a x = x a\}.
 $$</p>
 <p>The fixed points of the conjugation action are exactly the elements of the centre $Z(G)$, so an element has a singleton conjugacy class if and only if it is central. Splitting the partition of $G$ into the central elements and the classes of size greater than one gives the <strong>class equation</strong>: if $x_1, \ldots, x_k$ represent the conjugacy classes of size greater than $1$, then</p>
 <p>$$
-|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)],
+\boxed{\;|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)]\;},
 $$</p>
 <p>each index being greater than $1$ and dividing $|G|$. As a special case, for $x \in G$ the conjugacy class of $x$ has $[G : C_G(x)]$ elements.</p>
 <p><strong>Theorem.</strong> Every finite group of order $p^n$, $n \geq 1$, with $p$ prime, has nontrivial centre.</p>
@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-fixed-point-formula">The Fixed-Point Formula</h3>
 <p><strong>Theorem (Burnside's lemma).</strong> Let a finite group $G$ act on a finite set $X$ and let $\operatorname{Fix}(a) = \{x \in X : a \cdot x = x\}$. Then the number of orbits is</p>
 <p>$$
-|\text{orbits}| = \frac{1}{|G|} \sum_{a \in G} |\operatorname{Fix}(a)|.
+\boxed{\;|\text{orbits}| = \frac{1}{|G|} \sum_{a \in G} |\operatorname{Fix}(a)|\;}.
 $$</p>
 <p><strong>Proof.</strong> Count the set $S = \{(a, x) \in G \times X : a \cdot x = x\}$ in two ways. Grouping by $a$ gives $|S| = \sum_{a \in G} |\operatorname{Fix}(a)|$. Grouping by $x$ gives $|S| = \sum_{x \in X} |\operatorname{Stab}(x)|$. Now $\operatorname{Stab}(x)$ has index $|\operatorname{Orb}(x)|$, so $|\operatorname{Stab}(x)| = |G| / |\operatorname{Orb}(x)|$. Hence</p>
 <p>$$

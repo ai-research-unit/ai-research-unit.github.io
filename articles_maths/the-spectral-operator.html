@@ -81,7 +81,7 @@ $$</p>
 <p>When $\Sigma\subseteq\mathbb{R}$ it is bounded and self-adjoint with $\|M_\lambda\|=\sup_{\lambda\in\operatorname{supp}\mu}|\lambda|$; when $\Sigma\subseteq\mathbb{T}$ it is unitary; in general it is normal.</p>
 <p><strong>Proposition (the spectral data of the spectral operator).</strong> The spectrum of $M_\lambda$ is the support of $\mu$:</p>
 <p>$$
-\sigma(M_\lambda)=\operatorname{supp}\mu=\{\lambda:\mu(\lambda-\varepsilon,\lambda+\varepsilon)>0\ \text{for every}\ \varepsilon>0\},
+\boxed{\;\sigma(M_\lambda)=\operatorname{supp}\mu=\{\lambda:\mu(\lambda-\varepsilon,\lambda+\varepsilon)>0\ \text{for every}\ \varepsilon>0\}\;},
 $$</p>
 <p>the spectral measure is $E(S)=M_{\mathbf{1}_S}$, the functional calculus is $f(M_\lambda)=M_f$ for bounded Borel $f$, and the eigenvectors of $M_\lambda$ are the nonzero functions supported on the atoms of $\mu$, with the atom at $\lambda$ of multiplicity equal to the mass of the atom.</p>
 <p><em>Proof.</em> $M_\lambda-\lambda_0$ is invertible with bounded inverse exactly when $1/(\lambda-\lambda_0)$ is essentially bounded on $\operatorname{supp}\mu$, which is the complement of the support; the spectral measure and the functional calculus are immediate from the multiplication structure, since $\mathbf{1}_S(M_\lambda)=M_{\mathbf{1}_S}$; the eigenfunction statement is the fact that the only functions annihilated by $M_\lambda-\lambda_0$ are supported on the level set $\lambda=\lambda_0$, together with the multiplicities of the measure.</p>
@@ -94,14 +94,14 @@ U:H\longrightarrow L^2(\Sigma,\mu)
 $$</p>
 <p>with</p>
 <p>$$
-U\,T\,U^{-1}=M_\lambda .
+\boxed{\;U\,T\,U^{-1}=M_\lambda\;} .
 $$</p>
 <p>Equivalently, $T=\int\lambda\,dE(\lambda)$ where $E$ is the spectral measure of $T$ and the measure class of $\mu$ may be taken as the class of $\langle E(\cdot)x,x\rangle$ for a total family of vectors $x$.</p>
 <p><em>Proof.</em> The spectral measure $E$ of <em>Self-Adjoint Operators and the Spectral Theorem</em> is a projection-valued measure on $\sigma(T)$; by choosing a countable total family $(x_n)$ of vectors, guaranteed by separability, and forming the finite measure $\mu=\sum_n2^{-n}\langle E(\cdot)x_n,x_n\rangle$, the multiplication model on $\bigoplus_nL^2(\sigma(T),\mu_n)$ is obtained; passing to a single measure space by the standard identifications gives the stated unitary equivalence.</p>
 <p><strong>Theorem (normal case).</strong> A bounded normal operator $T$ on a separable Hilbert space is unitarily equivalent to a multiplication operator,</p>
 <p>$$
-T\simeq M_z \quad\text{on}\quad \bigoplus_{n}L^2(\sigma(T),\mu_n),
-\qquad (M_z f)(z)=z f(z),
+\boxed{\;T\simeq M_z \quad\text{on}\quad \bigoplus_{n}L^2(\sigma(T),\mu_n),
+\qquad (M_z f)(z)=z f(z)\;},
 $$</p>
 <p>and the same statement with $M_\lambda$ holds for a self-adjoint operator; in both cases the unitary equivalence is implemented by the spectral measure through the Borel functional calculus, $x\mapsto(f\mapsto\langle f(T)x,y\rangle)$.</p>
 <p><em>Proof.</em> The Borel functional calculus of the spectral theorem produces the commuting algebra of $T$, and the cyclic decomposition of $H$ under this algebra gives the direct sum of multiplication spaces; the multiplicity functions $\mu_n$ are equivalent to the spectral measure classes of the cyclic vectors.</p>

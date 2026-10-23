@@ -88,7 +88,7 @@ $$</p>
 <h3 id="the-equivalences">The Equivalences</h3>
 <p><strong>Theorem (the isometry criterion).</strong> Let $h$ be nonsingular. Then for $T \in B(A)$ the following are equivalent:</p>
 <p>$$
-\text{(i) } h(Tx,Ty) = h(x,y) \quad \text{for all } x,y ; \qquad \text{(ii) } T^{\dagger}T = 1 .
+\boxed{\;\text{(i) } h(Tx,Ty) = h(x,y) \quad \text{for all } x,y ; \qquad \text{(ii) } T^{\dagger}T = 1\;} .
 $$</p>
 <p>Every isometry is injective, and $T$ is unitary exactly when it is an invertible isometry, equivalently exactly when $T^{\dagger} = T^{-1}$.</p>
 <p><em>Proof.</em> (i) implies (ii) by rewriting $h(Tx,Ty) = h(x,T^{\dagger}Ty)$ and using the nondegeneracy of $h$: $h(x,T^{\dagger}Ty) = h(x,y)$ for all $x,y$ gives $T^{\dagger}T = 1$. (ii) implies (i) by $h(Tx,Ty) = h(x,T^{\dagger}Ty) = h(x,y)$. Injectivity is the implication (ii) $\Rightarrow$ ($Tx = 0 \Rightarrow x = 0$): from $0 = h(Tx,Ty) = h(x,y)$ for all $y$ and the nondegeneracy of $h$. If $T$ is an invertible isometry then $T^{\dagger} = T^{\dagger}TT^{-1} = T^{-1}$ and $TT^{\dagger} = 1$; conversely $T^{\dagger} = T^{-1}$ gives $T^{\dagger}T = TT^{\dagger} = 1$.</p>
@@ -98,7 +98,7 @@ $$</p>
 <h3 id="inversion-is-the-adjoint">Inversion Is the Adjoint</h3>
 <p><strong>Theorem (inversion on the unitary group).</strong> Let $h$ be nonsingular. Then the restriction to $\mathrm{U}(A,h)$ of the adjoint operation is inversion,</p>
 <p>$$
-T^{\dagger} = T^{-1} \qquad \text{for } T \in \mathrm{U}(A,h) ,
+\boxed{\;T^{\dagger} = T^{-1} \qquad \text{for } T \in \mathrm{U}(A,h)\;} ,
 $$</p>
 <p>and it is an involutive anti-automorphism of the group: $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$, $(T^{\dagger})^{\dagger} = T$, $1^{\dagger} = 1$. So the group $\mathrm{U}(A,h)$ is stable under the adjoint, and the adjoint operation is the inversion of the group together with the $\varsigma$-semilinear action on the scalars.</p>
 <p><em>Proof.</em> The formula is the characterization of the unitary operators; the anti-automorphism laws are those of <em>The Adjoint under a Hermitian Form</em>, §<em>The Anti-Automorphism</em>, restricted to the group, and the restriction makes sense because the adjoint of a unitary operator is again unitary, $(T^{\dagger})^{\dagger} = T$ and $T^{\dagger}(T^{\dagger})^{\dagger} = T^{\dagger}T = 1$.</p>
@@ -115,7 +115,7 @@ $$</p>
 <h3 id="the-indefinite-case">The Indefinite Case</h3>
 <p><strong>Theorem (the indefinite isometry group is the $J$-unitary group).</strong> Let $h$ be indefinite with fundamental decomposition of symmetry $J$ and companion form $\langle\cdot,\cdot\rangle$, both nonsingular. Then</p>
 <p>$$
-T \in \mathrm{U}(A,h) \iff T^{*}JT = J \iff T \in \mathrm{U}(J) ,
+\boxed{\;T \in \mathrm{U}(A,h) \iff T^{*}JT = J \iff T \in \mathrm{U}(J)\;} ,
 $$</p>
 <p>where $T^{*}$ is the companion adjoint and $\mathrm{U}(J)$ is the group of the companion operators preserving $J$. On a finite-dimensional space the conditions reduce to $h(Tx,Ty) = h(x,y)$ for all $x,y$.</p>
 <p><em>Proof.</em> The equivalence is the theorem of <em>The Fundamental Symmetry of the Form</em>, §<em>The Adjoints under the Two Forms</em>: $T^{\dagger}T = 1$ reads $JT^{*}JT = 1$, that is $T^{*}JT = J$ after applying $J$; the reverse reading is the same computation. In finite dimension the injectivity gives invertibility, so the isometry condition and the unitary condition coincide.</p>

@@ -109,7 +109,7 @@ $$</p>
 <p>with the evident restriction maps; the sheaf axioms hold by the same exactness used for the structure sheaf. The construction is functorial in $M$ and exact: the localisation functor $M\mapsto M_f$ is exact, the direct sums and products in the definition commute with the kernels and cokernels of the localisations, and a sequence of $A$-modules is exact if and only if it is exact after localising at every $f$. A sheaf of $\mathcal{O}_X$-modules is <strong>quasi-coherent</strong> if it is isomorphic to some $M^{\mathrm{sh}}$, and <strong>coherent</strong> if in addition $M$ is finitely generated — for a Noetherian $A$ this agrees with the usual notion of a coherent sheaf of finite type.</p>
 <p><strong>Theorem (modules and quasi-coherent sheaves).</strong> For $X = \operatorname{Spec} A$ the functor $M\mapsto M^{\mathrm{sh}}$ is an equivalence of categories</p>
 <p>$$
-\mathbf{Mod}(A)\ \xrightarrow{\ \sim\ }\ \mathbf{QCoh}(X), \qquad M\mapsto M^{\mathrm{sh}}, \qquad \mathcal{F}\mapsto\Gamma(X,\mathcal{F}),
+\boxed{\;\mathbf{Mod}(A)\ \xrightarrow{\ \sim\ }\ \mathbf{QCoh}(X), \qquad M\mapsto M^{\mathrm{sh}}, \qquad \mathcal{F}\mapsto\Gamma(X,\mathcal{F})\;},
 $$</p>
 <p>with quasi-inverse the global sections functor. The equivalence commutes with kernels, cokernels, images and finite direct sums, with the tensor product, with the sheaf hom, and with the localisation $A\to A_f$ in the sense that $M^{\mathrm{sh}}|_{D(f)} = M^{\mathrm{sh}}_f$ on $\operatorname{Spec} A_f$.</p>
 <p><em>Proof.</em> The global sections of $M^{\mathrm{sh}}$ recover $M$: $\Gamma(X,M^{\mathrm{sh}})$ is the equaliser of the maps $\prod_i M_{f_i}\to\prod_{i,j}M_{f_if_j}$ for any family generating the unit ideal, and this equaliser is $M$ by the same exactness used above. The functor is fully faithful because a morphism $M^{\mathrm{sh}}\to N^{\mathrm{sh}}$ is determined by its global sections and every $A$-linear map $M\to N$ induces one; it is essentially surjective by the definition of quasi-coherence. The remaining statements are the commutation of the localisation with the respective operations, which is Part I's <em>Localization and Completion of Modules</em>.</p>
@@ -119,7 +119,7 @@ $$</p>
 $$</p>
 <p>is a short exact sequence of quasi-coherent sheaves on $X = \operatorname{Spec} A$, then $0\to\Gamma(X,\mathcal{F}')\to\Gamma(X,\mathcal{F})\to\Gamma(X,\mathcal{F}'')\to 0$ is exact, and indeed the original sequence is exact if and only if its sequence of global sections is. Consequently</p>
 <p>$$
-H^i(X,\mathcal{F}) = 0 \qquad \text{for } i > 0
+\boxed{\;H^i(X,\mathcal{F}) = 0 \qquad \text{for } i > 0\;}
 $$</p>
 <p>for every quasi-coherent $\mathcal{F}$ on an affine scheme $X$.</p>
 <p><em>Proof.</em> The equivalence of categories carries the short exact sequence to a short exact sequence of $A$-modules $0\to M'\to M\to M''\to 0$ and the functor $\Gamma$ to $M\mapsto M$, which is exact; for the vanishing, apply the long exact sequence of <em>Sheaf Cohomology</em>: the cohomology of a quasi-coherent sheaf can be computed on the open affine pieces of a cover by distinguished opens, and by the exactness just proved the Čech complex of such a cover is exact in positive degree, so the Čech cohomology vanishes and by the Leray theorem of <em>Čech Cohomology</em> so does the sheaf cohomology.</p>
@@ -184,7 +184,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (Serre duality).</strong> Let $X$ be a smooth projective scheme of dimension $n$ over a field $k$, and let $\mathcal{F}$ be a coherent sheaf on $X$. There are natural isomorphisms</p>
 <p>$$
-H^i(X,\mathcal{F}) \cong H^{n-i}\bigl(X,\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\omega_X)\bigr)^{\vee},
+\boxed{\;H^i(X,\mathcal{F}) \cong H^{n-i}\bigl(X,\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\omega_X)\bigr)^{\vee}\;},
 $$</p>
 <p>where ${}^{\vee}$ denotes the $k$-dual, and the top group is $H^n(X,\omega_X)\cong k$; equivalently, the pairing</p>
 <p>$$

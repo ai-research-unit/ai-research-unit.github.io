@@ -87,8 +87,8 @@ $$</p>
 <h2 id="the-spectrum-and-the-solvability-theorem">The Spectrum and the Solvability Theorem</h2>
 <p><strong>Theorem (the Sylvester spectrum).</strong> Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde Q_3)$ and $\mu_{1},\mu_{2}$ those of $\mathsf{M}_2(\tilde Q_4)$. Then</p>
 <p>$$
-\mathrm{spec}(S_{\tilde Q_3,\tilde Q_4})=\{\lambda_{i}+\mu_{j}\},\qquad
-\det(S_{\tilde Q_3,\tilde Q_4})=\prod_{i,j}(\lambda_{i}+\mu_{j}).
+\boxed{\; \mathrm{spec}(S_{\tilde Q_3,\tilde Q_4})=\{\lambda_{i}+\mu_{j}\},\qquad
+\det(S_{\tilde Q_3,\tilde Q_4})=\prod_{i,j}(\lambda_{i}+\mu_{j}) \;}.
 $$</p>
 <p><em>Proof.</em> $S_{\tilde Q_3,\tilde Q_4}=\mathsf{M}_2(\tilde Q_3)\otimes I+I\otimes\mathsf{M}_2(\tilde Q_4)^{T}$ in the vectorisation of <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, and the spectrum of a Kronecker sum is the set of pairwise sums.</p>
 <p><strong>Theorem (the solvability criterion).</strong> The Sylvester equation $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$ has a <strong>unique</strong> solution for every $c$ if and only if no eigenvalue of $\mathsf{M}_2(\tilde Q_3)$ is the negative of an eigenvalue of $\mathsf{M}_2(\tilde Q_4)$. If the criterion fails, the equation is solvable exactly when $c$ is orthogonal to the kernel of the adjoint $L_{\tilde Q_3^{*}}+R_{\tilde Q_4^{*}}$, and the solution set is an affine subspace of dimension $\sum_{m}(\text{multiplicity of }0\text{ in the spectrum})$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-commutator-the-anticommutator-and-the-derivation">The Commutator, the Anticommutator and the Derivation</h2>
 <p><strong>Theorem (the commutator laws).</strong> For all $\tilde Q_3,\tilde Q_4$,</p>
 <p>$$
-[L_{\tilde Q_3},L_{\tilde Q_4}]=L_{[\tilde Q_3,\tilde Q_4]},\qquad [R_{\tilde Q_3},R_{\tilde Q_4}]=-R_{[\tilde Q_3,\tilde Q_4]},\qquad [L_{\tilde Q_3},R_{\tilde Q_4}]=0 .
+\boxed{\; [L_{\tilde Q_3},L_{\tilde Q_4}]=L_{[\tilde Q_3,\tilde Q_4]},\qquad [R_{\tilde Q_3},R_{\tilde Q_4}]=-R_{[\tilde Q_3,\tilde Q_4]},\qquad [L_{\tilde Q_3},R_{\tilde Q_4}]=0 \;}.
 $$</p>
 <p><em>Proof.</em> $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$ and $R_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4\tilde Q_3}$ from the composition laws, and $L$ and $R$ commute because left and right multiplication commute.</p>
 <p><strong>Corollary (the inner derivation is a Lie algebra homomorphism).</strong> The map $\tilde Q_3\mapsto\mathrm{ad}_{\tilde Q_3}=L_{\tilde Q_3}-R_{\tilde Q_3}$ is a representation of the Lie algebra of $\mathbb{B}$ on $\mathbb{B}$,</p>
@@ -126,7 +126,7 @@ $$</p>
 <p><em>Proof.</em> The vectorised equation is a linear system with matrix $\mathsf{M}_2(\tilde Q_3)\otimes I+I\otimes\mathsf{M}_2(\tilde Q_4)^{T}$; the diagonal case is the $2\times2$ instance of it.</p>
 <p><strong>Theorem (the integral representation).</strong> Let $\tilde Q_3,\tilde Q_4$ have spectra in the open right half-plane (so that $\exp(-t\tilde Q_3)$ and $\exp(-t\tilde Q_4)$ decay). Then</p>
 <p>$$
-\tilde Q = \int_{0}^{\infty} \exp(-t\tilde Q_3)\,c\,\exp(-t\tilde Q_4)\,dt
+\boxed{\; \tilde Q = \int_{0}^{\infty} \exp(-t\tilde Q_3)\,c\,\exp(-t\tilde Q_4)\,dt \;}
 $$</p>
 <p>is the solution of $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$.</p>
 <p><em>Proof.</em> Differentiate: $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=\int_{0}^{\infty}\bigl(\tilde Q_3 \exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)+\exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)\tilde Q_4\bigr)dt=-\int_{0}^{\infty}\frac{d}{dt}\bigl(\exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)\bigr)dt=\exp(0)ce^{0}=c$.</p>

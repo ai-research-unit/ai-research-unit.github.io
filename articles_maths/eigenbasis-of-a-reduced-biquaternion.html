@@ -134,7 +134,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Conventions.</strong> The notation is fixed in <em>Conventions in Mathematics</em>: the general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex; the idempotents are $\Pi_\pm=\tfrac12(1\pm j)$; and the idempotent coordinates are $Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The eigenvalues are $\lambda_+=Q_+$ and $\lambda_-=Q_-$, so that $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$. The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$. The two spinor spaces are $S_\pm=\mathbb{C}\Pi_\pm$, with complex spinor coordinates $\alpha,\beta$. The base field is $\mathbb{C}$.</p>
+<p><strong>Conventions.</strong> The notation is fixed in <em>Conventions in Mathematics</em>: the general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex; the idempotents are $\Pi_\pm=\tfrac12(1\pm j)$; and the idempotent coordinates are $Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The eigenvalues are $\lambda_+=Q_+$ and $\lambda_-=Q_-$, so that $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$. The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$. The two spinor spaces are $S_\pm=\mathbb{C}\Pi_\pm$, with complex spinor coordinates $A_1,A_2$, the two diagonal entries of the matrix in the eigenbasis. The base field is $\mathbb{C}$.</p>
 <p><strong>Boundaries.</strong> The split-complex case is the subject of <em>Eigenbasis of a Split-Complex Number</em>; the biquaternion case is <em>Eigenbasis of a Biquaternion</em>; the spectral theory is <em>Reduced Biquaternion Spectral Theory</em>; the Peirce and ideal theory is <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the exponential and the logarithm built on the decomposition are those of <em>Reduced Biquaternion Elementary Functions</em>; and the polar forms are those of <em>Modulus–Unit Polar Decomposition of Reduced Biquaternions</em> and <em>Exponential Polar Decomposition of Reduced Biquaternions</em>. The general definition, existence and uniqueness of the eigenvalue decomposition are those of <em>The Eigenvalue Decomposition of an Element</em> and are not restated.</p>
 <h2 id="the-spectrum-and-the-characteristic-polynomial">The Spectrum and the Characteristic Polynomial</h2>
 <p><strong>Definition.</strong> Let $\breve Q\in\mathbb{B}_{\mathrm{r}}$. A complex scalar $\mu$ is an <strong>eigenvalue</strong> of $\breve Q$ if $\breve Q-\mu 1$ is not a unit in $\mathbb{B}_{\mathrm{r}}$; the set of eigenvalues is the <strong>spectrum</strong> $\sigma(\breve Q)$. This is the definition of <em>The Eigenvalue Decomposition of an Element</em>, §<em>The Eigenvalues of an Element</em>.</p>
@@ -150,7 +150,7 @@ $$
 They are written $\lambda_\pm$ when their values are exhibited, and $Q_\pm$ when they are read as the idempotent coordinates. The test scalar of the definition is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues, as in the conventions of <em>Eigenbasis of a Split-Complex Number</em>, §<em>Introduction</em>. The pair is the analogue of $\lambda_\pm=Q_t\pm i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ of <em>Eigenbasis of a Biquaternion</em>, with the scalar part $Q_t$ replaced by $Q_{\blacktriangle}$ and the vector-part radical $i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ by $Q_{\blacktriangledown}$.</p>
 <p><strong>Theorem.</strong> The spectrum of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is
 $$
-\sigma(\breve Q)=\{\lambda_+,\lambda_-\}=\{Q_+,Q_-\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},\,Q_{\blacktriangle}-Q_{\blacktriangledown}\}.
+\boxed{\; \sigma(\breve Q)=\{\lambda_+,\lambda_-\}=\{Q_+,Q_-\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},\,Q_{\blacktriangle}-Q_{\blacktriangledown}\} \;}.
 $$</p>
 <p><strong>Proof.</strong> In the idempotent coordinates,
 $$
@@ -172,7 +172,7 @@ $$
 (\lambda_+-\lambda_-)^{2}=(2Q_{\blacktriangledown})^{2}=4Q_{\blacktriangledown}^{2},
 $$
 so the eigenvalues are distinct exactly when $Q_{\blacktriangledown}\neq0$, the analogue of $Q_x^2+Q_y^2+Q_z^2\neq0$ in the biquaternion case and of $q'\neq0$ for $Q=q+jq'$ in the split-complex case.</p>
-<p><strong>Minimal polynomial.</strong> When $Q_{\blacktriangledown}\neq0$, the characteristic polynomial is squarefree and is the minimal polynomial. In the zero-divisor subcase $\lambda_+\lambda_-=0$ with $\breve Q\neq0$ one factor is $X$: the polynomial is $X(X-\lambda_+)$ when $\lambda_-=0$ and $X(X-\lambda_-)$ when $\lambda_+=0$. When $Q_{\blacktriangledown}=0$, the element is the complex scalar $Q_{\blacktriangle}$ and the minimal polynomial is $X-Q_{\blacktriangle}$. In every case the minimal polynomial is squarefree, so every element is semisimple.</p>
+<p><strong>Minimal polynomial.</strong> When $Q_{\blacktriangledown}\neq0$, the characteristic polynomial is squarefree and is the minimal polynomial. In the zero-divisor subcase $\lambda_+\lambda_-=0$ with $\breve Q\neq0$ one factor is $\breve Q_{\mathrm{sp}}$: the polynomial is $X(X-\lambda_+)$ when $\lambda_-=0$ and $X(X-\lambda_-)$ when $\lambda_+=0$. When $Q_{\blacktriangledown}=0$, the element is the complex scalar $Q_{\blacktriangle}$ and the minimal polynomial is $X-Q_{\blacktriangle}$. In every case the minimal polynomial is squarefree, so every element is semisimple.</p>
 <p>The data of the spectrum are collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -237,9 +237,11 @@ $$
 $$</p>
 <p>Equivalently, by the Lagrange–Sylvester eigenprojector formula of <em>The Lagrange–Sylvester Eigenprojector Formula</em>, §<em>The Eigenprojector Formula</em>,
 $$
+\boxed{\;
 \Pi_+=\frac{\breve Q-\lambda_-}{\lambda_+-\lambda_-},\qquad
 \Pi_-=\frac{\breve Q-\lambda_+}{\lambda_--\lambda_+},\qquad
-\lambda_+-\lambda_-=2Q_{\blacktriangledown}.
+\lambda_+-\lambda_-=2Q_{\blacktriangledown}
+\;}.
 $$
 The formula applies when $Q_{\blacktriangledown}\neq0$; it exhibits $\Pi_\pm$ as polynomials in $\breve Q$. When $Q_{\blacktriangledown}=0$ the denominator vanishes and the formula does not apply.</p>
 <p><strong>Independence of the element.</strong> The formulae collapse to the fixed idempotents $\Pi_\pm$: the eigenprojections do not depend on $\breve Q$. This is the structural difference from the biquaternion case, where the eigenprojections are the idempotents built from the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ of the vector part and therefore vary with $\tilde Q$ (<em>Eigenbasis of a Biquaternion</em>, §<em>The Eigenprojections</em>). Here the pair $\Pi_+,\Pi_-$ is fixed for the whole algebra, and the dependence on the element lies in the eigenvalues alone.</p>
@@ -421,19 +423,19 @@ $$
 (\Pi_+,\Pi_-)
 $$
 is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$.</p>
-<p><strong>Coordinates.</strong> Expanding a general element $X=X_{\blacktriangle}+jX_{\blacktriangledown}$ gives
+<p><strong>Coordinates.</strong> Expanding a general element $\breve Q_{\mathrm{sp}}=Q_{\mathrm{sp},\blacktriangle}+jQ_{\mathrm{sp},\blacktriangledown}$ gives
 $$
-X=(X_{\blacktriangle}+X_{\blacktriangledown})\Pi_++(X_{\blacktriangle}-X_{\blacktriangledown})\Pi_-,
+\breve Q_{\mathrm{sp}}=(Q_{\mathrm{sp},\blacktriangle}+Q_{\mathrm{sp},\blacktriangledown})\Pi_++(Q_{\mathrm{sp},\blacktriangle}-Q_{\mathrm{sp},\blacktriangledown})\Pi_-,
 $$
-so the coordinates of $X$ in this basis are $(X_{\blacktriangle}+X_{\blacktriangledown},\,X_{\blacktriangle}-X_{\blacktriangledown})$. For $\breve Q$ itself,
+so the coordinates of $\breve Q_{\mathrm{sp}}$ in this basis are $(Q_{\mathrm{sp},\blacktriangle}+Q_{\mathrm{sp},\blacktriangledown},\,Q_{\mathrm{sp},\blacktriangle}-Q_{\mathrm{sp},\blacktriangledown})$. For $\breve Q$ itself,
 $$
 \breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}
 \quad\longleftrightarrow\quad
 (\lambda_+,\lambda_-)=(Q_{\blacktriangle}+Q_{\blacktriangledown},\,Q_{\blacktriangle}-Q_{\blacktriangledown}).
 $$</p>
-<p><strong>The coordinates.</strong> The coordinates of $\breve X$ in the eigenbasis are its two idempotent coordinates $(\xi_+,\xi_-)$, and the decomposition is the identity $\breve X=\xi_+\Pi_++\xi_-\Pi_-$. No further data are carried by the eigenbasis.</p>
+<p><strong>The coordinates.</strong> The coordinates of $\breve Q_{\mathrm{sp}}$ in the eigenbasis are its two idempotent coordinates $(\xi_+,\xi_-)$, and the decomposition is the identity $\breve Q_{\mathrm{sp}}=\xi_+\Pi_++\xi_-\Pi_-$. No further data are carried by the eigenbasis.</p>
 <h3 id="the-action-of-math236-and-the-eigenbasis">The Action of $\breve Q$ and the Eigenbasis</h3>
-<p><strong>Definition.</strong> An <strong>eigenvector</strong> of $\breve Q$ is a nonzero $X$ with $\breve QX=\mu X$ for some scalar $\mu$, and $\mu$ is the <strong>eigenvalue</strong>. An <strong>eigenbasis</strong> of $\breve Q$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$ consisting of eigenvectors.</p>
+<p><strong>Definition.</strong> An <strong>eigenvector</strong> of $\breve Q$ is a nonzero $\breve Q_{\mathrm{sp}}$ with $\breve Q\breve Q_{\mathrm{sp}}=\mu\breve Q_{\mathrm{sp}}$ for some scalar $\mu$, and $\mu$ is the <strong>eigenvalue</strong>. An <strong>eigenbasis</strong> of $\breve Q$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$ consisting of eigenvectors.</p>
 <p>In the basis $(\Pi_+,\Pi_-)$ the action is diagonal:
 $$
 \breve Q\Pi_+=\lambda_+\Pi_+,\qquad \breve Q\Pi_-=\lambda_-\Pi_-.
@@ -528,17 +530,17 @@ $$
 The notation $S_\pm$ is reserved for these two spaces.</p>
 <p>A <strong>spinor of first chirality</strong> is an element of $S_+$,
 $$
-\xi_+=\alpha\Pi_+,\qquad \alpha\in\mathbb{C},
+\xi_+=A_1\Pi_+,\qquad A_1\in\mathbb{C},
 $$
 and a <strong>spinor of second chirality</strong> is an element of $S_-$,
 $$
-\xi_-=\beta\Pi_-,\qquad \beta\in\mathbb{C}.
+\xi_-=A_2\Pi_-,\qquad A_2\in\mathbb{C}.
 $$
 In the eigenbasis their coordinates are
 $$
-\xi_+\longleftrightarrow(\alpha,0),
+\xi_+\longleftrightarrow(A_1,0),
 \qquad
-\xi_-\longleftrightarrow(0,\beta).
+\xi_-\longleftrightarrow(0,A_2).
 $$
 The two spinor spaces are the two coordinate axes of the eigenbasis.</p>
 <p>The element $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on them by
@@ -549,17 +551,17 @@ $$
 $$
 so $S_+$ is the $\lambda_+$-eigenspace and $S_-$ the $\lambda_-$-eigenspace. In coordinates,
 $$
-\alpha\longmapsto\lambda_+\alpha,
+A_1\longmapsto\lambda_+A_1,
 \qquad
-\beta\longmapsto\lambda_-\beta.
+A_2\longmapsto\lambda_-A_2.
 $$
-A general element $\breve X=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $(\xi_+,\xi_-)$ are the coordinates in the direct sum.</p>
+A general element $\breve Q_{\mathrm{sp}}=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $(\xi_+,\xi_-)$ are the coordinates in the direct sum.</p>
 <p><strong>One complex component per chirality.</strong> The base field is $\mathbb{C}$, so each spinor space is a one-dimensional complex vector space, of real dimension two. A spinor has a single complex component, not a pair: the two components displayed above belong to the two different chiralities. The biquaternion case is the one in which a single spinor space is two-dimensional over $\mathbb{C}$ and therefore carries a pair of complex components. The extra dimension there is supplied by the nilpotent direction $\vec\Upsilon_\pm$, which is absent here.</p>
 <h2 id="powers-polynomial-calculus-and-the-group-of-units">Powers, Polynomial Calculus, and the Group of Units</h2>
 <p><strong>The eigenvalue decomposition carries the polynomial calculus, the inverse and the group isomorphism of the unit group.</strong></p>
 <p>For any polynomial $f\in\mathbb{C}[X]$, the eigenvalue decomposition gives
 $$
-f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-.
+\boxed{\; f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_- \;}.
 $$
 This follows from
 $$
@@ -845,7 +847,7 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 </tr>
 <tr>
 <td>Spinor spaces</td>
-<td>$S_\pm=\mathbb{C}\Pi_\pm$, the two minimal ideals; spinors $\alpha\Pi_+$ and $\beta\Pi_-$</td>
+<td>$S_\pm=\mathbb{C}\Pi_\pm$, the two minimal ideals; spinors $A_1\Pi_+$ and $A_2\Pi_-$</td>
 </tr>
 <tr>
 <td>Polynomial calculus</td>
@@ -1071,8 +1073,12 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 <td>Multiplication operator $X\mapsto\breve QX$; eigenvalues $\lambda_+,\lambda_-$ in the eigenbasis</td>
 </tr>
 <tr>
+<td>$A_1,A_2$</td>
+<td>Spinor coordinates on $S_+$ and $S_-$, the two diagonal entries of the matrix in the eigenbasis</td>
+</tr>
+<tr>
 <td>$\alpha,\beta$</td>
-<td>Complex scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$; the spinor coordinates on $S_+$ and $S_-$</td>
+<td>Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$</td>
 </tr>
 <tr>
 <td>$S_\pm=\mathbb{B}_{\mathrm{r}}\Pi_\pm=\mathbb{C}\Pi_\pm$</td>
@@ -1097,6 +1103,10 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 <tr>
 <td>$L=\{(m/2,n/2):m,n\in\mathbb{Z}[i],\ m\equiv n\pmod2\}$</td>
 <td>Lattice of basis-coordinate data for Gaussian-integral eigenvalue coordinates $\mu_\pm\in\mathbb{Z}[i]$</td>
+</tr>
+<tr>
+<td>$\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$</td>
+<td>General element in the spinor coordinates, with matrix $\operatorname{diag}(A_1,A_2)$</td>
 </tr>
 <tr>
 <td>$\breve Q_2=\mu_+\Pi_++\mu_-\Pi_-$</td>

@@ -149,15 +149,19 @@
 <p>The table is the ladder of the matrix models. In $\mathbb{R}$ the algebra is the scalars and the model is the $1\times1$ matrix algebra itself; in $\mathbb{C}$ the Cayley matrix $\mathsf{M}_4(Q)=aI+bJ$ gives a faithful image inside $M_2(\mathbb{R})$ which is the field of conformal matrices and not the whole algebra (<em>Complex Regular Element Representation</em>, §<em>The Left Regular Representation</em>). In $\mathbb{D}$ the image is the symmetric matrices $\{aI+bJ\}$ with $J^2=I$, in $\mathbb{D}'$ the upper-triangular Toeplitz matrices spanned by $I$ and the nilpotent Jordan block $E$ with $E^2=0$; both are faithful and neither is onto (<em>Split-Complex Regular Element Representation</em>; <em>Dual-Numbers Matrix Element Representation</em>). The quaternion algebra is the first column whose smallest faithful matrix model is not a real matrix algebra of size equal to the dimension: an isomorphism $\mathbb{H}\to M_2(\mathbb{R})$ is impossible, because $M_2(\mathbb{R})$ has zero divisors and $\mathbb{H}$ has none, so the smallest real model is the $4\times4$ regular one, while the complexification gives the $2\times2$ complex model $\iota:\mathbb{H}\to M_2(\mathbb{C})$ (<em>Quaternion 2x2 Matrix Element Representation</em>). The split quaternions are the exception of the four-dimensional rung: $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$, so the faithful model of size two is an isomorphism, the only surjective model of the table with a non-commutative algebra (<em>Split-Quaternion Matrix Element Representations</em>). The biquaternions likewise satisfy $\mathbb{B}\cong M_2(\mathbb{C})$, a surjective model of size two over $\mathbb{C}$ (<em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>). The last column is where the model stops at the smallest size that is forced: $\mathbb{H}_{\mathbb{D}}$ has no faithful $2\times2$ representation over $\mathbb{R}$ by the dimension count and none over $\mathbb{C}$ by the centre obstruction of its two central idempotents, so its smallest faithful model is $M_4(\mathbb{C})$, the algebra of the two simple modules taken together (<em>Dual-Numbers Matrix Element Representation</em>, §<em>The Absence of a Two-Dimensional Representation for $\mathbb{H}_{\mathbb{D}}$</em>).</p>
 <p>The models of the table are displayed by their generators. In the split-complex column $j\mapsto J$ and in the dual-number column $\varepsilon\mapsto E$, with</p>
 <p>$$
+\boxed{\;
 J=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad J^2=I_2,\qquad
-E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad E^2=0,
+E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad E^2=0
+\;},
 $$</p>
 <p>so that $a+jb\mapsto aI_2+bJ=\begin{pmatrix}a&b\\b&a\end{pmatrix}$ and $a+\varepsilon b\mapsto aI_2+bE=\begin{pmatrix}a&b\\0&a\end{pmatrix}$; and in the biquaternion column the four generators read</p>
 <p>$$
+\boxed{\;
 e_t\mapsto I_2,\qquad
 \vec e_x\mapsto -i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
 \vec e_y\mapsto -i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-\vec e_z\mapsto -i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+\vec e_z\mapsto -i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}
+\;},
 $$</p>
 <p>with the scalar imaginary $i\mapsto iI_2$; the four images square to $-I_2$, and $(-i\sigma_1)(-i\sigma_2)=-\sigma_1\sigma_2=-i\sigma_3$, so that they are a quaternion system as the generators of $\mathbb{B}$ require.</p>
 <h2 id="the-regular-representations-and-the-cayley-determinant">The Regular Representations and the Cayley Determinant</h2>
@@ -225,9 +229,11 @@ $$</p>
 </table></div>
 <p>The Cayley matrices of the two-dimensional rung are</p>
 <p>$$
+\boxed{\;
 Q=q+iq'\mapsto\begin{pmatrix}q&-q'\\q'&q\end{pmatrix},\ \ \det=q^2+q'^2;\qquad
 Q=q+jq'\mapsto\begin{pmatrix}q&q'\\q'&q\end{pmatrix},\ \ \det=q^2-q'^2;\qquad
-Q=q+\varepsilon q'\mapsto\begin{pmatrix}q&q'\\0&q\end{pmatrix},\ \ \det=q^2,
+Q=q+\varepsilon q'\mapsto\begin{pmatrix}q&q'\\0&q\end{pmatrix},\ \ \det=q^2
+\;},
 $$</p>
 <p>the first the complex, the second the split-complex and the third the dual-number Cayley matrix, the second symmetric and the third upper triangular, so that the two are the images named in the section above.</p>
 <p>The table records the determinant ladder. In $\mathbb{R}$ the determinant of the $1\times1$ Cayley matrix is the element $q$ itself, whose square is the norm; in $\mathbb{C}$ it is the norm $N$; in $\mathbb{D}$ and $\mathbb{D}'$ it is again the norm, $\det\mathsf{M}_4(Q)=a^2-b^2$ and $\det\mathsf{M}_4(Q)=a^2$ respectively (<em>Real Regular Element Representation</em>; <em>Complex Regular Element Representation</em>; <em>Split-Complex Regular Element Representation</em>; <em>Dual-Numbers Matrix Element Representation</em>). At the quaternion rung the determinant is the <strong>square</strong> of the norm, $\det L_q=\langle\tilde q\rangle_{\natural}^2$, because $L_q^{T}L_q=\langle\tilde q\rangle_{\natural}I$ and the quaternion algebra has degree two over its centre; the same square appears for $\mathbb{H}_{\mathrm{s}}$ and for $\mathbb{B}$, whose complex regular matrix has $\det\mathsf{M}_4(\tilde Q_1)=\langle\tilde Q_1\rangle_{\natural}^2$ (<em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$</em>; <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>). The last column carries the marker <strong>—</strong> because no source of the category records a Cayley determinant for $\mathbb{H}_{\mathbb{D}}$: division is not available in the coefficient ring $\mathbb{D}$, the determinant of the $4\times4$ matrix over $\mathbb{D}$ would be a $\mathbb{D}$-valued quantity, and the category treats the split biquaternion algebra through its four-vector and idempotent realizations, in which the regular module is the direct sum $\mathbb{H}\tilde\Pi_1\oplus\mathbb{H}\tilde\Pi_2$ of the two components. The reducibility row is the module-theoretic form of the same contrast: the regular module is simple exactly for the three division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, while $\mathbb{D}$ splits as its two minimal ideals $I_1=\mathbb{R}\Pi_x$ and $I_2=\mathbb{R}\Pi_y$, $\mathbb{D}'$ is indecomposable but not semisimple, and the three higher non-division algebras have reducible regular modules ($\mathbb{H}_{\mathrm{s}}$ as a sum of two copies of its simple module $S$, $\mathbb{B}$ as $V\oplus V$, $\mathbb{H}_{\mathbb{D}}$ as its two one-sided ideals).</p>

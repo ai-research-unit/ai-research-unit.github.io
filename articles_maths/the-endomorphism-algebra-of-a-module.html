@@ -82,7 +82,7 @@
 <p>For a free module the endomorphism algebra is a matrix algebra, and the matrix is read in the standard basis.</p>
 <p><strong>Theorem.</strong> For $n \geq 1$ there is an isomorphism of $R$-algebras</p>
 <p>$$
-\operatorname{End}_A({}_A A^n) \xrightarrow{\ \sim\ } M_n(A^{\mathrm{opp}}),
+\boxed{\;\operatorname{End}_A({}_A A^n) \xrightarrow{\ \sim\ } M_n(A^{\mathrm{opp}})\;},
 $$</p>
 <p>given on the row $e_i$ of the standard basis by $f(e_j)=\sum_i e_i\,a_{ij}$, so that $f(v)=vX$ for the matrix $X=(a_{ij})$, and the product on the right is the matrix product in $A^{\mathrm{opp}}$.</p>
 <p><em>Proof.</em> An $A$-linear map is determined by its values on the basis, and $A$-linearity forces $f(a e_j)=a f(e_j)$, which is the row-vector computation $f(av)=(av)X=a(vX)$ by associativity. Thus every such $f$ is right multiplication by a unique matrix $X$ with entries in $A$. Composition is $f_X \circ f_Y(v)=(vY)X=v(YX)$, so the ring of endomorphisms is the opposite of the matrix ring $M_n(A)$ with the usual product, that is $M_n(A^{\mathrm{opp}})$. The $R$-linearity is entrywise.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p>The two descriptions combine into the structure theorem for the endomorphism algebra of a semisimple module of finite length.</p>
 <p><strong>Theorem.</strong> Let $M=S_1^{n_1}\oplus\cdots\oplus S_k^{n_k}$ with the $S_i$ pairwise non-isomorphic simple modules and $D_i=\operatorname{End}_A(S_i)$. Then</p>
 <p>$$
-E \cong M_{n_1}(D_1) \times \cdots \times M_{n_k}(D_k)
+\boxed{\;E \cong M_{n_1}(D_1) \times \cdots \times M_{n_k}(D_k)\;}
 $$</p>
 <p>as $R$-algebras, and $M$ is the direct sum of the natural modules $D_i^{\,n_i}$ over the factors.</p>
 <p><em>Proof.</em> By Schur's lemma there are no nonzero maps between non-isomorphic simple modules, so an endomorphism preserves each isotypic component $S_i^{n_i}$, and on that component it is a matrix over $D_i$ by the proposition; the product decomposition follows.</p>
@@ -125,7 +125,7 @@ $$</p>
 <h3 id="the-centre-of-a-free-modules-endomorphism-algebra">The centre of a free module's endomorphism algebra</h3>
 <p><strong>Corollary.</strong> For a free module ${}_A A^n$,</p>
 <p>$$
-Z(\operatorname{End}_A(A^n)) \cong Z(A^{\mathrm{opp}}) = Z(A),
+\boxed{\;Z(\operatorname{End}_A(A^n)) \cong Z(A^{\mathrm{opp}}) = Z(A)\;},
 $$</p>
 <p>the scalar matrices with entries in the centre of the algebra.</p>
 <p><em>Proof.</em> Combine the matrix theorem with the identification $\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{opp}})$ and $Z(A^{\mathrm{opp}})=Z(A)$.</p>

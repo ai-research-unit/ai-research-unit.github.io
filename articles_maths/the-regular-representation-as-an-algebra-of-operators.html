@@ -92,7 +92,7 @@ $$</p>
 <h3 id="the-commutant-is-the-right-regular-representation">The commutant is the right regular representation</h3>
 <p><strong>Proposition.</strong> Inside $\operatorname{End}(A)$,</p>
 <p>$$
-L(A)' = \{T : TL_a = L_aT \text{ for all } a \in A\} = R(A) \cong A^{\mathrm{opp}} ,
+\boxed{\;L(A)' = \{T : TL_a = L_aT \text{ for all } a \in A\} = R(A) \cong A^{\mathrm{opp}}\;} ,
 $$</p>
 <p>and dually $R(A)' = L(A)$.</p>
 <p><strong>Proof.</strong> If $TL_a = L_aT$ for all $a$ then $T(a) = T(L_a1) = L_aT(1) = a\,T(1)$, so $T = R_{T(1)}$; conversely $R_bL_a = L_aR_b$ for every $a,b$ by associativity. The isomorphism $A^{\mathrm{opp}} \to R(A)$ is the anti-homomorphism $b \mapsto R_b$ of the preceding section. This is the centraliser computation of <em>Left and Right Multiplication in a Ring</em>, restated in the operator algebra; the dual is the same computation with the sides exchanged.</p>
@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Proof.</strong> These are the Galois-connection laws of <em>Algebras of Endomorphisms</em> applied to the subalgebra $L(A)$.</p>
 <p><strong>Theorem (the double centraliser for the regular representation).</strong> If $A$ is a semisimple ring, then</p>
 <p>$$
-L(A)'' = L(A) .
+\boxed{\;L(A)'' = L(A)\;} .
 $$</p>
 <p><strong>Proof.</strong> A semisimple ring is semisimple as a left module over itself, and by the proposition on the module over the operators the module ${}_AA$ read over $L(A)$ is ${}_AA$; it is therefore semisimple over $L(A)$. The double centraliser theorem of <em>Algebras of Endomorphisms</em> then gives $L(A)'' = L(A)$, the module structure used being the one just identified and the theorem being cited, not reproved.</p>
 <p><strong>Corollary.</strong> For a finite-dimensional semisimple algebra $A$ over a field $F$, the image $L(A)$ is a closed subalgebra of $\operatorname{End}_F(A)$: it is determined by its commutant $R(A)$, and it is the largest subalgebra with that commutant. The matrix algebra and the group algebra below are the two cases.</p>
@@ -114,7 +114,7 @@ $$</p>
 <h3 id="the-isotypic-decomposition-as-operators">The isotypic decomposition as operators</h3>
 <p><strong>Proposition.</strong> Let $A$ be a finite-dimensional semisimple algebra over a field $F$, with Wedderburn–Artin decomposition $A \cong \bigoplus_i M_{n_i}(D_i)$ and simple left modules $S_i$, and put $D_i = \operatorname{End}_A(S_i)$. Then the regular module decomposes isotypically,</p>
 <p>$$
-{}_AA \;\cong\; \bigoplus_i S_i^{\oplus m_i}, \qquad m_i = \dim_{D_i} S_i ,
+\boxed{\;{}_AA \;\cong\; \bigoplus_i S_i^{\oplus m_i}, \qquad m_i = \dim_{D_i} S_i\;} ,
 $$</p>
 <p>and consequently $\dim_F A = \sum_i m_i \dim_F S_i$. Reading the operators, $L(A) \cong \prod_i M_{n_i}(D_i)$ acts on the summand $S_i^{\oplus m_i}$ componentwise, and the commutant separates the components: $L(A)' \cong \prod_i M_{m_i}(D_i^{\mathrm{opp}})$ up to the choice of decompositions.</p>
 <p><strong>Proof.</strong> The decomposition is Wedderburn–Artin and the isotypic decomposition of a semisimple module, established in <em>Simple and Semisimple Modules</em>; the multiplicity of the isotypic component of type $S_i$ in the regular module is $\dim_{D_i}S_i$ because $A$ is the direct sum of its simple left ideals, each of which is isomorphic to one of the $S_i$. The commutant is the module endomorphism ring of the sum of isotypic components, which is a product of matrix algebras over the division algebras, and the double centraliser of the preceding section closes the computation. The dimension identity is the comparison of the two sides.</p>

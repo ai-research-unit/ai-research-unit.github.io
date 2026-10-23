@@ -82,7 +82,7 @@ $$</p>
 <p><strong>Remark (why the distinction is real).</strong> The travelling-wave reduction is an ordinary differential equation with a homoclinic orbit at the origin, and the existence of a solitary wave is a question about homoclinic bifurcation; the equation is not required to be integrable. The stability against collision, by contrast, is a rigid property. For a general equation a solitary wave interacting with another emits radiation, loses energy and is deformed; for an integrable equation the interaction is exactly elastic, because the inverse scattering transform writes the solution as a sum of asymptotically free pieces, and no energy can be transferred to the continuous spectrum in the reflectionless case.</p>
 <p><strong>Example (the KdV solitary wave).</strong> In the convention of the preceding article, $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$, the travelling-wave ansatz $w = \phi(x-ct)$ gives $-c\phi' - 6\phi\phi' + \phi'''=0$, which integrates once to $\phi'' = c\phi + 3\phi^2 + A$. Taking $A=0$ and seeking a solution decaying at infinity, the equation $\frac12(\phi')^2 = \frac c2\phi^2+\phi^3$ has the homoclinic solution</p>
 <p>$$
-\phi(\xi) = -\frac{c}{2}\operatorname{sech}^2\left(\frac{\sqrt{c}}{2}\xi\right),
+\boxed{\;\phi(\xi) = -\frac{c}{2}\operatorname{sech}^2\left(\frac{\sqrt{c}}{2}\xi\right)\;},
 $$</p>
 <p>which is the one-soliton of the preceding article with $c = 4\kappa^2$ and amplitude $-\frac{c}{2} = -2\kappa^2$. The amplitude is therefore proportional to the speed, $|{\phi}|_{\max} = c/2$, and this amplitude-speed relation is the signature of the KdV soliton: taller waves travel faster, so a fast soliton overtakes a slow one.</p>
 <p><strong>Example (the nonlinear Schrödinger soliton).</strong> For the focusing nonlinear Schrödinger equation</p>
@@ -99,7 +99,7 @@ $$</p>
 <h3 id="the-n-soliton-and-the-phase-shift">The N-Soliton and the Phase Shift</h3>
 <p><strong>Theorem (asymptotic form of the N-soliton).</strong> In the convention $\partial/\partial t w-6w\partial/\partial x w+\partial^3/\partial x^3 w=0$, the reflectionless solution with $N$ bound states $\kappa_1>\kappa_2>\dots>\kappa_N>0$ has the asymptotic form</p>
 <p>$$
-w(x,t) \sim -\sum_{n=1}^N 2\kappa_n^2\operatorname{sech}^2\Bigl(\kappa_n\bigl(x-4\kappa_n^2t-\delta_n^\pm\bigr)\Bigr)
+\boxed{\;w(x,t) \sim -\sum_{n=1}^N 2\kappa_n^2\operatorname{sech}^2\Bigl(\kappa_n\bigl(x-4\kappa_n^2t-\delta_n^\pm\bigr)\Bigr)\;}
 $$</p>
 <p>as $t\to\pm\infty$, uniformly on compact sets after the waves have separated; the amplitude and the speed of each wave are the same in the two limits, and only the centres $\delta_n^\pm$ differ. The difference $\delta_n^+-\delta_n^-$ is the <strong>phase shift</strong> of the $n$-th soliton, and it is nonzero whenever more than one soliton is present.</p>
 <p><em>Proof.</em> Quoted as standard; the determinantal formula of the preceding article is expanded asymptotically in the two time limits, and the off-diagonal entries of the matrix, which express the interaction, become negligible in the two limits and contribute only to the constant in the exponent.</p>
@@ -111,7 +111,7 @@ $$</p>
 <h3 id="conservation-laws-and-localised-wave-dynamics">Conservation Laws and Localised-Wave Dynamics</h3>
 <p><strong>Proposition (the integrals of the N-soliton).</strong> The conserved quantities $I_k = \int\rho_k\,dx$ of the preceding article evaluate on the $N$-soliton as sums over the individual solitons:</p>
 <p>$$
-I_1 = -4\sum_n\kappa_n, \qquad I_2 = \frac{16}{3}\sum_n\kappa_n^3, \qquad I_3 = -\frac{32}{5}\sum_n\kappa_n^5 ,
+\boxed{\;I_1 = -4\sum_n\kappa_n, \qquad I_2 = \frac{16}{3}\sum_n\kappa_n^3, \qquad I_3 = -\frac{32}{5}\sum_n\kappa_n^5\;} ,
 $$</p>
 <p>where $I_1=\int w\,dx$, $I_2=\int w^2dx$ and $I_3=\int(w^3+\frac12\partial/\partial x w^2)dx$; the general $I_k$ is a sum of the odd powers $\kappa_n^{2k-1}$. Each integral is evaluated on the one-soliton by elementary integration — for instance $\int w\,dx = -2\kappa^2\int\operatorname{sech}^2(\kappa x)dx = -4\kappa$ — and the additivity over separated solitons, together with the conservation of $I_k$, transports the value to the $N$-soliton. The conservation of each $I_k$ during a collision is therefore the statement that the amplitudes and speeds of the individual waves are unchanged, and the interaction can only redistribute the phases among them.</p>
 <p><em>Proof.</em> Quoted as standard; the integrals of powers of a reflectionless potential are computed from the scattering data by the trace identities, which express $I_k$ as a polynomial in the $\kappa_n$.</p>

@@ -176,7 +176,9 @@ $$</p>
 <p>Write $f(Q) = u(q, q') + v(q, q') \varepsilon$, where $Q = q + \varepsilon q'$ and $u, v : \Omega \to R$.</p>
 <p><strong>Theorem.</strong> $f$ is dual differentiable at $Q_0 = q_0 + \varepsilon q'_0$ iff $u$ and $v$ are real differentiable at $(q_0, q'_0)$ and satisfy the <strong>dual Cauchy–Riemann equations</strong></p>
 <p>$$
-\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = 0.
+\boxed{\;
+\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = 0
+\;}.
 $$</p>
 <p><strong>Proof.</strong> Write $h = h_1 + h_2 \varepsilon$. The difference quotient is</p>
 <p>$$
@@ -185,7 +187,9 @@ $$</p>
 <p>For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_{q'} = 0$ and $u_q = v_{q'}$; the remaining partial $v_q$ is free and becomes the infinitesimal part of the derivative.</p>
 <p><strong>Corollary.</strong> If $f$ is dual differentiable on a domain, then $u$ depends only on $q$, and $v$ is affine in $q'$ with slope $\frac{du}{dq}$:</p>
 <p>$$
-f(q + \varepsilon q') = u(q) + \left( q' \frac{du}{dq} + c(q) \right) \varepsilon,
+\boxed{\;
+f(q + \varepsilon q') = u(q) + \left( q' \frac{du}{dq} + c(q) \right) \varepsilon
+\;},
 $$</p>
 <p>where $u$ and $c$ are ordinary differentiable functions of one variable. So a dual differentiable function is determined by two ordinary differentiable functions of one real variable, and it is constant in the infinitesimal direction only when $u$ is constant.</p>
 <p>This is the fundamental difference from complex analysis: the dual Cauchy–Riemann equations force the real part to be independent of the infinitesimal direction and force the infinitesimal part to be affine in it with slope $\frac{du}{dq}$, while the complex Cauchy–Riemann equations force the function to be harmonic. The dual differentiable functions are a restrictive class, and this is the reason dual numbers analysis is less developed than complex analysis.</p>
@@ -246,7 +250,9 @@ $$</p>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
 <p><strong>Theorem (Cauchy–Goursat, dual version).</strong> If $f$ is dual differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then</p>
 <p>$$
+\boxed{\;
 \oint_\gamma f(Q) \, dQ = 0
+\;}
 $$</p>
 <p>provided the contour does not cross the maximal ideal in a way that makes the integral diverge.</p>
 <p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$. Let $\Omega$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(q + \varepsilon q') = \Omega(q) + (q' u(q) + C(q))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $\Omega$ with $\Omega' = u$, and the $q$-derivative of its infinitesimal part $q' u(q) + C(q)$ is $q' \frac{du}{dq} + c(q)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes.</p>
@@ -274,7 +280,9 @@ $$</p>
 <h3 id="taylor-series">Taylor Series</h3>
 <p><strong>Theorem (Taylor, dual version).</strong> If $f$ is dual differentiable on a domain containing the closed disk $\overline{B}(Q_0, r)$, then $f$ has a power series expansion</p>
 <p>$$
+\boxed{\;
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
+\;}
 $$</p>
 <p>valid for $\|Q - Q_0\|_E < r$.</p>
 <p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $q' \frac{du}{dq} + c(q)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $q' \frac{du}{dq} + c(q)$.</p>

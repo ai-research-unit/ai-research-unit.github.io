@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-lagrange-identity">The Lagrange Identity</h2>
 <p><strong>Theorem (the Lagrange identity).</strong> Let $L=\sum_{k=0}^m p_k(x)\,\frac{d^k}{dx^k}$ be a differential operator on an interval with smooth coefficients and let $L^{\dagger}=\sum_{k=0}^m(-1)^k\frac{d^k}{dx^k}\bigl(\bar p_k\,\cdot\bigr)$ be its formal adjoint. Then there is a sesquilinear expression $P(u,v)$, the <strong>bilinear concomitant</strong>, of order at most $m-1$ in each of $u,v$, with</p>
 <p>$$
-\bar v\,Lu - u\,\overline{L^{\dagger}v} = \frac{d}{dx}P(u,v) ,
+\boxed{\;\bar v\,Lu - u\,\overline{L^{\dagger}v} = \frac{d}{dx}P(u,v)\;} ,
 $$</p>
 <p>the <strong>Lagrange identity</strong>; for the second-order operator $Lu=-(pu')'+qu$ with real $p>0$ and real $q$,</p>
 <p>$$
@@ -96,7 +96,7 @@ $$</p>
 <h2 id="the-green-formula">The Green Formula</h2>
 <p><strong>Theorem (the Green formula).</strong> With the notation above and $\Omega$ a bounded domain with smooth boundary,</p>
 <p>$$
-\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega}\vec P(u,v)\cdot\nu\,dS ,
+\boxed{\;\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega}\vec P(u,v)\cdot\nu\,dS\;} ,
 $$</p>
 <p>where $\nu$ is the outward unit normal; the right side is the <strong>boundary form</strong></p>
 <p>$$
@@ -121,7 +121,7 @@ $$</p>
 <p><em>Proof.</em> $\frac{d}{dx}\langle y,z\rangle=\langle y',z\rangle+\langle y,z'\rangle=\langle Ay,z\rangle+\langle y,-A^*z\rangle=\langle Ay,z\rangle-\langle Ay,z\rangle=0$. The self-adjoint case is $-A^{*}=A$; then the two derivatives of the pairing vanish and $\langle Ay,z\rangle+\langle y,Az\rangle=0$ by the skew-Hermitian property of $A$, so the pairing is a symplectic form.</p>
 <p><strong>Theorem (the Sturm–Liouville system).</strong> Let $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p>0$ and real $q$, and write $y=(u,pu')$. Then $\ell u=\lambda w u$ reads as the system $y'=Ay$ with</p>
 <p>$$
-A = \begin{pmatrix}0 & 1/p\\ q-\lambda w & 0\end{pmatrix} ,
+\boxed{\;A = \begin{pmatrix}0 & 1/p\\ q-\lambda w & 0\end{pmatrix}\;} ,
 $$</p>
 <p>and the form $\omega(y,z)=y_1\bar z_2-y_2\bar z_1=p(u\bar v'-u'\bar v)$ is symplectic for $A$ when $\lambda$ is real; the system is self-adjoint, $\omega$ is invariant on pairs of solutions, and the boundary term is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. The two boundary conditions at $a$ and $b$ make the problem self-adjoint exactly when this form vanishes against the admissible pairs.</p>
 <p><em>Proof.</em> The first equation is $u'=y_2/p$ and the second is $(pu')'=(q-\lambda w)u$, which is the arrangement displayed. For real $\lambda$ and real coefficients, $\omega(Ay,z)+\omega(y,Az)=0$ by direct computation: $\omega(Ay,z)=\frac1p y_2\bar z_2-(q-\lambda w)y_1\bar z_1$ and $\omega(y,Az)=(q-\lambda w)y_1\bar z_1-\frac1p y_2\bar z_2$, which sum to zero. Invariance and the boundary form then follow from the two preceding theorems, and the self-adjointness of the scalar problem is the vanishing of the boundary term, which is <em>Self-Adjoint Sturm–Liouville Operators</em>, below.</p>

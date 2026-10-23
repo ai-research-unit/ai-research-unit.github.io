@@ -81,15 +81,15 @@
 <p><strong>Proof.</strong> $\iota(g)=g$ is $g^{-1}=g$, that is $g^{2}=e$; so the fixed set of the inversion is the $2$-torsion of $G$, which is $\{e\}$ exactly when no element of order two exists. A finite group has an element of order two exactly when its order is even (Cauchy's theorem).</p>
 <p><strong>Proposition (the injectivity of the conjugate product).</strong> If $\sigma$ is free, the map</p>
 <p>$$
-\varphi : G\longrightarrow G, \qquad \varphi(g)=g^{-1}\sigma(g),
+\boxed{\;\varphi : G\longrightarrow G, \qquad \varphi(g)=g^{-1}\sigma(g)\;},
 $$</p>
 <p>is injective. If $G$ is finite it is therefore a bijection, and every element of $G$ is the conjugate product of a unique pair $(g^{-1},\sigma(g))$.</p>
 <p><strong>Proof.</strong> If $\varphi(g)=\varphi(h)$ then $g^{-1}\sigma(g)=h^{-1}\sigma(h)$, so $hg^{-1}=\sigma(h)\sigma(g)^{-1}=\sigma(hg^{-1})$, and $hg^{-1}\in G^{\sigma}$; freeness gives $hg^{-1}=e$ and $g=h$. Finiteness makes injective bijective.</p>
 <h2 id="the-quotient-and-the-double-cover">The Quotient and the Double Cover</h2>
 <p><strong>Definition.</strong> The <strong>orbit quotient</strong> of a free involution $\sigma$ is the set of orbits</p>
 <p>$$
-G/\langle\sigma\rangle = \{\,\{g,\sigma(g)\} : g\in G\,\} ,
-\qquad \pi : G\longrightarrow G/\langle\sigma\rangle, \quad \pi(g)=\{g,\sigma(g)\}.
+\boxed{\;G/\langle\sigma\rangle = \{\,\{g,\sigma(g)\} : g\in G\,\} ,
+\qquad \pi : G\longrightarrow G/\langle\sigma\rangle, \quad \pi(g)=\{g,\sigma(g)\}\;}.
 $$</p>
 <p><strong>Proposition (the projection is a double cover).</strong> The projection $\pi$ is surjective, every fibre has exactly two elements, and $\sigma$ is its nontrivial deck transformation: $\pi\sigma=\pi$ and $\sigma(g)\neq g$ for $g\neq e$. For finite $G$, $\lvert G/\langle\sigma\rangle\rvert=\lvert G\rvert/2$.</p>
 <p><strong>Proof.</strong> The fibre over $\{g,\sigma(g)\}$ is that orbit, of size two because $\sigma(g)=g$ forces $g=e$ and an orbit of a non-identity element has two members. And $\pi(\sigma(g))=\{\sigma(g),\sigma^{2}(g)\}=\{g,\sigma(g)\}=\pi(g)$. The count is the orbit-counting of a free action of a two-element group (<em>Transformation Groups</em>).</p>

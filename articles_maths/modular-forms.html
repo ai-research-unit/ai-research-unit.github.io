@@ -181,7 +181,7 @@ $$
 <h3 id="the-valence-formula-and-the-dimension">The Valence Formula and the Dimension</h3>
 <p><strong>Theorem (the valence formula).</strong> Let $\Gamma$ contain $-I$ and let $k$ be even. For a nonzero $f\in M_k(\Gamma)$,
 $$
-\sum_{P\in\bar\Gamma\backslash\mathbb{H}^*}\frac{1}{\lvert\bar\Gamma_P\rvert}\operatorname{ord}_P(f) = \frac{k\,[\bar\Gamma(1):\bar\Gamma]}{12},
+\boxed{\;\sum_{P\in\bar\Gamma\backslash\mathbb{H}^*}\frac{1}{\lvert\bar\Gamma_P\rvert}\operatorname{ord}_P(f) = \frac{k\,[\bar\Gamma(1):\bar\Gamma]}{12}\;},
 $$
 the sum over the orbits of the points of $\mathbb{H}^*$, where $\operatorname{ord}_P$ is the order of vanishing at $P$ and $\lvert\bar\Gamma_P\rvert$ the order of the stabiliser.</p>
 <p><strong>Proof sketch.</strong> The form $f$ has a $\Gamma$-invariant divisor on the compact curve $X_\Gamma$; the divisor of the differential $f(z)(dz)^{k/2}$ is computed and its degree is compared with the degree of $dz^{k/2}$, which is $\frac{k}{12}[\bar\Gamma(1):\bar\Gamma]$ by the Gauss–Bonnet computation on the orbifold quotient, the contributions of the elliptic points and cusps being the reciprocal stabiliser factors.</p>
@@ -200,7 +200,7 @@ while $\dim S_k(\Gamma)$ is the number of holomorphic sections of the $(k/2)$-th
 <h3 id="the-structure-theorem">The Structure Theorem</h3>
 <p><strong>Theorem.</strong> The graded ring of modular forms of level one is
 $$
-\bigoplus_{k}M_k(\Gamma(1)) = \mathbb{C}[E_4,E_6],
+\boxed{\;\bigoplus_{k}M_k(\Gamma(1)) = \mathbb{C}[E_4,E_6]\;},
 $$
 the two generators being algebraically independent, of weights $4$ and $6$; the ideal of cusp forms is $\Delta\cdot\mathbb{C}[E_4,E_6]$.</p>
 <p><strong>Proof.</strong> By the dimension formula, $M_k$ is spanned by monomials $E_4^aE_6^b$ with $4a+6b = k$: the number of such monomials equals the value of $\dim M_k$ in each weight, so the monomials span by the dimension count; the algebraic independence is the statement that the map $\mathbb{C}[X,Y]\to\bigoplus M_k$, $X\mapsto E_4$, $Y\mapsto E_6$, is injective, which follows by writing a relation of minimal weight in the form $E_4^3 = E_6^2+\Delta$ and comparing the orders of vanishing at the elliptic points, or, more directly, by using the valence formula to show that a form of weight $k$ vanishing to the highest possible order at $\rho$ and $i$ is a multiple of the appropriate monomial. The cusp forms are the multiples of $\Delta$ because $\Delta$ is a cusp form of minimal weight $12$ and multiplication by $\Delta$ maps $M_{k-12}$ isomorphically onto $S_k$ for every $k\geq12$, by the valence formula.</p>
@@ -258,7 +258,7 @@ $$
 $$
 the product converges absolutely for $\Re s>(k+1)/2$, $L(f,s)$ has an analytic continuation to an entire function, and
 $$
-\Lambda(f,s) = \varepsilon\,\Lambda(f,k-s), \qquad \varepsilon = \pm1 ,
+\boxed{\;\Lambda(f,s) = \varepsilon\,\Lambda(f,k-s), \qquad \varepsilon = \pm1\;} ,
 $$
 the sign $\varepsilon$ being the <strong>root number</strong>; the critical line is $\Re s = k/2$ and the nontrivial zeros lie in the critical strip $(k-1)/2<\Re s<(k+1)/2$, since the Euler product is nonvanishing for $\Re s>(k+1)/2$ and the functional equation excludes the zeros for $\Re s<(k-1)/2$.</p>
 <p><strong>Proof sketch.</strong> The analytic continuation and the functional equation are proved by the Mellin transform of $f$: for a cusp form of weight $k$,

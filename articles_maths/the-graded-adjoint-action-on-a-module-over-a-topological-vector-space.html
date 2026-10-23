@@ -81,7 +81,7 @@ $$</p>
 <p>a continuous algebra automorphism with $\mathrm{Ad}_{a}\mathrm{Ad}_{b} = \mathrm{Ad}_{ab}$ and $\mathrm{Ad}_{a}^{-1} = \mathrm{Ad}_{a^{-1}}$, so that $a \mapsto \mathrm{Ad}_{a}$ is a continuous representation of the unit group $E^{\times}$ with kernel the centre $Z(E)^{\times}$; the image is the group of inner automorphisms.</p>
 <p><strong>Theorem (the adjoint of the adjoint action).</strong> For every invertible $a \in E$ the adjoint action has the trace-adjoint</p>
 <p>$$
-(\mathrm{Ad}_{a})^{\dagger} = \mathrm{Ad}_{a^{-1}} = (\mathrm{Ad}_{a})^{-1} ,
+\boxed{\;(\mathrm{Ad}_{a})^{\dagger} = \mathrm{Ad}_{a^{-1}} = (\mathrm{Ad}_{a})^{-1}\;} ,
 $$</p>
 <p>so the adjoint action is <strong>unitary</strong> for the trace form and the adjoint operation is compatible with the inversion of the parameter; equivalently, $\mathrm{Ad}_{a}$ is an isometry of the trace form.</p>
 <p><strong>Proof.</strong> $\mathrm{Ad}_{a} = \Theta^{\alpha}_{a,a^{-1}}$ with $\alpha = \mathrm{id}$, and the unsigned sandwich has adjoint $\Phi_{a^{-1},a} = \mathrm{Ad}_{a^{-1}}$ by <em>The Adjoint of the Left Multiplication on a Topological Vector Space</em>; since $\mathrm{Ad}_{a^{-1}} = (\mathrm{Ad}_{a})^{-1}$ and $(\mathrm{Ad}_{a})^{\dagger}\mathrm{Ad}_{a} = \mathrm{id}$, the action is unitary. Alternatively, $\langle axa^{-1}, y\rangle = \tau(axa^{-1}y) = \tau(xa^{-1}ya) = \langle x, a^{-1}ya\rangle$.</p>
@@ -90,7 +90,7 @@ $$</p>
 <h2 id="compatibility-with-the-grading">Compatibility with the Grading</h2>
 <p><strong>Theorem (parity of the conjugation).</strong> Let $a$ be invertible and homogeneous of parity $p$, $a \in E_{p}$, and let $x$ be homogeneous of parity $i$. Then $axa^{-1}$ is homogeneous of parity $p + i + p = i$, since $a^{-1}$ has the parity $p$ and $2p = 0$ in the grading group $\mathbb{Z}/2$; hence</p>
 <p>$$
-\mathrm{Ad}_{a}(E_{i}) \subseteq E_{i} \qquad (i = 0, 1),
+\boxed{\;\mathrm{Ad}_{a}(E_{i}) \subseteq E_{i} \qquad (i = 0, 1)\;},
 $$</p>
 <p>so the conjugation by a homogeneous unit preserves the grading, for even and for odd units alike, and it is an automorphism of the graded algebra.</p>
 <p><strong>Proof.</strong> $a \in E_{p}$, $x \in E_{i}$ and $a^{-1} \in E_{p}$ give $axa^{-1} \in E_{p+i+p} = E_{2p+i} = E_{i}$. The two same-parity factors $a$ and $a^{-1}$ cancel their parities, which is why the odd units conjugate within the parts and are not the ones that move them.</p>
@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-module-case-and-the-sign-rule">The Module Case and the Sign Rule</h2>
 <p><strong>Theorem (the conjugated action on a graded module).</strong> Let $\rho : E \to \mathrm{End}(M)$ be the action and let $a$ be an invertible unit. Then the conjugated action $\rho^{a}_{x} = \rho_{axa^{-1}}$ is again an action, and for homogeneous $x$ of parity $i$ the operator $\rho^{a}_{x}$ has the same parity as $\rho_{x}$,</p>
 <p>$$
-\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta ,
+\boxed{\;\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta\;} ,
 $$</p>
 <p>because $axa^{-1}$ has the same parity $i$ as $x$; the conjugation therefore preserves the compatibility of the action with the grading, and the conjugation by a homogeneous unit is an automorphism of the graded module structure. The action by a homogeneous element $a$ itself, $m \mapsto a \cdot m$, is a different map: it sends $M_{j}$ into $M_{j+p}$ for $a$ of parity $p$, so the left multiplication by an odd element shifts the parity while the conjugation does not.</p>
 <p><strong>Proof.</strong> For homogeneous $m \in M_{j}$ and $x \in E_{i}$, the parity of $axa^{-1}$ is $i$ by the parity theorem, so $\rho^{a}_{x}$ acts with parity $i$ on $M$: $\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta$. The conjugation is an action because $a \mapsto \mathrm{Ad}_{a}$ is a homomorphism, and the statement for the left multiplication is the module compatibility $E_{i}M_{j} \subseteq M_{i+j}$ of <em>The Graded Action on a Module over a Topological Vector Space</em>.</p>

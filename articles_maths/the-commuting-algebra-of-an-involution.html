@@ -79,21 +79,21 @@ C_G(\alpha)=\{g\in G : c_g\alpha=\alpha c_g\}.
 $$</p>
 <p><strong>Proposition (the commuting condition is centrality of the defect).</strong> For $g\in G$,</p>
 <p>$$
-c_g\alpha=\alpha c_g \quad\Longleftrightarrow\quad g\,\alpha(g)^{-1}\in Z(G) \quad\Longleftrightarrow\quad \alpha(g)\,g^{-1}\in Z(G).
+\boxed{\;c_g\alpha=\alpha c_g \quad\Longleftrightarrow\quad g\,\alpha(g)^{-1}\in Z(G) \quad\Longleftrightarrow\quad \alpha(g)\,g^{-1}\in Z(G)\;}.
 $$</p>
 <p><strong>Proof.</strong> Writing the composition out, $c_g\alpha(x)=g\alpha(x)g^{-1}$ and $\alpha c_g(x)=\alpha(gxg^{-1})=\alpha(g)\alpha(x)\alpha(g)^{-1}$ for all $x$; the two are equal for all $x$ exactly when $g^{-1}\alpha(g)$ centralises $\alpha(G)=G$, that is $g^{-1}\alpha(g)\in Z(G)$. The second form is the inverse of the first.</p>
 <p><strong>Theorem (the commuting set is a subgroup).</strong> $C_G(\alpha)$ is a subgroup of $G$ containing $Z(G)$ and $G^{\alpha}$.</p>
 <p><strong>Proof.</strong> The identity commutes with $\alpha$. If $g\in C_G(\alpha)$ then $\alpha(g^{-1})=\alpha(g)^{-1}=(z g)^{-1}=g^{-1}z^{-1}$ for some $z\in Z(G)$, so $g^{-1}\alpha(g^{-1})^{-1}=g^{-1}\alpha(g)=g^{-1}zg\in Z(G)$, and $g^{-1}\in C_G(\alpha)$. If $g,h\in C_G(\alpha)$, write $\alpha(g)=z_1g$ and $\alpha(h)=z_2h$ with $z_1,z_2\in Z(G)$; then $\alpha(gh)=z_1z_2\,gh$, so $(gh)\alpha(gh)^{-1}=(z_1z_2)^{-1}\in Z(G)$ and $gh\in C_G(\alpha)$. The centre is contained because a central $g$ has $c_g=\mathrm{id}$, which commutes with everything; the fixed subgroup is contained because $\alpha(g)=g$ gives $g\alpha(g)^{-1}=e$.</p>
 <p><strong>Proposition (the form of $\alpha$ on the commuting subgroup).</strong> The restriction $\alpha|_{C_G(\alpha)}$ multiplies by a central element: the map</p>
 <p>$$
-z : C_G(\alpha)\longrightarrow Z(G), \qquad z(g)=\alpha(g)\,g^{-1},
+\boxed{\;z : C_G(\alpha)\longrightarrow Z(G), \qquad z(g)=\alpha(g)\,g^{-1}\;},
 $$</p>
 <p>is a homomorphism whose kernel is the fixed subgroup $G^{\alpha}$, and $\alpha(g)=z(g)g$ for every $g\in C_G(\alpha)$.</p>
 <p><strong>Proof.</strong> The containment in $Z(G)$ is the proposition above. The multiplicativity follows from the central value: $z(gh)=\alpha(gh)(gh)^{-1}=\alpha(g)\alpha(h)h^{-1}g^{-1}=\alpha(g)z(h)g^{-1}=z(h)\alpha(g)g^{-1}=z(h)z(g)$, using that $z(h)$ is central. The kernel is $\{g:\alpha(g)g^{-1}=e\}=\{g:\alpha(g)=g\}=G^{\alpha}$.</p>
 <p><strong>Corollary (the exact sequence).</strong> The homomorphism $z$ realises the commuting subgroup as an extension of the fixed subgroup by a subgroup of the centre, and the image of $G\to\operatorname{Inn}(G)$ on $C_G(\alpha)$ is exactly the centraliser $C_{\operatorname{Inn}(G)}(\alpha)$ of $\alpha$ in the inner automorphism group. Consequently</p>
 <p>$$
-C_G(\alpha)/Z(G)\ \cong\ C_{\operatorname{Inn}(G)}(\alpha),
-\qquad\text{and}\qquad C_G(\alpha)/G^{\alpha}\ \cong\ \operatorname{im}z\ \leq Z(G).
+\boxed{\;C_G(\alpha)/Z(G)\ \cong\ C_{\operatorname{Inn}(G)}(\alpha),
+\qquad\text{and}\qquad C_G(\alpha)/G^{\alpha}\ \cong\ \operatorname{im}z\ \leq Z(G)\;}.
 $$</p>
 <p><strong>Proof.</strong> The first isomorphism is that the kernel of $G\to\operatorname{Inn}(G)$ is $Z(G)$ and the image on $C_G(\alpha)$ is the set of inner automorphisms commuting with $\alpha$. The second is the first isomorphism theorem applied to $z$.</p>
 <h2 id="relation-to-the-fixed-subgroup">Relation to the Fixed Subgroup</h2>

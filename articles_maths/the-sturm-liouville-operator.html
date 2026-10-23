@@ -95,7 +95,7 @@ $$</p>
 <p><em>Proof.</em> One seeks $p,q,w$ with $\frac1w(-(py')'+qy)=Ay''+By'+Cy$. Comparing the second-order terms gives $pw=A$, and comparing the first-order terms gives $-p'w=-Bw$, that is $p'=Bw$; hence $(Aw)'=Bw$, so $w=A^{-1}\exp(\int B/A\,dx)$, then $p=Aw=\exp(\int B/A\,dx)$ and $q=Cw$. Any other solution multiplies all of $p$, $q$, $w$ by the same positive factor, and the operator $w^{-1}\ell$ is unchanged by that common factor.</p>
 <p><strong>Proposition (formal self-adjointness).</strong> The Sturm–Liouville operator is formally self-adjoint for the weighted pairing: for functions of class $C^2$ on $[a,b]$,</p>
 <p>$$
-\int_a^b(\ell y)\,\bar v\,dx - \int_a^b y\,\overline{\ell v}\,dx = \Bigl[p\,(y\bar v' - y'\bar v)\Bigr]_a^b ,
+\boxed{\;\int_a^b(\ell y)\,\bar v\,dx - \int_a^b y\,\overline{\ell v}\,dx = \Bigl[p\,(y\bar v' - y'\bar v)\Bigr]_a^b\;} ,
 $$</p>
 <p>and hence $\langle Ly,v\rangle_w = \langle y,Lv\rangle_w$ whenever the boundary term vanishes.</p>
 <p><em>Proof.</em> Twice integrating by parts,</p>
@@ -113,7 +113,7 @@ $$</p>
 <p>with $(\alpha_1,\alpha_2)$ and $(\beta_1,\beta_2)$ not both zero; a <strong>periodic</strong> condition identifies the values of $y$ and $py'$ at the two endpoints. The <strong>domain</strong> $\mathcal{D}(L)$ of the Sturm–Liouville operator for a given condition is the space of $y \in L^2((a,b),w\,dx)$ of class $C^2$ satisfying it, with $Ly \in L^2((a,b),w\,dx)$.</p>
 <p><strong>Theorem (the separated conditions are symmetric).</strong> For a separated boundary condition the operator $L$ with domain $\mathcal{D}(L)$ is symmetric on $L^2((a,b),w\,dx)$:</p>
 <p>$$
-\langle Ly,v\rangle_w = \langle y,Lv\rangle_w \qquad \text{for every } y,v\in\mathcal{D}(L) .
+\boxed{\;\langle Ly,v\rangle_w = \langle y,Lv\rangle_w \qquad \text{for every } y,v\in\mathcal{D}(L)\;} .
 $$</p>
 <p>If the problem is regular, the closure of $L$ is self-adjoint on the domain obtained by taking the closure in the graph norm.</p>
 <p><em>Proof.</em> At each endpoint the boundary term vanishes. At $a$, the pair $(y(a),(py')(a))$ is a multiple of $(\alpha_2,-\alpha_1)$ because of the condition, and the pair $(v(a),(pv')(a))$ is a multiple of the same vector; hence the determinant</p>
@@ -133,7 +133,7 @@ $$</p>
 <h2 id="the-eigenfunction-expansion">The Eigenfunction Expansion</h2>
 <p><strong>Theorem (the expansion).</strong> Let the problem be regular. Then there are real numbers $\lambda_1<\lambda_2<\cdots$ with $\lambda_n\to\infty$ and eigenfunctions $\varphi_n$ such that $L\varphi_n=\lambda_n\varphi_n$, the $\varphi_n$ are orthonormal in $L^2((a,b),w\,dx)$, and they form a complete orthonormal basis: every $f$ of the space has</p>
 <p>$$
-f = \sum_{n\ge1}\langle f,\varphi_n\rangle_w\,\varphi_n , \qquad \|f\|_w^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle_w\bigr|^2 ,
+\boxed{\;f = \sum_{n\ge1}\langle f,\varphi_n\rangle_w\,\varphi_n , \qquad \|f\|_w^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle_w\bigr|^2\;} ,
 $$</p>
 <p>the series converging in the weighted $L^2$ norm; and, in the sense of the spectral theorem for a self-adjoint operator with compact resolvent,</p>
 <p>$$

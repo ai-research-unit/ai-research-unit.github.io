@@ -109,7 +109,7 @@ $$</p>
 <p><em>Proof (in outline).</em> Given an extension $0\to N\to E\xrightarrow{\pi}M\to0$, choose a projective resolution and lift the identity of $M$ to a chain map into the complex $0\to N\to E\to0$ concentrated in degrees $2,1,0$; the failure of the lift to be a chain map in degree one is a cocycle in $\operatorname{Hom}_R(P_1,N)$, and its class does not depend on the lift. Conversely, a class $[c]\in\operatorname{Ext}^1_R(M,N)$ with $c\in\operatorname{Hom}_R(P_1,N)$ defines an extension as the cokernel of $P_1\to P_0\oplus N$, $x\mapsto(d_1x,cx)$, which is exact at the middle because of the cocycle condition. The two constructions are inverse, and the Baer sum agrees with addition of cohomology classes.</p>
 <p><strong>Theorem (Yoneda).</strong> For $n\ge1$ the group $\operatorname{Ext}_R^n(M,N)$ is naturally isomorphic to the group of equivalence classes of <strong>$n$-fold extensions</strong>, that is, exact sequences</p>
 <p>$$
-0\to N\to E_{n-1}\to E_{n-2}\to\cdots\to E_0\to M\to0,
+\boxed{\;0\to N\to E_{n-1}\to E_{n-2}\to\cdots\to E_0\to M\to0\;},
 $$</p>
 <p>under a suitable equivalence relation, with the Baer-sum addition. For $n=1$ this reduces to the previous theorem.</p>
 <p><em>Proof.</em> The verification is that the Yoneda product of extensions composes with the connecting homomorphisms and that a projective resolution is a universal $n$-fold extension; the details are the standard Yoneda theory.</p>
@@ -147,7 +147,7 @@ $$</p>
 <p>For a complex of free modules the cohomology with coefficients is computed by the homology and the Ext groups; this is the universal coefficient theorem, and it is the standard application of the two functors.</p>
 <p><strong>Theorem (universal coefficients, cohomology).</strong> Let $C_\bullet$ be a chain complex of free modules over a principal ideal domain $R$, and let $N$ be an $R$-module. For every $n$ there is a natural short exact sequence</p>
 <p>$$
-0\longrightarrow\operatorname{Ext}_R^1(H_{n-1}(C_\bullet),N)\longrightarrow H^n(\operatorname{Hom}_R(C_\bullet,N))\longrightarrow\operatorname{Hom}_R(H_n(C_\bullet),N)\longrightarrow0,
+\boxed{\;0\longrightarrow\operatorname{Ext}_R^1(H_{n-1}(C_\bullet),N)\longrightarrow H^n(\operatorname{Hom}_R(C_\bullet,N))\longrightarrow\operatorname{Hom}_R(H_n(C_\bullet),N)\longrightarrow0\;},
 $$</p>
 <p>which splits, though not naturally.</p>
 <p><strong>Theorem (universal coefficients, homology).</strong> With the same hypotheses, for every $n$ there is a natural short exact sequence</p>
@@ -161,7 +161,7 @@ $$</p>
 <h3 id="the-kunneth-formula">The Künneth Formula</h3>
 <p><strong>Theorem (Künneth, algebraic form).</strong> Let $R$ be a principal ideal domain and let $C_\bullet,D_\bullet$ be chain complexes of free $R$-modules with $C_\bullet$ bounded below. For every $n$ there is a natural short exact sequence</p>
 <p>$$
-0\longrightarrow\bigoplus_{p+q=n}H_p(C_\bullet)\otimes_RH_q(D_\bullet)\longrightarrow H_n(C_\bullet\otimes_RD_\bullet)\longrightarrow\bigoplus_{p+q=n-1}\operatorname{Tor}_1^R(H_p(C_\bullet),H_q(D_\bullet))\longrightarrow0,
+\boxed{\;0\longrightarrow\bigoplus_{p+q=n}H_p(C_\bullet)\otimes_RH_q(D_\bullet)\longrightarrow H_n(C_\bullet\otimes_RD_\bullet)\longrightarrow\bigoplus_{p+q=n-1}\operatorname{Tor}_1^R(H_p(C_\bullet),H_q(D_\bullet))\longrightarrow0\;},
 $$</p>
 <p>which splits, though not naturally.</p>
 <p><em>Pro.</em> Filter the tensor product complex by the degree of $C$, or apply the spectral sequence of the bicomplex $C_p\otimes_RD_q$; over a principal ideal domain the two rows of the $E^2$-page are the displayed terms and the spectral sequence has only two nonzero rows, so it degenerates to the short exact sequence. The derivation by the spectral sequence is carried out, and the direct proof uses the universal coefficient theorem.</p>

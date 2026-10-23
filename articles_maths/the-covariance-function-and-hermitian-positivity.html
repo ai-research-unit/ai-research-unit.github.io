@@ -94,7 +94,7 @@ $$</p>
 <h3 id="hermitian-symmetry-and-cauchyschwarz">Hermitian symmetry and Cauchy–Schwarz</h3>
 <p><strong>Theorem.</strong> The covariance is Hermitian,
 $$
-R(s,t)=\overline{R(t,s)},
+\boxed{\;R(s,t)=\overline{R(t,s)}\;},
 $$
 it satisfies the Cauchy–Schwarz inequality
 $$
@@ -105,7 +105,7 @@ and $R(t,t)=\varphi(|X_t-m_t|^2)=\operatorname{Var}(X_t)\ge0$, so the diagonal i
 <h3 id="positive-definiteness">Positive definiteness</h3>
 <p><strong>Theorem (positive definiteness).</strong> For every finite set of indices $t_1,\dots,t_k$ and complex scalars $c_1,\dots,c_k$,
 $$
-\sum_{i,j=1}^k c_i\,\overline{c_j}\,R(t_i,t_j)=\varphi\Bigl(\Bigl|\sum_ic_i(X_{t_i}-m_{t_i})\Bigr|^2\Bigr)\ge0 ,
+\boxed{\;\sum_{i,j=1}^k c_i\,\overline{c_j}\,R(t_i,t_j)=\varphi\Bigl(\Bigl|\sum_ic_i(X_{t_i}-m_{t_i})\Bigr|^2\Bigr)\ge0\;} ,
 $$
 so $R$ is a <strong>positive-definite</strong> kernel, and the matrix $(R(t_i,t_j))$ is positive semi-definite Hermitian. The kernel is positive definite in the strict sense: the double sum vanishes exactly when $\sum_ic_i(X_{t_i}-m_{t_i})=0$ in $\mathcal{H}$, because the form of the category is positive definite, which is the faithfulness of the state established in the preceding article.</p>
 <p><em>Proof.</em> The double sum is the squared norm of the linear combination in $\mathcal{H}$, hence nonnegative; the identification of the vanishing locus is the positive definiteness of the form of the category, which is the faithfulness of the state, established in the preceding article.</p>
@@ -133,7 +133,7 @@ R(n)=\int_{\mathbb T}\exp(in\lambda)\,d\mu(\lambda),\qquad R(0)=\mu(\mathbb T).
 $$</p>
 <p><strong>Theorem (Bochner).</strong> A continuous function $R:\mathbb R\to\mathbb{C}$ is positive definite if and only if it is the Fourier transform of a unique finite positive measure,
 $$
-R(t)=\int_{\mathbb R}\exp(it\lambda)\,d\mu(\lambda),
+\boxed{\;R(t)=\int_{\mathbb R}\exp(it\lambda)\,d\mu(\lambda)\;},
 $$
 and the measure is the <strong>spectral measure</strong> of the stationary process.</p>
 <p><em>Proof.</em> The two theorems are the spectral theory of the unitary representation of $\mathbb Z$ and of $\mathbb R$ by the shift, or by the translation; the positive definiteness is precisely the positivity of the spectral measure in the Gelfand–Raikov–Godement construction, and the uniqueness is the uniqueness of the Fourier transform. The proofs are <em>Ergodic Theory</em>, written, for the Herglotz case, and the classical Bochner theorem for the continuous case. The symmetry of the spectral measure under $\lambda\mapsto-\lambda$ and its relation to the reversibility are <em>The Reversibility of a Stationary Process</em>, earlier in this category.</p>

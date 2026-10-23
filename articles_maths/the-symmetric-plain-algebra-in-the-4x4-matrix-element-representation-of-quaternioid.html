@@ -77,30 +77,30 @@
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> of the block is $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mathbb{R})_L$, $\mathsf{M}_4(\tilde q)\tilde q_4=\tilde q\tilde q_4$; the <strong>right regular representation</strong> is $\mathsf{M}_4'(\tilde q)\tilde q_4=\tilde q_4\tilde q$.</p>
 <p><strong>Theorem.</strong> The left representation is multiplicative for the plain product and carries the Jordan product to the <strong>half-sum of the two orders</strong>:</p>
 <p>$$
-\mathsf{M}_4(\tilde q_1\tilde q_2)=\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4(\tilde q_2),\qquad
-\mathsf{M}_4(\tilde q_1\bullet\tilde q_2)=\tfrac12\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)+\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)\bigr).
+\boxed{\;\mathsf{M}_4(\tilde q_1\tilde q_2)=\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4(\tilde q_2),\qquad
+\mathsf{M}_4(\tilde q_1\bullet\tilde q_2)=\tfrac12\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)+\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> Multiplicativity is the associativity of the plain product, $\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\tilde q_3=\tilde q_1(\tilde q_2\tilde q_3)=\tilde q_1\tilde q_2\,\tilde q_3$; the second identity is linearity applied to $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$.</p>
 <p><strong>Remark (the half-sum is not the product of the regular matrices).</strong> The regular matrices are associative, so $\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)=\mathsf{M}_4(\tilde q_1\tilde q_2)$; the block's product is the <strong>symmetrised</strong> one, and the failure of $\mathsf{M}_4(\tilde q_1\bullet\tilde q_2)$ to be $\mathsf{M}_4(\tilde q_1\tilde q_2)$ is exactly the failure of commutativity of the plain product, measured by the antisymmetric part at the matrix level.</p>
 <h3 id="the-invariants">The Invariants</h3>
 <p><strong>Proposition.</strong> The trace and the determinant of the regular matrix are</p>
 <p>$$
-\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t=2\,T(\tilde q),\qquad
-\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2 .
+\boxed{\;\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t=2\,T(\tilde q),\qquad
+\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2\;}.
 $$</p>
 <p><em>Proof.</em> The left multiplication by $\tilde q$ has the eigenvalues $q_t\pm|\vec q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_t$ and the determinant is $(q_t^2+|\vec q|^2)^2=\langle\tilde q\rangle_{\natural}^2$; both are quoted from <em>The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>.</p>
 <p><strong>Corollary.</strong> The <strong>Jordan inverse</strong> is $\mathsf{M}_4(\tilde q^{-1})=(2q_t\mathrm I-\mathsf{M}_4(\tilde q))/\langle\tilde q\rangle_{\natural}$ for $\tilde q\neq0$; the invertibility criterion is $\det\neq0$, and the determinant being a square of the norm, it vanishes only at the origin.</p>
 <h2 id="the-trace-form">The Trace Form</h2>
 <p><strong>Theorem.</strong> On the model the trace form is a <strong>quarter of the matrix trace pairing</strong>:</p>
 <p>$$
-\operatorname{tr}\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\bigr)=4\,\tau(\tilde q_1,\tilde q_2)=4\bigl(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\bigr).
+\boxed{\;\operatorname{tr}\bigl(\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)\bigr)=4\,\tau(\tilde q_1,\tilde q_2)=4\bigl(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> $\operatorname{tr}\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)=\operatorname{tr}\mathsf{M}_4(\tilde q_1\tilde q_2)=4\,\mathrm{Sc}(\tilde q_1\tilde q_2)=4\,\tau(\tilde q_1,\tilde q_2)$, using the multiplicativity, the trace of the regular matrix and $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\tilde q_2)$ of <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>.</p>
 <p><strong>Corollary.</strong> The Gram matrix of the trace form has the same diagonal $\operatorname{diag}(1,-1,-1,-1)$ and the same signature $(1,3)$ as on the $2\times2$ model; the trace pairing of the regular matrices is the corresponding Lorentzian pairing, and the positive definite form of the model is the determinant, whose square root is the norm.</p>
 <h2 id="the-commuting-copies">The Commuting Copies</h2>
 <p><strong>Theorem.</strong> The left and the right regular representations commute:</p>
 <p>$$
-\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4'(\tilde q_2)=\mathsf{M}_4'(\tilde q_2)\,\mathsf{M}_4(\tilde q_1)\qquad\text{for all }\tilde q_1,\tilde q_2,
+\boxed{\;\mathsf{M}_4(\tilde q_1)\,\mathsf{M}_4'(\tilde q_2)=\mathsf{M}_4'(\tilde q_2)\,\mathsf{M}_4(\tilde q_1)\qquad\text{for all }\tilde q_1,\tilde q_2\;},
 $$</p>
 <p>and the two together generate the <strong>full</strong> matrix algebra, $\mathrm{alg}\{\mathsf{M}_4,\mathsf{M}_4'\}=M_4(\mathbb{R})$.</p>
 <p><em>Proof.</em> Both sides applied to $\tilde q_3$ give $\tilde q_1\tilde q_3\tilde q_2$ by the associativity of the plain product, which is the commutativity; the fullness is the double centraliser statement of <em>The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>.</p>

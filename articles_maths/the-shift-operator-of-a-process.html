@@ -98,7 +98,7 @@ $$</p>
 <h3 id="the-adjoint-of-the-one-sided-shift">The adjoint of the one-sided shift</h3>
 <p><strong>Theorem (the adjoint).</strong> Let $S$ be the one-sided shift, and let $\mathcal F_n=\sigma(X_0,\dots,X_n)$ for $n\ge0$. Then the adjoint of $S$ is the conditional expectation
 $$
-S^*=\mathbb E[\cdot\mid\mathcal F_0]\circ \text{(the $\sigma^{-1}$ on the image)},
+\boxed{\;S^*=\mathbb E[\cdot\mid\mathcal F_0]\circ \text{(the $\sigma^{-1}$ on the image)}\;},
 $$
 more precisely $S^*$ maps $f$ to the function $\omega\mapsto\mathbb E[f\mid X_0](\omega)$ after the identification, and $\ker S^*$ is the orthogonal complement of the image of $S$.</p>
 <p><em>Proof.</em> The image of $S$ is the subspace of the functions of $(X_1,X_2,\dots)$, and the orthogonal projection onto that subspace is the conditional expectation onto $\sigma(X_1,X_2,\dots)$; transporting it back by the inverse of $S$ on its range gives $S^*f=\mathbb E[f\mid\sigma(X_1,X_2,\dots)]\circ\sigma$ in the two-sided notation. The kernel statement is the general fact for a non-unitary isometry.</p>
@@ -117,7 +117,7 @@ more precisely $S^*$ maps $f$ to the function $\omega\mapsto\mathbb E[f\mid X_0]
 <h3 id="mixing-and-the-correlations">Mixing and the correlations</h3>
 <p><strong>Theorem (mixing).</strong> The process is mixing if and only if
 $$
-\langle S^nf,g\rangle\longrightarrow\langle f,\mathbf 1\rangle\langle\mathbf 1,g\rangle\qquad (n\to\infty)
+\boxed{\;\langle S^nf,g\rangle\longrightarrow\langle f,\mathbf 1\rangle\langle\mathbf 1,g\rangle\qquad (n\to\infty)\;}
 $$
 for all $f,g\in L^2(\mu)$, that is, the correlations decay to the product of the means.</p>
 <p><em>Proof.</em> The identity is the definition of mixing written for the indicators of cylinder sets and extended by density; this is the spectral classification of <em>Ergodic Theory</em>, and it is stated here as the operator property of the shift.</p>
@@ -132,7 +132,7 @@ for all $f,g\in L^2(\mu)$, that is, the correlations decay to the product of the
 <h2 id="the-shift-of-a-markov-chain">The Shift of a Markov Chain</h2>
 <p><strong>Theorem (the Markov shift).</strong> Let $\{X_n\}$ be a Markov chain with transition kernel $p$ and invariant measure $\pi$, and let $\mu=\mathbb P_\pi$ be its law as a stationary process. Then the shift $\sigma$ preserves $\mu$, the Koopman operator of the shift is the shift operator of the process, and the Markov operator is the conditional expectation of the next coordinate,
 $$
-P f(x)=\mathbb E[f(X_1)\mid X_0=x]=\mathbb E_\mu[f\circ\sigma\mid X_0=x].
+\boxed{\;P f(x)=\mathbb E[f(X_1)\mid X_0=x]=\mathbb E_\mu[f\circ\sigma\mid X_0=x]\;}.
 $$</p>
 <p><em>Proof.</em> The stationarity of $\mathbb P_\pi$ is the invariance of $\pi$; the identity is the definition of the transition kernel and the Markov property. The Markov operator is <em>The Markov Operator</em>, earlier in this category.</p>
 <p><strong>Corollary (ergodicity of the chain).</strong> The chain is ergodic with respect to $\pi$ exactly when its shift is ergodic, and the mean ergodic theorem for the Markov operator is the mean ergodic theorem for the shift; this is the operator content of the equality of the two ergodic statements.</p>

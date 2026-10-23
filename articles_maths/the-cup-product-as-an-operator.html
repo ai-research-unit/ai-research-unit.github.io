@@ -93,8 +93,8 @@ $$</p>
 <h3 id="the-composition-and-the-koszul-sign">The Composition and the Koszul Sign</h3>
 <p><strong>Theorem.</strong> For cohomology classes $\varphi$ and $\psi$,</p>
 <p>$$
-L_\varphi L_\psi = L_{\varphi \smile \psi}, \qquad\qquad
-L_\varphi L_\psi = (-1)^{|\varphi||\psi|}\, L_\psi L_\varphi ,
+\boxed{\;L_\varphi L_\psi = L_{\varphi \smile \psi}, \qquad\qquad
+L_\varphi L_\psi = (-1)^{|\varphi||\psi|}\, L_\psi L_\varphi\;} ,
 $$</p>
 <p>and the assignment $\varphi \mapsto L_\varphi$ is an injective homomorphism of graded rings from the graded-commutative ring $H^*(X;R)$ to the graded-commutative ring of endomorphisms of the graded module $H^*(X;R)$.</p>
 <p><em>Proof.</em> The first identity is associativity of the cup product, $(\varphi\smile\psi)\smile\theta = \varphi\smile(\psi\smile\theta)$. The second is graded commutativity: $L_\varphi L_\psi(\theta) = \varphi\smile\psi\smile\theta$ and $L_\psi L_\varphi(\theta)=\psi\smile\varphi\smile\theta$, and moving $\varphi$ past $\psi$ contributes the sign $(-1)^{|\varphi||\psi|}$ while $\theta$ is unaffected because $L_\varphi$ moves with its own sign only against the classes it passes. The two identities are consistent: applying graded commutativity to $\varphi\smile\psi$ gives $L_\varphi L_\psi = L_{\varphi\smile\psi} = (-1)^{|\varphi||\psi|}L_{\psi\smile\varphi} = (-1)^{|\varphi||\psi|}L_\psi L_\varphi$. Injectivity is $L_\varphi(1)=\varphi$.</p>
@@ -140,7 +140,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>diagonal</strong> of a space $X$ is $\Delta : X \to X \times X$, $\Delta(x) = (x,x)$; the <strong>cross product</strong> of classes is $\varphi \times \psi = \mathrm{pr}_1^*\varphi \smile \mathrm{pr}_2^*\psi \in H^{|\varphi|+|\psi|}(X \times X;R)$ of <em>Cup and Cap Products</em>.</p>
 <p><strong>Theorem.</strong> The cup product is the pullback of the cross product along the diagonal,</p>
 <p>$$
-\varphi \smile \psi = \Delta^*(\varphi \times \psi),
+\boxed{\;\varphi \smile \psi = \Delta^*(\varphi \times \psi)\;},
 $$</p>
 <p>and more generally for a map $f : X \to Y$ the multiplication operators intertwine the pullbacks:</p>
 <p>$$
@@ -157,7 +157,7 @@ $$</p>
 <p>the cap product of <em>Cup and Cap Products</em>. The operators pair with the evaluation pairing $\langle-,-\rangle$ of <em>Cohomology and the Universal Coefficient Theorem</em>.</p>
 <p><strong>Theorem.</strong> The cap product operator is the adjoint of the left multiplication operator under the evaluation pairing: for cohomology classes $\varphi,\psi$ and a homology class $c$,</p>
 <p>$$
-\langle L_\varphi \psi,\, c\rangle = \langle \psi,\, C_\varphi c\rangle .
+\boxed{\;\langle L_\varphi \psi,\, c\rangle = \langle \psi,\, C_\varphi c\rangle\;} .
 $$</p>
 <p>The operators compose contravariantly, $C_\psi C_\varphi = C_{\varphi\smile\psi}$, so that the assignment $\varphi \mapsto C_\varphi$ is a representation of the ring $H^*(X;R)$ on the graded module $H_*(X;R)$ up to the Koszul sign, and it is the same module structure as the cap product $H_*(X;R) \times H^*(X;R)\to H_*(X;R)$ of <em>Cup and Cap Products</em> read with the cohomology acting on the left.</p>
 <p><em>Proof.</em> At the cochain level, for $\varphi\in C^p$, $\psi\in C^q$ and a simplex $\sigma$ of degree $p+q$, the definition of the cup product gives $(\varphi\smile\psi)(\sigma)=\varphi(\sigma_{[0..p]})\psi(\sigma_{[p..p+q]})$, while the cap product is $C_\varphi(\sigma) = \varphi(\sigma_{[0..p]})\,\sigma_{[p..p+q]}$ and hence $\psi(C_\varphi\sigma) = \varphi(\sigma_{[0..p]})\psi(\sigma_{[p..p+q]})$, the same value. The contravariant composition is the associativity $c\frown(\varphi\smile\psi)=(c\frown\varphi)\frown\psi$.</p>

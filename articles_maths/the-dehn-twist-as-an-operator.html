@@ -94,13 +94,13 @@ $$
 normalised by $i(e_1,e_2) = 1$ on the two curves of a standard torus summand.</p>
 <p><strong>Theorem (the Picard–Lefschetz transvection).</strong> Let $A = [a]\in H_1(S;\mathbb{Z})$ be the class of the curve $a$. Then the operator induced by the Dehn twist on the homology is
 $$
-(T_a)_* : H_1(S;\mathbb{Z})\to H_1(S;\mathbb{Z}), \qquad (T_a)_*(x) = x + i(A,x)\,A ,
+\boxed{\;(T_a)_* : H_1(S;\mathbb{Z})\to H_1(S;\mathbb{Z}), \qquad (T_a)_*(x) = x + i(A,x)\,A\;} ,
 $$
 the <strong>transvection</strong> with direction $A$. Equivalently $(T_a)_*(x) = x - i(x,A)A$; the two forms differ by the choice of sign convention for the intersection number, and either is a transvection.</p>
 <p><strong>Proof.</strong> Compute on a basis. The twist fixes every class disjoint from $a$, so it fixes the classes in the kernel of $i(A,-)$; on a curve $b$ crossing $a$ once at a point, the twist drags $b$ through the full turn and replaces it by a curve homologous to $b\cup a$ or $b\cup(-a)$ according to the sign of the crossing, so $(T_a)_*[b] = [b] + i(A,[b])A$. Both sides are bilinear in $x$ and agree on a set of classes generating $H_1$, hence agree everywhere.</p>
 <p><strong>Corollary (the matrix and the order).</strong> In a symplectic basis $e_1,f_1,\dots,e_g,f_g$ of $H_1(S;\mathbb{Z})$ with $i(e_j,f_j) = 1$ and all other pairings zero, the matrix of $(T_a)_*$ is the symplectic transvection
 $$
-(T_a)_* = I + A\,A^{\dagger}\,J,
+\boxed{\;(T_a)_* = I + A\,A^{\dagger}\,J\;},
 $$
 where $J$ is the matrix of the intersection form; the matrix is unipotent, with all eigenvalues equal to $1$, and $(T_a)_*^k - I$ has rank one for $k\neq0$, so the transvection has infinite order.</p>
 <p><strong>Proposition (the separating and the non-separating cases).</strong> If $a$ is <strong>non-separating</strong>, then $A\neq0$ and the transvection is a nontrivial unipotent operator; if $a$ is <strong>separating</strong>, then $A = 0$ in $H_1(S;\mathbb{Z})$ and $(T_a)_* = \mathrm{id}$. Consequently every Dehn twist about a separating curve acts trivially on the homology and lies in the Torelli group.</p>
@@ -118,7 +118,7 @@ so its matrix is $\begin{pmatrix}1&1\\0&1\end{pmatrix}$. The mapping class group
 <p><strong>Theorem (Humphries).</strong> The curves of a chain of $3g-1$ twists may be reduced: $2g+1$ Dehn twists about suitable curves generate $\mathrm{Mod}(S_g)$, and no set of $2g$ or fewer Dehn twists generates it, for $g\geq2$.</p>
 <p><strong>Theorem (the symplectic representation is surjective).</strong> The action on the homology gives a surjective homomorphism
 $$
-\mathrm{Mod}(S_g)\longrightarrow \operatorname{Sp}\bigl(2g,\mathbb{Z}\bigr), \qquad \bigl[\phi\bigr]\longmapsto \phi_* ,
+\boxed{\;\mathrm{Mod}(S_g)\longrightarrow \operatorname{Sp}\bigl(2g,\mathbb{Z}\bigr), \qquad \bigl[\phi\bigr]\longmapsto \phi_*\;} ,
 $$
 whose kernel is the <strong>Torelli group</strong> $\mathcal{I}(S_g)$; the images of the Dehn twists are the transvections, and the transvections generate $\operatorname{Sp}(2g,\mathbb{Z})$. For $g = 1$ the map is an isomorphism $\mathrm{Mod}(T^2)\cong SL_2(\mathbb{Z})$.</p>
 <p><strong>Proof sketch.</strong> The image of a homeomorphism preserves the intersection form, so the map is well defined; it is surjective because the transvections generate the symplectic group (this is the elementary generation of $\operatorname{Sp}$ by transvections, a theorem of linear algebra over a principal ideal domain), and the transvections are the images of the twists by the Picard–Lefschetz formula, so the surjectivity follows from the generation of $\mathrm{Mod}$ by twists. The kernel is the Torelli group by definition. The full discussion with the Nielsen–Thurston classification and the geometry of the group is <em>Mapping Class Groups</em>.</p>

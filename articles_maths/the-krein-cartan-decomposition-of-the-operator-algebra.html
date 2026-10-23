@@ -89,9 +89,9 @@ $$</p>
 <p><strong>Proof.</strong> The three adjoints exist because the three forms are non-degenerate with invertible Gram matrices $\mathrm{I}_4,\mathrm{I}_4,E$, and the formulas in the basis are the standard ones for a bilinear, a sesquilinear and an $E$-sesquilinear form. The maps are $\mathbb{R}$-linear involutions of $\mathfrak{g}$.</p>
 <p><strong>Theorem (the three fixed algebras).</strong> The fixed algebras of the three involutions are the classical Lie algebras</p>
 <p>$$
-\mathfrak{g}^{\theta_{\mathsf T}}=\{M:M^{\mathsf T}=-M\}=\mathfrak{so}_4(\mathbb{C}),
+\boxed{\;\mathfrak{g}^{\theta_{\mathsf T}}=\{M:M^{\mathsf T}=-M\}=\mathfrak{so}_4(\mathbb{C}),
 \qquad
-\mathfrak{g}^{\theta_{*}}=\{M:M^{*}=-M\}=\mathfrak{u}(4),
+\mathfrak{g}^{\theta_{*}}=\{M:M^{*}=-M\}=\mathfrak{u}(4)\;},
 $$
 $$
 \mathfrak{g}^{\theta_{J}}=\{M:M^{\dagger}=-M\}=\mathfrak{u}(1,3),
@@ -108,15 +108,13 @@ $$</p>
 \mathfrak{p}=\{M:M^{\dagger}=M\}=J\cdot\mathrm{Herm}_4 .
 $$</p>
 <p><strong>Theorem (the decomposition and the bracket pattern).</strong> The decomposition is direct, $\dim_{\mathbb{R}}\mathfrak{k}=\dim_{\mathbb{R}}\mathfrak{p}=16$, the relations</p>
-<p>$$
-\langle\mathfrak{k},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{k},
+<p>$$ \boxed{\;\langle\mathfrak{k},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{k},
 \qquad
 \langle\mathfrak{p},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{p},
 \qquad
 \langle\mathfrak{p},\mathfrak{p}\rangle_{\natural*}\subseteq\mathfrak{k},
 \qquad
-\{\mathfrak{p},\mathfrak{p}\}\subseteq\mathfrak{p}
-$$</p>
+\{\mathfrak{p},\mathfrak{p}\}\subseteq\mathfrak{p}\;} $$</p>
 <p>hold, with $\{\cdot,\cdot\}$ the anticommutator, so $\mathfrak{k}$ is a Lie subalgebra, $\mathfrak{p}$ is a Jordan subalgebra, and the pair $(\mathfrak{k},\mathfrak{p})$ is a Lie–Jordan pair attached to the general quaternionic sesquilinear form.</p>
 <p><strong>Proof.</strong> $\mathfrak{k}$ and $\mathfrak{p}$ are the $\mp1$-eigenspaces of an involution, so they are direct and of equal dimension $32/2=16$. Write $M^{\epsilon}$ for an element with $M^{\dagger}=\epsilon M$, $\epsilon=\pm1$, and use $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$. For $M,N\in\mathfrak{k}$ one has $(MN)^{\dagger}=(-N)(-M)=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. For $M\in\mathfrak{k}$ and $N\in\mathfrak{p}$ one has $(MN)^{\dagger}=\langle-M,-M\rangle_{\natural}=-NM$ and $(NM)^{\dagger}=(-M)N=-MN$, so $[M,N]^{\dagger}=(MN)^{\dagger}-(NM)^{\dagger}=MN-NM=[M,N]$ and $[M,N]\in\mathfrak{p}$. For $M,N\in\mathfrak{p}$ one has $(MN)^{\dagger}=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. Finally $\{M,N\}^{\dagger}=NM+MN=\{M,N\}$ for $M,N\in\mathfrak{p}$.</p>
 <p><strong>Remark (the $J$-skew algebra is $J$ times the unitary algebra).</strong> As vector spaces</p>
@@ -139,13 +137,11 @@ $$</p>
 \theta_{0}(T)=(T^{*})^{-1}
 $$</p>
 <p>to the Krein isometry group is a Cartan involution of $\mathrm{U}(1,3)$; its fixed group is the maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$, and its differential $\theta_{0}(M)=-M^{*}$ splits</p>
-<p>$$
-\mathfrak{u}(1,3)=\mathfrak{k}_{0}\oplus\mathfrak{p}_{0},
+<p>$$ \boxed{\;\mathfrak{u}(1,3)=\mathfrak{k}_{0}\oplus\mathfrak{p}_{0},
 \qquad
 \mathfrak{k}_{0}=\mathfrak{u}(1)\oplus\mathfrak{u}(3),
 \qquad
-\dim_{\mathbb{R}}\mathfrak{k}_{0}=10,\quad \dim_{\mathbb{R}}\mathfrak{p}_{0}=6 .
-$$</p>
+\dim_{\mathbb{R}}\mathfrak{k}_{0}=10,\quad \dim_{\mathbb{R}}\mathfrak{p}_{0}=6\;}. $$</p>
 <p><strong>Proof.</strong> For $T\in \mathrm{U}(1,3)$, that is $T^{*}ET=E$, the operator $T^{*}$ is again in $\mathrm{U}(1,3)$ and $\theta_{0}$ preserves the group; its fixed elements are the isometries that are unitary for $\langle\cdot,\cdot\rangle$, i.e. $\mathrm{U}(4)\cap \mathrm{U}(1,3)=\mathrm{U}(1)\times \mathrm{U}(3)$. The differential is $-M^{*}$, whose fixed algebra on $\mathfrak{u}(1,3)$ is $\mathfrak{u}(1)\oplus\mathfrak{u}(3)$ of real dimension $1+9=10$, leaving $\mathfrak{p}_{0}$ of dimension $16-10=6$; the fixed group is compact, which is the definition of a Cartan involution.</p>
 <p><strong>Corollary (the symmetric space).</strong> The quotient</p>
 <p>$$
@@ -153,9 +149,7 @@ $$</p>
 $$</p>
 <p>is a Riemannian symmetric space of real dimension $6$, and it is the complex hyperbolic space $\mathbb{CH}^{3}$ of <em>The Krein Level Sets and the Hyperbolic Structure</em>, realised as the space of maximal positive definite subspaces, that is the open unit ball of $\mathbb{C}^{3}$.</p>
 <p><strong>Proof.</strong> The quotient of a Lie group by a maximal compact subgroup is a symmetric space of non-compact type, of dimension $\dim\mathfrak{p}_{0}=6$; the identification with the space of positive lines and with the ball is the parametrisation of the maximal positive definite subspaces. The Cartan decomposition of the group is</p>
-<p>$$
-\mathrm{U}(1,3)=\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)\cdot\exp(\mathfrak{p}_{0}),
-$$</p>
+<p>$$ \mathrm{U}(1,3)=\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)\cdot\exp(\mathfrak{p}_{0}), $$</p>
 <p>the compact part followed by the hyperbolic part, whose exponentials are the boosts and their conjugates.</p>
 <h2 id="the-trace-form-and-the-killing-form">The Trace Form and the Killing Form</h2>
 <p><strong>Theorem (the trace form).</strong> The pairing $(M,N)\mapsto\operatorname{Tr}(MN)$ is a non-degenerate general plain bilinear form on $\mathfrak{g}$, invariant under the three adjoints up to conjugation; restricted to $\mathfrak{u}(1,3)$ the definite form $(M,N)\mapsto\operatorname{Re}\operatorname{Tr}(MN)$ has signature $(6,10)$ on the real vector space of dimension $16$, positive on $\mathfrak{p}_{0}$ and negative on $\mathfrak{k}_{0}$.</p>

@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-mean-ergodic-theorem">The Mean Ergodic Theorem</h3>
 <p><strong>Theorem (von Neumann).</strong> Let $T$ be measure-preserving and let $P$ be the orthogonal projection of $L^2(X,\mu)$ onto the fixed space $\ker(U_T - I)$. Then for every $f \in L^2$,</p>
 <p>$$
-\frac{1}{n}\sum_{k=0}^{n-1}U_T^kf \longrightarrow Pf \qquad \text{in } L^2.
+\boxed{\;\frac{1}{n}\sum_{k=0}^{n-1}U_T^kf \longrightarrow Pf \qquad \text{in } L^2\;}.
 $$</p>
 <p><em>Proof.</em> Decompose $f = Pf + (f - Pf)$ according to $L^2 = \ker(U-I)\oplus\overline{\operatorname{Im}(U-I)}$. The first summand is fixed and its averages are $Pf$. For the second, it suffices to treat $f = g\circ T - g$: the averages telescope,</p>
 <p>$$
@@ -148,7 +148,7 @@ $$</p>
 $\int_{\{M_Nf>0\}}f\,d\mu = \sum_{k=0}^{N}\int_{\{\text{first positive at }k\}}f\,d\mu \geq 0$.</p>
 <p><strong>Theorem (Birkhoff pointwise ergodic theorem).</strong> Let $T$ be measure-preserving and let $f \in L^1(X,\mu)$. Then the averages converge a.e. and in $L^1$:</p>
 <p>$$
-\frac{1}{n}\sum_{k=0}^{n-1}f(T^kx) \longrightarrow f^*(x) \qquad \text{a.e., with } f^* \in L^1, \quad f^*\circ T = f^* \text{ a.e.,} \quad \int f^*\,d\mu = \int f\,d\mu.
+\boxed{\;\frac{1}{n}\sum_{k=0}^{n-1}f(T^kx) \longrightarrow f^*(x) \qquad \text{a.e., with } f^* \in L^1, \quad f^*\circ T = f^* \text{ a.e.,} \quad \int f^*\,d\mu = \int f\,d\mu\;}.
 $$</p>
 <p>If $T$ is ergodic then $f^* = \int f\,d\mu$ a.e.</p>
 <p><em>Proof (sketch).</em> The Hopf maximal inequality applied to $\pm(f - g)$ for a bounded invariant $g$ controls the set where the averages differ from a constant by more than $\varepsilon$; the maximal inequality of Hopf and the density of the bounded functions in $L^1$ show that the set of points where $\limsup$ and $\liminf$ of the averages differ has measure zero. The limit $f^*$ is invariant because the averages are and the limit is measurable with respect to the invariant $\sigma$-algebra; the identity $\int f^* = \int f$ follows from the mean ergodic theorem, which identifies the $L^1$ limit of the averages with the conditional expectation $\mathbb{E}[f\mid\mathcal{I}]$.</p>
@@ -183,7 +183,7 @@ h_\mu(T) \leq \int \sum_{\lambda_i(x) > 0}\lambda_i(x)\,d\mu(x),
 $$</p>
 <p>where the $\lambda_i(x)$ are the Lyapunov exponents of $T$ at $x$ and the sum is over the positive ones; and if in addition $\mu$ has no zero Lyapunov exponents, then the <strong>Pesin entropy formula</strong></p>
 <p>$$
-h_\mu(T) = \int \sum_{\lambda_i(x) > 0}\lambda_i(x)\,d\mu(x)
+\boxed{\;h_\mu(T) = \int \sum_{\lambda_i(x) > 0}\lambda_i(x)\,d\mu(x)\;}
 $$</p>
 <p>holds.</p>
 <p>Pesin's formula is the smooth ergodic theorem: the entropy, which is a measure-theoretic invariant, equals the total exponential expansion of the tangent map. It is the reason the entropy of a toral automorphism is $\log|\lambda|$ — the single Lyapunov exponent of the hyperbolic matrix — and it is the point of contact of ergodic theory with the hyperbolic dynamics of <em>Homogeneous Dynamics</em> and the geodesic flows of <em>Ergodic Theory of Group Actions</em>. The theorem is stated here as standard mathematics for the use of the entropy theory, with the citation to Pesin in the Further Reading; the general theory of Lyapunov exponents, the Oseledets theorem and the smooth ergodic theory built on it are the subject of the dynamical-systems block of the menu written in parallel, and are not developed here.</p>

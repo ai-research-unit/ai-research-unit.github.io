@@ -91,7 +91,7 @@ $$</p>
 <h3 id="the-reflection-is-an-involutive-automorphism">The Reflection Is an Involutive Automorphism</h3>
 <p><strong>Theorem.</strong> For every reflector $u$ the signed conjugation $\rho_u$ is an automorphism of the $k$-algebra $A$ with</p>
 <p>$$
-\rho_u^2 = \mathrm{id},
+\boxed{\;\rho_u^2 = \mathrm{id}\;},
 $$</p>
 <p>so that $\rho_u$ is an involutive automorphism of $A$. Conversely, if a signed conjugation $\rho_u$ is an involutive automorphism, then $u$ is a reflector.</p>
 <p><em>Proof.</em> The signed conjugation is the composite of the automorphisms $\alpha$ and $\iota_u$, hence an automorphism. Its square was computed in <em>The Signed Sandwich on an Algebra</em> as $\rho_u^2 = \iota_{u\alpha(u)}$, the inner automorphism by $u\alpha(u)$; the inner automorphism by an element is the identity exactly when the element is central, so $\rho_u^2 = \mathrm{id}$ exactly when $u\alpha(u)$ is central, which is the definition of a reflector. The converse is the same computation read backwards.</p>
@@ -104,7 +104,7 @@ A = A^+_\rho \oplus A^-_\rho, \qquad A^+_\rho = \{x : \rho(x) = x\}, \qquad A^-_
 $$</p>
 <p>the summands are the fixed subalgebra and the negated part, and</p>
 <p>$$
-A^+_\rho A^+_\rho \subseteq A^+_\rho, \qquad A^+_\rho A^-_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^+_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^-_\rho \subseteq A^+_\rho .
+\boxed{\;A^+_\rho A^+_\rho \subseteq A^+_\rho, \qquad A^+_\rho A^-_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^+_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^-_\rho \subseteq A^+_\rho\;} .
 $$</p>
 <p><em>Proof.</em> The map $\rho$ is an involutive automorphism, so its eigenvalues are $\pm 1$ and the decomposition and the multiplication table are those of the eigenspaces of an involutive automorphism, as in <em>The Signed Sandwich on an Algebra</em>. When $2 = 0$ the negated part is zero and the decomposition collapses, since an order-two automorphism is the identity.</p>
 <p><strong>Corollary.</strong> A reflection is determined by its fixed subalgebra, equivalently by its negated part: if $\rho$ and $\rho'$ are involutive automorphisms with the same fixed subalgebra, then $\rho = \rho'$.</p>
@@ -134,7 +134,7 @@ $$</p>
 <h3 id="the-correspondence-in-the-automorphism-group">The Correspondence in the Automorphism Group</h3>
 <p><strong>Proposition.</strong> The reflections of $A$ relative to $\alpha$ are the involutive automorphisms lying in the coset $\iota_{A^\times} \alpha$ of the inner automorphism group, and the map</p>
 <p>$$
-A^\times / Z(A)^\times \longrightarrow \mathrm{Out}(A) = \operatorname{Aut}_k(A)/\operatorname{Inn}_k(A), \qquad [u] \mapsto [\iota_u]
+\boxed{\;A^\times / Z(A)^\times \longrightarrow \mathrm{Out}(A) = \operatorname{Aut}_k(A)/\operatorname{Inn}_k(A), \qquad [u] \mapsto [\iota_u]\;}
 $$</p>
 <p>sends the reflectors to the classes of the reflections. In particular, if every automorphism of $A$ is inner — for example if $A$ is a central simple algebra, by <em>Central Simple Algebras and the Brauer Group</em> — then every involutive automorphism is a reflection up to a choice of $\alpha$.</p>
 <p><em>Proof.</em> The first statement is the corollary above. The map $[u] \mapsto [\iota_u]$ is the standard identification of the inner automorphism group with $A^\times/Z(A)^\times$. For a central simple algebra the outer automorphism group is trivial, so every automorphism lies in the inner coset, and an involutive automorphism lies in the inner coset of the appropriate $\alpha$.</p>

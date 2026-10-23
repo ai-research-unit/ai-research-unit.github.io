@@ -77,13 +77,13 @@
 <p><strong>Definition.</strong> The <strong>left multiplication operator</strong> of the block is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$; the <strong>right</strong> one is $R^{\bullet}_{\tilde p}\tilde q=\tilde q\bullet\tilde p$.</p>
 <p><strong>Proposition (the half-sum).</strong> The left multiplication of the block is the half-sum of the plain left and right multiplications,</p>
 <p>$$
-L^{\bullet}_{\tilde p}=\tfrac12\bigl(L_{\tilde p}+R_{\tilde p}\bigr),\qquad
-L_{\tilde p}+R_{\tilde p}=2\,L^{\bullet}_{\tilde p}.
+\boxed{\;L^{\bullet}_{\tilde p}=\tfrac12\bigl(L_{\tilde p}+R_{\tilde p}\bigr),\qquad
+L_{\tilde p}+R_{\tilde p}=2\,L^{\bullet}_{\tilde p}\;}.
 $$</p>
 <p><em>Proof.</em> $\tfrac12(L_{\tilde p}+R_{\tilde p})\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)=\tilde p\bullet\tilde q$. The stated sum is the operator of the <strong>doubled</strong> product and is not $L^{\bullet}_{\tilde p}$; the factor $\tfrac12$ is essential.</p>
 <p><strong>Proposition (the two-sided coincidence).</strong> The product is commutative, so the left and the right operators coincide:</p>
 <p>$$
-L^{\bullet}_{\tilde p}=R^{\bullet}_{\tilde p}.
+\boxed{\;L^{\bullet}_{\tilde p}=R^{\bullet}_{\tilde p}\;}.
 $$</p>
 <p><em>Proof.</em> $R^{\bullet}_{\tilde p}\tilde q=\tilde q\bullet\tilde p=\tilde p\bullet\tilde q=L^{\bullet}_{\tilde p}\tilde q$ by commutativity. The block therefore carries <strong>one</strong> operator per element, not two, and there is no asymmetry of the two sides.</p>
 <h3 id="composition">Composition</h3>
@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-enveloping-algebra-is-full">The Enveloping Algebra Is Full</h3>
 <p><strong>Theorem.</strong> The multiplication operators generate the <strong>full</strong> endomorphism algebra:</p>
 <p>$$
-\mathrm{alg}\bigl\{\,L^{\bullet}_{\tilde p}\,\bigr\}=\mathrm{End}_{\mathbb{R}}(\mathbb{H})\cong M_4(\mathbb{R}),
+\boxed{\;\mathrm{alg}\bigl\{\,L^{\bullet}_{\tilde p}\,\bigr\}=\mathrm{End}_{\mathbb{R}}(\mathbb{H})\cong M_4(\mathbb{R})\;},
 $$</p>
 <p>of real dimension $16$; the span of the products of length at most two is already all of it.</p>
 <p><em>Proof.</em> The identity is $L^{\bullet}_{e_t}$; the four generators together with their products of length one span a $13$-dimensional space, and adjoining the products of length two completes it to $16$, by the computation of the block's operator span. Since $\mathrm{alg}$ contains the identity and is the whole of $M_4(\mathbb{R})$, it is irreducible.</p>
@@ -129,8 +129,8 @@ $$</p>
 <h3 id="the-inner-derivations-and-their-dimension">The Inner Derivations and Their Dimension</h3>
 <p><strong>Theorem.</strong> Every derivation of the block is inner:</p>
 <p>$$
-\operatorname{Der}(\mathbb{H}^{\bullet})=\mathrm{span}\bigl\{[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]\bigr\}\cong\mathfrak{so}(3),
-\qquad \dim\operatorname{Der}=3,
+\boxed{\;\operatorname{Der}(\mathbb{H}^{\bullet})=\mathrm{span}\bigl\{[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]\bigr\}\cong\mathfrak{so}(3),
+\qquad \dim\operatorname{Der}=3\;},
 $$</p>
 <p>and no derivation is a multiplication by an element.</p>
 <p><em>Proof.</em> The derivation algebra is three-dimensional and coincides with the inner derivations by the general theory of degree-two Jordan algebras; an element-multiplication $L^{\bullet}_{\tilde q_5}$ is a derivation only if $\tilde q_5\bullet(\tilde q_1\bullet\tilde q_2)=( \tilde q_5\bullet\tilde q_1)\bullet\tilde q_2+\tilde q_1\bullet(\tilde q_5\bullet\tilde q_2)$ for all $\tilde q_1,\tilde q_2$, which forces $\tilde q_5=0$ by the non-associativity at $\vec e_x,\vec e_y$.</p>

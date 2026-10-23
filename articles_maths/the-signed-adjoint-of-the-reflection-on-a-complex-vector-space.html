@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>A reflection of a Hermitian space $V$ is the unitary self-adjoint involution
 $$
-\rho_u(v) = v - 2\,\frac{h(v,u)}{h(u,u)}\,u ,
+\boxed{\;\rho_u(v) = v - 2\,\frac{h(v,u)}{h(u,u)}\,u\;} ,
 $$
 the reflection in the hyperplane orthogonal to the non-isotropic vector $u$; it satisfies $\rho_u^2 = \mathrm{id}$ and $\rho_u^{\dagger} = \rho_u$, so it is a <strong>self-adjoint involution</strong>, and it defines the grade involution $\alpha_r(X) = rXr$ of the endomorphism algebra. The reflection is the simplest signed operator: read as an operator on $E = \operatorname{End}_{\mathbb C}(V)$, its left and right multiplications and its inner signed sandwich are all self-adjoint for the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^{\dagger}Y)$,
 $$
@@ -84,7 +84,7 @@ because $r^{\dagger} = r$; the signed inner sandwich of the reflection is the id
 <h2 id="the-reflection-and-its-adjoint-on-math28">The Reflection and Its Adjoint on $V$</h2>
 <p><strong>Proposition (the reflection is self-adjoint and unitary).</strong> For $h(u,u) \neq 0$ the formula $\rho_u(v) = v - 2h(v,u)h(u,u)^{-1}u$ defines a complex-linear map with
 $$
-\rho_u^{2} = \mathrm{id}, \qquad \rho_u^{\dagger} = \rho_u, \qquad h(\rho_uv, \rho_uw) = h(v,w),
+\boxed{\;\rho_u^{2} = \mathrm{id}, \qquad \rho_u^{\dagger} = \rho_u, \qquad h(\rho_uv, \rho_uw) = h(v,w)\;},
 $$
 so the reflection is a unitary self-adjoint involution; it fixes the hyperplane $u^{\perp}$ and acts as $-\mathrm{id}$ on the line $\mathbb{C}u$.</p>
 <p><strong>Proof.</strong> The map is complex-linear because $h(\cdot,u)$ is conjugate-linear and $u$ is a complex multiple of a conjugate-linear functional; $\rho_u(u) = -u$ and $\rho_u(v) = v$ for $h(v,u) = 0$; the involutivity, the self-adjointness and the unitarity are the computations $\rho_u^2 = \mathrm{id}$, $h(\rho_uv,w) = h(v,\rho_uw)$ and $h(\rho_uv,\rho_uw) = h(v,w)$, all by the definition and the sesquilinearity. The reflections and their classification are <em>Isometries and Orthogonal Transformations</em>.</p>
@@ -95,7 +95,7 @@ so the reflection is a unitary self-adjoint involution; it fixes the hyperplane 
 <p><strong>Proof.</strong> $L_r^{*} = L_{r^{\dagger}} = L_r$ and $R_r^{*} = R_{r^{\dagger}} = R_r$ by the unsigned adjoint law and $r^{\dagger}=r$; $\mathrm{Ad}_r^{*} = \mathrm{Ad}_{r^{\dagger}} = \mathrm{Ad}_r$, and $\mathrm{Ad}_r^{2} = \mathrm{Ad}_{r^2} = \mathrm{id}$. This is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>.</p>
 <p><strong>Proposition (the signed inner sandwich of the reflection).</strong> With $\alpha_r(X) = rXr$ one has
 $$
-\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}, \qquad \bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{*} = \mathrm{id}, \qquad \Theta^{\alpha_r}_{r,r} = \mathrm{Ad}_r, \qquad \bigl(\Theta^{\alpha_r}_{r,r}\bigr)^{*} = \mathrm{Ad}_r ,
+\boxed{\;\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}, \qquad \bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{*} = \mathrm{id}, \qquad \Theta^{\alpha_r}_{r,r} = \mathrm{Ad}_r, \qquad \bigl(\Theta^{\alpha_r}_{r,r}\bigr)^{*} = \mathrm{Ad}_r\;} ,
 $$
 so every signed operator of the reflection is self-adjoint, and the reflection is the fixed case of the signed adjoint criterion $a = \alpha_r(a^{\dagger})$.</p>
 <p><strong>Proof.</strong> $\Theta^{\alpha_r}_{r,r^{-1}}(X) = r\alpha_r(X)r^{-1} = r(rXr)r = r^{2}Xr^{2} = X$, using $r^{-1}=r$ and $r^{2}=\mathrm{id}$; the same computation gives $\Theta^{\alpha_r}_{r,r}(X) = X$, so the two coincide for an involution, and the adjoint of the identity is the identity. The conjugation is $\mathrm{Ad}_r(X) = rXr$, which is $\Theta^{\alpha_r}_{r,r^{-1}}\circ\alpha_r(X) = r\alpha_r(\alpha_r(X))r = rXr$; its adjoint is itself because $r^{\dagger}=r$. The criterion $a = \alpha_r(a^{\dagger})$ with $a=r$ is $r = r r^{\dagger} r = r^{3} = r$, which holds. This is <em>The Signed Adjoint Sandwich on a Complex Vector Space</em> and <em>Reflections as Signed Two-Sided Operators on a Complex Vector Space</em>.</p>

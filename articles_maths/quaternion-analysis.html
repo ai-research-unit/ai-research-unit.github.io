@@ -178,9 +178,7 @@ $$</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
 <p>Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) \vec e_x + v_2(\tilde q) \vec e_y + v_3(\tilde q) \vec e_z$, where $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ and $u, v_k : \Omega \to \mathbb{R}$.</p>
 <p><strong>Theorem.</strong> $f$ is quaternion differentiable at $\tilde q_1$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $\tilde q_1$ and satisfy the <strong>quaternion Cauchy–Riemann equations</strong></p>
-<p>$$
-\frac{\partial u}{\partial q_t} = \frac{\partial v_1}{\partial q_x} = \frac{\partial v_2}{\partial q_y} = \frac{\partial v_3}{\partial q_z},
-$$</p>
+<p>$$ \boxed{\; \frac{\partial u}{\partial q_t} = \frac{\partial v_1}{\partial q_x} = \frac{\partial v_2}{\partial q_y} = \frac{\partial v_3}{\partial q_z} \;} ,$$</p>
 <p>$$
 \frac{\partial u}{\partial q_k} = -\frac{\partial v_k}{\partial q_t}, \qquad k = 1, 2, 3,
 $$</p>
@@ -210,9 +208,7 @@ $$</p>
 $$</p>
 <p>Equivalently, if $D = \partial/\partial q_t + \vec e_x \partial/\partial q_x + \vec e_y \partial/\partial q_y + \vec e_z \partial/\partial q_z$ is the <strong>Cauchy–Riemann operator</strong>, then $f$ is monogenic iff $D f = 0$.</p>
 <p>The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial/\partial q_t - \vec e_x \partial/\partial q_x - \vec e_y \partial/\partial q_y - \vec e_z \partial/\partial q_z$ satisfy</p>
-<p>$$
-D \bar{D} = \bar{D} D = \partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 + \partial^2/\partial q_y^2 + \partial^2/\partial q_z^2 = \Delta,
-$$</p>
+<p>$$ \boxed{\; D \bar{D} = \bar{D} D = \partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 + \partial^2/\partial q_y^2 + \partial^2/\partial q_z^2 = \Delta \;} ,$$</p>
 <p>where $\Delta$ is the Laplacian on $\mathbb{R}^4$. So monogenic functions are harmonic:</p>
 <p>$$
 \Delta f = 0.
@@ -252,9 +248,7 @@ $$</p>
 $$</p>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
 <p><strong>Theorem (Cauchy–Goursat, quaternion version).</strong> If $f$ is monogenic on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then</p>
-<p>$$
-\oint_\gamma f(\tilde q) \, dq = 0.
-$$</p>
+<p>$$ \boxed{\; \oint_\gamma f(\tilde q) \, dq = 0 \;} .$$</p>
 <p><strong>Proof.</strong> The integral of a monogenic function over a closed surface in $\mathbb{R}^4$ vanishes by the divergence theorem, because the Cauchy–Riemann operator annihilates $f$. The contour case follows by approximation.</p>
 <p><strong>Corollary.</strong> On a simply connected domain, the integral of a monogenic function is path-independent. The function</p>
 <p>$$
@@ -293,9 +287,7 @@ $$</p>
 <p>The differentiated series has the same radius of convergence.</p>
 <h3 id="taylor-series">Taylor Series</h3>
 <p><strong>Theorem (Taylor, quaternion version).</strong> If $f$ is monogenic on a domain containing the closed ball $\overline{B}(\tilde q_1, r)$, then $f$ has a power series expansion</p>
-<p>$$
-f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(\tilde q_1)}{n!} (\tilde q - \tilde q_1)^n
-$$</p>
+<p>$$ \boxed{\; f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(\tilde q_1)}{n!} (\tilde q - \tilde q_1)^n \;} $$</p>
 <p>valid for $|\tilde q - \tilde q_1| < r$.</p>
 <p><strong>Corollary.</strong> A monogenic function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Corollary (identity theorem).</strong> If two monogenic functions on a domain $\Omega$ agree on a set with an accumulation point in $\Omega$, they agree on all of $\Omega$.</p>
@@ -322,9 +314,7 @@ $$</p>
 \operatorname{Res}(f, \tilde q_1) = c_{-1}.
 $$</p>
 <p><strong>Theorem (Residue Theorem).</strong> Let $f$ be monogenic on a simply connected domain except for isolated singularities $\tilde q_1, \dots, \tilde q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $\tilde q_k$ and winds once around each. Then</p>
-<p>$$
-\oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, \tilde q_k).
-$$</p>
+<p>$$ \boxed{\; \oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, \tilde q_k) \;} .$$</p>
 <p>The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, and it is the quaternion analogue of the factor $2\pi i$ in complex analysis.</p>
 <h2 id="the-differential-operators">The Differential Operators</h2>
 <h3 id="definition_2">Definition</h3>

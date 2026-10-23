@@ -76,7 +76,7 @@
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> A <strong>topological group</strong> is a group $G$ with a topology such that both structure maps</p>
 <p>$$
-G \times G \to G, \quad (g, h) \mapsto gh, \qquad G \to G, \quad g \mapsto g^{-1},
+\boxed{\;G \times G \to G, \quad (g, h) \mapsto gh, \qquad G \to G, \quad g \mapsto g^{-1}\;},
 $$</p>
 <p>are continuous, the product carrying the product topology. Equivalently, the single map $G \times G \to G$, $(g, h) \mapsto g h^{-1}$, is continuous.</p>
 <p>The equivalence is immediate: the map $g h^{-1}$ is continuous when multiplication and inversion are, and conversely $g h = g (h^{-1})^{-1}$ and $h^{-1} = e h^{-1}$ recover both maps from it.</p>
@@ -196,7 +196,7 @@ $$</p>
 <h3 id="pontryagin-duality">Pontryagin Duality</h3>
 <p><strong>Theorem (Pontryagin).</strong> For every locally compact abelian group $G$, the evaluation map</p>
 <p>$$
-G \longrightarrow G^{\vee\vee}, \qquad g \longmapsto \left(\chi \mapsto \chi(g)\right),
+\boxed{\;G \longrightarrow G^{\vee\vee}, \qquad g \longmapsto \left(\chi \mapsto \chi(g)\right)\;},
 $$</p>
 <p>is an isomorphism of topological groups. The assignment $G \mapsto G^\vee$ is a contravariant functor that is an equivalence of categories between locally compact abelian groups and their duals, carrying compact groups to discrete groups and conversely, and products to products.</p>
 <p><strong>Proof sketch.</strong> The evaluation map is a well-defined continuous homomorphism. Injectivity: if $\chi(g) = 1$ for all characters $\chi$, then $g$ is trivial, using the separation of points of $G$ by characters, which follows from the existence of enough Haar-integrable functions and the construction of characters from them. Surjectivity and the topological statement are the substance of the theorem and are proved by reducing to the cases $G = \mathbb{R}^n \times T^m \times D$ with $D$ discrete, using structure theory; the general case follows from the structure theorem below. That compactness and discreteness are interchanged is the statement that a compact group has a discrete dual and conversely, the standard compactness argument being that the dual of a discrete group is a closed subgroup of a product of circles.</p>

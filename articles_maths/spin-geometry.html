@@ -131,7 +131,7 @@ the <strong>chiral Cauchy–Riemann operators</strong>. The operator is the curv
 <h3 id="the-lichnerowicz-formula">The Lichnerowicz Formula</h3>
 <p><strong>Theorem (Lichnerowicz).</strong> For a spin manifold $(M,g)$ with the spinor bundle $\mathcal{S}$ and the Levi-Civita spin connection,
 $$
-D^2 = \nabla^{*}\nabla + \tfrac{1}{4}\operatorname{scal},
+\boxed{\;D^2 = \nabla^{*}\nabla + \tfrac{1}{4}\operatorname{scal}\;},
 $$
 where $\nabla^{*}\nabla$ is the connection Laplacian on the spinors and $\operatorname{scal}$ is the scalar curvature of the metric, acting on $\Gamma(\mathcal{S})$ by scalar multiplication by $\tfrac14$ of the scalar curvature.</p>
 <p><strong>Proof sketch.</strong> The Weitzenböck argument computes the difference $D^2 - \nabla^*\nabla$ as a zero-order operator, an endomorphism of the spinor bundle, from the Clifford relations. In an orthonormal frame the composition of two Clifford multiplications is $e_i e_j = -e_j e_i$ for $i \neq j$ and $e_i^2 = -1$, so the second-order terms cancel up to the Laplacian, and the curvature of the Levi-Civita connection enters through the Ricci tensor, $\sum_i e_i e_j R^{\mathcal{S}}(e_i, e_j) = \tfrac14\operatorname{scal}$; the identification of the curvature term with one quarter of the scalar curvature is the algebraic identity of the Clifford algebra in dimension $n$, and the computation is in the references.</p>
@@ -145,7 +145,7 @@ so that on integrating the inner product with $\sigma$ over the closed manifold,
 <h2 id="the-index-of-the-chiral-cauchyriemann-operator">The Index of the Chiral Cauchy–Riemann Operator</h2>
 <p><strong>Theorem (Atiyah–Singer; the spin case).</strong> Let $(M,g)$ be a closed spin manifold of even dimension $n = 2m$ with the grading $\mathcal{S} = \mathcal{S}^+\oplus\mathcal{S}^-$ and the chiral Cauchy–Riemann operator $D^+ : \Gamma(\mathcal{S}^+) \to \Gamma(\mathcal{S}^-)$. Then $D^+$ is Fredholm and its analytic index is the <strong>$\hat{A}$-genus</strong>,
 $$
-\operatorname{ind}(D^+) = \dim\ker D^+ - \dim\ker D^- = \int_M \hat{A}(TM) = \langle \hat{A}(TM), [M]\rangle \in \mathbb{Z},
+\boxed{\;\operatorname{ind}(D^+) = \dim\ker D^+ - \dim\ker D^- = \int_M \hat{A}(TM) = \langle \hat{A}(TM), [M]\rangle \in \mathbb{Z}\;},
 $$
 where $\hat{A}(TM)$ is the $\hat{A}$-class of the tangent bundle, the invariant polynomial of the Pontryagin classes
 $$
@@ -161,7 +161,7 @@ in the Pontryagin roots $x_j$ of the curvature; the integral is a characteristic
 <p><strong>Proof sketch.</strong> The covering $\operatorname{Spin}^c(n) \to SO(n)$ has kernel $\mathrm{U}(1)$, and the obstruction to the lift of the frame bundle is the class in $H^2(M;\mathrm{U}(1)) \cong H^3(M;\mathbb{Z})$ of the extension; the constraint on the image of the connecting map is that its mod-$2$ reduction is $w_2(TM)$, which gives the condition. The canonical structure on an almost complex manifold is the bundle of complex frames with the $\operatorname{Spin}^c$ structure of the complexified tangent bundle, and the determinant line bundle is the anticanonical bundle.</p>
 <p><strong>Theorem (the $\operatorname{Spin}^c$ index theorem).</strong> Let $(M,g)$ be a closed $\operatorname{Spin}^c$ manifold of even dimension with $\operatorname{Spin}^c$ structure whose determinant line bundle is $L$, and let $D^+_L$ be the chiral $\operatorname{Spin}^c$ Cauchy–Riemann operator twisted by $L$. Then
 $$
-\operatorname{ind}(D^+_L) = \int_M \exp(c_1(L)/2)\,\hat{A}(TM) = \langle \exp(c_1(L)/2)\hat{A}(TM), [M]\rangle ,
+\boxed{\;\operatorname{ind}(D^+_L) = \int_M \exp(c_1(L)/2)\,\hat{A}(TM) = \langle \exp(c_1(L)/2)\hat{A}(TM), [M]\rangle\;} ,
 $$
 the exponential being expanded in the cohomology of $M$; in the almost complex case with the canonical structure the operator is the Dolbeault operator $\bar\partial + \bar\partial^*$ up to a factor, and the index is the holomorphic Euler characteristic, $\operatorname{ind}(D^+) = \chi(M, \mathcal{O})$ in the Kähler case, with the generalisation to the twisted bundles by the Riemann–Roch–Hirzebruch theorem.</p>
 <p><strong>Example.</strong> The complex projective spaces are $\operatorname{Spin}^c$ and not spin in even dimension; the $\operatorname{Spin}^c$ Cauchy–Riemann operator on $\mathbb{CP}^n$ with the canonical structure is the Dolbeault operator, and its index is $\chi(\mathbb{CP}^n, \mathcal{O}) = 1$, which is the value of the integral of $\exp(c/2)\hat{A}$ with the appropriate normalisation; the computation is the standard verification of the index formula, and it shows how the $\operatorname{Spin}^c$ theory recovers the holomorphic invariants of the complex manifolds.</p>

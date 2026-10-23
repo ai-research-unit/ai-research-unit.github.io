@@ -120,7 +120,7 @@ $$</p>
 <p><strong>Example (convolution on a non-abelian group).</strong> Let $G = S_3$ with the normalised counting measure and let $f$ and $g$ be the indicator functions of the transposition $(12)$ and the cycle $(123)$ divided by $|G|$. Then $(f*g)(x) = \frac{1}{36}\#\{y : y = (12),\ y^{-1}x = (123)\}$, which is nonzero only at $x = (12)(123)$ while $(g*f)$ is nonzero only at $(123)(12)$, and these two products differ; hence $L^1(S_3)$ is not commutative. Convolution on a finite group is the multiplication of the group algebra under the identification of $L^1(G)$ with $\mathbb{C}[G]$ normalised by the counting measure.</p>
 <p><strong>Theorem (convolution theorem).</strong> For $f, g \in L^1(G)$,</p>
 <p>$$
-\widehat{f * g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \chi \in G^\vee .
+\boxed{\;\widehat{f * g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \chi \in G^\vee\;} .
 $$</p>
 <p><em>Proof.</em> Substituting $x = yz$ in the defining integral and using the left invariance of $dz$ and the multiplicativity $\chi(yz) = \chi(y)\chi(z)$,</p>
 <p>$$
@@ -131,13 +131,13 @@ $$</p>
 <p>The transform of an $L^1$ function need not be integrable, so inversion requires a hypothesis on $\mathcal F f$. The dual group carries a Haar measure chosen to make the pair of formulas below hold; its normalisation is fixed in the next subsection.</p>
 <p><strong>Theorem (inversion).</strong> There is a Haar measure $d\chi$ on $G^\vee$ such that for every $f \in L^1(G)$ with $\mathcal F f \in L^1(G^\vee)$ the function $f$ agrees almost everywhere with the continuous function</p>
 <p>$$
-f(x) = \int_{G^\vee} (\mathcal F f)(\chi)\,\chi(x)\,d\chi .
+\boxed{\;f(x) = \int_{G^\vee} (\mathcal F f)(\chi)\,\chi(x)\,d\chi\;} .
 $$</p>
 <p>In particular $f$ is equal a.e. to a function vanishing at infinity.</p>
 <p><strong>Proof sketch.</strong> The proof is the standard approximate-identity argument. Choose a net $(u_\alpha)$ of nonnegative continuous functions of integral $1$ supported in shrinking neighbourhoods of $e$; then $f * u_\alpha \to f$ in $L^1(G)$ and, for continuous $f$, uniformly on compacta. On the Fourier side $\widehat{f * u_\alpha} = \mathcal F f\mathcal F u_\alpha$, and the integral $\int_{G^\vee}(\mathcal F f)(\chi)\mathcal F u_\alpha(\chi)\chi(x)\,d\chi$ is computed by Fubini as $(f * u_\alpha)(x)$ for a suitable choice of $d\chi$; letting the neighbourhoods shrink gives the result. The argument is the one given in <em>Fourier Analysis on Euclidean Spaces</em> for $G = \mathbb{R}^n$ and in the references below in general.</p>
 <p><strong>Theorem (Plancherel).</strong> Let $d\chi$ be the dual Haar measure of the inversion theorem. The Fourier transform is an isometry of the dense subspace $L^1(G) \cap L^2(G)$ of $L^2(G)$ into $L^2(G^\vee)$,</p>
 <p>$$
-\int_G |f(x)|^2\,dx = \int_{G^\vee} |(\mathcal F f)(\chi)|^2\,d\chi ,
+\boxed{\;\int_G |f(x)|^2\,dx = \int_{G^\vee} |(\mathcal F f)(\chi)|^2\,d\chi\;} ,
 $$</p>
 <p>and it extends uniquely to a unitary equivalence of Hilbert spaces $\mathcal{F} : L^2(G) \to L^2(G^\vee)$.</p>
 <p><strong>Proof sketch.</strong> For $f \in L^1 \cap L^2$ put $h = f * f^*$, where $f^*(x) = \overline{f(-x)}$ on an abelian group, so that $h \in L^1(G)$ and, by the convolution theorem, $\mathcal F h = |\mathcal F f|^2 \geq 0$ and $\mathcal F h \in L^1(G^\vee)$ because $\mathcal F f \in L^2 \cap L^\infty$ forces $|\mathcal F f|^2 \in L^1$. The inversion theorem applies to $h$ and gives $h(0) = \int_{G^\vee}|\mathcal F f|^2\,d\chi$; but $h(0) = \int_G f(x)\overline{f(x)}\,dx = \|f\|_2^2$. This is the identity. The extension to all of $L^2(G)$ follows because $L^1 \cap L^2$ is dense, and the extension is onto because its image is closed and contains the transform of an approximate identity, which converges weakly to $1$; surjectivity is also a consequence of the inversion formula applied to a dense set.</p>

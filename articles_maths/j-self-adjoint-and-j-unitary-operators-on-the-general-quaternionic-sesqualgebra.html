@@ -79,7 +79,7 @@ $$</p>
 <h2 id="the-math7-adjoint">The $J$-Adjoint</h2>
 <p><strong>Proposition (characterisation and calculus).</strong> $T^{\dagger}=JT^{*}J$ is the unique operator with</p>
 <p>$$
-\langle\tilde{Q}_1,T\tilde{Q}_2\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}\qquad\text{for all }\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B},
+\boxed{\; \langle\tilde{Q}_1,T\tilde{Q}_2\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}\qquad\text{for all }\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B} \;},
 $$</p>
 <p>it is involutive, $(T^{\dagger})^{\dagger}=T$, and antimultiplicative,</p>
 <p>$$
@@ -102,10 +102,10 @@ $$</p>
 <p>The natural conjugation exchanges the sides, and this propagates to the adjoints.</p>
 <p><strong>Theorem (the adjoints).</strong> For all $\tilde{Q},\tilde Q_3\in\mathbb{B}$,</p>
 <p>$$
-\bigl(L_{\tilde{Q}}\bigr)^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
+\boxed{\; \bigl(L_{\tilde{Q}}\bigr)^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
 \bigl(R_{\tilde Q_3}\bigr)^{\dagger}=L_{\bar{\tilde Q_3}},\qquad
 \bigl(L_{\tilde{Q}}R_{\tilde Q_3}\bigr)^{\dagger}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde{Q}}},\qquad
-\bigl(\Theta_{\tilde{Q}}\bigr)^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}},
+\bigl(\Theta_{\tilde{Q}}\bigr)^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}} \;},
 $$</p>
 <p>where $\bar{\tilde{Q}}$ is the coefficient conjugate and ${}^{\natural}\tilde{Q}$ the natural conjugate of the parameter.</p>
 <p><strong>Proof.</strong> By the anti-automorphism property of ${}^{\natural}$, ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ and ${}^{\natural}R_{\tilde Q_3}{}^{\natural}=L_{\tilde Q_3^{\natural}}$ (<em>The Fundamental Symmetry of the Biquaternion Algebra</em>). Hence $L_{\tilde{Q}}^{\dagger}={}^{\natural}L_{\tilde{Q}}^{*}{}^{\natural}={}^{\natural}L_{\tilde{Q}^{*}}{}^{\natural}=R_{\tilde{Q}^{*\natural}}$, and $\tilde{Q}^{*\natural}=(\tilde{Q}^{*})^{\natural}=\overline{\tilde{Q}}$ because ${}^{*}$ and ${}^{\natural}$ commute; the second is the same with left and right interchanged. The third follows by antimultiplicativity, $(L_{\tilde{Q}}R_{\tilde Q_3})^{\dagger}=R_{\tilde Q_3}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde{Q}}}$. For the sandwich, $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$, so $\Theta_{\tilde{Q}}^{\dagger}=R_{\tilde{Q}^{*}}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\overline{\tilde{Q}^{*}}}R_{\bar{\tilde{Q}}}=L_{{}^{\natural}\tilde{Q}}R_{\bar{\tilde{Q}}}=\Theta_{{}^{\natural}\tilde{Q}}$, using $\overline{\tilde{Q}^{*}}={}^{\natural}\tilde{Q}$ and $\Theta_{\tilde{S}}=L_{\tilde{S}}R_{\tilde{S}^{*}}$.</p>
@@ -126,9 +126,9 @@ $$</p>
 <h2 id="the-math113-unitary-operators">The $J$-Unitary Operators</h2>
 <p><strong>Theorem (unitarity criteria).</strong></p>
 <p>$$
-L_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff\tilde{Q}\in S^{1}e_t,
+\boxed{\; L_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff\tilde{Q}\in S^{1}e_t,
 \qquad
-\Theta_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1.
+\Theta_{\tilde{Q}}\ \text{is }J\text{-unitary}\iff |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1 \;}.
 $$</p>
 <p><strong>Proof.</strong> $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$, and $R_{\bar{\tilde{Q}}}L_{\tilde{Q}}(\tilde Q_2)=\bar{\tilde{Q}}\tilde Q_2\tilde{Q}$; this is the identity exactly when $\tilde{Q}$ is central and $\bar{\tilde{Q}}\tilde{Q}=e_t$, that is $\tilde{Q}\in S^{1}e_t$. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\cdot\tilde{Q}}=\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t}$, since ${}^{\natural}\tilde{Q}\cdot\tilde{Q}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t$ — the identity $\mathrm{adj}(M)M=\det(M)I$ in the matrix model; and $\Theta_{\tilde{Q}}=\mathrm{id}$ exactly when $\tilde{Q}\in \mathrm{U}(1)e_t$, so the condition is $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1$.</p>
 <p><strong>Corollary (the $J$-unitary operators of the three families).</strong> Among the left multiplications the $J$-unitary ones are exactly the central phases, $\tilde{Q}\in S^{1}e_t$; among the sandwiches they are exactly those with $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1$, and those act as the inner automorphisms by the unitaries of $\mathrm{U}(\mathbb{B})$. Together they form the subgroup</p>

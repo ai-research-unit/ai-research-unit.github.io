@@ -84,7 +84,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition (the three conjugations).</strong> Let $x$ be homogeneous of degree $k$ with $\varepsilon_x = (-1)^{k}$. Then</p>
 <p>$$
-\Sigma_x = \mathrm{Ad}_x\circ\alpha = \alpha\circ\mathrm{Ad}_x, \qquad \Sigma_x(v) = -\varepsilon_x\,\chi_x(v) \quad (v \in V),
+\boxed{\;\Sigma_x = \mathrm{Ad}_x\circ\alpha = \alpha\circ\mathrm{Ad}_x, \qquad \Sigma_x(v) = -\varepsilon_x\,\chi_x(v) \quad (v \in V)\;},
 $$</p>
 <p>where $\mathrm{Ad}_x(y) = xyx^{-1}$ is the inner conjugation and $\chi_x(y) = xy\alpha(x)^{-1}$ is the twisted conjugation. So the signed sandwich is the inner conjugation with the argument twisted, it is also the inner conjugation conjugated by $\alpha$, and on the vectors it differs from the twisted conjugation by the sign $-\varepsilon_x$.</p>
 <p><strong>Proof.</strong> $\Sigma_x(y) = x\alpha(y)x^{-1} = \alpha\bigl(\alpha(x)y\alpha(x)^{-1}\bigr) = \alpha\,\mathrm{Ad}_{\alpha(x)}(y) = \alpha\,\mathrm{Ad}_x\,\alpha(y)$ because $\mathrm{Ad}_{\alpha(x)} = \alpha\mathrm{Ad}_x\alpha$; hence $\Sigma_x = \mathrm{Ad}_x\alpha = \alpha\mathrm{Ad}_x$. The vector statement is $\chi_x = \varepsilon_x\mathrm{Ad}_x$, so $x\alpha(v)x^{-1} = -xvx^{-1} = -\varepsilon_x\chi_x(v)$.</p>
@@ -106,12 +106,12 @@ $$</p>
 <h2 id="the-reflections-and-the-versor-action">The Reflections and the Versor Action</h2>
 <p><strong>Theorem (the reflections).</strong> Let $a \in V$ with $\mathfrak{Q}(a) \neq 0$. Then $\Sigma_a$ restricted to $V$ is the reflection in $a^{\perp}$:</p>
 <p>$$
-\Sigma_a(v) = a\,\alpha(v)\,a^{-1} = -a\,v\,a^{-1} = \rho_a(v), \qquad v \in V .
+\boxed{\;\Sigma_a(v) = a\,\alpha(v)\,a^{-1} = -a\,v\,a^{-1} = \rho_a(v), \qquad v \in V\;} .
 $$</p>
 <p><strong>Proof.</strong> This is the reflection theorem of <em>Two-Sided Operators with the Signed Product</em>, in the sandwich form $b = a^{-1}$.</p>
 <p><strong>Theorem (the versor action).</strong> Let $x$ be a versor, so that $\chi_x(V) \subseteq V$. Then $\Sigma_x$ preserves $V$ and its restriction is an isometry,</p>
 <p>$$
-q\bigl(\Sigma_x(v)\bigr) = \mathfrak{Q}(v), \qquad B\bigl(\Sigma_x(v),\Sigma_x(w)\bigr) = B(v,w), \qquad v, w \in V,
+\boxed{\;q\bigl(\Sigma_x(v)\bigr) = \mathfrak{Q}(v), \qquad B\bigl(\Sigma_x(v),\Sigma_x(w)\bigr) = B(v,w), \qquad v, w \in V\;},
 $$</p>
 <p>and the map $x \mapsto \Sigma_x\big|_V$ is a homomorphism from the Clifford group into $O(V,\mathfrak{Q})$ whose restriction to the even versors carries a rotation $R$ to $-\mathrm{Ad}_R = -\chi_R$, the rotation composed with the central element $-1$, and whose value on an odd versor $a$ is the reflection $\rho_a$.</p>
 <p><strong>Proof.</strong> $\Sigma_x$ is a bijection preserving $V$ because $\chi_x$ is and the two differ on $V$ by the nonzero scalar $-\varepsilon_x$; an isometry scaled by a nonzero scalar is an isometry. The value on the even and the odd part is the sign computation of the first proposition, together with $\chi_a = \rho_a$ and $\chi_R = \mathrm{Ad}_R$ for the twisted conjugation.</p>

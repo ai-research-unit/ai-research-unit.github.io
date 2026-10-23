@@ -96,7 +96,7 @@ $$</p>
 <h3 id="existence-and-uniqueness">Existence and uniqueness</h3>
 <p><strong>Theorem.</strong> Let $\langle\cdot,\cdot\rangle$ be a non-degenerate pairing on the pairs $(M,M)$ and $(N,N)$, and let $f : M \to N$ be $A$-linear. Suppose that for every $n \in N$ the functional $m \mapsto \langle f(m),n\rangle$ is represented by an element of $M$; that is, there is $f^{*}(n) \in M$ with</p>
 <p>$$
-\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle \qquad (m \in M).
+\boxed{\;\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle \qquad (m \in M)\;}.
 $$</p>
 <p>Then $f^{*}(n)$ is unique, the assignment $n \mapsto f^{*}(n)$ is $A$-linear, and</p>
 <p>$$
@@ -107,7 +107,7 @@ $$</p>
 <h3 id="the-elementary-laws">The elementary laws</h3>
 <p><strong>Theorem.</strong> For a perfect non-degenerate reflexive pairing, the adjoint is additive, anti-multiplicative, involutive and $R$-linear:</p>
 <p>$$
-(f+g)^{*}=f^{*}+g^{*}, \qquad (fg)^{*}=g^{*}f^{*}, \qquad (f^{*})^{*}=f, \qquad (rf)^{*}=r f^{*}.
+\boxed{\;(f+g)^{*}=f^{*}+g^{*}, \qquad (fg)^{*}=g^{*}f^{*}, \qquad (f^{*})^{*}=f, \qquad (rf)^{*}=r f^{*}\;}.
 $$</p>
 <p><em>Proof.</em> Additivity and $R$-linearity follow from the defining identity and uniqueness. For the product, $\langle fg(m),n\rangle=\langle g(m),f^{*}(n)\rangle=\langle m,g^{*}(f^{*}(n))\rangle$, so $(fg)^{*}=g^{*}f^{*}$ by uniqueness. For order two, reflexivity gives $\langle f^{*}(n),m\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\varepsilon\langle f(m),n\rangle=\langle n,f(m)\rangle$, so $f$ represents the functional defining $(f^{*})^{*}$; uniqueness gives $(f^{*})^{*}=f$.</p>
 <p>The assignment $f \mapsto f^{*}$ is therefore an involution of the endomorphism ring when $M=N$, which is the subject of <em>The Involution on the Endomorphism Ring of a Module</em>; the article here treats the adjoint as an operator.</p>
@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-kernel-and-the-image">The kernel and the image</h3>
 <p><strong>Theorem.</strong> For a homomorphism $f : M \to N$ with adjoint $f^{*} : N \to M$,</p>
 <p>$$
-\ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}, \qquad \operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f).
+\boxed{\;\ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}, \qquad \operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f)\;}.
 $$</p>
 <p><em>Proof.</em> $f^{*}(n)=0$ means $\langle m,f^{*}(n)\rangle=0$ for all $m$, that is $\langle f(m),n\rangle=0$ for all $m$, which says $n \in (\operatorname{im}f)^{\mathrm{c}}$; this is the first identity. For the second, $\langle m,f^{*}(n)\rangle=\langle f(m),n\rangle$ vanishes for all $n$ exactly when $f(m) \in {}^{\mathrm{c}}N$, that is $m \in \ker f$, so ${}^{\mathrm{c}}(\operatorname{im}f^{*})=\ker f$; taking complements gives the identity.</p>
 <p><strong>Corollary.</strong> If $M$ and $N$ have equal finite length and the pairing is non-degenerate and perfect, then $\ell(\ker f^{*})=\ell(\ker f)$ and $\ell(\operatorname{im}f^{*})=\ell(\operatorname{im}f)$: the adjoint preserves the length of the kernel, the image and the cokernel.</p>

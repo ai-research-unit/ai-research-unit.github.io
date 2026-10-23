@@ -198,7 +198,7 @@ $$</p>
 <p>terminates and is an algebra automorphism, by the binomial identity $\delta^m(xy) = \sum_j \binom{m}{j} \delta^j(x)\delta^{m-j}(y)$. This is the mechanism that makes the derivations the infinitesimal automorphisms, and it is the reason the two rows of the table are studied together.</p>
 <p><strong>The dimension check.</strong> The derivations are moreover the tangent space to the automorphism group at the identity, one curve of automorphisms for each $\delta$ and each direction in $\operatorname{Der}_k(A)$, so for a finite-dimensional algebra over $\mathbb{R}$ or $\mathbb{C}$</p>
 <p>$$
-\dim \operatorname{Aut}_k(A) = \dim_k \operatorname{Der}_k(A) .
+\boxed{\;\dim \operatorname{Aut}_k(A) = \dim_k \operatorname{Der}_k(A)\;} .
 $$</p>
 <p>This gives a numerical check that is applied to every algebra below: the derivation subspace and the automorphism group must have the same dimension, and a computation that reports otherwise has lost something. The check is genuinely informative, because it relates two quantities computed in completely different ways — a nullspace of a linear system on the one hand, and an enumeration of maps preserving the product on the other.</p>
 <h2 id="the-subspaces">The Subspaces</h2>
@@ -253,7 +253,7 @@ $$</p>
 <p>The condition is linear in $\delta$, and the derivations form a Lie algebra under the commutator, with $[\delta,\varepsilon] = \delta\varepsilon - \varepsilon\delta$. The <strong>inner derivations</strong> are those of the form $\mathrm{ad}_a(x) = [a,x]$ for $a \in A$, and the assignment $a \mapsto \mathrm{ad}_a$ has kernel $Z(A)$, so the inner derivations form a subspace of dimension $n - \dim_k Z(A)$, in fact the quotient $A/Z(A)$.</p>
 <p>For a separable algebra over a field every derivation is inner, so that</p>
 <p>$$
-\dim_k \operatorname{Der}_k(A) = n - \dim_k Z(A) .
+\boxed{\;\dim_k \operatorname{Der}_k(A) = n - \dim_k Z(A)\;} .
 $$</p>
 <p>This is the case for the matrix algebras, the quaternion algebra and the biquaternion algebra, and it is recorded in <em>Automorphisms and Derivations of Algebras</em>. It is a conditional statement, not a general one, and the dual numbers of the next sections are the counterexample. The obstruction is specific: over a perfect field a <strong>commutative</strong> finite-dimensional algebra is separable exactly when it is reduced, that is, when it has no nonzero nilpotent, and $\mathbb{R}[\varepsilon]/\varepsilon^2$ is not reduced. The hypothesis cannot be weakened to the absence of nilpotents, since a matrix algebra has plenty of them and is separable all the same. When the hypothesis fails a derivation may be outer, and then the formula is false because it computes only the inner derivations, so the true derivation space is <em>larger</em> than the formula predicts. The formula is therefore used below as a check where its hypothesis holds and as a diagnostic where it does not.</p>
 <h2 id="the-groups">The Groups</h2>
@@ -455,7 +455,7 @@ $$</p>
 <p>The quaternions and the biquaternions show the ladder at $n = 4$ over two different ground fields.</p>
 <p><strong>The quaternions over $\mathbb{R}$.</strong> Here $n = 4$ and the ambient space is $M_4(\mathbb{R})$, of dimension $16$. The centre is $\mathbb{R}$, so $\dim \operatorname{Der}_{\mathbb{R}}(\mathbb{H}) = 4 - 1 = 3$, and the derivations are the inner ones $\mathrm{ad}_p$ with $p$ pure imaginary. On the three-dimensional space of pure imaginary quaternions the bracket is twice the cross product, so</p>
 <p>$$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3, \qquad \operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times ,
+\boxed{\;\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3, \qquad \operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times\;} ,
 $$</p>
 <p>the automorphism group being realised by the inner automorphisms. The two dimensions agree, 3 and 3. The reading of $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$ as a rotation group of $\mathbb{R}^3$, and of the quaternion units as a double cover of it, needs the form and the distance, belongs to Part IV, and is named only.</p>
 <p><strong>The biquaternions over $\mathbb{C}$.</strong> Here $n = 4$ and the ambient space is $M_4(\mathbb{C})$, again of dimension $16$, but the scalars are $\mathbb{C}$ rather than $\mathbb{R}$. The centre is $\mathbb{C}$, so $\dim_{\mathbb{C}} \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$, and every derivation is inner:</p>

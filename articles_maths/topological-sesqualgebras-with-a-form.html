@@ -114,13 +114,13 @@ $$</p>
 <p>that is, when the left multiplication by $x$ and the left multiplication by $x^{*}$ are paired by $h$.</p>
 <p><strong>Theorem (the equivalent form).</strong> A Hermitian form $h$ is compatible if and only if</p>
 <p>$$
-h(x, yz) = h(y^{*}x, z)
+\boxed{\;h(x, yz) = h(y^{*}x, z)\;}
 $$</p>
 <p>for all $x, y, z \in A$.</p>
 <p><em>Proof.</em> Let $h(xy,z) = h(y,x^{*}z)$. Then $h(x, yz) = \varsigma(h(yz, x)) = \varsigma(h(z, y^{*}x)) = h(y^{*}x, z)$, where the first and last equalities are the Hermitian property and the middle is the compatibility on the pair $(y, z, x)$. The converse is the same chain read backwards.</p>
 <p><strong>Theorem (the ternary identity).</strong> Let $h$ be compatible. Then</p>
 <p>$$
-h(xy^{*}z, w) = h(z, yx^{*}w)
+\boxed{\;h(xy^{*}z, w) = h(z, yx^{*}w)\;}
 $$</p>
 <p>for all $x, y, z, w \in A$.</p>
 <p><em>Proof.</em> The compatibility applied to the element $c = xy^{*}$ in the place of the first variable reads $h(cz, w) = h(z, c^{*}w)$, and $c^{*} = (xy^{*})^{*} = yx^{*}$, because $*$ is an anti-automorphism of order two.</p>
@@ -152,7 +152,7 @@ $$</p>
 <h2 id="the-collapse-at-the-trivial-involution">The Collapse at the Trivial Involution</h2>
 <p><strong>Theorem (the collapse of the layer).</strong> Let $(A,h)$ be a topological sesqualgebra with a form and suppose $\varsigma = \mathrm{id}$. Then $h$ is $R$-bilinear and symmetric, $*$ is $R$-linear, and the derived operation $x \star y = xy^{*}$ is $R$-bilinear. If moreover $* = \mathrm{id}$ the compatibility reads</p>
 <p>$$
-h(xy, z) = h(y, xz),
+\boxed{\;h(xy, z) = h(y, xz)\;},
 $$</p>
 <p>and $(A,h)$ is an object of the bilinear degree-2 form layer: a topological $R$-algebra with a continuous symmetric bilinear form satisfying the pairing condition $h(ax,y) = h(x,ay)$, that is, one for which every left multiplication is self-adjoint. Conversely every such algebra with such a form is a topological sesqualgebra with a form over $(R,\mathrm{id})$.</p>
 <p><em>Proof.</em> With $\varsigma = \mathrm{id}$ the involution of the base is trivial, so the form satisfies $h(\lambda x, y) = \lambda h(x,y) = h(x, \lambda y)$, which is $R$-bilinearity, and the Hermitian condition reads $h(y,x) = h(x,y)$, which is symmetry. The involution $*$ is then $R$-linear by its semilinearity, and the derived operation is bilinear. The compatibility with $* = \mathrm{id}$ is the displayed identity, which says that $h(xy,z) = h(y,xz)$ for all $x, y, z$, that is that the left multiplication by $x$ is self-adjoint for the symmetric form; the converse is the same reading.</p>

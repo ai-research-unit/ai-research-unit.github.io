@@ -79,7 +79,7 @@ $$</p>
 <h2 id="the-left-and-the-right-multiplications">The Left and the Right Multiplications</h2>
 <p><strong>Proposition.</strong> For every $x \in A$,</p>
 <p>$$
-L_{x}^{*} = L_{x^{*}}, \qquad R_{x}^{*} = R_{x^{t}} .
+\boxed{\;L_{x}^{*} = L_{x^{*}}, \qquad R_{x}^{*} = R_{x^{t}}\;} .
 $$</p>
 <p><strong>Proof.</strong> $h(L_{x}y, z) = h(xy, z) = h(y, x^{*}z) = h(y, L_{x^{*}}z)$ by the compatibility, which is the defining relation of the adjoint; the uniqueness of the adjoint for a nonsingular form identifies $L_{x}^{*}$ with $L_{x^{*}}$. For the right multiplication the element $x^{t}$ is defined by $h(yx,z) = h(y,zx^{t})$, which exists and is unique when $h$ is nonsingular, so $R_{x^{t}}$ is the adjoint of $R_{x}$ by construction, and in a basis with Gram matrix $G$ it is $x^{t} = Gx^{*}G^{-1}$. The two identities agree, $x^{t} = x^{*}$, exactly when the form satisfies the third identity $h(xy,z) = h(x,zy^{*})$; the identity is not a consequence of the compatibility, and on the $2\times2$ matrices over $\mathbb{Z}[\mathrm{i}]$ the left identity holds on all $4096$ triples of the tested set while the right identity by $x^{*}$ holds on all of them for the trace form and fails on $1728$ of them for the compatible form $\tau(xGy^{*})$, $G = \operatorname{diag}(1,-1)$.</p>
 <p><strong>Corollary (the regular representations).</strong> The maps $x \mapsto L_{x}$ and $x \mapsto R_{x}$ are injective on a unital $A$; the first is an algebra homomorphism and a $*$-map, and the second is an algebra anti-homomorphism and a $*$-map, in the sense that it reverses the product while preserving the involution.</p>
@@ -88,7 +88,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>sandwich</strong> of $x$ is the operator $\Theta_{x} : A \to A$, $\Theta_{x}(y) = xyx^{*}$; it is the composite $\Theta_{x} = L_{x} \circ R_{x^{*}} = R_{x^{*}} \circ L_{x}$ of the two one-sided multiplications.</p>
 <p><strong>Proposition.</strong> For every $x \in A$,</p>
 <p>$$
-\Theta_{x}^{*} = \Theta_{x^{*}} ,
+\boxed{\;\Theta_{x}^{*} = \Theta_{x^{*}}\;} ,
 $$</p>
 <p>the adjoint of the sandwich by $x$ being the sandwich by $x^{*}$, for a <strong>cyclic</strong> functional $\varphi = h(\cdot,1)$, in particular for the trace form; when $x$ is self-adjoint the sandwich is a self-adjoint operator in the sense of <em>Self-Adjoint and Skew Operators of a Form</em>.</p>
 <p><strong>Proof.</strong></p>

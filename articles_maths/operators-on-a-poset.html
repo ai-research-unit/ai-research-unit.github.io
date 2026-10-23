@@ -200,7 +200,7 @@ the previous subsection is the set of monotone maps of $P$ and of $P^{\mathrm{op
 <h3 id="residuated-pairs">Residuated Pairs</h3>
 <p><strong>Definition.</strong> A monotone map $f : P \to Q$ is <strong>residuated</strong>, with <strong>residual</strong> $g : Q \to P$, if</p>
 <p>$$
-f(p) \leq q \quad\Longleftrightarrow\quad p \leq g(q) \qquad \text{for all } p \in P, q \in Q .
+\boxed{\;f(p) \leq q \quad\Longleftrightarrow\quad p \leq g(q) \qquad \text{for all } p \in P, q \in Q\;} .
 $$</p>
 <p>Equivalently, the pair $f \dashv g$ is a <strong>Galois connection</strong> between $P$ and $Q$ in the sense of
 <em>Order Theory and Lattices</em>, with $f$ the <strong>left adjoint</strong> and $g$ the <strong>right adjoint</strong>. The
@@ -219,7 +219,7 @@ injectivity because $p \leq g(f(p))$ and $f(p) = f(g(f(p)))$ gives $g(f(p)) = p$
 it preserves all joins: $f(\bigvee_i p_i) = \bigvee_i f(p_i)$ for every family in $P$. In that case the
 residual is given by</p>
 <p>$$
-g(q) = \bigvee \{p \in P : f(p) \leq q\}.
+\boxed{\;g(q) = \bigvee \{p \in P : f(p) \leq q\}\;}.
 $$</p>
 <p><strong>Proof.</strong> If $f$ is residuated then it preserves joins, by <em>Order Theory and Lattices</em>. Conversely, if
 $f$ preserves all joins, define $g(q) = \bigvee\{p : f(p) \leq q\}$, which exists because $P$ is
@@ -252,8 +252,8 @@ pairs between $\mathcal{P}(X)^{\mathrm{opp}}$ and $\mathcal{P}(Y)^{\mathrm{opp}}
 and only if it preserves arbitrary unions, and then there is a unique relation $R \subseteq X \times
 Y$ with</p>
 <p>$$
-f(A) = R[A] = \{y \in Y : (x,y) \in R \text{ for some } x \in A\}, \qquad
-g(B) = \{x \in X : (x,y) \in R \Rightarrow y \in B\},
+\boxed{\;f(A) = R[A] = \{y \in Y : (x,y) \in R \text{ for some } x \in A\}, \qquad
+g(B) = \{x \in X : (x,y) \in R \Rightarrow y \in B\}\;},
 $$</p>
 <p>where $g$ is the residual of $f$. Hence the residuated maps $\mathcal{P}(X) \to \mathcal{P}(Y)$ are in
 bijection with the relations $X \to Y$, and the residual is the map that sends $B$ to the set of

@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> A subspace $U \subseteq V$ is <strong>stable</strong> under $T$ when $T(U) \subseteq U$; equivalently, since $T$ is bijective, when $T(U) = U$.</p>
 <p><strong>Proposition (stable subspaces are the pairs).</strong> A subspace $U$ is stable under $T$ if and only if</p>
 <p>$$
-U = (U \cap V_+) \oplus (U \cap V_-) ,
+\boxed{\;U = (U \cap V_+) \oplus (U \cap V_-)\;} ,
 $$</p>
 <p>and the assignment $U \mapsto (U \cap V_+, U \cap V_-)$ is a bijection between the stable subspaces of $V$ and the pairs of subspaces $(U_+,U_-)$ with $U_+ \subseteq V_+$ and $U_- \subseteq V_-$; the inverse is $(U_+,U_-) \mapsto U_+ \oplus U_-$. Under this bijection the lattice of stable subspaces is isomorphic to the product of the lattices of subspaces of $V_+$ and of $V_-$.</p>
 <p><strong>Proof.</strong> If $U$ is stable and $u \in U$, write $u = u_+ + u_-$ with $u_\pm \in V_\pm$; then $Tu = u_+ - u_- \in U$, so $u_+ = \tfrac12(u+Tu)$ and $u_- = \tfrac12(u-Tu)$ lie in $U$, whence $u_\pm \in U \cap V_\pm$ and the sum is direct. Conversely, a sum $U_+ \oplus U_-$ with $U_\pm \subseteq V_\pm$ is stable because $T$ is the identity on $U_+$ and minus the identity on $U_-$. Intersections and sums are computed componentwise, so the lattices are isomorphic to the product of the two subspace lattices.</p>
@@ -87,7 +87,7 @@ $$</p>
 <h2 id="the-projectors">The Projectors</h2>
 <p><strong>Definition.</strong> The <strong>projectors</strong> of the involution are</p>
 <p>$$
-P_+ = \tfrac12(\mathrm{id}_V + T), \qquad P_- = \tfrac12(\mathrm{id}_V - T) .
+\boxed{\;P_+ = \tfrac12(\mathrm{id}_V + T), \qquad P_- = \tfrac12(\mathrm{id}_V - T)\;} .
 $$</p>
 <p><strong>Proposition.</strong> $P_+$ and $P_-$ are idempotent endomorphisms with $P_+ + P_- = \mathrm{id}_V$, $P_+P_- = P_-P_+ = 0$, and $T = P_+ - P_-$; they commute with $T$ and with every endomorphism commuting with $T$; a subspace $U$ is stable under $T$ if and only if it is preserved by both projectors, $P_\pm(U) \subseteq U$.</p>
 <p><strong>Proof.</strong> The idempotence and the relations are $P_\pm^2 = \tfrac14(\mathrm{id} \pm 2T + T^2) = P_\pm$ and $P_+P_- = \tfrac14(\mathrm{id}-T^2) = 0$; the sum is the identity and the difference is $T$. Commutation with $T$ is $TP_\pm = \tfrac12(T \pm \mathrm{id}) = \pm P_\pm$, and a map commuting with $T$ commutes with $\mathrm{id}\pm T$, hence with the projectors. If $P_\pm(U)\subseteq U$ then $T = P_+ - P_-$ preserves $U$; conversely if $T$ preserves $U$ then $U$ decomposes as $U\cap V_+ \oplus U\cap V_-$ and the projectors are the projections onto the two parts, so they preserve $U$.</p>

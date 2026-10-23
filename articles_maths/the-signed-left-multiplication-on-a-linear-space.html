@@ -86,20 +86,20 @@ $$</p>
 <p><strong>Proof.</strong> The first identity is the definition of the sandwich; for the second, $\alpha L_{\alpha(a)}(X) = \alpha(\alpha(a)X) = a\alpha(X) = \Lambda^{\alpha}_{a}(X)$.</p>
 <p><strong>Proposition (composition).</strong> For all $a,b \in E$,</p>
 <p>$$
-\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
+\boxed{\;\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
 L_a\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}, \qquad
-\Lambda^{\alpha}_{a}L_b = R_{\alpha(b)}\Lambda^{\alpha}_{a} .
+\Lambda^{\alpha}_{a}L_b = R_{\alpha(b)}\Lambda^{\alpha}_{a}\;} .
 $$</p>
 <p>In particular the composite of two signed left multiplications is an ordinary left multiplication, and the set $\{L_a : a \in E\} \cup \{\Lambda^{\alpha}_{a} : a \in E\}$ is closed under composition.</p>
 <p><strong>Proof.</strong> $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}(X) = a\alpha(b\alpha(X)) = a\alpha(b)\alpha(\alpha(X)) = a\alpha(b)X = L_{a\alpha(b)}(X)$; $L_a\Lambda^{\alpha}_{b}(X) = ab\alpha(X) = \Lambda^{\alpha}_{ab}(X)$; $\Lambda^{\alpha}_{a}L_b(X) = a\alpha(X)\alpha(b) = R_{\alpha(b)}(\Lambda^{\alpha}_{a}(X))$. The closure is the three identities together.</p>
 <p><strong>Corollary (invertibility and inverse).</strong> $\Lambda^{\alpha}_{a}$ is invertible if and only if $a$ is invertible, and then</p>
 <p>$$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{-1} = \Lambda^{\alpha}_{\alpha(a^{-1})} .
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{-1} = \Lambda^{\alpha}_{\alpha(a^{-1})}\;} .
 $$</p>
 <p><strong>Proof.</strong> Invertibility follows from the factorisation $\Lambda^{\alpha}_{a} = L_a\alpha$ and the invertibility of $\alpha$; the inverse is checked by the composition law: $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{\alpha(a^{-1})} = L_{a\alpha(\alpha(a^{-1}))} = L_{a a^{-1}} = \mathrm{id}$, and likewise on the other side.</p>
 <p><strong>Proposition (fixed elements).</strong> The fixed space of $\Lambda^{\alpha}_{a}$ is</p>
 <p>$$
-\ker(\Lambda^{\alpha}_{a}-\mathrm{id}) = \{X \in E : a\alpha(X) = X\} ;
+\boxed{\;\ker(\Lambda^{\alpha}_{a}-\mathrm{id}) = \{X \in E : a\alpha(X) = X\}\;} ;
 $$</p>
 <p>equivalently, when $a$ is invertible, $X$ is fixed exactly when $\alpha(X) = a^{-1}X$. For $a=1$ the fixed space is the fixed part $E^{+}$ of $\alpha$, of dimension $p^2+q^2$ in the matrix-unit basis.</p>
 <p><strong>Proof.</strong> The first display is the definition of the eigenvalue-one equation. For $a=1$ it is $\alpha(X)=X$, whose space is $E^{+}$; the dimension is the computation of <em>Involutive Linear Spaces</em>.</p>

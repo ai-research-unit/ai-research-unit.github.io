@@ -90,7 +90,7 @@ $$</p>
 <h2 id="the-represented-operator">The Represented Operator</h2>
 <p><strong>Theorem (representation of a bounded form).</strong> For every bounded sesquilinear form $B$ there is a unique $A\in B(H)$ with</p>
 <p>$$
-B(x,y)=\langle Ax,y\rangle\quad(x,y\in H),\qquad \|A\|=\|B\| .
+\boxed{\;B(x,y)=\langle Ax,y\rangle\quad(x,y\in H),\qquad \|A\|=\|B\|\;} .
 $$</p>
 <p>Conversely every $A\in B(H)$ represents the bounded form $B_A(x,y)=\langle Ax,y\rangle$, and the correspondence $B\leftrightarrow A$ is a conjugate-linear isometry that carries the adjoint form to the adjoint operator: $B^*\leftrightarrow A^*$.</p>
 <p><em>Proof.</em> For fixed $x$ the map $y\mapsto\overline{B(x,y)}$ is a bounded linear functional, so by the Riesz representation theorem there is a unique $Ax$ with $B(x,y)=\langle Ax,y\rangle$; the map $x\mapsto Ax$ is linear because $B$ is linear in its first argument, and $\|A\|=\|B\|$ is the equality of the two suprema. The converse and the adjoint statement are immediate from the definitions.</p>
@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>Equivalently, for every $f\in H$ there is a unique $x\in H$ with</p>
 <p>$$
-B(x,y)=\langle f,y\rangle\qquad(y\in H),
+\boxed{\;B(x,y)=\langle f,y\rangle\qquad(y\in H)\;},
 $$</p>
 <p>and it satisfies $\|x\|\le\frac1c\|f\|$.</p>
 <p><em>Proof.</em> Coercivity gives $c\|x\|^2\le\operatorname{Re}\langle Ax,x\rangle\le\|Ax\|\|x\|$, hence $\|Ax\|\ge c\|x\|$; so $A$ is injective with closed range. The adjoint form $\bar B$ is also coercive with the same constant, so $A^*$ has closed range, and the range of $A$ is the orthogonal complement of the kernel of $A^*$, which is zero; hence $A$ is surjective. The estimate for $A^{-1}$ is the same inequality read backwards, and the solvability statement is the representation $f=A^{-1}f$ of the equation.</p>
@@ -117,7 +117,7 @@ $$</p>
 $$</p>
 <p>is an inner product on $H$ whose norm is equivalent to the original norm,</p>
 <p>$$
-\sqrt{c}\,\|x\|\le\|x\|_B\le\sqrt{\|B\|}\,\|x\| ,
+\boxed{\;\sqrt{c}\,\|x\|\le\|x\|_B\le\sqrt{\|B\|}\,\|x\|\;} ,
 $$</p>
 <p>and $H$ is complete for $\|\cdot\|_B$; the two norms induce the same topology.</p>
 <p><em>Proof.</em> The form is sesquilinear, Hermitian and positive definite, hence an inner product; the two inequalities are the coercivity and the boundedness, and completeness follows from the equivalence of the norms.</p>

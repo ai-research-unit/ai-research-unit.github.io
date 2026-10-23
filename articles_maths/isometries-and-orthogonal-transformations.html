@@ -113,7 +113,7 @@ $$</p>
 <p>The determinant identity of the previous paragraph is the first of two constraints on the multiplier, the second coming from the discriminant; together they show that similarities are rare over an odd-dimensional space.</p>
 <p><strong>Proposition.</strong> Let $q$ be non-degenerate on $V$ of dimension $n$ and let $T$ be a similarity with multiplier $c$. Then</p>
 <p>$$
-(\det T)^2 = c^{\,n}, \qquad c^{\,n} \in (F^\times)^2 .
+\boxed{\;(\det T)^2 = c^{\,n}, \qquad c^{\,n} \in (F^\times)^2\;} .
 $$</p>
 <p>If $n$ is odd, $c$ is a square in $F$. If $n$ is even the second condition is automatic.</p>
 <p><strong>Proof.</strong> The determinant identity was computed above. For the divisibility of the discriminant, $T$ is an isometry from $(V, \mathfrak{Q})$ to $(V, cq)$, so $cq \cong q$; the discriminant is multiplicative in the scaling, $\Delta(cq) = c^{\,n}\Delta(q)$, and is an isometry invariant, so $c^{\,n}\Delta(q) = \Delta(q)$ and hence $c^{\,n}$ is a square because $\Delta(q) \neq 0$ for a non-degenerate form. The group $F^\times/(F^\times)^2$ has exponent two, so its element $[c]$ satisfies $[c]^{n} = [c]$ for odd $n$; from $[c^{n}] = 1$ we get $[c] = 1$, that is $c$ is a square. For even $n$ the element $c^{n} = (c^{n/2})^2$ is a square without further hypothesis.</p>
@@ -177,7 +177,7 @@ $$</p>
 <p>It is a normal subgroup of $\operatorname{O}(V, \mathfrak{Q})$, because the determinant is a homomorphism.</p>
 <p><strong>Theorem.</strong> Let $(V, \mathfrak{Q})$ be non-degenerate over a field $F$ of characteristic not $2$. Then</p>
 <p>$$
-\operatorname{O}(V, \mathfrak{Q}) / \operatorname{SO}(V, \mathfrak{Q}) \cong \{+1, -1\} \cong \mathbb{Z}/2\mathbb{Z},
+\boxed{\;\operatorname{O}(V, \mathfrak{Q}) / \operatorname{SO}(V, \mathfrak{Q}) \cong \{+1, -1\} \cong \mathbb{Z}/2\mathbb{Z}\;},
 $$</p>
 <p>provided the determinant assumes the value $-1$ on $\operatorname{O}(V, \mathfrak{Q})$; this holds whenever there is a hyperplane reflection, in particular for $n \geq 1$. The determinant map is not surjective onto $\{+1,-1\}$ over a general commutative ring, where $(\det T)^2 = 1$ may have more than two solutions.</p>
 <p><strong>Proof.</strong> Two isometries have the same determinant if and only if one is the other composed with an element of $\operatorname{SO}(V, \mathfrak{Q})$, so the quotient embeds in the group of units of $F$ cut out by $d^2 = 1$; over a field of characteristic not $2$ this group is $\{+1, -1\}$. The reflection $\tau_v$ has determinant $-1$, so the image is all of $\{+1,-1\}$.</p>
@@ -210,7 +210,7 @@ $$</p>
 <p>Let $F$ have characteristic not $2$ and let $\mathfrak{Q}(x, y) = x^2 - y^2$ on $F^2$, with Gram matrix $G = \operatorname{diag}(1, -1)$.</p>
 <p><strong>Proposition.</strong> Every $T \in \operatorname{O}(V, \mathfrak{Q})$ is of the form</p>
 <p>$$
-T = \begin{pmatrix} p & \eta r \\ r & \eta p \end{pmatrix}, \qquad p^2 - r^2 = 1, \quad \eta = \pm 1,
+\boxed{\;T = \begin{pmatrix} p & \eta r \\ r & \eta p \end{pmatrix}, \qquad p^2 - r^2 = 1, \quad \eta = \pm 1\;},
 $$</p>
 <p>with $\det T = \eta$; conversely every such matrix lies in $\operatorname{O}(V, \mathfrak{Q})$.</p>
 <p><strong>Proof.</strong> Write $T = \begin{pmatrix} p & q' \\ r & t\end{pmatrix}$ and impose $T^{T} G T = G$, which is the three conditions</p>

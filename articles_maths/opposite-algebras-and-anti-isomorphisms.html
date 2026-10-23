@@ -101,7 +101,7 @@ $$</p>
 <h3 id="tensor-products-and-standard-instances">Tensor Products and Standard Instances</h3>
 <p><strong>Proposition.</strong> For $k$-algebras $A$ and $B$ the swap $\tau(a \otimes b) = b \otimes a$ is an isomorphism of algebras</p>
 <p>$$
-(A \otimes_k B)^{\mathrm{opp}} \cong A^{\mathrm{opp}} \otimes_k B^{\mathrm{opp}}, \qquad (a \otimes b)^{\mathrm{opp}} \longmapsto a^{\mathrm{opp}} \otimes b^{\mathrm{opp}} .
+\boxed{\;(A \otimes_k B)^{\mathrm{opp}} \cong A^{\mathrm{opp}} \otimes_k B^{\mathrm{opp}}, \qquad (a \otimes b)^{\mathrm{opp}} \longmapsto a^{\mathrm{opp}} \otimes b^{\mathrm{opp}}\;} .
 $$</p>
 <p><em>Proof.</em> Both sides are spanned by the decomposable elements and both products reverse the two factors and keep their order: $(a \otimes b)^{\mathrm{opp}}(a' \otimes b')^{\mathrm{opp}} = ((a' \otimes b')(a \otimes b))^{\mathrm{opp}} = (a'a \otimes b'b)^{\mathrm{opp}}$, which corresponds to $a^{\mathrm{opp}}a'^{\mathrm{opp}} \otimes b^{\mathrm{opp}}b'^{\mathrm{opp}}$, the product of the two images in $A^{\mathrm{opp}} \otimes B^{\mathrm{opp}}$. The map is $k$-bilinear on the factors, hence defined on the tensor product, and it is a bijection with inverse the corresponding map for the opposite algebras.</p>
 <p><strong>Corollary (the standard instances).</strong> The following hold.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p><em>Proof.</em> If $f$ and $g$ both reverse products, then $f(g(ab)) = f(g(b)g(a)) = f(g(a))f(g(b))$, so the composite preserves products; if exactly one reverses, the composite reverses; bijectivity is preserved by composition.</p>
 <p><strong>Theorem (the dictionary).</strong> For $k$-algebras $A$ and $B$ there is a bijection</p>
 <p>$$
-\operatorname{Anti}(A, B) \longrightarrow \operatorname{Hom}_k(A, B^{\mathrm{opp}}), \qquad f \longmapsto \iota_B \circ f,
+\boxed{\;\operatorname{Anti}(A, B) \longrightarrow \operatorname{Hom}_k(A, B^{\mathrm{opp}}), \qquad f \longmapsto \iota_B \circ f\;},
 $$</p>
 <p>and it restricts to a bijection $\operatorname{AntiIso}(A,B) \to \operatorname{Iso}_k(A, B^{\mathrm{opp}})$. Under the dictionary the anti-automorphisms of $A$ correspond to the isomorphisms $A \to A^{\mathrm{opp}}$, and the involutions of $A$ to those isomorphisms of <em>Involutive Algebras</em> whose square is the identity.</p>
 <p><em>Proof.</em> The composite $\iota_B f$ preserves products, because $f$ reverses them and $\iota_B$ reverses them back; the correspondence is inverted by $\rho \mapsto \iota_B \rho$, since $\iota_B^2 = \mathrm{id}$. The statements about anti-automorphisms and involutions are the dictionary read with $B = A$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-coset-of-the-anti-automorphisms">The Coset of the Anti-Automorphisms</h3>
 <p><strong>Theorem.</strong> Let $A$ carry an anti-automorphism $\rho_0$. Then the map $\alpha \mapsto \rho_0 \circ \alpha$ is a bijection</p>
 <p>$$
-\operatorname{Aut}_k(A) \longrightarrow \operatorname{Anti}(A,A), \qquad \alpha \longmapsto \rho_0 \alpha,
+\boxed{\;\operatorname{Aut}_k(A) \longrightarrow \operatorname{Anti}(A,A), \qquad \alpha \longmapsto \rho_0 \alpha\;},
 $$</p>
 <p>and the anti-automorphisms of $A$ form a coset of the automorphism group in the monoid of all bijective $k$-linear maps of $A$. Two anti-automorphisms compose to an automorphism, and the products of an odd number of anti-automorphisms are anti-automorphisms.</p>
 <p><em>Proof.</em> For an automorphism $\alpha$ the composite $\rho_0\alpha$ reverses products, so the map lands in the anti-automorphisms; it is inverted by $\rho \mapsto \rho_0^{-1}\rho$, which is the composite of two anti-automorphisms and hence an automorphism, and the two composites are the identity by the associativity of composition and $\rho_0^{-1}\rho_0 = \mathrm{id} = \rho_0\rho_0^{-1}$. The statement that the anti-automorphisms form a coset is the definition of a coset under composition with the fixed element $\rho_0$.</p>

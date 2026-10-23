@@ -78,7 +78,7 @@
 <h2 id="the-quaternionic-product">The Quaternionic Product</h2>
 <p><strong>Theorem (the product in the model).</strong> On the image the quaternionic product is the <strong>transposed product</strong></p>
 <p>$$
-\mathsf{M}_2(\tilde q_1 \star \tilde q_2) = \mathsf{M}_2(\tilde q_1^{\natural}\tilde q_2) = \mathsf{M}_2(\tilde q_1)^{\dagger}\,\mathsf{M}_2(\tilde q_2) ,
+\boxed{\;\mathsf{M}_2(\tilde q_1 \star \tilde q_2) = \mathsf{M}_2(\tilde q_1^{\natural}\tilde q_2) = \mathsf{M}_2(\tilde q_1)^{\dagger}\,\mathsf{M}_2(\tilde q_2)\;},
 $$</p>
 <p>the matrix product with the conjugate transpose taken in the first factor.</p>
 <p><em>Proof.</em> By multiplicativity of $\mathsf{M}_2$ and the correspondence of the conjugation with the dagger: $\mathsf{M}_2(\tilde q_1^{\natural}\tilde q_2) = \mathsf{M}_2(\tilde q_1^{\natural})\mathsf{M}_2(\tilde q_2) = \mathsf{M}_2(\tilde q_1)^{\dagger}\mathsf{M}_2(\tilde q_2)$.</p>
@@ -93,7 +93,7 @@ $$</p>
 <h2 id="the-form">The Form</h2>
 <p><strong>Theorem (the form in the model).</strong> The quaternionic form is half the trace pairing with the dagger,</p>
 <p>$$
-\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)^{\dagger}\bigr) .
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)^{\dagger}\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> $\operatorname{tr}(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)^{\dagger}) = \operatorname{tr}(\mathsf{M}_2(\tilde q_1\tilde q_2^{\natural})) = 2\,\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = 2\langle\tilde q_1,\tilde q_2\rangle_{\natural}$, because the trace of a quaternion image is twice its scalar part.</p>
 <p><strong>Theorem (the coefficient Gram matrix).</strong> In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$,</p>
@@ -107,7 +107,7 @@ $$</p>
 <h2 id="the-units-the-shell-and-the-invariants">The Units, the Shell and the Invariants</h2>
 <p><strong>Theorem (trace and determinant).</strong> For every $\tilde q$,</p>
 <p>$$
-\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_t , \qquad \det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural} ,
+\boxed{\;\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_t , \qquad \det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}\;},
 $$</p>
 <p>so that the quaternionic form is the determinant of the image, read positively.</p>
 <p><em>Proof.</em> The trace is $\alpha + \overline{\alpha} = 2q_t$; the determinant is $\alpha\overline{\alpha} + \beta\overline{\beta} = (q_t^2+q_z^2) + (q_x^2+q_y^2) = \langle\tilde q\rangle_{\natural}$.</p>
@@ -115,7 +115,7 @@ $$</p>
 <p><em>Proof.</em> $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural} > 0$ for $\tilde q \neq 0$, and the image is closed under products and inverses.</p>
 <p><strong>Theorem (the shell).</strong> The shell $N = 1$ corresponds to the matrices of the image with $\det = 1$ and $A^{\dagger}A = \mathbb{1}$; it is the special unitary group,</p>
 <p>$$
-\mathsf{M}_2(\mathbb{H}^1) = SU(2) ,
+\boxed{\;\mathsf{M}_2(\mathbb{H}^1) = SU(2)\;},
 $$</p>
 <p>a compact group of real dimension three.</p>
 <p><em>Proof.</em> $A^{\dagger}A = \mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde q) = \mathsf{M}_2(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}\mathbb{1}$, so on the shell $A$ is unitary; and $\det A = \langle\tilde q\rangle_{\natural} = 1$, so $A \in SU(2)$. Conversely a unitary matrix of the image has $N = \det = 1$.</p>

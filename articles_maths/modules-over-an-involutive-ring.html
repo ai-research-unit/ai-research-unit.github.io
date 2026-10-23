@@ -89,7 +89,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> $M^{*}$ is a left $A$-module under the action above, and the <strong>evaluation pairing</strong></p>
 <p>$$
-\langle \cdot,\cdot\rangle : M^{*} \times M \longrightarrow A, \qquad \langle \varphi,x\rangle = \varphi(x) ,
+\boxed{\;\langle \cdot,\cdot\rangle : M^{*} \times M \longrightarrow A, \qquad \langle \varphi,x\rangle = \varphi(x)\;} ,
 $$</p>
 <p>satisfies $\langle a\cdot\varphi,x\rangle = \langle\varphi,x\rangle\sigma(a)$ and $\langle\varphi,a\cdot x\rangle = a\langle\varphi,x\rangle$; it is $\sigma$-sesquilinear in this sense, and it is non-degenerate when $M$ is free of finite rank.</p>
 <p><strong>Proof.</strong> For the module axioms, $a\cdot(b\cdot\varphi)(x) = (b\cdot\varphi)(x)\sigma(a) = \varphi(x)\sigma(b)\sigma(a) = \varphi(x)\sigma(ab) = (ab)\cdot\varphi(x)$, and $1\cdot\varphi = \varphi$. For the sesquilinearity, the two displayed identities are the definitions of the two actions; non-degeneracy for a free module of finite rank is the statement that a functional is determined by its values on a basis and that every assignment on a basis extends, so a functional vanishing on all of $M$ is $0$ and a vector killed by all functionals is $0$.</p>
@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-induced-involution-on-the-endomorphisms">The Induced Involution on the Endomorphisms</h2>
 <p><strong>Definition.</strong> For the free left $A$-module $M = A^{n}$ with its standard basis, the endomorphism ring $\operatorname{End}_A(A^{n})$ is identified with the matrix ring $M_n(A)$, and the <strong>induced map</strong> is</p>
 <p>$$
-A^{*} = \sigma(A)^{\mathsf{T}}, \qquad (A^{*})_{ij} = \sigma(A_{ji}) .
+\boxed{\;A^{*} = \sigma(A)^{\mathsf{T}}, \qquad (A^{*})_{ij} = \sigma(A_{ji})\;} .
 $$</p>
 <p><strong>Proposition.</strong> The assignment $A \mapsto A^{*}$ is additive and of order two. It is an involution of the ring $M_n(A)$ in the sense of <em>Involutive Rings</em> — an anti-automorphism of order two — exactly when $A$ is commutative, and in that case the fixed matrices are the <strong>$\sigma$-self-adjoint</strong> ones and the <strong>unitary</strong> matrices are those with $A^{*}A = AA^{*} = I$.</p>
 <p><strong>Proof.</strong> Additivity and order two are immediate from the entries. For multiplicativity, $(AB)^{*} = \sigma(AB)^{\mathsf{T}} = (\sigma(B)\sigma(A))^{\mathsf{T}} = \sigma(A)^{\mathsf{T}}\sigma(B)^{\mathsf{T}} = A^{*}B^{*}$ in general, the two anti-maps cancelling; when $A$ is commutative $\sigma$ is multiplicative and the computation gives $(AB)^{*} = B^{*}A^{*}$, which is the anti-automorphism law. The fixed and unitary descriptions are the definitions.</p>

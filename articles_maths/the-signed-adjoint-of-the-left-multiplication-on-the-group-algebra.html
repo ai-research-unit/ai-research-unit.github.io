@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
 <p><strong>Theorem (the adjoint).</strong> With respect to the Haar pairing,</p>
 <p>$$
-\bigl(\Lambda_a\bigr)^* = \mathrm{A}\,L_{a^*} = L_{\alpha(a^*)}\,\mathrm{A} = \Lambda_{\alpha(a^*)} = \Lambda_{\sigma(a)} ,
+\boxed{\;\bigl(\Lambda_a\bigr)^* = \mathrm{A}\,L_{a^*} = L_{\alpha(a^*)}\,\mathrm{A} = \Lambda_{\alpha(a^*)} = \Lambda_{\sigma(a)}\;} ,
 $$</p>
 <p>and in the unimodular case $\bigl(\Lambda^{\mathrm R}_b\bigr)^* = \Lambda^{\mathrm R}_{\alpha(b^*)}$; the adjoint operation is an involution on the family of signed left multiplications, $\bigl((\Lambda_a)^*\bigr)^* = \Lambda_a$.</p>
 <p><strong>Proof.</strong> By the elementary adjoints $(L_a)^* = L_{a^*}$ and $\mathrm{A}^* = \mathrm{A}$, and the composition of adjoints, $(\Lambda_a)^* = (L_a\mathrm{A})^* = \mathrm{A}^*L_a^* = \mathrm{A}L_{a^*}$; the intertwining $\mathrm{A}L_c = L_{\alpha(c)}\mathrm{A}$ turns this into $L_{\alpha(a^*)}\mathrm{A} = \Lambda_{\alpha(a^*)}$. The right-handed formula is the mirror image. The double adjoint uses $\alpha^2 = \mathrm{id}$ and $a^{**} = a$.</p>
@@ -98,13 +98,13 @@ $$</p>
 <p><strong>Proof.</strong> $\Lambda_a = \Lambda_b$ means $L_a\mathrm{A} = L_b\mathrm{A}$; composing with $\mathrm{A}^{-1} = \mathrm{A}$ on the right gives $L_a = L_b$, and left convolution is injective, so $a = b$. The self-adjointness criterion is then the theorem read with $\Lambda_{\alpha(a^*)} = \Lambda_a$.</p>
 <p><strong>Theorem (self-adjointness and the fixed set of $\sigma$).</strong> The signed left multiplication $\Lambda_a$ is self-adjoint if and only if $a$ lies in the fixed set of the composite anti-automorphism $\sigma = \alpha\circ\,{}^{*}$,</p>
 <p>$$
-\Lambda_a^* = \Lambda_a \iff \sigma(a) = a ,
+\boxed{\;\Lambda_a^* = \Lambda_a \iff \sigma(a) = a\;} ,
 $$</p>
 <p>a closed real subspace of $\mathcal{A}$; on the point masses this is the fixed subgroup $G^\sigma$ of the continuous involution $\sigma = \alpha\iota$.</p>
 <p><strong>Proof.</strong> Immediate from the faithful parametrisation and the adjoint formula; the fixed set of an anti-linear involution is a closed real subspace, and on point masses $\sigma(\delta_x) = \delta_{\sigma(x)}$ gives the subgroup condition.</p>
 <p><strong>Theorem (unitarity).</strong> The signed left multiplication is unitary if and only if the parameter is a unitary element,</p>
 <p>$$
-\Lambda_a^*\Lambda_a = \Lambda_a\Lambda_a^* = 1 \iff a^*\!*a = a*\!a^* = 1 .
+\boxed{\;\Lambda_a^*\Lambda_a = \Lambda_a\Lambda_a^* = 1 \iff a^*\!*a = a*\!a^* = 1\;} .
 $$</p>
 <p>On a non-discrete group algebra there are no unitary elements and no unitary signed left multiplication; on a discrete group every point mass gives a unitary operator $\Lambda_{\delta_g}$.</p>
 <p><strong>Proof.</strong> $\Lambda_{\alpha(a^*)}\Lambda_a = L_{\alpha(a^*)*\alpha(a)} = L_{\alpha(a^**a)}$ and $\Lambda_a\Lambda_{\alpha(a^*)} = L_{a*\alpha(\alpha(a^*))} = L_{a*a^*}$; left convolution is injective, so each product is the identity exactly when the corresponding convolution parameter is the identity, giving $a^*\!*a = 1$ and $a*\!a^* = 1$. The absence of unitary elements on a non-discrete $L^1(G)$, and the unitarity of the point masses $\delta_g^* = \delta_{g^{-1}}$, are <em>The Group Algebra as an Involutive Algebra</em>.</p>

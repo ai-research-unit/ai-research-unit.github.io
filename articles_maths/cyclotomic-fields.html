@@ -174,7 +174,7 @@ $$</p>
 <h3 id="automorphisms">Automorphisms</h3>
 <p><strong>Theorem.</strong> Let $K = \mathbb{Q}(\zeta_n)$. Then $K/\mathbb{Q}$ is a Galois extension with</p>
 <p>$$
-\operatorname{Gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
+\boxed{\;\operatorname{Gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times\;},
 $$</p>
 <p>the isomorphism sending $k \in (\mathbb{Z}/n\mathbb{Z})^\times$ to the automorphism $\sigma_k$ determined by $\sigma_k(\zeta_n) = \zeta_n^k$. In particular $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ is abelian of order $\varphi(n)$, and its exponent divides $\lambda(n)$, the exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$.</p>
 <p><strong>Proof.</strong> $K$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, hence normal; $x^n-1$ is separable over $\mathbb{Q}$ since $\operatorname{char}\mathbb{Q} = 0$, so $K/\mathbb{Q}$ is Galois. Every $\sigma \in \operatorname{Gal}(K/\mathbb{Q})$ sends $\zeta_n$ to another root of $\Phi_n$, that is, to $\zeta_n^k$ for a unique $k \in (\mathbb{Z}/n\mathbb{Z})^\times$; conversely, since $\Phi_n$ is irreducible, for each such $k$ there is a $\mathbb{Q}$-automorphism of $K$ sending $\zeta_n$ to $\zeta_n^k$. The map $k \mapsto \sigma_k$ is a group homomorphism $(\mathbb{Z}/n\mathbb{Z})^\times \to \operatorname{Gal}(K/\mathbb{Q})$ and a bijection, hence an isomorphism.</p>
@@ -199,7 +199,7 @@ $$</p>
 <h3 id="the-ring-of-integers">The Ring of Integers</h3>
 <p><strong>Theorem.</strong> Let $K = \mathbb{Q}(\zeta_n)$, $n \geq 1$. The ring of integers of $K$ is</p>
 <p>$$
-\mathcal{O}_K = \mathbb{Z}[\zeta_n],
+\boxed{\;\mathcal{O}_K = \mathbb{Z}[\zeta_n]\;},
 $$</p>
 <p>the smallest subring of $K$ containing $\mathbb{Z}$ and $\zeta_n$. Consequently $\{1, \zeta_n, \ldots, \zeta_n^{\varphi(n)-1}\}$ is an integral basis of $K$ over $\mathbb{Q}$, and $\mathcal{O}_K$ is a Dedekind domain in the sense of <em>Dedekind Domains and Ideal Class Groups</em>.</p>
 <p><strong>Proof sketch.</strong> Let $\zeta = \zeta_n$ and $\Phi = \Phi_n$. The ring $\mathbb{Z}[\zeta] \cong \mathbb{Z}[x]/(\Phi)$ is contained in $\mathcal{O}_K$ and is a Noetherian domain. To see that it is integrally closed it suffices to show it is integrally closed in $K$; one shows that $\Phi$ is a <strong>Kronecker polynomial</strong>, meaning that for every root $\zeta'$ of $\Phi$ and every $k$, the quotients $(\zeta'^k - \zeta^k)/(\zeta' - \zeta)$ lie in $\mathbb{Z}[\zeta][\zeta']$, and then the elementary symmetric functions of the conjugates of a purported integral element force it back into $\mathbb{Z}[\zeta]$ — this is Dedekind's argument. Alternatively one shows the discriminant of the basis $\{1, \zeta, \ldots, \zeta^{\varphi(n)-1}\}$ is the squarefree part times a power of $n$, and that no prime dividing $n$ can contribute to the index of $\mathbb{Z}[\zeta]$ in $\mathcal{O}_K$ by a reduction modulo $1 - \zeta$.</p>
@@ -226,7 +226,7 @@ $$</p>
 <h3 id="norms-and-cyclotomic-units">Norms and Cyclotomic Units</h3>
 <p><strong>Theorem.</strong> Let $n \geq 2$ and $\zeta = \zeta_n$. Then</p>
 <p>$$
-\operatorname{N}_{\mathbb{Q}(\zeta_n)/\mathbb{Q}}(1 - \zeta) = \begin{cases} p & \text{if } n = p^v \text{ is a prime power}, \\ 1 & \text{otherwise.}\end{cases}
+\boxed{\;\operatorname{N}_{\mathbb{Q}(\zeta_n)/\mathbb{Q}}(1 - \zeta) = \begin{cases} p & \text{if } n = p^v \text{ is a prime power}, \\ 1 & \text{otherwise.}\end{cases}\;}
 $$</p>
 <p><strong>Proof.</strong> By the corollary on norms, $\operatorname{N}(1-\zeta) = \Phi_n(1)$, the resultant of $\Phi_n(x)$ and $x - 1$ being $\Phi_n(1)$. Now $\Phi_n(1) = p$ when $n = p^v$: from $\Phi_{p^v}(x) = \Phi_p(x^{p^{v-1}})$ and $\Phi_p(1) = p$. When $n$ is divisible by at least two distinct primes, write $n = pm$ with $p \nmid m$ and use $\Phi_n(x) = \Phi_m(x^p)/\Phi_m(x)$ for such $n$; at $x=1$ this gives $\Phi_n(1) = \Phi_m(1)/\Phi_m(1) = 1$ by induction on the number of prime factors.</p>
 <p><strong>Corollary.</strong> $1 - \zeta_n$ is a unit precisely when $n$ is not a prime power; when $n = p^v$ it generates the unique ramified prime.</p>

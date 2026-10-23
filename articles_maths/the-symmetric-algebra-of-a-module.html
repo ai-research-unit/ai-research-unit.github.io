@@ -127,7 +127,7 @@ $$</p>
 $$</p>
 <p>from $R$-modules to commutative unital $R$-algebras is left adjoint to the forgetful functor $U : \mathsf{CAlg}_R \to \mathsf{Mod}_R$:</p>
 <p>$$
-\operatorname{Hom}_{\mathsf{CAlg}_R}\bigl(\operatorname{Sym}(M), A\bigr) \cong \operatorname{Hom}_{\mathsf{Mod}_R}\bigl(M, \mathrm{U}(A)\bigr),
+\boxed{\;\operatorname{Hom}_{\mathsf{CAlg}_R}\bigl(\operatorname{Sym}(M), A\bigr) \cong \operatorname{Hom}_{\mathsf{Mod}_R}\bigl(M, \mathrm{U}(A)\bigr)\;},
 $$</p>
 <p>naturally in $M$ and $A$. The natural transformation $M \to U(\operatorname{Sym}(M))$ is the inclusion of the degree-one part.</p>
 <h2 id="the-symmetric-algebra-of-a-module-as-a-quotient-of-the-tensor-algebra">The Symmetric Algebra of a Module as a Quotient of the Tensor Algebra</h2>
@@ -150,7 +150,7 @@ $$</p>
 <h3 id="the-quotient">The Quotient</h3>
 <p><strong>Theorem.</strong> There is a natural isomorphism of graded algebras</p>
 <p>$$
-\operatorname{Sym}(M) \cong T(M) / I .
+\boxed{\;\operatorname{Sym}(M) \cong T(M) / I\;} .
 $$</p>
 <p><em>Proof.</em> The quotient $T(M)/I$ is generated as an algebra by the image of $M = T^1(M)$, and it is commutative: its generators commute because the class of $x \otimes y - y \otimes x$ is zero. Hence by the universal property of $\operatorname{Sym}(M)$ the identity map $M \to T(M)/I$ extends to a unique algebra homomorphism $\Phi : \operatorname{Sym}(M) \to T(M)/I$ with $\Phi(x_1 \cdots x_n) = x_1 \otimes \cdots \otimes x_n + I$.</p>
 <p>In the other direction, the identity $M \to \operatorname{Sym}(M)$ extends by the universal property of $T(M)$ to an algebra homomorphism $T(M) \to \operatorname{Sym}(M)$ sending $x_1 \otimes \cdots \otimes x_n$ to $x_1 \cdots x_n$. This map kills each generator $x \otimes y - y \otimes x$, since $\operatorname{Sym}(M)$ is commutative, so it descends to $\Psi : T(M)/I \to \operatorname{Sym}(M)$. On the generators $\Phi$ and $\Psi$ are mutually inverse, hence they are inverse isomorphisms.</p>
@@ -224,7 +224,7 @@ $$</p>
 <h3 id="the-symmetric-algebra-of-a-module-of-a-direct-sum">The Symmetric Algebra of a Module of a Direct Sum</h3>
 <p><strong>Theorem.</strong> For all $R$-modules $M, N$ there is a natural isomorphism of graded algebras</p>
 <p>$$
-\operatorname{Sym}(M \oplus N) \cong \operatorname{Sym}(M) \otimes_R \operatorname{Sym}(N).
+\boxed{\;\operatorname{Sym}(M \oplus N) \cong \operatorname{Sym}(M) \otimes_R \operatorname{Sym}(N)\;}.
 $$</p>
 <p><em>Proof.</em> The inclusions $M \hookrightarrow M \oplus N \hookrightarrow \operatorname{Sym}(M \oplus N)$ and $N \hookrightarrow M \oplus N \hookrightarrow \operatorname{Sym}(M \oplus N)$ give, by the universal property, algebra homomorphisms $\operatorname{Sym}(M) \to \operatorname{Sym}(M \oplus N)$ and $\operatorname{Sym}(N) \to \operatorname{Sym}(M \oplus N)$ whose images commute (all elements of $\operatorname{Sym}(M \oplus N)$ commute). By the universal property of the tensor product of algebras there is therefore a homomorphism</p>
 <p>$$

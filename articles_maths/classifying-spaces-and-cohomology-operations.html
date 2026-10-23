@@ -82,7 +82,7 @@
 <p><strong>Definition.</strong> Let $G$ be a topological group. A <strong>universal principal $G$-bundle</strong> is a principal $G$-bundle $p : EG \to BG$ with $EG$ weakly contractible, that is, with $\pi_n(EG) = 0$ for all $n \geq 0$. The base $BG$ is the <strong>classifying space</strong> of $G$.</p>
 <p><strong>Theorem (classifying property).</strong> Let $p : EG \to BG$ be a universal principal $G$-bundle and let $X$ be a CW complex. The pullback of $p$ along a map $f : X \to BG$ defines a natural bijection</p>
 <p>$$
-[X, BG] \xrightarrow{\ \cong\ } \operatorname{Prin}_G(X), \qquad [f] \mapsto f^*EG .
+\boxed{\;[X, BG] \xrightarrow{\ \cong\ } \operatorname{Prin}_G(X), \qquad [f] \mapsto f^*EG\;} .
 $$</p>
 <p>The trivial bundle corresponds to the class of a constant map, so the bijection is between pointed data when a basepoint is fixed.</p>
 <p><em>Proof sketch.</em> The map is well defined on homotopy classes because a homotopy $F : X \times I \to BG$ pulls the bundle back to a principal bundle over $X\times I$, whose restrictions to $X \times \{0\}$ and $X \times \{1\}$ are isomorphic by the homotopy invariance of fibre bundles over a product with $I$. For surjectivity, let $P \to X$ be a principal $G$-bundle; the associated bundle $P \times_G EG \to X$ has fibre $EG$ and total space $P\times_G EG$, which strongly deformation retracts onto a copy of $P$ because $EG$ is contractible, so the bundle $P$ is the pullback of $p$ along the classifying map of a section of $P\times_G EG \to X$; the section is constructed by the homotopy lifting property of the fibration $P \times_G EG \to X$, which has contractible fibres. For injectivity, two maps pulling $p$ back to isomorphic bundles differ by a homotopy, constructed again by lifting the isomorphism over $X \times I$ through the fibration with contractible fibre.</p>
@@ -122,7 +122,7 @@ $$</p>
 <h3 id="the-pathloop-fibration">The Path–Loop Fibration</h3>
 <p><strong>Theorem.</strong> Let $G$ be a topological group and $p : EG \to BG$ its universal bundle. Then</p>
 <p>$$
-\pi_n(BG) \cong \pi_{n-1}(G) \quad (n \geq 2), \qquad \pi_1(BG) \cong \pi_0(G),
+\boxed{\;\pi_n(BG) \cong \pi_{n-1}(G) \quad (n \geq 2), \qquad \pi_1(BG) \cong \pi_0(G)\;},
 $$</p>
 <p>and consequently $BG$ is simply connected whenever $G$ is connected, and $B$ kills one homotopy degree: $\pi_n(BG)$ is the $(n-1)$-st homotopy group of $G$.</p>
 <p><em>Proof.</em> The map $p$ is a fibration with fibre $G$, since a principal bundle is locally trivial and a locally trivial map over a paracompact base is a fibration, and the fibre sequence $G \to EG \to BG$ gives the long exact sequence</p>
@@ -255,7 +255,7 @@ $$</p>
 <h3 id="representability-of-cohomology">Representability of Cohomology</h3>
 <p><strong>Theorem (representability).</strong> Let $\pi$ be an abelian group and $n \geq 1$. For every CW complex $X$ there is a natural bijection</p>
 <p>$$
-H^n(X;\pi) \xrightarrow{\ \cong\ } [X, K(\pi,n)],
+\boxed{\;H^n(X;\pi) \xrightarrow{\ \cong\ } [X, K(\pi,n)]\;},
 $$</p>
 <p>where the right-hand side is the set of homotopy classes of maps; for a based connected CW complex the reduced cohomology corresponds to based homotopy classes. The bijection sends a class to its classifying map and is induced by the <strong>fundamental class</strong> $\iota_n \in H^n(K(\pi,n);\pi)$ that corresponds to the identity of $\pi$ under $H^n(K(\pi,n);\pi) \cong \operatorname{Hom}(\pi,\pi)$.</p>
 <p><em>Proof sketch.</em> The universal coefficient theorem of <em>Cohomology and the Universal Coefficient Theorem</em> gives $H^n(K(\pi,n);\pi) \cong \operatorname{Hom}(\pi,\pi)$, so there is a class $\iota_n$ corresponding to the identity; by naturality the assignment $f \mapsto f^*\iota_n$ gives a map $[X,K(\pi,n)] \to H^n(X;\pi)$. It is surjective because for any class $u \in H^n(X;\pi)$ the obstruction to building a map $f : X \to K(\pi,n)$ with $f^*\iota_n = u$ lies in groups $H^{k+1}(X;\pi_{k}(K(\pi,n)))$ that vanish for $k \geq n$ on the cells of degree at least $n$ and are handled dimension by dimension below that; it is injective because two maps agreeing on $\iota_n$ are homotopic by the same cell-by-cell argument applied to $X \times I$. Equivalently, the functor $H^n(-;\pi)$ is representable and the representing object is unique up to homotopy by the Yoneda lemma, which recovers the uniqueness of $K(\pi,n)$.</p>

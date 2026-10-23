@@ -86,7 +86,7 @@ $$</p>
 <p>The involution and the action each have their own fixed set, and each set is stable under the other structure.</p>
 <p><strong>Proposition (the constants of the action are $\sigma$-stable).</strong> The set of $\Gamma$-fixed points</p>
 <p>$$
-G^{\Gamma}=\{g\in G : \gamma\cdot g=g \ \text{for all } \gamma\in\Gamma\}
+\boxed{\;G^{\Gamma}=\{g\in G : \gamma\cdot g=g \ \text{for all } \gamma\in\Gamma\}\;}
 $$</p>
 <p>is stable under $\sigma$, and $\sigma$ restricts to an involution of $G^{\Gamma}$.</p>
 <p><strong>Proof.</strong> If $g$ is fixed by every $\gamma$ then $\gamma\cdot\sigma(g)=\sigma(\gamma\cdot g)=\sigma(g)$, so $\sigma(g)$ is fixed; the restriction is an involution because $\sigma^{2}=\mathrm{id}$. The set $G^{\Gamma}$ is a subgroup because the $\gamma$ act by automorphisms, and the restriction is an involution of it.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p><strong>Proof.</strong> The action descends because $N$ is $\Gamma$-stable, giving $\gamma\cdot(gN)=(\gamma\cdot g)N$. For the compatibility, $\gamma\cdot\bar\sigma(gN)=\gamma\cdot(\sigma(g)N)=(\gamma\cdot\sigma(g))N=\sigma(\gamma\cdot g)N=\bar\sigma(\gamma\cdot gN)$ using that the ambient action preserves $\sigma$. So the descended action commutes with $\bar\sigma$.</p>
 <p><strong>Proposition (the fixed points of the quotient).</strong> With $N$ as above, the image of $G^{\sigma}$ in $G/N$ is contained in the fixed set $(G/N)^{\bar\sigma}$, and the containment can be strict. When $\sigma$ is an automorphism of $G$ and $N$ is a central subgroup of order two on which $\sigma$ acts trivially, the quotient of the two fixed sets is $N$ itself,</p>
 <p>$$
-(G/N)^{\bar\sigma}\big/\pi(G^{\sigma})\;\cong\;N/2N=N ,
+\boxed{\;(G/N)^{\bar\sigma}\big/\pi(G^{\sigma})\;\cong\;N/2N=N\;} ,
 $$</p>
 <p>so the containment is strict, the image having index two in the fixed set of the quotient.</p>
 <p><strong>Proof.</strong> An element $\sigma(g)=g$ has image $\bar\sigma(gN)=\sigma(g)N=gN$, so $\pi(G^{\sigma})\subseteq(G/N)^{\bar\sigma}$; the containment is the one of <em>Involutive Groups</em>, §7, and the strict example $\mathbb{Z}/4\mathbb{Z}$ with its subgroup of order two, recorded there, shows it can be strict. A class $gN$ fixed by $\bar\sigma$ has $\sigma(g)=g\,n$ for some $n\in N$; replacing $g$ by $g\,n'$ with $n'\in N$ changes $n$ to $n'^{2}n$, because $N$ is central and $\sigma$ acts trivially on it, so the defect $n$ is fixed exactly up to the squares $N^{2}$ of $N$. For a central $N$ with trivial action the squares are $2N$ and the cokernel is the group $N/2N$ of coinvariants of the two-element group with coefficients in $N$; for $N$ of order two this is $N$ again, so the image has index two in the fixed set of the quotient. The $\mathbb{Z}/4\mathbb{Z}$ example of <em>Involutive Groups</em>, §7 is the case $N$ of order two inside the cyclic group of order four.</p>
@@ -111,7 +111,7 @@ $$</p>
 <h2 id="the-semidirect-product-and-the-extension">The Semidirect Product and the Extension</h2>
 <p><strong>Proposition (an involution on the semidirect product).</strong> Let $\Gamma$ act on $G$ preserving $\sigma$, and let $\Gamma$ carry an involution $\tau$. If the action is $\tau$-twisted, that is $\tau(\gamma)\cdot\tau(g)=\tau(\gamma\cdot g)$ for all $\gamma,g$, then</p>
 <p>$$
-\Theta(g,\gamma)=\bigl(\sigma(g),\ \tau(\gamma)\bigr)
+\boxed{\;\Theta(g,\gamma)=\bigl(\sigma(g),\ \tau(\gamma)\bigr)\;}
 $$</p>
 <p>is an involution of the semidirect product $G\rtimes\Gamma$, and its restriction to $G$ is $\sigma$. If $\tau=\mathrm{id}$ this reduces to $\Theta(g,\gamma)=(\sigma(g),\gamma)$.</p>
 <p><strong>Proof.</strong> That $\Theta$ is a bijection with $\Theta^{2}=\mathrm{id}$ is immediate from $\sigma^{2}=\tau^{2}=\mathrm{id}$. It is anti-multiplicative on the semidirect product, using that $\Gamma$ acts by automorphisms of $G$:</p>

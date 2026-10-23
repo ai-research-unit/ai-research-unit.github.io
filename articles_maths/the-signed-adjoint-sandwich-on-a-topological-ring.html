@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-the-inverse-and-the-composition">The Adjoint, the Inverse and the Composition</h2>
 <p><strong>Theorem (the explicit form of the adjoint).</strong> With respect to the form of the category,</p>
 <p>$$
-\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)} , \qquad \delta = \sigma\alpha ,
+\boxed{\;\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)} , \qquad \delta = \sigma\alpha\;} ,
 $$</p>
 <p>so the adjoint of a signed sandwich is the signed sandwich of the two $\delta$-images, with the order of the parameters <strong>not</strong> reversed, and the adjoint operation is an involution on the class of signed sandwiches.</p>
 <p><strong>Proof.</strong> By the factorisation and the anti-multiplicativity of the adjoint, $(\Sigma^\alpha_{a,b})^\dagger = (L_a\alpha R_{\alpha(b)})^\dagger = R_{\alpha(b)}{}^\dagger\alpha^\dagger L_a{}^\dagger = R_{\sigma(\alpha(b))}\alpha L_{\sigma(a)}$, using $(L_a)^\dagger = L_{\sigma(a)}$, $(R_b)^\dagger = R_{\sigma(b)}$ and $\alpha^\dagger = \alpha$ from $\tau\circ\alpha = \tau$. Applying to $x$ gives $\alpha(\sigma(a)\,x)\,\sigma(\alpha(b)) = \sigma(\alpha(a))\,\alpha(x)\,\sigma(\alpha(b)) = \delta(a)\,\alpha(x)\,\delta(b)$, which is $\Sigma^\alpha_{\delta(a),\delta(b)}(x)$; the double adjoint is $\delta^2 = \mathrm{id}$.</p>
@@ -96,7 +96,7 @@ $$</p>
 <h2 id="the-unitarity-condition">The Unitarity Condition</h2>
 <p><strong>Theorem (the exact condition).</strong> The signed sandwich is <strong>unitary</strong> for the form of the category,</p>
 <p>$$
-\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a,b}\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \mathrm{id} ,
+\boxed{\;\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a,b}\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \mathrm{id}\;} ,
 $$</p>
 <p>exactly when the two products are central and their products with the complements are the unit:</p>
 <p>$$
@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-equality-criterion-and-the-inner-case">The Equality Criterion and the Inner Case</h2>
 <p><strong>Theorem (the equality of two sandwiches).</strong> For units $a,b,c,d$, two signed sandwiches agree as operators,</p>
 <p>$$
-\Sigma^\alpha_{a,b} = \Sigma^\alpha_{c,d} \iff (c, d) = (\lambda a, \lambda^{-1}b) \text{ for some } \lambda\in Z(R)^\times .
+\boxed{\;\Sigma^\alpha_{a,b} = \Sigma^\alpha_{c,d} \iff (c, d) = (\lambda a, \lambda^{-1}b) \text{ for some } \lambda\in Z(R)^\times\;} .
 $$</p>
 <p>Hence the parametrisation has kernel the central units embedded as $z\mapsto(z,z^{-1})$, and it is injective on the pairs modulo the action $(a,b)\mapsto(za,z^{-1}b)$ of $Z(R)^\times$; the neutral element of the signed family is $\Sigma^\alpha_{1,1} = \alpha$.</p>
 <p><strong>Proof.</strong> The operator $\Sigma^\alpha_{a,b}$ is the tensor $a\otimes b$ acting by $x\mapsto a\alpha(x)b$; since $\alpha$ is onto, equality of two signed sandwiches is equality of the unsigned sandwiches $\Sigma_{a,b} = \Sigma_{c,d}$, that is $axb = cxd$ for all $x$. Setting $x = a^{-1}wd^{-1}$ gives $wd^{-1}b = ca^{-1}w$ for all $w$, so $ca^{-1} = d^{-1}b = z$ is central and $c = za$, $b = zd$, that is $d = z^{-1}b$; conversely a central $z$ gives $cxd = zaxz^{-1}b = axb$. The kernel is the case $c = d = 1$ and the neutral statement is $\Sigma^\alpha_{1,1} = \alpha$.</p>

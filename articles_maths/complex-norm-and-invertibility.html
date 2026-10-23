@@ -88,8 +88,7 @@ $$</p>
 <p>The complex norm is a genuine positive-definite quadratic form.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The norm is multiplicative:</p>
-<p>$$
-\langle Q_1 Q_2\rangle_{*} = \langle Q_1\rangle_{*} \, \langle Q_2\rangle_{*}.
+<p>$$ \boxed{\;\langle Q_1 Q_2\rangle_{*} = \langle Q_1\rangle_{*} \, \langle Q_2\rangle_{*}\;}.
 $$</p>
 <p><strong>Proof.</strong> Compute</p>
 <p>$$
@@ -169,8 +168,7 @@ $$</p>
 <p>The criterion $\langle Q\rangle_{*} \neq 0$ is equivalent to the elementary statement $Q \neq 0$ because the norm is definite.</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
 <p>For $Q \neq 0$ the inverse is</p>
-<p>$$
-Q^{-1} = \frac{\bar{Q}}{\langle Q\rangle_{*}} = \frac{q - i q'}{q^2+q'^2} = \frac{q}{q^2+q'^2} - \frac{q'}{q^2+q'^2} i .
+<p>$$ \boxed{\;Q^{-1} = \frac{\bar{Q}}{\langle Q\rangle_{*}} = \frac{q - i q'}{q^2+q'^2} = \frac{q}{q^2+q'^2} - \frac{q'}{q^2+q'^2} i \;}.
 $$</p>
 <p><strong>Proof.</strong> The verification is the computation in the first part of the proof of the criterion.</p>
 <p><strong>Corollary.</strong> If $Q$ is invertible then so is $\bar{Q}$, and $(\bar{Q})^{-1} = \overline{Q^{-1}}$. If $Q$ is invertible then so is $Q^{-1}$, and $(Q^{-1})^{-1} = Q$.</p>
@@ -201,8 +199,7 @@ $$</p>
 <p>The unit group is the base case of the family: below it lies only the non-unit $0$, and every nonzero element is a unit because the algebra is a field.</p>
 <h3 id="the-polar-split-of-the-group-of-units">The Polar Split of the Group of Units</h3>
 <p><strong>Theorem.</strong> The map</p>
-<p>$$
-\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( \sqrt{\langle Q\rangle_{*}}, \; Q/\sqrt{\langle Q\rangle_{*}} \bigr),
+<p>$$ \boxed{\;\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( \sqrt{\langle Q\rangle_{*}}, \; Q/\sqrt{\langle Q\rangle_{*}} \bigr)\;},
 $$</p>
 <p>where $\mathrm{U}(1) = \{ u \in \mathbb{C} : \langle u\rangle_{*} = 1 \}$ is the unit circle, is an isomorphism of topological groups.</p>
 <p><strong>Proof.</strong> The map is well defined because $\sqrt{\langle Q_1\rangle_{*}} > 0$ for $Q_1 \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \mathrm{U}(1)$ because $\langle Q_1/\sqrt{\langle Q_1\rangle_{*}}\rangle_{*} = 1$. It is a group homomorphism: $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$ and $Q_1Q_2/\sqrt{\langle Q_1Q_2\rangle_{*}} = (Q_1/\sqrt{\langle Q_1\rangle_{*}})(Q_2/\sqrt{\langle Q_2\rangle_{*}})$. Its inverse is $(r,u) \mapsto ru$, which is continuous, so it is a homeomorphism.</p>

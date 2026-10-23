@@ -149,7 +149,7 @@ $$</p>
 <p>fixing $O$; it is a purely inseparable isogeny of degree $q$, and $E(\mathbb{F}_q) = \ker(\pi - 1)$.</p>
 <p><strong>Theorem (Hasse).</strong> Let $E$ be an elliptic curve over $\mathbb{F}_q$ and $a_q = q + 1 - \lvert E(\mathbb{F}_q)\rvert$. Then</p>
 <p>$$
-\lvert a_q \rvert \leq 2\sqrt q , \qquad \pi^2 - a_q\pi + q = 0 \quad \text{in } \operatorname{End}(E),
+\boxed{\;\lvert a_q \rvert \leq 2\sqrt q , \qquad \pi^2 - a_q\pi + q = 0 \quad \text{in } \operatorname{End}(E)\;},
 $$</p>
 <p>so that $\pi$ satisfies $\pi\hat\pi = q$, with $\hat\pi$ the dual isogeny; the number $a_q$ is the trace $\pi + \hat\pi$ and $q$ is the norm $\pi\hat\pi$, and the displayed inequality is equivalent to the positivity of the degrees $\deg(\pi-m) = m^2-a_qm+q$ for all integers $m$, which is the elementary proof of the bound.</p>
 <p><strong>Proof sketch.</strong> The relation $\pi^2 - a_q\pi + q = 0$ is proved by comparing degrees in $\operatorname{End}(E)$, using $\deg(\pi - 1) = \lvert E(\mathbb{F}_q)\rvert$ together with the identity $\deg(\pi-m) = \deg\pi - m(\pi + \hat\pi) + m^2$ for the reduced trace; the bound then follows from the positivity of the degrees $\deg(\pi - m) \geq 0$ at suitable integers $m$, since $\pi\bar\pi = q$ forces $a_q^2 \leq 4q$; no analysis enters. The same bound is the genus-one case of the Riemann hypothesis for the zeta function of a curve, whose analytic formulation is stated, and belongs to Part III.</p>
@@ -172,7 +172,7 @@ $$</p>
 <h3 id="mordellweil-and-nagelllutz">Mordell–Weil and Nagell–Lutz</h3>
 <p><strong>Theorem (Mordell–Weil).</strong> Let $K$ be a number field and $E$ an elliptic curve over $K$. Then $E(K)$ is a finitely generated abelian group,</p>
 <p>$$
-E(K) \cong \mathbb{Z}^r \oplus E(K)_{\mathrm{tors}},
+\boxed{\;E(K) \cong \mathbb{Z}^r \oplus E(K)_{\mathrm{tors}}\;},
 $$</p>
 <p>where $r$ is the <strong>rank</strong> of $E$ over $K$ and $E(K)_{\mathrm{tors}}$ the finite torsion subgroup. The proof proceeds in two steps: the <strong>weak Mordell–Weil theorem</strong>, that $E(K)/mE(K)$ is finite for every $m \geq 2$, proved by Kummer theory of <em>Kummer Theory</em> applied to the extension $K(E[m])/K$; and the descent argument, which uses the theory of heights. <strong>A height is built from absolute values</strong>, so its theory, and with it the second step of the proof, belongs to Part II, where absolute values and their products over the places are available; the statement is recorded here.</p>
 <p><strong>Theorem (Nagell–Lutz).</strong> Let $E$ be given by $y^2 = x^3 + ax + b$ with $a, b \in \mathbb{Z}$, and let $P = (x,y) \in E(\mathbb{Q})$ with $P \neq O$.</p>
@@ -183,7 +183,7 @@ $$</p>
 <h3 id="torsion-and-reduction">Torsion and Reduction</h3>
 <p><strong>Theorem (Mazur).</strong> Let $E$ be an elliptic curve over $\mathbb{Q}$. Then $E(\mathbb{Q})_{\mathrm{tors}}$ is isomorphic to one of the fifteen groups</p>
 <p>$$
-\mathbb{Z}/n\mathbb{Z}\ (1 \leq n \leq 10,\ n = 12), \qquad (\mathbb{Z}/2\mathbb{Z})\times(\mathbb{Z}/2n\mathbb{Z})\ (1 \leq n \leq 4).
+\boxed{\;\mathbb{Z}/n\mathbb{Z}\ (1 \leq n \leq 10,\ n = 12), \qquad (\mathbb{Z}/2\mathbb{Z})\times(\mathbb{Z}/2n\mathbb{Z})\ (1 \leq n \leq 4)\;}.
 $$</p>
 <p><strong>Theorem (reduction).</strong> Let $K$ be a number field, $\mathrm{P}$ a nonzero prime of $\mathcal{O}_K$ of residue characteristic $p$, and $E$ an elliptic curve over $K$ with a Weierstrass equation integral at $\mathrm{P}$ whose discriminant is not divisible by $\mathrm{P}$, so that the reduced equation is nonsingular and defines an elliptic curve $E^{\mathrm{res}}$ over $\kappa(\mathrm{P})$. Then the reduction map $E(K) \to E^{\mathrm{res}}(\kappa(\mathrm{P}))$ is injective on the torsion subgroup of order coprime to $p$, and</p>
 <p>$$

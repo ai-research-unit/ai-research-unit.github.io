@@ -101,7 +101,9 @@ $$
 the conjugate kernel $\overline{W(t,\omega)}=W(t,-\omega)$ inverting $W(t,\omega)$, so that no constant factor enters with the frequency convention $e^{-2\pi\rho\omega t}$.</p>
 <p><strong>Theorem (the transform pair and the basic theorems).</strong> For $f$ in the Schwartz class the transform pair holds, $\hat f$ is continuous and vanishes at infinity, the inversion is valid pointwise, and the Plancherel identity holds:
 $$
-\int_{\mathbb{R}}\lvert\hat f(\omega)\rvert^{2}_{K}\,\mathrm{d}\omega=\int_{\mathbb{R}}\lvert f(t)\rvert^{2}_{K}\,\mathrm{d}t ,
+\boxed{\;
+\int_{\mathbb{R}}\lvert\hat f(\omega)\rvert^{2}_{K}\,\mathrm{d}\omega=\int_{\mathbb{R}}\lvert f(t)\rvert^{2}_{K}\,\mathrm{d}t
+\;},
 $$
 where $\lvert\cdot\rvert_{K}=\sqrt{K(\cdot)}$ is the Euclidean norm of the algebra.</p>
 <p><em>Proof.</em> In each idempotent coordinate the transform is the ordinary complex Fourier transform of the complex signal $g_{j}$, since the kernel is the complex kernel in that coordinate; the classical theory gives continuity, decay, inversion and the Plancherel identity in each coordinate, and the two identities add because the Euclidean norm is the sum of the two coordinate moduli, $\lvert X\rvert_{K}^{2}=\lvert x_{1}\rvert^{2}+\lvert x_{2}\rvert^{2}$ for $X=x_{1}\Pi_++x_{2}\Pi_-$.</p>
@@ -118,7 +120,9 @@ where $\hat g_{1}$ and $\hat g_{2}$ are the ordinary complex Fourier transforms 
 <p><strong>Definition.</strong> The <strong>convolution</strong> of two signals is $(f*h)(t)=\int_{\mathbb{R}}f(s)h(t-s)\,\mathrm{d}s$.</p>
 <p><strong>Theorem (the convolution theorem).</strong> For $f,h\in L^{1}$, the convolution is in $L^{1}$ and
 $$
-\widehat{f*h}(\omega)=\hat f(\omega)\,\hat h(\omega),
+\boxed{\;
+\widehat{f*h}(\omega)=\hat f(\omega)\,\hat h(\omega)
+\;},
 $$
 and the convolution splits in the idempotent coordinates into the two ordinary complex convolutions.</p>
 <p><em>Proof.</em> Interchanging the order of integration and using the kernel identity $W(t,\omega)=W(s,\omega)W(t-s,\omega)$, valid because the kernel is multiplicative in the exponent, gives the display; the interchange is justified by the integrability, and the commutativity of the algebra makes the order of the factors immaterial.</p>
@@ -127,7 +131,9 @@ and the convolution splits in the idempotent coordinates into the two ordinary c
 <h2 id="the-relation-to-the-differential-operators">The Relation to the Differential Operators</h2>
 <p><strong>Theorem (the derivative and the Laplacian).</strong> If $f$ is differentiable with integrable derivative, then
 $$
-\widehat{\partial/\partial t\,f}(\omega)=2\pi\rho\,\omega\,\hat f(\omega),
+\boxed{\;
+\widehat{\partial/\partial t\,f}(\omega)=2\pi\rho\,\omega\,\hat f(\omega)
+\;},
 $$
 so the derivative becomes multiplication by the algebra element $2\pi\rho\omega$, and the transform in the four real coordinates of the algebra replaces the Euclidean Laplacian by the multiplier
 $$

@@ -85,7 +85,7 @@ $$
 The left and right multiplication maps are $L : E \to \operatorname{End}(E)$, $A \mapsto L_A$ and $R : E \to \operatorname{End}(E)$, $B \mapsto R_B$.</p>
 <p><strong>Proposition (composition).</strong> For all $A, B \in E$,
 $$
-L_A L_B = L_{AB}, \qquad R_A R_B = R_{AB}, \qquad L_A R_B = R_B L_A , \qquad L_A + R_B = R_B + L_A .
+\boxed{\;L_A L_B = L_{AB}, \qquad R_A R_B = R_{AB}, \qquad L_A R_B = R_B L_A , \qquad L_A + R_B = R_B + L_A\;} .
 $$
 In particular $L$ is a representation of the algebra $E$ on itself, $R$ is a representation of the opposite algebra $E^{\mathrm{opp}}$, and the left and right images commute; the composite action $A \otimes B \mapsto L_A R_B$ is a representation of $E \otimes_{\mathbb C} E^{\mathrm{opp}}$.</p>
 <p><strong>Proof.</strong> $L_AL_B(X) = A(BX) = (AB)X = L_{AB}(X)$ by the associativity of composition; $R_AR_B(X) = (XB)A = X(BA) = R_{BA}(X)$, which is the representation of the opposite product; and $L_AR_B(X) = A(XB) = (AX)B = R_BL_A(X)$ by associativity. The last assertion is the associativity of the action.</p>
@@ -93,7 +93,7 @@ In particular $L$ is a representation of the algebra $E$ on itself, $R$ is a rep
 <p><strong>Proof.</strong> $L_A = 0$ forces $AX = 0$ for all $X$; taking $X = \mathrm{id}$ gives $A = 0$. The image $L(E)$ is closed under composition and contains $L_{\mathrm{id}} = \mathrm{id}$, hence is a subalgebra isomorphic to $E$ by injectivity; the same holds for $R$.</p>
 <p><strong>Theorem (the double centraliser).</strong> The commutant of $L(E)$ in $\operatorname{End}(E)$ is $R(E)$, and the commutant of $R(E)$ is $L(E)$; moreover
 $$
-\operatorname{End}(E) = L(E)\,R(E) \cong E \otimes_{\mathbb C} E^{\mathrm{opp}} ,
+\boxed{\;\operatorname{End}(E) = L(E)\,R(E) \cong E \otimes_{\mathbb C} E^{\mathrm{opp}}\;} ,
 $$
 so every $\mathbb{C}$-linear operator on $E$ is a sum of two-sided multiplications.</p>
 <p><strong>Proof.</strong> A map $T$ commuting with every $L_A$ is determined by $\Phi = T(\mathrm{id})$, since $T(X) = T(L_X\,\mathrm{id}) = L_X T(\mathrm{id}) = X\Phi = R_\Phi(X)$; this gives the commutant of $L(E)$ as $R(E)$, and symmetrically. For the spanning statement, both spaces have complex dimension $n^4 = \dim E \otimes E$ — indeed $\dim\operatorname{End}(E) = (n^2)^2 = n^4 = \dim E \cdot \dim E$ — and the map $A \otimes B \mapsto L_A R_B$ is injective because it sends the basis $E_{ij} \otimes E_{kl}$ to the operator $X \mapsto E_{ij}XE_{kl}$, whose matrix units are independent; an injective linear map between spaces of the same finite dimension is an isomorphism. This is the double centraliser theorem of <em>Algebras of Endomorphisms</em>.</p>
@@ -109,7 +109,7 @@ where $A^{\dagger}$ is the adjoint of $A$ for $h$, $h(Au,v) = h(u,A^{\dagger}v)$
 <p><strong>Proof.</strong> $\langle X,Y\rangle = \operatorname{tr}(X^\dagger Y)$ and $\overline{\langle Y,X\rangle} = \overline{\operatorname{tr}(Y^\dagger X)} = \operatorname{tr}((Y^\dagger X)^\dagger) = \operatorname{tr}(X^\dagger Y)$, using $(Y^\dagger X)^\dagger = X^\dagger Y$; the diagonal is the sum of the diagonal entries of $X^\dagger X$, which in an orthonormal basis of $V$ is $\sum_{i,j}|X_{ij}|^2 > 0$ for $X\neq0$. This is the Hilbert–Schmidt form of <em>Hilbert Algebras</em>.</p>
 <p><strong>Proposition (the unitary one-sided multiplications are isometries).</strong> Let $U \in E$ be unitary for $h$, $U^{\dagger}U = UU^{\dagger} = \mathrm{id}$. Then $L_U$ and $R_U$ are isometries of the trace form,
 $$
-\langle L_U X, L_U Y\rangle = \langle X, Y\rangle, \qquad \langle R_U X, R_U Y\rangle = \langle X, Y\rangle ,
+\boxed{\;\langle L_U X, L_U Y\rangle = \langle X, Y\rangle, \qquad \langle R_U X, R_U Y\rangle = \langle X, Y\rangle\;} ,
 $$
 and the maps $U \mapsto L_U$ and $U \mapsto R_U$ are commuting unitary representations of the unitary group $\mathrm{U}(V,h)$ on the Hermitian space $E$.</p>
 <p><strong>Proof.</strong> $\langle L_UX,L_UY\rangle = \operatorname{tr}((UX)^\dagger UY) = \operatorname{tr}(X^\dagger U^\dagger U Y) = \operatorname{tr}(X^\dagger Y)$, and likewise on the right with $U^\dagger U$ placed on the other side; the representation property is the composition law, and the commutativity of the two images is the proposition above. The unitary group and the involution are <em>The Unitary and Symplectic Groups</em> and <em>Hermitian Geometry and the Unitary Group</em>.</p>

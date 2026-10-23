@@ -101,7 +101,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $N_1,\dots,N_k$ be submodules of $M$. Then $M$ is their <strong>internal direct sum</strong>, written $M=N_1\oplus\cdots\oplus N_k$, if every $m \in M$ has a unique expression $m=n_1+\cdots+n_k$ with $n_i \in N_i$.</p>
 <p><strong>Proposition.</strong> $M=N_1\oplus\cdots\oplus N_k$ if and only if $M=N_1+\cdots+N_k$ and</p>
 <p>$$
-N_i \cap \Bigl(\sum_{j \neq i} N_j\Bigr)=0 \qquad \text{for every } i.
+\boxed{\;N_i \cap \Bigl(\sum_{j \neq i} N_j\Bigr)=0 \qquad \text{for every } i\;}.
 $$</p>
 <p><em>Proof.</em> Uniqueness fails exactly when two expressions differ, and their difference is a nonzero element of one $N_i$ lying in the sum of the others, with signs absorbed.</p>
 <p>For two submodules the condition reduces to $M=N_1+N_2$ and $N_1\cap N_2=0$. The external sum and the internal sum are identified by sending $(n_i)$ to $\sum_i \iota_i(n_i)$, so no distinction is needed once the summands are submodules of a common module.</p>
@@ -146,7 +146,7 @@ $$</p>
 <p><em>Proof.</em> Suppose $R^m \cong R^n$, and let $\mathrm{M}$ be a maximal ideal, which exists by Zorn's lemma. The field $k=R/\mathrm{M}$ is an $R$-module via $r\cdot \bar{s}=\overline{rs}$, and $k \otimes_R R^j \cong k^j$ for every $j$ because $k \otimes_R R \cong k$ and tensor products distribute over finite direct sums. Applying the functor $k \otimes_R -$ to the isomorphism $R^m \cong R^n$ gives an isomorphism $k^m \cong k^n$ of $k$-vector spaces, so $m=n$ by the field case.</p>
 <p>The proof uses only that $-\otimes_R k$ is a functor, not that it is exact; this is why it applies without flatness hypotheses. Two consequences are worth naming. First, rank is additive over direct sums: if $L$ and $L'$ are free then so is $L \oplus L'$, with basis the disjoint union, and</p>
 <p>$$
-\operatorname{rk}_R (L \oplus L')=\operatorname{rk}_R L + \operatorname{rk}_R L'.
+\boxed{\;\operatorname{rk}_R (L \oplus L')=\operatorname{rk}_R L + \operatorname{rk}_R L'\;}.
 $$</p>
 <p>Second, a free module has a well-defined rank but a submodule of a free module need not be free, so "rank of a submodule" is not available in general.</p>
 <h3 id="rank-over-division-rings-and-the-failure-of-ibn">Rank over Division Rings and the Failure of IBN</h3>
@@ -171,7 +171,7 @@ $$</p>
 <p><strong>Lemma (Nakayama).</strong> Let $I \subseteq J(R)$ be an ideal contained in the Jacobson radical and let $M$ be a finitely generated $R$-module with $IM=M$. Then $M=0$. More generally, if $N \subseteq M$ is a submodule with $M=N+IM$ then $M=N$.</p>
 <p><em>Proof.</em> Suppose $M \neq 0$ and let $m_1,\dots,m_k$ be a minimal generating set. From $M=IM$ we get $m_k=\sum_i a_i m_i$ with $a_i \in I$; rearranging,</p>
 <p>$$
-(1-a_k)m_k=\sum_{i<k} a_i m_i.
+\boxed{\;(1-a_k)m_k=\sum_{i<k} a_i m_i\;}.
 $$</p>
 <p>Since $a_k \in J(R)$, the element $1-a_k$ is a unit, so $m_k$ lies in the span of $m_1,\dots,m_{k-1}$, contradicting minimality. The second statement applies the first to $M/N$.</p>
 <p>For a local ring $(R,\mathrm{M})$ one takes $I=\mathrm{M}$, and Nakayama then says that a finitely generated module over a local ring has a minimal generating set of exactly $\dim_{k}(M/\mathrm{M}M)$ elements, where $k=R/\mathrm{M}$; this number is the <strong>minimal number of generators</strong>. Nakayama is used in the structure theory and in the theory of projective modules.</p>

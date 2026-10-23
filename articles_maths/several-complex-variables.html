@@ -148,8 +148,7 @@ $$</p>
 $$</p>
 <p>where $\Omega^{0,m}$ is the sheaf of $(0,q)$-forms and $\bar\partial$ is the Cauchy–Riemann operator; the complex is exact, so that the kernel of $\bar\partial$ on $\Omega^{0,m}$ is the image of $\bar\partial$ on $\Omega^{0,m-1}$.</p>
 <p><strong>Theorem (Dolbeault).</strong> For a domain $D \subseteq \mathbb{C}^n$ and $n, m \geq 0$ there is a natural isomorphism</p>
-<p>$$
-H^{n,m}_{\bar\partial}(D) \cong H^q(D, \Omega^n),
+<p>$$ \boxed{\;H^{n,m}_{\bar\partial}(D) \cong H^q(D, \Omega^n)\;},
 $$</p>
 <p>where the left-hand side is the cohomology of the Dolbeault complex of $(n,m)$-forms and the right-hand side is the sheaf cohomology of the holomorphic $n$-forms.</p>
 <p><strong>Proof.</strong> The Dolbeault complex is a fine resolution of the sheaf $\Omega^n$, and the comparison theorem for resolutions by fine sheaves identifies its cohomology with the sheaf cohomology; the construction is in <em>Sheaf Cohomology</em>.</p>
@@ -172,8 +171,7 @@ $$</p>
 <h3 id="cartans-theorems">Cartan's Theorems</h3>
 <p><strong>Theorem (Cartan's Theorem A).</strong> Let $X$ be a Stein manifold and let $\mathcal{F}$ be a coherent analytic sheaf on $X$. Then the global sections of $\mathcal{F}$ generate every stalk: for every $x \in X$ the evaluation $H^0(X, \mathcal{F}) \to \mathcal{F}_x$ is surjective.</p>
 <p><strong>Theorem (Cartan's Theorem B).</strong> Let $X$ be a Stein manifold and let $\mathcal{F}$ be a coherent analytic sheaf on $X$. Then</p>
-<p>$$
-H^q(X, \mathcal{F}) = 0 \qquad \text{for all } m \geq 1 .
+<p>$$ \boxed{\;H^q(X, \mathcal{F}) = 0 \qquad \text{for all } m \geq 1 \;}.
 $$</p>
 <p><strong>Proof.</strong> The theorems are Cartan's, proved from Oka's coherence theorem and the solution of the $\bar\partial$-equation; the sheaf-theoretic proof is in <em>Sheaf Cohomology</em>.</p>
 <p><strong>Corollary.</strong> On a Stein manifold, $H^1(X, \mathcal{O}) = 0$, the first Cousin problem is always solvable, and $H^1(X, \mathcal{O}^*) \cong H^2(X, \mathbb{Z})$, so the second Cousin problem is obstructed exactly by an integral cohomology class.</p>
@@ -201,8 +199,7 @@ $$</p>
 <h3 id="the-weierstrass-preparation-theorem">The Weierstrass Preparation Theorem</h3>
 <p><strong>Definition.</strong> A <strong>Weierstrass polynomial</strong> of degree $k$ in $Q_n$ over the ring $\mathcal{O}_{\mathbb{C}^{n-1},0}$ is a polynomial $w(Q_{<n}) = Q_n^k + a_1(Q_{<n})Q_n^{k-1} + \cdots + a_k(Q_{<n})$ with coefficients $a_i$ holomorphic near $0$ and vanishing at $Q_{<n} = 0$. A germ $f \in \mathcal{O}_{\mathbb{C}^n,0}$ is <strong>regular of order $k$ in $Q_n$</strong> if $f(0, Q_n)$ has a zero of order $k$ at $Q_n = 0$.</p>
 <p><strong>Theorem (Weierstrass preparation and division).</strong> Let $f \in \mathcal{O}_{\mathbb{C}^n,0}$ be regular of order $k$ in $Q_n$. Then $f$ factors uniquely as</p>
-<p>$$
-f = u \cdot w ,
+<p>$$ \boxed{\;f = u \cdot w \;},
 $$</p>
 <p>where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $Q_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $m$ and $r$ with $g = mf + r$, where $r$ is a polynomial in $Q_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.</p>
 <p><strong>Proof.</strong> The division theorem is proved by the one-variable Weierstrass division applied to the holomorphic functions of $Q_n$ with parameters $Q_{<n}$, using the regularity to divide the polynomial part; the preparation theorem is the special case $g = Q_n^k$. The details are in the references.</p>

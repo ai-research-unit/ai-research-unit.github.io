@@ -91,7 +91,7 @@ $$</p>
 <p><strong>Definition.</strong> An <strong>idempotent</strong> of the block is an element with $\tilde\pi\bullet\tilde\pi=\tilde\pi$.</p>
 <p><strong>Theorem.</strong> The idempotents of the block are exactly</p>
 <p>$$
-\tilde\pi\in\{0,\ e_t\},
+\boxed{\;\tilde\pi\in\{0,\ e_t\}\;},
 $$</p>
 <p>the two trivial idempotents; there is no nontrivial one.</p>
 <p><em>Proof.</em> The square is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_t-1)\vec\pi=0$, so either $\vec\pi=0$ and the scalar part gives $\pi_t^2=\pi_t$, giving $\tilde\pi\in\{0,e_t\}$, or $\pi_t=\tfrac12$ and the scalar part gives $|\vec\pi|^2=-\tfrac14$, with no real solution.</p>
@@ -100,7 +100,7 @@ $$</p>
 <h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
 <p><strong>Theorem (the cubic identity).</strong> The multiplication operator satisfies the cubic Peirce identity</p>
 <p>$$
-2\,(L^{\bullet}_{\tilde\pi})^3-3\,(L^{\bullet}_{\tilde\pi})^2+L^{\bullet}_{\tilde\pi}=0
+\boxed{\;2\,(L^{\bullet}_{\tilde\pi})^3-3\,(L^{\bullet}_{\tilde\pi})^2+L^{\bullet}_{\tilde\pi}=0\;}
 $$</p>
 <p>at every idempotent $\tilde\pi$, so the spectrum is contained in $\{0,\tfrac12,1\}$.</p>
 <p><em>Proof.</em> The identity holds in every Jordan algebra for an idempotent, by the Peirce theory of <em>Jordan Algebras</em>; in the block it is checked directly from $L^{\bullet}_{e_t}=\mathrm{id}$ and $L^{\bullet}_{0}=0$.</p>
@@ -116,7 +116,7 @@ $$</p>
 <h2 id="the-jordan-inverse">The Jordan Inverse</h2>
 <p><strong>Theorem.</strong> An element is invertible exactly when $\langle\tilde q\rangle_{\natural}\neq0$, that is, when $\tilde q\neq0$, and the inverse is</p>
 <p>$$
-\tilde q^{-1}=\frac{T(\tilde q)e_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{2q_te_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}} .
+\boxed{\;\tilde q^{-1}=\frac{T(\tilde q)e_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{2q_te_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}}\;}.
 $$</p>
 <p><em>Proof.</em> This is <em>Norm and Invertibility in the Symmetric Plain Algebra</em>; the inverse satisfies $\tilde q\bullet\tilde q^{-1}=e_t$ and $\tilde q^{\bullet2}\bullet\tilde q^{-1}=\tilde q$.</p>
 <p><strong>Proposition (the two-sidedness and the failure of multiplicativity).</strong> The inverse is two-sided and involutive, $(\tilde q^{-1})^{-1}=\tilde q$; but the inversion is not a homomorphism, and the invertible elements do not form a group, since $\vec e_x,\vec e_y$ are invertible and $\vec e_x\bullet \vec e_y=0$ has no inverse.</p>
@@ -130,8 +130,8 @@ U_{\tilde q_1}(\tilde q_2)=2\,\tilde q_1\bullet(\tilde q_1\bullet\tilde q_2)-\ti
 $$</p>
 <p><strong>Theorem.</strong> The quadratic representation is the plain sandwich operator and it is multiplicative in the norm:</p>
 <p>$$
-U_{\tilde q_1}(\tilde q_2)=\tilde q_1\,\tilde q_2\,\tilde q_1,\qquad
-N\bigl(U_{\tilde q_1}\tilde q_2\bigr)=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}.
+\boxed{\;U_{\tilde q_1}(\tilde q_2)=\tilde q_1\,\tilde q_2\,\tilde q_1,\qquad
+N\bigl(U_{\tilde q_1}\tilde q_2\bigr)=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}\;}.
 $$</p>
 <p><em>Proof.</em> Expanding $U_{\tilde q_1}(\tilde q_2)$ in the symmetrised plain product, $U_{\tilde q_1}(\tilde q_2)=\tfrac12\bigl(\tilde q_1(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)+(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)\tilde q_1\bigr)-\tfrac12(\tilde q_1^2\tilde q_2+\tilde q_2\tilde q_1^2)=\tilde q_1\tilde q_2\tilde q_1$ by the associativity of the plain product. The norm identity is the multiplicativity of $\langle\cdot\rangle_{\natural}$ applied twice, $\langle\tilde q_1\tilde q_2\tilde q_1\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$.</p>
 <p><strong>Remark (the effect on the norm).</strong> For a nonzero $\tilde q$ the operator $U_{\tilde q}$ is invertible with inverse $U_{\tilde q^{-1}}$, and $U_{\tilde q^{-1}}=U_{\tilde q}^{-1}$; the norm identity is the degree-two form of the composite, and it is the quadratic representation statement of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em> read on the block.</p>

@@ -118,7 +118,7 @@ $$</p>
 $$</p>
 <p>which <strong>splits</strong>, though not naturally. The map $\alpha$ sends the class of a cocycle $\varphi$ to the homomorphism induced by $\varphi$ on homology classes, and is called the <strong>Kronecker</strong> or evaluation map. Consequently there is a (non-natural) isomorphism</p>
 <p>$$
-H^n(X;G) \cong \operatorname{Hom}_R\bigl(H_n(X;R),G\bigr) \oplus \operatorname{Ext}^1_R\bigl(H_{n-1}(X;R),G\bigr).
+\boxed{\;H^n(X;G) \cong \operatorname{Hom}_R\bigl(H_n(X;R),G\bigr) \oplus \operatorname{Ext}^1_R\bigl(H_{n-1}(X;R),G\bigr)\;}.
 $$</p>
 <p>The functors $\operatorname{Ext}^1_R$ and the long exact sequence it carries are the subject of the planned <em>Ext and Tor</em> and <em>Derived Functors</em> of Part I, which are being written in parallel; only their defining property is used here.</p>
 <p><em>Proof sketch.</em> Let $C_* = C_*(X;R)$, let $Z_n \subseteq C_n$ be the cycles and $B_n \subseteq C_n$ the boundaries, so that $0 \to B_n \to Z_n \to H_n \to 0$ and $0 \to Z_n \to C_n \to B_{n-1} \to 0$ are short exact. Applying $\operatorname{Hom}_R(-,G)$ to the second sequence and using that $C_n$ is free, hence that $\operatorname{Ext}^1_R(C_n,G) = 0$, gives $\operatorname{coker}\bigl(\operatorname{Hom}(C_n,G)\to\operatorname{Hom}(Z_n,G)\bigr) \cong \operatorname{Ext}^1_R(B_{n-1},G)$; applying it to the first gives the identity $H^n = \operatorname{coker}\bigl(\operatorname{Hom}(C_n,G) \to \operatorname{Hom}(Z_n,G)\bigr)$. Combining, $H^n \cong \operatorname{Ext}^1_R(B_{n-1},G)$, and the sequence $0 \to B_{n-1}\to Z_{n-1} \to H_{n-1}\to 0$ with $\operatorname{Hom}(Z_{n-1},G)$ analysed in the same way produces the four-term exact sequence displayed. Splitting holds because $\operatorname{Hom}_R(H_n,G)$ is free when $R$ is a principal ideal domain and $H_n$ is finitely generated, and in general the sequence splits because the Ext term is a direct summand in the relevant cases; the splitting depends on choices, which is why it is not natural.</p>
@@ -129,12 +129,12 @@ $$</p>
 <p>naturally; with $G = F$ this is the duality $H^n(X;F) \cong H_n(X;F)^*$ between cohomology and the linear dual of homology. In particular $\dim_F H^n(X;F) = \dim_F H_n(X;F)$ for each $n$.</p>
 <p><strong>Corollary (integral coefficients).</strong> For $G = \mathbb{Z}$ and $R = \mathbb{Z}$, the structure theorem for finitely generated abelian groups gives</p>
 <p>$$
-H^n(X;\mathbb{Z}) \cong \bigl(H_n(X;\mathbb{Z})/\text{torsion}\bigr) \oplus \operatorname{Torsion}\bigl(H_{n-1}(X;\mathbb{Z})\bigr),
+\boxed{\;H^n(X;\mathbb{Z}) \cong \bigl(H_n(X;\mathbb{Z})/\text{torsion}\bigr) \oplus \operatorname{Torsion}\bigl(H_{n-1}(X;\mathbb{Z})\bigr)\;},
 $$</p>
 <p>so the free parts of $H^n$ and $H_n$ agree and the torsion of $H^n$ in degree $n$ is the torsion of $H_{n-1}$: <strong>cohomological torsion is shifted down by one degree relative to homology</strong>. Thus $\mathbb{RP}^2$ has $H_0 \cong \mathbb{Z}$, $H_1 \cong \mathbb{Z}/2$, $H_2 = 0$ and dually $H^0 \cong \mathbb{Z}$, $H^1 = 0$, $H^2 \cong \mathbb{Z}/2$.</p>
 <p><strong>Corollary (universal coefficient theorem, homology).</strong> The same argument applied to the tensor product gives the homology version,</p>
 <p>$$
-0 \to H_n(X;R) \otimes_R G \to H_n(X;G) \to \operatorname{Tor}_1^R\bigl(H_{n-1}(X;R),G\bigr) \to 0,
+\boxed{\;0 \to H_n(X;R) \otimes_R G \to H_n(X;G) \to \operatorname{Tor}_1^R\bigl(H_{n-1}(X;R),G\bigr) \to 0\;},
 $$</p>
 <p>splitting unnaturally, with $\operatorname{Tor}_1^R$ the torsion functor of Part I's <em>Ext and Tor</em>, written in parallel.</p>
 <p><strong>Remark.</strong> The failure of naturality is not a technicality: the splitting requires a choice of splitting of the surjections $C_n \to B_{n-1}$, and different choices produce different isomorphisms, related by the action of $\operatorname{Hom}(H_n,G)$ shifted by natural transformations. The non-naturality is the reason the Bockstein homomorphism below is not induced by a map of spaces.</p>

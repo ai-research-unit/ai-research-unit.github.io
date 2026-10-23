@@ -93,13 +93,13 @@ $$</p>
 <h3 id="the-minkowski-gauge">The Minkowski Gauge</h3>
 <p><strong>Definition.</strong> Let $A \subseteq E$ be an <strong>absorbing</strong> set, that is, a set such that for every $x \in E$ there is $t > 0$ with $x \in tA$. The <strong>gauge</strong> (or <strong>Minkowski functional</strong>) of $A$ is</p>
 <p>$$
-p_A(x) = \inf\{t > 0 : x \in tA\} .
+\boxed{\;p_A(x) = \inf\{t > 0 : x \in tA\}\;} .
 $$</p>
 <p><strong>Proposition.</strong> Let $A$ be a convex absorbing set, so that $p_A$ is finite-valued.</p>
 <p><strong>(a)</strong> If $A$ is also <strong>balanced</strong>, that is, $\lambda A \subseteq A$ for $\lvert \lambda \rvert \leq 1$, then $p_A$ is a seminorm; conversely, if $A$ is closed and $p_A$ is a seminorm then $A = \{p_A \leq 1\}$ and $A$ is balanced. Closedness is needed: in $E = \mathbb{R}$ the convex absorbing set $A = (-1, 1]$ has gauge $p_A = \lvert \cdot \rvert$, a norm, while $A$ is not balanced and $A \neq \{p_A \leq 1\} = [-1,1]$.</p>
 <p><strong>(b)</strong> If $A$ is convex, balanced and absorbing, then</p>
 <p>$$
-\{x : p_A(x) < 1\} \subseteq A \subseteq \{x : p_A(x) \leq 1\} ,
+\boxed{\;\{x : p_A(x) < 1\} \subseteq A \subseteq \{x : p_A(x) \leq 1\}\;} ,
 $$</p>
 <p>with equality $A = \{p_A \leq 1\}$ when $A$ is closed and $A = \{p_A < 1\}$ when $A$ is open.</p>
 <p><strong>(c)</strong> Conversely, if $p$ is a seminorm then $p = p_{B_p}$ with $B_p = \{p \leq 1\}$.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Proof.</strong> The real case proceeds by transfinite extension: the set of pairs $(G, g)$ with $F \subseteq G \subseteq E$ and $g$ linear on $G$ with $g \leq p$ is partially ordered by extension and is inductive, so by Zorn's lemma it has a maximal element; if its domain $G$ were not all of $E$, one adjoins a vector $x_0 \notin G$ and chooses $g(x_0)$ in the interval $[\sup_{y} (-p(-y) + g(y)), \inf_y (p(y) - g(y))]$, which is non-empty by subadditivity of $p$ and linearity of $g$ on $G$; this contradicts maximality. The complex case is reduced to the real one by taking real parts.</p>
 <p><strong>Theorem (Hahn–Banach; geometric form).</strong> Let $E$ be a locally convex space, let $A, B \subseteq E$ be non-empty disjoint convex sets. If $A$ is open, there is a continuous linear functional $f \in E'$ and a real number $\alpha$ with</p>
 <p>$$
-f(a) < \alpha \leq f(b) \qquad (a \in A, \ b \in B).
+\boxed{\;f(a) < \alpha \leq f(b) \qquad (a \in A, \ b \in B)\;}.
 $$</p>
 <p>If $A$ is compact and $B$ is closed and convex, then the separation is strict, $\sup_A f < \inf_B f$.</p>
 <p><strong>Proof.</strong> The open case reduces to the analytic form applied to the gauge of the open convex set $A - B$ after translating; the compact case follows by applying the open case to $A + \Omega$ and $-B + \Omega$ for a small neighbourhood $\Omega$ of $0$ and using compactness to obtain strictness. The details are standard.</p>

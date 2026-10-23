@@ -80,7 +80,9 @@
 $$</p>
 <p>The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial/\partial\bar A, \partial/\partial A)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_t$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and</p>
 <p>$$
-\nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) e_t .
+\boxed{\;
+\nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) e_t
+\;}.
 $$</p>
 <p>The second-order operator $\Box$ is the <strong>ultrahyperbolic operator</strong> of signature $(2,2)$: a wave operator, not a Laplacian. This single sign difference from the quaternion and biquaternion cases governs the whole of the regularity theory below.</p>
 <p><strong>Proof.</strong> Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial^2/\partial Q_\mu\partial Q_\nu$. The diagonal coefficients are $e_te_t^{\natural} = e_t$, $\vec e_x\vec e_x^{\natural} = -\vec e_x^2 = e_t$, $\vec e_y\vec e_y^{\natural} = -\vec e_y^2 = -e_t$, $\vec e_z\vec e_z^{\natural} = -\vec e_z^2 = -e_t$, giving the displayed signs; the off-diagonal coefficients come in symmetric pairs $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$, which vanish by the Clifford relations. The same computation with the factors reversed gives $\bar{\nabla}\nabla = \Box$.</p>
@@ -99,7 +101,9 @@ $$</p>
 <h2 id="the-regularity-system-is-not-elliptic">The Regularity System Is Not Elliptic</h2>
 <p><strong>Theorem.</strong> The principal symbol of $\nabla$ is $s(\xi) = \xi_t + \xi_x \vec e_x + \xi_y \vec e_y + \xi_z \vec e_z$, and</p>
 <p>$$
-s(\xi)\,s^{\natural}(\xi) = \xi_t^2 + \xi_x^2 - \xi_y^2 - \xi_z^2 = \langle \xi\rangle_{\natural} e_t,
+\boxed{\;
+s(\xi)\,s^{\natural}(\xi) = \xi_t^2 + \xi_x^2 - \xi_y^2 - \xi_z^2 = \langle \xi\rangle_{\natural} e_t
+\;},
 $$</p>
 <p>which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy–Riemann system is <strong>not elliptic</strong>: it is of ultrahyperbolic (wave) type, and its characteristic variety is exactly the null cone $\mathcal{N}$, the same set that carries the zero divisors.</p>
 <p><strong>Proof.</strong> The identity $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_t$ is the Fourier symbol of $\nabla\bar\nabla = \Box$. The symbol vanishes precisely when the quadratic form $\langle \xi\rangle_{\natural}$ vanishes, i.e. on the null cone. A first-order system is elliptic exactly when its symbol is invertible off the zero section, which fails here on a three-dimensional cone.</p>
@@ -117,7 +121,9 @@ $$</p>
 <h2 id="harmonicity-and-the-factorization-of-the-ultrahyperbolic-operator">Harmonicity and the Factorization of the Ultrahyperbolic Operator</h2>
 <p><strong>Theorem.</strong> Every regular function is <strong>harmonic</strong> for the ultrahyperbolic operator: if $\nabla F = 0$ then $\Box F = \bar{\nabla}(\nabla F) = 0$, i.e.</p>
 <p>$$
-\bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) F = 0 .
+\boxed{\;
+\bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) F = 0
+\;}.
 $$</p>
 <p>Right-regular functions are likewise harmonic, and the factorization $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ is the analogue of $\partial^2/\partial A\partial\bar A = \tfrac14 \Delta$ in one complex variable.</p>
 <p><strong>Proof.</strong> The vanishing $\Box F = 0$ is immediate from $\Box = \bar{\nabla}\nabla$ applied to $\nabla F = 0$; the right-regular case is the same identity with the factors on the other side.</p>

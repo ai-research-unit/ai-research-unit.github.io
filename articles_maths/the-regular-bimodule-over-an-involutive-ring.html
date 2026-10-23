@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> The twist of a left $A$-module $M$ is the same additive group with the right action $x \cdot a = \sigma(a)x$, written $M^{\sigma}$ (<em>Modules over an Involutive Ring</em>).</p>
 <p><strong>Proposition.</strong> The involution $\sigma$ is an isomorphism of right $A$-modules</p>
 <p>$$
-\sigma : ({}_AA)^{\sigma} \longrightarrow A_A , \qquad x \mapsto \sigma(x) ,
+\boxed{\;\sigma : ({}_AA)^{\sigma} \longrightarrow A_A , \qquad x \mapsto \sigma(x)\;} ,
 $$</p>
 <p>where $({}_AA)^{\sigma}$ carries $x \cdot a = \sigma(a)x$ and $A_A$ carries $x \cdot a = xa$. Hence the twist of the left regular module is the right regular module up to the comparison $\sigma$, and this comparison is exactly the involution.</p>
 <p><strong>Proof.</strong> The map $\sigma$ is bijective, being an involution, and for the right actions $\sigma(x \cdot a) = \sigma(\sigma(a)x) = \sigma(x)\sigma(\sigma(a)) = \sigma(x)a = \sigma(x) \cdot a$. Additivity is the additivity of $\sigma$.</p>
@@ -91,7 +91,7 @@ $$</p>
 <p>For the identity involution of a commutative ring the two actions are simply interchanged, and the $\sigma$-swap is the <strong>swap</strong> ${}^{\mathrm{sw}}{}_AA_A$, with $a \cdot x = xa$ and $x \cdot b = bx$. The involution is carried in the definition because over a noncommutative ring the two actions cannot be exchanged by themselves: the untwisted swap is not the target of $\sigma$.</p>
 <p><strong>Proposition.</strong> The involution $\sigma$ is an isomorphism of bimodules</p>
 <p>$$
-\sigma : {}_AA_A \longrightarrow {}^{\mathrm{sw}}{}_AA_A^{\sigma}, \qquad \sigma(axb) = \sigma(b)\sigma(x)\sigma(a) ,
+\boxed{\;\sigma : {}_AA_A \longrightarrow {}^{\mathrm{sw}}{}_AA_A^{\sigma}, \qquad \sigma(axb) = \sigma(b)\sigma(x)\sigma(a)\;} ,
 $$</p>
 <p>and conversely every bimodule isomorphism $\varphi : {}_AA_A \to {}^{\mathrm{sw}}{}_AA_A^{\sigma}$ is of the form $x \mapsto d\,\sigma(x)$ with $d$ a central unit; it is an anti-homomorphism, hence its own inverse when $\varphi(1) = 1$, precisely when $d = 1$. So an involution of $A$ is exactly a bimodule isomorphism of the regular bimodule with its $\sigma$-swap, normalised at the unit.</p>
 <p><strong>Proof.</strong> That $\sigma$ is bijective and additive is the definition of an involution. Inserting $\sigma$ into the target, $a \cdot \sigma(x) \cdot b = \bigl(\sigma(b)\sigma(x)\bigr)\sigma(a) = \sigma(b)\sigma(x)\sigma(a)$, which is the anti-multiplicativity applied to $axb$; so $\sigma$ intertwines the two structures — the left action with the swapped left action and the right action with the swapped right action. For the converse, let $\varphi : {}_AA_A \to {}^{\mathrm{sw}}{}_AA_A^{\sigma}$ be a bimodule isomorphism and put $d = \varphi(1)$. Left linearity gives $\varphi(a) = a \cdot \varphi(1) = \varphi(1)\sigma(a) = d\sigma(a)$, and right linearity gives $\varphi(a) = \varphi(1) \cdot a = \sigma(a)\varphi(1) = \sigma(a)d$; the two agree on every $a$ exactly when $d$ commutes with $\sigma(A) = A$, that is when $d$ is central, and $d$ is a unit because $\varphi$ is bijective. Then $\varphi(xy) = d\sigma(xy) = d\sigma(y)\sigma(x)$ while $\varphi(y)\varphi(x) = d\sigma(y)\,d\sigma(x) = d^2\sigma(y)\sigma(x)$, so $\varphi$ is an anti-homomorphism exactly when $d = 1$, and then it is the involution $\sigma$.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h3 id="the-canonical-form-of-the-regular-module">The canonical form of the regular module</h3>
 <p><strong>Proposition.</strong> On ${}_AA$ the formula</p>
 <p>$$
-h(x,y) = x\,\sigma(y)
+\boxed{\;h(x,y) = x\,\sigma(y)\;}
 $$</p>
 <p>is a Hermitian $\sigma$-sesquilinear form with values in $A$, and it is non-degenerate: $h(x,y) = 0$ for all $y$ implies $x = 0$, and $h(x,y) = 0$ for all $x$ implies $y = 0$.</p>
 <p><strong>Proof.</strong> Additivity is the distributivity of $A$. For the two sesquilinearity laws, $h(ax,y) = ax\sigma(y) = a\,h(x,y)$ and $h(x,ay) = x\sigma(ay) = x\sigma(y)\sigma(a) = h(x,y)\sigma(a)$. Hermitianity is $\sigma(h(x,y)) = \sigma(x\sigma(y)) = \sigma(\sigma(y))\sigma(x) = y\sigma(x) = h(y,x)$, using $\sigma^2 = \mathrm{id}$. For non-degeneracy, $h(x,1) = x\sigma(1) = x$ and $h(1,y) = \sigma(y)$, so a vector killed on one side by every argument is killed at the unit and is zero.</p>

@@ -90,7 +90,7 @@ $$</p>
 <p>for homogeneous $x,f$ and every $m$, extended bilinearly.</p>
 <p><strong>Theorem.</strong> Let $\mathrm{G}$ be a graded Lie algebra acting on the graded module $M$. Then the adjoint action is a graded action of $\mathrm{G}$ on $M^{\vee}$: $\rho^{\vee}$ is linear, homogeneous of degree zero, and</p>
 <p>$$
-\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{|x||y|}\rho^{\vee}(y)\rho^{\vee}(x)
+\boxed{\;\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{|x||y|}\rho^{\vee}(y)\rho^{\vee}(x)\;}
 $$</p>
 <p>for homogeneous $x,y$; equivalently the sign $(-1)^{|x||f|}$ is exactly the sign that makes the transpose respect the graded bracket.</p>
 <p><strong>Proof.</strong> For homogeneous $x,y,f,m$, the module axiom $x\cdot(y\cdot m)-(-1)^{|x||y|}y\cdot(x\cdot m)=[x,y]\cdot m$ gives
@@ -106,7 +106,7 @@ the two agree, using $(-1)^{(|x|+|y|)|f|}=(-1)^{|x||f|+|y||f|}$ and the bilinear
 <p><strong>Remark (the associative case).</strong> The dual of a graded left module over a graded associative algebra is naturally a graded <strong>right</strong> module, $f\cdot a=\rho(a)^{t}f$; when the algebra carries an element star $a\mapsto a^{*}$, $({}^{*})^{2}=\mathrm{id}$, $(ab)^{*}=b^{*}a^{*}$, the same computation with $a^{*}$ in place of the Lie bracket makes the adjoint action a graded <strong>left</strong> action on $M^{\vee}$, the star supplying the reversal, and the sign rule is unchanged.</p>
 <p><strong>Corollary (the sign rule).</strong> The adjoint action satisfies the <strong>sign rule</strong> : for homogeneous $x,y$,
 $$
-\rho^{\vee}(x)(\rho^{\vee}(y)f)=(-1)^{|x||y|}\rho^{\vee}(y)(\rho^{\vee}(x)f)+\rho^{\vee}([x,y])f,
+\boxed{\;\rho^{\vee}(x)(\rho^{\vee}(y)f)=(-1)^{|x||y|}\rho^{\vee}(y)(\rho^{\vee}(x)f)+\rho^{\vee}([x,y])f\;},
 $$
 so that the adjoint action is graded; without the sign $(-1)^{|x||f|}$ in its definition the transpose would satisfy the ungraded commutator and would not be a graded action.</p>
 <h2 id="compatibility-with-the-grading">Compatibility with the Grading</h2>
@@ -119,7 +119,7 @@ so that the adjoint action is graded; without the sign $(-1)^{|x||f|}$ in its de
 <h2 id="worked-case-the-coadjoint-action">Worked Case: The Coadjoint Action</h2>
 <p>Let $\mathrm{G}$ be a Lie algebra with the trivial grading, $M=\mathrm{G}$ with the adjoint action $\rho=\operatorname{ad}$. The dual $M^{\vee}=\mathrm{G}^{*}$ with the adjoint action is the <strong>coadjoint action</strong></p>
 <p>$$
-\langle\operatorname{ad}^{\vee}(x)f,y\rangle=-\langle f,[x,y]\rangle,
+\boxed{\;\langle\operatorname{ad}^{\vee}(x)f,y\rangle=-\langle f,[x,y]\rangle\;},
 $$</p>
 <p>the sign in the general definition becoming the single minus sign of the even case; the coadjoint action is a graded action (the grading is trivial, so the sign rule is void) and its orbits are the coadjoint orbits, named and studied in a later Part.</p>
 <p>For a graded (super) Lie algebra the sign is visible: if $x$ is odd and $f$ is odd, then $|x||f|=1$ and $(\rho^{\vee}(x)f)(m)=+f(x\cdot m)$, whereas for $f$ even the sign is $-$; the two cases are the two values of the Koszul sign, and the graded bracket of the super algebra makes the adjoint action graded, as the theorem requires.</p>

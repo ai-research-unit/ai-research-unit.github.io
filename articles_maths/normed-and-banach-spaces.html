@@ -90,7 +90,7 @@
 <h3 id="continuity-and-boundedness">Continuity and Boundedness</h3>
 <p><strong>Definition.</strong> A linear map $T:X \to Y$ between normed spaces is <strong>bounded</strong> if there is $C \ge 0$ with $\|Tx\| \le C\|x\|$ for all $x$, and the least such constant is the <strong>operator norm</strong></p>
 <p>$$
-\|T\|=\sup_{x \neq 0}\frac{\|Tx\|}{\|x\|}=\sup_{\|x\| \le 1}\|Tx\|=\sup_{\|x\|=1}\|Tx\| .
+\boxed{\;\|T\|=\sup_{x \neq 0}\frac{\|Tx\|}{\|x\|}=\sup_{\|x\| \le 1}\|Tx\|=\sup_{\|x\|=1}\|Tx\|\;} .
 $$</p>
 <p><strong>Theorem.</strong> For linear $T:X \to Y$ the following are equivalent: (i) $T$ is continuous; (ii) $T$ is continuous at $0$; (iii) $T$ is bounded; (iv) $T$ maps bounded sets to bounded sets. In this case $\ker T$ is closed.</p>
 <p><em>Proof.</em> (i)$\Rightarrow$(ii) is trivial. (ii)$\Rightarrow$(iii): continuity at $0$ gives $\delta>0$ with $\|x\|\le\delta \Rightarrow \|Tx\|\le1$, hence $\|Tx\| \le \delta^{-1}\|x\|$. (iii)$\Rightarrow$(i): $\|Tx-Tx_0\| \le C\|x-x_0\|$. The equivalence with (iv) is immediate from the definitions, and $\ker T$ is the preimage of the closed set $\{0\}$.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><strong>Lemma (Riesz).</strong> Let $Y$ be a proper closed subspace of a normed space $X$, and let $0<\varepsilon<1$. Then there is $x \in X$ with $\|x\|=1$ and $d(x,Y) \ge 1-\varepsilon$.</p>
 <p><em>Proof.</em> Choose $z \notin Y$ with $d(z,Y)=d>0$ and pick $y \in Y$ with $\|z-y\| \le d/(1-\varepsilon)$; set $x=(z-y)/\|z-y\|$. For $y' \in Y$ one has $y+\|z-y\|y' \in Y$ and hence</p>
 <p>$$
-\|x-y'\|=\frac{1}{\|z-y\|}\bigl\|z-\bigl(y+\|z-y\|y'\bigr)\bigr\| \ge \frac{d}{\|z-y\|} \ge 1-\varepsilon .
+\boxed{\;\|x-y'\|=\frac{1}{\|z-y\|}\bigl\|z-\bigl(y+\|z-y\|y'\bigr)\bigr\| \ge \frac{d}{\|z-y\|} \ge 1-\varepsilon\;} .
 $$</p>
 <p><strong>Theorem.</strong> A normed space is finite-dimensional if and only if its closed unit ball is compact. Consequently every locally compact normed space is finite-dimensional.</p>
 <p><em>Proof.</em> In finite dimension the ball is compact by Heine–Borel and the equivalence of norms. Conversely, if the ball is compact and $X$ is infinite-dimensional, construct by Riesz's lemma a sequence $(x_n)$ in the unit sphere with $\|x_m-x_n\| \ge 1/2$ for $m \neq n$, which has no convergent subsequence, contradiction.</p>

@@ -78,7 +78,7 @@
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> Let $(X,\mathcal{B},\mu)$ be a probability space and let $T:X\to X$ be measurable and <strong>measure-preserving</strong>, $\mu(T^{-1}A)=\mu(A)$ for all $A\in\mathcal{B}$. The <strong>Koopman operator</strong> of $T$ is</p>
 <p>$$
-\Phi_T:L^2(X,\mu)\to L^2(X,\mu), \qquad \Phi_Tf=f\circ T .
+\boxed{\;\Phi_T:L^2(X,\mu)\to L^2(X,\mu), \qquad \Phi_Tf=f\circ T\;} .
 $$</p>
 <p>The <strong>fixed space</strong> is $\ker(\Phi_T-I)$, the <strong>coboundaries</strong> are the functions $g\circ T-g$ with $g\in L^2$, and the <strong>coboundary space</strong> is the closed span of the coboundaries. For a measure-preserving flow $\varphi_t$ the <strong>Koopman flow</strong> is the one-parameter family</p>
 <p>$$
@@ -90,7 +90,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $\varphi_t$ be a measure-preserving flow on $(X,\mathcal{B},\mu)$, that is, $\varphi_t$ preserves $\mu$ for every $t$. The <strong>Koopman flow</strong> $\Phi_tf=f\circ\varphi_t$ is a one-parameter group of unitary operators, $\Phi_s\Phi_t=\Phi_{s+t}$, $\Phi_0=I$, $\Phi_t^{-1}=\Phi_{-t}$.</p>
 <p><strong>Theorem (Stone, quoted).</strong> A strongly continuous one-parameter unitary group $\{\Phi_t\}_{t\in\mathbb{R}}$ on a Hilbert space has the form</p>
 <p>$$
-\Phi_t=\exp(itA), \qquad A \text{ self-adjoint},
+\boxed{\;\Phi_t=\exp(itA), \qquad A \text{ self-adjoint}\;},
 $$</p>
 <p>with the generator $A=\frac{1}{i}\frac{d}{dt}\Big|_{t=0}\Phi_t$, and the group is recovered from the spectral measure $E$ of $A$ by $\Phi_t=\int_{\mathbb{R}}\exp(it\lambda)dE(\lambda)$.</p>
 <p><em>Proof.</em> Quoted as standard from <em>Semigroups and Evolution Equations</em> and <em>Unitary Operators and the Spectral Measure</em>; the theorem is the spectral representation of a one-parameter unitary group, and the flow case of the present article is its application to $\Phi_tf=f\circ\varphi_t$.</p>

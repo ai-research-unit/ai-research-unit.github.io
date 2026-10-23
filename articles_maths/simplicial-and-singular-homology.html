@@ -150,7 +150,7 @@ $$</p>
 <h3 id="excision">Excision</h3>
 <p><strong>Theorem (excision).</strong> Let $Z \subseteq A \subseteq X$ with the closure of $Z$ contained in the interior of $A$. Then the inclusion $(X \setminus Z, A \setminus Z) \hookrightarrow (X,A)$ induces isomorphisms</p>
 <p>$$
-H_n(X \setminus Z, A \setminus Z; R) \xrightarrow{\ \cong\ } H_n(X,A;R)
+\boxed{\;H_n(X \setminus Z, A \setminus Z; R) \xrightarrow{\ \cong\ } H_n(X,A;R)\;}
 $$</p>
 <p>for all $n$.</p>
 <p><em>Proof sketch.</em> Every relative cycle in $H_n(X,A;R)$ is represented by a chain whose simplices are small in the sense that each is contained in $X \setminus Z$ or in $A$: subdivide by iterated barycentric subdivision, using that each singular simplex is a compact subset of $X$ and that the interiors of the sets in the cover $\{X \setminus Z, \operatorname{int}(A)\}$ cover $X$, together with the Lebesgue number lemma. Chains of this form are chains in $C_*(X\setminus Z, A \setminus Z)$, so the inclusion is surjective on homology; the same argument on chains bounding shows injectivity.</p>
@@ -163,7 +163,7 @@ $$</p>
 <h3 id="mayervietoris">Mayer–Vietoris</h3>
 <p><strong>Theorem (Mayer–Vietoris).</strong> Let $X = \operatorname{int}(A) \cup \operatorname{int}(B)$ for subspaces $A, B$. Then there is a long exact sequence</p>
 <p>$$
-\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \xrightarrow{\ \partial\ } H_{n-1}(A \cap B) \to \cdots,
+\boxed{\;\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \xrightarrow{\ \partial\ } H_{n-1}(A \cap B) \to \cdots\;},
 $$</p>
 <p>with coefficients suppressed and the connecting map $\partial$ defined from the snake lemma applied to the short exact sequence of complexes $0 \to C_*(A \cap B) \to C_*(A)\oplus C_*(B) \to C_*(A+B) \to 0$, where $C_*(A+B)$ denotes chains that are sums of chains in $A$ and in $B$; excision identifies $H_*(A+B)$ with $H_*(X)$.</p>
 <p><em>Proof.</em> The given sequence of complexes is exact by the definition of the maps, and the identification $C_*(A)+C_*(B) = C_*(X)$ follows from the subdivision argument of excision. The snake lemma then produces the sequence.</p>
@@ -181,7 +181,7 @@ $$</p>
 <h3 id="equivalence-of-simplicial-and-singular-homology">Equivalence of Simplicial and Singular Homology</h3>
 <p><strong>Theorem.</strong> Let $K$ be a simplicial complex with underlying space $|K|$. Then there is a natural isomorphism</p>
 <p>$$
-H_n^{\Delta}(K;R) \cong H_n(|K|;R)
+\boxed{\;H_n^{\Delta}(K;R) \cong H_n(|K|;R)\;}
 $$</p>
 <p>for all $n$.</p>
 <p><em>Proof sketch.</em> Both theories are computed by the same chain complex after subdivision. A <strong>simplicial map</strong> $K \to L$ is a map of underlying spaces linear on each simplex; a map $f : |K| \to |L|$ between finite complexes is homotopic to a simplicial map after sufficiently fine subdivision, by the <strong>simplicial approximation theorem</strong>, and the simplicial chain map it induces agrees with the singular chain map up to chain homotopy. Applying this with $L = \Delta_n$ identifies the singular chains of $|K|$ with the simplicial chains of a subdivision, which have isomorphic homology.</p>

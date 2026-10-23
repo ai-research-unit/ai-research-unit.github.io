@@ -92,7 +92,7 @@ $$</p>
 <h3 id="the-induced-chain-map">The Induced Chain Map</h3>
 <p><strong>Theorem.</strong> A $G$-map $f : X \to Y$ induces a chain map of complexes of $R[G]$-modules</p>
 <p>$$
-f_\# : C_*(X;R) \longrightarrow C_*(Y;R), \qquad f_\#(\eta) = f \circ \eta,
+\boxed{\;f_\# : C_*(X;R) \longrightarrow C_*(Y;R), \qquad f_\#(\eta) = f \circ \eta\;},
 $$</p>
 <p>and $f_\#$ is an element of $\operatorname{Hom}_{R[G]}(C_*(X;R), C_*(Y;R))$: it is $R$-linear, it commutes with $\partial$, and it commutes with the action, $f_\# \, g_\# = g_\# \, f_\#$ for every $g \in G$.</p>
 <p><em>Proof.</em> The map on simplices is additive, so $f_\#$ is $R$-linear; the boundary commutes with composition of maps, so $f_\#\partial = \partial f_\#$; and the action commutes because $f(g \cdot x) = g \cdot f(x)$, that is $f \circ g = g \circ f$ on the underlying points, whence $f_\#(g \circ \eta) = g \circ (f_\# \eta)$.</p>
@@ -110,7 +110,7 @@ $$</p>
 <h3 id="equivariant-homotopy-and-chain-homotopy">Equivariant Homotopy and Chain Homotopy</h3>
 <p><strong>Theorem.</strong> Let $H : X \times I \to Y$ be an equivariant homotopy from $f$ to $g$, the interval carrying the trivial action. Then there is a degree-one $R[G]$-linear map (a <strong>homotopy operator</strong>)</p>
 <p>$$
-P : C_n(X;R) \longrightarrow C_{n+1}(Y;R), \qquad \partial P + P\partial = g_\# - f_\#,
+\boxed{\;P : C_n(X;R) \longrightarrow C_{n+1}(Y;R), \qquad \partial P + P\partial = g_\# - f_\#\;},
 $$</p>
 <p>which intertwines the actions. Consequently $f_\#$ and $g_\#$ induce the same map on every invariant built from the complex, and in particular the same map on the coinvariants and on the Borel complex.</p>
 <p><em>Proof.</em> The standard prism operator of <em>Simplicial and Singular Homology</em> for the homotopy $H$ is $P(\eta)(x,t) = H(\eta(x), t)$; it is $R$-linear and satisfies the displayed identity. It intertwines the actions because $H$ does: for $g \in G$,</p>
@@ -137,7 +137,7 @@ H_n^G(X;R) = H_n\bigl(C_*^G(X;R)\bigr) = H_n(EG \times_G X; R).
 $$</p>
 <p><strong>Theorem.</strong> The Borel complex computes the homology of $G$ with coefficients in the complex of the space,</p>
 <p>$$
-H_n^G(X;R) \cong H_n\bigl(G; C_*(X;R)\bigr) = \operatorname{Tor}^{R[G]}_n\bigl(R, C_*(X;R)\bigr),
+\boxed{\;H_n^G(X;R) \cong H_n\bigl(G; C_*(X;R)\bigr) = \operatorname{Tor}^{R[G]}_n\bigl(R, C_*(X;R)\bigr)\;},
 $$</p>
 <p>in the sense of <em>Group Cohomology</em>, and for a free action it reduces to the homology of the orbit space, $H_n^G(X;R) \cong H_n(X/G;R)$.</p>
 <p><em>Proof.</em> The homotopy quotient $EG \times_G X$ is the geometric realisation of the two-sided bar construction $R \otimes_{R[G]} C_*(X;R)$, whose homology is the derived functor $\operatorname{Tor}$; the free case is the homotopy equivalence $EG \times_G X \simeq X/G$ of <em>Two-Fold Coverings and the Borel Construction</em>.</p>

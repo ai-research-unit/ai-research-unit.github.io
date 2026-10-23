@@ -127,7 +127,7 @@ $$</p>
 <li>Fine sheaves are soft and soft sheaves on a paracompact space are acyclic; hence</li>
 </ol>
 <p>$$
-    H^i(M,\Omega^k) = 0 \qquad \text{for all } i > 0 \text{ and all } k.
+    \boxed{\;H^i(M,\Omega^k) = 0 \qquad \text{for all } i > 0 \text{ and all } k\;}.
 $$</p>
 <p><em>Proof.</em> (1) is the existence of smooth partitions of unity subordinate to a locally finite cover of a manifold, which uses the smooth Urysohn lemma; the cover of a manifold may be taken locally finite because a manifold is paracompact and locally compact. (2) the product of a $k$-form by a smooth function is a $k$-form, compatibly with restriction, so $\Omega^k$ is a $C^\infty$-module, and the multiplication by the $\eta_i$ of a partition of unity exhibits the fineness. (3) is the theorem of <em>Sheaf Cohomology</em> that fine sheaves are soft and that soft sheaves on a paracompact space are acyclic.</p>
 <p><strong>Theorem (the de Rham resolution computes the cohomology).</strong> On a smooth manifold $M$ there is a natural isomorphism</p>
@@ -139,7 +139,7 @@ $$</p>
 <h2 id="the-theorem-of-de-rham">The Theorem of de Rham</h2>
 <p><strong>Theorem (de Rham).</strong> Let $M$ be a smooth manifold. There are natural isomorphisms</p>
 <p>$$
-H^k_{dR}(M) \cong H^k(M,\underline{\mathbb{R}}) \cong H^k(M;\mathbb{R})
+\boxed{\;H^k_{dR}(M) \cong H^k(M,\underline{\mathbb{R}}) \cong H^k(M;\mathbb{R})\;}
 $$</p>
 <p>for every $k$, natural with respect to smooth maps, where the second is the comparison of sheaf and singular cohomology of <em>Sheaf Cohomology</em>. In particular $H^k_{dR}(M)$ is a homotopy invariant of $M$, is finite-dimensional with dimension the $k$-th Betti number when $M$ is a closed manifold, and a closed form on a closed oriented manifold is exact if and only if all of its periods over singular cycles vanish.</p>
 <p><em>Proof.</em> The first isomorphism is the theorem of the previous section. The second is the comparison theorem: a smooth manifold is paracompact and locally contractible, and for such a space the sheaf cohomology of the constant sheaf is the singular cohomology. The stated corollaries are the corollaries of the theorem of de Rham recorded in the written article, now obtained as properties of sheaf cohomology, which is homotopy invariant because the pullback of a constant sheaf along a homotopy equivalence is an isomorphism and the cohomology of the sheaf is transported along it.</p>
@@ -152,7 +152,7 @@ $$</p>
 <h3 id="the-algebra-structure">The Algebra Structure</h3>
 <p><strong>Theorem (the de Rham complex as a differential graded algebra).</strong> The direct sum $\Omega^\bullet = \bigoplus_{k}\Omega^k$, with the wedge product and the exterior derivative, is a sheaf of commutative differential graded algebras over the constant sheaf $\underline{\mathbb{R}}$: the wedge product is graded-commutative and associative and $d$ is a derivation, $d(\alpha\wedge\beta) = d\alpha\wedge\beta + (-1)^k\alpha\wedge d\beta$ for $\alpha\in\Omega^k$. The same structure holds on global sections, and the isomorphisms of the de Rham theorem are isomorphisms of graded algebras in the sense that the wedge product on forms corresponds to the cup product on cohomology:</p>
 <p>$$
-[\alpha]\smile[\beta] = [\alpha\wedge\beta] \in H^{k+l}_{dR}(M)\cong H^{k+l}(M;\mathbb{R}).
+\boxed{\;[\alpha]\smile[\beta] = [\alpha\wedge\beta] \in H^{k+l}_{dR}(M)\cong H^{k+l}(M;\mathbb{R})\;}.
 $$</p>
 <p><em>Proof.</em> The graded-commutativity and the derivation property of $d$ are the local computations of the written article; the final statement follows because the comparison of the de Rham resolution with an injective resolution of $\underline{\mathbb{R}}$ is a comparison of resolutions by sheaves of differential graded algebras: injective resolutions may be taken to carry a compatible product by the standard construction, and the induced map on cohomology respects the products up to the homotopy that makes the comparison unique. Equivalently, the wedge product of closed forms is closed and the product of exact forms with closed forms is exact, so the product descends to cohomology; the identification with the cup product follows from the naturality of the comparison and its agreement with the algebra structures on the level of the complexes.</p>
 <p><strong>Corollary (the cohomology ring is computable from forms).</strong> For a smooth manifold $M$ the real cohomology ring $(H^\bullet(M;\mathbb{R}),\smile)$ is computed by the differential graded algebra $(\Omega^\bullet(M),d,\wedge)$ of global forms: its cohomology ring is the real cohomology ring of $M$. In particular the de Rham representatives of the characteristic classes of a bundle multiply as the classes do, and the Chern classes of a complex vector bundle over $M$ generate a subring of $H^\bullet(M;\mathbb{R})$ computed from the curvature forms of any connection on the bundle. The differential graded algebras themselves, as objects of algebra, are those of Part I's <em>Differential Graded Categories</em> and <em>Operads</em>.</p>

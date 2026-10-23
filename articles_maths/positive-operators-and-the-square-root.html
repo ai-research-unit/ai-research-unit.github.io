@@ -85,7 +85,7 @@
 <p><em>Proof.</em> The quadratic-form inequalities add; the product of commuting positives is positive because they are simultaneously diagonalisable by the spectral theorem; $\|Tx\|^2=\langle T^*Tx,x\rangle$ gives the last positivity, and the norm identity is the $C^*$-identity.</p>
 <p><strong>Proposition (Cauchy–Schwarz for positive operators).</strong> For $T\ge0$,</p>
 <p>$$
-|\langle Tx,y\rangle|^2\le\langle Tx,x\rangle\langle Ty,y\rangle ,
+\boxed{\;|\langle Tx,y\rangle|^2\le\langle Tx,x\rangle\langle Ty,y\rangle\;} ,
 $$</p>
 <p>and $T$ is positive and invertible exactly when $T\ge cI$ for some $c>0$; in that case the sesquilinear form $\langle\cdot,\cdot\rangle_T=\langle T\cdot,\cdot\rangle$ is an inner product equivalent to the given one.</p>
 <p><em>Proof.</em> The inequality is Cauchy–Schwarz in the semidefinite inner product $\langle x,y\rangle_T=\langle Tx,y\rangle$; the inversion criterion is the spectral theorem, and the last statement is the equivalence of the two norms.</p>
@@ -102,14 +102,14 @@ $$</p>
 <p><em>Proof.</em> This is Löwner's theorem; the forward implication uses the analytic continuation of the function calculated on the two-dimensional compression and the backward implication reconstructs $f$ from its action on the positive operators. The non-monotonicity of the square is seen in two dimensions: $\begin{pmatrix}1&0\\0&0\end{pmatrix}\le\begin{pmatrix}2&1\\1&1\end{pmatrix}$ while the squares violate the inequality.</p>
 <p><strong>Proposition (inversion reverses the order).</strong> For invertible positive $S,T$,</p>
 <p>$$
-S\le T\quad\Longleftrightarrow\quad T^{-1}\le S^{-1},
+\boxed{\;S\le T\quad\Longleftrightarrow\quad T^{-1}\le S^{-1}\;},
 $$</p>
 <p>the order is antisymmetric, and it is not total: two rank-one projections onto non-orthogonal lines are incomparable.</p>
 <p><em>Proof.</em> The inequality $S\le T$ is equivalent to $T^{-1/2}ST^{-1/2}\le I$, and conjugating this by $T^{1/2}$ and inverting the resulting inequality gives $T^{-1}\le S^{-1}$; the converse is the same computation with the roles exchanged. Antisymmetry is the positivity of both $T-S$ and $S-T$, forcing $T=S$; for the projections $P,Q$ onto distinct non-orthogonal lines neither $P-Q$ nor $Q-P$ is positive, as testing on appropriate unit vectors shows.</p>
 <h2 id="the-polar-decomposition">The Polar Decomposition</h2>
 <p><strong>Theorem (polar decomposition).</strong> Every $T\in B(H)$ factors as</p>
 <p>$$
-T=U|T|,\qquad |T|=(T^*T)^{1/2},
+\boxed{\;T=U|T|,\qquad |T|=(T^*T)^{1/2}\;},
 $$</p>
 <p>where $|T|$ is positive, $U$ is a partial isometry from the closure of $\operatorname{ran}|T|$ onto the closure of $\operatorname{ran}T$, and $U$ is uniquely determined by the requirements that $\ker U=\ker|T|$ and $U|T|=T$; when $T$ is invertible, $U$ is unitary. The decomposition is the operator form of $z=|z|\exp(i\theta)$.</p>
 <p><em>Proof.</em> On $\operatorname{ran}|T|$ define $U(|T|x)=Tx$; the identity $\||T|x\|=\|Tx\|$ makes $U$ well defined and isometric, and it extends by continuity to an isometry from the closure of the range of $|T|$ onto the closure of the range of $T$; extending by zero on the orthogonal complement of the range of $|T|$ gives the partial isometry, and the kernel condition fixes the extension. Uniqueness is the density of the range of $|T|$; invertibility of $T$ makes $|T|$ invertible and both ranges all of $H$, so $U$ is unitary.</p>

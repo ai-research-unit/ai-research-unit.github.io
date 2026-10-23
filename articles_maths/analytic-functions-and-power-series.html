@@ -96,7 +96,7 @@ $$</p>
 <h3 id="the-radius-of-convergence">The Radius of Convergence</h3>
 <p><strong>Definition.</strong> A <strong>power series</strong> about $a \in F$ is a series of functions</p>
 <p>$$
-f(x) = \sum_{n \geq 0} a_n (x - a)^n, \qquad a_n \in F .
+\boxed{\;f(x) = \sum_{n \geq 0} a_n (x - a)^n, \qquad a_n \in F\;} .
 $$</p>
 <p>The <strong>radius of convergence</strong> of the series is</p>
 <p>$$
@@ -124,7 +124,7 @@ $$</p>
 <p><strong>(a)</strong> $f$ is continuous on $\Omega$;</p>
 <p><strong>(b)</strong> $f$ is differentiable on $\Omega$, in the sense that</p>
 <p>$$
-\frac{df}{dx}(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+\boxed{\;\frac{df}{dx}(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}\;}
 $$</p>
 <p>exists for every $a \in \Omega$, and $\frac{df}{dx}$ is analytic on $\Omega$, with $\frac{df}{dx} = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;</p>
 <p><strong>(c)</strong> if $f$ is analytic and $f(a) \neq 0$ then $1/f$ is analytic on a neighbourhood of $a$;</p>
@@ -211,7 +211,7 @@ $$</p>
 <p><strong>Proof.</strong> For $\lvert x - a \rvert \leq \lvert b - a \rvert$ one has $\lvert a_n (x-a)^n \rvert \leq \lvert a_n (b-a)^n \rvert$, so the tail supremum is at most $\max_{n > N} \lvert a_n (b-a)^n \rvert$, which tends to $0$ because the series converges at $b$.</p>
 <p><strong>Theorem (maximum modulus principle for a power series).</strong> Let $F$ be non-Archimedean and complete with infinite residue field, let $f = \sum_n a_n x^n$ converge on $\overline{B}(0,r)$, and put $\lVert f \rVert_r = \sup_{\lvert x \rvert \leq r} \lvert f(x) \rvert$ and</p>
 <p>$$
-\lVert f \rVert_G = \max_{n \geq 0} \lvert a_n \rvert r^n ,
+\boxed{\;\lVert f \rVert_G = \max_{n \geq 0} \lvert a_n \rvert r^n\;} ,
 $$</p>
 <p>the <strong>Gauss norm</strong> of $f$ at the radius $r$. Then $\lVert f \rVert_r = \lVert f \rVert_G$, and the supremum is attained: there is $x_0$ with $\lvert x_0 \rvert = r$ and $\lvert f(x_0) \rvert = \lVert f \rVert_G$.</p>
 <p><strong>Proof sketch.</strong> The inequality $\lVert f \rVert_r \leq \lVert f \rVert_G$ is the ultrametric inequality applied term by term at each point of the disc. For the reverse, let $F_0$ be the finite set of indices at which $\lvert a_n \rvert r^n$ is maximal and let</p>

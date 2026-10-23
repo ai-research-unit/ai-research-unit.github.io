@@ -95,7 +95,7 @@ $$
 for a smooth function $\lambda$; the conformal Killing fields form a Lie algebra $\mathrm{CONF}(M,g)$ under the commutator of vector fields, the <strong>conformal algebra</strong> of the metric, and it is the Lie algebra of the conformal group, a Lie algebra of vector fields of the type of those of <em>Metric, Uniform and Complete Spaces</em> and of the theory of <em>Lie Groups</em>, earlier in this Part.</p>
 <p><strong>Proposition.</strong> The conformal algebra of a Riemannian manifold of dimension $n \geq 3$ is finite-dimensional and of dimension at most
 $$
-\dim \mathrm{CONF}(M,g) \leq \frac{(n+1)(n+2)}{2},
+\boxed{\;\dim \mathrm{CONF}(M,g) \leq \frac{(n+1)(n+2)}{2}\;},
 $$
 with equality exactly when the metric is conformally flat (on a connected open set with the generic metric, and on the conformally flat manifolds); the conformal algebra of the Euclidean space $\mathbb{R}^n$ is the Lie algebra $\mathrm{SO}(n+1,1)$ of dimension $(n+1)(n+2)/2$, spanned by the constant vector fields (translations), the linear fields $x \mapsto \omega x$ with $\omega \in \mathrm{SO}(n)$ (rotations), the radial fields $x \mapsto c x$ (dilations) and the fields $x \mapsto |x|^2 a - 2\langle a,x\rangle x$ (the special conformal transformations).</p>
 <p><strong>Proof sketch.</strong> The conformal Killing equation is an overdetermined linear system of first-order partial differential equations for the components of $X$; differentiating it repeatedly expresses all the higher derivatives of $X$ at a point in terms of the values of $X$, $\lambda$, and their first derivatives together with the curvature, so the space of solutions is finite-dimensional and bounded by the number of the initial data, which is $(n+1)(n+2)/2$; in the flat case the listed fields span a space of that dimension and satisfy the equation. The identification of the flat conformal algebra with $\mathrm{SO}(n+1,1)$ is the linearisation of the conformal compactification of the next section, and the details are in the references.</p>
@@ -131,7 +131,7 @@ $$
 $$
 satisfying the <strong>Vahlen conditions</strong> (the Hermitian conditions with respect to the conjugation of the Clifford algebra) modulo the nonzero scalars, in such a way that the matrix acts on $\mathbb{R}^n \cup \{\infty\}$ by the fractional transformation
 $$
-x \longmapsto (a x + b)(c x + d)^{-1},
+\boxed{\;x \longmapsto (a x + b)(c x + d)^{-1}\;},
 $$
 with the Clifford multiplication in the numerator and the inverse in the Clifford algebra; the matrices form a group isomorphic to the Möbius group, and the action is the conformal action on the sphere.</p>
 <p>The theorem is due to Vahlen and was developed by Ahlfors; the conditions on the matrix are that the products $a\bar c$, $b\bar d$ and the antidiagonal products are the appropriate scalars, so that the matrix preserves the "Hermitian" structure of the Clifford algebra $\mathrm{Cl}_{0,n}$ in the sense of <em>Hilbert Algebras</em>. The matrix group is the $\operatorname{Pin}(n+1,1)$-group in the matrix coordinates, and the theorem is the concrete form of the identification of the conformal group with the Clifford group of the form of signature $(n+1,1)$; the statement and the proof are in the references.</p>
@@ -145,7 +145,7 @@ $$
 acting on functions, where $\Delta_g$ is the Laplacian of the metric and $\operatorname{scal}_g$ is the scalar curvature; the normalisation of the zero-order term is the one that makes the operator conformally invariant in the following sense.</p>
 <p><strong>Theorem (conformal covariance).</strong> Under the conformal change $g' = \Omega^2 g$ the conformal Laplacian transforms by
 $$
-L_{g'}(\Omega^{(n-2)/2}u) = \Omega^{(n+2)/2}\,L_g(u) , \qquad u \in C^\infty(M),
+\boxed{\;L_{g'}(\Omega^{(n-2)/2}u) = \Omega^{(n+2)/2}\,L_g(u) , \qquad u \in C^\infty(M)\;},
 $$
 so that the operator is conformally covariant with the <strong>conformal weight</strong> of the function $u \mapsto \Omega^{(n-2)/2}u$; the operator is invariant as an operator on the densities of the appropriate weight, and it is the unique second-order conformally invariant operator of its form on functions, the general classification belonging to the conformal invariant theory of the references.</p>
 <p><strong>Proof sketch.</strong> The transformation formula is computed from the transformation of the Laplacian and the scalar curvature under a conformal change: with $g' = \Omega^2 g$ one has $\operatorname{scal}_{g'} = \Omega^{-2}(\operatorname{scal}_g - 2(n-1)\Omega^{-1}\Delta_g\Omega - (n-1)(n-4)\Omega^{-2}|\nabla\Omega|^2)$, and the substitution $u \mapsto \Omega^{(n-2)/2}u$ cancels the extra terms against those produced by the Laplacian, leaving the factor $\Omega^{(n+2)/2}$. The computation is in the references.</p>

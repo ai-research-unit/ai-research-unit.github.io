@@ -85,7 +85,7 @@ $$</p>
 <h2 id="the-involution-of-the-operator-algebra">The Involution of the Operator Algebra</h2>
 <p><strong>Proposition.</strong> The assignment $T \mapsto T^{*}$ is $\varsigma$-semilinear and an anti-automorphism of order two:</p>
 <p>$$
-(S + T)^{*} = S^{*} + T^{*}, \qquad (\lambda T)^{*} = \varsigma(\lambda)T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad (T^{*})^{*} = T .
+\boxed{\;(S + T)^{*} = S^{*} + T^{*}, \qquad (\lambda T)^{*} = \varsigma(\lambda)T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad (T^{*})^{*} = T\;} .
 $$</p>
 <p><strong>Proof.</strong> Additivity and the semilinearity are read from $h((\lambda T)x, y) = \lambda h(Tx,y) = \lambda h(x,T^{*}y)$ and $h(x, \varsigma(\lambda)T^{*}y) = \varsigma(\varsigma(\lambda))h(x,T^{*}y)$, using that the first slot is $R$-linear and the second $\varsigma$-semilinear. For the product, $h(STx, y) = h(Tx, S^{*}y) = h(x, T^{*}S^{*}y)$. For the last, $h(T^{*}x, y) = \varsigma(h(y, T^{*}x)) = \varsigma(h(Ty, x)) = h(x, Ty)$, so $(T^{*})^{*} = T$.</p>
 <p><strong>Corollary.</strong> The adjoint operation makes the algebra of operators an algebra with a $\varsigma$-semilinear involution in the sense of <em>Involutive Algebras</em>; the topological counterpart of the same statement, with the adjoint of a bounded operator, is <em>Involutions of the Operator Algebra</em>.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-semilinear-operator-and-the-two-adjoints">The Semilinear Operator and the Two Adjoints</h2>
 <p><strong>Definition.</strong> An operator $S$ is <strong>$\varsigma$-semilinear</strong> when $S(\lambda x) = \varsigma(\lambda)Sx$; its <strong>twisted adjoint</strong> is the semilinear operator $S^{*}$ with</p>
 <p>$$
-h(Sx, y) = \varsigma\bigl(h(x, S^{*}y)\bigr) .
+\boxed{\;h(Sx, y) = \varsigma\bigl(h(x, S^{*}y)\bigr)\;} .
 $$</p>
 <p><strong>Proposition.</strong> A semilinear operator admits no adjoint in the linear sense, and it admits exactly one twisted adjoint when $h$ is nonsingular; the twisted adjoint is again $\varsigma$-semilinear and of order two.</p>
 <p><strong>Proof.</strong> If $S$ is $\varsigma$-semilinear then $y \mapsto h(Sx,y)$ is $\varsigma$-linear and not $R$-linear, so the linear equation $h(Sx,y) = h(x,Uy)$ has no solution in general; the twisted equation asks for the representing element of the $\varsigma$-linear functional $\varsigma\circ h(Sx,\cdot)$, and it has a unique solution by nonsingularity. The last clause is read as in the linear case.</p>
@@ -112,7 +112,7 @@ $$</p>
 <p>Let $A$ be free of finite rank over the base with basis $e_{1},\dots,e_{n}$ and <strong>Gram matrix</strong> $G$, $G_{ij} = h(e_{i},e_{j})$, and let an operator be represented by its matrix $T$ acting on the coordinates: the operator is the multiplication $x \mapsto Tx$ read in the basis. The adjoint depends on the convention of the slots, and the two formulas are stated for the multiplicative operators, in which the operator matrix and the coordinate matrix coincide.</p>
 <p><strong>Proposition.</strong> With the dagger in the first slot and the form $h_{G}(x,y) = \tau(x^{\dagger}Gy)$, the adjoint of the multiplication by $T$ is the multiplication by</p>
 <p>$$
-T^{*} = G^{-1}T^{\dagger}G, \qquad \text{and the multiplication by } T \text{ is an isometry} \iff T^{\dagger}GT = G ,
+\boxed{\;T^{*} = G^{-1}T^{\dagger}G, \qquad \text{and the multiplication by } T \text{ is an isometry} \iff T^{\dagger}GT = G\;} ,
 $$</p>
 <p>the equation of the indefinite unitary group of $G$; for $G = 1$ it is $T^{*} = T^{\dagger}$, the conjugate transpose of the definite case, and the form is then the canonical form of <em>Hermitian Algebras</em>.</p>
 <p><strong>Proof.</strong> $h_{G}(Tx,y) = \tau(x^{\dagger}T^{\dagger}Gy)$ and $h_{G}(x,T^{*}y) = \tau(x^{\dagger}GT^{*}y)$, and the two agree for all $x,y$ exactly when $T^{\dagger}G = GT^{*}$, that is $T^{*} = G^{-1}T^{\dagger}G$. The isometry statement is the substitution $T^{\dagger}GT = G$.</p>

@@ -107,7 +107,7 @@ Boundedness makes the filtrations of each $Z_n$, $B_n$ and $H_n$ finite, so the 
 <h3 id="statement">Statement</h3>
 <p><strong>Theorem.</strong> Let $C_{\bullet\bullet}$ be a double complex with commuting horizontal and vertical differentials and total complex $\operatorname{Tot}(C)$. If for each $n$ only finitely many $C_{n,m}$ with $n+m=N$ are nonzero, then there are two spectral sequences converging to the homology of the total complex,</p>
 <p>$$
-{}^IE^2_{n,m}=H^{\mathrm{h}}_n H^{\mathrm{v}}_q(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr), \qquad {}^{II}E^2_{n,m}=H^{\mathrm{v}}_m H^{\mathrm{h}}_n(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr),
+\boxed{\;{}^IE^2_{n,m}=H^{\mathrm{h}}_n H^{\mathrm{v}}_q(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr), \qquad {}^{II}E^2_{n,m}=H^{\mathrm{v}}_m H^{\mathrm{h}}_n(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr)\;},
 $$</p>
 <p>where $H^{\mathrm{h}}$ and $H^{\mathrm{v}}$ denote homology with respect to the horizontal and the vertical differentials.</p>
 <p><em>Proof.</em> Filter $\operatorname{Tot}(C)$ by the column degree, $F_n\operatorname{Tot}(C)_n=\bigoplus_{n'\ge n}C_{n',n-n'}$, so that the filtration is exhaustive, separated and bounded under the finiteness hypothesis. The $E^0$-page has $E^0_{n,m}=C_{n,m}$, and the differential $d^0$ is the vertical differential up to a sign; hence $E^1_{n,m}=H^{\mathrm{v}}_q(C_{n,\bullet})$ and $E^2_{n,m}=H^{\mathrm{h}}_pH^{\mathrm{v}}_q(C)$, by the sign rule that makes the total differential square to zero. The convergence is the theorem on filtered complexes. The second spectral sequence is obtained from the filtration by rows.</p>
@@ -124,7 +124,7 @@ $$</p>
 <h3 id="statement_1">Statement</h3>
 <p><strong>Theorem (Grothendieck).</strong> Let $\mathcal{A},\mathcal{B},\mathcal{C}$ be abelian categories with enough injectives, let $F:\mathcal{A}\to\mathcal{B}$ and $G:\mathcal{B}\to\mathcal{C}$ be left exact covariant functors, and suppose that $F$ carries injective objects of $\mathcal{A}$ to $G$-acyclic objects of $\mathcal{B}$. Then for every object $A$ of $\mathcal{A}$ there is a first-quadrant spectral sequence</p>
 <p>$$
-E_2^{n,m}=R^pG\bigl(R^qF(A)\bigr)\Longrightarrow R^{n+m}(GF)(A),
+\boxed{\;E_2^{n,m}=R^pG\bigl(R^qF(A)\bigr)\Longrightarrow R^{n+m}(GF)(A)\;},
 $$</p>
 <p>natural in $A$, with differentials $d^r:E^r_{n,m}\to E^r_{n+r,q-r+1}$.</p>
 <p><em>Proof.</em> Take an injective resolution $A\to I^\bullet$ and apply the Cartan–Eilenberg resolution of the complex $F(I^\bullet)$ by injectives, then apply $G$; the result is a double complex whose two spectral sequences are as follows. In one direction the $m$-variable computes the derived functors of $F$ and the $n$-variable applies $G$ to injectives, giving $E_2^{n,m}=R^pG(R^qF(A))$; in the other direction $E_2^{n,m}=0$ for $m\neq0$, because each $F(I^m)$ is $G$-acyclic, so that sequence collapses and the abutment is $R^{n+m}(GF)(A)$. The hypothesis on injectives is exactly what makes the second direction degenerate.</p>
@@ -152,7 +152,7 @@ $$</p>
 <h3 id="the-lyndonhochschildserre-spectral-sequence">The Lyndon–Hochschild–Serre Spectral Sequence</h3>
 <p><strong>Theorem.</strong> Let $N$ be a normal subgroup of a group $G$, let $M$ be a $G$-module over $\mathbb{Z}$, and regard $M$ as an $N$-module by restriction. There is a first-quadrant spectral sequence</p>
 <p>$$
-E_2^{n,m}=H^n\bigl(G/N,H^q(N,M)\bigr)\Longrightarrow H^{n+m}(G,M),
+\boxed{\;E_2^{n,m}=H^n\bigl(G/N,H^q(N,M)\bigr)\Longrightarrow H^{n+m}(G,M)\;},
 $$</p>
 <p>where the coefficient system $H^q(N,M)$ for $G/N$ comes from the conjugation action of $G$ on $N$.</p>
 <p><em>Proof.</em> The functor of $G$-invariants is the composite of the functors of $N$-invariants and of $(G/N)$-invariants: $M^G=(M^N)^{G/N}$. Both are left exact, and the functor $M\mapsto M^N$ carries injective $\mathbb{Z}[G]$-modules to injective $\mathbb{Z}[G/N]$-modules, because restriction along $G\to G/N$ has an exact left adjoint and preserves the relevant classes; the Grothendieck spectral sequence applied to this composite, with the identification $H^n(G,M)=\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z},M)$ of <em>Ext and Tor</em>, is the displayed spectral sequence. The action of $G/N$ on $H^q(N,M)$ is the one induced by conjugation.</p>

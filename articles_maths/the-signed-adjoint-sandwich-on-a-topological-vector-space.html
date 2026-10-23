@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
 <p><strong>Theorem (the adjoint computation).</strong> For all $a, b \in E$ the signed sandwich has the trace-adjoint</p>
 <p>$$
-(\Theta^{\alpha}_{a,b})^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)} ,
+\boxed{\;(\Theta^{\alpha}_{a,b})^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)}\;} ,
 $$</p>
 <p>obtained from $\Theta^{\alpha}_{a,b}$ by applying the grade involution to both parameters and exchanging them; in particular the adjoint of a signed sandwich is again a signed sandwich, and the assignment is an involution of the signed family.</p>
 <p><strong>Proof.</strong> For $x, y \in E$, $\langle \Theta^{\alpha}_{a,b}x, y\rangle = \langle a\alpha(x)b, y\rangle = \tau(a\alpha(x)by) = \tau(\alpha(x)\,bya)$ by the cyclicity of the trace; by the grade invariance this is $\tau(x\,\alpha(bya)) = \tau(x\,\alpha(b)\alpha(y)\alpha(a)) = \langle x, \Theta^{\alpha}_{\alpha(b),\alpha(a)}y\rangle$. Uniqueness of the adjoint in the non-degenerate trace form gives the identity, and applying it twice returns $\Theta^{\alpha}_{a,b}$ because $\alpha^{2} = \mathrm{id}$.</p>
@@ -99,8 +99,8 @@ $$</p>
 <h2 id="the-unitarity-criterion">The Unitarity Criterion</h2>
 <p><strong>Theorem (the products with the adjoint).</strong> For all $a, b \in E$ the two products of the signed sandwich with its adjoint are the unsigned inner sandwiches</p>
 <p>$$
-(\Theta^{\alpha}_{a,b})^{\dagger}\,\Theta^{\alpha}_{a,b} = \Phi_{u,u}, \qquad
-\Theta^{\alpha}_{a,b}\,(\Theta^{\alpha}_{a,b})^{\dagger} = \Phi_{w,w} ,
+\boxed{\;(\Theta^{\alpha}_{a,b})^{\dagger}\,\Theta^{\alpha}_{a,b} = \Phi_{u,u}, \qquad
+\Theta^{\alpha}_{a,b}\,(\Theta^{\alpha}_{a,b})^{\dagger} = \Phi_{w,w}\;} ,
 $$</p>
 <p>with the parameters</p>
 <p>$$
@@ -109,7 +109,7 @@ $$</p>
 <p><strong>Proof.</strong> For the first, $(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b}(x) = \Theta^{\alpha}_{\alpha(b),\alpha(a)}(a\alpha(x)b) = \alpha(b)\,\alpha(a\alpha(x)b)\,\alpha(a) = \alpha(b)\alpha(a)\,x\,\alpha(b)\alpha(a) = uxu$, using $\alpha^{2} = \mathrm{id}$. The second is the same computation with the order of the two factors exchanged, or the first applied to the pair $(b,a)$ read in the reversed algebra; it gives $wxw = abxb a$ with $w = ab$.</p>
 <p><strong>Corollary (the unitarity criterion).</strong> The signed sandwich $\Theta^{\alpha}_{a,b}$ is unitary for the trace form,</p>
 <p>$$
-(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{a,b})^{\dagger} = \mathrm{id} ,
+\boxed{\;(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{a,b})^{\dagger} = \mathrm{id}\;} ,
 $$</p>
 <p>exactly when the parameters $u = \alpha(b)\alpha(a)$ and $w = ab$ are central involutions of $E$; equivalently, when $\Phi_{u,u} = \Phi_{w,w} = \mathrm{id}$, that is when $u, w \in Z(E)$ and $u^{2} = w^{2} = 1$. In particular a signed sandwich with $u$ a central involution and $a, b$ commuting is unitary.</p>
 <p><strong>Proof.</strong> $\Phi_{c,c} = \mathrm{id}$ means $cxc = x$ for all $x$, that is $c \in Z(E)$ and $c^{2} = 1$; applying this to the two products of the theorem gives the criterion, and the sufficient condition follows because $ab = ba$ makes $\alpha(b)\alpha(a) = \alpha(ab)$ central together with $ab$ when the latter is.</p>

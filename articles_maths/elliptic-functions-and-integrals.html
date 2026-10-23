@@ -96,7 +96,7 @@ $$</p>
 <p>The <strong>Jacobi elliptic functions</strong> are $sn(u) = \sin\varphi$, $cn(u) = \cos\varphi$ and $dn(u) = \sqrt{1 - k^2\sin^2\varphi}$, the inverse of the integral of the first kind being taken as the definition of $\varphi$ as a function of $u$.</p>
 <p><strong>Theorem.</strong> The Jacobi functions are meromorphic and doubly periodic: $sn$ has periods $4K(k)$ and $2iK'(k)$, where $K'(k) = K(\sqrt{1-k^2})$, and</p>
 <p>$$
-sn^2u + cn^2u = 1 , \qquad dn^2u + k^2sn^2u = 1 , \qquad \frac{d}{du}sn\,u = cn\,u\,dn\,u .
+\boxed{\;sn^2u + cn^2u = 1 , \qquad dn^2u + k^2sn^2u = 1 , \qquad \frac{d}{du}sn\,u = cn\,u\,dn\,u\;} .
 $$</p>
 <p><strong>Proof.</strong> The relations follow from the definitions: $sn^2 + cn^2 = \sin^2\varphi + \cos^2\varphi = 1$ and $dn^2 + k^2 sn^2 = 1 - k^2\sin^2\varphi + k^2\sin^2\varphi = 1$, and the derivative is the chain rule applied to the inverse of the integral, $du/d\varphi = 1/\sqrt{1-k^2\sin^2\varphi}$. The double periodicity is the standard extension of $u$ to the complex plane by analytic continuation, with the periods computed from the integral: the continuation of the inverse of an integral of the first kind past the branch points produces the periods $4K$ and $2iK'$, and the standard argument is cited from the literature.</p>
 <p><strong>Definition.</strong> Let $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$ be a lattice in $\mathbb{C}$, with $\operatorname{Im}(\omega_2/\omega_1) > 0$. The <strong>Weierstrass elliptic function</strong> is</p>
@@ -107,11 +107,11 @@ $$</p>
 <p><strong>Proof.</strong> The convergence is standard: for $|\omega| > 2|z|$ the general term is bounded by $C|z|\,|\omega|^{-3}$ for a constant $C$, and the sum over the lattice of $|\omega|^{-3}$ converges; so the series converges normally on compact subsets of the complement of $\Lambda$, giving a meromorphic function by <em>Analytic Functions and Power Series</em>, above. The function is even because every term is even. For the periodicity, the derivative $\wp'(z) = -2\sum (z-\omega)^{-3}$ is manifestly periodic with period lattice $\Lambda$, and the function $\wp(z + \omega_i) - \wp(z)$ is therefore constant for each $i$; the constant is zero because $\wp$ is even, and the standard argument is cited from the literature.</p>
 <p><strong>Theorem (the differential equation and the addition theorem).</strong> With $g_2 = 60\sum' \omega^{-4}$ and $g_3 = 140\sum' \omega^{-6}$,</p>
 <p>$$
-\wp'(z)^2 = 4\wp(z)^3 - g_2\wp(z) - g_3 ,
+\boxed{\;\wp'(z)^2 = 4\wp(z)^3 - g_2\wp(z) - g_3\;} ,
 $$</p>
 <p>and for $u + v \notin \Lambda$,</p>
 <p>$$
-\wp(u+v) = -\wp(u) - \wp(v) + \frac{1}{4}\left( \frac{\wp'(u) - \wp'(v)}{\wp(u) - \wp(v)} \right)^2 .
+\boxed{\;\wp(u+v) = -\wp(u) - \wp(v) + \frac{1}{4}\left( \frac{\wp'(u) - \wp'(v)}{\wp(u) - \wp(v)} \right)^2\;} .
 $$</p>
 <p><strong>Proof.</strong> Both identities are the standard ones. The differential equation is obtained by comparing the Laurent expansions at the origin: the function $\wp'^2 - 4\wp^3 + g_2\wp + g_3$ is doubly periodic with poles only at the lattice points, and its expansion at the origin has no terms of nonnegative order, so it is holomorphic and periodic, hence constant, and the constant is zero because the expansion begins with a vanishing term. The addition theorem is proved by the same method: the function of $z$ obtained by subtracting the right-hand side from $\wp(z + v)$ is doubly periodic with at most a simple pole and no others, hence constant, and the constant is evaluated at a point where the terms are known. Both arguments are cited from the literature.</p>
 <p><strong>Corollary.</strong> The map $z \mapsto (\wp(z), \wp'(z))$ from $\mathbb{C}/\Lambda$ to the projective curve $Y^2Z = 4X^3 - g_2XZ^2 - g_3Z^3$ is a bijection of sets, and it carries the group law of $\mathbb{C}/\Lambda$ to the group law of the elliptic curve of <em>Elliptic Curves</em>, above.</p>

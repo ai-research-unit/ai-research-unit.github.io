@@ -94,7 +94,7 @@ $$</p>
 $$</p>
 <p>the <strong>evaluation</strong> at $a$; and the map $a \mapsto \operatorname{ev}_a$ is a bijection</p>
 <p>$$
-\operatorname{Hom}_{k\text{-alg}}(k[x], A) \cong A .
+\boxed{\;\operatorname{Hom}_{k\text{-alg}}(k[x], A) \cong A\;} .
 $$</p>
 <p><em>Proof.</em> A $k$-algebra homomorphism is determined by the image of $x$, because $k$ is fixed and the monomials generate; conversely, given $a$ the assignment $x \mapsto a$ extends to a homomorphism since the monomials are linearly independent and products of monomials multiply by adding exponents. The two constructions are inverse to each other.</p>
 <p><strong>Corollary.</strong> $k[x]$ is the free commutative $k$-algebra on one generator, and it is the <strong>initial</strong> object among commutative $k$-algebras equipped with a chosen element: for every such pair $(A,a)$ there is a unique homomorphism $k[x] \to A$ carrying $x$ to $a$.</p>
@@ -102,7 +102,7 @@ $$</p>
 <h2 id="divisibility-and-roots">Divisibility and Roots</h2>
 <p><strong>Theorem (division algorithm).</strong> Let $f, g \in k[x]$ with $g \neq 0$. Then there exist unique $q, r \in k[x]$ with</p>
 <p>$$
-f = qg + r, \qquad \deg r < \deg g .
+\boxed{\;f = qg + r, \qquad \deg r < \deg g\;} .
 $$</p>
 <p><em>Proof.</em> If $\deg f < \deg g$ take $q = 0$, $r = f$. Otherwise let $a$ and $b$ be the leading coefficients of $f$ and $g$ and let $m = \deg f - \deg g \geq 0$; the polynomial $f - (a/b)x^mg$ has degree less than $\deg f$, and induction on the degree produces $q$ and $r$. For uniqueness, suppose $qg + r = q'g + r'$ with $\deg r, \deg r' < \deg g$; then $(q - q')g = r' - r$. If $q \neq q'$ the left side has degree $\deg(q-q') + \deg g \geq \deg g$, while the right side has degree less than $\deg g$, a contradiction; hence $q = q'$ and then $r = r'$.</p>
 <p><strong>Theorem (remainder and factor).</strong> For $f \in k[x]$ and $a \in k$,</p>
@@ -148,7 +148,7 @@ $$</p>
 <h2 id="derivations-and-automorphisms">Derivations and Automorphisms</h2>
 <p><strong>Theorem (derivations).</strong> The $k$-derivations of $k[x_1,\dots,x_n]$ form a free $k[x_1,\dots,x_n]$-module of rank $n$,</p>
 <p>$$
-\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial/\partial x_i,
+\boxed{\;\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial/\partial x_i\;},
 $$</p>
 <p>In one variable, $\operatorname{Der}_k(k[x]) = k[x]\,\partial/\partial x$.</p>
 <p><em>Proof.</em> Every $\sum_i f_i\,\partial/\partial x_i$ is a derivation, since the partial derivatives are. Conversely, let $\delta$ be a derivation and put $f_i = \delta(x_i)$; then $\eta = \delta - \sum_i f_i\,\partial/\partial x_i$ is a derivation with $\eta(x_i) = 0$ for all $i$. Since $\eta$ obeys the Leibniz rule and vanishes on the generators and on $k$, it vanishes on every monomial, hence on all of $k[x_1,\dots,x_n]$. So $\delta = \sum_i f_i\,\partial/\partial x_i$, and the expression is unique because the $\partial/\partial x_i$ are linearly independent over the algebra.</p>

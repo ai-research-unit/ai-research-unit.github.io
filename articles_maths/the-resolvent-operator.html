@@ -85,7 +85,7 @@ $$</p>
 <p>and the <strong>spectrum</strong> is $\sigma(L) = \mathbb{C}\setminus\rho(L)$. The spectrum is <strong>discrete</strong> if it consists of isolated points of finite multiplicity, each an eigenvalue; a number $\lambda$ is an <strong>eigenvalue</strong> if $Lu=\lambda u$ for some nonzero $u\in\mathcal{D}(L)$, and the <strong>geometric multiplicity</strong> is $\dim\ker(L-\lambda)$, the whole eigenspace.</p>
 <p><strong>Theorem (the resolvent identity).</strong> For $\lambda,\mu\in\rho(L)$,</p>
 <p>$$
-R(\lambda)-R(\mu) = (\lambda-\mu)\,R(\lambda)R(\mu) , \qquad R(\lambda)R(\mu)=R(\mu)R(\lambda) .
+\boxed{\;R(\lambda)-R(\mu) = (\lambda-\mu)\,R(\lambda)R(\mu) , \qquad R(\lambda)R(\mu)=R(\mu)R(\lambda)\;} .
 $$</p>
 <p><em>Proof.</em> Write $R(\lambda)-R(\mu)=R(\lambda)\bigl((L-\mu)-(L-\lambda)\bigr)R(\mu)$ and observe that $(L-\mu)-(L-\lambda)=\lambda-\mu$; the second identity follows from the first by exchanging $\lambda$ and $\mu$, since the left-hand side changes sign and so does $\lambda-\mu$. The two resolvents therefore commute.</p>
 <p><strong>Theorem (analyticity and the Neumann series).</strong> The resolvent set is open, the spectrum is closed, and the resolvent is analytic on the resolvent set. If $\mu\in\rho(L)$ and $|\lambda-\mu|\,\|R(\mu)\|<1$, then $\lambda\in\rho(L)$ and</p>
@@ -141,9 +141,9 @@ $$</p>
 <p>defined for $\lambda$ in the resolvent set $\rho(D)$ of the complement; the second term is the <strong>energy-dependent addition</strong> and is written $\Sigma(\lambda)=B(D-\lambda)^{-1}C$ below.</p>
 <p><strong>Theorem (the block resolvent).</strong> Let $\lambda\in\rho(D)$. Then $\lambda\in\rho(L)$ if and only if $S(\lambda)$ is invertible, and in that case the blocks of $R(\lambda)=(L-\lambda)^{-1}$ are</p>
 <p>$$
-R_{11}(\lambda) = S(\lambda)^{-1}, \qquad
+\boxed{\;R_{11}(\lambda) = S(\lambda)^{-1}, \qquad
 R_{12}(\lambda) = -S(\lambda)^{-1}B\,(D-\lambda)^{-1}, \qquad
-R_{21}(\lambda) = -(D-\lambda)^{-1}C\,S(\lambda)^{-1},
+R_{21}(\lambda) = -(D-\lambda)^{-1}C\,S(\lambda)^{-1}\;},
 $$</p>
 <p>with $R_{22}(\lambda)=(D-\lambda)^{-1}+(D-\lambda)^{-1}C\,S(\lambda)^{-1}B\,(D-\lambda)^{-1}$; the compression of the resolvent to the first summand is therefore</p>
 <p>$$
@@ -193,7 +193,7 @@ $$</p>
 <p><em>Proof.</em> By the spectral theorem the pairing is the Stieltjes transform of the measure $\mu_E = \langle E(\cdot)\varphi,\varphi\rangle$, $\langle R(\lambda)\varphi,\varphi\rangle = \int(\mu-\lambda)^{-1}d\mu_E(\mu)$, and the difference of the two boundary values of $(\mu-\lambda)^{-1}$ across the real axis has the limit $2\pi i$ times the delta at $\mu$ in the distributional sense, by the Sokhotski–Plemelj formula; integrating against $g$ gives $2\pi i\int g\,d\mu_E = 2\pi i\langle g(L)\varphi,\varphi\rangle$. Dividing by $2\pi i$ gives the displayed limit, and the identification of the spectral measure follows on approximating the indicator of $B$ by continuous functions of compact support.</p>
 <p><strong>Theorem (the Dunford integral).</strong> Let $L$ generate a strongly continuous semigroup $\exp(tL)$, $t\ge0$, with $\|\exp(tL)\|\le M\exp(\omega t)$. Then for $a>\omega$ and $t>0$,</p>
 <p>$$
-\exp(tL) = \frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty} \exp(t\lambda)\,R(\lambda)\,d\lambda ,
+\boxed{\;\exp(tL) = \frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty} \exp(t\lambda)\,R(\lambda)\,d\lambda\;} ,
 $$</p>
 <p>the integral converging in the operator norm and defining the semigroup from the resolvent.</p>
 <p><em>Proof.</em> The resolvent is bounded on the vertical line $\operatorname{Re}\lambda=a$, and the integral is the inverse Laplace transform of the resolvent, which is the generating relation of the semigroup; the estimate $\|R(\lambda)\|=O(|\lambda|^{-1})$ on the line makes the integral absolutely convergent, and the semigroup law follows from that of the exponential. The hypothesis that $L$ generates the semigroup is the Hille–Yosida condition on the resolvent on a half-plane, and the verification of it for a differential operator is the analytic content of the generation theorems.</p>

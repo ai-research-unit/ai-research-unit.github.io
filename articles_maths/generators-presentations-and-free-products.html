@@ -92,7 +92,7 @@ $$</p>
 <p>Thus a generating set is the same thing as an epimorphism from a free group, and choosing generators of $G$ is choosing a free group that maps onto $G$. The kernel of that epimorphism records the relations, which is the subject of presentations below.</p>
 <p><strong>Lemma.</strong> If $S_i$ are subgroups of $G$ then $\langle \bigcup_i S_i \rangle$, the <strong>join</strong> of the $S_i$, is the smallest subgroup containing all of them; for two subgroups $H, K$,</p>
 <p>$$
-\langle H \cup K \rangle = \{h_1 k_1 h_2 k_2 \cdots h_n k_n : h_i \in H, \ k_i \in K\}.
+\boxed{\;\langle H \cup K \rangle = \{h_1 k_1 h_2 k_2 \cdots h_n k_n : h_i \in H, \ k_i \in K\}\;}.
 $$</p>
 <p><strong>Proof.</strong> The set displayed is closed under multiplication and inversion (an inverse reverses the order and inverts each factor, staying in the set), contains $H$ and $K$, and is contained in every subgroup containing both.</p>
 <p><strong>Remark.</strong> The join of two subgroups need not commute: $\langle H \cup K \rangle$ is not the set of products $h k$ unless one of the subgroups is normal, the special case that makes the internal recognition theorems for direct and semidirect products work. This is the technical point at which the two product constructions below diverge.</p>
@@ -145,7 +145,7 @@ $$</p>
 <h3 id="normal-forms">Normal Forms</h3>
 <p><strong>Theorem (normal form).</strong> Let $G = G_1 * G_2$. Every element of $G$ is uniquely expressible as</p>
 <p>$$
-g_1 g_2 \cdots g_n, \qquad n \geq 0, \quad g_j \in G_{i_j} \setminus \{e\}, \quad i_j \neq i_{j+1},
+\boxed{\;g_1 g_2 \cdots g_n, \qquad n \geq 0, \quad g_j \in G_{i_j} \setminus \{e\}, \quad i_j \neq i_{j+1}\;},
 $$</p>
 <p>the empty product being the identity. A word of this kind is called <strong>reduced</strong>; uniqueness is up to nothing, the expression being already reduced.</p>
 <p>The theorem follows from the presentation construction above and is proved by a rewriting argument: in the free product presented by $\langle \bigsqcup_i X_i \mid \bigsqcup_i R_i\rangle$, applying a relation of $R_i$ to a subword lying inside a single factor replaces one element of $G_i \setminus \{e\}$ by another (or by the identity only if the subword already represented the identity), and the standard induction on the length of a reduced alternating word then shows that no nonempty such word represents the identity. The theorem is standard and is stated here in the classical form.</p>
@@ -179,7 +179,7 @@ $$</p>
 <h3 id="definition-and-elementary-consequences">Definition and Elementary Consequences</h3>
 <p><strong>Definition.</strong> A <strong>presentation</strong> is a pair $\langle X \mid R \rangle$ consisting of a set $X$ of <strong>generators</strong> and a set $R$ of <strong>relations</strong>, that is, words in $X \sqcup X^{-1}$. The group presented is</p>
 <p>$$
-\langle X \mid R \rangle = F(X) / \langle\langle R \rangle\rangle, \qquad \langle\langle R \rangle\rangle = \text{the normal closure of } R \text{ in } F(X),
+\boxed{\;\langle X \mid R \rangle = F(X) / \langle\langle R \rangle\rangle, \qquad \langle\langle R \rangle\rangle = \text{the normal closure of } R \text{ in } F(X)\;},
 $$</p>
 <p>the smallest normal subgroup of $F(X)$ containing $R$. A relation $r \in R$ is usually written as an equation $r = e$; for instance $\langle x \mid x^n \rangle$ means $F(\{x\})/\langle\langle x^n\rangle\rangle \cong C_n$. A group is <strong>finitely presented</strong> if it has a presentation with $X$ and $R$ finite, and <strong>finitely generated</strong> if $X$ can be taken finite.</p>
 <p><strong>Theorem (universal property of a presentation).</strong> A homomorphism $\langle X \mid R \rangle \to H$ is the same thing as a function $X \to H$ whose extension to $F(X)$ kills every element of $R$. In particular, to define a homomorphism out of a presented group it suffices to give the images of the generators and check the relations.</p>

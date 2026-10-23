@@ -81,12 +81,12 @@
 $$</p>
 <p><strong>Proposition.</strong> For a homogeneous element $x$ the left multiplication $L_x$ and the right multiplication $R_x$ are homogeneous operators of parity $|x|$:</p>
 <p>$$
-L_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|}, \qquad R_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|} .
+\boxed{\;L_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|}, \qquad R_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|}\;} .
 $$</p>
 <p><strong>Proof.</strong> $L_x(y) = xy$ lies in $\mathrm{Cl}^{|x|+i}$ for $y \in \mathrm{Cl}^{i}$ because the product adds the parities; the same computation on the right.</p>
 <p><strong>Proposition (the graded commutators of the multiplication operators).</strong> For homogeneous $x$ and $y$,</p>
 <p>$$
-[L_x, R_y\} = \bigl(1 - (-1)^{|x||y|}\bigr)L_{xy} , \qquad [L_x, L_y\} = L_{xy - (-1)^{|x||y|}yx} , \qquad [R_x, R_y\} = R_{yx - (-1)^{|x||y|}xy} .
+\boxed{\;[L_x, R_y\} = \bigl(1 - (-1)^{|x||y|}\bigr)L_{xy} , \qquad [L_x, L_y\} = L_{xy - (-1)^{|x||y|}yx} , \qquad [R_x, R_y\} = R_{yx - (-1)^{|x||y|}xy}\;} .
 $$</p>
 <p>In particular the left and the right families commute as ordinary operators, $L_xR_y = R_yL_x = L_{xy}$; their graded commutator $[L_x,R_y\}$ vanishes when a factor is even and equals $2L_{xy}$ when both elements are odd; and the graded commutator $[L_x,L_y\}$ vanishes exactly when $xy = (-1)^{|x||y|}yx$, which holds for two orthogonal vectors but not for two general even elements, the even part of a Clifford algebra being a Clifford algebra in its own right.</p>
 <p><strong>Proof.</strong> $L_xL_y = L_{xy}$ and $R_xR_y = R_{yx}$ are the multiplicativity of the left family and the anti-multiplicativity of the right family; $L_xR_y = R_yL_x = L_{xy}$ because both operators send $z$ to $xzy$. Substituting into $[T,Q\} = TQ - (-1)^{|T||Q|}QT$ gives the three displays, the factor $1 - (-1)^{|x||y|}$ being zero unless $|x| = |y| = 1$, when it is $2$; and $L_{xy - (-1)^{|x||y|}yx} = 0$ is equivalent to $xy = (-1)^{|x||y|}yx$ because the left family is faithful, $L_z(1) = z$. The Clifford algebra is graded commutative exactly when that relation holds for all homogeneous pairs, which is the degenerate case named below.</p>
@@ -121,7 +121,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>super-commutant</strong> of a set of homogeneous operators $\mathcal{S}$ is the set of homogeneous operators $T$ with $[T, Q\} = 0$ for every $Q \in \mathcal{S}$. The <strong>supercentre</strong> of the algebra is the super-commutant of the multiplication operators inside the algebra.</p>
 <p><strong>Proposition.</strong> The supercentre of the Clifford algebra is the centre, $Z(\mathrm{Cl}(V,\mathfrak{Q}))$, and the super-commutant of the left multiplications is</p>
 <p>$$
-\{L_x : x \in \mathrm{Cl}(V,\mathfrak{Q})\}^{\mathrm{s}} = \{\, R_y : y \in \mathrm{Cl}^{0}(V,\mathfrak{Q}) \,\} \oplus \{\, \Gamma R_y : y \in \mathrm{Cl}^{1}(V,\mathfrak{Q}) \,\},
+\boxed{\;\{L_x : x \in \mathrm{Cl}(V,\mathfrak{Q})\}^{\mathrm{s}} = \{\, R_y : y \in \mathrm{Cl}^{0}(V,\mathfrak{Q}) \,\} \oplus \{\, \Gamma R_y : y \in \mathrm{Cl}^{1}(V,\mathfrak{Q}) \,\}\;},
 $$</p>
 <p>the even part of the super-commutant being the right multiplications and the odd part their conjugates by the parity operator.</p>
 <p><strong>Proof.</strong> The graded centre of a graded algebra is the set of homogeneous elements super-commuting with every element, and for a Clifford algebra it coincides with the centre. For the operator statement, let $T$ be homogeneous and super-commute with every $L_x$. If $T$ is even then $[T,L_x\} = [T,L_x]$ for all $x$, so $T$ lies in the ordinary commutant $\{L_x\}' = \{R_y\}$ of <em>One-Sided Operators on a Clifford Algebra</em>. If $T$ is odd, write $T = \Gamma S$; the condition $TL_x = (-1)^{|x|}L_xT$ becomes, after substituting $\Gamma L_{\alpha(x)} = L_x\Gamma$ and $L_{\alpha(x)} = (-1)^{|x|}L_x$, the condition $SL_x = L_xS$ for every $x$, so $S \in \{R_y\}$ and $T = \Gamma R_y$; the parity of $\Gamma R_y$ is that of $y$, which forces $y$ odd.</p>

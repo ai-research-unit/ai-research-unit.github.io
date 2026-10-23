@@ -116,8 +116,8 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> A <strong>spherical function</strong> of the symmetric space $X$ is a $K$-invariant eigenfunction of every operator in $\mathbb{D}(G/K)$ normalised by $\phi(e) = 1$. For $\lambda \in \mathrm A^*_{\mathbb C}$ the <strong>elementary spherical function</strong> is</p>
 <p>$$
-\phi_\lambda(g) = \int_K \exp(\langle i\lambda + \rho,\, H(gk)\rangle)\,dk,
-\qquad g \in G,
+\boxed{\;\phi_\lambda(g) = \int_K \exp(\langle i\lambda + \rho,\, H(gk)\rangle)\,dk,
+\qquad g \in G\;},
 $$</p>
 <p>where $H(g)$ is the $\mathrm A$-component of $g$ in the Cartan decomposition and $\rho$ is the half-sum of the positive restricted roots. The function $\phi_\lambda$ is the <strong>matrix coefficient</strong> $\langle \pi_\lambda(g)v, v\rangle$ of the spherical principal series, $v$ the $K$-fixed unit vector.</p>
 <p><strong>Proposition.</strong> For every $\lambda$ the function $\phi_\lambda$ is $K$-bi-invariant, satisfies $\phi_\lambda(e) = 1$, is an eigenfunction of the algebra $\mathbb{D}(G/K)$, and satisfies the functional equation $\int_K \phi_\lambda(xky)\,dk = \phi_\lambda(x)\phi_\lambda(y)$: the last is the identity that makes the spherical functions the characters of the commutative convolution algebra of the radial functions.</p>
@@ -140,13 +140,13 @@ $$</p>
 <h3 id="the-convolution-theorem">The Convolution Theorem</h3>
 <p><strong>Theorem (spherical convolution theorem).</strong> Let $f, h$ be $K$-bi-invariant functions in $L^1(G)$. Then the spherical transforms multiply:</p>
 <p>$$
-\widehat{f*h}(\lambda) = (\mathcal F f)(\lambda)\,(\mathcal F h)(\lambda) ,
+\boxed{\;\widehat{f*h}(\lambda) = (\mathcal F f)(\lambda)\,(\mathcal F h)(\lambda)\;} ,
 $$</p>
 <p>and the convolution operator acts on the elementary spherical functions by the scalar $\mathcal F f$:</p>
 <p>$$
-C_f \phi_\lambda = (\mathcal F f)(\lambda)\,\phi_\lambda ,
+\boxed{\;C_f \phi_\lambda = (\mathcal F f)(\lambda)\,\phi_\lambda ,
 \qquad
-C_f \phi_\lambda(x) = \int_G f(g)\,\phi_\lambda(g^{-1}\cdot x)\,dg .
+C_f \phi_\lambda(x) = \int_G f(g)\,\phi_\lambda(g^{-1}\cdot x)\,dg\;} .
 $$</p>
 <p>The eigenvalue assignment $\lambda \mapsto (\mathcal F f)(\lambda)$ is the <strong>spherical symbol</strong> of the convolution operator, and it is a function on the spectral quotient $\mathrm A^*_{\mathbb C}/W$.</p>
 <p><strong>Proof.</strong> Insert the functional equation of the spherical functions into the definition of the convolution: $(f*h)(g) = \int f(g_1)h(g_1^{-1}g)dg_1$ gives, after applying $\int_K \cdot\,dk$ and the functional equation $\int_K \phi_\lambda(xky)dk = \phi_\lambda(x)\phi_\lambda(y)$, the product of the two transforms. The operator statement is the same computation read as an operator on the radial functions, and the symbol is the eigenvalue assignment by the previous proposition.</p>

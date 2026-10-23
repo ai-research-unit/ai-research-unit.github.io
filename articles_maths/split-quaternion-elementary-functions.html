@@ -80,7 +80,9 @@ $$</p>
 <p>a series with real coefficients convergent for every $\tilde q$ by <em>Split-Quaternion Analysis</em>, §<em>Power Series and Analytic Functions</em>.</p>
 <p><strong>Theorem (The Exponential of a Vector).</strong> For $v \in V$ the square $v^2 = -\langle v\rangle_{\natural}$ is a real scalar, and</p>
 <p>$$
-\exp v = c_0(\lambda) + c_1(\lambda)\, v, \qquad \lambda = \langle v\rangle_{\natural},
+\boxed{\;
+\exp v = c_0(\lambda) + c_1(\lambda)\, v, \qquad \lambda = \langle v\rangle_{\natural}
+\;},
 $$</p>
 <p>where</p>
 <p>$$
@@ -92,7 +94,9 @@ $$</p>
 <p><strong>Proof.</strong> For $v \in V$ one has $v^2 = -\langle v\rangle_{\natural}$ because the generators anticommute, as in the multiplication table of (<em>Split-Quaternion Algebra</em>, §<em>The Multiplication Table</em>). If $v^2 = -\lambda$ is a scalar then the even and odd parts of the series are the power series of the displayed functions, by the standard reduction of a power series of an element with scalar square. The split-quaternion norm: $\langle \exp v\rangle_{\natural} = c_0^2 + c_1^2 \langle v\rangle_{\natural}$ because $1$ and $v$ are orthogonal, and the identity $\cos^2 + \sin^2 = 1$ or $\cosh^2 - \sinh^2 = 1$ gives $1$ in all three cases; the nilpotent case gives $\langle 1+v\rangle_{\natural} = 1$.</p>
 <p><strong>Theorem (Factoring the Exponential).</strong> For $\tilde q = q_t + v$ with $q_t$ real and $v \in V$,</p>
 <p>$$
-\exp \tilde q = \exp(q_t) \exp v ,
+\boxed{\;
+\exp \tilde q = \exp(q_t) \exp v
+\;},
 $$</p>
 <p>and hence</p>
 <p>$$
@@ -102,7 +106,9 @@ $$</p>
 <p><strong>Proof.</strong> The scalar $q_t$ is central and commutes with $v$, so the series splits, $\exp(q_t+v) = \exp(q_t)\exp v$; the split-quaternion norm follows from multiplicativity and the theorem above.</p>
 <p><strong>Theorem (The Image of the Exponential).</strong> The image is</p>
 <p>$$
-\exp(\mathbb{H}_{\mathrm{s}}) = \big\{\tilde q : \langle\tilde q\rangle_{\natural} > 0,\ \operatorname{Sc}(\tilde q) > -\sqrt{\langle\tilde q\rangle_{\natural}}\big\} \cup \{\tilde q \in \mathbb{R} : \tilde q < 0\},
+\boxed{\;
+\exp(\mathbb{H}_{\mathrm{s}}) = \big\{\tilde q : \langle\tilde q\rangle_{\natural} > 0,\ \operatorname{Sc}(\tilde q) > -\sqrt{\langle\tilde q\rangle_{\natural}}\big\} \cup \{\tilde q \in \mathbb{R} : \tilde q < 0\}
+\;},
 $$</p>
 <p>the open set on which the split-quaternion norm is positive and the scalar part exceeds $-\sqrt{N}$, together with the negative scalar line. Equivalently, it is the set $\{N>0,\ \operatorname{Sc} \geq -\sqrt N\}$ with the elements $q_t + v$ removed for which $q_t < 0$ and $v \neq 0$ is nilpotent, these being exactly the non-scalar elements with $\operatorname{Sc} = -\sqrt N$.</p>
 <p>In particular the exponential is not surjective onto the units: the elements of $\{N>0\}$ with $\operatorname{Sc}(\tilde q) < -\sqrt{\langle\tilde q\rangle_{\natural}}$ are not exponentials, the element $\tilde q = -3+2\vec e_z$, with $\langle\tilde q\rangle_{\natural} = 9-4 = 5$ and $\operatorname{Sc}(\tilde q) = -3 < -\sqrt5$, being an example, and neither are the boundary elements: the element $\tilde q = -1+\vec e_x+\vec e_y$, with $\langle\tilde q\rangle_{\natural} = 1$ and $\operatorname{Sc}(\tilde q) = -1 = -\sqrt{\langle\tilde q\rangle_{\natural}}$, is one of them.</p>

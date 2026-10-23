@@ -91,7 +91,7 @@ $$</p>
 <h3 id="the-quotient-uniformity">The Quotient Uniformity</h3>
 <p><strong>Definition.</strong> Let $X$ be an involutive uniform space and $\pi : X \to X/\sigma$ the orbit map. The <strong>orbit uniformity</strong> on $X/\sigma$ is the uniformity generated as a filter by the sets</p>
 <p>$$
-(\pi \times \pi)(E), \qquad E \text{ a } \sigma\text{-invariant entourage of } X .
+\boxed{\;(\pi \times \pi)(E), \qquad E \text{ a } \sigma\text{-invariant entourage of } X\;} .
 $$</p>
 <p><strong>Theorem.</strong> The sets $(\pi\times\pi)(E)$ for $\sigma$-invariant entourages $E$ form a base for a uniformity on $X/\sigma$; the orbit map is uniformly continuous for it; and the orbit uniformity is the finest uniformity on $X/\sigma$ making the orbit map uniformly continuous.</p>
 <p><strong>Proof.</strong> The diagonal is contained in every $(\pi\times\pi)(E)$ because $\Delta_{X} \subseteq E$. The inverse is contained because $E^{-1}$ is invariant when $E$ is, and $(\pi\times\pi)(E^{-1}) = (\pi\times\pi)(E)^{-1}$. For the composition, let $E$ be a $\sigma$-invariant entourage and choose an invariant $D$ with $D \circ D \subseteq E$, possible by intersecting a suitable entourage with its translate. If $[x]$ and $[y]$ are $(\pi\times\pi)(D)$-related and $[y]$ and $[z]$ are $(\pi\times\pi)(D)$-related, then there are representatives $x', y', y'', z'$ with $(x',y') \in D$ and $(y'',z') \in D$; since $y'$ and $y''$ are in the same orbit, say $y'' = \sigma^{k}y'$ with $k \in \{0,1\}$, the invariance of $D$ gives $(\sigma^{k}x', y'') \in D$, whence $(\sigma^{k}x', z') \in D \circ D \subseteq E$ and $([x],[z]) \in (\pi\times\pi)(E)$. Hence the base is a uniformity. Uniform continuity of $\pi$ is the definition; if another uniformity on $X/\sigma$ makes $\pi$ uniformly continuous, then it contains $(\pi\times\pi)(E)$ for every entourage $E$, hence contains the orbit uniformity, which is therefore the finest.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h3 id="the-extended-involution">The Extended Involution</h3>
 <p><strong>Theorem.</strong> Let $X$ be an involutive uniform space with completion $\hat X$, the separated complete uniform space containing $X$ as a dense subspace. Then the involution $\sigma$ extends to exactly one uniformly continuous involution $\hat\sigma$ of $\hat X$, and the fixed set of $\hat\sigma$ is a closed set containing the closure of $X^{\sigma}$:</p>
 <p>$$
-\overline{X^{\sigma}} \ \subseteq \ (\hat X)^{\hat\sigma} .
+\boxed{\;\overline{X^{\sigma}} \ \subseteq \ (\hat X)^{\hat\sigma}\;} .
 $$</p>
 <p>The containment can be strict, and it is strict exactly when the completion creates a fixed point that the closure of $X^{\sigma}$ does not contain.</p>
 <p><strong>Proof.</strong> The inclusion $X \to \hat X$ is uniformly continuous, and $\hat X$ is complete and separated, so the uniformly continuous map $\sigma : X \to X \subseteq \hat X$ extends uniquely to a uniformly continuous $\hat\sigma : \hat X \to \hat X$. The composite $\hat\sigma \circ \hat\sigma$ is a uniformly continuous extension of the identity on the dense subspace $X$, hence the identity by uniqueness; so $\hat\sigma$ is an involution. Its fixed set is closed, being the preimage of the diagonal of the separated space $\hat X \times \hat X$ under the continuous map $x \mapsto (x, \hat\sigma x)$, and it contains $X^{\sigma}$, hence also the closure of $X^{\sigma}$.</p>
@@ -117,7 +117,7 @@ $$</p>
 <h3 id="completion-of-the-orbit-space">Completion of the Orbit Space</h3>
 <p><strong>Theorem.</strong> The completion of the orbit space is the orbit space of the completion:</p>
 <p>$$
-\widehat{X/\sigma} \ \cong \ \hat X / \hat\sigma ,
+\boxed{\;\widehat{X/\sigma} \ \cong \ \hat X / \hat\sigma\;} ,
 $$</p>
 <p>by a uniform isomorphism, naturally in the involutive uniform space $X$. The orbit of a point of $X$ has for its image the orbit of the same point under $\hat\sigma$.</p>
 <p><strong>Proof.</strong> The orbit map $\pi : X \to X/\sigma$ is uniformly continuous and the completion $\widehat{X/\sigma}$ is complete and separated, so $\pi$ extends uniquely to a uniformly continuous map $\hat\pi : \hat X \to \widehat{X/\sigma}$; this map is $\hat\sigma$-invariant because $\pi\sigma = \pi$ and both sides are continuous extensions from the dense subspace $X$, so it descends to a uniformly continuous map $\hat X/\hat\sigma \to \widehat{X/\sigma}$. In the other direction, the composite $X \to \hat X \to \hat X/\hat\sigma$ is uniformly continuous and $\sigma$-invariant, so it factors through a uniformly continuous map $X/\sigma \to \hat X/\hat\sigma$; the target is complete and separated, since the quotient of a complete separated uniform space by a finite group of uniform isomorphisms is complete and separated, so this map extends to $\widehat{X/\sigma} \to \hat X/\hat\sigma$. The two composites are uniformly continuous and agree on the dense images of $X$ in each completion, so they are identities by uniqueness of the extension; hence the two maps are inverse uniform isomorphisms.</p>

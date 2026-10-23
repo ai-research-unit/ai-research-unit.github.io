@@ -81,7 +81,7 @@ $$</p>
 <h3 id="the-theorem">The theorem</h3>
 <p><strong>Theorem.</strong> Let $k$ be a perfect field and $A\in M_n(k)$. There are unique matrices $A_s,A_n\in M_n(k)$ with</p>
 <p>$$
-A=A_s+A_n, \qquad A_sA_n=A_nA_s, \qquad A_s \text{ semisimple}, \qquad A_n \text{ nilpotent}.
+\boxed{\;A=A_s+A_n, \qquad A_sA_n=A_nA_s, \qquad A_s \text{ semisimple}, \qquad A_n \text{ nilpotent}\;}.
 $$</p>
 <p>Both $A_s$ and $A_n$ are polynomials in $A$ with coefficients in $k$.</p>
 <p><em>Proof.</em> Let $m_A=\prod_{i=1}^{r}(x-\lambda_i)^{e_i}$ over an algebraic closure, with the $\lambda_i$ distinct. Over the splitting field, the Chinese remainder theorem applied to the coprime factors $(x-\lambda_i)^{e_i}$ gives idempotents $P_i$ with $P_i\equiv1\pmod{(x-\lambda_i)^{e_i}}$ and $P_i\equiv0\pmod{(x-\lambda_j)^{e_j}}$ for $j\neq i$. The idempotents are the spectral projections of <em>The Eigenvalue Decomposition of a Matrix</em>. Put</p>
@@ -184,7 +184,7 @@ $$</p>
 <p>A matrix $U$ is <strong>unipotent</strong> when $U=I+N$ with $N$ nilpotent; equivalently, when $U$ is a unit and $U-I$ is nilpotent. The eigenvalues of a unipotent matrix are all $1$.</p>
 <p><strong>Theorem.</strong> Let $A$ be invertible. Then there are unique matrices $A_s,A_u$ with</p>
 <p>$$
-A=A_sA_u, \qquad A_sA_u=A_uA_s, \qquad A_s \text{ semisimple}, \qquad A_u \text{ unipotent}.
+\boxed{\;A=A_sA_u, \qquad A_sA_u=A_uA_s, \qquad A_s \text{ semisimple}, \qquad A_u \text{ unipotent}\;}.
 $$</p>
 <p>They are $A_s$ of the additive decomposition and $A_u=I+A_s^{-1}A_n$.</p>
 <p><em>Proof.</em> The additive decomposition gives $A=A_s+A_n=S+N$ with $S$ semisimple and $N$ nilpotent, commuting. Since $A$ is invertible, $S$ is invertible: if $S$ had the eigenvalue $0$, then $A=S+N$ with $N$ nilpotent commuting with $S$ would have the eigenvalue $0$. Put $U=I+S^{-1}N$. The matrix $S^{-1}N$ is nilpotent, because $S^{-1}$ commutes with $N$ and $N$ is nilpotent, so $U$ is unipotent; and</p>
@@ -230,7 +230,7 @@ $$</p>
 <h3 id="the-intersection-formula">The intersection formula</h3>
 <p><strong>Theorem.</strong> Let $A=A_s+A_n$ be the Jordan–Chevalley decomposition. Then</p>
 <p>$$
-C(A)=C(A_s)\cap C(A_n).
+\boxed{\;C(A)=C(A_s)\cap C(A_n)\;}.
 $$</p>
 <p><em>Proof.</em> The matrices $A_s$ and $A_n$ are polynomials in $A$, so every matrix commuting with $A$ commutes with both; this gives $C(A)\subseteq C(A_s)\cap C(A_n)$. Conversely, if $X$ commutes with $A_s$ and with $A_n$, then $X$ commutes with their sum $A$; this gives the reverse inclusion.</p>
 <p><strong>Corollary.</strong> The centraliser of $A$ is the intersection of the centraliser of its semisimple part and the centraliser of its nilpotent part. In the diagonalisable case $A_n=0$ and $C(A)=C(A_s)$, the block-diagonal algebra of <em>The Eigenvalue Decomposition of a Matrix</em>, §<em>The Peirce decomposition of the matrix algebra</em>.</p>

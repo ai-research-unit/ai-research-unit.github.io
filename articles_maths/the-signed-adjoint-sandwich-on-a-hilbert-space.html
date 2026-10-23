@@ -89,7 +89,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
 <p><strong>Theorem (the signed case).</strong> For all $A,B\in B(H)$,</p>
 <p>$$
-(S_{A,B})^*=S_{\alpha(A^*),\,\alpha(B^*)},
+\boxed{\;(S_{A,B})^*=S_{\alpha(A^*),\,\alpha(B^*)}\;},
 $$</p>
 <p>and since $\alpha$ is a $*$-automorphism, $\alpha(A^*)=\alpha(A)^*$; the adjoint of the signed sandwich is the signed sandwich of the $\alpha$-adjoined parameters, so the signed sandwiches form a family closed under the adjunction.</p>
 <p><em>Proof.</em> $\langle S_{A,B}X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(A\alpha(X)BY^*)=\operatorname{tr}(\alpha(X)BY^*A)=\operatorname{tr}(X\,\alpha(BY^*A))=\operatorname{tr}(X\,\alpha(B)\alpha(Y^*)\alpha(A))=\operatorname{tr}(X\,\alpha(A^*)\alpha(Y)\alpha(B^*))=\langle X,S_{\alpha(A^*),\alpha(B^*)}Y\rangle_{\mathrm{HS}}$, using $\alpha(Y^*)=\alpha(Y)^*$, the ciclicity of the trace and the self-adjointness of the substitution $\alpha$ for the form.</p>
@@ -112,13 +112,13 @@ $$</p>
 <p><em>Proof.</em> The closed form $(S_{A,B})^*=S_{\alpha(A^*),\alpha(B^*)}$ gives the sufficiency; for the converse, equality of two signed sandwiches with invertible parameters forces the parameters to be reciprocal scalar multiples of one another, as in the unsigned case, and substituting the adjoint parameters gives the display; the last statement is $\alpha(A^*)=\alpha(A)^*=A^*=A$ for self-adjoint even $A$.</p>
 <p><strong>Theorem (isometry).</strong> The signed sandwich is an isometry of $S_2(H)$ if and only if</p>
 <p>$$
-\alpha(A^*A)=\lambda I,\qquad \alpha(BB^*)=\lambda^{-1}I
+\boxed{\;\alpha(A^*A)=\lambda I,\qquad \alpha(BB^*)=\lambda^{-1}I\;}
 $$</p>
 <p>for a nonzero scalar $\lambda$; when $A$ and $B$ are unitary the condition holds with $\lambda=1$, and the adjoint is an isometry with the reciprocal data.</p>
 <p><em>Proof.</em> By the composition table, $S_{A,B}^*S_{A,B}=S_{\alpha(A^*),\alpha(B^*)}S_{A,B}=T_{\alpha(A^*)\alpha(A),\,\alpha(B)\alpha(B^*)}=T_{\alpha(A^*A),\,\alpha(BB^*)}$; a two-sided operator $T_{C,D}$ is the identity exactly when $C$ and $D$ are reciprocal central elements, since $CXD=X$ for all $X$ forces, at $X=I$, $CD=I$ and then $CX=XC$; substituting $C=\alpha(A^*A)$, $D=\alpha(BB^*)$ gives the condition. The next computation $S_{A,B}S_{A,B}^*=T_{AA^*,\,B^*B}$ gives the co-isometry with the roles of the parameters exchanged, and unitarity is the two together.</p>
 <p><strong>Theorem (the unitarity condition).</strong> The signed sandwich $S_{A,B}$ is unitary on $S_2(H)$ if and only if there are nonzero scalars $\lambda,\mu$ with</p>
 <p>$$
-\alpha(A^*A)=\lambda I,\quad \alpha(BB^*)=\lambda^{-1}I,\quad AA^*=\mu I,\quad B^*B=\mu^{-1}I ;
+\boxed{\;\alpha(A^*A)=\lambda I,\quad \alpha(BB^*)=\lambda^{-1}I,\quad AA^*=\mu I,\quad B^*B=\mu^{-1}I\;} ;
 $$</p>
 <p>in particular, if $A$ and $B$ are unitary then $\lambda=\mu=1$ and $S_{A,B}$ is unitary, and conversely $S_{A,B}$ unitary with $A$ and $B$ invertible makes the four general products central scalars, so each parameter is unitary up to a central scalar.</p>
 <p><em>Proof.</em> Unitarity is the isometry together with the co-isometry; the isometry gives $\alpha(A^*A)$ and $\alpha(BB^*)$ reciprocal central scalars, the co-isometry gives $AA^*$ and $B^*B$ reciprocal central scalars, and the two pairs give the display. Sufficiency for unitary $A,B$ is immediate since $A^*A=AA^*=I$ and the same for $B$; the converse reads the centrality off the two-sided identities.</p>

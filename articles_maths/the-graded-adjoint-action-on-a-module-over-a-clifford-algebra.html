@@ -89,7 +89,7 @@ $$</p>
 <p>for homogeneous $x,f$ and every $m$, extended bilinearly.</p>
 <p><strong>Theorem.</strong> The adjoint action is a graded action: $\rho^{\vee}$ is linear, homogeneous of degree zero, and satisfies the graded bracket identity</p>
 <p>$$
-\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)
+\boxed{\;\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)\;}
 $$</p>
 <p>for homogeneous $x,y$; equivalently, the sign $(-1)^{\lvert x\rvert\lvert f\rvert}$ is exactly the sign that makes the transpose respect the graded bracket.</p>
 <p><strong>Proof.</strong> For homogeneous $x,y,f,m$ the module axiom of a graded action reads $x\cdot(y\cdot m)-(-1)^{\lvert x\rvert\lvert y\rvert}y\cdot(x\cdot m)=[x,y]\cdot m$, and unwinding the definition gives</p>
@@ -106,14 +106,14 @@ $$</p>
 <p><strong>Remark (the associative case and the star).</strong> The dual of a graded left module over a graded associative algebra is naturally a graded <strong>right</strong> module, $f\cdot a=\rho(a)^{t}f$; when the algebra carries an element star $x\mapsto x^{\dagger}$, $({}^{\dagger})^2=\mathrm{id}$, $(xy)^{\dagger}=y^{\dagger}x^{\dagger}$ — for the Clifford algebra the Clifford conjugation $\hat{}$ or the Hermitian conjugation of <em>Hermitian Clifford Structures</em> — the same computation with $x^{\dagger}$ in place of $[x,\cdot]$ makes the adjoint action a graded <strong>left</strong> action on $M^\vee$, the star supplying the reversal of the order, and the Koszul sign is unchanged.</p>
 <p><strong>Corollary (the sign rule).</strong> The adjoint action satisfies the sign rule: for homogeneous $x,y$,</p>
 <p>$$
-\rho^{\vee}(x)\rho^{\vee}(y)=(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)+\rho^{\vee}([x,y]) ;
+\boxed{\;\rho^{\vee}(x)\rho^{\vee}(y)=(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)+\rho^{\vee}([x,y])\;} ;
 $$</p>
 <p>in particular the odd generators of the Clifford algebra graded-anticommute on the dual, as they do on the module.</p>
 <h2 id="the-coadjoint-action">The Coadjoint Action</h2>
 <p><strong>Definition.</strong> The <strong>adjoint action of the algebra on itself</strong> is $\mathrm{ad}_x(y)=xy-yx$ on the odd part and $xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$ in general; the <strong>coadjoint action</strong> is the adjoint action on the graded dual $A^{\vee}$ of the algebra.</p>
 <p><strong>Proposition.</strong> The standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ is invariant under the left and right multiplications of <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em> in the sense that it identifies the coadjoint module with the algebra, and under that identification the coadjoint action is the adjoint action of the <strong>conjugated parameter</strong>,</p>
 <p>$$
-\rho^{\vee}(a)\ \longleftrightarrow\ \mathrm{ad}_{\alpha(\hat a)} ,
+\boxed{\;\rho^{\vee}(a)\ \longleftrightarrow\ \mathrm{ad}_{\alpha(\hat a)}\;} ,
 $$</p>
 <p>the module-level form of the adjoint formula $L_a^*=L_{\hat a}$ of the operator theory.</p>
 <p><strong>Proof.</strong> The standard form is non-degenerate and satisfies $\langle ax,y\rangle=\langle x,\hat ay\rangle$; it therefore gives an isomorphism $A\to A^\vee$, $y\mapsto\langle y,\cdot\rangle$, and transports the coadjoint action to the action on $A$ computed by duality: $(\rho^\vee(a)f)(y)=-(-1)^{\lvert a\rvert\lvert f\rvert}f(ay)$. Reading $f=\langle z,\cdot\rangle$ and using the invariance gives the transported action $z\mapsto$ the element paired with $\hat a z$, which is the adjoint action of $\alpha(\hat a)$ on the opposite algebra; the explicit case is the display.</p>

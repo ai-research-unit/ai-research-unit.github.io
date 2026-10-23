@@ -125,7 +125,7 @@ $$</p>
 <p>for every Borel set $A$. The function $\Delta : G \to \mathbb{R}_{>0}$ is the <strong>modular function</strong> of $G$; $G$ is <strong>unimodular</strong> if $\Delta \equiv 1$.</p>
 <p><strong>Theorem.</strong> The modular function is a continuous homomorphism, and it is independent of the choice of left Haar measure. The right Haar measures are the measures $\Delta^{-1}\mu$: explicitly</p>
 <p>$$
-d\mu_R(g) = \Delta(g)^{-1}\, d\mu_L(g),
+\boxed{\;d\mu_R(g) = \Delta(g)^{-1}\, d\mu_L(g)\;},
 $$</p>
 <p>so that $\mu_R(A) = \mu_L(A^{-1})$ up to a constant. Moreover $\Delta$ is trivial on the commutator subgroup, and $G$ is unimodular if and only if $\Delta \equiv 1$, that is, if and only if $\ker\Delta = G$.</p>
 <p><strong>Proof.</strong> For Borel $A$ and $g, h \in G$, $\mu(Agh) = \Delta(gh)\mu(A)$ and also $\mu(Agh) = \Delta(h)\mu(Ag) = \Delta(h)\Delta(g)\mu(A)$, so $\Delta$ is a homomorphism. Continuity: $\Delta$ is measurable as a pointwise limit of the measurable functions $g \mapsto \mu(Ag)/\mu(A)$ and a measurable homomorphism of a locally compact group into $\mathbb{R}_{>0}$ is continuous (the standard automatic-continuity argument, using that a measurable homomorphism is continuous on a neighbourhood of the identity and hence everywhere). Independence of the choice: replacing $\mu$ by $c\mu$ does not change the ratio. Triviality on the commutator: $\Delta$ takes values in the abelian group $\mathbb{R}_{>0}$, so it factors through the abelianisation $G/[G,G]$. Finally $\mu_R(A) := \mu_L(A^{-1})$ is right-invariant, because $\mu_R(Ah) = \mu_L(h^{-1}A^{-1}) = \mu_L(A^{-1}) = \mu_R(A)$; the relation $d\mu_R = \Delta^{-1}d\mu_L$ is the standard computation $\mu_L(A^{-1}) = \int_A \Delta(g)^{-1}\,d\mu_L(g)$.</p>
@@ -158,7 +158,7 @@ $$</p>
 <p><strong>Definition.</strong> A Radon measure $\nu$ on $G/H$ is <strong>quasi-invariant</strong> under the left action of $G$ if for every $g \in G$ the measures $\nu$ and $g_*\nu$ have the same null sets, equivalently $\nu(gA) = 0$ if and only if $\nu(A) = 0$. It is <strong>invariant</strong> if $\nu(gA) = \nu(A)$ for all $g$ and all Borel $A$.</p>
 <p><strong>Theorem.</strong> Let $H$ be a closed subgroup of a locally compact group $G$. Then $G/H$ carries a nonzero quasi-invariant Radon measure, unique up to equivalence and up to a positive scalar; it carries a nonzero invariant Radon measure if and only if</p>
 <p>$$
-\Delta_G\big|_H = \Delta_H ,
+\boxed{\;\Delta_G\big|_H = \Delta_H\;} ,
 $$</p>
 <p>that is, the modular function of $G$ restricts to the modular function of $H$. In that case the invariant measure is unique up to a positive scalar.</p>
 <p><strong>Proof sketch.</strong> Choose left Haar measures $\mu_G$ on $G$ and $\mu_H$ on $H$. For $f \in C_c(G)$ the function $h \mapsto f(gh)$ has compact support in $H$ for each $g$, so the inner integral $F(g) = \int_H f(gh)\,d\mu_H(h)$ is defined and continuous in $g$, and it satisfies $F(gh_0) = \Delta_H(h_0)^{-1}F(g)$ for $h_0 \in H$: a right translate of the variable of integration changes the Haar measure of $H$ by the factor $\Delta_H(h_0)$. There is therefore a positive continuous transfer function $\rho$ on $G$ with $\rho(gh) = \rho(g)\,\Delta_G(h)\,\Delta_H(h)^{-1}$ for $h \in H$ (extend the character $\Delta_G\Delta_H^{-1}$ of $H$ to a positive continuous function and average against a partition of unity), and the standard formula of Weil</p>
@@ -168,7 +168,7 @@ $$</p>
 <p>defines a nonzero Radon measure $\nu$ on $G/H$; the factor $\rho$ is exactly what corrects the equivariance of $F$, so $\nu$ is well defined. The measure $\nu$ is quasi-invariant in general, and it is invariant exactly when $\rho$ can be chosen to be right-$H$-invariant, that is, exactly when $\Delta_G(h) = \Delta_H(h)$ for all $h \in H$. Changing $\rho$ multiplies $\nu$ by a positive continuous density and rescaling $\nu$ changes it by a positive scalar, which gives the uniqueness statements; the local construction of an arbitrary quasi-invariant measure from the formula is the standard reduction, and the two measures differ by a Radon–Nikodym cocycle.</p>
 <p><strong>Theorem (Weil's integral formula).</strong> Let $H$ be a closed subgroup of a locally compact group $G$, let $\mu_G$ be a left Haar measure, $\mu_H$ a left Haar measure, and $\nu$ a quasi-invariant measure on $G/H$ with cocycle $\rho$. Then for $f \in C_c(G)$,</p>
 <p>$$
-\int_G f(g)\,d\mu_G(g) = \int_{G/H}\int_H f(gh)\,\rho(g,h)\,d\mu_H(h)\,d\nu(gH) ,
+\boxed{\;\int_G f(g)\,d\mu_G(g) = \int_{G/H}\int_H f(gh)\,\rho(g,h)\,d\mu_H(h)\,d\nu(gH)\;} ,
 $$</p>
 <p>where the cocycle reduces to a constant when the invariance criterion holds. In particular the double integral of a compactly supported continuous function is well defined in either order.</p>
 <p><strong>Proof sketch.</strong> The functional $f \mapsto \int_G f\,d\mu_G$ is positive and left-invariant; the iterated functional is positive and left-invariant, and uniqueness of Haar measure on the product forces them to be proportional. The proportionality constant is fixed by a test function supported in a small neighbourhood of $e$ over which the projection $G \to G/H$ admits a local section; the cocycle appears because the local sections change by the action of $H$, and its form is forced by the descent condition.</p>

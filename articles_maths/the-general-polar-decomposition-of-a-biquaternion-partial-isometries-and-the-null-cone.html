@@ -130,11 +130,11 @@ $$</p>
 <h3 id="the-right-form-and-the-left-form">The Right Form and the Left Form</h3>
 <p>For a matrix $A\in M_2(\mathbb{C})$, write $A^{\dagger}$ for the conjugate transpose. The <strong>right polar decomposition</strong> is $A=V\lvert A\rvert$ with $\lvert A\rvert=\sqrt{A^{\dagger}A}$ positive semidefinite and $V$ a partial isometry whose kernel is $\ker A$. It is unique. The <strong>left form</strong>, which is the order of the corpus, is the adjoint statement:</p>
 <p>$$
-A=\lvert A^{\dagger}\rvert\,U,\qquad \lvert A^{\dagger}\rvert=\sqrt{AA^{\dagger}},\qquad U=\lvert A^{\dagger}\rvert^{+}A,
+\boxed{\; A=\lvert A^{\dagger}\rvert\,U,\qquad \lvert A^{\dagger}\rvert=\sqrt{AA^{\dagger}},\qquad U=\lvert A^{\dagger}\rvert^{+}A \;},
 $$</p>
 <p>with ${}^{+}$ the Moore–Penrose inverse. The matrix $U$ is the adjoint of the right factor of $A^{\dagger}$, hence a partial isometry, and its projections are the two projections of $A$:</p>
 <p>$$
-U^{\dagger}U=P_{\operatorname{ran}A^{\dagger}},\qquad UU^{\dagger}=P_{\operatorname{ran}A}.
+\boxed{\; U^{\dagger}U=P_{\operatorname{ran}A^{\dagger}},\qquad UU^{\dagger}=P_{\operatorname{ran}A} \;}.
 $$</p>
 <p>The condition is stated on the two projections, not on the kernel alone. The kernel condition $\ker U=\ker A$ fixes the initial projection; the range condition $\operatorname{ran}U=\operatorname{ran}A$ fixes the final one. Both are needed for uniqueness, as the examples at the end of this section show.</p>
 <h3 id="the-singular-value-form">The Singular Value Form</h3>
@@ -275,7 +275,7 @@ $$</p>
 <h3 id="the-rank-one-case">The Rank-One Case</h3>
 <p>An element is non-invertible exactly when $\langle\tilde Q\rangle_{\natural}=0$, because the quaternionic norm is the determinant of the $2\times2$ image. A nonzero element of the cone therefore has rank one: its matrix has one non-zero singular value and one zero singular value. Write $\sigma=\sigma_1>0$. The singular value form gives</p>
 <p>$$
-\tilde Q=\sigma\,\tilde U,\qquad \tilde H=\sigma\,\tilde U\tilde U^{*},\qquad \tilde U=\frac{\tilde Q}{\sigma},
+\boxed{\; \tilde Q=\sigma\,\tilde U,\qquad \tilde H=\sigma\,\tilde U\tilde U^{*},\qquad \tilde U=\frac{\tilde Q}{\sigma} \;},
 $$</p>
 <p>with $\sigma^{2}=2\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert_{\mathrm F}^{2}$. The element is a positive scalar times a partial isometry, and the positive factor is the scalar times the final projection of that partial isometry. The two equations are the rank-one reading of $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ and $\tilde U=\tilde H^{+}\tilde Q$.</p>
 <p><strong>The projections.</strong> For a rank-one partial isometry, the two projections $\tilde\Pi_{\mathrm i}$ and $\tilde\Pi_{\mathrm f}$ are rank-one Hermitian idempotents, and</p>

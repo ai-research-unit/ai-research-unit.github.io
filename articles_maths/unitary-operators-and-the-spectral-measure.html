@@ -85,14 +85,14 @@
 <p><em>Proof.</em> The product of two unitaries is unitary and the inverse of a unitary is unitary; the group axioms are those of composition; the isometry statement is the definition.</p>
 <p><strong>Proposition (the topologies of the unitary group).</strong> The unitary group carries the norm, strong operator and weak operator topologies, and</p>
 <p>$$
-\text{norm}\ \subsetneq\ \text{SOT}\ \subsetneq\ \text{WOT}
+\boxed{\;\text{norm}\ \subsetneq\ \text{SOT}\ \subsetneq\ \text{WOT}\;}
 $$</p>
 <p>with the SOT and WOT coinciding on the unitary group; it is SOT- and WOT-compact, so $\mathrm{U}(H)$ is a compact Hausdorff topological group in the strong topology, and it is metrisable there when $H$ is separable.</p>
 <p><em>Proof.</em> On the unitary group strong convergence implies weak convergence and the converse holds because $\|U_\alpha x-Ux\|^2=2\|x\|^2-2\operatorname{Re}\langle U_\alpha x,Ux\rangle$; compactness is the compactness of the unit ball of $B(H)$ together with the closedness of the group, by the continuity of the multiplication and the adjoint; metrisability is the separability.</p>
 <h2 id="the-spectral-theorem-for-unitaries">The Spectral Theorem for Unitaries</h2>
 <p><strong>Theorem (spectral theorem for a unitary).</strong> For every unitary $U$ there is a spectral measure $E$ on the Borel subsets of $\mathbb{T}$ with</p>
 <p>$$
-U=\int_{\mathbb{T}}z\,dE(z),
+\boxed{\;U=\int_{\mathbb{T}}z\,dE(z)\;},
 $$</p>
 <p>and the support of $E$ is $\sigma(U)\subseteq\mathbb{T}$; for every bounded Borel function $f$ on $\mathbb{T}$ the operator $f(U)=\int f\,dE$ is bounded with $\|f(U)\|=\sup_{z\in\mathbb{T}}|f(z)|$, the map $f\mapsto f(U)$ is an isometric $*$-homomorphism, and $U$ is unitarily equivalent to a multiplication by the independent variable on a direct sum of $L^2(\mathbb{T},\mu_j)$.</p>
 <p><em>Proof.</em> The unitary is normal with spectrum on the circle, so the normal spectral theorem of <em>Self-Adjoint Operators and the Spectral Theorem</em> applies verbatim, with the plane replaced by the circle; the multiplication model is the spectrum-as-multiplication statement of <em>The Spectral Operator</em>.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>strongly continuous one-parameter unitary group</strong> is a map $t\mapsto T(t)$ from $\mathbb{R}$ to $\mathrm{U}(H)$ with $T(s+t)=T(s)T(t)$, $T(0)=I$, and $T(t)x\to x$ as $t\to0$ for every $x$.</p>
 <p><strong>Theorem (Stone).</strong> For every strongly continuous one-parameter unitary group $t\mapsto T(t)$ there is a self-adjoint operator $A$, generally unbounded, with</p>
 <p>$$
-T(t)=\exp(itA)\quad(t\in\mathbb{R}),
+\boxed{\;T(t)=\exp(itA)\quad(t\in\mathbb{R})\;},
 $$</p>
 <p>and $A$ is the generator of the group, determined by $A=\lim_{t\to0}(T(t)-I)/it$ on its domain;</p>
 <p>$$

@@ -130,7 +130,7 @@ $$</p>
 $$</p>
 <p>where the first two maps are the restrictions of $f$ and $g$ and the last two are induced by $f'$ and $g'$. If in addition $f$ is injective and $g'$ is surjective, the sequence extends to a long exact sequence</p>
 <p>$$
-0 \longrightarrow \ker a \longrightarrow \ker b \longrightarrow \ker c \xrightarrow{\ \partial\ } \operatorname{coker} a \longrightarrow \operatorname{coker} b \longrightarrow \operatorname{coker} c \longrightarrow 0 .
+\boxed{\;0 \longrightarrow \ker a \longrightarrow \ker b \longrightarrow \ker c \xrightarrow{\ \partial\ } \operatorname{coker} a \longrightarrow \operatorname{coker} b \longrightarrow \operatorname{coker} c \longrightarrow 0\;} .
 $$</p>
 <p><em>Proof.</em> Exactness at $\ker b$: the composite $\ker a \to \ker b \to \ker c$ is the restriction of $gf=0$, so it vanishes. Conversely, if $b_0 \in \ker b$ has $g(b_0)=0$, then $b_0 \in \ker g=\operatorname{im} f$, say $b_0=f(a_0)$, and $b(b_0)=0$ gives $f'(a(a_0))=b(f(a_0))=b(b_0)=0$, so $a(a_0)=0$ by injectivity of $f'$; thus $a_0 \in \ker a$ and $b_0$ is in the image.</p>
 <p>Exactness at $\ker c$: that $\partial$ vanishes on the image of $\ker b$ is the computation $b_0 \in \ker b$ gives $b(b_0)=0$, hence $a_0'=0$. Conversely, if $\partial(c_0)=0$, then with the notation of the construction $a_0' \in \operatorname{im} a$, say $a_0'=a(a_1)$, and $b(b_0-f(a_1))=b(b_0)-f'(a(a_1))=0$, so $b_0-f(a_1) \in \ker b$ and its image under $g$ is $g(b_0)-g(f(a_1))=c_0-0=c_0$. Hence $c_0$ is in the image of $\ker b \to \ker c$.</p>
@@ -174,7 +174,7 @@ $$</p>
 <p>Fix a module $M$. For each module $N$ the set $\operatorname{Hom}_R(M,N)$ is an $R$-module under pointwise operations, and a map $f:N \to N'$ induces $f_*:\operatorname{Hom}_R(M,N) \to \operatorname{Hom}_R(M,N')$, $f_*(h)=f \circ h$, making $\operatorname{Hom}_R(M,-)$ a functor to $R$-modules. It is additive: $(f+f')_*=f_*+f'_*$.</p>
 <p><strong>Theorem.</strong> The functor $\operatorname{Hom}_R(M,-)$ is <strong>left exact</strong>: if $0 \to A \xrightarrow{f} B \xrightarrow{g} C$ is exact then</p>
 <p>$$
-0 \longrightarrow \operatorname{Hom}_R(M,A) \xrightarrow{f_*} \operatorname{Hom}_R(M,B) \xrightarrow{g_*} \operatorname{Hom}_R(M,C)
+\boxed{\;0 \longrightarrow \operatorname{Hom}_R(M,A) \xrightarrow{f_*} \operatorname{Hom}_R(M,B) \xrightarrow{g_*} \operatorname{Hom}_R(M,C)\;}
 $$</p>
 <p>is exact.</p>
 <p><em>Proof.</em> If $f_*(h)=0$ then $f \circ h=0$; since $f$ is injective, $h=0$, so $f_*$ is injective. Next, $g_* f_*=(g \circ f)_*=0$, so $\operatorname{im} f_* \subseteq \ker g_*$. Conversely, let $h \in \operatorname{Hom}_R(M,B)$ with $g \circ h=0$. Then $\operatorname{im} h \subseteq \ker g=\operatorname{im} f$, and since $f$ is injective the map $f^{-1}:\operatorname{im} f \to A$ is a well-defined homomorphism; the composite $f^{-1} \circ h$ is an element of $\operatorname{Hom}_R(M,A)$ with $f_*(f^{-1}h)=h$. So $\ker g_* \subseteq \operatorname{im} f_*$.</p>
@@ -196,7 +196,7 @@ $$</p>
 <p>The tensor product of modules is defined and developed; its exactness is recorded here because it is the companion asymmetry to the one just proved. Let $-\otimes_R M$ denote the functor $N \mapsto N \otimes_R M$.</p>
 <p><strong>Theorem.</strong> The functor $-\otimes_R M$ is <strong>right exact</strong>: if $A \xrightarrow{f} B \xrightarrow{g} C \to 0$ is exact then</p>
 <p>$$
-A \otimes_R M \xrightarrow{f \otimes \operatorname{id}} B \otimes_R M \xrightarrow{g \otimes \operatorname{id}} C \otimes_R M \longrightarrow 0
+\boxed{\;A \otimes_R M \xrightarrow{f \otimes \operatorname{id}} B \otimes_R M \xrightarrow{g \otimes \operatorname{id}} C \otimes_R M \longrightarrow 0\;}
 $$</p>
 <p>is exact. It is not in general left exact.</p>
 <p><em>Proof.</em> This is proved in the article of this category on flatness and exactness, where the construction of the tensor product by generators and relations is available.</p>

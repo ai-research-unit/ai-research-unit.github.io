@@ -172,7 +172,7 @@ $$</p>
 <h3 id="inversion">Inversion</h3>
 <p>The inversion formula is</p>
 <p>$$
-f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) \exp(\langle \xi, Q \rangle \varepsilon) \, d\xi,
+\boxed{\; f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) \exp(\langle \xi, Q \rangle \varepsilon) \, d\xi \;},
 $$</p>
 <p>under suitable conditions. Because $\varepsilon^2 = 0$, this reduces to</p>
 <p>$$
@@ -203,7 +203,9 @@ $$</p>
 <p>where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^2$.</p>
 <p><strong>Convolution theorem.</strong> For functions for which the dual Fourier transform is defined,</p>
 <p>$$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
+\boxed{\;
+\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)
+\;}.
 $$</p>
 <p><strong>Proof.</strong> Write the definition, apply Fubini, and change variables.</p>
 <h3 id="the-structure-of-the-convolution-theorem">The Structure of the Convolution Theorem</h3>
@@ -289,12 +291,14 @@ $$</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
 <p><strong>Theorem (Hardy–Littlewood, dual version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{D}')$ and every $\lambda > 0$,</p>
 <p>$$
-|\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+\boxed{\;
+|\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1
+\;}.
 $$</p>
 <p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{D}')$ for $1 < p \leq \infty$.</p>
 <p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
 <p>$$
-\|Mf\|_p \leq C_p \|f\|_p.
+\boxed{\; \|Mf\|_p \leq C_p \|f\|_p \;}.
 $$</p>
 <p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
 <h3 id="the-structure-of-the-maximal-function">The Structure of the Maximal Function</h3>
@@ -345,7 +349,7 @@ $$</p>
 <h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
 <p><strong>Theorem (Fourier Slice, dual version).</strong> The one-dimensional dual Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional dual Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:</p>
 <p>$$
-\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta).
+\boxed{\; \widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta) \;}.
 $$</p>
 <p><strong>Proof.</strong> Write the definition of the Radon transform, take the dual Fourier transform in $t$, and change variables.</p>
 <p>The Fourier slice theorem is the mathematical basis of dual tomography, the analogue of computed tomography for the dual plane.</p>

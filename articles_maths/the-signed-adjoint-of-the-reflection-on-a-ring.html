@@ -79,7 +79,7 @@ $$</p>
 <h2 id="the-reflection-and-its-square">The Reflection and its Square</h2>
 <p><strong>Theorem.</strong> The operator $r_u$ is additive and bijective, and its square is the conjugation by $u\alpha(u)$:</p>
 <p>$$
-r_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1} .
+\boxed{\;r_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1}\;} .
 $$</p>
 <p>Hence $r_u$ is an <strong>involution</strong>, $r_u^2 = \mathrm{id}$, exactly when $u\alpha(u)$ is central; in that case it is a reflection, and its fixed set is $\{x : u\alpha(x) = xu\}$.</p>
 <p><strong>Proof.</strong> $r_u(r_u(x)) = u\,\alpha(u\alpha(x)u^{-1})\,u^{-1} = u\alpha(u)\,\alpha(\alpha(x))\,\alpha(u)^{-1}u^{-1} = u\alpha(u)\,x\,(u\alpha(u))^{-1}$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. The square is the identity exactly when the conjugating element $u\alpha(u)$ is central, and the fixed set is the equation $u\alpha(x)u^{-1} = x$.</p>
@@ -87,13 +87,13 @@ $$</p>
 <h2 id="the-signed-adjoint">The Signed Adjoint</h2>
 <p><strong>Theorem.</strong> With respect to the twisted pairing,</p>
 <p>$$
-r_u^{*_\sigma} = S_{\delta(u),\delta(u)^{-1}} = r'_{\delta(u)} ,
+\boxed{\;r_u^{*_\sigma} = S_{\delta(u),\delta(u)^{-1}} = r'_{\delta(u)}\;} ,
 $$</p>
 <p>where $r'_v$ denotes the signed sandwich $S_{v,v^{-1}}$; the signed adjoint of a reflection is the reflection in $\delta(u)$.</p>
 <p><strong>Proof.</strong> This is $S_{u,u^{-1}}^{*_\sigma} = S_{\delta(u),\delta(u^{-1})}$ of <em>The Signed Adjoint Sandwich on a Ring</em>, together with $\delta(u^{-1}) = \delta(u)^{-1}$ because $\delta$ is an involution.</p>
 <p><strong>Theorem (self-adjointness).</strong> The reflection is self-adjoint, $r_u^{*_\sigma} = r_u$, exactly when</p>
 <p>$$
-S_{\delta(u),\delta(u)^{-1}} = S_{u,u^{-1}} \iff \delta(u) = \lambda u \ \text{ for some central } \lambda \iff \delta(u)u^{-1} \in Z(A) .
+\boxed{\;S_{\delta(u),\delta(u)^{-1}} = S_{u,u^{-1}} \iff \delta(u) = \lambda u \ \text{ for some central } \lambda \iff \delta(u)u^{-1} \in Z(A)\;} .
 $$</p>
 <p>In particular a <strong>$\delta$-symmetric</strong> unit, $\delta(u) = u$, gives a self-adjoint reflection, and so does $\delta(u) = \lambda u$ with $\lambda$ central.</p>
 <p><strong>Proof.</strong> The equality $S_{c,d} = S_{a,b}$ of two sandwiches as maps holds exactly when the rank-one tensors $c\otimes d$ and $a\otimes b$ agree, that is $c = \lambda a$, $d = \lambda^{-1}b$ for a central $\lambda$; with $a = d = u$, $b = c = u^{-1}$ (since $\delta(u^{-1}) = \delta(u)^{-1}$) this is $\delta(u) = \lambda u$. Dividing by $u$ gives the centrality of $\delta(u)u^{-1}$.</p>

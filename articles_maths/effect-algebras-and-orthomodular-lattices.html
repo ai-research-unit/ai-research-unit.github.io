@@ -111,7 +111,7 @@ $$</p>
 <h3 id="subspaces-of-a-hilbert-space">Subspaces of a Hilbert Space</h3>
 <p>Let $H$ be a Hilbert space over $\mathbb{K} \in \{\mathbb{R}, \mathbb{C}\}$, with inner product written $\langle \cdot, \cdot \rangle$, and let $P(H)$ be the set of closed subspaces of $H$, ordered by inclusion. The meet of two closed subspaces is their intersection and the join is the closure of their sum,</p>
 <p>$$
-M \wedge N = M \cap N, \qquad M \vee N = \overline{M + N},
+\boxed{\;M \wedge N = M \cap N, \qquad M \vee N = \overline{M + N}\;},
 $$</p>
 <p>and the orthocomplement is the orthogonal complement $M^{\perp}$. This makes $P(H)$ a complete ortholattice.</p>
 <p><strong>Theorem.</strong> $P(H)$ is an orthomodular lattice.</p>
@@ -143,7 +143,7 @@ $$</p>
 <p>and the element $\gamma$, when it exists, is unique and is written $\beta \ominus \alpha$.</p>
 <p><strong>Theorem.</strong> In an effect algebra the relation $\leq$ is a partial order with least element $0$ and greatest element $1$; moreover $\alpha \oplus 0 = \alpha$ for all $\alpha$, $\alpha'' = \alpha$, $0' = 1$, $1' = 0$, and</p>
 <p>$$
-\alpha \leq \beta \iff \beta' \leq \alpha', \qquad \beta \ominus \alpha = (\alpha \oplus \beta')' .
+\boxed{\;\alpha \leq \beta \iff \beta' \leq \alpha', \qquad \beta \ominus \alpha = (\alpha \oplus \beta')'\;}.
 $$</p>
 <p><strong>Proof.</strong> Reflexivity is $\alpha \oplus 0 = \alpha$, which follows from (EA3) applied to $\alpha'$ and (EA1); antisymmetry and transitivity are the standard cancellativity and associativity consequences of (EA2) and (EA3). The order-reversing property of the orthosupplement and the formula for the difference are the standard identities of the theory: if $\alpha \le \beta$, say $\beta = \alpha \oplus \gamma$, then $\beta' = (\alpha\oplus \gamma)' = \alpha' \ominus \gamma \le \alpha'$. The full verification is in the standard references.</p>
 <h3 id="the-standard-examples">The Standard Examples</h3>
@@ -224,7 +224,7 @@ $$</p>
 <p><strong>Proof.</strong> Let $s$ be a state. Additivity on the partial sum gives $s(k/n) = k/n$ for all $0 \leq k \leq n$ by $k$-fold addition of $1/n$, and monotonicity, which follows from the order definition, gives $s(\alpha) = \alpha$ for irrational $\alpha$ as well.</p>
 <p><strong>Theorem (Gleason).</strong> Let $H$ be a Hilbert space with $\dim H \geq 3$. Then every state $s$ on the projection lattice $P(H)$ has the form</p>
 <p>$$
-s(M) = \operatorname{tr}(\rho \, p_M)
+\boxed{\;s(M) = \operatorname{tr}(\rho \, p_M)\;}
 $$</p>
 <p>for a unique positive trace-class operator $\rho$ of trace one, where $p_M$ is the orthogonal projection onto $M$; conversely every such operator defines a state. In the finite-dimensional case with $\dim H \geq 3$ the same formula holds, and the state $M \mapsto \dim M / \dim H$ is the one given by the scalar density $\rho = (\dim H)^{-1} I$, which is faithful.</p>
 <p><strong>Proof.</strong> The theorem is Gleason's; the argument uses the additivity of $s$ on families of mutually orthogonal subspaces and the classification of the resulting measures. In finite dimension the trace formula follows from the spectral theorem for the density operator. The hypothesis $\dim H \geq 3$ is necessary: for $\dim H = 2$ the projection lattice is the diamond $\{0, L_1, L_2, H\}$ of the two lines $L_1 \neq L_2$ and the whole plane, and there are states on it that are not of the trace form, which is the finite-dimensional content of the hidden-variable question below.</p>

@@ -88,7 +88,7 @@ so that the even self-adjoint elements generate self-adjoint adjoint actions and
 <h2 id="the-graded-algebra-the-graded-module-and-the-sign-rule">The Graded Algebra, the Graded Module and the Sign Rule</h2>
 <p><strong>Proposition (the graded algebra).</strong> The eigenspaces $E_0$ and $E_1$ of $\alpha$ satisfy
 $$
-E_0E_0 \subseteq E_0, \qquad E_0E_1 \subseteq E_1, \qquad E_1E_0 \subseteq E_1, \qquad E_1E_1 \subseteq E_0 ,
+\boxed{\;E_0E_0 \subseteq E_0, \qquad E_0E_1 \subseteq E_1, \qquad E_1E_0 \subseteq E_1, \qquad E_1E_1 \subseteq E_0\;} ,
 $$
 so $E$ is a $\mathbb{Z}_2$-graded algebra with degree $|X| = 0$ on $E_0$ and $1$ on $E_1$; the $\mathbb{C}$-subalgebra $E_0$ is the commutant of $T$, and $E_1$ is its odd complement, $E_1 = E_0T$.</p>
 <p><strong>Proof.</strong> For $X \in E_{|X|}$ and $Y \in E_{|Y|}$ one has $\alpha(XY) = \alpha(X)\alpha(Y) = (-1)^{|X|}(-1)^{|Y|}XY = (-1)^{|X|+|Y|}XY$, so $XY$ has degree $|X|+|Y|$ modulo $2$; the commutant statement is $TX = XT$ if and only if $\alpha(X)=X$, and $T$ itself is odd, so $E_1 = E_0T$. This is <em>The Involution on a Complex Vector Space</em> and <em>Superalgebras and Graded Structures</em>.</p>
@@ -111,7 +111,7 @@ $$
 it is the graded adjoint representation of the graded Lie algebra $E$.</p>
 <p><strong>Proposition (compatibility with the grading).</strong> The adjoint action is a <strong>graded derivation</strong> of $E$ and a graded map of degree $|X|$,
 $$
-\mathrm{ad}_X(E_j) \subseteq E_{j+|X|}, \qquad \mathrm{ad}_X(YZ) = \mathrm{ad}_X(Y)\,Z + (-1)^{|X||Y|}Y\,\mathrm{ad}_X(Z),
+\boxed{\;\mathrm{ad}_X(E_j) \subseteq E_{j+|X|}, \qquad \mathrm{ad}_X(YZ) = \mathrm{ad}_X(Y)\,Z + (-1)^{|X||Y|}Y\,\mathrm{ad}_X(Z)\;},
 $$
 so an even adjoint action preserves the degree and an odd adjoint action exchanges the two degrees; the graded Jacobi identity is the statement that $\mathrm{ad}$ is a representation, $\mathrm{ad}_{[X,Y]} = [\mathrm{ad}_X,\mathrm{ad}_Y]$, with the graded commutator of the operators on the right.</p>
 <p><strong>Proof.</strong> The degree statement is that $[E_i,E_j]\subseteq E_{i+j}$, which is the graded-algebra proposition and the sign-free part of the graded commutator; the Leibniz rule is the graded Leibniz of the previous proposition; the representation identity is the graded Jacobi identity rewritten in terms of the adjoint action, $\mathrm{ad}_X\mathrm{ad}_Y - (-1)^{|X||Y|}\mathrm{ad}_Y\mathrm{ad}_X = \mathrm{ad}_{[X,Y]}$. This is <em>Graded Lie Algebras and Lie Superalgebras</em> and <em>The Lie Correspondence and the Adjoint Representation</em>.</p>
@@ -120,7 +120,7 @@ so an even adjoint action preserves the degree and an odd adjoint action exchang
 <h2 id="the-adjoint-of-the-adjoint-action">The Adjoint of the Adjoint Action</h2>
 <p><strong>Proposition (the adjoint of the adjoint action).</strong> For the ordinary commutator $\mathrm{ad}_X(Y) = XY-YX$ and the Hermitian trace form of $E$,
 $$
-\mathrm{ad}_X^{*} = \mathrm{ad}_{X^{\dagger}}
+\boxed{\;\mathrm{ad}_X^{*} = \mathrm{ad}_{X^{\dagger}}\;}
 $$
 for every $X$, so the adjoint of the adjoint action of $X$ is the adjoint action of the adjoint element; in particular the adjoint action of a Hermitian element is self-adjoint, and that of an anti-Hermitian element is anti-Hermitian. For the graded commutator the same identity holds when $X$ is even, and for odd $X$ the adjoint acquires the sign $(-1)^{|X|}$.</p>
 <p><strong>Proof.</strong> $\langle \mathrm{ad}_X(Y), Z\rangle = \operatorname{tr}((XY-YX)^{\dagger}Z) = \operatorname{tr}(Y^{\dagger}X^{\dagger}Z) - \operatorname{tr}(X^{\dagger}Y^{\dagger}Z)$. Cyclically moving $X^{\dagger}$ in the second term, $\operatorname{tr}(X^{\dagger}Y^{\dagger}Z) = \operatorname{tr}(Y^{\dagger}ZX^{\dagger})$, so the sum is $\operatorname{tr}(Y^{\dagger}(X^{\dagger}Z - ZX^{\dagger})) = \operatorname{tr}(Y^{\dagger}[X^{\dagger},Z]) = \langle Y, \mathrm{ad}_{X^{\dagger}}Z\rangle$, which is the identity; the Hermitian and anti-Hermitian statements are $X^{\dagger}=\pm X$. For the graded commutator the same computation leaves the factor $(-1)^{|X||Y|}$ on the second term, which equals $(-1)^{|X||Z|}$ when $X$ is even and differs by $(-1)^{|X|}$ when $X$ is odd. This is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em> and <em>The Adjoint of a Hermitian Operator</em>.</p>

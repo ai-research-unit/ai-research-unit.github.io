@@ -99,7 +99,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the biquaternion dagger is positive).</strong> For every biquaternion,</p>
 <p>$$
-\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_{1,\mu}\rvert^{2}\ \ge 0 ,
+\boxed{\;\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_{1,\mu}\rvert^{2}\ \ge 0\;},
 $$</p>
 <p>with equality if and only if $\tilde{Q}_1=0$. Hence the dagger of $\mathbb{B}$ is a positive involution and the scalar form $(\tilde{Q}_1,\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ is positive definite.</p>
 <p><em>Proof.</em> Write $\tilde{Q}_1=\sum_\mu Q_{1,\mu} e_\mu$ with $Q_{1,\mu}\in\mathbb{C}$. By <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> the diagonal of the general plain sesquilinear form is $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_1^{*})=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$, and $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_1)=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$ by the same computation applied to $\tilde{Q}_1^{*}$, whose coefficients are the conjugates $Q_{\bar{\mu}}$ of those of $\tilde{Q}_1$. A sum of non-negative reals vanishes only if each term does, so the form vanishes only at $\tilde{Q}_1=0$; and the same computation with $\tilde{Q}_2$ in place of $\tilde{Q}_1^{*}$ makes the general plain sesquilinear form positive definite in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where its Gram matrix is the identity.</p>
@@ -140,7 +140,7 @@ $$</p>
 <p>Its elements are Hermitian by the proposition above, and it contains $0$ and $e_t$.</p>
 <p><strong>Theorem (the cone in matrix form).</strong> The cone is the set of positive semidefinite Hermitian elements,</p>
 <p>$$
-P=\bigl\{H\in\mathbb{M}_+:\mathsf{M}_2(H)\succeq0\bigr\}=\bigl\{\tilde{Q}_1\tilde{Q}_1^{*}:\tilde{Q}_1\in\mathbb{B}\bigr\},
+\boxed{\;P=\bigl\{H\in\mathbb{M}_+:\mathsf{M}_2(H)\succeq0\bigr\}=\bigl\{\tilde{Q}_1\tilde{Q}_1^{*}:\tilde{Q}_1\in\mathbb{B}\bigr\}\;},
 $$</p>
 <p>and it is a closed convex cone of real dimension four, pointed, generating the Hermitian sector. It is <strong>self-dual</strong> for the scalar form: $H\in P$ if and only if $(H,K)\ge0$ for every $K\in P$.</p>
 <p><em>Proof.</em> $\mathsf{M}_2(\tilde{Q}_1^{*}\tilde{Q}_1)=\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_1)\succeq0$ is the standard form of a positive semidefinite matrix, so $P$ is contained in the positive semidefinite Hermitian elements; conversely a positive semidefinite Hermitian $H$ has a positive semidefinite Hermitian square root $H^{1/2}$, and $H=H^{1/2}(H^{1/2})^{\dagger}=\tilde{Q}_1^{*}\tilde{Q}_1$ with $\tilde{Q}_1=H^{1/2}$, which is Hermitian and so satisfies $\tilde{Q}_1^{*}=\tilde{Q}_1$. The second description follows because $\tilde{Q}_1\mapsto\tilde{Q}_1^{*}$ is a bijection. Closedness, convexity and the four real dimensions are those of the positive semidefinite cone $H_2(\mathbb{C})_{\succeq0}$, which has real dimension four. Pointedness: $H\in P\cap(-P)$ means $H\succeq0$ and $-H\succeq0$, so $H=0$. Generation: the spectral decomposition writes any Hermitian $H$ as $H_+-H_-$ with $H_\pm\succeq0$. Self-duality: if $H\succeq0$ and $K\succeq0$ then $(H,K)=\mathrm{Sc}(HK)=\tfrac12\operatorname{Tr}(HK)=\tfrac12\operatorname{Tr}(H^{1/2}KH^{1/2})\ge0$, so $P\subseteq \bar{P}$; conversely if $(H,K)\ge0$ for every $K\in P$, testing against the rank-one elements $K=\tilde E\tilde{E}^{*}$ gives $\tilde{E}^{*}\mathsf{M}_2(H)\tilde E\ge0$ for every $\tilde E\in\mathbb{C}^2$, which is $H\succeq0$.</p>
@@ -169,11 +169,11 @@ $$</p>
 <h2 id="the-polar-decomposition">The Polar Decomposition</h2>
 <p><strong>Theorem (the dagger polar decomposition).</strong> Every biquaternion has a decomposition</p>
 <p>$$
-\tilde{Q}_1=\tilde U\,\lvert\tilde{Q}_1\rvert,
+\boxed{\;\tilde{Q}_1=\tilde U\,\lvert\tilde{Q}_1\rvert,
 \qquad
 \lvert\tilde{Q}_1\rvert=\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)^{1/2}\in P,
 \qquad
-\tilde U^{\dagger}\tilde U=e_t,
+\tilde U^{\dagger}\tilde U=e_t\;},
 $$</p>
 <p>with $\lvert\tilde{Q}_1\rvert$ the positive square root in the cone and $\tilde U$ in the unitary slice. The decomposition is unique exactly when $\tilde{Q}_1$ is invertible, that is exactly outside the null cone.</p>
 <p><em>Proof.</em> The element $\tilde{Q}_1^{*}\tilde{Q}_1$ is Hermitian and in the cone, so in the matrix algebra it has a unique positive semidefinite square root $\lvert\tilde{Q}_1\rvert$, and $\mathsf{M}_2(\lvert\tilde{Q}_1\rvert)=\lvert\mathsf{M}_2(\tilde{Q}_1)\rvert$ in the sense of the positive square root of a positive semidefinite matrix. For invertible $\tilde{Q}_1$ set $\tilde U=\tilde{Q}_1\lvert\tilde{Q}_1\rvert^{-1}$; then $\tilde U^{\dagger}\tilde U=\lvert\tilde{Q}_1\rvert^{-1}\tilde{Q}_1^{*}\tilde{Q}_1\lvert\tilde{Q}_1\rvert^{-1}=\lvert\tilde{Q}_1\rvert^{-1}\lvert\tilde{Q}_1\rvert^{2}\lvert\tilde{Q}_1\rvert^{-1}=e_t$, and the uniqueness of the positive square root makes the pair unique. For singular $\tilde{Q}_1$ the element $\lvert\tilde{Q}_1\rvert$ is a nonzero singular positive element and the unitary factor is not unique; the decomposition still exists by the matrix statement.</p>

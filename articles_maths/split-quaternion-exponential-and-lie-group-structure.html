@@ -100,7 +100,9 @@ $$</p>
 <p>convergent for every $\tilde q$, because the algebra is finite-dimensional and a submultiplicative norm exists on it.</p>
 <p><strong>Theorem (closed form).</strong> Write $\tilde q = q_t + \vec v$ and put $\mu = \langle \vec v\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$. Then</p>
 <p>$$
-\exp(\tilde q) = \exp(q_t) \Bigl( \cosh\sqrt{-\mu} + \frac{\sinh\sqrt{-\mu}}{\sqrt{-\mu}}\,\vec v \Bigr), \qquad \mu < 0,
+\boxed{\;
+\exp(\tilde q) = \exp(q_t) \Bigl( \cosh\sqrt{-\mu} + \frac{\sinh\sqrt{-\mu}}{\sqrt{-\mu}}\,\vec v \Bigr), \qquad \mu < 0
+\;},
 $$</p>
 <p>$$
 \exp(\tilde q) = \exp(q_t) \bigl( 1 + \vec v \bigr), \qquad \mu = 0,
@@ -125,7 +127,9 @@ $$</p>
 <h2 id="the-kernel-of-the-exponential">The Kernel of the Exponential</h2>
 <p><strong>Theorem.</strong> The kernel of the exponential on the algebra is</p>
 <p>$$
-\ker \exp = \{\, 2\pi k\,\vec\xi \;:\; k \in \mathbb{Z},\ \vec\xi \in V,\ \vec\xi^2 = -1 \,\} \cup \{0\},
+\boxed{\;
+\ker \exp = \{\, 2\pi k\,\vec\xi \;:\; k \in \mathbb{Z},\ \vec\xi \in V,\ \vec\xi^2 = -1 \,\} \cup \{0\}
+\;},
 $$</p>
 <p>that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.</p>
 <p><strong>Proof.</strong> $\exp(2\pi k\vec\xi) = \cos(2\pi k) + \sin(2\pi k)\vec\xi = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is traceless with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\xi$ with $\vec\xi$ a root of $-1$ (or $\tilde q = 0$).</p>
@@ -142,7 +146,9 @@ $$</p>
 <h2 id="the-norm-one-group-and-math176">The Norm-One Group and $SL_2(\mathbb{R})$</h2>
 <p><strong>Theorem.</strong> The norm-one group</p>
 <p>$$
+\boxed{\;
 U = \{\, \tilde q : \langle\tilde q\rangle_{\natural} = 1 \,\} = \mathrm{SL}_2(\mathbb{R})
+\;}
 $$</p>
 <p>is a connected three-dimensional Lie group, a double cover of the identity component $\mathrm{SO}^{+}(2,1)$ of the Lorentz group by the adjoint action of <em>Split-Quaternion Rotations and the Lorentz Group</em>; its Lie algebra is $\mathrm{SL}_2(\mathbb{R}) = V$. The other component of the group of units is the coset $\{N = -1\} = \vec e_y U$ of $U$, so any negative-norm unit is a root of $-1$ times a norm-one unit.</p>
 <p><strong>Proof.</strong> The norm-one group is the kernel of the continuous norm homomorphism on the component $\{N>0\}$, and $\{N>0\}$ retracts onto $U$ by $\tilde q \mapsto \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$; hence $U$ is connected. The identification with the double cover of $\mathrm{SO}^{+}(2,1)$, the Lie algebra $\mathrm{SL}_2(\mathbb{R}) = V$, and the coset statement $\{N=-1\} = \vec e_y U$ (since $\langle \vec e_y \tilde u\rangle_{\natural} = \langle \vec e_y\rangle_{\natural}\langle \tilde u\rangle_{\natural} = (-1)\cdot 1 = -1$) are as above.</p>

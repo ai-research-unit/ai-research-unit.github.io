@@ -76,7 +76,7 @@
 <h2 id="the-adjoint-of-the-left-multiplication">The Adjoint of the Left Multiplication</h2>
 <p><strong>Theorem (the explicit form).</strong> For every $a\in R$ the left multiplication is adjointable and</p>
 <p>$$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} .
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} .
 $$</p>
 <p>Hence the adjoint of a left multiplication is the left multiplication by the image of $a$ under the involution, and the adjoint of a right multiplication is the right multiplication by the image of $b$.</p>
 <p><strong>Proof.</strong> For all $x,y$, $\{L_ax,y\} = \tau(ax\sigma(y)) = \tau(x\sigma(y)a)$, by the cyclic invariance of the trace; and $\tau(x\sigma(y)a) = \tau(x\sigma(\sigma(a)y)) = \{x,L_{\sigma(a)}y\}$, by $\sigma^2 = \mathrm{id}$. Hence $L_{\sigma(a)}$ satisfies the defining identity, and it is the adjoint by the nondegeneracy of the form. The right-handed computation is the mirror image.</p>
@@ -91,13 +91,13 @@ $$</p>
 <h2 id="the-dictionary-between-the-operator-and-the-element">The Dictionary between the Operator and the Element</h2>
 <p><strong>Theorem (self-adjointness and skewness).</strong> The left multiplication satisfies</p>
 <p>$$
-L_a^\dagger = L_a \iff \sigma(a) = a , \qquad L_a^\dagger = -L_a \iff \sigma(a) = -a ,
+\boxed{\;L_a^\dagger = L_a \iff \sigma(a) = a , \qquad L_a^\dagger = -L_a \iff \sigma(a) = -a\;} ,
 $$</p>
 <p>so the self-adjoint left multiplications are exactly those by the self-adjoint elements, and the skew ones exactly those by the skew elements.</p>
 <p><strong>Proof.</strong> $L_a^\dagger = L_{\sigma(a)}$ and $L$ is injective on a ring with unit, so $L_{\sigma(a)} = \pm L_a$ iff $\sigma(a) = \pm a$.</p>
 <p><strong>Theorem (unitarity and involutivity).</strong> The left multiplication satisfies</p>
 <p>$$
-L_a^\dagger L_a = \mathrm{id} \iff \sigma(a)a = 1 , \qquad L_aL_a^\dagger = \mathrm{id} \iff a\sigma(a) = 1 , \qquad L_a^2 = \mathrm{id} \iff a^2 = 1 ,
+\boxed{\;L_a^\dagger L_a = \mathrm{id} \iff \sigma(a)a = 1 , \qquad L_aL_a^\dagger = \mathrm{id} \iff a\sigma(a) = 1 , \qquad L_a^2 = \mathrm{id} \iff a^2 = 1\;} ,
 $$</p>
 <p>so the left multiplication is unitary, $L_a^\dagger L_a = L_aL_a^\dagger = \mathrm{id}$, exactly when $a$ is unitary in the two-sided sense; it is normal, $L_a^\dagger L_a = L_aL_a^\dagger$, exactly when $a$ commutes with $\sigma(a)$.</p>
 <p><strong>Proof.</strong> $L_a^\dagger L_a = L_{\sigma(a)}L_a = L_{\sigma(a)a}$, and $L_c = \mathrm{id}$ iff $c = 1$, since $cx = x$ for all $x$ with $x = 1$ gives $c = 1$; hence the left unitarity is $\sigma(a)a = 1$, and the right unitarity is the mirror statement $a\sigma(a) = 1$. Involutivity is $L_a^2 = L_{a^2}$. Normality is $L_{\sigma(a)a} = L_{a\sigma(a)}$, that is $\sigma(a)a = a\sigma(a)$.</p>

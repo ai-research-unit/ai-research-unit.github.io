@@ -89,7 +89,7 @@ $$</p>
 <p><strong>The block-square is Hermitian with scalar part $\mathrm{Sc}(\tilde\Xi\star\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}\geq0$, and equating it to a central value $\lambda e_t$ requires $\lambda$ to be a non-negative real number, so the negative and the non-real scalars are excluded, and so is the value $0$.</strong></p>
 <p><strong>Theorem (the Hermitian square and its scalar part).</strong> For $\tilde\Xi=q_r+iq_i$ with $q_r,q_i$ real quaternions,</p>
 <p>$$
-\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=\bigl(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}\bigr)e_t+2i\Bigl(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v\Bigr),
+\boxed{\;\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=\bigl(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}\bigr)e_t+2i\Bigl(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v\Bigr)\;},
 $$</p>
 <p>where $q_{r0},q_{i0}$ are the real scalar parts of $q_r,q_i$ and $\vec q,\vec v$ their vector parts. The square is <strong>Hermitian</strong>, its scalar part is</p>
 <p>$$
@@ -106,7 +106,7 @@ $$</p>
 <h3 id="the-roots-of-plus-one">The Roots of Plus One</h3>
 <p><strong>Theorem (the roots of $+1$).</strong> The roots of $+1$ are exactly the elements</p>
 <p>$$
-\tilde\Xi=Aw,\qquad A\in\mathbb{C}\ \text{with}\ \lvert A\rvert=1,\ w\in\mathbb{H}\ \text{real with}\ \lvert w\rvert=1,
+\boxed{\;\tilde\Xi=Aw,\qquad A\in\mathbb{C}\ \text{with}\ \lvert A\rvert=1,\ w\in\mathbb{H}\ \text{real with}\ \lvert w\rvert=1\;},
 $$</p>
 <p>that is, the family $\{Aw\}=\mathrm{U}(1)\cdot S^{3}$, of real dimension four, containing $e_t$, $-e_t$ and the pure imaginary unit vectors, the roots $\tilde\Xi=i\vec u$ over the real unit vectors $\vec u$.</p>
 <p><em>Proof.</em> By the reduction the square is $e_t$ exactly when $\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}=1$ and $q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v=0$. Dot the vector equation with $\vec q\times\vec v$: the first two terms are orthogonal to $\vec q\times\vec v$ and the third is $\lvert\vec q\times\vec v\rvert^{2}$, so $\vec q\times\vec v=0$; hence $\vec q$ and $\vec v$ are parallel, and the vector equation reads $q_{r0}\vec v=q_{i0}\vec q$. If $\vec q\neq0$ then $\vec v=\lambda\vec q$ for a real $\lambda$, the equation gives $q_{i0}=\lambda q_{r0}$ and therefore $q_i=q_{i0}+\vec v=\lambda(q_{r0}+\vec q)=\lambda q_r$: the halves are parallel as full quaternions, $\tilde\Xi=q_r+iq_i=(1+i\lambda)q_r$, and writing $A=(1+i\lambda)/\lvert 1+i\lambda\rvert$, a unit complex scalar, and $w=\lvert 1+i\lambda\rvert\,q_r$, a real quaternion since $q_r$ is one, gives $\tilde\Xi=Aw$ with $\lvert w\rvert=1$ from the scalar equation. If $\vec q=0$ then $q_r=q_{r0}$ is a real scalar and the equation reads $q_{r0}\vec v=0$: either $\vec v=0$, and $\tilde\Xi=(q_{r0}+iq_{i0})e_t=Ae_t$ with $A=q_{r0}+iq_{i0}$, a unit complex scalar because $q_{r0}^{2}+q_{i0}^{2}=1$, is already of the required form with $w=e_t$, or $q_{r0}=0$, and $\tilde\Xi=iq_i=i(q_{i0}+\vec v)$ is of the required form with the unit complex scalar $A=i$ and the real unit $w=q_{i0}+\vec v$. In both cases $\tilde\Xi=Aw$ with $A$ a unit complex scalar and $w$ a real unit quaternion. Conversely every $Aw$ with $A$ a unit complex scalar and $w$ real unit has $q_r=(\mathrm{Re}A)w$, $q_i=(\mathrm{Im}A)w$, hence $\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}=\lvert A\rvert^{2}\lvert w\rvert^{2}=1$ and $q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v=\mathrm{Re}A\,\mathrm{Im}A\,\vec w\times\vec w=0$, the first two terms cancelling and the cross product of a vector with itself vanishing, so it is a root. The parametrisation $(A,w)\mapsto Aw$ has kernel $\{(1,e_t),(-1,-e_t)\}$, of order two, so the root set is a single real four-dimensional family, and the named elements are the cases $A=1$, $A=-1$ and $A=i$ with $w=\vec u$.</p>
@@ -159,7 +159,7 @@ $$</p>
 <h3 id="the-classification">The Classification</h3>
 <p><strong>Theorem (the idempotents of the block).</strong> The idempotents of the sesquilinear multiplication $\star$ are $0$, $e_t$ and the elements</p>
 <p>$$
-\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_t+\tilde\Xi\bigr) , \qquad \tilde\Xi=i\vec u , \qquad \vec u\in\mathbb{R}^{3},\ (\vec u,\vec u)=1 ,
+\boxed{\;\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_t+\tilde\Xi\bigr) , \qquad \tilde\Xi=i\vec u , \qquad \vec u\in\mathbb{R}^{3},\ (\vec u,\vec u)=1\;},
 $$</p>
 <p>where $\vec u=\sum_{\mu\in\{x,y,z\}}u_\mu\vec e_\mu$ ranges over the real vectors of the vector subspace with $(\vec u,\vec u)=\sum_\mu u_\mu^{2}=1$. There are no others.</p>
 <p><em>Proof.</em> By the reduction the idempotents of the block are the Hermitian elements with $\tilde\Pi^{2}=\tilde\Pi$. A Hermitian element is $\tilde\Pi=\alpha e_t+i\vec w$ with $\alpha\in\mathbb{R}$ and $\vec w$ a real vector, and its square in the algebra is</p>

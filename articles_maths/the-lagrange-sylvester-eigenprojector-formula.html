@@ -109,7 +109,7 @@ $$</p>
 <h3 id="the-formula">The formula</h3>
 <p><strong>Theorem.</strong> Let $a = \sum_{i=1}^{r} \lambda_i e_i$ be an eigenvalue decomposition with the $\lambda_i$ distinct. Then for each $i$,</p>
 <p>$$
-e_i = \prod_{j \neq i} \frac{a - \lambda_j 1_A}{\lambda_i - \lambda_j} .
+\boxed{\;e_i = \prod_{j \neq i} \frac{a - \lambda_j 1_A}{\lambda_i - \lambda_j}\;} .
 $$</p>
 <p><em>Proof.</em> The polynomial on the right is $h_i(a)$, and $h_i(\lambda_j) = \delta_{ij}$. Evaluating $h_i$ on the decomposition gives</p>
 <p>$$
@@ -161,7 +161,7 @@ $$</p>
 <h3 id="the-formula_1">The formula</h3>
 <p><strong>Theorem (Sylvester).</strong> Let $a = \sum_{i=1}^{r} \lambda_i e_i$ be an eigenvalue decomposition, and let $f \in k[x]$ be any polynomial. Then</p>
 <p>$$
-f(a) = \sum_{i=1}^{r} f(\lambda_i) e_i .
+\boxed{\;f(a) = \sum_{i=1}^{r} f(\lambda_i) e_i\;} .
 $$</p>
 <p><em>Proof.</em> Let $h$ be the interpolation polynomial of $f$ at the nodes $\lambda_1, \dots, \lambda_r$, of degree less than $r$. The difference $f - h$ vanishes at every $\lambda_i$, so it is divisible by $x-\lambda_i$ for every $i$; since the $\lambda_i$ are distinct, it is divisible by $m_a = \prod_i (x-\lambda_i)$. Evaluating at $a$ gives $f(a) = h(a)$, and $h(a) = \sum_i h(\lambda_i)e_i = \sum_i f(\lambda_i)e_i$ by the eigenprojector formula.</p>
 <p>The theorem says that the homomorphism $k[x] \to k[a]$, $f \mapsto f(a)$, factors through the interpolation map at the eigenvalues. The kernel is $(m_a)$, and the quotient $k[x]/(m_a)$ is identified with the functions on the $r$ eigenvalues. The formula is the explicit form of this identification.</p>
@@ -242,7 +242,7 @@ f(a)\varepsilon_i = \sum_{k=0}^{e_i-1} \frac{f^{(k)}(\lambda_i)}{k!} n_i^k .
 $$</p>
 <p>Summing over $i$,</p>
 <p>$$
-f(a) = \sum_{i=1}^{r} \sum_{k=0}^{e_i-1} \frac{f^{(k)}(\lambda_i)}{k!} (a-\lambda_i)^k \varepsilon_i .
+\boxed{\;f(a) = \sum_{i=1}^{r} \sum_{k=0}^{e_i-1} \frac{f^{(k)}(\lambda_i)}{k!} (a-\lambda_i)^k \varepsilon_i\;} .
 $$</p>
 <p>This is the <strong>generalized Sylvester formula</strong>, also called the Hermite–Sylvester formula. It reduces to Sylvester's formula when all $e_i=1$, because the $k=0$ term is $f(\lambda_i)\varepsilon_i$ and the higher terms are absent. It is the explicit form of the Jordan–Chevalley decomposition of $f(a)$: the $k=0$ terms give the semisimple part, and the terms with $k \ge 1$ give the nilpotent part.</p>
 <h3 id="a-jordan-block">A Jordan block</h3>

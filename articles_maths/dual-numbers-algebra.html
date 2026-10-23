@@ -146,7 +146,9 @@ $$</p>
 <p>The first formula is well-defined because $2$ is invertible in $R$. The second formula is formal: it says that $Q - \bar Q = 2\varepsilon q'$, so dividing by $2\varepsilon$ recovers $q'$. The division by $\varepsilon$ is not an algebra operation, because $\varepsilon$ is not invertible. So the second formula is a convenient notation, not a computation in the algebra.</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'},
+\boxed{\;
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}
+\;},
 $$</p>
 <p>where $\varepsilon R_{\mathbb{D}'}$ is the maximal ideal. Both are $R$-modules of rank $1$, and their direct sum is the full algebra $\mathbb{D}'_R$ of rank $2$.</p>
 <p>This is the <strong>dual decomposition</strong> of a dual number. It expresses $Q$ as a real number plus $\varepsilon$ times another real number.</p>
@@ -176,7 +178,9 @@ $$</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Theorem (group of units).</strong> The <strong>group of units</strong> of $\mathbb{D}'_R$ is</p>
 <p>$$
-(\mathbb{D}'_R)^\times = \{q + \varepsilon q' : q \in R^\times\}.
+\boxed{\;
+(\mathbb{D}'_R)^\times = \{q + \varepsilon q' : q \in R^\times\}
+\;}.
 $$</p>
 <p>An element is invertible if and only if its real part is invertible in $R$. The inverse is</p>
 <p>$$
@@ -203,7 +207,9 @@ D(Q_1 Q_2) = D(Q_1) Q_2 + Q_1 D(Q_2).
 $$</p>
 <p><strong>Theorem.</strong> Every derivation of $\mathbb{D}'_R$ is of the form</p>
 <p>$$
-D(q + \varepsilon q') = c \varepsilon q',
+\boxed{\;
+D(q + \varepsilon q') = c \varepsilon q'
+\;},
 $$</p>
 <p>for some $c \in R$. In other words, the derivation is determined by its value on $\varepsilon$, and it maps the real part to zero.</p>
 <p><strong>Proof.</strong> Let $D$ be a derivation. Since $D(1) = D(1 \cdot 1) = 2D(1)$, we have $D(1) = 0$ when $2$ is invertible. Then $D(q) = q D(1) = 0$ for all $q \in R$. So $D$ is determined by $D(\varepsilon)$. Since $D(\varepsilon^2) = D(0) = 0$ while $D(\varepsilon^2) = 2 \varepsilon D(\varepsilon)$, we have $\varepsilon D(\varepsilon) = 0$, so $D(\varepsilon)$ lies in the ideal $(\varepsilon)$. Write $D(\varepsilon) = \varepsilon c$ for some $c \in R$. Then</p>

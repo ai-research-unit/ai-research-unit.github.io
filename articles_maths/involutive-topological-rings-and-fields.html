@@ -101,7 +101,7 @@
 <h3 id="the-completion">The Completion</h3>
 <p><strong>Theorem (extension to the $I$-adic completion).</strong> Let $R$ be a ring, $I$ an ideal with $\sigma(I) = I$, and let $\widehat{R} = \varprojlim_n R/I^n$ be the $I$-adic completion. Then $\sigma$ induces an involution $\bar\sigma_n$ of each quotient $R/I^n$, the family $(\bar\sigma_n)$ is compatible with the projections, and it defines a continuous involution $\widehat{\sigma}$ of $\widehat{R}$ with</p>
 <p>$$
-\widehat{\sigma} \circ \iota = \iota \circ \sigma,
+\boxed{\;\widehat{\sigma} \circ \iota = \iota \circ \sigma\;},
 $$</p>
 <p>where $\iota : R \to \widehat{R}$ is the natural map. The pair $(\widehat{R}, \widehat{\sigma})$ is an involutive topological ring, $\widehat{\sigma}$ is a homeomorphism for the $\widehat{I}$-adic topology of $\widehat{R}$, and if $2$ is invertible in $R$ then</p>
 <p>$$
@@ -125,11 +125,11 @@ $$</p>
 <h3 id="the-topological-splitting">The Topological Splitting</h3>
 <p><strong>Theorem (the averaging map).</strong> Let $\sigma$ be a topological involution of the topological ring $R$ and suppose $2$ is invertible in $R$. Then the <strong>averaging map</strong></p>
 <p>$$
-\pi : R \to R, \qquad \pi(x) = \tfrac12\bigl(x + \sigma(x)\bigr),
+\boxed{\;\pi : R \to R, \qquad \pi(x) = \tfrac12\bigl(x + \sigma(x)\bigr)\;},
 $$</p>
 <p>is a continuous idempotent endomorphism of the additive topological group of $R$ with image $R^\sigma$ and kernel $\mathrm{Skew}(R,\sigma)$. Consequently</p>
 <p>$$
-(R,+) \cong R^\sigma \oplus \mathrm{Skew}(R,\sigma)
+\boxed{\;(R,+) \cong R^\sigma \oplus \mathrm{Skew}(R,\sigma)\;}
 $$</p>
 <p>as topological groups, with the summands closed, and $R^\sigma$ is a retract of $R$. The map $\pi$ is multiplicative, that is a ring homomorphism, exactly when $\sigma$ is also multiplicative, which holds for the trivial involution of every ring and for every involution of a commutative ring.</p>
 <p><strong>Proof.</strong> The map $\pi$ is a composite of the continuous operations of the ring and the fixed scalar $1/2$, hence continuous; it is additive, idempotent and fixes exactly the fixed elements, so its image is $R^\sigma$, and $\pi(x) = 0$ says $x + \sigma(x) = 0$, that is $x$ skew. Additivity and idempotence make $R$ the algebraic direct sum of the image and the kernel; the isomorphism $x \mapsto (\pi(x), x - \pi(x))$ has continuous components because $\pi$ and $\mathrm{id} - \pi$ are continuous, and its inverse, the sum, is continuous, so the direct sum is topological. Both summands are closed by the theorem above. For multiplicativity of $\pi$ one needs $\sigma(xy) = \sigma(x)\sigma(y)$, that is $\sigma$ multiplicative; the two named cases are immediate from <em>Involutive Rings</em>.</p>

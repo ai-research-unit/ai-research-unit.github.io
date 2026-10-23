@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem (Cauchy–Schwarz).</strong> Let $s$ be Hermitian and positive semi-definite with values in $R$. Then for all $x, y \in A$,</p>
 <p>$$
-\varsigma(s(x,y))\,s(x,y) \leq s(x,x)\,s(y,y) \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert s(x,y)\rvert^{2} \leq s(x,x)\,s(y,y) ,
+\boxed{\;\varsigma(s(x,y))\,s(x,y) \leq s(x,x)\,s(y,y) \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert s(x,y)\rvert^{2} \leq s(x,x)\,s(y,y)\;} ,
 $$</p>
 <p>with $\lvert\cdot\rvert$ the modulus of the base. Definiteness is not assumed, and when $s(y,y) = 0$ the inequality reads $s(x,y) = 0$.</p>
 <p><em>Proof.</em> For $y = 0$ both sides vanish. Let $s(y,y) \neq 0$. It lies in $k$ and is positive, so it is invertible in $k$ and $\mu = s(x,y)/s(y,y) \in R$. Expand the diagonal of $x - \mu y$ by the two slot rules:</p>
@@ -121,7 +121,7 @@ $$</p>
 <h3 id="the-seminorm">The Seminorm</h3>
 <p><strong>Theorem (the diagonal is a seminorm).</strong> Let $s$ be Hermitian and positive semi-definite with values in $R$. Then $p(x) = s(x,x)^{1/2}$ is a seminorm on $A$,</p>
 <p>$$
-p(x) \geq 0, \qquad p(\lambda x) = \lvert\lambda\rvert\,p(x), \qquad p(x+y) \leq p(x) + p(y),
+\boxed{\;p(x) \geq 0, \qquad p(\lambda x) = \lvert\lambda\rvert\,p(x), \qquad p(x+y) \leq p(x) + p(y)\;},
 $$</p>
 <p>and $\lvert s(x,y)\rvert \leq p(x)p(y)$; the null set $\{x : p(x) = 0\} = \{x : s(x,x) = 0\}$ is the radical of $s$.</p>
 <p><em>Proof.</em> The first two are the proposition on the diagonal and the square root in $k$. For the third, the expansion of the diagonal of a sum gives $s(x+y,x+y) = s(x,x) + s(x,y) + \varsigma(s(x,y)) + s(y,y) = p(x)^{2} + 2\,\mathrm{Re}\,s(x,y) + p(y)^{2} \leq p(x)^{2} + 2p(x)p(y) + p(y)^{2}$, using $\mathrm{Re}\,t \leq \lvert t\rvert$ and the inequality; the square roots in $k$ are ordered, so $p(x+y) \leq p(x)+p(y)$. The inequality for $\lvert s(x,y)\rvert$ is Cauchy–Schwarz. The null set is the radical by the proposition of the degenerate case, which shows both inclusions.</p>
@@ -153,7 +153,7 @@ $$</p>
 <h3 id="the-norm-inequality">The Norm Inequality</h3>
 <p><strong>Theorem (the $\mathrm{C}^{*}$-valued norm inequality).</strong> Let $s : A \times A \to B$ be Hermitian and positive semi-definite with values in a $\mathrm{C}^{*}$-algebra $B$, and let the module carry a norm. Then</p>
 <p>$$
-\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\,\lVert s(y,y)\rVert \qquad \text{for all } x, y .
+\boxed{\;\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\,\lVert s(y,y)\rVert \qquad \text{for all } x, y\;} .
 $$</p>
 <p><em>Proof.</em> For a state $\omega$ of $B$ the composite $\omega \circ s$ is a Hermitian positive semi-definite form with values in $\mathbb{C}$, by the proposition on the scalar reductions, so Cauchy–Schwarz applies to it: $\lvert\omega(s(x,y))\rvert^{2} \leq \omega(s(x,x))\,\omega(s(y,y)) \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$. A state is a positive functional of norm one, and $\lVert b\rVert = \sup\{\lvert\omega(b)\rvert : \omega \text{ a state}\}$ for a $\mathrm{C}^{*}$-algebra element $b$, so taking the supremum over the states gives the claim.</p>
 <p><strong>Remark (the sharp algebraic form is the module case).</strong> The inequality of the theorem is the norm form; the sharper algebraic form</p>

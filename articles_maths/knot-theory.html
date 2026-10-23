@@ -87,7 +87,7 @@
 <p><strong>Definition.</strong> A <strong>Seifert surface</strong> for a knot $K$ is a compact oriented surface $F\subseteq S^3$ with $\partial F = K$; such a surface exists by the Seifert algorithm applied to any diagram, which produces one of genus equal to the genus of the diagram. The <strong>genus</strong> $g(K)$ is the minimal genus of a Seifert surface, and the <strong>Seifert matrix</strong> $V$ of a Seifert surface is the matrix of the linking form $V_{ij} = \mathrm{lk}(a_i, a_j^+)$ of a basis of $H_1(F;\mathbb{Z})$ with the positive push-off $a_j^+$ in a normal direction.</p>
 <p><strong>Theorem (the Seifert matrix and the Alexander polynomial).</strong> Let $V$ be a Seifert matrix of the knot $K$. Then</p>
 <p>$$
-\Delta_K(t) \doteq \det(t^{1/2}V - t^{-1/2}V^{\mathsf{T}})
+\boxed{\;\Delta_K(t) \doteq \det(t^{1/2}V - t^{-1/2}V^{\mathsf{T}})\;}
 $$</p>
 <p>up to multiplication by a unit $\pm t^{k}$, where $\Delta_K$ is the <strong>Alexander polynomial</strong>; it satisfies $\Delta_K(t)\doteq\Delta_K(t^{-1})$ and $\Delta_K(1) = \pm1$, and the determinant of the knot is $|\Delta_K(-1)|$. The <strong>signature</strong> $\sigma(K)$ is the signature of the symmetric matrix $V + V^{\mathsf{T}}$, an even integer, and it is a concordance invariant.</p>
 <p><strong>Proof sketch.</strong> The Alexander polynomial is computed from a presentation of the Alexander module $H_1$ of the infinite cyclic cover of the complement, obtained from a Seifert surface by the Fox calculus; the Seifert matrix computes the linking form on the surface, and the determinant formula for the Alexander polynomial is the resulting statement. The symmetry and the value at $1$ are formal properties of the determinant.</p>
@@ -133,7 +133,7 @@ $$</p>
 <h2 id="categorification-and-the-detection-theorems">Categorification and the Detection Theorems</h2>
 <p><strong>Theorem (Ozsváth–Szabó; knot Floer homology).</strong> To a knot $K\subseteq S^3$ one attaches a bigraded homology $\widehat{HFK}(K)$, the <strong>knot Floer homology</strong>, whose Euler characteristic with respect to one of the gradings is the Alexander polynomial:</p>
 <p>$$
-\sum_{i,j}(-1)^i\,\mathrm{rk}\,\widehat{HFK}_i(K,j)\,t^j = \Delta_K(t) .
+\boxed{\;\sum_{i,j}(-1)^i\,\mathrm{rk}\,\widehat{HFK}_i(K,j)\,t^j = \Delta_K(t)\;} .
 $$</p>
 <p>Knot Floer homology detects the Seifert genus, the fibredness and the unknot: $g(K)$ is the maximal $j$ with $\widehat{HFK}(K,j)\neq0$, the knot is fibered if and only if the top grading has rank one, and $K$ is the unknot if and only if $\widehat{HFK}(K)$ has rank one. The construction is the Lagrangian Floer theory of the symmetric product of a Heegaard surface, in the sense of <em>Floer Homology</em>.</p>
 <p><strong>Proof sketch.</strong> The knot Floer complex is constructed from a Heegaard diagram adapted to the knot, with the knot traced on the Heegaard surface as an extra curve; the Euler characteristic computation is the theorem of Ozsváth–Szabó identifying the Euler characteristic of the complex with the Alexander polynomial, and the detection statements are proved by the adjunction inequalities of the theory and the surgery exact triangle.</p>
@@ -149,7 +149,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> The Khovanov complex is built from the Kauffman bracket by replacing each state sum with a chain group and each smoothing with a map; the invariance under the Reidemeister moves is a chain-homotopy computation, and the graded Euler characteristic is the bracket by construction. The Lee deformation introduces a filtered differential whose homology is computed explicitly, and the Rasmussen invariant is its evaluation on the generator; the slice-genus inequality follows from the functoriality applied to a slice surface for $K$, whose induced map must respect the filtration.</p>
 <p><strong>Theorem (Milnor conjecture; Kronheimer–Mrowka; Rasmussen).</strong> For the torus knot $T(n,m)$ the Seifert genus equals the smooth slice genus,</p>
 <p>$$
-g_4(T(n,m)) = g(T(n,m)) = \frac{(n-1)(m-1)}{2},
+\boxed{\;g_4(T(n,m)) = g(T(n,m)) = \frac{(n-1)(m-1)}{2}\;},
 $$</p>
 <p>and the unknotting number is $u(T(n,m)) = \frac{(n-1)(m-1)}{2}$. The equality of the Seifert genus and the smooth slice genus, and the unknotting number formula, were proved by Kronheimer and Mrowka by gauge theory, using the analysis of the moduli spaces of the Seiberg–Witten equations of Part III; Rasmussen gave a second proof of the slice-genus statement by the $s$-invariant of Khovanov homology.</p>
 <p><strong>Proof sketch.</strong> The lower bound for the slice genus is supplied by the Rasmussen invariant, which evaluates to $s(T(n,m)) = (n-1)(m-1)$ for the standard orientation, so that $g_4\geq(n-1)(m-1)/2$; the Seifert surface of the torus knot realises the genus, so the bound is sharp, and the same argument applied to the unknotting inequality gives the unknotting number. The gauge-theoretic proof of Kronheimer–Mrowka uses the property that the Seiberg–Witten invariant of the knot complement detects the minimal genus of a surface representing a given class.</p>

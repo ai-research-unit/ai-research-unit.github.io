@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> Let $H$ be a non-degenerate invariant Hermitian form on the Lie algebra $\mathrm{G}$, preserved by the grade involution, and let $\rho_a = \exp(\operatorname{ad}_a)\alpha$ be the signed conjugation. The <strong>adjoint</strong> is the operator $\rho_a^{*}$ with $H(\rho_ax,y) = H(x,\rho_a^{*}y)$.</p>
 <p><strong>Theorem (the reflection is unitary).</strong> The adjoint of the signed conjugation is its inverse,</p>
 <p>$$
-\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a) = \rho_a^{-1} ,
+\boxed{\;\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a) = \rho_a^{-1}\;} ,
 $$</p>
 <p>so that $\rho_a^{*}\rho_a = \rho_a\rho_a^{*} = \mathrm{id}$: every reflection preserves the form $H$.</p>
 <p><em>Proof.</em> The adjoint of the composite is the composite of the adjoints in the reverse order, $\rho_a^{*} = \alpha^{*}\bigl(\exp(\operatorname{ad}_a)\bigr)^{*}$; the isometry $\alpha$ has $\alpha^{*} = \alpha$, and the exponential of the skew-adjoint $\operatorname{ad}_a$ has adjoint the exponential of $-\operatorname{ad}_a$, $\bigl(\exp(\operatorname{ad}_a)\bigr)^{*} = \exp(-\operatorname{ad}_a)$; hence $\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a)$, which is the inverse of $\exp(\operatorname{ad}_a)\alpha$ computed in <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>.</p>
@@ -91,7 +91,7 @@ $$</p>
 <h3 id="self-adjointness">Self-Adjointness</h3>
 <p><strong>Theorem (the self-adjoint reflections).</strong> The reflection is self-adjoint if and only if it is an involution,</p>
 <p>$$
-\rho_a^{*} = \rho_a \iff \rho_a^{2} = \mathrm{id} \iff a + \alpha(a)\in Z(\mathrm{G}) ,
+\boxed{\;\rho_a^{*} = \rho_a \iff \rho_a^{2} = \mathrm{id} \iff a + \alpha(a)\in Z(\mathrm{G})\;} ,
 $$</p>
 <p>and the self-adjoint reflections are exactly the involutive reflections; in particular the reflection by an <strong>odd</strong> element is self-adjoint.</p>
 <p><em>Proof.</em> The reflection is unitary, so $\rho_a^{*} = \rho_a^{-1}$; the identity $\rho_a^{-1} = \rho_a$ is the involution, whose criterion is the centrality of $a+\alpha(a)$ from <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>. For an odd element $a + \alpha(a) = 0$, which is central.</p>
@@ -100,7 +100,7 @@ $$</p>
 <h3 id="the-fixed-subalgebra-and-the-form">The Fixed Subalgebra and the Form</h3>
 <p><strong>Theorem.</strong> The fixed subalgebra of a self-adjoint reflection is the orthogonal complement of the image of the operator $\mathrm{id} - \rho_a$,</p>
 <p>$$
-\operatorname{Fix}(\rho_a) = \bigl(\operatorname{im}(\mathrm{id}-\rho_a)\bigr)^{\perp} ,
+\boxed{\;\operatorname{Fix}(\rho_a) = \bigl(\operatorname{im}(\mathrm{id}-\rho_a)\bigr)^{\perp}\;} ,
 $$</p>
 <p>and for an involutive reflection the algebra decomposes into the fixed subalgebra and its complement on which the reflection acts by $-\mathrm{id}$.</p>
 <p><em>Proof.</em> A self-adjoint operator has its fixed set equal to the orthogonal complement of the image of $\mathrm{id}-\rho_a$, because $H((\mathrm{id}-\rho_a)x, y) = H(x,(\mathrm{id}-\rho_a)y)$; for an involution the operator $\mathrm{id}-\rho_a$ is twice the projection onto the anti-fixed part.</p>

@@ -96,7 +96,7 @@ $$</p>
 <h2 id="the-states-and-the-order">The States and the Order</h2>
 <p><strong>Proposition (the states determine the order).</strong> For Hermitian $h,k$,</p>
 <p>$$
-h\leq k \iff \varphi(h)\leq\varphi(k) \ \text{ for every state } \varphi ,
+\boxed{\;h\leq k \iff \varphi(h)\leq\varphi(k) \ \text{ for every state } \varphi\;} ,
 $$</p>
 <p>so the order of the Hermitian part is recovered from the state space, and the order isomorphism classes of unital reduced involutive algebras are determined by the order-theoretic structure of their state spaces.</p>
 <p><em>Proof.</em> One direction is the positivity of the states on the cone. Conversely, if $k - h\notin A_+$, then by the Hahn–Banach theorem there is a Hermitian functional $\psi$ with $\psi(k - h)<0$ and $\psi$ bounded by the order unit; adding a large positive multiple of the identity functional makes it positive and a state, and it still separates $h$ and $k$ by construction; this is the separation theorem in the ordered space with order unit.</p>
@@ -106,7 +106,7 @@ $$</p>
 <p><strong>Definition.</strong> A state $\varphi$ is <strong>pure</strong> when it is an extreme point of the state space $S(A)$, that is, when $\varphi = t\varphi_1 + (1 - t)\varphi_2$ with $\varphi_1,\varphi_2$ states and $0<t<1$ forces $\varphi_1 = \varphi_2 = \varphi$.</p>
 <p><strong>Theorem (Krein–Milman).</strong> The state space is the closed convex hull of its extreme points,</p>
 <p>$$
-S(A) = \overline{\mathrm{conv}}\ \mathrm{ext}\,S(A) ,
+\boxed{\;S(A) = \overline{\mathrm{conv}}\ \mathrm{ext}\,S(A)\;} ,
 $$</p>
 <p>so every state is a weak-$\ast$ limit of convex combinations of pure states; the extreme points are nonempty, and when $S(A)$ is metrisable they form a $G_\delta$ set.</p>
 <p><em>Proof.</em> The state space is a compact convex subset of a locally convex space, and the Krein–Milman theorem applies; the nonemptiness of the set of the extreme points is part of that theorem, the description of the set of the extreme points in the metrisable case is the Choquet theory of <em>Faces and Exposed Points of a Convex Set</em>.</p>
@@ -120,7 +120,7 @@ $$</p>
 <p><em>Proof.</em> A pure state in the commutative case has a maximal left ideal, and the quotient is a field-like quotient which for a commutative C*-algebra is a character; conversely a character is extreme because it is multiplicative and the multiplicativity forces the purity; the identification of the states with the probability measures is the Riesz representation theorem, and the point masses are extreme among the measures.</p>
 <p><strong>Theorem (the faces are the annihilators of the left ideals).</strong> The faces of the state space are the sets</p>
 <p>$$
-F_I = \{\varphi\in S(A) : \varphi(a^{*}a) = 0 \ \text{for all } a\in I\}
+\boxed{\;F_I = \{\varphi\in S(A) : \varphi(a^{*}a) = 0 \ \text{for all } a\in I\}\;}
 $$</p>
 <p>for the closed left ideals $I$ of $A$; the correspondence reverses inclusions, the extreme points correspond to the maximal left ideals, and the facial structure of $S(A)$ is therefore the ideal lattice of $A$ read in the dual.</p>
 <p><em>Proof.</em> A face is determined by the set of the positive elements on which all of its members vanish, which is a closed left ideal by the Cauchy–Schwarz inequality; conversely the annihilator of a left ideal is a face because the vanishing on the generators defines it as an intersection of exposed faces. This is the standard correspondence of the theory.</p>

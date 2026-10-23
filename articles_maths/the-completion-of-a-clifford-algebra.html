@@ -82,7 +82,7 @@ $$</p>
 <p>with the inverse-limit topology, the completion of the algebra for the filtration topology.</p>
 <p><strong>Theorem.</strong> The filtration completion is a complete Hausdorff topological algebra when the filtration is separated, the algebra embeds in it as a dense subalgebra, and its associated graded algebra is $\Lambda(V)$:</p>
 <p>$$
-\operatorname{gr}\widehat{\mathrm{Cl}}_{\mathrm{filt}}\cong\Lambda(V).
+\boxed{\;\operatorname{gr}\widehat{\mathrm{Cl}}_{\mathrm{filt}}\cong\Lambda(V)\;}.
 $$</p>
 <p><em>Proof.</em> This is the proposition of <em>The Continuous Grade Decomposition and the Filtration</em>, §<em>The Completion of the Filtration</em>; the density is the standard property of an inverse limit over a cofinal family of onto maps, the separatedness is the theorem of the same article that $\bigcap_{k}N_{k}=0$ for a non-degenerate form, and the identification of the associated graded is the invariance of the successive quotients under completion.</p>
 <h3 id="the-projective-norm-and-its-submultiplicativity">The Projective Norm and its Submultiplicativity</h3>
@@ -104,7 +104,7 @@ $$</p>
 <h2 id="the-comparison-of-the-two-completions">The Comparison of the Two Completions</h2>
 <p><strong>Theorem (finite dimension).</strong> Let $V$ be finite-dimensional over a complete valued field and $q$ non-degenerate. Then $N_{k}=0$ for $k>n$, the filtration topology is discrete, and both completions are the algebra itself:</p>
 <p>$$
-\widehat{\mathrm{Cl}}_{\mathrm{filt}}=\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}=\mathrm{Cl}(V,\mathfrak{Q}).
+\boxed{\;\widehat{\mathrm{Cl}}_{\mathrm{filt}}=\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}=\mathrm{Cl}(V,\mathfrak{Q})\;}.
 $$</p>
 <p><em>Proof.</em> The filtration topology is discrete by <em>The Continuous Grade Decomposition and the Filtration</em>, §<em>The Quotients and the Separation</em>, so the algebra is complete for it and the inverse limit stabilizes; a finite-dimensional normed space over a complete field is complete, so the norm completion is the algebra itself; and the projective seminorm is a norm in finite dimension, since the projective norm is equivalent to the unique norm of the finite-dimensional tensor powers.</p>
 <p><strong>Remark (infinite dimension).</strong> In infinite dimension the two completions differ in general, and neither is contained in the other as a subalgebra without a hypothesis: the filtration completion is an inverse limit and carries the elements of degree tending to infinity with bounded-degree coefficients, while the norm completion carries the elements whose projective norm is finite. They coincide when the two topologies have the same Cauchy filters on the algebra, and the article asserts nothing more; the identification of cases is a matter of the particular space and form, and the Cauchy criterion for the projective norm is the classical one of the absolute convergence of the coefficient series.</p>
@@ -120,7 +120,7 @@ $$</p>
 <p><em>Proof.</em> The inclusion is the closure of the multiplicative inclusion $N_{j}N_{l}\subseteq N_{j+l}$, the product in the completion being continuous. The projection to the quotient induces an onto map $N_{k}\to\widehat{N}_{k}/\widehat{N}_{k+1}$, and this map kills $N_{k+1}$ because $N_{k+1}\subseteq\widehat{N}_{k+1}$; hence the quotient is an image of $N_{k}/N_{k+1}\cong\Lambda^{k}V$, and the multiplicativity descends because the wedge product is the product of the associated graded of the algebra.</p>
 <p><strong>Theorem (convergence and the exponential).</strong> Let the base be $\mathbb{R}$ or $\mathbb{C}$ and let $\widehat{A}$ be either completion of the algebra. Then every absolutely convergent series $\sum_{n}x_{n}$ with $\sum_{n}\lVert x_{n}\rVert<\infty$ converges in $\widehat{A}$, the geometric series $\sum_{n\ge0}t^{n}$ converges for $\lVert t\rVert<1$ with sum $(1-t)^{-1}$, and for every $v\in V$ the exponential</p>
 <p>$$
-\exp(v) = \sum_{n\ge0}\frac{v^{n}}{n!}
+\boxed{\;\exp(v) = \sum_{n\ge0}\frac{v^{n}}{n!}\;}
 $$</p>
 <p>converges in the norm completion, because $\lVert v^{n}/n!\rVert\le\lVert v\rVert^{n}/n!$ and the numerical series converges.</p>
 <p><em>Proof.</em> In a complete normed algebra an absolutely convergent series converges, by the comparison of the partial sums with a Cauchy sequence; the geometric series is estimated by $\lVert t^{n}\rVert\le\lVert t\rVert^{n}$; and the exponential by the estimate displayed, which uses the submultiplicativity and the completeness of the scalar field.</p>

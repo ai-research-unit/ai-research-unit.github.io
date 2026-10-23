@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-two-interpretations">The Two Interpretations</h3>
 <p><strong>Theorem (the topological two-readings).</strong> Let $A$ be a topological sesqualgebra over $(R,\varsigma)$. Then the identity on underlying sets is an isomorphism of topological $R$-modules</p>
 <p>$$
-A^{\varsigma*} \;\cong\; (A^{\varsigma})^{*},
+\boxed{\;A^{\varsigma*} \;\cong\; (A^{\varsigma})^{*}\;},
 $$</p>
 <p>the ordinary continuous dual of the conjugate module, and it maps the topology of uniform convergence on the compact subsets to itself. In the normed case the isomorphism is an isometry of Banach spaces, and likewise $(A^{\varsigma})^{\varsigma*} \cong A^{*}$.</p>
 <p><em>Proof.</em> A semilinear $f : A \to R$ is a linear $f : A^{\varsigma} \to R$ by the two-readings theorem of <em>Conjugate-Linear Maps and the Conjugate Dual</em>, §<em>The Two Interpretations by Linear Maps</em>, and the reading changes nothing but the action declared on the source, so it preserves continuity; conversely a continuous linear functional of $A^{\varsigma}$ is a continuous semilinear functional of $A$. The compact subsets are the same in the two modules, by the remark of §<em>The Conjugate Module and Its Topology</em>, so the topologies of compact convergence correspond. In the normed case the two operator norms are computed over the same unit ball, because $A$ and $A^{\varsigma}$ have the same norm and the scalar rule of a semilinear functional reads $\lvert f(\lambda\cdot x)\rvert = \lvert\varsigma(\lambda)\rvert\lvert f(x)\rvert = \lvert\lambda\rvert\lvert f(x)\rvert$, so the identification is isometric; the second isomorphism applies the first to $A^{\varsigma}$ and uses $(A^{\varsigma})^{\varsigma} = A$.</p>
@@ -122,7 +122,7 @@ $$</p>
 <h3 id="the-transpose">The Transpose</h3>
 <p><strong>Theorem (the transpose flips the two duals).</strong> Let $f : A \to B$ be a continuous $\varsigma$-semilinear map of topological sesqualgebras over $(R,\varsigma)$. Then the pullback $g \mapsto g \circ f$ is a continuous linear map</p>
 <p>$$
-f^{*} : B^{*} \longrightarrow A^{\varsigma*}, \qquad f^{*} : B^{\varsigma*} \longrightarrow A^{*},
+\boxed{\;f^{*} : B^{*} \longrightarrow A^{\varsigma*}, \qquad f^{*} : B^{\varsigma*} \longrightarrow A^{*}\;},
 $$</p>
 <p>and the two assignments are the same rule on the two duals.</p>
 <p><em>Proof.</em> This is the theorem of <em>Conjugate-Linear Maps and the Conjugate Dual</em>, §<em>The Transpose of a Conjugate-Linear Map</em>, which gives the parities: a linear $g$ composed with a semilinear $f$ is semilinear, and a semilinear $g$ composed with a semilinear $f$ is linear. Continuity is the continuity of a composite of continuous maps, the dual topologies being topologies of convergence, and in the normed case it gives $\lVert f^{*}\rVert \leq \lVert f\rVert$ for the operator norms.</p>
@@ -131,7 +131,7 @@ $$</p>
 <h3 id="the-evaluation">The Evaluation</h3>
 <p><strong>Theorem (the evaluation is the evaluation of the conjugate module).</strong> The canonical map</p>
 <p>$$
-\mathrm{ev} : A \longrightarrow (A^{\varsigma*})^{*}, \qquad \mathrm{ev}_{x}(f) = f(x),
+\boxed{\;\mathrm{ev} : A \longrightarrow (A^{\varsigma*})^{*}, \qquad \mathrm{ev}_{x}(f) = f(x)\;},
 $$</p>
 <p>is $\varsigma$-semilinear and continuous; under the identification $(A^{\varsigma*})^{*} \cong (A^{\varsigma})^{**}$ it is the ordinary evaluation of the conjugate module. In the normed case $\mathrm{ev}$ is an isometry.</p>
 <p><em>Proof.</em> The semilinearity is the computation of <em>Conjugate-Linear Maps and the Conjugate Dual</em>, §<em>The Double Conjugate Dual and the Evaluation</em>: $\mathrm{ev}_{\lambda x}(f) = f(\lambda x) = \varsigma(\lambda)f(x) = \varsigma(\lambda)\mathrm{ev}_{x}(f)$. Continuity holds because $f$ is continuous and the dual topology is a topology of convergence; the identification of the double dual is the two-readings theorem applied twice, $(A^{\varsigma*})^{*} \cong ((A^{\varsigma})^{*})^{*} = (A^{\varsigma})^{**}$, and $\mathrm{ev}$ becomes the ordinary evaluation of $A^{\varsigma}$ under it. In the normed case the ordinary evaluation is an isometry by <em>Normed and Banach Spaces</em>, §<em>The Dual Space</em>, and the identification is isometric by the two-readings theorem.</p>

@@ -81,7 +81,7 @@ $$</p>
 <p><strong>Definition.</strong> An operator $T\in B(R)$ is <strong>adjointable</strong> if there is a bounded operator $T^\dagger$ with $\{Tx,y\} = \{x,T^\dagger y\}$ for all $x,y$; the adjointable operators form the subalgebra $B(R,\sigma)$ of $B(R)$.</p>
 <p><strong>Theorem (the adjoint is a continuous operator-algebra involution).</strong> On the adjointable operators the adjoint map $T\mapsto T^\dagger$ is additive, is involutive, $T^{\dagger\dagger} = T$, and reverses the composition,</p>
 <p>$$
-(ST)^\dagger = T^\dagger S^\dagger ,
+\boxed{\;(ST)^\dagger = T^\dagger S^\dagger\;} ,
 $$</p>
 <p>so it is an <strong>anti-automorphism of order two</strong> of $B(R,\sigma)$; when the form is continuous in each variable the adjoint map is continuous for the topology of bounded convergence.</p>
 <p><strong>Proof.</strong> Additivity is the bilinearity of the form. Involutivity: $\{Tx,y\} = \{x,T^\dagger y\}$ and, exchanging the roles, $\{T^\dagger x,y\} = \{x,T^\dagger{}^\dagger y\}$; the uniqueness of the adjoint under the nondegeneracy of the form gives $T^{\dagger\dagger} = T$. Anti-multiplicativity: $\{STx,y\} = \{Tx,S^\dagger y\} = \{x,T^\dagger S^\dagger y\}$, so $(ST)^\dagger = T^\dagger S^\dagger$ by uniqueness. Continuity: the adjoint is the operator whose matrix entries are $\{Te_i\text{-coefficients}\}$ read through the form, and continuity of the form makes the assignment $T\mapsto T^\dagger$ continuous in the bounded-convergence topology.</p>
@@ -90,7 +90,7 @@ $$</p>
 <h2 id="the-left-regular-representation">The Left Regular Representation</h2>
 <p><strong>Theorem (the left multiplication is adjointable).</strong> For every $a\in R$ the left multiplication $L_a$ is adjointable with respect to the form of the category, and</p>
 <p>$$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} .
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} .
 $$</p>
 <p>Hence $a\mapsto L_a$ is a homomorphism of rings into $B(R,\sigma)$ and the adjoint of $L_a$ is the left multiplication by the image of $a$ under the element involution.</p>
 <p><strong>Proof.</strong> $\{L_a x,y\} = \tau(ax\,\sigma(y)) = \tau(x\,\sigma(y)\,a) = \tau(x\,\sigma(\sigma(a)y)) = \{x, L_{\sigma(a)}y\}$, using the cyclic invariance $\tau(uv) = \tau(vu)$ and $\sigma^2 = \mathrm{id}$. The right-handed computation is the mirror image, and the homomorphism property is $L_{ab} = L_aL_b$.</p>

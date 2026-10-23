@@ -83,17 +83,17 @@ $$</p>
 $$</p>
 <p>and on the coordinates</p>
 <p>$$
-\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2 .
+\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2.
 $$</p>
 <p>The plain norm is <strong>indefinite</strong>, of both signs, and the quaternion norm is <strong>positive definite</strong>, zero only at the origin. Read on the products, the two squares are $\tilde q\tilde q=\langle\tilde q\rangle e_t+2q_t\vec q$, a general element of $\mathbb{H}$ whose scalar coefficient is the plain norm, and $\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t$, a central element whose coefficient is the quaternion norm.</p>
 <h2 id="multiplicativity">Multiplicativity</h2>
 <p><strong>Theorem (multiplicativity of the quaternion norm; failure of the plain one).</strong> For all $\tilde q_1,\tilde q_2$,</p>
 <p>$$
-\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} , \qquad \text{equivalently}\qquad \bigl(\tilde q_1\tilde q_2\bigr)^{\natural}\bigl(\tilde q_1\tilde q_2\bigr)=\tilde q_1^{\natural}\tilde q_1\,\tilde q_2^{\natural}\tilde q_2 ,
+\boxed{\;\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} , \qquad \text{equivalently}\qquad \bigl(\tilde q_1\tilde q_2\bigr)^{\natural}\bigl(\tilde q_1\tilde q_2\bigr)=\tilde q_1^{\natural}\tilde q_1\,\tilde q_2^{\natural}\tilde q_2\;},
 $$</p>
 <p>while the plain norm is not multiplicative:</p>
 <p>$$
-\langle\tilde q_1\tilde q_2\rangle\neq \langle\tilde q_1\rangle\langle\tilde q_2\rangle \quad\text{in general} , \qquad \bigl(\vec e_x \vec e_y\bigr)^{2}=-e_t , \quad \vec e_x^2 \vec e_y^2=e_t .
+\boxed{\;\langle\tilde q_1\tilde q_2\rangle\neq \langle\tilde q_1\rangle\langle\tilde q_2\rangle \quad\text{in general} , \qquad \bigl(\vec e_x \vec e_y\bigr)^{2}=-e_t , \quad \vec e_x^2 \vec e_y^2=e_t\;}.
 $$</p>
 <p><em>Proof.</em> The quaternion norm is the scalar coefficient of the product of the element with its quaternion conjugate, $\langle\tilde q_1\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_1\bigr)$, and the conjugation is an anti-automorphism, so $\bigl(\tilde q_1\tilde q_2\bigr)^{\natural}\bigl(\tilde q_1\tilde q_2\bigr)=(\tilde q_1\tilde q_2)^{\natural}\tilde q_1\tilde q_2=\tilde q_2^{\natural}\tilde q_1^{\natural}\tilde q_1\tilde q_2=\tilde q_2^{\natural}|\tilde q_1|^2\tilde q_2=|\tilde q_1|^2|\tilde q_2|^2e_t$, the scalar $|\tilde q_1|^2$ commuting with every element; reading the scalar coefficient gives the multiplicativity. For the plain norm, the value of $\tilde q_1\tilde q_2\tilde q_1\tilde q_2$ is the square of the product and the two factors' squares do not determine it: at $\tilde q_1=\vec e_x,\tilde q_2=\vec e_y$ the product is $\vec e_z$, of square $-e_t$, while the product of the squares is $(-e_t)(-e_t)=e_t$, so the plain norm of the product differs from the product of the plain norms.</p>
 <p>So the quaternion norm is <strong>multiplicative</strong>: the norm of a product is the product of the norms, and the quaternion norm is the reduced norm of the algebra, the square root of the determinant of the regular representation. The plain norm is not multiplicative, and this is the reason it is called a norm rather than the norm of the algebra: the plain product fails associativity in no way, but its <em>algebraic norm</em> is not a multiplicative function. The multiplicativity of the quaternion norm is the algebra's composition law for the four-square identity.</p>

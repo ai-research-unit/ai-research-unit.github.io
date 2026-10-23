@@ -87,7 +87,7 @@ $$</p>
 <h3 id="the-two-interpretations-by-linear-maps">The Two Interpretations by Linear Maps</h3>
 <p><strong>Theorem.</strong> For all $R$-modules $M, N$ there are natural isomorphisms of abelian groups</p>
 <p>$$
-\operatorname{Hom}_{\varsigma}(M, N) \;\cong\; \operatorname{Hom}_{R}(M^{\varsigma}, N) \;\cong\; \operatorname{Hom}_{R}(M, N^{\varsigma}).
+\boxed{\;\operatorname{Hom}_{\varsigma}(M, N) \;\cong\; \operatorname{Hom}_{R}(M^{\varsigma}, N) \;\cong\; \operatorname{Hom}_{R}(M, N^{\varsigma})\;}.
 $$</p>
 <p><strong>Proof.</strong> A semilinear $f : M \to N$ is additive, so it can be read on the same underlying set with the twisted action: $f(\lambda \cdot x) = f(\varsigma(\lambda) x) = \varsigma(\varsigma(\lambda)) f(x) = \lambda f(x)$, so $f$ is a linear map $M^{\varsigma} \to N$, and the reading is a bijection because it changes nothing but the action declared on the source. On the other side, $f(\lambda x) = \varsigma(\lambda) f(x) = \lambda \cdot f(x)$ says that the same $f$ is a linear map $M \to N^{\varsigma}$. Both readings are natural, a linear $M^{\varsigma} \to N$ being the same rule of assignment as a semilinear $M \to N$.</p>
 <p><strong>Remark.</strong> The theorem is the definitional reason the two kinds of map are not two unrelated notions: a semilinear map is a linear map with one conjugation on the source or on the target, and the choice of side is a bookkeeping convention, the two being identified by the conjugate module. It also gives the collapse: $\operatorname{Hom}_{\varsigma}(M,N) = \operatorname{Hom}_{R}(M,N)$ for $\varsigma = \mathrm{id}$, and in general a map that is both linear and semilinear satisfies $(\lambda - \varsigma(\lambda)) f = 0$ for every $\lambda$, so a <strong>surjective</strong> map with faithful target is both only when $\varsigma = \mathrm{id}$, which is the collapse of the entry article. Surjectivity cannot be dropped: the witness of the graded-ring remark below is a nonzero map with faithful target that is both, for a nontrivial involution.</p>
@@ -142,7 +142,7 @@ $$</p>
 <p>the semilinear maps of $M$ into the base ring read as an $R$-module.</p>
 <p><strong>Theorem.</strong> There are natural isomorphisms of $R$-modules</p>
 <p>$$
-M^{\varsigma*} \;\cong\; (M^{\varsigma})^{*}, \qquad (M^{\varsigma})^{\varsigma*} \;\cong\; M^{*},
+\boxed{\;M^{\varsigma*} \;\cong\; (M^{\varsigma})^{*}, \qquad (M^{\varsigma})^{\varsigma*} \;\cong\; M^{*}\;},
 $$</p>
 <p>and $M^{\varsigma*} = M^{*}$ for $\varsigma = \mathrm{id}$.</p>
 <p><strong>Proof.</strong> The first is the two-readings theorem: a semilinear $M \to R$ is a linear $M^{\varsigma} \to R$. The second applies the first to the conjugate module, since $(M^{\varsigma})^{\varsigma} = M$; the third is the collapse.</p>
@@ -173,7 +173,7 @@ $$</p>
 <h3 id="along-a-conjugate-linear-map">Along a Conjugate-Linear Map</h3>
 <p><strong>Theorem (transport preserves the parity).</strong> Let $A$ carry a $\varsigma$-sesquilinear product $\cdot_{A}$ and let $\varphi : A \to B$ be a $\varsigma$-semilinear bijection. Then the transported product</p>
 <p>$$
-x \cdot_{B} y = \varphi\bigl( \varphi^{-1}(x) \cdot_{A} \varphi^{-1}(y) \bigr)
+\boxed{\;x \cdot_{B} y = \varphi\bigl( \varphi^{-1}(x) \cdot_{A} \varphi^{-1}(y) \bigr)\;}
 $$</p>
 <p>is a $\varsigma$-sesquilinear product on $B$ of the same parity as $\cdot_{A}$, linear in the first slot and $\varsigma$-semilinear in the second.</p>
 <p><strong>Proof.</strong> In the first slot, $\varphi^{-1}$ is semilinear and $\cdot_{A}$ is linear in its first variable, so their composite is semilinear, and $\varphi$ is semilinear, so the composite is linear. In the second slot, $\varphi^{-1}$ is semilinear and $\cdot_{A}$ is semilinear in its second variable, so the composite is linear, and $\varphi$ is semilinear, so the composite is semilinear. In each slot the variable passes through two semilinear steps and the parity rule applied twice returns the parity of the slot.</p>

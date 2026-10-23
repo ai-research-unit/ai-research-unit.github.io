@@ -88,22 +88,18 @@ $$</p>
 R_{u}:\mathbb{C}\to\mathbb{C}, \qquad R_{u}(Q_1)=uQ_1.
 $$</p>
 <p>The map $u\mapsto R_{u}$ is an injective homomorphism of groups, because $R_{uv}=R_{u}\circ R_{v}$ and $R_{1}=\mathrm{id}$, and it is injective since $R_{u}(1)=u$ recovers $u$. Each $R_{u}$ preserves the definite form,</p>
-<p>$$
-H(R_{u}Q_1,R_{u}Q_2)=H(uQ_1,uQ_2)=\lvert u\rvert^{2}H(Q_1,Q_2)=H(Q_1,Q_2),
-$$</p>
+<p>$$\boxed{\;H(R_{u}Q_1,R_{u}Q_2)=H(uQ_1,uQ_2)=\lvert u\rvert^{2}H(Q_1,Q_2)=H(Q_1,Q_2)\;},$$</p>
 <p>so every versor acts by a map preserving the form. These are the rotations of the plane, and the identification of the image with the rotation group $\mathrm{SO}(2)$, together with the reading of the parameter, is recorded in <em>Rotations and Reflections in the Complex Plane</em>. The two-to-one cover read on this action is the subject of the next section.</p>
 <p><strong>Proposition (the versors are the group of $\mathbb{C}$-linear maps preserving the form).</strong> The $\mathbb{C}$-linear maps preserving $\langle\cdot,\cdot\rangle_{*}$ are exactly the multiplications $R_{u}$ with $\lvert u\rvert=1$, and they form the group $\mathrm{U}(1)\cong \mathrm{SO}(2)$.</p>
 <p><em>Proof.</em> A $\mathbb{C}$-linear map of the one-dimensional complex space is $Q\mapsto uQ$ for some $u$, and it preserves $H$ exactly when $\lvert u\rvert^{2}=1$; the identification with the rotation group is the cited one.</p>
 <p><strong>The full orthogonal group.</strong> The $\mathbb{R}$-linear maps preserving $H$ are more numerous: with the matrix $M$ of the map in the real basis $1$, $i$, they are the solutions of the matrix condition</p>
-<p>$$
-M^{\mathsf T}M=\mathrm{I}_{2},
-$$</p>
+<p>$$\boxed{\;M^{\mathsf T}M=\mathrm{I}_{2}\;},$$</p>
 <p>that is the group $O(2)$. The versors give the maps of determinant $+1$ in it; the maps of determinant $-1$ are the reflections $Q_1\mapsto u\bar Q_1$ with $\lvert u\rvert=1$ (<em>Rotations and Reflections in the Complex Plane</em>). The group of the title is thus $O(2)$, and the versors are its determinant-one half.</p>
 <p><strong>Remark (the sandwich is vacuous).</strong> In a non-commutative algebra a unit may act on itself by the sandwich $Q_1\mapsto uQ_1u^{-1}$; here $uQ_1u^{-1}=Q_1$ for every versor, because the algebra is commutative, so the inner action is trivial and multiplication, not conjugation, is the natural action of the versors (<em>Rotations and Reflections in the Complex Plane</em>). The double cover below is therefore read on the multiplication, and not on a sandwich.</p>
 <h2 id="the-two-to-one-cover-of-the-circle">The Two-to-One Cover of the Circle</h2>
 <p><strong>Theorem (the square map).</strong> The map</p>
 <p>$$
-\sigma:\mathrm{U}(1)\to \mathrm{U}(1), \qquad \sigma(u)=u^{2},
+\boxed{\; \sigma:\mathrm{U}(1)\to \mathrm{U}(1), \qquad \sigma(u)=u^{2} \;},
 $$</p>
 <p>is a surjective group homomorphism with kernel $\{1,-1\}$, and each element of the target has exactly two preimages, $u$ and $-u$. It is therefore a two-to-one cover of the circle by itself.</p>
 <p><em>Proof.</em> For $u,v\in \mathrm{U}(1)$ the identity $\sigma(uv)=(uv)^{2}=u^{2}v^{2}=\sigma(u)\sigma(v)$ holds by associativity and commutativity, and $H(u^{2})=H(u)^{2}=1$ by multiplicativity, so $\sigma$ is a homomorphism into $\mathrm{U}(1)$. Its kernel solves $u^{2}=1$; a field has at most two roots of $X^{2}-1$, and $\pm1$ are two, so the kernel is $\{1,-1\}$. For the surjectivity let $Q_1=q_1+iq'_1$ lie on the circle, $q_1^{2}+q'^{2}_1=1$. If $q_1\neq-1$ the element</p>

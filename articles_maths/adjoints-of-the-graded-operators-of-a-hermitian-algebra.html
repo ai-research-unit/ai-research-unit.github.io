@@ -98,7 +98,7 @@ $$</p>
 <p><strong>Proof.</strong> The sign is a real scalar, so the parity is that of $T^{*}$, namely $|T|$; for the involution, $|T^{\star}| = |T|$ and $T^{\star\star} = (-1)^{|T|}\bigl((-1)^{|T|}T^{*}\bigr)^{*} = (-1)^{2|T|}T^{**} = T$.</p>
 <p><strong>Theorem (the super-adjoint is multiplicative).</strong> For graded operators $S, T$,</p>
 <p>$$
-(TS)^{*} = T^{*}S^{*} , \qquad (TS)^{\star} = S^{\star}T^{\star} ,
+\boxed{\;(TS)^{*} = T^{*}S^{*} , \qquad (TS)^{\star} = S^{\star}T^{\star}\;} ,
 $$</p>
 <p>so the sign absorbed in the definition of the super-adjoint leaves the multiplicativity free of any extra sign.</p>
 <p><strong>Proof.</strong> The ordinary rule is the definition of the adjoint applied twice. For the super-adjoint, $(TS)^{\star} = (-1)^{|T|+|S|}(TS)^{*} = (-1)^{|T|+|S|}S^{*}T^{*}$ and $S^{\star}T^{\star} = (-1)^{|S|}S^{*}(-1)^{|T|}T^{*} = (-1)^{|S|+|T|}S^{*}T^{*}$; the two agree.</p>
@@ -111,7 +111,7 @@ $$</p>
 <p><strong>Proof.</strong> $[S,T\}^{*} = (ST)^{*}-(-1)^{|S||T|}(TS)^{*} = T^{*}S^{*}-(-1)^{|S||T|}S^{*}T^{*}$, while $[S^{*},T^{*}\} = S^{*}T^{*}-(-1)^{|S||T|}T^{*}S^{*}$ with $|S^{*}| = |S|$ and $|T^{*}| = |T|$; multiplying the second by $-(-1)^{|S||T|}$ and using $(-1)^{2|S||T|} = 1$ gives the first.</p>
 <p><strong>Proposition (the super-adjoint of the graded commutator).</strong> For graded $S,T$,</p>
 <p>$$
-[S,T\}^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}\} .
+\boxed{\;[S,T\}^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}\}\;} .
 $$</p>
 <p><strong>Proof.</strong> By the previous proposition $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$, and $[S^{\star},T^{\star}\} = (-1)^{|S|+|T|}[S^{*},T^{*}\}$ because $S^{\star} = (-1)^{|S|}S^{*}$ is a scalar multiple of $S^{*}$; multiplying the first identity by $(-1)^{|S|+|T|}$ and substituting the second gives the display.</p>
 <p><strong>Definition.</strong> A graded operator is <strong>self-adjoint</strong> when $T^{*} = T$ and <strong>super-self-adjoint</strong> when $T^{\star} = T$, that is when $T^{*} = (-1)^{|T|}T$.</p>
@@ -120,7 +120,7 @@ $$</p>
 <h2 id="the-super-adjoint-of-the-regular-representation">The Super-Adjoint of the Regular Representation</h2>
 <p><strong>Theorem (the super-adjoint of the multiplications).</strong> For every $x$,</p>
 <p>$$
-L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}} ,
+\boxed{\;L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}}\;} ,
 $$</p>
 <p>where $\Lambda^{\alpha}$ and $\mathrm{P}^{\alpha}$ are the signed left and right multiplications and $\Theta^{\alpha}$ the signed Hermitian sandwich.</p>
 <p><strong>Proof.</strong> The left multiplication has parity $|x|$ and adjoint $L_x^{*} = L_{x^{\dagger}}$, so $L_x^{\star} = (-1)^{|x|}L_{x^{\dagger}} = \varepsilon_xL_{x^{\dagger}} = \Lambda^{\alpha}_{x^{\dagger}}$, using $\varepsilon_{x^{\dagger}} = \varepsilon_x$ and the definition $\Lambda^{\alpha}_z = \varepsilon_zL_z$; the right-handed identity is the same computation with $R_{x^{\dagger}}$ and $\mathrm{P}^{\alpha}_z = \varepsilon_zR_z$; for the sandwich, $\Theta_x$ has parity $|x|$ and adjoint $\Theta_{x^{\dagger}}$, so $\Theta_x^{\star} = \varepsilon_x\Theta_{x^{\dagger}} = \Theta^{\alpha}_{x^{\dagger}}$.</p>

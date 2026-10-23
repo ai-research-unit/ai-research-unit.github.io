@@ -99,7 +99,7 @@ $$
 using the contravariance of $\operatorname{Spec}$ exactly as for the action on $X_L$. The same computation for a general test object $T$ shows that $G$ acts on the functor of points $T\mapsto X_L(T)$.</p>
 <p><strong>Theorem (the fixed points are the $k$-points).</strong> For a finite Galois extension $L/k$ the fixed points of the action on the $L$-points are the $k$-points,
 $$
-X(L)^G = X(k).
+\boxed{\;X(L)^G = X(k)\;}.
 $$</p>
 <p><em>Proof.</em> A $k$-point is an $L$-point that is already defined over $k$, and $\operatorname{Spec}\sigma$ fixes every $k$-morphism, so $X(k)\subseteq X(L)^G$. Conversely let $X = \operatorname{Spec}A$ be affine and let $P$ correspond to the $k$-algebra homomorphism $\varphi : A\to L$. That $P$ is fixed by $\sigma$ says $\sigma\circ\varphi = \varphi$, that is $\varphi(a) = \sigma(\varphi(a))$ for all $a$ and all $\sigma$, so $\varphi$ takes values in $L^G = k$ and is a $k$-homomorphism $A\to k$, which is a $k$-point. The general case follows by covering $X$ with affine charts, the condition being local.</p>
 <p><strong>Corollary.</strong> For $X$ of finite type over $k$ and $L = \bar k$ the separable closure, the action of $G = \operatorname{Gal}(\bar k/k)$ on the geometric points $X(\bar k)$ has fixed set $X(k)$; in particular the $k$-points are recovered from the geometric points by taking invariants, which is the elementary case of Galois descent.</p>
@@ -118,7 +118,7 @@ Hence $\sigma$ acts by a $k$-algebra automorphism of $\mathcal{O}_{X_L}$ that is
 <p><em>Proof.</em> Composition and the field automorphism $\sigma$ preserve sums and products, which gives the first two identities, and they give the third because $\sigma$ is additive and $\sigma(\ell)\in L$ is a constant. On an affine chart $X_L = \operatorname{Spec}(A\otimes_kL)$ the translate of $\sum_ia_i\otimes\ell_i$ is $\sum_ia_i\otimes\sigma(\ell_i)$: the action fixes $A\otimes 1$ and applies $\sigma$ to the second factor.</p>
 <p><strong>Theorem (the invariant functions are the functions on $X$).</strong> Let $X = \operatorname{Spec}A$ be affine and $L/k$ finite Galois. Then the ring of invariants of the action on the coordinate ring is
 $$
-(A\otimes_kL)^G = A\otimes_kL^G = A ,
+\boxed{\;(A\otimes_kL)^G = A\otimes_kL^G = A\;} ,
 $$
 the image of the pullback $A\to A\otimes_kL$, $a\mapsto a\otimes1$. Consequently $\Gamma(X_L,\mathcal{O}_{X_L})^G = \Gamma(X,\mathcal{O}_X)$.</p>
 <p><em>Proof.</em> Write $A\otimes_kL$ as a free $A$-module with basis a $k$-basis of $L$; the action is by the matrix of $\sigma$ on the second factor, applied entrywise, and the invariant subspace of $L$ under $G$ is $k$ by the fundamental theorem of Galois theory (<em>Fields</em>). Hence the invariant submodule is the $A$-span of $1\otimes L^G = A\otimes1$. The sheaf statement follows by glueing over an affine cover.</p>
@@ -133,7 +133,7 @@ and the assignment is multiplicative, $(\sigma\tau)^* = \sigma^*\tau^*$ in the s
 <p><em>Proof.</em> The automorphism $\sigma_X$ induces an isomorphism $\mathcal{F}\to(\sigma_X)_*\mathcal{F}$, hence a map $H^i(X_L,\mathcal{F})\to H^i(X_L,(\sigma_X)_*\mathcal{F})\cong H^i(X_L,\mathcal{F})$ by the functoriality of cohomology of <em>Coherent Sheaves</em>. On an affine chart the cohomology is computed from the Čech complex of the $L$-coefficients, and $\sigma$ acts on the coefficients by $\sigma$, which gives the semilinearity. The multiplicativity is the functoriality $(\sigma_X\tau_X)^* = \tau_X^*\sigma_X^*$ composed with the cocycle.</p>
 <p><strong>Theorem (the invariants of the structure sheaf).</strong> For a finite Galois extension $L/k$ the invariants of the semilinear action on the cohomology of the structure sheaf are the cohomology of $X$:
 $$
-H^i(X_L,\mathcal{O}_{X_L})^G \cong H^i(X,\mathcal{O}_X)\otimes_kL^G \cong H^i(X,\mathcal{O}_X)
+\boxed{\;H^i(X_L,\mathcal{O}_{X_L})^G \cong H^i(X,\mathcal{O}_X)\otimes_kL^G \cong H^i(X,\mathcal{O}_X)\;}
 $$
 whenever $X$ is separated, so that the cohomology is computed by the Čech complex of an affine cover with $G$-stable indexing.</p>
 <p><em>Proof.</em> For an affine cover $\mathfrak{U}$ of $X$ the cover $\mathfrak{U}_L$ of $X_L$ has $G$-stable Čech complex $C^\bullet(\mathfrak{U}_L,\mathcal{O}_{X_L}) = C^\bullet(\mathfrak{U},\mathcal{O}_X)\otimes_kL$ with the action on the second factor, and taking invariants commutes with cohomology of a complex of $A$-modules by the freeness in the previous theorem. The identified cohomology is the Čech cohomology of $X$, which agrees with the sheaf cohomology on a separated scheme.</p>

@@ -87,7 +87,7 @@ c_u(x\bullet y) = u\,\alpha(x\bullet y)\,u^{-1} = u\,\bigl(\alpha(x)\bullet\alph
 $$
 and, since $z\mapsto uzu^{-1}$ is an algebra automorphism of $A$ and therefore preserves the halved product,
 $$
-u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\bullet\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\bullet c_u(y) .
+\boxed{\;u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\bullet\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\bullet c_u(y)\;} .
 $$
 Hence $c_u$ preserves the Jordan product; being bijective, it is an automorphism of $J$.</p>
 <p><strong>Corollary.</strong> The map $u \mapsto c_u$ is a homomorphism from $A^\times$ to the automorphism group of $J$ (with the composition law computed below); its kernel is the group of units fixed by the automorphism, that is, the units $u$ with $uzu^{-1} = \alpha(z)$ for all $z$, which is $Z(A)^\times$ when $\alpha = \mathrm{id}$.</p>
@@ -105,7 +105,7 @@ and $N(uv) = N(u)N(v)$ whenever $N(v)$ is central.</p>
 <p><em>Proof.</em> $N(uv) = uv\,\alpha(uv) = uv\,\alpha(v)\,\alpha(u) = u\,N(v)\,\alpha(u)$; if $N(v)$ is central it commutes with $\alpha(u)$ and the product is $u\alpha(u)N(v) = N(u)N(v)$.</p>
 <p><strong>Theorem (the square of a signed conjugation).</strong> For every unit $u$,</p>
 <p>$$
-c_u^2 = \operatorname{conj}_{N(u)} , \qquad c_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1} .
+\boxed{\;c_u^2 = \operatorname{conj}_{N(u)} , \qquad c_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1}\;} .
 $$</p>
 <p><em>Proof.</em> Compose: $c_u(c_u(x)) = u\,\alpha(u\alpha(x)u^{-1})\,u^{-1} = u\alpha(u)\,\alpha(\alpha(x))\,\alpha(u)^{-1}u^{-1} = N(u)\,x\,N(u)^{-1}$.</p>
 <p><strong>Corollary.</strong> The square of a signed conjugation is an <strong>inner conjugation</strong> of $J$, by the twisted square $N(u)$.</p>
@@ -127,7 +127,7 @@ $$</p>
 <h3 id="classifying-the-signed-conjugations">Classifying the Signed Conjugations</h3>
 <p><strong>Theorem.</strong> For units $u, v$,
 $$
-c_u = c_v \iff u^{-1}v \in Z(A)^\times .
+\boxed{\;c_u = c_v \iff u^{-1}v \in Z(A)^\times\;} .
 $$</p>
 <p><em>Proof.</em> Suppose $c_u = c_v$, so $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$. Applying this with $x = \alpha^{-1}(z)$, which runs through all $z$ as $x$ does, gives $uzu^{-1} = vzv^{-1}$ for all $z$, that is $u^{-1}v$ commutes with every $z$, so $u^{-1}v$ is central. Conversely if $u^{-1}v$ is central then it commutes with $\alpha(x)$, and $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ follows from $v = u(u^{-1}v)$ with $u^{-1}v$ central.</p>
 <p><strong>Corollary.</strong> The correspondence $u \mapsto c_u$ factors through the quotient $A^\times/Z(A)^\times$, and it is injective there; the signed conjugations are in bijection with the <strong>cosets</strong> of the units modulo the central units of $A$.</p>

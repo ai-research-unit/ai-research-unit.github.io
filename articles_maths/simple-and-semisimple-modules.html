@@ -83,7 +83,7 @@
 <p>The endomorphism ring of a simple module is as small as a ring can be.</p>
 <p><strong>Theorem (Schur).</strong> Let $S$ and $T$ be simple left $A$-modules. Then every $A$-linear map $f: S \to T$ is zero or an isomorphism, and</p>
 <p>$$
-\operatorname{End}_A(S)=D \text{ is a division ring}, \qquad \operatorname{Aut}_A(S)=D^{\times}.
+\boxed{\;\operatorname{End}_A(S)=D \text{ is a division ring}, \qquad \operatorname{Aut}_A(S)=D^{\times}\;}.
 $$</p>
 <p>The lemma is proved in <em>Automorphisms of Modules over an Algebra</em>; it is recalled here because it governs the whole theory of semisimple modules. The division ring $D$ may be strictly larger than the base field, and its size is a genuine invariant of $S$: for $A=M_n(F)$ the simple module has $D=F$, while for a division algebra $D$ over $F$ the regular module is simple with endomorphism ring $D^{\mathrm{opp}}$, so a noncommutative division algebra is itself the division ring attached to a simple module. Over an algebraically closed field every finite-dimensional simple module over a finite-dimensional algebra has $D=F$, which is why the representation theory of such algebras has no further arithmetic content.</p>
 <h3 id="examples">Examples</h3>
@@ -109,7 +109,7 @@ $$</p>
 <p>Two simple modules $S$ and $T$ are <strong>isomorphic</strong> or not, and by Schur's lemma there are no nonzero maps between non-isomorphic simples. Grouping the simple summands of a semisimple module by isomorphism class gives the <strong>isotypic decomposition</strong>.</p>
 <p><strong>Theorem.</strong> Let $M$ be a semisimple left $A$-module with simple constituents $S_1,\dots,S_r$ pairwise non-isomorphic. Then</p>
 <p>$$
-M \cong \bigoplus_{i=1}^{r} M_i, \qquad M_i \cong S_i^{\oplus n_i},
+\boxed{\;M \cong \bigoplus_{i=1}^{r} M_i, \qquad M_i \cong S_i^{\oplus n_i}\;},
 $$</p>
 <p>where $n_i$ is a cardinal, and the <strong>isotypic components</strong> $M_i$ are the sums of all submodules isomorphic to $S_i$. The decomposition is unique: the submodules isomorphic to $S_i$ are exactly those of $M_i$, and $M_i$ is the image of the projection of $M$ onto the $i$-th block in any such decomposition.</p>
 <p>The endomorphism ring of a semisimple module factors accordingly. For a single simple module $S$ with $D=\operatorname{End}_A(S)$ and a direct sum $S^{\oplus n}$,</p>
@@ -131,7 +131,7 @@ $$</p>
 <h3 id="the-structure-theorem">The structure theorem</h3>
 <p><strong>Theorem (Wedderburn–Artin).</strong> Let $A$ be a unital ring. Then $A$ is semisimple if and only if</p>
 <p>$$
-A \cong \prod_{i=1}^{r} M_{n_i}(D_i)
+\boxed{\;A \cong \prod_{i=1}^{r} M_{n_i}(D_i)\;}
 $$</p>
 <p>for division rings $D_1,\dots,D_r$ and positive integers $n_1,\dots,n_r$. The number $r$, the integers $n_i$ and the division rings $D_i$ are determined by $A$ up to permutation of the factors.</p>
 <p><em>Proof sketch.</em> Write ${}_A A=\bigoplus_i S_i^{\oplus n_i}$ with $S_i$ pairwise non-isomorphic simple. By the endomorphism computation of §Isotypic decomposition, $\operatorname{End}_A({}_A A)\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$. But $\operatorname{End}_A({}_A A)\cong A^{\mathrm{opp}}$ by the theorem on the regular module of <em>Modules over an Algebra</em>, so $A^{\mathrm{opp}}\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$ and, taking opposites, $A\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i)^{\mathrm{opp}})$. This is a product of matrix rings over the division rings $\operatorname{End}_A(S_i)^{\mathrm{opp}}$, which is the stated form with $D_i=\operatorname{End}_A(S_i)^{\mathrm{opp}}$. The uniqueness of the factors is the Jordan–Hölder theorem applied to the regular module together with the division-ring form of Schur's lemma.</p>

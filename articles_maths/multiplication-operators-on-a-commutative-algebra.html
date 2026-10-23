@@ -86,7 +86,7 @@ $$</p>
 <p>Because $A$ is commutative, $L_a$ is also the right multiplication $x \mapsto xa$, so there is one family and not two. The assignment is $R$-linear in the subscript, and the following identities are immediate from associativity and from the commutativity of $A$.</p>
 <p><strong>Proposition.</strong> For all $a, b \in A$ and $r \in R$,</p>
 <p>$$
-L_{a+b} = L_a + L_b, \qquad L_{ab} = L_a \circ L_b = L_b \circ L_a, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_A .
+\boxed{\;L_{a+b} = L_a + L_b, \qquad L_{ab} = L_a \circ L_b = L_b \circ L_a, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_A\;} .
 $$</p>
 <p><em>Proof.</em> Each identity is checked on an element $x$: $L_{a+b}(x) = (a+b)x = ax + bx$, $L_{ab}(x) = (ab)x = a(bx) = L_a(L_b x)$, $L_{ra}(x) = (ra)x = r(ax) = (rL_a)(x)$, and $L_1(x) = x$. Commutativity gives $L_aL_b = L_{ab} = L_{ba} = L_bL_a$.</p>
 <p><strong>Corollary.</strong> The image $L(A) = \{L_a : a \in A\}$ is a commutative subalgebra of $\operatorname{End}_R(A)$ with identity $L_1$, and $L : A \to L(A)$ is a surjective $R$-algebra homomorphism. If $A$ is unital then $L$ is injective, because $L_a = 0$ forces $a = L_a(1) = 0$; hence</p>
@@ -101,7 +101,7 @@ $$</p>
 <p>The multiplication operators are exactly the operators that commute with all of them.</p>
 <p><strong>Theorem.</strong> In $\operatorname{End}_R(A)$, the centralizer of $L(A)$ is $L(A)$ itself:</p>
 <p>$$
-\{T \in \operatorname{End}_R(A) : T L_a = L_a T \ \text{for all } a \in A\} = L(A) .
+\boxed{\;\{T \in \operatorname{End}_R(A) : T L_a = L_a T \ \text{for all } a \in A\} = L(A)\;} .
 $$</p>
 <p>Equivalently, every $A$-linear endomorphism of the regular module $A$ is a multiplication operator, and $A \cong \operatorname{End}_A(A)$.</p>
 <p><em>Proof.</em> An operator $T$ commutes with every $L_a$ precisely when $T(ax) = a\,T(x)$ for all $a, x$, which is $A$-linearity of the regular module; putting $a = x$ gives $T(a) = a\,T(1) = L_{T(1)}(a)$, so $T = L_b$ with $b = T(1)$. Conversely every $L_b$ is $A$-linear by associativity. Here the unit is again used, in the evaluation at $1$.</p>
@@ -141,7 +141,7 @@ $$</p>
 <p>into the $R$-algebra of functions on the character set with pointwise operations.</p>
 <p><strong>Theorem.</strong> $\Gamma$ is a unital $R$-algebra homomorphism, and under it the multiplication operator $L_a$ becomes multiplication of functions by $\Gamma(a)$:</p>
 <p>$$
-\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \mathcal F a\,\mathcal F x ,
+\boxed{\;\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \mathcal F a\,\mathcal F x\;} ,
 $$</p>
 <p>where $\mathcal F a = \Gamma(a)$.</p>
 <p><em>Proof.</em> For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$.</p>

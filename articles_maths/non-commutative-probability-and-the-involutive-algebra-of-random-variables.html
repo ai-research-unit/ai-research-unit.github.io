@@ -109,7 +109,7 @@ $$
 whenever the $a_k$ have $\varphi(a_k)=0$ and adjacent $a_k$ lie in distinct subalgebras; the random variables $x_1,\dots,x_n$ are free when the subalgebras they generate are free. The definition is the free analogue of the independence of the classical theory, where the corresponding factorisation is $\mathbb E[\prod X_k]=\prod\mathbb E[X_k]$.</p>
 <p><strong>Theorem (the moments factor under freeness).</strong> If $x_1,\dots,x_n$ are free, then the joint moments $\varphi(x_{i_1}\cdots x_{i_m})$ are determined by the moments of the individual $x_i$ by the recursion that removes the consecutive equal blocks and applies the freeness; in particular for free $x,y$,
 $$
-\varphi(xy)=\varphi(x)\varphi(y),\qquad \varphi(xyxy)=\varphi(x^2)\varphi(y)^2+\varphi(x)^2\varphi(y^2)-\varphi(x)^2\varphi(y)^2 .
+\boxed{\;\varphi(xy)=\varphi(x)\varphi(y),\qquad \varphi(xyxy)=\varphi(x^2)\varphi(y)^2+\varphi(x)^2\varphi(y^2)-\varphi(x)^2\varphi(y)^2\;} .
 $$</p>
 <p><em>Proof.</em> Both sides are the value of the recursion on the mixed moment; the displayed identities are the first two cases, the second obtained by writing each of $x-\varphi(x)$ and $y-\varphi(y)$ and expanding the vanishing of the four-term free moment.</p>
 <h3 id="the-free-product">The free product</h3>
@@ -133,7 +133,7 @@ converges in moments to the semicircle law $\mu_\sigma$.</p>
 <h3 id="the-moments-and-the-catalan-numbers">The moments and the Catalan numbers</h3>
 <p><strong>Theorem.</strong> The moments of the standard semicircle law are
 $$
-\int t^{2m}\,d\mu_1(t)=C_m=\frac{1}{m+1}\binom{2m}{m},\qquad \int t^{2m+1}\,d\mu_1(t)=0 .
+\boxed{\;\int t^{2m}\,d\mu_1(t)=C_m=\frac{1}{m+1}\binom{2m}{m},\qquad \int t^{2m+1}\,d\mu_1(t)=0\;} .
 $$</p>
 <p><em>Proof.</em> The density integrates to the Catalan numbers, as the generating function $\sum_mC_mz^m=\frac{1-\sqrt{1-4z}}{2z}$ makes explicit; equivalently the moments satisfy $m_0=1$ and the recursion $m_{2m}=\sum_{k=0}^{m-1}m_{2k}m_{2m-2-2k}$, which is the recursion the non-crossing pairings obey.</p>
 <h2 id="free-cumulants-and-the-math117-transform">Free Cumulants and the $R$-Transform</h2>
@@ -145,7 +145,7 @@ $$
 and the <strong>$R$-transform</strong> is $R_x(z)=\sum_{n\ge1}\kappa_n(x)z^{n-1}$.</p>
 <p><strong>Theorem (additivity).</strong> If $x$ and $y$ are free, then
 $$
-R_{x+y}=R_x+R_y ,
+\boxed{\;R_{x+y}=R_x+R_y\;} ,
 $$
 that is, the free cumulants are additive under freeness, in the same way that the classical cumulants are additive under independence.</p>
 <p><em>Proof.</em> The moment–cumulant recursion over the non-crossing partitions factors across the free product, and the generating series of the non-crossing partitions of a sum splits into the two series; the additivity is the free analogue of the additivity of the logarithm of the characteristic function. The $R$-transform of the semicircle law of variance $\sigma^2$ is $R(z)=\sigma^2z$, from which the Catalan moments follow by the recursion.</p>

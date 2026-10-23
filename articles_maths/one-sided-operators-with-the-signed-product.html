@@ -87,17 +87,17 @@ $$</p>
 <h2 id="the-composition-laws">The Composition Laws</h2>
 <p><strong>Proposition (the left family).</strong> For all $a, c$</p>
 <p>$$
-\mathrm{L}^{\alpha}_a \circ \mathrm{L}^{\alpha}_c = L_{a\alpha(c)}, \qquad
+\boxed{\;\mathrm{L}^{\alpha}_a \circ \mathrm{L}^{\alpha}_c = L_{a\alpha(c)}, \qquad
 \mathrm{L}^{\alpha}_a \circ L_c = \mathrm{L}^{\alpha}_{a\alpha(c)}, \qquad
-L_a \circ \mathrm{L}^{\alpha}_c = \mathrm{L}^{\alpha}_{ac}.
+L_a \circ \mathrm{L}^{\alpha}_c = \mathrm{L}^{\alpha}_{ac}\;}.
 $$</p>
 <p>So the composite of <strong>two</strong> signed left multiplications is an ordinary left multiplication, the two grade involutions cancelling; the composite of a signed and an ordinary left multiplication, in either order, is signed.</p>
 <p><strong>Proof.</strong> $\mathrm{L}^{\alpha}_aL_c(y) = a\alpha(cy) = a\alpha(c)\alpha(y) = \mathrm{L}^{\alpha}_{a\alpha(c)}(y)$; $L_a\mathrm{L}^{\alpha}_c(y) = ac\alpha(y) = \mathrm{L}^{\alpha}_{ac}(y)$; and composing two of the first kind gives $L_{a\alpha(c)}\alpha\circ\alpha = L_{a\alpha(c)}$.</p>
 <p><strong>Proposition (the right family carries no new operators).</strong> Since $\alpha$ is a bijection, $\{\mathrm{P}^{\alpha}_a : a \in \mathrm{Cl}(V,\mathfrak{Q})\} = \{R_b : b \in \mathrm{Cl}(V,\mathfrak{Q})\}$: the signed right multiplications are exactly the ordinary right multiplications, reparametrised by $b = \alpha(a)$. Consequently</p>
 <p>$$
-\mathrm{P}^{\alpha}_a \circ \mathrm{P}^{\alpha}_c = \mathrm{P}^{\alpha}_{ca}, \qquad
+\boxed{\;\mathrm{P}^{\alpha}_a \circ \mathrm{P}^{\alpha}_c = \mathrm{P}^{\alpha}_{ca}, \qquad
 \mathrm{P}^{\alpha}_a \circ R_c = \mathrm{P}^{\alpha}_{\alpha(c)\,a}, \qquad
-R_c \circ \mathrm{P}^{\alpha}_a = \mathrm{P}^{\alpha}_{a\,\alpha(c)},
+R_c \circ \mathrm{P}^{\alpha}_a = \mathrm{P}^{\alpha}_{a\,\alpha(c)}\;},
 $$</p>
 <p>and the signed right family is a group, being the ordinary right family. The genuine asymmetry is that the signed left multiplications are new maps while the signed right multiplications are not.</p>
 <p><strong>Proof.</strong> $\mathrm{P}^{\alpha}_a = R_{\alpha(a)}$ by definition, and $\alpha$ is surjective, which gives the first sentence; the laws are the ordinary laws $R_bR_d = R_{db}$ under the substitution $b = \alpha(a)$, $d = \alpha(c)$. Explicitly, $\mathrm{P}^{\alpha}_aR_c(y) = yc\alpha(a) = y\alpha(\alpha(c))\alpha(a) = y\alpha(\alpha(c)a) = \mathrm{P}^{\alpha}_{\alpha(c)a}(y)$.</p>
@@ -123,7 +123,7 @@ $$</p>
 <p><strong>Proof.</strong> $\mathrm{L}^{\alpha}_x\bigl(R_{\alpha(x)^{-1}}(y)\bigr) = x\,\alpha\bigl(y\,\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha\bigl(\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha^{2}(x)^{-1} = x\,\alpha(y)\,x^{-1} = \Sigma_x(y)$, using that $\alpha$ is an automorphism, that $\alpha^{-1} = \alpha$, and that $\alpha^{2} = \mathrm{id}$. The inverse right multiplication of the other convention, $R_{x^{-1}}$, gives only $\varepsilon_x\Sigma_x$, because $\alpha(x)^{-1} = \varepsilon_x x^{-1}$; the two pairings agree exactly on the even part of the unit group, which is the reason the corpus keeps the two families apart.</p>
 <p><strong>Theorem (the reflections).</strong> Let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. Then $\Sigma_u = \mathrm{L}^{\alpha}_u\circ R_{\alpha(u)^{-1}}$ restricted to $V$ is the reflection $\rho_u$, and its fixed vectors in $V$ are the hyperplane $u^{\perp}$:</p>
 <p>$$
-\mathrm{Fix}\bigl(\Sigma_u\big|_V\bigr) = u^{\perp} = \{\, v \in V : B(u,v) = 0 \,\}.
+\boxed{\;\mathrm{Fix}\bigl(\Sigma_u\big|_V\bigr) = u^{\perp} = \{\, v \in V : B(u,v) = 0 \,\}\;}.
 $$</p>
 <p><strong>Proof.</strong> The reflection statement is the theorem of <em>The Sandwich with the Signed Product</em>; for the fixed space, $\rho_u(v) = v$ exactly when $2B(v,u)\mathfrak{Q}(u)^{-1}u = 0$, that is $B(v,u) = 0$.</p>
 <p><strong>Remark (why one side is not enough).</strong> A signed left multiplication by a vector never preserves $V$, for the same reason an ordinary left multiplication does not: $L_u\alpha(\mathrm{Cl}^{1})$ contains the scalars as well as the vectors, since $\alpha$ flips the parity. Only the pairing with an ordinary right multiplication brings the parity back and produces an operator of $V$. This is the one-sided form of the statement of <em>One-Sided Operators on a Clifford Algebra</em> that the scalar is the only one-sided operator preserving the quadratic space.</p>

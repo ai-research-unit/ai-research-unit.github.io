@@ -100,7 +100,7 @@ $$</p>
 <h2 id="the-fierzkofink-identities">The Fierz–Kofink Identities</h2>
 <p><strong>Theorem (the scalar FPK identities).</strong> For every Dirac spinor $\psi$, with $J^2=J_\mu J^\mu=\eta^{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,</p>
 <p>$$
-J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 .
+\boxed{\; J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 \;}.
 $$</p>
 <p><em>Proof.</em> The identity expresses two facts at once: the square of the vector $J$ equals the sum of the squares of the two scalars, and the square of the axial vector is non-positive (or zero) exactly when the square of the vector is non-negative, the two squares being opposite.</p>
 <p><strong>Remark (the rest of the FPK system).</strong> The three scalar identities above are not the whole system. The full FPK relations also include tensor identities, which express the antisymmetric combination $J_\mu K_\nu-J_\nu K_\mu$ in terms of the tensor $S$ and its Hodge dual, with coefficients built from $\sigma$ and $\omega$. These are quoted in the modern literature (see <em>Further Reading</em>) with normalisations that depend on the index positions, on the signature and on the sign convention for $\gamma_5$. The corpus verified the three scalar identities numerically and did <strong>not</strong> reproduce the tensor ones in its own conventions; the article therefore states their existence and does not display a formula it has not checked. Fixing the tensor identities in the corpus's conventions is recorded as an open question.</p>
@@ -113,7 +113,7 @@ $$</p>
 <p>where $J=J_\mu\gamma^\mu$, $K=K_\mu\gamma^\mu$ and $S=S_{\mu\nu}\gamma^{\mu\nu}$ are read as Clifford elements with the covariant coefficients.</p>
 <p><strong>Statement (the aggregate form of the FPK identities).</strong> The aggregate satisfies</p>
 <p>$$
-Z^2=4\sigma Z,\qquad Z\gamma_\mu Z=4J_\mu Z,\qquad Z i\gamma_5 Z=4\omega Z,\qquad Z\gamma_5\gamma_\mu Z=4K_\mu Z,\qquad Z\sigma_{\mu\nu}Z=4S_{\mu\nu}Z .
+\boxed{\; Z^2=4\sigma Z,\qquad Z\gamma_\mu Z=4J_\mu Z,\qquad Z i\gamma_5 Z=4\omega Z,\qquad Z\gamma_5\gamma_\mu Z=4K_\mu Z,\qquad Z\sigma_{\mu\nu}Z=4S_{\mu\nu}Z \;}.
 $$</p>
 <p><strong>Statement (the inversion theorem).</strong> If $\xi$ is a fixed spinor with $\xi^{\dagger}\gamma_0\psi\neq0$, then $\psi$ is recovered from its aggregate by $\psi=Z\xi$. The aggregate therefore returns from the tensor densities to the spinor; this is why Lounesto named it the <strong>boomerang</strong>.</p>
 <p>The two statements are quoted from the literature (see <em>Further Reading</em>) and are not recomputed here; the normalisation of $Z$ is fixed by the factor $4$ in $Z^2=4\sigma Z$, and the corpus did not succeed in matching the literature's sign conventions quickly enough to assert the identity. The boomerang is the conceptual device that motivates the classification and it is recorded for that reason, with the corpus's uncertainty marked.</p>
@@ -164,14 +164,13 @@ $$</p>
 <p>Classes $1$–$3$ are the <strong>regular</strong> spinors, those with at least one of $\sigma,\omega$ nonzero; classes $4$–$6$ are the <strong>singular</strong> spinors, with $\sigma=\omega=0$. The vector $J$ has positive square in the regular classes and is null in the singular ones, by the identity $J^2=\sigma^2+\omega^2$. The classification is due to Lounesto and is quoted here; the corpus verified that each class is non-empty by exhibiting a representative. The names in the last column are Lounesto's for the three singular classes; the two regular classes $2$ and $3$ carry no standard name in the classification, and the labels that other conventions attach to them depend on the choice of $\gamma_5$ and on which scalar is set to zero, so the article keeps the algebraic description. The singular classes are likewise permuted between sources: the <em>flag-dipole</em> with both $K$ and $S$ nonzero is unambiguous, but the names <em>flagpole</em> and <em>dipole</em> are exchanged in some of the literature, and the algebraic conditions are the safe identifier.</p>
 <p><strong>Proposition (all six classes are non-empty).</strong> In the Dirac representation and with the covariants above, the following spinors are representatives:</p>
 <p>$$
-\begin{aligned}
+\boxed{\; \begin{aligned}
 \text{class 1:}&\quad \psi=\frac{1}{\sqrt3}\,(1,\,i,\,0,\,1)^{\mathsf T} &&(\sigma=\tfrac13,\ \omega=\tfrac23),\\
 \text{class 2:}&\quad \psi=(1,\,0,\,1/\sqrt2,\,0)^{\mathsf T} &&(\sigma=\tfrac12,\ \omega=0),\\
 \text{class 3:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,i,\,0)^{\mathsf T} &&(\sigma=0,\ \omega=-1),\\
 \text{class 4:}&\quad \psi=\frac{1}{\sqrt6}\,(1,\,1+i,\,1,\,-1-i)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S\neq0),\\
 \text{class 5:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,0,\,1)^{\mathsf T} &&(\sigma=\omega=0,\ K=0,\ S\neq0),\\
-\text{class 6:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,1,\,0)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S=0).
-\end{aligned}
+\text{class 6:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,1,\,0)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S=0)\end{aligned} \;}.
 $$</p>
 <p><em>Proof.</em> Each representative was computed numerically and its covariants evaluated. The two scalars and the class membership are as displayed; for the singular classes the distinction is between the vanishing of the <strong>vector</strong> $K$ and the vanishing of the <strong>tensor</strong> $S$, not of their norms. Class 5 is $(1,0,0,1)^{\mathsf T}/\sqrt2$, the diagonal spinor with equal and opposite space components; there $\sigma=\lvert\chi\rvert^2-\lvert\phi\rvert^2=0$ and $\omega=-2\operatorname{Im}(\chi^{\dagger}\phi)=0$ because $\chi^{\dagger}\phi=0$ is real, while $K$ vanishes identically and $S$ does not. Class 6 is $(1,0,1,0)^{\mathsf T}/\sqrt2$, the spinor with equal upper and lower two-spinors; there $\sigma=0$ and $\omega=0$, $S$ vanishes identically, and $K$ does not — it is null, $K^2=0$, which is why it is invisible to the square $K^2$ and visible only to the vector itself. Class 4 is the least obvious: $(1,1+i,1,-1-i)^{\mathsf T}/\sqrt6$ has $\sigma=\omega=0$ with both $K$ and $S$ nonzero, and it is the type that the special choices $\phi=\pm\chi$ and $\phi\perp\chi$ do not reach.</p>
 <p><strong>Remark (the degenerate choices).</strong> The three singular classes are easy to confuse, because the families $\phi=\chi$, $\phi=-\chi$, $\phi\perp\chi$ and $\phi=\pm i\chi$ produce class 6, class 6, class 5 and (with $\sigma\neq0$) class 3 respectively, while class 4 is reached only by a genuinely generic phase. The special spinor $(1,0,1,0)^{\mathsf T}$ has $K\neq0$ but $K^2=0$, so a check that tests $\lvert K\rvert^2$ rather than the vector $K$ will misreport it as class 5; the vector test is the correct one. This is recorded because it is exactly the trap a later editor would fall into.</p>

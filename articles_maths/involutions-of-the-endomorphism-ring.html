@@ -80,7 +80,7 @@
 <p>A perfect pairing is nondegenerate and reflexive, and for each $y$ the functional $x \mapsto B(Tx,y)$ is additive.</p>
 <p><strong>Theorem (the adjoint exists).</strong> For every $T \in E$ and every $y \in V$ there is a unique $T^{*}y \in V$ with</p>
 <p>$$
-B(Tx,y) = B(x,T^{*}y) \quad \text{for all } x \in V .
+\boxed{\;B(Tx,y) = B(x,T^{*}y) \quad \text{for all } x \in V\;} .
 $$</p>
 <p>The assignment $T \mapsto T^{*}$ is well defined, and it is an <strong>involution of the ring $E$</strong>: it is additive, $(ST)^{*} = T^{*}S^{*}$, $\mathrm{id}^{*} = \mathrm{id}$, and $(T^{*})^{*} = T$.</p>
 <p><strong>Proof.</strong> For fixed $y$ the map $x \mapsto B(Tx,y)$ is additive $V \to R$, hence an element of $\operatorname{Hom}(V,R)$; since $B$ is perfect there is a unique $T^{*}y$ with $B(x,T^{*}y) = B(Tx,y)$ for all $x$, which proves existence and uniqueness. Uniqueness in $y$ makes $T^{*}$ a well-defined map $V \to V$; it is additive because $B(x,T^{*}(y+y')) = B(Tx,y+y') = B(Tx,y)+B(Tx,y') = B(x,T^{*}y+T^{*}y')$ for all $x$, and the pairing is nondegenerate, so $T^{*}(y+y') = T^{*}y+T^{*}y'$. For the anti-multiplicativity, $B(x,(ST)^{*}y) = B(STx,y) = B(S(Tx),y) = B(Tx,S^{*}y) = B(x,T^{*}S^{*}y)$ for all $x$, so $(ST)^{*}y = T^{*}S^{*}y$. The unit is fixed because $B(x,y) = B(x,\mathrm{id}^{*}y)$ for all $x$ gives $\mathrm{id}^{*} = \mathrm{id}$. Finally $B(x,(T^{*})^{*}y) = B(T^{*}x,y)$ for all $x$; by reflexivity this vanishes exactly when $B(y,T^{*}x)$ vanishes, which by the defining identity equals $B(Ty,x)$, and by reflexivity again this vanishes exactly when $B(x,Ty)$ vanishes; since the pairing is nondegenerate, $(T^{*})^{*}y = Ty$ for all $y$, that is $(T^{*})^{*} = T$.</p>
@@ -88,11 +88,11 @@ $$</p>
 <h2 id="the-unitary-elements">The Unitary Elements</h2>
 <p><strong>Definition.</strong> The <strong>unitary elements</strong> of $(E,B)$ are</p>
 <p>$$
-\mathrm{U}(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}.
+\boxed{\;\mathrm{U}(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}\;}.
 $$</p>
 <p><strong>Proposition.</strong> $\mathrm{U}(V,B)$ is a subgroup of the unit group $E^\times$, and $T \in E^\times$ is unitary exactly when $T$ preserves $B$,</p>
 <p>$$
-T \in \mathrm{U}(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V .
+\boxed{\;T \in \mathrm{U}(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V\;} .
 $$</p>
 <p><strong>Proof.</strong> If $T$ is unitary then $B(Tx,Ty) = B(T^{*}Tx,y) = B(x,y)$, using the defining identity for $T^{*}$ with the pair $(Tx,y)$ replaced by $(x,Ty)$; conversely, if $T$ preserves $B$ then $B(x,T^{*}Ty) = B(Tx,Ty) = B(x,y)$ for all $x$, so $T^{*}T = \mathrm{id}$ by nondegeneracy, and the same argument on the other side gives $TT^{*} = \mathrm{id}$. The product of two unitary elements is unitary because the adjoint is anti-multiplicative, $(ST)^{*}(ST) = T^{*}S^{*}ST = T^{*}T = \mathrm{id}$, and the inverse of a unitary element is unitary because $T^{*} = T^{-1}$.</p>
 <p><strong>Corollary (the two kinds).</strong> If the pairing is symmetric, $B(y,x) = B(x,y)$, then the involution of $E$ is the <strong>orthogonal</strong> one; if it is antisymmetric, $B(y,x) = -B(x,y)$, then it is the <strong>symplectic</strong> one. With $2$ invertible the endomorphism ring is the sum of the self-adjoint and the skew-adjoint endomorphisms, of dimensions $\tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$ for a symmetric pairing on an object of finite rank $n$ in the matrix case, and exchanged for an antisymmetric one, as in <em>Matrix Rings with an Involution</em>.</p>

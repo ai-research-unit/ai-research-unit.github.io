@@ -94,7 +94,7 @@ $$</p>
 <p>Over a ring in which the relevant ranks are defined, the alternating sum of the ranks of the terms of a bounded complex computes the alternating sum of the homology.</p>
 <p><strong>Proposition.</strong> Let $C_\bullet$ be a complex of finitely generated free modules over a field $F$, nonzero in only finitely many degrees, and suppose $H_n(C_\bullet)$ is finite-dimensional for every $n$. Then</p>
 <p>$$
-\sum_n(-1)^n\dim_F C_n=\sum_n(-1)^n\dim_F H_n(C_\bullet).
+\boxed{\;\sum_n(-1)^n\dim_F C_n=\sum_n(-1)^n\dim_F H_n(C_\bullet)\;}.
 $$</p>
 <p><em>Proof.</em> The short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$ give $\dim C_n=\dim Z_n+\dim B_{n-1}$ and $\dim Z_n=\dim B_n+\dim H_n$. Substituting and summing with alternating signs telescopes, because the boundary contributions enter with opposite signs.</p>
 <p>The number $\sum_n(-1)^n\dim_FC_n$ is the <strong>Euler characteristic</strong> and the identity is its invariance under homology. The corresponding statement for modules over a ring uses the rank of a finitely generated module and holds over a domain when the homology is free of finite rank.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p>The snake lemma applied degreewise does not by itself produce a long exact sequence in homology, because the diagram of the lemma is only the first two rows of a larger diagram; the connecting map is constructed from the differentials of the three complexes together.</p>
 <p><strong>Theorem.</strong> For a short exact sequence of complexes $0\to A_\bullet\to B_\bullet\to C_\bullet\to0$ there is a long exact sequence in homology</p>
 <p>$$
-\cdots \longrightarrow H_n(A) \longrightarrow H_n(B) \longrightarrow H_n(C) \xrightarrow{\ \partial_n\ } H_{n-1}(A) \longrightarrow H_{n-1}(B) \longrightarrow \cdots,
+\boxed{\;\cdots \longrightarrow H_n(A) \longrightarrow H_n(B) \longrightarrow H_n(C) \xrightarrow{\ \partial_n\ } H_{n-1}(A) \longrightarrow H_{n-1}(B) \longrightarrow \cdots\;},
 $$</p>
 <p>natural in the short exact sequence, with $\partial_n$ the connecting morphism.</p>
 <p><em>Proof.</em> The degreewise snake lemma applied to the map of complexes, in which the rows are the short exact sequences and the vertical maps are the differentials, gives the diagram</p>
@@ -122,7 +122,7 @@ $$</p>
 <p>It satisfies $d^2=0$ because $f$ is a chain map.</p>
 <p><strong>Proposition.</strong> There is a long exact sequence</p>
 <p>$$
-\cdots\to H_n(A)\xrightarrow{H_n(f)}H_n(B)\to H_n(\operatorname{Cone}f)\xrightarrow{}H_{n-1}(A)\to\cdots,
+\boxed{\;\cdots\to H_n(A)\xrightarrow{H_n(f)}H_n(B)\to H_n(\operatorname{Cone}f)\xrightarrow{}H_{n-1}(A)\to\cdots\;},
 $$</p>
 <p>so the homology of the cone is the obstruction to $f$ being a quasi-isomorphism, where a <strong>quasi-isomorphism</strong> is a chain map inducing isomorphisms on all homology groups.</p>
 <p><em>Proof.</em> The cone fits into a short exact sequence of complexes $0\to B_\bullet\to\operatorname{Cone}(f)\to A_{\bullet-1}\to0$ by the inclusions $b\mapsto(b,0)$ and the projections $(b,a)\mapsto a$, where $A_{\bullet-1}$ denotes $A$ with degrees shifted by one. The long exact sequence of the theorem, with the identification $H_n(A_{\bullet-1})=H_{n-1}(A)$, is the displayed sequence.</p>

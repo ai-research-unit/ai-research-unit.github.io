@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> Let $(V,h)$ and $(V',h')$ be Hermitian spaces over a field $K$ with involution. An <strong>isometry</strong> is a linear isomorphism $T : V \to V'$ with $h'(Tx,Ty) = h(x,y)$ for all $x,y$; the spaces are <strong>isometric</strong> when such a $T$ exists, and the isometry class is the class of the form. The <strong>orthogonal sum</strong> of two Hermitian spaces is the direct sum $V \perp V'$ with the form $h \perp h'$ vanishing between the summands, and a subspace $W \subseteq V$ is <strong>nondegenerate</strong> when the restriction of $h$ to $W$ is nondegenerate, equivalently when $V = W \perp W^\perp$.</p>
 <p><strong>Definition.</strong> A <strong>hyperbolic plane</strong> is the two-dimensional space with the form, in a basis $(e,f)$,</p>
 <p>$$
-h(e,e) = h(f,f) = 0, \qquad h(e,f) = 1 ,
+\boxed{\;h(e,e) = h(f,f) = 0, \qquad h(e,f) = 1\;} ,
 $$</p>
 <p>written $\mathbb{H}$; a vector $x$ is <strong>isotropic</strong> when $h(x,x) = 0$ and <strong>anisotropic</strong> otherwise, and a subspace is <strong>totally isotropic</strong> when the restriction of the form to it vanishes. The <strong>Witt index</strong> of a nondegenerate form is the largest dimension of a totally isotropic subspace.</p>
 <p><strong>Proposition.</strong> A hyperbolic plane contains exactly two isotropic lines, they are the lines of $e$ and $f$, and the form pairs them; the orthogonal complement of an isotropic line in a hyperbolic plane is the other isotropic line, and a nondegenerate form is hyperbolic when it is an orthogonal sum of hyperbolic planes. Every isotropic vector of a nondegenerate space lies in a hyperbolic plane: the Witt index is the number of the planes in the decomposition of the next subsection.</p>
@@ -87,14 +87,14 @@ $$</p>
 <p><strong>Proof sketch.</strong> The theorem is proved by induction on the dimension of $W$. For a one-dimensional nondegenerate $W$ the form is determined by the value $h(x,x)$ and the extension is the Witt extension of a single vector, which the nondegeneracy provides by an orthogonal reflection; for a degenerate $W$ the induction is applied to the radical and to a complement, the isometry being split along the direct sum. The classical proof and the two lemmas are in <em>Quadratic Forms and Polarisation</em> and in the references; the statement is quoted here as the engine of the classification.</p>
 <p><strong>Theorem (Witt cancellation).</strong> Let $(V_1,h_1)$, $(V_2,h_2)$ and $(W,g)$ be nondegenerate Hermitian spaces with $V_1 \perp W$ isometric to $V_2 \perp W$; then $V_1$ is isometric to $V_2$,</p>
 <p>$$
-V_1 \perp W \ \cong\ V_2 \perp W \quad \Longrightarrow \quad V_1 \cong V_2 .
+\boxed{\;V_1 \perp W \ \cong\ V_2 \perp W \quad \Longrightarrow \quad V_1 \cong V_2\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> The isometry of the sums is an isometry between two subspaces of the common space, and the Witt extension theorem applied to the subspace $W$ in the two copies gives the extension to the whole space; the orthogonal complement of $W$ in either sum is $V_1$ or $V_2$, and the extension carries one to the other. The statement is the cancellation theorem of <em>Quadratic Forms and Polarisation</em>.</p>
 <h2 id="the-classification">The Classification</h2>
 <h3 id="the-decomposition-and-the-witt-index">The Decomposition and the Witt Index</h3>
 <p><strong>Theorem (the decomposition).</strong> Let $(V,h)$ be a nondegenerate Hermitian space of dimension $N$ over a field of characteristic not two. Then $V$ decomposes as</p>
 <p>$$
-V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0 ,
+\boxed{\;V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0\;} ,
 $$</p>
 <p>an orthogonal sum of $r$ hyperbolic planes and an <strong>anisotropic</strong> subspace $V_0$ (one containing no isotropic vector), of dimension $N - 2r$; the number $r$ is the Witt index, it is the same for every such decomposition by the Witt cancellation theorem, and the isometry class of the whole space is determined by the number $r$ and the isometry class of the anisotropic residue $V_0$.</p>
 <p><strong>Proof.</strong> If $V$ contains an isotropic vector then the proposition gives a hyperbolic plane $\mathbb{H} \subset V$, and $V = \mathbb{H} \perp \mathbb{H}^\perp$ because the plane is nondegenerate; the induction on the dimension applied to $\mathbb{H}^\perp$ gives the decomposition. The uniqueness of $r$ is the Witt cancellation: two decompositions give $r_1$ and $r_2$ planes and the residues, and cancelling the planes one by one forces the two residues to be isometric and the numbers to be equal. The statement is in <em>Quadratic Forms and Polarisation</em>.</p>

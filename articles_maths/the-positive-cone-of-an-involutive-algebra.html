@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-cone-is-a-cone">The Cone is a Cone</h3>
 <p><strong>Proposition (closure properties).</strong> The set $A_+$ is closed under addition and nonnegative scaling, contains $0$ and $1$, is closed under the involution,</p>
 <p>$$
-A_+^{*} = A_+ ,
+\boxed{\;A_+^{*} = A_+\;} ,
 $$</p>
 <p>and is closed under the <strong>congruences</strong>: for $c\in A$ and $x\in A_+$, $c^{*}xc\in A_+$.</p>
 <p><em>Proof.</em> The sum of two sums of the form $a^{*}a$ is again one; a nonnegative multiple likewise; $0$ is the empty sum and $1 = 1^{*}1$; the involution sends $a^{*}a$ to $a^{*}a$ because $(a^{*}a)^{*} = a^{*}a$, and it is additive and conjugate-linear, so it preserves the set. For the congruence, $c^{*}\bigl(\sum a_i^{*}a_i\bigr)c = \sum (a_ic)^{*}(a_ic)\in A_+$.</p>
@@ -106,7 +106,7 @@ $$</p>
 <p><em>Proof.</em> If $x\in A_+\cap(-A_+)$ then $x = \sum a_i^{*}a_i = -\sum b_j^{*}b_j$, so $x + \sum b_j^{*}b_j = \sum a_i^{*}a_i + \sum b_j^{*}b_j = 0$; by reducedness every $a_i$ and every $b_j$ vanishes, hence $x = 0$.</p>
 <p><strong>Proposition (the cone is closed under the symmetrised product).</strong> The symmetrised product</p>
 <p>$$
-\{a,b\} = \tfrac12(ab + ba)
+\boxed{\;\{a,b\} = \tfrac12(ab + ba)\;}
 $$</p>
 <p>of two elements of $A_+$ lies in $A_+$ when $A$ is a reduced involutive algebra of the $\ast$-normed kind, so that the cone is a <strong>Jordan cone</strong>; the associative product of two positive elements need not be positive.</p>
 <p><em>Proof.</em> The statement is the theorem that the positive cone of a C*-algebra is closed under the Jordan product, proved by the functional calculus: writing $a = u^{*}u$ and reducing to a square, the positivity of $\{a,b\}$ follows from the identity $\{x^{*}x,y\} = \frac12\bigl((xy^{*})^{*}(xy^{*}) + (x^{*}y^{*})^{*}(x^{*}y^{*})\bigr)$ after the standard symmetrisation over the spectral resolution of $x$. The failure for the associative product is the example of the matrix algebra, in which the product of two positive semidefinite matrices need not be Hermitian, and the symmetrised product is the correct product of the order.</p>
@@ -136,7 +136,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>positive functional</strong> on the involutive algebra is a linear functional $\varphi$ that is Hermitian, $\varphi(a^{*}) = \overline{\varphi(a)}$, and positive on the cone, $\varphi(a^{*}a)\geq0$ for every $a$; it is a <strong>state</strong> when further $\varphi(1) = 1$.</p>
 <p><strong>Proposition.</strong> A Hermitian linear functional is positive if and only if it is positive on $A_+$; the positive functionals form the <strong>dual cone</strong> of $A_+$ in the space of Hermitian functionals, and the states form its base at the order unit. For every positive $\varphi$ the <strong>Cauchy–Schwarz inequality</strong></p>
 <p>$$
-\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)
+\boxed{\;\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)\;}
 $$</p>
 <p>holds.</p>
 <p><em>Proof.</em> Positivity on the cone is equivalent to positivity on the generators $a^{*}a$ by linearity and the definition of the cone; the base statement is the order-unit normalisation of <em>Ordered Vector Spaces and the Order Unit</em>; the inequality is the Cauchy–Schwarz inequality of the positive semidefinite form $(a,b)\mapsto\varphi(b^{*}a)$, which is positive semidefinite because $\varphi((a+\lambda b)^{*}(a+\lambda b))\geq0$ for every $\lambda$.</p>

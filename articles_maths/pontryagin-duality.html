@@ -95,7 +95,7 @@ $$</p>
 <p>Equivalently, it is the topology of uniform convergence on compact subsets of $G$.</p>
 <p><strong>Theorem.</strong> For a locally compact abelian group $G$ the dual $G^\vee$ is a locally compact abelian group, and the evaluation map</p>
 <p>$$
-G \times G^\vee \longrightarrow S^1, \qquad (x, \chi) \mapsto \chi(x),
+\boxed{\;G \times G^\vee \longrightarrow S^1, \qquad (x, \chi) \mapsto \chi(x)\;},
 $$</p>
 <p>is continuous. If $G$ is compact then $G^\vee$ is discrete, and if $G$ is discrete then $G^\vee$ is compact.</p>
 <p><strong>Proof.</strong> The group operations on $G^\vee$ are continuous for the compact-open topology: multiplication is continuous because evaluation at a point is continuous and the product in $S^1$ is continuous; inversion is continuous because it is complex conjugation, which is continuous. The evaluation map on the product is continuous because the compact-open topology is exactly the topology making evaluation $G^\vee \to C(G, S^1)$ continuous with the compact-open topology on the function space, and the evaluation $G \times C(G, S^1) \to S^1$ is continuous (this is the universal property of the compact-open topology for a locally compact domain). The interchange of compactness and discreteness is proved in <em>Abelian Topological Groups</em>, §Characters and the Dual: a discrete group has only finite compact subsets, so its dual is a closed subgroup of the compact product $(S^1)^G$; a compact group has the property that the set of characters lying in a sufficiently small neighbourhood of the trivial character is trivial, so the dual is discrete. Local compactness of the dual in the general case is the topological content of the duality theorem proved below.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="statement">Statement</h3>
 <p><strong>Theorem (Pontryagin).</strong> For every locally compact abelian group $G$, the evaluation map</p>
 <p>$$
-\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x),
+\boxed{\;\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x)\;},
 $$</p>
 <p>is an isomorphism of topological groups. The contravariant functor $G \mapsto G^\vee$ is an equivalence of categories between the category of locally compact abelian groups and its opposite.</p>
 <p><strong>Remark.</strong> The statement has three parts, and it is worth separating them. The map $\iota_G$ is a homomorphism because evaluation is additive in the first variable: $\iota_G(x + y)(\chi) = \chi(x + y) = \chi(x)\chi(y) = \iota_G(x)(\chi)\,\iota_G(y)(\chi)$. It is injective because the characters separate the points of a locally compact abelian group. It is surjective, and its inverse is continuous, because of the structure theorem and the explicit duality of the standard factors. The last two statements are the substance of the theorem.</p>

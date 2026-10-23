@@ -72,7 +72,9 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article treats the <strong>modulus–unit polar decomposition</strong> of a reduced biquaternion: the writing</p>
 <p>$$
-\breve Q=\breve r\,u,\qquad \breve r\in P,\qquad u\in T^2,
+\boxed{\;
+\breve Q=\breve r\,u,\qquad \breve r\in P,\qquad u\in T^2
+\;},
 $$</p>
 <p>with $\breve r$ the <strong>modulus</strong> and $u$ the <strong>unit factor</strong>. The modulus is not a real number: it is an element of the <strong>positive cone</strong></p>
 <p>$$
@@ -201,7 +203,9 @@ $$</p>
 <p>The pair $(\breve r,u)$ is unique. This is a statement about the factorisation, not about a coordinate on the torus: two different charts of $T^2$ assign different parameters to the same unit factor.</p>
 <p><strong>Corollary (the failure set).</strong> The decomposition exists exactly on the units. It fails exactly on the zero divisors</p>
 <p>$$
-\{Q_{\blacktriangle}^2=Q_{\blacktriangledown}^2\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\},
+\boxed{\;
+\{Q_{\blacktriangle}^2=Q_{\blacktriangledown}^2\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}
+\;},
 $$</p>
 <p>the union of the two complex lines $\mathbb{C}(1+j)$ and $\mathbb{C}(1-j)$, each of real dimension two. The failure set has real codimension two, as the origin does in $\mathbb{C}$.</p>
 <p><em>Proof.</em> The construction uses $\breve r\in P$, which requires $q^2-q'^2>0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$. The vanishing of $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is the vanishing of $Q_{+}Q_{-}$, the two lines named.</p>
@@ -381,7 +385,9 @@ $$</p>
 <h3 id="the-matrix-polar-decomposition">The Matrix Polar Decomposition</h3>
 <p><strong>Theorem.</strong> For every unit $\breve Q$, the matrix $M_{\breve Q}$ has the polar decomposition</p>
 <p>$$
-M_{\breve Q}=P U,\qquad P=M_{\breve r}=(M_{\breve Q}M_{\breve Q}^{\mathsf T})^{1/2},\quad U=M_u,
+\boxed{\;
+M_{\breve Q}=P U,\qquad P=M_{\breve r}=(M_{\breve Q}M_{\breve Q}^{\mathsf T})^{1/2},\quad U=M_u
+\;},
 $$</p>
 <p>with $P$ symmetric positive definite and $U$ orthogonal. The factors are unique.</p>
 <p><em>Proof.</em> The identity $M_{\overline{\breve Q}}=M_{\breve Q}^{\mathsf T}$ gives $M_{\breve Q}M_{\breve Q}^{\mathsf T}=M_{\breve Q\overline{\breve Q}}=M_{\breve r^2}=M_{\breve r}^2$. The matrix $M_{\breve r}$ is symmetric with positive eigenvalues $\rho_+,\rho_+,\rho_-,\rho_-$, so it is the positive square root. The matrix $M_u=M_{\breve r}^{-1}M_{\breve Q}$ is orthogonal, because $M_uM_u^{\mathsf T}=M_{\breve r}^{-1}M_{\breve Q}M_{\breve Q}^{\mathsf T}M_{\breve r}^{-1}=I$. Uniqueness is the uniqueness of the positive square root and of the polar decomposition of an invertible matrix.</p>

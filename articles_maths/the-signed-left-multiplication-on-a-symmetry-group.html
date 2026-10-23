@@ -104,15 +104,15 @@ $$</p>
 <h3 id="composition">Composition</h3>
 <p><strong>Proposition.</strong> The signed and the unsigned left multiplications compose by</p>
 <p>$$
-\Lambda^{\alpha}_a \circ \Lambda^{\alpha}_b = L_{a\,\alpha(b)}, \qquad
+\boxed{\;\Lambda^{\alpha}_a \circ \Lambda^{\alpha}_b = L_{a\,\alpha(b)}, \qquad
 \Lambda^{\alpha}_a \circ L_b = \Lambda^{\alpha}_{a\,b}, \qquad
-L_a \circ \Lambda^{\alpha}_b = \Lambda^{\alpha}_{a\,\alpha(b)} .
+L_a \circ \Lambda^{\alpha}_b = \Lambda^{\alpha}_{a\,\alpha(b)}\;} .
 $$</p>
 <p>In particular the composite of two <strong>signed</strong> left multiplications is an <strong>unsigned</strong> one: the signed operators are not closed under composition, and every word in the signed and the unsigned left multiplications reduces to a single operator, signed or unsigned according to the number of signed factors modulo two.</p>
 <p><strong>Proof.</strong> For the first, $\Lambda^{\alpha}_a\bigl(\Lambda^{\alpha}_b(x)\bigr) = a\,\alpha\bigl(b\,\alpha(x)\bigr) = a\,\alpha(b)\,\alpha^2(x) = a\alpha(b)\,x = L_{a\alpha(b)}(x)$. The other two are the same computation with the middle factor even; the reduction of a word is the repeated application of the three rules.</p>
 <p><strong>Corollary (the generated group).</strong> The set
 $$
-\langle L_a, \alpha : a \in G\rangle = \{L_a : a \in G\} \cup \{\Lambda^{\alpha}_a : a \in G\}
+\boxed{\;\langle L_a, \alpha : a \in G\rangle = \{L_a : a \in G\} \cup \{\Lambda^{\alpha}_a : a \in G\}\;}
 $$
 is a group, equal to the semidirect product $G \rtimes \langle\alpha\rangle$ in which the generator of the second factor acts on $G$ by $\alpha$; the unsigned left multiplications form the normal subgroup $\{L_a\} \cong G$ of index two when $\alpha \neq \mathrm{id}$, and the signed left multiplications $\Lambda^{\alpha}_a = L_a\alpha$ are the nontrivial coset.</p>
 <p><strong>Proof.</strong> Closure and inverses are the three composition rules and the inverse computed below; the identification with the semidirect product is $\alpha L_a \alpha^{-1} = L_{\alpha(a)}$, which is the defining action, and the coset statement is $\Lambda^{\alpha}_a = L_a\alpha$.</p>
@@ -128,7 +128,7 @@ $$</p>
 <h3 id="the-fixed-elements">The Fixed Elements</h3>
 <p><strong>Proposition.</strong> The signed left multiplication fixes the following elements and no others:</p>
 <p>$$
-\Lambda^{\alpha}_a(x) = x \quad\Longleftrightarrow\quad a = x\,\alpha(x)^{-1} = \begin{cases} e & x \in G_0 \\ z & x \in G_1 \end{cases}.
+\boxed{\;\Lambda^{\alpha}_a(x) = x \quad\Longleftrightarrow\quad a = x\,\alpha(x)^{-1} = \begin{cases} e & x \in G_0 \\ z & x \in G_1 \end{cases}\;}.
 $$</p>
 <p>Hence $\Lambda^{\alpha}_a$ has a fixed point exactly when $a = e$ or $a = z$: the operator $\Lambda^{\alpha}_e = \alpha$ fixes the whole even part and inverts the sign on the odd part, the operator $\Lambda^{\alpha}_z$ fixes the whole odd part, and for every other $a$ the signed left multiplication is fixed-point-free.</p>
 <p><strong>Proof.</strong> The equation $a\alpha(x) = x$ is equivalent to $a = x\alpha(x)^{-1}$, and $\alpha(x)^{-1} = \alpha(x^{-1})$; for even $x$ this is $x x^{-1} = e$, and for odd $x$ with $\alpha(x) = zx$ it is $x(zx)^{-1} = x x^{-1}z^{-1} = z$, using $z^{-1} = z$ and the centrality of $z$. The last statements read off the two cases.</p>

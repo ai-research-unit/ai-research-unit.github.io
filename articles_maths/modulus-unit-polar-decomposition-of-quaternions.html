@@ -71,9 +71,7 @@
         <h1 id="modulusunit-polar-decomposition-of-quaternions"><strong>Modulus–Unit Polar Decomposition of Quaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article treats the <strong>modulus–unit polar decomposition</strong> of a quaternion: the writing</p>
-<p>$$
-\tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
-$$</p>
+<p>$$ \boxed{\; \tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1 \;} ,$$</p>
 <p>with $r$ the <strong>modulus</strong> and $\tilde u_{\mathrm r}$ the <strong>unit factor</strong>. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the <strong>rotor</strong>: a unit real quaternion is a rotor (<em>Conventions in Mathematics</em>, §<em>Symbols</em>), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the sandwich by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (<em>Exponential Polar Decomposition of Quaternions</em>, §<em>The Rotor Part</em>). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.</p>
 <p>The decomposition is the four-dimensional definite case of the polar decomposition of the algebras of the family. Every algebra of the family splits an invertible element into a scale and a unit factor, and the differences between the algebras lie in the unit factor: a finite set in $\mathbb{R}$, a circle in $\mathbb{C}$, a sphere in $\mathbb{H}$, a level set of an indefinite form in the split cases. The complex case is the base case because the norm is definite and the unit group is abelian. The quaternion case is the first definite case in which the unit group is non-abelian, and the first in which the unit set is neither finite nor a circle; both changes are visible in the group of units, in the matrix picture and in the absence of a second continuous factor.</p>
 <p>The plan is as follows. The two factors are defined (§<em>The Two Factors</em>), existence and uniqueness are proved (§<em>Existence and Uniqueness</em>), the group of units and the sphere are described (§<em>The Group of Units and the Sphere</em>), the two subspaces are classified (§<em>The Two Axes</em>), the matrix picture is given (§<em>The Matrix Picture</em>), examples are computed (§<em>Worked Examples</em>), and the place of the quaternion case in the family is recorded (§<em>The Other Algebras</em>).</p>
@@ -103,9 +101,7 @@ $$</p>
 \tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}} .
 $$</p>
 <p>It satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}/r^2 = 1$, so it lies on the <strong>unit sphere</strong></p>
-<p>$$
-\mathrm{Sp}(1) = \{\,\tilde u\in\mathbb{H} : \langle\tilde u\rangle_{\natural} = 1\,\} = S^3 .
-$$</p>
+<p>$$ \boxed{\; \mathrm{Sp}(1) = \{\,\tilde u\in\mathbb{H} : \langle\tilde u\rangle_{\natural} = 1\,\} = S^3 \;} .$$</p>
 <p>The sphere is a group under multiplication. If $\langle\tilde u_1\rangle_{\natural} = \langle\tilde u_2\rangle_{\natural} = 1$ then multiplicativity gives $\langle\tilde u_1\tilde u_2\rangle_{\natural}=1$, and the inverse of a unit is its conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, because $\tilde u\tilde u^{\natural}=1$. The sphere is a closed and bounded subset of $\mathbb{H}\cong\mathbb{R}^4$, hence compact, and it is connected. It is not abelian: $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. The complex unit circle is abelian, and this is the first structural difference between the two cases.</p>
 <p>The phrase <strong>unit factor</strong> names the norm-one elements. It is not the <strong>group of units</strong> $\mathbb{H}^{\times}$, which is the wider set of invertible elements; the two senses of the word <em>unit</em> are kept apart throughout, as in <em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>. In $\mathbb{H}$ every nonzero element is invertible, so $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, but the unit factor is the smaller set of norm-one elements.</p>
 <h3 id="the-count-of-the-parameters">The Count of the Parameters</h3>
@@ -130,9 +126,7 @@ $$</p>
 \Phi(\tilde q_1\tilde q_2) = \bigl(\sqrt{\langle\tilde q_1\rangle_{\natural}}\sqrt{\langle\tilde q_2\rangle_{\natural}},\ \tilde q_1\tilde q_2/(\sqrt{\langle\tilde q_1\rangle_{\natural}}\sqrt{\langle\tilde q_2\rangle_{\natural}})\bigr) = \Phi(\tilde q_1)\Phi(\tilde q_2).
 $$</p>
 <p>Hence</p>
-<p>$$
-\mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times S^3,
-$$</p>
+<p>$$ \boxed{\; \mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times S^3 \;} ,$$</p>
 <p>the product of the positive scale line and the unit sphere. The product is direct because every positive real is central: the two factors commute, and their intersection is the identity.</p>
 <h3 id="the-maximal-compact-subgroup">The Maximal Compact Subgroup</h3>
 <p><strong>Proposition.</strong> The unit sphere $S^3$ is the maximal compact subgroup of $\mathbb{H}^{\times}$.</p>

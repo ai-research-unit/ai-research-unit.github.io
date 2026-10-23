@@ -81,7 +81,7 @@ $$</p>
 <p>that is, when the even operators preserve the two parts of $M$ and the odd operators exchange them. A module with a compatible action is a <strong>graded module</strong> over the graded algebra $E$.</p>
 <p><strong>Proposition (the equivalent form).</strong> The action is compatible if and only if for every homogeneous $x \in E_{i}$ and every $m \in M$,</p>
 <p>$$
-x\,\beta(m) = (-1)^{i}\,\beta(x\,m),
+\boxed{\;x\,\beta(m) = (-1)^{i}\,\beta(x\,m)\;},
 $$</p>
 <p>equivalently $\beta(xm) = (-1)^{i}x\beta(m)$; the two grade involutions therefore satisfy $\beta\rho_{x} = (-1)^{i}\rho_{x}\beta$ on the homogeneous part $E_{i}$.</p>
 <p><strong>Proof.</strong> If $m \in M_{j}$ and $x \in E_{i}$ then $xm \in M_{i+j}$, so $\beta(xm) = (-1)^{i+j}xm = (-1)^{i}x((-1)^{j}m) = (-1)^{i}x\beta(m)$; conversely this identity for all homogeneous $m$ forces $x(M_{j}) \subseteq M_{i+j}$, since for $m \in M_{j}$ it gives $\beta(xm) = (-1)^{i+j}xm$, which says that $xm$ lies in the $(-1)^{i+j}$-eigenspace of $\beta$, namely $M_{i+j}$.</p>
@@ -92,7 +92,7 @@ $$</p>
 <p><strong>Proof.</strong> The action is associative and unital by the definition of the multiplication, and the inclusions are the parity statement of the grading; the module axioms are those of the left regular module of <em>The Left and Right Multiplication Operators on a Topological Vector Space</em>.</p>
 <p><strong>Proposition (the induced involution on the module endomorphisms).</strong> The algebra $\operatorname{End}_{E}(M)$ of continuous module endomorphisms is graded by</p>
 <p>$$
-\operatorname{End}_{E}(M)_{i} = \{f : f(M_{j}) \subseteq M_{i+j}\},
+\boxed{\;\operatorname{End}_{E}(M)_{i} = \{f : f(M_{j}) \subseteq M_{i+j}\}\;},
 $$</p>
 <p>with grade involution $\gamma(f) = \beta f \beta$, and the same holds for the algebra $\mathcal{L}(M)$ of all continuous endomorphisms of $M$.</p>
 <p><strong>Proof.</strong> Composition of endomorphisms adds parities, since $f(M_{j}) \subseteq M_{i+j}$ and $g(M_{k}) \subseteq M_{l+k}$ give $gf(M_{j}) \subseteq M_{i+l+j}$; conjugation by the involutive automorphism $\beta$ is an order-two automorphism with the two eigenspaces given by the two inclusions $f(M_{j}) \subseteq M_{j}$ and $f(M_{j}) \subseteq M_{1-j}$, so it is the grade involution.</p>

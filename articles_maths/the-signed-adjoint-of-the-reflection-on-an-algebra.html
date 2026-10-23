@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-a-reflection">The Adjoint of a Reflection</h2>
 <p><strong>Theorem.</strong> Let $u$ be a reflector, so that $\rho_u$ is an involutive automorphism. Then $\delta(u)$ is again a reflector, and</p>
 <p>$$
-\rho_u^{*_\sigma}=S_{\delta(u),\,\delta(u)^{-1}}=\rho_{\delta(u)}, \qquad \rho_u^{*}=S_{\alpha(u)^{-1},\,\alpha(u)}=\rho_{\alpha(u)} .
+\boxed{\;\rho_u^{*_\sigma}=S_{\delta(u),\,\delta(u)^{-1}}=\rho_{\delta(u)}, \qquad \rho_u^{*}=S_{\alpha(u)^{-1},\,\alpha(u)}=\rho_{\alpha(u)}\;} .
 $$</p>
 <p>The twisted adjoint of the reflection by $u$ is the reflection by $\delta(u)$, and the plain adjoint is the reflection by $\alpha(u)$; both are reflections, and the adjoint operation carries the reflection set into itself.</p>
 <p><em>Proof.</em> The twisted adjoint of a signed sandwich is $S_{a,b}^{*_\sigma}=S_{\delta(a),\delta(b)}$ by <em>The Signed Adjoint Sandwich on an Algebra</em>; with $a=u$ and $b=u^{-1}$ this is $S_{\delta(u),\delta(u^{-1})}$, and $\delta(u^{-1})=\delta(u)^{-1}$ because $\delta$ is an anti-automorphism of order two. The result is the signed conjugation by $\delta(u)$, that is $\rho_{\delta(u)}$. For the plain pairing the adjoint of a signed sandwich is $S_{\alpha(b),\alpha(a)}$, which with $a=u$ and $b=u^{-1}$ is $S_{\alpha(u)^{-1},\alpha(u)}=\rho_{\alpha(u)}$. That $\delta(u)$ is a reflector: $\delta(u)\alpha(\delta(u))=\sigma(\alpha(u))\alpha(\sigma(\alpha(u)))=\sigma(\alpha(u))\sigma(u)=\sigma(u\alpha(u))$, which is central exactly when $u\alpha(u)$ is central, the involution $\sigma$ preserving centrality and being onto; so $\rho_{\delta(u)}$ is an involutive automorphism. That $\alpha(u)$ is a reflector is the same computation with $\delta$ replaced by $\alpha$: $\alpha(u)\alpha(\alpha(u))=\alpha(u)u=u\alpha(u)$, central.</p>
@@ -93,7 +93,7 @@ $$</p>
 <h2 id="self-adjointness">Self-Adjointness</h2>
 <p><strong>Theorem.</strong> A reflection $\rho_u$ is self-adjoint for the twisted pairing exactly when</p>
 <p>$$
-u^{-1}\delta(u) \in Z(A),
+\boxed{\;u^{-1}\delta(u) \in Z(A)\;},
 $$</p>
 <p>and self-adjoint for the plain pairing exactly when $u^{-1}\alpha(u) \in Z(A)$. Equivalently, $\rho_u^{*_\sigma}=\rho_u$ exactly when $\delta(u)=\lambda u$ for some central $\lambda \in Z(A)$.</p>
 <p><em>Proof.</em> Two signed conjugations by units $u$ and $v$ agree as operators exactly when $u^{-1}v$ is central: $\rho_v=\rho_u$ is $v\alpha(x)v^{-1}=u\alpha(x)u^{-1}$ for all $x$, that is $u^{-1}v\alpha(x)=\alpha(x)u^{-1}v$ for all $x$, and since $\alpha$ is onto this is the centrality of $u^{-1}v$. Applying this to the theorem gives the criterion with $v=\delta(u)$, respectively $v=\alpha(u)$; the last form is $\delta(u)=u\lambda$ with $\lambda=u^{-1}\delta(u)$ central.</p>
@@ -121,7 +121,7 @@ $$</p>
 $$</p>
 <p>is a unital subalgebra of $A$, on which $\rho_u$ acts as the identity, and it contains the central elements fixed by the grade involution. The reflection preserves the trace and the plain pairing of the category,</p>
 <p>$$
-\tau(\rho_u(x))=\tau(x), \qquad \langle \rho_u(x),\rho_u(y)\rangle=\langle x,y\rangle ,
+\boxed{\;\tau(\rho_u(x))=\tau(x), \qquad \langle \rho_u(x),\rho_u(y)\rangle=\langle x,y\rangle\;} ,
 $$</p>
 <p>so a reflection is an automorphism of the algebra that is also an automorphism of its pairing.</p>
 <p><em>Proof.</em> The reflection is a signed conjugation by the unit $u$, hence an automorphism, so its fixed set is a subalgebra; the unit is fixed because $\rho_u(1)=u\alpha(1)u^{-1}=uu^{-1}=1$, and a central $z$ with $\alpha(z)=z$ satisfies $u\alpha(z)=uz=zu$. For the trace, $\tau(u\alpha(x)u^{-1})=\tau(\alpha(x)u^{-1}u)=\tau(\alpha(x))=\tau(x)$ by the cyclic property and the invariance of $\tau$ under $\alpha$; then $\langle\rho_u(x),\rho_u(y)\rangle=\tau(u\alpha(x)u^{-1}u\alpha(y)u^{-1})=\tau(u\alpha(xy)u^{-1})=\tau(\alpha(xy))=\tau(xy)$, using the multiplicativity of $\alpha$ and the trace computation again.</p>

@@ -85,7 +85,9 @@ $$</p>
 <p>The rank counts the nonzero <strong>diagonal tubes</strong>, not the nonzero entries and not the nonzero frontal slices. It is at most $w$. The tensor is zero if and only if its tubal rank is zero.</p>
 <p><strong>Theorem (the rank is the largest rank of the transform slices).</strong> For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$,</p>
 <p>$$
-\operatorname{rank}_{\mathrm t}(A)=\max_{1\le k\le n_3}\operatorname{rank}\bigl(\widehat A^{(k)}\bigr),
+\boxed{\;
+\operatorname{rank}_{\mathrm t}(A)=\max_{1\le k\le n_3}\operatorname{rank}\bigl(\widehat A^{(k)}\bigr)
+\;},
 $$</p>
 <p>where $\operatorname{rank}(\widehat A^{(k)})$ is the rank of the matrix over $\mathbb{B}_{\mathrm{r}}$, the larger of the two complex ranks of its idempotent coordinates.</p>
 <p><em>Proof.</em> The tube $S(i,i,:)$ is zero if and only if all of its Fourier coefficients are zero. Its $k$-th Fourier coefficient is the $i$-th diagonal entry of the matrix SVD of $\widehat A^{(k)}$, a pair of singular values of the two complex coordinates; take the singular values in each coordinate ordered decreasingly, so that the nonzero values form an initial segment. Hence the largest $i$ for which some coefficient is nonzero is the largest rank among the slices $\widehat A^{(k)}$, and the number of nonzero tubes is that largest index.</p>
@@ -107,9 +109,11 @@ $$</p>
 <h2 id="the-best-rank-math55-approximation">The Best Rank-$k$ Approximation</h2>
 <p><strong>Theorem (Eckart-Young for the tubal rank).</strong> For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ and every $1\le k\le w$,</p>
 <p>$$
+\boxed{\;
 \|A-A_k\|_{\mathrm F}
 =\min_{\operatorname{rank}_{\mathrm t}(B)\le k}\|A-B\|_{\mathrm F}
-=\Bigl(\sum_{i=k+1}^{w}\|S(i,i,:)\|_{\mathrm F}^2\Bigr)^{1/2}.
+=\Bigl(\sum_{i=k+1}^{w}\|S(i,i,:)\|_{\mathrm F}^2\Bigr)^{1/2}
+\;}.
 $$</p>
 <p>The minimum is attained at $A_k$; it is not unique when singular values coincide.</p>
 <p><em>Proof.</em> By the norm identity of <em>The Singular Value Decomposition of a Reduced Biquaternion Tensor</em>,</p>

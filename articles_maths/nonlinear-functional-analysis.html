@@ -107,7 +107,7 @@ $$</p>
 <h3 id="implicit-functions-and-level-sets">Implicit Functions and Level Sets</h3>
 <p><strong>Theorem (implicit function theorem).</strong> Let $X,Y,Z$ be Banach spaces, let $\Omega \subseteq X\times Y$ be open, and let $F:\Omega\to Z$ be of class $C^k$ with $F(x_0,y_0)=0$. If the partial derivative $\partial/\partial y\,F(x_0,y_0) \in B(Y,Z)$ is invertible, then there are neighbourhoods $\Omega$ of $x_0$ and $W$ of $y_0$ and a $C^k$ map $\varphi:\Omega\to W$ with $\varphi(x_0)=y_0$ and</p>
 <p>$$
-F(x,y)=0 \text{ in } \Omega\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial/\partial y\,F(x,\varphi(x))\bigr)^{-1}\partial/\partial x\,F(x,\varphi(x)).
+\boxed{\;F(x,y)=0 \text{ in } \Omega\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial/\partial y\,F(x,\varphi(x))\bigr)^{-1}\partial/\partial x\,F(x,\varphi(x))\;}.
 $$</p>
 <p><em>Proof.</em> Apply the inverse function theorem to $(x,y)\mapsto(x,F(x,y))$, whose derivative at $(x_0,y_0)$ is the invertible operator with matrix $\begin{pmatrix}I&0\\\partial/\partial x\,F&\partial/\partial y\,F\end{pmatrix}$.</p>
 <p><strong>Theorem (constant rank and local surjectivity).</strong> Let $f:D\to Y$ be $C^1$, $x_0 \in D$, and suppose $f'(x_0)$ is surjective with a complemented kernel (always the case when $X,Y$ are Hilbert spaces, or when $f'(x_0)$ is Fredholm). Then there are neighbourhoods of $x_0$ and of $f(x_0)$ and a diffeomorphism under which $f$ becomes a linear projection; in particular $f$ is locally surjective at $x_0$ and there is a constant $C$ with, for $y$ near $f(x_0)$, a solution $x$ of $f(x)=y$ satisfying</p>
@@ -148,7 +148,7 @@ $$</p>
 <h3 id="ekelands-variational-principle">Ekeland's Variational Principle</h3>
 <p><strong>Theorem (Ekeland).</strong> Let $(X,d)$ be a complete metric space and let $f:X\to\mathbb{R}\cup\{+\infty\}$ be proper, lower semicontinuous and bounded below. For every $\epsilon>0$ there is $x_\epsilon \in X$ with</p>
 <p>$$
-f(x_\epsilon)\le\inf_Xf+\epsilon, \qquad f(x_\epsilon)\le f(x)+\epsilon\,d(x,x_\epsilon) \quad \text{for all } x \in X .
+\boxed{\;f(x_\epsilon)\le\inf_Xf+\epsilon, \qquad f(x_\epsilon)\le f(x)+\epsilon\,d(x,x_\epsilon) \quad \text{for all } x \in X\;} .
 $$</p>
 <p>Equivalently, $x_\epsilon$ is a strict minimiser of the perturbed functional $x\mapsto f(x)+\epsilon\,d(x,x_\epsilon)$.</p>
 <p><em>Proof (sketch).</em> Choose $x_0$ with $f(x_0)\le\inf f+\epsilon$ and order the space by $x\preceq y \iff f(x)+\epsilon\,d(x,y)\le f(y)$. Having chosen $x_n$, put $S_n=\{x:x\preceq x_n\}$ and choose $x_{n+1} \in S_n$ with $f(x_{n+1})\le\inf_{S_n}f+2^{-(n+1)}\epsilon$. Then $\epsilon\,d(x_n,x_{n+1})\le f(x_n)-f(x_{n+1})$, so</p>
@@ -197,7 +197,7 @@ $$</p>
 <p><em>Proof (sketch).</em> If $c$ were not critical, the deformation lemma applied with $\eta$ would carry every $S$ with $\sup_SF\le c+\epsilon$ into $\{F\le c-\epsilon\}$, contradicting the definition of $c$ as the infimum of the maxima.</p>
 <p><strong>Theorem (mountain pass).</strong> Let $X$ be a Banach space, $F \in C^1(X,\mathbb{R})$ with $F(0)=0$, and suppose there are $r>0$ and $\rho>0$ with</p>
 <p>$$
-F(u)\ge\rho \text{ for } \|u\|=r, \qquad \text{and there is } v \text{ with } \|v\|>r \text{ and } F(v)<\rho .
+\boxed{\;F(u)\ge\rho \text{ for } \|u\|=r, \qquad \text{and there is } v \text{ with } \|v\|>r \text{ and } F(v)<\rho\;} .
 $$</p>
 <p>Let $\Gamma=\{\gamma \in C([0,1],X):\gamma(0)=0,\ \gamma(1)=v\}$ and</p>
 <p>$$

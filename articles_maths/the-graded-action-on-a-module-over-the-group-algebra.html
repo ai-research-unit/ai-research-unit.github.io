@@ -85,7 +85,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>graded action</strong> of the graded algebra $\mathcal{A}$ on a graded module $M$ is a bounded left action that is homogeneous, $\mathcal{A}^i\cdot M^j\subseteq M^{\overline{i+j}}$. A <strong>grading involution</strong> of $M$ is a bounded linear involution $\varepsilon$ with $\varepsilon|_{M^+} = \mathrm{id}$ and $\varepsilon|_{M^-} = -\mathrm{id}$, which exists exactly when the two summands are closed.</p>
 <p><strong>Theorem (the two descriptions of homogeneity).</strong> A bounded module action of the graded group algebra $\mathcal{A}$ on $M = M^+\oplus M^-$ is homogeneous if and only if</p>
 <p>$$
-\varepsilon\,(a\cdot \varepsilon\,m) = \alpha(a)\cdot m \qquad \text{for all } a\in\mathcal{A},\ m\in M ,
+\boxed{\;\varepsilon\,(a\cdot \varepsilon\,m) = \alpha(a)\cdot m \qquad \text{for all } a\in\mathcal{A},\ m\in M\;} ,
 $$</p>
 <p>equivalently $\varepsilon\,(a\cdot)\,\varepsilon = \alpha(a)\cdot$ on $M$ for every $a$. When this holds, the assignment</p>
 <p>$$
@@ -95,14 +95,14 @@ $$</p>
 <p><strong>Proof.</strong> Suppose the action is homogeneous. For $a = a_+ + a_-$ with $a_\pm\in\mathcal{A}^\pm$ and $m\in M^j$, homogeneity gives $a_+\cdot m\in M^j$ and $a_-\cdot m\in M^{\overline{j+1}}$, so $\varepsilon(a\cdot m) = (-1)^j a_+\cdot m + (-1)^{j+1}a_-\cdot m = (-1)^j(a_+ - a_-)\cdot m$; hence $\varepsilon(a\cdot\varepsilon m) = (-1)^j\varepsilon(a\cdot m) = (a_+ - a_-)\cdot m = \mathrm{A}a\cdot m = \alpha(a)\cdot m$. Conversely, if $\varepsilon(a\cdot)\varepsilon = \alpha(a)\cdot$ for all $a$, then for homogeneous $a$ of parity $i$ and $m\in M^j$ the identity $\varepsilon(a\cdot)\varepsilon = (-1)^i(a\cdot)$ read on $m$ gives $(-1)^j\varepsilon(a\cdot m) = (-1)^i a\cdot m$, that is $\varepsilon(a\cdot m) = (-1)^{i+j}a\cdot m$, so $a\cdot m\in M^{\overline{i+j}}$. The twisted assignment is a module action because it is $\varepsilon$-conjugate to the homogeneous one: $\varepsilon(a\cdot_\alpha(b\cdot_\alpha m)) = a\cdot\varepsilon(b\cdot_\alpha m) = (a*b)\cdot\varepsilon m$, hence $a\cdot_\alpha(b\cdot_\alpha m) = (a*b)\cdot_\alpha m$; it is bounded with the same constant as the given action.</p>
 <p><strong>Corollary (the sign rule).</strong> The grading involution interchanges the two actions,</p>
 <p>$$
-\varepsilon\,(a\cdot_\alpha m) = a\cdot \varepsilon\,m, \qquad \varepsilon\,(a\cdot m) = a\cdot_\alpha \varepsilon\,m ,
+\boxed{\;\varepsilon\,(a\cdot_\alpha m) = a\cdot \varepsilon\,m, \qquad \varepsilon\,(a\cdot m) = a\cdot_\alpha \varepsilon\,m\;} ,
 $$</p>
 <p>so the twisted action is the given action transported by $\varepsilon$; in particular the two actions have the same operator norms and the same invariant subspaces under $\varepsilon$.</p>
 <p><strong>Proof.</strong> The first identity is $\varepsilon\varepsilon(a\cdot\varepsilon m) = a\cdot\varepsilon m$; the second is the first with $a$ replaced by $\alpha(a)$ and $\varepsilon^2 = \mathrm{id}$.</p>
 <h2 id="the-twisted-action">The Twisted Action</h2>
 <p><strong>Theorem (when the two actions agree).</strong> The homogeneous action and its $\alpha$-twist coincide, $a\cdot_\alpha m = a\cdot m$ for all $a, m$, if and only if the odd part of the algebra acts trivially,</p>
 <p>$$
-\mathcal{A}^-\cdot M = 0 ,
+\boxed{\;\mathcal{A}^-\cdot M = 0\;} ,
 $$</p>
 <p>and then the action factors through the even quotient $\mathcal{A}/\mathcal{A}^-$. In particular, if $\alpha = \mathrm{id}$ the two actions are equal for every module.</p>
 <p><strong>Proof.</strong> For $a = a_+ + a_-$, $a\cdot m - a\cdot_\alpha m = a\cdot m - \alpha(a)\cdot m = 2\,a_-\cdot m$, because $\alpha(a) = a_+ - a_-$; the difference vanishes for all $a, m$ exactly when $\mathcal{A}^-\cdot M = 0$. The action then descends to the quotient by $\mathcal{A}^-$, which is the even part up to the identification. The case $\alpha = \mathrm{id}$ has $\mathcal{A}^- = 0$.</p>

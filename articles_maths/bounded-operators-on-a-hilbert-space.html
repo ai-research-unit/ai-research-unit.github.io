@@ -87,13 +87,13 @@ $$</p>
 <p>and the map $T\mapsto T^*$ is the <strong>involution</strong> of $B(H)$.</p>
 <p><strong>Proposition (calculus of the adjoint).</strong> The involution is conjugate-linear, involutive and reversing: for $S,T\in B(H)$ and $\lambda\in\mathbb{K}$,</p>
 <p>$$
-(S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda T^*,\qquad (ST)^*=T^*S^*,\qquad T^{**}=T .
+\boxed{\;(S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda T^*,\qquad (ST)^*=T^*S^*,\qquad T^{**}=T\;} .
 $$</p>
 <p>It is isometric, $\|T^*\|=\|T\|$.</p>
 <p><em>Proof.</em> These are the identities of <em>Banach and Hilbert Spaces</em>, obtained by uniqueness in the defining relation and the Riesz representation theorem; isometry is $\|T^*\|=\|T\|$ there.</p>
 <p><strong>Theorem (the C*-identity).</strong> For every $T\in B(H)$,</p>
 <p>$$
-\|T^*T\|=\|T\|^2 .
+\boxed{\;\|T^*T\|=\|T\|^2\;} .
 $$</p>
 <p>Hence $B(H)$ is a $C^*$-algebra: a Banach algebra with an isometric involution satisfying the $C^*$-identity.</p>
 <p><em>Proof.</em> $\|T^*T\|\le\|T^*\|\|T\|=\|T\|^2$, and for $\|x\|\le1$ one has $\|Tx\|^2=\langle Tx,Tx\rangle=\langle T^*Tx,x\rangle\le\|T^*Tx\|\le\|T^*T\|$, so $\|T\|^2\le\|T^*T\|$.</p>
@@ -114,7 +114,7 @@ $$</p>
 <p><em>Proof.</em> The seminorms define the topology by definition; the metrisability is the countability of the dense set over which the coefficients are tested together with the bound on $\|T\|$.</p>
 <p><strong>Proposition (comparison of the topologies).</strong> Every norm-convergent net converges strongly, and every strongly convergent net converges weakly:</p>
 <p>$$
-\text{norm}\ \Longrightarrow\ \text{SOT}\ \Longrightarrow\ \text{WOT},
+\boxed{\;\text{norm}\ \Longrightarrow\ \text{SOT}\ \Longrightarrow\ \text{WOT}\;},
 $$</p>
 <p>and both implications are strict in infinite dimension; on the unit ball of $B(H)$ the WOT and the SOT have the same closed convex sets, so a WOT-closed convex set is SOT-closed and conversely.</p>
 <p><em>Proof.</em> Norm convergence gives $\|T_\alpha x-Tx\|\le\|T_\alpha-T\|\|x\|$, whence SOT; SOT gives $|\langle(T_\alpha-T)x,y\rangle|\le\|(T_\alpha-T)x\|\|y\|$, whence WOT. The strictness is the shift: $S^{*n}\to0$ weakly but not strongly, while no nonzero SOT-null net converges in norm. The equality of the closed convex sets is Mazur's standard separation argument.</p>

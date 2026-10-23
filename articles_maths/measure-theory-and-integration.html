@@ -160,7 +160,7 @@ $$</p>
 <h3 id="the-convergence-theorems">The Convergence Theorems</h3>
 <p><strong>Theorem (monotone convergence).</strong> Let $0 \leq f_1 \leq f_2 \leq \cdots$ be measurable and $f = \sup_n f_n$. Then</p>
 <p>$$
-\int_X f \, d\mu = \lim_{n \to \infty} \int_X f_n \, d\mu,
+\boxed{\;\int_X f \, d\mu = \lim_{n \to \infty} \int_X f_n \, d\mu\;},
 $$</p>
 <p>the common value being finite or $+\infty$.</p>
 <p><strong>Proof sketch.</strong> The inequality $\geq$ is monotonicity. For $\leq$, let $s$ be simple with $0 \leq s \leq f$ and fix $c \in (0,1)$; the measurable sets $E_n = \{f_n \geq c\,s\}$ increase to $X$, so by continuity from below $\int c s \mathbf{1}_{E_n} \to \int c s$, and $\int f_n \geq \int c s \mathbf{1}_{E_n}$; let $c \uparrow 1$.</p>
@@ -171,7 +171,7 @@ $$</p>
 <p><strong>Proof.</strong> Apply monotone convergence to the increasing sequence $g_n = \inf_{k \geq n} f_k$, whose integral is at most $\int f_k$ for every $k \geq n$, hence at most the liminf.</p>
 <p><strong>Theorem (dominated convergence).</strong> Let $f_n, f$ be measurable with $f_n \to f$ a.e. Suppose there is an integrable $g$ with $|f_n| \leq g$ a.e. for all $n$. Then $f$ is integrable and</p>
 <p>$$
-\lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu, \qquad \lim_{n \to \infty} \int_X |f_n - f| \, d\mu = 0.
+\boxed{\;\lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu, \qquad \lim_{n \to \infty} \int_X |f_n - f| \, d\mu = 0\;}.
 $$</p>
 <p><strong>Proof.</strong> Apply Fatou to $g + f_n$ and to $g - f_n$ to get $\int f \leq \liminf \int f_n$ and $\int f \geq \limsup \int f_n$; hence $\int f_n \to \int f$. Applying the same conclusion to $|f_n - f|$, bounded by $2g$, gives the second statement.</p>
 <p><strong>Theorem (linearity).</strong> If $f, g$ are integrable and $\alpha, \beta \in \mathbb{R}$ (or $\mathbb{C}$), then $\alpha f + \beta g$ is integrable and $\int (\alpha f + \beta g) = \alpha \int f + \beta \int g$.</p>
@@ -219,7 +219,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $\mu, \nu$ be measures (or a measure and a signed measure) on $(X, \mathcal{A})$. Then $\nu$ is <strong>absolutely continuous</strong> with respect to $\mu$, written $\nu \ll \mu$, if $\mu(A) = 0 \Rightarrow \nu(A) = 0$; and $\nu$ and $\mu$ are <strong>mutually singular</strong>, written $\nu \perp \mu$, if there is a measurable $S$ with $\mu(S) = 0$ and $\nu(X \setminus S) = 0$.</p>
 <p><strong>Theorem (Radon–Nikodym).</strong> Let $\mu$ be $\sigma$-finite and $\nu$ a $\sigma$-finite signed measure with $\nu \ll \mu$. Then there is a measurable $h$, unique up to equality $\mu$-a.e., with</p>
 <p>$$
-\nu(A) = \int_A h \, d\mu \qquad (A \in \mathcal{A}).
+\boxed{\;\nu(A) = \int_A h \, d\mu \qquad (A \in \mathcal{A})\;}.
 $$</p>
 <p>The function $h$ is the <strong>Radon–Nikodym derivative</strong>, written $h = d\nu/d\mu$; it is integrable exactly when $\nu$ is finite.</p>
 <p><strong>Proof sketch.</strong> Assume $\mu, \nu$ finite and $\nu$ nonnegative, and put $\lambda = \mu + \nu$. Since $\nu \leq \lambda$, the functional $f \mapsto \int f \, d\nu$ is bounded on $L^2(\lambda)$ with norm at most $\lambda(X)^{1/2}$, so by the Riesz representation theorem there is $g \in L^2(\lambda)$ with $\int f \, d\nu = \int f g \, d\lambda$ for every $f \in L^2(\lambda)$. Testing on indicators, which lie in $L^2(\lambda)$ because $\lambda$ is finite, gives $\nu = g \lambda$ and hence $\mu = \lambda - \nu = (1 - g)\lambda$; since $\nu \geq 0$ and $\nu \leq \lambda$ one has $0 \leq g \leq 1$ $\lambda$-a.e., and $\mu(\{g = 1\}) = \int_{\{g=1\}} (1 - g) \, d\lambda = 0$. On $\{g < 1\}$ the two identities combine into $\nu(A) = \int_A \frac{g}{1-g} \, d\mu$, and the hypothesis $\nu \ll \mu$ makes the exceptional set $\{g = 1\}$, being $\mu$-null, also $\nu$-null; so $h = g/(1-g)$ on $\{g < 1\}$ and $h$ arbitrary on $\{g = 1\}$ has $\nu(A) = \int_A h \, d\mu$. Uniqueness is immediate, and the $\sigma$-finite case follows by exhausting $X$ by sets of finite measure.</p>

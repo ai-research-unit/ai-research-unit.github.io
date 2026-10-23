@@ -85,13 +85,13 @@ and in a <strong>unitary frame</strong> — a complex basis $e_1,\dots,e_N$ with
 <p><strong>Definition.</strong> A <strong>Hermitian form</strong> on $V$ is a map $h : V\times V \to \mathbb{C}$, linear in the first argument and conjugate-linear in the second, with $h(y,x) = \overline{h(x,y)}$; its <strong>Gram matrix</strong> in a basis $e_1,\dots,e_N$ is $H_{ij} = h(e_i,e_j)$, a Hermitian matrix, $H^{\dagger} = H$. The form is <strong>positive definite</strong> when $\mathfrak{Q}(x) = h(x,x) > 0$ for $x\neq0$, <strong>negative definite</strong> when $\mathfrak{Q}(x)<0$, and <strong>indefinite</strong> otherwise.</p>
 <p><strong>Proposition (polarisation).</strong> A Hermitian form is determined by its quadratic function $\mathfrak{Q}(x) = h(x,x)$, through
 $$
-h(x, y) = \tfrac14 \sum_{k=0}^{3} i^{k}\, \mathfrak{Q}(y + i^{k}x) ,
+\boxed{\;h(x, y) = \tfrac14 \sum_{k=0}^{3} i^{k}\, \mathfrak{Q}(y + i^{k}x)\;} ,
 $$
 and $q$ takes real values; conversely a real-valued quadratic function satisfying this polarisation is a Hermitian form.</p>
 <p><strong>Proof.</strong> Expand $\mathfrak{Q}(y+i^kx) = h(y,y) + i^{k}h(y,x) + i^{-k}h(x,y) + h(x,x)$ using the sesquilinearity and the four values $i^k = 1, i, -1, -i$. Weighting by $i^k$ and summing, the terms $h(x,x)$ and $h(y,y)$ contribute $\sum_k i^k = 0$, the cross term $h(y,x)$ contributes $\sum_k i^{2k} = 0$, and the remaining term contributes $\sum_k i^{k}i^{-k} = 4$, leaving $4h(x,y)$. This is <em>Sesquilinear Forms and the Lax–Milgram Theorem</em> and <em>Quadratic Forms and Polarisation</em>.</p>
 <p><strong>Theorem (Sylvester normal form).</strong> Every Hermitian form on $V$ is equivalent, under a change of basis in $GL(V)$, to the normal form
 $$
-h(z, w) = \sum_{i=1}^{n} z_i\bar w_i - \sum_{j=n+1}^{N} z_j\bar w_j
+\boxed{\;h(z, w) = \sum_{i=1}^{n} z_i\bar w_i - \sum_{j=n+1}^{N} z_j\bar w_j\;}
 $$
 for a unique pair $(n,m)$ with $n+m=N$; the pair is the <strong>signature</strong> of the form, the number $n$ is its <strong>index of positivity</strong> and $m$ its <strong>index of negativity</strong>, and the normal form is obtained by the Gram–Schmidt process applied to the form.</p>
 <p><strong>Proof.</strong> The diagonalisation of the Hermitian matrix $H$ by a unitary change of basis gives real eigenvalues; scaling the basis vectors by the positive square roots of the absolute values brings each eigenvalue to $\pm1$, giving the normal form; the uniqueness of the number of positive signs is Sylvester's law of inertia, proved by the maximality of the dimension of a subspace on which the form is positive definite. The diagonalisation of a Hermitian matrix is <em>Self-Adjoint Operators and the Spectral Theorem</em>, and the inertia is <em>Quadratic Forms and Polarisation</em>.</p>
@@ -101,7 +101,7 @@ for a unique pair $(n,m)$ with $n+m=N$; the pair is the <strong>signature</stron
 <p><strong>Definition.</strong> A <strong>unitary frame</strong> of $(V, h)$ is a complex basis $e_1,\dots,e_N$ with $h(e_i,e_j) = \delta_{ij}$; in a unitary frame the Gram matrix of $h$ is the identity, and a <strong>unitary</strong> operator is one preserving $h$, $h(gx, gy) = h(x,y)$.</p>
 <p><strong>Proposition (the unitary group).</strong> The unitary operators of $(V,h)$ form a group $\mathrm{U}(h)$, and in a unitary frame the group is
 $$
-\mathrm{U}(h) \cong \mathrm{U}(N) = \{ A \in GL(N, \mathbb{C}) : A^{\dagger}A = I \} ,
+\boxed{\;\mathrm{U}(h) \cong \mathrm{U}(N) = \{ A \in GL(N, \mathbb{C}) : A^{\dagger}A = I \}\;} ,
 $$
 the classical <strong>unitary group</strong>; the <strong>special unitary group</strong> $SU(N)$ is the subgroup of the unitaries with $\det A = 1$, and every unitary has $|\det A| = 1$. For the indefinite form of signature $(n,m)$ in a normal frame the group is
 $$

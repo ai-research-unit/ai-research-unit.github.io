@@ -97,7 +97,7 @@ $$</p>
 <p><strong>Definition.</strong> In an additive category, a <strong>kernel</strong> of $f:A\to B$ is a morphism $k:K\to A$ with $fk=0$ that is universal among such morphisms: every $g$ with $fg=0$ factors uniquely through $k$. A <strong>cokernel</strong> is the dual notion, a morphism $c:B\to C$ with $cf=0$ universal among such morphisms. The <strong>image</strong> of $f$ is the kernel of its cokernel, and the <strong>coimage</strong> is the cokernel of its kernel; both carry canonical maps into and out of $B$.</p>
 <p><strong>Definition.</strong> An additive category $\mathcal{A}$ is <strong>abelian</strong> if every morphism has a kernel and a cokernel, and for every $f:A\to B$ the canonical map</p>
 <p>$$
-\operatorname{coim}f \longrightarrow \operatorname{im}f
+\boxed{\;\operatorname{coim}f \longrightarrow \operatorname{im}f\;}
 $$</p>
 <p>is an isomorphism, where $\operatorname{coim}f=\operatorname{coker}(\ker f\to A)$ and $\operatorname{im}f=\ker(B\to\operatorname{coker}f)$.</p>
 <p>The condition is exactly the categorical form of the first isomorphism theorem, and it is what makes exactness statable: a sequence is exact at a term when the image of the incoming morphism equals the kernel of the outgoing one as subobjects of that term.</p>
@@ -120,7 +120,7 @@ A\to B\to C\to 0, \qquad 0\to A'\to B'\to C',
 $$</p>
 <p>and maps $a:A\to A'$, $b:B\to B'$, $c:C\to C'$ commuting with the rows, there is an exact sequence</p>
 <p>$$
-\ker a\to\ker b\to\ker c\xrightarrow{\ \partial\ }\operatorname{coker}a\to\operatorname{coker}b\to\operatorname{coker}c,
+\boxed{\;\ker a\to\ker b\to\ker c\xrightarrow{\ \partial\ }\operatorname{coker}a\to\operatorname{coker}b\to\operatorname{coker}c\;},
 $$</p>
 <p>and the connecting morphism $\partial$ is natural in the diagram.</p>
 <p><em>Proof.</em> The construction of $\partial$ in the category of modules used elements; in an abelian category it is performed with the epi–mono factorisation instead. The map $\ker c\to C$ is a monomorphism, and composing with the epimorphism $B\to C$ and forming a pullback produces the object $B\times_C\ker c$; the composite into $B'$ lands in the image of $A'$, and the comparison with the kernel gives $\partial$. The verification of exactness is by the universal properties, with no elements used; the details are the standard argument of Mitchell's theory of the embedding into module categories, and reduce to the module case after applying the Freyd–Mitchell theorem below.</p>

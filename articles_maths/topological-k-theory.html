@@ -123,7 +123,7 @@ $$</p>
 <h3 id="swans-theorem-and-the-bridge-to-algebraic-k-theory">Swan's Theorem and the Bridge to Algebraic K-Theory</h3>
 <p><strong>Theorem (Swan).</strong> Let $X$ be a compact Hausdorff space and let $C(X)$ be the ring of continuous complex functions. The functor $E\mapsto\Gamma(X,E)$ is an equivalence between the category of vector bundles over $X$ and the category of finitely generated projective $C(X)$-modules, and it induces an isomorphism</p>
 <p>$$
-K^0(X) \;\cong\; K_0\bigl(C(X)\bigr) ,
+\boxed{\;K^0(X) \;\cong\; K_0\bigl(C(X)\bigr)\;} ,
 $$</p>
 <p>where $K_0$ of a ring is the Grothendieck group of its finitely generated projective modules of <em>K-Theory of Rings</em>.</p>
 <p><strong>Proof.</strong> The sections of a bundle form a finitely generated projective $C(X)$-module, the bundle being recovered from the module as the image of an idempotent matrix over $C(X)$; conversely, every finitely generated projective $C(X)$-module is a direct summand of a free module $C(X)^k$ and is the module of sections of the image bundle of the corresponding idempotent. The two constructions are inverse to within natural isomorphism. This is Swan's theorem; it is quoted as standard.</p>
@@ -154,7 +154,7 @@ $$</p>
 <h3 id="bott-periodicity">Bott Periodicity</h3>
 <p><strong>Theorem (Bott periodicity; standard).</strong> Let $X$ be a based compact space. There is a natural isomorphism</p>
 <p>$$
-\beta : K^{0}_{\mathrm{red}}(X) \;\longrightarrow\; K^{0}_{\mathrm{red}}(S^2X) , \qquad K^{0}_{\mathrm{red}}(S^2X)\cong K^{0}_{\mathrm{red}}(X),
+\boxed{\;\beta : K^{0}_{\mathrm{red}}(X) \;\longrightarrow\; K^{0}_{\mathrm{red}}(S^2X) , \qquad K^{0}_{\mathrm{red}}(S^2X)\cong K^{0}_{\mathrm{red}}(X)\;},
 $$</p>
 <p>and consequently the groups $K^{-n}$ are periodic of period two, $K^{-n-2}(X)\cong K^{-n}(X)$ for all $n \geq 0$. The <strong>Bott class</strong> is the generator</p>
 <p>$$
@@ -188,7 +188,7 @@ $$</p>
 <p><strong>Definition.</strong> For a compact Hausdorff pair $(X,Y)$ with $Y$ closed in $X$, the <strong>relative group</strong> is $K^0(X,Y) = K^{0}_{\mathrm{red}}(X/Y)$ with the image of $Y$ collapsed to the base point, and $K^{-n}(X,Y) = K^{0}_{\mathrm{red}}(S^n(X/Y))$; for a compact space $X$ one has $K^{0}_{\mathrm{red}}(X_+)\cong K^0(X)$, the unreduced group being the reduced group of $X$ with a disjoint base point.</p>
 <p><strong>Theorem (six-term exact sequence).</strong> For a compact Hausdorff pair $(X,Y)$ with $Y$ closed, there is a six-term exact sequence</p>
 <p>$$
-K^0(X,Y) \longrightarrow K^0(X) \longrightarrow K^0(Y) \xrightarrow{\ \partial\ } K^1(X,Y) \longrightarrow K^1(X) \longrightarrow K^1(Y) ,
+\boxed{\;K^0(X,Y) \longrightarrow K^0(X) \longrightarrow K^0(Y) \xrightarrow{\ \partial\ } K^1(X,Y) \longrightarrow K^1(X) \longrightarrow K^1(Y)\;} ,
 $$</p>
 <p>in which the maps are the pullbacks of the inclusions and the <strong>index map</strong> $\partial : K^0(Y)\to K^1(X,Y)$; the last term returns to the first by Bott periodicity, so the sequence is cyclic of length six, and a sequence of the same shape exists for every closed pair.</p>
 <p><strong>Proof.</strong> The sequence is the exact sequence of the pair for a generalised cohomology theory, built from the cofibration $Y\to X\to X/Y$ and the suspension isomorphisms supplied by Bott periodicity; the exactness at each term is the standard long exact sequence argument for a cohomology theory defined by suspension. It is quoted as standard.</p>

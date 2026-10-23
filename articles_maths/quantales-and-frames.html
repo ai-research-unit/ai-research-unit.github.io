@@ -81,8 +81,7 @@
 $$</p>
 <p>for every $\alpha \in L$ and every family $(\beta_i)_{i \in I}$. A <strong>frame homomorphism</strong> is a map $f : L \to M$ preserving finite meets, including the empty meet $1$, and arbitrary joins, including the empty join $0$.</p>
 <p><strong>Theorem.</strong> Every frame is a complete Heyting algebra, with</p>
-<p>$$
-\alpha \to \beta = \bigvee \{\gamma \in L : \gamma \wedge \alpha \leq \beta\},
+<p>$$ \boxed{\;\alpha \to \beta = \bigvee \{\gamma \in L : \gamma \wedge \alpha \leq \beta\}\;},
 $$</p>
 <p>and conversely every complete Heyting algebra is a frame. The underlying lattice of a frame is distributive.</p>
 <p><strong>Proof.</strong> The element displayed is the largest $\gamma$ with $\gamma\wedge \alpha \leq \beta$ by the distribution axiom, so it is the relative pseudocomplement and residuation holds; this is the definition of a complete Heyting algebra. Conversely, in a complete Heyting algebra the distribution axiom follows from residuation: for every $i$ one has $\alpha\wedge \beta_i \leq \alpha\wedge\bigvee_i \beta_i$, so $\bigvee_i(\alpha\wedge \beta_i)\leq \alpha\wedge\bigvee_i \beta_i$, while $\alpha\wedge\bigvee_i \beta_i \leq \bigvee_i(\alpha\wedge \beta_i)$ follows by applying the adjunction to the element $\bigvee_i(\alpha\wedge \beta_i)$, which satisfies $\gamma\wedge \alpha\leq \bigvee_i \beta_i$. Distributivity is immediate from the axiom applied to finite joins.</p>
@@ -111,8 +110,7 @@ $$</p>
 $$</p>
 <p>The assignment $L \mapsto \operatorname{pt}(L)$ is a functor $\operatorname{pt} : \mathbf{Loc} \to \mathbf{Top}$.</p>
 <p><strong>Theorem.</strong> The functor $\mathcal{O}$ is left adjoint to $\operatorname{pt}$:</p>
-<p>$$
-\operatorname{Hom}_{\mathbf{Loc}}(\mathcal{O}(X), L) \cong \operatorname{Hom}_{\mathbf{Top}}(X, \operatorname{pt}(L)),
+<p>$$ \boxed{\;\operatorname{Hom}_{\mathbf{Loc}}(\mathcal{O}(X), L) \cong \operatorname{Hom}_{\mathbf{Top}}(X, \operatorname{pt}(L))\;},
 $$</p>
 <p>the unit $X \to \operatorname{pt}(\mathcal{O}(X))$ assigns to a point $x$ the frame homomorphism $\Omega \mapsto 1$ if $x \in \Omega$ and $0$ otherwise.</p>
 <p><strong>Proof.</strong> A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $\alpha \mapsto \{x : g(x)(\alpha) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case.</p>
@@ -155,8 +153,7 @@ $$</p>
 <h3 id="modules-involutions-and-the-relation-to-frames">Modules, Involutions and the Relation to Frames</h3>
 <p><strong>Definition.</strong> A <strong>left module</strong> over a quantale $Q$ is a complete lattice $M$ with an action $Q \times M \to M$, $(\alpha,x)\mapsto \alpha\cdot x$, associative and distributing over joins in both variables. An <strong>involution</strong> on a quantale is a map ${}^{*}$ with $\alpha^{**} = \alpha$, $(\alpha\cdot \beta)^{*} = \beta^{*}\cdot \alpha^{*}$ and $(\bigvee_i \alpha_i)^{*} = \bigvee_i \alpha_i^{*}$; the pair is an <strong>involutive quantale</strong>.</p>
 <p><strong>Theorem.</strong> Let $Q$ be an involutive quantale. Then the involution is an order isomorphism, and its fixed points,</p>
-<p>$$
-Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\},
+<p>$$ Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\},
 $$</p>
 <p>form a frame for the order inherited from $Q$, with the joins and meets of $Q$.</p>
 <p><strong>Proof.</strong> The involution preserves arbitrary joins by hypothesis and is its own inverse, so it is a poset isomorphism and preserves arbitrary meets as well; the fixed points are therefore closed under arbitrary joins and meets, and they inherit the distribution of the multiplication from $Q$.</p>

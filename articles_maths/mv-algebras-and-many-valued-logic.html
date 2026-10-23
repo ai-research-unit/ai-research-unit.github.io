@@ -99,7 +99,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> The relation $\leq$ is a partial order with least element $0$ and greatest element $1$, and the operations</p>
 <p>$$
-\alpha \wedge \beta = \alpha \odot (\alpha \to \beta), \qquad \alpha \vee \beta = (\alpha \to \beta) \to \beta
+\boxed{\;\alpha \wedge \beta = \alpha \odot (\alpha \to \beta), \qquad \alpha \vee \beta = (\alpha \to \beta) \to \beta\;}
 $$</p>
 <p>are the meet and the join for it. Under these operations $A$ is a distributive lattice, and $\neg$ is an order-reversing involution with $\neg 0 = 1$, $\neg 1 = 0$. The monoid operation is monotone: $\alpha \leq \beta$ implies $\alpha \oplus \gamma \leq \beta \oplus \gamma$ and $\alpha \odot \gamma \leq \beta \odot \gamma$.</p>
 <p><strong>Proof.</strong> The relation is reflexive because $\alpha \odot \neg \alpha = \neg(\alpha \oplus \neg \alpha)$ and $\alpha \oplus \neg \alpha = 1$ by (MV5) with $\alpha$ and $\neg \alpha$; it is antisymmetric and transitive by the standard computations from (MV6), which is precisely the axiom that makes $\alpha \odot \neg \beta$ a <em>residuated</em> pairing and yields the lattice laws. Monotonicity of $\oplus$ and $\odot$ is immediate from the definition of $\leq$ and the associativity of $\oplus$. The distributivity is the standard theorem of Chang; the lattice of an MV-algebra is distributive and is a sublattice of a product of chains. The full verification is Chang's and is quoted.</p>
@@ -121,7 +121,7 @@ $$</p>
 $$</p>
 <p>and the residuation law</p>
 <p>$$
-\gamma \leq \alpha \to \beta \iff \alpha \odot \gamma \leq \beta
+\boxed{\;\gamma \leq \alpha \to \beta \iff \alpha \odot \gamma \leq \beta\;}
 $$</p>
 <p>holds.</p>
 <p><strong>Proof.</strong> Since $\alpha \to \beta = \neg \alpha \oplus \beta$ and $\neg \beta \to \neg \alpha = \neg\neg \beta \oplus \neg \alpha = \beta \oplus \neg \alpha$, the first identity is the commutativity of $\oplus$. The second and the third express the fact that $\odot$ is left adjoint to $\to$; they are the standard consequences of (MV6), verified directly from the axioms in Chang's original paper. The equivalence $\alpha \to \beta = 1 \iff \alpha \leq \beta$ is the definition of the order, and the residuation law is its residuated form.</p>
@@ -207,7 +207,7 @@ A formula is a <strong>tautology</strong> if $v(\varphi) = 1$ for every valuatio
 <h3 id="algebraic-completeness">Algebraic Completeness</h3>
 <p><strong>Theorem (Chang completeness).</strong> For every formula $\varphi$ of $\mathrm{L}$,</p>
 <p>$$
-\vdash_{\mathrm{L}} \varphi \iff v(\varphi) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1] .
+\boxed{\;\vdash_{\mathrm{L}} \varphi \iff v(\varphi) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1]\;}.
 $$</p>
 <p><strong>Proof.</strong> Soundness is induction on the length of the derivation: the Łukasiewicz axioms of the Hilbert system for $\mathrm{L}$ are identities of MV-algebras, each of which is verified in $[0,1]_{\mathrm{L}}$, and the rules preserve the value $1$. For completeness, the Lindenbaum algebra $F$ of $\mathrm{L}$ is an MV-algebra, and the valuations are exactly the homomorphisms from the term algebra to $[0,1]_{\mathrm{L}}$ that respect provable equivalence; by Chang's theorem the homomorphisms to $[0,1]_{\mathrm{L}}$ separate the points of $F$, so if $\varphi$ is not a theorem and its class is therefore not $1$, some valuation sends $\varphi$ to a value different from $1$.</p>
 <p><strong>Corollary.</strong> The logic $\mathrm{L}$ is <em>the</em> logic of the standard interval, and the many-valued semantics is complete: the interval supplies all the counterexamples needed. The finite chains $\mathrm{L}_n$ give the <strong>finite-valued Łukasiewicz logics</strong> $\mathrm{L}_n$, and a formula valid in $[0,1]_{\mathrm{L}}$ is valid in each $\mathrm{L}_n$ because $\mathrm{L}_n$ is a subalgebra. Conversely, a counterexample on $[0,1]$ can be perturbed, since the operations $\min(1,\cdot)$, $1-\cdot$ and $+$ are continuous, to one whose values all lie in $\tfrac1n\mathbb{Z}$ for some $n$, and it is then a counterexample in $\mathrm{L}_n$; hence the tautologies of the infinite-valued logic are exactly the formulas tautological in every finite-valued logic, and $\mathrm{L}$ is the intersection of the logics $\mathrm{L}_n$.</p>

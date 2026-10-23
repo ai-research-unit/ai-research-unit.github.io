@@ -118,7 +118,7 @@ $$</p>
 <h3 id="multiplicativity-and-invertibility">Multiplicativity and Invertibility</h3>
 <p><strong>Theorem.</strong> Let $M$ be free of rank $m$ and let $f, g \in \operatorname{End}_R(M)$. Then</p>
 <p>$$
-\det(g \circ f) = \det(g)\, \det(f).
+\boxed{\;\det(g \circ f) = \det(g)\, \det(f)\;}.
 $$</p>
 <p>Moreover $f$ is invertible if and only if $\det(f)$ is a unit of $R$, and then $\det(f^{-1}) = \det(f)^{-1}$.</p>
 <p><strong>Proof.</strong> Functoriality of the top exterior power gives $\Lambda^m(g \circ f) = \Lambda^m g \circ \Lambda^m f$, and on the rank-one module $\Lambda^m M$ these are multiplications by $\det(g \circ f)$, $\det(g)$, and $\det(f)$ respectively, so the scalars multiply. If $f$ is invertible, applying the first part to $g = f^{-1}$ and $g \circ f = \mathrm{id}$ gives $\det(f)\det(f^{-1}) = \det(\mathrm{id}) = 1$. Conversely, if $\det(f)$ is a unit, then the adjugate identity $f \circ \operatorname{adj}(f) = \det(f)\,\mathrm{id}_M$ exhibits an inverse: $\operatorname{adj}(f)$ is the endomorphism whose matrix entries are the $(m-1)$-minors of the matrix of $f$, with alternating signs, and it is defined over any commutative ring.</p>
@@ -126,7 +126,7 @@ $$</p>
 <h3 id="the-characteristic-polynomial">The Characteristic Polynomial</h3>
 <p><strong>Proposition.</strong> Let $M$ be free of rank $m$ and let $f \in \operatorname{End}_R(M)$. Then</p>
 <p>$$
-\det(\mathrm{id}_M + t f) = \sum_{k=0}^{m} \operatorname{tr}(\Lambda^k f)\, t^k,
+\boxed{\;\det(\mathrm{id}_M + t f) = \sum_{k=0}^{m} \operatorname{tr}(\Lambda^k f)\, t^k\;},
 $$</p>
 <p>where $\operatorname{tr}(\Lambda^k f)$ denotes the trace of the induced endomorphism of $\Lambda^k M$ and $\operatorname{tr}(\Lambda^0 f) = 1$.</p>
 <p><strong>Proof.</strong> Both sides are polynomials with integer coefficients in the matrix entries of $f$. It therefore suffices to prove the identity after base change to a field over which the matrix has a full set of eigenvalues, for instance over the algebraic closure of the fraction field of the polynomial ring in the entries. There $f$ is triangularisable, with eigenvalues $\lambda_1, \ldots, \lambda_m$; the eigenvalues of $\Lambda^k f$ are the products $\lambda_{i_1} \cdots \lambda_{i_k}$ over increasing $k$-tuples, so $\operatorname{tr}(\Lambda^k f)$ is the elementary symmetric function $e_k(\lambda)$ of the eigenvalues and $\det(\mathrm{id} + tf) = \prod_{i=1}^{m}(1 + t\lambda_i) = \sum_{k=0}^{m} e_k(\lambda) t^k$.</p>
@@ -164,7 +164,7 @@ $$</p>
 <p>The multiplicativity of the determinant in the square case is the $n = m$ case of a formula valid in every degree.</p>
 <p><strong>Theorem (Cauchy–Binet).</strong> Let $A$ be an $r \times m$ matrix and $B$ an $m \times s$ matrix over a commutative ring $R$. For increasing index sets $I \subseteq \{1, \ldots, r\}$ and $J \subseteq \{1, \ldots, s\}$ of size $n$,</p>
 <p>$$
-\det\bigl((AB)_{I,J}\bigr) = \sum_{K} \det(A_{I,K})\, \det(B_{K,J}),
+\boxed{\;\det\bigl((AB)_{I,J}\bigr) = \sum_{K} \det(A_{I,K})\, \det(B_{K,J})\;},
 $$</p>
 <p>the sum over the increasing $n$-element subsets $K \subseteq \{1, \ldots, m\}$.</p>
 <p><strong>Proof.</strong> Let $f : R^s \to R^m$ and $g : R^m \to R^r$ be the linear maps with matrices $B$ and $A$, so that $AB$ is the matrix of $g \circ f$. By the minor proposition, the matrix entries of $\Lambda^n(g \circ f)$ are the minors of $AB$, and by functoriality $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$, whose matrix entries are sums of products of the minors of $A$ and of $B$ indexed by the intermediate basis wedges. Equating the two expressions gives the formula.</p>

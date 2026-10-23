@@ -76,7 +76,7 @@
 <h3 id="the-one-sided-adjoint">The one-sided adjoint</h3>
 <p><strong>Theorem.</strong> For every $a \in A$ the adjoint of the signed left multiplication is the signed left multiplication by the transformed parameter:</p>
 <p>$$
-\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma .
+\boxed{\;\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma\;} .
 $$</p>
 <p><em>Proof.</em> The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=S^{\alpha}_{a,1}$. By <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>, $\bigl(S^{\alpha}_{a,1}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $S^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$.</p>
 <p><strong>Proof (direct).</strong> Write $L^{\alpha}_a=L_a\circ\alpha$, so by anti-multiplicativity $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha^{*}(L_a)^{*}$. The pairing is $\alpha$-invariant, so $\alpha^{*}=\alpha$, and <em>The Adjoint of a Sandwich on a Bimodule over an Algebra</em> gives $(L_a)^{*}=L_{\sigma(a)}$. Hence $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha L_{\sigma(a)}=L^{\alpha}_{\alpha\sigma(a)}$, using the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$ of <em>The Signed Left Multiplication on a Module over an Algebra</em>.</p>
@@ -106,7 +106,7 @@ $$</p>
 <h3 id="self-adjoint-and-skew-adjoint-signed-left-multiplications">Self-adjoint and skew-adjoint signed left multiplications</h3>
 <p><strong>Proposition.</strong> The kernel of the parameter map $a \mapsto L^{\alpha}_a$ is the annihilator $\operatorname{Ann}_A(M)=\{a : aM=0\}$. Consequently</p>
 <p>$$
-\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_a \iff \beta(a)-a \in \operatorname{Ann}_A(M), \qquad \bigl(L^{\alpha}_a\bigr)^{*}=-L^{\alpha}_a \iff \beta(a)+a \in \operatorname{Ann}_A(M).
+\boxed{\;\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_a \iff \beta(a)-a \in \operatorname{Ann}_A(M), \qquad \bigl(L^{\alpha}_a\bigr)^{*}=-L^{\alpha}_a \iff \beta(a)+a \in \operatorname{Ann}_A(M)\;}.
 $$</p>
 <p>For a faithful module these read $\beta(a)=a$ and $\beta(a)=-a$.</p>
 <p><em>Proof.</em> $L^{\alpha}_a=L^{\alpha}_{a'}$ is $L^{\alpha}_{a-a'}=0$, that is $(a-a')M=0$, by the kernel statement of <em>The Signed Left Multiplication on a Module over an Algebra</em>; applying this to the theorem gives the criteria.</p>
@@ -123,7 +123,7 @@ $$</p>
 <h3 id="the-complement-identities">The complement identities</h3>
 <p><strong>Proposition.</strong> For every $a$,</p>
 <p>$$
-\ker\bigl(L^{\alpha}_a\bigr)^{*}=\bigl(\operatorname{im}L^{\alpha}_a\bigr)^{\mathrm{c}}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}={}^{\mathrm{c}}\bigl(\ker L^{\alpha}_a\bigr) .
+\boxed{\;\ker\bigl(L^{\alpha}_a\bigr)^{*}=\bigl(\operatorname{im}L^{\alpha}_a\bigr)^{\mathrm{c}}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}={}^{\mathrm{c}}\bigl(\ker L^{\alpha}_a\bigr)\;} .
 $$</p>
 <p><em>Proof.</em> These are the general identities of <em>The Adjoint of a Module Homomorphism</em> for the operator $L^{\alpha}_a$.</p>
 <h3 id="the-explicit-complements">The explicit complements</h3>

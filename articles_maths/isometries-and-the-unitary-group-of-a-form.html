@@ -79,12 +79,12 @@
 <p><strong>Proof.</strong> The identity is an isometry, the composite of two isometries is an isometry, and $\mathrm{U}(A,h)$ is by definition the set of the isometries invertible in the monoid. The group law is the composition, the inverse of an isometry is an isometry because $h(T^{-1}x, T^{-1}y) = h(TT^{-1}x, TT^{-1}y) = h(x,y)$ applying the isometry to the pair $(T^{-1}x, T^{-1}y)$.</p>
 <p><strong>Proposition (the equation of an isometry).</strong> Let $T$ admit the adjoint $T^{*}$. Then</p>
 <p>$$
-T \in \operatorname{Iso}(A,h) \iff T^{*}T = 1 .
+\boxed{\;T \in \operatorname{Iso}(A,h) \iff T^{*}T = 1\;} .
 $$</p>
 <p><strong>Proof.</strong> $h(Tx, Ty) = h(x, T^{*}Ty)$ for every pair by the definition of the adjoint, and $h(x,y) = h(x, T^{*}Ty)$ for every pair iff $h(x, (T^{*}T - 1)y) = 0$ for every $x, y$; the nonsingularity of $h$ makes this equivalent to $T^{*}T = 1$.</p>
 <p><strong>Corollary (the finite-dimensional case).</strong> Over a field and in finite dimension with $h$ non-degenerate, every isometry is invertible: if $Tx = 0$ then $h(x,y) = h(Tx,Ty) = 0$ for every $y$, and non-degeneracy gives $x = 0$, so $T$ is injective and hence bijective. Then</p>
 <p>$$
-\mathrm{U}(A,h) = \{T : T^{*}T = 1\} = \{T : TT^{*} = 1\} .
+\boxed{\;\mathrm{U}(A,h) = \{T : T^{*}T = 1\} = \{T : TT^{*} = 1\}\;} .
 $$</p>
 <p>Over a general ring the implication fails — an injective endomorphism of a free module of finite rank need not be surjective — and the group is the set of the invertible isometries, which is the reading of the topological article <em>Unitary and Isometric Operators of the Form</em> in the complete case, where the unilateral shift is isometric without being unitary.</p>
 <h2 id="inversion-is-the-adjoint">Inversion Is the Adjoint</h2>
@@ -96,7 +96,7 @@ $$</p>
 <p><strong>Corollary.</strong> The adjoint operation is an anti-automorphism of order two of the algebra of operators, $(ST)^{*} = T^{*}S^{*}$, and its restriction to $\mathrm{U}(A,h)$ is the group inverse; on the group it therefore satisfies $(ST)^{*} = T^{*}S^{*}$ and $(T^{*})^{*} = T$, which is the group-theoretic statement that inversion reverses the product.</p>
 <p><strong>Proposition (the determinant).</strong> Over a field, for $T \in \mathrm{U}(A,h)$ the determinant satisfies</p>
 <p>$$
-\det(T)\,\varsigma(\det(T)) = 1 .
+\boxed{\;\det(T)\,\varsigma(\det(T)) = 1\;} .
 $$</p>
 <p><strong>Proof.</strong> Taking determinants in $T^{*}T = 1$ and using that the adjoint is $\varsigma$-semilinear, $\det(T^{*}) = \varsigma(\det(T))$; the determinant of the identity is $1$.</p>
 <p>At the trivial base involution this reads $\det(T)^{2} = 1$, the classical statement for the orthogonal group; the determinant-one part is the kernel of the determinant map, and it is the group of the layer in the classical theory, <em>The Orthogonal Lie Algebra</em>.</p>

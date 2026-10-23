@@ -85,7 +85,7 @@ and it is its own adjoint for every unit. The adjoint operation therefore carrie
 <h3 id="the-form-of-the-category">The form of the category</h3>
 <p><strong>Theorem (the reflection and its adjoint).</strong> For every unit $u$ of $\mathcal{A}$,
 $$
-r_u=\alpha,\qquad r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha x\|=\|x\| ,
+\boxed{\;r_u=\alpha,\qquad r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha x\|=\|x\|\;} ,
 $$
 so the reflection is an involutive unitary operator and is its own adjoint.</p>
 <p><em>Proof.</em> The collapse $r_u=\alpha$ is the commutativity of the product: $u\alpha(x)u^{-1}=\alpha(x)uu^{-1}=\alpha(x)$. In the standard model the grade involution is the composition with a measure-preserving involution $\varphi_0$, $\alpha(x)=x\circ\varphi_0$, and the change of variables under $\varphi_0$ gives the self-adjointness,
@@ -107,14 +107,14 @@ $$
 a Hermitian form equivalent to the form of the category through the grade involution.</p>
 <p><strong>Theorem (the signed adjoint of the reflection).</strong> With respect to the signed pairing the adjoint of the reflection is again the reflection, and the reflection is an isometry:
 $$
-\{r_ux,y\}=\{x,r_uy\},\qquad \{r_ux,r_uy\}=\{x,y\} .
+\boxed{\;\{r_ux,y\}=\{x,r_uy\},\qquad \{r_ux,r_uy\}=\{x,y\}\;} .
 $$</p>
 <p><em>Proof.</em> With $r_u=\alpha$ one has $\{r_ux,y\}=\langle\alpha x,\alpha y\rangle=\langle x,y\rangle$ by the unitarity of $\alpha$, and $\{x,r_uy\}=\langle x,\alpha\alpha y\rangle=\langle x,y\rangle$; the two are equal, and the isometry is the same computation applied twice. The signed pairing is equivalent to the form because $\alpha$ is invertible.</p>
 <h2 id="the-correspondence">The Correspondence</h2>
 <h3 id="the-involutive-signed-sandwiches">The involutive signed sandwiches</h3>
 <p><strong>Theorem (the involutions).</strong> The signed sandwiches that are involutions are the operators $S^\alpha_c=L_c\alpha$ with
 $$
-c\,\alpha(c)=1 ,
+\boxed{\;c\,\alpha(c)=1\;} ,
 $$
 the $\alpha$-cocycles, and they form a group under multiplication; the reflection $\alpha=S^\alpha_1$ is the one with $c=1$, and $-\alpha=S^\alpha_{-1}$ is the companion. Every involution is self-adjoint for the form of the category exactly when it is also $\alpha$-Hermitian, $\alpha(c)=c^*$, which fails for the general cocycle.</p>
 <p><em>Proof.</em> The square is $(S^\alpha_c)^2=S^\alpha_{c\alpha(c)}$ by <em>The Signed Adjoint Sandwich on the Algebra of Random Variables</em>, the preceding article, so the involution is $c\alpha(c)=1$; the cocycles are closed under multiplication because $\alpha$ is an involution, and the inverse of a cocycle is a cocycle; the self-adjointness is $c=\delta(c)$, that is $\alpha(c)=c^*$, again from the preceding article.</p>

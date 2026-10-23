@@ -89,7 +89,7 @@ $$
 applied with $\beta = d\alpha$ and with $u, v \in \xi$, gives $\alpha(w)\,d\alpha(u,v) = 0$ for every $w$, and choosing $w$ with $\alpha(w)\neq0$ gives $d\alpha(u,v)=0$; so $\xi$ is integrable by Frobenius. Finally, if $\alpha\wedge(d\alpha)^{\wedge n} \neq 0$ then $d\alpha$ is nondegenerate on $\xi_x$: a vector $u \in \xi_x$ with $d\alpha(u, v) = 0$ for all $v \in \xi_x$ could be used to contract the volume form to zero, contradicting the nonvanishing. Hence the maximal isotropic subspaces of the symplectic space $(\xi_x, d\alpha_x)$ have dimension $n$, and a submanifold tangent to $\xi$ has tangent spaces isotropic for $d\alpha$, so its dimension is at most $n$.</p>
 <p><strong>Proposition.</strong> Let $\alpha$ be a contact form and let $f \in C^\infty(M)$ be nowhere vanishing. Then $f\alpha$ is a contact form, and</p>
 <p>$$
-(f\alpha)\wedge\bigl(d(f\alpha)\bigr)^{\wedge n} = f^{\,n+1}\, \alpha\wedge(d\alpha)^{\wedge n}.
+\boxed{\;(f\alpha)\wedge\bigl(d(f\alpha)\bigr)^{\wedge n} = f^{\,n+1}\, \alpha\wedge(d\alpha)^{\wedge n}\;}.
 $$</p>
 <p>Consequently the contact structure $\xi = \ker\alpha$ depends only on the defining form up to multiplication by a nowhere vanishing function, while the form itself does not.</p>
 <p><strong>Proof.</strong> One has $d(f\alpha) = df\wedge\alpha + f\,d\alpha$, so</p>
@@ -116,7 +116,7 @@ $$</p>
 <h2 id="the-darboux-theorem-and-stability">The Darboux Theorem and Stability</h2>
 <p><strong>Theorem (Darboux for contact forms).</strong> Let $\alpha$ be a contact form on a manifold of dimension $2n+1$. About every point there is a chart $(U, x_1, \ldots, x_n, y_1, \ldots, y_n, z)$ centred at the point in which</p>
 <p>$$
-\alpha = dz + \sum_{i=1}^{n} x_i\, dy_i .
+\boxed{\;\alpha = dz + \sum_{i=1}^{n} x_i\, dy_i\;} .
 $$</p>
 <p>Consequently every contact manifold of dimension $2n+1$ is locally contactomorphic to $(\mathbb{R}^{2n+1}, \ker\alpha_0)$.</p>
 <p><strong>Proof sketch.</strong> Choose a chart in which $\alpha$ agrees with $\alpha_0$ at the origin, and deform $\alpha_1 = \alpha$ to $\alpha_0$ through the linear family $\alpha_t = (1-t)\alpha_0 + t\alpha_1$; each $\alpha_t$ is a contact form near the origin, because the contact condition is open and holds at the origin. One seeks a time-dependent vector field $X_t$ and a function $\lambda_t$ with</p>
@@ -134,7 +134,7 @@ $$</p>
 <h2 id="the-reeb-vector-field">The Reeb Vector Field</h2>
 <p><strong>Definition.</strong> Let $\alpha$ be a contact form on a manifold of dimension $2n+1$. The <strong>Reeb vector field</strong> of $\alpha$ is the unique vector field $R_\alpha$ with</p>
 <p>$$
-\alpha(R_\alpha) = 1, \qquad \iota_{R_\alpha} d\alpha = 0 .
+\boxed{\;\alpha(R_\alpha) = 1, \qquad \iota_{R_\alpha} d\alpha = 0\;} .
 $$</p>
 <p><strong>Proposition.</strong> The Reeb vector field exists and is unique. It is transverse to the contact structure, and it is nowhere vanishing.</p>
 <p><strong>Proof.</strong> Uniqueness and transversality: if $R$ satisfies the two conditions, then $\alpha(R) = 1$ fixes its component along the contact direction, and $d\alpha(R, v) = 0$ for $v \in \ker\alpha$ fixes its contact-plane component, since $d\alpha$ is nondegenerate on $\ker\alpha$. For existence, pick any vector field $V$ with $\alpha(V) = 1$ and subtract the unique $W \in \ker\alpha$ solving $\iota_W d\alpha = -\iota_V d\alpha$ on $\ker\alpha$; then $R_\alpha = V + W$ satisfies both conditions.</p>

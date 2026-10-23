@@ -88,7 +88,7 @@ $$</p>
 <h2 id="the-hilbert-algebra-and-the-hilbert-cone">The Hilbert Algebra and the Hilbert Cone</h2>
 <p><strong>Definition.</strong> A <strong>Hilbert algebra</strong> is a complex involutive algebra $A$ with an inner product $\langle\cdot,\cdot\rangle$ and a <strong>trace</strong> element (the identity in the unital case) such that the involution is adjoint to the multiplication, $\langle ab,c\rangle = \langle b,a^{*}c\rangle$, and the left multiplications are bounded. It is <strong>positive definite</strong> when $\sum_i a_i^{*}a_i = 0$ implies every $a_i = 0$; the <strong>Hilbert cone</strong> is</p>
 <p>$$
-\Pi = \overline{\Bigl\{\sum_{i} a_i^{*}a_i\Bigr\}} .
+\boxed{\;\Pi = \overline{\Bigl\{\sum_{i} a_i^{*}a_i\Bigr\}}\;} .
 $$</p>
 <p><strong>Proposition (the Hilbert cone is a cone).</strong> The set $\Pi$ is a convex cone closed under the involution, under the congruences $x\mapsto c^{*}xc$ and under the symmetrised product; it contains the trace and is proper exactly when the algebra is positive definite; the order $a\leq b\iff b - a\in\Pi$ makes the algebra an ordered involutive algebra with the trace as order unit.</p>
 <p><em>Proof.</em> The closure properties are those of the sums $a^{*}a$ together with the closure of the set under the norm, which is a limit of the corresponding properties; the properness is the positive definiteness, by the argument of <em>The Positive Cone of an Involutive Algebra</em>; the order is the order of the cone, and the trace is positive and dominating by the boundedness of the left multiplications.</p>
@@ -98,7 +98,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>dual cone</strong> of $\Pi$ in the Hilbert space is $\Pi^{\prime} = \{a : \operatorname{Re}\langle a,b\rangle\geq0 \ \text{for every } b\in\Pi\}$, and the cone is <strong>self-dual</strong> when $\Pi^{\prime} = \Pi$.</p>
 <p><strong>Theorem (the Hilbert cone is self-dual).</strong> In a positive definite Hilbert algebra the Hilbert cone is self-dual, $\Pi = \Pi^{\prime}$; consequently</p>
 <p>$$
-a\geq0 \iff \langle a,b\rangle\geq0 \ \text{ for every } b\geq0 ,
+\boxed{\;a\geq0 \iff \langle a,b\rangle\geq0 \ \text{ for every } b\geq0\;} ,
 $$</p>
 <p>and the order of the Hilbert algebra is the order of the inner product.</p>
 <p><em>Proof.</em> One inclusion, $\Pi\subseteq\Pi^{\prime}$, is the standard fact that the inner product of two positive elements of a Hilbert algebra is nonnegative; on the generators it is $\langle c^{*}c, d^{*}d\rangle = \langle cd^{*}, cd^{*}\rangle\geq0$, which follows from the adjointness of the involution to the multiplication by two applications of $\langle ab,e\rangle = \langle b,a^{*}e\rangle$, and the general case follows by continuity in the two variables. The reverse inclusion uses the completion and the enveloping von Neumann algebra: if $a\notin\Pi$ then the Hahn–Banach theorem separates $a$ from the closed convex cone, and the Riesz representation of the separating functional is an element $b$ with $\operatorname{Re}\langle c,b\rangle\geq0$ on $\Pi$ but $\operatorname{Re}\langle a,b\rangle<0$; the polar decomposition of $b$ in the enveloping algebra shows that $b$ may be taken in $\Pi$, so $a\notin\Pi^{\prime}$. Hence $\Pi^{\prime}\subseteq\Pi$, and the two cones are equal.</p>

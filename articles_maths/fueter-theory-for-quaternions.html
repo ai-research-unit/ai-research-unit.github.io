@@ -84,9 +84,7 @@ $$</p>
 <p><strong>Remark.</strong> The Fueter operator is the Cauchy–Riemann operator of <em>Quaternion Regular Functions</em>, under the name used in the Fueter tradition; it is the same operator and this article does not restate its definition independently.</p>
 <h3 id="factorization-of-the-laplacian">Factorization of the Laplacian</h3>
 <p><strong>Theorem.</strong> On $\mathbb{H}$ the operator and its conjugate factor the Laplacian,</p>
-<p>$$
-D\bar D = \bar DD = \Delta_4,
-$$</p>
+<p>$$ \boxed{\; D\bar D = \bar DD = \Delta_4 \;} ,$$</p>
 <p>so $D$ is a square root of $\Delta_4$.</p>
 <p><em>Proof.</em> Expand $D\bar D = \sum_{\mu,\nu}e_\mu e_\nu^{\natural}\,\partial^2/\partial Q_\mu\partial Q_\nu$. The diagonal term is $\sum_\mu e_\mu e_\mu^{\natural}\,\partial^2/\partial Q_\mu^2 = \sum_\mu\partial^2/\partial Q_\mu^2$, since $e_t e_t^{\natural} = 1$ and $\vec e_k \vec e_k^{\natural} = -\vec e_k^2 = 1$; for $\mu\neq\nu$ the coefficient is $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 0$ by the Clifford relation of <em>Quaternion Regular Functions</em>. Hence all mixed terms cancel, leaving $\Delta_4$; the same argument gives $\bar DD = \Delta_4$.</p>
 <h3 id="relation-to-the-cauchyriemann-operator">Relation to the Cauchy–Riemann Operator</h3>
@@ -143,9 +141,7 @@ $$</p>
 <p>componentwise, and the converse fails.</p>
 <p><em>Proof.</em> $DF = 0$ gives $\Delta_4F = \bar D(DF) = 0$, and $FD = 0$ gives $\Delta_4F = (FD)\bar D = 0$. The coordinate $q_t$ is harmonic with $Dq_t = e_t\neq0$.</p>
 <p><strong>Theorem (mean value property).</strong> A regular function $F$ near a closed ball $\bar B(q_t,r)$ satisfies</p>
-<p>$$
-F(q_t) = \frac{1}{|B(q_t,r)|}\int_{B(q_t,r)}F\,dV = \frac{1}{|\partial B(q_t,r)|}\int_{\partial B(q_t,r)}F\,dS,
-$$</p>
+<p>$$ \boxed{\; F(q_t) = \frac{1}{|B(q_t,r)|}\int_{B(q_t,r)}F\,dV = \frac{1}{|\partial B(q_t,r)|}\int_{\partial B(q_t,r)}F\,dS \;} ,$$</p>
 <p>with the ordinary Lebesgue measures on $\mathbb{R}^4$.</p>
 <p><em>Proof.</em> By the preceding theorem each component of $F$ is harmonic, and the mean value property for harmonic functions gives the two equalities; equivalently, the property follows from the Cauchy integral formula of <em>Quaternion Regular Functions</em> by shrinking the boundary of the ball.</p>
 <p><strong>Corollary.</strong> Regular functions satisfy the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates on $\mathbb{H}$; all of these are consequences of harmonicity together with ellipticity, and none of them requires an exceptional set because the quaternion norm is definite.</p>
@@ -158,9 +154,7 @@ $$</p>
 <p>defined for $\rho>0$ by replacing $a$ by $q_t$, $a'$ by $\rho$ and the complex unit $i$ by $\vec u_{\mathrm d}$, which is legitimate because $\vec u_{\mathrm d}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_t,0) = 0$, the extension extends continuously to $\rho = 0$ with value $f_0(q_t)$, and $f^{\mathrm{ax}}_0(\tilde q) = \sum_{n\geq0}a_n\tilde q^n$ on $B(0,R)$.</p>
 <h3 id="fueters-theorem">Fueter's Theorem</h3>
 <p><strong>Theorem (Fueter's construction).</strong> Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $f^{\mathrm{ax}}_0$. Then</p>
-<p>$$
-F(\tilde q) = \Delta_4f^{\mathrm{ax}}_0(\tilde q) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho}+\vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho}-\frac{2\,v(q_t,\rho)}{\rho^2}\right)
-$$</p>
+<p>$$ \boxed{\; F(\tilde q) = \Delta_4f^{\mathrm{ax}}_0(\tilde q) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho}+\vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho}-\frac{2\,v(q_t,\rho)}{\rho^2}\right) \;} $$</p>
 <p>is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.</p>
 <p><em>Proof.</em> For $g = A(q_t,\rho)+\vec u_{\mathrm d}B(q_t,\rho)$ with central coefficients $A,B$, one has $\partial/\partial q_k\,A = (\partial/\partial\rho A)(\vec u_{\mathrm d})_k$, $\sum_k\vec e_k(\vec u_{\mathrm d})_k = \vec u_{\mathrm d}$ and $\sum_{\nu,k}(\partial/\partial q_k\,(\vec u_{\mathrm d})_\nu)\vec e_k \vec e_\nu = (-3-\vec u_{\mathrm d}^2)/\rho = -2/\rho$, because $\vec u_{\mathrm d}^2 = -1$. Hence $Dg = gD = (\partial/\partial Q_t\,A-\partial/\partial\rho B-2B/\rho)+\vec u_{\mathrm d}(\partial/\partial Q_t\,B+\partial/\partial\rho A)$, so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial/\partial Q_t\,A = \partial/\partial\rho B+2B/\rho$ and $\partial/\partial Q_t\,B = -\partial/\partial\rho A$. Applying the radial form of the three-dimensional Laplacian and the identity $\Delta_{\mathbb{R}^3}(B\vec u_{\mathrm d}) = \vec u_{\mathrm d}(\Delta_{\mathbb{R}^3}B-2B/\rho^2)$ to the harmonic pair $(u,v)$ gives $\Delta_4f^{\mathrm{ax}}_0(\tilde q) = P+\vec u_{\mathrm d}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho-v)/\rho^2$, and the Cauchy–Riemann equations give $Q_\rho+2Q/\rho = \partial/\partial Q_t\,P$, $-\partial/\partial Q_t\,Q = P_\rho$; thus $P,Q$ satisfy the regularity system and extend continuously to $\rho = 0$.</p>
 <h3 id="the-kernel-and-injectivity">The Kernel and Injectivity</h3>

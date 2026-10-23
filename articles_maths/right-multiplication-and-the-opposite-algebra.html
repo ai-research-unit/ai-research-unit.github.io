@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> The <strong>right multiplication</strong> by $x \in \mathrm{Cl}(V,\mathfrak{Q})$ is $R_x(y) = y\,x$. The <strong>right regular representation</strong> is the map $x \mapsto R_x$ into $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$.</p>
 <p><strong>Proposition (anti-multiplicativity).</strong> For all $x, z \in \mathrm{Cl}(V,\mathfrak{Q})$,</p>
 <p>$$
-R_x R_z = R_{zx} , \qquad R_1 = \mathrm{id} .
+\boxed{\;R_x R_z = R_{zx} , \qquad R_1 = \mathrm{id}\;} .
 $$</p>
 <p>Hence $x \mapsto R_x$ is an injective homomorphism from the opposite algebra $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ into $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, equivalently an injective anti-homomorphism from $\mathrm{Cl}(V,\mathfrak{Q})$.</p>
 <p><strong>Proof.</strong> $R_x\bigl(R_z(y)\bigr) = yzx = R_{zx}(y)$; the reversal is exactly the reversed order of composition in the endomorphism ring. Injectivity is $R_x(1) = x$.</p>
@@ -91,7 +91,7 @@ $$</p>
 <p><strong>Proof.</strong> The relations are displayed; the universal property of the Clifford algebra applies to the linear map $V \hookrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ because a vector satisfies $v \cdot^{\mathrm{opp}} v = v^{2} = \mathfrak{Q}(v)$. Injectivity of the resulting homomorphism follows from its surjectivity and equal dimensions, or directly because it is an algebra map with $x \neq 0$ having $x\cdot^{\mathrm{opp}}1 \neq 0$.</p>
 <p><strong>Theorem (a Clifford algebra is isomorphic to its opposite).</strong> Let $r$ be the reversion, $r(x_1\cdots x_k) = x_k\cdots x_1$ for vectors $x_i$, extended linearly, and let $\natural$ be the Clifford conjugation, $\natural = \alpha \circ r$ with $\alpha$ the grade involution. Then $r$ and $\natural$ are anti-automorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$, and each is an isomorphism of algebras</p>
 <p>$$
-\mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad x \longmapsto x^{r} \quad \text{or} \quad x \longmapsto x^{\natural}.
+\boxed{\;\mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad x \longmapsto x^{r} \quad \text{or} \quad x \longmapsto x^{\natural}\;}.
 $$</p>
 <p><strong>Proof.</strong> Reversion is $F$-linear, fixes the generators and reverses products, so it is an anti-automorphism; a composition of the automorphism $\alpha$ with the anti-automorphism $r$ is again an anti-automorphism, and both fix $1$. An anti-automorphism is by definition a unital algebra isomorphism onto the opposite algebra. Both are bijective, with inverses of the same kind.</p>
 <p><strong>Corollary (right modules are left modules).</strong> Pulling back along an isomorphism $\mathrm{Cl} \to \mathrm{Cl}^{\mathrm{opp}}$ turns right modules into left modules and right ideals into left ideals. So the representation theory of the right regular module is the representation theory of the left regular module read through reversion, and the two simple-module counts agree.</p>
@@ -105,7 +105,7 @@ $$</p>
 <p><strong>Proof.</strong> Associativity, with the two factors $a$ and $b$ on opposite sides of $y$.</p>
 <p><strong>Theorem (the commutant of the regular representation).</strong> The algebra of module endomorphisms of the regular left module is the opposite algebra, realised by the right multiplications,</p>
 <p>$$
-\mathrm{End}_{\mathrm{Cl}(V,\mathfrak{Q})}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad T \longmapsto T(1),
+\boxed{\;\mathrm{End}_{\mathrm{Cl}(V,\mathfrak{Q})}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad T \longmapsto T(1)\;},
 $$</p>
 <p>with inverse $b \mapsto R_b$. Consequently $\{L_a\}' = \{R_b\}$ and $\{R_b\}' = \{L_a\}$, the two families are mutual commutants.</p>
 <p><strong>Proof.</strong> For a module endomorphism $T$ one has $T(y) = T(y\cdot1) = y\,T(1)$, so $T = R_{T(1)}$; conversely every $R_b$ is a module endomorphism because $R_b(ay) = ayb = aR_b(y)$. The mutual-commutant form is the computation of <em>One-Sided Operators on a Clifford Algebra</em>.</p>

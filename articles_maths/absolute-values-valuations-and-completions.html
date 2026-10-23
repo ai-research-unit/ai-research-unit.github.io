@@ -107,12 +107,12 @@ $$</p>
 <p><strong>Definition.</strong> Two absolute values $\lvert \cdot \rvert_1$, $\lvert \cdot \rvert_2$ on $F$ are <strong>equivalent</strong> if they induce the same topology on $F$.</p>
 <p><strong>Theorem.</strong> Two nontrivial absolute values on a field $F$ are equivalent if and only if there is a real number $\alpha > 0$ with</p>
 <p>$$
-\lvert x \rvert_2 = \lvert x \rvert_1^{\alpha} \quad \text{for all } x \in F .
+\boxed{\;\lvert x \rvert_2 = \lvert x \rvert_1^{\alpha} \quad \text{for all } x \in F\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> If the relation holds, the two absolute values have the same balls up to scaling of the radius, hence the same topology. Conversely, if the topologies agree, then $\lvert x \rvert_1 < 1$ implies $\lvert x \rvert_2 < 1$ (a sequence tending to $0$ in one topology tends to $0$ in the other), and one shows that the subgroups $\{x : \lvert x \rvert_1 < 1\}$ and $\{x : \lvert x \rvert_2 < 1\}$ coincide; choosing $a$ with $\lvert a \rvert_1 \neq 0, 1$ and comparing $\lvert a^n \rvert_1$ with $\lvert x \rvert_2$ for all $x$ gives the exponent $\alpha$.</p>
 <p><strong>Theorem (product formula for $\mathbb{Q}$).</strong> For every $x \in \mathbb{Q}^\times$,</p>
 <p>$$
-\lvert x \rvert_\infty \prod_{p} \lvert x \rvert_p = 1,
+\boxed{\;\lvert x \rvert_\infty \prod_{p} \lvert x \rvert_p = 1\;},
 $$</p>
 <p>where the product is over all primes and the product is finite because $v_p(x) = 0$ for almost all $p$.</p>
 <p><strong>Proof.</strong> Write $\lvert x \rvert_\infty = \prod_p p^{a_p(x)}$ in the factorization of $x$, which holds because $\lvert x \rvert_\infty$ collects the prime powers with sign. Then $\lvert x \rvert_p = p^{-a_p(x)}$, so the product of the $p$-adic terms is $\prod_p p^{-a_p(x)} = \lvert x \rvert_\infty^{-1}$.</p>
@@ -210,7 +210,7 @@ $$</p>
 <p><strong>Proof.</strong> The assertions about the valuation ring, maximal ideal, residue field and value group follow from the corresponding facts for $\mathbb{Z}_{(p)}$ and the persistence of the residue field under completion (part (c) of the completion theorem); the expansion is the $p$-adic analogue of decimal expansion for fractions.</p>
 <p><strong>Theorem (Hensel's lemma).</strong> Let $F$ be complete with respect to a non-Archimedean absolute value, let $\mathcal{O}$ be its valuation ring, and let $f \in \mathcal{O}[x]$. If there is $a \in \mathcal{O}$ with</p>
 <p>$$
-\lvert f(a) \rvert < \lvert \frac{df}{dx}(a) \rvert^2,
+\boxed{\;\lvert f(a) \rvert < \lvert \frac{df}{dx}(a) \rvert^2\;},
 $$</p>
 <p>then there is a unique $b \in \mathcal{O}$ with $f(b) = 0$ and $\lvert b - a \rvert < \lvert \frac{df}{dx}(a) \rvert$.</p>
 <p><strong>Proof sketch.</strong> The Newton iteration $a_{n+1} = a_n - f(a_n)/\frac{df}{dx}(a_n)$ is defined by the hypothesis and is Cauchy for the non-Archimedean absolute value, with $\lvert a_{n+1} - a_n \rvert$ decreasing quadratically; completeness gives a limit $b$, and continuity of $f$ gives $f(b) = 0$. Uniqueness is by the ultrametric estimate on $f(b) - f(b')$.</p>

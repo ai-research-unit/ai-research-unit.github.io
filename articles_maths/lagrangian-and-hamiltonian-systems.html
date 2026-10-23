@@ -110,7 +110,7 @@ $$</p>
 <p><strong>Definition.</strong> A constraint is <strong>holonomic</strong> if it is the vanishing of a relation $\phi(q,t)=0$ among the coordinates; it is <strong>scleronomic</strong> when $\phi$ carries no explicit time and <strong>rheonomic</strong> when it does. A holonomic constraint is used by elimination: it removes one coordinate, and the remaining coordinates are free. A constraint that is linear in the velocities, $A^a_j(q)dq^{j}/dt=0$, and that admits no integrating factor is <strong>non-holonomic</strong>; it cannot be eliminated, and it must be imposed by multipliers.</p>
 <p><strong>Theorem (the Lagrange–d'Alembert equations).</strong> Let the constraints be $A^a_j(q)dq^{j}/dt=0$, $a=1,\dots,\kappa$, with the rows of $A$ independent, so that the admissible virtual displacements are the vectors with $A^a_j\delta q^j=0$. Then D'Alembert's principle is equivalent to</p>
 <p>$$
-\frac{d}{dt}\frac{\partial L}{\partial\left(dq^{j}/dt\right)}-\frac{\partial L}{\partial q^j} = \lambda_aA^a_j , \qquad A^a_jdq^{j}/dt=0 ,
+\boxed{\;\frac{d}{dt}\frac{\partial L}{\partial\left(dq^{j}/dt\right)}-\frac{\partial L}{\partial q^j} = \lambda_aA^a_j , \qquad A^a_jdq^{j}/dt=0\;} ,
 $$</p>
 <p>the $\lambda_a$ being functions of $t$ determined together with the solution.</p>
 <p><em>Proof.</em> At a configuration the admissible virtual displacements form the subspace annihilated by the rows of $A$; D'Alembert's principle requires the generalised force to annihilate that same subspace, so it is a combination $\lambda_aA^a_j$ of the rows, by the independence of the rows. The constraint is imposed on the velocity rather than on the virtual displacement, and the difference is not merely formal: imposing the same relation on the variation of the action instead gives the <strong>vakonomic</strong> equations, which agree with these for holonomic constraints and differ from them otherwise, and it is D'Alembert's principle, not stationary action, that reproduces Newton's law. The pair of equations is the differential-algebraic system of the article of this Part on differential-algebraic equations.</p>
@@ -167,7 +167,7 @@ H(q,p) = \sum_{i=1}^n p_i\,dq^{i}/dt - L(q,dq/dt), \qquad \,dq/dt = (\mathbb{F}L
 $$</p>
 <p>is well defined, and a curve $q$ satisfies the Euler–Lagrange equations of $L$ if and only if the curve $(q,p)=(\mathbb{F}L)(q,dq/dt)$ satisfies <strong>Hamilton's equations</strong></p>
 <p>$$
-dq^{i}/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q^i} .
+\boxed{\;dq^{i}/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q^i}\;} .
 $$</p>
 <p><em>Proof.</em> The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $dq/dt$; the envelope theorem gives $\partial H/\partial p_i=dq^{i}/dt$ and $\partial H/\partial q^i = -\partial L/\partial q^i$, so that $dp_{i}/dt = \frac{d}{dt}\partial L/\partial\left(dq^{i}/dt\right)=\partial L/\partial q^i=-\partial H/\partial q^i$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,dq/dt)$ to $(q,p)$ a diffeomorphism.</p>
 <p><strong>Remark (the modified Hamilton principle).</strong> Hamilton's equations follow from a variational principle in which the coordinates and the momenta are varied independently. For the <strong>modified Lagrangian</strong></p>
@@ -270,7 +270,7 @@ $$</p>
 <p>The bracket turns the differential equations of the flow into an algebraic statement about functions on phase space.</p>
 <p><strong>Theorem (the bracket formulation).</strong> Along the flow of $X_H$, a smooth function $g(q,p,t)$ satisfies</p>
 <p>$$
-\frac{d}{dt}g = \{g,H\} + \frac{\partial g}{\partial t} ,
+\boxed{\;\frac{d}{dt}g = \{g,H\} + \frac{\partial g}{\partial t}\;} ,
 $$</p>
 <p>so that $g$ is a constant of the motion if and only if $\{g,H\}+\partial g/\partial t=0$; when $g$ has no explicit time dependence the condition is $\{g,H\}=0$.</p>
 <p><em>Proof.</em> The derivative of $g$ along a curve of the flow has one part from the motion in phase space and one part from the explicit time dependence, $\frac{d}{dt}g=dg(X_H)+\partial g/\partial t$, and $dg(X_H)=X_H(g)=\{g,H\}$ by the definition of the bracket.</p>

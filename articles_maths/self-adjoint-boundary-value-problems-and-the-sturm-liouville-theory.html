@@ -94,7 +94,7 @@ $$</p>
 <p>the domain of the realisation of $L$ under $B$ in the notation of <em>Differential Operators</em>.</p>
 <p><strong>Theorem (the boundary form is skew-Hermitian).</strong> For a formally self-adjoint operator $L=L^{\dagger}$ the boundary form is sesquilinear, linear in the first argument and conjugate-linear in the second, and</p>
 <p>$$
-\langle w,v\rangle_\partial = -\,\overline{\langle v,w\rangle_\partial} ,
+\boxed{\;\langle w,v\rangle_\partial = -\,\overline{\langle v,w\rangle_\partial}\;} ,
 $$</p>
 <p>so that $\langle w,w\rangle_\partial$ is purely imaginary and the form is the imaginary part of a Hermitian pairing of the boundary data; it is a function of the traces $\gamma w,\gamma v$ alone.</p>
 <p><em>Proof.</em> The concomitant is linear in $w$ and conjugate-linear in $v$, so the form is sesquilinear. Exchanging the roles of $w$ and $v$ in the Green formula and conjugating give $\overline{\langle v,w\rangle_\partial} = -\langle w,v\rangle_\partial$ for $L=L^{\dagger}$, which is the skew-Hermitian identity; taking $v=w$ gives $\langle w,w\rangle_\partial=-\overline{\langle w,w\rangle_\partial}$, so the value is purely imaginary. That the form depends only on the traces follows from the concomitant involving the derivatives of order at most $m-1$: the expression inside the boundary integral is computed from the values of those derivatives at $\partial\Omega$.</p>
@@ -105,7 +105,7 @@ $$</p>
 <p>that is, if the boundary form vanishes identically on the admissible subspace, equivalently if the admissible subspace is <strong>Lagrangian</strong> for the skew-Hermitian form on the boundary data. The pairing of the boundary data that produces the self-adjoint conditions is <em>The Adjoint Boundary Condition</em>, below.</p>
 <p><strong>Theorem (self-adjointness as the vanishing of the boundary term).</strong> Let $L$ be formally self-adjoint and let $B$ be a boundary condition. Then the realisation of $L$ under $B$ is symmetric,</p>
 <p>$$
-\langle Lw,v\rangle = \langle w,Lv\rangle \qquad \text{for every } w,v\in\mathcal{A} ,
+\boxed{\;\langle Lw,v\rangle = \langle w,Lv\rangle \qquad \text{for every } w,v\in\mathcal{A}\;} ,
 $$</p>
 <p>if and only if the problem is self-adjoint in the sense above; the difference of the two sides is exactly $-\langle w,v\rangle_\partial$.</p>
 <p><em>Proof.</em> By the Green formula, $\langle Lw,v\rangle-\langle w,Lv\rangle=\int_\Omega(Lw)\bar v-\int_\Omega w\overline{L^{\dagger}v} = \langle w,v\rangle_\partial$, since $L=L^{\dagger}$; the identity vanishes for all admissible pairs exactly when the boundary form does.</p>
@@ -128,7 +128,7 @@ $$</p>
 <h2 id="completeness">Completeness</h2>
 <p><strong>Theorem (completeness of the eigenfunction expansion).</strong> Let the problem $(L,B)$ be self-adjoint and suppose that the Green operator $G$ of <em>The Green Operator</em> exists, is compact and is self-adjoint on $L^2(\Omega)$. Then the eigenvalues of the problem form a real sequence $\lambda_1,\lambda_2,\dots$ tending to infinity in absolute value, each of finite multiplicity, the eigenfunctions $\varphi_n$ may be chosen orthonormal in $L^2(\Omega)$, and they are complete:</p>
 <p>$$
-f = \sum_{n\ge1}\langle f,\varphi_n\rangle\,\varphi_n , \qquad \|f\|^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle\bigr|^2 ,
+\boxed{\;f = \sum_{n\ge1}\langle f,\varphi_n\rangle\,\varphi_n , \qquad \|f\|^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle\bigr|^2\;} ,
 $$</p>
 <p>the first series converging in $L^2(\Omega)$ for every $f$.</p>
 <p><em>Proof.</em> The Green operator $G$ is the inverse of $L$ on the admissible subspace, and the eigenvector equation $G\varphi=\mu\varphi$ with $\mu\neq0$ is equivalent to $L\varphi=\mu^{-1}\varphi$ with $\varphi\in\mathcal{A}$; hence the eigenvalues of $G$ are the reciprocals of the eigenvalues of $L$, and the eigenfunctions are the same. The spectral theorem for a compact self-adjoint operator on a Hilbert space, that of <em>Banach and Hilbert Spaces</em>, gives an orthonormal basis of eigenvectors of $G$ with real eigenvalues tending to $0$; reading the reciprocals gives the completeness, the reality and the finiteness of the multiplicity for $L$. The expansion is the expansion in that basis.</p>

@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> (a) is immediate from the covers. (b) is the countable subadditivity of $\mathcal{H}^s$, with the reverse inequality from (a). (c) follows because a point has dimension zero and a countable union is countably stable. (d) follows because the image of a $\delta$-cover under a Hölder map is a $c\delta^\alpha$-cover whose contribution to the $s$-content picks up the factor $\delta^{s\alpha}$, and the two exponents must balance.</p>
 <p><strong>Theorem (comparison).</strong> For every bounded set $E$,</p>
 <p>$$
-\dim_H E \leq \underline{\dim}_B E \leq \overline{\dim}_B E ,
+\boxed{\;\dim_H E \leq \underline{\dim}_B E \leq \overline{\dim}_B E\;} ,
 $$</p>
 <p>and the inequalities can be strict on both sides. The Hausdorff dimension is countably stable and the box dimension is not; equality holds for the self-similar sets satisfying the open set condition, below.</p>
 <p><strong>Proof sketch.</strong> Covering $E$ by $N(E,\delta)$ sets of diameter $\delta$ gives $\mathcal{H}^s_\delta(E) \leq N(E,\delta)\delta^s$, which tends to $0$ for $s > \underline{\dim}_B E$; hence $\dim_H E \leq \underline{\dim}_B E$.</p>
@@ -150,7 +150,7 @@ $$</p>
 <p><strong>Definition (the open set condition).</strong> The system satisfies the <strong>open set condition</strong> if there is a nonempty bounded open set $V$ with $\bigcup_{i=1}^m f_i(V) \subseteq V$ and the images $f_i(V)$ pairwise disjoint.</p>
 <p><strong>Theorem (Moran, Hutchinson).</strong> Let $f_1,\ldots,f_m$ be a self-similar IFS on $\mathbb{R}^n$ satisfying the open set condition. Then</p>
 <p>$$
-\dim_H \Lambda = \dim_B \Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1 ,
+\boxed{\;\dim_H \Lambda = \dim_B \Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1\;} ,
 $$</p>
 <p>and $0 < \mathcal{H}^s(\Lambda) < \infty$.</p>
 <p><strong>Proof sketch.</strong> The open set condition arranges that the $k$-th level pieces $f_{i_1}\circ\cdots\circ f_{i_k}(V)$ are disjoint and each is a scaled copy of $V$, so the cover of $\Lambda$ by the level-$k$ pieces is close to optimal; the upper bound on the dimension is the count $\sum_{|i|=k}(\operatorname{diam} f_{i_1}\cdots f_{i_k}(V))^s \leq (\operatorname{diam}V)^s(\sum_i r_i^s)^k$, which stays bounded exactly at the root $s$, and the lower bound uses the disjointness and the mass distribution principle, which is the measure-theoretic input of Part III quoted here only in its covering form.</p>
@@ -183,7 +183,7 @@ $$</p>
 <h2 id="the-shape-of-the-theory">The Shape of the Theory</h2>
 <p><strong>Theorem (the dimension of a product).</strong> For Borel sets in Euclidean space,</p>
 <p>$$
-\dim_H(E_1\times E_2) \geq \dim_H E_1 + \dim_H E_2 , \qquad \dim_H(E_1\times E_2) \leq \dim_H E_1 + \overline{\dim}_B E_2 ,
+\boxed{\;\dim_H(E_1\times E_2) \geq \dim_H E_1 + \dim_H E_2 , \qquad \dim_H(E_1\times E_2) \leq \dim_H E_1 + \overline{\dim}_B E_2\;} ,
 $$</p>
 <p>and the second inequality can be strict when the box dimension of $E_2$ exceeds its Hausdorff dimension; the box dimension satisfies $\overline{\dim}_B(E_1\times E_2) \leq \overline{\dim}_B E_1 + \overline{\dim}_B E_2$.</p>
 <p><strong>Proof sketch.</strong> The upper bound is the product of covers; the lower bound is the Marstrand product theorem, whose proof uses a Fubini-type argument with the Hausdorff measure and therefore belongs to Part III, quoted here as standard.</p>

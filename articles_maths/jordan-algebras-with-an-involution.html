@@ -100,7 +100,7 @@ $$</p>
 <h3 id="the-decomposition-by-a-quadratic-extension">The Decomposition by a Quadratic Extension</h3>
 <p><strong>Theorem.</strong> Let $K/F$ be a quadratic extension with nontrivial automorphism $\varsigma$, and let $(J,\sigma)$ be a $K$-Jordan algebra with a $\varsigma$-semilinear involution. Then</p>
 <p>$$
-J = H(J) \oplus i\,H(J) ,
+\boxed{\;J = H(J) \oplus i\,H(J)\;} ,
 $$</p>
 <p>where $i \in K$ satisfies $\varsigma(i) = -i$ and $K = F\oplus Fi$; the sum is direct and is a decomposition of $J$ into two copies of the $F$-Jordan algebra $H(J)$.</p>
 <p><em>Proof.</em> For $x \in J$ put $h_1 = \tfrac12(x+\sigma(x))$ and $h_2 = \tfrac{1}{2i}(x-\sigma(x))$. Then $\sigma(h_1) = \tfrac12(\sigma(x)+x) = h_1$ and $\sigma(h_2) = \tfrac{1}{2\varsigma(i)}(\sigma(x)-x) = \tfrac{-1}{-2i}(\sigma(x)-x) = \tfrac{1}{2i}(x-\sigma(x)) = h_2$, so both lie in $H(J)$, and $x = h_1+ih_2$. If $h_1 + ih_2 = 0$ with $h_i \in H(J)$, applying $\sigma$ gives $h_1 - ih_2 = 0$, whence $2h_1 = 0$ and $2ih_2 = 0$, so $h_1 = h_2 = 0$ when $2 \neq 0$.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p>Let $A$ be an associative unital $F$-algebra with an involution $\ast$ in the sense of <em>Involutive Algebras</em>, with self-adjoint part $H(A,\ast) = \{a : a^* = a\}$. The special Jordan algebra $J = A^+$ has the halved product $x\bullet y = \tfrac12(xy+yx)$ of <em>Jordan Algebras</em>.</p>
 <p><strong>Theorem.</strong> The map $\sigma = \ast$ restricted to $J = A^+$ is a linear involution of the Jordan algebra $J$, and</p>
 <p>$$
-H(J) = H(A,\ast) ,
+\boxed{\;H(J) = H(A,\ast)\;} ,
 $$</p>
 <p>the self-adjoint part of $J$ being exactly the set of the $\ast$-self-adjoint elements of $A$; the self-adjoint part is a Jordan subalgebra of $A^+$.</p>
 <p><em>Proof.</em> $\ast$ is an anti-automorphism of $A$ with $\ast^2 = \mathrm{id}$, so $\sigma(x\bullet y) = \tfrac12((xy+yx))^* = \tfrac12(y^*x^*+x^*y^*) = \tfrac12(x^*y^*+y^*x^*) = \sigma(x)\bullet\sigma(y)$ by the commutativity of the symmetrised product; and $\sigma^2 = \mathrm{id}$. The fixed set is the $\ast$-self-adjoint part by definition, and it is closed under $\bullet$ by the theorem of the previous section.</p>

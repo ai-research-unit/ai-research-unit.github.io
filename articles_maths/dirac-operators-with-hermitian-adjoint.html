@@ -84,14 +84,14 @@ $$</p>
 <h3 id="self-adjointness">Self-Adjointness</h3>
 <p><strong>Theorem.</strong> The Dirac operator is formally self-adjoint:</p>
 <p>$$
-D^{*} = D .
+\boxed{\;D^{*} = D\;} .
 $$</p>
 <p><strong>Proof.</strong> By the composite rule of <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>, $(\rho(e_j)\partial/\partial x_j)^{*} = (\partial/\partial x_j)^{*}\rho(e_j^{\dagger}) = (-\partial/\partial x_j)(-\rho(e_j)) = \rho(e_j)\partial/\partial x_j$, the two sign flips cancelling; summing gives $D^{*} = D$.</p>
 <p><strong>Corollary (the reality and the orthogonality of the spectrum).</strong> A formally self-adjoint operator has real spectrum; on a finite-dimensional Hermitian space, and in the spectral problem of a self-adjoint operator in general, the eigenspaces are mutually orthogonal and the eigenvectors form an orthonormal basis. These are the standard consequences of self-adjointness with respect to a Hermitian form, and the spectral theory is <em>Unbounded Operators and Spectral Measures</em>; the finite-dimensional case is <em>Self-Adjoint and Skew Operators with Hermitian Adjoint</em> and <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>.</p>
 <h3 id="the-hermitian-square-and-positivity">The Hermitian Square and Positivity</h3>
 <p><strong>Theorem.</strong> For every $s$ in the module $S$ (in the analytic setting, for every $s$ in the domain of $D$),</p>
 <p>$$
-(D^2 s, s) = (Ds, Ds) = \lVert Ds\rVert^{2} \ge 0 ,
+\boxed{\;(D^2 s, s) = (Ds, Ds) = \lVert Ds\rVert^{2} \ge 0\;} ,
 $$</p>
 <p>so $D^2$ is a <strong>positive</strong> operator; and $D^{2} = D^{*}D$ because $D$ is self-adjoint. In particular $D$ has no negative eigenvalue and its kernel is the set of $s$ with $\lVert Ds\rVert = 0$.</p>
 <p><strong>Proof.</strong> $(D^2s,s) = (D(Ds),s) = (Ds, D^{*}s) = (Ds,Ds)$, using the self-adjointness of $D$; the norm expression is the positivity of the form of <em>Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint</em>, and the kernel statement follows because $\lVert Ds\rVert = 0$ iff $Ds = 0$ for a positive definite form.</p>
@@ -99,7 +99,7 @@ $$</p>
 <h3 id="the-splitting-of-the-module-by-the-kernel">The Splitting of the Module by the Kernel</h3>
 <p><strong>Theorem (Hodge splitting).</strong> Let $S$ be finite-dimensional (or, in the analytic setting of <em>Dirac Differential Operators</em>, let $D$ have closed range with finite-dimensional kernel). Then $S$ decomposes orthogonally,</p>
 <p>$$
-S = \ker D \oplus D(S) = \ker D \oplus \operatorname{im} D ,
+\boxed{\;S = \ker D \oplus D(S) = \ker D \oplus \operatorname{im} D\;} ,
 $$</p>
 <p>and the two summands are orthogonal and $D$-invariant.</p>
 <p><strong>Proof.</strong> For a self-adjoint operator on a Hermitian space, $\overline{\operatorname{im}D} = (\ker D)^{\perp}$, because $s \perp \operatorname{im}D$ iff $(s, Dt) = 0$ for all $t$ iff $(Ds,t) = 0$ for all $t$ iff $Ds = 0$; in finite dimensions the orthogonal complement of the kernel is exactly the image, and both are invariant under $D$ because $D$ commutes with itself and preserves its kernel.</p>

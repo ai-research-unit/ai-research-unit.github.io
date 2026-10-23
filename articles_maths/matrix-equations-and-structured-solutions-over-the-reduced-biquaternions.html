@@ -153,7 +153,9 @@ $$</p>
 <p><strong>The structure enters the vec identity through the encoding matrix, and the equation in several structured unknowns becomes one linear system over the algebra.</strong></p>
 <p><strong>Theorem (the structured system).</strong> Let $A_l\in\mathbb{B}_{\mathrm{r}}^{m\times n_l}$ and $B_l\in\mathbb{B}_{\mathrm{r}}^{s_l\times t}$ for $l=1,\dots,r$, let $E\in\mathbb{B}_{\mathrm{r}}^{m\times t}$, and let each unknown lie in a structure $L_l(n_l,s_l)$ of entry type with encoding matrix $\mathsf E_{L_l}$ and coordinates $\xi_{L_l}$. Then the equation $\sum_lA_lX_lB_l=E$ is equivalent to the algebra-valued linear system</p>
 <p>$$
-\mathsf C\,\xi=\mathrm{vec}(E),\qquad \mathsf C=\bigl[(B_1^{\mathsf T}\otimes A_1)\mathsf E_{L_1},\dots,(B_r^{\mathsf T}\otimes A_r)\mathsf E_{L_r}\bigr],\qquad \xi=\bigl(\xi_{L_1},\dots,\xi_{L_r}\bigr)^{\mathsf T},
+\boxed{\;
+\mathsf C\,\xi=\mathrm{vec}(E),\qquad \mathsf C=\bigl[(B_1^{\mathsf T}\otimes A_1)\mathsf E_{L_1},\dots,(B_r^{\mathsf T}\otimes A_r)\mathsf E_{L_r}\bigr],\qquad \xi=\bigl(\xi_{L_1},\dots,\xi_{L_r}\bigr)^{\mathsf T}
+\;},
 $$</p>
 <p>of size $mt\times\sum_ld_l$ over $\mathbb{B}_{\mathrm{r}}$, and the coefficient matrix $\mathsf C$ does not depend on the unknown.</p>
 <p><em>Proof.</em> The vec identity applied to each term gives $\mathrm{vec}(A_lX_lB_l)=(B_l^{\mathsf T}\otimes A_l)\mathrm{vec}(X_l)=(B_l^{\mathsf T}\otimes A_l)\mathsf E_{L_l}\xi_{L_l}$, and the sum of the vecs is the vec of the sum.</p>
@@ -162,11 +164,15 @@ $$</p>
 <p><strong>The system is a linear system over the algebra, and the sibling article's reduction solves it: the structured least squares solution is the pair of the two complex Moore–Penrose solutions.</strong></p>
 <p><strong>Theorem (the structured solution).</strong> The squared norm of the residual of the structured equation is half the sum of the two squared complex norms of the two components,</p>
 <p>$$
-K_{\mathrm F}\Bigl(\sum_{l}A_lX_lB_l-E\Bigr)=\tfrac12\Bigl(\bigl\lVert\mathsf C^{+}\xi^{+}-\mathrm{vec}(E)^{+}\bigr\rVert_{\mathrm F}^{2}+\bigl\lVert\mathsf C^{-}\xi^{-}-\mathrm{vec}(E)^{-}\bigr\rVert_{\mathrm F}^{2}\Bigr),
+\boxed{\;
+K_{\mathrm F}\Bigl(\sum_{l}A_lX_lB_l-E\Bigr)=\tfrac12\Bigl(\bigl\lVert\mathsf C^{+}\xi^{+}-\mathrm{vec}(E)^{+}\bigr\rVert_{\mathrm F}^{2}+\bigl\lVert\mathsf C^{-}\xi^{-}-\mathrm{vec}(E)^{-}\bigr\rVert_{\mathrm F}^{2}\Bigr)
+\;},
 $$</p>
 <p>and the least-norm least squares structured solution is</p>
 <p>$$
-\xi^{\pm}=\bigl(\mathsf C^{\pm}\bigr)_{\mathrm{MP}}\mathrm{vec}(E)^{\pm},\qquad X_l=\sum_{\lambda=1}^{d_l}\bigl(\xi_{L_l}\bigr)_{\lambda}S_\lambda,
+\boxed{\;
+\xi^{\pm}=\bigl(\mathsf C^{\pm}\bigr)_{\mathrm{MP}}\mathrm{vec}(E)^{\pm},\qquad X_l=\sum_{\lambda=1}^{d_l}\bigl(\xi_{L_l}\bigr)_{\lambda}S_\lambda
+\;},
 $$</p>
 <p>the Moore–Penrose inverses being taken in the complex field; the minimum is half the sum of the two independent complex minima, attained separately.</p>
 <p><em>Proof.</em> The structured system is a linear system $\mathsf C\xi=\mathrm{vec}(E)$ over $\mathbb{B}_{\mathrm{r}}$ with the unknown $\xi$ ranging over the algebra, and the objective is the entrywise norm $K_{\mathrm F}$; the sibling article's least squares theorem applies to it verbatim, its hypotheses being only the algebra and the norm. The two components of $\xi$ are independent because $\xi$ ranges over the whole algebra, and the encoding matrices have real entries, so the structure is invisible to the idempotent decomposition and the two complex problems are the reductions of the same structured system.</p>

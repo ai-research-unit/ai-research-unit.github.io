@@ -207,7 +207,7 @@ $$
 so $\mathbb{C}[\tilde{Q}]=\operatorname{span}_{\mathbb{C}}\{e_t,\tilde{Q}\}$, of dimension two when $B\neq0$ or $\vec Q\neq0$, and one, equal to $\mathbb{C}e_t$, when $\vec Q=0$.</p>
 <p><strong>Theorem (Idempotent Principle, oscillatory regime).</strong> Let $f$ be defined by a power series with radius of convergence $\rho$, and let $B\neq0$ with $\lvert\lambda_\pm\rvert<\rho$. Then</p>
 <p>$$
-\boxed{f(\tilde{Q})=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-,\qquad B\neq0.}
+\boxed{\; f(\tilde{Q})=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-,\qquad B\neq0 \;}
 $$</p>
 <p><strong>Proof.</strong> The eigenvalue decomposition gives $\tilde Q^n=\lambda_+^n\tilde\Pi_++\lambda_-^n\tilde\Pi_-$ for every $n\geq0$ (<em>Eigenbasis of a Biquaternion</em>, §<em>Powers, Polynomial Calculus, and the Group of Units</em>). Summing the series termwise, using $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$, gives the display; the rearrangement is legitimate because the series converges absolutely in each eigenvalue.</p>
 <p>The same display is the definition of the biquaternion extension of a function given by an integral, an inverse or another complex formula. In the nilpotent regime the idempotents are absent and the series truncates after the linear term, as computed in §<em>The Exponential</em> and §<em>The Logarithm</em>. The two regimes are the two isomorphism types of $\mathbb{C}[\tilde{Q}]$.</p>
@@ -233,7 +233,7 @@ $$</p>
 $$</p>
 <p>because $\lambda_\pm=Q_t\pm iB$ and $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ with $\vec\Xi=-i\vec U$. Hence</p>
 <p>$$
-\boxed{\exp(\tilde{Q}) = \exp(Q_t) \bigl(\cos B \, e_t + \sin B \, \vec U\bigr), \qquad B \neq 0.}
+\boxed{\; \exp(\tilde{Q}) = \exp(Q_t) \bigl(\cos B \, e_t + \sin B \, \vec U\bigr), \qquad B \neq 0 \;}
 $$</p>
 <p><strong>The case $B = 0$.</strong> If $B = 0$, then $\vec Q^2 = 0$, so $\vec Q^n = 0$ for all $n \geq 2$. The power series truncates to</p>
 <p>$$
@@ -434,11 +434,11 @@ $$</p>
 $$</p>
 <p>and every logarithm is</p>
 <p>$$
-\tilde Q_{\log}
+\boxed{\; \tilde Q_{\log}
 =\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-
 =\frac{\mu_++\mu_-}{2}\,e_t+\frac{\mu_+-\mu_-}{2i}\,\vec U,
 \qquad
-\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm,
+\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm \;},
 $$</p>
 <p>the second equality using $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ and $\vec\Xi=-i\vec U$. This is the <strong>eigenvalue formula</strong>. It is the exact biquaternion form of the quaternion formula, with the real angle replaced by the complex angle</p>
 <p>$$
@@ -705,7 +705,7 @@ $$</p>
 </table></div>
 <p>,<strong>Right inverse.</strong> For every $\tilde Q\in\mathbb B^\times$,</p>
 <p>$$
-\exp(\operatorname{Log}\tilde Q)=\tilde Q.
+\boxed{\; \exp(\operatorname{Log}\tilde Q)=\tilde Q \;}.
 $$</p>
 <p>This is the construction of the principal logarithm: in the oscillatory regime, $\exp((\operatorname{Log}\lambda_\pm)\tilde\Pi_\pm)=\lambda_\pm \tilde\Pi_\pm$; in the nilpotent regime, $\exp(\operatorname{Log}Q_t\,e_t+\vec Q/Q_t)=Q_t e_t+\vec Q$; in the scalar case, $\exp(\operatorname{Log}Q_t)=Q_t$.</p>
 <p><strong>Left inverse.</strong> For every $\tilde Q_1\in D$,</p>
@@ -732,11 +732,11 @@ $$</p>
 <p>On the complement of the walls the logarithm is real-analytic, and its differential at $\tilde Q$ is the inverse of the differential of the exponential at $\operatorname{Log}\tilde Q$. It is not left or right multiplication by $\tilde Q^{-1}$.</p>
 <p>For $B\neq0$, with the eigenprojections $\tilde\Pi_\pm$ and the eigenvalues $\lambda_\pm$,</p>
 <p>$$
-d\operatorname{Log}_{\tilde Q}(H)
+\boxed{\; d\operatorname{Log}_{\tilde Q}(H)
 =\frac{\tilde\Pi_+H\tilde\Pi_+}{\lambda_+}
 +\frac{\tilde\Pi_-H\tilde\Pi_-}{\lambda_-}
 +\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{\lambda_+-\lambda_-}
-\bigl(\tilde\Pi_+H\tilde\Pi_-+\tilde\Pi_-H\tilde\Pi_+\bigr).
+\bigl(\tilde\Pi_+H\tilde\Pi_-+\tilde\Pi_-H\tilde\Pi_+\bigr) \;}.
 $$</p>
 <p>This is the Fréchet derivative of the matrix logarithm, read in the algebra. If $H$ commutes with $\tilde Q$, the cross terms vanish and</p>
 <p>$$

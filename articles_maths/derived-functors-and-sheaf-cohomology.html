@@ -112,7 +112,7 @@ $$</p>
 $$</p>
 <p>be a resolution of $\mathcal{F}$ — a complex of sheaves, exact at every stage including $\mathcal{A}^0$, with only $\mathcal{F}$ in degree $-1$ — such that the cohomological $\delta$-functor $T^i = H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr)$ is effaceable; for instance, such that each $\mathcal{A}^i$ is acyclic, $H^j(X,\mathcal{A}^i) = 0$ for $j>0$. Then the natural map</p>
 <p>$$
-H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr) \to H^i(X,\mathcal{F})
+\boxed{\;H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr) \to H^i(X,\mathcal{F})\;}
 $$</p>
 <p>induced by lifting $\mathcal{F}\to\mathcal{A}^\bullet$ to injective resolutions is an isomorphism for every $i$.</p>
 <p><em>Proof.</em> The functor $T^i = H^i(\Gamma(X,\mathcal{A}^\bullet))$ is a cohomological $\delta$-functor in $\mathcal{F}$ with $T^0 = \ker(d^0) = \Gamma(X,\mathcal{F})$ by the exactness of the resolution at $\mathcal{A}^0$, and the six-term exact sequence of a short exact sequence of complexes gives the connecting morphisms. If each $\mathcal{A}^i$ is acyclic, $T^i$ is effaceable, since embedding $\mathcal{F}$ in an acyclic $\mathcal{G}$ makes the comparison map $T^i(\mathcal{F})\to T^i(\mathcal{G})$ factor through $H^i(X,\mathcal{G}) = 0$; the complex case is the same argument with the defining property of effaceability. The corollary above then identifies $T^\bullet$ with $H^\bullet(X,-)$.</p>
@@ -138,7 +138,7 @@ $$</p>
 <p>and when $\mathcal{A}^\bullet$ is a resolution of a single sheaf $\mathcal{F}$, the hypercohomology is $H^i(X,\mathcal{F})$, so that the two spectral sequences compute the cohomology of $\mathcal{F}$ from a resolution whose terms need not be acyclic.</p>
 <p><strong>Theorem (the Grothendieck spectral sequence).</strong> Let $F : \mathcal{A}\to\mathcal{B}$ and $G : \mathcal{B}\to\mathcal{C}$ be left exact functors between abelian categories, and suppose that $F$ sends injective objects of $\mathcal{A}$ to $G$-acyclic objects of $\mathcal{B}$ (that is, $R^jG(F(I)) = 0$ for $j>0$ and $I$ injective). Then for every object $A$ of $\mathcal{A}$ there is a spectral sequence of cohomological type</p>
 <p>$$
-E_2^{n,m} = \bigl(R^pG\bigr)\bigl(R^qF(A)\bigr) \Longrightarrow R^{p+q}(G\circ F)(A),
+\boxed{\;E_2^{n,m} = \bigl(R^pG\bigr)\bigl(R^qF(A)\bigr) \Longrightarrow R^{p+q}(G\circ F)(A)\;},
 $$</p>
 <p>natural in $A$. When $\mathcal{A}$ is a category of sheaves, $\mathcal{B} = \mathcal{C} = \mathbf{Ab}$, $F = f_*$ for a continuous map $f : X\to Y$ and $G = \Gamma(Y,-)$, the hypothesis holds and the sequence becomes the <strong>Leray spectral sequence</strong></p>
 <p>$$
@@ -152,7 +152,7 @@ $$</p>
 $$</p>
 <p>the <strong>five-term exact sequence</strong> of the spectral sequence, obtained from the edge homomorphisms and the differential $d_2 : E_2^{0,1}\to E_2^{2,0}$. For the Leray spectral sequence it reads</p>
 <p>$$
-0 \to H^1(Y,f_*\mathcal{F})\to H^1(X,\mathcal{F})\to H^0(Y,R^1f_*\mathcal{F})\xrightarrow{\ d_2\ } H^2(Y,f_*\mathcal{F})\to H^2(X,\mathcal{F}),
+\boxed{\;0 \to H^1(Y,f_*\mathcal{F})\to H^1(X,\mathcal{F})\to H^0(Y,R^1f_*\mathcal{F})\xrightarrow{\ d_2\ } H^2(Y,f_*\mathcal{F})\to H^2(X,\mathcal{F})\;},
 $$</p>
 <p>which is the exact sequence used to compute the cohomology of a fibration and of a covering map.</p>
 <h2 id="derived-functors-of-the-direct-image">Derived Functors of the Direct Image</h2>

@@ -79,7 +79,7 @@
 <p><strong>Definition.</strong> Let $M$ be a smooth manifold and let $\mathrm{X}(M)$ be the space of smooth vector fields on $M$. An <strong>integral curve</strong> of $X \in\mathrm{X}(M)$ through $p \in M$ is a smooth curve $\gamma:I\to M$ on an interval $I \ni0$ with $\gamma(0)=p$ and $\gamma'(t)=X(\gamma(t))$; the <strong>local flow</strong> of $X$ is the map $\varphi:\mathcal D\to M$, $\mathcal D$ an open neighbourhood of $\{0\}\times M$ in $\mathbb{R}\times M$, defined by $\varphi(t,p)=\gamma_p(t)$ for the maximal integral curve $\gamma_p$ through $p$. The vector field is <strong>complete</strong> if $\mathcal D=\mathbb{R}\times M$, and then $\varphi_t=\varphi(t,\cdot)$ is a one-parameter group of diffeomorphisms: $\varphi_0=\mathrm{id}$, $\varphi_{s+t}=\varphi_s\circ\varphi_t$, and each $\varphi_t$ is a diffeomorphism of $M$ with inverse $\varphi_{-t}$.</p>
 <p><strong>Theorem (existence, uniqueness and smooth dependence).</strong> Let $M$ be a smooth manifold and $X \in\mathrm{X}(M)$. Then for every $p \in M$ there is a unique maximal integral curve through $p$, the domain $\mathcal D$ of the flow is open, the flow $\varphi:\mathcal D\to M$ is smooth, and for every $(t,p) \in\mathcal D$ the derivative $D_p\varphi_t$ is the fundamental matrix of the <strong>variational equation</strong></p>
 <p>$$
-\left(d\Phi/dt\right)(t)=DX(\varphi_t(p))\,\Phi(t), \qquad \Phi(0)=\mathrm{id},
+\boxed{\;\left(d\Phi/dt\right)(t)=DX(\varphi_t(p))\,\Phi(t), \qquad \Phi(0)=\mathrm{id}\;},
 $$</p>
 <p>so the derivative of the flow solves the linearised equation along the orbit. If $M$ is compact, every vector field is complete.</p>
 <p><em>Proof.</em> In a coordinate chart the equation $dx/dt=X(x)$ is a first-order system with a smooth right-hand side, and the existence, uniqueness and smooth dependence on the initial condition are the standard theorems of <em>Ordinary Differential Equations</em>; the openness of $\mathcal D$ and the maximality of the curves are the continuation properties of the solutions. For the compact case one covers $M$ by finitely many charts and uses the local existence time, which is bounded below by the compactness.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><em>Proof (sketch).</em> One writes the equation as $dx/dt=Ax+g(x)$ with $g=O(\|x\|^2)$ and constructs the homeomorphism as a limit of conjugacies between the nonlinear flow truncated at large frequency and the linear flow, using the hyperbolicity to invert $A$ on the complement of the neutral spectrum and a fixed point argument in the Banach space of bounded maps. The details are the standard proof, cited below; the refinement to a $C^1$ linearisation fails in general, and the obstruction is the resonance of the eigenvalues.</p>
 <p><strong>Theorem (stable manifold theorem).</strong> Let $p$ be a hyperbolic fixed point of $X$ with $A=DX(p)$ and decomposition $T_pM=E^s\oplus E^u$. Then there are smooth <em>immersed</em> submanifolds $W^s(p)$ and $W^u(p)$, tangent at $p$ to $E^s$ and $E^u$, with</p>
 <p>$$
-W^s(p)=\{q:\varphi_t(q)\to p \text{ as } t\to+\infty\}, \qquad W^u(p)=\{q:\varphi_t(q)\to p \text{ as } t\to-\infty\},
+\boxed{\;W^s(p)=\{q:\varphi_t(q)\to p \text{ as } t\to+\infty\}, \qquad W^u(p)=\{q:\varphi_t(q)\to p \text{ as } t\to-\infty\}\;},
 $$</p>
 <p>of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent spaces vary smoothly. The theorem, its global form and the Hadamard–Perron construction of the manifolds are developed.</p>
 <h3 id="periodic-orbits-and-the-return-map">Periodic Orbits and the Return Map</h3>
@@ -134,7 +134,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $X$ be a smooth vector field on an open set $\Omega \subseteq\mathbb{R}^2$ and let $p$ be an isolated zero of $X$. The <strong>index</strong> $\operatorname{ind}_p(X)$ is the degree of the map $z\mapsto X(z)/|X(z)|$ from a small positively oriented circle around $p$ to the unit circle; equivalently, the winding number of $X$ along that circle. For a domain $\Omega$ with smooth boundary and finitely many zeros in its interior, $\operatorname{ind}_\Omega(X)$ is the winding number of $X$ along $\partial\Omega$.</p>
 <p><strong>Theorem (index and the Poincaré–Hopf theorem).</strong> (i) The index of an isolated zero is an integer, independent of the circle chosen small enough, and invariant under smooth changes of coordinates and under homotopies of $X$ that do not introduce zeros on the circle. (ii) If $\Omega$ is a domain with finitely many zeros of $X$ in its interior and no zeros on its boundary, then</p>
 <p>$$
-\operatorname{ind}_\Omega(X)=\sum_{p:X(p)=0}\operatorname{ind}_p(X).
+\boxed{\;\operatorname{ind}_\Omega(X)=\sum_{p:X(p)=0}\operatorname{ind}_p(X)\;}.
 $$</p>
 <p>(iii) If $M$ is a closed oriented surface and $X$ a smooth vector field on $M$ with finitely many zeros, then the sum of the indices of the zeros equals the Euler characteristic $\chi(M)$; in particular the sphere has no nonvanishing vector field, and the index of a source, a sink or a saddle is $+1,+1,-1$ respectively. The theorem is the Poincaré–Hopf theorem of <em>Differential Topology</em> and <em>Degree Theory and the Brouwer Fixed Point Theorem</em>, where the degree and the winding number are developed.</p>
 <h3 id="the-poincarebendixson-theorem">The Poincaré–Bendixson Theorem</h3>

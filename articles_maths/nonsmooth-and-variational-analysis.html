@@ -119,7 +119,7 @@ and for the composition $f\circ G$ with $G$ continuously differentiable the chai
 <p><strong>Proof sketch.</strong> For the maximum, the differentiability points of $f$ off the set where two of the $g_i$ agree have gradients among the active ones, and on the coincidence set the limits add nothing, so the convex hull of the active gradients is the whole of $\partial^\circ f$; the chain rule follows from the mean value theorem below and the upper semicontinuity; the minimality is a consequence of the definition and the fact that the limits of gradients against a sequence are contained in any upper semicontinuous convex-valued extension.</p>
 <p><strong>Theorem (the mean value theorem; Clarke).</strong> Let $f$ be locally Lipschitz on an open set containing the segment $[x,y]$. Then there is $z$ in the segment with
 $$
-f(y)-f(x)\in\langle\partial^\circ f(z),\,y-x\rangle ;
+\boxed{\;f(y)-f(x)\in\langle\partial^\circ f(z),\,y-x\rangle\;} ;
 $$
 and consequently $\lvert f(y)-f(x)\rvert\leq\max_{b\in\partial^\circ f(z)}\lvert b\rvert\,\lvert y-x\rvert$ for some $z$ in the segment, so that a bound on the generalised gradient gives a Lipschitz bound.</p>
 <p><strong>Proof sketch.</strong> The function $t\mapsto f(x+t(y-x))$ is locally Lipschitz on $[0,1]$; its derivative exists almost everywhere by Rademacher and is a limit of directional derivatives, and the fundamental theorem of calculus for the absolutely continuous function so obtained expresses the difference as the integral of the derivative, which is an element of the required convex set by the definition of the subdifferential and the mean value inequality.</p>
@@ -130,7 +130,7 @@ and consequently $\lvert f(y)-f(x)\rvert\leq\max_{b\in\partial^\circ f(z)}\lvert
 <h3 id="ekelands-variational-principle">Ekeland's Variational Principle</h3>
 <p><strong>Theorem (Ekeland).</strong> Let $(X,d)$ be a complete metric space and $f:X\to\mathbb{R}\cup\{+\infty\}$ lower semicontinuous and bounded below, with $f\not\equiv+\infty$. For every $\epsilon>0$ and every $x_0$ with $f(x_0)\leq\inf_Xf+\epsilon$ there is $x_\epsilon$ with
 $$
-f(x_\epsilon)\leq f(x_0), \qquad d(x_\epsilon,x_0)\leq1, \qquad f(x_\epsilon)\leq f(x)+\epsilon\, d(x,x_\epsilon)\quad\text{for all } x\in X .
+\boxed{\;f(x_\epsilon)\leq f(x_0), \qquad d(x_\epsilon,x_0)\leq1, \qquad f(x_\epsilon)\leq f(x)+\epsilon\, d(x,x_\epsilon)\quad\text{for all } x\in X\;} .
 $$
 In particular every lower semicontinuous functional bounded below on a complete metric space has, for every $\epsilon>0$, a point that is $\epsilon$-optimal and $\epsilon$-optimal for the perturbed functional.</p>
 <p><strong>Proof.</strong> Order the points by $x\preceq y$ iff $f(x)\leq f(y)-\epsilon d(x,y)$, a partial order by the triangle inequality; the set of points below $x_0$ is closed by lower semicontinuity and its diameter is at most $1$, so the intersection of the chain of set-valued iterations is a point $x_\epsilon$ by completeness, and it is maximal in the order, which is the displayed inequality.</p>
@@ -165,7 +165,7 @@ $$
 <strong>Proof sketch.</strong> The problem is written as the minimisation of the locally Lipschitz function $f_0+\delta$, where $\delta$ is the indicator of the intersection of the active constraint sets; the mean value theorem and the common-normal form of the extremal principle applied to the epigraph and the constraint set give the multipliers, and the constraint qualification is exactly the condition under which the normal cone of the intersection is the sum of the normal cones.</p>
 <p><strong>Theorem (the limiting form; Mordukhovich).</strong> If $\bar x$ is a local minimiser of the problem above and a certain <strong>basic constraint qualification</strong> holds — the intersection of the limiting normal cones of the active constraint sets contains no nonzero positive combination adding to an element of $-N(\bar x;C)$ — then there are $\lambda_i\geq0$ with complementary slackness and
 $$
-0\in\partial f_0(\bar x)+\sum_i\lambda_i\partial f_i(\bar x)+N(\bar x;C),
+\boxed{\;0\in\partial f_0(\bar x)+\sum_i\lambda_i\partial f_i(\bar x)+N(\bar x;C)\;},
 $$
 with the limiting subdifferential and the limiting normal cone. The advantage of this form is that the multiplier rule holds under a qualification that is automatically verified when the constraints are described by a system with a surjective derivative; the disadvantage is that the objects are not convex, so the conditions are necessary and not sufficient.</p>
 <p><strong>Proof sketch.</strong> The limiting necessary conditions are the exact form of the extremal principle applied to the graph of the problem, with the fuzzy sum rule replacing the Clarke convexification; the constraint qualification is what makes the fuzzy sum rule exact.</p>

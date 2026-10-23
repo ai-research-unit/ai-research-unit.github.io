@@ -79,20 +79,20 @@
 <p><strong>Proof.</strong> Write $a = h + ik$ with $h,k$ self-adjoint; positivity gives $f((h+\lambda k)^*(h+\lambda k)) = f(h^2) + \lambda f(hk + kh) + \lambda^2 f(k^2) \geq 0$ as a real quadratic in the real $\lambda$, so its discriminant is non-positive and $f(hk+kh)^2 \leq 4f(h^2)f(k^2)$, forcing the bilinear form to be real-valued on the self-adjoint part; applying this to $a$ and the shared real linearity gives $f(a^*)=\overline{f(a)}$. The last statement is positivity applied to $a b$.</p>
 <p><strong>Theorem (Cauchy–Schwarz).</strong> Let $f$ be positive. Then for all $a,b \in A$,</p>
 <p>$$
-\lvert f(b^*a)\rvert^2 \leq f(a^*a)\,f(b^*b) ,
+\boxed{\;\lvert f(b^*a)\rvert^2 \leq f(a^*a)\,f(b^*b)\;} ,
 $$</p>
 <p>with equality if and only if $a$ and $b$ are linearly dependent modulo the null space of the form.</p>
 <p><strong>Proof.</strong> For complex $\lambda$ the quantity $\langle a - \lambda b, a - \lambda b\rangle_f = f((a-\lambda b)^*(a-\lambda b)) \geq 0$, and expanding gives $f(a^*a) - \lambda f(a^*b) - \bar\lambda f(b^*a) + \lvert\lambda\rvert^2 f(b^*b) \geq 0$; choosing $\lambda = f(b^*a)/f(b^*b)$ when $f(b^*b) \neq 0$ gives the inequality, and the equality case is the degenerate Cauchy–Schwarz statement for a positive semidefinite form.</p>
 <p><strong>Theorem (boundedness of a positive functional).</strong> Let $f$ be positive on a unital involutive Banach algebra. Then $f$ is bounded, with</p>
 <p>$$
-\lVert f\rVert = f(1) ,
+\boxed{\;\lVert f\rVert = f(1)\;} ,
 $$</p>
 <p>so a state is exactly a positive functional with $f(1) = 1$. In a $\mathrm{C}^*$-algebra every positive functional is bounded.</p>
 <p><strong>Proof.</strong> For $a$ with $\lVert a\rVert \leq 1$, Cauchy–Schwarz gives $\lvert f(a)\rvert^2 = \lvert f(1^*a)\rvert^2 \leq f(1^*1) f(a^*a) = f(1) f(a^*a)$; and $f(a^*a) \leq \lVert a^*a\rVert f(1) \leq \lVert a\rVert^2 f(1)$, since $f(1) - \lVert a^*a\rVert\cdot 1$ is positive and $f$ is positive on the positive cone, giving $\lvert f(a)\rvert \leq f(1)$; the reverse inequality is $f(1) = f(1\cdot1^*) \leq \lVert f\rVert$, so $\lVert f\rVert = f(1)$.</p>
 <h2 id="the-gns-construction">The GNS Construction</h2>
 <p><strong>Theorem (the construction).</strong> Let $f$ be a positive functional on $A$. Then $N_f = \{a : f(a^*a) = 0\}$ is a left ideal, the formula $\langle a + N_f, b + N_f\rangle_f = f(b^*a)$ is a well-defined inner product on $A/N_f$, and there is a unique $*$-representation $\pi_f : A \to B(H_f)$ on the completion with</p>
 <p>$$
-\pi_f(a)\,(b + N_f) = ab + N_f , \qquad \pi_f(a)\xi_f = a + N_f , \qquad f(a) = \langle \pi_f(a)\xi_f, \xi_f\rangle_f ,
+\boxed{\;\pi_f(a)\,(b + N_f) = ab + N_f , \qquad \pi_f(a)\xi_f = a + N_f , \qquad f(a) = \langle \pi_f(a)\xi_f, \xi_f\rangle_f\;} ,
 $$</p>
 <p>so that $f$ is the vector state of the cyclic vector $\xi_f = 1 + N_f$. The representation is <strong>cyclic</strong>, $\pi_f(A)\xi_f$ is dense in $H_f$, and the pair $(\pi_f, H_f)$ is the <strong>GNS representation</strong> of $f$.</p>
 <p><strong>Proof.</strong> Cauchy–Schwarz shows that $N_f$ is the radical of the positive semidefinite form $\langle a,b\rangle_f = f(b^*a)$; it is a left ideal because $f((xa)^*(xa)) = f(a^*x^*xa) \leq \lVert x\rVert^2 f(a^*a)$ for $a \in N_f$, by positivity of the functional $a \mapsto f(a^*x^*xa)$ or by the Cauchy–Schwarz applied to the modified functional. The form descends to the quotient and is positive definite there; left multiplication by $a$ passes to the quotient because $N_f$ is a left ideal, is bounded by the same estimate, and extends to the completion. The involution compatibility $\langle \pi_f(a)x, y\rangle = \langle x, \pi_f(a^*)y\rangle$ is the computation $f(y^*(ax)) = f((a^*y)^*x)$.</p>

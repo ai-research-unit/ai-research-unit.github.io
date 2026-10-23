@@ -86,7 +86,7 @@ $$</p>
 <h2 id="spherical-functions">Spherical Functions</h2>
 <p><strong>Theorem (the spherical-function identities).</strong> Let $\omega$ be a spherical function. Then</p>
 <p>$$
-\omega(e) = 1, \qquad \omega(x^{-1}) = \overline{\omega(x)}, \qquad |\omega(x)|\leq1,
+\boxed{\;\omega(e) = 1, \qquad \omega(x^{-1}) = \overline{\omega(x)}, \qquad |\omega(x)|\leq1\;},
 $$</p>
 <p>and $\omega$ is positive definite; conversely a normalised positive definite bi-$K$-invariant function satisfying the integral equation is spherical.</p>
 <p><strong>Proof.</strong> Setting $x = y = e$ in the integral equation and using $\omega\ne0$ gives $\omega(e) = \omega(e)^2$, so $\omega(e) = 1$ or $\omega(e) = 0$; the second forces $\omega\equiv0$ by the equation, so $\omega(e) = 1$. Positivity is Godement's theorem that a spherical function is a matrix coefficient of a spherical representation, quoted from the references; the Hermitian property $\omega(x^{-1}) = \overline{\omega(x)}$ and the bound $|\omega(x)|\leq1$ are then the elementary properties of a positive definite function, established in <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p>It is bi-$K$-invariant, because both the vector and the inner product are $K$-invariant, and it is normalised, $\omega_\pi(e) = 1$.</p>
 <p><strong>Theorem (the zonal spherical function is spherical).</strong> For $\pi\in\operatorname{Irr}(G,K)$ and a $K$-fixed unit vector $\xi$, the zonal spherical function satisfies the integral equation</p>
 <p>$$
-\int_K\omega_\pi(xky)\,dk = \omega_\pi(x)\omega_\pi(y),
+\boxed{\;\int_K\omega_\pi(xky)\,dk = \omega_\pi(x)\omega_\pi(y)\;},
 $$</p>
 <p>and $\omega_\pi$ is positive definite; the representation $\pi$ is recovered from $\omega_\pi$ as its GNS representation, and the pair $(\pi,\xi)$ is determined by $\omega_\pi$ up to unitary equivalence.</p>
 <p><strong>Proof.</strong> The $K$-fixed subspace $\mathcal{H}_\pi^K$ is one-dimensional when $\pi$ is irreducible and spherical and the pair is a Gelfand pair (multiplicity one), so the projection $P_\xi$ onto $\mathbb{C}\xi$ is the unique $K$-invariant rank-one projection and $\int_K\pi(k)dk = P_\xi$; hence $\int_K\omega_\pi(xky)dk = \int_K\langle\pi(x)\pi(k)\pi(y)\xi,\xi\rangle dk = \langle\pi(x)P_\xi\pi(y)\xi,\xi\rangle$, and $\pi(y)\xi = \omega_\pi(y)\xi + $ (a vector orthogonal to $\xi$). Squaring the projection gives the equation. Positive definiteness is the matrix-coefficient property of <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>, and the recovery is the GNS correspondence there.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p>which is the Gelfand transform of the commutative Banach algebra $L^1(K\backslash G/K)$.</p>
 <p><strong>Theorem (the transform is a <code>*</code>-homomorphism).</strong> The spherical transform satisfies</p>
 <p>$$
-\widehat{f*h}(\omega) = (\mathcal F f)(\omega)\,(\mathcal F h)(\omega), \qquad \widehat{f^*}(\omega) = \overline{(\mathcal F f)(\omega)} ,
+\boxed{\;\widehat{f*h}(\omega) = (\mathcal F f)(\omega)\,(\mathcal F h)(\omega), \qquad \widehat{f^*}(\omega) = \overline{(\mathcal F f)(\omega)}\;} ,
 $$</p>
 <p>and it is injective with dense image in $C_0(\Sigma(G,K))$; the spherical functions are the evaluations at the points of the spectrum.</p>
 <p><strong>Proof.</strong> The multiplicativity is the multiplicativity of the Gelfand transform; the involution identity uses that every character of a commutative Banach <code>*</code>-algebra with isometric involution is Hermitian, which is condition (ii) of the Gelfand-pair criterion. Injectivity is semisimplicity and density is the Gelfand–Naimark theorem for commutative Banach <code>*</code>-algebras.</p>

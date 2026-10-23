@@ -86,7 +86,7 @@ $$</p>
 <h3 id="linear-topologies">Linear Topologies</h3>
 <p><strong>Definition.</strong> A topology on $M$ is <strong>linear</strong> if $M$ has a fundamental system of neighbourhoods of $0$ consisting of submodules. A topology on $R$ or on $M$ given by a descending chain of submodules</p>
 <p>$$
-M=\Omega_0 \supseteq \Omega_1 \supseteq \Omega_2 \supseteq \cdots
+\boxed{\;M=\Omega_0 \supseteq \Omega_1 \supseteq \Omega_2 \supseteq \cdots\;}
 $$</p>
 <p>is the topology in which a set is open if it is a union of cosets of the $\Omega_n$; equivalently, the $\Omega_n$ form a fundamental system of neighbourhoods of $0$.</p>
 <p><strong>Proposition.</strong> A descending chain of submodules $M=\Omega_0 \supseteq \Omega_1 \supseteq \cdots$ defines a topology in which a set is open exactly when it is a union of cosets of the $\Omega_n$, and the $\Omega_n$ are then a fundamental system of neighbourhoods of $0$. Addition and negation are continuous, so the topology is translation-invariant, and it is Hausdorff if and only if $\bigcap_nU_n=0$. The closure of a submodule $N$ is $\overline N=\bigcap_n(N+\Omega_n)$, and the quotient topology on $M/N$ is linear, with neighbourhoods of zero the images of the $\Omega_n$. Scalar multiplication is continuous when the topology on $R$ is discrete, and more generally when $\Omega_n=I^nM$ for an ideal $I$ and $R$ carries the $I$-adic topology; for an arbitrary topological ring it can fail, as the discrete topology on $M=\mathbb{R}$ over $R=\mathbb{R}$ shows: at the point $(0,1)$ the product is $0$, while the elements $\lambda \cdot 1$ for arbitrarily small nonzero $\lambda$ are nonzero, so no neighbourhood of $(0,1)$ maps into the open set $\{0\}$.</p>
@@ -100,7 +100,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>Cauchy net</strong> in $M$ is a net $(x_\lambda)$ such that for every neighbourhood $\Omega$ of $0$ there is $\lambda_0$ with $x_\lambda-x_\mu \in \Omega$ for $\lambda,\mu \ge \lambda_0$. $M$ is <strong>complete</strong> if every Cauchy net converges, and <strong>separated</strong> if Hausdorff.</p>
 <p><strong>Theorem (completion).</strong> Let $\mathcal{B}=\{\Omega\}$ be a fundamental system of neighbourhoods of $0$ of a Hausdorff topological module $M$, consisting of submodules and directed downwards. Then the <strong>completion</strong> of $M$ is</p>
 <p>$$
-\widehat M=\varprojlim_{\Omega \in \mathcal{B}} M/\Omega ,
+\boxed{\;\widehat M=\varprojlim_{\Omega \in \mathcal{B}} M/\Omega\;} ,
 $$</p>
 <p>the inverse limit of the discrete quotients; there is a continuous homomorphism $\iota:M \to \widehat M$ with dense image, $\widehat M$ is Hausdorff and complete, and for every complete Hausdorff topological module $N$ and every uniformly continuous homomorphism $f:M \to N$ there is a unique continuous $\widehat f:\widehat M \to N$ with $f=\widehat f \circ \iota$.</p>
 <p><em>Proof.</em> The quotients $M/\Omega$ are discrete and the transition maps are the natural projections; the inverse limit is a closed subspace of the product $\prod_{\Omega \in \mathcal{B}}M/\Omega$ of the discrete, hence Hausdorff, quotients, so it is Hausdorff. A Cauchy net in $M$ has a compatible system of images in the $M/\Omega$, and every compatible system lifts: this is the standard construction of the completion of a uniform space, adapted to the additive uniformity. The universal property is verified on the dense image and extended by continuity and uniqueness.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Definition.</strong> A topological module is <strong>profinite</strong> if it is an inverse limit of finite discrete modules, equivalently if it is compact, Hausdorff, totally disconnected and complete. A topological module is <strong>complete</strong> if $\iota:M \to \widehat M$ is an isomorphism.</p>
 <p><strong>Proposition.</strong> (i) Inverse limits of profinite modules are profinite; products of profinite modules are profinite; a closed submodule and a Hausdorff quotient of a profinite module are profinite. (ii) $\mathbb{Z}_p$ is profinite, and the <strong>profinite completion</strong> of $\mathbb{Z}$,</p>
 <p>$$
-\widehat{\mathbb{Z}}=\varprojlim_n \mathbb{Z}/n\mathbb{Z} \cong \prod_p \mathbb{Z}_p ,
+\boxed{\;\widehat{\mathbb{Z}}=\varprojlim_n \mathbb{Z}/n\mathbb{Z} \cong \prod_p \mathbb{Z}_p\;} ,
 $$</p>
 <p>is profinite, with $\mathbb{Z}$ dense in it.</p>
 <p><em>Proof.</em> (i) Inverse limits and products of compact Hausdorff totally disconnected spaces have the same property, and the module structure is compatible; a closed subspace of a compact space is compact, and a Hausdorff quotient of a compact space is compact. (ii) The Chinese remainder theorem identifies $\mathbb{Z}/n \cong \prod_{p \mid n}\mathbb{Z}/p^{v_p(n)}$, and passing to the limit gives the displayed product.</p>

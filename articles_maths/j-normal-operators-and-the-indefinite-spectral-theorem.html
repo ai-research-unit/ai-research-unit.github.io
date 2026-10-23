@@ -81,7 +81,7 @@ $$</p>
 <p><strong>Proof.</strong> For $J$-self-adjointness, $T^{\dagger}T=T^{2}=TT^{\dagger}$; for $J$-unitarity both products are the identity. The adjoint of $T^{\dagger}$ is $T$, and $T^{\dagger}$ trivially commutes with $T$ whenever $T$ does; powers of a $J$-normal operator commute with each other and with their adjoints by induction; inverses follow from $T^{\dagger}T=TT^{\dagger}$ by inversion; and commuting normal operators add, because every term in the expansion of $(S+T)^{\dagger}(S+T)$ and $(S+T)(S+T)^{\dagger}$ can be reordered to the same expression.</p>
 <p><strong>Theorem (the definite model of $J$-normality).</strong> In the coefficient basis, with $T^{*}$ the conjugate transpose and $E=\mathrm{diag}(1,-1,-1,-1)$, the operator $T$ is $J$-normal if and only if</p>
 <p>$$
-T^{*}\,E\,T\,E=E\,T\,E\,T^{*},
+\boxed{\; T^{*}\,E\,T\,E=E\,T\,E\,T^{*} \;},
 $$</p>
 <p>equivalently if and only if $T^{*}$ commutes with $J TJ$.</p>
 <p><strong>Proof.</strong> $T^{\dagger}=ET^{*}E$, so $T^{\dagger}T=ET^{*}ET$ and $TT^{\dagger}=TET^{*}E$. Multiplying the equality $ET^{*}ET=TET^{*}E$ by $E$ on the left and on the right gives $T^{*}ETE=ETET^{*}$, which is $T^{*}(ETE)=(ETE)T^{*}$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-spectral-symmetries">The Spectral Symmetries</h2>
 <p><strong>Theorem (the symmetry of the $J$-self-adjoint spectrum).</strong> If $T$ is $J$-self-adjoint then $T$ and $T^{*}$ have the same characteristic polynomial, so the spectrum of $T$, with multiplicities, is invariant under conjugation:</p>
 <p>$$
-\lambda\in\mathrm{spec}(T)\iff\bar\lambda\in\mathrm{spec}(T).
+\boxed{\; \lambda\in\mathrm{spec}(T)\iff\bar\lambda\in\mathrm{spec}(T) \;}.
 $$</p>
 <p><strong>Proof.</strong> $T=ES$ with $S$ self-adjoint, so $T^{*}=(ES)^{*}=SE$; the matrices $ES$ and $SE$ have the same characteristic polynomial, because $AB$ and $BA$ do for square matrices. Since $T^{*}$ is the conjugate transpose of $T$, its spectrum is the conjugate of the spectrum of $T$.</p>
 <p><strong>Theorem (the symmetry of the $J$-unitary spectrum).</strong> If $T$ is $J$-unitary then its spectrum is invariant under inversion in the unit circle,</p>
@@ -116,9 +116,9 @@ $$</p>
 <h2 id="the-normality-of-the-algebras-operators">The Normality of the Algebra's Operators</h2>
 <p><strong>Theorem (the three families are $J$-normal).</strong> For every biquaternion $\tilde{Q}$ the left multiplication $L_{\tilde{Q}}$, the right multiplication $R_{\tilde{Q}}$ and the sandwich $\Theta_{\tilde{Q}}$ are $J$-normal. Precisely,</p>
 <p>$$
-(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
+\boxed{\; (L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
 (R_{\tilde{Q}})^{\dagger}=L_{\bar{\tilde{Q}}},\qquad
-(\Theta_{\tilde{Q}})^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}},
+(\Theta_{\tilde{Q}})^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}} \;},
 $$</p>
 <p>and in each case the two factors of $T^{\dagger}T$ commute.</p>
 <p><strong>Proof.</strong> $[L_{\tilde{Q}}\tilde{Q}_2,\tilde{Q}_3]=\langle R_{\bar{\tilde{Q}}}\tilde{Q}_3,\tilde{Q}_2\rangle_{\natural*}$ was computed in <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>; then $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ and $L_{\tilde{Q}}L_{\tilde{Q}}^{\dagger}=L_{\tilde{Q}}R_{\bar{\tilde{Q}}}$, equal because left and right multiplications commute. The right case is the same. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\,\tilde{Q}}=\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t}$, and $\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t}=|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{2}\mathrm{id}$; the same value is obtained in the other order, because $\tilde{Q}$ and ${}^{\natural}\tilde{Q}$ have the same norm.</p>

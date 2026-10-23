@@ -99,18 +99,14 @@ $$</p>
 <p><em>Proof.</em> By continuity of $\exp$ relative to the rational exponential and the identity $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2\mathrm{Sc}\tilde q)$, which holds for rational multiples and extends by continuity; for pure $\tilde q$, $q_t = 0$ and the quaternion norm is one.</p>
 <h3 id="closed-form">Closed Form</h3>
 <p><strong>Theorem (closed form).</strong> For $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q\neq0$,</p>
-<p>$$
-\exp(\tilde q) = \exp(q_t)\Bigl(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\Bigr),
-$$</p>
+<p>$$ \boxed{\; \exp(\tilde q) = \exp(q_t)\Bigl(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\Bigr) \;} ,$$</p>
 <p>and for $\vec q = 0$ it reduces to the real exponential $\exp(q_t) = \exp(q_t)$.</p>
 <p><em>Proof.</em> Write $\vec q = \mu\rho$ with $\mu$ a pure unit and $\rho = |\vec q|\geq0$, so $\mu^2 = -1$. Then $(q_t+\mu\rho)^n$ may be expanded, and separating the terms by the parity of $n$ and summing the real exponential gives the displayed expression, exactly as for the complex exponential.</p>
 <p><strong>Corollary.</strong> The exponential commutes with neither addition nor multiplication of quaternions; it satisfies $\langle\exp \tilde q\rangle_{\natural} = \exp(2\mathrm{Sc}(\tilde q))$ and maps the imaginary subspace onto the unit sphere, where it is the parametrisation $\exp(\mu\theta) = \cos\theta+\mu\sin\theta$ for a pure unit $\mu$.</p>
 <p><em>Proof.</em> The failure of additivity and multiplicativity is the non-commutativity of the algebra; the quaternion norm identity is the previous proposition; the pure case is the closed form with $q_t = 0$.</p>
 <h3 id="surjectivity">Surjectivity</h3>
 <p><strong>Theorem.</strong> The exponential is surjective onto the group of units,</p>
-<p>$$
-\exp(\mathbb{H}) = \mathbb{H}^{\times} = \mathbb{H}\setminus\{0\},
-$$</p>
+<p>$$ \boxed{\; \exp(\mathbb{H}) = \mathbb{H}^{\times} = \mathbb{H}\setminus\{0\} \;} ,$$</p>
 <p>and it is surjective onto the unit sphere when restricted to the imaginary subspace.</p>
 <p><em>Proof.</em> Every non-zero quaternion has the polar form $\tilde q = |\tilde q|\tilde u$ with $|\tilde q| > 0$ and $\tilde u$ a unit quaternion; writing $\tilde u = \cos\theta+\mu\sin\theta$ with $\mu$ a pure unit and $\theta = \arccos(u_t)\in[0,\pi]$ gives $\tilde u = \exp(\mu\theta)$ by the closed form, and $|\tilde q| = \exp(\ln|\tilde q|)$. Hence $\tilde q = \exp(\ln|\tilde q|+\mu\theta)$. The unit-sphere statement is the case $\ln|\tilde q| = 0$.</p>
 <p><strong>Proposition.</strong> The exponential is not injective; its kernel is the union of the spheres of pure quaternions of radius $2\pi k$ together with the origin,</p>
@@ -121,9 +117,7 @@ $$</p>
 <p><em>Proof.</em> $\exp(\tilde q) = 1$ forces $\exp(q_t) = 1$ and $\sin|\vec q| = 0$ with $\cos|\vec q| = 1$, so $q_t = 0$ and $|\vec q| = 2\pi k$ for an integer $k\geq0$, the case $k = 0$ giving the origin; conversely any such pure quaternion gives $\exp = 1$ by the closed form. The restriction statement is the classical property of the complex exponential applied to each axis direction $\mu$.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Theorem.</strong> The group of units is the direct product of the positive scalars and the unit sphere,</p>
-<p>$$
-\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1), \qquad \tilde q = |\tilde q|\,\tilde u, \quad \tilde u = \frac{\tilde q}{|\tilde q|},
-$$</p>
+<p>$$ \boxed{\; \mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1), \qquad \tilde q = |\tilde q|\,\tilde u, \quad \tilde u = \frac{\tilde q}{|\tilde q|} \;} ,$$</p>
 <p>and the two factors commute and are the image under the exponential of the centre and of the imaginary subspace respectively.</p>
 <p><em>Proof.</em> The polar split is <em>Quaternion Norm and Invertibility</em>; the scale factor is $\exp(q_t)$ with $q_t$ real and the unit factor is $\exp(\vec q)$ up to the periodicity of the pure component, so the two exponential images are the two factors.</p>
 <p><strong>Theorem.</strong> The polar form and the exponential form are the same decomposition: every unit has the parametrisation</p>

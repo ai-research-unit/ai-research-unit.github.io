@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-adjointable-operators-are-the-left-multiplications">The Adjointable Operators are the Left Multiplications</h3>
 <p><strong>Theorem (the characterisation).</strong> A bounded linear $T$ is adjointable if and only if it is a left multiplication, $T=L_{c}$ with $c=T(1)$; then</p>
 <p>$$
-L_{c}^{\dagger}=L_{c^{*}},\qquad\text{that is,}\qquad L_{c}^{\dagger}(y)=c^{*}y .
+\boxed{\;L_{c}^{\dagger}=L_{c^{*}},\qquad\text{that is,}\qquad L_{c}^{\dagger}(y)=c^{*}y\;} .
 $$</p>
 <p><strong>Proof.</strong> Suppose $T^{\dagger}$ exists. Replace $x$ by $xa$ in the defining identity: on the left, $h(T(xa),y)=(T(xa))^{*}y$, and on the right, $h(xa,T^{\dagger}y)=a^{*}h(x,T^{\dagger}y)=a^{*}\bigl((Tx)^{*}y\bigr)=a^{*}(Tx)^{*}y$. The two are equal for every $y$, so $(T(xa))^{*}=a^{*}(Tx)^{*}$ and, taking the involution, $T(xa)=(Tx)\,a$: the operator is right $A$-linear. Evaluating at $x=1$ gives $T(a)=T(1)a$, and replacing $a$ by $x$ gives $T=L_{T(1)}$. Conversely $L_{c}$ is bounded with $\lVert L_{c}\rVert=\lVert c\rVert$, and $h(L_{c}x,y)=(cx)^{*}y=x^{*}c^{*}y=x^{*}(c^{*}y)=h(x,L_{c^{*}}y)$, so $L_{c}$ is adjointable with adjoint $L_{c^{*}}$.</p>
 <p><strong>Corollary (the adjointable subalgebra).</strong> The adjointable bounded linear operators are exactly $\{L_{c}:c\in A\}$, a closed subalgebra of $B(A)$ isometrically isomorphic to $A$; the right multiplications $R_{b}$ are adjointable exactly when $b$ is central, and the two-sided operators $T_{p,q}$ exactly when $q$ is central.</p>
@@ -112,7 +112,7 @@ $$</p>
 <h3 id="the-anti-automorphism">The Anti-Automorphism</h3>
 <p><strong>Theorem (the adjoint operation).</strong> On the adjointable operators the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two: for adjointable $S,T$ and $\lambda\in\mathbb{K}$,</p>
 <p>$$
-(S+T)^{\dagger}=S^{\dagger}+T^{\dagger},\qquad (\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger},\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T^{\dagger})^{\dagger}=T,\qquad \mathrm{id}^{\dagger}=\mathrm{id}.
+\boxed{\;(S+T)^{\dagger}=S^{\dagger}+T^{\dagger},\qquad (\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger},\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T^{\dagger})^{\dagger}=T,\qquad \mathrm{id}^{\dagger}=\mathrm{id}\;}.
 $$</p>
 <p><strong>Proof.</strong> Additivity is the additivity of $h$ in the slot that carries the operator; the scalar law is $h((\lambda T)x,y)=\varsigma(\lambda)h(Tx,y)=\varsigma(\lambda)h(x,T^{\dagger}y)=h(x,\varsigma(\lambda)T^{\dagger}y)$, using the linearity of $h$ in the second slot; the composite law is $h(STx,y)=h(Tx,S^{\dagger}y)=h(x,T^{\dagger}S^{\dagger}y)$; the law of order two is the defining identity read with the two arguments exchanged together with the Hermitian property $h(y,x)=h(x,y)^{*}$; and the identity is plainly self-adjoint. On the parameters the laws read $L_{c}^{\dagger}=L_{c^{*}}$, and $a\mapsto a^{*}$ is the involution.</p>
 <p><strong>Remark.</strong> The operation is $\varsigma$-semilinear and not $\mathbb{K}$-linear, exactly as in <em>The Sesquilinear Adjoint Operator</em>: an adjoint operation can be twisted by the pairing or by the elements, and here the twist $\varsigma$ of the base survives on the linear component. In the bilinear case $\varsigma=\mathrm{id}$ it is an ordinary involution of the adjointable subalgebra.</p>
@@ -143,7 +143,7 @@ $$</p>
 <p>the equality being the centrality of $\tau$.</p>
 <p><strong>Theorem (the adjoint exists after the reduction).</strong> Let $\tau$ be a continuous central functional whose reduction $h_{\tau}$ is <strong>perfect</strong>, the map $y\mapsto h_{\tau}(\cdot,y)$ a bijection onto $A^{*}$, so that every bounded linear functional on $A$ is represented by a vector through $h_{\tau}$ — the hypothesis of <em>The Sesquilinear Adjoint Operator</em>, satisfied for instance when $A$ is a Hilbert space and $h_{\tau}$ its inner product. Then every bounded operator is adjointable for $h_{\tau}$, and in particular</p>
 <p>$$
-L_{a}^{\dagger}=L_{a^{*}},\qquad L^{\varsigma}_{a}{}^{\dagger}=S_{1,a},\qquad R_{b}^{\dagger}=R_{b^{*}},\qquad T_{p,q}^{\dagger}=T_{p^{*},q^{*}},\qquad S_{a,b}^{\dagger}=S_{b,a},
+\boxed{\;L_{a}^{\dagger}=L_{a^{*}},\qquad L^{\varsigma}_{a}{}^{\dagger}=S_{1,a},\qquad R_{b}^{\dagger}=R_{b^{*}},\qquad T_{p,q}^{\dagger}=T_{p^{*},q^{*}},\qquad S_{a,b}^{\dagger}=S_{b,a}\;},
 $$</p>
 <p>the formulas of <em>The Sesquilinear Adjoint Operator</em>, where $L_{a}(x)=ax$ is the linear left multiplication and $L^{\varsigma}_{a}(x)=ax^{*}$ the conjugate one.</p>
 <p><strong>Proof.</strong> The representation of bounded functionals is the perfection of the form, the hypothesis of <em>The Sesquilinear Adjoint Operator</em>: a bounded functional $\ell$ is $\ell=h_{\tau}(\cdot,y_{0})$ for a unique $y_{0}$, and the map $\ell\mapsto y_{0}$ is its inverse. The form $h_{\tau}$ is sesquilinear, $\varsigma$-linear in the first slot and linear in the second, so the adjoint of a bounded operator exists and is unique by the representation. The four formulas are the algebraic identities of Part I, and they survive because the reduction is bounded: each is an identity of the bounded operators obtained by taking adjoints of the algebraic identity, and the trace pairing of Part I is $h_{\tau}$ read through the involution.</p>

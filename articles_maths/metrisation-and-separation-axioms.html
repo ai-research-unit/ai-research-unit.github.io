@@ -87,7 +87,7 @@
 </ul>
 <p>The axioms $T_3$, $T_{3\frac12}$ and $T_4$ are the corresponding regularity, complete regularity and normality conditions together with $T_1$:</p>
 <p>$$
-T_3 = \text{regular} + T_1, \qquad T_{3\frac12} = \text{completely regular} + T_1, \qquad T_4 = \text{normal} + T_1 .
+\boxed{\;T_3 = \text{regular} + T_1, \qquad T_{3\frac12} = \text{completely regular} + T_1, \qquad T_4 = \text{normal} + T_1\;} .
 $$</p>
 <p>A space satisfying $T_{3\frac12}$ is called a <strong>Tychonoff space</strong>. A normal space in which every closed set is a countable intersection of open sets is <strong>perfectly normal</strong>.</p>
 <p>The $T_1$ hypothesis in the second line is essential and not a technicality. A space with the trivial topology is regular, completely regular and normal by the definitions above, because its only closed sets are $\emptyset$ and $X$; but it is not Hausdorff when it has more than one point. Requiring $T_1$ excludes this, and it is the reason the chain of implications below is stated for the $T$-axioms.</p>
@@ -96,7 +96,7 @@ $$</p>
 <h3 id="the-implication-diagram">The Implication Diagram</h3>
 <p><strong>Theorem.</strong> The axioms are ordered as follows:</p>
 <p>$$
-T_4 \Longrightarrow T_{3\frac12} \Longrightarrow T_3 \Longrightarrow T_2 \Longrightarrow T_1 \Longrightarrow T_0 .
+\boxed{\;T_4 \Longrightarrow T_{3\frac12} \Longrightarrow T_3 \Longrightarrow T_2 \Longrightarrow T_1 \Longrightarrow T_0\;} .
 $$</p>
 <p><strong>Proof.</strong> $T_4 \Rightarrow T_{3\frac12}$: in a normal $T_1$ space a point $x$ outside a closed set $F$ has $\{x\}$ and $F$ disjoint closed sets, and Urysohn's lemma, proved from normality alone in the next section, supplies a continuous $f : X \to [0,1]$ with $f(x) = 0$ and $f = 1$ on $F$, which is complete regularity. $T_{3\frac12} \Rightarrow T_3$: if $f$ separates $x$ from the closed set $F$ as above, then $f^{-1}[0,1/2)$ and $f^{-1}(1/2,1]$ are disjoint open sets containing $x$ and $F$ respectively, which is regularity. $T_3 \Rightarrow T_2$: given $x \neq y$, the singleton $\{y\}$ is closed by $T_1$, and regularity separates $x$ from it. $T_2 \Rightarrow T_1$: a Hausdorff separation of $x$ and $y$ gives an open neighbourhood of $x$ missing $y$. $T_1 \Rightarrow T_0$ was proved above.</p>
 <p>None of the implications reverses, and the two middle ones reverse the order of the labels $T_3$ and $T_{3\frac12}$ often seen in the literature: complete regularity is the stronger condition, and it is the one Urysohn's lemma supplies. The <strong>Sorgenfrey plane</strong> is Tychonoff and not normal, so $T_{3\frac12}$ does not imply $T_4$; Mysior's example is a regular $T_1$ space that is not completely regular, so $T_3$ does not imply $T_{3\frac12}$; the <strong>Niemytzki plane</strong> is a Tychonoff space that is not normal; the space $[0,1]^{I}$ with the product topology for uncountable $I$ is compact Hausdorff and not first countable; and the trivial topology on two points is regular, completely regular and normal but not $T_1$.</p>
@@ -137,7 +137,7 @@ Then $f = 0$ on $A$, and $f = 1$ on $B$ because $\Omega_1 = X \setminus B$. For 
 <p><strong>Remark.</strong> The Tietze theorem is the extension statement dual to Urysohn's lemma: the lemma is the case in which $f$ is the two-valued function on the closed set $A \cup B$ taking the values $0$ and $1$, and the extension theorem is the general case. The theorem also holds for functions into $\mathbb{R}^n$, by applying it coordinatewise, and for a function into a separable metric space.</p>
 <p><strong>Theorem (Urysohn embedding lemma).</strong> Let $X$ be a $T_1$ space and let $(f_n)_{n \in \mathbb{N}}$ be a countable family of continuous functions $f_n : X \to [0,1]$ such that for every $x \in X$ and every neighbourhood $\Omega$ of $x$ there is $n$ with $f_n(x) > 0$ and $f_n = 0$ outside $\Omega$. Then
 $$
-F : X \longrightarrow [0,1]^{\mathbb{N}}, \qquad F(x) = (f_n(x))_{n \in \mathbb{N}},
+\boxed{\;F : X \longrightarrow [0,1]^{\mathbb{N}}, \qquad F(x) = (f_n(x))_{n \in \mathbb{N}}\;},
 $$
 is an embedding onto a subspace of the Hilbert cube.</p>
 <p><strong>Proof.</strong> The map $F$ is continuous because each coordinate is. If $x \neq y$, choose a neighbourhood $\Omega$ of $x$ with $y \notin \Omega$; the function $f_n$ of the hypothesis vanishes outside $\Omega$, so $f_n(y) = 0$ while $f_n(x) > 0$, and the images differ. Thus $F$ is injective. To see that $F$ is an embedding, let $\Omega$ be a neighbourhood of $x$ and choose $n$ with $f_n(x) > 0$ and $f_n = 0$ off $\Omega$; then $F^{-1}(V_n) \subseteq \Omega$, where $V_n = \{z : z_n > 0\}$ is an open subset of the cube: if $F(y) \in V_n$ then $f_n(y) > 0$, so $y \in \Omega$. Hence $F$ carries neighbourhoods of $X$ to traces of neighbourhoods of the cube, and the inverse is continuous on the image.</p>

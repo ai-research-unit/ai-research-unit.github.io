@@ -109,7 +109,7 @@ $$</p>
 <h3 id="elementary-embeddings-and-the-tarskivaught-criterion">Elementary Embeddings and the Tarski–Vaught Criterion</h3>
 <p><strong>Definition.</strong> An embedding $h : \mathcal{M} \to \mathcal{N}$ is <strong>elementary</strong> if for every formula $\varphi(x_1,\dots,x_n)$ and every tuple $a=(a_1,\dots,a_n)$ in $M$,</p>
 <p>$$
-\mathcal{M} \models \varphi[a_1,\dots,a_n] \iff \mathcal{N} \models \varphi[h(a_1),\dots,h(a_n)].
+\boxed{\;\mathcal{M} \models \varphi[a_1,\dots,a_n] \iff \mathcal{N} \models \varphi[h(a_1),\dots,h(a_n)]\;}.
 $$</p>
 <p>$\mathcal{M}$ is an <strong>elementary substructure</strong> of $\mathcal{N}$, written $\mathcal{M} \preceq \mathcal{N}$, if the inclusion is elementary.</p>
 <p>Elementary equivalence is the case of an elementary embedding in which no parameters are named; an elementary embedding is stronger than an embedding, because it preserves formulas with quantifiers and parameters. The two notions differ: the inclusion $\mathbb{N} \hookrightarrow \mathbb{Z}$ of ordered sets is an embedding, but it is not elementary, because the element $0$ has no predecessor in $\mathbb{N}$, and the density sentence</p>
@@ -156,7 +156,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> The first statement is immediate from the definition. For the second, a sentence is equivalent modulo $T$ to a quantifier-free sentence; if the quantifier-free sentences are decidable then so is the set of sentences provable from $T$, by enumerating derivations (which is possible by the completeness theorem) and deciding equivalence, and completeness follows because either $\sigma$ or $\neg\sigma$ reduces to a quantifier-free sentence that is decided.</p>
 <p><strong>Theorem (quantifier-elimination criterion).</strong> $T$ admits quantifier elimination if and only if for every quantifier-free formula $\varphi(x_1,\dots,x_n, y_1,\dots,y_m)$, every pair of models $\mathcal{M}, \mathcal{N}$ of $T$ with a common substructure $\mathcal{A}$, and every tuple $a=(a_1,\dots,a_m)$ in $A$,</p>
 <p>$$
-\mathcal{M} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m) \iff \mathcal{N} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m).
+\boxed{\;\mathcal{M} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m) \iff \mathcal{N} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m)\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> If $T$ admits quantifier elimination, then $\exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n,y_1,\dots,y_m)$ is equivalent modulo $T$ to a quantifier-free formula $\psi(y_1,\dots,y_m)$; for the tuple $a=(a_1,\dots,a_m)$ in the common substructure $\mathcal{A}$, the truth of $\psi(a_1,\dots,a_m)$ is decided inside $\mathcal{A}$ and hence is the same in $\mathcal{M}$ and in $\mathcal{N}$. Conversely, the criterion permits the construction, by induction on the number of quantifiers, of a quantifier-free equivalent for each formula, the quantifier step being handled by showing that the set of tuples satisfying $\exists x_1\cdots\exists x_n\,\varphi$ is already quantifier-free definable.</p>
 <p>The criterion reduces quantifier elimination to the solvability of quantifier-free formulas over a common substructure, and it is the standard verification. It is applied in the two examples below.</p>
@@ -196,7 +196,7 @@ $$</p>
 <p>The relation is an equivalence relation because $U$ is a filter; the quotient carries the structure defined coordinatewise and interpreted modulo $U$, and when all $\mathcal{M}_i$ equal a fixed $\mathcal{M}$ the result is the <strong>ultrapower</strong> $\mathcal{M}^I/U$.</p>
 <p><strong>Theorem (Łoś).</strong> For every formula $\varphi(x_1,\ldots,x_n)$ and every tuple $[f_1],\ldots,[f_n]$ of the ultraproduct,</p>
 <p>$$
-\prod_U \mathcal{M}_i \models \varphi[[f_1],\ldots,[f_n]] \iff \{i \in I : \mathcal{M}_i \models \varphi[f_1(i),\ldots,f_n(i)]\} \in U.
+\boxed{\;\prod_U \mathcal{M}_i \models \varphi[[f_1],\ldots,[f_n]] \iff \{i \in I : \mathcal{M}_i \models \varphi[f_1(i),\ldots,f_n(i)]\} \in U\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> Induction on the complexity of $\varphi$. For an atomic formula the statement is the definition of the coordinatewise interpretation modulo $U$. For a conjunction, the two sets whose membership in $U$ is asserted are the intersection of the two sets for the conjuncts, and an ultrafilter is closed under finite intersections and contains a set exactly when it contains its supersets. For a negation, use that an ultrafilter contains exactly one of a set and its complement. For a quantifier, the existential case is the substantive one: if the set of indices at which a witness exists lies in $U$, one chooses a witness at each such index using the axiom of choice and glues them into a function; the axiom of choice is used exactly here.</p>
 <h3 id="consequences">Consequences</h3>

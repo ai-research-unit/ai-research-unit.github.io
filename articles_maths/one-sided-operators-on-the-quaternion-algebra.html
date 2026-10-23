@@ -82,27 +82,21 @@
 <p><em>Proof.</em> Dimension by the intersection formula $4+4-1=7$; invertibility by the invertibility of the parameters.</p>
 <h2 id="the-adjoints-and-the-association-that-swaps-the-families">The Adjoints and the Association that Swaps the Families</h2>
 <p><strong>Theorem.</strong> With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$,</p>
-<p>$$
-L_{\tilde q_3}^{\sim}=R_{\tilde q_3},\qquad R_{\tilde q_4}^{\sim}=L_{\tilde q_4}.
-$$</p>
+<p>$$ \boxed{\; L_{\tilde q_3}^{\sim}=R_{\tilde q_3},\qquad R_{\tilde q_4}^{\sim}=L_{\tilde q_4} \;} .$$</p>
 <p><em>Proof.</em> $\langle\tilde q_3\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_3\tilde q_1\tilde q_2)=\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)=\langle\tilde q_1,\tilde q_2\tilde q_3\rangle$ by the cyclic invariance of the association functional, which is <em>Association and the Transpose on the Quaternion Algebra</em>, above this article in this category; the second identity is the mirror.</p>
 <p><strong>Corollary (the association).</strong> The transpose is an anti-isomorphism $\mathcal L\to\mathcal R$, $L_{\tilde q_3}\mapsto R_{\tilde q_3}$, and it is the identity on the scalars; it is the operator-level form of the association that exchanges the two factors of a product.</p>
 <p><strong>Corollary.</strong> $L_{\tilde q_3}$ is self-transpose exactly when $\tilde q_3$ is central, and so is $R_{\tilde q_3}$; the self-adjoint one-sided operators of the left family are the scalar multiplications, indexed by the centre $\mathbb{R}e_t$.</p>
 <p><em>Proof.</em> $L_{\tilde q_3}^{\sim}=R_{\tilde q_3}$, so self-transposeness is $L_{\tilde q_3}=R_{\tilde q_3}$, that is $\tilde q_3\tilde q=\tilde q\tilde q_3$ for all $\tilde q$, that is centrality.</p>
 <h2 id="the-self-adjoint-sector">The Self-Adjoint Sector</h2>
 <p><strong>Theorem.</strong> The self-adjoint operators of the span $\mathcal L+\mathcal R$ are the symmetric sums</p>
-<p>$$
-\{L_{\tilde q_3}+R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\},
-$$</p>
+<p>$$ \boxed{\; \{L_{\tilde q_3}+R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\} \;} ,$$</p>
 <p>a four-dimensional space; its one-dimensional part in the scalar line is $\{\lambda\,\mathrm{id}\}$, the self-adjoint left multiplications of the corollary above.</p>
 <p><em>Proof.</em> An operator of the span is $T=L_{\tilde q_3}+R_{\tilde q_4}$; its transpose is $R_{\tilde q_3}+L_{\tilde q_4}$, so $T$ is self-adjoint exactly when $L_{\tilde q_3-\tilde q_4}=R_{\tilde q_3-\tilde q_4}$, that is when $\tilde q_3-\tilde q_4$ is central, by the corollary above. Write $\tilde q_4=\tilde q_3-\lambda$ with $\lambda$ real; then $T=L_{\tilde q_3}+R_{\tilde q_3}-R_\lambda$ and $R_\lambda=\lambda\,\mathrm{id}$ is central, so $T=(L_{\tilde q_3}+R_{\tilde q_3})-\lambda\,\mathrm{id}$, and the family $\{L_{\tilde q_3}+R_{\tilde q_3}\}$ already contains the identity, at $\tilde q_3=\tfrac12e_t$; the space is therefore the four-dimensional family displayed, and its scalar part is the scalar line.</p>
 <p><strong>Corollary.</strong> The self-adjoint sector is the linear span of the identity and the operators $\tilde q\mapsto\tilde q_3\tilde q+\tilde q\tilde q_3$ for pure $\tilde q_3$; these last are the symmetrised multiplications, and they are the operators whose matrices are symmetric with respect to the Gram matrix $D$.</p>
 <p><em>Proof.</em> $L_{\tilde q_3}+R_{\tilde q_3}$ with $\tilde q_3=\lambda+\vec q_3$ is $2\lambda\,\mathrm{id}$ plus the pure part; the matrix statement is the formula $G^{\sim}=D\,G^{\mathsf T}D$ of <em>Association and the Transpose on the Quaternion Algebra</em>, above this article in this category, read at $G^{\sim}=G$.</p>
 <h2 id="the-skew-sector">The Skew Sector</h2>
 <p><strong>Theorem.</strong> The skew-adjoint operators of the span $\mathcal L+\mathcal R$ are the <strong>inner derivations</strong></p>
-<p>$$
-\{L_{\tilde q_3}-R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\}=\{\operatorname{ad}_{\tilde q_3}:\tilde q\mapsto\tilde q_3\tilde q-\tilde q\tilde q_3\},
-$$</p>
+<p>$$ \boxed{\; \{L_{\tilde q_3}-R_{\tilde q_3}:\tilde q_3\in\mathbb{H}\}=\{\operatorname{ad}_{\tilde q_3}:\tilde q\mapsto\tilde q_3\tilde q-\tilde q\tilde q_3\} \;} ,$$</p>
 <p>a three-dimensional space, vanishing exactly for central $\tilde q_3$.</p>
 <p><em>Proof.</em> $T=L_{\tilde q_3}+R_{\tilde q_4}$ is skew-adjoint exactly when $R_{\tilde q_3}+L_{\tilde q_4}=-L_{\tilde q_3}-R_{\tilde q_4}$, that is $L_{\tilde q_3+\tilde q_4}=-R_{\tilde q_3+\tilde q_4}$; evaluating at $\tilde q=e_t$ gives $(\tilde q_3+\tilde q_4)=-(\tilde q_3+\tilde q_4)$, so $\tilde q_3+\tilde q_4=0$; then $T=L_{\tilde q_3}-R_{\tilde q_3}$. The map $\tilde q_3\mapsto\operatorname{ad}_{\tilde q_3}$ is linear with kernel the centre, of dimension one, so the image has dimension $3$.</p>
 <p><strong>Corollary.</strong> $[\operatorname{ad}_{\tilde q_3},\operatorname{ad}_{\tilde q_4}]=\operatorname{ad}_{[\tilde q_3,\tilde q_4]}$, so the skew sector is a Lie algebra isomorphic to the pure quaternions with the cross product, and $\operatorname{ad}_{\tilde q_3}$ is the derivation of $\mathbb{H}$ by $\tilde q_3$.</p>

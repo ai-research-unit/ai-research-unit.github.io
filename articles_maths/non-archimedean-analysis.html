@@ -79,7 +79,7 @@
 <p><strong>Theorem.</strong> Let $K$ be complete and non-Archimedean and let $\sum_{n \geq 0} a_n$ be a series in $K$.</p>
 <p><strong>(a)</strong> The series converges if and only if $a_n \to 0$, and then
 $$
-\Bigl\lvert \sum_{n \geq 0} a_n \Bigr\rvert \leq \max_{n \geq 0} \lvert a_n \rvert ,
+\boxed{\;\Bigl\lvert \sum_{n \geq 0} a_n \Bigr\rvert \leq \max_{n \geq 0} \lvert a_n \rvert\;} ,
 $$
 with equality whenever the maximum is attained and the terms attaining it do not cancel.</p>
 <p><strong>(b)</strong> Convergence is unconditional: if $\sum_n a_n$ converges and $\sigma$ is a permutation of $\mathbb{N}$, then $\sum_n a_{\sigma(n)}$ converges to the same sum.</p>
@@ -139,7 +139,7 @@ $$
 the product over the positive integers not divisible by $p$, with $\mu$ the Möbius function.</p>
 <p><strong>Theorem.</strong> The product converges on $B(0,1)$, its coefficients are rational with denominators prime to $p$, so that $E_p \in \mathbb{Z}_{(p)}[[x]]$ has integral coefficients after the identification $\mathbb{Z}_{(p)} \subset \mathcal{O}$, and on the disc $B(0, \rho_{\exp})$ of convergence of the exponential,
 $$
-E_p(x) = \exp\Bigl( x + \frac{x^p}{p} + \frac{x^{p^2}}{p^2} + \cdots \Bigr) ,
+\boxed{\;E_p(x) = \exp\Bigl( x + \frac{x^p}{p} + \frac{x^{p^2}}{p^2} + \cdots \Bigr)\;} ,
 $$
 the series in the argument converging on $B(0,1)$ and its exponential on $B(0,\rho_{\exp})$. In particular $E_p(x) \equiv \exp x \pmod{x^{p}}$: the two series agree in degrees below $p$, while $E_p$, unlike $\exp$, has integral coefficients.</p>
 <p><strong>Proof sketch.</strong> The Möbius inversion identity $\sum_{n \mid m}\mu(n) = 0$ for $m > 1$, applied over the divisors coprime to $p$, gives the stated form of the logarithm: the coefficient of $x^m$ in $\log E_p$ is $\frac1m \sum_{n \mid m,\, (n,p)=1}\mu(n)$, which vanishes unless $m$ is a power of $p$. The denominators are prime to $p$ because the index $n$ is, so the logarithm series has integral coefficients up to the factor $1/n$, which is a unit, and the passage back by the exponential preserves integrality; hence $E_p \in \mathbb{Z}_{(p)}[[x]]$. Convergence on $B(0,1)$ follows because for $\lvert x \rvert < 1$ each factor is $1 + O(\lvert x\rvert^n)$, so the factors tend to $1$ and the product converges. The agreement in degrees below $p$ is the comparison of $\log E_p = \sum_k x^{p^k}/p^k$ with $\log\exp x = x$, the two differing first in degree $p$.</p>
@@ -158,7 +158,7 @@ the series in the argument converging on $B(0,1)$ and its exponential on $B(0,\r
 <h3 id="the-maximum-principle">The Maximum Principle</h3>
 <p><strong>Theorem (maximum modulus principle).</strong> Let $K$ be a complete non-Archimedean field with infinite residue field, let $f = \sum_n a_n x^n$ converge on $\overline{B}(0,r)$ and let $\lVert f \rVert_r = \sup_{\lvert x \rvert \leq r} \lvert f(x) \rvert$. Then
 $$
-\lVert f \rVert_r = \max_{n \geq 0} \lvert a_n \rvert r^n ,
+\boxed{\;\lVert f \rVert_r = \max_{n \geq 0} \lvert a_n \rvert r^n\;} ,
 $$
 and the supremum on the left is attained: there is $x_0$ with $\lvert x_0 \rvert \leq r$ and $\lvert f(x_0) \rvert = \lVert f \rVert_r$.</p>
 <p><strong>Proof sketch.</strong> The inequality $\lVert f \rVert_r \leq \max_n \lvert a_n \rvert r^n$ is the ultrametric inequality and holds always. For the reverse inequality put $s = \max_n \lvert a_n \rvert r^n$ and let $F$ be the finite set of indices $n$ with $\lvert a_n \rvert r^n = s$, with largest element $N$. The polynomial $P(\xi) = \sum_{n \in F} a^{\mathrm{res}}_n \xi^n$ over the residue field is nonzero, since $a^{\mathrm{res}}_N \neq 0$, so it has at most $\deg P$ roots; an infinite residue field therefore contains a $\xi$ with $P(\xi) \neq 0$. At a point $x_0$ with $\lvert x_0 \rvert = r$ and reduction $\xi$ the terms of index in $F$ all have absolute value $s$ and their sum is $a_N x_0^N P(\xi)/a^{\mathrm{res}}_N$, of absolute value $s$, while every term of index outside $F$ is strictly smaller; the equality case of the ultrametric inequality gives $\lvert f(x_0) \rvert = s$.</p>

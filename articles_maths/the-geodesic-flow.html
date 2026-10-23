@@ -97,7 +97,7 @@ $$</p>
 <h3 id="hyperbolicity-of-the-flow">Hyperbolicity of the Flow</h3>
 <p><strong>Theorem (Anosov).</strong> Let $M$ be a compact Riemannian manifold of negative sectional curvature. Then the geodesic flow $\varphi_t$ on $SM$ is an Anosov flow: the tangent bundle splits as</p>
 <p>$$
-T_vSM=E^s_v\oplus E^0_v\oplus E^u_v , \qquad E^0_v=\mathbb{R}X(v) ,
+\boxed{\;T_vSM=E^s_v\oplus E^0_v\oplus E^u_v , \qquad E^0_v=\mathbb{R}X(v)\;} ,
 $$</p>
 <p>with $X$ the spray, and there are constants $C,\lambda>0$ such that $\|D\varphi_t|_{E^s}\|\le C\exp(-\lambda t)$ and $\|D\varphi_{-t}|_{E^u}\|\le C\exp(-\lambda t)$ for $t \ge0$; the strongly stable and strongly unstable distributions $E^s,E^u$ are integrable, and their integral manifolds are the <strong>horospheres</strong>: the leaf of $E^s$ through $v$ is the set of the unit vectors based at the points of the horosphere through $\pi(v)$ centred at the endpoint $\gamma_v(+\infty)$, and the leaf of $E^u$ is the analogous set for the horosphere centred at $\gamma_v(-\infty)$.</p>
 <p><em>Proof (sketch).</em> A vector of $T_vSM$ is a Jacobi field along $\gamma_v$ with $J(0)$ and $J'(0)$ orthogonal to the velocity; the component perpendicular to $d\gamma_{v}/dt$ splits into the part whose norm decays exponentially and the part that grows, by the estimate of the previous section, uniformly in $v$ by the compactness and the strict negativity of the curvature. The integral manifolds are the level sets of the Busemann functions, which are the horospheres.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p>the sum of the positive Lyapunov exponents of the time-one map, by Pesin's formula of <em>Hyperbolic Dynamics and Anosov Systems</em>; the exponents are the rates of expansion of the Jacobi fields, so that for a surface with curvature $-k^2$ they are $\pm k$ on the unit tangent bundle and the entropy per unit time is $k$.</p>
 <p><strong>Theorem (Dinaburg–Manning; the volume entropy).</strong> Let $M$ be a compact Riemannian manifold of nonpositive curvature with universal cover $M^{\mathrm{cov}}$ and let $\mathrm{vol}$ be the volume of $M^{\mathrm{cov}}$. Then the topological entropy of the geodesic flow is the <strong>volume entropy</strong></p>
 <p>$$
-h_{\mathrm{top}}(\varphi)=\lim_{T\to\infty}\frac1T\log\mathrm{vol}(B(x,T)),
+\boxed{\;h_{\mathrm{top}}(\varphi)=\lim_{T\to\infty}\frac1T\log\mathrm{vol}(B(x,T))\;},
 $$</p>
 <p>which is independent of $x$; for a manifold with curvature in the interval $[-a^2,-b^2]$, $a \ge b>0$, the entropy satisfies $(n-1)b\le h_{\mathrm{top}}\le(n-1)a$, with $n=\dim M$, and the entropy is $(n-1)k$ for the space form of constant curvature $-k^2$. For a compact hyperbolic surface of curvature $-1$ the entropy per unit time is $1$, and the Liouville measure is the measure of maximal entropy.</p>
 <p><em>Proof (sketch).</em> The volume of the ball of radius $T$ in the universal cover grows at the same exponential rate as the number of the $T$-separated points in $SM$, which is the topological entropy by the Bowen definition of <em>Topological Dynamics</em>; the comparison with the space forms gives the bounds, since the Jacobi field estimates of the previous sections compare the volume growth with the constant curvature models.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>length spectrum</strong> of a compact Riemannian manifold is the set of the lengths of its closed geodesics, counted with multiplicity; a closed geodesic is the projection of a periodic orbit of the geodesic flow, and its length is the period. The <strong>prime geodesic theorem</strong> is the asymptotic count of the closed geodesics by length.</p>
 <p><strong>Theorem (prime geodesic theorem; Huber, Selberg).</strong> Let $M$ be a compact hyperbolic surface of curvature $-1$. Then the number of the closed geodesics of length at most $T$ satisfies</p>
 <p>$$
-\pi(T)=\#\{\gamma \text{ closed geodesic}:\ell(\gamma)\le T\}\sim\frac{\exp(T)}{T} \qquad (T\to\infty),
+\boxed{\;\pi(T)=\#\{\gamma \text{ closed geodesic}:\ell(\gamma)\le T\}\sim\frac{\exp(T)}{T} \qquad (T\to\infty)\;},
 $$</p>
 <p>the exponent $1$ being the topological entropy of the flow; for a compact negatively curved manifold of dimension $n$ and entropy $h$ the corresponding count grows like $\exp(hT)/(hT)$, and the closed geodesics equidistribute in $SM$ with respect to the Liouville measure, by the equidistribution theorem for the periodic orbits of an Anosov flow.</p>
 <p><strong>Theorem (zeta functions).</strong> The <strong>Ruelle zeta function</strong> of the geodesic flow,</p>

@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-involution-of-the-operator-algebra">The Involution of the Operator Algebra</h2>
 <p><strong>Theorem.</strong> The assignment $T \mapsto T^{*}$ is an involution of the $k$-algebra $E$:</p>
 <p>$$
-(T+S)^{*}=T^{*}+S^{*}, \qquad (\lambda T)^{*}=\lambda T^{*}, \qquad (TS)^{*}=S^{*}T^{*}, \qquad (T^{*})^{*}=T, \qquad \mathrm{id}^{*}=\mathrm{id} .
+\boxed{\;(T+S)^{*}=T^{*}+S^{*}, \qquad (\lambda T)^{*}=\lambda T^{*}, \qquad (TS)^{*}=S^{*}T^{*}, \qquad (T^{*})^{*}=T, \qquad \mathrm{id}^{*}=\mathrm{id}\;} .
 $$</p>
 <p>It is a $k$-linear anti-automorphism of $E$ of order two, and $(E,*)$ is an involutive algebra in the sense of <em>Involutive Algebras</em>.</p>
 <p><em>Proof.</em> Additivity and homogeneity follow from the linearity of the representing element in the preceding theorem, and anti-multiplicativity is the proposition above. For order two, use the symmetry of the pairing: $\langle T^{*}x,y\rangle=\langle y,T^{*}x\rangle=\langle Ty,x\rangle=\langle x,Ty\rangle$, the middle equality being the definition of $T^{*}$ read with its two arguments exchanged. Comparing $\langle T^{*}x,y\rangle=\langle x,T^{**}y\rangle$ with $\langle T^{*}x,y\rangle=\langle x,Ty\rangle$ and using nondegeneracy in $x$ gives $T^{**}y=Ty$ for every $y$. The identity is self-adjoint because $\langle \mathrm{id}\,x,y\rangle=\langle x,y\rangle=\langle x,\mathrm{id}\,y\rangle$.</p>
@@ -131,7 +131,7 @@ E^{+}=\{T \in E : T^{*}=T\}, \qquad E^{-}=\{T \in E : T^{*}=-T\}.
 $$</p>
 <p><strong>Theorem.</strong> $E^{+}$ and $E^{-}$ are $k$-linear subspaces of $E$ with</p>
 <p>$$
-E=E^{+}\oplus E^{-}, \qquad T=\tfrac12\bigl(T+T^{*}\bigr)+\tfrac12\bigl(T-T^{*}\bigr),
+\boxed{\;E=E^{+}\oplus E^{-}, \qquad T=\tfrac12\bigl(T+T^{*}\bigr)+\tfrac12\bigl(T-T^{*}\bigr)\;},
 $$</p>
 <p>and the involution acts as the identity on $E^{+}$ and as minus the identity on $E^{-}$. With the symmetrised product $S\bullet T=\tfrac12(ST+TS)$ the space $E^{+}$ is a Jordan algebra, with the commutator $[S,T]=ST-TS$ the space $E^{-}$ is a Lie algebra, and the two are tied by the inclusions $E^{+}\bullet E^{-}\subseteq E^{-}$ and $[E^{+},E^{-}]\subseteq E^{+}$, so that $(E^{+},E^{-})$ is the Jordan–Lie pair of the involution.</p>
 <p><em>Proof.</em> The spaces are the eigenspaces of the order-two linear map $*$ for the eigenvalues $1$ and $-1$, so they are subspaces intersecting in $0$ and summing to $E$ in characteristic not two, by the displayed averaging. The algebraic statements are those of <em>Involutive Algebras</em> and <em>The Self-Adjoint Part of an Algebra</em>, applied to the involutive algebra $(E,*)$. The inclusions are read off from anti-multiplicativity: for $S,T \in E^{+}$ one has $(ST)^{*}=T^{*}S^{*}=TS$, so $S\bullet T$ is self-adjoint and $[S,T]$ is skew-adjoint; for $S \in E^{+}$ and $T \in E^{-}$ one has $(ST)^{*}=T^{*}S^{*}=(-T)S=-TS$ and $(TS)^{*}=S^{*}T^{*}=S(-T)=-ST$, so $S\bullet T=\tfrac12(ST+TS)$ is skew-adjoint.</p>
@@ -146,7 +146,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the twisted pairing).</strong> The twisted pairing is symmetric and nondegenerate, and the map</p>
 <p>$$
-c_{\sigma} : E \to E, \qquad c_{\sigma}(T)=\sigma\,T\,\sigma,
+\boxed{\;c_{\sigma} : E \to E, \qquad c_{\sigma}(T)=\sigma\,T\,\sigma\;},
 $$</p>
 <p>is an involutive algebra automorphism of $E$ of order two.</p>
 <p><em>Proof.</em> For symmetry, $\{y,x\}=\tau(y\sigma(x))=\tau(\sigma(y\sigma(x)))=\tau(x\sigma(y))=\{x,y\}$, using the $\sigma$-invariance of $\tau$ and the anti-multiplicativity $\sigma(y\sigma(x))=\sigma(\sigma(x))\sigma(y)=x\sigma(y)$. For nondegeneracy, $\{x,y\}=0$ for all $y$ means $\tau(xz)=0$ for all $z$ after $y$ is replaced by $\sigma(y)$, which ranges over $A$ because $\sigma$ is bijective; the nondegeneracy of $\langle\cdot,\cdot\rangle$ then gives $x=0$. The map $c_{\sigma}$ is a composite of the anti-automorphism $\sigma$ with itself, hence is multiplicative: $c_{\sigma}(ST)=\sigma ST\sigma=(\sigma T\sigma)(\sigma S\sigma)=c_{\sigma}(T)c_{\sigma}(S)$; it is $k$-linear, unital, and $c_{\sigma}^{2}(T)=\sigma^{2}T\sigma^{2}=T$.</p>

@@ -94,7 +94,7 @@ $$</p>
 <p>The <strong>Hochschild homology</strong> is $HH_n(A,M)=H_n(C_\bullet(A,M))$. The <strong>Hochschild cohomology</strong> is $HH^n(A,M)=H^n(\operatorname{Hom}_{A^{\mathrm{e}}}(B_\bullet(A),M))$, computed from the complex with terms $\operatorname{Hom}_k(A^{\otimes n},M)$ and the dual boundary.</p>
 <p><strong>Theorem.</strong> There are natural isomorphisms</p>
 <p>$$
-HH_n(A,M)\cong\operatorname{Tor}_n^{A^{\mathrm{e}}}(A,M), \qquad HH^n(A,M)\cong\operatorname{Ext}_{A^{\mathrm{e}}}^n(A,M),
+\boxed{\;HH_n(A,M)\cong\operatorname{Tor}_n^{A^{\mathrm{e}}}(A,M), \qquad HH^n(A,M)\cong\operatorname{Ext}_{A^{\mathrm{e}}}^n(A,M)\;},
 $$</p>
 <p>where $A$ is regarded as an $A$-bimodule via the multiplication. In particular Hochschild homology is the left derived functor of the coinvariants $M\mapsto M_A=M\otimes_{A^{\mathrm{e}}}A$ and Hochschild cohomology is the right derived functor of the invariants $M\mapsto M^A=\operatorname{Hom}_{A^{\mathrm{e}}}(A,M)$.</p>
 <p><em>Proof.</em> The bar resolution is a free resolution of $A$ over $A^{\mathrm{e}}$ by the proposition, so applying $M\otimes_{A^{\mathrm{e}}}(-)$ computes the Tor groups and applying $\operatorname{Hom}_{A^{\mathrm{e}}}(-,M)$ computes the Ext groups; the identification of the complexes with the displayed Hochschild complexes is the isomorphism $M\otimes_{A^{\mathrm{e}}}B_n(A)\cong M\otimes_kA^{\otimes n}$ and its dual. The functorial description follows because $M\otimes_{A^{\mathrm{e}}}A$ is the coinvariant quotient of $M$ by the relations $am=ma$, and $\operatorname{Hom}_{A^{\mathrm{e}}}(A,M)$ is the invariant submodule.</p>
@@ -134,7 +134,7 @@ $$</p>
 <p><strong>Definition.</strong> A commutative $k$-algebra $A$ is <strong>smooth</strong> over $k$ if it is finitely presented and formally smooth: for every $k$-algebra surjection $A_1\to A_0$ with square-zero kernel, every $k$-algebra map $A\to A_0$ lifts to a $k$-algebra map $A\to A_1$. Equivalently, $A$ is smooth if it is a localisation of a polynomial algebra over $k$ followed by an étale extension; the equivalent formulations and the geometric content belong to Part II, and the algebraic definition just given suffices here. Write $\Omega^p_{A/k}=\Lambda^p_A\Omega^1_{A/k}$ for the $p$-th exterior power of the module of Kähler differentials.</p>
 <p><strong>Theorem (Hochschild–Kostant–Rosenberg).</strong> Let $A$ be a commutative $k$-algebra that is smooth over $k$. Then there are natural isomorphisms</p>
 <p>$$
-HH_n(A,A)\cong\Omega^n_{A/k}, \qquad HH^n(A,A)\cong\bigoplus_{p+q=n}\Lambda^p\operatorname{Der}_k(A,A)\otimes_A\Omega^q_{A/k}
+\boxed{\;HH_n(A,A)\cong\Omega^n_{A/k}, \qquad HH^n(A,A)\cong\bigoplus_{p+q=n}\Lambda^p\operatorname{Der}_k(A,A)\otimes_A\Omega^q_{A/k}\;}
 $$</p>
 <p>under which the Hochschild boundary corresponds to the de Rham differential and the shuffle products correspond to the exterior products.</p>
 <p><strong>Example.</strong> For the polynomial algebra $A=k[x_1,\dots,x_m]$ one has $\Omega^p_{A/k}$ free over $A$ with basis $dx_{i_1}\wedge\cdots\wedge dx_{i_p}$ for $i_1<\cdots<i_p$, so $HH_n(A,A)$ is free of rank $\binom{m}{n}$ for $0\le n\le m$ and zero for $n>m$. In particular $HH_0=A$, $HH_1=A^m$ and $HH_m(A,A)\cong A$.</p>
@@ -167,7 +167,7 @@ $$
 $$</p>
 <p><strong>Theorem (Gerstenhaber).</strong> The bracket makes $HH^{\bullet}(A,A)$ a graded Lie algebra of degree $-1$: it satisfies $[\varphi,\psi]=-(-1)^{(p+1)(q+1)}[\psi,\varphi]$ and the graded Jacobi identity
 $$
-(-1)^{(p+1)(r+1)}[[\varphi,\psi],\theta]+(-1)^{(q+1)(p+1)}[[\psi,\theta],\varphi]+(-1)^{(r+1)(q+1)}[[\theta,\varphi],\psi]=0
+\boxed{\;(-1)^{(p+1)(r+1)}[[\varphi,\psi],\theta]+(-1)^{(q+1)(p+1)}[[\psi,\theta],\varphi]+(-1)^{(r+1)(q+1)}[[\theta,\varphi],\psi]=0\;}
 $$
 on classes of degrees $p,q,r$, and the bracket is compatible with the cup product in the sense of a Poisson-type identity
 $$

@@ -86,7 +86,7 @@ $$</p>
 <p>The statements $c_gc_{g^{-1}}=\mathrm{id}=c_{g^{-1}}c_g$ and $c_e=\mathrm{id}$ are immediate.</p>
 <p><strong>Proposition (the composition law).</strong> For all $g, h \in G$,</p>
 <p>$$
-c_g \circ c_h = c_{gh}.
+\boxed{\;c_g \circ c_h = c_{gh}\;}.
 $$</p>
 <p><strong>Proof.</strong> For every $x$, $c_g(c_h(x)) = g(hxh^{-1})g^{-1} = (gh)x(gh)^{-1} = c_{gh}(x)$. The law says that the assignment $g\mapsto c_g$ is multiplicative, a fact whose interpretation as a homomorphism into $\operatorname{Aut}(G)$ belongs to <em>The Conjugation Representation</em>.</p>
 <p><strong>Proposition (the factorisation into one-sided translations).</strong> Let $L_g(x)=gx$ and $R_h(x)=xh$ be the left and the right translation by $g$ and $h$. Then</p>
@@ -101,7 +101,7 @@ $$</p>
 <p>The inner conjugations act on the set $G$: the assignment $(g,x)\mapsto c_g(x)$ satisfies $c_e=\mathrm{id}$ and $c_{gh}=c_gc_h$, so it is a left action of $G$ on itself. Its orbits are the <strong>conjugacy classes</strong> of <em>Groups</em>: two elements $x,y$ lie in the same orbit exactly when $y=gxg^{-1}$ for some $g$, which is the definition of conjugacy. The class of $x$ is written $\chi(x)$, and the classes partition $G$.</p>
 <p><strong>Proposition (the stabiliser is the centraliser).</strong> For $x \in G$ the stabiliser of $x$ under the conjugation action is the centraliser</p>
 <p>$$
-C_G(x) = \{ g \in G : gx = xg \},
+\boxed{\;C_G(x) = \{ g \in G : gx = xg \}\;},
 $$</p>
 <p>and the orbit–stabiliser theorem of <em>Transformation Groups</em> gives $|\chi(x)| = [G:C_G(x)]$, so the size of a class divides $|G|$ when $G$ is finite.</p>
 <p><strong>Proof.</strong> $c_g(x)=x$ is equivalent to $gx=xg$. The orbital statement is the orbit–stabiliser theorem applied to the action of $G$ on itself by conjugation.</p>
@@ -140,7 +140,7 @@ $$</p>
 <p>Multiplying on the right by $\mathrm{Ad}_h$ gives the claim, since $\mathrm{Ad}_h^{-1}=\mathrm{Ad}_{h^{-1}}$.</p>
 <p><strong>Proposition (its value on the centre).</strong> An element $z \in k[G]$ fixed by every inner conjugation is central, and the class operator acts on it by the scalar $|\chi|$:</p>
 <p>$$
-\mathrm{Ad}_\chi(z) = |\chi|\, z .
+\boxed{\;\mathrm{Ad}_\chi(z) = |\chi|\, z\;} .
 $$</p>
 <p><strong>Proof.</strong> An element is fixed by every $\mathrm{Ad}_g$ exactly when its coefficients are constant on conjugacy classes, which is the centrality statement of <em>Group Algebras</em>. For such a $z$ each term of the sum sends $z$ to itself, because $gzg^{-1}=z$ when $z$ is central, and there are $|\chi|$ terms.</p>
 <p>In particular, for the <strong>class sum</strong> $C_\psi=\sum_{h\in\psi} h$ of a conjugacy class $\psi$, the class sums being a basis of the centre of $k[G]$ by <em>Group Algebras</em>, the proposition gives $\mathrm{Ad}_\chi(C_\psi)=|\chi|\,C_\psi$. The class operators therefore act on the centre diagonally with the class sizes as eigenvalues. The product of two class operators on the centre, and the algebra of the centre that the product defines, are the class algebra of the representation theory and belong to the later categories; what is fixed here is the operator attached to a class and its commutation with the inner conjugations.</p>

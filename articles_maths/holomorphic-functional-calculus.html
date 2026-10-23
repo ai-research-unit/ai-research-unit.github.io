@@ -106,13 +106,13 @@ $$</p>
 <p><em>Proof.</em> Linearity is immediate from the linearity of the integral. For the product, use the resolvent identity and the identity $R(\lambda)R(\mu)=(\lambda-\mu)^{-1}(R(\mu)-R(\lambda))$ for $\lambda\neq\mu$ to reduce the double contour integral of $f(\lambda)g(\mu)R(\lambda)R(\mu)$ to the sum of the two integrals representing $f(a)g(a)$ and $g(a)f(a)$; the function $(\lambda-\mu)^{-1}$ has poles only on the diagonals $\lambda=\mu$, which the contours avoid. The constants are immediate: $1(a)=\frac{1}{2\pi i}\oint\Gamma R(\lambda)d\lambda=1$, and $\lambda(a)=\frac{1}{2\pi i}\oint\Gamma\lambda R(\lambda)d\lambda=a$. Continuity follows from the estimate $\|f(a)\|\le\frac{1}{2\pi}\ell(\Gamma)\max_\Gamma|f|\|R\|$.</p>
 <p><strong>Theorem (spectral mapping).</strong> For every $f$ holomorphic on a neighbourhood of $\sigma(a)$,</p>
 <p>$$
-\sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr) .
+\boxed{\;\sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr)\;} .
 $$</p>
 <p><em>Proof.</em> Quoted as standard. One direction is elementary: if $\mu=f(\lambda_0)$ for some $\lambda_0\in\sigma(a)$, write $f(\lambda)-f(\lambda_0)=(\lambda-\lambda_0)g(\lambda)$ with $g$ holomorphic, so $f(a)-f(\lambda_0)1=(a-\lambda_01)g(a)$, and since $a-\lambda_01$ is not invertible neither is $f(a)-\mu1$. The other direction uses the calculus applied to the function $1/(f(\lambda)-\mu)$ when $\mu\notin f(\sigma(a))$.</p>
 <p><strong>Corollary (invertibility criterion).</strong> If $f$ has no zero on $\sigma(a)$ then $f(a)$ is invertible, with $f(a)^{-1}=(1/f)(a)$; conversely an invertible $f(a)$ forces $f$ to be zero-free on $\sigma(a)$.</p>
 <p><strong>Corollary (spectral radius).</strong> The spectral radius is</p>
 <p>$$
-r(a) = \max_{\lambda\in\sigma(a)}|\lambda| = \lim_{n\to\infty}\|a^n\|^{1/n} ,
+\boxed{\;r(a) = \max_{\lambda\in\sigma(a)}|\lambda| = \lim_{n\to\infty}\|a^n\|^{1/n}\;} ,
 $$</p>
 <p>the Gelfand formula; the limit exists and equals the maximum by the spectral mapping theorem applied to the function $\lambda\mapsto\lambda^n$ and the standard estimate $r(a)\le\|a\|$.</p>
 <p><strong>Theorem (composition and locality).</strong> If $g$ is holomorphic on a neighbourhood of $\sigma(a)$ and $f$ holomorphic on a neighbourhood of $g(\sigma(a))$, then $(f\circ g)(a)=f(g(a))$. If $f=g$ on a neighbourhood of $\sigma(a)$, then $f(a)=g(a)$. The calculus is <strong>natural</strong>: for every continuous unital algebra homomorphism $\pi:A\to B$ one has $\pi(f(a))=f(\pi(a))$, the spectrum of $\pi(a)$ being contained in that of $a$.</p>
@@ -125,7 +125,7 @@ P_1 = \frac{1}{2\pi i}\oint_{\Gamma_1}R(\lambda)\,d\lambda .
 $$</p>
 <p><strong>Theorem (properties of the Riesz projection).</strong> With the notation above, $P_1$ is an idempotent of $A$; it commutes with $a$; it is the value at $a$ of any function holomorphic near $\sigma(a)$ that equals $1$ on a neighbourhood of $\sigma_1$ and $0$ on a neighbourhood of the rest of the spectrum. Its image $P_1A$ and its kernel $(1-P_1)A$ are closed subspaces invariant under $a$, and</p>
 <p>$$
-\sigma(a|_{P_1A})=\sigma_1 , \qquad \sigma(a|_{(1-P_1)A})=\sigma(a)\setminus\sigma_1 .
+\boxed{\;\sigma(a|_{P_1A})=\sigma_1 , \qquad \sigma(a|_{(1-P_1)A})=\sigma(a)\setminus\sigma_1\;} .
 $$</p>
 <p><em>Proof.</em> Idempotency follows from the calculus applied to the indicator-type function: $P_1=f(a)$ for $f$ the function described, and $f^2=f$ on a neighbourhood of the spectrum, so $P_1^2=f(a)^2=(f^2)(a)=f(a)=P_1$ by the homomorphism property and locality. Commutation with $a$ follows from the resolvent identity. The image and kernel are closed because $P_1$ is a bounded projection, invariant because $a$ commutes with $P_1$, and the spectra are computed by the spectral mapping theorem applied to the restriction.</p>
 <p><strong>Corollary (the operator case).</strong> Let $T$ be a bounded operator on a complex Banach space $X$ and let $\sigma(T)=\sigma_1\sqcup\sigma_2$ with $\sigma_1$ compact and separated. Then</p>

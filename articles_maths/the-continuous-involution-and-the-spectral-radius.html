@@ -86,7 +86,7 @@ $$</p>
 <p><em>Proof.</em> The first is the standard bound $\lvert\lambda\rvert \leq \lVert x\rVert$ for $\lambda \in \sigma(x)$, from the convergence of the Neumann series $\sum_n x^{n}/\lambda^{n+1}$ for $\lvert\lambda\rvert > \lVert x\rVert$, by <em>Topological Algebras and Banach Algebras</em>; the second is $\sigma(\lambda x) = \lambda\sigma(x)$ for a central scalar $\lambda$; the third is $1 - xy$ invertible iff $1 - yx$ invertible with $(1-xy)^{-1} = 1 + x(1-yx)^{-1}y$, which gives $\sigma(xy) \setminus \{0\} = \sigma(yx) \setminus \{0\}$; the last is proved below, and is recorded here for the completeness of the list.</p>
 <p><strong>Theorem (the radius formula).</strong> The spectral radius is the limit</p>
 <p>$$
-r(x) = \lim_{n}\lVert x^{n}\rVert^{1/n} = \inf_{n \geq 1}\lVert x^{n}\rVert^{1/n},
+\boxed{\;r(x) = \lim_{n}\lVert x^{n}\rVert^{1/n} = \inf_{n \geq 1}\lVert x^{n}\rVert^{1/n}\;},
 $$</p>
 <p>and in particular $r(x) = r(y)$ as soon as $\lVert x^{n}\rVert = \lVert y^{n}\rVert$ for all $n$.</p>
 <p><em>Proof.</em> The formula is the Gelfand–Beurling formula of <em>Topological Algebras and Banach Algebras</em>, §<em>Banach Algebras</em>, valid for a complete normed algebra over a valued field; the infimum equals the limit by Fekete's lemma applied to the subadditive sequence $n \mapsto \log\lVert x^{n}\rVert$.</p>
@@ -100,8 +100,8 @@ $$</p>
 <p>the axiom stated for the normed object in <em>The Norm Defined by a Form</em>, §<em>The $\mathrm{C}^{*}$-Condition</em>, and the condition that makes the involution isometric.</p>
 <p><strong>Theorem (the identity).</strong> In a $\mathrm{C}^{*}$-sesqualgebra, for every $x$,</p>
 <p>$$
-\lVert x^{*}x\rVert = \lVert xx^{*}\rVert = \lVert x \star x\rVert = \lVert x\rVert^{2}, \qquad
-\lVert x\rVert = r(x^{*}x)^{1/2} = r(xx^{*})^{1/2} = r(x \star x)^{1/2} .
+\boxed{\;\lVert x^{*}x\rVert = \lVert xx^{*}\rVert = \lVert x \star x\rVert = \lVert x\rVert^{2}, \qquad
+\lVert x\rVert = r(x^{*}x)^{1/2} = r(xx^{*})^{1/2} = r(x \star x)^{1/2}\;} .
 $$</p>
 <p><em>Proof.</em> The element $xx^{*}$ is the star of $x^{*}x$, so $\lVert xx^{*}\rVert = \lVert x^{*}x\rVert$ once the involution is isometric, and the isometry is the theorem of <em>The Continuity of the Involution</em>, §<em>The $\mathrm{C}^{*}$-Condition</em>, or one line from the condition: $\lVert x\rVert^{2} = \lVert x^{*}x\rVert \leq \lVert x^{*}\rVert\lVert x\rVert$ gives $\lVert x\rVert \leq \lVert x^{*}\rVert$, and $x^{**} = x$ gives the reverse. The element $y = x^{*}x$ is self-adjoint, and for a self-adjoint $y$ the identity $\lVert y^{2}\rVert = \lVert y^{*}y\rVert = \lVert y\rVert^{2}$ iterates to $\lVert y^{2^{n}}\rVert = \lVert y\rVert^{2^{n}}$, so that $r(y) = \lim_{n}\lVert y^{2^{n}}\rVert^{1/2^{n}} = \lVert y\rVert$; hence $\lVert x^{*}x\rVert = r(x^{*}x)$. The radius formula is applied at $x \star x = xx^{*}$.</p>
 <p><strong>Corollary (the derived square is positive, and computes the norm).</strong> For every $x$ the element $x \star x = xx^{*}$ is self-adjoint with spectrum contained in $[0,\infty)$ and</p>
@@ -142,7 +142,7 @@ $$</p>
 <h3 id="the-formula-and-the-uniqueness">The Formula and the Uniqueness</h3>
 <p><strong>Theorem (the norm is a formula in the algebra).</strong> In a $\mathrm{C}^{*}$-sesqualgebra the norm is determined by the algebra, the involution and the datum,</p>
 <p>$$
-\lVert x\rVert = r(x \star x)^{1/2},
+\boxed{\;\lVert x\rVert = r(x \star x)^{1/2}\;},
 $$</p>
 <p>the radius being the radius of the derived square, defined by invertibility alone.</p>
 <p><em>Proof.</em> The identity of the first section.</p>

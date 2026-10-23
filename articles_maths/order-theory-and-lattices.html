@@ -120,7 +120,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>lattice</strong> is a poset $(L, \leq)$ in which every pair of elements has a supremum and an infimum; one writes $x \vee y$ and $x \wedge y$ for them. A <strong>sublattice</strong> of $L$ is a subset closed under $\vee$ and $\wedge$, with the inherited order.</p>
 <p>Thus a lattice is a poset with two binary operations, and the order is recoverable from either operation by</p>
 <p>$$
-x \leq y \iff x \vee y = y \iff x \wedge y = x.
+\boxed{\;x \leq y \iff x \vee y = y \iff x \wedge y = x\;}.
 $$</p>
 <p><strong>Example.</strong> The power set $\mathcal{P}(X)$ with $\subseteq$ is a lattice, with $A \vee B = A \cup B$ and $A \wedge B = A \cap B$. This is the lattice of subsets of the next-to-last section.</p>
 <p><strong>Example.</strong> Every total order is a lattice, with $x \vee y = \max(x,y)$ and $x \wedge y = \min(x,y)$. Thus $(\mathbb{N}, \leq)$ is a lattice, and so is any chain.</p>
@@ -208,7 +208,7 @@ $$</p>
 <p>The fixed points of a monotone map of a complete lattice are themselves a complete lattice; this is the content of the theorem, and it is the reason a recursive definition has a canonical solution.</p>
 <p><strong>Theorem (Knaster–Tarski).</strong> Let $L$ be a complete lattice and let $f : L \to L$ be monotone. Then the set $\operatorname{Fix}(f)$ of fixed points of $f$, with the order inherited from $L$, is a complete lattice. In particular</p>
 <p>$$
-\mu f = \bigwedge \{x \in L : f(x) \leq x\}, \qquad \nu f = \bigvee \{x \in L : x \leq f(x)\},
+\boxed{\;\mu f = \bigwedge \{x \in L : f(x) \leq x\}, \qquad \nu f = \bigvee \{x \in L : x \leq f(x)\}\;},
 $$</p>
 <p>are the least and greatest fixed points of $f$.</p>
 <p><strong>Proof.</strong> Put $A = \{x \in L : f(x) \leq x\}$ and $a = \bigwedge A$; the set $A$ is nonempty, since the greatest element $1$ of $L$ satisfies $f(1) \leq 1$. For each $x \in A$ one has $a \leq x$, so by monotonicity $f(a) \leq f(x) \leq x$; hence $f(a)$ is a lower bound of $A$ and $f(a) \leq a$. Applying $f$ to this inequality and using monotonicity gives $f(f(a)) \leq f(a)$, so $f(a) \in A$; then $a \leq f(a)$ because $a$ is a lower bound of $A$. Antisymmetry gives $f(a) = a$, so $a$ is a fixed point, and it is the least because every fixed point lies in $A$. The greatest fixed point is obtained by the dual argument applied to the set $\{x : x \leq f(x)\}$ and its supremum, or equivalently by applying the argument just given to the same map on the lattice with the reverse order.</p>
@@ -223,7 +223,7 @@ $$</p>
 <p>A <strong>lattice of sets</strong> is a family $\mathcal{L} \subseteq \mathcal{P}(X)$ closed under the unions and intersections that it contains; the concept is used throughout the corpus, where representation theorems identify an abstract lattice with a lattice of sets. The distributive lattices are exactly the sublattices of power-set lattices, by the representation theorem of Birkhoff, and the finite case is the statement above. The general representation of a Boolean algebra as an algebra of subsets requires a topology, and it is the Stone representation theorem of Part II; the Boolean algebra as an abstract structure is the subject of Part V.</p>
 <p><strong>Remark.</strong> The chain of inclusions</p>
 <p>$$
-\text{lattices} \;\supset\; \text{modular lattices} \;\supset\; \text{distributive lattices} \;\supset\; \text{Boolean lattices}
+\boxed{\;\text{lattices} \;\supset\; \text{modular lattices} \;\supset\; \text{distributive lattices} \;\supset\; \text{Boolean lattices}\;}
 $$</p>
 <p>is strict, with witnesses $N_5$ for the first inclusion, $M_3$ for the second, and a three-element chain for the third, that chain being distributive and bounded but not complemented. Each class is closed under the formation of products, the first three are closed under sublattices, and in the Boolean case one requires in addition closure under complement and under $0$ and $1$. The characterising forbidden sublattices are $N_5$ for modularity and $N_5, M_3$ for distributivity.</p>
 <h2 id="summary">Summary</h2>

@@ -81,7 +81,7 @@
 <h2 id="the-cup-product">The Cup Product</h2>
 <p><strong>Theorem (the cup product).</strong> Let $\mathcal{F}$ and $\mathcal{G}$ be sheaves of $\mathcal{O}_X$-modules, and suppose that $\mathcal{F}$ is flat, or more generally that the higher tensor sheaves $\operatorname{Tor}_i^{\mathcal{O}_X}(\mathcal{F},\mathcal{G})$ vanish for $i>0$. Then there is a natural bilinear product</p>
 <p>$$
-\smile\ :\ H^p(X,\mathcal{F})\times H^q(X,\mathcal{G})\longrightarrow H^{p+q}(X,\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{G}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta,
+\boxed{\;\smile\ :\ H^p(X,\mathcal{F})\times H^q(X,\mathcal{G})\longrightarrow H^{p+q}(X,\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{G}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta\;},
 $$</p>
 <p>for all $p,q\geq0$. Without the flatness hypothesis, the product is defined into the hypercohomology of the derived tensor product, $\smile:H^p(X,\mathcal{F})\times H^q(X,\mathcal{G})\to\mathbb{H}^{p+q}(X,\mathcal{F}\otimes_{\mathcal{O}_X}^{\mathbf{L}}\mathcal{G})$; the two agree when the Tor sheaves vanish.</p>
 <p><em>Proof (construction).</em> Choose flabby resolutions $\mathcal{F}\to\mathcal{A}^\bullet$ and $\mathcal{G}\to\mathcal{B}^\bullet$, which exist by <em>Sheaf Cohomology</em>. The tensor product of the two complexes is a complex of sheaves with the differential $D(a\otimes b)=da\otimes b+(-1)^{|a|}a\otimes db$, and flabby sheaves being a tensor ideal and acyclic for the tensor product, this complex represents the derived tensor product $\mathcal{F}\otimes^{\mathbf{L}}\mathcal{G}$; it is a resolution of $\mathcal{F}\otimes\mathcal{G}$ exactly when the Tor sheaves vanish, in particular when $\mathcal{F}$ is flat. The tensor product of a cocycle in $\mathcal{A}^p$ with a cocycle in $\mathcal{B}^q$ is a cocycle in $(\mathcal{A}^\bullet\otimes\mathcal{B}^\bullet)^{p+q}$ by the Leibniz rule below, and a coboundary in either factor gives a coboundary in the total complex; passing to cohomology gives the product. The construction is the sheaf-theoretic case of the Eilenberg–Zilber comparison of <em>Cup and Cap Products</em> and of the derived tensor product of <em>Derived Categories</em>.</p>
@@ -114,13 +114,13 @@ $$</p>
 <p><em>Proof.</em> The agreement of the products is the compatibility of the two constructions of the product from the two resolutions; the Godement identification is quoted in <em>Čech Cohomology</em> as a standing weakness, and the remaining statements are the definitions. For a good cover the nerve theorem of <em>Čech Cohomology</em> identifies the Čech complex with the simplicial cochain complex of the nerve, and the product becomes the simplicial cup product.</p>
 <p><strong>Proposition (comparison with the singular product).</strong> Let $X$ be paracompact and locally contractible and let $R$ be a commutative ring. Under the comparison isomorphism $H^*(X,\underline{R})\cong H^*(X;R)$ of <em>Sheaf Cohomology</em>, the cup product on the sheaf cohomology of the constant sheaf corresponds to the singular cup product of <em>Cup and Cap Products</em>;</p>
 <p>$$
-H^*(X,\underline{R})\cong H^*(X;R)\quad\text{as graded rings.}
+\boxed{\;H^*(X,\underline{R})\cong H^*(X;R)\quad\text{as graded rings.}\;}
 $$</p>
 <p><em>Proof.</em> The comparison theorem identifies the sheafified singular cochain complex with a flabby resolution of $\underline{R}$ and compares the multiplication on the cochains, which is the front-face/back-face product on both sides; the signs and the unit agree.</p>
 <h2 id="the-cohomology-ring">The Cohomology Ring</h2>
 <p><strong>Theorem (the cohomology ring).</strong> Let $\mathcal{R}$ be a sheaf of commutative $\mathcal{O}_X$-algebras that is flat over $\mathcal{O}_X$, with multiplication $\mu:\mathcal{R}\otimes_{\mathcal{O}_X}\mathcal{R}\to\mathcal{R}$. Composing the cup product with $\mu$ gives a product</p>
 <p>$$
-H^p(X,\mathcal{R})\times H^q(X,\mathcal{R})\longrightarrow H^{p+q}(X,\mathcal{R}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta,
+\boxed{\;H^p(X,\mathcal{R})\times H^q(X,\mathcal{R})\longrightarrow H^{p+q}(X,\mathcal{R}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta\;},
 $$</p>
 <p>under which $H^*(X,\mathcal{R})=\bigoplus_iH^i(X,\mathcal{R})$ is a graded commutative unital ring, with unit the class $1\in H^0(X,\mathcal{R})$ of the identity section. For $\mathcal{R}=\mathcal{O}_X$ this is the <strong>cohomology ring of the structure sheaf</strong>, and for $\mathcal{R}=\underline{R}$ the constant sheaf it is the <strong>cohomology ring of the space</strong> with coefficients in $R$.</p>
 <p><em>Proof.</em> The product of the theorem on the cup product is followed by the map induced by $\mu$ on cohomology, which exists because $\mathcal{R}$ is flat; the ring axioms are those of the cup product transported by $\mu$, and the graded commutativity is the Koszul sign together with the commutativity of $\mu$ and the symmetry of the tensor product.</p>

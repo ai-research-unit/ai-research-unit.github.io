@@ -86,7 +86,7 @@ $$</p>
 <h2 id="the-descent-datum-and-the-fixed-part">The Descent Datum and the Fixed Part</h2>
 <p><strong>Definition.</strong> The <strong>descent datum</strong> of a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ is the family of the semilinear isomorphisms $\varphi_{\gamma}$ together with their cocycle. The <strong>fixed part</strong> is</p>
 <p>$$
-\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \varphi_{\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\},
+\boxed{\;\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \varphi_{\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\}\;},
 $$</p>
 <p>for an open $V\subseteq X$, with $p^{-1}V$ the preimage in $X_K$, on which $\Gamma$ acts; it is a sheaf of $\mathcal{O}_X$-modules, the <strong>descent</strong> of $\mathcal{M}$.</p>
 <p><em>Proof.</em> The preimage $p^{-1}V$ is a $\Gamma$-invariant open set, so the equivariant structure makes $\mathcal{M}(p^{-1}V)$ a $\Gamma$-module on which the invariants are defined; the fixed part is then a sheaf, by the discussion of <em>Equivariant Sheaves and Descent</em> applied to the invariant opens, and it is a module over the fixed part of the structure sheaf, which is $\mathcal{O}_X$ because $\mathcal{O}_{X_K}^{\Gamma}=(\mathcal{O}_X\otimes_kK)^{\Gamma}=\mathcal{O}_X\otimes_kK^{\Gamma}=\mathcal{O}_X$.</p>
@@ -99,7 +99,7 @@ $$</p>
 $$</p>
 <p>are inverse equivalences between the category $\mathrm{Sh}_{\Gamma}(X_K)$ of $\Gamma$-equivariant sheaves of $\mathcal{O}_{X_K}$-modules over $X_K$ and the category $\mathrm{Sh}(X)$ of sheaves of $\mathcal{O}_X$-modules over $X$,</p>
 <p>$$
-\mathrm{Sh}_{\Gamma}(X_K)\simeq\mathrm{Sh}(X).
+\boxed{\;\mathrm{Sh}_{\Gamma}(X_K)\simeq\mathrm{Sh}(X)\;}.
 $$</p>
 <p><em>Proof.</em> The pair is adjoint, as in <em>Equivariant Sheaves and Descent</em>; the unit and the counit are checked on the sections. A section of the counit over a $\Gamma$-invariant open set $\Omega\subseteq X_K$ is a $\Gamma$-equivariant map $\mathcal{M}(\Omega)^{\Gamma}\otimes_kK\to\mathcal{M}(\Omega)$, which is the multiplication by the coefficients; it is an isomorphism by the descent lemma: an element of a $\Gamma$-module that is fixed splits as $m=\sum_{\gamma}\gamma(\lambda)m_{\gamma}$ with a normal basis $\{\lambda\}$ of $K/k$. The unit is the analogous computation, and the effectiveness is the faithful flatness of $K$ over $k$, which is the descent theorem of <em>Descent Theory</em>.</p>
 <p><strong>Corollary (the structure sheaf and the vector bundles).</strong> The structure sheaf descends, $\mathcal{O}_X=\mathcal{O}_{X_K}^{\Gamma}$; the base change identifies the locally free sheaves of finite rank on $X$ with the $\Gamma$-equivariant locally free sheaves on $X_K$, and the descent is effective for all quasicoherent sheaves when $X$ is a scheme over $k$.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h2 id="the-cohomological-obstruction">The Cohomological Obstruction</h2>
 <p><strong>Theorem (the twisted forms).</strong> Fix a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ with automorphism group $\mathcal{A}ut_{\Gamma}(\mathcal{M})$ — the sheaf of $\Gamma$-equivariant automorphisms. The $\Gamma$-equivariant sheaves over $X_K$ that become isomorphic to $\mathcal{M}$ after a base change to a Galois extension are classified by the first nonabelian cohomology</p>
 <p>$$
-H^1\bigl(\Gamma,\mathcal{A}ut_{\Gamma}(\mathcal{M})\bigr),
+\boxed{\;H^1\bigl(\Gamma,\mathcal{A}ut_{\Gamma}(\mathcal{M})\bigr)\;},
 $$</p>
 <p>the pointed set of classes of $1$-cocycles of $\Gamma$ with values in the automorphisms, two cocycles giving the same form when they differ by a coboundary; the trivial class corresponds to the descended sheaf $\mathcal{M}^{\Gamma}$.</p>
 <p><em>Proof.</em> A twisted form is described on the Galois cover $X_K\to X$ by a cocycle with values in the automorphisms of $\mathcal{M}$, the cocycle condition being the descent condition of the equivariant structure; two descriptions give isomorphic forms exactly when the cocycles differ by a coboundary, and the computation is the Čech computation of <em>Čech Cohomology</em> for the cover. This is the nonabelian $H^1$ of <em>Group Cohomology</em> and <em>Galois Cohomology</em>.</p>

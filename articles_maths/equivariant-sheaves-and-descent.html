@@ -101,13 +101,13 @@ $$</p>
 <p><em>Proof.</em> Let $V=\bigcup_iV_i$ be a cover and let $s_i\in\mathcal{F}(q^{-1}V_i)^{G}$ be a matching family. The preimages $q^{-1}V_i$ cover $q^{-1}V$, and the $s_i$ are matching sections of $\mathcal{F}$; they glue to a section $s$ of $\mathcal{F}(q^{-1}V)$, which is invariant because each of its restrictions $s_i$ is invariant and the action is compatible with restriction, and which is unique because $\mathcal{F}$ is a sheaf. Left exactness is the left exactness of the invariants of a $G$-module, which is a limit.</p>
 <p><strong>Proposition (adjunction).</strong> The pullback along the quotient and the invariants are an adjoint pair, $q^*\dashv q_*^{G}$: for $\mathcal{G}$ on $X/G$ and $\mathcal{F}$ a $G$-sheaf on $X$,</p>
 <p>$$
-\operatorname{Hom}_{\mathrm{Sh}_G(X)}\bigl(q^*\mathcal{G},\mathcal{F}\bigr)\cong\operatorname{Hom}_{\mathrm{Sh}(X/G)}\bigl(\mathcal{G},q_*^{G}\mathcal{F}\bigr).
+\boxed{\;\operatorname{Hom}_{\mathrm{Sh}_G(X)}\bigl(q^*\mathcal{G},\mathcal{F}\bigr)\cong\operatorname{Hom}_{\mathrm{Sh}(X/G)}\bigl(\mathcal{G},q_*^{G}\mathcal{F}\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> A morphism $q^{-1}\mathcal{G}\to\mathcal{F}$ of sheaves on $X$ is $G$-equivariant exactly when its adjunct $\mathcal{G}\to q_*\mathcal{F}$ lands in the invariant sections, since the pullback $q^{-1}\mathcal{G}$ has the equivariant structure forced by the identities $q\circ g=q$; this is the adjunction $q^{-1}\dashv q_*$ of <em>Presheaves and Sheaves</em> restricted to the invariant part.</p>
 <h2 id="the-descent-theorem">The Descent Theorem</h2>
 <p><strong>Theorem (descent for a covering action).</strong> Let $G$ act freely and properly discontinuously on $X$, so that $q:X\to X/G$ is a covering. Then the pullback $q^*:\mathrm{Sh}(X/G)\to\mathrm{Sh}_G(X)$ is an equivalence of categories, with quasi-inverse the invariants $q_*^{G}$; equivalently, every $G$-sheaf on $X$ descends to a sheaf on the quotient, the descent is effective, and</p>
 <p>$$
-\mathrm{Sh}(X/G)\simeq\mathrm{Sh}_G(X).
+\boxed{\;\mathrm{Sh}(X/G)\simeq\mathrm{Sh}_G(X)\;}.
 $$</p>
 <p><em>Proof.</em> The unit $\mathcal{G}\to q_*^{G}(q^*\mathcal{G})$ and the counit $q^*(q_*^{G}\mathcal{F})\to\mathcal{F}$ are the natural maps of the adjunction; both are isomorphisms, and it suffices to check the counit over an evenly covered neighbourhood. Let $V$ be evenly covered with $q^{-1}(V)=\bigsqcup_{g}gW$ a disjoint union of sheets. A section of $q^*(q_*^{G}\mathcal{F})$ over $q^{-1}(V)$ is a family of sections $s_g\in\mathcal{F}(gW)$ that is invariant under the action, and the action permutes the sheets; a $G$-invariant family is determined by its component $s_e\in\mathcal{F}(W)$, because $s_g=\varphi_g(s_e)$ on $gW$. The counit sends such a family to its component on $W$, and is therefore an isomorphism onto $\mathcal{F}(W)$ after restriction; the two functors are inverse. The unit is the same computation read on the quotient.</p>
 <p><strong>Corollary (descent data are equivariant structures).</strong> The descent data of <em>Descent Theory</em> for the covering $X\to X/G$ are exactly the equivariant structures of the present article: an object of the descent category is a family of sections over the sheets with compatible isomorphisms over the intersections, and these are the $\varphi_g$ and their cocycle.</p>
@@ -116,7 +116,7 @@ $$</p>
 <h2 id="cohomological-form">Cohomological Form</h2>
 <p><strong>Proposition (the descent isomorphism in cohomology).</strong> Under the descent equivalence, the cohomology of a sheaf on the quotient is the cohomology of the invariant sections of its pullback,</p>
 <p>$$
-H^i(X/G,\mathcal{G})\cong H^i\bigl(X/G,q_*^{G}q^*\mathcal{G}\bigr)\cong H^i\bigl(X,(q^{-1}\mathcal{G})^{G}\bigr),
+\boxed{\;H^i(X/G,\mathcal{G})\cong H^i\bigl(X/G,q_*^{G}q^*\mathcal{G}\bigr)\cong H^i\bigl(X,(q^{-1}\mathcal{G})^{G}\bigr)\;},
 $$</p>
 <p>and the pullback $q^*$ is exact and induces isomorphisms on the stalks at the points of a sheet.</p>
 <p><em>Proof.</em> The equivalence of categories carries injective resolutions to injective resolutions and the global sections over the quotient to the invariant sections; the identification is the isomorphism of the two derived functors under the equivalence, and the exactness of $q^{-1}$ is that of <em>Presheaves and Sheaves</em>.</p>

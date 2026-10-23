@@ -84,7 +84,7 @@ because $\langle AX, Y\rangle = \operatorname{tr}((AX)^{\dagger}Y) = \operatorna
 <h2 id="the-adjoints-of-the-one-sided-and-two-sided-multiplications">The Adjoints of the One-Sided and Two-Sided Multiplications</h2>
 <p><strong>Proposition (the adjoints).</strong> For all $A, B \in E$,
 $$
-L_A^{*} = L_{A^{\dagger}}, \qquad R_B^{*} = R_{B^{\dagger}}, \qquad \Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}},
+\boxed{\;L_A^{*} = L_{A^{\dagger}}, \qquad R_B^{*} = R_{B^{\dagger}}, \qquad \Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}\;},
 $$
 and the assignment is compatible with the composition and the involution of $E$: $(L_AL_B)^{*} = L_{B^{\dagger}}L_{A^{\dagger}}$.</p>
 <p><strong>Proof.</strong> $\langle L_AX, Y\rangle = \operatorname{tr}((AX)^{\dagger}Y) = \operatorname{tr}(X^{\dagger}A^{\dagger}Y) = \langle X, L_{A^{\dagger}}Y\rangle$, using the involution property $(AX)^{\dagger} = X^{\dagger}A^{\dagger}$ and the trace; the right multiplication is the same computation on the other side, $\langle XB, Y\rangle = \operatorname{tr}((XB)^{\dagger}Y) = \operatorname{tr}(B^{\dagger}X^{\dagger}Y) = \langle X, YB^{\dagger}\rangle$ with the trace cyclicity $\operatorname{tr}(B^{\dagger}X^{\dagger}Y) = \operatorname{tr}(X^{\dagger}YB^{\dagger})$; the two-sided case is the composite. The trace form and the involution are <em>The Left and Right Multiplication Operators on a Complex Vector Space</em> and <em>Algebras of Endomorphisms</em>.</p>
@@ -93,7 +93,7 @@ and the assignment is compatible with the composition and the involution of $E$:
 <h2 id="the-compatibility-with-the-grade-involution">The Compatibility with the Grade Involution</h2>
 <p><strong>Proposition (the involution preserves the adjoint).</strong> If $T$ is unitary and self-adjoint, so that $\alpha(X) = TXT$ satisfies $\alpha(X^{\dagger}) = \alpha(X)^{\dagger}$, then
 $$
-\alpha\,L_A^{*}\,\alpha = L_{\alpha(A)}^{*},
+\boxed{\;\alpha\,L_A^{*}\,\alpha = L_{\alpha(A)}^{*}\;},
 $$
 and similarly for the right multiplication; the grade involution carries the adjoint of the left multiplication by $A$ to the adjoint of the left multiplication by $\alpha(A)$.</p>
 <p><strong>Proof.</strong> $\alpha L_B\alpha = L_{\alpha(B)}$, since $\alpha L_B\alpha(X) = \alpha(B\alpha(X)) = \alpha(B)X$; applied to $B = A^{\dagger}$ this gives $\alpha L_A^{*}\alpha = L_{\alpha(A^{\dagger})} = L_{\alpha(A)^{\dagger}} = L_{\alpha(A)}^{*}$, using $\alpha(A^{\dagger}) = \alpha(A)^{\dagger}$, which is the unitarity and self-adjointness of $T$. The involution and its properties are <em>The Involution on a Complex Vector Space</em> and <em>The Signed Adjoint of the Left Multiplication on a Complex Vector Space</em>.</p>

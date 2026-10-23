@@ -117,7 +117,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (Weierstrass division).</strong> Let $f \in K\langle X_1, \dots, X_n\rangle$ be distinguished of order $d$ in $X_n$, and let $g \in K\langle X_1, \dots, X_n\rangle$. Then there are a unique $q \in K\langle X_1, \dots, X_n\rangle$ and a unique $r \in K\langle X_1, \dots, X_{n-1}\rangle[X_n]$ of degree $< d$ in $X_n$ with</p>
 <p>$$
-g = qf + r,
+\boxed{\;g = qf + r\;},
 $$</p>
 <p>and $\lVert q \rVert_G \leq \lVert f \rVert_G^{-1}\lVert g \rVert_G$.</p>
 <p><strong>Proof.</strong> Divide the expansions of $f$ and $g$ as series in $X_n$ with coefficients in $K\langle X_1, \dots, X_{n-1}\rangle$; the division algorithm over the coefficient ring terminates in the limit because the coefficients of $f$ beyond the $d$-th are dominated by $f_d$, which is a unit; convergence follows from the norm estimate displayed, and uniqueness follows because a nonzero remainder of degree $< d$ cannot be a multiple of $f$, the leading coefficient of $f$ being a unit.</p>
@@ -132,7 +132,7 @@ $$</p>
 <h3 id="the-maximum-modulus-principle">The Maximum Modulus Principle</h3>
 <p><strong>Theorem (maximum modulus principle).</strong> Let $f \in K\langle X_1, \dots, X_n\rangle$. Then</p>
 <p>$$
-\sup_{x \in \operatorname{Sp} K\langle X_1, \dots, X_n\rangle} \lvert f(x) \rvert = \lVert f \rVert_G ,
+\boxed{\;\sup_{x \in \operatorname{Sp} K\langle X_1, \dots, X_n\rangle} \lvert f(x) \rvert = \lVert f \rVert_G\;} ,
 $$</p>
 <p>and the supremum is attained.</p>
 <p><strong>Proof.</strong> It suffices to treat the case $\lVert f \rVert_G = 1$, since scaling $f$ by a scalar scales both sides. Then $f \in \mathcal{O}\langle X\rangle$, some coefficient of $f$ is a unit, and the reduction $\bar f \in k[X_1, \dots, X_n]$ is a nonzero polynomial over the residue field $k$, which is infinite because $K$ is algebraically closed. Choose $\bar x = (\bar x_1, \dots, \bar x_n) \in k^n$ with $\bar f(\bar x) \neq 0$, possible since a nonzero polynomial over an infinite field does not vanish identically; lift each $\bar x_i$ to $x_i \in \mathcal{O}$, and let $x = (x_i)$. Evaluation at $x$ reduces the coefficients modulo $\mathrm{M}$, so $\lvert f(x) \rvert = \lvert \bar f(\bar x) \rvert = 1 = \lVert f \rVert_G$. On the other hand $\lvert f(x) \rvert \leq \lVert f \rVert_G$ for every $x$ of the polydisc, by the multiplicativity of the Gauss norm and the inequality $\lvert x_i \rvert \leq 1$. Hence the supremum equals the Gauss norm and is attained.</p>
@@ -185,7 +185,7 @@ $$</p>
 <h3 id="the-gaga-principle">The GAGA Principle</h3>
 <p><strong>Theorem (GAGA; Kiehl, Köpf).</strong> Let $X$ be a projective algebraic variety over $K$ and let $X^{\mathrm{an}}$ be its <strong>analytification</strong>, obtained by gluing the affinoid spaces associated to an affine cover of $X$. Then analytification induces an equivalence of categories</p>
 <p>$$
-\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X^{\mathrm{an}}),
+\boxed{\;\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X^{\mathrm{an}})\;},
 $$</p>
 <p>and for projective $X$ the analytification functor is fully faithful, $\operatorname{Hom}(X, Y) \cong \operatorname{Hom}(X^{\mathrm{an}}, Y^{\mathrm{an}})$ for projective $X$ and $Y$. In particular the coherent sheaves on $X^{\mathrm{an}}$, its closed analytic subsets and its finite étale covers are all algebraic.</p>
 <p><strong>Proof.</strong> The theorem is Kiehl's GAGA for rigid analytic spaces, proved first in the projective case and extended by Köpf to proper rigid spaces and proper families. It is proved by reduction to the affine statements: on an affine variety the analytification of a coherent sheaf is the completion of the algebraic module, and the comparison is an equivalence by the flatness of the completion; the global statement follows by the theory of coherent sheaves on the projective space and a descending induction on the dimension, exactly parallel to the algebraic GAGA of Serre. It is quoted here as a standard theorem of rigid analytic geometry.</p>

@@ -84,21 +84,21 @@ $$</p>
 <h2 id="positive-definite-forms">Positive Definite Forms</h2>
 <p><strong>Definition.</strong> A <strong>positive definite form</strong> (or a <strong>semidefinite form</strong>) on the involutive algebra is a Hermitian form $\langle\cdot,\cdot\rangle : A\times A\to\mathbb{C}$ with</p>
 <p>$$
-\langle a,a\rangle\geq0 \ \text{ for every } a , \qquad \langle a,b\rangle = \overline{\langle b,a\rangle} , \qquad \langle \alpha a + \beta b, c\rangle = \alpha\langle a,c\rangle + \beta\langle b,c\rangle ;
+\boxed{\;\langle a,a\rangle\geq0 \ \text{ for every } a , \qquad \langle a,b\rangle = \overline{\langle b,a\rangle} , \qquad \langle \alpha a + \beta b, c\rangle = \alpha\langle a,c\rangle + \beta\langle b,c\rangle\;} ;
 $$</p>
 <p>it is <strong>definite</strong> when $\langle a,a\rangle = 0$ implies $a = 0$, and its <strong>radical</strong> is the subspace $N = \{a : \langle a,a\rangle = 0\}$.</p>
 <p><strong>Proposition (the forms are the positive functionals).</strong> A positive definite form is of the form $\langle a,b\rangle = \varphi(b^{*}a)$ for a unique positive functional $\varphi$ when it is <strong>invariant</strong>, $\langle ca,b\rangle = \langle a,c^{*}b\rangle$, that is, when it is compatible with the multiplication; without the invariance it is the general positive semidefinite Hermitian form on the underlying vector space. The invariant forms are exactly the positive functionals, and the map $\varphi\mapsto\langle\cdot,\cdot\rangle_\varphi$ is a linear isomorphism of the dual cone onto the cone of the invariant positive definite forms.</p>
 <p><em>Proof.</em> For a positive functional $\varphi$ the form $\langle a,b\rangle = \varphi(b^{*}a)$ is Hermitian by the Hermitian-ness of $\varphi$, positive by the definition, and invariant because $\langle ca,b\rangle = \varphi(b^{*}ca) = \varphi((c^{*}b)^{*}a) = \langle a,c^{*}b\rangle$. Conversely an invariant positive definite form gives the functional $\varphi(x) = \langle 1,x\rangle$, which is linear and positive because $\varphi(x^{*}x) = \langle 1,x^{*}x\rangle = \langle x,x\rangle\geq0$ by the invariance, and which recovers the form because $\langle a,b\rangle = \varphi(b^{*}a)$ by the invariance and the Hermitian symmetry. The correspondence is linear and preserves the cones in both directions.</p>
 <p><strong>Proposition (Cauchy–Schwarz and the radical).</strong> Every positive definite form satisfies</p>
 <p>$$
-\lvert\langle a,b\rangle\rvert^{2}\leq\langle a,a\rangle\langle b,b\rangle ,
+\boxed{\;\lvert\langle a,b\rangle\rvert^{2}\leq\langle a,a\rangle\langle b,b\rangle\;} ,
 $$</p>
 <p>its radical $N$ is a subspace on which the form vanishes, the quotient $A/N$ carries a definite form, and the completion of the quotient is a Hilbert space $\mathcal{H}_\varphi$.</p>
 <p><em>Proof.</em> The Cauchy–Schwarz inequality is that of the positive functional; the radical is a subspace by the inequality (the equality case of the Cauchy–Schwarz inequality); the quotient form is definite by construction, and the completion is a Hilbert space.</p>
 <h2 id="the-order-from-the-forms">The Order from the Forms</h2>
 <p><strong>Theorem (the order is the intersection of the forms).</strong> For Hermitian $h$,</p>
 <p>$$
-h\geq0 \iff \langle h\, a, a\rangle_\varphi\geq0 \ \text{ for every } a \text{ and every positive functional } \varphi \iff \varphi(h)\geq0 \ \text{ for every positive functional } \varphi ,
+\boxed{\;h\geq0 \iff \langle h\, a, a\rangle_\varphi\geq0 \ \text{ for every } a \text{ and every positive functional } \varphi \iff \varphi(h)\geq0 \ \text{ for every positive functional } \varphi\;} ,
 $$</p>
 <p>equivalently $h$ is positive exactly when it is a positive operator in every representation associated with a positive definite form; hence the order of the Hermitian part is recovered from the cone of the forms, and the cone is the intersection of the half-spaces cut by the positive functionals.</p>
 <p><em>Proof.</em> If $h\geq0$ the invariance gives $\varphi(a^{*}ha)\geq0$ because $a^{*}ha$ is a congruence of a positive element; conversely, if $h$ is not positive then by the Hahn–Banach theorem some positive functional is negative at $h$, as in the separation theorem of <em>The Cone of Positive Functionals</em>. The representation statement is the GNS construction applied to the form, in which the order is the operator order.</p>

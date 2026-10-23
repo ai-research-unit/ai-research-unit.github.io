@@ -115,7 +115,7 @@ $$</p>
 <h3 id="functoriality">Functoriality</h3>
 <p><strong>Theorem.</strong> A continuous map $f : X \to Y$ with $f(x_0) = y_0$ induces a group homomorphism</p>
 <p>$$
-f_* : \pi_1(X,x_0) \longrightarrow \pi_1(Y,y_0), \qquad f_*[\gamma] = [f \circ \gamma],
+\boxed{\;f_* : \pi_1(X,x_0) \longrightarrow \pi_1(Y,y_0), \qquad f_*[\gamma] = [f \circ \gamma]\;},
 $$</p>
 <p>and the assignments $X \mapsto \pi_1(X,x_0)$, $f \mapsto f_*$ are functorial: $(g \circ f)_* = g_* \circ f_*$ and $(\mathrm{id}_X)_* = \mathrm{id}$.</p>
 <p><em>Proof.</em> If $H$ is a path homotopy from $\gamma$ to $\gamma'$ then $f \circ H$ is one from $f \circ \gamma$ to $f \circ \gamma'$, so $f_*$ is well defined. It is a homomorphism because $f \circ (\alpha \ast \beta) = (f \circ \alpha) \ast (f \circ \beta)$, the two sides agreeing on each half by the formula. The functorial identities are immediate from associativity of composition.</p>
@@ -147,7 +147,7 @@ $$</p>
 <h3 id="the-lifting-criterion">The Lifting Criterion</h3>
 <p><strong>Theorem (lifting criterion).</strong> Let $p : (X^{\mathrm{cov}}, x^{\mathrm{lift}}_0) \to (X, x_0)$ be a covering with $X^{\mathrm{cov}}$ and $X$ path-connected and locally path-connected, and let $f : (Y, y_0) \to (X, x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then a lift $f^{\mathrm{lift}} : (Y,y_0) \to (X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)$ with $p \circ f^{\mathrm{lift}} = f$ exists if and only if</p>
 <p>$$
-f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)\bigr).
+\boxed{\;f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> Necessity: if $f^{\mathrm{lift}}$ exists then $f_* = p_* f^{\mathrm{lift}}_*$, so the image of $f_*$ lies in the image of $p_*$. Sufficiency: for $y \in Y$ choose a path $\alpha$ from $y_0$ to $y$ and define $f^{\mathrm{lift}}(y)$ as the endpoint of the lift of $f \circ \alpha$ starting at $x^{\mathrm{lift}}_0$. The condition ensures that a second choice $\alpha'$ gives the same endpoint: $\alpha \ast \bar\alpha'$ is a loop at $y_0$, its image under $f$ is a loop whose class lies in $p_*\pi_1(X^{\mathrm{cov}},x^{\mathrm{lift}}_0)$, hence lifts to a loop at $x^{\mathrm{lift}}_0$, and the two lifts end at the same point. Continuity is checked locally: $y$ has a path-connected neighbourhood $V$ contained in an evenly covered set $\Omega$ about $f(y)$, the lift over the sheet through $f^{\mathrm{lift}}(y)$ composed with $f$ agrees with $f^{\mathrm{lift}}$ on $V$, and hence $f^{\mathrm{lift}}$ is continuous there.</p>
 <p><strong>Corollary.</strong> With the same hypotheses, two lifts of $f$ that agree at one point of a connected $Y$ agree everywhere.</p>
@@ -195,7 +195,7 @@ $$</p>
 <h3 id="products-retracts-and-the-boundary">Products, Retracts and the Boundary</h3>
 <p><strong>Theorem.</strong> For spaces $X$ and $Y$ with basepoints $x_0$ and $y_0$, the inclusions induce an isomorphism</p>
 <p>$$
-\pi_1(X \times Y, (x_0,y_0)) \cong \pi_1(X,x_0) \times \pi_1(Y,y_0).
+\boxed{\;\pi_1(X \times Y, (x_0,y_0)) \cong \pi_1(X,x_0) \times \pi_1(Y,y_0)\;}.
 $$</p>
 <p><em>Proof.</em> The projections induce a homomorphism to the product and the two inclusions a homomorphism from it, and the two composites are the identity by the explicit formulas $F(s) = (f_1(s), f_2(s))$.</p>
 <p><strong>Corollary.</strong> A retract $A$ of $X$ has $\pi_1(A,x_0)$ a subgroup of $\pi_1(X,x_0)$ with the inclusion and retraction exhibiting the inclusion as injective on $\pi_1$. Consequently $S^1$ is not a retract of $D^2$, since the identity map on $\mathbb{Z}$ would factor through the trivial group; this is the two-dimensional <strong>Brouwer fixed point theorem</strong>, whose full statement and the degree theory behind it are not treated here.</p>

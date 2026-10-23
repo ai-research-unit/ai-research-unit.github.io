@@ -93,7 +93,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (finiteness and the growth rate).</strong> Let $G$ be a non-elementary hyperbolic group. Then $0 < \delta < \infty$, and $\delta$ equals the <strong>exponential growth rate</strong> of the group:</p>
 <p>$$
-\delta = \lim_{n \to \infty} \frac{1}{n}\log \#\{g \in G : |g| \leq n\} .
+\boxed{\;\delta = \lim_{n \to \infty} \frac{1}{n}\log \#\{g \in G : |g| \leq n\}\;} .
 $$</p>
 <p>In particular $\delta$ is a quasi-isometry invariant of $G$, since the growth rate of the balls is.</p>
 <p><strong>Proof sketch.</strong> Writing the series by the spheres $\#\{|g| = n\}$, the comparison of a series with the exponential growth of its coefficients gives that the abscissa of convergence is exactly the growth rate, provided the coefficients grow exponentially; for a non-elementary hyperbolic group they do, and the growth rate is finite and positive because the group has at least two generators of infinite order and at most exponential growth. A quasi-isometry distorts the balls by bounded multiplicative and additive constants, so the growth rate is unchanged; this is the argument of <em>Geometric Group Theory</em>.</p>
@@ -110,7 +110,7 @@ $$</p>
 <h2 id="the-dimension-of-the-boundary">The Dimension of the Boundary</h2>
 <p><strong>Theorem (the dimension in the visual metric).</strong> Let $X$ be a proper geodesic hyperbolic space with critical exponent $\delta$ and visual metrics $d_\varepsilon$. Then for every $0 < \varepsilon \leq \varepsilon_0$</p>
 <p>$$
-\dim_H(\partial X, d_\varepsilon) = \frac{\delta}{\varepsilon} ,
+\boxed{\;\dim_H(\partial X, d_\varepsilon) = \frac{\delta}{\varepsilon}\;} ,
 $$</p>
 <p>so that the product $\varepsilon \cdot \dim_H(\partial X, d_\varepsilon) = \delta$ is independent of the choice of the visual metric within the conformal gauge. In the normalisation $\varepsilon = 1$, when $d_1$ is a metric, the boundary has Hausdorff dimension exactly $\delta$, and this is the equality $\dim_H \partial G = \delta$ of the cocompact case.</p>
 <p><strong>Proof sketch.</strong> The covering number of the boundary at scale $r = \exp(-\varepsilon n)$ is the number of the shadow sets at distance $n$ from the base point, which grows like $\exp(\delta n)$; the covering dimension is the exponent of the growth, $\delta n / \varepsilon n = \delta/\varepsilon$. The shadow of a geodesic ray at distance $n$ is a ball of the visual metric of radius comparable to $\exp(-\varepsilon n)$, and the counting of the shadows is the counting of the elements of $G$ at length $n$. The identity is the dimension formula of the Patterson–Sullivan theory, and the independence of $\varepsilon$ is the invariance of the product under the Hölder equivalence.</p>
@@ -120,7 +120,7 @@ $$</p>
 $$</p>
 <p>for every $\xi \in \partial G$. Consequently the Hausdorff dimension of $\mu$ is $\delta$, and in the cocompact case the dimension of the boundary equals the critical exponent,</p>
 <p>$$
-\dim_H \partial G = \delta = \dim_H \mu .
+\boxed{\;\dim_H \partial G = \delta = \dim_H \mu\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> The measure is constructed as the weak limit of the normalised atomic measures $\sum_{g}\exp(-s|g|)\delta_g / \sum_g \exp(-s|g|)$ as $s \downarrow \delta$, a construction carried out in <em>Analysis on Groups</em>; the limit is a conformal measure and its Ahlfors regularity of exponent $\delta$ is the standard statement of the Patterson–Sullivan theory. The dimension of an Ahlfors $\delta$-regular measure is $\delta$ by the mass distribution principle of <em>Fractal Geometry</em>, and the Hausdorff dimension of the boundary is at least $\dim_H\mu$; the reverse inequality is the covering estimate above. The equality $\dim_H \partial G = \delta$ is the content of the cocompact case.</p>
 <p><strong>Remark (the metric dependence and the conformal dimension).</strong> The number $\dim_H \partial G$ is not an invariant of the group: it depends on the visual metric through the parameter $\varepsilon$, the product $\varepsilon \dim_H$ being the invariant. What is a genuine quasi-isometry invariant is the <strong>conformal dimension</strong>, the infimum of the Hausdorff dimensions of the boundary over the metrics of the conformal gauge,</p>

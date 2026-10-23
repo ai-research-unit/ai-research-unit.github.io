@@ -135,7 +135,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> With the Krull topology, $\operatorname{Gal}(L/K)$ is a profinite group:</p>
 <p>$$
-\operatorname{Gal}(L/K) \cong \varprojlim_{M/K \text{ finite Galois}} \operatorname{Gal}(M/K),
+\boxed{\;\operatorname{Gal}(L/K) \cong \varprojlim_{M/K \text{ finite Galois}} \operatorname{Gal}(M/K)\;},
 $$</p>
 <p>the isomorphism carrying $\sigma$ to the family $(\sigma|_M)_M$. Consequently $\operatorname{Gal}(L/K)$ is compact, Hausdorff and totally disconnected, and its open subgroups are the subgroups $\operatorname{Gal}(L/M)$ for finite Galois $M/K$.</p>
 <p><strong>Proof.</strong> The restriction maps are compatible: if $M \subseteq M'$ then the restriction $\operatorname{Gal}(M'/K) \to \operatorname{Gal}(M/K)$ composes correctly, so there is a homomorphism to the inverse limit. It is injective because an automorphism of $L$ fixing every finite Galois subextension fixes $L$, every element of $L$ lying in such a subextension. It is surjective because a compatible family of automorphisms of the finite Galois subextensions extends to a $K$-automorphism of the union $L$: the family is consistent on overlaps by compatibility, and defines an automorphism of the union. The map is continuous with continuous inverse by the definition of the Krull topology as the inverse limit topology. The description of the open subgroups is the theorem on open subgroups applied to the inverse system.</p>
@@ -143,7 +143,7 @@ $$</p>
 <p>The point of the topology is that it makes the Galois correspondence exact.</p>
 <p><strong>Theorem (Krull).</strong> Let $L/K$ be a Galois extension with group $G = \operatorname{Gal}(L/K)$ carrying the Krull topology. The assignments</p>
 <p>$$
-M \longmapsto \operatorname{Gal}(L/M), \qquad H \longmapsto L^H,
+\boxed{\;M \longmapsto \operatorname{Gal}(L/M), \qquad H \longmapsto L^H\;},
 $$</p>
 <p>are mutually inverse bijections between the intermediate fields $K \subseteq M \subseteq L$ and the <strong>closed</strong> subgroups $H \subseteq G$. Under the bijection:</p>
 <p><strong>(a)</strong> $M/K$ is finite if and only if $\operatorname{Gal}(L/M)$ is open, and then $[M : K] = [G : \operatorname{Gal}(L/M)]$;</p>
@@ -166,7 +166,7 @@ $$</p>
 <p>the inverse limit over the finite-index normal subgroups with the natural map $\iota_G : G \to \hat G^{\mathrm{pf}}$. The hat without the superscript is reserved in this corpus for the completion of a topological group in its two-sided uniformity, as in <em>Topological Groups</em>; the two are related but distinct, and the superscript is used whenever ambiguity is possible.</p>
 <p><strong>Theorem.</strong> The profinite completion $\hat G^{\mathrm{pf}}$ is a profinite group and $\iota_G$ has dense image. The assignment $G \mapsto \hat G^{\mathrm{pf}}$ is a functor from groups to profinite groups, left adjoint to the forgetful functor: for a profinite group $P$,</p>
 <p>$$
-\operatorname{Hom}_{\mathrm{prof}}(\hat G^{\mathrm{pf}}, P) \cong \operatorname{Hom}_{\mathrm{grp}}(G, P).
+\boxed{\;\operatorname{Hom}_{\mathrm{prof}}(\hat G^{\mathrm{pf}}, P) \cong \operatorname{Hom}_{\mathrm{grp}}(G, P)\;}.
 $$</p>
 <p>The map $\iota_G$ is injective precisely when $G$ is residually finite.</p>
 <p><strong>Proof.</strong> Density: a basic open neighbourhood of an element of the limit fixes finitely many coordinates, and compatibility plus the Chinese-remainder argument produces an element of the image of $G$ in that neighbourhood. Adjointness: a homomorphism $f : G \to P$ with $P$ profinite pulls back each open normal subgroup $M \trianglelefteq_o P$ to a finite-index normal subgroup $f^{-1}(M) \trianglelefteq G$, and it induces $G/f^{-1}(M) \to P/M$; the subgroups $f^{-1}(M)$ are cofinal in the inverse system defining $\hat G^{\mathrm{pf}}$, so these compatible maps assemble into a continuous homomorphism $\hat G^{\mathrm{pf}} \to \varprojlim_M P/M = P$, unique because it agrees with $f$ on the dense image of $G$. Injectivity of $\iota_G$ is by definition of residual finiteness: the kernel is the intersection of the finite-index normal subgroups, which is trivial exactly when every nontrivial element survives in a finite quotient.</p>

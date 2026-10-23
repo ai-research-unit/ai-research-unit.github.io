@@ -101,7 +101,9 @@ the two index sets being read in row-major order when the matrix is written as a
 <p><em>Proof.</em> The row-major reading identifies the row multi-indices with $\{1,\dots,n_{1}\cdots n_{m}\}$ and the column multi-indices with $\{1,\dots,c_{1}\cdots c_{n}\}$, and the entries are unchanged.</p>
 <p><strong>Theorem (multiplicativity).</strong> For $A$ of order $m+n$ and $B$ of order $n+s$ with the shapes of the definition,
 $$
-\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B).
+\boxed{\;
+\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)
+\;}.
 $$</p>
 <p><em>Proof.</em> The entry of the right-hand side at $(P,Q)$ is $\sum_{L}\mathrm{mat}(A)_{PL}\mathrm{mat}(B)_{LQ}=\sum_{L}a_{PL}b_{LQ}$, which is the entry of $\mathrm{mat}(AB)$ at the same place by the definition of the product.</p>
 <p><strong>Corollary (the algebra of square tensors).</strong> The square tensors of order $2m$, with the same modes on both sides, form a unital associative algebra over $\mathbb{B}_{\mathrm{r}}$, free of rank $N^{2}$ with $N=n_{1}\cdots n_{m}$, and the matricisation is an isomorphism onto $M_{N}(\mathbb{B}_{\mathrm{r}})$. The algebra is not commutative for $N\ge2$, and it is not a division algebra for any $N$, the algebra $\mathbb{B}_{\mathrm{r}}$ itself having zero divisors.</p>
@@ -109,7 +111,9 @@ $$</p>
 <h2 id="units-and-zero-divisors">Units and Zero Divisors</h2>
 <p><strong>Theorem (the unit criterion).</strong> A square tensor $A$ is a unit of the algebra of square tensors if and only if both complex coordinate matrices $\mathrm{mat}(A_{(1)})$ and $\mathrm{mat}(A_{(2)})$ are nonsingular, and then the coordinate matrices of the inverse are their inverses,
 $$
-\mathrm{mat}\bigl((A^{-1})_{(1)}\bigr)=\mathrm{mat}(A_{(1)})^{-1},\qquad \mathrm{mat}\bigl((A^{-1})_{(2)}\bigr)=\mathrm{mat}(A_{(2)})^{-1}.
+\boxed{\;
+\mathrm{mat}\bigl((A^{-1})_{(1)}\bigr)=\mathrm{mat}(A_{(1)})^{-1},\qquad \mathrm{mat}\bigl((A^{-1})_{(2)}\bigr)=\mathrm{mat}(A_{(2)})^{-1}
+\;}.
 $$</p>
 <p><em>Proof.</em> A matrix over $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ is invertible exactly when both its components are nonsingular complex matrices, by <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>, §<em>The Solution as a Zero Divisor</em>, and the components of the product are the products of the components; the matricisation carries the product to the matrix product.</p>
 <p><strong>Theorem (the one-sided inverse).</strong> If $AB=\mathrm I$ for square tensors of the same order, then $BA=\mathrm I$.</p>

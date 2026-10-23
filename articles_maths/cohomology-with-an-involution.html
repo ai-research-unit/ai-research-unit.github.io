@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> An <strong>involution</strong> of a graded abelian group $H^*=\bigoplus_iH^i$ is an endomorphism $\theta$ of degree zero with $\theta^2=\mathrm{id}$; the <strong>fixed part</strong> is $H^{\theta}=\{\alpha:\theta\alpha=\alpha\}$, the <strong>anti-invariant part</strong> is $H^-=\{\alpha:\theta\alpha=-\alpha\}$, and $\theta$ is <strong>graded</strong> if the grading is preserved, which is the case throughout this article. An involution of a graded module over a ring $R$ is $R$-linear if it is a morphism of $R$-modules; an involution of a graded ring is an involution that is a ring homomorphism.</p>
 <p><strong>Theorem (the eigenspace decomposition).</strong> Let $\theta$ be an involution of a graded abelian group $H^*$. Then $H^{\theta}$ and $H^-$ are graded subgroups, and if $2$ is invertible in the coefficient ring there is a direct sum decomposition</p>
 <p>$$
-H^*=H^{\theta}\oplus H^-,\qquad \theta(\alpha^{+}+\alpha^{-})=\alpha^{+}-\alpha^{-},\qquad \alpha^{\pm}=\tfrac12(\alpha\pm\theta\alpha).
+\boxed{\;H^*=H^{\theta}\oplus H^-,\qquad \theta(\alpha^{+}+\alpha^{-})=\alpha^{+}-\alpha^{-},\qquad \alpha^{\pm}=\tfrac12(\alpha\pm\theta\alpha)\;}.
 $$</p>
 <p>If $H^*$ is a graded ring and $\theta$ a ring involution, $H^{\theta}$ is a graded subring containing the unit, $H^-$ is a module over $H^{\theta}$, and $H^-\cdot H^-\subseteq H^{\theta}$; if $H^*$ is a graded module over a ring with involution and $\theta$ is semilinear, the fixed part is a module over the fixed subring.</p>
 <p><em>Proof.</em> The maps $\alpha\mapsto\frac12(\alpha\pm\theta\alpha)$ are the projections onto the eigenspaces of an involution when $2^{-1}$ exists, and they are additive and graded; the product statements follow from the multiplicativity of $\theta$: $\theta(\alpha\beta)=\theta(\alpha)\theta(\beta)$ gives the closure of $H^{\theta}$ under products and the module laws on $H^-$, and the product of two anti-invariant elements is fixed because $(-1)(-1)=1$.</p>
@@ -113,13 +113,13 @@ $$</p>
 <h2 id="the-transfer-and-the-cohomology-of-the-quotient">The Transfer and the Cohomology of the Quotient</h2>
 <p><strong>Theorem (the transfer).</strong> Let $G=\mathbb{Z}/2$ act freely and properly discontinuously on $X$ with quotient $q:X\to X/G$, and let $\Bbbk$ be a field of characteristic different from $2$. Then for every $i$,</p>
 <p>$$
-H^i(X/G,\Bbbk)\cong H^i(X,\Bbbk)^{G},
+\boxed{\;H^i(X/G,\Bbbk)\cong H^i(X,\Bbbk)^{G}\;},
 $$</p>
 <p>the invariants of the cohomology of $X$ under the action of the group; the isomorphism is the pullback $q^*$, and its inverse is the <strong>transfer</strong> $\operatorname{Tr}$, a map $H^i(X,\Bbbk)\to H^i(X/G,\Bbbk)$ with $q^*\operatorname{Tr}=1+\tau=\mathrm{id}+\theta$ and $\operatorname{Tr}q^*=2$.</p>
 <p><em>Proof.</em> The free proper action makes $q$ a covering with deck group $\mathbb{Z}/2$, and the transfer is the composition of the inverse of the pullback along the sheets with the sum over the two sheets; on the cohomology of the quotient the composition $q^*\operatorname{Tr}$ is the sum of the identity and the involution $\theta$, and $2$ is invertible by hypothesis, so $q^*$ restricts to an isomorphism onto the invariants with inverse $\operatorname{Tr}$ on them. This is the transfer of <em>The Fundamental Group and Covering Spaces</em> and the invariant theory of <em>Group Cohomology</em>.</p>
 <p><strong>Corollary (the sheaf form).</strong> With the same hypotheses and $\mathcal{F}$ a $\mathbb{Z}/2$-equivariant sheaf on $X$, the descended sheaf $q_*^{G}\mathcal{F}$ of <em>Equivariant Sheaves and Descent</em> satisfies</p>
 <p>$$
-H^i(X/G,q_*^{G}\mathcal{F})\cong H^i(X,\mathcal{F})^{G},
+\boxed{\;H^i(X/G,q_*^{G}\mathcal{F})\cong H^i(X,\mathcal{F})^{G}\;},
 $$</p>
 <p>so that the cohomology of the quotient with the descended coefficients is the invariant cohomology of the sheaf.</p>
 <p><em>Proof.</em> The descent equivalence of <em>Equivariant Sheaves and Descent</em> matches the global sections over the quotient with the invariant sections over $X$, and the derived functors match under the equivalence; the statement is the sheaf-theoretic form of the transfer theorem.</p>

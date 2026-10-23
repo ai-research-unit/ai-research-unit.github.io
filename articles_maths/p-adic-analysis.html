@@ -98,7 +98,7 @@ and $\Delta^n f$ is defined by iteration.</p>
 <p><strong>Proof.</strong> $\mathbb{Z}_p$ is compact, and a continuous function on a compact uniform space is uniformly continuous. The supremum norm is non-Archimedean, the space is complete because a uniform limit of continuous functions on a compact space is continuous and bounded functions with values in a complete field are complete for the supremum norm, as in <em>Modes of Convergence</em>.</p>
 <p><strong>Theorem (Mahler).</strong> Every $f \in C(\mathbb{Z}_p,\mathbb{Q}_p)$ has a unique expansion
 $$
-f(x) = \sum_{n \geq 0} a_n \binom{x}{n}, \qquad a_n = (\Delta^n f)(0) \in \mathbb{Q}_p ,
+\boxed{\;f(x) = \sum_{n \geq 0} a_n \binom{x}{n}, \qquad a_n = (\Delta^n f)(0) \in \mathbb{Q}_p\;} ,
 $$
 the coefficients satisfying $a_n \to 0$; the series converges uniformly on $\mathbb{Z}_p$, and the map $f \mapsto (a_n)$ is an isometry
 $$
@@ -127,7 +127,7 @@ is continuous, has coefficients tending to $0$ but not integral, and is not the 
 <h3 id="strassmanns-theorem">Strassmann's Theorem</h3>
 <p><strong>Theorem (Strassmann).</strong> Let $f = \sum_{n \geq 0} a_n x^n \neq 0$ converge on the closed unit disc and let
 $$
-N = \max \bigl\{ n : \lvert a_n \rvert = \max_{k} \lvert a_k \rvert \bigr\}
+\boxed{\;N = \max \bigl\{ n : \lvert a_n \rvert = \max_{k} \lvert a_k \rvert \bigr\}\;}
 $$
 be the largest index of maximal absolute value. Then $f$ has at most $N$ zeros in the closed unit disc, counted with multiplicity.</p>
 <p><strong>Proof.</strong> The point $(N, v(a_N))$ is the rightmost point of the Newton polygon at minimal height $v(a_N) = \min_k v(a_k)$. The edges of the polygon with an endpoint of index $\leq N$ all have slope $\leq 0$, since the heights of the points of index $\leq N$ are $\geq v(a_N)$ and the hull rises to the left of $N$; by the corollary to the Newton polygon theorem these edges account for at most $N$ zeros in the closed unit disc, the total horizontal length of the edges of index $\leq N$ being at most $N$. The edges with both endpoints of index $> N$ have positive slope, since $N$ is rightmost of minimal height and the slopes increase to the right, so they account only for zeros of negative valuation, which lie outside the closed unit disc.</p>
@@ -146,7 +146,7 @@ so on $p\mathbb{Z}_p$ for $p$ odd and on $4\mathbb{Z}_2$ for $p = 2$;</p>
 <h3 id="the-structure-of-the-multiplicative-group">The Structure of the Multiplicative Group</h3>
 <p><strong>Theorem.</strong> The multiplicative group of $\mathbb{Q}_p$ decomposes as
 $$
-\mathbb{Q}_p^\times \cong \langle p \rangle \times \mu_{p-1} \times (1+p\mathbb{Z}_p) \cong \mathbb{Z} \times \mathbb{Z}/(p-1) \times \mathbb{Z}_p \qquad (p \text{ odd}),
+\boxed{\;\mathbb{Q}_p^\times \cong \langle p \rangle \times \mu_{p-1} \times (1+p\mathbb{Z}_p) \cong \mathbb{Z} \times \mathbb{Z}/(p-1) \times \mathbb{Z}_p \qquad (p \text{ odd})\;},
 $$
 $$
 \mathbb{Q}_p^\times \cong \langle 2 \rangle \times \{\pm 1\} \times (1+4\mathbb{Z}_2) \cong \mathbb{Z} \times \mathbb{Z}/2 \times \mathbb{Z}_2 \qquad (p = 2).

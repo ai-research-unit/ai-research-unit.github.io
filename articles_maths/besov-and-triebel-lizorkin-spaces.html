@@ -87,7 +87,7 @@ $$</p>
 <p>the sum being locally finite; the $\varphi_j$ are the <strong>Littlewood–Paley blocks</strong> and, for $f \in\mathcal S'(\mathbb{R}^n)$, the distributions $\varphi_j(D)f$ are defined by the Fourier multiplier $\varphi_j$, with $\widehat{\varphi_j(D)f}=\varphi_j\mathcal F f$.</p>
 <p><strong>Theorem (Bernstein's inequalities).</strong> Let $k \in \mathbb{N}_0$, $1\le p\le r\le\infty$, and let $f \in L^{n}(\mathbb{R}^n)$ have $\operatorname{supp}\mathcal F f \subseteq\{|\xi|\le R\}$. Then</p>
 <p>$$
-\|\partial^\alpha f\|_{L^r}\le C\,R^{|\alpha|+n(\frac1p-\frac1r)}\|f\|_{L^{n}} \quad (|\alpha|=k),
+\boxed{\;\|\partial^\alpha f\|_{L^r}\le C\,R^{|\alpha|+n(\frac1p-\frac1r)}\|f\|_{L^{n}} \quad (|\alpha|=k)\;},
 $$</p>
 <p>with a constant depending on $k,n$ but not on $R$ or $f$; in particular the frequency localisation allows any derivative to be traded for a power of the frequency and any higher $L^r$ norm to be traded for the $L^{n}$ norm at the cost of $R^{n(1/p-1/r)}$.</p>
 <p><em>Proof (sketch).</em> One writes $f=\phi*f$ for a suitable Schwartz function $\phi$ with $\hat\phi=1$ on the support of $\mathcal F f$, applies the derivative to the convolution kernel and uses Young's inequality, together with the scaling estimate $\|\phi_R\|_{L^r}\le CR^{n(1/p-1/r)}\|\phi_R\|_{L^{n}}$ for the rescaled kernel $\phi_R$.</p>
@@ -132,7 +132,7 @@ $$</p>
 <h3 id="difference-and-heat-kernel-characterisations">Difference and Heat-Kernel Characterisations</h3>
 <p><strong>Theorem (difference characterisation of Besov spaces).</strong> Let $s>0$, $0<p,q\le\infty$, and let $k$ be an integer with $k>s$. Then $f \in B^{s}_{n,m}$ if and only if</p>
 <p>$$
-\|f\|_{L^{n}}+\Bigl(\int_0^\infty\bigl(t^{-s}\sup_{|h|\le t}\|\Delta_h^kf\|_{L^{n}}\bigr)^q\,\frac{dt}{t}\Bigr)^{1/q}<\infty ,
+\boxed{\;\|f\|_{L^{n}}+\Bigl(\int_0^\infty\bigl(t^{-s}\sup_{|h|\le t}\|\Delta_h^kf\|_{L^{n}}\bigr)^q\,\frac{dt}{t}\Bigr)^{1/q}<\infty\;} ,
 $$</p>
 <p>with the $\sup$ modification for $q=\infty$; the quantity is an equivalent quasi-norm. The classical Besov definition by the modulus of continuity is therefore the same scale, and for $p=q=\infty$ the characterisation reduces to the Hölder condition of order $s$.</p>
 <p><em>Proof (sketch).</em> The equivalence of the difference and the frequency descriptions is the standard Littlewood–Paley–Stein argument: the difference $\Delta_h^k$ annihilates the frequencies below $|h|^{-1}$, so the integral over $t\approx2^{-j}$ sees exactly the block $\varphi_j(D)f$, and the two sides are comparable by Bernstein's inequality in both directions.</p>
@@ -176,8 +176,8 @@ $$</p>
 <h3 id="the-scale-as-the-interpolation-of-the-sobolev-spaces">The Scale as the Interpolation of the Sobolev Spaces</h3>
 <p><strong>Theorem (real interpolation).</strong> Let $s_0,s_1 \in\mathbb{R}$ with $s_0 \neq s_1$, $0<p,q,q_0,q_1\le\infty$ and $\theta \in(0,1)$; put $s=(1-\theta)s_0+\theta s_1$. Then</p>
 <p>$$
-\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}, \qquad
-\bigl(F^{s_0}_{p,q_0},F^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}
+\boxed{\;\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}, \qquad
+\bigl(F^{s_0}_{p,q_0},F^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}\;}
 $$</p>
 <p>with equivalent quasi-norms, the real method being taken in the sense of <em>Interpolation Theory</em>; the real interpolation of the two scales is therefore the Besov scale, whatever the originating family.</p>
 <p><em>Proof (sketch).</em> The $K$-functional of the pair is computed blockwise: the frequency blocks of the two spaces are Sobolev-type spaces of a single scale, and the $K$-functional of a piece $\varphi_j(D)f$ is comparable to $\min(2^{js_0},2^{js_1})$-weighted versions of its norm, so the $K$-functional of $f$ is equivalent to a mixed norm in the blocks; the $\theta,q$ norm then produces the Besov norm with exponent $q$, and the equality of the two families follows from the comparison of the scales. The details are the standard ones of the theory.</p>

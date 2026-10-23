@@ -103,7 +103,7 @@
 <h3 id="interior-and-closure">Interior and Closure</h3>
 <p><strong>Theorem (the duality).</strong> Let $C$ be a closure operator and define</p>
 <p>$$
-I(A) = C(A^{c})^{c} .
+\boxed{\;I(A) = C(A^{c})^{c}\;} .
 $$</p>
 <p>Then $I$ is an interior operator, and $C$ is recovered from $I$ by the same formula, $C(A) = I(A^{c})^{c}$. Under this correspondence the closed sets of $C$ are the complements of the open sets of $I$, and the interior operator of a topology is obtained from its closure operator.</p>
 <p><strong>Proof.</strong> The two operations are mutually inverse because complementation is an involution of the power set. The axioms (I1)–(I4) are the translations of (K1)–(K4): $I(X) = C(\emptyset)^{c} = X$; $I(A) = C(A^{c})^{c} \subseteq A$ is (K2) applied to $A^{c}$; $I(I(A)) = C(C(A^{c})^{c})^{c} = C(C(A^{c}))^{c} = C(A^{c})^{c} = I(A)$ by (K3); and $I(A \cap B) = C(A^{c} \cup B^{c})^{c} = (C(A^{c}) \cup C(B^{c}))^{c} = I(A) \cap I(B)$ by (K4). The identification of the closed sets with the complements of the open sets is the standard duality of <em>Topological Spaces</em>.</p>
@@ -113,11 +113,11 @@ $$</p>
 <h2 id="the-boundary">The Boundary</h2>
 <p><strong>Definition.</strong> The <strong>boundary</strong> of $A$ is</p>
 <p>$$
-\partial A = C(A) \cap C(A^{c}) .
+\boxed{\;\partial A = C(A) \cap C(A^{c})\;} .
 $$</p>
 <p><strong>Proposition.</strong> The boundary satisfies $\partial A = \partial (A^{c})$; it is closed; it contains exactly the points all of whose neighbourhoods meet both $A$ and $A^{c}$; and</p>
 <p>$$
-C(A) = A \cup \partial A, \qquad I(A) = A \setminus \partial A, \qquad \partial A = C(A) \setminus I(A) .
+\boxed{\;C(A) = A \cup \partial A, \qquad I(A) = A \setminus \partial A, \qquad \partial A = C(A) \setminus I(A)\;} .
 $$</p>
 <p><strong>Proof.</strong> The symmetry is the commutativity of the intersection. The boundary is the intersection of two closed sets, hence closed. For the third clause, $x \in \partial A$ iff $x \in C(A)$ and $x \in C(A^{c})$, which is the neighbourhood criterion of <em>Topological Spaces</em>. For the display, $A \cup \partial A = A \cup (C(A) \cap C(A^{c})) = (A \cup C(A)) \cap (A \cup C(A^{c})) = C(A) \cap X = C(A)$, since $A \cup C(A^{c}) \supseteq A \cup A^{c} = X$; and $A \setminus \partial A = A \cap (C(A)^{c} \cup C(A^{c})^{c}) = (A \cap C(A)^{c}) \cup (A \cap C(A^{c})^{c}) = \emptyset \cup (A \cap I(A)) = I(A)$, using $C(A^{c})^{c} = I(A)$ and $C(A) \supseteq A$. The last identity is the complement of the first two.</p>
 <p><strong>Remark.</strong> A set is closed and open at once exactly when its boundary is empty, since $\partial A = \emptyset$ says $C(A) \subseteq I(A) \subseteq A \subseteq C(A)$, so $A$ is both closed and open. A set is closed exactly when it contains its boundary and open exactly when it misses its boundary, by the identities of the proposition.</p>

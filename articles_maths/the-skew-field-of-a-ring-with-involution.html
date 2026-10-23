@@ -78,7 +78,7 @@ $$</p>
 <h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
 <p><strong>Proposition.</strong> $\mathrm{Sym}(A,\sigma)$ and $\mathrm{Skew}(A,\sigma)$ are additive subgroups of $A$, they intersect in $\{0\}$, and for $2$ invertible</p>
 <p>$$
-A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma), \qquad x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x)).
+\boxed{\;A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma), \qquad x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x))\;}.
 $$</p>
 <p>An element is symmetric and skew at once exactly when $2x = 0$; in particular the intersection is trivial in characteristic not two and equals $\{x : 2x = 0\}$ in general.</p>
 <p><strong>Proof.</strong> This is the eigenspace decomposition of the order-two additive map $\sigma$ of <em>Involutive Rings</em>: the sum of the two projections is the identity, each projection lands in the named set, and an element in both satisfies $x = -x$.</p>
@@ -92,7 +92,7 @@ $$</p>
 <p><strong>Proof.</strong> For $x, y$ symmetric, $\sigma(xy) = \sigma(y)\sigma(x) = yx$, which equals $xy$ exactly when they commute. For $x$ symmetric and $y$ skew, $\sigma(xy) = \sigma(y)\sigma(x) = -yx$, which equals $-xy$, the skew condition, exactly when $yx = xy$.</p>
 <p><strong>Theorem (the commutator and the anti-commutator).</strong> For all homogeneous pairs the following hold with no commutativity hypothesis:</p>
 <p>$$
-[x,y] = xy-yx \in \mathrm{Skew} \ \text{if } x, y \in \mathrm{Skew}, \qquad [x,y] \in \mathrm{Sym} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew},
+\boxed{\;[x,y] = xy-yx \in \mathrm{Skew} \ \text{if } x, y \in \mathrm{Skew}, \qquad [x,y] \in \mathrm{Sym} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew}\;},
 $$</p>
 <p>$$
 \{x,y\} = xy+yx \in \mathrm{Sym} \ \text{if } x, y \in \mathrm{Skew}, \qquad \{x,y\} \in \mathrm{Skew} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew} .
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>trace</strong> on $A$ is an additive map $\tau : A \to k$ into a commutative ring $k$ with $\tau(ab) = \tau(ba)$ for all $a, b$. It is <strong>$\sigma$-invariant</strong> when $\tau(\sigma(a)) = \tau(a)$.</p>
 <p><strong>Proposition.</strong> Let $\tau$ be a $\sigma$-invariant trace and let $2$ be invertible in $A$ and in $k$. Then</p>
 <p>$$
-\tau(\mathrm{Skew}(A,\sigma)) = 0, \qquad \tau\bigl(\mathrm{Sym}(A,\sigma)\cdot\mathrm{Skew}(A,\sigma)\bigr) = 0 .
+\boxed{\;\tau(\mathrm{Skew}(A,\sigma)) = 0, \qquad \tau\bigl(\mathrm{Sym}(A,\sigma)\cdot\mathrm{Skew}(A,\sigma)\bigr) = 0\;} .
 $$</p>
 <p><strong>Proof.</strong> For skew $x$ one has $\tau(x) = \tau(\sigma(x)) = \tau(-x) = -\tau(x)$, so $2\tau(x) = 0$ and $\tau(x) = 0$. For symmetric $x$ and skew $y$, $\tau(xy) = \tau(\sigma(xy)) = \tau(\sigma(y)\sigma(x)) = \tau((-y)x) = -\tau(yx) = -\tau(xy)$, so again $2\tau(xy) = 0$.</p>
 <p><strong>Corollary.</strong> For the matrix ring $M_n(k)$ with the transpose and $\tau = $ the matrix trace, which is invariant under the transpose, the skew-symmetric matrices have trace zero and the product of a symmetric and a skew matrix has trace zero; the latter is the orthogonality of the symmetric and the skew parts under the trace pairing $(X,Y)\mapsto \operatorname{tr}(XY)$. The same computation gives the vanishing of the trace on the pure quaternions for the conjugation of the quaternion algebra and on the odd part of a graded matrix algebra with the graded trace.</p>

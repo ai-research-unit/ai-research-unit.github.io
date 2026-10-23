@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Proof.</strong> For homogeneous $v,w$, $B(\varepsilon v,w) = (-1)^{|v|}B(v,w)$ and $B(v,\varepsilon w) = (-1)^{|w|}B(v,w)$; an even form pairs equal parities and an odd form opposite parities, which gives the two cases for $\varepsilon^\#$, and the parity of the transpose follows from $B(\varepsilon Tv,w) = (-1)^{|v|+|T|}B(Tv,w) = (-1)^{|T|}B(v,T^\#w)$ compared with $B(\varepsilon Tv,w) = B(Tv,\varepsilon^\#w)$.</p>
 <p><strong>Theorem (the sign rule for the transpose).</strong> For a homogeneous operator $T$ and a homogeneous graded form, the transpose is characterised by</p>
 <p>$$
-B(Tv,w) = (-1)^{|T|\,q}\,B(v,T^\#w),
+\boxed{\;B(Tv,w) = (-1)^{|T|\,q}\,B(v,T^\#w)\;},
 $$</p>
 <p>with $q = 0$ for an even form and $q = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.</p>
 <p><strong>Proof.</strong> The case $q = 0$ is the definition; for $q = 1$ it follows from the anti-self-adjointness of $\varepsilon$ by the computation of the proposition, and both are extended by linearity to the homogeneous decomposition.</p>
@@ -94,7 +94,7 @@ a\cdot T = \pi(a)\,T\,\pi(a)^{-1} .
 $$</p>
 <p><strong>Theorem (it is an action preserving the parity).</strong> The adjoint action is an action of the unit group of $\mathcal{A}$ on $\mathrm{End}(M)$, it is compatible with the grading in the form</p>
 <p>$$
-\varepsilon\,(a\cdot T)\,\varepsilon = \alpha(a)\cdot(\varepsilon\,T\,\varepsilon) = (\alpha(a))\cdot T^{\varepsilon}, \qquad T^\varepsilon = \varepsilon T\varepsilon ,
+\boxed{\;\varepsilon\,(a\cdot T)\,\varepsilon = \alpha(a)\cdot(\varepsilon\,T\,\varepsilon) = (\alpha(a))\cdot T^{\varepsilon}, \qquad T^\varepsilon = \varepsilon T\varepsilon\;} ,
 $$</p>
 <p>and it preserves the parity, $|a\cdot T| = |T|$.</p>
 <p><strong>Proof.</strong> The action property is the standard conjugation identity $(ab)\cdot T = a\cdot(b\cdot T)$ with $ab$ written multiplicatively in $\mathcal{A}$; the compatibility is $\varepsilon\,\pi(a)\,T\,\pi(a)^{-1}\,\varepsilon = \pi(\alpha(a))\,\varepsilon T\varepsilon\,\pi(\alpha(a))^{-1}$, using $\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$ twice; the parity is preserved because conjugation by any invertible operator and the twist $\sigma$ preserve homogeneous degree.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-hilbert-adjoint-and-the-involution">The Hilbert Adjoint and the Involution</h2>
 <p><strong>Theorem (the adjoint of the action operator).</strong> Suppose $M$ is a Hilbert space and the action is <code>*</code>-compatible, $\pi(a^*) = \pi(a)^*$; then for a unitary element $a$ the action operator is unitary, $\pi(a)^{-1} = \pi(a)^*$, and the adjoint of the adjoint action is</p>
 <p>$$
-\bigl(a\cdot T\bigr)^* = a\cdot T^* ,
+\boxed{\;\bigl(a\cdot T\bigr)^* = a\cdot T^*\;} ,
 $$</p>
 <p>so the adjoint action of a unitary element preserves self-adjointness, positivity and unitarity.</p>
 <p><strong>Proof.</strong> $(a\cdot T)^* = (\pi(a)T\pi(a)^{-1})^* = \pi(a)^{-1*}T^*\pi(a)^* = \pi(a)T^*\pi(a)^{-1}$ when $\pi(a)^* = \pi(a)^{-1}$; positivity is preserved because $a\cdot T = \pi(a)T\pi(a)^*$ is a <code>*</code>-congruence, and unitarity because the map is a <code>*</code>-automorphism of $\mathrm{End}(M)$.</p>

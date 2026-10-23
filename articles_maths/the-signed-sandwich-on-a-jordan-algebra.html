@@ -84,7 +84,7 @@ $$</p>
 <h3 id="the-symmetrisation-is-the-quadratic-representation">The Symmetrisation is the Quadratic Representation</h3>
 <p><strong>Theorem.</strong> For all $a, b \in J$,</p>
 <p>$$
-\tfrac12\bigl(S_{a,b} + S_{b,a}\bigr) = U_{a,b} ,
+\boxed{\;\tfrac12\bigl(S_{a,b} + S_{b,a}\bigr) = U_{a,b}\;} ,
 $$</p>
 <p>the quadratic representation of <em>The Left and Right Multiplication Operators on a Jordan Algebra</em>; in particular the symmetrisation of the sandwiches is an operator of the Jordan structure, and it lies in $\operatorname{Mult}(J)$.</p>
 <p><em>Proof.</em> For $x \in J$ one has $\tfrac12(S_{a,b}+S_{b,a})(x) = \tfrac12(axb+bxa)$, and the special form of the quadratic representation is $U_{a,b}(x) = \tfrac12(axb+bxa)$. That $U_{a,b}$ lies in $\operatorname{Mult}(J)$ is its definition, $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-symmetrised-case">The Symmetrised Case</h3>
 <p><strong>Theorem (the failed law).</strong> For all $a, b, c, d \in J$,</p>
 <p>$$
-\Sigma^{\alpha}_{a,b}\,\Sigma^{\alpha}_{c,d} = U_{a,b}\,U_{\alpha(c),\alpha(d)} ,
+\boxed{\;\Sigma^{\alpha}_{a,b}\,\Sigma^{\alpha}_{c,d} = U_{a,b}\,U_{\alpha(c),\alpha(d)}\;} ,
 $$</p>
 <p>a product of two quadratic representations. This product is <strong>not</strong> in general of the form $\Sigma^{\alpha}_{e,f}$; indeed it lies in the span of the $U_{e,f}$ only when $U_{a,b}U_{\alpha(c),\alpha(d)}$ is itself a quadratic representation, which is the exception and not the rule. Hence the monoid law of the ring case does not survive the symmetrisation.</p>
 <p><em>Proof.</em> From $\Sigma^{\alpha}_{a,b} = U_{a,b}\alpha$ and $\alpha U_{c,d} = U_{\alpha(c),\alpha(d)}\alpha$ (the equivariance of the quadratic representation under the automorphism $\alpha$), the composite is $U_{a,b}\alpha U_{c,d}\alpha = U_{a,b}U_{\alpha(c),\alpha(d)}\alpha^2 = U_{a,b}U_{\alpha(c),\alpha(d)}$. For the failure of the Jordan form, take $\alpha = \mathrm{id}$, $A = M_2(k)$, $a = b = E_{12}$ and $c = d = E_{21}$. Then $U_{a,a}(x) = E_{12}xE_{12} = r\,E_{12}$ and $U_{c,c}(x) = E_{21}xE_{21} = q\,E_{21}$, where $x = \bigl(\begin{smallmatrix}p&q\\ r&s\end{smallmatrix}\bigr)$, so</p>
@@ -148,7 +148,7 @@ $$</p>
 <p>It is the <strong>signed conjugation</strong> by $u$, and it is an operator of the Jordan structure when it is the twist of the conjugation $U_{u,u^{-1}}$.</p>
 <p><strong>Theorem.</strong> Let $u \in A^\times$. Then</p>
 <p>$$
-r_u^2 = \operatorname{conj}_{u\alpha(u)} , \qquad r_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1} .
+\boxed{\;r_u^2 = \operatorname{conj}_{u\alpha(u)} , \qquad r_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1}\;} .
 $$</p>
 <p>Hence $r_u$ is an involution, a <strong>reflection</strong>, exactly when $u\,\alpha(u)$ is central in $A$; it is then the inner automorphism of $J$ by $u\alpha(u)$, of order two.</p>
 <p><em>Proof.</em> The square is computed from the ring law $S^{\alpha}_{a,b}S^{\alpha}_{c,d} = S^{\alpha}_{a\alpha(c),b\alpha(d)}$ with $a = c = u$ and $b = d = u^{-1}$: $r_u^2 = S^{\alpha}_{u\alpha(u),\,u^{-1}\alpha(u^{-1})}$, and $u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$ because $\alpha(u^{-1}) = \alpha(u)^{-1}$. The conjugation by an element is the identity exactly when that element is central.</p>

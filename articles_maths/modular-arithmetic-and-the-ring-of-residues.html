@@ -103,8 +103,7 @@ $$</p>
 \psi : \mathbb{Z}/mn\mathbb{Z} \to \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}, \qquad \psi(\bar a) = (\bar a \bmod m, \bar a \bmod n),
 $$</p>
 <p>is an isomorphism of rings. More generally, for pairwise coprime $n_1, \dots, n_k$,</p>
-<p>$$
-\mathbb{Z}/n_1\cdots n_k\mathbb{Z} \cong \prod_{i=1}^{k} \mathbb{Z}/n_i\mathbb{Z}.
+<p>$$ \boxed{\;\mathbb{Z}/n_1\cdots n_k\mathbb{Z} \cong \prod_{i=1}^{k} \mathbb{Z}/n_i\mathbb{Z}\;}.
 $$</p>
 <p><strong>Proof.</strong> The kernel of $\psi$ is the set of classes divisible by both $m$ and $n$, that is, by $mn$ since $m$ and $n$ are coprime; so $\psi$ is injective. The two rings have the same finite cardinality $mn$, so $\psi$ is bijective. The general case is induction.</p>
 <p><strong>Corollary.</strong> The group of units satisfies</p>
@@ -136,8 +135,7 @@ $$</p>
 <p><strong>Proof.</strong> Partition the integers $1, \dots, n$ by the value of $\gcd(k, n) = d$; the classes with gcd $d$ are in bijection with the integers $k/d$ coprime to $n/d$, of which there are $\varphi(n/d)$; summing over $d \mid n$ gives $\sum_{d\mid n}\varphi(n/d) = n$, which is the stated identity after reindexing. The Dirichlet series is the standard computation with Möbius inversion.</p>
 <h3 id="euler-fermat-and-wilson">Euler, Fermat and Wilson</h3>
 <p><strong>Theorem (Euler).</strong> If $\gcd(a, n) = 1$ then</p>
-<p>$$
-a^{\varphi(n)} \equiv 1 \pmod n .
+<p>$$ \boxed{\;a^{\varphi(n)} \equiv 1 \pmod n \;}.
 $$</p>
 <p><strong>Proof.</strong> Multiplication by $\bar a$ permutes the group $(\mathbb{Z}/n\mathbb{Z})^\times$, so $\prod_{u \in U} u = \prod_{u\in U} \bar a u = \bar a^{\varphi(n)} \prod_{u\in U} u$; cancelling the product, which is a unit, gives $\bar a^{\varphi(n)} = \bar 1$.</p>
 <p><strong>Theorem (Fermat's little theorem).</strong> If $p$ is prime then for every integer $a$,</p>
@@ -172,8 +170,7 @@ $$</p>
 <p><strong>Proof.</strong> Fermat's little theorem gives $a^{p-1} = 1$, so $a^{(p-1)/2}$ is a root of $m^2 = 1$ in the field $\mathbb{F}_p$, hence is $\pm 1$. The squares are the even powers of a generator of the cyclic group $\mathbb{F}_p^\times$, and for them the exponent is a multiple of $p-1$, giving $1$; the nonsquares give $-1$.</p>
 <p><strong>Corollary.</strong> The Legendre symbol is multiplicative in $a$, and exactly half of the nonzero residues are quadratic residues.</p>
 <p><strong>Theorem (quadratic reciprocity).</strong> For distinct odd primes $p$ and $q$,</p>
-<p>$$
-\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}},
+<p>$$ \boxed{\;\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\;},
 $$</p>
 <p>and the supplementary laws are $\left(\frac{-1}{p}\right) = (-1)^{(p-1)/2}$ and $\left(\frac{2}{p}\right) = (-1)^{(p^2-1)/8}$.</p>
 <p><strong>Proof.</strong> The reciprocity law is Gauss's; the standard proof uses the Gaussian lemma and the counting of lattice points in a rectangle, and is given in the references.</p>

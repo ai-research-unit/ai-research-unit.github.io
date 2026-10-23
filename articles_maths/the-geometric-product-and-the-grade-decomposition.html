@@ -89,7 +89,7 @@ $$</p>
 <p>The grade of an element has been defined through one orthogonal basis. The definition does not depend on that choice, and the antisymmetrisation map exhibits the same subspaces without a basis.</p>
 <p><strong>Proposition.</strong> For $x=v_1\wedge\cdots\wedge v_k\in\Lambda^kV$ put</p>
 <p>$$
-\mathrm{Alt}(x)=\frac{1}{k!}\sum_{\pi\in S_k}\operatorname{sgn}(\pi)\,v_{\pi(1)}\cdots v_{\pi(k)}\ \in\ \mathrm{Cl}(V,\mathfrak{Q}),
+\boxed{\;\mathrm{Alt}(x)=\frac{1}{k!}\sum_{\pi\in S_k}\operatorname{sgn}(\pi)\,v_{\pi(1)}\cdots v_{\pi(k)}\ \in\ \mathrm{Cl}(V,\mathfrak{Q})\;},
 $$</p>
 <p>the antisymmetrised product. Then $\mathrm{Alt}$ is linear, $\mathrm{Alt}(\Lambda^kV)\subseteq\mathrm{Cl}_k(V,\mathfrak{Q})$, and $\mathrm{Alt}:\Lambda(V)\to\mathrm{Cl}(V,\mathfrak{Q})$ is an isomorphism of vector spaces over a field of characteristic $0$ or of characteristic greater than $n$.</p>
 <p><strong>Proof.</strong> Linearity is clear, and the grading statement follows because every term of the sum is a product of $k$ vectors. For the basis monomials $e_{i_1}\wedge\cdots\wedge e_{i_k}$ with $i_1<\cdots<i_k$ of an orthogonal basis, every product $e_{i_{\pi(1)}}\cdots e_{i_{\pi(k)}}$ reorders into $e_{i_1}\cdots e_{i_k}$ with the factor $\operatorname{sgn}(\pi)$, the indices being distinct so that no square of a generator is encountered; each of the $k!$ terms therefore equals $\operatorname{sgn}(\pi)^2e_{i_1}\cdots e_{i_k}=e_{i_1}\cdots e_{i_k}$, and $\mathrm{Alt}$ carries the wedge monomial to the Clifford monomial. The matrix of $\mathrm{Alt}$ in these two bases is the identity, so $\mathrm{Alt}$ is an isomorphism.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p><strong>Definition.</strong> The product of $\mathrm{Cl}(V,\mathfrak{Q})$ is the <strong>geometric product</strong>. The two names denote the same operation; the second records that the product is read on the grades of the multivectors rather than only on the generating vectors.</p>
 <p><strong>Theorem.</strong> Let $u\in\mathrm{Cl}_k(V,\mathfrak{Q})$ and $w\in\mathrm{Cl}_l(V,\mathfrak{Q})$. Then</p>
 <p>$$
-uw=\sum_{j}\langle uw\rangle_j, \qquad j=k+l,\ k+l-2,\ \ldots,\ |k-l|,
+\boxed{\;uw=\sum_{j}\langle uw\rangle_j, \qquad j=k+l,\ k+l-2,\ \ldots,\ |k-l|\;},
 $$</p>
 <p>so that all the surviving grades have the parity of $k+l$ and lie between $|k-l|$ and $k+l$. In particular the product of two $k$-vectors is even, and the product of an even with an odd multivector is odd.</p>
 <p><strong>Proof.</strong> Both sides being bilinear, it suffices to take monomials $u=e_{i_1}\cdots e_{i_k}$ and $w=e_{j_1}\cdots e_{j_l}$ with increasing indices, in an orthogonal basis. Let $S$ be the set of indices common to the two monomials, of cardinality $s$. In the concatenation $uw$ each index of $S$ occurs twice and every other index once. Moving the factors so that the repeated indices become adjacent, and replacing each $e^2$ by the scalar $\mathfrak{Q}(e)$, leaves a scalar multiple of the product of the $k+l-2s$ distinct indices outside $S$; the anticommutation of distinct generators contributes only signs. That product is an element of $\mathrm{Cl}_{k+l-2s}(V,\mathfrak{Q})$. As $s$ ranges from $0$ to $\min(k,l)$, the grades $k+l-2s$ are exactly $k+l,k+l-2,\ldots,|k-l|$.</p>
@@ -176,7 +176,7 @@ $$</p>
 <p>The outer product alone carries the exterior structure of the space.</p>
 <p><strong>Proposition.</strong> The bilinear extension of $u\wedge w=\langle uw\rangle_{k+l}$, taken on homogeneous multivectors and extended by linearity, makes $\bigoplus_k\mathrm{Cl}_k(V,\mathfrak{Q})$ a graded-commutative algebra, with</p>
 <p>$$
-u\wedge w=(-1)^{kl}\,w\wedge u \qquad (u\in\mathrm{Cl}_k,\ w\in\mathrm{Cl}_l),
+\boxed{\;u\wedge w=(-1)^{kl}\,w\wedge u \qquad (u\in\mathrm{Cl}_k,\ w\in\mathrm{Cl}_l)\;},
 $$</p>
 <p>and the map $\mathrm{Alt}$ of the first section is an isomorphism of graded algebras from $\Lambda(V)$ with its wedge product onto that algebra.</p>
 <p><strong>Proof.</strong> It suffices to take monomials $u=e_{i_1}\cdots e_{i_k}$ and $w=e_{j_1}\cdots e_{j_l}$ in an orthogonal basis, bilinearity doing the rest. If the two index sets are disjoint, then $uw$ and $wu$ are both of pure grade $k+l$, and reordering the concatenation moves the $l$ factors of $w$ past the $k$ factors of $u$, a factor $(-1)^{kl}$; hence $u\wedge w=(-1)^{kl}w\wedge u$. If the index sets meet, the repeated index lowers the degree of every grade of both products by at least two, so the grade $k+l$ part of $uw$ and of $wu$ vanishes and the identity reads $0=0$. The identification of the outer product with the wedge of the exterior algebra, and the graded-commutativity of the latter, are from <em>The Exterior Algebra</em>; that $\mathrm{Alt}$ intertwines the two products follows from the same monomial check, where both sides give the monomial of the union of the indices.</p>

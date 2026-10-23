@@ -101,7 +101,7 @@ $$</p>
 <h2 id="the-green-function">The Green Function</h2>
 <p><strong>Theorem (characterisation).</strong> Let $L$ be of order $2$ with leading coefficient $p$, and suppose the Green operator exists. Then the Green function is characterised by the three conditions</p>
 <p>$$
-L_xG(x,y) = \delta(x-y), \qquad B_xG(\cdot,y) = 0 \ \text{for } y\in\Omega, \qquad G(\cdot,y)\in L^1_{\mathrm{loc}}(\Omega) ,
+\boxed{\;L_xG(x,y) = \delta(x-y), \qquad B_xG(\cdot,y) = 0 \ \text{for } y\in\Omega, \qquad G(\cdot,y)\in L^1_{\mathrm{loc}}(\Omega)\;} ,
 $$</p>
 <p>the equation being read in the distributional sense of <em>Distributions and Fundamental Solutions</em>; equivalently, $G(\cdot,y)$ solves $L_xG=0$ away from $x=y$ and has the singularity fixed by the delta.</p>
 <p><em>Proof.</em> For fixed $y$ take $f=\delta_y$, which is admissible for the equation; the solution supplied by the Green operator is $G(\cdot,y)$, so $L_xG(x,y)=\delta(x-y)$ and $B_xG(\cdot,y)=0$. The local integrability of $G(\cdot,y)$ is the statement that the kernel is a function of $y$, which it is because $G$ maps $L^2$ into $L^2$ and the Schwartz kernel of such an operator is locally integrable. Conversely, if a locally integrable kernel $K(x,y)$ satisfies $L_xK(x,y)=\delta(x-y)$ and $B_xK(\cdot,y)=0$, then</p>
@@ -120,7 +120,7 @@ $$</p>
 <p>and letting $\varepsilon\to0$ the integral tends to $0$ because $G$ is locally integrable, so the jump of $p\,\partial/\partial x\,G$ is $1$. The continuity of $G$ itself follows from the same integration once more, the right-hand side being bounded; the regularity off the diagonal is that of the solutions of $Lw=0$ with $C^1$ coefficients, which are of class $C^2$.</p>
 <p><strong>Theorem (symmetry).</strong> Let $(L,B)$ be formally self-adjoint, so that $L=L^{\dagger}$ and the boundary condition pairs with itself. Then the Green function is <strong>Hermitian-symmetric</strong>,</p>
 <p>$$
-G(x,y) = \overline{G(y,x)} ,
+\boxed{\;G(x,y) = \overline{G(y,x)}\;} ,
 $$</p>
 <p>and for a real operator it is symmetric, $G(x,y)=G(y,x)$. The identity expresses the <strong>reciprocity</strong> of the boundary-value problem: the response at $x$ to a source at $y$ equals the conjugate response at $y$ to a source at $x$.</p>
 <p><em>Proof.</em> By the defining identity of the formal adjoint applied with $u=G(\cdot,x)$ and $v=G(\cdot,y)$,</p>
@@ -141,7 +141,7 @@ $$</p>
 <h2 id="construction-and-the-operator-calculus">Construction and the Operator Calculus</h2>
 <p><strong>Theorem (the one-dimensional construction).</strong> Let $L = -(p\,\partial/\partial x)'+q$ with $p>0$ of class $C^1$ and $q$ continuous on $[a,b]$, and let the boundary condition be separated. If the homogeneous problem is trivial, let $u_<$ be the solution of $Lu=0$ satisfying the condition at $a$, normalised by $u_<'(a)=1$, and $u_>$ the solution satisfying the condition at $b$, normalised by $u_>'(b)=1$. Then</p>
 <p>$$
-G(x,y) = \frac{u_<(x\wedge y)\,u_>(x\vee y)}{p(y)\,W(y)} , \qquad W = u_<'u_> - u_<u_>' ,
+\boxed{\;G(x,y) = \frac{u_<(x\wedge y)\,u_>(x\vee y)}{p(y)\,W(y)} , \qquad W = u_<'u_> - u_<u_>'\;} ,
 $$</p>
 <p>where $x\wedge y$ and $x\vee y$ are the smaller and the larger of $x$ and $y$, and $W$ is a nonzero constant by the Liouville identity.</p>
 <p><em>Proof.</em> The function on the right is, in each of the two regions $x<y$ and $x>y$, a product of two solutions of $Lu=0$, hence a solution of $Lu=0$; it satisfies the boundary conditions because one factor does at each end. Across $x=y$ it is continuous, both expressions reducing to $u_<(y)u_>(y)/(pW)$, and the jump of its first derivative is</p>

@@ -86,7 +86,7 @@ $$</p>
 <h2 id="the-quaternionic-product-in-the-model">The Quaternionic Product in the Model</h2>
 <p><strong>Theorem (the product is the adjugated matrix product).</strong> For all biquaternions,</p>
 <p>$$
-\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\operatorname{adj}\mathsf{M}_2(\tilde Q_1)\,\mathsf{M}_2(\tilde Q_2),
+\boxed{\; \mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\operatorname{adj}\mathsf{M}_2(\tilde Q_1)\,\mathsf{M}_2(\tilde Q_2) \;},
 $$</p>
 <p>the ordinary matrix product with the adjugate in the first slot.</p>
 <p><em>Proof.</em> $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ and $\mathsf{M}_2$ is multiplicative, so $\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_2(\tilde Q_1^{\natural})\mathsf{M}_2(\tilde Q_2)=\operatorname{adj}\mathsf{M}_2(\tilde Q_1)\,\mathsf{M}_2(\tilde Q_2)$.</p>
@@ -115,13 +115,13 @@ $$</p>
 <h2 id="the-general-quaternionic-bilinear-form-in-the-model">The General Quaternionic Bilinear Form in the Model</h2>
 <p><strong>Theorem (the adjugated trace pairing).</strong> For all biquaternions,</p>
 <p>$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr),
+\boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr) \;},
 $$</p>
 <p>the trace pairing in which the second argument is adjugated.</p>
 <p><em>Proof.</em> $\operatorname{adj}\mathsf{M}_2(\tilde Q_2)=\mathsf{M}_2(\tilde Q_2^{\natural})$, so the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2^{\natural}))=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ by the trace identity $\mathrm{Sc}(\tilde Q_4\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_4)\mathsf{M}_2(\tilde{S}))$.</p>
 <p><strong>Theorem (the diagonal is the determinant).</strong> On the diagonal,</p>
 <p>$$
-\langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_2)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr) = \det \mathsf{M}_2(\tilde Q_2) = \sum_\mu Q_{2,\mu}^2 ,
+\boxed{\; \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_2)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr) = \det \mathsf{M}_2(\tilde Q_2) = \sum_\mu Q_{2,\mu}^2 \;},
 $$</p>
 <p>so the form is the polarisation of the norm, and it is the determinant read as a quadratic form.</p>
 <p><strong>The Gram matrix and the signature.</strong> In the coefficient basis the Gram matrix of the form is the identity $I_4$; over $\mathbb{R}$ the form is the split form of signature $(4,4)$ on the eight real coordinates. It is indefinite and non-degenerate.</p>

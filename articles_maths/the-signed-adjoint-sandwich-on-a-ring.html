@@ -75,7 +75,7 @@
 <h2 id="the-signed-adjoint">The Signed Adjoint</h2>
 <p><strong>Theorem.</strong> With respect to the twisted pairing,</p>
 <p>$$
-\{S_{a,b}x, y\} = \{x, S_{\delta(a),\delta(b)}y\} , \qquad \text{that is } S_{a,b}^{*_\sigma} = S_{\delta(a),\delta(b)} .
+\boxed{\;\{S_{a,b}x, y\} = \{x, S_{\delta(a),\delta(b)}y\} , \qquad \text{that is } S_{a,b}^{*_\sigma} = S_{\delta(a),\delta(b)}\;} .
 $$</p>
 <p>The signed adjoint of a sandwich is the sandwich of the two $\delta$-images, with the order of the parameters <strong>not</strong> reversed, and it is an involution of the algebra of sandwiched operators.</p>
 <p><strong>Proof.</strong> $\{S_{a,b}x,y\} = \tau(a\alpha(x)b\,\sigma(y)) = \tau(\sigma(y)a\alpha(x)b)$; cyclically $= \tau(\alpha(x)b\sigma(y)a)$, and using $\tau\circ\alpha = \tau$ with $\alpha^2 = \mathrm{id}$ this is $\tau(x\,\alpha(b\sigma(y)a)) = \tau(x\,\alpha(b)\alpha(\sigma(y))\alpha(a)) = \tau(x\,\alpha(b)\sigma(\alpha(y))\alpha(a))$, the last step by the commutation of $\alpha$ and $\sigma$. On the other side, $\{x,S_{\delta(a),\delta(b)}y\} = \tau(x\,\sigma(\delta(a)\alpha(y)\delta(b))) = \tau(x\,\sigma(\delta(b))\,\sigma(\alpha(y))\,\sigma(\delta(a)))$; since $\sigma\delta = \sigma\sigma\alpha = \alpha$, one has $\sigma(\delta(a)) = \alpha(a)$ and $\sigma(\delta(b)) = \alpha(b)$, so this is $\tau(x\,\alpha(b)\sigma(\alpha(y))\alpha(a))$, matching the first expression term by term. Hence $S_{a,b}^{*_\sigma} = S_{\delta(a),\delta(b)}$, and the order-two property is $\delta^2 = \mathrm{id}$.</p>
@@ -91,7 +91,7 @@ $$</p>
 <h2 id="the-unitarity-condition">The Unitarity Condition</h2>
 <p><strong>Theorem.</strong> The sandwich is <strong>unitary</strong> for the twisted pairing,</p>
 <p>$$
-S_{a,b}^{*_\sigma}S_{a,b} = S_{a,b}S_{a,b}^{*_\sigma} = \mathrm{id} ,
+\boxed{\;S_{a,b}^{*_\sigma}S_{a,b} = S_{a,b}S_{a,b}^{*_\sigma} = \mathrm{id}\;} ,
 $$</p>
 <p>exactly when</p>
 <p>$$
@@ -101,7 +101,7 @@ $$</p>
 <p><strong>Proof.</strong> By the theorem and the composition formula, $S_{a,b}^{*_\sigma}S_{a,b} = S_{\delta(a),\delta(b)}\circ S_{a,b} = L_{\delta(a)\alpha(a)}R_{\alpha(b)\delta(b)}$, which is the identity exactly when both coefficients are $1$ and both are central, that is under the two conditions. For $b = \alpha(a)^{-1}$ one has $\alpha(b) = a^{-1}$ and $\delta(b) = \delta(\alpha(a)^{-1}) = \delta(\alpha(a))^{-1} = \sigma(\alpha(\alpha(a)))^{-1} = \sigma(a)^{-1}$, so $\alpha(b)\delta(b) = a^{-1}\sigma(a)^{-1} = (\sigma(a)a)^{-1}$, giving $\sigma(a)a = 1$; the first condition is the same statement for $\alpha(a)$.</p>
 <p><strong>Corollary (the unitary elements).</strong> The <strong>unitary elements</strong> of $A$ with respect to $\sigma$ are the units $u$ with</p>
 <p>$$
-u^{*_\sigma}u = uu^{*_\sigma} = 1, \qquad u^{*_\sigma} = \delta(u) = \sigma(\alpha(u)) ;
+\boxed{\;u^{*_\sigma}u = uu^{*_\sigma} = 1, \qquad u^{*_\sigma} = \delta(u) = \sigma(\alpha(u))\;} ;
 $$</p>
 <p>they form a subgroup of $A^\times$, and the sandwiches $S_{a,\alpha(a)^{-1}}$ with $a$ and $\alpha(a)$ unitary are the unitary sandwiches. The one-sided case of <em>The Signed Adjoint of the Left Multiplication on a Ring</em> is $b = 1$, and the reflection of <em>The Signed Adjoint of the Reflection on a Ring</em> is $b = u^{-1}$.</p>
 <p><strong>Proof.</strong> The subgroup statement is <em>Involutive Rings</em>; the identification of the unitary sandwiches is the theorem, and the specialisations to $b = 1$ and to $b = u^{-1}$ are immediate.</p>

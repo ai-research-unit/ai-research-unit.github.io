@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> The <strong>$J$-adjoint</strong> of a bounded operator $T$ is $T^{\dagger} = JT^{*}J$.</p>
 <p><strong>Proposition (characterisation and calculus).</strong> $T^{\dagger}$ is the unique bounded operator with</p>
 <p>$$
-[Tx,y] = [x,T^{\dagger}y] \qquad \text{for all } x, y\in K ;
+\boxed{\;[Tx,y] = [x,T^{\dagger}y] \qquad \text{for all } x, y\in K\;} ;
 $$</p>
 <p>it satisfies $(T^{\dagger})^{\dagger} = T$, $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$, $(\alpha T + \beta S)^{\dagger} = \bar\alpha T^{\dagger} + \bar\beta S^{\dagger}$, and $\|T^{\dagger}\| = \|T\|$ for the Hilbert norm.</p>
 <p><strong>Proof.</strong> $[Tx,y] = \langle JTx,y\rangle = \langle x,T^{*}Jy\rangle = \langle x,J(JT^{*}J)y\rangle = [x,T^{\dagger}y]$; uniqueness follows because the form is nondegenerate; the calculus is the corresponding calculus of the Hilbert adjoint conjugated by $J$.</p>
@@ -104,7 +104,7 @@ $$</p>
 <h2 id="the-j-positive-cone">The J-Positive Cone</h2>
 <p><strong>Definition.</strong> The <strong>$J$-positive cone</strong> is</p>
 <p>$$
-\{T : T = T^{\dagger},\ [Tx,x]\geq0 \text{ for every } x\in K\} .
+\boxed{\;\{T : T = T^{\dagger},\ [Tx,x]\geq0 \text{ for every } x\in K\}\;} .
 $$</p>
 <p><strong>Proposition (translation to Hilbert positivity).</strong> $T$ is $J$-positive if and only if $T = T^{\dagger}$ and $JT\geq0$ (Hilbert-positive). So the $J$-positive cone is the image under the map $T\mapsto JT$ of the Hilbert positive cone intersected with the $J$-self-adjoint condition.</p>
 <p><strong>Proof.</strong> $[Tx,x] = \langle JTx,x\rangle$, and $JT$ is self-adjoint exactly when $T$ is $J$-self-adjoint, so the condition is the Hilbert-positivity of $JT$.</p>

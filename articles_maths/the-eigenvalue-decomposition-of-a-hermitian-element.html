@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-involution-acts-trivially">The Involution Acts Trivially</h3>
 <p><strong>Theorem.</strong> Let $h=\sum_{i}\lambda_{i}e_{i}$ be a Hermitian spectral resolution. Applying the involution to the resolution gives the same resolution:</p>
 <p>$$
-h^{*}=\sum_{i}\lambda_{i}e_{i}^{*}=\sum_{i}\lambda_{i}e_{i}=h .
+\boxed{\;h^{*}=\sum_{i}\lambda_{i}e_{i}^{*}=\sum_{i}\lambda_{i}e_{i}=h\;} .
 $$</p>
 <p>The permutation of the eigenprojectors is the identity, and every eigenvalue is fixed by $\varsigma$.</p>
 <p><em>Proof.</em> The eigenvalues lie in $F_{0}$ and the projectors are Hermitian, so each term is fixed. The uniqueness of the resolution then identifies the transformed resolution with the original one.</p>
@@ -175,7 +175,7 @@ $$</p>
 <h3 id="the-diagonal-part-and-the-associative-centraliser">The Diagonal Part and the Associative Centraliser</h3>
 <p><strong>Proposition.</strong> In the associative algebra $A$, the centraliser of $h$ is the diagonal Peirce part</p>
 <p>$$
-C_{A}(h)=\bigoplus_{i=1}^{r}e_{i}Ae_{i},
+\boxed{\;C_{A}(h)=\bigoplus_{i=1}^{r}e_{i}Ae_{i}\;},
 $$</p>
 <p>and it contains $F[h]$. Its Hermitian part is the diagonal part $D$ of $J(A)$.</p>
 <p><em>Proof.</em> An element $y$ commutes with $h$ exactly when it commutes with every spectral idempotent $e_{i}$, because the $e_{i}$ are polynomials in $h$ and, conversely, $h=\sum_{i}\lambda_{i}e_{i}$. The commutant of the complete family $\{e_{i}\}$ is the sum of the diagonal corners: the condition $e_{i}y=ye_{i}$ for every $i$ forces the four blocks $e_{i}ye_{j}$ with $i\neq j$ to vanish and leaves the diagonal blocks free. The inclusion $F[h]\subseteq C_{A}(h)$ is the spectral mapping. Taking Hermitian parts uses $(e_{i}Ae_{i})^{*}=e_{i}Ae_{i}$ and the exchange of the mixed corners, so the Hermitian part of the diagonal corners is $\bigoplus_{i}H(e_{i}Ae_{i})=D$.</p>
@@ -184,7 +184,7 @@ $$</p>
 <h3 id="the-spectral-theorem">The Spectral Theorem</h3>
 <p><strong>Theorem.</strong> Suppose $F=\mathbb{C}$, $\varsigma$ is the complex conjugation, $F_{0}=\mathbb{R}$, and $J(A)$ is formally real. Then every Hermitian element $h\in H(A)$ has a Hermitian spectral resolution</p>
 <p>$$
-h=\sum_{i=1}^{r}\lambda_{i}e_{i}
+\boxed{\;h=\sum_{i=1}^{r}\lambda_{i}e_{i}\;}
 $$</p>
 <p>with $\lambda_{i}\in\mathbb{R}$ and $e_{i}$ Hermitian idempotents. The resolution is unique, and it is the spectral resolution of $h$ in the formally real Jordan algebra $J(A)$.</p>
 <p><em>Proof.</em> By <em>The Eigenvalue Decomposition in a Jordan Algebra</em>, §<em>The Spectral Theorem in a Formally Real Algebra</em>, every element of a finite-dimensional formally real Jordan algebra over $\mathbb{R}$ has a spectral resolution with real eigenvalues and pairwise orthogonal idempotents. The idempotents are Hermitian because they lie in $F_{0}[h]$ and the Lagrange formula has real coefficients. The uniqueness is the uniqueness of the Jordan resolution.</p>

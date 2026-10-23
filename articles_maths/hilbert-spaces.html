@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> An <strong>inner product</strong> on a $\mathbb{K}$-vector space $H$ is a pairing $\langle\cdot,\cdot\rangle:H\times H\to\mathbb{K}$ that is linear in the first argument, conjugate-linear in the second, Hermitian in the sense $\langle x,y\rangle=\overline{\langle y,x\rangle}$, and positive definite, $\langle x,x\rangle>0$ for $x\neq0$. An <strong>inner product space</strong> is a pair $(H,\langle\cdot,\cdot\rangle)$, and its induced norm is $\|x\|=\sqrt{\langle x,x\rangle}$.</p>
 <p><strong>Theorem (Cauchy–Schwarz and the norm axioms).</strong> For all $x,y\in H$,</p>
 <p>$$
-|\langle x,y\rangle|\le\|x\|\,\|y\| ,
+\boxed{\;|\langle x,y\rangle|\le\|x\|\,\|y\|\;} ,
 $$</p>
 <p>with equality exactly when $x,y$ are linearly dependent, and $\|\cdot\|$ is a norm: the triangle inequality is</p>
 <p>$$
@@ -98,7 +98,7 @@ $$</p>
 <p><em>Proof.</em> A complete subspace of a metric space is closed, and a closed subspace of a complete space is complete; the completion is the standard metric completion of the normed space, on which the polarized form extends by continuity.</p>
 <p><strong>Theorem (projection).</strong> Let $C\subseteq H$ be a nonempty closed convex set. For every $x\in H$ there is a unique $p\in C$ with $\|x-p\|=d(x,C)$, and if $C=M$ is a closed subspace then $x-p\perp M$ and</p>
 <p>$$
-H=M\oplus M^{\perp},\qquad x=p+q,\quad p\in M,\ q\in M^{\perp}.
+\boxed{\;H=M\oplus M^{\perp},\qquad x=p+q,\quad p\in M,\ q\in M^{\perp}\;}.
 $$</p>
 <p><em>Proof.</em> A minimising sequence is Cauchy by the parallelogram law applied to $x-c_m$ and $x-c_n$, so completeness gives a limit that is a nearest point, and uniqueness is again the parallelogram law; for a subspace, minimising $t\mapsto\|x-p-tm\|^2$ gives $\operatorname{Re}\langle x-p,m\rangle=0$ and, over $\mathbb{C}$, also $\langle x-p,im\rangle=0$, so $x-p\perp M$.</p>
 <p><strong>Corollary.</strong> The orthogonal projection $P_M$ onto a closed subspace $M$ is the linear map $x\mapsto p$ of the theorem; it is idempotent and self-adjoint, $P_M^2=P_M=P_M^*$, it is a contraction, and $I-P_M=P_{M^{\perp}}$. Conversely every self-adjoint idempotent of $B(H)$ is the orthogonal projection onto its range.</p>
@@ -118,7 +118,7 @@ $$</p>
 <h2 id="self-duality-and-the-riesz-map">Self-Duality and the Riesz Map</h2>
 <p><strong>Theorem (Riesz representation).</strong> For every bounded linear functional $\varphi\in H^*$ there is a unique $y\in H$ with</p>
 <p>$$
-\varphi(x)=\langle x,y\rangle\quad(x\in H),\qquad \|\varphi\|=\|y\| .
+\boxed{\;\varphi(x)=\langle x,y\rangle\quad(x\in H),\qquad \|\varphi\|=\|y\|\;} .
 $$</p>
 <p>The map $\Phi:H\to H^*$, $\Phi(y)=\langle\cdot,y\rangle$, is a conjugate-linear isometric bijection, and $H$ is reflexive.</p>
 <p><em>Proof.</em> If $\varphi\neq0$ its kernel is a closed hyperplane, whose orthogonal complement is spanned by a unit vector $e$; then $y=\overline{\varphi(e)}e$ represents $\varphi$ and the norm identity follows from Cauchy–Schwarz with equality. Uniqueness is the nondegeneracy of the form, conjugate-linearity is the sesquilinearity, and reflexivity is the surjectivity of the map $H\to H^{**}$ obtained by iterating $\Phi$.</p>

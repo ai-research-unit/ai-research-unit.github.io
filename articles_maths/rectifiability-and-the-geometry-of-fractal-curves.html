@@ -105,7 +105,7 @@ $$</p>
 <h2 id="rectifiable-curves-have-dimension-one">Rectifiable Curves Have Dimension One</h2>
 <p><strong>Theorem.</strong> Let $E \subseteq X$ be the image of a non-constant rectifiable curve. Then</p>
 <p>$$
-\dim_H E = 1 , \qquad \text{and} \qquad 0 < \mathcal{H}^1(E) \leq \ell(\gamma) ,
+\boxed{\;\dim_H E = 1 , \qquad \text{and} \qquad 0 < \mathcal{H}^1(E) \leq \ell(\gamma)\;} ,
 $$</p>
 <p>with $\mathcal{H}^1(E) = \ell(\gamma)$ when $\gamma$ is injective.</p>
 <p><strong>Proof sketch.</strong> A Lipschitz map of an interval is Hölder of exponent $1$, and the Hölder rule $\dim_H f(E) \leq \dim_H E$ of <em>Fractal Geometry</em> gives $\dim_H E \leq 1$ because the interval has dimension one. For the reverse inequality, choose $s < t$ with $\gamma(s) \neq \gamma(t)$; the sub-arc between them has length at least $d(\gamma(s),\gamma(t)) > 0$, and the covering content of the sub-arc is at least its diameter, so $\mathcal{H}^1(E) \geq d(\gamma(s),\gamma(t)) > 0$ and $E$ has positive one-dimensional content; a set of positive $\mathcal{H}^1$ has $\dim_H \geq 1$. The equality $\mathcal{H}^1(E) = \ell(\gamma)$ for injective $\gamma$ is the case $m=1$ of the area formula, proved in <em>Geometric Measure Theory</em>, where the one-dimensional Hausdorff measure is constructed; the covering content of <em>Fractal Geometry</em> differs from it by the constant $\beta_1 = 2$.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p>be the four maps of the plane that replace an interval by the four sides of the equilateral triangle erected on it as in the standard construction. The <strong>Koch curve</strong> is the attractor $K$ of the iterated function system $\{S_1,S_2,S_3,S_4\}$, with $\dim_H K = \log 4/\log 3$.</p>
 <p><strong>Theorem (the curve is not rectifiable).</strong> Let $K_n = F^n(K_0)$ with $F = \bigcup_{i}S_i$. Then $K_n$ is a polygonal arc of $4^n$ segments each of length $3^{-n}$, its length is</p>
 <p>$$
-\ell(K_n) = 4^n \cdot 3^{-n} = \left(\frac{4}{3}\right)^{n} \cdot 1 \longrightarrow \infty ,
+\boxed{\;\ell(K_n) = 4^n \cdot 3^{-n} = \left(\frac{4}{3}\right)^{n} \cdot 1 \longrightarrow \infty\;} ,
 $$</p>
 <p>so $\ell(K) = \infty$ and $K$ is not rectifiable. The one-dimensional content of $K$ is zero, and for $s = \log 4/\log 3$ the $s$-content of each stage is the constant one:</p>
 <p>$$
@@ -141,7 +141,7 @@ $$</p>
 <p>The map is called snowflaking because it is the metric form of the construction of the snowflake curve: the image of the linear interval under the power map $x \mapsto x^\alpha$. The triangle inequality of $d^\alpha$ follows from the concavity of the power on $[0,\infty)$, and $d^\alpha$ and $d$ have the same topology because they induce the same uniform structure of Cauchy sequences.</p>
 <p><strong>Theorem (snowflaking changes the dimension).</strong> For every bounded $E \subseteq X$ and every $0 < \alpha < 1$,</p>
 <p>$$
-\dim_H (E, d^\alpha) = \frac{1}{\alpha}\,\dim_H (E, d) , \qquad \dim_B (E, d^\alpha) = \frac{1}{\alpha}\,\dim_B (E, d) .
+\boxed{\;\dim_H (E, d^\alpha) = \frac{1}{\alpha}\,\dim_H (E, d) , \qquad \dim_B (E, d^\alpha) = \frac{1}{\alpha}\,\dim_B (E, d)\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> A set $U$ has $d^\alpha$-diameter $(\operatorname{diam}_d U)^\alpha$, so a $d$-cover by sets of diameter at most $\delta$ is a $d^\alpha$-cover by sets of diameter at most $\delta^\alpha$ and conversely; replacing $\delta$ by $\delta^\alpha$ in the exponent of the covering number multiplies the exponent by $1/\alpha$.</p>
 <p><strong>Example (a topological curve of dimension two).</strong> Take $X = [0,1]$ with the Euclidean metric and $\alpha = \tfrac12$. Then $\dim_H([0,1],d^{1/2}) = 2$: the snowflaked interval is a set homeomorphic to an interval whose Hausdorff dimension is two, and its one-dimensional content is zero. Its length is infinite, because the inscribed polygon with the $n$ vertices at the parameter values $k/n$ has $d^{1/2}$-length</p>

@@ -92,7 +92,7 @@ L\varphi_n = \lambda_n\varphi_n , \qquad \varphi_n\in\mathrm{dom}\,L ,
 $$</p>
 <p>the eigenvalues real, of finite multiplicity and with $|\lambda_n|\to\infty$; the operator has the spectral representation</p>
 <p>$$
-Lf = \sum_{n\ge1}\lambda_n\,\langle f,\varphi_n\rangle\,\varphi_n , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\varphi_n\rangle|^2<\infty\Bigr\} ,
+\boxed{\;Lf = \sum_{n\ge1}\lambda_n\,\langle f,\varphi_n\rangle\,\varphi_n , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\varphi_n\rangle|^2<\infty\Bigr\}\;} ,
 $$</p>
 <p>and for every bounded Borel function $g$ on the real line the functional calculus is</p>
 <p>$$
@@ -102,7 +102,7 @@ $$</p>
 <p><em>Proof.</em> The inverse $S$ is compact and self-adjoint, so by the spectral theorem for a compact self-adjoint operator of <em>Banach and Hilbert Spaces</em> it has an orthonormal basis of eigenvectors with eigenvalues $\mu_n$ real and $\to0$; the eigenvector equation $S\varphi=\mu\varphi$ is equivalent to $L\varphi=\mu^{-1}\varphi$ with $\varphi\in\mathrm{dom}\,L$, so the eigenfunctions of $S$ are those of $L$ and the eigenvalues are the reciprocals, giving the reality, the finite multiplicity and $|\lambda_n|\to\infty$. The spectral representation and the functional calculus are the spectral theorem for a self-adjoint operator as stated in <em>Unbounded Operators and Spectral Measures</em>, applied to the discrete spectrum produced by the compactness of $S$.</p>
 <p><strong>Corollary (the expansion and the Green function).</strong> For $f\in L^2(\Omega)$ the series $f=\sum_n\langle f,\varphi_n\rangle\varphi_n$ converges in $L^2$, and the solution of $Lu=f$ in the domain is $u=\sum_n\lambda_n^{-1}\langle f,\varphi_n\rangle\varphi_n$; the Green function of the problem is</p>
 <p>$$
-G(x,y) = \sum_{n\ge1}\frac{\varphi_n(x)\overline{\varphi_n(y)}}{\lambda_n} ,
+\boxed{\;G(x,y) = \sum_{n\ge1}\frac{\varphi_n(x)\overline{\varphi_n(y)}}{\lambda_n}\;} ,
 $$</p>
 <p>the series converging in $L^2(\Omega\times\Omega)$ and, when the eigenfunctions are continuous, absolutely and uniformly away from the diagonal.</p>
 <p><em>Proof.</em> The expansion is the Parseval identity in the orthonormal basis; applying $S=L^{-1}$ gives the solution series, and the kernel of $S$ is the displayed sum by the expansion of the kernel in the basis $(\varphi_n\otimes\overline{\varphi_m})$.</p>
@@ -112,7 +112,7 @@ $$</p>
 <h2 id="the-weyl-law">The Weyl Law</h2>
 <p><strong>Theorem (Weyl's law for the Laplacian).</strong> Let $\Omega\subseteq\mathbb{R}^n$ be a bounded open set with smooth boundary, and let $N(\lambda)$ be the counting function of the eigenvalues of $-\Delta$ under the Dirichlet condition, ordered increasingly and counted with multiplicity. Then</p>
 <p>$$
-N(\lambda) \sim \frac{\omega_n}{(2\pi)^n}\,|\Omega|\,\lambda^{n/2} \qquad (\lambda\to\infty) ,
+\boxed{\;N(\lambda) \sim \frac{\omega_n}{(2\pi)^n}\,|\Omega|\,\lambda^{n/2} \qquad (\lambda\to\infty)\;} ,
 $$</p>
 <p>where $\omega_n$ is the volume of the unit ball in $\mathbb{R}^n$ and $|\Omega|$ is the volume of the domain; equivalently the eigenvalues grow as</p>
 <p>$$

@@ -83,7 +83,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The trace form is symmetric and bilinear, and coincides with the plain bilinear form of the same space:</p>
 <p>$$
-\tau(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2=\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr).
+\boxed{\;\tau(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2=\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> $\tilde q_1\bullet\tilde q_2$ is symmetric and bilinear, so $\tau$ is; and $\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)=\mathrm{Sc}\bigl(\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)\bigr)=\mathrm{Sc}(\tilde q_1\tilde q_2)$ because the scalar part is invariant under reversal, $\mathrm{Sc}(\tilde q_1\tilde q_2)=\mathrm{Sc}(\tilde q_2\tilde q_1)$. Expanding the plain scalar part gives $q_{1t}q_{2t}-\vec q_1\cdot\vec q_2$.</p>
 <p><strong>Corollary (the polarisation).</strong> The trace form is the <strong>polarisation of the quadratic trace</strong> $\tilde q\mapsto\mathrm{Sc}(\tilde q\bullet\tilde q)=\mathrm{Sc}(\tilde q^2)=q_t^2-|\vec q|^2$:</p>
@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-radical">The Radical</h3>
 <p><strong>Proposition.</strong> The trace form is non-degenerate and its radical is trivial:</p>
 <p>$$
-\operatorname{rad}\tau=\{\tilde q_1 : \tau(\tilde q_1,\tilde q_2)=0\ \text{for all}\ \tilde q_2\}=0 .
+\boxed{\;\operatorname{rad}\tau=\{\tilde q_1 : \tau(\tilde q_1,\tilde q_2)=0\ \text{for all}\ \tilde q_2\}=0\;}.
 $$</p>
 <p><em>Proof.</em> The Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ is invertible, so the form is non-degenerate.</p>
 <p><strong>Corollary.</strong> The trace form identifies the algebra with its dual and provides the pairings used by the operators of the block; <strong>it is not a semidefinite form, so it is not the wall form of the block.</strong> The form that is definite is the norm, of the degree-two structure.</p>
@@ -105,7 +105,7 @@ $$</p>
 <h3 id="the-associativity-of-the-form">The Associativity of the Form</h3>
 <p><strong>Theorem (associativity).</strong> The trace form is <strong>associative</strong> and <strong>invariant</strong> for the product:</p>
 <p>$$
-\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(\tilde q_1,\tilde q_2\bullet\tilde q_3)=\tau(\tilde q_2,\tilde q_1\bullet\tilde q_3).
+\boxed{\;\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(\tilde q_1,\tilde q_2\bullet\tilde q_3)=\tau(\tilde q_2,\tilde q_1\bullet\tilde q_3)\;}.
 $$</p>
 <p><em>Proof.</em> $\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\mathrm{Sc}((\tilde q_1\bullet\tilde q_2)\tilde q_3)$. Writing $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ and using the associativity of the plain product and the invariance of the scalar part under reversal, $\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)=\mathrm{Sc}(\tilde q_3\tilde q_1\tilde q_2)=\mathrm{Sc}(\tilde q_2\tilde q_3\tilde q_1)$, gives the equalities.</p>
 <p><strong>Corollary.</strong> The trace form is a <strong>non-degenerate associative form</strong> on the block, the property that a Jordan algebra of degree two carries; equivalently, every multiplication operator is self-adjoint for $\tau$:</p>
@@ -115,7 +115,7 @@ $$</p>
 <h3 id="the-invariance-under-the-operators">The Invariance under the Operators</h3>
 <p><strong>Theorem.</strong> Every <strong>derivation</strong> of the block is skew for the trace form:</p>
 <p>$$
-\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0 .
+\boxed{\;\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0\;}.
 $$</p>
 <p><em>Proof.</em> The trace form is associative, so for a derivation $D$, $0=D\,\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(D(\tilde q_1\bullet\tilde q_2),\tilde q_3)+\tau(\tilde q_1\bullet\tilde q_2,D\tilde q_3)$; expanding the derivation rule and using the associativity of $\tau$ twice gives $\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0$. The derivations are <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category, and the statement is the general invariance of the trace form of a Jordan algebra quoted in <em>Jordan Algebras</em>.</p>
 <p><strong>Remark (the invariance is the content of the menu).</strong> The menu comment of the block asks for "the trace form and its invariance under the operators of the Jordan product": the <strong>operators</strong> are the left multiplications $L^{\bullet}_{\tilde q}$ and the inner derivations they generate, and the invariance is the pair of identities $\tau(L^{\bullet}_{\tilde q_1}\tilde q_2,\tilde q_3)=\tau(\tilde q_2,L^{\bullet}_{\tilde q_1}\tilde q_3)$ and $\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0$. <strong>The self-adjointness is what makes the form the trace form, and the skewness of the derivations is what makes it the invariant form of the block.</strong></p>

@@ -76,8 +76,10 @@
 <h2 id="the-pairing-with-the-form">The Pairing with the Form</h2>
 <p><strong>Theorem (the pairing).</strong> For all biquaternions,</p>
 <p>$$
+\boxed{\;
 H\bigl(\tilde Q\diamond\tilde Q_2,\tilde Q_3\bigr)
-=-Q_t\,(\overline{\vec Q_2},\overline{\vec Q_3})+\overline{Q_{2t}}\,(\vec Q,\overline{\vec Q_3})-[\vec Q,\overline{\vec Q_2},\overline{\vec Q_3}],
+=-Q_t\,(\overline{\vec Q_2},\overline{\vec Q_3})+\overline{Q_{2t}}\,(\vec Q,\overline{\vec Q_3})-[\vec Q,\overline{\vec Q_2},\overline{\vec Q_3}]
+\;},
 $$</p>
 <p>a map that is additive in each argument, $\mathbb{C}$-linear in $\tilde Q$, and conjugate-linear in $\tilde Q_2$ and in $\tilde Q_3$.</p>
 <p><em>Proof.</em> Since the value $\tilde Q\diamond\tilde Q_2$ is pure vector, only the vector part of $\tilde Q_3$ contributes and $\langle\tilde Q\diamond\tilde Q_2,\tilde Q_3\rangle_{*}=\sum_{\mu\in\{x,y,z\}}(\tilde Q\diamond\tilde Q_2)_\mu\overline{Q_{3\mu}}$. Substituting the coordinate rule of the block and distributing the sum gives the three terms: the first is $-Q_t\sum_{\mu\in\{x,y,z\}}\overline{Q_{2\mu}}\overline{Q_{3\mu}}=-Q_t(\overline{\vec Q_2},\overline{\vec Q_3})$, the second is $\overline{Q_{2t}}\sum_{\mu\in\{x,y,z\}}Q_\mu\overline{Q_{3\mu}}=\overline{Q_{2t}}(\vec Q,\overline{\vec Q_3})$, and the third is $-\sum_{\mu\in\{x,y,z\}}(\vec Q\times\overline{\vec Q_2})_\mu\overline{Q_{3\mu}}=-[\vec Q,\overline{\vec Q_2},\overline{\vec Q_3}]$. The parities are the parities of the three scalar rules of the product.</p>
@@ -113,9 +115,7 @@ $$</p>
 $$</p>
 <p>for all $\tilde Q,\tilde Q_2,\tilde Q_3$. The sign and the conjugation are the sign and the conjugation of the operation, and the condition is the exact analogue of the invariance $\beta(\tilde Q\tilde Q_2,\tilde Q_3)=\beta(\tilde Q,\tilde Q_2\tilde Q_3)$ of an invariant form of an associative product.</p>
 <p><strong>Theorem (the space of the invariants, and the degeneracy).</strong> The space of the forms $\beta$ satisfying the invariance is one-complex-dimensional, spanned by</p>
-<p>$$
-\beta(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}},
-$$</p>
+<p>$$ \boxed{\; \beta(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}} \;}, $$</p>
 <p>the form that reads the two scalar parts. On that form the invariance holds <strong>degenerately</strong>: both members vanish identically, because the scalar part of every value of the block is zero. The form $\langle\cdot,\cdot\rangle_{*}$ itself is <strong>not</strong> invariant.</p>
 <p><em>Proof.</em> Write $\beta(\tilde Q_1,\tilde Q_2)=\sum_{\mu,\nu}\beta_{\mu\nu}Q_{1\mu}\overline{Q_{2\nu}}$ and impose the condition on the triples of the real basis: the resulting linear system in the sixteen complex coefficients $\beta_{\mu\nu}$ has solution space of complex dimension one, spanned by $\beta_{tt}=1$ and the other coefficients zero. The members vanish on the solution because $\mathrm{Sc}(\tilde Q\diamond\tilde Q_2)=0$ and $\mathrm{Sc}(\tilde Q_2\diamond\tilde Q_3)=0$. For $\langle\cdot,\cdot\rangle_{*}$ the witness is the triple $(\vec e_x,\vec e_x,e_t)$: on the left $\langle \vec e_x\diamond \vec e_x,e_t\rangle_{*}=\langle 0,e_t\rangle_{*}=0$, on the right $-\overline{\langle \vec e_x,\vec e_x\diamond e_t\rangle_{*}}=-\overline{\langle \vec e_x,\vec e_x\rangle_{*}}=-1$.</p>
 <p><strong>Remark (the invariance is empty).</strong> The space is not empty, but its invariance carries no information: the block annihilates the scalar slot of every value, so any form that reads only the scalar slot satisfies the condition for free. That is the structural difference from the Lie case $\mathrm{APA}=\vec Q\times\vec Q_2$, whose invariant forms are the multiples of the dot product and carry the Killing form of <em>The Unitary Lie Algebra</em>; the block has no Jacobi identity and no such carrier, and the computation above is the substitute that its brief asks for: the invariants are computed, they are one-dimensional, and they are degenerate. The vanishing of the trace form of the preceding section is the same phenomenon read at the two equal arguments of a form.</p>
@@ -142,9 +142,11 @@ $$</p>
 <h2 id="the-pairing-the-norm-of-the-value-and-the-quadric">The Pairing, the Norm of the Value and the Quadric</h2>
 <p><strong>Theorem (the pairing vanishes exactly on the kernel).</strong> For all biquaternions,</p>
 <p>$$
+\boxed{\;
 H\bigl(\tilde Q\diamond\tilde Q_2,\tilde Q\diamond\tilde Q_2\bigr)=0
 \quad\Longleftrightarrow\quad
-\tilde Q\diamond\tilde Q_2=0 .
+\tilde Q\diamond\tilde Q_2=0
+\;}.
 $$</p>
 <p>The set of the pairs for which the quadratic form of the block vanishes is therefore the kernel of the operation, and it is not the quadric of the diagonal of <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>: the diagonal asks for the pairs with $\tilde Q_2=\tilde Q$ on which $\mathrm{Vect}(\tilde Q_2\tilde Q_2^{*})=0$, while the pairing asks for the pairs on which $\mathrm{Vect}(\tilde Q\tilde Q_2^{*})=0$, and the two conditions are different.</p>
 <p><em>Proof.</em> The pairing is the sum of the three squares of the moduli of the components of the value, by the corollary above, and a sum of three squares of moduli vanishes exactly when the three components vanish.</p>

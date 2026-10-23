@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
 <p><strong>Theorem (the explicit form).</strong> For every $r$, the signed left multiplication is adjointable with</p>
 <p>$$
-(\ell_r)^\dagger = \ell_{\delta(r)} , \qquad (\ell_r)^\dagger(x) = \delta(r)\,\alpha(x) ,
+\boxed{\;(\ell_r)^\dagger = \ell_{\delta(r)} , \qquad (\ell_r)^\dagger(x) = \delta(r)\,\alpha(x)\;} ,
 $$</p>
 <p>and the signed right multiplication satisfies $(\varrho_s)^\dagger = \varrho_{\delta(s)}$; hence the adjoint of a signed one-sided multiplication is the signed one-sided multiplication by the conjugate parameter.</p>
 <p><strong>Proof.</strong> $\ell_r = L_r\alpha = \Sigma^\alpha_{r,1}$, so its adjoint is $\Sigma^\alpha_{\delta(r),\delta(1)} = \Sigma^\alpha_{\delta(r),1} = \ell_{\delta(r)}$ by <em>The Signed Adjoint Sandwich on a Banach Algebra</em>, using $\delta(1) = 1$; the right-handed computation is the mirror, $\varrho_s = R_s\alpha = \Sigma^\alpha_{1,\delta^{-1}(s)}$ with the conjugate parameter $\delta(s)$.</p>
@@ -93,7 +93,7 @@ $$</p>
 <h2 id="the-dictionary">The Dictionary</h2>
 <p><strong>Theorem (self-adjoint, unitary, involutive).</strong> For every $r$,</p>
 <p>$$
-\ell_r \text{ self-adjoint} \iff \delta(r) = r \ (\text{modulo the kernel}) , \qquad \ell_r \text{ unitary} \iff \delta(r)\,\alpha(r) = 1 ,
+\boxed{\;\ell_r \text{ self-adjoint} \iff \delta(r) = r \ (\text{modulo the kernel}) , \qquad \ell_r \text{ unitary} \iff \delta(r)\,\alpha(r) = 1\;} ,
 $$</p>
 <p>$$
 \ell_r \text{ an involution} \iff \ell_r^2 = \mathrm{id} , \ \ell_r \text{ self-adjoint} .
@@ -102,7 +102,7 @@ $$</p>
 <p><strong>Proof.</strong> $\ell_r$ is self-adjoint iff $\ell_{\delta(r)} = \ell_r$, which is the kernel condition on the parametrisation of the one-sided operators, and it is the identity $\delta(r) = r$ modulo the kernel; $\ell_r$ is unitary iff $\ell_{\delta(r)}\ell_r = \ell_{\delta(r)\alpha(r)} = \mathrm{id}$, that is $\delta(r)\alpha(r) = 1$; and $\ell_r^2 = \mathrm{id}$ is $r\alpha(r) = 1$, with self-adjointness from the previous line.</p>
 <p><strong>Theorem (assembly of the two-sided operator).</strong> Every signed sandwich is the composite of a signed left multiplication and a signed right multiplication,</p>
 <p>$$
-\Sigma^\alpha_{r,s} = \ell_r\,R_s = L_r\,\varrho_s ,
+\boxed{\;\Sigma^\alpha_{r,s} = \ell_r\,R_s = L_r\,\varrho_s\;} ,
 $$</p>
 <p>and its adjoint is $\Sigma^\alpha_{\delta(r),\delta(s)} = \ell_{\delta(r)}R_{\delta(s)}$, so the two-sided adjoint is recovered from the one-sided adjoints and the commutation of the left and right multiplications.</p>
 <p><strong>Proof.</strong> The identities are associativity; the adjoint of the composite is the composite of the adjoints by anti-multiplicativity, $(L_r\varrho_s)^\dagger = \varrho_{\delta(s)}^\dagger L_{\delta(r)}^\dagger = R_{\delta(s)}L_{\delta(r)} = \Sigma^\alpha_{\delta(r),\delta(s)}$.</p>

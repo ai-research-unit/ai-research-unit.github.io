@@ -110,10 +110,10 @@ $$</p>
 <p>The product of two biquaternions is computed from the basis, and it separates into a scalar component and three vector components.</p>
 <p><strong>Proposition (the product in components).</strong> Let $\tilde{Q}_1$ and $\tilde{Q}_2$ be biquaternions with four-vectors $Q_1^\mu$ and $Q_2^\mu$. Then the four-vector $(\tilde{Q}_1\tilde{Q}_2)^\mu$ of the product has components</p>
 <p>$$
-(\tilde{Q}_1\tilde{Q}_2)^0 = Q_1^t Q_2^0 - \sum_{k\in\{x,y,z\}} Q_1^k Q_2^k,
+\boxed{\; (\tilde{Q}_1\tilde{Q}_2)^0 = Q_1^t Q_2^0 - \sum_{k\in\{x,y,z\}} Q_1^k Q_2^k \;},
 $$</p>
 <p>$$
-(\tilde{Q}_1\tilde{Q}_2)^i = Q_1^t Q_2^i + Q_2^0 Q_1^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q_1^j Q_2^k, \qquad i = 1, 2, 3,
+\boxed{\; (\tilde{Q}_1\tilde{Q}_2)^i = Q_1^t Q_2^i + Q_2^0 Q_1^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q_1^j Q_2^k, \qquad i = 1, 2, 3 \;},
 $$</p>
 <p>where $\epsilon^{ijk}$ is the Levi-Civita symbol on the indices $1, 2, 3$.</p>
 <p><strong>Proof.</strong> Expand the product in the basis, using $e_t e_\mu = e_\mu$ and $e_k^2 = -e_t$. The scalar component collects the terms in which both factors contribute the scalar unit or both contribute the same quaternion unit,</p>
@@ -285,7 +285,7 @@ $$</p>
 <p>The criterion of invertibility, that $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, is that of <em>Norm and Invertibility in the General Quaternionic Algebra</em>; what the four-vector realization adds is the coordinate form of the inverse.</p>
 <p><strong>Proposition (the inverse in coordinates).</strong> For an invertible biquaternion $\tilde{Q}$,</p>
 <p>$$
-\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \bigl(\tilde{Q}^{-1}\bigr)^\mu = \Bigl( \frac{Q^t}{N}, \, -\frac{Q^x}{N}, \, -\frac{Q^y}{N}, \, -\frac{Q^z}{N} \Bigr), \qquad N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
+\boxed{\; \tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \bigl(\tilde{Q}^{-1}\bigr)^\mu = \Bigl( \frac{Q^t}{N}, \, -\frac{Q^x}{N}, \, -\frac{Q^y}{N}, \, -\frac{Q^z}{N} \Bigr), \qquad N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \;}.
 $$</p>
 <p><strong>Proof.</strong> With $N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element $\tilde{Q}^{\natural}/N$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = N$ is central, so $\tilde{Q}(\tilde{Q}^{\natural}/N) = (\tilde{Q}^{\natural}/N)\tilde{Q} = e_t$. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^t, -Q^x, -Q^y, -Q^z)$, divided by the complex scalar $\langle\cdot\rangle_{\natural}$.</p>
 <p><strong>Example.</strong> For the element $\tilde{Q} = (2+i)e_t + (1-i)\vec e_x + 3\vec e_y + ie_3$ of the preceding example, the biquaternion norm is</p>

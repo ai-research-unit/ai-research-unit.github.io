@@ -80,7 +80,7 @@
 $$</p>
 <p><strong>Proposition (the involution is isometric and the norm is algebraic).</strong> In a $\mathrm{C}^*$-algebra,</p>
 <p>$$
-\lVert a^*\rVert = \lVert a\rVert , \qquad \lVert a^*a\rVert = \lVert a\rVert^2 , \qquad \lVert a\rVert = r(a^*a)^{1/2} ,
+\boxed{\;\lVert a^*\rVert = \lVert a\rVert , \qquad \lVert a^*a\rVert = \lVert a\rVert^2 , \qquad \lVert a\rVert = r(a^*a)^{1/2}\;} ,
 $$</p>
 <p>where $r$ is the spectral radius; hence the norm is determined by the algebraic structure, and a $\mathrm{C}^*$-algebra carries at most one $\mathrm{C}^*$-norm.</p>
 <p><strong>Proof.</strong> $\lVert a\rVert^2 = \lVert a^*a\rVert \leq \lVert a^*\rVert\lVert a\rVert$, so $\lVert a\rVert \leq \lVert a^*\rVert$, and replacing $a$ by $a^*$ gives equality. For the spectral formula, $a^*a$ is self-adjoint and $\lVert a^*a\rVert = r(a^*a)$ holds for every self-adjoint element of a $\mathrm{C}^*$-algebra by the spectral theory of self-adjoint elements; combining with the $\mathrm{C}^*$-identity gives the third display. Two $\mathrm{C}^*$-norms agree on self-adjoint elements, each being the spectral radius there, and then on all elements by the $\mathrm{C}^*$-identity applied to $a^*a$.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h2 id="the-gns-construction">The GNS Construction</h2>
 <p><strong>Theorem (Gelfand–Naimark–Segal).</strong> Let $A$ be a unital $\mathrm{C}^*$-algebra and let $\omega$ be a state. Then there are a Hilbert space $H_\omega$, a ${}^*$-representation $\pi_\omega : A \to B(H_\omega)$ and a cyclic unit vector $x_\omega \in H_\omega$ with</p>
 <p>$$
-\omega(a) = \langle \pi_\omega(a)x_\omega, x_\omega\rangle \qquad \text{for all } a \in A .
+\boxed{\;\omega(a) = \langle \pi_\omega(a)x_\omega, x_\omega\rangle \qquad \text{for all } a \in A\;} .
 $$</p>
 <p>The triple $(\pi_\omega, H_\omega, x_\omega)$ is the <strong>GNS triple</strong> of $\omega$, and it is unique up to unitary equivalence.</p>
 <p><strong>Proof (sketch).</strong> On $A$ define the sesquilinear form $[a,b] = \omega(b^*a)$, which is positive semidefinite by the positivity of $\omega$. The set $N_\omega = \{a : \omega(a^*a) = 0\}$ is a left ideal, by the Cauchy–Schwarz inequality $\lvert\omega((ca)^*(ca))\rvert = \lvert\omega(a^*c^*ca)\rvert \leq \lVert c^*c\rVert\omega(a^*a)$; the quotient $A/N_\omega$ carries the induced positive definite inner product $[a + N_\omega, b + N_\omega] = \omega(b^*a)$, and its completion is the Hilbert space $H_\omega$. For fixed $a$, the operator $\pi_\omega(a)$ defined on the dense image of $A$ by $b + N_\omega \mapsto ab + N_\omega$ is well defined because $N_\omega$ is a left ideal, and it is bounded with $\lVert\pi_\omega(a)\rVert \leq \lVert a\rVert$ by the bound $[ab,ab] = \omega(b^*a^*ab) \leq \lVert a^*a\rVert[b,b]$; it therefore extends to a bounded operator, and $\pi_\omega(ab) = \pi_\omega(a)\pi_\omega(b)$, $\pi_\omega(a^*) = \pi_\omega(a)^*$ are the multiplicativity and the involution of $\omega$. The class of the unit, $x_\omega = 1 + N_\omega$, is cyclic and satisfies $\langle\pi_\omega(a)x_\omega,x_\omega\rangle = \omega(a)$.</p>
@@ -122,7 +122,7 @@ $$</p>
 $$</p>
 <p>is an isometric ${}^*$-isomorphism of $A$ onto a $\mathrm{C}^*$-subalgebra of $B(H)$ for a Hilbert space $H$; in particular</p>
 <p>$$
-\lVert a\rVert = \sup_{\omega \text{ state}} \lVert\pi_\omega(a)\rVert \qquad \text{for all } a \in A .
+\boxed{\;\lVert a\rVert = \sup_{\omega \text{ state}} \lVert\pi_\omega(a)\rVert \qquad \text{for all } a \in A\;} .
 $$</p>
 <p><strong>Proof (sketch).</strong> Each $\pi_\omega$ is a ${}^*$-homomorphism, so the direct sum is a ${}^*$-homomorphism; each $\pi_\omega$ is contractive, so $\lVert\pi(a)\rVert \leq \lVert a\rVert$. For the reverse inequality, let $a \neq 0$. The element $a^*a$ is positive, and on the commutative $\mathrm{C}^*$-subalgebra it generates there is a state $\omega_0$ with $\omega_0(a^*a) = \lVert a^*a\rVert = \lVert a\rVert^2$, by the Gelfand theory of a commutative $\mathrm{C}^*$-algebra; extending $\omega_0$ to a state $\omega$ of $A$ and forming the vector state $\omega_x(b) = \omega(x^*bx)/\omega(x^*x)$ with $x = a$ gives a state whose GNS representation satisfies $\lVert\pi_{\omega_x}(a)\rVert = \lVert a\rVert$, because $\omega_x(a^*a) = \lVert a\rVert^2$ realises the top of the spectrum of $\pi_{\omega_x}(a^*a)$. Hence the supremum attains the norm, $\pi$ is isometric, and an isometric ${}^*$-homomorphism is injective. When $A$ has no unit the construction is applied to the unitisation.</p>
 <p><strong>Corollary (the abstract is the concrete).</strong> Every $\mathrm{C}^*$-algebra is isometrically ${}^*$-isomorphic to a norm-closed, adjoint-closed subalgebra of $B(H)$; the equality of the two notions is the content of the theorem, and the operator norm of the representation is the given norm.</p>

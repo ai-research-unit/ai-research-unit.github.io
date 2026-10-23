@@ -80,7 +80,7 @@
 <h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
 <p><strong>Theorem (the decomposition).</strong> A self-adjoint $T$ has the <strong>spectral decomposition</strong></p>
 <p>$$
-T = \sum_{i}\lambda_i\,P_i , \qquad \lambda_i\in\mathbb{R},
+\boxed{\;T = \sum_{i}\lambda_i\,P_i , \qquad \lambda_i\in\mathbb{R}\;},
 $$</p>
 <p>where the $P_i$ are the orthogonal projections onto the eigenspaces; the projections satisfy $P_i^2 = P_i = P_i^{\ast}$, $P_iP_j = \delta_{ij}P_i$ and $\sum_iP_i = \mathrm{id}$. Conversely every real linear combination of orthogonal projections is self-adjoint. The decomposition was checked on the regular module of $\mathrm{Cl}_{0,4}(\mathbb{R})$ with the eigenvectors of a self-adjoint two-sided operator: the reconstruction $T = \sum_i\lambda_iP_i$ holds, and $\mathrm{Tr}(T) = \sum_i\lambda_i$, $\det(T) = \prod_i\lambda_i$ with multiplicities.</p>
 <h3 id="the-functional-calculus">The Functional Calculus</h3>
@@ -88,7 +88,7 @@ $$</p>
 <h2 id="the-spectrum-as-an-extremal-problem">The Spectrum as an Extremal Problem</h2>
 <p><strong>Theorem (min-max, Courant–Fischer).</strong> Let $T$ be self-adjoint with eigenvalues ordered $\lambda_1\leq\lambda_2\leq\cdots\leq\lambda_N$ and let $\mathcal{S}_k$ range over the $k$-dimensional subspaces of $S$. Then</p>
 <p>$$
-\lambda_k = \min_{\dim\mathcal{S}_k = k}\ \max_{0\neq s\in\mathcal{S}_k}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle} = \max_{\dim\mathcal{S}_{N-k+1}=N-k+1}\ \min_{0\neq s\in\mathcal{S}}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle} ,
+\boxed{\;\lambda_k = \min_{\dim\mathcal{S}_k = k}\ \max_{0\neq s\in\mathcal{S}_k}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle} = \max_{\dim\mathcal{S}_{N-k+1}=N-k+1}\ \min_{0\neq s\in\mathcal{S}}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle}\;} ,
 $$</p>
 <p>so the spectrum is read off from the extremes of the Rayleigh quotient; in particular $\lambda_{\min} = \min_sR_T(s)$ and $\lambda_{\max} = \max_sR_T(s)$. This was checked on the regular module: for every random vector the Rayleigh quotient lay between the extreme eigenvalues.</p>
 <p><strong>Corollary (positivity).</strong> A self-adjoint operator is <strong>positive</strong>, $\langle Ts,s\rangle\geq0$ for all $s$, exactly when $\lambda_i\geq0$ for all $i$, and <strong>strictly positive</strong> exactly when $\lambda_i>0$ for all $i$. So in the definite case the positive self-adjoint operators are those with spectrum in $[0,\infty)$, the strictly positive ones are the interior of the <strong>Hermitian cone</strong> of <em>Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint</em>, and the Cauchy–Schwarz inequality $\langle Ts,t\rangle^2\leq\langle Ts,s\rangle\langle Tt,t\rangle$ for $T$ positive is the Cauchy–Schwarz inequality of the form polarised by $T$. This was checked: spectrum strictly positive implies the quadratic form is strictly positive.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-two-sided-operators">The Two-Sided Operators</h2>
 <p><strong>Theorem (the spectrum of $L_a+R_b$).</strong> The left and the right multiplications commute, $L_aR_b = R_bL_a$, so for self-adjoint $a,b$ the operator $L_a+R_b$ is self-adjoint, the pair $L_a,R_b$ is a commuting family of self-adjoint operators, and it is simultaneously diagonalisable. The eigenvalues of $L_a+R_b$ are the sums $\lambda_i+\mu_j$ of an eigenvalue $\lambda_i$ of $L_a$ and an eigenvalue $\mu_j$ of $R_b$ taken along the common eigenbasis, hence lie in the set of all sums $\sigma(L_a)+\sigma(R_b)$; this was checked on the regular module of $\mathrm{Cl}_{0,4}(\mathbb{R})$, where every eigenvalue of $L_a+R_b$ was a sum of a left and a right eigenvalue. In particular</p>
 <p>$$
-L_a+R_b \ \text{invertible} \iff \lambda_i+\mu_j\neq0 \ \text{for every pair} ,
+\boxed{\;L_a+R_b \ \text{invertible} \iff \lambda_i+\mu_j\neq0 \ \text{for every pair}\;} ,
 $$</p>
 <p>the Clifford form of the solvability condition of the Hermitian Sylvester equation, checked against the determinant: $\det(L_a+R_b) = 0$ exactly when some $\lambda_i+\mu_j$ vanished.</p>
 <p><strong>Corollary (the $L_a$ spectrum).</strong> The eigenvalues of the left multiplication $L_a$ are the values of $a$ in the left regular representation, that is the spectrum of the matrix of $A\mapsto aA$; for a self-adjoint $a$ in a definite algebra they are real, and the $L_a$ for all $a$ generate a commutative algebra only when the algebra is commutative. For the spinor modules the corresponding eigenvalues are the <strong>Clifford weights</strong> of the finite-dimensional representation, which are the subject of <em>Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation</em>; the finite $\mathbb{Z}/2$-grading of the module is the <strong>chirality</strong>, and the operators that respect it are the even ones.</p>

@@ -95,7 +95,9 @@ $$</p>
 <p>the transform of the four scalar components of $f$.</p>
 <p><strong>Theorem (Inversion and Plancherel).</strong> For $f$ in the Schwartz class of algebra-valued functions,</p>
 <p>$$
-f(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi ,
+\boxed{\;
+f(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi
+\;},
 $$</p>
 <p>the transform extends to a unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.</p>
 <p><strong>Proof.</strong> The scalar theory of <em>Fourier Analysis on Euclidean Spaces</em> applies componentwise; the unitarity is the Plancherel theorem in each component.</p>
@@ -109,7 +111,9 @@ $$</p>
 <p>with the product of the algebra inside the integral.</p>
 <p><strong>Theorem (The Convolution Theorem).</strong> For $f, g \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the convolution is well defined almost everywhere, and</p>
 <p>$$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi),
+\boxed{\;
+\widehat{f * g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi)
+\;},
 $$</p>
 <p>the product being the product of the algebra.</p>
 <p><strong>Proof.</strong> Substituting $\tilde q_2 = \tilde q-\tilde q_3$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central.</p>
@@ -144,7 +148,9 @@ $$</p>
 <p><strong>Proof.</strong> The inverse of an element is $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>, which likewise gives that $\langle\tilde q\rangle_{\natural} = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $\exp(-(\tilde q+\tilde q_2)\xi) \neq \exp(-\tilde q\xi)\exp(-\tilde q_2\xi)$ unless $\tilde q$ and $\xi$ commute, by <em>Split-Quaternion Elementary Functions</em>, §<em>Non-Commutativity and the One-Variable Case</em>.</p>
 <p><strong>Theorem (The Vanishing Determinant, Stated Precisely).</strong> Let $D = \vec e_x\partial/\partial q_x + \vec e_y\partial/\partial q_y + \vec e_z\partial/\partial q_z$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then</p>
 <p>$$
-\widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, (\mathcal F f)(\xi),
+\boxed{\;
+\widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, (\mathcal F f)(\xi)
+\;},
 $$</p>
 <p>so that the <strong>symbol</strong> of the operator is the frequency vector $\xi \in V$; the symbol is invertible exactly when $\xi$ is a unit, that is exactly when $\langle \xi\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with <em>Split-Quaternion Analysis</em>, §<em>The Differential Operators</em>.</p>
 <p><strong>Proof.</strong> Integration by parts in each coordinate gives $\widehat{\partial/\partial q_i f} = -2\pi\mathrm{i}\xi_i\mathcal F f$, and the generators multiply the scalar-valued transform centrally; the identification of the invertible frequencies with $N \neq 0$ is the invertibility criterion of <em>Split-Quaternion Norm and Invertibility</em>.</p>

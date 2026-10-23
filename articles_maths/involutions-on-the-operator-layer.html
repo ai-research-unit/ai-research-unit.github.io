@@ -75,9 +75,9 @@
 <p><strong>Convention (the operator layer).</strong> Let $k$ be a field and let $k[G]$ be the group algebra with basis $G$ and finitely supported elements. Write $\operatorname{End}_k(k[G])$ for the $k$-algebra of $k$-linear operators on it, with composition and unit $\mathrm{id}$, and write $L_a,R_b$ for the left and right translations $x\mapsto ax$, $x\mapsto xb$ extended linearly from $G$.</p>
 <p><strong>Definition (the natural pairing).</strong> The <strong>natural pairing</strong> of the category is the bilinear form</p>
 <p>$$
-\langle\,\cdot\,,\,\cdot\,\rangle : k[G]\times k[G]\longrightarrow k,
+\boxed{\;\langle\,\cdot\,,\,\cdot\,\rangle : k[G]\times k[G]\longrightarrow k,
 \qquad
-\Bigl\langle \sum_g x_g\,g,\ \sum_h y_h\,h\Bigr\rangle=\sum_g x_g\,y_g,
+\Bigl\langle \sum_g x_g\,g,\ \sum_h y_h\,h\Bigr\rangle=\sum_g x_g\,y_g\;},
 $$</p>
 <p>so that $\langle g,h\rangle=\delta_{g,h}$ and the basis $G$ is orthonormal.</p>
 <p><strong>Proposition (the pairing is symmetric, nondegenerate and inversion-invariant).</strong> The natural pairing is symmetric and nondegenerate, and $\langle x,y\rangle$ is the coefficient of $e$ in $x\,\iota(y)$ and the coefficient of $e$ in $\iota(x)\,y$; in particular it is invariant under the inversion, $\langle\iota(x),\iota(y)\rangle=\langle x,y\rangle$.</p>
@@ -93,7 +93,7 @@ $$</p>
 <h2 id="the-adjoint-operation">The Adjoint Operation</h2>
 <p><strong>Proposition (the adjoint is an involution of the operator algebra).</strong> For all $S,T\in\operatorname{End}_k(k[G])$ and $\lambda\in k$: $\mathrm{id}^{*}=\mathrm{id}$; $(T^{*})^{*}=T$; $(T+\lambda S)^{*}=T^{*}+\lambda S^{*}$; $(\lambda T)^{*}=\lambda T^{*}$; and</p>
 <p>$$
-(ST)^{*}=T^{*}S^{*}.
+\boxed{\;(ST)^{*}=T^{*}S^{*}\;}.
 $$</p>
 <p>Consequently the adjoint is an <strong>anti-involution</strong> of $\operatorname{End}_k(k[G])$ of order two: it reverses the order of composition.</p>
 <p><strong>Proof.</strong> The first four are the transpose in a basis. For the product, $\langle STx,y\rangle=\langle Tx,S^{*}y\rangle=\langle x,T^{*}S^{*}y\rangle$ for all $x,y$, so $(ST)^{*}=T^{*}S^{*}$ by uniqueness of the adjoint. Applying the operation twice returns the transpose of the transpose, which is the original.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><strong>Proof.</strong> $\langle\Sigma_{\iota}x,y\rangle=\sum_g(\Sigma_{\iota}x)_g\,y_g=\sum_g x_{g^{-1}}y_g$, and $\langle x,\Sigma_{\iota}y\rangle=\sum_g x_g y_{g^{-1}}$; reindexing the first sum by $g\mapsto g^{-1}$ gives the second. So the two agree for all $x,y$. This is the operator-level form of the statement that the inversion is the antipode; the article <em>The Group Inversion as an Adjoint</em> develops the pairing between the inversion, the left multiplication and the coalgebra structure of $k[G]$.</p>
 <p><strong>Proposition (the conjugation by the inversion).</strong> $\mathrm{ad}_{\iota}$ is an automorphism of $\operatorname{End}_k(k[G])$ of order two; it respects the adjoint, $\mathrm{ad}_{\iota}(T^{*})=\mathrm{ad}_{\iota}(T)^{*}$; and it exchanges the translations,</p>
 <p>$$
-\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}, \qquad \mathrm{ad}_{\iota}(R_b)=L_{b^{-1}}.
+\boxed{\;\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}, \qquad \mathrm{ad}_{\iota}(R_b)=L_{b^{-1}}\;}.
 $$</p>
 <p><strong>Proof.</strong> Conjugation by an invertible operator is an automorphism of the operator algebra, and $\Sigma_{\iota}^{2}=\mathrm{id}$ gives order two. Since $\Sigma_{\iota}$ is self-adjoint, $\mathrm{ad}_{\iota}(T)^{*}=(\Sigma_{\iota}T\Sigma_{\iota})^{*}=\Sigma_{\iota}^{*}T^{*}\Sigma_{\iota}^{*}=\Sigma_{\iota}T^{*}\Sigma_{\iota}=\mathrm{ad}_{\iota}(T^{*})$. For the translations, $\mathrm{ad}_{\iota}(L_a)(x)=\iota(a\,\iota(x))=x\,a^{-1}=R_{a^{-1}}(x)$.</p>
 <p><strong>Remark (the two operations differ).</strong> The adjoint and the conjugation by the inversion are different operators on the operator layer, and the translations show it: $(L_a)^{*}=L_{a^{-1}}$ while $\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}$. The two agree on $L_a$ exactly when $a$ is central. This is the operator-level instance of the rule of the general brief that the involution on the elements and the adjoint on the operators are two structures and not one; the agreement, when it holds, is proved and never assumed.</p>

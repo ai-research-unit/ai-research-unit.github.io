@@ -113,7 +113,7 @@ $$</p>
 <p>with $A, B \in B(X)$ bounded operators, and it is <strong>homogeneous</strong>; the general linear equation has an additional term $b(t)$.</p>
 <p><strong>Theorem (exponential solutions).</strong> The scalar equation $y'(t) = ay(t) + by(t-r)$ has a solution $y(t) = \exp(\lambda t)$ if and only if</p>
 <p>$$
-\lambda = a + b\,\exp(-\lambda r) ,
+\boxed{\;\lambda = a + b\,\exp(-\lambda r)\;} ,
 $$</p>
 <p>the <strong>characteristic equation</strong>. This transcendental equation has countably many roots $\lambda_n$, none of them with a finite accumulation point in $\mathbb{C}$, and for each root $\exp(\lambda t)$ is a solution; when a root has multiplicity $m$, the functions $t^{k}\exp(\lambda t)$, $0 \le k < m$, are also solutions.</p>
 <p><em>Proof.</em> Substitution gives $\lambda \exp(\lambda t) = (a + b\exp(-\lambda r))\exp(\lambda t)$; the equation in $\lambda$ is transcendental and therefore has countably many roots. If $\lambda$ has multiplicity $m$ as a root of $\lambda - a - b\exp(-\lambda r)$, differentiation of the identity $m-1$ times with respect to $\lambda$ shows that $t^k \exp(\lambda t)$ solves the equation for $k < m$.</p>
@@ -131,7 +131,7 @@ $$</p>
 <p>The semigroup property places linear delay equations inside the theory of strongly continuous semigroups of bounded operators, which is developed for general evolution equations; here it is used only to state the variation-of-constants formula, and the spectral theory of $T(t)$ is the spectral theory of the characteristic equation.</p>
 <p><strong>Theorem (variation of constants for a delay equation).</strong> Let $y$ solve the inhomogeneous equation $y'(t) = Ay(t) + By(t-r) + b(t)$ on $[\sigma,\infty)$ with history $\phi$ and with $b$ continuous. Then</p>
 <p>$$
-y(t) = \bigl(T(t-\sigma)\phi\bigr)(0) + \int_{\sigma}^{t} K(t-s)\,b(s)\,ds ,
+\boxed{\;y(t) = \bigl(T(t-\sigma)\phi\bigr)(0) + \int_{\sigma}^{t} K(t-s)\,b(s)\,ds\;} ,
 $$</p>
 <p>where $K$ is the <strong>fundamental solution</strong>: the solution of the homogeneous equation with the history $K(\theta) = 0$ for $\theta<0$ and the jump $K(0)=I$, continued by the equation. Equivalently, in the scalar case,</p>
 <p>$$
@@ -149,7 +149,7 @@ $$</p>
 <p><strong>Definition.</strong> The zero solution of a linear delay equation is <strong>exponentially stable</strong> if there are constants $C \ge 1$ and $\gamma > 0$ with $\|y_t\|_\infty \le C \exp(-\gamma t)\|\phi\|_\infty$ for every history $\phi$, and <strong>asymptotically stable</strong> if $y_t \to 0$ for every $\phi$. For the nonlinear equation $y'(t) = f(t,y(t),y(t-r))$ with $f(t,0,0) = 0$, the zero solution is <strong>stable</strong> if for every $\varepsilon > 0$ there is $\delta > 0$ with $\|\phi\|_\infty < \delta$ implying $\|y_t\|_\infty < \varepsilon$ for all $t \ge 0$, and <strong>asymptotically stable</strong> if in addition $y_t \to 0$.</p>
 <p><strong>Theorem (spectral criterion).</strong> The linear equation $y'(t) = Ay(t) + By(t-r)$ is exponentially stable if and only if every characteristic root $\lambda$ of</p>
 <p>$$
-\det\bigl(\lambda I - A - B\exp(-\lambda r)\bigr) = 0
+\boxed{\;\det\bigl(\lambda I - A - B\exp(-\lambda r)\bigr) = 0\;}
 $$</p>
 <p>satisfies $\operatorname{Re}\lambda \le -\gamma$ for some $\gamma > 0$; equivalently, if and only if all roots lie in a fixed left half-plane.</p>
 <p><em>Proof.</em> From the contour representation of the fundamental solution, the growth of $K(t)$ as $t\to\infty$ is governed by the rightmost characteristic root, and the estimate $|\exp(\lambda t)| = \exp((\operatorname{Re}\lambda)t)$ gives the equivalence; the passage from the scalar contour formula to the matrix determinant is the standard Laplace-transform solution of the linear system.</p>

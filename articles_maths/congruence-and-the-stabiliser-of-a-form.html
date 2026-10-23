@@ -83,14 +83,14 @@ $$</p>
 <p><strong>Proof.</strong> Sesquilinearity: $h_{C}(\lambda x, y) = h(C(\lambda x), Cy) = h(\lambda Cx, Cy) = \lambda h_{C}(x,y)$, and the same on the right. Hermitian: $h_{C}(y,x) = h(Cy,Cx) = \varsigma(h(Cx,Cy)) = \varsigma(h_{C}(x,y))$. The action: $h_{CD}(x,y) = h(CDx,CDy) = h_{D}(Cx,Cy) = (h_{D})_{C}(x,y)$. Non-degeneracy: if $h_{C}(x,y) = 0$ for every $y$ then $h(Cx, Cy) = 0$ for every $y$, and $C$ being onto, $h(Cx, z) = 0$ for every $z$, so $Cx = 0$ and $x = 0$.</p>
 <p><strong>Proposition (the Gram matrix).</strong> In a basis with the Gram matrix $G$ and the multiplication reading of the operators,</p>
 <p>$$
-G_{C} = C^{\dagger}GC, \qquad \det G_{C} = \varsigma(\det C)\det(G)\det C .
+\boxed{\;G_{C} = C^{\dagger}GC, \qquad \det G_{C} = \varsigma(\det C)\det(G)\det C\;} .
 $$</p>
 <p><strong>Proof.</strong> $(G_{C})_{ij} = h_{C}(e_{i},e_{j}) = h(Ce_{i},Ce_{j})$ and the coordinates of $Ce_{i}$ are the $i$-th column of $C$, so $G_{C} = C^{\dagger}GC$; the determinant formula is the multiplicativity of the determinant and the semilinearity of the dagger.</p>
 <p><strong>Corollary.</strong> The non-degeneracy and the rank of the form are invariants of the congruence class, and the determinant changes by the norm $\varsigma(\det C)\det C$ of the change of basis.</p>
 <h2 id="the-stabiliser-is-the-unitary-group">The Stabiliser Is the Unitary Group</h2>
 <p><strong>Proposition.</strong> The stabiliser of $h$ is the unitary group of the form:</p>
 <p>$$
-\operatorname{Stab}(h) = \{C \text{ invertible} : h(Cx,Cy) = h(x,y) \ \text{for all } x,y\} = \mathrm{U}(A,h) .
+\boxed{\;\operatorname{Stab}(h) = \{C \text{ invertible} : h(Cx,Cy) = h(x,y) \ \text{for all } x,y\} = \mathrm{U}(A,h)\;} .
 $$</p>
 <p><strong>Proof.</strong> The two defining conditions are the same equation; the elements of the left-hand set are the invertible isometries of $h$, which is the unitary group by <em>Isometries and the Unitary Group of a Form</em>. In the multiplication reading the condition is $C^{\dagger}GC = G$ of <em>Isometries and Unitary Operators of a Form</em>, which is the same equation in coordinates.</p>
 <p><strong>Corollary.</strong> The congruence action is transitive on the forms of a fixed signature and free on the classes up to the stabiliser; the class of $h$ is the quotient of the group of units by $\mathrm{U}(A,h)$, and the conjugates of the unitary group along the class are the unitary groups of the congruent forms:</p>
@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-transport-of-the-operators">The Transport of the Operators</h2>
 <p><strong>Proposition.</strong> Let $T$ be an operator and $C$ invertible; then $C^{-1}TC$ is an operator on $A$ and</p>
 <p>$$
-\bigl(C^{-1}TC\bigr)^{*} = C^{-1}T^{*}C
+\boxed{\;\bigl(C^{-1}TC\bigr)^{*} = C^{-1}T^{*}C\;}
 $$</p>
 <p>for the adjoint with respect to $h$ on the left and with respect to $h_{C}$ on the right; consequently the congruence transports the self-adjoint, the skew-adjoint and the unitary operators of the form to the corresponding operators of the congruent form.</p>
 <p><strong>Proof.</strong> $h_{C}(C^{-1}TCx, y) = h(TCx, Cy) = h(Cx, T^{*}Cy) = h_{C}(x, C^{-1}T^{*}Cy)$, which identifies the adjoint of $C^{-1}TC$ for $h_{C}$ with $C^{-1}T^{*}C$. The sign conditions are invariant under conjugation, since $\pm$ is central, and the isometry condition is preserved by the last corollary of the previous section.</p>

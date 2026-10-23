@@ -84,7 +84,7 @@ $$</p>
 <h2 id="the-involution">The Involution</h2>
 <p><strong>Theorem (the involution recalled).</strong> The map $f\mapsto f^*$ is an involutive, isometric, conjugate-linear anti-automorphism of $\mathcal{A}$:</p>
 <p>$$
-(f^*)^* = f, \qquad (f*g)^* = g^*\!*f^*, \qquad (\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*, \qquad \|f^*\|_1 = \|f\|_1 .
+\boxed{\;(f^*)^* = f, \qquad (f*g)^* = g^*\!*f^*, \qquad (\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*, \qquad \|f^*\|_1 = \|f\|_1\;} .
 $$</p>
 <p><strong>Proof.</strong> These are the four axiom verifications of <em>The Convolution Algebra $L^1(G)$</em>, §The Involution; the modular factor is exactly what makes the norm isometric under the inversion $x\mapsto x^{-1}$, and it is absent only when $\Delta\equiv1$.</p>
 <p><strong>Corollary ($L^1(G)$ is an involutive Banach algebra).</strong> With this operation $\mathcal{A}$ is a Banach <code>*</code>-algebra; it is commutative exactly when $G$ is abelian and unital exactly when $G$ is discrete, and its involution is the one the harmonic analysis of the category uses throughout.</p>
@@ -101,7 +101,7 @@ $$</p>
 <p><strong>Proof.</strong> A unitary element is invertible, so its existence forces a unit; for a non-discrete group $\mathcal{A}$ has no identity and no invertible elements. For discrete $G$ the identity is $\delta_e$ and $\delta_x^*\!*\delta_x = \delta_{x^{-1}}*\delta_x = \delta_e$, so the point masses are unitary; a general unitary has $\|f\|_1\|f\|_1 = \|f^*\|_1\|f\|_1\geq\|f^*\!*f\|_1 = \|\delta_e\|_1 = 1$.</p>
 <p><strong>Theorem (the positive cone).</strong> The set</p>
 <p>$$
-\mathcal{A}^+ = \Bigl\{\sum_{i=1}^n g_i^*\!*g_i : n\geq0,\ g_i\in\mathcal{A}\Bigr\}
+\boxed{\;\mathcal{A}^+ = \Bigl\{\sum_{i=1}^n g_i^*\!*g_i : n\geq0,\ g_i\in\mathcal{A}\Bigr\}\;}
 $$</p>
 <p>of finite sums of squares is a convex cone under the real scalars, stable under $f\mapsto h^*\!*f*\!h$, and proper, $\mathcal{A}^+\cap(-\mathcal{A}^+)=\{0\}$; the positive functionals on $\mathcal{A}$, those $\omega$ with $\omega(f^*\!*f)\geq0$ for all $f$, are exactly the real-linear functionals that are $\geq0$ on $\mathcal{A}^+$.</p>
 <p><strong>Proof.</strong> The cone is convex by construction and stable under inner multiplication because $h^*\!*(g^*\!*g)*\!h = (g*h)^*\!*(g*h)$; for properness, fix a faithful <code>*</code>-representation, for instance the direct sum of the unitary representations: an element of $\mathcal{A}^+\cap(-\mathcal{A}^+)$ has $\pi(f)$ both positive and negative in $B(\mathcal{H}_\pi)$, hence $\pi(f) = 0$, and faithfulness gives $f = 0$. The identification of the positive functionals is the definition read on the generators of the cone and extended by linearity.</p>
@@ -113,7 +113,7 @@ $$</p>
 $$</p>
 <p>and on the completion the involution is isometric and satisfies the $\mathrm{C}^*$-identity</p>
 <p>$$
-\|f^*\!*f\|_{C^*} = \|f\|_{C^*}^2 \qquad (f\in C^*(G)) ;
+\boxed{\;\|f^*\!*f\|_{C^*} = \|f\|_{C^*}^2 \qquad (f\in C^*(G))\;} ;
 $$</p>
 <p>the algebra $\mathcal{A}$ is dense in $C^*(G)$ and the inclusion $\mathcal{A}\hookrightarrow C^*(G)$ is injective.</p>
 <p><strong>Proof.</strong> The bound is $\|\pi(f)\|\leq\|f\|_1$ for every representation, so the supremum is finite; the $\mathrm{C}^*$-identity holds in every $B(\mathcal{H}_\pi)$ and passes to the supremum because $f\mapsto\|f\|_{C^*}$ makes the completion a $\mathrm{C}^*$-algebra by construction, and the $\mathrm{C}^*$-algebra axioms include the identity; density is by definition, and injectivity because the regular representation is faithful: $\lambda(f) = 0$ gives $\|f\|_{C^*} = 0$ and then $f = 0$.</p>

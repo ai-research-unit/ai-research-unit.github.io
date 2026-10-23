@@ -90,7 +90,7 @@ $$</p>
 <p>An eigenvector determines a line, and the eigenvalue is the factor by which $T$ stretches it. Two eigenvectors for the same eigenvalue need not be multiples of one another, and the set of all of them for a fixed $\lambda$ is the eigenspace.</p>
 <p><strong>Proposition.</strong> Eigenvectors for distinct eigenvalues are linearly independent; more generally, if $\lambda_1,\dots,\lambda_k$ are distinct then</p>
 <p>$$
-V_{\lambda_1}+\cdots+V_{\lambda_k}=V_{\lambda_1}\oplus\cdots\oplus V_{\lambda_k},
+\boxed{\;V_{\lambda_1}+\cdots+V_{\lambda_k}=V_{\lambda_1}\oplus\cdots\oplus V_{\lambda_k}\;},
 $$</p>
 <p>so the sum of the eigenspaces is direct.</p>
 <p><em>Proof.</em> Suppose $b_1+\cdots+b_k=0$ with $b_i \in V_{\lambda_i}$, and choose such a relation with the fewest nonzero terms; reindex so that $b_1,\dots,b_m \neq 0$. Applying $T$ gives $\lambda_1 b_1+\cdots+\lambda_m b_m=0$, and subtracting $\lambda_1$ times the original relation gives $(\lambda_2-\lambda_1)b_2+\cdots+(\lambda_m-\lambda_1)b_m=0$, a shorter relation with nonzero coefficients; this contradicts minimality unless $m=1$, in which case $b_1=0$, again a contradiction. Hence no nontrivial relation exists and the sum is direct.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><strong>Proposition.</strong> For every eigenvalue, the geometric multiplicity is at most the algebraic multiplicity.</p>
 <p><em>Proof.</em> Extend a basis $b_1,\dots,b_g$ of $V_\lambda$ to a basis of $V$. In that basis the matrix of $T$ is block upper triangular,</p>
 <p>$$
-\begin{pmatrix} \lambda I_g & * \\ 0 & B \end{pmatrix},
+\boxed{\;\begin{pmatrix} \lambda I_g & * \\ 0 & B \end{pmatrix}\;},
 $$</p>
 <p>so $c_T(x)=(x-\lambda)^g c_B(x)$ and $\lambda$ occurs to the power at least $g$.</p>
 <p>The inequality can be strict, and the gap is exactly what prevents diagonalisation.</p>
@@ -127,7 +127,7 @@ $$</p>
 <h3 id="computing-the-decomposition">Computing the Decomposition</h3>
 <p>For a matrix $A$ the eigenspace for $\lambda$ is $\ker(\lambda I-A)$, so its dimension is computed by rank–nullity:</p>
 <p>$$
-\dim_F V_\lambda=n-\operatorname{rk}(\lambda I-A),
+\boxed{\;\dim_F V_\lambda=n-\operatorname{rk}(\lambda I-A)\;},
 $$</p>
 <p>and a basis of the eigenspace is a basis of the null space of $\lambda I-A$, obtained by Gaussian elimination. Diagonalisation, when possible, is the change of basis $P$ whose columns are bases of the eigenspaces, giving $P^{-1}AP=\operatorname{diag}(\lambda_1,\dots,\lambda_n)$, with each eigenvalue repeated according to its geometric multiplicity.</p>
 <p><strong>Examples.</strong> The matrix $A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$ has $\dim V_3=\dim V_1=1$, the sum is $2=n$, and $A$ is diagonalisable with $P=\begin{pmatrix}1&1\\1&-1\end{pmatrix}$ and $P^{-1}AP=\operatorname{diag}(3,1)$. The matrix $N=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ has $c_N(x)=(x-1)^2$, algebraic multiplicity $2$; but $N-I=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has rank $1$, so $\dim V_1=2-1=1$ and the geometric multiplicity is $1$. The criterion fails, and $N$ is not diagonalisable. The rotation $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has $c_J(x)=x^2+1$, which does not split over $\mathbb{R}$; over $\mathbb{C}$ it splits with distinct roots $\pm i$, so $J$ is not diagonalisable over $\mathbb{R}$ but is over $\mathbb{C}$, with $P=\begin{pmatrix}1&1\\-i&i\end{pmatrix}$ (up to column order).</p>

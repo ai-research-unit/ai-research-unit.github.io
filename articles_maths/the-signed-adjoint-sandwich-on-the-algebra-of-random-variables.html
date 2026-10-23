@@ -93,7 +93,7 @@ $$
 $$</p>
 <p><strong>Theorem (the closed form).</strong> For all $a,b\in\mathcal{A}$,
 $$
-\bigl(S^\alpha_{a,b}\bigr)^*=S^\alpha_{\delta(a),\delta(b)}=S^\alpha_{\alpha(a^*),\alpha(b^*)},
+\boxed{\;\bigl(S^\alpha_{a,b}\bigr)^*=S^\alpha_{\delta(a),\delta(b)}=S^\alpha_{\alpha(a^*),\alpha(b^*)}\;},
 $$
 with $\delta=\sigma\alpha$; on the commutative algebra, where $S^\alpha_{a,b}=S^\alpha_{ab}$, this is $\bigl(S^\alpha_c\bigr)^*=S^\alpha_{\delta(c)}$.</p>
 <p><em>Proof.</em> The operator is the composite $S^\alpha_{a,b}=L_a\,\alpha\,R_b$, and the adjoint of a product is the product of the adjoints in reverse order, $(L_a\alpha R_b)^*=R_b^*\alpha^*L_a^*$. By <em>The Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, earlier in this category, $L_a^*=L_{a^*}$ and $R_b^*=R_{b^*}=L_{b^*}$, and $\alpha^*=\alpha$ because the grade involution is self-adjoint; hence $(S^\alpha_{a,b})^*=L_{b^*}\alpha L_{a^*}$. Using $\alpha L_{a^*}=L_{\alpha(a^*)}\alpha$ and the commutativity, this is $L_{b^*\alpha(a^*)}\alpha$. A direct computation of $S^\alpha_{\delta(a),\delta(b)}=L_{\delta(a)}\alpha L_{\delta(b)}=L_{\delta(a)}L_{\alpha\delta(b)}\alpha$ gives the coefficient $\delta(a)\,\alpha\delta(b)$. Now $\delta(a)=(\alpha(a))^*=\alpha(a^*)$ because $\alpha$ commutes with the conjugation, and $\alpha\delta(b)=\alpha\sigma\alpha(b)=\sigma(b)=b^*$ because $\alpha^2=\mathrm{id}$ and $\alpha\sigma=\sigma\alpha$; the coefficient is therefore $\alpha(a^*)\,b^*=b^*\,\alpha(a^*)$ by the commutativity, which matches the coefficient $b^*\alpha(a^*)$ of $L_{b^*}\alpha L_{a^*}$.</p>
@@ -102,13 +102,13 @@ with $\delta=\sigma\alpha$; on the commutative algebra, where $S^\alpha_{a,b}=S^
 <h3 id="products-and-the-involution">Products and the involution</h3>
 <p><strong>Theorem (products).</strong> The signed sandwiches compose by
 $$
-S^\alpha_{a,b}\,S^\alpha_{c,d}=S^\alpha_{a\alpha(c),\alpha(d)b},
+\boxed{\;S^\alpha_{a,b}\,S^\alpha_{c,d}=S^\alpha_{a\alpha(c),\alpha(d)b}\;},
 $$
 and the adjoint reverses the product, $(S^\alpha_{a,b}S^\alpha_{c,d})^*=(S^\alpha_{c,d})^*(S^\alpha_{a,b})^*$; the map $(a,b)\mapsto S^\alpha_{a,b}$ is a representation of the semidirect product of the algebra with its grade involution.</p>
 <p><em>Proof.</em> Composing, $(S^\alpha_{a,b}S^\alpha_{c,d})(x)=a\alpha(c\alpha(x)d)b=a\alpha(c)\,\alpha^2(x)\,\alpha(d)b=S^\alpha_{a\alpha(c),\alpha(d)b}(x)$; the anti-multiplicativity of the adjoint is the general property, and the representation statement is the multiplicativity just computed.</p>
 <p><strong>Theorem (square and involution).</strong> On the commutative algebra the sandwich is $S^\alpha_c$ with $c=ab$, its square is
 $$
-\bigl(S^\alpha_c\bigr)^2=S^\alpha_{c\,\alpha(c)},
+\boxed{\;\bigl(S^\alpha_c\bigr)^2=S^\alpha_{c\,\alpha(c)}\;},
 $$
 and it is an involution exactly when $c\,\alpha(c)=1$, that is when $c$ is an $\alpha$-cocycle; the involutive signed sandwiches form a group under multiplication.</p>
 <p><em>Proof.</em> The square is $(L_c\alpha)^2=L_c\alpha L_c\alpha=L_cL_{\alpha(c)}\alpha^2=L_{c\alpha(c)}=S^\alpha_{c\alpha(c)}$; the involution is the square equal to the identity, which is $c\alpha(c)=1$; the $\alpha$-cocycles are closed under multiplication and inversion because $\alpha$ is an involution.</p>

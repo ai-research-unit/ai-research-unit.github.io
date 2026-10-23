@@ -117,9 +117,7 @@ $$</p>
 Q_g : \mathbb{H}\to\mathbb{R}, \qquad Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q).
 $$</p>
 <p><strong>Lemma (the identity of the construction).</strong> For every $g$ and every $\tilde q$,</p>
-<p>$$
-Q_g(\tilde q) = \omega(g\tilde q) = \omega(L_g\tilde q).
-$$</p>
+<p>$$ \boxed{\; Q_g(\tilde q) = \omega(g\tilde q) = \omega(L_g\tilde q) \;} .$$</p>
 <p><em>Proof.</em> Both expressions are $\mathrm{Sc}\bigl((g\tilde q)^2\bigr)$: the product $g\tilde qg\tilde q$ is $(g\tilde q)(g\tilde q)$, and the Minkowski form of a quaternion is the scalar part of its square.</p>
 <p>The identity is the reason the construction is a generalisation of the interval rather than a replacement of it: the form of $g$ is the Minkowski form read at the left translate $g\tilde q$.</p>
 <h3 id="elementary-properties">Elementary Properties</h3>
@@ -145,14 +143,12 @@ $$</p>
 $$</p>
 <h3 id="closed-form">Closed Form</h3>
 <p><strong>Proposition.</strong> Write $g = g_0e_t + g_1\vec e_x+g_2\vec e_y+g_3\vec e_z$. The Gram matrix of $Q_g$ is</p>
-<p>$$
-M(g) = \begin{pmatrix}
+<p>$$ \boxed{\; M(g) = \begin{pmatrix}
 g_0^2-g_1^2-g_2^2-g_3^2 & -2g_0g_1 & -2g_0g_2 & -2g_0g_3 \\
 -2g_0g_1 & -g_0^2+g_1^2-g_2^2-g_3^2 & 2g_1g_2 & 2g_1g_3 \\
 -2g_0g_2 & 2g_1g_2 & -g_0^2-g_1^2+g_2^2-g_3^2 & 2g_2g_3 \\
 -2g_0g_3 & 2g_1g_3 & 2g_2g_3 & -g_0^2-g_1^2-g_2^2+g_3^2
-\end{pmatrix}.
-$$</p>
+\end{pmatrix} \;} .$$</p>
 <p>Its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the scalar coordinate and $2g_jg_k$ against two vector coordinates.</p>
 <p><em>Proof.</em> One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\vec g|^2$ at $\mu=0$ and $-\mathrm{Sc}(g\vec e_kg \vec e_k)$ at $\mu=k$; expanding $g = g_0+\vec g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\vec g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_tg\vec e_k$ and $g\vec e_kg e_t$ are $g^2\vec e_k$ and $g\vec e_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(\mu,\nu)$ of distinct space indices the antisymmetry $\vec e_\mu \vec e_\nu+\vec e_\nu \vec e_\mu = 0$ makes the two products equal, and the scalar part of $g\vec e_\mu g\vec e_\nu$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and its cyclic permutations, and the vanishing of the scalar part of $\vec e_\mu \vec e_\nu$ for $\mu\neq\nu$.</p>
 <p><strong>Remark (the two block forms).</strong> With $s = g_0^2-|\vec g|^2$ and $c = g_0^2+|\vec g|^2 = \langle g\rangle_{\natural}$, the matrix is</p>
@@ -209,9 +205,7 @@ $$</p>
 <p><em>Proof.</em> By the identity of the construction, $Q_g(\tilde q) = \omega(L_g\tilde q)$ for every $\tilde q$, so $L_g$ pulls $Q_g$ back to $\omega$; it is bijective for $g\neq0$ by the invertibility of the left multiplication, so it is an isometry onto. An isometry of quadratic forms preserves non-degeneracy and signature, and the signature of $\omega$ is $(1,3)$; this is (1). For (2), let $p,q\neq0$ and put $T = L_q^{-1}L_p$, a linear bijection; then for every $\tilde q$ one has $Q_q(T\tilde q) = \omega(L_qT\tilde q) = \omega(L_p\tilde q) = Q_p(\tilde q)$, so $T$ is an isometry from $(\mathbb{H},Q_p)$ onto $(\mathbb{H},Q_q)$. For (3), an isometry of $Q_g$ corresponds under $L_g$ to an isometry of $\omega$, so $O(Q_g) = L_g^{-1}O(\omega)L_g$.</p>
 <h3 id="the-determinant-of-the-gram-matrix">The Determinant of the Gram Matrix</h3>
 <p><strong>Proposition.</strong> For every quaternion $g$,</p>
-<p>$$
-\det M(g) = -\langle g\rangle_{\natural}^4.
-$$</p>
+<p>$$ \boxed{\; \det M(g) = -\langle g\rangle_{\natural}^4 \;} .$$</p>
 <p>In particular the form $Q_g$ is non-degenerate for every nonzero $g$, and its Gram determinant is a positive multiple of the fourth power of the quaternion norm.</p>
 <p><em>Proof.</em> Write $s = g_0^2-|\vec g|^2$, $c = \langle g\rangle_{\natural} = g_0^2+|\vec g|^2$, and $B = 2\vec g\vec g^{\mathsf T}-cI_3$, so that</p>
 <p>$$

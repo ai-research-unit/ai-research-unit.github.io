@@ -97,7 +97,7 @@ $$</p>
 <p><strong>Definition.</strong> Two regular submanifolds $X, Z$ of $N$ are <strong>transverse</strong> at a point $x \in X \cap Z$ if $T_xX + T_xZ = T_xN$, and <strong>transverse</strong> if they are transverse at every point of $X \cap Z$.</p>
 <p><strong>Theorem (preimage theorem).</strong> If $F : M \to N$ is transverse to the regular submanifold $Z \subseteq N$, then $F^{-1}(Z)$ is a regular submanifold of $M$, of dimension</p>
 <p>$$
-\dim F^{-1}(Z) = \dim M - \dim N + \dim Z,
+\boxed{\;\dim F^{-1}(Z) = \dim M - \dim N + \dim Z\;},
 $$</p>
 <p>and at each $p \in F^{-1}(Z)$,</p>
 <p>$$
@@ -173,7 +173,7 @@ $$</p>
 <p>The Hessian is well defined: the value $V(W(f))(n)$ depends only on $v$ and $w$, because the difference between two extensions changes the expression by terms involving $[V, W](f)(n)$, which vanishes at a critical point.</p>
 <p><strong>Theorem (Morse lemma).</strong> Let $n$ be a nondegenerate critical point of $f$ of index $\lambda$. Then there are coordinates $x^1, \ldots, x^n$ on a neighbourhood of $n$ with $x^i(n) = 0$ and</p>
 <p>$$
-f = f(n) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2 .
+\boxed{\;f = f(n) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> The statement is local and reduces to a quadratic form, which the classification of quadratic forms of <em>Quadratic Forms and Polarisation</em> puts into the displayed diagonal shape; the change of coordinates is produced by the inverse function theorem. Nondegeneracy is exactly the invertibility needed.</p>
 <p><strong>Corollary.</strong> A nondegenerate critical point is isolated; hence a Morse function on a closed manifold has finitely many critical points, and the critical values are isolated.</p>
@@ -188,7 +188,7 @@ $$</p>
 <p>the Euler characteristic.</p>
 <p><strong>Theorem (strong Morse inequalities).</strong> For every $k$,</p>
 <p>$$
-c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 \geq b_k - b_{k-1} + b_{k-2} - \cdots \pm b_0 .
+\boxed{\;c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 \geq b_k - b_{k-1} + b_{k-2} - \cdots \pm b_0\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> As the level passes a critical value of index $\lambda$, the sublevel set changes by the attachment of a $\lambda$-handle $D^\lambda \times D^{n-\lambda}$ along $S^{\lambda-1} \times D^{n-\lambda}$; the handle attachment is the topological content of the Morse lemma, and it produces a chain complex whose $k$-th chain group has rank $c_k$ and whose homology is $H^k_{dR}(M)$. The rank inequalities for a chain complex then give the stated bounds. The handle attachment in the smooth category requires the gradient flow of $f$, whose existence and regularity are the differential-equation theory of Part III; the topological chain-level statement is what is used here, and it is standard.</p>
 <p><strong>Example.</strong> A Morse function on the torus $T^2$ has at least one critical point of each index $0, 1, 2, 1$, namely $c_0 \geq 1$, $c_1 \geq 2$, $c_2 \geq 1$, with total signed count $1 - 2 + 1 = 0 = \chi(T^2)$, which matches the Betti numbers $1, 2, 1$ of the torus.</p>

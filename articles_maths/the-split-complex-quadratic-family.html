@@ -96,7 +96,7 @@ $$</p>
 <h3 id="the-quadratic-map-on-the-pair">The Quadratic Map on the Pair</h3>
 <p><strong>Theorem (the recursion splits).</strong> For $c = \gamma + j\gamma'$ with $c_+ = \gamma+\gamma'$ and $c_- = \gamma-\gamma'$, the iterate of $f_c$ is given componentwise:</p>
 <p>$$
-\varphi\bigl(f_c(z)\bigr) = \bigl(z_+^2 + c_+,\ z_-^2 + c_-\bigr) .
+\boxed{\; \varphi\bigl(f_c(z)\bigr) = \bigl(z_+^2 + c_+,\ z_-^2 + c_-\bigr) \;}.
 $$</p>
 <p>Consequently, with $g_+(u) = u^2+c_+$ and $g_-(v) = v^2+c_-$ the two real quadratic maps of the pair,</p>
 <p>$$
@@ -128,7 +128,7 @@ M_{\mathbb{D}} = \{c \in \mathbb{D} : (f_c^n(0))_{n \geq 0} \text{ is bounded}\}
 $$</p>
 <p><strong>Theorem.</strong> The connectedness locus is the square</p>
 <p>$$
-M_{\mathbb{D}} = \varphi^{-1}\Bigl([-2,\tfrac14] \times [-2,\tfrac14]\Bigr) = \left\{c = \gamma+j\gamma' : -2 \leq \gamma+\gamma' \leq \tfrac14, \ -2 \leq \gamma-\gamma' \leq \tfrac14 \right\} ,
+\boxed{\; M_{\mathbb{D}} = \varphi^{-1}\Bigl([-2,\tfrac14] \times [-2,\tfrac14]\Bigr) = \left\{c = \gamma+j\gamma' : -2 \leq \gamma+\gamma' \leq \tfrac14, \ -2 \leq \gamma-\gamma' \leq \tfrac14 \right\} \;},
 $$</p>
 <p>the product of two real Mandelbrot intervals, with vertices $\frac14$, $-\frac78 \pm j\frac98$ and $-2$ in the coordinates $c = \gamma+j\gamma'$, centre $-\frac78$, diagonal $\frac94$ along the real axis and side length $\frac{9\sqrt2}{8}$.</p>
 <p><strong>Proof.</strong> The critical orbit is the pair of the two real critical orbits, and a real quadratic orbit is bounded exactly when the parameter lies in the interval $[-2,\tfrac14]$, which is the real slice of the Mandelbrot set. So $c \in M_{\mathbb{D}}$ if and only if both $c_+$ and $c_-$ lie in $[-2,\tfrac14]$. Translating by $\gamma = (c_++c_-)/2$ and $\gamma' = (c_+-c_-)/2$ gives the four vertices</p>
@@ -141,7 +141,7 @@ $$</p>
 <p><strong>Remark (the real slice).</strong> For real parameters, $c = \gamma$ and $\gamma' = 0$, both coordinates equal $\gamma$, and $M_{\mathbb{D}} \cap \mathbb{R} = [-2,\tfrac14]$, the real slice of the complex Mandelbrot set. So the split-complex family restricts on the real axis to the real quadratic family, and the two-coordinate structure degenerates to a single interval.</p>
 <p><strong>Theorem (the norm along the critical orbit).</strong> Along the critical orbit the norm is the product of the two real orbits,</p>
 <p>$$
-\langle f_c^n(0)\rangle_{*} = g_+^n(0)\, g_-^n(0) ,
+\boxed{\; \langle f_c^n(0)\rangle_{*} = g_+^n(0)\, g_-^n(0) \;},
 $$</p>
 <p>so $\langle\cdot\rangle_{*}$ vanishes at the $n$-th step exactly when one of the two real orbits passes through $0$. In particular $\langle\cdot\rangle_{*}$ is not a Lyapunov function and the vanishing of $\langle\cdot\rangle_{*}$ at some step does not decide the boundedness of the orbit.</p>
 <p><strong>Proof.</strong> The norm is multiplicative for the ring isomorphism, $\langle z\rangle_{*} = z_+z_-$, and the coordinates of $f_c^n(0)$ are $g_+^n(0)$ and $g_-^n(0)$.</p>

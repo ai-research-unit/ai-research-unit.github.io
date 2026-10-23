@@ -136,7 +136,7 @@ $$</p>
 <p>The matrix coefficients of the irreducible representations, correctly normalised, form an orthonormal basis of $L^2(K)$. This is the analytic content of the Peter–Weyl theorem, and it is the compact analogue of the statement that the characters form an orthonormal basis of $L^2(G^\vee)$ in the abelian case.</p>
 <p><strong>Theorem (orthogonality).</strong> Let $\pi, \sigma \in \operatorname{Irr}(K)$ and fix orthonormal bases. Then</p>
 <p>$$
-\int_K \pi_{ij}(k)\,\overline{\sigma_{lm}(k)}\,dk = \frac{1}{d_\pi}\,\delta_{\pi\sigma}\,\delta_{il}\,\delta_{jm} ,
+\boxed{\;\int_K \pi_{ij}(k)\,\overline{\sigma_{lm}(k)}\,dk = \frac{1}{d_\pi}\,\delta_{\pi\sigma}\,\delta_{il}\,\delta_{jm}\;} ,
 $$</p>
 <p>where $\delta_{\pi\sigma} = 1$ if $\pi \cong \sigma$ and $0$ otherwise.</p>
 <p><strong>Proof sketch.</strong> The proof is an application of Schur's lemma to the operator $A = \int_K \sigma(k)^{-1}B\pi(k)\,dk$ for $B \in \operatorname{Hom}(\mathcal{H}_\pi, \mathcal{H}_\sigma)$: the invariance $A\pi(x) = \sigma(x)A$ forces $A = 0$ when $\pi\not\cong\sigma$ and $A = \lambda I$ when $\pi = \sigma$, and taking $B$ a matrix unit and traces gives the display. The computation is the standard one; the representation-theoretic input (Schur's lemma, complete reducibility) is Part II's, and the explicit constant $d_\pi^{-1}$ follows from the normalisation $\int_K dk = 1$ by evaluating at $\pi = \sigma$, $i = l$, $j = m$ and summing over $i,j$ against $\chi_\pi(e) = d_\pi$.</p>
@@ -182,7 +182,7 @@ $$</p>
 <h3 id="inversion">Inversion</h3>
 <p><strong>Theorem (Fourier inversion).</strong> For $f$ in the coefficient algebra $A(K)$ the function is recovered from its transform pointwise and uniformly by</p>
 <p>$$
-f(k) = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(k)^{-1}\bigr) ,
+\boxed{\;f(k) = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(k)^{-1}\bigr)\;} ,
 $$</p>
 <p>the sum being finite. For $f \in L^2(K)$ the same series converges to $f$ in $L^2(K)$.</p>
 <p><strong>Proof.</strong> For $f$ a matrix coefficient $\pi_{ij}$ one verifies directly from the orthogonality relations; the general case follows by linearity, and the $L^2$ statement by continuity of the transform and the density of $A(K)$ in $L^2(K)$. The finite sum is exact because only finitely many matrix coefficients occur.</p>
@@ -190,7 +190,7 @@ $$</p>
 <h3 id="plancherel">Plancherel</h3>
 <p><strong>Theorem (Plancherel for compact $K$).</strong> For every $f \in L^2(K)$,</p>
 <p>$$
-\|f\|_2^2 = \int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 ,
+\boxed{\;\|f\|_2^2 = \int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2\;} ,
 $$</p>
 <p>where $\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 = \operatorname{Tr}\bigl((\mathcal F f)(\pi)(\mathcal F f)(\pi)^*\bigr)$. Equivalently, the transform extends to a unitary equivalence of Hilbert spaces</p>
 <p>$$

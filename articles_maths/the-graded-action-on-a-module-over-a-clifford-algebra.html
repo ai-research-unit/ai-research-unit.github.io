@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> A <strong>graded module</strong> over $\mathrm{Cl}(V,\mathfrak{Q})$ is a $\mathbb{Z}/2$-graded vector space $S=S^0\oplus S^1$ with a bilinear multiplication $\mathrm{Cl}(V,\mathfrak{Q})\times S\to S$ that is a module action and satisfies $\mathrm{Cl}^i\cdot S^j\subseteq S^{i+j}$. A <strong>graded endomorphism</strong> of $S$ is a linear map preserving the grading, an <strong>odd</strong> endomorphism one exchanging the two summands, and $\mathrm{End}(S)$ is the graded algebra of all endomorphisms with the parity so defined.</p>
 <p><strong>Proposition.</strong> The action of a homogeneous element $a\in\mathrm{Cl}^i$ on $S$ is an operator of parity $i$, and the assignment $c(a)\in\mathrm{End}^i(S)$ is an algebra homomorphism that preserves the parity and the relations: for vectors $u,v$,</p>
 <p>$$
-c(u)c(v)+c(v)c(u) = 2B(u,v)\operatorname{id}_S ,
+\boxed{\;c(u)c(v)+c(v)c(u) = 2B(u,v)\operatorname{id}_S\;} ,
 $$</p>
 <p>and every relation of $\mathrm{Cl}(V,\mathfrak{Q})$ holds in $\mathrm{End}(S)$ with the same signs.</p>
 <p><strong>Proof.</strong> The inclusion $\mathrm{Cl}^iS^j\subseteq S^{i+j}$ says exactly that the operator of $a\in\mathrm{Cl}^i$ maps $S^j$ into $S^{i+j}$, which is parity $i$. The action being a module action means $c(a)c(b)=c(ab)$, a homomorphism; the Clifford relations are their images in the endomorphism algebra. The parity preservation of the homomorphism is read off the grading inclusions.</p>
@@ -85,12 +85,12 @@ $$</p>
 <h3 id="the-graded-commutator">The Graded Commutator</h3>
 <p><strong>Definition.</strong> The <strong>graded commutator</strong> of homogeneous operators $A,B\in\operatorname{End}(S)$ is</p>
 <p>$$
-[A,B\} = AB - (-1)^{|A||B|}BA .
+\boxed{\;[A,B\} = AB - (-1)^{|A||B|}BA\;} .
 $$</p>
 <p>For odd $A,B$ it is the anticommutator $AB+BA$, and for even $A$ or $B$ it is the ordinary commutator.</p>
 <p><strong>Proposition.</strong> The Clifford relations are the statement that the Clifford multiplication is a <strong>graded representation</strong>: for homogeneous $a,b\in\mathrm{Cl}(V,\mathfrak{Q})$,</p>
 <p>$$
-[c(a),c(b)\} = c([a,b\}) ,
+\boxed{\;[c(a),c(b)\} = c([a,b\})\;} ,
 $$</p>
 <p>where the bracket on the right is the graded commutator in the Clifford algebra; for vectors $u,v$ this is $c(u)c(v)+c(v)c(u)=2B(u,v)\operatorname{id}$, and for an even element with any element it is the ordinary commutator.</p>
 <p><strong>Proof.</strong> The graded commutator is bilinear and respects the parity; the homomorphism $c$ carries the graded commutator of the algebra to the graded commutator of the operators, which is the defining compatibility of a homomorphism of graded algebras. For two odd vectors the graded bracket is the anticommutator, giving the Clifford relation.</p>

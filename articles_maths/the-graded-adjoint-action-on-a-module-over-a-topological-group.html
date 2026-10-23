@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Proof.</strong> For homogeneous $v,w$, $B(\varepsilon v,w) = (-1)^{|v|}B(v,w)$ and $B(v,\varepsilon w) = (-1)^{|w|}B(v,w)$. If $B$ is even then $B(v,w)$ vanishes unless $|v| = |w|$, so the two expressions are equal and $\varepsilon^\# = \varepsilon$; if $B$ is odd then $B(v,w)$ vanishes unless $|v|\neq|w|$, so the two expressions differ by a sign and $\varepsilon^\# = -\varepsilon$. For the parity of the transpose, $B(\varepsilon Tv,w) = (-1)^{|v|+|T|}B(Tv,w) = (-1)^{|T|}B(v,T^\#w)$ and also $B(\varepsilon Tv,w) = B(Tv,\varepsilon^\#w) = \pm B(Tv,\varepsilon w) = \pm B(v,T^\#\varepsilon w)$, which gives the displayed relation.</p>
 <p><strong>Corollary (the sign rule for the transpose).</strong> For a homogeneous operator $T$ and a homogeneous form, the transpose is characterised by the graded symmetry</p>
 <p>$$
-B(Tv,w) = (-1)^{|T|\,m}\,B(v,T^\#w)
+\boxed{\;B(Tv,w) = (-1)^{|T|\,m}\,B(v,T^\#w)\;}
 $$</p>
 <p>with $m = 0$ for an even form and $m = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.</p>
 <p><strong>Proof.</strong> The case $m = 0$ is the definition. For $m = 1$ the identity follows from the anti-self-adjointness of $\varepsilon$ by the computation above, and the general homogeneous case follows by linearity.</p>
@@ -94,7 +94,7 @@ g\cdot T = \pi(g)\,T\,\pi(g)^{-1} .
 $$</p>
 <p><strong>Theorem (it is an action preserving the parity).</strong> The adjoint action is a group action on $\operatorname{End}_k(M)$, it preserves the $\mathbb{Z}/2$-grading of the endomorphism module, and the grading involution conjugates the action of $g$ to the action of $\alpha(g)$:</p>
 <p>$$
-\varepsilon\,(g\cdot T)\,\varepsilon = \alpha(g)\cdot(\varepsilon\,T\,\varepsilon) , \qquad\text{equivalently}\qquad \varepsilon\,(g\cdot T)\,\varepsilon = (\alpha(g))\cdot T^{\varepsilon} ,
+\boxed{\;\varepsilon\,(g\cdot T)\,\varepsilon = \alpha(g)\cdot(\varepsilon\,T\,\varepsilon) , \qquad\text{equivalently}\qquad \varepsilon\,(g\cdot T)\,\varepsilon = (\alpha(g))\cdot T^{\varepsilon}\;} ,
 $$</p>
 <p>where $T^\varepsilon = \varepsilon T\varepsilon$ is the $\varepsilon$-conjugate of $T$.</p>
 <p><strong>Proof.</strong> $g\cdot(h\cdot T) = \pi(g)\pi(h)T\pi(h)^{-1}\pi(g)^{-1} = \pi(gh)T\pi(gh)^{-1} = (gh)\cdot T$, and $e\cdot T = T$, so it is an action. If $\pi(g)$ has parity $n$ in the sense that $\pi(g)M_j\subseteq M_{j+n}$, then $g\cdot T$ carries $M_j$ to $M_{j+n}\to M_{j+n+|T|}\to M_{j+|T|}$, so its parity is $|T|$; hence the action preserves the grading. For the conjugation identity, the compatibility $\varepsilon\pi(g)\varepsilon = \pi(\alpha(g))$ from the graded action gives $\varepsilon\pi(g)T\pi(g)^{-1}\varepsilon = \pi(\alpha(g))(\varepsilon T\varepsilon)\pi(\alpha(g))^{-1}$, which is the displayed statement.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h2 id="compatibility-with-the-form">Compatibility with the Form</h2>
 <p><strong>Theorem (unitary actions transpose to inverse actions).</strong> Suppose the action is unitary for the graded form, $\pi(g)^\# = \pi(g)^{-1}$ for every $g$. Then the adjoint action commutes with the transpose,</p>
 <p>$$
-(g\cdot T)^\# = g\cdot T^\# ,
+\boxed{\;(g\cdot T)^\# = g\cdot T^\#\;} ,
 $$</p>
 <p>and the adjoint action preserves the submodule of self-adjoint operators and the submodule of skew-adjoint operators. The parity of the form enters only in the sign rule for the transpose of a homogeneous operator recorded above, $B(Tv,w) = (-1)^{|T|m}B(v,T^\#w)$, and not in the commutation of the transpose with the adjoint action.</p>
 <p><strong>Proof.</strong> $(g\cdot T)^\# = (\pi(g)T\pi(g)^{-1})^\# = \pi(g)^{-\#}T^\#\pi(g)^\#$; unitarity gives $\pi(g)^{-\#} = \pi(g)$ and $\pi(g)^\# = \pi(g)^{-1}$, whence the identity. The parity statement follows because the transpose preserves the parity and the adjoint action preserves it too, and the sign rule is the graded symmetry proved in the section on graded forms.</p>

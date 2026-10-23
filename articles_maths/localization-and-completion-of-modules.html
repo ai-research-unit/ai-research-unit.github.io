@@ -98,7 +98,7 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> Let $I \subseteq R$ be an ideal. The <strong>$I$-adic completion</strong> of $M$ is the inverse limit</p>
 <p>$$
-\widehat M = \varprojlim_n M/I^nM ,
+\boxed{\;\widehat M = \varprojlim_n M/I^nM\;} ,
 $$</p>
 <p>with the projections $\widehat M \to M/I^nM$; the <strong>$I$-adic completion of $R$</strong> is $\widehat R=\varprojlim_n R/I^n$. There is a natural map $\iota:M \to \widehat M$, $m \mapsto (m+I^nM)_n$.</p>
 <p><strong>Definition.</strong> The chain $M \supseteq IM \supseteq I^2M \supseteq \cdots$ is the <strong>$I$-adic filtration</strong> of $M$. The module $M$ is <strong>$I$-adically separated</strong> if $\bigcap_n I^nM=0$, and <strong>$I$-adically complete</strong> if $\iota$ is an isomorphism, equivalently if every coherent sequence $(m_n)$ with $m_n \in M/I^nM$ and $m_{n+1} \equiv m_n \bmod I^nM$ is the sequence of truncations of a unique element of $M$. No distance and no topology is used: separatedness and completeness are statements about the filtration.</p>
@@ -106,12 +106,12 @@ $$</p>
 <h3 id="exactness_1">Exactness</h3>
 <p><strong>Theorem.</strong> (i) Let $0 \to M' \xrightarrow{\ \alpha\ } M \xrightarrow{\ \beta\ } M'' \to 0$ be exact and put $K_n=\ker(M'/I^nM' \to M/I^nM)$. Then the completed sequence</p>
 <p>$$
-0 \to \widehat{M'} \xrightarrow{\ \widehat\alpha\ } \widehat M \xrightarrow{\ \widehat\beta\ } \widehat{M''}
+\boxed{\;0 \to \widehat{M'} \xrightarrow{\ \widehat\alpha\ } \widehat M \xrightarrow{\ \widehat\beta\ } \widehat{M''}\;}
 $$</p>
 <p>is exact at $\widehat M$ always, and is exact at $\widehat{M'}$ exactly when $\varprojlim_nK_n=0$; the cokernel of $\widehat\beta$ is $\varprojlim^1_nK_n$. In particular completion is left exact on the sequences for which $M'/I^nM' \to M/I^nM$ is injective for every $n$, and it is not exact in general. (ii) If $R$ is Noetherian and $M$ is finitely generated, completion is exact, and $\widehat M \cong \widehat R \otimes_R M$; moreover $\widehat R$ is a flat $R$-module, so completion is a flat base change along $R \to \widehat R$.</p>
 <p><em>Proof.</em> (i) Since $M \mapsto M/I^nM$ is right exact, the sequences</p>
 <p>$$
-0 \to K_n \to M'/I^nM' \to M/I^nM \to M''/I^nM'' \to 0
+\boxed{\;0 \to K_n \to M'/I^nM' \to M/I^nM \to M''/I^nM'' \to 0\;}
 $$</p>
 <p>are exact, and the inverse limit is left exact, so $0 \to \varprojlim_nK_n \to \widehat{M'} \to \widehat M \to \widehat{M''}$ is exact; this gives the exactness at $\widehat M$, the criterion at $\widehat{M'}$, and, with the derived long exact sequence of $\varprojlim$ at the following term, the cokernel statement, the systems $M'/I^nM'$ being Mittag-Leffler with vanishing $\varprojlim^1$. (ii) is the Artin–Rees lemma: it gives a stabilisation of the filtrations which makes the passage to the limit exact, and the identification $\widehat M \cong \widehat R \otimes_R M$ follows for finitely generated $M$ once $\widehat R$ is flat; the flatness of $\widehat R$ over a Noetherian $R$ is the standard consequence of Artin–Rees.</p>
 <p><strong>Example.</strong> Completion is not left exact in general. Take $R=\mathbb{Z}$, $I=(p)$ and the inclusion of $\mathbb{Z}$-modules $\mathbb{Z} \subseteq \mathbb{Z}[\tfrac1p]$. Since $p$ is invertible in $\mathbb{Z}[\tfrac1p]$ one has $I^n\mathbb{Z}[\tfrac1p]=\mathbb{Z}[\tfrac1p]$ for every $n \ge 1$, so the completion of $\mathbb{Z}[\tfrac1p]$ is $0$, while the completion of $\mathbb{Z}$ is $\mathbb{Z}_p$; the completed map is the zero map $\mathbb{Z}_p \to 0$, which is not injective. Here $K_n=\ker(\mathbb{Z}/p^n\mathbb{Z} \to 0)=\mathbb{Z}/p^n\mathbb{Z}$, with $\varprojlim_nK_n=\mathbb{Z}_p \neq 0$ and $\varprojlim^1_nK_n=0$, in accordance with the theorem.</p>

@@ -80,7 +80,7 @@ $$</p>
 <h2 id="reflections-and-involutive-automorphisms">Reflections and Involutive Automorphisms</h2>
 <p><strong>Proposition (the correspondence).</strong> Let $\alpha$ be an involutive automorphism of $E$. Then $E^{+}$ is a subalgebra of $E$ containing $1$, the map $x \mapsto (x + \alpha(x))/2$ is a continuous projection onto $E^{+}$ with kernel $E^{-}$ when $2$ is invertible in $\mathbb{K}$, and</p>
 <p>$$
-E = E^{+} \oplus E^{-}
+\boxed{\;E = E^{+} \oplus E^{-}\;}
 $$</p>
 <p>as a topological direct sum; conversely an algebra grading $E = E_0 \oplus E_1$ with $E_{i}E_{j} \subseteq E_{i+j}$ defines an involutive automorphism, equal to $+1$ on $E_0$ and $-1$ on $E_1$. The two constructions are inverse to one another, so reflections, involutive automorphisms and gradings of $E$ are the same datum.</p>
 <p><strong>Proof.</strong> $\alpha(x + y) = \alpha(x) + \alpha(y)$ and, because $\alpha$ is multiplicative, $\alpha(xy) = \alpha(x)\alpha(y)$, so $E^{+}$ is closed under the product; it contains $1$ because $\alpha(1) = 1$. The averaging map is the projection of the idempotent $(1 + \alpha)/2$ and is continuous because $\alpha$ is; its kernel is $E^{-}$ and the sum is direct since $x = \alpha(x)$ and $x = -\alpha(x)$ force $2x = 0$. The converse is the definition of a grading, and the two constructions are inverse because $\alpha$ is the identity on $E_0$ and minus the identity on $E_1$.</p>
@@ -89,13 +89,13 @@ $$</p>
 <h2 id="the-inner-reflections-and-the-sandwich">The Inner Reflections and the Sandwich</h2>
 <p><strong>Proposition (the reflection is fixed by its signed sandwich).</strong> Let $r$ be an involution and let $\alpha_r = \mathrm{Ad}_{r}$ be the involutive automorphism it defines. Then</p>
 <p>$$
-\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id} ,
+\boxed{\;\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}\;} ,
 $$</p>
 <p>so the signed inner sandwich of a reflection is the identity, and the reflection is fixed and unitary for its own signed sandwich.</p>
 <p><strong>Proof.</strong> $\Theta^{\alpha_r}_{r, r^{-1}}(x) = r\alpha_r(x)r^{-1} = r(rxr^{-1})r^{-1} = x$, using $r^{2} = 1$ and the definition of $\alpha_r$.</p>
 <p><strong>Proposition (the signed sandwich by a reflection).</strong> For an involution $r$ and an arbitrary grade involution $\alpha$,</p>
 <p>$$
-\Theta^{\alpha}_{r, r^{-1}} = \mathrm{Ad}_{r} \circ \alpha = \alpha \circ \mathrm{Ad}_{\alpha(r)} ,
+\boxed{\;\Theta^{\alpha}_{r, r^{-1}} = \mathrm{Ad}_{r} \circ \alpha = \alpha \circ \mathrm{Ad}_{\alpha(r)}\;} ,
 $$</p>
 <p>and the inner sandwich $\Phi_{r, r^{-1}} = \mathrm{Ad}_{r}$ is the reflection itself; the signed sandwich is the composite of the reflection with the grade involution, and it reduces to $\mathrm{Ad}_{r}$ when $\alpha = \mathrm{id}$.</p>
 <p><strong>Proof.</strong> This is the definition $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\alpha$ of the signed sandwich with $\Phi_{r,r^{-1}} = \mathrm{Ad}_{r}$, and the second form is the relation $\Theta^{\alpha}_{a,b} = \alpha\Phi_{\alpha(a),\alpha(b)}$.</p>

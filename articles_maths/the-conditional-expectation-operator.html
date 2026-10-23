@@ -88,7 +88,7 @@ equivalently the unique element of $L^2(\mathcal G)$ orthogonal to $X-E_{\mathca
 <h3 id="the-projection-properties">The projection properties</h3>
 <p><strong>Theorem.</strong> The map $E_{\mathcal G}:L^2(\mathcal F)\to L^2(\mathcal F)$ is the orthogonal projection onto $L^2(\mathcal G)$; in particular
 $$
-E_{\mathcal G}^2=E_{\mathcal G},\qquad E_{\mathcal G}^*=E_{\mathcal G},\qquad \|E_{\mathcal G}\|=1,\qquad \|E_{\mathcal G}X\|_2\le\|X\|_2 ,
+\boxed{\;E_{\mathcal G}^2=E_{\mathcal G},\qquad E_{\mathcal G}^*=E_{\mathcal G},\qquad \|E_{\mathcal G}\|=1,\qquad \|E_{\mathcal G}X\|_2\le\|X\|_2\;} ,
 $$
 and $E_{\mathcal G}X=X$ exactly when $X\in L^2(\mathcal G)$.</p>
 <p><em>Proof.</em> The range is contained in $L^2(\mathcal G)$ and $E_{\mathcal G}$ fixes $L^2(\mathcal G)$, so $E_{\mathcal G}^2=E_{\mathcal G}$; the self-adjointness is the defining identity $\langle E_{\mathcal G}X,Y\rangle=\langle X,E_{\mathcal G}Y\rangle$ for $X,Y\in L^2(\mathcal F)$, which follows from the same identity restricted to $Y\in L^2(\mathcal G)$ after decomposing; the norm is one because a nonzero projection has norm one, and the contraction is the general property of a projection. The fixed space is the range.</p>
@@ -109,7 +109,7 @@ Equivalently, $E_{\mathcal G}$ is a module map over $L^\infty(\mathcal G)$: it c
 <h3 id="composition-and-the-tower">Composition and the tower</h3>
 <p><strong>Theorem (the tower property).</strong> If $\mathcal H\subseteq\mathcal G$ are sub-$\sigma$-algebras, then
 $$
-E_{\mathcal H}E_{\mathcal G}=E_{\mathcal G}E_{\mathcal H}=E_{\mathcal H}.
+\boxed{\;E_{\mathcal H}E_{\mathcal G}=E_{\mathcal G}E_{\mathcal H}=E_{\mathcal H}\;}.
 $$
 Consequently the projections $\{E_{\mathcal G}\}$ over the sub-$\sigma$-algebras of $\mathcal F$ form a commuting family, and the map $\mathcal G\mapsto E_{\mathcal G}$ reverses inclusions.</p>
 <p><em>Proof.</em> The range of $E_{\mathcal G}$ is $L^2(\mathcal G)$ and $E_{\mathcal H}$ is the identity on $L^2(\mathcal H)\subseteq L^2(\mathcal G)$, so $E_{\mathcal H}E_{\mathcal G}=E_{\mathcal H}$; the second product is the adjoint of the first.</p>
@@ -120,7 +120,7 @@ Consequently the projections $\{E_{\mathcal G}\}$ over the sub-$\sigma$-algebras
 <h3 id="the-increasing-projections">The increasing projections</h3>
 <p><strong>Theorem (convergence of the projections).</strong> Let $\{\mathcal F_n\}_{n\ge0}$ be an increasing filtration with $\mathcal F_\infty=\sigma(\bigcup_n\mathcal F_n)$. Then for every $X\in L^2(\mathcal F)$,
 $$
-E_{\mathcal F_n}X\longrightarrow E_{\mathcal F_\infty}X\qquad \text{in } L^2\text{ and a.s.},
+\boxed{\;E_{\mathcal F_n}X\longrightarrow E_{\mathcal F_\infty}X\qquad \text{in } L^2\text{ and a.s.}\;},
 $$
 and the sequence $\{E_{\mathcal F_n}X\}$ is the uniformly integrable martingale of <em>Martingales</em>, written $X_n=\mathbb E[X\mid\mathcal F_n]$.</p>
 <p><em>Proof.</em> The projections $E_{\mathcal F_n}$ increase with $n$, and $\bigcup_nL^2(\mathcal F_n)$ is dense in $L^2(\mathcal F_\infty)$; the strong convergence of an increasing family of projections to the projection onto the closed union is the standard fact for projections, and the a.s. convergence is Lévy's theorem for the uniformly integrable martingale $X_n=E_{\mathcal F_n}X$. The martingale convergence theorem is <em>Martingales</em>.</p>

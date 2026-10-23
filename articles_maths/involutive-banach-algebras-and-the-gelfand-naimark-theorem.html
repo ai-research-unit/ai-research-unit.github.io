@@ -101,11 +101,11 @@ $$</p>
 <h2 id="the-universal-representation-and-the-enveloping-algebra">The Universal Representation and the Enveloping Algebra</h2>
 <p><strong>Theorem (the universal representation).</strong> Let $A$ be a unital $\mathrm{C}^*$-algebra and $\mathcal{S}(A)$ its state space. The direct sum</p>
 <p>$$
-\pi_u = \bigoplus_{f \in \mathcal{S}(A)} \pi_f : A \longrightarrow B\Bigl(\bigoplus_{f \in \mathcal{S}(A)} H_f\Bigr)
+\boxed{\;\pi_u = \bigoplus_{f \in \mathcal{S}(A)} \pi_f : A \longrightarrow B\Bigl(\bigoplus_{f \in \mathcal{S}(A)} H_f\Bigr)\;}
 $$</p>
 <p>is a faithful isometric <code>*</code>-representation, the <strong>universal representation</strong>, and for every $a$ the norm is the supremum of the GNS norms,</p>
 <p>$$
-\lVert a\rVert = \sup_{f \in \mathcal{S}(A)} \lVert\pi_f(a)\rVert = \sup_{f \in \mathcal{S}(A)} f(a^*a)^{1/2} .
+\boxed{\;\lVert a\rVert = \sup_{f \in \mathcal{S}(A)} \lVert\pi_f(a)\rVert = \sup_{f \in \mathcal{S}(A)} f(a^*a)^{1/2}\;} .
 $$</p>
 <p><strong>Proof.</strong> Each $\pi_f$ is a <code>*</code>-representation by the GNS construction of <em>States and Positive Functionals on an Involutive Algebra</em>, so the direct sum is one and its norm is the supremum of the norms of the summands. For the isometry, $\lVert\pi_f(a)\rVert^2 = \lVert\pi_f(a^*a)\rVert$; the state $f$ with $f(a^*a) = \lVert a^*a\rVert$, which exists because $a^*a$ is self-adjoint, has $\langle\pi_f(a^*a)\xi_f,\xi_f\rangle = \lVert a^*a\rVert$ with $\pi_f(a^*a) \geq 0$, so $\lVert\pi_f(a^*a)\rVert \geq \lVert a^*a\rVert$ and hence $\lVert\pi_f(a^*a)\rVert = \lVert a^*a\rVert$; the supremum is therefore $\lVert a^*a\rVert = \lVert a\rVert^2$.</p>
 <p><strong>Corollary (the enveloping von Neumann algebra).</strong> The weak closure $\pi_u(A)''$ is the <strong>enveloping von Neumann algebra</strong> $A^{**}$ of $A$; it is the second dual of $A$ with the Arens product, and $A$ sits in it as a weakly dense $\mathrm{C}^*$-subalgebra. The algebra $A^{**}$ and its projections, weights and modular theory are <em>Operator Algebras</em> and <em>Involutive Operator Algebras and the Commutant</em>.</p>

@@ -93,10 +93,8 @@ $$</p>
 <p>and it is the coordinate expression of the inner product of <em>Quaternion Norm and Invertibility</em>.</p>
 <h2 id="multiplication-in-components">Multiplication in Components</h2>
 <p><strong>Theorem.</strong> The product of $\tilde q_2 = q_{2t}e_t+q_{2x}\vec e_x+q_{2y}\vec e_y+q_{2z}\vec e_z$ and $\tilde q_1 = q_{1t} e_t + q_{1x} \vec e_x + q_{1y} \vec e_y + q_{1z} \vec e_z$, in components, is given by the scalar and vector parts</p>
-<p>$$
-\mathrm{Sc}(\tilde q_2\tilde q_1) = q_{2t}q_{1t} - \langle\vec q_2,\vec q_1\rangle, \qquad
-\mathrm{Vect}(\tilde q_2\tilde q_1) = q_{2t}\vec q_1 + q_{1t}\vec q_2 + \vec q_2\times\vec q_1,
-$$</p>
+<p>$$ \boxed{\; \mathrm{Sc}(\tilde q_2\tilde q_1) = q_{2t}q_{1t} - \langle\vec q_2,\vec q_1\rangle, \qquad
+\mathrm{Vect}(\tilde q_2\tilde q_1) = q_{2t}\vec q_1 + q_{1t}\vec q_2 + \vec q_2\times\vec q_1 \;} ,$$</p>
 <p>that is, in coordinates,</p>
 <p>$$
 (\tilde q_2\tilde q_1)_t = q_{2t}q_{1t} - q_{2x}q_{1x} - q_{2y}q_{1y} - q_{2z}q_{1z}, \qquad
@@ -112,11 +110,9 @@ $$</p>
 <p><strong>Remark.</strong> The four coordinate functions of the product are the components of the matrix product $L_{\tilde q_2}[\tilde q_1]$ with the left regular matrix $L_{\tilde q_2}$ of <em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$</em>, so the coordinate multiplication rule and the left regular representation carry the same information in different notation.</p>
 <h2 id="the-three-involutions-in-coordinates">The Three Involutions in Coordinates</h2>
 <p><strong>Theorem.</strong> The three involutions act on the coordinate vector by the diagonal sign matrices</p>
-<p>$$
-\varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
+<p>$$ \boxed{\; \varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
 \varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
-\varphi(-\tilde q) = -[\tilde q].
-$$</p>
+\varphi(-\tilde q) = -[\tilde q] \;} .$$</p>
 <p><em>Proof.</em> Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four.</p>
 <p><strong>Corollary.</strong> The scalar subspace is the coordinate set $q_x = q_y = q_z = 0$, the vector subspace is the set $q_t = 0$, and the two are the $\pm1$ eigenspaces of the first two sign matrices. The composition of the three involutions generates the Klein four-group of sign changes described in <em>Worked Examples in the Quaternion Algebra</em>.</p>
 <h2 id="the-subspaces-in-coordinates">The Subspaces in Coordinates</h2>
@@ -132,9 +128,7 @@ $$</p>
 <p><em>Proof.</em> Set $q_{2t} = q_{1t} = 0$ in the component formula; the scalar becomes $-q_{2x}q_{1x}-q_{2y}q_{1y}-q_{2z}q_{1z}$ and the vector part becomes the cross product.</p>
 <h2 id="the-quaternion-norm-in-coordinates">The Quaternion Norm in Coordinates</h2>
 <p><strong>Theorem.</strong> The quaternion norm in coordinates is the sum of the four squares of the coordinates,</p>
-<p>$$
-\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2 = [\tilde q]^{T}[\tilde q],
-$$</p>
+<p>$$ \boxed{\; \langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2 = [\tilde q]^{T}[\tilde q] \;} ,$$</p>
 <p>and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(\tilde q_2\tilde q_1^{\natural}) = [\tilde q_2]^{T}[\tilde q_1]$.</p>
 <p><em>Proof.</em> $\tilde q\tilde{q}^{\natural} = (q_t+\vec q)(q_t-\vec q) = q_t^2-\vec q^2 = q_t^2+\langle \vec q\rangle_{\natural} = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(\tilde q_2\tilde q_1^{\natural})$.</p>
 <p><strong>Corollary.</strong> Over $F = \mathbb{R}$ the quaternion norm is positive definite, the coordinate map is an isometry $\mathbb{H}\to\mathbb{R}^4$, and the modulus is the Euclidean length $|\tilde q| = \sqrt{q_t^2+q_x^2+q_y^2+q_z^2}$. In particular the four signs of the quaternion norm are all positive.</p>

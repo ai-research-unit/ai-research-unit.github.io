@@ -130,7 +130,7 @@ $$</p>
 <p><em>Proof.</em> The difference quotients of (i) and (ii) are the corresponding combinations of the difference quotients of $f$ and $g$, each of which is $o(\|h\|)$; for (iii), $(\varphi f)(x+h)-(\varphi f)(x)=\varphi(x)Df(x)h+\varphi(x)o(\|h\|)+(D\varphi(x)h)f(x)+(D\varphi(x)h)Df(x)h+o(\|h\|)$ and the last two terms are $O(\|h\|^2)$, hence $o(\|h\|)$.</p>
 <p><strong>Theorem (chain rule).</strong> Let $f:\Omega \to V$ and $g:V \to Z$ with $V \subseteq Y$ open. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then $g \circ f$ is differentiable at $x$ with</p>
 <p>$$
-D(g \circ f)(x)=Dg(f(x)) \circ Df(x).
+\boxed{\;D(g \circ f)(x)=Dg(f(x)) \circ Df(x)\;}.
 $$</p>
 <p><em>Proof.</em> Write $g(f(x+h))-g(f(x))=Dg(f(x))\bigl(f(x+h)-f(x)\bigr)+r\bigl(f(x+h)-f(x)\bigr)$ with $r(q)=o(\|q\|)$; substitute $f(x+h)-f(x)=Df(x)h+o(\|h\|)$ and use the boundedness of $Dg(f(x))$ and the estimate $\|r(q)\|\le\varepsilon\|q\|$ for small $\|q\|$.</p>
 <p><strong>Corollary (differentiation of $k$-linear maps and of polynomials).</strong> A bounded $k$-linear map $A$ is differentiable at every point, and</p>
@@ -198,7 +198,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $(M,d)$ be a complete metric space. A map $F:M \to M$ is a <strong>contraction</strong> with constant $c$ if $d(Fx,Fy)\le c\,d(x,y)$ for all $x,y$ and some $0 \le c<1$.</p>
 <p><strong>Theorem (Banach contraction principle).</strong> A contraction $F$ of a complete nonempty metric space $M$ has a unique fixed point $x^*$; for every $x_0 \in M$ the iterates $x_{n+1}=F(x_n)$ converge to $x^*$, and</p>
 <p>$$
-d(x_n,x^*) \le \frac{c^n}{1-c}d(x_1,x_0), \qquad d(x_n,x^*) \le \frac{1}{1-c}d(x_{n+1},x_n).
+\boxed{\;d(x_n,x^*) \le \frac{c^n}{1-c}d(x_1,x_0), \qquad d(x_n,x^*) \le \frac{1}{1-c}d(x_{n+1},x_n)\;}.
 $$</p>
 <p><em>Proof.</em> The estimate $d(x_{n+1},x_n)\le c^nd(x_1,x_0)$ makes the sequence Cauchy, by comparison with a geometric series; completeness gives a limit $x^*$, and continuity of $F$ gives $F(x^*)=x^*$. If $x^*,y^*$ are fixed points then $d(x^*,y^*)=d(Fx^*,Fy^*)\le cd(x^*,y^*)$, forcing $x^*=y^*$. The first error estimate is the sum of the tail of the geometric series, and the second follows from $d(x_n,x^*)\le d(x_n,x_{n+1})+cd(x_n,x^*)$.</p>
 <p><strong>Corollary (powers).</strong> If $F$ is continuous and some iterate $F^n$ is a contraction, then $F$ has a unique fixed point, the fixed point of $F^n$, and it is fixed by $F$ because $F(x^*)=F(F^n(x^*))=F^n(F(x^*))$.</p>
@@ -227,7 +227,7 @@ F(x,\varphi(x))=0 \quad (x \in \Omega_0), \qquad \varphi(x_0)=y_0,
 $$</p>
 <p>and for $x \in \Omega_0$,</p>
 <p>$$
-D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x)).
+\boxed{\;D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x))\;}.
 $$</p>
 <p>If $F$ is of class $C^k$ then so is $\varphi$.</p>
 <p><em>Proof.</em> Define $\Phi:W \to X \times Z$ by $\Phi(x,y)=(x,F(x,y))$; then $D\Phi(x_0,y_0)$ is invertible, with inverse $(u,v)\mapsto(u,(D_2F)^{-1}(v-D_1F\,u))$. The inverse function theorem applied to $\Phi$ gives a local inverse of the form $(x,z) \mapsto (x,\psi(x,z))$, and $\varphi(x)=\psi(x,0)$ satisfies $F(x,\varphi(x))=0$; uniqueness follows from the injectivity of $\Phi$ on the neighbourhood. Differentiating the identity $F(x,\varphi(x))=0$ by the chain rule gives $D_1F+D_2F\circ D\varphi=0$, whence the formula.</p>

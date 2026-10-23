@@ -83,7 +83,7 @@ $$</p>
 <p><em>Proof.</em> The unit acts by $1T1 = T$, and $(UV)T(UV)^{\dagger} = U(VTV^{\dagger})U^{\dagger}$ by the anti-multiplicativity and the identity $(UV)^{\dagger} = V^{\dagger}U^{\dagger} = V^{-1}U^{-1}$. For the adjoint, $(UTU^{\dagger})^{\dagger} = (U^{\dagger})^{\dagger}T^{\dagger}U^{\dagger} = UT^{\dagger}U^{\dagger}$, using the order two of the adjoint operation. The preservation of the four properties is immediate from the preservation of the adjoint.</p>
 <p><strong>Proposition (the covariance of the matrix elements).</strong> For a unitary $U$ and an operator $T$,</p>
 <p>$$
-h(Tx,y) = h\bigl((UTU^{\dagger})(Ux), Uy\bigr) \qquad \text{for all } x, y .
+\boxed{\;h(Tx,y) = h\bigl((UTU^{\dagger})(Ux), Uy\bigr) \qquad \text{for all } x, y\;} .
 $$</p>
 <p><em>Proof.</em> The right side is $h(UTU^{\dagger}Ux, Uy) = h(UTx, Uy) = h(Tx, U^{\dagger}Uy) = h(Tx,y)$, using $U^{\dagger}U = 1$.</p>
 <h3 id="the-invariants">The Invariants</h3>
@@ -103,7 +103,7 @@ $$</p>
 <p><em>Proof.</em> Hermitian: $h_{C}(y,x) = h(Cy,Cx) = \varsigma(h(Cx,Cy)) = \varsigma(h_{C}(x,y))$. Nonsingularity: the radical of $h_{C}$ is $C^{-1}(A^{\perp})$, so it vanishes exactly when $A^{\perp}$ does. Definiteness: $h_{C}(x,x) = h(Cx,Cx) > 0$ for $x \neq 0$ because $C$ is injective and $h$ is definite.</p>
 <p><strong>Theorem (the Gram matrix transformation).</strong> Let $H$ and $K$ be the Gram matrices of $h$ and $k$ in a basis, and let $C$ have matrix $\Gamma$ in the same basis. Then $k = h_{C}$ if and only if</p>
 <p>$$
-K = \Gamma^{T} H\, \varsigma(\Gamma) .
+\boxed{\;K = \Gamma^{T} H\, \varsigma(\Gamma)\;} .
 $$</p>
 <p><em>Proof.</em> The value $k(x,y) = h(Cx,Cy)$ is the quadratic form of the matrix $\Gamma^{T}H\varsigma(\Gamma)$ evaluated at the coordinate vectors of $x$ and $y$, and the two forms have the same Gram matrix exactly when they agree, by the reconstruction of a form from its Gram matrix of <em>The Sesquilinear Form and the Conjugation</em>, §<em>The Reconstruction</em>.</p>
 <h3 id="sylvesters-law-of-inertia">Sylvester's Law of Inertia</h3>
@@ -112,7 +112,7 @@ $$</p>
 <h3 id="the-cone-and-the-tolerance-under-congruence">The Cone and the Tolerance under Congruence</h3>
 <p><strong>Proposition (the cone and the tolerance under congruence).</strong> Every congruence carries a positive semi-definite form to a positive semi-definite form, so it is an automorphism of the cone of <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Cone of Positive Forms</em>; the definite forms are carried to definite forms; and the tolerance $x \succeq_{h} y \iff h(x-y,x-y) \geq 0$ of <em>Positivity and the Positive Cone of a Hermitian Form</em>, §<em>The Tolerance</em>, is transformed by</p>
 <p>$$
-x \succeq_{h_{C}} y \iff Cx \succeq_{h} Cy .
+\boxed{\;x \succeq_{h_{C}} y \iff Cx \succeq_{h} Cy\;} .
 $$</p>
 <p><em>Proof.</em> The diagonal of the congruent form is $h_{C}(x,x) = h(Cx,Cx)$, which is nonnegative for every $x$ exactly when $h$ is positive semi-definite on the range of $C$, that is on all of $A$; the definiteness is the proposition above. For the tolerance, $h_{C}(x-y,x-y) = h(C(x-y),C(x-y)) = h(Cx-Cy,Cx-Cy)$ by the linearity of $C$, which is the assertion.</p>
 <h3 id="the-stabiliser-of-the-form">The Stabiliser of the Form</h3>

@@ -119,7 +119,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> The chain rule in the super setting gives the transformation of the frame under a change of supercoordinates, and the invertibility of the transformation matrix on the even part (the Jacobian of the body diffeomorphism, which is invertible) together with the triangular form of the odd-odd block shows that the frame is a basis of the module of derivations; the local freeness follows.</p>
 <p><strong>Theorem (the Lie superalgebra of vector fields).</strong> The tangent sheaf with the <strong>superbracket</strong></p>
 <p>$$
-[X, Y] = XY - (-1)^{|X||Y|}YX
+\boxed{\;[X, Y] = XY - (-1)^{|X||Y|}YX\;}
 $$</p>
 <p>is a sheaf of Lie superalgebras: the bracket is super anticommutative, $[X,Y] = -(-1)^{|X||Y|}[Y,X]$, and satisfies the super Jacobi identity. On a supermanifold of dimension $(p \mid q)$ the bracket of two odd fields is even and may be nonzero, in contrast with the commuting case.</p>
 <p><strong>Proof sketch.</strong> The bracket of two derivations of an associative superalgebra is a derivation, and the verification of the super Jacobi identity is the graded form of the ordinary computation; the statement is that of <em>Superalgebras and Graded Structures</em> applied to the sheaf of superalgebras.</p>
@@ -153,11 +153,11 @@ $$</p>
 <p>with $A$ the even-even, $B$ the even-odd, $C$ the odd-even and $D$ the odd-odd block, the formula applied when the matrices are invertible. For a smooth manifold read in odd dimension zero the Berezinian is the determinant line bundle $\Lambda^{\text{top}}T^*M$, so it is the graded generalisation of the canonical bundle.</p>
 <p><strong>Theorem (integration and change of variables).</strong> A section of the Berezinian line bundle with compact support on a supermanifold of dimension $(p \mid q)$ has a well-defined integral</p>
 <p>$$
-\int_M s = \int_{M_{\mathrm{red}}}\Bigl(\text{the coefficient of } dx_1\cdots dx_p\, d\xi_1\cdots d\xi_q \text{ in } s\Bigr),
+\boxed{\;\int_M s = \int_{M_{\mathrm{red}}}\Bigl(\text{the coefficient of } dx_1\cdots dx_p\, d\xi_1\cdots d\xi_q \text{ in } s\Bigr)\;},
 $$</p>
 <p>computed in a superchart and independent of the chart, where the even part is integrated over the body and the odd part is integrated by the Berezin rule. Under a change of supercoordinates, with $J = \partial(x', \xi')/\partial(x, \xi)$ the Jacobian of the change from the coordinates $(x, \xi)$ to the coordinates $(x', \xi')$, the Berezinian measures are related by</p>
 <p>$$
-dx\,d\xi = \operatorname{Ber}(J)^{-1}\,dx'\,d\xi' ,
+\boxed{\;dx\,d\xi = \operatorname{Ber}(J)^{-1}\,dx'\,d\xi'\;} ,
 $$</p>
 <p>the inverse Berezinian appearing, exactly as the inverse determinant appears in the purely odd change of variables of <em>Grassmann Variables and Berezin Integration</em> and the inverse Jacobian in the ordinary change of variables of the even part. The integral is a finite algebraic operation — the extraction of a top coefficient — and agrees with the Berezin integral on each chart.</p>
 <p><strong>Proof sketch.</strong> The transformation of the odd part is the change-of-variables formula of the odd calculus, and the even part contributes the ordinary Jacobian determinant, the two combining into the Berezinian; the independence of the chart is the multiplicativity of the Berezinian, $\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)$, on the overlaps of the atlas; the agreement with the Berezin integral is the computation of the top coefficient in the odd variables.</p>

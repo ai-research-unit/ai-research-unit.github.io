@@ -139,7 +139,7 @@ f(x_1, \ldots, x_n) = \bar{f}(x_1 \wedge \cdots \wedge x_n)
 $$</p>
 <p>for all $x_1, \ldots, x_n \in M$. Consequently the assignment $\bar{f} \mapsto \bar{f} \circ \wedge$ is an isomorphism</p>
 <p>$$
-\operatorname{Hom}_R(\Lambda^n M, N) \cong \operatorname{Alt}_n(M; N),
+\boxed{\;\operatorname{Hom}_R(\Lambda^n M, N) \cong \operatorname{Alt}_n(M; N)\;},
 $$</p>
 <p>where $\operatorname{Alt}_n(M; N)$ denotes the submodule of $\operatorname{Mult}_n(M; N)$ consisting of the alternating maps. The pair $(\Lambda^n M, \wedge)$ is determined up to unique isomorphism by this property.</p>
 <p><strong>Proof.</strong> Since $f$ is $n$-multilinear, it factors uniquely through the tensor power as $f = g \circ \otimes$ with $g : M^{\otimes n} \to N$ linear. Because $f$ is alternating, $g$ kills every elementary tensor with two adjacent entries equal, hence kills the submodule $D_n$ they generate. Therefore $g$ descends to a unique linear map $\bar{f}$ on the quotient $\Lambda^n M$, and $f = \bar{f} \circ \wedge$ by construction. Uniqueness is immediate on the elementary wedges, which generate $\Lambda^n M$.</p>
@@ -161,7 +161,7 @@ $$</p>
 <p>The exterior powers of a free module are again free, with an explicit basis indexed by subsets.</p>
 <p><strong>Theorem.</strong> Let $M$ be a free $R$-module with basis $(e_i)_{i \in I}$, and suppose the index set is finite of cardinality $m$. Then $\Lambda^n M$ is free with basis</p>
 <p>$$
-\{ e_{i_1} \wedge e_{i_2} \wedge \cdots \wedge e_{i_n} : i_1 < i_2 < \cdots < i_n \},
+\boxed{\;\{ e_{i_1} \wedge e_{i_2} \wedge \cdots \wedge e_{i_n} : i_1 < i_2 < \cdots < i_n \}\;},
 $$</p>
 <p>so its rank is the binomial coefficient $\binom{m}{n}$. In particular $\Lambda^n M = 0$ for $n > m$, and $\Lambda^m M$ is free of rank $1$.</p>
 <p><strong>Proof.</strong> Every elementary wedge is a linear combination of the displayed ones by multilinearity and the sign relation, and the displayed wedges generate. To see that they are independent, fix an increasing $n$-tuple $J = (j_1 < \cdots < j_n)$ and define an alternating $n$-multilinear map $f_J : M^n \to R$ by</p>
@@ -195,7 +195,7 @@ $$</p>
 <h3 id="direct-sums-and-base-change">Direct Sums and Base Change</h3>
 <p><strong>Theorem.</strong> For all $R$-modules $M, N$ and all $n \geq 0$ there is a natural isomorphism</p>
 <p>$$
-\Lambda^n(M \oplus N) \cong \bigoplus_{p + q = n} \Lambda^p M \otimes_R \Lambda^q N,
+\boxed{\;\Lambda^n(M \oplus N) \cong \bigoplus_{p + q = n} \Lambda^p M \otimes_R \Lambda^q N\;},
 $$</p>
 <p>the map from the right to the left being $(u, v) \mapsto u \wedge v$ on each summand.</p>
 <p><strong>Proof.</strong> The map sending $(m, n) \in M \oplus N$ to $m \otimes 1 + 1 \otimes n$ in the graded tensor product $\Lambda(M) \hat{\otimes} \Lambda(N)$ is a linear map out of $M \oplus N$ whose image anticommutes, so it extends to a homomorphism of graded algebras $\Lambda(M \oplus N) \to \Lambda(M) \hat{\otimes} \Lambda(N)$. In degree $n$ this is the displayed map. Both sides are generated in each degree by elementary terms, and the relation $(m_1 + n_1) \wedge \cdots (m_n + n_n)$, expanded by multilinearity, expresses every wedge in $M \oplus N$ through wedges in $M$ and $N$; counting ranks over a free module, where both sides are free of rank $\binom{m + r}{n} = \sum_{p+q=n} \binom{m}{p}\binom{r}{q}$ by Vandermonde's identity, shows that the map is an isomorphism there. For general modules the natural transformation obtained is an isomorphism because both sides are right exact functors of $M$ and of $N$ — the power $\Lambda^n$ by the right-exactness proposition above, and the sum of tensor products because tensor product and direct sum are right exact — and a natural transformation between right exact functors that is an isomorphism on free modules is an isomorphism.</p>

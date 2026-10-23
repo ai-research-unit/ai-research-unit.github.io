@@ -77,7 +77,7 @@
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> A <strong>subalgebra</strong> of $A$ is an $R$-submodule $B \subseteq A$ with $BB \subseteq B$. The <strong>conjugate image</strong> of a subset $B$ is</p>
 <p>$$
-B^{*} = \{ x^{*} : x \in B \},
+\boxed{\;B^{*} = \{ x^{*} : x \in B \}\;},
 $$</p>
 <p>and a <strong>$*$-subalgebra</strong> is a subalgebra with $B^{*} \subseteq B$.</p>
 <p><strong>Remark.</strong> The $R$-submodule condition is part of the definition, and for a subalgebra it is not automatic: this is where the notion separates from that of an ideal. In a unital algebra an additive subgroup $I$ with $AI \subseteq I$ is automatically an $R$-submodule, because $\lambda x = (\lambda 1)x \in AI \subseteq I$; a subalgebra is required to satisfy $BB \subseteq B$ only, and that condition says nothing about the scalars. The witness is the algebra $\mathbb{C}$ with the sesquilinear product $x \star y = x\bar y$ over the datum $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation: the reals are closed under $\star$, since $x\bar y$ is real for real $x$ and $y$, while $i \star 1 = i$ is not real, so $\mathbb{R}$ is not closed under the scalars of $\mathbb{C}$ and is not a subalgebra of $(\mathbb{C},\star)$.</p>
@@ -141,7 +141,7 @@ $$</p>
 <p><strong>Proof.</strong> The conjugate transpose of a diagonal matrix is diagonal, and a product of two diagonal matrices is diagonal; the scalar matrices are the span of $I$, and $I^{*} = I$. A product of two upper triangular matrices is upper triangular, and $E_{12}$ is upper triangular while $E_{12}^{*} = E_{21}$ is not, so the subalgebra of the upper triangular matrices is not $*$-stable. A product of two strictly upper triangular matrices is strictly upper triangular, by the same computation on the indices, and that subalgebra has no unit: every element $x$ of it satisfies $xE_{12} = 0$, while a unit would satisfy $eE_{12} = E_{12} \neq 0$.</p>
 <p><strong>Proposition.</strong> Let $A$ be associative with a $\varsigma$-semilinear involution $*$, and let</p>
 <p>$$
-Z(A) = \{ z \in A : zx = xz \text{ for every } x \in A \}
+\boxed{\;Z(A) = \{ z \in A : zx = xz \text{ for every } x \in A \}\;}
 $$</p>
 <p>be its <strong>centre</strong>. Then $Z(A)$ is closed under the product, $z^{*} \in Z(A)$ for every $z \in Z(A)$, so the involution carries the centre to itself, and $Z(A)$ is an $R$-submodule; in the associative case it is a $*$-subalgebra.</p>
 <p><strong>Proof.</strong> For $y, z \in Z(A)$ and any $x$, associativity gives $(yz)x = y(zx) = y(xz) = (yx)z = (xy)z = x(yz)$, so $yz \in Z(A)$. For $z \in Z(A)$ and any $x$ one has $z^{*}x = (x^{*}z)^{*} = (zx^{*})^{*} = xz^{*}$, the middle step being the centrality of $z$, so $z^{*} \in Z(A)$. For the scalars, $(\lambda z)x = \lambda(zx)$ while $x(\lambda z) = \varsigma(\lambda)(xz) = \varsigma(\lambda)(zx)$, so the difference $(\lambda z)x - x(\lambda z)$ is $(\lambda - \varsigma(\lambda))zx$. Centrality of $z$ applied to the element $\lambda x$ gives $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz) = \lambda(zx)$; hence $(\lambda - \varsigma(\lambda))zx = 0$ for every $x$, the difference vanishes, and $\lambda z \in Z(A)$ for every scalar.</p>

@@ -86,7 +86,7 @@
 <h2 id="the-unitary-elements-and-the-norm-form">The Unitary Elements and the Norm Form</h2>
 <p><strong>Theorem (the unitary group is bounded).</strong> Under a Hermitian valuation a unitary element $u$, with $u\sigma(u) = 1$, generates the norm form value $N(u) = 1$ and therefore has $2v(u) = 0$; for a real-valued valuation this gives $v(u) = 0$, so</p>
 <p>$$
-\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times .
+\boxed{\;\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times\;} .
 $$</p>
 <p>The unitary group is a subgroup of the units, it is closed when $N$ is continuous, and it is bounded.</p>
 <p><strong>Proof.</strong> $N(u) = u\sigma(u) = 1$, and $v(N(u)) = 2v(u)$ by the Hermitian condition, so $2v(u) = 0$ and $v(u) = 0$ for a real-valued valuation; hence $u$ is a unit of the valuation ring. Closure under multiplication and inversion is the computation of <em>Involutive Topological Division Rings</em>, and closedness is the continuity of the norm form; boundedness is $v(u) = 0$ for all unitary $u$.</p>
@@ -97,7 +97,7 @@ $$</p>
 <h2 id="the-norm-form-the-residue-and-the-lattice">The Norm Form, the Residue and the Lattice</h2>
 <p><strong>Theorem (the norm form as a map on the units).</strong> The norm form is a map of the units into the units, $N : R^\times\to R^\times$, with $N(1) = 1$ and the identity</p>
 <p>$$
-N(uv) = u\,N(v)\,\sigma(u) ,
+\boxed{\;N(uv) = u\,N(v)\,\sigma(u)\;} ,
 $$</p>
 <p>so $N$ is multiplicative when the values commute with the parameters, in particular on the centre and on a commutative field; it is a homomorphism $R^\times\to (R^\times)^{\sigma}$ when $R$ is commutative, and it factors through the residue, $\bar N(\bar u) = \bar u\,\bar\sigma(\bar u)$, with the residue norm form of <em>Involutive Valued Fields</em>.</p>
 <p><strong>Proof.</strong> $N(uv) = uv\sigma(v)\sigma(u) = u\,N(v)\,\sigma(u)$; the multiplicative case is $uN(v) = N(v)u$; the residue statement is that $N$ preserves $\mathcal{O}$ by $v(N(u)) = 2v(u)\geq0$ for a unit and respects $\mathrm{M}$, so it descends.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><strong>Proof.</strong> $\sigma(N(u)) = \sigma(u\sigma(u)) = \sigma(\sigma(u))\,\sigma(u) = u\sigma(u) = N(u)$, so the values are fixed; the kernel is the unitarity condition by definition; the self-adjoint case is $N(x) = x\sigma(x) = x^2$.</p>
 <p><strong>Theorem (the unitary action on the lattice).</strong> The unitary group preserves the valuation ring and each ideal of the filtration,</p>
 <p>$$
-u\in \mathrm{U}(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u ,
+\boxed{\;u\in \mathrm{U}(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u\;} ,
 $$</p>
 <p>and acts by isometries of the form, $v(B(ux,uy)) = v(B(x,y))$; the induced action on the residue field is by isometries of the residue form, and the residue action is the reduction of the involution.</p>
 <p><strong>Proof.</strong> $v(u) = 0$ gives $u\in\mathcal{O}^\times$, so $u\mathcal{O} = \mathcal{O}$ and $u\mathrm{M}^n = \mathrm{M}^n$. The form transforms as $B(ux,uy) = \tau(ux\,\sigma(uy)) = \tau(ux\,\sigma(y)\sigma(u))$, and $v(u) = v(\sigma(u)) = 0$, so the valuation of the argument of the trace is $v(x\sigma(y))$ and hence $v(B(ux,uy)) = v(B(x,y))$ when the trace does not change the valuation; the residue action is that of a unit of the valuation ring on the residue field.</p>

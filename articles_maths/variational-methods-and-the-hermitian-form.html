@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-rayleigh-quotient-and-the-minmax-principle">The Rayleigh Quotient and the Min–Max Principle</h2>
 <p><strong>Theorem (the min–max principle).</strong> Let $\mathfrak{a}$ be a Hermitian form and $\mathfrak{b}$ a positive Hermitian form on a space $\mathcal{D}$, with $\mathfrak{a}$ coercive relative to $\mathfrak{b}$, $\mathfrak{a}(w,w)\ge c\,\mathfrak{b}(w,w)$, and suppose that the operator representing $\mathfrak{a}$ relative to $\mathfrak{b}$ has a compact inverse. Then the eigenvalues $\lambda_1\le\lambda_2\le\cdots$ of the pair are positive, of finite multiplicity and tending to $+\infty$, and for every $k$,</p>
 <p>$$
-\lambda_k = \min_{\substack{V\subseteq\mathcal{D}\\ \dim V=k}}\ \max_{\substack{w\in V\\ w\neq0}} R(w) = \max_{\substack{V\subseteq\mathcal{D}\\ \operatorname{codim}V=k-1}}\ \min_{\substack{w\in V\\ w\neq0}} R(w) ,
+\boxed{\;\lambda_k = \min_{\substack{V\subseteq\mathcal{D}\\ \dim V=k}}\ \max_{\substack{w\in V\\ w\neq0}} R(w) = \max_{\substack{V\subseteq\mathcal{D}\\ \operatorname{codim}V=k-1}}\ \min_{\substack{w\in V\\ w\neq0}} R(w)\;} ,
 $$</p>
 <p>the minimum and the maximum being attained at the $k$-dimensional span of the first $k$ eigenfunctions and its orthogonal complement, respectively.</p>
 <p><em>Proof.</em> The coercivity and the compactness make the operator $A$ representing $\mathfrak{a}$ relative to $\mathfrak{b}$, $\mathfrak{a}(w,v)=\mathfrak{b}(Aw,v)$, boundedly invertible with a compact self-adjoint inverse; the spectral theorem of <em>Banach and Hilbert Spaces</em> gives an orthonormal basis $(\varphi_n)$ for $\mathfrak{b}$ of eigenvectors, $A\varphi_n=\lambda_n\varphi_n$, with the eigenvalues real, of finite multiplicity and tending to zero for $A^{-1}$, hence $\lambda_n\to\infty$ with no accumulation. Ordering them gives the sequence. For the first formula: if $V$ has dimension $k$ then the intersection of $V$ with the $\mathfrak{b}$-orthogonal complement of $\varphi_1,\dots,\varphi_{k-1}$ is nonzero, and on it every $w$ has the expansion on $\varphi_k,\varphi_{k+1},\dots$, so $R(w)\ge\lambda_k$; hence $\max_V R\ge\lambda_k$ for every $V$, and the minimum over $V$ is at least $\lambda_k$. Choosing $V=\operatorname{span}(\varphi_1,\dots,\varphi_k)$ gives $\max R=\lambda_k$, since there $R$ is the Rayleigh quotient of the diagonal matrix $\operatorname{diag}(\lambda_1,\dots,\lambda_k)$, whose maximum is $\lambda_k$; so the minimum over $V$ equals $\lambda_k$. For the second formula: if $\operatorname{codim}V=k-1$ then $V\cap\operatorname{span}(\varphi_1,\dots,\varphi_k)\neq0$, and on that intersection $R\le\lambda_k$, so $\min_VR\le\lambda_k$; the choice of $V$ as the $\mathfrak{b}$-orthogonal complement of $\varphi_1,\dots,\varphi_{k-1}$ gives $\min_VR=\lambda_k$. Hence the max–min also equals $\lambda_k$.</p>
@@ -123,13 +123,13 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the Euler–Lagrange equation).</strong> For a smooth Lagrangian $L$, a critical point $w$ of $\mathcal{J}$ satisfies</p>
 <p>$$
-\frac{\partial L}{\partial w} - \sum_j \partial/\partial x_j\,\Bigl(\frac{\partial L}{\partial w_j}\Bigr) = 0 ,
+\boxed{\;\frac{\partial L}{\partial w} - \sum_j \partial/\partial x_j\,\Bigl(\frac{\partial L}{\partial w_j}\Bigr) = 0\;} ,
 $$</p>
 <p>the <strong>Euler–Lagrange equation</strong>, in the weak sense; conversely a solution of the equation is a critical point.</p>
 <p><em>Proof.</em> The derivative of $\mathcal{J}$ at $w$ in the direction $v$ is $\int_\Omega\bigl(\partial L/\partial w v+\partial L/\partial w_j\,\partial/\partial x_j\,v\bigr)dx$ with $\partial L/\partial w,\partial L/\partial w_j$ evaluated at $(x,w,\nabla w)$; integrating the second term by parts and using $v\in C_c^\infty$ gives $\int_\Omega\bigl(\partial L/\partial w-\sum_j\partial/\partial x_j\,\partial L/\partial w_j\bigr)\bar v\,dx$, which vanishes for all $v$ exactly at the equation. The converse is the same computation.</p>
 <p><strong>Theorem (the quadratic Lagrangian).</strong> Let the Lagrangian be quadratic in $w$ and $\nabla w$ with the Hermitian form $\mathfrak{a}$ as its integral,</p>
 <p>$$
-L(x,w,\nabla w) = \sum_{i,j}a_{ij}\,\partial/\partial x_j\,w\,\overline{\partial/\partial x_i\,w} + c\,|w|^2 ,
+\boxed{\;L(x,w,\nabla w) = \sum_{i,j}a_{ij}\,\partial/\partial x_j\,w\,\overline{\partial/\partial x_i\,w} + c\,|w|^2\;} ,
 $$</p>
 <p>so that $\mathcal{J}(w)=\mathfrak{a}(w,w)$. Then the Euler–Lagrange equation of the Lagrangian is $\mathfrak{a}(w,v)=0$ for every $v$ — the homogeneous equation, whose only solution is $w=0$ when $\mathfrak{a}$ is coercive — and the <strong>second variation</strong> of $\mathcal{J}$ at any $w$ is</p>
 <p>$$

@@ -99,15 +99,15 @@
 <p><strong>Proof sketch.</strong> Compactness: a sequence of vertices leaves every finite subtree in a ray, and every subsequence has a limit in $E(T_r)$, which is closed. Connectedness: any two points are joined by a finite path or a ray, and a vertex and an end are joined by the ray to the end. Local connectedness: the ball of radius $2^{-n}$ around a vertex is a finite tree with the ends attached along its boundary leaves, a contractible and locally connected neighbourhood. No simple closed curve: the space is a tree together with the ends, and a circle would give two distinct arcs between two points, contradicting the uniqueness of the path in the tree. The branch points are the vertices with at least three neighbours, the ends of the tree being of order one.</p>
 <p><strong>Theorem (the end space and its dimension).</strong> The end space $E(T_r)$ is a Cantor set for $r \geq 3$. With the visual metric $d(\xi,\eta) = r^{\,-\ell(\xi,\eta)}$, where $\ell(\xi,\eta)$ is the length of the common initial path of two rays, the number of cylinders of diameter $r^{-n}$ is</p>
 <p>$$
-N\bigl(E(T_r), r^{-n}\bigr) \asymp (r-1)^{n} ,
+\boxed{\;N\bigl(E(T_r), r^{-n}\bigr) \asymp (r-1)^{n}\;} ,
 $$</p>
 <p>so</p>
 <p>$$
-\dim_H E(T_r) = \frac{\log(r-1)}{\log r} .
+\boxed{\;\dim_H E(T_r) = \frac{\log(r-1)}{\log r}\;} .
 $$</p>
 <p>For $r = 3$ this is $\log 2/\log 3 = 0.6309\ldots$; for $r = 4$ it is $\log 3/\log 4 = 0.7924\ldots$. Since the dimension is less than one, the dendrite $\overline{T_r}$ itself has</p>
 <p>$$
-\dim_H \overline{T_r} = 1 ,
+\boxed{\;\dim_H \overline{T_r} = 1\;} ,
 $$</p>
 <p>being a countable union of arcs together with an end set of dimension strictly less than one.</p>
 <p><strong>Proof sketch.</strong> The cylinders of level $n$ correspond to the rays of length $n$; the root has $r$ of them and each subsequent vertex $r-1$, so there are $r(r-1)^{n-1} \asymp (r-1)^n$ cylinders, each of diameter exactly $r^{-n}$, and the box and Hausdorff dimensions are the exponent $\log(r-1)/\log r$ by the Moran–Hutchinson theorem of <em>Fractal Geometry</em>. The end set is a Cantor set because the cylinders of each level are pairwise disjoint closed sets whose union is the whole and each contains at least two of the next level. The dendrite is the union of its arcs, countably many of them, each of dimension one, and of the end set of dimension $\log(r-1)/\log r < 1$; a countable union of one-dimensional arcs has dimension one, and adjoining a set of smaller dimension does not change it.</p>

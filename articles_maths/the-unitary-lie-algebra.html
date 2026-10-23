@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-reversal-of-the-product">The Reversal of the Product</h3>
 <p><strong>Theorem.</strong> Let $x, y \in S(A)$. Then $(xy)^{*} = yx$, and</p>
 <p>$$
-xy \in S(A) \iff xy = -yx, \qquad xy \in H(A) \iff xy = yx .
+\boxed{\;xy \in S(A) \iff xy = -yx, \qquad xy \in H(A) \iff xy = yx\;} .
 $$</p>
 <p>In particular the skew-Hermitian part is closed under the product exactly when any two of its elements anticommute, and it is carried into the Hermitian part exactly when they commute.</p>
 <p><strong>Proof.</strong> $(xy)^{*} = y^{*}x^{*} = (-y)(-x) = yx$. Hence $xy$ is skew-Hermitian, that is $(xy)^{*} = -xy$, exactly when $yx = -xy$; and it is Hermitian, that is $(xy)^{*} = xy$, exactly when $yx = xy$.</p>
@@ -113,7 +113,7 @@ $$</p>
 <h3 id="the-inner-derivations">The Inner Derivations</h3>
 <p><strong>Theorem.</strong> For $s \in S(A)$ define $\mathrm{ad}_{s}(x) = [s,x] = sx - xs$. Then $\mathrm{ad}_{s}$ is a $*$-derivation of $A$ that preserves $H(A)$ and $S(A)$, the map $s \mapsto \mathrm{ad}_{s}$ is a homomorphism of Lie algebras</p>
 <p>$$
-[\mathrm{ad}_{s}, \mathrm{ad}_{t}] = \mathrm{ad}_{[s,t]} ,
+\boxed{\;[\mathrm{ad}_{s}, \mathrm{ad}_{t}] = \mathrm{ad}_{[s,t]}\;} ,
 $$</p>
 <p>and its kernel is the set of the central skew-Hermitian elements, that is $S(A) \cap Z(A)$.</p>
 <p><strong>Proof.</strong> The Leibniz rule for $\mathrm{ad}_{s}$ is the associativity of $A$:</p>
@@ -129,7 +129,7 @@ $$</p>
 <h3 id="the-unitary-group">The Unitary Group</h3>
 <p><strong>Theorem.</strong> Let $u \in \mathrm{U}(A)$ be unitary and let $\alpha_{u}(x) = uxu^{*}$. Then $\alpha_{u}$ preserves $S(A)$, and it is an automorphism of the Lie algebra $\mathfrak{u}(A)$:</p>
 <p>$$
-\alpha_{u}\bigl([x,y]\bigr) = \bigl[\alpha_{u}(x), \alpha_{u}(y)\bigr] \quad \text{for all } x, y \in S(A) .
+\boxed{\;\alpha_{u}\bigl([x,y]\bigr) = \bigl[\alpha_{u}(x), \alpha_{u}(y)\bigr] \quad \text{for all } x, y \in S(A)\;} .
 $$</p>
 <p>The assignment $u \mapsto \alpha_{u}$ is a homomorphism of the group $\mathrm{U}(A)$ into the automorphism group of $\mathfrak{u}(A)$, and its kernel is the group of the central unitary elements.</p>
 <p><strong>Proof.</strong> For $s \in S(A)$, $\alpha_{u}(s)^{*} = (usu^{*})^{*} = u s^{*} u^{*} = -usu^{*}$, so $\alpha_{u}(s) \in S(A)$. For the bracket, $\alpha_{u}(xy - yx) = uxyu^{*} - uyxu^{*} = (uxu^{*})(uyu^{*}) - (uyu^{*})(uxu^{*}) = [\alpha_{u}(x), \alpha_{u}(y)]$, using the multiplicativity of the conjugation by $u$. The map is multiplicative in $u$, since $\alpha_{u}\alpha_{v} = \alpha_{uv}$, and it fixes $x$ for all $x$ exactly when $ux = xu$ for all $x$, that is when $u$ is central; this is the computation of <em>Units and the Unitary Elements</em>, §<em>Inner $*$-Automorphisms</em>, read on the skew-Hermitian half.</p>

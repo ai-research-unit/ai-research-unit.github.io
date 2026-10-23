@@ -95,11 +95,11 @@ is an <strong>almost split sequence</strong>, or <strong>Auslander–Reiten sequ
 <p><strong>Definition.</strong> The <strong>transpose</strong> of a module $M$ with minimal projective presentation $P_1\to P_0\to M\to0$ is $\operatorname{Tr}M=\operatorname{coker}(\operatorname{Hom}_A(P_0,A)\to\operatorname{Hom}_A(P_1,A))$, and the <strong>Auslander–Reiten translation</strong> of a module $N$ without projective summands is $\tau N=D\operatorname{Tr}N$.</p>
 <p><strong>Theorem (Auslander–Reiten formula).</strong> Let $A$ be a finite-dimensional $k$-algebra, and let $\underline{\operatorname{Hom}}$ denote $\operatorname{Hom}$ modulo the morphisms that factor through a projective module and $\overline{\operatorname{Hom}}$ the same modulo the morphisms that factor through an injective module. For every finite-dimensional module $M$ without projective summands and every finite-dimensional module $N$ there is a natural isomorphism
 $$
-D\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(N,\tau M),
+\boxed{\;D\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(N,\tau M)\;},
 $$
 and, for every $N$ without injective summands and every $M$, a natural isomorphism
 $$
-D\operatorname{Ext}^1_A(M,N)\cong\overline{\operatorname{Hom}}_A(\tau^{-1}N,M).
+\boxed{\;D\operatorname{Ext}^1_A(M,N)\cong\overline{\operatorname{Hom}}_A(\tau^{-1}N,M)\;}.
 $$
 The stable Hom is necessary: a morphism $N\to\tau M$ that factors through a projective module contributes nothing to $\operatorname{Ext}^1_A(M,N)$, and likewise on the dual side. The isomorphisms are compatible with the module structures and are natural in both variables.</p>
 <p><em>Proof.</em> The functor $D\operatorname{Ext}^1_A(M,-)$, restricted to modules without projective summands, is representable on the stable category by $\tau M$: the representation is computed from a minimal projective presentation, using $\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(\Omega M,N)$ with $\Omega$ the syzygy, the transpose and the duality $D$, and the representing object is $\tau M$. Since the representing property is a statement in the stable category, the Hom that occurs is $\underline{\operatorname{Hom}}$, and the dual statement is obtained by applying the same argument to $A^{\mathrm{opp}}$ with the injective stable category. The naturality is the naturality of the Yoneda pairing.</p>
@@ -128,8 +128,8 @@ $$</p>
 <p><em>Proof.</em> Local finiteness is the finite-dimensionality of the Hom and Ext spaces and the fact that only finitely many indecomposables occur in a fixed almost split sequence. The rest is the mesh structure and the Auslander–Reiten theorem.</p>
 <p><strong>Theorem (Happel, for hereditary algebras).</strong> Let $A=kQ$ be the path algebra of an acyclic quiver and let $C$ be the Cartan matrix, $C_{ij}=\dim_k\operatorname{Hom}_A(P_i,P_j)$, the number of paths from $j$ to $i$, as in <em>Quiver Representations and Representation Type</em>, so that the $j$-th column of $C$ is the dimension vector of $P_j$. Then the Auslander–Reiten translation acts on the dimension vectors of the modules without projective summands by
 $$
-\underline{\dim}\,\tau M=-C^{\mathsf T}C^{-1}\,\underline{\dim}M=\Phi^{-\mathsf T}\,\underline{\dim}M,
-\qquad \Phi=-C^{-1}C^{\mathsf T}:\mathbb{Z}^{Q_0}\to\mathbb{Z}^{Q_0},
+\boxed{\;\underline{\dim}\,\tau M=-C^{\mathsf T}C^{-1}\,\underline{\dim}M=\Phi^{-\mathsf T}\,\underline{\dim}M,
+\qquad \Phi=-C^{-1}C^{\mathsf T}:\mathbb{Z}^{Q_0}\to\mathbb{Z}^{Q_0}\;},
 $$
 so that the <strong>Coxeter transformation</strong> $\Phi$ and the matrix of the translation are inverse transposes of one another in this convention and therefore have the same order. For a Dynkin quiver $\Phi$ has finite order, equal to the Coxeter number of the diagram; for an affine quiver it has infinite order, and the periodic orbits of the translation are exactly the regular ones, whose dimension vectors are the positive multiples of the null root.</p>
 <p><em>Proof (in outline).</em> The dimension vector of $\tau M$ is computed from the minimal projective presentation and the Cartan matrix: the syzygy and the transpose shift the dimension vector by multiplication by the inverse of the Cartan matrix and the transpose, and the duality contributes the sign, which is the formula above. The order statements for the Dynkin and affine cases are the corresponding facts about the Weyl group and the affine Weyl group, and periodicity in the tubes is the statement that $\tau^{r}$ fixes the vertices of a tube of rank $r$.</p>

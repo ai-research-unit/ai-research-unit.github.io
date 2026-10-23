@@ -131,14 +131,18 @@ $$</p>
 <p>the set on which both idempotent coordinates are non-negative.</p>
 <p><strong>Theorem.</strong> The cone $\mathcal{C}$ is a <strong>symmetric cone</strong>: it is closed, convex, salient (pointed), generating, and self-dual with respect to the scalar form $g$,</p>
 <p>$$
-\mathcal{C}^{*} = \{Q_2 : g(Q_1,Q_2) \ge 0 \ \text{for all } Q_1 \in \mathcal{C}\} = \mathcal{C}.
+\boxed{\;
+\mathcal{C}^{*} = \{Q_2 : g(Q_1,Q_2) \ge 0 \ \text{for all } Q_1 \in \mathcal{C}\} = \mathcal{C}
+\;}.
 $$</p>
 <p><strong>Proof.</strong> The identification of the image with the coordinate description is the criterion of square roots of <em>The Classes of Element of the Split-Complex Algebra</em>. Closure and convexity: the idempotent coordinates of a non-negative combination of elements of $\mathcal{C}$ are non-negative. Salience: if $Q_1$ and $-Q_1$ both lie in $\mathcal{C}$ then $q_{1+} \ge 0$, $q_{1-} \ge 0$ and $-q_{1+} \ge 0$, $-q_{1-} \ge 0$, so $Q_1 = 0$. Generating: $Q_1 = q_{1+}\Pi_1 + q_{1-}\Pi_2$ is the difference of the two elements $\max(q_{1+},0)\Pi_1 + \max(q_{1-},0)\Pi_2$ and $\max(-q_{1+},0)\Pi_1+\max(-q_{1-},0)\Pi_2$ of $\mathcal{C}$, so $\mathcal{C}-\mathcal{C} = \mathbb{D}$. Self-duality: in idempotent coordinates $g(Q_1,Q_2) = \tfrac12(q_{1+}q_{2-} + q_{1-}q_{2+})$, so $g(\Pi_1,Q_2) = \tfrac12 q_{2-}$ and $g(\Pi_2,Q_2) = \tfrac12 q_{2+}$; if $Q_2 \notin \mathcal{C}$ then one of $q_{2+}, q_{2-}$ is negative, and taking $Q_1 = \Pi_2$ (if $q_{2+} < 0$) or $Q_1 = \Pi_1$ (if $q_{2-} < 0$) gives $g(Q_1,Q_2) < 0$ with $Q_1 \in \mathcal{C}$, so $Q_2 \notin \mathcal{C}^{*}$; conversely $q_{1+},q_{1-},q_{2+},q_{2-} \ge 0$ give $g(Q_1,Q_2)\ge0$, so $\mathcal{C}\subset\mathcal{C}^{*}$. Hence $\mathcal{C}^{*} = \mathcal{C}$.</p>
 <p>The coordinates $q_+$ and $q_-$ diagonalise the cone and the form together, which is why the computations are one-dimensional. The cone of squares of the plain product is the order cone on $\mathbb{D}$: it defines the partial order $Q_1 \preceq Q_2 \iff Q_2-Q_1 \in \mathcal{C}$, and the squares are its non-negative elements, $Q^2 \in \mathcal{C}$ for every $Q$. No element acts as the order unit or the identity of the order beyond $1$, which is interior to the cone since $1_+ = 1_- = 1 > 0$.</p>
 <h3 id="the-relation-to-the-null-cone-and-the-zero-divisors">The Relation to the Null Cone and the Zero Divisors</h3>
 <p><strong>Theorem.</strong> The isotropic cone of $\langle\cdot,\cdot\rangle_{*}$ is the null cone, and it is the union of the two boundaries of the double cone of non-negativity:</p>
 <p>$$
-\{Q : \langle Q,Q\rangle_{*} = 0\} = \mathcal{N} = \partial\mathcal{C} \cup \partial(-\mathcal{C}) = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2,
+\boxed{\;
+\{Q : \langle Q,Q\rangle_{*} = 0\} = \mathcal{N} = \partial\mathcal{C} \cup \partial(-\mathcal{C}) = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2
+\;},
 $$</p>
 <p>where $\partial\mathcal{C} = \mathbb{R}_{\ge0}\Pi_1\cup\mathbb{R}_{\ge0}\Pi_2$. The zero divisors are $\mathcal{N}\setminus\{0\}$.</p>
 <p><strong>Proof.</strong> $\langle Q,Q\rangle_{*} = Q\bar Q = \langle Q\rangle_{*} = q^2-q'^2$, which vanishes iff $(q-q')(q+q') = 0$, i.e. $Q \in \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$; the identification of the null cone with the zero divisors is <em>Zero Divisors of the Split-Complex Algebra</em>. The half-line description is read from the signs of $q_+$ and $q_-$.</p>
@@ -146,7 +150,9 @@ $$</p>
 <h3 id="the-reversed-cauchyschwarz-inequality">The Reversed Cauchy–Schwarz Inequality</h3>
 <p><strong>Theorem (reversed Cauchy–Schwarz).</strong> For $Q_1, Q_2$ in the closed cone $\mathcal{C}$, with $g$ the scalar form,</p>
 <p>$$
-g(Q_1,Q_2)^2 \;\ge\; g(Q_1,Q_1)\,g(Q_2,Q_2),
+\boxed{\;
+g(Q_1,Q_2)^2 \;\ge\; g(Q_1,Q_1)\,g(Q_2,Q_2)
+\;},
 $$</p>
 <p>with equality if and only if $Q_1$ and $Q_2$ are proportional. On the interior of the cone all three quantities are positive, and the inequality is the reverse of the definite one.</p>
 <p><strong>Proof.</strong> In idempotent coordinates $g(Q_1,Q_2) = \tfrac12(q_{1+}q_{2-} + q_{1-}q_{2+})$ and $g(Q_1,Q_1) = q_{1+}q_{1-} = \langle Q_1\rangle_{*}$ and $g(Q_2,Q_2) = q_{2+}q_{2-}$, so</p>

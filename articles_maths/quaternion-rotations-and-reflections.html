@@ -201,9 +201,7 @@ $$</p>
 <p>Thus two unit quaternions $\tilde q$ and $-\tilde q$ determine the same rotation, and no other coincidence occurs.</p>
 <h3 id="surjectivity-and-the-covering">Surjectivity and the Covering</h3>
 <p><strong>Theorem.</strong> The homomorphism $\operatorname{Ad} : Sp(1)\to SO(3)$ is surjective, and it induces an isomorphism of groups</p>
-<p>$$
-SO(3) \cong Sp(1)/\{\pm1\}.
-$$</p>
+<p>$$ \boxed{\; SO(3) \cong Sp(1)/\{\pm1\} \;} .$$</p>
 <p><strong>Proof.</strong> The differential at the identity is the isomorphism $\operatorname{Im}\mathbb{H}\to\mathrm{SO}(3)$ of the preceding section, so by the inverse function theorem $\operatorname{Ad}$ is a local diffeomorphism near $1$, and therefore its image is an open subset of $SO(3)$. The image is a subgroup, and it is compact as a continuous image of the compact group $Sp(1)$, hence closed in the Hausdorff group $SO(3)$. The group $SO(3)$ is connected, so the only non-empty subset that is both open and closed is the whole of it; therefore $\operatorname{Ad}$ is surjective. The first isomorphism theorem for groups, together with the computation of the kernel, gives $SO(3)\cong Sp(1)/\{\pm1\}$.</p>
 <p><strong>Theorem (double cover).</strong> The quotient map $Sp(1)\to Sp(1)/\{\pm1\}\cong SO(3)$ is a two-sheeted covering map of Lie groups, and it is the universal cover of $SO(3)$.</p>
 <p><strong>Proof.</strong> The group $\{\pm1\}$ is a discrete normal subgroup, so the quotient map is a covering map with fibres of two elements. Since $Sp(1)\cong S^3$ is simply connected, it is the universal cover of the quotient, which is $SO(3)$.</p>
@@ -216,9 +214,7 @@ $$</p>
 <h2 id="the-exponential-and-the-composition-of-rotations">The Exponential and the Composition of Rotations</h2>
 <h3 id="conjugation-by-a-unit-quaternion">Conjugation by a Unit Quaternion</h3>
 <p><strong>Theorem.</strong> Let $u$ be a unit vector and let $\tilde q = \cos\frac{\theta}{2} + u\sin\frac{\theta}{2}$. Then for $\vec q\in\operatorname{Im}\mathbb{H}$,</p>
-<p>$$
-\operatorname{Ad}_{\tilde q}(\vec q) = \cos\theta\, \vec q + \sin\theta\, (u\times \vec q) + (1-\cos\theta)\,\langle \vec q, u\rangle\, u.
-$$</p>
+<p>$$ \boxed{\; \operatorname{Ad}_{\tilde q}(\vec q) = \cos\theta\, \vec q + \sin\theta\, (u\times \vec q) + (1-\cos\theta)\,\langle \vec q, u\rangle\, u \;} .$$</p>
 <p>In particular $\operatorname{Ad}_{\tilde q}(u) = u$, and on the plane $u^{\perp}\subset\operatorname{Im}\mathbb{H}$ the map $\operatorname{Ad}_{\tilde q}$ is the rotation through the angle $\theta$ that carries $\vec q$ toward $u\times \vec q$.</p>
 <p><strong>Proof.</strong> Write $\vec q = \vec q_{\parallel} + \vec q_{\perp}$ with $\vec q_{\parallel} = \langle \vec q,u\rangle u$ parallel to $u$ and $\vec q_{\perp}\perp u$. Since $\tilde q$ is a polynomial in $u$ it commutes with $u$, and $u^{-1} = -u$; hence $\tilde q \vec q_{\parallel}\tilde q^{-1} = \langle \vec q,u\rangle \tilde q u\tilde q^{-1} = \langle \vec q,u\rangle u = \vec q_{\parallel}$. For the perpendicular part put $\vec p = u\times \vec q_{\perp}$; then $u\vec q_{\perp} = u\times \vec q_{\perp} - \langle u, \vec q_{\perp}\rangle = \vec p$ and $\vec q_{\perp}u = -\vec p$, while $\vec p u = \vec q_{\perp}$ by the vector triple product. With $c = \cos\frac{\theta}{2}$, $s = \sin\frac{\theta}{2}$ and $\tilde q^{-1} = c - su$,</p>
 <p>$$
@@ -324,9 +320,7 @@ $$</p>
 <p><strong>Remark.</strong> On the whole algebra $\mathbb{H}$, and not merely on $\operatorname{Im}\mathbb{H}$, the map $\rho_v$ is not the reflection in a hyperplane of $\mathbb{R}^4$: it also multiplies the scalar line by $-1$, so its fixed space is the two-dimensional plane $\operatorname{span}(e_t,v)^{\perp}$ and it acts as a rotation through $\pi$ in the plane $\operatorname{span}(e_t,v)$. The reflection statement above is the statement about the three-dimensional imaginary subspace, which is the space the rotation and reflection groups act on. This is the quaternionic instance of the signed inner conjugation action $\operatorname{Ad}^{\mathrm{si}}_v(\vec q) = \alpha(v)\vec q v^{-1}$ of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, in which the grade involution supplies the sign that distinguishes odd from even elements.</p>
 <h3 id="products-of-two-reflections">Products of Two Reflections</h3>
 <p><strong>Theorem.</strong> For unit vectors $v_1, v_2$,</p>
-<p>$$
-\rho_{v_1}\circ\rho_{v_2} = \operatorname{Ad}_{v_1v_2}.
-$$</p>
+<p>$$ \boxed{\; \rho_{v_1}\circ\rho_{v_2} = \operatorname{Ad}_{v_1v_2} \;} .$$</p>
 <p>Consequently the composition of two reflections is a rotation, namely the rotation about the axis $v_1\times v_2$ through twice the angle between the planes $v_1^{\perp}$ and $v_2^{\perp}$.</p>
 <p><strong>Proof.</strong> Using $\rho_{v}(\vec q) = -v\vec q v^{-1}$,</p>
 <p>$$
@@ -361,9 +355,7 @@ $$</p>
 \mathsf{M}_2 : Sp(1)\times Sp(1)\longrightarrow SO(4), \qquad (\tilde q_1,\tilde q_2)\mapsto\Phi_{(\tilde q_1,\tilde q_2)},
 $$</p>
 <p>is a surjective homomorphism with kernel $\{\pm(1,1)\}$. Hence</p>
-<p>$$
-SO(4) \cong (Sp(1)\times Sp(1))/\{\pm(1,1)\} \cong \mathrm{Spin}(4).
-$$</p>
+<p>$$ \boxed{\; SO(4) \cong (Sp(1)\times Sp(1))/\{\pm(1,1)\} \cong \mathrm{Spin}(4) \;} .$$</p>
 <p><strong>Proof.</strong> Linearity is clear. Norm preservation: $\langle \tilde q_1\vec q \tilde q_2^{-1}\rangle_{\natural} = \langle \tilde q_1\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle \tilde q_2\rangle_{\natural}^{-1} = \langle \vec q\rangle_{\natural}$. Homomorphism: $\Phi_{(\tilde q_1,\tilde q_2)}\circ\Phi_{(r_1,r_2)} = \Phi_{(\tilde q_1r_1, \tilde q_2r_2)}$. Determinant: $\det\Phi_{(\tilde q_1,\tilde q_2)} = \pm1$ and depends continuously on $(\tilde q_1,\tilde q_2)$, which ranges over the connected set $Sp(1)\times Sp(1)$, so it is constant and equals its value $\det(\mathrm{id}) = 1$ at $(1,1)$. Kernel: if $\Phi_{(\tilde q_1,\tilde q_2)} = \mathrm{id}$ then evaluating at $\vec q = 1$ gives $\tilde q_1\tilde q_2^{-1} = 1$, so $\tilde q_1 = \tilde q_2$, and then $\tilde q_1 \vec q\tilde q_1^{-1} = \vec q$ for all $\vec q$, so $\tilde q_1\in\{\pm1\}$. Surjectivity: the differential of $\mathsf{M}_2$ at the identity is the linear map $(\vec q,\vec p)\mapsto\bigl(\vec r\mapsto \vec q\vec r - \vec r\vec p\bigr)$ from $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$ to $\mathrm{SO}(4)$; it is injective, because $\vec q\vec r = \vec r\vec p$ for all $\vec r$ gives $\vec q = \vec p$ on taking $\vec r = 1$ and then forces $\vec q$ to be central, hence $\vec q = \vec p = 0$; since both spaces have dimension $6$, it is an isomorphism. Hence $\mathsf{M}_2$ is a local diffeomorphism, its image is open, and, being a compact subgroup, it is also closed in the connected group $SO(4)$, so the image is everything.</p>
 <p>The kernel has order two, so $SO(4)$ is doubly covered by $Sp(1)\times Sp(1)$, which is simply connected as $S^3\times S^3$; this is the Spin group $\mathrm{Spin}(4)$ of the four-dimensional Euclidean space. Whereas $SO(3)$ is simple and its universal cover is the simple group $Sp(1)$, the group $SO(4)$ is not simple, and the two factors of the cover are the left and the right multiplications. The adjoint action of the diagonal subgroup $\tilde q_1 = \tilde q_2$ is $\operatorname{Ad}_{\tilde q_1}$ on $\operatorname{Im}\mathbb{H}$ together with the identity on the scalar line, and it is the copy of $SO(3)$ found earlier.</p>
 <h2 id="homotopy-groups-and-the-double-cover">Homotopy Groups and the Double Cover</h2>

@@ -93,7 +93,7 @@ E(\varnothing)=0,\qquad E(\Delta_1\cap\Delta_2)=E(\Delta_1)E(\Delta_2),\qquad E(
 $$</p>
 <p>and the operator is the strong integral</p>
 <p>$$
-A=\int_{\mathbb{R}}\lambda\,dE(\lambda)+\text{a finite-dimensional correction on }\operatorname{span}(W_0),
+\boxed{\;A=\int_{\mathbb{R}}\lambda\,dE(\lambda)+\text{a finite-dimensional correction on }\operatorname{span}(W_0)\;},
 $$</p>
 <p>the integral converging in the strong operator topology; on each of the two definite parts the spectral function is that of a self-adjoint operator on a Hilbert space, and on the finite-dimensional part it is the spectral resolution of the finite matrix.</p>
 <p><em>Proof.</em> The space splits into a Hilbert part and a finite-dimensional part as in the previous theorem; the spectral theorem on the Hilbert part is the classical one of <em>Self-Adjoint Operators and the Spectral Theorem</em>, the finite-dimensional part has its Jordan resolution, and the two assemble into the spectral function of the statement. The multiplicativity and the indefinite self-adjointness of $E$ are the corresponding properties on each piece, and the integral is the sum of the two integrals.</p>
@@ -107,13 +107,13 @@ $$</p>
 <p>for a constant $c$, with a fixed sign; it is <strong>uniformly positive</strong> if $[Ax,x]\ge \varepsilon[x,x]$ for some $\varepsilon>0$ and all $x$.</p>
 <p><strong>Theorem (Krein's similarity theorem).</strong> Let $A$ be a bounded self-adjoint operator in a Krein space and suppose $[Ax,x]\ge\varepsilon[x,x]$ for all $x$ and some $\varepsilon>0$. Then there is a bounded invertible operator $V$ and a self-adjoint operator $B$ on the Hilbert space $H$ with</p>
 <p>$$
-A=V^{-1}BV,
+\boxed{\;A=V^{-1}BV\;},
 $$</p>
 <p>and $A$ has a spectral function whose integral represents $A$; consequently the spectral theorem in the form of the existence of a resolution of the identity holds for $A$ on the whole real line and the non-real spectrum is empty.</p>
 <p><em>Proof.</em> The inequality makes the form $[Ax,\cdot]$ a positive definite inner product equivalent to $\langle\cdot,\cdot\rangle$, and the representing operator $V$ of this inner product is bounded and invertible by the equivalence; conjugating by $V$ replaces $A$ by the Hilbert-space self-adjoint operator $B=VAV^{-1}$, whose spectral theorem is classical. The spectral function of $B$ is transported back by $V$ and is self-adjoint in the indefinite metric; the absence of non-real spectrum is the reality of the spectrum of $B$ together with the similarity.</p>
 <p><strong>Corollary (the uniformly positive case).</strong> A uniformly positive self-adjoint operator in a Krein space has a spectral function $E$ on the real line with</p>
 <p>$$
-A=\int_{\mathbb{R}}\lambda\,dE(\lambda),\qquad E(\Delta)^{[*]}=E(\Delta),
+\boxed{\;A=\int_{\mathbb{R}}\lambda\,dE(\lambda),\qquad E(\Delta)^{[*]}=E(\Delta)\;},
 $$</p>
 <p>and the $J$-orthogonal projections $E(\Delta)$ form a resolution of the identity in the indefinite metric; the operator generates a bounded group $\exp(itA)$ for $t\in\mathbb{R}$ and the group is $J$-unitary exactly when $A$ is self-adjoint in the Krein space.</p>
 <p><em>Proof.</em> The spectral function is the transported one of the previous theorem; the group statement follows from the functional calculus in the definite metric, and the $J$-unitarity of $\exp(itA)$ is the computation $\exp(itA)\exp(-itA)=I$ with the indefinite adjoint $(\exp(itA))^{[*]}=\exp(itA^{[*]})=\exp(itA)$.</p>

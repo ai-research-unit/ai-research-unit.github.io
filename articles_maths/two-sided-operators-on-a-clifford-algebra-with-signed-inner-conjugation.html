@@ -85,7 +85,7 @@ $$</p>
 <p>It is the two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the unit group alone, because the right factor is the inverse.</p>
 <p><strong>Proposition (the parity sign).</strong> Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_x=\varepsilon_x\,\mathrm{Ad}_x,
+\boxed{\;\mathrm{Ad}^{\alpha}_x=\varepsilon_x\,\mathrm{Ad}_x\;},
 $$</p>
 <p>where $\mathrm{Ad}_x(y)=x\,y\,x^{-1}$ is the inner conjugation. In particular $\mathrm{Ad}^{\alpha}_x=\mathrm{Ad}_x$ when $x$ is even, and $\mathrm{Ad}^{\alpha}_x=-\mathrm{Ad}_x$ when $x$ is odd.</p>
 <p><em>Proof.</em> The grade involution multiplies the degree-$k$ part by $(-1)^k$, so $\alpha(x)=\varepsilon_x x$; substituting into the definition gives $\mathrm{Ad}^{\alpha}_x(y)=\varepsilon_x x\,y\,x^{-1}$, and $\varepsilon_x$ is central because it is a scalar.</p>
@@ -121,13 +121,13 @@ $$</p>
 <p><em>Proof.</em> $\mathrm{Ad}_x=\mathrm{id}$ says $xy=yx$ for every $y$. The centre of a Clifford algebra of a non-degenerate form is $F$ in even dimension and $F\oplus F\omega$ with $\omega$ odd in odd dimension; a central element of odd dimension is a unit because $\omega^{2}=\pm1$, a nonzero scalar.</p>
 <p><strong>Proposition.</strong> The kernel of the signed inner conjugation on the unit group is the group of nonzero scalars,</p>
 <p>$$
-\ker\mathrm{Ad}^{\alpha}=F^{\times}\cdot1 ,
+\boxed{\;\ker\mathrm{Ad}^{\alpha}=F^{\times}\cdot1\;} ,
 $$</p>
 <p>in every dimension.</p>
 <p><em>Proof.</em> The equation $\mathrm{Ad}^{\alpha}_x=\mathrm{id}$ at $y=1$ reads $\alpha(x)=x$, so $x$ is even; on the even part $\mathrm{Ad}^{\alpha}_x=\mathrm{Ad}_x$, whose kernel is the even part of the centre, and the even part of the centre is $F\cdot1$ in both parities of the dimension.</p>
 <p><strong>Corollary (the volume element).</strong> Let $\dim V$ be odd and let $\omega$ be the volume element. Then $\omega$ is central, so $\mathrm{Ad}_{\omega}=\mathrm{id}$, while</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id}.
+\boxed{\;\mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id}\;}.
 $$</p>
 <p><em>Proof.</em> The volume element is odd and central in odd dimension, so $\mathrm{Ad}_\omega=\mathrm{id}$, and the parity-sign proposition gives $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{Ad}_\omega$.</p>
 <p><strong>Remark (why the exact sequences need the signed form).</strong> The corollary is the sharp statement that the inner conjugation is the wrong operator for the pin group. The element $\omega$ of an odd-dimensional Clifford algebra is a unit of norm $N(\omega)=\omega\bar\omega=\pm1$, so it lies in $\mathrm{Pin}(V,\mathfrak{Q})$; under $\mathrm{Ad}$ it acts trivially on $V$ and belongs to the kernel of $\mathrm{Pin}\to O(V,\mathfrak{Q})$, so that kernel is strictly larger than $\{\pm1\}$ and the exact sequence fails. Under $\mathrm{Ad}^{\alpha}$ the same element acts as $-\mathrm{id}$, hence nontrivially, and the kernel is the scalars; intersected with the norm-one condition of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> it is $\{\pm1\}$, which is the double cover. The minus in the left factor is therefore not a convention: it is what makes the kernel of the action on the quadratic space the two elements that the covering group requires.</p>

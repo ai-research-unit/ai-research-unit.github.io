@@ -111,12 +111,12 @@ $$</p>
 <h3 id="the-sandwich-is-completely-positive">The Sandwich Is Completely Positive</h3>
 <p><strong>Theorem (the sandwich is completely positive).</strong> For every $a \in A$ the sandwich $\Theta_{a}$ is completely positive, and its amplification is the sandwich by the diagonal matrix,</p>
 <p>$$
-\Theta_{a} \otimes \mathrm{id}_{n} = \Theta_{\operatorname{diag}(a,\dots,a)} .
+\boxed{\;\Theta_{a} \otimes \mathrm{id}_{n} = \Theta_{\operatorname{diag}(a,\dots,a)}\;} .
 $$</p>
 <p><em>Proof.</em> The amplification acts entrywise, $(\Theta_{a} \otimes \mathrm{id}_{n})(x_{ij}) = (a x_{ij}a^{*})$, and the sandwich by the diagonal matrix $a^{(n)} = \operatorname{diag}(a,\dots,a)$ is $(a^{(n)} X a^{(n)*})_{ij} = a x_{ij}a^{*}$, which is the same. The amplified sandwich is positive by the positivity of the sandwich applied to $M_{n}(A)$ with the form $h_{n}$, whose cone is the cone of that algebra.</p>
 <p><strong>Corollary (the sandwich is a channel of Kraus rank one).</strong> The sandwich is the composition of the left multiplication and the right multiplication of <em>The Adjoint under a Hermitian Form</em>, §<em>The Multiplications</em>, $\Theta_{a} = m_{a} \circ R_{a}$ with $m_{a}(x) = ax$ and $R_{a}(x) = xa^{*}$,</p>
 <p>$$
-\Theta_{a} = m_{a} \circ R_{a} ,
+\boxed{\;\Theta_{a} = m_{a} \circ R_{a}\;} ,
 $$</p>
 <p>and its adjoint for the form is $\Theta_{a}^{\dagger} = \Theta_{a^{*}}$, so the sandwich is self-adjoint as an operator exactly when $a$ is Hermitian, while it is a positive map for every $a$.</p>
 <p><em>Proof.</em> The composition is $x \mapsto a(xa^{*}) = axa^{*}$, which is the sandwich. The adjoint is $R_{a}^{\dagger}m_{a}^{\dagger} = R_{a^{*}}m_{a^{*}}$, which is $x \mapsto a^{*}xa = \Theta_{a^{*}}(x)$, using the adjoint formulas $m_{x}^{\dagger} = m_{x^{*}}$, $R_{b}^{\dagger} = R_{b^{*}}$.</p>
@@ -144,7 +144,7 @@ $$</p>
 <h3 id="unital-and-multiplicative-channels">Unital and Multiplicative Channels</h3>
 <p><strong>Theorem (the classification of the sandwich).</strong> For $a \in A$ on a unital object,</p>
 <p>$$
-\Theta_{a}(1) = a\,a^{*} , \qquad \Theta_{a}(x)\Theta_{a}(y) = a\,x\,(a^{*}a)\,y\,a^{*} ,
+\boxed{\;\Theta_{a}(1) = a\,a^{*} , \qquad \Theta_{a}(x)\Theta_{a}(y) = a\,x\,(a^{*}a)\,y\,a^{*}\;} ,
 $$</p>
 <p>so the sandwich is <strong>unital</strong>, $\Theta_{a}(1) = 1$, exactly when $a a^{*} = 1$; it is <strong>multiplicative</strong>, $\Theta_{a}(xy) = \Theta_{a}(x)\Theta_{a}(y)$, as soon as $a^{*}a = 1$, and in the matrix model the converse holds for $a \neq 0$; and it is an <strong>automorphism</strong> of the algebra exactly when $a$ is unitary, in which case $\Theta_{a} = \alpha_{a}$ is the inner automorphism by $a$.</p>
 <p><em>Proof.</em> The two identities are the definitions. If $a^{*}a = 1$ then $\Theta_{a}(x)\Theta_{a}(y) = a x (a^{*}a) y a^{*} = axya^{*} = \Theta_{a}(xy)$, so the sandwich is multiplicative. Conversely in the matrix model a nonzero multiplicative sandwich is a nonzero endomorphism of $M_{n}(\mathbb{C})$, hence injective because the matrix algebra is simple, and injectivity of $\Theta_{a}$ forces $a$ invertible: if $av = 0$ for some $v \neq 0$, then $\Theta_{a}(vw^{*}) = avw^{*}a^{*} = 0$ for every $w$. Then $a^{*}a = 1$, and an invertible $a$ with $a^{*}a = 1$ is unitary. Multiplicativity alone does not force $a^{*}a = 1$ in a general object, the zero sandwich $\Theta_{0} = 0$ being multiplicative with $0^{*}0 = 0$; the two conditions are often conflated, and the reader is warned. The unitary case is the conjunction of $aa^{*} = 1$ and $a^{*}a = 1$, and then $\Theta_{a}(x) = axa^{*} = axa^{-1}$ is the inner automorphism of <em>The Adjoint under a Hermitian Form</em>, §<em>The Inner Automorphisms</em>; conversely an automorphism is a bijective sandwich, so $a$ is invertible with $a^{*}a = 1$, that is $a$ is unitary.</p>

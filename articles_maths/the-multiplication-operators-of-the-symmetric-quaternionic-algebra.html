@@ -112,8 +112,10 @@ kernel of the linear form $\langle\tilde Q_5,\cdot\rangle_{\natural}$, whose ran
 statement is $\langle\tilde Q_5,\tilde Q_5\rangle_{\natural}=\langle\tilde Q_5\rangle_{\natural}=0$.</p>
 <p><strong>Proposition (trace and determinant).</strong> For every $\tilde Q_5$,</p>
 <p>$$
+\boxed{\;
 \operatorname{Tr}\bigl(L^{\star}_{\tilde Q_5}\bigr) = Q_{5t}, \qquad
-\det\bigl(L^{\star}_{\tilde Q_5}\bigr) = 0 .
+\det\bigl(L^{\star}_{\tilde Q_5}\bigr) = 0
+\;}.
 $$</p>
 <p><em>Proof.</em> The trace is the sum of the diagonal entries of the matrix above, and only the entry $(t,t)=Q_{5t}$ is
 nonzero. The determinant vanishes because the rank is at most $1$ on a space of dimension $4$; for $\tilde Q_5=0$
@@ -125,9 +127,7 @@ vector part of the multiplier is invisible to the trace, and the operator family
 kernel and not by the trace.</p>
 <h2 id="composition-and-the-algebra-of-operators">Composition and the Algebra of Operators</h2>
 <p><strong>Proposition (the composition law).</strong> The multiplication operators compose by</p>
-<p>$$
-L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1} = Q_{5t}\,L^{\star}_{\tilde Q_1},
-$$</p>
+<p>$$ \boxed{\; L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1} = Q_{5t}\,L^{\star}_{\tilde Q_1} \;}, $$</p>
 <p>and the family $\{L^{\star}_{\tilde Q_5}:\tilde Q_5\in\mathbb{B}\}$ is a complex vector space of dimension $4$, the
 <strong>monoid of multiplications</strong> of the block.</p>
 <p><em>Proof.</em> $L^{\star}_{\tilde Q_5}(L^{\star}_{\tilde Q_1}\tilde Q_4)=L^{\star}_{\tilde Q_5}\bigl(\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t\bigr)=\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}\langle\tilde Q_5,e_t\rangle_{\natural}e_t=Q_{5t}\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t=Q_{5t}L^{\star}_{\tilde Q_1}\tilde Q_4$.</p>
@@ -157,9 +157,11 @@ $$</p>
 <p>which exists and is unique because $\langle\cdot\rangle_{\natural}$ is non-degenerate.</p>
 <p><strong>Proposition (the adjoint of a multiplication).</strong> For every $\tilde Q_5$,</p>
 <p>$$
+\boxed{\;
 \bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}\tilde Q_3 = \sum_\mu Q_{5\mu} Q_{3t}\,e_\mu ,
 \qquad\text{and}\qquad
-L^{\star}_{\tilde Q_5}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde Q_5\in\mathbb{C}e_t .
+L^{\star}_{\tilde Q_5}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde Q_5\in\mathbb{C}e_t
+\;}.
 $$</p>
 <p><em>Proof.</em> $\langle L^{\star}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\rangle_{\natural}=N\bigl(\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu Q_{5\mu} Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu Q_{5\mu} Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} Q_{5\mu} Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
 self-adjointness, compare the adjoint with $L^{\star}_{\tilde Q_5}\tilde Q_3=\langle\tilde Q_5,\tilde Q_3\rangle_{\natural}e_t$: the identity

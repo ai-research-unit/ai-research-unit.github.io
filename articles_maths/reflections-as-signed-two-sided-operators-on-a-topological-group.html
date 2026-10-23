@@ -94,19 +94,19 @@ $$</p>
 <p>A reflection is thus a continuous involutive automorphism of $G$, that is a topological involution in the sense of <em>Involutive Topological Groups</em>, and it is a homeomorphism of order two.</p>
 <p><strong>Theorem (the fixed subgroup is closed).</strong> Let $\rho_a$ be a reflection. Its fixed set</p>
 <p>$$
-\operatorname{Fix}(a) = \{x \in G : \alpha(x) = a^{-1}xa\}
+\boxed{\;\operatorname{Fix}(a) = \{x \in G : \alpha(x) = a^{-1}xa\}\;}
 $$</p>
 <p>is closed in $G$, it is a subgroup of $G$ containing $e$, it reduces to the centraliser $C_G(a)$ when $\alpha = \mathrm{id}$, and it is a left coset of the fixed subgroup $G^\alpha$ whenever it is nonempty. If $G$ is compact then $\operatorname{Fix}(a)$ is compact, and if $G$ is connected and $\operatorname{Fix}(a)$ is open then $\operatorname{Fix}(a) = G$.</p>
 <p><strong>Proof.</strong> $\operatorname{Fix}(a)$ is the equalizer of the continuous maps $\alpha$ and $c_{a^{-1}}$, hence closed because $G$ is Hausdorff. It is a subgroup and a coset of $G^\alpha$ by <em>Reflections as Signed Two-Sided Operators on a Group</em>. A closed subset of a compact space is compact, and an open subgroup of a connected group is the whole group by the connectedness theorem of <em>Topological Groups</em>.</p>
 <p><strong>Theorem (the carrying elements form a closed set).</strong> Put</p>
 <p>$$
-C = \{a \in G : a\,\alpha(a) \in Z(G)\},
+\boxed{\;C = \{a \in G : a\,\alpha(a) \in Z(G)\}\;},
 $$</p>
 <p>the set of elements that carry a reflection. Then $C$ is closed in $G$, it is symmetric under $a \mapsto a^{-1}$ and under $a \mapsto \alpha(a)$, and it contains $I(\sigma) = G^\alpha$.</p>
 <p><strong>Proof.</strong> The map $\varphi : a \mapsto a\,\alpha(a)$ is continuous, being a product of continuous maps, and $Z(G)$ is closed in a Hausdorff group, being the equalizer of the continuous maps $(x,y)\mapsto xg$ and $(x,y)\mapsto gx$ or equivalently the intersection of the centralisers $C_G(g)$; hence $C = \varphi^{-1}(Z(G))$ is closed. If $a\alpha(a)$ is central then so is its inverse $a^{-1}\alpha(a^{-1}) = (a\alpha(a))^{-1}$, and so is $\alpha(a)\alpha(\alpha(a)) = \alpha(a\alpha(a))$, which gives the two symmetries. For $a \in G^\alpha$ the dictionary gives $\alpha(a) = a^{-1}$, so $a\alpha(a) = e \in Z(G)$.</p>
 <p><strong>Theorem (the carrying elements and the cosets).</strong> Two elements $a, a'$ carry the same reflection if and only if $a' \in aZ(G)$, so the reflections are parametrised by the cosets $aZ(G)$ of the elements $a \in C$, and the map</p>
 <p>$$
-G \longrightarrow \operatorname{Homeo}(G), \qquad a \mapsto \rho_a ,
+\boxed{\;G \longrightarrow \operatorname{Homeo}(G), \qquad a \mapsto \rho_a\;} ,
 $$</p>
 <p>factors through $G/Z(G)$ as a continuous injection on the carriers.</p>
 <p><strong>Proof.</strong> The coset description is <em>Reflections as Signed Two-Sided Operators on a Group</em>: $\rho_a = \rho_{a'}$ if and only if $a'^{-1}a$ commutes with every element of the image of $\alpha$, hence lies in $Z(G)$. Continuity of $a \mapsto \rho_a$ is the continuity of the inner automorphism map composed with the fixed $\alpha$; the factorisation through $G/Z(G)$ is exactly the coset statement, and injectivity on $C/Z(G)$ follows.</p>

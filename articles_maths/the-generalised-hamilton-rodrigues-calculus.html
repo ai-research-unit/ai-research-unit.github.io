@@ -103,9 +103,7 @@ $$</p>
 <p><strong>Remark (the complex case that is generalised).</strong> In the complex case the same construction reads $\partial/\partial A = \frac12(\partial/\partial a-i\partial/\partial a')$ and $\partial/\partial\bar{A} = \frac12(\partial/\partial a+i\partial/\partial a')$, the factor being $\frac12$ in a two-dimensional algebra and the sign being the sign of $\bar i = -i$; a holomorphic function is one with $\partial f/\partial \bar{A} = 0$, and the operator exists for every differentiable $f$ but agrees with the holomorphic derivative only on that class. The quaternion calculus keeps the factor $\frac14$ and the signs of the three imaginary units, so it is the same construction on the four-dimensional algebra. What it does not keep is the vanishing of $\partial\tilde q/\partial\bar{\tilde{q}}$: the four partials of $\tilde q$ are the four units $e_t,\vec e_x,\vec e_y,\vec e_z$, which are linearly independent, so no non-zero constant-coefficient operator in the partials annihilates $\tilde q$. No function of $\tilde q$ alone is therefore annihilated by the conjugate derivative, and the analogy with holomorphy is not what the calculus delivers.</p>
 <h3 id="the-fueter-interpretation">The Fueter Interpretation</h3>
 <p><strong>Theorem.</strong> With $D = \sum_\mu e_\mu\,\partial/\partial q_\mu$ the Fueter operator and $\bar D = \sum_\mu e_\mu^{\natural}\,\partial/\partial q_\mu$ its conjugate,</p>
-<p>$$
-\frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14 Df, \qquad \frac{\partial f}{\partial\tilde q} = \frac14\bar Df.
-$$</p>
+<p>$$ \boxed{\; \frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14 Df, \qquad \frac{\partial f}{\partial\tilde q} = \frac14\bar Df \;} .$$</p>
 <p>Consequently $f$ is left-regular if and only if $\partial f/\partial\bar{\tilde{q}} = 0$, and $f$ is right-regular if and only if the left derivative defined below vanishes, $\frac14\sum_\mu\partial/\partial q_\mu f\,e_\mu = 0$.</p>
 <p><em>Proof.</em> The two operators are the two definitions, together with $D = \sum_\mu e_\mu\,\partial/\partial q_\mu$ and $\bar D = \sum_\mu e_\mu^{\natural}\,\partial/\partial q_\mu$ of <em>Fueter Theory for Quaternions</em>. The two statements about regularity restate the definitions.</p>
 <p><strong>Remark.</strong> The calculus is the differential calculus of the Fueter operator applied to functions that are not regular: the conjugate derivative measures the failure of left regularity, and its vanishing is exactly the regularity that <em>Quaternion Regular Functions</em> develops. Its value is that it exists outside that class, where the Cauchy integral formula and the module structure do not apply.</p>
@@ -197,9 +195,7 @@ $$</p>
 <p><em>Proof.</em> $\partial/\partial q_\mu\,(f\tilde q_1) = (\partial/\partial q_\mu f)\tilde q_1$ and $\tilde q_1$ may be taken out of the sum on the right of the units.</p>
 <h3 id="the-product-rule">The Product Rule</h3>
 <p><strong>Theorem.</strong> Let $f,p$ be differentiable with $f(\tilde q)\neq0$. Then</p>
-<p>$$
-\frac{\partial(fp)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac{\partial f}{\partial\bar{\tilde{q}}}(\tilde q)\,p(\tilde q)+f(\tilde q)\,\frac{\partial p_\star}{\partial\tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{f(\tilde q)^{-1}}\tilde q},
-$$</p>
+<p>$$ \boxed{\; \frac{\partial(fp)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac{\partial f}{\partial\bar{\tilde{q}}}(\tilde q)\,p(\tilde q)+f(\tilde q)\,\frac{\partial p_\star}{\partial\tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{f(\tilde q)^{-1}}\tilde q} \;} ,$$</p>
 <p>where $p_\star(\tilde q_\star) = p(\tilde q)$.</p>
 <p><em>Proof.</em> The partial derivatives of a product are $\partial/\partial q_\mu\,(fp) = (\partial/\partial q_\mu f)p+f\,\partial/\partial q_\mu p$, so</p>
 <p>$$
@@ -210,9 +206,7 @@ $$</p>
 <p><strong>Example (consistency with the squared norm).</strong> For the product $\tilde q\tilde{q}^{\natural}$ the second term of the product rule is the derivative of the conjugate in the variable moved by $\iota_{\tilde{q}^{\natural}}$, and the value of the sum is $\frac12\tilde q$, which is the direct value of the third row of the table. The consistency is a check on the change of variable: the naive rule would give $-\frac12\tilde{q}^{\natural}+\tilde q$, which agrees with the true value only where $\tilde q$ is real.</p>
 <h3 id="the-chain-rule">The Chain Rule</h3>
 <p><strong>Theorem.</strong> Let $p$ be differentiable and let $g$ be differentiable on a neighbourhood of $p(\Omega)$, with $p_\nu$ the $e_\nu$-component of $p$. Then</p>
-<p>$$
-\frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac14\sum_{\mu,\nu\in\{t,x,y,z\}}e_\mu\,(\partial/\partial q_\nu g)\bigl(p(\tilde q)\bigr)\,\partial/\partial q_\mu p_\nu(\tilde q).
-$$</p>
+<p>$$ \boxed{\; \frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac14\sum_{\mu,\nu\in\{t,x,y,z\}}e_\mu\,(\partial/\partial q_\nu g)\bigl(p(\tilde q)\bigr)\,\partial/\partial q_\mu p_\nu(\tilde q) \;} .$$</p>
 <p><em>Proof.</em> The chain rule of <em>Differential Calculus on Normed Spaces</em> gives $\partial/\partial q_\mu\,(g\circ p)(\tilde q) = \sum_\nu(\partial/\partial q_\nu g)(p(\tilde q))\,\partial/\partial q_\mu p_\nu(\tilde q)$, the derivative of $g$ at $p(\tilde q)$ being applied to the vector $\partial/\partial q_\mu p$, whose coordinates in the basis are $\partial/\partial q_\mu p_\nu$. Multiplying by $e_\mu$ and summing over $\mu$ with the factor $\frac14$ is the definition.</p>
 <p><strong>Corollary (a real-valued inner function).</strong> If $p$ is real valued and $g : \mathbb{R}\to\mathbb{R}$ is differentiable, then $g\circ p$ is real valued and</p>
 <p>$$

@@ -109,7 +109,7 @@ $$</p>
 <h3 id="the-homomorphism">The Homomorphism</h3>
 <p><strong>Theorem.</strong> For all $a, b \in A$,</p>
 <p>$$
-L(a)L(b) = L(ab), \qquad L(1) = \mathrm{id}_A .
+\boxed{\;L(a)L(b) = L(ab), \qquad L(1) = \mathrm{id}_A\;} .
 $$</p>
 <p>Hence $L : A \to \operatorname{End}_k(A)$ is a homomorphism of unital $k$-algebras, its image $L(A)$ is a subalgebra of $\operatorname{End}_k(A)$, and $L$ is an isomorphism of algebras $A \to L(A)$.</p>
 <p><em>Proof.</em> $L(a)L(b)(x) = L(a)(bx) = a(bx) = (ab)x = L(ab)(x)$, the middle equality being associativity; $L(1)(x) = x$. A unital algebra homomorphism is injective exactly when its kernel, an ideal, is zero, and the kernel is zero by the injectivity proposition; hence $A \cong L(A)$.</p>
@@ -146,7 +146,7 @@ $$</p>
 <h3 id="the-intersection">The Intersection</h3>
 <p><strong>Proposition.</strong> The two spaces of one-sided multiplications meet in the multiplications by the central elements:</p>
 <p>$$
-L(A) \cap R(A) = L(Z(A)) = R(Z(A)),
+\boxed{\;L(A) \cap R(A) = L(Z(A)) = R(Z(A))\;},
 $$</p>
 <p>where $Z(A)$ is the centre of $A$. In particular the intersection contains $k \cdot 1$ and is never zero for a unital algebra, it has dimension $\dim_k Z(A)$, and it has dimension one exactly when the algebra is central, $Z(A) = k \cdot 1$.</p>
 <p><em>Proof.</em> Suppose $L(a) = R(b)$. Evaluating at $1$ gives $a = L(a)(1) = R(b)(1) = b$, and then $L(a) = R(a)$ says $ax = xa$ for all $x$, that is $a \in Z(A)$. Conversely a central $a$ satisfies $L(a) = R(a)$ and the element lies in both spaces. The dimension is that of $Z(A)$, because $L$ restricts to an isomorphism $Z(A) \to L(Z(A))$.</p>
@@ -161,7 +161,7 @@ $$</p>
 <h3 id="the-identity">The Identity</h3>
 <p><strong>Theorem.</strong> For all $a, b \in A$,</p>
 <p>$$
-L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad \text{where} \qquad A_{a,b}(x) = (a, x, b) = (ax)b - a(xb).
+\boxed{\;L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad \text{where} \qquad A_{a,b}(x) = (a, x, b) = (ax)b - a(xb)\;}.
 $$</p>
 <p>Hence the left and the right multiplications commute for every pair if and only if the algebra is associative; the associator is exactly the obstruction to their commutation.</p>
 <p><em>Proof.</em> Evaluate on $x$: $L(a)R(b)(x) - R(b)L(a)(x) = a(xb) - (ax)b = -((ax)b - a(xb)) = -A_{a,b}(x)$. The operator vanishes for all $a$, $b$ and $x$ exactly when every associator vanishes, which is associativity.</p>

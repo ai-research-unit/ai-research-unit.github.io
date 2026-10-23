@@ -107,7 +107,9 @@ $$</p>
 <p><strong>Definition.</strong> An <strong>imaginary unit</strong> is an element $I$ with $I^2 = -1$, and a <strong>slice</strong> is a real plane $\mathbb{C}_I = \mathbb{R} + I\mathbb{R}$ spanned by $1$ and an imaginary unit.</p>
 <p><strong>Theorem.</strong> The imaginary units of $\mathbb{H}_{\mathrm{s}}$ are the elements of the vector subspace</p>
 <p>$$
-\{ I \in V : I^2 = -1 \} = \{ I \in V : \langle I\rangle_{\natural} = 1 \} = \{ q_x \vec e_x + q_y \vec e_y + q_z \vec e_z : q_x^2 - q_y^2 - q_z^2 = 1 \},
+\boxed{\;
+\{ I \in V : I^2 = -1 \} = \{ I \in V : \langle I\rangle_{\natural} = 1 \} = \{ q_x \vec e_x + q_y \vec e_y + q_z \vec e_z : q_x^2 - q_y^2 - q_z^2 = 1 \}
+\;},
 $$</p>
 <p>a <strong>two-sheeted hyperboloid</strong> of dimension $2$ in $V$, with the two sheets distinguished by the sign of the coefficient $q_x$. Each imaginary unit spans a slice $\mathbb{C}_I \cong \mathbb{C}$, and two slices $\mathbb{C}_I$, $\mathbb{C}_J$ coincide when $I = \pm J$ and otherwise meet only in $\mathbb{R}$.</p>
 <p><strong>Proof.</strong> $I \in V$ satisfies $I^2 = -\langle I\rangle_{\natural}$ (the vector part squares to minus its split-quaternion norm), so $I^2 = -1$ iff $\langle I\rangle_{\natural} = 1$, which is the displayed hyperboloid, two-sheeted because $q_x^2 = 1+q_y^2+q_z^2\geq1$; the slice intersection statement is linear algebra.</p>
@@ -115,7 +117,9 @@ $$</p>
 <h3 id="holomorphic-functions-on-a-slice-are-regular">Holomorphic Functions on a Slice Are Regular</h3>
 <p><strong>Theorem.</strong> Fix an imaginary unit $I$, with slice coordinate $A = q_t + I\rho$ on $\mathbb{C}_I$, and let $F$ depend only on $q_t$ and $\rho$ (not on the two directions of $V$ orthogonal to $I$). Then</p>
 <p>$$
-\nabla F = (\partial/\partial q_t + I\,\partial/\partial\rho)F = 2\,\partial/\partial\bar A\,F,
+\boxed{\;
+\nabla F = (\partial/\partial q_t + I\,\partial/\partial\rho)F = 2\,\partial/\partial\bar A\,F
+\;},
 $$</p>
 <p>so $F$ is regular if and only if $F$ is holomorphic in $A$ in the classical sense. Hence every classical holomorphic function of $A = q_t+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.</p>
 <p><strong>Proof.</strong> Restricted to functions of $q_t,\rho$, the operator is $\nabla = e_t\,\partial/\partial q_t + I\,\partial/\partial\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar A = q_t - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial/\partial\bar A = \tfrac12(\partial/\partial q_t + I\,\partial/\partial\rho)$.</p>
@@ -146,7 +150,9 @@ $$</p>
 <p><strong>Proposition.</strong> The coordinate function $\tilde q$ is slice-regular but not Fueter-regular: $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_t^2+\vec e_x^2+\vec e_y^2+\vec e_z^2 = 1-1+1+1 = 2e_t \neq 0$. In general the slice-regular class is strictly larger than the Fueter-regular class, and the Fueter construction is the operation that converts the first into the second.</p>
 <p><strong>Theorem (Fischer decomposition).</strong> Let $\mathcal{P}_k$ be the $\mathbb{H}_{\mathrm{s}}$-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \nabla P = 0\}$ the <strong>monogenic homogeneous polynomials</strong>. Then</p>
 <p>$$
-\mathcal{P}_k = \bigoplus_{j=0}^{k} \tilde q^j \mathcal{M}_{k-j},
+\boxed{\;
+\mathcal{P}_k = \bigoplus_{j=0}^{k} \tilde q^j \mathcal{M}_{k-j}
+\;},
 $$</p>
 <p>so every Fueter-regular function on a ball has a normally convergent expansion in monogenic homogeneous polynomials, the analogue of the Taylor series of complex analysis.</p>
 <p><strong>Proof.</strong> This is the standard Fischer decomposition for a real Clifford algebra with a non-degenerate quadratic form; it depends only on the non-degeneracy of $\langle\cdot\rangle_{\natural}$ and the factorization $\Box = \nabla\bar\nabla$, both of which hold with the split signature.</p>

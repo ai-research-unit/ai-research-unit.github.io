@@ -84,7 +84,7 @@
 <h3 id="the-two-elementary-inequalities">The Two Elementary Inequalities</h3>
 <p><strong>Proposition (union bound).</strong> For any finite or countable family of events $\{A_i\}$,</p>
 <p>$$
-\mathbb{P}\!\left(\bigcup_i A_i\right) \leq \sum_i\mathbb{P}(A_i).
+\boxed{\;\mathbb{P}\!\left(\bigcup_i A_i\right) \leq \sum_i\mathbb{P}(A_i)\;}.
 $$</p>
 <p><strong>Proposition (first moment method).</strong> Let $X \geq 0$ be a random variable taking values in a countable set. If $\mathbb{E}[X] < 1$ then $\mathbb{P}(X = 0) > 0$; more generally, if $\mathbb{E}[X] \leq k$ then $\mathbb{P}(X \leq k) > 0$. When $X$ counts the defects of a random object, the object is defect-free with positive probability.</p>
 <p><em>Proof.</em> Markov's inequality gives $\mathbb{P}(X \geq 1) \leq \mathbb{E}[X] < 1$, so $\mathbb{P}(X = 0) > 0$. For the second statement, $\mathbb{P}(X \geq k+1)\leq \mathbb{E}[X]/(k+1) < 1$.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h3 id="the-variance-criterion">The Variance Criterion</h3>
 <p><strong>Theorem (second moment method).</strong> Let $X \geq 0$ be a random variable with finite second moment and $\mathbb{E}[X] > 0$. Then</p>
 <p>$$
-\mathbb{P}(X = 0) \leq \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}, \qquad \text{and hence} \qquad \mathbb{P}(X > 0) \geq 1 - \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}.
+\boxed{\;\mathbb{P}(X = 0) \leq \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}, \qquad \text{and hence} \qquad \mathbb{P}(X > 0) \geq 1 - \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}\;}.
 $$</p>
 <p><em>Proof.</em> By the Cauchy–Schwarz inequality, $\mathbb{E}[X]^2 = \mathbb{E}[X\mathbf{1}_{\{X>0\}}]^2 \leq \mathbb{E}[X^2]\,\mathbb{P}(X > 0)$, whence $\mathbb{P}(X>0) \geq \mathbb{E}[X]^2/\mathbb{E}[X^2]$; subtracting from $1$ and using $\mathbb{E}[X^2] = \operatorname{Var}(X) + \mathbb{E}[X]^2$ gives the stated form.</p>
 <p>The second moment criterion converts a variance computation into a lower bound on the probability that a random object has at least one of the desired configurations, and it is the standard tool of the threshold phenomena: when $\operatorname{Var}(X) = o(\mathbb{E}[X]^2)$ the count $X$ is concentrated near its mean, so almost surely $X>0$ whenever $\mathbb{E}[X]\to\infty$.</p>
@@ -163,7 +163,7 @@ $$</p>
 <p>The method also requires quantitative bounds on the deviation of a random variable from its mean, and the standard inequalities are the following; the martingale case is the Azuma–Hoeffding inequality of <em>Martingales</em>.</p>
 <p><strong>Theorem (Chernoff bounds).</strong> Let $X_1,\dots,X_n$ be independent Bernoulli$(p)$ variables and $S = \sum_iX_i$, $\mu = np$. Then for $0 < \delta < 1$,</p>
 <p>$$
-\mathbb{P}(S \geq (1+\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{3}\right), \qquad \mathbb{P}(S \leq (1-\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{2}\right).
+\boxed{\;\mathbb{P}(S \geq (1+\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{3}\right), \qquad \mathbb{P}(S \leq (1-\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{2}\right)\;}.
 $$</p>
 <p><strong>Theorem (Hoeffding).</strong> Let $X_1,\dots,X_n$ be independent with $a_i \leq X_i \leq b_i$ and let $S = \sum_iX_i$. Then</p>
 <p>$$

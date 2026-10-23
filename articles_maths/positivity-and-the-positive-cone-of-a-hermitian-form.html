@@ -115,7 +115,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>positive set</strong> of the form is $P(h) = \{x \in A : h(x,x) \geq 0\}$.</p>
 <p><strong>Proposition.</strong> The positive set contains $0$, it is stable under the scalars of the fixed ring, and</p>
 <p>$$
-P(h) \cap (-P(h)) = N(h) .
+\boxed{\;P(h) \cap (-P(h)) = N(h)\;} .
 $$</p>
 <p>Consequently $h$ is positive semi-definite exactly when $P(h) = A$, and the positive set is proper, $P(h) \cap (-P(h)) = \{0\}$, exactly when the form is anisotropic, that is when it has no nonzero isotropic vector; definiteness is the stronger condition that also fixes the sign.</p>
 <p><em>Proof.</em> The element $0$ is positive because $h(0,0) = 0$. Stability under $\lambda \in R^{\varsigma}$ is the scaling $h(\lambda x,\lambda x) = \lambda^{2}h(x,x) \geq 0$ of the proposition above. For the intersection, $x \in P(h) \cap (-P(h))$ says $h(x,x) \geq 0$ and $h(-x,-x) = h(x,x) \leq 0$, that is $h(x,x) = 0$; this is exactly $x \in N(h)$. The identification $P(h) = A$ is the definition of the positive semi-definite case, and the properness statement is the same identification read on the null set.</p>
@@ -125,7 +125,7 @@ $$</p>
 <h3 id="the-null-set-and-the-radical">The Null Set and the Radical</h3>
 <p><strong>Theorem.</strong> Let $h$ be positive semi-definite. Then</p>
 <p>$$
-N(h) = A^{\perp} ,
+\boxed{\;N(h) = A^{\perp}\;} ,
 $$</p>
 <p>the null set is the radical, it is a subspace of $A$, and $h$ is positive definite exactly when its radical vanishes.</p>
 <p><em>Proof.</em> The inclusion $A^{\perp} \subseteq N(h)$ is the remark above. For the converse let $h(x,x) = 0$ and let $y$ be arbitrary. The Cauchy–Schwarz inequality of <em>The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps</em>, in the algebraic form $\varsigma(h(x,y))\,h(x,y) \leq h(x,x)\,h(y,y)$ with its equality case, gives $\varsigma(h(x,y))h(x,y) \leq 0$ on the right, while the left side is a product of a fixed scalar with its conjugate and is $\geq 0$; the two together put the left side at zero, and the equality case of the cited inequality then gives $h(x,y) = 0$. So $h(x,y) = 0$ for every $y$ and $x \in A^{\perp}$. For the last clause, $h$ is positive definite exactly when $N(h) = \{0\}$, which by the equality is the vanishing of the radical.</p>
@@ -141,7 +141,7 @@ $$</p>
 <h3 id="the-diagonal-of-the-reduction">The Diagonal of the Reduction</h3>
 <p><strong>Theorem.</strong> Let $\varphi : A \to R$ be $R$-linear and let $h_{\varphi}(x,y) = \varphi(y^{*}x)$ be the corresponding compatible form. Then</p>
 <p>$$
-h_{\varphi}(x,x) = \varphi(x^{*}x) = \varphi(\Psi(x,x)) ,
+\boxed{\;h_{\varphi}(x,x) = \varphi(x^{*}x) = \varphi(\Psi(x,x))\;} ,
 $$</p>
 <p>with $\Psi$ the $A$-valued form of <em>Hermitian Forms on a Sesqualgebra</em>, and consequently $h_{\varphi}$ is positive semi-definite if and only if $\varphi$ is nonnegative on the algebraic cone $C(A)$ of the Hermitian squares, and positive definite if and only if $\varphi$ is strictly positive on the nonzero elements of $C(A)$.</p>
 <p><em>Proof.</em> The diagonal is $h_{\varphi}(x,x) = \varphi(x^{*}x)$ by the definition, and $x^{*}x = \Psi(x,x)$ is the diagonal of the $A$-valued form. A finite sum $\sum_{i}x_{i}^{*}x_{i}$ of Hermitian squares has $\varphi$-value $\sum_{i}\varphi(x_{i}^{*}x_{i})$ by the additivity of $\varphi$, so $\varphi \geq 0$ on all the squares is equivalent to $\varphi \geq 0$ on the cone they generate, which is the positive semi-definite case read at the two equal arguments. For the definite case, $h_{\varphi}(x,x) > 0$ for every $x \neq 0$ says $\varphi(x^{*}x) > 0$ for every $x \neq 0$; a nonzero element $c = \sum_i x_i^{*}x_i$ of the cone has at least one $x_i \neq 0$, so $\varphi(c) \geq \varphi(x_i^{*}x_i) > 0$, and conversely the strict positivity on the cone restricts to the nonzero squares.</p>

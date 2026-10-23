@@ -81,7 +81,7 @@ $$</p>
 <p><strong>Definition.</strong> For $f, g \in L^1(G)$ the <strong>convolution</strong> $f*g \in L^1(G)$ is defined by the integral above; the operation is the product of the group algebra $\mathcal{A} = L^1(G)$.</p>
 <p><strong>Proposition (the algebra laws).</strong> Convolution is bilinear, associative and submultiplicative,</p>
 <p>$$
-(f*g)*h = f*(g*h), \qquad \|f*g\|_1 \leq \|f\|_1\,\|g\|_1 ,
+\boxed{\;(f*g)*h = f*(g*h), \qquad \|f*g\|_1 \leq \|f\|_1\,\|g\|_1\;} ,
 $$</p>
 <p>and it is commutative exactly when $G$ is abelian. The algebra $\mathcal{A}$ is unital exactly when $G$ is discrete, the unit being the point mass $\delta_e$; in general $\mathcal{A}$ has no identity.</p>
 <p><strong>Proof.</strong> Associativity is Fubini together with the associativity of the group product and the left invariance of $dx$; submultiplicativity is Fubini and $\|f\|_1\|g\|_1$; commutativity is the identity $f*g = g*f$ read through the substitution $x \mapsto x^{-1}$ and fails as soon as two elements do not commute; a unit $u$ would satisfy $u*f = f$ for all $f \in L^1(G)$, forcing $u$ to be the point mass at $e$, which is integrable exactly when $G$ is discrete. The full development is <em>The Convolution Algebra $L^1(G)$</em>; the article reads the same product as an operation between functions.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proof.</strong> The bound is submultiplicativity, $\|L_f h\|_1 = \|f*h\|_1 \leq \|f\|_1\|h\|_1$. The first two composition laws are associativity read on the two sides; the third is the associativity $(f*h)*g = f*(h*g)$, which says $L_fR_g = R_gL_f$. An anti-homomorphism reverses the order of the product, which is exactly $R_fR_g = R_{g*f}$.</p>
 <p><strong>Theorem (the norm is attained).</strong> The left regular representation is isometric,</p>
 <p>$$
-\|L_f\| = \|f\|_1 , \qquad \|R_f\| = \|f\|_1 ,
+\boxed{\;\|L_f\| = \|f\|_1 , \qquad \|R_f\| = \|f\|_1\;} ,
 $$</p>
 <p>so $\mathcal{C}_L = \{L_f : f \in L^1(G)\}$ and $\mathcal{C}_R = \{R_f : f \in L^1(G)\}$ are closed subalgebras of $B(L^1(G))$ isometrically isomorphic to $L^1(G)$ and to its opposite algebra.</p>
 <p><strong>Proof.</strong> The upper bound is the theorem above. For the lower bound let $\{u_i\}$ be a contractive approximate identity as in the next section, so that $\|u_i\|_1 = 1$ and $f*u_i \to f$ in $L^1(G)$. Then $\|f\|_1 = \lim_i \|f*u_i\|_1 = \lim_i\|L_fu_i\|_1 \leq \|L_f\|$. The same argument with $u_i*f$ gives the statement for $R_f$. The map $f\mapsto L_f$ is an injective homomorphism (for $L_f = 0$ gives $f*u_i\to0$ and $f = 0$) that is isometric, hence isometric onto its image, which is complete hence closed.</p>
@@ -140,7 +140,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the convolution theorem).</strong> The two transforms are algebra homomorphisms: for $f, g \in L^1(G)$,</p>
 <p>$$
-\widehat{f*g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi),
+\boxed{\;\widehat{f*g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi)\;},
 $$</p>
 <p>the first for abelian $G$, the second in general; both are continuous, with $|(\mathcal F f)(\chi)| \leq \|f\|_1$ in the abelian case and $\|(\mathcal F f)(\pi)\| \leq \|f\|_1$ in general.</p>
 <p><strong>Proof.</strong> The abelian identity is Fubini and the multiplicativity of $\chi$: $\widehat{f*g}(\chi) = \iint f(y)g(y^{-1}x)\chi(x)\,dy\,dx = \int f(y)\chi(y)\,dy\int g(z)\chi(z)\,dz$. The general identity is the same computation with the operator product in place of the scalar product, the integrals converging in the operator norm. Continuity is the triangle inequality for the vector-valued integral.</p>

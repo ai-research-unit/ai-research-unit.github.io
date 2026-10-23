@@ -96,11 +96,11 @@ $$</p>
 <h2 id="the-central-parameter-and-the-eigenvalue-reduction">The Central Parameter and the Eigenvalue Reduction</h2>
 <p><strong>Theorem (the central-parameter identification).</strong> Let $\tilde Q_3=Ce_t$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\mathsf{M}_2(\tilde Q_1)$ with spectrum $\{\lambda_1,\lambda_2\}$,</p>
 <p>$$
-\tilde Q_1\in\mathcal{J}_{\tilde Q_3}\iff \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap\mathcal{J}_C\neq\emptyset ,
+\boxed{\;\tilde Q_1\in\mathcal{J}_{\tilde Q_3}\iff \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap\mathcal{J}_C\neq\emptyset\;},
 $$</p>
 <p>and</p>
 <p>$$
-\mathcal{J}_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}=\{\tilde Q_1 : \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\subset K_C \text{ and } \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap J_C\neq\emptyset\}.
+\boxed{\;\mathcal{J}_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}=\{\tilde Q_1 : \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\subset K_C \text{ and } \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap J_C\neq\emptyset\}\;}.
 $$</p>
 <p>So for a central parameter the dynamical Julia set, the boundary of the filled Julia set and the set of the matrices with an eigenvalue on the complex Julia set are one and the same set.</p>
 <p><strong>Proof.</strong> For a central parameter the orbit is the polynomial in one element and the spectrum iterates by the complex map, so the stability of the biquaternion orbit at a diagonalisable point is the stability of the two eigenvalue orbits: if an eigenvalue lies on the complex Julia set, an arbitrarily small perturbation of the eigenvalue produces an arbitrarily large change in the iterates and the family is not equicontinuous; if both eigenvalues lie in the complex Fatou set, the orbits are stable and the diagonaliser contributes a bounded, harmless factor, so the family is equicontinuous. The three sets on the right are equal by the eigenvalue reduction and the spectral description of the boundary of <em>The Hausdorff Dimension of the Biquaternion Julia Sets</em>.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h2 id="fixed-points-and-their-multipliers">Fixed Points and Their Multipliers</h2>
 <p><strong>Proposition (the fixed points).</strong> For a central parameter $C$, the fixed points of $F$ are the solutions of $\tilde Q_1^2-\tilde Q_1+Ce_t=0$. They are the scalar solutions $\lambda e_t$ with $\lambda^2-\lambda+C=0$, and the non-scalar solutions $\tilde Q_1=\tfrac12e_t+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$, one for each complex isotropic vector of the quadratic form $\vec Q\cdot\vec Q$ with that value. The multiplier spectrum of a fixed point is</p>
 <p>$$
-\{2\lambda_1,\ 2\lambda_2,\ 2Q_{1t},\ 2Q_{1t}\} ,
+\boxed{\;\{2\lambda_1,\ 2\lambda_2,\ 2Q_{1t},\ 2Q_{1t}\}\;},
 $$</p>
 <p>the eigenvalues of the differential $L_{\tilde Q_1}+R_{\tilde Q_1}$, and the fixed point is attracting exactly when $\rho(\mathsf{M}_2(\tilde Q_1))<1/2$.</p>
 <p><strong>Proof.</strong> Insert $\tilde Q_1^2=2Q_{1t}\tilde Q_1-\langle\tilde Q_1\rangle_{\natural}e_t$ (Cayley–Hamilton) into $\tilde Q_1^2+\tilde Q_3=\tilde Q_1$: $(2Q_{1t}-1)\tilde Q_1+(C-N)e_t=0$. If $\tilde Q_1$ is not central the two terms are independent and give $Q_{1t}=\tfrac12$ and $N=C$, that is $(\vec Q,\vec Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_{1t},\ 2Q_{1t}\}$; the attracting condition is that all four have modulus below one, and since $2Q_{1t}=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\mathsf{M}_2(\tilde Q_1))<1/2$.</p>

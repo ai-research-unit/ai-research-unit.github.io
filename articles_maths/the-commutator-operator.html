@@ -98,7 +98,7 @@ $$</p>
 <p>The two identities say that $A$, equipped with the bracket in place of the product, is a <strong>Lie algebra</strong>. It is written $A^{(-)}$ when the product and the bracket are both in play, and it is called the <strong>commutator algebra</strong> of $A$; this is the construction that passes from the associative theory to the Lie theory of <em>Lie Algebras</em>, and it is the source of the examples of that article.</p>
 <p><strong>Proposition.</strong> For every $a \in A$ the map $x \mapsto [a, x]$ is $k$-linear and satisfies the <strong>Leibniz rule</strong></p>
 <p>$$
-[a, xy] = [a, x]\, y + x\, [a, y] .
+\boxed{\;[a, xy] = [a, x]\, y + x\, [a, y]\;} .
 $$</p>
 <p><em>Proof.</em> Linear in $x$ because the product is; and $a(xy) - (xy)a = (ax - xa)y + x(ay - ya)$ by associativity, the cross terms $axy$ cancelling after the expansion.</p>
 <p>The Leibniz rule says that the map is a <strong>derivation</strong> of $A$. The derivations of an algebra form a Lie algebra under the commutator of operators, and the map $a \mapsto [a, \cdot]$ is the source of the <strong>inner</strong> ones; the general theory of this passage is in <em>Automorphisms and Derivations of Algebras</em>, and the present article uses it in the fourth section.</p>
@@ -126,7 +126,7 @@ $$</p>
 $$</p>
 <p>is $k$-linear, and it satisfies</p>
 <p>$$
-[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]},
+\boxed{\;[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}\;},
 $$</p>
 <p>where the bracket on the left is the commutator of operators in $\operatorname{End}_k(A)$ and that on the right is the bracket of $A$; hence $\mathrm{ad}$ is a homomorphism of Lie algebras from the commutator algebra $A^{(-)}$ into $\operatorname{End}_k(A)$.</p>
 <p><em>Proof.</em> Linearity in $a$ is the bilinearity of the bracket. For the bracket identity, compute on a general $x$:</p>
@@ -153,7 +153,7 @@ $$</p>
 <p>The commutator of two multiplication operators is again a multiplication operator, and the two-sided case produces the associator. The following statements are the operator content of associativity, and they are the reason the present article sits beside <em>The Sandwich Operator on an Algebra</em>.</p>
 <p><strong>Theorem.</strong> For all $a, b \in A$,</p>
 <p>$$
-[L(a), L(b)] = L([a, b]), \qquad [R(a), R(b)] = R([b, a]) = -R([a, b]), \qquad [L(a), R(b)] = -A_{a,b},
+\boxed{\;[L(a), L(b)] = L([a, b]), \qquad [R(a), R(b)] = R([b, a]) = -R([a, b]), \qquad [L(a), R(b)] = -A_{a,b}\;},
 $$</p>
 <p>where $A_{a,b}(x) = (a, x, b)$ is the associator operator of <em>The Sandwich Operator on an Algebra</em>.</p>
 <p><em>Proof.</em> For the first, $L(a)L(b)(x) = a(bx) = (ab)x = L(ab)(x)$ and $L(b)L(a)(x) = L(ba)(x)$, so the difference is $L(ab - ba) = L([a,b])$. For the second, $R(a)R(b)(x) = (xb)a = x(ba) = R(ba)(x)$ and $R(b)R(a)(x) = R(ab)(x)$, so $[R(a),R(b)] = R(ba - ab) = R(-[a,b])$. The third is the theorem of the associator in <em>The Sandwich Operator on an Algebra</em>.</p>

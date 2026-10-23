@@ -100,7 +100,7 @@ $$</p>
 <p><em>Proof.</em> The dagger sandwich of the general theory is $\Theta_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2\tilde Q_1^{*}$ with ${}^{*}$ the anti-involution of the algebra; the biquaternion instance of $\Theta$ is written $\mathrm{H}_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2\tilde Q_1^{*}$ in <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>. The two are the same map.</p>
 <p><strong>Proposition (composition).</strong> For all $\tilde Q_1,\tilde Q_2$,</p>
 <p>$$
-\Theta_{\tilde Q_1\tilde Q_2} = \Theta_{\tilde Q_1}\circ\Theta_{\tilde Q_2}.
+\boxed{\; \Theta_{\tilde Q_1\tilde Q_2} = \Theta_{\tilde Q_1}\circ\Theta_{\tilde Q_2} \;}.
 $$</p>
 <p><em>Proof.</em> $\Theta_{\tilde Q_1}(\Theta_{\tilde Q_2}(\tilde Q_3)) = \tilde Q_1(\tilde Q_2\,\tilde Q_3\,\tilde Q_2^{*})\tilde Q_1^{*} = (\tilde Q_1\tilde Q_2)\,\tilde Q_3\,(\tilde Q_1\tilde Q_2)^{\dagger} = \Theta_{\tilde Q_1\tilde Q_2}(\tilde Q_3)$, since the dagger is an anti-automorphism and $(\tilde Q_1\tilde Q_2)^{\dagger}=\tilde Q_2^{*}\tilde Q_1^{*}$.</p>
 <p><strong>Corollary (the assignment is multiplicative, not additive).</strong> $\tilde Q_1\mapsto\Theta_{\tilde Q_1}$ is a homomorphism of the multiplicative monoid of $\mathbb{B}$ into $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$. It is not additive: for all $\tilde Q_1,\tilde Q_2,\tilde Q_3$,</p>
@@ -124,7 +124,7 @@ $$</p>
 <p>The form is positive definite, hence non-degenerate, so the adjoint exists and is unique for every operator.</p>
 <p><strong>Theorem (the adjoint of a two-sided operator).</strong> For every $\tilde{Q}\in\mathbb{B}$,</p>
 <p>$$
-(\Theta_{\tilde{Q}})^{*} = \Theta_{\tilde{Q}^{*}} .
+\boxed{\; (\Theta_{\tilde{Q}})^{*} = \Theta_{\tilde{Q}^{*}} \;}.
 $$</p>
 <p><em>Proof.</em> Let $\tilde Q_1,\tilde Q_2,\tilde Q_3\in\mathbb{B}$, with $\tilde Q_1$ the parameter, $\tilde Q_2$ the argument and $\tilde Q_3$ the test element. Since the dagger is an anti-involution and an involution,</p>
 <p>$$
@@ -162,7 +162,7 @@ $$</p>
 <p>In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> the dagger is the conjugate transpose, so $U$ is the unitary group $\mathrm{U}(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (<em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>, <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>).</p>
 <p><strong>Theorem (the unitary two-sided operators).</strong> For $\tilde Q_1\in\mathbb{B}$, the operator $\Theta_{\tilde Q_1}$ is unitary, $\langle\Theta_{\tilde Q_1}\tilde Q_3,\Theta_{\tilde Q_1}\tilde Q_2\rangle_{*}=\langle\tilde Q_3,\tilde Q_2\rangle_{*}$ for all $\tilde Q_2,\tilde Q_3$, if and only if $\tilde Q_1^{*}\tilde Q_1$ is a central scalar of modulus one:</p>
 <p>$$
-\Theta_{\tilde Q_1}\ \text{unitary} \iff \tilde Q_1^{*}\tilde Q_1\in \mathrm{U}(1)\,e_t.
+\boxed{\; \Theta_{\tilde Q_1}\ \text{unitary} \iff \tilde Q_1^{*}\tilde Q_1\in \mathrm{U}(1)\,e_t \;}.
 $$</p>
 <p>In particular every $\tilde Q_1\in U$, and every $\tilde Q_1$ of the form $\omega \tilde U$ with $\lvert\omega\rvert=1$ and $\tilde U\in U$, gives a unitary operator.</p>
 <p><em>Proof.</em> By the composition law and the adjoint theorem, $(\Theta_{\tilde Q_1})^{*}\Theta_{\tilde Q_1}=\Theta_{\tilde Q_1^{*}}\Theta_{\tilde Q_1}=\Theta_{\tilde Q_1^{*}\tilde Q_1}$. The operator $\Theta_{\tilde Q_1}$ is unitary if and only if this is the identity, that is $\Theta_{\tilde Q_1^{*}\tilde Q_1}=\Theta_{e_t}$. Since $\tilde Q_1^{*}\tilde Q_1$ is Hermitian, and since $\Theta_{\tilde Q_4}=\Theta_{e_t}$ implies $\tilde Q_4\tilde{Q}_4^{*}=e_t$, this forces $\tilde Q_1^{*}\tilde Q_1\in U$; and an element that is both unitary and central is a central scalar of modulus one, because $\Theta_{\tilde Q_4}=\Theta_{e_t}$ acts as the identity, whence $\tilde Q_4$ is central. The converse is the parameter rule $\Theta_{\omega \tilde Q_1}=\Theta_{\tilde Q_1}$.</p>

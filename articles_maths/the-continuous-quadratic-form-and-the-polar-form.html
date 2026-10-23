@@ -77,7 +77,7 @@
 <h3 id="definition-and-the-polar-form">Definition and the Polar Form</h3>
 <p><strong>Definition.</strong> Let $F$ be a topological field and let $V$ be a topological $F$-module. A <strong>continuous quadratic form</strong> is a map $m : V \to F$ such that $\mathfrak{Q}(\lambda v) = \lambda^{2}q(v)$ for all $\lambda \in F$ and $v \in V$, such that the map $(x,y)\mapsto \mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y)$ is bilinear, and which is continuous for the given topologies. Its <strong>polar form</strong> is the symmetric bilinear form</p>
 <p>$$
-B(x,y) = \tfrac{1}{2}\bigl(\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y)\bigr) ,
+\boxed{\;B(x,y) = \tfrac{1}{2}\bigl(\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y)\bigr)\;} ,
 $$</p>
 <p>the form of <em>Quadratic Forms and Polarisation</em>, §<em>Quadratic Forms</em>, and one has $\mathfrak{Q}(x)=B(x,x)$.</p>
 <p>The three conditions are the algebraic definition of <em>Quadratic Forms and Polarisation</em> with the continuity added, and the coefficient $\tfrac12$ exists because the characteristic is not $2$. The polar form is symmetric, $B(x,y)=B(y,x)$, since the difference is symmetric in $x$ and $y$, and it recovers $m$ on the diagonal. Nothing is assumed about the form beyond this: it need not be non-degenerate, need not be definite, and no positivity is named.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p>These are the norms of <em>Normed and Banach Spaces</em>, read on the forms; the supremum is finite exactly when the form is bounded, and by <em>Bounded Operators on a Topological Vector Space</em> a quadratic form on a normed space is continuous if and only if it is bounded. The norm of a form is a topological datum, and no norm is imposed on the algebra: this article carries no length on the elements beyond the one that $V$ already had.</p>
 <p><strong>Theorem (polarisation is an isometric isomorphism).</strong> Let $V$ be a normed space over $\mathbb{R}$. Recall that $B$ is the polar form of $m$ and $\mathfrak{Q}(x)=B(x,x)$. The map $m\mapsto B$ is a linear isomorphism $\mathfrak{Q}(V)\to\operatorname{Sym}(V)$ and</p>
 <p>$$
-\lVert m\rVert = \lVert B\rVert .
+\boxed{\;\lVert m\rVert = \lVert B\rVert\;} .
 $$</p>
 <p><em>Proof.</em> The passage $m\mapsto B$ is additive and homogeneous: for $m_{1},m_{2}$ one has $B_{m_{1}+m_{2}}=B_{m_{1}}+B_{m_{2}}$ by the polarisation identity applied to $m_{1}+m_{2}$, and $B_{\lambda m}=\lambda B_{m}$ for the same reason. The inverse is $B\mapsto(x\mapsto B(x,x))$, which is additive and homogeneous as well, and the two are mutually inverse because $\mathfrak{Q}(x)=B(x,x)$ and $B$ is recovered from $m$ by the identity. For the norms, $\lvert \mathfrak{Q}(x)\rvert=\lvert B(x,x)\rvert\le\lVert B\rVert\lVert x\rVert^{2}$ gives $\lVert m\rVert\le\lVert B\rVert$. In the other direction use the parallelogram form of the identity,</p>
 <p>$$

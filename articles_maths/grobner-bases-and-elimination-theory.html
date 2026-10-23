@@ -92,7 +92,7 @@
 <h3 id="division-with-remainder">Division with Remainder</h3>
 <p><strong>Theorem (division algorithm).</strong> Fix a monomial order on $R$ and let $F = (f_1,\ldots,f_s)$ be an ordered $s$-tuple of nonzero polynomials. Then every $f \in R$ can be written</p>
 <p>$$
-f = q_1f_1 + \cdots + q_sf_s + r ,
+\boxed{\;f = q_1f_1 + \cdots + q_sf_s + r\;} ,
 $$</p>
 <p>with $q_i, r \in R$ and with $r$ such that no monomial of $r$ is divisible by any of $\operatorname{LM}(f_1),\ldots,\operatorname{LM}(f_s)$. The remainder $r$ is produced by the following finite procedure: while $f \neq 0$, if $\operatorname{LM}(f)$ is divisible by some $\operatorname{LM}(f_i)$ replace $f$ by $f - \frac{\operatorname{LT}(f)}{\operatorname{LT}(f_i)}f_i$, otherwise move $\operatorname{LT}(f)$ into the remainder and delete it from $f$.</p>
 <p><strong>Example.</strong> In $K[x,y]$ with lex $x \succ y$, divide $f = x^2y + xy^2 + y^3$ by $F = (f_1, f_2)$ with $f_1 = xy - 1$ and $f_2 = y^2 - x$. The leading monomials are $xy$ and $y^2$; the leading term of $f$ is $x^2y$, divisible by $xy$, so subtract $x\cdot f_1 = x^2y - x$ and obtain $xy^2 + y^3 + x$; its leading term $xy^2$ is divisible by $xy$, subtract $y\cdot f_1 = xy^2 - y$, and obtain $y^3 + x + y$; the leading term is now $x$ — under lex a monomial involving $x$ exceeds every monomial in $y$ alone — which no leading monomial divides, so $x$ passes to the remainder and the leading term becomes $y^3$, divisible by $y^2$: subtract $y\cdot f_2 = y^3 - xy$, obtaining $xy + y$; the leading term $xy$ is divisible by $xy$, subtract $f_1 = xy - 1$, obtaining $y + 1$, whose leading term $y$ passes to the remainder, as does the final constant; so the remainder is $r = x+y+1$. Division of the same $f$ by the permuted tuple $(f_2,f_1)$ gives a different remainder, which is what Gröbner bases are designed to prevent.</p>
@@ -135,7 +135,7 @@ $$</p>
 <p>the set of polynomials of $I$ involving none of $x_1,\ldots,x_k$; it is an ideal of the smaller polynomial ring.</p>
 <p><strong>Theorem (elimination theorem).</strong> Fix the lexicographic order with $x_1 \succ x_2 \succ \cdots \succ x_n$ and let $G$ be a Gröbner basis of $I$ with respect to it. Then for each $k$ the set</p>
 <p>$$
-G_k = G \cap K[x_{k+1},\ldots,x_n]
+\boxed{\;G_k = G \cap K[x_{k+1},\ldots,x_n]\;}
 $$</p>
 <p>is a Gröbner basis of the $k$-th elimination ideal $I_k$.</p>
 <p><strong>Proof.</strong> Let $f \in I_k$ be nonzero. By the Gröbner property some $\operatorname{LM}(g)$ with $g \in G$ divides $\operatorname{LM}(f)$. Since $f$ involves none of $x_1,\ldots,x_k$, its leading monomial does not involve them either, so neither does $\operatorname{LM}(g)$, and by the lexicographic order a monomial involving some $x_i$ with $i \leq k$ is larger than any monomial of the same total degree in the remaining variables; hence $g$ involves none of $x_1,\ldots,x_k$ and lies in $G_k$. Thus $\operatorname{LT}(I_k) \subseteq \langle \operatorname{LT}(g) : g \in G_k\rangle$, and the reverse inclusion is clear.</p>
@@ -171,7 +171,7 @@ $$</p>
 <p><strong>Definition.</strong> An ideal $I \subseteq K[x_1,\ldots,x_n]$ is <strong>zero-dimensional</strong> if the quotient ring $K[x_1,\ldots,x_n]/I$ is a finite-dimensional $K$-vector space; equivalently, if $I$ contains a polynomial in each variable alone. The dimension of the quotient is the number of points of the variety counted with multiplicity over an algebraically closed field, when the variety is finite.</p>
 <p><strong>Theorem (shape lemma).</strong> Let $I$ be a zero-dimensional radical ideal in <strong>general position</strong> with respect to $x_n$ — that is, the finitely many points of its variety have distinct $x_n$-coordinates. Then the reduced lexicographic Gröbner basis has the shape</p>
 <p>$$
-G = \{x_1 - g_1(x_n),\ \ldots,\ x_{n-1}-g_{n-1}(x_n),\ g(x_n)\},
+\boxed{\;G = \{x_1 - g_1(x_n),\ \ldots,\ x_{n-1}-g_{n-1}(x_n),\ g(x_n)\}\;},
 $$</p>
 <p>with $\deg g$ equal to the number of points; the roots of $g$ are the $x_n$-coordinates of the points and the other coordinates are obtained by evaluating the $g_i$.</p>
 <p><strong>Proof sketch.</strong> Zero-dimensionality gives $I_k = \langle g\rangle$ for the last elimination ideal, with $\deg g$ the number of points by the Extension theorem; radicality plus general position makes the map from the points to the $x_n$-line injective, so Lagrange interpolation produces, for each $i < n$, the polynomial $g_i$ of degree less than $\deg g$ taking the value of $x_i$ at each point, and $x_i - g_i(x_n)$ lies in $I$ by the effective Nullstellensatz applied to the finite variety.</p>

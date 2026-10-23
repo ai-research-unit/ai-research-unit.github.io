@@ -188,7 +188,7 @@ $$</p>
 <h3 id="the-formula">The Formula</h3>
 <p><strong>Theorem (Weyl character formula).</strong> For every $\lambda \in P^+$,</p>
 <p>$$
-\operatorname{ch} V(\lambda) = \frac{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\lambda + \rho))}{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\rho))},
+\boxed{\;\operatorname{ch} V(\lambda) = \frac{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\lambda + \rho))}{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\rho))}\;},
 $$</p>
 <p>where $\ell(w)$ is the length of $w$ in the Weyl group. The denominator is the <strong>Weyl denominator</strong></p>
 <p>$$
@@ -197,7 +197,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> The character of $V(\lambda)$ is the alternating sum over the Weyl group of the characters of the Verma modules, because the weight multiplicities are determined by the $\mathrm{SL}(2)$-strings of the representation: each Weyl-group translate of a weight contributes with the sign of the group element, and the resulting alternating sum telescopes. This is the standard proof; the algebra of $\mathbb{Z}[P]$ with its Weyl-group action is the setting.</p>
 <p><strong>Theorem (Weyl dimension formula).</strong> For $\lambda \in P^+$,</p>
 <p>$$
-\dim_K V(\lambda) = \prod_{\alpha \in \Phi^+} \frac{(\lambda + \rho, \alpha)}{(\rho, \alpha)}.
+\boxed{\;\dim_K V(\lambda) = \prod_{\alpha \in \Phi^+} \frac{(\lambda + \rho, \alpha)}{(\rho, \alpha)}\;}.
 $$</p>
 <p><strong>Proof.</strong> Evaluate the character formula at the identity by applying the ring homomorphism $\exp(\lambda) \mapsto 1$ together with the derivatives in the direction of $\rho$; the limit is finite and yields the product formula.</p>
 <p><strong>Example.</strong> For $\mathrm{SL}(2)$ with $\lambda = n\omega$ and positive root $\alpha$, the formula gives</p>
@@ -209,7 +209,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>Kostant partition function</strong> $\mathcal{P} : \mathrm{H}^* \to \mathbb{Z}_{\geq 0}$ assigns to $\mu$ the number of ways of writing $\mu$ as a sum of positive roots with nonnegative integer coefficients, and $\mathcal{P}(\mu) = 0$ when $\mu$ is not in the nonnegative root cone.</p>
 <p><strong>Theorem (Kostant).</strong> The multiplicity of the weight $\mu$ in $V(\lambda)$ is</p>
 <p>$$
-m_{V(\lambda)}(\mu) = \sum_{w \in W} (-1)^{\ell(w)}\, \mathcal{P}\bigl(w(\lambda + \rho) - (\mu + \rho)\bigr).
+\boxed{\;m_{V(\lambda)}(\mu) = \sum_{w \in W} (-1)^{\ell(w)}\, \mathcal{P}\bigl(w(\lambda + \rho) - (\mu + \rho)\bigr)\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> The character formula is rewritten using $\prod_{\alpha>0}(1 - \exp(-\alpha))^{-1} = \sum_{\nu} \mathcal{P}(\nu) e^{\nu}$, the generating function of the partition function; comparing coefficients of $e^\mu$ on both sides gives the formula.</p>
 <p><strong>Corollary.</strong> The weight multiplicities are invariant under the Weyl group: $m_{V(\lambda)}(w\mu) = m_{V(\lambda)}(\mu)$ for all $w \in W$, and a weight $\mu$ of $V(\lambda)$ satisfies $\mu \preceq \lambda$.</p>

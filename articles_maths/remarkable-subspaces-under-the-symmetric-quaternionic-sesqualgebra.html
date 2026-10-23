@@ -80,9 +80,7 @@ real span is the whole algebra.</p>
 <p>The product is <em>Introduction to the Symmetric Quaternionic Sesqualgebra</em>; the diagonal and the elements of square zero are <em>The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em>; the form $K$ and its restrictions are <em>The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra</em> and <em>The Krein Gram Matrix and the Restrictions of the Form</em>; the analogous closure table for the general product is <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra</em>; and the comparison of the closure patterns of the four rows is assembled in <em>The 12 Products of the Biquaternion Complex Space</em>.</p>
 <h2 id="the-product-rule-on-each-subspace">The Product Rule on Each Subspace</h2>
 <p><strong>Theorem (the scalar–vector form is the common rule).</strong> On each of the remarkable subspaces the product is read from the single rule</p>
-<p>$$
-\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1,
-$$</p>
+<p>$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 \;}, $$</p>
 <p>the first summand lying in the centre and the second in the vector subspace.</p>
 <p><em>Proof.</em> This is the scalar–vector form of the introduction; every subspace computation below specialises the coefficients in it.</p>
 <h2 id="the-centre">The Centre</h2>
@@ -96,9 +94,11 @@ $$</p>
 <h2 id="the-vector-subspace">The Vector Subspace</h2>
 <p><strong>Theorem (the product lands in the centre).</strong> For $\tilde Q_1,\tilde Q_2$ in the vector subspace,</p>
 <p>$$
+\boxed{\;
 \tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}\,e_t,
 \qquad
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1,\overline{\vec Q_2}),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1,\overline{\vec Q_2})
+\;},
 $$</p>
 <p>a central element. The vector subspace is not closed; the image of the product on it is the centre, of real rank two.</p>
 <p><em>Proof.</em> For $\tilde Q_1,\tilde Q_2$ in the vector subspace the scalar coefficients $Q_{1t},Q_{2t}$ vanish, so the mixed term $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ vanishes and only the centre part remains. The value $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1,\overline{\vec Q_2})$ ranges over $\mathbb{C}$ as $\vec Q_1,\vec Q_2$ range, so the image is the whole centre, of real rank two.</p>
@@ -164,8 +164,10 @@ $$</p>
 <h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
 <p><strong>Theorem (closure).</strong> For $\tilde Q_1=a_t+i\vec\alpha$, $\tilde Q_2=b_t+i\vec\beta$ with real scalar coefficients and real vector parts,</p>
 <p>$$
+\boxed{\;
 \tilde Q_1\star\tilde Q_2=\Bigl(a_tb_t-\sum_{\mu\in\{x,y,z\}}\alpha_\mu\beta_\mu\Bigr)e_t
-+i\bigl(a_t\vec\beta-b_t\vec\alpha\bigr),
++i\bigl(a_t\vec\beta-b_t\vec\alpha\bigr)
+\;},
 $$</p>
 <p>an element of the Hermitian subspace: a real scalar part and a purely imaginary vector part. The Hermitian subspace is closed under the product, and its image is itself, of real rank four.</p>
 <p><em>Proof.</em> A Hermitian element has a real scalar coefficient and purely imaginary vector coefficients; thus $Q_{1t}=a_t$, $\vec Q_1=i\vec\alpha$ with $a_t,\vec\alpha$ real. Then $K=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=a_tb_t-\sum_k(i\alpha_k)\overline{(i\beta_k)}=a_tb_t-\sum_k(i\alpha_k)(-i\beta_k)=a_tb_t-\sum_k\alpha_k\beta_k$, real. The vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1=-a_t(-i\vec\beta)-b_t(i\vec\alpha)=i(a_t\vec\beta-b_t\vec\alpha)$, purely imaginary. So the value is Hermitian. The image is the whole subspace, since $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span the four real directions $e_t,i\vec e_x,i\vec e_y,i\vec e_z$.</p>

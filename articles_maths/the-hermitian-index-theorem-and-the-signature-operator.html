@@ -112,7 +112,7 @@ $$</p>
 <h2 id="the-hermitian-index-theorem">The Hermitian Index Theorem</h2>
 <p><strong>Theorem (Hirzebruch–Riemann–Roch).</strong> Let $X$ be a compact complex manifold and let $E$ be a Hermitian holomorphic bundle of rank $r$. Then</p>
 <p>$$
-\chi(X,E)=\int_{X}\operatorname{ch}(E)\,\operatorname{td}(TX),
+\boxed{\;\chi(X,E)=\int_{X}\operatorname{ch}(E)\,\operatorname{td}(TX)\;},
 $$</p>
 <p>the Chern character of $E$ paired with the Todd class of the tangent bundle; in the Chern roots $x_j$ of $T^{1,0}X$ this is</p>
 <p>$$
@@ -143,11 +143,11 @@ $$</p>
 <p>and its value at $y=1$ is the signature.</p>
 <p><strong>Theorem (Hirzebruch).</strong> The $\chi_y$-genus is the characteristic number</p>
 <p>$$
-\chi_y(X)=\int_{X}\prod_{j=1}^{n}\frac{x_j\bigl(1+y\,\exp(-x_j(1+y))\bigr)}{1-\exp(-x_j(1+y))} ,
+\boxed{\;\chi_y(X)=\int_{X}\prod_{j=1}^{n}\frac{x_j\bigl(1+y\,\exp(-x_j(1+y))\bigr)}{1-\exp(-x_j(1+y))}\;} ,
 $$</p>
 <p>and its value at $y=1$ is the $L$-genus,</p>
 <p>$$
-\chi_1(X)=\int_{X}\prod_{j=1}^{n}x_j\coth x_j=\int_{X}L(TX)=\sigma(X),
+\boxed{\;\chi_1(X)=\int_{X}\prod_{j=1}^{n}x_j\coth x_j=\int_{X}L(TX)=\sigma(X)\;},
 $$</p>
 <p>the signature of $X$; its value at $y=0$ is the Todd genus $\int\prod\frac{x_j}{1-\exp(-x_j)}$ and its value at $y=-1$ is the Euler characteristic $\int\prod x_j$.</p>
 <p><strong>Proof sketch.</strong> The genus $\sum_n\chi(\Omega^n)y^n$ is multiplicative for products and additive for the twisted Dolbeault complexes, so it is a genus with a power series determined by its values on the projective spaces; evaluating the resulting product at $y=1$ gives $\frac{x(1+\exp(-2x))}{1-\exp(-2x)}=x\coth x$, whose product is the $L$-class of <em>The Signature Operator</em>, and at $y=0$ the Todd factor; at $y=-1$ the limit is the Euler factor $\prod x_j$. Since the $\chi_y$-genus is independent of the description, the value $y=1$ is the signature by the Hodge index theorem, $\sigma=\sum_{n,m}(-1)^{n}h^{n,m}=\sum_n\chi(\Omega^n)$ of <em>Polarised Hodge Structures and the Hodge–Riemann Relations</em>.</p>

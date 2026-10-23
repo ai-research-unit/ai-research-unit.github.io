@@ -85,13 +85,13 @@ $$</p>
 <p>for all $a \in R$ and all $x, y \in A$. The form is <strong>Hermitian</strong> when $h(y,x) = \varsigma(h(x,y))$ for all $x, y$, and <strong>non-degenerate</strong> when $h(x,y) = 0$ for every $y$ forces $x = 0$.</p>
 <p><strong>Definition.</strong> A <strong>sesqualgebra with a form</strong> is the quadruple $(A, *, h)$ with $A$ unital and associative, $*$ a $\varsigma$-semilinear involution, and $h$ a Hermitian form satisfying the <strong>compatibility</strong></p>
 <p>$$
-h(xy, z) = h(y, x^{*}z) \qquad \text{for all } x, y, z \in A .
+\boxed{\;h(xy, z) = h(y, x^{*}z) \qquad \text{for all } x, y, z \in A\;} .
 $$</p>
 <p>Two of the three data are algebraic — the product and the involution — and the third is the degree-2 datum of the category. The compatibility is what forbids an arbitrary pairing, and it is the reason the form is not a decoration but a structure of the algebra.</p>
 <h3 id="the-compatibility">The Compatibility</h3>
 <p><strong>Proposition.</strong> The compatibility is equivalent to</p>
 <p>$$
-h(x, yz) = h(y^{*}x, z) \qquad \text{for all } x, y, z \in A .
+\boxed{\;h(x, yz) = h(y^{*}x, z) \qquad \text{for all } x, y, z \in A\;} .
 $$</p>
 <p><strong>Proof.</strong> Read the compatibility with the pair $(x,y)$ replaced by $(y^{*}, x)$: it becomes $h(y^{*}x, z) = h(x, y^{**}z) = h(x, yz)$, which is the second identity. The converse is the same substitution read backwards.</p>
 <p><strong>Corollary.</strong> The compatibility says that the left multiplication $L_x(y) = xy$ satisfies $h(L_xy, z) = h(y, L_{x^{*}}z)$, so $L_x$ and $L_{x^{*}}$ are adjoint with respect to $h$. The matching statement for the right multiplications, $h(yx,z) = h(y, zx^{*})$, is a <em>different</em> condition: it is the third identity refused above, it holds for the trace form $\tau(xy^{*})$, and it fails for the compatible form $\tau(xGy^{*})$ with $G = \operatorname{diag}(1,-1)$ on $\mathsf{M}_2$ (on $1728$ of the $4096$ triples of matrices with entries in $\{0,\pm1,\mathrm{i}\}$). What holds in general is that the adjoint of $R_x$ is the right multiplication by the <strong>transpose</strong> of $x$: the element $x^{t}$ is defined by $h(yx,z) = h(y, zx^{t})$, it exists and is unique when $h$ is nonsingular, in a basis with Gram matrix $G$ it is $x^{t} = Gx^{*}G^{-1}$, and $R_{x^{t}} = R_x^{*}$ always. The transpose is the involution $x^{*}$ exactly when the third identity holds, that is, for the trace form. The statements hold with or without non-degeneracy; non-degeneracy is what makes the adjoint unique.</p>

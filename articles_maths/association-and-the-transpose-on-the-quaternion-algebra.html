@@ -95,9 +95,7 @@ $$</p>
 <p><em>Proof.</em> $L_{\tilde q_4}=R_{\tilde q_4}$ exactly when $\tilde q_4$ commutes with every element, that is, by the centre theorem, when $\tilde q_4\in\mathbb{R}e_t$.</p>
 <h2 id="the-transpose-of-a-two-sided-operator">The Transpose of a Two-Sided Operator</h2>
 <p><strong>Theorem.</strong> For the sandwich $T_{\tilde q_4,\tilde q_5}=L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$,</p>
-<p>$$
-T_{\tilde q_4,\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}=T_{\tilde q_5,\tilde q_4}.
-$$</p>
+<p>$$ \boxed{\; T_{\tilde q_4,\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}=T_{\tilde q_5,\tilde q_4} \;} .$$</p>
 <p><em>Proof.</em> The transpose is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\sim}=\tilde q_2^{\sim}\tilde q_1^{\sim}$, so $T_{\tilde q_4,\tilde q_5}^{\sim}=(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=R_{\tilde q_5}^{\sim}L_{\tilde q_4}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$, which is $T_{\tilde q_5,\tilde q_4}$.</p>
 <p><strong>Corollary.</strong> The sandwich is self-transpose exactly when $\tilde q_5\in\mathbb{R}\tilde q_4$ or $\tilde q_4\in\mathbb{R}\tilde q_5$.</p>
 <p><em>Proof.</em> The equality $L_{\tilde q_4}R_{\tilde q_5}=L_{\tilde q_5}R_{\tilde q_4}$ says $\tilde q_4\tilde q\tilde q_5=\tilde q_5\tilde q\tilde q_4$ for every $\tilde q$. At $\tilde q=e_t$ it gives $\tilde q_4\tilde q_5=\tilde q_5\tilde q_4$, so $\tilde q_5$ commutes with $\tilde q_4$; if $\tilde q_5=\mu\tilde q_4$ for some real $\mu$ the two sides are equal, which is the sufficiency. Conversely, either $\tilde q_4$ is central, and then the identity reads $\tilde q\tilde q_4\tilde q_5=\tilde q_5\tilde q\tilde q_4$, that is $\tilde q\tilde q_4\tilde q_5=\tilde q_4\tilde q_5\tilde q$ with the product $\tilde q_4\tilde q_5$ central because $\tilde q_4$ is and $\tilde q_5$ commutes with it, so $\tilde q_5$ is central too and $\tilde q_5\in\mathbb{R}\tilde q_4$; or $\tilde q_4$ is not central, its commutant is the plane $\mathbb{R}e_t+\mathbb{R}\tilde q_4$, and $\tilde q_5=\lambda+\mu\tilde q_4$ gives $\tilde q_4\tilde q\tilde q_5-\tilde q_5\tilde q\tilde q_4=\lambda(\tilde q_4\tilde q-\tilde q\tilde q_4)$, which vanishes for all $\tilde q$ only if $\lambda=0$, that is $\tilde q_5\in\mathbb{R}\tilde q_4$. The degenerate cases $\tilde q_4=0$ or $\tilde q_5=0$ are included, both sides being $0$.</p>
@@ -105,9 +103,7 @@ $$</p>
 <p><em>Proof.</em> $\langle\tilde q_1^{\natural},\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$ and $\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})=\sum_\mu q_{1\mu} q_{2\mu}$; the two agree for all $\tilde q_1,\tilde q_2$, so the operator is self-transpose. The formula displays the coordinate pairing as the product form read through the natural sign in either slot.</p>
 <h2 id="the-matrix-formula-for-the-transpose">The Matrix Formula for the Transpose</h2>
 <p><strong>Theorem.</strong> Let $T$ be real-linear with matrix $G$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and let $D=\operatorname{diag}(1,-1,-1,-1)$. Then $T^{\sim}$ has matrix</p>
-<p>$$
-G^{\sim}=D\,G^{\mathsf T}D.
-$$</p>
+<p>$$ \boxed{\; G^{\sim}=D\,G^{\mathsf T}D \;} .$$</p>
 <p><em>Proof.</em> For all $\tilde q_1,\tilde q_2$, $\langle T\tilde q_1,\tilde q_2\rangle=(Gq_1)^{\mathsf T}Dq_2=q_1^{\mathsf T}G^{\mathsf T}Dq_2$ and $\langle\tilde q_1,T^{\sim}\tilde q_2\rangle=q_1^{\mathsf T}D(G^{\sim}q_2)=q_1^{\mathsf T}DG^{\sim}q_2$, where $q_1,q_2$ are the coordinate columns; equating the two for all $q_1,q_2$ gives $G^{\mathsf T}D=DG^{\sim}$, that is $G^{\sim}=D^{-1}G^{\mathsf T}D=D\,G^{\mathsf T}D$ because $D^{-1}=D= D^{\mathsf T}$.</p>
 <p><strong>Corollary.</strong> The transpose matrix is the matrix transpose conjugated by the signature matrix; in particular the transposes of $L_{\tilde q_4}$ and $R_{\tilde q_4}$ are obtained by $L_{\tilde q_4}^{\sim}=D\,L_{\tilde q_4}^{\mathsf T}D=R_{\tilde q_4}$ and $R_{\tilde q_4}^{\sim}=D\,R_{\tilde q_4}^{\mathsf T}D=L_{\tilde q_4}$.</p>
 <p><em>Proof.</em> The formula applied to the matrix of each operator, with the identifications of the theorem above.</p>
@@ -141,9 +137,7 @@ $$</p>
 <p><em>Proof.</em> The four statements above.</p>
 <h2 id="the-identity-against-the-quaternion-adjoint">The Identity against the Quaternion Adjoint</h2>
 <p><strong>Theorem.</strong> The product form read through the natural sign in either slot is the positive definite coordinate pairing:</p>
-<p>$$
-\langle\tilde q_1^{\natural},\tilde q_2\rangle=\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\sum_{\mu}q_{1\mu} q_{2\mu}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2).
-$$</p>
+<p>$$ \boxed{\; \langle\tilde q_1^{\natural},\tilde q_2\rangle=\langle\tilde q_1,\tilde q_2^{\natural}\rangle=\sum_{\mu}q_{1\mu} q_{2\mu}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) \;} .$$</p>
 <p><em>Proof.</em> $\tilde q_1^{\natural}\tilde q_2=\sum_\mu q_{1\mu} q_{2\mu}+\text{(a vector part)}$ and $\tilde q_1\tilde q_2^{\natural}$ likewise; the scalar part is the sum of the coordinate products, the vector parts being sums of the basis vectors without a scalar component.</p>
 <p><strong>Corollary.</strong> The natural sign is the adjoint of the identity of the product form: it carries the indefinite form to the positive definite coordinate one, and its self-transposeness is the statement that the two pairings agree.</p>
 <h2 id="summary">Summary</h2>

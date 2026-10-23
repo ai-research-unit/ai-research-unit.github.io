@@ -81,7 +81,7 @@ $$</p>
 <p>and <strong>unitary for the twisted pairing</strong> when the same equations hold with $T^{*_\sigma}$ in place of $T^{*}$. The sets of such operators are written $\mathrm{U}(E)=\mathrm{U}(E,*)$ and $\mathrm{U}(E,*_\sigma)$.</p>
 <p><strong>Theorem.</strong> $\mathrm{U}(E)$ and $\mathrm{U}(E,*_\sigma)$ are subgroups of the unit group $E^{\times}$, and</p>
 <p>$$
-T \in \mathrm{U}(E) \iff T \in E^{\times} \text{ and } T^{*}=T^{-1}, \qquad T \in \mathrm{U}(E,*_\sigma) \iff T \in E^{\times} \text{ and } T^{*_\sigma}=T^{-1} .
+\boxed{\;T \in \mathrm{U}(E) \iff T \in E^{\times} \text{ and } T^{*}=T^{-1}, \qquad T \in \mathrm{U}(E,*_\sigma) \iff T \in E^{\times} \text{ and } T^{*_\sigma}=T^{-1}\;} .
 $$</p>
 <p>Each is the fixed subgroup of the order-two automorphism $\theta(T)=(T^{*})^{-1}$, respectively $\theta_\sigma(T)=(T^{*_\sigma})^{-1}$, of $E^{\times}$, and each contains the identity and is closed under the adjoint and under inversion.</p>
 <p><em>Proof.</em> The equivalence is the definition read as the two halves of invertibility: the two equations say that $T^{*}$ is the two-sided inverse of $T$. That the fixed subgroup of an order-two automorphism of a group is a subgroup, that the identity is fixed, and that the fixed set is closed under inversion and under the automorphism are the general theory of <em>Unitary Elements of an Involutive Algebra</em>, applied to the involutive algebra $(E,*)$ and to $(E,*_\sigma)$; the involution maps a unitary operator to its inverse because $T^{*_\sigma}T=\mathrm{id}$ is equivalent to $T^{*_\sigma}=T^{-1}$.</p>
@@ -91,7 +91,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>self-adjoint operators</strong> $E^{+}$ and the <strong>skew-adjoint operators</strong> $E^{-}$ are those with $T^{*}=T$ and with $T^{*}=-T$; for the twisted involution they are written $E^{+}_\sigma$ and $E^{-}_\sigma$.</p>
 <p><strong>Theorem.</strong> For every unitary operator $u \in \mathrm{U}(E)$ the operators $u+u^{*}$ and $u u^{*}$ are self-adjoint and $u-u^{*}$ is skew-adjoint, and</p>
 <p>$$
-u=\tfrac12\bigl(u+u^{*}\bigr)+\tfrac12\bigl(u-u^{*}\bigr), \qquad (u+u^{*})^{*}=u+u^{*}, \qquad (u-u^{*})^{*}=-(u-u^{*}), \qquad (uu^{*})^{*}=uu^{*}=1 .
+\boxed{\;u=\tfrac12\bigl(u+u^{*}\bigr)+\tfrac12\bigl(u-u^{*}\bigr), \qquad (u+u^{*})^{*}=u+u^{*}, \qquad (u-u^{*})^{*}=-(u-u^{*}), \qquad (uu^{*})^{*}=uu^{*}=1\;} .
 $$</p>
 <p><em>Proof.</em> Apply $*$ and use $(ST)^{*}=S^{*}T^{*}$ and $u^{*}=u^{-1}$: $(u+u^{*})^{*}=u^{*}+u=u+u^{*}$, $(u-u^{*})^{*}=u^{*}-u=-(u-u^{*})$, and $(uu^{*})^{*}=u^{**}u^{*}=uu^{*}$, which is $1$ for a unitary $u$. This is the computation of <em>Unitary Elements of an Involutive Algebra</em> carried out in the involutive algebra $(E,*)$.</p>
 <p><strong>Corollary (the Lie algebra of the unitary group).</strong> The skew-adjoint operators $E^{-}$ are the algebraic tangent space of $\mathrm{U}(E)$ at the identity, and with the commutator they form a Lie algebra; the self-adjoint operators $E^{+}$ with the symmetrised product form a Jordan algebra, and the two are the Jordan–Lie pair of the involution of <em>Involutions of the Operator Algebra</em>.</p>
@@ -99,7 +99,7 @@ $$</p>
 <h2 id="the-two-pairings-and-the-unitary-groups">The Two Pairings and the Unitary Groups</h2>
 <p><strong>Theorem.</strong> The conjugation $c_{\sigma}(T)=\sigma T\sigma$ is an involutive automorphism of $E$ that carries the plain unitary group isomorphically onto the twisted one,</p>
 <p>$$
-c_{\sigma}\bigl(\mathrm{U}(E)\bigr)=\mathrm{U}(E,*_\sigma), \qquad c_{\sigma}\bigl(\mathrm{U}(E,*_\sigma)\bigr)=\mathrm{U}(E),
+\boxed{\;c_{\sigma}\bigl(\mathrm{U}(E)\bigr)=\mathrm{U}(E,*_\sigma), \qquad c_{\sigma}\bigl(\mathrm{U}(E,*_\sigma)\bigr)=\mathrm{U}(E)\;},
 $$</p>
 <p>and it carries $E^{+}$ onto $E^{+}_\sigma$ and $E^{-}$ onto $E^{-}_\sigma$.</p>
 <p><em>Proof.</em> The dictionary $T^{*_\sigma}=\sigma T^{*}\sigma$ of <em>The Adjoint in an Involutive Algebra</em> gives $c_{\sigma}(T^{*})=T^{*_\sigma}$, and $c_{\sigma}$ is multiplicative; hence $c_{\sigma}(T^{*}T)=c_{\sigma}(T^{*})c_{\sigma}(T)=T^{*_\sigma}c_{\sigma}(T)$, and $T^{*}T=\mathrm{id}$ is carried to $T^{*_\sigma}c_{\sigma}(T)=\mathrm{id}$, which is the unitarity of $c_{\sigma}(T)$ for the twisted pairing. The reverse implication is the same with $\sigma$ exchanged, and the fixed parts are carried because $c_{\sigma}$ commutes with the two involutions up to the dictionary.</p>

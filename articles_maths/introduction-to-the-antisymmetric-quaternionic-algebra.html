@@ -101,9 +101,7 @@ the definition and the two conjugations cancel: the operation is $\mathbb{C}$-bi
 $(\mathrm{id},\mathrm{id})$, the class of <em>Definitions for the Study of the 12 Algebraic
 Structures</em>, §<em>The Product, its Slots and its Class</em>.</p>
 <p><strong>Proposition (the explicit form).</strong> For all $\tilde Q_1 = Q_{1t}e_t + \vec Q_1$ and $\tilde Q_2 = Q_{2t}e_t + \vec Q_2$,</p>
-<p>$$
-\tilde Q_1 \diamond \tilde Q_2 = Q_{1t}\vec Q_2 - Q_{2t}\vec Q_1 - \vec Q_1\times\vec Q_2 .
-$$</p>
+<p>$$ \boxed{\; \tilde Q_1 \diamond \tilde Q_2 = Q_{1t}\vec Q_2 - Q_{2t}\vec Q_1 - \vec Q_1\times\vec Q_2 \;}. $$</p>
 <p>In particular the scalar part of the value is zero and the value lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$; the operation is $\mathbb{C}$-bilinear, alternating, and its diagonal vanishes.</p>
 <p><em>Proof.</em> The value of the parent product is $\tilde Q_1^{\natural}\tilde Q_2 = \bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]e_t + Q_{1t}\vec Q_2 - Q_{2t}\vec Q_1 - \vec Q_1\times\vec Q_2$ (<em>The 12 Products of the Biquaternion Complex Space</em>). The reverse product is obtained by exchanging the arguments, and its value is $[Q_{2t}Q_{1t}+(\vec Q_2,\vec Q_1)]e_t + Q_{2t}\vec Q_1 - Q_{1t}\vec Q_2 - \vec Q_2\times\vec Q_1$. The scalar part is symmetric in the pair and cancels in the difference; the vector part is antisymmetric in the pair, because the cross product reverses and the mixed terms exchange with a sign, and half the difference of the two vector parts is $\tfrac12\bigl[2(Q_{1t}\vec Q_2-Q_{2t}\vec Q_1) - 2\,\vec Q_1\times\vec Q_2\bigr] = Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$, since $\vec Q_2\times\vec Q_1 = -\vec Q_1\times\vec Q_2$. Bilinearity is inherited from the product term by term with the coefficients in $\mathbb{C}$; alternation is the antisymmetry of the definition, $\tilde Q_2\diamond\tilde Q_1 = -\tilde Q_1\diamond\tilde Q_2$; and the diagonal vanishes at $\tilde Q_1=\tilde Q_2$, where the two terms of the definition cancel. Equivalently, the scalar part of the explicit form is zero, so the value never leaves $\mathrm{Vect}(\mathbb{B})$; and at $\tilde Q_1 = \tilde Q_2$ the three terms of the explicit form give $Q_{1t}\vec Q_1-Q_{1t}\vec Q_1-\vec Q_1\times\vec Q_1 = 0$.</p>
 <p><strong>Remark (what the operation omits).</strong> The scalar part of the parent product, the quaternionic form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$, is exactly the symmetric half. It carries the two terms that the exchange leaves fixed, the square terms $Q_{1t}Q_{2t}$ and the scalar product $(\vec Q_1,\vec Q_2)$ of the vectors, and the operation of this block is what remains of the parent product once that half is removed. The omission is total: the block never produces a central element, and every value has zero scalar part.</p>
@@ -117,9 +115,7 @@ $$</p>
 <p>The block is therefore the second of the two readings of one product: the parent product is recovered from the two halves, and the bracket of the corpus is the unhalved difference. The factor two is the only difference between the operation of this block and the quaternionic bracket, and it is recorded throughout.</p>
 <h2 id="the-image-and-the-absence-of-a-unit">The Image and the Absence of a Unit</h2>
 <p><strong>Proposition (the image).</strong> The image of the operation is the vector subspace,</p>
-<p>$$
-\mathbb{B}\diamond\mathbb{B} = \mathrm{Vect}(\mathbb{B}) = \bigl\{\tilde Q : \tilde Q^{\natural} = -\tilde Q\bigr\} ,
-$$</p>
+<p>$$ \boxed{\; \mathbb{B}\diamond\mathbb{B} = \mathrm{Vect}(\mathbb{B}) = \bigl\{\tilde Q : \tilde Q^{\natural} = -\tilde Q\bigr\} \;}, $$</p>
 <p>of complex dimension three and real dimension six; the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is disjoint from the image apart from $0$.</p>
 <p><em>Proof.</em> Every value has zero scalar part by the explicit form, so the image lies in $\mathrm{Vect}(\mathbb{B})$. Conversely, for a pure vector $\vec V$, the element $e_t$ acts as $\tilde Q_1\mapsto\vec Q_1$ from the left, $e_t\diamond\tilde Q_2 = \vec Q_2$, so $\vec V = e_t\diamond\vec V$ is a value. The centre is the set of elements with zero vector part, and $\mathrm{Vect}(\mathbb{B})$ is the set with zero scalar part, so their intersection is $0$.</p>
 <p><strong>Remark (the two sides of the identity).</strong> The element $e_t$ is a left identity on the vector subspace, $e_t\diamond\tilde Q_2 = \vec Q_2$, but it is not a two-sided identity there. The right multiplication by $e_t$ is the negative of the identity on the vector subspace, $\tilde Q_1\diamond e_t = -\vec Q_1$, and the two differ by the sign. The asymmetry is the asymmetry of the parent product, which has $e_t$ as a unit on the left only, and it is the reason no element that acts on one side acts on the other. In particular $e_t\diamond\tilde Q_2 = \vec Q_2$ recovers the vector part of $\tilde Q_2$ and discards the scalar part, so even on the image the left action of $e_t$ is the identity and its right action is its negative.</p>
@@ -174,9 +170,7 @@ $$</p>
 <p>The sixteen entries are therefore of four kinds: the zero diagonal of four entries; the three mixed entries $e_t\diamond \vec e_\nu$ equal to $\vec e_\nu$; the three reverse mixed entries $\vec e_\nu\diamond e_t$ equal to $-\vec e_\nu$; and the six entries between two distinct pure vectors, the negatives of the cross products. The six pure-vector entries are the components of the table on which the operation is the plain bracket of the vector subspace, and the six mixed entries are what the block adds to it.</p>
 <h2 id="the-square-and-its-polarisation">The Square and Its Polarisation</h2>
 <p><strong>Proposition (the square vanishes identically).</strong> For every element $\tilde Q_1$,
-$$
-\mathfrak{Q}(\tilde Q_1)=\tilde Q_1\diamond\tilde Q_1=0 ,
-$$
+$$ \boxed{\; \mathfrak{Q}(\tilde Q_1)=\tilde Q_1\diamond\tilde Q_1=0 \;}, $$
 and the polarisation of the square vanishes as well,
 $$
 \beta(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(\mathfrak{Q}(\tilde Q_1+\tilde Q_2)-\mathfrak{Q}(\tilde Q_1)-\mathfrak{Q}(\tilde Q_2)\bigr)=0 ,

@@ -131,7 +131,7 @@ $$</p>
 <p>with $\partial_n(u\otimes x_1\wedge\cdots\wedge x_n) = \sum_i(-1)^{i+1}ux_i\otimes x_1\wedge\cdots\wedge\widehat{x_i}\wedge\cdots\wedge x_n+\sum_{i<j}(-1)^{i+j}u\otimes[x_i,x_j]\wedge\cdots$, the terms being ordered as in the differential of the complex.</p>
 <p><strong>Theorem (standard).</strong> The standard resolution is a free resolution of $k$ over $\mathrm{U}(\mathrm{G})$, so that for every $\mathrm{G}$-module $M$</p>
 <p>$$
-H^n(\mathrm{G};M)\cong\operatorname{Ext}^n_{\mathrm{U}(\mathrm{G})}(k,M), \qquad H_n(\mathrm{G};M)\cong\operatorname{Tor}_n^{\mathrm{U}(\mathrm{G})}(k,M),
+\boxed{\;H^n(\mathrm{G};M)\cong\operatorname{Ext}^n_{\mathrm{U}(\mathrm{G})}(k,M), \qquad H_n(\mathrm{G};M)\cong\operatorname{Tor}_n^{\mathrm{U}(\mathrm{G})}(k,M)\;},
 $$</p>
 <p>where the homology of the complex $\Lambda_\bullet\mathrm{G}\otimes M$ with the boundary obtained from the same formula computes the Tor groups; the functoriality in $\mathrm{G}$ and in $M$ matches on both sides, and every short exact sequence $0\to M'\to M\to M''\to0$ of $\mathrm{G}$-modules gives a long exact sequence of cohomology groups.</p>
 <p><em>Proof (outline).</em> The resolution is the tensor product of $\mathrm{U}(\mathrm{G})$ with the Chevalley–Eilenberg complex, and it is a free resolution because the Poincaré–Birkhoff–Witt theorem identifies $\mathrm{U}(\mathrm{G})\otimes\Lambda^n\mathrm{G}$ as a free $\mathrm{U}(\mathrm{G})$-module of the appropriate rank; applying the functor $\operatorname{Hom}_{\mathrm{U}(\mathrm{G})}(-,M)$ returns the Chevalley–Eilenberg complex, and the identification with Ext and Tor is the definition of these groups through the free resolution over the enveloping algebra recalled in the introduction. The long exact sequence is the standard long exact sequence of Ext.</p>
@@ -140,7 +140,7 @@ $$</p>
 <h2 id="the-semisimple-case-whiteheads-lemmas">The Semisimple Case: Whitehead's Lemmas</h2>
 <p><strong>Theorem (Whitehead's first and second lemmas, standard).</strong> Let $\mathrm{G}$ be a finite-dimensional semisimple Lie algebra over a field $k$ of characteristic zero and let $M$ be a finite-dimensional $\mathrm{G}$-module. Then</p>
 <p>$$
-H^1(\mathrm{G};M) = 0, \qquad H^2(\mathrm{G};M) = 0 .
+\boxed{\;H^1(\mathrm{G};M) = 0, \qquad H^2(\mathrm{G};M) = 0\;} .
 $$</p>
 <p>Consequently every derivation of $\mathrm{G}$ with values in $M$ is inner, every extension of Lie algebras with finite-dimensional kernel splits — this is the theorem of Levi — and every finite-dimensional representation of $\mathrm{G}$ is completely reducible from the cohomological point of view: $\operatorname{Ext}^1_{\mathrm{U}(\mathrm{G})}(k,M) = 0$.</p>
 <p><em>Proof (outline).</em> The Casimir element $\Omega = \sum_ix_iy_i$ of <em>Universal Enveloping Algebras</em>, built from dual bases for the Killing form, is central and acts on $M$ as a $\mathrm{U}(\mathrm{G})$-endomorphism. Define the <strong>homotopy operator</strong> $\Phi:C^n(\mathrm{G};M)\to C^{n-1}(\mathrm{G};M)$ by</p>
@@ -178,7 +178,7 @@ $$</p>
 <h2 id="cohomology-with-coefficients-in-the-adjoint-module">Cohomology with Coefficients in the Adjoint Module</h2>
 <p><strong>Proposition.</strong> Let $\mathrm{G}$ be a Lie algebra over $k$. Then</p>
 <p>$$
-H^1(\mathrm{G};\mathrm{G})\cong\operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G}),
+\boxed{\;H^1(\mathrm{G};\mathrm{G})\cong\operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G})\;},
 $$</p>
 <p>the <strong>outer derivations</strong> of $\mathrm{G}$, which is zero when $\mathrm{G}$ is semisimple of characteristic zero, and is the space of the "infinitesimal automorphisms modulo the inner ones" in general; the group $H^2(\mathrm{G};\mathrm{G})$ is the space of the <strong>infinitesimal deformations</strong> of $\mathrm{G}$ up to equivalence.</p>
 <p><em>Proof.</em> The first statement is the special case $M = \mathrm{G}$ of the description of $H^1$; the derivations of the Lie algebra are the derivations of <em>Automorphisms and Derivations of Algebras</em> restricted to the Lie structure, and the inner ones are $\mathrm{ad}_x$. For the second, a two-cochain with values in $\mathrm{G}$ defines a bracket $[x,y]_t = [x,y]+t\varphi(x,y)$ on the $k[t]/(t^2)$-module $\mathrm{G}\otimes k[t]/(t^2)$, and the Jacobi identity of the deformed bracket is exactly the cocycle identity for $\varphi$; two deformations are equivalent when the corresponding cocycles differ by a coboundary, the coboundary being the change of the bracket produced by a linear change of the basis.</p>

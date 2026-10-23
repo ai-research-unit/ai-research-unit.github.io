@@ -136,7 +136,7 @@ $$</p>
 <p>Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of the tensor power there is a unique $R$-linear $\bar f : M^{\otimes n} \to P$ with $\bar f(x_1 \otimes \cdots \otimes x_n) = f(x_1, \ldots, x_n)$. Symmetry of $f$ gives $\bar f(x_1 \otimes \cdots \otimes x_n) = \bar f(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$, so $\bar f$ vanishes on the generators of $J_n$; hence $\bar f$ factors uniquely through a map $f^{\mathrm{lin}} : Q \to P$. This is the required factorisation, and uniqueness holds because the elementary tensors generate $M^{\otimes n}$, hence their images generate $Q$.</p>
 <p>Thus the symmetric power is exactly the <strong>module of coinvariants</strong> of the permutation action,</p>
 <p>$$
-\operatorname{Sym}^n M \cong (M^{\otimes n})_{S_n} = M^{\otimes n} \big/ \langle \sigma v - v : v \in M^{\otimes n},\ \sigma \in S_n \rangle,
+\boxed{\;\operatorname{Sym}^n M \cong (M^{\otimes n})_{S_n} = M^{\otimes n} \big/ \langle \sigma v - v : v \in M^{\otimes n},\ \sigma \in S_n \rangle\;},
 $$</p>
 <p>where $\langle - \rangle$ denotes the submodule generated.</p>
 <h3 id="coinvariants-and-invariants">Coinvariants and Invariants</h3>
@@ -177,7 +177,7 @@ $$</p>
 <h3 id="dimension-formula">Dimension Formula</h3>
 <p>The number of multi-indices $a$ with $a_i \geq 0$ and $|a| = n$ is the number of ways of distributing $n$ indistinguishable balls into $d$ boxes, namely</p>
 <p>$$
-\operatorname{rank}_R \operatorname{Sym}^n M = \binom{n + d - 1}{d - 1} = \binom{n + d - 1}{n}.
+\boxed{\;\operatorname{rank}_R \operatorname{Sym}^n M = \binom{n + d - 1}{d - 1} = \binom{n + d - 1}{n}\;}.
 $$</p>
 <p>For $d = 1$ this is $1$ for every $n$; for $n = 1$ it is $d$; for $n = 2$ it is $\frac{d(d+1)}{2}$, the dimension of the space of symmetric $d \times d$ matrices. The values for small $d$ and $n$ are tabulated below.</p>
 <p><strong>Worked values.</strong></p>
@@ -249,7 +249,7 @@ $$</p>
 <h3 id="direct-sums-and-the-symmetric-binomial-theorem">Direct Sums and the Symmetric Binomial Theorem</h3>
 <p><strong>Theorem.</strong> For all $R$-modules $M, N$ there is a natural isomorphism</p>
 <p>$$
-\operatorname{Sym}^n (M \oplus N) \cong \bigoplus_{k=0}^{n} \operatorname{Sym}^k M \otimes_R \operatorname{Sym}^{n-k} N.
+\boxed{\;\operatorname{Sym}^n (M \oplus N) \cong \bigoplus_{k=0}^{n} \operatorname{Sym}^k M \otimes_R \operatorname{Sym}^{n-k} N\;}.
 $$</p>
 <p><em>Proof.</em> Both sides represent the same functor of $P$. Giving a symmetric multilinear map $f : (M \oplus N)^n \to P$ is the same as giving, for each $k$, a map on $M^k \times N^{n-k}$ that is symmetric multilinear in the $M$-variables and in the $N$-variables separately, the blocks being independent; a symmetric multilinear $f$ is determined by these restrictions, and any such family combines uniquely to a symmetric multilinear $f$ because the symmetry only permutes variables within each block. Hence</p>
 <p>$$

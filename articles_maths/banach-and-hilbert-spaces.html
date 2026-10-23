@@ -94,7 +94,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (Cauchy–Schwarz).</strong> For all $x,y$ in an inner product space,</p>
 <p>$$
-|\langle x,y\rangle| \le \|x\|\,\|y\| ,
+\boxed{\;|\langle x,y\rangle| \le \|x\|\,\|y\|\;} ,
 $$</p>
 <p>with equality if and only if $x,y$ are linearly dependent.</p>
 <p><em>Proof.</em> If $y=0$ both sides vanish. Otherwise write $x=\alpha y+z$ with $\alpha=\langle x,y\rangle/\|y\|^2$, so that $\langle z,y\rangle=0$. Then</p>
@@ -122,7 +122,7 @@ $$</p>
 <p><strong>Definition.</strong> A subset $C$ of a normed space is <strong>convex</strong> if $(1-t)x+ty \in C$ for $x,y \in C$ and $0 \le t \le 1$.</p>
 <p><strong>Theorem (projection).</strong> Let $C$ be a nonempty closed convex subset of a Hilbert space $H$. For every $x \in H$ there is a unique $p \in C$ with $\|x-p\|=d(x,C)=\inf_{c \in C}\|x-c\|$. If $C=M$ is a closed subspace, then $x-p \perp M$ and every $x$ has a unique decomposition</p>
 <p>$$
-x=p+q, \qquad p \in M,\ q \in M^{\perp} ,
+\boxed{\;x=p+q, \qquad p \in M,\ q \in M^{\perp}\;} ,
 $$</p>
 <p>so $H=M \oplus M^{\perp}$, where $M^{\perp}=\{y : \langle y,m\rangle=0 \text{ for all } m \in M\}$.</p>
 <p><em>Proof.</em> Choose a minimising sequence $c_n$; the parallelogram law applied to $x-c_m$ and $x-c_n$ gives</p>
@@ -180,7 +180,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>spectral measure</strong> on $H$ is a map $E$ from the Borel sets of $\sigma(T) \subseteq \mathbb{R}$ to projections with $E(\varnothing)=0$, $E(\sigma(T))=I$, countable additivity in the strong operator topology and $E(S \cap S')=E(S)E(S')$.</p>
 <p><strong>Theorem (spectral theorem, self-adjoint case).</strong> Let $T$ be a bounded self-adjoint operator on a Hilbert space $H$. Then there is a spectral measure $E$ supported on the compact set $\sigma(T) \subseteq \mathbb{R}$ such that</p>
 <p>$$
-T=\int_{\sigma(T)}\lambda\,dE(\lambda), \qquad \text{so that} \qquad \langle Tx,y\rangle=\int_{\sigma(T)}\lambda\,d\langle E(\lambda)x,y\rangle ,
+\boxed{\;T=\int_{\sigma(T)}\lambda\,dE(\lambda), \qquad \text{so that} \qquad \langle Tx,y\rangle=\int_{\sigma(T)}\lambda\,d\langle E(\lambda)x,y\rangle\;} ,
 $$</p>
 <p>and for every bounded measurable function $f$ on $\sigma(T)$ the operator $f(T)=\int f\,dE$ is bounded with $\|f(T)\|=\sup_{\lambda \in \sigma(T)}|f(\lambda)|$. The map $f \mapsto f(T)$ is a $\mathbb{K}$-algebra homomorphism from the bounded Borel functions to $B(H)$ sending $1$ to $I$ and the identity function to $T$.</p>
 <p><strong>Theorem (spectral theorem, normal case).</strong> A bounded operator $T$ on a complex Hilbert space is normal if and only if there is a spectral measure $E$ supported on the compact subset $\sigma(T) \subseteq \mathbb{C}$ with $T=\int \lambda\,dE(\lambda)$. Equivalently, $T$ is unitarily equivalent to multiplication by the identity function on a direct sum of spaces $L^2(\sigma(T),\mu_j)$.</p>

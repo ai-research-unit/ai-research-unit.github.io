@@ -74,7 +74,7 @@
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Proposition (the units are the nonzero elements).</strong> The group of units of the quaternion product is</p>
 <p>$$
-\mathbb{H}^\times=\mathrm{GL}_1(\mathbb{H})=\{\tilde q:\tilde q\neq0\},
+\boxed{\;\mathbb{H}^\times=\mathrm{GL}_1(\mathbb{H})=\{\tilde q:\tilde q\neq0\}\;}
 $$</p>
 <p>of real dimension $4$, open and dense in the algebra; its centre is $\mathbb{R}^\times e_t\cong\mathbb{R}^\times$, of real dimension one.</p>
 <p><em>Proof.</em> The algebra is a division algebra, so every nonzero element is invertible, with inverse $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ (<em>Norm and Invertibility in the Quaternion Algebra</em>); the origin is a closed proper algebraic subset, so its complement is open and dense; an element commutes with all of $\mathbb{H}$ exactly when it is a real scalar multiple of $e_t$, and the central units are the nonzero ones.</p>
@@ -82,19 +82,15 @@ $$</p>
 <p><em>Proof.</em> The product is polynomial in the coordinates, and the inverse has coordinates rational with denominator $\langle\tilde q\rangle_{\natural}\neq0$; both are continuous on the punctured space.</p>
 <h2 id="the-decomposition-with-the-sphere">The Decomposition with the Sphere</h2>
 <p><strong>Theorem (the units are a product).</strong> The map</p>
-<p>$$
-\mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
-\tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr),
-$$</p>
+<p>$$ \boxed{\; \mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
+\tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr) \;} ,$$</p>
 <p>is an isomorphism of topological groups, the second factor being the group of unit quaternions and the first the multiplicative group of the positive reals.</p>
 <p><em>Proof.</em> The map is well defined and continuous; the inverse is $(t,\tilde u)\mapsto t\tilde u$, continuous, and satisfies $\lvert t\tilde u\rvert=t$ because $\lvert\tilde u\rvert=1$; multiplicativity of the norm gives $\lvert\tilde q_1\tilde q_2\rvert=\lvert\tilde q_1\rvert\lvert\tilde q_2\rvert$, so the map is a group homomorphism, and its kernel and image are as displayed.</p>
 <p><strong>Corollary (the units are connected and their topology is the sphere's).</strong> The group $\mathbb{H}^\times$ is connected, path-connected and not compact; it is homotopy equivalent to $S^3$, so it is simply connected, $\pi_1(\mathbb{H}^\times)=0$ and $\pi_3(\mathbb{H}^\times)\cong\mathbb{Z}$.</p>
 <p><em>Proof.</em> The product $\mathbb{R}_{>0}\times S^3$ is connected and path-connected because both factors are; the factor $\mathbb{R}_{>0}$ admits the retraction $t\mapsto1$ and is contractible, so the product deformation retracts onto $S^3$; the fundamental group of $S^3$ is trivial and its third homotopy group is infinite cyclic, and these are homotopy invariants. The group is not compact because $\mathbb{R}_{>0}$ is unbounded.</p>
 <h2 id="the-compact-subgroup-of-the-unit-quaternions">The Compact Subgroup of the Unit Quaternions</h2>
 <p><strong>Proposition (the maximal compact subgroup).</strong> The unit quaternions</p>
-<p>$$
-Sp(1)=S^3=\{\tilde u:\tilde u^{\natural}\tilde u=e_t\}
-$$</p>
+<p>$$ \boxed{\; Sp(1)=S^3=\{\tilde u:\tilde u^{\natural}\tilde u=e_t\} \;} $$</p>
 <p>are a compact Lie group of real dimension $3$, the maximal compact subgroup of $\mathbb{H}^\times$; the decomposition $\mathbb{H}^\times=\mathbb{R}_{>0}\cdot Sp(1)$ holds, and the centre of $Sp(1)$ is $\{\pm e_t\}$.</p>
 <p><em>Proof.</em> The set $S^3$ is closed and bounded in $\mathbb{H}$, hence compact; it is closed under the product and the inverse, so it is a subgroup; it is a differentiable submanifold of dimension three cut by $N=1$ with nonzero gradient, so it is a Lie group. Every unit $\tilde q$ is $\lvert\tilde q\rvert\cdot\tilde u$ with $\tilde u$ a unit quaternion, which is the displayed decomposition and shows maximality, a compact subgroup lying in $S^3$ by the norm bound. An element of $S^3$ commuting with all of $\mathbb{H}$ is a real scalar unit, that is $\pm e_t$.</p>
 <p><strong>Remark (the quotient by the centre).</strong> The centre $\{\pm e_t\}$ is a discrete normal subgroup, and the quotient $Sp(1)/\{\pm e_t\}$ is the group of the rotations of three-dimensional space; it is the two-to-one cover read as a group quotient, and it is <em>Quaternion Rotations and Reflections</em>.</p>

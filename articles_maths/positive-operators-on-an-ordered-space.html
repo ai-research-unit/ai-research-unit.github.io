@@ -82,7 +82,7 @@ $$</p>
 <p>Let $E$ and $F$ be ordered vector spaces and let $L(E,F)$ be the real vector space of linear maps.</p>
 <p><strong>Definition.</strong> A linear map $T\in L(E,F)$ is <strong>positive</strong>, written $T\geq0$, when</p>
 <p>$$
-x\in E_+ \implies Tx\in F_+ .
+\boxed{\;x\in E_+ \implies Tx\in F_+\;} .
 $$</p>
 <p>It is <strong>strictly positive</strong> when it carries every nonzero element of $E_+$ to a nonzero element of $F_+$. The <strong>operator order</strong> on $L(E,F)$ is $S\leq T$ when $T - S\geq0$.</p>
 <p><strong>Proposition (positive equals monotone).</strong> A linear map $T$ is positive if and only if $x\leq y$ implies $Tx\leq Ty$.</p>
@@ -100,7 +100,7 @@ $$</p>
 <h3 id="positive-operators-between-order-unit-spaces">Positive Operators between Order-Unit Spaces</h3>
 <p><strong>Proposition (a positive operator is bounded, and its norm is attained at the unit).</strong> Let $E$ and $F$ have order units $u$ and $v$, with order-unit norms $\|\cdot\|_u$ and $\|\cdot\|_v$, and suppose $E$ is Archimedean. A positive operator $T\in L(E,F)$ is bounded for the order-unit norms, and</p>
 <p>$$
-\|T\| = \|Tu\|_v .
+\boxed{\;\|T\| = \|Tu\|_v\;} .
 $$</p>
 <p><em>Proof.</em> If $\|x\|_u\leq1$ then $-\!u\leq x\leq u$, so $-\!Tu\leq Tx\leq Tu$ by positivity, which is $\|Tx\|_v\leq\|Tu\|_v$; conversely $\|u\|_u = 1$ gives the reverse inequality for the operator norm, which is $\sup\{\|Tx\|_v : \|x\|_u\leq1\}$.</p>
 <p>This is the first appearance of the metric theory of the order: a positive operator is automatically continuous for the order topology, and the norm of the operator is read off at the order unit. The order-unit norm and the topology are <em>Ordered Vector Spaces and the Order Unit</em>.</p>

@@ -95,7 +95,7 @@ $$</p>
 <h3 id="the-main-computation">The main computation</h3>
 <p><strong>Theorem.</strong> Let $\beta=\alpha\sigma$ be the composite of the grade involution and the involution of the algebra, an involution of $A$ because $\alpha$ and $\sigma$ commute. Then for all $a,b \in A$,</p>
 <p>$$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\,\beta(b)} .
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\,\beta(b)}\;} .
 $$</p>
 <p><em>Proof.</em> Since $S^{\alpha}_{a,b}=S_{a,b}\circ\alpha$ and the adjoint is anti-multiplicative, $(S^{\alpha}_{a,b})^{*}=\alpha^{*}(S_{a,b})^{*}$. By the proposition above $\alpha^{*}=\alpha$, and by <em>The Adjoint of the Sandwich on a Bimodule over an Algebra</em> $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$. Hence $(S^{\alpha}_{a,b})^{*}=\alpha\,S_{\sigma(a),\sigma(b)}$. Finally, the conjugation identity $S^{\alpha}_{c,d}=\alpha S_{\alpha^{-1}(c),\alpha^{-1}(d)}$ of <em>The Signed Sandwich on a Bimodule over an Algebra</em> gives $\alpha S_{\sigma(a),\sigma(b)}=S^{\alpha}_{\alpha^{-1}\sigma(a),\,\alpha^{-1}\sigma(b)}$, and $\alpha^{-1}\sigma=(\alpha^{-1}\sigma)=\alpha\sigma$ because $\alpha^{-1}=\alpha$ commutes with $\sigma$.</p>
 <p>The parameters are transformed by $\beta=\alpha\sigma$, the product of the two involutions, not by $\sigma$ alone: the twist in the middle of the sandwich and the twist of the algebra both act, and they compose.</p>
@@ -124,7 +124,7 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> By the theorem and the composition rules of the signed sandwiches,</p>
 <p>$$
-(S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}=S^{\alpha}_{\beta(a),\beta(b)}S^{\alpha}_{a,b}=S_{\beta(a)\alpha(a),\,\alpha(b)\beta(b)}, \qquad S^{\alpha}_{a,b}(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{a,b}S^{\alpha}_{\beta(a),\beta(b)}=S_{a\alpha(\beta(a)),\,\alpha(\beta(b))b}.
+\boxed{\;(S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}=S^{\alpha}_{\beta(a),\beta(b)}S^{\alpha}_{a,b}=S_{\beta(a)\alpha(a),\,\alpha(b)\beta(b)}, \qquad S^{\alpha}_{a,b}(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{a,b}S^{\alpha}_{\beta(a),\beta(b)}=S_{a\alpha(\beta(a)),\,\alpha(\beta(b))b}\;}.
 $$</p>
 <p>With $\beta=\alpha\sigma$ and $\alpha^{2}=\mathrm{id}$, the parameters are $\beta(a)\alpha(a)=\alpha(\sigma(a)a)$, $\alpha(b)\beta(b)=\alpha(b\sigma(b))$ in the first product, and $a\alpha(\beta(a))=a\sigma(a)$, $\alpha(\beta(b))b=\sigma(b)b$ in the second. Both products equal $\mathrm{id}=S_{1,1}$ exactly when $\sigma(a)a=a\sigma(a)=1$ and $\sigma(b)b=b\sigma(b)=1$, by injectivity of the sandwich map.</p>
 <p>The parameter criterion is independent of the grading: the grade involution enters the adjoint formula but cancels from the unitarity condition, so the unitary signed sandwiches are those with unitary parameters, exactly as in the unsigned case.</p>
@@ -135,7 +135,7 @@ $$</p>
 <h3 id="reflections">Reflections</h3>
 <p><strong>Corollary.</strong> For a unit $u$ the reflection $r_u=S^{\alpha}_{u,u^{-1}}$ has a reflection as its adjoint,</p>
 <p>$$
-(r_u)^{*}=S^{\alpha}_{\beta(u),\,\beta(u)^{-1}}=r_{\beta(u)},
+\boxed{\;(r_u)^{*}=S^{\alpha}_{\beta(u),\,\beta(u)^{-1}}=r_{\beta(u)}\;},
 $$</p>
 <p>and $r_u$ is unitary exactly when $u$ is a unitary element of $A$.</p>
 <p><em>Proof.</em> The adjoint formula with $S^{\alpha}_{u,u^{-1}}$ and the relation $\beta(u^{-1})=\beta(u)^{-1}$ give the first display; the unitarity criterion with $(a,b)=(u,u^{-1})$ gives the second.</p>

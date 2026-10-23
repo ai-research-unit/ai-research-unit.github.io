@@ -88,7 +88,7 @@ $$</p>
 <h3 id="the-axioms">The Axioms</h3>
 <p><strong>Theorem.</strong> $J(A)$ is a commutative Jordan algebra over the fixed ring $R^{\varsigma}$: the product $\circ$ is commutative and $R^{\varsigma}$-bilinear, and it satisfies the Jordan identity</p>
 <p>$$
-(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr)
+\boxed{\;(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr)\;}
 $$</p>
 <p>for all $x, y \in H(A)$.</p>
 <p><strong>Proof.</strong> On $H(A)$ the symmetrised sesquilinear product is the plain symmetrisation $\tfrac12(xy+yx)$, and that is the symmetrisation of the associative product of $A$; the symmetrisation of an associative algebra satisfies the Jordan identity, by <em>Jordan Algebras</em>, §<em>The Symmetrisation of an Associative Algebra</em>. Commutativity is by construction, and the $R^{\varsigma}$-bilinearity is the scalar theorem of <em>The Sesquilinear Symmetrised Product</em>: each slot of $\circ$ receives one linear and one conjugate-linear contribution, and the fixed ring is exactly what survives.</p>
@@ -133,7 +133,7 @@ $$</p>
 <h3 id="the-peirce-decomposition">The Peirce Decomposition</h3>
 <p><strong>Theorem.</strong> Let $e$ be a Hermitian idempotent of $A$ and put $f = 1 - e$. Then $f$ is a Hermitian idempotent, the Jordan algebra splits as</p>
 <p>$$
-J(A) = \mathrm{J}_1(e) \oplus \mathrm{J}_{1/2}(e) \oplus \mathrm{J}_0(e),
+\boxed{\;J(A) = \mathrm{J}_1(e) \oplus \mathrm{J}_{1/2}(e) \oplus \mathrm{J}_0(e)\;},
 $$</p>
 <p>where $\mathrm{J}_\lambda(e)$ is the $\lambda$-eigenspace of the operator $x \mapsto e \circ x$ on $J(A)$, and the three spaces are the Hermitian parts of the associative Peirce spaces of $e$:</p>
 <p>$$
@@ -153,7 +153,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> $\mathrm{Jor}_x$ takes its values in $J(A)$, is $R^{\varsigma}$-linear, and read through the associative product of $A$ it is</p>
 <p>$$
-\mathrm{Jor}_x(y) = xyx .
+\boxed{\;\mathrm{Jor}_x(y) = xyx\;} .
 $$</p>
 <p><strong>Proof.</strong> For $y \in H(A)$ the element $xyx$ is Hermitian, $(xyx)^{*} = x^{*}y^{*}x^{*} = xyx$, so the operator preserves $J(A)$, and it is $R^{\varsigma}$-linear because the product is $R^{\varsigma}$-bilinear on the Hermitian part. Expanding, $x \circ (x \circ y) = \tfrac14(x^{2}y + 2xyx + yx^{2})$ and $(x \circ x)\circ y = \tfrac12(x^{2}y + yx^{2})$, so the combination displayed is $xyx$.</p>
 <p><strong>Corollary.</strong> $\mathrm{Jor}_x(x) = x^{3}$ and $\mathrm{Jor}_1 = \mathrm{id}$; the map $x \mapsto \mathrm{Jor}_x$ is quadratic in $x$, and it replaces the associativity that the Jordan product does not have, in the sense that the products of three elements of $J(A)$ are governed by it.</p>

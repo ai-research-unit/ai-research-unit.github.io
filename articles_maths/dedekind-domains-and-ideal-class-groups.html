@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-factorisation-theorem">The Factorisation Theorem</h3>
 <p><strong>Theorem (unique factorisation of ideals).</strong> Let $R$ be a Dedekind domain and let $0 \neq I \subsetneq R$ be a proper nonzero ideal. Then</p>
 <p>$$
-I = \mathrm{P}_1^{e_1} \mathrm{P}_2^{e_2} \cdots \mathrm{P}_r^{e_r}
+\boxed{\;I = \mathrm{P}_1^{e_1} \mathrm{P}_2^{e_2} \cdots \mathrm{P}_r^{e_r}\;}
 $$</p>
 <p>with $\mathrm{P}_i$ distinct nonzero prime ideals and $e_i \geq 1$, and the representation is unique up to the order of the factors. Equivalently, every nonzero fractional ideal is a product $\prod_{\mathrm{M}} \mathrm{M}^{v_\mathrm{M}}$ with $v_\mathrm{M} \in \mathbb{Z}$ and $v_\mathrm{M} = 0$ for all but finitely many $\mathrm{M}$.</p>
 <p><strong>Proof.</strong> Existence: since $R$ is Noetherian of dimension one, the primary decomposition of $I$ is an intersection of $\mathrm{M}$-primary ideals for the finitely many maximal ideals $\mathrm{M}$ containing $I$. In a Dedekind domain an $\mathrm{M}$-primary ideal is a power of $\mathrm{M}$: by the local structure theorem the ideal becomes $(\pi^{n})$ in $R_\mathrm{M}$, and contracting gives $\mathrm{M}^n$. Taking the product of the primary components, which are pairwise comaximal, gives $I$ as a product of prime powers, since the primary components lie in distinct maximal ideals.</p>
@@ -148,7 +148,7 @@ R \longrightarrow R/\mathrm{A}_1 \times \cdots \times R/\mathrm{A}_r
 $$</p>
 <p>is surjective with kernel $\mathrm{A}_1 \cap \cdots \cap \mathrm{A}_r = \mathrm{A}_1 \cdots \mathrm{A}_r$, hence induces an isomorphism</p>
 <p>$$
-R/(\mathrm{A}_1 \cdots \mathrm{A}_r) \;\cong\; R/\mathrm{A}_1 \times \cdots \times R/\mathrm{A}_r .
+\boxed{\;R/(\mathrm{A}_1 \cdots \mathrm{A}_r) \;\cong\; R/\mathrm{A}_1 \times \cdots \times R/\mathrm{A}_r\;} .
 $$</p>
 <p><strong>Proof.</strong> The kernel is the intersection, which equals the product for pairwise comaximal ideals. Surjectivity is the standard Chinese remainder argument: for $r = 2$, comaximality gives $a_1 + a_2 = 1$ with $a_i \in \mathrm{A}_i$, and the element $x = b_1 a_2 + b_2 a_1$ maps to $(b_1, b_2)$ modulo $(\mathrm{A}_1,\mathrm{A}_2)$ since $a_2 \equiv 1$ mod $\mathrm{A}_1$ and $a_1 \equiv 1$ mod $\mathrm{A}_2$; induction gives the general case.</p>
 <p>The Chinese remainder theorem is what allows a congruence modulo an ideal to be solved prime by prime, and it is the arithmetic engine of class field theory.</p>
@@ -162,7 +162,7 @@ $$</p>
 <p>The class of a fractional ideal $I$ is written $[I]$, and the order $\lvert \operatorname{Cl}(R) \rvert$ is the <strong>class number</strong> of $R$ when finite.</p>
 <p><strong>Theorem.</strong> The ideal class group is an abelian group. Its identity is the class of $R$, and $[I] = [J]$ if and only if $I = xJ$ for some $x \in K^\times$. Moreover</p>
 <p>$$
-\operatorname{Cl}(R) = 0 \iff R \text{ is a principal ideal domain} \iff R \text{ is a unique factorisation domain}.
+\boxed{\;\operatorname{Cl}(R) = 0 \iff R \text{ is a principal ideal domain} \iff R \text{ is a unique factorisation domain}\;}.
 $$</p>
 <p><strong>Proof.</strong> The group law is induced by multiplication of fractional ideals, which is associative and commutative with identity $R$ and inverses from the corollary above; the quotient by principal ideals is therefore a group, and $[I]=[J]$ exactly when $IJ^{-1}$ is principal, i.e. $I = xJ$.</p>
 <p>For the equivalences: $\operatorname{Cl}(R)=0$ says every fractional ideal, in particular every integral ideal, is principal, which is the definition of a principal ideal domain. Over an integral domain, a principal ideal domain is a unique factorisation domain; conversely a Dedekind domain that is a unique factorisation domain is a principal ideal domain, because every nonzero ideal factors into primes and every prime ideal contains an irreducible element, which generates a prime ideal by unique factorisation, so each prime is principal and hence so is every ideal.</p>

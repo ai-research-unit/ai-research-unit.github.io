@@ -75,8 +75,8 @@
 <h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
 <p><strong>Theorem (the adjoint is a signed sandwich).</strong> For every $a,b\in G$,</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(b)^{-1}}
-=\Sigma^{\alpha}_{\alpha(a^{-1}),\ \alpha(b^{-1})}.
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(b)^{-1}}
+=\Sigma^{\alpha}_{\alpha(a^{-1}),\ \alpha(b^{-1})}\;}.
 $$</p>
 <p><strong>Proof.</strong> In the basis $G$, $\Sigma^{\alpha}_{a,b}(g)=a\,\alpha(g)\,b$, so the matrix entry $\bigl(\Sigma^{\alpha}_{a,b}\bigr)_{h,g}$ equals $1$ exactly when $h=a\,\alpha(g)\,b$, that is when $g=\alpha(a)^{-1}\alpha(h)\alpha(b)^{-1}=\alpha\bigl(a^{-1}hb^{-1}\bigr)$, using that $\alpha$ is an automorphism with $\alpha^{2}=\mathrm{id}$. Hence the transpose sends $h$ to $\alpha(a)^{-1}\alpha(h)\alpha(b)^{-1}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}(h)$.</p>
 <p><strong>Corollary (the adjoint inverts and twists the parameters).</strong> The adjoint of a signed sandwich is a signed sandwich, and the assignment on the parameters is</p>
@@ -90,7 +90,7 @@ $$</p>
 <h2 id="unitarity">Unitarity</h2>
 <p><strong>Theorem (every signed sandwich is unitary).</strong> For every $a,b\in G$,</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\Sigma^{\alpha}_{a,b}=\mathrm{id}=\Sigma^{\alpha}_{a,b}\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}.
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\Sigma^{\alpha}_{a,b}=\mathrm{id}=\Sigma^{\alpha}_{a,b}\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\;}.
 $$</p>
 <p><strong>Proof.</strong> By the adjoint formula and the composition law,</p>
 <p>$$
@@ -111,7 +111,7 @@ $$</p>
 <p><strong>Proof.</strong> The equality $a\alpha(x)b=c\alpha(x)d$ for all $x$ is equivalent to $c^{-1}a\,\alpha(x)=\alpha(x)\,db^{-1}$ for all $x$; the element $u=c^{-1}a$ then commutes with every $\alpha(x)$, hence $u\in Z(G)$, and $db^{-1}=u$. Setting $z=u$ gives the two relations.</p>
 <p><strong>Theorem (the self-adjointness criterion).</strong> The signed sandwich $\Sigma^{\alpha}_{a,b}$ is self-adjoint if and only if</p>
 <p>$$
-\alpha(a)\,a\in Z(G) \quad\text{and}\quad b\,\alpha(b)=\bigl(\alpha(a)\,a\bigr)^{-1},
+\boxed{\;\alpha(a)\,a\in Z(G) \quad\text{and}\quad b\,\alpha(b)=\bigl(\alpha(a)\,a\bigr)^{-1}\;},
 $$</p>
 <p>equivalently if and only if there is a central element $z$ of order at most two with $\alpha(a)a=z$ and $b\alpha(b)=z$.</p>
 <p><strong>Proof.</strong> Self-adjointness is $\Sigma^{\alpha}_{a,b}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$, which by the equality criterion is the existence of $z\in Z(G)$ with $\alpha(a)^{-1}=a z^{-1}$ and $\alpha(b)^{-1}=zb$. The first gives $z=\alpha(a)a$; substituting into the second gives $\alpha(b)^{-1}=\alpha(a)a\,b$, equivalently $b\alpha(b)=(\alpha(a)a)^{-1}$. Since $z=\alpha(a)a$ and $z^{-1}=b\alpha(b)$ are both displayed as the same central element and its inverse, $z^{2}=e$. In particular the self-adjoint signed sandwiches are the ones whose two parameters satisfy the reflection condition $\alpha(a)a\in Z(G)$ on the first and its inverse on the second.</p>

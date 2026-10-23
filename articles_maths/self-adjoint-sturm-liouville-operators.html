@@ -77,12 +77,12 @@
 <p><strong>Definition.</strong> Let $\ell y=-(py')'+qy$ on an interval $(a,b)$ with real $p>0$, real $q$, and $1/p$, $q$ locally integrable. Let $w>0$ be the weight and $L^2_w(a,b)$ the weighted space. The <strong>minimal operator</strong> $T_0$ is the closure in $L^2_w(a,b)$ of the operator defined on $C_c^\infty(a,b)$ by $\ell$; the <strong>maximal operator</strong> $T_1$ is the restriction of $\ell$, read in the distributional sense, to the set of $y\in L^2_w$ with $\ell y\in L^2_w$.</p>
 <p><strong>Theorem (the adjoint of the minimal operator).</strong> The minimal operator is symmetric, $T_0\subseteq T_0^{*}$, and its adjoint is the maximal operator:</p>
 <p>$$
-T_0^{*} = T_1 .
+\boxed{\;T_0^{*} = T_1\;} .
 $$</p>
 <p><em>Proof.</em> The symmetry of $T_0$ is the vanishing of the bracket on compactly supported functions, which have both boundary terms zero. For the adjoint, $v\in\mathrm{dom}\,T_0^{*}$ means that the functional $y\mapsto\langle T_0y,v\rangle$ is bounded on $C_c^\infty$; integrating by parts twice writes the pairing as $\langle y,\ell v\rangle$ plus boundary terms, and the boundedness for all $y$ forces $\ell v\in L^2_w$ and the boundary terms to vanish; hence $v\in\mathrm{dom}\,T_1$, and the two domains agree by the same computation in reverse.</p>
 <p><strong>Theorem (self-adjointness and the bracket).</strong> An operator $T$ with $T_0\subseteq T\subseteq T_1$ is self-adjoint if and only if its domain is the set of $y\in\mathrm{dom}\,T_1$ for which the boundary form vanishes against the domain,</p>
 <p>$$
-\langle y,v\rangle_\partial = \Bigl[p\,(y\bar v'-y'\bar v)\Bigr]_a^b = 0 \qquad \text{for all } y,v\in\mathrm{dom}\,T .
+\boxed{\;\langle y,v\rangle_\partial = \Bigl[p\,(y\bar v'-y'\bar v)\Bigr]_a^b = 0 \qquad \text{for all } y,v\in\mathrm{dom}\,T\;} .
 $$</p>
 <p>The conditions defining such domains are the <strong>self-adjoint boundary conditions</strong>, and they are exactly the Lagrangian subspaces of the boundary form of <em>The Lagrange Identity and the Self-Adjoint System</em>.</p>
 <p><em>Proof.</em> For $y,v\in\mathrm{dom}\,T_1$, the Green formula of the interval gives $\langle\ell y,v\rangle-\langle y,\ell v\rangle=[p(y\bar v'-y'\bar v)]_a^b$. The adjoint $T^{*}$ of an operator $\mathcal{D}$ between $T_0$ and $T_1$ has the domain of the $v\in\mathrm{dom}\,T_1$ for which this bracket vanishes against every $y\in\mathcal{D}$; hence $T=T^{*}$ exactly when the bracket vanishes for all pairs in the domain, which is the stated condition. The Lagrangian description is that of the general theory of the boundary form.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p><em>Proof.</em> The bracket $[p(y\bar v'-y'\bar v)]_a^b$ is the sum of the two endpoint forms; a separated condition at each endpoint makes each endpoint form vanish because the pair $(y,(py'))$ is parallel to $(\alpha_2,-\alpha_1)$, so the assembled vector is isotropic, and a coupled condition with a Lagrangian matrix makes the whole form vanish. The self-adjointness is the preceding theorem, and the domain is the maximal domain cut down by the conditions.</p>
 <p><strong>Theorem (compact resolvent and the eigenfunction expansion).</strong> Let the problem be regular and let $T$ be a self-adjoint extension. Then $T$ has a compact resolvent, its spectrum is discrete, real and simple, the eigenvalues $\lambda_1<\lambda_2<\cdots$ tend to infinity, and the eigenfunctions $\varphi_n$ are complete in $L^2_w(a,b)$:</p>
 <p>$$
-f=\sum_{n\ge1}\bigl(f,\varphi_n\bigr)_w\varphi_n , \qquad \|f\|_w^2=\sum_{n\ge1}\bigl|(f,\varphi_n)_w\bigr|^2 .
+\boxed{\;f=\sum_{n\ge1}\bigl(f,\varphi_n\bigr)_w\varphi_n , \qquad \|f\|_w^2=\sum_{n\ge1}\bigl|(f,\varphi_n)_w\bigr|^2\;} .
 $$</p>
 <p><em>Proof.</em> The resolvent of a regular problem is the Green operator, which is compact on $L^2_w$ because it maps into a space of functions with an $L^2$ second derivative, compactly embedded by Rellich–Kondrachov; the compact self-adjoint spectral theorem of <em>Banach and Hilbert Spaces</em> then gives the orthonormal basis of eigenvectors, and the reality and the simplicity are those of the self-adjoint problem. The expansion is the expansion in that basis.</p>
 <h2 id="the-singular-case">The Singular Case</h2>

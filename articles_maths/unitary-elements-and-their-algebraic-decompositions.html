@@ -95,7 +95,7 @@ $$</p>
 <h3 id="the-theorem">The theorem</h3>
 <p><strong>Theorem.</strong> Let $u$ be unitary with eigenvalue decomposition</p>
 <p>$$
-u=\sum_{i=1}^{r}\lambda_i e_i,
+\boxed{\;u=\sum_{i=1}^{r}\lambda_i e_i\;},
 $$</p>
 <p>with the $\lambda_i$ pairwise distinct. Then there is an involution $\pi$ of the index set $\{1,\dots,r\}$ such that</p>
 <p>$$
@@ -121,7 +121,7 @@ $$</p>
 <p><em>Proof.</em> From 1 to 2: if $u$ is unitary and $e_i^*=e_i$, then the law gives $\pi(i)=i$, so $\lambda_i^{-1}=\varsigma(\lambda_i)$ and $\lambda_i\varsigma(\lambda_i)=1$. From 2 to 3: if the projectors are Hermitian, $e_i^*=e_i=e_{\pi(i)}$, so $\pi(i)=i$ by the distinctness of the idempotents. From 3 to 2: $\pi=\mathrm{id}$ gives $e_i^*=e_i$ and $\lambda_i^{-1}=\varsigma(\lambda_i)$. From 2 to 1: $u^*=\sum_i\varsigma(\lambda_i)e_i=\sum_i\lambda_i^{-1}e_i=u^{-1}$, so $u$ is unitary.</p>
 <p><strong>Corollary.</strong> A unitary element with an eigenvalue decomposition has Hermitian eigenprojectors exactly when its eigenvalues are unimodular; in that case the decomposition is</p>
 <p>$$
-u=\sum_i\lambda_i e_i, \qquad e_i^*=e_i, \qquad \lambda_i\varsigma(\lambda_i)=1,
+\boxed{\;u=\sum_i\lambda_i e_i, \qquad e_i^*=e_i, \qquad \lambda_i\varsigma(\lambda_i)=1\;},
 $$</p>
 <p>and it is the algebraic spectral decomposition of $u$.</p>
 <p><em>Proof.</em> This is the equivalence of 1 and 2 in the theorem.</p>
@@ -147,7 +147,7 @@ g_J=\sum_{i\in J}e_i .
 $$</p>
 <p><strong>Theorem.</strong> The $g_J$ are pairwise orthogonal Hermitian idempotents with $\sum_J g_J=1$, and</p>
 <p>$$
-u=\sum_{J\in\mathcal{O}}u_J, \qquad u_J=ug_J=g_Jug_J,
+\boxed{\;u=\sum_{J\in\mathcal{O}}u_J, \qquad u_J=ug_J=g_Jug_J\;},
 $$</p>
 <p>where $u_J$ is unitary in the corner $g_JAg_J$. On a one-element orbit $\{\lambda\}$, $u_J=\lambda g_J$ with $\lambda$ unimodular. On a two-element orbit $\{\lambda,\mu\}$ with $\mu=\varsigma(\lambda)^{-1}$, the corner contains the idempotents $e_\lambda,e_\mu$, exchanged by $*$, and $u_J=\lambda e_\lambda+\mu e_\mu$.</p>
 <p><em>Proof.</em> The involution permutes the $e_i$ within each orbit, so it fixes $g_J$; the orbit idempotents are orthogonal and sum to $1$. The element $u_J=ug_J=g_Jug_J$ is unitary in the corner: $u_J^*u_J=g_Ju^*ug_J=g_J$, and similarly on the other side. On a singleton, the eigenvalue is unimodular by the theorem. On a pair, the formula is the decomposition, and $\mu=\varsigma(\lambda)^{-1}$ is the law.</p>

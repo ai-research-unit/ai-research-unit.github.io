@@ -81,7 +81,7 @@ $$</p>
 <h3 id="the-operators">The Operators</h3>
 <p><strong>Definition.</strong> The <strong>translation operator</strong> by $a \in G$ acts on the functions on $G$ by</p>
 <p>$$
-(T_a f)(x) = f(a^{-1}x),
+\boxed{\;(T_a f)(x) = f(a^{-1}x)\;},
 $$</p>
 <p>and on the functions on a quotient $G/\Gamma$ by $(T_a f)(x\Gamma) = f(a^{-1}x\Gamma)$; it is the operator of left translation, and $a \mapsto T_a$ is the left regular representation of $G$ on the function space. The <strong>right translation</strong> $S_b f(x) = f(xb)$ is the corresponding operator of the right action.</p>
 <p><strong>Proposition.</strong> The translation operators form a representation, $T_a T_b = T_{ab}$, and the right translations form another, $S_a S_b = S_{ab}$; the two commute, $T_a S_b = S_b T_a$, and the inverse relations $T_a^{-1} = T_{a^{-1}}$, $S_b^{-1} = S_{b^{-1}}$ hold. On $L^2(G)$ the operators $T_a$, $S_b$ are isometries for the left and right Haar measures, and they are unitary for a bi-invariant measure when $G$ is unimodular.</p>
@@ -90,7 +90,7 @@ $$</p>
 <p><strong>Definition.</strong> An operator on the functions on $G$ is <strong>translation-invariant</strong> (or <strong>right-invariant</strong> in the usual convention) when it commutes with every left translation, $A T_a = T_a A$ for all $a$; such operators are the operators that the group's own translations cannot tell apart.</p>
 <p><strong>Proposition.</strong> The operators commuting with all left translations are exactly the <strong>right convolutions</strong>: the operator $A$ is translation-invariant if and only if there is a distribution or measure $\mu$ with</p>
 <p>$$
-A f(x) = \int_G f(xy)\,d\mu(y) = (f * \mu)(x),
+\boxed{\;A f(x) = \int_G f(xy)\,d\mu(y) = (f * \mu)(x)\;},
 $$</p>
 <p>so that the algebra of translation-invariant operators is the convolution algebra of measures on $G$, <em>The Involution on the Measure Algebra</em> and <em>Convolution on a Group</em>. In particular every translation-invariant operator commutes with every right translation and the algebra is commutative exactly when $G$ is abelian.</p>
 <p><strong>Proof.</strong> If $A$ is translation-invariant then for each $x$ the functional $f \mapsto (Af)(x)$ is a distribution $\mu_x$ supported at $x$ — the invariance forces $\mu_x = \delta_x * \mu$ to be a translate of a single distribution $\mu$, so $Af = f * \mu$; conversely a right convolution commutes with the left translations by associativity and invariance of the measure. The commutativity in the abelian case is the commutativity of convolution there.</p>

@@ -172,14 +172,14 @@ $$</p>
 <p>for $X \neq 0$: the two middle terms cancel, since $g(X,JX) = g(JX,X)$ by symmetry of $g$, and $g(JX,JX) = g(X,X)$ supplies the second copy of $g(X,X)$.</p>
 <p><strong>Proposition.</strong> Every almost complex manifold admits a Hermitian metric: if $g_0$ is any Riemannian metric, then</p>
 <p>$$
-g(X, Y) = \tfrac12\bigl(g_0(X,Y) + g_0(JX, JY)\bigr)
+\boxed{\;g(X, Y) = \tfrac12\bigl(g_0(X,Y) + g_0(JX, JY)\bigr)\;}
 $$</p>
 <p>is Hermitian, and the assignment is a projection onto the Hermitian metrics among all metrics.</p>
 <p><strong>Proof.</strong> Compute $g(JX,JY) = \frac12(g_0(JX,JY) + g_0(J^2X, J^2Y)) = \frac12(g_0(JX,JY)+g_0(X,Y)) = g(X,Y)$, so $g$ is invariant; it is symmetric because $g_0$ is, and positive definite because it is half the sum of two positive definite forms.</p>
 <p><strong>Remark.</strong> A Hermitian metric is exactly a Riemannian metric for which the structure group of the frame bundle reduces further, from $GL(n,\mathbb{C})$ to the unitary group $\mathrm{U}(n)$; the reduction is that of <em>Fibre Bundles, Connections and Curvature</em>, and the associated form $\Omega$ is the $(1,1)$-form whose nondegeneracy and closedness govern the Kähler condition. The metric $g$ and the form $\Omega$ determine one another given $J$; the notation $g(JX,Y)$ for the fundamental form is the one fixed for this category, and it is the form that is written $\Omega$ throughout, the Kähler form of the companion article <em>Kähler Geometry</em>, being written in parallel.</p>
 <p><strong>Proposition (Wirtinger).</strong> Let $(M,J,g)$ be almost Hermitian with fundamental form $\Omega$ and let $V \subseteq T_xM$ be an oriented real $2k$-plane with oriented orthonormal basis $u_1, \ldots, u_{2k}$. Then</p>
 <p>$$
-\bigl| \Omega^{\wedge k}(u_1, \ldots, u_{2k}) \bigr| \leq k!,
+\boxed{\;\bigl| \Omega^{\wedge k}(u_1, \ldots, u_{2k}) \bigr| \leq k!\;},
 $$</p>
 <p>with equality if and only if $V$ is a complex subspace, that is $JV = V$.</p>
 <p><strong>Proof.</strong> For $k=1$ and an orthonormal basis $u, v$ of $V$, $\Omega(u,v) = g(Ju,v)$ and Cauchy–Schwarz gives $|g(Ju,v)| \leq \|Ju\|\,\|v\| = 1$, with equality exactly when $v = Ju$, that is, when $V$ is complex. For general $k$, choose an orthonormal basis adapted to the complex part of $V$: the bilinear form $\Omega^{\wedge k}$ decomposes as a sum of $k$-fold products of the $k=1$ case, and the Cauchy–Schwarz inequality applies to each factor.</p>
@@ -197,7 +197,7 @@ $$</p>
 <p>that is, the connection $1$-form is $\theta = h^{-1}\partial h$ in a holomorphic frame. Uniqueness is the uniqueness of the solution of the resulting linear system.</p>
 <p><strong>Proposition.</strong> The Chern connection is the unique connection on the holomorphic tangent bundle $\nabla : \Gamma(T^{1,0})\to\Omega^1\otimes\Gamma(T^{1,0})$ that is <strong>compatible with the Hermitian metric</strong> in the sense $dh(u,v) = h(\nabla u, v) + h(u,\nabla v)$ and whose $(0,1)$-part is the Dolbeault operator $\bar\partial$; its curvature has <strong>type $(1,1)$</strong>, that is, the curvature $2$-form takes values in the $(1,1)$-forms. In a holomorphic frame the connection matrix is $\theta = h^{-1}\partial h$ and the curvature matrix is</p>
 <p>$$
-\Theta = \bar\partial\theta = \bar\partial(h^{-1}\partial h) = -\,h^{-1}\,\bar\partial h\, h^{-1}\wedge \partial h + h^{-1}\,\bar\partial\partial h,
+\boxed{\;\Theta = \bar\partial\theta = \bar\partial(h^{-1}\partial h) = -\,h^{-1}\,\bar\partial h\, h^{-1}\wedge \partial h + h^{-1}\,\bar\partial\partial h\;},
 $$</p>
 <p>which is a matrix of $(1,1)$-forms.</p>
 <p><strong>Proof.</strong> In a holomorphic frame the entries of $h$ are smooth functions satisfying $h_{j\bar l} = \overline{h_{l\bar j}}$; the metric-compatibility condition $dh = {}^t\bar\theta\, h + h\,\theta$ forces the antiholomorphic part of $\theta$ to vanish, and the $(1,0)$-part is $h^{-1}\partial h$. The curvature is $\Theta = d\theta + \theta\wedge\theta$ for the convention $\nabla = d + \theta$, and since $\partial(h^{-1}) = -h^{-1}\partial h\,h^{-1}$ one has $\partial\theta = -\,h^{-1}\partial h\,h^{-1}\wedge\partial h = -\theta\wedge\theta$, so the $(2,0)$-terms cancel and $\Theta = \bar\partial\theta$.</p>

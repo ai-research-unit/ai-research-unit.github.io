@@ -80,17 +80,17 @@
 $$</p>
 <p>and the general solution is</p>
 <p>$$
-y_n = (g_\gamma^n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j .
+\boxed{\; y_n = (g_\gamma^n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j \;}.
 $$</p>
 <p><strong>Proof.</strong> The chain rule gives $(g^n)'(x_0) = \prod_{k=0}^{n-1} g'(x_k) = \prod_{k=0}^{n-1} 2x_k$. The affine recursion has the homogeneous solution $\prod 2x_k$ and the particular solution obtained by the variation of constants, which is the displayed sum.</p>
 <p><strong>Remark (what the dual direction records).</strong> The infinitesimal coordinate records two things, and only two: the derivative $(g^n)'(x_0)$ of the real iterate through the homogeneous part, and the accumulated affine term $\delta\sum\prod 2x_j$ through the parameter $\delta$. There is no nonlinearity, no rotation and no second dimension: the entire infinitesimal dynamics is the derivative cocycle of a one-dimensional real map.</p>
 <p><strong>Definition.</strong> The <strong>multiplier</strong> of a periodic orbit $x_0, \ldots, x_{p-1}$ of period $p$ of $g_\gamma$ is</p>
 <p>$$
-\lambda = (g_\gamma^p)'(x_0) = \prod_{k=0}^{p-1} 2x_k ,
+\boxed{\; \lambda = (g_\gamma^p)'(x_0) = \prod_{k=0}^{p-1} 2x_k \;},
 $$</p>
 <p>and the <strong>Lyapunov exponent</strong> of an orbit with respect to an invariant measure $\mu$ is</p>
 <p>$$
-\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma^n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general} .
+\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma^n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general}.
 $$</p>
 <p><strong>Theorem (what the infinitesimal dynamics reports).</strong> On a periodic orbit of period $p$ the infinitesimal coordinate is multiplied by the multiplier in one period,</p>
 <p>$$
@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>Fatou set</strong> of $f_c$ is the set of points of $\mathbb{D}'$ at which the family of iterates is equicontinuous on some neighbourhood, the plane being given the Euclidean metric and its one-point compactification, and the <strong>Julia set</strong> is the complement. The map $f_c$ being triangular, the projection $\pi(z) = x$ carries the dynamics to the real quadratic map $g_\gamma$.</p>
 <p><strong>Theorem (the collapse of the two sets).</strong> For every $c = \gamma+\varepsilon\delta$,</p>
 <p>$$
-F(f_c) = \pi^{-1}\bigl(F(g_\gamma)\bigr), \qquad J(f_c) = \pi^{-1}\bigl(J(g_\gamma)\bigr) = J(g_\gamma)\times\mathbb{R}\varepsilon ,
+\boxed{\; F(f_c) = \pi^{-1}\bigl(F(g_\gamma)\bigr), \qquad J(f_c) = \pi^{-1}\bigl(J(g_\gamma)\bigr) = J(g_\gamma)\times\mathbb{R}\varepsilon \;},
 $$</p>
 <p>so the Fatou and the Julia sets of the dual map are the vertical cylinders over the real Fatou and Julia sets: the dual Julia set is a union of vertical lines, and it has no structure in the infinitesimal direction beyond the factor $\mathbb{R}$.</p>
 <p><strong>Proof.</strong> If $x \in J(g_\gamma)$ then the iterates are not equicontinuous near $x$ already in the real direction, so no point of $x+\mathbb{R}\varepsilon$ is in the Fatou set. If $x \in F(g_\gamma)$ then on a neighbourhood the real orbit is either attracted to an attracting cycle, where $(g^n)'$ is bounded and tends to $0$ on the cycle, or it escapes, where the whole iterates collapse to the point at infinity of the compactified dual plane; in both cases the affine fibre family $\{y \mapsto (g^n)'(x)y+\ldots\}$ is equicontinuous, jointly with the real family, on a neighbourhood of the fibre. Hence the Fatou set is the full preimage of the real one, and the complement is the preimage of the real Julia set.</p>

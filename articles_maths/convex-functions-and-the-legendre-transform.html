@@ -102,7 +102,7 @@ $$</p>
 <p>where $\langle x,y\rangle = y(x)$ is the duality pairing. It is a supremum of affine functions of $y$, so it is convex and lower semicontinuous, and it is proper exactly when $f$ has an affine minorant.</p>
 <p><strong>Proposition (Fenchel–Young).</strong> For all $x$ and $y$,</p>
 <p>$$
-\langle x,y\rangle \leq f(x) + f^*(y),
+\boxed{\;\langle x,y\rangle \leq f(x) + f^*(y)\;},
 $$</p>
 <p>with equality if and only if $y$ is a supporting slope of $f$ at $x$, that is, if and only if $f(x') \geq f(x) + \langle x'-x,y\rangle$ for every $x'$.</p>
 <p><em>Proof.</em> The inequality is the definition of the supremum: $f^*(y)\geq\langle x,y\rangle - f(x)$ for every $x$. Equality says the supremum is attained at $x$, which is exactly the inequality $f(x')\geq\langle x',y\rangle - f^*(y) = f(x)+\langle x'-x,y\rangle$ for every $x'$.</p>
@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-biconjugate-and-the-involution">The Biconjugate and the Involution</h3>
 <p><strong>Theorem (Fenchel–Moreau).</strong> For every function $f$,</p>
 <p>$$
-f^{* *} = \operatorname{cl}\operatorname{conv} f .
+\boxed{\;f^{* *} = \operatorname{cl}\operatorname{conv} f\;} .
 $$</p>
 <p>Consequently $f^{**} = f$ if and only if $f$ is closed and convex, and the Legendre transform is an order-reversing involution of the set of closed convex functions, an anti-automorphism of its lattice.</p>
 <p><em>Proof.</em> By definition $f^{**}(x) = \sup_y(\langle x,y\rangle - f^*(y))$, which is the supremum of the affine minorants $x\mapsto\langle x,y\rangle - f^*(y)$ of $f$ — the value $f^*(y)$ finite ensures the minorant — so it is the greatest closed convex function below $f$, namely $\operatorname{cl}\operatorname{conv} f$. Applying the identity twice to a closed convex $f$ returns $f$; and the transform reverses order, so it reverses the lattice operations.</p>
@@ -137,7 +137,7 @@ $$</p>
 <p>empty when $f(x) = +\infty$, and it is a closed convex subset of $E'$. A point $x$ <strong>minimises</strong> $f$ when $0\in\partial f(x)$.</p>
 <p><strong>Proposition (the transform and the subdifferential are inverse).</strong> For all $x$ and $y$,</p>
 <p>$$
-y\in\partial f(x) \iff x\in\partial f^*(y) \iff f(x) + f^*(y) = \langle x,y\rangle .
+\boxed{\;y\in\partial f(x) \iff x\in\partial f^*(y) \iff f(x) + f^*(y) = \langle x,y\rangle\;} .
 $$</p>
 <p>Hence $\partial f^* = (\partial f)^{-1}$ as set-valued maps, and the subdifferential of a closed convex function is a <strong>maximal monotone</strong> operator: $(y_2 - y_1)(x_2 - x_1)\geq0$ for $y_i\in\partial f(x_i)$, and no proper enlargement of its graph is monotone.</p>
 <p><em>Proof.</em> The three conditions are the equality case of Fenchel–Young read at $(x,y)$, at $(y,x)$ for the conjugate, and again at $(x,y)$; the equality of the two extreme forms identifies the two descriptions. Monotonicity is the sum of the two inequalities for $(x_1,y_1)$ and $(x_2,y_2)$; maximality is the standard argument of <em>Convex Analysis</em>, where the finite-dimensional case is proved.</p>

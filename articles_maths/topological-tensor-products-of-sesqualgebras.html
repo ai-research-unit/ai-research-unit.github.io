@@ -92,7 +92,7 @@ $$</p>
 <h3 id="the-two-topologies-compared">The Two Topologies Compared</h3>
 <p><strong>Proposition (the canonical map).</strong> The identity on $A \otimes B$ extends to a continuous linear map</p>
 <p>$$
-A \widehat{\otimes}_\pi B \longrightarrow A \widehat{\otimes}_\varepsilon B ,
+\boxed{\;A \widehat{\otimes}_\pi B \longrightarrow A \widehat{\otimes}_\varepsilon B\;} ,
 $$</p>
 <p>which is a topological isomorphism for all $B$ if and only if $A$ is nuclear; in finite dimension it is always an isomorphism.</p>
 <p><em>Proof.</em> This is the proposition of <em>Topological Tensor Products</em>, §<em>The Injective Tensor Product</em>: the inequality $\lVert\cdot\rVert_\varepsilon \leq \lVert\cdot\rVert_\pi$ gives the continuity, and the characterisation of the isomorphism by nuclearity is there; in finite dimension the two norms are equivalent because all norms are.</p>
@@ -105,7 +105,7 @@ $$</p>
 $$</p>
 <p>of <em>Tensor Products of Sesqualgebras</em>, §<em>The Product on the Tensor Product</em>, extended by additivity, is a continuous product on $A \otimes B$ for the projective topology, additive in each variable, $\mathbb{K}$-linear in the first and $\varsigma$-semilinear in the second, and submultiplicative:</p>
 <p>$$
-\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi .
+\boxed{\;\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi\;} .
 $$</p>
 <p><em>Proof.</em> Let $u = \sum_k a_k \otimes b_k$ and $v = \sum_l c_l \otimes d_l$ be representations. Then</p>
 <p>$$
@@ -120,7 +120,7 @@ $$</p>
 <h3 id="the-tensor-involution">The Tensor Involution</h3>
 <p><strong>Theorem (the tensor involution is continuous).</strong> Let $A$ and $B$ be normed sesqualgebras with isometric involutions $*$. Then the tensor involution</p>
 <p>$$
-\natural(a \otimes b) = a^{*} \otimes b^{*}
+\boxed{\;\natural(a \otimes b) = a^{*} \otimes b^{*}\;}
 $$</p>
 <p>of <em>Tensor Products of Sesqualgebras</em>, §<em>The Tensor Involution</em>, extended by additivity, is a continuous $\varsigma$-semilinear isometry of $A \otimes B$ for the projective topology, $\lVert\natural(u)\rVert_\pi = \lVert u\rVert_\pi$, and it extends uniquely to an isometric $\varsigma$-semilinear involution of the projective completion; for the injective norm the same holds when the twist is trivial, $\varsigma = \mathrm{id}$.</p>
 <p><em>Proof.</em> On an elementary tensor, $\natural(a \otimes b) = a^{*} \otimes b^{*}$ with $\lVert a^{*}\rVert = \lVert a\rVert$ and $\lVert b^{*}\rVert = \lVert b\rVert$, so the projective and the injective norms of $a \otimes b$ and of $a^{*} \otimes b^{*}$ agree; a general element is a sum, and the isometry follows for the projective norm because a representation of $u$ is turned into a representation of $\natural u$ of the same cost by replacing each $a_k$ by $a_k^{*}$; for the injective norm, $\Phi_{\natural u}(\xi,\eta) = \Phi_u(\xi\circ *,\eta\circ *)$, and when $\varsigma = \mathrm{id}$ the factor involutions are linear, so $\xi\circ *$ and $\eta\circ *$ are linear and the maps $\xi \mapsto \xi\circ *$, $\eta \mapsto \eta\circ *$ carry the unit ball of $A'$ and of $B'$ onto themselves because $*$ is isometric, so the supremum is unchanged; for $\varsigma \neq \mathrm{id}$ the composites $\xi\circ *$ and $\eta\circ *$ are semilinear and lie in the conjugate duals rather than in the ordinary duals, which is the pairing of the second slot, and no isometry of the ordinary injective norm is claimed. Semilinearity is Part I's, $\natural(\lambda u) = \varsigma(\lambda)\natural(u)$, and it is continuous; the extension is <em>The Completion of a Sesqualgebra</em>, §<em>The Extension of the Involution</em>.</p>

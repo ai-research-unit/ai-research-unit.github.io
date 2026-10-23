@@ -86,7 +86,7 @@
 <h3 id="the-symplectic-involution">The Symplectic Involution</h3>
 <p><strong>Definition.</strong> Let $J \in M_n(R)$ satisfy $J^{\mathrm t} = -J$ and $J^2 = -1$; necessarily $n$ is even and $-1$ is a square in the centre. The <strong>symplectic involution</strong> is</p>
 <p>$$
-X^{\tau} = J^{-1}X^{\mathrm t}J .
+\boxed{\;X^{\tau} = J^{-1}X^{\mathrm t}J\;} .
 $$</p>
 <p><strong>Proposition.</strong> $X \mapsto X^{\tau}$ is an involution of $M_n(R)$, and $X^{\tau} = X$ if and only if $JX$ is skew-symmetric.</p>
 <p><strong>Proof.</strong> $\tau$ is additive and $\tau(1) = J^{-1}J = 1$; $\tau(XY) = J^{-1}Y^{\mathrm t}X^{\mathrm t}J = (J^{-1}Y^{\mathrm t}J)(J^{-1}X^{\mathrm t}J) = \tau(Y)\tau(X)$; and $\tau^2(X) = J^{-1}(J^{-1}X^{\mathrm t}J)^{\mathrm t}J = J^{-1}J^{\mathrm t}XJ^{-\mathrm t}J = J^{-1}(-J)X(-J)^{-1}J = X$, using $J^{\mathrm t} = -J$ and $J^{-1} = -J$. For the fixed set, $J^{-1}X^{\mathrm t}J = X$ is equivalent to $X^{\mathrm t}J = JX$; putting $Y = JX$, so that $X = -JY$, the condition becomes $(-JY)^{\mathrm t}J = Y$, that is $-Y^{\mathrm t}J^{\mathrm t}J = Y$, and $J^{\mathrm t}J = -J^2 = 1$, so $-Y^{\mathrm t} = Y$: $Y = JX$ is skew-symmetric.</p>
@@ -94,7 +94,7 @@ $$</p>
 <h2 id="symmetric-and-skew-matrices">Symmetric and Skew Matrices</h2>
 <p><strong>Proposition.</strong> Let $2$ be invertible in $R$. Every matrix decomposes uniquely as the sum of a symmetric and a skew-symmetric matrix under the transpose,
 $$
-X = \tfrac12(X+X^{\mathrm t}) + \tfrac12(X-X^{\mathrm t}),
+\boxed{\;X = \tfrac12(X+X^{\mathrm t}) + \tfrac12(X-X^{\mathrm t})\;},
 $$
 and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each case the symmetric and the skew matrices are the eigenspaces of the involution for $+1$ and $-1$, and the fixed set is the symmetric one.</p>
 <p><strong>Proof.</strong> This is the additive decomposition of <em>Involutive Rings</em> applied to the three involutions; the two summands are fixed or negated by the involution because it is additive of order two, and the decomposition is direct because the involution has no nonzero element on which it is both $\mathrm{id}$ and $-\mathrm{id}$ when $2$ is invertible.</p>
@@ -111,11 +111,11 @@ and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each cas
 <p><strong>Proof.</strong> The transpose has the $n$ matrix units $e_{ii}$ as orthogonal symmetric idempotents summing to $1$. The symplectic involution fixes no such family: its symmetric idempotents have even rank, because for a $\tau$-symmetric idempotent $E$ the matrix $JE$ is skew-symmetric and $JE = J E^2 = (JE)E$, forcing $\operatorname{tr}(JE) = 0$ and hence $\operatorname{rank} E$ even; so a sum of orthogonal symmetric idempotents equal to $1$ would have even trace $n$, which excludes odd $n$ and, for even $n$, would need $n$ summands of even rank at least $2$, which is impossible. The two types are inequivalent by the dimension of the symmetric part (next paragraph).</p>
 <p><strong>Theorem (the separating invariant).</strong> The dimension of the symmetric part of a first-kind involution of $M_n(F)$ is</p>
 <p>$$
-\dim_F \mathrm{Sym}(M_n(F),\sigma) =
+\boxed{\;\dim_F \mathrm{Sym}(M_n(F),\sigma) =
 \begin{cases}
 \tfrac12 n(n+1) & \text{transpose type},\\[2pt]
 \tfrac12 n(n-1) & \text{symplectic type}.
-\end{cases}
+\end{cases}\;}
 $$</p>
 <p>Hence the transpose and the symplectic involutions are inequivalent for $n \geq 2$, and the type is determined by this dimension.</p>
 <p><strong>Proof.</strong> For the transpose the symmetric matrices are free on the $\tfrac12 n(n+1)$ positions on and above the diagonal, hence of dimension $\tfrac12 n(n+1)$; the skew-symmetric matrices are free on the $\tfrac12 n(n-1)$ positions above the diagonal, giving the second value for the symplectic involution because its symmetric part is the image of the skew-symmetric matrices under $X \mapsto J^{-1}X$, which is an isomorphism of vector spaces.</p>

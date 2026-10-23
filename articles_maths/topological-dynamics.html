@@ -130,14 +130,14 @@ $$</p>
 <h3 id="the-definition-by-covers">The Definition by Covers</h3>
 <p><strong>Definition.</strong> Let $X$ be compact and $T:X\to X$ continuous. For a finite open cover $\mathcal U$ of $X$ let $N(\mathcal U)$ be the least cardinality of a subcover, put $H(\mathcal U)=\log N(\mathcal U)$, and for $\mathcal U,\mathcal V$ let $\mathcal U\vee\mathcal V=\{\Xi\cap V:\Xi \in\mathcal U,\ V \in\mathcal V\}$; define $\mathcal U^n=\bigvee_{i=0}^{n-1}T^{-i}\mathcal U$. Then</p>
 <p>$$
-h(T,\mathcal U)=\lim_{n\to\infty}\frac1nH(\mathcal U^n)=\inf_{n\ge1}\frac1nH(\mathcal U^n),
+\boxed{\;h(T,\mathcal U)=\lim_{n\to\infty}\frac1nH(\mathcal U^n)=\inf_{n\ge1}\frac1nH(\mathcal U^n),
 \qquad
-h_{\mathrm{top}}(T)=\sup_{\mathcal U}h(T,\mathcal U),
+h_{\mathrm{top}}(T)=\sup_{\mathcal U}h(T,\mathcal U)\;},
 $$</p>
 <p>the <strong>topological entropy</strong> of $T$; the limit exists because $H(\mathcal U^{m+n})\le H(\mathcal U^m)+H(\mathcal U^n)$, so the sequence is subadditive.</p>
 <p><strong>Theorem (Bowen's definition).</strong> Let $X$ be a compact metric space and $T:X\to X$ continuous. For $n \in \mathbb{N}$ and $\epsilon>0$ call a set $E \subseteq X$ <strong>$(n,\epsilon)$-separated</strong> if for all distinct $x,y \in E$ there is $0\le k<n$ with $d(T^kx,T^ky)>\epsilon$, and let $s_n(\epsilon)$ be the largest cardinality of such a set; call $F$ <strong>$(n,\epsilon)$-spanning</strong> if the balls $B_{n,\epsilon}(x)=\{y:\max_{0\le k<n}d(T^kx,T^ky)<\epsilon\}$ with $x \in F$ cover $X$, and let $r_n(\epsilon)$ be the least cardinality of such a set. Then</p>
 <p>$$
-h_{\mathrm{top}}(T)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log s_n(\epsilon)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log r_n(\epsilon),
+\boxed{\;h_{\mathrm{top}}(T)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log s_n(\epsilon)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log r_n(\epsilon)\;},
 $$</p>
 <p>and the two limits agree with the definition by covers.</p>
 <p><em>Proof (sketch).</em> The Bowen balls are the atoms of the cover $\mathcal U^n$ for a cover by $\epsilon$-balls, so a subcover of the latter of least cardinality is an $(n,\epsilon)$-spanning set and a separated set injects into a subcover; this gives the comparison of $N(\mathcal U^n)$ with $r_n(\epsilon)$ and $s_n(\epsilon)$ up to the constants that disappear under $\frac1n\log$ and the limit $\epsilon\to0$.</p>
@@ -153,7 +153,7 @@ $$</p>
 <p>(iii) The doubling map $x\mapsto2x\bmod1$ has entropy $\log2$, by the conjugacy with the full two-shift modulo the countable set of dyadic rationals; the entropy is finite and positive, and it is the topological measure of the exponential growth of the number of orbits distinguishable at resolution $\epsilon$.</p>
 <p><strong>Theorem (variational principle).</strong> Let $X$ be a compact metric space and $T:X\to X$ continuous. Then</p>
 <p>$$
-h_{\mathrm{top}}(T)=\sup_{\mu}h_\mu(T),
+\boxed{\;h_{\mathrm{top}}(T)=\sup_{\mu}h_\mu(T)\;},
 $$</p>
 <p>the supremum being over the $T$-invariant Borel probability measures and $h_\mu$ the measure-theoretic entropy; the supremum is attained for every expansive system. The measure-theoretic entropy, the ergodic decomposition and the existence of measures of maximal entropy are the subject of <em>Ergodic Theory</em>, and the variational principle is quoted there from the standard theory.</p>
 <h2 id="chain-recurrence-and-conleys-decomposition">Chain Recurrence and Conley's Decomposition</h2>

@@ -99,7 +99,7 @@ so it is a derivation for every derivation $D$ as soon as $\lambda$ is fixed by 
 <h3 id="the-commutator">The Commutator</h3>
 <p><strong>Theorem.</strong> Let $D$ and $E$ be derivations of $A$. Then their <strong>commutator</strong>
 $$
-[D,E] = D \circ E - E \circ D
+\boxed{\;[D,E] = D \circ E - E \circ D\;}
 $$
 is a derivation. Consequently $\operatorname{Der}(A)$ is closed under the commutator, so it is a Lie subalgebra, over $R^{\varsigma}$, of the associative algebra $\operatorname{End}_{R}(A)$; no associativity of the product of $A$ is used.</p>
 <p><strong>Proof.</strong> Additivity and $R$-linearity are clear. For the Leibniz rule, expand
@@ -138,7 +138,7 @@ Then $\Phi(D)$ is a derivation, $\Phi$ is an additive map of order two on $\oper
 <p><strong>Proof.</strong> For the automorphism, $[\Phi(D),\Phi(E)](x) = \Phi(D)(\Phi(E)(x)) - \Phi(E)(\Phi(D)(x)) = D(E(x^{*}))^{*} - E(D(x^{*}))^{*} = [D,E](x^{*})^{*}$, which is $\Phi([D,E])(x)$; the last two statements are the previous proposition.</p>
 <p><strong>Theorem (the decomposition).</strong> Suppose $2$ is invertible in $R$. Then every derivation decomposes uniquely as
 $$
-D = D_{+} + D_{-}, \qquad D_{+} = \tfrac{1}{2}\bigl(D + \Phi(D)\bigr), \quad D_{-} = \tfrac{1}{2}\bigl(D - \Phi(D)\bigr),
+\boxed{\;D = D_{+} + D_{-}, \qquad D_{+} = \tfrac{1}{2}\bigl(D + \Phi(D)\bigr), \quad D_{-} = \tfrac{1}{2}\bigl(D - \Phi(D)\bigr)\;},
 $$
 with $D_{+}$ a $*$-derivation and $D_{-}$ a skew derivation.</p>
 <p><strong>Proof.</strong> The two parts are derivations by the closure under addition and under the scalars of $R^{\varsigma}$, the scalar $\tfrac{1}{2}$ lying in $R^{\varsigma}$ because $\varsigma(1) = 1$; then $\Phi(D_{+}) = \tfrac{1}{2}(\Phi(D) + \Phi^{2}(D)) = D_{+}$ and $\Phi(D_{-}) = \tfrac{1}{2}(\Phi(D) - \Phi^{2}(D)) = -D_{-}$, so they are a $*$-derivation and a skew derivation; they sum to $D$, and the decomposition is unique because a derivation that is both is zero when $2 \neq 0$.</p>
@@ -193,7 +193,7 @@ which vanishes for all $x$ and $y$ exactly under the stated identity; every asso
 <h3 id="the-centre-as-the-kernel">The Centre as the Kernel</h3>
 <p><strong>Theorem.</strong> Suppose $A$ associative, and let $\mathfrak{n} = \{a \in A : (\varsigma(\lambda) - \lambda)aA = 0 \ \text{for all } \lambda \in R\}$, so that $\mathrm{ad}_a$ is a derivation for every $a \in \mathfrak{n}$. Then the inner derivations form a Lie subalgebra of $\operatorname{Der}(A)$ with
 $$
-[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{ab - ba},
+\boxed{\;[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{ab - ba}\;},
 $$
 and the assignment $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism from $\mathfrak{n}$, with the commutator, onto the inner derivations, with kernel $\mathfrak{n} \cap Z(A)$. In the bilinear case $\mathfrak{n} = A$ and the kernel is the centre, so the inner derivations are isomorphic to $A/Z(A)$.</p>
 <p><strong>Proof.</strong> For the bracket, $\mathrm{ad}_a \mathrm{ad}_b(x) - \mathrm{ad}_b \mathrm{ad}_a(x) = a(bx - xb) - (bx - xb)a - b(ax - xa) + (ax - xa)b = (ab - ba)x - x(ab - ba) = \mathrm{ad}_{ab-ba}(x)$, associativity being what expands the four general products; and $ab - ba$ lies in $\mathfrak{n}$ because $(\varsigma(\lambda) - \lambda)(ab - ba)A$ is contained in $(\varsigma(\lambda) - \lambda)aA + (\varsigma(\lambda) - \lambda)bA = 0$. The kernel is the set of the $a$ that commute with every element, which is $\mathfrak{n} \cap Z(A)$, and the centre is the kernel in the bilinear case because then $\mathfrak{n} = A$.</p>

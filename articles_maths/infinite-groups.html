@@ -103,7 +103,7 @@
 <h3 id="elementary-theory-of-exponent-and-torsion">Elementary Theory of Exponent and Torsion</h3>
 <p><strong>Definition.</strong> A group is a <strong>torsion group</strong> if every element has finite order, an <strong>exponent $n$ group</strong> if $x^n = 1$ for all $x$, and the <strong>free Burnside group</strong> of rank $m$ and exponent $n$ is</p>
 <p>$$
-B(m,n) = \langle x_1, \ldots, x_m \mid w^n = 1 \text{ for every word } w \text{ in the } x_i \rangle = F_m / \langle\!\langle x^n : x \in F_m\rangle\!\rangle,
+\boxed{\;B(m,n) = \langle x_1, \ldots, x_m \mid w^n = 1 \text{ for every word } w \text{ in the } x_i \rangle = F_m / \langle\!\langle x^n : x \in F_m\rangle\!\rangle\;},
 $$</p>
 <p>where $\langle\!\langle \cdot \rangle\!\rangle$ denotes the normal closure.</p>
 <p><strong>Proposition.</strong> A group of exponent $2$ is abelian, so $B(m,2) \cong (\mathbb{Z}/2\mathbb{Z})^m$ has order $2^m$.</p>
@@ -132,7 +132,7 @@ $$</p>
 <p><strong>Theorem (Golod–Shafarevich).</strong> There exist infinite finitely generated torsion groups; more precisely, for every prime $p$ there is an infinite finitely generated group all of whose elements have finite order and which is residually a finite $p$-group.</p>
 <p><strong>Proof sketch.</strong> One considers a free group $F$ on $d$ generators, a prime $p$, and a set of $r$ relators of length at least $L$, and forms the quotient by the normal closure of the relators together with the $p$-powers of the elements of $F$; the objects counted are the graded quotients of the lower $p$-central series, which are vector spaces over $\mathbb{F}_p$ with one dimension for each generator and one relation removing one dimension for each relator. The argument is the origin of the <strong>Golod–Shafarevich inequality</strong></p>
 <p>$$
-r > \frac{d^2}{4},
+\boxed{\;r > \frac{d^2}{4}\;},
 $$</p>
 <p>which is the condition under which the dimension series has bounded degrees and the quotient is infinite: the relators are numerous enough to eliminate the classes that the $p$-power relations would otherwise leave, while the counting still exhibits at least one nontrivial class in every degree. Choosing the relators generically of length at least $L$ among the words of $F$ then yields an infinite $d$-generated group all of whose elements have order a power of $p$, and, with the relators placed inside the higher terms of the series, one that is residually a finite $p$-group. It is the first proof that infinite finitely generated torsion groups exist without exhibiting a uniform exponent.</p>
 <p>The Golod–Shafarevich construction is the ancestor of the modern theory of <strong>profinite groups</strong>, in which one studies inverse limits of finite quotients; the profinite theory belongs to Part II, where the inverse limit is taken as a topological limit.</p>

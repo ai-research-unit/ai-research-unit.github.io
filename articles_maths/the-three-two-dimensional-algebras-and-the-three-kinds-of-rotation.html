@@ -104,7 +104,7 @@ G_A = \{u \in A : N(u) = 1\}.
 $$</p>
 <p>Multiplicativity makes $G_A$ a group, and for each $u \in G_A$ the map $L_u$ preserves the quadratic form $N$ on $\mathbb{R}^2$:</p>
 <p>$$
-N(u \cdot z) = N(u)N(z) = N(z), \qquad z \in A .
+\boxed{\;N(u \cdot z) = N(u)N(z) = N(z), \qquad z \in A\;} .
 $$</p>
 <p>So the three cases are the three signatures of a quadratic form in two variables: definite, indefinite and degenerate. That exhausts the possibilities, and it is why there are exactly three kinds of rotation of this kind.</p>
 <h2 id="the-elliptic-case-the-complex-numbers">The Elliptic Case: The Complex Numbers</h2>
@@ -220,7 +220,7 @@ $$</p>
 <p><strong>Theorem (classification in dimension two).</strong> Let $A$ be a two-dimensional commutative unital associative algebra over $\mathbb{R}$. Then $A$ is isomorphic to exactly one of $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$.</p>
 <p><em>Proof.</em> Write $A = \mathbb{R}\cdot 1 \oplus V$ with $V$ one-dimensional, and choose a generator $\omega$ spanning $V$. Then $\omega^2 = p\cdot 1 + c\,\omega$ for some $p, c \in \mathbb{R}$, so $A \cong \mathbb{R}[\omega]/(\omega^2 - p\omega - c)$ and $A$ is determined up to isomorphism by the polynomial $\omega^2 - p\omega - c$, hence by the sign of its discriminant $p^2 + 4c$. If $p^2 + 4c < 0$ the polynomial is irreducible over $\mathbb{R}$ and</p>
 <p>$$
-A \cong \mathbb{R}[\omega]/(\omega^2+1) = \mathbb{C};
+\boxed{\;A \cong \mathbb{R}[\omega]/(\omega^2+1) = \mathbb{C}\;};
 $$</p>
 <p>if $p^2+4c > 0$ the polynomial has two distinct real roots and $A \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{D}$; if $p^2 + 4c = 0$ the polynomial is a square, $(\omega - p/2)^2 = 0$ after completing the square, so $A \cong \mathbb{R}[\omega]/(\omega^2) = \mathbb{D}'$.</p>
 <p>The three kinds of rotation therefore exhaust the rotations implemented by multiplication in the plane, and the type of the rotation is the sign of the discriminant of the quadratic form: positive definite gives elliptic, indefinite gives hyperbolic, degenerate gives parabolic.</p>
@@ -231,7 +231,7 @@ $$</p>
 <p>So a commutative algebra cannot implement rotations in $\mathbb{R}^3$; the smallest algebra that can is the four-dimensional, non-commutative quaternion algebra $\mathbb{H}$. The rotations of $\mathbb{R}^3$ are obtained by letting the unit quaternions act on the imaginary subspace $\operatorname{Im}\mathbb{H} = \mathbb{R}^3$ by conjugation.</p>
 <p><strong>Theorem (the quaternion rotation group).</strong> For a unit quaternion $q$ the map</p>
 <p>$$
-\rho_q(p) = q\,p\,q^{-1}, \qquad p \in \operatorname{Im}\mathbb{H},
+\boxed{\;\rho_q(p) = q\,p\,q^{-1}, \qquad p \in \operatorname{Im}\mathbb{H}\;},
 $$</p>
 <p>is a rotation of $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$, and $q \mapsto \rho_q$ is a surjective group homomorphism $S^3 \to SO(3)$ with kernel $\{\pm 1\}$; hence $SO(3) \cong S^3/\{\pm 1\}$.</p>
 <p><em>Proof.</em> Multiplication by a unit preserves the norm $N(p) = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations.</p>

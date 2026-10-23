@@ -96,7 +96,7 @@
 <h3 id="the-convolution-algebra">The Convolution Algebra</h3>
 <p><strong>Definition.</strong> Let $G$ be a second countable locally compact étale groupoid. The <strong>convolution</strong> of $f, g \in C_c(G)$ is</p>
 <p>$$
-(f*g)(x) = \sum_{y \in G,\ r(y) = r(x)} f(y)\,g(y^{-1}x) ,
+\boxed{\;(f*g)(x) = \sum_{y \in G,\ r(y) = r(x)} f(y)\,g(y^{-1}x)\;} ,
 $$</p>
 <p>a finite sum because the fibre $r^{-1}(r(x))$ meets the compact supports of $f$ and $g$ in finite sets, and the <strong>involution</strong> is</p>
 <p>$$
@@ -130,7 +130,7 @@ C^*_r(G) = \overline{\lambda(C_c(G))} \subseteq B\bigl(\ell^2(G)\bigr) .
 $$</p>
 <p><strong>Theorem (basic properties).</strong> Let $G$ be a second countable locally compact étale groupoid. Then the full and reduced groupoid algebras are separable $\mathrm{C}^*$-algebras, the regular representation induces a surjective $*$-homomorphism</p>
 <p>$$
-C^*(G) \longrightarrow C^*_r(G),
+\boxed{\;C^*(G) \longrightarrow C^*_r(G)\;},
 $$</p>
 <p>which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If $G$ is a discrete group the two algebras are $C^*(G)$ and $C^*_r(G)$ of <em>Operator Algebras</em>, and if $G = X\rtimes H$ is a transformation groupoid of a discrete group $H$, then $C^*(G) \cong C_0(X)\rtimes H$ and $C^*_r(G) \cong C_0(X)\rtimes_r H$.</p>
 <p><strong>Proof.</strong> Separability is the second countability and the density of $C_c$ by construction; the regular representation is a representation of $C_c(G)$ by the associativity of the convolution, so it induces the quotient map by the universal property. The identification with the crossed products is the standard correspondence between covariant representations of $(C_0(X),H)$ and representations of the transformation groupoid, in which a covariant pair corresponds to the representation of $C_c(X\rtimes H)$ whose value on a function of the form $f(g,x)$ is the sum $\sum_g\pi(f_g)u_g$. Amenability and the coincidence of the full and reduced algebras are treated below.</p>

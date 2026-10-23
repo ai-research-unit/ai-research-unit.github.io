@@ -80,11 +80,15 @@ $$</p>
 <h2 id="the-element-and-its-matrix">The Element and Its Matrix</h2>
 <p><strong>Proposition (the matrix of an element).</strong> In the basis $1,j$ the matrix of the left multiplication by $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is</p>
 <p>$$
-\mathsf{M}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
+\boxed{\;
+\mathsf{M}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}
+\;},
 $$</p>
 <p>of trace $2Q_{\blacktriangle}$ and determinant $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$; its eigenvalues are $Q_{\blacktriangle}+Q_{\blacktriangledown}=Q_{+}$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}=Q_{-}$, with eigenvectors $1+j$ and $1-j$; and the change of basis to $(\Pi_+,\Pi_-)$ conjugates it to the diagonal form</p>
 <p>$$
-\mathsf{M}_{\mathrm{d}}(\breve Q)=\begin{pmatrix}Q_{+}&0\\ 0&Q_{-}\end{pmatrix}.
+\boxed{\;
+\mathsf{M}_{\mathrm{d}}(\breve Q)=\begin{pmatrix}Q_{+}&0\\ 0&Q_{-}\end{pmatrix}
+\;}.
 $$</p>
 <p><strong>Proof.</strong> $L_{\breve Q}(1)=\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and $L_{\breve Q}(j)=\breve Q j=Q_{\blacktriangledown}+Q_{\blacktriangle}j$, giving the two columns; the trace and the determinant are read from the matrix; the eigenvector $1+j$ has $L_{\breve Q}(1+j)=Q_{\blacktriangle}+Q_{\blacktriangledown}+(Q_{\blacktriangle}+Q_{\blacktriangledown})j=Q_{+}(1+j)$, and likewise $1-j$; the change of basis is the involution $\left(\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}\right)$ up to the factor $\tfrac12$, and it diagonalises the matrix.</p>
 <p><strong>Corollary (the spectrum is the idempotent pair).</strong> The spectrum of the element, that is of the operator $L_{\breve Q}$, is the pair $\{Q_{+},Q_{-}\}$ of its idempotent coordinates; the reduced norm is the determinant, $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=\det\mathsf{M}(\breve Q)$; the scalar part is half the trace, $Q_{\blacktriangle}=\tfrac12\operatorname{tr}\mathsf{M}(\breve Q)$; and the spectral radius is $\max(|Q_{+}|,|Q_{-}|)$.</p>
@@ -210,7 +214,9 @@ $$</p>
 <h2 id="the-forms-the-norms-and-the-determinants">The Forms, the Norms and the Determinants</h2>
 <p><strong>Proposition (the forms in the model).</strong> In the diagonal model</p>
 <p>$$
-\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(\breve Q)^{*}\mathsf{M}_{\mathrm{d}}(\breve Q)\bigr)=\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(\breve Q)\rVert_{F}^{2},
+\boxed{\;
+\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(\breve Q)^{*}\mathsf{M}_{\mathrm{d}}(\breve Q)\bigr)=\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(\breve Q)\rVert_{F}^{2}
+\;},
 $$</p>
 <p>and $\langle \breve Q\rangle_{*}=\operatorname{Re}(Q_{+}\bar Q_{-})$, the real part of the Hermitian pairing of the two eigenvalues, while the algebraic norm is the determinant.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(\operatorname{diag}(\bar Q_{+},\bar Q_{-})\operatorname{diag}(Q_{+},Q_{-}))=|Q_{+}|^{2}+|Q_{-}|^{2}$, and $\langle\cdot\rangle_{\mathrm{ts}*}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$; the second identity is the computation of $\langle\cdot\rangle_{*}$ in the idempotent coordinates. The algebraic norm is an element of the algebra and is the determinant, the topological norm is a positive real and is half the squared Frobenius norm, and the two are different objects.</p>

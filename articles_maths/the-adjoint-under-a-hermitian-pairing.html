@@ -86,7 +86,7 @@ $$</p>
 <p>it exists and is unique because the pairing is nondegenerate.</p>
 <p><strong>Theorem.</strong> The adjoint exists and is unique, it is an operator of $\operatorname{End}_K(V)$, and in a basis it has the matrix</p>
 <p>$$
-T^{\dagger} = H^{-1}\, T^{*}\, H , \qquad T^{*} = \overline{T}^{\mathsf T} ,
+\boxed{\;T^{\dagger} = H^{-1}\, T^{*}\, H , \qquad T^{*} = \overline{T}^{\mathsf T}\;} ,
 $$</p>
 <p>where $H$ is the matrix of the pairing and the star is the conjugate transpose; the adjoint is therefore the <strong>two-sided sandwich</strong> of the conjugate transpose between the matrix of the pairing and its inverse, and it is the unique operator with the defining identity.</p>
 <p><strong>Proof.</strong> The map $y \mapsto h(Tx,y)$ is a linear form on the first argument, so the nondegeneracy gives a unique vector $T^{\dagger}x$ representing it, and the assignment is linear in $x$; in the coordinates the identity is $x^{*}HTy = (Tx)^{*}Hy = x^{*}T^{*}Hy = h(x, T^{\dagger}y) = x^{*}H T^{\dagger}y$, and cancelling the nondegenerate form gives $HT = T^{*}H$, which is the displayed formula after the multiplication by $H^{-1}$. The statement is the standard matrix form of the adjoint, in <em>Linear Maps and Matrices</em>.</p>
@@ -103,7 +103,7 @@ $$</p>
 <p><strong>Definition.</strong> An operator $T$ is <strong>self-adjoint</strong> or <strong>Hermitian</strong> when $T^{\dagger} = T$, <strong>skew-adjoint</strong> or <strong>skew-Hermitian</strong> when $T^{\dagger} = -T$, and <strong>unitary</strong> when $T^{\dagger}T = T T^{\dagger} = \mathrm{id}$; the sets of the Hermitian and the skew-Hermitian operators are written $\operatorname{Herm}(V,h)$ and $\operatorname{Skew}(V,h)$.</p>
 <p><strong>Theorem.</strong> When $2$ is invertible in $K$ the algebra of the operators decomposes as the direct sum</p>
 <p>$$
-\operatorname{End}_K(V) = \operatorname{Herm}(V,h) \oplus \operatorname{Skew}(V,h), \qquad T = \tfrac12(T + T^{\dagger}) + \tfrac12(T - T^{\dagger}) ,
+\boxed{\;\operatorname{End}_K(V) = \operatorname{Herm}(V,h) \oplus \operatorname{Skew}(V,h), \qquad T = \tfrac12(T + T^{\dagger}) + \tfrac12(T - T^{\dagger})\;} ,
 $$</p>
 <p>the Hermitian part and the skew-Hermitian part; the Hermitian operators form a $K_0$-vector space of the dimension $n^2$ over $K_0$ in the quadratic case, and the skew-Hermitian operators form the complement; the trace of a self-adjoint operator lies in the fixed field $K_0$, and the trace of a skew-adjoint operator lies in the trace-zero part of $K$ over $K_0$.</p>
 <p><strong>Proof.</strong> The two summands are the eigenspaces of the adjoint involution for the eigenvalues $+1$ and $-1$, and an involution of order two over a field in which $2$ is invertible decomposes the algebra as the direct sum of its fixed parts; the dimensions are the number of the independent entries of a Hermitian matrix and its complement. The statement is the elementary decomposition of an algebra with involution, in <em>Hilbert Algebras</em> and <em>Involutive Algebras</em>.</p>
@@ -113,7 +113,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>unitary elements</strong> of $\operatorname{End}_K(V)$ are the operators with $T^{\dagger}T = \mathrm{id}$; they form the <strong>unitary group</strong> $\mathrm{U}(V,h)$ of the pairing, and they are exactly the isometries of the form, $h(Tx,Ty) = h(x,y)$ for all $x,y$.</p>
 <p><strong>Theorem.</strong> The unitary elements form a group under the composition, equal to the group of the isometries of $h$; the determinant of a unitary element has norm one, $N(\det T) = 1$ in the nontrivial case, and the special unitary group is the subgroup of determinant one. The self-adjoint and the skew-adjoint elements are the tangent spaces of the unitary group at the identity,</p>
 <p>$$
-\mathfrak{u}(V,h) = \operatorname{Skew}(V,h) ,
+\boxed{\;\mathfrak{u}(V,h) = \operatorname{Skew}(V,h)\;} ,
 $$</p>
 <p>the Lie algebra of the unitary group, and the exponential of a skew-adjoint operator is unitary.</p>
 <p><strong>Proof.</strong> The isometry condition is $h(Tx,Ty) = h(x,y)$ for all $x,y$, which is $T^{\dagger}T = \mathrm{id}$ after the identity $h(Tx,Ty) = h(x,T^\dagger T y)$; the norm-one determinant is the computation of the previous articles; the Lie algebra is the derivative of the condition $T^\dagger T = \mathrm{id}$ at the identity, which gives $X^\dagger + X = 0$, that is, the skew-adjoint operators. The statement is in <em>Unitary Geometry over a Field with Involution</em> and <em>Lie Algebras</em>.</p>

@@ -99,7 +99,7 @@ $$</p>
 $$</p>
 <p>Hence $\phi$ is a critical point of the energy if and only if $\tau(\phi)=0$, and in local coordinates this is the system</p>
 <p>$$
-\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N ,
+\boxed{\;\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N\;} ,
 $$</p>
 <p>where $\Delta_g$ is the Laplace–Beltrami operator of $(M,g)$ and $\Gamma$ the Christoffel symbols of $(N,h)$.</p>
 <p><em>Proof.</em> The derivative of the energy is</p>
@@ -131,7 +131,7 @@ $$</p>
 <p><strong>Theorem (Eells–Sampson).</strong> Let $M$ be a compact Riemannian manifold and let $N$ be a complete Riemannian manifold of nonpositive sectional curvature. Then every continuous map $\phi_0 : M\to N$ is homotopic to a harmonic map, and the harmonic map flow starting from any smooth $\phi_0$ exists for all time and converges to a harmonic map in the homotopy class of $\phi_0$.</p>
 <p><em>Proof.</em> The energy is nonincreasing along the flow, $\frac{d}{dt}E(\phi_t) = -\int|\tau(\phi_t)|^2\le0$, so the flow stays in a bounded energy class. For a target of nonpositive curvature the <strong>Bochner estimate</strong> for the flow,</p>
 <p>$$
-\frac{\partial}{\partial t}|d\phi|^2 - \Delta|d\phi|^2 \le -C|d\phi|^4 + C'|d\phi|^2 ,
+\boxed{\;\frac{\partial}{\partial t}|d\phi|^2 - \Delta|d\phi|^2 \le -C|d\phi|^4 + C'|d\phi|^2\;} ,
 $$</p>
 <p>bounds the gradient in terms of the energy, and the maximum principle then gives uniform gradient bounds independent of $t$. The higher derivatives are bounded by the parabolic regularity theory, and a subsequence converges to a limit map whose tension field vanishes, since $\int_0^\infty\|\tau(\phi_t)\|^2dt < \infty$ forces a sequence $t_j\to\infty$ with $\tau(\phi_{t_j})\to0$.</p>
 <p><strong>Corollary (existence of harmonic representatives).</strong> In each homotopy class of maps $M\to N$ with $N$ compact and nonpositively curved there is a harmonic map, and the harmonic map minimises the energy in its class; for $N$ a compact quotient of a symmetric space of noncompact type the minimiser is unique with respect to the action of the isometry group.</p>
@@ -147,7 +147,7 @@ $$</p>
 <h2 id="the-bochner-formula-and-rigidity">The Bochner Formula and Rigidity</h2>
 <p><strong>Theorem (Bochner formula for maps).</strong> For a harmonic map $\phi : (M,g)\to(N,h)$,</p>
 <p>$$
-\frac12\Delta|d\phi|^2 = |\nabla d\phi|^2 + \bigl\langle d\phi,\operatorname{Ric}^M\bigr\rangle - \bigl\langle R^N(d\phi,d\phi)d\phi,d\phi\bigr\rangle ,
+\boxed{\;\frac12\Delta|d\phi|^2 = |\nabla d\phi|^2 + \bigl\langle d\phi,\operatorname{Ric}^M\bigr\rangle - \bigl\langle R^N(d\phi,d\phi)d\phi,d\phi\bigr\rangle\;} ,
 $$</p>
 <p>where the inner products contract the appropriate pairs of indices, $\operatorname{Ric}^M$ is the Ricci curvature of the source and $R^N$ the Riemann curvature tensor of the target.</p>
 <p><em>Proof.</em> The identity is the Weitzenböck formula applied to the bundle-valued $1$-form $d\phi$, combined with the harmonicity equation $\operatorname{trace}\nabla d\phi = 0$, which eliminates the term involving the divergence; the curvature terms are those of the source and the pull-back of the target connection.</p>

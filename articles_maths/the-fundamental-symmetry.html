@@ -82,20 +82,20 @@ $$</p>
 <p>The last condition says that the form $\langle x,y\rangle = [Jx,y]$ is positive definite; it is called the <strong>definite form induced by $J$</strong>.</p>
 <p><strong>Theorem (the bridge).</strong> Let $J$ be a fundamental symmetry and put $\langle x,y\rangle = [Jx,y]$. Then $\langle\cdot,\cdot\rangle$ is a positive definite Hermitian form, $J$ is self-adjoint and involutive for it, and the indefinite form is recovered by</p>
 <p>$$
-[x,y] = \langle Jx,y\rangle .
+\boxed{\;[x,y] = \langle Jx,y\rangle\;} .
 $$</p>
 <p>Conversely, every involutive and indefiniteness-self-adjoint operator $J$ for which $[Jx,x] > 0$ off zero arises from a fundamental decomposition. So the data of a fundamental symmetry and the data of a fundamental decomposition are the same, and an indefinite inner product space is a definite one together with $J$.</p>
 <p><strong>Proof.</strong> The Hermitian symmetry of $\langle\cdot,\cdot\rangle$ is the self-adjointness of $J$ for $[\,,\,]$; positivity is the third condition; the recovery is $J^{2} = \mathrm{id}$; and the converse is the spectral decomposition of $J$ into its $\pm1$-eigenspaces, which are then definite by the positivity.</p>
 <p><strong>Proposition (both forms are isometric).</strong> $J$ preserves the indefinite form and the definite form:</p>
 <p>$$
-[Jx,Jy] = [x,y], \qquad \langle Jx,Jy\rangle = \langle x,y\rangle .
+\boxed{\;[Jx,Jy] = [x,y], \qquad \langle Jx,Jy\rangle = \langle x,y\rangle\;} .
 $$</p>
 <p>So $J$ is a unitary operator of the positive definite space and an isometry of the indefinite one, and it is the same operator in both roles.</p>
 <p><strong>Proof.</strong> $[Jx,Jy] = [x,J^{2}y] = [x,y]$; and $\langle Jx,Jy\rangle = [J^{2}x,Jy] = [x,Jy] = [Jx,y] = \langle x,y\rangle$.</p>
 <h2 id="the-eigenspaces">The Eigenspaces</h2>
 <p><strong>Proposition.</strong> For a fundamental symmetry $J$ the eigenspaces</p>
 <p>$$
-V_{+} = \ker(J-\mathrm{id}), \qquad V_{-} = \ker(J+\mathrm{id})
+\boxed{\;V_{+} = \ker(J-\mathrm{id}), \qquad V_{-} = \ker(J+\mathrm{id})\;}
 $$</p>
 <p>are the positive definite and the negative definite parts of a fundamental decomposition: $V = V_{+}\oplus V_{-}$, $V_{+}\perp V_{-}$, and the elements of $V_{+}$ are positive and those of $V_{-}$ negative.</p>
 <p><strong>Proof.</strong> An involutive operator has the two eigenspaces and their direct sum is $V$; for $x\in V_{+}$ the definite form gives $\langle x,x\rangle = [Jx,x] = [x,x]$, so $[x,x] > 0$, and for $x\in V_{-}$, $\langle x,x\rangle = -[x,x] > 0$, so $[x,x] < 0$; orthogonality follows from $[x_{+},x_{-}] = \langle Jx_{+},x_{-}\rangle = \langle x_{+},x_{-}\rangle = 0$.</p>

@@ -77,7 +77,7 @@
 <p><strong>Definition.</strong> An element $\pi\neq0$ of $\mathrm{Cl}(V,\mathfrak{Q})$ is an <strong>idempotent</strong> if $\pi^2=\pi$. Two idempotents $\pi,g$ are <strong>orthogonal</strong> if $fg=gf=0$, and an idempotent is <strong>primitive</strong> if it is not the sum of two orthogonal nonzero idempotents.</p>
 <p><strong>Proposition.</strong> Let $e\in V$ with $\mathfrak{Q}(e)=1$. Then</p>
 <p>$$
-\pi=\tfrac12(1+e)
+\boxed{\;\pi=\tfrac12(1+e)\;}
 $$</p>
 <p>is an idempotent, and $ef=\pi$ while $e \pi'=-\pi'$ for $\pi'=\tfrac12(1-e)$, which is the complementary idempotent.</p>
 <p><strong>Proof.</strong> $\pi^2=\tfrac14(1+2e+e^2)=\tfrac14(1+2e+1)=\tfrac12(1+e)=\pi$, using $e^2=\mathfrak{Q}(e)=1$. The products are $ef=\tfrac12(e+e^2)=\tfrac12(e+1)=\pi$ and $ef'=\tfrac12(e-e^2)=\tfrac12(e-1)=-\pi'$.</p>
@@ -117,7 +117,7 @@ $$</p>
 <h3 id="the-identification-with-the-exterior-algebra">The Identification with the Exterior Algebra</h3>
 <p><strong>Theorem.</strong> Let $\pi$ be the idempotent of a Witt basis. Then the map</p>
 <p>$$
-\Lambda^{\bullet}\bigl(\operatorname{span}\{a_1^{\dagger},\ldots,a_m^{\dagger}\}\bigr)\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad a_{i_1}^{\dagger}\wedge\cdots\wedge a_{i_k}^{\dagger}\longmapsto a_{i_1}^{\dagger}\cdots a_{i_k}^{\dagger}\pi,
+\boxed{\;\Lambda^{\bullet}\bigl(\operatorname{span}\{a_1^{\dagger},\ldots,a_m^{\dagger}\}\bigr)\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad a_{i_1}^{\dagger}\wedge\cdots\wedge a_{i_k}^{\dagger}\longmapsto a_{i_1}^{\dagger}\cdots a_{i_k}^{\dagger}\pi\;},
 $$</p>
 <p>is an isomorphism of vector spaces, and under it the creation operators $a_i^{\dagger}$ act by exterior multiplication and the annihilation operators $a_i$ by contraction.</p>
 <p><strong>Proof.</strong> The creation operators anticommute among themselves, so the image of a wedge depends only on the set of indices and the map is well defined; the elements $a_{i_1}^{\dagger}\cdots a_{i_k}^{\dagger}\pi$ with $i_1<\cdots<i_k$ span $\mathrm{Cl}\pi$ because every product of the generators can be reordered into creation operators, annihilation operators and the idempotent, and the annihilation operators on the right of the expression always meet $\pi$ and vanish unless they have already been converted into creation operators by the anticommutation relations. The dimension count is the dimension of the spinor module, $2^m$; the action of $a_i^{\dagger}$ is multiplication and that of $a_i$ is the adjoint operation on the exterior algebra induced by the pairing, which is the contraction.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p>The even subalgebra acts on a minimal left ideal, and for the idempotent of a unit vector the ideal it generates is free of rank one over it.</p>
 <p><strong>Theorem.</strong> Let $\mathfrak{Q}(e)=1$ and $\pi=\tfrac12(1+e)$. Then $\mathrm{Cl}^0(V,\mathfrak{Q})\pi=\mathrm{Cl}(V,\mathfrak{Q})\pi$, and the map</p>
 <p>$$
-\mathrm{Cl}^0(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad x\longmapsto xf,
+\boxed{\;\mathrm{Cl}^0(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad x\longmapsto xf\;},
 $$</p>
 <p>is an isomorphism of $\mathrm{Cl}^0$-modules; hence $\mathrm{Cl}(V,\mathfrak{Q})\pi$ is free of rank one over the even subalgebra and has dimension $2^{n-1}=\dim\mathrm{Cl}^0(V,\mathfrak{Q})$.</p>
 <p><strong>Proof.</strong> The identity $ef=\pi$ and the decomposition $\mathrm{Cl}^1(V,\mathfrak{Q})=\mathrm{Cl}^0(V,\mathfrak{Q})e$ of the odd part, valid because $e$ is invertible, give $\mathrm{Cl}^1\pi=\mathrm{Cl}^0ef=\mathrm{Cl}^0\pi$, so the two ideals coincide and the map is onto. For injectivity, if $xf=0$ with $x$ even then $x(1+e)=0$, that is $x=-xe$; the grade involution fixes $x$ and sends $e$ to $-e$, so applying it gives $x=xe$, and the two relations give $x=-x$, whence $x=0$ in characteristic not two.</p>

@@ -86,7 +86,7 @@ $$</p>
 <p>(iii) $\tau^{-1}(x)=x-f(x)b$;</p>
 <p>(iv) $(\tau-\operatorname{id})(x)=f(x)b$, so $\tau-\operatorname{id}$ has rank $1$ and its square is zero:</p>
 <p>$$
-(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(b)=f(x)f(b)b=0 ;
+\boxed{\;(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(b)=f(x)f(b)b=0\;} ;
 $$</p>
 <p>(v) $\det\tau=1$, so $\tau \in \operatorname{SL}(V)$.</p>
 <p><em>Proof.</em> (i) Linearity is clear. If $\tau(x)=x$ then $f(x)b=0$ and $b \neq 0$, so $f(x)=0$; conversely $f(x)=0$ gives $\tau(x)=x$. The functional $f$ is nonzero, so $\ker f$ is a hyperplane. (ii) Immediate. (iii) Using $f(b)=0$ twice, $\tau(x-f(x)b)=x-f(x)b+f(x-f(x)b)b=x-f(x)b+f(x)b=x$. (iv) $(\tau-\operatorname{id})(x)=f(x)b$ has image $\langle b\rangle$, of dimension $1$; and $(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(b)=f(x)\cdot f(b)b=0$. (v) $\tau$ is unipotent with $\tau-\operatorname{id}$ nilpotent of rank $1$, so its only eigenvalue is $1$ and its determinant is a product of eigenvalues, hence $1$.</p>
@@ -107,11 +107,11 @@ $$</p>
 <h3 id="interrelations">Interrelations</h3>
 <p><strong>Proposition.</strong> For distinct indices $i,j,k$ one has the commutator identity</p>
 <p>$$
-E_{ij}(\lambda)E_{jk}(\mu)E_{ij}(-\lambda)E_{jk}(-\mu)=E_{ik}(\lambda\mu),
+\boxed{\;E_{ij}(\lambda)E_{jk}(\mu)E_{ij}(-\lambda)E_{jk}(-\mu)=E_{ik}(\lambda\mu)\;},
 $$</p>
 <p>and for $t \in F^{\times}$ and the diagonal matrix $D=\operatorname{diag}(1,\dots,t,\dots,t^{-1},\dots,1)$ with $t$ and $t^{-1}$ in positions $i$ and $j$,</p>
 <p>$$
-D E_{ij}(\lambda) D^{-1}=E_{ij}(t^2\lambda), \qquad D E_{ji}(\lambda) D^{-1}=E_{ji}(t^{-2}\lambda).
+\boxed{\;D E_{ij}(\lambda) D^{-1}=E_{ij}(t^2\lambda), \qquad D E_{ji}(\lambda) D^{-1}=E_{ji}(t^{-2}\lambda)\;}.
 $$</p>
 <p><em>Proof.</em> The first is the standard elementary computation $[E_{ij}(\lambda),E_{jk}(\mu)]=E_{ik}(\lambda\mu)$ for $i,j,k$ distinct, obtained by multiplying out $2 \times 2$ blocks. The second is conjugation of the matrix with a single off-diagonal entry, which scales that entry by $t\cdot t$ when it lies above the diagonal and by $t^{-1}\cdot t^{-1}$ when it lies below it.</p>
 <p>These identities are exactly what the commutator theorems of the preceding article use: the first produces an elementary matrix of a new index from two of the others, and the second rescales the parameter.</p>

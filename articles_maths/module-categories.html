@@ -128,7 +128,7 @@ $$</p>
 <h3 id="the-freeforgetful-adjunction">The Free–Forgetful Adjunction</h3>
 <p><strong>Definition.</strong> An <strong>adjunction</strong> $F\dashv G$ between functors $F:\mathcal{C}\to\mathcal{D}$ and $G:\mathcal{D}\to\mathcal{C}$ consists of a natural bijection</p>
 <p>$$
-\mathcal{D}(FA,B)\cong\mathcal{C}(A,GB)
+\boxed{\;\mathcal{D}(FA,B)\cong\mathcal{C}(A,GB)\;}
 $$</p>
 <p>for all objects $A$ of $\mathcal{C}$ and $B$ of $\mathcal{D}$. Then $F$ is the <strong>left adjoint</strong> of $G$ and $G$ the <strong>right adjoint</strong> of $F$.</p>
 <p><strong>Theorem.</strong> The free-module functor $F:\mathbf{Set}\to R\text{-}\mathbf{Mod}$ that sends a set $X$ to the free module $R^{(X)}$ on $X$ is left adjoint to the forgetful functor $U:R\text{-}\mathbf{Mod}\to\mathbf{Set}$: for every set $X$ and every module $M$ there is a natural bijection $\operatorname{Hom}_R(R^{(X)},M)\cong\operatorname{Hom}_{\mathbf{Set}}(X,UM)$.</p>
@@ -137,7 +137,7 @@ $$</p>
 <h3 id="the-tensorhom-adjunction">The Tensor–Hom Adjunction</h3>
 <p><strong>Theorem.</strong> For $R$-modules $M,N,P$ there is a natural isomorphism</p>
 <p>$$
-\operatorname{Hom}_R(M\otimes_RN,P)\cong\operatorname{Hom}_R\bigl(M,\operatorname{Hom}_R(N,P)\bigr),
+\boxed{\;\operatorname{Hom}_R(M\otimes_RN,P)\cong\operatorname{Hom}_R\bigl(M,\operatorname{Hom}_R(N,P)\bigr)\;},
 $$</p>
 <p>so that $- \otimes_RN$ is left adjoint to $\operatorname{Hom}_R(N,-)$.</p>
 <p><em>Proof.</em> This is the tensor–hom adjunction of the articles on the balanced product and on flatness and exactness: the map on the left is sent to $m\mapsto(n\mapsto\varphi(m\otimes n))$, and the two constructions are inverse and natural.</p>

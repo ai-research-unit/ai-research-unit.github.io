@@ -76,7 +76,7 @@
 <h2 id="the-unitary-group">The Unitary Group</h2>
 <p><strong>Definition.</strong> The <strong>unitary group</strong> of $B$ is</p>
 <p>$$
-\mathrm{U}(V,B) = \{A \in E : A^{*}A = AA^{*} = \mathrm{id}_V\} = \{A \in \operatorname{GL}(V) : B(Ax,Ay) = B(x,y) \ \forall x,y\} .
+\boxed{\;\mathrm{U}(V,B) = \{A \in E : A^{*}A = AA^{*} = \mathrm{id}_V\} = \{A \in \operatorname{GL}(V) : B(Ax,Ay) = B(x,y) \ \forall x,y\}\;} .
 $$</p>
 <p><strong>Proposition.</strong> $\mathrm{U}(V,B)$ is a subgroup of $\operatorname{GL}(V)$, and it is exactly the stabiliser of $B$ under the action $A \cdot B = B \circ (A\times A)$ of $\operatorname{GL}(V)$ on the pairings.</p>
 <p><strong>Proof.</strong> The equality of the two descriptions is the preservation criterion of <em>Involutions of the Endomorphism Algebra</em>; the product of two unitaries is unitary because $(AB)^{*}AB = B^{*}A^{*}AB = B^{*}B = \mathrm{id}$, and the identity is unitary. The stabiliser statement is the definition of the action.</p>
@@ -92,7 +92,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition (the bracket table).</strong> With $E^{\pm} = \{X : X^{*} = \pm X\}$,</p>
 <p>$$
-[E^{+},E^{+}] \subseteq E^{-}, \qquad [E^{+},E^{-}] \subseteq E^{+}, \qquad [E^{-},E^{-}] \subseteq E^{-},
+\boxed{\;[E^{+},E^{+}] \subseteq E^{-}, \qquad [E^{+},E^{-}] \subseteq E^{+}, \qquad [E^{-},E^{-}] \subseteq E^{-}\;},
 $$</p>
 <p>so the skew-adjoint operators form a Lie subalgebra of $E$ under the bracket, and the self-adjoint operators form a subspace closed under the anticommutator, $\{E^{+},E^{+}\} \subseteq E^{+}$.</p>
 <p><strong>Proof.</strong> For $X,Y$ and the involution, $(XY)^{*} = Y^{*}X^{*}$; hence $(XY - YX)^{*} = Y^{*}X^{*} - X^{*}Y^{*}$. If $X^{*}=\alpha X$ and $Y^{*}=\beta Y$ with $\alpha,\beta \in \{\pm1\}$ then $(XY-YX)^{*} = \beta\alpha XY - \alpha\beta YX = \alpha\beta(XY-YX)$, giving the three inclusions according to the signs; the anticommutator computation is $(XY+YX)^{*} = \beta\alpha XY + \alpha\beta YX = \alpha\beta(XY+YX)$, which is self-adjoint when $\alpha\beta=1$, that is for two elements of the same parity, giving $\{E^{+},E^{+}\}\subseteq E^{+}$ and $\{E^{-},E^{-}\}\subseteq E^{+}$.</p>

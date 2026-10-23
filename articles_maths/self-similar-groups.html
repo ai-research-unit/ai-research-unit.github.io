@@ -107,7 +107,7 @@ $$</p>
 <p>the product being the concatenation of the words, and by the letter $x \in X$ read as the word of length one one has $g(xw) = g(x)\,g|_x(w)$.</p>
 <p><strong>Proposition (the multiplication rule).</strong> For $g, h \in \operatorname{Aut}(\mathcal{T})$ and $v \in X^*$,</p>
 <p>$$
-(gh)|_v = g|_{h(v)}\,h|_v .
+\boxed{\;(gh)|_v = g|_{h(v)}\,h|_v\;} .
 $$</p>
 <p><strong>Proof.</strong> For every word $w$, $(gh)(vw) = g(h(vw)) = g\bigl(h(v)\,h|_v(w)\bigr) = g(h(v))\,g|_{h(v)}(h|_v(w))$, and the left side is $(gh)(v)\,(gh)|_v(w) = g(h(v))\,(gh)|_v(w)$; comparing gives the identity.</p>
 <p><strong>Definition (the root permutation and the recursion).</strong> Write $\sigma(g) \in \operatorname{Sym}(X)$ for the permutation of the letters that $g$ induces on the first level, $\sigma(g)(x) = g(x)$. Then</p>
@@ -139,7 +139,7 @@ G \to G \wr \operatorname{Sym}(X) = G^{X} \rtimes \operatorname{Sym}(X), \qquad 
 $$</p>
 <p>is an injective group homomorphism, so that $G$ embeds in its own permutational wreath product. Iterating the recursion one has, for every $n$, an embedding</p>
 <p>$$
-G \hookrightarrow G \wr \operatorname{Aut}(\mathcal{T}_n),
+\boxed{\;G \hookrightarrow G \wr \operatorname{Aut}(\mathcal{T}_n)\;},
 $$</p>
 <p>where the finite group $\operatorname{Aut}(\mathcal{T}_n)$ acts on the level $X^n$.</p>
 <p><strong>Proof.</strong> The multiplication rules of the sections and of the root permutation are exactly the multiplication in the semidirect product $G^{X} \rtimes \operatorname{Sym}(X)$, with $\operatorname{Sym}(X)$ acting on the $d$ coordinates $G$; injectivity holds because an element with all sections trivial and trivial root permutation acts trivially, which is read on the portraits. The iterated statement follows by applying the recursion to the sections, which are again elements of $G$.</p>
@@ -187,7 +187,7 @@ $$</p>
 <p><strong>Theorem (properties).</strong> The Grigorchuk group is infinite, it is a torsion group in which every element has order a power of two, it is residually finite and just infinite, it is amenable but not elementary amenable, and it is not finitely presented. Its action is level-transitive and self-replicating, and it is a branch group in the sense of the last section.</p>
 <p>The growth of the group is intermediate, which is what makes it the counterexample to the generalised Milnor problem. With respect to a finite generating set the volume growth function of <em>Geometric Group Theory</em>, $v_{G,S}(n) = \#\{g \in G : |g|_S \leq n\}$, is neither polynomial nor exponential, and</p>
 <p>$$
-\lim_{n \to \infty} \frac{\log\log v_{G,S}(n)}{\log n} = \alpha_0 = \frac{\log 2}{\log\lambda_0} \approx 0.7674,
+\boxed{\;\lim_{n \to \infty} \frac{\log\log v_{G,S}(n)}{\log n} = \alpha_0 = \frac{\log 2}{\log\lambda_0} \approx 0.7674\;},
 $$</p>
 <p>where $\lambda_0$ is the positive root of $X^3 - X^2 - 2X - 4 \approx 2.4675$; this is the theorem of Erschler and Zheng, and the corresponding upper bound is due to Bartholdi. The growth is therefore $\exp\bigl(n^{\alpha_0 + o(1)}\bigr)$, strictly between polynomial and exponential, and it is the same for every finite generating set because the growth type is a quasi-isometry invariant. The intermediate growth is visible from the tree: a section of a long word is shorter than the word, because the four sections of the generators lie in the five-element set $\{1, a, b, c, d\}$, and the recursion therefore shrinks the word length — the <strong>contraction</strong> that the next article turns into an algorithm. The amenability and the failure of elementary amenability are those of <em>Amenable Groups</em>, where the group is the example showing that the class of elementary amenable groups is strictly smaller than the amenable class.</p>
 <p><strong>Remark.</strong> The Grigorchuk group shows that the portrait description is not an ornament. The relations have no interpretation in the abstract presentation of the group — the group is not finitely presented, and its defining relations of Lysënok form an infinite recursive family — while in the recursion they are three lines, because the recursion is the structure that makes the group act on the tree.</p>

@@ -104,7 +104,7 @@ $$</p>
 <h3 id="the-tensor-product-decomposition">The Tensor Product Decomposition</h3>
 <p><strong>Theorem.</strong> With $W$ a complement of $\operatorname{rad}(q)$, there is an isomorphism of $\mathbb{Z}/2$-graded algebras</p>
 <p>$$
-\mathrm{Cl}(V, \mathfrak{Q}) \cong \mathrm{Cl}(W, \bar{q}) \,\hat{\otimes}\, \Lambda(\operatorname{rad}(q)),
+\boxed{\;\mathrm{Cl}(V, \mathfrak{Q}) \cong \mathrm{Cl}(W, \bar{q}) \,\hat{\otimes}\, \Lambda(\operatorname{rad}(q))\;},
 $$</p>
 <p>where $\Lambda(\operatorname{rad}(q))$ is the exterior algebra on the radical and $\hat\otimes$ is the graded tensor product of <em>Clifford Algebras</em>.</p>
 <p><strong>Proof.</strong> The orthogonal decomposition above and the splitting theorem of <em>Clifford Algebras</em> give</p>
@@ -136,14 +136,14 @@ $$</p>
 <h3 id="the-rank">The Rank</h3>
 <p><strong>Theorem.</strong> Let $V$ be free of rank $n$ and $r_0 = \operatorname{rank}\operatorname{rad}(q)$. Then $\mathrm{Cl}(V, \mathfrak{Q})$ is free of rank</p>
 <p>$$
-\operatorname{rank}\mathrm{Cl}(V, \mathfrak{Q}) = 2^{n - r_0} \cdot 2^{r_0} = 2^n.
+\boxed{\;\operatorname{rank}\mathrm{Cl}(V, \mathfrak{Q}) = 2^{n - r_0} \cdot 2^{r_0} = 2^n\;}.
 $$</p>
 <p><strong>Pro.</strong> The graded tensor product of two free modules of ranks $2^{n - r_0}$ and $2^{r_0}$ is free of rank $2^{n - r_0} \cdot 2^{r_0} = 2^n$. The rank of the non-degenerate factor is the dimension count.</p>
 <p>So the presence of a radical changes the structure but not the rank: it replaces part of the algebra by an exterior algebra on the same number of generators.</p>
 <h3 id="the-nilpotent-ideal">The Nilpotent Ideal</h3>
 <p><strong>Theorem.</strong> The image of $\operatorname{rad}(q)$ generates a two-sided ideal</p>
 <p>$$
-\mathrm{N} = \operatorname{rad}(q)\cdot \mathrm{Cl}(V, \mathfrak{Q}) = \mathrm{Cl}(V, \mathfrak{Q})\cdot \operatorname{rad}(q),
+\boxed{\;\mathrm{N} = \operatorname{rad}(q)\cdot \mathrm{Cl}(V, \mathfrak{Q}) = \mathrm{Cl}(V, \mathfrak{Q})\cdot \operatorname{rad}(q)\;},
 $$</p>
 <p>which under the decomposition is $\mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{k\geq 1}\Lambda^k(\operatorname{rad}(q))$. The ideal $\mathrm{N}$ is nilpotent, and the quotient $\mathrm{Cl}(V, \mathfrak{Q})/\mathrm{N}$ is $\mathrm{Cl}(W, \bar{q})$. For a field $F$ of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical of $\mathrm{Cl}(V, \mathfrak{Q})$.</p>
 <p><strong>Proof.</strong> For $r \in \operatorname{rad}(q)$ and $x \in \mathrm{Cl}(V, \mathfrak{Q})$ the products $rx$ and $xr$ lie in $\mathrm{N}$, so $\mathrm{N}$ is a two-sided ideal; the decomposition identifies it with the positive part of the exterior factor tensored with the non-degenerate factor. Its $(r_0+1)$-st power vanishes because a product of $r_0 + 1$ radical generators vanishes, so $\mathrm{N}^{r_0+1} = 0$. The quotient is obtained by setting the radical generators to zero, which is the defining presentation of $\mathrm{Cl}(W, \bar{q})$. A nilpotent ideal is contained in the Jacobson radical, and when $\mathrm{Cl}(W, \bar{q})$ is semisimple the quotient has zero Jacobson radical, so the two coincide.</p>

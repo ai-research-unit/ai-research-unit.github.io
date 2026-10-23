@@ -81,7 +81,7 @@ $$</p>
 <p>The <strong>form of the state</strong> is $\langle x,y\rangle_{\omega} = \omega(y^{\dagger}x)$.</p>
 <p><strong>Proposition (positivity and the Cauchy–Schwarz inequality).</strong> The form of a state is positive semidefinite, Hermitian, and satisfies</p>
 <p>$$
-|\langle x,y\rangle_{\omega}|^{2}\leq \langle x,x\rangle_{\omega}\langle y,y\rangle_{\omega}, \qquad \langle x,y\rangle_{\omega} = \overline{\langle y,x\rangle_{\omega}} .
+\boxed{\;|\langle x,y\rangle_{\omega}|^{2}\leq \langle x,x\rangle_{\omega}\langle y,y\rangle_{\omega}, \qquad \langle x,y\rangle_{\omega} = \overline{\langle y,x\rangle_{\omega}}\;} .
 $$</p>
 <p><strong>Proof.</strong> The classical Cauchy–Schwarz argument for a positive semidefinite sesquilinear form: positivity of $\langle x + \lambda y, x+\lambda y\rangle_{\omega}$ for all complex $\lambda$ gives the inequality; Hermitian symmetry is $\omega(y^{\dagger}x) = \overline{\omega(x^{\dagger}y)}$, using $\omega(u^{\dagger}) = \overline{\omega(u)}$ for a state.</p>
 <p><strong>Definition.</strong> The <strong>radical</strong> of the state is $N_{\omega} = \{x : \langle x,x\rangle_{\omega} = 0\}$, equivalently $\{x : \omega(y^{\dagger}x) = 0 \text{ for every } y\}$ by the inequality.</p>
@@ -95,7 +95,7 @@ $$</p>
 <li>the class $\xi_{\omega} = 1 + N_{\omega}$ is <strong>cyclic</strong>, $\overline{\pi_{\omega}(A)\xi_{\omega}} = H_{\omega}$, and</li>
 </ol>
 <p>$$
-\omega(x) = \langle\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}\rangle, \qquad \langle\pi_{\omega}(x)\xi_{\omega},\pi_{\omega}(y)\xi_{\omega}\rangle = \omega(y^{\dagger}x).
+\boxed{\;\omega(x) = \langle\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}\rangle, \qquad \langle\pi_{\omega}(x)\xi_{\omega},\pi_{\omega}(y)\xi_{\omega}\rangle = \omega(y^{\dagger}x)\;}.
 $$</p>
 <p><strong>Proof.</strong> The form descends because the radical is exactly the isotropic part; completion gives $H_{\omega}$; the left multiplication is well defined because $N_{\omega}$ is a left ideal, is multiplicative by associativity, and satisfies $\pi_{\omega}(x^{\dagger}) = \pi_{\omega}(x)^{*}$ by the adjoint axiom and the reality of the form; the density of the image of the quotient is the construction; the two identities are the definitions.</p>
 <p><strong>Definition.</strong> The triple $(H_{\omega},\pi_{\omega},\xi_{\omega})$ is the <strong>GNS representation</strong> of the state $\omega$.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proof.</strong> The representation identities are above; $\|\xi_{\omega}\|^{2} = \omega(1) = 1$.</p>
 <p><strong>Theorem (uniqueness up to unitary equivalence).</strong> If $(H,\pi,\xi)$ is a cyclic $\ast$-representation of $A$ with</p>
 <p>$$
-\omega(x) = \langle\pi(x)\xi,\xi\rangle
+\boxed{\;\omega(x) = \langle\pi(x)\xi,\xi\rangle\;}
 $$</p>
 <p>then there is a unitary $U : H_{\omega}\to H$ with $U\xi_{\omega} = \xi$ and $U\pi_{\omega}(x) = \pi(x)U$ for every $x$. So the state determines its cyclic representation, and the map from cyclic representations to states is a bijection on unitary equivalence classes.</p>
 <p><strong>Proof.</strong> The linear map $U(\pi_{\omega}(x)\xi_{\omega}) = \pi(x)\xi$ is well defined because the two forms agree, is isometric by the identity $\langle\pi(x)\xi,\pi(y)\xi\rangle = \omega(y^{\dagger}x)$, and extends by cyclicity; it is surjective by cyclicity of $\xi$ and intertwines the representations by multiplicativity.</p>

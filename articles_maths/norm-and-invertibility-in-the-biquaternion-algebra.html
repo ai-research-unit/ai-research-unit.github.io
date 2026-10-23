@@ -91,7 +91,9 @@ $$</p>
 <p>which is the general plain bilinear form of <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>, the $\mathbb{C}$-bilinear form of the pair $(\mathrm{id},\mathrm{id})$. The two arities of the letter are one object: with two arguments the form, with one argument its diagonal.</p>
 <p>The form is symmetric, $\langle\tilde Q_2,\tilde Q_1\rangle=\langle\tilde Q_1,\tilde Q_2\rangle$, and non-degenerate, and on the diagonal the splitting of the coefficients into real and imaginary parts gives</p>
 <p>$$
-\operatorname{Re}B=\sum_{\mu\in\{t,x,y,z\}}\bigl(q_\mu^{2}-(q'_\mu)^{2}\bigr),\qquad \operatorname{Im}B=2\sum_{\mu\in\{t,x,y,z\}}q_\mu q'_\mu,\qquad Q_\mu=q_\mu+iq'_\mu .
+\boxed{\;
+\operatorname{Re}B=\sum_{\mu\in\{t,x,y,z\}}\bigl(q_\mu^{2}-(q'_\mu)^{2}\bigr),\qquad \operatorname{Im}B=2\sum_{\mu\in\{t,x,y,z\}}q_\mu q'_\mu,\qquad Q_\mu=q_\mu+iq'_\mu
+\;}.
 $$</p>
 <p><strong>Basic properties.</strong> Each is a direct reading of the definition.</p>
 <ul>
@@ -105,7 +107,9 @@ $$</p>
 <p><strong>The algebraic norm of the plain product is not multiplicative:</strong> $\langle\tilde Q_2\tilde Q_1\rangle\neq \langle\tilde Q_2\rangle\langle\tilde Q_1\rangle$ in general, the pair $(\vec e_x,\vec e_y)$ separating the two sides.</p>
 <p><strong>Proposition.</strong> The algebraic norm of the plain product is <strong>not</strong> multiplicative:</p>
 <p>$$
+\boxed{\;
 \langle\tilde Q_2\tilde Q_1\rangle\neq \langle\tilde Q_2\rangle\,\langle\tilde Q_1\rangle\quad\text{in general.}
+\;}
 $$</p>
 <p><em>Proof.</em> The pair $\tilde Q_2=\vec e_x$, $\tilde Q_1=\vec e_y$ separates the two sides: $\vec e_x\vec e_y=\vec e_z$, so $\langle\tilde Q_2\tilde Q_1\rangle=\langle \vec e_z\rangle=-1$, while $\langle \vec e_x\rangle\langle \vec e_y\rangle=(-1)(-1)=1$. The two values differ, so no multiplicativity holds.</p>
 <p><strong>Remark (the multiplicative algebraic norm is another form).</strong> Of the four algebraic norms of the space the multiplicative one is $\langle\cdot\rangle_{\natural}$, the algebraic norm of the quaternionic product, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$; it is a different quadratic form on the same space, and it is not the algebraic norm of the plain product. The plain product is the ordinary multiplication of an algebra that has zero divisors, and its algebraic norm $\langle\cdot\rangle$, complex-valued and indefinite, fails multiplicativity outright.</p>
@@ -118,9 +122,11 @@ $$</p>
 <p>The algebraic norm of a product would decide invertibility if the invertible elements were exactly the elements of non-vanishing algebraic norm. For the plain product that statement is <strong>false in both directions</strong>, and the article records the absence rather than a criterion.</p>
 <p><strong>Theorem (the algebraic norm does not decide invertibility).</strong> Neither implication holds:</p>
 <p>$$
+\boxed{\;
 \langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\text{ non-invertible},
 \qquad
-\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible}.
+\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible}
+\;}.
 $$</p>
 <p><em>Proof.</em> For the first implication, the element $\tilde Q=e_t+\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-1^{2}=0$, and it is a unit of the plain product: $(e_t+\vec e_x)(e_t-\vec e_x)=e_t^{2}-e_t\vec e_x+\vec e_xe_t-\vec e_x^{2}=e_t-\vec e_x+\vec e_x+e_t=2e_t$, so $\tilde Q^{-1}=\tfrac12(e_t-\vec e_x)$ and $\tilde Q$ is invertible while its algebraic norm vanishes. For the second implication, the element $\tilde Q=e_t+i\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-(i)^{2}=1+1=2\neq0$, and it is a zero divisor, $(e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^{2}-(i\vec e_x)^{2}=e_t-e_t=0$, hence non-invertible while its algebraic norm does not vanish.</p>
 <p><strong>Remark (the two witnesses).</strong> The two witnesses are the two halves of the failure. The element $e_t+\vec e_x$ is invertible with vanishing algebraic norm, so the algebraic norm is not necessary for invertibility; the element $e_t+i\vec e_x$ is non-invertible with non-vanishing algebraic norm, so it is not sufficient either. The vanishing set of $\langle\cdot\rangle$ is the complex cone, and the zero-divisor set is the cone of a different quadratic form; the two cones meet but neither contains the other, and that is the geometric form of the absence.</p>

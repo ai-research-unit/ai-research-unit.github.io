@@ -102,7 +102,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> $A \otimes_R B$ is associative if $A$ and $B$ are; it is supercommutative if $A$ and $B$ are; and the exterior algebra satisfies</p>
 <p>$$
-\Lambda(M \oplus N) \cong \Lambda(M) \otimes_R \Lambda(N)
+\boxed{\;\Lambda(M \oplus N) \cong \Lambda(M) \otimes_R \Lambda(N)\;}
 $$</p>
 <p>as superalgebras, which is the isomorphism of <em>The Exterior Algebra</em> with the graded tensor product reinterpreted as a super tensor product.</p>
 <p><strong>Proof.</strong> Associativity is the verification that the two bracketings of $(a \otimes b)(a' \otimes b')(a'' \otimes b'')$ have the same sign, namely $(-1)^{|b||a'|} \cdot (-1)^{|b||a''| + |b'||a''|}$; supercommutativity follows by moving the two tensor factors past one another and collecting the signs. The isomorphism is the one already constructed degree by degree.</p>
@@ -168,7 +168,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $A$ be a supercommutative associative superalgebra. The <strong>supercommutator</strong> is the bracket $[a, b] = ab - (-1)^{|a||b|}ba$, which vanishes identically on $A$, so a supercommutative algebra is exactly a Lie superalgebra with zero bracket; its structure is that of a commutative algebra in the symmetric monoidal category of super vector spaces.</p>
 <p><strong>Proposition.</strong> In a supercommutative algebra, the even part is commutative, the odd part is a module over the even part, and the product of two odd elements is even and symmetric: for odd $a, b, c$,</p>
 <p>$$
-abc = -cba, \qquad (ab)c = c(ab), \qquad (ab)c = (bc)a.
+\boxed{\;abc = -cba, \qquad (ab)c = c(ab), \qquad (ab)c = (bc)a\;}.
 $$</p>
 <p><strong>Proof.</strong> For odd $a, b$ the sign in $ab = -ba$ is $-1$, and the product $ab$ is even, so it commutes with $c$: $(ab)c = c(ab)$. Associativity and the anticommutativity of odd elements give $cba = (cb)a = -(bc)a = -a(bc) = -(ab)c$, which is $abc = -cba$; the last identity is the same computation with the letters cyclically permuted.</p>
 <p><strong>Example.</strong> In $\Lambda(M)$ with $M$ odd, the even part $\Lambda^{\mathrm{ev}}(M)$ is commutative, and the product of two odd elements is even and behaves accordingly: for $x, y, z \in M$ one has $(x \wedge y) \wedge z = z \wedge (x \wedge y)$ in the even part.</p>
@@ -181,7 +181,7 @@ $$</p>
 <p>The two expressions agree over a supercommutative algebra, and the Berezinian is an even invertible element.</p>
 <p><strong>Theorem.</strong> The Berezinian is multiplicative:</p>
 <p>$$
-\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)
+\boxed{\;\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)\;}
 $$</p>
 <p>for even supermatrices with invertible even diagonal blocks, and it is characterised by the two properties $\operatorname{Ber}\!\begin{pmatrix} A & 0 \\ 0 & D\end{pmatrix} = \det(A)\det(D)^{-1}$ and multiplicativity.</p>
 <p><strong>Proof.</strong> Both sides are rational functions of the entries; by the super analogue of the splitting principle one reduces to supermatrices that are products of block diagonal and block triangular factors, and for those the formula is immediate from the definition and the multiplicativity of the ordinary determinant. The odd entries are nilpotent over a finitely generated supercommutative algebra, so the rational expression is a polynomial in the odd variables and the reduction is legitimate.</p>

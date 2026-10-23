@@ -118,7 +118,7 @@ $$</p>
 <p>for all $f, h \in C^\infty(M)$. The set of derivations at $p$ is a real vector space, written $\operatorname{Der}_p(C^\infty(M))$.</p>
 <p><strong>Theorem.</strong> For every $p \in M$ the map from tangent vectors to derivations that sends the class of a curve $\gamma$ to $D_\gamma(f) = (f \circ \gamma)'(0)$ is a vector space isomorphism</p>
 <p>$$
-T_pM \longrightarrow \operatorname{Der}_p(C^\infty(M)).
+\boxed{\;T_pM \longrightarrow \operatorname{Der}_p(C^\infty(M))\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> The map is well defined because tangent curves give the same derivative of $f \circ \gamma$ by the chain rule, and it is linear. For injectivity, a derivation that kills every function has vanishing pairing with every coordinate function, hence the corresponding coordinate velocity vanishes. For surjectivity, let $D$ be a derivation and choose a chart with coordinates $x^i$ around $p$, which we may suppose is the origin. Writing $f$ in the chart and subtracting its Taylor expansion to first order expresses $f - f(p) - \sum_i (\partial f/\partial x^i)(0) x^i$ as a sum of products of functions vanishing at $0$; the Leibniz rule applied to those products shows that $D(f) = \sum_i D(x^i)\,(\partial f/\partial x^i)(0)$, so $D$ is the derivation of the vector $\sum_i D(x^i)\partial/\partial x^i|_p$.</p>
 <p>The theorem identifies the two definitions, and one writes a tangent vector as a derivation $v = \sum_i v^i \partial/\partial x^i|_p$ acting on functions by $v(f) = \sum_i v^i \partial f/\partial x^i(p)$. This is the <strong>directional derivative</strong>.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>the tangent vector at $F(p)$ whose action on a function on $N$ is the action of $v$ on the pullback of that function.</p>
 <p><strong>Theorem (chain rule).</strong> For smooth maps $F : M \to N$ and $G : N \to P$ and a point $p \in M$,</p>
 <p>$$
-d(G \circ F)_p = dG_{F(p)} \circ dF_p,
+\boxed{\;d(G \circ F)_p = dG_{F(p)} \circ dF_p\;},
 $$</p>
 <p>and $d(\mathrm{id}_M)_p = \mathrm{id}_{T_pM}$. Consequently, if $F$ is a diffeomorphism then $dF_p$ is invertible with inverse $d(F^{-1})_{F(p)}$.</p>
 <p><strong>Proof.</strong> For $v \in T_pM$ and $g \in C^\infty(P)$,</p>
@@ -174,7 +174,7 @@ $$</p>
 <p>Such a chart is <strong>adapted</strong> to $S$. The subspace $S$ then carries a smooth structure of dimension $k$, with charts the restrictions of the adapted charts, and the inclusion $S \hookrightarrow M$ is an embedding.</p>
 <p><strong>Theorem (rank theorem).</strong> Let $F : M \to N$ be a smooth map of constant rank $r$ near $p$. Then there are charts $(\Omega, \varphi)$ about $p$ and $(V, \psi)$ about $F(p)$ with $F(\Omega) \subseteq V$ such that</p>
 <p>$$
-\psi \circ F \circ \varphi^{-1}(x^1, \ldots, x^m) = (x^1, \ldots, x^r, 0, \ldots, 0).
+\boxed{\;\psi \circ F \circ \varphi^{-1}(x^1, \ldots, x^m) = (x^1, \ldots, x^r, 0, \ldots, 0)\;}.
 $$</p>
 <p>Consequently, about a point of constant rank $r$, the map $F$ looks like the projection of the first $r$ coordinates followed by the inclusion of the first $r$ coordinates.</p>
 <p><strong>Proof sketch.</strong> The statement is local, so one may work in Euclidean spaces. Composing with linear isomorphisms reduces the derivative at $p$ to the standard form, and the inverse function theorem applied to the map $x \mapsto (F_1(x), \ldots, F_r(x), x^{r+1}, \ldots, x^m)$ produces a change of coordinates in which the first $r$ components of $F$ are the first $r$ coordinates and the remaining components have vanishing derivative; a further argument, using the constancy of the rank, shows the remaining components are independent of the first $r$ variables and then eliminates them by a second change of coordinates in the target.</p>

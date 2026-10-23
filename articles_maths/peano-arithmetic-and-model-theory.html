@@ -127,8 +127,7 @@ $$</p>
 <p><strong>Remark.</strong> The induction schema is not redundant over the other axioms: Q is strictly weaker than PA, and there are models of Q in which induction fails for a definable set. Q is nevertheless strong enough to prove the basic arithmetic facts needed for the incompleteness theorems, and this is the content of the standard quantifier-free representation lemmas of <em>Proof Theory and Type Theory</em>.</p>
 <h3 id="elementary-consequences">Elementary Consequences</h3>
 <p><strong>Theorem.</strong> PA proves the following, for all $n, m, k$:</p>
-<p>$$
-n + m = m + n, \qquad (n+m)+k = n+(m+k), \qquad n \cdot m = m \cdot n, \qquad (n \cdot m)\cdot k = n\cdot(m\cdot k),
+<p>$$ \boxed{\;n + m = m + n, \qquad (n+m)+k = n+(m+k), \qquad n \cdot m = m \cdot n, \qquad (n \cdot m)\cdot k = n\cdot(m\cdot k)\;},
 $$</p>
 <p>$$
 n \cdot (m + k) = n\cdot m + n \cdot k, \qquad n + 0 = n = 0 + n, \qquad n \cdot 1 = n, \qquad n \cdot 0 = 0 ,
@@ -150,8 +149,7 @@ $$</p>
 <p><strong>Theorem (existence).</strong> There are models of PA that are not isomorphic to $\mathbb{N}$. Indeed, for every infinite cardinal $\kappa$ there is a model of PA of cardinality $\kappa$.</p>
 <p><strong>Proof.</strong> Add to $\mathcal{L}_A$ a new constant $c$ and the sentences $c \neq 0$, $c \neq S0$, $c \neq SS0$, and so on. Every finite subset of the resulting theory is satisfiable in $\mathbb{N}$ by interpreting $c$ as a sufficiently large natural number. By the compactness theorem of <em>Model Theory</em>, the whole theory has a model $\mathcal{M}$, and the interpretation of $c$ in $\mathcal{M}$ is a nonstandard element. For the cardinal statement, apply the upward Löwenheim–Skolem theorem to that model.</p>
 <p><strong>Theorem (order type).</strong> Let $\mathcal{M}$ be a nonstandard model of PA and let $N$ be its standard part. Then $\mathcal{M}$ is the disjoint union of $N$ and of the <strong>$\mathbb{Z}$-blocks</strong> $B_a = \{a + n : n \in \mathbb{Z}\}$ for nonstandard $a$, each of which has order type $\mathbb{Z}$ and is an interval in $M$; the set of blocks is densely ordered and has no endpoints, so the order type of $\mathcal{M}$ is</p>
-<p>$$
-\mathbb{N} + \sum_{q \in D} \mathbb{Z},
+<p>$$ \boxed{\;\mathbb{N} + \sum_{q \in D} \mathbb{Z}\;},
 $$</p>
 <p>where $D$ is a dense linear order without endpoints.</p>
 <p><strong>Proof.</strong> For nonstandard $a$, the map $n \mapsto a + n$ for $n \in \mathbb{Z}$ is injective and order-preserving by cancellation in $\mathcal{M}$, and the set $B_a = \{a + n : n \in \mathbb{Z}\}$ is convex in $M$; so each block has order type $\mathbb{Z}$. The blocks are ordered by $B_a < B_b$ if $a < b$, and this order is dense: if $a < b$ lie in distinct blocks, then $b - a$ is greater than every standard number, and $c = \lfloor (a+b)/2 \rfloor$, computed in $\mathcal{M}$, is nonstandard and satisfies $a < c < b$, so $B_a < B_c < B_b$. There is no least block above the standard part, because for nonstandard $a$ the element $\lfloor a/2 \rfloor$ is nonstandard and lies in a strictly lower block, and no greatest block, because $2a$ lies in a strictly higher one. Hence the nonstandard part is a densely ordered family of $\mathbb{Z}$-blocks with no endpoints.</p>
@@ -164,8 +162,7 @@ $$</p>
 <h3 id="godels-theorems">Gödel's Theorems</h3>
 <p><strong>Theorem (Gödel, first incompleteness theorem).</strong> If PA is consistent, then there is a sentence $G$ of $\mathcal{L}_A$ such that PA does not prove $G$ and PA does not prove $\neg G$; moreover $G$ is true in the standard model. The sentence $G$ can be taken to be $\Pi_1$, and it asserts its own unprovability.</p>
 <p><strong>Proof.</strong> Gödel's diagonal construction produces a sentence $G$ with</p>
-<p>$$
-\mathrm{PA} \vdash G \leftrightarrow \neg \mathrm{Prov}_{\mathrm{PA}}(\#G),
+<p>$$ \boxed{\;\mathrm{PA} \vdash G \leftrightarrow \neg \mathrm{Prov}_{\mathrm{PA}}(\#G)\;},
 $$</p>
 <p>where $\mathrm{Prov}$ is the arithmetised proof predicate, using the representability of the recursive functions in Q and the diagonal lemma. If PA proved $G$ then $\mathrm{Prov}(\#G)$ would hold and, by $\Sigma_1$-completeness, PA would prove it, contradicting the equivalence; if PA proved $\neg G$ and PA is consistent, then $G$ is not provable and, by $\Sigma_1$-completeness of the negation, PA would prove $\mathrm{Prov}(\#G)$, again contradicting the equivalence. The argument is Gödel's and is given in <em>Proof Theory and Type Theory</em>.</p>
 <p><strong>Theorem (Gödel, second incompleteness theorem).</strong> If PA is consistent, then PA does not prove its own consistency statement</p>

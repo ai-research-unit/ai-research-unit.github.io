@@ -85,7 +85,7 @@ $$</p>
 <h3 id="the-boundedness">The Boundedness</h3>
 <p><strong>Theorem (the bracket is bounded).</strong> Let $A$ be a normed sesqualgebra with submultiplicative norm. Then for all $x,y$,</p>
 <p>$$
-\lVert[x,y]_{\varsigma}\rVert \leq 2\lVert x\rVert\lVert y\rVert ,
+\boxed{\;\lVert[x,y]_{\varsigma}\rVert \leq 2\lVert x\rVert\lVert y\rVert\;} ,
 $$</p>
 <p>so the bracket is a bounded sesquilinear map, and its sesquilinear norm $\lVert[\ ,\ ]_{\varsigma}\rVert = \sup\{\lVert[x,y]_{\varsigma}\rVert : \lVert x\rVert \leq 1,\ \lVert y\rVert \leq 1\}$ satisfies $\lVert[\ ,\ ]_{\varsigma}\rVert \leq 2$. It is continuous as a map $A \times A \to A$ for the product topology.</p>
 <p><em>Proof.</em> $\lVert x \star y\rVert \leq \lVert x\rVert\lVert y\rVert$ and $\lVert y \star x\rVert \leq \lVert y\rVert\lVert x\rVert$ by the submultiplicative estimate, so the triangle inequality gives $\lVert[x,y]_{\varsigma}\rVert \leq 2\lVert x\rVert\lVert y\rVert$. A sesquilinear map bounded by a constant is continuous, and the continuity of the sesquilinear form in each variable follows from the bound and additivity.</p>
@@ -112,7 +112,7 @@ $$</p>
 <h3 id="the-values-and-the-closed-subspace">The Values and the Closed Subspace</h3>
 <p><strong>Theorem (the values are skew-Hermitian).</strong> For all $x,y$,</p>
 <p>$$
-[x,y]_{\varsigma}^{*} = -[x,y]_{\varsigma} ,
+\boxed{\;[x,y]_{\varsigma}^{*} = -[x,y]_{\varsigma}\;} ,
 $$</p>
 <p>so $[A,A]_{\varsigma} \subseteq S(A)$, where $S(A) = \{s : s^{*} = -s\}$ is the skew-Hermitian part. The set $S(A)$ is a closed real subspace of $A$, and the bracket is a bounded sesquilinear map $A \times A \to S(A)$.</p>
 <p><em>Proof.</em> The conjugation of a product reverses it, $(x \star y)^{*} = y \star x$, so $[x,y]_{\varsigma}^{*} = y \star x - x \star y = -[x,y]_{\varsigma}$; this is <em>The Sesquilinear Commutator</em>, §<em>The Values in the Skew-Hermitian Part</em>. The skew-Hermitian part is the kernel of the continuous map $x \mapsto x^{*} + x$, hence closed, and it is a real subspace because $is$ is Hermitian when $s$ is skew-Hermitian. The bracket lands in it by the first display, and it is bounded by §<em>The Boundedness</em>.</p>
@@ -139,7 +139,7 @@ $$</p>
 <p><em>Proof.</em> The witness and the field computation are those of <em>The Sesquilinear Commutator</em>, §<em>The Failure of the Jacobi Identity</em>; the two positive cases are the theorem above and the cited field computation.</p>
 <p><strong>Proposition (the bracket as a difference of two multiplications).</strong> For all $x,y$,</p>
 <p>$$
-[x,y]_{\varsigma} = L_x(y) - R_x(y) = R_y(x) - L_y(x) ,
+\boxed{\;[x,y]_{\varsigma} = L_x(y) - R_x(y) = R_y(x) - L_y(x)\;} ,
 $$</p>
 <p>so the bracket is the difference of the left and the right multiplication, and with $x$ fixed it is the adjoint action $\operatorname{ad}_x = L_x - R_x$ of <em>The Bounded Left and Right Multiplication Operators of a Sesqualgebra</em>, §<em>The Adjoint Action</em>; it is bounded with $\lVert \operatorname{ad}_x\rVert \leq 2\lVert x\rVert$, and it is the sum of an even and an odd bounded operator.</p>
 <p><em>Proof.</em> $x \star y = L_x(y)$ and $y \star x = R_x(y)$ by the definitions of the two multiplications; the second form is the first with the variables exchanged and the antisymmetry used. The bound and the parity statement are those of the adjoint action.</p>

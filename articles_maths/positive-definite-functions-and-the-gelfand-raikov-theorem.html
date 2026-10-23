@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-positive-definite-functions">The Positive Definite Functions</h2>
 <p><strong>Theorem (elementary properties).</strong> A continuous $\phi$ is positive definite if and only if the function $\phi^{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$ is, and then</p>
 <p>$$
-\phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0 ;
+\boxed{\;\phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0\;} ;
 $$</p>
 <p>if $\phi(e) = 0$ then $\phi\equiv0$, and every positive definite function is bounded with $\|\phi\|_\infty = \phi(e)$.</p>
 <p><strong>Proof.</strong> The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\phi(x^{-1}) = \overline{\phi(x)}$ and $\phi(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\phi(x)|\leq\phi(e)$; the norm statement follows. The $\phi^{\mathrm{refl}}$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses.</p>
@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>and a cyclic vector $\xi_\phi = S(\text{normalised approximate identity})$ with</p>
 <p>$$
-\phi(x) = \langle\pi_\phi(x)\xi_\phi, \xi_\phi\rangle , \qquad \|\xi_\phi\|^2 = \phi(e) .
+\boxed{\;\phi(x) = \langle\pi_\phi(x)\xi_\phi, \xi_\phi\rangle , \qquad \|\xi_\phi\|^2 = \phi(e)\;} .
 $$</p>
 <p><strong>Proof.</strong> The quotient by the null space of the positive semidefinite form is a pre-Hilbert space, and its completion is $\mathcal{H}_\phi$. The left translation $L_x$ is isometric for the form, $\langle SL_xf, SL_xg\rangle_\phi = \langle Sf,Sg\rangle_\phi$, because $\phi$ is invariant under this substitution in its argument; hence $L_x$ descends to a unitary operator $\pi_\phi(x)$ on $\mathcal{H}_\phi$, and $\pi_\phi(xy) = \pi_\phi(x)\pi_\phi(y)$ because $L_{xy} = L_xL_y$. Continuity of $x\mapsto\pi_\phi(x)$ follows from the continuity of translation in $C_c(G)$ and the bound $\|S(L_xf) - Sf\|^2 = 2\|Sf\|^2 - 2\,\mathrm{Re}\langle S(L_xf),Sf\rangle_\phi$, whose last term is continuous in $x$. The vector $\xi_\phi = S(u)$ for a normalised approximate identity $u$ of $L^1(G)$ is cyclic because $S(C_c(G))$ is dense, and $\langle\pi_\phi(x)\xi_\phi,\xi_\phi\rangle_\phi = \langle S(L_xu), S(u)\rangle_\phi\to\phi(x)$.</p>
 <p><strong>Corollary (the correspondence).</strong> The assignment $\phi\mapsto(\pi_\phi,\xi_\phi)$ is a bijection, up to unitary equivalence fixing the vector, between the continuous positive definite functions and the pairs $(\pi,\xi)$ consisting of a continuous unitary representation with a cyclic vector; irreducibility of $\pi_\phi$ corresponds to $\phi$ being an extreme point of the normalised cone.</p>
@@ -111,7 +111,7 @@ $$</p>
 <h2 id="the-gelfandraikov-theorem">The Gelfand–Raikov Theorem</h2>
 <p><strong>Theorem (the representations separate the points).</strong> For every $x\neq e$ in $G$ there is a continuous unitary representation $\pi$ with $\pi(x)\neq 1$. Equivalently, the map</p>
 <p>$$
-j : G\longrightarrow \prod_{\pi}\mathcal{U}(\mathcal{H}_\pi), \qquad j(x) = (\pi(x))_\pi ,
+\boxed{\;j : G\longrightarrow \prod_{\pi}\mathcal{U}(\mathcal{H}_\pi), \qquad j(x) = (\pi(x))_\pi\;} ,
 $$</p>
 <p>the product over the continuous unitary representations, is injective, and the Gelfand–Raikov topology on $G$ is the original one.</p>
 <p><strong>Proof.</strong> Choose a symmetric open neighbourhood $V$ of $e$ with $x\notin V^2$, and $f\in C_c(G)$ supported in $V$ with $f\geq0$ and $f(e)>0$; set $\phi = f^*\!*f$, which is positive definite by the proposition. Then $\phi(y) = \int_G \overline{f(z^{-1})}\,\Delta(z)^{-1}\,f(z^{-1}y)\,dz$, whose integrand is supported where $z\in V$ and $z^{-1}y\in V$, hence where $y = z\,(z^{-1}y)\in V^2$; so $\phi$ vanishes off $V^2$ and $\phi(x) = 0$, while $\phi(e) = \int_G |f|^2 > 0$. For the GNS pair $(\pi_\phi,\xi_\phi)$ the matrix coefficient at $x$ is $\phi(x) = 0$, so $\langle\pi_\phi(x)\xi_\phi,\xi_\phi\rangle = 0\neq\|\xi_\phi\|^2 = \phi(e)$ and $\pi_\phi(x)\neq1$. The product map is then injective because every nontrivial element is separated from the identity by some factor; continuity of $j$ is the continuity of each $\pi$, and the topology it induces on $G$ is the quotient topology of the same family, which is the original group topology.</p>

@@ -94,7 +94,7 @@ $$</p>
 <h3 id="the-adjoint-swaps-the-parameters">The Adjoint Swaps the Parameters</h3>
 <p><strong>Theorem (the adjoint of the pair operator).</strong> For all $x,y\in A$,</p>
 <p>$$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad\text{equivalently}\qquad h\bigl(\Theta_{x,y}z,w\bigr)=h\bigl(z,\Theta_{y,x}w\bigr)\quad\text{for all }z,w\in A .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad\text{equivalently}\qquad h\bigl(\Theta_{x,y}z,w\bigr)=h\bigl(z,\Theta_{y,x}w\bigr)\quad\text{for all }z,w\in A\;} .
 $$</p>
 <p><strong>Proof.</strong> The pair operator is the bounded left multiplication $L_{x\star y}$, and <em>Adjoints of Bounded Sesquilinear Operators</em> gives $L_{c}^{\dagger}=L_{c^{*}}$; here $c=x\star y$ and $c^{*}=(xy^{*})^{*}=yx^{*}=y\star x$, so $\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}=L_{y\star x}=\Theta_{y,x}$. Written out, $h(\Theta_{x,y}z,w)=(xy^{*}z)^{*}w=z^{*}yx^{*}w$ and $h(z,\Theta_{y,x}w)=z^{*}(yx^{*}w)=z^{*}yx^{*}w$, which agree; this is the direct verification and it uses only the anti-multiplicativity of $*$ and the associativity.</p>
 <p><strong>Corollary (the order of the operation).</strong> $\Theta_{x,y}^{\dagger\dagger}=\Theta_{x,y}$ and $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$: the diagonal of the pair map is self-adjoint.</p>
@@ -111,7 +111,7 @@ $$</p>
 <h3 id="the-hermitian-criterion">The Hermitian Criterion</h3>
 <p><strong>Theorem (when the pair operator is self-adjoint).</strong> For $x,y\in A$,</p>
 <p>$$
-\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y\;} .
 $$</p>
 <p>The pair operator is therefore self-adjoint exactly when the derived product of the pair is Hermitian.</p>
 <p><strong>Proof.</strong> By the adjoint theorem $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two are equal exactly when $y\star x=x\star y$, because the factorisation $\Theta_{p,q}=L_{p\star q}$ identifies the operator with its derived product and the left multiplication $L_{c}$ does not lose the element $c$, being injective with $L_{c}(1)=c$. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement is the Hermitian condition.</p>
@@ -134,7 +134,7 @@ $$</p>
 <h3 id="the-reversal-of-the-triple">The Reversal of the Triple</h3>
 <p><strong>Theorem (the reversed triple).</strong> For all $x,y,z,w\in A$,</p>
 <p>$$
-h\bigl(\{x,y,z\},w\bigr)=h\bigl(z,\{y,x,w\}\bigr).
+\boxed{\;h\bigl(\{x,y,z\},w\bigr)=h\bigl(z,\{y,x,w\}\bigr)\;}.
 $$</p>
 <p>The triple is reversible: the pairing of $\{x,y,z\}$ with $w$ equals the pairing of $z$ with the triple $\{y,x,w\}$, and this is the statement that the pair operator of $(x,y)$ has the pair operator of the reversed pair $(y,x)$ as its adjoint.</p>
 <p><strong>Proof.</strong> The identity is the adjoint theorem written with the ternary product: $h(xy^{*}z,w)=(xy^{*}z)^{*}w=z^{*}yx^{*}w=h(z,yx^{*}w)$.</p>

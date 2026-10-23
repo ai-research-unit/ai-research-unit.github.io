@@ -92,7 +92,9 @@ $$</p>
 <h3 id="criterion">Criterion</h3>
 <p><strong>Theorem.</strong> A nonzero split biquaternion $\tilde{Q}$ is a zero divisor if and only if at least one of its two idempotent components vanishes:</p>
 <p>$$
-\tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0).
+\boxed{\;
+\tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0)
+\;}.
 $$</p>
 <p><strong>Proof.</strong> In the idempotent basis the product is $\tilde{Q}_1 \tilde{Q}_2 = \tilde{Q}_{1+} \tilde{Q}_{2+} \tilde\Pi_1 + \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_2$, so $\tilde{Q}_1 \tilde{Q}_2 = 0$ if and only if $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ and $\tilde{Q}_{1-} \tilde{Q}_{2-} = 0$. If $\tilde{Q}_{1+} = 0$ and $\tilde{Q}_1 \neq 0$, then $\tilde{Q}_{1-} \neq 0$, and $\tilde{Q}_2 = \tilde\Pi_1 \neq 0$ satisfies $\tilde{Q}_1 \tilde{Q}_2 = 0$, so $\tilde{Q}_1$ is a zero divisor. Conversely, if $\tilde{Q}_1 \tilde{Q}_2 = 0$ with $\tilde{Q}_2 \neq 0$, then $\tilde{Q}_{2+} \neq 0$ or $\tilde{Q}_{2-} \neq 0$; in the first case $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ with $\tilde{Q}_{2+} \neq 0$ forces $\tilde{Q}_{1+} = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_{1-} = 0$.</p>
 <p><strong>Remark.</strong> The split-biquaternion norm is not the criterion: it is anisotropic, so $\langle\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$ (this is proved in <em>Split-Biquaternion Norm and Invertibility</em>). The zero divisor condition is <strong>linear</strong> in the idempotent basis.</p>
@@ -126,11 +128,15 @@ $$</p>
 <h3 id="the-zero-divisor-set">The Zero Divisor Set</h3>
 <p>The zero divisor set is</p>
 <p>$$
-\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}.
+\boxed{\;
+\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}
+\;}.
 $$</p>
 <p>The two subspaces intersect at the origin:</p>
 <p>$$
-Z_+ \cap Z_- = \{0\}.
+\boxed{\;
+Z_+ \cap Z_- = \{0\}
+\;}.
 $$</p>
 <p>Indeed, an element in both would have all coefficients both multiples of $1 - j$ and multiples of $1 + j$. Since $(1 - j)$ and $(1 + j)$ are linearly independent in $\mathbb{D}$, this forces all coefficients to vanish, i.e., $\tilde{Q} = 0$.</p>
 <p>So the zero divisor set is the union of two four-dimensional linear subspaces that intersect only at the origin.</p>

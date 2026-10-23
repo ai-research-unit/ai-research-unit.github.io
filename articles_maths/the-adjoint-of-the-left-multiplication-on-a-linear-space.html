@@ -94,7 +94,7 @@ $$</p>
 <p><strong>Proof.</strong> $(L_AL_B)(X) = A(BX) = (AB)X$; $(R_AR_B)(X) = (XA)B = X(AB) = R_{BA}(X)$; $L_AR_B(X) = A(XB) = (AX)B = R_BL_A(X)$; the additive statements are immediate. The identities exhibit $E$ acting on itself by left and right multiplication with the two actions commuting.</p>
 <p><strong>Proposition (the trace-adjointness).</strong> For every $A \in E$,</p>
 <p>$$
-(L_A)^{\dagger} = R_A, \qquad (R_A)^{\dagger} = L_A ,
+\boxed{\;(L_A)^{\dagger} = R_A, \qquad (R_A)^{\dagger} = L_A\;} ,
 $$</p>
 <p>where ${}^{\dagger}$ is the adjoint with respect to the trace pairing.</p>
 <p><strong>Proof.</strong> $\langle L_AX,Y\rangle = \operatorname{tr}(AXY) = \operatorname{tr}(XYA) = \langle X, R_AY\rangle$ by the cyclic invariance of the trace; the uniqueness of the adjoint with respect to a non-degenerate pairing gives $(L_A)^{\dagger}=R_A$, and the second identity is the same computation read the other way.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-compatibility-with-the-involution">The Compatibility with the Involution</h2>
 <p><strong>Proposition (the two operations).</strong> Suppose $E$ carries a pairing-based involution $A \mapsto A^{*}$ as in <em>Involutions of the Endomorphism Algebra</em>. Then on $\operatorname{End}_F(E)$ the induced operator involution $S^{*}(X) = S(X^{*})^{*}$ satisfies</p>
 <p>$$
-L_A^{*} = R_{A^{*}}, \qquad R_A^{*} = L_{A^{*}} ,
+\boxed{\;L_A^{*} = R_{A^{*}}, \qquad R_A^{*} = L_{A^{*}}\;} ,
 $$</p>
 <p>and the trace-adjoint and the operator involution are related by</p>
 <p>$$
@@ -112,7 +112,7 @@ $$</p>
 <p><strong>Proof.</strong> $L_A^{*}(X) = L_A(X^{*})^{*} = (AX^{*})^{*} = XA^{*} = R_{A^{*}}(X)$, using the anti-multiplicativity of the involution; the second identity is the same computation for $R_A$. The last display collects the first with the trace-adjointness of $L_{A^{*}}$.</p>
 <p><strong>Proposition (the trace pairing is compatible with the involution).</strong> If the involution is the adjoint with respect to a pairing on $V$, then</p>
 <p>$$
-\langle X^{*},Y\rangle = \varsigma\bigl(\langle Y^{*},X\rangle\bigr) ,
+\boxed{\;\langle X^{*},Y\rangle = \varsigma\bigl(\langle Y^{*},X\rangle\bigr)\;} ,
 $$</p>
 <p>so the trace pairing is $\varsigma$-compatible with the involution; in the bilinear symmetric case it satisfies $\langle X^{*},Y\rangle = \langle X,Y^{*}\rangle$.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(X^{*}Y) = \operatorname{tr}((Y^{*}X)^{*}) = \varsigma(\operatorname{tr}(Y^{*}X))$, since the involution is $\varsigma$-semilinear and applies to the trace; when $\varsigma=\mathrm{id}$ this is $\langle Y^{*},X\rangle$, and applying the same identity to $Y^{*},X$ gives $\langle X^{*},Y\rangle=\langle X,Y^{*}\rangle$.</p>

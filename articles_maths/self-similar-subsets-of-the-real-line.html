@@ -117,8 +117,7 @@ $$</p>
 <p><strong>Remark (the dimension, cited).</strong> The system has two maps of ratio $1/3$, so its similarity dimension solves $2\cdot3^{-s}=1$, namely $s = \log 2/\log 3 = 0.6309\ldots$; the open set condition holds with $V=(0,1)$, so by the Moran–Hutchinson theorem of <em>Fractal Geometry</em> the Hausdorff and box dimensions of $C$ are both this number. The value is recomputed here and the theorem is cited, not proved: the dimension of the Cantor set as a general statement is the lead article's.</p>
 <h3 id="the-digit-coding">The Digit Coding</h3>
 <p><strong>Theorem (the coding).</strong> Every point of $C$ is uniquely of the form</p>
-<p>$$
-x = \sum_{n \geq 1}\frac{d_n}{3^n}, \qquad d_n \in \{0,2\},
+<p>$$ \boxed{\;x = \sum_{n \geq 1}\frac{d_n}{3^n}, \qquad d_n \in \{0,2\}\;},
 $$</p>
 <p>and the map $\{0,2\}^{\mathbb{N}} \to C$, $(d_n) \mapsto \sum_n d_n3^{-n}$, is a homeomorphism. Equivalently, writing $2 = 3-1$, every point of $C$ has a base-three expansion whose digits are all $0$ or $2$, and this expansion is unique.</p>
 <p><em>Proof.</em> A point of $C_k$ lies in one of the $2^k$ intervals of $C_k$, and passing from level $k$ to level $k+1$ chooses the left or the right third, so a point of $C$ determines a sequence of choices $d_n \in \{0,2\}$; the intervals of $C_k$ are precisely the sets of points whose first $k$ chosen digits are a fixed word, so two distinct points of $C$ are separated at some level and have distinct digit sequences. This gives the bijection. The map is continuous because two points whose first $k$ digits agree lie in the same interval of $C_k$, of length $3^{-k}$; a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism. For the uniqueness, the only ambiguity in the base-three expansion of a real number is between a terminating expansion $\cdots d\,000\ldots$ and the expansion $\cdots (d-1)222\ldots$ ending in $2$s, and the two expansions differ in the digit $d-1$: if the digits are to lie in $\{0,2\}$, both alternatives cannot have all digits even, since one of $d$ and $d-1$ is odd. Hence the expansion with digits in $\{0,2\}$ is unique.</p>
@@ -143,8 +142,7 @@ $$</p>
 <p><strong>Remark.</strong> The Cantor set is thus the boundary of the binary tree at the two extreme leaves; more generally, the boundary of a rooted tree whose vertices have varying numbers of children is a self-similar set with the corresponding ratios, and a set of the line that is the boundary of a tree is exactly a set coded by its branching. The tree itself with its automorphisms is the subject of the corpus's groups acting on trees, and the identification of the boundary with the limit space of a self-similar group is the subject of <em>Limit Spaces and Schreier Graphs</em>.</p>
 <h2 id="the-self-similar-tiling">The Self-Similar Tiling</h2>
 <p><strong>Theorem (the additive tiling).</strong> The middle-third Cantor set satisfies</p>
-<p>$$
-C + C = [0,2], \qquad C - C = [-1,1],
+<p>$$ \boxed{\;C + C = [0,2], \qquad C - C = [-1,1]\;},
 $$</p>
 <p>where $C+C = \{x+y : x,y \in C\}$ and $C-C = \{x-y\}$. Equivalently, every real number in $[0,2]$ is a sum of two points of $C$, and every number in $[-1,1]$ is a difference of two points of $C$.</p>
 <p><em>Proof.</em> Because $C = \tfrac13 C \cup \bigl(\tfrac13 C + \tfrac23\bigr)$, the sumset $S = C+C$ satisfies</p>
@@ -162,8 +160,7 @@ $$</p>
 2^{-s} + 4^{-s} = 1,
 $$</p>
 <p>and writing $t=2^{-s}$ gives $t+t^2=1$, so $t=(\sqrt5-1)/2$ and</p>
-<p>$$
-s = \frac{\log\varphi}{\log 2} = 0.6942\ldots, \qquad \varphi = \frac{1+\sqrt5}{2},
+<p>$$ \boxed{\;s = \frac{\log\varphi}{\log 2} = 0.6942\ldots, \qquad \varphi = \frac{1+\sqrt5}{2}\;},
 $$</p>
 <p>by the quoted Moran–Hutchinson theorem. The attractor is a Cantor set of unequal pieces, no two scales equal; it shows that the similarity dimension is not restricted to equal ratios and that the level-$k$ pieces need not have the same length.</p>
 <p><strong>Example (the positive-measure case).</strong> Let $C^{\mathrm{fat}}$ be obtained from $[0,1]$ by deleting, from each of the $2^k$ intervals of level $k$, an open middle interval of length $\varepsilon_k3^{-k}$ with $\sum_k 2^k\varepsilon_k3^{-k}<\infty$. The resulting compact set is perfect and totally disconnected, hence homeomorphic to the Cantor discontinuum, but its Lebesgue measure is positive; its box and Hausdorff dimensions are both $1$, the ambient dimension. It is the boundary case between the Cantor sets and the interval, and it is not the attractor of a system of similarities satisfying the open set condition, because the open set condition forces the measure to vanish in this setting; the construction is the <strong>Smith–Volterra–Cantor set</strong>, treated in <em>Measure and Category</em>.</p>

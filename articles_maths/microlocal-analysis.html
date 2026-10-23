@@ -130,7 +130,7 @@ $$</p>
 <p>The product of two distributions is generally undefined, since one cannot multiply two singular functions pointwise; the wavefront set gives a sharp criterion for when the product extends from the smooth case.</p>
 <p><strong>Theorem (product criterion).</strong> Let $u,v \in \mathcal D'(\mathbb{R}^n)$ and suppose</p>
 <p>$$
-WF(u)\cap(-WF(v))=\varnothing, \qquad -WF(v)=\{(x,-\xi):(x,\xi)\in WF(v)\} .
+\boxed{\;WF(u)\cap(-WF(v))=\varnothing, \qquad -WF(v)=\{(x,-\xi):(x,\xi)\in WF(v)\}\;} .
 $$</p>
 <p>Then the bilinear form $(u,v)\mapsto\langle uv,\varphi\rangle$, defined for $\varphi \in C_c^\infty$ by the tensor product $u\otimes v$ paired with $\varphi(x)\delta(x-y)$, extends uniquely to a distribution $uv \in \mathcal D'$, and</p>
 <p>$$
@@ -145,7 +145,7 @@ $$</p>
 <h3 id="pullbacks">Pullbacks</h3>
 <p><strong>Theorem (pullback criterion).</strong> Let $f:X\to Y$ be a smooth map of manifolds and let $u \in \mathcal D'(Y)$. Then the pullback $f^*u \in \mathcal D'(X)$ is defined whenever</p>
 <p>$$
-WF(u)\cap N_f=\varnothing, \qquad N_f=\{(f(x),\eta):d f(x)^{\mathsf T}\eta=0,\ \eta \neq0\},
+\boxed{\;WF(u)\cap N_f=\varnothing, \qquad N_f=\{(f(x),\eta):d f(x)^{\mathsf T}\eta=0,\ \eta \neq0\}\;},
 $$</p>
 <p>the conormal bundle of $f$; when defined,</p>
 <p>$$
@@ -163,7 +163,7 @@ $$</p>
 <p>and its integral curves in $\operatorname{Char}(P)$ are the <strong>bicharacteristics</strong> of $P$. The field is related to the Poisson bracket by $H_{p_m}q=\{p_m,q\}$, with the bracket of <em>Pseudodifferential Operators</em>.</p>
 <p><strong>Theorem (propagation of singularities).</strong> Let $P$ be a pseudodifferential operator of real principal type and let $u \in \mathcal D'(M)$ satisfy $Pu \in C^\infty$ (or, more generally, $Pu \in H^s_{\mathrm{loc}}$). Then</p>
 <p>$$
-WF(u)\setminus WF(Pu)\subseteq\operatorname{Char}(P),
+\boxed{\;WF(u)\setminus WF(Pu)\subseteq\operatorname{Char}(P)\;},
 $$</p>
 <p>and $WF(u)\setminus WF(Pu)$ is a union of bicharacteristics: if $(x_0,\xi_0)\in WF(u)\setminus WF(Pu)$ then the whole bicharacteristic through $(x_0,\xi_0)$ lies in $WF(u)\setminus WF(Pu)$. The same statement holds with $WF^s$ in place of $WF$.</p>
 <p><em>Proof (sketch).</em> One proves the microlocal regularity at a bicharacteristic from the regularity at a neighbouring point by the <strong>positive commutator</strong> method: construct a pseudodifferential operator $A$ of order $0$ whose symbol is supported in a small cone near the current point of the bicharacteristic and is a monotone function along $H_{p_m}$; the commutator $[P,A]$ has principal symbol $\frac1i\{p_m,\mathfrak{a}\}$, which has a definite sign by the monotonicity along the flow, while the quadratic form of $P$ contributes a boundary term controlled by the known regularity. The inequality that results is the energy estimate that transports the regularity one step along the bicharacteristic, and iterating along the flow gives the invariance. The full argument is given in the works cited below.</p>

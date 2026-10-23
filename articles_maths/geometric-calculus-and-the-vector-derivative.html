@@ -90,7 +90,7 @@ $$</p>
 <h3 id="the-divergence-and-the-curl">The Divergence and the Curl</h3>
 <p><strong>Theorem.</strong> For a vector-valued function $F$, the derivative splits into a scalar and a bivector part:</p>
 <p>$$
-\partial F=\partial\cdot F+\partial\wedge F,
+\boxed{\;\partial F=\partial\cdot F+\partial\wedge F\;},
 $$</p>
 <p>where $\partial\cdot F$ is the divergence of the field, a scalar-valued function, and $\partial\wedge F$ is its curl, a bivector-valued function.</p>
 <p><strong>Proof.</strong> The geometric product of the vector $\partial$ with the vector $F$ has the grades $0$ and $2$, and the grade decomposition of <em>The Geometric Product and the Grade Decomposition</em> identifies the two parts as the contraction and the wedge; the divergence is the contraction with the derivative and the curl is the wedge.</p>
@@ -105,7 +105,7 @@ $$</p>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem (the fundamental theorem of geometric calculus).</strong> Let $M$ be a compact region with smooth boundary and let $F$ be a smooth multivector-valued function on a neighbourhood of $M$. Then</p>
 <p>$$
-\int_M \underline{\partial} F\,dV=\int_{\partial M}dS\,F,
+\boxed{\;\int_M \underline{\partial} F\,dV=\int_{\partial M}dS\,F\;},
 $$</p>
 <p>where $dV$ is the volume element of the region and $dS$ is the directed boundary element, a vector $(n)\,|dS|$ with $n$ the outward unit normal and $|dS|$ the scalar element of area.</p>
 <p><strong>Proof.</strong> In a coordinate system in which the region is described by the inequalities $a_i\le x^i\le b_i$ after a partition into such pieces, the left-hand side integrates the partial derivatives of $F$ over the region, and the fundamental theorem of calculus in each coordinate produces the boundary terms; the boundary terms assemble into the integral of the directed element over the boundary, because the directed element of a piece of boundary with normal $n$ is $n$ times the scalar element of area and the orientation of the region fixes the sign. The assembly is the same computation that proves the divergence theorem in vector analysis, with the Clifford product in place of the dot and cross products.</p>
@@ -131,7 +131,7 @@ $$</p>
 <p><strong>Definition.</strong> A smooth multivector-valued function $F$ is <strong>monogenic</strong> when $\partial F=0$, and <strong>harmonic</strong> when $\partial^2F=0$.</p>
 <p><strong>Theorem.</strong> The vector derivative squares to the Laplacian:</p>
 <p>$$
-\partial^2=\Delta=\sum_i\frac{\partial^2}{\partial x_i^2},
+\boxed{\;\partial^2=\Delta=\sum_i\frac{\partial^2}{\partial x_i^2}\;},
 $$</p>
 <p>in the positive definite case and with orthonormal coordinates; hence every monogenic function is harmonic, in every component.</p>
 <p><strong>Proof.</strong> $\partial^2=\bigl(\sum_i\exp(i)\partial/\partial x^i\bigr)\bigl(\sum_j\exp(j)\partial/\partial x^j\bigr)=\sum_{i,j}e^ie^j\,\partial^2/\partial x^i\partial x^j=\sum_i\partial^2/\partial (x^i)^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+\exp(j)e^i=2B(e^i,\exp(j))=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^i\exp(i)\,\partial^2/\partial (x^i)^2=\partial^2/\partial (x^i)^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.</p>

@@ -86,7 +86,7 @@ $$</p>
 <p>in a local orthonormal frame $(e_1,\dots,e_n)$, where the first term contracts the derivative of the form factor and the second contracts the form with the derivative of the spinor. Equivalently $\delta = -\operatorname{tr}_g\nabla^{\mathcal{S}}$, the negative of the metric trace of the connection.</p>
 <p><strong>Proposition.</strong> Let $\alpha\in\Gamma(T^*M\otimes\mathcal{S})$ and $s\in\Gamma(\mathcal{S})$, and take $M$ closed. Then</p>
 <p>$$
-\int_M h(\nabla^{\mathcal{S}}s,\alpha)\,d\text{vol}_g = \int_M h(s,\delta\alpha)\,d\text{vol}_g ,
+\boxed{\;\int_M h(\nabla^{\mathcal{S}}s,\alpha)\,d\text{vol}_g = \int_M h(s,\delta\alpha)\,d\text{vol}_g\;} ,
 $$</p>
 <p>where the pairing of $T^*M\otimes\mathcal{S}$ is the tensor product of $g^{-1}$ and $h$; so $\delta$ is the formal adjoint of $\nabla^{\mathcal{S}}$.</p>
 <p><strong>Proof.</strong> The claim is local, so fix a frame and a point. Both sides are first-order in $\alpha$ and $s$, and the identity is the integration by parts: writing $h(\nabla^{\mathcal{S}}s,\alpha)=\sum_i h(\nabla^{\mathcal{S}}_{e_i}s,\alpha(e_i))$ in an orthonormal frame and integrating the derivative of the product, the boundary term vanishes on a closed manifold, and the derivative of the frame and of the volume form contribute exactly the first term of the definition of $\delta$. The computation is the standard formal-adjoint calculation; the general statement for a connection with a metric-compatible structure group is <em>Formal Adjoints and Green's Formula</em>.</p>
@@ -111,7 +111,7 @@ $$</p>
 <p><strong>Proof.</strong> With $\alpha=c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ the components of $\alpha$ are constant in the frame and $\delta c^*\sigma = -\sum_i\partial/\partial e_i\,(-e_i\cdot\sigma) = \sum_i e_i\cdot\partial/\partial e_i\,\sigma = D\sigma$, using $e_i\cdot e_i=-1$ in the Riemannian convention and the constancy of the frame. The adjoint of a composition is the composition of the adjoints in reverse order, $D^*=(\nabla^{\mathcal{S}})^*c^*=\delta c^*$, and the display gives $D^*=D$.</p>
 <p><strong>Theorem (the curved case, quoted).</strong> On a closed spin manifold with the spin connection and the fibre form $h$, the Cauchy–Riemann operator is formally self-adjoint,</p>
 <p>$$
-D^* = D, \qquad \int_M h(D\sigma,\tau)\,d\text{vol}_g = \int_M h(\sigma,D\tau)\,d\text{vol}_g ,
+\boxed{\;D^* = D, \qquad \int_M h(D\sigma,\tau)\,d\text{vol}_g = \int_M h(\sigma,D\tau)\,d\text{vol}_g\;} ,
 $$</p>
 <p>equivalently $\delta\circ c^* = c\circ\nabla^{\mathcal{S}}$ as operators on $\mathcal{S}$ after the derivative of the frame is included.</p>
 <p><strong>Proof sketch.</strong> The derivative of the orthonormal frame in the adjoint computation contributes a term that is the Clifford contraction of the connection form, and it cancels against the corresponding term in $c\circ\nabla^{\mathcal{S}}$ because the spin connection is metric-compatible and preserves the Clifford multiplication; equivalently, the formal adjoint of $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ is computed by moving both factors, and the two first-order terms recombine. This is the formal self-adjointness of <em>The Spinor Operator</em>, and it is quoted with the same argument.</p>
@@ -129,7 +129,7 @@ $$</p>
 <p><strong>Proof.</strong> The first display is the definition of $\delta$ applied to $\nabla^{\mathcal{S}}\sigma$, with the contraction of the derivative of the connection; the second is the adjoint relation of the first proposition applied to $\alpha=\nabla^{\mathcal{S}}\sigma$, and the integrand is the pointwise square length of $\nabla^{\mathcal{S}}\sigma$ in the tensor product metric. The kernel statement is the vanishing of a non-negative integral.</p>
 <p><strong>Theorem (the Lichnerowicz identity, quoted).</strong> The Cauchy–Riemann operator and the connection Laplacian are related by</p>
 <p>$$
-D^2 = \nabla^{*}\nabla + \tfrac14\operatorname{scal},
+\boxed{\;D^2 = \nabla^{*}\nabla + \tfrac14\operatorname{scal}\;},
 $$</p>
 <p>as <em>The Spinor Operator</em> records; the codifferential enters through the term $\nabla^{*}\nabla=\delta\nabla^{\mathcal{S}}$.</p>
 <p><strong>Proof sketch.</strong> The second-order terms of $D^2$ are the trace of the second covariant derivative, which is $-\nabla^{*}\nabla$, and the zeroth-order remainder is the Clifford contraction of the spin curvature; the identity is the Weitzenböck computation quoted from <em>Spin Geometry</em>.</p>

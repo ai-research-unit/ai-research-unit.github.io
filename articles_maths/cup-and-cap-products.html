@@ -84,7 +84,7 @@ $$</p>
 <p>Note that the two faces share the vertex $v_k$; this overlap is what makes the product associative on the nose at the cochain level and forces the sign in the graded-commutativity relation below.</p>
 <p><strong>Theorem (Leibniz rule).</strong> The coboundary is a graded derivation for the cup product:</p>
 <p>$$
-\delta(\varphi \smile \psi) = (\delta\varphi) \smile \psi + (-1)^{|\varphi|}\, \varphi \smile (\delta\psi).
+\boxed{\;\delta(\varphi \smile \psi) = (\delta\varphi) \smile \psi + (-1)^{|\varphi|}\, \varphi \smile (\delta\psi)\;}.
 $$</p>
 <p>Consequently the cup product of two cocycles is a cocycle, and the product of a cocycle with a coboundary is a coboundary, so $\smile$ descends to a well-defined product</p>
 <p>$$
@@ -117,7 +117,7 @@ $$</p>
 <p>extended $R$-linearly to $\frown : C_n(X;R) \times C^k(X;R) \to C_{n-k}(X;R)$. The back face is the singular $(n-k)$-simplex $\Delta_{n-k} \to X$ obtained by the canonical identification with $[v_k,\ldots,v_n]$.</p>
 <p><strong>Theorem (the boundary rule).</strong> For $\varphi \in C^k(X;R)$ and $c \in C_n(X;R)$,</p>
 <p>$$
-\partial(c \frown \varphi) = (-1)^k\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr).
+\boxed{\;\partial(c \frown \varphi) = (-1)^k\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr)\;}.
 $$</p>
 <p>Hence $\frown$ descends to a pairing</p>
 <p>$$
@@ -159,7 +159,7 @@ $$</p>
 $$</p>
 <p>which splits, though not naturally. Its middle term is the cokernel of the multiplication by the Tor term, and the isomorphism</p>
 <p>$$
-H_n(X\times Y;R) \cong \Bigl(\bigoplus_{i+j=n} H_i(X;R)\otimes_R H_j(Y;R)\Bigr) \oplus \Bigl(\bigoplus_{i+j=n-1}\operatorname{Tor}_1^R(H_i(X),H_j(Y))\Bigr)
+\boxed{\;H_n(X\times Y;R) \cong \Bigl(\bigoplus_{i+j=n} H_i(X;R)\otimes_R H_j(Y;R)\Bigr) \oplus \Bigl(\bigoplus_{i+j=n-1}\operatorname{Tor}_1^R(H_i(X),H_j(Y))\Bigr)\;}
 $$</p>
 <p>is non-natural. The functor $\operatorname{Tor}_1^R$ is the one of Part I's <em>Ext and Tor</em>, written in parallel.</p>
 <p><em>Proof sketch.</em> For each $n$ the Eilenberg–Zilber map gives a natural map $\bigoplus_{i+j=n}H_i(X)\otimes H_j(Y) \to H_n(X\times Y)$, and the cokernel is the Tor term; the argument is the algebraic Künneth theorem for chain complexes of free modules over a principal ideal domain, applied to $C_*(X;R)\otimes_R C_*(Y;R) \to C_*(X\times Y;R)$.</p>

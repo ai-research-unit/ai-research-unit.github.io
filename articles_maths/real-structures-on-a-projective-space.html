@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> Let $L/K$ be a quadratic extension of fields with the nontrivial Galois element written as a bar, $x \mapsto \bar{x}$, and let $V$ be an $L$-vector space. A map $\sigma : V \to V$ is <strong>antilinear</strong> when it is additive and $\sigma(\lambda x) = \bar{\lambda}\,\sigma(x)$ for every $\lambda \in L$; an antilinear involution is an antilinear map with $\sigma^2 = \mathrm{id}$ up to a scalar, and it is of the <strong>first kind</strong> when $\sigma^2 = \mathrm{id}$ and of the <strong>second kind</strong> when $\sigma^2 = -\mathrm{id}$.</p>
 <p><strong>Definition.</strong> A <strong>real structure</strong> on $V$ is an antilinear involution of the first kind,</p>
 <p>$$
-\sigma : V \to V, \qquad \sigma(\lambda x) = \bar{\lambda}\,\sigma(x), \qquad \sigma^2 = \mathrm{id} ;
+\boxed{\;\sigma : V \to V, \qquad \sigma(\lambda x) = \bar{\lambda}\,\sigma(x), \qquad \sigma^2 = \mathrm{id}\;} ;
 $$</p>
 <p>the <strong>real form</strong> of $V$ is the fixed space</p>
 <p>$$
@@ -87,7 +87,7 @@ $$</p>
 <p>a vector space over the fixed field $K$, and the pair $(V,\sigma)$ is the <strong>descent datum</strong> of the $K$-vector space $V^\sigma$ over $L$.</p>
 <p><strong>Proposition.</strong> Let $\sigma$ be a real structure on $V$. Then $V^\sigma$ is a $K$-subspace of $V$ with</p>
 <p>$$
-V = V^\sigma \otimes_K L , \qquad \dim_K V^\sigma = \dim_L V ,
+\boxed{\;V = V^\sigma \otimes_K L , \qquad \dim_K V^\sigma = \dim_L V\;} ,
 $$</p>
 <p>the inclusion and the scalar extension giving the isomorphism; the assignment $W \mapsto W^\sigma$ is an equivalence between the real structures on the $L$-spaces and the $K$-spaces, the inverse sending a $K$-space $U$ to $U \otimes_K L$ with the involution $u \otimes \lambda \mapsto u \otimes \bar{\lambda}$; and every $x \in V$ is written uniquely as $x = y + i z$ with $y, z \in V^\sigma$ when $L = K(i)$ is a quadratic extension with the element $i$ of square in $K$.</p>
 <p><strong>Proof.</strong> A vector of $V$ fixed by $\sigma$ is determined by its coordinates in a basis, and the fixed space is a $K$-subspace because $\sigma$ is additive and $K$-linear on the fixed scalars; the $L$-span of $V^\sigma$ is $V$ because $x + \sigma(x)$ and $(x - \sigma(x))/i$ lie in $V^\sigma$ and reconstruct $x$, and the decomposition is unique; the equivalence with the $K$-spaces is the standard Galois descent. The statement is in <em>Real Forms and the Descent of an Algebra</em> and in the Galois theory of <em>Field Extensions</em>.</p>
@@ -104,7 +104,7 @@ $$</p>
 <h3 id="the-real-points">The Real Points</h3>
 <p><strong>Theorem.</strong> Let $\sigma$ be a real structure on $V$ of the first kind. Then the fixed points of the induced involution are exactly the projectivisation of the real form,</p>
 <p>$$
-\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^{\sigma}) ,
+\boxed{\;\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^{\sigma})\;} ,
 $$</p>
 <p>and the fixed locus is a projective space over the fixed field $K$ of the same dimension as $\mathbb{P}(V)$; for $L = \mathbb{C}$ and $K = \mathbb{R}$ the real points of $\mathbb{P}^n(\mathbb{C})$ with the standard structure are the real projective space $\mathbb{P}^n(\mathbb{R})$.</p>
 <p><strong>Proof.</strong> A point $[v]$ is fixed by $[\sigma]$ exactly when $\sigma(v) = \lambda v$ for a scalar; applying $\sigma$ again gives $v = \bar\lambda \lambda v$, so $|\lambda| = 1$ in the complex case, and rescaling $v$ by a square root of $\lambda$ makes $\sigma(v) = v$, so the fixed points are the points of the real form; the converse is immediate. The statement is the standard real locus of the conjugation, in <em>Projective Geometry</em> and <em>Real Structures on Varieties and Galois Descent</em>.</p>

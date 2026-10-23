@@ -130,7 +130,7 @@ $$
 defined on the chains of the quotient by lifting a chain of the quotient to the two sheets of the covering over its interior, summing the two lifts and dividing by the number of sheets where this is defined.</p>
 <p><strong>Theorem (the invariant part is the homology of the quotient).</strong> Let $T$ act on the finite CW complex $M$ and let $k$ be a ring in which $2$ is invertible. Then the orbit map induces an isomorphism
 $$
-H_*(M/T;k) \;\cong\; H_*(M;k)^{T},
+\boxed{\;H_*(M/T;k) \;\cong\; H_*(M;k)^{T}\;},
 $$
 and the transfer $p_*$ is a section of the map $p_*$ induced by $p$; the composite $p_* p_*$ is multiplication by $2$ and becomes the identity after inverting $2$.</p>
 <p><strong>Proof sketch.</strong> The orbit map is a quotient by a finite group of order two. The two composites $p^* p_*$ and $p_* p^*$ are computed on chains: the pullback followed by the pushforward multiplies a chain by the number of sheets over its interior, which is two; the averaging projector $\tfrac12(1+T_*)$ is therefore the composite $\tfrac12 p_* p^*$, and its image is the invariant part. The transfer is the "$p_*$" of the pair and is well defined because the quotient map is a branched covering with the branch set the image of the fixed set, over which the two lifts coincide.</p>
@@ -144,7 +144,7 @@ $$
 the second expression being the one supplied by the eigenspace decomposition.</p>
 <p><strong>Theorem (Hopf trace formula for an involution).</strong> Let $T$ act simplicially on a finite simplicial complex $K$, and suppose the fixed set $K^T$ is a subcomplex. Then
 $$
-L(T) = \chi(K^T),
+\boxed{\;L(T) = \chi(K^T)\;},
 $$
 the Euler characteristic of the fixed subcomplex.</p>
 <p><strong>Proof.</strong> The Lefschetz number is the alternating sum of the traces on the chain groups, by the standard chain-level computation of the Lefschetz number of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>. On $C_i(K;\mathbb{Q})$ the operator $T_*$ permutes the $i$-simplices; a simplex not fixed setwise contributes a trace of zero, a simplex fixed setwise and not pointwise is permuted among its vertices and again contributes zero unless $T$ fixes it pointwise, and a simplex of $K^T$ is fixed pointwise and contributes $1$. The alternating sum of the counts of the fixed simplices is $\chi(K^T)$.</p>
@@ -159,7 +159,7 @@ the Euler characteristic of the fixed subcomplex.</p>
 <p><strong>(c)</strong> If $X$ is a mod $p$ homology $n$-manifold, then every component of $X^{G}$ has dimension at most $n$, and the action is trivial if a component has dimension $n$.</p>
 <p><strong>Theorem (the Smith inequality).</strong> Let $G = \mathbb{Z}/p$ act as above. Then the mod $p$ cohomology of the fixed set is finitely generated and satisfies
 $$
-\sum_i \dim_{\mathbb{F}_p} H^i(X^{G};\mathbb{F}_p) \;\le\; \sum_i \dim_{\mathbb{F}_p} H^i(X;\mathbb{F}_p).
+\boxed{\;\sum_i \dim_{\mathbb{F}_p} H^i(X^{G};\mathbb{F}_p) \;\le\; \sum_i \dim_{\mathbb{F}_p} H^i(X;\mathbb{F}_p)\;}.
 $$
 If equality holds, then the action has the same cohomological dimension as $X$ and the fixed set is a mod $p$ homology manifold of the same dimension; for a homology sphere this happens exactly when the fixed set has the dimension of $X$ and the action is trivial.</p>
 <p><strong>Theorem (Floyd; the Euler characteristic congruence).</strong> Let $G = \mathbb{Z}/p$ act on a compact space with finitely generated mod $p$ homology and finitely generated fixed set. Then

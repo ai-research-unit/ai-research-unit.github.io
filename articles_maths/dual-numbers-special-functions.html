@@ -110,7 +110,7 @@ $$</p>
 <h3 id="the-dual-euler-formula">The Dual Euler Formula</h3>
 <p>The dual analogue of Euler's formula is</p>
 <p>$$
-\exp(\varepsilon q') = 1 + \varepsilon q'.
+\boxed{\; \exp(\varepsilon q') = 1 + \varepsilon q' \;}.
 $$</p>
 <p>This is the truncation of the exponential series at first order in $\varepsilon$, and it is the algebraic content of the infinitesimal translation: adding $\varepsilon q'$ to the exponent multiplies the exponential by $1 + \varepsilon q'$, which is an infinitesimal perturbation of the identity.</p>
 <h3 id="the-kernel-of-the-exponential">The Kernel of the Exponential</h3>
@@ -254,7 +254,9 @@ $$</p>
 <p>This follows from the corresponding identity for the real gamma function, applied to the real part, with the infinitesimal correction computed by differentiation.</p>
 <h3 id="the-reflection-formula">The Reflection Formula</h3>
 <p>$$
-\Gamma(Q) \Gamma(1 - Q) = \frac{\pi}{\sin(\pi Q)},
+\boxed{\;
+\Gamma(Q) \Gamma(1 - Q) = \frac{\pi}{\sin(\pi Q)}
+\;},
 $$</p>
 <p>where the sine is the dual trigonometric sine. This follows from the real reflection formula, with the infinitesimal corrections computed by differentiation.</p>
 <h2 id="the-dual-beta-function">The Dual Beta Function</h2>
@@ -396,7 +398,9 @@ $$</p>
 <p>The pattern in all the definitions above is the same: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part. This is not a coincidence; it is a theorem.</p>
 <p><strong>Theorem (Structure Principle).</strong> Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $F^{\mathrm{ext}}$ be its extension to the dual numbers defined by the same formula. Then for $Q = q + \varepsilon q'$ with $q \in I$,</p>
 <p>$$
-F^{\mathrm{ext}}(Q) = F(q) + q' F'(q) \varepsilon.
+\boxed{\;
+F^{\mathrm{ext}}(Q) = F(q) + q' F'(q) \varepsilon
+\;}.
 $$</p>
 <p><strong>Proof.</strong> The extension $F^{\mathrm{ext}}$ is dual differentiable, and by the structure theorem it is of the form $u(q) + (q' u'(q) + c(q))\varepsilon$. Evaluating at $q' = 0$ gives $u(q) = F(q)$, hence $u'(q) = F'(q)$. The coefficient of $q'$ in the infinitesimal part is therefore $F'(q)$, and the term $c(q)$ is the value of the infinitesimal part at $q' = 0$, which is zero because the extension reduces to the real function $F$ when $q' = 0$.</p>
 <p>This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.</p>

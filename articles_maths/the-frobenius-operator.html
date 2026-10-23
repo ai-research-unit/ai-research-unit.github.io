@@ -115,7 +115,7 @@ Hence $\pi$ is a morphism of $X$ over $k = \mathbb{F}_q$, and it is the operator
 <p><strong>Definition.</strong> For a variety $X$ over $k$, the <strong>fixed subscheme</strong> of an endomorphism $\varphi : X\to X$ is the equaliser of $\varphi$ and the identity, that is, the fibre product of the diagonal $X\to X\times_kX$ with the graph $(\mathrm{id},\varphi) : X\to X\times_kX$; it is the locus cut out by the vanishing of the difference of the two maps. On the points with values in a $k$-algebra $R$, the fixed points of $\varphi$ are the elements of $X(R)$ fixed by the induced map.</p>
 <p><strong>Theorem (fixed points of the Frobenius powers).</strong> Let $X$ be a variety over $\mathbb{F}_q$ and let $\pi = F^a$ be its $q$-power Frobenius. For every $n\geq1$,
 $$
-X(\bar{\mathbb{F}}_q)^{\pi^n} = X(\mathbb{F}_{q^n}) ,
+\boxed{\;X(\bar{\mathbb{F}}_q)^{\pi^n} = X(\mathbb{F}_{q^n})\;} ,
 $$
 the set of points with values in the field with $q^n$ elements. In particular the fixed points of $\pi$ are the $\mathbb{F}_q$-points, $X(\bar{\mathbb{F}}_q)^{\pi} = X(\mathbb{F}_q)$.</p>
 <p><em>Proof.</em> The $q^n$-power Frobenius on $\bar{\mathbb{F}}_q$ has fixed field $\mathbb{F}_{q^n}$, since the roots of $x^{q^n}-x$ are exactly that field (Part I's <em>Finite Fields</em>). A point $P : \operatorname{Spec}\bar{\mathbb{F}}_q\to X$ is fixed by $\pi^n$ precisely when the corresponding $\bar{\mathbb{F}}_q$-algebra homomorphism lands in the fixed field of $\pi^n$, by the same argument as in <em>The Galois Action as an Operator</em> for the fixed points of a Galois action; that fixed field is $\mathbb{F}_{q^n}$, so the fixed points are the $\mathbb{F}_{q^n}$-points.</p>
@@ -135,7 +135,7 @@ is defined.</p>
 <p><strong>Remark (the cohomology that carries the fixed points).</strong> The Zariski cohomology of the structure sheaf is not the cohomology in which the fixed-point theorem for the Frobenius holds: a theorem of this kind needs a cohomology with the base change and the cycle-class properties, the <strong>étale cohomology</strong> with $\ell$-adic coefficients for a prime $\ell\neq p$. That theory is not developed in this Part, and the statements below are recorded as the conjectures of Weil, which are the properties its Frobenius action must have; the reader will find the construction in the literature cited under <em>Further Reading</em>.</p>
 <p><strong>Theorem (the Lefschetz fixed-point formula, conjectural form).</strong> For a separated variety $X$ of finite type over $\mathbb{F}_q$ there is a finite-dimensional $\ell$-adic cohomology with a $k$-linear action of $\pi$ such that
 $$
-|X(\mathbb{F}_{q^n})| = \sum_i(-1)^i\operatorname{tr}\bigl(\pi^{n*}\mid H^i_{\mathrm{ét}}(X_{\bar{\mathbb{F}}_q},\mathbb{Q}_\ell)\bigr)
+\boxed{\;|X(\mathbb{F}_{q^n})| = \sum_i(-1)^i\operatorname{tr}\bigl(\pi^{n*}\mid H^i_{\mathrm{ét}}(X_{\bar{\mathbb{F}}_q},\mathbb{Q}_\ell)\bigr)\;}
 $$
 for every $n\geq1$. This is the fixed-point theorem whose left side is the fixed set of the previous section and whose right side is an alternating trace of the operator on cohomology, in the form in which the corpus records it.</p>
 <h2 id="the-zeta-function-and-the-weil-conjectures">The Zeta Function and the Weil Conjectures</h2>
@@ -146,7 +146,7 @@ $$
 the product running over the closed points of $X$, with $\deg(x) = [\kappa(x):\mathbb{F}_q]$ the degree of the residue field of $x$. The coefficients are integers because there are finitely many closed points of each degree.</p>
 <p><strong>Theorem (the bridge to the point counts).</strong> The zeta function is the formal exponential of the point counts,
 $$
-Z(X,t) = \exp\Bigl(\sum_{n\geq1}|X(\mathbb{F}_{q^n})|\,\frac{t^n}{n}\Bigr),
+\boxed{\;Z(X,t) = \exp\Bigl(\sum_{n\geq1}|X(\mathbb{F}_{q^n})|\,\frac{t^n}{n}\Bigr)\;},
 $$
 so that the arithmetic of the fixed points of the Frobenius powers determines the zeta function and conversely.</p>
 <p><em>Proof.</em> Expanding each factor $\bigl(1-t^{\deg x}\bigr)^{-1} = \sum_{m\geq0}t^{m\deg x}$ and taking the formal logarithm gives

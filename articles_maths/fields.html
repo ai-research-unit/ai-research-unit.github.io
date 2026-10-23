@@ -131,7 +131,7 @@ This one mechanism produces every concrete extension in Part II and every explic
 <p>Let $\alpha$ be algebraic over $F$. Its <strong>minimal polynomial</strong> $m_\alpha \in F[x]$ is the monic polynomial of least degree with $m_\alpha(\alpha) = 0$.</p>
 <p><strong>Theorem.</strong> Let $m = m_\alpha$ have degree $n$. Then $m$ is unique, irreducible over $F$, and divides every polynomial in $F[x]$ vanishing at $\alpha$; moreover
 $$
-F(\alpha) \cong F[x]/(m), \qquad [F(\alpha):F] = n,
+\boxed{\;F(\alpha) \cong F[x]/(m), \qquad [F(\alpha):F] = n\;},
 $$
 and $\{1, \alpha, \ldots, \alpha^{n-1}\}$ is a basis of $F(\alpha)$ over $F$, so each element is uniquely $c_0 + c_1\alpha + \cdots + c_{n-1}\alpha^{n-1}$ with $c_i \in F$. If $m$ has $n$ distinct roots in a splitting field, they are the <strong>conjugates</strong> of $\alpha$.</p>
 <p><strong>Proof sketch.</strong> The kernel of evaluation is $(m)$. If $m = gh$ with both factors of smaller degree, then $0 = m(\alpha) = g(\alpha)h(\alpha)$ forces one factor to vanish, contradicting the minimality of $\deg m$; so $m$ is irreducible. Divisibility follows from the kernel description, and the isomorphism and basis from the division algorithm in $F[x]$.</p>
@@ -139,7 +139,7 @@ and $\{1, \alpha, \ldots, \alpha^{n-1}\}$ is a basis of $F(\alpha)$ over $F$, so
 <h2 id="9-the-tower-law-and-algebraic-extensions">9. The Tower Law and Algebraic Extensions</h2>
 <p><strong>Theorem (Tower Law).</strong> For fields $F \subseteq E \subseteq K$,
 $$
-[K:F] = [K:E]\,[E:F],
+\boxed{\;[K:F] = [K:E]\,[E:F]\;},
 $$
 with an infinite factor making $[K:F]$ infinite.</p>
 <p><strong>Proof sketch.</strong> If $\{e_i\}$ is a basis of $E$ over $F$ and $\{k_j\}$ a basis of $K$ over $E$, the products $e_i k_j$ form a basis of $K$ over $F$.</p>
@@ -200,7 +200,7 @@ Since the fixed field of $\varphi^m$ is $\mathbb{F}_{p^{\gcd(m,n)}}$, the subfie
 <p>The <strong>cyclotomic polynomial</strong> $\Phi_n(x) = \prod_{\gcd(k,n)=1}(x - \zeta_n^k)$ lies in $\mathbb{Z}[x]$, is irreducible over $\mathbb{Q}$, and has degree $\varphi(n)$.</p>
 <p><strong>Theorem.</strong> For $n \geq 1$, the field $\mathbb{Q}(\zeta_n)$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, and
 $$
-[\mathbb{Q}(\zeta_n):\mathbb{Q}] = \varphi(n), \qquad \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
+\boxed{\;[\mathbb{Q}(\zeta_n):\mathbb{Q}] = \varphi(n), \qquad \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times\;},
 $$
 where $a$ corresponds to the automorphism $\zeta_n \mapsto \zeta_n^a$. For $n \geq 3$ the real subfield $\mathbb{Q}(\cos(2\pi/n))$ has degree $\varphi(n)/2$ over $\mathbb{Q}$.</p>
 <p>Examples: $\mathbb{Q}(\zeta_3)=\mathbb{Q}(\sqrt{-3})$ and $\mathbb{Q}(\zeta_4)=\mathbb{Q}(i)$ have degree $2$; $\mathbb{Q}(\zeta_5)$ has degree $4$ and $\mathbb{Q}(\zeta_7)$ degree $6$. For prime $p$, $\Phi_p(x)=x^{p-1}+\cdots+x+1$ and $[\mathbb{Q}(\zeta_p):\mathbb{Q}]=p-1$.</p>

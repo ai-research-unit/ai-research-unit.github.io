@@ -82,7 +82,7 @@
 $$</p>
 <p>is an isomorphism of $k$-algebras from $kQ$ onto the opposite algebra of $kQ^{\mathrm{rev}}$,</p>
 <p>$$
-kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{opp}} ,
+\boxed{\;kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{opp}}\;} ,
 $$</p>
 <p>and it is the identification by which the reversal of the arrows computes the opposite algebra of a path algebra. In particular $kQ^{\mathrm{opp}} \cong kQ^{\mathrm{rev}}$, and $kQ$ carries an involution induced by the reversal exactly when the quiver is isomorphic to its reversal.</p>
 <p><em>Proof.</em> A reversal of a path is a path of the reversed quiver: if $t(a_i) = s(a_{i+1})$, then $t(a_{i+1}^{\mathrm{rev}}) = s(a_{i+1}) = t(a_i) = s(a_i^{\mathrm{rev}})$, so the reversed arrows concatenate. The map reverses the order in a product, $\rho(pq) = \rho(q)\rho(p)$, and is bijective with inverse the reversal back; hence it is an anti-isomorphism, which is an isomorphism onto the opposite algebra. The final statement follows by composing with the identification $\iota_{kQ^{\mathrm{rev}}}$ of <em>Opposite Algebras and Anti-Isomorphisms</em>.</p>
@@ -95,7 +95,7 @@ $$</p>
 <p>for every arrow $a$; the second condition says that $\tau_1$ reverses each arrow before relabelling its ends. A quiver with a quiver involution is a <strong>self-involutive quiver</strong>.</p>
 <p><strong>Theorem.</strong> A quiver involution $\tau$ induces an anti-automorphism of $kQ$ of order two, the <strong>relabelling involution</strong> $\sigma_\tau$, by</p>
 <p>$$
-\sigma_\tau(e_i) = e_{\tau_0(i)}, \qquad \sigma_\tau(a) = \tau_1(a), \qquad \sigma_\tau(a_1\cdots a_n) = \tau_1(a_n)\cdots\tau_1(a_1),
+\boxed{\;\sigma_\tau(e_i) = e_{\tau_0(i)}, \qquad \sigma_\tau(a) = \tau_1(a), \qquad \sigma_\tau(a_1\cdots a_n) = \tau_1(a_n)\cdots\tau_1(a_1)\;},
 $$</p>
 <p>extended linearly. It is a graded involution for the length grading, it permutes the trivial paths, and every length-preserving involution of $kQ$ that carries arrows to arrows and trivial paths to trivial paths arises from a quiver involution.</p>
 <p><em>Proof.</em> For consecutive arrows the condition $t(\tau_1(a_i)) = \tau_0(s(a_i)) = \tau_0(t(a_{i-1})) = s(\tau_1(a_{i-1}))$ shows that the word $\tau_1(a_n)\cdots\tau_1(a_1)$ is a path of $Q$, so $\sigma_\tau$ is defined on the basis and extends linearly; it reverses the order in a product by construction and has order two because $\tau_1^2 = \mathrm{id}$ and $\tau_0^2 = \mathrm{id}$. A length-preserving involution carries $kQ_0$, the span of the trivial paths, to itself, so it permutes the $e_i$; it carries $kQ_1$, the span of the arrows, to itself, and this is the data of the two bijections satisfying the reversed-arrow condition.</p>

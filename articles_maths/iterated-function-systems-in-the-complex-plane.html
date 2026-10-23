@@ -85,9 +85,7 @@ $$</p>
 <h3 id="the-attractor-theorem-and-the-similarity-dimension">The Attractor Theorem and the Similarity Dimension</h3>
 <p><strong>Definition.</strong> An <strong>iterated function system</strong> (IFS) of similarities of $\mathbb{C}$ is a finite family $\mathcal{S} = \{S_1, \ldots, S_m\}$, $m \geq 2$, of similarities $S_i(z) = u_i z + v_i$ with $|u_i| < 1$.</p>
 <p><strong>Theorem (the attractor, Hutchinson).</strong> For every such family there is a unique nonempty compact set $\Lambda \subseteq \mathbb{C}$ with</p>
-<p>$$
-\Lambda = \bigcup_{i=1}^{m} S_i(\Lambda) ,
-$$</p>
+<p>$$\boxed{\;\Lambda = \bigcup_{i=1}^{m} S_i(\Lambda)\;},$$</p>
 <p>the <strong>attractor</strong> of the system; it is the fixed point of the Hutchinson operator $E \mapsto \bigcup_i S_i(E)$ on the complete metric space of nonempty compact sets with the Hausdorff metric, and for every starting compact set the iterated union converges to $\Lambda$ in the Hausdorff metric.</p>
 <p><strong>Proof sketch.</strong> The operator is a contraction of the hyperspace, because each $S_i$ is a contraction of $\mathbb{C}$ and the Hausdorff metric contracts correspondingly; the Banach fixed-point theorem gives the unique fixed point and the convergence. The construction is the attractor theorem of <em>Fractal Geometry</em>; the operator and its spectral theory are those of <em>The Hutchinson Operator and Its Adjoint</em>.</p>
 <p><strong>Definition.</strong> The <strong>similarity dimension</strong> of $\mathcal{S}$ is the unique real $s \geq 0$ with</p>
@@ -96,9 +94,7 @@ $$</p>
 $$</p>
 <p>It exists and is unique when $m \geq 2$ and every $|u_i| < 1$, because the left-hand side is strictly decreasing in $s$, greater than $1$ at $s = 0$ and tending to $0$ at infinity.</p>
 <p><strong>Theorem (the dimension under the open set condition).</strong> If the system satisfies the <strong>open set condition</strong> — there is a nonempty open set $O$ with $\bigcup_i S_i(O) \subseteq O$, the union disjoint — then</p>
-<p>$$
-0 < \mathcal{H}^s(\Lambda) < \infty, \qquad \dim_H \Lambda = s ,
-$$</p>
+<p>$$\boxed{\;0 < \mathcal{H}^s(\Lambda) < \infty, \qquad \dim_H \Lambda = s\;},$$</p>
 <p>where $s$ is the similarity dimension; likewise the box dimension of $\Lambda$ is $s$. Without the open set condition the attractor may have dimension strictly less than the similarity dimension, because the pieces may overlap.</p>
 <p><strong>Proof sketch.</strong> The open set condition lets the pieces of the $n$-th level be separated by the images of $O$, so the covering sum $\sum |(S_{i_1}\circ\cdots\circ S_{i_n})'|^s = \left(\sum|u_i|^s\right)^n = 1$ is uniformly controlled; the upper bound for the $s$-dimensional measure and the lower bound for the mass distribution both follow. The open set condition, the similarity dimension and this theorem are those of <em>Fractal Geometry</em>, and they are not reproved here.</p>
 <p><strong>Example (a complex Cantor set).</strong> Let $S_1(z) = u z$ and $S_2(z) = u z + (1-u)$ with $u$ a real number in $(0,1/2)$. The attractor is the real middle-third-type Cantor set on the segment $[0,1]$, of dimension $s$ with $|u|^s = 1/2$, that is $s = \log 2/\log(1/|u|)$; for $u = 1/3$ this is the middle-third set of dimension $\log 2/\log 3 = 0.6309297535\ldots$, the value recorded in <em>Fractal Geometry</em>. If instead $u = \tfrac13 \exp(i\pi/3)$, the two pieces are rotated relative to one another and the attractor is a complex Cantor set of the same dimension, not contained in any line.</p>
@@ -126,7 +122,7 @@ $$</p>
 <h2 id="the-coding-of-the-attractor">The Coding of the Attractor</h2>
 <p><strong>Theorem (the coding map).</strong> Let $\mathcal{S} = \{S_1, \ldots, S_m\}$ be an iterated function system of similarities with attractor $\Lambda$, and let $\Sigma = \{1, \ldots, m\}^{\mathbb{N}}$ be the full shift on $m$ symbols. For each $\omega = (\omega_1, \omega_2, \ldots) \in \Sigma$ the intersections</p>
 <p>$$
-\bigcap_{n \geq 1} S_{\omega_1}\circ\cdots\circ S_{\omega_n}(\Lambda)
+\boxed{\; \bigcap_{n \geq 1} S_{\omega_1}\circ\cdots\circ S_{\omega_n}(\Lambda) \;}
 $$</p>
 <p>are nested compact sets of diameter tending to $0$, so their intersection is a single point $\pi(\omega) \in \Lambda$; the map $\pi : \Sigma \to \Lambda$ is continuous and surjective, it satisfies $S_i \circ \pi = \pi \circ \sigma_i$ with $\sigma_i$ the $i$-th branch of the inverse of the shift, and it is injective exactly when the sets $S_i(\Lambda)$ are pairwise disjoint.</p>
 <p><strong>Proof.</strong> The diameter of $S_{\omega_1}\circ\cdots\circ S_{\omega_n}(\Lambda)$ is at most $|u_{\omega_1}\cdots u_{\omega_n}|\operatorname{diam}\Lambda \leq (\max_i |u_i|)^n \operatorname{diam}\Lambda \to 0$, so the nested intersection is a point; the continuity follows from the uniform contraction, the surjectivity from the invariance of $\Lambda$, and the injectivity statement from the overlap of the pieces. The coding, the shift and the subshift are those of <em>Symbolic Dynamics</em> and <em>Limit Spaces and Schreier Graphs</em>; the combinatorics of the address map is the same as for the real systems of <em>Fractal Geometry</em>.</p>

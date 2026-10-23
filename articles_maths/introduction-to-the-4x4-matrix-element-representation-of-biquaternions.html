@@ -83,12 +83,12 @@
 $$</p>
 <p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity. In the basis $e_t, \vec e_x, \vec e_y, \vec e_z$, the $\mu$-th column of $\mathsf{M}_4^{L}(\tilde Q)$ is the coordinate column of $\tilde Q e_\mu$:</p>
 <p>$$
-\mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix}
+\boxed{\; \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix}
 Q_t & -Q_x & -Q_y & -Q_z \\
 Q_x & Q_t & -Q_z & Q_y \\
 Q_y & Q_z & Q_t & -Q_x \\
 Q_z & -Q_y & Q_x & Q_t
-\end{pmatrix}.
+\end{pmatrix} \;}.
 $$</p>
 <p>This is the Cayley matrix of the left multiplication, written $\mathsf{M}_4(\tilde Q)$ in the shorter notation; every entry is a single coefficient of $\tilde Q$ with a sign, and no entry is a sum of two or more coefficients.</p>
 <p><strong>Example.</strong> For $\tilde{Q}=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z$ the regular matrix is</p>
@@ -103,7 +103,7 @@ $$</p>
 <p>The column of $\tilde Q_4=e_t+\vec e_x$, namely $R=(1,1,0,0)$, is carried to the column $(1+2i,3,3+i,-3+i)$, which is the four-vector of the product $\tilde{Q}\tilde Q_4$ computed by the component formula of <em>The Four-Vector Element Representation of Biquaternions</em>. Its biquaternion norm, the determinant of the $2\times2$ matrix of the same element, is $11+2i$, so the regular determinant is $(11+2i)^2=117+44i$ and the trace is $4(2+i)=8+4i$.</p>
 <p><strong>Theorem (the left regular matrix is an injective algebra homomorphism).</strong> For all $\tilde Q_1, \tilde Q_2 \in \mathbb{B}$,</p>
 <p>$$
-\mathsf{M}_4^{L}(\tilde Q_1)\,\mathsf{M}_4^{L}(\tilde Q_2) = \mathsf{M}_4^{L}(\tilde Q_1\tilde Q_2), \qquad \mathsf{M}_4^{L}(\tilde Q_2) = 0 \iff \tilde Q_2 = 0,
+\boxed{\; \mathsf{M}_4^{L}(\tilde Q_1)\,\mathsf{M}_4^{L}(\tilde Q_2) = \mathsf{M}_4^{L}(\tilde Q_1\tilde Q_2), \qquad \mathsf{M}_4^{L}(\tilde Q_2) = 0 \iff \tilde Q_2 = 0 \;},
 $$</p>
 <p>so the assignment is an injective algebra homomorphism, of complex dimension $4$, and the coefficient space is a left $\mathbb{B}$-module under it.</p>
 <p><strong>Proof.</strong> The multiplicativity is read on the basis: for every $\mu$, associativity gives $\tilde Q_1(\tilde Q_2 e_\mu)=(\tilde Q_1\tilde Q_2)e_\mu$, so the two matrices agree on every column $\operatorname{col}(e_\mu)$ and hence everywhere. The injectivity follows from the first column, which is the column of $\tilde Q_2$ and alone recovers the four coefficients.</p>
@@ -276,8 +276,8 @@ $$</p>
 <p>The regular matrix carries the same pairing as the $2\times2$ one, with the trace four times the scalar part where the $2\times2$ trace is twice it.</p>
 <p><strong>Theorem (the trace pairing of the regular matrices).</strong> For all biquaternions,</p>
 <p>$$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr)=2\,\langle\tilde Q_1,\tilde Q_2\rangle,\qquad
-\langle\tilde Q_1,\tilde Q_2\rangle=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr),
+\boxed{\; \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr)=2\,\langle\tilde Q_1,\tilde Q_2\rangle,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde Q_2)\bigr) \;},
 $$</p>
 <p>so the plain trace pairing of the regular matrices is twice the general plain bilinear form of the algebra, and on the diagonal</p>
 <p>$$
@@ -310,7 +310,7 @@ $$</p>
 <p>For $\tilde{Q} = \vec e_x$ the left matrix is $\mathsf{M}_4^{L}(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}$, whose transpose is $\begin{pmatrix} 0 & 1 & 0 & 0 \\ -1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}$, while the right matrix is $\mathsf{M}_4^{R}(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}$: the two differ in the sign of the upper-left block. The proposition above gives the reason: the transpose is the left regular matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$, so it is a left regular matrix and equals a right regular matrix only on the centre. The variant that replaces $\tilde{Q}$ by $\tilde{Q}^{\natural}$ is not a second identity, since $\tilde{Q} \mapsto \tilde{Q}^{\natural}$ is a bijection of the algebra.</p>
 <p><strong>Theorem (the correct relation).</strong> Let $D = \operatorname{diag}(-1, 1, 1, 1)$, so that $D^2 = I$. Then for every biquaternion $\tilde{Q}$,</p>
 <p>$$
-\mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}\,D = D\,\mathsf{M}_4^{L}(\tilde{Q}^{\natural})\,D .
+\boxed{\; \mathsf{M}_4^{R}(\tilde{Q}) = D\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}\,D = D\,\mathsf{M}_4^{L}(\tilde{Q}^{\natural})\,D \;}.
 $$</p>
 <p>Hence the right regular matrix is the contragredient of the left one up to the fixed change of basis $D$.</p>
 <p><strong>Proof.</strong> Apply $D$ on the left and on the right to the transpose of the closed form of $\mathsf{M}_4^{L}(\tilde{Q})$. Left multiplication by $D$ negates the first row, and right multiplication by $D$ negates the first column; the corner entry lies in both and is negated twice, hence unchanged. The resulting matrix is the closed form of $\mathsf{M}_4^{R}(\tilde{Q})$ displayed above. The second equality uses the transpose proposition.</p>
@@ -344,7 +344,7 @@ Q_x + iQ_y & Q_t + iQ_z & 0 & 0 \\
 $$</p>
 <p>with the four corner entries zero: the subspaces spanned by $\tilde\Pi_+, \vec e_x\tilde\Pi_+$ and by $\tilde\Pi_-, \vec e_x\tilde\Pi_-$ are invariant under $\mathsf{M}_4^{L}(\tilde{Q})$, and on each of them the action is that of a minimal left ideal, hence a copy of the simple module $V$, so that the left regular representation is</p>
 <p>$$
-\mathbb{B} \cong V \oplus V
+\boxed{\; \mathbb{B} \cong V \oplus V \;}
 $$</p>
 <p>as a left $\mathbb{B}$-module. The regular representation is therefore reducible, and it is the first reducible realization in this subcategory.</p>
 <p><strong>Proof.</strong> The two ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are stable under left multiplication by $\tilde Q$, because $\tilde{Q}(\tilde{Q}_5\tilde\Pi_+) = (\tilde{Q}\tilde{Q}_5)\tilde\Pi_+$ for every $\tilde{Q}_5$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_+$ has the basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+$, since $\vec e_y \tilde\Pi_+ = i \vec e_x \tilde\Pi_+$ and $\vec e_z \tilde\Pi_+ = -i\tilde\Pi_+$. Its multiplication by the basis elements is read from</p>

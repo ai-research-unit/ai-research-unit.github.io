@@ -107,7 +107,7 @@ $$</p>
 <h3 id="the-product-descends">The Product Descends</h3>
 <p><strong>Theorem (the quotient of a sesqualgebra).</strong> Let $I$ be a two-sided ideal of $A$. Then the rule</p>
 <p>$$
-(x + I)(y + I) = xy + I
+\boxed{\;(x + I)(y + I) = xy + I\;}
 $$</p>
 <p>is well defined, and with it $A/I$ is a sesqualgebra with the same base involution $\varsigma$; the quotient map $\pi : A \to A/I$ is a surjective homomorphism with kernel $I$.</p>
 <p><strong>Proof.</strong> Let $x' = x + i$ and $y' = y + j$ with $i, j \in I$. Then</p>
@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-involution-descends">The Involution Descends</h3>
 <p><strong>Theorem (the involution descends exactly for a $*$-ideal).</strong> Let $I$ be a two-sided ideal. Then the rule</p>
 <p>$$
-(x + I)^{*} = x^{*} + I
+\boxed{\;(x + I)^{*} = x^{*} + I\;}
 $$</p>
 <p>defines a map on $A/I$ if and only if $I$ is a $*$-ideal, and in that case $A/I$ is an algebra with a $\varsigma$-semilinear involution, and $\pi$ is a $*$-homomorphism.</p>
 <p><strong>Proof.</strong> Suppose first that the rule defines a map. For $x \in I$ the class $x + I$ is $0 + I$, so $x^{*} + I = 0^{*} + I = I$ and $x^{*} \in I$; hence $I^{*} \subseteq I$ and $I$ is a $*$-ideal. Conversely suppose $I^{*} \subseteq I$ and let $x' - x \in I$. Then $x'^{*} - x^{*} = (x' - x)^{*} \in I^{*} \subseteq I$, so $x'^{*}$ and $x^{*}$ have the same class and the rule is well defined. The induced map is additive, it has $*^{2} = \mathrm{id}$ and the anti-multiplicativity $(xy)^{*} = y^{*}x^{*}$ inherited from $A$, and the second scalar rule holds in the quotient because it holds in $A$ and the product descends; hence $A/I$ is an algebra with a $\varsigma$-semilinear involution. Finally $\pi(x^{*}) = x^{*} + I = (x + I)^{*} = \pi(x)^{*}$, so $\pi$ is a $*$-homomorphism.</p>
@@ -136,7 +136,7 @@ $$</p>
 <p><strong>Remark.</strong> The first isomorphism theorem has the same shape as in the ordinary case, and the only change is the second clause: the isomorphism respects the involution exactly when the map does, which is the same condition under which the involution descends to the quotient. The kernel and the quotient carry the same datum $(R, \varsigma)$ as the algebra, so no change of base occurs anywhere in the statement.</p>
 <p><strong>Theorem (the third isomorphism theorem).</strong> Let $I \subseteq J$ be two-sided ideals of $A$. Then $J/I$ is a two-sided ideal of $A/I$, and</p>
 <p>$$
-\frac{A/I}{J/I} \; \cong \; A/J
+\boxed{\;\frac{A/I}{J/I} \; \cong \; A/J\;}
 $$</p>
 <p>as sesqualgebras. If in addition $I$ and $J$ are $*$-ideals, then the involution descends to each of them and the isomorphism is a $*$-isomorphism.</p>
 <p><strong>Proof.</strong> The map $A \to A/J$ is a homomorphism with kernel $J$, and it factors through $A/I$ because $I \subseteq J$: if $x' - x \in I \subseteq J$ then $x'$ and $x$ have the same class modulo $J$, so $x + I \mapsto x + J$ is well defined. It is $R$-linear and multiplicative as a composite of homomorphisms, it is onto because both quotient maps are, and its kernel is the set of the classes $x + I$ with $x \in J$, which is $J/I$; this is therefore a two-sided ideal of $A/I$, and the first isomorphism theorem applied to the map gives the isomorphism. When $I$ and $J$ are $*$-ideals, an $x + I \in J/I$ has $x \in J$ and $(x+I)^{*} = x^{*} + I$ with $x^{*} \in J$, so $J/I$ is $*$-stable, and the map is induced by the quotient maps, which are $*$-homomorphisms, hence is a $*$-isomorphism.</p>

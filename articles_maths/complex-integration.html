@@ -171,8 +171,7 @@ $$</p>
 <h2 id="the-cauchy-theorem">The Cauchy Theorem</h2>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
 <p><strong>Theorem (Cauchy–Goursat).</strong> Let $f$ be holomorphic on an open set $\Omega$ and let $T$ be a closed triangle whose interior and boundary lie in $\Omega$. Then</p>
-<p>$$
-\oint_{\partial T} f(Q) \, dQ = 0 .
+<p>$$ \boxed{\;\oint_{\partial T} f(Q) \, dQ = 0 \;}.
 $$</p>
 <p><strong>Proof.</strong> Let $I = \oint_{\partial T} f \, dQ$ and subdivide $T$ by joining the midpoints of its sides into four congruent triangles $T_1, T_2, T_3, T_4$. The integrals over the interior edges cancel in pairs, so</p>
 <p>$$
@@ -222,8 +221,7 @@ $$</p>
 <p><strong>Example.</strong> On the annulus $\mathcal{A} = \{Q : 1 < \sqrt{\langle Q\rangle_{*}} < 2\}$, let $\gamma$ be the outer circle $\sqrt{\langle Q\rangle_{*}} = 3/2$ traversed positively together with the inner circle $\sqrt{\langle Q\rangle_{*}} = 5/4$ traversed negatively. Every point outside $\mathcal{A}$ has index $0$, so $\gamma$ is homologous to zero in $\mathcal{A}$, and $\oint_\gamma f \, dQ = 0$ for every $f$ holomorphic on $\mathcal{A}$. This is the form of the Cauchy theorem used to prove the residue theorem.</p>
 <h2 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h2>
 <p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be holomorphic on a domain $\Omega$ and let $\gamma$ be a cycle in $\Omega$ homologous to zero in $\Omega$. Then for every $Q \in \Omega \setminus \gamma^*$,</p>
-<p>$$
-f(Q) \operatorname{Ind}(\gamma, Q) = \frac{1}{2\pi i} \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 .
+<p>$$ \boxed{\;f(Q) \operatorname{Ind}(\gamma, Q) = \frac{1}{2\pi i} \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 \;}.
 $$</p>
 <p><strong>Proof.</strong> Fix $Q \in \Omega \setminus \gamma^*$ and define</p>
 <p>$$
@@ -297,8 +295,7 @@ $$</p>
 <p><strong>Example.</strong> For $f(Q) = 1/Q$ one has $\operatorname{Res}(f, 0) = 1$ and $\operatorname{Res}(f, \infty) = -1$; the sum is $0$. For $f(Q) = 1/(Q^2+1)$ the residues at $i$ and $-i$ are $\pm \frac{1}{2i}$ and cancel, consistent with the vanishing residue at infinity of a function decaying like $Q^{-2}$.</p>
 <h3 id="the-residue-theorem_1">The Residue Theorem</h3>
 <p><strong>Theorem (residue theorem).</strong> Let $f$ be holomorphic on a domain $\Omega$ except for isolated singularities $Q_1, Q_2, \dots$, and let $\gamma$ be a cycle in $\Omega$ avoiding the singularities and homologous to zero in $\Omega$. Then</p>
-<p>$$
-\frac{1}{2\pi i} \oint_\gamma f(Q) \, dQ = \sum_k \operatorname{Ind}(\gamma, Q_k) \operatorname{Res}(f, Q_k),
+<p>$$ \boxed{\;\frac{1}{2\pi i} \oint_\gamma f(Q) \, dQ = \sum_k \operatorname{Ind}(\gamma, Q_k) \operatorname{Res}(f, Q_k)\;},
 $$</p>
 <p>the sum being over the finitely many singularities of $f$ enclosed by $\gamma$.</p>
 <p><strong>Proof.</strong> Choose disjoint closed disks $\overline{B}(Q_k, \rho_k) \subseteq \Omega$ about the enclosed singularities and let $\gamma_k$ be their positively oriented boundary circles. The cycle</p>

@@ -76,7 +76,7 @@
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> Let $M$ be an $R$-module. The <strong>extension of scalars</strong> of $M$ along $\varphi$ is the $S$-module</p>
 <p>$$
-M_S \;=\; S \otimes_R M ,
+\boxed{\;M_S \;=\; S \otimes_R M\;} ,
 $$</p>
 <p>with $S$-action $s \cdot (s' \otimes m)=(ss') \otimes m$.</p>
 <p><strong>Proposition.</strong> The action is well defined and makes $M_S$ an $S$-module; the map $M \to M_S$, $m \mapsto 1 \otimes m$, is $R$-linear, and $M_S$ is generated over $S$ by the image of this map.</p>
@@ -85,7 +85,7 @@ $$</p>
 <p><strong>Definition.</strong> If $N$ is an $S$-module, its <strong>restriction of scalars</strong> to $R$ is the $R$-module $\operatorname{Res}N$ with the same underlying abelian group and $r \cdot n=\varphi(r)n$.</p>
 <p><strong>Theorem.</strong> Extension and restriction of scalars are adjoint: for every $R$-module $M$ and every $S$-module $N$ there is a natural bijection</p>
 <p>$$
-\operatorname{Hom}_S(S \otimes_R M,\,N) \;\cong\; \operatorname{Hom}_R(M,\,\operatorname{Res}N).
+\boxed{\;\operatorname{Hom}_S(S \otimes_R M,\,N) \;\cong\; \operatorname{Hom}_R(M,\,\operatorname{Res}N)\;}.
 $$</p>
 <p><em>Proof.</em> Given an $S$-linear $\Phi:S \otimes_R M \to N$, the map $m \mapsto \Phi(1 \otimes m)$ is $R$-linear, since $\Phi(1 \otimes rm)=\Phi(r(1 \otimes m))=r\Phi(1 \otimes m)$. Conversely, given an $R$-linear $\psi:M \to \operatorname{Res}N$, the map $S \times M \to N$, $(s,m) \mapsto s\,\psi(m)$, is balanced: it is additive in each variable, and $(sr,m)$ and $(s,rm)$ both map to $s\varphi(r)\psi(m)=s\psi(rm)$. It therefore induces an $S$-linear $\Psi:S \otimes_R M \to N$ with $\Psi(s \otimes m)=s\psi(m)$. The two constructions are inverse, and naturality is immediate.</p>
 <p><strong>Corollary.</strong> Extension of scalars is a functor $R\text{-}\mathbf{Mod} \to S\text{-}\mathbf{Mod}$, right exact, and exact whenever $S$ is flat as an $R$-module; it preserves direct sums and is additive on homomorphisms, $\varphi_*(M \oplus M') \cong \varphi_*M \oplus \varphi_*M'$. If $S$ is free as an $R$-module, in particular if $R$ and $S$ are fields, extension of scalars is exact.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p><strong>Proposition.</strong> (i) $\dim_{\mathbb{C}}V_{\mathbb{C}}=\dim_{\mathbb{R}}V$.</p>
 <p>(ii) The map $V \to V_{\mathbb{C}}$, $v \mapsto 1 \otimes v$, is injective and real-linear, and</p>
 <p>$$
-V_{\mathbb{C}}=V \oplus iV
+\boxed{\;V_{\mathbb{C}}=V \oplus iV\;}
 $$</p>
 <p>as real vector spaces, where $iV=\{i \otimes v\}$.</p>
 <p>(iii) There is a conjugate-linear involution $\kappa:V_{\mathbb{C}} \to V_{\mathbb{C}}$, $\kappa(z \otimes v)=\bar z \otimes v$, whose fixed-point set is the image of $V$: $(V_{\mathbb{C}})^{\kappa}=1 \otimes V$.</p>

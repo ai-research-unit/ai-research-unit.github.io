@@ -122,7 +122,7 @@ $$</p>
 <h3 id="statement">Statement</h3>
 <p><strong>Theorem (Schwartz kernel theorem).</strong> Let $X \subseteq \mathbb{R}^m$ and $Y \subseteq \mathbb{R}^n$ be open and nonempty. For every $T \in \mathcal L(\mathcal D(X),\mathcal D'(Y))$ there is a unique distribution $K \in \mathcal D'(Y \times X)$ with</p>
 <p>$$
-\langle T\varphi,\psi\rangle=\langle K,\psi\otimes\varphi\rangle \qquad \text{for all } \varphi \in \mathcal D(X),\ \psi \in \mathcal D(Y).
+\boxed{\;\langle T\varphi,\psi\rangle=\langle K,\psi\otimes\varphi\rangle \qquad \text{for all } \varphi \in \mathcal D(X),\ \psi \in \mathcal D(Y)\;}.
 $$</p>
 <p>Conversely, every $K \in \mathcal D'(Y\times X)$ defines by this formula an operator $T \in \mathcal L(\mathcal D(X),\mathcal D'(Y))$. The map $K \mapsto T$ is a linear isomorphism</p>
 <p>$$
@@ -177,7 +177,7 @@ $$</p>
 <p><strong>Definition.</strong> For $T \in \mathcal L(\mathcal D(X),\mathcal D'(Y))$ with kernel $K \in \mathcal D'(X\times Y)$, the <strong>adjoint</strong> is the operator $T^* \in \mathcal L(\mathcal D(Y),\mathcal D'(X))$ with $\langle T\varphi,\psi\rangle=\langle\varphi,T^*\psi\rangle$ for test functions, and its kernel is written $K^*$.</p>
 <p><strong>Theorem.</strong> (i) $K^*(x,y)=\overline{K(y,x)}$; (ii) if $S \in \mathcal L(\mathcal D(Y),\mathcal D'(Z))$ has kernel $L(z,y)$, then $S\circ T$ has kernel</p>
 <p>$$
-(L\circ K)(z,x)=\int_Y L(z,y)K(y,x)\,dy
+\boxed{\;(L\circ K)(z,x)=\int_Y L(z,y)K(y,x)\,dy\;}
 $$</p>
 <p>whenever one of the operators has compactly supported kernel, the integral being the distributional pairing in $y$, $\langle L(z,\cdot),K(\cdot,x)\rangle$; (iii) if $K \in L^2(X\times Y)$ then $T$ extends to a compact operator $L^2(X)\to L^2(Y)$ with Hilbert–Schmidt norm $\|T\|_{\mathrm{HS}}^2=\iint|K(x,y)|^2\,dx\,dy$, and every such operator has a kernel in $L^2(X\times Y)$; (iv) if $K \in C^\infty(X\times Y)$ then $T$ maps $\mathcal E'(X)$ into $C^\infty(Y)$, and these <strong>smoothing</strong> operators form a two-sided ideal in $\mathcal L(\mathcal D,\mathcal D')$.</p>
 <p><em>Proof.</em> (i) is the definition of the adjoint pairing; (ii) is the associative law for the iterated pairing, valid by Fubini when the supports permit; (iii) is the Hilbert–Schmidt theorem of <em>Banach and Hilbert Spaces</em>, the kernel being the matrix of $T$ in the continuous basis of the Hilbert space; (iv) is differentiation under the pairing against a smooth compactly supported distribution.</p>
@@ -196,7 +196,7 @@ $$</p>
 <p>The kernel theorem can be stated without test functions, as the compatibility of two tensor products with a duality.</p>
 <p><strong>Theorem (algebraic form).</strong> For Fréchet nuclear $E$ and $F$,</p>
 <p>$$
-(E\hat\otimes F)' \cong E'\hat\otimes F' \cong \mathcal L(E,F'),
+\boxed{\;(E\hat\otimes F)' \cong E'\hat\otimes F' \cong \mathcal L(E,F')\;},
 $$</p>
 <p>the isomorphisms being the natural ones. Specialising to $E=\mathcal D(X)$, $F=\mathcal D(Y)$ recovers the kernel theorem in the form</p>
 <p>$$

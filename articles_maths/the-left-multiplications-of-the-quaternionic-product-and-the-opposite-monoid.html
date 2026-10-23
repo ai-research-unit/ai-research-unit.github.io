@@ -88,7 +88,7 @@ $$</p>
 <h2 id="the-left-multiplications">The Left Multiplications</h2>
 <p><strong>Theorem (the composition law).</strong> For all $\tilde Q_1,\tilde Q_3 \in \mathbb{B}$,</p>
 <p>$$
-L_{\tilde Q_1}\circ L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1} ,
+\boxed{\; L_{\tilde Q_1}\circ L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1} \;},
 $$</p>
 <p>where $\tilde Q_3\tilde Q_1$ is the plain product of the algebra.</p>
 <p><strong>Proof.</strong> For every $\tilde Q_2$,</p>
@@ -99,7 +99,7 @@ $$</p>
 <p><strong>Remark (why associativity of $\star$ is not needed).</strong> The proof uses the associativity of the <strong>plain</strong> product twice, and never the associativity of $\star$; and it is precisely because ${}^{\natural}$ reverses the order of a plain product that the law comes out reversed. This is the sense in which the left multiplications of $\star$ form a monoid for the same reason and with the same order reversal as the left multiplications of the algebra under the conjugation: the map $\tilde Q_1\mapsto L_{\tilde Q_1}$ intertwines $\star$ with the opposite of the plain product.</p>
 <p><strong>Theorem (the monoid of left multiplications).</strong> The set $M_L = \{L_{\tilde Q_1} : \tilde Q_1 \in \mathbb{B}\}$ is closed under composition and contains the identity $L_{e_t} = \mathrm{id}_{\mathbb{B}}$. The map $\tilde Q_1\mapsto L_{\tilde Q_1}$ is an injective anti-homomorphism of monoids from the multiplicative monoid of $\mathbb{B}$ onto $M_L$, so</p>
 <p>$$
-M_L \cong \mathbb{B}^{\mathrm{opp}} ,
+\boxed{\; M_L \cong \mathbb{B}^{\mathrm{opp}} \;},
 $$</p>
 <p>the opposite of the multiplicative monoid of $\mathbb{B}$.</p>
 <p><strong>Proof.</strong> Closure and the identity are read off the law: $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$ is again a left multiplication, and $L_{e_t}(\tilde Q_2) = e_t^{\natural}\tilde Q_2 = \tilde Q_2$. The law $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$ is exactly the statement that the assignment reverses the order of a product, so it is an anti-homomorphism; it is surjective onto $M_L$ by definition and injective because $L_{\tilde Q_1} = L_{\tilde Q_3}$ forces $\tilde Q_1^{\natural} = L_{\tilde Q_1}(e_t) = L_{\tilde Q_3}(e_t) = \tilde Q_3^{\natural}$ and hence $\tilde Q_1 = \tilde Q_3$.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p>The family that does close on the right is the one with the conjugation on the side of the multiplier, the mirror of the left multiplications.</p>
 <p><strong>Theorem (the twisted right multiplications).</strong> Define $\varrho_{\tilde Q_1}(\tilde Q_2) = \tilde Q_2\,\tilde Q_1^{\natural}$, the plain right multiplication by $\tilde Q_1^{\natural}$. Then</p>
 <p>$$
-\varrho_{\tilde Q_1}\circ \varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3} ,
+\boxed{\; \varrho_{\tilde Q_1}\circ \varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3} \;},
 $$</p>
 <p>the <strong>direct</strong> law, and $M_R = \{\varrho_{\tilde Q_1}\}$ is a monoid containing $\varrho_{e_t} = \mathrm{id}_{\mathbb{B}}$ and isomorphic to the multiplicative monoid $\mathbb{B}$ itself.</p>
 <p><strong>Proof.</strong> $\varrho_{\tilde Q_1}(\varrho_{\tilde Q_3}(\tilde Q_2)) = \tilde Q_2\tilde Q_3^{\natural}\tilde Q_1^{\natural} = \tilde Q_2(\tilde Q_1\tilde Q_3)^{\natural} = \varrho_{\tilde Q_1\tilde Q_3}(\tilde Q_2)$, by the associativity of the plain product and the anti-automorphism property; the identity is $\varrho_{e_t}(\tilde Q_2) = \tilde Q_2 e_t^{\natural} = \tilde Q_2$, and injectivity is read at $e_t$ as before.</p>

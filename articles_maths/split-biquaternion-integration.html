@@ -156,7 +156,9 @@ $$</p>
 <h2 id="the-divergence-theorem">The Divergence Theorem</h2>
 <p><strong>Theorem (divergence theorem).</strong> Let $F^{\mathrm{fn}}$ be a continuously differentiable split-biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
-\int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS,
+\boxed{\;
+\int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS
+\;},
 $$</p>
 <p>where $\tilde u_{\mathrm n} = \sum_{\mu\in\{t,x,y,z\}} n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.</p>
 <p><strong>Proof.</strong> The gradient $\tilde{\nabla}F^{\mathrm{fn}}$ is a split-biquaternion-valued function with components</p>
@@ -178,13 +180,17 @@ $$</p>
 <h3 id="first-greens-formula">First Green's Formula</h3>
 <p><strong>Theorem (first Green's formula).</strong> Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial/\partial\tilde u_{\mathrm n} = \sum_\mu n_\mu \partial/\partial q_\mu$ be the scalar normal derivative. Then</p>
 <p>$$
-\int_\Omega \left[ \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}})\, ((\partial/\partial q_\mu G^{\mathrm{fn}}))^{\natural} + F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} \, dS.
+\boxed{\;
+\int_\Omega \left[ \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}})\, ((\partial/\partial q_\mu G^{\mathrm{fn}}))^{\natural} + F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} \, dS
+\;}.
 $$</p>
 <p><strong>Proof.</strong> Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural}$: it gives $\int_\Omega \partial/\partial q_\mu\,(F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural})\,dV = \int_{\partial\Omega} n_\mu F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial/\partial q_\mu F^{\mathrm{fn}})\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural} + F^{\mathrm{fn}}\,(\partial^2/\partial q_\mu^2 G^{\mathrm{fn}})^{\natural}$, the second term because $\partial/\partial q_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial^2/\partial q_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial/\partial q_\mu$ by $\partial/\partial\tilde u_{\mathrm n}$.</p>
 <h3 id="second-greens-formula">Second Green's Formula</h3>
 <p><strong>Theorem (second Green's formula).</strong> Under the same hypotheses,</p>
 <p>$$
-\int_\Omega \left[ F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} - (\Box F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} - (\partial/\partial\tilde u_{\mathrm n} F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dS.
+\boxed{\;
+\int_\Omega \left[ F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} - (\Box F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} - (\partial/\partial\tilde u_{\mathrm n} F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dS
+\;}.
 $$</p>
 <p><strong>Proof.</strong> For each $\mu$ the product rule gives</p>
 <p>$$

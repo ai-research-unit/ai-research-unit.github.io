@@ -117,7 +117,7 @@ $$</p>
 <p><strong>Remark.</strong> The projective and injective topologies are defined as follows. The projective topology on $E \otimes F$ is the finest locally convex topology for which the canonical bilinear map $E \times F \to E \otimes F$ is continuous; the injective topology is the topology of uniform convergence on the equicontinuous subsets of the dual of the tensor product, equivalently the coarsest topology making the canonical embedding $E \otimes F \hookrightarrow \mathcal{B}(E'_\sigma \times F'_\sigma)$ continuous, where the target carries the topology of uniform convergence on the products of equicontinuous sets. Both are treated systematically, written in this Part; the present article uses only the fact that the identity map $E\widehat{\otimes}_\pi F \to E\widehat{\otimes}_\varepsilon F$ is always continuous and may fail to be a homeomorphism.</p>
 <p><strong>Theorem (characterisation by seminorms).</strong> Let $E$ be a locally convex space. Then $E$ is nuclear if and only if for every continuous seminorm $p$ on $E$ there is a continuous seminorm $q \geq p$ on $E$ such that the canonical map</p>
 <p>$$
-\widehat{E}_q \longrightarrow \widehat{E}_p
+\boxed{\;\widehat{E}_q \longrightarrow \widehat{E}_p\;}
 $$</p>
 <p>between the completions of the quotients $E/\ker q$ and $E/\ker p$ is nuclear; here $\widehat{E}_p$ carries the norm induced by $p$.</p>
 <p><strong>Proof.</strong> The condition is Grothendieck's description of nuclearity in terms of seminorms; its equivalence with the tensor-product definition is proved by factoring an arbitrary map through the completions of the seminorm quotients and reducing to the Banach case. It is quoted as standard.</p>
@@ -153,13 +153,13 @@ $$</p>
 <h3 id="the-kernel-theorem">The Kernel Theorem</h3>
 <p><strong>Theorem (Grothendieck's kernel theorem).</strong> Let $E$ and $F$ be nuclear Fréchet spaces, or more generally let $E$ be nuclear and $F$ a complete locally convex space. Then the canonical map</p>
 <p>$$
-E \widehat{\otimes}_\pi F \longrightarrow E \widehat{\otimes}_\varepsilon F
+\boxed{\;E \widehat{\otimes}_\pi F \longrightarrow E \widehat{\otimes}_\varepsilon F\;}
 $$</p>
 <p>is a topological isomorphism, and the completed tensor product is a nuclear space. Consequently every continuous bilinear form on $E \times F$ corresponds to a continuous linear functional on the completed tensor product, and there is no ambiguity in the notation $E \widehat{\otimes} F$ for nuclear $E$.</p>
 <p><strong>Proof.</strong> The isomorphism of the two topologies is the definition of nuclearity, and the nuclearity of the completed tensor product follows from the seminorm characterisation applied to the product family of seminorms; the correspondence of bilinear forms and functionals is the universal property of the projective tensor product. The statement is Grothendieck's theorem; it is quoted as standard.</p>
 <p><strong>Theorem (Schwartz kernel theorem).</strong> Let $\Omega \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ be open. Then every continuous linear map $T : C_c^\infty(\Omega) \to \mathcal{D}'(V)$ is represented by a unique distribution $K_T \in \mathcal{D}'(\Omega \times V)$ with</p>
 <p>$$
-\langle T f, g\rangle = \langle K_T, f \otimes g \rangle \qquad (f \in C_c^\infty(\Omega), \ g \in C_c^\infty(V)) ,
+\boxed{\;\langle T f, g\rangle = \langle K_T, f \otimes g \rangle \qquad (f \in C_c^\infty(\Omega), \ g \in C_c^\infty(V))\;} ,
 $$</p>
 <p>and the correspondence $T \leftrightarrow K_T$ is a linear bijection.</p>
 <p><strong>Proof.</strong> The kernel theorem is the statement that $\mathcal{D}'(\Omega \times V) \cong \mathcal{D}'(\Omega) \widehat{\otimes}\mathcal{D}'(V)$ for the relevant tensor topology, which holds because the spaces $C_c^\infty$ are nuclear; the identification with continuous linear maps is the universal property. The theory of distributions, of which the statement is a part, belongs to <em>Analysis on Linear Spaces</em> in Part III; the topological content, namely the coincidence of the tensor topologies for nuclear spaces, is the present article's contribution.</p>

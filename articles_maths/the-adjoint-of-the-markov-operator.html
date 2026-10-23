@@ -89,7 +89,7 @@ $$
 $$</p>
 <p><strong>Theorem (the adjoint formula).</strong> Let $\pi$ be stationary for $p$. Then
 $$
-P^{*}g(y)=\frac{1}{\pi(y)}\int_E \pi(dx)\,p(x,dy)\,g(x)=\int_Ep^{*}(y,dx)\,g(x)
+\boxed{\;P^{*}g(y)=\frac{1}{\pi(y)}\int_E \pi(dx)\,p(x,dy)\,g(x)=\int_Ep^{*}(y,dx)\,g(x)\;}
 $$
 $\pi$-almost everywhere, where $p^{*}(y,dx)=\pi(dx)p(x,dy)/\pi(y)$ is the reversed kernel. Equivalently the adjoint $P^*$ is the Markov operator of the reversed chain.</p>
 <p><em>Proof.</em> Compute
@@ -106,11 +106,11 @@ the interchange being guaranteed by the finiteness of the mass and the boundedne
 <h3 id="products-powers-and-the-spectrum">Products, powers and the spectrum</h3>
 <p><strong>Theorem.</strong> The adjoint satisfies
 $$
-(PQ)^*=Q^*P^{*},\qquad (P^n)^*=(P^{*})^n,\qquad (\lambda P+\mu Q)^*=\bar\lambda P^{*}+\bar\mu Q^*,
+\boxed{\;(PQ)^*=Q^*P^{*},\qquad (P^n)^*=(P^{*})^n,\qquad (\lambda P+\mu Q)^*=\bar\lambda P^{*}+\bar\mu Q^*\;},
 $$
 and its spectrum is the complex conjugate of that of $P$,
 $$
-\operatorname{spec}(P^{*})=\overline{\operatorname{spec}(P)}=\{\bar\lambda:\lambda\in\operatorname{spec}(P)\}.
+\boxed{\;\operatorname{spec}(P^{*})=\overline{\operatorname{spec}(P)}=\{\bar\lambda:\lambda\in\operatorname{spec}(P)\}\;}.
 $$</p>
 <p><em>Proof.</em> The first three identities are the general properties of the adjoint on a Hilbert space; the spectrum identity is the standard fact that the adjoint has the conjugated spectrum, since $P^{*}-\bar\lambda I=(P-\lambda I)^*$ is invertible if and only if $P-\lambda I$ is.</p>
 <p><strong>Corollary (the real spectrum in the reversible case).</strong> If the chain is reversible, $P^{*}=P$, the Markov operator is self-adjoint, its spectrum is real and contained in $[-1,1]$, and the eigenfunctions of distinct eigenvalues are orthogonal; these are the spectral consequences of <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category, now read as a statement about the adjoint.</p>

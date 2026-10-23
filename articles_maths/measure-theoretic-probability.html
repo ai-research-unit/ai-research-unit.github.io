@@ -167,7 +167,7 @@ $$</p>
 <p><em>Proof.</em> The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\varphi(t+h) - \varphi(t)\right| \leq \mathbb{E}\left|\exp(i\langle h,X\rangle) - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\varphi(t_j-t_k) = \mathbb{E}\left|\sum_j c_j \exp(i\langle t_j,X\rangle)\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of <em>Fourier Analysis on Euclidean Spaces</em>.</p>
 <p><strong>Theorem (uniqueness and inversion).</strong> The characteristic function determines the distribution: if $\varphi_X = \varphi_Y$ then $\mu_X = \mu_Y$. More precisely, if $\varphi$ is integrable then $\mu_X$ has the continuous density</p>
 <p>$$
-f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} \exp(-i\langle t,x\rangle)\varphi(t)\, dt,
+\boxed{\;f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} \exp(-i\langle t,x\rangle)\varphi(t)\, dt\;},
 $$</p>
 <p>and in general the distribution is recovered from the characteristic function by the inversion formula for the Fourier transform of a finite measure.</p>
 <p>The uniqueness theorem is the reason the characteristic function is the standard tool for limit theorems: it linearises the operation of passing to a limit of distributions, and it converts the convergence in distribution into the pointwise convergence of functions. The analytic theory behind the inversion formula — the Schwartz space, the Parseval identity and the extension of the Fourier transform to tempered distributions — is the subject of <em>Fourier Analysis on Euclidean Spaces</em>.</p>
@@ -186,12 +186,12 @@ $$</p>
 <h3 id="the-statements">The Statements</h3>
 <p><strong>Theorem (weak law of large numbers; Khinchin).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| < \infty$ and mean $\mu$. Then the sample means converge in probability:</p>
 <p>$$
-\frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\mathbb{P}} \mu.
+\boxed{\;\frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\mathbb{P}} \mu\;}.
 $$</p>
 <p><strong>Theorem (strong law of large numbers; Kolmogorov).</strong> Under the same hypotheses the sample means converge almost surely: $\frac{1}{n}\sum_{i=1}^n X_i \to \mu$ a.s.</p>
 <p><strong>Theorem (central limit theorem; Lindeberg–Lévy).</strong> Let $X_1, X_2, \dots$ be independent and identically distributed with mean $\mu$ and finite variance $\sigma^2 > 0$. Then</p>
 <p>$$
-\frac{1}{\sigma\sqrt{n}}\sum_{i=1}^n (X_i - \mu) \xrightarrow{d} N(0,1),
+\boxed{\;\frac{1}{\sigma\sqrt{n}}\sum_{i=1}^n (X_i - \mu) \xrightarrow{d} N(0,1)\;},
 $$</p>
 <p>the standard normal distribution.</p>
 <p>The three theorems are the classical limit theorems, and they are the subject, where they are proved, refined and generalised: the weak law follows from Chebyshev when the variance is finite and from the truncation argument of Khinchin in general; the strong law is proved by the maximal inequality of Kolmogorov; and the central limit theorem is proved by the convergence of characteristic functions, via the expansion $\varphi(t/\sqrt n)^n \to \exp(-t^2/2)$ and the continuity theorem of Lévy. The rate of convergence in the central limit theorem is the Berry–Esseen theorem, and the local form is the local limit theorem; both are developed there.</p>

@@ -79,7 +79,7 @@
 <p><strong>Definition.</strong> Let $G$ be a group acting on a set $X$. The <strong>orbit</strong> of $x \in X$ is $G\cdot x = \{g\cdot x : g \in G\}$, the <strong>stabiliser</strong> of $x$ is $G_x = \{g \in G : g\cdot x = x\}$, a subgroup of $G$, and the action is <strong>transitive</strong> if $G\cdot x = X$ for some, hence every, $x$. A <strong>$G$-space</strong> is a set with a $G$-action, and a <strong>$G$-equivariant</strong> map is a map $f : X \to Y$ with $f(g\cdot x) = g\cdot f(x)$.</p>
 <p><strong>Theorem (orbit–stabiliser).</strong> For a group $G$ acting on a set $X$ and $x \in X$, the map</p>
 <p>$$
-\varphi_x : G/G_x \longrightarrow G \cdot x, \qquad \varphi_x(gG_x) = g \cdot x,
+\boxed{\;\varphi_x : G/G_x \longrightarrow G \cdot x, \qquad \varphi_x(gG_x) = g \cdot x\;},
 $$</p>
 <p>is a well-defined $G$-equivariant bijection. In particular, if the action is transitive and $H = G_x$, then $X \cong G/H$ as $G$-sets.</p>
 <p><strong>Proof.</strong> If $gG_x = g'G_x$ then $g^{-1}g' \in G_x$, so $g\cdot x = g'\cdot x$; this is well definedness. It is injective because $g\cdot x = g'\cdot x$ gives $g^{-1}g' \in G_x$; it is surjective by transitivity; and it is equivariant by construction.</p>
@@ -135,7 +135,7 @@ $$</p>
 <p><strong>Remark.</strong> The averaging argument uses the invariant measure, hence the measure theory; the statement of the theorem is nevertheless an ordinary statement about continuous functions on a compact group, and it is stated here with the measure-theoretic proof supplied by the companion article being written in parallel.</p>
 <p><strong>Theorem (the reductive case).</strong> Let $H$ be a closed subgroup of a Lie group $G$, and suppose the Lie algebra splits as a vector space,</p>
 <p>$$
-\mathrm{G} = \mathrm{H} \oplus \mathrm{M}, \qquad [\mathrm{H}, \mathrm{M}] \subseteq \mathrm{M},
+\boxed{\;\mathrm{G} = \mathrm{H} \oplus \mathrm{M}, \qquad [\mathrm{H}, \mathrm{M}] \subseteq \mathrm{M}\;},
 $$</p>
 <p>a <strong>reductive decomposition</strong> with $\mathrm{M}$ an $\operatorname{Ad}(H)$-invariant complement of $\mathrm{H}$. Then an $\operatorname{Ad}(H)$-invariant inner product on $\mathrm{M}$ induces a $G$-invariant Riemannian metric on $G/H$.</p>
 <p><strong>Proof sketch.</strong> Left translation spreads the inner product on $\mathrm{M} \cong T_{eH}(G/H)$ to a metric; $G$-invariance is automatic from the spreading, and the metric is well defined because the inner product on the isotropy space is $H$-invariant.</p>
@@ -164,7 +164,7 @@ $$</p>
 <h3 id="the-curvature-formula">The Curvature Formula</h3>
 <p><strong>Theorem (Nomizu).</strong> For a normal homogeneous space $G/H$ with the metric induced from an $\operatorname{Ad}(G)$-invariant inner product $\langle\cdot,\cdot\rangle$ on $\mathrm{G}$, the sectional curvature of the Levi-Civita connection at the identity coset is, for an orthonormal pair $\xi, \eta \in \mathrm{M}$,</p>
 <p>$$
-K(\xi \wedge \eta) = \tfrac{1}{4}\bigl\|[\xi,\eta]_{\mathrm{M}}\bigr\|^2 + \bigl\|[\xi,\eta]_{\mathrm{H}}\bigr\|^2 ,
+\boxed{\;K(\xi \wedge \eta) = \tfrac{1}{4}\bigl\|[\xi,\eta]_{\mathrm{M}}\bigr\|^2 + \bigl\|[\xi,\eta]_{\mathrm{H}}\bigr\|^2\;} ,
 $$</p>
 <p>where the subscripts denote the components in $\mathrm{M}$ and $\mathrm{H}$. Both terms are nonnegative; the second vanishes when the decomposition satisfies $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{M}$, and the first vanishes when $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$. In particular every normal homogeneous space of a compact group has nonnegative sectional curvature.</p>
 <p><strong>Proof sketch.</strong> The metric on $G/H$ is the quotient metric of the Riemannian submersion $G \to G/H$, whose fibres are the orbits of right translation by $H$ and are totally geodesic in the bi-invariant metric of $G$; O'Neill's formula for the submersion, together with the O'Neill tensor $A_\xi\eta = \tfrac12[\xi,\eta]_{\mathrm{H}}$ and the bi-invariant curvature $K_G(\xi,\eta) = \tfrac14\|[\xi,\eta]\|^2$ (verified from the Jacobi identity and the invariance of the inner product, and reducing to the standard formula for the curvature of a bi-invariant metric of Milnor), gives</p>

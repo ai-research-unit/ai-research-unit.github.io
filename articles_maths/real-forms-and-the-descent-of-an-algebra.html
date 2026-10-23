@@ -86,11 +86,11 @@ $$</p>
 <p>It is $\mathbb{R}$-linear and satisfies $\sigma(\zeta x) = c(\zeta)\sigma(x)$ for $\zeta \in \mathbb{C}$, so it is <strong>semilinear</strong> over $\mathbb{R}$ with respect to $c$.</p>
 <p><strong>Theorem.</strong> $\sigma$ is a semilinear involution of the algebra $A_{\mathbb{C}}$,</p>
 <p>$$
-\sigma(xy) = \sigma(x)\sigma(y), \qquad \sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\zeta x) = \bar\zeta\,\sigma(x), \qquad \sigma^2 = \mathrm{id},
+\boxed{\;\sigma(xy) = \sigma(x)\sigma(y), \qquad \sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\zeta x) = \bar\zeta\,\sigma(x), \qquad \sigma^2 = \mathrm{id}\;},
 $$</p>
 <p>and its fixed set is the real part:</p>
 <p>$$
-A_{\mathbb{C}}^\sigma = A\otimes1 \cong A .
+\boxed{\;A_{\mathbb{C}}^\sigma = A\otimes1 \cong A\;} .
 $$</p>
 <p><em>Proof.</em> On decomposable elements $\sigma((a\otimes\lambda)(b\otimes\mu)) = \sigma(ab\otimes\lambda\mu) = ab\otimes\bar\lambda\bar\mu = (a\otimes\bar\lambda)(b\otimes\bar\mu) = \sigma(a\otimes\lambda)\sigma(b\otimes\mu)$; additivity and the scalar rule are immediate, and $\sigma^2 = \mathrm{id}$ because $c^2 = \mathrm{id}$. An element $x = \sum a_j\otimes\lambda_j$ is fixed iff $\sum a_j\otimes(\lambda_j - \bar\lambda_j) = 0$; taking $a_j$ linearly independent forces each $\lambda_j = \bar\lambda_j$, so the fixed set is $A\otimes\mathbb{R} = A\otimes1$.</p>
 <p><strong>Corollary.</strong> The conjugation is the semilinear involution of the complexification that has $A$ as its self-adjoint part; the map $A\mapsto(A_{\mathbb{C}},\sigma)$ is a functor from the real algebras to the complex algebras with a conjugation, and the decomposition $A_{\mathbb{C}} = A\oplus iA$ is the decomposition into the self-adjoint and the skew parts.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-descent-of-the-module-category">The Descent of the Module Category</h3>
 <p><strong>Theorem (descent).</strong> Let $B$ be a complex algebra with a conjugation $\sigma$ and real form $A = B^\sigma$. The functors</p>
 <p>$$
-M \longmapsto H(M) = \{m \in M : \tau(m) = m\}, \qquad N \longmapsto N\otimes_{\mathbb{R}}\mathbb{C}
+\boxed{\;M \longmapsto H(M) = \{m \in M : \tau(m) = m\}, \qquad N \longmapsto N\otimes_{\mathbb{R}}\mathbb{C}\;}
 $$</p>
 <p>are inverse equivalences between the category of complex $B$-modules with a semilinear involution $\tau$ compatible with $\sigma$ and the category of real $A$-modules.</p>
 <p><em>Proof.</em> This is <em>Commutative Algebras with an Involution</em> read with the centre and the scalars specialised to $\mathbb{C}/\mathbb{R}$; the quadratic model is the one with $t = i$, $t^2 = -1 \in \mathbb{R}$, under which the descent applies because $\mathbb{C}$ is faithfully flat and free of rank two over $\mathbb{R}$. The same computation $M = H(M)\oplus iH(M)$ gives the inverse.</p>

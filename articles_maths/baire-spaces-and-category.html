@@ -76,7 +76,7 @@
 <h3 id="nowhere-dense-and-meagre-sets">Nowhere Dense and Meagre Sets</h3>
 <p><strong>Definition.</strong> Let $X$ be a topological space and $A \subseteq X$. Then $A$ is <strong>nowhere dense</strong> in $X$ if the interior of its closure is empty:
 $$
-\bigl(\overline{A}\bigr)^\circ = \emptyset .
+\boxed{\;\bigl(\overline{A}\bigr)^\circ = \emptyset\;} .
 $$
 A set is <strong>meagre</strong>, or of the <strong>first category</strong>, if it is a countable union of nowhere dense sets; it is <strong>of the second category</strong> if it is not meagre; and it is <strong>comeagre</strong>, or <strong>residual</strong>, if its complement is meagre. A <strong>Baire space</strong> is a space in which the intersection of every countable family of dense open sets is dense.</p>
 <p>The definition of a Baire space is given in this form, and equivalently in the three forms of the next section. Note that the property concerns only the topology: it is a statement about open dense families, and the metric enters only through the theorem that produces such families in complete spaces.</p>
@@ -151,7 +151,7 @@ and player I wins otherwise. A <strong>strategy</strong> for a player is a funct
 <p><strong>Proof sketch (one direction).</strong> If $X$ is not Baire, there is a countable family of closed nowhere dense sets $F_n$ whose union has nonempty interior $W$. Player I chooses $\Omega_1 = W$ and, at his $n$-th move, chooses $\Omega_{2n+1}$ a nonempty open subset of $\Omega_{2n} \setminus F_n$; this is possible because $F_n$ is nowhere dense and $\Omega_{2n}$ is nonempty open. The intersection of the play lies in $W \setminus \bigcup_n F_n = \emptyset$, so player I wins. Hence Baireness excludes a winning strategy for I. The converse, that a Baire space admits no winning strategy for the first player, is Oxtoby's theorem; the proof analyses a putative winning strategy and extracts from it a countable family of closed nowhere dense sets covering an open set, violating the Baire property.</p>
 <p><strong>Theorem (the general Banach–Mazur game).</strong> Let $Y$ be a topological space, $X \subseteq Y$, and $\mathcal{W}$ a family of subsets of $Y$ each with nonempty interior and meeting every nonempty open subset of $Y$. In the game $MB(X, Y, \mathcal{W})$, in which the players alternately choose members of $\mathcal{W}$ forming a descending sequence and player I wins if
 $$
-X \cap \Bigl(\bigcap_{n} W_n\Bigr) \neq \emptyset,
+\boxed{\;X \cap \Bigl(\bigcap_{n} W_n\Bigr) \neq \emptyset\;},
 $$
 player II has a winning strategy if and only if $X$ is meagre in $Y$; and if $Y$ is a complete metric space, player I has a winning strategy if and only if $X$ is comeagre in some nonempty open subset of $Y$.</p>
 <p><strong>Proof sketch.</strong> If $X = \bigcup_n N_n$ with each $N_n$ nowhere dense, player II answers the $n$-th move of I by choosing a member of $\mathcal{W}$ inside the previous move and disjoint from $\overline{N_n}$, which is possible because $\overline{N_n}$ is nowhere dense and the previous move is a nonempty open set. The intersection of the play then avoids each $N_n$ and hence avoids $X$, so II wins. Conversely a winning strategy for II assigns to each move of I a set avoiding $X$ on a dense open piece, which expresses $X$ as a countable union of nowhere dense sets. The statement about complete metric $Y$ is the dual and uses the Baire category theorem.</p>

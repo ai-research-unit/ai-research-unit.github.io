@@ -89,7 +89,9 @@ $$</p>
 $$</p>
 <p>with $\mathrm{d}\sigma$ the Euclidean surface element, and taking scalar parts and summing,</p>
 <p>$$
-\int_\Omega \operatorname{Sc}\big(D f\big) \;=\; \int_{\partial\Omega} \operatorname{Sc}\big(f\, n\big) .
+\boxed{\;
+\int_\Omega \operatorname{Sc}\big(D f\big) \;=\; \int_{\partial\Omega} \operatorname{Sc}\big(f\, n\big)
+\;}.
 $$</p>
 <p>The normalisation is the Euclidean one, which exists on every smooth hypersurface. What degenerates on a boundary tangent to the null cone is not the normalisation but the boundary term: if $\langle n\rangle_{\natural} = 0$ at a point, then $n$ is a zero divisor there and the functional $f \mapsto \operatorname{Sc}(fn)$ has a kernel, so the boundary term loses information. The algebra-valued form $\int_\Omega Df = \int_{\partial\Omega} fn$ with the normal on the right is <em>not</em> valid as it stands; the componentwise theorem gives $\int_\Omega Df = \int_{\partial\Omega}\sum_\mu (\vec e_\mu\,f)n_\mu$, and only after taking the scalar part does the sum collapse to the single product $fn$.</p>
 <p><strong>Proof.</strong> The four displays are the divergence theorem in the four coordinates, applied to the components of $f$. For the scalar-part form, $\operatorname{Sc}(Df) = \sum_\mu\operatorname{Sc}(\vec e_\mu\,\partial/\partial q_\mu\,f)$ and $\int_\Omega\partial/\partial q_\mu\,f = \int_{\partial\Omega}f\,n_\mu$; since $\vec e_\mu$ is constant and the scalar part is linear and invariant under cyclic permutations,</p>
@@ -124,7 +126,9 @@ $$</p>
 $$</p>
 <p>For $f, g$ with continuous first derivatives on the closure,</p>
 <p>$$
-\int_\Omega \Big[\operatorname{Sc}\big((Df)\,g\big) + \operatorname{Sc}\big(f\,(\bar D g)\big)\Big] = \int_{\partial\Omega} \operatorname{Sc}\big(f\, g\, n\big) .
+\boxed{\;
+\int_\Omega \Big[\operatorname{Sc}\big((Df)\,g\big) + \operatorname{Sc}\big(f\,(\bar D g)\big)\Big] = \int_{\partial\Omega} \operatorname{Sc}\big(f\, g\, n\big)
+\;}.
 $$</p>
 <p>Two features of the algebra are responsible for the form of this formula, and both are statements that are true for scalar-valued functions and false in general.</p>
 <ol>
@@ -161,7 +165,9 @@ $$</p>
 <h2 id="the-divergence-theorem-and-the-stokes-theorem">The Divergence Theorem and the Stokes Theorem</h2>
 <p><strong>Theorem (Divergence and Stokes for the Algebra).</strong> For a split-quaternion-valued function $F = F_t + F_x\vec e_x + F_y\vec e_y + F_z\vec e_z$ with continuous first derivatives,</p>
 <p>$$
-\int_\Omega \Big(\frac{\partial F_t}{\partial q_t} + \frac{\partial F_x}{\partial q_x} + \frac{\partial F_y}{\partial q_y} + \frac{\partial F_z}{\partial q_z}\Big) = \int_{\partial\Omega} \big(F_t n_{q_t} + F_x n_{q_x} + F_y n_{q_y} + F_z n_{q_z}\big),
+\boxed{\;
+\int_\Omega \Big(\frac{\partial F_t}{\partial q_t} + \frac{\partial F_x}{\partial q_x} + \frac{\partial F_y}{\partial q_y} + \frac{\partial F_z}{\partial q_z}\Big) = \int_{\partial\Omega} \big(F_t n_{q_t} + F_x n_{q_x} + F_y n_{q_y} + F_z n_{q_z}\big)
+\;},
 $$</p>
 <p>and the Stokes theorem holds for the three-form of the vector subspace with the orientation fixed above.</p>
 <p><strong>Proof.</strong> The divergence theorem is applied to each coordinate component, and the Stokes theorem is the usual one for the oriented three-dimensional vector subspace.</p>
@@ -200,7 +206,9 @@ $$</p>
 <p><strong>Corollary (No Right Inverse).</strong> There is no identity $f = E_D*(Df)$ valid for all compactly supported smooth $f$, and therefore no Cauchy–Pompeiu formula of the elliptic type: the identity would give $f = E_D*0 = 0$ for the nonzero compactly supported solutions of the kernel theorem.</p>
 <p><strong>Theorem (The Inversion on the Left).</strong> What holds is the inversion on the left,</p>
 <p>$$
-f = D\,(E_D * f),
+\boxed{\;
+f = D\,(E_D * f)
+\;},
 $$</p>
 <p>for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomogeneous equation $Dg = f$ for every datum $f$, while the homogeneous solutions are as numerous as the kernel theorem says.</p>
 <p><strong>Proof.</strong> $D(E_D*f) = (DE_D)*f = \delta*f = f$, the differentiation passing through the convolution because the coefficients are constant.</p>

@@ -79,15 +79,15 @@ $$</p>
 <h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
 <p><strong>Proposition (definition and continuity).</strong> For every $a \in E$ the map $\Lambda^{\alpha}_{a}$ is a continuous linear operator on $E$; it is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$, and</p>
 <p>$$
-\Lambda^{\alpha}_{a} = L_{a} \circ \alpha = \alpha \circ L_{\alpha(a)} ,
+\boxed{\;\Lambda^{\alpha}_{a} = L_{a} \circ \alpha = \alpha \circ L_{\alpha(a)}\;} ,
 $$</p>
 <p>so the signed left multiplication is the ordinary left multiplication by $\alpha(a)$ conjugated by $\alpha$.</p>
 <p><strong>Proof.</strong> $\Lambda^{\alpha}_{a}$ is a composite of continuous linear maps, hence continuous linear. The first identity is the definition of the sandwich with $b = 1$; for the second, $(\alpha \circ L_{\alpha(a)})(x) = \alpha(\alpha(a)x) = a\alpha(x) = \Lambda^{\alpha}_{a}(x)$.</p>
 <p><strong>Proposition (composition).</strong> For all $a, b \in E$,</p>
 <p>$$
-\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
+\boxed{\;\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
 L_{a}\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}, \qquad
-\Lambda^{\alpha}_{a}L_{b} = R_{\alpha(b)}\Lambda^{\alpha}_{a} .
+\Lambda^{\alpha}_{a}L_{b} = R_{\alpha(b)}\Lambda^{\alpha}_{a}\;} .
 $$</p>
 <p>In particular the composite of two signed left multiplications is an ordinary left multiplication, and the set $\{L_{a} : a \in E\} \cup \{\Lambda^{\alpha}_{a} : a \in E\}$ is closed under composition.</p>
 <p><strong>Proof.</strong> $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha(\alpha(x)) = a\alpha(b)x = L_{a\alpha(b)}(x)$; $L_{a}\Lambda^{\alpha}_{b}(x) = ab\alpha(x) = \Lambda^{\alpha}_{ab}(x)$; $\Lambda^{\alpha}_{a}L_{b}(x) = a\alpha(x)\alpha(b) = R_{\alpha(b)}(\Lambda^{\alpha}_{a}(x))$. Closure is the three identities together.</p>
@@ -106,7 +106,7 @@ $$</p>
 <p><strong>Proof.</strong> The fixed set is the kernel of the continuous linear map $\mathrm{id} - \Lambda^{\alpha}_{a}$, hence a closed subspace; the apparent linearity is correct because $\Lambda^{\alpha}_{a}$ is linear and fixes $0$.</p>
 <p><strong>Proposition (the fixed set in the invertible case).</strong> If $a$ is invertible then $\mathrm{Fix}(\Lambda^{\alpha}_{a}) = \{x : \alpha(x) = a^{-1}x\}$, the graph of the action of $a^{-1}$ under the involution, and its dimension equals the dimension of the fixed points of the automorphism $a^{-1}\alpha$ of $E$, namely</p>
 <p>$$
-\dim \mathrm{Fix}(\Lambda^{\alpha}_{a}) = \dim\ker(\mathrm{id} - a^{-1}\alpha) .
+\boxed{\;\dim \mathrm{Fix}(\Lambda^{\alpha}_{a}) = \dim\ker(\mathrm{id} - a^{-1}\alpha)\;} .
 $$</p>
 <p>For $a = 1$ the fixed set of $\Lambda^{\alpha}_{1} = \alpha$ is the fixed part $E^{+}$ of the grading, and $\Lambda^{\alpha}_{1}$ is an involution with $E = E^{+} \oplus E^{-}$.</p>
 <p><strong>Proof.</strong> $a\alpha(x) = x$ is $\alpha(x) = a^{-1}x$ when $a$ is invertible, and the fixed points of the automorphism $a^{-1}\alpha$ are the kernel of $\mathrm{id} - a^{-1}\alpha$; the finite-dimensional dimension statement follows. For $a = 1$ the equation is $\alpha(x) = x$, i.e. $x \in E^{+}$, and $\Lambda^{\alpha}_{1} = \alpha$ with the splitting of the reflection article.</p>

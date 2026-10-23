@@ -95,7 +95,7 @@ $$</p>
 <h3 id="the-explicit-form">The Explicit Form</h3>
 <p><strong>Theorem (the explicit adjoint).</strong> For all $a,b\in\mathrm{G}$,</p>
 <p>$$
-\Sigma^{\alpha\,*}_{a,b} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} - \alpha R_{[a,b]} ,
+\boxed{\;\Sigma^{\alpha\,*}_{a,b} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} - \alpha R_{[a,b]}\;} ,
 $$</p>
 <p>and since $\alpha R_{[a,b]} = R_{[\alpha(a),\alpha(b)]}\alpha$, the adjoint is a signed sandwich of the $\alpha$-transformed pair, corrected by the right multiplication of the commutator.</p>
 <p><em>Proof.</em> From $[L_a,R_b] = R_{[a,b]}$, proved from the Jacobi identity, one has $R_bL_a = L_aR_b - R_{[a,b]}$; multiplying by $\alpha$ on the left and using $\alpha L_a = L_{\alpha(a)}\alpha$, $\alpha R_b = R_{\alpha(b)}\alpha$ gives</p>
@@ -113,7 +113,7 @@ $$</p>
 <h3 id="self-adjointness">Self-Adjointness</h3>
 <p><strong>Theorem.</strong> The signed sandwich is self-adjoint if and only if the pair satisfies the commutation condition and the invariance condition</p>
 <p>$$
-[a,b] = 0 \quad\text{and}\quad \Sigma^{\alpha}_{\alpha(a),\alpha(b)} = \Sigma^{\alpha}_{a,b} ,
+\boxed{\;[a,b] = 0 \quad\text{and}\quad \Sigma^{\alpha}_{\alpha(a),\alpha(b)} = \Sigma^{\alpha}_{a,b}\;} ,
 $$</p>
 <p>the second being automatic for homogeneous carrying elements; consequently the signed sandwich is self-adjoint for every pair of homogeneous commuting elements.</p>
 <p><em>Proof.</em> The adjoint is the formula above, so self-adjointness is the identity $\Sigma^{\alpha}_{\alpha(a),\alpha(b)} - \alpha R_{[a,b]} = \Sigma^{\alpha}_{a,b}$; separating the sandwich part from the right-multiplication part gives the two stated conditions, and the second holds for homogeneous parameters by the parity computation.</p>
@@ -127,7 +127,7 @@ $$</p>
 <h3 id="unitarity">Unitarity</h3>
 <p><strong>Theorem (the unitarity condition).</strong> The signed sandwich is <strong>unitary</strong> for $H$ — that is, $\Sigma^{\alpha\,*}_{a,b}\Sigma^{\alpha}_{a,b} = \mathrm{id}$ — if and only if it is self-adjoint and its square is the identity,</p>
 <p>$$
-\Sigma^{\alpha\,*}_{a,b}\Sigma^{\alpha}_{a,b} = \mathrm{id} \iff [a,b] = 0 \ \text{and}\ \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{2} = \mathrm{id} ,
+\boxed{\;\Sigma^{\alpha\,*}_{a,b}\Sigma^{\alpha}_{a,b} = \mathrm{id} \iff [a,b] = 0 \ \text{and}\ \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{2} = \mathrm{id}\;} ,
 $$</p>
 <p>so that the unitary signed sandwiches are exactly the involutive signed sandwiches with a commuting carrying pair; the second condition is the centrality of the correction in the sense of the square of <em>The Signed Sandwich on a Lie Algebra</em>.</p>
 <p><em>Proof.</em> For a self-adjoint operator the unitary condition $\Sigma^{*}\Sigma = \mathrm{id}$ is $\Sigma^2 = \mathrm{id}$; conversely the unitary condition implies $\Sigma^{*} = \Sigma^{-1}$, which combined with the explicit form separates into the two stated conditions.</p>

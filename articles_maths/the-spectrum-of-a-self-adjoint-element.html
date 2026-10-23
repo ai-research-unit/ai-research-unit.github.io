@@ -76,7 +76,7 @@
 <h2 id="reality-of-the-spectrum">Reality of the Spectrum</h2>
 <p><strong>Theorem (the spectrum of a self-adjoint element is real).</strong> If $a^* = a$ then $\sigma(a) \subseteq \mathbb{R}$, and for $\lambda \notin \mathbb{R}$,</p>
 <p>$$
-\lVert (a-\lambda)^{-1}\rVert \leq \frac{1}{\lvert\operatorname{Im}\lambda\rvert} .
+\boxed{\;\lVert (a-\lambda)^{-1}\rVert \leq \frac{1}{\lvert\operatorname{Im}\lambda\rvert}\;} .
 $$</p>
 <p><strong>Proof.</strong> Write $\lambda = s + it$ with $t \neq 0$ and $c = a - s$, a self-adjoint element, so that $a - \lambda = c - it$. By the $\mathrm{C}^*$-identity and $(c-it)^*(c-it) = c^2 + t^2$,</p>
 <p>$$
@@ -95,13 +95,13 @@ $$</p>
 <p>which is commutative because $a$ commutes with $a^* = a$.</p>
 <p><strong>Theorem (the spectral theorem for a self-adjoint element).</strong> Let $a$ be self-adjoint. The Gelfand transform is an isometric $*$-isomorphism</p>
 <p>$$
-C^*(a,1) \longrightarrow C(\sigma(a)) , \qquad a \mapsto (\lambda \mapsto \lambda) ,
+\boxed{\;C^*(a,1) \longrightarrow C(\sigma(a)) , \qquad a \mapsto (\lambda \mapsto \lambda)\;} ,
 $$</p>
 <p>so $C^*(a,1)$ is the algebra of continuous functions on the compact real set $\sigma(a)$, and $a$ corresponds to the identity function. In particular $\sigma(a)$ is the compact real set on which the algebra is represented, and the spectrum is recovered from the algebra.</p>
 <p><strong>Proof.</strong> The algebra $C^*(a,1)$ is a commutative unital $\mathrm{C}^*$-algebra, so the Gelfand transform is an isometric $*$-isomorphism onto $C(\operatorname{Max}(C^*(a,1)))$ by the commutative Gelfand–Naimark theorem; the map $\chi \mapsto \chi(a)$ is a homeomorphism of $\operatorname{Max}(C^*(a,1))$ onto $\sigma(a)$ because the characters are the nonzero multiplicative functionals and $\chi(a)$ runs over the spectrum, which is real by the reality theorem; under this identification the identity function corresponds to $a$.</p>
 <p><strong>Corollary (the spectral mapping theorem, self-adjoint case).</strong> For a self-adjoint $a$ and a continuous $f : \sigma(a) \to \mathbb{C}$, there is an element $f(a) \in C^*(a,1)$ with</p>
 <p>$$
-\sigma(f(a)) = f(\sigma(a)) ,
+\boxed{\;\sigma(f(a)) = f(\sigma(a))\;} ,
 $$</p>
 <p>the assignment $f \mapsto f(a)$ is an isometric $*$-homomorphism from $C(\sigma(a))$ onto $C^*(a,1)$, and it is the <strong>continuous functional calculus</strong>. The calculus is developed in <em>The Functional Calculus of a Self-Adjoint Element</em>.</p>
 <p><strong>Proof.</strong> Compose the inverse of the Gelfand transform with the pullback by $f$; the spectral mapping is $\sigma(f(a)) = (\mathcal F f)(\sigma(a)) = f(\sigma(a))$ under the identification of the theorem.</p>

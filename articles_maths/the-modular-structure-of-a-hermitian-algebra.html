@@ -81,7 +81,7 @@
 <h2 id="the-modular-conjugation-and-the-exchange">The Modular Conjugation and the Exchange</h2>
 <p><strong>Theorem (the exchange).</strong> Let $\jmath$ be the modular conjugation of the completion. Then</p>
 <p>$$
-\jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} , \qquad \jmath\,\bar R_x\,\jmath = \bar L_{x^{\dagger}} ,
+\boxed{\;\jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} , \qquad \jmath\,\bar R_x\,\jmath = \bar L_{x^{\dagger}}\;} ,
 $$</p>
 <p>and consequently $\jmath\bar L_x^{*}\jmath = \bar R_x$: the modular conjugation turns the adjoint of a left multiplication into the right multiplication by the same element.</p>
 <p><strong>Proof.</strong> The modular conjugation satisfies $\jmath\mathcal{M}\jmath = \mathcal{M}^{c}$ and reverses products, by <em>The Modular Operator and Tomita-Takesaki Theory</em>; on the left multiplications this gives $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$ as in <em>The Left and the Right Regular Representation</em>; applying the involution gives the second identity, and combining with the adjoint formula gives the third.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p>the closure of the image of the positive cone under the cyclic vector.</p>
 <p><strong>Theorem (self-duality).</strong> The cone $P$ is <strong>self-dual</strong>:</p>
 <p>$$
-P = P^{\natural} := \{u\in H : [u,v]\geq0 \text{ for every } v\in P\} ,
+\boxed{\;P = P^{\natural} := \{u\in H : [u,v]\geq0 \text{ for every } v\in P\}\;} ,
 $$</p>
 <p>the modular conjugation fixes $P$ pointwise in the sense $\jmath P = P$, and $\Theta_xP\subseteq P$ for every $x\in\mathcal{M}$.</p>
 <p><strong>Proof.</strong> The self-duality is the cone theorem of the modular theory: $P^{\natural}\subseteq P$ because a vector in the dual cone is a limit of positive elements applied to $\xi$, and $P\subseteq P^{\natural}$ by the positivity of the sandwiches; the invariance $\jmath P = P$ follows from the matrix-valued version of $\jmath\Theta_x\jmath = \Theta_x$, which is $\jmath x\jmath = x^{*}$ acting on the cone; and the invariance of the cone under the sandwiches is the stabilisation of the positive cone under inner conjugation.</p>
@@ -142,7 +142,7 @@ $$</p>
 <h2 id="the-polar-decomposition">The Polar Decomposition</h2>
 <p><strong>Theorem (Tomita–Takesaki).</strong> The closure of $S$ has a polar decomposition</p>
 <p>$$
-\bar S = J\,\Delta^{1/2} ,
+\boxed{\;\bar S = J\,\Delta^{1/2}\;} ,
 $$</p>
 <p>where $J$ is an antiunitary involution, $J^{2} = \mathrm{id}$, and $\Delta = \bar S^{*}\bar S$ is a positive self-adjoint operator, generally unbounded; equivalently $\bar S = J\Delta^{1/2}$, $\bar S^{*} = J\Delta^{-1/2}$ and $\Delta = \bar S^{*}\bar S$.</p>
 <p><strong>Proof.</strong> The operator $\bar S$ is closed and densely defined, so it has a polar decomposition $\bar S = U|\bar S|$, by the polar decomposition of <em>The Polar Decomposition of an Operator of the Form</em> read for the closed operator $S$, with $|\bar S| = (\bar S^{*}\bar S)^{1/2} = \Delta^{1/2}$ and $U$ a partial isometry with kernel $\ker\bar S$ and range $\overline{\mathrm{ran}\,\bar S}$; the involutivity $S^{2} = 1$ forces $\ker\bar S = \{0\}$, because $\bar Sy = 0$ with $0\in\mathrm{dom}\,\bar S$ gives $y = \bar S^{2}y = \bar S0 = 0$; hence $\overline{\mathrm{ran}\,|\bar S|} = (\ker|\bar S|)^{\perp} = H$ and $U$ is an antiunitary operator with $U^{2} = \mathrm{id}$, written $J$.</p>

@@ -106,7 +106,7 @@ $$</p>
 <h3 id="the-exchange-of-the-mixed-spaces">The Exchange of the Mixed Spaces</h3>
 <p><strong>Theorem (the exchange).</strong> Let $e$ be a Hermitian idempotent and $f = 1 - e$. Then $f$ is a Hermitian idempotent and the involution exchanges the two indices of each Peirce space,</p>
 <p>$$
-(e_i A e_j)^{*} = e_j A e_i ,
+\boxed{\;(e_i A e_j)^{*} = e_j A e_i\;} ,
 $$</p>
 <p>so the two corners $eAe$ and $fAf$ are carried to themselves and the involution exchanges the two mixed spaces, $(eAf)^{*} = fAe$ and $(fAe)^{*} = eAf$.</p>
 <p><strong>Proof.</strong> For the complement, $f^{*} = (1 - e)^{*} = 1 - e^{*} = 1 - e = f$, so $f$ is Hermitian. For the spaces, $(e_i a e_j)^{*} = e_j^{*} a^{*} e_i^{*} = e_j a^{*} e_i$ by the anti-multiplicativity of $*$ and the Hermitian character of the two idempotents, and $a^{*}$ runs over $A$ with $a$, so $(e_i A e_j)^{*} = e_j A e_i$.</p>
@@ -162,7 +162,7 @@ $$</p>
 <h3 id="the-transposed-table">The Transposed Table</h3>
 <p><strong>Theorem.</strong> Let $e$ be a Hermitian idempotent, $f = 1 - e$, and write $A_{ij} = e_i A e_j$ with $e_{1} = e$ and $e_{2} = f$. For the derived product,</p>
 <p>$$
-A_{ij} \star A_{kl} \subseteq \delta_{jl}\, A_{ik} .
+\boxed{\;A_{ij} \star A_{kl} \subseteq \delta_{jl}\, A_{ik}\;} .
 $$</p>
 <p>So the two indices that must agree are the right index $j$ of the first factor and the right index $l$ of the second, while the outer indices of the result are the two left indices $i$ and $k$. In the table of the algebra product it is instead the right index of the first factor and the left index of the second that must agree, $(e_i A e_j)(e_k A e_l) \subseteq \delta_{jk} e_i A e_l$; the sesquilinear table is the transpose of the ordinary one.</p>
 <p><strong>Proof.</strong> For $u = e_i a e_j$ and $v = e_k b e_l$ in the two spaces, the conjugate of $v$ is $v^{*} = e_l b^{*} e_k$ by the exchange of the Peirce spaces, so</p>
@@ -178,7 +178,7 @@ $$</p>
 <p><strong>Definition.</strong> A family $e_{1}, \dots, e_{n}$ of Hermitian idempotents is <strong>orthogonal</strong> when $e_{i}e_{j} = 0$ for $i \neq j$, and <strong>complete</strong> when $e_{1} + \cdots + e_{n} = 1$.</p>
 <p><strong>Theorem.</strong> Let $e_{1}, \dots, e_{n}$ be an orthogonal complete family of Hermitian idempotents. Then</p>
 <p>$$
-A = \bigoplus_{i,j} e_i A e_j ,
+\boxed{\;A = \bigoplus_{i,j} e_i A e_j\;} ,
 $$</p>
 <p>the table of the algebra product is $(e_i A e_j)(e_k A e_l) \subseteq \delta_{jk} e_i A e_l$, and the table of the derived product is $(e_i A e_j) \star (e_k A e_l) \subseteq \delta_{jl} e_i A e_k$. The diagonal sum $\bigoplus_{i} e_i A e_i$ is a $*$-subalgebra with unit $1$, each $e_i A e_i$ is a corner with unit $e_i$, and the off-diagonal sum is a bimodule over the diagonal.</p>
 <p><strong>Proof.</strong> Since $\sum_{i} e_{i} = 1$ acts as a unit, $a = \bigl(\sum_{i} e_{i}\bigr) a \bigl(\sum_{j} e_{j}\bigr) = \sum_{i,j} e_i a e_j$, which gives the sum. It is direct: a relation $\sum x_{ij} = 0$ with $x_{ij} \in e_i A e_j$, multiplied on the left by $e_{i'}$ and on the right by $e_{j'}$, leaves $x_{i'j'} = 0$ because $e_{i'} e_i = \delta_{i'i} e_{i'}$ and $e_j e_{j'} = \delta_{jj'} e_j$. For the two tables, the orthogonality $e_i e_j = \delta_{ij} e_i$ of the family gives</p>

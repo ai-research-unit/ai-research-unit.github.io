@@ -91,7 +91,7 @@ $$</p>
 <h3 id="twisting-is-an-involution-of-the-category">Twisting is an involution of the category</h3>
 <p><strong>Proposition.</strong> The assignment $M \mapsto M^{\sigma}$, with a homomorphism $f : M \to N$ sent to the same map $f : M^{\sigma} \to N^{\sigma}$, is an endofunctor of the category of left $A$-modules, and</p>
 <p>$$
-(M^{\sigma})^{\sigma}=M \qquad (M \text{ a left } A\text{-module}),
+\boxed{\;(M^{\sigma})^{\sigma}=M \qquad (M \text{ a left } A\text{-module})\;},
 $$</p>
 <p>so the functor is an equivalence of categories and an involution up to the identity.</p>
 <p><em>Proof.</em> A map $f : M \to N$ that is $A$-linear is $A$-linear for the twisted actions: $f(a \cdot_{\sigma} m)=f(\sigma(a)m)=\sigma(a)f(m)=a \cdot_{\sigma} f(m)$. Identities and composites are unchanged, so the assignment is a functor; and the action of $M^{\sigma}$ twisted again is $a \cdot_{\sigma\cdot_{\sigma}} m=\sigma(\sigma(a))m=am$, so twisting twice returns the original action.</p>
@@ -115,7 +115,7 @@ $$</p>
 <p>For a free module the induced involution is $\sigma$ applied entrywise and combined with transposition.</p>
 <p><strong>Theorem.</strong> Let $n \geq 1$ and identify $\operatorname{End}_A({}_A A^n)\cong M_n(A^{\mathrm{opp}})$ by the right multiplication $f(v)=vX$ of <em>The Endomorphism Algebra of a Module</em>. Then the map</p>
 <p>$$
-\Theta : M_n(A^{\mathrm{opp}}) \to M_n(A^{\mathrm{opp}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji}),
+\boxed{\;\Theta : M_n(A^{\mathrm{opp}}) \to M_n(A^{\mathrm{opp}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji})\;},
 $$</p>
 <p>is an involution of the $R$-algebra $M_n(A^{\mathrm{opp}})$, and it is the unique map that applies $\sigma$ to each entry and transposes the matrix.</p>
 <p><em>Proof.</em> Additivity and $R$-linearity are entrywise. For the product, using $(XY)_{ij}=\sum_k X_{ik} \cdot_{\mathrm{op}} Y_{kj}=\sum_k Y_{kj}X_{ik}$, one has</p>
@@ -134,7 +134,7 @@ $$</p>
 <p><strong>Definition.</strong> A module $M$ is <strong>self-conjugate</strong> when $M \cong M^{\sigma}$.</p>
 <p><strong>Proposition.</strong> If $u : M \to M^{\sigma}$ is an isomorphism, then the composite</p>
 <p>$$
-\operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_A(M^{\sigma}) \xrightarrow{\ f \mapsto u^{-1}fu\ } \operatorname{End}_A(M)
+\boxed{\;\operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_A(M^{\sigma}) \xrightarrow{\ f \mapsto u^{-1}fu\ } \operatorname{End}_A(M)\;}
 $$</p>
 <p>is a unital $R$-algebra automorphism of $\operatorname{End}_A(M)$, namely the inner automorphism by $u$; it is an involution exactly when $u^{2}$ is central in $\operatorname{End}_A(M)$, and it need not be an involution in general.</p>
 <p><em>Proof.</em> A self-conjugacy $u$ is in particular an element of the ring $\operatorname{End}_R(M)$, and conjugation by it is an algebra automorphism; its square is conjugation by $u^{2}$, which is the identity when $u^{2}$ is central, and not otherwise.</p>

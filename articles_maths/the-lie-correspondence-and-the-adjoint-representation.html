@@ -91,7 +91,7 @@ $$</p>
 <p><strong>Definition.</strong> A connected Lie group is <strong>simply connected</strong> if it is simply connected as a topological space, that is, if every loop in it is null-homotopic.</p>
 <p><strong>Theorem.</strong> Let $G$ be a simply connected Lie group and $H$ a Lie group with Lie algebras $\mathrm{G}, \mathrm{H}$. Then the map</p>
 <p>$$
-\operatorname{Hom}_{\mathbf{LieGrp}}(G, H) \longrightarrow \operatorname{Hom}_{\mathbf{LieAlg}}(\mathrm{G}, \mathrm{H}), \qquad \varphi \longmapsto d\varphi_e,
+\boxed{\;\operatorname{Hom}_{\mathbf{LieGrp}}(G, H) \longrightarrow \operatorname{Hom}_{\mathbf{LieAlg}}(\mathrm{G}, \mathrm{H}), \qquad \varphi \longmapsto d\varphi_e\;},
 $$</p>
 <p>is a bijection.</p>
 <p><strong>Proof sketch.</strong> Injectivity: if two homomorphisms induce the same map on Lie algebras, their difference is a homomorphism whose differential vanishes; the image of a connected group under a homomorphism with vanishing differential is discrete and connected, hence a point. Surjectivity: given a homomorphism $f : \mathrm{G} \to \mathrm{H}$, one integrates it. Along each one-parameter subgroup $\exp(tX)$ of $G$ one defines the path $\exp_H(t f(X))$; the Campbell–Baker–Hausdorff product on $G$ shows that these paths fit together into a homomorphism on a neighbourhood of the identity, and a neighbourhood of the identity generates $G$ because $G$ is connected. Simple connectivity of $G$ ensures that the construction is independent of the paths used to multiply elements, so the local homomorphism extends to all of $G$.</p>
@@ -139,7 +139,7 @@ d(\operatorname{Ad})_e = \operatorname{ad},
 $$</p>
 <p>and by the composition rule</p>
 <p>$$
-\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X) = \sum_{k \geq 0} \frac{(\operatorname{ad}_X)^k}{k!} \in GL(\mathrm{G}).
+\boxed{\;\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X) = \sum_{k \geq 0} \frac{(\operatorname{ad}_X)^k}{k!} \in GL(\mathrm{G})\;}.
 $$</p>
 <p><strong>Proof.</strong> The map $\operatorname{Ad}$ is a homomorphism because $c_{gh} = c_g \circ c_h$ and the differential is functorial. To identify $d(\operatorname{Ad})_e$, differentiate the identity $\operatorname{Ad}(g)v = \frac{d}{dt}\big|_{t=0} g\exp(tv)g^{-1}$ at $g = \exp(tx)$: the derivative of $g\exp(tv)g^{-1}$ with respect to $s$ at $s = 0$, with $g = \exp(sx)$, is $[x, v]$, so $d(\operatorname{Ad})_e(x) = \operatorname{ad}_x$. The composition rule is the naturality of the exponential applied to the homomorphism $\operatorname{Ad} : G \to GL(\mathrm{G})$, whose Lie algebra is $\mathrm{GL}(\mathrm{G})$: $\operatorname{Ad}(\exp x) = \exp(\operatorname{ad}_x)$, and the exponential in $GL(\mathrm{G})$ is the matrix exponential of the endomorphism $\operatorname{ad}_x$.</p>
 <p><strong>Corollary (conjugation formula).</strong> For all $g \in G$ and $v \in \mathrm{G}$,</p>
@@ -156,7 +156,7 @@ $$</p>
 <h3 id="the-centre-and-the-kernel">The Centre and the Kernel</h3>
 <p><strong>Theorem.</strong> Let $G$ be a connected Lie group with Lie algebra $\mathrm{G}$. Then the kernel of the adjoint representation is the centre:</p>
 <p>$$
-\ker(\operatorname{Ad}) = Z(G) = \{g \in G : gh = hg \text{ for all } h \in G\}.
+\boxed{\;\ker(\operatorname{Ad}) = Z(G) = \{g \in G : gh = hg \text{ for all } h \in G\}\;}.
 $$</p>
 <p>Consequently $\operatorname{Ad}$ induces an injective homomorphism $G/Z(G) \to GL(\mathrm{G})$.</p>
 <p><strong>Proof.</strong> If $g \in \ker\operatorname{Ad}$ then $\operatorname{Ad}(g) = \mathrm{id}$, so $g\exp(v)g^{-1} = \exp(v)$ for all $v$ by the conjugation formula. Since $\exp(\mathrm{G})$ generates the connected group $G$, this gives $ghg^{-1} = h$ for all $h \in G$, so $g \in Z(G)$. Conversely, if $g$ is central then $c_g = \mathrm{id}$ and $\operatorname{Ad}(g) = \mathrm{id}$.</p>

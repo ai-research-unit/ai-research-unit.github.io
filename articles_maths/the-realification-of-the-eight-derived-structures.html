@@ -319,7 +319,9 @@ $$</p>
 <p><em>Proof.</em> Alternation gives $\tilde Q_2\wedge\tilde Q_1=-(\tilde Q_1\wedge\tilde Q_2)$. The operator $L_{\tilde Q_1}$ kills the scalar coordinate and acts on the derived algebra by the skew matrix $\vec Q_2\mapsto\vec Q_1\times\vec Q_2$, whose complex trace vanishes; the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, so it vanishes too. Computed on the basis. <strong>The trace row of the table of the four effects is not this row.</strong> That row, $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde Q})=4\,\mathrm{Sc}(\tilde Q)$ and $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q})=8\operatorname{Re}\mathrm{Sc}(\tilde Q)$, is the row of the products of the table whose element $e_t$ is a <strong>left unit</strong> — the general plain, the symmetric plain and the general quaternionic product; on the other nine, this one included, it fails, and on this one both traces vanish.</p>
 <p><strong>Theorem (the operator trace form in the two readings).</strong> For all $\tilde Q_6,\tilde Q_3$,
 $$
-\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=2\operatorname{Re}\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*},
+\boxed{\;
+\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=2\operatorname{Re}\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}
+\;},
 $$
 twice the realified invariant form.</p>
 <p><em>Proof.</em> The composition is $\mathbb{C}$-linear, and the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace; that complex trace is $\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}$ by the definition of the operator trace form. Computed on the basis, on all $64$ pairs. The factor $2$ is the ratio of the two traces, $\operatorname{Tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}$, the factor of the trace row of the table of the four effects.</p>
@@ -332,13 +334,17 @@ so the real adjoint of $L_{\tilde Q_1}$ is $-L_{\tilde Q_1}$.</p>
 <h3 id="the-derivations-and-the-automorphisms-over-math344">The Derivations and the Automorphisms over $\mathbb{R}$</h3>
 <p><strong>Theorem (the derivations grow).</strong> The $\mathbb{R}$-linear derivations of the bracket are
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\operatorname{End}_{\mathbb{R}}\bigl(\mathbb{C}_{\mathbb{B}}\bigr),
+\boxed{\;
+\operatorname{Der}_{\mathbb{R}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\operatorname{End}_{\mathbb{R}}\bigl(\mathbb{C}_{\mathbb{B}}\bigr)
+\;},
 $$
 of real dimension $6+4=10$, against the complex $\operatorname{Der}_{\mathbb{C}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$ of real dimension $6+2=8$. The extra two dimensions are conjugate-linear and act on the centre alone.</p>
 <p><em>Proof.</em> A derivation preserves the centre, because the centre is the annihilator and the Leibniz rule carries an annihilated element to an annihilated one, and it preserves the derived algebra, by the Leibniz rule and the stability of the image; so it is the sum of its two restrictions. The restrictions to the derived algebra are the derivations of the simple $\mathfrak{sl}(2,\mathbb{C})$ read over $\mathbb{R}$, hence the inner ones $\operatorname{ad}_{\vec Q}$, of real dimension six, which is the factor $\mathfrak{sl}(2,\mathbb{C})$. A map vanishing on the derived algebra is a derivation exactly when it preserves the centre, and the centre is abelian of real dimension two, so every $\mathbb{R}$-linear endomorphism of it occurs: that is the factor $\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})$, of real dimension four, whose $\mathbb{C}$-linear half is the complex scalars $\mathbb{C}$ and completes the $\mathbb{C}$-linear part to $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$. Computed on the basis. The identity $\operatorname{Der}_{\mathbb{R}}=\operatorname{Der}_{\mathbb{C}}$ of the associative parent does not carry over, <strong>because a derivation of a bracket is not a derivation of the ring</strong>: a ring derivation kills $i$, from $i^2=-1$ and $D(-1)=0$, while a bracket derivation is free to move $i$ inside the centre, and here that freedom is two real dimensions.</p>
 <p><strong>Proposition (the automorphisms grow at the centre).</strong> An $\mathbb{R}$-automorphism of the bracket preserves the centre and the derived algebra, so
 $$
-\operatorname{Aut}_{\mathbb{R}}(\mathfrak{g})\cong GL_2(\mathbb{R})\times\operatorname{Aut}_{\mathbb{R}}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr),
+\boxed{\;
+\operatorname{Aut}_{\mathbb{R}}(\mathfrak{g})\cong GL_2(\mathbb{R})\times\operatorname{Aut}_{\mathbb{R}}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)
+\;},
 $$
 which contains $GL_2(\mathbb{R})\times PGL(2,\mathbb{C})$, while the $\mathbb{C}$-linear group is $\operatorname{Aut}_{\mathbb{C}}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$ (<em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em>). The centre contributes the whole of $GL_2(\mathbb{R})$ in place of the complex scalars, and the derived algebra contributes, beside its $\mathbb{C}$-linear automorphisms, the conjugate-linear conjugation $\vec Q_1\mapsto\bar{\vec Q_1}$.</p>
 <p><em>Proof.</em> The centre and the derived algebra are characteristic, so an automorphism is a pair of an automorphism of each, and any such pair is an automorphism, because the bracket vanishes between the centre and the derived algebra and is internal to the derived algebra. The centre is abelian of real dimension two, so its automorphism group is the whole of $GL_2(\mathbb{R})$, of real dimension four, whose $\mathbb{C}$-linear part is $\mathbb{C}^{\times}$. On the derived algebra the complex automorphisms are $PGL(2,\mathbb{C})$, of real dimension six, and the conjugation of the coordinates is a further $\mathbb{R}$-automorphism, conjugate-linear and not in the complex group.</p>

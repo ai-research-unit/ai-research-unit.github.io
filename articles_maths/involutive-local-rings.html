@@ -75,7 +75,7 @@
 <h2 id="the-maximal-ideal-and-the-residue-involution">The Maximal Ideal and the Residue Involution</h2>
 <p><strong>Theorem.</strong> An involution $\sigma$ of a local ring $(A, \mathfrak m)$ carries the maximal ideal to itself, $\sigma(\mathfrak m) = \mathfrak m$, and every power of the maximal ideal likewise, $\sigma(\mathfrak m^n) = \mathfrak m^n$. Consequently $\sigma$ descends to the residue field: the map</p>
 <p>$$
-\sigma_k(a + \mathfrak m) = \sigma(a) + \mathfrak m
+\boxed{\;\sigma_k(a + \mathfrak m) = \sigma(a) + \mathfrak m\;}
 $$</p>
 <p>is a well-defined involution of $k$.</p>
 <p><strong>Proof.</strong> $\sigma$ is a ring isomorphism $A \to A^{\mathrm{opp}}$, and an isomorphism carries ideals to ideals and maximal ideals to maximal ideals; the opposite ring has the same ideals, so $\sigma(\mathfrak m)$ is a maximal ideal of $A$, and $\mathfrak m$ is the unique one, so $\sigma(\mathfrak m) = \mathfrak m$. For the powers, $\sigma(\mathfrak m^n) = \sigma(\mathfrak m)^n = \mathfrak m^n$. The descent is well defined because $\sigma(\mathfrak m)\subseteq \mathfrak m$: if $a - b \in \mathfrak m$ then $\sigma(a) - \sigma(b) = \sigma(a-b) \in \mathfrak m$. Additivity and the unit are inherited from $\sigma$, the anti-multiplicativity descends because the quotient of an anti-automorphism by a stable ideal is an anti-automorphism, $k$ is a field and therefore commutative, and $\sigma_k^2 = \mathrm{id}$ because $\sigma^2 = \mathrm{id}$.</p>
@@ -85,11 +85,11 @@ $$</p>
 <h2 id="the-fixed-subring">The Fixed Subring</h2>
 <p><strong>Proposition.</strong> The fixed subring $A^\sigma$ is a local ring with maximal ideal</p>
 <p>$$
-\mathfrak m^\sigma = A^\sigma \cap \mathfrak m = \{a \in \mathfrak m : \sigma(a) = a\},
+\boxed{\;\mathfrak m^\sigma = A^\sigma \cap \mathfrak m = \{a \in \mathfrak m : \sigma(a) = a\}\;},
 $$</p>
 <p>and its residue field is the fixed field of the residue involution,</p>
 <p>$$
-A^\sigma/\mathfrak m^\sigma \cong k^{\sigma_k},
+\boxed{\;A^\sigma/\mathfrak m^\sigma \cong k^{\sigma_k}\;},
 $$</p>
 <p>when $2$ is invertible in $A$. Without the hypothesis on $2$ the natural map $A^\sigma/\mathfrak m^\sigma \to k^{\sigma_k}$ is still injective, and it is surjective exactly when every element of $k^{\sigma_k}$ has a $\sigma$-fixed lift.</p>
 <p><strong>Proof.</strong> An element $a \in A^\sigma$ is a unit of $A$ exactly when it is a unit of $A^\sigma$, because $\sigma(a^{-1}) = \sigma(a)^{-1} = a^{-1}$ for a fixed unit $a$; hence the non-units of $A^\sigma$ are $A^\sigma\cap\mathfrak m$, which is therefore the unique maximal ideal and $A^\sigma$ is local. The map $A^\sigma \to k^\sigma$ induced by $A\to k$ has kernel $\mathfrak m^\sigma$, so it is injective onto its image; for surjectivity, given $x \in k^{\sigma_k}$ with a lift $a \in A$, the element $\tfrac12(a+\sigma(a))$ is fixed and has the same image as $a$ because $\sigma(a)\equiv \sigma_k(x) = x\equiv a \pmod{\mathfrak m}$; the computation fails without $\tfrac12$.</p>

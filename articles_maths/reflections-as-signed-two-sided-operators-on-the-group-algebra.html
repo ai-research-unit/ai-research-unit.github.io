@@ -81,7 +81,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>reflector</strong> of $\mathcal{A}$ with respect to $\alpha$ is a unit $u$ with $u*\alpha(u) \in Z(\mathcal{A})$, and the <strong>reflection</strong> determined by a reflector $u$ is $\rho_u = c_u\alpha$. The set of reflections is written $\mathrm{Ref}(\mathcal{A},\alpha)$.</p>
 <p><strong>Theorem (the reflection is an involutive automorphism).</strong> For every unit $u$ the signed conjugation $\rho_u = c_u\alpha$ is a bounded algebra automorphism of $\mathcal{A}$ with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and</p>
 <p>$$
-\rho_u^2 = c_{u*\alpha(u)} ,
+\boxed{\;\rho_u^2 = c_{u*\alpha(u)}\;} ,
 $$</p>
 <p>so $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector; conversely every signed conjugation that is an involution has a reflector parameter.</p>
 <p><strong>Proof.</strong> The signed conjugation is the composite of the automorphisms $c_u$ and $\alpha$, hence an automorphism, and it is bounded because $c_u$, $\alpha$ and $c_{u^{-1}}$ are. The square is $\rho_u^2(f) = u*\alpha(u*\alpha(f)*u^{-1})*u^{-1} = (u*\alpha(u))*f*(u*\alpha(u))^{-1} = c_{u*\alpha(u)}(f)$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. An inner automorphism is the identity exactly when its element is central, which gives the involution criterion; reading the computation backwards gives the converse.</p>
@@ -96,7 +96,7 @@ $$</p>
 <h2 id="the-eigenvalue-decomposition">The Eigenvalue Decomposition</h2>
 <p><strong>Proposition (fixed subalgebra and negated part).</strong> Let $u$ be a reflector and $\rho = \rho_u$. When $2$ is invertible,</p>
 <p>$$
-\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho, \qquad \mathcal{A}^+_\rho = \{f : \rho(f) = f\}, \qquad \mathcal{A}^-_\rho = \{f : \rho(f) = -f\},
+\boxed{\;\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho, \qquad \mathcal{A}^+_\rho = \{f : \rho(f) = f\}, \qquad \mathcal{A}^-_\rho = \{f : \rho(f) = -f\}\;},
 $$</p>
 <p>the fixed set $\mathcal{A}^+_\rho$ is a closed subalgebra, the negated part $\mathcal{A}^-_\rho$ is a closed subspace, and the multiplication table of the grading holds:</p>
 <p>$$
@@ -109,7 +109,7 @@ $$</p>
 <h2 id="the-correspondence">The Correspondence</h2>
 <p><strong>Theorem (the kernel of the parametrisation).</strong> The assignment $u\mapsto\rho_u$ is a surjection of the reflectors onto the reflections, and</p>
 <p>$$
-\rho_u = \rho_v \quad\Longleftrightarrow\quad v^{-1}*u \in Z(\mathcal{A})^\times ,
+\boxed{\;\rho_u = \rho_v \quad\Longleftrightarrow\quad v^{-1}*u \in Z(\mathcal{A})^\times\;} ,
 $$</p>
 <p>so the reflections are parametrised by the reflectors modulo the central units, $\mathrm{Ref}(\mathcal{A},\alpha)\cong R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$.</p>
 <p><strong>Proof.</strong> If $\rho_u = \rho_v$ then $u*\alpha(f)*u^{-1} = v*\alpha(f)*v^{-1}$ for all $f$, so $(v^{-1}*u)*\alpha(f) = \alpha(f)*(v^{-1}*u)$ for all $f$; since $\alpha$ is onto, $v^{-1}*u$ commutes with every element and lies in $Z(\mathcal{A})^\times$. Conversely a central unit is absorbed by the inner conjugation, and every reflector is in the image by definition.</p>

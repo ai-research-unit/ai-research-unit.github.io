@@ -89,13 +89,13 @@ $$</p>
 <p><strong>Definition.</strong> Let $M$ be a graded topological module with conjugation $\theta$. The <strong>derived action</strong> of $A$ on $M$ is $a\star m=a\cdot\theta(m)$.</p>
 <p><strong>Theorem (continuity and the bound).</strong> The derived action is the composite of the action with the conjugation, $(a,m)\mapsto(a,\theta(m))\mapsto a\cdot\theta(m)$, so it is continuous whenever the action and $\theta$ are; if the action is separately continuous, so is the derived action. In the normed case, if the action satisfies $\lVert a\cdot m\rVert\le C\lVert a\rVert\lVert m\rVert$ and the conjugation satisfies $\lVert\theta(m)\rVert\le D\lVert m\rVert$, then</p>
 <p>$$
-\lVert a\star m\rVert\le CD\,\lVert a\rVert\lVert m\rVert,
+\boxed{\;\lVert a\star m\rVert\le CD\,\lVert a\rVert\lVert m\rVert\;},
 $$</p>
 <p>and with a normed module action ($C=1$) and an isometric conjugation ($D=1$) the constant is one.</p>
 <p><strong>Proof.</strong> The factorisation exhibits the derived action as a composite of continuous maps, and the estimate is the product of the two bounds.</p>
 <p><strong>Proposition (the parities and the degree).</strong> The derived action is linear in the algebra element and $\varsigma$-semilinear in the module element, and it is homogeneous:</p>
 <p>$$
-(\lambda a)\star m=\lambda(a\star m),\qquad a\star(\lambda m)=\varsigma(\lambda)(a\star m),\qquad A^{i}\star M^{j}\subseteq M^{i+j}.
+\boxed{\;(\lambda a)\star m=\lambda(a\star m),\qquad a\star(\lambda m)=\varsigma(\lambda)(a\star m),\qquad A^{i}\star M^{j}\subseteq M^{i+j}\;}.
 $$</p>
 <p><strong>Proof.</strong> The two scalar rules are the linearity of the action in the first slot and the $\varsigma$-semilinearity of $\theta$; the degree is $\lvert a\star m\rvert=\lvert a\rvert+\lvert\theta(m)\rvert=\lvert a\rvert+\lvert m\rvert$, the conjugation being even.</p>
 <p><strong>Remark.</strong> The derived action is not an action and is not $\mathbb{K}$-bilinear; it is the module-level form of the derived product $x\star y=xy^{*}$ of the standard example, and $\theta=\mathrm{id}$ recovers the action map. The continuity is the only respect in which the topological statement differs from the algebraic one, and it is free, being a composite.</p>
@@ -106,7 +106,7 @@ $$</p>
 <h2 id="the-graded-math92-compatibility">The Graded $\varsigma$-Compatibility</h2>
 <p><strong>Definition.</strong> A graded sesquilinear module over $A$ is <strong>compatible</strong> when</p>
 <p>$$
-\theta(a\cdot m)=a^{*}\cdot\theta(m)\qquad\text{for all }a\in A^{0},\ m\in M .
+\boxed{\;\theta(a\cdot m)=a^{*}\cdot\theta(m)\qquad\text{for all }a\in A^{0},\ m\in M\;} .
 $$</p>
 <p><strong>Theorem (the even part intertwines, the odd part obstructs).</strong> The condition of the definition is a closed condition on the pair $(A,M,\theta)$, and the even part $A^{0}$ acts on a compatible module through $\theta$; the identity cannot be extended to the odd part, because $\theta(a\cdot m)=a^{*}\cdot\theta(m)$ fails for every conjugation as soon as some $a\in A^{1}$ acts nontrivially.</p>
 <p><strong>Proof.</strong> The two sides of the even identity are continuous, so the set of pairs for which it holds is closed, and its restriction to $A^{0}$ is the intertwining; this is the closedness. For the odd part, choose $a\in A^{1}$ with $a\cdot m\neq0$ for some $m$; the witness of <em>The Graded Sesquilinear Action</em>, §<em>The Graded $\varsigma$-Compatibility</em> is reproduced there for the matrix superalgebra, and it is a finite algebraic computation that uses neither a norm nor a limit. Its content is that the involution reverses the order of a product of two odd elements and does not reverse it on the even part, so the odd part cannot be intertwined.</p>

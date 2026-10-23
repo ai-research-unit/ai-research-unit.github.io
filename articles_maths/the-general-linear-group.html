@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-determinant-homomorphism">The Determinant Homomorphism</h2>
 <p><strong>Theorem.</strong> The determinant defines a surjective group homomorphism</p>
 <p>$$
-\det:\operatorname{GL}(V) \longrightarrow F^{\times},
+\boxed{\;\det:\operatorname{GL}(V) \longrightarrow F^{\times}\;},
 $$</p>
 <p>whose kernel is the subgroup of automorphisms of determinant $1$.</p>
 <p><em>Proof.</em> Multiplicativity $\det(AB)=\det A \det B$ gives $\det(ST)=\det S \det T$, and invertibility forces $\det T \neq 0$, so the image lies in $F^{\times}$. Surjectivity: every $\lambda \in F^{\times}$ occurs, for instance as the determinant of the diagonal map sending a basis vector $v_1$ to $\lambda v_1$ and each other $v_i$ to itself. The kernel description is the definition of the kernel.</p>
@@ -136,7 +136,7 @@ P_W=\{T \in \operatorname{GL}(V) : T(W) \subseteq W\}=\{T : T(W)=W\},
 $$</p>
 <p>and in a basis obtained by extending a basis of $W$ to a basis of $V$, the matrices of $P_W$ are exactly the invertible block upper triangular matrices</p>
 <p>$$
-\begin{pmatrix} A & B \\ 0 & D \end{pmatrix}, \qquad A \in \operatorname{GL}_k(F),\ D \in \operatorname{GL}_{n-k}(F).
+\boxed{\;\begin{pmatrix} A & B \\ 0 & D \end{pmatrix}, \qquad A \in \operatorname{GL}_k(F),\ D \in \operatorname{GL}_{n-k}(F)\;}.
 $$</p>
 <p><em>Proof.</em> Transitivity: a linear isomorphism carries any $k$-subspace to any other, because bases of the two subspaces extend to bases of $V$, and a bijection of bases extends to an automorphism. For the stabiliser, an operator with $T(W) \subseteq W$ and $\dim W=\dim T(W)$ in finite dimension has $T(W)=W$, so the containment is an equality. In a basis adapted to $W$ the first $k$ columns of the matrix have their last $n-k$ entries zero, which is the block form, and invertibility is exactly $A,D$ invertible.</p>
 <p>The subgroups $P_W$ are the <strong>maximal parabolics</strong> of $\operatorname{GL}(V)$; they are conjugate as $W$ varies over $\operatorname{Gr}_k(V)$, and their conjugacy classes are the conjugacy classes of parabolic subgroups. A maximal flag</p>
@@ -148,7 +148,7 @@ $$</p>
 <p>The $B$-orbits on the flag variety are indexed by the symmetric group and give the classical double-coset decomposition.</p>
 <p><strong>Theorem (Bruhat).</strong> Let $B$ be the upper triangular subgroup of $\operatorname{GL}_n(F)$ and let $W=S_n$, represented by the permutation matrices. Then</p>
 <p>$$
-\operatorname{GL}_n(F)=\bigsqcup_{w \in W} B w B,
+\boxed{\;\operatorname{GL}_n(F)=\bigsqcup_{w \in W} B w B\;},
 $$</p>
 <p>a disjoint union of double cosets indexed by the symmetric group. The double coset of the longest element $w_0$ is the big cell, of maximal dimension, and the cells $BvB$ with $v \le w$ in the Bruhat order are exactly those obtained from $BwB$ by imposing further vanishing of minors.</p>
 <p>This is quoted as standard; it is one of the two structural decompositions of the general linear group, the other being Gaussian elimination. A matrix $M$ lies in $BwB$ exactly when its rank matrix is that of $w$:</p>

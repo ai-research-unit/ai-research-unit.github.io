@@ -88,7 +88,7 @@ $$</p>
 <p><strong>Proof.</strong> $\|f(\tilde Q_4)-f(\tilde Q_3)\|_E=\|\tilde Q_1(\tilde Q_4-\tilde Q_3)\|_E\le\|L_{\tilde Q_1}\|\|\tilde Q_4-\tilde Q_3\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde Q_1}\|\le\sqrt2\|\tilde Q_1\|_E$ is the norm comparison of <em>The Matrix Element Representation and the Biquaternion Dynamics</em>.</p>
 <p><strong>Theorem (the similarity multipliers).</strong> Let $\tilde Q_1$ be a real quaternion of positive norm, $\tilde Q_1\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde Q_1\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde Q_1$ is a similarity of the eight-dimensional space with ratio $\rho$,</p>
 <p>$$
-\|\tilde Q_1\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q ,
+\boxed{\;\|\tilde Q_1\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q\;},
 $$</p>
 <p>so $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a similarity with ratio $\rho$ and is a contraction exactly when $\rho<1$.</p>
 <p><strong>Proof.</strong> Write $\tilde Q_1=\rho\tilde u$ with $\tilde u$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde Q_3+i\tilde Q_4$ with $\tilde Q_3,\tilde Q_4\in\mathbb{H}$, one has $\tilde Q_1\tilde Q=\tilde Q_1\tilde Q_3+i\tilde Q_1\tilde Q_4$ and $\|\tilde Q_1\tilde Q\|_E^2=\rho^2(\|\tilde Q_3\|^2+\|\tilde Q_4\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.</p>
@@ -97,13 +97,13 @@ $$</p>
 <h2 id="the-attractor-and-the-similarity-dimension">The Attractor and the Similarity Dimension</h2>
 <p><strong>Theorem (the attractor).</strong> Let $f_1,\dots,f_m$ be contractions of $\mathbb{B}$ with constants $r_i<1$. There is a unique non-empty compact set $K\subset\mathbb{B}$ with</p>
 <p>$$
-K=\bigcup_{i=1}^m f_i(K),
+\boxed{\;K=\bigcup_{i=1}^m f_i(K)\;},
 $$</p>
 <p>the <strong>attractor</strong> of the system, and for every non-empty compact $E$ the iterates of $E$ under the Hutchinson operator converge to $K$ in the Hausdorff metric.</p>
 <p><strong>Proof.</strong> The Hutchinson operator $E\mapsto\bigcup_if_i(E)$ is a contraction of the complete metric space of non-empty compact sets with the Hausdorff metric, with constant $\max_ir_i<1$, by the classical theorem (<em>Fractal Geometry</em>); the metric space is complete and the fixed point is the attractor.</p>
 <p><strong>Theorem (the similarity dimension).</strong> If in addition every $f_i$ is a similarity of ratio $r_i$ and the open set condition holds, then the Hausdorff dimension of the attractor is the unique $s$ with</p>
 <p>$$
-\sum_{i=1}^m r_i^s=1 ,
+\boxed{\;\sum_{i=1}^m r_i^s=1\;},
 $$</p>
 <p>and the Hausdorff measure in dimension $s$ of the attractor is positive and finite.</p>
 <p><strong>Proof.</strong> The classical theorem of Moran and Hutchinson (<em>Fractal Geometry</em>); by the similarity multipliers theorem the ratios are the numbers $\rho_i$ for real quaternionic multipliers and $|\lambda_i|$ for central ones.</p>

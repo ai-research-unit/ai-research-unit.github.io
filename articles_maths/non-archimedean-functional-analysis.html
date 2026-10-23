@@ -91,7 +91,7 @@ $$
 and let $\ell^\infty(I)$ be the space of all bounded families $(a_i)_{i\in I}$, both with the supremum norm $\lVert a \rVert_\infty = \sup_i \lvert a_i \rvert$. For $I = \mathbb{N}$ these are written $c_0$ and $\ell^\infty$.</p>
 <p><strong>Theorem.</strong> $c_0(I)$ and $\ell^\infty(I)$ are Banach spaces over $K$, with $c_0(I) \subseteq \ell^\infty(I)$ a closed subspace, and the dual of $c_0(I)$ is isometrically $\ell^\infty(I)$:
 $$
-c_0(I)' \cong \ell^\infty(I), \qquad \lVert f \rVert = \sup_{\lVert a \rVert_\infty \leq 1} \lvert f(a) \rvert = \sup_i \lvert f(e_i) \rvert,
+\boxed{\;c_0(I)' \cong \ell^\infty(I), \qquad \lVert f \rVert = \sup_{\lVert a \rVert_\infty \leq 1} \lvert f(a) \rvert = \sup_i \lvert f(e_i) \rvert\;},
 $$
 where $e_i$ is the family that is $1$ at $i$ and $0$ elsewhere.</p>
 <p><strong>Proof.</strong> Completeness of $\ell^\infty$ is the completeness of a product of complete spaces restricted by a closed condition, and $c_0$ is closed in $\ell^\infty$ because a uniform limit of null families is null. For the duality, let $f \in c_0(I)'$ and put $b_i = f(e_i)$; every $a \in c_0(I)$ is the norm-convergent sum $\sum_i a_i e_i$, so $f(a) = \sum_i a_i b_i$ by continuity, and $\lvert f(a) \rvert \leq \lVert a \rVert_\infty \sup_i \lvert b_i \rvert$. The family $(b_i)$ is bounded because $\lvert b_i \rvert \leq \lVert f \rVert$; conversely a bounded family $(b_i)$ defines a functional of norm $\sup_i \lvert b_i \rvert$, the bound being attained on the unit vectors.</p>
@@ -106,7 +106,7 @@ $$
 for every finite $F \subseteq I$ and all $a_i \in K$; it is <strong>orthonormal</strong> if in addition $\lVert e_i \rVert = 1$ for all $i$. A family is an <strong>orthogonal basis</strong> of $E$ if it is orthogonal and every vector of $E$ is the limit of the net of its finite partial sums $\sum_{i\in F} a_i e_i$.</p>
 <p><strong>Proposition.</strong> A family $(e_i)_{i \in I}$ of nonzero vectors is orthogonal if and only if each of its finite subfamilies is. If $(e_i)$ is orthogonal and $x$ lies in the closed span of the family, then $x = \sum_i a_ie_i$ for a unique family $(a_i)$ with $a_i\|e_i\|\to0$, and
 $$
-\lVert x \rVert = \sup_{i \in I} \lvert a_i \rvert \lVert e_i \rVert .
+\boxed{\;\lVert x \rVert = \sup_{i \in I} \lvert a_i \rvert \lVert e_i \rVert\;} .
 $$
 In particular an orthogonal family is topologically free.</p>
 <p><strong>Proof.</strong> The first statement is the definition restricted to finite index sets. For the expansion, the norm is continuous and on finite sums it is given by the orthogonality condition, so $\lVert x\rVert = \lim_F \max_{i\in F}\lvert a_i\rvert\lVert e_i\rVert = \sup_i \lvert a_i\rvert\lVert e_i\rVert$ along the net of finite subsets. For uniqueness, if $\sum_i a_ie_i = \sum_i b_ie_i$ then for every finite $F$ one has $\max_{i\in F}\lvert a_i - b_i\rvert\lVert e_i\rVert = \lVert \sum_{i\in F}(a_i-b_i)e_i\rVert$, and the right-hand side tends to $0$ as $F$ grows, so $a_j = b_j$ for each fixed $j$.</p>

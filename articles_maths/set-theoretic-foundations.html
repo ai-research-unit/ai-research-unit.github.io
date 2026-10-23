@@ -133,7 +133,7 @@
 <p>The induction has three cases in practice: the base case $\alpha = 0$, the successor case $\alpha = \beta + 1$ assuming the statement at $\beta$, and the limit case $\alpha$ a limit ordinal assuming the statement at all $\beta < \alpha$. This trichotomy is the ordinal analogue of the weak/strong induction of <em>Logic and Proof</em>.</p>
 <p><strong>Theorem (transfinite recursion).</strong> Let $G$ be a class function defined on all sets. There is a unique class function $F$ on $\mathrm{On}$ such that</p>
 <p>$$
-F(\alpha) = G(F \restriction \alpha)
+\boxed{\;F(\alpha) = G(F \restriction \alpha)\;}
 $$</p>
 <p>for every ordinal $\alpha$, where $F \restriction \alpha$ is the restriction of $F$ to the ordinals below $\alpha$.</p>
 <p><strong>Proof sketch.</strong> Define $F(\alpha) = x$ to mean that there is a function $f$ with domain $\alpha$ such that $f(\beta) = G(f \restriction \beta)$ for all $\beta < \alpha$ and $x = G(f)$ (or $x = G(f\restriction\alpha)$ with $f$ of domain $\alpha$). The existence and uniqueness of $f$ for each $\alpha$ are proved by transfinite induction: $f$ for the successor $\alpha+1$ is obtained by adjoining to $f$ for $\alpha$ the value $G(f)$, and $f$ for a limit $\lambda$ is the union of the $f$ for $\beta<\lambda$. Uniqueness of $F$ follows because two candidate functions agree at $0$ and, if they agree below $\alpha$, at $\alpha$. The argument is the ordinal form of the recursion theorem of <em>Logic and Proof</em>, and it uses replacement to collect the values.</p>
@@ -174,7 +174,7 @@ $$</p>
 <h3 id="the-rank-function">The Rank Function</h3>
 <p><strong>Definition.</strong> The <strong>cumulative hierarchy</strong> is defined by transfinite recursion on the ordinals:</p>
 <p>$$
-V_0 = \emptyset, \qquad V_{\alpha+1} = \mathcal{P}(V_\alpha), \qquad V_\lambda = \bigcup_{\beta < \lambda} V_\beta \ \text{for limit } \lambda,
+\boxed{\;V_0 = \emptyset, \qquad V_{\alpha+1} = \mathcal{P}(V_\alpha), \qquad V_\lambda = \bigcup_{\beta < \lambda} V_\beta \ \text{for limit } \lambda\;},
 $$</p>
 <p>and $V = \bigcup_{\alpha \in \mathrm{On}} V_\alpha$.</p>
 <p><strong>Theorem.</strong> The following hold.</p>
@@ -190,7 +190,7 @@ $$</p>
 <h3 id="the-reflection-principle">The Reflection Principle</h3>
 <p><strong>Theorem (reflection, schema).</strong> For every formula $\varphi(x_1,\ldots,x_n)$ and every ordinal $\alpha$ there is an ordinal $\beta > \alpha$ such that, for all $a_1,\ldots,a_n \in V_\beta$,</p>
 <p>$$
-\varphi(a_1,\ldots,a_n) \iff \varphi^{V_\beta}(a_1,\ldots,a_n),
+\boxed{\;\varphi(a_1,\ldots,a_n) \iff \varphi^{V_\beta}(a_1,\ldots,a_n)\;},
 $$</p>
 <p>where $\varphi^{V_\beta}$ is $\varphi$ with every quantifier relativised to $V_\beta$.</p>
 <p><strong>Proof sketch.</strong> The proof is a syntactic induction on $\varphi$, using the absoluteness of $\Delta_0$ formulas and the existence of a closure ordinal for each existential quantifier: for a formula $\exists y\,\psi(y,x_1,\ldots,x_n)$, one collects, for each tuple in a given $V_\beta$, a witness $y$ of smallest rank and takes the supremum of the ranks, iterating $\omega$ times to close under all subformulas. The argument is a theorem of ZFC and belongs to the metatheory of set theory; the arithmetisation of syntax and the metatheoretic techniques used to state it are developed and revisited.</p>

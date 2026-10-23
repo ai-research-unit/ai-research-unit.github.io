@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-induced-map-on-the-orbit-space">The Induced Map on the Orbit Space</h3>
 <p><strong>Theorem.</strong> Let $f : X \to Y$ be a continuous equivariant map. Then there is exactly one map</p>
 <p>$$
-\bar f : X/G \longrightarrow Y/G
+\boxed{\;\bar f : X/G \longrightarrow Y/G\;}
 $$</p>
 <p>with $\bar f \circ \pi_{X} = \pi_{Y} \circ f$, and it is continuous. The assignment $f \mapsto \bar f$ preserves identities and composition, so $X \mapsto X/G$ is a functor from the category of $G$-spaces and equivariant maps to the category of topological spaces.</p>
 <p><strong>Proof.</strong> The composite $\pi_{Y} \circ f$ is continuous and constant on the orbits of $X$, since $f(Gx) \subseteq Gf(x)$ makes its value on the orbit of $x$ equal to the orbit of $f(x)$. By the universal property of <em>The Orbit Map</em> it factors through the orbit map of $X$ by a unique continuous $\bar f$. Functoriality is uniqueness: for $g : Y \to Z$ the composite $\overline{g \circ f}$ and $\bar g \circ \bar f$ have the same composite with $\pi_{X}$, so they are equal.</p>
@@ -117,7 +117,7 @@ $$</p>
 <h3 id="the-equivariant-universal-property">The Equivariant Universal Property</h3>
 <p><strong>Theorem.</strong> Let $Y$ carry the trivial action, $gy = y$ for all $g$. Then every continuous map $f : X \to Y$ is equivariant, and the correspondence $f \leftrightarrow \bar f$ is a bijection</p>
 <p>$$
-\{\, \text{continuous } f : X \to Y \,\} \ \longleftrightarrow \ \{\, \text{continuous } \bar f : X/G \to Y \,\} .
+\boxed{\;\{\, \text{continuous } f : X \to Y \,\} \ \longleftrightarrow \ \{\, \text{continuous } \bar f : X/G \to Y \,\}\;} .
 $$</p>
 <p><strong>Proof.</strong> With the trivial action on $Y$, equivariance is the condition $f(gx) = f(x)$, which is invariance, and the stated bijection is the universal property of the orbit map proved in <em>The Orbit Map</em>.</p>
 <p>The theorem identifies the orbit space as the <strong>coequaliser</strong> of the action: mapping out of $X/G$ is the same as mapping out of $X$ while killing the action. It also shows that the fixed-point set and the orbit space are dual in the simplest possible way: maps out of the quotient are the invariant maps, and maps into the quotient are the orbits.</p>
@@ -141,7 +141,7 @@ $$</p>
 <h3 id="fixed-points-and-the-orbit-map">Fixed Points and the Orbit Map</h3>
 <p><strong>Theorem.</strong> Let the action be by homeomorphisms. Then the orbit map restricts to a homeomorphism</p>
 <p>$$
-\pi|_{X^{G}} : X^{G} \longrightarrow \pi(X^{G}) ,
+\boxed{\;\pi|_{X^{G}} : X^{G} \longrightarrow \pi(X^{G})\;} ,
 $$</p>
 <p>and its image $\pi(X^{G})$ is the set of singleton orbits. Every orbit of a fixed point is a singleton, and the preimage of a singleton orbit is a singleton.</p>
 <p><strong>Proof.</strong> If $x$ is fixed then $\pi^{-1}(\pi(x)) = Gx = \{x\}$, so the restriction is injective; it is continuous because $\pi$ is, and it is open because $\pi$ is open, so it is a homeomorphism onto its image. The image consists exactly of the singleton orbits, and the last statement is the definition of a singleton fibre together with the orbit description.</p>

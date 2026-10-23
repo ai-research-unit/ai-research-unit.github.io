@@ -89,7 +89,7 @@ $$</li>
 <p><strong>Definition.</strong> A <strong>DG functor</strong> $F : \mathcal{A}\to\mathcal{B}$ is a map on objects together with morphisms of complexes $F_{x,y} : \operatorname{Hom}_{\mathcal{A}}(x,y)\to\operatorname{Hom}_{\mathcal{B}}(Fx,Fy)$ preserving the composition and the units. A DG functor is <strong>quasi-fully faithful</strong> if each $F_{x,y}$ is a quasi-isomorphism, and a <strong>quasi-equivalence</strong> if in addition every object of $\mathcal{B}$ is isomorphic in $H^0(\mathcal{B})$ to an object in the image.</p>
 <p><strong>Definition.</strong> The <strong>homotopy category</strong> $H^0(\mathcal{A})$ has the same objects as $\mathcal{A}$, and morphisms</p>
 <p>$$
-\operatorname{Hom}_{H^0(\mathcal{A})}(x,y) = H^0\bigl(\operatorname{Hom}_{\mathcal{A}}(x,y)\bigr) = \ker\bigl(d : \operatorname{Hom}^0\to\operatorname{Hom}^1\bigr)\big/\operatorname{im}\bigl(d : \operatorname{Hom}^{-1}\to\operatorname{Hom}^0\bigr) .
+\boxed{\;\operatorname{Hom}_{H^0(\mathcal{A})}(x,y) = H^0\bigl(\operatorname{Hom}_{\mathcal{A}}(x,y)\bigr) = \ker\bigl(d : \operatorname{Hom}^0\to\operatorname{Hom}^1\bigr)\big/\operatorname{im}\bigl(d : \operatorname{Hom}^{-1}\to\operatorname{Hom}^0\bigr)\;} .
 $$</p>
 <p>Thus a morphism in $H^0(\mathcal{A})$ is a homotopy class of degree-$0$ cycles, and the composition is induced by that of $\mathcal{A}$; the definition is a verbatim generalisation of the homotopy category of DG modules of <em>Differential Graded Algebras</em>.</p>
 <p><strong>Example (a DGA with one object).</strong> Let $A$ be a DGA. The DG category with one object $x$ and $\operatorname{Hom}(x,x) = A$ is a DG category; conversely every DG category with one object is a DGA. This is the precise sense in which a DG category is an "algebra with several objects", and it is why every notion of the previous article has a many-object generalisation and every theorem about DG categories specialises to a theorem about DGAs.</p>
@@ -121,7 +121,7 @@ $$</p>
 <li>A DG functor $F : \mathcal{A}\to\mathcal{B}$ induces a triangulated functor $D(\mathcal{A})\to D(\mathcal{B})$; $F$ is a quasi-equivalence if and only if $F$ is fully faithful on $H^0$ and essentially surjective, and then $D(\mathcal{A})\simeq D(\mathcal{B})$.</li>
 <li>Every quasi-equivalence of DG categories induces an equivalence of derived categories, and the <strong>derived Morita theory</strong> states the converse: two small DG categories have equivalent derived categories if and only if their DG categories of compact modules are quasi-equivalent,
 $$
-   D(\mathcal{A})\simeq D(\mathcal{B}) \iff \mathrm{perf}(\mathcal{A})\simeq_{\mathrm{qe}}\mathrm{perf}(\mathcal{B}) ,
+   \boxed{\;D(\mathcal{A})\simeq D(\mathcal{B}) \iff \mathrm{perf}(\mathcal{A})\simeq_{\mathrm{qe}}\mathrm{perf}(\mathcal{B})\;} ,
 $$
    where $\simeq_{\mathrm{qe}}$ denotes quasi-equivalence. In that case $\mathcal{A}$ and $\mathcal{B}$ are <strong>derived Morita equivalent</strong>.</li>
 </ol>

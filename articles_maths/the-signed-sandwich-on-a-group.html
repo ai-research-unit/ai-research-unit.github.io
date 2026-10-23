@@ -90,7 +90,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition (factorisation and composition).</strong> $\Sigma_{a,b}=L_a\circ R_b=R_b\circ L_a$, and</p>
 <p>$$
-\Sigma_{a,b}\circ\Sigma_{c,d} = \Sigma_{ac,\,db} .
+\boxed{\;\Sigma_{a,b}\circ\Sigma_{c,d} = \Sigma_{ac,\,db}\;} .
 $$</p>
 <p><strong>Proof.</strong> The factorisation is the definition of the translations; the composition is</p>
 <p>$$
@@ -106,9 +106,9 @@ $$</p>
 <p><strong>Proof.</strong> $(\Sigma_{a,b}\circ\alpha)(x)=\Sigma_{a,b}(\alpha(x))=a\,\alpha(x)\,b$, which is the definition; the general identity is $L_a(\alpha(R_b(x)))=a\alpha(xb)=a\alpha(x)\alpha(b)=\Sigma^{\alpha}_{a,\alpha(b)}(x)$. The inverse is the signed sandwich by $(a^{-1},b^{-1})$ because $\Sigma^{\alpha}_{a^{-1},b^{-1}}(\Sigma^{\alpha}_{a,b}(x))=a^{-1}\alpha(a\alpha(x)b)b^{-1}=a^{-1}a\,x\,bb^{-1}=x$, using $\alpha^2=\mathrm{id}$.</p>
 <p><strong>Proposition (the composition laws).</strong> For all $a,b,c,d\in G$,</p>
 <p>$$
-\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma_{a\alpha(c),\,\alpha(d)b}, \qquad
+\boxed{\;\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma_{a\alpha(c),\,\alpha(d)b}, \qquad
 \Sigma_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{ac,\,db}, \qquad
-\Sigma^{\alpha}_{a,b}\circ\Sigma_{c,d} = \Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} .
+\Sigma^{\alpha}_{a,b}\circ\Sigma_{c,d} = \Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b}\;} .
 $$</p>
 <p><strong>Proof.</strong> The first is</p>
 <p>$$
@@ -135,7 +135,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition (its square).</strong> The square of the signed conjugation is the inner conjugation by the element $a\alpha(a)$:</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)} = \Sigma_{a\alpha(a),\,(a\alpha(a))^{-1}} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)} = \Sigma_{a\alpha(a),\,(a\alpha(a))^{-1}}\;} .
 $$</p>
 <p>Hence the signed conjugation is an involution of the set $G$ exactly when $a\alpha(a)\in Z(G)$, that is, exactly when the element $a\alpha(a)$ is central.</p>
 <p><strong>Proof.</strong> The composition law with $c=a$, $d=a^{-1}$ and the same for $(a,b)$ gives $\Sigma_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$, and $\alpha(a^{-1})a^{-1}=\alpha(a)^{-1}a^{-1}=(a\alpha(a))^{-1}$, which is the unsigned sandwich $\Sigma_{u,u^{-1}}$ for $u=a\alpha(a)$, that is $c_u$. An inner conjugation is the identity exactly on the central elements.</p>

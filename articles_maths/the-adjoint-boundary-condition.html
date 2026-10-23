@@ -96,12 +96,12 @@ $$</p>
 <h2 id="the-adjoint-condition">The Adjoint Condition</h2>
 <p><strong>Theorem (the adjoint of a boundary-value problem).</strong> Let $L$ be a differential operator with smooth coefficients and let $B$ be a boundary condition with boundary subspace $M$. Then the realisation of $L$ under $B$ has the adjoint realisation of $L^{\dagger}$ under $B^{*}$, where $B^{*}$ is the boundary condition with subspace $M^{\perp}$:</p>
 <p>$$
-(L,B)^{*} = (L^{\dagger},B^{*}) .
+\boxed{\;(L,B)^{*} = (L^{\dagger},B^{*})\;} .
 $$</p>
 <p><em>Proof.</em> The domain of the adjoint consists of the $v$ for which $u\mapsto\langle Lu,v\rangle$ is bounded by the norm on the admissible subspace. By the Green formula, $\langle Lu,v\rangle=\langle u,L^{\dagger}v\rangle+\langle u,v\rangle_\partial$; the first term is controlled by $L^{\dagger}v$ and the second by the boundary data, so the boundedness is the simultaneous requirement $L^{\dagger}v\in L^2$ and $\langle m,\Sigma\gamma v\rangle=0$ for every $m\in M$, that is $\gamma v\in M^{\perp}$; the action of the adjoint is $L^{\dagger}v$.</p>
 <p><strong>Theorem (the self-adjointness criterion).</strong> Let $L$ be formally self-adjoint, $L=L^{\dagger}$. Then the realisation of $L$ under $B$ is self-adjoint if and only if</p>
 <p>$$
-M^{\perp} = M ,
+\boxed{\;M^{\perp} = M\;} ,
 $$</p>
 <p>that is, if and only if $M$ is isotropic for the boundary form and of half the dimension of $\mathcal{B}$; such a subspace is <strong>Lagrangian</strong>, and the condition is <strong>self-adjoint</strong>.</p>
 <p><em>Proof.</em> By the preceding theorem the adjoint problem has the boundary subspace $M^{\perp}$; the realisation is self-adjoint exactly when the adjoint problem coincides with the problem, which for $L=L^{\dagger}$ is the equality of the boundary subspaces $M^{\perp}=M$. In a nondegenerate skew-Hermitian form the equality $M=M^{\perp}$ holds exactly when $M\subseteq M^{\perp}$ and $\dim M=\dim M^{\perp}=\tfrac12\dim\mathcal B$; the isotropy is $M\subseteq M^{\perp}$ and the dimension condition is the maximality.</p>
@@ -116,7 +116,7 @@ $$</p>
 <p><em>Proof.</em> The bracket is $[p(u\bar v'-u'\bar v)]_a^b$ by <em>The Lagrange Identity and the Self-Adjoint System</em>, and $p(u\bar v'-u'\bar v)=u_1\bar v_2-u_2\bar v_1$ with $u_2=pu'$, $v_2=pv'$ and $p$ real; the nondegeneracy is that the determinant pairing of two vectors in $\mathbb C^2$ does not vanish identically.</p>
 <p><strong>Theorem (the self-adjoint conditions).</strong> The Lagrangian subspaces of the four-dimensional boundary space are exactly the self-adjoint boundary conditions of the Sturm–Liouville problem: they comprise the separated conditions</p>
 <p>$$
-\alpha_1u(a)+\alpha_2(pu')(a)=0,\qquad \beta_1u(b)+\beta_2(pu')(b)=0 ,
+\boxed{\;\alpha_1u(a)+\alpha_2(pu')(a)=0,\qquad \beta_1u(b)+\beta_2(pu')(b)=0\;} ,
 $$</p>
 <p>with real $(\alpha_1,\alpha_2)$ and $(\beta_1,\beta_2)$ not both zero, and the coupled conditions, in which the boundary values at $a$ and at $b$ are related by a matrix whose graph is Lagrangian; the operator with such a domain is self-adjoint, and the classical Sturm–Liouville problems of <em>The Sturm–Liouville Operator</em> are the instances.</p>
 <p><em>Proof.</em> A separated condition at one endpoint singles out a one-dimensional subspace of that endpoint's two-dimensional data: if $(u_1,u_2)$ is parallel to $(\alpha_2,-\alpha_1)$ with $(\alpha_1,\alpha_2)$ real, then the endpoint form $u_1\bar v_2-u_2\bar v_1=\alpha_1\alpha_2(\bar st-t\bar s)$ vanishes for any two such vectors, so the subspace is isotropic and, being one-dimensional in a two-dimensional skew space, is maximal. A separated condition at $a$ and a separated condition at $b$ therefore give a two-dimensional isotropic subspace of the four-dimensional boundary space, which is Lagrangian because its dimension is half. A coupled condition is the graph of a form-preserving map between two Lagrangian subspaces, and its parameterisation is the previous theorem. The self-adjointness is the criterion, and the expansion is that of <em>Self-Adjoint Sturm–Liouville Operators</em>.</p>

@@ -77,7 +77,7 @@
 <h3 id="definition-and-the-semigroup-law">Definition and the semigroup law</h3>
 <p><strong>Definition.</strong> A <strong>transition operator</strong> (or transition semigroup) on $E$ is a family $\{P_t\}_{t\ge0}$ of Markov kernels, acting on bounded measurable functions by
 $$
-P_tf(x)=\int_E f(y)\,p_t(x,dy)=\mathbb E_x[f(X_t)],
+\boxed{\;P_tf(x)=\int_E f(y)\,p_t(x,dy)=\mathbb E_x[f(X_t)]\;},
 $$
 and on finite measures by $\mu P_t(B)=\int_E\mu(dx)\,p_t(x,B)$, such that
 $$
@@ -104,7 +104,7 @@ R_\lambda f=\int_0^\infty \exp(-\lambda t)P_tf\,dt .
 $$</p>
 <p><strong>Theorem (resolvent identity).</strong> For $\lambda,\mu>0$,
 $$
-R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm{id},\qquad R_\lambda(\lambda-L)=\mathrm{id}\ \text{on }\mathcal D(L),
+\boxed{\;R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm{id},\qquad R_\lambda(\lambda-L)=\mathrm{id}\ \text{on }\mathcal D(L)\;},
 $$
 and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.</p>
 <p><em>Proof.</em> The resolvent identity is the algebra of $\int_0^\infty \exp(-\lambda t)P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial/\partial t(P_tf)=-\exp(-\lambda t)\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.</p>
@@ -115,7 +115,7 @@ and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.</p>
 <h3 id="the-forward-and-backward-equations">The forward and backward equations</h3>
 <p><strong>Theorem (Kolmogorov equations).</strong> Let the transition semigroup be Feller with generator $L$ and let the process be non-explosive. Then for $f\in\mathcal D(L)$ the function $u(t,x)=P_tf(x)$ solves the <strong>backward equation</strong>
 $$
-\partial/\partial t u=Lu,\qquad u(0,x)=f(x),
+\boxed{\;\partial/\partial t u=Lu,\qquad u(0,x)=f(x)\;},
 $$
 and the transition kernels solve the <strong>forward equation</strong> $\partial/\partial t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=\exp(tL)$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.</p>
 <p><em>Proof.</em> The backward equation is the semigroup law differentiated at $t=0$ in the space variable; the forward equation is the same statement read on the measures, where the generator acts as the transpose $L^*$ on the predual. The exponential formula is the Hille–Yosida approximation.</p>

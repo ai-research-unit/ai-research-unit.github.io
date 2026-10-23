@@ -78,7 +78,7 @@
 <p><strong>Definition.</strong> The continuous involution $\sigma$ of $X$ is <strong>free</strong> when $X^{\sigma} = \emptyset$, that is, when $\sigma(x) \neq x$ for every $x$. Then every orbit $\{x, \sigma(x)\}$ has exactly two points.</p>
 <p><strong>Theorem (trivializing neighbourhood).</strong> Let $\sigma$ be a free continuous involution of a Hausdorff space $X$, and let $x \in X$. Then there is an open neighbourhood $\Omega$ of $x$ with</p>
 <p>$$
-\Omega \cap \sigma(\Omega) = \emptyset .
+\boxed{\;\Omega \cap \sigma(\Omega) = \emptyset\;} .
 $$</p>
 <p>Moreover $\Omega$ can be chosen so that the image $\pi(\Omega)$ is open in $X/\sigma$ and $\pi^{-1}(\pi(\Omega)) = \Omega \cup \sigma(\Omega)$ is the disjoint union of two homeomorphic copies of $\Omega$.</p>
 <p><strong>Proof.</strong> For the single element $g = \sigma \neq \mathrm{id}$ the points $x$ and $\sigma(x)$ are distinct, so by the Hausdorff property there are open sets $O \ni x$ and $P \ni \sigma(x)$ with $O \cap P = \emptyset$. Put $\Omega = O \cap \sigma^{-1}(P)$; then $\Omega$ is open and contains $x$, because $\sigma^{-1}(P)$ contains $\sigma^{-1}(\sigma(x)) = x$, and</p>
@@ -94,14 +94,14 @@ $$</p>
 <h3 id="covering-maps">Covering Maps</h3>
 <p><strong>Definition.</strong> A continuous surjection $p : E \to B$ is a <strong>covering map</strong> when every point of $B$ has an open neighbourhood $V$ that is <strong>evenly covered</strong>: there is a discrete space $F$ and a homeomorphism</p>
 <p>$$
-\varphi : p^{-1}(V) \longrightarrow V \times F
+\boxed{\;\varphi : p^{-1}(V) \longrightarrow V \times F\;}
 $$</p>
 <p>over $V$, that is, $\mathrm{pr}_{V} \circ \varphi = p$ on $p^{-1}(V)$. The space $F$ is the <strong>fibre</strong>, and the covering is <strong>$n$-fold</strong> when $F$ has $n$ points. A <strong>two-fold covering</strong> is a covering with two points in the fibre.</p>
 <p>For a two-fold covering the preimage of an evenly covered $V$ is the disjoint union of two open sets each homeomorphic to $V$ under $p$. When $B$ is connected the fibre is the same finite cardinal over every point, and the covering is $n$-fold for a fixed $n$; the two-fold case is $n = 2$.</p>
 <h3 id="the-orbit-map-is-a-two-fold-covering">The Orbit Map is a Two-Fold Covering</h3>
 <p><strong>Theorem.</strong> Let $\sigma$ be a free continuous involution of a Hausdorff space $X$. Then the orbit map</p>
 <p>$$
-\pi : X \longrightarrow X/\sigma
+\boxed{\;\pi : X \longrightarrow X/\sigma\;}
 $$</p>
 <p>is a two-fold covering. The fibre over the orbit of $x$ is the two-point set $\{x, \sigma(x)\}$, and the trivializing neighbourhood of the previous section provides the evenly covered neighbourhood of its image.</p>
 <p><strong>Proof.</strong> Let $y \in X/\sigma$ and let $x$ be a point of the orbit $y$, so that $y = \{x, \sigma(x)\}$. By the trivializing theorem there is an open $\Omega \ni x$ with $\Omega \cap \sigma(\Omega) = \emptyset$ and $\pi^{-1}(\pi(\Omega)) = \Omega \cup \sigma(\Omega)$. The set $V = \pi(\Omega)$ is open in $X/\sigma$ and</p>

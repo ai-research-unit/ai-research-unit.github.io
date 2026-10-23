@@ -105,7 +105,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>bicommutant</strong> of a subalgebra $A$ is $A'' = (A')'$; $A$ is <strong>closed</strong> when $A'' = A$.</p>
 <p><strong>Proposition (the basic laws).</strong> For every subalgebra $A \subseteq E$,</p>
 <p>$$
-A \subseteq A'' , \qquad A' = A''' , \qquad A'' \text{ is a subalgebra},
+\boxed{\;A \subseteq A'' , \qquad A' = A''' , \qquad A'' \text{ is a subalgebra}\;},
 $$</p>
 <p>and the bicommutant is the largest subalgebra with the same commutant: if $B' = A'$ then $B \subseteq A''$.</p>
 <p><strong>Proof.</strong> Every element of $A$ commutes with every element of $A'$, so $A \subseteq A''$. Applying the reversal $(-)'$ to $A \subseteq A''$ gives $A''' \subseteq A'$, and applying it to $A \subseteq A''$ once more, $(A'')' \subseteq A'$; the reverse inclusion is $A' \subseteq (A')'' = A'''$, so $A' = A'''$. If $B' = A'$ then $B'' = (A')' = A'$ and $B \subseteq B'' = A''$. The bicommutant is a commutant, hence a subalgebra.</p>
@@ -113,14 +113,14 @@ $$</p>
 <h2 id="the-double-centraliser-theorem">The Double Centraliser Theorem</h2>
 <p><strong>Theorem (double centraliser).</strong> Let $A \subseteq E$ be a subalgebra. If $V$ is a semisimple $A$-module, then</p>
 <p>$$
-A'' = A .
+\boxed{\;A'' = A\;} .
 $$</p>
 <p>Equivalently, a subalgebra of $\operatorname{End}_F(V)$ over which $V$ is semisimple is determined by its commutant.</p>
 <p><strong>Proof.</strong> Suppose first that $V$ is isotypic of type $S$, that is, $V \cong S^{m}$ for a simple $A$-module $S$ with $D = \operatorname{End}_A(S)$, a division algebra over $F$ by Schur's lemma. With $S^{m} = S\oplus\cdots\oplus S$, an $A$-linear endomorphism of $S^{m}$ is given by an $m\times m$ matrix over $D$, so $A' \cong M_m(D)$ up to the choice of a decomposition; a matrix over a division algebra that commutes with every matrix over that algebra is a scalar matrix, by the argument of the centre of $E$, so $A'' \cong M_m(D)$ acting on $S^{m}$, and this is $A$, since by the Wedderburn–Artin theorem $A$ is the full matrix algebra over $D$ on each isotypic component. In the general semisimple case, decompose $V = \bigoplus_i V_i$ into isotypic components, of types $S_i$ and multiplicities $m_i$; an $A$-linear endomorphism preserves these components because distinct isotypic components are non-isomorphic simple modules and carry no intertwiners, so $A' = \prod_i M_{m_i}(D_i)$ up to decomposition, and the same computation componentwise gives $A'' = A$. The Wedderburn–Artin theorem, the isotypic decomposition and Schur's lemma are <em>Simple and Semisimple Modules</em>, and the reduction to the matrix computation over a division algebra is by that theorem.</p>
 <p><strong>Corollary (semisimple subalgebras are closed).</strong> Every finite-dimensional semisimple subalgebra $A \subseteq E$ satisfies $A'' = A$, because a semisimple algebra has $V$ semisimple as a module over it.</p>
 <p><strong>Corollary (the commutant of a semisimple algebra is its opposite over the division algebra).</strong> For a semisimple $A$ acting faithfully on $V$ with $V \cong \bigoplus_i S_i^{m_i}$ and $D_i = \operatorname{End}_A(S_i)$,</p>
 <p>$$
-A' \cong \prod_i M_{m_i}(D_i^{\mathrm{opp}}) ,
+\boxed{\;A' \cong \prod_i M_{m_i}(D_i^{\mathrm{opp}})\;} ,
 $$</p>
 <p>which is the double centraliser identity read from the other side.</p>
 <p><strong>Remark (the non-semisimple case).</strong> For the triangular algebra of the example above, $V$ is not semisimple as an $A$-module: the flag $0 \subset Fe_1 \subset Fe_1 \oplus Fe_2 \subset \cdots \subset V$ has no complement preserved by $A$. Correspondingly $A'' = E \neq A$, and the double centraliser theorem fails; the failure is exactly the non-splitness of the flag. The measure of the failure in general is the radical of the module, and the density theorem of <em>Module Endomorphisms</em> gives the completion of the theorem for an irreducible module over an algebraically closed field.</p>

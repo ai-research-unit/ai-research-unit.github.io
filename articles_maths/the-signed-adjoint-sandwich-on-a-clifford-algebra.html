@@ -80,14 +80,14 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>standard form</strong> is $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ with $\hat x=\alpha(x^{r})$ the Clifford conjugation; it is non-degenerate and bilinear, and the <strong>adjoint</strong> of an operator $A$ is the operator $A^{*}$ with $\langle Ax,y\rangle=\langle x,A^{*}y\rangle$.</p>
 <p><strong>Proposition (quoted).</strong> The adjoints of the one-sided factors and of the grade involution for the standard form are</p>
 <p>$$
-L_a^{*}=L_{\hat a} , \qquad R_b^{*}=R_{\hat b} , \qquad \alpha^{*}=\alpha ,
+\boxed{\;L_a^{*}=L_{\hat a} , \qquad R_b^{*}=R_{\hat b} , \qquad \alpha^{*}=\alpha\;} ,
 $$</p>
 <p>so that the ordinary sandwich satisfies $T_{a,b}^{*}=T_{\hat a,\hat b}$ and the left multiplication by a vector is skew-adjoint, $L_u^{*}=-L_u$.</p>
 <p><strong>Proof.</strong> The computation is that of <em>The Signed Adjoint of the Left Multiplication on a Clifford Algebra</em>: $\langle ax,y\rangle=\operatorname{Sc}(\widehat{ax}y)=\operatorname{Sc}(\hat x\hat ay)=\langle x,\hat ay\rangle$, the right case being identical, and the self-adjointness of $\alpha$ following from $\widehat{\alpha x}=x^{r}$ and the invariance of the scalar part under $\alpha$. The vector value is $\vec u=\alpha(u^{r})=-u$.</p>
 <p><strong>Theorem.</strong> The adjoint of the signed sandwich is the signed sandwich by the conjugated parameters,</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\,\alpha(\hat b)}
-=R_{\hat b}\,\alpha\,L_{\hat a} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\,\alpha(\hat b)}
+=R_{\hat b}\,\alpha\,L_{\hat a}\;} .
 $$</p>
 <p><strong>Proof.</strong> The adjoint of a composite is the composite of the adjoints in the reverse order, so $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=(L_a\alpha R_b)^{*}=R_b^{*}\alpha^{*}L_a^{*}=R_{\hat b}\alpha L_{\hat a}$. Now $R_{\hat b}\alpha=\alpha R_{\alpha(\hat b)}$ and $L_{\alpha(\hat a)}\alpha=\alpha L_{\hat a}$, so the composite is $\alpha R_{\alpha(\hat b)}L_{\hat a}=L_{\alpha(\hat a)}\alpha R_{\alpha(\hat b)}$, which is the signed sandwich by $\alpha(\hat a)$ and $\alpha(\hat b)$ since the left and right multiplications commute.</p>
 <p><strong>Corollary.</strong> The adjoint is an involution of the signed family, $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{**}=\Sigma^{\alpha}_{a,b}$, and it is the conjugate-linear correspondence of parameters $a\mapsto\alpha(\hat a)$; for a central parameter it reduces to the Clifford conjugation $\hat a=a^{-1}$ for the orthogonal elements of <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>.</p>
@@ -95,9 +95,9 @@ $$</p>
 <p><strong>Definition.</strong> An operator $S$ is an <strong>isometry</strong> of the standard form when $S^{*}S=\operatorname{id}$; the isometries form a group.</p>
 <p><strong>Proposition (composition law, quoted).</strong> The composites of the two-sided family are</p>
 <p>$$
-\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\,\alpha(d)b} , \qquad
+\boxed{\;\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\,\alpha(d)b} , \qquad
 \Sigma^{\alpha}_{a,b}T_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} , \qquad
-T_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{ac,\,db} ,
+T_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{ac,\,db}\;} ,
 $$</p>
 <p>so the composite of two signed sandwiches is an <strong>ordinary</strong> sandwich, the two grade involutions cancelling.</p>
 <p><strong>Proof.</strong> The computation is <em>Two-Sided Operators with the Signed Product</em>: $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}(x)=a\alpha(c)\,\alpha(\alpha(x))\,\alpha(d)b=a\alpha(c)\,x\,\alpha(d)b$, the middle twist being the identity.</p>

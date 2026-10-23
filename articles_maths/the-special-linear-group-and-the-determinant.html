@@ -83,7 +83,7 @@ $$</p>
 <p>because multilinearity expands $D(\dots,v_i+v_j,\dots,v_i+v_j,\dots)=0$ into the four terms, of which the two diagonal terms vanish.</p>
 <p><strong>Theorem (existence and uniqueness).</strong> For each $n \ge 1$ there is exactly one normalised alternating multilinear form $D:V^n \to F$, and in a basis $\mathcal{B}$ with coordinates $v_j=\sum_i a_{ij}e_i$ it is given by the <strong>Leibniz formula</strong></p>
 <p>$$
-D(v_1,\dots,v_n)=\sum_{\sigma \in S_n}\operatorname{sgn}(\sigma)\prod_{j=1}^{n}a_{\sigma(j)j}.
+\boxed{\;D(v_1,\dots,v_n)=\sum_{\sigma \in S_n}\operatorname{sgn}(\sigma)\prod_{j=1}^{n}a_{\sigma(j)j}\;}.
 $$</p>
 <p><em>Proof.</em> Uniqueness: by multilinearity it suffices to evaluate $D$ on basis vectors. Writing each $v_j$ in the basis, expanding by multilinearity expresses $D(v_1,\dots,v_n)$ as a sum of terms $D(e_{i_1},\dots,e_{i_n})$ times coefficients; an alternating form vanishes unless $i_1,\dots,i_n$ are distinct, and then the term is $\operatorname{sgn}(\sigma)D(e_1,\dots,e_n)$ for the permutation $\sigma$ with $i_j=\sigma(j)$. So $D$ is determined by $D(e_1,\dots,e_n)$, and normalisation fixes it. Existence: the Leibniz formula is readily checked to be multilinear, to vanish on repeated arguments, and to equal $1$ on the basis.</p>
 <p><strong>Definition.</strong> The <strong>determinant</strong> of the matrix $A=(a_{ij})$ with columns $v_j$ is $\det A=D(v_1,\dots,v_n)$ with $D$ the normalised form; equivalently the Leibniz sum above. The determinant of an operator $T \in \operatorname{End}_F(V)$ is $\det T=\det[T]_{\mathcal{B}}^{\mathcal{B}}$ for any basis $\mathcal{B}$.</p>
@@ -114,7 +114,7 @@ $$</p>
 <p>For rectangular matrices the multiplicativity of the determinant is replaced by a sum over maximal minors.</p>
 <p><strong>Theorem (Cauchy–Binet).</strong> Let $A$ be $m \times n$ and $B$ an $n \times m$ matrix with $m \le n$. For a subset $S \subseteq \{1,\dots,n\}$ of size $m$ let $A_{\cdot S}$ be the $m \times m$ matrix formed by the columns of $A$ indexed by $S$, and $B_{S \cdot}$ the $m \times m$ matrix formed by the rows of $B$ indexed by $S$. Then</p>
 <p>$$
-\det(AB)=\sum_{|S|=m}\det(A_{\cdot S})\det(B_{S\cdot}).
+\boxed{\;\det(AB)=\sum_{|S|=m}\det(A_{\cdot S})\det(B_{S\cdot})\;}.
 $$</p>
 <p><em>Proof.</em> The $m$-th alternating power is a functor: for linear maps $F^n \xrightarrow{B} F^n \xrightarrow{A} F^m$ one has $\wedge^m(AB)=(\wedge^m A)(\wedge^m B)$. In the basis $\{e_S\}$ of $\wedge^m F^n$ indexed by the $m$-element subsets $S$, the entries of the matrix of $\wedge^m A$ are the maximal minors $\det(A_{\cdot S})$, and similarly for $B$. Taking determinants of both sides of the functorial identity gives the formula.</p>
 <p>The special case $m=1$ is the identity $a\cdot b=\sum_i a_ib_i$, and the case $n=m$ reduces to $\det(AB)=\det A\det B$.</p>
@@ -144,7 +144,7 @@ $$</p>
 <h3 id="the-commutator-subgroup">The Commutator Subgroup</h3>
 <p><strong>Theorem (Dieudonné).</strong> For $n \ge 2$,</p>
 <p>$$
-[\operatorname{GL}_n(F),\operatorname{GL}_n(F)]=\operatorname{SL}_n(F)
+\boxed{\;[\operatorname{GL}_n(F),\operatorname{GL}_n(F)]=\operatorname{SL}_n(F)\;}
 $$</p>
 <p>except for $n=2$ with $F=\mathbb{F}_2$ or $F=\mathbb{F}_3$. For $F=\mathbb{F}_2$ one has $\operatorname{GL}_2(\mathbb{F}_2)=\operatorname{SL}_2(\mathbb{F}_2)=S_3$ and the commutator subgroup is $A_3$, the cyclic group of order $3$, of index $2$ in $\operatorname{SL}_2(\mathbb{F}_2)$; for $F=\mathbb{F}_3$ the commutator subgroup is the quaternion group $Q_8$, of index $3$ in $\operatorname{SL}_2(\mathbb{F}_3)$ and index $6$ in $\operatorname{GL}_2(\mathbb{F}_3)$. For all other $n$ and $F$ the abelianisation of $\operatorname{GL}_n(F)$ is $F^{\times}$, induced by the determinant.</p>
 <p><em>Proof.</em> The elementary matrix $E_{ij}(\lambda)$ with $i,j,k$ distinct is a commutator, $E_{ij}(\lambda)=[E_{ik}(\lambda),E_{kj}(1)]$, so for $n \ge 3$ the elementary matrices lie in $[\operatorname{GL}_n(F),\operatorname{GL}_n(F)]$ and generation gives the inclusion $\operatorname{SL}_n(F)\subseteq[\operatorname{GL}_n(F),\operatorname{GL}_n(F)]$. For $n=2$ and $|F|>3$ choose $t \in F^{\times}$ with $t^2 \neq 1$; then</p>

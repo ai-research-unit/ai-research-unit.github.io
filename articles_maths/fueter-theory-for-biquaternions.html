@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>with $\mathrm{div}\,\vec F = \sum_{\mu\in\{x,y,z\}} \partial/\partial Q_\mu\,F_\mu$, $\mathrm{grad}\,F_0 = \sum_{\mu\in\{x,y,z\}} (\partial/\partial Q_\mu\,F_0)\vec e_\mu$ and $\mathrm{rot}\,\vec F = \sum_{\mu,\nu,\lambda\in\{x,y,z\}} \epsilon_{\mu\nu\lambda}(\partial/\partial Q_\mu\,F_\nu)\vec e_\lambda$. Hence left-regularity is</p>
 <p>$$
-\partial/\partial Q_t F_0 = \mathrm{div}\,\vec F, \qquad \partial/\partial Q_t \vec F = -\mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F,
+\boxed{\; \partial/\partial Q_t F_0 = \mathrm{div}\,\vec F, \qquad \partial/\partial Q_t \vec F = -\mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F \;},
 $$</p>
 <p>while the right action gives the same system with $+\mathrm{rot}\,\vec F$. The two systems differ only in the sign of the curl term and coincide exactly when $\mathrm{rot}\,\vec F = 0$. This is the <strong>quaternionic Cauchy–Riemann system</strong>: one biquaternion equation, equivalently eight real equations for the eight real components of $F^{\mathrm{fn}}$. The reflection $q_k \mapsto -q_k$ interchanges $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, so the conjugate theory is the mirror image; conjugating $\tilde{\nabla}F^{\mathrm{fn}} = 0$ shows that ${F^{\mathrm{fn}}}^{\natural}$ is right-regular for $\tilde{\nabla}^{\natural}$.</p>
 <h2 id="harmonicity-and-the-mean-value-property">Harmonicity and the Mean Value Property</h2>
@@ -111,7 +111,7 @@ $$</p>
 <p><strong>Proof.</strong> If $\tilde{\nabla}F^{\mathrm{fn}} = 0$, then $\Delta_4 F^{\mathrm{fn}} = \tilde{\nabla}^{\natural}(\tilde{\nabla}F^{\mathrm{fn}}) = 0$; if $F^{\mathrm{fn}}\tilde{\nabla} = 0$, then $\Delta_4 F^{\mathrm{fn}} = (F^{\mathrm{fn}}\tilde{\nabla})\tilde{\nabla}^{\natural} = 0$, with the operators acting on the right.</p>
 <p>Consequently every regular function is real-analytic and enjoys the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates (article on biquaternion integration). Since each complex component is harmonic, the <strong>mean value property</strong> holds: for $F^{\mathrm{fn}}$ regular near the closed ball $\bar{B}(\tilde{Q}_0, r)$,</p>
 <p>$$
-F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{|B(\tilde{Q}_0,r)|}\int_{B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dV = \frac{1}{|\partial B(\tilde{Q}_0,r)|}\int_{\partial B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dS,
+\boxed{\; F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{|B(\tilde{Q}_0,r)|}\int_{B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dV = \frac{1}{|\partial B(\tilde{Q}_0,r)|}\int_{\partial B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dS \;},
 $$</p>
 <p>with the ordinary measures on $\mathbb{R}^4$; the property follows equally from the Cauchy formula, the proof above showing that it is already a consequence of the factorization.</p>
 <h2 id="the-variational-origin-of-the-cauchyriemann-conditions">The Variational Origin of the Cauchy–Riemann Conditions</h2>
@@ -158,7 +158,7 @@ $$</p>
 <h3 id="fueters-theorem">Fueter's Theorem</h3>
 <p><strong>Theorem (Fueter's construction).</strong> Let $f_0$ be holomorphic on $D(0,R)$, with axial extension $f^{\mathrm{ax}}_0$. Then</p>
 <p>$$
-F^{\mathrm{fn}}(\tilde{Q}) = \Delta_4\, f^{\mathrm{ax}}_0(\tilde{Q}) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho} + \vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho} - \frac{2\,v(q_t,\rho)}{\rho^2}\right)
+\boxed{\; F^{\mathrm{fn}}(\tilde{Q}) = \Delta_4\, f^{\mathrm{ax}}_0(\tilde{Q}) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho} + \vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho} - \frac{2\,v(q_t,\rho)}{\rho^2}\right) \;}
 $$</p>
 <p>is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.</p>
 <p><strong>Proof.</strong> For $g = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ with central $A, B$, one has $\partial/\partial q_\mu\,A = (\partial/\partial\rho A)(\vec u_{\mathrm d})_\mu$, $\sum_{\mu\in\{x,y,z\}} \vec e_\mu (\vec u_{\mathrm d})_\mu = \vec u_{\mathrm d}$, and $\sum_{\mu,\nu\in\{x,y,z\}}(\partial/\partial q_\mu\,(\vec u_{\mathrm d})_\nu)\vec e_\mu \vec e_\nu = (-3 - \vec u_{\mathrm d}^2)/\rho = -2/\rho$, because $\vec u_{\mathrm d}^2 = -1$. These give</p>

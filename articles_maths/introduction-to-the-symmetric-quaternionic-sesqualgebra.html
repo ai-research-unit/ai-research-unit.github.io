@@ -85,9 +85,7 @@ $$</p>
 $$</p>
 <p>the half-sum of the two orders of the general quaternionic sesquilinear product, the second order read with the conjugations in the same slots.</p>
 <p><strong>Theorem (the scalar–vector form).</strong> For all biquaternions,</p>
-<p>$$
-\tilde Q_1\star\tilde Q_2=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1.
-$$</p>
+<p>$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 \;}. $$</p>
 <p>The scalar part is the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ and the vector part is the mixed term $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$.</p>
 <p><em>Proof.</em> Write the plain product of two quaternions as $\tilde Q_1\tilde Q_2=[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$. For the first order the factors are $\tilde Q_1^{\natural}$, of scalar part $Q_{1t}$ and vector part $-\vec Q_1$, and $\tilde Q_2^{*}$, of scalar part $\overline{Q_{2t}}$ and vector part $-\overline{\vec Q_2}$: the vector part of the product is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$. For the second order the same computation with the factors exchanged gives $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, since $\overline{\vec Q_2}\times\vec Q_1=-\vec Q_1\times\overline{\vec Q_2}$. The two vector parts differ by the sign of the cross product, whose half-sum vanishes and whose half-difference is $\vec Q_1\times\overline{\vec Q_2}$, and their scalar parts are equal, since $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$; the half-sum is the displayed value.</p>
 <p><strong>Corollary (the two projections of the value).</strong> The scalar part of the value is a complex multiple of $e_t$, and the vector part of the value is a complex vector in $\mathbf{e}=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$; concretely</p>
@@ -105,9 +103,7 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> Both orders of the general quaternionic sesquilinear product are sesquilinear of the same size in their slots, and $\star$ is their half-sum; the linearity in the first slot is that of $\tilde Q_1^{\natural}\tilde Q_2^{*}$ and the conjugate-linearity in the second is that of both orders, since ${}^{*}$ is conjugate-linear. The two rules are the two scalar rules of <em>Sesqualgebras</em> read on $\star$.</p>
 <p><strong>Theorem (conjugate-commutativity).</strong> The product is conjugate-commutative:</p>
-<p>$$
-\tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1}.
-$$</p>
+<p>$$ \boxed{\; \tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1} \;}. $$</p>
 <p><em>Proof.</em> The coefficientwise conjugation satisfies $\overline{\tilde Q_1^{\natural}}=\tilde Q_1^{*}$ and $\overline{\tilde Q_2^{*}}=\tilde Q_2^{\natural}$, so $\overline{\tilde Q_2\star\tilde Q_1}=\tfrac12\bigl(\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}+\overline{\tilde Q_1^{*}\tilde Q_2^{\natural}}\bigr)=\tfrac12\bigl(\tilde Q_2^{*}\tilde Q_1^{\natural}+\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\tilde Q_1\star\tilde Q_2$.</p>
 <p><strong>Remark.</strong> The conjugate-commutativity is the symmetry the block inherits from its construction, and it is <em>not</em> commutativity: the product is not commutative, and it is not associative either. The block is the one of the four symmetric parts that is neither central nor commutative, and its diagonal is the subject of <em>The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em>.</p>
 <p><strong>Proposition (the two orders of the plain product).</strong> The two orders whose half-sum is the block are the natural conjugates of the two orders of the plain product of $\overline{\tilde Q_2}$ and $\tilde Q_1$:</p>
@@ -124,9 +120,11 @@ $$</p>
 <h2 id="the-absence-of-a-unit-and-the-two-one-sided-actions">The Absence of a Unit and the Two One-Sided Actions</h2>
 <p><strong>Theorem (the two actions of $e_t$).</strong> For every biquaternion,</p>
 <p>$$
+\boxed{\;
 e_t\star\tilde Q=\tilde Q^{*},
 \qquad
-\tilde Q\star e_t=\tilde Q^{\natural}.
+\tilde Q\star e_t=\tilde Q^{\natural}
+\;}.
 $$</p>
 <p><em>Proof.</em> $e_t\star\tilde Q=\tfrac12\bigl(e_t^{\natural}\tilde Q^{*}+\tilde Q^{*}e_t^{\natural}\bigr)=\tfrac12(\tilde Q^{*}+\tilde Q^{*})=\tilde Q^{*}$, since $e_t^{\natural}=e_t$ is the unit of the plain product; the second is the conjugate-commutative mirror, or the same computation with the factors exchanged.</p>
 <p><strong>Corollary (no unit on either side).</strong> There is no element $\tilde E$ with $\tilde E\star\tilde Q=\tilde Q$ for all $\tilde Q$, and none with $\tilde Q\star\tilde E=\tilde Q$ for all $\tilde Q$.</p>

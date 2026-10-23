@@ -80,9 +80,7 @@ $$</p>
 <p>Throughout, $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, and $R(c)=1+|c|$.</p>
 <h2 id="the-escape-radius">The Escape Radius</h2>
 <p><strong>Theorem (the radius).</strong> Let $c \in \mathbb{H}$ and $R(c)=1+|c|$. If $|\tilde q_n| \geq R(c)$ for some $n$ then $|\tilde q_k| \to \infty$; consequently the filled Julia set is</p>
-<p>$$
-K_c = \{\tilde q \in \mathbb{H} : |\tilde q_n| \leq R(c)\ \text{for every}\ n \geq 0\},
-$$</p>
+<p>$$ \boxed{\; K_c = \{\tilde q \in \mathbb{H} : |\tilde q_n| \leq R(c)\ \text{for every}\ n \geq 0\} \;} ,$$</p>
 <p>and a point of $\mathbb{H}$ is tested for membership in $K_c$ by iterating until either $R(c)$ is exceeded or a prescribed bound on the number of steps is reached.</p>
 <p><em>Proof.</em> The escape lemma of <em>The Quaternion Quadratic Map and Its Julia Sets</em>: from $|\tilde q_{n+1}| \geq |\tilde q_n|^2-|c|$ and the identity $R(c)^2-R(c)-|c|=|c|^2$ the moduli are strictly increasing and grow at least linearly once they exceed $R(c)$. The identification of $K_c$ with the non-escaping points is the definition, and the last sentence is the algorithm.</p>
 <p><strong>Remark (the sharpness of the radius).</strong> The radius $R(c)=1+|c|$ is the simplest constant that works for every $c$; the classical complex radius, valid for $|c|\leq2$, is $2$, and in the slice it is the radius used in practice. The radius is not an intrinsic invariant of the family: the escape set is the complement of $K_c$, and the radius is only a certified ball containing $K_c$. The number $R(c)$ is used in <em>The Quaternion Mandelbrot Set</em> and in the algorithms of the sibling articles, and its complex counterpart is the subject of <em>The Escape Radius and the Green's Function</em>.</p>
@@ -93,9 +91,7 @@ G_c(\tilde q) = \lim_{n\to\infty} \frac{1}{2^n}\log|\tilde q_n|,
 $$</p>
 <p>and for $\tilde q \in K_c$ one sets $G_c(\tilde q)=0$.</p>
 <p><strong>Theorem (existence and the explicit series).</strong> For every $\tilde q$ with unbounded orbit the limit exists, and for $|\tilde q|>R(c)$ it equals the absolutely convergent series</p>
-<p>$$
-G_c(\tilde q) = \log|\tilde q| + \frac12\sum_{k=0}^{\infty} \frac{1}{2^{k+1}}\log \frac{\langle\tilde q_k^2+c\rangle_{\natural}}{\langle\tilde q_k\rangle_{\natural}^2}.
-$$</p>
+<p>$$ \boxed{\; G_c(\tilde q) = \log|\tilde q| + \frac12\sum_{k=0}^{\infty} \frac{1}{2^{k+1}}\log \frac{\langle\tilde q_k^2+c\rangle_{\natural}}{\langle\tilde q_k\rangle_{\natural}^2} \;} .$$</p>
 <p>The function $G_c$ is continuous, nonnegative, vanishes exactly on $K_c$, and satisfies $G_c(\tilde q)=\log|\tilde q|+O(|\tilde q|^{-2})$ as $|\tilde q|\to\infty$.</p>
 <p><em>Proof.</em> Multiplicativity of the norm and the identity $\tilde q_{k+1}=\tilde q_k^2(1+c\tilde q_k^{-2})$ give, with $T_k=\langle\tilde q_k^2+c\rangle_{\natural}/\langle\tilde q_k\rangle_{\natural}^2$,</p>
 <p>$$
@@ -119,9 +115,7 @@ $$</p>
 $$</p>
 <p>since the fundamental solution of the Laplacian in $\mathbb{R}^4$ is $|\tilde q|^{-2}$ and $\log|\tilde q|$ is the $c=0$ limit of the logarithmic potentials. So $G_c$ is <em>not</em> harmonic in $\mathbb{H}$ for any $c$, and the article states it. What remains true, and is the reason the potential is useful, is the <strong>subharmonicity</strong>.</p>
 <p><strong>Proposition (subharmonicity, quoted).</strong> The function $G_c$ is subharmonic on the escaping set of $\mathbb{H}=\mathbb{R}^4$ with respect to the Euclidean Laplacian: for every ball $B(\tilde q,r)$ contained in the escaping set,</p>
-<p>$$
-G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c.
-$$</p>
+<p>$$ \boxed{\; G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c \;} .$$</p>
 <h2 id="worked-example">Worked Example</h2>
 <p><strong>Example (the potential of a point and the functional equation).</strong></p>
 <p><strong>(a) The parameter $c=0$.</strong> Here $G_0(\tilde q)=\log|\tilde q|$ for $|\tilde q|>1$, so the level sets are spheres and the filled Julia set is the unit ball. For $\tilde q=(2,1,\tfrac12,\tfrac14)$ one has $|\tilde q|^2=\tfrac{85}{16}$ and $G_0(\tilde q)=\tfrac12\log\tfrac{85}{16}=0.8350\ldots$, and the value is constant along the orbit up to the factor two: $G_0(\tilde q^2)=2G_0(\tilde q)$.</p>

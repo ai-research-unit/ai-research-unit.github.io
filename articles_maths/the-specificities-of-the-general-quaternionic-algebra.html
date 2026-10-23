@@ -80,8 +80,8 @@ $$</p>
 <h2 id="the-isotope-identity">The Isotope Identity</h2>
 <p><strong>Proposition (the left multiplications are plain ones).</strong> For every $\tilde Q_1$,</p>
 <p>$$
-L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}},\qquad
-L_{\tilde Q_1}L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1} .
+\boxed{\; L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}},\qquad
+L_{\tilde Q_1}L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1} \;}.
 $$</p>
 <p><strong>Proof.</strong> The first display is the definition of $\star$ read as an operator identity, $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1^{\natural}\tilde Q_2$. For the second, $L_{\tilde Q_1}L_{\tilde Q_4}(\tilde Q_2)=\tilde Q_1^{\natural}(\tilde Q_4^{\natural}\tilde Q_2)=(\tilde Q_1^{\natural}\tilde Q_4^{\natural})\tilde Q_2$, and $\tilde Q_1^{\natural}\tilde Q_4^{\natural}=(\tilde Q_4\tilde Q_1)^{\natural}$ because ${}^{\natural}$ is an anti-automorphism, so the composite is $L_{\tilde Q_4\tilde Q_1}(\tilde Q_2)$.</p>
 <p>The composition law is the reversed one, and it is stated with the monoid it defines in <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>, where it is also proved that the family of left multiplications is a monoid isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$, and that the two sesquilinear products fail even that. What the present article adds is the reading of the first display as an <strong>element dictionary</strong>: every operator of $\star$ is an operator of the plain product, applied to a conjugated element.</p>
@@ -96,15 +96,15 @@ $$</p>
 <p><strong>Remark (the algebra disowns them).</strong> The idempotents of $\star$ are $0$ and $e_t$ alone. Indeed $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ is central for every $\tilde Q$, so an idempotent of $\star$ is central, hence a complex multiple of $e_t$, hence $0$ or $e_t$; the statement is the theorem of <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>. The projectors of §<em>The Projectors</em>, by contrast, come in a family of complex dimension two, and all but two of them are indexed by elements that are <strong>not</strong> idempotents of $\star$. This is the first specificity of the algebra: it has a full family of projectors, and its own idempotent equation recognizes almost none of them.</p>
 <p><strong>Corollary (a projector on a square-zero element).</strong> Every nontrivial plain idempotent $\tilde\Pi$ is a <strong>nilpotent</strong> of $\star$, and its $\star$-left multiplication is a projector,</p>
 <p>$$
-\tilde\Pi\star\tilde\Pi=\tilde\Pi^{\natural}\tilde\Pi=\langle\tilde\Pi\rangle_{\natural}e_t=0,\qquad L_{\tilde\Pi}^{2}=L_{\tilde\Pi}\neq0 .
+\boxed{\; \tilde\Pi\star\tilde\Pi=\tilde\Pi^{\natural}\tilde\Pi=\langle\tilde\Pi\rangle_{\natural}e_t=0,\qquad L_{\tilde\Pi}^{2}=L_{\tilde\Pi}\neq0 \;}.
 $$</p>
 <p><strong>Proof.</strong> The middle equality is the central-square identity of the plain product, and $\langle\tilde\Pi\rangle_{\natural}=0$ for a nontrivial idempotent because $\tilde\Pi\tilde\Pi^{\natural}=0$ makes it a zero divisor of the non-pure family (<em>Zero Divisors of the Biquaternion Algebra</em>); the first equality is the definition of $\star$, and the operator statement is the theorem of §<em>The Projectors</em>. The two displays are compatible because they concern different objects: the <em>element</em> is square-zero, the <em>operator</em> is a projector.</p>
 <p>The corollary is worth pausing on. In the plain algebra an idempotent and a nilpotent are disjoint, meeting only at the origin (<em>Nilpotents of the General Plain Algebra</em>), so no element both vanishes when squared and has an idempotent left multiplication. The quaternionic product separates the two properties and assigns them to different levels: the element $\tilde\Pi$ has vanishing square, and the operator it defines is a projector with a two-dimensional image. The decomposition below therefore survives on an element of the nilpotent cone.</p>
 <h2 id="the-orthogonal-pairs-and-the-decomposition">The Orthogonal Pairs and the Decomposition</h2>
 <p><strong>Proposition (orthogonal projectors).</strong> Let $\tilde\Pi_1$ be a nontrivial plain idempotent and let $\tilde\Pi_2=e_t-\tilde\Pi_1$. Then</p>
 <p>$$
-L_{\tilde\Pi_1}+L_{\tilde\Pi_2}=\mathrm{Id},\qquad L_{\tilde\Pi_1}L_{\tilde\Pi_2}=0,\qquad
-\mathbb{B}=\tilde\Pi_1\star\mathbb{B}\oplus\tilde\Pi_2\star\mathbb{B},
+\boxed{\; L_{\tilde\Pi_1}+L_{\tilde\Pi_2}=\mathrm{Id},\qquad L_{\tilde\Pi_1}L_{\tilde\Pi_2}=0,\qquad
+\mathbb{B}=\tilde\Pi_1\star\mathbb{B}\oplus\tilde\Pi_2\star\mathbb{B} \;},
 $$</p>
 <p>and each summand is a minimal left ideal of the plain algebra of complex dimension two.</p>
 <p><strong>Proof.</strong> The operators are plain left multiplications by $\tilde\Pi_1^{\natural}$ and $\tilde\Pi_2^{\natural}$ by §<em>The Isotope Identity</em>, and $L^{\mathrm{plain}}$ is additive and multiplicative, so $L_{\tilde\Pi_1}+L_{\tilde\Pi_2}=L^{\mathrm{plain}}_{e_t}=\mathrm{Id}$ and $L_{\tilde\Pi_1}L_{\tilde\Pi_2}=L^{\mathrm{plain}}_{\tilde\Pi_1^{\natural}\tilde\Pi_2^{\natural}}$. The two idempotents are orthogonal and their sum is $e_t$, so $\tilde\Pi_1^{\natural}\tilde\Pi_2^{\natural}=0$ and the images are complementary; being the minimal left ideals of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em> they have complex dimension two.</p>

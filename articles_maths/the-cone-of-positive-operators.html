@@ -84,7 +84,7 @@
 <p><em>Proof.</em> The base trace $B = \{f\in E^*_+ : f(u) = 1\}$ is a base of the cone, and the extreme points of a base correspond to the extremal rays of the cone by <em>Cones, Extremal Rays and the Choquet Theory</em>. The extreme points of $S$ are the pure states. For the continuous-function case the extreme points are the point evaluations, and for the finite-dimensional order-unit space they are the vector states, by the same article.</p>
 <p><strong>Theorem (the extreme rays between function spaces are the weighted compositions).</strong> Let $E = C(X)$ and $F = C(Y)$ for compact Hausdorff $X$ and $Y$. A positive operator $T : C(X)\to C(Y)$ generates an extreme ray of $L_+(C(X),C(Y))$ if and only if</p>
 <p>$$
-(Tf)(y) = h(y)\,f\bigl(\phi(y)\bigr)
+\boxed{\;(Tf)(y) = h(y)\,f\bigl(\phi(y)\bigr)\;}
 $$</p>
 <p>for a continuous $\phi : Y\to X$ and a positive $h\in C(Y)$, with the caveat that the representation is unique only up to the points at which $h$ vanishes.</p>
 <p><em>Proof sketch.</em> If $T$ is of the stated form and $T$ is the sum of two positive operators, then on the dense set where $h>0$ each summand is forced to be a multiple of $T$ at each point, by the lattice characterisation of the extreme positive maps of $C(X)$ into a Riesz space, giving the extremality. Conversely an extreme positive operator preserves norm-one extreme points of $C(X)$, i.e. assigns to each point evaluation of $C(X)$ a scalar multiple of a point evaluation of $C(Y)$; that correspondence defines $\phi$ and $h$. The argument rests on the fact that a positive operator carries the extreme rays of the unit ball of the domain into extreme rays of the unit ball of the target unless a strict loss occurs, and a strict loss splits the operator.</p>
@@ -93,7 +93,7 @@ $$</p>
 <p><strong>Definition.</strong> An operator $T\in L_+(E,F)$ is an <strong>order unit</strong> of the cone of positive operators when every operator lies between two multiples of it: for every $S$ there is $\lambda>0$ with $-\lambda T\leq S\leq\lambda T$.</p>
 <p><strong>Theorem (a strictly positive rank-one operator is an order unit).</strong> Let $E$ have an order unit $u$, let $f$ be a positive functional that is <strong>strictly positive</strong>, $f(x)>0$ for every nonzero $x\in E_+$, and let $v$ be an order unit of $F$. Then the rank-one operator</p>
 <p>$$
-T = f\otimes v, \qquad Tx = f(x)\,v ,
+\boxed{\;T = f\otimes v, \qquad Tx = f(x)\,v\;} ,
 $$</p>
 <p>is an order unit of $L_+(E,F)$, and the order-unit norm it defines dominates the operator norm.</p>
 <p><em>Proof.</em> The base $\{x\in E_+ : f(x) = 1\}$ is compact in the weak topology of the order interval when $E$ is a Banach space in its order-unit norm, and the order unit $u$ is an interior point of $E_+$, so strict positivity of $f$ gives a constant $c>0$ with $f(x)\geq c\|x\|_u$ for $x\in E_+$: otherwise a sequence $x_n$ with $f(x_n)\to0$ and $\|x_n\|_u = 1$ would have a cluster point in the compact base on which $f = 0$. For a bounded $S$ one has $Sx\leq\|S\|\|x\|_u\,v$ and $-Sx\leq\|S\|\|x\|_u\,v$ for $x\in E_+$, by the order-unit estimate of <em>Positive Operators on an Ordered Space</em>; substituting $\|x\|_u\leq f(x)/c$ gives $-\lambda T\leq S\leq\lambda T$ with $\lambda = \|S\|/c$. Hence every bounded operator is dominated by a multiple of $T$, and $T$ is an order unit of the cone of bounded positive operators; an unbounded operator is dominated by no multiple of $T$.</p>

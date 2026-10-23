@@ -89,20 +89,26 @@ $$</p>
 <p><strong>Definition (isometry, versor).</strong> An <strong>isometry</strong> of the form is a $\mathbb{C}$-linear map $g$ of the algebra with $\langle g\breve Q_{1},g\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}$ for all $\breve Q_{1},\breve Q_{2}$; the group of them is the <strong>orthogonal group</strong> $O(\mathbb{B}_{\mathrm{r}},\langle\cdot,\cdot\rangle_{\mathrm{ts}})$, denoted $O(2,\mathbb{C})$ for the hyperbolic plane. A <strong>versor</strong> is a unit $P$ with $\langle P\rangle_{\mathrm{ts}}=1$.</p>
 <p><strong>Proposition (scaling of the form by a multiplication).</strong> For every element $P$ and all $\breve Q_{1},\breve Q_{2}$,</p>
 <p>$$
-\langle P \breve Q_{1},P \breve Q_{2}\rangle_{\mathrm{ts}}=\langle P\rangle_{\mathrm{ts}}\,\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}.
+\boxed{\;
+\langle P \breve Q_{1},P \breve Q_{2}\rangle_{\mathrm{ts}}=\langle P\rangle_{\mathrm{ts}}\,\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}
+\;}.
 $$</p>
 <p><strong>Proof.</strong> $\mathrm{Sc}((P \breve Q_{1})_{\mathrm{ts}}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}\breve Q_{1,\mathrm{ts}}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}P\,\breve Q_{1,\mathrm{ts}}\breve Q_{2})=\langle P\rangle_{\mathrm{ts}}\,\mathrm{Sc}(\breve Q_{1,\mathrm{ts}}\breve Q_{2})$, using that the algebra is commutative and that $P_{\mathrm{ts}}P=\langle P\rangle_{\mathrm{ts}}$.</p>
 <p><strong>Corollary (the isometries among the multiplications).</strong> The left multiplication $L_{P}$ by a unit is an isometry of the form exactly when $P$ is a versor; a general unit scales the form by $\langle P\rangle_{\mathrm{ts}}$, hence acts as a similitude of ratio $\langle P\rangle_{\mathrm{ts}}$.</p>
 <h2 id="the-versors-and-their-structure">The Versors and Their Structure</h2>
 <p><strong>Theorem (the versor group).</strong> The versors of the algebra form the abelian group</p>
 <p>$$
-\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})=\{P:\langle P\rangle_{\mathrm{ts}}=1\}=\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-:Q_{+}\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
+\boxed{\;
+\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})=\{P:\langle P\rangle_{\mathrm{ts}}=1\}=\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-:Q_{+}\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times}
+\;},
 $$</p>
 <p>which is the split torus of real dimension two; it is non-compact and has fundamental group $\mathbb{Z}$.</p>
 <p><strong>Proof.</strong> $\langle P\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=1$ forces $Q_{+}\neq0$ and $Q_{-}=Q_{+}^{-1}$, so the versors are the pairs $(Q_{+},Q_{+}^{-1})$ with $Q_{+}$ nonzero; the multiplication is componentwise, $(Q_{+},Q_{+}^{-1})(w,w^{-1})=(Q_{+}w,Q_{+}^{-1}w^{-1})=(Q_{+}w,(Q_{+}w)^{-1})$, which identifies the group with $\mathbb{C}^{\times}$ by the first coordinate. The group $\mathbb{C}^{\times}$ is a real two-dimensional torus in the split sense, non-compact, homotopy equivalent to the circle.</p>
 <p><strong>Theorem (the action gives the identity component).</strong> The map $P\mapsto L_{P}$ from the versor group to the orthogonal group is an injective homomorphism onto the identity component $SO(2,\mathbb{C})$, with trivial kernel, so it is an isomorphism</p>
 <p>$$
-\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})\cong SO(2,\mathbb{C})\cong\mathbb{C}^{\times},
+\boxed{\;
+\mathrm{Vers}(\mathbb{B}_{\mathrm{r}})\cong SO(2,\mathbb{C})\cong\mathbb{C}^{\times}
+\;},
 $$</p>
 <p>sending the versor $Q_{+}\Pi_++Q_{+}^{-1}\Pi_-$ to the hyperbolic rotation of parameter $Q_{+}$ in the coordinates above.</p>
 <p><strong>Proof.</strong> $L_{P}L_{W}=L_{PW}$, so the map is a homomorphism; it is an isometry by the corollary above and it is $\mathbb{C}$-linear, so its image lies in the orthogonal group, and its determinant is $\det L_{P}=\langle P\rangle_{\mathrm{ts}}=1$, since $L_{P}$ has the matrix $\left(\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}\right)$ on the basis $1,j$, so the image lies in the identity component. Its kernel is the set of $P$ with $L_{P}$ the identity; a unit acting trivially must satisfy $P=L_{P}(1)=1$, so the kernel is $\{1\}$ and the map is injective. It is also surjective: for the form $\operatorname{diag}(1,-1)$ an element of the identity component has the matrix $\left(\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}\right)$ with $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=1$, which is $L_{P}$ for the versor $P=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. Both groups are isomorphic to $\mathbb{C}^{\times}$ and the map is that isomorphism. Because the algebra is commutative the conjugation $P \breve Q P^{-1}$ is the identity, so the standard spin action is trivial and the two-to-one covering is not the mechanism here: the versors are abstractly the spin group $\mathrm{Spin}(2,\mathbb{C})\cong\mathbb{C}^{\times}$ of the plane, but they act faithfully on the space, by left multiplication, and the realised map is an isomorphism rather than a double covering.</p>

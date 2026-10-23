@@ -76,13 +76,13 @@
 <h2 id="projections-and-direct-decompositions">Projections and Direct Decompositions</h2>
 <p><strong>Proposition (idempotents and decompositions).</strong> Let $P \in \mathcal{L}(E)$ satisfy $P^{2} = P$. Then every $x \in E$ decomposes uniquely as $x = (x - Px) + Px$ with $x - Px \in \ker P$ and $Px \in \mathrm{im}\,P$, so</p>
 <p>$$
-E = \ker P \oplus \mathrm{im}\,P ,
+\boxed{\;E = \ker P \oplus \mathrm{im}\,P\;} ,
 $$</p>
 <p>$\mathrm{im}\,P = \ker(\mathrm{id} - P)$, and $\ker P = \mathrm{im}(\mathrm{id} - P)$. Conversely, if $E = M \oplus N$ is an algebraic direct sum, the map $P$ that is the identity on $M$ and zero on $N$ is idempotent with $\mathrm{im}\,P = M$ and $\ker P = N$, and it is the unique idempotent with those kernel and image.</p>
 <p><strong>Proof.</strong> $P(x - Px) = Px - P^{2}x = 0$, and $Px \in \mathrm{im}\,P$; the decomposition is unique because an element of $\ker P \cap \mathrm{im}\,P$ is killed by $P$ and is in its image, hence is $0$. The statements about $\mathrm{id} - P$ are symmetric. For the converse, $P$ as defined is linear, satisfies $P^{2} = P$, and has the stated kernel and image; uniqueness is the decomposition.</p>
 <p><strong>Proposition (continuity of the summand projection).</strong> Let $P \in \mathcal{L}(E)$ be idempotent. Then $\ker P$ and $\mathrm{im}\,P$ are closed, the map</p>
 <p>$$
-\Phi : \ker P \times \mathrm{im}\,P \longrightarrow E, \qquad \Phi(u, v) = u + v ,
+\boxed{\;\Phi : \ker P \times \mathrm{im}\,P \longrightarrow E, \qquad \Phi(u, v) = u + v\;} ,
 $$</p>
 <p>is a topological isomorphism, and $P$ is an open map onto its image. Conversely, if $E = M \oplus N$ is a topological direct sum, the projection onto $M$ along $N$ is continuous.</p>
 <p><strong>Proof.</strong> The kernel of a continuous map is closed, and $\ker(\mathrm{id} - P) = \mathrm{im}\,P$ is closed for the same reason. The inverse of $\Phi$ is $x \mapsto (x - Px, Px)$, which is continuous, so $\Phi$ is a continuous bijection with continuous inverse. The restriction of $P$ to $E$ is the composite of $\Phi^{-1}$ and the projection onto the second factor, hence open onto its image. Conversely, the projection onto $M$ along $N$ is the composite of the inverse of the sum isomorphism and the projection of a product, hence continuous.</p>

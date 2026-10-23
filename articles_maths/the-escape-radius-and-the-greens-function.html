@@ -85,9 +85,7 @@ $$</p>
 $$</p>
 <p>since $|z| - (R-1) > 1$ and $|z|^{d-1} \geq |z|$ for $|z| > 1$ and $d \geq 2$. Hence the moduli increase and diverge.</p>
 <p><strong>Theorem (the optimal radius for the quadratic family).</strong> For $f_c(z) = z^2+c$ the number</p>
-<p>$$
-R(c) = \frac{1 + \sqrt{1+4|c|}}{2}
-$$</p>
+<p>$$\boxed{\;R(c) = \frac{1 + \sqrt{1+4|c|}}{2}\;}$$</p>
 <p>is the least escape radius; it is the positive root of $x^2 - x - |c| = 0$, and</p>
 <p>$$
 |z| > R(c) \implies |f_c(z)| \geq |z|^2-|c| > |z|, \qquad \frac{|f_c(z)|}{R(c)} \geq \Bigl(\frac{|z|}{R(c)}\Bigr)^{2} ,
@@ -114,9 +112,7 @@ $$</p>
 <p><strong>Corollary.</strong> The Böttcher coordinate of <em>The Fatou Components and the Classification of the Dynamics</em> is $\varphi = \exp(G + iH)$, where $H$ is a harmonic conjugate of $G$ on the basin; it satisfies $\varphi(f(z)) = \varphi(z)^d$ and $\varphi(z) = z + O(1)$ at infinity, and $|\varphi| = \exp(G)$. The level curves of $G$ are the <strong>equipotentials</strong> of the basin and the level curves of $H$ are the <strong>external rays</strong>; the rays and their landing are Part IV's.</p>
 <h3 id="the-explicit-series-for-the-quadratic-family">The Explicit Series for the Quadratic Family</h3>
 <p><strong>Theorem.</strong> For $f_c(z) = z^2+c$ and $z$ outside the filled Julia set,</p>
-<p>$$
-G(z) = \log|z| + \sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \log\left| 1 + \frac{c}{f_c^n(z)^2} \right| ,
-$$</p>
+<p>$$\boxed{\;G(z) = \log|z| + \sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \log\left| 1 + \frac{c}{f_c^n(z)^2} \right|\;},$$</p>
 <p>the series converging because $|f_c^n(z)| \to \infty$.</p>
 <p><strong>Proof.</strong> Write $\log|f_c(w)| = 2\log|w| + \log|1 + c/w^2|$ and iterate: after $n$ steps,</p>
 <p>$$
@@ -132,9 +128,7 @@ $$</p>
 <p><strong>Example (capacity one).</strong> The difference $G(z) - \log|z|$ decays like $|z|^{-2}$ along the positive real axis: it is $-5.051 \times 10^{-3}$ at $|z| = 10$, $-5.001 \times 10^{-5}$ at $|z| = 100$, and $-5.000 \times 10^{-9}$ at $|z| = 10^4$ for $c = -1$. The limit of $G - \log|z|$ at infinity is therefore $0$, which says that the filled Julia set has <strong>logarithmic capacity</strong> one.</p>
 <h2 id="the-laplacian-and-the-invariant-measure">The Laplacian and the Invariant Measure</h2>
 <p><strong>Theorem.</strong> Let $\mu$ be the equilibrium measure of the filled Julia set, that is, the unique probability measure of minimal energy in the logarithmic kernel of <em>Potential Theory</em>. Then</p>
-<p>$$
-G(z) = \int \log|z - w| \, d\mu(w) , \qquad z \in \mathbb{C},
-$$</p>
+<p>$$\boxed{\;G(z) = \int \log|z - w| \, d\mu(w) , \qquad z \in \mathbb{C}\;},$$</p>
 <p>the logarithmic potential of $\mu$; the function $G$ is the unique harmonic function on $A(\infty)$ that vanishes on $\partial A(\infty) = J(f)$ and is tangent to $\log|z|$ at infinity; and</p>
 <p>$$
 \mu = \frac{1}{2\pi}\,\Delta G

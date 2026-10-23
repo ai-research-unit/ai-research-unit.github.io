@@ -93,7 +93,7 @@ $$</p>
 <p>and <strong>Hermitian</strong>, $h(x,y) = \overline{h(y,x)}$; it is <strong>symmetric</strong> when $\sigma = \mathrm{id}$ and the Hermitian condition is the symmetry, and <strong>alternating</strong> when $h(x,x) = 0$ throughout, a case that occurs only in characteristic two for the nontrivial involution.</p>
 <p><strong>Proposition.</strong> In a basis of $V$ a Hermitian form is represented by a matrix $H$ with</p>
 <p>$$
-h(x,y) = x^{*}\, H\, y , \qquad H^{*} = H , \qquad (H^{*})_{ij} = \overline{H_{ji}} ,
+\boxed{\;h(x,y) = x^{*}\, H\, y , \qquad H^{*} = H , \qquad (H^{*})_{ij} = \overline{H_{ji}}\;} ,
 $$</p>
 <p>where $x$ and $y$ are the coordinate columns and the star is the conjugate transpose; the Hermitian matrices form a $K_0$-subspace of $M_n(K)$, of dimension $n^2$ over $K_0$ when $K/K_0$ is quadratic and of dimension $\frac{n(n+1)}{2}$ when $\sigma = \mathrm{id}$, and the form is <strong>nondegenerate</strong> exactly when $H$ is invertible.</p>
 <p><strong>Proof.</strong> The sesquilinearity is the linearity in the coordinates and the conjugate-linearity in the second factor, so the form is $x^{*}Hy$; the Hermitian condition is $H^{*} = H$ because the conjugate transpose of the scalar $x^{*}Hy$ is $y^{*}H^{*}x$; the dimension over $K_0$ follows from the number of the independent entries, which is $n^2$ for each entry subject to $H_{ij} = \overline{H_{ji}}$ and $\frac{n(n+1)}{2}$ for the symmetric case; the form is nondegenerate exactly when the map $y \mapsto h(\cdot,y)$ is an isomorphism, which is the invertibility of $H$.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h3 id="definition-and-the-exact-sequences">Definition and the Exact Sequences</h3>
 <p><strong>Definition.</strong> Let $(V,h)$ be a Hermitian space. The <strong>unitary group</strong> is</p>
 <p>$$
-\mathrm{U}(V,h) = \{T \in GL(V) : h(Tx, Ty) = h(x,y) \ \text{for all } x, y\} ,
+\boxed{\;\mathrm{U}(V,h) = \{T \in GL(V) : h(Tx, Ty) = h(x,y) \ \text{for all } x, y\}\;} ,
 $$</p>
 <p>the group of the isometries of the form; the <strong>general unitary group</strong> is the group of the <strong>similitudes</strong>,</p>
 <p>$$
@@ -117,7 +117,7 @@ $$</p>
 <p>and the <strong>special unitary group</strong> $SU(V,h) = \mathrm{U}(V,h) \cap SL(V)$ is the subgroup of determinant one; over a real field the groups are the compact groups of the classical theory.</p>
 <p><strong>Theorem.</strong> The unitary group is a subgroup of $GL(V)$ defined by the polynomial equations $T^{*}HT = H$ in a basis, and the general unitary group sits in the exact sequence</p>
 <p>$$
-1 \longrightarrow \mathrm{U}(V,h) \longrightarrow GU(V,h) \xrightarrow{\ \lambda\ } K_0^\times ,
+\boxed{\;1 \longrightarrow \mathrm{U}(V,h) \longrightarrow GU(V,h) \xrightarrow{\ \lambda\ } K_0^\times\;} ,
 $$</p>
 <p>with $\lambda$ the similarity factor, a homomorphism whose kernel is the unitary group and whose image contains the squares of $K_0$ and the norms $N(K^\times)$; the determinant of an element of the unitary group lies in $K_0$ with norm one in the nontrivial case, so the special unitary group $SU(V,h)$ has index the group of the determinants of norm one, and the dimension of the unitary group over $K_0$ is $n^2$ in the quadratic case and $\frac{n(n-1)}{2}$ in the symmetric case.</p>
 <p><strong>Proof.</strong> The isometry condition in coordinates is $T^{*}HT = H$, which is the displayed matrix equation; the similarity factor is a homomorphism to $K_0^\times$ because the form is Hermitian and the factor is fixed by the involution, and the kernel is the unitary group. The determinant statement follows because $\det(T^{*}HT) = \overline{\det T}\det H \det T = \det H$ forces $N(\det T) = 1$ in the nontrivial case while the trivial case has no condition beyond the determinant being a square class; the dimension counts are those of the ambient matrix space minus the conditions, computed as in the previous section.</p>

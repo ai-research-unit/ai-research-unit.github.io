@@ -85,7 +85,7 @@ $$</p>
 <h3 id="the-two-parts">The Two Parts</h3>
 <p><strong>Theorem (the decomposition).</strong> Every $T \in B(A)$ is the sum</p>
 <p>$$
-T = \tfrac{1}{2}(T + T^{\dagger}) + \tfrac{1}{2}(T - T^{\dagger})
+\boxed{\;T = \tfrac{1}{2}(T + T^{\dagger}) + \tfrac{1}{2}(T - T^{\dagger})\;}
 $$</p>
 <p>of a self-adjoint and a skew-adjoint operator, and the two summands are the only such decomposition of $T$ when $2$ is invertible in $k$.</p>
 <p><em>Proof.</em> The scalar $\tfrac{1}{2}$ lies in the fixed field $k = R^{\varsigma}$, so $\varsigma(\tfrac{1}{2}) = \tfrac{1}{2}$ and $(\tfrac{1}{2}T)^{\dagger} = \tfrac{1}{2}T^{\dagger}$; the adjoint of $\tfrac{1}{2}(T + T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} + T)$, which is itself, and the adjoint of $\tfrac{1}{2}(T - T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} - T)$, which is its negative. If $T = S + K$ with $S$ self-adjoint and $K$ skew-adjoint, then $T^{\dagger} = S - K$, so $S = \tfrac{1}{2}(T + T^{\dagger})$ and $K = \tfrac{1}{2}(T - T^{\dagger})$, which is the uniqueness.</p>
@@ -98,7 +98,7 @@ $$</p>
 <h3 id="the-sign-rule">The Sign Rule</h3>
 <p><strong>Theorem (the sign rule).</strong> Let $S, T \in B(A)$ have adjoint-signs $\epsilon, \delta \in \{+1,-1\}$. Then</p>
 <p>$$
-(ST + TS)^{\dagger} = \epsilon\delta\,(ST + TS) , \qquad (ST - TS)^{\dagger} = -\epsilon\delta\,(ST - TS) .
+\boxed{\;(ST + TS)^{\dagger} = \epsilon\delta\,(ST + TS) , \qquad (ST - TS)^{\dagger} = -\epsilon\delta\,(ST - TS)\;} .
 $$</p>
 <p><em>Proof.</em> By the anti-multiplicativity, $(ST)^{\dagger} = T^{\dagger}S^{\dagger} = \delta T \cdot \epsilon S = \epsilon\delta\,TS$, and $(TS)^{\dagger} = \epsilon\delta\,ST$. Adding and subtracting give the two assertions.</p>
 <p><strong>Corollary (the three product relations).</strong> The anticommutator of two self-adjoint operators is self-adjoint, the commutator of two self-adjoint operators is skew-adjoint, the anticommutator of a self-adjoint and a skew-adjoint operator is skew-adjoint, their commutator is self-adjoint, the anticommutator of two skew-adjoint operators is self-adjoint, and their commutator is skew-adjoint.</p>
@@ -127,7 +127,7 @@ $$</p>
 <h3 id="the-cayley-transform">The Cayley Transform</h3>
 <p><strong>Theorem (the Cayley transform).</strong> Let $S$ be skew-adjoint and suppose $1 + S$ invertible. Then</p>
 <p>$$
-U = (1 - S)(1 + S)^{-1}
+\boxed{\;U = (1 - S)(1 + S)^{-1}\;}
 $$</p>
 <p>is unitary, and it is the unique operator with $1 + U$ invertible and $S = (1 - U)(1 + U)^{-1}$.</p>
 <p><em>Proof.</em> The factors $1 - S$ and $(1 + S)^{-1}$ commute, being functions of $S$; their adjoints are $(1 + S)^{\dagger} = 1 - S$ and $((1+S)^{-1})^{\dagger} = (1 - S)^{-1}$, so $U^{\dagger} = (1 - S)^{-1}(1 + S)$. Then $U^{\dagger}U = (1-S)^{-1}(1+S)(1-S)(1+S)^{-1} = (1-S)^{-1}(1-S)(1+S)(1+S)^{-1} = 1$, using the commutation, and similarly $UU^{\dagger} = 1$. For the inversion, $1 - U = 2S(1+S)^{-1}$ and $1 + U = 2(1+S)^{-1}$, whose ratio is $S$.</p>

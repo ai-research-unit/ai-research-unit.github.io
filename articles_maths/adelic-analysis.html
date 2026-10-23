@@ -86,7 +86,7 @@ whenever $A_v$ is a measurable subset of $K_v$ equal to $\mathcal{O}_v$ for almo
 <h3 id="the-volume-of-the-adele-class-group">The Volume of the Adele Class Group</h3>
 <p><strong>Theorem (finiteness of the volume).</strong> The quotient $\mathbb{A}/K$ has finite volume for every number field, and it is compact exactly when $K$ is a function field, that is, when $K$ has no infinite place: for a number field $\mathbb{A}/K$ is not compact. With the normalisation above,
 $$
-\operatorname{vol}(\mathbb{A}/K) = \frac{2^{r_1}(2\pi)^{r_2}\,h\,R}{w\sqrt{\lvert d_K \rvert}},
+\boxed{\;\operatorname{vol}(\mathbb{A}/K) = \frac{2^{r_1}(2\pi)^{r_2}\,h\,R}{w\sqrt{\lvert d_K \rvert}}\;},
 $$
 where $h$ is the class number, $R$ the regulator, $w$ the number of roots of unity in $K$ and $d_K$ the discriminant. In particular $\operatorname{vol}(\mathbb{A}_\mathbb{Q}/\mathbb{Q}) = 1$.</p>
 <p><strong>Proof sketch.</strong> A fundamental domain is the product of a fundamental domain for the ideal class group with a fundamental domain for the unit lattice, whose covolume is the regulator; the factors $2^{r_1}$ and $(2\pi)^{r_2}$ come from the normalisations of the local measures at the infinite places, and $w$ and $\sqrt{\lvert d_K\rvert}$ from the torsion and the discriminant. For $K = \mathbb{Q}$ the fundamental domain is $[0,1) \times \prod_p \mathbb{Z}_p$, of measure $1$. The computation is the analytic form of the finiteness of the class number and Dirichlet's unit theorem.</p>
@@ -123,7 +123,7 @@ $$
 <h2 id="poisson-summation-and-riemannroch">Poisson Summation and Riemann–Roch</h2>
 <p><strong>Theorem (Poisson summation).</strong> Let $f \in \mathcal{S}(\mathbb{A})$. Then
 $$
-\sum_{\gamma \in K} f(\gamma) = \sum_{\gamma \in K} (\mathcal F f)(\gamma),
+\boxed{\;\sum_{\gamma \in K} f(\gamma) = \sum_{\gamma \in K} (\mathcal F f)(\gamma)\;},
 $$
 both series converging absolutely.</p>
 <p><strong>Proof sketch.</strong> The sum over $K$ of $f$ defines a continuous function $F$ on the compact quotient $\mathbb{A}/K$; its Fourier coefficients on the compact group are the values $(\mathcal F f)(\gamma)$ of the transform, by the computation of the pairing of $F$ against the character $\psi_\gamma$. The inversion formula for the compact group $\mathbb{A}/K$, applied at $x=0$, identifies the value $F(0)$ with the sum of the coefficients.</p>
@@ -180,7 +180,7 @@ $$
 $$
 is the completed $L$-function of $\chi$ and satisfies
 $$
-\Lambda(s,\chi) = \epsilon(s,\chi)\,\Lambda(1-s,\chi^{-1}),
+\boxed{\;\Lambda(s,\chi) = \epsilon(s,\chi)\,\Lambda(1-s,\chi^{-1})\;},
 $$
 with the global root number satisfying $\epsilon(s,\chi)\epsilon(1-s,\chi^{-1}) = 1$.</p>
 <p><strong>Proof sketch.</strong> The functional equation for the global integral is the Poisson summation formula applied to the function $x \mapsto \Phi(x)\chi(x)\lvert x \rvert^s$ and to its transform: Poisson summation gives an identity between the sum over $K^\times$ of a function and the sum over $K^\times$ of its transform, and the two sides are the integrals over the two fundamental domains obtained by truncating $\mathbb{A}^\times/K^\times$ at $\lvert x \rvert$ large and small. The contribution of the truncations is an integral over the compact set $\mathbb{A}^1/K^\times$, which is finite by the finiteness of the volume, and it converges and is holomorphic; the remaining terms give exactly the transformation $s \mapsto 1-s$. Multiplying the local functional equations over the places gives the functional equation of the normalised integral, with $\epsilon(s,\chi)$ the product of the local root numbers, and inserting $\prod_v L_v(s,\chi_v) = L(s,\chi)$ gives the functional equation of the completed $L$-function. The doubling identity for $\epsilon$ follows by applying the functional equation twice.</p>

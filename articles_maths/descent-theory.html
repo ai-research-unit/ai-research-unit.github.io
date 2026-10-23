@@ -95,7 +95,7 @@ and the covering $\mathcal{U}$ is <strong>effective for descent</strong> in $\ma
 <h2 id="faithfully-flat-descent">Faithfully Flat Descent</h2>
 <p><strong>Theorem (Grothendieck, faithfully flat descent).</strong> Let $R\to R'$ be a faithfully flat ring homomorphism. Then the comparison functor
 $$
-{}_{R}\mathbf{Mod}\longrightarrow\mathrm{Desc}(R'/R),\qquad M\mapsto (M\otimes_RR',\ \text{canonical}),
+\boxed{\;{}_{R}\mathbf{Mod}\longrightarrow\mathrm{Desc}(R'/R),\qquad M\mapsto (M\otimes_RR',\ \text{canonical})\;},
 $$
 from the category of $R$-modules to the category of $R'$-modules with descent data is an equivalence of categories. Equivalently, the category of $R$-modules is equivalent to the category of modules over the cosimplicial ring
 $$
@@ -109,7 +109,7 @@ $$
 and the flatness of $R'$ over $R$ shows that $M\otimes_RR'\cong M'$ compatibly with $\phi$; the cocycle condition is what makes the equalizer compute the correct module and makes the two constructions inverse.</p>
 <p><strong>Definition.</strong> The <strong>Amitsur complex</strong> of a faithfully flat cover $R\to R'$ is the cosimplicial object with terms $R'\otimes_RR'\otimes_R\cdots\otimes_RR'$ and the coface maps inserting $1$ in the consecutive positions; for an $R$-module $M$ the complex
 $$
-0\to M\to M\otimes_RR'\to M\otimes_RR'\otimes_RR'\to\cdots
+\boxed{\;0\to M\to M\otimes_RR'\to M\otimes_RR'\otimes_RR'\to\cdots\;}
 $$
 is the <strong>Amitsur cochain complex</strong>, and its cohomology computes the descent obstruction: $H^0$ is the module $M$ itself and the higher cohomology vanishes whenever the descent is effective.</p>
 <p><strong>Proposition.</strong> For a faithfully flat cover the Amitsur complex of $M$ is exact in positive degrees — it is a resolution of $M$ by the tensor powers of $R'$ — so $H^0=M$ and $H^n=0$ for $n\ge1$, and every descent datum of $R'$-modules is effective. Comparing the cohomology of the base with the cohomology of the cover in the derived setting is the Grothendieck spectral sequence of the composite of the two global-section functors, developed in <em>Spectral Sequences</em> and applied to the cosimplicial object of the cover; the obstruction to descending a more general structure is the usual Čech-style obstruction of <em>Sheaves on Sites</em>. The complex is the algebraic form of the cosimplicial object attached to a covering of a site.</p>

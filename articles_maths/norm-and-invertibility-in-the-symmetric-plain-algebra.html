@@ -101,7 +101,7 @@ $$</p>
 <p><strong>The algebraic norm of the block is not multiplicative:</strong> $\langle\tilde Q_1\bullet\tilde Q_2\rangle\neq \langle\tilde Q_1\rangle\langle\tilde Q_2\rangle$ in general, the pair $(\vec e_x,\vec e_y)$ separating the two sides.</p>
 <p><strong>Proposition.</strong> The algebraic norm of the block is <strong>not</strong> multiplicative:</p>
 <p>$$
-\langle\tilde Q_1\bullet\tilde Q_2\rangle\neq \langle\tilde Q_1\rangle\,\langle\tilde Q_2\rangle\quad\text{in general.}
+\boxed{\; \langle\tilde Q_1\bullet\tilde Q_2\rangle\neq \langle\tilde Q_1\rangle\,\langle\tilde Q_2\rangle\quad\text{in general.} \;}
 $$</p>
 <p><em>Proof.</em> The pair $\vec e_x,\vec e_y$ separates the two sides: $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=\tfrac12(\vec e_z-\vec e_z)=0$, so $\langle \vec e_x\bullet \vec e_y\rangle=\langle 0\rangle=0$, while $\langle \vec e_x\rangle\langle \vec e_y\rangle=(-1)(-1)=1$. The two values differ, so no multiplicativity holds.</p>
 <p><strong>Remark (the multiplicative algebraic norm is another form).</strong> Of the four algebraic norms of the space the multiplicative one is $\langle\cdot\rangle_{\natural}$, the algebraic norm of the quaternionic product, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$; it is a different quadratic form on the same space, and the block, whose product is not associative and has zero divisors, fails multiplicativity for its own algebraic norm $\langle\cdot\rangle$. The multiplicativity that the block does retain is the one of the quadratic representation of the Jordan theory, a statement about a different quadratic form and not about $\langle\cdot,\cdot\rangle$.</p>
@@ -113,9 +113,9 @@ $$</p>
 <p>The algebraic norm of a product would decide invertibility if the invertible elements were exactly the elements of non-vanishing algebraic norm. For the block that statement is <strong>false in both directions</strong>, and the article records the absence rather than a criterion.</p>
 <p><strong>Theorem (the algebraic norm does not decide invertibility).</strong> Neither implication holds:</p>
 <p>$$
-\langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\text{ non-invertible},
+\boxed{\; \langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\text{ non-invertible},
 \qquad
-\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible}.
+\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible} \;}.
 $$</p>
 <p><em>Proof.</em> For the first implication, the element $\tilde Q=e_t+\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-1^{2}=0$, and it is invertible: $(e_t+\vec e_x)\bullet\tfrac12(e_t-\vec e_x)=\tfrac12(e_t+\vec e_x)(e_t-\vec e_x)=\tfrac12\cdot2e_t=e_t$ and $\tilde Q^{\bullet2}\bullet\tfrac12(e_t-\vec e_x)=\tilde Q$, so $\tfrac12(e_t-\vec e_x)$ is its inverse of the block. For the second implication, the element $\tilde Q=e_t+i\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-(i)^{2}=1+1=2\neq0$, and it is a zero divisor, $(e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^{2}-(i\vec e_x)^{2}=e_t-e_t=0$, hence non-invertible while its algebraic norm does not vanish.</p>
 <p><strong>Remark (the two witnesses).</strong> The element $e_t+\vec e_x$ is invertible with vanishing algebraic norm, so the algebraic norm is not necessary for invertibility; the element $e_t+i\vec e_x$ is non-invertible with non-vanishing algebraic norm, so it is not sufficient either. The vanishing set of $\langle\cdot\rangle$ is the complex cone and the zero-divisor set is the cone of a different quadratic form; the two cones meet but neither contains the other.</p>

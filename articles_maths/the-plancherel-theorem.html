@@ -83,7 +83,7 @@
 $$</p>
 <p>where the trace is the ordinary trace on the finite-rank operators and $(\mathcal F f)(\pi)(\mathcal F h)(\pi)^*$ is trace class. Taking $h = f$ gives the <strong>isometric form</strong></p>
 <p>$$
-\int_{\operatorname{Irr}(G)} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) \;=\; \int_G |f(g)|^2\,dg ,
+\boxed{\;\int_{\operatorname{Irr}(G)} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) \;=\; \int_G |f(g)|^2\,dg\;} ,
 $$</p>
 <p>and taking $h$ to be an approximate identity concentrated at $e$ and passing to the limit gives the <strong>definite form</strong></p>
 <p>$$
@@ -99,14 +99,14 @@ $$</p>
 <h3 id="inversion">Inversion</h3>
 <p><strong>Theorem (inversion).</strong> Let $G$ be unimodular of type I and let $f \in L^1(G)\cap L^2(G)$ be such that $\pi \mapsto \operatorname{Tr}((\mathcal F f)(\pi)\pi(g)^{-1})$ is integrable against $\mu_P$ for almost every $g$. Then</p>
 <p>$$
-f(g) = \int_{\operatorname{Irr}(G)} \operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(g)^{-1}\bigr)\,d\mu_P(\pi)
+\boxed{\;f(g) = \int_{\operatorname{Irr}(G)} \operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(g)^{-1}\bigr)\,d\mu_P(\pi)\;}
 $$</p>
 <p>for almost every $g$; the integral converges in $L^2(G)$ for every $f \in L^2(G)$ and defines the inverse transform. In the abelian case $\operatorname{Irr}(G) = G^\vee$, $d_\pi = 1$, and the formula is the inversion theorem of <em>Harmonic Analysis on Groups</em>; in the compact case it is the Fourier inversion of <em>Analysis on Compact Groups</em>.</p>
 <p><strong>Proof sketch.</strong> Apply the definite form of the Plancherel theorem to the left translate $L_{g^{-1}}f$, whose transform is $\pi(g)^{-1}(\mathcal F f)(\pi)$; the definite form at the identity of the translate is the value of $f$ at $g$, and the trace of the product gives the displayed integrand. The $L^2$ statement is the inverse of the unitary equivalence below.</p>
 <h3 id="the-transform-as-a-unitary-equivalence">The Transform as a Unitary Equivalence</h3>
 <p><strong>Theorem.</strong> For a unimodular group $G$ of type I, the operator-valued transform extends uniquely to a unitary equivalence of Hilbert spaces</p>
 <p>$$
-\mathcal{F} : L^2(G) \;\longrightarrow\; \int_{\operatorname{Irr}(G)}^{\oplus} \bigl(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*\bigr)\,d\mu_P(\pi),
+\boxed{\;\mathcal{F} : L^2(G) \;\longrightarrow\; \int_{\operatorname{Irr}(G)}^{\oplus} \bigl(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*\bigr)\,d\mu_P(\pi)\;},
 $$</p>
 <p>where the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ carries the Hilbert–Schmidt inner product $\langle A,B\rangle = \operatorname{Tr}(AB^*)$. Under $\mathcal{F}$, left convolution by $f \in L^1(G)$ corresponds to the field of operators $(\mathcal F f)(\pi)$, and the left regular representation corresponds to the field $\pi\otimes\pi^*$; equivalently $\mathcal{F}\,\lambda(f)\,\mathcal{F}^{-1}$ is multiplication by $(\mathcal F f)(\pi)$ on the fibres.</p>
 <p><strong>Proof.</strong> The transform is isometric on the dense subspace $L^1\cap L^2$ by the Plancherel identity, and its image is dense in the direct integral because it contains the fields of finite rank supported on compact subsets of the dual; density of the image follows from the definite form applied to $f*h^*$ for $f,h$ in the coefficient algebra, which produces the rank-one fields $(\mathcal F f)(\pi)(\mathcal F h)(\pi)^* = |(\mathcal F f)(\pi)\rangle\langle(\mathcal F h)(\pi)|$. Hence the extension is unitary and onto. The intertwining statement is the convolution theorem, $\widehat{f*h}(\pi) = (\mathcal F f)(\pi)(\mathcal F h)(\pi)$, applied to the definition of $\lambda(f)$.</p>

@@ -117,7 +117,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>suspension</strong> of a $\mathrm{C}^*$-algebra $A$ is $SA = C_0(\mathbb{R})\otimes A$, with $C_0(\mathbb{R})$ the algebra of continuous complex functions vanishing at infinity on the line; more generally $S^nA = C_0(\mathbb{R}^n)\otimes A$.</p>
 <p><strong>Theorem (Bott periodicity for $\mathrm{C}^*$-algebras; standard).</strong> For every $\mathrm{C}^*$-algebra $A$ there are natural isomorphisms</p>
 <p>$$
-K_0(A) \;\cong\; K_1(SA) , \qquad K_0(A) \;\cong\; K_0(S^2A) , \qquad K_1(A)\cong K_1(S^2A) ,
+\boxed{\;K_0(A) \;\cong\; K_1(SA) , \qquad K_0(A) \;\cong\; K_0(S^2A) , \qquad K_1(A)\cong K_1(S^2A)\;} ,
 $$</p>
 <p>so that the functors $K_n(A) = K_0(S^nA)$ for $n \geq 0$ are periodic of period two, $K_{n+2}(A)\cong K_n(A)$, with $K_0$ and $K_1$ the only two groups. The isomorphism $K_0(A)\to K_1(SA)$ is the <strong>Bott map</strong>.</p>
 <p><strong>Proof.</strong> The Bott map sends the class $[p]$ of a projection $p$ over $A$ to the class of the unitary $\exp(2\pi i f)\otimes p + (1-p)$ in $(SA)^+$ formed from a function $f\in C_0(\mathbb{R})$ that is a suitable "Bott function", a continuous real function going from $0$ at $-\infty$ to $1$ at $+\infty$; the theorem is that the map so defined is an isomorphism, and the second isomorphism follows from the first applied twice together with the identification $S^2A$. This is the Bott periodicity theorem for $\mathrm{C}^*$-algebras; it is quoted as standard.</p>
@@ -126,7 +126,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>short exact sequence</strong> of $\mathrm{C}^*$-algebras is an exact sequence $0\to J\to A\to A/J\to0$ with $J$ a closed two-sided ideal of $A$ and $A/J$ the quotient.</p>
 <p><strong>Theorem (the six-term exact sequence; standard).</strong> For every short exact sequence $0\to J\xrightarrow{\iota}A\xrightarrow{\pi}A/J\to0$ of $\mathrm{C}^*$-algebras the induced maps on $K$-theory are accompanied by a <strong>boundary (index) map</strong> $\partial : K_1(A/J)\to K_0(J)$ and fit into the cyclic exact sequence</p>
 <p>$$
-K_0(J) \xrightarrow{\iota_*} K_0(A) \xrightarrow{\pi_*} K_0(A/J) \xrightarrow{\ \partial\ } K_1(J) \xrightarrow{\iota_*} K_1(A) \xrightarrow{\pi_*} K_1(A/J) \xrightarrow{\ \partial\ } K_0(J) ,
+\boxed{\;K_0(J) \xrightarrow{\iota_*} K_0(A) \xrightarrow{\pi_*} K_0(A/J) \xrightarrow{\ \partial\ } K_1(J) \xrightarrow{\iota_*} K_1(A) \xrightarrow{\pi_*} K_1(A/J) \xrightarrow{\ \partial\ } K_0(J)\;} ,
 $$</p>
 <p>in which the last map returns to the first term; exactness holds at each of the six terms.</p>
 <p><strong>Proof.</strong> Exactness at the first four terms is proved by lifting projections and unitaries along the quotient map, using that a projection or a unitary in $A/J$ can be lifted and that the obstruction to lifting it to $A$ is measured in the ideal; the boundary map is defined by the index of a partial isometry implementing the lift, and the argument is the standard one for the exact sequence of an ideal. It is quoted as standard.</p>
@@ -137,7 +137,7 @@ $$</p>
 <h3 id="the-commutative-case">The Commutative Case</h3>
 <p><strong>Theorem (Gelfand duality and the topological theory).</strong> Let $X$ be a compact Hausdorff space and $A = C(X)$. Then there are natural isomorphisms</p>
 <p>$$
-K_0(A) \cong K^0(X) , \qquad K_1(A) \cong K^1(X) ,
+\boxed{\;K_0(A) \cong K^0(X) , \qquad K_1(A) \cong K^1(X)\;} ,
 $$</p>
 <p>where $K^0$ and $K^1$ are the topological $K$-groups of <em>Topological K-Theory</em>; the identification on $K_0$ is Swan's theorem, and the identification on $K_1$ matches the components of the unitary group of $C(X)$ with the clutching classes on the suspension.</p>
 <p><strong>Proof.</strong> The first isomorphism is Swan's theorem: finitely generated projective modules over $C(X)$ are the modules of sections of vector bundles, which is the definition of the algebraic $K_0$ of $C(X)$ and, by the agreement theorem above, of $K_0(C(X))$. For the second, a unitary of $M_n(C(X))$ is a continuous map $X\to \mathrm{U}(n)$, and the homotopy classification of such maps is the clutching classification of bundles over the suspension of $X$, which is the definition of $K^1(X)$. This is standard.</p>

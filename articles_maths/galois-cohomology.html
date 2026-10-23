@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Proof.</strong> These are the standard constructions of <em>Group Cohomology</em>: restriction is the functoriality of $H^n$ in the group variable, and corestriction is the transfer in the group algebra.</p>
 <p><strong>Theorem (long exact sequence).</strong> Let $0 \to A \to B \to C \to 0$ be an exact sequence of abelian $G$-groups. Then there is a long exact sequence</p>
 <p>$$
-0 \to A^G \to B^G \to C^G \xrightarrow{\delta} H^1(G,A) \to H^1(G,B) \to H^1(G,C) \xrightarrow{\delta} H^2(G,A) \to \cdots
+\boxed{\;0 \to A^G \to B^G \to C^G \xrightarrow{\delta} H^1(G,A) \to H^1(G,B) \to H^1(G,C) \xrightarrow{\delta} H^2(G,A) \to \cdots\;}
 $$</p>
 <p>which is natural in the coefficient sequence.</p>
 <p><strong>Proof.</strong> The short exact sequence of coefficient groups becomes a short exact sequence of cochain complexes after applying $\operatorname{Hom}(\mathbb{Z}[G\text{-free resolution}], -)$; the zig-zag lemma produces the connecting homomorphism $\delta$ and the long exact sequence. This is the fundamental theorem of <em>Group Cohomology</em>.</p>
@@ -136,7 +136,7 @@ $$</p>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem (Hilbert's theorem 90, multiplicative form).</strong> Let $L/K$ be a finite Galois extension with group $G$. Then</p>
 <p>$$
-H^1(L/K, L^\times) = 0 .
+\boxed{\;H^1(L/K, L^\times) = 0\;} .
 $$</p>
 <p>Equivalently, if $x \in L^\times$ satisfies $\prod_{g \in G} g(x) = \operatorname{N}_{L/K}(x) = 1$, then there is $y \in L^\times$ with $x = y / g_0(y)$ for a generator $g_0$ when $G$ is cyclic; more generally an element of $H^1$ vanishes if and only if it is a principal crossed homomorphism.</p>
 <p><strong>Proof.</strong> Let $f : G \to L^\times$ be a crossed homomorphism: $f(gh) = f(g)\, g(f(h))$. The elements $\{f(h) : h \in G\}$ are not all zero, so by Dedekind's theorem on the linear independence of the distinct characters $h : L \to L$ — as in <em>Galois Theory</em> — the sum</p>
@@ -168,7 +168,7 @@ $$</p>
 <h3 id="the-kummer-isomorphism">The Kummer Isomorphism</h3>
 <p><strong>Theorem.</strong> Let $\operatorname{char} K \nmid n$ and let $\mu_n = \mu_n(\overline K)$ be the group of $n$-th roots of unity in $\overline K$, with the natural action of $G_K$. Then</p>
 <p>$$
-H^1(K, \mu_n) \cong K^\times / (K^\times)^n,
+\boxed{\;H^1(K, \mu_n) \cong K^\times / (K^\times)^n\;},
 $$</p>
 <p>the isomorphism being the connecting homomorphism of the exact sequence of coefficient groups.</p>
 <p><strong>Proof.</strong> The $n$-th power map on $\overline K^\times$ is surjective with kernel $\mu_n$, so there is a short exact sequence of abelian $G_K$-groups</p>

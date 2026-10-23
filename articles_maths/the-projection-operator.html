@@ -86,7 +86,7 @@ $$</p>
 <p>equivalently it is the unique linear map with $P|_W = \mathrm{id}_W$ and $\ker P = U$.</p>
 <p><strong>Proposition.</strong> The linear projection $P$ satisfies</p>
 <p>$$
-P^2 = P , \qquad \operatorname{im} P = W , \qquad \ker P = U , \qquad V = \ker P \oplus \operatorname{im} P ,
+\boxed{\;P^2 = P , \qquad \operatorname{im} P = W , \qquad \ker P = U , \qquad V = \ker P \oplus \operatorname{im} P\;} ,
 $$</p>
 <p>and conversely every linear map $P$ with $P^2 = P$ is the projection onto its image along its kernel; the map is idempotent rather than involutive, it is the identity on its image and zero on its kernel, and it is diagonalisable with eigenvalues $0$ and $1$.</p>
 <p><strong>Proof.</strong> For $v = u + w$ the definition gives $P(v) = w$ and hence $P(P(v)) = P(w) = w = P(v)$; the image is $W$ and the kernel is $U$, and the sum is direct by the hypothesis. Conversely, if $P^2 = P$ then every $v$ is written $v = (v - Pv) + Pv$ with $Pv \in \operatorname{im}P$ and $v - Pv \in \ker P$, so $V = \ker P + \operatorname{im}P$, the two meet at $0$ because $P$ is the identity on its image, and $P$ is the projection along its kernel onto its image. The eigenvalues of an idempotent satisfy $\lambda^2 = \lambda$, so they lie in $\{0,1\}$, and the two eigenspaces are the kernel and the image.</p>
@@ -107,7 +107,7 @@ $$</p>
 <p>which sends the point $[v]$ to the point where the join of $[v]$ and the centre $\mathbb{P}(U)$ meets the target $\mathbb{P}(W)$; the join meets $\mathbb{P}(W)$ in exactly one point because $V = U \oplus W$.</p>
 <p><strong>Proposition.</strong> The central projection is well defined, and it is the projectivisation of the linear projection $P$ onto $W$ along $U$ in the sense that</p>
 <p>$$
-\pi_U([v]) = [P(v)] ;
+\boxed{\;\pi_U([v]) = [P(v)]\;} ;
 $$</p>
 <p>it is defined exactly on the complement of $\mathbb{P}(U)$, it is surjective onto $\mathbb{P}(W)$, and its fibres are the projective subspaces $\mathbb{P}(U + Kv)$ through the centre.</p>
 <p><strong>Proof.</strong> If $v$ and $\lambda v$ represent the same point then $P(\lambda v) = \lambda P(v)$ represents the same point, so $\pi_U$ is well defined; the join of $[v]$ and the centre consists of the points $[\lambda v + u]$, and its intersection with $\mathbb{P}(W)$ is the single point $[P(v)]$, which proves the formula; the fibres are the joins with the centre, and the map is onto because $P$ is onto $W$.</p>
@@ -145,7 +145,7 @@ $$</p>
 <p><strong>Proof.</strong> The projection with a given kernel $U$ and image $W$ is unique, since it is determined on $U$ and on $W$; conversely a projection determines its kernel and its image, and the direct sum decomposition holds. The statement is the elementary decomposition theorem of a vector space, cited to <em>Vector Spaces</em>.</p>
 <p><strong>Proposition.</strong> The projective group acts on the set of the projections by the sandwich</p>
 <p>$$
-P \longmapsto [A]\,P\,[A]^{-1} ,
+\boxed{\;P \longmapsto [A]\,P\,[A]^{-1}\;} ,
 $$</p>
 <p>the action preserves the rank, the orbit of a projection is the set of the projections with the same rank, and the stabiliser of a projection is the subgroup of $PGL(V)$ preserving its kernel and its image.</p>
 <p><strong>Proof.</strong> Conjugation by an invertible map carries an idempotent to an idempotent, carries the kernel and the image to their images under the conjugation, and preserves the rank; two projections of the same rank are conjugate because their kernels and their images have the same dimension and may be matched by an invertible map. The action is the two-sided action of the projective group restricted to the idempotents.</p>

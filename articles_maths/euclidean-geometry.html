@@ -82,7 +82,7 @@ $$</p>
 <p>the <strong>norm</strong> $|x| = \sqrt{\langle x, x\rangle}$, and the <strong>distance</strong> $d(x, y) = |x - y|$. The inner product is a positive definite symmetric bilinear form; in the notation of <em>Bilinear Forms</em> it is the standard form of signature $(n, 0)$.</p>
 <p><strong>Theorem (Cauchy–Schwarz).</strong> For all $x, y \in \mathbb{R}^n$,</p>
 <p>$$
-|\langle x, y\rangle| \leq |x|\,|y| ,
+\boxed{\;|\langle x, y\rangle| \leq |x|\,|y|\;} ,
 $$</p>
 <p>with equality if and only if $x$ and $y$ are linearly dependent.</p>
 <p><strong>Proof.</strong> The quadratic $|x + ty|^2 = |x|^2 + 2t\langle x, y\rangle + t^2|y|^2$ is nonnegative for all real $t$; its discriminant is at most zero, which is the inequality, and equality forces a double root, hence dependence.</p>
@@ -96,7 +96,7 @@ $$</p>
 <p><strong>Definition.</strong> An <strong>isometry</strong> of Euclidean space is a map $F : \mathbb{R}^n \to \mathbb{R}^n$ with $d(Fx, Fy) = d(x, y)$ for all $x, y$. The isometries form a group $E(n)$, the <strong>Euclidean group</strong>.</p>
 <p><strong>Theorem.</strong> Every isometry of $\mathbb{R}^n$ is of the form</p>
 <p>$$
-F(x) = Ax + b, \qquad A \in O(n), \quad b \in \mathbb{R}^n ,
+\boxed{\;F(x) = Ax + b, \qquad A \in O(n), \quad b \in \mathbb{R}^n\;} ,
 $$</p>
 <p>and the representation is unique. Consequently $E(n)$ is the semidirect product $\mathbb{R}^n \rtimes O(n)$, with multiplication $(A, b)(A', b') = (AA', Ab' + b)$, and it is a Lie group of dimension $n(n+1)/2$; the subgroup of orientation-preserving isometries is $\mathbb{R}^n \rtimes SO(n)$.</p>
 <p><strong>Proof sketch.</strong> An isometry fixes the origin after a translation, and an isometry fixing the origin preserves the norm, hence the inner product by polarisation, so its linear part lies in $O(n)$; conversely every such map is an isometry. The semidirect product structure is the composition law, and the Lie group structure is the manifold structure of the semidirect product of the manifold $\mathbb{R}^n$ with the Lie group $O(n)$ of <em>Matrix Groups and Classical Groups</em>.</p>
@@ -127,7 +127,7 @@ a^2 + b^2 = (m + n)c = c^2 .
 $$</p>
 <p><strong>Theorem (law of cosines).</strong> In a triangle with sides $a, b, c$ and the angle $\gamma$ between the sides $a$ and $b$,</p>
 <p>$$
-c^2 = a^2 + b^2 - 2ab\cos\gamma .
+\boxed{\;c^2 = a^2 + b^2 - 2ab\cos\gamma\;} .
 $$</p>
 <p>For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement of the polarisation identity for the inner product. In the analytic language it is the immediate computation $|x - y|^2 = |x|^2 + |y|^2 - 2\langle x, y\rangle$ with $\langle x, y\rangle = ab\cos\gamma$.</p>
 <p><strong>Theorem (Thales).</strong> An angle inscribed in a semicircle is a right angle: if $A, B$ are the ends of a diameter of a circle and $C$ a point on the circle, then the angle at $C$ between $CA$ and $CB$ is a right angle.</p>

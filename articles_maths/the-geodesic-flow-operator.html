@@ -113,8 +113,8 @@ $$</p>
 <p>The cotangent bundle carries the <strong>canonical symplectic form</strong> $\omega = \sum_i dp_i\wedge dx^i$, a nondegenerate closed $2$-form; the form is a structure of Part II and the pair $(T^*M, \omega)$ is the symplectic manifold of <em>Symplectic Geometry</em>, later in this Part, and of the symplectic topology of Part II. The Poisson bracket of two functions is $\{f, h\} = \omega(\sharp_\omega df, \sharp_\omega dh)$, with $\sharp_\omega$ the isomorphism $T^*T^*M \to TT^*M$ defined by $\omega$.</p>
 <p><strong>Theorem.</strong> The Legendre transform carries the geodesic spray to the Hamiltonian vector field of $H$: writing $X_H$ for the vector field with $\omega(X_H, \cdot) = -dH$, one has $d\flat(G) = X_H$, and the integral curves of $X_H$ are the curves $t \mapsto \flat(\varphi_t(x,\xi))$. Equivalently, the geodesic flow is the Hamiltonian flow of the kinetic energy on the cotangent bundle, and every integral curve satisfies the Hamilton equations</p>
 <p>$$
-dx^{k}/dt = \frac{\partial H}{\partial p_k} = \sum_j g^{kj}p_j, \qquad
-\,dp_{k}/dt = -\frac{\partial H}{\partial x^k} = -\tfrac{1}{2}\sum_{ij}\partial/\partial x^k\,g^{ij}\,p_ip_j .
+\boxed{\;dx^{k}/dt = \frac{\partial H}{\partial p_k} = \sum_j g^{kj}p_j, \qquad
+\,dp_{k}/dt = -\frac{\partial H}{\partial x^k} = -\tfrac{1}{2}\sum_{ij}\partial/\partial x^k\,g^{ij}\,p_ip_j\;} .
 $$</p>
 <p><strong>Proof.</strong> The two equations are the equations of the spray read through $\flat$: the first is $dx^{k}/dt = \xi^k$, and the second is obtained from $d\xi^{k}/dt = -\sum_{ij}\Gamma^k_{ij}\xi^i\xi^j$ by differentiating $p_k = \sum_jg_{kj}\xi^j$ and using the identity $\partial/\partial x^l\,g_{kj} = \sum_i(\Gamma^i_{kl}g_{ij}+\Gamma^i_{jl}g_{ki})$, which expresses the metricity of $\nabla$ in a chart. The Hamiltonian field is well defined because $\omega$ is nondegenerate and closed, and it is tangent to the level sets of $H$ because $X_H(H) = \{H,H\} = 0$.</p>
 <h3 id="the-flow-as-a-one-parameter-group">The Flow as a One-Parameter Group</h3>
@@ -125,7 +125,7 @@ $$</p>
 <p>and on a function on $T^*M$ by the same formula along the Hamiltonian flow. The domain of each $\Phi_t$ is the set on which $\varphi_t$ is defined, and $\Phi_{s+t} = \Phi_s\circ \Phi_t$, $\Phi_0 = \mathrm{id}$, wherever the compositions are defined.</p>
 <p><strong>Proposition.</strong> The generator of the group is the spray read as a derivation of the algebra of smooth functions,</p>
 <p>$$
-\frac{d}{dt}\Big|_{t=0} \Phi_tf = Gf, \qquad \text{equivalently} \qquad \frac{d}{dt} \Phi_tf = \Phi_t(Gf),
+\boxed{\;\frac{d}{dt}\Big|_{t=0} \Phi_tf = Gf, \qquad \text{equivalently} \qquad \frac{d}{dt} \Phi_tf = \Phi_t(Gf)\;},
 $$</p>
 <p>and on the cotangent bundle the generator is the Hamiltonian derivation $\{H,\cdot\}$. The flow operator commutes with the energy, $\Phi_tE = E$, and its restriction to the functions on $SM$ is again a one-parameter group.</p>
 <p><strong>Proof.</strong> The first identity is the chain rule for the flow of $G$, and the second follows by differentiating $\Phi_{t+s} = \Phi_t\Phi_s$ at $s = 0$. The Hamiltonian generator is $\{H,\cdot\}$ by the definition of the Hamiltonian vector field, and the commutation with $E$ is the constancy of the energy along the flow.</p>
@@ -144,7 +144,7 @@ $$</p>
 <p>so that the Jacobi fields are the kernel of $\mathcal{J}_\gamma$.</p>
 <p><strong>Theorem.</strong> The Jacobi equation is the linearisation of the geodesic equation: a family $s \mapsto \gamma_s$ of geodesics with $\gamma_0 = \gamma$ has variation field $J(t) = \partial/\partial s\,\gamma_s(t)|_{s=0}$, and $J$ is a Jacobi field; conversely every Jacobi field arises this way. Moreover the Jacobi fields along $\gamma$ are exactly the derivatives of the geodesic flow,</p>
 <p>$$
-J(t) = \bigl(\pi \circ d\varphi_t\bigr)(w), \qquad w \in T_{(x,\xi)}TM,\quad (x,\xi) = (\gamma(0),\gamma'(0)),
+\boxed{\;J(t) = \bigl(\pi \circ d\varphi_t\bigr)(w), \qquad w \in T_{(x,\xi)}TM,\quad (x,\xi) = (\gamma(0),\gamma'(0))\;},
 $$</p>
 <p>where $\pi : TTM \to TM$ is the bundle projection followed by the identification of the vertical subspaces with the tangent spaces.</p>
 <p><strong>Proof sketch.</strong> Differentiate the geodesic equation $\nabla_{\partial/\partial t}\gamma_s' = 0$ in the variation parameter $s$ and commute the derivatives with the curvature formula $R(\partial/\partial s,\partial/\partial t)\partial/\partial t = \nabla_{\partial/\partial s}\nabla_{\partial/\partial t}\partial/\partial t - \nabla_{\partial/\partial t}\nabla_{\partial/\partial s}\partial/\partial t$; the term $\nabla_{\partial/\partial t}\nabla_{\partial/\partial t}\partial/\partial s$ gives $\frac{D^2J}{dt^2}$ and the remaining term is $R(J,\gamma')\gamma'$, which is the equation. For the converse, the map from the $(2n)$-dimensional space $T_{(x,\xi)}TM$ to the space of Jacobi fields along $\gamma$, $w\mapsto(\pi\circ d\varphi_t)(w)$, is well defined by the first part, and it is linear; it is surjective because a Jacobi field is determined by $(J(0), \frac{DJ}{dt}(0))$, a pair of vectors in $T_xM$, of total dimension $2n$, and the equation is second order, so $\dim\ker = 0$ and the map is an isomorphism. The identification of the two $2n$-dimensional spaces is the content of the Jacobi equation.</p>

@@ -93,7 +93,9 @@ $$</p>
 <p>and the <strong>row</strong> is its transpose $X^{\mathsf{T}} = (q_t\ q_x\ q_y\ q_z)$.</p>
 <p>The row is the <strong>dual</strong> object: the split-quaternion norm $\langle\cdot\rangle_{\natural}$ is a non-degenerate quadratic form on $\mathbb{R}^4$, and its polarisation $\langle\tilde q_1,\tilde q_2\rangle = q_{1t} q_{2t} + q_{1x} q_{2x} - q_{1y} q_{2y} - q_{1z} q_{2z}$ provides a bilinear pairing that identifies the coefficient space with its dual, sending $\tilde q_2$ to the linear functional $\tilde q_1 \mapsto \langle\tilde q_1,\tilde q_2\rangle$. In the coordinate basis this identification is multiplication by the matrix $\operatorname{diag}(1,1,-1,-1)$:</p>
 <p>$$
-\langle\tilde q_1,\tilde q_2\rangle = X^{\mathsf{T}} G Y, \qquad G = \operatorname{diag}(1,1,-1,-1).
+\boxed{\;
+\langle\tilde q_1,\tilde q_2\rangle = X^{\mathsf{T}} G Y, \qquad G = \operatorname{diag}(1,1,-1,-1)
+\;}.
 $$</p>
 <p>So the row is the dual vector paired with the column through $G$, and the two are equals only because the pairing is non-degenerate; when $G$ is replaced by the identity the pairing is the Euclidean one and the dual is the plain transpose.</p>
 <h2 id="multiplication-in-components">Multiplication in Components</h2>
@@ -222,7 +224,9 @@ $$</p>
 <h2 id="the-split-quaternion-norm">The Split-Quaternion Norm</h2>
 <p>The split-quaternion norm of $\tilde q$ is</p>
 <p>$$
-\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2,
+\boxed{\;
+\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2
+\;},
 $$</p>
 <p>of <strong>signature $(2,2)$</strong>, with polarisation $\langle\tilde q_1,\tilde q_2\rangle = q_{1t} q_{2t} + q_{1x} q_{2x} - q_{1y} q_{2y} - q_{1z} q_{2z}$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $\vec e_x$ directions being positive and the $\vec e_y, \vec e_z$ directions negative. Under the matrix model it is the determinant, $\langle\tilde q\rangle_{\natural} = \det \mathsf{M}_2(\tilde q)$.</p>
 <p>The restrictions to the distinguished subspaces read off the coordinates:</p>
@@ -261,7 +265,9 @@ $$</p>
 <h2 id="the-unit-criterion-in-coordinates">The Unit Criterion in Coordinates</h2>
 <p><strong>Theorem.</strong> The four-vector $(q_t,q_x,q_y,q_z)$ is <strong>invertible</strong> if and only if</p>
 <p>$$
-\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 \neq 0,
+\boxed{\;
+\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 \neq 0
+\;},
 $$</p>
 <p>and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural} = \dfrac{q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z}{q_t^2+q_x^2-q_y^2-q_z^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.</p>
 <p><strong>Proof.</strong> The identity $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ gives $\tilde q \cdot (\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = 1$ whenever $\langle\tilde q\rangle_{\natural} \neq 0$; conversely, if $\langle\tilde q\rangle_{\natural} = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.</p>

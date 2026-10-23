@@ -84,7 +84,7 @@ because the grade involution is self-adjoint, $\alpha^{*} = \alpha$, and the adj
 <h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
 <p><strong>Proposition (the adjoint formula).</strong> For all $a \in E$,
 $$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a^{\dagger})}, \qquad \bigl(\rho^{\alpha}_{b}\bigr)^{*} = \rho^{\alpha}_{\alpha(b^{\dagger})},
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a^{\dagger})}, \qquad \bigl(\rho^{\alpha}_{b}\bigr)^{*} = \rho^{\alpha}_{\alpha(b^{\dagger})}\;},
 $$
 and the assignment is conjugate-linear and involutive.</p>
 <p><strong>Proof.</strong> $\Lambda^{\alpha}_{a} = L_a\circ\alpha$, so $\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \alpha^{*}L_a^{*} = \alpha\circ L_{a^{\dagger}}$, using $\alpha^{*} = \alpha$ (the self-adjointness of the grade involution) and $L_a^{*} = L_{a^{\dagger}}$; and $\alpha L_{a^{\dagger}}(Y) = \alpha(a^{\dagger}Y) = \alpha(a^{\dagger})\alpha(Y) = \Lambda^{\alpha}_{\alpha(a^{\dagger})}(Y)$, because $\alpha$ is an algebra automorphism. The right-handed case is identical on the other side. The self-adjointness of $\alpha$ and the unsigned law are <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>, and the involution is <em>The Involution on a Complex Vector Space</em>.</p>
@@ -101,11 +101,11 @@ and the assignment is conjugate-linear and involutive.</p>
 <h2 id="the-relation-to-the-signed-sandwich">The Relation to the Signed Sandwich</h2>
 <p><strong>Proposition (the one-sided operators as degenerate sandwiches).</strong> The signed left multiplication is the signed sandwich with the right parameter equal to the identity,
 $$
-\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,\mathrm{id}}, \qquad \rho^{\alpha}_{b} = \Theta^{\alpha}_{\mathrm{id},b},
+\boxed{\;\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,\mathrm{id}}, \qquad \rho^{\alpha}_{b} = \Theta^{\alpha}_{\mathrm{id},b}\;},
 $$
 and its adjoint is the signed sandwich of the transported adjoint and the identity,
 $$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\mathrm{id}} ;
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\mathrm{id}}\;} ;
 $$
 the two-sided signed sandwich is the composite $\Theta^{\alpha}_{a,b} = \Lambda^{\alpha}_{a}\circ\rho^{\alpha}_{b}$.</p>
 <p><strong>Proof.</strong> $\Theta^{\alpha}_{a,\mathrm{id}}(X) = a\alpha(X)\mathrm{id} = \Lambda^{\alpha}_{a}(X)$, and the adjoint follows from the general formula $\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}$ with $b = \mathrm{id}$ and $\alpha(\mathrm{id}) = \mathrm{id}$; the composite is $\Lambda^{\alpha}_{a}\rho^{\alpha}_{b}(X) = a\alpha(\alpha(X)b) = aX\alpha(b)$, which is the signed sandwich read with the parameters $a,\alpha(b)$. The signed sandwich and its adjoint are <em>The Signed Sandwich on a Complex Vector Space</em> and <em>The Signed Adjoint Sandwich on a Complex Vector Space</em>.</p>

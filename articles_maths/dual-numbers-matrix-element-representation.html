@@ -105,7 +105,9 @@ $$</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> $\mathsf{M}_2$ is a unital algebra homomorphism:</p>
 <p>$$
-\mathsf{M}_2(Q_1 Q_2) = \mathsf{M}_2(Q_1)\,\mathsf{M}_2(Q_2) \qquad \text{for all } Q_1, Q_2 \in \mathbb{D}'_R.
+\boxed{\;
+\mathsf{M}_2(Q_1 Q_2) = \mathsf{M}_2(Q_1)\,\mathsf{M}_2(Q_2) \qquad \text{for all } Q_1, Q_2 \in \mathbb{D}'_R
+\;}.
 $$</p>
 <p><strong>Proof.</strong> With $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2,$</p>
 <p>$$
@@ -120,7 +122,9 @@ $$</p>
 <p><strong>Definition.</strong> A matrix $\begin{pmatrix} a & b \\ 0 & c \end{pmatrix}$ is <strong>upper triangular Toeplitz</strong> if its diagonal entries are equal, $a = c$.</p>
 <p><strong>Theorem.</strong> The image $\mathsf{M}_2(\mathbb{D}'_R)$ is exactly the subalgebra of upper-triangular Toeplitz matrices,</p>
 <p>$$
-\mathsf{M}_2(\mathbb{D}'_R) = \left\{\begin{pmatrix} q & q' \\ 0 & q \end{pmatrix} : q, q' \in R\right\}.
+\boxed{\;
+\mathsf{M}_2(\mathbb{D}'_R) = \left\{\begin{pmatrix} q & q' \\ 0 & q \end{pmatrix} : q, q' \in R\right\}
+\;}.
 $$</p>
 <p>It is a commutative unital subalgebra of $M_2(R)$, of $R$-rank two, spanned by $I$ and the nilpotent $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$.</p>
 <p><strong>Proof.</strong> The displayed set is the image by definition; it is closed under addition and multiplication, since</p>
@@ -134,7 +138,9 @@ $$</p>
 <h2 id="the-trace-and-the-determinant">The Trace and the Determinant</h2>
 <p><strong>Theorem.</strong> For $Q = q + \varepsilon q',$</p>
 <p>$$
-\operatorname{tr}\mathsf{M}_2(Q) = 2q, \qquad \det\mathsf{M}_2(Q) = q^2 = \langle Q\rangle, \qquad \chi_{\mathsf{M}_2(Q)}(\lambda) = (\lambda - q)^2.
+\boxed{\;
+\operatorname{tr}\mathsf{M}_2(Q) = 2q, \qquad \det\mathsf{M}_2(Q) = q^2 = \langle Q\rangle, \qquad \chi_{\mathsf{M}_2(Q)}(\lambda) = (\lambda - q)^2
+\;}.
 $$</p>
 <p><strong>Proof.</strong> The trace is the sum of the diagonal entries $q + q = 2q$; the determinant is $q^2 - 0 = q^2$; the characteristic polynomial is the product of the diagonal entries of $\lambda I - \mathsf{M}_2(Q)$, namely $(\lambda - q)^2$, the matrix being triangular.</p>
 <p><strong>Corollary.</strong> The determinant is the norm and is multiplicative, $\det\mathsf{M}_2(Q_1 Q_2) = \det\mathsf{M}_2(Q_1)\det\mathsf{M}_2(Q_2)$, which is the multiplicativity of $\langle\cdot\rangle$ read in the matrix algebra; the trace is twice the real part.</p>

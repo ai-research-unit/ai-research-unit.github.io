@@ -84,7 +84,7 @@ P_0 = \tfrac12(\mathrm{id}+\alpha), \qquad P_1 = \tfrac12(\mathrm{id}-\alpha)
 $$</p>
 <p>onto the two parts. Conversely, for every linear involution $T$ of $V$ the decomposition</p>
 <p>$$
-V_0 = \ker(T-\mathrm{id}) = V_+, \qquad V_1 = \ker(T+\mathrm{id}) = V_-
+\boxed{\;V_0 = \ker(T-\mathrm{id}) = V_+, \qquad V_1 = \ker(T+\mathrm{id}) = V_-\;}
 $$</p>
 <p>is a grading, and the grade involution of that grading is $T$ itself.</p>
 <p><strong>Proof.</strong> Linearity of $\alpha$ is the definition; $\alpha^2 = \mathrm{id}$ because $\alpha$ fixes $V_0$ and negates $V_1$; the fixed part is $V_0$ and the negated part is $V_1$, so the type is $(\dim V_0,\dim V_1)$. The projectors satisfy $P_0^2=P_0$, $\operatorname{im}P_0 = V_0$ and $\ker P_0 = V_1$, and similarly for $P_1$. For the converse, the eigenspace decomposition of an involution is a direct sum; the map negating $V_-$ and fixing $V_+$ is exactly $T$.</p>
@@ -95,7 +95,7 @@ $$</p>
 <p><strong>Definition.</strong> A linear map $f : V \to W$ of graded spaces is <strong>even</strong> when $f(V_i) \subseteq W_i$ for $i = 0,1$ and <strong>odd</strong> when $f(V_i) \subseteq W_{1-i}$ for $i = 0,1$; a general linear map decomposes uniquely into an even and an odd part.</p>
 <p><strong>Proposition.</strong> For a graded space $V$, every endomorphism $X \in E = \operatorname{End}_F(V)$ is uniquely $X = X_0 + X_1$ with $X_0$ even and $X_1$ odd, and</p>
 <p>$$
-E = E_0 \oplus E_1 , \qquad E_0 = \{X : \alpha X \alpha = X\} , \qquad E_1 = \{X : \alpha X \alpha = -X\} .
+\boxed{\;E = E_0 \oplus E_1 , \qquad E_0 = \{X : \alpha X \alpha = X\} , \qquad E_1 = \{X : \alpha X \alpha = -X\}\;} .
 $$</p>
 <p>The conjugation $\Phi_\alpha(X) = \alpha X \alpha$ is an involution of the linear space $E$, equal to the grade involution of the grading $E = E_0 \oplus E_1$; its type is $(p^2+q^2, 2nm)$ with $p=\dim V_0$ and $q=\dim V_1$, and its trace is $(n-m)^2$.</p>
 <p><strong>Proof.</strong> The decomposition of a matrix in a basis adapted to $V_0 \oplus V_1$ into its four blocks, and the grouping of the two diagonal blocks as even and the two off-diagonal blocks as odd, gives $E = E_0\oplus E_1$; the condition $\alpha X \alpha = X$ is exactly the preservation of the two parts, and $\alpha X \alpha = -X$ the exchange of them. The assertions about $\Phi_\alpha$ and its type are the computation of <em>Involutive Linear Spaces</em> for the involution $T=\alpha$: in the basis of matrix units $E_{ij}$, $\Phi_\alpha(E_{ij}) = \varepsilon_i\varepsilon_j E_{ij}$ with $\varepsilon_i = 1$ for the even indices and $-1$ for the odd ones, so the eigenvalue $1$ occurs $n^2+m^2$ times and $-1$ occurs $2nm$ times.</p>
@@ -104,7 +104,7 @@ $$</p>
 <h2 id="the-graded-dual-and-the-graded-tensor-product">The Graded Dual and the Graded Tensor Product</h2>
 <p><strong>Proposition (the graded dual).</strong> The dual of a graded space is graded by</p>
 <p>$$
-(V^{*})_0 = (V_1)^{0}, \qquad (V^{*})_1 = (V_0)^{0} ,
+\boxed{\;(V^{*})_0 = (V_1)^{0}, \qquad (V^{*})_1 = (V_0)^{0}\;} ,
 $$</p>
 <p>where the first is the set of functionals vanishing on $V_1$ and the second the set vanishing on $V_0$; equivalently $(V^{*})_i \cong (V_i)^{*}$, and the transposed involution $\alpha^{*}$ is the grade involution of $V^{*}$.</p>
 <p><strong>Proof.</strong> A functional vanishing on $V_1$ is fixed by $\alpha^{*}$, because $\alpha^{*}\varphi = \varphi\alpha$ and $\varphi\alpha = \varphi$ on $V_0$ and vanishes on $V_1$; hence the fixed part of $\alpha^{*}$ is the annihilator of $V_1$, of dimension $n$, and the negated part is the annihilator of $V_0$, of dimension $m$. This is <em>Involutions of the Dual Space</em>, and the identifications with $(V_i)^{*}$ are the restriction maps.</p>

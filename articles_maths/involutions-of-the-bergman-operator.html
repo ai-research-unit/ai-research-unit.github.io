@@ -88,13 +88,13 @@ an antiunitary involution of the Bergman space that commutes with $B$ and whose 
 <h2 id="the-bergman-operator-its-idempotence-and-its-self-adjointness">The Bergman Operator, Its Idempotence and Its Self-Adjointness</h2>
 <p><strong>Proposition (the Bergman operator is an orthogonal projection).</strong> The Bergman operator $B$ is idempotent and self-adjoint for the $L^2$ inner product,
 $$
-B^2 = B, \qquad B^{*} = B,
+\boxed{\;B^2 = B, \qquad B^{*} = B\;},
 $$
 so it is the orthogonal projection of $L^2(\Omega)$ onto $A^2(\Omega)$; equivalently $\operatorname{im}B = A^2(\Omega)$ and $\ker B$ is the orthogonal complement of the Bergman space.</p>
 <p><strong>Proof.</strong> The reproducing property $f(z) = \langle f, K(z,\cdot)\rangle$ for $f \in A^2$ gives $\operatorname{im}B = A^2$ and $Bf = f$ on $A^2$, hence $B^2 = B$; the self-adjointness is the equivalence of the conjugate symmetry of the kernel with $B^{*} = B$, proved in the next proposition. An idempotent self-adjoint operator is the orthogonal projection onto its range, by the spectral theorem. The reproducing property and the projection are <em>The Bergman Operator</em> and <em>Reproducing Kernel Hilbert Spaces</em>.</p>
 <p><strong>Proposition (conjugate symmetry is self-adjointness).</strong> The kernel satisfies $K(z,w) = \overline{K(w,z)}$, and this identity is equivalent to the self-adjointness of $B$: for $f, g \in L^2$,
 $$
-\langle Bf, g\rangle = \int\!\!\int K(z,w)f(w)\overline{g(z)}\,dV(w)\,dV(z) = \overline{\langle Bg, f\rangle} = \langle f, Bg\rangle .
+\boxed{\;\langle Bf, g\rangle = \int\!\!\int K(z,w)f(w)\overline{g(z)}\,dV(w)\,dV(z) = \overline{\langle Bg, f\rangle} = \langle f, Bg\rangle\;} .
 $$</p>
 <p><strong>Proof.</strong> Substituting the definition of $B$, exchanging the order of integration by Fubini, and using the conjugate symmetry $K(z,w) = \overline{K(w,z)}$ gives $\langle Bf,g\rangle = \int\!\!\int \overline{K(w,z)}f(w)\overline{g(z)} = \overline{\int\!\!\int K(w,z)g(z)\overline{f(w)}} = \overline{\langle Bg,f\rangle} = \langle f,Bg\rangle$; conversely, if $B$ is self-adjoint the two iterated integrals differ by conjugation for all $f,g$ and the kernel is conjugate-symmetric. The kernel and the Fubini exchange are <em>The Bergman Operator</em> and <em>Reproducing Kernel Hilbert Spaces</em>.</p>
 <p><strong>Corollary (the growth of the kernel and the diagonal).</strong> The diagonal $K(z,z) > 0$ and is the square of the norm of the evaluation functional at $z$; on the diagonal the conjugate symmetry is the reality $K(z,z) = \overline{K(z,z)}$, and the Bergman metric $g^{\mathrm B}_{i\bar j} = \partial^2/\partial z_i\partial\bar z_j\\,log K(z,z)$ is built from the diagonal, <em>Hermitian Symmetric Spaces and the Bergman Metric</em>.</p>
@@ -106,7 +106,7 @@ $$
 $$</p>
 <p><strong>Proposition (the conjugation is an antiunitary involution).</strong> $\sigma$ is a conjugate-linear involution of $A^2(\Omega)$ and an isometry,
 $$
-\sigma^2 = \mathrm{id}, \qquad \sigma(\lambda f) = \bar\lambda\,\sigma f, \qquad \langle \sigma f, \sigma g\rangle = \langle g, f\rangle ,
+\boxed{\;\sigma^2 = \mathrm{id}, \qquad \sigma(\lambda f) = \bar\lambda\,\sigma f, \qquad \langle \sigma f, \sigma g\rangle = \langle g, f\rangle\;} ,
 $$
 and it commutes with the Bergman operator, $\sigma B = B\sigma$; its fixed space is the <strong>real Bergman space</strong> of the functions with real Taylor coefficients at the origin.</p>
 <p><strong>Proof.</strong> The map is conjugate-linear by the conjugation of the scalar; $\sigma^2 f(z) = \overline{\overline{f(\bar{\bar z})}} = f(z)$; the isometry is the change of variables $z\mapsto\bar z$, which preserves $dV$; and $\sigma(f\bar g) = (\sigma f)\overline{(\sigma g)}$, so the inner product is conjugated. The commutation with $B$ follows from $K(\bar z,\bar w) = \overline{K(z,w)}$ for a domain stable under conjugation, which is the conjugate symmetry read under the involution of the variables. A function with real Taylor coefficients satisfies $\overline{f(\bar z)} = f(z)$, and conversely. This is <em>Real Structures on a Complex Manifold</em> and <em>The Involution on a Complex Vector Space</em>.</p>

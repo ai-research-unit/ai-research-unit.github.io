@@ -77,7 +77,7 @@
 <h3 id="the-left-regular-module">The left regular module</h3>
 <p><strong>Definition.</strong> The <strong>left regular module</strong> ${}_RR$ is the additive group $(R,+)$ with the scalar multiplication</p>
 <p>$$
-R \times R \to R, \qquad (r,m) \mapsto rm ,
+\boxed{\;R \times R \to R, \qquad (r,m) \mapsto rm\;} ,
 $$</p>
 <p>the multiplication of $R$ itself.</p>
 <p><strong>Proposition (the module axioms are the ring axioms).</strong> ${}_RR$ is a left $R$-module. The carrier $(R,+)$ is only an abelian group and carries no multiplication of its own; the multiplication of $R$ is not discarded, it is the action. The four module axioms are then the two distributive laws, the associativity of the multiplication, and the unit law, and each is a ring axiom read as a module axiom. In particular $0m = 0$ and $(-r)m = -(rm)$ hold because they already hold in $R$.</p>
@@ -109,7 +109,7 @@ $$</p>
 <h3 id="the-identity-of-the-tensor-product">The identity of the tensor product</h3>
 <p><strong>Proposition.</strong> For a right $R$-module $M$ there is a natural isomorphism</p>
 <p>$$
-M \otimes_R {}_RR \cong M, \qquad m \otimes r \mapsto mr ,
+\boxed{\;M \otimes_R {}_RR \cong M, \qquad m \otimes r \mapsto mr\;} ,
 $$</p>
 <p>and for a left $R$-module $N$ a natural isomorphism ${}_RR \otimes_R N \cong N$, $r \otimes n \mapsto rn$. For bimodules the same element is the two-sided identity, ${}_SM_R \otimes_R {}_RR_R \cong {}_SM_R$ and ${}_RR_R \otimes_R {}_RN_T \cong {}_RN_T$, naturally in the outer module.</p>
 <p><strong>Proof.</strong> The map $m \otimes r \mapsto mr$ is well defined because $(m,r) \mapsto mr$ is $R$-balanced: it is additive in each variable and $(ms) \otimes r$ and $m \otimes (sr)$ both go to $m(sr) = (ms)r$. It is $R$-linear on the right of $M$ when $M$ is a bimodule, and the assignment $m \mapsto m \otimes 1$ is its inverse, since $m \otimes r = (m \cdot r) \otimes 1 = (m \otimes 1) r$; uniqueness is the universal property of <em>The Balanced Product</em>. The left-handed statement is the mirror, and the bimodule statements follow by carrying the outer actions through both maps.</p>
@@ -118,7 +118,7 @@ $$</p>
 <h3 id="the-one-sided-endomorphisms">The one-sided endomorphisms</h3>
 <p><strong>Proposition.</strong> There are ring isomorphisms</p>
 <p>$$
-\operatorname{End}_R(R_R) \cong R, \qquad \operatorname{End}_R({}_RR) \cong R^{\mathrm{opp}} ,
+\boxed{\;\operatorname{End}_R(R_R) \cong R, \qquad \operatorname{End}_R({}_RR) \cong R^{\mathrm{opp}}\;} ,
 $$</p>
 <p>the first given by the left multiplications $b \mapsto L_b$ and the second by the right multiplications $b \mapsto R_b$, where $L_b(x) = bx$ and $R_b(x) = xb$.</p>
 <p><strong>Proof.</strong> Let $T : R_R \to R_R$ be right $R$-linear, $T(xr) = T(x)r$. With $x = 1$ and the right action $1 \cdot r = r$, one has $T(r) = T(1)r = L_{T(1)}(r)$, so $T = L_b$ with $b = T(1)$; conversely $L_b(xr) = b(xr) = (bx)r = L_b(x)r$, so $L_b$ is right $R$-linear. The assignment $b \mapsto L_b$ is additive and satisfies $L_{bc} = L_b L_c$, hence is a ring isomorphism onto $\operatorname{End}_R(R_R)$, injective because $L_b(1) = b$. The left-module case is the mirror: a left $R$-linear $T$ has $T(r) = T(r \cdot 1) = rT(1) = R_{T(1)}(r)$, and $b \mapsto R_b$ is additive with $R_{bc} = R_cR_b$, hence a ring isomorphism $R^{\mathrm{opp}} \to \operatorname{End}_R({}_RR)$.</p>

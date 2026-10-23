@@ -77,7 +77,7 @@
 <h3 id="the-local-structure">The Local Structure</h3>
 <p><strong>Definition.</strong> Let $\sigma$ be an isometric involution of a Riemannian manifold $(M, g)$. Its <strong>fixed set</strong> is</p>
 <p>$$
-\Sigma = \operatorname{Fix}(\sigma) = \{x \in M : \sigma(x) = x\},
+\boxed{\;\Sigma = \operatorname{Fix}(\sigma) = \{x \in M : \sigma(x) = x\}\;},
 $$</p>
 <p>a closed subset of $M$, and the <strong>fixed component</strong> of a point $p \in \Sigma$ is the connected component of $\Sigma$ containing $p$.</p>
 <p><strong>Theorem.</strong> Each fixed component is a <strong>totally geodesic</strong> submanifold of $M$: if $x \in \Sigma$ and $v \in T_x\Sigma$, the geodesic of $M$ with $\gamma(0) = x$ and $\gamma'(0) = v$ lies in $\Sigma$.</p>
@@ -90,7 +90,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the tube theorem).</strong> The normal exponential map is a diffeomorphism of a neighbourhood of the zero section of $\nu\Sigma$ onto a tubular neighbourhood of $\Sigma$ in $M$; in the coordinates it defines, the metric splits along $\Sigma$ as</p>
 <p>$$
-g = g_\Sigma(y) + \sum_a dy^a\,dy^a, \qquad g_\Sigma(y) = g_\Sigma + O(|y|^2),
+\boxed{\;g = g_\Sigma(y) + \sum_a dy^a\,dy^a, \qquad g_\Sigma(y) = g_\Sigma + O(|y|^2)\;},
 $$</p>
 <p>where $y$ are the normal coordinates and $g_\Sigma$ is the induced metric of $\Sigma$; the involution acts as $\sigma(y, p) = (-y, p)$ in these coordinates, and the geodesics orthogonal to $\Sigma$ are the images of the straight lines of the normal fibres.</p>
 <p><strong>Proof.</strong> The differential of $\exp^\perp$ at the zero section is the identity from $\nu\Sigma$ to the normal bundle of $\Sigma$ in $M$, which is invertible, so the inverse function theorem gives the diffeomorphism onto a tubular neighbourhood; the splitting of the metric is the statement of the Gauss lemma for the geodesics orthogonal to $\Sigma$, and the evenness $g_\Sigma(y) = g_\Sigma(-y) + O(|y|^3)$ along the normal directions is the vanishing of the first-order term because the normal geodesics are orthogonal to $\Sigma$ and $\Sigma$ is totally geodesic. The involution fixes $\Sigma$ pointwise and acts as $-d\sigma = -1$ on the normal directions, so its action in the normal coordinates is $y \mapsto -y$; this is the fixed-set theorem read in the tubular neighbourhood.</p>

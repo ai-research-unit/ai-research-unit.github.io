@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-reflection-and-its-square">The Reflection and its Square</h2>
 <p><strong>Theorem (the square and the involution case).</strong> The reflection is additive, bijective and bounded, and its square is the conjugation by $u\alpha(u)$:</p>
 <p>$$
-\rho_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1} .
+\boxed{\;\rho_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1}\;} .
 $$</p>
 <p>Hence $\rho_u$ is an <strong>involution</strong>, $\rho_u^2 = \mathrm{id}$, exactly when $u\alpha(u)$ is central; in that case it is a reflection of order two and its fixed set is $\{x : u\alpha(x) = xu\}$, closed in $R$.</p>
 <p><strong>Proof.</strong> $\rho_u(\rho_u(x)) = u\alpha(u\alpha(x)u^{-1})u^{-1} = u\alpha(u)\,\alpha^2(x)\,\alpha(u)^{-1}u^{-1} = u\alpha(u)\,x\,(u\alpha(u))^{-1}$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. The square is the identity exactly when the conjugating element $u\alpha(u)$ is central; the fixed set is the solution set of the continuous equation $u\alpha(x)u^{-1} = x$, hence closed.</p>
@@ -88,7 +88,7 @@ $$</p>
 <h2 id="the-signed-adjoint">The Signed Adjoint</h2>
 <p><strong>Theorem (the explicit form).</strong> With respect to the form of the category,</p>
 <p>$$
-\rho_u^\dagger = \Sigma^\alpha_{\delta(u),\,\delta(u)^{-1}} = \rho_{\delta(u)} ,
+\boxed{\;\rho_u^\dagger = \Sigma^\alpha_{\delta(u),\,\delta(u)^{-1}} = \rho_{\delta(u)}\;} ,
 $$</p>
 <p>so the signed adjoint of a reflection is the reflection in the element $\delta(u) = \sigma\alpha(u)$; the adjoint is again a reflection, and the adjoint operation is an involution on the class of reflections.</p>
 <p><strong>Proof.</strong> This is $(\Sigma^\alpha_{u,u^{-1}})^\dagger = \Sigma^\alpha_{\delta(u),\delta(u^{-1})}$ of <em>The Signed Adjoint Sandwich on a Topological Ring</em>, together with $\delta(u^{-1}) = \delta(u)^{-1}$ because $\delta$ is an involution.</p>
@@ -108,7 +108,7 @@ $$</p>
 <h2 id="the-three-conditions">The Three Conditions</h2>
 <p><strong>Theorem (involution, self-adjointness, unitarity).</strong> For a reflection the three conditions are</p>
 <p>$$
-\rho_u^2 = \mathrm{id} \iff u\alpha(u)\in Z(R) , \qquad \rho_u^\dagger = \rho_u \iff \delta(u)u^{-1}\in Z(R) , \qquad \rho_u^\dagger \rho_u = \mathrm{id} \iff \delta(u)\alpha(u)\in Z(R) \text{ and } u\sigma(u)\in Z(R) .
+\boxed{\;\rho_u^2 = \mathrm{id} \iff u\alpha(u)\in Z(R) , \qquad \rho_u^\dagger = \rho_u \iff \delta(u)u^{-1}\in Z(R) , \qquad \rho_u^\dagger \rho_u = \mathrm{id} \iff \delta(u)\alpha(u)\in Z(R) \text{ and } u\sigma(u)\in Z(R)\;} .
 $$</p>
 <p>The reflection is an orthogonal involution, that is an involution and self-adjoint, exactly when both $u\alpha(u)$ and $\delta(u)u^{-1}$ are central; it is unitary when the two products of the sandwich criterion are central.</p>
 <p><strong>Proof.</strong> The first is the square computation; the second is the self-adjointness theorem; the third is the unitarity of <em>The Signed Adjoint Sandwich on a Topological Ring</em> specialised to $b = u^{-1}$, where the two product equations are automatic and only the centrality of $\delta(u)\alpha(u)$ and of $u\sigma(u)$ remains.</p>

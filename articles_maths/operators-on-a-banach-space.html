@@ -84,13 +84,13 @@
 <p><em>Proof.</em> The resolvent $\lambda\mapsto(\lambda I-T)^{-1}$ is analytic on $\rho(T)$ and satisfies $R(\lambda,T)=\sum_{n\ge0}\lambda^{-n-1}T^n$ for $|\lambda|>\|T\|$, so $\rho(T)$ contains the exterior of the disc and is open; $\sigma(T)$ is closed and bounded, hence compact. Were $\sigma(T)$ empty the resolvent would be entire and, by the expansion at infinity, bounded and tending to $0$, hence identically zero, which is impossible; so the spectrum is nonempty.</p>
 <p><strong>Proposition (the resolvent identity and analyticity).</strong> For $\lambda,\mu\in\rho(T)$,</p>
 <p>$$
-R(\lambda,T)-R(\mu,T)=-(\lambda-\mu)R(\lambda,T)R(\mu,T),
+\boxed{\;R(\lambda,T)-R(\mu,T)=-(\lambda-\mu)R(\lambda,T)R(\mu,T)\;},
 $$</p>
 <p>and the resolvent is an analytic $B(X)$-valued function on $\rho(T)$ with derivative $-R(\lambda,T)^2$.</p>
 <p><em>Proof.</em> $(\lambda I-T)-(\mu I-T)=(\lambda-\mu)I$, and multiplying by the two resolvents on the left and right gives the identity; analyticity is the local expansion $R(\lambda+h,T)=(I+hR(\lambda,T))^{-1}R(\lambda,T)=\sum_{n\ge0}(-h)^nR(\lambda,T)^{n+1}$ for $|h|<\|R(\lambda,T)\|^{-1}$.</p>
 <p><strong>Theorem (spectral radius formula).</strong> For every $T\in B(X)$ over $\mathbb{C}$,</p>
 <p>$$
-r(T)=\lim_{n\to\infty}\|T^n\|^{1/n}=\inf_{n\ge1}\|T^n\|^{1/n}.
+\boxed{\;r(T)=\lim_{n\to\infty}\|T^n\|^{1/n}=\inf_{n\ge1}\|T^n\|^{1/n}\;}.
 $$</p>
 <p><em>Proof.</em> The convergence of the series $\sum_n\lambda^{-n-1}T^n$ at $|\lambda|=r(T)$ is obstructed exactly at the radius of convergence of the power series, which is the reciprocal of the growth rate $\limsup\|T^n\|^{1/n}$; the analytic continuation of the resolvent beyond the disc forces this radius to equal $r(T)$, and the standard submultiplicative argument makes the limsup a limit and identifies it with the infimum.</p>
 <h2 id="the-resolvent-and-the-holomorphic-functional-calculus">The Resolvent and the Holomorphic Functional Calculus</h2>
@@ -103,7 +103,7 @@ $$</p>
 <p><em>Proof.</em> The homomorphism property is the residue computation: the product $f(T)g(T)$ is a double contour integral over independent cycles, the resolvent identity converts the integrand to a difference of simple terms, and Cauchy's theorem leaves the single integral of $fg$; dependence on the germ is the deformation of the contour inside $\Omega\setminus\sigma(T)$; the power-series statement is the evaluation of the contour integral by the expansion of the resolvent at infinity.</p>
 <p><strong>Theorem (spectral mapping).</strong> With the calculus as above, for every $f$ holomorphic on $\Omega$,</p>
 <p>$$
-\sigma(f(T))=f(\sigma(T)).
+\boxed{\;\sigma(f(T))=f(\sigma(T))\;}.
 $$</p>
 <p><em>Proof.</em> If $\mu\notin f(\sigma(T))$ then $g(z)=(f(z)-\mu)^{-1}$ is holomorphic on $\Omega$ and $g(T)(f(T)-\mu I)=I$ by the homomorphism property, so $\mu\in\rho(f(T))$; conversely if $\mu=f(\lambda_0)$ for some $\lambda_0\in\sigma(T)$, then $f(T)-\mu I=(z-\lambda_0)h(T)$ for a holomorphic $h$ with $h(\lambda_0)\neq0$ after factoring, and the first factor is not invertible, so the product is not invertible.</p>
 <p><strong>Remark.</strong> The point spectrum, the residual spectrum and the continuous spectrum partition $\sigma(T)$ according to whether $\lambda I-T$ fails injectivity, fails density of the range, or has dense range and is injective but not surjective; the decomposition is empty of content in finite dimension, where the spectrum is the set of eigenvalues. The holomorphic calculus refines none of them, but it does preserve them under $f$ in the form of the spectral mapping theorem above.</p>

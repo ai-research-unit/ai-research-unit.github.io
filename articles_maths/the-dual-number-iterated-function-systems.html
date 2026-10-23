@@ -79,7 +79,7 @@ $$</p>
 <h2 id="the-contractions-and-the-projection">The Contractions and the Projection</h2>
 <p><strong>Definition.</strong> A <strong>dual similarity</strong> is $S(z) = uz+v$ with $u$ a unit of $\mathbb{D}'$, and its <strong>linear part</strong> in the basis $\{1,\varepsilon\}$ is the triangular matrix</p>
 <p>$$
-[u] = \begin{pmatrix} r & 0 \\ s & r \end{pmatrix}, \qquad u = r+\varepsilon s .
+[u] = \begin{pmatrix} r & 0 \\ s & r \end{pmatrix}, \qquad u = r+\varepsilon s.
 $$</p>
 <p>An iterated function system is a finite family $\{S_1,\ldots,S_m\}$, $m \geq 2$, of dual similarities that are contractions of the Euclidean plane; its <strong>attractor</strong> is the unique nonempty compact set $\Lambda$ with $\Lambda = \bigcup_i S_i(\Lambda)$.</p>
 <p><strong>Theorem (the Euclidean contraction condition).</strong> The matrix $[u]$ has the singular values the two roots of $\lambda^2-(2r^2+s^2)\lambda+r^4 = 0$, both equal to $|r|$ when $s = 0$ and the larger one strictly greater than $|r|$ when $s \neq 0$. Consequently the Euclidean contraction factor of $S$ is at least $|r|$, and $S$ is a contraction only if $|r| < 1$ and the coupling $s$ is small enough; for $s = 0$ the condition is exactly $|r| < 1$.</p>
@@ -93,13 +93,15 @@ $$</p>
 <h2 id="the-attractor-is-a-graph-or-a-product">The Attractor Is a Graph or a Product</h2>
 <p><strong>Theorem (the attractor is a graph).</strong> If the induced real system has a separating address map — the images $r_iA_x+v_{ix}$ are pairwise disjoint — then the attractor is the graph of a continuous function over the real attractor,</p>
 <p>$$
-\Lambda = \{x+\varepsilon\varphi(x) : x \in A_x\} ,
+\boxed{\;
+\Lambda = \{x+\varepsilon\varphi(x) : x \in A_x\}
+\;},
 $$</p>
 <p>with $\varphi$ the continuous function determined by $\varphi(S_i(x)) = r_i\varphi(x)+s_ix+v_{iy}$.</p>
 <p><strong>Proof.</strong> The address map of the real system is injective, so a point of $A_x$ determines its coding and hence the whole orbit of the fibre coordinate; the affine recursion for $y$ along a coding converges because $|r_i| < 1$, and the limit $\varphi(x)$ depends continuously on the coding, hence on $x$. The invariance relation for $\varphi$ is the statement that $S_i$ maps the graph over $A_x$ to the graph over $S_i(A_x)$.</p>
 <p><strong>Theorem (the dimension, equal ratios).</strong> Suppose the real parts of the linear parts are equal, $r_i = r$ for all $i$, with $|r| < 1$, and that the induced real system has a separating address map. Then</p>
 <p>$$
-\dim_B \Lambda = \dim_B A_x = \dim_H A_x ,
+\boxed{\; \dim_B \Lambda = \dim_B A_x = \dim_H A_x \;},
 $$</p>
 <p>the similarity dimension of the real factor, and the coupling terms $s_i$ do not change the dimension.</p>
 <p><strong>Proof.</strong> At level $n$ the piece $S_\omega(\Lambda)$ of a word $\omega$ of length $n$ has linear part $\begin{pmatrix}r^n&0\\ S_\omega& r^n\end{pmatrix}$ with $S_\omega = \sum_{k=1}^n s_{\omega_k}r^{n-1}$, so $|S_\omega| \leq n\max_i|s_i|\,|r|^{n-1}$; the piece therefore lies in a rectangle of side $|r|^n$ in $x$ and $\mathcal{O}(n|r|^{n-1})$ in $y$, covering $\mathcal{O}(n)$ boxes of the grid of side $|r|^n$. Since the address map separates the pieces, the box count at scale $|r|^n$ is $\mathcal{O}(n)\,m^n$, and the factor $n$ is subexponential: $\dim_B\Lambda = \log m/\log(1/|r|) = \dim_B A_x$. The equality of the box and Hausdorff dimensions of $A_x$ is the Moran–Hutchinson theorem of <em>Fractal Geometry</em> under the open set condition.</p>
@@ -108,7 +110,7 @@ $$</p>
 <p><strong>Proof.</strong> The linear part of $uz$ is $\begin{pmatrix}r&0\\ s&r\end{pmatrix}$ with the entry $r$ on the diagonal twice; the second coordinate of the orbit is determined by the same sequence of maps as the first, so the coding space maps into the plane with one-dimensional image. The decoupled case $s_i = 0$ leaves the coding dependence intact through the translations $v_{iy}$, and the resulting set is a graph over $A_x$; if in addition all $v_{iy} = 0$, the graph lies on the real axis.</p>
 <p><strong>Example (a lifted Cantor set).</strong> Let $u = \tfrac13+\varepsilon$ and let the translations be $v_1 = 0$, $v_2 = \tfrac23$, both real; the induced real system $\{x/3, x/3+2/3\}$ has the middle-third Cantor set $A_x$ of dimension $\log2/\log3 = 0.6309297535\ldots$, the addresses separate, and the real parts are equal, so the attractor is the graph over the Cantor set and</p>
 <p>$$
-\dim_B\Lambda = \frac{\log 2}{\log 3} = 0.6309297535\ldots .
+\boxed{\; \dim_B\Lambda = \frac{\log 2}{\log 3} = 0.6309297535\ldots \;}.
 $$</p>
 <p>The box counts at the scales $3^{-n}$, for the finite set of the $2^{16}$ points belonging to the level-$16$ codings and the grid of side $3^{-n}$ anchored at the origin, are $192, 384, 896, 2048, 4096, 9216$ for $n = 4,\ldots,9$; the ratios to $2^n$ are $12, 12, 14, 16, 16, 18$, of order $n$, as the subexponential factor predicts, and the box dimensions $\log N_n/(n\log3)$ are $1.196, 1.083, 1.031, 0.991, 0.946, 0.923$, decreasing towards $\log2/\log3 = 0.6309297\ldots$. The values were recomputed in exact rational arithmetic; the floating-point counts are unreliable at the grid boundaries at these scales.</p>
 <p><strong>Example (the decoupled case).</strong> Let $u = \tfrac13$ (so $s = 0$) and let the translations be $v_1 = 0$, $v_2 = \tfrac23+\varepsilon\tfrac13$. The dynamics in the two coordinates share the ratio $\tfrac13$ and differ in the translations, so the attractor is the graph of the continuous function over $C$ determined by the second coordinate, of box dimension $\log2/\log3 = 0.6309297535\ldots$, and the box counts at the scales $3^{-n}$ are exactly $2^n$ — the counts $16, 32, 64, 128, 256, 512$ at $n = 4,\ldots,9$, recomputed — confirming that no second dimension is gained; the attractor is not the product $C\times C'$ of two Cantor sets, which no dual system can produce.</p>

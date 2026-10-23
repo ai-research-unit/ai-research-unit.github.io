@@ -113,11 +113,11 @@ $$</li>
 <p>The quantum group is <strong>unimodular</strong> if $\varphi = \psi$ up to scaling, <strong>compact</strong> if the Haar weight is a state — equivalently, if it is a compact quantum group in the sense of Woronowicz below — and <strong>discrete</strong> if the dual $\hat{\mathbb{G}}$ is compact.</p>
 <p><strong>Theorem (Kustermans–Vaes; standard).</strong> Let $(M,\Delta)$ satisfy the axioms. Then the left Haar weight is unique up to scaling and is KMS with respect to its modular group $\sigma$; there exists a unique strongly continuous one-parameter group $\tau$ of $*$-automorphisms of $M$, the <strong>scaling group</strong>, with</p>
 <p>$$
-\tau_t\circ\sigma_s = \sigma_s\circ\tau_t , \qquad \Delta\circ\tau_t = (\tau_t\otimes\tau_t)\circ\Delta , \qquad \varphi\circ\tau_t = \nu^t\,\varphi \quad \text{for a constant } \nu>0 ,
+\boxed{\;\tau_t\circ\sigma_s = \sigma_s\circ\tau_t , \qquad \Delta\circ\tau_t = (\tau_t\otimes\tau_t)\circ\Delta , \qquad \varphi\circ\tau_t = \nu^t\,\varphi \quad \text{for a constant } \nu>0\;} ,
 $$</p>
 <p>where $\nu$ is the <strong>scaling constant</strong>; there exist unique maps: a $*$-anti-automorphism $R$ of $M$ with $R^2 = \operatorname{id}$, the <strong>unitary antipode</strong>, satisfying $\Delta\circ R = \operatorname{flip}\circ(R\otimes R)\circ\Delta$ with $\operatorname{flip}$ the tensor flip, and an anti-automorphism $S$ of a dense domain of $M$, the <strong>antipode</strong>, with</p>
 <p>$$
-S = R\circ\tau_{-i/2} , \qquad S\bigl(S(a)^*\bigr) = a ,
+\boxed{\;S = R\circ\tau_{-i/2} , \qquad S\bigl(S(a)^*\bigr) = a\;} ,
 $$</p>
 <p>and a $*$-homomorphism $\epsilon : M\to\mathbb{C}$ on the algebraic core, the <strong>counit</strong>; the identities of a quantum group,</p>
 <p>$$
@@ -153,7 +153,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>compact quantum group</strong> is a pair $(A,\Delta)$ with $A$ a unital $\mathrm{C}^*$-algebra and $\Delta : A\to A\otimes A$ a unital coassociative $*$-homomorphism such that $\Delta(A)(1\otimes A)$ and $\Delta(A)(A\otimes1)$ are dense in $A\otimes A$; the density conditions are Woronowicz's cancellation laws.</p>
 <p><strong>Theorem (Woronowicz; standard).</strong> For every compact quantum group there is a unique <strong>Haar state</strong> $h$, a state with</p>
 <p>$$
-(h\otimes\iota)\Delta(a) = h(a)1 = (\iota\otimes h)\Delta(a) \qquad (a\in A) ,
+\boxed{\;(h\otimes\iota)\Delta(a) = h(a)1 = (\iota\otimes h)\Delta(a) \qquad (a\in A)\;} ,
 $$</p>
 <p>which is faithful on the dense $*$-algebra $A_0$ of matrix coefficients of the finite-dimensional unitary corepresentations; every irreducible corepresentation is finite-dimensional, the matrix coefficients span a dense $*$-subalgebra $A_0$ which is a Hopf $*$-algebra, and the analogue of the Peter–Weyl theorem expresses $A_0$ as the algebraic direct sum of the matrix blocks of the irreducible corepresentations. This is Woronowicz's theory of compact quantum groups; it is quoted as standard.</p>
 <p><strong>Example (finite groups and their algebras, checked).</strong> For a finite group $G$ take $A = C(G)$ with $\Delta(f)(s,t) = f(st)$; the Haar state is $h(f) = \frac{1}{|G|}\sum_sf(s)$, and the invariance is immediate from the bijectivity of translations. For the group algebra take $A = \mathbb{C}[G]$ with $\Delta(\lambda_s) = \lambda_s\otimes\lambda_s$; the Haar state is $h(\lambda_s) = \delta_{s,e}$ and the invariance $(\iota\otimes h)\Delta(\lambda_s) = h(\lambda_s)1$ has been verified for $G = S_3$ on all $6$ group elements: the left side is $\lambda_s$ when $s = e$ and $0$ otherwise, matching $\delta_{s,e}1$.</p>

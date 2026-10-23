@@ -89,7 +89,7 @@ P_+ = \tfrac12(\mathrm{id} + T), \qquad P_- = \tfrac12(\mathrm{id} - T)
 $$</p>
 <p>are operators with $P_+^2 = P_+$, $P_-^2 = P_-$, $P_+ + P_- = \mathrm{id}$ and $P_+P_- = P_-P_+ = 0$, and</p>
 <p>$$
-V = V_+ \oplus V_-, \qquad V_+ = \ker(T - \mathrm{id}), \qquad V_- = \ker(T + \mathrm{id}),
+\boxed{\;V = V_+ \oplus V_-, \qquad V_+ = \ker(T - \mathrm{id}), \qquad V_- = \ker(T + \mathrm{id})\;},
 $$</p>
 <p>with $T$ acting as $+\mathrm{id}$ on $V_+$ and as $-\mathrm{id}$ on $V_-$. Conversely $T = P_+ - P_-$.</p>
 <p><strong>Proof.</strong> Compute $(2P_+)^2 = (\mathrm{id}+T)^2 = \mathrm{id} + 2T + T^2 = 2(\mathrm{id} + T) = 4P_+$, so $P_+^2 = P_+$ because $2$ is invertible; the same computation with $T$ replaced by $-T$ gives $P_-^2 = P_-$. The sums and products are immediate from the definitions. A vector is fixed by $T$ exactly when $P_+b = b$ and $P_-b = 0$, and negated exactly when $P_-b = b$ and $P_+b = 0$; since $P_+ + P_- = \mathrm{id}$, every vector is the sum of a fixed vector and a negated one, uniquely.</p>
@@ -115,7 +115,7 @@ $$</p>
 <h3 id="trace-determinant-and-the-minimal-polynomial">Trace, Determinant and the Minimal Polynomial</h3>
 <p><strong>Proposition.</strong> Let $2 \neq 0$ in $F$ and let $T$ be a linear involution of $V$ of type $(n,m)$, so that $n = p + q$. Then</p>
 <p>$$
-\operatorname{tr}T = p - q, \qquad \det T = (-1)^m, \qquad \operatorname{rk}(T - \mathrm{id}) = q, \qquad \operatorname{rk}(T + \mathrm{id}) = p ,
+\boxed{\;\operatorname{tr}T = p - q, \qquad \det T = (-1)^m, \qquad \operatorname{rk}(T - \mathrm{id}) = q, \qquad \operatorname{rk}(T + \mathrm{id}) = p\;} ,
 $$</p>
 <p>and the minimal polynomial of $T$ divides $x^2 - 1$. Moreover $T$ is diagonalisable, and its eigenvalues are $1$ with multiplicity $n$ and $-1$ with multiplicity $m$.</p>
 <p><strong>Proof.</strong> The trace, the determinant and the ranks are read from the block form $\operatorname{diag}(I_n, -I_m)$ of the theorem above, and they are invariant under conjugation, so no generality is lost. The minimal polynomial divides $x^2 - 1$ because $T^2 - \mathrm{id} = 0$. Since $2 \neq 0$, the polynomial $x^2 - 1 = (x-1)(x+1)$ has the two distinct roots $1$ and $-1$, both in $F$, so the minimal polynomial is a product of distinct linear factors and $T$ is diagonalisable with the stated eigenvalues.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p><strong>Proposition.</strong> Let $2 \neq 0$ and let $T$ be of type $(n,m)$. The stabiliser of $T$ in the conjugation action of $\operatorname{GL}(V)$ is</p>
 <p>an operator commuting with $T$ is exactly one preserving each of the two summands, and conversely; equivalently</p>
 <p>$$
-\{U \in \operatorname{GL}(V) : UT = TU\} = \operatorname{GL}(V_+) \times \operatorname{GL}(V_-) .
+\boxed{\;\{U \in \operatorname{GL}(V) : UT = TU\} = \operatorname{GL}(V_+) \times \operatorname{GL}(V_-)\;} .
 $$</p>
 <p>The orbit of $T$ is therefore in bijection with the set of cosets</p>
 <p>$$

@@ -110,7 +110,7 @@ carries the twisted Cauchy–Riemann operator $D_S$ to the operator $d+d^{*}$ of
 <p>The square of the twisted Cauchy–Riemann operator is a Laplace-type operator, and the difference from the raw Laplacian is a curvature term.</p>
 <p><strong>Theorem (Weitzenböck).</strong> With the conventions above,</p>
 <p>$$
-D_E^{2}=\nabla^{E,*}\nabla^{E}+\mathcal{R}^{E},
+\boxed{\;D_E^{2}=\nabla^{E,*}\nabla^{E}+\mathcal{R}^{E}\;},
 $$</p>
 <p>where $\nabla^{E,*}\nabla^E$ is the connection Laplacian (the covariant Laplacian, non-negative on compactly supported sections) and $\mathcal{R}^E$ is an endomorphism-valued zeroth-order term, the <strong>Weitzenböck curvature</strong>, built from the curvature $R^S$ of the spin connection and the curvature $F^W$ of the twisting connection:</p>
 <p>$$
@@ -134,7 +134,7 @@ $$</p>
 <p><strong>Proof.</strong> The symbol of a first-order operator $\sum_ic(e_i)\nabla_i$ is $\sum_ic(e_i)\xi_i=c(\xi)$ up to the factor $i$ from the Fourier convention. The square is $\sigma(D_E)^2=-c(\xi)^2=-|\xi|^2\mathrm{id}$, so the symbol is invertible with inverse $-c(\xi)/|\xi|^2$ for $\xi\neq0$. A differential operator whose principal symbol is invertible for all nonzero covectors is elliptic by definition.</p>
 <p><strong>Theorem.</strong> On a closed spin Riemannian manifold with a $\mathbb{Z}/2$-graded twisted Clifford module bundle $E=E_+\oplus E_-$, the operator restricts to an elliptic operator</p>
 <p>$$
-D_+\colon\Gamma(E_+)\to\Gamma(E_-),
+\boxed{\;D_+\colon\Gamma(E_+)\to\Gamma(E_-)\;},
 $$</p>
 <p>and the <strong>index</strong></p>
 <p>$$
@@ -152,7 +152,7 @@ $$</p>
 <p><strong>Proof.</strong> The nonzero eigenvalues of $D_-D_+$ and $D_+D_-$ coincide, with the same multiplicities, by the standard argument: if $D_+D_-v=\lambda v$ with $\lambda\neq0$ then $D_-v$ is an eigenvector of $D_-D_+$ with the same eigenvalue, and the map is a bijection between the eigenspaces. The trace difference therefore selects only the eigenvalue $0$; the kernel of $D_-D_+$ is $\ker D_+$ and the kernel of $D_+D_-$ is $\ker D_-$, so the difference is $\dim\ker D_+-\dim\ker D_-$. Since the nonzero spectra agree, the difference is $t$-independent.</p>
 <p><strong>Theorem (twisted index formula).</strong> Let $(M,g)$ be a closed spin manifold of even dimension $n=2m$, and let $E=S\otimes W$ be a twisted Clifford module bundle with $W$ a Hermitian vector bundle. Then</p>
 <p>$$
-\operatorname{ind}(D_+)=\int_M\hat{A}(TM)\,\operatorname{ch}(W),
+\boxed{\;\operatorname{ind}(D_+)=\int_M\hat{A}(TM)\,\operatorname{ch}(W)\;},
 $$</p>
 <p>where $\hat{A}(TM)$ is the $\hat{A}$-class of the tangent bundle, expressed in the Pontryagin classes, and $\operatorname{ch}(W)$ is the Chern character of $W$.</p>
 <p><strong>Proof sketch.</strong> By the McKean–Singer formula the index is the $t\to\infty$ (equivalently, the $t$-independent) supertrace of the heat kernel. The local index theorem of Atiyah–Singer–Patodi identifies the $t\to0$ limit of the pointwise supertrace as the top-degree part of $\hat{A}(TM)\operatorname{ch}(W)$, so integrating gives the stated formula. The untwisted case $\operatorname{ch}(W)=1$ is the statement that the index of the Cauchy–Riemann operator on the spinor bundle is the $\hat{A}$-genus.</p>

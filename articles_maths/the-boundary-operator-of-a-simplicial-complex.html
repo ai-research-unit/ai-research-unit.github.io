@@ -109,7 +109,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the square is zero).</strong> For every $n$,</p>
 <p>$$
-\partial_{n-1}\partial_n = 0, \qquad \text{equivalently} \qquad A_{n-1}A_n = 0 ,
+\boxed{\;\partial_{n-1}\partial_n = 0, \qquad \text{equivalently} \qquad A_{n-1}A_n = 0\;} ,
 $$</p>
 <p>the second as a matrix identity over $R$.</p>
 <p><em>Proof.</em> The terms of $\partial\partial[v_0,\dots,v_n]$ are indexed by ordered pairs of omitted vertices $i < j$; omitting $v_i$ then $v_j$ gives sign $(-1)^i(-1)^j$ and omitting $v_j$ then $v_i$ gives sign $(-1)^{j-1}(-1)^i$, and the two terms are the same oriented simplex with opposite signs, so they cancel; this is the computation of <em>Simplicial and Singular Homology</em>, and it is exactly the statement that the products of the incidence matrices vanish.</p>
@@ -139,7 +139,7 @@ $$</p>
 <h3 id="the-smith-normal-form-and-the-torsion">The Smith Normal Form and the Torsion</h3>
 <p><strong>Theorem.</strong> Let $R$ be a principal ideal domain and let $K$ be finite. Then the homology is the direct sum of a free part and a torsion part,</p>
 <p>$$
-H_n^\Delta(K;R) \;\cong\; R^{\beta_n} \oplus \bigoplus_{j} R/(d^{(n)}_j), \qquad d^{(n)}_1 \mid d^{(n)}_2 \mid \cdots ,
+\boxed{\;H_n^\Delta(K;R) \;\cong\; R^{\beta_n} \oplus \bigoplus_{j} R/(d^{(n)}_j), \qquad d^{(n)}_1 \mid d^{(n)}_2 \mid \cdots\;} ,
 $$</p>
 <p>where the <strong>Betti number</strong> is</p>
 <p>$$
@@ -178,7 +178,7 @@ $$</p>
 <h3 id="the-hopf-trace-formula">The Hopf Trace Formula</h3>
 <p><strong>Theorem.</strong> Let $\phi : K \to K$ be a simplicial map of a finite complex and let $\phi_n$ be its chain map. Then the <strong>Lefschetz number</strong></p>
 <p>$$
-L(\phi) = \sum_n (-1)^n \operatorname{tr}(\phi_n) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\phi)\bigr)
+\boxed{\;L(\phi) = \sum_n (-1)^n \operatorname{tr}(\phi_n) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\phi)\bigr)\;}
 $$</p>
 <p>depends only on the induced maps on homology, the equality being the <strong>Hopf trace formula</strong>.</p>
 <p><em>Proof.</em> The alternating sum of the traces is invariant under passing between the two short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to 0$ and $0\to B_n\to Z_n\to H_n\to 0$ of $\phi$-stable spaces, the same telescoping as in the Euler characteristic; it is the operator form of the additivity of the trace over an exact sequence.</p>

@@ -96,8 +96,8 @@ $$</p>
 <h3 id="the-composition-of-the-two-sided-multiplications">The Composition of the Two-Sided Multiplications</h3>
 <p><strong>Theorem.</strong> For all $\tilde Q_1,\tilde Q_2,\tilde{Q}_5,\tilde Q_7$,</p>
 <p>$$
-T_{\tilde Q_1,\tilde Q_2}\,T_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde{Q}_5,\tilde Q_7\tilde Q_2} , \qquad
-S_{\tilde Q_1,\tilde Q_2}\,S_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde Q_7,(\tilde Q_2\tilde{Q}_5)^{*}}=W_{\tilde Q_1\tilde Q_7,\tilde Q_2\tilde{Q}_5} .
+\boxed{\; T_{\tilde Q_1,\tilde Q_2}\,T_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde{Q}_5,\tilde Q_7\tilde Q_2} , \qquad
+S_{\tilde Q_1,\tilde Q_2}\,S_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde Q_7,(\tilde Q_2\tilde{Q}_5)^{*}}=W_{\tilde Q_1\tilde Q_7,\tilde Q_2\tilde{Q}_5} \;}.
 $$</p>
 <p><strong>Proof.</strong> For the first, $T_{\tilde Q_1,\tilde Q_2}(T_{\tilde{Q}_5,\tilde Q_7}(\tilde Q_3))=\tilde Q_1(\tilde{Q}_5\tilde Q_3\tilde Q_7)\tilde Q_2=\tilde Q_1\tilde{Q}_5\,\tilde Q_3\,\tilde Q_7\tilde Q_2$. For the second, $S_{\tilde Q_1,\tilde Q_2}(S_{\tilde{Q}_5,\tilde Q_7}(\tilde Q_3))=S_{\tilde Q_1,\tilde Q_2}(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})=\tilde Q_1(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})^{*}\tilde Q_2^{*}=\tilde Q_1\tilde Q_7\tilde Q_3\tilde{Q}_5^{*}\tilde Q_2^{*}=T_{\tilde Q_1\tilde Q_7,\tilde{Q}_5^{*}\tilde Q_2^{*}}(\tilde Q_3)$, and $\tilde{Q}_5^{*}\tilde Q_2^{*}=(\tilde Q_2\tilde{Q}_5)^{*}$.</p>
 <p><strong>Remark (the reversal).</strong> The first law multiplies the two first parameters in the forward order and the two second parameters in the <strong>reverse</strong> order. The reversal is forced by the association of the plain product, and it is the reason the second tensor factor of the enveloping algebra is written with an $\mathrm{op}$: the two-sided multiplications are the elementary elements of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$. The block's own family, carrying the involution, is treated in §<em>The Conjugate-Indexed Family and the Sandwich Monoid</em>.</p>
@@ -156,7 +156,7 @@ $$</p>
 <h3 id="the-enveloping-algebra-is-the-endomorphism-algebra">The Enveloping Algebra Is the Endomorphism Algebra</h3>
 <p><strong>Theorem.</strong> The sandwich action defines an isomorphism of $\mathbb{C}$-algebras</p>
 <p>$$
-\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2\bigr),
+\boxed{\; \mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2\bigr) \;},
 $$</p>
 <p>so that $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the left action of $\mathbb{B}^{\mathrm e}$ on $\mathbb{B}$ is faithful and exhausts all $\mathbb{C}$-linear operators.</p>
 <p><strong>Proof.</strong> This is the theorem of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, §<em>The Enveloping Algebra</em>, whose algebra is the same $\mathbb{B}$ with the same plain product; the proof there runs on the matrix units of $\mathbb{B}\cong M_2(\mathbb{C})$ and applies here without change. In particular the two-sided multiplications $T_{\tilde Q_1,\tilde Q_2}$ are the elementary tensors, and they span the whole endomorphism algebra, which is the spanning statement used in §<em>The Sandwich Monoid</em>.</p>
@@ -187,7 +187,7 @@ $$</p>
 <p>are idempotent and pairwise orthogonal, $E_{ik}E_{jl}=\delta_{ij}\delta_{kl}E_{ik}$, and they sum to the unit $e_t\otimes e_t^{\mathrm{opp}}=\sum_{ik}E_{ik}$; they are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional line $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$.</p>
 <p><strong>Proposition (the sixteen corners).</strong> The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to the family $E_{ik}$ has sixteen one-dimensional corners</p>
 <p>$$
-E_{ik}\,\mathbb{B}^{\mathrm e}\,E_{jl}=\bigl(\tilde\Pi_i\mathbb{B}\tilde\Pi_j\bigr)\otimes\bigl(\tilde\Pi_l\mathbb{B}\tilde\Pi_k\bigr)^{\mathrm{opp}}=\mathbb{C}\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
+\boxed{\; E_{ik}\,\mathbb{B}^{\mathrm e}\,E_{jl}=\bigl(\tilde\Pi_i\mathbb{B}\tilde\Pi_j\bigr)\otimes\bigl(\tilde\Pi_l\mathbb{B}\tilde\Pi_k\bigr)^{\mathrm{opp}}=\mathbb{C}\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr) \;},
 $$</p>
 <p>where $\Lambda_{ij}$ generates the block's corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is $\tilde\Pi,\vec\Upsilon_x,\vec\Upsilon_y,\tilde\Pi^{\perp}$ for $(i,j)=(+,+),(+,-),(-,+),(-,-)$ — and the corners multiply by</p>
 <p>$$

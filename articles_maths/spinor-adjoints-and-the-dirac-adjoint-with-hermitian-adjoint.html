@@ -87,7 +87,7 @@ $$</p>
 <h3 id="the-spinor-adjoint">The Spinor Adjoint</h3>
 <p><strong>Theorem (the form is the spinor adjoint).</strong> A Hermitian form on $S$ for which the action is self-adjoint is the same thing as a $\sigma$-semilinear map</p>
 <p>$$
-J : S \longrightarrow S^{*}, \qquad J(s) = (s,\cdot), \qquad \langle J(s), t\rangle = (s,t),
+\boxed{\;J : S \longrightarrow S^{*}, \qquad J(s) = (s,\cdot), \qquad \langle J(s), t\rangle = (s,t)\;},
 $$</p>
 <p>that intertwines the action with the adjoint action,</p>
 <p>$$
@@ -118,14 +118,14 @@ $$</p>
 <p><strong>Proof.</strong> $\overline{\beta_{\gamma}(s,t)} = \mathrm{Sc}\bigl((s^{\dagger}\gamma t)^{\dagger}\bigr) = \mathrm{Sc}\bigl(t^{\dagger}\gamma^{\dagger} s\bigr) = -\mathrm{Sc}\bigl(t^{\dagger}\gamma s\bigr) = -\beta_{\gamma}(t,s)$, using $\gamma^{\dagger} = -\gamma$ and the cyclicity of the scalar part.</p>
 <p><strong>Theorem (non-degeneracy and invariance).</strong> For non-isotropic $\gamma$ the pairing $\beta_{\gamma}$ is non-degenerate, and it is invariant under the stabiliser of $\gamma$ in the unitary slice:</p>
 <p>$$
-u^{\dagger}\gamma u = \gamma \ \Longrightarrow \ \beta_{\gamma}(u\cdot s, u\cdot t) = \beta_{\gamma}(s,t) .
+\boxed{\;u^{\dagger}\gamma u = \gamma \ \Longrightarrow \ \beta_{\gamma}(u\cdot s, u\cdot t) = \beta_{\gamma}(s,t)\;} .
 $$</p>
 <p><strong>Proof.</strong> Non-degeneracy follows because $\mathrm{Sc}(s^{\dagger}\gamma t)$ is $\mathrm{Sc}$ composed with the invertible multiplications by $\gamma$ and by the dagger; invariance is $\beta_{\gamma}(us,ut) = \mathrm{Sc}(s^{\dagger}u^{\dagger}\gamma u t) = \mathrm{Sc}(s^{\dagger}\gamma t)$ for $u^{\dagger}\gamma u = \gamma$.</p>
 <p><strong>Corollary (the physical Dirac adjoint).</strong> In the Lorentzian case the stabiliser of a time-like $\gamma_0$ is the maximal compact subgroup $\mathrm{Spin}(m)\subseteq\mathrm{Spin}(1,m)$, and $\beta_{\gamma_0}$ is the $\mathrm{Spin}(m)$-invariant skew-Hermitian pairing whose normalisation by $i$ and by $\gamma_0^{2}$ gives the Hermitian form of the quantum theory; the object $\bar\psi = \psi^{\dagger}\gamma_0$ is the Dirac adjoint of the physics literature, and the Lorentz-invariant bilinear $\bar\psi\chi$ is $\beta_{\gamma_0}$. This is the reason the invariant pairing of the spinor module is indefinite while the form used for the Hilbert space is positive definite on the maximal compact part. The physical reading of $\bar\psi\psi$, of the current $\bar\psi\gamma^\mu\psi$ and of the mass term is in the physics menu and is not used here.</p>
 <h3 id="the-dirac-adjoint-and-the-dirac-operator">The Dirac Adjoint and the Dirac Operator</h3>
 <p><strong>Theorem (adjointness of the Dirac operator for the Dirac pairing).</strong> Let the frame be orthogonal to $\gamma$, so that $\gamma$ anticommutes with each $e_j$, and let $D$ be self-adjoint or skew-adjoint for the module form, $D^{*} = \varepsilon D$ with $\varepsilon = \pm1$. Then</p>
 <p>$$
-\beta_{\gamma}(D\cdot s, t) = -\,\varepsilon\,\beta_{\gamma}(s, D\cdot t) .
+\boxed{\;\beta_{\gamma}(D\cdot s, t) = -\,\varepsilon\,\beta_{\gamma}(s, D\cdot t)\;} .
 $$</p>
 <p>In particular, an operator that is <strong>skew</strong>-adjoint for the module form $(\varepsilon = -1)$ is self-adjoint for the Dirac pairing, and an operator that is <strong>self</strong>-adjoint for the module form $(\varepsilon = +1)$ is skew-adjoint for the Dirac pairing.</p>
 <p><strong>Proof.</strong> $\beta_{\gamma}(Ds,t) = (Ds,\gamma t) = (s, D^{*}\gamma t) = \varepsilon\,(s, D\gamma t) = \varepsilon\,(s, -\gamma D t) = -\varepsilon\,(s,\gamma D t) = -\varepsilon\,\beta_{\gamma}(s,Dt)$, using the definition $\beta_{\gamma}(s,t) = (s,\gamma t)$ with $(\cdot,\cdot)$ the module form, the adjointness $D^{*} = \varepsilon D$, and the anticommutation $\gamma e_j = -e_j\gamma$ which gives $\gamma D = -D\gamma$ so that $D\gamma = -\gamma D$.</p>

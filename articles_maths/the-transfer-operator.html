@@ -94,7 +94,7 @@ $$</p>
 <h3 id="the-inverse-branch-formula">The Inverse-Branch Formula</h3>
 <p><strong>Theorem (piecewise monotone maps).</strong> Let $T$ be a piecewise $C^1$ map of an interval or a compact manifold with finitely many <strong>inverse branches</strong> $y_1,\dots,y_k$, defined on the pieces and satisfying $T(y_i(x))=x$ and $T'(y_i(x))\neq0$. Then the transfer operator with respect to the Riemannian volume $m$ is</p>
 <p>$$
-\mathcal{P}_T h(x)=\sum_{i=1}^{k}\frac{h(y_i(x))}{|T'(y_i(x))|},
+\boxed{\;\mathcal{P}_T h(x)=\sum_{i=1}^{k}\frac{h(y_i(x))}{|T'(y_i(x))|}\;},
 $$</p>
 <p>the sum over the preimages of $x$.</p>
 <p><em>Proof.</em> On a small neighbourhood $\Omega$ of $x$ over which the branch $y_i$ is defined, the change of variables $u=y_i(v)$ gives $\int_{y_i(\Omega)}h(u)\,du=\int_\Omega h(y_i(v))|y_i'(v)|\,dv$ with $|y_i'(v)|=1/|T'(y_i(v))|$; summing over the branches, which partition $T^{-1}(\Omega)$, gives the formula.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p><strong>Definition.</strong> A bounded operator $\mathcal{P}$ on a Banach space $E$ is <strong>quasi-compact</strong> if $E$ decomposes as $E=F\oplus V$ with $F$ finite-dimensional, $\mathcal{P}F\subseteq F$ and $\|\mathcal{P}^n|_{V}\|\le C\theta^n$ for some $\theta<1$. Its <strong>essential spectral radius</strong> is $r_{\mathrm{ess}}(\mathcal{P})=\inf\{\rho(\mathcal{P}|_W):W \text{ closed invariant, } \mathcal{P}|_W \text{ quasi-nilpotent on } E/W\}$.</p>
 <p><strong>Theorem (Lasota–Yorke inequality).</strong> Let $T$ be a piecewise $C^2$ expanding map of the interval, with $|T'|\ge\lambda>1$ and bounded distortion. Then there are constants $C>0$ and $\theta<1$ such that, for every $h$ of bounded variation,</p>
 <p>$$
-\|\mathcal{P}_T^n h\|_{\mathrm{BV}}\le C\|\mathcal{P}_T^n h\|_1+\theta^n\|h\|_{\mathrm{BV}} ;
+\boxed{\;\|\mathcal{P}_T^n h\|_{\mathrm{BV}}\le C\|\mathcal{P}_T^n h\|_1+\theta^n\|h\|_{\mathrm{BV}}\;} ;
 $$</p>
 <p>consequently $\mathcal{P}_T$ on the space $\mathrm{BV}$ of functions of bounded variation is quasi-compact, its essential spectral radius is at most $\theta$, its peripheral spectrum consists of the simple eigenvalue $1$ and finitely many roots of unity, and the Fourier coefficients of the correlations decay at rate at most $\theta$.</p>
 <p><em>Proof (sketch).</em> The variation of each branch contribution is estimated from the chain rule and the mean value theorem: the variation of $h\circ y_i/|T'\!\circ y_i|$ is at most the variation of $h$ times $\sup|y_i'|$, plus a term proportional to $\|h\circ y_i/|T'\circ y_i|\|_\infty$, and $\sup|y_i'|\le1/\lambda$; summing over the branches gives the displayed inequality with $\theta=1/\lambda$ up to the distortion constants, and the quasi-compactness is the standard Hennion/Nussbaum argument for an operator satisfying such an inequality.</p>
@@ -135,7 +135,7 @@ $$</p>
 <p>which reduces to $\mathcal{P}_T$ when $\varphi=-\log|T'|$ on each branch, so that $\mathcal{P}_T=\mathcal{P}_{-\log|T'|}$; the operator with $\varphi=0$ is the <strong>Perron–Frobenius operator of the map read against the measure of maximal entropy</strong>.</p>
 <p><strong>Theorem (the pressure as a spectral radius).</strong> For a topologically mixing piecewise monotone map $T$ and a Hölder potential $\varphi$ the spectral radius of $\mathcal{P}_\varphi$ on the Hölder space is $\exp(P(\varphi))$, where $P(\varphi)$ is the <strong>topological pressure</strong>, the eigenvalue $\exp(P(\varphi))$ is simple, and its eigenvector and its dual eigenfunctional give the <strong>Gibbs state</strong> of $\varphi$: the unique invariant measure $\mu_\varphi$ with</p>
 <p>$$
-\mu_\varphi(T(A))=\int_A\exp(P(\varphi)-\varphi)\,d\mu_\varphi \qquad \text{locally},
+\boxed{\;\mu_\varphi(T(A))=\int_A\exp(P(\varphi)-\varphi)\,d\mu_\varphi \qquad \text{locally}\;},
 $$</p>
 <p>and $h_{\mu_\varphi}+\int\varphi\,d\mu_\varphi=P(\varphi)$, the <strong>variational principle</strong>.</p>
 <p><em>Proof.</em> Quoted as standard from <em>Hyperbolic Dynamics and Anosov Systems</em>, where the transfer operator is written $\mathcal L$ and the thermodynamic formalism, the Gibbs property, the Bowen–Ruelle measure and the periodic orbit counting are developed; the notation $\mathcal{P}_\varphi$ is used here to keep the Lie derivative $\mathcal L_X$ of <em>The Flow Operator</em> distinct from the operator. No proof is repeated.</p>

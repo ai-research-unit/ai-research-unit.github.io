@@ -84,7 +84,7 @@ $$</p>
 <h3 id="the-reflection-in-the-clifford-algebra">The Reflection in the Clifford Algebra</h3>
 <p><strong>Proposition.</strong> In the Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ the reflection is the restriction to the vectors of the signed inner conjugation by $a$,</p>
 <p>$$
-\rho_a(v) = a\,\alpha(v)\,a^{-1}, \qquad v \in V,
+\boxed{\;\rho_a(v) = a\,\alpha(v)\,a^{-1}, \qquad v \in V\;},
 $$</p>
 <p>while the unsigned inner conjugation is its negative, $uvu^{-1} = -\rho_a(v)$; the vector $a$ satisfies $a^2 = \mathfrak{Q}(a)$ and $a^{-1} = \mathfrak{Q}(a)^{-1}a$, and the conjugation by $a$ is the reflection up to the sign of the grade involution.</p>
 <p><strong>Proof.</strong> The identity is the Clifford reflection formula, <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; it is quoted, not re-derived.</p>
@@ -93,14 +93,14 @@ $$</p>
 <h3 id="self-adjointness">Self-Adjointness</h3>
 <p><strong>Theorem (the reflection is self-adjoint).</strong> The adjoint of the reflection with respect to the form is the reflection itself,</p>
 <p>$$
-\rho_a^{*} = \rho_a^{-1} = \rho_a, \qquad \langle \rho_a v, w\rangle = \langle v, \rho_a w\rangle \ \text{for all } v, w,
+\boxed{\;\rho_a^{*} = \rho_a^{-1} = \rho_a, \qquad \langle \rho_a v, w\rangle = \langle v, \rho_a w\rangle \ \text{for all } v, w\;},
 $$</p>
 <p>so the reflection is both unitary and <strong>Hermitian</strong> (self-adjoint); in the notation of the operator involution it is a unitary element fixed by the adjoint.</p>
 <p><strong>Proof.</strong> An isometry of the form has adjoint its inverse, $g^{*} = g^{-1}$, by the unitarity theorem of <em>The Adjoint of a Symmetry Operator</em>; an involution has $g^{-1} = g$; combining, $\rho_a^{*} = \rho_a^{-1} = \rho_a$. Directly, $B(\rho_a v, w) = B(v,w) - 2q(a)^{-1}B(v,a)B(a,w)$ and $B(v, \rho_a w) = B(v,w) - 2q(a)^{-1}B(v,a)B(a,w)$ are equal by the symmetry of $B$.</p>
 <h3 id="the-involutions-and-the-reflections">The Involutions and the Reflections</h3>
 <p><strong>Proposition.</strong> The self-adjoint unitary elements of $G$ are exactly the <strong>involutions</strong> of $G$,</p>
 <p>$$
-\{g \in G : g^{*} = g^{-1} = g\} = \{g \in G : g^2 = \mathrm{id}\},
+\boxed{\;\{g \in G : g^{*} = g^{-1} = g\} = \{g \in G : g^2 = \mathrm{id}\}\;},
 $$</p>
 <p>and a reflection is the involutive isometry whose fixed space is a hyperplane; an involution that fixes a subspace of codimension greater than one is a product of commuting reflections and is self-adjoint without being a single reflection.</p>
 <p><strong>Proof.</strong> $g^{*} = g$ and $g^{*} = g^{-1}$ together give $g^{-1} = g$, i.e., $g^2 = \mathrm{id}$; conversely an involutive isometry satisfies $g^{*} = g^{-1} = g$. The fixed-space statement is the classification of the involutions of an orthogonal group, <em>Isometries and Orthogonal Transformations</em>: a self-adjoint involution is orthogonally diagonalisable with eigenvalues $\pm1$, hence a product of reflections in the $(-1)$-eigenspaces.</p>

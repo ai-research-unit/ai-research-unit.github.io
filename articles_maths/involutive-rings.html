@@ -125,7 +125,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> Let $2$ be invertible in $A$. For $a \in A$ put $a_+ = \tfrac12(a+\sigma(a))$ and $a_- = \tfrac12(a-\sigma(a))$. Then $a_+$ is symmetric, $a_-$ is skew, and $a = a_+ + a_-$. The sum</p>
 <p>$$
-A = \mathrm{Sym}(A,\sigma) \oplus \mathrm{Skew}(A,\sigma)
+\boxed{\;A = \mathrm{Sym}(A,\sigma) \oplus \mathrm{Skew}(A,\sigma)\;}
 $$</p>
 <p>is direct, and the two summands are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$.</p>
 <p><strong>Proof.</strong> $\sigma(a_+) = \tfrac12(\sigma(a)+\sigma^2(a)) = \tfrac12(\sigma(a)+a) = a_+$ and $\sigma(a_-) = \tfrac12(\sigma(a)-\sigma^2(a)) = \tfrac12(\sigma(a)-a) = -a_-$, both computations using only additivity and $\sigma^2 = \mathrm{id}$, so no commutativity is needed. If $a$ is both symmetric and skew then $a = -a$, so $2a = 0$ and $a = 0$ because $2$ is invertible.</p>
@@ -246,7 +246,7 @@ $$</p>
 <p><strong>Definition.</strong> A multiplicative set $S \subseteq R$ with $1 \in S$ is <strong>$\sigma$-stable</strong> when $\sigma(S) = S$, and its fixed part is $S^\sigma = S \cap R^\sigma$.</p>
 <p><strong>Theorem.</strong> Let $S$ be a $\sigma$-stable multiplicative set. Then $\sigma$ extends to an involution $\sigma^{\mathrm{ext}}$ of the localization $S^{-1}R$ by $\sigma^{\mathrm{ext}}(r/s) = \sigma(r)/\sigma(s)$, and</p>
 <p>$$
-(S^{-1}R)^{\sigma^{\mathrm{ext}}} = (S^\sigma)^{-1}R^\sigma ,
+\boxed{\;(S^{-1}R)^{\sigma^{\mathrm{ext}}} = (S^\sigma)^{-1}R^\sigma\;} ,
 $$</p>
 <p>the localization of the fixed subring at the fixed part of $S$, identified with its image in $S^{-1}R$.</p>
 <p><strong>Proof.</strong> If $r/s = r'/s'$ there is $t \in S$ with $t(rs'-r's) = 0$, and applying $\sigma$ gives $\sigma(t)(\sigma(r)\sigma(s')-\sigma(r')\sigma(s)) = 0$ with $\sigma(t) \in S$, so $\sigma^{\mathrm{ext}}$ is well defined; it is an involution because $\sigma$ is. For the fixed ring, let $x = r/s$ satisfy $\sigma(x) = x$, so that $t(\sigma(r)s-r\sigma(s)) = 0$ for some $t \in S$. Put</p>
@@ -257,7 +257,7 @@ $$</p>
 <p><strong>Corollary.</strong> Let $\mathrm{P}$ be a $\sigma$-stable prime and $S = R\setminus\mathrm{P}$, which is $\sigma$-stable. Then $R_\mathrm{P}$ carries the induced involution and $(R_\mathrm{P})^{\sigma^{\mathrm{ext}}} = (R^\sigma)_{\mathrm{P}\cap R^\sigma}$.</p>
 <p><strong>Corollary.</strong> Let $R$ be an integral domain with involution $\sigma$, and let $\sigma$ act on the fraction field by $\sigma(a/b) = \sigma(a)/\sigma(b)$. Then</p>
 <p>$$
-\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma) .
+\boxed{\;\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)\;} .
 $$</p>
 <p><strong>Proof.</strong> Take $S = R\setminus\{0\}$, which is $\sigma$-stable with fixed part $R^\sigma\setminus\{0\}$, and apply the theorem.</p>
 <h3 id="fields-with-involution">Fields with Involution</h3>

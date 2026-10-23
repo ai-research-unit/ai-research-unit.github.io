@@ -101,7 +101,7 @@
 <h3 id="the-rigidity-method">The Rigidity Method</h3>
 <p><strong>Definition.</strong> Let $G$ be a finite group and $\mathbf{C} = (C_1,\ldots,C_r)$ a tuple of conjugacy classes of $G$, with $C_i \neq 1$. For each $i$ choose $\sigma_i \in C_i$, and suppose that $\sigma_1\cdots\sigma_r = 1$ and $\langle\sigma_1,\ldots,\sigma_r\rangle = G$. Writing $n_i$ for the order of the centraliser of $\sigma_i$ in $G$, the tuple is <strong>rigid</strong> if</p>
 <p>$$
-\#\{(\tau_1,\ldots,\tau_r) : \tau_i \in C_i,\ \tau_1\cdots\tau_r = 1,\ \langle\tau_i\rangle = G\} = \frac{\lvert G\rvert}{n_1n_2\cdots n_r},
+\boxed{\;\#\{(\tau_1,\ldots,\tau_r) : \tau_i \in C_i,\ \tau_1\cdots\tau_r = 1,\ \langle\tau_i\rangle = G\} = \frac{\lvert G\rvert}{n_1n_2\cdots n_r}\;},
 $$</p>
 <p>that is, if the natural upper bound given by the character theory of $G$ is attained.</p>
 <p><strong>Theorem (rigidity, Shafarevich, Fried–Völklein).</strong> Let $G$ be a finite group with a rational rigid tuple of conjugacy classes, that is, a rigid tuple whose classes are stable under the action of the Galois group of $\mathbb{Q}$ on the character values. Then $G$ occurs regularly over $\mathbb{Q}$, hence occurs over $\mathbb{Q}$.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $L/K$ be a finite Galois extension with group $\bar G$ and let $1 \to A \to G \to \bar G \to 1$ be an exact sequence of finite groups. The <strong>embedding problem</strong> attached to this data asks whether there is a finite Galois extension $M/K$ containing $L$ with $\operatorname{Gal}(M/K) \cong G$, compatibly with the surjection on the group and the inclusion of fields. The problem is <strong>split</strong> if the sequence splits, and it is <strong>Frattini</strong> if $A$ lies in the Frattini subgroup of $G$.</p>
 <p><strong>Theorem (obstruction).</strong> Let $L/K$ be a Galois extension with group $\bar G$ and let $A$ be a finite $\bar G$-module (in the application, a finite abelian group with the action of $\bar G$). The obstruction to a compatible solution of the embedding problem with abelian kernel $A$ is a class</p>
 <p>$$
-\operatorname{ob} \in H^2(\bar G, A),
+\boxed{\;\operatorname{ob} \in H^2(\bar G, A)\;},
 $$</p>
 <p>which vanishes exactly when a solution exists; the classes in $H^2(G_K,A)$ classifying such problems are the cohomology classes of <em>Galois Cohomology</em>, and the vanishing of the obstruction is the statement in <em>Galois Cohomology</em> that the extension of modules splits compatibly with the homomorphism.</p>
 <p><strong>Proof sketch.</strong> A solution gives a splitting of the sequence over $\bar G$ compatible with the Galois action, and the difference of two solutions is a crossed homomorphism, hence a class in $H^1$; the obstruction is the coboundary of the cohomology class of the extension, and the standard computation in the group cohomology of <em>Galois Cohomology</em> gives the exactness needed.</p>

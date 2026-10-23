@@ -84,7 +84,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the induced involution is an isometric involution).</strong> <strong>(a)</strong> $\Sigma$ maps $\mathcal{K}(X)$ into itself, because the image of a compact set under a continuous map is compact. <strong>(b)</strong> $\Sigma^2 = \operatorname{id}_{\mathcal{K}(X)}$, because $\sigma^2 = \operatorname{id}_X$. <strong>(c)</strong> $\Sigma$ is an isometry of the Hausdorff metric:</p>
 <p>$$
-d_H\bigl(\Sigma(A), \Sigma(B)\bigr) = d_H(A,B) \qquad (A, B \in \mathcal{K}(X)) .
+\boxed{\;d_H\bigl(\Sigma(A), \Sigma(B)\bigr) = d_H(A,B) \qquad (A, B \in \mathcal{K}(X))\;} .
 $$</p>
 <p><strong>(d)</strong> The fixed set $\operatorname{Fix}\Sigma = \{A : \sigma(A) = A\}$ is closed in $\mathcal{K}(X)$ and consists exactly of the compact sets invariant under $\sigma$.</p>
 <p><strong>Proof sketch.</strong> (a) is the continuity of $\sigma$ and the compactness. (b) is the functoriality of the image. (c) the identity $d(\sigma a, \sigma b) = d(a,b)$ gives $\sup_{a \in A} d(\sigma a, \sigma B) = \sup_{a\in A} d(a,B)$ for each of the two terms of the Hausdorff distance, and the two supprema are exchanged by the symmetry of the definition. (d) $\Sigma$ is continuous and involutive, so its fixed set is closed, and $\Sigma(A)=A$ is the definition of the invariance. The statements are those of <em>Metric Geometry</em>.</p>
@@ -96,7 +96,7 @@ $$</p>
 $$</p>
 <p>Then the Hutchinson operator and the induced involution commute,</p>
 <p>$$
-F \circ \Sigma = \Sigma \circ F ,
+\boxed{\;F \circ \Sigma = \Sigma \circ F\;} ,
 $$</p>
 <p>and the attractor $K$ is a fixed point of the involution, $\sigma(K) = K$.</p>
 <p><strong>Proof sketch.</strong> The commutation is the computation of <em>Symmetric Fractals and the Involution</em>, $\Sigma(F(A)) = \bigcup_i f_{\tau(i)}(\Sigma(A)) = F(\Sigma(A))$. Then $\Sigma(K) = \Sigma(F(K)) = F(\Sigma(K))$, so $\Sigma(K)$ is a fixed point of the Hutchinson operator and, by the uniqueness of the attractor of the lead article <em>Fractal Geometry</em>, $\Sigma(K) = K$.</p>
@@ -115,7 +115,7 @@ $$</p>
 $$</p>
 <p>and the self-similar measure $\mu$ is invariant under the involution,</p>
 <p>$$
-\sigma_\# \mu = \mu .
+\boxed{\;\sigma_\# \mu = \mu\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> The computation is a reindexing: $\sigma_\#(L\mu) = \sum_i p_i (\sigma\circ f_i)_\#\mu = \sum_i p_i (f_{\tau(i)}\circ\sigma)_\#\mu = \sum_j p_{\tau(j)}(f_j)_\#(\sigma_\#\mu) = L(\sigma_\#\mu)$, using $p_j = p_{\tau(j)}$ in the last step. Then $\sigma_\#\mu$ is a fixed point of $L$ and, by the uniqueness of the self-similar measure of <em>The Hutchinson Operator and Its Adjoint</em>, $\sigma_\#\mu = \mu$. The measure-theoretic construction of the symmetric measure, its invariance and the dimension of its quotient are those of <em>Fractal Analysis</em>'s <em>The Self-Similar Measure and the Involution</em>; the operator relation is what is stated here.</p>
 <p><strong>Remark (the intertwining of the two levels).</strong> The support map links the two involutions: $\operatorname{supp}(\sigma_\#\mu) = \sigma(\operatorname{supp}\mu)$, so a symmetric measure has a symmetric support, and the symmetric attractor is the support of the symmetric self-similar measure. The pair $(\Sigma, \sigma_\#)$ — the involution on the compact sets and the adjoint involution on the measures — is the operator form of the geometry of <em>Symmetric Fractals and the Involution</em>: the fixed point of $\Sigma$ is the symmetric attractor, the fixed point of $\sigma_\#$ is the symmetric measure, and the two are linked by the support.</p>

@@ -133,7 +133,7 @@ the <strong>Huber function</strong>, and the proximal map is the soft thresholdi
 <h3 id="fenchel-duality-and-the-lagrangian">Fenchel Duality and the Lagrangian</h3>
 <p><strong>Theorem (Fenchel duality).</strong> Let $f,g$ be closed proper convex functions on $\mathbb{R}^n$ and let $A$ be a linear map. If the qualification $0\in\operatorname{ri}(\operatorname{dom}g-A\operatorname{dom}f)$ holds, then
 $$
-\inf_x\{f(x)+g(Ax)\} = \sup_y\{-f^*(-A^{\mathsf T}y)-g^*(y)\},
+\boxed{\;\inf_x\{f(x)+g(Ax)\} = \sup_y\{-f^*(-A^{\mathsf T}y)-g^*(y)\}\;},
 $$
 and the supremum is attained.</p>
 <p><strong>Proof sketch.</strong> The left side is the value at $0$ of the infimal convolution of $f$ with the function $x\mapsto g(Ax)$; the conjugate of that function is computed from the rule for a linear substitution, and the biconjugacy theorem applied to the closed convex function so obtained gives the right side, the qualification being exactly the condition under which the infimal convolution is closed and the conjugate of the sum is the infimal convolution of the conjugates.</p>
@@ -144,13 +144,13 @@ $$
 with $f_i$ closed proper convex, the <strong>Lagrangian</strong> is $L(x,\lambda,\mu) = f_0(x)+\sum_i\lambda_if_i(x)+\langle\mu,Ax-b\rangle$ for $\lambda\geq0$, and the <strong>dual problem</strong> is to maximise $\mathfrak{Q}(\lambda,\mu) = \inf_xL(x,\lambda,\mu)$ over $\lambda\geq0$.</p>
 <p><strong>Theorem (Karush–Kuhn–Tucker; Slater).</strong> If the programme is feasible and Slater's condition holds — there is a feasible $x$ with $f_i(x)<0$ for all $i$ — then there is no duality gap, the dual optimum is attained, and $x^*$ is optimal exactly when there are $(\lambda^*,\mu^*)$ with $\lambda^*\geq0$, complementary slackness $\lambda_i^*f_i(x^*) = 0$, and the stationarity condition
 $$
-0\in\partial f_0(x^*)+\sum_i\lambda_i^*\partial f_i(x^*)+A^{\mathsf T}\mu^* .
+\boxed{\;0\in\partial f_0(x^*)+\sum_i\lambda_i^*\partial f_i(x^*)+A^{\mathsf T}\mu^*\;} .
 $$
 Conversely, if $x^*$ is feasible and such multipliers exist, then $x^*$ is optimal.</p>
 <p><strong>Proof sketch.</strong> The programme is rewritten as $\min\lvert f_0+\delta_{\{f_i\leq0\}}+\delta_{\{Ax = b\}}\rvert$ and the Fenchel duality theorem is applied with the qualification provided by Slater's condition, which supplies the relative interior point required; the stationarity condition is the subdifferential sum rule, valid under the same qualification; the converse is the direct computation of the Lagrangian inequality.</p>
 <p><strong>Theorem (minimax).</strong> Let $K\subseteq\mathbb{R}^n$ and $L\subseteq\mathbb{R}^m$ be nonempty compact convex sets, and let $\phi:K\times L\to\mathbb{R}$ be continuous, convex in its first variable and concave in its second. Then
 $$
-\min_{x\in K}\max_{y\in L}\phi(x,y) = \max_{y\in L}\min_{x\in K}\phi(x,y).
+\boxed{\;\min_{x\in K}\max_{y\in L}\phi(x,y) = \max_{y\in L}\min_{x\in K}\phi(x,y)\;}.
 $$
 <strong>Proof sketch.</strong> That the left side is at least the right is the weak duality; for equality one uses the convexity and concavity to reduce to the minimisation of a convex function on $K$ and applies the supporting hyperplane theorem in the product $K\times L$, or invokes the general minimax theorem of Sion, of which this is the compact case, proved by the same separation.</p>
 <h3 id="the-direct-method-and-the-existence-of-minimisers">The Direct Method and the Existence of Minimisers</h3>

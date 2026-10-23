@@ -106,7 +106,7 @@ U = \left\{ \eta_t = \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix} : t \in \mathb
 $$</p>
 <p>The <strong>geodesic flow</strong> on $G/\Gamma$ is the action of $A$, and the <strong>horocycle flow</strong> is the action of $U$. The two are linked by the commutation relation</p>
 <p>$$
-a_s \eta_t a_s^{-1} = \begin{pmatrix} 1 & \exp(s)t \\ 0 & 1 \end{pmatrix} = \eta_{\exp(s)t},
+\boxed{\;a_s \eta_t a_s^{-1} = \begin{pmatrix} 1 & \exp(s)t \\ 0 & 1 \end{pmatrix} = \eta_{\exp(s)t}\;},
 $$</p>
 <p>which is the contraction relation of the Mautner phenomenon.</p>
 <p>Geometrically, the $A$-orbit of a unit tangent vector is the geodesic through its base point in the direction of the vector, and the $U$-orbit is the horocycle through that point, the orbit of the parabolic one-parameter group corresponding to the limit point of the geodesic.</p>
@@ -149,7 +149,7 @@ $$</p>
 <h3 id="horocycle-orbits">Horocycle Orbits</h3>
 <p><strong>Theorem (Furstenberg).</strong> Let $\Gamma \le SL_2(\mathbb{R})$ be a lattice and let $x \in G/\Gamma$. Then the horocycle orbit $\{\eta_t x : t \in \mathbb{R}\}$ is equidistributed in $G/\Gamma$ with respect to the invariant measure:</p>
 <p>$$
-\frac{1}{T}\int_0^T f(\eta_t x)\, dt \longrightarrow \int_{G/\Gamma} f \, d\mu \qquad \text{as } T \to \infty,
+\boxed{\;\frac{1}{T}\int_0^T f(\eta_t x)\, dt \longrightarrow \int_{G/\Gamma} f \, d\mu \qquad \text{as } T \to \infty\;},
 $$</p>
 <p>for every $f \in C_c(G/\Gamma)$. In particular the horocycle flow is uniquely ergodic.</p>
 <p>The theorem is the prototype of all equidistribution results of the subject, and it is the statement that the time average along every horocycle equals the space average; it holds for every point $x$, not merely almost every one, which is the sense of unique ergodicity. The proof uses the commutation relation $a_s \eta_t a_s^{-1} = \eta_{\exp(s) t}$ to rescale the horocycle, together with the ergodicity of the geodesic flow; the two flows are two sides of the same ergodic theorem.</p>

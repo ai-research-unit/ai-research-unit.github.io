@@ -75,7 +75,7 @@
 <h2 id="the-adjoint-defined-by-a-form">The Adjoint Defined by a Form</h2>
 <p><strong>Theorem.</strong> Let $\Phi$ be invertible and let the sesquilinear form be $\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$ on $R^n$. Then</p>
 <p>$$
-\langle Xx,y\rangle = \langle x, X^{*}y\rangle , \qquad X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi ,
+\boxed{\;\langle Xx,y\rangle = \langle x, X^{*}y\rangle , \qquad X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi\;} ,
 $$</p>
 <p>so $X\mapsto X^{*}$ is the adjoint involution of $M_n(R)$ determined by $\Phi$ and $\sigma$; for $\Phi = I$ it is $X\mapsto \sigma(X)^{\mathrm t}$, and for $\sigma = \mathrm{id}$ and $\Phi = I$ it is the transpose.</p>
 <p><strong>Proof.</strong> $\langle Xx,y\rangle = \sigma(Xx)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\sigma(X)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\Phi(\Phi^{-1}\sigma(X)^{\mathrm t}\Phi)y = \langle x, X^{*}y\rangle$. The four laws are those of <em>Involutions of the Endomorphism Ring</em>.</p>
@@ -94,14 +94,14 @@ $$</p>
 <p><strong>Proof.</strong> $X^{*} = X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi = X$, i.e. $\sigma(X)^{\mathrm t}\Phi = \Phi X$; the rest is <em>Involutive Rings</em> applied to the adjoint involution.</p>
 <p><strong>Proposition (the unitary group).</strong> The matrices with</p>
 <p>$$
-X^{*}X = XX^{*} = I, \qquad \text{equivalently } \sigma(X)^{\mathrm t}\Phi X = \Phi ,
+\boxed{\;X^{*}X = XX^{*} = I, \qquad \text{equivalently } \sigma(X)^{\mathrm t}\Phi X = \Phi\;} ,
 $$</p>
 <p>form a subgroup $U_n(R,\Phi,\sigma)$ of $\mathrm{GL}_n(R)$ and are exactly the matrices preserving the form, $\langle Xx,Xy\rangle = \langle x,y\rangle$ for all $x,y$. For $\sigma = \mathrm{id}$ and $\Phi$ symmetric this is the orthogonal group, for $\Phi^{\mathrm t} = -\Phi$ the symplectic group, and for $R = \mathbb{C}$, $\sigma$ the conjugation and $\Phi = I$ the unitary group.</p>
 <p><strong>Proof.</strong> $\sigma(X)^{\mathrm t}\Phi X = \Phi$ is $X^{*}X = I$; multiplying by $X$ on the left gives $X X^{*} = I$ by the standard group argument, and the preservation is the unitary-element proposition of <em>Involutions of the Endomorphism Ring</em>.</p>
 <h2 id="the-trace-pairing">The Trace Pairing</h2>
 <p><strong>Proposition.</strong> With the trace pairing $\beta(X,Y) = \tau(XY)$ of the ring, the adjoint of the left multiplication is the right multiplication, $L_X^{*} = R_X$, and the trace of the adjoint is the $\sigma$-image of the trace,</p>
 <p>$$
-\tau(X^{*}) = \sigma(\tau(X)) .
+\boxed{\;\tau(X^{*}) = \sigma(\tau(X))\;} .
 $$</p>
 <p>Hence the trace pairing is $\sigma$-semilinear in the appropriate sense and its restriction to the self-adjoint matrices is a symmetric bilinear form.</p>
 <p><strong>Proof.</strong> $\beta(L_XY,Z) = \tau(XYZ) = \tau(YZX) = \beta(Y,R_XZ)$ is <em>The Transpose as an Adjoint</em>; $\tau(X^{*}) = \tau(\Phi^{-1}\sigma(X)^{\mathrm t}\Phi) = \tau(\sigma(X)^{\mathrm t}) = \sigma(\tau(X))$, since the trace is invariant under conjugation by $\Phi$ and additive over the diagonal.</p>

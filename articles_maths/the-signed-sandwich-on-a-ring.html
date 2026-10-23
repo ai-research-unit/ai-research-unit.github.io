@@ -121,7 +121,7 @@ $$</p>
 <p>It is the composite $S^{\alpha}_{a,b} = L_a \circ R_b \circ \alpha = S_{a,b}\circ\alpha$ of the unsigned sandwich with the grade involution, and it is additive.</p>
 <p><strong>Theorem (the signed sandwich is the unsigned sandwich at $\alpha$).</strong> For all $a, b \in A$,</p>
 <p>$$
-S^{\alpha}_{a,b} = S_{a,b} \circ \alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b} = \alpha \circ S_{\alpha^{-1}(a),\alpha^{-1}(b)} .
+\boxed{\;S^{\alpha}_{a,b} = S_{a,b} \circ \alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b} = \alpha \circ S_{\alpha^{-1}(a),\alpha^{-1}(b)}\;} .
 $$</p>
 <p>In particular the two sandwiches coincide exactly when $\alpha = \mathrm{id}$, and $S^{\alpha}_{a,b}(x) = S_{a,b}(\alpha(x))$ for every $x$.</p>
 <p><strong>Proof.</strong> $S_{a,b}(\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$, which is the first identity. For the second, $\alpha(S_{\alpha^{-1}(a),\alpha^{-1}(b)}(x)) = \alpha(\alpha^{-1}(a)\,x\,\alpha^{-1}(b)) = a\,\alpha(x)\,b$.</p>
@@ -129,7 +129,7 @@ $$</p>
 <h3 id="composition">Composition</h3>
 <p><strong>Proposition.</strong> For all $a, b, c, d \in A$,</p>
 <p>$$
-S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\; b\,\alpha(d)} .
+\boxed{\;S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\; b\,\alpha(d)}\;} .
 $$</p>
 <p><strong>Proof.</strong> Using $S^{\alpha}_{c,d} = S_{c,d}\alpha$ and the commutation $\alpha S_{c,d} = S_{\alpha(c),\alpha(d)}\alpha$ of the previous section, the composite is $S_{a,b}\alpha S_{c,d}\alpha = S_{a,b}S_{\alpha(c),\alpha(d)}\alpha^2 = S_{a\alpha(c),\,b\alpha(d)}$, and this is $S^{\alpha}_{a\alpha(c),b\alpha(d)}$ by the definition.</p>
 <p><strong>Corollary.</strong> The signed sandwiches form a submonoid of $\operatorname{End}(A)$, with identity $S^{\alpha}_{1,1} = \alpha$. The monoid law is not the sandwich law of the unsigned case: the composite of $S^{\alpha}_{a,b}$ and $S^{\alpha}_{c,d}$ inserts $\alpha$ into the parameters, which is the operator form of the sign rule the grading imposes.</p>
@@ -147,7 +147,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>reflection</strong> of the graded ring $(A,\alpha)$ is a signed two-sided operator $r_u = S^{\alpha}_{u,u^{-1}}$ by a unit $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^2 = \mathrm{id}$.</p>
 <p><strong>Theorem.</strong> Let $u \in A^\times$. The signed inner conjugation $r_u$ is an involution if and only if $u\,\alpha(u)$ is central; it is then the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two, and it can be written</p>
 <p>$$
-r_u(x) = u\,\alpha(x)\,u^{-1}, \qquad r_u^2(x) = x \iff u\,\alpha(u) \in Z(A).
+\boxed{\;r_u(x) = u\,\alpha(x)\,u^{-1}, \qquad r_u^2(x) = x \iff u\,\alpha(u) \in Z(A)\;}.
 $$</p>
 <p><strong>Proof.</strong> By the composition computation, $r_u^2 = \operatorname{conj}_{u\alpha(u)}$, and an inner conjugation is the identity exactly when the conjugating element is central. When $u\alpha(u)$ is central, $r_u^2 = \mathrm{id}$ is automatic since $\operatorname{conj}_{u\alpha(u)}(x) = x$. Conversely if $r_u^2 = \mathrm{id}$ then $u\alpha(u) x = x\, u\alpha(u)$ for all $x$, so $u\alpha(u)$ is central.</p>
 <p><strong>Corollary.</strong> If $u$ is fixed by $\alpha$ ($\alpha(u) = u$), then $u\alpha(u) = u^2$ and the reflection is an involution exactly when $u^2$ is central; if $u$ is negated by $\alpha$ ($\alpha(u) = -u$) and $2$ is invertible, then $u\alpha(u) = -u^2$, again central exactly when $u^2$ is central. In particular, if $u^2 \in Z(A)$, then $r_u$ is an involution whichever parity $u$ has.</p>

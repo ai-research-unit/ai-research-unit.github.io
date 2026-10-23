@@ -86,13 +86,13 @@ $$</p>
 $$</p>
 <p>Both are symmetric and $\mathbb{R}$-bilinear. They differ by twice the dot product of the vector parts,</p>
 <p>$$
-\langle\tilde q_1,\tilde q_2\rangle_{\natural}-\langle\tilde q_1,\tilde q_2\rangle=2(\vec q_1,\vec q_2) , \qquad \langle\tilde q_1,\tilde q_2\rangle_{\natural}+\langle\tilde q_1,\tilde q_2\rangle=2q_{1t}q_{2t} ,
+\boxed{\;\langle\tilde q_1,\tilde q_2\rangle_{\natural}-\langle\tilde q_1,\tilde q_2\rangle=2(\vec q_1,\vec q_2) , \qquad \langle\tilde q_1,\tilde q_2\rangle_{\natural}+\langle\tilde q_1,\tilde q_2\rangle=2q_{1t}q_{2t}\;},
 $$</p>
 <p>so the sum of the two forms separates the scalar parts of the two elements and their difference the vector parts. The two are the two <strong>scalar products of the two products</strong>: $\langle\cdot,\cdot\rangle$ is the scalar part of the plain product, read in <em>Comparison Between the Two General Products</em>, and $\langle\cdot,\cdot\rangle_{\natural}$ is the scalar part of the quaternionic product, read in <em>Relations Between the Two General Products</em>; the two forms are therefore the two scalar parts of the two products, and no third scalar part is available over $\mathbb{R}$.</p>
 <h2 id="the-gram-matrices">The Gram Matrices</h2>
 <p><strong>Proposition (the Gram matrices).</strong> In the unit basis $e_t,\vec e_x,\vec e_y,\vec e_z$,</p>
 <p>$$
-\operatorname{Gram}(B)=\operatorname{diag}(1,-1,-1,-1) , \qquad \operatorname{Gram}(N)=I_4 .
+\boxed{\;\operatorname{Gram}(B)=\operatorname{diag}(1,-1,-1,-1) , \qquad \operatorname{Gram}(N)=I_4\;}.
 $$</p>
 <p>The plain form has signature $(1,3)$, one positive and three negative squares; the quaternion form has signature $(4,0)$, being positive definite, and its Gram matrix is the identity.</p>
 <p><em>Proof.</em> On the units, $\langle e_t,e_t\rangle=1$ and $\langle \vec e_k,\vec e_k\rangle=-1$ for $k=1,2,3$, by the value $q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ on a basis pair; the off-diagonal entries vanish, the units being mutually perpendicular. Similarly $\langle \vec e_k,\vec e_k\rangle_{\natural}=1$ for every $k$ and the off-diagonal entries vanish.</p>
@@ -105,7 +105,7 @@ $$</p>
 <p>The two quadratic forms are the algebraic norm of the plain form and the quaternion norm of the element, written $\langle\tilde q\rangle$ and $\langle\tilde q\rangle_{\natural}$ for short; $Q_B$ is indefinite and $Q_N$ is the square of the quaternion norm.</p>
 <p><strong>Proposition (the polarisation).</strong> The two forms are recovered from their quadratic forms by the polarisation identity</p>
 <p>$$
-f(\tilde q_1,\tilde q_2)=\tfrac12\bigl(Q_f(\tilde q_1+\tilde q_2)-Q_f(\tilde q_1)-Q_f(\tilde q_2)\bigr) ,
+\boxed{\;f(\tilde q_1,\tilde q_2)=\tfrac12\bigl(Q_f(\tilde q_1+\tilde q_2)-Q_f(\tilde q_1)-Q_f(\tilde q_2)\bigr)\;},
 $$</p>
 <p>and the values of the quadratic forms on the units are $Q_B(e_t)=1$, $Q_B(\vec e_k)=-1$ for $k\neq0$, and $Q_N(\vec e_k)=1$ for every $k$.</p>
 <p><em>Proof.</em> The polarisation identity holds for any symmetric bilinear form over a field of characteristic not two; expanding $Q_B(\tilde q_1+\tilde q_2)$ with the bilinearity gives $2\langle\tilde q_1,\tilde q_2\rangle$. The values on the units are those of the diagonal of the Gram matrices.</p>

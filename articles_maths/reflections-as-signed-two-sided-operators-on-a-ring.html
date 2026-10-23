@@ -88,7 +88,7 @@ r_u = \operatorname{conj}_u \circ \alpha = \alpha \circ \operatorname{conj}_{\al
 $$</p>
 <p>with inverse $r_u^{-1} = r_{\alpha(u)^{-1}}$; and for all units $u, v$,</p>
 <p>$$
-r_u \circ r_v = \operatorname{conj}_{u\,\alpha(v)}, \qquad r_u = r_v \iff uv^{-1} \in Z(A).
+\boxed{\;r_u \circ r_v = \operatorname{conj}_{u\,\alpha(v)}, \qquad r_u = r_v \iff uv^{-1} \in Z(A)\;}.
 $$</p>
 <p><strong>Proof.</strong> $r_u = \operatorname{conj}_u\alpha$ is a composite of automorphisms, hence an automorphism. The identity $\operatorname{conj}_u\alpha = \alpha\operatorname{conj}_{\alpha(u)}$ is $\alpha\operatorname{conj}_{\alpha(u)}(x) = \alpha(\alpha(u)x\alpha(u)^{-1}) = u\alpha(x)u^{-1}$. The inverse: $\alpha\operatorname{conj}_{\alpha(u)}$ composed with $\alpha\operatorname{conj}_{\alpha(u)^{-1}}$... equivalently $r_u r_{\alpha(u)^{-1}}(x) = u\alpha(\alpha(u)^{-1}\alpha(x)\alpha(u))u^{-1} = u\alpha(\alpha(u)^{-1})x\alpha(\alpha(u))u^{-1} = u\alpha(u)^{-1}x\alpha(u)u^{-1} = x$. For the product, $r_ur_v = \operatorname{conj}_u\alpha\operatorname{conj}_v\alpha = \operatorname{conj}_u\operatorname{conj}_{\alpha(v)}\alpha^2 = \operatorname{conj}_{u\alpha(v)}$. Finally $r_u=r_v \iff \operatorname{conj}_u = \operatorname{conj}_v$, and that holds exactly when $uv^{-1}\in Z(A)$.</p>
 <p><strong>Corollary.</strong> The assignment $u \mapsto r_u$ is a well-defined injective map $A^\times/Z(A)^\times \to \operatorname{Aut}(A)$ whose image is the coset $\operatorname{Inn}(A)\,\alpha$ of the subgroup $\operatorname{Inn}(A)$ generated with $\alpha$: the reflections are the elements of $\operatorname{Aut}(A)$ of the form (an inner automorphism)$\circ\alpha$. In particular, the number of distinct reflections equals the order of the inner automorphism group at the units, $|A^\times / Z(A)^\times|$.</p>
@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-criterion">The criterion</h3>
 <p><strong>Theorem (the order-two criterion).</strong> Let $u \in A^\times$. The reflection $r_u$ is an involution, $r_u^2 = \mathrm{id}$, if and only if</p>
 <p>$$
-u\,\alpha(u) \in Z(A).
+\boxed{\;u\,\alpha(u) \in Z(A)\;}.
 $$</p>
 <p>When this holds, $r_u$ is the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two.</p>
 <p><strong>Proof.</strong> From the product formula, $r_u^2 = r_u r_u = \operatorname{conj}_{u\alpha(u)}$, and an inner automorphism is the identity exactly when its conjugating element is central, by <em>Inner Automorphisms of a Ring</em>. Hence $r_u^2 = \mathrm{id} \iff u\alpha(u) \in Z(A)$.</p>
@@ -107,7 +107,7 @@ $$</p>
 <p><strong>Definition.</strong> A unit $u$ is a <strong>reflecting element</strong> of $(A,\alpha)$ when $u\alpha(u) \in Z(A)$; equivalently, when the reflection $r_u$ is an involution.</p>
 <p><strong>Proposition.</strong> The reflecting elements form a subgroup $A^\times_{\mathrm{refl}}$ of $A^\times$ containing $Z(A)^\times$, and the map $u \mapsto r_u$ induces a bijection</p>
 <p>$$
-A^\times_{\mathrm{refl}} / Z(A)^\times \;\longrightarrow\; \{\text{involutive reflections}\},
+\boxed{\;A^\times_{\mathrm{refl}} / Z(A)^\times \;\longrightarrow\; \{\text{involutive reflections}\}\;},
 $$</p>
 <p>so the involutive reflections are in bijection with the reflecting units modulo the centre. The larger set of all reflections is in bijection with $A^\times/Z(A)^\times$.</p>
 <p><strong>Proof.</strong> If $u\alpha(u)$ and $v\alpha(v)$ are central, then $(uv)\alpha(uv) = u v \alpha(u)\alpha(v) = u\alpha(u)\,v\alpha(v)$ is central, since $\alpha$ is a homomorphism and central elements commute; and $u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$ is central. So the reflecting elements form a subgroup, and the bijection is the restriction of the map of the proposition above, whose kernel is $Z(A)^\times$.</p>

@@ -80,17 +80,17 @@ $$</p>
 <h3 id="definition-and-relation-to-the-unsigned-sandwich">Definition and Relation to the Unsigned Sandwich</h3>
 <p><strong>Definition.</strong> For $a,b\in\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>signed sandwich</strong> is the $F$-linear operator</p>
 <p>$$
-T^{\alpha}_{a,b} : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad T^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b .
+\boxed{\;T^{\alpha}_{a,b} : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad T^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b\;} .
 $$</p>
 <p><strong>Proposition (the relation to the unsigned family).</strong> $T^{\alpha}_{a,b}=T_{a,b}\circ\alpha=\alpha\circ T_{\alpha(a),\alpha(b)}$, and $T^{\alpha}_{1,1}=\alpha$. The signed sandwich is the ordinary sandwich composed with the grade involution, and the map $T_{a,b}\mapsto T_{a,b}\alpha$ is a bijection from the ordinary two-sided operators onto the signed ones.</p>
 <p><strong>Proof.</strong> Immediate from $\alpha(xb)=\alpha(x)\alpha(b)$ and the definition; the bijection has inverse $S\mapsto S\circ\alpha$. The statement and its consequences are <em>Two-Sided Operators with the Signed Product</em>, quoted.</p>
 <p><strong>Proposition (the composition law and the coset structure).</strong> For all $a,b,c,d$,</p>
 <p>$$
-T^{\alpha}_{a,b}T^{\alpha}_{c,d}=T_{a\alpha(c),\,\alpha(d)b},
+\boxed{\;T^{\alpha}_{a,b}T^{\alpha}_{c,d}=T_{a\alpha(c),\,\alpha(d)b},
 \qquad
 T^{\alpha}_{a,b}T_{c,d}=T^{\alpha}_{a\alpha(c),\,\alpha(d)b},
 \qquad
-T_{a,b}T^{\alpha}_{c,d}=T^{\alpha}_{ac,\,db} .
+T_{a,b}T^{\alpha}_{c,d}=T^{\alpha}_{ac,\,db}\;} .
 $$</p>
 <p>The composite of two signed sandwiches is an <strong>ordinary</strong> sandwich, the two grade involutions cancelling; the family of invertible signed sandwiches is the coset $\mathcal{T}\alpha$ of the group $\mathcal{T}$ of ordinary ones, contains no identity, and is a torsor and not a group.</p>
 <p><strong>Proof.</strong> The computation is in <em>Two-Sided Operators with the Signed Product</em>: $T^{\alpha}_{a,b}T^{\alpha}_{c,d}(x)=a\alpha(c)x\alpha(d)b$, and the middle factor $\alpha^2(x)=x$ is untwisted; the parity of the number of factors decides whether the composite is signed, and the two-factor composite $T^{\alpha}_{a,b}T^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}=\operatorname{id}$ shows that the identity lies in the group generated but not in the coset.</p>
@@ -101,7 +101,7 @@ $$</p>
 <h3 id="the-reflection-formula">The Reflection Formula</h3>
 <p><strong>Theorem (the reflections).</strong> Let $u\in V$ with $\mathfrak{Q}(u)\ne0$. Then the signed sandwich by $(u,u^{-1})$ acts on the quadratic space as the reflection in the hyperplane $u^{\perp}$,</p>
 <p>$$
-T^{\alpha}_{u,u^{-1}}(v) = u\,\alpha(v)\,u^{-1} = -u\,v\,u^{-1} = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u , \qquad v\in V .
+\boxed{\;T^{\alpha}_{u,u^{-1}}(v) = u\,\alpha(v)\,u^{-1} = -u\,v\,u^{-1} = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u , \qquad v\in V\;} .
 $$</p>
 <p><strong>Proof.</strong> A vector is odd, so $\alpha(v)=-v$ and $T^{\alpha}_{u,u^{-1}}(v)=-uvu^{-1}$. Since $uv+vu=2B(u,v)$ and $u^2=\mathfrak{Q}(u)$, the product $uvu=2B(u,v)u-\mathfrak{Q}(u)v$, and $u^{-1}=u\,\mathfrak{Q}(u)^{-1}$; substituting gives $-uvu^{-1}=(\mathfrak{Q}(u)v-2B(u,v)u)\mathfrak{Q}(u)^{-1}=\rho_u(v)$. The formula is the reflection of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, quoted in the form needed here.</p>
 <p><strong>Corollary (the ordinary sandwich gives the negative).</strong> The ordinary sandwich by $(u,u^{-1})$ is the negative of the reflection, $T_{u,u^{-1}}(v)=uvu^{-1}=-\rho_u(v)$. The signed product inserts exactly the sign that repairs this, at the cost of the identity: the signed family has no identity because $\alpha$ is not the identity on the odd part. This is the trade recorded in <em>Two-Sided Operators with the Signed Product</em>.</p>

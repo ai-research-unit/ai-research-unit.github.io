@@ -80,16 +80,20 @@ $$</p>
 <h2 id="the-pairing-of-a-value-with-a-third-element">The Pairing of a Value with a Third Element</h2>
 <p><strong>Proposition (the pairing in coordinates).</strong> For all biquaternions,</p>
 <p>$$
+\boxed{\;
 K\bigl(\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\bigr)
 =-\sum_{\mu\in\{x,y,z\}}\bigl(\vec Q_1\times\overline{\vec Q_2}\bigr)_\mu\,\overline{Q_{3\mu}}
-=-\bigl(\vec Q_1\times\overline{\vec Q_2},\overline{\vec Q_3}\bigr),
+=-\bigl(\vec Q_1\times\overline{\vec Q_2},\overline{\vec Q_3}\bigr)
+\;},
 $$</p>
 <p>where the bracket on the right is the complex bilinear dot product of the value with the conjugate of the vector part of the third argument.</p>
 <p><em>Proof.</em> The value $\vec Q_1\times\overline{\vec Q_2}$ is pure vector, so the scalar term of $\langle\cdot,\cdot\rangle_{\natural*}$ drops and only the three vector terms remain, with the sign $\varepsilon_\mu=-1$ and the conjugation on the third argument.</p>
 <p><strong>Proposition (the self-pairing is non-positive).</strong> For all biquaternions,</p>
 <p>$$
+\boxed{\;
 K\bigl(\tilde Q_1\diamond\tilde Q_2,\tilde Q_1\diamond\tilde Q_2\bigr)
-=-\bigl|\vec Q_1\times\overline{\vec Q_2}\bigr|^{2}\le0,
+=-\bigl|\vec Q_1\times\overline{\vec Q_2}\bigr|^{2}\le0
+\;},
 $$</p>
 <p>and it vanishes exactly when the value of the block vanishes, that is exactly when $\tilde Q_1\diamond\tilde Q_2=0$.</p>
 <p><em>Proof.</em> The self-pairing of a pure vector $\vec V$ is $-\sum_{\mu\in\{x,y,z\}}V_\mu\overline{V_\mu}=-|\vec V|^{2}$, a non-positive real number, and it vanishes exactly when $\vec V=0$.</p>
@@ -113,9 +117,11 @@ $$</p>
 <p>for all $\tilde Q_1,\tilde Q_2,\tilde Q_3$. The condition is the one of the corpus for a sesquilinear invariant, read with the conjugate of the value because the block is conjugate-linear in its second slot.</p>
 <p><strong>Theorem (the invariant forms form a line).</strong> In each of the four homogeneous classes of forms of the block — complex-bilinear, linear in the first slot and conjugate-linear in the second, conjugate-linear in the first and linear in the second, and conjugate-linear in both — the forms $\beta$ invariant under the block form a space of complex dimension $1$ and real dimension $2$. In every one of the four the space is spanned by the central form</p>
 <p>$$
+\boxed{\;
 \beta_0(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}},
 \qquad\text{or}\qquad
-\beta_0(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t},
+\beta_0(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}
+\;},
 $$</p>
 <p>or the corresponding doubly conjugate-linear form according to the class, and it contains no other form of that class.</p>
 <p><em>Proof.</em> Write $\beta$ with a coefficient matrix $G$, of sixteen complex entries in the homogeneous classes, and impose the displayed identity on the triples of the <strong>real</strong> basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, that is on the $8^{3}=512$ real triples. The identity is multilinear over $\mathbb{R}$ and not over $\mathbb{C}$, because the conjugation of the second slot of the block and the conjugations that define the class are not complex-linear; the four-element complex basis of each slot does not suffice, and a check reduced to its $4^{3}=64$ triples reports spurious solutions — the form $i\,(Q_{x}\overline{Q_{2x}}+Q_{y}\overline{Q_{2y}}+Q_{z}\overline{Q_{2z}})$, for instance, passes the $64$ triples and fails the ordinary triple $(\vec e_x,i\vec e_y,\vec e_z)$. The linear system over $\mathbb{R}$ built on the real basis has a solution space of real dimension $2$ in each of the four classes, spanned by the central form above with coefficient $1$ and with coefficient $i$. The computation shows that every solution is supported on the entry $(0,0)$ alone, that is, depends only on the scalar coordinates of the two arguments.</p>

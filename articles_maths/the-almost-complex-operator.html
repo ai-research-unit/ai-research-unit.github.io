@@ -89,7 +89,7 @@ $$
 $$
 which satisfy
 $$
-(\pi^{1,0})^2 = \pi^{1,0}, \qquad (\pi^{0,1})^2 = \pi^{0,1}, \qquad \pi^{1,0}\pi^{0,1} = \pi^{0,1}\pi^{1,0} = 0, \qquad \pi^{1,0} + \pi^{0,1} = \mathrm{id} .
+\boxed{\;(\pi^{1,0})^2 = \pi^{1,0}, \qquad (\pi^{0,1})^2 = \pi^{0,1}, \qquad \pi^{1,0}\pi^{0,1} = \pi^{0,1}\pi^{1,0} = 0, \qquad \pi^{1,0} + \pi^{0,1} = \mathrm{id}\;} .
 $$
 They are conjugate, $\overline{\pi^{1,0}} = \pi^{0,1}$, and the complexified tangent space is their direct sum.</p>
 <p><strong>Proof.</strong> From $J^2 = -\mathrm{id}$ the polynomial $x^2+1 = (x-i)(x+i)$ annihilates $J$, and the two factors are coprime over $\mathbb{C}$, so $T_{\mathbb C}M$ is the direct sum of the kernels. The identities are the same computation as for a linear operator with minimal polynomial $x^2+1$: $\pi^{1,0}\pi^{0,1} = \tfrac14(\mathrm{id}-iJ)(\mathrm{id}+iJ) = \tfrac14(\mathrm{id}+J^2) = 0$, and $\pi^{1,0}+\pi^{0,1} = \mathrm{id}$; conjugation reverses the sign of $J$ in the definition.</p>
@@ -102,12 +102,12 @@ They are conjugate, $\overline{\pi^{1,0}} = \pi^{0,1}$, and the complexified tan
 <h2 id="the-nijenhuis-operator-and-the-integrability-criterion">The Nijenhuis Operator and the Integrability Criterion</h2>
 <p><strong>Definition.</strong> The <strong>Nijenhuis operator</strong> of an almost complex structure $J$ is the tensor
 $$
-N_J(X, Y) = [JX, JY] - J[X, JY] - J[JX, Y] - [X, Y] \qquad (X, Y \in \mathfrak{X}(M)),
+\boxed{\;N_J(X, Y) = [JX, JY] - J[X, JY] - J[JX, Y] - [X, Y] \qquad (X, Y \in \mathfrak{X}(M))\;},
 $$
 with no scalar factor.</p>
 <p><strong>Proposition (tensoriality and elementary symmetries).</strong> $N_J$ is a tensor of type $(1,2)$, that is it is $C^\infty(M)$-bilinear, it is antisymmetric, $N_J(Y,X) = -N_J(X,Y)$, and it satisfies
 $$
-N_J(X, JX) = 0, \qquad N_J(JX, JY) = N_J(X, Y) .
+\boxed{\;N_J(X, JX) = 0, \qquad N_J(JX, JY) = N_J(X, Y)\;} .
 $$
 When $J$ is integrable the tensor vanishes.</p>
 <p><strong>Proof.</strong> The $C^\infty$-bilinearity is the verification that all the second derivatives cancel, exactly as for the analogous computation in <em>Hermitian Geometry and Almost Complex Structures</em>, and it uses $J^2 = -\mathrm{id}$ and the Jacobi identity; antisymmetry is read from the definition, and $N_J(X,JX) = [JX,J(JX)] - J[X,J(JX)] - J[JX,JX] - [X,JX] = [JX,-X]-J[X,-X]-0-[X,JX] = 0$, since the first two terms cancel the last. The transformation $X\to JX$, $Y\to JY$ leaves $N_J$ unchanged by substitution and $J^2=-\mathrm{id}$.</p>

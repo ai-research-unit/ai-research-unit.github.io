@@ -93,7 +93,7 @@ $$</p>
 <h2 id="the-kernel-and-the-valuation-ring">The Kernel and the Valuation Ring</h2>
 <p><strong>Proposition (the valuation ring is a sublevel set).</strong> The valuation ring, its maximal ideal and the multiplicative group are the level sets of the valuation:</p>
 <p>$$
-\mathcal{O} = \{ x : v(x) \geq 0 \}, \qquad \mathrm{M} = \{ x : v(x) > 0 \}, \qquad F^\times = \{ x : v(x) < \infty \},
+\boxed{\;\mathcal{O} = \{ x : v(x) \geq 0 \}, \qquad \mathrm{M} = \{ x : v(x) > 0 \}, \qquad F^\times = \{ x : v(x) < \infty \}\;},
 $$</p>
 <p>and the valuation is order reversing for the divisibility: $v(y) \leq v(x)$ exactly when $y$ divides $x$ in $\mathcal{O}$, and $v(x) < v(y)$ exactly when $x$ divides $y$ in $\mathcal{O}$.</p>
 <p><strong>Proof.</strong> The three level descriptions are the definitions, read through $v = -\log_c\lvert \cdot \rvert$. For divisibility, $y | x$ in $\mathcal{O}$ means $x = yz$ with $z \in \mathcal{O}$, that is $v(x) = v(y) + v(z)$ with $v(z) \geq 0$, which is $v(x) \geq v(y)$.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proof.</strong> For $\gamma \in \Gamma$ the fibre is $\{x : \lvert x \rvert = c^{-\gamma}\}$, the difference of the closed ball $\{\lvert x \rvert \leq c^{-\gamma}\}$ and the open ball $\{\lvert x \rvert < c^{-\gamma}\}$; in an ultrametric space every ball is open and closed, so the difference of two clopen sets is clopen, hence open, and its complement is a union of fibres, hence open; thus the fibres are open and the map to a discrete space is continuous. The fibre over $\infty$ is $\{0\}$, closed, and open when the absolute value is nontrivial and $\{0\}$ is isolated.</p>
 <p><strong>Theorem (the valuation of the completion).</strong> The valuation extends uniquely to a valuation $\widehat{v}$ of the completion $\widehat{F}$ with the same value group,</p>
 <p>$$
-\Gamma_{\widehat{F}} = \Gamma , \qquad \widehat{v}\circ \iota = v ,
+\boxed{\;\Gamma_{\widehat{F}} = \Gamma , \qquad \widehat{v}\circ \iota = v\;} ,
 $$</p>
 <p>and the completion has the same valuation ring and maximal ideal up to the canonical identification, $\widehat{\mathcal{O}} = \overline{\iota(\mathcal{O})}$ and $\widehat{\mathrm{M}} = \overline{\iota(\mathrm{M})}$. So the valuation operator commutes with the completion operator.</p>
 <p><strong>Proof.</strong> The completion of a non-Archimedean field preserves the value group, which is the theorem of <em>Absolute Values, Valuations and Completions</em>; the extension is defined by continuity of $v$ and is a valuation because the defining laws pass to limits, and it is unique because $\iota(F)$ is dense. The identification of the valuation ring is the persistence of the residue field and the open unit ball.</p>
@@ -119,7 +119,7 @@ $$</p>
 <p><strong>Proof.</strong> The minimum is associative, commutative and idempotent, with neutral element $\infty$; the addition of $\Gamma$ is associative and commutative with neutral element $0$ and, extended by $a + \infty = \infty$, absorbs $\infty$; distributivity is $a + \min\{b, c\} = \min\{a + b, a + c\}$, which is the compatibility of the order of $\Gamma$ with its addition.</p>
 <p><strong>Theorem (the valuation is a tropical homomorphism).</strong> The valuation is a homomorphism from the multiplicative monoid $(F, \cdot)$ to the tropical semiring $(\Gamma \cup \{\infty\}, \oplus, \odot)$:</p>
 <p>$$
-v(xy) = v(x) \odot v(y), \qquad v(x + y) \geq v(x) \oplus v(y) .
+\boxed{\;v(xy) = v(x) \odot v(y), \qquad v(x + y) \geq v(x) \oplus v(y)\;} .
 $$</p>
 <p>It is exactly multiplicative, and additive up to the inequality forced by cancellation. When the inequality is an equality for all $x, y$ the field is said to have a <strong>splitting</strong> of the valuation; the inequality is strict exactly when the two summands have equal value and cancel.</p>
 <p><strong>Proof.</strong> The multiplicative law is $v(xy) = v(x) + v(y)$, which is $\odot$; the additive law is the ultrametric inequality, which is $\geq$ the minimum, that is $\geq \oplus$. Strictness occurs exactly on the cancellation of two terms of equal value, in which case $v(x) = v(y)$ and $v(x+y) > v(x)$, so the two sides differ.</p>

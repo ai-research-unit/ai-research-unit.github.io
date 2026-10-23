@@ -105,7 +105,7 @@ $$</p>
 <p>The descending chain condition has no description by finite generation: $\mathbb{Z}$ is Noetherian but not Artinian, since the chain $(2) \supsetneq (4) \supsetneq (8) \supsetneq \cdots$ of principal ideals never stabilises. The following elementwise consequence is used repeatedly.</p>
 <p><strong>Proposition.</strong> Let $R$ be an Artinian commutative ring and let $x \in R$. Then the chain of principal ideals</p>
 <p>$$
-(x) \supseteq (x^2) \supseteq (x^3) \supseteq \cdots
+\boxed{\;(x) \supseteq (x^2) \supseteq (x^3) \supseteq \cdots\;}
 $$</p>
 <p>stabilises; that is, there is $n \geq 1$ with $x^n = x^{n+1} y$ for some $y \in R$.</p>
 <p><strong>Proof.</strong> The chain is descending, so it stabilises by the DCC; equality $(x^n) = (x^{n+1})$ then exhibits $y$ with $x^n = x^{n+1}y$.</p>
@@ -180,11 +180,11 @@ $$</p>
 <p>The Akizuki–Hopkins theorem reduces the study of Artinian rings to that of Noetherian rings of dimension zero, and these have a complete structure theory.</p>
 <p><strong>Theorem.</strong> Let $R$ be a commutative Artinian ring. Then $R$ has finitely many maximal ideals $\mathrm{M}_1, \ldots, \mathrm{M}_r$, the ideals $\mathrm{M}_1, \ldots, \mathrm{M}_r$ are pairwise comaximal, and the natural map</p>
 <p>$$
-R \longrightarrow R/\mathrm{M}_1^{n_1} \times \cdots \times R/\mathrm{M}_r^{n_r}
+\boxed{\;R \longrightarrow R/\mathrm{M}_1^{n_1} \times \cdots \times R/\mathrm{M}_r^{n_r}\;}
 $$</p>
 <p>is an isomorphism for every $n_i \geq 1$ with $\mathrm{N}^{n_i} \subseteq \mathrm{M}_i^{n_i}$; in particular</p>
 <p>$$
-R \;\cong\; R_{\mathrm{M}_1} \times \cdots \times R_{\mathrm{M}_r},
+\boxed{\;R \;\cong\; R_{\mathrm{M}_1} \times \cdots \times R_{\mathrm{M}_r}\;},
 $$</p>
 <p>a finite product of Artinian local rings, where $R_{\mathrm{M}_i}$ is the localization of $R$ at $\mathrm{M}_i$.</p>
 <p><strong>Proof sketch.</strong> By the Akizuki–Hopkins proof there are finitely many maximal ideals and $\mathrm{N}^{n} = (0)$ for some $n$. Distinct maximal ideals are comaximal, and the Chinese remainder theorem gives $R/\mathrm{N}^n \cong \prod_i R/\mathrm{M}_i^{n}$ up to the multiplicities that $\mathrm{N}^n = (0)$ forces; each factor is a local Artinian ring with maximal ideal the image of $\mathrm{M}_i$. Finally, since every element outside $\mathrm{M}_i$ is invertible in $R_{\mathrm{M}_i}$ and since only the powers of $\mathrm{M}_i$ survive in the corresponding factor, $R_{\mathrm{M}_i} \cong R/\mathrm{M}_i^{N}$ for $N$ large enough.</p>

@@ -146,7 +146,7 @@ $$</p>
 <h3 id="the-associativity-criterion">The Associativity Criterion</h3>
 <p><strong>Proposition.</strong> Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution and the derived operation $x \star y = xy^{*}$. The associator of the derived operation is</p>
 <p>$$
-(x \star y) \star z - x \star (y \star z) = x\bigl((zy)^{*} - zy^{*}\bigr) .
+\boxed{\;(x \star y) \star z - x \star (y \star z) = x\bigl((zy)^{*} - zy^{*}\bigr)\;} .
 $$</p>
 <p>Consequently the derived operation is associative if and only if $x\bigl((zy)^{*} - zy^{*}\bigr) = 0$ for all $x, y, z \in A$, which for an $A$ with zero left annihilator (in particular for a unital $A$) is the condition $(zy)^{*} = zy^{*}$; when $A$ has a unit this in turn holds if and only if the involution is the identity.</p>
 <p><strong>Proof.</strong> Expanding, $(x \star y) \star z = xy^{*}z^{*}$ and $x \star (y \star z) = xz y^{*}$; the difference is $x(y^{*}z^{*} - zy^{*}) = x((zy)^{*} - zy^{*})$, because $(zy)^{*} = y^{*}z^{*}$. The criterion follows. With a unit, taking $y = 1$ gives $z^{*} = z$ for every $z$, so the involution is the identity; conversely the identity involution gives the original associative product.</p>
@@ -164,7 +164,7 @@ $$</p>
 <h3 id="the-jordan-triple-identity">The Jordan Triple Identity</h3>
 <p><strong>Theorem (the identity).</strong> The triple product of the derived operation satisfies the Jordan triple identity</p>
 <p>$$
-\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\} - \{u,\{y,x,v\},w\} + \{u,v,\{x,y,w\}\} .
+\boxed{\;\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\} - \{u,\{y,x,v\},w\} + \{u,v,\{x,y,w\}\}\;} .
 $$</p>
 <p><strong>Proof.</strong> The verification is a finite expansion of each side in the products and the involution, using only the associativity of $A$ and $(uv)^{*} = v^{*}u^{*}$; it is carried out in <em>Algebraic J*-Algebras</em>, where the identity is the defining axiom of the $J^{*}$-triple.</p>
 <p><strong>Remark.</strong> The identity is not an accident of the example but the algebraic content of the failure of associativity: the ternary product is what remains of the associative law after the operation is twisted by the involution. The category therefore has two layers, the binary derived operation and the ternary product, and the binary one is read as the shadow of the ternary one.</p>
@@ -176,7 +176,7 @@ L_a(x) = ax, \qquad R_a(x) = xa .
 $$</p>
 <p><strong>Proposition.</strong> $L_a$ is $\varsigma$-semilinear for every $a$, while $R_a$ is $R$-linear; $L_a$ is $R$-linear exactly when $\varsigma = \mathrm{id}$ or $(\lambda - \varsigma(\lambda))ax = 0$ for every $\lambda \in R$ and $x \in A$. When the product is associative — which for an algebra of full type forces $\varsigma = \mathrm{id}$, by the theorem of <em>The Collapse at the Identity</em> — the two families satisfy</p>
 <p>$$
-L_aL_b = L_{ab}, \qquad R_aR_b = R_{ba}, \qquad L_aR_b = R_bL_a,
+\boxed{\;L_aL_b = L_{ab}, \qquad R_aR_b = R_{ba}, \qquad L_aR_b = R_bL_a\;},
 $$</p>
 <p>so $a \mapsto L_a$ is multiplicative but its values are $\varsigma$-semilinear, while $a \mapsto R_a$ is multiplicative up to the reversal of the order — a representation of the opposite algebra $A^{\mathrm{opp}}$ — with $R$-linear values.</p>
 <p><strong>Proof.</strong> For $L_a$, $L_a(\lambda x) = a(\lambda x) = \varsigma(\lambda)(ax) = \varsigma(\lambda)L_a(x)$ by the second rule, so $L_a$ is $\varsigma$-semilinear, and it is $R$-linear exactly when $\lambda ax = \varsigma(\lambda) ax$ for every $\lambda$ and $x$. For $R_a$, $R_a(\lambda x) = (\lambda x)a = \lambda(xa) = \lambda R_a(x)$ by the first rule, so $R_a$ is $R$-linear. The composition identities are the associative law read in the three possible orders; the second shows that the right multiplications compose in the order opposite to the multiplication of the parameters, which is why $a \mapsto R_a$ is an anti-homomorphism.</p>

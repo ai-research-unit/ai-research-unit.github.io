@@ -106,7 +106,9 @@ $$</p>
 <p>The two complex tensors $A_{(1)}$ and $A_{(2)}$ are the <strong>idempotent coordinates</strong> of $A$. They are the components written $X^+$ and $X^-$ in <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>, and they satisfy $\Pi_+\Pi_-=0$, $\Pi_\pm^2=\Pi_\pm$, $\Pi_++\Pi_-=1$. The element convention of <em>Conventions in Mathematics</em> writes the idempotent coordinates with the sign, $Q_{+},Q_{-}$; the tensor branch keeps the parentheses $A_{(1)},A_{(2)}$ and the signs $+,-$ for the idempotents $\Pi_\pm$. The two notations name the same two complex tensors, and the parentheses avoid a collision with the entry indices.</p>
 <p><strong>Proposition (the two complex readings).</strong> The map $A\mapsto(A_{(1)},A_{(2)})$ is a bijection from $\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ onto the pairs of complex tensors of the same shape. Its inverse is</p>
 <p>$$
-A_{1,i}=\tfrac12(A_{(1)}+A_{(2)}),\qquad A_{j,k}=\tfrac12(A_{(1)}-A_{(2)}),
+\boxed{\;
+A_{1,i}=\tfrac12(A_{(1)}+A_{(2)}),\qquad A_{j,k}=\tfrac12(A_{(1)}-A_{(2)})
+\;},
 $$</p>
 <p>and the real coefficients are recovered by</p>
 <p>$$
@@ -141,7 +143,9 @@ $$</p>
 <p>where for a matrix $X$ over $\mathbb{B}_{\mathrm{r}}$ the <strong>bar-transpose</strong> is $X^{\mathsf H}=\bar X^{\mathsf T}$, with the bar acting entrywise. In the two idempotent coordinates it is the pair of the complex conjugate transposes, $X^{\mathsf H}=X_{(1)}^{\mathsf H_{\mathbb C}}\Pi_++X_{(2)}^{\mathsf H_{\mathbb C}}\Pi_-$. The reversal is the convention that makes $A^{\mathsf H}$ the adjoint of the t-product; without it the transform identity of <em>The t-Product of Reduced Biquaternion Tensors</em> fails. For $n_3=1$ the reversal is empty and $A^{\mathsf H}$ is the matrix conjugate transpose. The source writes this operation $A^{*}$; the corpus writes $A^{\mathsf H}$ here, because the star $^{*}$ of <em>Conventions in Mathematics</em> is the Hermitian conjugation of an element, not the bar. On an entry the conjugate transpose acts by the bar, $a\mapsto\bar a$, not by the star.</p>
 <p><strong>Proposition.</strong> The conjugate transpose is an involution and is bar-antilinear:</p>
 <p>$$
-(A^{\mathsf H})^{\mathsf H}=A,\qquad (aA+bB)^{\mathsf H}=\bar a\,A^{\mathsf H}+\bar b\,B^{\mathsf H},
+\boxed{\;
+(A^{\mathsf H})^{\mathsf H}=A,\qquad (aA+bB)^{\mathsf H}=\bar a\,A^{\mathsf H}+\bar b\,B^{\mathsf H}
+\;},
 $$</p>
 <p>for $a,b\in\mathbb{B}_{\mathrm{r}}$.</p>
 <p><em>Proof.</em> The bar is an involution and the reversal of the slices $2,\dots,n_3$ is an involution, so applying $A^{\mathsf H}$ twice returns $A$. The bar is additive and $\overline{ab}=\bar a\bar b$; the reversal and the transpose are linear over the coefficients, so the second identity follows.</p>
@@ -160,8 +164,10 @@ $$</p>
 $$</p>
 <p>It is the Euclidean norm of the $4n_1n_2n_3$ real coordinates, and it is positive definite. In terms of the real coefficient tensors and of the two complex readings,</p>
 <p>$$
+\boxed{\;
 \|A\|_{\mathrm F}^2=\|A_0\|_{\mathrm F}^2+\|A_1\|_{\mathrm F}^2+\|A_2\|_{\mathrm F}^2+\|A_3\|_{\mathrm F}^2
-=\tfrac12\bigl(\|A_{(1)}\|_{\mathrm F}^2+\|A_{(2)}\|_{\mathrm F}^2\bigr).
+=\tfrac12\bigl(\|A_{(1)}\|_{\mathrm F}^2+\|A_{(2)}\|_{\mathrm F}^2\bigr)
+\;}.
 $$</p>
 <p>The second identity uses $|a|^2=\tfrac12(|a_{(1)}|^2+|a_{(2)}|^2)$, which follows from the definitions of $a_{(1)}$ and $a_{(2)}$.</p>
 <p>The algebra carries four algebraic norms, and each has a tensor reading obtained by summing the norm of the entries. With the notation of <em>Conventions in Mathematics</em>,</p>

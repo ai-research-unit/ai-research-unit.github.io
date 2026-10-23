@@ -107,12 +107,12 @@ $$</p>
 <p>the identifications being by excision and by the local homology of $S^n$.</p>
 <p><strong>Theorem (the sum formula).</strong> With $f$ and $y$ as above, and only finitely many $x_i$ with $\deg_{x_i}f \neq 0$, there is the <strong>sum formula</strong></p>
 <p>$$
-\deg f = \sum_{i=1}^{m} \deg_{x_i}f .
+\boxed{\;\deg f = \sum_{i=1}^{m} \deg_{x_i}f\;} .
 $$</p>
 <p><em>Proof.</em> Consider the commutative diagram in which the top row is the Mayer–Vietoris sequence of the decomposition $S^n = \bigsqcup_i D_i \cup (S^n \setminus \bigcup_i \operatorname{int}D_i)$, using that $H_n(\partial D_i) = 0$ for $n \geq 2$ and the pair sequence for $n = 1$; the induced map sends the fundamental class to the sum of the local fundamental classes, and evaluating against $[S^n]$ gives the formula.</p>
 <p><strong>Theorem (the regular value formula).</strong> Let $f : S^n \to S^n$ be smooth and let $y \in S^n$ be a <strong>regular value</strong> of $f$, that is, a point such that the differential $df_x$ is invertible for every $x \in f^{-1}(y)$. Then $f^{-1}(y)$ is finite, and</p>
 <p>$$
-\deg f = \sum_{x \in f^{-1}(y)} \operatorname{sign}\det\bigl(df_x : T_xS^n \to T_yS^n\bigr),
+\boxed{\;\deg f = \sum_{x \in f^{-1}(y)} \operatorname{sign}\det\bigl(df_x : T_xS^n \to T_yS^n\bigr)\;},
 $$</p>
 <p>the signs being computed with respect to orientations of the tangent spaces induced by those of the spheres.</p>
 <p><em>Proof sketch.</em> By the inverse function theorem each $x \in f^{-1}(y)$ has a neighbourhood mapped diffeomorphically to a neighbourhood of $y$; the local degree is $\pm 1$ according to whether that local diffeomorphism preserves or reverses the orientation, i.e. according to the sign of the Jacobian determinant; the sum formula gives the result, and the sum formula itself shows that only finitely many terms are nonzero.</p>
@@ -226,7 +226,7 @@ $$</p>
 <p><strong>Theorem (the Jordan–Brouwer separation theorem).</strong> Let $\Sigma \subseteq S^n$ be a subset homeomorphic to $S^{n-1}$, with $n \geq 2$. Then $S^n \setminus \Sigma$ has exactly two connected components, and $\Sigma$ is the boundary of each.</p>
 <p><em>Proof sketch.</em> By <strong>Alexander duality</strong>, which for a compact subset $K \subseteq S^n$ states $H_{i,\mathrm{red}}(S^n\setminus K;\mathbb{Z}) \cong H^{n-i-1,\mathrm{red}}(K;\mathbb{Z})$, and is a consequence of the Lefschetz duality of <em>Poincaré Duality</em> applied to a regular neighbourhood; applying it to $K = \Sigma \cong S^{n-1}$ gives</p>
 <p>$$
-H_{0,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-1,\mathrm{red}}(S^{n-1}) \cong \mathbb{Z}, \qquad H_{i,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-i-1,\mathrm{red}}(S^{n-1}) = 0 \quad (i \neq 0),
+\boxed{\;H_{0,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-1,\mathrm{red}}(S^{n-1}) \cong \mathbb{Z}, \qquad H_{i,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-i-1,\mathrm{red}}(S^{n-1}) = 0 \quad (i \neq 0)\;},
 $$</p>
 <p>where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $H_{0,\mathrm{red}}$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.</p>
 <p><strong>Theorem (invariance of domain; Brouwer).</strong> If $\Omega \subseteq \mathbb{R}^n$ is open and $f : \Omega \to \mathbb{R}^n$ is injective and continuous, then $f(\Omega)$ is open and $f$ is a homeomorphism onto its image.</p>

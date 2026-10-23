@@ -85,8 +85,7 @@ $$</p>
 F : \mathcal{K}(\mathbb{R}) \to \mathcal{K}(\mathbb{R}), \qquad F(S) = \bigcup_{i=1}^m f_i(S).
 $$</p>
 <p><strong>Theorem (the operator is a contraction).</strong> If $r = \max_i r_i < 1$ then $d_H(F(S),F(S')) \leq r\,d_H(S,S')$ for all $S,S' \in \mathcal{K}(\mathbb{R})$. Consequently $F$ has a unique fixed point $\Lambda \in \mathcal{K}(\mathbb{R})$, the <strong>attractor</strong> of the system, and $\Lambda = \lim_{k\to\infty}F^k(S)$ in $d_H$ for every $S\in\mathcal{K}(\mathbb{R})$; moreover</p>
-<p>$$
-\Lambda = \bigcap_{k\geq0}\ \overline{\bigcup_{\lvert w\rvert = k} f_w(S_0)}, \qquad S_0 \ \text{a nonempty compact set,}
+<p>$$ \boxed{\;\Lambda = \bigcap_{k\geq0}\ \overline{\bigcup_{\lvert w\rvert = k} f_w(S_0)}, \qquad S_0 \ \text{a nonempty compact set,}\;}
 $$</p>
 <p>and $\Lambda$ is the unique nonempty compact set with $\Lambda = \bigcup_i f_i(\Lambda)$.</p>
 <p><em>Proof.</em> For $S,S'$ one has $f_i(S) \subseteq f_i(S')$ thickened by $r_i d_H(S,S')$, and summing over $i$ gives $d_H(F(S),F(S')) \leq \max_i r_i\, d_H(S,S')$; this is the contraction estimate. The contraction mapping theorem of <em>Metric, Uniform and Complete Spaces</em>, applied on the complete space $\mathcal{K}(\mathbb{R})$, gives the unique fixed point and the convergence of the iterates; the displayed intersection is the standard description of the limit, and the last sentence restates the fixed-point property in the form used in the first article.</p>
@@ -104,8 +103,7 @@ $$</p>
 $$</p>
 <p>The left side is strictly decreasing in $s$, from $m>1$ at $s=0$ to $0$ as $s\to\infty$, so $s$ exists, is unique and is positive; when $r_i = r$ for all $i$ it is $s = \log m/\log(1/r)$.</p>
 <p><strong>Theorem (Moran–Hutchinson, quoted).</strong> If the system satisfies the open set condition, the attractor has</p>
-<p>$$
-\dim_H\Lambda = \dim_B\Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1,
+<p>$$ \boxed{\;\dim_H\Lambda = \dim_B\Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1\;},
 $$</p>
 <p>and $0 < \mathcal{H}^s(\Lambda) < \infty$. The theorem is that of <em>Fractal Geometry</em>; it is stated here only to fix the dimension of the one-dimensional examples.</p>
 <p><strong>Remark (the failure without separation).</strong> The open set condition is not necessary for the existence of the attractor, only for the dimension formula. When the images overlap the attractor can be a set of dimension larger than, equal to, or smaller than the similarity dimension, and the last case is the interesting one; the example is given below. The phenomenon of overlapping self-similar sets, and the exact dimension in the presence of overlaps, is the subject of the general theory of <em>Fractal Geometry</em> and of its references.</p>
@@ -138,8 +136,7 @@ $$</p>
 <p><strong>Example (a system with a reflection).</strong> $f_1(x) = x/3$, $f_2(x) = 1 - x/3$: the second map is orientation-reversing, of ratio $1/3$ and fixed point $3/4$. Since $f_2=\sigma\circ f_1$ with the reflection $\sigma(x)=1-x$, the attractor satisfies $\sigma(\Lambda)=\Lambda$ and is symmetric about $1/2$. The pieces $f_1(\Lambda)\subseteq[0,\tfrac13]$ and $f_2(\Lambda)\subseteq[\tfrac23,1]$ are disjoint, so the strong separation condition holds and the address map is a homeomorphism; the construction is the one-dimensional model of the reversible systems of Part III.</p>
 <h2 id="the-limit-set-and-the-shift">The Limit Set and the Shift</h2>
 <p><strong>Theorem (the coding of the dynamics).</strong> For every $\omega\in\Sigma$ the address map satisfies</p>
-<p>$$
-\pi(\omega) = f_{\omega_1}\bigl(\pi(\sigma\omega)\bigr),
+<p>$$ \boxed{\;\pi(\omega) = f_{\omega_1}\bigl(\pi(\sigma\omega)\bigr)\;},
 $$</p>
 <p>so the shift sends an address of a point to an address of the point of $\Lambda$ that $f_{\omega_1}$ carries to it; equivalently, on the piece $f_{\omega_1}(\Lambda)$ the inverse branch of $f_{\omega_1}$ is the map $\pi\circ\sigma\circ\pi^{-1}$ wherever $\pi^{-1}$ is single-valued. The topological entropy of the full shift is $\log m$, the number of words of length $n$ being $m^n$.</p>
 <p><em>Proof.</em> The identity is the definition of the address map read one step at a time: the address $\omega$ names the first piece $f_{\omega_1}$ and then the address $\sigma\omega$ inside it. The entropy of the full $m$-shift is $\log m$ by the standard count of the words of length $n$. The entropy of the attractor as a repeller and the identification of $\Lambda$ with the limit set of the inverse branches are the subject of <em>Symbolic Dynamics</em> and of Part III.</p>

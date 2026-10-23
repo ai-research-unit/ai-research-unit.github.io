@@ -85,7 +85,7 @@ which carries the Cauchy product of sequences to the product of power series. Th
 <p><strong>Definition.</strong> The <strong>restricted product</strong> $\bigoplus'_p\mathcal{A}_p$ is the set of tuples $(f_p)_p$ with $f_p\in\mathcal{A}_p$ and $f_p=\varepsilon$ for all but finitely many $p$, with componentwise convolution. It is a nonunital algebra without identity, and it carries the direct-sum topology.</p>
 <p><strong>Theorem (the local decomposition).</strong> The map
 $$
-E:\bigoplus\nolimits'_p\mathcal{A}_p\to\mathcal{A},\qquad E((f_p)_p)(n)=\prod_{p^r\parallel n}f_p(p^r),
+\boxed{\;E:\bigoplus\nolimits'_p\mathcal{A}_p\to\mathcal{A},\qquad E((f_p)_p)(n)=\prod_{p^r\parallel n}f_p(p^r)\;},
 $$
 is an isomorphism of algebras, and it is the <strong>Euler product operator</strong>. Its inverse is the factorisation $f\mapsto(f_p)_p$ with $f_p(p^r)=f(p^r)$. In particular every multiplicative function is $E$ of its local data, and $E$ is multiplicative: $E((f_p)*(g_p))=E((f_p))\, E((g_p))$.</p>
 <p><strong>Proof.</strong> The product in the display is finite because $n$ has finitely many prime factors, and if all but finitely many $f_p$ equal $\varepsilon$ then $E((f_p))$ is supported on the finitely many affected primes, so $E$ is well defined. For multiplicativity, expand both sides at $n=\prod p^{r_p}$: the left side is the convolution of two functions each of which is multiplicative, hence multiplicative, and at $n$ it equals the product of the local convolutions, which is the right side. Injectivity and surjectivity are the unique factorisation of $n$ read coefficientwise.</p>
@@ -98,7 +98,7 @@ so the Euler product is not an equality to be proved at each $s$ but the definit
 <h3 id="absolute-convergence">Absolute convergence</h3>
 <p><strong>Theorem (Euler).</strong> Let $f$ be multiplicative with $|f(n)|\le Cn^{\sigma_0}$ for some $C>0$ and real $\sigma_0$. Then the Euler product
 $$
-\prod_pL_p(f,s)=\prod_p\Bigl(\sum_{r\ge0}f(p^r)p^{-rs}\Bigr)
+\boxed{\;\prod_pL_p(f,s)=\prod_p\Bigl(\sum_{r\ge0}f(p^r)p^{-rs}\Bigr)\;}
 $$
 converges absolutely and locally uniformly in $\Re s>\sigma_0+1$, and its value is $L(f,s)=\sum_nf(n)n^{-s}$. The product converges conditionally for $\Re s>\sigma_0$ in the cases where the local sums stay bounded away from $0$.</p>
 <p><strong>Proof.</strong> The estimate $|f(p^r)|\le Cp^{r\sigma_0}$ gives $\sum_{r\ge0}|f(p^r)|p^{-r\Re s}\le C(1-p^{\sigma_0-\Re s})^{-1}$, so $\sum_p|L_p(f,s)-1|\le C\sum_pp^{\sigma_0-\Re s}$, which converges when $\Re s>\sigma_0+1$. For the value, expand the finite product over $p\le P$ and compare with the Dirichlet series: the two differ by the terms divisible by a prime $>P$, whose total is $O(\sum_{n>P}|f(n)|n^{-\Re s})$, tending to $0$. This is the classical Euler product of <em>Analytic Number Theory</em>.</p>
@@ -115,7 +115,7 @@ of operator algebras, under which $\prod_pM_{f_p}$ goes to the tensor product of
 <h3 id="the-coefficient-formula">The coefficient formula</h3>
 <p><strong>Theorem.</strong> For $f=E((f_p)_p)$ multiplicative and $n=\prod_{i=1}^kp_i^{r_i}$,
 $$
-f(n)=\prod_{i=1}^kf_{p_i}(p_i^{r_i}),\qquad f(1)=1,
+\boxed{\;f(n)=\prod_{i=1}^kf_{p_i}(p_i^{r_i}),\qquad f(1)=1\;},
 $$
 and the Dirichlet series of $f$ is the absolutely convergent product. Conversely, if $L(f,s)=\prod_pG_p(s)$ with each $G_p$ a power series in $p^{-s}$ with constant term $1$ and the product absolutely convergent in a half-plane, then $f$ is multiplicative and $G_p=L_p(f,\cdot)$.</p>
 <p><strong>Proof.</strong> The first statement is the definition of $E$. For the converse, expand the product in the half-plane of absolute convergence: termwise expansion is legitimate there, the coefficient of $n^{-s}$ receives contributions from the choices of local exponents summing to $n$'s factorisation, and it equals $\prod f_{p_i}(p_i^{r_i})$ with $f_{p_i}$ the coefficients of $G_{p_i}$; this forces $f$ to be the $E$ of those local functions, hence multiplicative.</p>

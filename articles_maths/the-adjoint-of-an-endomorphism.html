@@ -76,7 +76,7 @@
 <h2 id="the-adjoint-operator">The Adjoint Operator</h2>
 <p><strong>Theorem (existence, uniqueness, linearity).</strong> For every $A \in E$ there is a unique endomorphism $A^{*} \in E$ with</p>
 <p>$$
-B(Ax,y) = B(x,A^{*}y) \qquad \text{for all } x,y \in V ,
+\boxed{\;B(Ax,y) = B(x,A^{*}y) \qquad \text{for all } x,y \in V\;} ,
 $$</p>
 <p>and the assignment $A \mapsto A^{*}$ is additive, of order two and anti-multiplicative: $(A^{*})^{*} = A$, $(A+B)^{*} = A^{*}+B^{*}$, $(AB)^{*} = B^{*}A^{*}$, and $(\lambda A)^{*} = \varsigma(\lambda)A^{*}$.</p>
 <p><strong>Proof.</strong> For fixed $y$ the map $x \mapsto B(Ax,y)$ is linear; since $z \mapsto B(\cdot,z)$ is a bijection $V \to V^{*}$ by non-degeneracy, there is a unique $A^{*}y$ representing it, and uniqueness in $y$ makes $A^{*}$ a map. Linearity of $A^{*}$ and the four laws follow by uniqueness exactly as in <em>Involutions of the Endomorphism Algebra</em>, which owns them.</p>
@@ -90,8 +90,8 @@ $$</p>
 <p><strong>Proof.</strong> $U^{\mathrm{c}}$ is the kernel of the linear map $V \to U^{*}$, $y \mapsto B(\cdot,y)$, which is surjective because $B$ is non-degenerate; hence the dimension formula. Reflexivity gives $(U^{\mathrm{c}})^{\mathrm{c}} = U$, and both statements are the standard pairings of a form.</p>
 <p><strong>Theorem (kernel and image of the adjoint).</strong> For every $A \in E$,</p>
 <p>$$
-\ker A^{*} = (\operatorname{im}A)^{\mathrm{c}}, \qquad \operatorname{im}A^{*} = (\ker A)^{\mathrm{c}} , \qquad
-\operatorname{rk}A^{*} = \operatorname{rk}A .
+\boxed{\;\ker A^{*} = (\operatorname{im}A)^{\mathrm{c}}, \qquad \operatorname{im}A^{*} = (\ker A)^{\mathrm{c}} , \qquad
+\operatorname{rk}A^{*} = \operatorname{rk}A\;} .
 $$</p>
 <p><strong>Proof.</strong> $A^{*}y = 0$ means $B(x,A^{*}y) = 0$ for all $x$, that is $B(Ax,y) = 0$ for all $x$, which says $y \in (\operatorname{im}A)^{\mathrm{c}}$; this is the first identity. For the second, $A^{*}y$ ranges over the paired complement of $\ker A$: indeed $B(x,A^{*}y) = B(Ax,y)$ vanishes for all $y$ exactly when $x \in \ker A$, so $(\operatorname{im}A^{*})^{\mathrm{c}} = \ker A$, and taking paired complements gives the identity. The rank is unchanged because $\dim\ker A^{*} = \dim(\operatorname{im}A)^{\mathrm{c}} = \dim\ker A$.</p>
 <p><strong>Corollary (invertibility and inverse).</strong> $A$ is invertible if and only if $A^{*}$ is, and then $(A^{-1})^{*} = (A^{*})^{-1}$; the adjoint of the identity is the identity, and the adjoint of a scalar $\lambda$ is $\varsigma(\lambda)$.</p>
@@ -103,8 +103,8 @@ $$</p>
 <h2 id="the-adjoints-of-a-composite-and-the-involution">The Adjoints of a Composite and the Involution</h2>
 <p><strong>Proposition (the adjoint of a composite).</strong> For $A_1,\dots,A_k \in E$,</p>
 <p>$$
-(A_1A_2\cdots A_k)^{*} = A_k^{*}\cdots A_2^{*}A_1^{*} , \qquad
-\Bigl(\sum_i A_i\Bigr)^{*} = \sum_i A_i^{*} .
+\boxed{\;(A_1A_2\cdots A_k)^{*} = A_k^{*}\cdots A_2^{*}A_1^{*} , \qquad
+\Bigl(\sum_i A_i\Bigr)^{*} = \sum_i A_i^{*}\;} .
 $$</p>
 <p><strong>Proof.</strong> Induction on $k$ from $(AB)^{*}=B^{*}A^{*}$ and additivity.</p>
 <p><strong>Remark (the involution on the endomorphism algebra).</strong> The assignment $A \mapsto A^{*}$ is an involution of the algebra $E$ in the sense of <em>Involutive Rings</em>, of the first kind for a bilinear pairing and of the second kind for a sesquilinear one; its fixed and skew parts, its matrix description, the classification of the involutions it produces and the unitary elements are the subject of <em>Involutions of the Endomorphism Algebra</em>, and only the operator facts about a single adjoint are established here. The two articles divide the subject: that one treats the involution as a structure on the algebra, this one the adjoint as an operator on $V$.</p>

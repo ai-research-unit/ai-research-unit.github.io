@@ -86,7 +86,7 @@ $$</p>
 <p><strong>Proof.</strong> The multiplicativity is the convolution theorem in integrated form, obtained by writing $\pi(f*g) = \int\!\!\int f(y)g(y^{-1}x)\pi(x)\,dy\,dx$ and substituting $x = yz$; the involution identity uses $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ together with unitarity, $\pi(x^{-1}) = \pi(x)^{-1} = \pi(x)^*$, so that the modular factor and the inverse conspire to give the adjoint. Nondegeneracy is the density of $\pi(L^1(G))\mathcal{H}_\pi$, and the converse recovery of $\pi(x)$ from the integrated form by an approximate identity is the correspondence of <em>The Convolution Algebra $L^1(G)$</em>.</p>
 <p><strong>Corollary (the transform of the group algebra).</strong> The <strong>operator-valued Fourier transform</strong> $f\mapsto\mathcal F f$, $(\mathcal F f)(\pi) = \pi(f)$, satisfies</p>
 <p>$$
-\widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi), \qquad \widehat{f^*}(\pi) = (\mathcal F f)(\pi)^* ,
+\boxed{\;\widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi), \qquad \widehat{f^*}(\pi) = (\mathcal F f)(\pi)^*\;} ,
 $$</p>
 <p>so it is a <code>*</code>-homomorphism from the group algebra into the direct product of the algebras $B(\mathcal{H}_\pi)$ over the dual, with the uniform bound $\|(\mathcal F f)(\pi)\|\leq\|f\|_1$.</p>
 <p><strong>Proof.</strong> Immediate from the theorem, the representation being read factorwise over $\pi\in\hat G$.</p>
@@ -94,7 +94,7 @@ $$</p>
 <h2 id="the-plancherel-theorem">The Plancherel Theorem</h2>
 <p><strong>Theorem (Plancherel, representation-theoretic form).</strong> Let $G$ be unimodular and of type I. There is a measure $\mu$ on the unitary dual $\hat G$, unique up to normalisation, called the <strong>Plancherel measure</strong>, such that for every $f\in L^1(G)\cap L^2(G)$</p>
 <p>$$
-\int_G |f(x)|^2\,dx = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,(\mathcal F f)(\pi)^*\bigr)\,d\mu(\pi) = \int_{\hat G} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu(\pi) ,
+\boxed{\;\int_G |f(x)|^2\,dx = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,(\mathcal F f)(\pi)^*\bigr)\,d\mu(\pi) = \int_{\hat G} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu(\pi)\;} ,
 $$</p>
 <p>and the transform $f\mapsto\mathcal F f$ extends to a unitary equivalence</p>
 <p>$$
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proof.</strong> That such a measure exists, and that the transform extends to an isometry onto the direct integral, is the Plancherel theorem of <em>The Plancherel Theorem</em>; the identification of the summand with the Hilbert–Schmidt class uses that $(\mathcal F f)(\pi)$ is Hilbert–Schmidt for $f\in L^1\cap L^2$ and that the integrated form is a <code>*</code>-representation, so that $\operatorname{tr}(\mathcal F f\mathcal F f^*) = \|\mathcal F f\|_{\mathrm{HS}}^2\geq0$. Uniqueness of the normalisation is the irreducibility of the action: two measures giving the same formula agree on the cylinder sets generating the Borel structure of $\hat G$.</p>
 <p><strong>Corollary (the inversion formula).</strong> For $f$ whose transform is of trace class for $\mu$-almost every $\pi$ and integrable against the measurable field of trace norms, one has, for almost every $x\in G$ and in the sense of distributions in general,</p>
 <p>$$
-f(x) = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,\pi(x)^{*}\bigr)\,d\mu(\pi) , \qquad \pi(x)^* = \pi(x^{-1}) .
+\boxed{\;f(x) = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,\pi(x)^{*}\bigr)\,d\mu(\pi) , \qquad \pi(x)^* = \pi(x^{-1})\;} .
 $$</p>
 <p><strong>Proof.</strong> The identity is Plancherel polarised, $\langle f,g\rangle_{L^2} = \int_{\hat G}\operatorname{tr}((\mathcal F f)(\pi)(\mathcal F g)(\pi)^*)d\mu(\pi)$, with $g$ taken as an approximate identity concentrated at $x$; continuity of the pairings gives the pointwise statement where the integrand is integrable, and the distributional statement otherwise.</p>
 <p><strong>Corollary (the parity with the abelian and compact cases).</strong> The theorem specialises as follows. If $G$ is abelian then every irreducible representation is one-dimensional, the Hilbert–Schmidt class is the complex numbers, $\hat G$ is the Pontryagin dual and $\mu$ is Haar measure on it, so the formula is the ordinary Parseval identity. If $G$ is compact then the dual is discrete, $\mu$ is the counting measure weighted by the dimensions, $\mu = \sum_{\pi\in\hat G}d_\pi\,\delta_\pi$, and the formula is the Plancherel identity of the Peter–Weyl theory,</p>

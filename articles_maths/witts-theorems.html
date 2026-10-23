@@ -114,7 +114,7 @@ $$</p>
 <h3 id="the-decomposition-theorem">The Decomposition Theorem</h3>
 <p><strong>Theorem.</strong> Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field of characteristic not $2$, of Witt index $m$. Then</p>
 <p>$$
-V \cong V_0 \perp m\,H,
+\boxed{\;V \cong V_0 \perp m\,H\;},
 $$</p>
 <p>where $V_0$ is anisotropic (contains no nonzero isotropic vector) and $m\,H$ is the orthogonal sum of $m$ hyperbolic planes. The anisotropic part $V_0$ is unique up to isometry, and $\dim V = \dim V_0 + 2m$.</p>
 <p><strong>Proof.</strong> Let $U$ be a maximal totally isotropic subspace, of dimension $m$, and choose a basis $e_1, \ldots, e_m$ of $U$. Each $e_i$ lies in a hyperbolic plane by the construction above; the planes can be chosen mutually orthogonal by the extension theorem, giving a subspace $m\,H \cong \bigoplus_i \operatorname{span}\{e_i, f_i\}$. Its orthogonal complement $V_0$ is non-degenerate and contains no isotropic vector, for an isotropic vector would enlarge $U$; hence $V_0$ is anisotropic and $V = V_0 \perp m\,H$. Uniqueness of $V_0$ follows from the extension theorem: two decompositions give two isometric hyperbolic parts, whose complements are isometric by the corollary.</p>
@@ -171,7 +171,7 @@ $$</p>
 <h3 id="statement_1">Statement</h3>
 <p><strong>Theorem (Witt cancellation).</strong> Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$, and let $q_x, q_y$ be quadratic forms with</p>
 <p>$$
-q \perp q_x \cong q \perp q_y.
+\boxed{\;q \perp q_x \cong q \perp q_y\;}.
 $$</p>
 <p>Then $q_x \cong q_y$.</p>
 <h3 id="proof">Proof</h3>
@@ -207,7 +207,7 @@ $$</p>
 <h3 id="failure-of-cancellation">Failure of Cancellation</h3>
 <p><strong>Proposition.</strong> Over $\mathbb{F}_2$ the cancellation theorem fails as stated. Let $q_x = 0$ and $q_y(x) = x^2$ be the two quadratic forms on $\mathbb{F}_2$, and let $r(x) = x^2$ on $\mathbb{F}_2$. Then</p>
 <p>$$
-q_x \perp r \cong q_y \perp r, \qquad \text{but} \qquad q_x \not\cong q_y.
+\boxed{\;q_x \perp r \cong q_y \perp r, \qquad \text{but} \qquad q_x \not\cong q_y\;}.
 $$</p>
 <p><strong>Proof.</strong> The form $q_x \perp r$ is $(x, y) \mapsto y^2$ and the form $q_y \perp r$ is $(x, y) \mapsto x^2 + y^2 = (x + y)^2$. The invertible linear map $T(x, y) = (x, x + y)$ of $\mathbb{F}_2^2$ has $T(x, y)_1 + T(x, y)_2 = x + (x + y) = y$, so $(q_y \perp r)(T(x, y)) = y^2 = (q_x \perp r)(x, y)$; thus $T$ is an isometry $q_x \perp r \to q_y \perp r$. On the other hand $q_x(1) = 0 \neq 1 = q_y(1)$, so $q_x$ and $q_y$ are not isometric.</p>
 <p>The forms in this example are degenerate: the associated form of $x \mapsto x^2$ over $\mathbb{F}_2$ vanishes identically, because $\mathfrak{Q}(1) - \mathfrak{Q}(1) - \mathfrak{Q}(0) = 0$, so the example does not test the theorem on the forms the theory is built on. Two independent changes repair the theory: the invariant that replaces the discriminant takes its values in a different group, and the chain equivalence survives although the extension theorem and cancellation do not.</p>

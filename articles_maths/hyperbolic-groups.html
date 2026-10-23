@@ -84,7 +84,7 @@
 <p><strong>Proof sketch.</strong> The four-point condition is a rearrangement of the thin-triangle condition: a tripod comparison of the four points, in which one collapses the pairs $(y,z),(x,z),(x,y)$ to a tripod with centre $o$, shows that the excess in (b) equals twice the distance from $p$ to the union of the three sides, which by (a) is at most $\delta_1$; the converse reverses the comparison. Condition (c) is the same inequality written in terms of the Gromov products $(x\vert y)_p = \tfrac12(d(p,x)+d(p,y)-d(x,y))$, and the two constants differ by a bounded amount. The equivalence is standard and is quoted from the literature.</p>
 <p><strong>Definition.</strong> For $p \in X$ the <strong>Gromov product</strong> of $x, y$ with respect to $p$ is</p>
 <p>$$
-(x\vert y)_p = \tfrac{1}{2}\bigl(d(p,x)+d(p,y)-d(x,y)\bigr) ,
+\boxed{\;(x\vert y)_p = \tfrac{1}{2}\bigl(d(p,x)+d(p,y)-d(x,y)\bigr)\;} ,
 $$</p>
 <p>a non-negative quantity measuring how long the geodesics from $p$ to $x$ and from $p$ to $y$ travel together. In a tree the product is the length of the common initial segment; in general $X$ is $\delta$-hyperbolic exactly when the products satisfy the four-point inequality up to $2\delta$, which is the form of hyperbolicity used in the construction of the boundary.</p>
 <h3 id="examples-and-non-examples">Examples and Non-Examples</h3>
@@ -122,7 +122,7 @@ $$</p>
 <p>where $(\xi\vert\eta)_p$ is the Gromov product of two representatives. For $\varepsilon$ sufficiently small, $(\xi,\eta) \mapsto \rho_\varepsilon(\xi,\eta)$ is comparable to a metric on $\partial X$ that induces the boundary topology; the resulting metrics are the <strong>visual metrics</strong>, and they are pairwise Hölder equivalent for different choices of $\varepsilon$ and of the base point.</p>
 <p><strong>Theorem (quasi-symmetry).</strong> A quasi-isometry $f : X \to Y$ of proper hyperbolic spaces induces a homeomorphism of boundaries which is <strong>quasi-symmetric</strong> with respect to visual metrics: there is a control function $\eta : [0,\infty) \to [0,\infty)$ with $\eta(t) \to 0$ as $t \to 0$ such that</p>
 <p>$$
-\frac{d(\xi_1,\xi_2)}{d(\xi_1,\xi_3)} < t \;\Longrightarrow\; \frac{d(f\xi_1,f\xi_2)}{d(f\xi_1,f\xi_3)} < \eta(t)
+\boxed{\;\frac{d(\xi_1,\xi_2)}{d(\xi_1,\xi_3)} < t \;\Longrightarrow\; \frac{d(f\xi_1,f\xi_2)}{d(f\xi_1,f\xi_3)} < \eta(t)\;}
 $$</p>
 <p>for all triples of distinct boundary points. The quasi-symmetric structure of the boundary is therefore a quasi-isometry invariant finer than the topology, and it is the invariant used in the rigidity theorems.</p>
 <p><strong>Proof sketch.</strong> The induced boundary map carries the Gromov product of a triple to a Gromov product bounded above and below by affine functions of the original, by the quasi-isometry inequalities applied to a configuration of three geodesic rays; substituting into the visual metric gives a distortion controlled by a function of the ratio, which is the definition of quasi-symmetry. The details are standard.</p>

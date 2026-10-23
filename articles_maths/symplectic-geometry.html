@@ -115,7 +115,7 @@ $$</p>
 <p>The central local fact of symplectic geometry is that a symplectic form has no local invariants at all.</p>
 <p><strong>Theorem (Darboux).</strong> Let $(M, \omega)$ be a symplectic manifold of dimension $2m$. About every point $x \in M$ there is a chart $(\Xi, x_1, \ldots, x_m, y_1, \ldots, y_m)$ centred at $x$ in which</p>
 <p>$$
-\omega = \sum_{i=1}^{m} dx_i \wedge dy_i .
+\boxed{\;\omega = \sum_{i=1}^{m} dx_i \wedge dy_i\;} .
 $$</p>
 <p>Consequently every symplectic manifold of dimension $2m$ is locally symplectomorphic to $(\mathbb{R}^{2m}, \omega_0)$.</p>
 <p><strong>Proof.</strong> By the linear Darboux theorem of <em>Symplectic Forms and Poisson Brackets</em> there is a basis of $T_xM$ in which $\omega_x$ is the standard form; choosing a chart in which this basis is the coordinate basis, the form $\omega_0$ with constant coefficients $\sum_i dx_i\wedge dy_i$ agrees with $\omega$ at $x$. It therefore suffices to prove that on a neighbourhood of the origin in $\mathbb{R}^{2m}$ any closed form $\omega_1$ with $\omega_1(0) = \omega_0$ is symplectomorphic to $\omega_0$ by a diffeomorphism fixing the origin. Consider the homotopy $\omega_t = \omega_0 + t(\omega_1 - \omega_0)$ from $\omega_0$ to $\omega_1$; each $\omega_t$ is closed, and each is nondegenerate near the origin because nondegeneracy is an open condition and $\omega_t(0) = \omega_0$ for every $t$. Since $\omega_1 - \omega_0$ is closed and vanishes at the origin, the Poincaré lemma of <em>Differential Forms and Stokes' Theorem</em> applied on a star-shaped chart provides a $1$-form $\sigma$ with $d\sigma = \omega_1 - \omega_0$. Because $\omega_t$ is nondegenerate, there is a unique time-dependent vector field $X_t$ with</p>
@@ -147,7 +147,7 @@ $$</p>
 <p><strong>Proof.</strong> Bilinearity and alternation are inherited from $\omega$. For the derivation property, $X_{gh}$ is characterised by $\iota_{X_{gh}}\omega = d(gh) = g\,dh + h\,dg$, while $\iota_{gX_h + hX_g}\omega = g\,dh + h\,dg$; by uniqueness $X_{gh} = gX_h + hX_g$. Substituting into $\{f, gh\} = \omega(X_f, X_{gh})$ and using the bilinearity of $\omega$ gives the identity.</p>
 <p><strong>Theorem.</strong> The Jacobi identity for the bracket is equivalent to the closedness of $\omega$: substituting the Hamiltonian fields into the invariant formula for the differential of a $2$-form and using $[X_f, X_g] = -X_{\{f,g\}}$ gives</p>
 <p>$$
-d\omega(X_f, X_g, X_h) = -2\bigl(\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}\bigr).
+\boxed{\;d\omega(X_f, X_g, X_h) = -2\bigl(\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}\bigr)\;}.
 $$</p>
 <p>Consequently, on a symplectic manifold the bracket satisfies the Jacobi identity, and the vector space $C^\infty(M)$ is a Lie algebra under it.</p>
 <p><strong>Proof.</strong> The invariant formula for the exterior derivative on a $2$-form gives</p>
@@ -205,7 +205,7 @@ $$</p>
 <p>where $X^{\#}$ is the fundamental vector field of the action and $X_{\mu_X}$ is the Hamiltonian vector field of $\mu_X$. A <strong>coadjoint-equivariant</strong> momentum map in addition intertwines the action on $M$ with the coadjoint action on $\mathrm{G}^*$.</p>
 <p><strong>Theorem (Marsden–Weinstein).</strong> Let $G$ act freely and properly on the symplectic manifold $(M, \omega)$ with an equivariant momentum map $\mu$, and suppose $0 \in \mathrm{G}^*$ is a regular value of $\mu$. Then the quotient</p>
 <p>$$
-M /\!/ G = \mu^{-1}(0)/G
+\boxed{\;M /\!/ G = \mu^{-1}(0)/G\;}
 $$</p>
 <p>is a smooth manifold of dimension $\dim M - 2\dim G$, and it carries a unique symplectic form $\omega_{\mathrm{red}}$ with</p>
 <p>$$

@@ -85,7 +85,7 @@ $$</p>
 <p><strong>Theorem (Hamilton's short-time existence).</strong> Let $M$ be a compact manifold and $g_0$ a smooth Riemannian metric on $M$. There is a $T>0$ and a smooth solution $g(t)$ of the Ricci flow on $[0,T)$ with $g(0)=g_0$, and the solution is unique among smooth solutions with the given initial datum; the maximal interval of existence is finite if and only if the curvature becomes unbounded.</p>
 <p><em>Proof.</em> Quoted as standard (Hamilton). The equation is not parabolic because of its diffeomorphism invariance, and the proof introduces the <strong>DeTurck trick</strong>: one adds to the flow the Lie derivative $\mathcal{L}_{W(g)}g$ of the metric along a vector field $W$ determined by the difference of the connections of $g$ and of a fixed background metric, obtaining the <strong>Ricci–DeTurck equation</strong></p>
 <p>$$
-\frac{\partial g_{ij}}{\partial t} = -2R_{ij} + \nabla_iW_j+\nabla_jW_i ,
+\boxed{\;\frac{\partial g_{ij}}{\partial t} = -2R_{ij} + \nabla_iW_j+\nabla_jW_i\;} ,
 $$</p>
 <p>which has a strictly parabolic principal symbol of quasilinear type. The parabolic existence theorem gives a solution for short time, and one undoes the gauge by solving the flow of the time-dependent vector field $W$ and pulling the solution back; the diffeomorphism invariance of the Ricci tensor makes the pulled-back solution a Ricci flow. Uniqueness follows from the uniqueness for the parabolic equation in the fixed gauge.</p>
 <p><strong>Remark (the weakly parabolic character).</strong> The degeneracy of the symbol is not a defect to be removed but the expression of the invariance: the flow is defined only up to the action of the diffeomorphism group, and to prove a theorem about the metric one must either fix the gauge as above or work with a quantity invariant under the group. The curvature evolution below is of the second kind: the curvature is already invariant, and its equation is parabolic.</p>
@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-evolution-of-curvature">The Evolution of Curvature</h2>
 <p><strong>Theorem (evolution of the scalar curvature).</strong> Along a Ricci flow,</p>
 <p>$$
-\frac{\partial R}{\partial t} = \Delta R + 2|R_{ij}|^2 ,
+\boxed{\;\frac{\partial R}{\partial t} = \Delta R + 2|R_{ij}|^2\;} ,
 $$</p>
 <p>where $\Delta$ is the Laplace–Beltrami operator of $g(t)$ and $|R_{ij}|^2 = R_{ij}R^{ij}$.</p>
 <p><em>Proof.</em> Quoted as standard. The computation differentiates the twice-contracted Bianchi identity and the definition $R=g^{ij}R_{ij}$; the derivative of the inverse metric contributes $-2R^{ij}$ contracting the Ricci tensor and the derivative of the Ricci tensor contributes its own evolution, and the result is the displayed reaction-diffusion equation, the reaction term being the square of the Ricci tensor.</p>
@@ -141,8 +141,8 @@ $$</p>
 <p><em>Proof.</em> Quoted as standard (Hamilton–Ivey). The proof applies the maximum principle to the evolution of the minimum sectional curvature, whose evolution is governed by a reaction term that is favourable once the curvature is sufficiently negative; the resulting bound on the reaction term controls the possible blow-up.</p>
 <p><strong>Theorem (Perelman's monotonicity).</strong> The <strong>entropy</strong> functionals</p>
 <p>$$
-\mathcal{F}(g,f) = \int_M\bigl(R+|\nabla f|^2\bigr)\exp(-f)dV, \qquad
-\mathcal{W}(g,f,\tau) = \int_M\Bigl[\tau\bigl(R+|\nabla f|^2\bigr)+f-n\Bigr](4\pi\tau)^{-n/2}\exp(-f)dV
+\boxed{\;\mathcal{F}(g,f) = \int_M\bigl(R+|\nabla f|^2\bigr)\exp(-f)dV, \qquad
+\mathcal{W}(g,f,\tau) = \int_M\Bigl[\tau\bigl(R+|\nabla f|^2\bigr)+f-n\Bigr](4\pi\tau)^{-n/2}\exp(-f)dV\;}
 $$</p>
 <p>are monotone along the coupled flow $\partial/\partial t\,g=-2R_{ij}$, $\partial/\partial t\,f=-\Delta f+|\nabla f|^2-R$ (and $\partial/\partial t\tau=-1$ for $\mathcal{W}$): $\frac{d}{dt}\mathcal{F}\ge0$ and $\frac{d}{dt}\mathcal{W}\ge0$, with equality only for the corresponding solitons.</p>
 <p><em>Proof.</em> Quoted as standard (Perelman). The computation is a long integration by parts in which the evolution equations for $g$ and $f$ are substituted into the derivative of the functional, and the result is a sum of squares: $\frac{d}{dt}\mathcal{W} = 2\tau\int\bigl|R_{ij}+\nabla_i\nabla_jf-\frac{1}{2\tau}g_{ij}\bigr|^2(4\pi\tau)^{-n/2}\exp(-f)dV$, which is nonnegative and vanishes exactly on a shrinking soliton.</p>

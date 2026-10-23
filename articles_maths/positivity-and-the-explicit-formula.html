@@ -76,7 +76,7 @@
 <h3 id="statement">Statement</h3>
 <p><strong>Theorem (the explicit formula).</strong> For a test function $h$ as above,
 $$
-\sum_{\rho}\widehat h(\rho)=\widehat h(1)+\widehat h(0)-\sum_{j}\widehat h(-\mu_j)+\frac{1}{2\pi}\int_{-\infty}^{\infty}\widehat h(r)\,\frac{\gamma_\infty'}{\gamma_\infty}\Bigl(\tfrac12+ir\Bigr)\,dr+\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}\bigl(g(\log n)+g(-\log n)\bigr),
+\boxed{\;\sum_{\rho}\widehat h(\rho)=\widehat h(1)+\widehat h(0)-\sum_{j}\widehat h(-\mu_j)+\frac{1}{2\pi}\int_{-\infty}^{\infty}\widehat h(r)\,\frac{\gamma_\infty'}{\gamma_\infty}\Bigl(\tfrac12+ir\Bigr)\,dr+\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}\bigl(g(\log n)+g(-\log n)\bigr)\;},
 $$
 where the sum is over the nontrivial zeros $\rho$ of $\Lambda_f$ with multiplicity, the archimedean term is the logarithmic derivative of the gamma factor, the function $g$ is the inverse Fourier transform of $\widehat h$, and $\Lambda$ is the von Mangoldt function; the sum over the zeros converges when $h$ is smooth and compactly supported in the appropriate sense.</p>
 <p><strong>Proof.</strong> The formula is the residue theorem applied to the logarithmic derivative of $\Lambda_f$ multiplied by $\widehat h$, on a large rectangle; the residues at the zeros give the left side, the residues at the poles give the two terms $\widehat h(1)+\widehat h(0)$, the archimedean term is the cut contribution of the gamma factor, and the prime terms come from the logarithmic derivative of the Euler product, expanded as the series $\sum_{p,k}(\log p)p^{-ks}$. This is the classical explicit formula of <em>Riemann's Zeta Function</em> and <em>Prime Numbers</em>.</p>
@@ -88,7 +88,7 @@ $$
 so that the explicit formula reads $W(h)=\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}(g(\log n)+g(-\log n))$.</p>
 <p><strong>Theorem.</strong> The Weil distribution is Hermitian,
 $$
-W(h^*)=\overline{W(h)} ,
+\boxed{\;W(h^*)=\overline{W(h)}\;} ,
 $$
 and it is a tempered distribution on the space of test functions.</p>
 <p><strong>Proof.</strong> The zeros are symmetric under the conjugation for real coefficients, so the sum $\sum_\rho\widehat h(\rho)$ satisfies the same identity with the conjugate; the prime side is real when $h$ is real and satisfies the Hermitian identity term by term, since $g_{h^*}(x)=\overline{g_h(-x)}$. The temperedness is the growth of the test space; the details are in <em>Explicit Formulas</em>.</p>
@@ -97,7 +97,7 @@ and it is a tempered distribution on the space of test functions.</p>
 <p><strong>Definition.</strong> The <strong>convolution square</strong> of $h$ is $h*h^*$, whose Fourier transform is $|\widehat h|^2\ge0$ on the real line.</p>
 <p><strong>Theorem (the positivity criterion).</strong> The following are equivalent.
 $$
-\text{the Riemann hypothesis for } L(f,\cdot),\qquad W(h*h^*)\ge0\ \text{ for every test function }h .
+\boxed{\;\text{the Riemann hypothesis for } L(f,\cdot),\qquad W(h*h^*)\ge0\ \text{ for every test function }h\;} .
 $$
 Moreover, $W(h*h^*)\ge0$ for all $h$ is equivalent to the positive definiteness of the Hermitian form $(h_1,h_2)\mapsto W(h_1*h_2^*)$ on the test space.</p>
 <p><strong>Proof.</strong> The explicit formula expresses $W(h*h^*)$ as a sum over the zeros of $|\widehat h(\rho)|^2$ plus the archimedean and prime corrections; the archimedean and prime corrections are the same for all $h$ and depend only on the completion. If all the zeros have real part $1/2$, each $\rho=\frac12+it$ contributes $|\widehat h(\frac12+it)|^2\ge0$ and the total is a sum of nonnegative terms plus a nonnegative archimedean term, so $W(h*h^*)\ge0$. Conversely, if some zero has real part $\beta\ne1/2$, one chooses a test function concentrated near that zero so that the corresponding term dominates and $W(h*h^*)<0$; this is the standard argument of Weil, in <em>Explicit Formulas</em>. The equivalence with positive definiteness is the polarisation identity for the Hermitian form $W(h_1*h_2^*)$.</p>

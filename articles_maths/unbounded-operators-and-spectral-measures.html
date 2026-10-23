@@ -127,7 +127,7 @@ $$</p>
 <p>The Cayley transform turns the analytic condition $A=A^*$ into the algebraic condition $V^*V=VV^*=I$, and it turns the search for self-adjoint extensions of a symmetric operator into the search for unitary extensions of an isometry — a problem with a transparent solution.</p>
 <p><strong>Theorem (von Neumann).</strong> A closed symmetric operator $A$ has a self-adjoint extension if and only if $n_+=n_-$. When this holds, the self-adjoint extensions are in bijective correspondence with the unitary maps $U:N_+\to N_-$, the extension $A_U$ being determined by</p>
 <p>$$
-D(A_U)=D(A)\oplus\{x+Ux:x \in N_+\}, \qquad A_U(x+x_0+Ux_0)=Ax+ix_0-iUx_0 .
+\boxed{\;D(A_U)=D(A)\oplus\{x+Ux:x \in N_+\}, \qquad A_U(x+x_0+Ux_0)=Ax+ix_0-iUx_0\;} .
 $$</p>
 <p>The correspondence is obtained from the unitary extensions of the Cayley transform and is a theorem of von Neumann.</p>
 <p><strong>Example (the half-line Laplacian).</strong> For $A=-\frac{d^2}{dx^2}$ on $C_c^\infty(0,\infty)$ the deficiency indices are $(1,1)$, so the self-adjoint extensions form a circle, and they are exactly the operators</p>
@@ -159,7 +159,7 @@ Ax=\int_{\mathbb{R}}\lambda\,dE(\lambda)\,x,
 $$</p>
 <p>the integral converging as a strong limit; equivalently,</p>
 <p>$$
-\langle Ax,y\rangle=\int_{\mathbb{R}}\lambda\,d\langle E(\lambda)x,y\rangle, \qquad x \in D(A),\ y \in H .
+\boxed{\;\langle Ax,y\rangle=\int_{\mathbb{R}}\lambda\,d\langle E(\lambda)x,y\rangle, \qquad x \in D(A),\ y \in H\;} .
 $$</p>
 <p>The measure satisfies $E(B)=0$ for Borel $B$ disjoint from $\sigma(A)$, so $\operatorname{supp}E=\sigma(A)$; conversely $\lambda \in \sigma(A)$ exactly when $E\bigl((\lambda-\varepsilon,\lambda+\varepsilon)\bigr)\neq0$ for every $\varepsilon>0$, so the spectrum is real. If $A$ is bounded with $\|A\|\le M$ then $E$ is supported in $[-M,M]$ and $A=\int_{-M}^M\lambda\,dE(\lambda)$, recovering the spectral theorem of <em>Banach and Hilbert Spaces</em>.</p>
 <p><em>Proof (sketch).</em> The Cayley transform $V=(A-i)(A+i)^{-1}$ is unitary and $1$ is not an eigenvalue, so the bounded spectral theorem applied to $V$ gives $V=\int_{S^1}z\,dF(z)$; the inverse Cayley map transports $F$ to a projection-valued measure on the real line, and the domain of $A$ is computed from the integrability condition $z \mapsto i(1+z)(1-z)^{-1}$ being in $L^2$. Uniqueness follows because the moments $\int\lambda^n\,dE_{x,y}$ are determined by $A$ for all $x,y$.</p>
@@ -183,7 +183,7 @@ $$</p>
 <h3 id="polar-decomposition">Polar Decomposition</h3>
 <p><strong>Theorem (polar decomposition).</strong> Let $A$ be a closed densely defined operator. Then there is a positive self-adjoint operator $|A|=(A^*A)^{1/2}$ with $D(|A|)=D(A)$ and a partial isometry $U$ with $\ker U=\ker A$ and closed initial space $\overline{|A|(D(A))}$, such that</p>
 <p>$$
-A=U|A|, \qquad |A|=U^*A,
+\boxed{\;A=U|A|, \qquad |A|=U^*A\;},
 $$</p>
 <p>and $U$ is uniquely determined by these conditions. The decomposition separates $A$ into its "modulus" $|A|$ and its "argument" $U$, and $|A|$ has spectral measure computed from $A^*A$; the decomposition specialises to the polar decomposition of a bounded operator and to the absolute value of a self-adjoint operator.</p>
 <h2 id="stones-theorem">Stone's Theorem</h2>

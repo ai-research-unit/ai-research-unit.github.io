@@ -81,7 +81,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>reflection</strong> of $R$ is an operator of the form $\rho_u$ that is an involution, that is a signed conjugation with $u \in I_\alpha(R)$. The unit $u$ is the <strong>carrying unit</strong> of the reflection, and the reflection is said to <strong>invert</strong> the elements $x$ with $\rho_u(x) = -x$ and to <strong>fix</strong> those with $\rho_u(x) = x$.</p>
 <p><strong>Proposition (reflections are continuous involutions with closed fixed set).</strong> For $u \in I_\alpha(R)$ the operator $\rho_u$ is a continuous additive operator, $\rho_u^2 = \mathrm{id}$, it is a homeomorphism of $R$ with $\rho_u^{-1} = \rho_u$, and its fixed set is the closed subring</p>
 <p>$$
-R^{\rho_u} = \{ x : \alpha(x) = u^{-1}xu \} = \{ x : \alpha(x) = c_{u^{-1}}(x) \} ,
+\boxed{\;R^{\rho_u} = \{ x : \alpha(x) = u^{-1}xu \} = \{ x : \alpha(x) = c_{u^{-1}}(x) \}\;} ,
 $$</p>
 <p>which contains the fixed subring $R^\alpha \cap Z(R)$ of the grade involution.</p>
 <p><strong>Proof.</strong> The operator $\rho_u = L_u\alpha R_{u^{-1}}$ is a composite of continuous operators, hence continuous, and additive; its square is $c_{u\alpha(u)}$, the identity when $u\alpha(u)$ is central, by <em>The Signed Sandwich on a Topological Ring</em>. The fixed set is the equalizer of the two continuous maps $\alpha$ and $c_{u^{-1}}$, hence closed, and it is a subring because both maps are automorphisms; an element of $R^\alpha\cap Z(R)$ satisfies $\alpha(x) = x = u^{-1}xu$, so it is fixed.</p>
@@ -99,7 +99,7 @@ $$</p>
 <h2 id="the-correspondence">The Correspondence</h2>
 <p><strong>Theorem (the correspondence between the elements and the reflections).</strong> The map</p>
 <p>$$
-I_\alpha(R) \longrightarrow \{\text{reflections of } R\}, \qquad u \longmapsto \rho_u ,
+\boxed{\;I_\alpha(R) \longrightarrow \{\text{reflections of } R\}, \qquad u \longmapsto \rho_u\;} ,
 $$</p>
 <p>is surjective by definition, and its kernel is the set of units inducing the grade involution,</p>
 <p>$$
@@ -111,7 +111,7 @@ $$</p>
 <p><strong>Proof.</strong> Immediate from the theorem; the inversion condition is $\rho_u(x) = -x$, which is $u\alpha(x)u^{-1} = -x$.</p>
 <p><strong>Proposition (the reflections compose).</strong> For carrying units $u, v$ the product of the reflections is the reflection carried by $u\alpha(v)$,</p>
 <p>$$
-\rho_u\circ\rho_v = \rho_{u\alpha(v)} ,
+\boxed{\;\rho_u\circ\rho_v = \rho_{u\alpha(v)}\;} ,
 $$</p>
 <p>and the reflections form a subgroup of the signed sandwich group when the grade involution is not inner, namely the image of $I_\alpha(R)$ under $u \mapsto \rho_u$, a homomorphic image of the carrying units in which $u$ acts through the automorphism $\alpha$; every reflection lies in the continuous automorphism group $\operatorname{Aut}_c(R)$.</p>
 <p><strong>Proof.</strong> By the composition law, $\rho_u\rho_v = \Sigma^\alpha_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$, and for $t = u\alpha(v)$ the right parameter is $\alpha(v)^{-1}u^{-1} = (u\alpha(v))^{-1} = t^{-1}$, so the product is $\Sigma^\alpha_{t,t^{-1}} = \rho_t$. The product of two carrying units is again carrying when $\alpha$ is not inner, and in general the image is a subgroup of the sandwich group by the homomorphism property; each reflection is an automorphism and continuous.</p>

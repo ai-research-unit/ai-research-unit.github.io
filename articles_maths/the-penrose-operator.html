@@ -94,7 +94,7 @@ $$</p>
 <h3 id="conformal-covariance">Conformal Covariance</h3>
 <p><strong>Theorem (conformal invariance of the twistor equation).</strong> Let $\hat g=\Omega^2g$ with $\Omega>0$, and identify the spinor bundles of $g$ and $\hat g$ along the conformal factor in the standard way, writing $\hat\sigma$ for the image of a spinor field $\sigma$. Then the twistor equation is conformally invariant:</p>
 <p>$$
-\mathcal{P}^{g}\sigma = 0 \qquad\Longleftrightarrow\qquad \mathcal{P}^{\hat g}\hat\sigma = 0 ,
+\boxed{\;\mathcal{P}^{g}\sigma = 0 \qquad\Longleftrightarrow\qquad \mathcal{P}^{\hat g}\hat\sigma = 0\;} ,
 $$</p>
 <p>with the weight fixed by the standard identification. In particular the space of twistor spinors is an invariant of the conformal class $[g]$, and the Penrose operator is the conformally covariant operator that realises the invariance.</p>
 <p><strong>Proof sketch.</strong> The conformal change of the spin connection contributes the term $(X\log\Omega)$-valued Clifford multiplication to $\nabla^{\mathcal{S}}$, and the change of the Cauchy–Riemann operator contributes its own first-order and zeroth-order corrections; the combination defining $\mathcal{P}$ is the unique such combination whose corrections cancel, which is the computation recorded by the references and quoted here. The cancellation is the conformal form of the statement that the two terms of $\mathcal{P}$ — the trace part and the twistor part of $\nabla^{\mathcal{S}}$ — carry opposite conformal weights.</p>
@@ -103,11 +103,11 @@ $$</p>
 <h3 id="the-conformal-current">The Conformal Current</h3>
 <p><strong>Proposition (the conformal Killing field).</strong> Let $\sigma$ be a twistor spinor. Then the vector field</p>
 <p>$$
-X_\sigma = \sum_{i=1}^{n}\bigl(\sigma,e_i\cdot\sigma\bigr)\,e_i ,
+\boxed{\;X_\sigma = \sum_{i=1}^{n}\bigl(\sigma,e_i\cdot\sigma\bigr)\,e_i\;} ,
 $$</p>
 <p>where $(\cdot,\cdot)$ is the real part of the fibre form, is a <strong>conformal Killing field</strong>: it satisfies the conformal Killing equation</p>
 <p>$$
-\mathcal{L}_{X_\sigma}g = \frac{2}{n}(\operatorname{div}X_\sigma)\,g .
+\boxed{\;\mathcal{L}_{X_\sigma}g = \frac{2}{n}(\operatorname{div}X_\sigma)\,g\;} .
 $$</p>
 <p>Equivalently, the flow of $X_\sigma$ preserves the conformal class of $g$.</p>
 <p><strong>Proof sketch.</strong> The twistor equation for $\sigma$ gives a first-order system for the vector field $X_\sigma$; differentiating the defining formula and substituting $\nabla_X\sigma=-\frac1nX\cdot D\sigma$ shows that the symmetric part of $\nabla X_\sigma$ is a multiple of the metric, which is the conformal Killing equation, and the divergence is computed from the same formula. This is the standard construction of the conformal vector fields adapted to a spinor, quoted from the theory of twistor spinors; it is the real-geometry face of the twistor equation.</p>

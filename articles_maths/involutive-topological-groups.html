@@ -101,7 +101,7 @@
 <h3 id="the-dictionary-and-the-two-kinds">The Dictionary and the Two Kinds</h3>
 <p><strong>Theorem (the dictionary).</strong> For an involution $\sigma$ of $G$ with $\alpha = \sigma\iota$,</p>
 <p>$$
-G^\sigma = I(\alpha), \qquad I(\sigma) = G^\alpha .
+\boxed{\;G^\sigma = I(\alpha), \qquad I(\sigma) = G^\alpha\;} .
 $$</p>
 <p>So the fixed set of the involution is the inverted set of the associated automorphism, and conversely; the subgroup among the two is $I(\sigma) = G^\alpha$, and the set that may fail to be a subgroup is the fixed set $G^\sigma = I(\alpha)$.</p>
 <p><strong>Proof.</strong> $I(\alpha) = \{g : \alpha(g) = g^{-1}\} = \{g : \sigma\iota(g) = g^{-1}\} = \{g : \sigma(g^{-1}) = g^{-1}\} = \{g : \sigma(g) = g\} = G^\sigma$, and the second identity is the same computation with the roles of $\sigma$ and $\alpha$ exchanged.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p><strong>Definition.</strong> A subgroup $H \leq G$ is <strong>$\sigma$-stable</strong> if $\sigma(H) = H$; a $\sigma$-stable $H$ carries the restricted involution $\sigma|_H$, and when $H$ is closed and normal it carries the induced involution $\bar\sigma$ on the quotient $G/H$.</p>
 <p><strong>Theorem.</strong> Let $\sigma$ be a topological involution of $G$ and $H$ a $\sigma$-stable subgroup. Then $\sigma|_H$ is a topological involution of $H$ with the subspace topology and $H \cap G^\sigma = H^{\sigma|_H}$, $H \cap I(\sigma) = I(\sigma|_H)$. If in addition $H$ is closed and normal then $\bar\sigma$ is a topological involution of the topological group $G/H$, and</p>
 <p>$$
-\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma),
+\boxed{\;\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma)\;},
 $$</p>
 <p>where $\pi : G \to G/H$ is the quotient map. Both inclusions can be strict.</p>
 <p><strong>Proof.</strong> The restriction is continuous because $\sigma$ is, and the induced map is continuous because $\sigma$ and $\pi$ are; the abstract statements are the proposition of <em>Involutive Groups</em>, and $G/H$ is a topological group with the quotient topology because $H$ is closed and normal, with the quotient map continuous and open. The strictness is the abstract example recalled below.</p>
@@ -130,7 +130,7 @@ $$</p>
 $$</p>
 <p>Then $\varphi$ is continuous, takes its values in the fixed set $G^\sigma$, is constant on the left cosets of $I(\sigma)$, and induces a continuous bijection</p>
 <p>$$
-\bar\varphi : G/I(\sigma) \longrightarrow \varphi(G) \subseteq G^\sigma, \qquad gI(\sigma) \longmapsto g^{-1}\alpha(g),
+\boxed{\;\bar\varphi : G/I(\sigma) \longrightarrow \varphi(G) \subseteq G^\sigma, \qquad gI(\sigma) \longmapsto g^{-1}\alpha(g)\;},
 $$</p>
 <p>onto its image. If $G$ is compact, then $G/I(\sigma)$ is compact Hausdorff, the image $\varphi(G)$ is a closed subspace of $G^\sigma$, and $\bar\varphi$ is a homeomorphism of $G/I(\sigma)$ onto $\varphi(G)$.</p>
 <p><strong>Proof.</strong> The map $\varphi$ is continuous, being a composite of the continuous operations of the group. Using $\alpha^2 = \mathrm{id}$,</p>

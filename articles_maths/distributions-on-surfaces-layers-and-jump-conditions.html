@@ -125,7 +125,7 @@ and its <strong>jump</strong> is $[u] = u^{+}|_S - u^{-}|_S$, a function on $S$.
 <h3 id="the-jump-formula_1">The Jump Formula</h3>
 <p><strong>Theorem (jump formula).</strong> Let $u$ be piecewise smooth across $S$. Then, in $\mathcal{D}'(\Omega)$,
 $$
-\partial/\partial x_j u = \{\partial/\partial x_j u\} + [u]\,n_j\,\delta_S .
+\boxed{\;\partial/\partial x_j u = \{\partial/\partial x_j u\} + [u]\,n_j\,\delta_S\;} .
 $$</p>
 <p><em>Proof.</em> Differentiate the product $u = u^{+}H(\varphi) + u^{-}(1 - H(\varphi))$ by the Leibniz rule:
 $$
@@ -168,7 +168,7 @@ $$</p>
 <h3 id="the-structure-of-a-distribution-supported-on-a-surface">The Structure of a Distribution Supported on a Surface</h3>
 <p><strong>Theorem (layer expansion).</strong> Let $u \in \mathcal{D}'(\mathbb{R}^n)$ with $\operatorname{supp} u \subseteq S$. Then $u$ is locally a finite sum
 $$
-u = \sum_{k=0}^{N} \partial^k/\partial n^k(g_k\,\delta_S),
+\boxed{\;u = \sum_{k=0}^{N} \partial^k/\partial n^k(g_k\,\delta_S)\;},
 $$
 with densities $g_k$ that are distributions on $S$.</p>
 <p><em>Proof (local).</em> Flatten the surface: near a point choose coordinates $(x',x_n)$ in which $\varphi = x_n$ and $S = \{x_n = 0\}$, so that $n = e_n$ and $\delta_S = \delta(x_n)$. A distribution on $\mathbb{R}^n$ supported in the hyperplane $x_n = 0$ is a finite sum of derivatives of the delta in the normal variable, acting on the tangential variables as a parameter,
@@ -263,7 +263,7 @@ $$
 $$
 with flux $f = (f_1,\dots,f_n)$. Let $S$ be a non-characteristic surface of the equation, and write $\nu = (\nu_t,\nu_x)$ for its normal. Then
 $$
-[u]\,\nu_t + \sum_{j=1}^{n} [f_j(u)]\,\nu_{x_j} = 0 .
+\boxed{\;[u]\,\nu_t + \sum_{j=1}^{n} [f_j(u)]\,\nu_{x_j} = 0\;} .
 $$</p>
 <p><em>Proof.</em> The equation is the divergence of the vector field $(u, f(u))$. By the jump formula for the divergence in $\mathbb{R}^{n+1}$, applied in the variables of the space, the singular part of the divergence is $[u]\nu_t\delta_S + \sum_j[f_j(u)]\nu_{x_j}\delta_S$, and it must vanish.</p>
 <p>For a plane shock $x = st$ in one space dimension, the normal direction is $(-s,1)$ in $(x,t)$ up to scale, and the condition becomes

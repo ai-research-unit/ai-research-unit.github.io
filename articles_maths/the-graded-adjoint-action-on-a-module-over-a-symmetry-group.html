@@ -86,7 +86,7 @@ $$
 so that even elements act by parity-preserving operators and odd elements by parity-reversing isomorphisms; the action is the <strong>graded action</strong> of <em>The Graded Action on a Module over a Symmetry Group</em>.</p>
 <p><strong>Proposition.</strong> A graded action decomposes as $\rho = \rho_0\oplus\rho_1$ with $\rho_0 : G_0 \to GL(M_0)\times GL(M_1)$ and $\rho_1 : G_1 \to \mathrm{Iso}(M_0,M_1)$; the endomorphism algebra is graded, $\operatorname{End}(M)_i = \{T : T(M_j)\subseteq M_{j+i}\}$, and the graded commutator
 $$
-[T, S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST
+\boxed{\;[T, S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST\;}
 $$
 makes $\operatorname{End}(M)$ a graded Lie algebra, the <strong>sign</strong> $(-1)^{\lvert T\rvert\lvert S\rvert}$ being the Koszul sign.</p>
 <p><strong>Proof.</strong> The decomposition is the definition of a graded action on each homogeneous point; the parity of a composition is the sum of the parities, $\lvert TS\rvert = \lvert T\rvert+\lvert S\rvert$, so $\operatorname{End}(M)$ is graded, and the graded commutator is graded-antisymmetric and satisfies the graded Jacobi identity, <em>Superalgebras and Graded Structures</em>.</p>
@@ -98,7 +98,7 @@ makes $\operatorname{End}(M)$ a graded Lie algebra, the <strong>sign</strong> $(
 <p><strong>Definition.</strong> A <strong>graded form</strong> on $M$ is a bilinear form $B$ with $B(M_i,M_j) = 0$ for $i \neq j$, non-degenerate on each part, and of graded symmetry $B(x,y) = (-1)^{\lvert x\rvert\lvert y\rvert}B(y,x)$; it is <strong>invariant</strong> under the graded action when $B(\rho(g)x,\rho(g)y) = B(x,y)$ for all $g$.</p>
 <p><strong>Proposition.</strong> The <strong>graded adjoint</strong> of $T \in \operatorname{End}(M)$ with respect to a graded form is the unique operator $T^{*}$ with $B(Tx, y) = (-1)^{\lvert T\rvert\lvert x\rvert}B(x, T^{*}y)$ for homogeneous $x$, and it satisfies
 $$
-(T^{*})^{*} = T, \qquad (T + S)^{*} = T^{*} + S^{*}, \qquad (ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*},
+\boxed{\;(T^{*})^{*} = T, \qquad (T + S)^{*} = T^{*} + S^{*}, \qquad (ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}\;},
 $$
 the <strong>sign rule</strong> of the graded adjoint; the parity of the adjoint is the parity of the operator, $\lvert T^{*}\rvert = \lvert T\rvert$.</p>
 <p><strong>Proof.</strong> The defining relation and non-degeneracy give existence and uniqueness; the involution and additivity are the same as in the ungraded case; the product rule acquires the Koszul sign because in the pairing $B(STx, y)$ the operator $S$ of parity $\lvert S\rvert$ must be moved past $T^{*}$ of parity $\lvert T\rvert$, each crossing contributing $(-1)^{\lvert S\rvert\lvert T\rvert}$. The parity statement is that $T^{*}$ carries $M_j$ to $M_{j+\lvert T\rvert}$ if and only if $T$ does. This is the graded <code>*</code>-algebra theory of <em>Involutive Graded Algebras</em>.</p>
@@ -117,7 +117,7 @@ $$</p>
 <h3 id="the-sign-rule-in-the-adjoint-action">The Sign Rule in the Adjoint Action</h3>
 <p><strong>Theorem (the sign rule and the adjoint action).</strong> For an even element $g$ the adjoint action is a graded algebra automorphism of $\operatorname{End}(M)$ preserving the involution $^{*}$ and the supertrace; hence it is a graded isometry of the invariant graded trace form and its graded adjoint is the adjoint action of the inverse,</p>
 <p>$$
-\bigl(\operatorname{Ad}_g\bigr)^{*} = \operatorname{Ad}_{g^{-1}} \qquad (g \text{ even}),
+\boxed{\;\bigl(\operatorname{Ad}_g\bigr)^{*} = \operatorname{Ad}_{g^{-1}} \qquad (g \text{ even})\;},
 $$</p>
 <p>with respect to $\langle S, T\rangle = \operatorname{str}(S^{*}T)$. For an odd element $g$ the adjoint action still preserves the grading and the graded commutator but carries the extra Koszul sign $(-1)^{\lvert S\rvert\lvert g\rvert} = (-1)^{\lvert S\rvert}$ on a homogeneous $S$; the sign is the graded correction that the exchange of two odd objects requires, and it is the same Koszul sign as in the product rule $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$.</p>
 <p><strong>Proof.</strong> For even $g$ the sign $(-1)^{\lvert S\rvert\lvert g\rvert}$ is $1$, so $\operatorname{Ad}_g(S^{*}) = (\operatorname{Ad}_g S)^{*}$; the supertrace is invariant under the adjoint action by the graded trace property, so $\operatorname{Ad}_g$ is an isometry of $\langle\cdot,\cdot\rangle$ and its graded adjoint is its inverse $\operatorname{Ad}_{g^{-1}}$. For odd $g$ the sign $(-1)^{\lvert S\rvert\lvert g\rvert} = (-1)^{\lvert S\rvert}$ is $1$ on the even endomorphisms and $-1$ on the odd ones, which is the displayed correction; the product rule is the proposition on the graded adjoint.</p>

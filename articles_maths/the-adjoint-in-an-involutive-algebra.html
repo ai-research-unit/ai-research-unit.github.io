@@ -89,7 +89,7 @@ $$</p>
 <h2 id="the-adjoint-for-the-twisted-pairing">The Adjoint for the Twisted Pairing</h2>
 <p><strong>Theorem.</strong> Let $T \in E$ have adjoint $T^{*}$ for the plain pairing. Then $T$ has an adjoint for the twisted pairing, written $T^{*_\sigma}$, and</p>
 <p>$$
-T^{*_\sigma}=\sigma\,T^{*}\,\sigma .
+\boxed{\;T^{*_\sigma}=\sigma\,T^{*}\,\sigma\;} .
 $$</p>
 <p>The twisted adjoint is the conjugate of the plain adjoint by the involution of the elements, and the assignment $T\mapsto T^{*_\sigma}$ is an involution of $E$ of order two.</p>
 <p><em>Proof.</em> By the relation between the pairings, $\{Tx,y\}=\langle Tx,\sigma(y)\rangle=\langle x,T^{*}\sigma(y)\rangle$, using the definition of $T^{*}$ in the second step. On the other side, $\{x,\sigma T^{*}\sigma\,y\}=\langle x,\sigma(\sigma T^{*}\sigma\,y)\rangle=\langle x,T^{*}\sigma(y)\rangle$, because $\sigma^{2}=\mathrm{id}$. The two are equal for all $x$ and $y$, and nondegeneracy of the twisted pairing gives $T^{*_\sigma}=\sigma T^{*}\sigma$. For order two, $(\sigma T^{*}\sigma)^{*}=\sigma^{*}T^{**}\sigma^{*}=\sigma T\sigma$, because the involution of the elements is self-adjoint for the plain pairing, $\langle\sigma(x),y\rangle=\tau(\sigma(x)y)=\tau(\sigma(\sigma(x)y))=\tau(x\sigma(y))=\langle x,\sigma(y)\rangle$; hence $(T^{*_\sigma})^{*_\sigma}=\sigma(\sigma T\sigma)\sigma=T$.</p>
@@ -102,7 +102,7 @@ $$</p>
 <p><em>Proof.</em> $T^{*_\sigma}=T^{*}$ is $\sigma T^{*}\sigma=T^{*}$, which is $\sigma T^{*}=T^{*}\sigma$.</p>
 <p><strong>Corollary (the involution of the elements on the operators).</strong> The map $c_{\sigma}(T)=\sigma T\sigma$ is an involutive automorphism of $E$, and the two adjoint operations are exchanged by it,</p>
 <p>$$
-c_{\sigma}(T^{*})=T^{*_\sigma}, \qquad c_{\sigma}(T^{*_\sigma})=T^{*} .
+\boxed{\;c_{\sigma}(T^{*})=T^{*_\sigma}, \qquad c_{\sigma}(T^{*_\sigma})=T^{*}\;} .
 $$</p>
 <p><em>Proof.</em> The first identity is the theorem read as an equation of maps; the second is the case of the first with $T$ replaced by $T^{*_\sigma}$ and order two used, $c_{\sigma}(T^{*_\sigma})=(T^{*_\sigma})^{*}=T^{*}$.</p>
 <h2 id="the-left-and-the-right-adjoint">The Left and the Right Adjoint</h2>
@@ -117,8 +117,8 @@ $$</p>
 <h2 id="the-adjoints-of-the-one-sided-multiplications">The Adjoints of the One-Sided Multiplications</h2>
 <p><strong>Theorem.</strong> For $a,b \in A$ the one-sided multiplications have adjoints</p>
 <p>$$
-L_a^{*}=R_a, \qquad R_b^{*}=L_b \qquad \text{(plain pairing)}, \qquad
-L_a^{*_\sigma}=L_{\sigma(a)}, \qquad R_b^{*_\sigma}=R_{\sigma(b)} \qquad \text{(twisted pairing)} .
+\boxed{\;L_a^{*}=R_a, \qquad R_b^{*}=L_b \qquad \text{(plain pairing)}, \qquad
+L_a^{*_\sigma}=L_{\sigma(a)}, \qquad R_b^{*_\sigma}=R_{\sigma(b)} \qquad \text{(twisted pairing)}\;} .
 $$</p>
 <p>The adjoint operation therefore <strong>exchanges</strong> the two sides for the plain pairing and <strong>preserves</strong> each side for the twisted one; and the twisting map is the one that turns the exchange into a preservation, in the sense $c_{\sigma}(L_a^{*})=c_{\sigma}(R_a)=L_{\sigma(a)}=L_a^{*_\sigma}$.</p>
 <p><em>Proof.</em> The plain case is the compatibility of the pairing, $\langle L_ax,y\rangle=\langle ax,y\rangle=\langle x,ya\rangle=\langle x,R_ay\rangle$, and the second identity is the same computation with the sides exchanged; the full treatment is <em>The Adjoint of the Left Multiplication on an Algebra</em>. For the twisted case, apply the theorem $T^{*_\sigma}=c_{\sigma}(T^{*})$ to $T=L_a$: $L_a^{*_\sigma}=\sigma R_a\sigma$, and $\sigma R_a\sigma(x)=\sigma(\sigma(x)a)=\sigma(a)x=L_{\sigma(a)}x$. The right-multiplication case is the same computation.</p>

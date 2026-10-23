@@ -78,11 +78,11 @@
 $$</p>
 <p><strong>Theorem (the complement).</strong> For every subspace $\mathbb{W}$,</p>
 <p>$$
-\dim\mathbb{W}+\dim\mathbb{W}^{\perp_{K}}=\dim\mathbb{B},
+\boxed{\; \dim\mathbb{W}+\dim\mathbb{W}^{\perp_{K}}=\dim\mathbb{B},
 \qquad
 \mathbb{W}\subseteq(\mathbb{W}^{\perp_{K}})^{\perp_{K}},
 \qquad
-(\mathbb{W}^{\perp_{K}})^{\perp_{K}}=\mathbb{W}\ \text{if and only if}\ \mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\}.
+(\mathbb{W}^{\perp_{K}})^{\perp_{K}}=\mathbb{W}\ \text{if and only if}\ \mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\} \;}.
 $$</p>
 <p>In particular $\mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}}$ and $\mathbb{V}_{\mathbb{B}}^{\perp_{K}}=\mathbb{C}_{\mathbb{B}}$.</p>
 <p><strong>Proof.</strong> The map $\mathbb{B}\to\mathbb{W}^{*}$, $\tilde{S}\mapsto\langle\tilde{S},\cdot\rangle_{\natural*}$, has kernel $\mathbb{W}^{\perp_{K}}$ and rank $\dim\mathbb{W}$, because the ambient form is non-degenerate and every linear form on $\mathbb{W}$ extends; rank–nullity gives the dimension formula. The inclusion and the criterion for equality are formal consequences. The last line is the computation $\langle \vec e_k,e_t\rangle_{\natural*}=0$ with the dimensions.</p>
@@ -108,9 +108,9 @@ J_{\mathbb{W}}=
 $$</p>
 <p><strong>Theorem (the fundamental symmetry of a decomposition).</strong> For every fundamental decomposition $(\mathbb{W},\mathbb{W}^{\perp_{K}})$ the operator $J_{\mathbb{W}}$ is a $J$-self-adjoint involution with $J_{\mathbb{W}}^{2}=\mathrm{id}$, its signature is $(2,6)$ over $\mathbb{R}$, and it reproduces the general quaternionic sesquilinear form from the Hermitian one,</p>
 <p>$$
-\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J_{\mathbb{W}}\tilde{Q}_1\rangle_{*},
+\boxed{\; \langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J_{\mathbb{W}}\tilde{Q}_1\rangle_{*},
 \qquad
-\langle\tilde{Q},J_{\mathbb{W}}\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},\tilde{Q}\rangle_{*} .
+\langle\tilde{Q},J_{\mathbb{W}}\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},\tilde{Q}\rangle_{*} \;}.
 $$</p>
 <p>The canonical fundamental decomposition is $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$, with $J_{\mathbb{C}_{\mathbb{B}}}=J={}^{\natural}$.</p>
 <p><strong>Proof.</strong> The operator is well defined because $\mathbb{B}=\mathbb{W}\oplus\mathbb{W}^{\perp_{K}}$, and it is an involution by construction. For the first identity, split $\tilde{Q}_1=\tilde{W}_1+\tilde{S}_1$ and $\tilde{Q}_2=\tilde{W}_2+\tilde{S}_2$: $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{W}_2,\tilde{W}_1\rangle_{\natural*}+\langle\tilde{S}_2,\tilde{S}_1\rangle_{\natural*}$ and $\langle\tilde{Q}_2,J_{\mathbb{W}}\tilde{Q}_1\rangle_{*}=\langle\tilde{W}_2,\tilde{W}_1\rangle_{*}-\langle\tilde{S}_2,\tilde{S}_1\rangle_{*}$; on the positive definite $\mathbb{W}$ the two forms agree and on the negative definite $\mathbb{W}^{\perp_{K}}$ they agree up to the sign $-$ because $\langle\tilde{S}_2,\tilde{S}_1\rangle_{\natural*}=-\langle\tilde{S}_2,\tilde{S}_1\rangle_{*}$ there. The second identity is the first with $J_{\mathbb{W}}^{2}=\mathrm{id}$ and $\langle\tilde{Q}_2,J_{\mathbb{W}}\tilde{Q}_1\rangle_{*}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}$. The signature is that of the form, and the canonical pair is the sign comparison of the two conjugations.</p>

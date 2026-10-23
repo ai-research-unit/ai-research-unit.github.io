@@ -82,7 +82,7 @@ $$</p>
 <p>The sum is finite, it is a sum of transforms of $f$ by the weight-$k$ action, and it commutes with $\mid_k\gamma$ for every $\gamma$ in the commensurator of $\Gamma_1(N)$, which is why it preserves the spaces of modular forms.</p>
 <p><strong>Theorem.</strong> For every $n$ the operator $T_n$ preserves $M_k(\Gamma_1(N))$ and $S_k(\Gamma_1(N))$, and if $f=\sum_{m\ge0}a_mq^m$ then
 $$
-T_nf = \sum_{m\ge0}b_mq^m, \qquad b_m=\sum_{d\mid\gcd(m,n)}d^{\,k-1}\,a_{mn/d^2}.
+\boxed{\;T_nf = \sum_{m\ge0}b_mq^m, \qquad b_m=\sum_{d\mid\gcd(m,n)}d^{\,k-1}\,a_{mn/d^2}\;}.
 $$
 The coefficient $b_m$ is a finite sum, and it depends only on $a_{mn/d^2}$ for $d\mid\gcd(m,n)$.</p>
 <p><strong>Proof.</strong> The invariance of the spaces is the double-coset computation of <em>Modular Forms</em>: the matrices $\begin{pmatrix}a&b\\0&d\end{pmatrix}$ with $ad=n$ are a set of double-coset representatives, and the average over each right coset of $\Gamma_1(N)$ is $\Gamma_1(N)$-invariant. For the coefficient formula, insert $q=\exp(2\pi iz)$ and expand each term $f((az+b)/d)=\sum_ja_j \exp(2\pi i j(az+b)/d)$; the sum over $b$ is a geometric sum, equal to $d$ when $d\mid j$ and to $0$ otherwise, so only the indices $j=dm'$ survive, and the substitution $m=ad\,m'$ collects the terms as displayed. The holomorphy at the cusps is preserved because each summand is and the sum is finite.</p>
@@ -103,7 +103,7 @@ The action of $\langle d\rangle$ is diagonal on the coefficient sequence, and it
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> For all $m,n\ge1$,
 $$
-T_mT_n = T_{mn} \quad\text{when } (m,n)=1, \qquad T_1=\mathrm{id},
+\boxed{\;T_mT_n = T_{mn} \quad\text{when } (m,n)=1, \qquad T_1=\mathrm{id}\;},
 $$
 and for every prime $p$ and every $r\ge1$,
 $$
@@ -146,7 +146,7 @@ $$
 taken with respect to the Petersson inner product of <em>The Adjoint of the Hecke Operator</em>.</p>
 <p><strong>Theorem (Atkin–Lehner, multiplicity one).</strong> The new subspace has a basis of normalised eigenforms whose eigenvalue systems are not of lower level, the old and new parts are stable under the Hecke operators for $(n,N)=1$, and on the new part a normalised eigenform is determined by its eigenvalue system; the space decomposes as
 $$
-S_k(\Gamma_1(N)) = S_k^{\mathrm{old}}\oplus S_k^{\mathrm{new}},
+\boxed{\;S_k(\Gamma_1(N)) = S_k^{\mathrm{old}}\oplus S_k^{\mathrm{new}}\;},
 $$
 an orthogonal direct sum once the Petersson product is available.</p>
 <p><strong>Proof sketch.</strong> The Atkin–Lehner operators $W_Q$ for the divisors $Q$ of $N$ permute the old/new decomposition and give a finite group of involutions acting on the space; the fixed spaces of the various products of the $W_Q$ cut the old part out, and the quotient is the new part. Multiplicity one for the new part is the statement that the Hecke algebra acts with multiplicity one on each Galois-conjugacy class of eigenvalue systems, which follows from the recursion and the excluded lower levels. The full proofs are in <em>Modular Forms</em>, to which this article defers.</p>

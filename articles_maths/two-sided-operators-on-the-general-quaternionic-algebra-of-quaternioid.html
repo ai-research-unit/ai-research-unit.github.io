@@ -84,7 +84,7 @@ $$</p>
 <h2 id="composition">Composition</h2>
 <p><strong>Theorem (the composition law).</strong> For all $\tilde q_3,\tilde q_4,\tilde q_5,\tilde q_6 \in \mathbb{H}$,</p>
 <p>$$
-T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\,\tilde q_6\tilde q_4} .
+\boxed{\;T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\,\tilde q_6\tilde q_4}\;}.
 $$</p>
 <p>Both parameters are <strong>reversed</strong>, because both the first factor of the product and the second carry an order-reversing step: the first through the anti-automorphism ${}^{\natural}$ that the left multiplication contains, the second through the opposite algebra.</p>
 <p><em>Proof.</em> Apply the left side to $\tilde q$ and use the associativity of the plain product:
@@ -94,7 +94,7 @@ $$
 which is $T_{\tilde q_5\tilde q_3,\tilde q_6\tilde q_4}(\tilde q)$.</p>
 <p><strong>Proposition (when two sandwiches agree, and the zero case).</strong> The sandwich $L_\alpha R_\beta$ is zero exactly when $\alpha = 0$ or $\beta = 0$. For <strong>nonzero</strong> parameter pairs, two sandwiches agree as operators exactly when the pairs differ by a single real scalar:</p>
 <p>$$
-\alpha,\beta,\alpha',\beta' \neq 0 : \quad L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff \alpha' = \mu\alpha \text{ and } \beta' = \mu^{-1}\beta \text{ for some } \mu \in \mathbb{R}^\times .
+\boxed{\;\alpha,\beta,\alpha',\beta' \neq 0 : \quad L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff \alpha' = \mu\alpha \text{ and } \beta' = \mu^{-1}\beta \text{ for some } \mu \in \mathbb{R}^\times\;}.
 $$</p>
 <p><em>Proof.</em> The equality $L_\alpha R_\beta = 0$ says $\alpha\tilde q\beta = 0$ for every $\tilde q$; at $\tilde q = e_t$ this is $\alpha\beta = 0$, and in a division algebra a product vanishes exactly when a factor does, so $\alpha = 0$ or $\beta = 0$, and conversely. Assume now all four parameters nonzero and $\alpha\tilde q\beta = \alpha'\tilde q\beta'$ for every $\tilde q$. Multiply on the left by $\alpha^{-1}$ and put $\gamma = \alpha^{-1}\alpha'$, so that $\tilde q\beta = \gamma\tilde q\beta'$ for every $\tilde q$. At $\tilde q = e_t$ this gives $\beta = \gamma\beta'$, whence $\beta' = \gamma^{-1}\beta$; substituting back gives $(\tilde q\gamma - \gamma\tilde q)\beta' = 0$ for every $\tilde q$, and since $\beta' \neq 0$ the parameter $\gamma$ is central, that is $\gamma = \mu$ real and nonzero. Therefore $\alpha' = \alpha\gamma = \mu\alpha$ and $\beta' = \mu^{-1}\beta$. Conversely, if $\alpha' = \mu\alpha$ and $\beta' = \mu^{-1}\beta$ then $L_{\alpha'}R_{\beta'} = L_{\mu\alpha}R_{\mu^{-1}\beta} = L_\alpha R_\beta$, because the scalar is central.</p>
 <p><strong>Corollary (the monoid and the kernel).</strong> The family is a monoid under composition, with identity $T_{e_t,e_t} = \mathrm{id}$; the map $(\tilde q_3,\tilde q_4) \mapsto T_{\tilde q_3,\tilde q_4}$ is a homomorphism of monoids onto the family from the product of two opposite monoids, $(\mathbb{H}^{\mathrm{opp}})^2$ with the multiplication of the parameters in both places, and its kernel — the preimage of the identity — is the one-parameter group</p>
@@ -109,7 +109,7 @@ $$</p>
 <p>Each form of the space defines a transpose on the operators, and the two transposes of a sandwich are other sandwiches with the parameters conjugated and swapped.</p>
 <p><strong>Theorem (the transpose for the plain form).</strong> With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$, the transpose of a two-sided operator is</p>
 <p>$$
-T_{\tilde q_3,\tilde q_4}^{\sim} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}} = L_{\tilde q_4}R_{\tilde q_3^{\natural}} .
+\boxed{\;T_{\tilde q_3,\tilde q_4}^{\sim} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}} = L_{\tilde q_4}R_{\tilde q_3^{\natural}}\;}.
 $$</p>
 <p><em>Proof.</em> The transpose is characterised by $\langle T\tilde q_1,\tilde q_2\rangle = \langle\tilde q_1,T^{\sim}\tilde q_2\rangle$. For $T = T_{\tilde q_3,\tilde q_4}$,
 $$
@@ -118,7 +118,7 @@ $$
 by the cyclic invariance of the scalar part, and the last is $\langle\tilde q_1,\tilde q_4\tilde q_2\tilde q_3^{\natural}\rangle = \langle\tilde q_1,T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}\tilde q_2\rangle$, since $(\tilde q_4^{\natural})^{\natural}\tilde q_2\tilde q_3^{\natural} = \tilde q_4\tilde q_2\tilde q_3^{\natural}$.</p>
 <p><strong>Theorem (the transpose for the quaternionic form).</strong> With respect to the quaternionic form $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ of signature $(4,0)$, the transpose of a two-sided operator is</p>
 <p>$$
-T_{\tilde q_3,\tilde q_4}^{\dagger} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}} .
+\boxed{\;T_{\tilde q_3,\tilde q_4}^{\dagger} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}\;}.
 $$</p>
 <p><em>Proof.</em> The characterisation is $\langle T\tilde q_1,\tilde q_2\rangle_{\natural} = \langle\tilde q_1,T^{\dagger}\tilde q_2\rangle_{\natural}$, and
 $$
@@ -127,7 +127,7 @@ $$
 using that $(\tilde q_3\tilde q_2\tilde q_4^{\natural})^{\natural} = \tilde q_4\tilde q_2^{\natural}\tilde q_3^{\natural}$; the last is $\langle\tilde q_1,\tilde q_3\tilde q_2\tilde q_4^{\natural}\rangle_{\natural} = \langle\tilde q_1,T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}\tilde q_2\rangle_{\natural}$, since $(\tilde q_3^{\natural})^{\natural}\tilde q_2\tilde q_4^{\natural} = \tilde q_3\tilde q_2\tilde q_4^{\natural}$.</p>
 <p><strong>Corollary (the two transposes and the comparison).</strong> The plain transpose swaps the two parameters and conjugates them both, $T^{\sim}_{\tilde q_3,\tilde q_4} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}$; the quaternionic transpose keeps the two parameters in place and conjugates them both, $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$. For a nonzero sandwich, the two transposes coincide exactly when the two parameters are proportional over $\mathbb{R}$,</p>
 <p>$$
-\tilde q_3,\tilde q_4 \neq 0 : \quad T^{\sim}_{\tilde q_3,\tilde q_4} = T^{\dagger}_{\tilde q_3,\tilde q_4} \iff \tilde q_4 \in \mathbb{R}\tilde q_3 ,
+\boxed{\;\tilde q_3,\tilde q_4 \neq 0 : \quad T^{\sim}_{\tilde q_3,\tilde q_4} = T^{\dagger}_{\tilde q_3,\tilde q_4} \iff \tilde q_4 \in \mathbb{R}\tilde q_3\;},
 $$</p>
 <p>which includes the diagonal case $\tilde q_3 = \tilde q_4$ but is strictly wider; and a nonzero sandwich is self-transpose for the plain form exactly when the second parameter is a real multiple of the conjugate of the first,</p>
 <p>$$

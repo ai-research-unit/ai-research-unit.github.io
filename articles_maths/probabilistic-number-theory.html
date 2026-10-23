@@ -102,14 +102,14 @@ $$</p>
 <h3 id="the-hardyramanujan-theorem">The Hardy–Ramanujan Theorem</h3>
 <p><strong>Theorem (Hardy–Ramanujan).</strong> For almost all $n$, the number of distinct prime factors satisfies</p>
 <p>$$
-\omega(n) = \log\log n + O\!\left(\sqrt{\log\log n}\right),
+\boxed{\;\omega(n) = \log\log n + O\!\left(\sqrt{\log\log n}\right)\;},
 $$</p>
 <p>and more precisely $|\omega(n) - \log\log n| \leq (1+\varepsilon)\sqrt{2\log\log n\log\log\log n}$ for almost all $n$ and every $\varepsilon > 0$; the function $\log\log n$ is the <strong>normal order</strong> of $\omega(n)$.</p>
 <p>The theorem is the first statement of the regularity of $\omega$: although $\omega(n)$ takes the values $0, 1, 2, \dots$ on a set of positive density (the primes have $\omega = 1$, and a positive proportion of $n$ is prime-free of a prescribed set), the overwhelming majority of integers have about $\log\log n$ prime factors. The proof is the estimate of the moments of the model: the mean of $\omega$ is $\sum_{p\leq n}1/p = \log\log n + O(1)$ by the Mertens theorem, and the variance is the same quantity, so Chebyshev's inequality — the second moment method of <em>The Probabilistic Method</em> — gives the concentration.</p>
 <h3 id="the-erdoskac-theorem">The Erdős–Kac Theorem</h3>
 <p><strong>Theorem (Erdős–Kac).</strong> For $n$ chosen uniformly at random from $\{1,\dots,N\}$,</p>
 <p>$$
-\frac{\omega(n) - \log\log N}{\sqrt{\log\log N}} \Longrightarrow N(0,1) \qquad \text{as } N\to\infty,
+\boxed{\;\frac{\omega(n) - \log\log N}{\sqrt{\log\log N}} \Longrightarrow N(0,1) \qquad \text{as } N\to\infty\;},
 $$</p>
 <p>convergence in distribution to the standard Gaussian.</p>
 <p><em>Proof (sketch).</em> Write $\omega = \sum_{p\leq N}\mathbf{1}_{p\mid n}$, split the primes into the small ones $p \leq N^{1/\log\log N}$ and the large ones, and let $Y = \sum_{p\leq N^{1/\log\log N}}\mathbf{1}_{p\mid n}$ be the small-prime part. By the fundamental lemma the small-prime indicators behave as independent Bernoulli$(1/p)$ variables, so $Y$ is a sum of independent bounded variables with mean $\mu = \sum_{p\leq N^{1/\log\log N}}1/p = \log\log N + O(\log\log\log N)$ and variance $\mu - \sum1/p^2 = \log\log N + O(1)$; the Lindeberg–Feller central limit theorem of <em>Laws of Large Numbers and the Central Limit Theorem</em> applies, and $(Y - \log\log N)/\sqrt{\log\log N}$ is asymptotically Gaussian. The large-prime part $\omega - Y$ counts the primes $p > N^{1/\log\log N}$ dividing $n$: each contributes at most one, and the total number of such primes dividing $n$ is $O(\log\log\log N)$ for almost all $n$, so its variance is $o(\log\log N)$ and it is negligible after normalisation.</p>
@@ -118,7 +118,7 @@ $$</p>
 <h2 id="the-turankubilius-inequality-and-the-second-moment">The Turán–Kubilius Inequality and the Second Moment</h2>
 <p><strong>Theorem (Turán–Kubilius inequality).</strong> There is an absolute constant $C$ such that for every complex additive function $f$ and every $N \geq 2$,</p>
 <p>$$
-\sum_{n\leq N}\left|f(n) - \sum_{p\leq N}\frac{f(p)}{p}\right|^2 \leq C\,N\sum_{p\leq N}\frac{|f(p)|^2}{p}.
+\boxed{\;\sum_{n\leq N}\left|f(n) - \sum_{p\leq N}\frac{f(p)}{p}\right|^2 \leq C\,N\sum_{p\leq N}\frac{|f(p)|^2}{p}\;}.
 $$</p>
 <p><em>Proof (sketch).</em> Write the averaged function $A_N = \sum_{p\leq N}f(p)/p$ and expand the square as a double sum over $n \leq N$. The diagonal $(p = q)$ contributes $\sum_{p\leq N}|f(p)|^2\sum_{n\leq N}\mathbf{1}_{p\mid n} \leq N\sum_p|f(p)|^2/p$, which is the right-hand side; the off-diagonal is estimated by the Chinese remainder theorem, $\sum_{n\leq N}\mathbf{1}_{p\mid n,q\mid n} = N/(pq) + O(1)$, with the summation grouped according to the size of $pq$, and the resulting error is absorbed in the constant $C$. The inequality is the standard one; the point of the sketch is that the main term is the sum of the variances of the prime contributions.</p>
 <p>The inequality is the variance estimate of the subject: it says that the second moment of an additive function about its mean is controlled by the sum of the variances of the prime contributions, and it is the arithmetic form of the law of large numbers. Applied to $f = \omega$, it gives $\sum_{n\leq N}(\omega(n)-\log\log N)^2 = O(N\log\log N)$, which is the concentration behind the Hardy–Ramanujan theorem; applied to $f(n) = \sum_{p\mid n}f(p)$ for a general additive $f$, it reduces the problem of the distribution of $f$ to the distribution of the model sum $\sum_pf(p)X_p$, which is a sum of independent variables and falls under the Lindeberg–Feller criterion.</p>

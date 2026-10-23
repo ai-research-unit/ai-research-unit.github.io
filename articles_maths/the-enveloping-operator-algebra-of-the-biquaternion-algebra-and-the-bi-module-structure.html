@@ -100,8 +100,8 @@ $$</p>
 <p>So the map $L\colon a\mapsto L_a$ is an algebra <strong>homomorphism</strong> of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra <strong>anti</strong>-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the two-sided operator $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ of the corpus, decomposed into its two factors.</p>
 <p><strong>Theorem (the double centraliser).</strong> The commutant of the left multiplications is exactly the right multiplications, and likewise with the roles exchanged:</p>
 <p>$$
-\{T\in\operatorname{End}_{\mathbb C}(\mathbb B) : T\,L_a=L_a\,T\ \ \forall a\}=\{R_b\}_{b\in\mathbb B},\qquad
-\{T : T\,R_b=R_b\,T\ \ \forall b\}=\{L_a\}_{a\in\mathbb B},
+\boxed{\; \{T\in\operatorname{End}_{\mathbb C}(\mathbb B) : T\,L_a=L_a\,T\ \ \forall a\}=\{R_b\}_{b\in\mathbb B},\qquad
+\{T : T\,R_b=R_b\,T\ \ \forall b\}=\{L_a\}_{a\in\mathbb B} \;},
 $$</p>
 <p>and the bicommutant is the centre, $\{T: T\,\text{commutes with all }L_a\text{ and all }R_b\}=\mathbb C_{\mathbb B}=\mathbb C\cdot\mathbb 1$. Consequently $L_{\mathbb B}$ and $R_{\mathbb B}$ are mutual commutants, each of complex dimension four.</p>
 <p><em>Proof.</em> This is the double centraliser of <em>Modules over the Biquaternion Algebra</em> and <em>The Operators on an Algebra</em>, specialised to the regular module: $\operatorname{End}_{\mathbb B}(\mathbb B)=R_{\mathbb B}\cong\mathbb B^{\mathrm{opp}}$, and the commutant of $R_{\mathbb B}$ is $\operatorname{End}_{\mathbb B^{\mathrm{opp}}}(\mathbb B)=L_{\mathbb B}$; the operators commuting with both are the $\mathbb B$-$\mathbb B$-linear endomorphisms of $\mathbb B$, which are the scalars, since $\mathbb B$ is a simple algebra with centre $\mathbb C$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>So the left and right multiplications are the two "one-sided" elements of the enveloping algebra, obtained by putting the unit in the unused factor. In particular the assignment $a\mapsto a\otimes\mathbb 1^{\mathrm{opp}}$ is an algebra homomorphism $\mathbb B\to\mathbb B^{\mathrm e}$, and $a\mapsto\mathbb 1\otimes a^{\mathrm{opp}}$ is one $\mathbb B^{\mathrm{opp}}\to\mathbb B^{\mathrm e}$, and their images commute — the abstract form of $L_aR_b=R_bL_a$.</p>
 <p><strong>Theorem (the enveloping algebra is the endomorphism algebra).</strong> The sandwich action defines an isomorphism of $\mathbb C$-algebras</p>
 <p>$$
-\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb C}(\mathbb B),\qquad \tilde Q_1\otimes \tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto \tilde Q_1\tilde Q_3\tilde Q_2\bigr),
+\boxed{\; \mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb C}(\mathbb B),\qquad \tilde Q_1\otimes \tilde Q_2^{\mathrm{opp}}\mapsto\bigl(\tilde Q_3\mapsto \tilde Q_1\tilde Q_3\tilde Q_2\bigr) \;},
 $$</p>
 <p>so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mathbb B^{\mathrm e}$ on $\mathbb B$ is faithful and exhausts all $\mathbb C$-linear operators on $\mathbb B$.</p>
 <p><em>Proof.</em> Both sides have complex dimension $16$, so it suffices that the map is injective. Let $\sum_i \tilde Q_{1,i}\otimes \tilde Q_{2,i}^{\mathrm{opp}}$ act as zero: $\sum_i \tilde Q_{1,i} \tilde Q_3 \tilde Q_{2,i}=0$ for all $\tilde Q_3\in\mathbb B$. Taking $\tilde Q_3$ running over a basis of matrix units $E_{ab}$ of $\mathbb B\cong M_2(\mathbb C)$ and using the independence of the $E_{ab}$ gives $\sum_i \tilde Q_{1,i}\otimes \tilde Q_{2,i}^{\mathrm{opp}}=0$, so the kernel is trivial. A linear injection between spaces of equal finite dimension is an isomorphism. The endomorphism algebra of the four-dimensional complex space $\mathbb B$ is $M_4(\mathbb C)$.</p>
@@ -147,7 +147,7 @@ $$</p>
 <p>by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>, §<em>The Biquaternion Case</em>.</p>
 <p>The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to this complete orthogonal family has sixteen corners, and each is one-dimensional over $\mathbb{C}$:</p>
 <p>$$
-E_{ik}\mathbb{B}^{\mathrm e}E_{jl} = (\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}} = \mathbb{C}\,\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
+\boxed{\; E_{ik}\mathbb{B}^{\mathrm e}E_{jl} = (\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}} = \mathbb{C}\,\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr) \;},
 $$</p>
 <p>where $\Lambda_{ij}$ is the basis element of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is, $\tilde\Pi_1, \vec\Upsilon_x, \vec\Upsilon_y, \tilde\Pi_2$ for $(i,j) = (1,1),(1,2),(2,1),(2,2)$. The corners multiply by the rule</p>
 <p>$$
@@ -178,7 +178,7 @@ $$</p>
 <p>which is the coordinate form of $L_a=a\otimes\mathbb 1^{\mathrm{opp}}$ and $R_b=\mathbb 1\otimes b^{\mathrm{opp}}$.</p>
 <p><strong>Proposition (the composition rule).</strong> For all $a,b,c,d\in\mathbb B$,</p>
 <p>$$
-(a[\,]b)\circ(c[\,]d)=(ac)[\,](db) .
+\boxed{\; (a[\,]b)\circ(c[\,]d)=(ac)[\,](db) \;}.
 $$</p>
 <p><em>Proof.</em> $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde Q_3)\bigr)=a\,c\,\tilde Q_3\,d\,b=(ac)\tilde Q_3(db)$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.</p>
 <p><strong>Remark (the regular operators).</strong> The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>.</p>

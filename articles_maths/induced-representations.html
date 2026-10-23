@@ -101,7 +101,7 @@ $$</p>
 <h2 id="frobenius-reciprocity">Frobenius Reciprocity</h2>
 <p><strong>Theorem (Frobenius reciprocity).</strong> Let $H\leq G$, let $W$ be a $k[H]$-module and $V$ a $k[G]$-module. Then there are natural isomorphisms of $k$-modules</p>
 <p>$$
-\operatorname{Hom}_{k[G]}\bigl(\operatorname{Ind}_H^GW,V\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(W,\operatorname{Res}_H^GV\bigr), \qquad \operatorname{Hom}_{k[G]}\bigl(V,\operatorname{Coind}_H^GW\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(\operatorname{Res}_H^GV,W\bigr),
+\boxed{\;\operatorname{Hom}_{k[G]}\bigl(\operatorname{Ind}_H^GW,V\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(W,\operatorname{Res}_H^GV\bigr), \qquad \operatorname{Hom}_{k[G]}\bigl(V,\operatorname{Coind}_H^GW\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(\operatorname{Res}_H^GV,W\bigr)\;},
 $$</p>
 <p>the <strong>adjunction</strong> between the induction and the restriction of scalars.</p>
 <p><em>Proof.</em> This is the tensor-hom adjunction of <em>Change of Rings</em> for the ring homomorphism $k[H]\to k[G]$: the extension of scalars along a ring map is left adjoint to the restriction, and the tensor product over $k[H]$ with $k[G]$ is the extension functor.</p>
@@ -116,7 +116,7 @@ $$</p>
 <h2 id="the-character-formula">The Character Formula</h2>
 <p><strong>Theorem (the induced character formula).</strong> Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible, let $H\leq G$, let $W$ be a $k[H]$-module with character $\chi$ and let $\chi^{\mathrm{ind}} = \operatorname{Ind}_H^G\chi$ be the character of the induced module. Then for $g\in G$</p>
 <p>$$
-\chi^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr),
+\boxed{\;\chi^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr)\;},
 $$</p>
 <p>the second sum being taken over a set $T$ of left coset representatives of $H$ in $G$; in particular $\chi^{\mathrm{ind}}(g) = 0$ unless $g$ is conjugate to an element of $H$, and $\chi^{\mathrm{ind}}(1) = [G:H]\chi(1)$.</p>
 <p><em>Proof.</em> The module $k[G]\otimes_{k[H]}W$ has the $k$-basis $x\otimes w$ with $x\in T$ running over a transversal, and the trace of $g$ on this module is the sum over the $x$ for which $g$ maps the summand $x\otimes W$ to itself; the condition for that is $x^{-1}gx\in H$, and on such a summand the action of $g$ on $x\otimes W$ corresponds to the action of $x^{-1}gx$ on $W$, whose trace is $\chi(x^{-1}gx)$. This gives the second display, and the first follows since each $h\in H$ with $x^{-1}gx\in H$ contributes the same term over the $\lvert H\rvert$ elements of the coset.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $H,K\leq G$. The <strong>double cosets</strong> $HxK = \{hxk\}$ partition $G$ into disjoint subsets, $G = \bigsqcup_{x\in S}HxK$ with $S$ a set of representatives, and for $x\in S$ the intersection $H\cap xKx^{-1}$ is a subgroup of $H$.</p>
 <p><strong>Theorem (Mackey).</strong> Let $H,K\leq G$, let $W$ be a $k[H]$-module and let $W^x$ be the $k[H\cap xKx^{-1}]$-module obtained from $W$ by the conjugation $h\mapsto x^{-1}hx$ followed by restriction to $H\cap xKx^{-1}$. Then there is an isomorphism of $k[K]$-modules</p>
 <p>$$
-\operatorname{Res}_K^G\operatorname{Ind}_H^GW \;\cong\; \bigoplus_{x\in S}\operatorname{Ind}_{H\cap xKx^{-1}}^{K}\bigl(W^x\bigr),
+\boxed{\;\operatorname{Res}_K^G\operatorname{Ind}_H^GW \;\cong\; \bigoplus_{x\in S}\operatorname{Ind}_{H\cap xKx^{-1}}^{K}\bigl(W^x\bigr)\;},
 $$</p>
 <p>the sum being over a set of double coset representatives of $H\backslash G/K$.</p>
 <p><em>Proof (outline).</em> The double coset decomposition refines the coset decomposition of $k[G]$ as a right $k[H]$-module, and the summand $k[HxK]\otimes_{k[H]}W$ is a $k[K]$-module induced from the stabiliser of the coset: the elements of $k[HxK]$ are the $hxk$, and the action of $K$ on the right leads to the intersection group $H\cap xKx^{-1}$ with the twisted module $W^x$. The details are the standard proof and are recorded in the references.</p>

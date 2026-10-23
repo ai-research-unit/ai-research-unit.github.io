@@ -86,7 +86,7 @@ $$</p>
 <h2 id="the-polar-decomposition">The Polar Decomposition</h2>
 <p><strong>Theorem (polar decomposition).</strong> The closure $\bar S$ of the Tomita operator has the polar decomposition</p>
 <p>$$
-\bar S = J\,\Delta^{1/2}, \qquad \Delta = \bar S^{*}\bar S , \qquad J = \text{the modular conjugation},
+\boxed{\;\bar S = J\,\Delta^{1/2}, \qquad \Delta = \bar S^{*}\bar S , \qquad J = \text{the modular conjugation}\;},
 $$</p>
 <p>with $\Delta$ a positive definite self-adjoint operator and $J$ an antiunitary involution.</p>
 <p><strong>Proof.</strong> Each closed antilinear operator has a polar decomposition $\bar S = U|\bar S|$ with $|\bar S| = (\bar S^{*}\bar S)^{1/2}$ and $U$ an antiunitary partial isometry; the operator $|\bar S|$ is the positive square root of the positive self-adjoint $\bar S^{*}\bar S$, which exists by <em>Self-Adjoint Elements and the Positive Cone</em>; and $U$ is in fact antiunitary and involutive because $S^{2} = \mathrm{id}$ passes to the closure, forcing $J^{2} = \mathrm{id}$ and $\Delta = J\Delta^{-1}J$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h2 id="the-modular-conjugation-and-the-commutant">The Modular Conjugation and the Commutant</h2>
 <p><strong>Theorem (Tomita–Takesaki, the conjugation).</strong> With $J$ the modular conjugation of the pair $(\mathcal{M},\xi)$,</p>
 <p>$$
-J\,\mathcal{M}\,J = \mathcal{M}' , \qquad J\,\mathcal{M}'\,J = \mathcal{M} , \qquad J\Delta J = \Delta^{-1} , \qquad J\xi = \xi .
+\boxed{\;J\,\mathcal{M}\,J = \mathcal{M}' , \qquad J\,\mathcal{M}'\,J = \mathcal{M} , \qquad J\Delta J = \Delta^{-1} , \qquad J\xi = \xi\;} .
 $$</p>
 <p><strong>Proof.</strong> The statement $J\mathcal{M}J\subseteq\mathcal{M}'$ is read off the adjoint of $S$: $S^{*}$ has domain $\mathcal{M}'\xi$ and agrees with $S$ there, and $J = \bar S\Delta^{-1/2}$ on the dense set gives $JxJ$ commuting with $\mathcal{M}$; the reverse inclusion is the same statement applied to $\mathcal{M}'$, or the bicommutant theorem; the inversion of $\Delta$ is $J\Delta J = JS^{*}SJ = S S^{*}$; and $J\xi = \xi$ is the fact that $\xi$ is fixed by the conjugation of its own polar decomposition.</p>
 <p><strong>Corollary (the standard form).</strong> The quadruple $(\mathcal{M}, \mathcal{M}', H, J)$ is a <strong>standard form</strong>: the algebra acts, the commutant is its conjugate, the conjugation is an anti-isomorphism between them, the vector $\xi$ is cyclic and separating for both, and the positive cone $\mathcal{M}_{+}\xi$ is self-dual.</p>
@@ -112,7 +112,7 @@ $$</p>
 <h2 id="the-modular-group">The Modular Group</h2>
 <p><strong>Theorem (Tomita–Takesaki, the flow).</strong> With $\Delta$ the modular operator of the pair $(\mathcal{M},\xi)$, the family</p>
 <p>$$
-\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it},
+\boxed{\;\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it}\;},
 $$</p>
 <p>is a one-parameter group of automorphisms of $\mathcal{M}$, strongly continuous in the strong topology, and the vector $\xi$ satisfies the KMS condition for it: for all $x, y\in\mathcal{M}$ the function $F(t) = \langle\sigma_t(y)x\xi,\xi\rangle$ extends holomorphically to the strip $0<\mathrm{Im}\,z<1$ with boundary values</p>
 <p>$$

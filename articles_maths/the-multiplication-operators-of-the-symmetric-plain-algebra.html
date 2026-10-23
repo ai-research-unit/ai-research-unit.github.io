@@ -86,16 +86,16 @@ $$</p>
 <p>So the operator theory of the block is a theory of one operator to an element, and the left and right operators are not two families but one.</p>
 <h3 id="the-relation-to-the-plain-operators">The Relation to the Plain Operators</h3>
 <p><strong>Theorem.</strong> The multiplication operator of the block is <strong>half</strong> the sum of the two plain operators:</p>
-<p>$$
-L^{\bullet}_{\tilde Q_5}=\tfrac12\bigl(L_{\tilde Q_5}+R_{\tilde Q_5}\bigr),\qquad\text{equivalently}\qquad L_{\tilde Q_5}+R_{\tilde Q_5}=2L^{\bullet}_{\tilde Q_5}.
-$$</p>
+<p>$$ \boxed{\; L^{\bullet}_{\tilde Q_5}=\tfrac12\bigl(L_{\tilde Q_5}+R_{\tilde Q_5}\bigr),\qquad\text{equivalently}\qquad L_{\tilde Q_5}+R_{\tilde Q_5}=2L^{\bullet}_{\tilde Q_5} \;}. $$</p>
 <p><em>Proof.</em> $L^{\bullet}_{\tilde Q_5}\tilde Q=\tfrac12(\tilde Q_5\tilde Q+\tilde Q\tilde Q_5)=\tfrac12(L_{\tilde Q_5}+R_{\tilde Q_5})\tilde Q$.</p>
 <p><strong>Remark (the sum is twice the operator).</strong> The sum $L_{\tilde Q_5}+R_{\tilde Q_5}$ is the operator of the <strong>doubled</strong> product, $(L_{\tilde Q_5}+R_{\tilde Q_5})\tilde Q=\tilde Q_5\tilde Q+\tilde Q\tilde Q_5=2(\tilde Q_5\bullet\tilde Q)$, and it is twice the multiplication operator of the block. <strong>The identity between the operator of the block and the sum of the two plain operators carries the factor $\tfrac12$</strong>, and a statement without it would be off by two.</p>
 <h3 id="the-trace-the-determinant-and-the-rank">The Trace, the Determinant and the Rank</h3>
 <p><strong>Theorem.</strong> For every $\tilde Q_5$,</p>
 <p>$$
+\boxed{\;
 \operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=4Q_{5t},\qquad
-\det\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}.
+\det\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}
+\;}.
 $$</p>
 <p><em>Proof.</em> The trace is $\tfrac12\bigl(\operatorname{Tr}(L_{\tilde Q_5})+\operatorname{Tr}(R_{\tilde Q_5})\bigr)$, and the two plain operators have trace $4Q_{5t}$ each; the determinant is computed on the matrix of the operator. In the $2\times2$ model of <em>Introduction to the Symmetric Plain Algebra</em> the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde Q_5)M+M\mathsf{M}_2(\tilde Q_5))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde Q_5)$, with $\lambda_1\lambda_2=\langle\tilde Q_5\rangle_{\natural}$ and $\lambda_1+\lambda_2=2Q_{5t}$; the determinant is $\bigl(\tfrac12(\lambda_1+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_1+\lambda_2)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_2)\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}$.</p>
 <p><strong>Theorem (the rank).</strong> The multiplication operator of the block has rank four exactly when $\tilde Q_5$ has non-zero scalar part and non-zero generic norm,</p>
@@ -131,9 +131,7 @@ $$</p>
 <p><strong>Remark (the block is not associative).</strong> The failure of multiplicativity of the left regular representation is the operator form of the failure of associativity of the block: an associative multiplication would give $L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_1}=L^{\bullet}_{\tilde Q_5\tilde Q_1}$. <strong>The block is a Jordan algebra and not an associative one, and its left regular representation is not multiplicative</strong>; what survives is the Jordan identity of the next section.</p>
 <h2 id="the-associate-with-respect-to-the-trace-form">The Associate with Respect to the Trace Form</h2>
 <p><strong>Theorem.</strong> Every multiplication operator of the block is <strong>self-associate</strong> with respect to the trace form:</p>
-<p>$$
-\tau\bigl(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\bigr)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr),
-$$</p>
+<p>$$ \boxed{\; \tau\bigl(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\bigr)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr) \;}, $$</p>
 <p>so $(L^{\bullet}_{\tilde Q_5})^{\approx}=L^{\bullet}_{\tilde Q_5}$ in the mark $\approx$ of the associate of <em>The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples</em>.</p>
 <p><em>Proof.</em> By the definition of the operator and the invariance of the trace form,</p>
 <p>$$
@@ -177,9 +175,7 @@ D(\tilde Q_2\bullet\tilde Q_3)=D\tilde Q_2\bullet\tilde Q_3+\tilde Q_2\bullet D\
 $$</p>
 <p>They form a Lie algebra under the commutator, the <strong>derivation algebra</strong> $\operatorname{Der}(\mathbb{B},\bullet)$.</p>
 <p><strong>Theorem.</strong> Every derivation of the block is inner:</p>
-<p>$$
-\operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)=\bigl\{\tfrac14\operatorname{ad}_{\tilde Q_4}:\tilde Q_4\in[\mathbb{B},\mathbb{B}]\bigr\}\cong\mathfrak{sl}(2,\mathbb{C}),
-$$</p>
+<p>$$ \boxed{\; \operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)=\bigl\{\tfrac14\operatorname{ad}_{\tilde Q_4}:\tilde Q_4\in[\mathbb{B},\mathbb{B}]\bigr\}\cong\mathfrak{sl}(2,\mathbb{C}) \;}, $$</p>
 <p>of complex dimension three, and $[\mathbb{B},\mathbb{B}]$ is the trace-zero subspace of $\mathbb{B}$.</p>
 <p><em>Proof.</em> The inner derivations are $\tfrac14\operatorname{ad}_{\tilde Q_4}$ with $\tilde Q_4=[\tilde Q_5,\tilde Q_1]$ by the previous section, and $[\tilde Q_5,\tilde Q_1]$ ranges over the trace-zero subspace, because the commutator of two elements is always trace-zero and every trace-zero element is a commutator in this algebra. The derivation algebra contains the inner derivations, and a direct computation of the linear system $D(\tilde Q_2\bullet\tilde Q_3)=D\tilde Q_2\bullet\tilde Q_3+\tilde Q_2\bullet D\tilde Q_3$ on the sixteen basis pairs gives a space of complex dimension three; the two agree.</p>
 <p><strong>Remark (no outer derivations).</strong> <strong>The derivation algebra of the block is exactly its algebra of inner derivations</strong>, of dimension three, and it is isomorphic to the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ of the trace-zero elements under the commutator. The derivations of the <strong>plain</strong> product, by contrast, are the maps $\operatorname{ad}_{\tilde Q_4}$ and are all inner as well, but of dimension three over the trace-zero elements; the two derivation algebras are the same Lie algebra read on the two products, because $\tfrac14\operatorname{ad}_{\tilde Q_4}$ and $\operatorname{ad}_{\tilde Q_4}$ span the same three-dimensional space.</p>

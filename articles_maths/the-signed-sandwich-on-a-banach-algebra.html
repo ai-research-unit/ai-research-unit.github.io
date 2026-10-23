@@ -89,7 +89,7 @@ $$</p>
 <p>The set of signed sandwiches is $\Sigma^\alpha(A,A) = \{S_{a,b} : a,b \in A\}$.</p>
 <p><strong>Proposition (decomposition and continuity).</strong> For all $a,b \in A$,</p>
 <p>$$
-S_{a,b} = L_a\,\alpha\,R_{\alpha(b)} = T_{a,b}\,\alpha , \qquad \alpha = S_{1,1} ,
+\boxed{\;S_{a,b} = L_a\,\alpha\,R_{\alpha(b)} = T_{a,b}\,\alpha , \qquad \alpha = S_{1,1}\;} ,
 $$</p>
 <p>and $S_{a,b}$ is bounded and linear with</p>
 <p>$$
@@ -99,7 +99,7 @@ $$</p>
 <p><strong>Proof.</strong> $L_a\alpha R_{\alpha(b)}(x) = L_a(\alpha(x\alpha(b))) = L_a(\alpha(x)\alpha^2(b)) = a\alpha(x)b = S_{a,b}(x)$, and $T_{a,b}\alpha(x) = T_{a,b}(\alpha(x)) = a\alpha(x)b$. Boundedness is the composition of the bounded operators $L_a$, $\alpha$ and $R_{\alpha(b)}$, and the norm estimate is submultiplicativity with $\lVert L_a\rVert \leq \lVert a\rVert$, $\lVert R_{\alpha(b)}\rVert \leq \lVert\alpha(b)\rVert \leq \lVert\alpha\rVert\lVert b\rVert$. Bilinearity is the distributivity of the product.</p>
 <p><strong>Proposition (the multiplication table).</strong> For all $a,b,c,d \in A$,</p>
 <p>$$
-S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b} , \qquad T_{a,b}\,S_{c,d} = S_{ac,\,db} , \qquad S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b} .
+\boxed{\;S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b} , \qquad T_{a,b}\,S_{c,d} = S_{ac,\,db} , \qquad S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b}\;} .
 $$</p>
 <p>Hence the product of two signed sandwiches is an unsigned sandwich, and the signed sandwiches are closed under composition exactly when $\alpha = \mathrm{id}$.</p>
 <p><strong>Proof.</strong> Using $S_{p,q} = T_{p,q}\alpha$, $T_{p,q}T_{r,s} = T_{pr,sq}$ and $\alpha T_{r,s} = T_{\alpha(r),\alpha(s)}\alpha$: for the first, $S_{a,b}T_{c,d} = T_{a,b}\alpha T_{c,d} = T_{a,b}T_{\alpha(c),\alpha(d)}\alpha = T_{a\alpha(c),\alpha(d)b}\alpha = S_{a\alpha(c),\alpha(d)b}$; the second is $T_{a,b}T_{c,d}\alpha = T_{ac,db}\alpha = S_{ac,db}$; and the third is the first composed with the second, $S_{a,b}S_{c,d} = T_{a,b}\alpha T_{c,d}\alpha = T_{a\alpha(c),\alpha(d)b}\alpha^2 = T_{a\alpha(c),\alpha(d)b}$. When $\alpha = \mathrm{id}$ the signed and unsigned families coincide, and conversely $S_{a,b}S_{c,d}$ is signed for all $a,b,c,d$ only if $\alpha = \mathrm{id}$ on $A^2 = A$ on a unital algebra.</p>
@@ -129,7 +129,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>reflector</strong> is a unit $u \in A^\times$ with $u\,\alpha(u) \in Z(A)$, the centre; the <strong>reflection</strong> determined by $u$ is the signed conjugation $\rho_u = S_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$.</p>
 <p><strong>Theorem (the square and the involution case).</strong> For every unit $u$ the reflection is bounded, invertible, an algebra automorphism, and</p>
 <p>$$
-\rho_u^2 = c_{u\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)} ,
+\boxed{\;\rho_u^2 = c_{u\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)}\;} ,
 $$</p>
 <p>where $c_t(x) = txt^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector, $u\alpha(u) \in Z(A)$; its fixed set is the closed subalgebra $\{x : u\alpha(x) = xu\}$, and its norm satisfies $\lVert\rho_u\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$.</p>
 <p><strong>Proof.</strong> $\rho_u(\rho_u(x)) = u\alpha(u\alpha(x)u^{-1})u^{-1} = u\alpha(u)\alpha^2(x)\alpha(u)^{-1}u^{-1} = u\alpha(u)x(u\alpha(u))^{-1} = c_{u\alpha(u)}(x)$, using that $\alpha$ is an automorphism. An inner automorphism is the identity exactly when its conjugating element is central, so $\rho_u^2 = \mathrm{id}$ exactly for a reflector. The composite description is $\rho_u = c_u\alpha$ and $\alpha c_{\alpha(u)}$ by $\alpha c_t = c_{\alpha(t)}\alpha$. The fixed set is the solution set of the continuous equation $u\alpha(x) = xu$, hence closed. The norm bound is submultiplicativity.</p>

@@ -92,7 +92,7 @@
 <p><strong>Proof.</strong> A symmetric function of degree $d$ is determined by its coefficients on the monomial symmetric functions $m_\lambda$ with $\lambda \vdash d$, and $m_\lambda$ has coefficient $1$ on the monomial $x^\lambda$ and $0$ on $x^\mu$ for partitions $\mu$ dominating $\lambda$ with $\mu \neq \lambda$; hence the $m_\lambda$ are independent and span. That $\{e_\lambda\}$ and $\{h_\lambda\}$ are bases follows from the triangular relations below, and that $\{p_\lambda\}$ is a basis over $\mathbb{Q}$ from Newton's identities, which express the $e_k$ rationally in the $p_i$.</p>
 <p><strong>Theorem (fundamental theorem of symmetric polynomials).</strong> The symmetric polynomials in $n$ variables form a polynomial ring,</p>
 <p>$$
-K[x_1,\ldots,x_n]^{S_n} = K[e_1,\ldots,e_n],
+\boxed{\;K[x_1,\ldots,x_n]^{S_n} = K[e_1,\ldots,e_n]\;},
 $$</p>
 <p>with $e_1,\ldots,e_n$ algebraically independent; more generally the symmetric functions of bounded length form $\Lambda = K[e_1,e_2,\ldots]$, a polynomial ring in countably many variables. Hence the Hilbert series of the graded ring of symmetric polynomials in $n$ variables is</p>
 <p>$$
@@ -166,7 +166,7 @@ $$</p>
 <h3 id="the-jacobitrudi-identity-and-the-bialternant-formula">The Jacobi–Trudi Identity and the Bialternant Formula</h3>
 <p><strong>Theorem (Jacobi–Trudi).</strong> For every partition $\lambda$,</p>
 <p>$$
-s_\lambda = \det\bigl(h_{\lambda_i-i+j}\bigr)_{1\leq i,j\leq \ell(\lambda)} ,
+\boxed{\;s_\lambda = \det\bigl(h_{\lambda_i-i+j}\bigr)_{1\leq i,j\leq \ell(\lambda)}\;} ,
 $$</p>
 <p>and dually $s_\lambda = \det(e_{\lambda'_i-i+j})$.</p>
 <p><strong>Proof sketch.</strong> The Lindström–Gessel–Viennot involution shows that the determinant counts the families of nonintersecting lattice paths that correspond to semistandard tableaux of shape $\lambda$, the sign of a permuted family being exactly the determinant's sign.</p>
@@ -192,7 +192,7 @@ $$</p>
 <h3 id="cauchys-identity-and-specialisations">Cauchy's Identity and Specialisations</h3>
 <p><strong>Theorem (Cauchy identity).</strong> In the completion of $\Lambda\otimes\Lambda$, or equivalently as an identity of formal power series in two families of variables,</p>
 <p>$$
-\sum_{\lambda}s_\lambda(x)\,s_\lambda(y) = \prod_{i,j}\frac{1}{1-x_iy_j},
+\boxed{\;\sum_{\lambda}s_\lambda(x)\,s_\lambda(y) = \prod_{i,j}\frac{1}{1-x_iy_j}\;},
 $$</p>
 <p>the sum over all partitions $\lambda$, and the <strong>dual Cauchy identity</strong> reads</p>
 <p>$$

@@ -87,13 +87,13 @@ $$</p>
 <p><strong>Proof.</strong> The sum of two double centralisers is a double centraliser, and the product $(L_1L_2,R_2R_1)$ is one: $L_1L_2(ab) = L_1(L_2(a)b) = L_1L_2(a)b$, $R_2R_1(ab) = aR_2R_1(b)$, and $aL_1L_2(b) = aL_1(L_2(b))$ while $R_2R_1(a)b = R_2(R_1(a))b$; the two agree by the centralising relations applied twice. Associativity is the associativity of composition, and $(\mathrm{id},\mathrm{id})$ is the identity. The components determine each other when $A^2 = A$ because $aL(b) = R(a)b$ for all $a,b$ forces $L$ to determine $R$ on the ideal $A^2$ and $R$ to determine $L$.</p>
 <p><strong>Theorem ($M(A)$ is a Banach algebra).</strong> Give $M(A)$ the norm</p>
 <p>$$
-\lVert(L,R)\rVert = \max\{\lVert L\rVert,\lVert R\rVert\} ,
+\boxed{\;\lVert(L,R)\rVert = \max\{\lVert L\rVert,\lVert R\rVert\}\;} ,
 $$</p>
 <p>where $\lVert L\rVert,\lVert R\rVert$ are the operator norms. Then $M(A)$ is a unital Banach algebra under the product above, the maps $(L,R) \mapsto L$ and $(L,R) \mapsto R$ are contractions, and $\lVert(L,R)\rVert = \lVert L\rVert = \lVert R\rVert$ on the double centralisers of a faithful algebra.</p>
 <p><strong>Proof.</strong> The norm is a norm because it is the max of two norms, and it is submultiplicative: $\lVert L_1L_2\rVert \leq \lVert L_1\rVert\lVert L_2\rVert$ and $\lVert R_2R_1\rVert \leq \lVert R_2\rVert\lVert R_1\rVert$, so $\lVert(L_1,R_1)(L_2,R_2)\rVert \leq \lVert(L_1,R_1)\rVert\lVert(L_2,R_2)\rVert$. Completeness: a Cauchy sequence of double centralisers has Cauchy components in the complete spaces $B(A)$, with limits $L,R$; the defining relations pass to the limit by continuity of the products, so the limit is a double centraliser, and the norm converges. The identity has norm one. The equality of the norms on a faithful algebra is the standard consequence of $aL(b) = R(a)b$.</p>
 <p><strong>Proposition (the canonical embedding).</strong> The map</p>
 <p>$$
-\iota : A \longrightarrow M(A) , \qquad \iota(a) = (L_a,R_a) ,
+\boxed{\;\iota : A \longrightarrow M(A) , \qquad \iota(a) = (L_a,R_a)\;} ,
 $$</p>
 <p>is an isometric algebra homomorphism when $A$ is unital and a bounded algebra homomorphism in general, with image $\iota(A)$ a two-sided ideal of $M(A)$; it is injective on a faithful algebra and, in particular, on a unital one. The identity of $M(A)$ lies in $\iota(A)$ exactly when $A$ is unital, and then $\iota$ is onto.</p>
 <p><strong>Proof.</strong> $(L_a,R_a)$ is a double centraliser by <em>Operators on a Banach Algebra</em>, and $\iota(ab) = (L_{ab},R_{ab}) = (L_aL_b,R_bR_a) = \iota(a)\iota(b)$ by the composition laws, so $\iota$ is a homomorphism. On a unital algebra $\lVert L_a\rVert = \lVert R_a\rVert = \lVert a\rVert$, giving the isometry, and $\iota$ is onto by the unital identification of the multipliers. That $\iota(A)$ is an ideal: for a double centraliser $(L,R)$ and $a \in A$, $(L,R)(L_a,R_a) = (LL_a, R_aR)$, and $LL_a = L_{L(a)}$, $R_aR = R_{R(a)}$ by the multiplier identities, so the product lies in $\iota(A)$, and likewise on the left.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proof.</strong> $\iota(A)$ is an ideal by the proposition, and it is essential because $(L,R)\iota(a) = 0$ for all $a$ gives $(LL_a, R_aR) = 0$, so $LL_a = 0$ for all $a$ and $L = 0$ on $A^2 = A$, that is $L = 0$; then $R = 0$ by the centralising relation on a faithful algebra. The unit is $(\mathrm{id},\mathrm{id})$.</p>
 <p><strong>Theorem (the multiplier algebra as the double centraliser algebra).</strong> Let $A$ be a unital Banach algebra and let $\lambda(A)$ and $\rho(A)$ be the two regular representations in $B(A)$. Then the double centraliser algebra of the pair $(\lambda(A),\rho(A))$ is $\lambda(A)' = \rho(A)$ and $\rho(A)' = \lambda(A)$, and $M(A) = \iota(A)$. In the non-unital case, if the algebra is faithful and has a bounded approximate identity, then</p>
 <p>$$
-M(A) \cong \{\,T \in B(A) : T\lambda(A) \subseteq \lambda(A),\ \lambda(A)T \subseteq \lambda(A),\ T\rho(A) \subseteq \rho(A),\ \rho(A)T \subseteq \rho(A)\,\} ,
+\boxed{\;M(A) \cong \{\,T \in B(A) : T\lambda(A) \subseteq \lambda(A),\ \lambda(A)T \subseteq \lambda(A),\ T\rho(A) \subseteq \rho(A),\ \rho(A)T \subseteq \rho(A)\,\}\;} ,
 $$</p>
 <p>the operators normalising both regular representations, and the isomorphism pairs $T$ with the double centraliser of the two inclusions.</p>
 <p><strong>Proof.</strong> The centraliser identities in the unital case are <em>Left and Right Multiplication in a Banach Algebra</em>, and the identification with $\iota(A)$ is the corollary above. In the non-unital case a double centraliser $(L,R)$ defines, through the inclusions $L\lambda(a) = \lambda(L(a))$ and $\rho(a)R = \rho(R(a))$, an operator normalising both families, and conversely such an operator gives a double centraliser by its actions; the correspondence is bijective on a faithful algebra with an approximate identity.</p>

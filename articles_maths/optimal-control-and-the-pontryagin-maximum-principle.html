@@ -104,7 +104,7 @@ $$</p>
 <h3 id="statement-of-the-principle">Statement of the Principle</h3>
 <p><strong>Theorem (Pontryagin maximum principle, normal form).</strong> Suppose that $\Omega$ is compact, that $f$ is continuous in $(u,t)$ and of class $C^1$ in $x$ with a bound on $\partial/\partial x f$, and that $L$ and $\varphi$ are of class $C^1$ in $x$. Let $(x^*,u^*)$ be optimal for the problem with $x(t_0)=x_0$ fixed, $T$ fixed and $x(T)$ free. Then there is an absolutely continuous $n : [t_0,T]\to\mathbb{R}^n$ such that, for almost every $t$,</p>
 <p>$$
-\left(dx/dt\right)^{*} = \frac{\partial H}{\partial n}, \qquad \,dn/dt = -\frac{\partial H}{\partial x},
+\boxed{\;\left(dx/dt\right)^{*} = \frac{\partial H}{\partial n}, \qquad \,dn/dt = -\frac{\partial H}{\partial x}\;},
 $$</p>
 <p>the second equation being read along $(x^*,u^*,n)$, and such that $u^*(t)$ minimises the function $u\mapsto H(x^*(t),u,n(t),t)$ over $\Omega$ at almost every $t$. At the terminal time,</p>
 <p>$$
@@ -154,7 +154,7 @@ u^*(t) = -D^{-1}B^{\mathsf T}n(t) = -D^{-1}B^{\mathsf T}S(t)\,x^*(t),
 $$</p>
 <p>where $S$ is the symmetric solution on $[t_0,T]$ of the <strong>matrix Riccati equation</strong></p>
 <p>$$
-dS/dt = -C - A^{\mathsf T}S - SA + SBD^{-1}B^{\mathsf T}S , \qquad S(T) = E ,
+\boxed{\;dS/dt = -C - A^{\mathsf T}S - SA + SBD^{-1}B^{\mathsf T}S , \qquad S(T) = E\;} ,
 $$</p>
 <p>which the hypotheses of the theorem ensure to exist on the whole interval, while the scalar instance below shows how a solution can fail to. The costate system is $dx/dt = Ax - BD^{-1}B^{\mathsf T}Sx$, $dn/dt = -Cx - A^{\mathsf T}n$.</p>
 <p><em>Proof.</em> The control Hamiltonian is $H = \tfrac12x^{\mathsf T}Cx+\tfrac12u^{\mathsf T}Du+\langle n,Ax+Bu\rangle$, and $\partial/\partial u H = Du + B^{\mathsf T}n$ vanishes at $u=-D^{-1}B^{\mathsf T}n$; the Hessian $\partial^2/\partial u^2 H=D$ is positive definite, so the stationary point is the minimiser and the corollary above applies. The state equation becomes $dx/dt = Ax - BD^{-1}B^{\mathsf T}n$ and the costate equation is $dn/dt = -\partial/\partial x H = -Cx - A^{\mathsf T}n$. Put $n=Sx$ with $S$ symmetric; differentiating gives</p>
@@ -216,7 +216,7 @@ $$</p>
 <h3 id="the-equation-and-the-verification-theorem">The Equation and the Verification Theorem</h3>
 <p><strong>Theorem (Hamilton–Jacobi–Bellman).</strong> Suppose $V$ is of class $C^1$ on $X\times(t_0,T)$. Then $V$ satisfies</p>
 <p>$$
-\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\xi,u,t) + \Bigl\langle \frac{\partial V}{\partial\xi}, f(\xi,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\xi,T)=\varphi(\xi).
+\boxed{\;\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\xi,u,t) + \Bigl\langle \frac{\partial V}{\partial\xi}, f(\xi,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\xi,T)=\varphi(\xi)\;}.
 $$</p>
 <p><em>Proof.</em> Take $\tau'=\tau+\varepsilon$ in Bellman's principle, let the control be constant on the short interval, and expand to first order in $\varepsilon$; dividing by $\varepsilon$ and using that an optimal control achieves the minimum gives the equation.</p>
 <p>The minimisation in the statement is over the control at the single point $(\xi,t)$, exactly as in the maximum principle, and the two are related by the identity</p>

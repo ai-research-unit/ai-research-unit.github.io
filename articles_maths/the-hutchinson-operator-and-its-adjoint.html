@@ -100,13 +100,13 @@ F(A) = \bigcup_{i=1}^N f_i(A) , \qquad A \in \mathcal{K}(X) .
 $$</p>
 <p><strong>Theorem (the contraction and the fixed point).</strong> Let $(X,d)$ be complete and let each $f_i$ be a contraction of ratio $r_i$, with $r = \max_i r_i \in [0,1)$. Then $F$ maps $\mathcal{K}(X)$ into itself, it is a contraction of ratio $r$,</p>
 <p>$$
-d_H\bigl(F(A), F(B)\bigr) \leq r\, d_H(A,B) \qquad (A, B \in \mathcal{K}(X)) ,
+\boxed{\;d_H\bigl(F(A), F(B)\bigr) \leq r\, d_H(A,B) \qquad (A, B \in \mathcal{K}(X))\;} ,
 $$</p>
 <p>and it has a unique fixed point $K \in \mathcal{K}(X)$, the <strong>attractor</strong> of the system. For every $A \in \mathcal{K}(X)$ the iterates $F^n(A)$ converge to $K$ with $d_H(F^n(A), K) \leq r^n (1-r)^{-1} d_H(A, F(A))$.</p>
 <p><strong>Proof sketch.</strong> The image of a compact set under a continuous map is compact, and the finite union of compact sets is compact, so $F$ maps $\mathcal{K}(X)$ into itself. The Hausdorff inequality follows from the pointwise inequality $d(f_i(a), f_i(b)) \leq r_i d(a,b)$ and the two supprema in the definition; the fixed point is the Banach theorem on the complete space $(\mathcal{K}(X),d_H)$, and the rate is the standard geometric bound. The construction of the attractor as the limit of the iterates of any compact set is that of the lead article <em>Fractal Geometry</em>; the operator form is what is read here.</p>
 <p><strong>Theorem (the collage theorem).</strong> For every $A \in \mathcal{K}(X)$,</p>
 <p>$$
-d_H(A, K) \leq \frac{1}{1-r}\, d_H\bigl(A, F(A)\bigr) .
+\boxed{\;d_H(A, K) \leq \frac{1}{1-r}\, d_H\bigl(A, F(A)\bigr)\;} .
 $$</p>
 <p><strong>Proof sketch.</strong> The triangle inequality in the Hausdorff metric and the contraction give $d_H(A,K) \leq d_H(A, F(A)) + r\, d_H(A, K)$, and the rearrangement gives the bound. The inequality is the quantitative form of the statement that a compact set which is nearly invariant under $F$ is near the attractor, and it is the operator statement used in the inverse problem of the fractal image compression.</p>
 <p><strong>Remark (what kind of operator $F$ is).</strong> The operator $F$ is <strong>union-additive</strong>, $F(A \cup B) = F(A) \cup F(B)$, and monotone, $A \subseteq B \Rightarrow F(A) \subseteq F(B)$; it is not additive over the union of the functions, and it is not linear. It is a nonlinear contraction, and the Banach theorem applies to it in its metric form; the fixed-point equation is the self-similarity $K = \bigcup_i f_i(K)$, which is the definition of the attractor.</p>
@@ -122,7 +122,7 @@ $$</p>
 <p>The last identity is the defining adjoint relation; it holds for every bounded continuous $\varphi$ and every finite measure $\mu$, and it says that $L$ is the transpose of $T$ under the duality pairing $\langle \varphi, \mu\rangle = \int \varphi\, d\mu$.</p>
 <p><strong>Theorem (the properties of the pair).</strong> <strong>(a)</strong> $T$ is a positive linear contraction of the space of the bounded continuous functions with the sup norm, of norm one, and it preserves the constants. <strong>(b)</strong> $L$ maps the probability measures into themselves, is continuous for the weak topology, and is a contraction of ratio $r$ for the <strong>Wasserstein</strong> metric $W_1$. <strong>(c)</strong> $L$ has a unique fixed point $\mu$ in the probability measures,</p>
 <p>$$
-\mu = \sum_{i=1}^N p_i\,(f_i)_\# \mu ,
+\boxed{\;\mu = \sum_{i=1}^N p_i\,(f_i)_\# \mu\;} ,
 $$</p>
 <p>the <strong>self-similar measure</strong> of the weights; it is the invariant measure of the random walk that applies the map $f_i$ with probability $p_i$, and its support is the attractor, $\operatorname{supp}\mu = K$.</p>
 <p><strong>Proof sketch.</strong> (a) the positivity is clear, the norm is at most one by $\sum p_i = 1$, and the constants are preserved. (b) the Wasserstein distance satisfies $W_1((f_i)_\#\mu, (f_i)_\#\nu) \leq r_i W_1(\mu,\nu)$ because the transportation cost is contracted by the map, so the average over $i$ gives the ratio $r$; the completeness of the Wasserstein space of the probability measures on a complete separable space is the theorem of <em>Measure Theory and Integration</em>. (c) the Banach theorem gives the unique fixed point; the support identity is the invariance of $\operatorname{supp}\mu$ under the averaged pushforward and the surjectivity of the union. The measure and its properties are those of <em>Fractal Analysis</em>'s <em>The Self-Similar Measure and the Invariant Measure</em>; the operator relation is what is stated here.</p>

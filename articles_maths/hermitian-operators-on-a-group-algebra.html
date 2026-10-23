@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-on-the-group-algebra">The Adjoint on the Group Algebra</h2>
 <p><strong>Theorem (the elementary adjoints).</strong> With respect to the Haar pairing the left convolution has adjoint</p>
 <p>$$
-(L_a)^* = L_{a^*} \qquad \text{for every } a\in\mathcal{A},
+\boxed{\;(L_a)^* = L_{a^*} \qquad \text{for every } a\in\mathcal{A}\;},
 $$</p>
 <p>and in the unimodular case the right convolution and the grade-involution operator satisfy</p>
 <p>$$
@@ -102,7 +102,7 @@ $$</p>
 <p>so on a unimodular group the missing conjugation is recovered by the complex conjugate, $J = \,{}^{*}\circ\vee$, the involution composed with the reflection; in the general case the modular factor enters $J$ through the involution.</p>
 <p><strong>Proposition (the two adjoints are conjugate by $J$).</strong> If $T^\dagger$ denotes the adjoint with respect to the bilinear pairing, then</p>
 <p>$$
-T^* = J\,T^\dagger\,J ,
+\boxed{\;T^* = J\,T^\dagger\,J\;} ,
 $$</p>
 <p>so the Haar-pairing adjoint is the bilinear-pairing adjoint conjugated by the complex conjugation $J$; for the elementary operators this is the passage $(L_a)^\dagger = L_{a^{-1}}$ to $(L_a)^* = L_{a^*}$, since $J L_{a^{-1}} J = L_{\overline{a^{-1}}} = L_{a^*}$ on a unimodular group.</p>
 <p><strong>Proof.</strong> For the general identity, $\langle f,JT^\dagger Jh\rangle = \int f\,\overline{JT^\dagger Jh} = \int f\,T^\dagger(\overline h) = \langle\!\langle f, T^\dagger(\overline h)\rangle\!\rangle = \langle\!\langle Tf,\overline h\rangle\!\rangle = \int Tf\,\overline h = \langle Tf,h\rangle$, using $J^2 = \mathrm{id}$ and $\overline{\overline{T^\dagger(\overline h)}} = T^\dagger(\overline h)$. The elementary case follows from $(L_a)^\dagger = L_{a^{-1}}$ and $JL_{a^{-1}}J = L_{\overline{a^{-1}}}$, with $\overline{a^{-1}}(x) = \overline{a(x^{-1})} = a^*(x)$ on a unimodular group.</p>
@@ -112,7 +112,7 @@ $$</p>
 <p><strong>Definition.</strong> An operator $T$ on $L^2(G)$ is <strong>Hermitian</strong> (self-adjoint) when $T^* = T$, <strong>skew-Hermitian</strong> when $T^* = -T$, <strong>unitary</strong> when $T^*T = TT^* = 1$, and <strong>positive</strong> when $T = S^*S$ for a bounded $S$; an element $f\in\mathcal{A}$ is <strong>Hermitian</strong> when $f^* = f$ and <strong>positive</strong> when $f = g^*\!*g$.</p>
 <p><strong>Theorem (the operator image of the Hermitian elements).</strong> The map $f\mapsto\lambda(f)$ carries the Hermitian elements onto the Hermitian operators in $\lambda(\mathcal{A})$ and the positive cone into the positive operators,</p>
 <p>$$
-f^* = f \iff \lambda(f)^* = \lambda(f), \qquad f\in\mathcal{A}^+ \implies \lambda(f)\geq0 ,
+\boxed{\;f^* = f \iff \lambda(f)^* = \lambda(f), \qquad f\in\mathcal{A}^+ \implies \lambda(f)\geq0\;} ,
 $$</p>
 <p>and it is a <code>*</code>-homomorphism; the Hermitian elements of $\mathcal{A}$ form the real subspace $\mathcal{A}_h$, the positive cone $\mathcal{A}^+$ is convex and proper, and $\lambda$ is an order-preserving isomorphism of the ordered <code>*</code>-algebra $\mathcal{A}$ onto its image.</p>
 <p><strong>Proof.</strong> By the corollary, $\lambda(f)^* = \lambda(f^*)$, so $\lambda(f)$ is Hermitian exactly when $\lambda(f) = \lambda(f^*)$, which is equivalent to $f = f^*$ because $\lambda$ is injective. If $f = g^*\!*g$ then $\lambda(f) = \lambda(g)^*\lambda(g)\geq0$. The statements about $\mathcal{A}_h$ and $\mathcal{A}^+$ are those of <em>The Group Algebra as an Involutive Algebra</em>; multiplicativity and injectivity of $\lambda$ give the isomorphism onto its image.</p>

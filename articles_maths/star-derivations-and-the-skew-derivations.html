@@ -75,7 +75,7 @@
 <h2 id="the-two-classes">The Two Classes</h2>
 <p><strong>Definition.</strong> A <strong>$\sigma$-derivation</strong> is an additive map $\delta : A\to A$ with</p>
 <p>$$
-\delta(ab) = \delta(a)\,b + \sigma(a)\,\delta(b) \qquad \text{for all } a, b \in A ;
+\boxed{\;\delta(ab) = \delta(a)\,b + \sigma(a)\,\delta(b) \qquad \text{for all } a, b \in A\;} ;
 $$</p>
 <p>when $\sigma = \mathrm{id}$ this is a derivation. A derivation $D$ is a <strong>star-derivation</strong> when</p>
 <p>$$
@@ -87,7 +87,7 @@ D(\sigma(a)) = -\sigma(D(a)) \quad \text{for all } a, \qquad \text{that is } D\s
 $$</p>
 <p><strong>Proposition (the decomposition).</strong> A derivation $D$ is a star-derivation exactly when $\sigma D\sigma = D$, and a skew derivation exactly when $\sigma D\sigma = -D$, where $\sigma D\sigma$ is the conjugate derivation $a \mapsto \sigma(D(\sigma(a)))$. Every derivation decomposes uniquely as</p>
 <p>$$
-D = D_+ + D_-, \qquad D_+ = \tfrac12(D+\sigma D\sigma), \quad D_- = \tfrac12(D-\sigma D\sigma),
+\boxed{\;D = D_+ + D_-, \qquad D_+ = \tfrac12(D+\sigma D\sigma), \quad D_- = \tfrac12(D-\sigma D\sigma)\;},
 $$</p>
 <p>with $D_+$ a star-derivation and $D_-$ a skew derivation.</p>
 <p><strong>Proof.</strong> $\sigma D\sigma$ is additive and satisfies the Leibniz rule because $\sigma$ is an anti-automorphism: $\sigma D\sigma(ab) = \sigma D(\sigma(b)\sigma(a)) = \sigma(D\sigma(b)\sigma(a)+\sigma(b)D\sigma(a)) = \sigma(D\sigma(b))\,\sigma(\sigma(a))+\sigma(\sigma(b))\,\sigma(D\sigma(a)) = \sigma D\sigma(b)\,a + b\,\sigma D\sigma(a)$. A derivation $D$ commutes with $\sigma$ exactly when $\sigma D\sigma = D$ and anticommutes exactly when $\sigma D\sigma = -D$; the two projections are computations with $\sigma D\sigma$ and $\sigma^2 = \mathrm{id}$, and uniqueness is the invertibility of $2$.</p>
@@ -96,7 +96,7 @@ $$</p>
 <h2 id="the-inner-derivations">The Inner Derivations</h2>
 <p><strong>Theorem.</strong> For $a \in A$ let $D_a$ be the inner derivation $D_a(x) = ax-xa$. Then $D_a$ is a star-derivation exactly when $a+\sigma(a)$ is central, and a skew derivation exactly when $a-\sigma(a)$ is central:</p>
 <p>$$
-D_a\sigma = \sigma D_a \iff a+\sigma(a)\in Z(A), \qquad D_a\sigma = -\sigma D_a \iff a-\sigma(a)\in Z(A).
+\boxed{\;D_a\sigma = \sigma D_a \iff a+\sigma(a)\in Z(A), \qquad D_a\sigma = -\sigma D_a \iff a-\sigma(a)\in Z(A)\;}.
 $$</p>
 <p>In particular a central element gives the zero derivation, a <strong>symmetric</strong> element gives a <strong>skew</strong> derivation, and a <strong>skew</strong> element gives a <strong>star</strong>-derivation; for a central element both conditions hold and $D_a = 0$.</p>
 <p><strong>Proof.</strong> $\sigma(D_a x) = \sigma(ax-xa) = \sigma(x)\sigma(a)-\sigma(a)\sigma(x)$ and $D_a(\sigma(x)) = a\sigma(x)-\sigma(x)a$. The two agree for all $x$ exactly when $\sigma(x)\sigma(a)+a \sigma(x) = \sigma(a)\sigma(x)+\sigma(x)a$ for all $x$ — the transposition of the equality $\sigma(x)(\sigma(a)+a) = (a+\sigma(a))\sigma(x)$ for all $x$ — which is the centrality of $a+\sigma(a)$. The skew case is the same computation with the sign.</p>

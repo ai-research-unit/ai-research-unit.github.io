@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
 <p><strong>Theorem (the adjoint).</strong> For every $U\in B(H)$ the signed left multiplication is bounded on $S_2(H)$ and</p>
 <p>$$
-(\ell_U)^*=L_{\alpha(U^*)}\circ\alpha=\ell_{\alpha(U^*)},\qquad (\ell_U)^*(T)=\alpha(U^*)\,\alpha(T),
+\boxed{\;(\ell_U)^*=L_{\alpha(U^*)}\circ\alpha=\ell_{\alpha(U^*)},\qquad (\ell_U)^*(T)=\alpha(U^*)\,\alpha(T)\;},
 $$</p>
 <p>so the adjoint of a signed left multiplication is the signed left multiplication by the $\alpha$-adjoint parameter; the adjoint of the signed right multiplication is, by the same computation, $(\varrho_V)^*=\varrho_{\alpha(V^*)}$.</p>
 <p><em>Proof.</em> Write $\ell_U=L_U\alpha$; the adjoint of a composite reverses the order, $(\ell_U)^*=\alpha^*L_U^*$, the grade involution is self-adjoint for the Hilbert–Schmidt form, $\alpha^*=\alpha$, and $L_U^*=L_{U^*}$ by <em>The Adjoint of the Left Multiplication on a Hilbert Space</em>; hence $(\ell_U)^*=\alpha L_{U^*}$, which acts by $T\mapsto\alpha(U^*T)=\alpha(U^*)\alpha(T)=\ell_{\alpha(U^*)}T$. The signed right case is $\varrho_V=R_V\alpha$, with the same three ingredients.</p>
@@ -95,7 +95,7 @@ $$</p>
 <h2 id="self-adjointness-isometry-and-unitarity">Self-Adjointness, Isometry and Unitarity</h2>
 <p><strong>Theorem (self-adjointness).</strong> The signed left multiplication is self-adjoint,</p>
 <p>$$
-(\ell_U)^*=\ell_U,
+\boxed{\;(\ell_U)^*=\ell_U\;},
 $$</p>
 <p>if and only if</p>
 <p>$$
@@ -105,7 +105,7 @@ $$</p>
 <p><em>Proof.</em> The family is faithful: $\ell_A(I)=A\alpha(I)=A$, so $\ell_A=\ell_C$ iff $A=C$; the criterion is therefore the equality $\ell_{\alpha(U^*)}=\ell_U$, that is $\alpha(U^*)=U$. If $U$ is self-adjoint and even, $\alpha(U^*)=\alpha(U)=U$; if $U$ is odd and nonzero then $\alpha(U^*)=\alpha(U)^*=-U^*$, and $-U^*=U$ would make $U$ skew-adjoint and odd, contradicting $U^*=-\alpha(U)=\alpha(-U)$, so no nonzero odd $U$ satisfies the criterion.</p>
 <p><strong>Theorem (isometry and unitarity).</strong> The signed left multiplication is an isometry of $S_2(H)$ if and only if $U$ is an isometry, and it is unitary if and only if $U$ is unitary; more precisely</p>
 <p>$$
-(\ell_U)^*\ell_U=L_{\alpha(U^*U)},\qquad \ell_U(\ell_U)^*=L_{UU^*},
+\boxed{\;(\ell_U)^*\ell_U=L_{\alpha(U^*U)},\qquad \ell_U(\ell_U)^*=L_{UU^*}\;},
 $$</p>
 <p>so $\ell_U$ is isometric exactly when $\alpha(U^*U)=I$, which is $U^*U=I$ because $\alpha$ is injective, and it is unitary exactly when in addition $UU^*=I$.</p>
 <p><em>Proof.</em> By the composition rules of the signed left multiplication, $\ell_{\alpha(U^*)}\ell_U=L_{\alpha(U^*)\alpha(U)}=L_{\alpha(U^*U)}$, and $\ell_U\ell_{\alpha(U^*)}=L_{U\alpha(\alpha(U^*))}=L_{UU^*}$ because $\alpha^2=\mathrm{id}$; the identity of $S_2(H)$ is $L_I$, and $L_{A}=L_I$ iff $A=I$; the injectivity of $\alpha$ identifies $\alpha(U^*U)=I$ with $U^*U=I$.</p>

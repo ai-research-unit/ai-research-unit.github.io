@@ -86,7 +86,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
 <p><strong>Theorem (the explicit form of the adjoint).</strong> With respect to the signed form,</p>
 <p>$$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = \Sigma^{\alpha}_{a^{-1},\,b^{-1}} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = \Sigma^{\alpha}_{a^{-1},\,b^{-1}}\;} .
 $$</p>
 <p>Equivalently, the adjoint of $u\mapsto a\alpha(u)b$ is $u\mapsto a^{-1}\alpha(u)b^{-1}$, and the adjoint operation is an involution on the set of signed sandwiches: $((\Sigma^{\alpha}_{a,b})^\dagger)^\dagger = \Sigma^{\alpha}_{a,b}$.</p>
 <p><strong>Proof.</strong> By the composition and the anti-automorphism property, $(\Sigma^\alpha_{a,b})^\dagger = (L_aR_bA)^\dagger = A^\dagger R_b^\dagger L_a^\dagger = A\,R_{\sigma(b)}\,L_{\sigma(a)}$. Applying this to $u$ gives $A(\sigma(a)\,u\,\sigma(b)) = \alpha(\sigma(a))\,\alpha(u)\,\alpha(\sigma(b))$. Since $\alpha$ and $\iota$ commute, $\alpha\sigma = \alpha\iota\alpha = \iota\alpha^2 = \iota$, so $\alpha\sigma(a) = a^{-1}$ and $\alpha\sigma(b) = b^{-1}$; hence the adjoint is $u\mapsto a^{-1}\alpha(u)b^{-1}$, which is $\Sigma^\alpha_{a^{-1},b^{-1}}$. The double adjoint is immediate from $\sigma^2 = \mathrm{id}$.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p><strong>Definition.</strong> A signed sandwich is <strong>unitary</strong> when its adjoint is its inverse, $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \mathrm{id}$ and $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a,b}{}^\dagger = \mathrm{id}$; equivalently when it preserves the signed form, $B_\alpha(\Sigma^\alpha_{a,b}u,\Sigma^\alpha_{a,b}v) = B_\alpha(u,v)$ for all $u,v$.</p>
 <p><strong>Theorem (the inverse and the criterion).</strong> The inverse of the signed sandwich is $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1} = \Sigma^{\alpha}_{\sigma(a),\,\sigma(b)}$, and the identity criterion for signed sandwiches is</p>
 <p>$$
-\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'^{-1}c \in Z(G) \ \text{and}\ c'^{-1}c = d'd^{-1} .
+\boxed{\;\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'^{-1}c \in Z(G) \ \text{and}\ c'^{-1}c = d'd^{-1}\;} .
 $$</p>
 <p>Consequently $\Sigma^{\alpha}_{a,b}$ is unitary if and only if</p>
 <p>$$
@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>signed conjugation</strong> by $a$ is the signed sandwich $\rho_a = \Sigma^{\alpha}_{a,a^{-1}}$.</p>
 <p><strong>Theorem.</strong> With respect to the signed form,</p>
 <p>$$
-\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a} ,
+\boxed{\;\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a}\;} ,
 $$</p>
 <p>the signed conjugation is self-adjoint if and only if $a^2 \in Z(G)$, and it is unitary if and only if $a^{-1}\alpha(a) \in Z(G)$. When $\rho_a$ is a reflection — that is, when $a\alpha(a) \in Z(G)$ — the two conditions are equivalent, and the reflection is then an orthogonal involution of the group algebra.</p>
 <p><strong>Proof.</strong> The adjoint formula with $b = a^{-1}$ gives $\Sigma^\alpha_{a^{-1},(a^{-1})^{-1}} = \Sigma^\alpha_{a^{-1},a} = \rho_{a^{-1}}$. Self-adjointness: $\rho_a = \rho_{a^{-1}}$ exactly when $a^{-1}\in aZ(G)$, that is $a^2 \in Z(G)$, by the coset criterion for reflections. Unitarity: in the general criterion with $b = a^{-1}$ one has $d = \alpha(b)b^{-1} = \alpha(a)^{-1}a = c^{-1}$ for $c = a^{-1}\alpha(a)$, so the second condition is automatic and the first, $c$ central, is the stated one. If $a\alpha(a)$ is central, then $\alpha(a) \in a^{-1}Z(G)$, and $a^{-1}\alpha(a) \in a^{-2}Z(G)$ is central exactly when $a^2$ is central, so the two conditions coincide; an involution that is unitary is self-adjoint and conversely, because $\rho_a^2 = \mathrm{id}$ gives $\rho_a^\dagger = \rho_a^{-1} = \rho_a$.</p>

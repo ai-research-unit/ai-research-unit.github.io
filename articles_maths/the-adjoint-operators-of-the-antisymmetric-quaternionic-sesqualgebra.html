@@ -96,8 +96,10 @@ $$</p>
 <p><em>Proof.</em> Direct evaluation of $\vec Q_3\times\overline{\vec R}$ at $\vec Q_3=\vec e_x$ on the real basis: $\vec e_x\times \vec e_y=\vec e_z$, $\vec e_x\times \vec e_z=-\vec e_y$, $\vec e_x\times(i\vec e_y)=-i\vec e_z$, $\vec e_x\times(i\vec e_z)=i\vec e_y$, and $\vec e_x\times \vec e_x=0$, with the centre killed.</p>
 <p><strong>Theorem (the rank, the kernel and the image).</strong> For a nonzero vector element $\tilde Q_3$ with $\vec Q_3\neq0$,</p>
 <p>$$
+\boxed{\;
 \ker L_{\tilde Q_3}=\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3},\qquad
-\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathrm{Vect}(\mathbb{B}):(\vec Q_3,\vec V)=0\},
+\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathrm{Vect}(\mathbb{B}):(\vec Q_3,\vec V)=0\}
+\;},
 $$</p>
 <p>the centre direct sum a complex line in the kernel, and the complex two-dimensional subspace orthogonal to $\vec Q_3$ for the bilinear dot product in the image. The rank of $L_{\tilde Q_3}$ over $\mathbb{R}$ is $4$, its nullity is $4$, and its trace is $0$.</p>
 <p><em>Proof.</em> The equation $\vec Q_3\times\overline{\vec R}=0$ says that $\overline{\vec R}$ is a complex multiple of $\vec Q_3$, that is $\vec R\in\mathbb{C}\overline{\vec Q_3}$; together with the centre, killed by the map, this is the kernel, of real dimension $2+2=4$. The image is the set of cross products with the fixed vector $\vec Q_3$, which is the orthogonal complement of $\vec Q_3$ in the three complex dimensions, of real dimension $4$; the rank is therefore $4$, and the nullity is $8-4=4$. The trace is the sum of the diagonal entries, and each is zero in the basis above: the map is conjugate-linear on the whole space, $L_{\tilde Q_3}(\lambda\tilde Q_2)=\overline{\lambda}\,L_{\tilde Q_3}\tilde Q_2$, and a conjugate-linear map of the real space has zero real trace, its real matrix carrying a block $B$ along the real directions and the block $-B$ along the imaginary ones; concretely the $\vec R$-coefficient of $\vec Q_3\times\overline{\vec R}$ is $(\vec Q_3\times\overline{\vec R},\vec R)=0$ in the real directions, and the imaginary directions obey the same by conjugate-linearity.</p>
@@ -110,9 +112,7 @@ K\bigl(T\tilde Q_2,\tilde Q_4\bigr)=\overline{K\bigl(\tilde Q_2,T^{\dagger}\tild
 $$</p>
 <p>the conjugate on the right because both $K$ and $T$ are conjugate-linear, the two conjugations cancelling for the composite.</p>
 <p><strong>Theorem.</strong> The adjoint of the left multiplication is its negative:</p>
-<p>$$
-L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3},
-$$</p>
+<p>$$ \boxed{\; L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3} \;}, $$</p>
 <p>a conjugate-linear map. Equivalently, $\langle\tilde Q_3\diamond\tilde Q_2,\tilde Q_4\rangle_{\natural*}=-\overline{\langle\tilde Q_2,\tilde Q_3\diamond\tilde Q_4\rangle_{\natural*}}$.</p>
 <p><em>Proof.</em> The left-hand side is $\langle\vec Q_3\times\overline{\vec R},\tilde Q_4\rangle_{\natural*}$, which reads $-\,(\vec Q_3\times\overline{\vec R},\overline{\vec Q_4})$; the right-hand side is $-\overline{\langle\tilde Q_2,\vec Q_3\times\overline{\vec Q_4}\rangle_{\natural*}}$, whose inner term reads $(\vec R,\overline{\vec Q_3\times\overline{\vec Q_4}})$, and conjugating gives $(\overline{\vec R},\vec Q_3\times\overline{\vec Q_4})$. The two sides are $-\det[\vec Q_3,\overline{\vec R},\overline{\vec Q_4}]$ and $\det[\overline{\vec R},\vec Q_3,\overline{\vec Q_4}]$, the two sign readings of the same triple product, and they agree.</p>
 <p><strong>Remark (the adjoint is conjugate-linear, and this is settled).</strong> The class of the adjoint is forced: a conjugate-linear map has a conjugate-linear adjoint with respect to a form that is conjugate-linear in one slot, and a linear adjoint would not satisfy the defining identity. The block settles the question in the corpus sense: the adjoint is read in the <strong>conjugate-linear</strong> class, and it is again the negative of the operator. An operator equal to the negative of its adjoint is the analogue for the block of a skew operator, and the relation is the operator form of the conjugate-alternation of the multiplication.</p>
@@ -123,9 +123,7 @@ D(\tilde Q_1\diamond\tilde Q_2)=D\tilde Q_1\diamond\tilde Q_2+\tilde Q_1\diamond
 \qquad\text{for all }\tilde Q_1,\tilde Q_2 .
 $$</p>
 <p><strong>Theorem (the derivations).</strong> The derivations of the block form a real vector space of dimension $7$, the direct sum</p>
-<p>$$
-\mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}),
-$$</p>
+<p>$$ \boxed{\; \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}) \;}, $$</p>
 <p>where the first summand consists of the maps $\tilde Q_2\mapsto\lambda(Q_{2t})e_t$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.</p>
 <p><em>Proof.</em> Let $D\tilde Q_2=\lambda(Q_{2t})e_t+D_V(\vec Q_2)$. Substituting into the defining identity and using that the block kills the centre in both slots, the centre part $\lambda$ cancels on both sides for every $\mathbb{R}$-linear $\lambda$, which gives the first summand. On the vector part, the identity reads $D_V(\vec Q_1\times\overline{\vec Q_2})=D_V\vec Q_1\times\overline{\vec Q_2}+\vec Q_1\times\overline{D_V\vec Q_2}$; taking $\vec Q_1,\vec Q_2$ real reduces it to $D_V(\vec Q_1\times\vec Q_2)=D_V\vec Q_1\times\vec Q_2+\vec Q_1\times D_V\vec Q_2$, the classical derivation condition for the cross product, whose solutions are the skew maps of $\mathbb{R}^{3}$; and taking one argument imaginary forces the entries to be real, so the second summand is $\mathfrak{so}(3,\mathbb{R})$, of real dimension $3$. The two summands are independent, and no derivation mixes the centre with the vector part, since a map carrying the centre into the vector part fails the identity on a real pair. The total dimension is $4+3=7$.</p>
 <p><strong>Theorem (the structure group).</strong> The group of invertible real-linear maps preserving the block contains the subgroup</p>

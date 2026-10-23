@@ -156,7 +156,7 @@ $$</p>
 <h3 id="change-of-variables">Change of Variables</h3>
 <p><strong>Theorem (Berezinian change of variables).</strong> Let $N = (N_{ij})$ be an invertible $n \times n$ matrix over $R$ and let $\theta_i = \sum_j N_{ij}\eta_j$ be a linear change of odd variables. Then for every $f \in \Lambda(\eta_1, \ldots, \eta_n)$,</p>
 <p>$$
-\int f(\theta)\, d\theta = \det(N)^{-1} \int f(N\eta)\, d\eta,
+\boxed{\;\int f(\theta)\, d\theta = \det(N)^{-1} \int f(N\eta)\, d\eta\;},
 $$</p>
 <p>or, in the equivalent form $d\theta = \det(N)^{-1} d\eta$. The Jacobian factor is the <strong>inverse</strong> of the determinant of the change of variables.</p>
 <p><strong>Proof.</strong> Both sides are $R$-linear in $f$, so it suffices to check the identity on the basis elements $f = \theta_I$. If $I$ is a proper subset of $\{1, \ldots, n\}$ then $\theta_I$ has degree less than $n$ and both integrals vanish. If $I = \{1, \ldots, n\}$ then the left side is $1$ by the normalisation, while $\theta_1(\eta)\cdots\theta_n(\eta) = \det(N)\,\eta_1\cdots\eta_n$ by the antisymmetry of the exterior product, the wedge of the $n$ linear forms $\theta_i(\eta)$ being $\det(N)$ times the top form; hence the right side is $\det(N)^{-1}\det(N) = 1$. The identity follows by linearity.</p>
@@ -176,7 +176,7 @@ $$</p>
 $$</p>
 <p>is the Pfaffian:</p>
 <p>$$
-\int \exp\left(\frac{1}{2}\sum_{i,j} A_{ij}\theta_i\theta_j\right) d\theta = \operatorname{Pf}(A).
+\boxed{\;\int \exp\left(\frac{1}{2}\sum_{i,j} A_{ij}\theta_i\theta_j\right) d\theta = \operatorname{Pf}(A)\;}.
 $$</p>
 <p><strong>Proof.</strong> Expanding the exponential, only the term of degree $m$ in the quadratic form can contribute to the top coefficient. That term is</p>
 <p>$$
@@ -191,7 +191,7 @@ $$</p>
 $$</p>
 <p>Equivalently, with two independent sets of odd variables $\theta$ and $\eta$,</p>
 <p>$$
-\det(A) = \int \exp\left(\tfrac{1}{2}\theta^{T}A\theta + \tfrac{1}{2}\eta^{T}A\eta\right) d\theta\, d\eta.
+\boxed{\;\det(A) = \int \exp\left(\tfrac{1}{2}\theta^{T}A\theta + \tfrac{1}{2}\eta^{T}A\eta\right) d\theta\, d\eta\;}.
 $$</p>
 <p>This is the algebraic form of the statement that a determinant is a square of a Gaussian integral over odd variables, in contrast with the bosonic Gaussian, whose value is the inverse square root of the determinant.</p>
 <h3 id="the-super-gaussian">The Super-Gaussian</h3>

@@ -134,7 +134,7 @@ $$</p>
 <p>the module of coherent sequences $(a_k)_{k\geq0}$ with $a_k \in A/I^k$ and $a_{k+1} \equiv a_k \bmod I^k$. It is a commutative $R$-algebra under componentwise operations, the natural map $A \to \hat A$, $a \mapsto (a + I^k)_k$ is a homomorphism with kernel $\bigcap_k I^k$, and $\hat A$ is complete for the filtration by the kernels of $\hat A \to A/I^k$. The construction is functorial: a homomorphism $A \to B$ carrying $I$ into an ideal $J$ induces $\hat A \to \hat B$, so $I$-adic completion is a functor on the appropriate category of filtered algebras.</p>
 <p><strong>Proposition.</strong> The completion of the polynomial algebra at the augmentation ideal is the formal power series algebra:</p>
 <p>$$
-R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n),
+\boxed{\;R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n)\;},
 $$</p>
 <p>where $\widehat{\phantom{A}}$ denotes $\mathrm{M}$-adic completion.</p>
 <p><em>Proof.</em> For each $k$ the truncation map $R[[x_1,\ldots,x_n]]\to R[x_1,\ldots,x_n]/\mathrm{M}^k$ is surjective with kernel $\mathrm{M}^k$, giving isomorphisms</p>
@@ -153,7 +153,7 @@ J = \Bigl(\frac{\partial F_i}{\partial x_j}(0)\Bigr)_{i,j} .
 $$</p>
 <p><strong>Theorem (formal inverse function theorem).</strong> If $J$ is invertible over $R$, then there is a unique $n$-tuple $G = (G_1,\ldots,G_n)$ of formal power series with no constant terms such that</p>
 <p>$$
-F \circ G = \mathrm{id} = G \circ F,
+\boxed{\;F \circ G = \mathrm{id} = G \circ F\;},
 $$</p>
 <p>that is $F_i(G_1,\ldots,G_n) = x_i$ and $G_i(F_1,\ldots,F_n) = x_i$ for all $i$.</p>
 <h3 id="proof-by-filtration-improvement">Proof by Filtration Improvement</h3>
@@ -205,7 +205,7 @@ $$</p>
 $$</p>
 <p>and the $\mathrm{M}$-adic completion of $S$ is</p>
 <p>$$
-\hat S \cong \prod_{k\geq0}\operatorname{Sym}^k(M).
+\boxed{\;\hat S \cong \prod_{k\geq0}\operatorname{Sym}^k(M)\;}.
 $$</p>
 <p><em>Proof.</em> The associated graded of a polynomial algebra in $n$ variables is the polynomial algebra again, since $\mathrm{M}^k/\mathrm{M}^{k+1}$ is the module of homogeneous polynomials of degree $k$, isomorphic to $\operatorname{Sym}^k(M)$; this is the general fact that $\operatorname{gr}$ of the symmetric algebra of a free module is the symmetric algebra. The completion consists of the coherent sequences of truncations, and a coherent sequence is exactly a formal sum $\sum_{k\geq0} s_k$ with $s_k \in \operatorname{Sym}^k(M)$, that is, an element of the product $\prod_k\operatorname{Sym}^k(M)$.</p>
 <p>Thus the passage from the symmetric algebra to its completion replaces the direct sum by the product, allowing arbitrary infinite homogeneous components. The algebra $R[[x_1,\ldots,x_n]]$ is the completion $\hat S$ in the case $M = R^n$, and its associated graded algebra is $R[x_1,\ldots,x_n]$ again: the completion does not change the graded pieces, only the way they are assembled.</p>

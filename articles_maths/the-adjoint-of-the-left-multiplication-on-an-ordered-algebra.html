@@ -86,7 +86,7 @@ $$</p>
 <p><em>Proof.</em> $\langle L_ax,y\rangle = \operatorname{tr}((ax)^{*}y) = \operatorname{tr}(x^{*}a^{*}y) = \langle x,L_{a^{*}}y\rangle$ and $\langle R_ax,y\rangle = \operatorname{tr}((xa)^{*}y) = \operatorname{tr}(a^{*}x^{*}y) = \operatorname{tr}(x^{*}ya^{*}) = \langle x,R_{a^{*}}y\rangle$. The homomorphism and anti-homomorphism properties are the associativity, $L_{ab} = L_aL_b$ and $R_{ab} = R_bR_a$, together with the adjoint identities.</p>
 <p><strong>Proposition (the two-sided multiplications).</strong> For $a,b\in A$ let $T_{a,b} = L_aR_b$, $T_{a,b}(x) = axb$; then</p>
 <p>$$
-(T_{a,b})^{*} = T_{b^{*},a^{*}} ,
+\boxed{\;(T_{a,b})^{*} = T_{b^{*},a^{*}}\;} ,
 $$</p>
 <p>so the two-sided multiplications form a <strong>bimodule</strong> under the adjoint, the map $(a,b)\mapsto T_{a,b}$ is bilinear, and the identity $T_{a,b}T_{c,d} = T_{ac,db}$ holds by associativity; consequently the adjoint of a two-sided multiplication is again a two-sided multiplication, and the <strong>self-adjoint</strong> two-sided multiplications are the $T_{a,a^{*}}$ and their sums.</p>
 <p><em>Proof.</em> $\langle T_{a,b}x,y\rangle = \operatorname{tr}((axb)^{*}y) = \operatorname{tr}(b^{*}x^{*}a^{*}y) = \operatorname{tr}(x^{*}a^{*}yb^{*}) = \langle x,T_{b^{*},a^{*}}y\rangle$, which is the adjoint formula; the composition identity is associativity, and the self-adjointness statement is the fixed-point condition $T_{a,b} = T_{b^{*},a^{*}}$.</p>
@@ -96,7 +96,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>inner derivation</strong> of $a$ is $\delta_a = L_a - R_a$, the operator $\delta_a(x) = ax - xa = [a,x]$.</p>
 <p><strong>Proposition (the adjoint of an inner derivation).</strong> The adjoint of an inner derivation is</p>
 <p>$$
-(\delta_a)^{*} = \delta_{a^{*}} ,
+\boxed{\;(\delta_a)^{*} = \delta_{a^{*}}\;} ,
 $$</p>
 <p>so $\delta_a$ is self-adjoint exactly when $a$ is self-adjoint, and it is <strong>skew-adjoint</strong>, $(\delta_a)^{*} = -\delta_a$, exactly when $a$ is <strong>skew-adjoint</strong>, $a^{*} = -a$; the inner derivations form a Lie subalgebra of the operators, $[\delta_a,\delta_b] = \delta_{[a,b]}$, closed under the adjoint.</p>
 <p><em>Proof.</em> The adjoint formula is the difference of the one-sided adjoints. The skew-adjointness condition is $\delta_{a^{*}} = -\delta_a = \delta_{-a}$, which is $a^{*} = -a$. The Lie-algebra statement is the Jacobi-type identity $[\delta_a,\delta_b] = \delta_{[a,b]}$, which is the derivation property computed on the generators.</p>
@@ -105,7 +105,7 @@ $$</p>
 <h2 id="the-adjoint-and-the-order">The Adjoint and the Order</h2>
 <p><strong>Theorem (the order of the multiplications).</strong> The map $a\mapsto L_a$ is an <strong>order isomorphism</strong> of the ordered involutive algebra onto the subalgebra of the left multiplications, and</p>
 <p>$$
-a\geq0 \iff L_a\geq0 \iff R_a\geq0 \iff T_{a,b}\geq0 \ \text{ for every } b\geq0 ,
+\boxed{\;a\geq0 \iff L_a\geq0 \iff R_a\geq0 \iff T_{a,b}\geq0 \ \text{ for every } b\geq0\;} ,
 $$</p>
 <p>so the positive cone of the algebra is carried isomorphically onto the cone of the positive multiplications; the adjoint of a positive multiplication is positive, and the adjoint is therefore an <strong>order automorphism</strong> of the multiplication algebra.</p>
 <p><em>Proof.</em> The first two equivalences are the theorem of <em>Self-Adjoint Elements and the Order</em>; the third is the two-sided statement $T_{a,b}(A_+) = L_aR_b(A_+)\subseteq L_a(A_+)\subseteq A_+$ for $a,b\geq0$, with the converse from the choice $b = 1$; the positivity of the adjoint is <em>The Adjoint of a Positive Operator</em>, and the order-automorphism statement is its consequence.</p>

@@ -82,9 +82,9 @@ a Dirichlet series whose coefficients are the values of the character, with an E
 <p><strong>Definition.</strong> A <strong>Dirichlet character</strong> modulo $q$ is a group homomorphism $\chi : (\mathbb{Z}/q\mathbb{Z})^\times \to \mathbb{C}^\times$, extended to a function on $\mathbb{Z}$ by $\chi(n) = \chi(n \bmod q)$ for $(n,q)=1$ and $\chi(n)=0$ for $(n,q)>1$. The <strong>principal character</strong> $\chi_0$ is the character that is $1$ on all units. The <strong>conductor</strong> of $\chi$ is the smallest positive divisor $f \mid q$ such that $\chi$ is induced from a character modulo $f$, and $\chi$ is <strong>primitive</strong> if its conductor is $q$. A character is <strong>even</strong> if $\chi(-1)=1$ and <strong>odd</strong> if $\chi(-1)=-1$.</p>
 <p><strong>Proposition.</strong> The set $\widehat{G}$ of characters of the finite abelian group $G = (\mathbb{Z}/q\mathbb{Z})^\times$ is a group under pointwise multiplication, isomorphic to $G$; the characters satisfy the orthogonality relations
 $$
-\sum_{\chi \in \widehat G} \chi(a) = \begin{cases} \varphi(q) & a\equiv1 \pmod q,\\ 0 & \text{otherwise},\end{cases}
+\boxed{\;\sum_{\chi \in \widehat G} \chi(a) = \begin{cases} \varphi(q) & a\equiv1 \pmod q,\\ 0 & \text{otherwise},\end{cases}
 \qquad
-\sum_{a \in G}\chi(a) = \begin{cases} \varphi(q) & \chi = \chi_0,\\ 0 & \text{otherwise},\end{cases}
+\sum_{a \in G}\chi(a) = \begin{cases} \varphi(q) & \chi = \chi_0,\\ 0 & \text{otherwise},\end{cases}\;}
 $$
 and the characters of $(\mathbb{Z}/q\mathbb{Z})^\times$ are exactly the characters of $\mathbb{Z}/q\mathbb{Z}$ whose value at a nonunit is $0$.</p>
 <p><strong>Proof.</strong> The group $(\mathbb{Z}/q\mathbb{Z})^\times$ is finite abelian, hence a direct product of cyclic groups; over $\mathbb{C}$ a cyclic group of order $n$ has exactly $n$ characters, given by $g\mapsto\zeta_n^k$ for the $n$-th roots of unity, and the orthogonality relations are the standard orthogonality of the columns and rows of the character table.</p>
@@ -115,7 +115,7 @@ $$
 and the <strong>root number</strong> is $\epsilon_\chi = \dfrac{\tau(\chi)}{i^{a}\sqrt q}$.</p>
 <p><strong>Theorem (functional equation of the Dirichlet $L$-function).</strong> Let $\chi$ be primitive modulo $q$. Then $L(s,\chi)$ has an analytic continuation to an entire function of $s$, and
 $$
-\Lambda(s,\chi) = \epsilon_\chi\,\Lambda(1-s,\bar\chi), \qquad \lvert\epsilon_\chi\rvert = 1 .
+\boxed{\;\Lambda(s,\chi) = \epsilon_\chi\,\Lambda(1-s,\bar\chi), \qquad \lvert\epsilon_\chi\rvert = 1\;} .
 $$
 For a nonprimitive character the same statements hold after removing the finitely many Euler factors of the inducing modulus, and for the principal character the completed function has poles at $s=0$ and $s=1$ corresponding to the pole of $\zeta$.</p>
 <p><strong>Proof sketch (theta and Gauss sums).</strong> One forms the twisted theta series $\theta_\chi(t) = \sum_{n\geq1}\chi(n)\exp(-\pi n^2t/q)$, with the variant $\sum_n n\,\chi(n)\exp(-\pi n^2t/q)$ when $\chi$ is odd; Poisson summation applied to the twisted Gauss sum produces the transformation law of $\theta_\chi$ under $t\mapsto1/t$, and the constant in that law is precisely the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$; the Mellin transform of the appropriate power of $t$ times $\theta_\chi$ is then the completed $L$-function $\Lambda(s,\chi)$, and the functional equation follows from the transformation law. The adelic proof is the one of <em>Adelic Analysis</em>: the character $\chi$ determines a Hecke character of the idele class group of $\mathbb{Q}$, and the completed $L$-function is the global zeta integral of that character, so the functional equation is Poisson summation.</p>
@@ -142,7 +142,7 @@ $$
 <strong>Proof sketch.</strong> The generalised Bernoulli numbers generate the values by the same Mellin-transform argument as for the trivial character, with the twisted theta series replacing the theta function; the second formula is the case $n=1$ and is computed directly from the definition.</p>
 <p><strong>Theorem (values at $1$ and the class number formula).</strong> For the primitive quadratic character $\chi_d$ of a quadratic field $K = \mathbb{Q}(\sqrt d)$ of discriminant $d$,
 $$
-L(1,\chi_d) = \begin{cases} \dfrac{2\pi h}{w\sqrt{\lvert d\rvert}} & d<0,\\[2mm] \dfrac{2h\log\varepsilon}{\sqrt d} & d>0,\end{cases}
+\boxed{\;L(1,\chi_d) = \begin{cases} \dfrac{2\pi h}{w\sqrt{\lvert d\rvert}} & d<0,\\[2mm] \dfrac{2h\log\varepsilon}{\sqrt d} & d>0,\end{cases}\;}
 $$
 where $h$ is the class number, $w$ the number of roots of unity and $\varepsilon>1$ the fundamental unit. The formula is the class number formula of <em>Zeta Functions</em> for a quadratic field, written in terms of the character, and it shows that $L(1,\chi_d)$ is a computable positive number, the positivity being itself a nontrivial statement.</p>
 <h2 id="the-general-theory-of-math220-functions">The General Theory of $L$-Functions</h2>

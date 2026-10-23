@@ -107,9 +107,7 @@ $$</p>
 Df = \bigl(\partial/\partial Q_t\,f_0-\mathrm{div}\,\vec f\bigr) + \bigl(\partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f\bigr),
 $$</p>
 <p>so $f$ is left-regular if and only if it solves the <strong>Cauchy–Riemann–Fueter system</strong></p>
-<p>$$
-\partial/\partial Q_t\,f_0 = \mathrm{div}\,\vec f, \qquad \partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0.
-$$</p>
+<p>$$ \boxed{\; \partial/\partial Q_t\,f_0 = \mathrm{div}\,\vec f, \qquad \partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0 \;} .$$</p>
 <p><em>Proof.</em> Multiply out $e_\mu\partial/\partial Q_\mu(f_0+\vec f)$ term by term, using $\vec a\vec b = -\langle\vec a,\vec b\rangle+\vec a\times\vec b$ for pure quaternions: the scalar part collects $\partial/\partial Q_t\,f_0-\mathrm{div}\,\vec f$, and the vector part collects $\partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f$. Both parts must vanish.</p>
 <p><strong>Corollary.</strong> The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\xi) = \sum_\mu\xi_\mu e_\mu$, which satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2e_t$ for every real covector $\xi\neq0$, so the system is elliptic and its solutions are real-analytic.</p>
 <p><em>Proof.</em> The principal symbol is invertible with inverse $s^{\natural}(\xi)/|\xi|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.</p>
@@ -125,9 +123,7 @@ $$</p>
 <p><strong>Remark.</strong> The failure of left multiplication exhibits the non-commutativity directly: the coordinate $A = q_t+\vec e_xq_x$ is regular and $A^2$ is regular, but the reversed products are not, and the single-plane holomorphic functions are the largest class of regular functions obtained from one complex direction. The Cauchy kernel is regular but is not holomorphic in any single-plane variable, so the hypercomplex class is strictly larger than the single-plane class; the two coincide only in two real dimensions.</p>
 <h2 id="harmonicity-and-the-factorization-of-the-laplacian">Harmonicity and the Factorization of the Laplacian</h2>
 <p><strong>Theorem.</strong> Every left-regular function is harmonic,</p>
-<p>$$
-Df = 0 \implies \Delta f = \bar D(Df) = 0,
-$$</p>
+<p>$$ \boxed{\; Df = 0 \implies \Delta f = \bar D(Df) = 0 \;} ,$$</p>
 <p>and every right-regular function is harmonic as well; the harmonic functions form a strictly larger class, since the coordinate $q_t$ is harmonic but $Dq_t = e_t\neq0$.</p>
 <p><em>Proof.</em> By the factorization $\bar DD = \Delta$, a left-regular $f$ satisfies $\Delta f = \bar D(Df) = 0$; for right-regularity one uses $D\bar D = \Delta$ on the left factor. The coordinate $q_t$ is annihilated by the Laplacian and not by $D$.</p>
 <p><strong>Corollary.</strong> Each coefficient $f_\nu$ of a regular function solves the four-dimensional Laplace equation $\sum_\mu\partial^2/\partial Q_\mu^2\,f_\nu = 0$, so regular functions are real-analytic and satisfy the mean value property; the converse fails, so regularity is strictly stronger than harmonicity.</p>
@@ -353,9 +349,7 @@ $$</p>
 DG = 2\pi^2\delta_0 e_t.
 $$</p>
 <p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be continuously differentiable on a bounded domain $\Omega\subseteq\mathbb{H}$ with piecewise smooth boundary $\partial\Omega$, and let $q_t$ be an interior point. Then</p>
-<p>$$
-f(q_t) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_t)\,n(\tilde q)f(\tilde q)\,dS - \frac{1}{2\pi^2}\int_{\Omega}G(\tilde q-q_t)\,(Df)(\tilde q)\,dV,
-$$</p>
+<p>$$ \boxed{\; f(q_t) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_t)\,n(\tilde q)f(\tilde q)\,dS - \frac{1}{2\pi^2}\int_{\Omega}G(\tilde q-q_t)\,(Df)(\tilde q)\,dV \;} ,$$</p>
 <p>where $n$ is the $\mathbb{H}$-valued outward unit normal. If $f$ is regular, the volume term vanishes and</p>
 <p>$$
 f(q_t) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_t)\,n(\tilde q)f(\tilde q)\,dS.

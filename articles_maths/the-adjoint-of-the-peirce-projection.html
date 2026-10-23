@@ -119,7 +119,7 @@ $$</p>
 <p>Existence and uniqueness are the nondegeneracy of the form in finite dimension: the map $y\mapsto\langle-,y\rangle$ is an isomorphism $A\to A^\vee$, and $T^\dagger$ is the transpose of $T$ transported across it.</p>
 <p><strong>Proposition.</strong> The adjoint operation on $\operatorname{End}_k(A)$ satisfies</p>
 <p>$$
-(T+S)^\dagger=T^\dagger+S^\dagger, \qquad (TS)^\dagger=S^\dagger T^\dagger, \qquad (T^\dagger)^\dagger=T, \qquad \mathrm{id}^\dagger=\mathrm{id}.
+\boxed{\;(T+S)^\dagger=T^\dagger+S^\dagger, \qquad (TS)^\dagger=S^\dagger T^\dagger, \qquad (T^\dagger)^\dagger=T, \qquad \mathrm{id}^\dagger=\mathrm{id}\;}.
 $$</p>
 <p>It is an anti-involution of the operator algebra. If the form is sesquilinear, it is conjugate-linear in the scalar; the four identities are unchanged.</p>
 <p><em>Proof.</em> The first and the last are immediate. For the product, $\langle TSx,y\rangle=\langle Sx,T^\dagger y\rangle=\langle x,S^\dagger T^\dagger y\rangle$. For the double adjoint, $\langle T^\dagger x,y\rangle=\langle x,Ty\rangle$ by the defining identity applied to $T^\dagger$ and the symmetry of the form; uniqueness gives $(T^\dagger)^\dagger=T$.</p>
@@ -132,7 +132,7 @@ $$</p>
 <p><em>Proof.</em> (a) $\langle L_a x,y\rangle=\langle ax,y\rangle=\langle x,a^*y\rangle=\langle x,L_{a^*}y\rangle$. (b) $\langle R_a x,y\rangle=\langle xa,y\rangle=\langle x,ya^*\rangle=\langle x,R_{a^*}y\rangle$. (c) $T_{a,b}=L_aR_b$, so $T_{a,b}^\dagger=R_b^\dagger L_a^\dagger=R_{b^*}L_{a^*}=L_{a^*}R_{b^*}=T_{a^*,b^*}$, using the commutativity of left and right multiplication. (d) $P_e=T_{e,e}$, so $P_e^\dagger=T_{e^*,e^*}=P_{e^*}$.</p>
 <p><strong>Corollary.</strong> The Peirce projection of $e$ is self-adjoint exactly when $e$ is Hermitian:</p>
 <p>$$
-P_e^\dagger=P_e \iff e^*=e.
+\boxed{\;P_e^\dagger=P_e \iff e^*=e\;}.
 $$</p>
 <p><em>Proof.</em> If $P_e^\dagger=P_e$, then $P_{e^*}=P_e$; applying both sides to $1$ gives $e^*=e$. Conversely, if $e^*=e$, then $P_e^\dagger=P_{e^*}=P_e$.</p>
 <p><strong>Remark.</strong> The theorem is the operator form of the element adjoint. The involution $*$ sends the idempotent $e$ to the idempotent $e^*$; the operator adjoint $\dagger$ sends the Peirce projection $P_e$ to the Peirce projection $P_{e^*}$. The two maps are compatible, and the compatibility is the identity (P_e^\dagger=P_{e^*}). The reader should keep the two stars apart: $e^*$ is an element of $A$, and $P_e^\dagger$ is an operator on $A$.</p>
@@ -173,7 +173,7 @@ $$</p>
 <p><em>Proof.</em> (a) $E_{ij}^\dagger=T_{e_i^*,e_j^*}=T_{e_i,e_j}=E_{ij}$, because $e$ and $f=1-e$ are Hermitian. (b) The $E_{ij}$ are idempotent and self-adjoint by (a), and they satisfy $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$; hence they are pairwise orthogonal projections. Their images are the corners, so the corners are pairwise orthogonal. (c) The sum of the $E_{ij}$ is the identity, so the corners span $A$; with (b) the sum is orthogonal. The restriction of a nondegenerate form to an orthogonal direct summand is nondegenerate, because a vector in the radical of the summand is orthogonal to the summand and to all the other summands, hence to $A$. (d) is the special case $(i,j)=(0,0)$ and $(1,1)$.</p>
 <p><strong>Corollary (the orthogonal Peirce decomposition).</strong> For a Hermitian idempotent $e$,</p>
 <p>$$
-A=eAe\ \perp\ eAf\ \perp\ fAe\ \perp\ fAf,
+\boxed{\;A=eAe\ \perp\ eAf\ \perp\ fAe\ \perp\ fAf\;},
 $$</p>
 <p>and the orthogonal projection onto $eAe$ is $P_e(x)=exe$. The decomposition is the orthogonal form of the Peirce decomposition of <em>Hermitian Idempotents and the Peirce Decomposition</em>.</p>
 <p><strong>Remark.</strong> The theorem is the reason the Hermitian idempotents are the algebra-level analogues of the orthogonal projections. The Peirce projection $P_e$ is self-adjoint, its image is the corner, and its kernel is the orthogonal complement of the corner. The two mixed corners $eAf$ and $fAe$ are exchanged by the involution, and they are orthogonal to each other under the form.</p>

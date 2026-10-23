@@ -137,7 +137,7 @@ $$</p>
 <h3 id="the-symmetric-space-structure">The Symmetric Space Structure</h3>
 <p><strong>Theorem.</strong> The Grassmannian is the homogeneous space</p>
 <p>$$
-\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k) \times O(n-k)),
+\boxed{\;\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k) \times O(n-k))\;},
 $$</p>
 <p>and, in the oriented case, $SO(n)/(SO(k) \times SO(n-k))$; the action of $O(n)$ is transitive and the stabiliser of $W_0 = \mathbb{R}^k \times \{0\}$ is $O(k) \times O(n-k)$, acting on $W_0$ and on its orthogonal complement.</p>
 <p><strong>Proof.</strong> The group $O(n)$ acts on subspaces preserving dimension, on the complement, $W \mapsto (AW)$. It is transitive: any $W$ has an orthonormal basis completed to a basis of $\mathbb{R}^n$, giving an orthogonal matrix carrying $W_0$ to $W$. The stabiliser of $W_0$ preserves $W_0$ and its orthogonal complement, hence is $O(k) \times O(n-k)$.</p>
@@ -163,7 +163,7 @@ $$</p>
 <p>the class of the wedge product up to scalar; it is independent of the basis chosen, up to the nonzero determinant of the change of basis.</p>
 <p><strong>Theorem (Plücker embedding).</strong> The map</p>
 <p>$$
-\iota : \mathrm{Gr}_k(V) \longrightarrow \mathbb{P}\left(\textstyle\bigwedge^kV\right), \qquad W \longmapsto [w_1 \wedge \cdots \wedge w_k],
+\boxed{\;\iota : \mathrm{Gr}_k(V) \longrightarrow \mathbb{P}\left(\textstyle\bigwedge^kV\right), \qquad W \longmapsto [w_1 \wedge \cdots \wedge w_k]\;},
 $$</p>
 <p>is well defined and injective; its image is a closed smooth submanifold, and the map is an embedding. The image is the set of <strong>decomposable</strong> classes, characterised by the <strong>Plücker relations</strong>: for $1 \leq k \leq n$ and indices $i_1, \ldots, i_{k+1}$ and $j_1, \ldots, j_{k-1}$,</p>
 <p>$$
@@ -196,7 +196,7 @@ $$</p>
 <p><strong>Proof sketch.</strong> Choose a complete flag adapted to a fixed $W_0$ and put the chart $U_{\lambda_1}$; the condition on the intersections with the flag gives a chain of nested affine spaces; the dimension count is the number of free entries of the matrix of the corresponding projection, which is $\sum_i(\lambda_i - i)$.</p>
 <p><strong>Corollary (the Poincaré polynomial).</strong> The cells are indexed by the $k$-element subsets, and the generating function of the cell counts by dimension is the <strong>Gaussian binomial coefficient</strong></p>
 <p>$$
-P_t(\mathrm{Gr}_k(\mathbb{R}^n)) = \sum_{\lambda} t^{|\lambda|} = \binom{n}{k}_t ,
+\boxed{\;P_t(\mathrm{Gr}_k(\mathbb{R}^n)) = \sum_{\lambda} t^{|\lambda|} = \binom{n}{k}_t\;} ,
 $$</p>
 <p>so with $\mathbb{F}_2$ coefficients the total dimension of the cohomology is $\binom{n}{k}$, and the mod-$2$ Betti numbers are the numbers of cells of each dimension. The Euler characteristic is the value at $t = -1$,</p>
 <p>$$

@@ -161,7 +161,9 @@ $$</p>
 $$</p>
 <p>The inner sum is the standard orthogonality relation:</p>
 <p>$$
+\boxed{\;
 \sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_t & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
+\;}
 $$</p>
 <p>which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.</p>
 <p><strong>The transform is not invertible on signals containing zero-divisor samples.</strong> If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.</p>
@@ -172,7 +174,9 @@ $$</p>
 <p>For a signal $f$ that takes values in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (i.e., all coefficients are real) and a root $\rho$, the spectrum satisfies a <strong>conjugate symmetry</strong> analogous to the Hermitian symmetry of the ordinary Fourier transform of a real signal.</p>
 <p><strong>Theorem (conjugate symmetry).</strong> Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ be a real quaternion-valued signal, and let $F$ be its discrete split-biquaternion Fourier transform with respect to a root $\rho$. Then</p>
 <p>$$
-F[N-u] = \overline{F[u]}, \qquad u = 1, \ldots, N-1.
+\boxed{\;
+F[N-u] = \overline{F[u]}, \qquad u = 1, \ldots, N-1
+\;}.
 $$</p>
 <p><strong>Proof.</strong> The proof uses the reality of $f$, i.e., $\overline{f[n]} = f[n]$ for every $n$, and the identity</p>
 <p>$$
@@ -243,7 +247,9 @@ $$</p>
 $$</p>
 <p>Then</p>
 <p>$$
-\mathcal{F}[f * g][u] = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u],
+\boxed{\;
+\mathcal{F}[f * g][u] = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u]
+\;},
 $$</p>
 <p>where the product on the right is the split biquaternion product.</p>
 <p><strong>Proof.</strong> Compute</p>

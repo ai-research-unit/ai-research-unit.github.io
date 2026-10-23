@@ -101,7 +101,7 @@ $$</p>
 </ol>
 <p>When they hold, the eigenvalues are the $\lambda_{i}$, the eigenprojectors are the Lagrange polynomials</p>
 <p>$$
-e_{i}=\prod_{j\neq i}\frac{a-\lambda_{j}}{\lambda_{i}-\lambda_{j}},
+\boxed{\;e_{i}=\prod_{j\neq i}\frac{a-\lambda_{j}}{\lambda_{i}-\lambda_{j}}\;},
 $$</p>
 <p>and the decomposition is unique.</p>
 <p><em>Proof.</em> The algebra $K[a]$ is finite dimensional, commutative and associative, and its product is the product of $\mathrm{Cl}_{K}$. The theorem is <em>The Eigenvalue Decomposition of an Element</em>, §<em>Existence and Uniqueness</em>, applied to the element $a$ of $K[a]$: the idempotents produced there lie in $K[a]$, hence in $\mathrm{Cl}_{K}$, and the Lagrange formula is the one of that article. The eigenvalue criterion is the same: $a-\lambda$ is not invertible in $K[a]$ exactly when $m_{a,K}(\lambda)=0$.</p>
@@ -196,7 +196,7 @@ $$</p>
 <h3 id="the-cancellation-of-the-higher-grades">The Cancellation of the Higher Grades</h3>
 <p><strong>Proposition.</strong> Let $a=\sum_{i=1}^{r}\lambda_{i}e_{i}$ be a $K$-eigenvalue decomposition and let $e_{i}=\sum_{k=0}^{n}e_{i,k}$ be the grade decomposition of the projectors. Then for every $k>0$,</p>
 <p>$$
-\sum_{i=1}^{r}e_{i,k}=0 .
+\boxed{\;\sum_{i=1}^{r}e_{i,k}=0\;} .
 $$</p>
 <p>In particular the top-grade parts of the projectors cancel, and the scalar parts sum to $1$.</p>
 <p><em>Proof.</em> The sum of the projectors is $1$, which has grade $0$; comparing the grade components gives the identities. The scalar part of $1$ is $1$ and its positive-grade parts are $0$.</p>
@@ -214,12 +214,12 @@ $$</p>
 <h3 id="the-algebraic-closure">The Algebraic Closure</h3>
 <p>Over an algebraic closure $\bar F$, the Clifford algebra is a full matrix algebra or a product of two copies:</p>
 <p>$$
-\mathrm{Cl}\otimes_{F}\bar F\cong
+\boxed{\;\mathrm{Cl}\otimes_{F}\bar F\cong
 \begin{cases}
 M_{N}(\bar F), & n\text{ even},\\[2pt]
 M_{N}(\bar F)\times M_{N}(\bar F), & n\text{ odd},
 \end{cases}
-\qquad N=2^{n/2}\text{ or }2^{(n-1)/2},
+\qquad N=2^{n/2}\text{ or }2^{(n-1)/2}\;},
 $$</p>
 <p>by <em>The Low-Dimensional Classification</em>. The eigenvalue decomposition over $\bar F$ is the matrix eigenvalue decomposition of <em>The Eigenvalue Decomposition of a Matrix</em>; the Clifford-specific content is the grade of the eigenvalues and the projectors.</p>
 <h3 id="the-reduced-characteristic-polynomial">The Reduced Characteristic Polynomial</h3>

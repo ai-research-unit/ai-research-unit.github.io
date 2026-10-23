@@ -82,7 +82,7 @@ that is, when $J$ intertwines $T$ with its adjoint. The definition includes the 
 <p><strong>Definition.</strong> A <strong>reversing symmetry</strong> of $\mathcal{H}$ is an involution $J$ with $J^2=I$, either <strong>unitary</strong>, $J^*=J^{-1}=J$, or <strong>anti-unitary</strong>, a conjugation with $J(\lambda x)=\bar\lambda Jx$ and $J^*=J^{-1}=J$ in the anti-linear sense.</p>
 <p><strong>Theorem (the parity decomposition).</strong> For a unitary involution $J$ the eigenspaces
 $$
-\mathcal{H}_+=\{x:Jx=x\},\qquad \mathcal{H}_-=\{x:Jx=-x\}
+\boxed{\;\mathcal{H}_+=\{x:Jx=x\},\qquad \mathcal{H}_-=\{x:Jx=-x\}\;}
 $$
 are closed, orthogonal, and $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$; the orthogonal projections $P_\pm=\frac12(I\pm J)$ are self-adjoint projections and $J=P_+-P_-$. Every $x$ splits uniquely as $x=x_++x_-$ with $x_\pm\in\mathcal{H}_\pm$.</p>
 <p><em>Proof.</em> The eigenvalues of an involution are $\pm1$; the eigenspaces of a self-adjoint involution are orthogonal and span the whole space; the projections are the spectral projections of $J$, which are self-adjoint, and the decomposition is the spectral theorem for $J$.</p>
@@ -101,7 +101,7 @@ and it is <strong>$J$-self-adjoint</strong> in the same condition read on the in
 <h3 id="self-adjointness-up-to-the-symmetry">Self-adjointness up to the symmetry</h3>
 <p><strong>Theorem (the spectrum is conjugate-symmetric).</strong> If $T$ is reversible with respect to $J$, then $J$ intertwines $T$ and $T^*$, so $T$ and $T^*$ are similar and
 $$
-\operatorname{spec}(T)=\operatorname{spec}(T^*)=\overline{\operatorname{spec}(T)},
+\boxed{\;\operatorname{spec}(T)=\operatorname{spec}(T^*)=\overline{\operatorname{spec}(T)}\;},
 $$
 that is the spectrum of a reversible operator is symmetric under $\lambda\mapsto\bar\lambda$.</p>
 <p><em>Proof.</em> The intertwining gives $T^*=JTJ^{-1}$ with $J^{-1}=J$, so $T^*$ is similar to $T$ and they have the same spectrum; the spectrum of the adjoint is the conjugate, $\operatorname{spec}(T^*)=\overline{\operatorname{spec}(T)}$, since $T^*-\bar\lambda I=(T-\lambda I)^*$; combining the two gives the conjugate symmetry.</p>
@@ -127,7 +127,7 @@ and every eigenvector of $T$ has a definite parity; the reversing symmetry there
 <h2 id="the-reversing-symmetry-of-a-process">The Reversing Symmetry of a Process</h2>
 <p><strong>Theorem (the reversible process).</strong> Let $\{X_n\}$ be a stationary process, $U_r$ the reversal operator, $U_rf=f\circ r$, and $P$ its transition or Markov operator with the stationary measure $\pi$. Then
 $$
-U_r\,P\,U_r=P^{\mathrm{rev}} ,
+\boxed{\;U_r\,P\,U_r=P^{\mathrm{rev}}\;} ,
 $$
 the transition operator of the reversed process, and the process is reversible exactly when $U_rPU_r=P$, that is exactly when $P$ is reversible with respect to $U_r$ and self-adjoint for the $\pi$-form. In that case the spectrum of $P$ refines into the even and the odd parts under the reversal, and the eigenfunctions have definite parity.</p>
 <p><em>Proof.</em> The conjugation by $U_r$ reverses the direction of the transitions, giving $P^{\mathrm{rev}}$, by <em>The Involution on the Operator Algebra of a Process</em> and <em>The Adjoint of the Markov Operator</em>, earlier in this category; the self-adjointness $P^*=P$ in the reversible case is the theorem of <em>The Adjoint of the Markov Operator</em>; combining, $U_rPU_r=P^{\mathrm{rev}}=P$ and $P$ commutes with the unitary involution $U_r$, so the refinement theorem applies with $J=U_r$.</p>

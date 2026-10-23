@@ -79,7 +79,7 @@
 <h3 id="statement-and-sharpness">Statement and Sharpness</h3>
 <p><strong>Theorem (Banach contraction principle).</strong> Let $(M,d)$ be a complete metric space and $T:M\to M$ a contraction with constant $\kappa<1$, that is, $d(Tx,Ty)\le\kappa\,d(x,y)$ for all $x,y$. Then $T$ has exactly one fixed point $x^*$, and for every $x \in M$,</p>
 <p>$$
-d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}\,d(x,Tx),
+\boxed{\;d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}\,d(x,Tx)\;},
 $$</p>
 <p>so the iterates converge to $x^*$ at the rate of a geometric series.</p>
 <p><em>Proof.</em> Let $x_0=x$ and $x_n=T^nx$. Then $d(x_{n+1},x_n)\le\kappa^nd(x_1,x_0)$, so for $m>n$,</p>
@@ -131,7 +131,7 @@ $$</p>
 <p>The theorem is the standard tool for existence in nonlinear problems: one embeds the given equation in a one-parameter family joining it to the trivial equation, proves the a priori bound that keeps the fixed points away from the boundary, and concludes.</p>
 <p><strong>Theorem (Schaefer).</strong> Let $T:X\to X$ be continuous and compact, and suppose the set</p>
 <p>$$
-S=\{x \in X:x=\lambda\,Tx \text{ for some } \lambda \in[0,1]\}
+\boxed{\;S=\{x \in X:x=\lambda\,Tx \text{ for some } \lambda \in[0,1]\}\;}
 $$</p>
 <p>is bounded. Then $T$ has a fixed point.</p>
 <p><em>Proof.</em> Choose $r>\sup_{x \in S}\|x\|$ and $\Omega=B(0,r)$; the homotopy $H(t,x)=t\,Tx$ has no fixed point on $\partial\Omega$ for $t \in[0,1]$, because a fixed point with $\|x\|=r$ would lie in $S$; the continuation theorem applies.</p>

@@ -73,8 +73,8 @@
 <p>This article computes the exponential polar decomposition of eight biquaternions, one after another. It is the computational companion of <em>Exponential Polar Decomposition of Biquaternions</em>. The decomposition, its existence and uniqueness, the Cartan logarithm and the four-factor word are established there and in <em>Biquaternion Elementary Functions</em>; the proofs are not repeated.</p>
 <p>Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$. The modulus, the phase, the rapidity, the rotor angle and the two axes are computed from them by the formulas of §<em>The Method</em>, and the word is checked against the reconstruction</p>
 <p>$$
-\tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
-\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+\boxed{\; \tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr) \;}.
 $$</p>
 <p>The eight cases cover the identity, the two pure rotors, the pure boost, the parallel axes, the orthogonal axes, the non-parallel axes and the generic null-vector element.</p>
 <div class="table-scroll"><table>
@@ -132,7 +132,7 @@ $$</p>
 \tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
 $$</p>
 <p>written in full throughout. The modulus is the principal square root $\bigl(Q_t^2+Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$, taken in the branch with non-negative real part and written $r e^{i\alpha}$ with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$. The rapidity is $\psi\ge0$, the rotor angle is $\theta\in[0,2\pi]$, and the axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$ are real unit vectors, undefined when the corresponding angle vanishes. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
-<p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its polar data, its factors and its check. The boundary is treated separately (§<em>The Null Cone Family</em>). The summary collects the results in three tables and reads the patterns across the cases (§<em>Summary</em>).</p>
+<p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its polar data, its factors and its check. The boundary is treated separately (§<em>The Null Cone Family</em>). The summary collects the results in three tables and reads the patterns across the cases (§<em>Summary</em>). The Q-adapted basis, the nilpotents and the spinors of the same eight cases are collected in <em>Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions</em>.</p>
 <h2 id="the-method">The Method</h2>
 <h3 id="the-coordinates">The Coordinates</h3>
 <p>For $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ the four complex coordinates are $Q_t,Q_x,Q_y,Q_z$. The modulus is the principal square root</p>
@@ -157,10 +157,10 @@ $$</p>
 $$</p>
 <p>The Hermitian factor is</p>
 <p>$$
-\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\boxed{\; \tilde U_{\mathrm b}=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
 =\cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
 \qquad
-\psi=2\operatorname{arcosh}\bigl(\operatorname{Sc}\tilde U_{\mathrm b}\bigr),
+\psi=2\operatorname{arcosh}\bigl(\operatorname{Sc}\tilde U_{\mathrm b}\bigr) \;},
 $$</p>
 <p>and the unitary factor is</p>
 <p>$$
@@ -209,7 +209,7 @@ $$</p>
 <p>and its defect is the largest modulus of a coefficient difference in $\exp(\tilde Q_{\log})-\tilde Q$.</p>
 <p>The true logarithm is the principal logarithm of the unit factor, shifted by the scalar term,</p>
 <p>$$
-\operatorname{Log}\tilde Q=(\ln r+i\alpha)e_t+\operatorname{Log}\tilde U,
+\boxed{\; \operatorname{Log}\tilde Q=(\ln r+i\alpha)e_t+\operatorname{Log}\tilde U \;},
 $$</p>
 <p>where $\operatorname{Log}\tilde U$ is the principal logarithm of <em>Biquaternion Elementary Functions</em>, evaluated on the unit factor. When the unit factor is unipotent, $(\tilde U-e_t)^2=0$ and the series truncates:</p>
 <p>$$
@@ -1043,6 +1043,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.md">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions</a>, for the eigenbasis, the idempotents and the spinors of the same eight cases.</li>
 <li><a href="exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a>, for the four-factor word, the Cartan decomposition, existence, uniqueness and the boundary.</li>
 <li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential, the logarithm, the kernel and the degenerate limit.</li>
 <li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the modulus and the unit factor.</li>

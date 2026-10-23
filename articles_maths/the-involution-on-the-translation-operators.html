@@ -85,7 +85,7 @@ $$</p>
 <h3 id="the-adjoint">The Adjoint</h3>
 <p><strong>Theorem.</strong> The adjoint of the left translation is the left translation by the inverse,</p>
 <p>$$
-T_a^{*} = T_{a^{-1}} = T_a^{-1}, \qquad\text{and}\qquad S_a^{*} = S_{a^{-1}},
+\boxed{\;T_a^{*} = T_{a^{-1}} = T_a^{-1}, \qquad\text{and}\qquad S_a^{*} = S_{a^{-1}}\;},
 $$</p>
 <p>with respect to the invariant inner product of $L^2(G)$.</p>
 <p><strong>Proof.</strong> $\langle T_a f, h\rangle = \int f(a^{-1}x)\overline{h(x)}\,dx$; the change of variable $y = a^{-1}x$ gives $dx = dy$ by left invariance, so $= \int f(y)\overline{h(ay)}\,dy = \langle f, T_{a^{-1}}h\rangle$, hence $T_a^{*} = T_{a^{-1}}$; the right case is the same computation. This is a special case of <em>The Adjoint of a Symmetry Operator</em> for the isometry $T_a$.</p>
@@ -101,7 +101,7 @@ $$</p>
 <h3 id="the-inversion">The Inversion</h3>
 <p><strong>Proposition.</strong> The <strong>inversion</strong> $\iota(a) = a^{-1}$ induces the map $T_a \mapsto T_{a^{-1}} = T_a^{-1}$ on the translations, which is the <strong>operator inversion</strong>; it is an involution of the family, it reverses the composition law,
 $$
-\tau_{\iota}(T_aT_b) = T_{(ab)^{-1}} = T_{b^{-1}a^{-1}} = T_{b^{-1}}T_{a^{-1}} = \tau_{\iota}(T_b)\,\tau_{\iota}(T_a),
+\boxed{\;\tau_{\iota}(T_aT_b) = T_{(ab)^{-1}} = T_{b^{-1}a^{-1}} = T_{b^{-1}}T_{a^{-1}} = \tau_{\iota}(T_b)\,\tau_{\iota}(T_a)\;},
 $$
 and it is an automorphism of the family exactly when $G$ is abelian.</p>
 <p><strong>Proof.</strong> The inversion is an anti-automorphism of $G$, $(ab)^{-1} = b^{-1}a^{-1}$, so the induced map reverses the composition; it is an automorphism exactly when $G$ is abelian, since an anti-automorphism is an automorphism exactly then. This is the elementary group theory of the inversion of a group.</p>
@@ -122,7 +122,7 @@ $$
 which is an involution, $C^2 = \mathrm{id}$.</p>
 <p><strong>Proposition.</strong> The reversing symmetry swaps the left and the right translations,
 $$
-C\,T_a\,C = S_a, \qquad C\,S_a\,C = T_a,
+\boxed{\;C\,T_a\,C = S_a, \qquad C\,S_a\,C = T_a\;},
 $$
 because the inversion is an anti-automorphism; it is unitary when the bi-invariant measure exists ($G$ unimodular) and has $\lVert C\rVert = 1$ in general; and it intertwines the inversion on the translations, $C\,T_a = S_a\,C$.</p>
 <p><strong>Proof.</strong> $(C T_a C f)(x) = (T_a C f)(x^{-1}) = (Cf)(a^{-1}x^{-1}) = f((a^{-1}x^{-1})^{-1}) = f(xa) = (S_a f)(x)$; the other identity is the same with $a$ replaced by $a^{-1}$. The unitarity is the invariance of the measure under the inversion, which holds exactly for a unimodular group, <em>Locally Compact Groups and Haar Measure</em>.</p>

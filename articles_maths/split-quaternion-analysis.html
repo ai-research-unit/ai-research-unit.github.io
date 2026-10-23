@@ -80,7 +80,9 @@ $$</p>
 <p>This is the <strong>Euclidean norm</strong> of the algebra. The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ is indefinite and is not a norm in the analytic sense.</p>
 <p><strong>Theorem (The Algebra Is a Normed Algebra up to a Constant).</strong> For all $\tilde q_1,\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$,</p>
 <p>$$
-|\tilde q_1 \tilde q_2| \leq \sqrt{2}\,|\tilde q_1|\,|\tilde q_2| .
+\boxed{\;
+|\tilde q_1 \tilde q_2| \leq \sqrt{2}\,|\tilde q_1|\,|\tilde q_2|
+\;}.
 $$</p>
 <p>The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{2}$, and it induces the product topology of $\mathbb{R}^4$.</p>
 <p><strong>Proof.</strong> In the four real coordinates the product is bilinear, and the bound $|\tilde q_1 \tilde q_2|^2 \leq 2\,|\tilde q_1|^2|\tilde q_2|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_{1t}q_{2t} - B(\vec q_1,\vec q_2)$ and the vector part $q_{1t}\vec q_2 + q_{2t}\vec q_1 + \tfrac12[\vec q_1,\vec q_2]$; equality is attained at $\tilde q_1 = \tilde q_2 = 1 + \vec e_y$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.</p>
@@ -117,7 +119,9 @@ $$</p>
 <p>acting on functions of the four coordinates, and the <strong>scalar</strong> derivative is $\partial/\partial q_t$.</p>
 <p><strong>Theorem (The Square of the Operator Is the Wave Operator).</strong> Using $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$ and $e_ie_j = -e_je_i$ for $i \neq j$,</p>
 <p>$$
-D^2 = -\frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} = \Box_{(2,1)},
+\boxed{\;
+D^2 = -\frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} = \Box_{(2,1)}
+\;},
 $$</p>
 <p>the wave operator of the form of signature $(2,1)$, which is hyperbolic. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone</p>
 <p>$$
@@ -139,7 +143,9 @@ $$</p>
 <h2 id="singularities">Singularities</h2>
 <p><strong>Theorem (The Inverse and Its Singular Set).</strong> The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $\tilde q = q_t + \vec q$ with $\vec q \in V$, then</p>
 <p>$$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{q_t - \vec q}{q_t^2 - \langle \vec q\rangle_{\natural}},
+\boxed{\;
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{q_t - \vec q}{q_t^2 - \langle \vec q\rangle_{\natural}}
+\;},
 $$</p>
 <p>which blows up as the denominator tends to zero, and the limit depends on the direction of approach: along a null direction the inverse is unbounded, and along the split-complex subalgebra directions the denominator vanishes on the isotropic lines.</p>
 <p><strong>Proof.</strong> The formula for the inverse is that of <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>; the denominator is $\langle\tilde q\rangle_{\natural}$, which vanishes exactly on the zero divisor set by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>; the unboundedness along the null directions is immediate from the formula, since the numerator does not vanish there.</p>

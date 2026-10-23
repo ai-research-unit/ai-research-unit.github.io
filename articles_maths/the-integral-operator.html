@@ -181,9 +181,9 @@ article of this group.</p>
 <p><strong>Theorem (the Hilbert–Schmidt bound).</strong> If $K\in L^2(X\times Y,\mu\otimes\nu)$, then $T_K$ maps
 $L^2(Y,\nu)$ boundedly into $L^2(X,\mu)$, with
 $$
-\lVert T_K\rVert\leq\lVert K\rVert_{L^2(X\times Y)},
+\boxed{\;\lVert T_K\rVert\leq\lVert K\rVert_{L^2(X\times Y)},
 \qquad
-\lVert K\rVert_{L^2(X\times Y)}^2=\iint_{X\times Y}\lvert K(x,y)\rvert^2d\mu(x)\,d\nu(y).
+\lVert K\rVert_{L^2(X\times Y)}^2=\iint_{X\times Y}\lvert K(x,y)\rvert^2d\mu(x)\,d\nu(y)\;}.
 $$</p>
 <p><strong>Proof.</strong> For $f\in L^2(Y,\nu)$ and almost every $x$ the function $y\mapsto K(x,y)$ lies in $L^2(Y,\nu)$
 by Tonelli, so Cauchy–Schwarz gives $\lvert(T_Kf)(x)\rvert^2\le\lVert K(x,\cdot)\rVert_2^2\lVert f\rVert_2^2$
@@ -201,9 +201,9 @@ defines a bounded operator with no further hypothesis.</p>
 <h3 id="the-schur-test">The Schur Test</h3>
 <p><strong>Theorem (Schur test).</strong> Let $X=Y$ and let $K\ge0$ be a measurable kernel for which there is $C\ge0$ with
 $$
-\int_XK(x,y)\,d\mu(y)\leq C\ \text{for almost every }x,
+\boxed{\;\int_XK(x,y)\,d\mu(y)\leq C\ \text{for almost every }x,
 \qquad
-\int_XK(x,y)\,d\mu(x)\leq C\ \text{for almost every }y .
+\int_XK(x,y)\,d\mu(x)\leq C\ \text{for almost every }y\;} .
 $$
 Then $T_K$ maps $L^{n}(\mu)$ boundedly into itself for every $1\leq p\leq\infty$, with
 $\lVert T_K\rVert_{L^{n}}\to L^{n}\leq C$.</p>
@@ -269,7 +269,7 @@ statement, and the basis-independence is the basis-independence of the Parseval 
 <h3 id="the-ideal-property">The Ideal Property</h3>
 <p><strong>Theorem.</strong> Let $K\in L^2(X\times Z)$ and $L\in L^2(Z\times Y)$. Then $K\star L\in L^2(X\times Y)$ and
 $$
-\lVert K\star L\rVert_{\mathrm{HS}}\leq\lVert K\rVert_{\mathrm{HS}}\,\lVert L\rVert_{\mathrm{HS}} .
+\boxed{\;\lVert K\star L\rVert_{\mathrm{HS}}\leq\lVert K\rVert_{\mathrm{HS}}\,\lVert L\rVert_{\mathrm{HS}}\;} .
 $$
 Consequently the Hilbert–Schmidt operators are closed under composition and under multiplication on either
 side by an integral operator, and the composition of two Hilbert–Schmidt operators is Hilbert–Schmidt.</p>

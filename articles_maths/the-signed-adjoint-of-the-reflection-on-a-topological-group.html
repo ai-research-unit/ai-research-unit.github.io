@@ -80,7 +80,7 @@ $$</p>
 <h2 id="the-adjoint-of-a-reflection">The Adjoint of a Reflection</h2>
 <p><strong>Theorem (the class of reflections is closed under the adjoint).</strong> With respect to the signed form $B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$, the adjoint of the signed conjugation is the signed conjugation by the inverse,</p>
 <p>$$
-\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a} ,
+\boxed{\;\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a}\;} ,
 $$</p>
 <p>so the adjoint of a reflection is the reflection carried by the inverse of the carrying element, and the adjoint operation is an involution on the set of reflections.</p>
 <p><strong>Proof.</strong> By the adjoint formula for the signed sandwich, $\rho_a^\dagger = (\Sigma^\alpha_{a,a^{-1}})^\dagger = \Sigma^\alpha_{a^{-1},(a^{-1})^{-1}} = \Sigma^\alpha_{a^{-1},a} = \rho_{a^{-1}}$. If $a\alpha(a)$ is central then so is $a^{-1}\alpha(a^{-1}) = (a\alpha(a))^{-1}$, so $\rho_{a^{-1}}$ is again a reflection; and $(\rho_{a^{-1}})^\dagger = \rho_a$.</p>
@@ -91,7 +91,7 @@ $$</p>
 <p><strong>Proof.</strong> Self-adjointness: $\rho_a^\dagger = \rho_{a^{-1}}$ equals $\rho_a$ exactly when $a^{-1} \in aZ(G)$, by the coset criterion for signed conjugations, and $a^{-1}\in aZ(G)$ is $a^2 \in Z(G)$. Unitarity: by the unitarity criterion with $b = a^{-1}$, the second condition is automatic and the first is $a^{-1}\alpha(a) \in Z(G)$. If $a\alpha(a)$ is central then $\alpha(a) = a^{-1}z$ with $z$ central, so $a^{-1}\alpha(a) = a^{-2}z$, which is central exactly when $a^2$ is central. Finally, an involution is self-adjoint if and only if it is unitary: self-adjointness gives $\rho_a^\dagger\rho_a = \rho_a^2 = \mathrm{id}$, and unitarity with $\rho_a^2 = \mathrm{id}$ gives $\rho_a^\dagger = \rho_a^{-1} = \rho_a$.</p>
 <p><strong>Corollary (the involution and its fixed space).</strong> Let $\rho_a$ be a self-adjoint reflection. Then the group algebra decomposes as the direct sum of the two eigenspaces of the involution,</p>
 <p>$$
-k[G] = \ker(\rho_a - \mathrm{id}) \oplus \ker(\rho_a + \mathrm{id}),
+\boxed{\;k[G] = \ker(\rho_a - \mathrm{id}) \oplus \ker(\rho_a + \mathrm{id})\;},
 $$</p>
 <p>the two summands are mutually orthogonal for the signed form, and the first is the fixed space of the reflection, the annihilator of the second.</p>
 <p><strong>Proof.</strong> An involution with $2$ invertible has the decomposition into its $\pm1$-eigenspaces. If $\rho_a$ is self-adjoint and $\rho_au = u$, $\rho_av = -v$ then $B_\alpha(u,v) = B_\alpha(\rho_au,v) = B_\alpha(u,\rho_av) = -B_\alpha(u,v)$, so $B_\alpha(u,v) = 0$; hence the summands are orthogonal and each is the annihilator of the other under the nondegenerate form.</p>

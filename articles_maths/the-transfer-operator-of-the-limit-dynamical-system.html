@@ -103,7 +103,7 @@ $$
 $$
 and when $d\varphi_*\mu/d\mu\equiv 1$, that is when $\mu$ is the invariant measure with unit Jacobian normalisation, $L_\varphi$ is the transpose of $U_\varphi$ with respect to $\mu$:
 $$
-\int (L_\varphi f)\,g\,d\mu=\int f\,(U_\varphi g)\,d\mu .
+\boxed{\;\int (L_\varphi f)\,g\,d\mu=\int f\,(U_\varphi g)\,d\mu\;} .
 $$</p>
 <p><em>Proof.</em> Change the variable $x=\varphi(y)$ in $\int f(y)g(\varphi(y))\,d\mu(y)$ and use the definition of the pushforward; the local degree is the image counting, and the Radon–Nikodym factor is the discrepancy between $\mu$ and $\varphi_*\mu$. When $\mu$ is invariant with unit Jacobian, the two agree and the identity is the transpose relation. This is the duality of <em>The Transfer Operator</em> specialised to the limit system, with the <strong>adjoint</strong> of the transfer operator treated in <em>The Adjoint of the Transfer Operator of the Limit Dynamical System</em> and <em>The Adjoint of the Koopman Operator</em>.</p>
 <h3 id="the-dual-action-on-measures">The Dual Action on Measures</h3>
@@ -126,7 +126,7 @@ $$
 where $\Delta_w$ is the Jacobian of the branch composition along $w$, the sum being the Frobenius–Perron normalisation of the $n$-th iterate of the transfer operator; the pressure is the logarithm of the leading eigenvalue of $L_\varphi$ on the potential.</p>
 <p><strong>Theorem (dimension is the root of the pressure).</strong> If the limit map is conformal with the inverse branches of the ratios $r_x$ and the system satisfies the open set condition, then the Hausdorff dimension of the limit space is the unique root $s$ of
 $$
-P(-s\log|\varphi'|)=0,\qquad\text{equivalently}\qquad \sum_{x\in X}r_x^{s}=1,
+\boxed{\;P(-s\log|\varphi'|)=0,\qquad\text{equivalently}\qquad \sum_{x\in X}r_x^{s}=1\;},
 $$
 and the equilibrium state of the potential $-s\log|\varphi'|$ is the self-similar measure of maximal dimension of <em>The Self-Similar Measure and the Invariant Measure</em>.</p>
 <p><em>Proof.</em> The Frobenius–Perron normalisation at level $n$ is $\sum_{|w|=n}\Delta_w^{-s}$, and its exponential growth rate is $P(-s\log|\varphi'|)$; the covering of $\mathcal{J}_G$ by the level-$n$ tiles shows that the dimension is the root, and the equilibrium state is the Gibbs measure of the potential, whose local dimension is constant $s$. This is the Bowen equation of <em>Fractal Geometry</em> and <em>Ergodic Theory</em> in the self-similar case; the derivation of the pressure from the transfer operator is the standard one of <em>The Transfer Operator</em>.</p>
@@ -140,7 +140,7 @@ so $L_\varphi U_\varphi=d\,U_\varphi\ \cdot$ the identity of the fibres, the loc
 <h3 id="ergodicity-the-spectral-gap-and-the-decay-of-correlations">Ergodicity, the Spectral Gap and the Decay of Correlations</h3>
 <p><strong>Theorem (the spectral reading of the mixing).</strong> The limit dynamical system is ergodic with respect to the invariant measure $\mu$ exactly when the eigenvalue $1$ of $L_\varphi$ on the continuous functions is simple, and it is mixing exactly when the rest of the spectrum of $L_\varphi$ on the H\"older functions is contained in a disc of radius $<1$, in which case the correlations
 $$
-C_n(f,g)=\int f\circ\varphi^n\,g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int g\,d\mu\Bigr)
+\boxed{\;C_n(f,g)=\int f\circ\varphi^n\,g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int g\,d\mu\Bigr)\;}
 $$
 decay exponentially, $|C_n(f,g)|\le C\theta^n$, and the central limit theorem holds for the Birkhoff sums.</p>
 <p><em>Proof sketch.</em> The eigenvalue $1$ corresponds to the invariant functions; simplicity is the ergodicity and the simplicity on the two-sided natural extension is the mixing, both of <em>Ergodic Theory</em>. The decay is the spectral gap: the resolvent of $L_\varphi$ on the H\"older space is analytic on a disc containing the unit circle except at $1$, and the correlations are the Fourier coefficients of the resolvent; the central limit theorem follows from the same gap. The statements are those of <em>The Transfer Operator</em> and <em>Ergodic Theory</em>, applied to the limit system.</p>

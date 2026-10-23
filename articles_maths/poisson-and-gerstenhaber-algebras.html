@@ -117,7 +117,7 @@ $$</p>
 <p>that is graded antisymmetric, graded derivation in each variable with respect to the exterior product, and that extends the commutator of derivations for $n = m = 1$ and the action on $A$ for $n = 1$, $m = 0$; it satisfies the graded Jacobi identity, so that $\Lambda^\bullet\operatorname{Der}(A)$ is a <strong>Gerstenhaber algebra</strong> in the sense of the next-but-one section.</p>
 <p><strong>Theorem.</strong> Let $A$ be a commutative $k$-algebra and $\pi\in\Lambda^2\operatorname{Der}(A)$ a bivector. The formula</p>
 <p>$$
-\{f,g\} = \pi(df\wedge dg)
+\boxed{\;\{f,g\} = \pi(df\wedge dg)\;}
 $$</p>
 <p>defines a Poisson bracket on $A$ if and only if $[\pi,\pi]_{SN} = 0$; the bracket is the skew-symmetrisation of a biderivation and the condition is the Jacobi identity, which for the bracket of the displayed form is equivalent to the vanishing of the Schouten–Nijenhuis square of the bivector.</p>
 <p><em>Proof.</em> The Leibniz rule is automatic from the definition of a polyderivation, since $\pi(df\wedge d(g h)) = \pi(df\wedge g\,dh)+\pi(df\wedge h\,dg)$ gives $\{f,gh\} = \{f,g\}h+g\{f,h\}$. For the Jacobi identity, the sum $\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\}$ is a trilinear alternating expression in the differentials, hence a trivector, and its vanishing for all $f,g,h$ is exactly the vanishing of $[\pi,\pi]_{SN}$, computed in the coordinates of the previous section as the displayed quadratic condition.</p>
@@ -160,7 +160,7 @@ $$</p>
 <p>so that $HH^\bullet(A,A)$ is a <strong>Gerstenhaber algebra</strong>; the bracket of two one-cocycles, that is of two derivations, is the commutator of the derivations, and the bracket of a one-cochain with a zero-cochain is the action of the derivation on the algebra.</p>
 <p><strong>Example (the Hochschild–Kostant–Rosenberg identification).</strong> For a polynomial algebra $A = k[x_1,\dots,x_n]$ over a field of characteristic zero the <strong>Hochschild–Kostant–Rosenberg theorem</strong> gives</p>
 <p>$$
-HH^\bullet(A,A)\cong\Lambda^\bullet\operatorname{Der}(A) = \Lambda^\bullet_A\bigl(\bigoplus_iA\,\partial/\partial x_i\bigr),
+\boxed{\;HH^\bullet(A,A)\cong\Lambda^\bullet\operatorname{Der}(A) = \Lambda^\bullet_A\bigl(\bigoplus_iA\,\partial/\partial x_i\bigr)\;},
 $$</p>
 <p>an isomorphism of Gerstenhaber algebras, the cup product corresponding to the exterior product and the Gerstenhaber bracket to the Schouten–Nijenhuis bracket; the isomorphism is the algebraic source of the identification of the Poisson cohomology of the previous section with the cohomology of the Hochschild-type complex, and it explains why the two brackets — the Schouten–Nijenhuis bracket of polyderivations and the Gerstenhaber bracket of Hochschild cochains — are the same bracket in the commutative case.</p>
 <p><strong>Corollary.</strong> Let $A$ be an associative algebra and $HH^2(A,A)$ its second Hochschild cohomology. An element $\pi\in HH^2(A,A)$ with $[\pi,\pi]_G = 0$, where $[\,,\,]_G$ is the Gerstenhaber bracket, is a <strong>Poisson structure</strong> on $A$ in the generalised sense of the theory: for a commutative $A$ these are the Poisson brackets of the first section, and for a noncommutative $A$ they are the structures whose double bracket vanishing is the condition for the associated deformation of the next section to exist.</p>
@@ -171,7 +171,7 @@ a*b = ab+\sum_{n\geq1}t^n\mu_n(a,b), \qquad \mu_n:A\times A\to A,
 $$</p>
 <p>which is associative, with $\mu_0$ the given product; two deformations are <strong>equivalent</strong> if they are related by a $k[[t]]$-linear automorphism of $A[[t]]$ reducing to the identity modulo $t$. Suppose $A$ commutative; the <strong>semi-classical bracket</strong> of a deformation is</p>
 <p>$$
-\{a,b\} = \mu_1(a,b)-\mu_1(b,a),
+\boxed{\;\{a,b\} = \mu_1(a,b)-\mu_1(b,a)\;},
 $$</p>
 <p>and the deformation is a <strong>quantisation</strong> of a Poisson structure when this bracket is a Poisson bracket on $A$.</p>
 <p><strong>Theorem (Gerstenhaber, standard).</strong> Let $A$ be an associative $k$-algebra and let $\mu_1$ be the first-order term of a formal deformation. Then the Hochschild differential applied to $\mu_1$ vanishes — the first-order associativity of the deformed product is exactly the condition that $\mu_1$ be a Hochschild two-cocycle — and if the deformation is a quantisation, its semi-classical bracket $\{a,b\} = \mu_1(a,b)-\mu_1(b,a)$ is a Poisson bracket; conversely, if a Poisson bracket $\{\,\,\}$ on a commutative $A$ is the semi-classical bracket of a deformation, the deformation is called a <strong>deformation quantisation</strong> of the bracket, and the obstruction to the existence of the deformation lies in the third Hochschild cohomology, in the sense of the deformation theory and of the article <em>Deformation Theory</em> in this corpus.</p>

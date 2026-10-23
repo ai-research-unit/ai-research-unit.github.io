@@ -119,7 +119,7 @@ $$</p>
 <h2 id="multiplicativity-and-the-composition-table">Multiplicativity and the Composition Table</h2>
 <p><strong>Proposition (multiplicativity).</strong> For all $x,z$,</p>
 <p>$$
-\Theta^{\alpha}_{xz}=\Theta^{\alpha}_x\circ\Theta^{\alpha}_z .
+\boxed{\;\Theta^{\alpha}_{xz}=\Theta^{\alpha}_x\circ\Theta^{\alpha}_z\;} .
 $$</p>
 <p>Hence $x\mapsto\Theta^{\alpha}_x$ is a homomorphism from the multiplicative monoid of the algebra to the monoid of $A$-linear endomorphisms, with $\Theta^{\alpha}_1=\mathrm{id}$.</p>
 <p><em>Proof.</em> The dagger is an anti-automorphism, $(xz)^{\dagger}=\bar{z}x^{\dagger}$, and $\alpha$ is an automorphism, $\alpha(xz)=\alpha(x)\alpha(z)$; then $\Theta^{\alpha}_{xz}(y)=\alpha(x)\alpha(z)\,y\,\bar{z}x^{\dagger}=\Theta^{\alpha}_x(\Theta^{\alpha}_z(y))$.</p>
@@ -182,7 +182,7 @@ $$</p>
 <h2 id="the-kernel-and-the-slice">The Kernel and the Slice</h2>
 <p><strong>Proposition (the kernel).</strong> The signed Hermitian sandwich is the identity exactly on</p>
 <p>$$
-\ker\Theta^{\alpha}=\bigl\{\,x : \alpha(x)\,x^{\dagger}=1\ \text{ and }\ x^{\dagger}\in Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)\,\bigr\},
+\boxed{\;\ker\Theta^{\alpha}=\bigl\{\,x : \alpha(x)\,x^{\dagger}=1\ \text{ and }\ x^{\dagger}\in Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)\,\bigr\}\;},
 $$</p>
 <p>a set of invertible elements. In particular the kernel contains the even central elements of the unitary slice, and on the slice it is $\ker\Theta^{\alpha}\cap U=F^{\times}\cap U$.</p>
 <p><em>Proof.</em> The equation $\Theta^{\alpha}_x=\mathrm{id}$ at $y=1$ reads $\alpha(x)x^{\dagger}=1$, so $x^{\dagger}$ is invertible with inverse $\alpha(x)$, and $x$ is invertible too. Substituting $\alpha(x)=(x^{\dagger})^{-1}$ into $\Theta^{\alpha}_x(y)=y$ gives $(x^{\dagger})^{-1}y\,x^{\dagger}=y$ for all $y$, that is $y\,x^{\dagger}=x^{\dagger}y$ for all $y$: the dagger of $x$ is central. Conversely a central dagger with $\alpha(x)x^{\dagger}=1$ gives the identity. On the slice the operator is the signed inner conjugation, whose kernel is the group $F^{\times}$ of scalars, by <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>.</p>
@@ -218,8 +218,8 @@ $$</p>
 $$</p>
 <p>and with the trivial involution this is $-\mathfrak{Q}(u)$ times the reflection in $u^{\perp}$,</p>
 <p>$$
-\Theta^{\alpha}_u(v)=-\mathfrak{Q}(u)\,\rho_u(v),\qquad
-\Theta_u(v)=\mathfrak{Q}(u)\,\rho_u(v).
+\boxed{\;\Theta^{\alpha}_u(v)=-\mathfrak{Q}(u)\,\rho_u(v),\qquad
+\Theta_u(v)=\mathfrak{Q}(u)\,\rho_u(v)\;}.
 $$</p>
 <p>On a vector of square $-1$ the signed Hermitian sandwich <strong>is</strong> the reflection, $\Theta^{\alpha}_u=\rho_u$, while the unsigned Hermitian sandwich is $-\rho_u$.</p>
 <p><em>Proof.</em> For $u\in V$ one has $u^{r}=u$ and $\alpha(u)=-u$, so $u^{\dagger}=\sigma(\alpha(u))=-\sigma(u)$; then $\Theta^{\alpha}_u(v)=(-u)v(-\sigma(u))=u\,v\,\sigma(u)$ and $\Theta_u(v)=-u\,v\,\sigma(u)$. With $\sigma=\mathrm{id}$ and the fundamental relation $uvu=2B(u,v)u-\mathfrak{Q}(u)v$ one has $u\,v\,u=\mathfrak{Q}(u)\bigl(2B(u,v)\mathfrak{Q}(u)^{-1}u-v\bigr)=-\mathfrak{Q}(u)\rho_u(v)$; for $\mathfrak{Q}(u)=-1$ this is $\rho_u(v)$.</p>

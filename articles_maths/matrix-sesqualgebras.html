@@ -98,7 +98,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition (the pairing is Hermitian and perfect).</strong> The pairing is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second, it is sesqui-symmetric, $\varphi(Y,X)=\varsigma\bigl(\varphi(X,Y)\bigr)$, and it is perfect: for the matrix units,</p>
 <p>$$
-\varphi(X,E_{ij}^{*})=X_{ij} ,
+\boxed{\;\varphi(X,E_{ij}^{*})=X_{ij}\;} ,
 $$</p>
 <p>so a matrix is recovered from its pairings against the matrix units, and the map $X\mapsto\varphi(X,\,\cdot\,)$ is a bijection.</p>
 <p><strong>Proof.</strong> The semilinearity in the second slot is the compatibility of the trace with the involution; the sesqui-symmetry is $\operatorname{tr}(YX^{*})=\varsigma\bigl(\operatorname{tr}(XY^{*})\bigr)$ by $\operatorname{tr}(Z^{*})=\varsigma(\operatorname{tr}Z)$ applied to $Z=YX^{*}=(XY^{*})^{*}$. For the perfection, $\varphi(X,E_{ij}^{*})=\operatorname{tr}(XE_{ji})$, since $(E_{ij})^{*}=E_{ji}$ and the conjugation is entrywise; the matrix $XE_{ji}$ has the $j$-th column of $X$ in its $i$-th column and zeroes elsewhere, so its trace is $X_{ij}$.</p>
@@ -110,7 +110,7 @@ $$</p>
 <h3 id="the-two-products">The Two Products</h3>
 <p><strong>Theorem (the parities of the two products).</strong> The ordinary product $ST$ is $\mathbb{C}$-bilinear in the two slots; the sesquilinear product $S\star T=ST^{*}$ is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second,</p>
 <p>$$
-(\lambda S)\star T=\lambda\,(S\star T),\qquad S\star(\lambda T)=\varsigma(\lambda)\,(S\star T) ,
+\boxed{\;(\lambda S)\star T=\lambda\,(S\star T),\qquad S\star(\lambda T)=\varsigma(\lambda)\,(S\star T)\;} ,
 $$</p>
 <p>and it is the derived product of the sesqualgebra $M_{n}(\mathbb{C})$ with its conjugate transpose. The unit $I$ is a right unit for $\star$, $T\star I=T$, and a two-sided unit only for the Hermitian matrices, where $I\star T=T^{*}=T$.</p>
 <p><strong>Proof.</strong> The bilinearity of the ordinary product is the $\mathbb{C}$-algebra structure. For the sesquilinear product, the first parity is the linearity of the product in the first slot and the second is $S\star(\lambda T)=S\,\varsigma(\lambda)T^{*}=\varsigma(\lambda)(S\star T)$. The unit laws are $T\star I=T\,I^{*}=T$ for every $T$, so $I$ is a right unit, and $I\star T=I\,T^{*}=T^{*}$, which is $T$ exactly for $T^{*}=T$.</p>
@@ -154,7 +154,7 @@ $$</p>
 <h3 id="the-identification-with-the-biquaternion-algebra">The Identification with the Biquaternion Algebra</h3>
 <p><strong>Theorem (the matrix model).</strong> The biquaternion algebra $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is isomorphic to $M_{2}(\mathbb{C})$ as a $\mathbb{C}$-algebra, by the assignment</p>
 <p>$$
-i\longmapsto i\,\sigma_{3},\qquad j\longmapsto i\,\sigma_{2},\qquad k\longmapsto i\,\sigma_{1} ,
+\boxed{\;i\longmapsto i\,\sigma_{3},\qquad j\longmapsto i\,\sigma_{2},\qquad k\longmapsto i\,\sigma_{1}\;} ,
 $$</p>
 <p>under which the relations $i^{2}=j^{2}=k^{2}=-1$, $ij=k$, $jk=i$, $ki=j$ of the quaternions hold.</p>
 <p><strong>Proof.</strong> The three images are the matrices $i\sigma_{3}$, $i\sigma_{2}$, $i\sigma_{1}$; their squares are $-I$ because $\sigma_{j}^{2}=I$, and the three products are $i\sigma_{3}\cdot i\sigma_{2}=-\sigma_{3}\sigma_{2}=i\sigma_{1}$, $i\sigma_{2}\cdot i\sigma_{1}=-\sigma_{2}\sigma_{1}=i\sigma_{3}$ and $i\sigma_{1}\cdot i\sigma_{3}=-\sigma_{1}\sigma_{3}=i\sigma_{2}$, by the multiplication table above, which is $ij=k$, $jk=i$, $ki=j$. So the assignment extends to a homomorphism $\mathbb{B}\to M_{2}(\mathbb{C})$ of $\mathbb{C}$-algebras, which is an isomorphism because the images are linearly independent and the two algebras have the same complex rank, namely four.</p>

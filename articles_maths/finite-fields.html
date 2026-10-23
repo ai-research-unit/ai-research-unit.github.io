@@ -85,7 +85,7 @@
 <h3 id="construction">Construction</h3>
 <p><strong>Theorem.</strong> For every prime power $q = p^n$ there exists a field with $q$ elements, namely the splitting field of</p>
 <p>$$
-f_q(x) = x^{q} - x
+\boxed{\;f_q(x) = x^{q} - x\;}
 $$</p>
 <p>over $\mathbb{F}_p$.</p>
 <p><strong>Proof.</strong> Let $K$ be the splitting field of $f_q$ over $\mathbb{F}_p$. First, $f_q$ has no repeated root: its derivative is $f_q'(x) = q x^{q-1} - 1 = -1$ in characteristic $p$, since $q = p^n$ is divisible by $p$; hence $\gcd(f_q, f_q') = 1$ and $f_q$ is separable. The roots of $f_q$ in $K$ form a subfield:</p>
@@ -104,7 +104,7 @@ $$</p>
 <h3 id="definition-and-properties">Definition and Properties</h3>
 <p><strong>Theorem (Frobenius).</strong> Let $K$ be a field of characteristic $p > 0$. The map</p>
 <p>$$
-\varphi : K \to K, \qquad \varphi(x) = x^p,
+\boxed{\;\varphi : K \to K, \qquad \varphi(x) = x^p\;},
 $$</p>
 <p>is an injective field endomorphism, called the <strong>Frobenius map</strong>. If $K$ is finite, $\varphi$ is an automorphism, of order $\log_p \lvert K \rvert$ when $K = \mathbb{F}_{p^n}$.</p>
 <p><strong>Proof.</strong> Additivity is the freshman's dream: $(x + y)^p = x^p + y^p$, since the intermediate binomial coefficients $\binom{p}{k}$ are divisible by $p$ for $0 < k < p$. Multiplicativity is immediate, and $\varphi(1) = 1$. The kernel is $0$, since $x^p = 0$ forces $x = 0$, so $\varphi$ is injective; an injective map from a finite set to itself is bijective, so $\varphi$ is an automorphism when $K$ is finite. On $\mathbb{F}_{p^n}$, $\varphi^n(x) = x^{p^n} = x$ for all $x$, since every element satisfies $x^{p^n} = x$; and $\varphi^k \neq \mathrm{id}$ for $0 < k < n$, because if $\varphi^k$ were the identity then every element of $\mathbb{F}_{p^n}$ would satisfy $x^{p^k} = x$, so all $p^n$ elements of the field would be roots of the polynomial $x^{p^k} - x$ of degree $p^k < p^n$, which is impossible. Hence the order is exactly $n$.</p>
@@ -132,7 +132,7 @@ $$</p>
 <p><strong>Proof.</strong> The generators of the cyclic group of order $q - 1$ are exactly the $\gamma^k$ with $\gcd(k, q-1) = 1$, so there are $\varphi(q-1)$ of them. Each monic primitive polynomial of degree $n$ has exactly $n$ roots in $\mathbb{F}_q$, namely the conjugates of a primitive element under the Frobenius, and the sets of roots of distinct such polynomials are disjoint, partitioning the $\varphi(q-1)$ primitive elements into classes of size $n$.</p>
 <p><strong>Corollary (number of irreducibles).</strong> The number of monic irreducible polynomials of degree $n$ over $\mathbb{F}_p$ is</p>
 <p>$$
-\frac{1}{n} \sum_{d \mid n} \mu(d)\, p^{n/d},
+\boxed{\;\frac{1}{n} \sum_{d \mid n} \mu(d)\, p^{n/d}\;},
 $$</p>
 <p>where $\mu$ is the Möbius function. Each is the minimal polynomial of an element of $\mathbb{F}_{p^n}$ of degree $n$ over $\mathbb{F}_p$, and the formula counts the Frobenius orbits of size $n$.</p>
 <p><strong>Proof.</strong> Let $d$ be the degree of $\alpha \in \mathbb{F}_{p^n}$ over $\mathbb{F}_p$. Then $d \mid n$, the element $\alpha$ lies in $\mathbb{F}_{p^d}$ and in no proper subfield of it, and $m_\alpha$ has degree equal to the size of the Frobenius orbit of $\alpha$, so the elements of degree $d$ are exactly those counted by the Möbius inversion. Counting the $p^n$ elements of $\mathbb{F}_{p^n}$ by the degrees of their minimal polynomials gives the formula.</p>

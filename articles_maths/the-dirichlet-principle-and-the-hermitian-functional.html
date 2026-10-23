@@ -95,7 +95,7 @@ $$</p>
 <p><em>Proof.</em> Reality is the Hermitian property, $\mathfrak{a}(w,w)=\overline{\mathfrak{a}(w,w)}$. Strict convexity is the strict positivity of the quadratic part: for $w\neq v$ and $0<t<1$, $\mathfrak{a}(tw+(1-t)v,\cdot)$ expands into $ta(w,\cdot)+(1-t)\mathfrak{a}(v,\cdot)$ and the quadratic part is strictly convex because $\mathfrak{a}$ is coercive and the form modulus is bounded. For the lower bound, $|2\operatorname{Re}\langle f,w\rangle|\le2\|f\|_{L^2}\|w\|_{L^2}\le\frac{c}{2}\|w\|_{H^1}^2+\frac{2}{c}\|f\|_{L^2}^2$ by the elementary inequality $2\|f\|\|w\|\le\frac{c}{2}\|w\|^2+\frac{2}{c}\|f\|^2$; subtracting from the coercive bound gives the display. Coercive convex continuous functionals on a closed convex set attain their minimum.</p>
 <p><strong>Proposition (completion of the square).</strong> Let $w_0$ be the minimiser of $E_f$. Then for every $w\in H^1_0(\Omega)$,</p>
 <p>$$
-E_f(w) = \mathfrak{a}(w-w_0,w-w_0) - \mathfrak{a}(w_0,w_0) ,
+\boxed{\;E_f(w) = \mathfrak{a}(w-w_0,w-w_0) - \mathfrak{a}(w_0,w_0)\;} ,
 $$</p>
 <p>so that the minimum value is $-\mathfrak{a}(w_0,w_0)=-\langle f,w_0\rangle$, and $E_f$ is the translate of the squared form norm.</p>
 <p><em>Proof.</em> Expanding the right side and using the Hermitian symmetry $\mathfrak{a}(w,w_0)=\overline{\mathfrak{a}(w_0,w)}$ together with the variational equation $\mathfrak{a}(w_0,w)=\langle f,w\rangle$,</p>
@@ -115,7 +115,7 @@ $$</p>
 <p><strong>Theorem (the classical Dirichlet principle).</strong> Let $U\in H^1(\Omega)$ be harmonic on $\Omega$ and let $\mathcal{E}_U=\{w\in H^1(\Omega) : w-U\in H^1_0(\Omega)\}$ be the affine set of admissible functions with the boundary data of $U$. Then $U$ minimises the Dirichlet integral $\int_\Omega|\nabla w|^2$ over $\mathcal{E}_U$, and it is the unique minimiser.</p>
 <p><em>Proof.</em> For any $w=U+\phi$ with $\phi\in H^1_0(\Omega)$,</p>
 <p>$$
-\int|\nabla w|^2 = \int|\nabla U|^2 + 2\operatorname{Re}\int\nabla U\cdot\overline{\nabla\phi} + \int|\nabla\phi|^2 ,
+\boxed{\;\int|\nabla w|^2 = \int|\nabla U|^2 + 2\operatorname{Re}\int\nabla U\cdot\overline{\nabla\phi} + \int|\nabla\phi|^2\;} ,
 $$</p>
 <p>and the middle term vanishes because $\Delta U=0$ in the weak sense and $\phi$ has trace zero; hence $\int|\nabla w|^2\ge\int|\nabla U|^2$, with equality only for $\phi=0$ by the Poincaré inequality. The classical minimiser is therefore the harmonic function with the given boundary values.</p>
 <h2 id="regularity-of-the-minimiser">Regularity of the Minimiser</h2>
@@ -131,7 +131,7 @@ $$</p>
 <p><em>Proof.</em> Substituting $w=U+\phi$ in the Dirichlet principle, the functional becomes $E_f(U+\phi)$, whose part depending on $\phi$ is $\mathfrak{a}(\phi,\phi)-2\operatorname{Re}\langle f,\phi\rangle+2\operatorname{Re}\mathfrak{a}(U,\phi)$ plus a constant; the minimiser satisfies the variational equation displayed, and Lax–Milgram gives existence, uniqueness and the affine bounded dependence on $U$.</p>
 <p><strong>Theorem (variational inequalities).</strong> Let $K\subseteq H^1_0(\Omega)$ be a nonempty closed convex set and let $\mathfrak{a}$ be a bounded coercive Hermitian form. Then $E_f$ has a unique minimiser $w$ over $K$, and $w$ is characterised by the variational inequality</p>
 <p>$$
-\operatorname{Re}\bigl(\mathfrak{a}(w,v-w)\bigr) \ge \operatorname{Re}\langle f,v-w\rangle \qquad \text{for every } v\in K .
+\boxed{\;\operatorname{Re}\bigl(\mathfrak{a}(w,v-w)\bigr) \ge \operatorname{Re}\langle f,v-w\rangle \qquad \text{for every } v\in K\;} .
 $$</p>
 <p><em>Proof.</em> Existence is the standard argument for a coercive convex continuous functional on a closed convex set: a minimising sequence is bounded, so a subsequence converges weakly, and the weak lower semicontinuity of $E_f$, which is convex continuous, gives a minimiser. Uniqueness is strict convexity, using the parallelogram identity for the quadratic part. For the characterisation, the convexity of $K$ makes $w+t(v-w)\in K$ for $0\le t\le1$; the derivative of $t\mapsto E_f(w+t(v-w))$ at $t=0$ is $2\operatorname{Re}(\mathfrak{a}(w,v-w)-\langle f,v-w\rangle)$, and it must be nonnegative.</p>
 <p><strong>Example (the obstacle problem).</strong> For $K=\{w\in H^1_0(\Omega) : w\ge\psi \text{ a.e.}\}$ with an obstacle $\psi\le0$ on the boundary and datum $f=0$, the minimiser satisfies the variational inequality and is the smallest superharmonic majorant of $\psi$: $-\Delta w\ge0$ on $\Omega$, $-\Delta w=0$ on the coincidence set $\{w>\psi\}$, and $w\ge\psi$. The inequality replaces the equation on the contact set, and it is the prototype of the variational inequalities of <em>The Calculus of Variations</em> and, in the literature, of <em>An Introduction to Variational Inequalities and Their Applications</em> by Kinderlehrer and Stampacchia.</p>
