@@ -195,7 +195,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>In the split complex case the zero divisor set is exactly the <strong>null cone</strong> of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural}$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the <strong>reduced norm</strong> $N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.</p>
+<p>In the split complex case the zero divisor set is exactly the <strong>null cone</strong> of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural}$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the <strong>reduced norm</strong> $\langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.</p>
 <h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
 <p>The zero divisor structure of $\mathbb{H}_{\mathbb{D}}$ is fundamentally different from that of the biquaternion algebra $\mathbb{B}$.</p>
 <h3 id="the-biquaternion-case">The Biquaternion Case</h3>
@@ -349,7 +349,7 @@ $$
 The condition is <strong>linear</strong> in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{H}_{\mathbb{D}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $\tilde\Pi_1$, $\tilde\Pi_2$, and $e_t$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.</p>
 <p>The criterion is not the vanishing of the split-biquaternion norm. The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is anisotropic, so it vanishes only at the origin and does not detect the zero divisors; the detecting quantity is the <strong>reduced norm</strong>
 $$
-\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
+\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
 $$
 a real quartic and the product of the two ordinary quaternion norms, whose nonzero zeros are exactly the zero divisors. The split-biquaternion norm, the reduced norm, the invertibility criterion, and the inverse formula are studied in <em>Split-Biquaternion Norm and Invertibility</em>.</p>
 <p>The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreducible components, the two four-dimensional subspaces, and it is invariant under scaling; the zero divisor set is that union with the origin removed. It is not the null set of the split-biquaternion norm and not a quadric: unlike the split complex case, where the zero divisors are the null cone of the quadratic norm, here they are the nonzero zeros of the quartic $\Delta$. The split complex subspace contains zero divisors, inherited from $\mathbb{D}$; the quaternion, Hermitian, and anti-Hermitian subspaces contain none. In the biquaternion algebra, by contrast, the zero divisor set is a single complex cone of complex dimension $3$ (real dimension $6$), because $\mathbb{C}$ is a field and the norm itself is the criterion.</p>
@@ -391,11 +391,11 @@ a real quartic and the product of the two ordinary quaternion norms, whose nonze
 <td>Split-Biquaternion norm</td>
 </tr>
 <tr>
-<td>$N_{\mathbb{H}}(\tilde{Q}_\pm)$</td>
+<td>$\langle\tilde{Q}_\pm\rangle_{\natural}$</td>
 <td>Ordinary quaternion norm of an idempotent component</td>
 </tr>
 <tr>
-<td>$\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$</td>
+<td>$\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$</td>
 <td>Reduced norm (determinant)</td>
 </tr>
 <tr>

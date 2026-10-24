@@ -105,7 +105,7 @@ hyperplane</p>
 \ker L^{\star}_{\tilde Q_5} = \{\tilde Q_4\in\mathbb{B}: \langle\tilde Q_5,\tilde Q_4\rangle_{\natural}=0\},
 $$</p>
 <p>of complex dimension $3$ for $\tilde Q_5\ne0$; it is the hyperplane of the elements paired to zero with
-$\tilde Q_5$ by $N$, and it contains
+$\tilde Q_5$ by the form $\langle\cdot,\cdot\rangle_{\natural}$, and it contains
 $\tilde Q_5$ exactly when $\tilde Q_5$ is isotropic.</p>
 <p><em>Proof.</em> The columns span $\mathbb{C}e_t$ if some $Q_{5\mu}\ne0$, and the image is central; the kernel is the
 kernel of the linear form $\langle\tilde Q_5,\cdot\rangle_{\natural}$, whose rank is $1$ because the form is non-degenerate. The last
@@ -151,7 +151,7 @@ part of a multiplier.</p>
 <p><strong>Definition.</strong> The <strong>adjoint</strong> of a complex-linear map $T$ with respect to $\langle\cdot\rangle_{\natural}$ is the linear map $T^{\dagger}$
 determined by</p>
 <p>$$
-N\bigl(T\tilde Q_2,\tilde Q_3\bigr) = N\bigl(\tilde Q_2,T^{\dagger}\tilde Q_3\bigr) \qquad
+\langle T\tilde Q_2,\tilde Q_3\rangle_{\natural} = \langle\tilde Q_2,T^{\dagger}\tilde Q_3\rangle_{\natural} \qquad
 \text{for all } \tilde Q_2,\tilde Q_3\in\mathbb{B},
 $$</p>
 <p>which exists and is unique because $\langle\cdot\rangle_{\natural}$ is non-degenerate.</p>
@@ -163,7 +163,7 @@ $$</p>
 L^{\star}_{\tilde Q_5}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde Q_5\in\mathbb{C}e_t
 \;}.
 $$</p>
-<p><em>Proof.</em> $\langle L^{\star}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\rangle_{\natural}=N\bigl(\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu Q_{5\mu} Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu Q_{5\mu} Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} Q_{5\mu} Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
+<p><em>Proof.</em> $\langle L^{\star}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\rangle_{\natural}=\langle\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\rangle_{\natural}=\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu Q_{5\mu} Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu Q_{5\mu} Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} Q_{5\mu} Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
 self-adjointness, compare the adjoint with $L^{\star}_{\tilde Q_5}\tilde Q_3=\langle\tilde Q_5,\tilde Q_3\rangle_{\natural}e_t$: the identity
 $\sum_\mu Q_{5\mu} Q_{3t}e_\mu=\bigl(\sum_\mu Q_{5\mu} Q_{3\mu}\bigr)e_t$ for all $\tilde Q_3$ forces $Q_{5\mu}=0$ for
 $\mu\in\{x,y,z\}$.</p>
@@ -297,7 +297,7 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 </tr>
 <tr>
 <td>$\bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}$</td>
-<td>the adjoint with respect to $N$</td>
+<td>the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>$G_N=\{T:T^{\mathsf T}T=I_4\}$</td>
