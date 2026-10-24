@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Norm-Regular, Spectrally Regular Sector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-norm-regular-spectrally-regular-sector"><strong>The Norm-Regular, Spectrally Regular Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is cell $11$ of the four-sector arrangement of the two quadratic conditions</p>
+<p>$$
+N(\tilde Q)=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+$$</p>
+<p>the sector on which neither vanishes. It is the complement of the union of the two cones,</p>
+<p>$$
+\Sigma_{11}=\mathbb{B}\setminus(\mathcal N\cup\mathcal S),
+$$</p>
+<p>and it is the <strong>generic</strong> sector: the open dense cell in which both problems of the arrangement receive the positive answer. The other three cells are the mixed sectors $\Sigma_{01}=\mathcal N\setminus\mathcal S$ and $\Sigma_{10}=\mathcal S\setminus\mathcal N$, and the doubly degenerate cell $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in <em>The Norm-Degenerate, Spectrally Regular Sector</em>, <em>The Norm-Regular, Spectrally Degenerate Sector</em> and <em>The Norm-Degenerate, Spectrally Degenerate Sector</em>. The vocabulary, the two cones and the naming convention are those of <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>.</p>
+<p>Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the reduced norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; <strong>regular</strong> means non-zero: $N\neq0$ for the norm, $B^2\neq0$ for the spectrum.</p>
+<h2 id="definition-and-characterisation">Definition and Characterisation</h2>
+<p><strong>Definition.</strong> The sector $\Sigma_{11}$ is</p>
+<p>$$
+\Sigma_{11}=\{N\neq0,\ B^2\neq0\}.
+$$</p>
+<p><strong>Theorem (five descriptions).</strong> For $\tilde Q\in\mathbb{B}$ the following are equivalent:</p>
+<p>(i) $\tilde Q\in\Sigma_{11}$;</p>
+<p>(ii) $\tilde Q$ is a unit and its two eigenvalues are distinct;</p>
+<p>(iii) $\tilde Q$ is a unit and is semisimple with a non-scalar spectrum;</p>
+<p>(iv) $\tilde Q$ admits a spectral decomposition into two non-trivial idempotents with distinct non-zero coefficients;</p>
+<p>(v) $\tilde Q$ is invertible, non-scalar, and admits an adapted Peirce decomposition.</p>
+<p><em>Proof.</em> (i) $\iff$ (ii): $N\neq0$ is the unit condition, and $B^2\neq0$ is the discriminant condition, so the eigenvalues $\lambda_\pm=Q_t\pm\beta$, with $\beta^2=-B^2$ and $\beta\neq0$, are distinct; conversely distinct eigenvalues give $B^2\neq0$ and $N=\lambda_+\lambda_-\neq0$ makes the element a unit.</p>
+<p>(ii) $\iff$ (iii): in two dimensions a semisimple element with a repeated eigenvalue is a scalar, so semisimplicity with a non-scalar spectrum is the same as two distinct eigenvalues.</p>
+<p>(ii) $\iff$ (iv): with distinct eigenvalues the spectral idempotents $e_\pm$ exist, are non-trivial, and are unique; the coefficients $\lambda_\pm$ are distinct and non-zero because $N=\lambda_+\lambda_-\neq0$. Conversely such a decomposition exhibits two distinct eigenvalues and a non-zero norm.</p>
+<p>(i) $\iff$ (v): for a non-scalar element an adapted Peirce decomposition exists exactly when $B^2\neq0$, by the existence theorem of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>; invertibility is exactly $N\neq0$. So both conditions together are exactly (i).</p>
+<p><strong>Corollary (regular semisimple units).</strong> The sector is the set of regular semisimple elements of the unit group:</p>
+<p>$$
+\Sigma_{11}=\{\tilde Q\in\mathbb{B}^\times\ :\ \lambda_+\neq\lambda_-\},
+$$</p>
+<p>with $\mathbb{B}^\times=\{N\neq0\}$ the unit group. Its complement in $\mathbb{B}^\times$ is the degenerate half $\Sigma_{10}$, so the unit group splits into a generic part and a unipotent part.</p>
+<p><strong>Corollary (eigenvalue parametrisation).</strong> Every element of the sector is written uniquely as</p>
+<p>$$
+\tilde Q=\lambda_+e_++\lambda_-e_-,\qquad
+\lambda_\pm\in\mathbb{C}^\times,\quad \lambda_+\neq\lambda_-,
+$$</p>
+<p>with $e_\pm$ the spectral idempotents, $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$, $e_++e_-=e_t$. Conversely every such choice gives an element of $\Sigma_{11}$. In these terms</p>
+<p>$$
+Q_t=\frac{\lambda_++\lambda_-}{2},\qquad
+B^2=-\left(\frac{\lambda_+-\lambda_-}{2}\right)^2,\qquad
+N=\lambda_+\lambda_-.
+$$</p>
+<p>The two invariants are therefore the two elementary symmetric functions of the spectrum: $N$ is the product, and $B^2$ is minus a quarter of the squared difference.</p>
+<p><strong>Corollary (complement of a hypersurface).</strong> $\Sigma_{11}$ is the complement of the hypersurface $N\,B^2=0$, the union of the two cones. It is Zariski-open and dense in $\mathbb{B}$.</p>
+<h2 id="geometry">Geometry</h2>
+<p><strong>Theorem (open dense, of full measure).</strong> $\Sigma_{11}$ is open and dense in $\mathbb{B}$, of complex dimension $4$ and real dimension $8$. Its complement $\mathcal N\cup\mathcal S$ is a complex hypersurface, of complex dimension $3$ and real dimension $6$, hence of real codimension $2$ and Lebesgue measure zero.</p>
+<p><em>Proof.</em> The functions $N$ and $B^2$ are non-zero polynomials in four complex variables, so each zero locus is a complex hypersurface, and so is their union; the complement is open and dense. The dimension of the complement is $4-1=3$ over $\mathbb{C}$, that of the sector $4$ over $\mathbb{C}$ and $8$ over $\mathbb{R}$. A complex hypersurface in $\mathbb{C}^4$ has real codimension $2$ and measure zero.</p>
+<p><strong>Proposition (connected).</strong> $\Sigma_{11}$ is connected.</p>
+<p><em>Proof.</em> By the eigenvalue parametrisation, $\Sigma_{11}$ is the image of the connected parameter space</p>
+<p>$$
+\{(\lambda_+,\lambda_-,e_+):\ \lambda_\pm\neq0,\ \lambda_+\neq\lambda_-,\ e_+\text{ a non-trivial idempotent}\}
+$$</p>
+<p>under the continuous map $(\lambda_+,\lambda_-,e_+)\mapsto\lambda_+e_++\lambda_-e_-$. The eigenvalue parameter space is $\mathbb{C}^2$ minus the diagonal and the two axes, three complex lines through the origin, and its complement is connected. The non-trivial idempotents are $e_+=(e_t+\tilde\Xi)/2$ with $\tilde\Xi^2=e_t$ and $\tilde\Xi\neq\pm e_t$; the quadric $\tilde\Xi^2=e_t$ is a smooth connected complex surface, and deleting the two points $\pm e_t$ leaves it connected. A continuous image of a connected space is connected.</p>
+<p><strong>Proposition (not simply connected).</strong> $\Sigma_{11}$ has non-trivial fundamental group.</p>
+<p><em>Proof.</em> For $\varepsilon\neq0$ consider the loop</p>
+<p>$$
+\tilde Q(t)=e_t+\varepsilon e^{2\pi it}\vec e_x,\qquad 0\le t\le1.
+$$</p>
+<p>Its invariants are</p>
+<p>$$
+N(\tilde Q(t))=1+\varepsilon^2e^{4\pi it},\qquad B^2(\tilde Q(t))=\varepsilon^2e^{4\pi it},
+$$</p>
+<p>both non-zero, so the loop lies in $\Sigma_{11}$. The continuous map $\tilde Q\mapsto(N(\tilde Q),B^2(\tilde Q))$ sends $\Sigma_{11}$ to $\mathbb{C}^\times\times\mathbb{C}^\times$ and sends this loop to one whose two components wind twice around $1$ and around $0$ respectively. That image is not null-homotopic in the torus, so the loop is not null-homotopic in $\Sigma_{11}$.</p>
+<p><strong>Remark (the identity is not generic).</strong> $e_t$ has $B^2=0$, so it lies in $\Sigma_{10}$, not in $\Sigma_{11}$. The sector is not a neighbourhood of the identity and not a subgroup; it is the part of the unit group on which the discriminant does not vanish. Likewise the scalar line $\mathbb{C}^\times e_t$ is entirely outside the sector.</p>
+<p><strong>Remark (where $Q_t$ may vanish).</strong> The sector meets the hyperplane $Q_t=0$: the pure vectors with $B^2\neq0$, such as $\vec e_x+\vec e_y$, have $N=B^2\neq0$ and lie in $\Sigma_{11}$. For such an element the two eigenvalues are opposite, $\lambda_-=-\lambda_+$, and its square is a non-zero scalar. So the sector is not characterised by a non-zero scalar part, only by the non-vanishing of both invariants.</p>
+<h2 id="the-elements">The Elements</h2>
+<p>Let $\tilde Q\in\Sigma_{11}$, with $\beta^2=-B^2$, $\beta\neq0$, and eigenvalues $\lambda_\pm=Q_t\pm\beta$. The choice of $\beta$ is the choice of square root, $\beta=\pm i\sqrt{B^2}$; it only exchanges the two eigenvalues.</p>
+<p><strong>Spectrum and minimal polynomial.</strong> The spectrum is $\{\lambda_+,\lambda_-\}$, with $\lambda_+\neq\lambda_-$ and $\lambda_+\lambda_-=N\neq0$. The characteristic and minimal polynomial is</p>
+<p>$$
+p(X)=X^2-2Q_tX+N,
+$$</p>
+<p>squarefree, with discriminant $-4B^2\neq0$. The element is semisimple, and regular semisimple: its centraliser has the minimal possible dimension among non-scalar elements.</p>
+<p><strong>Centraliser.</strong> Evaluation gives</p>
+<p>$$
+\mathbb{C}[\tilde Q]\cong\mathbb{C}[X]/(p)\cong\mathbb{C}\oplus\mathbb{C},
+$$</p>
+<p>of complex dimension $2$. Under the isomorphism $\mathbb{C}[\tilde Q]\cong\mathbb{C}\oplus\mathbb{C}$ the idempotents correspond to $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$, so they are exactly $0$, $e_+$, $e_-$ and $e_t$.</p>
+<p><strong>Spectral idempotents.</strong> They are unique and given by the Lagrange formula</p>
+<p>$$
+e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},
+$$</p>
+<p>with $e_\pm^2=e_\pm$, $e_+e_-=0$, $e_++e_-=e_t$, $\tilde Qe_\pm=\lambda_\pm e_\pm$. Each is a non-trivial idempotent, since $\lambda_+\neq\lambda_-$ and $\tilde Q$ is not a scalar.</p>
+<p><strong>Adapted Peirce decomposition.</strong> Relative to $(e_+,e_-)$ the Peirce form is diagonal with both diagonal entries non-zero:</p>
+<p>$$
+e_+\tilde Qe_+=\lambda_+e_+,\qquad
+e_+\tilde Qe_-=0,\qquad
+e_-\tilde Qe_+=0,\qquad
+e_-\tilde Qe_-=\lambda_-e_-.
+$$</p>
+<p>This is the only sector in which the adapted decomposition has two non-zero coefficients and two non-trivial idempotents. In $\Sigma_{01}$ one coefficient vanishes; on the scalar line of $\Sigma_{10}$ the two coefficients coincide and the refinement is non-unique; in $\Sigma_{10}^{\mathrm{J}}$ and in $\Sigma_{00}$ no adapted decomposition exists.</p>
+<p><strong>Annihilators.</strong> Since $\tilde Q$ is a unit,</p>
+<p>$$
+A(\tilde Q)=B(\tilde Q)=\{0\},
+$$</p>
+<p>and left and right multiplication are bijections of $\mathbb{B}\cong\mathbb{C}^4$, of complex rank $4$.</p>
+<p><strong>Inverse.</strong> $\tilde Q^{-1}=\tilde Q^{\natural}/N$, and</p>
+<p>$$
+N(\tilde Q^{-1})=\frac{1}{N(\tilde Q)},\qquad
+B^2(\tilde Q^{-1})=\frac{B^2(\tilde Q)}{N(\tilde Q)^2}\neq0,
+$$</p>
+<p>so the inverse lies in the sector.</p>
+<h2 id="multiplication-and-inversion">Multiplication and Inversion</h2>
+<p><strong>Products stay in the unit group.</strong> The norm is multiplicative, so for $\tilde P,\tilde Q\in\Sigma_{11}$,</p>
+<p>$$
+N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)\neq0,
+$$</p>
+<p>and the product lies in $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. Both outcomes occur.</p>
+<p><strong>Theorem (both outcomes).</strong></p>
+<p>$$
+\Sigma_{11}\cdot\Sigma_{11}\subseteq\Sigma_{10}\cup\Sigma_{11},
+$$</p>
+<p>and the product of two elements of the sector can lie in $\Sigma_{11}$ and can lie in $\Sigma_{10}$.</p>
+<p><em>Witnesses.</em> For the first, $\tilde Q=e_t+\vec e_x$ has $N=2$ and $B^2=1$, and</p>
+<p>$$
+\tilde Q^2=e_t+2\vec e_x+\vec e_x^2=2\vec e_x,
+$$</p>
+<p>with $N=4$ and $B^2=4$: it stays in the sector. For the second, $\tilde P=e_t+2\vec e_x$ and $\tilde Q=e_t-2\vec e_x$ both have $N=5$ and $B^2=4$, and</p>
+<p>$$
+\tilde P\tilde Q=e_t-4\vec e_x^2=5e_t,
+$$</p>
+<p>with $B^2=0$ and $N=25$: the product lies on the scalar line, in $\Sigma_{10}^{\mathrm{s}}$.</p>
+<p><strong>Squares.</strong> The square of an element of the sector has eigenvalues $\lambda_+^2,\lambda_-^2$ and</p>
+<p>$$
+B^2(\tilde Q^2)=4Q_t^2B^2(\tilde Q).
+$$</p>
+<p>Hence</p>
+<p>$$
+\tilde Q^2\in\Sigma_{11}\ \text{if }Q_t\neq0,\qquad
+\tilde Q^2=-B^2(\tilde Q)\,e_t\in\Sigma_{10}^{\mathrm{s}}\ \text{if }Q_t=0.
+$$</p>
+<p>The second case is exactly $\lambda_-=-\lambda_+$; the pure vector $\vec e_x+\vec e_y$ is the standard witness,</p>
+<p>$$
+(\vec e_x+\vec e_y)^2=-2e_t.
+$$</p>
+<p>So squaring can leave the sector, and it leaves it precisely through the vertex of the spectral cone.</p>
+<p><strong>Inversion and closure.</strong> The sector is inverse-closed, because $N(\tilde Q^{-1})\neq0$ and $B^2(\tilde Q^{-1})\neq0$; it is not product-closed, by the theorem. It is therefore a <strong>symmetric subset</strong> of the unit group, not a subgroup. In fact it contains no subgroup at all, since every subgroup contains the identity and $e_t\notin\Sigma_{11}$.</p>
+<p><strong>Caveat on the parametrisation.</strong> Although $\lambda_+e_++\lambda_-e_-$ is unique, products do not add eigenvalues: the eigenvalues of $\tilde P\tilde Q$ are not determined by those of $\tilde P$ and $\tilde Q$ separately. Only their product is, through the norm.</p>
+<h2 id="relation-to-the-two-cones">Relation to the Two Cones</h2>
+<p><strong>The sector is the complement of both cones.</strong> As point sets,</p>
+<p>$$
+\Sigma_{11}=\mathbb{B}\setminus(\mathcal N\cup\mathcal S),\qquad
+\mathbb{B}=\Sigma_{11}\sqcup\Sigma_{01}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
+$$</p>
+<p>It is the only cell off both cones, and its closure is all of $\mathbb{B}$.</p>
+<p><strong>The two cones are tangent exactly on the common stratum.</strong> The defining functions satisfy the identity</p>
+<p>$$
+N-B^2=Q_t^2,
+$$</p>
+<p>so their gradients,</p>
+<p>$$
+\nabla N=2(Q_t,\vec Q),\qquad \nabla B^2=2(0,\vec Q),
+$$</p>
+<p>coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ and $B^2=0$, which is $\Sigma_{00}$; there the gradients are both $2(0,\vec Q)$, equal and non-zero off the origin. So the cones are tangent along $\Sigma_{00}\setminus\{0\}$ and both singular at the origin. On $\Sigma_{11}$ there is nothing to be tangent to: the sector is disjoint from both cones.</p>
+<p><strong>The cell where the answers agree.</strong> Every element of the sector is a unit with distinct eigenvalues: both questions — is it invertible, and are its eigenvalues separated — receive the positive answer. This is the fourth corner of the $2\times2$ table and the reason the independence of the two problems is not vacuous: the doubly regular case exists, and it exists on a dense open set.</p>
+<p><strong>Independence, restated.</strong> $\Sigma_{01}$ and $\Sigma_{10}$ show that neither cone contains the other. $\Sigma_{11}$ shows that the two conditions are simultaneously satisfiable, and $\Sigma_{00}$ shows that they are simultaneously violable. The four cells together are the complete truth table of the pair of predicates $(N\neq0,\ B^2\neq0)$.</p>
+<h2 id="comparison-with-the-other-three-sectors">Comparison with the Other Three Sectors</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>conditions</th>
+<th>elements</th>
+<th>spectrum</th>
+<th>adapted Peirce</th>
+<th>product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>doubly regular</strong> $\Sigma_{11}$</td>
+<td>$N\neq0$, $B^2\neq0$</td>
+<td>$\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero</td>
+<td>$\{\lambda_+,\lambda_-\}$</td>
+<td>exists, unique; both terms non-zero</td>
+<td>stays in $\mathbb{B}^\times$; lands in $\Sigma_{11}$ or $\Sigma_{10}$</td>
+</tr>
+<tr>
+<td><strong>norm-degenerate, spectrally regular</strong> $\Sigma_{01}$</td>
+<td>$N=0$, $B^2\neq0$</td>
+<td>$c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent</td>
+<td>$\{c,0\}$</td>
+<td>exists, unique; one term vanishes</td>
+<td>stays on $\mathcal N$; all three outcomes</td>
+</tr>
+<tr>
+<td><strong>norm-regular, spectrally degenerate</strong> $\Sigma_{10}$</td>
+<td>$N\neq0$, $B^2=0$</td>
+<td>$Q_tu$, $u$ unipotent</td>
+<td>$\{Q_t\}$, repeated</td>
+<td>fails on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$</td>
+<td>stays in $\mathbb{B}^\times$; lands in $\Sigma_{10}$ or $\Sigma_{11}$</td>
+</tr>
+<tr>
+<td><strong>doubly degenerate</strong> $\Sigma_{00}$</td>
+<td>$N=0$, $B^2=0$</td>
+<td>non-zero nilpotents of index two, plus the origin</td>
+<td>$\{0\}$</td>
+<td>fails off the origin</td>
+<td>$0$ or $\Sigma_{01}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four cells are exhaustive and disjoint. $\Sigma_{11}$ is the unique cell in which both predicates hold, $\Sigma_{00}$ the unique cell in which both fail, and the two mixed cells are the remaining two rows of the truth table.</p>
+<p><strong>Position in the five-zone refinement.</strong> The five zones of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Five Zones</em>, are the distinct, zero-divisor, scalar, Jordan and nilpotent zones.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>zone</th>
+<th>condition</th>
+<th>sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>distinct</strong></td>
+<td>$B^2\neq0$, $N\neq0$</td>
+<td>$\Sigma_{11}$</td>
+</tr>
+<tr>
+<td><strong>zero divisor</strong></td>
+<td>$B^2\neq0$, $N=0$</td>
+<td>$\Sigma_{01}$</td>
+</tr>
+<tr>
+<td><strong>scalar</strong></td>
+<td>$\vec Q=0$</td>
+<td>$\Sigma_{10}^{\mathrm{s}}\cup\{0\}$</td>
+</tr>
+<tr>
+<td><strong>Jordan</strong></td>
+<td>$B^2=0$, $\vec Q\neq0$, $Q_t\neq0$</td>
+<td>$\Sigma_{10}^{\mathrm{J}}$</td>
+</tr>
+<tr>
+<td><strong>nilpotent</strong></td>
+<td>$B^2=0$, $\vec Q\neq0$, $Q_t=0$</td>
+<td>$\Sigma_{00}\setminus\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sector $11$ is exactly the <strong>distinct zone</strong>. The refinement of the five zones touches only the other cells: it splits $\Sigma_{10}$ and moves the origin out of the nilpotent zone into the scalar one. On this sector the two classifications coincide, because the sector is homogeneous: every element has two distinct non-zero eigenvalues and a unique adapted Peirce decomposition.</p>
+<h2 id="consequences">Consequences</h2>
+<p><strong>Eigenbasis.</strong> It exists, it is unique, and it is the genuine two-term spectral decomposition</p>
+<p>$$
+\tilde Q=\lambda_+e_++\lambda_-e_-,\qquad
+e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}.
+$$</p>
+<p>Both eigenvalues are non-zero and distinct, both idempotents are non-trivial, and the decomposition is unique. This is the only sector in which all four of these hold at once.</p>
+<p><strong>Polar decomposition.</strong> It exists and is finite: the modulus $\Rho=\sqrt{N(\tilde Q)}=\sqrt{\lambda_+\lambda_-}\neq0$, so the modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Biquaternions</em> applies. The sector is the only one in which the polar word and the spectral decomposition are simultaneously available: in $\Sigma_{01}$ the polar word fails while the spectral decomposition survives, and in $\Sigma_{10}$ the spectral decomposition fails while the polar word survives.</p>
+<p><strong>One-sided operators.</strong> $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$ with zero kernel, and both annihilators vanish. Together with the eigenbasis, this is the full non-degenerate package.</p>
+<p><strong>The generic case.</strong> Every statement proved for a generic element of $\mathbb{B}$ — invertible, semisimple, with distinct eigenvalues, unique eigenprojectors and a finite polar word — holds on $\Sigma_{11}$ and fails somewhere on its complement. The sector has full measure, and its complement is the arrangement of the two cones.</p>
+<h2 id="summary">Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>definition</td>
+<td>$\Sigma_{11}=\{N\neq0,\ B^2\neq0\}$</td>
+</tr>
+<tr>
+<td>descriptions</td>
+<td>$\mathbb{B}\setminus(\mathcal N\cup\mathcal S)$; a unit with distinct eigenvalues; $\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero; invertible with a non-trivial adapted Peirce decomposition</td>
+</tr>
+<tr>
+<td>geometry</td>
+<td>open dense, of full measure; complex dimension $4$ and real dimension $8$; connected; complement the hypersurface $NB^2=0$</td>
+</tr>
+<tr>
+<td>elements</td>
+<td>regular semisimple units; minimal polynomial $X^2-2Q_tX+N$, squarefree; centraliser $\mathbb{C}\oplus\mathbb{C}$</td>
+</tr>
+<tr>
+<td>adapted Peirce</td>
+<td>exists, unique, both coefficients non-zero</td>
+</tr>
+<tr>
+<td>annihilators</td>
+<td>both zero; left and right multiplication bijective</td>
+</tr>
+<tr>
+<td>inversion</td>
+<td>closed: $\tilde Q^{-1}\in\Sigma_{11}$</td>
+</tr>
+<tr>
+<td>multiplication</td>
+<td>$\Sigma_{11}\cdot\Sigma_{11}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with both outcomes; not product-closed</td>
+</tr>
+<tr>
+<td>squares</td>
+<td>in $\Sigma_{11}$ when $Q_t\neq0$, on the scalar line when $Q_t=0$</td>
+</tr>
+<tr>
+<td>relation to the cones</td>
+<td>off both cones; the cones are tangent along $\Sigma_{00}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>place in the arrangement</td>
+<td>the distinct zone: the one cell where both answers are positive</td>
+</tr>
+</tbody>
+</table></div>
+<p>The sector is the generic sector. It is the set of units with distinct non-zero eigenvalues, the complement of the union of the two cones, and the only cell of the arrangement in which both questions — is the element invertible, and can its eigenvalues be told apart — receive the positive answer. It is what the algebra looks like when nothing degenerates. Its complement is the arrangement, and the three other sectors are the three ways the doubly regular case can fail: by losing invertibility, by losing spectral separation, or by losing both.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>the norm-regular, spectrally regular sector, this article</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone of the reduced norm</td>
+</tr>
+<tr>
+<td>$\mathcal S=\{B^2=0\}$</td>
+<td>the spectral-degenerate cone</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^\times=\{N\neq0\}$</td>
+<td>the unit group</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm\beta$, $\beta^2=-B^2$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$e_\pm$</td>
+<td>the spectral idempotents, unique</td>
+</tr>
+<tr>
+<td>$\Rho=\sqrt{N}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}$, $R_{\tilde Q}$</td>
+<td>left and right multiplication, both bijective on the sector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-norm-degenerate-spectrally-degenerate-sector.html">The Norm-Degenerate, Spectrally Degenerate Sector</a>, for $\Sigma_{00}$, the nilpotents and the origin.</li>
+<li><a href="the-norm-degenerate-spectrally-regular-sector.html">The Norm-Degenerate, Spectrally Regular Sector</a>, for $\Sigma_{01}$, the scaled idempotents and the zero-divisor zone.</li>
+<li><a href="the-norm-regular-spectrally-degenerate-sector.html">The Norm-Regular, Spectrally Degenerate Sector</a>, for $\Sigma_{10}$, the unipotents and the Jordan zone.</li>
+<li><a href="norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the null cone, its strata and the unit group.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the discriminant, the spectral criterion and the five zones.</li>
+<li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and the minimal ideals.</li>
+<li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the modulus $\Rho=\sqrt N$ and the unit factor.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

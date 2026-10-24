@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries four pairings, and every pairing carries its own adjoint of a linear map. The corpus gives each of the four pairings an operator family, and it has named those families by their adjoints: <em>Association</em>, <em>Signed Inner Conjugation</em>, <em>Hermitian Adjoint</em> and <em>Signed Hermitian Adjoint</em>. Two of those names were also the titles of the operator articles until 2026-09-27; those two titles now name the algebra of their subcategory (<em>Two-Sided Operators on the Biquaternion Algebra</em> and <em>Two-Sided Operators on the General Quaternionic Algebra</em>), and the adjoint names are kept here for the adjoints themselves. The names look unrelated and the suffixes look arbitrary, so this article sets the four adjoints side by side and works them out on explicit maps and explicit matrices, in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$.</p>
 <p>The result is a one-line rule, and the examples below are the evidence for it: <strong>each of the four adjoint names is the adjoint of one of the four forms, and the adjective names the insertion of the sign.</strong> <em>Association</em> is the transpose of the general plain bilinear form, the reversal of a product with no conjugation anywhere, and it is the name of that adjoint because the adjoint carries no conjugation to name. <em>Signed inner conjugation</em> is the name of the adjoint of the general quaternionic bilinear form: there the adjoint of $L_{\tilde Q_6}$ is the left multiplication by $\tilde Q_6^{\natural}$, the <strong>signed left multiplication</strong>, and the sandwich built from it is the inner conjugation up to the norm. <em>Hermitian adjoint</em> is the name of the adjoint of the general plain sesquilinear form, which is the conjugate linear $\ast$; and <em>signed Hermitian adjoint</em> is the <strong>same</strong> form with the sign inserted into the operator, which is why the Hermitian layer carries two families where the plain layer carries one. The word <strong>signed</strong> always has the same meaning in the corpus: the grade involution $\natural$, the conjugation that negates the vector part and fixes the centre, has been inserted.</p>
-<p>The forms are <em>The Four Forms and the Four Algebraic Norms</em>; the four conjugations are <em>The Group of Involutions</em>; the plain transpose is the general transpose of a bilinear form of <em>Bilinear Forms</em>, §<em>Isometries</em>, and its operator family is <em>Two-Sided Operators on the Biquaternion Algebra</em>; the two other families are <em>Two-Sided Operators on the General Quaternionic Algebra</em> and <em>Two-Sided Operators on the General Plain Sesqualgebra</em>. The last section of examples turns the same two involutions on the <em>two-sided operators</em> themselves: the coefficient involution $\sigma$ and the sign character $\alpha$ are the two switches of the twisted right factor $c_{\sigma,\alpha}(\tilde Q_6)=\sigma(\alpha(\tilde Q_6))$, and the four settings of the two switches return the four forms read at the unit. The article is pure algebra; no argument uses a distance, a limit or a derivative.</p>
+<p>The forms are <em>The Four Forms and the Four Algebraic Norms</em>; the four conjugations are <em>The Group of Involutions</em>; the plain transpose is the general transpose of a bilinear form of <em>Bilinear Forms</em>, §<em>Isometries</em>, and its operator family is <em>Two-Sided Operators on the Biquaternion Algebra</em>; the two other families are <em>Two-Sided Operators on the General Quaternionic Algebra</em> and <em>Two-Sided Operators on the General Plain Sesqualgebra</em>. The table of §<em>Which Switch Does What</em> reads the two involutions on the four adjoints: the sign character $\alpha$ exchanges the side, and the coefficient involution $\sigma=\bar{\cdot}$ acts on the parameter. The switches themselves, with the twisted right factor and the four forms read at the unit, belong to the operator layer, in <em>Introduction to the Operators of the Biquaternion Algebra</em>, §<em>The Two Switches and the Twisted Right Factor</em>. The article is pure algebra; no argument uses a distance, a limit or a derivative.</p>
 <h2 id="conventions-and-the-four-forms">Conventions and the Four Forms</h2>
 <p><strong>Theorem (the four forms and their Gram matrices).</strong> The four pairings of the algebra are</p>
 <p>$$
@@ -256,127 +256,7 @@ $$</p>
 \langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural} \;},
 $$</p>
 <p>verified on one hundred invertible elements. On the shell $\langle\tilde Q_6\rangle_{\natural}=\pm1$ the first line reads $\Theta_{\tilde Q_6}=\pm\mathrm{Ad}_{\tilde Q_6}$: the same operator is the inner automorphism or its negative according to the sign of the norm, which is the second reading of the word <em>signed</em>: the operator $\Theta_{\tilde Q_6}$ is the inner automorphism or its negative according to the sign of the norm, and it is the operator of the family of <em>Two-Sided Operators on the General Quaternionic Algebra</em>, whose old title carried that name before the title was changed to name the subcategory's algebra.</p>
-<h2 id="the-two-switches-math205-and-math206">The Two Switches $\sigma$ and $\alpha$</h2>
-<p>The four adjoints of the sections above are one reading of the two involutions that the general theory carries. The same two insert themselves into the two-sided operators as twists, and this section works them on one parameter. The first is the <strong>coefficient involution</strong> $\sigma$, the conjugation of the scalars of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, which on this algebra is the coefficient conjugation $\bar{\cdot}$ of <em>The Group of Involutions</em>; the second is the <strong>sign character</strong> $\alpha$, the identity on the centre $\mathbb{C}_{\mathbb{B}}$ and minus the identity on the vector subspace $V$, which on this algebra is the natural conjugation $\natural$ read as a twist, as in <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, where the same operator carries $\alpha$ in place of $\natural$.</p>
-<p><strong>Definition (the twisted right factor and its operator).</strong> For a switch pair $(\sigma,\alpha)$ and a parameter $\tilde Q_6$ put</p>
-<p>$$
-c_{\sigma,\alpha}(\tilde Q_6)=\sigma\bigl(\alpha(\tilde Q_6)\bigr),
-\qquad
-\Phi^{\sigma,\alpha}_{\tilde Q_6}(\tilde Q)=\tilde Q_6\,\tilde Q\,c_{\sigma,\alpha}(\tilde Q_6).
-$$</p>
-<p><strong>The four settings.</strong> Each switch is either the identity or its involution, so there are four right factors:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\sigma$</th>
-<th>$\alpha$</th>
-<th>$c_{\sigma,\alpha}(\tilde Q_6)$</th>
-<th>the operator</th>
-<th>value at $e_t$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathrm{id}$</td>
-<td>$\mathrm{id}$</td>
-<td>$\tilde Q_6$</td>
-<td>$\tilde Q\mapsto\tilde Q_6\tilde Q\tilde Q_6$</td>
-<td>$\tilde Q_6^{2}$</td>
-</tr>
-<tr>
-<td>$\mathrm{id}$</td>
-<td>$\alpha$</td>
-<td>$\tilde Q_6^{\natural}$</td>
-<td>the conjugation sandwich, the operator of <em>Two-Sided Operators on the General Quaternionic Algebra</em></td>
-<td>$\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural}$, central</td>
-</tr>
-<tr>
-<td>$\sigma$</td>
-<td>$\mathrm{id}$</td>
-<td>$\bar{\tilde Q_6}$</td>
-<td>$\tilde Q\mapsto\tilde Q_6\tilde Q\bar{\tilde Q_6}$</td>
-<td>$\tilde Q_6\bar{\tilde Q_6}$, scalar part the split norm</td>
-</tr>
-<tr>
-<td>$\sigma$</td>
-<td>$\alpha$</td>
-<td>$\tilde Q_6^{\ast}$</td>
-<td>the Hermitian sandwich, the operator of <em>Two-Sided Operators on the General Plain Sesqualgebra</em></td>
-<td>$\tilde Q_6\tilde Q_6^{\ast}$, Hermitian</td>
-</tr>
-</tbody>
-</table></div>
-<p>The fifth conjugation of the algebra, the reversal $\flat=-\ast$ of <em>The Group of Involutions</em>, is the last row with the extra central sign: $\tilde Q_6^{\flat}=-\tilde Q_6^{\ast}$, so the reversal sandwich is minus the Hermitian sandwich.</p>
-<p><strong>Proposition (which right factors close the family).</strong> For a right factor $c$ one has $\Phi^{\sigma,\alpha}_{\tilde Q_6}\circ\Phi^{\sigma,\alpha}_{\tilde Q_3}=\Phi^{\sigma,\alpha}_{\tilde Q_6\tilde Q_3}$ for all $\tilde Q_6,\tilde Q_3$ exactly when $C(\tilde Q_3)C(\tilde Q_6)=C(\tilde Q_6\tilde Q_3)$, that is exactly when $c$ is an anti-automorphism. This holds for the two rows with $\alpha$, that is $c=\natural$ and $c=\ast$. For $c$ the identity or the coefficient conjugation the composite is $\tilde Q_6\tilde Q_3\,\tilde Q\,C(\tilde Q_3\tilde Q_6)$, the operator whose right factor is read on the product in the opposite order; the family is then closed only after replacing the parameter $\tilde Q_6\tilde Q_3$ by $\tilde Q_3\tilde Q_6$. The reversal satisfies $C(\tilde Q_3)C(\tilde Q_6)=-C(\tilde Q_6\tilde Q_3)$, so it closes the family up to the central sign $-1$.</p>
-<p><em>Proof.</em> Evaluating the composite on $\tilde Q$ and using that $\alpha$ is an automorphism and that $\sigma$ is multiplicative, $\Phi^{\sigma,\alpha}_{\tilde Q_6}(\Phi^{\sigma,\alpha}_{\tilde Q_3}(\tilde Q))=\tilde Q_6\tilde Q_3\,\tilde Q\,C(\tilde Q_3)C(\tilde Q_6)$, which is $\Phi^{\sigma,\alpha}_{\tilde Q_6\tilde Q_3}(\tilde Q)=\tilde Q_6\tilde Q_3\,\tilde Q\,C(\tilde Q_6\tilde Q_3)$ exactly when $C(\tilde Q_3)C(\tilde Q_6)=C(\tilde Q_6\tilde Q_3)$; a map with that property is an anti-automorphism, and $\natural$ and $\ast$ are anti-automorphisms while the identity and $\bar{\cdot}$ are automorphisms, giving $C(\tilde Q_3)C(\tilde Q_6)=C(\tilde Q_3\tilde Q_6)$ in those two cases. For the reversal $C(\tilde Q_3)C(\tilde Q_6)=(-\tilde Q_3^{\ast})(-\tilde Q_6^{\ast})=\tilde Q_3^{\ast}\tilde Q_6^{\ast}=(\tilde Q_6\tilde Q_3)^{\ast}=-C(\tilde Q_6\tilde Q_3)$.</p>
-<p><strong>Worked example.</strong> Take the unit $\tilde Q_6=(1+i)e_t+\vec e_x$, of norm $\langle\tilde Q_6\rangle_{\natural}=(1+i)^{2}+1=1+2i$. The four right factors, the four values at $e_t$ and their scalar parts are</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\sigma$</th>
-<th>$\alpha$</th>
-<th>$c_{\sigma,\alpha}(\tilde Q_6)$</th>
-<th>$\tilde Q_6\,c_{\sigma,\alpha}(\tilde Q_6)$</th>
-<th>$\mathrm{Sc}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathrm{id}$</td>
-<td>$\mathrm{id}$</td>
-<td>$(1+i)e_t+\vec e_x$</td>
-<td>$(-1+2i)e_t+(2+2i)\vec e_x$</td>
-<td>$-1+2i$</td>
-</tr>
-<tr>
-<td>$\mathrm{id}$</td>
-<td>$\alpha$</td>
-<td>$(1+i)e_t-\vec e_x$</td>
-<td>$(1+2i)e_t$</td>
-<td>$1+2i$</td>
-</tr>
-<tr>
-<td>$\sigma$</td>
-<td>$\mathrm{id}$</td>
-<td>$(1-i)e_t+\vec e_x$</td>
-<td>$e_t+2\vec e_x$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$\sigma$</td>
-<td>$\alpha$</td>
-<td>$(1-i)e_t-\vec e_x$</td>
-<td>$3e_t-2i\vec e_x$</td>
-<td>$3$</td>
-</tr>
-</tbody>
-</table></div>
-<p>Only the second value is central; the fourth is fixed by the dagger and is not central, $(3e_t-2i\vec e_x)^{\ast}=3e_t-2i\vec e_x$; the first and the third are fixed by neither map, and the reversal negates the fourth. The four values are pairwise distinct, and so are their scalar parts.</p>
-<p><strong>Remark (the four scalar parts are the four forms).</strong> On a general element $\tilde Q_6=\sum_\mu\lambda_\mu e_\mu$ the scalar part of the value at $e_t$ is one of the four forms of the corpus read on that element:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\mathrm{Sc}\bigl(\tilde Q_6\,c_{\sigma,\alpha}(\tilde Q_6)\bigr)$</th>
-<th>$\alpha=\mathrm{id}$</th>
-<th>$\alpha=\natural$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\sigma=\mathrm{id}$</td>
-<td>$\sum_\mu\varepsilon_\mu\lambda_\mu^{2}=-1+2i$</td>
-<td>$\sum_\mu\lambda_\mu^{2}=1+2i$</td>
-</tr>
-<tr>
-<td>$\sigma=\bar{\cdot}$</td>
-<td>$\sum_\mu\varepsilon_\mu\lvert\lambda_\mu\rvert^{2}=1$</td>
-<td>$\sum_\mu\lvert\lambda_\mu\rvert^{2}=3$</td>
-</tr>
-</tbody>
-</table></div>
-<p>so the coefficient involution $\sigma$ replaces the squares $\lambda_\mu^{2}$ by the moduli $\lvert\lambda_\mu\rvert^{2}$, while the sign character $\alpha$ replaces the signed sum $\sum\varepsilon_\mu\lambda_\mu^{2}$ by the unsigned one $\sum\lambda_\mu^{2}$. The two entries of the left column are complex bilinear sums and vanish on the norm cone and on the plain cone; the two of the right column are real sums of moduli and vanish only at the origin. The values $2i-1$ and $1+2i$ are the two bilinear readings of the example, and $1$ and $3$ the two sesquilinear ones.</p>
-<p><strong>Remark (the same two switches on the left factor).</strong> The left slot may also carry a twist, and there it must be an automorphism, so the two possibilities are the identity and $\sigma$. With the right factor $c$ the inverse, $\natural$ or $\ast$, and the left slot either the identity or $\sigma$, the six members are the ones the corpus uses: the inner conjugation $\mathrm{Ad}_{\tilde Q_6}$, the conjugation sandwich $\tilde Q_6\,\tilde Q\,\tilde Q_6^{\natural}$ and the Hermitian sandwich $\tilde Q_6\,\tilde Q\,\tilde Q_6^{\ast}$ are the three with the identity on the left, while $\bar{\tilde Q_6}\,\tilde Q\,\tilde Q_6^{-1}$ is the $\sigma$-twisted one, the operator of the general theory of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and $(\sigma,\natural)$, $(\sigma,\ast)$ are the two remaining. Every one of the remarkable subspaces is multiplicative in the parameter, by the proposition above.</p>
-<p><strong>Remark (which switch does what).</strong> The four adjoints of the left multiplication separate by the switch that each one carries:</p>
+<h2 id="which-switch-does-what">Which Switch Does What</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -410,7 +290,7 @@ $$</p>
 </table></div>
 <p>The sign character $\alpha$ is the switch of the side: the adjoint is a left multiplication exactly for the two forms whose parameter carries the sign, and a right multiplication for the two whose parameter does not. The coefficient involution $\sigma$ is the switch of the pair of forms: it is present exactly in the two rows of the two sesquilinear forms, and it is the bar on the parameter there. Both readings are the two switches of the table above, read on the one-sided operators instead of on the sandwiches.</p>
 <h2 id="self-adjointness-under-the-four-adjoints">Self-Adjointness under the Four Adjoints</h2>
-<p>The four adjoints separate on the two families of the previous section. The table gives, for the two-sided operator $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ and for the inner automorphism $\mathrm{Ad}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{-1}}$, whether the operator equals its own adjoint, for the four forms and four positions of the parameter.</p>
+<p>The four adjoints separate on the two families of §<em>Signed, Unsigned and Associated</em>. The table gives, for the two-sided operator $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ and for the inner automorphism $\mathrm{Ad}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{-1}}$, whether the operator equals its own adjoint, for the four forms and four positions of the parameter.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -476,7 +356,7 @@ $$</p>
 <p><em>Proof.</em> Self-adjointness is the equality of two decomposable tensors, and $L_{\tilde Q_4}R_{\tilde Q_5}=L_{\tilde Q_4'}R_{\tilde Q_5'}$ if and only if $\tilde Q_4'=\lambda\tilde Q_4$ and $\tilde Q_5'=\lambda^{-1}\tilde Q_5$ for one scalar $\lambda\in\mathbb{C}^{\times}$, the map $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ being faithful because $\mathbb{B}$ is central simple. Substituting the four adjoints of the theorem gives two equations on $\lambda$ for each pair; the two are the same equation in the bilinear cases and in the three cases of the second family, which leaves a single parallelism, and they are the two ratio equations in the sesquilinear cases of $\Theta_{\tilde Q_6}$, where the two ratios must agree. The table above is the evaluation on the four parameters.</p>
 <p><strong>Remark (the table is the naming rule in action).</strong> The table is also a second piece of evidence for the rule of the introduction. The plain pair of the second family and the signed pair of the first are the two bilinear forms, and their criteria are the two parallelisms with $\natural$; the two conjugate linear forms give the two ratio equations, which the centre fails on the left and passes on the right, and the mixed parameter, which carries both a scalar and a vector part, satisfies none of the four conditions for $\Theta_{\tilde Q_6}$. Nothing in the table uses a distance or a limit.</p>
 <h2 id="why-the-families-are-named-as-they-are">Why the Families Are Named As They Are</h2>
-<p>The evidence is collected in one table, and it is a description of the corpus and not a new theorem. Each row is one form, the adjoint of the left multiplication that the form produces, the operator family built on it, and the adjoint name the corpus gives to that family. The first two of those names were the titles of the two bilinear operator families until 2026-09-27, when the titles were changed to name the algebra of the subcategory.</p>
+<p>Each row is one form, the adjoint of the left multiplication that the form produces, the operator family built on it, and the adjoint name the corpus gives to that family. The first two of those names were the titles of the two bilinear operator families until 2026-09-27, when the titles were changed to name the algebra of the subcategory.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -526,10 +406,9 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>Remark (the two words, and what they select).</strong> <em>Association</em> is the name of the transpose of the plain form: it reverses the factors and conjugates nothing, and it is the name of the adjoint whenever the form is the plain bilinear one, because there is no conjugation to put in the name. <em>Signed</em> is the name of the insertion of the grade involution $\natural$. For the general quaternionic bilinear form the adjoint <strong>is</strong> the signed left multiplication, $\Lambda^{\alpha}_{\tilde Q_6}(\tilde Q)=\tilde Q_6^{\natural}\tilde Q$, so the sign enters the name of the adjoint directly; the sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ is then the inner conjugation up to the norm, which is the "inner conjugation" half of the name. For the general plain sesquilinear form the adjoint is the dagger and the sandwich needs no sign; the corpus writes that family as <strong>Hermitian Adjoint</strong>, and it writes the family of the <em>same</em> form with the sign inserted into the operator as <strong>Signed Hermitian Adjoint</strong>, so the Hermitian layer carries two rows where the plain layer carries one. Read together, the three names of the biquaternion layer — Association, Signed Inner Conjugation, Hermitian Adjoint — are the three possible answers to "which conjugation does the adjoint of the form carry?": none, the sign $\natural$, or the conjugate linear $\ast$.</p>
-<p><strong>Remark (what the adjoint name does not say).</strong> The name records the adjoint of the form; it does not assert that the operator of the family is an isometry, that it is self-adjoint, or that it is an automorphism, and the tables above show the three properties failing for the generic parameter. The name is a name for the adjoint, and the article of the family is to be read with the form in hand.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra has four pairings, and each pairing has its own adjoint of a linear map. For the general plain bilinear form the adjoint is the exchange of the two factors with no conjugation, $\approx$, which the corpus calls <strong>association</strong>, the name of the adjoint that the plain family carries. The associate has a calculus of its own: it is an involution, it reverses composition, $(FG)^{\approx}=G^{\approx}F^{\approx}$, it reverses the factors of the Conway basis, $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, its matrix in the coefficient basis is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$, and combined with the coefficient conjugation it relates to the Hermitian adjoint by $\bar F^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$, which collapses to $F^{\ast}=F^{-1}$ on the vector-preserving unitaries. For the general quaternionic bilinear form the adjoint of the left multiplication is the left multiplication by $\tilde Q_6^{\natural}$, the <strong>signed left multiplication</strong>, and the sandwich built on it is the inner conjugation up to the norm, which the corpus calls the <strong>signed inner conjugation</strong>, the name of the adjoint that the quaternionic family carries. For the general plain sesquilinear form the adjoint is the <strong>Hermitian adjoint</strong> $\ast$; and <em>signed Hermitian adjoint</em> is the same form with the sign inserted into the operator. The word <em>signed</em> has one meaning throughout: the insertion of the grade involution $\natural$, which is the identity on the centre and minus the identity on the vector subspace. The examples give the four adjoint matrices of one two-sided operator, the two matrices of the signed and the unsigned inner conjugation of a mixed element and of the two extreme parameters, and the four self-adjointness criteria on the same parameters. No step of the article uses a topology, a distance or a limit.</p>
-<p>The two switches of the last section are the same two involutions read on the operators: the coefficient involution $\sigma$ replaces the squares $\lambda_\mu^{2}$ by the moduli $|\lambda_\mu|^{2}$, and the sign character $\alpha$ turns the signed sum $\sum\varepsilon_\mu\lambda_\mu^{2}$ into the unsigned one $\sum\lambda_\mu^{2}$. The four scalar parts that the two switches produce on one element are the four forms of the article, and the same two switches separate the four adjoints of the left multiplication.</p>
+<p>The two switches of the twisted right factor, and the four forms that they return at the unit, are <em>Introduction to the Operators of the Biquaternion Algebra</em>, §<em>The Two Switches and the Twisted Right Factor</em>; the table of §<em>Which Switch Does What</em> gives the adjoint-side reading.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -587,19 +466,11 @@ $$</p>
 <td>$\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}\mathrm{Ad}_{\tilde Q_6}$</td>
 <td>the twisted two-sided operator; $\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural}$ the norm</td>
 </tr>
-<tr>
-<td>$c_{\sigma,\alpha}(\tilde Q_6)=\sigma(\alpha(\tilde Q_6))$</td>
-<td>the twisted right factor: $\tilde Q_6$, $\tilde Q_6^{\natural}$, $\bar{\tilde Q_6}$ or $\tilde Q_6^{\ast}$ according to the two switches</td>
-</tr>
-<tr>
-<td>$\Phi^{\sigma,\alpha}_{\tilde Q_6}=\tilde Q_6\,\tilde Q\,c_{\sigma,\alpha}(\tilde Q_6)$</td>
-<td>the two-sided operator of the switches; multiplicative in $\tilde Q_6$ for $\alpha=\natural$</td>
-</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-four-general-products-and-operators.html">Introduction to the Operators of the Biquaternion Algebra</a>, for the products-to-operators bridge that the adjoints above serve, and for the theorem that the plain product gives minus the reflection and the sign gives the reflection</li>
+<li><a href="the-four-general-products-and-operators.html">Introduction to the Operators of the Biquaternion Algebra</a>, for the products-to-operators bridge that the adjoints above serve, for the theorem that the plain product gives minus the reflection and the sign gives the reflection, and for the two switches $\sigma$ and $\alpha$ that the last table of this article names</li>
 <li><a href="the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a>, for the four forms the four adjoints belong to, their Gram matrices, their signatures and their notation table of the four adjoints</li>
 <li><a href="the-group-of-involutions.html">The Group of Involutions</a>, for the four conjugations, their group and their linearity</li>
 <li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the Conway operator basis on which the associate reverses the factors, and the regular representations $L_a$ and $R_b$ that transpose into one another</li>
