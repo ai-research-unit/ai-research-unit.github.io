@@ -68,7 +68,7 @@ $$
 \langle\tilde{A}\tilde{Q}\tilde{A}^{*},\tilde{A}\tilde{Q}\tilde{A}^{*}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural},\qquad \tilde{A}\in G.
 $$
 
-The action defines the surjective homomorphism $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$, the two-to-one cover of the identity component of the orthogonal group of the restricted form; it is read on the module in *Biquaternion Spin Geometry*.
+The action defines the surjective homomorphism $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$, the two-to-one cover of the identity component of the orthogonal group of the restricted form; it is read on the module in *The Null Quadric and Its Projective Geometry*, §*Spinors and the Rulings*.
 
 **Proposition (the image is the identity component).** The image of the two-sided action is the identity component $SO^{+}(1,3)$.
 

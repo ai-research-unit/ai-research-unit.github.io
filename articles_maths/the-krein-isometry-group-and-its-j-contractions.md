@@ -32,7 +32,7 @@ R_{\tilde{Q}_1}\ \text{is $J$-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
 
 where $S^{1}e_t$ is the circle of central phases.
 
-**Proof.** $L_{\tilde{Q}_1}^{\dagger}L_{\tilde{Q}_1}=R_{\bar{\tilde{Q}_1}}L_{\tilde{Q}_1}$ is the operator $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\bar{\tilde{Q}_1}$, which is the identity exactly when $\tilde{Q}_1\bar{\tilde{Q}_1}=e_t$ and $\tilde{Q}_1$ is central, that is $\tilde{Q}_1\in S^{1}e_t$; the right case is symmetric. For the sandwich, $\Theta_{\tilde{Q}_1}^{\dagger}\Theta_{\tilde{Q}_1}=\Theta_{\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}e_t}=|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|^{2}\mathrm{id}$.
+**Proof.** $L_{\tilde{Q}_1}^{\dagger}L_{\tilde{Q}_1}=R_{\bar{\tilde{Q}_1}}L_{\tilde{Q}_1}$ is the operator $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\bar{\tilde{Q}_1}$, which is the identity exactly when $\tilde{Q}_1\bar{\tilde{Q}_1}=e_t$ and $\tilde{Q}_1$ is central, that is $\tilde{Q}_1\in S^{1}e_t$; the right case is symmetric. For the sandwich, write $\tilde{Q}_1=\lambda\tilde{U}$ with $\lambda^{2}=\langle\tilde{Q}_1\rangle_{\natural}$ and $\tilde{U}\in SL_2(\mathbb{C})$. Then $\Theta_{\tilde{Q}_1}=|\lambda|^{2}\Theta_{\tilde{U}}$: the sandwich depends on $\tilde{Q}_1$ only through $\tilde{U}$ and $|\det\tilde{Q}_1|$. On the coefficient space the maps $\Theta_{\tilde{U}}$ with $\tilde{U}\in SL_2(\mathbb{C})$ are the real Lorentz group $SO^{+}(1,3)$, which preserves the form of signature $(1,3)$ by construction, and the scalar factor is $|\det\tilde{Q}_1|^{2}$. Hence $\Theta_{\tilde{Q}_1}$ is an isometry exactly when $|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|=1$.
 
 **Corollary (the compact algebraic subgroup).** The central phases and the unitary sandwiches generate the compact subgroup
 
@@ -50,7 +50,7 @@ of real dimension $4$: the phases are the scalar isometries and the unitary sand
 
 $$ \boxed{\;\lambda\in\mathrm{spec}(T)\iff\frac{1}{\bar\lambda}\in\mathrm{spec}(T)\;}, $$
 
-with the same multiplicity; the eigenvalues on the unit circle are paired by conjugation, and the eigenvalues off the circle occur in inverted pairs. The spectrum need not lie on the unit circle.
+with the same multiplicity; the eigenvalues off the unit circle occur in inverted pairs, and the spectrum need not be confined to the circle.
 
 **Proof.** $T^{*}=JT^{-1}J$ makes $T^{*}$ similar to $T^{-1}$, so the characteristic polynomials of $T^{*}$ and of $T^{-1}$ agree, and $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$ while $\mathrm{spec}(T^{-1})=\{\lambda^{-1}\}$. The boost of the next section has the eigenvalues $\exp(\pm t)$.
 
@@ -78,9 +78,9 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 ## The Actions of the Group
 
-**Theorem (transitivity).** The group $U_{J}(\mathbb{B})$ acts transitively on the isotropic lines, on the positive definite lines and on the maximal totally isotropic subspaces of the general quaternionic sesquilinear form; the stabiliser of the canonical positive line $\mathbb{C}e_t$ and of the canonical maximal isotropic subspace is $\mathrm{U}(1)\times \mathrm{U}(3)$ and the stabiliser of the isotropic line $\mathbb{C}(e_t+\vec e_x)$ contains the boosts.
+**Theorem (transitivity).** The group $U_{J}(\mathbb{B})$ acts transitively on the isotropic lines, on the positive definite lines and on the maximal totally isotropic subspaces, which in signature $(1,3)$ are the isotropic lines. The stabiliser of the positive line $\mathbb{C}e_t$ is $\mathrm{U}(1)\times \mathrm{U}(3)$; the stabiliser of the isotropic line $\mathbb{C}(e_t+\vec e_x)$ is a parabolic subgroup, and it contains the boosts.
 
-**Proof.** Transitivity on the isotropic and maximal isotropic subspaces is Witt's extension theorem (*Witt's Theorems*); transitivity on the positive definite lines follows or is read from the identification with the symmetric space $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ of *The Krein Level Sets and the Hyperbolic Structure*. An isometry mapping the canonical positive line onto itself preserves its Krein-orthogonal complement, hence the fundamental decomposition, so it lies in $\mathrm{U}(1)\times \mathrm{U}(3)$; and the boost fixes the direction of $e_t+\vec e_x$ up to a scalar.
+**Proof.** Transitivity on the isotropic lines is Witt's extension theorem (*Witt's Theorems*), and in signature $(1,3)$ a maximal totally isotropic subspace is a line. Transitivity on the positive lines is read from the identification with the symmetric space $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ of *The Krein Level Sets and the Hyperbolic Structure*. An isometry mapping the positive line $\mathbb{C}e_t$ onto itself preserves its Krein-orthogonal complement, hence the fundamental decomposition, so it lies in $\mathrm{U}(1)\times \mathrm{U}(3)$. The boost fixes the isotropic direction $e_t+\vec e_x$, so the stabiliser of that line contains the boosts and is not compact.
 
 ## The J-Contractions
 
@@ -127,8 +127,7 @@ The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $\mathr
 
 ## Further Reading
 
-- [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the criteria in the algebra's families
-- [J-Normal Operators and the Indefinite Spectral Theorem](j-normal-operators-and-the-indefinite-spectral-theorem.html), for normality and the spectral symmetries
+- [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the criteria in the algebra's families, normality and the spectral symmetries
 - [The Krein Cartan Decomposition of the Operator Algebra](the-krein-cartan-decomposition-of-the-operator-algebra.html), for the Lie algebra $\mathfrak{u}(1,3)$ and the maximal compact subalgebra
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the complex hyperbolic ball on which the group acts
 - [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone used in the definition of the contractions

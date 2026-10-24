@@ -18,27 +18,27 @@ Each rule is written on the coordinates of a pair, with its scalar–vector form
 
 **Definition.** The **general plain bilinear product** multiplies the coordinates of the two elements on the basis,
 $$
-\tilde Q_1\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\nu}\,e_\mu e_\nu .
+\tilde Q_1\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1\mu} Q_{2\nu}\,e_\mu e_\nu .
 $$
 
 Written on the four units, the product is
 $$
-\tilde Q_1\tilde Q_2=\bigl(Q_{1,0}Q_{2t}-Q_{1,1}Q_{2x}-Q_{1,2}Q_{2y}-Q_{1,3}Q_{2z}\bigr)
-+\bigl(Q_{1,0}Q_{2x}+Q_{1,1}Q_{2t}+Q_{1,2}Q_{2z}-Q_{1,3}Q_{2y}\bigr)\vec e_x
-+\bigl(Q_{1,0}Q_{2y}-Q_{1,1}Q_{2z}+Q_{1,2}Q_{2t}+Q_{1,3}Q_{2x}\bigr)\vec e_y
-+\bigl(Q_{1,0}Q_{2z}+Q_{1,1}Q_{2y}-Q_{1,2}Q_{2x}+Q_{1,3}Q_{2t}\bigr)\vec e_z .
+\tilde Q_1\tilde Q_2=\bigl(Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z}\bigr)
++\bigl(Q_{1t}Q_{2x}+Q_{1x}Q_{2t}+Q_{1y}Q_{2z}-Q_{1z}Q_{2y}\bigr)\vec e_x
++\bigl(Q_{1t}Q_{2y}-Q_{1x}Q_{2z}+Q_{1y}Q_{2t}+Q_{1z}Q_{2x}\bigr)\vec e_y
++\bigl(Q_{1t}Q_{2z}+Q_{1x}Q_{2y}-Q_{1y}Q_{2x}+Q_{1z}Q_{2t}\bigr)\vec e_z .
 $$
 
-The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and linear in the coordinates $Q_{2t},\dots,Q_{2z}$.
+The rule is linear in the coordinates $Q_{1t},\dots,Q_{1z}$ and linear in the coordinates $Q_{2t},\dots,Q_{2z}$.
 
 **The scalar–vector form.** Collecting the scalar part and the vector part of the two elements,
 $$
 \boxed{\;
-\tilde Q_1\tilde Q_2=\bigl(Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2
+\tilde Q_1\tilde Q_2=\bigl(Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2
 \;}.
 $$
 
-The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu} Q_{2,\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the one displayed.
+The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the one displayed.
 
 
 ### The General Plain Sesquilinear Product $\tilde Q_1\tilde Q_2^{*}$
@@ -49,60 +49,60 @@ Q^{*}_0=\overline{Q_t} , \qquad Q^{*}_1=-\overline{Q_x} , \qquad Q^{*}_2=-\overl
 $$
 and the product is
 $$
-\tilde Q_1\tilde Q_2^{*}=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1,\mu} (Q_2^{*})_\nu\,e_\mu e_\nu
-=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\nu Q_{1,\mu} \overline{Q_{2,\nu}}\,e_\mu e_\nu .
+\tilde Q_1\tilde Q_2^{*}=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1\mu} (Q_2^{*})_\nu\,e_\mu e_\nu
+=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\nu Q_{1\mu} \overline{Q_{2\nu}}\,e_\mu e_\nu .
 $$
 
 Written on the four units, the product is
 $$
-\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}+Q_{1,1}\overline{Q_{2x}}+Q_{1,2}\overline{Q_{2y}}+Q_{1,3}\overline{Q_{2z}}\bigr)
-+\bigl(-Q_{1,0}\overline{Q_{2x}}+Q_{1,1}\overline{Q_{2t}}-Q_{1,2}\overline{Q_{2z}}+Q_{1,3}\overline{Q_{2y}}\bigr)\vec e_x
-+\bigl(-Q_{1,0}\overline{Q_{2y}}+Q_{1,1}\overline{Q_{2z}}+Q_{1,2}\overline{Q_{2t}}-Q_{1,3}\overline{Q_{2x}}\bigr)\vec e_y
-+\bigl(-Q_{1,0}\overline{Q_{2z}}-Q_{1,1}\overline{Q_{2y}}+Q_{1,2}\overline{Q_{2x}}+Q_{1,3}\overline{Q_{2t}}\bigr)\vec e_z .
+\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+Q_{1x}\overline{Q_{2x}}+Q_{1y}\overline{Q_{2y}}+Q_{1z}\overline{Q_{2z}}\bigr)
++\bigl(-Q_{1t}\overline{Q_{2x}}+Q_{1x}\overline{Q_{2t}}-Q_{1y}\overline{Q_{2z}}+Q_{1z}\overline{Q_{2y}}\bigr)\vec e_x
++\bigl(-Q_{1t}\overline{Q_{2y}}+Q_{1x}\overline{Q_{2z}}+Q_{1y}\overline{Q_{2t}}-Q_{1z}\overline{Q_{2x}}\bigr)\vec e_y
++\bigl(-Q_{1t}\overline{Q_{2z}}-Q_{1x}\overline{Q_{2y}}+Q_{1y}\overline{Q_{2x}}+Q_{1z}\overline{Q_{2t}}\bigr)\vec e_z .
 $$
 
-The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and conjugate-linear in the coordinates $Q_{2t},\dots,Q_{2z}$, conjugation of the coefficients happening inside the product.
+The rule is linear in the coordinates $Q_{1t},\dots,Q_{1z}$ and conjugate-linear in the coordinates $Q_{2t},\dots,Q_{2z}$, conjugation of the coefficients happening inside the product.
 
 **The scalar–vector form.** The scalar part of the second factor becomes $\overline{Q_t}$ and its vector part becomes $-\overline{\vec Q}$, so the two pairings change sign and are read against the conjugate vector,
 $$
 \boxed{\;
-\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}
+\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}
 \;}.
 $$
 
-The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
+The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 
 
 ### The General Quaternionic Bilinear Product $\tilde Q_1^{\natural}\tilde Q_2$
 
 **Definition.** The **general quaternionic bilinear product** reads the first element through the conjugation ${}^{\natural}$ and leaves the second as it is. The coordinates of the first element enter as
 $$
-(Q_1^{\natural})_0=Q_{1,0} , \qquad (Q_1^{\natural})_1=-Q_{1,1} , \qquad (Q_1^{\natural})_2=-Q_{1,2} , \qquad (Q_1^{\natural})_3=-Q_{1,3} ,
+(Q_1^{\natural})_t=Q_{1t} , \qquad (Q_1^{\natural})_x=-Q_{1x} , \qquad (Q_1^{\natural})_y=-Q_{1y} , \qquad (Q_1^{\natural})_z=-Q_{1z} ,
 $$
 and the product is
 $$
-\tilde Q_1^{\natural}\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}(Q_1^{\natural})_\mu Q_{2,\nu}\,e_\mu e_\nu
-=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu} Q_{2,\nu}\,e_\mu e_\nu .
+\tilde Q_1^{\natural}\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}(Q_1^{\natural})_\mu Q_{2\nu}\,e_\mu e_\nu
+=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu} Q_{2\nu}\,e_\mu e_\nu .
 $$
 
 Written on the four units, the product is
 $$
-\tilde Q_1^{\natural}\tilde Q_2=\bigl(Q_{1,0}Q_{2t}+Q_{1,1}Q_{2x}+Q_{1,2}Q_{2y}+Q_{1,3}Q_{2z}\bigr)
-+\bigl(Q_{1,0}Q_{2x}-Q_{1,1}Q_{2t}-Q_{1,2}Q_{2z}+Q_{1,3}Q_{2y}\bigr)\vec e_x
-+\bigl(Q_{1,0}Q_{2y}+Q_{1,1}Q_{2z}-Q_{1,2}Q_{2t}-Q_{1,3}Q_{2x}\bigr)\vec e_y
-+\bigl(Q_{1,0}Q_{2z}-Q_{1,1}Q_{2y}+Q_{1,2}Q_{2x}-Q_{1,3}Q_{2t}\bigr)\vec e_z .
+\tilde Q_1^{\natural}\tilde Q_2=\bigl(Q_{1t}Q_{2t}+Q_{1x}Q_{2x}+Q_{1y}Q_{2y}+Q_{1z}Q_{2z}\bigr)
++\bigl(Q_{1t}Q_{2x}-Q_{1x}Q_{2t}-Q_{1y}Q_{2z}+Q_{1z}Q_{2y}\bigr)\vec e_x
++\bigl(Q_{1t}Q_{2y}+Q_{1x}Q_{2z}-Q_{1y}Q_{2t}-Q_{1z}Q_{2x}\bigr)\vec e_y
++\bigl(Q_{1t}Q_{2z}-Q_{1x}Q_{2y}+Q_{1y}Q_{2x}-Q_{1z}Q_{2t}\bigr)\vec e_z .
 $$
 
-The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and linear in the coordinates $Q_{2t},\dots,Q_{2z}$.
+The rule is linear in the coordinates $Q_{1t},\dots,Q_{1z}$ and linear in the coordinates $Q_{2t},\dots,Q_{2z}$.
 
-**The scalar–vector form.** The scalar part of the first factor stays $Q_{1,0}$ and its vector part becomes $-\vec Q_1$, so the two pairings change sign where that vector part enters,
+**The scalar–vector form.** The scalar part of the first factor stays $Q_{1t}$ and its vector part becomes $-\vec Q_1$, so the two pairings change sign where that vector part enters,
 $$
 \boxed{\;
-\tilde Q_1^{\natural}\tilde Q_2=\bigl(Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2
+\tilde Q_1^{\natural}\tilde Q_2=\bigl(Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2
 \;}.
 $$
 
-The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, and the vector part is the one displayed.
+The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu} Q_{2\mu}$, and the vector part is the one displayed.
 
 
 ### The General Quaternionic Sesquilinear Product $\tilde Q_1^{\natural}\tilde Q_2^{*}$
@@ -110,27 +110,27 @@ The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t
 **Definition.** The **general quaternionic sesquilinear product** reads the first element through ${}^{\natural}$ and the second through ${}^{*}$, the two being read independently. The coordinates enter as $(Q_1^{\natural})_\mu$ in the first factor and $(Q_2^{*})_\nu$ in the second, and the product is
 $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}(Q_1^{\natural})_\mu (Q_2^{*})_\nu\,e_\mu e_\nu
-=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\mu\varepsilon_\nu Q_{1,\mu} \overline{Q_{2,\nu}}\,e_\mu e_\nu .
+=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\mu\varepsilon_\nu Q_{1\mu} \overline{Q_{2\nu}}\,e_\mu e_\nu .
 $$
 
 Written on the four units, the product is
 $$
-\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}-Q_{1,1}\overline{Q_{2x}}-Q_{1,2}\overline{Q_{2y}}-Q_{1,3}\overline{Q_{2z}}\bigr)
-+\bigl(-Q_{1,0}\overline{Q_{2x}}-Q_{1,1}\overline{Q_{2t}}+Q_{1,2}\overline{Q_{2z}}-Q_{1,3}\overline{Q_{2y}}\bigr)\vec e_x
-+\bigl(-Q_{1,0}\overline{Q_{2y}}-Q_{1,1}\overline{Q_{2z}}-Q_{1,2}\overline{Q_{2t}}+Q_{1,3}\overline{Q_{2x}}\bigr)\vec e_y
-+\bigl(-Q_{1,0}\overline{Q_{2z}}+Q_{1,1}\overline{Q_{2y}}-Q_{1,2}\overline{Q_{2x}}-Q_{1,3}\overline{Q_{2t}}\bigr)\vec e_z .
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}-Q_{1x}\overline{Q_{2x}}-Q_{1y}\overline{Q_{2y}}-Q_{1z}\overline{Q_{2z}}\bigr)
++\bigl(-Q_{1t}\overline{Q_{2x}}-Q_{1x}\overline{Q_{2t}}+Q_{1y}\overline{Q_{2z}}-Q_{1z}\overline{Q_{2y}}\bigr)\vec e_x
++\bigl(-Q_{1t}\overline{Q_{2y}}-Q_{1x}\overline{Q_{2z}}-Q_{1y}\overline{Q_{2t}}+Q_{1z}\overline{Q_{2x}}\bigr)\vec e_y
++\bigl(-Q_{1t}\overline{Q_{2z}}+Q_{1x}\overline{Q_{2y}}-Q_{1y}\overline{Q_{2x}}-Q_{1z}\overline{Q_{2t}}\bigr)\vec e_z .
 $$
 
-The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and conjugate-linear in the coordinates $Q_{2t},\dots,Q_{2z}$.
+The rule is linear in the coordinates $Q_{1t},\dots,Q_{1z}$ and conjugate-linear in the coordinates $Q_{2t},\dots,Q_{2z}$.
 
-**The scalar–vector form.** The scalar part of the first factor is $Q_{1,0}$ and its vector part is $-\vec Q_1$; the scalar part of the second is $\overline{Q_{2t}}$ and its vector part is $-\overline{\vec Q_2}$, so the dot product enters with a negative sign and the cross product with a positive one, read against the conjugate vector,
+**The scalar–vector form.** The scalar part of the first factor is $Q_{1t}$ and its vector part is $-\vec Q_1$; the scalar part of the second is $\overline{Q_{2t}}$ and its vector part is $-\overline{\vec Q_2}$, so the dot product enters with a negative sign and the cross product with a positive one, read against the conjugate vector,
 $$
 \boxed{\;
-\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}
 \;}.
 $$
 
-The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
+The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 
 ## The Two Choices and the Remaining Conjugations
 
@@ -162,15 +162,15 @@ The ${}^{\natural}$ in the first slot and the ${}^{*}$ in the second are what di
 Separating the scalar part of the first factor from its vector part, the general plain bilinear product and the ${}^{\natural}$-product are
 
 $$
-\tilde Q_1\tilde Q_2=(Q_{1,0}e_t)\tilde Q_2+\vec Q_1\tilde Q_2 , \qquad
-\tilde Q_1^{\natural}\tilde Q_2=(Q_{1,0}e_t)\tilde Q_2-\vec Q_1\tilde Q_2 ,
+\tilde Q_1\tilde Q_2=(Q_{1t}e_t)\tilde Q_2+\vec Q_1\tilde Q_2 , \qquad
+\tilde Q_1^{\natural}\tilde Q_2=(Q_{1t}e_t)\tilde Q_2-\vec Q_1\tilde Q_2 ,
 $$
 
 the vector part being read as an element where it multiplies. Adding and subtracting,
 
 $$
 \boxed{\;
-\tilde Q_1\tilde Q_2+\tilde Q_1^{\natural}\tilde Q_2=2Q_{1,0}\tilde Q_2 , \qquad
+\tilde Q_1\tilde Q_2+\tilde Q_1^{\natural}\tilde Q_2=2Q_{1t}\tilde Q_2 , \qquad
 \tilde Q_1\tilde Q_2-\tilde Q_1^{\natural}\tilde Q_2=2\,\vec Q_1\tilde Q_2
 \;}.
 $$
@@ -178,7 +178,7 @@ $$
 The same separation applied to the two sesquilinear products gives
 
 $$
-\tilde Q_1\tilde Q_2^{*}+\tilde Q_1^{\natural}\tilde Q_2^{*}=2Q_{1,0}\tilde Q_2^{*} , \qquad
+\tilde Q_1\tilde Q_2^{*}+\tilde Q_1^{\natural}\tilde Q_2^{*}=2Q_{1t}\tilde Q_2^{*} , \qquad
 \tilde Q_1\tilde Q_2^{*}-\tilde Q_1^{\natural}\tilde Q_2^{*}=2\,\vec Q_1\tilde Q_2^{*} .
 $$
 
@@ -229,20 +229,20 @@ The scalar part of each of the four general products is read on the coordinates 
 
 | product | scalar part | signs and conjugation |
 |---|---|---|
-| $\tilde Q_1\tilde Q_2$ | $\sum_\mu\varepsilon_\mu Q_{1,\mu} Q_{2,\mu}$ | the signs $\varepsilon_\mu$ in both factors |
-| $\tilde Q_1\tilde Q_2^{*}$ | $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the conjugate in the second factor |
-| $\tilde Q_1^{\natural}\tilde Q_2$ | $\sum_\mu Q_{1,\mu} Q_{2,\mu}$ | no sign at all |
-| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the signs in the first factor and the conjugate in the second |
+| $\tilde Q_1\tilde Q_2$ | $\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ | the signs $\varepsilon_\mu$ in both factors |
+| $\tilde Q_1\tilde Q_2^{*}$ | $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the conjugate in the second factor |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\sum_\mu Q_{1\mu} Q_{2\mu}$ | no sign at all |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the signs in the first factor and the conjugate in the second |
 
 with $\varepsilon=(1,-1,-1,-1)$; the first and the third are linear in the coordinates of both factors and the second and the fourth are conjugate-linear in the coordinates of the second. The four are related two by two, the two bilinear ones by the bilinear dot product and the two sesquilinear ones by its Hermitian companion:
 
 $$
-\mathrm{Sc}(\tilde Q_1\tilde Q_2)+\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=2Q_{1,0}Q_{2t} , \qquad
+\mathrm{Sc}(\tilde Q_1\tilde Q_2)+\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=2Q_{1t}Q_{2t} , \qquad
 \mathrm{Sc}(\tilde Q_1\tilde Q_2)-\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=-2(\vec Q_1,\vec Q_2) ,
 $$
 
 $$
-\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})+\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=2Q_{1,0}\overline{Q_{2t}} , \qquad
+\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})+\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=2Q_{1t}\overline{Q_{2t}} , \qquad
 \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})-\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=2(\vec Q_1,\overline{\vec Q_2}) .
 $$
 
@@ -284,27 +284,27 @@ The two sesquilinear identities are the conjugate-symmetry of the two sesquiline
 The vector parts obey the same two splitting identities as the scalar parts. The splitting holds first at the level of the elements,
 
 $$
-\tilde Q_1^{\natural}\tilde Q_2=2Q_{1,0}\tilde Q_2-\tilde Q_1\tilde Q_2 , \qquad
-\tilde Q_1^{\natural}\tilde Q_2^{*}=2Q_{1,0}\tilde Q_2^{*}-\tilde Q_1\tilde Q_2^{*} ,
+\tilde Q_1^{\natural}\tilde Q_2=2Q_{1t}\tilde Q_2-\tilde Q_1\tilde Q_2 , \qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}=2Q_{1t}\tilde Q_2^{*}-\tilde Q_1\tilde Q_2^{*} ,
 $$
 
 and reading the vector part of each side gives
 
 $$
-\mathrm{Vec}(\tilde Q_1^{\natural}\tilde Q_2)=2Q_{1,0}\vec Q_2-\mathrm{Vec}(\tilde Q_1\tilde Q_2) , \qquad
-\mathrm{Vec}(\tilde Q_1^{\natural}\tilde Q_2^{*})=-2Q_{1,0}\overline{\vec Q_2}-\mathrm{Vec}(\tilde Q_1\tilde Q_2^{*}) .
+\mathrm{Vec}(\tilde Q_1^{\natural}\tilde Q_2)=2Q_{1t}\vec Q_2-\mathrm{Vec}(\tilde Q_1\tilde Q_2) , \qquad
+\mathrm{Vec}(\tilde Q_1^{\natural}\tilde Q_2^{*})=-2Q_{1t}\overline{\vec Q_2}-\mathrm{Vec}(\tilde Q_1\tilde Q_2^{*}) .
 $$
 
-The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $Q_{1,0}\vec Q_2$; the second, that the vector part of the sesquilinear pair reflects in $-Q_{1,0}\overline{\vec Q_2}$. In full, the four vector parts are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
+The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $Q_{1t}\vec Q_2$; the second, that the vector part of the sesquilinear pair reflects in $-Q_{1t}\overline{\vec Q_2}$. In full, the four vector parts are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
 
 | product | vector part | cross term |
 |---|---|---|
-| $\tilde Q_1\tilde Q_2$ | $Q_{1,0}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ | $+$ |
-| $\tilde Q_1\tilde Q_2^{*}$ | $-Q_{1,0}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-$ |
-| $\tilde Q_1^{\natural}\tilde Q_2$ | $Q_{1,0}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $-$ |
-| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $-Q_{1,0}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ | $+$ |
+| $\tilde Q_1\tilde Q_2$ | $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ | $+$ |
+| $\tilde Q_1\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $-$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ | $+$ |
 
-Deleting the cross term, the first and the third rows are reflections of each other in $Q_{1,0}\vec Q_2$, and the second and the fourth in $-Q_{1,0}\overline{\vec Q_2}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\vec Q_2$, reverses the sign of the $Q_{1,0}$-term and of the cross term, and leaves the sign of the $Q_{2t}$-term alone.
+Deleting the cross term, the first and the third rows are reflections of each other in $Q_{1t}\vec Q_2$, and the second and the fourth in $-Q_{1t}\overline{\vec Q_2}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\vec Q_2$, reverses the sign of the $Q_{1t}$-term and of the cross term, and leaves the sign of the $Q_{2t}$-term alone.
 
 
 ## The Left Multiplications
@@ -355,7 +355,7 @@ $$
 so the four general products take the four values $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{\natural}$, $\tilde Q_1^{\natural}\tilde Q_2$ and $(\tilde Q_2\tilde Q_1)^{\natural}$, of which the second and the fourth are the natural conjugates of the two products in the reversed order. The scalar parts follow: the second scalar part restricts to the third,
 
 $$
-\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1,\mu} Q_{2,\mu}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2) \qquad (\bar{\tilde Q}_1=\tilde Q_1,\ \bar{\tilde Q}_2=\tilde Q_2),
+\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu} Q_{2\mu}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2) \qquad (\bar{\tilde Q}_1=\tilde Q_1,\ \bar{\tilde Q}_2=\tilde Q_2),
 $$
 
 and the fourth restricts to the first. The four scalar parts therefore come in two linear and two conjugate-linear pairs off the subspace and in two linear pairs on it: on the subspace the coefficients are fixed by the complex conjugation, so the star is the natural sign and only the signs $\varepsilon_\mu$ remain.
@@ -389,7 +389,7 @@ The first two rows are read off the definitions. Each of the four general produc
 
 The distinction is not a technicality of the definitions: it separates the two rows of the scalar and vector tables above that involve $\overline{\vec Q}$, and it is the reason the fourth column carries no unit and no monoid. It also settles what the four can be used for. A $\mathbb{C}$-bilinear operation on $\mathbb{B}$ defines on $\mathbb{B}$ the structure of an algebra over $\mathbb{C}$, associative or not; a conjugate-linear operation defines no such thing, and the two sesquilinear products are the multiplications of a sesqualgebra over $\mathbb{C}$ instead. The first of the two is nonetheless the multiplication of a sesqualgebra over $\mathbb{C}$ with its conjugation, being the derived operation of the algebra with the star, and that is a multiplication in the second sense the corpus admits (*Introduction to the General Plain Sesqualgebra*); the second is not, since it reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well. The four remain binary operations of the same kind, with the same two-step rule for their computation.
 
-**The two exchanges, and the class.** The four general products are split against an exchange of the two arguments, and there are two of them. The **exchange by a conjugation** $c$, $f^{c}(\tilde{Q}_1,\tilde{Q}_2)=c(f(\tilde{Q}_2,\tilde{Q}_1))$, composes the swap with $c$ and keeps the class of the two sesquilinear products, whose parts under it are sesquilinear again; the conjugation and the swap repair each other's parity, and this is the exchange the twelve names are read against. The **plain exchange** swaps the arguments and does not keep the class: a part of a sesquilinear product taken under it is only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and its two halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*. For the plain sesquilinear product and $c=\overline{\cdot}$ the two parts are the scalar part and the vector part of the product, $Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ and $-Q_{1,0}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; for the general quaternionic sesquilinear product they are the symmetrisation of $\tilde{Q}_1^{\natural}$ with $\tilde{Q}_2^{*}$ and half their commutator. The two exchanges and their two splits are read in *Symmetric and Antisymmetric Decomposition of the Four General Products*, §*The Exchange Behind the Split* and §*The Method of the Decomposition*.
+**The two exchanges, and the class.** The four general products are split against an exchange of the two arguments, and there are two of them. The **exchange by a conjugation** $c$, $f^{c}(\tilde{Q}_1,\tilde{Q}_2)=c(f(\tilde{Q}_2,\tilde{Q}_1))$, composes the swap with $c$ and keeps the class of the two sesquilinear products, whose parts under it are sesquilinear again; the conjugation and the swap repair each other's parity, and this is the exchange the twelve names are read against. The **plain exchange** swaps the arguments and does not keep the class: a part of a sesquilinear product taken under it is only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and its two halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*. For the plain sesquilinear product and $c=\overline{\cdot}$ the two parts are the scalar part and the vector part of the product, $Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ and $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; for the general quaternionic sesquilinear product they are the symmetrisation of $\tilde{Q}_1^{\natural}$ with $\tilde{Q}_2^{*}$ and half their commutator. The two exchanges and their two splits are read in *Symmetric and Antisymmetric Decomposition of the Four General Products*, §*The Exchange Behind the Split* and §*The Method of the Decomposition*.
 
 
 ## The Failure of Associativity
@@ -454,7 +454,7 @@ the general plain bilinear product itself being read with no insertion. Here the
 
 Only the general plain bilinear product is a multiplication in the sense of algebra. It is $\mathbb{C}$-bilinear in both arguments, associative, commutative in its scalar part alone, and unital with a two-sided unit; it is the product that makes $\mathbb{B}$ an associative algebra with unit over $\mathbb{C}$, and it is the one whose associated structures — the remarkable subspaces, the Jordan and the Lie structures of *Symmetric and Antisymmetric Decomposition of the Four General Products*, the zero divisors and the idempotents — the rest of the category develops.
 
-The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, and that is all: it is not associative and it is unital on the left only. It defines on the underlying vector space a non-associative algebra structure in the weak sense, one that agrees with the general plain bilinear product on the centre and disagrees on the vector parts; it is the product whose scalar part is the signless sum $\sum_\mu Q_{1,\mu} Q_{2,\mu}$.
+The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, and that is all: it is not associative and it is unital on the left only. It defines on the underlying vector space a non-associative algebra structure in the weak sense, one that agrees with the general plain bilinear product on the centre and disagrees on the vector parts; it is the product whose scalar part is the signless sum $\sum_\mu Q_{1\mu} Q_{2\mu}$.
 
 The two products carrying the star are not multiplications of a bilinear $\mathbb{C}$-algebra at all: being conjugate-linear in their second argument they cannot be. Both are multiplications of a sesqualgebra over the conjugation, and within the pair they are separated by the unit. The general plain sesquilinear product is the derived operation $\tilde Q_1\star\tilde Q_2 = \tilde Q_1\tilde Q_2^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, that is the standard example of the category, and $e_t$ is a right unit of it; the general quaternionic sesquilinear product reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well and has no right unit, so it is a sesquilinear multiplication that is not the derived one (*Introduction to the General Plain Sesqualgebra*). The classification of the four general products is therefore: one multiplication of an associative unital algebra, one bilinear product that fails associativity and two-sidedness, and two multiplications of a sesqualgebra, of which the complex one is the derived operation with the right unit and the complex quaternionic one is not the derived operation and has no right unit.
 
@@ -469,13 +469,13 @@ The four rules are also one rule with a conjugation inserted in each slot. The t
 
 The four general products of the underlying complex space of $\mathbb{B}$ are read on one and the same pair, each with either element read as it stands or through a conjugation: the natural ${}^{\natural}$ in the first slot and the Hermitian ${}^{*}$ in the second. They are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and no two agree on every pair. The two remaining conjugations add no new scalar part, since $\mathrm{Sc}(\bar{\tilde Q}_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
-The conjugation in a slot separates the scalar part of that factor from its vector part: $\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2$ is $2Q_{1,0}\tilde Q_2$ or $2\vec Q_1\tilde Q_2$, and the same two identities hold with $\tilde Q_2^{*}$ in place of $\tilde Q_2$; they hold again for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the product with its slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric, while no one of the four products is commutative. The four scalar parts are $\sum_\mu\varepsilon_\mu Q_{1,\mu}Q_{2,\mu}$, $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, $\sum_\mu Q_{1,\mu}Q_{2,\mu}$ and $\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$.
+The conjugation in a slot separates the scalar part of that factor from its vector part: $\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2$ is $2Q_{1t}\tilde Q_2$ or $2\vec Q_1\tilde Q_2$, and the same two identities hold with $\tilde Q_2^{*}$ in place of $\tilde Q_2$; they hold again for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the product with its slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric, while no one of the four products is commutative. The four scalar parts are $\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, $\sum_\mu Q_{1\mu}Q_{2\mu}$ and $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$.
 
 The comparison gives the property table. Each of the four is $\mathbb{C}$-linear in the first argument; the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear in the second, the two products carrying the star are conjugate-linear there. The general plain bilinear product is associative, has the two-sided unit $1$, is alternative, flexible and satisfies the degree-three identity, and its left multiplications form a monoid. The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, has the left unit $1$ alone, and fails associativity, the alternative identities, flexibility and the degree-three identity, as do the two sesquilinear products, which have no identity and whose left multiplications do not form a monoid. The left multiplications of the four are the plain ones read through the conjugations: $L^{*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\tilde Q_1^{*}}$, $L^{\natural}_{\tilde Q_1}=L_{\tilde Q_1^{\natural}}$ and $L^{\natural*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\bar{\tilde Q}_1}$.
 
 Exactly one of the four is a multiplication of an associative unital $\mathbb{C}$-algebra, the general plain bilinear product; the ${}^{\natural}$-product is $\mathbb{C}$-bilinear but neither associative nor two-sidedly unital. The two products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$; among them the general plain sesquilinear product is the derived operation of $\mathbb{B}$ with its involution and has $e_t$ as a right unit, while the general quaternionic one has neither property.
 
-The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tilde Q)=Q_0^2-(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^2$, $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_0^2+(\vec Q,\vec Q)$ and $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\lvert Q_0\rvert^2-\sum_k\lvert Q_k\rvert^2$, and only the ${}^{\natural}$-square is a scalar element, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; the idempotents and the roots that follow from them are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the square-roots article of each of the other three products.
+The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tilde Q)=Q_t^2-(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^2$, $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+(\vec Q,\vec Q)$ and $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$, and only the ${}^{\natural}$-square is a scalar element, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; the idempotents and the roots that follow from them are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the square-roots article of each of the other three products.
 
 ## Summary of Notation
 
@@ -485,10 +485,10 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 | $\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquilinear product |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
-| $\tilde Q_1=Q_{1,0}e_t+\vec Q_1$ | the element and its four complex coordinates |
+| $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ | the element and its four complex coordinates |
 | $\tilde Q_1^{\natural}$, $\tilde Q_1^{*}$ | the two conjugations, in coordinates |
-| $\vec Q_1=Q_{1,1}\vec e_x+Q_{1,2}\vec e_y+Q_{1,3}\vec e_z$ | the vector part, read as an element where it multiplies |
-| $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$ | the complex bilinear dot product |
+| $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ | the vector part, read as an element where it multiplies |
+| $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ | the complex bilinear dot product |
 | $\vec Q_1\times\vec Q_2$ | the complex bilinear cross product |
 | $\overline{\vec Q}$ | the coefficientwise conjugate of the vector part |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector |

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The biquaternion algebra is not a division algebra, and the failure is concentrated on a single cone: the set of non-zero elements of norm zero, equivalently the set of non-invertible elements, equivalently the rank-one matrices in the model. The cone is the critical set of the quadratic map, the set on which the square can collapse, the set on which no escape radius is uniform, the set on which the Green's function loses its normalization, and the set on which the Julia set is not a complex manifold. It is not a negligible exceptional set: for the parameter zero the whole surface of idempotents lies on the Julia set.
+The biquaternion algebra is not a division algebra, and the failure is concentrated on a single cone: the set of non-zero elements of norm zero, equivalently the set of non-invertible elements, equivalently the rank-one matrices in the model. The cone is the critical set of the quadratic map, the set on which the square can collapse, the set on which no escape radius is uniform, the set on which the Green's function loses its normalization, the set on which the equilibrium measure loses its mass, and the set on which the Julia set is not a complex manifold. It is not a negligible exceptional set: for the parameter zero the whole surface of idempotents lies on the Julia set.
 
-The zero divisors and their classification are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the idempotents are *Idempotents of the Biquaternion Algebra*; the matrix model, the rank-one elements and the determinant are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the collapse of the square and the conditional radius are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the Green's function is *The Escape Radius and the Green's Function for the Biquaternions*.
+The zero divisors and their classification are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the matrix model, the rank-one elements and the determinant are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the collapse of the square and the conditional radius are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the Green's function and the conditional equilibrium measure are *The Escape Radius and the Green's Function for the Biquaternions*.
 
-The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, and the theorem that the idempotent manifold lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
+The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, the mass loss of the equilibrium measure at the cone, and the theorem that the idempotent manifold lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
 **Standing convention.** $\mathscr{Z}=\{\tilde Q\in\mathbb{B} : \tilde Q\neq0,\ \langle\tilde Q\rangle_{\natural}=0\}$ is the **zero-divisor cone**, $N$ the biquaternion norm, and $F_{\tilde Q_2}(\tilde Q)=\tilde Q^2+\tilde Q_2$ the quadratic family in the general plain bilinear product.
 
@@ -71,14 +71,25 @@ $$
 
 **Proof.** A complex surface has real dimension four, so the set is uncountable and of positive four-dimensional measure in the slice; the claim follows.
 
+## The Mass Loss at the Cone
+
+The cone is also where the equilibrium measure of the map loses its mass. The generic fibre of the square has four points, the fibre over $0$ is the cone, and the number of preimages is not locally constant.
+
+**Proposition (the fibre of the square).** For a generic regular value $\tilde Q$ the equation $\tilde Q_1^2=\tilde Q$ has four solutions, so the generic fibre of the square map has four points. At $\tilde Q=0$ the equation is $\tilde Q_1^2=0$ and its solution set is the square-zero cone, of complex dimension two.
+
+**Proof.** The generic count is the corollary on the number of roots of *Square Roots of a General Element in the Biquaternion Algebra*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, since the reduced quadratic then has two distinct non-zero solutions and each contributes two scalar parts; the fibre over $0$ is the set of nilpotent elements, $\{Q_{1t}=0,\ (\vec Q,\vec Q)=0\}$, of complex dimension two (*The Two Kinds of Zero Divisor*, above).
+
+**Remark (the consequence for the measure).** A polynomial map whose leading part is proper pulls back a generic point to exactly $d^k$ preimages, counted with multiplicity, so the preimage measure equidistributes; the biquaternion map pulls back $0$ to a positive-dimensional cone, and the preimages of a point outside the cone may have limit points in the cone. **The equidistribution of preimages holds away from the cone and gains a correction term from the cone; the correction is not known in closed form.** This is the technical core of the open problem of the category, and it is why the equilibrium measure of *The Escape Radius and the Green's Function for the Biquaternions* is conditional and why its entropy is expected to be $2\log2$ rather than the $4\log2$ of a proper map of $\mathbb{C}^4$.
+
 ## The Obstructions Collected
 
-The cone is the common obstruction of the four quantitative questions of the category, and the article collects them in one place.
+The cone is the common obstruction of the quantitative questions of the category, and the article collects them in one place.
 
 | question | the classical answer | the obstruction on $\mathscr{Z}$ |
 |---|---|---|
 | escape radius | a single radius $1+\lvert C\rvert$ | $\tilde Q^2$ can vanish: no lower bound |
 | Green's function | normalized at infinity | normalization fails, $G$ undefined on the cone |
+| equilibrium measure | a probability measure of mass one | the pullback loses mass at the cone |
 | derivative and Fatou theory | locally invertible off critical points | $dF$ singular on the whole cone and on $\mathrm{Vect}$ |
 | dimension | the Julia set is regular at a critical point of a polynomial | the surface of idempotents lies on $J_0$ |
 
@@ -86,7 +97,7 @@ The cone is the common obstruction of the four quantitative questions of the cat
 
 ## Summary
 
-Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde Q$ and so squares to a zero divisor on the same complex line; the cone is closed under squaring and carries, for the parameter zero, a foliation by invariant complex lines on which the dynamics is the scalar square. The zero divisors are of exactly two kinds: the square-zero pure vectors, the isotropic cone of the general plain bilinear form on the vector part, and the non-zero complex multiples of primitive idempotents. The idempotents form a smooth complex surface inside the cone, and for the parameter zero that surface lies on the Julia set, so the singular Julia set contains a real four-dimensional set and is not negligible. The cone is the common obstruction of the escape radius, the Green's function, the invertibility of the derivative and the dimension theory; the pure vectors form the second component of the critical set; and the only escape from the obstruction is to restrict to a division subalgebra.
+Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde Q$ and so squares to a zero divisor on the same complex line; the cone is closed under squaring and carries, for the parameter zero, a foliation by invariant complex lines on which the dynamics is the scalar square. The zero divisors are of exactly two kinds: the square-zero pure vectors, the isotropic cone of the general plain bilinear form on the vector part, and the non-zero complex multiples of primitive idempotents. The idempotents form a smooth complex surface inside the cone, and for the parameter zero that surface lies on the Julia set, so the singular Julia set contains a real four-dimensional set and is not negligible. The generic fibre of the square has four points and the fibre over zero is the cone, so the number of preimages is not locally constant and the equilibrium measure loses mass there; the equidistribution of preimages holds only away from the cone. The cone is the common obstruction of the escape radius, the Green's function, the equilibrium measure, the invertibility of the derivative and the dimension theory; the pure vectors form the second component of the critical set; and the only escape from the obstruction is to restrict to a division subalgebra.
 
 ## Summary of Notation
 
@@ -100,11 +111,13 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde 
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tau=2Q_t$ | the non-zero eigenvalue of $\mathsf{M}_2(\tilde Q)$ on the cone |
 | $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius |
+| $d$, $k$ | the algebraic degree and the complex dimension of the model |
 
 ## Further Reading
 
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the classification of the zero divisors and their rank-one form.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the critical set and the corollary on the parameter zero.
-- [The Escape Radius and the Green's Function for the Biquaternions](the-escape-radius-and-the-greens-function-for-the-biquaternions.html), for the failure of the escape radius and the conditional Green's function.
+- [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the four roots of a generic element and the cone of roots of zero.
+- [The Escape Radius and the Green's Function for the Biquaternions](the-escape-radius-and-the-greens-function-for-the-biquaternions.html), for the failure of the escape radius, the conditional Green's function and the conditional equilibrium measure.
 - [The Hausdorff Dimension of the Biquaternion Julia Sets](the-hausdorff-dimension-of-the-biquaternion-julia-sets.html), for the dimension of the singular part.

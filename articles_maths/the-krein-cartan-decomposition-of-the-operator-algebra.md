@@ -39,7 +39,7 @@ $$
 
 of real dimensions $12$, $16$ and $16$; each is closed under the commutator bracket, and the three are the Lie algebras of the isometry groups $O_4(\mathbb{C})$, $\mathrm{U}(4)$ and $\mathrm{U}(1,3)$ of the three pairings.
 
-**Proof.** The fixed conditions are the defining equations $\mathfrak{so}_n$, $\mathfrak{u}(n)$ and $\mathfrak{u}(n,m)$; closure under the bracket is the standard fact for the fixed space of an involution that is an automorphism of the bracket, which each is, because $M\mapsto-M^{\mathsf T}$, $M\mapsto-M^{*}$ and $M\mapsto-M^{\dagger}$ satisfy $(MN)^{\sigma}=M^{\sigma}N^{\sigma}$ up to the sign pattern of a Lie algebra involution.
+**Proof.** The fixed conditions are the defining equations $\mathfrak{so}_n$, $\mathfrak{u}(n)$ and $\mathfrak{u}(n,m)$; closure under the bracket is the standard fact for the fixed space of an involution that is an automorphism of the bracket. Each of the three maps is an anti-automorphism of the associative product composed with the sign, $(MN)^{\mathsf T}=N^{\mathsf T}M^{\mathsf T}$, $(MN)^{*}=N^{*}M^{*}$ and $(MN)^{\dagger}=N^{\dagger}M^{\dagger}$; the reversal cancels between the two terms of the commutator, so $\theta([M,N])=[\theta M,\theta N]$ for each of the three.
 
 ## The Krein Decomposition
 
@@ -65,7 +65,7 @@ $$ \boxed{\;\langle\mathfrak{k},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfra
 
 hold, with $\{\cdot,\cdot\}$ the anticommutator, so $\mathfrak{k}$ is a Lie subalgebra, $\mathfrak{p}$ is a Jordan subalgebra, and the pair $(\mathfrak{k},\mathfrak{p})$ is a Lie–Jordan pair attached to the general quaternionic sesquilinear form.
 
-**Proof.** $\mathfrak{k}$ and $\mathfrak{p}$ are the $\mp1$-eigenspaces of an involution, so they are direct and of equal dimension $32/2=16$. Write $M^{\epsilon}$ for an element with $M^{\dagger}=\epsilon M$, $\epsilon=\pm1$, and use $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$. For $M,N\in\mathfrak{k}$ one has $(MN)^{\dagger}=(-N)(-M)=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. For $M\in\mathfrak{k}$ and $N\in\mathfrak{p}$ one has $(MN)^{\dagger}=\langle-M,-M\rangle_{\natural}=-NM$ and $(NM)^{\dagger}=(-M)N=-MN$, so $[M,N]^{\dagger}=(MN)^{\dagger}-(NM)^{\dagger}=MN-NM=[M,N]$ and $[M,N]\in\mathfrak{p}$. For $M,N\in\mathfrak{p}$ one has $(MN)^{\dagger}=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. Finally $\{M,N\}^{\dagger}=NM+MN=\{M,N\}$ for $M,N\in\mathfrak{p}$.
+**Proof.** $\mathfrak{k}$ and $\mathfrak{p}$ are the $\mp1$-eigenspaces of an involution, so they are direct and of equal dimension $32/2=16$. Write $M^{\epsilon}$ for an element with $M^{\dagger}=\epsilon M$, $\epsilon=\pm1$, and use $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$. For $M,N\in\mathfrak{k}$ one has $(MN)^{\dagger}=(-N)(-M)=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. For $M\in\mathfrak{k}$ and $N\in\mathfrak{p}$ one has $(MN)^{\dagger}=N^{\dagger}M^{\dagger}=N(-M)=-NM$ and $(NM)^{\dagger}=M^{\dagger}N^{\dagger}=(-M)N=-MN$, so $[M,N]^{\dagger}=(MN)^{\dagger}-(NM)^{\dagger}=MN-NM=[M,N]$ and $[M,N]\in\mathfrak{p}$. For $M,N\in\mathfrak{p}$ one has $(MN)^{\dagger}=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. Finally $\{M,N\}^{\dagger}=NM+MN=\{M,N\}$ for $M,N\in\mathfrak{p}$.
 
 **Remark (the $J$-skew algebra is $J$ times the unitary algebra).** As vector spaces
 
@@ -141,7 +141,7 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 **A $J$-skew element.** $M=JL$, where $L$ is any definite-skew operator; $M^{\dagger}=-M$, so $M\in\mathfrak{k}=\mathfrak{u}(1,3)$.
 
-**A boost generator.** The derivative at $t=0$ of the boost $T_{t}$ of *The Krein Isometry Group and Its $J$-Contractions* is the operator $H$ with $H e_t=\vec e_x$, $H \vec e_x=e_t$, $H \vec e_y=H \vec e_z=0$; it is $J$-self-adjoint, $H^{\dagger}=H$, hence an element of $\mathfrak{p}_{0}$, the hyperbolic part, and its exponential is the boost.
+**A boost generator.** The derivative at $t=0$ of the boost $T_{t}$ of *The Krein Isometry Group and Its $J$-Contractions* is the operator $H$ with $H e_t=\vec e_x$, $H \vec e_x=e_t$, $H \vec e_y=H \vec e_z=0$; it is $J$-skew, $H^{\dagger}=-H$, while it is Hermitian for the definite adjoint, $H^{*}=H$; the latter places it in $\mathfrak{p}_{0}$, the hyperbolic part, and its exponential is the boost.
 
 **A compact generator.** $M=L_{ie_t}$: skew-Hermitian and $J$-skew, an element of $\mathfrak{k}_{0}=\mathfrak{u}(1)\oplus\mathfrak{u}(3)$.
 

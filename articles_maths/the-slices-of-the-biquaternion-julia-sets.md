@@ -4,11 +4,11 @@
 
 The biquaternion Julia set of a parameter $\tilde Q_3$ is a subset of an eight-real-dimensional space, and every picture of it is a picture of a slice. The word slice carries three inequivalent meanings in the corpus and in the literature: the *intersection* $J_{\tilde Q_3}\cap V$ with a chosen subspace, the *restriction* of the dynamics to a subspace $V$ that the map leaves invariant, and the *projection* of the whole set to a plane, which is what a rendered image shows. The three agree exactly when the subspace is invariant and the projection is the identity on the slice, and they differ otherwise, which is the source of most of the confusion the subject produces.
 
-The quadratic family, its filled Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the parameter locus is *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the remarkable real subspaces are *Introduction to the Remarkable Subspaces*; the idempotents are *Idempotents of the Biquaternion Algebra* and the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. The quaternion slices are *The Quaternion Quadratic Map and Its Julia Sets* and *The Quaternion Mandelbrot Set*; the complex ones are *The Julia Sets of a Complex Polynomial*.
+The quadratic family, its filled Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the parameter locus is *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the remarkable real subspaces are *Introduction to the Remarkable Subspaces*; the conjugations and the group they form are *The Group of Involutions*; the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra* and the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. The quaternion slices are *The Quaternion Quadratic Map and Its Julia Sets* and *The Quaternion Mandelbrot Set*; the complex ones are *The Julia Sets of a Complex Polynomial*.
 
-The article owns the three notions of a slice, the invariance criterion and the identification of the invariant slices, the central and real slices, the quaternion and anti-quaternion slices, the idempotent slices as the exact two-dimensional ones, and the warning that a rendered picture is a projection and not an intersection. The idempotent decomposition itself is *The Idempotent Decomposition and the Split Fractal*.
+The article owns the three notions of a slice, the invariance criterion and the identification of the invariant slices, the conjugation symmetries of the slices and the stabiliser of the parameter, the five symmetric families, the antipodal quotient, the central and real slices, the quaternion and anti-quaternion slices, the idempotent slices as the exact two-dimensional ones, and the warning that a rendered picture is a projection and not an intersection. The idempotent decomposition itself is *The Idempotent Decomposition and the Split Fractal*.
 
-**Standing convention.** $F_{\tilde Q_3}(\tilde Q)=\tilde Q^2+\tilde Q_3$ with the general plain bilinear product, $\mathcal K_{\tilde Q_3}$ the filled Julia set and $J_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}$. A subspace is a real linear subspace $V\subset\mathbb{B}$ unless it is called complex.
+**Standing convention.** $F_{\tilde Q_3}(\tilde Q)=\tilde Q^2+\tilde Q_3$ with the general plain bilinear product, $\mathcal K_{\tilde Q_3}$ the filled Julia set and $J_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}$. A subspace is a real linear subspace $V\subset\mathbb{B}$ unless it is called complex. ${}^{\natural}$ is quaternion conjugation, $\bar{\cdot}$ complex conjugation, ${}^{*}$ Hermitian conjugation and $\flat$ anti-Hermitian conjugation, so that ${}^{*}={}^{\natural}\bar{\cdot}$ and $\flat=-{}^{*}$.
 
 ## The Three Notions of a Slice
 
@@ -42,11 +42,81 @@ $$
 
 **Remark (the failure for the anti-quaternion subspace).** The anti-quaternion subspace is the one invariant-looking slice that is not invariant: $i\mathbb{H}_{\mathbb{B}}$ is a real subspace of square root type, closed under the square only up to sign, and the square of an anti-quaternion lands in the quaternion subspace. **The square of a non-real slice is not on the slice**, which is why the anti-Hermitian sector is a slice used for computations and never a self-contained dynamical system.
 
+## The Conjugation Symmetries of the Slices
+
+The symmetries of a fractal are read on its slices, and the biquaternion algebra supplies three conjugations that can fix the parameter. Each fixed conjugation is a symmetry of the Julia set, and the symmetry subspaces are remarkable subspaces, several of which are the slices of the preceding section.
+
+**Proposition (the equivariance of the group).** For every $g\in G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ and every parameter,
+
+$$
+\boxed{\;g\circ F_{\tilde Q_3}=F_{g(\tilde Q_3)}\circ g\;},
+$$
+
+where the action of $g$ on the parameter is the definition of $g(\tilde Q_3)$. Hence $g(\mathcal K_{\tilde Q_3})=\mathcal K_{g(\tilde Q_3)}$ and $g(J_{\tilde Q_3})=J_{g(\tilde Q_3)}$.
+
+**Proof.** Each element of $G$ is an automorphism or an anti-automorphism of the ring, so in either case $g(\tilde Q^2)=(g\tilde Q)^2$, and each preserves the Euclidean norm, hence boundedness. Applying $g$ to $\tilde Q^2+\tilde Q_3$ gives the identity. This is the equivariance theorem of *The Biquaternion Quadratic Map and Its Julia Sets*.
+
+**Remark (the anti-Hermitian conjugation is excluded by a sign).** The three conjugations ${}^{\natural},\bar{\cdot},{}^{*}$ are automorphisms or anti-automorphisms of the ring; the anti-Hermitian conjugation is an anti-automorphism only up to the central sign,
+
+$$
+\boxed{\;(\tilde Q_2\tilde Q_1)^{\flat}=-\tilde Q_1^{\flat}\tilde Q_2^{\flat}\;},
+$$
+
+so that $(\tilde Q^2)^{\flat}=-(\tilde Q^{\flat})^2$ and $\flat\circ F_{\tilde Q_3}=F^{-}_{\flat(\tilde Q_3)}\circ\flat$, where $F^{-}_{\tilde Q_3'}(\tilde Q)=-\tilde Q^2+\tilde Q_3'$ is the *odd* quadratic family. **The anti-Hermitian conjugation relates the even family to the odd one, not to itself, and is therefore not a symmetry of the even fractal.**
+
+**Definition.** The **symmetry group** of the parameter $\tilde Q_3$ is $G_{\tilde Q_3}=\{g\in G : g(\tilde Q_3)=\tilde Q_3\}$, and the **even symmetry group** is
+
+$$
+\Gamma_{\tilde Q_3}=G_{\tilde Q_3}\times\{\pm\mathrm{id}\} ,
+$$
+
+where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q\mapsto-\tilde Q$.
+
+**Theorem (the stabiliser).** $G_{\tilde Q_3}$ is one of the following.
+
+1. $G$, when $\tilde Q_3=Ce_t$ with $C$ real.
+2. $\{\mathrm{id},{}^{\natural}\}$, when $\tilde Q_3=Ce_t$ with $C$ non-real.
+3. $\{\mathrm{id},\bar{\cdot}\}$, when $\tilde Q_3$ is a non-central element fixed by complex conjugation, that is $\tilde Q_3\in\mathbb{H}_{\mathbb{B}}$ with $\tilde Q_3\notin\mathbb{C}e_t$.
+4. $\{\mathrm{id},{}^{*}\}$, when $\tilde Q_3$ is a non-central element fixed by Hermitian conjugation, that is $\tilde Q_3\in\mathbb{M}_+$ with $\tilde Q_3\notin\mathbb{C}e_t$.
+5. $\{\mathrm{id}\}$, otherwise.
+
+**Proof.** The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (*The Group of Involutions*, *Introduction to the Remarkable Subspaces*). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_t\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_t$, $\mathbb{C}e_t$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_t$.
+
+**Theorem (the even symmetry).** For every parameter, $\mathcal K_{\tilde Q_3}$ and $J_{\tilde Q_3}$ are invariant under $\tilde Q\mapsto-\tilde Q$, and the full symmetry group of the two sets contains $\Gamma_{\tilde Q_3}$.
+
+**Proof.** $F_{\tilde Q_3}(-\tilde Q)=(-\tilde Q)^2+\tilde Q_3=\tilde Q^2+\tilde Q_3=F_{\tilde Q_3}(\tilde Q)$, because the square is an even map; hence $-\tilde Q$ and $\tilde Q$ have the same orbit after the first term, and one orbit is bounded exactly when the other is. The invariance under $G_{\tilde Q_3}$ is the equivariance theorem restricted to the stabiliser. The two families of maps commute: $-\mathrm{id}$ is real-linear and commutes with each conjugation, so it composes with a conjugation to a conjugation.
+
+**Theorem (the five symmetric families).** The symmetry group $\Gamma_{\tilde Q_3}$ is one of
+
+$$
+\boxed{\;G\times\{\pm\mathrm{id}\}\ (\text{order }8), \quad \{\mathrm{id},{}^{\natural}\}\times\{\pm\mathrm{id}\}\ (\text{order }4), \quad \{\mathrm{id},\bar{\cdot}\}\times\{\pm\mathrm{id}\}\ (\text{order }4), \quad \{\mathrm{id},{}^{*}\}\times\{\pm\mathrm{id}\}\ (\text{order }4), \quad \{\pm\mathrm{id}\}\ (\text{order }2)\;},
+$$
+
+according as the parameter is a real central element, a non-real central element, a non-central real quaternion, a non-central Hermitian element, or a general element. The corresponding fractals are the **fully symmetric**, the **centrally symmetric**, the **quaternion-symmetric**, the **Hermitian-symmetric** and the **generic** biquaternion Julia sets.
+
+**Proof.** Immediate from the two theorems above; the orders are those of the products.
+
+**Remark (the symmetry axes are the remarkable subspaces).** The five families are named by the fixed subspace that contains the parameter, and each family is symmetric about the remarkable subspaces that contain it: the fully symmetric fractals about the centre, the quaternion subspace and the Hermitian sector; the centrally symmetric ones about the centre; the quaternion-symmetric ones about the quaternion subspace; the Hermitian-symmetric ones about the Hermitian sector. **The symmetry axes of the biquaternion fractals are the remarkable subspaces**, and the classification is the statement that the parameter lies on the intersection of the axes it preserves.
+
+**Remark (the antipodal quotient).** The even symmetry $\tilde Q\mapsto-\tilde Q$ is present for every parameter and is a symmetry of the map and not of the algebra; the quotient by it is the natural projective picture of the subject. **Every biquaternion Julia set is antipodally symmetric, and a fundamental domain for the inversion is one half of the space; a picture of the whole slice always shows two copies.** The symmetry is a symmetry of the map at every parameter and is not a statement about the parameter: $J_{\tilde Q_3}$ and $J_{-\tilde Q_3}$ are different sets in general, and only the map is invariant under the inversion, not the family.
+
 ## The Central and Real Slices
 
 **Proposition (the central slice).** For $\tilde Q_3=Ce_t$ the centre is invariant and the restriction is $\zeta\mapsto\zeta^2+C$ under $Ae_t\leftrightarrow A$; hence $\mathcal K_{\tilde Q_3}\cap\mathbb{C}e_t=(K_C)e_t$ and $J_{\tilde Q_3}\cap\mathbb{C}e_t=(J_C)e_t$, the classical filled Julia set and Julia set of the complex quadratic map.
 
 **Proof.** Invariance and the identification of the restriction are part (1) of the invariance proposition with $F(Ae_t)=(A^2+C)e_t$; the filled Julia set of the restriction is by definition $K_C$, and the invariance proposition identifies it with the intersection.
+
+**Proposition (complex conjugation acts as the mirror on the central slice).** For a central parameter $\tilde Q_3=Ce_t$ the restriction of $\bar{\cdot}$ to the centre is the complex conjugation $C\mapsto\bar C$, and
+
+$$
+\boxed{\;\bar{\cdot}\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=J_{\bar C e_t}\cap\mathbb{C}e_t\;}.
+$$
+
+So the central slice of $J_{Ce_t}$ is the complex Julia set $J_C$, and its mirror is the central slice at the conjugate parameter $\bar C$; the two coincide exactly when $C$ is real.
+
+**Proof.** The restriction of the equivariance to the centre, where the dynamics is the complex quadratic map and $\bar{\cdot}$ acts as the coefficientwise conjugation.
+
+**Remark (why the central fractal is not mirror-symmetric for non-real C).** For non-real $C$ the stabiliser $G_C$ contains only ${}^{\natural}$, and the mirror $C\mapsto\bar C$ is not in it, so the central slice of $J_{Ce_t}$ is the complex Julia set $J_C$ and not its mirror $J_{\bar C}$; the two are distinct unless $J_C$ happens to be symmetric. **The complex Julia set of a non-real parameter appears in the biquaternion theory exactly as itself, without its mirror, and the mirror is a second slice at the conjugate parameter.** This is the precise content of the failure of the mirror symmetry.
 
 **Proposition (the real slice).** For $\tilde Q_3=ce_t$ with $c\in\mathbb{R}$ the real axis $\mathbb{R}e_t$ and the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ are invariant; on the axis the restriction is the real quadratic map, and on the quaternion subspace it is the quaternion quadratic map, so the two slices are the real and the quaternion Julia sets of the classical theories.
 
@@ -67,6 +137,8 @@ so the map preserves the quaternion subspace exactly when $\tilde Q_6\tilde Q_1+
 **Proof.** Expand in the general plain bilinear product and collect the real and the imaginary parts; the product $i\tilde Q_1$ is central.
 
 **Remark (the anticommuting pair).** The condition $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6=0$ with $\tilde Q_6,\tilde Q_1$ real quaternions means the two are purely imaginary and orthogonal, the classical anticommuting pair of a quaternion; it is satisfied in codimension one and is not generic. **The orbit of a generic biquaternion alternates between the two real quaternion slices and is on neither**, and this is the elementary reason the quaternion picture is a slice and not a factorisation.
+
+**Remark (the quaternion slice as the visible symmetry).** In the quaternion slice $\mathbb{H}_{\mathbb{B}}$ the symmetry under ${}^{\natural}$ and $\bar{\cdot}$ is the classical conjugacy symmetry of the quaternion Julia sets, and the symmetry under $\tilde Q\mapsto-\tilde Q$ is the antipodal one; the two generate a group of order four acting on the three-dimensional picture. **The quaternion pictures of the subject are the pictures of the quaternion-symmetric family, and their symmetry is a slice of the full group and not the full group.**
 
 ## The Idempotent Slices and the Exact Two-Dimensional Picture
 
@@ -96,6 +168,8 @@ A rendering of $J_{\tilde Q_3}$ fixes some of the eight real coordinates and ite
 
 A slice of a biquaternion Julia set can mean the intersection with a subspace, the restriction of an invariant subspace to itself, or a projection used for rendering, and the three agree exactly on the invariant subspaces. The invariant subspaces are the centre (for a central parameter), the plane of one element (for a central parameter), the real quaternion subspace (for a real central parameter), the idempotent planes (for parameters in the plane), and the real lines $\mathbb{R}\tilde Q_2$ with $\tilde Q_2^2\in\mathbb{R}\tilde Q_2$ and $\tilde Q_3\in\mathbb{R}\tilde Q_2$; the anti-quaternion subspace is not invariant because the square of an anti-quaternion is a quaternion. The central slice is the classical complex Julia set, the real and quaternion slices are the classical real and quaternion Julia sets, and the idempotent slices are exactly products of two complex Julia sets. A rendered picture is a projection of the whole set, not the intersection with the drawn plane, unless the plane is invariant; the article states this as a proposition and recommends that every picture name its slice.
 
+The quadratic family is equivariant under the three conjugations ${}^{\natural},\bar{\cdot},{}^{*}$, and the anti-Hermitian conjugation is excluded because it relates the even family to the odd one. The conjugations that fix the parameter form the stabiliser, a subgroup of the Klein group, and with the central inversion, present at every parameter because the square is even, they generate the symmetry group of the Julia set. The stabiliser is the full group for a real central parameter, $\{\mathrm{id},{}^{\natural}\}$ for a non-real central parameter, $\{\mathrm{id},\bar{\cdot}\}$ for a non-central real quaternion, $\{\mathrm{id},{}^{*}\}$ for a non-central Hermitian element, and the trivial group otherwise; the five cases are the five symmetric families, with the symmetry axes the remarkable subspaces. On the central slice, complex conjugation acts as the mirror carrying $J_C$ to $J_{\bar C}$, so a non-real central parameter shows its Julia set without its mirror, and every biquaternion Julia set is antipodally symmetric.
+
 ## Summary of Notation
 
 | symbol | meaning |
@@ -108,10 +182,16 @@ A slice of a biquaternion Julia set can mean the intersection with a subspace, t
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
 | $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the idempotent plane, $\tilde\Pi'=e_t-\tilde\Pi$ |
 | $K_C$, $J_C$ | the filled Julia set and Julia set of $\zeta\mapsto\zeta^2+C$ |
+| ${}^{\natural},\bar{\cdot},{}^{*},\flat$ | quaternion, complex, Hermitian, anti-Hermitian conjugation |
+| $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ | the group of involutions |
+| $G_{\tilde Q_3}$ | the stabiliser of the parameter |
+| $\Gamma_{\tilde Q_3}=G_{\tilde Q_3}\times\{\pm\mathrm{id}\}$ | the even symmetry group |
+| $\mathbb{M}_+$ | the Hermitian sector, the fixed subspace of ${}^{*}$ |
 
 ## Further Reading
 
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family, the conjugation equivariance and the central-parameter reduction.
+- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, the group they form and their fixed subspaces.
 - [The Biquaternion Mandelbrot Set and the Connectedness Locus](the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), for the commutative-plane theorem used at the idempotent slice.
 - [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the decomposition the exact slices carry.
 - [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html), for the three-dimensional picture read here as a slice.

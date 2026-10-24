@@ -133,7 +133,47 @@ $$
 $$
 so $\Theta_{\tilde{S}}^{2}=|\langle\tilde{S},\tilde{S}\rangle_{\natural}|^{2}\mathrm{id}$. If the norm is nonzero, $\mathsf{M}_2(\tilde{S})$ is traceless with square $-\langle\tilde{S},\tilde{S}\rangle_{\natural}I$, hence diagonalisable with eigenvalues $\pm i\sqrt{\langle\tilde{S},\tilde{S}\rangle_{\natural}}$, and the product rule for the spectrum of the sandwich gives two positive and two negative eigenvalues. If the norm vanishes, $\tilde{S}^{2}=0$ and $(\tilde{S}^{*})^{2}=0$, so $\Theta_{\tilde{S}}^{2}=0$ and the only eigenvalue is $0$, with multiplicity four.
 
-**Remark.** Unlike the Hermitian case, the spectrum of a $J$-self-adjoint operator is in general **not real**. The three families above are real with signs, but a mixed sum is not: $L_{\vec e_x}+R_{\vec e_x}$ is $J$-self-adjoint with the spectrum $\{2i,-2i,0\}$, symmetric about the real axis and not real. Away from the null case the spectrum of a $J$-self-adjoint sandwich has inertia $(4,0)$ for a central parameter and $(2,2)$ for a vector parameter; the null case is the one in which the operator is nilpotent and has no eigenbasis.
+**Remark.** Unlike the Hermitian case, the spectrum of a $J$-self-adjoint operator is in general **not real**. The three families above are real with signs, but a mixed sum is not: $L_{\vec e_x}+R_{\vec e_x}$ is $J$-self-adjoint with the spectrum $\{2i,-2i,0,0\}$, symmetric about the real axis and not real. Away from the null case the spectrum of a $J$-self-adjoint sandwich has inertia $(4,0)$ for a central parameter and $(2,2)$ for a vector parameter; the null case is the one in which the operator is nilpotent and has no eigenbasis.
+
+## J-Normality and the Definite-Spectrum Criterion
+
+**Definition.** A $\mathbb{C}$-linear operator $T$ is **$J$-normal** when $T^{\dagger}T=TT^{\dagger}$.
+
+**Theorem (closure).** Every $J$-self-adjoint and every $J$-unitary operator is $J$-normal. The $J$-normal operators are closed under the $J$-adjoint, under powers and inverses, and under $\mathbb{C}$-linear combinations of mutually commuting ones; those that are also $J$-self-adjoint form a real vector space, and those that are also $J$-unitary form a group.
+
+*Proof.* For a $J$-self-adjoint operator $T^{\dagger}T=T^{2}=TT^{\dagger}$; for a $J$-unitary one both products are the identity. The adjoint of $T^{\dagger}$ is $T$, and $T^{\dagger}$ commutes with $T$ whenever $T$ does; powers and inverses follow by induction and by inversion of $T^{\dagger}T=TT^{\dagger}$; and for commuting $S,T$ every term in the expansion of $(S+T)^{\dagger}(S+T)$ and $(S+T)(S+T)^{\dagger}$ can be reordered to the same expression.
+
+**Theorem (the definite model).** In the coefficient basis, with $T^{*}$ the conjugate transpose and $E=\operatorname{diag}(1,-1,-1,-1)$, the operator $T$ is $J$-normal if and only if
+$$
+T^{*}ETE=ETET^{*},
+$$
+equivalently if and only if $T^{*}$ commutes with $JTJ$.
+
+*Proof.* $T^{\dagger}=ET^{*}E$, so $T^{\dagger}T=ET^{*}ET$ and $TT^{\dagger}=TET^{*}E$; multiplying $ET^{*}ET=TET^{*}E$ by $E$ on both sides gives $T^{*}ETE=ETET^{*}$, which is $T^{*}(ETE)=(ETE)T^{*}$.
+
+**Theorem (the definite-spectrum case).** Let $T$ be $J$-self-adjoint and suppose that $JT$ is positive definite for $\langle\cdot,\cdot\rangle_{*}$. Then $T$ has real spectrum and is diagonalisable over $\mathbb{C}$.
+
+*Proof.* Write $S=JT$, positive definite and self-adjoint. Then $T=ES$ and
+$$
+S^{1/2}\,T\,S^{-1/2}=S^{1/2}ES^{1/2},
+$$
+an operator that is self-adjoint for $\langle\cdot,\cdot\rangle_{*}$, since $S^{1/2}$ and $E$ are; it is therefore diagonalisable with real eigenvalues, and $T$, being similar to it, is diagonalisable with the same real spectrum.
+
+**Remark (the semidefinite case fails the conclusion).** The hypothesis cannot be weakened to positive semidefiniteness. With $E=\operatorname{diag}(1,-1,-1,-1)$ and $S=|\tilde{Q}\rangle\langle\tilde{Q}|$ the rank-one operator of the isotropic element $\tilde{Q}=e_t+\vec e_x$, the operator $T=ES$ is $J$-self-adjoint and lies in the $J$-positive cone, while $T^{2}=0$ and $T\neq0$: it is nilpotent, has spectrum $\{0\}$, and is not diagonalisable.
+
+**Theorem (the $J$-unitary spectrum).** If $T$ is $J$-unitary then
+$$
+\lambda\in\mathrm{spec}(T)\iff\frac{1}{\bar\lambda}\in\mathrm{spec}(T),
+$$
+with the same multiplicity; in particular an eigenvalue on the unit circle has its conjugate present as well, but the spectrum is in general not contained in the unit circle.
+
+*Proof.* $T$ is $J$-unitary exactly when $T^{*}ET=E$, that is $T^{*}=ET^{-1}E$; so $T^{*}$ is similar to $T^{-1}$, whence the characteristic polynomials of $T^{*}$ and $T^{-1}$ agree, and $\mathrm{spec}(T^{-1})=\{\lambda^{-1}:\lambda\in\mathrm{spec}(T)\}$ while $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$. The boost $e_t\mapsto\cosh t\,e_t+\sinh t\,\vec e_x$, $\vec e_x\mapsto\sinh t\,e_t+\cosh t\,\vec e_x$, with $\vec e_y,\vec e_z$ fixed, is $J$-unitary with eigenvalues $e^{t},e^{-t},1,1$, so the spectrum leaves the unit circle as soon as the operator moves the Lorentzian slice.
+
+**Theorem (the three families are $J$-normal).** For every biquaternion $\tilde{Q}$ the operators $L_{\tilde{Q}}$, $R_{\tilde{Q}}$ and $\Theta_{\tilde{Q}}$ are $J$-normal: their $J$-adjoints are $R_{\bar{\tilde{Q}}}$, $L_{\bar{\tilde{Q}}}$ and $\Theta_{{}^{\natural}\tilde{Q}}$, and in each case the two factors of $T^{\dagger}T$ commute.
+
+*Proof.* The adjoint formulas are those of §*The $J$-Adjoint of the Three Families*; a left multiplication commutes with every right multiplication, so $R_{\bar{\tilde Q}}L_{\tilde Q}=L_{\tilde Q}R_{\bar{\tilde Q}}$ and $L_{\bar{\tilde Q}}R_{\tilde Q}=R_{\tilde Q}L_{\bar{\tilde Q}}$. For the sandwich, $\Theta_{\tilde Q}^{\dagger}\Theta_{\tilde Q}=\Theta_{\tilde Q^{\natural}}\Theta_{\tilde Q}=\Theta_{\tilde Q^{\natural}\tilde Q}$ and $\Theta_{\tilde Q}\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q\tilde Q^{\natural}}$, and $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$; the two products agree.
+
+**Example (normality without reality).** $L_{\vec e_x}$ is $J$-normal, is not $J$-self-adjoint, and has the imaginary spectrum $\{i,-i\}$, each eigenvalue twice. In a positive definite space normality and a real spectrum together give self-adjointness; here normality, self-adjointness and reality of the spectrum are three independent conditions.
 
 ## Worked Examples
 
@@ -149,7 +189,7 @@ so $\Theta_{\tilde{S}}^{2}=|\langle\tilde{S},\tilde{S}\rangle_{\natural}|^{2}\ma
 
 ## Summary
 
-The **$J$-adjoint** $T^{\dagger}=JT^{*}J$ is the adjoint for the general quaternionic sesquilinear form, characterised by $\langle\tilde{Q}_1,T\tilde{Q}_2\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$, involutive and antimultiplicative. The dictionary with the definite case is $T$ is $J$-self-adjoint iff $JT$ is self-adjoint, and $T$ is $J$-unitary iff it preserves the general quaternionic sesquilinear form, $T^{*}JT=J$; the $J$-unitary group is the indefinite unitary group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$, of real dimension $16$, whose intersection with the algebra's three families is only the definite unitary group $\mathrm{U}(1)\times SO(3)$. On the three families, $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$, $(R_{\tilde Q_3})^{\dagger}=L_{\bar{\tilde Q_3}}$, $(L_{\tilde{Q}}R_{\tilde Q_3})^{\dagger}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde{Q}}}$ and $(\Theta_{\tilde{Q}})^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}}$: the indefinite adjoint of a left multiplication is a right multiplication. Hence $L_{\tilde{Q}}$ is $J$-self-adjoint exactly for $\tilde{Q}\in\mathbb{R}e_t$ and $J$-skew-adjoint exactly for $\tilde{Q}\in i\mathbb{R}e_t$; $L_{\tilde{Q}}$ is $J$-unitary exactly for $\tilde{Q}\in S^{1}e_t$; and $\Theta_{\tilde{Q}}$ is $J$-self-adjoint exactly for $\tilde{Q}$ in the centre or the vector subspace and $J$-unitary exactly when $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1$. Every $J$-self-adjoint operator has a spectrum symmetric about the real axis, but in general not real. On the three families the spectra are real: the $J$-self-adjoint left and right multiplications are the real scalars, with spectrum that scalar of multiplicity four; a sandwich with a nonzero central parameter has spectrum $\{|\zeta|^{2}\}$ and inertia $(4,0)$; a sandwich with a vector parameter of nonzero norm has the pair $\pm|\langle\tilde{S},\tilde{S}\rangle_{\natural}|$, each twice, and inertia $(2,2)$; and a sandwich with a null vector parameter is nilpotent, with spectrum $\{0\}$ of multiplicity four.
+The **$J$-adjoint** $T^{\dagger}=JT^{*}J$ is the adjoint for the general quaternionic sesquilinear form, characterised by $\langle\tilde{Q}_1,T\tilde{Q}_2\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$, involutive and antimultiplicative. The dictionary with the definite case is $T$ is $J$-self-adjoint iff $JT$ is self-adjoint, and $T$ is $J$-unitary iff it preserves the general quaternionic sesquilinear form, $T^{*}JT=J$; the $J$-unitary group is the indefinite unitary group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$, of real dimension $16$, whose intersection with the algebra's three families is only the definite unitary group $\mathrm{U}(1)\times SO(3)$. On the three families, $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$, $(R_{\tilde Q_3})^{\dagger}=L_{\bar{\tilde Q_3}}$, $(L_{\tilde{Q}}R_{\tilde Q_3})^{\dagger}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde{Q}}}$ and $(\Theta_{\tilde{Q}})^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}}$: the indefinite adjoint of a left multiplication is a right multiplication. Hence $L_{\tilde{Q}}$ is $J$-self-adjoint exactly for $\tilde{Q}\in\mathbb{R}e_t$ and $J$-skew-adjoint exactly for $\tilde{Q}\in i\mathbb{R}e_t$; $L_{\tilde{Q}}$ is $J$-unitary exactly for $\tilde{Q}\in S^{1}e_t$; and $\Theta_{\tilde{Q}}$ is $J$-self-adjoint exactly for $\tilde{Q}$ in the centre or the vector subspace and $J$-unitary exactly when $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1$. Every $J$-self-adjoint operator has a spectrum symmetric about the real axis, but in general not real. On the three families the spectra are real: the $J$-self-adjoint left and right multiplications are the real scalars, with spectrum that scalar of multiplicity four; a sandwich with a nonzero central parameter has spectrum $\{|\zeta|^{2}\}$ and inertia $(4,0)$; a sandwich with a vector parameter of nonzero norm has the pair $\pm|\langle\tilde{S},\tilde{S}\rangle_{\natural}|$, each twice, and inertia $(2,2)$; and a sandwich with a null vector parameter is nilpotent, with spectrum $\{0\}$ of multiplicity four. A **$J$-normal** operator is one commuting with its $J$-adjoint; the three families are $J$-normal, but normality does not force a real spectrum, and the definite-spectrum criterion — $J$-self-adjoint with $JT$ positive definite — restores real spectra and diagonalisability.
 
 ## Summary of Notation
 
@@ -161,15 +201,19 @@ The **$J$-adjoint** $T^{\dagger}=JT^{*}J$ is the adjoint for the general quatern
 | $T$ $J$-unitary $\iff T^{*}JT=J$ | Preservation of the general quaternionic sesquilinear form |
 | $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$, $(R_{\tilde Q_3})^{\dagger}=L_{\bar{\tilde Q_3}}$ | The adjoints exchange the sides |
 | $(\Theta_{\tilde{Q}})^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}}$ | The $J$-adjoint of a sandwich |
+| $T^{\dagger}T=TT^{\dagger}$ | $J$-normality |
+| $T^{*}ETE=ETET^{*}$, or $[JTJ,T^{*}]=0$ | $J$-normality in the coefficient basis |
+| $JT$ positive definite | The definite-spectrum criterion: real spectrum and diagonalisability |
 | $L_{\tilde{Q}}$ $J$-self-adjoint $\iff\tilde{Q}\in\mathbb{R}e_t$ | Self-adjointness criterion |
 | $L_{\tilde{Q}}$ $J$-unitary $\iff\tilde{Q}\in S^{1}e_t$ | Unitarity criterion |
 | $\Theta_{\tilde{Q}}$ $J$-self-adjoint $\iff\tilde{Q}\in\mathbb{C}_{\mathbb{B}}\cup\mathbb{V}_{\mathbb{B}}$ | Self-adjointness of the sandwich |
 | $\Theta_{\tilde{Q}}$ $J$-unitary $\iff\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert=1$ | Unitarity of the sandwich |
 | $\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$ | Symmetry of the spectrum of a $J$-self-adjoint operator |
+| $\lambda\in\mathrm{spec}(T)\iff1/\bar\lambda\in\mathrm{spec}(T)$ | Symmetry of the spectrum of a $J$-unitary operator |
 
 ## Further Reading
 
-- [J-Self-Adjoint and J-Unitary Operators](j-self-adjoint-and-j-unitary-operators.html), for the general theory of the indefinite adjoint and the $J$-positive cone
+- [J-Self-Adjoint and J-Unitary Operators](j-self-adjoint-and-j-unitary-operators.html), for the general theory of the indefinite adjoint, the $J$-positive cone, $J$-normality and the definite-spectrum criterion
 - [The Fundamental Symmetry of the Biquaternion Algebra](the-fundamental-symmetry-of-the-biquaternion-algebra.html), for the symmetry $J={}^{\natural}$ and the bridge identity
 - [The Krein Gram Matrix of the Biquaternion Algebra](the-krein-gram-matrix-of-the-biquaternion-algebra.html), for the form whose adjoint this is
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html) and [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the definite counterparts

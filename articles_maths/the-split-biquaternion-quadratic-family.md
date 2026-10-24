@@ -118,7 +118,7 @@ identified with the pairs $(\tilde Q_{1,+},\tilde Q_{1,-})$. Separately, the fil
 
 **Proposition (equivariance and the automorphisms).** Every automorphism $g$ of the split-biquaternion algebra satisfies $g\circ F_{\tilde Q_1}=F_{g(\tilde Q_1)}\circ g$, and the family with $\tilde Q_1$ fixed by $g$ has $g$ as a symmetry of its Julia set. The automorphism group contains the inner automorphisms of each factor, the swap of the two factors, and the anti-automorphism given by the quaternion conjugation.
 
-**Proof.** An algebra automorphism commutes with the polynomial $x^2$ and is isometric for the Euclidean norm, so the equivariance and the invariance follow as in the biquaternion case (*The Three Conjugations and the Symmetric Biquaternion Fractals*); the group statement is the structure of the automorphism group of $\mathbb{H}\oplus\mathbb{H}$.
+**Proof.** An algebra automorphism commutes with the polynomial $x^2$ and is isometric for the Euclidean norm, so the equivariance and the invariance follow as in the biquaternion case (*The Slices of the Biquaternion Julia Sets*, §*The Conjugation Symmetries of the Slices*); the group statement is the structure of the automorphism group of $\mathbb{H}\oplus\mathbb{H}$.
 
 **Remark (the larger symmetry).** The split-biquaternion family has the product symmetry $\mathrm{Aut}(\mathbb{H})\times\mathrm{Aut}(\mathbb{H})\rtimes\mathbb{Z}/2$ acting on the pairs, where the factor swap and the two independent rotation groups are available; the biquaternion family has only the diagonal symmetry of the conjugations. **The product structure enlarges the symmetry as it enlarges the simplification, and the symmetric split-biquaternion fractals are exactly the pairs of symmetric quaternion fractals.**
 

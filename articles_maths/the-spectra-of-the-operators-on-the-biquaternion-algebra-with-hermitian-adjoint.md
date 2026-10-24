@@ -24,17 +24,17 @@ and the Sylvester operator is $L_{\tilde Q_1}+R_{\tilde D}=\mathsf{M}_2(\tilde Q
 
 ## The Spectrum of a One-Sided Operator
 
-**Theorem (the one-sided spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$, repeated with algebraic multiplicity. Then
+**Theorem (the one-sided spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ and $\mu_1,\mu_2$ those of $\mathsf{M}_2(\tilde D)$, repeated with algebraic multiplicity. Then
 
 $$
-\boxed{\; \mathrm{spec}(L_{\tilde Q_1}) = \{\lambda_{1},\lambda_{2},\lambda_{1},\lambda_{2}\},\qquad \mathrm{spec}(R_{\tilde D}) = \{\mu_{1},\mu_{2},\mu_{1},\mu_{2}\} \;},
+\mathrm{spec}(L_{\tilde Q_1}) = \{\lambda_{1},\lambda_{1},\lambda_{2},\lambda_{2}\},\qquad \mathrm{spec}(R_{\tilde D}) = \{\mu_{1},\mu_{1},\mu_{2},\mu_{2}\},
 $$
 
-each eigenvalue with multiplicity two, and the characteristic polynomials are $\chi_{L_{\tilde Q_1}}(t)=\chi_{\mathsf{M}_2(\tilde Q_1)}(t)^{2}$ and $\chi_{R_{\tilde D}}(t)=\chi_{\mathsf{M}_2(\tilde D)}(t)^{2}$.
+and the characteristic polynomials are $\chi_{L_{\tilde Q_1}}(t)=\chi_{\mathsf{M}_2(\tilde Q_1)}(t)^{2}$ and $\chi_{R_{\tilde D}}(t)=\chi_{\mathsf{M}_2(\tilde D)}(t)^{2}$. The set is the element spectrum of *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*, and the doubling is its §*Eigenspaces and Their Dimensions*; the operator statement adds only the Kronecker identification, not a second computation of the element spectrum.
 
-*Proof.* By the Kronecker rule the eigenvalues of $A\otimes B$ are the products of the eigenvalues, so the eigenvalues of $\mathsf{M}_2(\tilde Q_1)\otimes I$ are those of $\mathsf{M}_2(\tilde Q_1)$, each twice; the same for $I\otimes\mathsf{M}_2(\tilde D)^{T}$, whose second factor has the eigenvalues of $\mathsf{M}_2(\tilde D)$.
+*Proof.* By the Kronecker rule the eigenvalues of $A\otimes B$ are the products of the eigenvalues, so the eigenvalues of $\mathsf{M}_2(\tilde Q_1)\otimes I$ are those of $\mathsf{M}_2(\tilde Q_1)$, each twice; the same for $I\otimes\mathsf{M}_2(\tilde D)^{T}$.
 
-**Corollary (the type criteria at the level of spectra).** $L_{\tilde Q_1}$ is self-adjoint exactly when $\mathsf{M}_2(\tilde Q_1)$ is Hermitian, and then its spectrum is real; $L_{\tilde Q_1}$ is skew-adjoint exactly when $\mathsf{M}_2(\tilde Q_1)$ is anti-Hermitian, and then its spectrum is purely imaginary; $L_{\tilde Q_1}$ is unitary exactly when $\mathsf{M}_2(\tilde Q_1)$ is unitary, and then its spectrum is on the unit circle; $L_{\tilde Q_1}$ is **normal** exactly when $\mathsf{M}_2(\tilde Q_1)$ is normal, since $L_{\tilde Q_1}L_{\tilde Q_1}^{*}=L_{\tilde Q_1\tilde{Q}_1^{*}}$ and $L_{\tilde Q_1}^{*}L_{\tilde Q_1}=L_{\tilde{Q}_1^{*}\tilde Q_1}$ coincide exactly when $\tilde Q_1\tilde{Q}_1^{*}=\tilde{Q}_1^{*}\tilde Q_1$.
+**Corollary (transfer of the element types).** Because $L_{\tilde Q_1}^{*}=L_{\tilde Q_1^{*}}$, the operator $L_{\tilde Q_1}$ is self-adjoint, skew-adjoint, unitary or normal exactly when the element is; the element criteria are those of *Biquaternion Spectral Theory*, §*Hermitian and Normal Elements*, and are not repeated here.
 
 **Corollary (the spectrum of the inner derivation).** The inner derivation $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ has
 
@@ -118,7 +118,7 @@ $$
 
 **The identity and the central scalars.** $\mathrm{spec}(L_{e_t})=\{1,1,1,1\}$; $\mathrm{spec}(L_{\vec e_z})=\{i,-i,i,-i\}$, purely imaginary, consistent with $\vec e_z$ anti-Hermitian and $L_{\vec e_z}$ skew-adjoint; $\mathrm{spec}(L_{i\vec e_z})=\{1,1,-1,-1\}$, real, consistent with $i\vec e_z$ Hermitian and $L_{i\vec e_z}$ self-adjoint. For $\tilde Q_1=\vec e_x$, of spectrum $\{i,-i\}$, $L_{\vec e_x}$ has spectrum $\{i,i,-i,-i\}$: skew-adjoint, of spectrum on the imaginary axis, since $\vec e_x\in\mathbb{M}_-$.
 
-**A Hermitian element with indefinite inertia.** For $\tilde{Q}=\vec e_z$: $\mathsf{M}_2(\vec e_z)$ has eigenvalues $\{i,-i\}$, inertia $(1,1)$, and the four general products are $i\cdot(-i)=1$, $i\cdot i=-1$, $(-i)\cdot(-i)=-1$, $(-i)\cdot i=1$, so $\mathrm{spec}(\Theta_{\vec e_z})=\{1,-1,-1,1\}$ and the signature of $\Theta_{\vec e_z}$ is $(p^{2}+q^{2},2pq)=(2,2)$: the sandwich of an indefinite Hermitian element has two positive and two negative eigenvalues. For $\tilde{Q}=i\vec e_z$ the element differs from $\vec e_z$ by the central phase $i$ and $\mathsf{M}_2(\tilde{Q})=\sigma_{3}$ has eigenvalues $\{1,-1\}$; the sandwich is the *same* operator, $\Theta_{i\vec e_z}=\Theta_{\vec e_z}$, so the phase shows up in the element's spectrum and not at all in the operator's. This is the phase blindness of *Two-Sided Operators on the General Plain Sesqualgebra*, visible at the level of the spectrum.
+**An anti-Hermitian element and its Hermitian phase.** For $\tilde{Q}=\vec e_z$, which is anti-Hermitian, $\mathsf{M}_2(\vec e_z)$ has eigenvalues $\{i,-i\}$, and the four general products are $i\cdot(-i)=1$, $i\cdot i=-1$, $(-i)\cdot(-i)=-1$, $(-i)\cdot i=1$, so $\mathrm{spec}(\Theta_{\vec e_z})=\{1,-1,-1,1\}$ and the signature of $\Theta_{\vec e_z}$ is $(p^{2}+q^{2},2pq)=(2,2)$: the sandwich has two positive and two negative eigenvalues. For $\tilde{Q}=i\vec e_z$ the element is Hermitian and differs from $\vec e_z$ by the central phase $i$; $\mathsf{M}_2(\tilde{Q})=\sigma_{3}$ has eigenvalues $\{1,-1\}$ and inertia $(1,1)$, and the sandwich is the *same* operator, $\Theta_{i\vec e_z}=\Theta_{\vec e_z}$, so the phase shows up in the element's spectrum and not at all in the operator's. This is the phase blindness of *Two-Sided Operators on the General Plain Sesqualgebra*, visible at the level of the spectrum.
 
 **Remark (the sandwich is never negative).** For $\tilde{Q}$ Hermitian the two eigenvalues $\lambda_{i}\overline{\lambda_{i}}=\lvert\lambda_{i}\rvert^{2}$ are positive unless $\tilde{Q}=0$. Hence $\Theta_{\tilde{Q}}$ is never negative semidefinite except for $\tilde{Q}=0$: the sandwich of any nonzero Hermitian element has at least two positive eigenvalues, and the only possibilities for a Hermitian $\tilde{Q}$ are $\Theta_{\tilde{Q}}\succeq0$ (for $\tilde{Q}$ semidefinite) and $\Theta_{\tilde{Q}}$ indefinite with signature $(2,2)$ (for $\tilde{Q}$ definite-indefinite of inertia $(1,1)$).
 

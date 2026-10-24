@@ -374,7 +374,7 @@ $$
 \Lambda_-(\psi,\theta)=B_-(\psi,\vec u_{\mathrm b})\operatorname{diag}(1,\mathsf R(\theta,\vec u_{\mathrm r})),
 $$
 
-with $B_-$ the $4\times4$ boost matrix and $\mathsf R$ the Rodrigues matrix. The rotation acts first. For a general element the action is $r^{2}\Lambda_-$: a linear conformal transformation, of determinant $r^{8}$, whose image is $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$. The matrices, the celestial sphere and the Möbius action are in *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Lorentzian and Conformal Geometry*.
+with $B_-$ the $4\times4$ boost matrix and $\mathsf R$ the Rodrigues matrix. The rotation acts first. For a general element the action is $r^{2}\Lambda_-$: a linear conformal transformation, of determinant $r^{8}$, whose image is $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$. The matrices, the celestial sphere and the Möbius action are in *Biquaternion Rotations and Lorentz Transformations* and *The Null Quadric and Its Projective Geometry*.
 
 ### The Hermitian Half as a Congruence
 
@@ -553,5 +553,5 @@ The two products of the series are the product of two boosts, which is a boost t
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the norm.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the dagger sandwich, its kernel, the matrices $B_\pm$ and the image $CO^{+}(1,3)$.
-- [Biquaternion Lorentzian and Conformal Geometry](biquaternion-lorentzian-and-conformal-geometry.html), for the projective null cone, the celestial sphere and the Möbius action.
+- [The Null Quadric and Its Projective Geometry](the-null-quadric-and-its-projective-geometry.html), for the projective null cone, the celestial sphere, the Möbius action, and the Lorentzian and conformal real slices.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols, the root convention and the unitary convention.

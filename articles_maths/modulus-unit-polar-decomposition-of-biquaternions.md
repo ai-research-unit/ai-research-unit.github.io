@@ -504,7 +504,7 @@ $$
 (j,j')_{(a,b)}=V_j\boxtimes V_{j'}\otimes\chi_{a,b},
 $$
 
-where $V_j$ is the $SL_2(\mathbb{C})$-module of spin $j$ of *Biquaternion Rotations and Lorentz Transformations*, §*Finite-Dimensional Representations of the Lorentz Group*. The central element $-I$ acts on $(j,j')$ by $(-1)^{2j+2j'}$ and through the character by $(-1)^{a-b}$, so a twisted module exists exactly when
+where $V_j$ is the $SL_2(\mathbb{C})$-module of spin $j$ of *Biquaternion Representations and the Lorentz Group*, §*Finite-Dimensional Representations of the Lorentz Group*. The central element $-I$ acts on $(j,j')$ by $(-1)^{2j+2j'}$ and through the character by $(-1)^{a-b}$, so a twisted module exists exactly when
 
 $$
 a-b\equiv 2j+2j'\pmod 2 .
@@ -669,5 +669,5 @@ On the module $S=\mathbb{C}^{2}$ the word acts by $\tilde Q\mapsto\Rho\mathsf M_
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), the grouping of the scale with the phase, read on a root of $-e_t$.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), the grouping of the scale with the boost and the phase with the rotor.
 - [The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html), the extension of the two-factor Cartan form to the whole algebra, with the positive semidefinite factor, the partial isometry and the rank-one reading of the cone.
-- [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), §*Finite-Dimensional Representations of the Lorentz Group*, for the spin-$j$ modules, the double cover and the non-unitarity.
+- [Biquaternion Representations and the Lorentz Group](biquaternion-representations-and-the-lorentz-group.html), §*Finite-Dimensional Representations of the Lorentz Group*, for the spin-$j$ modules and the non-unitarity; [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the double cover.
 - [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the three regular modules and the bi-module structure used in §*What the Algebra Carries*.

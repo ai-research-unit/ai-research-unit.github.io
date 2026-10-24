@@ -273,7 +273,7 @@ The restriction of the norm to a remarkable subspace has a realified signature, 
 
 *Proof.* The signatures give the values, and §*The Criterion* converts the values into the two statements. On the centre the norm is $Q_t^2$, which vanishes only at the origin. On a pure element the norm is $(\vec Q,\vec Q)$ and on a Hermitian element it is $|a_0|^2-|\vec b|^2$, so a zero in $\mathbb{M}_{+}$ or $\mathbb{M}_{-}$ has non-zero scalar part and is non-pure.
 
-**Remark.** The geometry also uses one mixed real subspace, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ of real dimension four, on which $N|_W=a^2+b^2-c^2-d^2$, of signature $(2,2)$ and projective quadric $S^1\times S^1$ (*Biquaternion Lorentzian and Conformal Geometry*; *The Null Quadric and Its Projective Geometry*).
+**Remark.** The geometry also uses one mixed real subspace, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ of real dimension four, on which $N|_W=a^2+b^2-c^2-d^2$, of signature $(2,2)$ and projective quadric $S^1\times S^1$ (*The Null Quadric and Its Projective Geometry*, §*The Real Slices: Lorentzian, Split and Conformal*).
 
 ## Summary
 

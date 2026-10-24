@@ -34,17 +34,17 @@ $$ \boxed{\;\mathrm{U}(\mathbb{B})\cong \bigl(S^{1}\times S^{3}\bigr)/\{\pm e_t\
 
 with the diagonal action, and this quotient is homeomorphic to $S^{1}\times S^{3}$.
 
-**Proof.** The normal form writes an element as $A\tilde q$ with $A\in S^{1}$ and $\tilde{q}\in S^{3}$, and the intersection of the two subgroups is $\{A\in S^{1}: A\in\mathbb{H}\}=\{\pm e_t\}$; the product map is a homomorphism because $S^{1}$ is central. The quotient description is the first isomorphism theorem for Lie groups, and the homeomorphism $\mathrm{U}(\mathbb{B})\cong S^{1}\times S^{3}$ is the section $\tilde{U}\mapsto(\langle\tilde{U},\tilde{U}\rangle_{\natural},\langle\tilde{U},\tilde{U}\rangle_{\natural}^{-1/2}\tilde{U})$.
+**Proof.** The normal form writes an element as $A\tilde q$ with $A\in S^{1}$ and $\tilde{q}\in S^{3}$, and the intersection of the two subgroups is $\{A\in S^{1}: A\in\mathbb{H}\}=\{\pm e_t\}$; the product map is a homomorphism because $S^{1}$ is central. The quotient description is the first isomorphism theorem for Lie groups. The quotient is homeomorphic to $S^{1}\times S^{3}$ through the continuous bijection $[(A,\tilde q)]\mapsto(A^{2},A\tilde q)$, which is well defined because $(-A,-\tilde q)$ gives the same image, and is a homeomorphism by compactness.
 
 **Remark (not an isomorphism of groups).** The homeomorphism $\mathrm{U}(\mathbb{B})\cong S^{1}\times S^{3}$ is not a group isomorphism: its centre is connected, that of $S^{1}\times S^{3}$ is not, and the product map above is two-to-one.
 
-**Theorem (the maximal torus and the flag variety).** The central scalars of modulus one form a maximal torus $T^{2}\cong S^{1}\times S^{1}$; every element of $\mathrm{U}(\mathbb{B})$ lies in some maximal torus; and
+**Theorem (the maximal tori and the flag variety).** A maximal torus of $\mathrm{U}(\mathbb{B})$ is $T^{2}=S^{1}_{\mathrm{c}}\times S^{1}_{\mathrm{q}}$, where $S^{1}_{\mathrm{c}}=\{Ae_t:|A|=1\}$ is the central circle and $S^{1}_{\mathrm{q}}$ is a maximal circle of the unit quaternions $S^{3}$; every element of $\mathrm{U}(\mathbb{B})$ lies in some maximal torus; and
 
 $$ \boxed{\;\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2}\;}, $$
 
-so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^{2}$ with fibre $T^{2}$. It does not deformation retract onto $T^{2}$.
+so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^{2}$ with fibre $T^{2}$.
 
-**Proof.** The diagonal matrices are the maximal tori of $\mathrm{U}(2)$, and $\mathrm{U}(2)/T^{2}$ is the complete flag variety of $\mathbb{C}^{2}$, which is $P^{1}$; a retraction onto a maximal torus would force $\pi_x(\mathrm{U}(\mathbb{B}))\cong\pi_x(T^{2})$, but these are $\mathbb{Z}$ and $\mathbb{Z}^{2}$.
+**Proof.** Under $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ the diagonal matrices form a maximal torus, and $\mathrm{U}(2)/T^{2}$ is the complete flag variety of $\mathbb{C}^{2}$, which is $P^{1}$; every element of a compact connected Lie group lies in a maximal torus, and all maximal tori are conjugate. The central circle is the factor $S^{1}_{\mathrm{c}}$ and a maximal circle of $S^{3}$ the factor $S^{1}_{\mathrm{q}}$.
 
 ## The Retraction of the Unit Group onto the Unitary Group
 
@@ -74,7 +74,7 @@ Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^
 
 ## The Retraction of the Norm-One Group onto $S^{3}$
 
-**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{\langle\tilde Q\rangle_{\natural}=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_z\cong\mathbb{Z}$ and vanishing $\pi_x,\pi_y$.
+**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{\langle\tilde Q\rangle_{\natural}=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_3\cong\mathbb{Z}$ and vanishing $\pi_1,\pi_2$.
 
 **Proof.** Let $\tilde{Q}_3\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$. Then $1=\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
 
@@ -95,17 +95,17 @@ $$
 $$
 
 $$
-\pi_x(\mathbb{B}^{\times})\cong\mathbb{Z},\quad \pi_y(\mathbb{B}^{\times})=0,\quad \pi_z(\mathbb{B}^{\times})\cong\mathbb{Z},\qquad
-\pi_x(\mathbb{B}^{\times}_1)=0,\quad \pi_y(\mathbb{B}^{\times}_1)=0,\quad \pi_z(\mathbb{B}^{\times}_1)\cong\mathbb{Z},
+\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z},\quad \pi_2(\mathbb{B}^{\times})=0,\quad \pi_3(\mathbb{B}^{\times})\cong\mathbb{Z},\qquad
+\pi_1(\mathbb{B}^{\times}_1)=0,\quad \pi_2(\mathbb{B}^{\times}_1)=0,\quad \pi_3(\mathbb{B}^{\times}_1)\cong\mathbb{Z},
 $$
 
 and the universal covers are $(\mathbb{B}^\times)^{\mathrm{cov}}\cong \mathrm{U}(\mathbb{B})^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$, while $S^{3}$ and $\mathbb{B}^{\times}_1$ are their own universal covers.
 
-**Proof.** The two retractions give the homotopy equivalences; the homotopy groups of $S^{3}$ are $\pi_x=\pi_y=0$, $\pi_z\cong\mathbb{Z}$, and those of $S^{1}\times S^{3}$ follow by the product formula. The universal cover of $S^{1}\times S^{3}$ is $\mathbb{R}\times S^{3}$ because $S^{3}$ is simply connected, and the same holds for the group of units by the homotopy equivalence.
+**Proof.** The two retractions give the homotopy equivalences; the homotopy groups of $S^{3}$ are $\pi_1=\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and those of $S^{1}\times S^{3}$ follow by the product formula. The universal cover of $S^{1}\times S^{3}$ is $\mathbb{R}\times S^{3}$ because $S^{3}$ is simply connected, and the same holds for the group of units by the homotopy equivalence.
 
-**Generators.** $\pi_z(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the image of the class of $\mathrm{id}_{S^{3}}$ under $S^{3}\hookrightarrow \mathrm{U}(\mathbb{B})$, which induces an isomorphism on $\pi_z$; $\pi_x(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the central loop $\gamma(t)=\exp(2\pi it)e_t$, and $N_*:\pi_x(\mathrm{U}(\mathbb{B}))\to\pi_x(S^{1})$ is an isomorphism, so a generator is a loop along which the biquaternion norm winds once.
+**Generators.** $\pi_3(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the image of the class of $\mathrm{id}_{S^{3}}$ under $S^{3}\hookrightarrow \mathrm{U}(\mathbb{B})$, which induces an isomorphism on $\pi_3$. The group $\pi_1(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the central loop $\gamma(t)=\exp(2\pi it)e_t$; its norm is $N(\gamma(t))=\exp(4\pi it)$, so $N_*:\pi_1(\mathrm{U}(\mathbb{B}))\to\pi_1(S^{1})$ is multiplication by $2$, injective with image the subgroup of index two. No loop in $\mathrm{U}(\mathbb{B})$ has a norm of winding number one.
 
-**Proof.** The inclusions $S^{3}\subset \mathrm{U}(\mathbb{B})\subset\mathbb{B}^{\times}$ and the retractions give the first statement; the second is the identification of $\pi_x$ with the fundamental group of the centre circle via the bundle $S^{1}\to \mathrm{U}(\mathbb{B})\to S^{3}$... precisely, $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}$ and the projection to the first factor realises $\langle\cdot\rangle_{\natural}$.
+**Proof.** The inclusions $S^{3}\subset \mathrm{U}(\mathbb{B})\subset\mathbb{B}^{\times}$ and the retractions give the first statement. For the second, $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}$, the first factor is the central circle, and the norm is its square: the quotient map restricts to an isomorphism on $\pi_1$, and $N$ is the squaring map on that circle, of degree $2$.
 
 **Corollary (Hurewicz).** $H_1(\mathbb{B}^{\times})\cong H_1(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$, $H_1(S^{3})=H_1(\mathbb{B}^{\times}_1)=0$, and $\pi_n(\mathrm{U}(\mathbb{B}))\cong\pi_n(S^{3})$ for $n\geq2$.
 
@@ -131,7 +131,7 @@ is a surjective homomorphism with kernel $\mathrm{U}(1)e_t$, so that $\mathrm{U}
 
 **A central element.** $\tilde{U}=Ae_t$ is unitary exactly when $|A|=1$, and then $\langle\tilde{U},\tilde{U}\rangle_{\natural}=A^{2}$, so the centre circle maps onto $S^{1}$ twice.
 
-**A unit quaternion.** $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde{U},\tilde{U}\rangle_{\natural}=1$, is unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_z$.
+**A unit quaternion.** $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde{U},\tilde{U}\rangle_{\natural}=1$, is unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_3$.
 
 **A null scalar multiple.** $\tilde{Q}=A(\vec e_x+i\vec e_y)$ with $A\neq0$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|A|$.
 
@@ -139,7 +139,7 @@ is a surjective homomorphism with kernel $\mathrm{U}(1)e_t$, so that $\mathrm{U}
 
 ## Summary
 
-The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_t\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $\mathrm{U}(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_t\}$, so $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}$ and flag variety $\mathrm{U}(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_x(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_y=0$, $\pi_z\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $\langle\cdot\rangle_{\natural}$ is the determinant and $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$, the compact real form of the Lorentz group.
+The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_t\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $\mathrm{U}(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_t\}$, so $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}=S^{1}_{\mathrm{c}}\times S^{1}_{\mathrm{q}}$ and flag variety $\mathrm{U}(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $\langle\cdot\rangle_{\natural}$ is the determinant and $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$, the maximal compact subgroup of $SO^+(1,3)$.
 
 ## Summary of Notation
 

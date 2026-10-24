@@ -193,7 +193,6 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
 - [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
 - [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html)
-- [J-Normal Operators and the Indefinite Spectral Theorem](../articles_maths/j-normal-operators-and-the-indefinite-spectral-theorem.html)
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)
 
@@ -208,17 +207,12 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html)
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html)
-- [Biquaternion Lorentzian and Conformal Geometry](../articles_maths/biquaternion-lorentzian-and-conformal-geometry.html)
-- [Biquaternion Spin Geometry](../articles_maths/biquaternion-spin-geometry.html)
 - [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html)
 - [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html)
 - [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html)
-- [The Inner Adjoint and the Orthogonal Group of the Bilinear Form](../articles_maths/the-inner-adjoint-and-the-orthogonal-group-of-the-bilinear-form.html)
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html)
-- [The Unitary Group and Its Cartan Decomposition](../articles_maths/the-unitary-group-and-its-cartan-decomposition.html)
 - [The Krein Isometry Group and Its J-Contractions](../articles_maths/the-krein-isometry-group-and-its-j-contractions.html)
 - [The Krein Cartan Decomposition of the Operator Algebra](../articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.html)
-- [The Finite Subgroups of the Unit Sphere and the McKay Correspondence](../articles_maths/the-finite-subgroups-of-the-unit-sphere-and-the-mckay-correspondence.html)
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html)
 
 #### Fractal Geometry
@@ -228,13 +222,15 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Slices of the Biquaternion Julia Sets](../articles_maths/the-slices-of-the-biquaternion-julia-sets.html)
 - [The Escape Radius and the Green's Function for the Biquaternions](../articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.html)
 - [The Zero Divisors and the Singular Julia Sets](../articles_maths/the-zero-divisors-and-the-singular-julia-sets.html)
-- [The Three Conjugations and the Symmetric Biquaternion Fractals](../articles_maths/the-three-conjugations-and-the-symmetric-biquaternion-fractals.html)
 - [The Matrix Element Representation and the Biquaternion Dynamics](../articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.html)
 - [The Idempotent Decomposition and the Split Fractal](../articles_maths/the-idempotent-decomposition-and-the-split-fractal.html)
 - [The Biquaternion Iterated Function Systems](../articles_maths/the-biquaternion-iterated-function-systems.html)
 - [The Hausdorff Dimension of the Biquaternion Julia Sets](../articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.html)
-- [The Pluripotential Theory of the Biquaternion Dynamics](../articles_maths/the-pluripotential-theory-of-the-biquaternion-dynamics.html)
 - [The Biquaternion Holomorphic Dynamics and the Jacobian](../articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.html)
+
+### Representation Theory
+
+- [Biquaternion Representations and the Lorentz Group](../articles_maths/biquaternion-representations-and-the-lorentz-group.html)
 
 ## What the Index Is For
 

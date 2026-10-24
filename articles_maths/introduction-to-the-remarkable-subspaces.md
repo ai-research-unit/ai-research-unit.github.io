@@ -332,7 +332,7 @@ $$
 \mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}(e_t - \tilde\Pi) ,
 $$
 
-its complement $e_t - \tilde\Pi$ is the complementary idempotent, and when the idempotent is primitive the two summands are minimal one-sided ideals. The classifications themselves are the business of *Idempotents of the Biquaternion Algebra* and *Ideals and Peirce Decompositions of the Biquaternion Algebra*; what is recorded here is their restriction to the remarkable subspaces.
+its complement $e_t - \tilde\Pi$ is the complementary idempotent, and when the idempotent is primitive the two summands are minimal one-sided ideals. The classifications themselves are the business of *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Ideals and Peirce Decompositions of the Biquaternion Algebra*; what is recorded here is their restriction to the remarkable subspaces.
 
 **The idempotents of the algebra.** Every idempotent of $\mathbb{B}$ is $0$, or $e_t$, or of the form
 

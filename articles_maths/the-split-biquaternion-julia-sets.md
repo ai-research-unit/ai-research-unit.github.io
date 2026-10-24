@@ -99,7 +99,7 @@ and for a $\mathbb{D}$-scalar parameter the symmetry is the full product of the 
 
 **Proof.** The group $\mathrm{Sym}(J_+)\times\mathrm{Sym}(J_-)$ acts componentwise and preserves the product; the swap exchanges the factors and maps $K_+\times K_-$ to $K_-\times K_+$, which is the filled Julia set of the swapped parameter, so it preserves $J_{\tilde Q_1}$ when the parameter is exchanged accordingly, and for a $\mathbb{D}$-scalar parameter it preserves the set outright.
 
-**Remark (contrast with the biquaternion symmetry).** The biquaternion fractal has only the diagonal symmetry of the conjugations, because the idempotents are not central and the two halves cannot be rotated independently (*The Three Conjugations and the Symmetric Biquaternion Fractals*). The split-biquaternion fractal has the full product symmetry. **The centrality of the idempotents enlarges the symmetry from the diagonal to the product, and the fractal reflects it.**
+**Remark (contrast with the biquaternion symmetry).** The biquaternion fractal has only the diagonal symmetry of the conjugations, because the idempotents are not central and the two halves cannot be rotated independently (*The Slices of the Biquaternion Julia Sets*, §*The Conjugation Symmetries of the Slices*). The split-biquaternion fractal has the full product symmetry. **The centrality of the idempotents enlarges the symmetry from the diagonal to the product, and the fractal reflects it.**
 
 ## Comparison with the Biquaternion Case
 
