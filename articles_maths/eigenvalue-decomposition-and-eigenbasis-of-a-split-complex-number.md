@@ -1,4 +1,4 @@
-# __Eigenbasis of a Split-Complex Number__
+# __Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number__
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Q=\lambda_+\Pi_+ + \lambda_-\Pi_-,
 \lambda_-=q-q'=Q_-,
 $$
 
-Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi_\pm$ are the eigenprojections. The eigenvalues are therefore the idempotent coordinates, and their values are displayed with them throughout. The article is the two-dimensional commutative counterpart of *Eigenbasis of a Biquaternion* and the real analogue of *Eigenbasis of a Reduced Biquaternion*. The general definition, the existence theorem and the uniqueness theorem are those of *The Eigenvalue Decomposition of an Element*. The split-complex content is that, in the distinct case, the eigenprojections are the standard idempotents $\Pi_\pm$, that these idempotents are central, and that the Peirce decomposition relative to either of them is the decomposition of the whole algebra. There is no vector part, the generator $j$ is part of the presentation rather than a root extracted from the element, and there is no continuous family of idempotents: the algebra has exactly four idempotents, and the nontrivial pair is unique.
+Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi_\pm$ are the eigenprojections. The eigenvalues are therefore the idempotent coordinates, and their values are displayed with them throughout. The article is the two-dimensional commutative counterpart of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion* and the real analogue of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*. The general definition, the existence theorem and the uniqueness theorem are those of *The Eigenvalue Decomposition of an Element*. The split-complex content is that, in the distinct case, the eigenprojections are the standard idempotents $\Pi_\pm$, that these idempotents are central, and that the Peirce decomposition relative to either of them is the decomposition of the whole algebra. There is no vector part, the generator $j$ is part of the presentation rather than a root extracted from the element, and there is no continuous family of idempotents: the algebra has exactly four idempotents, and the nontrivial pair is unique.
 
 **The results.** The spectrum of $Q=q+jq'$ is $\{q+q',q-q'\}$, and in the distinct case $q'\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{R}\times\mathbb{R}$, and the unit group is $\mathbb{R}^\times\times\mathbb{R}^\times$. The idempotents form an eigenbasis of the multiplication operator, with eigenvalues $\lambda_+$ and $\lambda_-$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime. The two minimal ideals $S_\pm=\mathbb{R}\Pi_\pm$ are the spinor spaces: a spinor is a single real coefficient on one of them, and after complexification a single complex coefficient.
 
@@ -27,12 +27,13 @@ Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi
 | Eigenvalue decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
 | Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$, with zero off-diagonal corners |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
+| Matrix model | $M(Q_{\mathrm{sp}})=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per chirality |
 | Unit group | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
 **Conventions.** The notation is fixed in *Conventions in Mathematics*: the algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
 
-**Boundaries.** The complex case is the subject of *Eigenvalues and Diagonalisation*; the reduced biquaternion case is *Eigenbasis of a Reduced Biquaternion*; the biquaternion case is *Eigenbasis of a Biquaternion*; the Peirce and ideal theory is *Ideals and Peirce Decomposition of the Split-Complex Algebra*; the exponential and the logarithm built on the decomposition are those of *Split-Complex Exponential and Lie Group Structure*; and the polar forms are those of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. The general definition, existence and uniqueness of the eigenvalue decomposition are those of *The Eigenvalue Decomposition of an Element* and are not restated.
+**Boundaries.** The complex case is the subject of *Eigenvalues and Diagonalisation*; the reduced biquaternion case is *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*; the biquaternion case is *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*; the Peirce and ideal theory is *Ideals and Peirce Decomposition of the Split-Complex Algebra*; the exponential and the logarithm built on the decomposition are those of *Split-Complex Exponential and Lie Group Structure*; and the polar forms are those of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. The general definition, existence and uniqueness of the eigenvalue decomposition are those of *The Eigenvalue Decomposition of an Element* and are not restated.
 
 ## The Spectrum and the Characteristic Polynomial
 
@@ -142,7 +143,7 @@ $$
 
 with $\lambda_+-\lambda_-=2q'$. Hence $\Pi_\pm$ are polynomials in $Q$ when $q'\neq0$, and in particular commute with $Q$. When $q'=0$ the denominator vanishes and the formula does not apply: the eigenprojection of the single eigenvalue $\lambda_+=\lambda_-=q$ is then $1$, not $\Pi_\pm$.
 
-**Independence of the element.** The eigenprojections are the fixed pair $\Pi_\pm$: they do not depend on $Q$. This is the commutative counterpart of the biquaternion case, where the eigenprojections are the idempotents of the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ and therefore vary with $\tilde Q$ (*Eigenbasis of a Biquaternion*, §*The Eigenprojections*). Here the dependence on the element lies in the eigenvalues alone.
+**Independence of the element.** The eigenprojections are the fixed pair $\Pi_\pm$: they do not depend on $Q$. This is the commutative counterpart of the biquaternion case, where the eigenprojections are the idempotents of the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ and therefore vary with $\tilde Q$ (*Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Eigenprojections*). Here the dependence on the element lies in the eigenvalues alone.
 
 The pair is collected in the table.
 
@@ -298,7 +299,7 @@ $$
 Q=q+jq'\quad\longleftrightarrow\quad(\lambda_+,\lambda_-)=(q+q',\,q-q').
 $$
 
-**The coordinates.** The coordinates of $Q_{\mathrm{sp}}$ in the eigenbasis are its two idempotent coordinates $(\xi_+,\xi_-)$, and the decomposition is the identity $Q_{\mathrm{sp}}=\xi_+\Pi_++\xi_-\Pi_-$. No further data are carried by the eigenbasis.
+**The coordinates.** The coordinates of $Q_{\mathrm{sp}}$ in the eigenbasis are its two idempotent coordinates $(a_1,a_2)$, and the decomposition is the identity $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$. No further data are carried by the eigenbasis.
 
 ### The Action of $Q$ and the Eigenbasis
 
@@ -388,7 +389,7 @@ a_1\longmapsto\lambda_+a_1,
 \qquad
 a_2\longmapsto\lambda_-a_2.
 $$
-A general element $Q_{\mathrm{sp}}=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $(\xi_+,\xi_-)$ are the coordinates in the direct sum.
+A general element $Q_{\mathrm{sp}}=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
 
 **Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
 $$
@@ -397,6 +398,51 @@ S_+^{\mathbb{C}}=\mathbb{C}\Pi_+,
 S_-^{\mathbb{C}}=\mathbb{C}\Pi_-.
 $$
 Each is one-dimensional over $\mathbb{C}$ and two-dimensional over $\mathbb{R}$. This complexified form is the one that matches the reduced-biquaternion article, where the base field is already $\mathbb{C}$.
+
+### The Matrix Model and the Two Columns
+
+**In the eigenbasis the Peirce matrix of every element is diagonal, the two diagonal entries are the spinor coordinates, and the two columns are the two spinor spaces.**
+
+Write a general element in the eigenbasis as
+$$
+Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-,
+\qquad a_1,a_2\in\mathbb{R}
+$$
+
+Its coordinates are $(a_1,a_2)$.
+Assign
+$$
+\Pi_+\mapsto E_{11},\qquad \Pi_-\mapsto E_{22},
+$$
+where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then
+$$
+M(Q_{\mathrm{sp}})=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+\qquad
+[L_Q]_{(\Pi_+,\Pi_-)}=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+$$
+The two columns are the two spinor spaces:
+$$
+S_+=\mathbb{R}\Pi_+\longleftrightarrow\operatorname{span}\{E_{11}\}=\text{column }1,
+\qquad
+S_-=\mathbb{R}\Pi_-\longleftrightarrow\operatorname{span}\{E_{22}\}=\text{column }2.
+$$
+A spinor of first chirality $\xi_+=a_1\Pi_+$ is the first column $(a_1,0)^{T}$; a spinor of second chirality $\xi_-=a_2\Pi_-$ is the second column $(0,a_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{R})$, isomorphic to $\mathbb{R}\times\mathbb{R}$.
+
+In the basis $(1,j)$ the regular representation is
+$$
+[L_Q]_{(1,j)}=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+$$
+and the change of basis to the eigenbasis is
+$$
+P=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+\qquad
+P^{-1}=2P,
+\qquad
+P^{-1}[L_Q]_{(1,j)}P=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+$$
+The matrix $[L_Q]_{(1,j)}$ is symmetric, and it is conformal for the split form $g=\operatorname{diag}(1,-1)$: $[L_Q]_{(1,j)}^{T}g[L_Q]_{(1,j)}=N(Q)g$. The eigenbasis diagonalises it. The vanishing of the off-diagonal entries is the matrix statement that the Peirce decomposition has no mixed part.
+
+**Nilpotents in the matrix model.** Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but they are not in the image of $\mathbb{D}$. The absence is the matrix form of the reducedness of the algebra.
 
 ## Powers, Polynomial Calculus, and the Group of Units
 
@@ -682,6 +728,7 @@ which are real; they are distinct exactly when $q'\neq0$. In that case the idemp
 | Eigenvalue decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-=(q+q')\Pi_++(q-q')\Pi_-$ |
 | Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
+| Matrix model | $M(Q_{\mathrm{sp}})=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
 | Nilpotents | none; the algebra is reduced, so $N^2=0$ implies $N=0$ |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, the two minimal ideals; spinors $a_1\Pi_+$ and $a_2\Pi_-$ |
 | Polynomial calculus | $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ |
@@ -716,7 +763,7 @@ The table compares the decomposition across the three algebras; in the biquatern
 | Eigenprojections central? | yes | yes | no |
 | Peirce decomposition | $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ plus two mixed square-zero lines |
 | Eigenbasis | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$ |
-| Coordinates of a general element in the eigenbasis | $(\xi_+,\xi_-)$ | $(\xi_+,\xi_-)$ | $(a_{11},a_{12},a_{21},a_{22})$ |
+| Coordinates of a general element in the eigenbasis | $(a_1,a_2)$ | $(A_1,A_2)$ | $(a_{11},a_{12},a_{21},a_{22})$ |
 | Nilpotents in the eigenbasis | none | none | $\vec\Upsilon_\pm$ in the two mixed corners |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, real lines | $S_\pm=\mathbb{C}\Pi_\pm$, complex lines | $S_\pm=\mathbb{B}\tilde\Pi_\pm\cong\mathbb{C}^2$, complex planes |
 | Spinor coordinates | one real coefficient per chirality | one complex coefficient per chirality | two complex coefficients per chirality |
@@ -740,6 +787,10 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\sigma(Q)=\{\lambda_+,\lambda_-\}=\{q+q',q-q'\}$ | Spectrum |
 | $p_Q(X)=X^2-2qX+\langle Q\rangle_{*}=(X-\lambda_+)(X-\lambda_-)$ | Characteristic polynomial |
 | $L_Q(X)=QX$ | Multiplication operator; eigenvalues $\lambda_+,\lambda_-$ in the eigenbasis |
+| $[L_Q]_{(1,j)}$ | Matrix of $L_Q$ in the basis $(1,j)$, $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
+| $[L_Q]_{(\Pi_+,\Pi_-)}$ | Diagonal matrix of $L_Q$ in the eigenbasis, $\operatorname{diag}(\lambda_+,\lambda_-)$ |
+| $M(Q_{\mathrm{sp}})$ | Peirce matrix of a general element, $\operatorname{diag}(a_1,a_2)$ |
+| $E_{ij}$ | Matrix units of the $2\times2$ model |
 | $a_1,a_2$ | Spinor coordinates on $S_+$ and $S_-$, the two diagonal entries of the matrix in the eigenbasis |
 | $\alpha,\beta$ | Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$ |
 | $S_\pm=\mathbb{D}\Pi_\pm=\mathbb{R}\Pi_\pm$ | The two spinor spaces, the two minimal ideals (real lines) |
@@ -760,4 +811,4 @@ Read down a column for one algebra and across a row for one concept. The rows do
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for semisimplicity and the structure of finite-dimensional algebras.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra as a Clifford algebra and its norm.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic geometry of the split-complex plane.
-- The corpus articles: [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), [Split-Complex Algebra](split-complex-algebra.html), [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), [Split-Complex Regular Element Representation](split-complex-regular-element-representation.html), [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), [Eigenbasis of a Reduced Biquaternion](eigenbasis-of-a-reduced-biquaternion.html), [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html) and [Conventions in Mathematics](conventions-in-mathematics.html).
+- The corpus articles: [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), [Split-Complex Algebra](split-complex-algebra.html), [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), [Split-Complex Regular Element Representation](split-complex-regular-element-representation.html), [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) and [Conventions in Mathematics](conventions-in-mathematics.html).

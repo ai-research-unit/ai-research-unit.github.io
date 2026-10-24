@@ -8551,8 +8551,17 @@ Can you improve the structural and conceptual quality of these 3 articles ? The 
 
 
 
-Some Maths research has been made :
+Read the articles :
 
+Conventions in Mathematics
+
+Zero Divisors of the Biquaternion Algebra
+
+Annihilators of the Biquaternion Algebra
+
+Square Roots of One and the Idempotents of the Biquaternion Algebra
+
+Square Roots of Zero and the Nilpotents of the Biquaternion Algebra
 
 Ideals and Peirce Decomposition of the Biquaternion Algebra
 
@@ -8576,6 +8585,17 @@ The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions
 One-Sided Operator and the Polar Decomposition
 
 Two-Sided Operator and the Polar Decomposition
+
+
+Can you tell me what happens for biquaternions of the null cone Q~2=0 ?
+
+Is there a n eigenbasis ? a polar decomposition ? a spinor space ? what habout one side and 2 side operators ?
+
+
+
+
+
+
 
 
 

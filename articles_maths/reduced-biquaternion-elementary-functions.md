@@ -4,7 +4,7 @@
 
 This article defines the elementary functions of a reduced biquaternion variable: the exponential, the logarithm, the powers and roots, and the trigonometric and hyperbolic functions. Each function is defined once, its basic properties are recorded, and its value is read on the two eigenvalues.
 
-The article rests on *Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*: the eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, the central idempotents $\Pi_\pm$, the decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$, and the spectral calculus. They are collected in §*The Eigenvalue Data* and used here without proof. The algebra and its bar are *Introduction to the Algebra of the Reduced Biquaternions*; the norm and the unit criterion are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*.
+The article rests on *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*: the eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, the central idempotents $\Pi_\pm$, the decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$, and the spectral calculus. They are collected in §*The Eigenvalue Data* and used here without proof. The algebra and its bar are *Introduction to the Algebra of the Reduced Biquaternions*; the norm and the unit criterion are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*.
 
 Every claim is either proved or stated as a definition. Complex analysis is assumed: holomorphic functions, power series, the complex exponential and logarithm, and the branch structure of the argument are used throughout.
 
@@ -18,7 +18,7 @@ Every numerical value displayed below was recomputed in double precision.
 
 ### The Eigenvalue Data
 
-The spectral data are those of *Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
+The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
 
 | Quantity | Value |
 |---|---|
@@ -42,7 +42,7 @@ and the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=\lambda_1\lambda_2
 
 ### The Regimes
 
-The characteristic polynomial is $(X-\lambda_1)(X-\lambda_2)$, and the algebra has two spectral regimes; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenbasis of a Reduced Biquaternion*, §*Degenerate Regimes*.
+The characteristic polynomial is $(X-\lambda_1)(X-\lambda_2)$, and the algebra has two spectral regimes; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*Degenerate Regimes*.
 
 | Regime | Condition | Consequence for the functions |
 |---|---|---|
@@ -64,7 +64,7 @@ f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-
 \;}.
 $$
 
-**Proof.** The polynomial calculus of *Eigenbasis of a Reduced Biquaternion*, §*Powers, Polynomial Calculus, and the Group of Units*, gives $\breve Q^n=\lambda_1^n\Pi_++\lambda_2^n\Pi_-$ for every $n\geq0$. Summing termwise and using $\Pi_+^2=\Pi_+$, $\Pi_-^2=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$ gives the display; the rearrangement is legitimate because the series converges absolutely in each component. For a function defined by an integral, an inverse or another complex formula, the display is the definition of its reduced biquaternion extension, and the value is defined exactly when both eigenvalue expressions are defined.
+**Proof.** The polynomial calculus of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*Powers, Polynomial Calculus, and the Group of Units*, gives $\breve Q^n=\lambda_1^n\Pi_++\lambda_2^n\Pi_-$ for every $n\geq0$. Summing termwise and using $\Pi_+^2=\Pi_+$, $\Pi_-^2=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$ gives the display; the rearrangement is legitimate because the series converges absolutely in each component. For a function defined by an integral, an inverse or another complex formula, the display is the definition of its reduced biquaternion extension, and the value is defined exactly when both eigenvalue expressions are defined.
 
 This is the **Idempotent Principle** of the algebra, and it is the exact analogue of *Split-Complex Elementary Functions*, §*The Idempotent Principle*, with two real eigenvalues replaced by two complex ones. It is the only rule the rest of the article uses.
 
@@ -736,7 +736,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 ## Further Reading
 
-- [Eigenbasis of a Reduced Biquaternion](eigenbasis-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the central idempotents and the polynomial calculus used throughout.
+- [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the central idempotents and the polynomial calculus used throughout.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the polar reading of the logarithm.
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the exponential, the trigonometric functions and the logarithm of one complex variable.
 - Lars V. Ahlfors, *Complex Analysis*, 3rd edition (McGraw-Hill, 1979), for the branch structure of the logarithm and the power functions.

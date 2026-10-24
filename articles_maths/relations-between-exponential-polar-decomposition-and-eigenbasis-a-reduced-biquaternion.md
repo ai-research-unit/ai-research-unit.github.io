@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A reduced biquaternion carries two decompositions of the same element. The **eigenvalue decomposition** of *Eigenbasis of a Reduced Biquaternion* writes $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ as
+A reduced biquaternion carries two decompositions of the same element. The **eigenvalue decomposition** of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion* writes $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ as
 
 $$
 \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-,
@@ -93,7 +93,7 @@ $$
 \;},
 $$
 
-with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statements of *Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*. In the scalar case $Q_{\blacktriangledown}=0$, the eigenvalue is repeated, $\lambda_+=\lambda_-=Q_{\blacktriangle}$, and the decomposition is the one-term writing $\breve Q=Q_{\blacktriangle}\cdot1$.
+with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statements of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*. In the scalar case $Q_{\blacktriangledown}=0$, the eigenvalue is repeated, $\lambda_+=\lambda_-=Q_{\blacktriangle}$, and the decomposition is the one-term writing $\breve Q=Q_{\blacktriangle}\cdot1$.
 
 | Spectral item | Value |
 |---|---|
@@ -232,7 +232,7 @@ $$
 
 is a bijection from $\{\rho>0,\ \phi\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\}$, with the boundary half-open, onto the set of pairs of nonzero complex numbers. Its inverse is the formula above.
 
-*Proof.* The map is the coordinate change of *Exponential Polar Decomposition of Reduced Biquaternions*, §*The Four Real Coordinates*, with $C_\pm=\lambda_\pm$; its inverse and its lattice ambiguity are established there. The only new point is the identification $C_\pm=\lambda_\pm$, which is the eigenvalue formula of *Eigenbasis of a Reduced Biquaternion*.
+*Proof.* The map is the coordinate change of *Exponential Polar Decomposition of Reduced Biquaternions*, §*The Four Real Coordinates*, with $C_\pm=\lambda_\pm$; its inverse and its lattice ambiguity are established there. The only new point is the identification $C_\pm=\lambda_\pm$, which is the eigenvalue formula of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*.
 
 The inverse formulas are collected in the table.
 
@@ -650,7 +650,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the eight cases and the reconstruction tables.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
-- [Eigenbasis of a Reduced Biquaternion](eigenbasis-of-a-reduced-biquaternion.html), for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.
+- [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal domain.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the decomposition, existence and uniqueness and the matrix picture.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.

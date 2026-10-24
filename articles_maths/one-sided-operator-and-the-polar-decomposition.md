@@ -1,4 +1,4 @@
-# __One-Sided Operator Under the Polar Decomposition__
+# __One-Sided Operator and the Polar Decomposition__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ $$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$
 
-The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *Two-Sided Operator Under the Polar Decomposition*. This article reads the one-sided factors: the polar word
+The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *Two-Sided Operator and the Polar Decomposition*. This article reads the one-sided factors: the polar word
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -179,7 +179,7 @@ The last clause is the subject of the next section: a complex isometry can excha
 
 ### The Q-Adapted Peirce Basis
 
-The eigenbasis of the left multiplication is the Q-adapted Peirce basis of *Eigenbasis of a Biquaternion*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. For $\tilde Q$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, put
+The eigenbasis of the left multiplication is the Q-adapted Peirce basis of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. For $\tilde Q$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, put
 $$
 \vec U=\frac{\vec Q}{B},\qquad \vec\Xi=-i\vec U,\qquad
 \tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},\qquad
@@ -210,7 +210,7 @@ $$
 
 The two values are distinct exactly when $B\neq0$. In that case the $\lambda_+$-eigenspace is the two-dimensional right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$.
 
-When $B=0$ the construction is unavailable: there is no Q-adapted Peirce basis, the two nilpotents are not defined from $\tilde Q$, and $L_{\tilde Q}$ is not diagonal in any Peirce basis. This is the degenerate case of *Eigenbasis of a Biquaternion*, §*The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$*.
+When $B=0$ the construction is unavailable: there is no Q-adapted Peirce basis, the two nilpotents are not defined from $\tilde Q$, and $L_{\tilde Q}$ is not diagonal in any Peirce basis. This is the degenerate case of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$*.
 
 ### The Two Chiral Spinor Spaces
 
@@ -316,7 +316,7 @@ L_{\tilde U_{\mathrm b}}=\exp\Bigl(i\tfrac{\psi}{2}\,L_{\vec u_{\mathrm b}}\Bigr
 \Theta_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\psi
 \; }.
 $$
-A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Sandwich* and §*The Pure Factors and the Full Spin* of *Two-Sided Operator Under the Polar Decomposition*.
+A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Sandwich* and §*The Pure Factors and the Full Spin* of *Two-Sided Operator and the Polar Decomposition*.
 
 The following table collects the pure factors. The last column is the nontrivial factor in the spectrum of the two-sided operator, that is, in the products $\lambda_i\bar\lambda_j$.
 
@@ -864,8 +864,8 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 
 ## Further Reading
 
-- [Two-Sided Operator Under the Polar Decomposition](two-sided-operator-under-the-polar-decomposition.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
-- [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action used here.
+- [Two-Sided Operator and the Polar Decomposition](two-sided-operator-and-the-polar-decomposition.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four exponents read against the six remarkable subspaces and the sector blocks, and §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the infinitesimal split of the rotor and the boost.
@@ -876,3 +876,5 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 - [The Four-Vector Operator Representation of Biquaternions](the-four-vector-operator-representation-of-biquaternions.html), for the sandwich written in the four complex coefficients.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group in biquaternionic form and the double cover.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](../articles_physics/the-informational-sector-states-observables-and-probability.html), for the physical interpretation of the two real forms exchanged by the phase.
+- [Operator and the Polar Decomposition of a Split-Complex Number](operator-and-the-polar-decomposition-of-a-split-complex-number.html), for the commutative case where $L=R$, the one-sided operator is the regular representation, and the half-angle disappears.
+- [Operator and the Polar Decomposition of a Reduced Biquaternion](operator-and-the-polar-decomposition-of-a-reduced-biquaternion.html), for the commutative complex case where $L=R$, the one-sided operator carries the full parameters, and the two-sided operator is the modulus squared.

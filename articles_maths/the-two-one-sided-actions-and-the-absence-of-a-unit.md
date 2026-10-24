@@ -176,12 +176,12 @@ The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector su
 **Proposition.** For every biquaternion $\tilde Q$,
 
 $$
-N\bigl(e_t \star \tilde Q\bigr) = \langle\tilde Q^{*}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}} , \qquad N\bigl(\tilde Q \star e_t\bigr) = \langle\tilde Q^{\natural}\rangle_{\natural} = \langle\tilde Q\rangle_{\natural} .
+\langle e_t \star \tilde Q\rangle_{\natural} = \langle\tilde Q^{*}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}} , \qquad \langle\tilde Q \star e_t\rangle_{\natural} = \langle\tilde Q^{\natural}\rangle_{\natural} = \langle\tilde Q\rangle_{\natural} .
 $$
 
 The left action conjugates the norm and the right action preserves it; both preserve its modulus $\lvert N\rvert$ and hence the zero-divisor cone $\{N = 0\}$.
 
-**Proof.** The norm is multiplicative for the plain product with $N(e_t) = 1$; it is invariant under the natural conjugation, $\langle\tilde Q^{\natural}\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}$, because ${}^{\natural}$ negates an even number of coordinates with the square; and it transforms by the coefficientwise conjugation under ${}^{*}$, $\langle\tilde Q^{*}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$, because ${}^{*}$ conjugates each coordinate and $N$ is a quadratic form in the coordinates with real coefficients. The two actions are ${}^{*}$ and ${}^{\natural}$.
+**Proof.** The norm is multiplicative for the plain product with $\langle e_t\rangle_{\natural} = 1$; it is invariant under the natural conjugation, $\langle\tilde Q^{\natural}\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}$, because ${}^{\natural}$ negates an even number of coordinates with the square; and it transforms by the coefficientwise conjugation under ${}^{*}$, $\langle\tilde Q^{*}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$, because ${}^{*}$ conjugates each coordinate and $N$ is a quadratic form in the coordinates with real coefficients. The two actions are ${}^{*}$ and ${}^{\natural}$.
 
 **Remark.** The two transforms are the numerical trace of the two parities of the actions: the conjugate-linear action conjugates the quadratic form and the linear action fixes it, and the composite, the coefficientwise conjugation, is the Galois action of $\mathbb{C}$ over $\mathbb{R}$ that distinguishes them. The preservation of the modulus is the reason the two actions are symmetries of the zero-divisor cone $N = 0$, the set on which the element theory of the product is read, and it is why an element and its two conjugates are zero divisors together.
 

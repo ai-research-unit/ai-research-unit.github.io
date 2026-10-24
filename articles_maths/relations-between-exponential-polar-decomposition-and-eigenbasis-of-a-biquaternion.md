@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A biquaternion carries two decompositions of the same element. The **eigenvalue decomposition** of *Eigenbasis of a Biquaternion* writes a biquaternion $\tilde Q=Q_te_t+\vec Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$ as
+A biquaternion carries two decompositions of the same element. The **eigenvalue decomposition** of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion* writes a biquaternion $\tilde Q=Q_te_t+\vec Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$ as
 
 $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
@@ -85,7 +85,7 @@ $$
 \vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
-with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*.
+with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*.
 
 | Spectral item | Value |
 |---|---|
@@ -138,7 +138,7 @@ The spectral decomposition exists in the distinct case $Q_x^2+Q_y^2+Q_z^2\neq0$,
 * a **zero divisor** with $Q_x^2+Q_y^2+Q_z^2\neq0$ and $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ has two distinct eigenvalues and a two-term spectral decomposition, but no polar word;
 * a **Jordan element** with $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$ has a repeated eigenvalue and no two-term spectral decomposition, but it is a unit and has a polar word.
 
-The table records the regimes of *Eigenbasis of a Biquaternion*, §*Degenerate Regimes*, with the polar status added; the zero element is separated from the scalar regime.
+The table records the regimes of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*Degenerate Regimes*, with the polar status added; the zero element is separated from the scalar regime.
 
 | Regime | Condition | Spectrum | Spectral decomposition | Polar decomposition |
 |---|---|---|---|---|
@@ -645,7 +645,7 @@ The exponential of $\mathbb{B}$ is not injective. Its kernel is the set of expon
 * in the Jordan case, the logarithm is discrete, one point for each choice of the scalar logarithm;
 * on the zero-divisor and nilpotent boundary there is no logarithm.
 
-These are the statements of *Biquaternion Elementary Functions*, §*The Logarithm* and §*The Domain and the Fibre*, with the eigenprojections of *Eigenbasis of a Biquaternion*, §*The Eigenvalue Decomposition*.
+These are the statements of *Biquaternion Elementary Functions*, §*The Logarithm* and §*The Domain and the Fibre*, with the eigenprojections of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Eigenvalue Decomposition*.
 
 ### The Polar Word Is Not a Logarithm
 
@@ -681,7 +681,7 @@ The polar domain is the complement of the null cone $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$.
 | Idempotent | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_+\neq\lambda_-$, one zero | $\tilde Q=\lambda_\sigma\tilde\Pi_\sigma$, a complex multiple of a minimal idempotent | $r\to0$, $\psi\to\infty$, $r e^{\psi/2}\to R$ |
 | Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $Q_t=0$, $\vec Q\neq0$ | $\lambda_+=\lambda_-=0$, no eigenprojection | $\tilde Q=\vec Q$, $\vec Q^2=0$ | the same limit with the rotor anticommuting with the boost axis |
 
-For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec\Xi)$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Eigenbasis of a Biquaternion*, §*The Peirce Decomposition Relative to the Eigenprojection*; they are not repeated here.
+For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec\Xi)$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Peirce Decomposition Relative to the Eigenprojection*; they are not repeated here.
 
 The polar word reaches the boundary with $r\to0$ and $\psi\to\infty$ at the rate $r e^{\psi/2}\to R$ with $0<R<\infty$. The limit is
 
@@ -911,7 +911,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the eight cases, the reconstruction and logarithm tables, and the null cone.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the Q-adapted basis, with the nilpotents and the spinors.
-- [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections, the Peirce decomposition and the degenerate regimes.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections, the Peirce decomposition and the degenerate regimes.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four-factor word, the Cartan decomposition, existence and uniqueness, the group law and the boundary.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus and the unit factor.

@@ -141,7 +141,7 @@ with $\lvert\tilde{Q}_1\rvert$ the positive square root in the cone and $\tilde 
 **Corollary (the absolute value and the norm).** $\lvert\tilde{Q}_1\rvert$ is Hermitian, positive semidefinite, and
 
 $$
-N\bigl(\lvert\tilde{Q}_1\rvert\bigr)=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert\ \ge 0 ,
+\langle\lvert\tilde{Q}_1\rvert\rangle_{\natural}=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert\ \ge 0 ,
 $$
 
 so the absolute value lands in the Hermitian sector with a *non-negative* norm there, and $\tilde{Q}_1$ is invertible if and only if $\lvert\tilde{Q}_1\rvert$ lies in the interior of the cone.

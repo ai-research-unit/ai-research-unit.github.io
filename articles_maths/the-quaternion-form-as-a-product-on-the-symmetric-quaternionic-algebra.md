@@ -134,7 +134,7 @@ $$
 $$
 
 for all $\tilde Q_1,\tilde Q_2,\tilde Q_3\in\mathbb{B}$; equivalently when
-$N\bigl(\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=N\bigl(\tilde Q_1,\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}e_t\bigr)$.
+$\langle\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\rangle_{\natural}=\langle\tilde Q_1,\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}e_t\rangle_{\natural}$.
 
 **Theorem (the form is not invariant).** The form $\langle\cdot,\cdot\rangle_{\natural}$ is not invariant under $\star$. At
 $\tilde Q_1=\tilde Q_2=\vec e_x$ and $\tilde Q_3=e_t$ the two sides are $1$ and $0$:

@@ -59,13 +59,13 @@ $$
 $$
 of signature $(4,4)$, the second row of the table of *The Realification of the Four Forms*, §*The Four Gram Matrices*. On the realification the complex structure **reverses** the form,
 $$
-N_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=-N_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
+\operatorname{Re}\langle J\tilde Q_1,J\tilde Q_2\rangle_{\natural}=-\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},
 $$
 which is the same statement as the two opposite blocks $\mathrm{I}_4$ and $-\mathrm{I}_4$ of the Gram matrix.
 
 **Remark (the realified null set is not the nilpotent cone).** Writing $\tilde Q=\sum_\mu(a_\mu+ib_\mu)e_\mu$ with real $a_\mu,b_\mu$, the diagonal of the realified form is
 $$
-N_{\mathbb{R}}(\tilde Q,\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}\bigl(a_\mu^2-b_\mu^2\bigr),
+\operatorname{Re}\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}\bigl(a_\mu^2-b_\mu^2\bigr),
 $$
 one real equation, so its zero set is a real hypersurface of dimension $7$ (*The Realification of the Four Forms*, §*The Realified Null Cones*). The $\star$-nilpotents are the solutions of the **complex** equation $\langle\tilde Q\rangle_{\natural}=0$, that is of the two real equations $\operatorname{Re}N=0$ and $\operatorname{Im}N=0$, a real cone of dimension $6$ off the apex. The realified null cone therefore strictly contains the nilpotent cone of the product, and the two objects must not be confused: the first is the zero set of the realified form, the second is the set of elements whose square vanishes (*The Isotropic Structure of the General Quaternionic Algebra*).
 

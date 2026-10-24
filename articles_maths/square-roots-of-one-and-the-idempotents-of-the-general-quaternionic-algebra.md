@@ -159,7 +159,7 @@ By *Square Roots of One and the Idempotents of the Biquaternion Algebra* the non
 **Proposition (the standard idempotents are square-zero here).** For every real unit vector $\vec u$,
 
 $$
-\boxed{\; \tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=0 , \qquad N\bigl(\tilde\Pi_+(\tilde\Xi)\bigr)=0 \;}.
+\boxed{\; \tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=0 , \qquad \langle\tilde\Pi_+(\tilde\Xi)\rangle_{\natural}=0 \;}.
 $$
 
 **Proof.** The natural conjugation negates the vector part, $\tilde\Pi_+(\tilde\Xi)^{\natural}=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)$, the **complementary idempotent**. Hence

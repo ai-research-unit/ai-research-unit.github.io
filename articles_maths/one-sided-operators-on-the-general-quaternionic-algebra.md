@@ -94,8 +94,8 @@ $$
 **Proposition (the conformal factor and the determinant).** For all $\tilde Q_6,\tilde Q_4$,
 
 $$
-N\bigl(L_{\tilde Q_6}\tilde Q_4\bigr)=\langle\tilde Q_6\rangle_{\natural}\,\langle\tilde Q_4\rangle_{\natural},\qquad
-N\bigl(R_{\tilde Q_6}\tilde Q_4\bigr)=\langle\tilde Q_6\rangle_{\natural}\,\langle\tilde Q_4\rangle_{\natural},
+\langle L_{\tilde Q_6}\tilde Q_4\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}\,\langle\tilde Q_4\rangle_{\natural},\qquad
+\langle R_{\tilde Q_6}\tilde Q_4\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}\,\langle\tilde Q_4\rangle_{\natural},
 $$
 
 so that each multiplication scales the form by the norm of its parameter; in the coefficient basis,

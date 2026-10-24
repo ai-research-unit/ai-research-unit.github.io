@@ -92,12 +92,12 @@ $$
 In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_1 + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_2,
 $$
 
-where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
+where $\langle\tilde{Q}_\pm\rangle_{\natural} = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
 
-So the split-biquaternion norm of a split biquaternion is the pair of non-negative real numbers $(N_{\mathbb{H}}(\tilde{Q}_+), N_{\mathbb{H}}(\tilde{Q}_-))$, embedded in the split complex algebra via the idempotent basis. This is the cleanest form of the split-biquaternion norm, and it is the form in which the invertibility criterion is most transparent.
+So the split-biquaternion norm of a split biquaternion is the pair of non-negative real numbers $(\langle\tilde{Q}_+\rangle_{\natural}, \langle\tilde{Q}_-\rangle_{\natural})$, embedded in the split complex algebra via the idempotent basis. This is the cleanest form of the split-biquaternion norm, and it is the form in which the invertibility criterion is most transparent.
 
 ### The Quadratic Form and Its Polarisation
 
@@ -332,16 +332,16 @@ This is the split biquaternion analogue of the formula $\tilde q^{-1} = \tilde q
 The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2.
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_1 + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_2.
 $$
 
-Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
+Since $\langle\tilde{Q}_\pm\rangle_{\natural}$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
 
 $$
-N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \quad \text{and} \quad N_{\mathbb{H}}(\tilde{Q}_-) \neq 0.
+\langle\tilde{Q}_+\rangle_{\natural} \neq 0 \quad \text{and} \quad \langle\tilde{Q}_-\rangle_{\natural} \neq 0.
 $$
 
-Mere non-vanishing of $\langle\tilde{Q}\rangle_{\natural}$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_1$ above shows. Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
+Mere non-vanishing of $\langle\tilde{Q}\rangle_{\natural}$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_1$ above shows. Since $\mathbb{H}$ is a division algebra, $\langle\tilde{Q}_\pm\rangle_{\natural} \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -361,7 +361,7 @@ $$
 
 requires $\langle\tilde{Q}\rangle_{\natural}$ to be invertible in $\mathbb{D}$, not merely nonzero: since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $\langle\tilde{Q}\rangle_{\natural}$ is a nonzero zero divisor of $\mathbb{D}$ and $\langle\tilde{Q}\rangle_{\natural}^{-1}$ does not exist.
 
-In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
+In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \langle\tilde{Q}_\pm\rangle_{\natural} \in \mathbb{R}$,
 
 $$
 \langle\tilde{Q}\rangle_{\natural}^{-1} = \frac{\tilde\Pi_1}{N_+} + \frac{\tilde\Pi_2}{N_-} = \frac{\langle\tilde{Q}\rangle_{\natural}^*}{\Delta(\tilde{Q})},
@@ -370,7 +370,7 @@ $$
 where $\langle\tilde{Q}\rangle_{\natural}^* = N_- \tilde\Pi_1 + N_+ \tilde\Pi_2$ is the split complex conjugate of $\langle\tilde{Q}\rangle_{\natural}$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} \langle\tilde{Q}\rangle_{\natural}^{-1}$ expresses the inverse through the **reduced norm**
 
 $$
-\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
+\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
 $$
 
 a real quartic, the product of the two ordinary quaternion norms:
@@ -403,7 +403,7 @@ $$
 \tilde{Q} \tilde{Q}^{\natural} = 8 e_t, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural} = \tfrac{1}{8}\big(1 - 2 \vec e_x - \vec e_y\big) + \tfrac{j}{8}\big(1 + \vec e_y\big).
 $$
 
-The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $N_{\mathbb{H}}(\tilde{Q}_+) = N_{\mathbb{H}}(\tilde{Q}_-) = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
+The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $\langle\tilde{Q}_+\rangle_{\natural} = \langle\tilde{Q}_-\rangle_{\natural} = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
 
 ### Corollaries
 
@@ -421,7 +421,7 @@ The **group of units** of $\mathbb{H}_{\mathbb{D}}$ is the set of invertible ele
 
 $$
 \mathbb{H}_{\mathbb{D}}^\times = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \langle\tilde{Q}\rangle_{\natural} \in \mathbb{D}^\times\}
-= \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \text{ and } N_{\mathbb{H}}(\tilde{Q}_-) \neq 0\}.
+= \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \langle\tilde{Q}_+\rangle_{\natural} \neq 0 \text{ and } \langle\tilde{Q}_-\rangle_{\natural} \neq 0\}.
 $$
 
 It is a group under multiplication, with identity $e_t$.
@@ -569,7 +569,7 @@ The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \til
 
 The four forms are the plain, the quaternionic, the Hermitian and the Krein, and the four norms are their values at equal arguments. The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu Q_\mu\bar Q_\mu$ is real of signature $(4,4)$, and the Krein norm $\langle\tilde Q\rangle_{\natural*} = Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ is real of the same signature; the plain norm $Q_t^2-\sum_k Q_k^2$ is split complex-valued. Only the quaternionic norm is multiplicative. None of the four defines a Euclidean norm; the Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
-The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$ is nonzero, equivalently if and only if both idempotent components are nonzero:
+The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -602,7 +602,7 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(4,4)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\bar Q_{2t} - \sum_k Q_{1k}\bar Q_{2k}$ | Krein form |
 | $\langle\tilde Q\rangle_{\natural*} = q_t^2 - q'^2_t - \sum_k(q_k^2 - q'^2_k)$ | Krein norm, signature $(4,4)$ |
-| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
+| $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
 | $\mathbb{H}_{\mathbb{D}}^\times$ | Group of units |

@@ -132,7 +132,7 @@ named as a gap and not proposed as a formula.
 
 ## Further Reading
 
-- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the parity-matched lattice and its two cosets.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the parity-matched lattice and its two cosets.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the kernel of the exponential and the eigenvalue formula.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite

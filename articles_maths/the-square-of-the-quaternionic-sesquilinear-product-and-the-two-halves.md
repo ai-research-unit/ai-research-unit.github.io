@@ -120,7 +120,7 @@ $$
 **Proposition.** For every biquaternion $\tilde Q$,
 
 $$
-\boxed{\; N\bigl(\tilde Q \star \tilde Q\bigr) = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2} \;};
+\boxed{\; \langle\tilde Q \star \tilde Q\rangle_{\natural} = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2} \;};
 $$
 
 in particular, if the square of $\tilde Q$ vanishes then $\langle\tilde Q\rangle_{\natural} = 0$.
@@ -128,7 +128,7 @@ in particular, if the square of $\tilde Q$ vanishes then $\langle\tilde Q\rangle
 **Proof.** The norm is multiplicative for the plain product, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and conjugates under the coefficientwise conjugation, $\langle\overline{\tilde Q_1}\rangle_{\natural} = \overline{\langle\tilde Q_1\rangle_{\natural}}$. Applied to $\overline{\tilde Q_2}\tilde Q_2$, whose ${}^{\natural}$-image is the square, and using the invariance of $\langle\cdot\rangle_{\natural}$ under ${}^{\natural}$,
 
 $$
-N\bigl(\tilde Q \star \tilde Q\bigr) = N\bigl(\overline{\tilde Q}\tilde Q\bigr) = \langle\overline{\tilde Q}\rangle_{\natural}\langle\tilde Q\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}\langle\tilde Q\rangle_{\natural} = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2} .
+\langle\tilde Q \star \tilde Q\rangle_{\natural} = \langle\overline{\tilde Q}\tilde Q\rangle_{\natural} = \langle\overline{\tilde Q}\rangle_{\natural}\langle\tilde Q\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}\langle\tilde Q\rangle_{\natural} = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2} .
 $$
 
 The last clause is the vanishing of the left-hand side.

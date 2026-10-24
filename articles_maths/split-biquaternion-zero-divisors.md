@@ -150,7 +150,7 @@ The analogy is exact:
 | Intersection | $\{0\}$ | $\{0\}$ |
 | Shape | X (two lines) | Two transverse four-spaces |
 
-In the split complex case the zero divisor set is exactly the **null cone** of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural}$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.
+In the split complex case the zero divisor set is exactly the **null cone** of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural}$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $\langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.
 
 ## Comparison with the Biquaternion Case
 
@@ -326,7 +326,7 @@ The condition is **linear** in the idempotent basis, and the zero divisor set is
 
 The criterion is not the vanishing of the split-biquaternion norm. The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is anisotropic, so it vanishes only at the origin and does not detect the zero divisors; the detecting quantity is the **reduced norm**
 $$
-\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
+\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
 $$
 a real quartic and the product of the two ordinary quaternion norms, whose nonzero zeros are exactly the zero divisors. The split-biquaternion norm, the reduced norm, the invertibility criterion, and the inverse formula are studied in *Split-Biquaternion Norm and Invertibility*.
 
@@ -343,8 +343,8 @@ The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreduci
 | $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
 | $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ | Idempotent decomposition |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm |
-| $N_{\mathbb{H}}(\tilde{Q}_\pm)$ | Ordinary quaternion norm of an idempotent component |
-| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
+| $\langle\tilde{Q}_\pm\rangle_{\natural}$ | Ordinary quaternion norm of an idempotent component |
+| $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
 | $Z_+ = \{\tilde{Q} : \tilde{Q}_+ = 0\}$ | Zero-divisor subspace with vanishing $+$ component |
 | $Z_- = \{\tilde{Q} : \tilde{Q}_- = 0\}$ | Zero-divisor subspace with vanishing $-$ component |
 | $\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}$ | Zero divisor set |

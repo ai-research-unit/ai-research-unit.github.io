@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes the eigenvalue decomposition and the eigenbasis of eight split-complex numbers, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections and the eigenbasis are those of *Eigenbasis of a Split-Complex Number*; no definition or proof is repeated.
+This article computes the eigenvalue decomposition and the eigenbasis of eight split-complex numbers, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections and the eigenbasis are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*; no definition or proof is repeated.
 
 Each case is read from the two real coordinates $q$ and $q'$ of $Q=q+jq'$. The eigenvalues, the eigenprojections, the eigenbasis, the matrix of left multiplication and its diagonal form are computed from them by the formulas of §*The Method*. The eigenbasis is checked by the two identities
 
@@ -818,7 +818,7 @@ and in particular $Q^2=2Q=2+2j$. There is no inverse. The two spinor spaces read
 
 ## Further Reading
 
-- [Eigenbasis of a Split-Complex Number](eigenbasis-of-a-split-complex-number.html), for the eigenvalue decomposition, the Peirce decomposition and the eigenbasis.
+- [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the eigenvalue decomposition, the Peirce decomposition and the eigenbasis.
 - [Eigenbasis of a Split-Complex Number in Matrix Elements Representations](eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html), for the matrix model, the spectral projectors and the change of basis.
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the same eight elements read through the polar word.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.

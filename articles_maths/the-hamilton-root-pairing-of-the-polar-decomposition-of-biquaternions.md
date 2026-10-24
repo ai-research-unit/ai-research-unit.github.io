@@ -17,7 +17,7 @@ $$
 \tilde{Q} = \Rho\,\exp(\vec U\Theta), \qquad \Rho = r\,\exp(i\alpha), \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
-This is the **Hamilton representation** of the biquaternion literature. The name records the axis: $\vec U$ is a root of $-e_t$, and $\vec\Xi=-i\vec U$ is the pure root of $+1$ that *Eigenbasis of a Biquaternion* attaches to it. The two halves of the article read the same word at these two roots. The basis in which that root diagonalises left multiplication — the Q-adapted Peirce basis, with its two nilpotents — carries the four-element eigenbasis and the two spinor spaces; §*The Eigenbasis and the Spinor Spaces* fixes the vocabulary used throughout.
+This is the **Hamilton representation** of the biquaternion literature. The name records the axis: $\vec U$ is a root of $-e_t$, and $\vec\Xi=-i\vec U$ is the pure root of $+1$ that *Eigenvalue Decomposition and Eigenbasis of a Biquaternion* attaches to it. The two halves of the article read the same word at these two roots. The basis in which that root diagonalises left multiplication — the Q-adapted Peirce basis, with its two nilpotents — carries the four-element eigenbasis and the two spinor spaces; §*The Eigenbasis and the Spinor Spaces* fixes the vocabulary used throughout.
 
 The pairing is **partial**: its second factor is a single exponential only where the axis $\vec U=\vec Q/B$ is defined, which requires the vector part to be non-null. It is partial in both the factorisation and the construction, unlike the quaternion pairing, which is partial in the construction only. There are two partial pairings: this one, and the quaternion pairing, in which the scale is grouped with the rotor; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*.
 
@@ -47,10 +47,10 @@ The article takes the following results as established and does not prove them a
 |---|---|---|
 | the four factors, their ranges and their order | *Modulus–Unit Polar Decomposition of Biquaternions*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of Biquaternions*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\Rho\exp(\vec U\Theta)$ and the uniqueness of the regrouping |
-| the eigenvalues, the axis, the pure root and the eigenprojections | *Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial* and §*The Eigenprojections* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec\Xi$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
+| the eigenvalues, the axis, the pure root and the eigenprojections | *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial* and §*The Eigenprojections* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec\Xi$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
 | the closed forms of the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Closed Form* and §*The Eigenvalue Formula* | the exponential $\exp(\tilde Q)$ and the logarithm of the second factor |
 | the roots of one and their idempotents | *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
-| the Q-adapted Peirce basis, its nilpotents and the spinor spaces | *Eigenbasis of a Biquaternion*, §*The Peirce Decomposition Relative to the Eigenprojection*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
+| the Q-adapted Peirce basis, its nilpotents and the spinor spaces | *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Peirce Decomposition Relative to the Eigenprojection*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
 | the hyperbolic form of a non-trivial root | *Square Roots of One and the Idempotents of the Biquaternion Algebra and the General Plain Sesqualgebra in Exponential Form*, §*The Algebra: the Non-Trivial Roots and the Hyperbolic Factor* and §*The Coordinate Form of the Families* | the two directions and the rapidity of §*The Two Pure Elements* |
 | the idempotent exponential form and the extraction $-i\tilde\Xi$ | the same article, §*The Idempotent Exponential Form of a Root* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
 | the Peirce decomposition | *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Decomposition* | the idempotents and the four corners |
@@ -82,7 +82,7 @@ $$
 
 Then $\tilde Q=\Rho(\cos\Theta+\vec U\sin\Theta)$.
 
-The axis and the eigenvalues are those of *Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\Rho\exp(\pm i\Theta)$ of the spectrum. The branch of $\Rho$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Eigenvalue Decomposition* of that article.
+The axis and the eigenvalues are those of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\Rho\exp(\pm i\Theta)$ of the spectrum. The branch of $\Rho$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Eigenvalue Decomposition* of that article.
 
 **The axis.** The normalisation $\vec U^2=-e_t$ is what $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ provides. The axis is not an arbitrary root of $-1$ but the one parallel to the vector part, and that parallelism is what makes the representation canonical. When the vector part is null, $B=0$ and the axis does not exist; that is the domain restriction below.
 
@@ -107,7 +107,7 @@ $$
 
 It is central, so it commutes with the second factor, and it carries the whole norm, $\langle\Rho\rangle_{\natural}=\Rho^{2}$. The principal branch of the square root is the one of the polar word, so the modulus is unique; its two constituents are the scale $r$ and the phase $\exp(i\alpha)$.
 
-The modulus is the eigenvalue data of *Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*: it is the common modulus of $\lambda_\pm=\Rho\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\Rho^{2}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
+The modulus is the eigenvalue data of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*: it is the common modulus of $\lambda_\pm=\Rho\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\Rho^{2}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
 
 | aspect | value |
 |---|---|
@@ -142,7 +142,7 @@ The factor is a single exponential on the whole domain, but its exponent is not 
 
 ## The Eigenbasis and the Spinor Spaces
 
-**The basis.** The Hamilton data are the eigenvalue data of *Eigenbasis of a Biquaternion*, read in the Q-adapted Peirce basis of §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* of that article. The pure root of $+1$ attached to the axis is $\vec\Xi=-i\vec U$, the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$, normalised by
+**The basis.** The Hamilton data are the eigenvalue data of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, read in the Q-adapted Peirce basis of §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* of that article. The pure root of $+1$ attached to the axis is $\vec\Xi=-i\vec U$, the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$, normalised by
 
 $$
 \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad \vec\Upsilon_\pm^2=0 .
@@ -168,7 +168,7 @@ S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+ ,\
 S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-
 $$
 
-are the two **spinor spaces**, and $\mathbb{B}=S_+\oplus S_-$ (*Eigenbasis of a Biquaternion*, §*The Spinor Spaces and their Coordinates*). Each carries both eigenvalues, with eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ on $S_+$ and $(\vec\Upsilon_-,\tilde\Pi_-)$ on $S_-$; the two eigenvalues are distinct there, so the eigenbasis of each space is unique up to a rescaling of each vector. A general element is not a spinor: it has one component in $S_+$ and one in $S_-$.
+are the two **spinor spaces**, and $\mathbb{B}=S_+\oplus S_-$ (*Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spinor Spaces and their Coordinates*). Each carries both eigenvalues, with eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ on $S_+$ and $(\vec\Upsilon_-,\tilde\Pi_-)$ on $S_-$; the two eigenvalues are distinct there, so the eigenbasis of each space is unique up to a rescaling of each vector. A general element is not a spinor: it has one component in $S_+$ and one in $S_-$.
 
 **The matrix model.** With the assignment
 
@@ -216,7 +216,7 @@ $$
 \left\{\tilde{Q} : \langle\tilde Q\rangle_{\natural}\neq0 \ \text{ and } \ \langle\vec Q,\vec Q\rangle_{\natural}\neq0\right\},
 $$
 
-which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the nilpotent regime $B=0$, $\vec Q\neq0$ of *Eigenbasis of a Biquaternion*, §*The Nilpotent Regime*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The Q-adapted basis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec\Xi=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
+which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the nilpotent regime $B=0$, $\vec Q\neq0$ of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Nilpotent Regime*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The Q-adapted basis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec\Xi=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
 
 ## The Three Pairings
 
@@ -260,7 +260,7 @@ The two partial domains are not nested, and the Cartan domain contains both; *Th
 
 ### What This Pairing Carries
 
-The Hamilton row is the only one whose modulus is central. Its modulus and angle are the eigenvalue data of *Eigenbasis of a Biquaternion*, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, read in the Q-adapted basis of §*The Eigenbasis and the Spinor Spaces*, and its second factor is the unit element $\tilde Q/\Rho$ itself. The pairing generalises the quaternion polar decomposition: when all four coefficients are real the boost is trivial and the word reduces to $\tilde Q=r\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ term by term.
+The Hamilton row is the only one whose modulus is central. Its modulus and angle are the eigenvalue data of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, read in the Q-adapted basis of §*The Eigenbasis and the Spinor Spaces*, and its second factor is the unit element $\tilde Q/\Rho$ itself. The pairing generalises the quaternion polar decomposition: when all four coefficients are real the boost is trivial and the word reduces to $\tilde Q=r\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ term by term.
 
 ## Behaviour Under the Three Conjugations
 
@@ -534,7 +534,7 @@ the complex number $\frac{\theta}{2}-i\frac{\psi}{2} = 1.080834538-0.378136610i$
 
 ### The Element with a Null Vector Part
 
-Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ but $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so $B=0$ and the Hamilton axis does not exist. The element lies in the nilpotent regime of *Eigenbasis of a Biquaternion*, §*The Nilpotent Regime*, where the vector part $N=\vec Q$ satisfies $N^2=0$: a single Jordan block, with no eigenvalue decomposition. The four-factor word exists, and with it the quaternion and Cartan pairings of the companion articles; only the Hamilton pairing is unavailable.
+Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ but $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so $B=0$ and the Hamilton axis does not exist. The element lies in the nilpotent regime of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Nilpotent Regime*, where the vector part $N=\vec Q$ satisfies $N^2=0$: a single Jordan block, with no eigenvalue decomposition. The four-factor word exists, and with it the quaternion and Cartan pairings of the companion articles; only the Hamilton pairing is unavailable.
 
 ### The Element with a Vanishing Real Part
 
@@ -548,7 +548,7 @@ The real quaternion part vanishes, $\tilde q_r = 0$, so the quaternion construct
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is scalar, the regime of *Eigenbasis of a Biquaternion*, §*The Scalar Regime*, in which the eigenprojections are not unique. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
+Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is scalar, the regime of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Scalar Regime*, in which the eigenprojections are not unique. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
 
 ### An Element at a Root of One
 
@@ -614,7 +614,7 @@ so that $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cos\Theta\,e_t+\sin\Theta\,
 | eigenbasis and spinors | in the Q-adapted basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the operator $L_{\tilde Q}$ is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$; the two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two columns of $\mathsf M_2^Q$ |
 | classical case | the polar decomposition of the ordinary quaternions |
 
-The Hamilton pairing groups the scale with the phase into the complex modulus $\Rho=r\exp(i\alpha)$ and the boost with the rotor into the unit factor $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. Its modulus is the eigenvalue data of *Eigenbasis of a Biquaternion*, and its second factor is the Lorentz transformation of the word. It is the only pairing whose modulus is central, and it is partial in both senses: the axis $\vec U=\vec Q/B$ needs the vector part non-null, although the four-factor grouping exists on the whole complement of the null cone.
+The Hamilton pairing groups the scale with the phase into the complex modulus $\Rho=r\exp(i\alpha)$ and the boost with the rotor into the unit factor $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. Its modulus is the eigenvalue data of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, and its second factor is the Lorentz transformation of the word. It is the only pairing whose modulus is central, and it is partial in both senses: the axis $\vec U=\vec Q/B$ needs the vector part non-null, although the four-factor grouping exists on the whole complement of the null cone.
 
 The second half reads the same word at a root of one, $\tilde\Xi^2=e_t$. Apart from the central pair $\pm e_t$, the non-Hermitian roots are generated by two orthogonal unit pure quaternions and one rapidity, and the Hermitian roots $i\vec u_{\mathrm n}$ are the zero-rapidity case; every root has both a two-factor form and the single exponential $\tilde\Xi=\exp(i\pi\tilde\Pi_-)$ of its halving idempotent.
 
@@ -671,7 +671,7 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\psi}{2}\vec u_{
 
 ## Further Reading
 
-- [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html), for the eigenvalues $\lambda_\pm=Q_t\pm iB$, the pure unit element $\vec U=\vec Q/B$, the eigenprojections $\tilde\Pi_\pm$, the Q-adapted Peirce basis with its nilpotents, and the two spinor spaces, on which the Hamilton parameters and the diagonal action are read.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the eigenvalues $\lambda_\pm=Q_t\pm iB$, the pure unit element $\vec U=\vec Q/B$, the eigenprojections $\tilde\Pi_\pm$, the Q-adapted Peirce basis with its nilpotents, and the two spinor spaces, on which the Hamilton parameters and the diagonal action are read.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the unit factor $\tilde U=\tilde Q/(r\exp(i\alpha))$, its eigenvalues $\exp(\pm i\Theta)$ and the eigenprojections it shares with $\tilde Q$.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the powers, which fix the Hamilton parameters and carry their multivaluedness.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four exponentials, the existence and uniqueness of the word, and the logarithms that fix the branches.

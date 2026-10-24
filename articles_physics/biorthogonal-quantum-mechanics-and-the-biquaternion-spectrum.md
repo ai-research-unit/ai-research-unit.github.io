@@ -6,18 +6,18 @@ A non-normal element still has a spectral decomposition. What it loses is the or
 
 The standard language for this situation is **biorthogonal quantum mechanics**. The right eigenvectors of the element and the left eigenvectors of the same element form two bases that are dual to each other, not two orthonormal bases. The spectral projectors are built from one right vector and one left vector, and the probability rule uses the left pairing. When the element is normal, the two bases coincide, the projectors become Hermitian, and the rule reduces to the Born rule.
 
-This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of *Eigenbasis of a Biquaternion*. The left and right eigenvalue problem is that of *Biquaternion Spectral Theory*. The article owns the reading and its limits; it proves no spectral theorem.
+This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*. The left and right eigenvalue problem is that of *Biquaternion Spectral Theory*. The article owns the reading and its limits; it proves no spectral theorem.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The spectrum, the eigenprojections and the two-term writing | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
-| The normality criterion and the Hermitian case | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
+| The spectrum, the eigenprojections and the two-term writing | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
+| The normality criterion and the Hermitian case | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
 | Left and right eigenvalues, and the central-spectrum convention | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
 | The spectral theorem for a normal element | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
 | The matrix model and the determinant | [The Element and Operator Representations](the-element-and-operator-representations.html) |
-| The Jordan and nilpotent regimes | [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html) |
+| The Jordan and nilpotent regimes | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
 
 ## The Two Eigenbases
 
@@ -206,7 +206,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 
 ## Further Reading
 
-- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections and the normality criterion.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections and the normality criterion.
 - [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the left and right eigenvalue problems and the spectral theorem.
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the matrix model used throughout.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the degenerate limit of the two bases.

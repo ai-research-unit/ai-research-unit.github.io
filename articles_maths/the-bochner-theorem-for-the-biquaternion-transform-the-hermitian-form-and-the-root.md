@@ -162,7 +162,7 @@ For $\tilde\Xi=\mu$ a unit real root the kernel is a rotor, and $\chi_\omega^{*}
 *Biquaternion Continuous Harmonic Analysis* computes the quadratic form of the transform with the **natural** conjugation between the coefficients and obtains the integral of the norm,
 
 $$
-\sum_{k,l}\overline{A_k}A_l\,G(\omega_k-\omega_l)=\int N\bigl(Z\bigr)\,d\mu .
+\sum_{k,l}\overline{A_k}A_l\,G(\omega_k-\omega_l)=\int \langle Z\rangle_{\natural}\,d\mu .
 $$
 
 At a single coefficient $A_1=i$ this reads $\overline{i}\,i\,G(0)=i^{2}\mu(\mathbb{R}^n)=-\mu(\mathbb{R}^n)e_t$, negative for every non-zero measure, **because $\langle i\rangle_{\natural}=i\,i^{\natural}=-1$**. Two facts about this computation must be stated together. First, it is a statement about the bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ and not about the sesquilinear form $\langle\cdot,\cdot\rangle_{*}$: the conjugation written between the coefficients is ${}^{\natural}$, which is the conjugation of the norm, and the coefficient slot of the positive-definite form carries ${}^{*}$. Second, it is **independent of the root** of the transform, because the element tested, $i$, is a coefficient and not a kernel value: the same $\overline{i}\,i=-1$ is produced whatever $\tilde\Xi$ is. A failure that does not depend on the root cannot be a failure of the root criterion of the positivity, and the corpus's own sentence that the positivity "is not available" is the symptom of exactly this: the statement is about the norm, and the norm is negative on the centre for every root.

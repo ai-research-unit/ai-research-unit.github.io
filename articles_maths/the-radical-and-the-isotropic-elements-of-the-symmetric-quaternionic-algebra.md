@@ -151,7 +151,7 @@ quaternionic bracket with the product,
 $$
 \boxed{\;
 T(\tilde Q_1,\tilde Q_2,\tilde Q_3) = [\tilde Q_1,\tilde Q_3]_{\natural}\star\tilde Q_2
-= N\bigl([\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\bigr)e_t
+= \langle[\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\rangle_{\natural}e_t
 \;},
 $$
 

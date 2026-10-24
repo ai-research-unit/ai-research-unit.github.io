@@ -223,13 +223,13 @@ The split complex conjugation is the map that swaps the two components. This is 
 **Split-Biquaternion norm.** The split-biquaternion norm is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_1 + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_2,
 $$
 
-where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm, which is a non-negative real number. In the standard basis, this is
+where $\langle\tilde{Q}_\pm\rangle_{\natural} = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm, which is a non-negative real number. In the standard basis, this is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \frac{N_{\mathbb{H}}(\tilde{Q}_+) + N_{\mathbb{H}}(\tilde{Q}_-)}{2} + j \frac{N_{\mathbb{H}}(\tilde{Q}_+) - N_{\mathbb{H}}(\tilde{Q}_-)}{2}.
+\langle\tilde{Q}\rangle_{\natural} = \frac{\langle\tilde{Q}_+\rangle_{\natural} + \langle\tilde{Q}_-\rangle_{\natural}}{2} + j \frac{\langle\tilde{Q}_+\rangle_{\natural} - \langle\tilde{Q}_-\rangle_{\natural}}{2}.
 $$
 
 **Invertibility.** The split biquaternion $\tilde{Q}$ is invertible if and only if both idempotent components are nonzero:

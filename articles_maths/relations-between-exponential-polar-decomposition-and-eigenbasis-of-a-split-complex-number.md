@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A split-complex number carries two decompositions of the same element. The **eigenvalue decomposition** of *Eigenbasis of a Split-Complex Number* writes $Q=q+jq'$ as
+A split-complex number carries two decompositions of the same element. The **eigenvalue decomposition** of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* writes $Q=q+jq'$ as
 
 $$
 Q=\lambda_+\Pi_++\lambda_-\Pi_-,
@@ -79,7 +79,7 @@ Q=\lambda_+\Pi_++\lambda_-\Pi_-,
 \Pi_\pm=\frac{1\pm j}{2},
 $$
 
-with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statements of *Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*. In the scalar case $q'=0$, the eigenvalue is repeated, $\lambda_+=\lambda_-=q$, and the decomposition is the one-term writing $Q=q\cdot1$.
+with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statements of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*. In the scalar case $q'=0$, the eigenvalue is repeated, $\lambda_+=\lambda_-=q$, and the decomposition is the one-term writing $Q=q\cdot1$.
 
 | Spectral item | Value |
 |---|---|
@@ -536,7 +536,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the eight cases and the reconstruction tables.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
-- [Eigenbasis of a Split-Complex Number](eigenbasis-of-a-split-complex-number.html), for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.
+- [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the branches.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the decomposition, the components, existence and uniqueness, and the matrix picture.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the modulus and the unit factor.

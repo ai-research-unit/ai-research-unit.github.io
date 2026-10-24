@@ -22,9 +22,9 @@ that is, scalar multiples of unit quaternions by phases.
 
 **Proof.** Since $\mathsf{M}_2$ is an algebra isomorphism and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Conjugations in Matrix Form*), the equation $\tilde{U}^{*}\tilde{U}=e_t$ is equivalent to $\mathsf{M}_2(\tilde{U})^{\dagger}\mathsf{M}_2(\tilde{U})=I$, which defines $\mathrm{U}(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{U})$ makes $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde{U},\tilde{U}\rangle_{\natural}$ then $\tilde{Q}_3=\zeta^{-1}\tilde{U}$ has $\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=1$; a norm-one element is a unit quaternion (*Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*), and $\tilde{U}=\zeta\tilde{Q}_3$.
 
-**Corollary (the determinant and the norm coincide).** On $\mathrm{U}(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $N:\mathrm{U}(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $\langle\cdot\rangle_{\natural}$ realises an isomorphism $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$.
+**Corollary (the determinant and the norm coincide).** On $\mathrm{U}(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $\langle\cdot\rangle_{\natural}:\mathrm{U}(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $\langle\cdot\rangle_{\natural}$ realises an isomorphism $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$.
 
-**Proof.** $\langle\tilde{U}\tilde{Q}_4,\tilde{U}\tilde{Q}_4\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_4,\tilde{Q}_4\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_t,e_t\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_t$ is unitary of norm $A$. The kernel is $\{N=1\}\cap \mathrm{U}(\mathbb{B})$, which is the unit quaternions.
+**Proof.** $\langle\tilde{U}\tilde{Q}_4,\tilde{U}\tilde{Q}_4\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_4,\tilde{Q}_4\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_t,e_t\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_t$ is unitary of norm $A$. The kernel is $\{\langle\tilde U\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B})$, which is the unit quaternions.
 
 ## The Structure of the Unitary Group
 
@@ -74,12 +74,12 @@ Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^
 
 ## The Retraction of the Norm-One Group onto $S^{3}$
 
-**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{N=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_z\cong\mathbb{Z}$ and vanishing $\pi_x,\pi_y$.
+**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{\langle\tilde Q\rangle_{\natural}=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_z\cong\mathbb{Z}$ and vanishing $\pi_x,\pi_y$.
 
 **Proof.** Let $\tilde{Q}_3\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$. Then $1=\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
 
 $$
-\tilde{Q}_{2,t}=\frac{(1-t)\tilde{Q}_2+te_t}{N\bigl((1-t)\tilde{Q}_2+te_t\bigr)^{1/2}}
+\tilde{Q}_{2,t}=\frac{(1-t)\tilde{Q}_2+te_t}{\langle(1-t)\tilde{Q}_2+te_t\rangle_{\natural}^{1/2}}
 $$
 
 is Hermitian positive definite of norm one (the denominator is a positive real), the map $\tilde{H}(t,\tilde{Q}_3)=\tilde{U}\tilde{Q}_{2,t}$ is continuous and lands in $\mathbb{B}^{\times}_1$, and $\tilde{H}(0,\tilde{Q}_3)=\tilde{Q}_3$, $\tilde{H}(1,\tilde{Q}_3)=\tilde{U}\in S^{3}$, $\tilde{H}(t,\tilde{U})=\tilde{U}$.
@@ -105,7 +105,7 @@ and the universal covers are $(\mathbb{B}^\times)^{\mathrm{cov}}\cong \mathrm{U}
 
 **Generators.** $\pi_z(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the image of the class of $\mathrm{id}_{S^{3}}$ under $S^{3}\hookrightarrow \mathrm{U}(\mathbb{B})$, which induces an isomorphism on $\pi_z$; $\pi_x(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the central loop $\gamma(t)=\exp(2\pi it)e_t$, and $N_*:\pi_x(\mathrm{U}(\mathbb{B}))\to\pi_x(S^{1})$ is an isomorphism, so a generator is a loop along which the biquaternion norm winds once.
 
-**Proof.** The inclusions $S^{3}\subset \mathrm{U}(\mathbb{B})\subset\mathbb{B}^{\times}$ and the retractions give the first statement; the second is the identification of $\pi_x$ with the fundamental group of the centre circle via the bundle $S^{1}\to \mathrm{U}(\mathbb{B})\to S^{3}$... precisely, $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}$ and the projection to the first factor realises $N$.
+**Proof.** The inclusions $S^{3}\subset \mathrm{U}(\mathbb{B})\subset\mathbb{B}^{\times}$ and the retractions give the first statement; the second is the identification of $\pi_x$ with the fundamental group of the centre circle via the bundle $S^{1}\to \mathrm{U}(\mathbb{B})\to S^{3}$... precisely, $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}$ and the projection to the first factor realises $\langle\cdot\rangle_{\natural}$.
 
 **Corollary (Hurewicz).** $H_1(\mathbb{B}^{\times})\cong H_1(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$, $H_1(S^{3})=H_1(\mathbb{B}^{\times}_1)=0$, and $\pi_n(\mathrm{U}(\mathbb{B}))\cong\pi_n(S^{3})$ for $n\geq2$.
 
@@ -135,7 +135,7 @@ is a surjective homomorphism with kernel $\mathrm{U}(1)e_t$, so that $\mathrm{U}
 
 **A null scalar multiple.** $\tilde{Q}=A(\vec e_x+i\vec e_y)$ with $A\neq0$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|A|$.
 
-**A negative determinant.** $\mathrm{U}(2)$ has determinant of modulus one; the slice $SU(2)=\{N=1\}\cap \mathrm{U}(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $\langle\cdot\rangle_{\natural}$, and the double cover of $SO(3)$.
+**A negative determinant.** $\mathrm{U}(2)$ has determinant of modulus one; the slice $SU(2)=\{\langle\tilde U\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $\langle\cdot\rangle_{\natural}$, and the double cover of $SO(3)$.
 
 ## Summary
 
@@ -152,7 +152,7 @@ The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e
 | $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$ | Polar decomposition; retraction onto $\mathrm{U}(\mathbb{B})$ |
 | $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3}$ | Homotopy type of the unit group |
 | $\mathbb{B}^{\times}_1\simeq S^{3}$ | Homotopy type of the norm-one group |
-| $N:\mathrm{U}(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$ |
+| $\langle\cdot\rangle_{\natural}:\mathrm{U}(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$ |
 | $\Theta_{\tilde{U}}:\mathbb{M}_{+}\to\mathbb{M}_{+}$, kernel $\mathrm{U}(1)$ | $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$ |
 | $(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
 

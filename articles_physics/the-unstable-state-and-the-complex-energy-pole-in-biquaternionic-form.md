@@ -160,7 +160,7 @@ The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, an
 
 The centrality is not a coincidence of the models treated below. It is a consequence of taking the trace over the module to reach the scalar Green's function: the trace of a module operator is central, and any quantity read from the trace is central with it.
 
-**The pole is not an exceptional point.** A resonance pole is a complex zero of a scalar denominator, not a coalescence of two eigenvalues of one element. An exceptional point is the spectral event in which two eigenvalues meet and the element becomes a Jordan block, with a single eigenprojection and a nilpotent part (*Eigenbasis of a Biquaternion*, §*The Nilpotent Regime*). The spectral object here is a pair of scalar poles, one on each sheet, and it is not a Jordan block. The two notions coincide only if a model is tuned to a degeneracy, and no such tuning is made here. The exceptional-point side, with its coalescence, its single eigenprojection and its nilpotent part, is [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html).
+**The pole is not an exceptional point.** A resonance pole is a complex zero of a scalar denominator, not a coalescence of two eigenvalues of one element. An exceptional point is the spectral event in which two eigenvalues meet and the element becomes a Jordan block, with a single eigenprojection and a nilpotent part (*Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Nilpotent Regime*). The spectral object here is a pair of scalar poles, one on each sheet, and it is not a Jordan block. The two notions coincide only if a model is tuned to a degeneracy, and no such tuning is made here. The exceptional-point side, with its coalescence, its single eigenprojection and its nilpotent part, is [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html).
 
 ## The Complex Angle of the Resonance
 
@@ -374,7 +374,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 
 ## Further Reading
 
-- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html), for the nilpotent regime and the spectral contrast with a Jordan block.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the nilpotent regime and the spectral contrast with a Jordan block.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the word and the Cartan amplitude used in this section.
 - [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.
 - [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the compact and non-compact regimes and the complex angle.

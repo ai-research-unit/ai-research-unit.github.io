@@ -11,7 +11,7 @@ $$
 Q_+=Q_\blacktriangle+Q_\blacktriangledown,\qquad
 Q_-=Q_\blacktriangle-Q_\blacktriangledown.
 $$
-The eigenvalue decomposition, the eigenprojections and the Peirce decomposition are the subject of *Eigenbasis of a Reduced Biquaternion*. This article reads the same objects in the matrix element representations of the algebra.
+The eigenvalue decomposition, the eigenprojections and the Peirce decomposition are the subject of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*. This article reads the same objects in the matrix element representations of the algebra.
 
 The algebra $\mathbb{B}_{\mathrm r}$ is two-dimensional over $\mathbb{C}$, commutative and associative, with $j^2=1$ and $i$ central. Its **$2\times2$ matrix element representation** is the left regular representation in the complex basis $1,j$,
 $$
@@ -37,7 +37,7 @@ The article is organised around three questions. **Which matrices are the eigenp
 
 **Conventions.** $\breve Q=Q_\blacktriangle+jQ_\blacktriangledown$, $\breve Q_2=Q_{2\blacktriangle}+jQ_{2\blacktriangledown}$, $Q_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$, and a general element in the eigenbasis is $\breve X=\xi_+\Pi_++\xi_-\Pi_-$ with $\xi_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$. The matrix $\varphi$ is the regular matrix in the basis $1,j$; the matrix $\varphi^{\Pi}$ is the matrix in the eigenbasis $(\Pi_+,\Pi_-)$. The change matrix is $\mathsf{C}$, with columns the coordinates of $\Pi_+,\Pi_-$ in the basis $1,j$. The realification is written $L_{\breve Q}$ in the basis $1,i,j,ij$. The two representation articles cited above own the assignments and the invariants; this article owns their reading in the eigenbasis and the changes of basis.
 
-**Boundaries.** The spectrum, the eigenprojections and the eigenvalue decomposition are *Eigenbasis of a Reduced Biquaternion*. The $2\times2$ assignment, its multiplicativity and its invariants are *Introduction to the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; the algebra in that model is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; the four-vector form is *The Four-Vector Element Representation of the Reduced Biquaternions*. The change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*; the realification is *The Realification and the Effect of the Change of Scalars*.
+**Boundaries.** The spectrum, the eigenprojections and the eigenvalue decomposition are *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*. The $2\times2$ assignment, its multiplicativity and its invariants are *Introduction to the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; the algebra in that model is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; the four-vector form is *The Four-Vector Element Representation of the Reduced Biquaternions*. The change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*; the realification is *The Realification and the Effect of the Change of Scalars*.
 
 ## The $2\times2$ Matrix Element Representation
 

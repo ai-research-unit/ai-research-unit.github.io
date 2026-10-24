@@ -159,7 +159,7 @@ which is the inverse of the algebra; the invertibility criterion is $\langle\til
 **Theorem (the quadratic representation).** For $U_{\tilde Q_1}\tilde Q_2=2(\tilde Q_1\bullet\tilde Q_2)\bullet\tilde Q_1-\tilde Q_1^{\bullet2}\bullet\tilde Q_2$,
 
 $$
-N\bigl(U_{\tilde Q_1}\tilde Q_2\bigr)=\langle\tilde Q_1\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural},
+\langle U_{\tilde Q_1}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural},
 $$
 
 while $\langle\cdot\rangle_{\natural}$ itself is not multiplicative, $\langle\tilde Q_1\bullet\tilde Q_2\rangle_{\natural}\neq \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$ in general.

@@ -48,7 +48,7 @@ $$
 $$
 
 of complex dimension $3$ for $\tilde Q_5\ne0$; it is the hyperplane of the elements paired to zero with
-$\tilde Q_5$ by $N$, and it contains
+$\tilde Q_5$ by the form $\langle\cdot,\cdot\rangle_{\natural}$, and it contains
 $\tilde Q_5$ exactly when $\tilde Q_5$ is isotropic.
 
 *Proof.* The columns span $\mathbb{C}e_t$ if some $Q_{5\mu}\ne0$, and the image is central; the kernel is the
@@ -109,7 +109,7 @@ part of a multiplier.
 determined by
 
 $$
-N\bigl(T\tilde Q_2,\tilde Q_3\bigr) = N\bigl(\tilde Q_2,T^{\dagger}\tilde Q_3\bigr) \qquad
+\langle T\tilde Q_2,\tilde Q_3\rangle_{\natural} = \langle\tilde Q_2,T^{\dagger}\tilde Q_3\rangle_{\natural} \qquad
 \text{for all } \tilde Q_2,\tilde Q_3\in\mathbb{B},
 $$
 
@@ -125,7 +125,7 @@ L^{\star}_{\tilde Q_5}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \til
 \;}.
 $$
 
-*Proof.* $\langle L^{\star}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\rangle_{\natural}=N\bigl(\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu Q_{5\mu} Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu Q_{5\mu} Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} Q_{5\mu} Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
+*Proof.* $\langle L^{\star}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\rangle_{\natural}=\langle\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\rangle_{\natural}=\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu Q_{5\mu} Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu Q_{5\mu} Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} Q_{5\mu} Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
 self-adjointness, compare the adjoint with $L^{\star}_{\tilde Q_5}\tilde Q_3=\langle\tilde Q_5,\tilde Q_3\rangle_{\natural}e_t$: the identity
 $\sum_\mu Q_{5\mu} Q_{3t}e_\mu=\bigl(\sum_\mu Q_{5\mu} Q_{3\mu}\bigr)e_t$ for all $\tilde Q_3$ forces $Q_{5\mu}=0$ for
 $\mu\in\{x,y,z\}$.
@@ -267,7 +267,7 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 | $\bigl[L^{\star}_{\tilde Q_5}\bigr]_{t\mu}=Q_{5\mu}$ | its matrix in the basis, a single nonzero row |
 | $\operatorname{Tr}(L^{\star}_{\tilde Q_5})=Q_{5t}$, $\det(L^{\star}_{\tilde Q_5})=0$, $\operatorname{rank}=1$ | its invariants for $\tilde Q_5\ne0$ |
 | $L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1}=Q_{5t}L^{\star}_{\tilde Q_1}$ | the composition law |
-| $\bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}$ | the adjoint with respect to $N$ |
+| $\bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}$ | the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $G_N=\{T:T^{\mathsf T}T=I_4\}$ | the group of linear maps preserving the form, complex dimension $6$ |
 | $G_{\star}=\{T:T^{\mathsf T}T=I_4,\ Te_t=e_t\}$ | the group of transformations preserving the product, complex dimension $3$ |
 | $G^{\mathrm{str}}_{\star}$ | the structure group, transporting the product to a scalar multiple |

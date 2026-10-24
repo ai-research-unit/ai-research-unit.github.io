@@ -1,4 +1,4 @@
-# __Eigenbasis of a Biquaternion__
+# __Eigenvalue Decomposition and Eigenbasis of a Biquaternion__
 
 ## Introduction
 
@@ -14,9 +14,9 @@ $$
 \vec\Xi=-\frac{i\vec Q}{\sqrt{Q_x^2+Q_y^2+Q_z^2}}.
 $$
 
-Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\tilde\Pi_\pm$ are the eigenprojections. The eigenvalues are distinct in this regime. The article is the noncommutative counterpart of *Eigenbasis of a Split-Complex Number* and *Eigenbasis of a Reduced Biquaternion*. The general definition and the existence theorem are those of *The Eigenvalue Decomposition of an Element*; the biquaternion content is that, in the regime of distinct eigenvalues, the pair is the pair of idempotents of a pure root of $+1$, and the decomposition is the Peirce decomposition attached to that root in *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
+Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\tilde\Pi_\pm$ are the eigenprojections. The eigenvalues are distinct in this regime. The article is the noncommutative counterpart of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* and *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*. The general definition and the existence theorem are those of *The Eigenvalue Decomposition of an Element*; the biquaternion content is that, in the regime of distinct eigenvalues, the pair is the pair of idempotents of a pure root of $+1$, and the decomposition is the Peirce decomposition attached to that root in *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
 
-**The results.** The spectrum of $\tilde Q=Q_te_t+\vec Q$ is $\{Q_t+i\sqrt{Q_x^2+Q_y^2+Q_z^2},Q_t-i\sqrt{Q_x^2+Q_y^2+Q_z^2}\}$, and in the distinct case $Q_x^2+Q_y^2+Q_z^2\neq0$ the eigenprojections are the two idempotents of the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$. They are noncentral and vary with $\tilde Q$, the eigenvalue decomposition is the Peirce decomposition relative to that root read on the element, and the diagonal part is the commutative plane $\mathbb{C}[\tilde Q]$. The polynomial calculus is the calculus on $\mathbb{C}[\tilde Q]$, the unit group is the invertible group with a surjective but non-injective eigenvalue map, and the nilpotent regime is the one case with no eigenvalue decomposition. The article also constructs the Q-adapted Peirce basis, the two nilpotents of the mixed corners, and the eigenbasis of left multiplication; it separates the eigenspaces of left multiplication, which are the two right ideals, from the left ideals, which are the spinor spaces. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the spinor spaces; each is a complex plane and a spinor is a pair of complex coordinates.
+**The results.** The spectrum of $\tilde Q=Q_te_t+\vec Q$ is $\{Q_t+i\sqrt{Q_x^2+Q_y^2+Q_z^2},Q_t-i\sqrt{Q_x^2+Q_y^2+Q_z^2}\}$, and in the distinct case $Q_x^2+Q_y^2+Q_z^2\neq0$ the eigenprojections are the two idempotents of the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$. They are noncentral and vary with $\tilde Q$, the eigenvalue decomposition is the Peirce decomposition relative to that root read on the element, and the diagonal part is the commutative plane $\mathbb{C}[\tilde Q]$. The polynomial calculus is the calculus on $\mathbb{C}[\tilde Q]$, the unit group is the invertible group with a surjective but non-injective eigenvalue map, and the Jordan and nilpotent regimes are the cases with no eigenvalue decomposition. The article also constructs the Q-adapted Peirce basis, the two nilpotents of the mixed corners, and the eigenbasis of left multiplication; it separates the eigenspaces of left multiplication, which are the two right ideals, from the left ideals, which are the spinor spaces. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the spinor spaces; each is a complex plane and a spinor is a pair of complex coordinates.
 
 | Question | Answer |
 |---|---|
@@ -29,18 +29,19 @@ Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\ti
 | Eigenvalue decomposition | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ |
 | Peirce decomposition | $\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{C}\tilde\Pi_-$, with two square-zero mixed lines |
 | Eigenbasis of $L_{\tilde Q}$ | $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; diagonal values $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ |
+| Matrix model | $M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$; the two columns are $S_+,S_-$ |
 | Spinor spaces | $S_\pm=\mathbb{B}\tilde\Pi_\pm\cong\mathbb{C}^2$; two complex spinor coordinates per chirality |
 | Unit group | $\mathbb{B}^\times$; the eigenvalue map is surjective, not injective, not a homomorphism |
 
 **Conventions.** The notation is fixed in *Conventions in Mathematics*: the base is $e_t,\vec e_x,\vec e_y,\vec e_z$, a general element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients, an idempotent is $\tilde\Pi$, a root of $+1$ is $\tilde\Xi$ and a pure root is $\vec\Xi$, and a pure nilpotent is $\vec\Upsilon$. Put $B=\sqrt{Q_x^2+Q_y^2+Q_z^2}$. In the distinct case the Q-adapted basis is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, the general element in it is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, and the two spinor spaces are $S_\pm=\mathbb{B}\tilde\Pi_\pm$, with coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ on $S_+$ and $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ on $S_-$. The characteristic polynomial, the spectrum and the eigenvalues $\lambda_\pm=Q_t\pm iB$ are those of *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*; the root of $+1$, the halving map and the primitive idempotents are those of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Idempotents*; the four Peirce corners are those of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Decomposition*; the centraliser and the diagonal part are those of *The Centraliser and the Diagonal Peirce Part*; the off-diagonal components are those of *Off-Diagonal Peirce Components and Noncentral Idempotents*; the reduced norm and the invertibility criterion are those of *Introduction to the Biquaternion Algebra*, §*The Reduced Norm and Invertibility*; the eigenvalue formula and the parity-matched lattice are developed in §*The Algebraic Fibre of the Decomposition* and used in *Biquaternion Elementary Functions*, §*The Eigenvalue Formula*.
 
-**Boundaries.** The split-complex and reduced biquaternion cases are those of *Eigenbasis of a Split-Complex Number* and *Eigenbasis of a Reduced Biquaternion*; the quaternion case, with its left and right eigenvalues, is the subject of *Quaternion Spectral Theory*; the exponential and the logarithm built on the decomposition are those of *Biquaternion Elementary Functions*; and the spectral theorem in its general form is that of *Biquaternion Spectral Theory*. The Q-adapted construction, the nilpotents and the spinor spaces are developed here; the standard Peirce decomposition is that of *Ideals and Peirce Decomposition of the Biquaternion Algebra*. The article cites these and does not restate them. The other products of the biquaternion space carry nilpotents and idempotents relative to the product, and are outside its scope.
+**Boundaries.** The split-complex and reduced biquaternion cases are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* and *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*; the quaternion case, with its left and right eigenvalues, is the subject of *Quaternion Spectral Theory*; the exponential and the logarithm built on the decomposition are those of *Biquaternion Elementary Functions*; and the spectral theorem in its general form is that of *Biquaternion Spectral Theory*. The Q-adapted construction, the nilpotents and the spinor spaces are developed here; the standard Peirce decomposition is that of *Ideals and Peirce Decomposition of the Biquaternion Algebra*. The article cites these and does not restate them. The other products of the biquaternion space carry nilpotents and idempotents relative to the product, and are outside its scope.
 
 ## The Spectrum and the Characteristic Polynomial
 
 **Definition.** Let $\tilde Q\in\mathbb{B}$. A complex scalar $\mu$ is an **eigenvalue** of $\tilde Q$ if $\tilde Q-\mu e_t$ is not a unit in $\mathbb{B}$; the set of eigenvalues is the **spectrum** $\sigma(\tilde Q)$. This is the definition of *The Eigenvalue Decomposition of an Element*, §*The Eigenvalues of an Element*.
 
-**Notation.** The two eigenvalues are written $\lambda_\pm=Q_t\pm i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ when their values are exhibited, the radical being one of the two square roots. The test scalar of the definition is $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The pair is the analogue of $\lambda_\pm=q\pm q'$ of *Eigenbasis of a Split-Complex Number* and of $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ of *Eigenbasis of a Reduced Biquaternion*.
+**Notation.** The two eigenvalues are written $\lambda_\pm=Q_t\pm i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ when their values are exhibited, the radical being one of the two square roots. The test scalar of the definition is $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The pair is the analogue of $\lambda_\pm=q\pm q'$ of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* and of $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*.
 
 **The pure root of the vector part.** The square of the vector part is central,
 $$
@@ -135,7 +136,7 @@ $$
 $$
 Hence $\tilde\Pi_\pm$ are polynomials in $\tilde Q$, and in particular commute with $\tilde Q$.
 
-**Dependence on the element.** The eigenprojections $\tilde\Pi_\pm$ vary with $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and the root is recovered from them as $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. This is the structural difference from the split-complex and reduced biquaternion cases, where the eigenprojections are the fixed central idempotents $\Pi_\pm$ (*Eigenbasis of a Split-Complex Number*, §*The Eigenprojections*; *Eigenbasis of a Reduced Biquaternion*, §*The Eigenprojections*). Here the dependence on the element lies in both the eigenvalues and the idempotents.
+**Dependence on the element.** The eigenprojections $\tilde\Pi_\pm$ vary with $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and the root is recovered from them as $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. This is the structural difference from the split-complex and reduced biquaternion cases, where the eigenprojections are the fixed central idempotents $\Pi_\pm$ (*Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*The Eigenprojections*; *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Eigenprojections*). Here the dependence on the element lies in both the eigenvalues and the idempotents.
 
 The pair is collected in the table.
 
@@ -144,7 +145,7 @@ The pair is collected in the table.
 | $\tilde\Pi_+$ | $\tfrac12(e_t+\vec\Xi)$ | $\lambda_+=Q_t+i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ | $\tilde\Pi_+^2=\tilde\Pi_+$, noncentral, primitive |
 | $\tilde\Pi_-$ | $\tfrac12(e_t-\vec\Xi)$ | $\lambda_-=Q_t-i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ | $\tilde\Pi_-^2=\tilde\Pi_-$, noncentral, primitive |
 
-The two idempotents are complementary and orthogonal, $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$. The Q-adapted basis that completes this pair, the construction of the nilpotents $\vec\Upsilon_\pm$ from the two mixed corners, and the eigenbasis of $L_{\tilde Q}$ are given in §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*.
+The two idempotents are complementary and orthogonal, $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$. The construction of the nilpotents $\vec\Upsilon_\pm$ from the two mixed corners is given in §*The Peirce Corners and the Nilpotents*; the Q-adapted basis that completes this pair and the eigenbasis of $L_{\tilde Q}$ are given in §*The Q-Adapted Peirce Basis* and §*The Eigenbasis of Left Multiplication*.
 
 ## The Eigenvalue Decomposition
 
@@ -220,11 +221,11 @@ $$
 $$
 with zero mixed components. The eigenvalue decomposition is therefore the Peirce decomposition read on the element: the element lies in the diagonal part, and its two diagonal Peirce coordinates are its eigenvalues $Q_t\pm i\sqrt{Q_x^2+Q_y^2+Q_z^2}$. The mixed corners are the directions that fail to commute with $\tilde Q$.
 
-The two signs of the pair are the two eigenvalues of multiplication by the root: an element of $\mathbb{B}_{\sigma\tau}$ is multiplied by $\sigma$ on the left and by $\tau$ on the right by $\vec\Xi$ (§*The Biquaternion Case*). The diagonal corners are the components on which the two signs agree; $\tilde Q$ acts on them by $\lambda_+$ and $\lambda_-$ respectively. The construction of the mixed generators $\vec\Upsilon_\pm$ and the eigenbasis of left multiplication are the subject of the next section.
+The two signs of the pair are the two eigenvalues of multiplication by the root: an element of $\mathbb{B}_{\sigma\tau}$ is multiplied by $\sigma$ on the left and by $\tau$ on the right by $\vec\Xi$ (§*The Biquaternion Case*). The diagonal corners are the components on which the two signs agree; $\tilde Q$ acts on them by $\lambda_+$ and $\lambda_-$ respectively. The construction of the mixed generators $\vec\Upsilon_\pm$ is the subject of §*The Peirce Corners and the Nilpotents*; the Q-adapted basis and the eigenbasis of left multiplication are the subject of §*The Q-Adapted Peirce Basis* and §*The Eigenbasis of Left Multiplication*.
 
 ## The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis
 
-**Fix $\tilde Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$. Its own root carries a Peirce pair, the two mixed corners carry a pair of nilpotents, and the four elements form a basis in which left multiplication by $\tilde Q$ is diagonal. The basis is an eigenbasis of left multiplication; the two minimal left ideals are the eigenspaces of right multiplication, not of left multiplication.**
+**Fix $\tilde Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$. Its own root carries a Peirce pair, the two mixed corners carry a pair of nilpotents, and the four elements form a basis in which left multiplication by $\tilde Q$ is diagonal. The basis is an eigenbasis of left multiplication; the two minimal left ideals are the eigenspaces of right multiplication, not of left multiplication.** This is the Q-dependent specialisation of the Peirce decomposition of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Decomposition*: the four corner lines are the same construction, read relative to the pair of $\tilde Q$'s own root.
 
 ### The Root, the Idempotents, and the Eigenvalues
 
@@ -295,7 +296,9 @@ $$
 \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
 \vec\Upsilon_+^2=\vec\Upsilon_-^2=0.\ }
 $$
-The construction makes one choice, the nonzero element $\vec\Upsilon_+$ of the line $\mathbb{B}_{-+}$. That choice determines $\vec\Upsilon_-$ uniquely. No intermediate scalar and no square root enter. A square root appears only when the generator is parametrised by a transverse vector, as in the closed forms below.
+**The two-line normalisation.** If one starts from arbitrary nonzero $u\in\mathbb{B}_{-+}$ and $v\in\mathbb{B}_{+-}$, then $uv=c\tilde\Pi_-$ for some $c\neq0$. Choose $\alpha$ with $\alpha^2=c$ and set $\vec\Upsilon_+=u/\alpha$, $\vec\Upsilon_-=v/\alpha$; the argument above applied to $u/\alpha$ and $v/\alpha$ gives $vu=c\tilde\Pi_+$, and the boxed identities hold. This is the same construction read from two arbitrary generators instead of one, and the residual freedom is the reciprocal rescaling of the pair.
+
+The construction from $\vec\Upsilon_+$ alone makes one choice, the nonzero element $\vec\Upsilon_+$ of the line $\mathbb{B}_{-+}$. That choice determines $\vec\Upsilon_-$ uniquely. In that construction no intermediate scalar and no square root enter. A square root appears when the pair is parametrised by two arbitrary generators, as in the two-line normalisation above, or by a transverse vector, as in the closed forms below.
 
 The corners and their generators are collected in the table.
 
@@ -350,6 +353,19 @@ $$
 \vec X_\perp^2=\vec X^2+\frac{(\vec X\cdot\vec Q)^2}{B^2}.
 $$
 
+**The transverse unit vector.** If $\vec V$ is a pure unit vector with $\vec V\cdot\vec U=0$, then $\vec V\tilde\Pi_+\in\mathbb{B}_{-+}$ and $\vec V\tilde\Pi_-\in\mathbb{B}_{+-}$, and, up to the reciprocal rescaling,
+$$
+\vec\Upsilon_+=i\,\vec V\tilde\Pi_+,\qquad
+\vec\Upsilon_-=i\,\vec V\tilde\Pi_-.
+$$
+For $\vec V=\vec e_x$ and $\vec U=\vec e_z$ one has $\vec V\tilde\Pi_+=(\vec e_x+i\vec e_y)/2$ and $\vec V\tilde\Pi_-=(\vec e_x-i\vec e_y)/2$, and direct multiplication, using $\vec V^2=-e_t$, gives
+$$
+(\vec V\tilde\Pi_+)(\vec V\tilde\Pi_-)=-\tilde\Pi_-,
+\qquad
+(\vec V\tilde\Pi_-)(\vec V\tilde\Pi_+)=-\tilde\Pi_+.
+$$
+A general transverse unit is $\vec V=\lambda\vec e_x+\mu\vec e_y$ with $\lambda^2+\mu^2=1$; the factor $\lambda-i\mu$ cancels in the normalised pair, so the same products hold. The factor $i$ on both generators restores the plus signs. This is the transverse-vector construction with $\vec X=\vec V$ and $\sqrt{\vec V_\perp^2}=i$.
+
 **The symmetric closed form.** The vector $\vec w=\vec e_x+\vec e_y+\vec e_z$ is the only nonzero vector fixed by every permutation of the axes. Put $\sigma=\vec w\cdot\vec Q=Q_x+Q_y+Q_z$. Then
 $$
 \vec w_\perp=\vec w-\frac{\Sigma}{B^2}\vec Q,\qquad
@@ -393,7 +409,7 @@ $$
 \vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2}\in\mathbb{B}_{+-},\qquad
 \vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2}\in\mathbb{B}_{-+},
 $$
-with $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$. The present root is $\vec\Xi=-i\vec e_z$ when $Q_z>0$ with the choice $B=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
+with $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$. These are the $\vec\Upsilon_1,\vec\Upsilon_2$ of *Conventions in Mathematics*, §*The Nilpotent Convention*, indexed by direction. The present root is $\vec\Xi=-i\vec e_z$ when $Q_z>0$ with the choice $B=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
 $$
 \vec\Upsilon_+=\vec\Upsilon_x,\qquad \vec\Upsilon_-=\vec\Upsilon_y,
 $$
@@ -660,7 +676,7 @@ In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, a spinor of first chi
 $$
 \xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+,\qquad Q_{\mathrm{sp},11},Q_{\mathrm{sp},21}\in\mathbb{C},
 $$
-with the coordinate pair $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$, the first column of the matrix of $\xi_+$. Under left multiplication by $\tilde Q$,
+with the coordinate pair $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$, the first column of the matrix model of §*Matrices and the Column Correspondence*. Under left multiplication by $\tilde Q$,
 $$
 \tilde Q\xi_+=\lambda_+Q_{\mathrm{sp},11}\tilde\Pi_++\lambda_-Q_{\mathrm{sp},21}\vec\Upsilon_+,
 $$
@@ -672,7 +688,7 @@ A spinor of second chirality is an element of $S_-$,
 $$
 \xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-,\qquad Q_{\mathrm{sp},12},Q_{\mathrm{sp},22}\in\mathbb{C}.
 $$
-The order of the coefficients follows the eigenbasis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$, in which the eigenvalues are $(\lambda_+,\lambda_-)$, so the coordinate pair is $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$, the second column of the matrix of $\xi_-$, and
+The order of the coefficients follows the eigenbasis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$, in which the eigenvalues are $(\lambda_+,\lambda_-)$, so the coordinate pair is $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$, the second column of the matrix model of §*Matrices and the Column Correspondence*, and
 $$
 \tilde Q\xi_-=\lambda_+Q_{\mathrm{sp},12}\vec\Upsilon_-+\lambda_-Q_{\mathrm{sp},22}\tilde\Pi_-
 \longmapsto
@@ -705,6 +721,78 @@ A general element is therefore not a spinor: it has one spinor component of each
 
 **Complex dimensions.** Each spinor has two complex components, hence four real parameters. The two spinor spaces have complex dimension two and real dimension four each, and their direct sum has the complex dimension four and the real dimension eight of $\mathbb{B}$. The label "first" versus "second" is fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing the square root by its negative, or exchanging the two labels, exchanges the two chiralities.
 
+### Matrices and the Column Correspondence
+
+Fix the assignment
+$$
+\tilde\Pi_+\mapsto E_{11},\qquad
+\vec\Upsilon_-\mapsto E_{12},\qquad
+\vec\Upsilon_+\mapsto E_{21},\qquad
+\tilde\Pi_-\mapsto E_{22},
+$$
+where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then every $P\in\mathbb{B}$ has a unique expansion
+$$
+P=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
+\qquad a_{ij}\in\mathbb{C},
+$$
+and is represented by
+$$
+M_2^Q(P)=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}.
+$$
+In the notation of the spinor coordinates, $a_{11}=Q_{\mathrm{sp},11}$, $a_{12}=Q_{\mathrm{sp},12}$, $a_{21}=Q_{\mathrm{sp},21}$ and $a_{22}=Q_{\mathrm{sp},22}$.
+The element $\tilde Q$ itself has $a_{11}=\lambda_+$, $a_{22}=\lambda_-$ and $a_{12}=a_{21}=0$, so
+$$
+M_2^Q(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+$$
+
+The two columns are the two spinor spaces:
+$$
+S_+=\mathbb{B}\tilde\Pi_+\longleftrightarrow\operatorname{span}\{E_{11},E_{21}\}=\text{column }1,
+\qquad
+S_-=\mathbb{B}\tilde\Pi_-\longleftrightarrow\operatorname{span}\{E_{12},E_{22}\}=\text{column }2.
+$$
+The first column of $M_2^Q(P)$ is the coordinate vector of $P\tilde\Pi_+$, the second is the coordinate vector of $P\tilde\Pi_-$.
+
+A spinor of first chirality
+$$
+\xi_+=\alpha\tilde\Pi_++\beta\vec\Upsilon_+
+\longleftrightarrow
+\begin{pmatrix}\alpha\\\beta\end{pmatrix}
+$$
+is represented by the matrix
+$$
+\begin{pmatrix}\alpha&0\\\beta&0\end{pmatrix},
+$$
+whose first column is $\xi_+$ and whose second column is zero. A spinor of second chirality
+$$
+\xi_-=\gamma\vec\Upsilon_-+\delta\tilde\Pi_-
+\longleftrightarrow
+\begin{pmatrix}\gamma\\\delta\end{pmatrix}
+$$
+is represented by the matrix
+$$
+\begin{pmatrix}0&\gamma\\0&\delta\end{pmatrix},
+$$
+whose first column is zero and whose second column is $\xi_-$. The order $(\vec\Upsilon_-,\tilde\Pi_-)$ is the eigenbasis of $S_-$ used above; it is the order in which the diagonal values are $(\lambda_+,\lambda_-)$.
+
+Multiplication by $\tilde Q$ acts on the first column by $M_2^Q(\tilde Q)$,
+$$
+\tilde Q\xi_+\longleftrightarrow
+\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
+\begin{pmatrix}\alpha\\\beta\end{pmatrix}
+=
+\begin{pmatrix}\lambda_+\alpha\\\lambda_-\beta\end{pmatrix},
+$$
+and on the second column by the same matrix,
+$$
+\tilde Q\xi_-\longleftrightarrow
+\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
+\begin{pmatrix}\gamma\\\delta\end{pmatrix}
+=
+\begin{pmatrix}\lambda_+\gamma\\\lambda_-\delta\end{pmatrix}.
+$$
+This is the precise statement that the two spinor spaces are the two columns and that multiplication by $\tilde Q$ acts on both by the same diagonal matrix. A general element of $\mathbb{B}$ is not a spinor: its matrix has two nonzero columns, one in each spinor space.
+
 ### What Depends on $\tilde Q$ and What Does Not
 
 The Q-adapted data depend on $\tilde Q$ through its root. The comparison is collected in the table.
@@ -729,7 +817,7 @@ The construction uses $Q_x^2+Q_y^2+Q_z^2\neq0$. When $Q_x^2+Q_y^2+Q_z^2=0$ and $
 - the nilpotents $\vec\Upsilon_\pm$ adapted to $\tilde Q$ do not exist;
 - there is no eigenbasis of $L_{\tilde Q}$.
 
-The standard Peirce decomposition of the root $i\vec e_z$ still exists, with its two nilpotents, but it is not attached to $\tilde Q$. In any Peirce basis the Peirce coordinates of $\tilde Q$ have trace $2Q_t$ and determinant $Q_t^2$, because the characteristic polynomial is $(X-Q_t)^2$. They are not diagonalisable, since the minimal polynomial is $(X-Q_t)^2$ when $\vec Q\neq0$. In the Jordan regime $Q_t\neq0$ the multiplication $L_{\tilde Q}$ is a single Jordan block with eigenvalue $Q_t$; in the nilpotent regime $Q_t=0$ it is a nonzero nilpotent.
+The standard Peirce decomposition of the root $i\vec e_z$ still exists, with its two nilpotents, but it is not attached to $\tilde Q$. In any Peirce basis the Peirce coordinates of $\tilde Q$ have trace $2Q_t$ and determinant $Q_t^2$, because the characteristic polynomial is $(X-Q_t)^2$. They are not diagonalisable, since the minimal polynomial is $(X-Q_t)^2$ when $\vec Q\neq0$. In the Jordan regime $Q_t\neq0$ the Peirce matrix of $\tilde Q$ is a single $2\times2$ Jordan block with eigenvalue $Q_t$, so $L_{\tilde Q}$ is not diagonalisable; in the nilpotent regime $Q_t=0$ it is a nonzero nilpotent.
 The nilpotent construction of the standard pair remains available, but it is not the construction of the present section: the present construction takes the nilpotents from the mixed corners of the pair of $\tilde Q$'s own root, and that root does not exist when $Q_x^2+Q_y^2+Q_z^2=0$.
 
 For $\vec Q=0$ the element is scalar, $\tilde Q=Q_te_t$, and $L_{\tilde Q}=Q_t\,\mathrm{id}$ on the whole algebra: every basis is an eigenbasis, the Q-adapted construction is absent, and there is no Jordan or nilpotent regime.
@@ -771,7 +859,7 @@ $$
 and every $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$ has the unique expansion
 $$
 \tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
-\qquad a_{ij}\in\mathbb{C},
+\qquad Q_{\mathrm{sp},ij}\in\mathbb{C},
 $$
 with $\tilde Q$ itself having $Q_{\mathrm{sp},11}=\lambda_+$, $Q_{\mathrm{sp},22}=\lambda_-$ and $Q_{\mathrm{sp},12}=Q_{\mathrm{sp},21}=0$.
 
@@ -813,12 +901,28 @@ $$
 $$
 The two spinor spaces are the two minimal left ideals; under left multiplication each is a complex plane carrying the two eigenvalues $\lambda_+,\lambda_-$.
 
+**Matrices.**
+With
+$$
+\tilde\Pi_+\mapsto E_{11},\qquad
+\vec\Upsilon_-\mapsto E_{12},\qquad
+\vec\Upsilon_+\mapsto E_{21},\qquad
+\tilde\Pi_-\mapsto E_{22},
+$$
+a general element has the matrix
+$$
+M_2^Q(P)=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\qquad
+M_2^Q(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+$$
+The first column is $S_+$, the second is $S_-$, and multiplication by $\tilde Q$ acts on both by $\operatorname{diag}(\lambda_+,\lambda_-)$.
+
 **Degenerate case.**
 $$
 Q_x^2+Q_y^2+Q_z^2=0:\quad
 \text{no Q-adapted Peirce basis and no Q-adapted nilpotents.}
 $$
-For $\vec Q\neq0$ there is no eigenbasis of $L_{\tilde Q}$: in any Peirce basis the multiplication by $\tilde Q$ is a single Jordan block when $Q_t\neq0$ and a nonzero nilpotent when $Q_t=0$, so it is not diagonal. For $\vec Q=0$ the element is scalar, $L_{\tilde Q}=Q_t\,\mathrm{id}$, and every basis is an eigenbasis; the Q-adapted construction is then absent, but an eigenbasis is not.
+For $\vec Q\neq0$ there is no eigenbasis of $L_{\tilde Q}$: in any Peirce basis the Peirce matrix of $\tilde Q$ is a single $2\times2$ Jordan block when $Q_t\neq0$ and a nonzero nilpotent when $Q_t=0$, so it is not diagonal. For $\vec Q=0$ the element is scalar, $L_{\tilde Q}=Q_t\,\mathrm{id}$, and every basis is an eigenbasis; the Q-adapted construction is then absent, but an eigenbasis is not.
 
 ## Powers, Polynomial Calculus, and the Group of Units
 
@@ -978,7 +1082,7 @@ The element is a unit exactly when $Q_t\neq0$, since $\langle\tilde Q\rangle_{\n
 $$
 (X-Q_t)^2,
 $$
-which is not squarefree. By the theorem of *The Eigenvalue Decomposition of an Element*, §*Existence and Uniqueness*, $\tilde Q$ has no eigenvalue decomposition. The multiplication $L_{\tilde Q}$ is a single Jordan block with eigenvalue $Q_t$.
+which is not squarefree. By the theorem of *The Eigenvalue Decomposition of an Element*, §*Existence and Uniqueness*, $\tilde Q$ has no eigenvalue decomposition. The Peirce matrix of $\tilde Q$ is a single $2\times2$ Jordan block with eigenvalue $Q_t$.
 
 The centraliser of $\tilde Q$ is
 $$
@@ -1024,6 +1128,7 @@ Here the radical is $\sqrt{Q_x^2+Q_y^2+Q_z^2}$, equal to $|\vec Q|$ in the real 
 | Action on the eigenbasis | $L_{\tilde Q}$ has the values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$ on $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; $R_{\tilde Q}$ has the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$; a general $\tilde Q_{\mathrm{sp}}$ mixes the two spinor spaces |
 | Nilpotents | $\vec\Upsilon_\pm$, with $\vec\Upsilon_\pm^2=0$ |
 | Spinor spaces | $S_\pm=\mathbb{B}\tilde\Pi_\pm\cong\mathbb{C}^2$; spinors $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ on $S_+$ and $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ on $S_-$ |
+| Matrix model | $M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$; $M_2^Q(P)=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}$; the two columns are $S_+,S_-$ |
 | Polynomial calculus | $f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-$ |
 | Group of units | $\mathbb{B}^\times$; the eigenvalue map to $\mathbb{C}^\times\times\mathbb{C}^\times$ is surjective, not injective and not a group homomorphism |
 
@@ -1056,11 +1161,11 @@ The table compares the decomposition across the three algebras; in the biquatern
 | Eigenprojections central? | yes | yes | no |
 | Peirce decomposition | $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ plus two mixed square-zero lines |
 | Eigenbasis | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\Pi_+,\Pi_-)$; eigenvalues $\lambda_+,\lambda_-$ | $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$ |
-| General element in the eigenbasis | coordinates $(\xi_+,\xi_-)$ | coordinates $(\xi_+,\xi_-)$ | coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})$ |
+| General element in the eigenbasis | coordinates $(a_1,a_2)$ | coordinates $(A_1,A_2)$ | coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})$ |
 | Nilpotents in the eigenbasis | none | none | $\vec\Upsilon_\pm$ |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, real lines | $S_\pm=\mathbb{C}\Pi_\pm$, complex lines | $S_\pm=\mathbb{B}\tilde\Pi_\pm\cong\mathbb{C}^2$, complex planes |
 | Spinor coordinates | one real coefficient per chirality | one complex coefficient per chirality | two complex coefficients per chirality |
-| Action of $Q$ on a spinor | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | the two scalars $\lambda_+,\lambda_-$ on each $S_\pm$ |
+| Action of $Q$ on a spinor | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | $\lambda_+$ on the first coordinate, $\lambda_-$ on the second |
 | Unit group | $\cong\mathbb{R}^\times\times\mathbb{R}^\times$ | $\cong\mathbb{C}^\times\times\mathbb{C}^\times$ | $\mathbb{B}^\times$; eigenvalue map surjective, not injective, not a homomorphism |
 
 Read down a column for one algebra and across a row for one concept. The rows down to the eigenprojections follow one pattern; the rows below them record where the algebras part: whether the idempotents depend on the element and whether they are central, the two mixed square-zero lines of the biquaternion Peirce decomposition, and the biquaternion unit group, which is no longer a product. The last rows record the spinor content: one real coefficient per chirality for the split-complex algebra, one complex coefficient per chirality for the reduced biquaternion algebra, and two complex coefficients per chirality, forming a complex plane, for the biquaternion algebra.
@@ -1093,6 +1198,9 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\tilde Q_4=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-$ | A general element of the diagonal part in §*The Algebraic Fibre of the Decomposition* |
 | $Q_{\mathrm{sp},11},Q_{\mathrm{sp},21}$ | Spinor coordinates on $S_+$ in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$, the first column of the matrix |
 | $Q_{\mathrm{sp},12},Q_{\mathrm{sp},22}$ | Spinor coordinates on $S_-$ in the eigenbasis $(\vec\Upsilon_-,\tilde\Pi_-)$, the second column of the matrix |
+| $M_2^Q(P)$ | The Peirce matrix of $P$ in the assignment $\tilde\Pi_+\mapsto E_{11}$, $\vec\Upsilon_-\mapsto E_{12}$, $\vec\Upsilon_+\mapsto E_{21}$, $\tilde\Pi_-\mapsto E_{22}$ |
+| $E_{ij}$ | Matrix units of the $2\times2$ model |
+| $a_{ij}$ | Coefficients of $P$ in the Q-adapted basis, the entries of $M_2^Q(P)$ |
 | $\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau$ | Peirce corners of the pair |
 | $\mathbb{C}[\tilde Q]=\operatorname{span}_{\mathbb{C}}\{e_t,\tilde Q\}$ | Commutative subalgebra; the centraliser of $\tilde Q$ when $Q_x^2+Q_y^2+Q_z^2\neq0$ |
 | $\mathbb{B}^{\times}$ | Group of units, the invertible elements |
@@ -1107,4 +1215,4 @@ Read down a column for one algebra and across a row for one concept. The rows do
 
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the Peirce decomposition and the structure theory of finite-dimensional algebras.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the algebraic structure of the biquaternion algebra.
-- The corpus articles: [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), [The Centraliser and the Diagonal Peirce Part](the-centraliser-and-the-diagonal-peirce-part.html), [Off-Diagonal Peirce Components and Noncentral Idempotents](off-diagonal-peirce-components-and-noncentral-idempotents.html), [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), [Quaternion Spectral Theory](quaternion-spectral-theory.html), [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), [Eigenbasis of a Split-Complex Number](eigenbasis-of-a-split-complex-number.html), [Eigenbasis of a Reduced Biquaternion](eigenbasis-of-a-reduced-biquaternion.html) and [Conventions in Mathematics](conventions-in-mathematics.html).
+- The corpus articles: [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), [The Centraliser and the Diagonal Peirce Part](the-centraliser-and-the-diagonal-peirce-part.html), [Off-Diagonal Peirce Components and Noncentral Idempotents](off-diagonal-peirce-components-and-noncentral-idempotents.html), [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), [Quaternion Spectral Theory](quaternion-spectral-theory.html), [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html) and [Conventions in Mathematics](conventions-in-mathematics.html). The operator readings of the Q-adapted basis are in [One-Sided Operators on the Biquaternion Algebra](one-sided-operators-on-the-biquaternion-algebra.html), for the left and right multiplications, and [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sandwich; the commutative companions are [Operator and the Polar Decomposition of a Split-Complex Number](operator-and-the-polar-decomposition-of-a-split-complex-number.html) and [Operator and the Polar Decomposition of a Reduced Biquaternion](operator-and-the-polar-decomposition-of-a-reduced-biquaternion.html).

@@ -273,7 +273,7 @@ $$
 P_{+}=\operatorname{diag}(1,0)=E_{11},\qquad P_{-}=\operatorname{diag}(0,1)=E_{22},
 $$
 
-with $P_{+}+P_{-}=\mathrm I_{2}$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the matrix units $E_{12}$ and $E_{21}$, are absent: the image is the subalgebra of diagonal matrices in $M_{2}(\mathbb{C})$, not the full matrix algebra.
+with $P_{+}+P_{-}=\mathrm I_{2}$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the matrix units $E_{12}$ and $E_{21}$, are absent: the image is the subalgebra of diagonal matrices in $M_{2}(\mathbb{C})$, not the full matrix algebra. In particular, $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{C})$, but no nonzero nilpotent matrix lies in the image: a diagonal matrix with square zero is zero. This is the matrix form of the reducedness of $\mathbb{B}_{\mathrm{r}}$.
 
 **Two matrix models.** The diagonal matrix $\varphi^{\Pi}(\breve Q)=\operatorname{diag}(Q_+,Q_-)$ is the **Peirce-coordinate model**: its two entries are the Peirce coordinates, and in this model the two Peirce components are the two matrix units $E_{11}$ and $E_{22}$. The **left-regular model** in the basis $(1,j)$ is the full matrix
 $$
@@ -287,13 +287,13 @@ The columns of $\mathsf{C}$ are the coordinate vectors of $\Pi_+$ and $\Pi_-$ in
 $$
 \varphi(\Pi_+)=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad \varphi(\Pi_-)=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix}.
 $$
-In the scalar case $Q_{\blacktriangledown}=0$, $\varphi(\breve Q)=Q_{\blacktriangle}\mathrm I_2$, every nonzero complex vector is an eigenvector, and every complex basis is an eigenbasis. The eigenbasis is developed in *Eigenbasis of a Reduced Biquaternion*, §*The Eigenbasis*; the two models are developed in *Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations*.
+In the scalar case $Q_{\blacktriangledown}=0$, $\varphi(\breve Q)=Q_{\blacktriangle}\mathrm I_2$, every nonzero complex vector is an eigenvector, and every complex basis is an eigenbasis. The eigenbasis is developed in *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Eigenbasis*; the two models are developed in *Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations*.
 
 ## The Decomposition into Minimal Ideals
 
 **The two idempotent lines are the minimal left ideals and the minimal right ideals, and they are the two simple modules.**
 
-**Theorem.** The minimal left ideals of $(\mathbb{B}_{\mathrm{r}},\cdot)$ are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are also the minimal right ideals, the minimal two-sided ideals and the simple left modules. They are the two spinor spaces of *Eigenbasis of a Reduced Biquaternion*, §*The Spinor Spaces*: each is a complex line, and a spinor is a single complex coefficient on one of them.
+**Theorem.** The minimal left ideals of $(\mathbb{B}_{\mathrm{r}},\cdot)$ are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are also the minimal right ideals, the minimal two-sided ideals and the simple left modules. They are the two spinor spaces of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*, §*The Spinor Spaces*: each is a complex line, and a spinor is a single complex coefficient on one of them.
 
 **Proof.** Every left ideal is two-sided by commutativity, and the only proper nonzero two-sided ideals are the two lines by the ideal theorem; a left ideal contained in a line is $0$ or the line, so the line is minimal. The left modules $\mathbb{B}_{\mathrm{r}}\Pi_+$ and $\mathbb{B}_{\mathrm{r}}\Pi_-$ are simple because they have no proper nonzero submodules, the submodules being the left ideals inside them.
 

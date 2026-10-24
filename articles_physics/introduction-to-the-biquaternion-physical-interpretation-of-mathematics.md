@@ -113,7 +113,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
 - [The Specificities of the Biquaternion Algebra](../articles_maths/the-specificities-of-the-biquaternion-algebra.html)
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html)
-- [Eigenbasis of a Biquaternion](../articles_maths/eigenbasis-of-a-biquaternion.html)
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
 - [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html)
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html)
@@ -153,8 +153,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Operators Representations
 
-- [Two-Sided Operator Under the Polar Decomposition](../articles_maths/two-sided-operator-under-the-polar-decomposition.html)
-- [One-Sided Operator Under the Polar Decomposition](../articles_maths/one-sided-operator-under-the-polar-decomposition.html)
+- [One-Sided Operator and the Polar Decomposition](../articles_maths/one-sided-operator-and-the-polar-decomposition.html)
+- [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
 
 #### The Krein Form
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes the eigenvalue decomposition, the $Q$-adapted Peirce basis, the nilpotents and the eigenbasis of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections, the $Q$-adapted basis and the nilpotents are those of *Eigenbasis of a Biquaternion*; no definition or proof is repeated.
+This article computes the eigenvalue decomposition, the $Q$-adapted Peirce basis, the nilpotents and the eigenbasis of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections, the $Q$-adapted basis and the nilpotents are those of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*; no definition or proof is repeated.
 
 Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$ of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Write
 
@@ -1504,7 +1504,7 @@ For cases 1, 6 and 8 there is no $Q$-adapted basis: case 1 is scalar, and cases 
 - Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is a unit. A null vector part does not imply a zero divisor.
 - None of the eight is a zero divisor. The zero-divisor regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.
 - Case 1 is the scalar regime. Every basis is an eigenbasis, and the $Q$-adapted construction does not apply.
-- Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the projection formula. The symmetric closed form of *Eigenbasis of a Biquaternion* gives the same pair up to the reciprocal rescaling when the direction is off the exceptional cone; the projection formula is the construction used here.
+- Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the projection formula. The symmetric closed form of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion* gives the same pair up to the reciprocal rescaling when the direction is off the exceptional cone; the projection formula is the construction used here.
 - In the distinct regime the eigenvalues repeat twice in the four-dimensional eigenbasis, and they are distinct on each two-dimensional spinor space. The $2\times2$ model records the two values once, one for each column.
 
 ## Summary of Notation
@@ -1527,7 +1527,7 @@ For cases 1, 6 and 8 there is no $Q$-adapted basis: case 1 is scalar, and cases 
 
 ## Further Reading
 
-- [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html), for the eigenvalue decomposition, the Peirce decomposition, the nilpotents and the eigenbasis.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the eigenvalue decomposition, the Peirce decomposition, the nilpotents and the eigenbasis.
 - [Eigenbasis of a Biquaternion in Matrix Elements Representations](eigenbasis-of-a-biquaternion-in-matrix-elements-representations.html), for the fixed model, the $Q$-adapted model and the diagonalising matrix.
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the same eight elements read through the polar word.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the Q-adapted basis, with the nilpotents and the spinors.

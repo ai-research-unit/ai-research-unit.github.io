@@ -42,9 +42,9 @@ for every non-isotropic $\xi\in V$, and the odd slot $\mathbb{B}\xi$ is a second
 
 ## The Grading of the Versors
 
-**Definition (cited from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*).** A **versor** is a product $\tilde U=\eta_1\cdots\eta_k$ of non-isotropic vectors of $V$. The **Clifford group** $\Gamma$ is the set of invertible elements $\tilde U$ with $\mathrm{Ad}^{\alpha}_{\tilde U}(V)\subseteq V$, and the **Clifford norm** is $N_{\mathrm{Cl}}(\tilde U)=\tilde U\tilde U^{\natural}$, the natural sign being the Clifford conjugation of the envelope, which on the even part is the quaternion conjugation of the algebra. The groups are
+**Definition (cited from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*).** A **versor** is a product $\tilde U=\eta_1\cdots\eta_k$ of non-isotropic vectors of $V$. The **Clifford group** $\Gamma$ is the set of invertible elements $\tilde U$ with $\mathrm{Ad}^{\alpha}_{\tilde U}(V)\subseteq V$, and the **Clifford norm** is $\langle\tilde U\rangle_{\natural}=\tilde U\tilde U^{\natural}$, the natural sign being the Clifford conjugation of the envelope, which on the even part is the quaternion conjugation of the algebra. The groups are
 $$
-\mathrm{Pin}=\{\tilde U\in\Gamma : N_{\mathrm{Cl}}(\tilde U)=\pm1\},\qquad
+\mathrm{Pin}=\{\tilde U\in\Gamma : \langle\tilde U\rangle_{\natural}=\pm1\},\qquad
 \mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+},
 $$
 and the **signed inner conjugation** is $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$, with $\alpha$ the grade involution. On vectors the reflection in the hyperplane orthogonal to a non-isotropic $\xi$ is
@@ -77,7 +77,7 @@ be the dagger sandwich of *Biquaternion Rotations and Lorentz Transformations*. 
 
 **Proof.** Under $\mathsf{M}_2$ the sandwich is $X\mapsto M X M^{\dagger}$ with $M=\mathsf{M}_2(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of signature $(1,3)$. The condition $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels in the sandwich because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of *Biquaternion Rotations and Lorentz Transformations*.
 
-**Remark (the isometry condition is exactly the unit norm).** The sandwich multiplies the norm by $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert^{2}$, since $\tilde{Q}^{*}$ has norm $(\langle \tilde{Q}\rangle_{\natural})^{\natural}$ and the norm is multiplicative; so $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is what makes it an isometry, and a zero divisor generates nothing, having no inverse. The corpus works on the norm-one slice $N=1$, which parametrises the same operators because $\langle i\tilde{Q}\rangle_{\natural}=-\langle \tilde{Q}\rangle_{\natural}$ and the operator is blind to the scalar imaginary.
+**Remark (the isometry condition is exactly the unit norm).** The sandwich multiplies the norm by $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert^{2}$, since $\tilde{Q}^{*}$ has norm $(\langle \tilde{Q}\rangle_{\natural})^{\natural}$ and the norm is multiplicative; so $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is what makes it an isometry, and a zero divisor generates nothing, having no inverse. The corpus works on the norm-one slice $\langle\tilde Q\rangle_{\natural}=1$, which parametrises the same operators because $\langle i\tilde{Q}\rangle_{\natural}=-\langle \tilde{Q}\rangle_{\natural}$ and the operator is blind to the scalar imaginary.
 
 **Theorem (the four components, and the two discrete operations).** On $\mathbb{M}_+$ the following operations are isometries, and they fall in the four components of $O(1,3)$:
 
@@ -94,7 +94,7 @@ The two operations beyond the sandwich are quaternion conjugation of the argumen
 
 **Remark (verified).**
 
-**Remark (parity and time reversal).** The parity $P$ is the quaternion conjugation of the argument, and the product $PT$ is the negation; the time reversal alone is therefore the composite $P\circ(PT)$, which is the quaternion conjugation followed by the negation. Neither $P$ nor $PT$ is a sandwich, since every sandwich with $\lvert N\rvert=1$ is proper orthochronous, and neither is the square of the other.
+**Remark (parity and time reversal).** The parity $P$ is the quaternion conjugation of the argument, and the product $PT$ is the negation; the time reversal alone is therefore the composite $P\circ(PT)$, which is the quaternion conjugation followed by the negation. Neither $P$ nor $PT$ is a sandwich, since every sandwich with $\lvert\langle\tilde Q\rangle_{\natural}\rvert=1$ is proper orthochronous, and neither is the square of the other.
 
 ## The Volume Element
 
@@ -163,7 +163,7 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 | $\tilde{Q}$ | An element of $\mathbb{B}$; the operator $\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}$ |
 | $\rho_\xi(\eta)=-\xi\eta\xi^{-1}$ | The reflection in the hyperplane orthogonal to $\xi$; a Lorentz transformation, realised by the odd versor $\xi$ |
 | $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$ | The signed inner conjugation; $\mathrm{Ad}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{-1}$ is the inner automorphism |
-| $\Gamma$, $N_{\mathrm{Cl}}(\tilde U)=\tilde U\tilde U^{\natural}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{N_{\mathrm{Cl}}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
+| $\Gamma$, $\langle\tilde U\rangle_{\natural}=\tilde U\tilde U^{\natural}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{\langle\tilde U\rangle_{\natural}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
 | $\Omega=\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$ | The volume element of $\mathrm{Cl}_{1,3}$, $\Omega^2=-1$, central in the even part and anticommuting with every vector; the central scalar imaginary is $-\Omega$ |
 | $\mathrm{rev},\sigma$ | The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $A\otimes h\mapsto\bar{A}\otimes h$; $\mathrm{rev}={}^{*}\circ\sigma$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\mathrm{Ad}_{\tilde{Q}}$ |

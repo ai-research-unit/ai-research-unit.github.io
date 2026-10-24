@@ -6,7 +6,7 @@ The eigenbasis of a split-complex number $Q=q+jq'$ is the pair
 $$
 \Pi_+=\tfrac12(1+j),\qquad \Pi_-=\tfrac12(1-j),
 $$
-in which multiplication by $Q$ is diagonal with eigenvalues $\lambda_+=q+q'$ and $\lambda_-=q-q'$. The eigenvalue decomposition, the eigenprojections and the Peirce decomposition are the subject of *Eigenbasis of a Split-Complex Number*. This article reads the same objects in the matrix element representations of the algebra.
+in which multiplication by $Q$ is diagonal with eigenvalues $\lambda_+=q+q'$ and $\lambda_-=q-q'$. The eigenvalue decomposition, the eigenprojections and the Peirce decomposition are the subject of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*. This article reads the same objects in the matrix element representations of the algebra.
 
 The algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, and its **$2\times2$ matrix element representation** is the left regular representation in the basis $1,j$,
 $$
@@ -31,7 +31,7 @@ The article is organised around three questions. **Which matrices are the eigenp
 
 **Conventions.** $Q=q+jq'$, $Q_2=q_2+jq_2'$, $\lambda_\pm=q\pm q'$, and a general element in the eigenbasis is $X=\xi_+\Pi_++\xi_-\Pi_-$ with $\xi_\pm=x_0\pm x_1$. The matrix $\mathsf{M}_2$ is the regular matrix in the basis $1,j$; the matrix $\mathsf{M}_2^{\Pi}$ is the matrix in the eigenbasis $(\Pi_+,\Pi_-)$. The change matrix is $\mathsf{C}$, with columns the coordinates of $\Pi_+,\Pi_-$ in the basis $1,j$. The complexification is $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}$, with the central complex unit written $i$ and the real basis $1,i,j,ij$. The two representation articles cited above own the assignments and the invariants; this article owns their reading in the eigenbasis and the changes of basis.
 
-**Boundaries.** The spectrum, the eigenprojections and the eigenvalue decomposition are *Eigenbasis of a Split-Complex Number*. The regular matrix, its multiplicativity and its determinant are *Split-Complex Regular Element Representation*; the two-component and the other representations are *Split-Complex Two-Component Element Representation* and *Split-Complex Element Representations*. The change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*; the realification is *The Realification and the Effect of the Change of Scalars*.
+**Boundaries.** The spectrum, the eigenprojections and the eigenvalue decomposition are *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*. The regular matrix, its multiplicativity and its determinant are *Split-Complex Regular Element Representation*; the two-component and the other representations are *Split-Complex Two-Component Element Representation* and *Split-Complex Element Representations*. The change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*; the realification is *The Realification and the Effect of the Change of Scalars*.
 
 ## The $2\times2$ Matrix Element Representation
 

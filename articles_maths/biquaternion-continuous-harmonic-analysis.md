@@ -466,7 +466,7 @@ Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the va
 **The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \zeta_k e_t$, $\zeta_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
 
 $$
-\sum_{k,l=1}^{N} \bar A_k A_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} N\big(Z(\tilde{Q})\big) \, d\mu(\tilde{Q}),
+\sum_{k,l=1}^{N} \bar A_k A_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} \langle Z(\tilde{Q})\rangle_{\natural} \, d\mu(\tilde{Q}),
 \qquad
 Z(\tilde{Q}) = \sum_{k=1}^{N} A_k \chi_{\omega_k}(\tilde{Q}) ,
 $$

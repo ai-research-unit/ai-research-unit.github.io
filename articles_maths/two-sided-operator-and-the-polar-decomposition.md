@@ -1,4 +1,4 @@
-# __Two-Sided Operator Under the Polar Decomposition__
+# __Two-Sided Operator and the Polar Decomposition__
 
 ## Introduction
 
@@ -20,7 +20,7 @@ $$
 
 the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: **what does each factor do to the operator, and what becomes of its exponent?** The answer is a table with one row per factor, and the row that matters is the second. The phase does nothing.
 
-The article is the vector-side companion of *The Twisted Spinor Operator Representation of Biquaternions*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operator Under the Polar Decomposition*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. **The half-spin is the one-sided operator**: a single slot carries the half-angle $\theta/2$ and the half-rapidity $\psi/2$, and the sandwich of this article is their double, the full angle $\theta$ and the full rapidity $\psi$.
+The article is the vector-side companion of *The Twisted Spinor Operator Representation of Biquaternions*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operator and the Polar Decomposition*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. **The half-spin is the one-sided operator**: a single slot carries the half-angle $\theta/2$ and the half-rapidity $\psi/2$, and the sandwich of this article is their double, the full angle $\theta$ and the full rapidity $\psi$.
 
 The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the full spin as the double of the one-sided half-spin. §*The Angle Bookkeeping* collects the exponents and states the doubling rule. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Null Cone* records the degenerate case. The article closes with the summary, the notation and the readings.
 
@@ -165,7 +165,7 @@ There is no angle. The factor two is nevertheless the same factor two as in the 
 The phase is $P=\exp(i\alpha)$, central and unitary,
 
 $$
-P^{*}=P^{-1}=\exp(-i\alpha),\qquad N(P)=\exp(2i\alpha).
+P^{*}=P^{-1}=\exp(-i\alpha),\qquad \langle P\rangle_{\natural}=\exp(2i\alpha).
 $$
 
 Its exponent is $i\alpha$, purely imaginary and central.
@@ -178,7 +178,7 @@ $$
 
 The two scalars commute with $\tilde X$ and with each other, and the second is the inverse of the first, so the product is the identity operator.
 
-**The phase is not a half-angle of the sandwich.** The exponent $i\alpha$ is the full generator of the multiplication by $\exp(i\alpha)$ on the module; the sandwich cancels it. It is already half of the argument of the norm, $N=\Rho^{2}=r^{2}\exp(2i\alpha)$, and that is the only doubling in which it takes part. Writing $\exp(i\alpha/2)$ in the word would not change the sandwich, which is the identity either way; it would only change the meaning of the letter $\alpha$, and it would break $\Rho=\sqrt N$ unless $\alpha$ were redefined as $\arg N$.
+**The phase is not a half-angle of the sandwich.** The exponent $i\alpha$ is the full generator of the multiplication by $\exp(i\alpha)$ on the module; the sandwich cancels it. It is already half of the argument of the norm, $\langle\tilde Q\rangle_{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$, and that is the only doubling in which it takes part. Writing $\exp(i\alpha/2)$ in the word would not change the sandwich, which is the identity either way; it would only change the meaning of the letter $\alpha$, and it would break $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ unless $\alpha$ were redefined as $\arg\langle\tilde Q\rangle_{\natural}$.
 
 ### Remark (the Cancelled Phase)
 
@@ -362,7 +362,7 @@ $$
 \qquad
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
-The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ of *Eigenbasis of a Biquaternion*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* — not the Pauli model $\mathsf M_2$ of §*Conventions* — the element $\tilde Q$ is the diagonal matrix
+The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* — not the Pauli model $\mathsf M_2$ of §*Conventions* — the element $\tilde Q$ is the diagonal matrix
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 \qquad
@@ -378,7 +378,7 @@ L_{\tilde Q}R_{\tilde Q^{*}}=R_{\tilde Q^{*}}L_{\tilde Q},
 $$
 and each is diagonalisable when $B\neq0$. They therefore admit a common eigenbasis, and in that basis the sandwich is diagonal.
 
-*Proof.* The two multiplications commute because both are products in the associative algebra. A commuting family of diagonalisable operators is simultaneously diagonalisable. The eigenvalues of $L_{\tilde Q}$ are $\lambda_\pm$ by the Q-adapted basis. In a matrix model, right multiplication by $A$ is a Kronecker product of $A^{T}$ with the identity, so the eigenvalues of $R_{\tilde Q^{*}}$ are those of $\tilde Q^{*}$, namely $\bar\lambda_\pm$, each with multiplicity two. $\square$
+*Proof.* The two multiplications commute because both are products in the associative algebra. A commuting family of diagonalisable operators is simultaneously diagonalisable. The eigenvalues of $L_{\tilde Q}$ are $\lambda_\pm$ by the Q-adapted basis. In a matrix model, right multiplication by $A$ is a Kronecker product of $A^{T}$ with the identity, so the eigenvalues of $R_{\tilde Q^{*}}$ are those of $\tilde Q^{*}$, namely $\bar\lambda_\pm$, each with multiplicity two.
 
 ### The Spectrum of the Sandwich
 
@@ -434,7 +434,7 @@ e^{i\theta},\quad 1,\quad 1,\quad e^{-i\theta}.
 $$
 The sandwich therefore carries the full rapidity $\psi$ and the full angle $\theta$, while the one-sided operator carries the half-rapidity and the half-angle. The phase cancels and the scale doubles.
 
-**The half-spin is the one-sided operator.** The sandwich has no half-angle of its own: it pairs two one-sided slots, and each slot is the spinor action of *One-Sided Operator Under the Polar Decomposition*, §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces*. The half-angle $\theta/2$ and the half-rapidity $\psi/2$ live on a single slot; this article computes their products, which are the full angle $\theta$ and the full rapidity $\psi$.
+**The half-spin is the one-sided operator.** The sandwich has no half-angle of its own: it pairs two one-sided slots, and each slot is the spinor action of *One-Sided Operator and the Polar Decomposition*, §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces*. The half-angle $\theta/2$ and the half-rapidity $\psi/2$ live on a single slot; this article computes their products, which are the full angle $\theta$ and the full rapidity $\psi$.
 
 | factor | one-slot pair $(\lambda_+,\lambda_-)$ | two-slot products | output |
 |---|---|---|---|
@@ -463,13 +463,13 @@ so the sandwich is the vector and the one-sided operator, on one slot, is the sp
 
 The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta/2}$ and $\bar\rho(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta/2}$; the four sums are $\theta,0,0,-\theta$. For the boost, both slots carry $e^{\mp\psi/2}$ because the boost is Hermitian; the four sums are $\psi,0,0,-\psi$. In both cases the vector weights are the sums of the two spinor weights, and each extremal vector weight is twice a spinor weight.
 
-**The sandwich has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta/2$ and the half-rapidity $\psi/2$ live on a single slot, in *One-Sided Operator Under the Polar Decomposition*, §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces*. The sandwich is the double of the half-spin, not a half-spin itself.
+**The sandwich has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta/2$ and the half-rapidity $\psi/2$ live on a single slot, in *One-Sided Operator and the Polar Decomposition*, §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces*. The sandwich is the double of the half-spin, not a half-spin itself.
 
 **The two Peirce chiralities are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\rho$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
 
 **The addition is at the level of generators.** For a general word the two slot exponents do not combine into one rapidity and one angle unless the axes commute. The four products $\lambda_i\bar\lambda_j$ remain exact; the split into a boost and a rotation is the content of §*The Boost* and §*The Rotor* for commuting axes. For a pure non-central factor the eigenvalue $1$ occurs twice in the list; for the scale the value $r^{2}$ occurs four times, and for the phase the value $1$ occurs four times.
 
-The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$ is a Jordan block, the common eigenbasis of $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ does not exist, and the spectral formula is unavailable; the sandwich itself remains defined. This is the degenerate case of *Eigenbasis of a Biquaternion*, §*The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$*.
+The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$ is a Jordan block, the common eigenbasis of $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ does not exist, and the spectral formula is unavailable; the sandwich itself remains defined. This is the degenerate case of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$*.
 
 ## The Angle Bookkeeping
 
@@ -620,8 +620,8 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 
 ## Further Reading
 
-- [One-Sided Operator Under the Polar Decomposition](one-sided-operator-under-the-polar-decomposition.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
-- [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
+- [One-Sided Operator and the Polar Decomposition](one-sided-operator-and-the-polar-decomposition.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
@@ -632,3 +632,5 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 - [The Four-Vector Operator Representation of Biquaternions](the-four-vector-operator-representation-of-biquaternions.html), for the sandwich written in the four complex coefficients and its degenerate image on the cone.
 - [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the sandwich as a completely positive map and its place among the two-sided operators.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group in biquaternionic form and the double cover.
+- [Operator and the Polar Decomposition of a Split-Complex Number](operator-and-the-polar-decomposition-of-a-split-complex-number.html), for the commutative case where the sandwich collapses to $\langle Q\rangle_{*}$ times the identity.
+- [Operator and the Polar Decomposition of a Reduced Biquaternion](operator-and-the-polar-decomposition-of-a-reduced-biquaternion.html), for the commutative case where the sandwich collapses to multiplication by the modulus squared and the phases cancel.

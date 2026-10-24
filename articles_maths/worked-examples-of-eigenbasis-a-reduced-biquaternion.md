@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes the eigenvalue decomposition and the eigenbasis of eight reduced biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections and the eigenbasis are those of *Eigenbasis of a Reduced Biquaternion*; no definition or proof is repeated.
+This article computes the eigenvalue decomposition and the eigenbasis of eight reduced biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections and the eigenbasis are those of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*; no definition or proof is repeated.
 
 Each case is read from the two complex coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. The eigenvalues, the eigenprojections, the eigenbasis, the matrix of multiplication and its diagonal form are computed from them by the formulas of §*The Method*. The eigenbasis is checked by the two identities
 
@@ -836,7 +836,7 @@ and in particular $\breve Q^2=2\breve Q=2+2j$. There is no inverse. The two spin
 
 ## Further Reading
 
-- [Eigenbasis of a Reduced Biquaternion](eigenbasis-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the Peirce decomposition and the eigenbasis.
+- [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the Peirce decomposition and the eigenbasis.
 - [Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations](eigenbasis-of-a-reduced-biquaternion-in-matrix-elements-representations.html), for the matrix models, the spectral projectors and the change of basis.
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the same eight elements read through the polar word.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.

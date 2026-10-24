@@ -45,7 +45,7 @@ The article takes the following results as established and does not prove them a
 | the four factors, their ranges and their order | *Modulus–Unit Polar Decomposition of Biquaternions*, §*The Four Factors* | the word $\tilde Q=r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of Biquaternions*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde q\exp(i\tilde\Psi)$ and its domain |
 | the polar decomposition of the ordinary quaternions | *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors* | the first factor $\tilde q=r\tilde u_{\mathrm r}$ |
-| the eigenvalues and the axis | *Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial* | the Hamilton row of the comparison |
+| the eigenvalues and the axis | *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial* | the Hamilton row of the comparison |
 | the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Exponential* and §*The Logarithm* | the second factor $\exp(i\tilde\Psi)$ |
 
 The key identity proved here is that of the construction with the polar modulus, $\tilde q=\tilde q_r(\cos\tilde\Psi)^{-1}$; it is proved in §*The Construction From the Parts*.
@@ -303,7 +303,7 @@ $$
 
 so both the modulus and the angle are real and $\vec U = \vec q/|\vec q|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar decomposition of the companion articles *Modulus–Unit Polar Decomposition of Quaternions* and *Exponential Polar Decomposition of Quaternions*, in the two forms they give it: the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ with $r = \Rho$ and $\tilde u_{\mathrm r} = \exp(\vec U\Theta)$, and the exponential form $\exp(\ln r)\exp(\mu\tfrac{\theta}{2})$ with $\mu = \vec U$ and $\theta = 2\Theta$, the exponential article's $\theta$ being twice the angle of the unit factor, which is $\Theta$ here. The identification is exact rather than asymptotic. The quaternion pairing is available on the same elements and is degenerate there: $\tilde q_i = 0$, hence $\tan\tilde\Psi = 0$, $\tilde\Psi = 0$ and $\tilde q = \tilde q_r = \tilde{Q}$, the element itself in the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ of the modulus–unit article, with $r = \sqrt{\langle\tilde Q\rangle_{\natural}}$ and $\tilde u_{\mathrm r} = \tilde{Q}/r$; the second factor is trivial. In this limit the two named pairings are two readings of the same two-factor word of the modulus–unit article: the quaternion pairing gives the word itself, with its second factor trivial, and the Hamilton pairing gives the exponential form of its unit factor.
 
-**A complex scalar.** If $\tilde{Q} = ze_t$ with $z\in\mathbb{C}$ and $\operatorname{Re}z\neq0$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable. This is the scalar regime of *Eigenbasis of a Biquaternion*, §*The Scalar Regime*: the element is semisimple with a repeated eigenvalue, and its eigenprojections are not unique. The quaternion pairing gives
+**A complex scalar.** If $\tilde{Q} = ze_t$ with $z\in\mathbb{C}$ and $\operatorname{Re}z\neq0$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable. This is the scalar regime of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Scalar Regime*: the element is semisimple with a repeated eigenvalue, and its eigenprojections are not unique. The quaternion pairing gives
 
 $$
 \tilde q_r = (\operatorname{Re}z)e_t, \qquad \tilde q_i = (\operatorname{Im}z)e_t, \qquad \tan\tilde\Psi = \frac{\operatorname{Im}z}{\operatorname{Re}z}\,e_t, \qquad \tilde q = \frac{\operatorname{Re}z}{\cos\tilde\Psi}\,e_t = |z|\,e_t ,
@@ -421,7 +421,7 @@ Under the three conjugations complex conjugation fixes the modulus and flips the
 
 ## Further Reading
 
-- [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html), for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
+- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm of which the second factor of the pairing is built, and which carry the branch ambiguity of the construction.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four exponentials and the existence and uniqueness of the word that the pairing regroups.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and §*The Algorithm* of that article for the procedure itself, the factors in the coordinates of $\tilde{Q}$ and the exponents with their positions.
