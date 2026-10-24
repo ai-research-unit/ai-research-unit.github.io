@@ -152,7 +152,7 @@ The pin group of the general quaternionic bilinear form is $\mathrm{Pin}=\{\tild
 
 ## Further Reading
 
-- [The Pin and Spin Groups of the Biquaternion Algebra](the-pin-and-spin-groups-of-the-biquaternion-algebra.html), the plain sibling, where the shell $N=\pm1$ has no counterpart, the isometry condition is vacuous and the reflections of the plain form lie outside the two-sided family.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), §*The Isometry Group and the Absence of a Pin Group*, the plain sibling, where the shell $N=\pm1$ has no counterpart, the isometry condition is vacuous and the reflections of the plain form lie outside the two-sided family.
 - [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the operator and its laws
 - [One-Sided Operators on the General Quaternionic Algebra](one-sided-operators-on-the-general-quaternionic-algebra.html), for the factors and the multiplicative criterion
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the ambient group and its topology

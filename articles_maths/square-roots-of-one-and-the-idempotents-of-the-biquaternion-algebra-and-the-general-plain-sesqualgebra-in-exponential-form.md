@@ -120,15 +120,7 @@ and for $w$ of norm one the values are $C=\exp(2i\theta)$ and $\langle\cdot\rang
 
 ### The Sesqualgebra: the Root Set Is the Unit-Scalar Family
 
-**Theorem (quoted).** In the general plain sesqualgebra the roots of $+1$ are exactly the elements of the unit-scalar form of real unit $w$,
-
-$$
-\boxed{\; \tilde\Xi=\exp(i\theta)w,\qquad \theta\in\mathbb{R},\quad w\in\mathbb{H}\ \text{real},\quad \lvert w\rvert=1 \;},
-$$
-
-a single real four-parameter family $\mathrm{U}(1)\cdot S^{3}$, which is the unitary group $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$; and no root of $+1$ is a zero divisor.
-
-The theorem is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Roots of One*, and the group reading is *The Unitary Group of the Biquaternion Algebra*. The exponential form is complete here: the family of the theorem and the unit-scalar form with $\lvert w\rvert=1$ are one and the same set, so the roots of $+1$ of the sesqualgebra are read off two factors, a central phase and a rotor.
+**Theorem (quoted).** In the general plain sesqualgebra the roots of $+1$ are exactly the elements of the unit-scalar form $\tilde\Xi=\exp(i\theta)w$ over a real unit quaternion $w$, a single real four-parameter family $\mathrm{U}(1)\cdot S^{3}=\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$, none of them a zero divisor; the proof is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Roots of One*, and the group reading is *The Unitary Group of the Biquaternion Algebra*.
 
 The family contains the Hermitian roots of the algebra on the same two axes: the roots $\pm e_t$ at $\theta\in\{0,\pi\}$ and $w=\pm e_t$, and the purely imaginary roots $i\vec u_{\mathrm n}$ at $\theta=\pm\pi/2$ and $w=\vec u_{\mathrm n}$, the roots written $\tilde\Xi=\pm i\vec u$ in the algebra's article. It contains much more beside them, the whole sphere of the real unit quaternions at $\theta=0$ among the rest; and the non-trivial roots of the algebra lie in it at no phase. The parametrisation has kernel $\{(0,e_t),(\pi,-e_t)\}$ and is otherwise injective.
 

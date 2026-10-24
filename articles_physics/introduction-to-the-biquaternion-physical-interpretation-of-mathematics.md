@@ -143,9 +143,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### Operators
 
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
-- [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html)
+- [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), §*The Isometry Group and the Absence of a Pin Group*
 - [One-Sided Operators on the Biquaternion Algebra](../articles_maths/one-sided-operators-on-the-biquaternion-algebra.html)
-- [The Pin and Spin Groups of the Biquaternion Algebra](../articles_maths/the-pin-and-spin-groups-of-the-biquaternion-algebra.html)
 - [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](../articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html)
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra and the General Plain Sesqualgebra in Exponential Form](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra-and-the-general-plain-sesqualgebra-in-exponential-form.html)
 

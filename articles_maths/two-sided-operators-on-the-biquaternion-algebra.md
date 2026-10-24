@@ -8,7 +8,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),
 $$
 
-whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\mathrm{diag}(1,-1,-1,-1)$, and let $F^{\approx}$ be the associate, or transpose, of a $\mathbb{C}$-linear map for this form (*The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*).
+whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\mathrm{diag}(1,-1,-1,-1)$, and let $F^{\approx}$ be the associate, or transpose, of a $\mathbb{C}$-linear map for this form (*The Four Adjoints of the Biquaternion Algebra in Examples*).
 
 For $\tilde Q_5,\tilde Q_3\in\mathbb{B}$ define the **two-sided operator**
 
@@ -19,7 +19,7 @@ $$
 
 the product of a left and a right multiplication, with the two parameters independent. These operators are the subject of the article. They contain the one-sided ones as the two boundary cases $\tilde Q_3=e_t$ and $\tilde Q_5=e_t$, they contain every inner automorphism, and they are the elements of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ read on the algebra itself.
 
-The article is the parallel of *One-Sided Operators on the Biquaternion Algebra*, section for section, and the parallel is what isolates the cost of the second parameter. Three things change. The composition law **reverses the second slot**, $\tilde Q_3$ and $\tilde D$ exchanging their places, because the right multiplications form an anti-representation. The adjoint **swaps the two parameters**, $(L_{\tilde Q_5}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}$, because association is the transpose for the plain form, whereas the Hermitian dagger and the quaternionic adjoint keep the parameter they act on. And the criteria become criteria on the **product** of the parameters: self-adjointness is $\tilde Q_3=\lambda\tilde Q_5$, preservation of the form is $\tilde Q_3\tilde Q_5=\pm e_t$, multiplicativity is $\tilde Q_5\tilde Q_3=e_t$. No norm enters any of the three, which is the second sharp difference from the quaternionic pair, where the corresponding criteria turn on $\langle\cdot\rangle_{\natural}$.
+The article is the parallel of *One-Sided Operators on the Biquaternion Algebra*, section for section, and the parallel is what isolates the cost of the second parameter. Three things change. The composition law **reverses the second slot**, $\tilde Q_3$ and $\tilde D$ exchanging their places, because the right multiplications form an anti-representation. The adjoint **swaps the two parameters**, $(L_{\tilde Q_5}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}$, because association is the transpose for the plain form, whereas the Hermitian dagger and the quaternionic adjoint keep the parameter they act on. And the criteria become criteria on the **product** of the parameters: self-adjointness is $\tilde Q_3=\lambda\tilde Q_5$, preservation of the form is $\tilde Q_3\tilde Q_5=\pm e_t$, multiplicativity is $\tilde Q_5\tilde Q_3=e_t$. No norm enters any of the three, which is the second sharp difference from the quaternionic pair, where the corresponding criteria turn on $\langle\cdot\rangle_{\natural}$. It is for the same reason that the form selects no shell of parameters, and the isometry group of the family is computed in §*The Isometry Group and the Absence of a Pin Group*: every unit acts, with the second parameter forced to $\pm\tilde Q_5^{-1}$, and the form's own quadratic form is not multiplicative, so the level set that would serve as a pin group is not a group.
 
 The algebra, the conjugations and the remarkable subspaces are *The Biquaternion Algebra and Its Vector Spaces*, *The Group of Involutions* and *Introduction to the Remarkable Subspaces*; the form and its pairings are *The Four Forms and the Four Algebraic Norms*; the enveloping algebra and the two-sided operators as its elements are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the one-sided factors are *One-Sided Operators on the Biquaternion Algebra*.
 
@@ -91,7 +91,7 @@ $$
 \boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5} \;}.
 $$
 
-*Proof.* The transpose of a composite reverses the order, $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ (*The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*), and the transposes of the factors are the crossed one-sided operators, $(L_{\tilde Q_5})^{\approx}=R_{\tilde Q_5}$ and $(R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}$ (*One-Sided Operators on the Biquaternion Algebra*):
+*Proof.* The transpose of a composite reverses the order, $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ (*The Four Adjoints of the Biquaternion Algebra in Examples*), and the transposes of the factors are the crossed one-sided operators, $(L_{\tilde Q_5})^{\approx}=R_{\tilde Q_5}$ and $(R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}$ (*One-Sided Operators on the Biquaternion Algebra*):
 
 $$
 \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=\bigl(R_{\tilde Q_3}\bigr)^{\approx}\bigl(L_{\tilde Q_5}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}.
@@ -178,6 +178,38 @@ and the multiplier is the central scalar $\tilde Q_3\tilde Q_5$, not a norm. The
 
 **Remark (no norm enters, and the law is the weaker for it).** The quaternionic pair of the corpus reads the same two questions through the norm and carries the correspondingly stronger law: there $\Theta_{\tilde Q_5}(\tilde Q_1)\Theta_{\tilde Q_5}(\tilde Q_2)=\langle\tilde Q_5\rangle_{\natural}\,\Theta_{\tilde Q_5}(\tilde Q_1\tilde Q_2)$ holds for **every** parameter, with the norm as the scalar, and genuine multiplicativity up to a scalar is the condition $\langle\tilde Q_5\rangle_{\natural}=1$. Here the criteria are $\tilde Q_3\tilde Q_5=\pm e_t$ and $\tilde Q_5\tilde Q_3=e_t$: conditions on the product of the two parameters, in which no norm and no conjugation appears, and the partial law above holds only when that product is central. The two shapes are not the same theorem with different letters; the plain form carries no twist for a norm to absorb, so it loses the parameter-free law and keeps the criterion.
 
+## The Isometry Group and the Absence of a Pin Group
+
+**Theorem (the isometries of the family).** The map $L_{\tilde Q_5}R_{\tilde Q_3}$ is an isometry of the plain form if and only if $\tilde Q_3\tilde Q_5=\pm e_t$. Equivalently, every unit $\tilde Q_5$ acts, with $\tilde Q_3=\pm\tilde Q_5^{-1}$, and the isometry group of the family is the image of the pairs $(\tilde Q_5,\pm\tilde Q_5^{-1})$.
+
+*Proof.* The operator is invertible exactly when both parameters are units, and an invertible isometry has inverse its adjoint, so $L_{\tilde Q_5}R_{\tilde Q_3}\circ L_{\tilde Q_3}R_{\tilde Q_5}=\mathrm{id}$. By the composition law the composite is $L_{\tilde Q_5\tilde Q_3}R_{\tilde Q_5\tilde Q_3}$, and $L_{\tilde A}R_{\tilde A}=\mathrm{id}$ holds exactly when $\tilde A$ is central with $\tilde A^{2}=e_t$, that is $\tilde A=\pm e_t$. Hence $\tilde Q_5\tilde Q_3=\pm e_t$, and the pairs with $\tilde Q_3=\pm\tilde Q_5^{-1}$ are exactly the solutions.
+
+**Corollary (the two cosets and the dimension).** The isometries of the family are the operators
+
+$$
+L_{\tilde Q_5}R_{\tilde Q_5^{-1}}=\mathrm{Ad}_{\tilde Q_5},\qquad L_{\tilde Q_5}R_{-\tilde Q_5^{-1}}=-\mathrm{Ad}_{\tilde Q_5},
+$$
+
+and the two assignments are well defined and distinct. On a unit the inner automorphism depends on $\tilde Q_5$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, so the group is $\{\pm\mathrm{Ad}_{\tilde Q_5}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\}$, of complex dimension three; it is not all of $O_4(\mathbb{C})$, which has dimension six. The factor $\{\pm1\}$ is discrete and $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ is connected, so the two cosets are the two components of the group.
+
+**The quadratic form is the obstruction.** Put $\mathfrak{Q}(\tilde Q)=\mathrm{Sc}(\tilde Q^{2})$, the quadratic form polarised to the plain bilinear form. It is **not** multiplicative: $\mathfrak{Q}(i\vec e_z)=\mathfrak{Q}(i\vec e_y)=1$, while the product has $\mathfrak{Q}\bigl((i\vec e_z)(i\vec e_y)\bigr)=-1$. The level set $\{\mathfrak{Q}=\pm1\}$ is therefore not closed under multiplication, and no scalar condition on one parameter can cut a subgroup out of the family.
+
+**Corollary (no pin group, and the kernel).** The form has no pin group: its level sets are not groups, and the isometry condition is a condition on the **pair** of parameters, $\tilde Q_3\tilde Q_5=\pm e_t$, not on either parameter alone. The kernel of $(\tilde Q_5,\tilde Q_3)\mapsto L_{\tilde Q_5}R_{\tilde Q_3}$ is $\{(\lambda e_t,\lambda^{-1}e_t)\}\cong\mathbb{C}^{\times}$, so the isometry group is the quotient of the pairs $(\tilde Q_5,\pm\tilde Q_5^{-1})$ by this kernel.
+
+*Proof.* A pin group needs a multiplicative form whose level set is a subgroup, and $\mathfrak{Q}$ is not multiplicative. The kernel is computed in *The Two-Sided Family*.
+
+**The reflections lie outside the family.** For $\tilde Q_4$ with $\mathfrak{Q}(\tilde Q_4)\neq0$ the reflection of the plain form in the direction $\tilde Q_4$ is
+
+$$
+\rho_{\tilde Q_4}(\tilde Q)=\tilde Q-\frac{2\langle\tilde Q,\tilde Q_4\rangle}{\mathfrak{Q}(\tilde Q_4)}\tilde Q_4 .
+$$
+
+*Proof.* The reflection formula is the definition of the reflection of a quadratic space, so $\rho_{\tilde Q_4}$ is an isometry and its determinant is $-1$. For the second statement, three cases exhaust the directions. If $\tilde Q_4=\lambda e_t$ is central, $\rho_{\lambda e_t}=\operatorname{diag}(-1,1,1,1)$: it negates the centre, so it is not $+\mathrm{Ad}$, and if it were $-\mathrm{Ad}_{\tilde Q_5}$ then $\mathrm{Ad}_{\tilde Q_5}$ would act as $-\mathrm{id}$ on $V$, of determinant $-1$, whereas every inner automorphism acts on $V$ with determinant $+1$. If $\tilde Q_4\in V$ is pure, $\rho_{\tilde Q_4}$ fixes the centre and acts as $-1$ on the line $\mathbb{C}\tilde Q_4$ and as $+1$ on its orthogonal complement in $V$, so it is neither $+\mathrm{Ad}$, whose restriction to $V$ has determinant $+1$, nor $-\mathrm{Ad}$, which negates the centre. If $\tilde Q_4$ is mixed, $\rho_{\tilde Q_4}(e_t)=e_t-2Q_{4t}\mathfrak{Q}(\tilde Q_4)^{-1}\tilde Q_4$ has a nonzero vector part, so the reflection moves the centre, while $\pm\mathrm{Ad}$ preserves the line $\mathbb{C}e_t$. Equivalently, under $\mathrm{End}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ a two-sided operator is the elementary tensor $\tilde Q_5\otimes\tilde Q_3$, and the coefficient matrix of a reflection is not one.
+
+A product of two reflections in directions of $V$ is back in the family, $\rho_{\vec e_x}\rho_{\vec e_y}=\mathrm{Ad}_{\vec e_z}$ for the orthogonal pure directions, and every such product is an inner automorphism; a product of an odd number of reflections is not two-sided, and a product of two reflections of the whole space in general directions need not be. The improper isometries are therefore not operators of the algebra: their carrier is the Clifford algebra of the form, in its odd slot, where the reflection in a non-isotropic vector is $\rho_u(v)=-uvu^{-1}$ (*Biquaternion Versors and the Orthogonal Group*, *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*).
+
+**Remark (the quaternionic twin, in one line).** There the sandwich $\Theta_{\tilde Q_5}$ is an isometry exactly when $\langle\tilde Q_5\rangle_{\natural}=\pm1$, the level set is a group because the norm is multiplicative, and the reflections of the vector subspace lie inside the family. Here nothing is selected, the shell is not a group, and the reflections lie outside. The difference has one source: the plain form is the scalar part of the algebra's own product, while the quaternionic form carries the norm as a twist.
+
 ## Worked Examples
 
 **The identity and its multiples.** $L_{e_t}R_{e_t}=\mathrm{id}$, self-adjoint and form preserving; the central multiples $\lambda\,\mathrm{id}=L_{\lambda e_t}R_{e_t}$ are self-adjoint for every $\lambda$, preserve the form only for $\lambda=\pm1$, and are multiplicative only for $\lambda=1$: the three criteria are genuinely different, and the example separates them.
@@ -202,13 +234,11 @@ $$
 
 and the operator $\tilde Q\mapsto \vec e_x\tilde Q\vec e_x$ is anti-multiplicative. It is the negative of the inner automorphism $\mathrm{Ad}_{\vec e_x}$, since $\vec e_x^{-1}=-\vec e_x$; the example is the least degenerate instance of the partial law, and it separates the central-product family from the genuinely multiplicative operators of the theorem. A general parameter does not qualify: for $\tilde Q_5=1+\vec e_x+(1+2i)\vec e_y$ the square is not central, and no scalar makes the product law hold.
 
-**The powers and the exponential.** For $\tilde Q_5=\vec e_x$, $\tilde Q_3=\vec e_y$ the second power is $L_{\vec e_x^{2}}R_{\vec e_y^{2}}=L_{-e_t}R_{-e_t}=\mathrm{id}$, so the powers alternate between $L_{\vec e_x}R_{\vec e_y}$ and the identity; the exponential $\exp(L_{\vec e_x}R_{\vec e_y})$ is the operator $\tilde Q\mapsto\cosh(1)\tilde Q+\sinh(1)\vec e_x\tilde Q\vec e_y$, which is a sum of two two-sided operators and is not itself two-sided, the sum of decomposable tensors having ceased to be decomposable.
-
-**A numerical check of the composition and the swap.** For random parameters the identities $(L_{\tilde Q_5}R_{\tilde Q_3})(L_{\tilde Q_4}R_{\tilde D})=L_{\tilde Q_5\tilde Q_4}R_{\tilde D\tilde Q_3}$ and $(L_{\tilde Q_5}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}$ hold to machine precision, and the four criteria of the article were checked on random, central, pure, null and unit parameters.
-
 ## Summary
 
 The two-sided operators are the products $L_{\tilde Q_5}R_{\tilde Q_3}(\tilde Q)=\tilde Q_5\tilde Q\tilde Q_3$ of a left and a right multiplication with independent parameters; they contain the one-sided ones at the boundary cases and they are the decomposable tensors of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, whose products span the whole operator algebra of complex dimension sixteen. Composition reverses the second slot, $(\tilde Q_5,\tilde Q_3)(\tilde Q_4,\tilde D)=(\tilde Q_5\tilde Q_4,\tilde D\tilde Q_3)$, and the adjoint for the general plain bilinear form swaps the two parameters. The type, automorphism and multiplicativity criteria are criteria on the product of the pair: self-adjoint exactly when $\tilde Q_3=\lambda\tilde Q_5$, never skew-adjoint except for the zero operator, form preserving exactly when $\tilde Q_3\tilde Q_5=\pm e_t$, multiplicative exactly when $\tilde Q_5\tilde Q_3=e_t$; when the product $\tilde Q_3\tilde Q_5$ is merely central the operator is still multiplicative up to that central scalar, which is the weaker and differently shaped analogue of the quaternionic law $\Theta_{\tilde Q_5}(\tilde Q_1)\Theta_{\tilde Q_5}(\tilde Q_2)=\langle\tilde Q_5\rangle_{\natural}\Theta_{\tilde Q_5}(\tilde Q_1\tilde Q_2)$. The multiplicative and form-preserving operators are the inner automorphisms of the units, and no norm enters any criterion — the sharp contrast with the quaternionic pair of the corpus. At $\tilde Q_3=e_t$ all the criteria reduce to the one-sided ones.
+
+The isometries of the family are the two cosets $\pm\mathrm{Ad}_{\tilde Q_5}$, of complex dimension three, reached by every unit with the second parameter forced to $\pm\tilde Q_5^{-1}$ and no condition on a norm, and the two cosets are the two components; the shell $\mathfrak{Q}=\pm1$ is not closed, so the form has no pin group; the kernel is $\mathbb{C}^{\times}$; and the reflections, of determinant $-1$, lie outside the family.
 
 ## Summary of Notation
 
@@ -228,13 +258,15 @@ The two-sided operators are the products $L_{\tilde Q_5}R_{\tilde Q_3}(\tilde Q)
 | $L_{\tilde Q_5}R_{\tilde Q_3}$ multiplicative $\iff \tilde Q_5\tilde Q_3=e_t$ | Then $L_{\tilde Q_5}R_{\tilde Q_5^{-1}}=\mathrm{Ad}_{\tilde Q_5}$ |
 | $\tilde Q_3\tilde Q_5$ central $\implies$ multiplicative up to $\tilde Q_3\tilde Q_5$ | The partial law; the scalar is the central product, not a norm |
 | $(\tilde Q_5,\tilde Q_3)\mapsto L_{\tilde Q_5}R_{\tilde Q_3}$ | Bilinear; injective in each slot at a unit; kernel $\{(\lambda e_t,\lambda^{-1}e_t)\}$ |
+| $\{\pm\mathrm{Ad}_{\tilde Q_5}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\}$ | The isometries of the family, of complex dimension three, in two components |
+| $\mathfrak{Q}(\tilde Q)=\mathrm{Sc}(\tilde Q^{2})=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$ | The quadratic form of the plain form; not multiplicative |
+| $\rho_{\tilde Q_4}(\tilde Q)=\tilde Q-2\langle\tilde Q,\tilde Q_4\rangle\mathfrak{Q}(\tilde Q_4)^{-1}\tilde Q_4$ | The reflection; an isometry of determinant $-1$, not two-sided |
 
 ## Further Reading
 
-- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the four adjoints of one two-sided operator and the self-adjointness criteria, of which the association column is the first
-- [The Pin and Spin Groups of the Biquaternion Algebra](the-pin-and-spin-groups-of-the-biquaternion-algebra.html), the plain twin of the quaternionic pin and spin article, for the isometry side of the criterion $\tilde Q_3\tilde Q_5=\pm e_t$: the two cosets $\pm\mathrm{Ad}_{\tilde Q_5}$, the vacuous isometry condition, and the reason no shell of the plain form is a group.
+- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the four adjoints of one two-sided operator and the self-adjointness criteria, of which the association column is the first
 - [One-Sided Operators on the Biquaternion Algebra](one-sided-operators-on-the-biquaternion-algebra.html), the companion article, for the factors $L_{\tilde Q_5}$ and $R_{\tilde Q_3}$, the swap $L^{\approx}=R$, and the one-sided form-preserving theorem used in the proof of the isometry criterion.
-- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the reversal $(FG)^{\approx}=G^{\approx}F^{\approx}$.
+- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the reversal $(FG)^{\approx}=G^{\approx}F^{\approx}$.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ as the operator algebra and the two-sided operators as the decomposable tensors.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the place of $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ among the pairings of the algebra.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null parameters and the complementary zero divisor pairs that the skew criterion excludes.

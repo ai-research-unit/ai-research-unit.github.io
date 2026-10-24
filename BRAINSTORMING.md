@@ -35,15 +35,7 @@ in C, move Complex Polar Element Representation into a new section : Polar decom
 
 
 
-Operator polar decomposition
-
-polar representation
-
-
-
-LOG ???
-
-P± in that formula are exactly idempotents, and the logarithm formula is an idempotent/spectral decomposition.
+Krein
 
 
 Wick 2 

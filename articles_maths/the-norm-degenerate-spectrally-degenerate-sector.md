@@ -244,3 +244,4 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the place of $N$ among the four norms and of $B^2$ outside them.
+- [The Norm-Degenerate, Spectrally Regular Sector](the-norm-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.

@@ -8,7 +8,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),
 $$
 
-whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\mathrm{diag}(1,-1,-1,-1)$. The adjoint of a $\mathbb{C}$-linear map of $\mathbb{B}$ for this form is its **associate** $F^{\approx}$, the involution of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
+whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\mathrm{diag}(1,-1,-1,-1)$. The adjoint of a $\mathbb{C}$-linear map of $\mathbb{B}$ for this form is its **associate** $F^{\approx}$, the involution of *The Four Adjoints of the Biquaternion Algebra in Examples*.
 
 For $\tilde Q_5,\tilde Q_3\in\mathbb{B}$ define the **left** and the **right multiplication**
 
@@ -26,7 +26,7 @@ $$
 
 The transpose of the left regular representation is the right regular representation, and the transpose of the right one is the left one. The Hermitian dagger keeps the side, $(L_{\tilde Q_5})^{*}=L_{\tilde Q_5^{*}}$, and the quaternionic adjoint keeps the side, $(L_{\tilde Q_5})^{N}=L_{\tilde Q_5^{\natural}}$, so the swap belongs to the plain form alone. It is the reason the operator pair of this form is not a transliteration of the other three.
 
-The algebra, the four conjugations and the remarkable subspaces are *The Biquaternion Algebra and Its Vector Spaces*, *The Group of Involutions* and *Introduction to the Remarkable Subspaces*; the form, its Gram matrix and its four pairings are *The Four Forms and the Four Algebraic Norms*; association, with the identity $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ and the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the general transpose of a bilinear form is *Bilinear Forms*; the general one-sided operator of an algebra on itself is *Algebras of Endomorphisms* and *The Left and Right Regular Representations*.
+The algebra, the four conjugations and the remarkable subspaces are *The Biquaternion Algebra and Its Vector Spaces*, *The Group of Involutions* and *Introduction to the Remarkable Subspaces*; the form, its Gram matrix and its four pairings are *The Four Forms and the Four Algebraic Norms*; association, with the identity $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ and the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, is *The Four Adjoints of the Biquaternion Algebra in Examples*; the general transpose of a bilinear form is *Bilinear Forms*; the general one-sided operator of an algebra on itself is *Algebras of Endomorphisms* and *The Left and Right Regular Representations*.
 
 ## The One-Sided Operators
 
@@ -220,7 +220,7 @@ The left and the right multiplications $L_{\tilde Q_5}(\tilde Q)=\tilde Q_5\tild
 
 ## Further Reading
 
-- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the identity $(FG)^{\approx}=G^{\approx}F^{\approx}$ used throughout.
+- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the identity $(FG)^{\approx}=G^{\approx}F^{\approx}$ used throughout.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), the companion article, for the products $L_{\tilde Q_5}R_{\tilde Q_3}$, their swap adjoint, and the type, automorphism and isometry criteria of the family.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the two bilinear and the two sesquilinear pairings of the algebra and the place of $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ among them, and the polarisation of the form and its quadratic companion.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the two-sided operators as its elements.
