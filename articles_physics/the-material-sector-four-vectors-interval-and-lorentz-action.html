@@ -99,7 +99,7 @@
 </tr>
 <tr>
 <td>The four forms and their restrictions</td>
-<td><a href="../articles_maths/the-4-forms-over-the-biquaternion-c-space.html">The 4 Forms over the Biquaternion $\mathbb{C}$ Space</a>, <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a></td>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a>, <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a></td>
 </tr>
 <tr>
 <td>The commutator and the Lie algebra</td>
@@ -138,11 +138,11 @@ $$</p>
 <h3 id="the-norm-the-units-and-the-cone">The Norm, the Units and the Cone</h3>
 <p>The quaternionic norm on the sector is</p>
 <p>$$
-\boxed{\;N(\tilde Q)=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2{t'}^2+x^2+y^2+z^2\;}.
+\boxed{\;\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2{t'}^2+x^2+y^2+z^2\;}.
 $$</p>
 <p>It is real and of signature $(3,1)$: three positive spatial directions and one negative temporal one. The inverse formula is</p>
 <p>$$
-\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)},
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$</p>
 <p>so an element is invertible exactly when its norm is non-zero. The <strong>unit group</strong> is the complement of the norm-zero set. On the zero set the element is a <strong>zero divisor</strong>: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the <strong>light cone</strong>, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.</p>
 <h3 id="the-four-forms">The Four Forms</h3>
@@ -161,11 +161,11 @@ $$</p>
 $$</p>
 <p>The first is negative definite of signature $(0,4)$, the second is the interval of signature $(3,1)$, the third is positive definite of signature $(4,0)$, and the fourth is the negative interval of signature $(1,3)$. The two sesquilinear forms are the negatives of the two bilinear ones, because the star is minus the identity on the sector. The sector carries <strong>no area pairing</strong>: the alternating companion of the forms vanishes identically on it, since multiplication by the central imaginary carries $\mathbb{M}_-$ out of itself, $i\mathbb{M}_-=\mathbb{M}_+$, and no conjugate pair of directions lies inside the sector.</p>
 <h3 id="the-lorentz-action">The Lorentz Action</h3>
-<p>Let $\tilde U_{\mathrm L}\in\mathbb{B}$ have unit quaternionic norm, $N(\tilde U_{\mathrm L})=\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The map</p>
+<p>Let $\tilde U_{\mathrm L}\in\mathbb{B}$ have unit quaternionic norm, $\langle\tilde U_{\mathrm L}\rangle_{\natural}=\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The map</p>
 <p>$$
 \tilde Q\longmapsto\tilde Q_2=\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}
 $$</p>
-<p>carries $\mathbb{M}_-$ into itself and preserves the norm, $N(\tilde Q_2)=N(\tilde Q)$. It is a group action, $(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\tilde Q(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*}=\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\tilde Q\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,</p>
+<p>carries $\mathbb{M}_-$ into itself and preserves the norm, $\langle\tilde Q_2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$. It is a group action, $(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\tilde Q(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*}=\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\tilde Q\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,</p>
 <p>$$
 \boxed{\;\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;},
 $$</p>
@@ -182,20 +182,20 @@ $$</p>
 <h3 id="the-sector-is-spacetime">The Sector Is Spacetime</h3>
 <p>The element $i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ is a spacetime event. Its norm is the squared interval,</p>
 <p>$$
-N(\tilde Q)=-c^2{t'}^2+x^2+y^2+z^2=s^2,
+\langle\tilde Q\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2=s^2,
 $$</p>
 <p>with the sign convention that a timelike interval is negative, a null interval is zero and a spacelike interval is positive. The interval is the norm itself, not the square of a separate norm, and the three cases are the three regions of the cone.</p>
 <p>The temporal coordinate enters as $i c t'$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t'$ real in place of $i c t'$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.</p>
 <p>For a timelike worldline the proper time is</p>
 <p>$$
-d\tau=\frac{1}{c}\sqrt{-N(d\tilde Q)}=\sqrt{d{t'}^2-\frac{dx^2+dy^2+dz^2}{c^2}},
+d\tau=\frac{1}{c}\sqrt{-\langle d\tilde Q\rangle_{\natural}}=\sqrt{d{t'}^2-\frac{dx^2+dy^2+dz^2}{c^2}},
 $$</p>
 <p>and it is the parameter along the worldline. For a null worldline the proper time vanishes, and the worldline is a light ray. The causal structure is the sign of the norm; the future and past cones are its two sheets.</p>
 <p>The speed of light is local. In a material medium $c=1/\sqrt{\epsilon\mu}$ varies from point to point, so the cone, and with it the dictionary, varies; the vacuum value $c_0$ is the limiting case. The sector is a kinematic space: it carries the events, the intervals and the transformations, not the field equations.</p>
 <p><strong>The boundary.</strong> The article does not derive a dynamics. The interval is a kinematic invariant, the cone is a set, and the identification of the sector with the spacetime of a physical theory is the corpus's interpretation. The anti-Hermitian convention is a convention; the Hermitian convention gives the same geometry with the opposite sign.</p>
 <h3 id="the-sign-of-the-interval-is-data-of-the-embedding">The Sign of the Interval Is Data of the Embedding</h3>
-<p>The interval is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, so the sign of a product is the product of the signs of its factors. In the convention of this article a timelike element has $N<0$, so the product of two timelike elements is spacelike; a timelike and a spacelike element multiply to a timelike one; and a null factor makes the product null. The central generator reverses the norm, $N(i\tilde Q)=-N(\tilde Q)$, so the multiplication by $i$ that exchanges the sectors also flips the sign of the interval.</p>
-<p>The interval is therefore the form that a change of <strong>local complex structure</strong> moves. On a fixed real slice the algebra fixes the form; which element is timelike, null or spacelike is then a statement about the slice, not about the complex algebra alone. The mass is read off the modulus of the norm — the level set $N=-m^2c^2$ is the mass shell — and the sector fixes the sign convention; the choice of slice is the third piece of the reading.</p>
+<p>The interval is multiplicative, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, so the sign of a product is the product of the signs of its factors. In the convention of this article a timelike element has $\langle\tilde Q\rangle_{\natural}<0$, so the product of two timelike elements is spacelike; a timelike and a spacelike element multiply to a timelike one; and a null factor makes the product null. The central generator reverses the norm, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, so the multiplication by $i$ that exchanges the sectors also flips the sign of the interval.</p>
+<p>The interval is therefore the form that a change of <strong>local complex structure</strong> moves. On a fixed real slice the algebra fixes the form; which element is timelike, null or spacelike is then a statement about the slice, not about the complex algebra alone. The mass is read off the modulus of the norm — the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ is the mass shell — and the sector fixes the sign convention; the choice of slice is the third piece of the reading.</p>
 <p><strong>The boundary.</strong> The embedding here is the choice of real slice and of local complex structure, not an embedding of a curved manifold. No dynamical metric, no Einstein equation and no back-reaction are derived. The sign of the norm at a point is not an observable by itself; only the ratios and the level sets are.</p>
 <h3 id="the-seven-four-vectors">The Seven Four-Vectors</h3>
 <p>The sector carries the standard four-vectors of relativistic physics. The table gives the element, its components and its invariant.</p>
@@ -254,7 +254,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>Every entry has the same structure: an imaginary scalar part, which is the time component, and a real vector part, which is the spatial one. Every entry transforms by rotor conjugation, with a boost rotor for a change of velocity and a rotation rotor for a change of spatial frame. The norm is the invariant of the entry: the interval for the position, $-c^2$ for the velocity, $-m^2c^2$ for the momentum, zero for the wavevector of light.</p>
-<p>The <strong>mass shell</strong> is the level set $N(\tilde P)=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The <strong>four-potential</strong> is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\chi$, and its norm is not gauge invariant; the field strength built from it is. The <strong>four-current</strong> satisfies the continuity equation $\partial_\mu J^\mu=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The <strong>four-force</strong> $\tilde K_{\mathrm f}$ is orthogonal to the four-velocity when it does not change the rest mass, $\tilde K_{\mathrm f}\cdot\tilde V=0$, and then the norm $N(\tilde V)=-c^2$ is preserved. A force with a non-zero $\tilde K_{\mathrm f}\cdot\tilde V$ changes the rest mass.</p>
+<p>The <strong>mass shell</strong> is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The <strong>four-potential</strong> is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\chi$, and its norm is not gauge invariant; the field strength built from it is. The <strong>four-current</strong> satisfies the continuity equation $\partial_\mu J^\mu=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The <strong>four-force</strong> $\tilde K_{\mathrm f}$ is orthogonal to the four-velocity when it does not change the rest mass, $\tilde K_{\mathrm f}\cdot\tilde V=0$, and then the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A force with a non-zero $\tilde K_{\mathrm f}\cdot\tilde V$ changes the rest mass.</p>
 <p><strong>The boundary.</strong> The table is a dictionary, not a derivation. The field equations, the Lorentz force law and the Dirac equation are not results of the algebra; the algebra supplies the carrier space and the invariant. The identification of an algebraic element with a physical four-vector is the interpretive step, and it is the same step as in the standard four-vector formalism.</p>
 <h3 id="the-eigenpair-is-the-doppler-pair">The Eigenpair Is the Doppler Pair</h3>
 <p>The eigenvalue decomposition of the element gives one more reading of the four-momentum. With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are</p>
@@ -265,11 +265,11 @@ $$</p>
 <p>$$
 \nu_+\nu_-=\frac{E^2}{c^2}-\lvert\vec p\rvert^2=m^2c^2,
 $$</p>
-<p>while the product of the eigenvalues is the biquaternion norm, $\lambda_+\lambda_-=-m^2c^2=N(\tilde P)$. The mass is therefore read from the product, not from either eigenvalue.</p>
+<p>while the product of the eigenvalues is the biquaternion norm, $\lambda_+\lambda_-=-m^2c^2=\langle\tilde P\rangle_{\natural}$. The mass is therefore read from the product, not from either eigenvalue.</p>
 <p>The two eigenvalues are not two particles and not two energies. They are the one momentum written in the two idempotent coordinates of <em>Eigenvalue Decomposition and Eigenbasis of a Biquaternion</em>, §<em>The Eigenvalue Decomposition</em>. The eigenprojections are idempotents, hence null elements, and they are the two spectral components of the momentum. The pair depends on the frame: a boost changes $\vec p$ and with it the two frequencies, while their product stays $-m^2c^2$.</p>
 <p><strong>The boundary.</strong> The reading needs $B\neq0$, that is, a nonzero spatial momentum. At $\vec p=0$ the two eigenvalues coincide at $iE/c$ and the two-projector writing is not unique. A null momentum has $B=E/c$, so one frequency vanishes; the element stays semisimple and the decomposition survives with a zero eigenvalue. The algebra gives the frequencies, not a particle count and not a numerical mass.</p>
 <h3 id="the-light-cone-is-the-zero-divisor-cone">The Light Cone Is the Zero-Divisor Cone</h3>
-<p>The norm-zero set of the sector is exactly its set of zero divisors. A null four-vector has $N(\tilde Q)=0$, so the inverse formula fails and the element has no inverse; equivalently, there is a non-zero element annihilated by it. The <strong>light cone</strong> of Minkowski space is therefore the <strong>zero-divisor cone</strong> of the biquaternion algebra, a structural identity and not an additional assumption.</p>
+<p>The norm-zero set of the sector is exactly its set of zero divisors. A null four-vector has $\langle\tilde Q\rangle_{\natural}=0$, so the inverse formula fails and the element has no inverse; equivalently, there is a non-zero element annihilated by it. The <strong>light cone</strong> of Minkowski space is therefore the <strong>zero-divisor cone</strong> of the biquaternion algebra, a structural identity and not an additional assumption.</p>
 <p>The cone carries three physical readings. First, it is the set of light rays: a null displacement is the displacement of a signal travelling at $c$. Second, it is the characteristic cone of the wave operator: the principal symbol of $\Box$ vanishes exactly on the null directions, so a discontinuity propagates along the cone. Third, it is the boundary of the unit group: on one side of the cone the elements are invertible, on the cone they are not, and the group of units is the complement of the cone.</p>
 <p>The cone also separates the two sheets of the future and the past. The sign of the time component selects the sheet, and the Lorentz group preserves the sheet because it preserves the sign of the time component for a timelike or null vector. A null four-potential is a zero divisor, which is the algebraic form of the statement that a radiation field has no rest frame; a null four-current is the current of a massless charge.</p>
 <p>The same cone is the boundary of the positive cone of the informational sector. The Bloch ball is the trace-one slice of the future light cone of the norm, so the causal cone of the material sector and the positivity cone of the informational sector have one and the same boundary. This is the structural link between causality and probability in the framework.</p>
@@ -298,15 +298,15 @@ $$</p>
 <p>The action preserves the norm when the acting element has unit norm, and then it is the Lorentz action, a change of frame. When the acting element is an idempotent, the action is a projection, and it is a measurement; but the idempotent lies in $\mathbb{M}_+$, not in $\mathbb{M}_-$. The material sector itself owns no non-trivial idempotent: if $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the star to the first relation gives $-\tilde\Pi=\tilde\Pi^2=\tilde\Pi$, so $\tilde\Pi=0$. The measurement projection therefore runs through the informational sector, and the material sector supplies the object, not the outcome.</p>
 <p><strong>The boundary.</strong> The action is established algebra. The interpretation of $\mathbb{M}_+$ as a distinct physical sector is the hypothesis stated in the informational article. The material sector is the acted-upon side of the action whether or not that hypothesis is realised.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>A four-position.</strong> Take $c=1$, $t'=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $N(\tilde Q)=-1+9=8$, a spacelike interval.</p>
-<p><strong>A light ray.</strong> Take $\tilde Q=i e_t+\vec e_x$. Then $N(\tilde Q)=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.</p>
+<p><strong>A four-position.</strong> Take $c=1$, $t'=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $\langle\tilde Q\rangle_{\natural}=-1+9=8$, a spacelike interval.</p>
+<p><strong>A light ray.</strong> Take $\tilde Q=i e_t+\vec e_x$. Then $\langle\tilde Q\rangle_{\natural}=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.</p>
 <p><strong>A boost of a rest position.</strong> Let $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then</p>
 <p>$$
 \tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\psi\,e_t-c\tau\sinh\psi\,\vec e_x,
 $$</p>
-<p>the standard boost $t'_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $N(\tilde Q_2)=-c^2\tau^2$ is unchanged.</p>
-<p><strong>A mass shell.</strong> For $\tilde P=i(E/c)e_t+\vec p$, the norm is $N(\tilde P)=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.</p>
-<p><strong>A four-velocity.</strong> For $\tilde V=i\gamma c\,e_t+\gamma\vec v$, the norm is $N(\tilde V)=-\gamma^2c^2+\gamma^2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.</p>
+<p>the standard boost $t'_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.</p>
+<p><strong>A mass shell.</strong> For $\tilde P=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.</p>
+<p><strong>A four-velocity.</strong> For $\tilde V=i\gamma c\,e_t+\gamma\vec v$, the norm is $\langle\tilde V\rangle_{\natural}=-\gamma^2c^2+\gamma^2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.</p>
 <h2 id="limits">Limits</h2>
 <p>The article interprets the kinematics of the sector: the events, the four-vectors, the interval, the cone and the Lorentz action. It does not derive a dynamics, a field equation or a quantization. The speed of light is local, the anti-Hermitian convention is a convention, and the identification of the sector with the spacetime of a physical theory is the corpus's interpretation. The Lorentz group is assumed as the transformation group of the sector, not derived from the algebra. The four-vectors are identified with elements of the algebra; the identification is the interpretive step.</p>
 <h2 id="summary">Summary</h2>
@@ -314,7 +314,7 @@ $$</p>
 <li>The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.</li>
 <li>Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.</li>
 <li>The light cone is the zero-divisor cone; on it the elements have no inverse, and it is the characteristic cone of the wave operator.</li>
-<li>The unit group is the complement of the cone; the inverse is $\tilde Q^{\natural}/N(\tilde Q)$.</li>
+<li>The unit group is the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.</li>
 <li>The four forms are real on the sector: the interval, its negative, the Euclidean square and its negative; the sector carries no scalar area pairing.</li>
 <li>The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.</li>
 <li>The two eigenvalues of the four-momentum are $i(E/c\pm\lvert\vec p\rvert)$; they are the Doppler pair, and their product is the norm $-m^2c^2$.</li>
@@ -346,11 +346,11 @@ $$</p>
 <td>the reversal, whose fixed space is $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
 <td>the quaternionic norm, the interval</td>
 </tr>
 <tr>
-<td>$\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$</td>
+<td>$\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$</td>
 <td>the inverse, defined off the cone</td>
 </tr>
 <tr>
@@ -394,7 +394,7 @@ $$</p>
 <li><a href="../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html">Eigenvalue Decomposition and Eigenbasis of a Biquaternion</a>, for the spectrum, the eigenprojections and the degenerate regimes.</li>
 <li><a href="../articles_maths/zero-divisors-of-the-biquaternion-algebra.html">Zero Divisors of the Biquaternion Algebra</a>, for the cone and the zero divisors.</li>
 <li><a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units and the Complement of the Zero-Divisor Cone</a>, for the unit group.</li>
-<li><a href="../articles_maths/the-4-forms-over-the-biquaternion-c-space.html">The 4 Forms over the Biquaternion $\mathbb{C}$ Space</a> and <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a>, for the four forms and their restrictions.</li>
+<li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a> and <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a>, for the four forms and their restrictions.</li>
 <li><a href="../articles_maths/lie-algebras-of-sesqualgebras.html">Lie Algebras of Sesqualgebras</a>, for the bracket.</li>
 <li><a href="the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html">The Biquaternion Space, the Group of Involutions and the Six Subspaces</a>, for the place of the sector among the six subspaces.</li>
 <li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the partner sector and the action on this one.</li>

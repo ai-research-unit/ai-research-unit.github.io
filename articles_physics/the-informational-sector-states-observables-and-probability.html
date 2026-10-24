@@ -100,7 +100,7 @@
 </tr>
 <tr>
 <td>The four forms and their restrictions</td>
-<td><a href="../articles_maths/the-4-forms-over-the-biquaternion-c-space.html">The 4 Forms over the Biquaternion $\mathbb{C}$ Space</a>, <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a></td>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a>, <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a></td>
 </tr>
 <tr>
 <td>The action on the material sector and the sandwich</td>
@@ -136,7 +136,7 @@ $$</p>
 $$</p>
 <p>The basis is $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the real scalar block $A_1=\mathbb{R}e_t$ and the imaginary vector block $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. The temporal direction carries a real coordinate and the three spatial directions carry imaginary ones, the reverse of the material sector; the placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.</p>
 <p>The sector is not a subalgebra: the product of two Hermitian elements is Hermitian exactly when they commute, and the commutator of two of them lies in $\mathbb{M}_-$. The sector is a <strong>special Jordan algebra</strong> under the symmetrised product $\tfrac12\{\tilde Q_1,\tilde Q_2\}$, and it is not a Lie algebra.</p>
-<h3 id="the-idempotents-and-the-roots-of-math17">The Idempotents and the Roots of $+1$</h3>
+<h3 id="the-idempotents-and-the-roots-of-math16">The Idempotents and the Roots of $+1$</h3>
 <p>A real unit vector $\vec u$ gives a root of $+1$ in the sector,</p>
 <p>$$
 (i\vec u)^2=i^2\vec u^2=(-1)(-e_t)=+e_t,
@@ -153,7 +153,7 @@ $$</p>
 <h3 id="the-biquaternion-norm-the-spectrum-and-the-positive-cone">The Biquaternion Norm, the Spectrum and the Positive Cone</h3>
 <p>The biquaternion norm on the sector is</p>
 <p>$$
-N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2=c^2{t}^2-{x'}^2-{y'}^2-{z'}^2,
+\langle\tilde Q\rangle_{\natural}=q_t^2-\lvert\vec q'\rvert^2=c^2{t}^2-{x'}^2-{y'}^2-{z'}^2,
 $$</p>
 <p>of signature $(1,3)$: one positive temporal direction and three negative spatial ones. It is indefinite, and it is not the positive form that a density matrix would suggest.</p>
 <p>Every Hermitian element has a closed-form spectrum. Write $\tilde H=h_t e_t+i\vec h$ with $h_t$ and $\vec h$ real, and let $\vec u_h=\vec h/\lvert\vec h\rvert$ for $\vec h\neq0$. Then</p>
@@ -166,7 +166,7 @@ $$</p>
 $$</p>
 <p>The Hermitian form against the unit, the trace and the biquaternion norm read</p>
 <p>$$
-\langle\tilde H,e_t\rangle_{*}=h_t,\qquad \operatorname{Tr}(\tilde H)=2h_t=\lambda_++\lambda_-,\qquad N(\tilde H)=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-.
+\langle\tilde H,e_t\rangle_{*}=h_t,\qquad \operatorname{Tr}(\tilde H)=2h_t=\lambda_++\lambda_-,\qquad \langle\tilde H\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-.
 $$</p>
 <p>The element is <strong>positive</strong> exactly when $h_t\geq\lvert\vec h\rvert$, that is, exactly when both eigenvalues are non-negative. Positivity is a statement about the eigenvalues, not about the biquaternion norm: it is negative exactly when the two eigenvalues have opposite signs.</p>
 <p>The <strong>state slice</strong>, which the trace reads as the trace-one slice, is the family</p>
@@ -180,7 +180,7 @@ $$</p>
 <p>so $\tilde{Ϛ}$ is positive exactly when $\lvert\vec r\rvert\leq1$. The boundary $\lvert\vec r\rvert=1$ is the set of pure states, the interior $\lvert\vec r\rvert<1$ the mixed states, and the centre $\vec r=0$ the maximally mixed state $\tfrac12e_t$. The whole set is the <strong>Bloch ball</strong>, of real dimension three.</p>
 <p>The biquaternion norm of the state is</p>
 <p>$$
-N(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^2\bigr),
+\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14\bigl(1-\lvert\vec r\rvert^2\bigr),
 $$</p>
 <p>so every pure state is a <strong>zero divisor</strong>, while a mixed state is not. The Bloch ball is the state slice of the positive cone, and its boundary sphere is the intersection of that slice with the future light cone of the biquaternion norm. The positivity of the plain form and the causal cone of the interval therefore have one and the same boundary.</p>
 <h3 id="the-action-on-the-material-sector">The Action on the Material Sector</h3>
@@ -188,7 +188,7 @@ $$</p>
 <p>$$
 \tilde Q_-\longmapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*},\qquad \tilde Q_+\in\mathbb{M}_+,\ \tilde Q_-\in\mathbb{M}_-.
 $$</p>
-<p>The image is in $\mathbb{M}_-$, because the star is an anti-automorphism and the two signs cancel. The action is linear in $\tilde Q_-$, it is a group action, and it preserves the biquaternion norm when the acting element has unit biquaternion norm, $N(\tilde Q_+)=1$. That condition is the condition of $SL(2,\mathbb{C})$; it is not the matrix-unitary condition $\tilde Q_+\tilde Q_+^{*}=e_t$, which defines $U(2)$ and preserves the trace of a state. A boost is Hermitian and has unit norm, but it is not matrix-unitary; a rotation is both.</p>
+<p>The image is in $\mathbb{M}_-$, because the star is an anti-automorphism and the two signs cancel. The action is linear in $\tilde Q_-$, it is a group action, and it preserves the biquaternion norm when the acting element has unit biquaternion norm, $\langle\tilde Q_+\rangle_{\natural}=1$. That condition is the condition of $SL(2,\mathbb{C})$; it is not the matrix-unitary condition $\tilde Q_+\tilde Q_+^{*}=e_t$, which defines $U(2)$ and preserves the trace of a state. A boost is Hermitian and has unit norm, but it is not matrix-unitary; a rotation is both.</p>
 <p>The action is the algebraic form of <strong>operators acting on states</strong>: the material sector is the space of kinematic configurations, and the informational sector is the space of the things that act on them. The asymmetry is the content of the names, and it is what earns the sector the adjective <em>informational</em> or <em>operational</em>.</p>
 <h3 id="the-four-forms-and-the-bracket-table">The Four Forms and the Bracket Table</h3>
 <p>The four forms are real on $\mathbb{M}_+$. With $\tilde Q_1=a_te_t+i\vec p$ and $\tilde Q_2=b_te_t+i\vec q$, they collapse in pairs. The two pairs are stated separately.</p>
@@ -201,7 +201,7 @@ $$</p>
 <p>$$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=a_tb_t-(\vec p,\vec q).
 $$</p>
-<p>This pair is indefinite of signature $(1,3)$: the interval. Its diagonal is the biquaternion norm $N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2$. It is a different quadratic form from the diagonal of the plain form: the first is positive definite, the second indefinite, and neither normalises a state.</p>
+<p>This pair is indefinite of signature $(1,3)$: the interval. Its diagonal is the biquaternion norm $\langle\tilde Q\rangle_{\natural}=q_t^2-\lvert\vec q'\rvert^2$. It is a different quadratic form from the diagonal of the plain form: the first is positive definite, the second indefinite, and neither normalises a state.</p>
 <p>The reason for the collapse is the definition of the sector: the star is the identity on it, so the sesquilinear form equals the bilinear one in the second slot. The sector carries <strong>no scalar area pairing</strong>, because multiplication by $i$ carries $\mathbb{M}_+$ out of itself, $i\mathbb{M}_+=\mathbb{M}_-$; the imaginary parts of the four forms vanish identically.</p>
 <p>The bracket table is uniform. On two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$; on two elements of different sectors the two are exchanged.</p>
 <div class="table-scroll"><table>
@@ -258,19 +258,19 @@ $$</p>
 </tr>
 <tr>
 <td>Pure states</td>
-<td>$\langle\tilde H,e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and $N(\tilde H)=0$</td>
+<td>$\langle\tilde H,e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and $\langle\tilde H\rangle_{\natural}=0$</td>
 <td>the Bloch sphere, $\lvert\vec h\rvert=\tfrac12$</td>
 </tr>
 </tbody>
 </table></div>
 <p>The nesting is strict: pure states are states, states are effects, and effects are observables. The roles are not exclusive, and the sector does not partition itself into states and observables. One and the same element can be read as a state, as an effect and as an observable, and the role is fixed by the conditions imposed on it.</p>
 <p>Neither condition separates the families on its own. The normalisation alone does not: a Hermitian element with $\langle\tilde Q,e_t\rangle=\tfrac12$ whose spectrum straddles zero is not a state. The positivity alone does not: $2e_t$ is positive and is not a state. <strong>Idempotency marks the boundary and nothing else</strong>: among the Hermitian idempotents $0,e_t,\tilde\Pi_{1,2}(\vec u)$, exactly the last have $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12\langle e_t\rangle$, so the idempotency singles out the pure states within the state slice, and a general observable is not idempotent.</p>
-<p>The separator the sector supplies is the quaternionic norm. On the state slice the positivity is $\lvert\vec r\rvert\leq1$, which is $N(\tilde{Ϛ})\geq0$, so</p>
+<p>The separator the sector supplies is the quaternionic norm. On the state slice the positivity is $\lvert\vec r\rvert\leq1$, which is $\langle\tilde{Ϛ}\rangle_{\natural}\geq0$, so</p>
 <p>$$
-\text{states}=\{\tilde Q\in\mathbb{M}_+:\langle\tilde Q,e_t\rangle=\tfrac12\langle e_t\rangle,\ N(\tilde Q)\geq0\},
+\text{states}=\{\tilde Q\in\mathbb{M}_+:\langle\tilde Q,e_t\rangle=\tfrac12\langle e_t\rangle,\ \langle\tilde Q\rangle_{\natural}\geq0\},
 $$</p>
 <p>$$
-\text{pure states}=\{\tilde Q\in\mathbb{M}_+:\langle\tilde Q,e_t\rangle=\tfrac12\langle e_t\rangle,\ N(\tilde Q)=0\}.
+\text{pure states}=\{\tilde Q\in\mathbb{M}_+:\langle\tilde Q,e_t\rangle=\tfrac12\langle e_t\rangle,\ \langle\tilde Q\rangle_{\natural}=0\}.
 $$</p>
 <p>The state space and the causal cone therefore share their boundary. The fact is the same one stated in the material article: the positivity of the plain form and the causal cone of the interval have one and the same boundary.</p>
 <p><strong>The boundary.</strong> The families are nested, not disjoint, and the words <em>state</em> and <em>observable</em> name roles, not types. The sector does not supply a measurement postulate; it supplies the algebraic shape that a measurement postulate takes.</p>
@@ -281,7 +281,7 @@ $$</p>
 $$</p>
 <p>with weights that sum to one. Positivity is exactly $\lvert\vec r\rvert\leq1$, so the state space is the unit ball of the vector part.</p>
 <p>The geometry is the Bloch ball of a qubit. The boundary $\lvert\vec r\rvert=1$ is the two-sphere of pure states; the interior is the mixed states; the centre $\vec r=0$ is the maximally mixed state $\tfrac12e_t$. A state is pure exactly when it is idempotent, and the two notions coincide in the sector and nowhere else. The ball is three-dimensional, as the state space of a two-state system must be: the sector has real dimension four and the normalisation $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ is one real equation.</p>
-<p>Every pure state is a zero divisor, because $N(\tilde{Ϛ})=\tfrac14(1-\lvert\vec r\rvert^2)$ vanishes on the sphere. A mixed state is not. The ball is the intersection of the affine hyperplane $\{\operatorname{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm, so its boundary is a slice of the causal cone. This is the structural link between probability and causality: the same quadratic form that gives the interval gives the positivity of the state.</p>
+<p>Every pure state is a zero divisor, because $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14(1-\lvert\vec r\rvert^2)$ vanishes on the sphere. A mixed state is not. The ball is the intersection of the affine hyperplane $\{\operatorname{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm, so its boundary is a slice of the causal cone. This is the structural link between probability and causality: the same quadratic form that gives the interval gives the positivity of the state.</p>
 <p><strong>The boundary.</strong> The ball is the state space of the frame, not a relativistic state space. A boost carries a state off the state slice, so the single-qubit ball is not invariant under the full Lorentz group. Making the state space itself relativistic is open work, not a result of this article.</p>
 <h3 id="the-operator-defines-the-state">The Operator Defines the State</h3>
 <p>A state is not only an element given in advance; any nonzero operator produces one. The map is</p>
@@ -328,7 +328,7 @@ $$</p>
 <p>with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$. The two coefficients are the eigenvalues, the two idempotents are the eigen-idempotents, and the pair is a resolution of the identity. The decomposition degenerates to $h_t$ exactly when $\vec h=0$.</p>
 <p>The trace and the biquaternion norm read</p>
 <p>$$
-\operatorname{Tr}(\tilde H)=\lambda_++\lambda_-,\qquad N(\tilde H)=\lambda_+\lambda_-.
+\operatorname{Tr}(\tilde H)=\lambda_++\lambda_-,\qquad \langle\tilde H\rangle_{\natural}=\lambda_+\lambda_-.
 $$</p>
 <p>The trace is the sum of the eigenvalues and the biquaternion norm is their product, so that norm is indefinite: it is negative exactly when the two eigenvalues have opposite signs. This is the difference from the ordinary Hermitian matrix case, where the analogue of the norm is a sum of squares. <strong>Positivity is a statement about the eigenvalues, not about the norm</strong>, and the spectral decomposition is what makes the statement visible.</p>
 <p>Read physically, the two eigenvalues are the two possible readings of the observable and the two idempotents are the two outcomes. The spectral decomposition is the algebraic form of a readout with two outcomes. The spectrum does not by itself give the frequencies of those outcomes; that is the role of the state and of the Born pairing.</p>
@@ -352,7 +352,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Lorentz rotor</td>
-<td>$N(\tilde Q)=1$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=1$</td>
 <td>reversible change of frame on $\mathbb{M}_-$</td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ $$</p>
 </tr>
 <tr>
 <td>The level sets are the groups the physics uses</td>
-<td>$\tilde U\tilde U^{*}=e_t$ gives $U(2)$; $N(\tilde U)=1$ gives $SL(2,\mathbb{C})$; the Euclidean sphere is not used</td>
+<td>$\tilde U\tilde U^{*}=e_t$ gives $U(2)$; $\langle\tilde U\rangle_{\natural}=1$ gives $SL(2,\mathbb{C})$; the Euclidean sphere is not used</td>
 <td><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">Unitary Operators of a Sesqualgebra</a>, <a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units and the Complement of the Zero-Divisor Cone</a></td>
 </tr>
 <tr>
@@ -501,7 +501,7 @@ $$</p>
 <tr>
 <td>Two pairings, because one is not Hermitian</td>
 <td>interval $\langle\cdot,\cdot\rangle_{\natural}$, probability $\langle\cdot,\cdot\rangle_{*}$; on $\mathbb{M}_-$ they coincide on the space part and differ in the sign of the time part, on $\mathbb{M}_+$ they coincide on the time part and differ in the sign of the space part</td>
-<td><a href="../articles_maths/hermitian-forms-over-algebras-and-norms.html">Hermitian Forms over Algebras and Norms</a>, <a href="../articles_maths/the-4-forms-over-the-biquaternion-c-space.html">The 4 Forms over the Biquaternion $\mathbb{C}$ Space</a></td>
+<td><a href="../articles_maths/hermitian-forms-over-algebras-and-norms.html">Hermitian Forms over Algebras and Norms</a>, <a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a></td>
 </tr>
 <tr>
 <td>No alternating companion on the sector</td>
@@ -530,7 +530,7 @@ $$</p>
 <h2 id="examples">Examples</h2>
 <p><strong>The boost biquaternion.</strong> $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{M}_+$. It acts on $\mathbb{M}_-$ by rotor conjugation and implements a Lorentz boost. It is not matrix-unitary, and it does not preserve the trace of a state; it is an operator on four-vectors, not an evolution of states.</p>
 <p><strong>A pure state.</strong> $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is Hermitian, idempotent, of trace one, and a zero divisor. It is the pure state along $+z$, the Bloch vector $\vec r=\vec e_z$, and the north pole of the Bloch sphere. The orthogonal idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is the south pole.</p>
-<p><strong>A mixed state.</strong> $\tilde{Ϛ}=\tfrac12(e_t+\tfrac12 i\vec e_z)$ has $\lvert\vec r\rvert=\tfrac12$, so it is positive and mixed, with $N(\tilde{Ϛ})=\tfrac{3}{16}>0$. It is not a zero divisor. At $\vec r=0$ the state is $\tfrac12e_t$, the maximally mixed state.</p>
+<p><strong>A mixed state.</strong> $\tilde{Ϛ}=\tfrac12(e_t+\tfrac12 i\vec e_z)$ has $\lvert\vec r\rvert=\tfrac12$, so it is positive and mixed, with $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac{3}{16}>0$. It is not a zero divisor. At $\vec r=0$ the state is $\tfrac12e_t$, the maximally mixed state.</p>
 <p><strong>An observable.</strong> $\tilde H=h_te_t+i\vec h$ has eigenvalues $h_t\pm\lvert\vec h\rvert$ and spectral decomposition $\tilde H=\lambda_+\tilde\Pi_1(\vec u_h)+\lambda_-\tilde\Pi_2(\vec u_h)$. For $h_t=1$ and $\lvert\vec h\rvert=\tfrac12$ the readings are $\tfrac32$ and $\tfrac12$; for $\lvert\vec h\rvert=2$ they are $3$ and $-1$, and the element is not positive.</p>
 <p><strong>The identity.</strong> $e_t$ is Hermitian, of trace two, and idempotent. It is the identity operator, not a state: its trace is two, and a state must have trace one.</p>
 <p><strong>The Hermitian form.</strong> For any $\tilde Q\in\mathbb{B}$, the product $\tilde Q\tilde Q^{*}$ is Hermitian and lies in $\mathbb{M}_+$. Its scalar part is the Euclidean norm squared $\sum_\mu\lvert Q_\mu\rvert^2$, which is non-negative; it is the natural weight of the element.</p>
@@ -629,7 +629,7 @@ $$</p>
 <td>the plain form and its norm, the restriction of the Hermitian form to $\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=q_t^2-\lvert\vec q'\rvert^2$</td>
 <td>the quaternionic norm, of signature $(1,3)$</td>
 </tr>
 <tr>
@@ -645,7 +645,7 @@ $$</p>
 <td>the matrix-unitary condition, $U(2)$</td>
 </tr>
 <tr>
-<td>$N(\tilde U)=1$</td>
+<td>$\langle\tilde U\rangle_{\natural}=1$</td>
 <td>the unit-norm condition, $SL(2,\mathbb{C})$</td>
 </tr>
 <tr>
@@ -661,7 +661,7 @@ $$</p>
 <li><a href="../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html">The Squares and the Positive Cone of the Biquaternion Sesqualgebra</a>, for the positive cone and the spectral decomposition.</li>
 <li><a href="../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html">Eigenvalue Decomposition and Eigenbasis of a Biquaternion</a>, for the eigenvalue decomposition, the normality criterion and the non-normal pair.</li>
 <li><a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a>, for the biorthogonal pairing and its difference from the Born form.</li>
-<li><a href="../articles_maths/the-4-forms-over-the-biquaternion-c-space.html">The 4 Forms over the Biquaternion $\mathbb{C}$ Space</a> and <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a>, for the forms and the absence of the area pairing.</li>
+<li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a> and <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a>, for the forms and the absence of the area pairing.</li>
 <li><a href="../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html">Two-Sided Operators on the General Plain Sesqualgebra</a>, for the sandwich.</li>
 <li><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">Unitary Operators of a Sesqualgebra</a>, for the matrix-unitary slice.</li>
 <li><a href="../articles_maths/jordan-algebras-of-sesqualgebras.html">Jordan Algebras of Sesqualgebras</a>, for the symmetrised product.</li>

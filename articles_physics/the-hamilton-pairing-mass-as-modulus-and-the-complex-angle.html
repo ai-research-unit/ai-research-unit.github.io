@@ -74,14 +74,14 @@
 <p>$$
 \boxed{\;\tilde Q=\Rho\,e^{\vec U\Theta}=\Rho\bigl(\cos\Theta+\vec U\sin\Theta\bigr),
 \qquad
-\Rho=\sqrt N,\qquad
+\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}},\qquad
 \vec U=\frac{\vec Q}{B},\qquad
 B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}\;}.
 $$</p>
 <p>It is the only one of the three pairings whose first factor is central, and the only one whose first factor is a scalar. That single fact is what makes it the natural home for an invariant: a central scalar is the one thing that a change of frame cannot touch.</p>
 <p>The thesis is one sentence. <strong>The Hamilton modulus $\Rho$ is the invariant of the element — the mass when the element is a four-momentum and the complex amplitude otherwise — and the second factor is the frame, a Lorentz transformation whose angle $\Theta$ is real for a rotation, imaginary for a boost and complex in general.</strong> Two consequences follow and are the substance of the article. The mass is not the energy: the energy is a component of the four-momentum in a frame, and the modulus is the invariant left when the frame is divided out. And the angle is not a single number with a single convention: the spinor word stores $\psi/2$, the four-vector factor stores $\psi$, and the modulus may itself be imaginary, so the pair $(\Theta,\vec U)$ is the invariant object and $\Theta$ alone is not.</p>
 <p>The article is a synthesis. The pairing, its theorem and its domain are owned by <em>The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</em>; the eigenvalue decomposition and the mass shell by <em>Eigenvalue Decomposition and Eigenbasis of a Biquaternion</em> and <em>The Spectral Reading of a Four-Vector</em>; the branch of the modulus by <em>Modulus–Unit Polar Decomposition of Biquaternions</em>. What is added here is the physical reading of the first factor, the anatomy of the complex angle, and the boundaries of the mass identification.</p>
-<p>The conventions are those of <em>Conventions in the Biquaternion Universe</em>, §<em>The Polar Word and the Three Pairings</em>, including its warning on the four objects called a boost. The norm is $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B$.</p>
+<p>The conventions are those of <em>Conventions in the Biquaternion Universe</em>, §<em>The Polar Word and the Three Pairings</em>, including its warning on the four objects called a boost. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B$.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -100,7 +100,7 @@ $$</p>
 <tr>
 <td>the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity</td>
 <td><a href="../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html"><em>Eigenvalue Decomposition and Eigenbasis of a Biquaternion</em></a>, §<em>The Spectrum and the Characteristic Polynomial</em></td>
-<td>$\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=N$</td>
+<td>$\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>the four factors and the branch of the modulus</td>
@@ -143,14 +143,14 @@ $$</p>
 <p>$$
 \boxed{\;\lambda_\pm=Q_t\pm iB=\Rho\,e^{\pm i\Theta},
 \qquad
-\lambda_+\lambda_-=\Rho^{2}=N\;}.
+\lambda_+\lambda_-=\Rho^{2}=\langle\tilde Q\rangle_{\natural}\;}.
 $$</p>
 <p>The product identity is the reason the modulus is an invariant: the two eigenvalues are the two light-cone combinations of the element, and their product is the norm. The sum, $2Q_t$, is the trace and is frame-dependent for a four-momentum; the product is not.</p>
 <p>The representation is a statement about $\tilde Q$, not about $\exp\tilde Q$. The element and its exponential are different objects with different moduli and different angles, and the logarithm, not the exponential, recovers $(\Rho,\Theta)$ from the element. The corpus must keep the two apart, and the distinction is stated in the mathematical article.</p>
 <h2 id="the-central-modulus">The Central Modulus</h2>
 <p>The modulus is</p>
 <p>$$
-\Rho=\sqrt N=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
+\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
 $$</p>
 <p>It is central, so it commutes with every element and is unchanged by a change of frame implemented by conjugation. It is the only one of the three first factors with that property. The quaternion factor $r\tilde u_{\mathrm r}$ and the Cartan factor $r\tilde U_{\mathrm b}$ both carry frame data and both change under conjugation; $\Rho$ does not.</p>
 <p>The phase of $\Rho$ carries the causal character when the norm is real.</p>
@@ -165,32 +165,32 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$N>0$</td>
-<td>$\Rho=\sqrt N>0$</td>
+<td>$\langle\tilde Q\rangle_{\natural}>0$</td>
+<td>$\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}>0$</td>
 <td>$0$</td>
 <td>spacelike element</td>
 </tr>
 <tr>
-<td>$N<0$</td>
-<td>$\Rho=i\sqrt{\lvert N\rvert}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}<0$</td>
+<td>$\Rho=i\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$</td>
 <td>$\pi/2$</td>
 <td>timelike element</td>
 </tr>
 <tr>
-<td>$N=0$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=0$</td>
 <td>$\Rho=0$</td>
 <td>undefined</td>
 <td>null element</td>
 </tr>
 <tr>
-<td>$N\in\mathbb{C}$ general</td>
-<td>$\Rho=\lvert N\rvert^{1/2}e^{i\arg N/2}$</td>
-<td>$\tfrac12\arg N$</td>
+<td>$\langle\tilde Q\rangle_{\natural}\in\mathbb{C}$ general</td>
+<td>$\Rho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}e^{i\arg\langle\tilde Q\rangle_{\natural}/2}$</td>
+<td>$\tfrac12\arg\langle\tilde Q\rangle_{\natural}$</td>
 <td>general element</td>
 </tr>
 </tbody>
 </table></div>
-<p>For a four-momentum the norm is $N=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are</p>
+<p>For a four-momentum the norm is $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are</p>
 <p>$$
 \boxed{\;\lambda_\pm=i mc\,e^{\pm\psi}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;},
 $$</p>
@@ -260,13 +260,13 @@ $$</p>
 <p>For a four-momentum the frame factor is $\mathcal B=e^{-i\psi\hat p}$ and the congruence by $\mathcal B$ is the boost of rapidity $\psi$ about $-\hat p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.</p>
 <p>The rapidity is fixed by the ratio of the two invariants,</p>
 <p>$$
-\cosh 2\psi=\frac{\langle\tilde Q,\tilde Q\rangle_{*}}{\lvert N\rvert},
+\cosh 2\psi=\frac{\langle\tilde Q,\tilde Q\rangle_{*}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert},
 $$</p>
 <p>for a four-momentum, where the numerator is the Hermitian square. The ratio is $\cosh\psi_w$, not $\cosh\psi$: the factor of two is already present in the Hermitian norm. This is the frame datum that the modulus does not carry. The modulus gives the mass; the ratio gives the rapidity; the phase of the four complex coordinates gives the two axis angles. The count is the same as in the hub: two invariants fix three numbers, and the directions need the phases.</p>
 <h2 id="the-domain-and-the-witnesses">The Domain and the Witnesses</h2>
-<p>The Hamilton pairing needs $N\neq0$ and $B\neq0$. The second condition is not implied by the first, and the witness is</p>
+<p>The Hamilton pairing needs $\langle\tilde Q\rangle_{\natural}\neq0$ and $B\neq0$. The second condition is not implied by the first, and the witness is</p>
 <p>$$
-\tilde Q=e_t+\vec e_x+i\vec e_y,\qquad N=1,\qquad B^{2}=1+i^{2}=0 .
+\tilde Q=e_t+\vec e_x+i\vec e_y,\qquad \langle\tilde Q\rangle_{\natural}=1,\qquad B^{2}=1+i^{2}=0 .
 $$</p>
 <p>The element is invertible, the word exists, the quaternion factor exists, and the Hamilton factor does not: there is no axis and no angle. The failure has two physical faces.</p>
 <ul>
@@ -274,20 +274,20 @@ $$</p>
 <li><strong>The nilpotent case.</strong> $\vec Q\neq0$ with $\vec Q^{2}=0$ is a lightlike vector part. There is no frame in which the vector part is a pure scale, and the axis cannot be normalised. The element may still be invertible, as the witness shows.</li>
 </ul>
 <p>The two cases are different. The scalar four-momentum is the $\psi\to0$ limit of a boost; the nilpotent case is a lightlike vector part, the boundary of the boost chart, and the two have different stabilisers. The algebra distinguishes them by $\vec Q=0$ and $\vec Q^{2}=0$ with $\vec Q\neq0$.</p>
-<p>The third boundary is the null cone, $N=0$, where the modulus vanishes and the pairing does not exist. For a four-momentum this is the massless limit: the element is lightlike, the mass shell collapses to the cone, and the word has no rest frame. The generalized Cartan pairing covers the limit with a rank-one amplitude and a partial isometry, and the massless article owns the boundary value.</p>
+<p>The third boundary is the null cone, $\langle\tilde Q\rangle_{\natural}=0$, where the modulus vanishes and the pairing does not exist. For a four-momentum this is the massless limit: the element is lightlike, the mass shell collapses to the cone, and the word has no rest frame. The generalized Cartan pairing covers the limit with a rank-one amplitude and a partial isometry, and the massless article owns the boundary value.</p>
 <h2 id="mass-not-energy">Mass, Not Energy</h2>
 <p>The modulus is the invariant and the energy is not. For a four-momentum,</p>
 <p>$$
-E=mc^{2}\cosh\psi,\qquad \lvert\vec p\rvert=mc\sinh\psi,\qquad N=-m^{2}c^{2}.
+E=mc^{2}\cosh\psi,\qquad \lvert\vec p\rvert=mc\sinh\psi,\qquad \langle\tilde P\rangle_{\natural}=-m^{2}c^{2}.
 $$</p>
 <p>The energy depends on the frame through $\psi$; the modulus does not. The trace $2Q_t=2iE/c$ is the frame-dependent sum of the eigenvalues; the norm is their frame-independent product. A change of frame moves $\psi$ and hence $E$, and leaves $\Rho$ fixed. This is the algebraic content of "mass is invariant, energy is a component".</p>
 <p>The modulus is <strong>multiplicative</strong> under composition. For any two elements,</p>
 <p>$$
-N(\tilde Q\tilde Q')=N(\tilde Q)N(\tilde Q'),
+\langle\tilde Q\tilde Q'\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde Q'\rangle_{\natural},
 $$</p>
 <p>so the modulus of a product is the product of the moduli up to the branch. This is a statement about multiplying operators, not about adding four-momenta. Four-momenta compose by addition, $\tilde P_{\mathrm{tot}}=\tilde P_1+\tilde P_2$, and the mass of a sum is not the sum or the product of the masses: it is the modulus of the sum, which depends on the angle between the momenta. The invariant mass of a two-particle system is</p>
 <p>$$
-N(\tilde P_1+\tilde P_2)=N(\tilde P_1)+N(\tilde P_2)+2\langle\tilde P_1,\tilde P_2\rangle_{\natural},
+\langle\tilde P_1+\tilde P_2\rangle_{\natural}=\langle\tilde P_1\rangle_{\natural}+\langle\tilde P_2\rangle_{\natural}+2\langle\tilde P_1,\tilde P_2\rangle_{\natural},
 $$</p>
 <p>and the cross term is what makes the mass of a system differ from the sum of its parts. The multiplicativity of the algebra and the additivity of the four-momentum are different operations. The mass shell is the level set of the norm, a property of one element, not of the sum.</p>
 <p>This is the precise form of the caution. The Hamilton modulus is the invariant of one element. It is not a charge, it is not additive, and it does not compose by the rule that four-momenta compose. The algebra gives multiplicativity; physics gives the addition; the mass shell is the level set of the norm that both must respect.</p>
@@ -339,13 +339,13 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>The Hamilton pairing is $\tilde Q=\Rho\exp(\vec U\Theta)=\Rho(\cos\Theta+\vec U\sin\Theta)$.</li>
-<li>The modulus $\Rho=\sqrt N=r e^{i\alpha}$ is central and complex; it is the only scalar first factor of the three pairings.</li>
+<li>The modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\alpha}$ is central and complex; it is the only scalar first factor of the three pairings.</li>
 <li>The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\pm i\Theta}$, and their product is the norm.</li>
 <li>For a four-momentum, $\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$, and the eigenvalues are $i mc\,e^{\pm\psi}$.</li>
 <li>The energy is $mc^{2}\cosh\psi$ and depends on the frame; the modulus is the invariant and does not.</li>
 <li>The angle is real for a rotation, imaginary for a boost and complex in general; the pair $(\Theta,\vec U)$ is the invariant data.</li>
 <li>The spinor word stores $\psi/2$, the four-vector factor stores $\psi$, and the four-momentum angle is $-i\psi$.</li>
-<li>The pairing needs $N\neq0$ and $B\neq0$; the scalar rest frame and the nilpotent lightlike case are different boundaries.</li>
+<li>The pairing needs $\langle\tilde Q\rangle_{\natural}\neq0$ and $B\neq0$; the scalar rest frame and the nilpotent lightlike case are different boundaries.</li>
 <li>The modulus is multiplicative under composition; mass is not additive under the addition of four-momenta; the mass of a sum carries a cross term.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -358,11 +358,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
 <td>the biquaternion norm</td>
 </tr>
 <tr>
-<td>$\Rho=\sqrt N=r e^{i\alpha}$</td>
+<td>$\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\alpha}$</td>
 <td>the Hamilton modulus, central and complex</td>
 </tr>
 <tr>
