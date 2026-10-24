@@ -77,7 +77,7 @@
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t,\qquad N(\tilde Q)=\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=(Q_t^2+B^2)e_t.
 $$</p>
-<p>The number $B$ is a fixed complex square root of $Q_x^2+Q_y^2+Q_z^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are <em>The Biquaternion Algebra and Its Vector Spaces</em>; the spectrum and the characteristic polynomial are <em>Biquaternion Spectral Theory</em>; the eigenvalue decomposition is <em>The Biquaternion Eigenvalue Decomposition</em>; the Peirce decomposition is <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>.</p>
+<p>The number $B$ is a fixed complex square root of $Q_x^2+Q_y^2+Q_z^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are <em>The Biquaternion Algebra and Its Vector Spaces</em>; the eigenvalue decomposition, the normality criterion and the spectral theorem are <em>The Biquaternion Eigenvalue Decomposition</em>; the Peirce decomposition is <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>.</p>
 <h2 id="the-spectral-criterion">The Spectral Criterion</h2>
 <p><strong>Definition (eigenvalue).</strong> A scalar $\lambda\in\mathbb{C}$ is an <strong>eigenvalue</strong> of $\tilde Q$ if the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, that is $\mathbb{B}(\tilde Q-\lambda e_t)\neq\mathbb{B}$.</p>
 <p><strong>Definition (eigenvector).</strong> A non-zero $v\in\mathbb{B}$ is an <strong>eigenvector</strong> of $\tilde Q$ for $\lambda$ if $(\tilde Q-\lambda e_t)v=0$. The eigenvectors for $\lambda$, with the origin, are the left annihilator</p>
@@ -127,6 +127,22 @@ $$</p>
 <p>and they coincide exactly when $B=0$, that is exactly when $B^2=0$.</p>
 <p><strong>Corollary (the eigenspaces).</strong> For a non-scalar $\tilde Q$ and each eigenvalue $\lambda$, the eigenspace $\operatorname{Ann}_{\ell}(\tilde Q-\lambda e_t)$ is a right ideal of complex dimension $2$. For $\tilde Q=Q_te_t$ the only eigenvalue is $Q_t$, and its eigenspace is all of $\mathbb{B}$.</p>
 <p><em>Proof.</em> A non-zero non-unit in $\mathbb{B}$ has left multiplication of complex rank $2$, by <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Annihilators</em>; at the scalar the difference $\tilde Q-Q_te_t$ is zero.</p>
+<p><strong>Corollary (Cayley–Hamilton and the inverse).</strong> Every $\tilde Q$ satisfies</p>
+<p>$$
+\tilde Q^2-2Q_t\tilde Q+N(\tilde Q)e_t=0 ,
+$$</p>
+<p>and if $N(\tilde Q)\neq0$ then $\tilde Q^{-1}=(2Q_te_t-\tilde Q)/N(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$.</p>
+<p><em>Proof.</em> With $\tilde Q=Q_te_t+\vec Q$ and $\vec Q^2=-B^2e_t$, $\tilde Q^2=Q_t^2e_t+2Q_t\vec Q-B^2e_t=2Q_t\tilde Q-(Q_t^2+B^2)e_t$. Multiplying by $\tilde Q^{\natural}$ and using $N(\tilde Q)=Q_t^2+B^2$ gives the inverse.</p>
+<p><strong>Remark (left and right eigenvalues).</strong> The centre of $\mathbb{B}$ is $\mathbb{C}$, so complex scalars commute with every element. A left eigenvalue, $\tilde Qv=\lambda v$, and a right eigenvalue, $\tilde Qv=v\lambda$, therefore define the same set when the scalar is required to lie in $\mathbb{C}$, and that set is $\sigma(\tilde Q)$. The distinction between the two eigenvalue problems, which is genuine over a noncommutative division ring (<em>Quaternion Spectral Theory</em>, §<em>The Spectrum of a Quaternion</em>), collapses here.</p>
+<h2 id="similarity-classes-and-the-eigenvalue-dichotomy">Similarity Classes and the Eigenvalue Dichotomy</h2>
+<p><strong>Definition.</strong> Two biquaternions $\tilde Q_1,\tilde Q_2$ are <strong>similar</strong> if $\tilde Q_2=S\tilde Q_1S^{-1}$ for some unit $S\in\mathbb{B}$.</p>
+<p><strong>Theorem (the classification).</strong> Let $T=2Q_t$ and $D=N(\tilde Q)$, and let $\Delta=T^2-4D=-4B^2$.</p>
+<ol>
+<li>If $B\neq0$, the eigenvalues $Q_t\pm iB$ are distinct, and the similarity class is determined by the unordered pair of eigenvalues, equivalently by $(T,D)$.</li>
+<li>If $B=0$, the only eigenvalue is $Q_t$, and exactly two similarity classes share $(T,D)=(2Q_t,Q_t^2)$: the <strong>central class</strong> $\tilde Q=Q_te_t$, and the <strong>non-semisimple class</strong> $\vec Q\neq0$ with $\vec Q^2=0$, which is similar to the Jordan block with diagonal $Q_t$.</li>
+</ol>
+<p><em>Proof.</em> (1) $p_{\tilde Q}$ has two distinct roots, so $\tilde Q$ is diagonalisable with those roots; any two such elements are conjugate in $\mathbb{B}\cong M_2(\mathbb{C})$. (2) $B=0$ gives $\vec Q^2=0$. If $\vec Q=0$ the element is central. If $\vec Q\neq0$, then $\tilde Q-Q_te_t$ is nonzero with square $0$, so the minimal polynomial is $(X-Q_t)^2$ and the Jordan form is a single block of size $2$; all such elements are conjugate.</p>
+<p><strong>Corollary.</strong> In the non-semisimple class the element is a zero divisor exactly when $Q_t=0$, since $N(\tilde Q)=Q_t^2$.</p>
 <h2 id="the-spectral-degenerate-cone">The Spectral-Degenerate Cone</h2>
 <p><strong>Definition.</strong> The <strong>spectral-degenerate cone</strong> is</p>
 <p>$$
@@ -874,7 +890,7 @@ $$
 \begin{pmatrix}\lambda_+\gamma\\\lambda_-\delta\end{pmatrix}.
 $$
 This is the precise statement that the two spinor spaces are the two columns and that multiplication by $\tilde Q$ acts on both by the same diagonal matrix. A general element of $\mathbb{B}$ is not a spinor: its matrix has two nonzero columns, one in each spinor space.</p>
-<h3 id="what-depends-on-math649-and-what-does-not">What Depends on $\tilde Q$ and What Does Not</h3>
+<h3 id="what-depends-on-math693-and-what-does-not">What Depends on $\tilde Q$ and What Does Not</h3>
 <p>The Q-adapted data depend on $\tilde Q$ through its root. The comparison is collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1017,7 +1033,7 @@ Q_x^2+Q_y^2+Q_z^2=0:\quad
 \text{no Q-adapted Peirce basis and no Q-adapted nilpotents.}
 $$
 For $\vec Q\neq0$ there is no eigenbasis of $L_{\tilde Q}$: in any Peirce basis the Peirce matrix of $\tilde Q$ is a single $2\times2$ Jordan block when $Q_t\neq0$ and a nonzero nilpotent when $Q_t=0$, so it is not diagonal. For $\vec Q=0$ the element is scalar, $L_{\tilde Q}=Q_t\,\mathrm{id}$, and every basis is an eigenbasis; the Q-adapted construction is then absent, but an eigenbasis is not.</p>
-<h2 id="the-degenerate-case-math748">The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$</h2>
+<h2 id="the-degenerate-case-math792">The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$</h2>
 <p><strong>On the cone $B^2=0$ the two eigenvalues have coalesced. Two further questions decide the geometry of a point: whether the scalar part vanishes, and whether the vector part vanishes.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -1203,7 +1219,7 @@ $$</p>
 </table></div>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra carries two quadratic conditions. The reduced norm $N=Q_t^2+B^2$ is multiplicative and decides invertibility; its zero locus is the null cone $\mathcal C$. The discriminant of the characteristic polynomial is $-4B^2$; its zero locus is the spectral-degenerate cone $\mathcal S$, and it decides whether the two eigenvalues $Q_t\pm iB$ can be separated.</p>
-<p>The spectral problem is stated without a module or an acting operator. An eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, equivalently for which $\tilde Q-\lambda e_t$ is a non-unit, equivalently for which $N(\tilde Q-\lambda e_t)=0$. The eigenspace is the left annihilator, a right ideal of complex dimension $2$ for a non-scalar element. A spectral idempotent is an idempotent commuting with the element, and on the regular side the spectral decomposition is the pair of Lagrange idempotents.</p>
+<p>The spectral problem is stated without a module or an acting operator. An eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, equivalently for which $\tilde Q-\lambda e_t$ is a non-unit, equivalently for which $N(\tilde Q-\lambda e_t)=0$. The eigenspace is the left annihilator, a right ideal of complex dimension $2$ for a non-scalar element. A spectral idempotent is an idempotent commuting with the element, and on the regular side the spectral decomposition is the pair of Lagrange idempotents. Cayley–Hamilton gives the inverse off the null cone, and the unordered spectrum determines the similarity class except at $B=0$, where the scalar and the non-semisimple nilpotent share it.</p>
 <p>The cone $\mathcal S$ is $\mathbb{C}e_t$ times the isotropic cone of the vector subspace, of complex dimension $3$ and real dimension $6$. It is smooth off the scalar vertex and singular along it. It is not a subspace, and it is not the set of defective elements: the vertex is semisimple. It is not a null cone, because $B^2$ is not a norm on the algebra; the only multiplicative norm is $N$.</p>
 <p>On the non-scalar side, the adapted Peirce decomposition exists exactly when $B^2\neq0$, and then it is unique. The degenerate side is stratified into the scalar regime, where every idempotent is adapted and the spectral decomposition has one term; the Jordan regime, where the element is a unit, defective and without a non-trivial adapted idempotent; and the nilpotent regime, where the element is a zero divisor and a nilpotent of index two. The vertex is the scalar line.</p>
 <p>The two cones are independent: neither contains the other. A zero divisor can have distinct eigenvalues, and a unit can have a repeated one. The cones meet exactly on the pure stratum of the null cone, with the origin adjoined, and their defining equations have equal gradients along it. The spectral cone is not multiplicative, while the null cone is. The joint refinement is the five zones. The spectral problem is the finer one: its eigenvalues determine the norm, since $N=\lambda_+\lambda_-$, but the norm does not determine $B^2$. The independence is between the loci, not between the information: the norm cannot separate the scalar from the Jordan regime, while the spectral problem separates all five zones, through the minimal polynomial. The polar decomposition follows the norm and the eigenbasis follows the discriminant, so the Jordan regime, a unit with no eigenbasis, is the sharpest witness of the independence.</p>
@@ -1273,8 +1289,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the reduced norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.</li>
-<li><a href="biquaternion-spectral-theory.html">Biquaternion Spectral Theory</a>, for the spectrum, the characteristic polynomial, Cayley–Hamilton and the spectral theorem.</li>
-<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, for the eigenvalue decomposition and the degenerate regimes.</li>
+<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, for the eigenvalue decomposition, the eigenprojections, the degenerate regimes, the Hermitian case and the spectral theorem.</li>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the weak Peirce decomposition, the Peirce corners and the minimal left ideals.</li>
 <li><a href="the-eigenvalue-decomposition-of-an-element.html">The Eigenvalue Decomposition of an Element</a>, for the existence and uniqueness of the spectral decomposition in the general theory.</li>
 <li><a href="the-lagrange-sylvester-eigenprojector-formula.html">The Lagrange–Sylvester Eigenprojector Formula</a>, for the interpolating idempotents.</li>

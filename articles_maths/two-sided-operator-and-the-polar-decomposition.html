@@ -126,6 +126,11 @@ $$</p>
 $$</p>
 <p>(e) Put $\tilde X=e_t$.</p>
 <p>The preservation of the two sectors is the structural reason the action splits into two formulas, one per sector, and the reason a sandwich cannot mix the Hermitian and the anti-Hermitian parts.</p>
+<p><strong>Corollary (the scaling of the norm).</strong> For every unit $\tilde Q$ and every $\tilde X$,</p>
+<p>$$
+\boxed{\;\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}\;}.
+$$</p>
+<p><em>Proof.</em> The norm is multiplicative and central, and $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$; hence $\langle\tilde Q\tilde X\tilde Q^{*}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde X\rangle_{\natural}\overline{\langle\tilde Q\rangle_{\natural}}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}$. On the unit-norm slice the sandwich is an isometry of the biquaternion norm.</p>
 <h3 id="the-closed-form">The Closed Form</h3>
 <p><strong>Theorem (the sandwich of the polar word).</strong> Let $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. Then</p>
 <p>$$ \Theta_{\tilde Q}=\Theta_r\circ\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}, $$</p>
@@ -198,7 +203,7 @@ $$</p>
 <li>the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\alpha)$, the twist $\chi(\Rho)=\Rho$ of <em>The Polar Decomposition of Biquaternions</em>, §<em>The Operator Reading: the Twist</em>.</li>
 </ul>
 <p>The first two are quadratic in $\Rho$ and see $2\alpha$; the third is linear and sees $\alpha$; the sandwich multiplies by $\Rho$ on the left and by $\bar\Rho$ on the right and sees $0$.</p>
-<p><strong>Fourth, the spectral reading confirms it.</strong> In <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em> the eigenvalues of $\Theta_{\tilde Q}$ are the products $\lambda_i\bar\lambda_j$ of the eigenvalues of $\mathsf M_2(\tilde Q)$. A phase multiplies every $\lambda_i$ by $\exp(i\alpha)$ and every $\bar\lambda_j$ by $\exp(-i\alpha)$, so every product is unchanged. The cancellation is visible in the spectrum without any computation in coordinates.</p>
+<p><strong>Fourth, the spectral reading confirms it.</strong> The eigenvalues of $\Theta_{\tilde Q}$ are the products $\lambda_i\bar\lambda_j$ of the eigenvalues of $\mathsf M_2(\tilde Q)$, as in §<em>The Spectrum of the Sandwich</em>. A phase multiplies every $\lambda_i$ by $\exp(i\alpha)$ and every $\bar\lambda_j$ by $\exp(-i\alpha)$, so every product is unchanged. The cancellation is visible in the spectrum without any computation in coordinates.</p>
 <p><strong>Fifth, the factor $\exp(2i\alpha)$ of the norm is not a doubling by the sandwich.</strong> It is the square of the factor in the product $\tilde Q\tilde Q^{\natural}$: the product has two factors and both carry $\exp(i\alpha)$. The doubling of the boost and the rotor is a different phenomenon, computed in the next two sections. The two must not be conflated: the norm doubles the phase because the product has two factors, while the sandwich doubles the boost because its two slots carry the same exponent, and doubles the rotor because the conjugation is the double cover.</p>
 <p><strong>Sixth, the phase row of the table is zero.</strong> A table that halves every exponent would put $\alpha/2$ in the phase row and would be wrong by the whole phase; a table that repeats the exponent would put $\alpha$ there and would be wrong by the sign of the right factor. The only correct entry is $0$.</p>
 <h2 id="the-boost">The Boost</h2>
@@ -538,7 +543,7 @@ $$</p>
 \qquad
 \Theta_{\exp(i\alpha)}=\mathrm{id}.
 $$</p>
-<p>The scale dilates by $r^{2}$ and doubles its exponent $\ln r$ to $2\ln r$. The phase cancels: its exponent $i\alpha$ produces nothing, because it is central and unitary, and the whole $U(1)$-orbit of an element has one sandwich. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$; its exponent $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ produces the rapidity $\psi$. The rotor is an inner automorphism; its exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ produces the rotation of angle $\theta$. The doubling rule is that a Hermitian exponent and a non-central skew-Hermitian exponent double, while a central skew-Hermitian exponent cancels.</p>
+<p>The scale dilates by $r^{2}$ and doubles its exponent $\ln r$ to $2\ln r$. The phase cancels: its exponent $i\alpha$ produces nothing, because it is central and unitary, and the whole $U(1)$-orbit of an element has one sandwich. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$; its exponent $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ produces the rapidity $\psi$. The rotor is an inner automorphism; its exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ produces the rotation of angle $\theta$. The doubling rule is that a Hermitian exponent and a non-central skew-Hermitian exponent double, while a central skew-Hermitian exponent cancels. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.</p>
 <p>The spectral form of the rule is the product formula. The left and right slots commute, and their eigenvalues are $\lambda_\pm$ and $\bar\lambda_\pm$. The spectrum of the sandwich is
 $$
 \operatorname{spec}\Theta_{\tilde Q}
@@ -583,6 +588,10 @@ The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-s
 <tr>
 <td>$\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
 <td>the Hermitian sandwich</td>
+</tr>
+<tr>
+<td>$\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}$</td>
+<td>the scaling of the norm; an isometry on the unit-norm slice</td>
 </tr>
 <tr>
 <td>$\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$</td>
@@ -675,7 +684,7 @@ The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-s
 <li><a href="the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a>, §<em>The Action on the Two Halves</em>, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.</li>
 <li><a href="the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</a>, for the Hermitian positive and unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.</li>
 <li><a href="the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html">The Quaternion Pairing of the Polar Decomposition of Biquaternions</a> and <a href="the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html">The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</a>, for the two partial two-factor groupings.</li>
-<li><a href="the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</a>, for the eigenvalues $\lambda_i\bar\lambda_j$ of the sandwich and the spectral proof of the phase cancellation.</li>
+<li><a href="the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</a>, for the spectral registry of the sandwich and the two-parameter Sylvester operator.</li>
 <li><a href="introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html">Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</a>, §<em>The Sandwich in the Regular Basis</em>, for the sandwich as a product of the two regular maps.</li>
 <li><a href="completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint</a>, for the sandwich as a completely positive map and its rank-one place among the completely positive maps.</li>
 <li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the Lorentz group in biquaternionic form and the double cover.</li>

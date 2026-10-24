@@ -77,7 +77,7 @@
 $$</p>
 <p>and at two equal arguments it is real. It has signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, it fixes no overall sign, and it cannot normalise a state. Those are not defects of the form; they are the structure it carries. Its level sets are hyperboloids rather than spheres, its positive lines form a complex hyperbolic space, and its isometry group is $\mathrm{U}(1,3)$, not the Lorentz group.</p>
 <p>The physical reading of the form itself — the gauge calibration, the sign relation to the interval on the material sector — is the subject of this article. The article gives the Gram matrix, the fundamental symmetry, the isometry group, the level sets, the hyperbolic geometry and the $J$-contractions. It states the geometry and the readings, and it states where the readings stop.</p>
-<p>The article is a reader. The mathematics is owned by <em>Introduction to the Symmetric Quaternionic Sesqualgebra</em>, <em>The Krein Gram Matrix of the Biquaternion Algebra</em>, <em>The Krein Isometry Group and Its $J$-Contractions</em>, <em>The Krein Level Sets and the Hyperbolic Structure</em> and <em>Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra</em>.</p>
+<p>The article is a reader. The mathematics is owned by <em>Introduction to the Symmetric Quaternionic Sesqualgebra</em>, <em>The Krein Norm of the Biquaternion Algebra</em>, <em>The Krein Isometry Group and Its Cartan Decomposition</em> and <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -92,28 +92,16 @@ $$</p>
 <td><a href="../articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.html">Introduction to the Symmetric Quaternionic Sesqualgebra</a></td>
 </tr>
 <tr>
-<td>The Gram matrix and the restrictions to the subspaces</td>
-<td><a href="../articles_maths/the-krein-gram-matrix-of-the-biquaternion-algebra.html">The Krein Gram Matrix of the Biquaternion Algebra</a></td>
+<td>The form: Gram matrices, fundamental symmetry, orthogonality, isotropy and the Krein cone</td>
+<td><a href="../articles_maths/the-krein-norm-of-the-biquaternion-algebra.html">The Krein Norm of the Biquaternion Algebra</a></td>
 </tr>
 <tr>
-<td>The isometry group, the boosts and the $J$-contractions</td>
-<td><a href="../articles_maths/the-krein-isometry-group-and-its-j-contractions.html">The Krein Isometry Group and Its $J$-Contractions</a></td>
+<td>The isometry group, the boosts, the $J$-contractions, the Cartan decomposition and the symmetric space</td>
+<td><a href="../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a></td>
 </tr>
 <tr>
 <td>The level sets and the two hyperbolic models</td>
 <td><a href="../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html">The Krein Level Sets and the Hyperbolic Structure</a></td>
-</tr>
-<tr>
-<td>The Krein cone and the operator cone, the null set and the doubly-null lines, the fundamental decomposition and the Krein-orthogonal projections</td>
-<td><a href="../articles_maths/krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html">Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra</a></td>
-</tr>
-<tr>
-<td>The Cartan decomposition and the symmetric space</td>
-<td><a href="../articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.html">The Krein Cartan Decomposition of the Operator Algebra</a></td>
-</tr>
-<tr>
-<td>The fundamental symmetry $J={}^{\natural}$</td>
-<td><a href="../articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html">The Fundamental Symmetry of the Biquaternion Algebra</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -267,7 +255,7 @@ $$</p>
 <p>The boundary is the set of isotropic lines, $\lVert\tilde Q_1\rVert_E=1$, a copy of $S^5$. The ball carries the Bergman metric, which is Kähler, complete, of constant negative holomorphic sectional curvature, and invariant under the isometries of the form; the boundary is at infinite distance. The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic and isometric to $\mathbb{CH}^1$; the real geodesics are the images of the real diameters of these discs under the group.</p>
 <p>The Minkowski slice gives the real picture inside the complex one. On the real quaternion space the form is the interval, the ball meets the slice in the real unit ball of $\mathbb{R}^3$, and the Bergman metric restricts to the Poincaré metric of the real hyperbolic space $H^3$. The slice is totally geodesic and totally real. The positive level set on the slice is the two-sheeted hyperboloid, and its sheet $q_t=\sqrt{1+\lVert\vec q\rVert^2}$ is the hyperboloid model of $H^3$.</p>
 <p>The geometry is the geometry of the gauge form. A positive line is a time axis; the ball is the space of time axes; the boundary is the set of null directions; a boost is a hyperbolic translation inside the ball; and the Lorentz group of a real slice is the subgroup that preserves that slice. The group $\mathrm{U}(1,3)$ is the full isometry group of the ball, and the Lorentz group is a real section of it.</p>
-<h2 id="the-math107-contractions">The $J$-Contractions</h2>
+<h2 id="the-math104-contractions">The $J$-Contractions</h2>
 <p>A <strong>$J$-contraction</strong> is a $\mathbb{C}$-linear operator $T$ whose defect $\mathrm{id}-T^{\dagger}T$ lies in the $J$-positive operator cone</p>
 <p>$$
 \mathcal{P}_J=J\cdot\{S:S\ge0\},
@@ -409,10 +397,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="../articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.html">Introduction to the Symmetric Quaternionic Sesqualgebra</a>, for the form as a product and its Hermitian character.</li>
-<li><a href="../articles_maths/the-krein-gram-matrix-of-the-biquaternion-algebra.html">The Krein Gram Matrix of the Biquaternion Algebra</a>, for the Gram matrix, its real basis and its discriminant.</li>
-<li><a href="../articles_maths/the-krein-isometry-group-and-its-j-contractions.html">The Krein Isometry Group and Its $J$-Contractions</a>, for the group, the boosts and the contractions.</li>
+<li><a href="../articles_maths/the-krein-norm-of-the-biquaternion-algebra.html">The Krein Norm of the Biquaternion Algebra</a>, for the Gram matrices, the symmetry, the orthogonality, the isotropy and the cone.</li>
+<li><a href="../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a>, for the group, the boosts, the contractions and the Cartan decomposition.</li>
 <li><a href="../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html">The Krein Level Sets and the Hyperbolic Structure</a>, for the level sets, the ball and the two hyperbolic models.</li>
-<li><a href="../articles_maths/krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html">Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra</a>, for the Krein cone and the operator cone, the null set and the doubly-null lines, and the fundamental decomposition.</li>
 <li><a href="the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a>, for the place of the Krein form among the four forms.</li>
 <li><a href="the-operators-one-sided-two-sided-sandwich.html">The Operators: One-Sided, Two-Sided, Sandwich</a>, for the one-sided and two-sided operators of the form.</li>
 <li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, for the factors that the isometries act on.</li>
