@@ -53,8 +53,7 @@ L_{\tilde Q_1}\tilde Q_2=\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q
 R_{\tilde Q_1}\tilde Q_2=\tilde Q_2\star\tilde Q_1=\tilde Q_2^{\natural}\tilde Q_1,
 $$
 a multiplication by the natural conjugate. The block is the sibling of the **general plain
-algebra**, whose annihilators are *Annihilators of the Biquaternion Algebra*, and the two share
-the cone and its plane but differ in the coincidence of the two sides.
+algebra**, and the two share the cone and its plane but differ in the coincidence of the two sides.
 
 ## The Two Annihilators Coincide
 
@@ -106,7 +105,7 @@ $\tilde Q_1$ are
 case the operator is invertible and the annihilator is $\{0\}$. When $C(\tilde Q_1)=0$ the
 determinant vanishes; the multiplication by the nonzero $\tilde Q_1^{\natural}$ in the plain algebra
 is then of rank two, because the plain algebra is the matrix algebra $M_2(\mathbb{C})$ and a
-nonzero element of the cone is a matrix of rank one (*Zero Divisors of the Biquaternion Algebra*),
+nonzero element of the cone is a matrix of rank one (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*),
 whence the kernel is of complex dimension two. The origin gives the zero operator.
 
 ## The Annihilator of an Element
@@ -136,7 +135,7 @@ A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\}.
 $$
 In both cases the element lies in its own annihilator and the annihilator is a complex plane.
 
-## The Dichotomy by the Cone
+## The Dichotomy by the Null Cone
 
 **The annihilator reads the cone twice: off the cone it is $\{0\}$ and the element is a plain unit, on the cone it is a complex plane and the element is a rank-one matrix.**
 
@@ -196,6 +195,5 @@ one of the three with both properties.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the operation, its table and its anti-automorphism.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), above this article in this category, for the criterion, the two families and the comparison with the other general products.
-- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the plain algebra, the cone and the rank-one matrix reading.
-- [Annihilators of the Biquaternion Algebra](annihilators-of-the-biquaternion-algebra.html), the sibling block, whose two annihilators of an element are distinct.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain algebra, the cone and the rank-one matrix reading.
 - [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), the block whose annihilator is a hyperplane for every nonzero element.

@@ -8,7 +8,7 @@ quaternionic sesquilinear product
 $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra*; the twelve structures and their
 four general products are the subject of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the model
-of the method is *The Specificities of the Biquaternion Algebra*, which isolates the plain product by left
+of the method is *The Biquaternion Algebra and Its Vector Spaces*, which isolates the plain product by left
 alternativity. The twin articles are
 *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic
 Algebra*.
@@ -178,7 +178,7 @@ square.
 
 ## Further Reading
 
-- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), the model of the method, where left alternativity isolates the plain product among the twelve.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), the model of the method, where left alternativity isolates the plain product among the twelve.
 - [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html) and [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), the twin articles, for the operator laws of the two neighbouring structures.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve structures, their four general products and their parts.
 - [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the adapted exchange that the clause (C1) names.

@@ -103,7 +103,7 @@ $\tilde Q_1$ are
 multiplication $\tilde Q_2\mapsto\tilde Q_1\tilde Q_2$, whose rank is four for a unit and two for a
 nonzero zero divisor; the kernel dimension is $4$ minus the rank.
 
-## The Dichotomy by the Cone
+## The Dichotomy by the Null Cone
 
 **The annihilator reads the cone twice, trivially off it and as a complex plane on it, and the star makes the two sides coincide, where the parent's two annihilators are distinct.**
 
@@ -162,6 +162,5 @@ parent into one plane.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the operation and its table.
 - [Zero Divisors of the General Plain Sesqualgebra](zero-divisors-of-the-general-plain-sesqualgebra.html), above this article in this category, for the criterion and the two families.
-- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), the parent, whose two annihilators are distinct.
-- [Annihilators of the Biquaternion Algebra](annihilators-of-the-biquaternion-algebra.html), the parent's annihilators, the two distinct planes.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), the parent, whose two annihilators are distinct.
 - [Annihilators of the General Quaternionic Sesqualgebra](annihilators-of-the-general-quaternionic-sesqualgebra.html), the sibling whose two sides are distinct again.

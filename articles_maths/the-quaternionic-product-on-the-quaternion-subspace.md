@@ -95,7 +95,7 @@ $$
 
 the reduced norm of the real quaternion $h$, a non-negative real number that vanishes only at $h = 0$.
 
-**Proof.** The square lemma of *Norm and Invertibility in the General Quaternionic Algebra* gives $h\star h = \langle h\rangle_{\natural}e_t$, and on real quaternions $\langle h\rangle_{\natural} = \bar h h$ is the sum of the four real squares $h_t^2+h_x^2+h_y^2+h_z^2$, which is real, non-negative and zero only at the origin.
+**Proof.** The square lemma of *Norm Regularity and Degeneracy in the Biquaternion Algebra* gives $h\star h = \langle h\rangle_{\natural}e_t$, and on real quaternions $\langle h\rangle_{\natural} = \bar h h$ is the sum of the four real squares $h_t^2+h_x^2+h_y^2+h_z^2$, which is real, non-negative and zero only at the origin.
 
 **Corollary (the element theory of the subspace is classical).** On $\mathbb{H}_{\mathbb{B}}$: the only idempotents are $0$ and $e_t$; the only square-zero element is $0$; every nonzero element is a unit, the inverse of $h$ being $\bar h/|h|^2$. In particular the nilpotent cone of the second article meets the subspace at the origin alone, and the zero-divisor theory of the algebra has no content on the real quaternions.
 

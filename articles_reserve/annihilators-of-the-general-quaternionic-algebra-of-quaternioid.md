@@ -25,7 +25,7 @@ has $e_t$ as a left unit only. But over $\mathbb{R}$ the quaternion algebra is a
 and the norm $N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\vec p|^2$ is a sum of four
 squares, hence positive definite; since the norm is multiplicative,
 $N(\tilde p\star\tilde q)=N(\tilde p)N(\tilde q)$, the product has **no zero divisors** at all
-(*Norm and Invertibility in the General Quaternionic Algebra*). The annihilator is the finer
+(*Norm and Invertibility*). The annihilator is the finer
 reading of this fact, and over $\mathbb{R}$ its answer is the smallest possible away from the
 origin.
 
@@ -212,7 +212,7 @@ plane on it; over $\mathbb{R}$ the division property leaves nothing.
 
 - *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternioid-r-space.md`), §*The Element Vocabulary*, for the zero divisor, the annihilator and the regular element of a general product.
 - *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-quaternioid.md`), for the product, its table and its conjugation.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternioid.md`), for the definite norm, its multiplicativity and the absence of zero divisors.
+- *Norm and Invertibility* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternioid.md`), for the definite norm, its multiplicativity and the absence of zero divisors.
 - *The Isotropic Structure of the General Quaternionic Algebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-algebra-of-quaternioid.md`), for the definiteness of the form and the emptiness of the isotropic structure.
 - *One-Sided Operators on the General Quaternionic Algebra* (`articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-quaternioid.md`), for the left and the right multiplications and their injectivity.
 - *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.md`), for the structure-level annihilating set over the whole space, which is $\{0\}$ for the general quaternionic product.

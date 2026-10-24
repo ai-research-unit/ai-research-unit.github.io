@@ -273,7 +273,7 @@ The reading is a third form of the root set of the algebra, beside the unit-scal
 
 ### The Halving Map
 
-The halving map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents of the plain product, of inverse $\tilde\Xi=2\tilde\Pi-e_t$, and a root $\tilde\Xi$ carries the complete orthogonal pair $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)$, of sum $e_t$, of product $0$ and of difference the root. The map and its arithmetic are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence With the Roots of One*. For every root other than $\pm e_t$ the idempotent is primitive, so the pair carries the Peirce decomposition of the algebra into four pieces of real dimension two each, *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the roots of one are therefore the source of the idempotents and of that decomposition.
+The halving map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents of the plain product, of inverse $\tilde\Xi=2\tilde\Pi-e_t$, and a root $\tilde\Xi$ carries the complete orthogonal pair $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)$, of sum $e_t$, of product $0$ and of difference the root. The map and its arithmetic are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence With the Roots of One*. For every root other than $\pm e_t$ the idempotent is primitive, so the pair carries the Peirce decomposition of the algebra into four pieces of real dimension two each, *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the roots of one are therefore the source of the idempotents and of that decomposition.
 
 **Remark (an idempotent is read through the halving and not as an exponential).** No idempotent of the two structures other than $e_t$ is an exponential. The exponential is never a zero divisor, while every idempotent other than $0$ and $e_t$ is isotropic, $C=0$, hence a zero divisor; the origin is not a unit and is not in the image of the exponential either, since the image is the group of units. So the exponential form of an idempotent is the halving of an exponential-form root, $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$, and only the unit is an exponential itself, $e_t=\exp(0)$.
 
@@ -313,7 +313,7 @@ $$
 C(\tilde\Pi)=\tfrac14\Bigl(1+\sum_{k=1}^{3}\Xi_k^{2}\Bigr)=\tfrac14\bigl(1+(\vec\Xi,\vec\Xi)\bigr)=0,
 $$
 
-and the same computation with $\tilde\Xi=i\vec u_{\mathrm n}$ gives the vanishing on the Hermitian family as well. A vanishing central square is the criterion of *Zero Divisors of the Biquaternion Algebra*, so every idempotent other than the two trivial ones is a zero divisor. The position in $\mathbb{M}_+$ of the Hermitian family is the projection reading of the algebra's article.
+and the same computation with $\tilde\Xi=i\vec u_{\mathrm n}$ gives the vanishing on the Hermitian family as well. A vanishing central square is the criterion of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, so every idempotent other than the two trivial ones is a zero divisor. The position in $\mathbb{M}_+$ of the Hermitian family is the projection reading of the algebra's article.
 
 ## Worked Examples
 
@@ -387,6 +387,6 @@ The roots of $+1$ of the general plain sesqualgebra are exactly the elements of 
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, its closed form, its kernel, its norm and the logarithm that inverts it off the zero divisors
 - [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the trichotomy of the exponential, the four factors of the polar word and the two cautions of the exponential reading
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the group structure of the roots of $+1$ of the sesqualgebra
-- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the isotropic idempotents and the zero divisors that exclude the idempotents from the image of the exponential
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the isotropic idempotents and the zero divisors that exclude the idempotents from the image of the exponential
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the root of a central value, the idempotent and the halving map
 - [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), the companion of this article in the operator group, for the four adjoints that the four forms of the same space produce

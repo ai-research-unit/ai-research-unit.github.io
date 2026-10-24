@@ -23,7 +23,7 @@ The article states and proves the exclusive law of the block on the same model a
 
 ## The Exclusive Law of the Block
 
-The family of specificities articles states, for each block, one law that the block has and the other eleven do not, and proves it (*The Specificities of the Biquaternion Algebra*, *The Specificities of the General Quaternionic Algebra*). The law of the symmetric quaternionic block is the following.
+The family of specificities articles states, for each block, one law that the block has and the other eleven do not, and proves it (*The Biquaternion Algebra and Its Vector Spaces*, *The Specificities of the General Quaternionic Algebra*). The law of the symmetric quaternionic block is the following.
 
 **Definition (the scalar law).** Let $\circ$ be a product on $\mathbb{B}$. The product satisfies the **scalar law** when
 
@@ -78,7 +78,7 @@ $$
 
 **Proof.** $L_{\tilde Q_1}^{2}(\tilde Q_2)=L_{\tilde Q_1}\bigl(\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t\bigr)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}L_{\tilde Q_1}(e_t)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\langle\tilde Q_1,e_t\rangle_{\natural}e_t$, and $\langle\tilde Q_1,e_t\rangle_{\natural}=X_t$; so the composite is $X_t\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t=X_tL_{\tilde Q_1}(\tilde Q_2)$.
 
-The theorem is the specialisation of the composition law $L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_4}=\langle\tilde Q_5,e_t\rangle_{\natural}L^{\bullet}_{\tilde Q_4}$ of *The Multiplication Operators of the Symmetric Quaternionic Algebra* to the single element $\tilde Q_1$, and it is stated here as the identity the whole article reads. It is the exact replacement of the criterion of *The Specificities of the Biquaternion Algebra*, which in this algebra would read $L_{\tilde Q_1}^{2}=L_{\tilde Q_1\bullet\tilde Q_1}$; the two are not the same, and the comparison is made at §*The Criterion Fails Here*.
+The theorem is the specialisation of the composition law $L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_4}=\langle\tilde Q_5,e_t\rangle_{\natural}L^{\bullet}_{\tilde Q_4}$ of *The Multiplication Operators of the Symmetric Quaternionic Algebra* to the single element $\tilde Q_1$, and it is stated here as the identity the whole article reads. It is the exact replacement of the criterion of *The Biquaternion Algebra and Its Vector Spaces*, which in this algebra would read $L_{\tilde Q_1}^{2}=L_{\tilde Q_1\bullet\tilde Q_1}$; the two are not the same, and the comparison is made at §*The Criterion Fails Here*.
 
 **Corollary (the monoid law).** $L_{\tilde Q_1}L_{\tilde Q_3}=X_t\,L_{\tilde Q_3}$ for all $\tilde Q_1,\tilde Q_3$, so the family of left multiplications is stable under composition, it is a monoid with the reversed convention of composition, and every element of scalar coordinate $1$ is a left identity of the monoid.
 
@@ -118,7 +118,7 @@ The theorem is the specialisation of the composition law $L^{\bullet}_{\tilde Q_
 
 ## The Criterion Fails Here
 
-The criterion of *The Specificities of the Biquaternion Algebra* reads $L_{\tilde Q_1}^{2}=L_{\tilde Q_1\bullet\tilde Q_1}$ and characterises the left-alternative products. In this algebra the two sides are $X_tL_{\tilde Q_1}$ and, by §*The Operator Identity* read at the element $\tilde Q_1\bullet\tilde Q_1=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}e_t$,
+The criterion of *The Biquaternion Algebra and Its Vector Spaces* reads $L_{\tilde Q_1}^{2}=L_{\tilde Q_1\bullet\tilde Q_1}$ and characterises the left-alternative products. In this algebra the two sides are $X_tL_{\tilde Q_1}$ and, by §*The Operator Identity* read at the element $\tilde Q_1\bullet\tilde Q_1=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}e_t$,
 
 $$
 L_{\tilde Q_1\bullet\tilde Q_1}=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}\,L_{e_t}=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}\,E,\qquad E:\tilde Q_2\mapsto Y_te_t ,
@@ -175,7 +175,7 @@ The symmetric quaternionic product satisfies the **scalar law** — it is commut
 
 ## Further Reading
 
-- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), for the criterion of the plain product, the model of the family.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the criterion of the plain product, the model of the family.
 - [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the companion family of projectors in the general quaternionic product.
 - [Introduction to the Symmetric Quaternionic Algebra](introduction-to-the-symmetric-quaternionic-algebra.html), for the governing formula $\tilde Q_1\bullet\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ and for the absence of a unit.
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the trivial radical, the idempotents $0$ and $e_t$, and the isotropic cone of the square-zero elements.

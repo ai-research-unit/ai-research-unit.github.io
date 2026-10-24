@@ -56,7 +56,7 @@ A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t+i\vec e_z\},\qq
 $$
 In each line the first generator is $\tilde Q^{\natural}$, so the two planes share it, and the two second generators differ in one sign, which is what makes the planes distinct. The pure element $\vec e_x+i\vec e_y$ lies in its own annihilators and the non-pure element $e_t+i\vec e_x$ does not. The dimension is two, the kernel of a rank-two multiplication.
 
-The rank of the two multiplications, the planes and their traces on the remarkable subspaces are *Annihilators of the Biquaternion Algebra*; the cone is *Zero Divisors of the Biquaternion Algebra*.
+The cone is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra
 
@@ -344,7 +344,6 @@ The single example that ties them together is $\tilde Q=e_t+i\vec e_x$, whose no
 
 The owners of the twelve subsections, grouped by the article that carries them, are:
 
-- [Annihilators of the Biquaternion Algebra](annihilators-of-the-biquaternion-algebra.html), for $\mathrm{GPA}$.
 - [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$.
 - [Annihilators of the General Quaternionic Algebra](annihilators-of-the-general-quaternionic-algebra.html), for $\mathrm{GQA}$.
 - [Annihilators of the General Plain Sesqualgebra](annihilators-of-the-general-plain-sesqualgebra.html), for $\mathrm{GPS}$.

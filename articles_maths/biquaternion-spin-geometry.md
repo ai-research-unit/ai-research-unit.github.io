@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is the geometry the second of them carries. The algebra is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of Lorentzian space (*Biquaternion Other Algebraic Element Representations*), and it also carries its own biquaternion norm, whose Clifford algebra $\mathrm{Cl}(\mathbb{B},N)$ has a spinor module and a chirality grading (*Norm and Invertibility in the General Quaternionic Algebra*). This article reads the spinor module of the algebra, its two chiral halves, the Clifford multiplication that defines it, and the operator that the Clifford structure puts on it.
+The biquaternion algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is the geometry the second of them carries. The algebra is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of Lorentzian space (*Biquaternion Other Algebraic Element Representations*), and it also carries its own biquaternion norm, whose Clifford algebra $\mathrm{Cl}(\mathbb{B},N)$ has a spinor module and a chirality grading (*Norm Regularity and Degeneracy in the Biquaternion Algebra*). This article reads the spinor module of the algebra, its two chiral halves, the Clifford multiplication that defines it, and the operator that the Clifford structure puts on it.
 
 The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The module itself is realised in the matrix model in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the Clifford multiplication being stated here; the analytic theory of the operator is *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis; the rulings that the spinor lines trace are in *The Null Quadric and Its Projective Geometry*.
 
@@ -22,11 +22,11 @@ Matching the matrix form $\mathsf{M}_2(\tilde{Q})=uv^{T}$ of *Introduction to th
 
 ## Spinors as the Minimal Left Ideals
 
-The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec u)$ are a complete pair of orthogonal idempotents (*Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the Biquaternion Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
+The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec u)$ are a complete pair of orthogonal idempotents (*Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decompositions of the Biquaternion Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
 $$
 \mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2,
 $$
-so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Simple Module*, and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; only the identification with the ideals is used here.
+so that the module of the spin representation is realised inside the algebra as a minimal left ideal. The two ideals themselves are not the chiral halves: each of them complexifies to the sum $S_+\oplus S_-$ of the two chiral spaces. The chirality belongs to the algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, and the two families of null planes of the quadric are the projectivisations of the two chiral spaces $\Delta^\pm$. The construction of the module is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Simple Module*, and *Ideals and Peirce Decompositions of the Biquaternion Algebra*; only the identification with the ideals is used here.
 
 ## The Spin Representation and Its Dimension
 

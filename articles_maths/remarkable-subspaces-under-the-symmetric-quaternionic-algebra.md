@@ -17,7 +17,7 @@ $\mathbb{C}$-bilinear operations, *Remarkable Subspaces and the Four Forms* and
 real bases and their elements are *Introduction to the Remarkable Subspaces*, and the restrictions of the form that
 the product carries are *Remarkable Subspaces under the General Quaternionic Algebra* and
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, whose table is quoted here and not
-recomputed. The isotropic elements are *Zero Divisors of the Biquaternion Algebra* and *The Radical and the Isotropic
+recomputed. The isotropic elements are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra*; the staying-inside statement for the symmetrised quaternionic
 product is *Remarkable Subspaces and the Four General Products*.
 
@@ -54,7 +54,7 @@ coefficient vanishes. The **smallest nonzero value off the subspace** is $e_t$, 
 $\vec e_x,\vec e_x$; more generally $\vec Q_1\star\vec Q_2=0$ exactly when the two complex vectors are
 $\langle\cdot\rangle_{\natural}$-isotropic partners, $(\vec Q_1,\vec Q_2)=0$. The idempotents are $0$ alone, since $e_t$ is not in the
 subspace; the isotropic elements are the pure zero divisors, the complex cone
-$\sum_kQ_{2,k}^2=0$ of *Zero Divisors of the Biquaternion Algebra*.
+$\sum_kQ_{2,k}^2=0$ of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 ### The Quaternion Subspace
 
@@ -218,4 +218,4 @@ isotropic set appropriate to each.
 - [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the staying-inside statement of the symmetrisation
 - [The Quaternion Form as a Product on the Symmetric Quaternionic Algebra](the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html), for the restrictions of the form and their signatures
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the radical and the isotropic cone
-- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the pure and the non-pure zero divisors
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the pure and the non-pure zero divisors

@@ -178,6 +178,33 @@ The centre is therefore a proper subspace, and it is the scalar line: §*The Sca
 Every general statement about associative unital algebras is therefore available for $\mathbb{B}$: the two-sided ideals, the centre, the group of units, the modules and the opposite algebra. The rest of this article reads off the ones the multiplication alone decides.
 
 
+## Left Alternativity and the Isolation among the Twelve
+
+**The plain product is the only left-alternative one of the twelve structures on the space, and left alternativity is the exact threshold of the associative theory read in this article.**
+
+A product $\circ$ is **left-alternative** when
+
+$$
+\tilde Q_1\circ(\tilde Q_1\circ\tilde Q_2)=(\tilde Q_1\circ\tilde Q_1)\circ\tilde Q_2\qquad\text{for all }\tilde Q_1,\tilde Q_2,
+$$
+
+equivalently when the multiplication operators satisfy $L^{\circ}_{\tilde Q_1}L^{\circ}_{\tilde Q_1}=L^{\circ}_{\tilde Q_1\circ\tilde Q_1}$ at every element. In a left-alternative structure an idempotent gives a projector, $L_{\tilde\Pi}^{2}=L_{\tilde\Pi}$, and a square-zero element a square-zero operator, $L_{\tilde\Upsilon}^{2}=0$; the projector splits the space, and the square-zero operator produces the flag $\{0\}\subseteq\operatorname{im}L_{\tilde\Upsilon}\subseteq\ker L_{\tilde\Upsilon}\subseteq\mathbb{B}$.
+
+**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the general plain product is the only left-alternative one.
+
+*Proof.* The twelve come from the plain product by twisting the first slot with ${}^{\natural}$, twisting the second with ${}^{*}$, or (anti)symmetrising. Each destroys the law: the first twist demands $\tilde Q_1^{\natural}\tilde Q_1^{\natural}=\tilde Q_1^{\natural}\tilde Q_1$ for every $\tilde Q_1$, false at $\vec e_x$; the second equates a linear with a conjugate-linear operator; the (anti)symmetrisations add cross terms of a left and a right multiplication. The plain product itself is associative, hence left-alternative.
+
+| family | structures | left-alternative |
+|---|---|---|
+| plain | the algebra | **yes** |
+| symmetrised plain | SPA, APA | no |
+| first slot ${}^{\natural}$ | GQA | no |
+| from GQA | SQA, AQA | no |
+| second slot ${}^{*}$ | GPS, GQS | no |
+| from the sesquilinear | SPS, APS, SQS, AQS | no |
+
+The claim is about the law and not about single elements. Other structures contain an idempotent here and a square-zero element there, but no other structure carries the law, so the well-behaved elements of the others do not form a theory. The nearest case is the general quaternionic product, whose operator is a plain one with a conjugated index, $L^{\circ}_{\tilde Q_1}=L_{\tilde Q_1^{\natural}}$; it inherits the projector calculus only at the elements whose conjugate is an idempotent.
+
 ## The Multiplication as a Scalar Extension
 
 ### The Tensor Product of the Two Multiplications
@@ -242,7 +269,7 @@ The scalars cannot be enlarged further, because there is no room in the centre f
 
 ### Central Simplicity and the Absence of Division
 
-**Proposition.** $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is *Ideals and Peirce Decomposition of the Biquaternion Algebra*, cited and not repeated. Since the algebra is also central, it is a **central simple** $\mathbb{C}$-algebra, the subject of *Central Simple Algebras and the Brauer Group*.
+**Proposition.** $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is *Ideals and Peirce Decompositions of the Biquaternion Algebra*, cited and not repeated. Since the algebra is also central, it is a **central simple** $\mathbb{C}$-algebra, the subject of *Central Simple Algebras and the Brauer Group*.
 
 **Proposition.** $\mathbb{B}$ is **not a division algebra**.
 
@@ -252,7 +279,7 @@ $$
 (e_t + i\vec e_x)(e_t - i\vec e_x) = e_t^2 - (i\vec e_x)^2 = e_t - i^2 \vec e_x^2 = e_t - e_t = 0
 $$
 
-vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_t + i\vec e_x$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are *Norm and Invertibility in the General Quaternionic Algebra*, and the zero divisors themselves are classified in *Zero Divisors of the Biquaternion Algebra*.
+vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_t + i\vec e_x$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, and the zero divisors themselves are classified in *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 
 ## Generators and the Presentation
@@ -296,7 +323,7 @@ $$
 
 with $\tilde Q^{\flat}=-\tilde Q^{*}$ the **anti-Hermitian** one. They are involutions, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$; the group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*.
 
-**Remark (the algebra is a matrix algebra).** Central simplicity and complex dimension four give $\mathbb{B}\cong M_2(\mathbb{C})$, the reduced norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ being the determinant of the model. The model is read in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the reduced norm, invertibility and the zero divisors in *Norm and Invertibility in the Biquaternion Algebra*.
+**Remark (the algebra is a matrix algebra).** Central simplicity and complex dimension four give $\mathbb{B}\cong M_2(\mathbb{C})$, the reduced norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ being the determinant of the model. The model is read in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the reduced norm, invertibility and the zero divisors in *Norm Regularity and Degeneracy in the Biquaternion Algebra*.
 
 ## The Real Scalars
 
@@ -382,7 +409,7 @@ $$
 
 Its scalars enter through the structure map $\varphi(A) = Ae_t$, whose image is the scalar line and which is central; the centre is the scalar line, so the algebra is central simple; and it is not a division algebra, the product of $e_t + i\vec e_x$ and $e_t - i\vec e_x$ being zero. Two generators suffice, and the relations $\vec e_x^2 = \vec e_y^2 = -e_t$ and $\vec e_x \vec e_y + \vec e_y \vec e_x = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
 
-The algebra is central simple of dimension four, so $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduced norm is the determinant of the model; the matrix model and the norm are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *Norm and Invertibility in the Biquaternion Algebra*. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — have the natural one as the unique $\mathbb{C}$-linear one, form the Klein four-group on the first four, and their fixed and anti-fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
+The algebra is central simple of dimension four, so $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduced norm is the determinant of the model; the matrix model and the norm are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *Norm Regularity and Degeneracy in the Biquaternion Algebra*. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — have the natural one as the unique $\mathbb{C}$-linear one, form the Klein four-group on the first four, and their fixed and anti-fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
 
 The same set carries two scalar readings. Over $\mathbb{C}$ it is the space of dimension four on $e_t, \vec e_x, \vec e_y, \vec e_z$. Over $\mathbb{R}$, by restriction of scalars, it is the same additive group with real dimension eight on the basis $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$. The same element is written in three coordinate systems: eight real coordinates, four complex coordinates, or two quaternionic coordinates as a pair of real quaternions, $\tilde Q = h_1 + ih_2$.
 
@@ -431,8 +458,8 @@ The gap between the two readings is one operator: $J : \tilde Q \mapsto i\tilde 
 - [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the scalar–vector form of the multiplication, the four general products and their comparison.
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
-- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the reduced norm, the invertibility criterion and the zero-divisor cone.
-- [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the invertibility criterion and the zero-divisor cone.
+- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix model in full.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the algebra read over $\mathbb{R}$.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.

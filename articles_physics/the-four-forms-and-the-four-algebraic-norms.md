@@ -26,7 +26,7 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 | The four forms, their brackets, their Gram matrices, their signatures and their isometry groups | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
 | The four algebraic norms, multiplicativity, definiteness and the impossibility of both | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
 | The restrictions of the forms and the norms to the six remarkable subspaces | [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html) |
-| Invertibility, the zero-divisor cone and the norm-one group | [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html) |
+| Invertibility, the zero-divisor cone and the norm-one group | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The realification and the effect of the change of scalars | [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html) |
 | The identities linking the four scalar parts | [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html) |
 
@@ -243,7 +243,7 @@ The article states no dynamics, no mass value, no spectrum and no gauge group. T
 
 - [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html), for the count of the four forms, the table, the isometry groups and the hyperbolic decomposition, and for the four algebraic norms, multiplicativity, definiteness and the zero divisors.
 - [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) and [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html), for the restrictions on the six subspaces.
-- [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for the reduced norm, the inverse and the norm-one group.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the inverse and the norm-one group.
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html), for the two rules of realification and the ten-to-twelve distinction.
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the four products whose scalar parts these forms are.
 - [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the indefinite structure and the fundamental symmetry.

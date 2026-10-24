@@ -140,7 +140,7 @@ This class is the one named by the structure theorem of *Biquaternion Rotations 
 
 ### The Two Minimal Left Ideals
 
-With the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, the two halves of the algebra are the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$. Left multiplication preserves each, while the conjugation action carries each to a minimal left ideal, since it is an automorphism:
+With the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, the two halves of the algebra are the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$. Left multiplication preserves each, while the conjugation action carries each to a minimal left ideal, since it is an automorphism:
 
 $$
 \operatorname{Ad}_{\tilde Q}\bigl(\mathbb{B}\tilde\Pi_+\bigr)=\mathbb{B}\bigl(\tilde Q\tilde\Pi_+\tilde Q^{-1}\bigr),

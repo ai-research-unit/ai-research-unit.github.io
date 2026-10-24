@@ -22,7 +22,18 @@ The definition is the one of *Introduction to Mathematics*: the form is the degr
 
 ## The Four Forms
 
-The four forms are the scalar parts of the four general products, one to each pair of slots. Each is written on the coordinates of a pair, with its Gram matrix and its signature.
+The four forms are the scalar parts of the four general products, one to each pair of slots:
+
+$$
+\boxed{\;
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})
+\;}.
+$$
+
+Each is written on the coordinates of a pair, with its Gram matrix and its signature.
 
 ### The General Plain Bilinear Form
 
@@ -59,12 +70,12 @@ the scalar part of the general quaternionic sesquilinear product: the same form 
 
 ## The Table of the Four Forms
 
-| form | bracket | pair | coordinates | symmetry | Gram | signature over $\mathbb{R}$ | null set | algebraic norm lands in |
+| Form | Bracket | Pair | Coordinates | Symmetry | Gram | Signature over $\mathbb{R}$ | Null set | Algebraic norm lands in |
 |---|---|---|---|---|---|---|---|---|
-| the plain form | $\langle\cdot,\cdot\rangle$ | $(\mathrm{id},\mathrm{id})$ | $Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$ | symmetric | $\mathrm E$ | $(4,4)$ | the complex cone | $\mathbb{C}$ |
-| the Hermitian form | $\langle\cdot,\cdot\rangle_{*}$ | $(\mathrm{id},{}^{*})$ | $Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | conjugate-symmetric | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | $\mathbb{R}$ |
-| the quaternionic form | $\langle\cdot,\cdot\rangle_{\natural}$ | $({}^{\natural},\mathrm{id})$ | $Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)$ | symmetric | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero divisors | $\mathbb{C}$ |
-| the Krein form | $\langle\cdot,\cdot\rangle_{\natural*}$ | $({}^{\natural},{}^{*})$ | $Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | conjugate-symmetric | $\mathrm E$ | $(2,6)$ | $\mathcal K$ | $\mathbb{R}$ |
+| The general plain bilinear form | $\langle\cdot,\cdot\rangle$ | $(\mathrm{id},\mathrm{id})$ | $Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$ | symmetric | $\mathrm E$ | $(4,4)$ | the complex cone | $\mathbb{C}$ |
+| The general plain sesquilinear form, the Hermitian form | $\langle\cdot,\cdot\rangle_{*}$ | $(\mathrm{id},{}^{*})$ | $Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | conjugate-symmetric | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | $\mathbb{R}$ |
+| The general quaternionic bilinear form | $\langle\cdot,\cdot\rangle_{\natural}$ | $({}^{\natural},\mathrm{id})$ | $Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)$ | symmetric | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero divisors | $\mathbb{C}$ |
+| The general quaternionic sesquilinear form, the Krein form | $\langle\cdot,\cdot\rangle_{\natural*}$ | $({}^{\natural},{}^{*})$ | $Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | conjugate-symmetric | $\mathrm E$ | $(2,6)$ | $\mathcal K$ | $\mathbb{R}$ |
 
 The table separates the four by their bracket and pair, by their symmetry, by the Gram matrix and the signature of the realification of their algebraic norm, by their null set, and by the field in which the algebraic norm lands — complex for the two bilinear forms and real for the two sesquilinear ones, the conjugating second slot being what makes a algebraic norm real.
 
@@ -91,15 +102,13 @@ A $\mathbb{C}$-linear operator $T$ **preserves** a form $\varphi$ when $\varphi(
 
 $$
 \boxed{\;
-\mathrm{Isom}(B)=\{T:T^{\mathsf T}\mathrm E T=\mathrm E\}=O_4(\mathbb{C}),
-\qquad
-\mathrm{Isom}(H)=\{T:T^{*}T=\mathrm I_4\}=\mathrm{U}(4)
-\;},
-$$
-$$
-\mathrm{Isom}(N)=\{T:T^{\mathsf T}T=\mathrm I_4\}=O_4(\mathbb{C}),
-\qquad
-\mathrm{Isom}(K)=\{T:T^{*}\mathrm E T=\mathrm E\}=\mathrm{U}(1,3),
+\begin{array}{l}
+\mathrm{Isom}(B)=\{T:T^{\mathsf T}\mathrm E T=\mathrm E\}=O_4(\mathbb{C}),\qquad
+\mathrm{Isom}(H)=\{T:T^{*}T=\mathrm I_4\}=\mathrm{U}(4),\\[2pt]
+\mathrm{Isom}(N)=\{T:T^{\mathsf T}T=\mathrm I_4\}=O_4(\mathbb{C}),\qquad
+\mathrm{Isom}(K)=\{T:T^{*}\mathrm E T=\mathrm E\}=\mathrm{U}(1,3).
+\end{array}
+\;}
 $$
 
 of real dimensions $12$, $16$, $12$ and $16$.
@@ -118,15 +127,15 @@ The general plain bilinear form $\langle\cdot,\cdot\rangle$ is the complex-value
 **Theorem (the form is an orthogonal sum of two hyperbolic planes).** The four elements
 
 $$
-\boxed{\;
 h_1=e_t+\vec e_x,\qquad h_2=\tfrac12(e_t-\vec e_x),\qquad h_3=\vec e_y+i\vec e_z,\qquad h_4=\tfrac12(i\vec e_z-\vec e_y)
-\;}
 $$
 
 are isotropic for $\langle\cdot,\cdot\rangle$, the only non-zero pairings among them are $\langle h_1,h_2\rangle=1$ and $\langle h_3,h_4\rangle=1$, and the Gram matrix in this basis is
 
 $$
-\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+\boxed{\;
+\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}
+\;}.
 $$
 
 The form is therefore the orthogonal sum of the two hyperbolic planes $\operatorname{span}\{e_t,\vec e_x\}$ and $\operatorname{span}\{\vec e_y,\vec e_z\}$, of index $1+1=2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$.
@@ -185,9 +194,7 @@ The count of the four is taken, one step, in §*Why the Other Eight Operations A
 *Proof.* The algebraic norm is the form at the two equal arguments, so the count of the four algebraic norms is the count of the four forms, which is the proposition of §*Why the Other Eight Operations Add No New Form*, above; the symmetrisation of a family therefore carries the same algebraic norm as the general product and the antisymmetrisation the zero one. Hence the algebraic norms of the twelve are those of the four general products, each on the two operations $\mathrm G$ and $\mathrm S$ of its family: $\langle\cdot\rangle$ on $\mathrm{GPA}$ and $\mathrm{SPA}$, $\langle\cdot\rangle_{*}$ on $\mathrm{GPS}$ and $\mathrm{SPS}$, $\langle\cdot\rangle_{\natural}$ on $\mathrm{GQA}$ and $\mathrm{SQA}$, $\langle\cdot\rangle_{\natural*}$ on $\mathrm{GQS}$ and $\mathrm{SQS}$; and $0$ on $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$. The four are distinct as functions of one element: on $\vec e_x$ and on $ie_t$ their value pairs are
 
 $$
-\boxed{\;
-B=(-1,-1),\qquad H=(1,1),\qquad N=(1,-1),\qquad K=(-1,1)
-\;},
+(-1,-1),\qquad(1,1),\qquad(1,-1),\qquad(-1,1),
 $$
 
 which are four different pairs.
@@ -197,14 +204,23 @@ which are four different pairs.
 
 ## The Four Algebraic Norms
 
-Each algebraic norm is the diagonal of its form. The four are written on the coordinates of one element, with their value rings, their Gram matrices and their signatures.
+Each algebraic norm is the diagonal of its form:
+
+$$
+\boxed{\;
+\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad
+\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
+\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
+\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}
+\;}.
+$$
+
+Each is written on the coordinates of one element, with its value ring, its Gram matrix and its signature.
 
 ### The General Plain Bilinear Algebraic Norm
 
 $$
-\boxed{\;
-\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}
-\;},
+\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
 $$
 
 the general plain bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $\langle\tilde Q\rangle=0$, already the complex quadric of §*The Four Forms*, above. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
@@ -236,7 +252,7 @@ $$
 
 *Proof.* Under the matrix representation $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, the algebraic norm is the determinant, $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$, as the computation of the determinant of $\mathsf{M}_2(\tilde Q)=Q_t\mathrm I-i\sum_kQ_k\sigma_k$ shows. The map $\mathsf{M}_2$ is an algebra homomorphism and the determinant is multiplicative, so $\langle\cdot\rangle_{\natural}$ is.
 
-The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *Norm and Invertibility in the General Quaternionic Algebra*: an element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and the unit group is the norm-one group $\{\langle\tilde Q\rangle_{\natural}=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
+The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *Norm Regularity and Degeneracy in the Biquaternion Algebra*: an element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and the unit group is the norm-one group $\{\langle\tilde Q\rangle_{\natural}=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
 
 ### The General Quaternionic Sesquilinear Algebraic Norm
 
@@ -249,12 +265,12 @@ the general quaternionic sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q
 
 ## The Table of the Four Algebraic Norms
 
-| algebraic norm | bracket of the form | algebraic norm, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | pairing | value | Gram | signature over $\mathbb{R}$ | vanishing set | multiplicative | definite |
-|---|---|---|---|---|---|---|---|---|---|
-| $\langle\cdot\rangle$ | $\langle\cdot,\cdot\rangle$ | $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | the general plain bilinear form | $\mathbb{C}$ | $\mathrm E$ | $(4,4)$ | complex cone | no | — |
-| $\langle\cdot\rangle_{*}$ | $\langle\cdot,\cdot\rangle_{*}$ | $\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the general plain sesquilinear form, the Hermitian form | $\mathbb{R}$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | no | **yes** |
-| $\langle\cdot\rangle_{\natural}$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the general quaternionic bilinear form | $\mathbb{C}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero divisors | **yes** | — |
-| $\langle\cdot\rangle_{\natural*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the general quaternionic sesquilinear form, the Krein form | $\mathbb{R}$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$ | no | no |
+| Form | Algebraic norm | Bracket | Algebraic norm, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | Pairing | Value | Gram | Signature over $\mathbb{R}$ | Vanishing set | Multiplicative | Definite |
+|---|---|---|---|---|---|---|---|---|---|---|
+| The general plain bilinear algebraic norm | $\langle\cdot\rangle$ | $\langle\cdot,\cdot\rangle$ | $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | The general plain bilinear form | $\mathbb{C}$ | $\mathrm E$ | $(4,4)$ | complex cone | no | — |
+| The general plain sesquilinear algebraic norm, the Hermitian algebraic norm | $\langle\cdot\rangle_{*}$ | $\langle\cdot,\cdot\rangle_{*}$ | $\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | The general plain sesquilinear form, the Hermitian form | $\mathbb{R}$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | no | **yes** |
+| The general quaternionic bilinear algebraic norm | $\langle\cdot\rangle_{\natural}$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The general quaternionic bilinear form | $\mathbb{C}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero divisors | **yes** | — |
+| The general quaternionic sesquilinear algebraic norm, the Krein algebraic norm | $\langle\cdot\rangle_{\natural*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | The general quaternionic sesquilinear form, the Krein form | $\mathbb{R}$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$ | no | no |
 
 The table separates the four by the field of their values, by the Gram matrix and the signature of their pairing, by their vanishing set, and by the two properties that single out one algebraic norm each: definiteness for $\langle\cdot\rangle_{*}$, multiplicativity for $\langle\cdot\rangle_{\natural}$.
 
@@ -318,6 +334,6 @@ Read at their two equal arguments, the four forms give the four algebraic norms 
 - [Bilinear Forms](bilinear-forms.html), [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), [Hermitian Forms and Unitary Geometry](hermitian-forms-and-unitary-geometry.html) and [Matrix Groups and Classical Groups](matrix-groups-and-classical-groups.html), for the general theory of a bilinear or sesquilinear form, its Gram matrix, its hyperbolic decomposition and the classical group that preserves it.
 - [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html), for the four forms read on the remarkable subspaces.
 - [Remarkable Subspaces and the Four Algebraic Norms](remarkable-subspaces-and-the-four-algebraic-norms.html), for the restriction of the four algebraic norms to the remarkable subspaces.
-- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the multiplicative algebraic norm, the zero divisors and the criterion of invertibility.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative algebraic norm, the zero divisors and the criterion of invertibility.
 - [Topology and Metric for Each of the Twelve Operations](topology-and-metric-for-each-of-the-twelve-operations.html), for the one topology and the one Euclidean norm of the space.
 - [The Norm Defined by a Form](the-norm-defined-by-a-form.html), [Hermitian Forms over Algebras and Norms](hermitian-forms-over-algebras-and-norms.html) and [Introduction to Mathematics](introduction-to-mathematics.html), for the distinction between the algebraic norm and the topological norm.

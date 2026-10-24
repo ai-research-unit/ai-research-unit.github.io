@@ -212,7 +212,7 @@ Zero for the two families of zero divisors, $e_t$ for the unit and the displaced
 
 **Theorem (the units and the zero divisors among the idempotents).** Among the idempotents of the structures, the units of the algebra are $e_t$ and the displaced family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_t+\tilde\Xi)$ beyond the trivial pair, the Hermitian ones included, and no other idempotent; and the origin is neither a unit nor a zero divisor.
 
-*Proof.* The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (*Norm and Invertibility in the General Quaternionic Algebra*).
+*Proof.* The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (*Norm Regularity and Degeneracy in the Biquaternion Algebra*).
 
 The theorem is the sharpest separation of the sets. The trivial pair carries the unit $e_t$, so the smallest set, that of the natural product, has no zero divisor at all. The plain product and the general plain sesquilinear product have nontrivial idempotents, and every one of them is a zero divisor; the non-trivial plain family is a part of the zero-divisor cone that no other structure's idempotents reach. The displaced family is the only family of idempotents whose members are units, and it is a family of the general quaternionic sesquilinear product alone.
 
@@ -236,7 +236,7 @@ The four sets therefore occupy four different regions: the centre for the trivia
 
 **Theorem (the Peirce decomposition is the plain product's own).** For an idempotent $\tilde\Pi$ of the plain product the algebra splits as $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_t-\tilde\Pi)$, and the two summands are left ideals. For the idempotents of the other structures no such decomposition is available, because the products are not associative, and it is the associativity that turns the Peirce corners into ideals.
 
-*Proof.* The decomposition and the ideal structure are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the display $\tilde\Pi(e_t-\tilde\Pi)=0$ of §*The Antipodal Idempotent* is the orthogonality the decomposition needs, and the associativity of the plain product is what makes the summands $\mathbb{B}\tilde\Pi$ and $\mathbb{B}(e_t-\tilde\Pi)$ left ideals, which the other three products fail.
+*Proof.* The decomposition and the ideal structure are *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the display $\tilde\Pi(e_t-\tilde\Pi)=0$ of §*The Antipodal Idempotent* is the orthogonality the decomposition needs, and the associativity of the plain product is what makes the summands $\mathbb{B}\tilde\Pi$ and $\mathbb{B}(e_t-\tilde\Pi)$ left ideals, which the other three products fail.
 
 The comparison ends with the two readings of the idempotent. The Hermitian idempotents of the general plain sesquilinear product act as projections on the positive cone and on the Hermitian module (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*), and the displaced family is the family of idempotents of the fourth product whose central square is $e_t$; the natural product has the trivial pair alone.
 
@@ -326,6 +326,6 @@ The idempotents are the roots of $+1$ of the plain product read through the halv
 - [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the tabulation of the four root problems and the four idempotent sets.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the root set of $+1$ of the general plain sesquilinear product.
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html) and [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the two squares of the sesquilinear families.
-- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the criterion $C\neq0$ with which the idempotents are classified as units or zero divisors.
-- [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the decomposition the plain idempotents carry and the associativity it needs.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion $C\neq0$ with which the idempotents are classified as units or zero divisors.
+- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the decomposition the plain idempotents carry and the associativity it needs.
 - [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html) and [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces in which the families are placed.

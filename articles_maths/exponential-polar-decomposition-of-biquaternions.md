@@ -523,7 +523,7 @@ $$
 \mathcal N=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}.
 $$
 
-The cone is one complex equation, hence a cone of real dimension six. In the matrix model it is the determinant-zero set, so its nonzero elements are exactly the rank-one matrices, that is, the zero divisors of the algebra (*Norm and Invertibility in the General Quaternionic Algebra*). On the cone the rapidity diverges, the scale collapses, and the word has boundary values rather than a value.
+The cone is one complex equation, hence a cone of real dimension six. In the matrix model it is the determinant-zero set, so its nonzero elements are exactly the rank-one matrices, that is, the zero divisors of the algebra (*Norm Regularity and Degeneracy in the Biquaternion Algebra*). On the cone the rapidity diverges, the scale collapses, and the word has boundary values rather than a value.
 
 ### The Two Strata
 
@@ -707,7 +707,7 @@ The table compares the three exponential polar decompositions; in the split-comp
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Cartan decomposition, the Baker–Campbell–Hausdorff formula and the Lie algebra.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four coordinate blocks and the boost family.
-- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the null cone and the zero divisors.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone and the zero divisors.
 - [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), for the quaternion case.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the commutative two-dimensional case.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional case.

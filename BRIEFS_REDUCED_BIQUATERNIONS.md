@@ -150,7 +150,7 @@ Every algebraic claim recomputed on at most 100 elements; the norm, the zero-div
 ### The articles
 
   - `introduction-to-the-general-quaternionic-algebra-of-the-reduced-biquaternions`  —  Introduction to the General Quaternionic Algebra of the Reduced Biquaternions
-  - `norm-and-invertibility-in-the-general-quaternionic-algebra-of-the-reduced-biquaternions`  —  Norm and Invertibility in the General Quaternionic Algebra of the Reduced Biquaternions
+  - `norm-and-invertibility-in-the-general-quaternionic-algebra-of-the-reduced-biquaternions`  —  Norm and Invertibility of the Reduced Biquaternions
   - `zero-divisors-of-the-general-quaternionic-algebra-of-the-reduced-biquaternions`  —  Zero Divisors of the General Quaternionic Algebra of the Reduced Biquaternions
   - `annihilators-of-the-general-quaternionic-algebra-of-the-reduced-biquaternions`  —  Annihilators of the General Quaternionic Algebra of the Reduced Biquaternions
   - `square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra-of-the-reduced-biquaternions`  —  Square Roots of One and the Idempotents of the General Quaternionic Algebra of the Reduced Biquaternions

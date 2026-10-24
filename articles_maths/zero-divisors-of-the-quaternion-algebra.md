@@ -6,7 +6,7 @@ This article studies the zero divisors of the quaternion algebra $\mathbb{H}$. I
 Invertibility in the Quaternion Algebra*, above this article in this category, which established
 the criterion for invertibility and the three-way classification of the elements of $\mathbb{H}$, and
 it opens the element theory of the block: the zero divisors of the complexified block, of the
-idempotent and the nilpotent type, are *Zero Divisors of the Biquaternion Algebra*, in the
+idempotent and the nilpotent type, are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, in the
 neighbouring *Biquaternion* category, and the vocabulary of pure and non-pure is used throughout. The goal here is to characterise the zero
 divisors **of the quaternion product**, to name the two families the complexified theory
 separates, and to prove that over $\mathbb{R}$ both are empty.
@@ -280,7 +280,7 @@ either is a zero divisor.
 - [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the quaternion norm, its multiplicativity, the invertibility criterion and the division property.
 - [Square Roots of One and the Idempotents of the Quaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html) and [Square Roots of Zero and the Nilpotents of the Quaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.html), below this article in this category, for the two classes that the complexified zero-divisor families become over $\mathbb{R}$.
 - [Annihilators of the Quaternion Algebra](annihilators-of-the-quaternion-algebra.html), below this article in this category, for the annihilator of an element, the two multiplication operators and their rank.
-- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), the complexified counterpart, for the punctured cone, its two families and the criterion in the complex coefficients.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), the complexified counterpart, for the punctured cone, its two families and the criterion in the complex coefficients.
 - [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), below this article in this category, for the folding of the empty classes.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the quaternion product and its norm.
 - Leonard Dickson, *Algebras and Their Arithmetics* (University of Chicago Press, 1923), for the division property and the structure of the quaternion algebra.

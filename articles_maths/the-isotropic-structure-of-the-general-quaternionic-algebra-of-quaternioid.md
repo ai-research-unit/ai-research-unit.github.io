@@ -40,7 +40,7 @@ the polar form of the quaternionic bilinear algebraic norm $\langle\tilde q\rang
 
 *Proof.* Positive definiteness gives non-degeneracy at once; explicitly, an element orthogonal to each $e_\mu$ has all four coordinates zero.
 
-**Corollary (the reading on the product).** The form is the exact measure of the division property. An element is a zero divisor of the product exactly when it is isotropic or orthogonal to an isotropic element, and there are none: $\tilde q_1 \star \tilde q_2 = 0$ implies $\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} = 0$, hence $\tilde q_1 = 0$ or $\tilde q_2 = 0$ (*Norm and Invertibility in the General Quaternionic Algebra*). The absence of isotropic elements and the absence of zero divisors are the same statement about the form.
+**Corollary (the reading on the product).** The form is the exact measure of the division property. An element is a zero divisor of the product exactly when it is isotropic or orthogonal to an isotropic element, and there are none: $\tilde q_1 \star \tilde q_2 = 0$ implies $\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} = 0$, hence $\tilde q_1 = 0$ or $\tilde q_2 = 0$ (*Norm and Invertibility*). The absence of isotropic elements and the absence of zero divisors are the same statement about the form.
 
 ## The Comparison with the Plain Form
 
@@ -65,7 +65,7 @@ The plain product of the same space carries the other degree-two form, the **pla
 
 **Theorem (multiplicativity and the form).** The product scales the form by the product of the norms: $\langle\tilde q_1 \star \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$, so the product is a similarity of the form with ratio $\langle\tilde q_2\rangle_{\natural}$ on the left factor and $\langle\tilde q_1\rangle_{\natural}$ on the right one. The group of linear maps $T$ of $\mathbb{H}$ preserving the form is given algebraically by the matrix condition $T^{\mathsf T}T = \mathrm I_4$.
 
-*Proof.* Multiplicativity is the theorem of *Norm and Invertibility in the General Quaternionic Algebra*; the matrix condition is the preservation of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$, whose Gram matrix is $\mathrm I_4$; a linear map preserves $\langle\cdot,\cdot\rangle_{\natural}$ exactly when its matrix $T$ satisfies $T^{\mathsf T}T = \mathrm I_4$.
+*Proof.* Multiplicativity is the theorem of *Norm and Invertibility*; the matrix condition is the preservation of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$, whose Gram matrix is $\mathrm I_4$; a linear map preserves $\langle\cdot,\cdot\rangle_{\natural}$ exactly when its matrix $T$ satisfies $T^{\mathsf T}T = \mathrm I_4$.
 
 **Corollary (the shells).** The level sets $N = \lambda$ of the form are the shells of the norm, and they are the root sets of the central values of the square, the shell $N = 1$ being the root set of $+1$ (*Square Roots of One and the Idempotents of the General Quaternionic Algebra*). The shells of the form are the sets that the pin and spin construction of the block uses, and they are nonempty only for $\lambda \geq 0$; the construction is *The Pin and Spin Groups of the General Quaternionic Algebra*, below this article in this category.
 

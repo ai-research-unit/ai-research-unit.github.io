@@ -158,5 +158,4 @@ scalar. The zero divisors are the empty set, read in *Zero Divisors of the Quate
 - [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm and the division property that make every nonzero element a unit.
 - [One-Sided Operators on the Quaternion Algebra](one-sided-operators-on-the-quaternion-algebra.html), for the operators $L_{\tilde q}$ and $R_{\tilde q}$ and their invertibility.
 - [Association and the Transpose on the Quaternion Algebra](association-and-the-transpose-on-the-quaternion-algebra.html), for the transpose $F^{\sim}=DF^{\mathsf T}D$ of the plain form, under which the right multiplication is the transpose of the left.
-- [Annihilators of the Biquaternion Algebra](annihilators-of-the-biquaternion-algebra.html), the complexified counterpart in the biquaternion chapter, where the cone is a hypersurface and the annihilator of a nonzero cone element is a pair of planes.
 - [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), for why the empty classes of the block are folded into a single article.

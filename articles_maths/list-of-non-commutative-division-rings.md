@@ -84,7 +84,7 @@ The Cayley–Dickson doubling chain loses commutativity at the quaternions and a
 | Object | Why it is not a division ring | Introduced in |
 |---|---|---|
 | $M_n(k)$, $n \geq 2$ | the matrix units $E_{11}E_{22} = 0$ are zero divisors | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | zero divisors; not every nonzero element is invertible | *Zero Divisors of the Biquaternion Algebra* |
+| $\mathbb{B}$, the biquaternions | zero divisors; not every nonzero element is invertible | *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
 | $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors; not even domains | *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{O}$, $\mathbb{S}$ | normed division algebras whose multiplication is not associative, so not rings | *Division Algebras* |

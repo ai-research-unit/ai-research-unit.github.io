@@ -4,7 +4,7 @@
 
 An idempotent $e$ in a unital associative algebra splits the algebra into four corners: the two diagonal corners $eAe$ and $(1-e)A(1-e)$, which are algebras, and the two off-diagonal corners $eA(1-e)$ and $(1-e)Ae$, which are bimodules. The diagonal part is the centraliser of $e$; the off-diagonal part is the set of elements that fail to commute with $e$. This article studies the off-diagonal part as the precise measure of the noncentrality of $e$.
 
-The article assumes the Peirce decomposition of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, and the centraliser theorem of *The Centraliser and the Diagonal Peirce Part*. The passage from one idempotent to a complete orthogonal family, with the relative complement in a corner and the refinement and coarsening of the decomposition, is *Complementary Idempotents and the Peirce Decomposition*. The commutator operator is *The Commutator Operator*; the ideals and quotients are *Ideals and Quotients of Algebras*; the biquaternion example is *Ideals and Peirce Decomposition of the Biquaternion Algebra*. The primitive idempotents and the minimal left ideals are treated in *List of Rings by Their Idempotents* and *Simple and Semisimple Modules*; this article does not use them. The base is a field $k$ and $A$ is a finite-dimensional unital associative $k$-algebra. The idempotent $e \in A$ is arbitrary, and $f = 1_A - e$.
+The article assumes the Peirce decomposition of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, and the centraliser theorem of *The Centraliser and the Diagonal Peirce Part*. The passage from one idempotent to a complete orthogonal family, with the relative complement in a corner and the refinement and coarsening of the decomposition, is *Complementary Idempotents and the Peirce Decomposition*. The commutator operator is *The Commutator Operator*; the ideals and quotients are *Ideals and Quotients of Algebras*; the biquaternion example is *Ideals and Peirce Decompositions of the Biquaternion Algebra*. The primitive idempotents and the minimal left ideals are treated in *List of Rings by Their Idempotents* and *Simple and Semisimple Modules*; this article does not use them. The base is a field $k$ and $A$ is a finite-dimensional unital associative $k$-algebra. The idempotent $e \in A$ is arbitrary, and $f = 1_A - e$.
 
 The main point is a warning about language. The off-diagonal part measures the failure of $e$ to be central, not the failure of $A$ to be commutative. A nonzero off-diagonal part forces $A$ to be noncommutative, but a noncommutative algebra can have idempotents with a zero off-diagonal part, and a commutative algebra has no other kind. The article separates the two notions carefully.
 
@@ -252,7 +252,7 @@ The off-diagonal part is not an ideal when $0 < k < n$: if it were an ideal, the
 
 ## The Biquaternion Case
 
-Let $\mathbb{B} \cong M_2(\mathbb{C})$ be the biquaternion algebra, and let $\Pi_+$ be the idempotent of the Peirce decomposition of *Ideals and Peirce Decomposition of the Biquaternion Algebra*. In the matrix model, $\Pi_+$ is a rank-one projection, conjugate to $\operatorname{diag}(1,0)$. The four corners are one-dimensional:
+Let $\mathbb{B} \cong M_2(\mathbb{C})$ be the biquaternion algebra, and let $\Pi_+$ be the idempotent of the Peirce decomposition of *Ideals and Peirce Decompositions of the Biquaternion Algebra*. In the matrix model, $\Pi_+$ is a rank-one projection, conjugate to $\operatorname{diag}(1,0)$. The four corners are one-dimensional:
 
 $$
 \Pi_+ \mathbb{B} \Pi_+ \cong \mathbb{C}, \qquad \Pi_- \mathbb{B} \Pi_- \cong \mathbb{C}, \qquad \Pi_+ \mathbb{B} \Pi_- \cong \mathbb{C}, \qquad \Pi_- \mathbb{B} \Pi_+ \cong \mathbb{C},
@@ -301,4 +301,4 @@ The off-diagonal part measures noncentrality, not noncommutativity. A nonzero $N
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for the idempotent $e$, the corner $eAe$ and the left and right ideals $Ae$ and $eA$.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for central idempotents, product decompositions and the structure of matrix rings.
 - Nicolas Bourbaki, *Algèbre*, Chapitre VII, for the Peirce decomposition and the graded structure attached to an idempotent.
-- The corpus article *Ideals and Peirce Decomposition of the Biquaternion Algebra*, for the explicit biquaternion Peirce decomposition used in §*The Biquaternion Case*.
+- The corpus article *Ideals and Peirce Decompositions of the Biquaternion Algebra*, for the explicit biquaternion Peirce decomposition used in §*The Biquaternion Case*.

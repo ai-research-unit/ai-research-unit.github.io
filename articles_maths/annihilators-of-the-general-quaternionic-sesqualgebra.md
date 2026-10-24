@@ -112,7 +112,7 @@ $\tilde Q_1$ are
 multiplication $\tilde Q_2\mapsto\tilde Q_1^{\natural}\tilde Q_2$ of the general quaternionic algebra,
 whose rank is four for a unit of the plain product and two for a nonzero zero divisor.
 
-## The Dichotomy by the Cone
+## The Dichotomy by the Null Cone
 
 **The annihilator reads the cone twice: off the cone both annihilators are $\{0\}$ and the element is a unit of the plain product, and on the cone each annihilator is a complex plane; the block carries both involution signs, so the two sides are distinct, unlike its two siblings, whose single involution identifies them.**
 
@@ -169,6 +169,6 @@ meeting of the two involution signs is exactly what makes the two sides two agai
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the operation and its table.
 - [Zero Divisors of the General Quaternionic Sesqualgebra](zero-divisors-of-the-general-quaternionic-sesqualgebra.html), above this article in this category, for the criterion and the two families.
-- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), the parent, for the cone $C(\tilde Q_1)=0$.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), the parent, for the cone $C(\tilde Q_1)=0$.
 - [Annihilators of the General Plain Sesqualgebra](annihilators-of-the-general-plain-sesqualgebra.html), the sibling whose single star identifies the two sides.
 - [Annihilators of the General Quaternionic Algebra](annihilators-of-the-general-quaternionic-algebra.html), the sibling whose single natural conjugation identifies the two sides.

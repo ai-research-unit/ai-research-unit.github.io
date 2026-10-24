@@ -70,7 +70,7 @@ that.
 **The reading list** (the corpus's own articles): *Conventions in Mathematics*; *Conventions in the
 Biquaternion Universe*; the clean *Biquaternions* category, article for article, as the template — in
 particular *The Biquaternion Algebra and Its Vector Spaces*, *The Four Products, Their Forms and Their Algebraic
-Norms*, *Norm and Invertibility in the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the
+Norms*, *Norm and Invertibility*, *Ideals and Peirce Decomposition of the
 Biquaternion Algebra* and the Fractal Geometry articles; the *Split-Complex Numbers* category, which is
 the same algebra over $\mathbb{R}$ and the closest sibling; *The Mathematical Study of Biquaternions*.
 

@@ -17,7 +17,7 @@ The article owns no theorem. The closed forms of the exponential and the logarit
 | The logarithm by regime, the principal branch and the fibre | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The domain, the principal domain and the cut walls | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The exponential word and the boundary of the polar decomposition | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
-| The group of units and the complement of the cone | [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html) |
+| The group of units and the complement of the cone | [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 ## The Image
 
@@ -235,7 +235,7 @@ No arrow of time, no preferred generator and no thermal reading are supplied. Th
 
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the fibre.
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the word, the defect and the boundary of the decomposition.
-- [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html), for the units and the cone.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the units and the cone.
 - [Quantum Channels and the Reversible/Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the Lindbladian side of the dichotomy.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the topological reading of the unit group.
 - [The Discrete Lattice and the Thermal Circle](the-discrete-lattice-and-the-thermal-circle.html), for the distinction between the parity lattice and the Matsubara lattice.

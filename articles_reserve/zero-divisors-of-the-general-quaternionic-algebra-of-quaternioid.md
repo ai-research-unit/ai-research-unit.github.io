@@ -197,7 +197,7 @@ $$
 \tilde p\star\zeta(\tilde p)=e_t=\zeta(\tilde p)\star\tilde p .
 $$
 
-The statement is *Norm and Invertibility in the General Quaternionic Algebra*,
+The statement is *Norm and Invertibility*,
 §*The One-Sided Inverse Equations*.
 
 The remark is the one the block demands, and it is stated in the block's own terms. The algebra has
@@ -350,7 +350,7 @@ one-sided here and two-sided there.
 - *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternioid-r-space.md`), §*The Element Vocabulary*, for the product-relative definition of the zero divisor, of the regular element and of a division rule.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for isotopes and the way a change of product moves the zero divisors.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the division property of the quaternion algebra and the multiplicative norm.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternioid.md`), for the definite norm, its multiplicativity and the two one-sided equations.
+- *Norm and Invertibility* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternioid.md`), for the definite norm, its multiplicativity and the two one-sided equations.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra-of-quaternioid.md`), for the coincidence of the two annihilators and their size.
 - *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-quaternioid-r-space.md`), for the six zero-divisor sets of the space and the two division structures.
 - *The Isotropic Structure of the General Quaternionic Algebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-algebra-of-quaternioid.md`), for the definiteness of the quaternionic form and the emptiness of the isotropic structure.

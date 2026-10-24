@@ -20,7 +20,7 @@ The article reads the operator calculus of the general plain product and then cr
 | The sandwich as the map $X\mapsto MXM^{\dagger}$ | [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html) |
 | The sandwich as a product of the two regular maps | [The Four-Vector Operator Representation of Biquaternions](../articles_maths/the-four-vector-operator-representation-of-biquaternions.html) |
 | The action of the sandwich on the remarkable subspaces | [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) |
-| The Peirce decomposition and the four corners | [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
+| The Peirce decomposition and the four corners | [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
 
 ## The Three Families
 
@@ -329,7 +329,7 @@ The twelve structures are not one calculus. Only the general plain bilinear row 
 - [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), for the pair structure and the type criteria.
 - [Association and the Transpose on the Quaternion Algebra](../articles_maths/association-and-the-transpose-on-the-quaternion-algebra.html), for the adjoint that swaps the sides.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the monoid, the enveloping algebra and the two-sided maps.
-- [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners and the frames.
+- [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the four corners and the frames.
 - [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html), for the Hermitian corners and the state/observable split.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the crossing table of the twelve structures.
 - [The Complementary Ideal and the Second State Space](the-complementary-ideal-and-the-second-state-space.html), for the corners in full.

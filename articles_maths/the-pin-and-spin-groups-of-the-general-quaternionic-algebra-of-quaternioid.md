@@ -16,7 +16,7 @@ The contrast that organises the article is with the plain algebra. There the blo
 
 **Theorem (the shells).** The form $\langle\cdot,\cdot\rangle_{\natural}$ is positive definite and multiplicative, $\langle\tilde q_1 \star \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$; its shells are $N = \lambda$ for $\lambda \geq 0$, the shell $N = 1$ is the unit sphere $\mathbb{H}^1$ of $\mathbb{H} \cong \mathbb{R}^4$, of real dimension three, and the shell $N = -1$ is empty.
 
-*Proof.* The form is the sum of four squares, so it is non-negative and vanishes only at zero, and its multiplicativity under the product is the theorem of *Norm and Invertibility in the General Quaternionic Algebra*, above this article in this category; a level set of a definite form is nonempty exactly for $\lambda \geq 0$, and $N = 1$ is the unit sphere of the coordinate space.
+*Proof.* The form is the sum of four squares, so it is non-negative and vanishes only at zero, and its multiplicativity under the product is the theorem of *Norm and Invertibility*, above this article in this category; a level set of a definite form is nonempty exactly for $\lambda \geq 0$, and $N = 1$ is the unit sphere of the coordinate space.
 
 **Theorem (the shell and the two products).** The shell $\mathbb{H}^1$ is closed under both products of the block, and it is a group under the plain product, with identity $e_t$ and inverse $\tilde q^{-1} = \tilde q^{\natural}$. Under the quaternionic product it is closed but is **not** a group, because the product has a left unit and no right unit.
 

@@ -188,6 +188,14 @@ Thus $\mathbb{H}_{\mathbb{D}}$ has zero divisors and is not a division algebra, 
 
 Finite dimension is used at the step where injectivity of $\lambda_a$ is converted into surjectivity, and it is finite dimension over a field that makes that step available. Over a general commutative ring the equivalence fails: the ring $\mathbb{Z}$, regarded as a $\mathbb{Z}$-algebra, has no zero divisors yet is not a division algebra, because $2$ has no inverse; the argument above would have to produce $b$ with $2b = 1$, which does not exist.
 
+**Theorem (non-units are zero divisors).** Let $A$ be a finite-dimensional unital associative algebra over a field $F$, and $a \in A$. Then $a$ is a unit, or $a = 0$, or $a$ is a zero divisor. Equivalently, the non-units of $A$ are the origin together with the zero divisors.
+
+*Proof.* Suppose $a$ is not a unit and $a \neq 0$, and let $\lambda_a$ be the left multiplication. If $\lambda_a$ were surjective it would be bijective, since $A$ is finite-dimensional; let $b$ be the preimage of $1$, so that $ab = 1$. The inverse linear map is $\lambda_b$, so $\lambda_{ba} = \lambda_b \circ \lambda_a = \mathrm{id}_A$ and $ba = 1$. Then $a$ would be a unit, a contradiction. Hence $\lambda_a$ is not surjective, and the rank–nullity theorem gives $\ker \lambda_a \neq 0$: some $x \neq 0$ satisfies $ax = 0$, and $a$ is a left zero divisor.
+
+**Remark (where finite dimension enters).** Only in the last step: a non-surjective endomorphism of a finite-dimensional space has a non-zero kernel. Over an infinite-dimensional algebra the statement fails. On $\ell^2(\mathbb{N})$ the diagonal operator $D = \operatorname{diag}(1/2, 1/3, 1/4, \dots)$ is injective with dense but proper range, so it is not surjective and not a unit; yet $Dx = 0$ forces $x = 0$, and $xD = 0$ forces $x = 0$ because the adjoint $D^{*}$ is injective too. It is therefore a non-unit that is neither a left nor a right zero divisor. The right shift is not a witness: it has the non-zero left inverse $T(y) = y_0 e_0$, so $TS = 0$ and $S$ is a right zero divisor.
+
+**Corollary (the biquaternion instance).** In $\mathbb{B}$ the units are the elements with $\langle \tilde{Q} \rangle_{\natural} \neq 0$ and the non-units are $\{0\} \cup \{\tilde{Q} \neq 0 : \langle \tilde{Q} \rangle_{\natural} = 0\}$, which is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Cases*.
+
 ## The Regular Module and Division Algebras
 
 **Definition.** Let $A$ be a unital associative $R$-algebra. The **regular left module** ${}_A A$ is the set $A$ with the left action $a \cdot x = ax$, and the **regular right module** $A_A$ is the set $A$ with the right action $x \cdot a = xa$. The submodules of ${}_A A$ are the left ideals of $A$, and the submodules of $A_A$ are the right ideals.
@@ -222,7 +230,7 @@ The **centre** $Z(A) = C_A(A)$ is the set of elements commuting with everything;
 
 A **unit** is an element with a two-sided inverse, and the units form the group $A^\times$; a unit is neither a zero divisor nor a member of a proper ideal. A **zero divisor** is a nonzero element annihilating a nonzero element on one side, and the annihilator of an element is a one-sided ideal. In $\mathbb{D}$ the zero divisors are the nonzero multiples of $1 \pm j$; in $\mathbb{D}'$ they are the nonzero elements of the square-zero maximal ideal $(\varepsilon)$; in $\mathbb{B}$ they are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$; in $\mathbb{H}_{\mathbb{D}}$ they include the inherited split complex ones, beginning with $1 \pm j$.
 
-A unital associative algebra $A$ is a **division algebra** exactly when every nonzero element is a unit and exactly when the regular module $A_A$ is simple; over a field, a finite-dimensional such algebra is a division algebra exactly when it has no zero divisors. The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the simple algebras $M_n(k)$ and $\mathbb{B}$ fail to be division algebras because the regular module is not simple and zero divisors exist.
+A unital associative algebra $A$ is a **division algebra** exactly when every nonzero element is a unit and exactly when the regular module $A_A$ is simple; over a field, a finite-dimensional such algebra is a division algebra exactly when it has no zero divisors. Over a field and in finite dimension the non-units are the origin together with the zero divisors, so a non-unit is either $0$ or annihilates something nonzero. The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the simple algebras $M_n(k)$ and $\mathbb{B}$ fail to be division algebras because the regular module is not simple and zero divisors exist.
 
 ## Summary of Notation
 

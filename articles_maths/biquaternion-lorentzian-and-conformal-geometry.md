@@ -4,7 +4,7 @@
 
 The biquaternion algebra carries two real slices whose geometries differ, and this article reads both. The Lorentzian slice carries a form of signature $(1,3)$, with its null cone and its null lines; the split slice carries a neutral signature and a real quadric ruled by real lines. The two are the real loci of the complex null quadric, and on the celestial sphere of the Lorentzian slice the Lorentz group acts as the conformal group. The conformal model of Euclidean space, in which spheres and planes become vectors and the transformations become versors, is the further picture the algebra supports.
 
-The article presupposes the biquaternion norm and its real forms (*Norm and Invertibility in the General Quaternionic Algebra*), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (*The Null Quadric and Its Projective Geometry*), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.
+The article presupposes the biquaternion norm and its real forms (*Norm Regularity and Degeneracy in the Biquaternion Algebra*), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (*The Null Quadric and Its Projective Geometry*), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.
 
 ## The Sign of the Form as the Organising Data
 
@@ -19,7 +19,7 @@ The same algebra carries the several geometries at once, and the passage from on
 
 ## The Lorentzian Slice and Its Null Cone
 
-By the table of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2$. Either subspace is thereby identified with Lorentzian space $\mathbb{R}^{1,3}$, and its null set,
+By the table of *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2$. Either subspace is thereby identified with Lorentzian space $\mathbb{R}^{1,3}$, and its null set,
 
 $$
 \boxed{\;\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_t)^2=q_x^2+q_y^2+q_z^2\;},
@@ -33,7 +33,7 @@ $$
 S^2\sqcup S^2,
 $$
 
-one sphere per nappe. Each nappe is the cone on its sphere, and the complement of the null cone in $\mathbb{M}_-$ has exactly three connected components, the future timelike, past timelike and spacelike regions, as in *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*.
+one sphere per nappe. Each nappe is the cone on its sphere, and the complement of the null cone in $\mathbb{M}_-$ has exactly three connected components, the future timelike, past timelike and spacelike regions, as in *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*.
 
 Two warnings are in order: the null cone is a real cone of real dimension $3$ in $\mathbb{M}_-\cong\mathbb{R}^4$, not the full null cone $\mathcal{N}$ of *The Null Quadric and Its Projective Geometry*, §*The Projective Null Quadric $Q^2$*, which has real dimension $6$; and $\mathcal{N}$ is the complex cone over the Segre quadric, whose intersection with $\mathbb{M}_-$ recovers the null cone, so the null biquaternions form a three-dimensional real cone while the null elements of the full algebra form a six-dimensional one.
 
@@ -41,7 +41,7 @@ One further distinction belongs here. The Lorentz group acts on the slice and is
 
 ## The Lorentzian Interpretation of the Quadric
 
-Take the Lorentzian real form $\mathbb{M}_+\cong\mathbb{R}^{1,3}$ of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*. Its null cone, whose projectivisation is the sphere
+Take the Lorentzian real form $\mathbb{M}_+\cong\mathbb{R}^{1,3}$ of *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*. Its null cone, whose projectivisation is the sphere
 $$
 \boxed{\;\mathbb{P}(\mathcal{N}\cap\mathbb{M}_+)\cong S^2\;},
 $$

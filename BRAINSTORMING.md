@@ -8348,7 +8348,7 @@ Ideals and Peirce Decomposition of the Split-Complex Algebra
 
 Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions
 
-Ideals and Peirce Decomposition of the Biquaternion Algebra
+Ideals and Peirce Decompositions of the Biquaternion Algebra
 
 
 Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical.
@@ -8555,15 +8555,13 @@ Read the articles :
 
 Conventions in Mathematics
 
-Zero Divisors of the Biquaternion Algebra
-
-Annihilators of the Biquaternion Algebra
+Norm Regularity and Degeneracy in the Biquaternion Algebra
 
 Square Roots of One and the Idempotents of the Biquaternion Algebra
 
 Square Roots of Zero and the Nilpotents of the Biquaternion Algebra
 
-Ideals and Peirce Decomposition of the Biquaternion Algebra
+Ideals and Peirce Decompositions of the Biquaternion Algebra
 
 Eigenbasis of a Biquaternion
 
@@ -8613,374 +8611,132 @@ Can you read the physics conventions, analyze the physics corpus, and modify /ho
 
 
 
-# The Non-Unit Cone and the Spectral-Degenerate Cone of the Biquaternion Algebra
 
-## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with base $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^2=-e_t$. A general element is
 
-$$
-\tilde Q=Q_te_t+\vec Q,\qquad \vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z ,
-$$
 
-with complex coefficients. The natural conjugation is ${}^{\natural}$, the $\mathbb{C}$-linear quaternion conjugation, an antiautomorphism of order two fixing the centre. Three objects are used throughout, and each is defined before it is used.
 
-- The **vector square** $B^2=\langle\vec Q,\vec Q\rangle_{\natural}=Q_x^2+Q_y^2+Q_z^2$.
-- The **reduced norm** $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=Q_t^2+B^2$, a central value.
-- The **characteristic polynomial** $p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural}$, and its **discriminant** $\operatorname{disc}p_{\tilde Q}=-4B^2$.
+norm-degenerate, spectrally degenerate sector
 
-Two identities carry the whole subject. The first is that the vector part squares to a central value,
+norm-degenerate, spectrally regular sector
 
-$$
-\vec Q^2=-B^2e_t ,
-$$
+norm-regular, spectrally degenerate sector
 
-so the square of the vector part is central and vanishes exactly with $B^2$. The second is that the discriminant is that same value. The spectrum is $\{Q_t+\beta,\,Q_t-\beta\}$, with $\beta$ one of the two square roots of $B^2$.
+norm-regular, spectrally regular sector
 
-## The Two Quadratic Conditions
 
-**The algebra carries two quadratic cones: the non-unit cone, where the reduced norm vanishes, and the spectral-degenerate cone, where the discriminant vanishes.**
 
-$$
-\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\},\qquad
-\mathcal S=\{B^2=0\}=\{\vec Q^2=0\}.
-$$
 
-They answer two different questions. $\mathcal N$ is the set of non-units: its complement is the group of units, and because the algebra is finite-dimensional over $\mathbb{C}$, its nonzero elements are exactly the zero divisors. $\mathcal S$ measures spectral separation: it is the branch locus of the eigenvalue map, the set where the two eigenvalues meet.
 
-Neither condition implies the other. Off both cones the element has two distinct eigenvalues and is a unit. That is the generic case.
 
-## The Non-Unit Cone
 
-### The Criterion
 
-$\tilde Q$ is a non-unit, equivalently a zero divisor, exactly when $\langle\tilde Q\rangle_{\natural}=0$. The criterion is one quadratic equation in four complex coordinates, so $\mathcal N$ is a complex cone of complex dimension $3$ and real dimension $6$. Its gradient is $2\tilde Q$, which does not vanish away from the origin, so $\mathcal N$ is smooth except at the apex.
 
-The cone splits into two families, and the split is the vanishing of the scalar part.
 
-### The Two Strata
-
-**The non-pure stratum** is $\{Q_t\neq0\}$. There $\tilde Q^2=2Q_t\tilde Q$, because
-
-$$
-\tilde Q^2=(Q_t^2-B^2)e_t+2Q_t\vec Q=2Q_t^2e_t+2Q_t\vec Q=2Q_t\tilde Q .
-$$
-
-Hence $\tilde Q=2Q_t\tilde\Pi$ with $\tilde\Pi=\tilde Q/(2Q_t)$ a nontrivial idempotent. The stratum is open, of full dimension, and its complement in the cone is the nilpotent cone; it has the real dimension $6$ of the cone.
-
-**The pure stratum** is $\{Q_t=0\}$. There $\tilde Q=\vec Q$ and $\tilde Q^2=\vec Q^2=-B^2e_t=0$. The element is a nilpotent of index two, written $\vec\Upsilon$. The stratum is the nilpotent cone, of complex dimension $2$ and real dimension $4$.
-
-The two strata are disjoint and their union is $\mathcal N$; the origin lies in the pure stratum and in the closure of the non-pure one. Every nonzero element of the cone is either a complex multiple of an idempotent or a nilpotent, never both.
-
-## The Spectral-Degenerate Cone
-
-### Three Readings of One Equation
-
-The equation $B^2=0$ has three equivalent readings, and they are worth separating because they belong to three different theories.
-
-- **Geometric.** The vector part is null: $\langle\vec Q,\vec Q\rangle_{\natural}=0$.
-- **Algebraic.** The vector part is nilpotent: $\vec Q^2=0$, since $\vec Q^2=-B^2e_t$.
-- **Spectral.** The discriminant vanishes: $\operatorname{disc}p_{\tilde Q}=0$, so the two eigenvalues coalesce at $Q_t$.
-
-Since $B^2$ involves only the vector part, $\mathcal S$ is the product of the scalar line with the isotropic cone of $\mathbb{C}^3$. It has complex dimension $3$ and real dimension $6$.
-
-### The Vertex
-
-$\mathcal S$ is singular exactly where the gradient of the defining function $B^2$ vanishes in the vector directions, that is on the scalar line $\vec Q=0$ (the $Q_t$-partial vanishes identically). That line is the vertex. Everywhere else the cone is smooth.
-
-The singular line is a warning about vocabulary: an element of the vertex is a scalar, has a repeated eigenvalue, and is still semisimple. So $\mathcal S$ is **not** the set of non-diagonalisable elements. It is the set of elements with a repeated eigenvalue.
-
-## Independence of the Two Cones
-
-The two equations involve $Q_t$ and $\vec Q$ differently, so the four sign combinations are all realised.
-
-| element | $Q_t$ | $B^2$ | $\mathcal N$ | $\mathcal S$ | spectrum | eigenbasis |
-|---|---|---|---|---|---|---|
-| $e_t+\vec e_x$ | $1$ | $1$ | no | no | $\{1\pm i\}$ | yes |
-| $e_t+\vec e_x+i\vec e_y$ | $1$ | $0$ | no | yes | $\{1\}$ | no |
-| $e_t+i\vec e_x$ | $1$ | $-1$ | yes | no | $\{2,0\}$ | yes |
-| $\vec e_x+i\vec e_y$ | $0$ | $0$ | yes | yes | $\{0\}$ | no |
-
-The second row is a unit with a repeated eigenvalue: it is the unipotent case. The third is a non-unit with distinct eigenvalues: it is the idempotent case. These two rows are the reason neither cone describes the algebra alone.
-
-## The Intersection
-
-**The two cones meet exactly in the nilpotent cone.**
-
-$$
-\mathcal N\cap\mathcal S=\{Q_t^2+B^2=0,\ B^2=0\}=\{Q_t^2=0,\ B^2=0\}=\{Q_t=0,\ \vec Q^2=0\}.
-$$
-
-The last set is the root set of zero, that is the set of elements with $\tilde Q^2=0$, the origin included. It has complex dimension $2$ and real dimension $4$.
-
-The intersection is a scheme-theoretic thickening of that cone, doubled in the scalar direction only. The two defining equations satisfy
-
-$$
-(Q_t^2+B^2,\ B^2)=(Q_t^2,\ B^2),
-$$
-
-so the ideal contains $Q_t^2$ rather than $Q_t$. The reduced intersection is the nilpotent cone; the non-reduced direction is the scalar one.
-
-The two cones are tangent along their whole intersection. Their gradients are $2(Q_t,\vec Q)$ and $2(0,\vec Q)$, which agree wherever $Q_t=0$.
-
-## Multiplication
-
-$\mathcal N$ is closed under the product, because the reduced norm is multiplicative and a product of two zeros is zero. The cone is a semigroup, and the group of units is its complement.
-
-$\mathcal S$ is not closed under the product. The witness is
-
-$$
-(\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z ,
-$$
-
-a product of two elements of $\mathcal S$ whose vector square has value $B^2=-4$. The product leaves $\mathcal S$ and stays on $\mathcal N$, its reduced norm being $4-4=0$.
-
-So $\mathcal N$ is an algebraic subset of the algebra, invariant under the product, while $\mathcal S$ is a discriminant locus, attached to the eigenvalue map and not to the multiplication.
-
-## Consequences for the Decompositions
-
-**Eigenbasis.** It exists exactly where the eigenvalues are distinct, that is off $\mathcal S$, with the vertex $\{\vec Q=0\}\subset\mathcal S$ as the semisimple exception. On the non-unit cone it exists on the non-pure stratum, where the eigenvalues are $2Q_t$ and $0$, and fails on the nilpotent stratum, where both vanish and the element is a single Jordan block. On $\mathcal S$ outside $\mathcal N$ it fails too: there the element is a nonzero scalar times a unipotent element, $\tilde Q=Q_t(e_t+\vec\Upsilon/Q_t)$ with $\vec\Upsilon^2=0$, and the minimal polynomial is $(X-Q_t)^2$.
-
-**Polar decomposition.** The modulus of the polar word is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$, which vanishes on $\mathcal N$. So the four-factor word has no value on the cone; the generalized two-factor form, with a positive semidefinite factor and a partial isometry, is what replaces it there. On $\mathcal S$ outside $\mathcal N$ the norm is $Q_t^2\neq0$, so the word exists and the element is a unit with a repeated eigenvalue.
-
-**One-sided operators.** Left and right multiplication by a nonzero element of $\mathcal N$ both have complex rank $2$: the image is a minimal one-sided ideal and the kernel is the corresponding annihilator. On the non-pure stratum they are $2Q_t$ times projections; on the nilpotent stratum they are square-zero.
-
-## Summary
-
-| | $\mathcal N$ | $\mathcal S$ |
-|---|---|---|
-| equation | $Q_t^2+B^2=0$ | $B^2=0$ |
-| measures | invertibility | spectral separation |
-| dimension | $3$ complex, $6$ real | $3$ complex, $6$ real |
-| singular locus | the origin | the scalar line |
-| strata | idempotent, nilpotent | nilpotent, unipotent, scalar |
-| closed under product | yes | no |
-| fails | the polar word | the eigenbasis |
-
-The two cones answer two questions that the algebra asks separately. The non-unit cone asks whether an element can be inverted. The spectral-degenerate cone asks whether its two eigenvalues can be told apart. They agree only on the nilpotents, where both answers are negative.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\tilde Q=Q_te_t+\vec Q$ | General element, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ |
-| $B^2$ | Vector square $\langle\vec Q,\vec Q\rangle_{\natural}=Q_x^2+Q_y^2+Q_z^2$ |
-| $\langle\tilde Q\rangle_{\natural}$ | Reduced norm $\tilde Q^{\natural}\tilde Q=Q_t^2+B^2$ |
-| $p_{\tilde Q}$ | Characteristic polynomial $X^2-2Q_tX+\langle\tilde Q\rangle_{\natural}$ |
-| $\mathcal N$ | Non-unit cone, $\{\langle\tilde Q\rangle_{\natural}=0\}$ |
-| $\mathcal S$ | Spectral-degenerate cone, $\{B^2=0\}$ |
-| $\tilde\Pi$ | Idempotent, $\tilde\Pi^2=\tilde\Pi$ |
-| $\vec\Upsilon$ | Pure nilpotent, $\vec\Upsilon^2=0$ |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Proof: Non-units = Zero divisors in a finite-dimensional algebra over a field
-
-## Setup
-
-Let \(A\) be a finite-dimensional associative unital algebra over a field \(k\) (here \(A=\mathbb{B}\cong M_2(\mathbb{C})\), \(k=\mathbb{C}\)). For \(a\in A\), write \(L_a:A\to A\) for left multiplication, \(L_a(x)=ax\). This is a \(k\)-linear map on the finite-dimensional vector space \(A\).
-
-**Convention.** \(0\) is counted as a zero divisor (since \(0\cdot x=0\) for any \(x\neq0\)). If your convention excludes \(0\), read the statement as "non-units \(=\) zero divisors \(\cup\{0\}\)."
-
-## Statement
-
-\[
-a\text{ is not a unit}\iff a\text{ is a zero divisor.}
-\]
-
-## Proof
-
-### (\(\Leftarrow\)) Zero divisor \(\Rightarrow\) not a unit
-
-Suppose \(a\) is a zero divisor. Then there exists \(x\neq0\) with \(ax=0\) or \(xa=0\). Say \(ax=0\) with \(x\neq0\). If \(a\) were a unit, then \(x=a^{-1}ax=a^{-1}\cdot0=0\), contradiction. So \(a\) is not a unit. The case \(xa=0\) is identical (multiply on the right by \(a^{-1}\)). This direction holds in **any** unital algebra, no finite dimension needed.
-
-### (\(\Rightarrow\)) Not a unit \(\Rightarrow\) zero divisor
-
-Suppose \(a\) is not a unit. Consider \(L_a:A\to A\).
-
-**Claim 1: \(L_a\) is not surjective.** Suppose, for contradiction, that \(L_a\) is surjective. Since \(\dim A<\infty\), \(L_a\) is then bijective, so it has a linear inverse. Let \(b=L_a^{-1}(1)\), so \(ab=1\). We want \(ba=1\). Consider \(L_{ba}=L_b\circ L_a\). Since \(L_b=L_a^{-1}\) as linear maps, \(L_b\circ L_a=\mathrm{id}_A\). Thus \(L_{ba}=\mathrm{id}_A\), so \(bax=x\) for all \(x\), i.e. \(ba=1\). Hence \(a\) is a unit, contradiction. Therefore \(L_a\) is **not surjective**.
-
-**Claim 2: \(L_a\) is not injective.** Since \(\dim A<\infty\) and \(L_a\) is not surjective, the rank-nullity theorem gives \(\ker L_a\neq0\). So there exists \(x\neq0\) with \(L_a(x)=ax=0\). Hence \(a\) is a left zero divisor.
-
-This completes (\(\Rightarrow\)).
-
-## Where finite dimension is used
-
-Only in Claim 2: "not surjective \(\Rightarrow\) not injective" is the rank-nullity theorem, which requires \(\dim A<\infty\). Over an infinite-dimensional algebra the implication fails: the right shift on \(\ell^2\) is injective but not surjective, hence a non-unit that is not a zero divisor.
-
-## Application to \(\mathbb{B}\)
-
-Here \(A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})\), which is finite-dimensional over \(\mathbb{C}\) (dimension \(4\)). So the theorem applies: the non-units of \(\mathbb{B}\) are exactly its zero divisors (with \(0\) included). Combined with the reduced-norm criterion
-
-\[
-\tilde Q\text{ is a unit}\iff\langle\tilde Q\rangle_{\natural}\neq0,
-\]
-
-this gives
-
-\[
-\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}=\{\text{non-units}\}=\{\text{zero divisors}\},
-\]
-
-which is the identification used in the document. \(\square\)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Zero Divisors and the ♮-Square: One Condition, Four Ways
-
-## The claim
-
-For an element \(\tilde Q=Q_t e_t+\vec Q\) of the biquaternion algebra \(\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\), the following four conditions are **equivalent**:
-
-\[
-\tilde Q \text{ is a zero divisor}
-\iff
-\tilde Q^{\natural}\tilde Q=0
-\iff
-\langle\tilde Q\rangle_{\natural}=0
-\iff
-Q_t^2+B^2=0 .
-\]
-
-They are not four conditions but one, written in four notations. The purpose of this note is to say exactly why, and to flag the one convention that decides whether the word "zero divisor" or the word "non-unit" is the right one.
-
-## Why the four are one
-
-The bridge is the identity
-
-\[
-\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}\,e_t .
-\]
-
-It is proved in one line. Since \(Q_t\in\mathbb{C}\) is central, \(e_t\) is the unit, \({}^{\natural}\) fixes \(e_t\) and the complex scalars, and the vector part is pure in the quaternion sense (\(\vec Q^{\natural}=-\vec Q\)),
-
-\[
-\tilde Q^{\natural}\tilde Q
-=(Q_t e_t-\vec Q)(Q_t e_t+\vec Q)
-=Q_t^2 e_t-\vec Q^2 .
-\]
-
-Using the identity \(\vec Q^2=-B^2 e_t\) of the algebra (with \(B^2=Q_x^2+Q_y^2+Q_z^2\)),
-
-\[
-\tilde Q^{\natural}\tilde Q=Q_t^2 e_t+B^2 e_t=(Q_t^2+B^2)e_t=\langle\tilde Q\rangle_{\natural}e_t .
-\]
-
-So \(\tilde Q^{\natural}\tilde Q\) is a **central** element: a complex scalar times the identity. A central element \(\lambda e_t\) is zero **iff** \(\lambda=0\), because \(e_t\neq0\) is the unit. Therefore
-
-\[
-\tilde Q^{\natural}\tilde Q=0
-\iff
-(Q_t^2+B^2)e_t=0
-\iff
-Q_t^2+B^2=0
-\iff
-\langle\tilde Q\rangle_{\natural}=0 .
-\]
-
-The ♮-notation and the reduced-norm notation denote the same central value; the equation "\(=0\)" is the same equation in both. There is no extra condition hidden in the ♮-square.
-
-## Why this is the zero-divisor condition
-
-Two standard facts close the chain.
-
-**Reduced-norm criterion.** In a central simple algebra over a field, an element is a unit iff its reduced norm is nonzero. Here \(\mathbb{B}\cong M_2(\mathbb{C})\) is central simple over \(\mathbb{C}\), and \(\langle\tilde Q\rangle_{\natural}\) is the determinant under that identification. Hence
-
-\[
-\tilde Q \text{ is a unit}
-\iff
-\langle\tilde Q\rangle_{\natural}\neq0 .
-\]
-
-**Finite-dimensional equivalence.** In a finite-dimensional unital algebra over a field, non-unit \(\iff\) zero divisor (with \(0\) included). The proof is rank-nullity: if \(\tilde Q\) is not a unit, left multiplication \(L_{\tilde Q}\) is not surjective, hence not injective, hence has a nonzero kernel, hence \(\tilde Q x=0\) for some \(x\neq0\). The converse is immediate: a zero divisor cannot be a unit.
-
-Combining the two,
-
-\[
-\tilde Q \text{ is a zero divisor}
-\iff
-\tilde Q \text{ is a non-unit}
-\iff
-\langle\tilde Q\rangle_{\natural}=0
-\iff
-\tilde Q^{\natural}\tilde Q=0 .
-\]
-
-## The one convention
-
-The equivalence "non-unit \(\iff\) zero divisor" uses the convention that \(0\) is a zero divisor. Under that convention the four conditions above are literally the same set. If your convention excludes \(0\), the correct statement is
-
-\[
-\tilde Q \text{ is a zero divisor, or } \tilde Q=0
-\iff
-\tilde Q^{\natural}\tilde Q=0 ,
-\]
-
-i.e. the ♮-square root-of-zero set is the set of **non-units**, which is the zero divisors with \(0\) adjoined. Either way, the set \(\{\tilde Q^{\natural}\tilde Q=0\}\) is the same set; only the label changes.
-
-## What the set is, geometrically
-
-In coordinates,
-
-\[
-\{\tilde Q^{\natural}\tilde Q=0\}
+Situation outside the null cone
+Quaternionic norm different of 0
+For a nonzero 
+Q
+~
+1
+Q
+~
+​
+  
+1
+​
+  the conditions 
+⟨
+Q
+~
+1
+⟩
+♮
+≠
+0
+⟨ 
+Q
+~
+​
+  
+1
+​
+ ⟩ 
+♮
+​
+ 
+
+=0, solubility of the plain equation 
+Q
+~
+1
+Q
+~
+2
 =
-\{(Q_t,Q_x,Q_y,Q_z)\in\mathbb{C}^4 : Q_t^2+Q_x^2+Q_y^2+Q_z^2=0\}.
-\]
+e
+t
+Q
+~
+​
+  
+1
+​
+  
+Q
+~
+​
+  
+2
+​
+ =e 
+t
+​
+ , and solubility of the two one-sided equations of 
+⋆
+⋆ are equivalent; equivalently, 
+Q
+~
+1
+Q
+~
+​
+  
+1
+​
+  is a zero divisor of the algebra exactly when 
+⟨
+Q
+~
+1
+⟩
+♮
+=
+0
+⟨ 
+Q
+~
+​
+  
+1
+​
+ ⟩ 
+♮
+​
+ =0.
 
-This is one quadratic equation in four complex variables: a complex cone of complex dimension \(3\) and real dimension \(6\), smooth off the origin (its gradient is \(2(Q_t,Q_x,Q_y,Q_z)\), which does not vanish away from \(0\)), singular at the apex. This is the **non-unit cone** \(\mathcal N\) of the two-cone picture. The ♮-column, root-of-zero row of the four-product table is this same cone, not a relative of it.
-
-## Summary
-
-\[
-\boxed{
-\tilde Q \text{ is a zero divisor (equivalently, a non-unit)}
-\iff
-\tilde Q^{\natural}\tilde Q=0
-\iff
-\langle\tilde Q\rangle_{\natural}=0
-\iff
-Q_t^2+B^2=0 .
-}
-\]
-
-The four notations denote one central value and one equation. The only thing to state explicitly is the convention on \(0\); after that, "zero divisor", "non-unit", "♮-square zero", and "reduced norm zero" are four names for one condition.
 
 
 
 
+
+Situation on the null cone
+Quaternionic norm 0
+
+
+pure null cone
+
+non pure null conessss
 
 
 
@@ -8993,4 +8749,21 @@ The Biquaternion Algebra and Its Vector Spaces
 The Four General Products and their relations
 Symmetric and Antisymmetric decomposition of the Four General Products
 The Four Forms and the Four Algebraic norms  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Do similar things around the maths corpus : remove the sub section Basic Properties, Advanced Properties, and in case it is appropriate, create a section Spectral Algebra
+
+
 

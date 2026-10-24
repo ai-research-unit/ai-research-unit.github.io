@@ -10,12 +10,12 @@ The article reads three objects and their topology: the group, its boundary and 
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The invertibility criterion, the partition of the algebra and the inverse formula | [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html) |
+| The invertibility criterion, the partition of the algebra and the inverse formula | [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The group of units, the determinant sequence, the centre and the matrix model | [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) |
 | The compact real form, the polar retraction, the homotopy groups and the universal cover | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The zero-divisor cone: closedness, dimension, smoothness, contractibility and link | [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) |
 | The Lipschitz and Hurwitz orders, their unit groups, the $24$-cell and the McKay correspondence | [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html) |
-| The norm on the remarkable subspaces and the distribution of the units | [Norm and Invertibility in the General Quaternionic Algebra](../articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.html) |
+| The norm on the remarkable subspaces and the distribution of the units | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The parity-matched lattice and the kernel of the exponential | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 
 ## The Partition and the Wall
@@ -305,7 +305,7 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 
 ## Further Reading
 
-- [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html), for the criterion and the partition.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion and the partition.
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html), for the determinant sequence and the matrix model.
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction and the homotopy groups.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the link and the contractibility.

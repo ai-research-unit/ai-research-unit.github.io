@@ -108,7 +108,7 @@ so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mat
 
 ### The Peirce Decomposition of the Enveloping Algebra
 
-The Peirce decomposition of $\mathbb{B}$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra* tensors to a Peirce decomposition of $\mathbb{B}^{\mathrm e}$. The four elements
+The Peirce decomposition of $\mathbb{B}$ of *Ideals and Peirce Decompositions of the Biquaternion Algebra* tensors to a Peirce decomposition of $\mathbb{B}^{\mathrm e}$. The four elements
 
 $$
 E_{ik} = \tilde\Pi_i \otimes \tilde\Pi_k^{\mathrm{opp}}, \qquad i,k\in\{1,2\},
@@ -120,7 +120,7 @@ $$
 E_{ik}E_{jl} = \delta_{ij}\delta_{kl}E_{ik},
 $$
 
-by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Biquaternion Case*.
+by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*.
 
 The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to this complete orthogonal family has sixteen corners, and each is one-dimensional over $\mathbb{C}$:
 

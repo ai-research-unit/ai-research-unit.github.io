@@ -124,7 +124,7 @@ The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone o
 
 ## Further Reading
 
-- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four forms and their four null sets, and for the null quadric of the general plain bilinear form with its hyperbolic planes
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents $\tilde\Pi_\pm(\tilde\Xi)$ and the minimal left and right ideals they generate
 - [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the same description for the general quaternionic bilinear form

@@ -177,7 +177,7 @@ $$
 
 *Proof.* The square is the theorem of §*The Operation* at $\tilde Q_1=\tilde Q_2$, and $\langle\tilde Q_2,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{2,\mu}^2$; the polarisation identity is the expansion of the square of $\tilde Q_1+\tilde Q_2$ by bilinearity.
 
-**Corollary (the square is the norm of the parent product).** The diagonal $\langle\cdot\rangle_{\natural}$ of the form of the block is exactly the multiplicative norm of the general plain algebra, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ (*Norm and Invertibility in the General Quaternionic Algebra*), and the square-zero elements of the block are the elements of the isotropic cone of that norm. The two readings are kept apart in the articles of the block: $\langle\cdot\rangle_{\natural}$ is multiplicative for the parent product, while the block itself carries no unit and no multiplicative norm, and $\langle\cdot\rangle_{\natural}$ is only bilinear.
+**Corollary (the square is the norm of the parent product).** The diagonal $\langle\cdot\rangle_{\natural}$ of the form of the block is exactly the multiplicative norm of the general plain algebra, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*), and the square-zero elements of the block are the elements of the isotropic cone of that norm. The two readings are kept apart in the articles of the block: $\langle\cdot\rangle_{\natural}$ is multiplicative for the parent product, while the block itself carries no unit and no multiplicative norm, and $\langle\cdot\rangle_{\natural}$ is only bilinear.
 
 ## The Placement Among the Twelve
 
@@ -226,6 +226,6 @@ The symmetric part of the general quaternionic product $\tilde Q_1^{\natural}\ti
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the parent product and its scalar–vector form.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the row of $\mathrm{SQA}$ in the catalogue.
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the other half of the row.
-- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html) and [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the norm form, its polarisation and its isotropic cone.
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) and [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm form, its polarisation and its isotropic cone.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent, the root and the laws of a product.
 - [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), for the exclusive law of the block.

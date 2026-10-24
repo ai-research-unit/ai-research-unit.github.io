@@ -32,7 +32,7 @@ is realised by the multiplication by a single element, the element being the uni
 algebra, which is not a unit of the block. The criterion is stated as the identity
 $L_{e_t}=P_{\mathrm{Vect}}$, it is proved equivalent to the projector classification
 $L_{\tilde Q_1}^{2}=L_{\tilde Q_1}\Leftrightarrow\tilde Q_1\in\{0,e_t\}$, and it isolates the block among the
-twelve structures. The model is *The Specificities of the Biquaternion Algebra*, which states
+twelve structures. The model is *The Biquaternion Algebra and Its Vector Spaces*, which states
 left alternativity as its criterion; the twinned articles are *The Specificities of the General
 Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra*.
 
@@ -229,7 +229,7 @@ no Peirce calculus.
 
 ## Further Reading
 
-- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), for the criterion of left alternativity, the model of the family
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the criterion of left alternativity, the model of the family
 - [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the first border case, where the projectors are indexed by the plain idempotents
 - [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), for the second border case, the hyperplane of rank-one projections onto the centre
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its image, the one-sided action of the unit and the absence of a unit

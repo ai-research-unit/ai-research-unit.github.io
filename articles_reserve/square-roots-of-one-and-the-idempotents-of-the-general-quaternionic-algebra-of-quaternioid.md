@@ -33,7 +33,7 @@ in the vector subspace. The roots of $-1$ are empty, and they are quoted in one 
 roots-of-one part and used nowhere below.
 
 **Boundaries.** The product, the square and the algebraic norm are *Introduction to the General Quaternionic
-Algebra of Quaternions* and *Norm and Invertibility in the General Quaternionic Algebra*; the general root
+Algebra of Quaternions* and *Norm and Invertibility*; the general root
 problem for an arbitrary radicand is *Square Roots of a General Element in the General Quaternionic
 Algebra*; the roots of $0$ and the nilpotents of the product are *Square Roots of Zero and the Nilpotents of
 the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the General Quaternionic
@@ -80,7 +80,7 @@ $$
 \tilde\xi\star\tilde\xi=\lambda e_t \iff N(\tilde\xi)=\lambda .
 $$
 
-**Proof.** The square is $N(\tilde\xi)e_t$ by *Norm and Invertibility in the General Quaternionic Algebra*,
+**Proof.** The square is $N(\tilde\xi)e_t$ by *Norm and Invertibility*,
 and $e_t\neq0$.
 
 **Corollary (the level set).** The roots of the central value $\lambda$ are the level set
@@ -383,7 +383,7 @@ nilpotent, and the origin is the only idempotent whose square vanishes.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the sphere of square roots of $-1$.
 - *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternioid-r-space.md`), §*The Element Vocabulary*, for the general definitions of the root of a central value, of an idempotent and of a projector.
 - *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-quaternioid.md`), for the product, its table and its left unit.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternioid.md`), for the definite norm and the units.
+- *Norm and Invertibility* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternioid.md`), for the definite norm and the units.
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra-of-quaternioid.md`), for the roots of $0$, the empty square-zero set and the absence of nilpotents.
 - *Square Roots of a General Element in the General Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-algebra-of-quaternioid.md`), for the root problem of an arbitrary radicand.
 - *Square Roots of One and the Idempotents of the Quaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.md`), for the plain classification of the same space and the halving map.

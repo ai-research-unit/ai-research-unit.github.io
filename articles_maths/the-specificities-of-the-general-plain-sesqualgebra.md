@@ -152,7 +152,7 @@ The general plain sesqualgebra satisfies the **right-composition law** $R^{\star
 
 ## Further Reading
 
-- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), for the criterion of left alternativity and the family of criteria this article closes.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the criterion of left alternativity and the family of criteria this article closes.
 - [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the mirror criterion on the left multiplications and the left-ideal coincidence.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the product, its class, its table and its placement among the twelve.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the plain operators $L_{\tilde Q_4}$, $R_{\tilde Q_3}$, their composition laws, their adjoints and their types, which the dictionary reads on the block.
