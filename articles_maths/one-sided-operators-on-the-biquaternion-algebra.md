@@ -220,7 +220,7 @@ The left and the right multiplications $L_{\tilde Q_5}(\tilde Q)=\tilde Q_5\tild
 
 ## Further Reading
 
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the identity $(FG)^{\approx}=G^{\approx}F^{\approx}$ used throughout.
+- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the identity $(FG)^{\approx}=G^{\approx}F^{\approx}$ used throughout.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), the companion article, for the products $L_{\tilde Q_5}R_{\tilde Q_3}$, their swap adjoint, and the type, automorphism and isometry criteria of the family.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the two bilinear and the two sesquilinear pairings of the algebra and the place of $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ among them, and the polarisation of the form and its quadratic companion.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the two-sided operators as its elements.

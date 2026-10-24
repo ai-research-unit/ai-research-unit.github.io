@@ -229,7 +229,7 @@ Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose and $\varsigma$ the compl
 
 ### The Biquaternion Algebra
 
-Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star involution. The Hermitian elements form the Jordan algebra $J(\mathbb{B})\cong H_{2}(\mathbb{C})$ of degree two over $\mathbb{R}$, with the two Hermitian idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ as a complete orthogonal family. A Hermitian biquaternion $\tilde Q$ is normal and has the two real eigenvalues $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$, with the two Hermitian eigenprojectors of the real root $\vec\Xi=-i\vec u$; this is the spectral theorem of *Biquaternion Spectral Theory*, §*The Spectral Theorem*, and the eigenvalue decomposition of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Hermitian Case*. The pair is the Hermitian pair of the root, and the resolution is the Peirce decomposition relative to it.
+Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star involution. The Hermitian elements form the Jordan algebra $J(\mathbb{B})\cong H_{2}(\mathbb{C})$ of degree two over $\mathbb{R}$, with the two Hermitian idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ as a complete orthogonal family. A Hermitian biquaternion $\tilde Q$ is normal and has the two real eigenvalues $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$, with the two Hermitian eigenprojectors of the real root $\vec\Xi=-i\vec u$; this is the spectral theorem of *Biquaternion Spectral Theory*, §*The Spectral Theorem*, and the eigenvalue decomposition of *Biquaternion Spectral Theory*, §*The Spectral Theorem*. The pair is the Hermitian pair of the root, and the resolution is the Peirce decomposition relative to it.
 
 ### The Complex Field
 

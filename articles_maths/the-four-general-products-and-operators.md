@@ -194,7 +194,6 @@ $$
 which is not a scalar multiple of $\mathrm{I}_2$. **The scalar square is a property of $\mathbb{B}$ and not of the slot family**, and it is the row of the table of §*The Table of the Slots* that assigns the ${}^{\natural}$-product its place among the four.
 
 
-
 ## The Two Switches and the Twisted Right Factor
 
 The four readings of §*The Readings and Their Group* are also read on a single operator, once the two insertions are put on the right factor. The first is the **coefficient involution** $\sigma$, the conjugation of the scalars of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, which on this algebra is the coefficient conjugation $\bar{\cdot}$ of *The Group of Involutions*; the second is the **sign character** $\alpha$, the identity on the centre $\mathbb{C}_{\mathbb{B}}$ and minus the identity on the vector subspace $V$, which on this algebra is the natural conjugation $\natural$ read as a twist, as in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, where the same operator carries $\alpha$ in place of $\natural$. The two commute, one being linear over $\mathbb{C}$ and the other conjugate-linear, and their four settings are the four settings of the products, now on one parameter rather than on the two slots.
@@ -387,7 +386,7 @@ The same two switches are read on one operator, with the conjugation in the righ
 
 - [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the four rules, the statement that they differ in one insertion alone, and the table of the four side by side
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four forms, their Gram matrices, their signatures and their isometry groups
-- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the four adjoints on explicit operators and the naming rule of the operator families
+- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the four adjoints on explicit operators and the naming rule of the operator families
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their group
 - [The Signed Sandwich on a Clifford Algebra](the-signed-sandwich-on-a-clifford-algebra.html), for the ordinary sandwich, its minus sign and the repair by the grade involution
 - [Two-Sided Operators with the Signed Product](two-sided-operators-with-the-signed-product.html), for the signed family, its twisted composition law and its coset structure

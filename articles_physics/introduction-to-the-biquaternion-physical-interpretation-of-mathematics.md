@@ -111,7 +111,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
 - [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html)
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html)
-- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html)
+- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html)
@@ -145,8 +145,9 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
 - [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), §*The Isometry Group and the Absence of a Pin Group*
 - [One-Sided Operators on the Biquaternion Algebra](../articles_maths/one-sided-operators-on-the-biquaternion-algebra.html)
-- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](../articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html)
-- [Square Roots of One and the Idempotents of the Biquaternion Algebra and the General Plain Sesqualgebra in Exponential Form](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra-and-the-general-plain-sesqualgebra-in-exponential-form.html)
+- [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
+- [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
 
 #### Operators Representations
 
@@ -156,10 +157,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Krein Form
 
 - [The Fundamental Symmetry of the Biquaternion Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html)
-- [The Krein Gram Matrix and the Restrictions of the Form](../articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.html)
-- [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html)
-- [Krein Orthogonality and the Fundamental Decomposition](../articles_maths/krein-orthogonality-and-the-fundamental-decomposition.html)
-- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html)
+- [The Krein Gram Matrix of the Biquaternion Algebra](../articles_maths/the-krein-gram-matrix-of-the-biquaternion-algebra.html)
+- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](../articles_maths/krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html)
 
 ### Topology
 
@@ -184,7 +183,6 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Differential Operators, the Products, the Forms and the D'Alembertian](../articles_maths/the-differential-operators-the-products-the-forms-and-the-d-alembertian.html)
 - [Biquaternion Regular Functions](../articles_maths/biquaternion-regular-functions.html)
 - [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html)
-- [The Hermitian Sylvester Equation](../articles_maths/the-hermitian-sylvester-equation.html)
 - [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html)
 - [Biquaternion Integration](../articles_maths/biquaternion-integration.html)
 - [Remarkable Subspaces and the Analysis](../articles_maths/remarkable-subspaces-and-the-analysis.html)
@@ -193,11 +191,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html)
 - [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html)
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
-- [The Four-Vector Operator Representation of Biquaternions](../articles_maths/the-four-vector-operator-representation-of-biquaternions.html)
-- [The Twisted Spinor Operator Representation of Biquaternions](../articles_maths/the-twisted-spinor-operator-representation-of-biquaternions.html)
-- [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
-- [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html)
-- [The Indefinite Spectra of the Operators on the Biquaternion Algebra](../articles_maths/the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.html)
+- [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
+- [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html)
 - [J-Normal Operators and the Indefinite Spectral Theorem](../articles_maths/j-normal-operators-and-the-indefinite-spectral-theorem.html)
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)

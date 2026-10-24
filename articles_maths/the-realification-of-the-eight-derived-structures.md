@@ -195,7 +195,7 @@ a relation with a conjugation on the right. Taking real parts the conjugation di
 $$
 \Phi_{\mathbb{R}}\bigl(L^{\star}_{\tilde Q_6}\tilde Q_1,\tilde Q_2\bigr)=\Phi_{\mathbb{R}}\bigl(\tilde Q_1,L^{\star}_{\tilde Q_6^{\natural}}\tilde Q_2\bigr),
 $$
-so $L^{\star}_{\tilde Q_6^{\natural}}$ is the **$\Phi_{\mathbb{R}}$-adjoint** of $L^{\star}_{\tilde Q_6}$ in the ordinary sense of a real symmetric form: the adjoint relation survives the passage and loses its conjugation, and the block's operators are adjoint with respect to the indefinite form of signature $(2,6)$. The relation over $\mathbb{C}$ is the compatibility theorem of *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*, quoted here and specialising the theorem of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
+so $L^{\star}_{\tilde Q_6^{\natural}}$ is the **$\Phi_{\mathbb{R}}$-adjoint** of $L^{\star}_{\tilde Q_6}$ in the ordinary sense of a real symmetric form: the adjoint relation survives the passage and loses its conjugation, and the block's operators are adjoint with respect to the indefinite form of signature $(2,6)$. The relation over $\mathbb{C}$ is the compatibility theorem of *Introduction to the Symmetric Quaternionic Sesqualgebra*, quoted here and specialising the theorem of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 
 ### The Real Operators
 

@@ -107,6 +107,8 @@ So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No
 
 **Spectrum and minimal polynomial.** The spectrum is $\{0\}$ and the minimal polynomial is $X^2$, not $X$: the element is defective, a single Jordan block of size two with eigenvalue $0$.
 
+**The spectral decomposition.** There is none: the minimal polynomial $X^2$ is not squarefree, the only idempotents in the centraliser are $0$ and $e_t$, and the eigenspace of $L_{\tilde Q}$ for $0$ is the annihilator $A(\tilde Q)$, a complex plane, which cannot contain a basis. The powers vanish, $\tilde Q^n=0$ for $n\geq2$.
+
 ## The Origin
 
 The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is not a nilpotent of index two.
@@ -116,6 +118,7 @@ The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is no
 - It is the only element of the sector on which both multiplications are the zero map, $L_0=R_0=0$, of rank $0$ and kernel $\mathbb{B}$.
 - It lies in the closure of every other sector: every sector is invariant under the scaling $\tilde Q\mapsto\lambda\tilde Q$ for $\lambda\neq0$, so every punctured neighbourhood of $0$ meets all four.
 - It is the only diagonalisable element of the sector, which is why "spectrally degenerate" does not coincide with "non-diagonalisable".
+- Its spectral decomposition is the one-term writing $0=0\cdot e_t$, with every idempotent adapted to it; it is the only element of the sector for which a spectral decomposition exists.
 
 ## Multiplication
 
@@ -240,7 +243,7 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 ## Further Reading
 
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the null cone, its pure and non-pure strata, and the annihilator planes.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the spectral-degenerate cone, the three regimes and the independence of the two cones.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the spectral-degenerate cone, the two cases, the degenerate regimes and the independence of the two cones.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the place of $N$ among the four norms and of $B^2$ outside them.

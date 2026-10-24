@@ -10,7 +10,7 @@ $$
 
 with $\langle\cdot,\cdot\rangle_{*}$ the positive definite Hermitian inner product of the dagger form. This article fixes that symmetry, its eigenspaces — the centre and the vector subspace — the parametrisation of all the other fundamental symmetries by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace, and the fact that ${}^{\natural}$ is the only fundamental symmetry that respects the algebra as an anti-automorphism.
 
-The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The Four Forms and the Four Algebraic Norms*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
+The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix of the Biquaternion Algebra*; the positive definite form of the bridge is *The Four Forms and the Four Algebraic Norms*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
 
 ## The Natural Conjugation as a Fundamental Symmetry
 
@@ -53,7 +53,7 @@ $$
 \boxed{\; \mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}},\qquad \mathbb{C}_{\mathbb{B}}\perp\mathbb{V}_{\mathbb{B}} \;},
 $$
 
-of complex dimensions $(1,3)$ and real dimensions $(2,6)$, in agreement with the signature of *The Krein Gram Matrix and the Restrictions of the Form*.
+of complex dimensions $(1,3)$ and real dimensions $(2,6)$, in agreement with the signature of *The Krein Gram Matrix of the Biquaternion Algebra*.
 
 **Proof.** An element is fixed by $J$ exactly when its vector coefficients vanish, i.e. when it lies in the centre, and it is negated exactly when its scalar coefficient vanishes; $J^{2}=\mathrm{id}$ gives the direct sum, and orthogonality is the sign computation of the general quaternionic sesquilinear form. The dimensions are read from the coefficients.
 
@@ -79,7 +79,7 @@ The general theory attaches three numbers to an indefinite inner product (*Krein
 
 **Corollary (the sign of the index).** The form is indefinite, $pq=3$ over $\mathbb{C}$ and $pq=12$ over $\mathbb{R}$, and it is neither positive nor negative definite; the two real quaternion slices of signature $(1,3)$ cut the fundamental decomposition across its two parts, so the signature of the whole is not the sum of the slices' signatures.
 
-**Proof.** Indefiniteness is $n,m>0$; the slices $\mathbb{B}_{\mathbb{R}}$ and $i\mathbb{B}_{\mathbb{R}}$ each meet both the centre and the vector subspace nontrivially and each carries signature $(1,3)$ (*The Krein Gram Matrix and the Restrictions of the Form*).
+**Proof.** Indefiniteness is $n,m>0$; the slices $\mathbb{B}_{\mathbb{R}}$ and $i\mathbb{B}_{\mathbb{R}}$ each meet both the centre and the vector subspace nontrivially and each carries signature $(1,3)$ (*The Krein Gram Matrix of the Biquaternion Algebra*).
 
 ## The Natural Conjugation as an Anti-Automorphism
 
@@ -102,21 +102,13 @@ $$
 
 ## The Uniqueness of the Symmetry, and the Others
 
-The fundamental symmetries of an indefinite inner product are not unique when both ranks are nonzero (*The Fundamental Symmetry*, §*Non-Uniqueness and the Angular Operator*). For the general quaternionic sesquilinear form the whole family is parametrised by the vector subspace.
+The fundamental symmetries of an indefinite inner product are not unique when both ranks are nonzero (*The Fundamental Symmetry*, §*Non-Uniqueness and the Angular Operator*). For the general quaternionic sesquilinear form the others are indexed by the vector subspace.
 
-**Theorem (the family of fundamental symmetries).** The fundamental symmetries of the general quaternionic sesquilinear form are exactly the involutions $J_{\tilde S}$ that act as $+\mathrm{id}$ on the positive definite complex line
-
+**Remark (the other fundamental symmetries).** They are parametrised by the open unit ball of the vector subspace,
 $$
-\ell_{\tilde S}=\mathbb{C}\cdot(e_t+\tilde S),\qquad \tilde S\in\mathbb{V}_{\mathbb{B}},\ \|\tilde S\|_E<1,
+\{\text{fundamental symmetries}\}\longleftrightarrow\{\tilde S\in\mathbb{V}_{\mathbb{B}}:\lVert\tilde S\rVert_E<1\},
 $$
-
-and as $-\mathrm{id}$ on its Krein-orthogonal complement. The parametrisation $\tilde S\mapsto\ell_{\tilde S}$ is a bijection onto the set $\lVert\tilde S\rVert_E<1$ of $\mathbb{V}_{\mathbb{B}}$:
-
-$$
-\boxed{\; \{\text{fundamental symmetries}\}\longleftrightarrow\{\tilde S\in\mathbb{V}_{\mathbb{B}}:\|\tilde S\|_E<1\}\cong\{T:\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}},\ \|T\|<1\} \;}.
-$$
-
-**Proof.** By the general parametrisation, the fundamental symmetries correspond to the maximal positive definite subspaces, and a maximal positive definite subspace of this Krein space has complex dimension one because the positive index is one; each such line is the graph of a $\mathbb{C}$-linear map $T:\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}}$, that is, is generated by $e_t+\tilde S$ with $\tilde S=T(e_t)$; and it is positive definite exactly when $\|T\|<1$, which is $\|\tilde S\|_E<1$ because $\|e_t\|_E=1$. Distinct $\tilde S$ give distinct lines and distinct symmetries.
+the symmetry $J_{\tilde S}$ acting as $+\mathrm{id}$ on the positive definite line $\mathbb{C}(e_t+\tilde S)$ and as $-\mathrm{id}$ on its Krein-orthogonal complement. The parametrisation, the proof and the companion of the decomposition are *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra*, §*The Maximal Definite Subspaces and the Fundamental Decomposition*; this article's point is which member of the family is algebraic.
 
 **Theorem ($\natural$ is the only one that respects the algebra).** The natural conjugation ${}^{\natural}=J_0$ is the unique fundamental symmetry of the general quaternionic sesquilinear form that is a $\mathbb{C}$-algebra anti-automorphism, equivalently the unique one that fixes the identity and satisfies $J(\tilde{Q}_1\tilde Q_2)=J(\tilde Q_2)J(\tilde{Q}_1)$. In the parametrisation above it is the member $\tilde S=0$.
 
@@ -181,7 +173,8 @@ The **fundamental symmetry** of the general quaternionic sesquilinear form is th
 ## Further Reading
 
 - [The Fundamental Symmetry](the-fundamental-symmetry.html), for the general theory and the angular operator
-- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form whose symmetry this is
+- [The Krein Gram Matrix of the Biquaternion Algebra](the-krein-gram-matrix-of-the-biquaternion-algebra.html), for the form whose symmetry this is
+- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the whole family of fundamental symmetries and the companion of the decomposition
 - [J-Self-Adjoint and J-Unitary Operators](j-self-adjoint-and-j-unitary-operators.html), for the operators the symmetry defines
 - [The Group of Involutions](the-group-of-involutions.html) and [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the involutions and their fixed spaces
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the two eigenspaces, the centre and the vector subspace, as algebras

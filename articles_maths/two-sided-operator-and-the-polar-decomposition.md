@@ -20,7 +20,7 @@ $$
 
 the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: **what does each factor do to the operator, and what becomes of its exponent?** The answer is a table with one row per factor, and the row that matters is the second. The phase does nothing.
 
-The article is the vector-side companion of *The Twisted Spinor Operator Representation of Biquaternions*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operator and the Polar Decomposition*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. **The half-spin is the one-sided operator**: a single slot carries the half-angle $\theta/2$ and the half-rapidity $\psi/2$, and the sandwich of this article is their double, the full angle $\theta$ and the full rapidity $\psi$.
+The article is the vector-side companion of *The Polar Decomposition of Biquaternions*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operator and the Polar Decomposition*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. **The half-spin is the one-sided operator**: a single slot carries the half-angle $\theta/2$ and the half-rapidity $\psi/2$, and the sandwich of this article is their double, the full angle $\theta$ and the full rapidity $\psi$.
 
 The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the full spin as the double of the one-sided half-spin. §*The Angle Bookkeeping* collects the exponents and states the doubling rule. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Null Cone* records the degenerate case. The article closes with the summary, the notation and the readings.
 
@@ -65,7 +65,7 @@ $$
 
 The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.
 
-The sandwich is written $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ throughout. It uses the Hermitian conjugate in the right slot and never the inverse; the two coincide only where $\tilde Q$ is unitary.
+The sandwich is written $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ throughout. It uses the Hermitian conjugate in the right slot and never the inverse; the two coincide only where $\tilde Q$ is unitary. It is the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the general two-sided family of *Two-Sided Operators on the Biquaternion Algebra*, with the second parameter fixed at the Hermitian conjugate of the first; the general family allows the two parameters independently.
 
 ## The Sandwich of the Word
 
@@ -202,7 +202,7 @@ On the unit circle $|\lambda|=1$ the two sandwiches are equal, so the whole $U(1
 
 - the norm, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$;
 - the determinant, $\det\mathsf M_2(\tilde Q)=\Rho^{2}=r^{2}\exp(2i\alpha)$;
-- the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\alpha)$, the twist $\chi(\Rho)=\Rho$ of *The Twisted Spinor Operator Representation of Biquaternions*.
+- the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\alpha)$, the twist $\chi(\Rho)=\Rho$ of *The Polar Decomposition of Biquaternions*, §*The Operator Reading: the Twist*.
 
 The first two are quadratic in $\Rho$ and see $2\alpha$; the third is linear and sees $\alpha$; the sandwich multiplies by $\Rho$ on the left and by $\bar\Rho$ on the right and sees $0$.
 
@@ -362,7 +362,7 @@ $$
 \qquad
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
-The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* — not the Pauli model $\mathsf M_2$ of §*Conventions* — the element $\tilde Q$ is the diagonal matrix
+The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* — not the Pauli model $\mathsf M_2$ of §*Conventions* — the element $\tilde Q$ is the diagonal matrix
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 \qquad
@@ -469,7 +469,7 @@ The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm
 
 **The addition is at the level of generators.** For a general word the two slot exponents do not combine into one rapidity and one angle unless the axes commute. The four products $\lambda_i\bar\lambda_j$ remain exact; the split into a boost and a rotation is the content of §*The Boost* and §*The Rotor* for commuting axes. For a pure non-central factor the eigenvalue $1$ occurs twice in the list; for the scale the value $r^{2}$ occurs four times, and for the phase the value $1$ occurs four times.
 
-The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$ is a Jordan block, the common eigenbasis of $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ does not exist, and the spectral formula is unavailable; the sandwich itself remains defined. This is the degenerate case of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$*.
+The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$ is a Jordan block, the common eigenbasis of $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ does not exist, and the spectral formula is unavailable; the sandwich itself remains defined. This is the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$*.
 
 ## The Angle Bookkeeping
 
@@ -550,7 +550,7 @@ $$ L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}, $$
 
 so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type is preserved and the transformation is a similarity of ratio $r^{2}$.
 
-**Remark (what the image is not).** The image is not the unitary group and not $GL(2,\mathbb{C})$. The unitary group acts on the spinor module and sees the phase; the sandwich sees only the conformal Lorentz group. The two readings of the same word are the subject of *The Twisted Spinor Operator Representation of Biquaternions*.
+**Remark (what the image is not).** The image is not the unitary group and not $GL(2,\mathbb{C})$. The unitary group acts on the spinor module and sees the phase; the sandwich sees only the conformal Lorentz group. The two readings of the same word are the subject of *The Polar Decomposition of Biquaternions*, §*The Operator Reading: the Twist*, and of this article.
 
 ## The Null Cone
 
@@ -562,6 +562,20 @@ $$
 $$
 
 which is a multiple of $uu^{*}=\mathsf M_2(\tilde Q\tilde Q^{*})$. The element $\tilde Q\tilde Q^{*}$ is nonzero because its trace in the matrix model is the squared Frobenius norm of $\mathsf M_2(\tilde Q)$. The action collapses the eight-dimensional algebra onto one complex line; it is not invertible, and it has no polar reading because the scale, the phase, the boost and the rotor are not available on the cone.
+
+**The degenerate case in coordinates.** Write $\tilde Q=Q^0e_t+Q^k\vec e_k$ and $\vec Q^\natural=(\overline{Q^1},\overline{Q^2},\overline{Q^3})$. For $k=1,2,3$ the scalar component of the image of a vector basis element is
+
+$$
+\Theta_{\tilde Q}(\vec e_k)^0 = 2i\,\mathrm{Im}\bigl(Q^0\overline{Q^k}\bigr) - \bigl(\vec Q\times\vec Q^\natural\bigr)^k ,
+$$
+
+which vanishes when all four coefficients of $\tilde Q$ are real, and when $\tilde Q$ is central. On the cone the trace of the rank-one operator is $4\lvert Q^0\rvert^2$, so
+
+$$
+\Theta_{\tilde Q}\circ\Theta_{\tilde Q}=4\lvert Q^0\rvert^{2}\,\Theta_{\tilde Q} .
+$$
+
+The operator is therefore nilpotent exactly when $Q^0=0$, and for $Q^0\neq0$ it is a projection up to the scalar $4\lvert Q^0\rvert^{2}$.
 
 ## Summary
 
@@ -621,16 +635,15 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 ## Further Reading
 
 - [One-Sided Operator and the Polar Decomposition](one-sided-operator-and-the-polar-decomposition.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
-- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
-- [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain.
+- [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
-- [The Twisted Spinor Operator Representation of Biquaternions](the-twisted-spinor-operator-representation-of-biquaternions.html), for the same word on the spinor module, where the phase is the twist and all four factors are visible.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
 - [The Quaternion Pairing of the Polar Decomposition of Biquaternions](the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html) and [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the two partial two-factor groupings.
 - [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), for the eigenvalues $\lambda_i\bar\lambda_j$ of the sandwich and the spectral proof of the phase cancellation.
-- [The Four-Vector Operator Representation of Biquaternions](the-four-vector-operator-representation-of-biquaternions.html), for the sandwich written in the four complex coefficients and its degenerate image on the cone.
-- [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the sandwich as a completely positive map and its place among the two-sided operators.
+- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), §*The Sandwich in the Regular Basis*, for the sandwich as a product of the two regular maps.
+- [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the sandwich as a completely positive map and its rank-one place among the completely positive maps.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group in biquaternionic form and the double cover.
 - [Operator and the Polar Decomposition of a Split-Complex Number](operator-and-the-polar-decomposition-of-a-split-complex-number.html), for the commutative case where the sandwich collapses to $\langle Q\rangle_{*}$ times the identity.
 - [Operator and the Polar Decomposition of a Reduced Biquaternion](operator-and-the-polar-decomposition-of-a-reduced-biquaternion.html), for the commutative case where the sandwich collapses to multiplication by the modulus squared and the phases cancel.

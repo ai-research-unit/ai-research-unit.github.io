@@ -895,7 +895,7 @@ Q_x^2+Q_y^2+Q_z^2=0:\quad
 $$
 For $\vec Q\neq0$ there is no eigenbasis of $L_{\tilde Q}$: in any Peirce basis the Peirce matrix of $\tilde Q$ is a single $2\times2$ Jordan block when $Q_t\neq0$ and a nonzero nilpotent when $Q_t=0$, so it is not diagonal. For $\vec Q=0$ the element is scalar, $L_{\tilde Q}=Q_t\,\mathrm{id}$, and every basis is an eigenbasis; the Q-adapted construction is then absent, but an eigenbasis is not.
 
-## The Degenerate Case
+## The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$
 
 **On the cone $B^2=0$ the two eigenvalues have coalesced. Two further questions decide the geometry of a point: whether the scalar part vanishes, and whether the vector part vanishes.**
 
@@ -905,7 +905,7 @@ For $\vec Q\neq0$ there is no eigenbasis of $L_{\tilde Q}$: in any Peirce basis 
 | **Jordan** | $B^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\{Q_t\}$ | $(X-Q_t)^2$ | none non-trivial | a unit, defective, one Jordan block |
 | **nilpotent** | $B^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\{0\}$ | $X^2$ | none non-trivial | a non-unit, $\tilde Q^2=0$ |
 
-### The Vertex
+### The Scalar Regime and the Vertex
 
 Let $\tilde Q=Q_te_t$. The element is central, its minimal polynomial is $X-Q_t$, and it is semisimple with the single eigenvalue $Q_t$. Every idempotent commutes with it, so every idempotent is adapted. The spectral decomposition in the sense of the general theory has one term, $\tilde Q=Q_te_t$, and it is unique; a two-term writing with two orthogonal idempotents summing to $e_t$ has the equal coefficient $Q_t$ on both terms and is not determined by $\tilde Q$. This is the only regime in which a two-term writing exists without being a spectral decomposition.
 

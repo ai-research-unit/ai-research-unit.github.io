@@ -104,7 +104,7 @@ $$ \boxed{\; \tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural*}e_t-Q_t\ove
 with vector part $-2\mathrm{Re}(Q_t\overline{\vec Q})$.
 
 *Proof.* The scalar part is the diagonal of the Krein form as the scalar part of the product of the block
-(*The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*); the rest is the diagonal formula
+(*Introduction to the Symmetric Quaternionic Sesqualgebra*); the rest is the diagonal formula
 of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
 
 **Basic properties.** Each is a direct reading of the definition.
@@ -187,9 +187,9 @@ $\vec e_x\star \vec e_y=0$, so the second fails.
 
 **Remark (what carries the class).** The algebraic norm vanishes on the regular isotropic elements and does
 not vanish on the pure zero divisors, so the zero-divisor class is carried by the scalar part $Q_t$ and the
-central square $C$, and not by $\langle\cdot\rangle_{\natural*}$. The isotropic elements of $\langle\cdot\rangle_{\natural*}$ are computed in *The Isotropic Structure of
-the General Quaternionic Sesqualgebra* and its restriction to the block in *The Krein Form as a Product on
-the Symmetric Quaternionic Sesqualgebra*.
+central square $C$, and not by $\langle\cdot\rangle_{\natural*}$. The isotropic elements of $\langle\cdot\rangle_{\natural*}$ are computed in *Krein Orthogonality, Isotropy
+and the Krein Cone of the Biquaternion Algebra*, and the restriction of the form to the block is in
+*Introduction to the Symmetric Quaternionic Sesqualgebra*.
 
 ## Worked Examples
 
@@ -251,4 +251,4 @@ central square, not by $\langle\cdot\rangle_{\natural*}$.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{\natural*}$ of this article.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the criterion of the zero divisors and the regular elements.
 - [The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra](the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.html), for the operators whose kernels give the ranks.
-- [The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra](the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.html), for the form that is the scalar part of the square.
+- [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the form that is the scalar part of the square.

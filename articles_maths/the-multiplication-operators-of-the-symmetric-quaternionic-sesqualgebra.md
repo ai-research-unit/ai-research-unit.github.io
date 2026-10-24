@@ -14,7 +14,7 @@ and they are the operators of the block. The parity split is the first thing to 
 
 The article computes the operators in the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. It records the matrices of the two families for the unit candidate $e_t$ and for $\vec e_x$, their ranks, which depend on the scalar part and the norm of $\tilde Q_4$, and their traces, $0$ for the left family and $-4\mathrm{Re}(Q_{4t})$ for the right family. It exhibits the four-dimensional image that the left multiplication acquires when the element lies in the vector subspace, a subspace that is not one of the remarkable subspaces. It computes the adjoint with respect to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$, and the $J$-self-adjointness it gives with the involution $J={}^{\natural}$. It then reads the group of linear maps preserving $\langle\cdot,\cdot\rangle_{\natural*}$ with its Lie algebra and the structure group of the block.
 
-The operators of the general quaternionic sesquilinear product are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the operators with the conjugate transpose and the $J$-unitary family are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra*. The adjoint relation used below is the compatibility theorem of the form article.
+The operators of the general quaternionic sesquilinear product are *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the operators with the conjugate transpose and the $J$-unitary family are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *Introduction to the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra*. The adjoint relation used below is the compatibility theorem of the form article.
 
 ## The Two Families and Their Parity
 
@@ -155,7 +155,7 @@ $$
 
 so the adjoint of the left multiplication by $\tilde Q_4$ is the left multiplication by $\tilde Q_4^{\natural}$.
 
-*Proof.* This is the compatibility theorem of *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*: $\langle\tilde Q_4\star\tilde Q_1,\tilde Q_3\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_4^{\natural}\star\tilde Q_3\rangle_{\natural*}}$, which is exactly the display; the conjugate on the right is the parity correction of the conjugate-linear operator.
+*Proof.* This is the compatibility theorem of *Introduction to the Symmetric Quaternionic Sesqualgebra*: $\langle\tilde Q_4\star\tilde Q_1,\tilde Q_3\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_4^{\natural}\star\tilde Q_3\rangle_{\natural*}}$, which is exactly the display; the conjugate on the right is the parity correction of the conjugate-linear operator.
 
 **Corollary ($J$-self-adjointness).** The left multiplication by $\tilde Q_4$ is self-adjoint with respect to $K$ exactly when $\tilde Q_4^{\natural}=\tilde Q_4$, that is on the centre $\mathbb{C}e_t$, the fixed set of the natural conjugation.
 
@@ -226,7 +226,7 @@ The operators of the block are $L^{\star}_{\tilde Q_4}(\tilde Q_1)=\tilde Q_4\st
 
 - [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the operators of the unsplit product.
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the operators with the conjugate transpose and the group preserving the form.
-- [The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra](the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural*}$ and the adjoint relation in the form setting.
+- [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural*}$ and the adjoint relation in the form setting.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and its parity.
 - [Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra](remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.html), for the remarkable subspaces and the vector subspace carrying the four-dimensional image.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm $\langle\cdot\rangle_{\natural}$ entering the rank table.

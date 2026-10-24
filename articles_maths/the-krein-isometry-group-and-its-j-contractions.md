@@ -84,7 +84,7 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 ## The J-Contractions
 
-**Definition.** A $\mathbb{C}$-linear operator is a **$J$-contraction** when $\mathrm{id}-T^{\dagger}T$ is in the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; its **defect operator** is $\mathrm{id}-T^{\dagger}T$, and it is **strict** when the defect is invertible.
+**Definition.** A $\mathbb{C}$-linear operator is a **$J$-contraction** when $\mathrm{id}-T^{\dagger}T$ is in the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra*; its **defect operator** is $\mathrm{id}-T^{\dagger}T$, and it is **strict** when the defect is invertible.
 
 **Theorem (the model $J$-contraction and the invariance).** The Krein-orthogonal projection $\pi_y=\tfrac12(\mathrm{id}-J)$ onto the vector subspace is a $J$-contraction whose defect is the projection $\pi_x=\tfrac12(\mathrm{id}+J)$ onto the centre, a $J$-positive operator; and the set of $J$-contractions is invariant under $T\mapsto U^{\dagger}TU$ for $U$ a Krein isometry. The scalar multiplications are not $J$-contractions unless they are isometries.
 
@@ -131,6 +131,6 @@ The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $\mathr
 - [J-Normal Operators and the Indefinite Spectral Theorem](j-normal-operators-and-the-indefinite-spectral-theorem.html), for normality and the spectral symmetries
 - [The Krein Cartan Decomposition of the Operator Algebra](the-krein-cartan-decomposition-of-the-operator-algebra.html), for the Lie algebra $\mathfrak{u}(1,3)$ and the maximal compact subalgebra
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the complex hyperbolic ball on which the group acts
-- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone used in the definition of the contractions
+- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone used in the definition of the contractions
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz transformations realised by the boosts
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the unitary group of an indefinite form, its maximal compact part and the contractions

@@ -101,7 +101,7 @@ and the two values differ.
 
 $$ \boxed{\; \tau\bigl(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\bigr)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr) \;}, $$
 
-so $(L^{\bullet}_{\tilde Q_5})^{\approx}=L^{\bullet}_{\tilde Q_5}$ in the mark $\approx$ of the associate of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
+so $(L^{\bullet}_{\tilde Q_5})^{\approx}=L^{\bullet}_{\tilde Q_5}$ in the mark $\approx$ of the associate of *The Four Adjoints of the Biquaternion Algebra in Examples*.
 
 *Proof.* By the definition of the operator and the invariance of the trace form,
 

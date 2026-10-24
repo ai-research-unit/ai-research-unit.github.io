@@ -11,7 +11,7 @@ $$
 
 the **symmetric quaternionic sesquilinear product**, abbreviated $\mathrm{SQS}$. Its scalar part is the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ of the corpus and its vector part is the mixed term alone: the cross product $\vec Q_1\times\overline{\vec Q_2}$ that separates the two orders cancels in the half-sum, so the two parts of the value, scalar and vector, sit side by side in one element and neither annihilates the other. What distinguishes the block is the shape of this value: of the four symmetric parts the quaternionic bilinear one, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$, and the plain sesquilinear one, whose diagonal is the positive Hermitian form times $e_t$, have central diagonals, while $\mathrm{SPA}$, whose diagonal is the plain square and is $2\vec e_x$ at $e_t+\vec e_x$, and $\mathrm{SQS}$ keep a vector part; the block is the one whose scalar part is the form $\langle\cdot,\cdot\rangle_{\natural*}$ and whose vector part is the mixed term alone.
 
-The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the general quaternionic sesquilinear product, its two orders, its one-sided actions and its operators are *Introduction to the General Quaternionic Sesqualgebra*, *The Two One-Sided Actions and the Absence of a Unit* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Krein Gram Matrix and the Restrictions of the Form*; and the two halves of the split, with the antisymmetric part $\vec Q_1\times\overline{\vec Q_2}$, are *Symmetric and Antisymmetric Decomposition of the Four General Products*, whose table places the block among the twelve. This article owns the introduction of the block; the diagonal, the halves, the form, the remarkable subspaces, the operators and the two matrix models are the five articles that follow.
+The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the general quaternionic sesquilinear product, its two orders, its one-sided actions and its operators are *Introduction to the General Quaternionic Sesqualgebra*, *The Two One-Sided Actions and the Absence of a Unit* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Krein Gram Matrix of the Biquaternion Algebra*; and the two halves of the split, with the antisymmetric part $\vec Q_1\times\overline{\vec Q_2}$, are *Symmetric and Antisymmetric Decomposition of the Four General Products*, whose table places the block among the twelve. This article owns the introduction of the block; the diagonal, the halves, the form, the remarkable subspaces, the operators and the two matrix models are the five articles that follow.
 
 ## The Product
 
@@ -140,6 +140,68 @@ so the block is the sum of the polarisation of its square and the half-differenc
 
 **Remark.** The polarisation separates the conjugate-even part of the value, which is the polarisation of the square, from the conjugate-odd half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$. The antisymmetric companion of the *general* quaternionic sesquilinear product is a different object: from $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ one reads $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\star\tilde Q_2+\vec Q_1\times\overline{\vec Q_2}$, the cross product $\vec Q_1\times\overline{\vec Q_2}$ being the product of Block 8 of the batch, and that reconstruction is the one of *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
+## The Form and the Product
+
+The scalar part of the block is the Krein form, and this section reads the two relations between the product and the form: the form is not invariant under the product, and what holds in place of invariance is an adjoint relation.
+
+**Theorem (the scalar part).** For all biquaternions,
+$$
+\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}).
+$$
+In the coefficient basis the Gram matrix of the form is $E=\mathrm{diag}(1,-1,-1,-1)$, of determinant $-1$; in the real basis it is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$. The matrix facts are *The Krein Gram Matrix of the Biquaternion Algebra*; the form's null set, isotropic structure and cone are *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra*.
+
+*Proof.* The scalar part of the value is the first term of the scalar–vector form, and the Gram matrix is computed from $\langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu}$.
+
+**Theorem (the invariance fails).** The form is not invariant under the block: there are biquaternions with
+$$
+\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}\neq\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
+$$
+Explicitly,
+$$
+\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}
+=\mathrm{Sc}\bigl(\mathrm{SPA}(\overline{\tilde Q_1},\tilde Q_3)\,\mathrm{SPA}(\tilde Q_2,\overline{\tilde Q_3})\bigr),
+$$
+and the defect is this value minus $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$.
+
+*Proof.* The two identities
+$$
+(\tilde Q_3\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde Q_3),
+\qquad
+(\tilde Q_3\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde Q_3})
+$$
+follow from the definition of the block and the anti-automorphism properties of ${}^{\natural}$ and ${}^{*}$. Then $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3\star\tilde Q_1)^{\natural}(\tilde Q_3\star\tilde Q_2)^{*}\bigr)$, which is the displayed value. On $\tilde Q_3=\tilde Q_1=e_t+\vec e_x$ and $\tilde Q_2=\vec e_x$ one has $\tilde Q_3\star\tilde Q_1=-2\vec e_x$ and $\tilde Q_3\star\tilde Q_2=-e_t-\vec e_x$, so the value is $-2$ against $\langle e_t+\vec e_x,\vec e_x\rangle_{\natural*}=-1$: the defect is $-1$ and the invariance fails.
+
+**Theorem (the adjoint relation).** The block and the form are tied by
+$$
+\boxed{\;\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}\; }.
+$$
+
+*Proof.* Use the two identities of the preceding theorem and $\mathrm{Sc}(U)=\mathrm{Sc}(U^{\natural})$. On the one hand
+$$
+\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3\star\tilde Q_1)^{\natural}\tilde Q_2^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_1}\tilde Q_3+\tilde Q_3\overline{\tilde Q_1})\tilde Q_2^{*}\bigr),
+$$
+and on the other, at the element $\tilde Q_3^{\natural}$,
+$$
+\langle\tilde Q_3^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3^{\natural}\star\tilde Q_2)^{\natural}\tilde Q_1^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_2}\tilde Q_3^{\natural}+\tilde Q_3^{\natural}\overline{\tilde Q_2})\tilde Q_1^{*}\bigr).
+$$
+The natural conjugation carries the two summands of the first display onto the two of the second, since $(\overline{\tilde Q_1})^{\natural}=\tilde Q_1^{*}$ and $(\tilde Q_2^{*})^{\natural}=\overline{\tilde Q_2}$, and the scalar part is invariant under it; the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$ then matches the terms. Hermitian symmetry of the form gives the conjugate on the right.
+
+**Remark (adjointness, not multiplicativity).** The product is conjugate-linear in one slot, so its left multiplications do not preserve the form the way a group of linear maps does. The defect measures the failure, and the adjoint relation is the compatibility that survives; in operator form it is the $K$-adjointness of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
+
+**Remark (the four scalar parts).** The scalar parts of the four symmetric parts are
+$$
+\mathrm{Sc}(\mathrm{SPA})=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
+\qquad
+\mathrm{Sc}(\mathrm{SQA})=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
+$$
+$$
+\mathrm{Sc}(\mathrm{SPS})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})=\langle\tilde Q_1,\tilde Q_2\rangle_{*},
+\qquad
+\mathrm{Sc}(\mathrm{SQS})=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
+$$
+The first two are bilinear and the last two Hermitian, with opposite signs in the vector term; on a real element the Krein form coincides with the first bilinear form, $\mathrm{SPA}$.
+
+
 ## The Failure of the Jordan Identity
 
 **Theorem (the Jordan identity fails).** With $x=y=\vec e_x$ the two sides of the Jordan identity $(x^{2}\star x)\star x=x^{2}\star(x\star x)$, where $x^{2}=x\star x$, are
@@ -188,7 +250,7 @@ the two halves being sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ and valued, 
 
 ## Summary
 
-The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})=[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$, with scalar part the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ and vector part the mixed term alone; the cross product of the two orders cancels in the half-sum. The product is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-commutative, and it has no unit on either side; the unit candidate $e_t$ acts as $\tilde Q^{*}$ on the left and as $\tilde Q^{\natural}$ on the right. On the four real basis directions the table is symmetric, with $\vec e_\mu\star \vec e_\mu=-e_t$ and $\vec e_\nu\star \vec e_\lambda=0$ for $\nu \neq \lambda$ among the vector directions. The square is $\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, and the polarisation separates the conjugate-even part of the value from the conjugate-odd half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$, while the antisymmetric companion of the general product is the cross product $\vec Q_1\times\overline{\vec Q_2}$. The Jordan identity fails on the witness $x=y=\vec e_x$, with the two sides $-e_t$ and $e_t$: a central shift, where the sibling $\mathrm{SPS}$ fails by an outright vanishing. The block is one of the twelve operations of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the only one whose value has the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ as its scalar part and the mixed term alone as its vector part, the cross product having cancelled between the two orders.
+The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})=[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$, with scalar part the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ and vector part the mixed term alone; the cross product of the two orders cancels in the half-sum. The product is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-commutative, and it has no unit on either side; the unit candidate $e_t$ acts as $\tilde Q^{*}$ on the left and as $\tilde Q^{\natural}$ on the right. On the four real basis directions the table is symmetric, with $\vec e_\mu\star \vec e_\mu=-e_t$ and $\vec e_\nu\star \vec e_\lambda=0$ for $\nu \neq \lambda$ among the vector directions. The square is $\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, and the polarisation separates the conjugate-even part of the value from the conjugate-odd half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$, while the antisymmetric companion of the general product is the cross product $\vec Q_1\times\overline{\vec Q_2}$. The Jordan identity fails on the witness $x=y=\vec e_x$, with the two sides $-e_t$ and $e_t$: a central shift, where the sibling $\mathrm{SPS}$ fails by an outright vanishing. The block is one of the twelve operations of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the only one whose value has the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ as its scalar part and the mixed term alone as its vector part, the cross product having cancelled between the two orders. The form is read as a product: its Gram matrix in the coefficient basis is $E=\mathrm{diag}(1,-1,-1,-1)$, its realification has signature $(2,6)$, and the product is not invariant under the block; the norm defect is the value of the form on the two products minus the value on the two factors. The adjoint relation $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ is the compatibility that survives.
 
 ## Summary of Notation
 
@@ -200,6 +262,8 @@ The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\t
 | $\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric companion $\mathrm{AQS}$, the cross product |
 | $\tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$ | the diagonal |
 | $e_t\star\tilde Q=\tilde Q^{*}$, $\tilde Q\star e_t=\tilde Q^{\natural}$ | the two one-sided actions of $e_t$; no unit |
+| $E=\mathrm{diag}(1,-1,-1,-1)$ | the Gram matrix of the form in the coefficient basis |
+| $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ | the adjoint relation tying the block to the form |
 | $(x^{2}\star x)\star x$ versus $x^{2}\star(x\star x)$ at $x=\vec e_x$ | the Jordan witness, the two sides $-e_t$ and $e_t$ |
 
 ## Further Reading
@@ -209,6 +273,7 @@ The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\t
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product that is split and its two orders.
 - [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the one-sided actions of the unit candidate.
 - [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the four general products and the place of the general quaternionic sesquilinear product among them.
-- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form $\langle\cdot,\cdot\rangle_{\natural*}$.
+- [The Krein Gram Matrix of the Biquaternion Algebra](the-krein-gram-matrix-of-the-biquaternion-algebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural*}$.
+- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the null set and the cone of the form.
 - [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the operators of the product that is split.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces named in the articles of the block.

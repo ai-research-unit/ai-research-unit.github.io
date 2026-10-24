@@ -6,15 +6,15 @@ An exceptional point is a degeneracy at which two eigenvalues coincide **and** t
 
 The biquaternion spectrum has both. For $\tilde Q=Q_te_t+\vec Q$ the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=(\vec Q,\vec Q)$. They coincide exactly when $B=0$. If $\vec Q=0$ the element is central and semisimple: the degeneracy is diabolic. If $\vec Q\neq0$ and $B=0$ the element is a single Jordan block: the degeneracy is exceptional. The second case is the subject of this article.
 
-The article owns the question, not the theorem. The spectrum, the degenerate regimes, the eigenprojections and the Jordan normal form are those of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
+The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *Biquaternion Spectral Theory*; the degenerate regimes and the Jordan normal form are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The spectrum, the characteristic polynomial and the discriminant | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
-| The eigenprojections and the Hermitian case | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
-| The four degenerate regimes and the Jordan form | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
+| The spectrum, the characteristic polynomial and the discriminant | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
+| The eigenprojections and the Hermitian case | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
+| The four degenerate regimes and the Jordan form | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The exponential in the nilpotent regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The logarithm of a Jordan block | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The two strata of the zero-divisor cone | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
@@ -125,7 +125,7 @@ The two degeneracies are different normal forms, and the difference is visible w
 
 A diabolic point is a degeneracy of the spectrum with the algebra still semisimple. A Dirac point in a band structure is of this kind when the two bands touch with independent states. An exceptional point is a degeneracy with the algebra non-semisimple: the two states have become one. The names are standard in the non-Hermitian literature, and the table is the translation of the two normal forms into the biquaternion spectrum.
 
-The diabolic case is the scalar regime of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, and it is the only degeneracy available in the Hermitian sector. The exceptional case is the Jordan regime, and it is the only one that destroys the eigenprojections. The two are not two degrees of a single phenomenon: one is a coincidence of eigenvalues, the other is a coincidence of eigenvalues and eigenvectors.
+The diabolic case is the scalar regime of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, and it is the only degeneracy available in the Hermitian sector. The exceptional case is the Jordan regime, and it is the only one that destroys the eigenprojections. The two are not two degrees of a single phenomenon: one is a coincidence of eigenvalues, the other is a coincidence of eigenvalues and eigenvectors.
 
 ## Physical Readings
 
@@ -172,7 +172,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 
 ## Further Reading
 
-- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the spectrum, the degenerate regimes, the eigenprojections and the Jordan form.
+- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the spectrum and the eigenprojections, and [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the degenerate regimes and the Jordan form.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the boundary of the word and the two strata of the cone.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotents and their square-zero property.

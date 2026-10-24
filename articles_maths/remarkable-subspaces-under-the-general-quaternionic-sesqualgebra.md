@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The general quaternionic sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ of *The Krein Gram Matrix and the Restrictions of the Form*, of signature $(2,6)$, is read here on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
+The general quaternionic sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ of *The Krein Gram Matrix of the Biquaternion Algebra*, of signature $(2,6)$, is read here on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The form is used, not re-derived. Its definition, its Krein signature $(2,6)$ and its automorphism group $\mathrm{U}(1,3)$ are the matter of *The Krein Gram Matrix and the Restrictions of the Form*; its Gram matrices and the signature of each restriction are *The Krein Gram Matrix and the Restrictions of the Form*; its null set and its totally isotropic subspaces are *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four Forms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
+The form is used, not re-derived. Its definition, its Krein signature $(2,6)$ and its automorphism group $\mathrm{U}(1,3)$ are the matter of *The Krein Gram Matrix of the Biquaternion Algebra*; its null set and its totally isotropic subspaces are *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra*; the remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four Forms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
 
 ## The Restriction Matrices
 
@@ -25,6 +25,17 @@ The form differs from the Euclidean square by the sign vector $\varepsilon=(1,-1
 *Proof.* In the real basis of the algebra the form is diagonal with the signs $\varepsilon,\varepsilon$, since $\langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu}$ and $\langle ie_\mu,ie_\nu\rangle_{\natural*}=\varepsilon_\mu|i|^{2}\delta_{\mu\nu}=\varepsilon_\mu\delta_{\mu\nu}$, while the mixed entries have vanishing real part. The natural real basis of each subspace is a subset of the algebra's real basis, so each restriction is the corresponding principal submatrix. On the centre the basis is $\{e_t,ie_t\}$, giving $\operatorname{diag}(1,1)$; on the vector subspace it is $\{\vec e_k,i\vec e_k\}$, where the signs are all $-1$; and on each four-dimensional subspace the basis selects one direction of each complex coordinate, giving the sign string $\varepsilon$ in a different order.
 
 **Remark (the four real forms carry the Lorentzian form).** On each of the four four-dimensional real subspaces the restriction is a Lorentzian form of signature $(1,3)$: it is the Krein form of Lorentzian space, with one timelike and three spacelike directions. The four selections of the timelike direction are the four real subspaces: the real scalar direction $e_t$ on $\mathbb{H}_{\mathbb{B}}$, the imaginary scalar direction $ie_t$ on $i\mathbb{H}_{\mathbb{B}}$, the real scalar direction again on $\mathbb{M}_+$, and the imaginary scalar direction again on $\mathbb{M}_-$.
+
+## The Four Real Forms
+
+**Definition.** A **real form of the form** is a real four-dimensional subspace on which the restriction is real-valued and symmetric. The four carried by the remarkable subspaces are the **quaternion form** $\mathbb{H}_{\mathbb{B}}$, the **anti-quaternion form** $i\mathbb{H}_{\mathbb{B}}$, the **Hermitian form** $\mathbb{M}_{+}$ and the **anti-Hermitian form** $\mathbb{M}_{-}$.
+
+**Theorem (the four real forms).** On each of the four subspaces the form restricts to a real symmetric bilinear form of signature $(1,3)$, the Krein form of a Lorentzian four-space; multiplication by $i$ exchanges the two pairs, $\mathbb{H}_{\mathbb{B}}\leftrightarrow i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{+}\leftrightarrow\mathbb{M}_{-}$. Each contains isotropic elements, and inside a form of signature $(1,3)$ the maximal totally isotropic real dimension is $\min(1,3)=1$.
+
+*Proof.* The four rows of the restriction table are the four $(1,3)$ rows, and on each of them every coefficient pair $Q_{2\mu}^{*}Q_{1\mu}$ is real, because the coefficients are either both real or both purely imaginary; hence the form is real and symmetric. Multiplication by $i$ multiplies the scalar coefficient of an element of $\mathbb{M}_{+}$ by $i$ and leaves the vector coefficients, exchanging the two sectors, and carries the quaternion subspace onto the anti-quaternion subspace. The index bound is $\min(n,m)$ for the signature $(1,3)$.
+
+**Remark (the four are not a classification).** The four subspaces are the real slices carried by the remarkable subspaces, and the two definite complex rows are not real forms: the centre has signature $(2,0)$ and the vector subspace $(0,6)$. Other real four-planes on which the form is real exist — for instance $\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ — so the four are a natural list, not an exhaustive one. The real basis of the algebra, in which the mixed entries are purely imaginary and the realified Gram matrix is $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$, is *The Krein Gram Matrix of the Biquaternion Algebra*.
+
 
 ## The Definite Rows and the Fundamental Decomposition
 
@@ -50,7 +61,7 @@ Each of the four indefinite rows carries a **real null cone**, of real dimension
 | Hermitian $\mathbb{M}_+$ | $q_t^{2}=(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ | $3$ |
 | Anti-Hermitian $\mathbb{M}_-$ | $(q'_t)^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ | $3$ |
 
-**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The Isotropic Structure of the General Quaternionic Sesqualgebra*.
+**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra*.
 
 ## The Coincidences with the Other Three Forms
 
@@ -84,7 +95,7 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **Proof.** A real-linear automorphism of a non-degenerate real symmetric form of signature $(n,m)$ is an element of $O(n,m)$, of real dimension $n(n-1)/2$ with $n=p+q$, giving $1$, $15$ and $6$; the two definite rows give $O(2)$ and $O(6)\cong O(0,6)$, and the four Lorentzian rows give $O(1,3)$ four times.
 
-**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite unitary group $\mathrm{U}(1,3)$ of real dimension $16$, of *The Krein Gram Matrix and the Restrictions of the Form*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
+**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite unitary group $\mathrm{U}(1,3)$ of real dimension $16$, of *The Krein Gram Matrix of the Biquaternion Algebra*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
 
 ## Worked Examples
 
@@ -92,7 +103,7 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **A negative vector element.** For $\tilde Q=\vec e_x$ the value is $\varepsilon_x|1|^{2}=-1$, and for $\tilde Q=\vec e_x+i\vec e_x$ it is $-1-1=-2$; the vector subspace is negative definite, and it realises the negative index $6$ of the form.
 
-**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The Isotropic Structure of the General Quaternionic Sesqualgebra*.
+**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra*.
 
 **The null element of the anti-quaternion row.** For $\tilde Q=ie_t+i\vec e_x$ the value is $1-1=0$, on the cone $(q'_t)^{2}=\sum_k(q'_k)^{2}$ of the anti-quaternion subspace; the sign of the scalar coefficient is the one the row prescribes.
 
@@ -122,8 +133,8 @@ On the remarkable real subspaces the general quaternionic sesquilinear form carr
 
 ## Further Reading
 
-- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the Gram matrices and the signature of each restriction
-- [The Isotropic Structure of the General Quaternionic Sesqualgebra](the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the null set, the isotropic lines and the Witt index
+- [The Krein Gram Matrix of the Biquaternion Algebra](the-krein-gram-matrix-of-the-biquaternion-algebra.html), for the Gram matrices and the signature of each restriction
+- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the null set, the isotropic lines and the Witt index
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces and their bases
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the definite companion reading of the same six
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the norm reading of the same six

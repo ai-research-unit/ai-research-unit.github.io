@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In a positive definite space the normal operators are the ones a spectral theorem can reach, and normality forces the spectrum into a symmetry: normal operators have no reason to be self-adjoint, but they are diagonalised by unitaries, and their spectra are conjugate-symmetric. This article asks what survives of that circle of ideas for the general quaternionic sesquilinear form. The answer is a partial one, and its partiality is the point: the $J$-normal operators are still those commuting with their $J$-adjoint, the algebra's three operator families are all $J$-normal, the $J$-self-adjoint operators with positive definite partner $JT$ still have real spectra and diagonalisations, and the spectral symmetries still hold — but $J$-normality no longer forces a real spectrum, a $J$-self-adjoint operator need not be diagonalisable, and the $J$-unitary group is not compact. The $J$-adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the spectra of the algebra's operators are computed in *The Indefinite Spectra of the Operators on the Biquaternion Algebra*; and the group of $J$-unitaries is *The Krein Isometry Group and Its $J$-Contractions*.
+In a positive definite space the normal operators are the ones a spectral theorem can reach, and normality forces the spectrum into a symmetry: normal operators have no reason to be self-adjoint, but they are diagonalised by unitaries, and their spectra are conjugate-symmetric. This article asks what survives of that circle of ideas for the general quaternionic sesquilinear form. The answer is a partial one, and its partiality is the point: the $J$-normal operators are still those commuting with their $J$-adjoint, the algebra's three operator families are all $J$-normal, the $J$-self-adjoint operators with positive definite partner $JT$ still have real spectra and diagonalisations, and the spectral symmetries still hold — but $J$-normality no longer forces a real spectrum, a $J$-self-adjoint operator need not be diagonalisable, and the $J$-unitary group is not compact. The $J$-adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the spectra of the algebra's operators are computed there in §*The Indefinite Spectral Data*; and the group of $J$-unitaries is *The Krein Isometry Group and Its $J$-Contractions*.
 
 ## J-Normality
 
@@ -102,7 +102,7 @@ $$
 
 each eigenvalue of multiplicity two.
 
-**Proof.** $L_{\vec e_x}$ is $J$-normal by the theorem above. As a $\mathbb{C}$-linear operator on $\mathbb{B}\cong\mathbb{C}^{4}$ it is the left multiplication of the matrix $\mathsf{M}_2(\vec e_x)$, whose eigenvalues are $i$ and $-i$; and the left regular representation of the algebra is the direct sum of two copies of the defining representation, so each eigenvalue occurs twice (*The Indefinite Spectra of the Operators on the Biquaternion Algebra*).
+**Proof.** $L_{\vec e_x}$ is $J$-normal by the theorem above. As a $\mathbb{C}$-linear operator on $\mathbb{B}\cong\mathbb{C}^{4}$ it is the left multiplication of the matrix $\mathsf{M}_2(\vec e_x)$, whose eigenvalues are $i$ and $-i$; and the left regular representation of the algebra is the direct sum of two copies of the defining representation, so each eigenvalue occurs twice (*J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*, §*The Indefinite Spectral Data*).
 
 **Corollary (contrast with the definite theory).** In a positive definite space a normal operator with real eigenvalues is self-adjoint and a normal operator with non-real eigenvalues is not; here $L_{\vec e_x}$ is $J$-normal, is not $J$-self-adjoint, and its spectrum is imaginary. Normality, self-adjointness and reality of the spectrum are three independent conditions in the indefinite case, whereas in the definite case normality and reality together imply diagonalisability by unitaries.
 
@@ -139,9 +139,8 @@ A $\mathbb{C}$-linear operator is $J$-normal when it commutes with its Krein adj
 
 ## Further Reading
 
-- [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the Krein adjoint and its criteria
-- [The Indefinite Spectra of the Operators on the Biquaternion Algebra](the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.html), for the explicit spectra used here
+- [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the Krein adjoint and its criteria, the $J$-unitary group and the spectra of the three families
 - [The Krein Isometry Group and Its J-Contractions](the-krein-isometry-group-and-its-j-contractions.html), for the $J$-unitary group $\mathrm{U}(1,3)$ and the boosts
-- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone containing the nilpotent example
+- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone containing the nilpotent example
 - [The Krein Cartan Decomposition of the Operator Algebra](the-krein-cartan-decomposition-of-the-operator-algebra.html), for the operator algebra the family statements live in
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for indefinite normality, the definite-spectrum criterion and the symmetries of the spectra

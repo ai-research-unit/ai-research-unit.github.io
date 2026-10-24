@@ -148,6 +148,19 @@ $$
 
 This is the only sector in which the adapted decomposition has two non-zero coefficients and two non-trivial idempotents. In $\Sigma_{01}$ one coefficient vanishes; on the scalar line of $\Sigma_{10}$ the two coefficients coincide and the refinement is non-unique; in $\Sigma_{10}^{\mathrm{J}}$ and in $\Sigma_{00}$ no adapted decomposition exists.
 
+**The spectral decomposition.** The two-term writing
+$$
+\tilde Q=\lambda_+e_++\lambda_-e_-,\qquad \lambda_\pm=Q_t\pm\beta,\quad \beta^2=-B^2,
+$$
+is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the Q-adapted basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*.
+
+**Powers, inverse, and the eigenvalue map.** For every polynomial $f\in\mathbb{C}[X]$,
+$$
+f(\tilde Q)=f(\lambda_+)e_++f(\lambda_-)e_-,\qquad
+\tilde Q^{-1}=\lambda_+^{-1}e_++\lambda_-^{-1}e_-,
+$$
+the second because $\lambda_+\lambda_-=N\neq0$; it agrees with $\tilde Q^{\natural}/N$, since $\lambda_-\tilde\Pi_++\lambda_+\tilde\Pi_-=\tilde Q^{\natural}$. The eigenvalue map $\mathbb{B}^\times\to\mathbb{C}^\times\times\mathbb{C}^\times$, $\tilde Q\mapsto(\lambda_+,\lambda_-)$, is surjective, not injective and not a group homomorphism.
+
 **Annihilators.** Since $\tilde Q$ is a unit,
 
 $$

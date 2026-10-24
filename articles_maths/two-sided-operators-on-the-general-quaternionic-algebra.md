@@ -185,7 +185,7 @@ The **twisted two-sided operator** of the biquaternion algebra is $\Theta_{\tild
 
 ## Further Reading
 
-- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the signed inner conjugation $\tilde Q_6^{\natural}\tilde Q_4\tilde Q_6^{-1}$ against the unsigned $\tilde Q_6\tilde Q_4\tilde Q_6^{-1}$, their difference $-2\vec Q_6\tilde Q_4\tilde Q_6^{-1}$ and the two matrices of the sign
+- [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the signed inner conjugation $\tilde Q_6^{\natural}\tilde Q_4\tilde Q_6^{-1}$ against the unsigned $\tilde Q_6\tilde Q_4\tilde Q_6^{-1}$, their difference $-2\vec Q_6\tilde Q_4\tilde Q_6^{-1}$ and the two matrices of the sign
 - [One-Sided Operators on the General Quaternionic Algebra](one-sided-operators-on-the-general-quaternionic-algebra.html), for the factors
 - [The Pin and Spin Groups of the General Quaternionic Algebra](the-pin-and-spin-groups-of-the-general-quaternionic-algebra.html), for the groups cut out by the norm
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general quaternionic bilinear form and its Gram matrix

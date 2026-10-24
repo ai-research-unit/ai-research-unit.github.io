@@ -18,7 +18,7 @@ The article reads the operator calculus of the general plain product and then cr
 | The operator calculus of the general plain product | [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html) |
 | The monoid of acting maps and the enveloping algebra | [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html) |
 | The sandwich as the map $X\mapsto MXM^{\dagger}$ | [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html) |
-| The sandwich as a product of the two regular maps | [The Four-Vector Operator Representation of Biquaternions](../articles_maths/the-four-vector-operator-representation-of-biquaternions.html) |
+| The sandwich as a product of the two regular maps | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), §*The Sandwich in the Regular Basis* |
 | The action of the sandwich on the remarkable subspaces | [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) |
 | The Peirce decomposition and the four corners | [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
 

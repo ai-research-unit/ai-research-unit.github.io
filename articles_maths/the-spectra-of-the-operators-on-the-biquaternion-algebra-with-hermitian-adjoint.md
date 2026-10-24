@@ -4,7 +4,7 @@
 
 Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$, and let $L_{\tilde Q_1}$, $R_{\tilde D}$, $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$ be the one-sided and two-sided operators of *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*. This article computes their spectra on the Hermitian space $(\tilde S,\tilde Q_2)=\mathrm{Sc}(\tilde{S}^{*}\tilde Q_2)$, which is the biquaternion instance of *The Spectra of Self-Adjoint Operators with Hermitian Adjoint*.
 
-The results are complete and explicit. **The one-sided operators have the spectrum of the element, each eigenvalue twice; the two-sided operator has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$; the inner derivation has the pairwise differences $\lambda_{i}-\lambda_{j}$; and the Sylvester operator has the pairwise sums $\lambda_{i}+\mu_{j}$.** The four statements are one statement: on the algebra seen as $\mathbb{C}^{2}\otimes(\mathbb{C}^{2})^{*}$, left multiplication acts on the first factor, right multiplication on the second, and every operator of the corpus is a function of the two. The element-level theory is *Biquaternion Spectral Theory*; this article is the operator-level theory, and the two must be kept apart: an element has a spectrum, an operator has a spectrum, and the second is built from the first by the rules below.
+The results are complete and explicit. **The one-sided operators have the spectrum of the element, each eigenvalue twice; the two-sided operator has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$; the inner derivation has the pairwise differences $\lambda_{i}-\lambda_{j}$; and the Sylvester operator has the pairwise sums $\lambda_{i}+\mu_{j}$.** The four statements are one statement: on the algebra seen as $\mathbb{C}^{2}\otimes(\mathbb{C}^{2})^{*}$, left multiplication acts on the first factor, right multiplication on the second, and every operator of the corpus is a function of the two. The element-level theory is *Biquaternion Spectral Theory*; this article is the operator-level theory, and the two must be kept apart: an element has a spectrum, an operator has a spectrum, and the second is built from the first by the rules below. The Sylvester operator is treated together with its equation: the solvability criterion, the solution in Kronecker and entrywise form, and the two examples that show the singular Hermitian case and the anti-Hermitian trap.
 
 ## The Vectorisation
 
@@ -78,9 +78,7 @@ so $\Theta_{\tilde{Q}}$ is positive semidefinite exactly when $p=2$ or $q=2$, th
 
 **Remark (the numerical range is not real).** It must not be expected that $(\Theta_{\tilde{Q}}\tilde Q_2,\tilde Q_2)$ be real for all $\tilde Q_2$: for $\tilde{Q}$ not Hermitian up to phase the operator is not self-adjoint and the values $\lambda_{i}\overline{\lambda_{j}}$ are not real, so the quadratic form of $\Theta_{\tilde{Q}}$ takes genuinely complex values. A verified counterexample is $\tilde{Q}=e_t+\vec e_x$, for which $\tilde{Q}^{*}=e_t-\vec e_x$ is not a central multiple of $\tilde{Q}$ and the spectrum $\{2,2i,-2i,2\}$ is not real. The correct positivity statements are those of the theorem above, and only for $\tilde{Q}$ Hermitian up to phase.
 
-**Corollary (rank and trace preservation).** The rank of $\Theta_{\tilde{Q}}$ is $(\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}))^{2}$, so a singular $\tilde{Q}$ gives a **rank-one** sandwich, as the null example below shows. As a map on the algebra, the sandwich is trace preserving exactly when $\tilde{Q}\in U$, since $\operatorname{tr}(\tilde{Q}Y\tilde{Q}^{*})=\operatorname{tr}(\tilde{Q}^{*}\tilde{Q}Y)$ for all $Y$ forces $\tilde{Q}^{*}\tilde{Q}=e_t$; this is the statement used in *Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint*. The two-sided operator of a *positive semidefinite* element is a positive map, so the sandwich carries the positive cone into itself.
-
-**Remark (the operator norm).** The norm of $\Theta_{\tilde{Q}}$ on the Hermitian space is the square of the operator norm of $\mathsf{M}_2(\tilde{Q})$, $\lVert \Theta_{\tilde{Q}}\rVert=\lVert\mathsf{M}_2(\tilde{Q})\rVert^{2}$, since $\lVert \tilde{Q}\tilde Q_2\tilde{Q}^{*}\rVert\le\lVert \tilde{Q}\rVert^{2}\lVert \tilde Q_2\rVert$ with equality on a suitable rank-one $\tilde Q_2$. The sandwich therefore **doubles the norm in the exponent**: the unit ball of the algebra is contracted by the sandwich of a contraction and fixed only by the unitaries.
+**Corollary (rank and trace preservation).** The rank of $\Theta_{\tilde{Q}}$ is $(\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}))^{2}$, so a singular $\tilde{Q}$ gives a **rank-one** sandwich, as the null example below shows. As a map on the algebra, the sandwich is trace preserving exactly when $\tilde{Q}\in U$, since $\operatorname{tr}(\tilde{Q}Y\tilde{Q}^{*})=\operatorname{tr}(\tilde{Q}^{*}\tilde{Q}Y)$ for all $Y$ forces $\tilde{Q}^{*}\tilde{Q}=e_t$; this is the statement used in *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*, whose biquaternion instance is the case $d=2$ of the general theorem. The two-sided operator of a *positive semidefinite* element is a positive map, so the sandwich carries the positive cone into itself.
 
 ## The Spectrum of the Sylvester Operator
 
@@ -94,7 +92,27 @@ where $\lambda_{i}$ are the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ and $\mu_{
 
 *Proof.* Immediate from $L_{\tilde Q_1}+R_{\tilde D}=\mathsf{M}_2(\tilde Q_1)\otimes I+I\otimes\mathsf{M}_2(\tilde D)^{T}$ and the additivity of the spectrum under Kronecker sums for the first factor terms; verified on random pairs, together with the determinant formula.
 
-**Corollary (the self-adjoint Sylvester operator).** $(L_{\tilde Q_1}+R_{\tilde D})^{*}=L_{\tilde{Q}_1^{*}}+R_{\tilde{D}^{*}}$, so $L_{\tilde Q_1}+R_{\tilde D}$ is self-adjoint exactly when both parameters are Hermitian, and the Lyapunov operator $L_{\tilde Q_1}+R_{\tilde{Q}_1^{*}}$ is self-adjoint exactly when $\tilde Q_1$ is Hermitian, with the real spectrum $\{\lambda_{i}+\overline{\lambda_{j}}\}=\{\lambda_{i}+\lambda_{j}\}$ for $\lambda_{i}$ real. This is the operator side of the Hermitian Sylvester equation, developed in *The Hermitian Sylvester Equation*.
+**Corollary (the self-adjoint Sylvester operator).** $(L_{\tilde Q_1}+R_{\tilde D})^{*}=L_{\tilde{Q}_1^{*}}+R_{\tilde{D}^{*}}$, so $L_{\tilde Q_1}+R_{\tilde D}$ is self-adjoint exactly when both parameters are Hermitian, and the Lyapunov operator $L_{\tilde Q_1}+R_{\tilde{Q}_1^{*}}$ is self-adjoint exactly when $\tilde Q_1$ is Hermitian, with the real spectrum $\{\lambda_{i}+\overline{\lambda_{j}}\}=\{\lambda_{i}+\lambda_{j}\}$ for $\lambda_{i}$ real. This is the operator side of the Hermitian Sylvester equation, whose general theory is *The Hermitian Sylvester Equation with Hermitian Adjoint*.
+
+## The Solution of the Sylvester Equation
+
+**Theorem (the solution).** When $L_{\tilde Q_1}+R_{\tilde D}$ is invertible, the solution of $\tilde Q_1X+X\tilde D=c$ is
+
+$$
+X=\mathrm{vec}^{-1}\Bigl(\bigl(\mathsf{M}_2(\tilde Q_1)\otimes I_2+I_2\otimes\mathsf{M}_2(\tilde D)^{T}\bigr)^{-1}\mathrm{vec}(c)\Bigr),
+$$
+
+and in a basis that diagonalises both parameters simultaneously it is the entrywise formula
+
+$$
+X_{ij}=\frac{c_{ij}}{\lambda_{i}+\mu_{j}}.
+$$
+
+*Proof.* Vectorise the equation: the term $\tilde Q_1X$ becomes $(\mathsf{M}_2(\tilde Q_1)\otimes I_2)\mathrm{vec}(X)$ and the term $X\tilde D$ becomes $(I_2\otimes\mathsf{M}_2(\tilde D)^{T})\mathrm{vec}(X)$, so the system has the displayed matrix. In the common diagonal basis each entry is multiplied by $\lambda_{i}+\mu_{j}$, which gives the entrywise formula and is consistent with the determinant $\prod_{ij}(\lambda_{i}+\mu_{j})$.
+
+**Example (the singular Hermitian case).** For $\tilde Q_1=\tilde D=i\vec e_z$ the matrix $\mathsf{M}_2(i\vec e_z)=\sigma_{3}$ has the eigenvalues $1$ and $-1$, so the anticommutator operator $L_{i\vec e_z}+R_{i\vec e_z}$ has the spectrum $\{2,0,0,-2\}$ and is singular: the two opposite eigenvalues give the vanishing sum. The homogeneous equation $i\vec e_zX+Xi\vec e_z=0$ has the two-dimensional solution space spanned by the matrix units $E_{12}$ and $E_{21}$ of $M_{2}(\mathbb{C})$. This is the exact algebraic form of the failure of the Hermitian Sylvester equation at an indefinite Hermitian coefficient with opposite eigenvalues.
+
+**Example (the anti-Hermitian trap).** For $\tilde Q_1=\tilde D=\vec e_z$, which is anti-Hermitian, the operator $L_{\tilde Q_1}+R_{\tilde Q_1^{*}}=L_{\vec e_z}-R_{\vec e_z}=\mathrm{ad}_{\vec e_z}$ is the inner derivation. It looks symmetric in its two factors and is **skew-adjoint**, with the purely imaginary spectrum $\{0,2i,-2i,0\}$. The two examples are the two ways the equation departs from the definite case: a vanishing sum for a Hermitian parameter with opposite eigenvalues, and a skew-adjoint operator for an anti-Hermitian one.
 
 ## Worked Examples
 
@@ -116,7 +134,7 @@ not real: the two coherence eigenvalues $\lambda_{1}\overline{\lambda_{2}}=2i$ a
 
 ## Summary
 
-On the Hermitian space of the biquaternion algebra, the operators of the corpus have explicit spectra: $\mathrm{spec}(L_{\tilde Q_1})=\mathrm{spec}(\mathsf{M}_2(\tilde Q_1))$ with each eigenvalue twice, the same for $R_{\tilde D}$; the inner derivation $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ has the pairwise differences $\lambda_{i}-\lambda_{j}$, the roots of the Cartan pair when $\tilde Q_1$ is Hermitian; the two-sided operator $\Theta_{\tilde{Q}}$ has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$, the populations $\lvert\lambda_{i}\rvert^{2}$ and the coherences $\lambda_{i}\overline{\lambda_{j}}$; and the Sylvester operator $L_{\tilde Q_1}+R_{\tilde D}$ has the pairwise sums $\lambda_{i}+\mu_{j}$. From these: $\mathrm{tr}(\Theta_{\tilde{Q}})=\lvert\operatorname{tr}\mathsf{M}_2(\tilde{Q})\rvert^{2}$ and $\det(\Theta_{\tilde{Q}})=\lvert\det\mathsf{M}_2(\tilde{Q})\rvert^{4}$; $\Theta_{\tilde{Q}}$ is self-adjoint exactly when $\tilde{Q}$ is Hermitian up to a central phase and then its signature is $(p^{2}+q^{2},2pq)$ for the inertia $(n,m)$ of $\tilde{Q}$; $\Theta_{\tilde{Q}}$ is positive semidefinite exactly when $\tilde{Q}$ is Hermitian up to phase and semidefinite; $L_{\tilde Q_1}+R_{\tilde D}$ is invertible exactly when $\mathsf{M}_2(\tilde Q_1)$ and $-\mathsf{M}_2(\tilde D)$ share no eigenvalue and self-adjoint exactly when both parameters are Hermitian.
+On the Hermitian space of the biquaternion algebra, the operators of the corpus have explicit spectra: $\mathrm{spec}(L_{\tilde Q_1})=\mathrm{spec}(\mathsf{M}_2(\tilde Q_1))$ with each eigenvalue twice, the same for $R_{\tilde D}$; the inner derivation $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ has the pairwise differences $\lambda_{i}-\lambda_{j}$, the roots of the Cartan pair when $\tilde Q_1$ is Hermitian; the two-sided operator $\Theta_{\tilde{Q}}$ has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$, the populations $\lvert\lambda_{i}\rvert^{2}$ and the coherences $\lambda_{i}\overline{\lambda_{j}}$; and the Sylvester operator $L_{\tilde Q_1}+R_{\tilde D}$ has the pairwise sums $\lambda_{i}+\mu_{j}$. From these: $\mathrm{tr}(\Theta_{\tilde{Q}})=\lvert\operatorname{tr}\mathsf{M}_2(\tilde{Q})\rvert^{2}$ and $\det(\Theta_{\tilde{Q}})=\lvert\det\mathsf{M}_2(\tilde{Q})\rvert^{4}$; $\Theta_{\tilde{Q}}$ is self-adjoint exactly when $\tilde{Q}$ is Hermitian up to a central phase and then its signature is $(p^{2}+q^{2},2pq)$ for the inertia $(n,m)$ of $\tilde{Q}$; $\Theta_{\tilde{Q}}$ is positive semidefinite exactly when $\tilde{Q}$ is Hermitian up to phase and semidefinite; $L_{\tilde Q_1}+R_{\tilde D}$ is invertible exactly when $\mathsf{M}_2(\tilde Q_1)$ and $-\mathsf{M}_2(\tilde D)$ share no eigenvalue and self-adjoint exactly when both parameters are Hermitian. The equation is then solved by the Kronecker inverse, or entrywise by $X_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$; the singular Hermitian coefficient $i\vec e_z$ leaves the two matrix units $E_{12}$ and $E_{21}$ in the kernel, and the anti-Hermitian coefficient $\vec e_z$ turns the symmetric-looking operator into the skew-adjoint derivation.
 
 ## Summary of Notation
 
@@ -129,6 +147,8 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 | $\Theta_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes(\mathsf{M}_2(\tilde{Q}))^{\natural}$ | Two-sided operator; spectrum $\lambda_{i}\overline{\lambda_{j}}$ |
 | $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ | Inner derivation; spectrum $\lambda_{i}-\lambda_{j}$ |
 | $L_{\tilde Q_1}+R_{\tilde D}$ | Sylvester operator; spectrum $\lambda_{i}+\mu_{j}$ |
+| $\mathrm{vec}^{-1}$ | The inverse vectorisation, giving the solution of the Sylvester equation |
+| $\sigma_{3},E_{ij}$ | The Pauli matrix $\operatorname{diag}(1,-1)$ and the matrix units of $M_{2}(\mathbb{C})$ |
 | $(n,m)$ | Inertia of a Hermitian element; $\mathrm{sig}(\Theta_{\tilde{Q}})=(p^{2}+q^{2},2pq)$ |
 | $(\tilde S,\tilde Q_2)=\mathrm{Sc}(\tilde{S}^{*}\tilde Q_2)$ | The general plain sesquilinear form of the spectra |
 
@@ -138,7 +158,7 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 - [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), for the spectra of **elements**: the element-level theory that this article uses and does not repeat.
 - [Self-Adjoint and Skew Operators with Hermitian Adjoint](self-adjoint-and-skew-operators-with-hermitian-adjoint.html), for the general operator-level theory of the adjoint.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html) and [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the definitions, the type criteria and the composition laws.
-- [The Hermitian Sylvester Equation](the-hermitian-sylvester-equation.html), for the solvability and the solution of $\tilde Q_1X+X\tilde D=c$.
-- [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity statements at the level of maps.
+- [The Hermitian Sylvester Equation with Hermitian Adjoint](the-hermitian-sylvester-equation-with-hermitian-adjoint.html), for the general theory of the equation solved here in the biquaternion case.
+- [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the positivity statements at the level of maps, of which the biquaternion instance is the case $d=2$.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the derivations and their weights.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces

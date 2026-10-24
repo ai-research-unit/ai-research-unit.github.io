@@ -11,7 +11,7 @@ into the real quaternion subspace, and the anti-Hermitian subspace into the Herm
 a general pair, by contrast, are not confined to any subspace of the remarkable subspaces: their smallest
 real span is the whole algebra.
 
-The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the Restrictions of the Form*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *Introduction to the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix of the Biquaternion Algebra*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 ## The Product Rule on Each Subspace
 
@@ -107,7 +107,7 @@ an element of the Hermitian subspace: a real scalar part and a purely imaginary 
 
 *Proof.* A Hermitian element has a real scalar coefficient and purely imaginary vector coefficients; thus $Q_{1t}=a_t$, $\vec Q_1=i\vec\alpha$ with $a_t,\vec\alpha$ real. Then $K=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=a_tb_t-\sum_k(i\alpha_k)\overline{(i\beta_k)}=a_tb_t-\sum_k(i\alpha_k)(-i\beta_k)=a_tb_t-\sum_k\alpha_k\beta_k$, real. The vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1=-a_t(-i\vec\beta)-b_t(i\vec\alpha)=i(a_t\vec\beta-b_t\vec\alpha)$, purely imaginary. So the value is Hermitian. The image is the whole subspace, since $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span the four real directions $e_t,i\vec e_x,i\vec e_y,i\vec e_z$.
 
-**Remark.** With the centre and the real quaternion subspace, the Hermitian subspace is the third closed subspace of the block; the three closed subspaces are exactly the centre, the real quaternion subspace and the Hermitian subspace. On the real quaternion subspace the product is commutative; on the centre it is only conjugate-commutative; and on the Hermitian subspace it is not commutative either, since the imaginary vector part $i(a_t\vec\beta-b_t\vec\alpha)$ changes sign under the exchange of the two factors. The Hermitian subspace carries the form of signature $(1,3)$, one of the two real four-dimensional restrictions of $K$ read in *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*.
+**Remark.** With the centre and the real quaternion subspace, the Hermitian subspace is the third closed subspace of the block; the three closed subspaces are exactly the centre, the real quaternion subspace and the Hermitian subspace. On the real quaternion subspace the product is commutative; on the centre it is only conjugate-commutative; and on the Hermitian subspace it is not commutative either, since the imaginary vector part $i(a_t\vec\beta-b_t\vec\alpha)$ changes sign under the exchange of the two factors. The Hermitian subspace carries the form of signature $(1,3)$, one of the two real four-dimensional restrictions of $K$ read in *Introduction to the Symmetric Quaternionic Sesqualgebra*.
 
 ## The Anti-Hermitian Subspace
 
@@ -193,8 +193,7 @@ The product of the block is read on the remarkable subspaces by the single rule 
 
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and its scalar–vector form.
 - [The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra](the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html), for the diagonal, the idempotents and the square-zero elements on the closed subspaces.
-- [The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra](the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.html), for the form and its restriction to the remarkable subspaces.
-- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form $K$ and its Gram matrices.
+- [The Krein Gram Matrix of the Biquaternion Algebra](the-krein-gram-matrix-of-the-biquaternion-algebra.html), for the form $K$ and its Gram matrices.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the definition and the comparison of the remarkable subspaces.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the same remarkable subspaces under the general product.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the comparison of the closure patterns of the twelve operations.

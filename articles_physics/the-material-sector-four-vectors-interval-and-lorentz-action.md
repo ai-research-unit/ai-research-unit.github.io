@@ -17,7 +17,7 @@ The results used are these.
 | The four forms and their restrictions | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html), [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) |
 | The commutator and the Lie algebra | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
 | The sandwich and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
-| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
+| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 ## The Results It Uses
 
@@ -187,7 +187,7 @@ $$
 
 while the product of the eigenvalues is the biquaternion norm, $\lambda_+\lambda_-=-m^2c^2=\langle\tilde P\rangle_{\natural}$. The mass is therefore read from the product, not from either eigenvalue.
 
-The two eigenvalues are not two particles and not two energies. They are the one momentum written in the two idempotent coordinates of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Eigenvalue Decomposition*. The eigenprojections are idempotents, hence null elements, and they are the two spectral components of the momentum. The pair depends on the frame: a boost changes $\vec p$ and with it the two frequencies, while their product stays $-m^2c^2$.
+The two eigenvalues are not two particles and not two energies. They are the one momentum written in the two idempotent coordinates of *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*. The eigenprojections are idempotents, hence null elements, and they are the two spectral components of the momentum. The pair depends on the frame: a boost changes $\vec p$ and with it the two frequencies, while their product stays $-m^2c^2$.
 
 **The boundary.** The reading needs $B\neq0$, that is, a nonzero spatial momentum. At $\vec p=0$ the two eigenvalues coincide at $iE/c$ and the two-projector writing is not unique. A null momentum has $B=E/c$, so one frequency vanishes; the element stays semisimple and the decomposition survives with a zero eigenvalue. The algebra gives the frequencies, not a particle count and not a numerical mass.
 
@@ -306,7 +306,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the definition and the basis of $\mathbb{M}_-$.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm, its signature and the inverse formula.
-- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections and the degenerate regimes.
+- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the spectrum and the eigenprojections, and [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the degenerate regimes.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the cone and the zero divisors.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the unit group.
 - [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) and [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the four forms and their restrictions.

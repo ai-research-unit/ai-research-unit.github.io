@@ -4,7 +4,7 @@
 
 This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its remarkable subspaces. The goal is to define the exponential, the logarithm, the power functions, the trigonometric and hyperbolic functions, and the inverse functions, and to compute them in closed form. The article mirrors *Quaternion Special Functions* in its treatment of the elementary functions, adapted to the complexified algebra. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in *Biquaternion Lie Group and Exponential Structure*.
 
-The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $\tilde\Pi_\pm$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The eigenvalue decomposition used throughout — the eigenvalues $\lambda_\pm=Q_t\pm iB$, the eigenprojections $\tilde\Pi_\pm$, the pure root $\vec\Xi$ and the parity-matched lattice — is that of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*; this article cites it and does not derive it. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.
+The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $\tilde\Pi_\pm$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The eigenvalue decomposition used throughout — the eigenvalues $\lambda_\pm=Q_t\pm iB$, the eigenprojections $\tilde\Pi_\pm$, the pure root $\vec\Xi$ and the parity-matched lattice — is that of *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*, for the eigenvalues, the eigenprojections and the pure root, and of §*The Eigenvalue Formula* below for the parity-matched lattice; this article cites them and does not derive them. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.
 
 The treatment is purely mathematical. No physics is invoked. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, and its four conjugations.
 
@@ -48,9 +48,9 @@ a fixed square root of the value of the complex quadratic form on $\vec Q$ (*Nor
 $$
 \vec Q=B\vec U,\qquad \vec U=\frac{\vec Q}{B},\qquad \vec U^2=-e_t.
 $$
-The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, and are not derived again; replacing $B$ by $-B$ replaces $\vec U$ by $-\vec U$ and leaves $\tilde Q$ unchanged.
+The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*, and are not derived again; replacing $B$ by $-B$ replaces $\vec U$ by $-\vec U$ and leaves $\tilde Q$ unchanged.
 
-The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections*, §*The Eigenvalue Decomposition* and §*The Algebraic Fibre of the Decomposition*. The definitions, the decompositions and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
+The spectral data are those of *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum* and §*The Eigenprojections and the Spectral Resolution*; the coordinate change and the lattice are derived in §*The Logarithm* below. The definitions, the decompositions and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
 
 | Quantity | Value |
 |---|---|
@@ -65,7 +65,7 @@ The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Biq
 | Polynomial calculus | $f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-$ for every polynomial $f$, when $B\neq0$ |
 | Lattice | $\ker\exp\cap\mathbb C[\tilde Q]=\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\}$ |
 
-The eigenvalues are distinct in the oscillatory regime and coincide in the nilpotent and scalar regimes; the eigenprojections exist only in the oscillatory regime. The lattice is the parity-matched lattice of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Lattice of Eigenvalue Data*; it is not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$.
+The eigenvalues are distinct in the oscillatory regime and coincide in the nilpotent and scalar regimes; the eigenprojections exist only in the oscillatory regime. The lattice is the parity-matched lattice derived in §*The Logarithm* below; it is not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$.
 
 ### The Regimes
 
@@ -74,7 +74,7 @@ The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$ a
 - **Oscillatory regime:** $B \neq 0$. The vector part is not a zero divisor, and it can be normalized to a root of $-1$. The powers of $\vec Q$ alternate, as in the quaternion case.
 - **Nilpotent regime:** $B = 0$. The vector part is nilpotent, and $\vec Q^2 = 0$; when $\vec Q\neq0$ it is a pure zero divisor. The powers of $\vec Q$ truncate after the first.
 
-These two cases cover all possibilities for the vector part; the case $\vec Q=0$ is the degenerate end of the second and is treated separately below. The elementary functions are computed separately in each case, and the formulas are different in the two regimes. The table below refines the two cases by the spectral type of the element; the spectral data of each regime are those of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*Degenerate Regimes*.
+These two cases cover all possibilities for the vector part; the case $\vec Q=0$ is the degenerate end of the second and is treated separately below. The elementary functions are computed separately in each case, and the formulas are different in the two regimes. The table below refines the two cases by the spectral type of the element; the spectral data of each regime are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Cases*.
 
 | Regime | Condition | Consequence for the functions |
 |---|---|---|
@@ -92,7 +92,7 @@ The split-complex and reduced biquaternion cases have no nilpotent regime, becau
 
 ### The Idempotent Principle
 
-The elementary functions of a single biquaternion are tractable because the powers of one element span a commutative subalgebra. The $\mathbb{C}$-linear span of $\{e_t,\tilde{Q},\tilde{Q}^2,\dots\}$ is the **commutative subalgebra generated by $\tilde{Q}$**, written $\mathbb{C}[\tilde{Q}]$. Its structure — the minimal polynomial, the two isomorphism types and the convergence of power series — is that of *Biquaternion Spectral Theory*, §*The Commutative Subalgebra Generated by a Single Biquaternion*, and its characteristic polynomial is that of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*. By the Cayley–Hamilton identity of those articles,
+The elementary functions of a single biquaternion are tractable because the powers of one element span a commutative subalgebra. The $\mathbb{C}$-linear span of $\{e_t,\tilde{Q},\tilde{Q}^2,\dots\}$ is the **commutative subalgebra generated by $\tilde{Q}$**, written $\mathbb{C}[\tilde{Q}]$. Its structure — the minimal polynomial, the two isomorphism types and the convergence of power series — is that of *Biquaternion Spectral Theory*, §*The Commutative Subalgebra Generated by a Single Biquaternion*, and its characteristic polynomial is that of *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*. By the Cayley–Hamilton identity of those articles,
 $$
 \tilde{Q}^2-2Q_t\tilde{Q}+\langle\tilde{Q}\rangle_{\natural}e_t=0,
 $$
@@ -104,7 +104,7 @@ $$
 \boxed{\; f(\tilde{Q})=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-,\qquad B\neq0 \;}
 $$
 
-**Proof.** The eigenvalue decomposition gives $\tilde Q^n=\lambda_+^n\tilde\Pi_++\lambda_-^n\tilde\Pi_-$ for every $n\geq0$ (*Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*Powers, Polynomial Calculus, and the Group of Units*). Summing the series termwise, using $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$, gives the display; the rearrangement is legitimate because the series converges absolutely in each eigenvalue.
+**Proof.** The eigenvalue decomposition gives $\tilde Q^n=\lambda_+^n\tilde\Pi_++\lambda_-^n\tilde\Pi_-$ for every $n\geq0$ (*Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*). Summing the series termwise, using $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$, gives the display; the rearrangement is legitimate because the series converges absolutely in each eigenvalue.
 
 The same display is the definition of the biquaternion extension of a function given by an integral, an inverse or another complex formula. In the nilpotent regime the idempotents are absent and the series truncates after the linear term, as computed in §*The Exponential* and §*The Logarithm*. The two regimes are the two isomorphism types of $\mathbb{C}[\tilde{Q}]$.
 
@@ -186,7 +186,7 @@ Because $\exp$ is surjective onto the group of units but not injective (§*The L
 
 **Concrete description.** A biquaternion lies in the kernel exactly when its representing matrix is conjugate to $\mathrm{diag}(2\pi i m, 2\pi i n)$ with $m, n \in \mathbb{Z}$. The kernel is thus an infinite subset of $\mathbb{B}$, not an additive subgroup, since $\exp$ is not a homomorphism. It contains the scalars $2\pi i k\, e_t$ but much more: $\mathrm{diag}(0, 2\pi i)$ also exponentiates to the identity.
 
-**In biquaternion terms.** By *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, the eigenvalues of the matrix representing $\tilde{Q}$ are $\lambda_\pm = Q_t \pm iB$, in the notation of §*The Eigenvalue Data*. So $\exp(\tilde{Q}) = e_t$ exactly when either $\vec Q = 0$ and $\tilde{Q} = Q_t e_t$ is a scalar with $Q_t \in 2\pi i\mathbb{Z}$, or $B \neq 0$ and both $Q_t \pm iB$ lie in $2\pi i\mathbb{Z}$. The second condition is equivalent to
+**In biquaternion terms.** By *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*, the eigenvalues of the matrix representing $\tilde{Q}$ are $\lambda_\pm = Q_t \pm iB$, in the notation of §*The Eigenvalue Data*. So $\exp(\tilde{Q}) = e_t$ exactly when either $\vec Q = 0$ and $\tilde{Q} = Q_t e_t$ is a scalar with $Q_t \in 2\pi i\mathbb{Z}$, or $B \neq 0$ and both $Q_t \pm iB$ lie in $2\pi i\mathbb{Z}$. The second condition is equivalent to
 
 $$
 Q_t = \pi i m, \qquad B = \pi n, \qquad m, n \in \mathbb{Z}, \quad m \equiv n \pmod 2,
@@ -329,7 +329,7 @@ and the scalar part is fixed modulo $\pi i$; equivalently, its imaginary part is
 
 ### The Eigenvalue Formula
 
-The eigenvalue decomposition is that of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*, and is not derived again. Let $\tilde Q$ be a unit with $B\neq0$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$, the pure root is $\vec\Xi=-i\vec U=-i\vec Q/B$, and the eigenprojections are $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$; they are primitive, orthogonal and complete, and satisfy
+The eigenvalue decomposition is that of *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*, and is not derived again. Let $\tilde Q$ be a unit with $B\neq0$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$, the pure root is $\vec\Xi=-i\vec U=-i\vec Q/B$, and the eigenprojections are $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$; they are primitive, orthogonal and complete, and satisfy
 
 $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
@@ -378,7 +378,7 @@ $$
 =\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}+\pi(k_+-k_-).
 $$
 
-The scalar shift is $\pi i(k_++k_-)$ and the vector shift is $\pi(k_+-k_-)\vec U$. With $m=k_++k_-$ and $n=k_+-k_-$ they form the parity-matched lattice of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Lattice of Eigenvalue Data*, which is not the rectangular lattice $2\pi i\mathbb Z e_t\oplus2\pi\mathbb Z\vec U$: the scalar part and the angle cannot be shifted independently.
+The scalar shift is $\pi i(k_++k_-)$ and the vector shift is $\pi(k_+-k_-)\vec U$. With $m=k_++k_-$ and $n=k_+-k_-$ they form the parity-matched lattice derived above, which is not the rectangular lattice $2\pi i\mathbb Z e_t\oplus2\pi\mathbb Z\vec U$: the scalar part and the angle cannot be shifted independently.
 
 **The polar form.** Let $R$ be a square root of $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and let $\Theta$ be a complex number with
 
@@ -1321,7 +1321,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 ## Further Reading
 
-- [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html), for the eigenvalues, the eigenprojections, the pure root $\vec\Xi$ and the parity-matched lattice used in §*The Eigenvalue Formula*.
+- [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), §*The Eigenprojections and the Spectral Resolution*, for the eigenvalues, the eigenprojections and the pure root $\vec\Xi$; §*The Eigenvalue Formula* of this article, for the parity-matched lattice used there.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of the quaternion exponential and logarithm.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the elementary functions of biquaternions.
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the exponential of complexified quaternions.

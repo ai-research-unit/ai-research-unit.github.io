@@ -129,7 +129,7 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 **Proof.** The trace form is non-degenerate on $M_4(\mathbb{C})$, and $\operatorname{Tr}(MN)=\operatorname{Tr}(NM)$ makes it invariant under the adjoint action. For $\mathfrak{u}(n,m)$ the trace form is proportional to the Killing form, whose signature is $(2pq,p^{2}+q^{2})$, which for $p=1,q=3$ is $(6,10)$; this is the same statement as the Cartan decomposition of the previous section.
 
-**Theorem (the Jordan cone).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\mathrm{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* as its cone of squares.
+**Theorem (the Jordan cone).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\mathrm{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra* as its cone of squares.
 
 **Proof.** The anticommutator of two $J$-self-adjoint operators is $J$-self-adjoint, as shown above, and the Jordan axiom follows from associativity of the product in $\mathfrak{g}$. The cone statement is the definition of $\mathcal{P}_{J}$.
 
@@ -169,6 +169,6 @@ The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the three pairings, their isometry groups and their signatures
 - [The Krein Isometry Group and Its J-Contractions](the-krein-isometry-group-and-its-j-contractions.html), for $\mathrm{U}(1,3)$, its maximal compact part and the boosts
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the Krein adjoint of the algebra's families
-- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone inside the Jordan part
+- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone inside the Jordan part
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the complex hyperbolic space as the space of positive lines
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for Cartan involutions, Cartan decompositions and symmetric spaces of non-compact type
