@@ -137,7 +137,7 @@ the insertion being in the first slot and the derived operation being $\tilde Q_
 
 ## The Actions on the Remarkable Subspaces
 
-The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$ (*Introduction to the Remarkable Subspaces*). Each of the two conjugations preserves each of the remarkable subspaces (*Remarkable Subspaces and the Four General Products* §*The four general products have the same value set*), so each action of $e_t$ restricts to each subspace, and the two restrictions are computed below.
+The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$ (*Introduction to the Remarkable Subspaces*). Each of the two conjugations preserves each of the remarkable subspaces (*Remarkable Subspaces and the Four General Products, Forms and Norms* §*The four general products have the same value set*), so each action of $e_t$ restricts to each subspace, and the two restrictions are computed below.
 
 **Theorem (the two actions on the remarkable subspaces).**
 

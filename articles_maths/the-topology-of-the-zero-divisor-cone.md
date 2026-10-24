@@ -2,223 +2,178 @@
 
 ## Introduction
 
-The biquaternion algebra is not a division algebra, and its zero divisors are not scattered through it: they form a cone. This article is the topology of that cone. Nothing below is read from the four forms. The cone is the **singular set** of the algebra, singled out by the failure of invertibility alone, and the only metric input is the topological norm
+The biquaternion algebra is not a division algebra, and its zero divisors are not scattered through it: with the origin adjoined they form the **null cone** $\mathcal C=\{N=0\}$, a complex cone of real dimension six. This article reads the topology of that cone.
+
+The cone is a closed subset of a contractible space, and it is itself a cone, so its own homotopy is trivial. The object that is not trivial is its **link** $L=\mathcal C\cap S^{7}_{E}$, the intersection with the Euclidean unit sphere. The link is a closed connected real $5$-manifold, and it is explicitly
 
 $$
-\|\tilde Q\|_E=\Bigl(\sum_{\mu\in\{t,x,y,z\}}|Q_\mu|^{2}\Bigr)^{1/2}
+\boxed{\; L\cong S^{2}\times S^{3} \;}.
 $$
 
-of the underlying real space $\mathbb{B}\cong\mathbb{R}^8$ (*Topology in the Space of Biquaternions*). That norm is one of the equivalent norms of that space; any equivalent norm gives the same topology, the same singular set and the same link, and it is the only metric input of the article.
+That identification is the result of the article. It also proves that the apex is a genuine singular point: if $0$ were a manifold point of $\mathcal C$, its link would be a $5$-sphere, and $\pi_2(S^{2}\times S^{3})\cong\mathbb{Z}\neq0$.
 
-That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$ of the algebraic norm is a computational convenience and nothing more. The equation describes the cone; it does not equip the space with its topology, which is fixed by the linear structure alone. The algebraic norm itself — its multiplicativity, its real forms and its polarisations — belongs to *Norm Regularity and Degeneracy in the Biquaternion Algebra*, and the zero-divisor set in its own right to *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*. The space with its unique topology is *Topology in the Space of Biquaternions*; the ambient Euclidean structure, the topological unit sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; the complement of the cone, with its group structure and its own topology, is *The Biquaternion Unit Group as a Topological Group*; and the projective geometry of the complex lines the cone contains — the quadric surface, its two rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
+Nothing below is read from the four forms. The cone is selected by the failure of invertibility alone, and the only metric input is the Euclidean norm of the underlying real space (*Topology in the Space of Biquaternions*). The algebraic side — the norm, its multiplicativity, the zero-divisor criterion and the two strata — is *Norm Regularity and Degeneracy in the Biquaternion Algebra*; the ambient Euclidean structure, the sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; and the complement, with its group structure, is *The Biquaternion Unit Group as a Topological Group*.
 
-## The Singular Set
+## The Null Cone and Its Link
 
-**Definition (the singular set).** An element is **singular** if it is nonzero and not invertible. A **zero divisor** is a nonzero $\tilde Q_1$ for which there is a nonzero $\tilde Q_2$ with $\tilde Q_1\tilde Q_2=0$ or $\tilde Q_2\tilde Q_1=0$. For the biquaternion algebra the two notions coincide (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*): a nonzero element is singular exactly when it is a zero divisor. The **singular set** of the algebra is
-
-$$
-\mathcal{N}=\mathcal{Z}\cup\{0\},\qquad \mathcal{Z}=\{\tilde Q\in\mathbb{B}:\tilde Q\neq0\text{ and }\tilde Q\text{ is not invertible}\},
-$$
-
-and $\mathcal{Z}$ is the **zero-divisor cone**. The group of units is its complement, $\mathbb{B}^\times=\mathbb{B}\setminus\mathcal{N}$ (*The Biquaternion Unit Group as a Topological Group*).
-
-The two descriptions agree with the null set of the algebraic norm.
-
-**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The Four Forms and the Four Algebraic Norms*; *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*).
-
-**Proposition (elementary properties).** With the Euclidean topology of the ambient space:
-
-1. $\mathcal{N}$ is **closed**, and $\mathcal{Z}$ is neither open nor closed.
-2. $\mathcal{N}$ has **empty interior**; consequently $\mathbb{B}^\times$ is open and dense in $\mathbb{B}$.
-3. $\mathcal{N}$ is a **real algebraic cone** with apex $0$: if $\tilde Q\in\mathcal{N}$ then $\lambda\tilde Q\in\mathcal{N}$ for every $\lambda\in\mathbb{C}$.
-4. $\mathcal{N}$ has real **dimension $6$**.
-
-*Proof.* (2) $\mathcal{N}$ is the zero set of the nonzero polynomial $\langle\tilde Q,\tilde Q\rangle_{\natural}$ on $\mathbb{C}^4$, so it is a complex hypersurface and has empty interior; the units, its complement, are therefore dense. (1) $\mathbb{B}^\times$ is the preimage of $\mathbb{C}\setminus\{0\}$ under the continuous map $\tilde Q\mapsto\tilde Q\tilde Q^{\natural}$, hence open, so $\mathcal{N}$ is closed. The cone $\mathcal{Z}$ fails to be closed, because the apex lies in its closure but not in it; and it fails to be open, because it is a nonempty subset of $\mathcal{N}$, which has empty interior. (3) $\langle\lambda\tilde Q,\lambda\tilde Q\rangle_{\natural}=\lambda^{2}\langle\tilde Q,\tilde Q\rangle_{\natural}$ by bilinearity, so $\lambda$ carries the null set into itself. (4) The zero set of one polynomial equation in $\mathbb{C}^4$ has complex dimension $3$, hence real dimension $6$.
-
-## The Cone Is Smooth Away from Its Apex
-
-The apex is the only singular point of the cone, and away from it the cone is a manifold.
-
-**Proposition (regularity).** The algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$ is irreducible over $\mathbb{C}$, and its complex gradient
+**Definition (null cone, zero-divisor set).** With $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}$,
 
 $$
-\bigl(2Q_t,2Q_x,2Q_y,2Q_z\bigr)
+\mathcal C=\{\tilde Q\in\mathbb{B}:N(\tilde Q)=0\},\qquad
+\mathcal Z=\mathcal C\setminus\{0\}.
 $$
 
-vanishes only at $\tilde Q=0$. Hence $0$ is the only singular point of $\mathcal{N}$, and the punctured cone
+The set $\mathcal Z$ is the **zero-divisor set**, and $\mathcal C$ is its **null cone**, with apex $0$.
+
+**Proposition (quoted).** $\mathcal C$ is closed, of empty interior and of real dimension $6$; it is a complex cone; and $\mathbb{B}^{\times}=\mathbb{B}\setminus\mathcal C$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*, §*The Zero Divisors*).
+
+**Definition (link).** The **link** of the cone is
 
 $$
-\mathcal{Z}=\mathcal{N}\setminus\{0\}
+L=\mathcal C\cap S^{7}_{E}.
 $$
 
-is a smooth complex $3$-manifold, of real dimension $6$.
+**Proposition (the cone is the cone on its link).** Every $\tilde Q\in\mathcal C\setminus\{0\}$ is uniquely $\tilde Q=t u$ with $t=\|\tilde Q\|_E>0$ and $u\in L$. Hence $\mathcal C$ is the cone on $L$, and it is contractible.
 
-The complex structure of the punctured cone is induced from the ambient $\mathbb{C}^4$ and is analytic; it is read in the analysis of the algebra, which is where the local theory of functions on that manifold is developed.
+*Proof.* The norm is homogeneous, so $u=\tilde Q/\|\tilde Q\|_E$ lies in $L$ and $t=\|\tilde Q\|_E$; the pair is unique because the norm of $tu$ is $t$. The straight-line homotopy $H(s,\tilde Q)=(1-s)\tilde Q$ carries $[0,1]\times\mathcal C$ into $\mathcal C$, fixes the apex and contracts the cone to it.
 
-**Remark (the apex is genuinely singular).** That the apex is not a manifold point is not a defect of the equation: it is a topological fact about the cone, proved by the homotopy invariants of its link in §*The Link of the Cone*. The link of a manifold point is a sphere; the link computed below is not one.
+**Proposition (the punctured cone is smooth).** $0$ is the only singular point of $\mathcal C$; the punctured cone $\mathcal Z$ is a smooth complex $3$-manifold.
 
-## The Contractibility of the Cone
+*Proof.* $N$ is a nondegenerate quadratic form in four variables, hence irreducible over $\mathbb{C}$, and its gradient $2(Q_t,Q_x,Q_y,Q_z)$ vanishes only at $0$. The singular locus of $\{N=0\}$ is therefore $\{0\}$, and the punctured cone is smooth of complex dimension $3$.
 
-The cone is homotopy trivial, like the algebra that surrounds it.
+**Remark (the word singular).** The word *singular* is used in two senses. Geometrically, a singular point of $\mathcal C$ is a point where the hypersurface fails to be a manifold, and the apex is the only one. Algebraically, a singular element is a non-unit, and every point of $\mathcal C$ is one. The apex is both; every other point of the cone is a non-unit but a smooth point.
 
-**Proposition (contractibility).** $\mathcal{N}$ is contractible, being the cone on its link.
+## The Link Is $S^{2}\times S^{3}$
 
-*Proof.* The straight-line homotopy
-
-$$
-\langle s,\tilde Q\rangle_{\natural*}=(1-s)\tilde Q,\qquad (s,\tilde Q)\in[0,1]\times\mathcal{N},
-$$
-
-maps $[0,1]\times\mathcal{N}$ into $\mathcal{N}$, since scaling by a complex number preserves the equation $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, and it contracts $\mathcal{N}$ to the apex. It is continuous, fixes the apex at every $s$, and carries every element to $0$ at $s=1$.
-
-The same homotopy contracts the ambient space $\mathbb{B}$, which is why the cone is homotopy trivial "as well"; but the two statements are different. The ambient contractibility is a statement about $\mathbb{B}$, and it is *The Euclidean Topology of the Biquaternion Algebra*; the contractibility of $\mathcal{N}$ is a statement about a singular subset of $\mathbb{B}$, and it is proved here.
-
-## The Link of the Cone
-
-**Definition (the link).** The **link** of the cone is its intersection with the topological unit sphere $S^7_E=\{\tilde Q:\|\tilde Q\|_E=1\}$,
+**Lemma (spinor factorisation; quoted).** In the coordinates
 
 $$
-L=\mathcal{N}\cap S^7_E=\mathcal{Z}\cap S^7_E.
+Z_0=Q_t-iQ_z,\qquad Z_1=-iQ_x-Q_y,\qquad Z_2=-iQ_x+Q_y,\qquad Z_3=Q_t+iQ_z,
 $$
 
-Every nonzero element of $\mathcal{N}$ is uniquely $t\,u$ with $t=\|\tilde Q\|_E>0$ and $u\in L$, so $\mathcal{N}$ is the cone on $L$ and the link determines the cone.
-
-**Proposition (the link is a $5$-manifold).** $L$ is a closed connected real $5$-manifold, and it is an $S^1$-bundle over the space of complex lines contained in the cone.
-
-*Proof.* In the linear coordinates
-
-$$
-Z_0=Q_t-iQ_3,\quad Z_1=-iQ_1-Q_y,\quad Z_2=-iQ_1+Q_y,\quad Z_3=Q_t+iQ_3
-$$
-
-the algebraic norm is $Z_0Z_3-Z_1Z_2$, and the two norms are related by the identity $|Z|^{2}=2\|\tilde Q\|_E^{2}$, since $|Z_0|^{2}+|Z_3|^{2}=2(|Q_t|^{2}+|Q_z|^{2})$ and $|Z_1|^{2}+|Z_2|^{2}=2(|Q_x|^{2}+|Q_y|^{2})$. A non-zero null element is exactly
+the norm is $N=Z_0Z_3-Z_1Z_2$ and $\lvert Z\rvert^{2}=2\|\tilde Q\|_E^{2}$. A nonzero null element is
 
 $$
 (Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
 $$
 
-for a pair of non-zero vectors $u=(\alpha,\beta)$, $v=(\gamma,\delta)$ of $\mathbb{C}^2$, determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ (*The Null Quadric and Its Projective Geometry*). Normalise $\|u\|=\|v\|=1$; then
+for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ in $\mathbb{C}^{2}$, and the pair $(u,v)$ is determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ with $\lambda\in\mathbb{C}^{\times}$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spinor Factorisation of a Null Element*).
+
+**Theorem.** $L\cong S^{2}\times S^{3}$.
+
+*Proof.* Normalise $\|u\|=\|v\|=1$. Then $\lvert Z\rvert^{2}=2(|\alpha|^{2}+|\beta|^{2})(|\gamma|^{2}+|\delta|^{2})=2$, so $\|\tilde Q\|_E=1$; define
 
 $$
-|Z|^{2}=(|\alpha|^{2}+|\beta|^{2})(|\gamma|^{2}+|\delta|^{2})=1,
+\varphi:S^{3}\times S^{3}\longrightarrow L,\qquad
+\varphi(u,v)=\text{the element with }Z\text{-coordinates }\sqrt2\,(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta).
 $$
 
-so $\|\tilde Q\|_E=1/\sqrt2$. Define
+The map lands in $L$, is surjective by the lemma and the normalisation, and $\varphi(u,v)=\varphi(u',v')$ exactly when $(u',v')=(\lambda u,\lambda^{-1}v)$ with $\lvert\lambda\rvert=1$. Hence $\varphi$ induces a homeomorphism
 
 $$
-\varphi:S^3\times S^3\longrightarrow\mathbb{B},\qquad u,v\longmapsto\text{the element with }Z\text{-coordinates }\sqrt2\,(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta).
+L\cong (S^{3}\times S^{3})/S^{1},
 $$
 
-For $\|u\|=\|v\|=1$ this element is null with $|Z|^{2}=2$, hence $\|\tilde Q\|_E=1$: so $\varphi$ lands in $L$. It is surjective, by the parametrisation together with the normalisation, and $\varphi(u,v)=\varphi(u',v')$ holds exactly when $(u',v')=(\lambda u,\lambda^{-1}v)$ with $|\lambda|=1$. The circle acts freely on $S^3\times S^3$ by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, so $\varphi$ induces a continuous bijection from the compact quotient $(S^3\times S^3)/S^1$ onto the Hausdorff space $L$, hence a homeomorphism. Therefore $L$ is a closed connected real $5$-manifold. Finally the map
+the circle acting freely by $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.
+
+Put $w=\bar v$. Since $\bar\lambda=\lambda^{-1}$ for $\lvert\lambda\rvert=1$, the action becomes the diagonal action $(u,w)\mapsto(\lambda u,\lambda w)$. For a compact group $G$ and a closed subgroup $H$, the map
 
 $$
-q:L\longrightarrow\mathbb{P}(\mathcal{N}),\qquad \varphi(u,v)\longmapsto([u],[v]),
+(G\times G)/H\longrightarrow G\times(G/H),\qquad [g_1,g_2]\longmapsto(g_2^{-1}g_1,[g_2]),
 $$
 
-is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle of pairs $(\exp(i\theta)u_t,\exp(-i\theta)v_0)$; the base is the projectivised cone $\mathbb{P}(\mathcal{N})$, a copy of $\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$ whose geometry — the Segre quadric, its rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
-
-**Proposition (homotopy invariants of the link).** The quotient map $S^3\times S^3\to L$ is a principal $S^1$-bundle, and its long exact homotopy sequence, with $\pi_1(S^3\times S^3)=\pi_2(S^3\times S^3)=0$, gives
+is a homeomorphism: it is continuous and invariant, and its inverse sends $(p,[g_2])$ to the orbit of $(g_2p,g_2)$. With $G=S^{3}$ and $H=S^{1}$,
 
 $$
-\boxed{\; \pi_1(L)=0,\qquad \pi_2(L)\cong\pi_1(S^1)=\mathbb{Z} \;}.
+L\cong S^{3}\times(S^{3}/S^{1})\cong S^{3}\times S^{2}.
 $$
 
-Hence $L$ is simply connected but is **not** homeomorphic to $S^5$, whose $\pi_2$ vanishes.
+**Corollary (homotopy of the link).** $\pi_1(L)=0$, $\pi_2(L)\cong\mathbb{Z}$ and $\pi_3(L)\cong\mathbb{Z}\oplus\mathbb{Z}$; in particular $L$ is not homeomorphic to $S^{5}$.
 
-**Corollary (the apex is a genuine singularity).** The cone is not a topological manifold at its apex. If it were, the link of the apex would be a sphere; the link computed above has $\pi_2\cong\mathbb{Z}$, and no sphere has that homotopy group in degree $2$.
+**Corollary (the apex is genuinely singular).** The cone is not a topological manifold at its apex. If it were, its link would be a $5$-sphere; the link is $S^{2}\times S^{3}$, whose $\pi_2$ is $\mathbb{Z}$, and $\pi_2(S^{5})=0$.
 
-## The Pure Slices and the Sphere of Real Roots of $-1$
+**Remark (the two bundle readings).** The projection $[u,v]\mapsto([u],[v])$ makes $L$ a circle bundle over $\mathbb{P}^{1}\times\mathbb{P}^{1}\cong S^{2}\times S^{2}$, with the relative phase of $u$ and $v$ as fibre; the theorem exhibits the same manifold as $S^{2}\times S^{3}$. The first description is the projectivised cone, the second the product structure.
 
-A biquaternion is **pure** if its complex scalar part vanishes,
+## The Real Slices
 
-$$
-P=\{\tilde Q\in\mathbb{B}:Q_t=0\}=\{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z:Q_k\in\mathbb{C}\}\cong\mathbb{C}^3,
-$$
-
-a contractible real six-dimensional subspace of the algebra.
-
-Complex conjugation splits $P$ into two real three-dimensional subspaces. The real condition $\bar{\tilde Q}=\tilde Q$ gives the **pure real quaternions**
+**Definition (pure subspace and its real slices).** The **pure subspace** is
 
 $$
-P\cap\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{R}^3,
+P=\{\tilde Q\in\mathbb{B}:Q_t=0\}\cong\mathbb{C}^{3},
 $$
 
-and the imaginary condition $\bar{\tilde Q}=-\tilde Q$ gives
+with the two real $3$-planes
 
 $$
-P\cap i\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}\cong\mathbb{R}^3.
+P_+=P\cap\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},\qquad
+P_-=P\cap i\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}.
 $$
 
-Both slices are closed, and both are subspaces of real dimension three inside the eight-dimensional algebra.
+**Proposition (the cone meets a definite plane only at the apex).** $\mathcal C\cap P_+=\{0\}$ and $\mathcal C\cap P_-=\{0\}$.
 
-**Proposition (the cone meets a pure slice only at the apex).** $\mathcal{N}\cap(P\cap\mathbb{H}_{\mathbb{B}})=\{0\}$ and $\mathcal{N}\cap(P\cap i\mathbb{H}_{\mathbb{B}})=\{0\}$.
+*Proof.* On $P_+$ the norm is $q_x^{2}+q_y^{2}+q_z^{2}$, a sum of three squares; on $P_-$ it is $-\bigl((q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}\bigr)$, the negative of one. Each vanishes only at the origin.
 
-*Proof.* Write an element of the first slice as $\tilde Q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with $q_k\in\mathbb{R}$. Its algebraic norm is
+**Remark (what the argument uses).** The planes $P_\pm$ are not subalgebras, and no multiplication is used: $\vec e_x^{2}=-e_t$ leaves $P_+$, and $(i\vec e_x)(i\vec e_y)=-\vec e_z$ leaves $P_-$. What the argument uses is that the norm is **definite** on each plane, positive on $P_+$ and negative on $P_-$; the cone is a complex phenomenon, and a real form that makes the norm definite removes it.
+
+The two planes sit inside the **Lorentzian slices**
+$$
+\mathbb{M}_+=\{Q_t\in\mathbb{R},\ Q_x,Q_y,Q_z\in i\mathbb{R}\},\qquad
+\mathbb{M}_-=\{Q_t\in i\mathbb{R},\ Q_x,Q_y,Q_z\in\mathbb{R}\},
+$$
+the Hermitian and anti-Hermitian subspaces of signatures $(1,3)$ and $(3,1)$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*, §*The Four Algebraic Norms*). Thus $P_-\subset\mathbb{M}_+$ and $P_+\subset\mathbb{M}_-$: each Lorentzian slice contains a definite plane, and the cone meets that plane only at the apex; the rest of the slice carries a genuine null cone.
+
+**Proposition (the Lorentzian link).** On $\mathbb{M}_+$ and $\mathbb{M}_-$ the cone cuts the three-dimensional null cone of the slice, whose link in $S^{7}_{E}$ is $S^{2}\sqcup S^{2}$, one sphere per nappe.
+
+*Proof.* On $\mathbb{M}_+$ write $\tilde Q=a e_t+i\vec p$ with $a\in\mathbb{R}$ and $\vec p\in\mathbb{R}^{3}$. Then $N=a^{2}-\lvert\vec p\rvert^{2}$, so the null cone is $a=\pm\lvert\vec p\rvert$; intersecting it with the unit sphere $a^{2}+\lvert\vec p\rvert^{2}=1$ gives $a=\pm1/\sqrt2$ and $\lvert\vec p\rvert=1/\sqrt2$, that is two copies of $S^{2}$. The slice $\mathbb{M}_-$ is the image of $\mathbb{M}_+$ under multiplication by $i$, and the argument is the same.
+
+**Proposition (the sphere of real roots of $-1$).** The unit sphere of $P_+$ is
 
 $$
-\langle\tilde Q,\tilde Q\rangle_{\natural}=q_x^{2}+q_y^{2}+q_z^{2},
+S^{2}=\{\mu\in P_+:\mu^{2}=-e_t\},
 $$
 
-a sum of three squares, which vanishes only at $\tilde Q=0$; so $\mathcal{N}$ meets the first slice only at the apex. Write an element of the second slice as $\tilde Q=i(q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z)$, again with $q'_k\in\mathbb{R}$. Its algebraic norm is
+the sphere of **real roots of $-1$**; it is compact, connected and simply connected, with $\pi_2(S^{2})\cong\mathbb{Z}$, and it is **not** a group. It is the homogeneous space $Sp(1)/\mathrm{U}(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$ (*Quaternion Geometry*, §*The Hopf Fibration*). Multiplication by $i$ carries it to the unit sphere of $P_-$, the sphere of roots of $+1$ in that slice (*Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of Minus One*).
 
-$$
-\langle\tilde Q,\tilde Q\rangle_{\natural}=-\bigl((q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}\bigr),
-$$
-
-the negative of a sum of three squares, which likewise vanishes only at $\tilde Q=0$.
-
-**Remark (what the argument does and does not use).** The two slices are **not** subalgebras, and no multiplication property is invoked above. Neither is closed under multiplication: $\vec e_x^{2}=-e_t$ leaves the first slice, and $(i\vec e_x)(i\vec e_y)=-\vec e_z$ leaves the second. What makes each slice meet the cone only at the apex is that the algebraic norm restricted to it is **definite** — positive on the first slice, negative on the second.
-
-**Proposition (the sphere of real roots of $-1$).** The unit sphere of the slice $P\cap\mathbb{H}_{\mathbb{B}}$ is
-
-$$
-\boxed{\; S^2=\{\mu\in\mathbb{H}_{\mathbb{B}}:\mu^{2}=-e_t\} \;},
-$$
-
-the sphere of **real roots of $-1$**; it is compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and it is **not** a group. It is a homogeneous space of the unit quaternions and the base of the Hopf fibration $S^3\to S^2$; the sphere of roots of $+1$ in the slice $i\mathbb{H}_{\mathbb{B}}$ is its image under multiplication by the central unit $i$ and is homeomorphic to it.
-
-*Proof.* A real root of $-1$ in the slice is an element $\mu=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with $q_k\in\mathbb{R}$ and $\mu^{2}=-e_t$. Since
-
-$$
-\mu^{2}=-\bigl(q_x^{2}+q_y^{2}+q_z^{2}\bigr)e_t,
-$$
-
-the condition is $q_x^{2}+q_y^{2}+q_z^{2}=1$: the real roots of $-1$ are exactly the unit vectors of the three-dimensional slice, so the set is the ordinary $2$-sphere. Its cell structure gives compactness, connectedness and simple connectedness, and $\pi_2(S^2)\cong\mathbb{Z}$ is standard; conjugation by the unit quaternions acts transitively on it, so it is the homogeneous space $Sp(1)/\mathrm{U}(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$. It is not a group, since the only spheres that carry a continuous group structure are $S^0$, $S^1$ and $S^3$. For the roots of $+1$: if $\mu$ is a root of $-1$ in the slice then $(i\mu)^{2}=i^{2}\mu^{2}=e_t$, and conversely every root of $+1$ in $i\mathbb{H}_{\mathbb{B}}$ is of this form, so the two spheres correspond under multiplication by $i$ and are homeomorphic. The classifications of the roots of $-1$, $0$ and $+1$ are *Square Roots of Minus One, Zero and Plus One in the Biquaternion Algebra*.
-
-The three-dimensional spaces above are the pure real slices. The Lorentzian slices $\mathbb{M}_\pm$ behave differently: their null set is the three-dimensional null cone, treated in the Lorentzian reading of the real slices (*The Null Quadric and Its Projective Geometry*, §*The Real Slices: Lorentzian, Split and Conformal*). The point of the contrast is that the cone of the algebra meets the pure slices only at its apex while it cuts the Lorentzian slices in a genuine three-dimensional cone.
+*Proof.* A real root of $-1$ in $P_+$ is $\mu=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with $\mu^{2}=-(q_x^{2}+q_y^{2}+q_z^{2})e_t$, so the condition is $q_x^{2}+q_y^{2}+q_z^{2}=1$: the unit sphere of $P_+$, which is the ordinary $2$-sphere. The identification with $Sp(1)/\mathrm{U}(1)$ and the Hopf fibration are those of *Quaternion Geometry*. If $\mu\in P_+$ is a root of $-1$, then $(i\mu)^{2}=i^{2}\mu^{2}=e_t$, and conversely every root of $+1$ in $P_-$ is $i\mu$ for such a $\mu$.
 
 ## Summary
 
-- The **singular set** $\mathcal{N}=\mathcal{Z}\cup\{0\}$ of the algebra is the set of non-units together with the origin; it coincides with the null set of the algebraic norm, quoted from *The Four Forms and the Four Algebraic Norms*. It is closed, of empty interior, a real algebraic cone with apex $0$ and real dimension $6$; the group of units is its open and dense complement.
-- The cone is **smooth away from its apex**: the algebraic norm is irreducible with gradient vanishing only at the origin, so $0$ is the only singular point and the punctured cone $\mathcal{Z}$ is a smooth complex $3$-manifold.
-- The cone is **contractible**, contracted to the apex by $\tilde Q\mapsto(1-s)\tilde Q$; the ambient contractibility of $\mathbb{B}$ is a separate statement, owned by *The Euclidean Topology of the Biquaternion Algebra*.
-- The **link** $L=\mathcal{N}\cap S^7_E$ is a closed connected real $5$-manifold, an $S^1$-bundle over the projectivised cone $S^2\times S^2$; it is simply connected with $\pi_2(L)\cong\mathbb{Z}$, and it is not $S^5$, so the apex is genuinely singular.
-- The **pure subspace** $P\cong\mathbb{C}^3$ is contractible. Its two real slices $P\cap\mathbb{H}_{\mathbb{B}}$ and $P\cap i\mathbb{H}_{\mathbb{B}}$ are three-dimensional subspaces, and are **not** subalgebras; the algebraic norm is definite on each — positive on the first and negative on the second — so the cone meets each of them only at the apex. The unit sphere of the first is the sphere of real roots of $-1$, $S^2$, compact, connected and simply connected with $\pi_2(S^2)\cong\mathbb{Z}$, and not a group.
+- The **null cone** $\mathcal C=\{N=0\}$ is closed, of empty interior, of real dimension $6$, and its complement is the group of units $\mathbb{B}^{\times}$; the **zero-divisor set** is $\mathcal Z=\mathcal C\setminus\{0\}$.
+- The apex is the only singular point of $\mathcal C$; the punctured cone $\mathcal Z$ is a smooth complex $3$-manifold.
+- $\mathcal C$ is the cone on its **link** $L=\mathcal C\cap S^{7}_{E}$, hence contractible; the interesting topology is that of $L$.
+- The link is $L\cong S^{2}\times S^{3}$, a closed connected $5$-manifold with $\pi_1=0$, $\pi_2\cong\mathbb{Z}$ and $\pi_3\cong\mathbb{Z}\oplus\mathbb{Z}$; it is not $S^{5}$, so the apex is genuinely singular.
+- The cone meets the definite planes $P_+$ and $P_-$ of the pure subspace only at the apex, while on the Lorentzian slices $\mathbb{M}_\pm$ it cuts a three-dimensional null cone with link $S^{2}\sqcup S^{2}$. The unit sphere of $P_+$ is the sphere of real roots of $-1$, $S^{2}$, the base of the Hopf fibration.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} \cong \mathbb{R}^8$ | Biquaternion algebra as a real topological space; contractible |
-| $\|\tilde Q\|_E = \big(\sum_{\mu\in\{t,x,y,z\}} \lvert Q_\mu\rvert^2\big)^{1/2}$ | Topological norm of the underlying real space; makes $\mathbb{B}$ a topological algebra |
-| $S^7_E = \{\|\tilde Q\|_E = 1\}$ | Euclidean unit sphere; a $7$-manifold, not a group |
-| $\langle\tilde Q,\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$ | Algebraic norm; its null set is the singular set (quoted) |
-| $\mathcal{Z}$ | Zero-divisor cone; nonzero non-invertible elements |
-| $\mathcal{N} = \mathcal{Z} \cup \{0\}$ | Singular set; closed, real dimension $6$, contractible, singular at $0$ |
-| $L = \mathcal{N} \cap S^7_E$ | Link of the cone; closed connected $5$-manifold, $S^1$-bundle over $S^2 \times S^2$ |
-| $\pi_1(L) = 0$, $\pi_2(L) \cong \mathbb{Z}$ | Homotopy of the link; distinguishes it from $S^5$ |
-| $\mathbb{P}(\mathcal{N}) \cong S^2 \times S^2$ | Projectivised cone; its geometry is *The Null Quadric and Its Projective Geometry* |
-| $P = \{Q_t = 0\} \cong \mathbb{C}^3$ | Pure biquaternions; contractible |
-| $P \cap \mathbb{H}_{\mathbb{B}}$, $P \cap i\mathbb{H}_{\mathbb{B}}$ | The two pure real slices, each $\cong \mathbb{R}^3$ |
-| $S^2 = \{\mu \in \mathbb{H}_{\mathbb{B}} : \mu^2 = -e_t\}$ | Sphere of real roots of $-1$ |
-| $\mathbb{B}^\times$ | Group of units; complement of $\mathcal{N}$ |
+| $\mathbb{B}\cong\mathbb{R}^{8}$ | Biquaternion algebra as a real space; contractible |
+| $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$ | Euclidean norm; defines the topology and the unit sphere |
+| $S^{7}_{E}=\{\lVert\tilde Q\rVert_E=1\}$ | Euclidean unit sphere |
+| $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | Algebraic norm; its null set is $\mathcal C$ |
+| $\mathcal C=\{N=0\}$ | Null cone; closed, real dimension $6$, contractible |
+| $\mathcal Z=\mathcal C\setminus\{0\}$ | Zero-divisor set; smooth complex $3$-manifold |
+| $L=\mathcal C\cap S^{7}_{E}$ | Link of the cone; $L\cong S^{2}\times S^{3}$ |
+| $\pi_1(L)=0$, $\pi_2(L)\cong\mathbb{Z}$, $\pi_3(L)\cong\mathbb{Z}\oplus\mathbb{Z}$ | Homotopy of the link |
+| $\mathbb{P}(\mathcal C)\cong S^{2}\times S^{2}$ | Projectivised cone |
+| $P=\{Q_t=0\}\cong\mathbb{C}^{3}$ | Pure subspace |
+| $P_+$, $P_-$ | The definite $3$-planes in $P$; unit spheres $S^{2}$ each |
+| $\mathbb{M}_+$, $\mathbb{M}_-$ | Lorentzian slices, signatures $(1,3)$ and $(3,1)$; links $S^{2}\sqcup S^{2}$ |
+| $\mathbb{B}^{\times}$ | Group of units; complement of $\mathcal C$ |
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853).
-- William Kingdon Clifford, "Preliminary Sketch of Biquaternions", *Proceedings of the London Mathematical Society* **4** (1873) 381–395.
+- [Topology in the Space of Biquaternions](topology-in-the-space-of-biquaternions.html), for the topology and the Euclidean sphere used here
+- [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the ambient Euclidean structure and the contractibility of the algebra
+- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion, the strata and the spinor factorisation
+- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the complement of the cone and its group structure
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the signatures of the Lorentzian slices
+- [Quaternion Geometry](quaternion-geometry.html), for the Hopf fibration and the homogeneous sphere $S^{2}$
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of $-1$ and $+1$
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002).
-- Theodor Bröcker and Tammo tom Dieck, *Representations of Compact Lie Groups* (Springer, Graduate Texts in Mathematics 98, 1985).
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, Graduate Texts in Mathematics 222, 2nd ed. 2015).
-- S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416.
+- Glen E. Bredon, *Topology and Geometry* (Graduate Texts in Mathematics 139, Springer, 1993), for the link of a cone.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).
+- S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401--416.
+- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853).
+- William Kingdon Clifford, "Preliminary Sketch of Biquaternions", *Proceedings of the London Mathematical Society* **4** (1873) 381--395.

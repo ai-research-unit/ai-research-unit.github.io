@@ -4,7 +4,7 @@
 
 The two algebraic norms of *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*, the plain norm $\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2$ and the quaternion norm $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$, are read here on the two **remarkable subspaces** of the quaternion space, the scalar line $\mathbb{R}_{\mathbb{H}}=\{q_te_t\}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})=\{\vec q\}$, the fixed and the anti-fixed space of the quaternion conjugation. On the scalar line the two norms **coincide** and are nonnegative; on the vector subspace they **differ by sign**, the plain norm being nonpositive and the quaternion norm nonnegative. The two subspaces split the whole space for both associated forms, and the **signature table** of the forms the two norms define is $(1,3)$ for the plain norm and $(4,0)$ for the quaternion norm.
 
-The norms are *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*, the article preceding this one; the subspaces are *Introduction to the Remarkable Subspaces of the Quaternions*, in the Linear Spaces group above; the forms on the same subspaces are *Remarkable Subspaces and the Two Forms*, the article preceding this one; and the comparison is *Remarkable Subspaces and the Four Algebraic Norms*.
+The norms are *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*, the article preceding this one; the subspaces are *Introduction to the Remarkable Subspaces of the Quaternions*, in the Linear Spaces group above; the forms on the same subspaces are *Remarkable Subspaces and the Two Forms*, the article preceding this one; and the comparison is *Remarkable Subspaces and the Four General Products, Forms and Norms*.
 
 ## The Two Norms on the Two Subspaces
 

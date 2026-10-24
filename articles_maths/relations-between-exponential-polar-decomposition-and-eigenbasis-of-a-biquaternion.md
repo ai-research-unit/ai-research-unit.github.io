@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A biquaternion carries two decompositions of the same element. The **eigenvalue decomposition** of *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*, writes a biquaternion $\tilde Q=Q_te_t+\vec Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$ as
+A biquaternion carries two decompositions of the same element. The **eigenvalue decomposition** of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, writes a biquaternion $\tilde Q=Q_te_t+\vec Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$ as
 
 $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
@@ -85,7 +85,7 @@ $$
 \vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
-with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*.
+with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*.
 
 | Spectral item | Value |
 |---|---|
@@ -645,7 +645,7 @@ The exponential of $\mathbb{B}$ is not injective. Its kernel is the set of expon
 * in the Jordan case, the logarithm is discrete, one point for each choice of the scalar logarithm;
 * on the zero-divisor and nilpotent boundary there is no logarithm.
 
-These are the statements of *Biquaternion Elementary Functions*, §*The Logarithm* and §*The Domain and the Fibre*, with the eigenprojections of *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*.
+These are the statements of *Biquaternion Elementary Functions*, §*The Logarithm* and §*The Domain and the Fibre*, with the eigenprojections of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*.
 
 ### The Polar Word Is Not a Logarithm
 
@@ -911,7 +911,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the eight cases, the reconstruction and logarithm tables, and the null cone.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the Q-adapted basis, with the nilpotents and the spinors.
-- [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), §*The Biquaternion Spectrum* and §*The Eigenprojections and the Spectral Resolution*, for the spectrum and the eigenprojections.
+- [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* and §*The Eigenprojectors*, for the spectrum and the eigenprojections.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Two Cases* and §*The Degenerate Case*, for the degenerate regimes.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four-factor word, the Cartan decomposition, existence and uniqueness, the group law and the boundary.

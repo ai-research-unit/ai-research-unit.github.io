@@ -167,9 +167,9 @@ The definite spectral theorem has no direct analogue, and the reason is the inde
 
 **Remark.** The involutions $\alpha$ and $\rho$ of *Split-Quaternion Subspaces and the Involutions* have larger fixed spaces, $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$, and the indefinite form makes neither of them a positive-definite Hermitian structure; a genuine spectral theorem in the sense of Hilbert space theory requires a definite form, which $\mathbb{H}_{\mathrm{s}}$ does not carry. What replaces it is the direct-sum (Peirce) decomposition of *Split-Quaternion Ideals and Peirce Decomposition*, which is a decomposition tailored to an idempotent rather than to a Hermitian element.
 
-## Relation to the Biquaternion Spectral Theory
+## Relation to the Biquaternion Case
 
-The biquaternion article *Biquaternion Spectral Theory* takes the spectrum of $\tilde Q = \sum_\mu Q_\mu e_\mu \in \mathbb{B} = M_2(\mathbb{C})$ over $\mathbb{C}$, with trace $2Q_t$ and determinant $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, and eigenvalues
+The biquaternion article *The Biquaternion Eigenvalue Decomposition* takes the spectrum of $\tilde Q = \sum_\mu Q_\mu e_\mu \in \mathbb{B} = M_2(\mathbb{C})$ over $\mathbb{C}$, with trace $2Q_t$ and determinant $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, and eigenvalues
 
 $$
 \lambda_\pm = Q_t \pm iB, \qquad B = \sqrt{Q_x^2+Q_y^2+Q_z^2},

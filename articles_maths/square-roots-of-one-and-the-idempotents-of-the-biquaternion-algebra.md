@@ -38,7 +38,7 @@ The following table collects the results at a glance.
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, which is *Square Roots of a General Element in the Biquaternion Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the structure of the zero-divisor set, which is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; or the ideals the standard idempotents generate, which are *Ideals and Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
 $$
-(\vec Q_1,\vec Q_2)=\sum_{k=1}^{3}Q_{1k}Q_{2k},
+(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
 $$
 
 and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde Q$.
@@ -131,7 +131,7 @@ a **two-real-parameter family**: three real coefficients of $\vec u$ carrying th
 Let now the vector part be genuinely complex, $\vec\Xi=\vec\xi+i\vec\xi'$ with $\vec\xi,\vec\xi'$ real pure. Then
 
 $$
-(\vec\Xi,\vec\Xi)=\sum_{k=1}^{3}(\xi_k+i\xi'_k)^2=\bigl(\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2\bigr)+2i\bigl(\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z\bigr),
+(\vec\Xi,\vec\Xi)=\sum_k(\xi_k+i\xi'_k)^2=\bigl(\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2\bigr)+2i\bigl(\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z\bigr),
 $$
 
 so the single complex equation $(\vec\Xi,\vec\Xi)=-1$ is the two real equations
@@ -477,7 +477,7 @@ $$
 Put $\tilde\Xi=2\vec\Pi$. Then $\tilde\Xi$ is pure and
 
 $$
-(\tilde\Xi,\tilde\Xi)=\sum_{k=1}^{3}(2\Pi_k)^2=4(\vec\Pi,\vec\Pi)=-1,
+(\tilde\Xi,\tilde\Xi)=\sum_k(2\Pi_k)^2=4(\vec\Pi,\vec\Pi)=-1,
 $$
 
 so $\tilde\Xi^2=-(\tilde\Xi,\tilde\Xi)e_t=e_t$: the element $\tilde\Xi$ is a root of $+1$, and $\vec\Pi=\tilde\Xi/2$, whence $\tilde\Pi=\tfrac12 e_t+\tfrac12\tilde\Xi$. The other member of the pair is obtained by replacing $\tilde\Xi$ by $-\tilde\Xi$, which is again a root of $+1$.
@@ -547,7 +547,7 @@ The idempotents fall into the three following families.
 | Non-trivial Hermitian idempotents | $\tfrac12(e_t\pm i\vec u)$, with $\vec u$ a real unit vector | two | two-parameter family | $\mathbb{M}_+$ | yes |
 | Non-Hermitian idempotents | $\tfrac12(e_t+\vec\xi+i\vec\xi')$, with $\vec\xi\neq0$ and the two real conditions | four | four-parameter family | none of the four four-dimensional subspaces | no |
 
-Since $i\vec u$ is Hermitian for a real unit vector $\vec u$ with $\vec u^2=-e_t$, these are the non-trivial Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{M}_+$. They are the spectral idempotents of the spectral theorem for a Hermitian element, treated in *Biquaternion Spectral Theory*. A Hermitian idempotent is self-adjoint, orthogonality being read from the Hermitian form of *The Four Forms and the Four Algebraic Norms*. For the non-Hermitian root the vector part $\tfrac12(\vec\xi+i\vec\xi')$ carries both a nonzero real part $\vec\xi$ and a nonzero imaginary part $\vec\xi'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of non-trivial Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being a unit.
+Since $i\vec u$ is Hermitian for a real unit vector $\vec u$ with $\vec u^2=-e_t$, these are the non-trivial Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{M}_+$. They are the spectral idempotents of the spectral theorem for a Hermitian element, treated in *The Biquaternion Eigenvalue Decomposition*. A Hermitian idempotent is self-adjoint, orthogonality being read from the Hermitian form of *The Four Forms and the Four Algebraic Norms*. For the non-Hermitian root the vector part $\tfrac12(\vec\xi+i\vec\xi')$ carries both a nonzero real part $\vec\xi$ and a nonzero imaginary part $\vec\xi'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of non-trivial Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being a unit.
 
 ### Idempotents and Their Projectors
 

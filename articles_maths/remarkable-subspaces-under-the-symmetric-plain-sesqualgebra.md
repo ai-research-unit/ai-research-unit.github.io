@@ -121,4 +121,4 @@ Under the product of the symmetric plain sesqualgebra every value is central, an
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces and their definitions.
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the relations between them.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the forms restricted to the remarkable real subspaces.
-- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the closure of the remarkable subspaces under the four general products of the space.
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the closure of the remarkable subspaces under the four general products of the space.

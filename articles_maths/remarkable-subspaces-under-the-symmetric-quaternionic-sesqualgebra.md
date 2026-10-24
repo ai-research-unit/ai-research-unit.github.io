@@ -11,7 +11,7 @@ into the real quaternion subspace, and the anti-Hermitian subspace into the Herm
 a general pair, by contrast, are not confined to any subspace of the remarkable subspaces: their smallest
 real span is the whole algebra.
 
-The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *Introduction to the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix of the Biquaternion Algebra*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *Introduction to the Symmetric Quaternionic Sesqualgebra* and *The Krein Norm of the Biquaternion Algebra*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 ## The Product Rule on Each Subspace
 
@@ -193,7 +193,7 @@ The product of the block is read on the remarkable subspaces by the single rule 
 
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and its scalar–vector form.
 - [The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra](the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html), for the diagonal, the idempotents and the square-zero elements on the closed subspaces.
-- [The Krein Gram Matrix of the Biquaternion Algebra](the-krein-gram-matrix-of-the-biquaternion-algebra.html), for the form $K$ and its Gram matrices.
+- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form $K$ and its Gram matrices.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the definition and the comparison of the remarkable subspaces.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the same remarkable subspaces under the general product.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the comparison of the closure patterns of the twelve operations.

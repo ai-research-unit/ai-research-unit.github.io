@@ -111,7 +111,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
 - [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html)
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html)
-- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html)
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html)
@@ -122,9 +122,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html)
 - [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html)
 - [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html)
-- [Remarkable Subspaces and the Four General Products](../articles_maths/remarkable-subspaces-and-the-four-general-products.html)
-- [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html)
-- [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html)
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html)
 
 #### Biquaternions Standard Element Representations
 
@@ -156,9 +154,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### The Krein Form
 
-- [The Fundamental Symmetry of the Biquaternion Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html)
-- [The Krein Gram Matrix of the Biquaternion Algebra](../articles_maths/the-krein-gram-matrix-of-the-biquaternion-algebra.html)
-- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](../articles_maths/krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html)
+- [The Krein Norm of the Biquaternion Algebra](../articles_maths/the-krein-norm-of-the-biquaternion-algebra.html)
 
 ### Topology
 
@@ -170,19 +166,15 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html)
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html)
-- [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html)
+- [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html)
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html)
-
-#### Metrics of the Biquaternion Algebra
-
-- [Topology and Metric for Each of the Twelve Operations](../articles_maths/topology-and-metric-for-each-of-the-twelve-operations.html)
 
 ### Analysis
 
 - [Biquaternion Analysis](../articles_maths/biquaternion-analysis.html)
 - [The Differential Operators, the Products, the Forms and the D'Alembertian](../articles_maths/the-differential-operators-the-products-the-forms-and-the-d-alembertian.html)
 - [Biquaternion Regular Functions](../articles_maths/biquaternion-regular-functions.html)
-- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html)
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html)
 - [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html)
 - [Biquaternion Integration](../articles_maths/biquaternion-integration.html)
 - [Remarkable Subspaces and the Analysis](../articles_maths/remarkable-subspaces-and-the-analysis.html)
@@ -208,11 +200,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html)
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html)
 - [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html)
-- [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html)
-- [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html)
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html)
-- [The Krein Isometry Group and Its J-Contractions](../articles_maths/the-krein-isometry-group-and-its-j-contractions.html)
-- [The Krein Cartan Decomposition of the Operator Algebra](../articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.html)
+- [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html)
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html)
 
 #### Fractal Geometry
@@ -230,7 +219,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 ### Representation Theory
 
-- [Biquaternion Representations and the Lorentz Group](../articles_maths/biquaternion-representations-and-the-lorentz-group.html)
+- [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html)
 
 ## What the Index Is For
 

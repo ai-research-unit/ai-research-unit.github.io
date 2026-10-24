@@ -84,13 +84,7 @@ $$
 \boxed{\; \lVert\tilde{Q}_1\tilde{Q}_2\rVert\leq\sqrt{2}\,\lVert\tilde{Q}_1\rVert\,\lVert\tilde{Q}_2\rVert \;}.
 $$
 
-**Proof.** Under the $2\times2$ realization $\mathsf{M}_2$ of *The Matrix Element Representation and the Biquaternion Dynamics*, one has $\mathsf{M}_2(\tilde{Q}_1\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)$ and $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$, with $\lVert\cdot\rVert_F$ the Frobenius norm. Frobenius norm is submultiplicative, so
-
-$$
-\lVert\tilde{Q}_1\tilde{Q}_2\rVert=\tfrac{1}{\sqrt2}\lVert\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)\rVert_F
-\leq\tfrac{1}{\sqrt2}\lVert\mathsf{M}_2(\tilde{Q}_1)\rVert_F\lVert\mathsf{M}_2(\tilde{Q}_2)\rVert_F
-=\sqrt2\,\lVert\tilde{Q}_1\rVert\lVert\tilde{Q}_2\rVert .
-$$
+**Proof.** The estimate is the sharp normed-algebra inequality of *The Euclidean Topology of the Biquaternion Algebra*, §*The Algebra as a Normed Algebra*, where it is proved from $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$ and the submultiplicativity of the Frobenius norm.
 
 **Corollary.** The product is continuous, and addition and scalar multiplication are continuous, so $\mathbb{B}$ is a **topological algebra**. The rescaled norm $\sqrt2\,\lVert\cdot\rVert$ is submultiplicative, so with that norm $\mathbb{B}$ is a **normed algebra**, and being finite-dimensional it is complete, hence a **Banach algebra** (*Topological Algebras and Banach Algebras*). The group $\mathbb{B}^{\times}$ of invertible elements is open in the topology and inversion is continuous on it.
 

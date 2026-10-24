@@ -17,7 +17,7 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the minimal ideals the nilpotents generate are *Ideals and Peirce Decompositions of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 $$
-(\vec Q_1,\vec Q_2)=\sum_{k=1}^{3}Q_{1k}Q_{2k},
+(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
 $$
 
 and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The **central square** is
@@ -28,7 +28,7 @@ $$
 
 The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *The Four General Products and Their Relations*.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 ## The Roots of Zero
 
@@ -89,7 +89,7 @@ $$
 Then
 
 $$
-(\vec\Xi,\vec\Xi)=\sum_{k=1}^{3}(\xi_k+i\xi'_k)^2=\bigl(\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2\bigr)+2i\bigl(\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z\bigr),
+(\vec\Xi,\vec\Xi)=\sum_k(\xi_k+i\xi'_k)^2=\bigl(\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2\bigr)+2i\bigl(\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z\bigr),
 $$
 
 so the single complex equation $(\vec\Xi,\vec\Xi)=0$ is the two real equations
@@ -187,7 +187,7 @@ The criterion separates the class sharply: the nilpotents are the elements of th
 The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. The vector part of a nilpotent is a complex vector $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$, and its coefficients split into a real and an imaginary part, $Q_{1k}=p_k+ip'_k$ with real $p_k,p'_k$, so that the vector part splits into two real vector parts carrying the central imaginary on the second,
 
 $$
-\vec Q_1=\vec p+i\vec p',\qquad \vec p=\sum_{k=1}^{3}p_k\vec e_k,\qquad \vec p'=\sum_{k=1}^{3}p'_k\vec e_k .
+\vec Q_1=\vec p+i\vec p',\qquad \vec p=\sum_kp_k\vec e_k,\qquad \vec p'=\sum_kp'_k\vec e_k .
 $$
 
 The single complex equation $(\vec Q_1,\vec Q_1)=Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$ is then the two real equations
@@ -365,6 +365,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 - [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $0$ here are one case.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$, the minimal ideals they generate and the Peirce basis.
+- [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same problem read in all twelve products.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the isomorphism $\mathsf M_2$, the trace and determinant, and the triangular Jordan form.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same class read against the four general products, where only the plain product has this square-zero set.

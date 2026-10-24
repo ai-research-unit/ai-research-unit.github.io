@@ -86,13 +86,13 @@ The four forms are the scalar parts of the four general products, and the eight 
 
 **Lemma.** For a general product $f$ with parts $f^{\mathrm s}$ and $f^{\mathrm a}$, $\mathrm{Sc}\,f^{\mathrm s}=\mathrm{Sc}\,f$ and $\mathrm{Sc}\,f^{\mathrm a}=0$.
 
-*Proof.* For the two bilinear families $\mathrm{Sc}$ is commutative, so the half-sum equals $\mathrm{Sc}\,f$ and the half-difference vanishes. For the two sesquilinear families the exchange conjugates the value, $\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)=\overline{\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)}$, and the half-sum and the half-difference give the same result.
+*Proof.* For the two bilinear families $\mathrm{Sc}$ is commutative, so the half-sum equals $\mathrm{Sc}\,f$ and the half-difference vanishes. For the two sesquilinear families the exchange is the conjugate transpose, and the value it pairs with $f(\tilde Q_1,\tilde Q_2)$ has the same scalar part, $\mathrm{Sc}\,\overline{f(\tilde Q_2,\tilde Q_1)}=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$; the half-sum therefore keeps the scalar part and the half-difference kills it.
 
 **Proposition.** The twelve operations carry exactly four non-zero forms, each shared by a general product and its symmetric part: $\langle\cdot,\cdot\rangle$ on $\mathrm{GPA}$ and $\mathrm{SPA}$, $\langle\cdot,\cdot\rangle_{*}$ on $\mathrm{GPS}$ and $\mathrm{SPS}$, $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathrm{GQA}$ and $\mathrm{SQA}$, and $\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathrm{GQS}$ and $\mathrm{SQS}$; the four antisymmetric operations carry the zero form.
 
 *Proof.* The lemma gives the first clause. The four are distinct: at $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ they take the four different values $-(1+i)$, $1-i$, $1+i$ and $-(1-i)$.
 
-**Remark.** The zero form is not counted as a fifth: $\vec Q_1\times\vec Q_2$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating parts of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$.
+**Remark.** The zero form is not counted as a fifth: the four antisymmetric operations have zero scalar part and their values lie in the vector subspace, so the form they carry is the zero form. The alternating parts of the two Hermitian forms are not scalar parts of these operations; they are read in *Remarkable Subspaces and the Four General Products, Forms and Norms*, §*The Alternating Forms on the Whole Space*.
 
 ## The Isometry Groups of the Four Forms
 
@@ -199,7 +199,7 @@ $$
 
 which are four different pairs.
 
-**Remark (a vanishing form carries no algebraic norm).** The four antisymmetric operations have the zero algebraic norm because their scalar part is identically zero — $\vec Q_1\times\vec Q_2$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating forms of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the four operations are counted with no algebraic norm rather than with a zero one.
+**Remark (a vanishing form carries no algebraic norm).** The four antisymmetric operations have the zero algebraic norm because their scalar part is identically zero and every value lies in the vector subspace. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the four operations are counted with no algebraic norm rather than with a zero one.
 
 
 ## The Four Algebraic Norms
@@ -233,7 +233,7 @@ $$
 
 the general plain sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $\langle\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the topological norm, $\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert_E^{2}$.
 
-The algebraic norm is definite, and it is the one of the four whose square root is the topological norm: $\lVert\tilde Q\rVert_E$ is the unique topological norm of the real vector space $\mathbb{B}\cong\mathbb{R}^{8}$, up to equivalence, and it is the topological norm under which every one of the twelve operations is read in *Topology and Metric for Each of the Twelve Operations*. It is not multiplicative.
+The algebraic norm is definite, and it is the one of the four whose square root is the topological norm: $\lVert\tilde Q\rVert_E$ is the unique topological norm of the real vector space $\mathbb{B}\cong\mathbb{R}^{8}$, up to equivalence, and it is the topological norm of *Topology in the Space of Biquaternions*. It is not multiplicative.
 
 ### The General Quaternionic Bilinear Algebraic Norm
 
@@ -289,7 +289,7 @@ The table separates the four by the field of their values, by the Gram matrix an
 
 **Remark (the two senses of *norm*).** Two different things carry the name. The **algebraic norm** of this article is a map into the ring — $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ into $\mathbb{C}$, $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ into $\mathbb{R}$ — and it is algebra: algebraic norms, quadratic forms, polarisations, zero divisors. The **topological norm** is the one selection of positive real values, $\lVert\tilde Q\rVert_E=\bigl(\langle\tilde Q\rangle_{*}\bigr)^{1/2}$, and it is topology: distance, balls, convergence, completeness. Only $\langle\cdot\rangle_{*}$ of the four yields it, because only $\langle\cdot\rangle_{*}$ is real and definite; $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ are complex-valued, and $\langle\cdot\rangle_{\natural*}$ is real but indefinite. The two senses are the two layers of *Introduction to Mathematics*, and no third function holds them together.
 
-**Remark (the four collapse to two on real elements).** For real $\tilde Q_1,\tilde Q_2$ the coefficientwise conjugation is the identity, so $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,\tilde Q_2\rangle$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$. On the real part of the space the four algebraic norms are the two, $\langle\cdot\rangle=\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{*}$, and the four operations of the two bilinear rows and of the two sesquilinear rows coincide there. This is the real-form caution of *Symmetric and Antisymmetric Decomposition of the Four General Products* read at the two equal arguments: a computation restricted to real elements sees two algebraic norms and hides the other two. On the remarkable real subspaces the four algebraic norms restrict to the two real forms in the same way, and the restrictions, their signatures and the definiteness of each on each are the subject of *Remarkable Subspaces and the Four Algebraic Norms*.
+**Remark (the four collapse to two on real elements).** For real $\tilde Q_1,\tilde Q_2$ the coefficientwise conjugation is the identity, so $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,\tilde Q_2\rangle$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$. On the real part of the space the four algebraic norms are the two, $\langle\cdot\rangle=\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{*}$, and the four operations of the two bilinear rows and of the two sesquilinear rows coincide there. This is the real-form caution of *Symmetric and Antisymmetric Decomposition of the Four General Products* read at the two equal arguments: a computation restricted to real elements sees two algebraic norms and hides the other two. On the remarkable real subspaces the four algebraic norms restrict to the two real forms in the same way, and the restrictions, their signatures and the definiteness of each on each are the subject of *Remarkable Subspaces and the Four General Products, Forms and Norms*.
 
 
 ## Summary
@@ -332,8 +332,7 @@ Read at their two equal arguments, the four forms give the four algebraic norms 
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations that index the four forms and the group they form.
 - [Introduction to the Operators of the Biquaternion Algebra](the-four-general-products-and-operators.html) and [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the four adjoints of a left multiplication under the four forms.
 - [Bilinear Forms](bilinear-forms.html), [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), [Hermitian Forms and Unitary Geometry](hermitian-forms-and-unitary-geometry.html) and [Matrix Groups and Classical Groups](matrix-groups-and-classical-groups.html), for the general theory of a bilinear or sesquilinear form, its Gram matrix, its hyperbolic decomposition and the classical group that preserves it.
-- [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html), for the four forms read on the remarkable subspaces.
-- [Remarkable Subspaces and the Four Algebraic Norms](remarkable-subspaces-and-the-four-algebraic-norms.html), for the restriction of the four algebraic norms to the remarkable subspaces.
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four forms read on the remarkable subspaces and the restriction of the four algebraic norms to them.
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative algebraic norm, the zero divisors and the criterion of invertibility.
-- [Topology and Metric for Each of the Twelve Operations](topology-and-metric-for-each-of-the-twelve-operations.html), for the one topology and the one Euclidean norm of the space.
+- [Topology in the Space of Biquaternions](topology-in-the-space-of-biquaternions.html), for the one topology of the space, and [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the Euclidean norm.
 - [The Norm Defined by a Form](the-norm-defined-by-a-form.html), [Hermitian Forms over Algebras and Norms](hermitian-forms-over-algebras-and-norms.html) and [Introduction to Mathematics](introduction-to-mathematics.html), for the distinction between the algebraic norm and the topological norm.

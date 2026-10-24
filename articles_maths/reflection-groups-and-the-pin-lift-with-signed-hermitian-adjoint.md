@@ -20,7 +20,7 @@ in agreement with the general vector proposition of *Two-Sided Operators on a He
 
 Two things follow and are developed below. The first is that the Clifford lift is a subgroup of the unitary slice and of the Hermitian Clifford group, $\Gamma_\Phi\subseteq U\cap\Gamma_{\dagger}$, so it is a group to which the Hermitian sandwich restricts as an action by isometries, and the cover $\Gamma_\Phi\to W_\Phi$ is two-to-one with kernel $\{\pm1\}$. The second is that the even part is the lift of the rotation subgroup, of order $|W_\Phi|$, and the examples reproduce the classical binary polyhedral groups and the Hurwitz units.
 
-The root systems, the reflection groups and the Clifford lift are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation*; the pin group, the norm and the double cover are *The Pin and Spin Groups with Signed Hermitian Adjoint*; the operator and the vector formula are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the Hurwitz units and the 24-cell are *Biquaternion Orders and Finite Groups of Units*. Nothing owned by those entries is reproved.
+The root systems, the reflection groups and the Clifford lift are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation*; the pin group, the norm and the double cover are *The Pin and Spin Groups with Signed Hermitian Adjoint*; the operator and the vector formula are *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; the slice is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the Hurwitz units and the 24-cell are *Quaternion Orders and Finite Groups of Units*. Nothing owned by those entries is reproved.
 
 ## Reflection Groups and Their Roots
 
@@ -118,7 +118,7 @@ $$
 \Gamma_{A_3}=\langle a_\alpha\rangle\subseteq\mathrm{Pin}
 $$
 
-has order $48$, the binary octahedral group, and its even part has order $24$, the binary tetrahedral group, the group of Hurwitz units up to sign. The signed Hermitian sandwich of the product of two normalised roots is the rotation by twice the angle between them, and the Cayley graph of the lift is the 24-cell, as recorded for the inverse formulation. The dictionary with the biquaternion algebra, where the same units appear in the physics corpus, is *Biquaternion Orders and Finite Groups of Units*.
+has order $48$, the binary octahedral group, and its even part has order $24$, the binary tetrahedral group, the group of Hurwitz units up to sign. The signed Hermitian sandwich of the product of two normalised roots is the rotation by twice the angle between them, and the Cayley graph of the lift is the 24-cell, as recorded for the inverse formulation. The dictionary with the biquaternion algebra, where the same units appear in the physics corpus, is *Quaternion Orders and Finite Groups of Units*.
 
 ### The Other Polyhedral Cases
 

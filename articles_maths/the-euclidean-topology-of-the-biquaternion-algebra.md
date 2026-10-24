@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension eight, and its topology is the one its linear structure forces; every topological statement of the corpus is made in that topology. This article develops the Euclidean structure of that space: the linear isometry onto $\mathbb{R}^{8}$ and the flat Riemannian metric; the norm, which is the one that defines the topology; the normed-algebra inequality with its sharp constant; the contractibility of the algebra and of its remarkable subspaces; and the Euclidean unit sphere $S^{7}_{E}$, which is a genuine sphere but is not a group and contains zero divisors.
+The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension eight, and its topology is the one its linear structure forces; every topological statement of the corpus is made in that topology. The topology and the Euclidean metric belong to the space and not to any product: there is one of each, and no product carries a metric of its own. This article develops the Euclidean structure of that space: the linear isometry onto $\mathbb{R}^{8}$ and the flat Riemannian metric; the norm, which is the one that defines the topology; the normed-algebra inequality with its sharp constant; the contractibility of the algebra and of its remarkable subspaces; and the Euclidean unit sphere $S^{7}_{E}$, which is a genuine sphere but is not a group and contains zero divisors.
 
-The topology itself — the definitions, the equivalence of norms and the uniqueness of the topology in finite dimension — is built in *Topology in the Space of Biquaternions*. The group of units as a topological group is *The Biquaternion Unit Group as a Topological Group*; the zero divisors, the singular cone and its projective geometry are *The Null Quadric and Its Projective Geometry*; and the matrix reading of the Euclidean norm is *The Matrix Element Representation and the Biquaternion Dynamics*.
+The topology itself — the definitions, the equivalence of norms and the uniqueness of the topology in finite dimension — is built in *Topology in the Space of Biquaternions*. The group of units as a topological group is *The Biquaternion Unit Group as a Topological Group*; the zero divisors and the null cone are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, and the topology of the cone is *The Topology of the Zero-Divisor Cone*; and the matrix reading of the Euclidean norm is *The Matrix Element Representation and the Biquaternion Dynamics*.
 
 ## The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$
 
@@ -80,7 +80,7 @@ $$
 
 **Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *Comparison of the Remarkable Subspaces*.
 
-**Corollary.** Every map into $\mathbb{B}$ is null-homotopic, and $\mathbb{B}$ carries no topological obstruction of its own; the topology of the algebra is entirely the topology of its distinguished subsets — the unit group, the singular cone and the spheres.
+**Corollary.** Every map into $\mathbb{B}$ is null-homotopic, and $\mathbb{B}$ carries no topological obstruction of its own; the topology of the algebra is entirely the topology of its distinguished subsets — the unit group, the null cone and the spheres.
 
 **Proof.** Immediate from the theorem.
 
@@ -100,9 +100,9 @@ $$
 
 and $\tilde{Q}_0$ is a zero divisor. Hence $S^{7}_{E}\not\subseteq\mathbb{B}^{\times}$ and $S^{7}_{E}$ is not a subgroup of $\mathbb{B}^{\times}$.
 
-**Proposition (the sphere meets the singular cone in a compact $5$-manifold).** The intersection $S^{7}_{E}\cap\mathcal{N}$, with $\mathcal{N}$ the set of zero divisors, is a compact real $5$-manifold without boundary, homeomorphic to the link of that cone.
+**Proposition (the sphere meets the null cone in a compact $5$-manifold).** The intersection $S^{7}_{E}\cap\mathcal C$, with $\mathcal C$ the null cone, is a compact real $5$-manifold without boundary, the link of the cone; it is homeomorphic to $S^{2}\times S^{3}$ (*The Topology of the Zero-Divisor Cone*).
 
-**Proof.** The set of zero divisors is a real algebraic cone of real dimension $6$ with its only singular point at the origin (*The Topology of the Zero-Divisor Cone*); intersecting the smooth part with the transverse unit sphere and removing the origin gives a compact smooth manifold of dimension $6-1=5$, and it is the link by definition (*The Topology of the Zero-Divisor Cone*).
+**Proof.** The null cone is a real algebraic cone of real dimension $6$ with its only singular point at the origin (*The Topology of the Zero-Divisor Cone*); intersecting the smooth part with the transverse unit sphere and removing the origin gives a compact smooth manifold of dimension $6-1=5$, the link. The identification of the link with $S^{2}\times S^{3}$ is the theorem of *The Topology of the Zero-Divisor Cone*.
 
 **Remark (the one sphere the topological norm defines).** The Euclidean sphere $S^{7}_{E}$ is the only sphere the topological norm of the space defines. The level sets of the algebra that carry a group structure — the compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of the unitary elements and the group developed in *The Biquaternion Unit Group as a Topological Group* — are not level sets of the topological norm, and their topology is proved in *The Unitary Group of the Biquaternion Algebra*.
 
@@ -116,7 +116,7 @@ The real inner product $(\cdot,\cdot)_{\mathbb{R}}$ makes $\mathbb{B}$ a Euclide
 
 ## Summary
 
-The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$, and central multipliers, the conjugations and inner conjugations by unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the singular cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
+The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$, and central multipliers, the conjugations and inner conjugations by unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
 
 ## Summary of Notation
 
@@ -128,7 +128,7 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 | $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$ | Normed-algebra inequality, sharp |
 | $H(t,\tilde{Q})=(1-t)\tilde{Q}$ | Contraction of $\mathbb{B}$ to $0$ |
 | $S^{7}_{E}=\{\|\tilde{Q}\|_E=1\}$ | Euclidean unit sphere; not a group |
-| $S^{7}_{E}\cap\mathcal{N}$ | Compact $5$-manifold; the link of the singular cone |
+| $S^{7}_{E}\cap\mathcal C$ | Compact $5$-manifold, the link; homeomorphic to $S^{2}\times S^{3}$ |
 | $O(8)$ | Isometry group of the Euclidean structure |
 
 ## Further Reading

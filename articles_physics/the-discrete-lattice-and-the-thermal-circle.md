@@ -5,7 +5,7 @@
 The corpus has two disciplines of discreteness, and they have never been compared. The **algebraic**
 discipline is the discrete lattice: the integral structures of the algebra, the Lipschitz and Hurwitz orders,
 and the finite groups of units attached to them — the quaternion group of order eight, the binary tetrahedral
-group of order twenty-four and the binary polyhedral groups — all owned by *Biquaternion Orders and Finite
+group of order twenty-four and the binary polyhedral groups — all owned by *Quaternion Orders and Finite
 Groups of Units*. The **analytic** discipline is the thermal circle: the imaginary-time compactification and
 the discrete Matsubara frequencies, owned by *The Matsubara Thermal Formalism in Biquaternionic Form*. The lattice is
 static and algebraic, the circle is thermal and analytic, and this article states the one principle that
@@ -35,7 +35,7 @@ that bridge them:
 | the central phase $\mathrm{U}(1)$ | the integer phase winding | the discrete charge label (*Particle Types*) |
 | the internal group $\mathrm{U}(2)$, compact | its irreducible labels | internal quantum numbers, the discrete charge |
 | the thermal circle, circumference $\beta$ | the Matsubara frequencies $\omega_n=2\pi n/\beta$ | the thermal spectrum (*The Matsubara Formalism*) |
-| the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite unit groups and the discrete lattice (*Biquaternion Orders and Finite Groups of Units*) |
+| the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite unit groups and the discrete lattice (*Quaternion Orders and Finite Groups of Units*) |
 
 The first two rows are the same mechanism read at two sizes: the compactness of the phase is why angular
 momentum and charge are discrete, and the internal group being compact is why its labels are discrete. The
@@ -135,8 +135,7 @@ named as a gap and not proposed as a formula.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the parity-matched lattice and its two cosets.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the kernel of the exponential and the eigenvalue formula.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
-- [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite
-  unit group of the complex order.
+- [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite unit group of the complex order.
 - [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the thermal circle, the Matsubara frequencies and the
   partition function.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) and *Thermal Time and the Modular Flow in the

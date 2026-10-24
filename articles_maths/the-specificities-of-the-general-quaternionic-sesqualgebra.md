@@ -103,7 +103,7 @@ $$
 
 so the scalar part of the square is the **Krein form**, of signature $(2,6)$, and the square of an element is zero exactly on the origin and the family $c(\vec u+i)$ of *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
-**Proof.** The identity is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*, the scalar part is the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ of *The Krein Gram Matrix of the Biquaternion Algebra*, and the square-zero family is the classification of the cited article.
+**Proof.** The identity is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*, the scalar part is the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ of *The Krein Norm of the Biquaternion Algebra*, and the square-zero family is the classification of the cited article.
 
 **Theorem (the nontrivial idempotents are units of the plain algebra).** The nontrivial idempotents of the block are the elements
 

@@ -12,14 +12,14 @@ whether the subspace **stays inside itself**, the
 elements off the subspace that the product produces, the isotropic elements and the idempotents.
 
 The article follows the pattern of the companion readings of the same remarkable subspaces under the other
-$\mathbb{C}$-bilinear operations, *Remarkable Subspaces and the Four Forms* and
+$\mathbb{C}$-bilinear operations, *Remarkable Subspaces and the Four General Products, Forms and Norms* and
 *Remarkable Subspaces under the General Quaternionic Algebra*; the subspaces themselves, their
 real bases and their elements are *Introduction to the Remarkable Subspaces*, and the restrictions of the form that
 the product carries are *Remarkable Subspaces under the General Quaternionic Algebra* and
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, whose table is quoted here and not
 recomputed. The isotropic elements are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra*; the staying-inside statement for the symmetrised quaternionic
-product is *Remarkable Subspaces and the Four General Products*.
+product is *Remarkable Subspaces and the Four General Products, Forms and Norms*.
 
 **Definition.** A subspace $U$ **stays inside itself** under $\star$, or is **kept inside itself** by $\star$,
 when $\tilde Q_1,\tilde Q_2\in U$ implies $\tilde Q_1\star\tilde Q_2\in U$.
@@ -129,7 +129,7 @@ $(\vec p,\vec p)=a_t^2$.
 
 **Remark (the three that stay inside and the three that leave).** The operation is kept inside itself by
 exactly three of the remarkable subspaces — the centre, the quaternion subspace and the Hermitian subspace — and it
-leaves the other three, in agreement with the staying-inside statement of *Remarkable Subspaces and the Four General Products* for the symmetrisation of the general quaternionic product, which this article follows. The centre
+leaves the other three, in agreement with the staying-inside statement of *Remarkable Subspaces and the Four General Products, Forms and Norms* for the symmetrisation of the general quaternionic product, which this article follows. The centre
 stays inside because it is the image of the operation; the quaternion subspace and the Hermitian subspace stay
 inside because the coefficient is real on each of them and the real line $\mathbb{R}e_t$ lies in both. The
 vector subspace returns a complex multiple of $e_t$ that leaves it, while the anti-quaternion and
@@ -214,8 +214,7 @@ isotropic set appropriate to each.
 ## Further Reading
 
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces, their bases and their elements
-- [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html) and [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the same remarkable subspaces under the other $\mathbb{C}$-bilinear operations
-- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the staying-inside statement of the symmetrisation
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) and [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the staying-inside statement of the symmetrisation and for the same remarkable subspaces under the other $\mathbb{C}$-bilinear operations
 - [The Quaternion Form as a Product on the Symmetric Quaternionic Algebra](the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html), for the restrictions of the form and their signatures
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the radical and the isotropic cone
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the pure and the non-pure zero divisors

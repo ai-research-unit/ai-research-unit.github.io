@@ -133,7 +133,7 @@ The principal symbol is $q_t^2 - \sum_k (q'_k)^2$, that is the norm $\langle\cdo
 
 **The null set.** The norm vanishes on the cone $q_t^2 = \sum_k (q'_k)^2$, of real dimension $3$, and its points are exactly the zero divisors of the subspace, the non-pure ones of *Introduction to the Remarkable Subspaces*, namely the nonzero real multiples of the Hermitian idempotents.
 
-**The analysis.** Because the operator is of wave type, the natural problem on the Hermitian subspace is an initial-value problem on a level surface of $q_t$, not the Dirichlet problem that the quaternion subspace carries; and the fundamental solution of the wave operator is a distribution supported on the null cone, so that the representation formula of *Biquaternion Integration* becomes its Kirchhoff–Green form. The Jordan algebra carried by the subspace, from *Remarkable Subspaces and the Four General Products*, is the algebraic counterpart of this being the indefinite case.
+**The analysis.** Because the operator is of wave type, the natural problem on the Hermitian subspace is an initial-value problem on a level surface of $q_t$, not the Dirichlet problem that the quaternion subspace carries; and the fundamental solution of the wave operator is a distribution supported on the null cone, so that the representation formula of *Biquaternion Integration* becomes its Kirchhoff–Green form. The Jordan algebra carried by the subspace, from *Remarkable Subspaces and the Four General Products, Forms and Norms*, is the algebraic counterpart of this being the indefinite case.
 
 ## The Anti-Hermitian Subspace
 

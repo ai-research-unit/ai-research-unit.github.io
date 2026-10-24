@@ -89,7 +89,7 @@ The three rows count the same element against three scalar systems, and all thre
 Writing $\vec Q_1 = \sum_k Q_{1k} \vec e_k$ and $\vec Q_2 = \sum_k Q_{2k} \vec e_k$, the two bilinear products of the vector parts are
 
 $$
-(\vec Q_1, \vec Q_2) = \sum_{k\in\{x,y,z\}} Q_{1k} Q_{2k} , \qquad
+(\vec Q_1, \vec Q_2) = \sum_k Q_{1k} Q_{2k} , \qquad
 \vec Q_1 \times \vec Q_2 = (Q_{1y} Q_{2z} - Q_{1z} Q_{2y})\vec e_x + (Q_{1z} Q_{2x} - Q_{1x} Q_{2z})\vec e_y + (Q_{1x} Q_{2y} - Q_{1y} Q_{2x})\vec e_z .
 $$
 

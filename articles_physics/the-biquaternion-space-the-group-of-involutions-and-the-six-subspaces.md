@@ -15,7 +15,7 @@ The results used are these.
 | The six subspaces, their bases and their defining conditions | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
 | The three decompositions of the algebra | [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html) |
 | The four coordinate blocks, the intersections, the sums and the action of $J$ | [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html) |
-| The four forms, their restrictions and the alternating companion | [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) |
+| The four forms, their restrictions and the alternating companion | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 
 ## The Results It Uses
 
@@ -319,6 +319,6 @@ The article interprets the linear structure, the involutions and the real forms.
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group, its subgroups and its orbits.
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one.
 - [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html) and [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html), for the three decompositions, the coordinate blocks and the intersection table.
-- [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the restrictions of the forms and the area pairing.
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions of the forms and the area pairing.
 - [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the coordinate dictionary and the choice of the material sector.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors.

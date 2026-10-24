@@ -24,7 +24,7 @@ it is a Lie algebra, and it is the image of the operation on the whole algebra. 
 
 *Proof.* On pure vectors the two scalar parts vanish, so the explicit form is the cross term alone, $-\vec Q_1\times\vec Q_2$, which is a pure vector again; the closure follows, and the cross product satisfies the Jacobi identity, so the restriction is a Lie algebra. For the image, every value of the operation is a pure vector, and every pure vector is a value, $\vec V=e_t\diamond\vec V$; the dimensions are those of the subspace.
 
-Apart from the centre, whose operation vanishes, the vector subspace and the quaternion subspace are the two closed ones of positive dimension, and the vector subspace is the only one of them on which the operation is a nonzero Lie bracket, the closed quaternion subspace failing the Jacobi identity. It is the derived subalgebra of the block, and the identification of the cross product on $\mathbb{C}^3$ with $\mathfrak{sl}(2,\mathbb{C})$ is *Remarkable Subspaces and the Four General Products*.
+Apart from the centre, whose operation vanishes, the vector subspace and the quaternion subspace are the two closed ones of positive dimension, and the vector subspace is the only one of them on which the operation is a nonzero Lie bracket, the closed quaternion subspace failing the Jacobi identity. It is the derived subalgebra of the block, and the identification of the cross product on $\mathbb{C}^3$ with $\mathfrak{sl}(2,\mathbb{C})$ is *Remarkable Subspaces and the Four General Products, Forms and Norms*.
 
 ## The Quaternion Subspace
 
@@ -128,4 +128,4 @@ The remarkable subspaces read the antisymmetric quaternionic multiplication as f
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its table and its image
 - [The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra](the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html), for the failure read on the subspaces and for the vanishing of the alternating centre
 - [The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra](the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.html), for the radical and the isotropic cone of the form, and for the restrictions to the remarkable subspaces
-- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the cross product on the vector subspace and its identification with $\mathfrak{sl}(2,\mathbb{C})$
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the cross product on the vector subspace and its identification with $\mathfrak{sl}(2,\mathbb{C})$

@@ -6,14 +6,14 @@ An exceptional point is a degeneracy at which two eigenvalues coincide **and** t
 
 The biquaternion spectrum has both. For $\tilde Q=Q_te_t+\vec Q$ the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=(\vec Q,\vec Q)$. They coincide exactly when $B=0$. If $\vec Q=0$ the element is central and semisimple: the degeneracy is diabolic. If $\vec Q\neq0$ and $B=0$ the element is a single Jordan block: the degeneracy is exceptional. The second case is the subject of this article.
 
-The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *Biquaternion Spectral Theory*; the degenerate regimes and the Jordan normal form are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
+The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*; the degenerate regimes and the Jordan normal form are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The spectrum, the characteristic polynomial and the discriminant | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
-| The eigenprojections and the Hermitian case | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
+| The spectrum, the characteristic polynomial and the discriminant | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
+| The eigenprojections and the Hermitian case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The four degenerate regimes and the Jordan form | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The exponential in the nilpotent regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The logarithm of a Jordan block | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
@@ -172,7 +172,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 
 ## Further Reading
 
-- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the spectrum and the eigenprojections, and [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the degenerate regimes and the Jordan form.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the degenerate regimes and the Jordan form.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the boundary of the word and the two strata of the cone.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotents and their square-zero property.

@@ -8,7 +8,7 @@ This article does three things. It defines the four on the coordinates, each wit
 
 The four are also one rule with a conjugation inserted in each slot. The two insertions commute, the four readings form a group $\mathbb{Z}_2\times\mathbb{Z}_2$, and the reading of the group on a general algebra gives the slot family, whose second slot governs the composition and whose first slot governs the form. That construction, the group and the table of the slots are *Introduction to the Operators of the Biquaternion Algebra*, §*The Four Readings and Their Group*.
 
-The article assumes the algebra, the element, the basis and the four conjugations from *The Biquaternion Algebra and Its Vector Spaces*. The forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms*; the split of each general product into a symmetric and an antisymmetric part is *Symmetric and Antisymmetric Decomposition of the Four General Products*; the restrictions to the remarkable subspaces are *Remarkable Subspaces and the Four General Products*.
+The article assumes the algebra, the element, the basis and the four conjugations from *The Biquaternion Algebra and Its Vector Spaces*. The forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms*; the split of each general product into a symmetric and an antisymmetric part is *Symmetric and Antisymmetric Decomposition of the Four General Products*; the restrictions to the remarkable subspaces are *Remarkable Subspaces and the Four General Products, Forms and Norms*.
 
 ## The Four General Products
 
@@ -485,7 +485,7 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 | $\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquilinear product |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
-| $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ | the element and its four complex coordinates |
+| $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ | the two elements and their four complex coordinates |
 | $\tilde Q_1^{\natural}$, $\tilde Q_1^{*}$ | the two conjugations, in coordinates |
 | $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ | the vector part, read as an element where it multiplies |
 | $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ | the complex bilinear dot product |
@@ -504,7 +504,7 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 - [Introduction to the Operators of the Biquaternion Algebra](the-four-general-products-and-operators.html), for the four readings, the group they form, the slot family and the table of the slots.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four scalar parts as forms and their diagonals as algebraic norms.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products and the two halves of each general product.
-- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the four products read on the remarkable subspaces.
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four products read on the remarkable subspaces.
 - [Remarkable Subspaces and the Two General Products](remarkable-subspaces-and-the-two-general-products.html), for the same reading in the algebra over the real scalars.
 - [Algebras: A General Introduction](algebras-a-general-introduction.html) and [Non-Associative Algebras and the Property Ladder](non-associative-algebras-and-the-property-ladder.html), for the algebra axioms and the identities of the table.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html) and [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the three other products read as multiplications in their own structures.

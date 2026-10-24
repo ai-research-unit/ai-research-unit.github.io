@@ -13,8 +13,7 @@ The article states these four readings and their boundaries. The representations
 | The element image $\mathsf{M}_2(\tilde Q)$, its determinant $\langle\tilde Q\rangle_{\natural}$ and its trace $2Q_t$ | [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
 | The regular image $\mathsf{M}_4^{L}(\tilde Q)$, $\det=\langle\tilde Q\rangle_{\natural}^{2}$, $\operatorname{Tr}=4Q_t$, and the block splitting $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$ | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The sandwich operator, its matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$, its spectrum $\lambda_i\bar\lambda_j$, its determinant $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$ and its trace $4\lvert Q_t\rvert^{2}$ | [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
-| The named objects and their matrix correspondences | [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html) |
-| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The positive cone and the pure states as rank-one idempotents | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The principal bundle, the connection, the curvature and the holonomy | [Fibre Bundles, Connections and Curvature](../articles_maths/fibre-bundles-connections-and-curvature.html) |
 
@@ -154,7 +153,7 @@ $$
 \lambda_+\lambda_-=\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},
 $$
 
-and that product is the reason the determinant is the one invariant of the pair. The map is a similarity invariant and not a complete one: a scalar $Q_te_t$ and a non-scalar element with $(\vec Q,\vec Q)=0$ share the pair $\{Q_t,Q_t\}$ and are not similar. The eigenprojections, not the pair, carry the remaining information, and they are the subject of *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*.
+and that product is the reason the determinant is the one invariant of the pair. The map is a similarity invariant and not a complete one: a scalar $Q_te_t$ and a non-scalar element with $(\vec Q,\vec Q)=0$ share the pair $\{Q_t,Q_t\}$ and are not similar. The eigenprojections, not the pair, carry the remaining information, and they are the subject of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*.
 
 The sandwich has the four eigenvalues $\lambda_i\bar\lambda_j$, so the nontrivial pair of the operator is the **square** of the pair of the element. The element stores half of the frame change; the congruence stores the whole of it.
 
@@ -305,7 +304,7 @@ The element-data and map-data distinction is an interpretation of the doubling $
 ## Further Reading
 
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the correspondence table this article extends.
-- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the spectrum and the eigenprojections, and [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the point where the pair stops being a complete invariant.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the point where the pair stops being a complete invariant.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the ball, its centre and its boundary.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state conditions and the Born pairing.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the boundary of the state space.
@@ -313,4 +312,3 @@ The element-data and map-data distinction is an interpretation of the doubling $
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html), for the bundle, its fibre and its Chern number.
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the half-solid-angle rule.
 - [Exercise: The Bloch Ball and the Geometry of Mixed States](exercise-the-bloch-ball-and-the-geometry-of-mixed-states.html), for the determinant, purity and linear entropy.
-- [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html), for the objects and their images.

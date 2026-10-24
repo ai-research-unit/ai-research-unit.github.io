@@ -374,7 +374,7 @@ $$
 \Lambda_-(\psi,\theta)=B_-(\psi,\vec u_{\mathrm b})\operatorname{diag}(1,\mathsf R(\theta,\vec u_{\mathrm r})),
 $$
 
-with $B_-$ the $4\times4$ boost matrix and $\mathsf R$ the Rodrigues matrix. The rotation acts first. For a general element the action is $r^{2}\Lambda_-$: a linear conformal transformation, of determinant $r^{8}$, whose image is $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$. The matrices, the celestial sphere and the Möbius action are in *Biquaternion Rotations and Lorentz Transformations* and *The Null Quadric and Its Projective Geometry*.
+with $B_-$ the $4\times4$ boost matrix and $\mathsf R$ the Rodrigues matrix. The rotation acts first. For a general element the action is $r^{2}\Lambda_-$: a linear conformal transformation, of determinant $r^{8}$, whose image is $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$. The Lorentz group and its double cover are in *Biquaternion Rotations and Lorentz Transformations*.
 
 ### The Hermitian Half as a Congruence
 
@@ -436,6 +436,34 @@ $$
 $$
 
 an anticommutator. The phase direction $ie_t$ gives zero. The commutator and the anticommutator are the two summands of the Cartan decomposition $\mathfrak{sl}(2,\mathbb{C})=\mathfrak{su}(2)\oplus\mathfrak{p}$, which the Cartan pairing records at the level of the element. The action therefore reproduces, infinitesimally, the same split the word exhibits algebraically.
+
+## Which Subspaces the Sandwich Preserves
+
+Every sandwich preserves the two halves. A general sandwich does not preserve the other four remarkable subspaces; it does exactly when the element is a central multiple of a real unit quaternion. The table records, for a general unit and for a real unit quaternion, whether the image of a general element of the subspace lies in the same subspace.
+
+| subspace | $\Theta_{\tilde Q}$, general unit $\tilde Q$ | $\Theta_{\tilde u}$, real unit quaternion |
+|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ (centre) | no | yes |
+| $\mathrm{Vect}(\mathbb{B})$ (vector, $6$-dimensional) | no | yes |
+| $\mathbb{H}_{\mathbb{B}}$ (real quaternions) | no | yes |
+| $i\mathbb{H}_{\mathbb{B}}$ (antiquaternions) | no | yes |
+| $\mathbb{M}_+$ (Hermitian) | yes | yes |
+| $\mathbb{M}_-$ (anti-Hermitian) | yes | yes |
+
+The two sectors are preserved for every element. For a general unit the other four are not preserved, and the theorem below identifies exactly when they are.
+
+**Theorem (which operators preserve the whole subspace structure).** Let $\tilde Q$ be a unit with polar word $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\Rho=r\zeta$ with $r>0$ and $\zeta$ central of modulus one, $\tilde U_{\mathrm b}$ is Hermitian positive of unit norm and $\tilde u_{\mathrm r}$ is a unit real quaternion. The following are equivalent:
+
+1. the sandwich $\Theta_{\tilde Q}$ maps each of the six remarkable subspaces to itself;
+2. $\tilde U_{\mathrm b}=e_t$;
+3. $\tilde Q=A\tilde u_{\mathrm r}$ with $A$ central and $\tilde u_{\mathrm r}$ a unit real quaternion;
+4. $\tilde Q\tilde Q^{*}$ is a positive real multiple of $e_t$.
+
+When they hold, $\Theta_{\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde u_{\mathrm r}}$ is a dilation composed with a rotation of the vector space, and every remarkable subspace is preserved.
+
+**Proof.** $(3)\Rightarrow(4)$: for $\tilde Q=A\tilde u_{\mathrm r}$ one has $\tilde Q\tilde Q^{*}=\lvert A\rvert^{2}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=\lvert A\rvert^{2}e_t$, since a real unit quaternion satisfies $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde Q\tilde Q^{*}=\lambda e_t$ with $\lambda>0$ then $\lvert\langle\tilde Q\rangle_{\natural}\rvert=\lambda$; the element $\tilde Q/\Rho$, with $\Rho$ the principal square root of $\langle\tilde Q\rangle_{\natural}$, has norm one and Hermitian square $e_t$, hence is a unit real quaternion $\tilde u_{\mathrm r}$, and $\tilde Q$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the word. $(3)\Rightarrow(1)$: the central factor contributes the dilation, which preserves every subspace, and $\Theta_{\tilde u_{\mathrm r}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde Q\tilde Q^{*}$ is central; that element is Hermitian positive, and a central Hermitian positive element of the algebra is a positive real multiple of $e_t$.
+
+On the unit-norm slice the operators preserving the subspace structure are those of the unit real quaternions, modulo the sign, and they form $SO(3)$, of real dimension three; with the dilations admitted they form $\mathbb{R}_{>0}\times SO(3)$, of real dimension four. The rotation group sits inside the six-dimensional operator group as the rotations sit inside the Lorentz group, and the remaining three dimensions are the boosts, which move the centre, the vector subspace and the two halves.
 
 ## The Four Conjugations on the Polar Data
 
@@ -510,7 +538,7 @@ Because each nonzero element of a block lies in exactly three of the six subspac
 
 The polar data of an element of a subspace follow from its norm. The phase is free on exactly the two subspaces whose norm is complex, the centre and the vector subspace, frozen at $0$ and $\pi/2$ on the two halves and two-valued on the two sectors. The boost is trivial on the centre and on the two halves; the rotor is a sign on the centre and on the definite branch of each sector; and the vector subspace is rigid, every one of its non-null elements having a half-turn rotor, with the boost trivial or its axis orthogonal to the rotor axis.
 
-The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word of a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor, the boost being trivial or its axis orthogonal to the rotor axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two null cones on the sectors; the polar word fails on a subspace exactly on the origin or its nonzero zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor. The word also acts: the sandwich $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ preserves both halves for every invertible element, factorises as $r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$, sends the phase to the identity and the scale to a dilation, and reads as a proper orthochronous Lorentz transformation on the anti-Hermitian half and as a congruence on the Hermitian one. The central $i$ intertwines the two readings as an anti-isometry, the two boost matrices satisfy $B_-=DB_+D=B_+^{-1}$, and the image of the group of units is $CO^{+}(1,3)$.
+The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word of a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor, the boost being trivial or its axis orthogonal to the rotor axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two null cones on the sectors; the polar word fails on a subspace exactly on the origin or its nonzero zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor. The word also acts: the sandwich $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ preserves both halves for every invertible element, factorises as $r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$, sends the phase to the identity and the scale to a dilation, and reads as a proper orthochronous Lorentz transformation on the anti-Hermitian half and as a congruence on the Hermitian one. The central $i$ intertwines the two readings as an anti-isometry, the two boost matrices satisfy $B_-=DB_+D=B_+^{-1}$, and the image of the group of units is $CO^{+}(1,3)$. All six remarkable subspaces are preserved exactly for the central multiples of the real unit quaternions; on the unit-norm slice those operators form $SO(3)$, and with the dilations admitted $\mathbb{R}_{>0}\times SO(3)$.
 
 ## Summary of Notation
 
@@ -538,6 +566,7 @@ The two products of the series are the product of two boosts, which is a boost t
 | $\theta$, $\vec u_{\mathrm r}$ | rotation angle and unit axis of the rotor |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, ${}^{\flat}$ | quaternion, coefficientwise, Hermitian conjugation and reversal |
 | $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ | the sandwich, the action of $\tilde Q$ on the algebra |
+| $\Theta_{\tilde Q}$ preserves all six subspaces | exactly for $\tilde Q=A\tilde u_{\mathrm r}$, $A$ central, $\tilde u_{\mathrm r}$ a unit real quaternion |
 | $B_\pm$, $CO^{+}(1,3)$ | the $4\times4$ boost matrices on the two halves and the linear conformal group |
 | $\mathsf{M}_2$ | the matrix model $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$, with $\langle\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$ |
 
@@ -552,6 +581,6 @@ The two products of the series are the product of two boosts, which is a boost t
 - [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces.html), for the three eigenspace decompositions the conjugations cut out.
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the norm.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
-- [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the dagger sandwich, its kernel, the matrices $B_\pm$ and the image $CO^{+}(1,3)$.
-- [The Null Quadric and Its Projective Geometry](the-null-quadric-and-its-projective-geometry.html), for the projective null cone, the celestial sphere, the Möbius action, and the Lorentzian and conformal real slices.
+- [Two-Sided Operator and the Polar Decomposition](two-sided-operator-and-the-polar-decomposition.html), for the sandwich as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
+- [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group, its double cover and the reflections.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols, the root convention and the unitary convention.

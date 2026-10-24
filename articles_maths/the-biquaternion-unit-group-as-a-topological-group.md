@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The group of units $\mathbb{B}^\times$ of the biquaternion algebra is the set of invertible elements, an open subset of the algebra, hence a manifold, and it carries both a group structure and the topology of that manifold. This article reads the two together: the units as the complement of the singular cone, the centre, the determinant and the matrix model of the general linear group, the compact subgroups, and the homotopy type of the group. The polar decomposition, the retractions onto the compact subgroups and the homotopy groups that follow are proved in *The Unitary Group of the Biquaternion Algebra*; they are quoted here for the algebraic group, and not reproved.
+The group of units $\mathbb{B}^\times$ of the biquaternion algebra is the set of invertible elements, an open subset of the algebra, hence a manifold, and it carries both a group structure and the topology of that manifold. This article reads the two together: the units as the complement of the null cone, the centre, the determinant and the matrix model of the general linear group, the compact subgroups, and the homotopy type of the group. The polar decomposition, the retractions onto the compact subgroups and the homotopy groups that follow are proved in *The Unitary Group of the Biquaternion Algebra*; they are quoted here for the algebraic group, and not reproved.
 
 The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is *Symmetric and Antisymmetric Decomposition of the Four General Products* in Algebra, the Lie-group theory and the exponential are *Biquaternion Lie Group and Exponential Structure* in Analysis, and this article owns the algebraic group of units together with the topological statements that can be read from the group alone. The topology of the group is *The Unitary Group of the Biquaternion Algebra*; the Euclidean ambient space is *The Euclidean Topology of the Biquaternion Algebra*; the zero divisors and their cone are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the invertibility criterion and the distribution of the units over the remarkable subspaces are *Norm Regularity and Degeneracy in the Biquaternion Algebra*.
 
@@ -17,9 +17,9 @@ $$
 
 a group under multiplication with identity $e_t$, the inverse of a unit being a rational function of its coefficients (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Criterion*).
 
-**Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements off the singular cone, so the elements that are not zero divisors are the units together with the origin, and the cone is exactly the complement of the group.
+**Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements off the null cone, so the elements that are not zero divisors are the units together with the origin, and the cone is exactly the complement of the group.
 
-**Proposition (the units are open and dense).** The group $\mathbb{B}^\times$ is the complement of the **singular cone** $\mathcal N$ of the non-units, so it is open, the cone being a zero set of a polynomial, and dense, the cone being a proper closed subset of the algebra.
+**Proposition (the units are open and dense).** The group $\mathbb{B}^\times$ is the complement of the **null cone** $\mathcal C$ of the norm, the set of non-units, so it is open, the cone being a zero set of a polynomial, and dense, the cone being a proper closed subset of the algebra.
 
 *Proof.* The unit criterion writes the complement of the cone as the units; a zero set is closed, so its complement is open; a proper algebraic subset has empty interior, so its complement is dense. The cone has real dimension $6$ in the real $8$-dimensional algebra, hence codimension $2$.
 
@@ -45,7 +45,7 @@ $$
 
 and the real dimension of the group is the sum $6+2=8$.
 
-*Proof.* Multiplicativity of the determinant makes $\det$ a homomorphism, and its kernel is by definition the determinant-one group; surjectivity holds because $\det\mathsf{M}_2(Ae_t)=A^{2}$ and every nonzero complex number is a square, so the image is all of $\mathbb{C}^\times$. The determinant has nonzero gradient off the singular cone, and the dimension count $6+2=8$ follows from the level set of a submersion on the complement of the critical locus.
+*Proof.* Multiplicativity of the determinant makes $\det$ a homomorphism, and its kernel is by definition the determinant-one group; surjectivity holds because $\det\mathsf{M}_2(Ae_t)=A^{2}$ and every nonzero complex number is a square, so the image is all of $\mathbb{C}^\times$. The determinant has nonzero gradient off the null cone, and the dimension count $6+2=8$ follows from the level set of a submersion on the complement of the critical locus.
 
 **Remark (no splitting along the centre).** The sequence does not split by the central circle: the restriction of $\det$ to $\mathbb{C}^\times e_t$ is the squaring map $A\mapsto A^{2}$, which is two-to-one, and not an isomorphism. A splitting is supplied instead by the real directions.
 
@@ -76,14 +76,14 @@ the kernel of the determinant.
 **Its subgroups.** The determinant-one group contains
 
 - the **unit quaternions** $S^3=\{\tilde{q}\in\mathbb{H}_{\mathbb{B}}:\tilde{q}\tilde{q}^{*}=e_t\}$, the compact part, which is a maximal compact subgroup of $\mathbb{B}^\times_1$;
-- the centre $\{\pm e_t\}$ of order two, which is the common part of $S^3$ and of the centre circle $\mathrm{U}(1)e_t$ and lies in every subgroup;
+- the centre $\{\pm e_t\}$ of order two, which is the common part of $S^3$ and of the centre circle $\mathrm{U}(1)e_t$; it lies in every finite subgroup of $S^3$ of even order, in particular in every binary polyhedral group, and not in the cyclic groups of odd order;
 - the **centre circle** $S^1=\mathrm{U}(1)e_t\subset\mathbb{B}^\times$, of elements $Ae_t$ with $|A|=1$, which does not lie in $\mathbb{B}^\times_1$ because $\det\mathsf{M}_2(Ae_t)=A^{2}\in S^1$ is not $1$ in general.
 
 The subgroups and the real forms of the algebra are *Biquaternion Lie Group and Exponential Structure*, §*The Subgroups and the Real Forms*, and the unit quaternions as a group of motions are *Biquaternion Rotations and Lorentz Transformations*.
 
 **Two spheres, and only one of them is a group.** The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine sphere $S^7$ but is not a group, since that norm is not multiplicative and the sphere contains zero divisors (*The Euclidean Topology of the Biquaternion Algebra*, §*The Euclidean Unit Sphere*). The sphere that carries a group structure is $S^3$, the compact subgroup of the determinant-one group, and it is not the Euclidean one.
 
-**The units on the remarkable subspaces.** The units inside a remarkable subspace are the elements of that subspace that lie off the singular cone, so the non-zero-divisors of the subspace are its units together with the origin. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_t$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the null cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*, and is not repeated here.
+**The units on the remarkable subspaces.** The units inside a remarkable subspace are the elements of that subspace that lie off the null cone, so the non-zero-divisors of the subspace are its units together with the origin. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_t$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the null cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*, and is not repeated here.
 
 ## The Topology of the Group
 
@@ -102,7 +102,7 @@ $$
 
 **Remark (what the retractions need).** Every statement of this section uses the polar decomposition $\tilde{Q}_1=\tilde{U}\tilde{Q}_2$ of the matrix model, and it is proved in *The Unitary Group of the Biquaternion Algebra*. The determinant alone defines the group but not its topology; the group is therefore kept here as an algebraic object and its topology is read through the maximal compact subgroup.
 
-**Remark (the menu comment and the boundary).** The menu comment of this entry promises the retraction of $\mathbb{B}^\times$ onto its maximal compact subgroup, the retraction of the determinant-one group, the structure of the maximal compact subgroup, the homotopy groups, the generators, the universal cover and the connected components. Those statements are proved in *The Unitary Group of the Biquaternion Algebra*; re-proving them here would duplicate that article, and re-stating them at length without proof would duplicate its results, so they are quoted above with the pointer. The two statements of the next section are an exception and are proved here, because they are statements about the determinant and the centre alone and are not in the other article.
+**Remark (the boundary).** The retraction of $\mathbb{B}^\times$ onto its maximal compact subgroup, the retraction of the determinant-one group, the structure of the maximal compact subgroup, the homotopy groups, the generators, the universal cover and the connected components are proved in *The Unitary Group of the Biquaternion Algebra* and are quoted here. The two statements of the next section are proved here, because they concern the determinant and the centre alone and are not in the other article.
 
 ## The Covering and the Generators
 
@@ -134,19 +134,19 @@ of degree one; the class of the central circle $Ae_t$ with $|A|=1$ is twice a ge
 
 **A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{M}_+$ are the complement of the null cone.
 
-**A non-unit.** For $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=(\vec e_x+i\vec e_y)^{2}=0$, so the element is a zero divisor, lies on the singular cone and is not a unit; it is therefore an element of none of the three groups above.
+**A non-unit.** For $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=(\vec e_x+i\vec e_y)^{2}=0$, so the element is a zero divisor, lies on the null cone and is not a unit; it is therefore an element of none of the three groups above.
 
 **A generator of the fundamental group.** For $\tilde Q(t)=\tfrac{1+\exp(it)}{2}e_t+\tfrac{1-\exp(it)}{2i}\vec e_z$ the determinant is $\det\mathsf{M}_2(\tilde Q(t))=\exp(it)$, so the loop closes at $t=2\pi$ and runs once around the omitted origin of $\mathbb{C}^\times$; it generates $\pi_1(\mathbb{B}^\times)\cong\mathbb{Z}$. The central circle $Ae_t$ with $|A|=1$ has determinant $A^{2}$ and is therefore twice a generator, not a generator itself.
 
 ## Summary
 
-The group of units $\mathbb{B}^\times$ is the complement of the singular cone in $\mathbb{B}$, the cone of the zero divisors: it is open and dense, connected and non-compact, of real dimension $8$, with centre $\mathbb{C}^\times e_t\cong\mathbb{C}^\times$ and with the matrix model $\mathbb{B}^\times\cong GL_2(\mathbb{C})$. The determinant is a surjective homomorphism onto $\mathbb{C}^\times$, whose kernel is the determinant-one group $\mathbb{B}^\times_1$, a closed connected subgroup of real dimension $6$, isomorphic to $SL_2(\mathbb{C})$; among its subgroups are the unit quaternions $S^3$ and the centre $\{\pm e_t\}$, and the centre circle $\mathrm{U}(1)e_t$ lies in $\mathbb{B}^\times$ and not in $\mathbb{B}^\times_1$. The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine $S^7$ but not a group, and the sphere that carries a group structure is $S^3$. The topology of the group – the polar decomposition, the retractions onto $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and onto $S^3$, the homotopy groups, the generators and the universal cover $\mathbb{R}\times S^3$ – is proved in *The Unitary Group of the Biquaternion Algebra*; this article owns the algebraic group of units, its determinant-one subgroup and the determinant sequence.
+The group of units $\mathbb{B}^\times$ is the complement of the null cone in $\mathbb{B}$, the cone of the zero divisors: it is open and dense, connected and non-compact, of real dimension $8$, with centre $\mathbb{C}^\times e_t\cong\mathbb{C}^\times$ and with the matrix model $\mathbb{B}^\times\cong GL_2(\mathbb{C})$. The determinant is a surjective homomorphism onto $\mathbb{C}^\times$, whose kernel is the determinant-one group $\mathbb{B}^\times_1$, a closed connected subgroup of real dimension $6$, isomorphic to $SL_2(\mathbb{C})$; among its subgroups are the unit quaternions $S^3$ and the centre $\{\pm e_t\}$, and the centre circle $\mathrm{U}(1)e_t$ lies in $\mathbb{B}^\times$ and not in $\mathbb{B}^\times_1$. The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine $S^7$ but not a group, and the sphere that carries a group structure is $S^3$. The topology of the group – the polar decomposition, the retractions onto $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and onto $S^3$, the homotopy groups, the generators and the universal cover $\mathbb{R}\times S^3$ – is proved in *The Unitary Group of the Biquaternion Algebra*; this article owns the algebraic group of units, its determinant-one subgroup and the determinant sequence.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^\times$ | Group of units; open dense, complement of the singular cone; real dimension $8$ |
+| $\mathbb{B}^\times$ | Group of units; open dense, complement of the null cone; real dimension $8$ |
 | $\mathbb{B}^\times_1=\{\det\mathsf{M}_2=1\}$ | Determinant-one group; closed connected subgroup of real dimension $6$; $SL_2(\mathbb{C})$ |
 | $1\to\mathbb{B}^\times_1\to\mathbb{B}^\times\xrightarrow{\det}\mathbb{C}^\times\to1$ | The determinant sequence; $\det\mathsf{M}_2(Ae_t)=A^{2}$ |
 | $\mathbb{C}^\times e_t$ | Centre of $\mathbb{B}^\times$; nonzero complex scalars |

@@ -76,7 +76,7 @@ and this common group is the unique non-trivial double cover of $SO(n)$.
 
 The contrast is the whole content of the section: the covering group $\mathrm{Spin}$ does not see the sign of the form, while the covering group $\mathrm{Pin}$ does. The reason is that the even part of the Clifford algebra is the same algebra for the two signatures, whereas the generating vectors have squares of opposite signs.
 
-**Warning (the finite binary polyhedral groups are not Pin or Spin).** The binary tetrahedral, octahedral and icosahedral groups of orders $24$, $48$ and $120$ are finite subgroups of $\mathrm{Spin}(3)\cong Sp(1)$; they are not $\mathrm{Spin}(3)$ and not $\mathrm{Pin}(3)$, which are positive-dimensional groups. The finite groups arise as the lifts of the finite rotation groups of the Platonic solids, and are recorded in *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Biquaternion Orders and Finite Groups of Units*.
+**Warning (the finite binary polyhedral groups are not Pin or Spin).** The binary tetrahedral, octahedral and icosahedral groups of orders $24$, $48$ and $120$ are finite subgroups of $\mathrm{Spin}(3)\cong Sp(1)$; they are not $\mathrm{Spin}(3)$ and not $\mathrm{Pin}(3)$, which are positive-dimensional groups. The finite groups arise as the lifts of the finite rotation groups of the Platonic solids, and are recorded in *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Quaternion Orders and Finite Groups of Units*.
 
 ## The Centre
 

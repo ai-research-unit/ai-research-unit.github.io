@@ -9,9 +9,9 @@ $$
 =Q_{1t}\overline{Q_{2t}}-\sum_{\mu\in\{x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}},\qquad\varepsilon=(1,-1,-1,-1),
 $$
 
-the form of *The Krein Gram Matrix of the Biquaternion Algebra*, written there $\langle\cdot,\cdot\rangle_{\natural*}$, linear in its first argument and conjugate-linear in its second. This article reads the block against that form: the pairing of a value with a third element, the pairing of a value with itself, the Gram matrix of the sixteen basis pairs with its rank and its radical, the forms $\beta$ invariant under the block, the trace form, and the restriction of the form to the remarkable subspaces with the signs it carries there. The reading is the analogue for the block of the pairings of the two general sesquilinear products and of the block of the plain row, and it is the form side of the multiplication.
+the form of *The Krein Norm of the Biquaternion Algebra*, written there $\langle\cdot,\cdot\rangle_{\natural*}$, linear in its first argument and conjugate-linear in its second. This article reads the block against that form: the pairing of a value with a third element, the pairing of a value with itself, the Gram matrix of the sixteen basis pairs with its rank and its radical, the forms $\beta$ invariant under the block, the trace form, and the restriction of the form to the remarkable subspaces with the signs it carries there. The reading is the analogue for the block of the pairings of the two general sesquilinear products and of the block of the plain row, and it is the form side of the multiplication.
 
-The form is owned by *The Krein Gram Matrix of the Biquaternion Algebra* and its isotropic structure by *Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*; the general construction of a sesqualgebra part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the companion readings of the same form are *The Four Forms and the Four Algebraic Norms* for the four forms on the remarkable subspaces and *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* for the plain-row companion of the block. This article owns the pairing itself.
+The form and its isotropic structure are *The Krein Norm of the Biquaternion Algebra*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*; the general construction of a sesqualgebra part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the companion readings of the same form are *The Four Forms and the Four Algebraic Norms* for the four forms on the remarkable subspaces and *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* for the plain-row companion of the block. This article owns the pairing itself.
 
 ## The Pairing of a Value with a Third Element
 
@@ -59,7 +59,7 @@ the ten remaining pairs being zero.
 
 **Theorem (the Gram matrix).** The Gram matrix of the block on the sixteen basis pairs, with entries $\langle e_\mu\diamond e_\nu,e_\alpha\diamond e_\beta\rangle_{\natural*}$, has rank $3$ over $\mathbb{C}$, and its radical has complex dimension $13$. Over $\mathbb{R}$ the induced form is negative semidefinite of rank $6$.
 
-*Proof.* The sixteen values span the vector subspace, of complex dimension $3$, and on that subspace the form $\langle\cdot,\cdot\rangle_{\natural*}$ is negative definite, of real signature $(0,6)$ by *The Krein Gram Matrix of the Biquaternion Algebra*. The Gram matrix of a non-degenerate form restricted to a spanning set of complex dimension $3$ has rank $3$ over $\mathbb{C}$ and rank $6$ over $\mathbb{R}$; the radical consists of the linear relations among the sixteen values, of complex dimension $16-3=13$.
+*Proof.* The sixteen values span the vector subspace, of complex dimension $3$, and on that subspace the form $\langle\cdot,\cdot\rangle_{\natural*}$ is negative definite, of real signature $(0,6)$ by *The Krein Norm of the Biquaternion Algebra*. The Gram matrix of a non-degenerate form restricted to a spanning set of complex dimension $3$ has rank $3$ over $\mathbb{C}$ and rank $6$ over $\mathbb{R}$; the radical consists of the linear relations among the sixteen values, of complex dimension $16-3=13$.
 
 **Remark (the radical of the Gram matrix).** The radical is spanned by the relations among the sixteen pairs, and it is not the radical of the form, which is zero on the whole algebra. It is the failure of the sixteen pairs to be independent: the ten vanishing pairs and the antisymmetry relations $e_\mu\diamond e_\nu=-e_\nu\diamond e_\mu$ generate it, and the form itself keeps its non-degeneracy on the span of the values. The same phenomenon is the degeneracy of the Gram matrix of a map and not of its form.
 
@@ -105,7 +105,7 @@ or the corresponding doubly conjugate-linear form according to the class, and it
 
 ## The Restriction to the Remarkable Subspaces
 
-The form $\langle\cdot,\cdot\rangle_{\natural*}$ is non-degenerate of signature $(2,6)$ on the whole algebra, and its restriction to each of the remarkable subspaces of *Introduction to the Remarkable Subspaces* is diagonal with the signs $\varepsilon$; the restriction table is the one of *The Krein Gram Matrix of the Biquaternion Algebra*.
+The form $\langle\cdot,\cdot\rangle_{\natural*}$ is non-degenerate of signature $(2,6)$ on the whole algebra, and its restriction to each of the remarkable subspaces of *Introduction to the Remarkable Subspaces* is diagonal with the signs $\varepsilon$; the restriction table is the one of *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
 
 | Subspace | Restricted form | Signature |
 |---|---|---|
@@ -139,9 +139,8 @@ Read against the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\su
 
 ## Further Reading
 
-- [The Krein Gram Matrix of the Biquaternion Algebra](the-krein-gram-matrix-of-the-biquaternion-algebra.html), for the form and the signatures of the restrictions.
+- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form and its inertia.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces.
-- [Krein Orthogonality, Isotropy and the Krein Cone of the Biquaternion Algebra](krein-orthogonality-isotropy-and-the-krein-cone-of-the-biquaternion-algebra.html), for the null elements and the isotropic lines.
 - [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the block.
 - [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the diagonal and its cone.
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*, for the reading of the block on the remarkable subspaces.

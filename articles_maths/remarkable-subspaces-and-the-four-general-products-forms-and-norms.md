@@ -8,13 +8,13 @@ $$
 f\longmapsto \varphi=\mathrm{Sc}\circ f\longmapsto \langle\cdot\rangle=\varphi(\cdot,\cdot),
 $$
 
-and the chain is read here on the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace, one subspace to a section. The three readings are collected in a single article so that each subspace is read once, at the three levels, rather than three times in three articles.
+and the chain is read here on the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace, one subspace to a section. The three levels are collected in a single article so that each subspace is read once, at the three levels, rather than three times in three articles.
 
 The chain decides what each level can see. The **product** is the finest object: it returns an element of the algebra, and a subspace can be closed under it, under its symmetrisation or under its bracket. The **form** keeps the scalar part of the product and loses the rest; it is still a function of two arguments, and on the two complex subspaces it carries an imaginary part that no single-argument function can carry. The **norm** keeps only the diagonal of the form, and on the four real-type subspaces that is enough, because there the form is real and is recovered from the norm by polarisation.
 
-Two facts organise the reading. First, the four products have the **same value set** on each subspace, because the two conjugations that distinguish them preserve every subspace of the list; the four differ in the structure they leave on the value, not in where they send a pair. Second, the symmetrisation and the bracket close on more subspaces than the product, and the pattern of closure is the same for the four products; only the Jordan and Jacobi identities separate the products from one another. The result is a small table of algebras, carried by six subspaces and four products, and it is stated in $\S$*The Four General Products* and justified subspace by subspace.
+Two facts organise the article. First, the four products have the **same value set** on each subspace, because the two conjugations that distinguish them preserve every subspace of the list; the four differ in the structure they leave on the value, not in where they send a pair. Second, the symmetrisation and the bracket close on more subspaces than the product; the symmetrisation closes on the same subspaces for all four products, while the bracket closure depends on the product, and the Jordan and Jacobi identities decide which closures are algebras. The result is a small table of algebras, carried by six subspaces and four products, and it is stated in $\S$*The Four General Products* and justified subspace by subspace.
 
-The article assumes the algebra and the conjugations of *The Biquaternion Algebra and Its Vector Spaces* and the subspaces, bases and dimensions of *Introduction to the Remarkable Subspaces*. The products, their relations and their comparison are *The Four General Products and Their Relations*; the forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms*; the two halves of a product are *Symmetric and Antisymmetric Decomposition of the Four General Products*; and the coordinate blocks are *Comparison of the Remarkable Subspaces*. None of that is restated. What the article adds is the reading of the chain on the six subspaces, the common value set, the collapse patterns, the real and imaginary parts of the restrictions, the signatures, and the separation the subspaces impose on the four norms. The physical reading of the two sectors is deferred to *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and is recalled only in $\S$*The Material Interpretation*.
+The article assumes the algebra and the conjugations of *The Biquaternion Algebra and Its Vector Spaces* and the subspaces, bases and dimensions of *Introduction to the Remarkable Subspaces*. The products, their relations and their comparison are *The Four General Products and Their Relations*; the forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms*; the two halves of a product are *Symmetric and Antisymmetric Decomposition of the Four General Products*; and the coordinate blocks are *Comparison of the Remarkable Subspaces*. None of that is restated. What the article adds is the reading of the chain on the six subspaces, the common value set, the collapse patterns, the real and imaginary parts of the restrictions, the signatures, and the separation the subspaces impose on the four norms. The physical interpretation of the two sectors is deferred to *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and is recalled only in $\S$*The Material Interpretation*. The article replaces the three earlier articles that treated the four general products, the four forms and the four algebraic norms on the remarkable subspaces separately.
 
 ## Notational Conventions
 
@@ -76,7 +76,7 @@ $$
 
 The one-argument bracket is the norm and the two-argument bracket is the form; the distinction is the one of *Conventions in the Biquaternion Universe*. On a real-type subspace the form is real and the norm is its diagonal; on a complex subspace the form is complex and the norm carries only part of it.
 
-The four readings are collected in one table.
+The four forms are collected in one table.
 
 | pair of slots | product | form | name of the form | algebraic norm |
 |---|---|---|---|---|
@@ -203,6 +203,21 @@ on the two complex subspaces, and the one sign is the whole difference between t
 
 **The two slotted conjugations and the two pairings.** The imaginary part of a form is symmetric when the form is bilinear and alternating when the form is sesquilinear, and the second slot is the slot that decides it: the star conjugates $i$ and flips the sign of the companion identity, and the conjugate symmetry of $H$ and $K$ then forces their imaginary part to be alternating. The first slot, the natural conjugation, does not touch the value: it is applied before the two elements are multiplied, and no conjugation of $i$ reaches the product. The difference between the two families in the table of the imaginary part is the difference between the two second slots and nothing else.
 
+### The Alternating Forms on the Whole Space
+
+The imaginary parts of the two Hermitian forms are alternating forms on the whole algebra,
+$$
+\omega_H(\tilde Q_1,\tilde Q_2)=\operatorname{Im}\langle\tilde Q_1,\tilde Q_2\rangle_{*},\qquad
+\omega_K(\tilde Q_1,\tilde Q_2)=\operatorname{Im}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} .
+$$
+In the real coordinates $q_\mu,q'_\mu$ each is a direct sum over the four coefficients of the standard symplectic form on the pair $(q_\mu,q'_\mu)$, with the sign $\varepsilon_\mu$ for $\omega_K$, so both are non-degenerate and of rank $8$. The real-linear isometry group of each is the real symplectic group $Sp(8,\mathbb{R})$, of real dimension $36$; the complex-linear isometries are $\mathrm{U}(4)$ for $\omega_H$ and $\mathrm{U}(1,3)$ for $\omega_K$, the unitary groups of the two Hermitian forms; and the maximal isotropic subspaces are the Lagrangian planes, of real dimension $4$.
+
+The two are **not** the scalar parts of the two antisymmetrised sesquilinear products. Those values are pure vector and their scalar part vanishes; the alternating forms are the scalar parts, divided by $2i$, of the two sesquilinear commutators,
+$$
+\omega_H=\tfrac{1}{2i}\operatorname{Sc}[\tilde Q_1,\tilde Q_2]_\varsigma ,
+$$
+and $\omega_K$ is the corresponding object of the quaternionic family. The distinction is the one between a product and a form: the pure-vector value is the antisymmetrised product, whose Jacobi identity is a separate question, while the scalar part is a symplectic form, with isometry group $Sp(8,\mathbb{R})$ and Lagrangian planes.
+
 
 ## The Four Algebraic Norms
 
@@ -245,7 +260,7 @@ $$
 (Ae_t)(Ce_t)^{*}=(Ae_t)^{\natural}(Ce_t)^{*}=A\overline{C}e_t.
 $$
 
-The two bilinear products therefore coincide on the centre, as do the two sesquilinear ones, and **all four keep the centre inside itself**; the first pair is the multiplication of $\mathbb{C}$ read inside the algebra. The centre is, with the quaternion subspace, one of the two subspaces closed under the product, and it is the only one of the six that is commutative. It is associative for the two bilinear products, where it is the field $\mathbb{C}$; the two sesquilinear products are commutative but not associative.
+The two bilinear products therefore coincide on the centre, as do the two sesquilinear ones, and **all four keep the centre inside itself**; the first pair is the multiplication of $\mathbb{C}$ read inside the algebra. The centre is, with the quaternion subspace, one of the two subspaces closed under the product, and it is the only one of the six that is commutative for the two bilinear products, where it is the field $\mathbb{C}$ and is associative; the two sesquilinear products are neither commutative nor associative.
 
 **The symmetrisation.** The symmetrised general plain bilinear product is again the multiplication of $\mathbb{C}$, and the symmetrised general quaternionic bilinear product is the same function:
 
@@ -339,11 +354,11 @@ $$
 \vec P^{\natural}\vec Q=(\vec P,\vec Q)e_t-\vec P\times\vec Q,
 $$
 $$
-\vec P\vec Q^{*}=(\vec P,\vec Q)e_t-\vec P\times\vec Q,\qquad
-\vec P^{\natural}\vec Q^{*}=-(\vec P,\vec Q)e_t+\vec P\times\vec Q.
+\vec P\vec Q^{*}=(\vec P,\overline{\vec Q})e_t-\vec P\times\overline{\vec Q},\qquad
+\vec P^{\natural}\vec Q^{*}=-(\vec P,\overline{\vec Q})e_t+\vec P\times\overline{\vec Q}.
 $$
 
-The four products therefore come in two pairs on the vector subspace, $f_{\mathrm{pl}}=f_{\natural*}$ and $f_{\natural}=f_{\mathrm{pl}*}$ as functions, the first pair with the sign of the plain product and the second with the opposite signs. Since the scalar part is a general complex number and the vector part a general vector, each of the four products of a suitable pair **spans the whole algebra**, of real dimension eight. The vector subspace is therefore closed under **none of the four general products**.
+The four products therefore have the same scalar–vector shape on the vector subspace, with the second factor conjugated where the star is present: $f_{\mathrm{pl}}$ and $f_{\natural*}$ with the sign of the plain product, and $f_{\natural}$ and $f_{\mathrm{pl}*}$ with the opposite signs. Since the scalar part is a general complex number and the vector part a general vector, each of the four products of a suitable pair **spans the whole algebra**, of real dimension eight. The vector subspace is therefore closed under **none of the four general products**.
 
 **The symmetrisation.** No symmetrisation keeps the vector subspace inside itself either, and the bilinear and the sesquilinear products part company. The two bilinear symmetrisations collapse to the centre, the cross-product terms cancelling:
 
@@ -508,7 +523,7 @@ An anti-quaternion element is $ih$ with $h$ a real quaternion. The subspace equa
 
 ### The Four General Products
 
-**None of the four keeps the anti-quaternion subspace inside itself.** Since the natural conjugation reverses the central imaginary unit and the coefficientwise conjugation does not, the four products of a pair fall back into the quaternion subspace:
+**None of the four keeps the anti-quaternion subspace inside itself.** The four products of a pair fall back into the quaternion subspace, the two factors being odd:
 
 $$
 (ih)(ik)=-hk,\qquad
@@ -626,7 +641,7 @@ B(\tilde Q_1,\tilde Q_2)=H(\tilde Q_1,\tilde Q_2)=a_tc_t+(\vec p,\vec q),\qquad
 N(\tilde Q_1,\tilde Q_2)=K(\tilde Q_1,\tilde Q_2)=a_tc_t-(\vec p,\vec q).
 $$
 
-They are the **Euclidean form** of signature $(4,0)$ and the **Minkowski form** of signature $(1,3)$. The collapse pairs a bilinear form with a sesquilinear one, which does not happen on the other five, and the reason is that on the Hermitian subspace the star of the second slot acts as the identity, since the coefficients are already real in the scalar slot and purely imaginary in the vector slots. All four are real-valued, so the imaginary part vanishes identically, and the Gram matrices are $\mathrm I_4$ for $B$ and $H$ and $\operatorname{diag}(1,-1,-1,-1)$ for $N$ and $K$, both of full rank. The null sets are the origin of the Euclidean pair $B,H$ and the null cone of the Minkowski pair $N,K$, of real dimension three.
+They are the **Euclidean form** of signature $(4,0)$ and the **Minkowski form** of signature $(1,3)$. The collapse pairs each bilinear form with the sesquilinear form of the same family, $B$ with $H$ and $N$ with $K$; on the other subspaces the pairing is crossed or carries a sign. The reason is that on the Hermitian subspace the star of the second slot acts as the identity, since the coefficients are already real in the scalar slot and purely imaginary in the vector slots. All four are real-valued, so the imaginary part vanishes identically, and the Gram matrices are $\mathrm I_4$ for $B$ and $H$ and $\operatorname{diag}(1,-1,-1,-1)$ for $N$ and $K$, both of full rank. The null sets are the origin of the Euclidean pair $B,H$ and the null cone of the Minkowski pair $N,K$, of real dimension three.
 
 ### The Four Algebraic Norms
 
@@ -643,7 +658,7 @@ of signatures $(4,0)$ and $(1,3)$ respectively. The Euclidean pair is positive d
 
 **The anti-Hermitian subspace is a Lie algebra but not a Jordan algebra.** Under $[\cdot,\cdot]$ and $[\cdot,\cdot]_{*}$, the latter the negative of the former, it is $\mathfrak{u}(2)\cong\mathbb{R}(ie_t)\oplus B_1$, and it is **no Jordan algebra** for any of the four symmetrisations.
 
-An anti-Hermitian element is $ib_te_t+\vec q$ with $b_t\in\mathbb{R}$ and $\vec q$ a real vector. It is the anti-fixed set of ${}^{*}$, has real dimension four, and in the blocks is $A_2\oplus B_1$. It is the image of the Hermitian subspace under multiplication by $ie_t$, and it is the **material sector** of the physical reading.
+An anti-Hermitian element is $ib_te_t+\vec q$ with $b_t\in\mathbb{R}$ and $\vec q$ a real vector. It is the anti-fixed set of ${}^{*}$, has real dimension four, and in the blocks is $A_2\oplus B_1$. It is the image of the Hermitian subspace under multiplication by $ie_t$, and it is the **material sector** of the physical interpretation.
 
 ### The Four General Products
 
@@ -706,7 +721,7 @@ $$
 
 with the two sign relations $\langle\cdot,\cdot\rangle=-H$ and $\langle\cdot,\cdot\rangle_{\natural}=-K$. The signatures are $(0,4)$ for $B$, $(4,0)$ for $H$, $(3,1)$ for $N$ and $(1,3)$ for $K$, and the Gram matrices are $-\mathrm I_4$, $\mathrm I_4$, $\operatorname{diag}(-1,1,1,1)$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank. All four are real-valued, so the imaginary part vanishes identically. The null sets are the origins of $B$ and $H$ and the null cones of $N$ and $K$, of real dimension three.
 
-**This is the material sector.** The four forms here are the two sesquilinear ones with their signs, $H=b_t^{2}+(\vec q,\vec q)$ the **Euclidean square** of signature $(4,0)$ and $K=b_t^{2}-(\vec q,\vec q)$ of signature $(1,3)$, against the two bilinear ones $B=-H$ and $N=-K$. The interval of the corpus is the general quaternionic bilinear norm $N=-b_t^{2}+(\vec q,\vec q)$, of signature $(3,1)$, and its negative is $K$; the pair of the material reading is the interval $N$ against the Euclidean square $H$, and the null cone of $N$ against the definite $H$. These are exactly the columns $H$ and $N$ of the table above.
+**This is the material sector.** The four forms here are the two sesquilinear ones with their signs, $H=b_t^{2}+(\vec q,\vec q)$ the **Euclidean square** of signature $(4,0)$ and $K=b_t^{2}-(\vec q,\vec q)$ of signature $(1,3)$, against the two bilinear ones $B=-H$ and $N=-K$. The interval of the corpus is the general quaternionic bilinear norm $N=-b_t^{2}+(\vec q,\vec q)$, of signature $(3,1)$, and its negative is $K$; the pair of the material interpretation is the interval $N$ against the Euclidean square $H$, and the null cone of $N$ against the definite $H$. These are exactly the columns $H$ and $N$ of the table above.
 
 ### The Four Algebraic Norms
 
@@ -719,7 +734,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=b_t^{2}-(\vec q,\vec q),
 $$
 
-with signatures $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$ in that order. The two bilinear norms are the negatives of those on the Hermitian subspace and the two sesquilinear ones agree with it: $\langle\cdot\rangle=-H$, $\langle\cdot\rangle_{\natural}=-K$, while $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ are unchanged. The Hermitian norm is positive definite, the plain bilinear norm negative definite, and the other two indefinite. The four values are the four readings of the material sector: the interval $N$, the Euclidean square $H$, and their negatives $K$ and $B$.
+with signatures $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$ in that order. The two bilinear norms are the negatives of those on the Hermitian subspace and the two sesquilinear ones agree with it: $\langle\cdot\rangle=-H$, $\langle\cdot\rangle_{\natural}=-K$, while $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ are unchanged. The Hermitian norm is positive definite, the plain bilinear norm negative definite, and the other two indefinite. The four values are the four forms of the material sector: the interval $N$, the Euclidean square $H$, and their negatives $K$ and $B$.
 
 
 ## The Null Sets
@@ -737,7 +752,7 @@ The null set of each form on each subspace is this.
 
 The rule behind the table is one line: **off the centre a form has a complex null cone on a subspace exactly when the real part of its restriction is indefinite there**, and the signature table of $\S$*The Four Algebraic Norms* says which are. On the centre the complex zeros are trivial for all four forms even though the real part of $B$ and of $N$ is indefinite, and it is the real zeros of the real part that form the cone there; the two kinds of zero are separated in $\S$*The Realified Form on the Subspaces*. The count of forms with a complex null cone is none on the centre, two on the vector subspace, the bilinear pair $B,N$ of signature $(3,3)$, and two on each of the four real-type subspaces: $B$ and $K$ on the quaternion subspace and on its imaginary translate, $N$ and $K$ on the two sectors.
 
-Two columns of the table are constant and are the two theorems of *The Four Forms and the Four Algebraic Norms* read on the remarkable subspaces: **$H$ is definite on all of them**, so its null set is the origin in each, and **$H$ is the only form definite on all of them**, so each of the other three has a cone on some subspace. A collapse with no sign keeps the cone, a collapse with a sign swaps it for the origin, and the collapse $H=K$ on the centre against $K=-H$ on the vector subspace is exactly the exchange of a definite form for an indefinite one.
+Two columns of the table are constant and are the two theorems of *The Four Forms and the Four Algebraic Norms* read on the remarkable subspaces: **$H$ is definite on all of them**, so its null set is the origin in each, and **$H$ is the only form definite on all of them**, so each of the other three has a cone on some subspace. The collapses pair the columns, and the signatures in the table above are the record of which pairs are definite on which subspace.
 
 **The ambient cones are cut by the subspaces.** The ambient null sets of *The Four Forms and the Four Algebraic Norms* are the complex cone of $B$, the zero-divisor cone of $N$ and the real cone of $K$, of real dimensions six, six and seven. The table above is what those cones become on the remarkable subspaces, and the two are different pictures: the ambient cones have real dimension six or seven, and the cones of the table have real dimension four on the vector subspace and real dimension three on the four real-type subspaces, because the equations $\sum_kP_k^{2}=0$ in three complex unknowns and $h_t^{2}=\lvert\vec h\rvert^{2}$ in four real unknowns have those dimensions. A subspace is not a small copy of the ambient space for a cone.
 
@@ -766,7 +781,7 @@ The same rows with the signatures of $H$, $N$ and $K$ give the isometry groups o
 
 ## The Realified Form on the Subspaces
 
-**The maximal definite subspaces.** The real part $g_B$ on the whole algebra has signature $(4,4)$, so its maximal positive definite and maximal negative definite dimensions are both $4$. The Hermitian subspace $\mathbb{M}_+$, of real dimension $4$ and positive definite, is a **maximal positive definite subspace**, and the anti-Hermitian subspace $\mathbb{M}_-$ a **maximal negative definite subspace**; neither can be enlarged while remaining definite, and the two are orthogonal complements. The centre is a definite plane only in the hyperbolic sense, its signature $(1,1)$ being neither positive nor negative definite, and the quaternion and vector subspaces carry both signs.
+**The maximal definite subspaces.** The real part $g_B$ on the whole algebra has signature $(4,4)$, so its maximal positive definite and maximal negative definite dimensions are both $4$. The Hermitian subspace $\mathbb{M}_+$, of real dimension $4$ and positive definite, is a **maximal positive definite subspace**, and the anti-Hermitian subspace $\mathbb{M}_-$ a **maximal negative definite subspace**; neither can be enlarged while remaining definite, and the two are orthogonal complements. The centre is a hyperbolic plane, its signature $(1,1)$ being neither positive nor negative definite, and the quaternion and vector subspaces carry both signs.
 
 **The three orthogonal splittings.** The form is diagonal in the natural bases, so three pairs of complementary subspaces split the algebra orthogonally, the signatures adding to $(4,4)$ in each:
 
@@ -793,7 +808,7 @@ Each element is null because the real part of its value vanishes, $1-1$ on the c
 
 The remarkable subspaces of this article are the homes of the parts of the four products under the **plain** exchange of the two arguments. The two parts of a bilinear product are read there directly, the antisymmetric parts of the two bilinear products spanning the vector subspace and the symmetric part of the quaternionic one collapsing to the centre; and the two parts of the plain sesquilinear product are the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde Q_1,\tilde Q_2)=\overline{f(\tilde Q_2,\tilde Q_1)}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. For $f_{\mathrm{pl}*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $f_{\natural*}$ the skew half is the cross product $\vec Q_1\times\overline{\vec Q_2}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the form $K$ in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
+The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde Q_1,\tilde Q_2)=\overline{f(\tilde Q_2,\tilde Q_1)}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. This is the **adapted** reading, against the **plain** exchange of the first paragraph. For $f_{\mathrm{pl}*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $f_{\natural*}$ the skew half is the cross product $\vec Q_1\times\overline{\vec Q_2}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the form $K$ in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
 
 So three of the passages of the adapted reading land in the list — the centre and the vector subspace for $f_{\mathrm{pl}*}$, the vector subspace again for $f_{\natural*}$ — against the Hermitian and the anti-Hermitian subspace, where the plain reading of the same two products lands. The two readings are of one pair of products each and neither is the other; the twelve names of *Symmetric and Antisymmetric Decomposition of the Four General Products* belong to the **adapted** reading and not to the plain one tabulated here, and the plain reading's own four halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*.
 
@@ -805,7 +820,7 @@ Three facts summarise the separation. **Only $H$ is definite on every one of the
 
 ## The Material Interpretation
 
-The reading is a reading and not a theorem; it is the one the corpus gives to the four forms and it is sharpened here by the remarkable subspaces.
+The interpretation is an interpretation and not a theorem; it is the one the corpus gives to the four forms and it is sharpened here by the remarkable subspaces.
 
 - On the **material sector** $\mathbb{M}_-$ the four forms are real and the article adds nothing to the four algebraic norms: the interval $N$, the Euclidean square $H$ and their negatives $K$ and $B$. The material sector carries no imaginary part, so it carries no phase pairing, and the null cone there is the interval's.
 - On the **two complex subspaces** the four forms carry, besides the intervals and the squares of their algebraic norms, a second real form: symmetric for the two bilinear forms and alternating for the two sesquilinear ones. The alternating companion is non-degenerate, so the centre carries one canonical pair and the vector subspace three, one to a spatial direction.
@@ -816,7 +831,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 
 ## Summary
 
-**One chain.** The four general products, their scalar-part forms and their algebraic norms are read on the six remarkable subspaces. The four products have the same value set on each subspace, because ${}^{\natural}$ and ${}^{*}$ preserve every subspace of the list; they differ in the structure they leave on the value. The product keeps a subspace inside itself for exactly the centre and the quaternion subspace, for all four products. The symmetrisation keeps it for exactly the centre, the quaternion subspace and the Hermitian subspace; the bracket for exactly the centre, the quaternion subspace, the vector subspace (the two bilinear products) and the anti-Hermitian subspace (the general plain sesquilinear product). The resulting algebras are: the centre, the field $\mathbb{C}$ for the two bilinear products and a Lie algebra for all four; the vector subspace, $\mathfrak{sl}(2,\mathbb{C})$ for the two bilinear products and no Jordan algebra; the quaternion subspace, a Jordan algebra for the general plain bilinear product and the Lie algebra $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ for the general plain bilinear and general quaternionic sesquilinear products; the anti-quaternion subspace, no algebra at all; $\mathbb{M}_+$, the Jordan algebra $H_2(\mathbb{C})$ for the two plain products and no Lie algebra; and $\mathbb{M}_-$, the Lie algebra $\mathfrak{u}(2)$ for the two plain products and no Jordan algebra.
+**One chain.** The four general products, their scalar-part forms and their algebraic norms are read on the six remarkable subspaces. The four products have the same value set on each subspace, because ${}^{\natural}$ and ${}^{*}$ preserve every subspace of the list; they differ in the structure they leave on the value. The product keeps a subspace inside itself for exactly the centre and the quaternion subspace, for all four products. The symmetrisation keeps it for exactly the centre, the quaternion subspace and the Hermitian subspace; the bracket for exactly the centre (all four products), the quaternion subspace (the general plain bilinear and general quaternionic sesquilinear products), the vector subspace (the two bilinear products) and the anti-Hermitian subspace (the general plain bilinear and general plain sesquilinear products). The resulting algebras are: the centre, the field $\mathbb{C}$ for the two bilinear products and a Lie algebra for all four; the vector subspace, $\mathfrak{sl}(2,\mathbb{C})$ for the two bilinear products and no Jordan algebra; the quaternion subspace, a Jordan algebra for the general plain bilinear product and the Lie algebra $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ for the general plain bilinear and general quaternionic sesquilinear products; the anti-quaternion subspace, no algebra at all; $\mathbb{M}_+$, the Jordan algebra $H_2(\mathbb{C})$ for the two plain products and no Lie algebra; and $\mathbb{M}_-$, the Lie algebra $\mathfrak{u}(2)$ for the two plain products and no Jordan algebra.
 
 **The forms.** All twenty-four restrictions are non-degenerate. Each form splits as $\varphi=g+i\sigma$, with $g$ real symmetric and $\sigma$ symmetric for $B$ and $N$, alternating for $H$ and $K$. The imaginary part vanishes on the four real-type subspaces and is non-degenerate on the two complex subspaces, of rank $2$ on the centre and rank $6$ on the vector subspace. The Kähler identity $\omega(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,i\tilde Q_2)$ holds for $H$ and $K$ on the complex subspaces, and the companion identity $\sigma=-g(\cdot,i\cdot)$ for $B$ and $N$.
 
@@ -849,7 +864,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces, their defining conditions, their bases, their dimensions and their role.
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the coordinate blocks, the pairwise intersections, the sums and the three decompositions.
 - [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html) and [The Sesquilinear Commutator](the-sesquilinear-commutator.html), for the plain reading's own halves.
-- [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html), for the convention of the four pairings, the four names and the pairs, and for the readings of the four on the algebra and on the material sector.
-- [The Four General Products: Composition, Probability, Causality, Gauge](../articles_physics/the-four-general-products-composition-probability-causality-gauge.html), for the physical readings of the four forms and their signature table on the remarkable subspaces.
+- [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html), for the convention of the four pairings, the four names and the pairs, and for the interpretations of the four on the algebra and on the material sector.
+- [The Four General Products: Composition, Probability, Causality, Gauge](../articles_physics/the-four-general-products-composition-probability-causality-gauge.html), for the physical interpretations of the four forms and their signature table on the remarkable subspaces.
 - [The Norm Defined by a Form](the-norm-defined-by-a-form.html) and [Hermitian Forms over Algebras and Norms](hermitian-forms-over-algebras-and-norms.html), for the passage from a form to its algebraic norm, and for the real part, the imaginary part and the alternating companion of a Hermitian form.
 

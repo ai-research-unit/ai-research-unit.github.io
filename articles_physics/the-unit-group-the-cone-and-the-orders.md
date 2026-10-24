@@ -14,7 +14,7 @@ The article reads three objects and their topology: the group, its boundary and 
 | The group of units, the determinant sequence, the centre and the matrix model | [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) |
 | The compact real form, the polar retraction, the homotopy groups and the universal cover | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The zero-divisor cone: closedness, dimension, smoothness, contractibility and link | [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) |
-| The Lipschitz and Hurwitz orders, their unit groups, the $24$-cell and the McKay correspondence | [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html) |
+| The Lipschitz and Hurwitz orders, their unit groups, the complex order and the McKay correspondence | [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html) |
 | The norm on the remarkable subspaces and the distribution of the units | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The parity-matched lattice and the kernel of the exponential | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 
@@ -310,6 +310,6 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction and the homotopy groups.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the link and the contractibility.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the parity-matched lattice and the kernel of the exponential.
-- [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the lattices and the finite unit groups.
+- [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html), for the lattices, the finite unit groups and the complex order.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), §*The Domain*, for the three construction domains and the witnesses in one table.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-cell.

@@ -86,7 +86,7 @@ A Clifford module is a module over the Clifford algebra, and the spinor module i
 | chirality and the half-spin representations | in even dimension $\Delta = \Delta_+ \oplus \Delta_-$ by the volume element; the half-spin representations $\rho_\pm$ | *Spin Representations and Clifford Modules with Inner Conjugation* |
 | the infinitesimal spin representation | $d\rho(v \wedge w) = \tfrac14[c(v),c(w)]$ on $\mathrm{SO}(V,\mathfrak{Q}) \cong \Lambda^2V$ | *Spin Representations and Clifford Modules with Inner Conjugation* |
 | the real, complex and quaternionic spinors | the reality structures by $d \bmod 8$; Majorana, Weyl and Majorana–Weyl spinors | *Real Spinors and Reality Conditions with Inner Conjugation* |
-| the biquaternion spinor module | the spinor module of the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$; its defining module is of complex type | *The Null Quadric and Its Projective Geometry*, §*Spinors and the Rulings*; *Biquaternion Other Algebraic Element Representations* |
+| the biquaternion spinor module | the spinor module of the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$; its defining module is of complex type | *Modules over the Biquaternion Algebra*; *Biquaternion Other Algebraic Element Representations* |
 | the spinor bundle and the Dirac operator | the geometric realisation of a Clifford module over a manifold | *Spin Geometry*; *Dirac Differential Operators* |
 
 ## Non-examples and Warnings

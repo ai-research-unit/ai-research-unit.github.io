@@ -13,7 +13,7 @@ $$
 L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2,\qquad R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_2\tilde Q_1 .
 $$
 
-Two ownership notes fix the boundaries of the article. The zero divisors are the content of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and the group of units is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*; both are cited here rather than restated, and they bear on the module category only in the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is *Biquaternion Rotations and Lorentz Transformations*; this article is about the modules, and it does not carry the group theory.
+Two ownership notes fix the boundaries of the article. The zero divisors are the content of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and the group of units is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*; both are cited here rather than restated, and they bear on the module category only in the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is *Biquaternion Rotations and Lorentz Transformations*, §*The Group of Units* to §*Unitary Representations*; this article is about the modules, and it does not carry the group theory.
 
 ## The Three Regular Modules
 
@@ -153,7 +153,7 @@ $$
 
 of complex dimension two, the **defining module** of $\mathbb{B}$. The second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\,\vec\Upsilon_x\}$ is a second minimal left ideal, isomorphic to the first.
 
-The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$. Multiplication by the idempotent fixes $\tilde\Pi_+$ and kills $\vec\Upsilon_y$, while multiplication by the off-diagonal elements interchanges the two: $\vec\Upsilon_x\tilde\Pi_+=0$, $\vec\Upsilon_y\tilde\Pi_+=\vec\Upsilon_y$, $\vec\Upsilon_x \vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y^2=0$. The action makes $S$ the defining two-dimensional module of $\mathbb{B}$. The splitting
+The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$. Multiplication by the idempotent fixes $\tilde\Pi_+$ and kills $\vec\Upsilon_y$, while multiplication by the off-diagonal elements interchanges the two: $\vec\Upsilon_x\tilde\Pi_+=0$, $\vec\Upsilon_y\tilde\Pi_+=\vec\Upsilon_y$, $\vec\Upsilon_x \vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y^2=0$. The action makes $S$ the defining two-dimensional module of $\mathbb{B}$. Under the matrix isomorphism $\mathsf M_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, with $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the first column identifies $S$ with $\mathbb{C}^2$, the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ with the standard basis, and the left action with the defining action of $M_2(\mathbb{C})$. The splitting
 
 $$
 S = \tilde\Pi_+\mathbb{B}\tilde\Pi_+ \oplus \tilde\Pi_-\mathbb{B}\tilde\Pi_+ = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_y
@@ -392,6 +392,7 @@ The morphisms are the complex matrices: $\operatorname{End}_\mathbb{B}(S)=\mathb
 | $\tilde\Pi_+,\tilde\Pi_-$ | orthogonal minimal idempotents $\tfrac12(e_t\pm i\vec e_z)$, $\tilde\Pi_++\tilde\Pi_-=e_t$ |
 | $\vec\Upsilon_x,\vec\Upsilon_y$ | the two off-diagonal elements $\tfrac12(i\vec e_x-\vec e_y)$, $\tfrac12(i\vec e_x+\vec e_y)$ |
 | $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ | defining module, the unique simple left $\mathbb{B}$-module, $\dim_\mathbb{C}=2$ |
+| $\mathsf M_2(\tilde Q)$ | the matrix of the left action on $S$ in the basis $(\tilde\Pi_+,\vec\Upsilon_y)$, with $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$ |
 | $S^{\oplus k}$ | general finitely generated left module, $\dim_\mathbb{C}=2k$ |
 | ${}_{\mathbb{B}}\mathbb{B}\cong S\oplus S$ | left regular module, free of rank one over $\mathbb{B}$, completely reducible |
 | $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ | commutant of the simple module |
@@ -406,6 +407,9 @@ The morphisms are the complex matrices: $\operatorname{End}_\mathbb{B}(S)=\mathb
 
 ## Further Reading
 
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its basis and its two conjugations.
+- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the one-sided ideals that are the submodules of the regular module.
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents, the Peirce decomposition and the roots of $+1$.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for semisimple rings, matrix algebras, Schur's lemma and Morita equivalence.
 - T. Y. Lam, *Lectures on Modules and Rings* (Springer, 1999), for the regular module, its projectivity and the centre as the bimodule endomorphism ring, and for torsion, regular elements and the structure of modules over noncommutative rings.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for modules and the regular module over finite-dimensional algebras, the matrix algebra $M_2(\mathbb{C})$, its minimal left ideals, the Peirce decomposition and projective modules.

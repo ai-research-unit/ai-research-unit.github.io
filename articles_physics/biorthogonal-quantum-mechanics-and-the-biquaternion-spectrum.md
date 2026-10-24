@@ -6,16 +6,16 @@ A non-normal element still has a spectral decomposition. What it loses is the or
 
 The standard language for this situation is **biorthogonal quantum mechanics**. The right eigenvectors of the element and the left eigenvectors of the same element form two bases that are dual to each other, not two orthonormal bases. The spectral projectors are built from one right vector and one left vector, and the probability rule uses the left pairing. When the element is normal, the two bases coincide, the projectors become Hermitian, and the rule reduces to the Born rule.
 
-This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of *Biquaternion Spectral Theory*. The left and right eigenvalue problem is that of *Biquaternion Spectral Theory*. The article owns the reading and its limits; it proves no spectral theorem.
+This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of *The Biquaternion Eigenvalue Decomposition*. The left and right eigenvalue problem is that of *The Biquaternion Eigenvalue Decomposition*. The article owns the reading and its limits; it proves no spectral theorem.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The spectrum, the eigenprojections and the two-term writing | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
-| The normality criterion and the Hermitian case | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
-| Left and right eigenvalues, and the central-spectrum convention | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
-| The spectral theorem for a normal element | [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html) |
+| The spectrum, the eigenprojections and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
+| The normality criterion and the Hermitian case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
+| Left and right eigenvalues, and the central-spectrum convention | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
+| The spectral theorem for a normal element | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The matrix model and the determinant | [The Element and Operator Representations](the-element-and-operator-representations.html) |
 | The Jordan and nilpotent regimes | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
@@ -169,7 +169,7 @@ The last row is the boundary of the whole construction. At an exceptional point 
 
 The biquaternion supplies the spectral decomposition and the projectors; it does not supply the metric. The choice $\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger}$ is the standard one, but it is a choice, and a different physical normalization gives a different metric. The article states the standard choice and does not claim uniqueness.
 
-The eigenvalues are central, so the left and right **eigenvalue** problems coincide. The biorthogonal structure is a statement about eigenvectors. The non-commutative left/right eigenvalue problem of *Biquaternion Spectral Theory* is a different subject, and it is not used here.
+The eigenvalues are central, so the left and right **eigenvalue** problems coincide. The biorthogonal structure is a statement about eigenvectors. The non-commutative left/right eigenvalue problem of *The Biquaternion Eigenvalue Decomposition* is a different subject, and it is not used here.
 
 A conserved probability needs a real spectrum. With complex eigenvalues the $\eta$-norm of an evolving state grows or decays, and the weights $p_\sigma$ are not conserved. The biorthogonal rule gives positive weights at one instant, not a conserved distribution in time. The dynamics of a non-Hermitian element is outside this article.
 
@@ -206,8 +206,8 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 
 ## Further Reading
 
-- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the spectrum, the eigenprojections and the normality criterion.
-- [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html), for the left and right eigenvalue problems and the spectral theorem.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections and the normality criterion.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the left and right eigenvalue problems and the spectral theorem.
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the matrix model used throughout.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the degenerate limit of the two bases.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian state space and the Born rule.

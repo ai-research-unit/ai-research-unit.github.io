@@ -441,4 +441,4 @@ The three approximation problems over the reduced biquaternion algebra — least
 - [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum and the singular values of the algebra.
 - [Compact Operators](compact-operators.html), for the singular values and the Schatten classes.
 - [Quaternion Augmented Statistics](quaternion-augmented-statistics.html), for the least squares problem in the non-commutative quaternion statistics.
-- [Biquaternion Objects and Their Matrix Correspondences](biquaternion-objects-and-their-matrix-correspondences.html), for the non-commutative companion of the matrix dictionary.
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the non-commutative companion of the matrix dictionary.

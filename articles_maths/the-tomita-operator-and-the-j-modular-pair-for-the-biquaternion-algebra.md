@@ -98,7 +98,7 @@ $$
 
 ### The Modular Pair of the Algebra
 
-The pair $(\mathcal{M},\xi)$ with $\mathcal{M}=\{L_{\tilde Q}\}$, $\xi=e_t$, has $\omega=\mathrm{Sc}$ as its vector state, the trace itself, $S(\tilde Q)=\tilde Q^{*}$, $\Delta=\mathrm{id}$, $\jmath={}^{*}$, and the trivial flow. In the matrix model $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ (*Biquaternion Objects and Their Matrix Correspondences*), the star is the conjugate transpose, so $S$ acts by $\mathsf{M}_2(\tilde Q)\mapsto\mathsf{M}_2(\tilde Q)^{*}$, and the modular conjugation exchanges the left and the right matrix multiplications.
+The pair $(\mathcal{M},\xi)$ with $\mathcal{M}=\{L_{\tilde Q}\}$, $\xi=e_t$, has $\omega=\mathrm{Sc}$ as its vector state, the trace itself, $S(\tilde Q)=\tilde Q^{*}$, $\Delta=\mathrm{id}$, $\jmath={}^{*}$, and the trivial flow. In the matrix model $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), the star is the conjugate transpose, so $S$ acts by $\mathsf{M}_2(\tilde Q)\mapsto\mathsf{M}_2(\tilde Q)^{*}$, and the modular conjugation exchanges the left and the right matrix multiplications.
 
 ### The Forced Failure on the Krein Space
 

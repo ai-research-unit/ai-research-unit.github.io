@@ -227,6 +227,48 @@ and it is stable under multiplication by non-zero complex scalars.
 
 **Remark (the spectral reading).** Inside $\mathcal C$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
 
+### The Spinor Factorisation of a Null Element
+
+The scalar-part split has a matrix reading that isolates it. Under the isomorphism $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$ the reduced norm is the determinant and the trace is twice the scalar part (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*):
+
+$$
+\det\mathsf M_2(\tilde Q)=N(\tilde Q),\qquad \operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t.
+$$
+
+On the cone the determinant vanishes, so a non-zero $\mathsf M_2(\tilde Q)$ has rank one and is an outer product,
+
+$$
+\mathsf M_2(\tilde Q)=u\,v^{\mathsf T},\qquad u=\begin{pmatrix}u_1\\u_2\end{pmatrix}\in\mathbb{C}^2,\quad v^{\mathsf T}=(v_1\ v_2),
+$$
+
+and the pair is determined only up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. The column is the spinor factor and the row the cospinor factor; only the matrix identity is used below.
+
+**Theorem (the scalar part is the contraction).** For a non-zero null $\tilde Q$ with $\mathsf M_2(\tilde Q)=uv^{\mathsf T}$,
+
+$$
+Q_t=\tfrac12\,v^{\mathsf T}u.
+$$
+
+*Proof.* $\operatorname{tr}(uv^{\mathsf T})=v^{\mathsf T}u$, while $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$.
+
+**Corollary (the two strata).** For a non-zero null element,
+
+$$
+Q_t=0\iff v^{\mathsf T}u=0,
+\qquad
+Q_t\neq0\iff v^{\mathsf T}u\neq0.
+$$
+
+The pure stratum is therefore the set of null elements whose two rank-one factors are orthogonal for the bilinear pairing, and the non-pure stratum is its complement.
+
+**Corollary (nilpotency).** For $\mathsf M_2(\tilde Q)=uv^{\mathsf T}$,
+
+$$
+\mathsf M_2(\tilde Q)^2=u\,(v^{\mathsf T}u)\,v^{\mathsf T}=(v^{\mathsf T}u)\,\mathsf M_2(\tilde Q),
+$$
+
+so $\mathsf M_2(\tilde Q)^2=0$ exactly when $v^{\mathsf T}u=0$, that is exactly when $Q_t=0$. This is the identity $\tilde Q^2=2Q_t\tilde Q$ in matrix form: the square is a multiple of the element, and the multiplier is the contraction of the two factors. On the non-pure stratum the multiplier is non-zero, and $\tilde Q/(2Q_t)=\tilde\Pi$ is the idempotent of the Peirce factorisation above.
+
 ## The Annihilators
 
 **Definition.** The **left** and the **right annihilator** of $\tilde Q$ in the plain product are
@@ -273,7 +315,7 @@ The restriction of the norm to a remarkable subspace has a realified signature, 
 
 *Proof.* The signatures give the values, and §*The Criterion* converts the values into the two statements. On the centre the norm is $Q_t^2$, which vanishes only at the origin. On a pure element the norm is $(\vec Q,\vec Q)$ and on a Hermitian element it is $|a_0|^2-|\vec b|^2$, so a zero in $\mathbb{M}_{+}$ or $\mathbb{M}_{-}$ has non-zero scalar part and is non-pure.
 
-**Remark.** The geometry also uses one mixed real subspace, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ of real dimension four, on which $N|_W=a^2+b^2-c^2-d^2$, of signature $(2,2)$ and projective quadric $S^1\times S^1$ (*The Null Quadric and Its Projective Geometry*, §*The Real Slices: Lorentzian, Split and Conformal*).
+**Remark.** The geometry also uses one mixed real subspace, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ of real dimension four, on which $N|_W=a^2+b^2-c^2-d^2$, of signature $(2,2)$.
 
 ## Summary
 
@@ -281,7 +323,7 @@ The biquaternion algebra carries four algebraic norms; only the quaternionic bil
 
 The plain product is associative and has the two-sided unit $e_t$. The units are the elements of non-zero norm: they form the group $\mathbb{B}^{\times}$, with inverse $\tilde Q^{\natural}/N(\tilde Q)$, and the algebra is the disjoint union $\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal C$ of the units and the null cone. The group is open and dense, the cone is closed of real codimension $2$ and is its boundary. The $\natural$-bilinear product, which has a left unit and no right unit, is recorded in one remark: there the one-sided solution is $\tilde Q/N(\tilde Q)$, and the criterion is the same.
 
-The degeneracy case is the null cone, with the origin at its apex and the zero divisors at its punctured points. The zero-divisor set splits into the pure stratum, the nilpotents of index two, of real dimension $4$, and the non-pure stratum, the non-zero complex multiples of idempotents, of real dimension $6$, the split being by the scalar part $Q_t$. The cone is not a subspace and is stable under the product. The realified signature of the norm is definite on the centre, the quaternion and the anti-quaternion subspaces, and indefinite on the other three.
+The degeneracy case is the null cone, with the origin at its apex and the zero divisors at its punctured points. The zero-divisor set splits into the pure stratum, the nilpotents of index two, of real dimension $4$, and the non-pure stratum, the non-zero complex multiples of idempotents, of real dimension $6$, the split being by the scalar part $Q_t$. In the matrix model a non-zero null element is the rank-one matrix $uv^{\mathsf T}$; its scalar part is the contraction $\tfrac12 v^{\mathsf T}u$, the pure stratum is the locus $v^{\mathsf T}u=0$, and the identity $\tilde Q^2=2Q_t\tilde Q$ is the rank-one identity $\mathsf M_2(\tilde Q)^2=(v^{\mathsf T}u)\mathsf M_2(\tilde Q)$. The cone is not a subspace and is stable under the product. The realified signature of the norm is definite on the centre, the quaternion and the anti-quaternion subspaces, and indefinite on the other three.
 
 The annihilators are the kernels of the two translations. They vanish in the regular case, are distinct complex planes on the punctured cone, meeting in the line $\mathbb{C}\tilde Q^{\natural}$, and are all of $\mathbb{B}$ at the origin.
 
@@ -301,6 +343,7 @@ The annihilators are the kernels of the two translations. They vanish in the reg
 | $\mathcal Z=\mathcal C\setminus\{0\}$ | the zero-divisor set |
 | $\mathcal C_{\mathrm p}=\{Q_t=0,\ \tilde Q\neq0\}$ | the pure stratum, the nilpotents of index two |
 | $\mathcal C_{\mathrm{np}}=\{Q_t\neq0\}$ | the non-pure stratum, complex multiples of non-trivial idempotents |
+| $\mathsf M_2(\tilde Q)=uv^{\mathsf T}$ | the rank-one factorisation of a non-zero null element |
 | $A(\tilde Q)=\{\tilde X:\tilde Q\tilde X=0\}$ | the left annihilator |
 | $B(\tilde Q)=\{\tilde X:\tilde X\tilde Q=0\}$ | the right annihilator |
 | $\tilde P^{\natural}\tilde Q$ | the $\natural$-bilinear product, with a left unit and no right unit |
@@ -316,6 +359,7 @@ The annihilators are the kernels of the two translations. They vanish in the reg
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the norm and its axioms.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of an algebraic norm and the separation of the four.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the minimal left ideals and the Peirce factorisation of the strata.
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the isomorphism $\mathsf M_2$, the determinant, the trace and the rank-one elements.
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the topology of $\mathbb{B}^{\times}$, its maximal compact subgroup and its homotopy.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the zero-divisor set and its criterion for the general quaternionic product.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the comparison of the zero-divisor sets of the twelve products.

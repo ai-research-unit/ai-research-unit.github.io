@@ -45,7 +45,7 @@ The article takes the following results as established and does not prove them a
 | the four factors, their ranges and their order | *Modulus–Unit Polar Decomposition of Biquaternions*, §*The Four Factors* | the word $\tilde Q=r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of Biquaternions*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde q\exp(i\tilde\Psi)$ and its domain |
 | the polar decomposition of the ordinary quaternions | *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors* | the first factor $\tilde q=r\tilde u_{\mathrm r}$ |
-| the eigenvalues and the axis | *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum* | the Hamilton row of the comparison |
+| the eigenvalues and the axis | *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion* | the Hamilton row of the comparison |
 | the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Exponential* and §*The Logarithm* | the second factor $\exp(i\tilde\Psi)$ |
 
 The key identity proved here is that of the construction with the polar modulus, $\tilde q=\tilde q_r(\cos\tilde\Psi)^{-1}$; it is proved in §*The Construction From the Parts*.
@@ -421,7 +421,7 @@ Under the three conjugations complex conjugation fixes the modulus and flips the
 
 ## Further Reading
 
-- [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), §*The Biquaternion Spectrum*, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
+- [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues*, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm of which the second factor of the pairing is built, and which carry the branch ambiguity of the construction.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four exponentials and the existence and uniqueness of the word that the pairing regroups.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and §*The Algorithm* of that article for the procedure itself, the factors in the coordinates of $\tilde{Q}$ and the exponents with their positions.

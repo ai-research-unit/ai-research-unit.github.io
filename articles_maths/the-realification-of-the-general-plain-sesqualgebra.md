@@ -90,7 +90,7 @@ a symplectic form of rank $8$, the sum of the canonical pairs of the four coordi
 $$
 \sigma(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,J\tilde Q_2),
 $$
-so that the complex form the block carries shows in the real reading its two faces, the Euclidean $g=H_{\mathbb{R}}$ and the alternating $\sigma$ (*Remarkable Subspaces and the Four Forms*).
+so that the complex form the block carries shows in the real reading its two faces, the Euclidean $g=H_{\mathbb{R}}$ and the alternating $\sigma$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*).
 
 The complex structure **preserves** the form,
 $$

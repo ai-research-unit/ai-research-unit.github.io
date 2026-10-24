@@ -14,7 +14,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t,\qquad N(\tilde Q)=\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=(Q_t^2+B^2)e_t.
 $$
 
-The number $B$ is a fixed complex square root of $Q_x^2+Q_y^2+Q_z^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the spectrum and the characteristic polynomial are *Biquaternion Spectral Theory*; the eigenvalue decomposition is *The Biquaternion Eigenvalue Decomposition*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
+The number $B$ is a fixed complex square root of $Q_x^2+Q_y^2+Q_z^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
 
 ## The Spectral Criterion
 
@@ -91,6 +91,31 @@ and they coincide exactly when $B=0$, that is exactly when $B^2=0$.
 **Corollary (the eigenspaces).** For a non-scalar $\tilde Q$ and each eigenvalue $\lambda$, the eigenspace $\operatorname{Ann}_{\ell}(\tilde Q-\lambda e_t)$ is a right ideal of complex dimension $2$. For $\tilde Q=Q_te_t$ the only eigenvalue is $Q_t$, and its eigenspace is all of $\mathbb{B}$.
 
 *Proof.* A non-zero non-unit in $\mathbb{B}$ has left multiplication of complex rank $2$, by *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Annihilators*; at the scalar the difference $\tilde Q-Q_te_t$ is zero.
+
+**Corollary (Cayley–Hamilton and the inverse).** Every $\tilde Q$ satisfies
+
+$$
+\tilde Q^2-2Q_t\tilde Q+N(\tilde Q)e_t=0 ,
+$$
+
+and if $N(\tilde Q)\neq0$ then $\tilde Q^{-1}=(2Q_te_t-\tilde Q)/N(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$.
+
+*Proof.* With $\tilde Q=Q_te_t+\vec Q$ and $\vec Q^2=-B^2e_t$, $\tilde Q^2=Q_t^2e_t+2Q_t\vec Q-B^2e_t=2Q_t\tilde Q-(Q_t^2+B^2)e_t$. Multiplying by $\tilde Q^{\natural}$ and using $N(\tilde Q)=Q_t^2+B^2$ gives the inverse.
+
+**Remark (left and right eigenvalues).** The centre of $\mathbb{B}$ is $\mathbb{C}$, so complex scalars commute with every element. A left eigenvalue, $\tilde Qv=\lambda v$, and a right eigenvalue, $\tilde Qv=v\lambda$, therefore define the same set when the scalar is required to lie in $\mathbb{C}$, and that set is $\sigma(\tilde Q)$. The distinction between the two eigenvalue problems, which is genuine over a noncommutative division ring (*Quaternion Spectral Theory*, §*The Spectrum of a Quaternion*), collapses here.
+
+## Similarity Classes and the Eigenvalue Dichotomy
+
+**Definition.** Two biquaternions $\tilde Q_1,\tilde Q_2$ are **similar** if $\tilde Q_2=S\tilde Q_1S^{-1}$ for some unit $S\in\mathbb{B}$.
+
+**Theorem (the classification).** Let $T=2Q_t$ and $D=N(\tilde Q)$, and let $\Delta=T^2-4D=-4B^2$.
+
+1. If $B\neq0$, the eigenvalues $Q_t\pm iB$ are distinct, and the similarity class is determined by the unordered pair of eigenvalues, equivalently by $(T,D)$.
+2. If $B=0$, the only eigenvalue is $Q_t$, and exactly two similarity classes share $(T,D)=(2Q_t,Q_t^2)$: the **central class** $\tilde Q=Q_te_t$, and the **non-semisimple class** $\vec Q\neq0$ with $\vec Q^2=0$, which is similar to the Jordan block with diagonal $Q_t$.
+
+*Proof.* (1) $p_{\tilde Q}$ has two distinct roots, so $\tilde Q$ is diagonalisable with those roots; any two such elements are conjugate in $\mathbb{B}\cong M_2(\mathbb{C})$. (2) $B=0$ gives $\vec Q^2=0$. If $\vec Q=0$ the element is central. If $\vec Q\neq0$, then $\tilde Q-Q_te_t$ is nonzero with square $0$, so the minimal polynomial is $(X-Q_t)^2$ and the Jordan form is a single block of size $2$; all such elements are conjugate.
+
+**Corollary.** In the non-semisimple class the element is a zero divisor exactly when $Q_t=0$, since $N(\tilde Q)=Q_t^2$.
 
 ## The Spectral-Degenerate Cone
 
@@ -1019,7 +1044,7 @@ The left and the right multiplication by $\tilde Q$ have complex rank $4$ when $
 
 The biquaternion algebra carries two quadratic conditions. The reduced norm $N=Q_t^2+B^2$ is multiplicative and decides invertibility; its zero locus is the null cone $\mathcal C$. The discriminant of the characteristic polynomial is $-4B^2$; its zero locus is the spectral-degenerate cone $\mathcal S$, and it decides whether the two eigenvalues $Q_t\pm iB$ can be separated.
 
-The spectral problem is stated without a module or an acting operator. An eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, equivalently for which $\tilde Q-\lambda e_t$ is a non-unit, equivalently for which $N(\tilde Q-\lambda e_t)=0$. The eigenspace is the left annihilator, a right ideal of complex dimension $2$ for a non-scalar element. A spectral idempotent is an idempotent commuting with the element, and on the regular side the spectral decomposition is the pair of Lagrange idempotents.
+The spectral problem is stated without a module or an acting operator. An eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, equivalently for which $\tilde Q-\lambda e_t$ is a non-unit, equivalently for which $N(\tilde Q-\lambda e_t)=0$. The eigenspace is the left annihilator, a right ideal of complex dimension $2$ for a non-scalar element. A spectral idempotent is an idempotent commuting with the element, and on the regular side the spectral decomposition is the pair of Lagrange idempotents. Cayley–Hamilton gives the inverse off the null cone, and the unordered spectrum determines the similarity class except at $B=0$, where the scalar and the non-semisimple nilpotent share it.
 
 The cone $\mathcal S$ is $\mathbb{C}e_t$ times the isotropic cone of the vector subspace, of complex dimension $3$ and real dimension $6$. It is smooth off the scalar vertex and singular along it. It is not a subspace, and it is not the set of defective elements: the vertex is semisimple. It is not a null cone, because $B^2$ is not a norm on the algebra; the only multiplicative norm is $N$.
 
@@ -1048,8 +1073,7 @@ The two cones are independent: neither contains the other. A zero divisor can ha
 ## Further Reading
 
 - [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.
-- [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), for the spectrum, the characteristic polynomial, Cayley–Hamilton and the spectral theorem.
-- [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition and the degenerate regimes.
+- [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections, the degenerate regimes, the Hermitian case and the spectral theorem.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the weak Peirce decomposition, the Peirce corners and the minimal left ideals.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the existence and uniqueness of the spectral decomposition in the general theory.
 - [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), for the interpolating idempotents.

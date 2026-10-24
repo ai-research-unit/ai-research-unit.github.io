@@ -16,7 +16,7 @@ $$
 
 with the two primitive idempotents $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec\Xi)$ of the pure root $\vec\Xi=-i\vec Q/B$. In the Clifford reading, $i$ is the volume element $\omega$, the biquaternion vector part $\vec Q$ is a bivector, the root $\vec\Xi$ is a unit vector, and the idempotents are the standard vector idempotents of grades $0$ and $1$. The eigenvalues are central elements of grades $0$ and $3$. The article develops this reading, records the Peirce and spinor structure that it makes visible, and treats the two degenerate regimes.
 
-The algebra and its four conjugations are from *The Biquaternion Algebra and Its Vector Spaces*; the spectrum, the characteristic polynomial and the spectral theorem are *Biquaternion Spectral Theory*; the roots of one and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the eigenvalue decomposition in coordinates is *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*; the Clifford dictionary is *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*; the general Clifford theory is *The Eigenvalue Decomposition in a Clifford Algebra*; and the grade decomposition is *The Geometric Product and the Grade Decomposition*.
+The algebra and its four conjugations are from *The Biquaternion Algebra and Its Vector Spaces*; the spectrum and the characteristic polynomial are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*; the normality criterion and the spectral theorem are §*The Hermitian Case* below; the roots of one and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the eigenvalue decomposition in coordinates is §*The Eigenprojectors* below; the Clifford dictionary is *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*; the general Clifford theory is *The Eigenvalue Decomposition in a Clifford Algebra*; and the grade decomposition is *The Geometric Product and the Grade Decomposition*.
 
 ## The Clifford Dictionary
 
@@ -85,7 +85,7 @@ $$
 \vec Q^{2}=-(Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2})e_{t},
 $$
 
-as in *Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*. Let $B$ be a square root of $Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ and assume $B\neq0$. Put
+as in *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*. Let $B$ be a square root of $Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ and assume $B\neq0$. Put
 
 $$
 \vec U=\frac{\vec Q}{B}, \qquad \vec\Xi=-i\vec U=-\frac{i\vec Q}{B}.
@@ -118,6 +118,8 @@ with the roots
 $$
 \lambda_{\pm}=Q_{t}\pm iB=Q_{t}\pm B\omega .
 $$
+
+The **spectrum**, defined by invertibility as $\sigma(\tilde Q)=\{\lambda\in\mathbb{C}:\tilde Q-\lambda e_t\text{ is not a unit}\}$, is this root set; the equivalence of the two definitions is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*.
 
 In the Clifford reading, the eigenvalues are **central elements of grades $0$ and $3$**: $Q_{t}$ is grade $0$, and $B\omega$ is the top grade. They are internal non-scalar eigenvalues in the sense of *The Eigenvalue Decomposition in a Clifford Algebra*, §*Internal and External Non-Scalar Eigenvalues*: the imaginary unit is the volume element of the algebra, not an external scalar. The discriminant is
 
@@ -170,7 +172,7 @@ $$
 =(Q_{t}+iB)\tilde\Pi_{+}+(Q_{t}-iB)\tilde\Pi_{-}\;}.
 $$
 
-This is the eigenvalue decomposition of *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution*, read in the Clifford algebra. The eigenvalues are distinct, the idempotents are nonzero, orthogonal and complete, and the resolution is unique up to the swap of the two signs. The scalar-vector form is
+This is the eigenvalue decomposition of §*The Eigenprojectors* above, read in the Clifford algebra. The eigenvalues are distinct, the idempotents are nonzero, orthogonal and complete, and the resolution is unique up to the swap of the two signs. The scalar-vector form is
 
 $$
 \tilde Q=Q_{t}e_{t}+B\vec U=Q_{t}e_{t}+iB\vec\Xi,
@@ -245,13 +247,15 @@ and the pair is not determined by $\tilde Q$. The two-projector writing is there
 
 ### The Hermitian Projectors
 
-Hermitian conjugation is the star, and normality is $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$, as in *Biquaternion Spectral Theory*, §*Hermitian and Normal Elements*; the conjugations are those of *Conventions in Mathematics*, §*The Conjugations*. In the Clifford reading, the star is the Clifford conjugation composed with the appropriate grade operations, and a Hermitian biquaternion is a normal element whose spectral projectors are fixed by the star.
+Hermitian conjugation is the star, and normality is $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$; the conjugations are those of *Conventions in Mathematics*, §*The Conjugations*. In the Clifford reading, the star is the Clifford conjugation composed with the appropriate grade operations, and a Hermitian biquaternion is a normal element whose spectral projectors are fixed by the star.
 
 **Proposition.** Let $B\neq0$. The following are equivalent: (i) $\tilde\Pi_{\pm}$ are Hermitian; (ii) $\vec U$ is real; (iii) $\vec\Xi$ is purely imaginary; (iv) $\tilde Q$ is normal.
 
-*Proof.* The equivalence of (i), (ii) and (iv) is *Biquaternion Spectral Theory*, §*The Spectral Theorem*, Proposition. The equivalence of (ii) and (iii) is the Clifford dictionary: $\vec U$ is a bivector and $\vec\Xi=-i\vec U=-\omega\vec U$ is its Hodge dual vector; the relation is multiplication by $-i$, so $\vec U$ is real exactly when $\vec\Xi$ is purely imaginary.
+*Proof.* (ii)$\iff$(iii) is the Clifford dictionary: $\vec U$ is a bivector and $\vec\Xi=-i\vec U=-\omega\vec U$ is its Hodge dual vector, so $\vec U$ is real exactly when $\vec\Xi$ is purely imaginary. For (i), $\tilde\Pi_\pm^{*}=\tfrac12(e_t\pm\vec\Xi^{*})$ with $\vec\Xi^{*}=-\overline{\vec\Xi}$, so the projectors are Hermitian exactly when $\vec\Xi=-\overline{\vec\Xi}$, which is (iii). For (iv), the matrix model turns $[\tilde Q,\tilde Q^{*}]=0$ into $\vec U\times\overline{\vec U}=0$, with $\times$ the complex bilinear cross product: normality forces the vector part to be parallel to its conjugate. If $\overline{\vec U}=\alpha\vec U$, conjugating $\vec U\cdot\vec U=1$ gives $\alpha^{2}=1$, and $\alpha=-1$ would give $\vec U\cdot\vec U=-1$; hence $\alpha=1$ and $\vec U$ is real. This proves (iv)$\iff$(ii) and closes the cycle.
 
-When the conditions hold, the projectors are the standard idempotents of the pure root $\vec\Xi=-i\vec u$ over a real unit vector $\vec u$, and the resolution is the spectral theorem of *Biquaternion Spectral Theory*, §*The Spectral Theorem*, read in the Clifford algebra. For a Hermitian $\tilde Q$ the eigenvalues are real, $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ with $\vec Q=i\vec q'$, and the two idempotents are Hermitian and orthogonal for the Hermitian form.
+**Theorem (the spectral theorem for a normal biquaternion).** Let $B\neq0$. Then $\tilde Q$ is normal exactly when $\vec U$ is real, and in that case $\tilde\Pi_\pm$ are Hermitian, $\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ is an orthogonal decomposition for the Hermitian form, and $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ is its spectral resolution. A normal biquaternion is Hermitian exactly when its spectrum is real.
+
+When the conditions hold, the projectors are the standard idempotents of the pure root $\vec\Xi=-i\vec u$ over a real unit vector $\vec u$. For a Hermitian $\tilde Q$ the eigenvalues are real, $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ with $\vec Q=i\vec q'$, and the two idempotents are Hermitian and orthogonal for the Hermitian form.
 
 ### The Grade Reading of the Hermitian Case
 
@@ -275,7 +279,7 @@ with $\vec\Xi=-i\vec Q/B$ a unit vector and $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}
 
 The Peirce corners of the pair are the four one-dimensional complex spaces of the matrix model; the diagonal part is $\mathbb{C}[\tilde Q]$, and the mixed part is the commutator with $\tilde\Pi_{+}$. The left ideals $\mathbb{B}\tilde\Pi_{\pm}$ are the two minimal left ideals, the spinor spaces. In the nilpotent regime $B=0$, $\vec Q\neq0$, there is no eigenvalue decomposition; in the scalar regime $\vec Q=0$, the one-term decomposition is unique but the two-projector refinement is not. In the Hermitian case the projectors are Hermitian, the root is purely imaginary, of the form $\vec\Xi=-i\vec u$ for a real unit vector $\vec u$, and the resolution is the spectral theorem of the biquaternion algebra.
 
-The coordinate formulas and the spectral theory are *Biquaternion Spectral Theory*, §*The Eigenprojections and the Spectral Resolution* and §*The Biquaternion Spectrum*; the roots and idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
+The spectrum and the similarity classification are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion* and §*Similarity Classes and the Eigenvalue Dichotomy*; the coordinate formulas and the projectors are §*The Eigenprojectors* above; the roots and idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
 
 ## Summary of Notation
 
@@ -299,5 +303,5 @@ The coordinate formulas and the spectral theory are *Biquaternion Spectral Theor
 
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternions with $\mathrm{Cl}_{3,0}$ and the volume element.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the bivectors, the volume element and the spinor ideals.
-- The biquaternion articles of this corpus: *The Biquaternion Algebra and Its Vector Spaces*, *Biquaternion Spectral Theory*, *Square Roots of One and the Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decompositions of the Biquaternion Algebra* and *Biquaternion Spectral Theory*.
+- The biquaternion articles of this corpus: *The Biquaternion Algebra and Its Vector Spaces*, *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the matrix model.

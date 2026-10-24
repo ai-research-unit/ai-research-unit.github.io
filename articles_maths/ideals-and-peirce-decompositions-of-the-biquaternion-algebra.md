@@ -641,6 +641,7 @@ A Peirce decomposition is the second reading of the same four-dimensional space.
 
 ## Further Reading
 
+- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the regular module, its submodules and the module category of $\mathbb{B}$.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982). The standard reference for the Peirce decomposition and the structure theory of finite-dimensional algebras.
 - T. Y. Lam, *A First Course in Noncommutative Rings*, Graduate Texts in Mathematics 131 (Springer, 2nd ed. 2001). Simplicity, semisimplicity, the Jacobson radical, and matrix rings.
 - Nathan Jacobson, *Basic Algebra II* (Dover, 2nd ed. 2009). Wedderburn–Artin theory and the radical.

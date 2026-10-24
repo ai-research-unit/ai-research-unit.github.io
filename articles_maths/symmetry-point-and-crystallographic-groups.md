@@ -89,7 +89,7 @@ $$
 
 where $m_i$ is the order of the stabiliser of a pole in the $i$-th orbit. Since the left side is less than $2$, the number of orbits is $2$ or $3$; the case of $2$ orbits gives (a) or (b) according to the orders, and the case of $3$ gives the solutions $(2,2,m)$ with $m$ arbitrary, leading to the dihedral family, and the accidental solutions $(2,3,3)$, $(2,3,4)$, $(2,3,5)$, of orders $12$, $24$, $60$, which are (c), (d), (e).
 
-**Remark (the double covers).** The preimage of a finite subgroup of $SO(3)$ under the double cover $SU(2) \to SO(3)$, or equivalently under $Sp(1) \to SO(3)$ inside the unit quaternions, is a finite subgroup of $Sp(1)$ of twice the order: the binary cyclic, binary dihedral and **binary polyhedral** groups $2T$, $2O$, $2I$ of orders $24$, $48$, $120$. These are the finite subgroups listed in *Biquaternion Orders and Finite Groups of Units*, where the $8$ Lipschitz and $24$ Hurwitz units and the binary tetrahedral group are computed, and the double cover is the source of the spin structures of the corpus.
+**Remark (the double covers).** The preimage of a finite subgroup of $SO(3)$ under the double cover $SU(2) \to SO(3)$, or equivalently under $Sp(1) \to SO(3)$ inside the unit quaternions, is a finite subgroup of $Sp(1)$ of twice the order: the binary cyclic, binary dihedral and **binary polyhedral** groups $2T$, $2O$, $2I$ of orders $24$, $48$, $120$. These are the finite subgroups listed in *Quaternion Orders and Finite Groups of Units*, where the $8$ Lipschitz and $24$ Hurwitz units and the binary tetrahedral group are computed, and the double cover is the source of the spin structures of the corpus.
 
 ### The Point Groups in Two and Three Dimensions
 

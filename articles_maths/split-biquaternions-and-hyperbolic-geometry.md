@@ -128,7 +128,7 @@ and the isomorphism $SO^{+}(3,1)\cong PSL_2(\mathbb{C})$ is the isomorphism of t
 
 *Proof.* Stereographic projection is conformal and sends the round sphere to the plane completed by a point, which is $\mathbb{C}P^1$; the identification of the boundary action with the Möbius action is the classical identification of the conformal group of the two-sphere with $PGL_2(\mathbb{C})$, and the isomorphism of $SO^{+}(3,1)$ with $PSL_2(\mathbb{C})$ is the standard exceptional isomorphism of the corresponding Lie algebras.
 
-This is the point at which the complex numbers enter the split biquaternion description of hyperbolic three-space, and it is the reason why the isometry group of this hyperbolic space is the projective group $PSL_2(\mathbb{C}) = SO^{+}(3,1)$, of which the group $SL_2(\mathbb{C})$ of the biquaternion algebra is the double cover; the biquaternion realisation of the same geometry, through $2\times2$ Hermitian matrices, is treated in *The Null Quadric and Its Projective Geometry* and is a different presentation of the same group.
+This is the point at which the complex numbers enter the split biquaternion description of hyperbolic three-space, and it is the reason why the isometry group of this hyperbolic space is the projective group $PSL_2(\mathbb{C}) = SO^{+}(3,1)$, of which the group $SL_2(\mathbb{C})$ of the biquaternion algebra is the double cover; the biquaternion realisation of the same geometry, through $2\times2$ Hermitian matrices, is a different presentation of the same group.
 
 ### The Ball Model and the Upper Half-Space Model
 

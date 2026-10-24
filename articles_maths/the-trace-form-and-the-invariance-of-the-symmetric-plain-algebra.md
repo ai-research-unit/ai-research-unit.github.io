@@ -10,7 +10,7 @@ $$
 
 the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)$, the operator traces built from it, and its restriction to the remarkable subspaces.
 
-The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The Four Forms and the Four Algebraic Norms*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Biquaternion Algebra in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four Forms*; the form is used here with the product and not re-derived.
+The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The Four Forms and the Four Algebraic Norms*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Biquaternion Algebra in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four General Products, Forms and Norms*; the form is used here with the product and not re-derived.
 
 ## The Trace Form
 
@@ -171,7 +171,7 @@ It is the linear form $\operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q}\bigr)/2$, a
 
 ### The Restriction Matrices
 
-The trace form is the general plain bilinear form, so its restrictions to the remarkable subspaces of *Introduction to the Remarkable Subspaces* are those of *Remarkable Subspaces and the Four Forms*, read here as the restrictions of the trace form of the block:
+The trace form is the general plain bilinear form, so its restrictions to the remarkable subspaces of *Introduction to the Remarkable Subspaces* are those of *Remarkable Subspaces and the Four General Products, Forms and Norms*, read here as the restrictions of the trace form of the block:
 
 | Subspace | Natural real basis | Restriction matrix | Signature | Rank |
 |---|---|---|---|---|
@@ -182,7 +182,7 @@ The trace form is the general plain bilinear form, so its restrictions to the re
 | Hermitian $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\mathrm{I}_4=\operatorname{diag}(1,1,1,1)$ | $(4,0)$ | $4$ |
 | Anti-Hermitian $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $-\mathrm{I}_4=\operatorname{diag}(-1,-1,-1,-1)$ | $(0,4)$ | $4$ |
 
-The matrices are the same six as in *Remarkable Subspaces and the Four Forms*, because the trace form is the general plain bilinear form; the table is reproduced here with the reading of the block.
+The matrices are the same six as in *Remarkable Subspaces and the Four General Products, Forms and Norms*, because the trace form is the general plain bilinear form; the table is reproduced here with the reading of the block.
 
 ### The Isotropic Cones of the Restrictions
 
@@ -210,6 +210,6 @@ The trace form of the symmetric plain algebra is $\tau(\tilde Q_1,\tilde Q_2)=\m
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the associativity of the plain form and its operator theory.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the left and right operators whose half-sum is the multiplication operator of the block.
-- [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html), for the restrictions of the form to the remarkable subspaces.
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions of the form to the remarkable subspaces.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the realified signature $(4,4)$.
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html), for the generic trace, the generic norm and the quadratic identity.

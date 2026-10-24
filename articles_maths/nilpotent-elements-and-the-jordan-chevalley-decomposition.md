@@ -291,13 +291,13 @@ The companion matrix of $f^2$ with $f = x^p - t$ over $k = \mathbb{F}_p(t)$ has 
 
 ### The biquaternion case
 
-Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of *Biquaternion Objects and Their Matrix Correspondences*, the element
+Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the element
 
 $$
 a = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} = I + E_{12}
 $$
 
-is unipotent. Its Jordan–Chevalley decomposition is $s = I$ and $n = E_{12}$, and its multiplicative form is $a = I \cdot a$ with unipotent part $a$. The example is the smallest non-semisimple biquaternion: the semisimple part is scalar, the nilpotent part is the off-diagonal matrix unit, and the two commute. A biquaternion whose matrix is diagonalisable has $n = 0$; a biquaternion whose matrix has a repeated eigenvalue and a nontrivial Jordan block has $n \neq 0$. The biquaternion spectral theory of *Biquaternion Spectral Theory* reads the same decomposition through the conjugations.
+is unipotent. Its Jordan–Chevalley decomposition is $s = I$ and $n = E_{12}$, and its multiplicative form is $a = I \cdot a$ with unipotent part $a$. The example is the smallest non-semisimple biquaternion: the semisimple part is scalar, the nilpotent part is the off-diagonal matrix unit, and the two commute. A biquaternion whose matrix is diagonalisable has $n = 0$; a biquaternion whose matrix has a repeated eigenvalue and a nontrivial Jordan block has $n \neq 0$. The biquaternion spectral theory of *The Biquaternion Eigenvalue Decomposition* reads the same decomposition through the conjugations.
 
 ## Summary
 

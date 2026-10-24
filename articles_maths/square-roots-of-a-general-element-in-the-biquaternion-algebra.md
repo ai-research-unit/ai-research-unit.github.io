@@ -18,7 +18,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 Throughout, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the scalar imaginary is $i$, and a general biquaternion is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_k\in\mathbb{C}$. The quaternion conjugate is $\tilde Q^{\natural}$, the complex conjugate is denoted $\bar{\tilde Q}$, and the Hermitian conjugate is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$.
 
-The equation $\tilde\Xi^2=\tilde Q$ names a product, so the root is relative to it. The plain square $\tilde\Xi\tilde\Xi$ and the general definition with the roots of a central value are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; throughout this article the square is the one of the general plain bilinear product $\tilde\Xi\tilde\Xi$, the multiplication of the biquaternion algebra, and the other three general products and their root problems are *The Four General Products and Their Relations*.
+The equation $\tilde\Xi^2=\tilde Q$ names a product, so the root is relative to it. The plain square $\tilde\Xi\tilde\Xi$ and the general definition with the roots of a central value are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; throughout this article the square is the one of the general plain bilinear product $\tilde\Xi\tilde\Xi$, the multiplication of the biquaternion algebra, and the other three general products and their root problems are *Square Roots of a General Element in the General Plain Sesqualgebra*, *Square Roots of a General Element in the General Quaternionic Algebra* and *Square Roots of a General Element in the General Quaternionic Sesqualgebra*.
 
 ## The Reduction
 
@@ -281,6 +281,10 @@ The number of roots is: **four** when $(\vec Q,\vec Q)\neq0$ and $n\neq0$; **two
 
 ## Further Reading
 
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the case $\tilde Q=+e_t$, the idempotents and their geometry.
+- [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the case $\tilde Q=0$ and the nilpotent cone.
+- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce decomposition attached to a root of $+1$.
+- [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same problem read in all twelve products.
 - A. Acus and A. Dargys, *Square roots of complexified quaternions*, arXiv:2601.08391 (2026), for the square-root problem of complexified quaternions and the worked examples reproduced here.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the central case.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the nilpotent cone.
