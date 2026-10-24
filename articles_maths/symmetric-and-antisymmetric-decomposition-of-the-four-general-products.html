@@ -73,7 +73,7 @@
 <p>The complex space of the biquaternion algebra carries four multiplications, the four general products of <em>The Four General Products and Their Relations</em>. Each of the four is split into a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong>, and the two parts are operations of the same class as the product they split, so the space carries the <strong>twelve products</strong>. This article writes each of the twelve out, reads the laws that separate them, fixes the three-letter code each carries, and gives the construction, the table and the counts.</p>
 <p>The split is a different operation in the two families. For the two $\mathbb{C}$-bilinear products the exchange is the interchange of the two arguments; for the two sesquilinear products the interchange alone returns a product of the opposite type, and the exchange is the interchange followed by the coefficientwise conjugation of the value. The two definitions are stated in §<em>The Method of the Decomposition</em>, below, and developed in <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> and <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>.</p>
 <p>The article assumes the four general products from <em>The Four General Products and Their Relations</em> and the element, the basis and the four conjugations from <em>The Biquaternion Algebra and Its Vector Spaces</em>.</p>
-<p>Throughout, the element $\tilde Q_1 = Q_{1,t} + \vec Q_1$ separates the complex scalar part $Q_{1,t}$ from the complex vector part $\vec Q_1 = Q_{1,x}\vec e_x+Q_{1,y}\vec e_y+Q_{1,z}\vec e_z$; $\overline{\vec Q_1}$ is the coefficientwise conjugate of the vector part, $(\vec Q_1,\vec Q_2)$ the complex bilinear dot product and $\vec Q_1\times\vec Q_2$ the complex bilinear cross product, as in <em>The Biquaternion Algebra and Its Vector Spaces</em>.</p>
+<p>Throughout, the element $\tilde Q_1 = Q_{1t} + \vec Q_1$ separates the complex scalar part $Q_{1t}$ from the complex vector part $\vec Q_1 = Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$; $\overline{\vec Q_1}$ is the coefficientwise conjugate of the vector part, $(\vec Q_1,\vec Q_2)$ the complex bilinear dot product and $\vec Q_1\times\vec Q_2$ the complex bilinear cross product, as in <em>The Biquaternion Algebra and Its Vector Spaces</em>.</p>
 <p><strong>The code.</strong> A product carries a three-letter code. The first letter is $\mathrm G$ for the general product, $\mathrm S$ for its symmetric part and $\mathrm A$ for its antisymmetric part. The second is $\mathrm P$ for the plain product and $\mathrm Q$ for the quaternionic one. The third is $\mathrm A$ for the $\mathbb{C}$-bilinear class and $\mathrm S$ for the sesquilinear class over $(\mathbb{C},\bar{\cdot})$. The twelve codes are $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$.</p>
 <hr />
 <h2 id="the-method-of-the-decomposition">The Method of the Decomposition</h2>
@@ -100,13 +100,13 @@ $$</p>
 <p>Throughout the reading, $f$ is the product being read and $s$ and $a$ are its symmetric and its antisymmetric part, defined as in §<em>The Method of the Decomposition</em>: the plain interchange of the two arguments in the two $\mathbb{C}$-bilinear families and the conjugate transpose in the two sesquilinear ones.</p>
 <h3 id="the-general-plain-bilinear-product">The General Plain Bilinear Product</h3>
 <p>$$
-\tilde Q_1\tilde Q_2=\bigl[Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1+\vec Q_1\times\vec Q_2.
+\tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2.
 $$</p>
-<p>The general plain bilinear product, the multiplication of the two elements as they stand: scalar part $Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)$ and vector part $Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1+\vec Q_1\times\vec Q_2$. It is $\mathbb{C}$-bilinear, <strong>associative</strong>, and $e_t$ is a unit on both sides. It is the only associative product of the twelve.</p>
+<p>The general plain bilinear product, the multiplication of the two elements as they stand: scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$. It is $\mathbb{C}$-bilinear, <strong>associative</strong>, and $e_t$ is a unit on both sides. It is the only associative product of the twelve.</p>
 <p>Its values fill the whole space $\mathbb{B}$.</p>
 <h3 id="the-general-plain-sesquilinear-product">The General Plain Sesquilinear Product</h3>
 <p>$$
-\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
+\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
 $$</p>
 <p>The general plain sesquilinear product, the second factor read through the Hermitian conjugation ${}^{*}$. Both products of the pair are the natural conjugates of the two orders of one underlying product,
 $$
@@ -117,13 +117,13 @@ It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, $\mathbb{C}$-linear in the f
 <p>Its values fill the whole space $\mathbb{B}$.</p>
 <h3 id="the-general-quaternionic-bilinear-product">The General Quaternionic Bilinear Product</h3>
 <p>$$
-\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1,t}\vec Q_2-Q_{2,t}\vec Q_1-\vec Q_1\times\vec Q_2.
+\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$</p>
 <p>The general quaternionic bilinear product, the general plain bilinear product with the first factor read through ${}^{\natural}$. It is $\mathbb{C}$-bilinear, <strong>not associative</strong>, and $e_t$ is a unit on the <strong>left</strong> only. Its exchange is the natural conjugation of its value, $\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$.</p>
 <p>Its values fill the whole space $\mathbb{B}$.</p>
 <h3 id="the-general-quaternionic-sesquilinear-product">The General Quaternionic Sesquilinear Product</h3>
 <p>$$
-\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
 $$</p>
 <p>The general quaternionic sesquilinear product, both slots read through a conjugation. Both products of the pair are the natural conjugates of the two orders of one underlying product,
 $$
@@ -135,7 +135,7 @@ It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, <strong>not associative</str
 <h3 id="the-symmetric-plain-bilinear-product">The Symmetric Plain Bilinear Product</h3>
 <p>The symmetric part of the general plain bilinear product above.</p>
 <p>$$
-\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1.
+\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1.
 $$</p>
 <p>The Jordan product $\tilde Q_1\bullet\tilde Q_2$, the general plain bilinear product with the cross term dropped. It is commutative, $e_t$ is a unit on both sides, and it satisfies the <strong>Jordan identity</strong>; it is the only one of the four symmetric parts that does, and it is the only part of the eight that has a unit at all. The identity is not put to the four general products, which are neither symmetrisations nor antisymmetrisations; the counts over the parts are in §<em>The Counts of the Failures</em>.</p>
 <h3 id="the-symmetric-plain-sesquilinear-product">The Symmetric Plain Sesquilinear Product</h3>
@@ -145,24 +145,24 @@ $$</p>
 \tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)
 =\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)
 =\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)
-=\bigl[Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]
+=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]
 \;}.
 $$</p>
-<p>The value $\tilde Q_1\tilde Q_2^{*}$ has scalar part $H=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the <strong>Hermitian form</strong> $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ of <em>The Four Forms and the Four Algebraic Norms</em> read as a product, and it is <strong>central</strong>: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is <strong>conjugate-commutative</strong>, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its algebraic norm is the square read through the form, $s(\tilde Q_2,\tilde Q_2)=\langle\tilde Q_2,\tilde Q_2\rangle_{*}=|Q_{2,t}|^{2}+(\vec Q_2,\overline{\vec Q_2})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it <strong>fails</strong> the Jordan identity on the whole space, with witness $x=y=\vec e_x$, where the two sides are $0$ and $e_t$.</p>
+<p>The value $\tilde Q_1\tilde Q_2^{*}$ has scalar part $H=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the <strong>Hermitian form</strong> $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ of <em>The Four Forms and the Four Algebraic Norms</em> read as a product, and it is <strong>central</strong>: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is <strong>conjugate-commutative</strong>, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its algebraic norm is the square read through the form, $s(\tilde Q_2,\tilde Q_2)=\langle\tilde Q_2,\tilde Q_2\rangle_{*}=|Q_{2t}|^{2}+(\vec Q_2,\overline{\vec Q_2})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it <strong>fails</strong> the Jordan identity on the whole space, with witness $x=y=\vec e_x$, where the two sides are $0$ and $e_t$.</p>
 <h3 id="the-symmetric-quaternionic-bilinear-product">The Symmetric Quaternionic Bilinear Product</h3>
 <p>The symmetric part of the general quaternionic bilinear product above.</p>
 <p>$$
-\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)\bigr].
+\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr].
 $$</p>
-<p>The quaternion form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ of <em>The Four General Products and Their Relations</em> read as a product; its scalar part is $\langle\cdot\rangle$ and its vector part is zero. It is commutative, its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ — it compares two elements and returns a multiple of $e_t$ — and it has no unit. It is <strong>not</strong> a Jordan product.</p>
+<p>The quaternion form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ of <em>The Four General Products and Their Relations</em> read as a product; its scalar part is $\langle\cdot\rangle$ and its vector part is zero. It is commutative, its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ — it compares two elements and returns a multiple of $e_t$ — and it has no unit. It is <strong>not</strong> a Jordan product.</p>
 <h3 id="the-symmetric-quaternionic-sesquilinear-product">The Symmetric Quaternionic Sesquilinear Product</h3>
 <p>The symmetric part of the general quaternionic sesquilinear product above, under the conjugate transpose.</p>
 <p>$$
 \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}\bigr)
 =\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)
-=\bigl[Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1,
+=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1,
 $$</p>
-<p>since $\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\tilde Q_2^{*}\tilde Q_1^{\natural}$. The value $\tilde Q_1^{\natural}\tilde Q_2^{*}$ has scalar part $K=Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose is not the conjugation of the value here — the two cross products cancel between the two orders instead of adding — so the half-sum keeps the scalar part and the mixed term and cancels the cross product. Its scalar part is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ of <em>The Krein Gram Matrix of the Biquaternion Algebra</em> and its vector part is $-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1$, so its values lie in <strong>no</strong> subspace of the remarkable subspaces. It is <strong>conjugate-commutative</strong>, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, and it <strong>fails</strong> the Jordan identity, with witness $x=y=\vec e_x$ where the two sides are $-e_t$ and $e_t$. Its algebraic norm is not central in general: at $\tilde Q_2=e_t+\vec e_x$ it is $-2\vec e_x$, while the real vector directions, among them $\vec e_x$, carry central algebraic norms.</p>
+<p>since $\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\tilde Q_2^{*}\tilde Q_1^{\natural}$. The value $\tilde Q_1^{\natural}\tilde Q_2^{*}$ has scalar part $K=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose is not the conjugation of the value here — the two cross products cancel between the two orders instead of adding — so the half-sum keeps the scalar part and the mixed term and cancels the cross product. Its scalar part is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ of <em>The Krein Gram Matrix of the Biquaternion Algebra</em> and its vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$, so its values lie in <strong>no</strong> subspace of the remarkable subspaces. It is <strong>conjugate-commutative</strong>, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, and it <strong>fails</strong> the Jordan identity, with witness $x=y=\vec e_x$ where the two sides are $-e_t$ and $e_t$. Its algebraic norm is not central in general: at $\tilde Q_2=e_t+\vec e_x$ it is $-2\vec e_x$, while the real vector directions, among them $\vec e_x$, carry central algebraic norms.</p>
 <h3 id="the-antisymmetric-plain-bilinear-product">The Antisymmetric Plain Bilinear Product</h3>
 <p>The antisymmetric part of the general plain bilinear product above.</p>
 <p>$$
@@ -175,7 +175,7 @@ $$</p>
 \tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)
 =\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)
 =\mathrm{Vect}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)
-=-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
+=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
 $$</p>
 <p>The same value as the symmetric part, with the difference in place of the sum: the half-difference cancels the scalar part and keeps the vector part. It is <strong>pure vector</strong>, so its image is the vector subspace $\mathrm{Vect}(\mathbb{B})$. It is <strong>conjugate-alternating</strong>, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$, and its value at the two equal arguments is the <strong>vector part of the square</strong>,
 $$
@@ -185,7 +185,7 @@ which is <strong>not zero</strong> in general: for $\tilde Q_2=\vec e_x+i\vec e_
 <h3 id="the-antisymmetric-quaternionic-bilinear-product">The Antisymmetric Quaternionic Bilinear Product</h3>
 <p>The antisymmetric part of the general quaternionic bilinear product above.</p>
 <p>$$
-\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1,t}\vec Q_2-Q_{2,t}\vec Q_1-\vec Q_1\times\vec Q_2.
+\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$</p>
 <p>The quaternionic product with its scalar part removed: scalar part zero, vector part the mixed term with the cross term subtracted. It is alternating, its values lie in the vector subspace, and it <strong>fails</strong> the Jacobi identity, with witness $(e_t,\vec e_x,\vec e_y)$ where the cyclic sum is $-\vec e_z\neq0$. It is half the commutator $[\tilde Q_1,\tilde Q_2]_{\natural}=\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$.</p>
 <h3 id="the-antisymmetric-quaternionic-sesquilinear-product">The Antisymmetric Quaternionic Sesquilinear Product</h3>
@@ -221,8 +221,8 @@ $$</p>
 <tr>
 <td>the general plain bilinear product</td>
 <td>$\tilde Q_1\tilde Q_2$</td>
-<td>$\bigl[Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)\bigr]$</td>
-<td>$+Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1+\vec Q_1\times\vec Q_2$</td>
+<td>$\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]$</td>
+<td>$+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$</td>
 <td>$\mathbb{C}$</td>
 <td>associative</td>
 <td>$e_t$, both sides</td>
@@ -231,8 +231,8 @@ $$</p>
 <tr>
 <td>the general plain sesquilinear product</td>
 <td>$\tilde Q_1\tilde Q_2^{*}$</td>
-<td>$\bigl[Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
-<td>$-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>$\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>not associative</td>
 <td>$e_t$, right only</td>
@@ -241,8 +241,8 @@ $$</p>
 <tr>
 <td>the general quaternionic bilinear product</td>
 <td>$\tilde Q_1^{\natural}\tilde Q_2$</td>
-<td>$\bigl[Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)\bigr]$</td>
-<td>$+Q_{1,t}\vec Q_2-Q_{2,t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
+<td>$\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]$</td>
+<td>$+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
 <td>$\mathbb{C}$</td>
 <td>not associative</td>
 <td>$e_t$, left only</td>
@@ -251,8 +251,8 @@ $$</p>
 <tr>
 <td>the general quaternionic sesquilinear product</td>
 <td>$\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
-<td>$\bigl[Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
-<td>$-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>$\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>not associative</td>
 <td>none</td>
@@ -261,8 +261,8 @@ $$</p>
 <tr>
 <td>the symmetric plain bilinear product</td>
 <td>$\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$</td>
-<td>$\bigl[Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)\bigr]$</td>
-<td>$+Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1$</td>
+<td>$\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]$</td>
+<td>$+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$</td>
 <td>$\mathbb{C}$</td>
 <td>commutative, <strong>Jordan</strong></td>
 <td>$e_t$, both sides</td>
@@ -271,7 +271,7 @@ $$</p>
 <tr>
 <td>the symmetric plain sesquilinear product</td>
 <td>$\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)$</td>
-<td>$\bigl[Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
+<td>$\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
 <td>$0$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>conjugate-commutative, no Jordan</td>
@@ -281,7 +281,7 @@ $$</p>
 <tr>
 <td>the symmetric quaternionic bilinear product</td>
 <td>$\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$</td>
-<td>$\bigl[Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)\bigr]$</td>
+<td>$\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]$</td>
 <td>$0$</td>
 <td>$\mathbb{C}$</td>
 <td>commutative, no Jordan</td>
@@ -291,8 +291,8 @@ $$</p>
 <tr>
 <td>the symmetric quaternionic sesquilinear product</td>
 <td>$\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$</td>
-<td>$\bigl[Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
-<td>$-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1$</td>
+<td>$\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>conjugate-commutative, no Jordan</td>
 <td>none</td>
@@ -312,7 +312,7 @@ $$</p>
 <td>the antisymmetric plain sesquilinear product</td>
 <td>$\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)$</td>
 <td>$\bigl[0\bigr]$</td>
-<td>$-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>conjugate-alternating, no Jacobi</td>
 <td>none</td>
@@ -322,7 +322,7 @@ $$</p>
 <td>the antisymmetric quaternionic bilinear product</td>
 <td>$\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$</td>
 <td>$\bigl[0\bigr]$</td>
-<td>$Q_{1,t}\vec Q_2-Q_{2,t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
+<td>$Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
 <td>$\mathbb{C}$</td>
 <td>alternating, no Jacobi</td>
 <td>none</td>
@@ -445,7 +445,7 @@ coincides with it at $y=x$ alone, which would answer a weaker question; the form
 <td>the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$</td>
 </tr>
 <tr>
-<td>$\tilde Q_2=Q_{2,t}e_t+\vec Q_2$</td>
+<td>$\tilde Q_2=Q_{2t}e_t+\vec Q_2$</td>
 <td>a biquaternion, its scalar and vector parts</td>
 </tr>
 <tr>
@@ -481,7 +481,7 @@ coincides with it at $y=x$ alone, which would answer a weaker question; the form
 <td>the antisymmetric part of a sesquilinear product</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$</td>
 <td>the quaternion form, the scalar part of the symmetric quaternionic bilinear product</td>
 </tr>
 <tr>

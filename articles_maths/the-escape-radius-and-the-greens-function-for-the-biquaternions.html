@@ -74,9 +74,9 @@
 <p>$$
 G_C(\zeta)=\lim_{n\to\infty}2^{-n}\log|\zeta_n|
 $$</p>
-<p>exists, vanishes exactly on the filled Julia set, satisfies $G_C(\zeta^2+C)=2G_C(\zeta)$, and behaves like $\log|\zeta|$ at infinity. In the biquaternion algebra $\mathbb{B}$ the first object fails: there is no single escape radius, because the square of a non-zero element can be zero. This article shows that the second object survives, in a conditional form off the zero divisors, states the exact form it takes for a central parameter, and places the general existence question in the pluripotential theory of Part III.</p>
-<p>The quadratic family and its critical set are <em>The Biquaternion Quadratic Map and Its Julia Sets</em>; the failure of the single radius and the conditional radius $R_\delta$ are <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the classical theory is <em>The Escape Radius and the Green's Function</em>, <em>The Filled Julia Set and the Green's Function</em> and <em>Plurisubharmonic Functions</em>; the pluripotential theory of several variables is <em>Plurisubharmonic Functions</em> and <em>Several Complex Variables</em>.</p>
-<p>The article owns the escaping set, the Green's function of a biquaternion parameter, its norm-independence, its functional equation and its vanishing locus on the regular part, the exact eigenvalue formula for a central parameter, and the statement of the obstruction at the zero divisors.</p>
+<p>exists, vanishes exactly on the filled Julia set, satisfies $G_C(\zeta^2+C)=2G_C(\zeta)$, and behaves like $\log|\zeta|$ at infinity. In the biquaternion algebra $\mathbb{B}$ the first object fails: there is no single escape radius, because the square of a non-zero element can be zero. This article shows that the second object survives, in a conditional form off the zero divisors, states the exact form it takes for a central parameter, and assembles the pluripotential framework it supports: the Monge–Ampère current, the conditional equilibrium measure, its product form on the idempotent plane, and the mass loss at the cone.</p>
+<p>The quadratic family and its critical set are <em>The Biquaternion Quadratic Map and Its Julia Sets</em>; the failure of the single radius and the conditional radius $R_\delta$ are <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the classical theory is <em>The Escape Radius and the Green's Function</em>, <em>The Filled Julia Set and the Green's Function</em> and <em>Plurisubharmonic Functions</em>; the pluripotential theory of several variables is <em>Plurisubharmonic Functions</em>, <em>Several Complex Variables</em> and <em>Fractal Analysis</em>.</p>
+<p>The article owns the escaping set, the Green's function of a biquaternion parameter, its norm-independence, its functional equation and its vanishing locus on the regular part, the exact eigenvalue formula for a central parameter, the Monge–Ampère current and the conditional equilibrium measure, the product form of the measure on the idempotent plane, and the statement of the obstruction at the zero divisors.</p>
 <p><strong>Standing convention.</strong> $F_{\tilde Q_2}(\tilde Q)=\tilde Q^2+\tilde Q_2$ in the general plain bilinear product, $\mathcal K_{\tilde Q_2}$ the filled Julia set, $J_{\tilde Q_2}$ its boundary, $\|\cdot\|_E$ the Euclidean norm, $\|\cdot\|_F$ the Frobenius norm on $M_2(\mathbb{C})$.</p>
 <h2 id="the-escaping-set">The Escaping Set</h2>
 <p><strong>Definition.</strong> The <strong>escaping set</strong> of the parameter $\tilde Q_2$ is</p>
@@ -121,11 +121,35 @@ $$</p>
 <p>and in particular $\tilde Q\in\Omega_{\tilde Q_2}$ if and only if at least one eigenvalue escapes, while $\tilde Q\in\mathcal K_{\tilde Q_2}$ if and only if both eigenvalues lie in the filled Julia set $K_C$.</p>
 <p><strong>Proof.</strong> By the eigenvalue reduction the spectrum of $\mathsf{M}_2(F_{\tilde Q_2}^n(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$. A matrix norm is comparable to the maximum modulus of the eigenvalues up to a constant depending only on the matrix and its diagonaliser, so $\log\|\mathsf{M}_2(F^n(\tilde Q))\|_F=\max_j\log|q_n(\lambda_j)|+O(1)$; dividing by $2^n$ and letting $n\to\infty$ the $O(2^{-n})$ term vanishes and the limit is the maximum of the two complex Green's functions. The escape and boundedness statements follow from $\Omega=\{G>0\}$ and $\mathcal K=\{G=0\}$ in the complex theory.</p>
 <p><strong>Corollary (the escape radius of the central slice).</strong> For $\tilde Q_2=Ce_t$ every point whose matrix has an eigenvalue of modulus exceeding $1+|C|$ escapes, and the level sets of $G_{\tilde Q_2}$ on a slice are the level sets of the two complex Green's functions.</p>
+<h2 id="the-equilibrium-measure-and-the-mongeampere-current">The Equilibrium Measure and the Monge–Ampère Current</h2>
+<p>The Green's function of a polynomial map of $\mathbb{C}^k$ carries a measure, and the measure is the bridge between the dynamics and the geometry: it is the harmonic measure of the fractal, the maximal-entropy measure, and the limit of the distribution of the preimages. For a proper map the construction is a theorem. For the biquaternion map the construction is conditional, and the failure is again the cone.</p>
+<p><strong>Theorem (the equilibrium measure of a proper polynomial map).</strong> Let $P:\mathbb{C}^k\to\mathbb{C}^k$ be a polynomial map of algebraic degree $d$ whose leading homogeneous part is proper, and let $G_P=\lim_{n\to\infty}d^{-n}\log^+\|P^n\|$ be its Green's function. Then $G_P$ is plurisubharmonic on $\mathbb{C}^k$ or identically $-\infty$, $P^*G_P=d\,G_P$, and</p>
+<p>$$
+\boxed{\;\mu_P=(dd^cG_P)^k\;}
+$$</p>
+<p>is a probability measure with $P^*\mu_P=d^k\mu_P$, supported on the Julia set of $P$, of maximal entropy $k\log d$, and satisfying the equidistribution of preimages.</p>
+<p><strong>Proof.</strong> This is the theorem of Fornæss–Sibony and Bedford–Jonsson, presented in <em>Several Complex Variables</em> and <em>Plurisubharmonic Functions</em>; the invariance is the chain rule $P^*dd^cG=dd^c(P^*G)=d\,dd^cG$ raised to the power $k$, and the normalisation is the definition of $\mu_P$.</p>
+<p><strong>Remark (what properness buys).</strong> The properness of the leading homogeneous part is what makes the pullback of $dd^cG$ a current of the right mass, equivalently what makes the pullback of the class of the hyperplane have the expected degree. <strong>The biquaternion map fails exactly this hypothesis: the leading part $\tilde Q_1\mapsto\tilde Q_1^2$ has the square-zero cone as its fibre over $0$, and the mass is lost there.</strong></p>
+<p><strong>Proposition (the current and its formal invariance).</strong> Let $\tilde Q_2=Ce_t$ be central and let $G_{\tilde Q_2}$ be the Green's function, defined on the $\delta$-regular part of the escaping set. On the open set where $G_{\tilde Q_2}$ is plurisubharmonic and smooth, the current</p>
+<p>$$
+\boxed{\;\gamma_{\tilde Q_2}=(dd^cG_{\tilde Q_2})^4\;}
+$$</p>
+<p>is positive and satisfies $F_{\tilde Q_2}^*\gamma_{\tilde Q_2}=16\,\gamma_{\tilde Q_2}$.</p>
+<p><strong>Proof.</strong> $F_{\tilde Q_2}^*G_{\tilde Q_2}=2G_{\tilde Q_2}$ (<em>The Conditional Green's Function</em>, above), the pullback commutes with $dd^c$, and $dd^c(2G)=2\,dd^cG$; raising to the fourth power multiplies the current by $2^4=16$.</p>
+<p><strong>Remark (sixteen is not the branch count).</strong> The multiplier $16$ is the algebraic degree raised to the complex dimension, and it is the multiplier of the current, not the mass of a probability measure. The square map has four inverse branches generically, not sixteen (<em>Square Roots of a General Element in the Biquaternion Algebra</em>), so the entropy suggested by the branches is $2\log2$, not $4\log2$. <strong>The discrepancy between $16$ and $4$ is the measure-theoretic form of the mass loss at the cone, and it is the precise sense in which the several-variable theorem does not globalise.</strong> The normalised equilibrium measure of the biquaternion map is therefore conditional: it exists on the regular part, it is not known to extend across the cone, and its entropy, where it exists, is expected to be $2\log2$.</p>
+<p><strong>Theorem (the product form on the idempotent plane).</strong> Let $\tilde\Pi$ be a primitive idempotent, $\tilde\Pi'$ the complementary primitive idempotent, $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ the idempotent plane, and $\tilde Q_2=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in that plane. Then the equilibrium measure of the restriction is the product</p>
+<p>$$
+\boxed{\;\mu_{\tilde Q_2}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2}\;}
+$$</p>
+<p>of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2+C_j$, and its entropy is $2\log2$.</p>
+<p><strong>Proof.</strong> On the plane the map is the pair of complex quadratic maps (<em>The Slices of the Biquaternion Julia Sets</em>), the ambient complex dimension is two, and the equilibrium measure of a product map is the product of the equilibrium measures of the factors, the standard product theorem for polynomial maps (<em>Several Complex Variables</em>). The entropy adds, $\log2+\log2=2\log2$.</p>
 <h2 id="the-general-parameter">The General Parameter</h2>
 <p>For a non-central parameter the orbit is no longer a polynomial in one element, the spectrum does not separate, and there is no formula. What remains is the general pluripotential theory of polynomial maps of a complex space, and it must be quoted carefully, because the map here is degenerate.</p>
 <p><strong>Remark (what the general theory gives, and what it does not).</strong> For a polynomial map $F:\mathbb{C}^k\to\mathbb{C}^k$ of algebraic degree $d$ whose leading homogeneous part is proper, the limit $d^{-n}\log^+\|F^n\|$ exists, is plurisubharmonic or identically $-\infty$, vanishes exactly on the filled Julia set and satisfies $G(F)=d\,G$ (<em>Several Complex Variables</em>, <em>Plurisubharmonic Functions</em>, and the pluripotential theory of Part III). <strong>The leading part of the biquaternion quadratic map is $\tilde Q^2$, and it is not proper: its fibre over $0$ is the square-zero cone</strong> (a subset of the zero-divisor cone, of complex dimension two; <em>Square Roots of a General Element in the Biquaternion Algebra</em>). The general theory therefore does not apply off the cone without modification, the plurisubharmonic candidate $\log^+\|\tilde Q\|_E$ has the right growth but the pullback estimate fails on the cone, and the existence and regularity of the Green's function for a general biquaternion parameter are open. <strong>The article's position is: the object is defined on the regular part, is exact for a central parameter, and is a research question in general.</strong></p>
 <h2 id="summary">Summary</h2>
-<p>There is no single escape radius for a biquaternion parameter, because a non-zero element can square to zero; the escaping set is nevertheless well defined and independent of the norm, and the finite certification of escape is the conditional radius $R_\delta$ indexed by the reciprocal condition number of the iterate. The Green's function $G_{\tilde Q_2}=\lim 2^{-n}\log^+\|F_{\tilde Q_2}^n\|$ is independent of the norm whenever it exists, satisfies $G\circ F=2G$, vanishes on the filled Julia set, and is defined on the $\delta$-regular part of the escaping set for every $\delta>0$, with the normalization $G=\log\|\tilde Q\|_E+O(1)$ there. For a central parameter it is exactly the maximum of the two complex Green's functions of the eigenvalues, so the central slice reproduces the classical escape radius and the classical level sets. For a non-central parameter the general pluripotential theory does not apply unchanged, because the leading part of the map is not proper and its exceptional set contains the zero-divisor cone; the existence and regularity of the Green's function there are open.</p>
+<p>There is no single escape radius for a biquaternion parameter, because a non-zero element can square to zero; the escaping set is nevertheless well defined and independent of the norm, and the finite certification of escape is the conditional radius $R_\delta$ indexed by the reciprocal condition number of the iterate. The Green's function $G_{\tilde Q_2}=\lim 2^{-n}\log^+\|F_{\tilde Q_2}^n\|$ is independent of the norm whenever it exists, satisfies $G_{\tilde Q_2}\circ F_{\tilde Q_2}=2G_{\tilde Q_2}$, vanishes on the filled Julia set, and is defined on the $\delta$-regular part of the escaping set for every $\delta>0$, with the normalization $G=\log\|\tilde Q\|_E+O(1)$ there. For a central parameter it is exactly the maximum of the two complex Green's functions of the eigenvalues, so the central slice reproduces the classical escape radius and the classical level sets.</p>
+<p>The Monge–Ampère current $\gamma=(dd^cG)^4$ is positive and formally invariant with multiplier $16$ on the open set where $G$ is plurisubharmonic and smooth, but $16$ is the algebraic degree raised to the complex dimension and not the branch count: the square has four inverse branches, so the entropy suggested by them is $2\log2$, not $4\log2$. The discrepancy is the mass lost at the cone, and it is why the equilibrium measure is conditional on the regular part and why the several-variable theorem does not globalise. On the idempotent plane the measure is the product of the two one-variable equilibrium measures and its entropy is $2\log2$.</p>
+<p>For a non-central parameter the general pluripotential theory does not apply unchanged, because the leading part of the map is not proper and its exceptional set contains the zero-divisor cone; the existence and regularity of the Green's function there are open.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -171,6 +195,26 @@ $$</p>
 <td>$q_n$</td>
 <td>the iterates of the complex quadratic map</td>
 </tr>
+<tr>
+<td>$\gamma_{\tilde Q_2}=(dd^cG_{\tilde Q_2})^4$</td>
+<td>the Monge–Ampère current</td>
+</tr>
+<tr>
+<td>$\mu_{\tilde Q_2}$</td>
+<td>the equilibrium measure, where it exists</td>
+</tr>
+<tr>
+<td>$\mu_C$</td>
+<td>the one-variable equilibrium measure of $\zeta\mapsto\zeta^2+C$</td>
+</tr>
+<tr>
+<td>$k=4$, $d=2$</td>
+<td>the complex dimension and the algebraic degree</td>
+</tr>
+<tr>
+<td>$W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$</td>
+<td>the idempotent plane</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -178,8 +222,10 @@ $$</p>
 <li><a href="the-biquaternion-quadratic-map-and-its-julia-sets.html">The Biquaternion Quadratic Map and Its Julia Sets</a>, for the family and the central-parameter reduction.</li>
 <li><a href="the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html">The Biquaternion Mandelbrot Set and the Connectedness Locus</a>, for the collapse of the square and the conditional radius.</li>
 <li><a href="the-escape-radius-and-the-greens-function.html">The Escape Radius and the Green's Function</a>, for the classical object and its normalization.</li>
-<li><a href="the-pluripotential-theory-of-the-biquaternion-dynamics.html">The Pluripotential Theory of the Biquaternion Dynamics</a>, for the several-variable theory and the equilibrium measure.</li>
+<li><a href="the-biquaternion-holomorphic-dynamics-and-the-jacobian.html">The Biquaternion Holomorphic Dynamics and the Jacobian</a>, for the Fatou set, the dynamical Julia set and the several definitions of the Julia set.</li>
+<li><a href="square-roots-of-a-general-element-in-the-biquaternion-algebra.html">Square Roots of a General Element in the Biquaternion Algebra</a>, for the four inverse branches of the square and the cone of roots of zero.</li>
 <li><a href="several-complex-variables.html">Several Complex Variables</a>, for the plurisubharmonic tools and the several-variable theory the general case would need.</li>
+<li><a href="the-self-similar-measure-and-the-invariant-measure.html">The Self-Similar Measure and the Invariant Measure</a> and <a href="multifractal-analysis-and-the-legendre-transform.html">Multifractal Analysis and the Legendre Transform</a>, for the measure-theoretic statements of the category.</li>
 </ul>
       </div>
     </main>

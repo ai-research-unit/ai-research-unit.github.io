@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Krein Form of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-krein-form-of-the-biquaternion-algebra"><strong>The Krein Form of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The general quaternionic sesquilinear form of the biquaternion algebra is
+$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}
+=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}),
+\qquad \varepsilon=(1,-1,-1,-1).
+$$
+It is linear in the first argument and conjugate-linear in the second, and it is non-degenerate, of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$. Indefiniteness runs through everything below: the form has a canonical involution, its orthogonal complement is not a complement, it has isotropic elements and totally isotropic subspaces, and its non-negative set is a cone. This article reads the form whole: the matrices, the inertia, the involution, the orthogonality, the isotropy and the cone.</p>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the vector subspace is $\mathbb{V}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$. An element is written $\tilde Q=c+\vec v$ with $c=Q_t\in\mathbb{C}$ and $\vec v=(Q_x,Q_y,Q_z)\in\mathbb{C}^3$. The Euclidean norm is $\lVert\tilde Q\rVert_E^2=\sum_\mu\lvert Q_\mu\rvert^2$. The <strong>definite companion</strong> is
+$$
+\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
+$$
+and the <strong>fundamental symmetry</strong> is $J={}^{\natural}=\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis.</p>
+<p>The restrictions to the remarkable subspaces are <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra</em>; the global level sets and the hyperbolic ball are <em>The Krein Level Sets and the Hyperbolic Structure</em>; the operator theory is <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>; the Cartan decomposition is <em>The Krein Cartan Decomposition of the Operator Algebra</em>; and the comparison with the other three pairings is <em>The Four Forms and the Four Algebraic Norms</em>. This article owns the form itself and its indefinite structure.</p>
+<h2 id="the-form-and-its-gram-matrices">The Form and Its Gram Matrices</h2>
+<p><strong>Definition.</strong> The <strong>Gram matrix</strong> of the form in a basis $u_1,\dots,u_n$ is $G_{\mu\nu}=\langle u_\mu,u_\nu\rangle_{\natural*}$.</p>
+<p><strong>Theorem (the coefficient Gram matrix).</strong> In the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
+$$
+\boxed{\; G=\operatorname{diag}(1,-1,-1,-1)=E\; },
+$$
+so the basis is orthogonal, the diagonal entries are $1,-1,-1,-1$, and $\det G=-1$.</p>
+<p><em>Proof.</em> $\langle e_\mu,e_\nu\rangle_{\natural*}=\sum_\lambda\varepsilon_\lambda (e_\mu)_\lambda\overline{(e_\nu)_\lambda}=\varepsilon_\mu\delta_{\mu\nu}$: the units are orthogonal, and each carries its own sign. The determinant is the product $\varepsilon_t\varepsilon_x\varepsilon_y\varepsilon_z=-1$.</p>
+<p><strong>Theorem (the real basis).</strong> In the real basis
+$$
+e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z,\ ie_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z
+$$
+of the realification $\mathbb{B}_{\mathbb{R}}$, the entries of the complex Gram matrix are
+$$
+\langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu},\qquad
+\langle e_\mu,ie_\nu\rangle_{\natural*}=-i\varepsilon_\mu\delta_{\mu\nu},\qquad
+\langle ie_\mu,e_\nu\rangle_{\natural*}=i\varepsilon_\mu\delta_{\mu\nu},\qquad
+\langle ie_\mu,ie_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu}.
+$$
+The mixed entries are purely imaginary, so the matrix of the realified form, that is of $\operatorname{Re}\langle\cdot,\cdot\rangle_{\natural*}$, is
+$$
+G_{\mathbb{R}}=\begin{pmatrix}E&0\\0&E\end{pmatrix}
+=\operatorname{diag}(1,-1,-1,-1,\,1,-1,-1,-1),
+$$
+of signature $(2,6)$.</p>
+<p><em>Proof.</em> The diagonal identities are the coefficient computation, with $\lvert i\rvert^2=1$ in the last. For the mixed entry, $(e_\mu)_\mu=1$ and $(ie_\nu)_\mu=i\delta_{\mu\nu}$, so $\langle e_\mu,ie_\nu\rangle_{\natural*}=\varepsilon_\mu\overline{i\delta_{\mu\nu}}=-i\varepsilon_\mu\delta_{\mu\nu}$; the conjugate entry is its conjugate. The realified form reads the real part of the complex form on real vectors, so the purely imaginary mixed block contributes nothing, and the real matrix is the two diagonal blocks $E,E$.</p>
+<p><strong>Remark (the complex matrix on the real basis is not the form's matrix).</strong> The full complex matrix of the entries above,
+$$
+\tilde G=\begin{pmatrix}E&-iE\\ iE&E\end{pmatrix},
+$$
+is Hermitian but singular: its determinant is $\det(E^2-E^2)=0$. It is the table of values on a real basis, not the matrix of a $\mathbb{C}$-bilinear form, and it is not the matrix that carries the signature. The form is sesquilinear, so its invariants are read on the realification, whose matrix $G_{\mathbb{R}}$ is block diagonal and non-singular. The mixed entries are the bookkeeping of the conjugate-linearity; they disappear on taking the real part.</p>
+<p><strong>Corollary (the two real slices).</strong> On the real slice $\mathbb{H}_{\mathbb{B}}$ the form is the real Krein form $q_t^2-q_x^2-q_y^2-q_z^2$, of signature $(1,3)$, and on the second slice $i\mathbb{H}_{\mathbb{B}}$ it is the same form in the imaginary coefficients. The realification is the orthogonal sum of the two slices and has signature $(1,3)+(1,3)=(2,6)$.</p>
+<p><em>Proof.</em> The tensor product $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{B}}$ identifies the coefficient basis with the complexification of the real basis of $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so the form is the displayed real quadratic form; on $i\mathbb{H}_{\mathbb{B}}$ the coefficients are purely imaginary, and $\lvert i\rvert^2=1$ gives the same signs. The two slices are the two diagonal blocks of $G_{\mathbb{R}}$.</p>
+<p><strong>Remark (the four forms).</strong> The algebra carries four pairings, and their Gram matrices separate them cleanly: the plain bilinear form $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ has $E$; the Hermitian form $\langle\cdot,\cdot\rangle_*$ has $\mathrm{I}_4$; the quaternionic bilinear form $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ has $\mathrm{I}_4$; and the Krein form has $E$. The second slot, identity or conjugate transpose, decides whether the form is bilinear or sesquilinear, and the first slot, identity or natural conjugation, decides the sign matrix. The table and the isometry groups are <em>The Four Forms and the Four Algebraic Norms</em>.</p>
+<h2 id="the-form-in-the-matrix-representation">The Form in the Matrix Representation</h2>
+<p><strong>Proposition (the form as a matrix trace).</strong> For all biquaternions,
+$$
+\boxed{\;\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}
+=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde Q_2)^{\dagger}\,\mathsf{M}_2(\tilde Q_1)\bigr)
+=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_2^{\natural})^{\dagger}\mathsf{M}_2(\tilde Q_1)\bigr)\; },
+$$
+where $\dagger$ is the conjugate transpose in the matrix algebra. For $\tilde Q=e_t+i\vec e_x$ the model is
+$$
+\mathsf{M}_2(\tilde Q)=\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
+\operatorname{adj}\mathsf{M}_2(\tilde Q)=\begin{pmatrix}1&-1\\-1&1\end{pmatrix},\qquad
+\operatorname{adj}\mathsf{M}_2(\tilde Q)^{\dagger}\mathsf{M}_2(\tilde Q)=0,
+$$
+of trace $0$, matching $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\lvert1\rvert^2-\lvert i\rvert^2=0$: the element is isotropic and its matrix is singular, of rank one.</p>
+<p><em>Proof.</em> $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\overline{\tilde Q_2}\tilde Q_1)=\mathrm{Sc}\bigl((\tilde Q_2^{\natural})^{*}\tilde Q_1\bigr)$, because $(\tilde Q^{\natural})^{*}=\overline{\tilde Q}$; the trace identity $\mathrm{Sc}(\tilde Q_3\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_3)\mathsf{M}_2(\tilde S))$ of <em>The Matrix Element Representation and the Biquaternion Dynamics</em> gives the result, and $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$ gives the second form.</p>
+<p><strong>Corollary (the three trace expressions).</strong> The plain bilinear form, the Hermitian form and the Krein form are the three pairings
+$$
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr),
+\qquad
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}\bigr),
+\qquad
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}\bigr).
+$$
+The adjugate acts on the second factor for the bilinear form, the conjugate transpose on the second factor for the Hermitian form, and both on the Krein form, with the adjugate on the first factor.</p>
+<p><strong>Remark (the adjugate marks the Krein case).</strong> The identity $\operatorname{adj}(MN)=\operatorname{adj}(N)\operatorname{adj}(M)$ is the matrix form of the anti-automorphism $\natural$, and the same adjugate is the fundamental symmetry in the matrix model: $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$. The three expressions above differ only by which factor is adjugated and which is conjugated.</p>
+<h2 id="inertia-indices-and-positive-subspaces">Inertia, Indices and Positive Subspaces</h2>
+<p><strong>Theorem (Sylvester).</strong> Every basis can be replaced by an orthonormal one, and the numbers $n$ of $+1$ and $m$ of $-1$ are invariants of the form: over $\mathbb{C}$, $(n,m)=(1,3)$; over $\mathbb{R}$, $(n,m)=(2,6)$. The coefficient basis is already orthonormal, with one $+1$ and three $-1$ in the complex reading, and with two $+1$ and six $-1$ in the real reading.</p>
+<p><em>Proof.</em> Diagonalising by congruence and scaling each basis vector to value $\pm1$ gives an orthonormal basis; inertia is invariant by Sylvester's law (<em>Quadratic Forms and Polarisation</em>, §<em>Sylvester's Law of Inertia</em>). The counts are the signs of $G$ and of $G_{\mathbb{R}}$.</p>
+<p><strong>Definition.</strong> Let $n$ and $m$ be the dimensions of the positive and of the negative definite part of a fundamental decomposition. The pair $(n,m)$ is the <strong>signature</strong>, $m$ is the <strong>negative index</strong>, and $\min(n,m)$ is the <strong>Pontryagin index</strong>.</p>
+<p><strong>Theorem (the signature and the two indices).</strong> Over $\mathbb{C}$, $(n,m)=(1,3)$, the negative index is $3$ and the Pontryagin index is $1$; over $\mathbb{R}$, $(n,m)=(2,6)$, the negative index is $6$ and the Pontryagin index is $2$. With the Krein form the algebra has finite negative index, denoted $\Pi_{6}$ over $\mathbb{R}$.</p>
+<p><em>Proof.</em> The eigenspace splitting of $J={}^{\natural}$ is a fundamental decomposition, with positive part the centre $\mathbb{C}_{\mathbb{B}}$ and negative part the vector subspace $\mathbb{V}_{\mathbb{B}}$ (§<em>The Eigenspaces and the Fundamental Decomposition</em>), of complex dimensions $1$ and $3$ and therefore of real dimensions $2$ and $6$. The smaller of the two is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; the subscript of $\Pi_{6}$ records the negative index.</p>
+<p><strong>Remark (the two readings are different invariants).</strong> Over $\mathbb{C}$ the form is a Hermitian form on a complex space of dimension four, and its signature counts complex dimensions, $(1,3)$; over $\mathbb{R}$ it is a real symmetric form on a real space of dimension eight, and its signature counts real dimensions, $(2,6)$. The passage from one reading to the other doubles both entries; it does not preserve them. The negative index is $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$, and the Pontryagin index is $1$ and $2$. The name $\Pi_{6}$ carries the real negative index.</p>
+<p><strong>Theorem (the maximal positive subspaces).</strong> A positive definite subspace has complex dimension at most $1$, and real dimension at most $2$. The maximal ones are exactly the lines
+$$
+\ell_{\tilde V}=\mathbb{C}(e_t+\tilde V),\qquad \tilde V\in\mathbb{V}_{\mathbb{B}},\quad \lVert\tilde V\rVert_E<1,
+$$
+and over $\mathbb{R}$ the realification of such a line is the positive definite plane $\mathrm{span}_{\mathbb{R}}\{e_t+\tilde V,i(e_t+\tilde V)\}$.</p>
+<p><em>Proof.</em> A positive definite subspace meets the negative definite vector subspace $\mathbb{V}_{\mathbb{B}}$ only at the origin, so it injects into $\mathbb{B}/\mathbb{V}_{\mathbb{B}}$, of complex dimension $1$; hence its complex dimension is at most one, and its real dimension at most two. A positive definite line has a nonzero scalar coordinate, since $Q_t=0$ gives $\langle\tilde Q,\tilde Q\rangle_{\natural*}=-\lVert\vec Q\rVert_E^2<0$; scaling, the line is $\mathbb{C}(e_t+\tilde V)$ and
+$$
+\langle e_t+\tilde V,e_t+\tilde V\rangle_{\natural*}=1-\lVert\tilde V\rVert_E^2
+$$
+is positive exactly for $\lVert\tilde V\rVert_E<1$. The real plane is the realification of the complex line, and it is maximal because the real positive index is two.</p>
+<p><strong>Remark (real planes that are not complex).</strong> Over $\mathbb{R}$ the positive index is two, and the real planes $\mathrm{span}_{\mathbb{R}}\{e_t+\tilde V,i(e_t+\tilde V)\}$ are the realifications of the complex lines. The realification carries further maximal positive planes that are not complex, the graphs of real-linear maps $\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}}$ of norm less than one. The complex classification above is the one used by the operator theory, where all maps are $\mathbb{C}$-linear.</p>
+<h2 id="the-natural-conjugation-as-a-fundamental-symmetry">The Natural Conjugation as a Fundamental Symmetry</h2>
+<p><strong>Definition.</strong> A <strong>fundamental symmetry</strong> of an indefinite inner product is a $\mathbb{C}$-linear involution $J$, self-adjoint for the form, such that $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$ and $\langle\tilde Q_1,J\tilde Q_1\rangle_{\natural*}>0$ for $\tilde Q_1\neq0$.</p>
+<p><strong>Theorem (the natural conjugation is one).</strong> The natural conjugation $J={}^{\natural}$ is a fundamental symmetry of the Krein form:
+$$
+\boxed{\; J^{2}=\mathrm{id},\qquad \langle\tilde Q_2,J\tilde Q_1\rangle_{\natural*}=\langle J\tilde Q_2,\tilde Q_1\rangle_{\natural*},\qquad \langle\tilde Q_1,J\tilde Q_1\rangle_{\natural*}=\lVert\tilde Q_1\rVert_E^{2}>0\ (\tilde Q_1\neq0) \;},
+$$
+and the definite form it induces is the Hermitian companion,
+$$
+\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}=\langle\tilde Q_2,\tilde Q_1^{\natural}\rangle_{*} .
+$$</p>
+<p><em>Proof.</em> $J$ is $\mathbb{C}$-linear and an involution because it multiplies each coefficient by the real sign $\varepsilon_\mu$. For the self-adjointness, $\langle\tilde Q_2,J\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J^{2}\tilde Q_1\rangle_{*}=\langle\tilde Q_2,\tilde Q_1\rangle_{*}$ and $\langle J\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle J\tilde Q_2,J\tilde Q_1\rangle_{*}=\sum_\mu\varepsilon_\mu^{2}Q_{2\mu}\overline{Q_{1\mu}}=\langle\tilde Q_2,\tilde Q_1\rangle_{*}$, using $(J\tilde Q_1)_\mu=\varepsilon_\mu Q_{1\mu}$. For positivity, $\langle\tilde Q_1,J\tilde Q_1\rangle_{\natural*}=\sum_\mu\varepsilon_\mu^{2}\lvert Q_{1\mu}\rvert^{2}=\lVert\tilde Q_1\rVert_E^{2}$. The bridge identity is the first computation.</p>
+<p><strong>Corollary (an isometry of both forms).</strong> $J$ preserves the Krein form and the Hermitian companion,
+$$
+\langle J\tilde Q_2,J\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*},\qquad \langle J\tilde Q_2,J\tilde Q_1\rangle_{*}=\langle\tilde Q_2,\tilde Q_1\rangle_{*},
+$$
+and it is orthogonal for the Euclidean norm, $\lVert J\tilde Q_1\rVert_E=\lVert\tilde Q_1\rVert_E$.</p>
+<p><em>Proof.</em> Both forms are sums of $\lvert Q_\mu\rvert^2$ with signs and of off-diagonal pairings; $J$ multiplies each coefficient by a real sign, and $\varepsilon_\mu^2=1$ removes it from every diagonal expression, while off-diagonal pairings receive the same sign in both factors.</p>
+<p><strong>Proposition (the natural conjugation is an anti-automorphism).</strong> ${}^{\natural}$ is a $\mathbb{C}$-linear algebra anti-automorphism of order two: ${}^{\natural}(e_t)=e_t$ and
+$$
+(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}.
+$$
+It commutes with the complex conjugation and with the dagger, ${}^{\natural}\bar{\cdot}=\bar{\cdot}\,{}^{\natural}$ and ${}^{\natural}{}^{*}={}^{*}{}^{\natural}$, and it exchanges the sides of the left and right multiplications,
+$$
+{}^{\natural}L_{\tilde Q_1}{}^{\natural}=R_{\tilde Q_1^{\natural}},\qquad
+{}^{\natural}R_{\tilde Q_2}{}^{\natural}=L_{\tilde Q_2^{\natural}}.
+$$</p>
+<p><em>Proof.</em> ${}^{\natural}$ is quaternion conjugation on the coefficients, and quaternion conjugation reverses products; on the units, $\vec e_\mu^{\natural}=-\vec e_\mu$ and $(-\vec e_\mu)(-\vec e_\nu)=\vec e_\mu\vec e_\nu=-(\vec e_\nu\vec e_\mu)$ for $\mu\neq\nu$. The commutation with $\bar{\cdot}$ is that $i$ is fixed and $\bar{\cdot}$ acts on the coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ commutes with ${}^{\natural}$ because $\bar{\cdot}$ does and ${}^{\natural}{}^{2}=\mathrm{id}$. For the last identities, $\bigl({}^{\natural}L_{\tilde Q_1}{}^{\natural}\bigr)(\tilde Q_3)={}^{\natural}(\tilde Q_1\tilde Q_3^{\natural})=\tilde Q_3\tilde Q_1^{\natural}=R_{\tilde Q_1^{\natural}}\tilde Q_3$; the second is the same computation.</p>
+<p><strong>Remark (the matrix picture).</strong> Under $\mathsf{M}_2$ the natural conjugation is the adjugate, $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)=\mathsf{A}\,\mathsf{M}_2(\tilde Q)^{\mathsf T}\mathsf{A}^{-1}$ with $\mathsf{A}=i\sigma_2$, and the anti-automorphism property is $\operatorname{adj}(MN)=\operatorname{adj}(N)\operatorname{adj}(M)$.</p>
+<h2 id="the-eigenspaces-and-the-fundamental-decomposition">The Eigenspaces and the Fundamental Decomposition</h2>
+<p><strong>Theorem (the decomposition is the $\natural$-splitting).</strong> The eigenspaces of $J$ are
+$$
+\mathbb{B}_{+}=\ker(J-\mathrm{id})=\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{e_t\},\qquad
+\mathbb{B}_{-}=\ker(J+\mathrm{id})=\mathbb{V}_{\mathbb{B}}=\{Q_{1t}=0\},
+$$
+the centre and the vector subspace. They are the positive and the negative definite parts of the fundamental decomposition
+$$
+\boxed{\; \mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}},\qquad \mathbb{C}_{\mathbb{B}}\perp\mathbb{V}_{\mathbb{B}} \;},
+$$
+of complex dimensions $(1,3)$ and real dimensions $(2,6)$.</p>
+<p><em>Proof.</em> An element is fixed by $J$ exactly when its vector coefficients vanish, that is when it lies in the centre, and it is negated exactly when its scalar coefficient vanishes. $J^{2}=\mathrm{id}$ gives the direct sum, and orthogonality is the sign computation of the form. The dimensions are read from the coefficients.</p>
+<p><strong>Corollary (the spectrum).</strong> The eigenvalues of $J$ are $+1$ and $-1$, with multiplicities $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$.</p>
+<p><strong>Corollary (the fundamental decomposition is algebra data).</strong> The fundamental decomposition is exactly the eigenspace splitting of one of the four involutions of the algebra; the remarkable subspaces and their dimensions determine it, and it needs no choice. The centre is the positive part and the vector subspace the negative part.</p>
+<p><em>Proof.</em> The statement is the theorem together with the identification of the fixed and anti-fixed spaces of ${}^{\natural}$ in <em>Comparison of the Remarkable Subspaces</em>.</p>
+<h2 id="fundamental-decompositions-and-the-family-of-symmetries">Fundamental Decompositions and the Family of Symmetries</h2>
+<p><strong>Definition.</strong> A <strong>fundamental decomposition</strong> of $\mathbb{B}$ is a Krein-orthogonal splitting $\mathbb{B}=\mathbb{W}_+\perp_K\mathbb{W}_-$ into a positive definite and a negative definite subspace. Its <strong>fundamental symmetry</strong> is the involution $J_{\mathbb{W}}$ acting as $+\mathrm{id}$ on $\mathbb{W}_+$ and as $-\mathrm{id}$ on $\mathbb{W}_-$.</p>
+<p><strong>Theorem (the symmetry of a positive line).</strong> Let $\mathbb{W}=\mathbb{C}w$ be a positive definite line, $w=e_t+\tilde V$ with $\lVert\tilde V\rVert_E<1$. Then
+$$
+J_{\mathbb{W}}(\tilde Q)=\frac{2\langle\tilde Q,w\rangle_{\natural*}}{\langle w,w\rangle_{\natural*}}\,w-\tilde Q,
+\qquad
+J_{\mathbb{W}}^2=\mathrm{id},
+$$
+$J_{\mathbb{W}}$ is self-adjoint for the form, has signature $(2,6)$ over $\mathbb{R}$, has $+1$-eigenspace $\mathbb{W}$ and $-1$-eigenspace $\mathbb{W}^{\perp_K}$, and is self-adjoint for the positive definite <strong>companion of the decomposition</strong>
+$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{\mathbb{W}}=\langle\tilde Q_1,J_{\mathbb{W}}\tilde Q_2\rangle_{\natural*},
+\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle J_{\mathbb{W}}\tilde Q_1,\tilde Q_2\rangle_{\mathbb{W}}.
+$$
+It coincides with $J=\natural$ exactly for $\tilde V=0$, and only then does its companion coincide with the fixed companion $\langle\cdot,\cdot\rangle_*$.</p>
+<p><em>Proof.</em> The Krein-orthogonal projection onto $\mathbb{W}$ along $\mathbb{W}^{\perp_K}$ is $P_{\mathbb{W}}(\tilde Q)=\langle\tilde Q,w\rangle_{\natural*}/\langle w,w\rangle_{\natural*}\,w$, since $\tilde Q-P_{\mathbb{W}}\tilde Q$ is orthogonal to $w$; the reflection in the two eigenspaces is $2P_{\mathbb{W}}-\mathrm{id}$, which is the displayed formula. An orthogonal projection is self-adjoint for the form, hence so is the reflection, and $J_{\mathbb{W}}^2=4P_{\mathbb{W}}^2-4P_{\mathbb{W}}+\mathrm{id}=\mathrm{id}$. The signature is $(1,3)$ in complex dimension, that is $(2,6)$ over $\mathbb{R}$, because the two eigenspaces have those dimensions. The companion is positive definite: for $\tilde Q=w_++w_-$ with $w_\pm\in\mathbb{W}_\pm$ one has $J_{\mathbb{W}}\tilde Q=w_+-w_-$ and hence $\langle\tilde Q,\tilde Q\rangle_{\mathbb{W}}=\langle w_+,w_+\rangle_{\natural*}-\langle w_-,w_-\rangle_{\natural*}>0$. The reflection is self-adjoint for it because $\langle J_{\mathbb{W}}\tilde Q_1,\tilde Q_2\rangle_{\mathbb{W}}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,J_{\mathbb{W}}\tilde Q_2\rangle_{\mathbb{W}}$, using $J_{\mathbb{W}}^2=\mathrm{id}$ and its isometry for the form. At $\tilde V=0$ the line is the centre and the reflection is $J$; for $\tilde V\neq0$ the line is not the centre and $J_{\mathbb{W}}\neq J$. The companion coincides with $\langle\cdot,\cdot\rangle_*$ only when $J_{\mathbb{W}}=J$, since the two companion forms determine their symmetries.</p>
+<p><strong>Corollary (the family of fundamental symmetries).</strong> The map $\tilde V\mapsto J_{\mathbb{W}(\tilde V)}$ is a bijection from the open unit ball $\{\tilde V\in\mathbb{V}_{\mathbb{B}}:\lVert\tilde V\rVert_E<1\}$ onto the set of $\mathbb{C}$-linear fundamental symmetries of the Krein form. Every such symmetry is a reflection in a positive definite line, and the algebraic member of the family is $J=\natural$.</p>
+<p><em>Proof.</em> Every $\mathbb{C}$-linear fundamental decomposition has a positive definite part of complex dimension one, which is a line $\ell_{\tilde V}$ with $\lVert\tilde V\rVert_E<1$ by the theorem on the positive lines, and its symmetry is the reflection displayed. Distinct $\tilde V$ give distinct lines, hence distinct reflections, and every $\tilde V$ in the ball gives a symmetry. The last statement is the case $\tilde V=0$.</p>
+<p><strong>Theorem (the algebraic member is unique).</strong> The natural conjugation ${}^{\natural}=J_0$ is the unique fundamental symmetry of the Krein form that is a $\mathbb{C}$-algebra anti-automorphism, equivalently the unique one that fixes the identity and satisfies $J(\tilde Q_1\tilde Q_2)=J(\tilde Q_2)J(\tilde Q_1)$. In the parametrisation above it is the member $\tilde V=0$.</p>
+<p><em>Proof.</em> Let $J$ be a fundamental symmetry and a unital $\mathbb{C}$-algebra anti-automorphism. For every $\tilde Q$, $J(\tilde Q e_t)=J(e_t)J(\tilde Q)$ and $J(e_t\tilde Q)=J(\tilde Q)J(e_t)$; since $J$ is bijective, $J(e_t)$ is a two-sided unit. The algebra has the unique unit $e_t$, so $J(e_t)=e_t$. The $+1$-eigenspace of $J$ is a complex subspace of dimension one (the positive index) and contains $e_t$; hence it is $\mathbb{C}_{\mathbb{B}}$, and $J$ is $+\mathrm{id}$ on the centre and $-\mathrm{id}$ on the vector subspace, which is ${}^{\natural}$. Conversely ${}^{\natural}$ is such a symmetry by the two preceding sections.</p>
+<p><strong>Corollary (the tilted symmetries are not algebraic).</strong> For $\tilde V\neq0$ the symmetry $J_{\mathbb{W}(\tilde V)}$ fixes no algebra structure: it does not preserve the multiplication, and it does not even fix $e_t$, since $e_t\notin\ell_{\tilde V}$.</p>
+<p><em>Proof.</em> $e_t\in\ell_{\tilde V}$ would force $\tilde V\in\mathbb{V}_{\mathbb{B}}\cap\mathbb{C}_{\mathbb{B}}=0$.</p>
+<h2 id="krein-orthogonality-and-the-complement">Krein Orthogonality and the Complement</h2>
+<p><strong>Definition.</strong> Two elements are <strong>Krein-orthogonal</strong>, written $\tilde Q_1\perp_K\tilde Q_2$, when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$; two subspaces are Krein-orthogonal when every element of one is orthogonal to every element of the other. The <strong>Krein-orthogonal complement</strong> of $\mathbb{W}$ is
+$$
+\mathbb{W}^{\perp_K}=\{\tilde Q:\langle\tilde Q,\tilde W\rangle_{\natural*}=0\ \text{for every}\ \tilde W\in\mathbb{W}\}.
+$$</p>
+<p><strong>Example (a self-orthogonal line).</strong> The line $\mathbb{W}=\mathbb{C}(e_t+\vec e_x)$ is isotropic, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$ and $\mathbb{W}+\mathbb{W}^{\perp_K}=\mathbb{W}^{\perp_K}$, of dimension three; the line and its complement span four dimensions only together with a vector outside both, and no direct sum decomposition of the algebra is obtained from $\mathbb{W}$ alone.</p>
+<p><strong>Theorem (the dimension formula).</strong> Let $\mathbb{W}$ be a subspace of complex dimension $k$. Then $\dim_{\mathbb{C}}\mathbb{W}^{\perp_K}=4-k$, and over $\mathbb{R}$, for a real subspace of dimension $k_{\mathbb{R}}$, $\dim_{\mathbb{R}}\mathbb{W}^{\perp_K}=8-k_{\mathbb{R}}$. Consequently
+$$
+\boxed{\;\dim\mathbb{W}+\dim\mathbb{W}^{\perp_K}=\dim\mathbb{B},\qquad
+\mathbb{B}=\mathbb{W}\oplus\mathbb{W}^{\perp_K}\iff\mathbb{W}\cap\mathbb{W}^{\perp_K}=\{0\}\; }.
+$$</p>
+<p><em>Proof.</em> The form is non-degenerate, so the map $\Phi:\mathbb{B}\to\mathbb{W}^{*}$, $\Phi(\tilde Q)(\tilde W)=\langle\tilde Q,\tilde W\rangle_{\natural*}$, is surjective: every antilinear functional on $\mathbb{W}$ extends to $\mathbb{B}$, and the Riesz isomorphism of the non-degenerate form supplies a preimage. Its kernel is $\mathbb{W}^{\perp_K}$, so $\dim\mathbb{W}^{\perp_K}=4-\dim\mathbb{W}^{*}=4-k$, and over $\mathbb{R}$ the same count gives $8-k_{\mathbb{R}}$. The sum is direct exactly when the intersection is zero.</p>
+<p><strong>Corollary (the non-degeneracy criterion).</strong> The restriction of the form to $\mathbb{W}$ is non-degenerate if and only if $\mathbb{W}\cap\mathbb{W}^{\perp_K}=\{0\}$, and then $\mathbb{B}=\mathbb{W}\oplus\mathbb{W}^{\perp_K}$ with both summands non-degenerate and $(\mathbb{W}^{\perp_K})^{\perp_K}=\mathbb{W}$.</p>
+<p><em>Proof.</em> A vector of $\mathbb{W}$ orthogonal to all of $\mathbb{W}$ is exactly an element of $\mathbb{W}\cap\mathbb{W}^{\perp_K}$, so the restriction is non-degenerate exactly when that intersection vanishes. The dimension formula then gives the direct sum. For the double complement, $\mathbb{W}\subseteq(\mathbb{W}^{\perp_K})^{\perp_K}$ and both sides have dimension $k$ once $\mathbb{W}^{\perp_K}$ is non-degenerate, which follows by applying the criterion to it.</p>
+<p><strong>Remark (the two complements).</strong> The Krein-orthogonal complement is not the Euclidean one, and it is not a lattice-theoretic complement: the map $\mathbb{W}\mapsto\mathbb{W}^{\perp_K}$ is order-reversing, but $\mathbb{W}\cap\mathbb{W}^{\perp_K}$ may be nonzero and $\mathbb{W}+\mathbb{W}^{\perp_K}$ may be proper, as the isotropic line shows.</p>
+<h2 id="the-classification-of-subspaces">The Classification of Subspaces</h2>
+<p><strong>Definition.</strong> A subspace $\mathbb{W}$ is <strong>positive definite</strong> when $\langle\tilde Q,\tilde Q\rangle_{\natural*}>0$ for every nonzero $\tilde Q\in\mathbb{W}$, <strong>negative definite</strong> when the inequality is reversed, and <strong>definite</strong> when it is one of the two. It is <strong>neutral</strong> or <strong>totally isotropic</strong> when the form vanishes on it identically, and <strong>degenerate</strong> when it contains a nonzero element orthogonal to all of itself. A nonzero element with $\langle\tilde Q,\tilde Q\rangle_{\natural*}=0$ is <strong>isotropic</strong>.</p>
+<p><strong>Theorem (the definite dimensions).</strong> A positive definite subspace has complex dimension at most $1$ and real dimension at most $2$; a negative definite subspace has complex dimension at most $3$ and real dimension at most $6$. The bounds are attained by $\mathbb{C}_{\mathbb{B}}$ and by $\mathbb{V}_{\mathbb{B}}$.</p>
+<p><em>Proof.</em> A definite subspace meets a definite subspace of the opposite sign only at the origin, since a nonzero vector cannot have both a positive and a negative value. A positive definite subspace therefore injects into $\mathbb{B}/\mathbb{V}_{\mathbb{B}}$, of complex dimension $1$, and a negative definite one into $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$, of complex dimension $3$. The centre and the vector subspace attain the bounds.</p>
+<p><strong>Theorem (the inertia of a definite complement).</strong> Let $\mathbb{W}$ be positive definite of complex dimension $k$. Then $\mathbb{W}$ is non-degenerate and $\mathbb{W}^{\perp_K}$ has signature $(1-k,3)$; at $k=1$ the complement is negative definite of dimension three. Over $\mathbb{R}$, a positive definite plane has a negative definite complement of dimension six.</p>
+<p><em>Proof.</em> Non-degeneracy is the vanishing of $\mathbb{W}\cap\mathbb{W}^{\perp_K}$, and the inertia is additive over an orthogonal direct sum: the ambient signature $(1,3)$ is the sum of the signatures of $\mathbb{W}$ and $\mathbb{W}^{\perp_K}$. At $k=1$ the complement has signature $(0,3)$, and its realification $(0,6)$.</p>
+<p><strong>Remark (the indefinite rows).</strong> The quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces are non-degenerate of signature $(1,3)$ and are neither definite nor neutral; their restriction matrices and null cones are <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra</em>.</p>
+<h2 id="the-krein-projections">The Krein Projections</h2>
+<p><strong>Definition.</strong> An operator $P$ is a <strong>Krein-orthogonal projection</strong> when $P^2=P$ and $\operatorname{ran}P\perp_K\ker P$. It is a <strong>$J$-self-adjoint idempotent</strong> when in addition $P^{\dagger}=P$, where $T^{\dagger}=JT^{*}J$ is the adjoint for the Krein form.</p>
+<p><strong>Theorem (the $J$-self-adjoint idempotents).</strong> For an idempotent $P$ the following are equivalent: $P^{\dagger}=P$; $\operatorname{ran}P$ is non-degenerate and $P$ is the Krein-orthogonal projection onto it along $(\operatorname{ran}P)^{\perp_K}$; $\ker P=(\operatorname{ran}P)^{\perp_K}$. The class is strictly larger than the class of definite-orthogonal projections commuting with $J$.</p>
+<p><em>Proof.</em> If $P^2=P$ and $P^{\dagger}=P$ then, for $\tilde Q\in\operatorname{ran}P$ and $\tilde Q_3\in\ker P$,
+$$
+\langle\tilde Q,\tilde Q_3\rangle_{\natural*}=\langle P\tilde Q,\tilde Q_3\rangle_{\natural*}=\langle\tilde Q,P\tilde Q_3\rangle_{\natural*}=0,
+$$
+so the range and the kernel are orthogonal; $\mathbb{B}=\operatorname{ran}P\oplus\ker P$ because $P$ is idempotent, and $\ker P=(\operatorname{ran}P)^{\perp_K}$ by the dimension formula. The range is non-degenerate: if $\tilde Q\in\operatorname{ran}P$ is orthogonal to the range, then it is orthogonal to the kernel as well, because the range and the kernel are orthogonal; hence $\langle\tilde Q,\tilde Q_3\rangle_{\natural*}=0$ for every $\tilde Q_3\in\mathbb{B}$, and $\tilde Q=0$ by non-degeneracy of the ambient form. Conversely, a Krein-orthogonal projection onto a non-degenerate range satisfies $\langle P\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,P\tilde Q_2\rangle_{\natural*}$ by decomposing both arguments along range and kernel, so $P^{\dagger}=P$. A definite-orthogonal projection commuting with $J$ has a $J$-invariant range, hence a range that is a sum of eigenspaces of $J$; it is $J$-self-adjoint, so the definite-orthogonal projections commuting with $J$ form a proper subclass. The projection onto $\mathbb{C}(e_t+\tfrac12\vec e_x)$ along its complement is $J$-self-adjoint but does not commute with $J$.</p>
+<p><strong>Remark (the spectral projections).</strong> The projections $\pi_+=\tfrac12(\mathrm{id}+J)$ and $\pi_-=\tfrac12(\mathrm{id}-J)$ onto the centre and the vector subspace are the two spectral projections of $J$; both are $J$-self-adjoint idempotents. The idempotents with $J$-invariant range are $0,\pi_+,\pi_-,\mathrm{id}$; all the others mix the two eigenspaces, among them the projections onto the positive definite lines $\mathbb{C}(e_t+\tilde V)$ with $\tilde V\neq0$ and the indefinite ranges such as $\mathrm{span}\{e_t,\vec e_x\}$.</p>
+<h2 id="the-krein-gramschmidt-process">The Krein Gram–Schmidt Process</h2>
+<p><strong>Theorem (orthogonalisation).</strong> Let $\mathbb{W}$ be a non-degenerate subspace with a basis $w_1,\dots,w_k$. If $w_1$ is not isotropic, the replacements
+$$
+w_j\longmapsto w_j-\frac{\langle w_j,w_1\rangle_{\natural*}}{\langle w_1,w_1\rangle_{\natural*}}\,w_1,
+\qquad j=2,\dots,k,
+$$
+leave the span unchanged, make $w_1$ Krein-orthogonal to the rest, and reduce the problem to the non-degenerate subspace $\mathbb{W}\cap w_1^{\perp_K}$; induction gives a Krein-orthogonal basis. If the basis consists of isotropic vectors, a hyperbolic pair $u,v$ with $\langle u,v\rangle_{\natural*}=1$ is chosen first, and the process is applied to the orthogonal complement of $\mathrm{span}\{u,v\}$.</p>
+<p><em>Proof.</em> The displayed element is orthogonal to $w_1$ by construction, and the transition matrix from the original basis is unitriangular, so the span is unchanged. The intersection $\mathbb{W}\cap w_1^{\perp_K}$ has dimension $k-1$ because $w_1$ is non-isotropic and $\mathbb{W}$ is non-degenerate, and the restriction to it is non-degenerate by the criterion. A hyperbolic pair exists in a non-degenerate subspace carrying an isotropic vector: some $v$ has $\langle u,v\rangle_{\natural*}\neq0$, and scaling $v$ gives the value one. The induction terminates because the dimension drops by one at each step, or by two when a hyperbolic pair is removed.</p>
+<p><strong>Corollary (definite bases).</strong> Every definite subspace has an orthonormal basis, each vector of form value $+1$ in the positive case and $-1$ in the negative case. An isotropic vector has $\langle\tilde Q,\tilde Q\rangle_{\natural*}=0$ and cannot be normalised to either sign, which is the only obstruction to the process.</p>
+<h2 id="the-isotropic-elements">The Isotropic Elements</h2>
+<p><strong>Definition.</strong> The <strong>null set</strong> of the Krein form is
+$$
+\mathcal K=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural*}=0\}.
+$$</p>
+<p><strong>Theorem (the equation of the null set).</strong> Writing $\tilde Q=c+\vec v$ with $c\in\mathbb{C}$ and $\vec v\in\mathbb{C}^3$,
+$$
+\boxed{\;\langle\tilde Q,\tilde Q\rangle_{\natural*}=\lvert c\rvert^2-\lVert\vec v\rVert_E^2
+=\lvert Q_t\rvert^2-\sum_{k}\lvert Q_k\rvert^2\; }.
+$$
+The null set is the set $\lVert c\rVert_E=\lVert\vec v\rVert_E$, a real algebraic cone with apex the origin, of real dimension $7$, and the apex is its only singular point.</p>
+<p><em>Proof.</em> The formula is the definition with $Q_{1\mu}=Q_{2\mu}$, and the left side is real. The set is the zero set of one non-constant real polynomial in the eight real coordinates, homogeneous of degree two. Its gradient with respect to the real coordinates of $c$ and of $\vec v$ is $2(c,-v)$, which vanishes only at the origin, so the zero set is a smooth hypersurface away from the apex, of real dimension $8-1=7$.</p>
+<p><strong>Example (two isotropic elements and one that is not).</strong> $e_t+\vec e_x$ is isotropic, with $\langle e_t+\vec e_x,e_t+\vec e_x\rangle_{\natural*}=1-1=0$, and its square is $2\vec e_x$, so it is not a zero divisor. $\vec e_x+i\vec e_y$ is not isotropic, with value $-1-1=-2$, although its norm $\langle\vec e_x+i\vec e_y\rangle_{\natural}=1+i^2=0$ vanishes: it is a zero divisor, and its line is negative definite. $e_t+i\vec e_x$ is isotropic and a zero divisor, with square $2(e_t+i\vec e_x)$; the half $\tfrac12(e_t+i\vec e_x)$ is the idempotent of the Peirce line.</p>
+<p><strong>Remark (the two cones).</strong> The null set is not the cone of the algebraic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, of real dimension $6$; the two meet in the doubly null lines of the next section. The comparison of the two geometries is <em>The Four Forms and the Four Algebraic Norms</em> and <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
+<h2 id="the-totally-isotropic-subspaces-and-the-witt-index">The Totally Isotropic Subspaces and the Witt Index</h2>
+<p><strong>Definition.</strong> A subspace $\mathbb{W}$ is <strong>totally isotropic</strong> when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$ for all $\tilde Q_1,\tilde Q_2\in\mathbb{W}$, equivalently when $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$; it is <strong>maximal</strong> when it is contained in no larger one. The <strong>Witt index</strong> is the common dimension of the maximal totally isotropic subspaces.</p>
+<p><strong>Theorem (the Witt index).</strong> The Witt index is $\min(1,3)=1$ over $\mathbb{C}$ and $\min(2,6)=2$ over $\mathbb{R}$. A maximal totally isotropic complex subspace is $\mathbb{C}(e_t+\vec e_x)$, and a maximal totally isotropic real subspace is the plane
+$$
+\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_t+\vec e_x,\ i(e_t+\vec e_x)\}.
+$$
+Every totally isotropic subspace is contained in a maximal one, and the automorphism group $\mathrm{U}(1,3)$ acts transitively on the maximal ones.</p>
+<p><em>Proof.</em> A totally isotropic subspace meets a definite subspace only at the origin, since a nonzero element of a definite subspace has a nonzero value. It therefore injects into $\mathbb{B}/\mathbb{V}_{\mathbb{B}}$, of complex dimension $1$, and into $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$, of complex dimension $3$; hence its complex dimension is at most $1$, and over $\mathbb{R}$ its real dimension is at most $2$. The line and the plane displayed are totally isotropic:
+$$
+\langle e_t+\vec e_x,e_t+\vec e_x\rangle_{\natural*}=0,\qquad
+\langle i(e_t+\vec e_x),e_t+\vec e_x\rangle_{\natural*}=i-i=0,\qquad
+\langle i(e_t+\vec e_x),i(e_t+\vec e_x)\rangle_{\natural*}=1-1=0.
+$$
+They attain the bounds. Witt's extension theorem for general plain sesquilinear forms gives the extension property and the transitivity.</p>
+<p><strong>Remark (the real index).</strong> The real plane is a complex line, closed under multiplication by $i$; it is the realification of $\mathbb{C}(e_t+\vec e_x)$. Every real totally isotropic plane is such a realification: if a real plane $\mathbb{W}$ were totally isotropic and not complex, then $\mathbb{W}+i\mathbb{W}$ would be a complex totally isotropic plane of dimension two, beyond the Witt index one. The Witt index counts the largest dimension and is two over $\mathbb{R}$.</p>
+<h2 id="the-doubly-null-lines-and-the-peirce-lines">The Doubly Null Lines and the Peirce Lines</h2>
+<p><strong>Definition.</strong> A <strong>doubly null line</strong> is an isotropic line that lies in the cone of the algebraic norm as well: a complex line $\mathbb{C}\tilde Q$ with $\langle\tilde Q,\tilde Q\rangle_{\natural*}=0$ and $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=0$.</p>
+<p><strong>Theorem (the Peirce lines).</strong> For every real unit vector $\vec u\in\mathbb{V}_{\mathbb{B}}$, with $\tilde\Xi=i\vec u$, the elements
+$$
+\tilde\Pi_\pm(\tilde\Xi)=\tfrac12\bigl(e_t\pm\tilde\Xi\bigr)
+$$
+are rank-one Hermitian idempotents, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, with $\langle\tilde\Pi_\pm\rangle_{\natural}=0$ and $\langle\tilde\Pi_\pm,\tilde\Pi_\pm\rangle_{\natural*}=0$. Each line $\mathbb{C}\tilde\Pi_\pm(\tilde\Xi)$ is a maximal totally isotropic complex subspace and a doubly null line; it is a <strong>Peirce line</strong> of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_\pm(\tilde\Xi)$ and the minimal right ideal $\tilde\Pi_\pm(\tilde\Xi)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor.</p>
+<p><em>Proof.</em> A real unit vector has $\vec u^2=-e_t$, so $\tilde\Xi^2=i^2\vec u^2=e_t$ and $(e_t\pm\tilde\Xi)^2=e_t\pm2\tilde\Xi+\tilde\Xi^2=2(e_t\pm\tilde\Xi)$, whence $\tilde\Pi_\pm^2=\tilde\Pi_\pm$. The idempotent is Hermitian because $\tilde\Xi^{*}=\tilde\Xi$, and rank one because its matrix model has trace one and its square is itself. For the two values,
+$$
+\langle e_t\pm\tilde\Xi\rangle_{\natural}=1+\langle\tilde\Xi\rangle_{\natural}=1-\lVert\vec u\rVert_E^2=0,
+\qquad
+\langle e_t\pm\tilde\Xi,e_t\pm\tilde\Xi\rangle_{\natural*}=1-\lVert\tilde\Xi\rVert_E^2=0.
+$$
+The minimal ideals are the standard rank-one ideals of the algebra, of complex dimension two, and their elements $X\tilde\Pi_\pm$ satisfy $\langle X\tilde\Pi_\pm\rangle_{\natural}=\langle X\rangle_{\natural}\langle\tilde\Pi_\pm\rangle_{\natural}=0$, so they are zero divisors.</p>
+<p><strong>Corollary (the doubly null lines are the Peirce lines).</strong> The doubly null lines are exactly the lines $\mathbb{C}(e_t+i\vec u)$ and $\mathbb{C}(e_t-i\vec u)$ with $\vec u$ a real unit vector.</p>
+<p><em>Proof.</em> Write $\tilde Q=c(e_t+\tilde Q_3)$ with $\lVert\tilde Q_3\rVert_E=1$, which is possible on any isotropic line. The norm condition reads $1+\langle\tilde Q_3\rangle_{\natural}=0$. Writing $\tilde Q_3=\tilde S+i\tilde W$ with $\tilde S,\tilde W\in\mathbb{V}_{\mathbb{B}}$ real, this is the system
+$$
+\lVert\tilde S\rVert_E^2+\lVert\tilde W\rVert_E^2=1,\qquad
+\lVert\tilde S\rVert_E^2-\lVert\tilde W\rVert_E^2=-1,\qquad
+\langle\tilde S,\tilde W\rangle=0,
+$$
+which forces $\tilde S=0$ and $\lVert\tilde W\rVert_E=1$; hence $\tilde Q_3=i\tilde W$ with $\tilde W$ a real unit vector, and the line is $\mathbb{C}(e_t+i\vec W)$.</p>
+<p><strong>Remark (the real maximal plane is not a Peirce line).</strong> The maximal totally isotropic real plane $\mathrm{span}_{\mathbb{R}}\{e_t+\vec e_x,i(e_t+\vec e_x)\}$ is generated by an element of norm $2$, not a zero divisor; it is not a Peirce line, and the Peirce lines are the norm-null part of the isotropic lines. The zero divisors and the minimal ideals are <em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<h2 id="the-isotropic-lines">The Isotropic Lines</h2>
+<p><strong>Theorem (the isotropic lines form $S^5$).</strong> The isotropic complex lines are exactly the lines $\mathbb{C}(e_t+\tilde Q_1)$ with $\lVert\tilde Q_1\rVert_E=1$, and the assignment $\tilde Q_1\mapsto\mathbb{C}(e_t+\tilde Q_1)$ is a bijection from the unit sphere of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^3$, a copy of $S^5$, onto the set of isotropic lines.</p>
+<p><em>Proof.</em> An isotropic line $\mathbb{C}\tilde Q$ has $\lVert c\rVert_E=\lVert\vec v\rVert_E$, so it is not contained in $\mathbb{V}_{\mathbb{B}}$ and admits a representative with nonzero scalar part; scaling gives exactly one representative of the form $e_t+\tilde Q_1$. For that representative $\langle e_t+\tilde Q_1,e_t+\tilde Q_1\rangle_{\natural*}=1-\lVert\tilde Q_1\rVert_E^2$, so the line is isotropic exactly for $\lVert\tilde Q_1\rVert_E=1$. Distinct points of the unit sphere give distinct lines, since $e_t+\tilde Q_1$ and $e_t+\tilde Q_1'$ span the same line only if $\tilde Q_1=\tilde Q_1'$.</p>
+<p><strong>Corollary (the boundary of the ball).</strong> The isotropic lines are the boundary of the open ball $\{\lVert\tilde V\rVert_E<1\}$ that parametrises the maximal positive definite subspaces: the ball is the unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^3$ and its boundary is the sphere $S^5$. The identification of the boundary, the ball and the hyperbolic metric is <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
+<h2 id="the-krein-cone">The Krein Cone</h2>
+<p><strong>Definition.</strong> The <strong>Krein cone</strong> is
+$$
+P_K=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural*}\ge0\}
+=\{\tilde Q:\lVert c\rVert_E\ge\lVert\vec v\rVert_E\}.
+$$</p>
+<p><strong>Theorem (the shape of the cone).</strong> The Krein cone is closed, invariant under multiplication by positive real scalars, star-shaped with respect to the origin, and contractible. Its interior is the <strong>positive region</strong> $\{\lVert c\rVert_E>\lVert\vec v\rVert_E\}$, its boundary is the null set $\mathcal K$, and its interior is homotopy equivalent to a circle,
+$$
+P_K^{\circ}\simeq S^1.
+$$
+It is neither convex nor pointed: $P_K\cap(-P_K)=\mathcal K$, which is larger than $\{0\}$.</p>
+<p><em>Proof.</em> Closedness is the closedness of the inequality, and homogeneity is $\langle\lambda\tilde Q,\lambda\tilde Q\rangle_{\natural*}=\lvert\lambda\rvert^2\langle\tilde Q,\tilde Q\rangle_{\natural*}$ for real $\lambda$. The straight-line homotopy $\tilde Q\mapsto t\tilde Q$ preserves the inequality, so the cone is star-shaped and contractible. The interior is the strict inequality and the boundary the equality. For the homotopy type, the map $\tilde Q\mapsto\tilde Q/\sqrt{\langle\tilde Q,\tilde Q\rangle_{\natural*}}$ retracts the interior onto the level set $\{\langle\tilde Q,\tilde Q\rangle_{\natural*}=1\}=\{\lVert c\rVert_E^2-\lVert\vec v\rVert_E^2=1\}$, in which $c$ runs over a circle of radius $\sqrt{1+\lVert\vec v\rVert_E^2}$ and $\vec v$ over all of $\mathbb{C}^3$; the level set is therefore $S^1\times\mathbb{R}^6$, and it retracts further onto $S^1$. The failure of pointedness is the null set, and the failure of convexity is exhibited below.</p>
+<p><strong>Example (the cone is not convex).</strong> The elements $e_t+\vec e_y$ and $-e_t+\vec e_y$ both lie in $P_K$, with form value $1-1=0$; their midpoint $\vec e_y$ has form value $-1$, so it lies outside. The cone is therefore not convex, although it is star-shaped.</p>
+<p><strong>Remark (the level sets inside the cone).</strong> The positive level set of level $t>0$ is a hyperboloid sheet inside the interior of $P_K$, the negative level set lies outside, and the null set is the boundary. The cone is the union of the positive level sets of all $t\ge0$, rescaled to $t=1$ by positive real scaling; the global geometry is <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
+<h2 id="the-intersection-with-the-hermitian-cone">The Intersection with the Hermitian Cone</h2>
+<p><strong>Definition.</strong> The Hermitian subspace is $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}$, with coordinates $Q_t=q_t$ real and $Q_k=iq'_k$ with $q'_k$ real. The <strong>Hermitian cone</strong> is
+$$
+P=\{\tilde Q\in\mathbb{M}_+:\mathsf{M}_2(\tilde Q)\succeq0\}
+=\{q_t\ge0,\ q_t^2\ge (q'_x)^2+(q'_y)^2+(q'_z)^2\},
+$$
+the cone of the positive semidefinite Hermitian matrices.</p>
+<p><strong>Theorem (the intersection).</strong> On $\mathbb{M}_+$ the Krein form is the interval form $q_t^2-\sum_k(q'_k)^2$, and
+$$
+P_K\cap\mathbb{M}_+=\{q_t^2\ge(q'_x)^2+(q'_y)^2+(q'_z)^2\},
+$$
+the full closed cone of the interval form, whose future nappe is the Hermitian cone $P$. In particular $P\subseteq P_K$.</p>
+<p><em>Proof.</em> On $\mathbb{M}_+$ the coefficients are $(q_t,iq'_x,iq'_y,iq'_z)$, so $\lvert Q_t\rvert^2=q_t^2$ and $\lvert Q_k\rvert^2=(q'_k)^2$; the form reads $q_t^2-\sum_k(q'_k)^2$, and the Krein inequality is the displayed cone. The matrix $\mathsf{M}_2(\tilde Q)=q_t\mathrm{I}_2+q'_x\sigma_x+q'_y\sigma_y+q'_z\sigma_z$ is Hermitian with eigenvalues $q_t\pm\lVert\vec q'\rVert_E$, so positive semidefiniteness is $q_t\ge\lVert\vec q'\rVert_E$, which is the future nappe.</p>
+<p><strong>Remark (the other real forms).</strong> On each of the other three real forms the form is the same interval form in the coordinates of its row, so the intersection of $P_K$ with each is the corresponding Lorentzian cone; the signatures and the coordinates are <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra</em>.</p>
+<h2 id="the-operator-cone-and-the-cartan-involution">The Operator Cone and the Cartan Involution</h2>
+<p><strong>Definition.</strong> An operator $T\in\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is <strong>$J$-positive</strong> when it is $J$-self-adjoint, $T^{\dagger}=T$, and $\langle\tilde Q,T\tilde Q\rangle_{\natural*}\ge0$ for every $\tilde Q$. The <strong>$J$-positive cone</strong> is
+$$
+\mathcal P_J=\{T:T^{\dagger}=T,\ \langle\tilde Q,T\tilde Q\rangle_{\natural*}\ge0\ \forall\tilde Q\}.
+$$</p>
+<p><strong>Theorem (the cone as the image of the Hilbert cone).</strong> With $J=\natural$ and $S$ ranging over the self-adjoint operators that are positive semidefinite for the definite companion,
+$$
+\boxed{\;\mathcal P_J=J\cdot\{S\ge0\}=\{JT:S\ge0\}\; }.
+$$
+The cone $\mathcal P_J$ is closed and convex, contains $J$, and does not contain the identity. Its extreme rays are the rank-one operators $J\lvert\tilde Q\rangle\langle\tilde Q\rvert$ with $\lVert\tilde Q\rVert_E=1$. Its idempotents are the Krein-orthogonal projections onto the positive definite subspaces, and the only idempotents of $\mathcal P_J$ that commute with $J$ are $\pi_+$ and $0$.</p>
+<p><em>Proof.</em> For any $T$, $\langle\tilde Q,T\tilde Q\rangle_{\natural*}=\langle\tilde Q,JT\tilde Q\rangle_*$, so the positivity and the $J$-self-adjointness of $T$ are exactly the self-adjointness and positivity of $JT$ for the definite form. Hence $T\in\mathcal P_J$ exactly when $JT=S\ge0$, that is $T=JS$; the map $S\mapsto JS$ is linear and bijective and carries the closed convex cone $\{S\ge0\}$ onto $\mathcal P_J$. The identity $T=J$ gives $JT=\mathrm{id}\ge0$, so $J\in\mathcal P_J$; $T=\mathrm{id}$ gives $JT=J$, which has the negative eigenvalue $-1$, so $\mathrm{id}\notin\mathcal P_J$. A bijective linear map carries extreme rays to extreme rays, and the extreme rays of the positive semidefinite cone are the rank-one operators $\lvert\tilde Q\rangle\langle\tilde Q\rvert$. The idempotent statement is the theorem on the $J$-self-adjoint idempotents together with the criterion of positive definiteness of the range.</p>
+<p><strong>Remark (the two cones are different).</strong> Neither of $\mathcal P_J$ and the Hilbert cone $\{S\ge0\}$ contains the other: $J$ lies in the first and not the second, the identity lies in the second and not the first. The cone $\mathcal P_J$ is the image of the Hilbert cone under the sign involution, not an enlargement of it.</p>
+<p><strong>Remark (the Cartan involution).</strong> On $\mathrm{GL}_4(\mathbb{C})$ the <strong>$J$-Cartan involution</strong> is $\theta_J(T)=(T^{\dagger})^{-1}$. It is an involutive automorphism, its fixed group is the $J$-unitary group $\mathrm{U}_J(\mathbb{B})=\{T:T^{\dagger}T=\mathrm{id}\}\cong\mathrm{U}(1,3)$, and at the identity its differential is $-\dagger$, with fixed Lie algebra the $J$-skew part $\mathfrak u_J\cong\mathfrak u(1,3)$. On $\mathrm{U}_J$ the map $\theta_J$ is the identity; the Cartan involution of the Lie group $\mathrm{U}(1,3)$ itself is the different map $T\mapsto JTJ$, whose fixed subgroup is $\mathrm{U}(1)\times\mathrm{U}(3)$. The two are <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em> and <em>The Krein Cartan Decomposition of the Operator Algebra</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A positive vector.</strong> $\tilde Q=e_t+2ie_t$: $\langle\tilde Q,\tilde Q\rangle_{\natural*}=1+4=5>0$, in the centre.</p>
+<p><strong>A negative vector.</strong> $\tilde Q=\vec e_x+\vec e_y$: $\langle\tilde Q,\tilde Q\rangle_{\natural*}=-1-1=-2<0$, in the vector subspace.</p>
+<p><strong>An isotropic element that is not a zero divisor.</strong> $\tilde Q=e_t+\vec e_x$: value $0$, norm $2$, square $2\vec e_x$. The line $\mathbb{C}\tilde Q$ is maximal totally isotropic.</p>
+<p><strong>A zero divisor that is not isotropic.</strong> $\tilde Q=\vec e_x+i\vec e_y$: value $-2$, norm $0$. The norm cone and the Krein null set are different.</p>
+<p><strong>A Peirce idempotent.</strong> With $\vec u=\vec e_x$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_x)$: $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_+^{*}=\tilde\Pi_+$, $\langle\tilde\Pi_+\rangle_{\natural}=0$, $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_+$ is doubly null.</p>
+<p><strong>A Krein projection that is not definite-orthogonal.</strong> The projection onto $\mathbb{C}(e_t+\tfrac12\vec e_x)$ along its complement has the matrix
+$$
+P=\begin{pmatrix}4/3&-2/3&0&0\\2/3&-1/3&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+$$
+so $P^2=P$, $P^{\dagger}=P$, $P^{*}=P^{\mathsf T}\neq P$, and $PJ\neq JP$.</p>
+<p><strong>A fundamental symmetry at $\tilde V=\tfrac12\vec e_x$.</strong> With $w=e_t+\tfrac12\vec e_x$ and $\langle w,w\rangle_{\natural*}=3/4$,
+$$
+J_{\mathbb{W}}=\frac{2}{3/4}\langle\cdot,w\rangle_{\natural*}\,w-\mathrm{id}
+=\begin{pmatrix}5/3&-4/3\\4/3&-5/3\end{pmatrix}
+$$
+in the basis $e_t,\vec e_x$; its square is the identity, it is self-adjoint for the form and for its own companion, and it is not $J$.</p>
+<p><strong>The cone is not convex.</strong> $e_t+\vec e_y$ and $-e_t+\vec e_y$ are in $P_K$ and their midpoint $\vec e_y$ is not.</p>
+<h2 id="summary">Summary</h2>
+<p>The Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ is the general quaternionic sesquilinear form, non-degenerate of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, with negative index $3$ and $6$ and Pontryagin index $1$ and $2$. Its coefficient Gram matrix is $E=\operatorname{diag}(1,-1,-1,-1)$, of determinant $-1$; in the real basis the complex entries are Hermitian with purely imaginary mixed blocks, and the realified form is $\operatorname{diag}(E,E)$, of signature $(2,6)$. In the $2\times2$ model it is the adjugated Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde Q_2)^{\dagger}\mathsf{M}_2(\tilde Q_1))$, and the adjugate is $J$ itself.</p>
+<p>The fundamental symmetry is the natural conjugation $J={}^{\natural}$, with bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$ and eigenspaces the centre and the vector subspace; it is the unique fundamental symmetry that is an algebra anti-automorphism. The other fundamental symmetries are the reflections in the positive definite lines $\mathbb{C}(e_t+\tilde V)$ with $\lVert\tilde V\rVert_E<1$, and they fix no algebra structure. The Krein-orthogonal complement has the dimension formula, and it is a direct complement exactly when the intersection with the subspace vanishes. The null set is the real cone $\lVert c\rVert_E=\lVert\vec v\rVert_E$, of dimension seven, with Witt index $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; the doubly null lines are the Peirce lines $\mathbb{C}(e_t\pm i\vec u)$, and the isotropic lines form $S^5$. The Krein cone $\lVert c\rVert_E\ge\lVert\vec v\rVert_E$ is closed, star-shaped and contractible, with interior homotopy equivalent to $S^1$, and it is neither convex nor pointed; its intersection with the Hermitian subspace is the closed cone of the interval form. On operators the $J$-positive cone is $J\cdot\{S\ge0\}$, closed and convex, containing $J$ and not the identity, and the $J$-Cartan involution has fixed group $\mathrm{U}(1,3)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$</td>
+<td>The Krein form</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$</td>
+<td>The definite companion</td>
+</tr>
+<tr>
+<td>$G=E=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>The Gram matrix in the coefficient basis; $\det G=-1$</td>
+</tr>
+<tr>
+<td>$G_{\mathbb{R}}=\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$</td>
+<td>The matrix of the realified form; signature $(2,6)$</td>
+</tr>
+<tr>
+<td>$J={}^{\natural}=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>The fundamental symmetry; $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,J\cdot\rangle_*$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, $\mathbb{V}_{\mathbb{B}}$</td>
+<td>The $\pm1$-eigenspaces of $J$; centre and vector subspace</td>
+</tr>
+<tr>
+<td>$\ell_{\tilde V}=\mathbb{C}(e_t+\tilde V)$, $\lVert\tilde V\rVert_E<1$</td>
+<td>The positive definite lines</td>
+</tr>
+<tr>
+<td>$J_{\mathbb{W}}=2P_{\mathbb{W}}-\mathrm{id}$</td>
+<td>The symmetry of a fundamental decomposition</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\mathbb{W}}=\langle\tilde Q_1,J_{\mathbb{W}}\tilde Q_2\rangle_{\natural*}$</td>
+<td>The positive definite companion of the decomposition</td>
+</tr>
+<tr>
+<td>$\mathcal K=\{\langle\tilde Q,\tilde Q\rangle_{\natural*}=0\}$</td>
+<td>The null set; $\lvert Q_t\rvert^2=\sum_k\lvert Q_k\rvert^2$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$</td>
+<td>The algebraic norm; its zero set is the zero-divisor cone</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$</td>
+<td>The Peirce idempotents; the doubly null lines</td>
+</tr>
+<tr>
+<td>$P_K=\{\lVert c\rVert_E\ge\lVert\vec v\rVert_E\}$</td>
+<td>The Krein cone</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>The Hermitian cone, the future nappe of $P_K\cap\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\mathcal P_J=J\cdot\{S\ge0\}$</td>
+<td>The $J$-positive cone of operators</td>
+</tr>
+<tr>
+<td>$\theta_J(T)=(T^{\dagger})^{-1}$</td>
+<td>The $J$-Cartan involution; fixed group $\mathrm{U}_J$</td>
+</tr>
+<tr>
+<td>$(n,m)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$</td>
+<td>The signature; $m$ the negative index, $\min(n,m)$ the Pontryagin index</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-fundamental-symmetry.html">The Fundamental Symmetry</a>, for the general theory and the angular operator.</li>
+<li><a href="krein-spaces.html">Krein Spaces</a> and <a href="pontryagin-spaces.html">Pontryagin Spaces</a>, for the general theory of the fundamental symmetry and the two indices.</li>
+<li><a href="indefinite-inner-product-spaces.html">Indefinite Inner Product Spaces</a>, for the fundamental decomposition and the classification of subspaces.</li>
+<li><a href="remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html">Remarkable Subspaces under the General Quaternionic Sesqualgebra</a>, for the restrictions, their signatures, their null cones and the four real forms.</li>
+<li><a href="the-krein-level-sets-and-the-hyperbolic-structure.html">The Krein Level Sets and the Hyperbolic Structure</a>, for the level sets, the ball and the sphere of isotropic lines.</li>
+<li><a href="j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html">J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</a>, for the operator theory of the form.</li>
+<li><a href="the-krein-cartan-decomposition-of-the-operator-algebra.html">The Krein Cartan Decomposition of the Operator Algebra</a>, for the Cartan involution and the symmetric-space decomposition.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a>, for the comparison of the Krein form with the other three pairings.</li>
+<li><a href="the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html">The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</a>, for the adjugated trace identities.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the fundamental decomposition, the Krein-orthogonal projections and the classification of subspaces.</li>
+<li>Thomas Ya. Azizov and Iosif S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the Krein space, the Witt index and the operator cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
