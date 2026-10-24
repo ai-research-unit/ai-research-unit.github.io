@@ -11,7 +11,7 @@ into the real quaternion subspace, and the anti-Hermitian subspace into the Herm
 a general pair, by contrast, are not confined to any subspace of the remarkable subspaces: their smallest
 real span is the whole algebra.
 
-The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the Restrictions of the Form*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *The 12 Products of the Biquaternion Complex Space*.
+The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the Restrictions of the Form*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 ## The Product Rule on Each Subspace
 
@@ -139,7 +139,7 @@ an element of the Hermitian subspace. The anti-Hermitian subspace is not closed;
 
 *Proof.* The rows are the six theorems above, each of which computes the image and its real dimension; the closed rows are those whose image is the subspace itself.
 
-**Remark (the comparison with the menu of the remarkable subspaces).** The menu of the remarkable subspaces records, for the plain product, exactly two closed subspaces, the centre and the real quaternion subspace, and the failure of closure of the other four. The computation gives a finer pattern for the block: the centre, the real quaternion subspace and the Hermitian subspace are closed, and the vector, anti-quaternion and anti-Hermitian subspaces are not. The three closed subspaces are exactly the centre, the real quaternion subspace and the Hermitian subspace; the block has three of them, where the plain product has two. The eight-row comparison across the four general products is assembled in *The 12 Products of the Biquaternion Complex Space*; the four rows of the general quaternionic row are in *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
+**Remark (the comparison with the menu of the remarkable subspaces).** The menu of the remarkable subspaces records, for the plain product, exactly two closed subspaces, the centre and the real quaternion subspace, and the failure of closure of the other four. The computation gives a finer pattern for the block: the centre, the real quaternion subspace and the Hermitian subspace are closed, and the vector, anti-quaternion and anti-Hermitian subspaces are not. The three closed subspaces are exactly the centre, the real quaternion subspace and the Hermitian subspace; the block has three of them, where the plain product has two. The eight-row comparison across the four general products is assembled in *Symmetric and Antisymmetric Decomposition of the Four General Products*; the four rows of the general quaternionic row are in *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
 
 ## The Values of a General Pair
 
@@ -197,4 +197,4 @@ The product of the block is read on the remarkable subspaces by the single rule 
 - [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form $K$ and its Gram matrices.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the definition and the comparison of the remarkable subspaces.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the same remarkable subspaces under the general product.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the comparison of the closure patterns of the twelve operations.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the comparison of the closure patterns of the twelve operations.

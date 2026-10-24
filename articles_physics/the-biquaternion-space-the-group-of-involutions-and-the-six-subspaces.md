@@ -10,7 +10,7 @@ The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The algebra, its basis, its eight real coordinates and the complex structure $J:\tilde Q\mapsto i\tilde Q$ | [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](../articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html) |
+| The algebra, its basis, its eight real coordinates and the complex structure $J:\tilde Q\mapsto i\tilde Q$ | [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html) |
 | The involutions, the Klein four-group and the orbits of an element | [The Group of Involutions](../articles_maths/the-group-of-involutions.html) |
 | The six subspaces, their bases and their defining conditions | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
 | The three decompositions of the algebra | [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html) |
@@ -240,9 +240,9 @@ Multiplication by $i$ is one map, and its restrictions to the subspaces carry fo
 
 One generator gives a phase, a duality rotation, a Wick rotation and a sector exchange, because the generator is central and acts through the centre in every subspace. A non-central generator would give a different rotation in each carrier.
 
-$J$ is invertible, so it is not a measurement and not a collapse. It reverses the sign of the two bilinear norms, $N(J\tilde Q)=-N(\tilde Q)$, so it is not an isometry of the interval. The exchange of the sectors is a change of writing of one element, not a process that converts matter into information. The local speed $c=1/\sqrt{\epsilon\mu}$ makes the physical identification of the time direction local, while $J$ remains the constant central imaginary.
+$J$ is invertible, so it is not a measurement and not a collapse. It reverses the sign of the two bilinear norms, $\langle J\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, so it is not an isometry of the interval. The exchange of the sectors is a change of writing of one element, not a process that converts matter into information. The local speed $c=1/\sqrt{\epsilon\mu}$ makes the physical identification of the time direction local, while $J$ remains the constant central imaginary.
 
-**The boundary.** The four names are four readings of one map, not four independent operations. The exchange does not by itself give a dynamics or a coupling, and the equality $N(J\tilde Q)=-N(\tilde Q)$ is the reason the two sectors carry one quadratic form with opposite signs.
+**The boundary.** The four names are four readings of one map, not four independent operations. The exchange does not by itself give a dynamics or a coupling, and the equality $\langle J\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$ is the reason the two sectors carry one quadratic form with opposite signs.
 
 ### The Intersections Are the Shared Objects
 
@@ -311,11 +311,11 @@ The article interprets the linear structure, the involutions and the real forms.
 | $A_1,A_2$ | the scalar blocks $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ |
 | $B_1,B_2$ | the real and imaginary vector blocks |
 | $c t$, $i c t'$ | the informational and material times |
-| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm |
+| $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm |
 
 ## Further Reading
 
-- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](../articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the space, its basis and its complex structure.
+- [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html), for the space, its basis and its complex structure.
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group, its subgroups and its orbits.
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one.
 - [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html) and [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html), for the three decompositions, the coordinate blocks and the intersection table.

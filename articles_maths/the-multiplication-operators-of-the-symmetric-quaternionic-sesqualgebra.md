@@ -230,4 +230,4 @@ The operators of the block are $L^{\star}_{\tilde Q_4}(\tilde Q_1)=\tilde Q_4\st
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and its parity.
 - [Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra](remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.html), for the remarkable subspaces and the vector subspace carrying the four-dimensional image.
 - [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm $\langle\cdot\rangle_{\natural}$ entering the rank table.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the comparison of the operators of the twelve operations.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the comparison of the operators of the twelve operations.

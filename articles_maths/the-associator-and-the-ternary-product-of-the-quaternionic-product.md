@@ -9,7 +9,7 @@ $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2 , \qquad \tilde Q_1^{\natural} = Q_{1t} - \vec Q_1 ,
 $$
 
-the second of the four general products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product* and whose algebra is *Introduction to the General Quaternionic Algebra*. The product is $\mathbb{C}$-bilinear and has $e_t$ as a left unit and no right one; the element theory of its square, its zero divisors, its roots and its idempotents is the Common Theory of the block. This article reads its **associativity defect**.
+the second of the four general products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four General Products and Their Relations* §*The General Quaternionic Bilinear Product* and whose algebra is *Introduction to the General Quaternionic Algebra*. The product is $\mathbb{C}$-bilinear and has $e_t$ as a left unit and no right one; the element theory of its square, its zero divisors, its roots and its idempotents is the Common Theory of the block. This article reads its **associativity defect**.
 
 For a bilinear product the defect is the **associator**
 
@@ -59,7 +59,7 @@ and $24$ of the $64$ triples of basis elements give a nonzero associator.
 
 ## The Failure of the Weaker Laws
 
-The associator is the strongest defect; the ladder records the weaker ones, and the quaternionic product fails them all (*Comparison Between the Four General Products* §*Alternative, Flexible and Power Associative*).
+The associator is the strongest defect; the ladder records the weaker ones, and the quaternionic product fails them all (*The Four General Products and Their Relations* §*Alternative, Flexible and Power Associative*).
 
 **Theorem (no rung of the ladder).** The product $\star$ is not alternative, not flexible and not power-associative; it fails even third-power associativity.
 

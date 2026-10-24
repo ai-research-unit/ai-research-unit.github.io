@@ -253,7 +253,7 @@ General Quaternionic Algebra*, below this article in this category.
 
 **The four general products give four zero-divisor equations but one and the same zero-divisor set, $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$; what the product changes is the equation and the annihilator, not the set.**
 
-The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*
+The four general products of *The Four General Products and Their Relations*
 give four definitions of a zero divisor, hence four zero-divisor sets. For the biquaternion algebra
 the four sets are one and the same set,
 

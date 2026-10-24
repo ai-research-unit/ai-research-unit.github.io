@@ -203,12 +203,12 @@ The existence of second-order stationary processes indexed by $\mathbb{Z}$ is th
 **Proposition.** For every $k$ and every $\ell$,
 
 $$
-R_k(-\ell) = \overline{\iota_k R_k(\ell)}, \qquad N\bigl(R_k(-\ell)\bigr) = N\bigl(R_k(\ell)\bigr), \qquad |R_k(-\ell)| = |R_k(\ell)|.
+R_k(-\ell) = \overline{\iota_k R_k(\ell)}, \qquad \langle R_k(-\ell)\rangle_{\natural} = \langle R_k(\ell)\rangle_{\natural}, \qquad |R_k(-\ell)| = |R_k(\ell)|.
 $$
 
 In particular $R_0(-\ell) = \overline{R_0(\ell)}$, and for $k\neq0$ the value at the zero lag satisfies $R_k(0) = \overline{\iota_kR_k(0)}$, so its $\vec e_k$-component vanishes.
 
-*Proof.* The first identity is the symmetry of the previous section applied to the pair $(\tilde q_n,\tilde q_{n+\ell})$, with stationarity. The involution and the conjugation are orthogonal maps of $\mathbb{H}\cong\mathbb{R}^4$, so they preserve both $N$ and $|\cdot|$, which gives the next two. The vanishing of the $\vec e_k$-component is the fixed-space statement of the first identity, since $\tilde q\mapsto\overline{\iota_k\tilde q}$ fixes exactly the quaternions with $q_k = 0$.
+*Proof.* The first identity is the symmetry of the previous section applied to the pair $(\tilde q_n,\tilde q_{n+\ell})$, with stationarity. The involution and the conjugation are orthogonal maps of $\mathbb{H}\cong\mathbb{R}^4$, so they preserve both $\langle\cdot\rangle_{\natural}$ and $|\cdot|$, which gives the next two. The vanishing of the $\vec e_k$-component is the fixed-space statement of the first identity, since $\tilde q\mapsto\overline{\iota_k\tilde q}$ fixes exactly the quaternions with $q_k = 0$.
 
 **Proposition (pure values).** If every value of the sequence is pure imaginary, then $P(\ell) = -R_0(\ell)$ for every $\ell$, since $\tilde q^{\natural} = -\tilde q$ for pure $\tilde q$, and the pseudo-autocorrelation is then conjugate symmetric, $P(-\ell) = \overline{P(\ell)}$.
 

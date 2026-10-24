@@ -82,7 +82,7 @@ $$
 $$
 it preserves the two sectors $\mathbb{M}_{\pm}$, and it scales the norm by
 $$
-\boxed{\;N\bigl(\mathrm{H}_{\tilde Q}(\tilde Q_3)\bigr)=|N(\tilde Q)|^{2}N(\tilde Q_3)\;}.
+\boxed{\;\langle\mathrm{H}_{\tilde Q}(\tilde Q_3)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde Q_3\rangle_{\natural}\;}.
 $$
 On the whole algebra its kernel is the central circle $\mathrm{U}(1)e_t$; on the norm-one slice it is $\{\pm e_t\}$, which is the double cover. On the norm-one slice it is an isometry and its image is $SO^{+}(1,3)$; on the whole unit group the image is a seven-dimensional similarity group.
 
@@ -96,7 +96,7 @@ On the whole algebra its kernel is the central circle $\mathrm{U}(1)e_t$; on the
 
 **A change of frame is the sandwich.** A four-vector is acted on by an element, not by a matrix, and the action is the sandwich. The acting element meets the element on both sides at once; a one-sided multiplication carries the element, while the sandwich carries the frame in which the element is described. Interpreted physically, a change of frame is a relabelling of the description, and the unit is the frame. The norm-one condition makes the action an isometry, and the central sign makes it a double cover.
 
-**The interval is the frame-independent object.** On the norm-one slice the sandwich preserves $N$, and off the slice it multiplies $N$ by the positive factor $|N(\tilde Q)|^{2}$. The sign and the vanishing of the norm are therefore unchanged by every unit, and the causal class of a four-vector is frame-independent. Interpreted physically, the interval is objective and the scale is a similarity, not a change of causal type.
+**The interval is the frame-independent object.** On the norm-one slice the sandwich preserves $\langle\tilde Q\rangle_{\natural}$, and off the slice it multiplies $\langle\tilde Q\rangle_{\natural}$ by the positive factor $|\langle\tilde Q\rangle_{\natural}|^{2}$. The sign and the vanishing of the norm are therefore unchanged by every unit, and the causal class of a four-vector is frame-independent. Interpreted physically, the interval is objective and the scale is a similarity, not a change of causal type.
 
 **The two sectors are preserved.** The sandwich preserves $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ for every unit, because the sectors are the eigenspaces of the dagger. Interpreted physically, a change of frame acts on the four-vectors and on the Hermitian forms in the same way; the state side and the material side are both covariant.
 
@@ -188,18 +188,18 @@ for $\psi\neq0$, because the missing factor is $\tilde U^{*}\tilde U=\tilde U^{2
 
 The sandwich preserves the rank of the matrix image and, on the norm-one slice, the norm itself. On the material sector the sign and the vanishing of the norm give the causal classes:
 
-| class | norm $N$ | interpretation |
+| class | norm $\langle\tilde Q\rangle_{\natural}$ | interpretation |
 | --- | --- | --- |
-| timelike | $N<0$ | a world line of a massive particle |
-| null | $N=0$, $\tilde Q\neq0$ | a point of the light cone; a zero divisor of rank one |
-| spacelike | $N>0$ | a separation outside the cone |
+| timelike | $\langle\tilde Q\rangle_{\natural}<0$ | a world line of a massive particle |
+| null | $\langle\tilde Q\rangle_{\natural}=0$, $\tilde Q\neq0$ | a point of the light cone; a zero divisor of rank one |
+| spacelike | $\langle\tilde Q\rangle_{\natural}>0$ | a separation outside the cone |
 | zero | $\tilde Q=0$ | the origin |
 
 The rank is always preserved: rank two is a unit, rank one is a nonzero zero divisor, rank zero is the origin.
 
 ### The Interpretations
 
-**The mass shell is an orbit.** The future timelike elements of a fixed norm form a single orbit of the proper orthochronous group, and the past elements form a second orbit. The orbit of the rest four-velocity $imc\,e_t$ is the future mass shell of mass $m$, with $N=-m^{2}c^{2}$. Interpreted physically, a particle of mass $m$ is a point on the orbit, and a change of frame moves it along the orbit; the mass is the invariant of the orbit, not a label attached to a representative.
+**The mass shell is an orbit.** The future timelike elements of a fixed norm form a single orbit of the proper orthochronous group, and the past elements form a second orbit. The orbit of the rest four-velocity $imc\,e_t$ is the future mass shell of mass $m$, with $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$. Interpreted physically, a particle of mass $m$ is a point on the orbit, and a change of frame moves it along the orbit; the mass is the invariant of the orbit, not a label attached to a representative.
 
 **The light cone is an orbit, and a null vector has no rest frame.** The nonzero future null elements form a single orbit, and the past null elements a second. A null element is a zero divisor of rank one, and no rotor carries it to the rest four-velocity, because the rest four-velocity is timelike. Interpreted physically, a massless particle has no rest frame; the future light cone is one orbit of directions, and the absence of a rest frame is the absence of a timelike representative.
 
@@ -242,7 +242,7 @@ The article does not derive the Lorentz group from the algebra: it reads the gro
 
 ## Summary
 
-The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The dagger sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|N(\tilde Q)|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
+The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The dagger sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
 
 A rotation is a unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, the images of the Pin group and not sandwiches by the unit group; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
 
@@ -254,11 +254,11 @@ A rotation is a unitary rotor, an algebra automorphism, with the angle halved in
 | $Sp(1)=S^{3}\cong SU(2)$ | unit quaternions; double cover of $SO(3)$ |
 | $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ | dagger sandwich; the change of frame |
 | $\mathrm{U}(1)e_t$ | kernel of the sandwich on the algebra |
-| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{M}_{-}$ |
+| $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{M}_{-}$ |
 | $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ | rotation rotor |
 | $\tilde U=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$ | boost rotor; Hermitian and norm-one |
 | $\rho_v(\tilde Q_3)=-v\tilde Q_3v^{-1}$ | reflection in $v^{\perp}$ |
-| $imc\,e_t$ | rest four-velocity; $N=-m^{2}c^{2}$ |
+| $imc\,e_t$ | rest four-velocity; $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ |
 | $SO^{+}(1,3)$ | proper orthochronous Lorentz group; the frame group |
 
 ## Further Reading

@@ -86,21 +86,21 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### The Algebra and Its Vector Spaces
 
-- [Introduction to the Biquaternion Algebra](../articles_maths/introduction-to-the-biquaternion-algebra.html)
-- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](../articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html)
+- [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html)
+- [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html)
 
 #### The Products
 
-- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html)
-- [Relations Between the Four General Products](../articles_maths/relations-between-the-four-general-products.html)
-- [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html)
+- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html)
+- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html)
+- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html)
 - [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html)
-- [The 12 Products of the Biquaternion Complex Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html)
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html)
 
 #### The Forms and Their Algebraic Norms
 
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html)
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html)
+- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html)
+- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html)
 
 #### Properties of the Biquaternion Algebra over $\mathbb{C}$
 

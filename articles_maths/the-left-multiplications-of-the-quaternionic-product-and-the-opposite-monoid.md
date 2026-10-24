@@ -9,7 +9,7 @@ $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2 , \qquad \tilde Q_1^{\natural} = Q_{1t} - \vec Q_1 ,
 $$
 
-the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra*. The four articles before this one are negative in their outcome: the product has no nontrivial idempotent, its square-zero set is the whole zero-divisor cone, it is associative at no rung of the ladder, and its symmetrisation is no Jordan algebra. This article is the batch's one positive structure theorem, and it is about the **operators** that the product defines rather than about the elements of the algebra.
+the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products and Their Relations* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra*. The four articles before this one are negative in their outcome: the product has no nontrivial idempotent, its square-zero set is the whole zero-divisor cone, it is associative at no rung of the ladder, and its symmetrisation is no Jordan algebra. This article is the batch's one positive structure theorem, and it is about the **operators** that the product defines rather than about the elements of the algebra.
 
 For an element $\tilde Q_1$ the **left multiplication** is the map on $\mathbb{B}$ obtained by fixing $\tilde Q_1$ in the first slot,
 
@@ -25,7 +25,7 @@ $$
 L_{\tilde Q_1}\circ L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1} ,
 $$
 
-the product on the right being the *plain* product of the algebra, so that the set of left multiplications is a monoid isomorphic to the **opposite** of the multiplicative monoid of $\mathbb{B}$ — although $\star$ is not associative. Second, the right multiplications of the product do not close under composition, and the closed family on the right is the twisted one $\tilde Q_2\mapsto\tilde Q_2\tilde Q_1^{\natural}$, whose law is the **direct** one, $\varrho_{\tilde Q_1}\circ \varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3}$. Third, the mixed composites $L_{\tilde Q_1}\circ \varrho_{\tilde Q_3}$ commute and span the full endomorphism algebra, the multiplication algebra of $\mathbb{B}$, of dimension sixteen. Fourth, this is exactly the row of the property table of *Comparison Between the Four General Products* on the left multiplications, which reads yes for the two bilinear products and no for the two sesquilinear ones.
+the product on the right being the *plain* product of the algebra, so that the set of left multiplications is a monoid isomorphic to the **opposite** of the multiplicative monoid of $\mathbb{B}$ — although $\star$ is not associative. Second, the right multiplications of the product do not close under composition, and the closed family on the right is the twisted one $\tilde Q_2\mapsto\tilde Q_2\tilde Q_1^{\natural}$, whose law is the **direct** one, $\varrho_{\tilde Q_1}\circ \varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3}$. Third, the mixed composites $L_{\tilde Q_1}\circ \varrho_{\tilde Q_3}$ commute and span the full endomorphism algebra, the multiplication algebra of $\mathbb{B}$, of dimension sixteen. Fourth, this is exactly the row of the property table of *The Four General Products and Their Relations* on the left multiplications, which reads yes for the two bilinear products and no for the two sesquilinear ones.
 
 ## The Left Multiplications
 
@@ -109,7 +109,7 @@ $$
 
 ## The Interpretation of the Monoid Row
 
-The property table of *Comparison Between the Four General Products* carries the four general products against the property "the left multiplications form a monoid" (*Comparison Between the Four General Products* §*The Property Table*), and the row reads
+The property table of *The Four General Products and Their Relations* carries the four general products against the property "the left multiplications form a monoid" (*The Four General Products and Their Relations* §*The Property Table*), and the row reads
 
 | product | left multiplications form a monoid |
 |---|---|
@@ -118,7 +118,7 @@ The property table of *Comparison Between the Four General Products* carries the
 | $\tilde Q_1\tilde Q_2^{*}$ | no |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | no |
 
-The two bilinear columns are the two this article has just settled: for the associative product the law is the direct one, $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_1\tilde Q_3}$, and for the quaternionic product it is the reversed one, $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$, so both families are monoids. The two sesquilinear products fail the row because the composition of two of their left multiplications is linear and not sesquilinear, and therefore not one of them (*Relations Between the Four General Products* §*The Left Multiplications*); the reason has nothing to do with the associativity of the underlying product, and the comparison article records that the row is not implied by the associative row.
+The two bilinear columns are the two this article has just settled: for the associative product the law is the direct one, $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_1\tilde Q_3}$, and for the quaternionic product it is the reversed one, $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$, so both families are monoids. The two sesquilinear products fail the row because the composition of two of their left multiplications is linear and not sesquilinear, and therefore not one of them (*The Four General Products and Their Relations* §*The Left Multiplications*); the reason has nothing to do with the associativity of the underlying product, and the comparison article records that the row is not implied by the associative row.
 
 **Remark.** The row is the place where the quaternionic product is at its closest to the associative one. Neither is the algebra of the other, and both the element-theoretic data and the Jordan structure were changed by the twisting of the first slot; but the left multiplications, which read the product as an action of the algebra on itself, survive, and they survive as the opposite monoid. The next two articles carry the product down to the quaternion subspace, where the whole batch becomes classical, and into the matrix model, where it is read off the trace and the determinant.
 

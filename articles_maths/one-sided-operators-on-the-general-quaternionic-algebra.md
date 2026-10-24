@@ -9,7 +9,7 @@ $$
 L_{\tilde Q_6}(\tilde Q_1)=\tilde Q_6\tilde Q_1,\qquad R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2 .
 $$
 
-Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is *Two-Sided Operators on the General Quaternionic Algebra*; the general Clifford theory of the one-sided families is *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are *One-Sided Operators on the General Plain Sesqualgebra*; and the form that supplies the adjoints is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is *Two-Sided Operators on the General Quaternionic Algebra*; the general Clifford theory of the one-sided families is *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are *One-Sided Operators on the General Plain Sesqualgebra*; and the form that supplies the adjoints is *The Four Forms and the Four Algebraic Norms*.
 
 ## The Two Multiplications
 
@@ -163,5 +163,5 @@ The one-sided operators of the biquaternion algebra are the left and right multi
 
 - [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the product of the two factors
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the dagger layer
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general quaternionic bilinear form and its Gram matrix
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general quaternionic bilinear form and its Gram matrix
 - [One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation](one-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html), for the general theory

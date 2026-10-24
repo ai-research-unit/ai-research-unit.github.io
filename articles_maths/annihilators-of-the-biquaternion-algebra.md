@@ -19,7 +19,7 @@ $$
 \tilde Q_2\star\tilde Q_1=\tilde Q_2\tilde Q_1
 =\bigl[Q_{2,0}Q_{1t}-(\vec Q_2,\vec Q_1)\bigr]+Q_{2,0}\vec Q_1+Q_{1t}\vec Q_2+\vec Q_2\times\vec Q_1,
 $$
-the operation of the twelve (*Introduction to the Biquaternion Algebra of
+the operation of the twelve (*The Biquaternion Algebra and Its Vector Spaces of
 Biquaternions*). It is associative, and the algebra is the complexification of the quaternion
 algebra, isomorphic to the matrix algebra $M_2(\mathbb{C})$. Its zero divisors are the elements of
 the cone $C(\tilde Q_2)=0$, and a nonzero element of the cone is a rank-one matrix (*Zero Divisors of
@@ -196,7 +196,7 @@ the cone and the plane and modify the coincidence of the two sides by an involut
 ## Further Reading
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
-- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), for the operation, its associativity and its table.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the operation, its associativity and its table.
 - [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), above this article in this category, for the cone, the two families and the rank-one matrix reading.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the coincidence of the four zero-divisor sets on the cone and the one-sided inverse equations.
 - [Annihilators of the General Quaternionic Algebra](annihilators-of-the-general-quaternionic-algebra.html), the sibling whose anti-automorphism makes the two annihilators coincide.

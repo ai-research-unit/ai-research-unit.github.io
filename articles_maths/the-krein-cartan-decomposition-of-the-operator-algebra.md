@@ -6,7 +6,7 @@ The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebr
 
 ## The Three Adjoints of the Operator Algebra
 
-**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* define three adjoints,
+**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The Four Forms and the Four Algebraic Norms* define three adjoints,
 
 $$
 \langle M\tilde{Q}_1,\tilde{Q}_2\rangle=\langle\tilde{Q}_1,M^{\mathsf T}\tilde{Q}_2\rangle,
@@ -166,7 +166,7 @@ The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_
 
 ## Further Reading
 
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the three pairings, their isometry groups and their signatures
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the three pairings, their isometry groups and their signatures
 - [The Krein Isometry Group and Its J-Contractions](the-krein-isometry-group-and-its-j-contractions.html), for $\mathrm{U}(1,3)$, its maximal compact part and the boosts
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the Krein adjoint of the algebra's families
 - [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone inside the Jordan part

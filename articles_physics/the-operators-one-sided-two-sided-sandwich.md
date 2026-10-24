@@ -131,7 +131,7 @@ $$
 
 so the image lies in the same sector. A general two-sided operator does not preserve the sectors. This is why the Lorentz transformation of a four-vector is a sandwich and not a general two-sided map.
 
-**It is a congruence.** In the matrix picture it is $X\mapsto MXM^{\dagger}$, which preserves rank off the cone, scales the determinant by $|N|^2$, and collapses to a rank-one line on the cone. The general two-sided operator is not a congruence and has no such rank theorem.
+**It is a congruence.** In the matrix picture it is $X\mapsto MXM^{\dagger}$, which preserves rank off the cone, scales the determinant by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, and collapses to a rank-one line on the cone. The general two-sided operator is not a congruence and has no such rank theorem.
 
 **It is self-adjoint for the Hermitian form exactly when its parameter is a phase multiple of a sector element.** For the Hermitian form $\langle X,Y\rangle_{*}=\operatorname{Sc}(X^{*}Y)$,
 
@@ -156,10 +156,10 @@ is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the produ
 Off the unit-norm slice the sandwich is a congruence with a scale. The norm is multiplicative and the star conjugates it,
 
 $$
-N\bigl(\operatorname{H}_{\tilde Q}(X)\bigr)=N(\tilde Q)\,N(X)\,N(\tilde Q^{*})=|N(\tilde Q)|^{2}N(X).
+\langle\operatorname{H}_{\tilde Q}(X)\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle X\rangle_{\natural}\,\langle\tilde Q^{*}\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle X\rangle_{\natural}.
 $$
 
-The scale is the squared modulus of the norm. In the polar word $\lvert N(\tilde Q)\rvert=r^{2}$, so the conformal factor of the sandwich is $r^{4}=\lvert N(\tilde Q)\rvert^{2}$: the fourth power of the word's scale, and the square of the norm. On a four-momentum the norm is $-m^{2}c^{2}$, so the scale is $m^{4}c^{4}$; the mass is the modulus of the norm, not the scale. The phrase *the inner automorphism scaled by the norm* is exact on the unitary slice, where the scale is one and the map preserves the product. On the Lorentz slice the norm is one as well, but the map is a congruence: it preserves the interval and not the product.
+The scale is the squared modulus of the norm. In the polar word $\lvert\langle\tilde Q\rangle_{\natural}\rvert=r^{2}$, so the conformal factor of the sandwich is $r^{4}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$: the fourth power of the word's scale, and the square of the norm. On a four-momentum the norm is $-m^{2}c^{2}$, so the scale is $m^{4}c^{4}$; the mass is the modulus of the norm, not the scale. The phrase *the inner automorphism scaled by the norm* is exact on the unitary slice, where the scale is one and the map preserves the product. On the Lorentz slice the norm is one as well, but the map is a congruence: it preserves the interval and not the product.
 
 **The boundary.** The identification fails where $\tilde Q^{*}\neq\tilde Q^{-1}$. A Lorentz parameter satisfies the norm-one condition; a boost is not unitary, and it is the counterexample. The sandwich is always a congruence; it is a similarity only on the unitary slice.
 
@@ -204,7 +204,7 @@ The worked examples cover the central dilation, the vector rotation by $\pi$ and
 | material $\tilde R$ | the same family as $\mathbb{M}_+$, through $i\tilde R$ | the four-vector action |
 | unit-norm slice | an isometry; it moves the ledger and leaves the phase alone | the frame change |
 
-The first row is exact because $i$ is central: $(i\tilde Q_2)^{*}=-i\tilde Q_2^{*}$, so the two factors $i$ cancel in the sandwich. The second row is the negative-norm Hermitian case: $\tilde Q=i\vec u$ has $N=-1$ and $\tilde Q^{2}=e_t$, so the sandwich is $i\vec u\,X\,i\vec u=-\vec u X\vec u=\vec u X\vec u^{-1}$, the rotation by $\pi$ about $\vec u$. The corpus reads the general negative-norm element as a boost composed with that rotation. The third row is the identity $\operatorname{H}_{i\tilde R}=\operatorname{H}_{\tilde R}$ for material $\tilde R$, because $(i\tilde R)^{*}=i\tilde R$; the material four-vector and its Hermitian representative $i\tilde R$ produce the same sandwich. The fourth row is the unit-norm slice: it is the isometry group, and it preserves the sector and the interval.
+The first row is exact because $i$ is central: $(i\tilde Q_2)^{*}=-i\tilde Q_2^{*}$, so the two factors $i$ cancel in the sandwich. The second row is the negative-norm Hermitian case: $\tilde Q=i\vec u$ has $\langle\tilde Q\rangle_{\natural}=-1$ and $\tilde Q^{2}=e_t$, so the sandwich is $i\vec u\,X\,i\vec u=-\vec u X\vec u=\vec u X\vec u^{-1}$, the rotation by $\pi$ about $\vec u$. The corpus reads the general negative-norm element as a boost composed with that rotation. The third row is the identity $\operatorname{H}_{i\tilde R}=\operatorname{H}_{\tilde R}$ for material $\tilde R$, because $(i\tilde R)^{*}=i\tilde R$; the material four-vector and its Hermitian representative $i\tilde R$ produce the same sandwich. The fourth row is the unit-norm slice: it is the isometry group, and it preserves the sector and the interval.
 
 The last two rows are why the temporal exchange and the material transformation theory are separate. Multiplication by the central $i$ exchanges the sectors and reverses the norm; a unit-norm sandwich preserves the sector and the norm. The central phase is invisible to the sandwich: the sandwich carries the modulus and not the argument. The two operations belong to different columns of the dictionary, and neither is a dynamics.
 
@@ -298,7 +298,7 @@ The twelve structures are not one calculus. Only the general plain bilinear row 
 - The plain form measures the symmetric data; the orientation of a process is in the commutator.
 - A two-sided operator is a pair defined up to a common central factor; the identity is the pair $(\lambda e_t,\lambda^{-1}e_t)$.
 - The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$ ($\tilde Q^{*}=\lambda\tilde Q$, $|\lambda|=1$).
-- The sandwich is an inner automorphism on the unitary slice; on the Lorentz slice it is a congruence, and off the unit-norm slice it scales the interval by $|N|^{2}$.
+- The sandwich is an inner automorphism on the unitary slice; on the Lorentz slice it is a congruence, and off the unit-norm slice it scales the interval by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$.
 - The dictionary has four further rows: the imaginary quaternion (phase frozen), the negative-norm element (boost with a $\pi$-rotation), the material sector (through $i\tilde R$), and the unit-norm slice (frame change).
 - On the null cone the sandwich collapses to a rank-one line; the nilpotent and the scaled projection are its two faces.
 - The central phase is invisible to the sandwich and visible to the norm; the scale is seen squared, not once.

@@ -7,7 +7,7 @@ law, the law of being **$\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian**. The
 quaternionic sesquilinear product
 $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra*; the twelve structures and their
-four general products are the subject of *The 12 Products of the Biquaternion Complex Space*, and the model
+four general products are the subject of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the model
 of the method is *The Specificities of the Biquaternion Algebra*, which isolates the plain product by left
 alternativity. The twin articles are
 *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic
@@ -42,7 +42,7 @@ is the Krein form. The twelve structures are the four general products
 $\mathrm{GPA},\mathrm{GQA},\mathrm{GPS},\mathrm{GQS}$, their four symmetric parts
 $\mathrm{SPA},\mathrm{SQA},\mathrm{SPS},\mathrm{SQS}$ and their four antisymmetric parts
 $\mathrm{APA},\mathrm{AQA},\mathrm{APS},\mathrm{AQS}$, with the two first rows bilinear and the two last
-rows sesquilinear, as in *The 12 Products of the Biquaternion Complex Space*.
+rows sesquilinear, as in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 Throughout, the block is $\mathrm{SQS}$, and the products of the twelve are written with their three-letter
 names.
 
@@ -180,7 +180,7 @@ square.
 
 - [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), the model of the method, where left alternativity isolates the plain product among the twelve.
 - [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html) and [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), the twin articles, for the operator laws of the two neighbouring structures.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the twelve structures, their four general products and their parts.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve structures, their four general products and their parts.
 - [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the adapted exchange that the clause (C1) names.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product, its scalar part and its diagonal.
 - [The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra](the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.html), for the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness and the operators of the block.

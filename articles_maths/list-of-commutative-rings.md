@@ -65,10 +65,10 @@ The ring $\mathbb{Z}[x]$, with dimension $2$ and units $\pm 1$, is the standard 
 
 | Ring | Dimension | Units | Zero divisors | Introduced in |
 |---|---|---|---|---|
-| $\mathbb{D}$ | $2$ over $\mathbb{R}$; Krull $0$ | $N(u) \neq 0$ | the null cone $\{N = 0\}$ | *Split-Complex Algebra* |
+| $\mathbb{D}$ | $2$ over $\mathbb{R}$; Krull $0$ | $\langle u\rangle_{*} \neq 0$ | the null cone $\{\langle u\rangle_{*} = 0\}$ | *Split-Complex Algebra* |
 | $\mathbb{D}'$ | $2$ over $\mathbb{R}$; Krull $0$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | *Dual-Numbers Algebra* |
 
-The two algebras are not isomorphic. The split-complex numbers are a product of two copies of $\mathbb{R}$ and are reduced; the dual numbers are local and not reduced. Their zero divisors are correspondingly different: the null cone of $\mathbb{D}$ consists of the elements with $N(u) = 0$, while the zero divisors of $\mathbb{D}'$ are exactly the elements of the maximal ideal, and $\varepsilon$ is nilpotent rather than idempotent.
+The two algebras are not isomorphic. The split-complex numbers are a product of two copies of $\mathbb{R}$ and are reduced; the dual numbers are local and not reduced. Their zero divisors are correspondingly different: the null cone of $\mathbb{D}$ consists of the elements with $\langle u\rangle_{*} = 0$, while the zero divisors of $\mathbb{D}'$ are exactly the elements of the maximal ideal, and $\varepsilon$ is nilpotent rather than idempotent.
 
 ## Product Rings
 
@@ -87,7 +87,7 @@ A product of two nonzero rings is never an integral domain, never local and neve
 | Object | Why it is not a commutative ring | Introduced in |
 |---|---|---|
 | $\mathbb{H}$ | a division ring, but not commutative | *Quaternion Algebra* |
-| $\mathbb{B}$ | the biquaternions, not commutative and with zero divisors | *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* |
+| $\mathbb{B}$ | the biquaternions, not commutative and with zero divisors | *The Biquaternion Algebra and Its Vector Spaces* |
 | $\mathbb{H}_{\mathbb{D}}$ | the split-biquaternions, not commutative and with zero divisors | *Split-Biquaternion Algebra* |
 | $M_n(R)$, $n \geq 2$ | the matrix ring, not commutative | *Matrix Algebras* |
 | $M_n(D)$ over a division ring $D$ | not commutative in general | *Matrix Algebras* |

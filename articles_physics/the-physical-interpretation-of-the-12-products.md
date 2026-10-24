@@ -12,12 +12,12 @@ The article owns no theorem. Each result is stated in a sentence, the mathematic
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The twelve products, their multiplication tables and their values | [The 12 Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html) |
+| The twelve products, their multiplication tables and their values | [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) |
 | The twelve structures, their products, values, units and identities | [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The Jordan and Jacobi identities, the two that hold and the six witnesses of failure | [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The realification, the real dimension, the real operators and the signatures | [The Realification of the Eight Derived Structures](../articles_maths/the-realification-of-the-eight-derived-structures.html) |
-| The four forms and their signatures | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
-| The four algebraic norms and their definiteness and multiplicativity | [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html) |
+| The four forms and their signatures | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
+| The four algebraic norms and their definiteness and multiplicativity | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
 | The twelve zero-divisor sets and the cone | [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The twelve annihilators, their dimensions and the two sides | [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The root equation and the four existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
@@ -262,10 +262,10 @@ The twelve compared give three divisions: the family, the values and the law. Re
 
 ## Further Reading
 
-- [The 12 Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html), for the multiplication tables and the coordinates of the twelve.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the multiplication tables and the coordinates of the twelve.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve products, the identities and the witnesses.
 - [The Realification of the Eight Derived Structures](../articles_maths/the-realification-of-the-eight-derived-structures.html), for the real dimension, the real operators and the signatures.
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html), for the four forms and their Gram matrices.
+- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html), for the four forms and their Gram matrices.
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the four parents read one by one.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the forms and the norms read physically.
 - [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) and [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the three named values read on their own.

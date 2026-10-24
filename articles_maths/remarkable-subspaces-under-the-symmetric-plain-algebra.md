@@ -118,7 +118,7 @@ The Hermitian subspace is the set of elements fixed by the Hermitian conjugation
 
 $$ \boxed{\; (\tilde Q_1\bullet\tilde Q_2)^{*}=\tfrac12\bigl((\tilde Q_1\tilde Q_2)^{*}+(\tilde Q_2\tilde Q_1)^{*}\bigr)=\tfrac12\bigl(\tilde Q_2\tilde Q_1+\tilde Q_1\tilde Q_2\bigr)=\tilde Q_1\bullet\tilde Q_2 \;}, $$
 
-and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *The 12 Products of the Biquaternion Complex Space*.
+and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 ### Units, Idempotents and Isotropic Elements
 
@@ -190,5 +190,5 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 - [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html), for the same remarkable subspaces under the general plain bilinear form, and [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the readings of the four general products.
 - [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the generic norm, the units and the isotropic cone.
 - *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html), for the isotropic cone of the block and the elements of square zero.

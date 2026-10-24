@@ -47,7 +47,7 @@ for $\tilde q_1 = q_{1t} e_t + q_{1x} \vec e_x + q_{1y} \vec e_y + q_{1z} \vec e
 
 The multiplicativity of $\langle\cdot\rangle_{\natural}$ has an immediate consequence for the sign.
 
-**Proposition.** The set $\{N > 0\}$ and the set $\{N < 0\}$ are each closed under multiplication, and the product of an element of $\{N>0\}$ with an element of $\{N<0\}$ has $N < 0$. The scalar line and the $\vec e_x$-direction have positive norm, while the $\vec e_y$- and $\vec e_z$-directions have negative norm.
+**Proposition.** The set $\{\langle\tilde q\rangle_{\natural} > 0\}$ and the set $\{\langle\tilde q\rangle_{\natural} < 0\}$ are each closed under multiplication, and the product of an element of $\{\langle\tilde q\rangle_{\natural}>0\}$ with an element of $\{\langle\tilde q\rangle_{\natural}<0\}$ has $\langle\tilde q\rangle_{\natural} < 0$. The scalar line and the $\vec e_x$-direction have positive norm, while the $\vec e_y$- and $\vec e_z$-directions have negative norm.
 
 **Proof.** If $\langle\tilde q_1\rangle_{\natural}$ and $\langle\tilde q_2\rangle_{\natural}$ are both positive, then $\langle\tilde q_1 \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} > 0$, and similarly in the other cases. The signs of the basis elements are $\langle 1\rangle_{\natural} = \langle \vec e_x\rangle_{\natural} = +1$ and $\langle \vec e_y\rangle_{\natural} = \langle \vec e_z\rangle_{\natural} = -1$.
 
@@ -55,7 +55,7 @@ The multiplicativity of $\langle\cdot\rangle_{\natural}$ has an immediate conseq
 
 **Theorem.** No positive-definite quadratic form on $\mathbb{H}_{\mathrm{s}}$ is multiplicative.
 
-**Proof.** The elements $1+\vec e_y$ and $1-\vec e_y$ are nonzero, and $(1+\vec e_y)(1-\vec e_y)=1-\vec e_y^2=0$. A multiplicative form $N$ would give $N(1+\vec e_y)N(1-\vec e_y)=N(0)=0$, so one of the two factors would vanish; positive definiteness forbids that on a nonzero element.
+**Proof.** The elements $1+\vec e_y$ and $1-\vec e_y$ are nonzero, and $(1+\vec e_y)(1-\vec e_y)=1-\vec e_y^2=0$. A multiplicative form $\langle\cdot\rangle_{\natural}$ would give $\langle 1+\vec e_y\rangle_{\natural}\langle 1-\vec e_y\rangle_{\natural}=\langle 0\rangle_{\natural}=0$, so one of the two factors would vanish; positive definiteness forbids that on a nonzero element.
 
 **Remark.** The obstruction is the null cone and nothing else. A finite-dimensional real algebra carrying a positive-definite multiplicative quadratic form is a composition algebra, and a composition algebra has no zero divisors; the split-quaternions have a null cone, so no such form exists. The quaternion algebra is the contrast: its norm is positive definite and multiplicative at once, and it has no zero divisor.
 
@@ -113,7 +113,7 @@ a circle's worth of lines; in particular $\mathbb{R}(\vec e_x + \vec e_y)$, $\ma
 
 **Proof.** The equation $\langle\tilde q\rangle_{\natural} = 0$ is $q_t^2 + q_x^2 = q_y^2 + q_z^2$. If $(q_t,q_x) = (0,0)$ then $q_y = q_z = 0$ and $\tilde q = 0$, contrary to the definition of an isotropic vector; the same argument applies to $(q_y,q_z)$. Hence both pairs are nonzero, and there are $r > 0$ and angles $\alpha, \beta$ with $(q_t,q_x) = r(\cos\alpha, \sin\alpha)$ and $(q_y,q_z) = r(\cos\beta, \sin\beta)$; the common radius is forced by the equation. Multiplying $\tilde q$ by a positive scalar does not change either angle, and multiplying by $-1$ adds $\pi$ to both, so the line determines $(\alpha,\beta)$ modulo the simultaneous replacement. For the vector subspace, $q_t = 0$ and the equation is $q_x^2 = q_y^2 + q_z^2$ with $q_x \neq 0$; normalising $q_x = 1$ and writing $(q_y,q_z) = (\cos\theta,\sin\theta)$ gives the displayed family.
 
-**Theorem (The Isotropic Lines Are Doubly Ruled).** The isotropic lines of $\mathbb{H}_{\mathrm{s}}$ are the points of the projective null quadric $\{N = 0\} \subset \mathbb{P}(\mathbb{H}_{\mathrm{s}})$, and that quadric is doubly ruled: its lines fall into two families, such that two lines of one family are skew while a line of one family meets a line of the other in exactly one point unless the two are parallel. The two families are defined and computed in *Split-Quaternion Zero Divisors*, §*The Two Families*.
+**Theorem (The Isotropic Lines Are Doubly Ruled).** The isotropic lines of $\mathbb{H}_{\mathrm{s}}$ are the points of the projective null quadric $\{\langle\tilde q\rangle_{\natural} = 0\} \subset \mathbb{P}(\mathbb{H}_{\mathrm{s}})$, and that quadric is doubly ruled: its lines fall into two families, such that two lines of one family are skew while a line of one family meets a line of the other in exactly one point unless the two are parallel. The two families are defined and computed in *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
 **Proof.** A nonzero element $\tilde q$ is isotropic exactly when $\langle\tilde q\rangle_{\natural} = 0$, so the isotropic lines are the points of the projective null quadric of the non-degenerate form $\langle\cdot\rangle_{\natural}$ of signature $(2,2)$. A non-degenerate quadric of signature $(2,2)$ in $\mathbb{P}^3$ is doubly ruled. The explicit ruling is proved in *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
@@ -145,7 +145,7 @@ so $\tilde q_1$ is invertible with the displayed inverse. Conversely, suppose $\
 
 **Corollary (Zero Divisors).** A nonzero element is a zero divisor if and only if $\langle\tilde q\rangle_{\natural} = 0$. If $\langle\tilde q\rangle_{\natural} = 0$ and $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not a unit, so $\langle\tilde q\rangle_{\natural} = 0$ by the criterion.
 
-The criterion has the form the menu names: **invertibility is $N \neq 0$**, and the boundary is the null cone of the split-quaternion norm. Since the split-quaternion norm is multiplicative, the multiplicative structure of the algebra and the invertibility theory are governed by one quadratic form.
+The criterion has the form the menu names: **invertibility is $\langle\tilde q\rangle_{\natural} \neq 0$**, and the boundary is the null cone of the split-quaternion norm. Since the split-quaternion norm is multiplicative, the multiplicative structure of the algebra and the invertibility theory are governed by one quadratic form.
 
 ## The Group of Units
 
@@ -160,7 +160,7 @@ with multiplication inherited from the algebra.
 **Theorem.** The split-quaternion norm restricts to a surjective group homomorphism
 
 $$
-N : \mathbb{H}_{\mathrm{s}}^{\times} \longrightarrow \mathbb{R}^{\times}.
+\langle\cdot\rangle_{\natural} : \mathbb{H}_{\mathrm{s}}^{\times} \longrightarrow \mathbb{R}^{\times}.
 $$
 
 **Proof.** Multiplicativity of $\langle\cdot\rangle_{\natural}$ makes it a group homomorphism from the units to $\mathbb{R}^{\times}$, and it is surjective because $\langle \lambda\rangle_{\natural} = \lambda^2$ and $\langle \lambda \vec e_y\rangle_{\natural} = -\lambda^2$ for real $\lambda \neq 0$.
@@ -171,9 +171,9 @@ $$
 \mathrm{U} = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
 $$
 
-and the union of the two split-quaternion norm levels $\pm 1$ is the disjoint union $\{\tilde q : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ of two connected components, namely $\mathrm{U}$ and its negative. The group of units has two connected components as well, the open sets $\{N > 0\}$ and $\{N < 0\}$; the norm-one subgroup $\mathrm{U}$ is connected.
+and the union of the two split-quaternion norm levels $\pm 1$ is the disjoint union $\{\tilde q : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ of two connected components, namely $\mathrm{U}$ and its negative. The group of units has two connected components as well, the open sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$; the norm-one subgroup $\mathrm{U}$ is connected.
 
-**Proof.** The kernel of $\langle\cdot\rangle_{\natural}$ is $\{N = 1\}$, which is the group of unit split-quaternions and is connected, as recalled in *Matrix Groups and Classical Groups*; the second norm level is its negative coset $-\mathrm{U}$. The group of units is the disjoint union of the two open sign sets $\{N > 0\}$ and $\{N < 0\}$.
+**Proof.** The kernel of $\langle\cdot\rangle_{\natural}$ is $\{\langle\tilde q\rangle_{\natural} = 1\}$, which is the group of unit split-quaternions and is connected, as recalled in *Matrix Groups and Classical Groups*; the second norm level is its negative coset $-\mathrm{U}$. The group of units is the disjoint union of the two open sign sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
 This is the exact point at which the indefinite norm changes the group theory. The quaternion unit sphere is the compact group $Sp(1) \cong SU(2)$, the kernel of a positive-definite norm on a division algebra. The split-quaternion norm-one set is the non-compact $\mathrm{SL}_2(\mathbb{R})$, and the passage from $Sp(1)$ to $\mathrm{SL}_2(\mathbb{R})$ is the passage from the double cover of the rotation group of three-space to the double cover of the Lorentz group of signature $(2,1)$. The rotations themselves are treated in *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -219,7 +219,7 @@ $$
 \langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2 .
 $$
 
-The invertible elements of $V$ are the vectors with $q_x^2 \neq q_y^2 + q_z^2$: the **spacelike** vectors with $q_x^2 < q_y^2 + q_z^2$, on which $N < 0$, and the **timelike** vectors with $q_x^2 > q_y^2 + q_z^2$, on which $N > 0$. The non-invertible nonzero elements of $V$ are the **lightlike** vectors, the cone $q_x^2 = q_y^2 + q_z^2$. This is the trichotomy of the Lorentzian geometry of the vector subspace, and it is the reason the geometry of the system is the hyperbolic plane; see *Split-Quaternion Rotations and the Lorentz Group*.
+The invertible elements of $V$ are the vectors with $q_x^2 \neq q_y^2 + q_z^2$: the **spacelike** vectors with $q_x^2 < q_y^2 + q_z^2$, on which $\langle\tilde q\rangle_{\natural} < 0$, and the **timelike** vectors with $q_x^2 > q_y^2 + q_z^2$, on which $\langle\tilde q\rangle_{\natural} > 0$. The non-invertible nonzero elements of $V$ are the **lightlike** vectors, the cone $q_x^2 = q_y^2 + q_z^2$. This is the trichotomy of the Lorentzian geometry of the vector subspace, and it is the reason the geometry of the system is the hyperbolic plane; see *Split-Quaternion Rotations and the Lorentz Group*.
 
 ### The Split-Complex Subspaces
 
@@ -251,7 +251,7 @@ So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{s}} \tilde\pi
 | $\mathbb{D}_3$ | $2$ | $q_t^2 - q_z^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_z) \setminus \{0\}$ |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
 
-The invertible elements are the complement of the null cone $\{N = 0\}$, an open dense set of full measure. They form two connected components, $\{N > 0\}$ and $\{N < 0\}$.
+The invertible elements are the complement of the null cone $\{\langle\tilde q\rangle_{\natural} = 0\}$, an open dense set of full measure. They form two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
 ## Comparison with the Quaternion and Split-Biquaternion Cases
 
@@ -267,7 +267,7 @@ The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\ma
 
 The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_t^2 + q_x^2 = q_y^2 + q_z^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the null cone $q_x^2 = q_y^2 + q_z^2$.
 
-A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.
+A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of units is $\{\langle\tilde q\rangle_{\natural} \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{\langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The units form the two connected components $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
 No positive-definite form on $\mathbb{H}_{\mathrm{s}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
@@ -280,10 +280,10 @@ No positive-definite form on $\mathbb{H}_{\mathrm{s}}$ is multiplicative, since 
 | $\langle\tilde q_1,\tilde q_2\rangle$ | the polarised bilinear form | this article |
 | $\lvert\tilde q\rvert$ | the Euclidean norm, submultiplicative up to $\sqrt2$ | *Split-Quaternion Analysis* |
 | isotropic vector, isotropic line | nonzero $\tilde q$ with $\langle\tilde q\rangle_{\natural}=0$, and its span | this article |
-| $\mathbb{H}_{\mathrm{s}}^{\times}$ | the group of units $\{N \neq 0\}$ | this article |
-| $\mathrm{U} = \{N = 1\}$ | the unit split-quaternions, $\cong \mathrm{SL}_2(\mathbb{R})$ | this article |
-| $\{N = \pm 1\}$ | the two split-quaternion norm levels, $\mathrm{U}$ and $-\mathrm{U}$ | this article |
-| $P = \{N > 0\}$, $Q = \{N < 0\}$ | the two components of the units | this article |
+| $\mathbb{H}_{\mathrm{s}}^{\times}$ | the group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ | this article |
+| $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\}$ | the unit split-quaternions, $\cong \mathrm{SL}_2(\mathbb{R})$ | this article |
+| $\{\langle\tilde q\rangle_{\natural} = \pm 1\}$ | the two split-quaternion norm levels, $\mathrm{U}$ and $-\mathrm{U}$ | this article |
+| $P = \{\langle\tilde q\rangle_{\natural} > 0\}$, $Q = \{\langle\tilde q\rangle_{\natural} < 0\}$ | the two components of the units | this article |
 | $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ | the scalar, vector and split-complex subspaces | *Split-Quaternion Algebra* |
 | $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ | the non-central idempotents | *Split-Quaternion Algebra* |
 | spacelike, timelike, lightlike | the sign of $\langle\cdot\rangle_{\natural}$ on $V$ | this article |

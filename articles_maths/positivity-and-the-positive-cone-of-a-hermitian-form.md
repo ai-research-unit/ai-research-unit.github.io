@@ -187,7 +187,7 @@ $$
 h(Q,Q) = \mathrm{Sc}(Q^{*}Q) = \sum_{\mu=0}^{3} \lvert Q_{\mu}\rvert^{2} ,
 $$
 
-the sum of the modulus squares of the coordinates, positive definite by *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; here $\varepsilon=(1,-1,-1,-1)$ is the sign vector of the coefficient basis, so that the sum is the four terms $\bar Q_0Q'_t-\bar Q_1Q'_x-\bar Q_2Q'_y-\bar Q_3Q'_z$.
+the sum of the modulus squares of the coordinates, positive definite by *The Four Forms and the Four Algebraic Norms*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the general quaternionic sesquilinear form of *The Four Forms and the Four Algebraic Norms*; here $\varepsilon=(1,-1,-1,-1)$ is the sign vector of the coefficient basis, so that the sum is the four terms $\bar Q_0Q'_t-\bar Q_1Q'_x-\bar Q_2Q'_y-\bar Q_3Q'_z$.
 
 ### The Split Algebra
 

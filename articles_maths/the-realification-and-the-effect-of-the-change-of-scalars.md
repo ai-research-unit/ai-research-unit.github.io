@@ -118,7 +118,7 @@ for the two sesquilinear forms.
 
 *Proof.* For a $\mathbb{C}$-bilinear form, $\Phi(iP,iQ)=i^2\Phi(P,Q)=-\Phi(P,Q)$, and taking real parts gives the first display. For a Hermitian form, $\Phi(iP,iQ)=i\bar i\,\Phi(P,Q)=\Phi(P,Q)$, and the second follows. The sign is the same statement as the block shapes of the two Gram matrices: the bilinear realification has the two blocks $\mathrm{D}$ and $-\mathrm{D}$ while the Hermitian one repeats its block.
 
-**Remark (the two rules and the four signatures).** The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two **bilinear** forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two **Hermitian** forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+**Remark (the two rules and the four signatures).** The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two **bilinear** forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two **Hermitian** forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in *The Four Forms and the Four Algebraic Norms*.
 
 ## The Four Effects on a Structure
 
@@ -150,7 +150,7 @@ The effect of the passage on the objects the corpus builds is then read off obje
 
 ## The Effect on the Twelve Algebraic Structures
 
-**Theorem (the twelve over $\mathbb{R}$).** The twelve products of *The 12 Products of the Biquaternion Complex Space* are defined by the four general products on the complex space. Read over $\mathbb{R}$,
+**Theorem (the twelve over $\mathbb{R}$).** The twelve products of *Symmetric and Antisymmetric Decomposition of the Four General Products* are defined by the four general products on the complex space. Read over $\mathbb{R}$,
 
 1. all twelve are $\mathbb{R}$-bilinear, so all twelve are algebras in the broad sense over $\mathbb{R}$;
 2. the six of the $A$ family are $\mathbb{C}_{\mathbb{B}}$-linear in the second slot, and the six of the $S$ family are $\mathbb{C}_{\mathbb{B}}$-conjugate-linear in it;
@@ -166,13 +166,13 @@ The effect of the passage on the objects the corpus builds is then read off obje
 | associative unital | $1$, the general plain algebra | $1$, the same |
 | of the twelve structures, the number that are algebras | $6$ | $12$ |
 
-*Proof.* The broad count is the theorem above and the definition of a sesqualgebra over $(\mathbb{C},\varsigma)$, whose two scalar rules are the two slots of the $S$ family. The associative unital count is that only the general plain product of the twelve is associative, by *Introduction to the Biquaternion Algebra*, §*Associativity*, and by the collapse theorem of *Sesqualgebras* for the sesquilinear family — the statement is about the ring and so is the same in the two readings.
+*Proof.* The broad count is the theorem above and the definition of a sesqualgebra over $(\mathbb{C},\varsigma)$, whose two scalar rules are the two slots of the $S$ family. The associative unital count is that only the general plain product of the twelve is associative, by *The Biquaternion Algebra and Its Vector Spaces*, §*Associativity*, and by the collapse theorem of *Sesqualgebras* for the sesquilinear family — the statement is about the ring and so is the same in the two readings.
 
 **Theorem (the centre carries the distinction, and the products do not merge).** After the realification the six products of the $S$ family are no longer distinguished from the six of the $A$ family by the field $\mathbb{R}$; they are distinguished by the centre $\mathbb{C}_{\mathbb{B}}$, over which the first six are linear and the second six conjugate-linear. The distinction is an object of the reading and not of the product: the product, its table and every ring property are the same before and after.
 
 *Proof.* The criteria of §*The Realification of a Linear Map* apply to the second slot, with $V=W=\mathbb{B}$ and with $\mathbb{C}_{\mathbb{B}}$ in place of $\mathbb{C}$. The last clause is the dictionary.
 
-**Remark (the trap of the real part).** A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_te_t+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of *The 12 Products of the Biquaternion Complex Space*, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.
+**Remark (the trap of the real part).** A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_te_t+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of *Symmetric and Antisymmetric Decomposition of the Four General Products*, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.
 
 ## What Is Specific to the Biquaternion Instance
 
@@ -235,5 +235,5 @@ Four things are specific to the biquaternion instance and are collected at the e
 ## Further Reading
 
 - [The Realification of the Eight Derived Structures](the-realification-of-the-eight-derived-structures.html), for the general case applied to the four forms of the corpus, the four Gram matrices, the four signatures, the restrictions to the remarkable subspaces and the realified null cones.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html) and [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve products, their table and their two-slot construction, on which §*The Effect on the Twelve Algebraic Structures* rests.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) and [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve products, their table and their two-slot construction, on which §*The Effect on the Twelve Algebraic Structures* rests.
 - [Change of Rings](change-of-rings.html), [Extension of Scalars](extension-of-scalars.html) and [Real Forms and the Descent of an Algebra](real-forms-and-the-descent-of-an-algebra.html), for the general theory of the restriction and the extension of scalars and of the real forms.

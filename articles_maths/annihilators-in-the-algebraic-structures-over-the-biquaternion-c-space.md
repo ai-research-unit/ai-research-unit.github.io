@@ -21,7 +21,7 @@ and the **two-sided annihilator** is their intersection. Each is the kernel of o
 - A **complex plane** is a two-dimensional complex subspace, written $\mathbb{C}\{u,v\}$ with its two generators displayed; a **complex line** is written $\mathbb{C}u$. A plane is checked by multiplying its two generators into the product and finding zero.
 - The **centre** is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{B})=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$.
 
-**Four algebraic norms, and the one that decides.** The twelve products carry four **algebraic norms** and no more (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the four is carried by two products, and the four antisymmetrisations carry none. They are
+**Four algebraic norms, and the one that decides.** The twelve products carry four **algebraic norms** and no more (*The Four Forms and the Four Algebraic Norms*): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the four is carried by two products, and the four antisymmetrisations carry none. They are
 $$
 \langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},\qquad \langle\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}+\lvert\vec Q\rvert^{2},\qquad \langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad \langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2},
 $$
@@ -35,7 +35,7 @@ The two-sided annihilator lies in the zero-divisor set together with $0$, becaus
 
 ## The Twelve Structures and their Annihilators
 
-The four general products split into the twelve structures through the class-preserving exchange (*The 12 Products of the Biquaternion Complex Space*). Each structure is read below with its product written out, the criterion in coordinates, and the annihilator with its generators displayed. The twelve are in the order of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The four general products split into the twelve structures through the class-preserving exchange (*Symmetric and Antisymmetric Decomposition of the Four General Products*). Each structure is read below with its product written out, the criterion in coordinates, and the annihilator with its generators displayed. The twelve are in the order of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\mathrm{GPA}$, the general plain algebra
 
@@ -337,8 +337,8 @@ The single example that ties them together is $\tilde Q=e_t+i\vec e_x$, whose no
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the cone, the twelve zero-divisor sets and the one-sided inverse equations.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the annihilator stated once for a general product.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve names and their three-letter codes.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the twelve products and their class-preserving exchange.
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the four algebraic norms $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural*}$, the two products that carry each, and the norm $\langle\cdot\rangle_{\natural}$ that decides the annihilators.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products and their class-preserving exchange.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four algebraic norms $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural*}$, the two products that carry each, and the norm $\langle\cdot\rangle_{\natural}$ that decides the annihilators.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the kernels of the multiplications read in the matrix model.
 - [Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.html), for the reading in the three companion structures of the quaternion space, where the elements that annihilate every partner are tabulated.
 

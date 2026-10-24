@@ -79,10 +79,10 @@ In particular the group of units $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ 
 **Definition.** The **unit set** of $\mathbb{R}$ is the norm-one level set
 
 $$
-\{q : |q| = 1\} = \{q : N(q) = 1\} = \{\pm1\} = O(1).
+\{q : |q| = 1\} = \{q : \langle q\rangle = 1\} = \{\pm1\} = O(1).
 $$
 
-The two descriptions coincide because the norm is positive definite and equals the square of the modulus, $N(q) = |q|^2$. The unit set is therefore the two-point set, a finite **discrete** topological group.
+The two descriptions coincide because the norm is positive definite and equals the square of the modulus, $\langle q\rangle = |q|^2$. The unit set is therefore the two-point set, a finite **discrete** topological group.
 
 **Proposition.** $\{\pm1\}$ is a compact, disconnected, abelian topological group of dimension $0$, and it is the maximal compact subgroup of $\mathbb{R}^\times$.
 
@@ -143,14 +143,14 @@ a compact ordered space in which every subset has a supremum and an infimum. The
 | Algebra as a space | $\mathbb{R}$, contractible, two ends | $\mathbb{R}^2$, contractible, one end |
 | Unit sphere | $\{\pm1\} = S^0$, not connected | $S^1$, a connected group |
 | Norm-one level set | $\{\pm1\} = O(1)$, finite | $S^1 = \mathrm{U}(1)$, compact |
-| Null cone $\{N = 0\}$ | $\{0\}$, a point | $\{0\}$, a point |
+| Null cone $\{\langle q\rangle = 0\}$ | $\{0\}$, a point | $\{0\}$, a point |
 | Link of the null cone | none | none |
 | Group of units | two contractible components | $\mathbb{C}^\times \simeq S^1$, connected |
 | Homotopy of the units | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$ |
 | One-point compactification | $S^1$ | $S^2$ |
 | Ends | two | one |
 
-The two algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$ and a connected circle for $\mathbb{C}$; in the unit group, which has two contractible components for $\mathbb{R}$ and a compact connected core for $\mathbb{C}$; and in the ends, which are two for the line and one for the plane. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite or a circle, and the definiteness of the norm, which makes the zero set of $N$ a single point.
+The two algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$ and a connected circle for $\mathbb{C}$; in the unit group, which has two contractible components for $\mathbb{R}$ and a compact connected core for $\mathbb{C}$; and in the ends, which are two for the line and one for the plane. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite or a circle, and the definiteness of the norm, which makes the zero set of $\langle q\rangle$ a single point.
 
 ## Summary
 
@@ -166,7 +166,7 @@ The line has two ends, and the two compactifications are the two-point compactif
 |---|---|
 | $\mathbb{R}$ | the real algebra as a topological space; contractible, two ends |
 | $q$ | a real number with real coordinate $q$ |
-| $N(q) = q^2$, $\lvert q\rvert = \sqrt{N(q)}$ | the norm and the modulus |
+| $\langle q\rangle = q^2$, $\lvert q\rvert = \sqrt{\langle q\rangle}$ | the norm and the modulus |
 | $d(q_1,q_2) = \lvert q_1-q_2\rvert$ | the metric generating the topology |
 | $B(q_0,\varepsilon) = (q_0-\varepsilon, q_0+\varepsilon)$ | the open ball, an open interval |
 | $\{\pm1\} = O(1) = S^0$ | the unit set, a discrete compact group |

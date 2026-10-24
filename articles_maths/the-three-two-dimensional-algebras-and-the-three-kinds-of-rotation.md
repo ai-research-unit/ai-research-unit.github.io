@@ -36,7 +36,7 @@ The assignment $u \mapsto M(u)$ is an injective algebra homomorphism $A \to M_2(
 **Definition.** The **norm** of $A$ is
 
 $$
-N(x + \omega y) = x^2 - \sigma y^2 =
+\langle x + \omega y\rangle_{*} = x^2 - \sigma y^2 =
 \begin{cases}
 x^2 + y^2, & \sigma = -1, \\
 x^2 - y^2, & \sigma = +1, \\
@@ -44,26 +44,26 @@ x^2, & \sigma = 0 .
 \end{cases}
 $$
 
-It satisfies $N(uv) = N(u)N(v)$ and $\det M(u) = N(u)$, and the **rotation group** of $A$ is the group of norm-one elements
+It satisfies $\langle uv\rangle_{*} = \langle u\rangle_{*}\langle v\rangle_{*}$ and $\det M(u) = \langle u\rangle_{*}$, and the **rotation group** of $A$ is the group of norm-one elements
 
 $$
-G_A = \{u \in A : N(u) = 1\}.
+G_A = \{u \in A : \langle u\rangle_{*} = 1\}.
 $$
 
-Multiplicativity makes $G_A$ a group, and for each $u \in G_A$ the map $L_u$ preserves the quadratic form $N$ on $\mathbb{R}^2$:
+Multiplicativity makes $G_A$ a group, and for each $u \in G_A$ the map $L_u$ preserves the quadratic form $\langle\cdot\rangle_{*}$ on $\mathbb{R}^2$:
 
 $$
-\boxed{\;N(u \cdot z) = N(u)N(z) = N(z), \qquad z \in A\;} .
+\boxed{\;\langle u \cdot z\rangle_{*} = \langle u\rangle_{*}\langle z\rangle_{*} = \langle z\rangle_{*}, \qquad z \in A\;} .
 $$
 
 So the three cases are the three signatures of a quadratic form in two variables: definite, indefinite and degenerate. That exhausts the possibilities, and it is why there are exactly three kinds of rotation of this kind.
 
 ## The Elliptic Case: The Complex Numbers
 
-For $\sigma = -1$ the norm is positive definite, $N = x^2 + y^2$, and it vanishes only at the origin; hence every nonzero complex number is a unit. The norm-one group is parametrised by the angle,
+For $\sigma = -1$ the norm is positive definite, $\langle\cdot\rangle_{*} = x^2 + y^2$, and it vanishes only at the origin; hence every nonzero complex number is a unit. The norm-one group is parametrised by the angle,
 
 $$
-u(\theta) = \cos\theta + i \sin\theta, \qquad N(u(\theta)) = \cos^2\theta + \sin^2\theta = 1,
+u(\theta) = \cos\theta + i \sin\theta, \qquad \langle u(\theta)\rangle_{*} = \cos^2\theta + \sin^2\theta = 1,
 $$
 
 and $u(\theta)u(\phi) = u(\theta + \phi)$ by the addition formulas, so $G_{\mathbb{C}} = \mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$. The matrix of multiplication is
@@ -74,14 +74,14 @@ $$
 
 since $a = \cos\theta$, $b = \sin\theta$ and $\det M = 1$. The map $\theta \mapsto M(u(\theta))$ is an isomorphism $\mathrm{U}(1) \cong SO(2)$: every determinant-one orthogonal transformation of the plane arises, and the parametrisation is the usual one.
 
-**Orbits and fixed lines.** Multiplication by $u(\theta)$ preserves $N$, so it maps each circle $x^2 + y^2 = r^2$ to itself; the orbit of a point $z \neq 0$ is the circle of radius $|z|$. For $\theta$ not a multiple of $\pi$ the transformation has no real fixed line, because a real eigenvector would require $\sin\theta = 0$; the only fixed point is the origin. The group is compact, and the parametrisation is by an angle in a bounded interval.
+**Orbits and fixed lines.** Multiplication by $u(\theta)$ preserves $\langle\cdot\rangle_{*}$, so it maps each circle $x^2 + y^2 = r^2$ to itself; the orbit of a point $z \neq 0$ is the circle of radius $|z|$. For $\theta$ not a multiple of $\pi$ the transformation has no real fixed line, because a real eigenvector would require $\sin\theta = 0$; the only fixed point is the origin. The group is compact, and the parametrisation is by an angle in a bounded interval.
 
 ## The Hyperbolic Case: The Split Complex Numbers
 
-For $\sigma = +1$ the norm is indefinite, $N = x^2 - y^2$, and it vanishes exactly on the two null lines $x = \pm y$; the elements on those lines, other than $0$, are the zero divisors of $\mathbb{D}$. The norm-one group is the hyperbola $x^2 - y^2 = 1$, which has two branches. On the branch $x > 0$ it is parametrised by the rapidity,
+For $\sigma = +1$ the norm is indefinite, $\langle\cdot\rangle_{*} = x^2 - y^2$, and it vanishes exactly on the two null lines $x = \pm y$; the elements on those lines, other than $0$, are the zero divisors of $\mathbb{D}$. The norm-one group is the hyperbola $x^2 - y^2 = 1$, which has two branches. On the branch $x > 0$ it is parametrised by the rapidity,
 
 $$
-u(t) = \cosh t + j \sinh t, \qquad N(u(t)) = \cosh^2 t - \sinh^2 t = 1,
+u(t) = \cosh t + j \sinh t, \qquad \langle u(t)\rangle_{*} = \cosh^2 t - \sinh^2 t = 1,
 $$
 
 and $u(t)u(s) = u(t+s)$ by the addition formulas for the hyperbolic functions, so that branch is a copy of $\mathbb{R}$ and is the identity component of $G_{\mathbb{D}}$; the other branch is the negative of the first, and $G_{\mathbb{D}} \cong \mathbb{R} \times \mathbb{Z}/2\mathbb{Z}$. The matrix of multiplication is
@@ -99,14 +99,14 @@ $$
 \pi_1 = \tfrac{1}{2}(1 + j), \qquad \pi_2 = \tfrac{1}{2}(1 - j)
 $$
 
-satisfy $u(t)\pi_1 = \exp(t)\pi_1$ and $u(t)\pi_2 = \exp(-t)\pi_2$, so the lines $\mathbb{R}\pi_1$ and $\mathbb{R}\pi_2$ are fixed pointwise up to scaling. These are exactly the lines on which $N$ vanishes, and they are the null directions of the indefinite form.
+satisfy $u(t)\pi_1 = \exp(t)\pi_1$ and $u(t)\pi_2 = \exp(-t)\pi_2$, so the lines $\mathbb{R}\pi_1$ and $\mathbb{R}\pi_2$ are fixed pointwise up to scaling. These are exactly the lines on which $\langle\cdot\rangle_{*}$ vanishes, and they are the null directions of the indefinite form.
 
 ## The Parabolic Case: The Dual Numbers
 
-For $\sigma = 0$ the norm is degenerate, $N = x^2$, and it vanishes on the whole line $x = 0$, which is the maximal ideal $(\varepsilon)$. The norm-one group consists of the elements with $x = \pm 1$, so it too has two branches, each a line. On the branch $x = 1$,
+For $\sigma = 0$ the norm is degenerate, $\langle\cdot\rangle_{*} = x^2$, and it vanishes on the whole line $x = 0$, which is the maximal ideal $(\varepsilon)$. The norm-one group consists of the elements with $x = \pm 1$, so it too has two branches, each a line. On the branch $x = 1$,
 
 $$
-u(t) = 1 + \varepsilon t, \qquad N(u(t)) = 1,
+u(t) = 1 + \varepsilon t, \qquad \langle u(t)\rangle_{*} = 1,
 $$
 
 and $u(t)u(s) = u(t+s)$ because $\varepsilon^2 = 0$; thus the identity component of $G_{\mathbb{D}'}$ is a copy of $\mathbb{R}$, and the second branch is $-(1 + \varepsilon t)$. The matrix of multiplication is
@@ -119,7 +119,7 @@ a transvection, with $\det M = 1$. The one-parameter group of transvections is t
 
 The same one-parameter group is the shear group of the degenerate plane: the transvection $(x,y) \mapsto (x, tx+y)$ shears the second coordinate by an amount proportional to the first while fixing the first, exactly as the elliptic rotation mixes the two coordinates through a bounded periodic angle and the hyperbolic rotation mixes them through an unbounded parameter. The composition law is the distinguishing feature: the parameter is additive in all three cases, $u(t_1)u(t_2) = u(t_1 + t_2)$, and what separates the cases is the range over which the parameter runs — a circle of length $2\pi$ in the elliptic case, a line in the hyperbolic case, and a line of unipotent transformations in the parabolic case. It is that additive law, with the parameter range left unrestricted, that makes the shear the parabolic member of the trichotomy of angle-addition laws.
 
-**Orbits and fixed lines.** Multiplication by $u(t)$ sends $(x,y)$ to $(x, tx + y)$; the orbit of a point with $x \neq 0$ is the horizontal line through it, and the orbit of a point of the axis $x = 0$ is the point itself. The line $\mathbb{R}\varepsilon$ is fixed pointwise, and it is precisely the degenerate direction of the form, namely the set where $N$ vanishes. There is no second fixed line, and the parameter is unbounded.
+**Orbits and fixed lines.** Multiplication by $u(t)$ sends $(x,y)$ to $(x, tx + y)$; the orbit of a point with $x \neq 0$ is the horizontal line through it, and the orbit of a point of the axis $x = 0$ is the point itself. The line $\mathbb{R}\varepsilon$ is fixed pointwise, and it is precisely the degenerate direction of the form, namely the set where $\langle\cdot\rangle_{*}$ vanishes. There is no second fixed line, and the parameter is unbounded.
 
 ## The Three Together
 
@@ -128,10 +128,10 @@ The three cases differ in every feature that the quadratic form controls.
 | | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ |
 |---|---|---|---|
 | generator square $\sigma$ | $-1$ | $+1$ | $0$ |
-| norm $N$ | $x^2+y^2$ | $x^2-y^2$ | $x^2$ |
+| norm $\langle\cdot\rangle_{*}$ | $x^2+y^2$ | $x^2-y^2$ | $x^2$ |
 | signature | $(2,0)$ definite | $(1,1)$ indefinite | $(1,0)$ degenerate |
 | zero divisors | none | on $x=\pm y$ | on $x=0$ |
-| $G_A = \{u : N(u)=1\}$ | $\mathrm{U}(1)\cong SO(2)$, connected | two branches; identity component $\cong SO(1,1)_0$ | two branches; identity component the transvections |
+| $G_A = \{u : \langle u\rangle_{*}=1\}$ | $\mathrm{U}(1)\cong SO(2)$, connected | two branches; identity component $\cong SO(1,1)_0$ | two branches; identity component the transvections |
 | matrix | $\begin{pmatrix} a & -b \\ b & a\end{pmatrix}$ | $\begin{pmatrix} a & b \\ b & a\end{pmatrix}$ | $\begin{pmatrix} a & 0 \\ b & a\end{pmatrix}$ |
 | orbit of a generic point | circle | hyperbola | horizontal line |
 | fixed lines | none | two null lines | one null line |
@@ -173,7 +173,7 @@ $$
 
 is a rotation of $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$, and $q \mapsto \rho_q$ is a surjective group homomorphism $S^3 \to SO(3)$ with kernel $\{\pm 1\}$; hence $SO(3) \cong S^3/\{\pm 1\}$.
 
-*Proof.* Multiplication by a unit preserves the norm $N(p) = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations.
+*Proof.* Multiplication by a unit preserves the norm $\langle p\rangle_{\natural} = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations.
 
 The three two-dimensional theories thus sit at the bottom of a hierarchy: the commutative cases are exactly the two-dimensional composition algebras, and passing to three dimensions forces one to give up commutativity and to use the quaternion algebra, whose unit group double-covers the rotation group.
 
@@ -181,7 +181,7 @@ The three two-dimensional theories thus sit at the bottom of a hierarchy: the co
 
 ## Summary
 
-The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{D} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{D}' = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $N(u) = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : N(u)=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong \mathrm{U}(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{D}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{D}'$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
+The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{D} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{D}' = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $\langle u\rangle_{*} = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : \langle u\rangle_{*}=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong \mathrm{U}(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{D}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{D}'$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
 
 Passing to dimension three is impossible in the commutative setting: there is no three-dimensional commutative real division algebra, and the Hurwitz theorem restricts positive-definite multiplicative norms to dimensions $1, 2, 4, 8$. The rotations of $\mathbb{R}^3$ are instead obtained from the non-commutative quaternions, acting by conjugation $\rho_q(p) = qpq^{-1}$ on the imaginary subspace, with $SO(3) \cong S^3/\{\pm 1\}$.
 
@@ -195,13 +195,13 @@ Passing to dimension three is impossible in the commutative setting: there is no
 | $z = x+\omega y$ | General element |
 | $L_u$ | Left multiplication by $u$ |
 | $M(u) = \begin{pmatrix} a & \sigma b\\ b & a\end{pmatrix}$ | Matrix of $L_u$ in the basis $(1,\omega)$ |
-| $N(x+\omega y) = x^2 - \sigma y^2$ | Norm, multiplicative |
-| $G_A = \{u : N(u)=1\}$ | Rotation group |
+| $\langle x+\omega y\rangle_{*} = x^2 - \sigma y^2$ | Norm, multiplicative |
+| $G_A = \{u : \langle u\rangle_{*}=1\}$ | Rotation group |
 | $u(\theta), u(t)$ | Parametrisations by angle and by rapidity |
 | $\pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | Idempotents of $\mathbb{D}$, spanning the null lines |
 | $SO(2), SO(1,1)$ | Elliptic and hyperbolic rotation groups |
 | $(\mathbb{R},+)$ | Parabolic rotation group, the transvections and shears |
-| $S^3 = \{q\in\mathbb{H} : N(q)=1\}$ | Unit quaternions |
+| $S^3 = \{q\in\mathbb{H} : \langle q\rangle_{\natural}=1\}$ | Unit quaternions |
 | $\rho_q(p) = qpq^{-1}$ | Rotation of $\operatorname{Im}\mathbb{H}$ by a unit quaternion |
 
 ## Further Reading

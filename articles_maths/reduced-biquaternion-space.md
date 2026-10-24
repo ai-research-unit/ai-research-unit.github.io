@@ -192,8 +192,8 @@ The algebra is the complexification of the split-complex numbers $\mathbb{D}$ an
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the forms and norms they carry.
 - [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the multiplication read as an algebra.
 - [Split-Complex Algebra](split-complex-algebra.html), for the real companion $\mathbb{D}$, the same algebra over $\mathbb{R}$.
-- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.
 - [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the split complex companion $\mathbb{H}_{\mathbb{D}}$.
-- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the product structure of the non-commutative companion, whose three quaternion units collapse here to the single hyperbolic unit $j$.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the product structure of the non-commutative companion, whose three quaternion units collapse here to the single hyperbolic unit $j$.
 - James Cockle, "On a new imaginary in algebra", *Philosophical Magazine* **34** (1849) 37–47, for the tessarines.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022, for the reduced biquaternion algebra of the engineering literature.

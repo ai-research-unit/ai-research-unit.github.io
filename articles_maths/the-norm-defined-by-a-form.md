@@ -224,13 +224,13 @@ the **Frobenius norm**, which is the Euclidean norm of the $n^{2}$ entries: it i
 
 ### The Biquaternion Trace Form
 
-**Example (the biquaternion algebra).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the Hermitian conjugation $* = {}^{\natural} \circ \bar{\cdot}$ the **general plain sesquilinear** form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*The Four Forms*,
+**Example (the biquaternion algebra).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the Hermitian conjugation $* = {}^{\natural} \circ \bar{\cdot}$ the **general plain sesquilinear** form of *The Four Forms and the Four Algebraic Norms*, §*The Four Forms*,
 
 $$
 h(P,Q) = \operatorname{Sc}(PQ^{*}) = \sum_{\mu} P_{\mu}\,\varsigma(Q_{\mu}),
 $$
 
-is Hermitian, compatible, nondegenerate and positive definite, of signature $(8,0)$ over $\mathbb{R}$, and the norm it defines is the Euclidean norm of the eight real coordinates, the one of *The Euclidean Topology of the Biquaternion Algebra*: $\|Q\| = \operatorname{Sc}(QQ^{*})^{1/2} = (\sum_\mu \lvert Q_\mu\rvert^{2})^{1/2}$. The diagonal is the sum of the four squared moduli of the coefficients, and the compatibility is the adjoint rule $(L_{Q})^{\langle\cdot,\cdot\rangle_{*}} = L_{Q^{*}}$ of *The Four General Products and Operators*, §*The Products Decide the Four Adjoints*; the other three pairings of that article — the two bilinear ones, of signature $(4,4)$, and the general quaternionic sesquilinear one, of signature $(2,6)$ — are not positive definite and define no norm of this article, and the last of them is not even compatible with the product. The example is the finite-dimensional instance in which the four pairings of the biquaternion algebra are compared, and the definite one among them is the norm.
+is Hermitian, compatible, nondegenerate and positive definite, of signature $(8,0)$ over $\mathbb{R}$, and the norm it defines is the Euclidean norm of the eight real coordinates, the one of *The Euclidean Topology of the Biquaternion Algebra*: $\|Q\| = \operatorname{Sc}(QQ^{*})^{1/2} = (\sum_\mu \lvert Q_\mu\rvert^{2})^{1/2}$. The diagonal is the sum of the four squared moduli of the coefficients, and the compatibility is the adjoint rule $(L_{Q})^{\langle\cdot,\cdot\rangle_{*}} = L_{Q^{*}}$ of *Introduction to the Operators of the Biquaternion Algebra*, §*The Products Decide the Four Adjoints*; the other three pairings of that article — the two bilinear ones, of signature $(4,4)$, and the general quaternionic sesquilinear one, of signature $(2,6)$ — are not positive definite and define no norm of this article, and the last of them is not even compatible with the product. The example is the finite-dimensional instance in which the four pairings of the biquaternion algebra are compared, and the definite one among them is the norm.
 
 ### The Collapsed Field
 

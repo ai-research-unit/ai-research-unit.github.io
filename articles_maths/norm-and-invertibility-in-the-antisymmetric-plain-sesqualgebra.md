@@ -12,7 +12,7 @@ $$
 
 the antisymmetric half of the general plain sesquilinear product, the operation $\mathrm{APS}$ of *Introduction to the Antisymmetric Plain Sesqualgebra*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
 Both notions of the title are therefore **absences**. The block has no two-sided unit, so no element is invertible and the group of units is empty; the one-sided inverse equations to the centre have no solution. What replaces the invertibility is not a norm but an operator reading: the one-sided multiplication by an element has a kernel and an image, and the relative inverse below accounts for the loss on the quotient.
 
@@ -72,7 +72,7 @@ $$
 \varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\mathrm{Sc}\,f(\tilde Q,\tilde Q),
 $$
 
-and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*).
+and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The Four Forms and the Four Algebraic Norms*).
 
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric plain sesqualgebra,
 
@@ -120,7 +120,7 @@ So the equation $\tilde Q_3\diamond\tilde Q_2=\tilde W$ is solvable exactly for 
 
 ## Summary
 
-The antisymmetric plain sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})$ has no unit on either side, hence no invertible element and an empty group of units, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the vector part of the Hermitian square, a value and not a norm, central only where it vanishes. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{*}$ of the parent sesquilinear product is a different form of a different product and is not read here.
+The antisymmetric plain sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})$ has no unit on either side, hence no invertible element and an empty group of units, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The Four Forms and the Four Algebraic Norms* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the vector part of the Hermitian square, a value and not a norm, central only where it vanishes. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{*}$ of the parent sesquilinear product is a different form of a different product and is not read here.
 
 ## Summary of Notation
 
@@ -138,10 +138,10 @@ The antisymmetric plain sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\operatorname
 
 ## Further Reading
 
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
 - [Introduction to the Antisymmetric Plain Sesqualgebra](introduction-to-the-antisymmetric-plain-sesqualgebra.html), for the operation, its class, its image and the absence of a unit.
-- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the unit table of the four general products.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the unit table of the four general products.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the annihilator and the relative inverse of the block.
 - [The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra](the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html), for the structural reading of the diagonal.
 - [Norm and Invertibility in the General Plain Sesqualgebra](norm-and-invertibility-in-the-general-plain-sesqualgebra.html), for the algebraic norm $\langle\cdot\rangle_{*}$ of the parent sesquilinear product, which is not the form of this block.

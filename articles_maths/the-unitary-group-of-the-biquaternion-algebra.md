@@ -160,7 +160,7 @@ The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e
 
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the bilinear-side treatment of the group of units
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the ambient Euclidean structure the retractions use
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the form that defines the unitary slice
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the form that defines the unitary slice
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the Hermitian cone and the positive square root
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the subgroups and the real forms
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd edition (Springer, 2015), for the standard facts about $\mathrm{U}(2)$, $SU(2)$ and their quotients

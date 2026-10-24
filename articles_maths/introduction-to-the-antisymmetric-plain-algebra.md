@@ -16,11 +16,11 @@ $$
 \tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2,
 $$
 
-the cross product of the two vector parts. The operation is the antisymmetric plain bilinear entry of the table of *The 12 Products of the Biquaternion Complex Space*, and it is the table's Lie product: it alone of the twelve operations satisfies the Jacobi identity. This article establishes the class of the operation, its alternation, its image, the absence of a unit, the Jacobi identity with the cyclic sum recomputed on the units, the sixteen brackets of the basis, the reconstruction of the plain product from its two halves, and the placement of the block among the twelve.
+the cross product of the two vector parts. The operation is the antisymmetric plain bilinear entry of the table of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the table's Lie product: it alone of the twelve operations satisfies the Jacobi identity. This article establishes the class of the operation, its alternation, its image, the absence of a unit, the Jacobi identity with the cyclic sum recomputed on the units, the sixteen brackets of the basis, the reconstruction of the plain product from its two halves, and the placement of the block among the twelve.
 
 The article is the common theory of the block: the Lie algebra it makes of $\mathbb{B}$ is *The Lie Algebra of the Antisymmetric Plain Algebra*, the invariant form it carries is *The Killing Form of the Antisymmetric Plain Algebra*, its reading on the remarkable subspaces is *Remarkable Subspaces under the Antisymmetric Plain Algebra*, its adjoints and derivations are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, and its two matrix models are *Introduction to the Symmetric Plain Algebra*.
 
-The general construction of the two halves of a product is not repeated here: it is *The Symmetric and Antisymmetric Parts of an Algebra Product*, whose definitions of the commutator $[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$, of the outer product $\tilde Q_1\wedge\tilde Q_2=\tfrac12[\tilde Q_1,\tilde Q_2]$ and of the symmetrised product $\tilde Q_1\bullet\tilde Q_2$ are the ones used throughout. The plain product and its pairings are *Introduction to the Biquaternion Algebra* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the two halves of the other three products of the algebra are the other rows of *The 12 Products of the Biquaternion Complex Space*. Everything below is algebra: the Lie algebra of the block is a module with an alternating bracket, and no group and no analytic notion enters.
+The general construction of the two halves of a product is not repeated here: it is *The Symmetric and Antisymmetric Parts of an Algebra Product*, whose definitions of the commutator $[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$, of the outer product $\tilde Q_1\wedge\tilde Q_2=\tfrac12[\tilde Q_1,\tilde Q_2]$ and of the symmetrised product $\tilde Q_1\bullet\tilde Q_2$ are the ones used throughout. The plain product and its pairings are *The Biquaternion Algebra and Its Vector Spaces* and *The Four Forms and the Four Algebraic Norms*; the two halves of the other three products of the algebra are the other rows of *Symmetric and Antisymmetric Decomposition of the Four General Products*. Everything below is algebra: the Lie algebra of the block is a module with an alternating bracket, and no group and no analytic notion enters.
 
 ## The Antisymmetric Part of the Plain Product
 
@@ -96,7 +96,7 @@ with the two cyclic analogues. The six terms cancel in pairs, since $\vec Q_2(\v
 
 ### The Uniqueness among the Twelve
 
-**Theorem (the only Lie product of the twelve).** Of the twelve operations $f_{+},f_{-}$ of the four general products of *The 12 Products of the Biquaternion Complex Space*, the antisymmetric plain algebra is the only one that satisfies the Jacobi identity.
+**Theorem (the only Lie product of the twelve).** Of the twelve operations $f_{+},f_{-}$ of the four general products of *Symmetric and Antisymmetric Decomposition of the Four General Products*, the antisymmetric plain algebra is the only one that satisfies the Jacobi identity.
 
 *Proof.* The verification is the table of that article, computed there on the basis. Of the four
 antisymmetric parts, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$ fail the identity, with the
@@ -214,10 +214,10 @@ The antisymmetric part of the plain product of the biquaternions is the operatio
 ## Further Reading
 
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the split of a product into its two halves, its uniqueness and the admissibility conditions
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the table of the twelve operations, the witnesses of the three failing Jacobi identities and the two that pass, and for the same twelve operations read from the side of the order symmetry
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the table of the twelve operations, the witnesses of the three failing Jacobi identities and the two that pass, and for the same twelve operations read from the side of the order symmetry
 - [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra.html), for the centre, the image, the identifications with $\mathfrak{sl}(2,\mathbb{C})$, $\mathfrak{su}(2)$ and $\mathfrak{u}(2)$, and the enveloping algebra
 - [The Unitary Lie Algebra](the-unitary-lie-algebra.html), for the bracket of the skew-Hermitian elements, the unhalved commutator and the group of linear maps preserving the form
-- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), for the plain product and the group it defines
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the plain product and the group it defines
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces on which the block is read
 - [Norm and Invertibility in the Antisymmetric Plain Algebra](norm-and-invertibility-in-the-antisymmetric-plain-algebra.html), for the absence of a unit, of an inverse and of a norm, and for the operator trace form and the scalar-part form
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html) and [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the totality of the zero-divisor set and for the annihilator of the left multiplication operator with its rank

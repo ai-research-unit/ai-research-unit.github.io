@@ -113,7 +113,7 @@ $$
 
 **Example.** For a locally compact group $G$, the convolution algebra $L^1(G)$ with the $L^1$-norm is a Banach algebra, commutative when $G$ is abelian; it need not have a unit. Group algebras over a field are the subject of *Group Algebras*; the analytic version is quoted here only as an example, the convolution algebra itself being *The Convolution Algebra $L^1(G)$* in Part III, where the integral that defines it is available.
 
-**Example.** The finite-dimensional algebras $\mathbb{H}$ and $\mathbb{B}$ are Banach algebras: $\mathbb{H}$ with the norm $\|q\| = N(q)^{1/2}$, which is multiplicative because $N$ is; $\mathbb{B}$ with the operator norm transported across the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of *Biquaternion Algebra ($\mathbb{B}$)*.
+**Example.** The finite-dimensional algebras $\mathbb{H}$ and $\mathbb{B}$ are Banach algebras: $\mathbb{H}$ with the norm $\|q\| = \langle q\rangle_{\natural}^{1/2}$, which is multiplicative because $\langle\cdot\rangle_{\natural}$ is; $\mathbb{B}$ with the operator norm transported across the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of *Biquaternion Algebra ($\mathbb{B}$)*.
 
 ### Finite-Dimensional Algebras
 
@@ -295,7 +295,7 @@ A norm and a norm are different objects, and the difference governs what the ana
 
 *Proof.* Statement 1 is $\|1\| \leq \|x\|\|x^{-1}\|$ with $\|1\| = 1$. Statement 2 is the Neumann series. Statement 3: multiplicativity gives $\|x\|\|y\| = \|xy\| = 0$ if $xy = 0$, and $\|x\|\|x^{-1}\| = \|1\| = 1$. Statement 4 is the positive definiteness of a norm.
 
-**Example (the quaternions).** For $\mathbb{H}$ the Euclidean norm $\|q\| = N(q)^{1/2}$ is multiplicative, because the norm $N(q) = \sum_\mu q_\mu^2$ is; so $\mathbb{H}$ is a normed division algebra, and $\|q^{-1}\| = \|q\|^{-1}$.
+**Example (the quaternions).** For $\mathbb{H}$ the Euclidean norm $\|q\| = \langle q\rangle_{\natural}^{1/2}$ is multiplicative, because the norm $\langle q\rangle_{\natural} = \sum_\mu q_\mu^2$ is; so $\mathbb{H}$ is a normed division algebra, and $\|q^{-1}\| = \|q\|^{-1}$.
 
 **Example (the biquaternions).** For $\mathbb{B}$ the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ is complex-valued and vanishes on the nonzero zero divisors, so it is the norm of the algebra and not a norm in the analytic sense. The Euclidean norm
 
@@ -305,7 +305,7 @@ $$
 
 is a genuine norm, positive definite and vanishing only at $\tilde{Q} = 0$; it is not multiplicative, and it carries no information about divisibility: an element can be a zero divisor while having large Euclidean norm. This is the reason $\mathbb{B}$ is a Banach algebra but not a normed division algebra, and it is why the analysis over $\mathbb{B}$ must work with the norm and the quadratic structure rather than with a multiplicative absolute value.
 
-**Example (the split complex and dual numbers).** For $\mathbb{D}$ the form $N(a+bj) = a^2 - b^2$ is indefinite, so it is not a norm; for $\mathbb{D}'$ the form $N(a + b\varepsilon) = a^2$ vanishes on the maximal ideal $(\varepsilon)$. In both cases the Euclidean norm of the underlying $\mathbb{R}^2$ is a genuine norm, submultiplicative after a rescaling, but not multiplicative; the zero divisors are detected by the vanishing of the norm $N$, not by the Euclidean norm.
+**Example (the split complex and dual numbers).** For $\mathbb{D}$ the form $\langle a+bj\rangle_{*} = a^2 - b^2$ is indefinite, so it is not a norm; for $\mathbb{D}'$ the form $\langle a + b\varepsilon\rangle_{*} = a^2$ vanishes on the maximal ideal $(\varepsilon)$. In both cases the Euclidean norm of the underlying $\mathbb{R}^2$ is a genuine norm, submultiplicative after a rescaling, but not multiplicative; the zero divisors are detected by the vanishing of the norm $\langle\cdot\rangle_{*}$, not by the Euclidean norm.
 
 ## Summary
 

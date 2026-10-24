@@ -440,7 +440,7 @@ P^{-1}=2P,
 \qquad
 P^{-1}[L_Q]_{(1,j)}P=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
-The matrix $[L_Q]_{(1,j)}$ is symmetric, and it is conformal for the split form $g=\operatorname{diag}(1,-1)$: $[L_Q]_{(1,j)}^{T}g[L_Q]_{(1,j)}=N(Q)g$. The eigenbasis diagonalises it. The vanishing of the off-diagonal entries is the matrix statement that the Peirce decomposition has no mixed part.
+The matrix $[L_Q]_{(1,j)}$ is symmetric, and it is conformal for the split form $g=\operatorname{diag}(1,-1)$: $[L_Q]_{(1,j)}^{T}g[L_Q]_{(1,j)}=\langle Q\rangle_{*}g$. The eigenbasis diagonalises it. The vanishing of the off-diagonal entries is the matrix statement that the Peirce decomposition has no mixed part.
 
 **Nilpotents in the matrix model.** Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but they are not in the image of $\mathbb{D}$. The absence is the matrix form of the reducedness of the algebra.
 

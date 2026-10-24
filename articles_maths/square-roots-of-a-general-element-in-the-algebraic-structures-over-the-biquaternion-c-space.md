@@ -301,11 +301,11 @@ Read among the twelve structures the existence question has four answers and no 
 - [Square Roots of a General Element in the General Quaternionic Sesqualgebra](square-roots-of-a-general-element-in-the-general-quaternionic-sesqualgebra.html), for the family $\varrho(\vec u+it)$ and the central circle.
 - [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the family $\mathcal R_\lambda$ and the three cases.
 - [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the cone of the diagonal and the cross-product equation.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the four general products and their symmetric and antisymmetric parts.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the four general products and their symmetric and antisymmetric parts.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve names and the class of each.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the root, the central value and the general vocabulary.
-- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the four squares and the tabulation of the four root problems.
-- [Relations Between the Four General Products](relations-between-the-four-general-products.html), for the four scalar parts of the four squares.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the four squares and the tabulation of the four root problems.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the four scalar parts of the four squares.
 - [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the Krein scalar part and the square-zero family.
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html), for the non-negative scalar part of the general plain sesquilinear square.
 - [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the criterion $C\neq0$ with which the roots are classified as units or zero divisors.

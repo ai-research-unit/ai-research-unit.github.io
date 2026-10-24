@@ -4,7 +4,7 @@
 
 The biquaternion algebra carries two distinguished involutive anti-automorphisms, the **Hermitian conjugation** ${}^{*}$ and the **quaternion conjugation** ${}^{\natural}$. They commute, and together with the identity and their composite, the complex conjugation $\bar{\cdot}$, they form a group of order four, the **Klein four-group** $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$. This article treats the two maps and the group they generate: the two composition rules, the Cayley table, the subgroups, the place of the fourth conjugation, the reversal, outside the group, the composition table that includes the reversal, and the orbits of the group on the algebra.
 
-The formulas of the four conjugations and the algebra itself are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; the lattice of the fixed spaces they produce is *Comparison of the Remarkable Subspaces*; and the remarkable subspaces, one to a section, are *Introduction to the Remarkable Subspaces*. None of these is repeated here.
+The formulas of the four conjugations and the algebra itself are *The Biquaternion Algebra and Its Vector Spaces*; the lattice of the fixed spaces they produce is *Comparison of the Remarkable Subspaces*; and the remarkable subspaces, one to a section, are *Introduction to the Remarkable Subspaces*. None of these is repeated here.
 
 $$
 ({\tilde Q}^{\mathrm{id}})_\mu=Q_\mu , \qquad (\tilde Q^{\natural})_\mu=\varepsilon_\mu Q_\mu , \qquad ({\tilde Q}^{*})_\mu=\varepsilon_\mu \bar Q_\mu , \qquad (\bar{\tilde Q})_\mu=\bar Q_\mu .
@@ -112,7 +112,7 @@ and no subgroup of order three; its only subgroup of order four is $G$ itself. E
 
 **Proof.** Each non-identity element has order two, and the composite of two distinct ones is the third, which is contained in the subgroup they generate; the subgroup therefore contains three non-identity elements and the identity, and is $G$.
 
-**Remark (two choices of generators).** *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* writes the two generators as ${}^{\natural}$ and $\bar{\cdot}$; this article writes them as ${}^{\natural}$ and ${}^{*}$. The two choices describe the same group, since ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and $\bar{\cdot}={}^{*}\circ{}^{\natural}$, and either pair generates the third element. The pair is a choice of presentation and not a property of the group.
+**Remark (two choices of generators).** *The Biquaternion Algebra and Its Vector Spaces* writes the two generators as ${}^{\natural}$ and $\bar{\cdot}$; this article writes them as ${}^{\natural}$ and ${}^{*}$. The two choices describe the same group, since ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and $\bar{\cdot}={}^{*}\circ{}^{\natural}$, and either pair generates the third element. The pair is a choice of presentation and not a property of the group.
 
 **Remark (the group is elementary abelian).** The group is the direct product of the two subgroups $\{\mathrm{id},{}^{*}\}$ and $\{\mathrm{id},{}^{\natural}\}$, whose intersection is $\{\mathrm{id}\}$, so
 
@@ -183,7 +183,7 @@ The biquaternion algebra carries two commuting involutive anti-automorphisms of 
 
 ## Further Reading
 
-- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the algebra, its basis and its four conjugations
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its basis and its four conjugations
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable fixed spaces of the four involutions, one to a section
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the relations between the remarkable fixed spaces and the lattice they form
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix picture in which the extra involution is the coefficient conjugation composed with the conjugate transpose

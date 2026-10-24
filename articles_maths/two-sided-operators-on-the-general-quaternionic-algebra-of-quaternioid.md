@@ -84,7 +84,7 @@ $$
 
 *Proof.* The characterisation is $\langle T\tilde q_1,\tilde q_2\rangle_{\natural} = \langle\tilde q_1,T^{\dagger}\tilde q_2\rangle_{\natural}$, and
 $$
-N\bigl(T\tilde q_1,\tilde q_2\bigr) = \mathrm{Sc}\bigl(\tilde q_3^{\natural}\tilde q_1\tilde q_4\tilde q_2^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde q_1\,\tilde q_4\tilde q_2^{\natural}\tilde q_3^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde q_1\,(\tilde q_3\tilde q_2\tilde q_4^{\natural})^{\natural}\bigr) ,
+\langle T\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde q_3^{\natural}\tilde q_1\tilde q_4\tilde q_2^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde q_1\,\tilde q_4\tilde q_2^{\natural}\tilde q_3^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde q_1\,(\tilde q_3\tilde q_2\tilde q_4^{\natural})^{\natural}\bigr) ,
 $$
 using that $(\tilde q_3\tilde q_2\tilde q_4^{\natural})^{\natural} = \tilde q_4\tilde q_2^{\natural}\tilde q_3^{\natural}$; the last is $\langle\tilde q_1,\tilde q_3\tilde q_2\tilde q_4^{\natural}\rangle_{\natural} = \langle\tilde q_1,T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}\tilde q_2\rangle_{\natural}$, since $(\tilde q_3^{\natural})^{\natural}\tilde q_2\tilde q_4^{\natural} = \tilde q_3\tilde q_2\tilde q_4^{\natural}$.
 
@@ -115,7 +115,7 @@ The two criteria are stated for a nonzero sandwich because the zero operators $T
 | operator | $T^{(0)}_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3\tilde q\tilde q_4$ | $T_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4$ |
 | composition | $T^{(0)}_{\tilde q_3,\tilde q_4}T^{(0)}_{\tilde q_5,\tilde q_6} = T^{(0)}_{\tilde q_3\tilde q_5,\tilde q_6\tilde q_4}$ | $T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\tilde q_6\tilde q_4}$ |
 | transpose for $\mathrm B$ | $T^{(0)\sim}_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_4,\tilde q_3}$ | $T^{\sim}_{\tilde q_3,\tilde q_4} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}$ |
-| transpose for $N$ | $T^{(0)\dagger}_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$ | $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$ |
+| transpose for $\langle\cdot,\cdot\rangle_{\natural}$ | $T^{(0)\dagger}_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$ | $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$ |
 | family | all of $\operatorname{End}_\mathbb{R}(\mathbb{H})$ | all of $\operatorname{End}_\mathbb{R}(\mathbb{H})$ |
 
 **Corollary.** The families agree as sets of operators, $T_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4}$, and they differ in the multiplication they carry: the plain law reverses one parameter, the quaternionic law reverses two. The difference is the anti-automorphism in the first slot of the product, and it is the same difference as between the two left-multiplication monoids (*The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category).

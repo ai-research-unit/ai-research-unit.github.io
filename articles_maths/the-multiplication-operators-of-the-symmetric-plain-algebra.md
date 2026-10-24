@@ -308,4 +308,4 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde Q_5}$ and $R^
 - [The Trace Form and the Invariance of the Symmetric Plain Algebra](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra.html), for the trace form, the invariance and the operator trace.
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra.html), for the matrices of the operators in the two models.
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html), for the generic trace and the generic norm preserved by the automorphisms.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the placement of the block and its Jordan structure.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the placement of the block and its Jordan structure.

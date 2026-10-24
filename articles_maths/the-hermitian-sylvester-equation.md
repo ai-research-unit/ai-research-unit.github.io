@@ -142,4 +142,4 @@ The Sylvester equation $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$ on the biquater
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the sandwich, its invariants and the congruence.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the derivations, the roots and the exponential.
 - [Self-Adjoint and Skew Operators with Hermitian Adjoint](self-adjoint-and-skew-operators-with-hermitian-adjoint.html), for the general theory of the adjoint on an operator algebra.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the commutator, the roots and the Lie structure of the algebra.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the commutator, the roots and the Lie structure of the algebra.

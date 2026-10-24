@@ -182,7 +182,7 @@ $$
 
 the last equality being the definition of $GL_n(D)$ as the group of invertible matrices over a division ring. So $GL_n(D)$ appears as the automorphism group of the regular module over $M_n(D)$, and it is the basic noncommutative linear group of this category.
 
-A caution on the opposite. For $D$ a field, transposition identifies $M_n(D)$ with its opposite; for $\mathbb{H}$, quaternion conjugation $q \mapsto q^{\natural}$ is an anti-automorphism with $q^{\natural}q=N(q)$, and applying it entrywise identifies $M_n(\mathbb{H})$ with $M_n(\mathbb{H})^{\mathrm{opp}}$. For a general division ring the two opposites may fail to be isomorphic, and this is why $\operatorname{End}_D(D^n)$ is stated with $D^{\mathrm{opp}}$. The group $GL_n(D)$ is unaffected, because a group is isomorphic to its opposite.
+A caution on the opposite. For $D$ a field, transposition identifies $M_n(D)$ with its opposite; for $\mathbb{H}$, quaternion conjugation $q \mapsto q^{\natural}$ is an anti-automorphism with $q^{\natural}q=\langle q\rangle_{\natural}$, and applying it entrywise identifies $M_n(\mathbb{H})$ with $M_n(\mathbb{H})^{\mathrm{opp}}$. For a general division ring the two opposites may fail to be isomorphic, and this is why $\operatorname{End}_D(D^n)$ is stated with $D^{\mathrm{opp}}$. The group $GL_n(D)$ is unaffected, because a group is isomorphic to its opposite.
 
 ## Worked Case: The Quaternions
 
@@ -228,7 +228,7 @@ $$
 \tilde{Q} \text{ a zero divisor} \implies \mathbb{B}\tilde{Q} \text{ is a nonzero cyclic module that is not free.}
 $$
 
-The same argument explains why not every $\mathbb{B}$-module is free and, consequently, why $\operatorname{Aut}_{\mathbb{B}}(M)$ cannot in general be a full linear group. For the regular module the automorphism group is $\mathbb{B}^{\times}$, and the zero divisors are exactly the elements excluded from it: an automorphism is invertible, and an invertible element is never a zero divisor. For the defining module the automorphism group is the scalars, and no zero divisor is a scalar since $N(\lambda)=\lambda^2 \neq 0$ for $\lambda \neq 0$.
+The same argument explains why not every $\mathbb{B}$-module is free and, consequently, why $\operatorname{Aut}_{\mathbb{B}}(M)$ cannot in general be a full linear group. For the regular module the automorphism group is $\mathbb{B}^{\times}$, and the zero divisors are exactly the elements excluded from it: an automorphism is invertible, and an invertible element is never a zero divisor. For the defining module the automorphism group is the scalars, and no zero divisor is a scalar since $\langle\lambda\rangle_{\natural}=\lambda^2 \neq 0$ for $\lambda \neq 0$.
 
 ### Automorphisms of the module and of the algebra
 

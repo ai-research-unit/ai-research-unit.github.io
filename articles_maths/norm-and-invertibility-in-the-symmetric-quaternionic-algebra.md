@@ -4,7 +4,7 @@
 
 The symmetric quaternionic multiplication $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ is central, commutative and without unit (*Introduction to the Symmetric Quaternionic Algebra*). This article is the second Common Theory entry of the block, and its subject is the algebraic norm that the block carries and the inverse that it does not.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the form is $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ and its diagonal is
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the form is $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ and its diagonal is
 
 $$
 \langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},
@@ -42,7 +42,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 
-which is the general quaternionic bilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The two are related by the square of the product, which is the diagonal placed in the centre, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ (*Introduction to the Symmetric Quaternionic Algebra*). The form is symmetric, $\mathbb{C}$-bilinear and non-degenerate, of Gram matrix the identity on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$; its radical is $\{0\}$ (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
+which is the general quaternionic bilinear form of *The Four Forms and the Four Algebraic Norms*. The two are related by the square of the product, which is the diagonal placed in the centre, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ (*Introduction to the Symmetric Quaternionic Algebra*). The form is symmetric, $\mathbb{C}$-bilinear and non-degenerate, of Gram matrix the identity on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$; its radical is $\{0\}$ (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
 
 **Theorem (the algebraic norm is the multiplicative form of the plain product).** The algebraic norm of the block satisfies
 
@@ -146,8 +146,8 @@ complex-valued, indefinite, the coefficient of the block-square and the multipli
 
 ## Further Reading
 
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general quaternionic bilinear form and the table of the four forms.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general quaternionic bilinear form and the table of the four forms.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the general definitions of the unit and the inverse.
 - [Norm and Invertibility in the Biquaternion Algebra](norm-and-invertibility-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{\natural}$ of this article.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the isotropic cone of the block.

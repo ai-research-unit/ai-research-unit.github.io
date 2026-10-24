@@ -101,11 +101,11 @@ the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternion
 
 **Proof.** $\langle\cdot,\cdot\rangle_{\natural}$ is a complex polynomial of degree two, so a nonzero level is a complex hypersurface and the zero set is a cone; the general quaternionic sesquilinear form is real on the diagonal and its defining polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ is not holomorphic, so its levels are real hypersurfaces — the same distinction as in *The Krein Gram Matrix and the Restrictions of the Form*.
 
-**Corollary (the two pairings and the two geometries).** The two pairings of the algebra give two families of level sets: the complex hypersurfaces of the norm, whose geometry is the projective geometry of the zero-divisor cone, and the real hyperboloids of the general quaternionic sesquilinear form, whose geometry is the hyperbolic geometry of the ball. Their intersection is the union of the doubly null lines, treated in *The Isotropic Structure of the General Quaternionic Sesqualgebra* and compared in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*What the Four Forms Separate*.
+**Corollary (the two pairings and the two geometries).** The two pairings of the algebra give two families of level sets: the complex hypersurfaces of the norm, whose geometry is the projective geometry of the zero-divisor cone, and the real hyperboloids of the general quaternionic sesquilinear form, whose geometry is the hyperbolic geometry of the ball. Their intersection is the union of the doubly null lines, treated in *The Isotropic Structure of the General Quaternionic Sesqualgebra* and compared in *The Four Forms and the Four Algebraic Norms*, §*What the Four Forms Separate*.
 
 ## The Definite Companion and the Twisted Sphere
 
-**Definition.** The **definite companion** of the general quaternionic sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+**Definition.** The **definite companion** of the general quaternionic sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *The Four Forms and the Four Algebraic Norms*.
 
 **Theorem (the definite levels are spheres).** The level sets of the definite companion are the Euclidean spheres $\{\|\tilde{Q}\|_E=r\}$, of real dimension $7$ and compact; the unit sphere $S^{7}$ is the boundary of the Euclidean unit ball, the only compact level set among those compared in *The Krein Level Sets and the Hyperbolic Structure*, §*The Three Level Sets*, and the definite form is complete and positive definite.
 
@@ -189,6 +189,6 @@ The sign level sets of the general quaternionic sesquilinear form are the hyperb
 - [The Krein Cartan Decomposition of the Operator Algebra](the-krein-cartan-decomposition-of-the-operator-algebra.html), for the symmetric space $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the boosts acting on the Lorentzian hyperboloid
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the compact sphere used here for contrast
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the definite companion and its spheres
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definite companion and its spheres
 - [The Fundamental Symmetry of the Biquaternion Algebra](the-fundamental-symmetry-of-the-biquaternion-algebra.html), for the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four forms, their table, their four null sets and their isometry groups
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four forms, their table, their four null sets and their isometry groups

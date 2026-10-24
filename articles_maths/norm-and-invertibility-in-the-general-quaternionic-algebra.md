@@ -4,7 +4,7 @@
 
 This article studies the **algebraic norm** of the biquaternion algebra read through the general quaternionic bilinear product, and it settles what invertibility means for that product.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the general quaternionic product the square of every element is scalar, so the scalar-part form is read directly off the square and its diagonal is the scalar that the square produces. That scalar is the quadratic form $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, the algebraic norm of this product and not the algebraic norm of the plain product, which is a different form on the same space; and it is multiplicative for $\star$.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the general quaternionic product the square of every element is scalar, so the scalar-part form is read directly off the square and its diagonal is the scalar that the square produces. That scalar is the quadratic form $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, the algebraic norm of this product and not the algebraic norm of the plain product, which is a different form on the same space; and it is multiplicative for $\star$.
 
 The inverse is where the two products separate. The definition of an inverse, stated once in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, presupposes a product with a **two-sided unit**, and the general quaternionic product has a **left unit** alone. The consequence is stated and not filled: no element of $\mathbb{B}$ is invertible of $\star$, the product has no group of units of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the left unit $e_t$, and the article computes them: the two have the same unique solution, $(\tilde Q^{-1})^{\natural}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the algebraic norm of this product, and it is not the algebraic norm of the plain product; the two products do not share their algebraic norms.
 
@@ -22,7 +22,7 @@ with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ and $\v
 
 ### Definition
 
-The algebraic norm of a product is the diagonal of its scalar-part form (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*).
+The algebraic norm of a product is the diagonal of its scalar-part form (*The Four Forms and the Four Algebraic Norms*).
 
 **Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)$ be its scalar-part form. The **algebraic norm of $\star$** is the diagonal
 
@@ -329,7 +329,7 @@ Read as a norm of the algebra, $\langle\cdot\rangle_{\natural}$ is the **semi-no
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm of the biquaternion algebra.
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the semi-norm, its axioms and the Hermitian form.
 - Klaus Gürlebeck and Wolfgang Sprößig, *Quaternionic and Clifford Calculus for Physicists and Engineers* (Wiley, 1997), for the unique multiplicative real norm of the algebra.
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the definition of the algebraic norm as the form at the two equal arguments and the separation of the four algebraic norms.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments and the separation of the four algebraic norms.
 - [Norm and Invertibility in the Biquaternion Algebra](norm-and-invertibility-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{\natural}$ of this article.
 - [Remarkable Subspaces and the Four Algebraic Norms](remarkable-subspaces-and-the-four-algebraic-norms.html), for the Euclidean norm as the square root of $\langle\cdot\rangle_{*}$ and the unique topological norm of the space, and [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the topology the Euclidean norm carries.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the definitions of the unit, the two-sided inverse and the one-sided inverse.

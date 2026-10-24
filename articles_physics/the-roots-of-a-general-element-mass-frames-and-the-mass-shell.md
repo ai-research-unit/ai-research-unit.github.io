@@ -24,7 +24,7 @@ The article owns no theorem. It states the algebraic classification, with its so
 | The roots of $0$ and the nilpotents | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
 | The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | The norm, its multiplicativity and the inverse | [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html) |
-| The four forms and the interval | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
+| The four forms and the interval | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
 | The $2\times2$ matrix model and the eigenvalues of the mass operator | [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 
 ## The Root Problem by Band

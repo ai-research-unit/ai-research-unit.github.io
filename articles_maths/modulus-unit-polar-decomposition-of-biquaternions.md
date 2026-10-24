@@ -20,7 +20,7 @@ Three differences from the quaternion case shape the whole article. The norm is 
 
 The plan is as follows. The two factors are defined (§*The Two Factors*), the four factors are described (§*The Four Factors*), the three pairings are introduced (§*The Three Pairings*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of units and its maximal compact subgroup are described (§*The Group of Units and the Unitary Group*), the two real halves are distinguished (§*The Two Halves*), the matrix picture is given (§*The Matrix Picture*), the algorithm is stated (§*The Algorithm*), one element is computed in full (§*Worked Example*), and the article closes with the summary and the notation.
 
-The conventions and the symbols are those of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, *Norm and Invertibility in the General Quaternionic Algebra*, *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and *Conventions in Mathematics*; the symbols are collected in §*Summary of Notation*. The word is written with the plain product, the only associative product of the twelve of *The 12 Products of the Biquaternion Complex Space*, and the matrix model is $M_2(\mathbb C)$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb C)$ of Biquaternions*.
+The conventions and the symbols are those of *The Four Forms and the Four Algebraic Norms*, *Norm and Invertibility in the General Quaternionic Algebra*, *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and *Conventions in Mathematics*; the symbols are collected in §*Summary of Notation*. The word is written with the plain product, the only associative product of the twelve of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the matrix model is $M_2(\mathbb C)$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb C)$ of Biquaternions*.
 
 Every numerical value displayed below was recomputed in double precision.
 
@@ -34,7 +34,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}.
 $$
 
-It is the diagonal of the general quaternionic bilinear form, the algebraic norm of the plain product in the classification of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, and under the matrix model it is the determinant,
+It is the diagonal of the general quaternionic bilinear form, the algebraic norm of the plain product in the classification of *The Four Forms and the Four Algebraic Norms*, and under the matrix model it is the determinant,
 
 $$
 \det M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}.

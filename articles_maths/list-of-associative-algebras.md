@@ -51,7 +51,7 @@ The symmetric, exterior and Clifford algebras are quotients of $T(V)$ by homogen
 | $k[G]$, the group algebra | associative; the group law extended bilinearly | *Group Algebras* |
 | $\mathbb{C}, \mathbb{D}, \mathbb{D}'$ as quotients of $T(V)$ | the number systems presented by generators and relations; associative | *Quotients of the Tensor Algebra* |
 | $\mathbb{H}$, the quaternions | associative division algebra, and not commutative | *Quaternion Algebra* |
-| $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions | associative, with zero divisors | *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* |
+| $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions | associative, with zero divisors | *The Biquaternion Algebra and Its Vector Spaces* |
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$, the split biquaternions | associative, with zero divisors | *Split-Biquaternion Algebra* |
 
 The group algebra is associative because the group law is, and $k[G]$ is commutative exactly when $G$ is abelian; the exterior algebra is associative but only graded-commutative, so it is not a commutative algebra for $\dim V \geq 2$. These are the standard associative non-commutative algebras of the corpus, and the boundary between them and the commutative ones is commutativity, not associativity.

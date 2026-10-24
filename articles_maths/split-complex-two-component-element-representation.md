@@ -196,7 +196,7 @@ so the real axis is positive definite and the split imaginary axis negative defi
 **Comparison with the complex case.** For $\mathbb{C}$ the norm is
 
 $$
-N_{\mathbb{C}}(Q) = Q\bar Q = q^2 + q'^2,
+\langle Q\rangle_{*} = Q\bar Q = q^2 + q'^2,
 $$
 
 the **sum** of the two squares: positive definite, so the complex coefficient plane carries a Euclidean, not a Lorentzian, structure. It is again the single sign of the product rule that produces the difference: the square $i^2 = -1$ turns the $q'^2$ term of $q^2+q'^2$ into $-q'^2$ in the split case, and the definite form becomes the indefinite one.

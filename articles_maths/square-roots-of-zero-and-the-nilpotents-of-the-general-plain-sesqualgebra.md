@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products of the Biquaternion $\mathbb{C}$ Space*). This article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi$ with
+The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products and Their Relations*). This article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi$ with
 
 $$
 \tilde\Xi\star\tilde\Xi=0 ,

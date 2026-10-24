@@ -4,7 +4,7 @@
 
 Of the twelve algebraic structures that the complex space
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, exactly one is an associative unital
-algebra, the biquaternion algebra of *Introduction to the Biquaternion Algebra*;
+algebra, the biquaternion algebra of *The Biquaternion Algebra and Its Vector Spaces*;
 the specificity that its associativity and its two-sided unit $e_t$ deliver is that its invertible
 elements form a genuine **group** (*The Specificities of the Biquaternion Algebra*). This article
 studies that group and the exact meaning of its boundary. The group of units is the complement of
@@ -28,13 +28,12 @@ $$
 $$
 
 the scalar of the central square $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. It is one of the four
-algebraic norms of the space (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*), and
+algebraic norms of the space (*The Four Forms and the Four Algebraic Norms*), and
 the whole article turns on its not being the algebraic norm of the plain product: $\langle\cdot\rangle$ is the
 diagonal of the plain bilinear form, $\langle\cdot,\cdot\rangle_{\natural}$ is the general quaternionic one, and the two are different
 forms with different vanishing sets. The generic norm $\mathrm{Norm}$ of *Conventions in
 Mathematics*, §*The form convention and the norm convention*, is instantiated in this article by the
-general quaternionic bilinear algebraic norm $\langle\cdot\rangle_{\natural}$ (*The 4 Algebraic Norms over the Biquaternion
-$\mathbb{C}$ Space*): every statement below names its norm, and the norm it names is $\langle\cdot\rangle_{\natural}$.
+general quaternionic bilinear algebraic norm $\langle\cdot\rangle_{\natural}$ (*The Four Forms and the Four Algebraic Norms*): every statement below names its norm, and the norm it names is $\langle\cdot\rangle_{\natural}$.
 
 ## The Partition of the Algebra
 

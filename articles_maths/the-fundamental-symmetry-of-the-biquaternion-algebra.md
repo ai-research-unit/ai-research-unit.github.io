@@ -10,7 +10,7 @@ $$
 
 with $\langle\cdot,\cdot\rangle_{*}$ the positive definite Hermitian inner product of the dagger form. This article fixes that symmetry, its eigenspaces — the centre and the vector subspace — the parametrisation of all the other fundamental symmetries by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace, and the fact that ${}^{\natural}$ is the only fundamental symmetry that respects the algebra as an anti-automorphism.
 
-The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
+The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The Four Forms and the Four Algebraic Norms*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
 
 ## The Natural Conjugation as a Fundamental Symmetry
 

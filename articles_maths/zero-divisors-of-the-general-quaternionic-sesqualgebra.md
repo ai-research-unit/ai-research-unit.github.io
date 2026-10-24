@@ -3,8 +3,7 @@
 ## Introduction
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, on its
-underlying complex space, the four general products of *The Four General Products of the
-Biquaternion $\mathbb{C}$ Space*, and this article treats the **zero divisors** of the fourth, the
+underlying complex space, the four general products of *The Four General Products and Their Relations*, and this article treats the **zero divisors** of the fourth, the
 **general quaternionic sesquilinear product**
 
 $$
@@ -178,7 +177,7 @@ cones are the same subset of $\mathbb{B}$.
 **The four general products have the same zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$, a quoted theorem that holds for the left and the right reading separately; the predicate coincides but the square does not, the square-zero set of $\star$ being of real dimension four while that of the plain product is the pure isotropic cone.**
 
 **Theorem (the four products have one zero-divisor set, quoted).** The four general products of
-*The Four General Products of the Biquaternion $\mathbb{C}$ Space* have the same zero-divisor set,
+*The Four General Products and Their Relations* have the same zero-divisor set,
 namely $\{\tilde Q \neq 0 : C(\tilde Q) = 0\}$. The theorem is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 and it holds for the left and the right reading separately.
 

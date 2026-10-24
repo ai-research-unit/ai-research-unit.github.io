@@ -1,4 +1,4 @@
-# __Introduction to the Biquaternion Algebra__
+# __The Biquaternion Algebra and Its Vector Spaces__
 
 ## Introduction
 
@@ -8,9 +8,11 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} ,
 $$
 
-the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. It is the object the Biquaternions category is built on, and this article is its opening: it fixes the element, the basis and the multiplication of $\mathbb{B}$, records the four conjugations the complex scalars make available, and reads off the algebra the multiplication defines. It opens the group *The Algebra and Its Vector Spaces*, and it is the article the other two assume.
+the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. This article fixes the algebra and the two vector spaces it carries: the construction by the tensor product, the element and its three coordinate systems, the multiplication and its table, the algebra axioms, the multiplication as a scalar extension, the centre and the structure map, and the presentation by generators and relations. It then reads the same set over the two scalar systems, the complex space of dimension four and the real space of dimension eight, and the complex structure $J$ that carries the difference between them.
 
-The construction is short and the consequences long. The multiplication $\tilde Q_1 \tilde Q_2$ is $\mathbb{C}$-bilinear, associative and unital, so the complex vector space $\mathbb{B}$ becomes an associative unital $\mathbb{C}$-algebra; a bilinear map is determined by its values on a basis, so the sixteen products of the basis elements carry the whole multiplication, and the table is the quaternion table with the central imaginary admitted only as a coefficient. Once the algebra is in place its scalar structure, its centre, its generators, its presentation by relations, its conjugations and its matrix model are read off in turn. The algebra is central and simple of complex dimension four, hence isomorphic to the matrix algebra $M_2(\mathbb{C})$, and it is not a division algebra: the element $e_t + i\vec e_x$ is a zero divisor.
+The multiplication is stated here at the level of the basis, the table and bilinearity. Its scalar–vector form, the four general products, their relations and their comparison are *The Four General Products and Their Relations*. The group of the four conjugations, their fixed spaces and the remarkable subspaces are *The Group of Involutions*, *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The algebra read over the real scalars is *The Realification and the Effect of the Change of Scalars*, and the two ring-based readings are *Modules over the Quaternion Algebra* and *Modules over the Biquaternion Algebra*. No form appears here: the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms*.
+
+This article opens the group *The Algebra and Its Vector Spaces* and the Biquaternions category. It is self-contained up to the quaternion algebra $\mathbb{H}$, whose basis, multiplication and conjugation are assumed.
 
 ## The Construction of the Algebra
 
@@ -38,7 +40,8 @@ where $1, \mathbf{i}, \mathbf{j}, \mathbf{k}$ are the quaternion units.
 
 **Corollary.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the **complexification** of $\mathbb{H}$, of complex dimension $4$ and real dimension $8$. The element $i = i \otimes 1$ is central and satisfies $i^2 = -1$, and it is independent of the four units, which satisfy $\vec e_k^2 = -e_t$. **The scalar imaginary is $i$ and not any $\vec e_k$**, so it can occur only as a coefficient and never as a factor of a product of basis elements; the four units keep their products.
 
-This is the first reading of the name *biquaternion*: one quaternion algebra, read with the complex scalars. The real algebra that carries the same multiplication with the scalars restricted to $\mathbb{R}$ is *The Realification and the Effect of the Change of Scalars*; only the scalar system changes, and the dimension halves.
+This is the first reading of the name *biquaternion*: one quaternion algebra, read with the complex scalars. The real algebra that carries the same multiplication with the scalars restricted to $\mathbb{R}$ is *The Realification and the Effect of the Change of Scalars*; only the scalar system changes, and the real dimension doubles.
+
 
 ## The Element and Its Coordinates
 
@@ -50,7 +53,36 @@ $$
 \tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu = Q_t e_t + \vec Q , \qquad Q_\mu = q_\mu + i q'_\mu \in \mathbb{C} ,
 $$
 
-the **$\mathbb{C}$ scalar part** $Q_t e_t$ and the **$\mathbb{C}$ vector part** $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The four complex coefficients are eight real ones, $q_\mu$ the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$. The element is also read as a pair of real quaternions, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$, the three coordinate systems being the subject of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*.
+the **$\mathbb{C}$ scalar part** $Q_t e_t$ and the **$\mathbb{C}$ vector part** $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The four complex coefficients are eight real ones, $q_\mu$ the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$. The element is also read as a pair of real quaternions, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$, the three coordinate systems being the subject of §*The Coordinate Systems*, below.
+
+### The Coordinate Systems
+
+The same element is written in three coordinate systems, and all three are used below.
+
+**Real coordinates.** Splitting each complex coefficient as $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$ gives a list of eight real numbers on the real basis:
+
+$$
+\tilde{Q} = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z + q'_t(ie_t) + q'_x(i\vec e_x) + q'_y(i\vec e_y) + q'_z(i\vec e_z).
+$$
+
+**Complex coordinates.** Collecting the eight real numbers into four complex ones gives the developed form, four complex coordinates $(Q_t, Q_x, Q_y, Q_z)$ on the complex basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$.
+
+**Quaternionic coordinates.** Collecting them by the scalar imaginary instead gives
+
+$$
+\tilde{Q} = h_1 + ih_2, \qquad h_1 = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu \in \mathbb{H}, \qquad h_2 = \sum_{\mu\in\{t,x,y,z\}} q'_\mu e_\mu \in \mathbb{H},
+$$
+
+a real quaternion plus $i$ times another real quaternion. The decomposition is unique, so in this view an element is a **pair of quaternions**.
+
+| coordinates | basis | count | scalars |
+|---|---|---|---|
+| real | $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$ | $8$ | $\mathbb{R}$ |
+| complex | $e_t, \vec e_x, \vec e_y, \vec e_z$ | $4$ | $\mathbb{C}$ |
+| quaternionic | $e_t, ie_t$ | $2$ | $\mathbb{H}$ |
+
+The three rows count the same element against three scalar systems, and all three are used below. The first row is the coordinate list of the real reading, developed in §*The Real Scalars*; the eight real coordinates and the four complex ones differ only in how the eight real numbers are gathered.
+
 
 ### The Scalar–Vector Split and the Two Products of Vector Parts
 
@@ -63,6 +95,7 @@ $$
 
 The first is the complex bilinear **dot product**, a scalar; the second is the complex bilinear **cross product**, a vector part, alternating, $(\vec Q_2, \vec Q_1) = (\vec Q_1, \vec Q_2)$ and $\vec Q_2 \times \vec Q_1 = -\vec Q_1 \times \vec Q_2$. The two are the ingredients of the scalar–vector form of the multiplication, and they are those of *Quaternion Algebra*, read with complex coefficients.
 
+
 ## The Multiplication
 
 ### The Rule
@@ -74,26 +107,7 @@ $$
 (\tilde Q_1, \tilde Q_2) \longmapsto \tilde Q_1 \tilde Q_2 = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} Q_{1\mu} Q_{2\nu} \, e_\mu e_\nu ,
 $$
 
-the general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t, \dots, \vec e_z$: **the rule is a map into $\mathbb{B}$ and is well defined**. On the four coordinates it reads
-
-$$
-\boxed{\;
-\tilde Q_1 \tilde Q_2 = (Q_{1,0} Q_{2t} - Q_{1,1} Q_{2x} - Q_{1,2} Q_{2y} - Q_{1,3} Q_{2z})
-+ (Q_{1,0} Q_{2x} + Q_{1,1} Q_{2t} + Q_{1,2} Q_{2z} - Q_{1,3} Q_{2y})\, \vec e_x
-+ (Q_{1,0} Q_{2y} - Q_{1,1} Q_{2z} + Q_{1,2} Q_{2t} + Q_{1,3} Q_{2x})\, \vec e_y
-+ (Q_{1,0} Q_{2z} + Q_{1,1} Q_{2y} - Q_{1,2} Q_{2x} + Q_{1,3} Q_{2t})\, \vec e_z
-\;}.
-$$
-
-### The Scalar–Vector Form
-
-Collecting the scalar and the vector parts of the two elements, the same product reads
-
-$$
-\tilde Q_1 \tilde Q_2 = \bigl(Q_{1,0} Q_{2t} - (\vec Q_1, \vec Q_2)\bigr) + Q_{1,0} \vec Q_2 + Q_{2t} \vec Q_1 + \vec Q_1 \times \vec Q_2 ,
-$$
-
-the display being the one of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde Q_1 \tilde Q_2) = \sum_{\mu\in\{t,x,y,z\}} \varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon = (1, -1, -1, -1)$.
+the general plain bilinear product of *The Four General Products and Their Relations*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t, \dots, \vec e_z$: **the rule is a map into $\mathbb{B}$ and is well defined**. The coordinate rule, with the dot and cross products, is *The Four General Products and Their Relations*, §*The General Plain Bilinear Product*.
 
 ### The Multiplication Table
 
@@ -130,6 +144,7 @@ $$
 
 **Corollary.** Two multiplications on the same space that agree on the sixteen pairs of basis elements agree on every pair.
 
+
 ## The Algebra Axioms
 
 ### Associativity
@@ -162,6 +177,7 @@ The centre is therefore a proper subspace, and it is the scalar line: §*The Sca
 
 Every general statement about associative unital algebras is therefore available for $\mathbb{B}$: the two-sided ideals, the centre, the group of units, the modules and the opposite algebra. The rest of this article reads off the ones the multiplication alone decides.
 
+
 ## The Multiplication as a Scalar Extension
 
 ### The Tensor Product of the Two Multiplications
@@ -178,6 +194,7 @@ $$
 $$
 
 are unital algebra homomorphisms over $\mathbb{R}$ with commuting images (*Tensor Products of Algebras*); the commuting of the images is the statement that the scalars are central, used in the next section. The second image is the real quaternion subspace $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$, and on it the multiplication is the quaternion product of *Quaternion Algebra*.
+
 
 ## The Scalars, the Centre and the Structure Map
 
@@ -237,6 +254,7 @@ $$
 
 vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_t + i\vec e_x$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are *Norm and Invertibility in the General Quaternionic Algebra*, and the zero divisors themselves are classified in *Zero Divisors of the Biquaternion Algebra*.
 
+
 ## Generators and the Presentation
 
 ### The Generators
@@ -265,127 +283,110 @@ The algebra presented is the **quaternion algebra over $\mathbb{C}$**: the quate
 
 The relation that ties $\vec e_z$ to the two generators is not redundant. Were the three imaginary units taken as generators with the pairwise relations $E_j E_k + E_k E_j = 0$ for $j \neq k$ and $E_k^2 = -1$ alone, the element $E_1 E_2$ would remain independent of $1, E_1, E_2, E_3$: the three square relations and the three anticommutations do not force $E_1 E_2$ into the span of the generators, and the algebra presented is eight-dimensional rather than four.
 
-## The Conjugations
 
-### The Four Conjugations
+## The Conjugations and the Classification
 
-**Definition.** The **natural** conjugation, the **coefficient** conjugation and the **Hermitian** conjugation of $\tilde Q = Q_t e_t + \vec Q$ are
-
-$$
-\tilde Q^{\natural} = Q_t e_t - \vec Q , \qquad
-(\overline{\tilde Q})_\mu = \bar Q_\mu , \qquad
-\tilde Q^{*} = \bar Q_t e_t - \overline{\vec Q} = \overline{\tilde Q^{\natural}} ,
-$$
-
-and the **anti-Hermitian** conjugation is the negative of the Hermitian one,
+**Definition.** The **natural**, the **coefficient** and the **Hermitian** conjugations of $\tilde Q=Q_te_t+\vec Q$ are
 
 $$
-\tilde Q^{\flat} = -\tilde Q^{*} .
+\tilde Q^{\natural}=Q_te_t-\vec Q , \qquad
+(\overline{\tilde Q})_\mu=\bar Q_\mu , \qquad
+\tilde Q^{*}=\bar Q_te_t-\overline{\vec Q} ,
 $$
 
-**Proposition.** The natural, the coefficient and the Hermitian conjugations are involutions; the natural and the Hermitian ones are anti-automorphisms, $(\tilde Q_1 \tilde Q_2)^{\natural} = \tilde Q_2^{\natural} \tilde Q_1^{\natural}$ and $(\tilde Q_1 \tilde Q_2)^{*} = \tilde Q_2^{*} \tilde Q_1^{*}$, while the coefficient conjugation is an automorphism, $\overline{(\tilde Q_1 \tilde Q_2)} = \overline{\tilde Q_1}\, \overline{\tilde Q_2}$. The natural conjugation fixes the scalar part and negates the vector part; the star does the same with the coefficients conjugated.
+with $\tilde Q^{\flat}=-\tilde Q^{*}$ the **anti-Hermitian** one. They are involutions, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$; the group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*.
 
-**Proof.** On a basis element $e_\mu$ one has $e_\mu^{\natural} = \varepsilon_\mu e_\mu$ and $\overline{e_\mu} = e_\mu$, the $e_\mu$ being real; the coefficient rules extend $\mathbb{C}$-linearly for the natural conjugation, $\mathbb{C}$-antilinearly for the coefficient and Hermitian ones, and $\mathbb{R}$-linearly for all. On a product of two basis elements $e_\mu e_\nu = \pm e_{\mu\nu}$ the three sign patterns agree with the anti-automorphism rules, and the identities extend by bilinearity. The sign vector of the natural conjugation is $\varepsilon = (1,-1,-1,-1)$.
+**Remark (the algebra is a matrix algebra).** Central simplicity and complex dimension four give $\mathbb{B}\cong M_2(\mathbb{C})$, the reduced norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ being the determinant of the model. The model is read in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the reduced norm, invertibility and the zero divisors in *Norm and Invertibility in the Biquaternion Algebra*.
 
-**Proposition (linearity).** The natural conjugation is $\mathbb{C}$-**linear**, the coefficient and Hermitian conjugations are $\mathbb{C}$-**antilinear**, and all are $\mathbb{R}$-linear.
+## The Real Scalars
 
-**Proof.** The natural conjugation touches the quaternion factor and leaves the complex scalars alone, so $\natural(\lambda \tilde Q) = \lambda \tilde Q^{\natural}$ for every $\lambda \in \mathbb{C}$; the coefficient conjugation conjugates a complex coefficient, and the star does so too, so both are antilinear. Conjugating a complex coefficient is $\mathbb{R}$-linear, so all are.
-
-### The Group of the Conjugations
-
-**Proposition.** The identity, the natural, the coefficient and the Hermitian conjugations commute and satisfy
+**Definition.** The **real reading** of $\mathbb{B}$ is the same additive group over the subfield $\mathbb{R}$ of $\mathbb{C}$, obtained by restriction of scalars: the elements are unchanged and the scalar domain is cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$. The general element is written in the eight real coordinates of §*The Coordinate Systems*, on the real basis
 
 $$
-{}^{*} = \bar{\cdot} \circ {}^{\natural} = {}^{\natural} \circ \bar{\cdot} , \qquad
-\{\mathrm{id}, \natural, \bar{\cdot}, {}^{*}\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2 ,
+e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z.
 $$
 
-the **Klein four-group**, in which the composition of two non-identity elements is the third. The anti-Hermitian conjugation is the Hermitian one times the central sign, $\flat = -{}^{*}$, of square the identity, and it lies **outside** the group: it is a conjugate-linear involution of the space, with the same two fixed spaces as the star and the signs exchanged, but it is not an algebra anti-automorphism. The Cayley table and the composition with the reversal included are *The Group of Involutions*.
+Every element is a unique real combination of those eight, so the real dimension is the complex dimension doubled, $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$, as recorded in §*The Coordinate Systems*.
 
-**Proof.** The commutation and ${}^{*} = \bar{\cdot} \circ {}^{\natural}$ are the definitions read together, and the three non-identity involutions have pairwise products the third. The map $\flat$ satisfies $\flat^2 = \mathrm{id}$ but not the anti-automorphism rule: $(\tilde Q_1 \tilde Q_2)^{\flat} = -\tilde Q_2^{*}\tilde Q_1^{*}$ while $\tilde Q_1^{\flat} \tilde Q_2^{\flat} = \tilde Q_1^{*}\tilde Q_2^{*}$, so it is not an algebra anti-automorphism and does not join the group.
+**Remark.** No complex number is used as a scalar in this reading: the scalars are real, and the complex reading is the stronger structure rather than a different set. Every polynomial identity over $\mathbb{R}$ extends to $\mathbb{C}$ by scalar extension, and the real reading keeps the additive group, the basis and the product while dropping the complex scalars alone.
 
-### The Fixed Spaces and the Remarkable Subspaces
 
-The fixed and anti-fixed spaces of the four conjugations are the six **remarkable subspaces**. The natural conjugation fixes the **centre** $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ and anti-fixes the **vector subspace** $\mathrm{Vect}(\mathbb{B})$, complementary, of real dimensions two and six. The coefficient conjugation fixes the **quaternion subspace** $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$ and anti-fixes the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, complementary, of dimensions four and four. The Hermitian conjugation fixes the **Hermitian subspace** $\mathbb{M}_+$ and anti-fixes the **anti-Hermitian subspace** $\mathbb{M}_-$; the anti-Hermitian conjugation reproduces exactly these two spaces with the signs exchanged, so it adds no new subspace. The four conjugations therefore produce six remarkable subspaces and not eight. They are defined one to a section in *Introduction to the Remarkable Subspaces* and compared in *Comparison of the Remarkable Subspaces*.
+## The Complex Structure
 
-## The Classification and the Matrix Model
+The difference between the two readings is carried by one operator. Multiplication by the central imaginary,
 
-### Central Simplicity and Dimension
+$$
+J : \tilde{Q} \mapsto i\tilde{Q}, \qquad J^2 = -\mathrm{id},
+$$
 
-The algebra is central simple of complex dimension four. Since the base field $\mathbb{C}$ is algebraically closed, the classification of finite-dimensional central simple algebras applies: such an algebra is a full matrix algebra $M_n(\mathbb{C})$ over the field, and the dimension $n^2$ fixes $n$. Here $n = 2$. The theorem is the Artin–Wedderburn theorem, and the general theory is *Central Simple Algebras and the Brauer Group*.
-
-### The Matrix Model
-
-**Theorem.** As a $\mathbb{C}$-algebra, $\mathbb{B}$ is isomorphic to the algebra of $2 \times 2$ complex matrices,
+is real-linear, and it is the **complex structure** of the real space, already met in §*The Scalars, the Centre and the Structure Map*. It carries the whole gap between the readings: for $\lambda = a + bi$, the centrality of the scalars gives
 
 $$
 \boxed{\;
-\mathbb{B} \;\cong\; M_2(\mathbb{C})
+\lambda\tilde{Q} = a\tilde{Q} + bJ(\tilde{Q})
 \;},
 $$
 
-under the assignment
+so the complex action is the real action together with $J$, and the real space together with $J$ is the complex space.
 
-$$
-e_t \longmapsto \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad
-\vec e_x \longmapsto \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}, \quad
-\vec e_y \longmapsto \begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}, \quad
-\vec e_z \longmapsto \begin{pmatrix} i & 0 \\ 0 & -i \end{pmatrix}, \quad
-i \longmapsto i\,\mathrm{I}_2 .
-$$
-
-**Proof.** The four matrices satisfy the products of the table — $u_x^2 = u_y^2 = u_z^2 = -\mathrm{I}_2$, $u_x u_y = u_z$, $u_y u_z = u_x$ and $u_z u_x = u_y$ — and $i\mathrm{I}_2$ is central with square $-\mathrm{I}_2$; a $\mathbb{C}$-bilinear map is determined by its values on a basis, so the assignment is a well-defined unital $\mathbb{C}$-algebra homomorphism. It is injective because its kernel is a two-sided ideal other than the whole algebra, the domain being simple, and both sides have complex dimension $4$, so it is also surjective.
-
-The model is used in full in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, in *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and in *Introduction to Biquaternion Element Representations*; nothing of it beyond the classification and the determinant is used here.
-
-### The Reduced Norm and Invertibility
-
-The product of an element with its natural conjugate is central and scalar:
-
-$$
-\tilde Q \tilde Q^{\natural} = \tilde Q^{\natural} \tilde Q = \Bigl(\sum_{\mu\in\{t,x,y,z\}} Q_\mu^2\Bigr) e_t .
-$$
-
-The scalar $\sum_\mu Q_\mu^2$ is the **reduced norm** $\langle\tilde Q\rangle_{\natural}$, and it is the determinant in the matrix model,
+**Proposition (linearity is the commutator with $J$).** A real-linear map $T$ of $\mathbb{B}$ is $\mathbb{C}$-linear exactly when it commutes with $J$, and antilinear exactly when it anticommutes with it:
 
 $$
 \boxed{\;
-\langle\tilde Q\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = \det\bigl(\rho(\tilde Q)\bigr) , \qquad
-\rho(\tilde Q) = \begin{pmatrix} Q_t + iQ_3 & Q_x + iQ_2 \\ -Q_x + iQ_2 & Q_t - iQ_3 \end{pmatrix}
+T(\lambda\tilde{Q}) = \lambda T(\tilde{Q}) \text{ for all } \lambda \iff TJ = JT, \qquad T(\lambda\tilde{Q}) = \bar{\lambda} T(\tilde{Q}) \text{ for all } \lambda \iff TJ = -JT
 \;}.
 $$
 
-**Theorem.** The reduced norm is multiplicative, $\langle\tilde Q_1 \tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and an element $\tilde Q$ is invertible if and only if $\langle\tilde Q\rangle_{\natural} \neq 0$; then $\tilde Q^{-1} = \tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. A nonzero element is a zero divisor exactly when $\langle\tilde Q\rangle_{\natural} = 0$.
+**Proof.** Let $T$ be real-linear. Then $T(J\tilde{Q}) = T(i\tilde{Q})$ and $J(T\tilde{Q}) = iT(\tilde{Q})$, so the identity $T(i\tilde{Q}) = iT(\tilde{Q})$ is exactly $TJ = JT$; real-linearity then gives $T(\lambda\tilde{Q}) = T(a\tilde{Q} + bJ\tilde{Q}) = aT(\tilde{Q}) + bJT(\tilde{Q}) = \lambda T(\tilde{Q})$ for every $\lambda = a + bi$, and conversely $TJ = JT$ gives $T(i\tilde{Q}) = iT(\tilde{Q})$ and hence the same identity. The antilinear case is the same computation with the sign reversed, $T(i\tilde{Q}) = -iT(\tilde{Q})$, which is $TJ = -JT$.
 
-**Proof.** The determinant is multiplicative, and the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ transfers both statements: a matrix is invertible exactly when its determinant is nonzero, and a nonzero matrix of zero determinant is a zero divisor. The inverse formula is the natural-conjugate product divided by its scalar value.
+### Linear and Antilinear Maps
 
-**Corollary.** The reduced norm vanishes on the **zero-divisor cone** $\mathcal N = \{\tilde Q \neq 0 : \langle\tilde Q\rangle_{\natural} = 0\}$, and the invertible elements form the group of units $\mathbb{B}^{\times} = \{\tilde Q : \langle\tilde Q\rangle_{\natural} \neq 0\}$, of structure *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
+The four conjugations of §*The Conjugations and the Classification* are all real-linear, and the proposition separates them into two classes: ${}^{\natural}$ commutes with $J$ and is $\mathbb{C}$-linear, while $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and $\flat = -{}^{*}$ anticommute with $J$ and are antilinear. The line between the two kinds of map is thus the commutation with one operator.
 
-The reduced norm is the algebraic norm of the **general quaternionic product** $\tilde Q_1^{\natural}\tilde Q_2$ and not of the plain product: the algebraic norm of the plain product is $\langle\tilde Q\rangle = \sum_\mu \varepsilon_\mu Q_\mu^2$, a different function on the same space, and the units of the plain product are read from the norm of the other. The separation, and the names of the two, are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*.
-
-## The Subalgebra Generated by One Element
-
-The subalgebra $\mathbb{C}[\tilde Q] = \mathbb{C}e_t + \mathbb{C}\tilde Q + \mathbb{C}\tilde Q^2 + \cdots$ generated by one element is commutative and at most two-dimensional:
+The real reading sees more linear maps than the complex one:
 
 $$
-\tilde Q^2 = \bigl(Q_t^2 - (\vec Q, \vec Q)\bigr) + 2Q_t\vec Q \in \mathbb{C}e_t + \mathbb{C}\tilde Q ,
+\boxed{\;
+\operatorname{End}_\mathbb{R}(\mathbb{B}) \cong M_8(\mathbb{R}), \qquad \operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})
+\;},
 $$
 
-the developed square being that of *Square Roots of a General Element in the Biquaternion Algebra*. So $\mathbb{C}[\tilde Q] = \mathbb{C}e_t$ for central $\tilde Q$, and $\mathbb{C}[\tilde Q] = \mathbb{C}e_t \oplus \mathbb{C}\tilde Q$ otherwise. In the second case the element $\tilde Q - Q_t e_t$ has square $-(\vec Q, \vec Q)e_t$, and the plane is read off from it: when $(\vec Q, \vec Q) \neq 0$ it is the algebra $\mathbb{C} \oplus \mathbb{C}$ of two copies of the field with coordinatewise multiplication, and when $(\vec Q, \vec Q) = 0$ it is the algebra of dual numbers $\mathbb{C}[t]/(t^2)$.
+of real dimensions $64$ and $32$. The $\mathbb{C}$-linear maps are the real-linear ones commuting with $J$, a subspace of half the dimension; a real-linear map that anticommutes with $J$ is antilinear, an ordinary linear map of the real space that is not a complex-linear operator. The conjugations are the natural examples.
 
-A unital subalgebra contains the identity $e_t$ and hence every $\mathbb{C}$-multiple of it, so it contains the centre $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$, the only scalar line the algebra has; a subalgebra need not be unital, and the line $\mathbb{C}(\vec e_x + i\vec e_y)$ is one, its product vanishing identically because $(\vec e_x + i\vec e_y)^2 = 0$. The real subalgebras of $\mathbb{B}$, among them the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and its imaginary $i\mathbb{H}_{\mathbb{B}}$, are read with the real scalars in *The Realification and the Effect of the Change of Scalars*.
+### The Real Form
+
+A real subspace of $\mathbb{B}$ of real dimension four need not be closed under $J$; when it meets its image under $J$ only at zero, the two together fill $\mathbb{B}$ and the subspace is a **real form**.
+
+**Proposition.** Let $V$ be a real subspace of $\mathbb{B}$ of real dimension four. Then $V \cap JV = 0$ if and only if $\mathbb{B} = V \oplus JV$, and in that case the complex reading is recovered from $V$ by extension of scalars, $\mathbb{C}\otimes_\mathbb{R}V\cong\mathbb{B}$.
+
+**Proof.** If $\mathbb{B} = V \oplus JV$, then $V \cap JV = 0$ by the directness of the sum. Conversely let $V \cap JV = 0$. If $v + Jw = 0$ with $v, w \in V$, then $v = -Jw$ lies in $V \cap JV$, so $v = 0$ and $Jw = 0$, hence $w = 0$; the map $V \oplus JV \to \mathbb{B}$, $v + Jw \mapsto v + Jw$, is therefore injective, and since both sides have real dimension eight it is an isomorphism, $\mathbb{B} = V \oplus JV$. The map $\mathbb{C}\otimes_\mathbb{R}V \to \mathbb{B}$, $z \otimes v \mapsto zv$, is then $\mathbb{C}$-linear and surjective, because its image contains $V$ and $JV$, hence all of $\mathbb{B}$, and both spaces have complex dimension four, so it is an isomorphism.
+
+**Example.** The elements with real coefficients, spanned by $e_t, \vec e_x, \vec e_y, \vec e_z$, form a real form; its image under $J$ is the subspace of elements with purely imaginary coefficients, the two meet at zero and their sum is $\mathbb{B}$. Real forms are not unique, and the choice of one is data beyond the real reading.
+
+**Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *The Realification and the Effect of the Change of Scalars*.
+
+**Remark (the remarkable subspaces in the real reading).** The remarkable subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The remarkable subspaces are defined in *Introduction to the Remarkable Subspaces*, and the action of the central imaginary unit upon them is *Comparison of the Remarkable Subspaces*.
+
+### What the View Adds
+
+The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It drops the complex scalars, so the complex structure becomes an extra operator $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products and Their Relations* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Modules over the Quaternion Algebra* and *Modules over the Biquaternion Algebra*.
+
 
 ## Summary
 
-The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_t, \vec e_x, \vec e_y, \vec e_z$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear, associative and unital; it is determined by the sixteen products of the four basis elements.
+The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_t, \vec e_x, \vec e_y, \vec e_z$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. With the general plain bilinear product as its multiplication, $\mathbb{B}$ is an associative unital non-commutative $\mathbb{C}$-algebra of dimension four; the product is determined by the sixteen products of the four basis elements.
 
 $$
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
 $$
 
-Its scalars enter through the structure map $\varphi(A) = Ae_t$, whose image is the scalar line and which is central; the algebra is the complexification of $\mathbb{H}$ by the tensor product of algebras; its centre is the scalar line, so it is central and simple, hence central simple; and it is not a division algebra, the product of $e_t + i\vec e_x$ and $e_t - i\vec e_x$ being zero. Two generators suffice, and the relations $\vec e_x^2 = \vec e_y^2 = -e_t$ and $\vec e_x \vec e_y + \vec e_y \vec e_x = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
+Its scalars enter through the structure map $\varphi(A) = Ae_t$, whose image is the scalar line and which is central; the centre is the scalar line, so the algebra is central simple; and it is not a division algebra, the product of $e_t + i\vec e_x$ and $e_t - i\vec e_x$ being zero. Two generators suffice, and the relations $\vec e_x^2 = \vec e_y^2 = -e_t$ and $\vec e_x \vec e_y + \vec e_y \vec e_x = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
 
-Central simplicity and dimension four force the classification: $\mathbb{B} \cong M_2(\mathbb{C})$. The reduced norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, the determinant in the model, is multiplicative and decides both invertibility and the zero divisors: $\tilde Q$ is invertible exactly when $\langle\tilde Q\rangle_{\natural} \neq 0$. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — carry the natural one as the unique $\mathbb{C}$-linear one and give the Klein four-group on the first four, and their fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
+The algebra is central simple of dimension four, so $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduced norm is the determinant of the model; the matrix model and the norm are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *Norm and Invertibility in the Biquaternion Algebra*. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — have the natural one as the unique $\mathbb{C}$-linear one, form the Klein four-group on the first four, and their fixed and anti-fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
+
+The same set carries two scalar readings. Over $\mathbb{C}$ it is the space of dimension four on $e_t, \vec e_x, \vec e_y, \vec e_z$. Over $\mathbb{R}$, by restriction of scalars, it is the same additive group with real dimension eight on the basis $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$. The same element is written in three coordinate systems: eight real coordinates, four complex coordinates, or two quaternionic coordinates as a pair of real quaternions, $\tilde Q = h_1 + ih_2$.
+
+The gap between the two readings is one operator: $J : \tilde Q \mapsto i\tilde Q$ is real-linear with $J^2 = -\mathrm{id}$, and the complex action is the real action together with $J$. A real-linear map is $\mathbb{C}$-linear exactly when it commutes with $J$ and antilinear exactly when it anticommutes; ${}^{\natural}$ commutes and the other three conjugations anticommute. Hence $\operatorname{End}_\mathbb{R}(\mathbb{B}) \cong M_8(\mathbb{R})$ against $\operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})$, of real dimensions $64$ and $32$. A real form is a real subspace $V$ of real dimension four meeting $JV$ only at zero; then $\mathbb{B} = V \oplus JV$ and $\mathbb{C}\otimes_\mathbb{R}V \cong \mathbb{B}$, so the complex reading is recovered from $V$ by extension of scalars. The centre and the vector subspace are the only remarkable subspaces closed under $J$; the other four are real forms exchanged in pairs.
 
 | Property | Value for $\mathbb{B}$ |
 |---|---|
@@ -394,36 +395,32 @@ Central simplicity and dimension four force the classification: $\mathbb{B} \con
 | Basis, centre | $e_t, \vec e_x, \vec e_y, \vec e_z$, central $i$; $Z(\mathbb{B}) = \mathbb{C}e_t$ |
 | Product | associative, unital, $\mathbb{C}$-bilinear; unit $e_t$ |
 | Conjugations | $\{\mathrm{id}, \natural, \bar{\cdot}, {}^{*}\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2$, with $\flat = -{}^{*}$ outside |
-| Classification | $\mathbb{B} \cong M_2(\mathbb{C})$, central simple of degree $2$ |
-| Division algebra | no; with $e_t + i\vec e_x$ a zero divisor |
-| Reduced norm | $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, multiplicative, $\det$ in $M_2(\mathbb{C})$ |
-| Invertibility | $\langle\tilde Q\rangle_{\natural} \neq 0$; zero divisor iff $\langle\tilde Q\rangle_{\natural} = 0$, $\tilde Q \neq 0$ |
-| General products | four: $\tilde Q_1 \tilde Q_2$, $\tilde Q_1 \tilde Q_2^{*}$, $\tilde Q_1^{\natural} \tilde Q_2$, $\tilde Q_1^{\natural} \tilde Q_2^{*}$ |
+| Division algebra | no; $e_t + i\vec e_x$ is a zero divisor |
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | the biquaternion algebra, read here with the complex scalars |
-| $e_t, \vec e_x, \vec e_y, \vec e_z$ | complex basis; $e_t$ the unit, $\vec e_k$ the quaternion units |
+| $\mathbb{H}$ | the quaternion algebra |
+| $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | the biquaternion algebra |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | complex basis; $e_t$ the unit, $\vec e_k$ the quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | central scalar imaginary, $i^2 = -1$ |
-| $\tilde Q = Q_t e_t + \vec Q$ | a biquaternion and its scalar–vector split, $\vec Q = \sum_k Q_k \vec e_k$ |
-| $\tilde Q_1, \tilde Q_2$ | two biquaternions, numbered when both occur |
+| $J : \tilde Q \mapsto i\tilde Q$ | the real-linear complex structure, $J^2 = -\mathrm{id}$ |
+| $\lambda\tilde Q = a\tilde Q + bJ(\tilde Q)$ | the complex action read over $\mathbb{R}$, for $\lambda = a + bi$ |
+| $\tilde Q = Q_t e_t + \vec Q = \sum_\mu Q_\mu e_\mu$ | a biquaternion and its scalar–vector split, $\vec Q = \sum_k Q_k \vec e_k$ |
 | $Q_\mu = q_\mu + i q'_\mu$ | a complex coefficient, $q_\mu, q'_\mu \in \mathbb{R}$ |
+| $\tilde Q = h_1 + ih_2$ | the quaternionic coordinates, $h_1, h_2 \in \mathbb{H}$ |
 | $(\vec Q_1, \vec Q_2) = \sum_k Q_{1k} Q_{2k}$ | complex bilinear dot product of the vector parts |
 | $\vec Q_1 \times \vec Q_2$ | complex bilinear cross product of the vector parts |
 | $\varphi : \mathbb{C} \to Z(\mathbb{B})$, $A \mapsto Ae_t$ | the structure map of the complex algebra |
-| $i$, $J : \tilde Q \mapsto i\tilde Q$ | the central element of square $-1$, and the complex structure it defines |
 | $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ | the centre, equal to the scalar line |
-| $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$ | the quaternion subspace, the image of the second factor embedding |
+| $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$ | the quaternion subspace |
 | ${}^{\natural}$, $\bar{\cdot}$ | the natural and the coefficient conjugation |
 | ${}^{*} = \bar{\cdot} \circ {}^{\natural} = \natural \circ \bar{\cdot}$ | the Hermitian conjugation |
 | ${}^{\flat} = -{}^{*}$ | the anti-Hermitian conjugation, outside the Klein group |
 | $\varepsilon = (1,-1,-1,-1)$ | the sign vector of the natural conjugation |
-| $\tilde Q \tilde Q^{\natural} = \bigl(\sum_\mu Q_\mu^2\bigr)e_t$ | the product of an element with its natural conjugate, central and scalar |
-| $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$ | the reduced norm; $\det$ of the $2 \times 2$ model |
-| $\rho$ | the isomorphism $\mathbb{B} \to M_2(\mathbb{C})$ |
-| $\mathcal N$ | the zero-divisor cone, $\{\tilde Q \neq 0 : \langle\tilde Q\rangle_{\natural} = 0\}$ |
+| $\operatorname{End}_\mathbb{R}(\mathbb{B})$, $\operatorname{End}_\mathbb{C}(\mathbb{B})$ | the real-linear and the $\mathbb{C}$-linear self-maps, $\cong M_8(\mathbb{R})$ and $M_4(\mathbb{C})$ |
+| real form of $\mathbb{B}$ | a real subspace $V$ of real dimension $4$ with $\mathbb{B} = V \oplus JV$ |
 
 ## Further Reading
 
@@ -431,13 +428,12 @@ Central simplicity and dimension four force the classification: $\mathbb{B} \con
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for algebras over a commutative ring, the structure map into the centre and the tensor product of algebras.
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the quaternion algebra over a field, its presentations and its behaviour under an extension of scalars.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four scalar parts of the four general products, their Gram matrices and their isometry groups.
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the four diagonals of the four forms and the separation of the algebraic and the topological sense of the norm.
-- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the product, its coordinate rule and its scalar–vector form.
-- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the element, the basis, the three coordinate systems and the conjugation formulas.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the scalar–vector form of the multiplication, the four general products and their comparison.
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
 - [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the reduced norm, the invertibility criterion and the zero-divisor cone.
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix model in full.
-- [Quaternion Algebra](quaternion-algebra.html), for the real quaternions $\mathbb{H}$, their basis, their multiplication and their conjugation, of which $\mathbb{B}$ is the complexification.
+- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the algebra read over $\mathbb{R}$.
+- William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.

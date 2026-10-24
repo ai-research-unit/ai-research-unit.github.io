@@ -174,7 +174,7 @@ For $A = \mathbb{H}$ with the quaternion conjugation over the datum $(\mathbb{R}
 
 ### The Biquaternion Algebra
 
-For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the Hermitian subspace is a Jordan algebra of degree two over $\mathbb{R}$, isomorphic to $H_2(\mathbb{C})$, with the two idempotents $\tilde{\Pi}_1$ and $\tilde{\Pi}_2$ as a complete Jordan-orthogonal family and the Peirce spaces of $\tilde{\Pi}_1$ reading $\mathbb{C}\tilde{\Pi}_1$, the span of $e_1$ and $e_2$, and $\mathbb{C}\tilde{\Pi}_2$. That layer is *The 12 Products of the Biquaternion Complex Space* and *Remarkable Subspaces and the Four General Products*, and it is the worked case in which everything of this article is computed on a basis of eight elements.
+For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the Hermitian subspace is a Jordan algebra of degree two over $\mathbb{R}$, isomorphic to $H_2(\mathbb{C})$, with the two idempotents $\tilde{\Pi}_1$ and $\tilde{\Pi}_2$ as a complete Jordan-orthogonal family and the Peirce spaces of $\tilde{\Pi}_1$ reading $\mathbb{C}\tilde{\Pi}_1$, the span of $e_1$ and $e_2$, and $\mathbb{C}\tilde{\Pi}_2$. That layer is *Symmetric and Antisymmetric Decomposition of the Four General Products* and *Remarkable Subspaces and the Four General Products*, and it is the worked case in which everything of this article is computed on a basis of eight elements.
 
 ## Summary
 

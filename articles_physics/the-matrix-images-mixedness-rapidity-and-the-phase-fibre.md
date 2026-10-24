@@ -10,9 +10,9 @@ The article states these four readings and their boundaries. The representations
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The element image $\mathsf{M}_2(\tilde Q)$, its determinant $N$ and its trace $2Q_t$ | [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
-| The regular image $\mathsf{M}_4^{L}(\tilde Q)$, $\det=N^{2}$, $\operatorname{Tr}=4Q_t$, and the block splitting $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$ | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
-| The sandwich operator, its matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$, its spectrum $\lambda_i\bar\lambda_j$, its determinant $\lvert N\rvert^{4}$ and its trace $4\lvert Q_t\rvert^{2}$ | [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
+| The element image $\mathsf{M}_2(\tilde Q)$, its determinant $\langle\tilde Q\rangle_{\natural}$ and its trace $2Q_t$ | [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
+| The regular image $\mathsf{M}_4^{L}(\tilde Q)$, $\det=\langle\tilde Q\rangle_{\natural}^{2}$, $\operatorname{Tr}=4Q_t$, and the block splitting $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$ | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
+| The sandwich operator, its matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$, its spectrum $\lambda_i\bar\lambda_j$, its determinant $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$ and its trace $4\lvert Q_t\rvert^{2}$ | [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The named objects and their matrix correspondences | [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html) |
 | The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Eigenvalue Decomposition and Eigenbasis of a Biquaternion](../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html) |
 | The positive cone and the pure states as rank-one idempotents | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
@@ -42,7 +42,7 @@ $$
 
 That is the dictionary between the two kinds of data. The map-data image is the element-data image taken twice, one copy per chirality.
 
-**The bookkeeping of the doubling.** The doubling is visible in every invariant. The trace doubles, from $2Q_t$ to $4Q_t$; the determinant squares, from $N$ to $N^2$; and the sandwich, which is the product of the two regular images, has determinant $\lvert N\rvert^{4}$ and trace $4\lvert Q_t\rvert^{2}$. None of these factors is a physical quantity. They are the dimension of the module over which the trace is taken and the number of copies the regular module contains. The one invariant that does not move is the vanishing set: $\det\mathsf{M}_2(\tilde Q)=0$, $\det\mathsf{M}_4^{L}(\tilde Q)=0$ and $\det\operatorname{H}_{\tilde Q}=0$ exactly on the zero-divisor cone.
+**The bookkeeping of the doubling.** The doubling is visible in every invariant. The trace doubles, from $2Q_t$ to $4Q_t$; the determinant squares, from $\langle\tilde Q\rangle_{\natural}$ to $\langle\tilde Q\rangle_{\natural}^{2}$; and the sandwich, which is the product of the two regular images, has determinant $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$ and trace $4\lvert Q_t\rvert^{2}$. None of these factors is a physical quantity. They are the dimension of the module over which the trace is taken and the number of copies the regular module contains. The one invariant that does not move is the vanishing set: $\det\mathsf{M}_2(\tilde Q)=0$, $\det\mathsf{M}_4^{L}(\tilde Q)=0$ and $\det\operatorname{H}_{\tilde Q}=0$ exactly on the zero-divisor cone.
 
 **The boundary.** The two pictures are one representation taken twice, not two theories. The names describe what the matrix acts on, and they do not assert two physical descriptions. A result proved in one picture must be translated before it is read in the other, and the determinant degree is where the translation is most often skipped.
 
@@ -72,7 +72,7 @@ $$
 \boxed{\;\det\mathsf{M}_2(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr)\;}.
 $$
 
-It is the biquaternion norm $N(\tilde{Ϛ})$ of the state, and it is real and non-negative on the ball. The two eigenvalues of the matrix are $\tfrac12(1\pm\lvert\vec r\rvert)$, so the determinant is their product, the two-dimensional volume the two eigen-directions span. On the Bloch ball it is the radial gap to the pure boundary: it vanishes on the sphere and is maximal at the centre.
+It is the biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural}$ of the state, and it is real and non-negative on the ball. The two eigenvalues of the matrix are $\tfrac12(1\pm\lvert\vec r\rvert)$, so the determinant is their product, the two-dimensional volume the two eigen-directions span. On the Bloch ball it is the radial gap to the pure boundary: it vanishes on the sphere and is maximal at the centre.
 
 ### The Three Numbers
 
@@ -116,10 +116,10 @@ $$
 so $\tilde H$ is Hermitian positive semidefinite and its eigenvalues $\sigma_1\ge\sigma_2\ge0$ are the singular values of $\tilde Q$. On the amplitude the determinant changes character:
 
 $$
-N(\tilde H)=\det\mathsf{M}_2(\tilde H)=\sigma_1\sigma_2=\lvert\det\mathsf{M}_2(\tilde Q)\rvert=\lvert N(\tilde Q)\rvert .
+\langle\tilde H\rangle_{\natural}=\det\mathsf{M}_2(\tilde H)=\sigma_1\sigma_2=\lvert\det\mathsf{M}_2(\tilde Q)\rvert=\lvert\langle\tilde Q\rangle_{\natural}\rvert .
 $$
 
-**The norm of an amplitude is real and non-negative**, even when the norm of the element is complex. For a Hermitian element the norm is $N(\tilde H)=h_t^{2}-\lvert\vec h\rvert^{2}$, the determinant of a Hermitian matrix; positivity makes it $\sigma_1\sigma_2$. The element and its amplitude have norms of the same modulus and differ in phase.
+**The norm of an amplitude is real and non-negative**, even when the norm of the element is complex. For a Hermitian element the norm is $\langle\tilde H\rangle_{\natural}=h_t^{2}-\lvert\vec h\rvert^{2}$, the determinant of a Hermitian matrix; positivity makes it $\sigma_1\sigma_2$. The element and its amplitude have norms of the same modulus and differ in phase.
 
 The state inherits the singular values and loses the phase. With $\hat H=\tilde H/\sqrt{\sigma_1^{2}+\sigma_2^{2}}$, the state is $\hat H^{2}$, its eigenvalues are $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$, and its determinant is
 
@@ -138,20 +138,20 @@ The two ends are the pure state, $\sigma_2=0$, and the maximally mixed state, $\
 The element matrix satisfies its characteristic equation
 
 $$
-\lambda^{2}-2Q_t\,\lambda+N=0,
+\lambda^{2}-2Q_t\,\lambda+\langle\tilde Q\rangle_{\natural}=0,
 $$
 
 so its two eigenvalues are
 
 $$
-\boxed{\;\lambda_\pm=Q_t\pm\sqrt{Q_t^{2}-N}
+\boxed{\;\lambda_\pm=Q_t\pm\sqrt{Q_t^{2}-\langle\tilde Q\rangle_{\natural}}
 =Q_t\pm\sqrt{-\bigl(Q_x^{2}+Q_y^{2}+Q_z^{2}\bigr)}\;}.
 $$
 
 The pair is the eigenvalue map of the element. It is not a homomorphism: the eigenvalues of a product are not a function of the two pairs, because the factors need not commute. Its product is multiplicative,
 
 $$
-\lambda_+\lambda_-=\det\mathsf{M}_2(\tilde Q)=N(\tilde Q),
+\lambda_+\lambda_-=\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},
 $$
 
 and that product is the reason the determinant is the one invariant of the pair. The map is a similarity invariant and not a complete one: a scalar $Q_te_t$ and a non-scalar element with $(\vec Q,\vec Q)=0$ share the pair $\{Q_t,Q_t\}$ and are not similar. The eigenprojections, not the pair, carry the remaining information, and they are the subject of *Eigenvalue Decomposition and Eigenbasis of a Biquaternion*, §*The Eigenvalue Decomposition*.
@@ -194,7 +194,7 @@ Its matrix has the eigenvalues $e^{\pm i\theta/2}$, and the sandwich has $e^{\pm
 
 ### Where the Reading Stops
 
-The eigenvalue reading requires the element matrix to be diagonalisable. Off the cone it is, except on a set of measure zero. On the cone $N=0$, the characteristic equation is $\lambda(\lambda-2Q_t)=0$, and the eigenvalues are $0$ and $2Q_t$: they collide at zero only on the trace-zero part of the cone, where the matrix is nilpotent. There the four operator eigenvalues vanish while its rank is one, the operator is not diagonalisable, and no rapidity is defined. The four eigenvalues vanish because the rank has dropped to one, not because a pair of nonzero eigenvalues has met.
+The eigenvalue reading requires the element matrix to be diagonalisable. Off the cone it is, except on a set of measure zero. On the cone $\langle\tilde Q\rangle_{\natural}=0$, the characteristic equation is $\lambda(\lambda-2Q_t)=0$, and the eigenvalues are $0$ and $2Q_t$: they collide at zero only on the trace-zero part of the cone, where the matrix is nilpotent. There the four operator eigenvalues vanish while its rank is one, the operator is not diagonalisable, and no rapidity is defined. The four eigenvalues vanish because the rank has dropped to one, not because a pair of nonzero eigenvalues has met.
 
 A general Lorentz element need not be either a pure boost or a pure rotation, and its eigenvalues are then neither real and reciprocal nor conjugate of unit modulus. The pair (rapidity, angle) is not read off a single eigenvalue; the polar decomposition is what separates the two factors. The "doubled rapidity" is a reading of the pure cases and of the polar factors, not a formula for a general element.
 
@@ -276,8 +276,8 @@ The element-data and map-data distinction is an interpretation of the doubling $
 ## Summary
 
 - The $2\times2$ image is the element acting on the spinor data; the $4\times4$ regular image is the element acting on the algebra, and it is the $2\times2$ image taken twice, $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$.
-- The trace doubles, $2Q_t$ to $4Q_t$; the determinant squares, $N$ to $N^2$; the sandwich determinant is $\lvert N\rvert^{4}$. Only the vanishing set is common to the three.
-- The eigenvalues of the element are $Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; their product is the determinant $N$, and the eigenvalue map is a similarity invariant and not a complete one.
+- The trace doubles, $2Q_t$ to $4Q_t$; the determinant squares, $\langle\tilde Q\rangle_{\natural}$ to $\langle\tilde Q\rangle_{\natural}^{2}$; the sandwich determinant is $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$. Only the vanishing set is common to the three.
+- The eigenvalues of the element are $Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; their product is the determinant $\langle\tilde Q\rangle_{\natural}$, and the eigenvalue map is a similarity invariant and not a complete one.
 - The determinant of a trace-one state is $\tfrac14(1-\lvert\vec r\rvert^{2})$, the product of its two eigenvalues; the purity is $1-2\det$ and the linear entropy is $2\det$.
 - The determinant vanishes exactly on the pure states, so the pure states are the zero divisors of the state slice and the mixed states are its units.
 - For a pure boost or rotation, the element matrix stores half the rapidity or half the angle; the sandwich stores the full one, because the congruence acts on the four-vector and the element on the spinor.
@@ -290,9 +290,9 @@ The element-data and map-data distinction is an interpretation of the doubling $
 
 | Symbol | Meaning |
 | --- | --- |
-| $\mathsf{M}_2(\tilde Q)$ | the element image in $M_2(\mathbb{C})$; $\det=N$, $\operatorname{Tr}=2Q_t$ |
-| $\mathsf{M}_4^{L}(\tilde Q)$ | the left regular image in $M_4(\mathbb{C})$; $\det=N^{2}$, $\operatorname{Tr}=4Q_t$ |
-| $\operatorname{H}_{\tilde Q}$ | the sandwich operator; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$ |
+| $\mathsf{M}_2(\tilde Q)$ | the element image in $M_2(\mathbb{C})$; $\det=\langle\tilde Q\rangle_{\natural}$, $\operatorname{Tr}=2Q_t$ |
+| $\mathsf{M}_4^{L}(\tilde Q)$ | the left regular image in $M_4(\mathbb{C})$; $\det=\langle\tilde Q\rangle_{\natural}^{2}$, $\operatorname{Tr}=4Q_t$ |
+| $\operatorname{H}_{\tilde Q}$ | the sandwich operator; $\det=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a trace-one state of the Bloch ball |
 | $\det\mathsf{M}_2(\tilde{Ϛ})$ | the mixedness, $\tfrac14(1-\lvert\vec r\rvert^{2})$ |
 | $S_L=2\det\mathsf{M}_2(\tilde{Ϛ})$ | the linear entropy |

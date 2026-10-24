@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$, the anti-involution whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian subspace $\mathbb{M}_-$ (*The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, *Introduction to the Remarkable Subspaces*). Every element $\tilde{Q}$ of the algebra defines a **two-sided operator**, the sandwich
+Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$, the anti-involution whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian subspace $\mathbb{M}_-$ (*The Biquaternion Algebra and Its Vector Spaces*, *Introduction to the Remarkable Subspaces*). Every element $\tilde{Q}$ of the algebra defines a **two-sided operator**, the sandwich
 
 $$
 \Theta_{\tilde Q_1}\colon \mathbb{B}\longrightarrow\mathbb{B},\qquad \Theta_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1\,\tilde Q_2\,\tilde Q_1^{*},
@@ -12,7 +12,7 @@ which is the dagger sandwich $\mathrm{H}_{\tilde Q_1}$ of the corpus. This artic
 
 The result that organises the article is that **the operator is quadratic in the parameter, while the adjoint is linear in it**. Composition reads $\Theta_{\tilde Q_1\tilde Q_2}=\Theta_{\tilde Q_1}\circ\Theta_{\tilde Q_2}$ on the nose, but $\Theta_{A\tilde Q_1}=\lvert A\rvert^{2}\Theta_{\tilde Q_1}$ for a central $A$: the map $\tilde Q_1\mapsto\Theta_{\tilde Q_1}$ is multiplicative and not additive, and it is blind to the central phase. Two consequences are worked out. The Hermitian and the anti-Hermitian elements **give the same operators**, because $\Theta_{-\tilde Q_1}=\Theta_{\tilde Q_1}$ and $\Theta_{i\tilde Q_1}=\Theta_{\tilde Q_1}$; and a two-sided operator is **never skew-adjoint** unless it vanishes, because the sandwich cannot change the sign of the quadratic form it carries. Both contrast with the one-sided case of the companion article, where the parameter enters linearly and the two sectors give skew and self-adjoint operators respectively.
 
-The article is pure algebra. The algebra, the dagger and the remarkable subspaces are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; the operator read in coordinates or on the spinor module is *The Four-Vector Operator Representation of Biquaternions* and *The Twisted Spinor Operator Representation of Biquaternions*, and the sandwich in the regular basis is *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
+The article is pure algebra. The algebra, the dagger and the remarkable subspaces are *The Biquaternion Algebra and Its Vector Spaces*; the operator read in coordinates or on the spinor module is *The Four-Vector Operator Representation of Biquaternions* and *The Twisted Spinor Operator Representation of Biquaternions*, and the sandwich in the regular basis is *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
 
 ## The Scalar Form and the Definite Structure of the Algebra
 
@@ -22,7 +22,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q_2^{*}\tilde Q_1\bigr).
 $$
 
-In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, with $\tilde Q_1=\sum_{\mu}Q_{1,\mu}e_{\mu}$ and $\tilde Q_2=\sum_{\mu}Q_{2,\mu}e_{\mu}$,
+In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of *The Biquaternion Algebra and Its Vector Spaces*, with $\tilde Q_1=\sum_{\mu}Q_{1,\mu}e_{\mu}$ and $\tilde Q_2=\sum_{\mu}Q_{2,\mu}e_{\mu}$,
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} Q_{2,\mu}^{*}Q_{1,\mu},
@@ -255,7 +255,7 @@ The biquaternion algebra $\mathbb{B}$ with its Hermitian conjugation carries the
 ## Further Reading
 
 - [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the Hermitian adjoint side by side with the other three adjoints and for the reading of the suffix of the family as the name of the adjoint
-- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the quaternion norm, the invertibility criterion and the group of units, to be kept apart from the positive definite form of this article.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), the companion article, where the parameter enters linearly and the sectors give skew and self-adjoint operators.
 - [The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint](the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html), for the same operator in coordinates, the forms, positivity and the slice.

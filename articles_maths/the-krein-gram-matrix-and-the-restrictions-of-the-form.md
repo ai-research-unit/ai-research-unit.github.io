@@ -40,7 +40,7 @@ of signature $(2,6)$.
 
 **Proof.** $\langle e_{\nu},e_{\mu}\rangle_{\natural*}=\sum_{\lambda}\varepsilon_{\lambda}\overline{(e_{\mu})_{\lambda}}(e_{\nu})_{\lambda}=\varepsilon_{\mu}\delta_{\mu\nu}$: the units are orthogonal and each has its own sign. The determinant is $\varepsilon_0\varepsilon_1\varepsilon_2\varepsilon_3=-1$. In the real basis the coefficient $i$ contributes $|i|^{2}=1$ to every entry, so the Gram matrix repeats the block $E$ on the two coefficient blocks, whence the signature $(2+0,\,6)$ by counting the signs.
 
-**Remark (the three Gram matrices).** The three pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and it is the fundamental symmetry of the next article written in the coefficient basis.
+**Remark (the three Gram matrices).** The three pairings of *The Four Forms and the Four Algebraic Norms* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and it is the fundamental symmetry of the next article written in the coefficient basis.
 
 ## The Krein Form in the Matrix Representation
 
@@ -223,12 +223,12 @@ In the coefficient basis the general quaternionic sesquilinear form has the Gram
 
 ## Further Reading
 
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
 - [The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the adjugated trace identities used here
 - [Remarkable Subspaces and the Four Algebraic Norms](remarkable-subspaces-and-the-four-algebraic-norms.html), for the restriction of the norm to the same remarkable subspaces
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the definitions and dimensions of the remarkable subspaces
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the definitions and the coordinate blocks of the remarkable subspaces
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restrictions as subspaces, their null cones and their automorphism groups
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the positive definite general plain sesquilinear form
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the positive definite general plain sesquilinear form
 - [Krein Orthogonality and the Fundamental Decomposition](krein-orthogonality-and-the-fundamental-decomposition.html) and [The Isotropic Structure of the General Quaternionic Sesqualgebra](the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the two companion articles of this layer
 - [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), for Sylvester's law, congruence and the discriminant

@@ -45,7 +45,7 @@ The space therefore carries **eight distinct algebraic structures**: $\mathrm{GP
 8. **Do not launch sub-agents.**
 9. Chat in the plain-words style; chat-math in `$…$` / `$$…$$`.
 
-**The reading list every agent shares** (in the corpus's own articles): *Conventions in Mathematics*; *Conventions in the Biquaternion Universe*; *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; *Remarkable Subspaces* (introduction, decompositions, comparison); *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; *Relations Between the Four General Products*; *Comparison Between the Four General Products*; *The 12 Products of the Biquaternion Complex Space*; *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; *Definitions for the Study of the Algebraic Structures*; *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; *The Symmetric and Antisymmetric Parts of an Algebra Product*; *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; *List of Algebras by Dimension*; *The Eight Algebras Compared*; *Harmonic Analysis over Hypercomplex Systems*; and, as the article-for-article template, the counterpart Quaternion and Biquaternion articles named inside each brief.
+**The reading list every agent shares** (in the corpus's own articles): *Conventions in Mathematics*; *Conventions in the Biquaternion Universe*; *The Biquaternion Algebra and Its Vector Spaces*; *Remarkable Subspaces* (introduction, decompositions, comparison); *The Four General Products and Their Relations*; *The Four General Products and Their Relations*; *The Four General Products and Their Relations*; *Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; *Definitions for the Study of the Algebraic Structures*; *The Four Forms and the Four Algebraic Norms*; *The Four Forms and the Four Algebraic Norms*; *The Symmetric and Antisymmetric Parts of an Algebra Product*; *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; *List of Algebras by Dimension*; *The Eight Algebras Compared*; *Harmonic Analysis over Hypercomplex Systems*; and, as the article-for-article template, the counterpart Quaternion and Biquaternion articles named inside each brief.
 
 **The template, one line.** A general structure is 13 articles in the order: Commons 7 (introduction; norm and invertibility; zero divisors; annihilators; roots of $1$ and idempotents; roots of $0$ and nilpotents; roots of a general element) — Specific Theory 3 (specificities; ideals and Peirce decomposition; group of units) — Form 1 — Operators 1 — Representations 1. A live half is 11: Commons 7 (same seven) — specificities — algebraic norm — multiplication operators — $2\times2$ representation. Each block also carries the corpus's `###### Common Theory` / `###### Specific Theory` / `###### Form` / `###### Operators` / `###### Representations` sub-headings from the Biquaternion menu.
 
@@ -68,8 +68,8 @@ The space therefore carries **eight distinct algebraic structures**: $\mathrm{GP
   - `introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions`  —  Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions
   - `reduced-biquaternion-other-algebraic-element-representations`  —  Reduced Biquaternion Other Algebraic Element Representations
   - `the-four-general-products-of-the-reduced-biquaternion-c-space`  —  The Four General Products of the Reduced Biquaternion $\mathbb{C}$ Space
-  - `relations-between-the-four-general-products-of-the-reduced-biquaternions`  —  Relations Between the Four General Products
-  - `comparison-between-the-four-general-products-of-the-reduced-biquaternions`  —  Comparison Between the Four General Products
+  - `the-four-general-products-and-their-relations-of-the-reduced-biquaternions`  —  The Four General Products and Their Relations
+  - `the-four-general-products-and-their-relations-of-the-reduced-biquaternions`  —  The Four General Products and Their Relations
   - `the-four-general-products-and-operators-of-the-reduced-biquaternions`  —  The Four General Products and Operators
   - `remarkable-subspaces-and-the-four-general-products-of-the-reduced-biquaternions`  —  Remarkable Subspaces and the Four General Products
   - `the-12-products-of-the-reduced-biquaternion-complex-space`  —  The 12 Products of the Reduced Biquaternion Complex Space
@@ -90,12 +90,12 @@ Writes the shared Algebra the whole category stands on: the **space**, its **inv
 - **Standard Element Representations** — the four-vector (real quadruple; complex pair) and the $2\times2$ matrix model; the second one must show $\mathbb{B}_{\mathrm{r}}\cong$ the diagonal $2\times2$ complex matrices.
 - **The 4 General Products, Relations, Comparison** — the four coordinate displays above, the identities that link them, the property table; the drop of the cross terms relative to $\mathbb{B}$.
 - **The Four General Products and Operators / Remarkable Subspaces and the Four General Products** — the operators the products generate and their behaviour on the subspaces.
-- **The 12 Products of the Reduced Biquaternion Complex Space** — the twelve slots, the four dead ones with their proof ($\mathrm{SPA}=\mathrm{GPA}$, $\mathrm{APA}=0$, $\mathrm{SQS}=\mathrm{GQS}$, $\mathrm{AQS}=0$), mirroring *The 12 Products of the Biquaternion Complex Space*.
+- **The 12 Products of the Reduced Biquaternion Complex Space** — the twelve slots, the four dead ones with their proof ($\mathrm{SPA}=\mathrm{GPA}$, $\mathrm{APA}=0$, $\mathrm{SQS}=\mathrm{GQS}$, $\mathrm{AQS}=0$), mirroring *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 - **The Algebraic Structures over the Reduced Biquaternion $\mathbb{C}$ Space** — the eight structures named with their laws and classical identities; **Definitions for the Study of the Algebraic Structures** — the vocabulary; **The 4 Forms** — $B$, $N$, $H$, $K$ and the four algebraic norms.
 
 ### Readings specific to this brief
 
-The biquaternion counterparts *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, *The Group of Involutions*, *Introduction to the Remarkable Subspaces* and its two companions, *Introduction to Biquaternion Element Representations*, *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products*, *Comparison Between the Four General Products*, *The 12 Products of the Biquaternion Complex Space*, *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Definitions for the Study of the Algebraic Structures*, *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. Sources: Pei–Chang–Ding (2004); Cockle (1849); *List of Algebras by Dimension*; *Harmonic Analysis over Hypercomplex Systems*, §*The Commutative Alternative*.
+The biquaternion counterparts *The Biquaternion Algebra and Its Vector Spaces*, *The Group of Involutions*, *Introduction to the Remarkable Subspaces* and its two companions, *Introduction to Biquaternion Element Representations*, *The Four General Products and Their Relations*, *The Four General Products and Their Relations*, *Symmetric and Antisymmetric Decomposition of the Four General Products*, *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Definitions for the Study of the Algebraic Structures*, *The Four Forms and the Four Algebraic Norms*. Sources: Pei–Chang–Ding (2004); Cockle (1849); *List of Algebras by Dimension*; *Harmonic Analysis over Hypercomplex Systems*, §*The Commutative Alternative*.
 
 ### Acceptance
 
@@ -339,7 +339,7 @@ a **central** conjugate-commutative sesquilinear operation, the Hermitian form $
 
 ### Readings specific to this brief
 
-The counterpart *Symmetric Plain Sesqualgebra of the Biquaternions over $\mathbb{C}$*; *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; *The 12 Products of the Reduced Biquaternion Complex Space*.
+The counterpart *Symmetric Plain Sesqualgebra of the Biquaternions over $\mathbb{C}$*; *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; *The Four Forms and the Four Algebraic Norms*; *The 12 Products of the Reduced Biquaternion Complex Space*.
 
 ### Acceptance
 

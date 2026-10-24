@@ -40,7 +40,7 @@ The doubling of $\mathbb{C}$ gives the quaternions $\mathbb{H}$, which retain as
 |---|---|---|
 | $\mathbb{H}$ | associative, alternative, power-associative; a division algebra, no zero divisors; **not commutative**, not a field; centre $\mathbb{R}$ | *Quaternion Algebra* |
 | Quaternion units | $i^2 = j^2 = k^2 = ijk = -1$; $ij = k = -ji$ | *Quaternion Algebra* |
-| $\mathbb{H}$ as a division ring | every nonzero element invertible, with $x^{-1} = \bar x/N(x)$ | *Quaternion Algebra* |
+| $\mathbb{H}$ as a division ring | every nonzero element invertible, with $x^{-1} = \bar x/\langle x\rangle_{\natural}$ | *Quaternion Algebra* |
 | $\mathbb{H}$ as an algebra over its centre | dimension $4$ over $\mathbb{R}$, the centre | *Division Algebras* |
 | Non-example: $\mathbb{H}$ as a field | fails: multiplication is not commutative | *Quaternion Algebra* |
 | Non-example: $\mathbb{H}$ as an ordered field | fails: an ordered field is commutative, and $\mathbb{H}$ is not even a field | *Quaternion Algebra* |
@@ -79,7 +79,7 @@ Beside the division chain the corpus develops the split and degenerate systems, 
 | $\mathbb{D}'$ dual numbers | commutative, associative; **has nilpotents**, local; not a division algebra, not a field | *Dual Numbers Algebra* |
 | Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | associative; **has zero divisors**, $\cong \mathbb{H}\oplus\mathbb{H}$, and no nonzero nilpotents; not a division algebra, not a field | *Split-Biquaternion Algebra* |
 | Split-octonions | alternative; **has zero divisors**; not a division algebra, not associative | *Normed Division Algebras and the Hurwitz Theorem* |
-| $\mathbb{B}$ biquaternions | associative; **has zero divisors**, $\cong M_2(\mathbb{C})$; not a division algebra, not a field | *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* |
+| $\mathbb{B}$ biquaternions | associative; **has zero divisors**, $\cong M_2(\mathbb{C})$; not a division algebra, not a field | *The Biquaternion Algebra and Its Vector Spaces* |
 | Non-example: $\mathbb{D}$ as a field | fails: $(1-t)(1+t) = 0$ | *Split-Complex Algebra* |
 | Non-example: the split biquaternions as a division algebra | fail: they have zero divisors, though they have no nonzero nilpotents | *Split-Biquaternion Algebra* |
 

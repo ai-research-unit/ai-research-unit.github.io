@@ -21,7 +21,7 @@ The article is a reader and owns no new theorem. Each result is stated in a sent
 | The module structure and the Hilbert structure of the spinor space | [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html) |
 | The rotor action on the two sectors and the double cover | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | The named objects and their images under both pictures | [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html) |
-| The coefficient dictionary of the two sectors | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
+| The coefficient dictionary of the two sectors | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
 
 ## Five Pictures of One Element
 

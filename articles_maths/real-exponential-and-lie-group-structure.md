@@ -7,7 +7,7 @@ The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a comm
 
 The real case is the degenerate abelian base. The bracket vanishes identically, so $\mathbb{R}$ is the abelian Lie algebra $\mathfrak{gl}_1(\mathbb{R})$ of dimension one, and the Baker–Campbell–Hausdorff series terminates at its leading term, making the exponential an exact group homomorphism. The group of units is disconnected, and the exponential covers only its identity component; the sign group is left over as the torsion of the unit group.
 
-The conventions are those of *Real Algebra*: basis $e_t = 1$, a general element $q = q e_t$, the sole involution the identity, norm $N(q) = q\,q = q^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$. Every numerical value displayed below is exact.
+The conventions are those of *Real Algebra*: basis $e_t = 1$, a general element $q = q e_t$, the sole involution the identity, norm $\langle q\rangle = q\,q = q^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$. Every numerical value displayed below is exact.
 
 ## The Algebra as the Abelian Lie Algebra
 
@@ -36,7 +36,7 @@ The universal enveloping algebra of this abelian Lie algebra is the polynomial a
 The **group of units** is
 
 $$
-\mathbb{R}^\times = \{q : N(q) \neq 0\} = \mathbb{R} \setminus \{0\},
+\mathbb{R}^\times = \{q : \langle q\rangle \neq 0\} = \mathbb{R} \setminus \{0\},
 $$
 
 the real line with the origin removed. It is a real Lie group of dimension $1$, open and dense in $\mathbb{R}$ by *Real Norm and Invertibility*, and it **decomposes into two components**,
@@ -76,7 +76,7 @@ $$
 Its norm is positive and satisfies
 
 $$
-N(\exp q) = \exp(2q) = \exp(q)^2,
+\langle\exp q\rangle = \exp(2q) = \exp(q)^2,
 $$
 
 the square of the exponential itself. The differential at the origin is the identity, $d\exp_0 = \operatorname{id}$, so $\exp$ is a local diffeomorphism near $0$ and supplies exponential coordinates near the identity; as the kernel computation below shows, it is in fact a global homeomorphism onto its image.
@@ -192,7 +192,7 @@ Every exponential is entire and satisfies a group law; the differences are that 
 
 The commutator bracket of $\mathbb{R}$ vanishes identically, so $\mathbb{R} \cong \mathfrak{gl}_1(\mathbb{R})$ is an abelian Lie algebra of real dimension $1$, with the universal enveloping algebra the polynomial algebra on one generator, and it is the Lie algebra both of the additive group $(\mathbb{R},+)$ and of the positive multiplicative group $(\mathbb{R}_{>0},\cdot)$.
 
-The exponential $\exp(q) = \sum q^n/n!$ is entire, never zero, and a group homomorphism, $\exp(q_1+q_2) = \exp q_1 \exp q_2$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $e^q$, its norm is $N(\exp q) = \exp(2q)$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.
+The exponential $\exp(q) = \sum q^n/n!$ is entire, never zero, and a group homomorphism, $\exp(q_1+q_2) = \exp q_1 \exp q_2$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $e^q$, its norm is $\langle\exp q\rangle = \exp(2q)$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.
 
 The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$, with two components and the splitting $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$. Every one-parameter subgroup is $t \mapsto \exp(tX)$ and takes values in $\mathbb{R}_{>0}$, so it never reaches the sign group; the sign group is the torsion subgroup of $\mathbb{R}^\times$, its group of components, and its maximal compact subgroup, and it is the compact factor $O(1)$ of the family. The real case is the abelian base of the family: the whole structure is a line, its exponential, and a two-element sign.
 
@@ -205,7 +205,7 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$
 | $\mathfrak{gl}_1(\mathbb{R}) \cong \mathbb{R}$ | the abelian Lie algebra of the $1\times1$ matrices |
 | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of units, two components |
 | $\exp(q) = \sum_n q^n/n! = e^q$ | the exponential, entire and a homomorphism |
-| $N(\exp q) = \exp(2q)$ | the norm of an exponential |
+| $\langle\exp q\rangle = \exp(2q)$ | the norm of an exponential |
 | $\exp : (\mathbb{R},+)\to(\mathbb{R}_{>0},\cdot)$ | the isomorphism onto the positive reals |
 | $\ln = \exp^{-1}$ | the natural logarithm |
 | $\ker\exp = \{0\}$ | the kernel, trivial |

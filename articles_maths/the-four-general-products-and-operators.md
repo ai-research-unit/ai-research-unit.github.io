@@ -1,15 +1,15 @@
 
-# __The Four General Products and Operators__
+# __Introduction to the Operators of the Biquaternion Algebra__
 
 ## Introduction
 
 The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general plain sesquilinear product the *Hermitian Adjoint* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, and the general quaternionic sesquilinear product the Krein form, which carries its own indefinite theory rather than a family of the four-adjoint kind. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
 
-This article states that division of labour precisely, with the matrices of one element read through all four insertions. It closes the group *The Four General Products* and carries the passage from a product to an operator.
+This article states that division of labour precisely, with the matrices of one element read through all four insertions. It opens the group *Operators* and carries the passage from a product to an operator.
 
 The answer to the question of the title is therefore a negative one, and it agrees with the intuition that the algebra and its product come first and the operator is obtained from them by choosing the element and the insertion. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so that one insertion is *forced* by the algebra and not merely preferred.
 
-The four general products, their relations and their comparison are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*; the four pairings and their Gram matrices are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra.
+The four general products, their relations and their comparison are *The Four General Products and Their Relations*; the four pairings and their Gram matrices are *The Four Forms and the Four Algebraic Norms*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra. The two insertions are also the subject of a group: each is an involution, they commute, and the four readings of a rule form the group $\mathbb{Z}_2\times\mathbb{Z}_2$. Read on a general algebra with two commuting anti-involutions, the same construction gives the slot family, whose second slot governs the composition and whose first slot governs the form, and the table of the slots records the four settings. That is §*The Four Readings and Their Group*.
 
 ## The Four General Products Are One Multiplication with Two Insertions
 
@@ -59,6 +59,140 @@ with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\math
 *Proof.* $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$, and on the basis units the two insertions act by $e_\mu^{\natural}=\varepsilon_\mu e_\mu$ and $e_\mu^{*}=\varepsilon_\mu e_\mu$, the coordinates of the units being real, so that the sign $\varepsilon_\mu$ cancels as soon as the unit is read through one of the two insertions. The Gram matrix is therefore $\varepsilon$ exactly when the two insertions agree, that is for the plain product and for the general quaternionic sesquilinear one, and $1$ when they differ, that is $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$. The four pairings are distinct as maps — two are bilinear and two sesquilinear in the second argument, and no two agree on complex coefficients — while two pairs of them share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by a sign.
 
 **Corollary (a product is a pairing, not an operator).** The four general products endow $\mathbb{B}$ with the four pairings and nothing else. Each of them is a bilinear or a sesquilinear *form*, and a form does not act on the algebra; it pairs two of its elements. Whatever acts is a map, and a map has to be built.
+
+## The Four Readings and Their Group
+
+The four general products are four rules on one and the same space, and each of the three others is, as *The Four General Products and Their Relations*, §*Which of the Four Is a Multiplication*, reads it, the general plain bilinear product with a conjugation inserted in a slot. **The four insertions that appear there are the four elements of a group.** One insertion reads the first argument through the natural conjugation and one reads the second through the Hermitian conjugation; each of the two is its own inverse, the two commute, and the four are these two insertions, their composite and the identity. The group is of order four and elementary abelian, and the four general products are its four elements read on one and the same rule. **Each of the two generators touches one slot**, and it is that reading which decides which property of the four general products belongs to which slot: the group is read on the rules above, the same operation is read on a general algebra with its two anti-involutions in §*The Operation on a General Algebra*, the settings are collected in §*The Table of the Slots*, and the one setting whose square is central is §*The Square at One Setting*.
+
+### The Readings and Their Group
+
+**Definition (the two insertions and the four readings).** Let $f$ be a rule of two arguments on $\mathbb{B}$. The **first insertion** and the **second insertion** carry $f$ to the rules
+
+$$
+(\tilde Q_1,\tilde Q_2)\longmapsto f(\tilde Q_1^{\natural},\tilde Q_2),
+\qquad
+(\tilde Q_1,\tilde Q_2)\longmapsto f(\tilde Q_1,\tilde Q_2^{*}).
+$$
+
+The **four readings** of $f$ are $f$ itself, its image under the first insertion, its image under the second insertion, and its image under the composite of the two. Following the convention of *Introduction to the Operators of the Biquaternion Algebra*, the readings are written (none), (${}^{\natural}$), (${}^{*}$) and (both), the label naming the insertions made: none, the first insertion, the second insertion, or both.
+
+**Remark (why four readings and not sixteen).** The involutions at hand are four — $\mathrm{id}$, ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ — so insertions built from all four would a priori give sixteen readings. The four general products use only $\mathrm{id}$ or ${}^{\natural}$ in the first slot and only $\mathrm{id}$ or ${}^{*}$ in the second, and two features of that choice matter in this part. The first slot is $\mathbb{C}$-linear and never conjugates the coefficients, while the second is conjugate-linear whenever it is not the identity; that asymmetry is why the two slots are not interchangeable, and it is the source of every entry of §*The Table of the Slots*. And the two conjugations chosen are the ones that produce the split read in *The Four General Products and Their Relations*, §*Which of the Four Is a Multiplication*, in which the second slot alone decides whether the product is the multiplication of an algebra over $\mathbb{C}$ or of a sesqualgebra over $\mathbb{C}$. **The part asserts nothing about the other twelve readings**, and every statement in it is about the four.
+
+**Theorem (the four readings form a group).** The four readings of any rule are closed under composition, and they form a group isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$, of which (none) is the identity and of which the first insertion and the second insertion are two generators.
+
+*Proof.* The first insertion applied twice returns the rule, since $\tilde Q_1^{\natural\natural}=\tilde Q_1$ and ${}^{\natural}$ is an involution, and the second insertion applied twice returns it for the same reason, ${}^{*}$ being an involution. Each of the two insertions is therefore its own inverse, and so is each of the four readings. The first insertion touches the first argument alone and the second the second argument alone, so the two commute, and their composite is the reading (both). The four readings are closed, every element is its own inverse, and the group is abelian of order four with exponent two, that is $\mathbb{Z}_2\times\mathbb{Z}_2$. The product is the table, in which the row is the first factor and the column the second.
+
+| $\circ$ | (none) | (${}^{\natural}$) | (${}^{*}$) | (both) |
+|---|---|---|---|---|
+| (none) | (none) | (${}^{\natural}$) | (${}^{*}$) | (both) |
+| (${}^{\natural}$) | (${}^{\natural}$) | (none) | (both) | (${}^{*}$) |
+| (${}^{*}$) | (${}^{*}$) | (both) | (none) | (${}^{\natural}$) |
+| (both) | (both) | (${}^{*}$) | (${}^{\natural}$) | (none) |
+
+**Theorem (the four general products are one rule and its three readings).** Read on the general plain bilinear product, the four readings give the four general products,
+
+$$
+\boxed{\;
+\tilde Q_1\tilde Q_2,
+\qquad
+\tilde Q_1^{\natural}\tilde Q_2,
+\qquad
+\tilde Q_1\tilde Q_2^{*},
+\qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}
+\;},
+$$
+
+in the order (none), (${}^{\natural}$), (${}^{*}$), (both). The four are pairwise distinct, so the group permutes them faithfully and the orbit of the general plain bilinear product is the four. **The four general products are therefore one rule and the three modifications of it, a modification being one insertion.**
+
+*Proof.* The three non-identity readings applied to the general plain bilinear product are the three formulas of *The Four General Products and Their Relations*, §*Which of the Four Is a Multiplication*: the first insertion gives $\natural(\tilde Q_1)\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$, the second gives $\tilde Q_1\,\natural(\bar{\tilde Q}_2)=\tilde Q_1\tilde Q_2^{*}$, and the composite gives $\natural(\tilde Q_1)\natural(\bar{\tilde Q}_2)=\tilde Q_1^{\natural}\tilde Q_2^{*}$. The four are pairwise distinct, by *The Four General Products and Their Relations*, and each non-identity reading moves the general plain bilinear product, since it changes the first element, the second, or both; the orbit is therefore the four general products and the action is faithful.
+
+**Corollary (the group is the two slots).** Each generator touches one slot alone, so a property that depends on one slot alone is carried by one generator, a property that depends on both requires the two, and a property that sees neither is carried by the whole group. **The two generators of the group are the two slots**, and the property table above reads row by row along them: §*The Table of the Slots* gives the rule that places each row.
+
+**Corollary (the same group on the pairings and on the Gram matrices).** Read on the scalar part of a rule, the four readings give the four pairings, whose Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ are $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ in the order (none), (${}^{\natural}$), (${}^{*}$), (both). The coefficient $\varepsilon=(1,-1,-1,-1)$ survives therefore for exactly the two readings in which the two insertions agree, (none), where neither is applied, and (both), where both are, and it is replaced by $1$ for the two in which they differ; that alternation is the sign matrix $\mathrm{E}$ against the identity $\mathrm{I}_4$ of *The Four Forms and the Four Algebraic Norms*.
+
+**Remark (the group of the operations is not the group of the involutions).** The four readings are operations on rules, and the group they form is generated by the two insertions; the group of *The Group of Involutions*, generated by the natural conjugation ${}^{\natural}$ and the coefficient conjugation $\bar{\cdot}$, is a group of maps of the algebra. Both are elementary abelian of order four, and they are not the same group: the elements of the first are readings of a rule and the elements of the second are conjugations of an element. **A reading is not a conjugation of an element**, and the four general products are the four readings of one rule and not the four conjugations of one element.
+
+**Remark (the identity element, and what the group does not produce).** The group has an identity element, the reading with no insertion, and read on the general plain bilinear product that reading is the general plain bilinear product itself. The four general products are nevertheless introduced independently, one by one on the coordinates, in *The Four General Products and Their Relations*, and the group is read on the four afterwards; it is read in the same way on the four pairings, which are the scalar parts. What the group does not produce is an operator: its four elements act on rules, an operator acts on elements, and an operator needs an element of the algebra beside the reading (*Introduction to the Operators of the Biquaternion Algebra*).
+
+### The Operation on a General Algebra
+
+An insertion is an operation on a rule of two arguments, and nothing in its definition uses the multiplication of $\mathbb{B}$: the operation is available on the multiplication of any algebra carrying the two conjugations. The four readings of that multiplication are then four products again, and they are the **slot family** of the algebra; the four general products are its instance $\mathbb{B}$, and the two generators of §*The Readings and Their Group* are the two slots of the family.
+
+**Definition (the slot family).** Let $A$ be a unital associative $\mathbb{C}$-algebra, and let $\natural$ and $\varsigma$ be involutive anti-automorphisms of $A$ that commute, with $\natural$ $\mathbb{C}$-linear, $\varsigma$ conjugate-linear and $\natural(1)=\varsigma(1)=1$. For $K_1\in\{\mathrm{id},\natural\}$ and $K_2\in\{\mathrm{id},\varsigma\}$ put
+
+$$
+x\star_{K_1K_2}y=K_1(x)\,K_2(y).
+$$
+
+The **first slot** is $K_1$ and the **second slot** is $K_2$. In $\mathbb{B}$, with $A=\mathbb{B}$, $\natural$ the natural conjugation and $\varsigma$ the Hermitian conjugation, the four settings are the four general products in the order of the readings, $\star_{\mathrm{id}\,\mathrm{id}}$, $\star_{{}^{\natural}\mathrm{id}}$, $\star_{\mathrm{id}{}^{*}}$ and $\star_{{}^{\natural}{}^{*}}$.
+
+**Theorem (the second slot rules the composition).** With $A$, $\natural$, $\varsigma$ as in the definition, let $K_1\in\{\mathrm{id},\natural\}$, $K_2\in\{\mathrm{id},\varsigma\}$ and $x\star y=x\star_{K_1K_2}y$. The following four statements are equivalent.
+
+- $K_2=\mathrm{id}$.
+- $\star$ is $\mathbb{C}$-bilinear in its second argument.
+- $1$ is a left unit for $\star$: $1\star x=x$ for every $x$.
+- The left multiplications $L_x:x'\mapsto x\star x'$ of $\star$ are closed under composition.
+
+When they hold, $L_x\circ L_y=L_{xy}$ if $K_1=\mathrm{id}$ and $L_x\circ L_y=L_{yx}$ if $K_1={}^{\natural}$, so that the monoid of left multiplications is $A$ in the first case and the opposite monoid of $A$ in the second. When they fail, $L_x\circ L_y$ is $\mathbb{C}$-linear in its argument while every $L_z$ is conjugate-linear, so the composition is not a left multiplication at all.
+
+*Proof.* ($K_2=\mathrm{id}$ implies bilinear and left unit.) $x\star(\lambda y)=K_1(x)\lambda y=\lambda(x\star y)$, and $1\star x=K_1(1)x=x$ since $\natural(1)=1$. ($K_2=\mathrm{id}$ implies closure.) $(L_x\circ L_y)(x')=K_1(x)K_1(y)x'$, which is $(xy)x'=L_{xy}(x')$ when $K_1=\mathrm{id}$ and $\natural(x)\natural(y)x'=\natural(yx)x'=L_{yx}(x')$ when $K_1={}^{\natural}$, the middle step because $\natural$ is an anti-automorphism.
+
+(Bilinear implies $K_2=\mathrm{id}$.) Suppose $K_2=\varsigma$. Then $1\star(\lambda 1)=K_1(1)\varsigma(\lambda)1=\varsigma(\lambda)$, while $\lambda(1\star1)=\lambda$, and $\varsigma(\lambda)=\lambda$ fails at $\lambda=i$; so $\star$ is not $\mathbb{C}$-bilinear in its second argument, while it is $\mathbb{C}$-linear in the first, since $K_1$ is.
+
+(Left unit implies $K_2=\mathrm{id}$.) Suppose $K_2=\varsigma$ and $1\star x=x$ for every $x$. Then $\varsigma(x)=1\star x=x$, so $\varsigma=\mathrm{id}$ against the hypothesis.
+
+(Closure implies $K_2=\mathrm{id}$.) Suppose $K_2=\varsigma$. Then $1\star(1\star x)=\varsigma(\varsigma(x))=x$, so $L_1\circ L_1$ is the identity, while $L_z(\lambda x')=K_1(z)\varsigma(\lambda x')=\varsigma(\lambda)L_z(x')$ for every $z$, and $\varsigma\neq\mathrm{id}$; the identity is therefore not a left multiplication.
+
+**Theorem (the first slot rules the right unit).** With the hypotheses and notation of the previous theorem, $1$ is a right unit for $\star$ if and only if $K_1=\mathrm{id}$.
+
+*Proof.* $x\star 1=K_1(x)K_2(1)=K_1(x)$, since $\varsigma(1)=1$; this is $x$ for every $x$ if and only if $K_1=\mathrm{id}$.
+
+**Corollary (the units, in the two slots).** $1$ is a left unit for the two settings whose second slot is trivial and a right unit for the two whose first slot is trivial, so exactly one of the four has a two-sided unit. These are the four unit entries of the property table of *The Four General Products and Their Relations* and of its §*Identities and Units*, where a left unit is called a left identity, and the reason for them is the two slots.
+
+**Theorem (associativity needs both slots trivial, in $\mathbb{B}$).** In $\mathbb{B}$ the product $\star_{K_1K_2}$ is associative if and only if $K_1=\mathrm{id}$ and $K_2=\mathrm{id}$.
+
+*Proof.* The product $\star_{\mathrm{id}\,\mathrm{id}}$ is the multiplication of the associative algebra $\mathbb{B}$. For the converse, each of the other three settings is excluded by a triple of *The Four General Products and Their Relations*, §*The Failure of Associativity*: $(\tilde Q_1,\tilde Q_2,\tilde Q_3)=(-\vec e_y,-\vec e_y,\vec e_y)$ at the setting $({}^{\natural},\mathrm{id})$, $(-\vec e_z,\vec e_y,\vec e_y)$ at $(\mathrm{id},{}^{*})$, and $(-\vec e_z,\vec e_z,e_t)$ at $({}^{\natural},{}^{*})$, the two sides differing by the sign of a single basis element in each case.
+
+**Remark (the first two theorems are theorems about the family, the third is not).** The two slot theorems hold in any $A$ of the definition, because their proofs use only that $\varsigma$ is conjugate-linear and not linear and that $\natural$ is an anti-automorphism. Associativity is not read on the slots: when both anti-involutions are the identity the four settings coincide, and with them associativity, so no rule stated in the two slots alone can hold for the whole family at once. Associativity is therefore decided in $\mathbb{B}$, by the triples above, and it remains the row of the property table that the slots do not read.
+
+### The Table of the Slots
+
+The two slot theorems, the pairings and the square collect into one table, one row for each property of the four general products, with the slot that carries the property and the rule it follows. The italic entries are the two that are not read on the slots of the general family.
+
+| property of $\star_{K_1K_2}$ | decided by | the rule |
+|---|---|---|
+| $\mathbb{C}$-bilinear in the second argument | the second slot | yes if and only if $K_2=\mathrm{id}$ |
+| $1$ is a left unit | the second slot | yes if and only if $K_2=\mathrm{id}$ |
+| the left multiplications compose | the second slot | yes if and only if $K_2=\mathrm{id}$ |
+| $1$ is a right unit | the first slot | yes if and only if $K_1=\mathrm{id}$ |
+| the coefficient $\varepsilon$ survives in the scalar part | the two slots | yes if and only if the two slots agree |
+| the Hermitian reading is positive definite | exactly one setting | only at $(\mathrm{id},{}^{*})$ |
+| the form is definite on each sector | the first slot | yes if and only if $K_1=\mathrm{id}$ |
+| $1$ is a two-sided unit | the two slots | yes if and only if $K_1=K_2=\mathrm{id}$ |
+| *associative* | the two slots | yes if and only if $K_1=K_2=\mathrm{id}$, in $\mathbb{B}$ |
+| *the square is scalar* | exactly one setting | only at $({}^{\natural},\mathrm{id})$ |
+
+The first four rows are the slot reading of the property table of *The Four General Products and Their Relations*, §*The Property Table*, whose columns are the four general products. The fifth is the coefficient $\varepsilon$ of the corollary on the pairings, and the sixth and the seventh are the two form rows, the Hermitian reading on the whole space and the form on the two sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ of dimension four; they are the rows of *The Four Forms and the Four Algebraic Norms*, which owns the forms and their signatures. The eighth is the two unit rows together, and the last two are the two rows that the slots do not decide, associativity in §*The Operation on a General Algebra* and the scalar square in §*The Square at One Setting*.
+
+The table says that the second slot governs the **composition**: iterating the operation, the unit acting on the left and the left multiplications forming a monoid are one property of one slot. The first slot governs the **form**: the unit acting on the right, the definiteness of the form on a sector and, jointly with the second slot, the survival of the coefficient $\varepsilon$. A product in the right-hand column is a pairing and not a composition, and no choice in the first slot repairs that.
+
+### The Square at One Setting
+
+**Theorem (the square is scalar at exactly one setting).** In $\mathbb{B}$, $\tilde Q\star_{K_1K_2}\tilde Q$ is a scalar, that is a multiple of $e_t$, if and only if $(K_1,K_2)=({}^{\natural},\mathrm{id})$; and then $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ with $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$.
+
+*Proof.* By *Norm and Invertibility in the General Quaternionic Algebra* the ${}^{\natural}$-square is $\langle\tilde Q\rangle_{\natural}e_t$ for every element, the norm form of the quaternion algebra $\mathbb{B}$ taking its values in the centre $\mathbb{C}e_t$. Each of the other three settings is excluded by one element: at the reading (none) the element $e_t+\vec e_x$ has the square $2\vec e_x$, at the reading (${}^{*}$) the element $e_t+i\vec e_x$ has the square $2e_t+2i\vec e_x$, and at the reading (both) the element $e_t+\vec e_x$ has the square $-2\vec e_x$; none of the three is a scalar.
+
+**Remark (this rule is not general).** The rule uses that $\natural$ is the standard involution of a quaternion algebra and that its norm form therefore lands in the centre, and it fails as soon as the algebra is changed and the involution kept. In the matrix algebra $M_2(\mathbb{C})$ with the transpose in the role of $\natural$, the element
+
+$$
+\begin{pmatrix}0&1\\0&0\end{pmatrix}
+\quad\text{has the square}\quad
+\begin{pmatrix}0&0\\0&1\end{pmatrix},
+$$
+
+which is not a scalar multiple of $\mathrm{I}_2$. **The scalar square is a property of $\mathbb{B}$ and not of the slot family**, and it is the row of the table of §*The Table of the Slots* that assigns the ${}^{\natural}$-product its place among the four.
+
 
 ## What the Products Decide and What the Choice Decides
 
@@ -197,10 +331,16 @@ So the corpus's "sign" is the map with the sign vector $(1,-1,-1,-1)$, and it is
 
 The four general products of the biquaternion algebra are one multiplication with a conjugation inserted independently into each of the two slots. They therefore share the multiplication table of the units, and they determine the four pairings — their scalar parts — and with the pairings the four adjoints and the names of the four operator families. They do not determine an operator. An operator needs an element, and it needs an insertion: which involution, if any, is put on the element and on which side, and whether the sign goes into the parameter or into the argument. The element $\vec e_x$ read through the four insertions gives two operators, $\operatorname{diag}(1,1,-1,-1)$ and $\operatorname{diag}(-1,-1,1,1)$, and on the vector subspace they are $-\rho_{\vec e_x}$ and $\rho_{\vec e_x}$: the plain product gives $-\rho_{\vec e_x}$, and the reflection is reached only through the sign. On the four-dimensional algebra both have determinant $+1$, so rotation and reflection are read on the vector subspace. Finally, which map plays the role of the sign is itself chosen: the biquaternion corpus fixes it as the natural conjugation $\natural$, whose sign vector is $(1,-1,-1,-1)$, and that is a convention of the model, whereas the identity "the reflection needs the sign" is a theorem. The answer to the question is therefore: no, the product does not decide between a rotation and a reflection; the algebra and its product come first, and the operator is obtained from them by choosing the element and the insertion.
 
+The four insertions are the four elements of a group. One reads the first argument through the natural conjugation, one reads the second through the Hermitian conjugation; each is its own inverse, the two commute, and the four are the two, their composite and the identity. Read on a general algebra with two commuting anti-involutions, the group gives the slot family: the second slot carries the $\mathbb{C}$-bilinearity in the second argument, the left unit and the monoid of left multiplications, the first slot carries the right unit, and associativity and the scalar square are not decided by the slots alone. The table of the slots records the four settings, their units, their squares and the one setting whose square is central.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
+| $\mathrm{id}$, $\natural$, ${}^{*}$, $\natural{}^{*}$ | the four readings, the elements of $\mathbb{Z}_2\times\mathbb{Z}_2$; (none), (${}^{\natural}$), (${}^{*}$), (both) |
+| $\star_{K_1K_2}$ | the general slot product, $x\star_{K_1K_2}y=K_1(x)K_2(y)$ with $K_1\in\{\mathrm{id},\natural\}$ and $K_2\in\{\mathrm{id},\varsigma\}$ |
+| $\varsigma$ | the involution that defines the class, $\natural$ or ${}^{*}$; $\varsigma=\mathrm{id}$ for the bilinear class |
+| $\star^{\mathrm{op}}$ | the opposite product, $x\star^{\mathrm{op}}y=y\star x$ |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products: one table, the two insertions |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\ast}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural\ast}$ | their scalar parts, the four pairings, Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ |
 | ${}^{\approx}$, ${}^{*}$, ${}^{N}$, ${}^{\natural\ast}$ | the four adjoints, decided by the four general products |
@@ -212,9 +352,8 @@ The four general products of the biquaternion algebra are one multiplication wit
 
 ## Further Reading
 
-- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the four rules and the statement that they differ in one point alone
-- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the table of the four rules side by side
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four forms, their Gram matrices, their signatures and their isometry groups
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the four rules, the statement that they differ in one insertion alone, and the table of the four side by side
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four forms, their Gram matrices, their signatures and their isometry groups
 - [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the four adjoints on explicit operators and the naming rule of the operator families
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their group
 - [The Signed Sandwich on a Clifford Algebra](the-signed-sandwich-on-a-clifford-algebra.html), for the ordinary sandwich, its minus sign and the repair by the grade involution

@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*), and the fourth of them,
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products and Their Relations*), and the fourth of them,
 
 $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products and Their Relations* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the pair of **multiplication operators** attached to the multiplication,
 
@@ -25,7 +25,7 @@ $$
 
 where $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde Q_5} = S_{\tilde Q_5^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of that article.
 
-The article owns the two families, their parities, their composition laws and the failure of the monoid property. It cites the general operator theory to *The Left and Right Multiplication Operators of a Sesqualgebra*; it cites the sandwich and its composition table to *The Sesquilinear Sandwich Operator*; it cites the composition of the left multiplications of the four general products to *Relations Between the Four General Products* §*The Left Multiplications*; and it does not treat the ternary operator, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the matrix realization, which is *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*.
+The article owns the two families, their parities, their composition laws and the failure of the monoid property. It cites the general operator theory to *The Left and Right Multiplication Operators of a Sesqualgebra*; it cites the sandwich and its composition table to *The Sesquilinear Sandwich Operator*; it cites the composition of the left multiplications of the four general products to *The Four General Products and Their Relations* §*The Left Multiplications*; and it does not treat the ternary operator, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the matrix realization, which is *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*.
 
 ## The Two Families
 
@@ -79,7 +79,7 @@ $$
 
 **Proof.** $\lambda_{\tilde Q_5^{\natural}}(\tilde Q_1^{*}) = \tilde Q_5^{\natural}\tilde Q_1^{*} = L_{\tilde Q_5}(\tilde Q_1)$, and $\rho_{\tilde Q_5^{*}}(\tilde Q_1^{\natural}) = \tilde Q_1^{\natural}\tilde Q_5^{*} = R_{\tilde Q_5}(\tilde Q_1)$.
 
-**Remark.** The reading is the one of *Relations Between the Four General Products* §*The Left Multiplications*: the left multiplication of the fourth product is a plain multiplication re-indexed by the natural sign and composed with the star, while the right multiplication is the conjugate of a plain right multiplication re-indexed. The re-indexing by ${}^{\natural}$ is the operator form of the isotope by which the fourth product differs from the derived operation (*The Two One-Sided Actions and the Absence of a Unit*), and the asymmetric placement of the two conjugations is the operator form of the two different slots of the multiplication.
+**Remark.** The reading is the one of *The Four General Products and Their Relations* §*The Left Multiplications*: the left multiplication of the fourth product is a plain multiplication re-indexed by the natural sign and composed with the star, while the right multiplication is the conjugate of a plain right multiplication re-indexed. The re-indexing by ${}^{\natural}$ is the operator form of the isotope by which the fourth product differs from the derived operation (*The Two One-Sided Actions and the Absence of a Unit*), and the asymmetric placement of the two conjugations is the operator form of the two different slots of the multiplication.
 
 ## The Composition of Two Left Multiplications
 
@@ -217,9 +217,9 @@ for generic $\tilde Q_5, \tilde Q_2$.
 | $\tilde Q_5\tilde Q_1^{*}$ | $\tilde Q_5\tilde Q_1^{*}$ | conjugate-linear | $\tilde Q_5\tilde Q_1\tilde Q_2^{*}$ | no |
 | $\tilde Q_5^{\natural}\tilde Q_1^{*}$ | $\tilde Q_5^{\natural}\tilde Q_1^{*}$ | conjugate-linear | $\tilde Q_5^{\natural}\tilde Q_1\overline{\tilde Q_2}$ | no |
 
-**Proof.** The first row is the associativity of the plain product. The second is the composition $L^{\natural}_{\tilde Q_5}L^{\natural}_{\tilde Q_2}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_2^{\natural}\tilde Q_1 = (\tilde Q_2\tilde Q_5)^{\natural}\tilde Q_1 = L^{\natural}_{\tilde Q_2\tilde Q_5}(\tilde Q_1)$, which is the opposite monoid (*Introduction to the General Quaternionic Algebra*) and is recorded in *Relations Between the Four General Products* §*The Left Multiplications*. The third is the sibling sesquilinear composition $L^{*}_{\tilde Q_5}L^{*}_{\tilde Q_2}(\tilde Q_1) = \tilde Q_5(\tilde Q_2\tilde Q_1^{*})^{*} = \tilde Q_5\tilde Q_1\tilde Q_2^{*}$, which is $\mathbb{C}$-linear whereas $L^{*}$ is conjugate-linear, so the class is not closed. The fourth is the composition law of this article.
+**Proof.** The first row is the associativity of the plain product. The second is the composition $L^{\natural}_{\tilde Q_5}L^{\natural}_{\tilde Q_2}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_2^{\natural}\tilde Q_1 = (\tilde Q_2\tilde Q_5)^{\natural}\tilde Q_1 = L^{\natural}_{\tilde Q_2\tilde Q_5}(\tilde Q_1)$, which is the opposite monoid (*Introduction to the General Quaternionic Algebra*) and is recorded in *The Four General Products and Their Relations* §*The Left Multiplications*. The third is the sibling sesquilinear composition $L^{*}_{\tilde Q_5}L^{*}_{\tilde Q_2}(\tilde Q_1) = \tilde Q_5(\tilde Q_2\tilde Q_1^{*})^{*} = \tilde Q_5\tilde Q_1\tilde Q_2^{*}$, which is $\mathbb{C}$-linear whereas $L^{*}$ is conjugate-linear, so the class is not closed. The fourth is the composition law of this article.
 
-**Remark.** The comparison is the row of *Comparison Between the Four General Products* that reads the monoid property, and it separates the four general products into two classes: the two bilinear products, whose left multiplications form monoids, and the two sesquilinear products, whose left multiplications do not. The dividing line is the parity of the left multiplication: it is linear for the bilinear products, so that the composition of two of them has the same parity as the factors and stays in the class, and conjugate-linear for the sesquilinear products, so that the composition has the opposite parity and leaves the class.
+**Remark.** The comparison is the row of *The Four General Products and Their Relations* that reads the monoid property, and it separates the four general products into two classes: the two bilinear products, whose left multiplications form monoids, and the two sesquilinear products, whose left multiplications do not. The dividing line is the parity of the left multiplication: it is linear for the bilinear products, so that the composition of two of them has the same parity as the factors and stays in the class, and conjugate-linear for the sesquilinear products, so that the composition has the opposite parity and leaves the class.
 
 ## Worked Cases
 

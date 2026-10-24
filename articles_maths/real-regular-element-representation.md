@@ -5,7 +5,7 @@
 
 The real algebra $\mathbb{R}$ is one-dimensional over $\mathbb{R}$ and one-dimensional over itself. This article presents its **regular representation**, the algebra acting on itself on the left, and the $1 \times 1$ real matrix of that action in the basis $1$. The matrix is the Cayley matrix of real multiplication, and its image is the whole algebra of $1 \times 1$ real matrices, identified with the real scalars. The article is the base rung of the representation ladder of the tensor family: it sits below the $2 \times 2$ real representation of the complex algebra $\mathbb{C}$.
 
-The conventions are those of *Real Algebra*: basis $1$, a general element $q = q\cdot 1$, the sole involution the identity, and norm $N(q) = q\,q = q^2$. The word *representation* is used in both senses, as in the complex companion: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the real scalars, the determinant and the trace, and the relation to the complex regular representation; the real-linear module classification and the representation ring are the subject of *Real Element Representations* and are cited once.
+The conventions are those of *Real Algebra*: basis $1$, a general element $q = q\cdot 1$, the sole involution the identity, and norm $\langle q\rangle = q\,q = q^2$. The word *representation* is used in both senses, as in the complex companion: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the real scalars, the determinant and the trace, and the relation to the complex regular representation; the real-linear module classification and the representation ring are the subject of *Real Element Representations* and are cited once.
 
 ## The Left Regular Representation
 
@@ -99,10 +99,10 @@ $$
 
 so the determinant is multiplicative exactly as the norm is. In the one-dimensional case the determinant **is** the element, and the norm is its square:
 
-$$ \boxed{\;N(q) = q^2 = \bigl(\det\mathsf{M}_1(q)\bigr)^2 \;}.
+$$ \boxed{\;\langle q\rangle = q^2 = \bigl(\det\mathsf{M}_1(q)\bigr)^2 \;}.
 $$
 
-The determinant is the **algebra norm** of the one-dimensional algebra, the field norm of $\mathbb{R}$ over itself, and it is the signed quantity $\det\mathsf{M}_1(q) = q$ whose sign is the sign of the element; the norm of *Real Norm and Invertibility* squares it and so forgets the sign. This is the base rung of the ladder of determinants: for the complex algebra the regular matrix is $2\times2$ and its determinant is already the norm itself, $\det\mathsf{M}_1(A) = u^2+v^2 = N(A)$, with no squaring. The real case is the one in which the determinant has degree one and the norm degree two, and the gap is filled by the sign.
+The determinant is the **algebra norm** of the one-dimensional algebra, the field norm of $\mathbb{R}$ over itself, and it is the signed quantity $\det\mathsf{M}_1(q) = q$ whose sign is the sign of the element; the norm of *Real Norm and Invertibility* squares it and so forgets the sign. This is the base rung of the ladder of determinants: for the complex algebra the regular matrix is $2\times2$ and its determinant is already the norm itself, $\det\mathsf{M}_1(A) = u^2+v^2 = \langle A\rangle_{*}$, with no squaring. The real case is the one in which the determinant has degree one and the norm degree two, and the gap is filled by the sign.
 
 **Corollary.** $\mathsf{M}_1(q)$ is invertible exactly when $q \neq 0$, since $\det\mathsf{M}_1(q) = q$; this is the invertibility criterion of *Real Norm and Invertibility*, and for $q > 0$ the matrix is orientation-preserving while for $q < 0$ it reverses orientation.
 
@@ -147,7 +147,7 @@ The two cases form the chain
 | algebra | dimension over $\mathbb{R}$ | regular matrix | determinant |
 |---|---|---|---|
 | $\mathbb{R}$ | $1$ | $1 \times 1$ real, Cayley | $q$, the element itself |
-| $\mathbb{C}$ | $2$ | $2 \times 2$ real, Cayley | $N_{\mathbb{C}}(A) = u^2+v^2$ |
+| $\mathbb{C}$ | $2$ | $2 \times 2$ real, Cayley | $\langle A\rangle_{*} = u^2+v^2$ |
 
 The real case is the bottom of the chain: its regular representation is the smallest Cayley matrix, and its module is simple. The determinant column is the ladder of the squarings: the real determinant is the element, and the complex determinant is the norm.
 
@@ -176,10 +176,10 @@ so $\mathsf{M}_1$ is a faithful algebra homomorphism, indeed an isomorphism onto
 **The determinant and the norm.** The determinant of the Cayley matrix is the element itself, $\det\mathsf{M}_1(q) = q$, and the norm is its square,
 
 $$
-N(q) = q^2 = \bigl(\det\mathsf{M}_1(q)\bigr)^2 .
+\langle q\rangle = q^2 = \bigl(\det\mathsf{M}_1(q)\bigr)^2 .
 $$
 
-On the worked elements, $\det\mathsf{M}_1(q_1)^2 = \bigl(-\tfrac{3}{4}\bigr)^2 = \tfrac{9}{16} = N(q_1)$ and $\det\mathsf{M}_1(q_2)^2 = \tfrac{49}{4} = N(q_2)$. The determinant is invertible exactly when the element is, which is the concrete form of the invertibility criterion.
+On the worked elements, $\det\mathsf{M}_1(q_1)^2 = \bigl(-\tfrac{3}{4}\bigr)^2 = \tfrac{9}{16} = \langle q_1\rangle$ and $\det\mathsf{M}_1(q_2)^2 = \tfrac{49}{4} = \langle q_2\rangle$. The determinant is invertible exactly when the element is, which is the concrete form of the invertibility criterion.
 
 **The determinant of an exponential.** The classical identity $\det(\exp(M)) = \exp(\operatorname{tr}(M))$ read for the $1\times1$ matrix $M = [a]$ gives
 
@@ -187,7 +187,7 @@ $$
 \det\mathsf{M}_1(\exp(a)) = \det\bigl[\exp(a)\bigr] = \exp(\operatorname{tr}[a]) = \exp(a),
 $$
 
-whose square is the norm of the exponential, $N(\exp(a)) = \exp(2a)$.
+whose square is the norm of the exponential, $\langle\exp(a)\rangle = \exp(2a)$.
 
 ## Summary
 
@@ -199,7 +199,7 @@ $$
 
 It is a faithful, indeed bijective, $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_1(q_1)\mathsf{M}_1(q_2) = \mathsf{M}_1(q_1 q_2)$; its transpose is itself and realizes the identity involution; its determinant is $q$ and its trace is $q$. The image is the field of real scalars, the $1\times1$ real matrices, and the polar decomposition of $q$ is the decomposition of its scalar matrix into a positive scalar and a sign.
 
-Because the algebra is commutative, the right regular representation coincides with the left and the left-right apparatus is empty. Because the algebra is a field, the regular module is simple: there is no splitting into minimal left ideals, no determinant $N^2$, and no nontrivial centralizer, and their absence is the commutativity and the divisibility of $\mathbb{R}$. The determinant of the Cayley matrix is the element, whose square is the norm; this is the first rung of the determinant ladder whose next member is the norm of $\mathbb{C}$. The real regular representation is the scalar base factor of the tensor product of the regular representations of the family.
+Because the algebra is commutative, the right regular representation coincides with the left and the left-right apparatus is empty. Because the algebra is a field, the regular module is simple: there is no splitting into minimal left ideals, no determinant $\langle q\rangle^2$, and no nontrivial centralizer, and their absence is the commutativity and the divisibility of $\mathbb{R}$. The determinant of the Cayley matrix is the element, whose square is the norm; this is the first rung of the determinant ladder whose next member is the norm of $\mathbb{C}$. The real regular representation is the scalar base factor of the tensor product of the regular representations of the family.
 
 ## Summary of Notation
 
@@ -212,7 +212,7 @@ Because the algebra is commutative, the right regular representation coincides w
 | $\operatorname{id}$ | the identity involution; $\mathsf{M}_1(q)^{\mathsf{T}} = \mathsf{M}_1(\operatorname{id}q)$ |
 | $\det\mathsf{M}_1(q) = q$ | the determinant, the algebra norm whose square is the norm |
 | $\operatorname{tr}\mathsf{M}_1(q) = q$ | the trace |
-| $N(q) = q^2 = (\det\mathsf{M}_1(q))^2$ | the norm |
+| $\langle q\rangle = q^2 = (\det\mathsf{M}_1(q))^2$ | the norm |
 | $\mathsf{M}_1(\mathbb{R}) = \{[q]\}$ | the image, the real scalars |
 | $\mathsf{M}_2^{\mathbb{C}}$ | the regular representation of the complex algebra |
 

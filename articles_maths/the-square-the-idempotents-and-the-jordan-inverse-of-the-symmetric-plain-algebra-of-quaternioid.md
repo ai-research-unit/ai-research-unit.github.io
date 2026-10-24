@@ -102,7 +102,7 @@ $$
 
 $$
 \boxed{\;U_{\tilde q_1}(\tilde q_2)=\tilde q_1\,\tilde q_2\,\tilde q_1,\qquad
-N\bigl(U_{\tilde q_1}\tilde q_2\bigr)=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}\;}.
+\langle U_{\tilde q_1}\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}\;}.
 $$
 
 *Proof.* Expanding $U_{\tilde q_1}(\tilde q_2)$ in the symmetrised plain product, $U_{\tilde q_1}(\tilde q_2)=\tfrac12\bigl(\tilde q_1(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)+(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)\tilde q_1\bigr)-\tfrac12(\tilde q_1^2\tilde q_2+\tilde q_2\tilde q_1^2)=\tilde q_1\tilde q_2\tilde q_1$ by the associativity of the plain product. The norm identity is the multiplicativity of $\langle\cdot\rangle_{\natural}$ applied twice, $\langle\tilde q_1\tilde q_2\tilde q_1\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$.

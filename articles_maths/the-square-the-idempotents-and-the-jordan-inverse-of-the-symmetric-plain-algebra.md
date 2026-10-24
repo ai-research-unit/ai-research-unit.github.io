@@ -18,7 +18,7 @@ $$
 \tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_t^2-(\vec Q,\vec Q)\bigr]e_t+2Q_t\vec Q.
 $$
 
-*Proof.* $\tilde Q_2\bullet\tilde Q_2=\tfrac12(\tilde Q_2^2+\tilde Q_2^2)=\tilde Q_2^2$, and the plain square is the displayed form, read from the scalar–vector rule of *Introduction to the Biquaternion Algebra* at $\tilde Q_1=\tilde Q_2$.
+*Proof.* $\tilde Q_2\bullet\tilde Q_2=\tfrac12(\tilde Q_2^2+\tilde Q_2^2)=\tilde Q_2^2$, and the plain square is the displayed form, read from the scalar–vector rule of *The Biquaternion Algebra and Its Vector Spaces* at $\tilde Q_1=\tilde Q_2$.
 
 **Remark (the block's square and the algebra's square are one).** Because the antisymmetric part of the plain product is alternating, its diagonal vanishes, and the plain square is carried by the symmetric part alone. **The square of the block and the square of the algebra are therefore the same map** $\tilde Q\mapsto\tilde Q^2$, and the antisymmetric part carries none of it. The spectrum of the block is the spectrum of the algebra, and the minimal polynomial is read from this square.
 

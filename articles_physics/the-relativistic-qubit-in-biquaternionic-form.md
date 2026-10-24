@@ -68,7 +68,7 @@ $$
 $$
 this is the **four-vector representation**. It preserves $\mathbb{M}_-$ by the sector identity of the companion structural article, and it preserves the biquaternion norm,
 $$
-N\bigl(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\bigr) = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural},
+\langle\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural},
 $$
 so it preserves the interval and the light cone.
 
@@ -139,9 +139,9 @@ Two elementary facts identify $\tilde{\mathcal L}$ as a future null four-vector.
 
 **It is null.** The determinant of a rank-one matrix vanishes, and under the matrix model the determinant is the biquaternion norm, so
 $$
-N\bigl(\tilde\Pi(u)\bigr) = \det\mathsf{M}_2\bigl(\tilde\Pi(u)\bigr) = \det\bigl(|u\rangle_{*}\langle u|\bigr) = 0 ,
+\langle\tilde\Pi(u)\rangle_{\natural} = \det\mathsf{M}_2\bigl(\tilde\Pi(u)\bigr) = \det\bigl(|u\rangle_{*}\langle u|\bigr) = 0 ,
 \qquad
-N\bigl(\tilde{\mathcal L}(u)\bigr) = i^2 N\bigl(\tilde\Pi(u)\bigr) = 0 .
+\langle\tilde{\mathcal L}(u)\rangle_{\natural} = i^2 \langle\tilde\Pi(u)\rangle_{\natural} = 0 .
 $$
 
 **It is future-directed and of definite normalization.** Writing $\tilde\Pi(u) = \tfrac12(e_t + i\vec r)$ with $|\vec r| = 1$, the element $\tilde{\mathcal L}(u) = i\tilde\Pi(u)$ has the form

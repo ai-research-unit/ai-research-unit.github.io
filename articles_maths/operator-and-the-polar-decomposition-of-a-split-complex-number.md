@@ -25,8 +25,8 @@ The polar decomposition writes
 
 $$
 Q=r\,\epsilon\exp(\phi j),
-\qquad r=\sqrt{\lvert N\rvert}>0,\quad \epsilon\in\{\pm1,\pm j\},\quad \phi\in\mathbb{R},
-\qquad N=Q\bar Q=q^2-q'^2.
+\qquad r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0,\quad \epsilon\in\{\pm1,\pm j\},\quad \phi\in\mathbb{R},
+\qquad \langle Q\rangle_{*}=Q\bar Q=q^2-q'^2.
 $$
 
 The operator inherits the word,
@@ -47,7 +47,7 @@ $$
 
 where $\epsilon=\epsilon_+\Pi_++\epsilon_-\Pi_-$ with $\epsilon_\pm=\pm1$. The four pairs $(\epsilon_+,\epsilon_-)\in\{\pm1\}^2$ are the four components of the group of units.
 
-Four results are proved. The map $Q\mapsto M_Q$ is a faithful representation of $\mathbb{D}$ on itself: the operator is the algebra read on its regular module. The spectrum is $\{\lambda_+,\lambda_-\}$, and the eigenbasis is the fixed idempotent basis, independent of $Q$. The one-sided operator carries the full hyperbolic angle $\phi$: its eigenvalues are $e^{\pm\phi}$, not $e^{\pm\phi/2}$. The two-sided operator is the scalar $N(Q)$: it is the inner automorphism multiplied by the norm, the inner automorphism is trivial because the algebra is commutative, and the operator sees only the modulus squared and the sign of the norm.
+Four results are proved. The map $Q\mapsto M_Q$ is a faithful representation of $\mathbb{D}$ on itself: the operator is the algebra read on its regular module. The spectrum is $\{\lambda_+,\lambda_-\}$, and the eigenbasis is the fixed idempotent basis, independent of $Q$. The one-sided operator carries the full hyperbolic angle $\phi$: its eigenvalues are $e^{\pm\phi}$, not $e^{\pm\phi/2}$. The two-sided operator is the scalar $\langle Q\rangle_{*}$: it is the inner automorphism multiplied by the norm, the inner automorphism is trivial because the algebra is commutative, and the operator sees only the modulus squared and the sign of the norm.
 
 The last point is the structural difference from the biquaternion. In $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the algebra is non-commutative, $L_{\tilde Q}$ and $R_{\tilde Q}$ differ, the one-sided operator is the spinor action with the half-angle, and the sandwich is the vector action with the full angle. In $\mathbb{D}$ the algebra is commutative, the two sides coincide, the one-sided operator is the regular representation, and the sandwich is a scalar. The half-angle is not a feature of the polar decomposition alone; it is a feature of the non-commutative spinor structure.
 
@@ -56,7 +56,7 @@ The last point is the structural difference from the biquaternion. In $\mathbb{B
 | Algebra | $\mathbb{D}=\mathbb{R}[j]$, $j^2=1$ |
 | Element | $Q=q+jq'$ |
 | One-sided operator | $M_Q(X)=QX$, with $L_Q=R_Q=M_Q$ |
-| Two-sided operator | $\Theta_Q(X)=QX\bar Q=N(Q)X$ |
+| Two-sided operator | $\Theta_Q(X)=QX\bar Q=\langle Q\rangle_{*}X$ |
 | Spectrum of $M_Q$ | $\{\lambda_+,\lambda_-\}=\{q+q',q-q'\}$ |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, fixed and independent of $Q$ |
 | Polar word | $Q=r\epsilon\exp(\phi j)$ |
@@ -70,7 +70,7 @@ The last point is the structural difference from the biquaternion. In $\mathbb{B
 The algebra is $\mathbb{D}=\mathbb{R}[j]$, with $j^2=+1$, general element $Q=q+jq'$ and conjugate $\bar Q=q-jq'$. The norm is
 
 $$
-N=Q\bar Q=q^2-q'^2.
+\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2.
 $$
 
 The idempotents are
@@ -90,7 +90,7 @@ $$
 The eigenvalues are written $\lambda_\pm$ when their values are exhibited and $Q_\pm$ when they are read as idempotent coordinates, as in *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*. The modulus and the component sign are those of *Modulus–Unit Polar Decomposition of Split-Complex Numbers*:
 
 $$
-r=\sqrt{\lvert N\rvert},\qquad u=\frac{Q}{r}=\epsilon\exp(\phi j),\qquad \epsilon\in\{\pm1,\pm j\},\quad \phi\in\mathbb{R}.
+r=\sqrt{\lvert \langle Q\rangle_{*}\rvert},\qquad u=\frac{Q}{r}=\epsilon\exp(\phi j),\qquad \epsilon\in\{\pm1,\pm j\},\quad \phi\in\mathbb{R}.
 $$
 
 The operator is written $M_Q$ because there is only one side; the letters $L$ and $R$ are reserved for the biquaternion comparison. The two-sided operator is written $\Theta_Q$. The split form is
@@ -121,10 +121,10 @@ which is isomorphic to $\mathbb{D}$.
 
 *Proof.* The laws are the associativity and the distributivity of the algebra. Faithfulness is evaluation at $1$. The matrix is computed on the basis: $Q\cdot1=q+jq'$ and $Q\cdot j=q'+jq$, hence the two columns $(q,q')$ and $(q',q)$.
 
-**Corollary (invertibility).** $M_Q$ is invertible exactly when $Q$ is a unit, that is, exactly when $N\neq0$. The inverse is $M_{Q^{-1}}$, with
+**Corollary (invertibility).** $M_Q$ is invertible exactly when $Q$ is a unit, that is, exactly when $\langle Q\rangle_{*}\neq0$. The inverse is $M_{Q^{-1}}$, with
 
 $$
-Q^{-1}=\frac{\bar Q}{N}.
+Q^{-1}=\frac{\bar Q}{\langle Q\rangle_{*}}.
 $$
 
 **Proposition (commutation).** For all $Q,P$,
@@ -138,7 +138,7 @@ The operator algebra is commutative; it is the regular representation of $\mathb
 **Proposition (the split form).** With $g=\operatorname{diag}(1,-1)$,
 
 $$
-M_Q^{T}gM_Q=N(Q)\,g.
+M_Q^{T}gM_Q=\langle Q\rangle_{*}\,g.
 $$
 
 *Proof.* Direct computation:
@@ -152,7 +152,7 @@ $$
 =(q^2-q'^2)g.
 $$
 
-Thus $M_Q$ is a conformal operator for the split form, with conformal factor $N(Q)$. For $N=1$ it is, up to the component sign, a boost of rapidity $\phi$; for $N=-1$ it is, up to the component sign, a boost times the reflection $j$.
+Thus $M_Q$ is a conformal operator for the split form, with conformal factor $\langle Q\rangle_{*}$. For $\langle Q\rangle_{*}=1$ it is, up to the component sign, a boost of rapidity $\phi$; for $\langle Q\rangle_{*}=-1$ it is, up to the component sign, a boost times the reflection $j$.
 
 ### The Two Matrices
 
@@ -183,10 +183,10 @@ $$
 The characteristic polynomial is
 
 $$
-p_Q(X)=X^2-2qX+N=(X-\lambda_+)(X-\lambda_-),
+p_Q(X)=X^2-2qX+\langle Q\rangle_{*}=(X-\lambda_+)(X-\lambda_-),
 $$
 
-with trace $2q$ and determinant $N$. The discriminant is $4q'^2$, so the eigenvalues are distinct exactly when $q'\neq0$.
+with trace $2q$ and determinant $\langle Q\rangle_{*}$. The discriminant is $4q'^2$, so the eigenvalues are distinct exactly when $q'\neq0$.
 
 ### The Spectrum and the Eigenbasis
 
@@ -202,15 +202,15 @@ $$
 
 The eigenbasis is **fixed**: it is the standard idempotent pair, and it does not depend on $Q$. This is the commutative simplification. In the biquaternion the eigenbasis is the $Q$-adapted Peirce basis, built from the nilpotents and depending on $Q$; here the two idempotents are the only nontrivial idempotents, and the Peirce corners are zero.
 
-The eigenvalues are the two idempotent coordinates. Their sum is $2q$ and their product is $N$. The spectrum is real and, when $q'\neq0$, simple. When $q'=0$ the element is the scalar $q$, the two eigenvalues coincide, and $M_Q=q\operatorname{id}$.
+The eigenvalues are the two idempotent coordinates. Their sum is $2q$ and their product is $\langle Q\rangle_{*}$. The spectrum is real and, when $q'\neq0$, simple. When $q'=0$ the element is the scalar $q$, the two eigenvalues coincide, and $M_Q=q\operatorname{id}$.
 
 ### Kernel and Image
 
 **Proposition.** Let $Q\in\mathbb{D}$.
 
-**(a)** If $N\neq0$, then $M_Q$ is bijective.
+**(a)** If $\langle Q\rangle_{*}\neq0$, then $M_Q$ is bijective.
 
-**(b)** If $N=0$ and $Q\neq0$, then $Q$ is a nonzero multiple of $\Pi_+$ or of $\Pi_-$, the operator has rank one, its kernel is the other minimal ideal, and its image is the line spanned by $Q$.
+**(b)** If $\langle Q\rangle_{*}=0$ and $Q\neq0$, then $Q$ is a nonzero multiple of $\Pi_+$ or of $\Pi_-$, the operator has rank one, its kernel is the other minimal ideal, and its image is the line spanned by $Q$.
 
 **(c)** If $Q=0$, then $M_Q=0$.
 
@@ -304,7 +304,7 @@ M_Q=r\epsilon\begin{pmatrix}\sinh\phi&\cosh\phi\\\cosh\phi&\sinh\phi\end{pmatrix
 \quad(\epsilon=\pm j).
 $$
 
-The first is, up to the component sign, a boost of rapidity $\phi$; the second is, up to the component sign, a boost times the reflection $j$. The determinant is $N=\pm r^2$, with the sign $+$ on the timelike components and $-$ on the spacelike components. The split-form identity $M_Q^{T}gM_Q=Ng$ holds in both cases.
+The first is, up to the component sign, a boost of rapidity $\phi$; the second is, up to the component sign, a boost times the reflection $j$. The determinant is $\langle Q\rangle_{*}=\pm r^2$, with the sign $+$ on the timelike components and $-$ on the spacelike components. The split-form identity $M_Q^{T}gM_Q=\langle Q\rangle_{*}g$ holds in both cases.
 
 ## The Two-Sided Operator
 
@@ -313,15 +313,15 @@ The first is, up to the component sign, a boost of rapidity $\phi$; the second i
 **Theorem.** For every $Q$,
 
 $$
-\Theta_Q(X)=QX\bar Q=N(Q)\,X.
+\Theta_Q(X)=QX\bar Q=\langle Q\rangle_{*}\,X.
 $$
 
-*Proof.* The algebra is commutative and $Q\bar Q=N(Q)$ is central. Hence $QX\bar Q=Q\bar Q\,X=N(Q)X$.
+*Proof.* The algebra is commutative and $Q\bar Q=\langle Q\rangle_{*}$ is central. Hence $QX\bar Q=Q\bar Q\,X=\langle Q\rangle_{*}X$.
 
 In the eigenbasis,
 
 $$
-\Theta_Q=\operatorname{diag}(N,N)=\lambda_+\lambda_-\,\operatorname{id}.
+\Theta_Q=\operatorname{diag}(\langle Q\rangle_{*},\langle Q\rangle_{*})=\lambda_+\lambda_-\,\operatorname{id}.
 $$
 
 The two-sided operator is a scalar operator. It is multiplicative,
@@ -330,12 +330,12 @@ $$
 \Theta_Q\circ\Theta_P=\Theta_{QP},
 $$
 
-but it is not faithful: $\Theta_Q=\Theta_P$ exactly when $N(Q)=N(P)$.
+but it is not faithful: $\Theta_Q=\Theta_P$ exactly when $\langle Q\rangle_{*}=\langle P\rangle_{*}$.
 
-On the units the operator is the inner automorphism multiplied by the norm. For a unit, $\bar Q=NQ^{-1}$, so
+On the units the operator is the inner automorphism multiplied by the norm. For a unit, $\bar Q=\langle Q\rangle_{*}Q^{-1}$, so
 
 $$
-\Theta_Q=N\,\operatorname{Ad}_Q=N\,\operatorname{id}
+\Theta_Q=\langle Q\rangle_{*}\,\operatorname{Ad}_Q=\langle Q\rangle_{*}\,\operatorname{id}
 $$
 
 because the algebra is commutative. On the norm-one slice $\bar Q=Q^{-1}$ and $\Theta_Q=\operatorname{id}$.
@@ -347,16 +347,16 @@ The inner automorphism $\operatorname{Ad}_Q$ of a commutative algebra is the ide
 Write $Q=r\epsilon\exp(\phi j)$. Then
 
 $$
-\Theta_Q=N(Q)\operatorname{id}=\operatorname{sign}(N)\,r^2\operatorname{id}.
+\Theta_Q=\langle Q\rangle_{*}\operatorname{id}=\operatorname{sign}(\langle Q\rangle_{*})\,r^2\operatorname{id}.
 $$
 
 The scale is squared, $r\mapsto r^2$. The boost cancels, $\phi\mapsto0$, because $e^{\phi j}$ and its conjugate $e^{-\phi j}$ multiply to $1$. The sign of the norm survives: the timelike components give $+r^2$, the spacelike components give $-r^2$. The finer sign $\epsilon=\pm1$ within a pair of components is lost.
 
-The sandwich is blind to the continuous unit factor. Every element on the same hyperbola $N=\text{constant}$ has the same two-sided operator. The fibre of $\Theta$ over $N$ is the hyperbola, not a point.
+The sandwich is blind to the continuous unit factor. Every element on the same hyperbola $\langle Q\rangle_{*}=\text{constant}$ has the same two-sided operator. The fibre of $\Theta$ over $\langle Q\rangle_{*}$ is the hyperbola, not a point.
 
 ### The Image and the Kernel
 
-On the group of units $\mathbb{D}^{\times}=\{N\neq0\}$ the map $Q\mapsto\Theta_Q$ has image
+On the group of units $\mathbb{D}^{\times}=\{\langle Q\rangle_{*}\neq0\}$ the map $Q\mapsto\Theta_Q$ has image
 
 $$
 \mathbb{R}^{\times}I=\{\lambda\operatorname{id}:\lambda\neq0\},
@@ -365,10 +365,10 @@ $$
 and kernel
 
 $$
-\{Q:N(Q)=1\},
+\{Q:\langle Q\rangle_{*}=1\},
 $$
 
-the timelike unit hyperbola, with two connected components. On the unit set $\{\lvert N\rvert=1\}$ the image is $\{\pm I\}$ and the kernel is again $\{N=1\}$.
+the timelike unit hyperbola, with two connected components. On the unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$ the image is $\{\pm I\}$ and the kernel is again $\{\langle Q\rangle_{*}=1\}$.
 
 The image is not a Lorentz group. It is the group of nonzero scalar operators, of real dimension one. The kernel is one-dimensional, and the quotient has dimension one. The two-sided operator has lost the boost, which is the continuous angular content of the group of units.
 
@@ -398,17 +398,17 @@ This is the reason why the two-sided operator cannot carry the boost. In the biq
 
 ## The Null Cone and the Degenerate Cases
 
-The null cone is $N=0$, that is, the pair of lines $q=\pm q'$, equivalently $S_+\cup S_-$ away from the origin. It is the zero-divisor set.
+The null cone is $\langle Q\rangle_{*}=0$, that is, the pair of lines $q=\pm q'$, equivalently $S_+\cup S_-$ away from the origin. It is the zero-divisor set.
 
 **Proposition.** Let $Q\neq0$ be null.
 
 **(a)** $M_Q$ has rank one. If $Q=\lambda_+\Pi_+$ with $\lambda_+\neq0$, then the image is $S_+$ and the kernel is $S_-$; if $Q=\lambda_-\Pi_-$ with $\lambda_-\neq0$, the roles are exchanged.
 
-**(b)** There is no polar decomposition of $Q$: the modulus $r=\sqrt{\lvert N\rvert}$ vanishes.
+**(b)** There is no polar decomposition of $Q$: the modulus $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ vanishes.
 
 **(c)** $\Theta_Q=0$.
 
-*Proof.* (a) is the kernel and image proposition. (b) is the definition of the modulus. (c) is $N=0$.
+*Proof.* (a) is the kernel and image proposition. (b) is the definition of the modulus. (c) is $\langle Q\rangle_{*}=0$.
 
 The scalar case $q'=0$ is the other degeneration. Then $Q=q$ is central, $M_Q=q\operatorname{id}$, the two eigenvalues coincide, and the boost is zero. The operator is a scalar multiple of the identity, and its two-sided operator is $q^2\operatorname{id}$.
 
@@ -423,10 +423,10 @@ There are no nilpotents. The algebra is $\mathbb{D}\cong\mathbb{R}\times\mathbb{
 | Spectrum of the one-sided operator | $\lambda_\pm=Q_t\pm iB$, each twice | $\lambda_\pm=q\pm q'$ |
 | Eigenbasis | $Q$-adapted Peirce basis, depends on $Q$ | fixed $(\Pi_+,\Pi_-)$ |
 | One-sided exponent | $\theta/2$, $\psi/2$ | $\phi$ |
-| Two-sided operator | $\tilde Q\tilde X\tilde Q^{*}$, non-scalar | $N(Q)X$, scalar |
+| Two-sided operator | $\tilde Q\tilde X\tilde Q^{*}$, non-scalar | $\langle Q\rangle_{*}X$, scalar |
 | Two-sided exponent | $\theta$, $\psi$ | $0$ |
 | Image on the units | $CO^{+}(1,3)$ | $\mathbb{R}^{\times}I$ |
-| Kernel on the units | $U(1)$ | $\{N=1\}$ |
+| Kernel on the units | $U(1)$ | $\{\langle Q\rangle_{*}=1\}$ |
 | Nilpotents | yes, when $B\neq0$ | none |
 | Half-angle | yes | no |
 
@@ -442,7 +442,7 @@ The multiplication operator $M_Q(X)=QX$ is a faithful representation of $\mathbb
 
 The polar word $Q=r\epsilon\exp(\phi j)$ reads $M_Q=\operatorname{diag}(r\epsilon_+e^{\phi},r\epsilon_-e^{-\phi})$. The scale acts as $r$, the boost as $e^{\pm\phi}$, and the sign as a discrete diagonal sign. The hyperbolic angle is full, not half.
 
-The two-sided operator is $QX\bar Q=N(Q)X$. It is the inner automorphism multiplied by the norm; the inner automorphism of a commutative algebra is the identity, so the operator is the scalar $N(Q)$. The scale squares, the boost cancels, and only the sign of the norm survives. On the units the image is $\mathbb{R}^{\times}I$ and the kernel is $\{N=1\}$.
+The two-sided operator is $QX\bar Q=\langle Q\rangle_{*}X$. It is the inner automorphism multiplied by the norm; the inner automorphism of a commutative algebra is the identity, so the operator is the scalar $\langle Q\rangle_{*}$. The scale squares, the boost cancels, and only the sign of the norm survives. On the units the image is $\mathbb{R}^{\times}I$ and the kernel is $\{\langle Q\rangle_{*}=1\}$.
 
 The null cone gives rank one. There are no nilpotents and no Jordan blocks: the algebra is reduced. The half-angle, the spin double cover and the $Q$-adapted Peirce basis of the biquaternion have no analogue.
 
@@ -453,10 +453,10 @@ The null cone gives rank one. There are no nilpotents and no Jordan blocks: the 
 | $\mathbb{D}$ | the split-complex algebra $\mathbb{R}[j]$, $j^2=1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $\bar Q=q-jq'$ | the conjugate |
-| $N=Q\bar Q=q^2-q'^2$ | the norm |
+| $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$ | the norm |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the two idempotents |
 | $\lambda_\pm=q\pm q'$ | the two eigenvalues, the idempotent coordinates |
-| $r=\sqrt{\lvert N\rvert}$ | the modulus |
+| $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus |
 | $\epsilon\in\{\pm1,\pm j\}$ | the component sign |
 | $\phi\in\mathbb{R}$ | the hyperbolic angle |
 | $M_Q(X)=QX$ | the multiplication operator |

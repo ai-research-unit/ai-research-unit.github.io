@@ -6,8 +6,8 @@ This article collects, in one place, the definitions of the classes of elements 
 
 The point of collecting them is that **every definition is relative to a product**, and this is easy to lose when each structure is read on its own. The words *zero divisor*, *idempotent*, *nilpotent*, *unit* each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.
 
-- The elements, the basis and the four conjugations are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*.
-- The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *The 12 Products of the Biquaternion Complex Space*.
+- The elements, the basis and the four conjugations are *The Biquaternion Algebra and Its Vector Spaces*.
+- The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products and Their Relations* and *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 - The twelve structures and their three-letter names are *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 - The general algebra vocabulary — the unit, the inverse, the Peirce decomposition — is *Unital Algebras*, and the corpus-wide readings of the words are *Conventions in Mathematics*.
 
@@ -51,7 +51,7 @@ Then $\theta$ carries every class of §2 to §5 from $\star$ onto the correspond
 
 **Proof.** Apply $\theta$ to the defining equation and use multiplicativity. If $x\star x=x$ then $\theta(x)\star'\theta(x)=\theta(x\star x)=\theta(x)$; if $x\star x=0$ then $\theta(x)\star'\theta(x)=\theta(0)=0$; if $x\star y=0$ with $x,y\neq0$ then $\theta(x)\star'\theta(y)=0$ with $\theta(x),\theta(y)\neq0$; and if $e$ is a unit of $\star$ then $\theta(e)\star'\theta(x)=\theta(e\star x)=\theta(x)$ and $\theta(x)\star'\theta(e)=\theta(x)$, so $\theta(e)$ is a two-sided unit of $\star'$, from which $x\star y=y\star x=e$ gives $\theta(x)\star'\theta(y)=\theta(e)$.
 
-Two products related by such a $\theta$ have the same element theory up to $\theta$, and the definitions of this article cannot separate them. Two products not so related may differ on every class, which is what §9 computes for the four general products. The relations among the four general products under the conjugations, and the question of which pairs are isomorphic in this sense, are *Relations Between the Four General Products*.
+Two products related by such a $\theta$ have the same element theory up to $\theta$, and the definitions of this article cannot separate them. Two products not so related may differ on every class, which is what §9 computes for the four general products. The relations among the four general products under the conjugations, and the question of which pairs are isomorphic in this sense, are *The Four General Products and Their Relations*.
 
 ---
 
@@ -72,7 +72,7 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 | $\tilde Q^{\natural}\tilde Q_2$ | $e_t$ | none | none |
 | $\tilde Q^{\natural}\tilde Q_2^{*}$ | none | none | none |
 
-The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
+The table is verified on the identity equations and it is the unit table of *The Four General Products and Their Relations*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
 
 The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde Q$ invertible exactly when the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Quaternionic Algebra*.
 
@@ -185,11 +185,11 @@ They are the two one-sided multiplications of §3, their kernels are the two ann
 
 ## 8. The Form-Theoretic Classes
 
-The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and the norms *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*.
+The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are *The Four Forms and the Four Algebraic Norms* and the norms *The Four Forms and the Four Algebraic Norms*.
 
-**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (*Introduction to the Biquaternion Algebra*).
+**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (*The Biquaternion Algebra and Its Vector Spaces*).
 
-**Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
+**Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The Four Forms and the Four Algebraic Norms*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
 
 **Definition (adjoint, Hermitian, normal).** Let $\langle\cdot,\cdot\rangle$ be a form with an involution ${}^{*}$. The **adjoint of $a$** is the element $a^{\dagger}$ with $\langle a\star x,y\rangle=\langle x,a^{\dagger}\star y\rangle$; an element is **Hermitian** when $a^{\dagger}=a$, **anti-Hermitian** when $a^{\dagger}=-a$, and **normal** when $a\star a^{\dagger}=a^{\dagger}\star a$. The four adjoints of the two algebras and the two sesqualgebras are worked in *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the trace form is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the invariant form of the antisymmetric product is *The Killing Form of the Antisymmetric Plain Algebra*.
 
@@ -208,7 +208,7 @@ The four general products are four definitions to a class, and the table says wh
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $C\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |
 
-The one row on which the four products agree is the zero-divisor set. It is the reason the zero divisor is the subject of a synthesis article of its own, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and it is the exception that proves the rule of §*The Relativity of the Definitions*: the definitions are four, and their agreement in this one row is a theorem about the biquaternion algebra, not a feature of the definitions. Every other row shows the four products separating, and each is computed in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
+The one row on which the four products agree is the zero-divisor set. It is the reason the zero divisor is the subject of a synthesis article of its own, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and it is the exception that proves the rule of §*The Relativity of the Definitions*: the definitions are four, and their agreement in this one row is a theorem about the biquaternion algebra, not a feature of the definitions. Every other row shows the four products separating, and each is computed in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Four General Products and Their Relations*.
 
 ---
 
@@ -236,8 +236,8 @@ A definition of the element theory names a product. This article states, once an
 
 ## Further Reading
 
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html) and [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the products and the structures the definitions here serve, and for the tables of the laws, the units and the images.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) and [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the products and the structures the definitions here serve, and for the tables of the laws, the units and the images.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the product-relative definition read on the four products, the coincidence of the four zero-divisor sets, and the product-dependent readings of the annihilators, the square, the idempotents and the units.
 - [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), *Idempotents of the General Plain Algebra* and *Nilpotents of the General Plain Algebra*, for the three element classes of the plain product.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two readings of §5 and §9 that the four products decide.
-- [Unital Algebras](unital-algebras.html) and [Conventions in Mathematics](conventions-in-mathematics.html), for the general algebra vocabulary and the corpus-wide readings of the words, and [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html) for the elements and the conjugations.
+- [Unital Algebras](unital-algebras.html) and [Conventions in Mathematics](conventions-in-mathematics.html), for the general algebra vocabulary and the corpus-wide readings of the words, and [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html) for the elements and the conjugations.

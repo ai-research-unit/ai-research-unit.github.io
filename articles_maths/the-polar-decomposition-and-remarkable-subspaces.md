@@ -550,7 +550,7 @@ The two products of the series are the product of two boosts, which is a boost t
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one, their bases, their dimensions, their elements and their ideals.
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the four coordinate blocks, the intersections, the lattice of the fixed spaces and the action of the conjugations on the subspaces.
 - [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces.html), for the three eigenspace decompositions the conjugations cut out.
-- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the algebra, the four conjugations and the norm.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the norm.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the dagger sandwich, its kernel, the matrices $B_\pm$ and the image $CO^{+}(1,3)$.
 - [Biquaternion Lorentzian and Conformal Geometry](biquaternion-lorentzian-and-conformal-geometry.html), for the projective null cone, the celestial sphere and the Möbius action.

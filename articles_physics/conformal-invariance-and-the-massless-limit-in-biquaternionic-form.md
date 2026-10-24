@@ -56,7 +56,7 @@ Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{
 $$
 I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
-N\bigl(I(\tilde{Q})\bigr) = \frac{1}{\langle\tilde{Q}\rangle_{\natural}} .
+\langle I(\tilde{Q})\rangle_{\natural} = \frac{1}{\langle\tilde{Q}\rangle_{\natural}} .
 $$
 The companion establishes the count precisely: six generators inside, one expressible, eight outside. The invariance derived below is therefore a statement about the field equations under conformal transformations of spacetime, not a statement that the conformal group is a subgroup of the algebra's own multiplication group, and the two must not be conflated. The reason the framework is nevertheless the natural setting is that the **invariant object** of the conformal group is native to the algebra: it is the zero set of the biquaternion norm, and the inversion is built from the biquaternion norm by division.
 
@@ -74,7 +74,7 @@ A conformal transformation is a coordinate change $\tilde{Q}\mapsto\tilde{Q}_2$ 
 $$
 d\tilde{Q}_2\,\overline{d\tilde{Q}_2} = \Omega(\tilde{Q})^{2}\,d\tilde{Q}\,\overline{d\tilde{Q}} ,
 $$
-so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}_2 = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, whose interval is scaled by $1/N^2$, has $\Omega = 1/N$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
+so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}_2 = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, whose interval is scaled by $1/\langle\tilde Q\rangle_{\natural}^{2}$, has $\Omega = 1/\langle\tilde Q\rangle_{\natural}$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
 $$
 \phi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}_2\bigr) ,
 $$
@@ -284,7 +284,7 @@ The **breaking** is the mass term, and it is measured by the trace, $\Theta^\mu{
 
 ## The Norm as a Weyl Factor
 
-The carrier of the conformal statement is the weight $\Delta$ and the inversion $I(\tilde Q)=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. Read on the norm, that carrier has a second name. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a **scale** and its logarithm $\log\lvert N\rvert$ a **dilation potential**: a change of $\langle\cdot\rangle_{\natural}$ is a change of the unit of length, the weight $\Delta$ is the power of the scale by which a field transforms, and the invariant kernel $1/(4\pi^{2}N)$ is the scale to the first power. The norm is therefore a **conformal (Weyl) factor**, and the massless limit of the previous sections is read as the conformal limit in the Weyl sense, the mass term being the only obstruction.
+The carrier of the conformal statement is the weight $\Delta$ and the inversion $I(\tilde Q)=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. Read on the norm, that carrier has a second name. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a **scale** and its logarithm $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ a **dilation potential**: a change of $\langle\cdot\rangle_{\natural}$ is a change of the unit of length, the weight $\Delta$ is the power of the scale by which a field transforms, and the invariant kernel $1/(4\pi^{2}\langle\tilde Q\rangle_{\natural})$ is the scale to the first power. The norm is therefore a **conformal (Weyl) factor**, and the massless limit of the previous sections is read as the conformal limit in the Weyl sense, the mass term being the only obstruction.
 
 The interpretation is offered as an interpretation, and its boundary is the article's own count: the algebra carries the inversion and the weight, and six of the fifteen conformal generators are algebra elements, while the remaining nine are imported (*The Biquaternion Structure of the Conformal Statement*). What the interpretation adds is only the name: the framework's scale is a conformal weight. The norm is owned by *The Four Forms and the Four Algebraic Norms*, which gives it as the scale of the polar decomposition, and the same logarithm is read as the Weyl factor of a local metric in *The Local Complex Structure and the Speed of Light*; what the interpretation here adds is the name and the connection, that the framework's scale is a conformal weight. **Open question.** Whether that scale is a dynamical field, as the interpretation here proposes, or a gauge choice of the local complex structure, is not decided by the algebra; the norm is read here as a Weyl factor and the question is left open (*The Polar Decomposition of Biquaternions*, *The Local Complex Structure and the Speed of Light*).
 
@@ -311,7 +311,7 @@ The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell 
 | $SO^+(2,4) \cong SU(2,2)/\{\pm I_4\}$ | Conformal group of four-dimensional Minkowski space |
 | $P_\mu, M_{\mu\nu}, D, \mathcal{K}_\mu$ | Generators: translations, Lorentz, dilation, special conformal |
 | $\mathcal{K}_\mu = 2x_\mu x^\nu\partial/\partial Q_\nu - x^2\partial/\partial Q_\mu$ | Special conformal generator (series symbol; not the boost $K_k$) |
-| $\Omega(\tilde{Q})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/N$ for the inversion |
+| $\Omega(\tilde{Q})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/\langle\tilde Q\rangle_{\natural}$ for the inversion |
 | $\Delta$ | Conformal weight of the field; $\Delta = 1$ for the massless scalar in $d=4$ |
 | $\phi_2(\tilde{Q}) = \Omega^{\Delta}\phi(\tilde{Q}_2)$ | Conformal transformation law |
 | $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Conformal inversion; $\langle I(\tilde{Q})\rangle_{\natural} = 1/\langle\tilde{Q}\rangle_{\natural}$ |

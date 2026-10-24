@@ -253,7 +253,7 @@ a convergent series of iterated brackets. Thus $\exp(a)\exp(b)$ differs from $\e
 
 ### The Exponential in the Two Real Directions
 
-Let $\vec u$ be a real unit vector part, so that $\vec u^2 = -e_t$. The two real three-dimensional families of exponents — the bivector directions $\theta\vec u$ and the vector directions $\psi\, i\vec u$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *The 12 Products of the Biquaternion Complex Space*.
+Let $\vec u$ be a real unit vector part, so that $\vec u^2 = -e_t$. The two real three-dimensional families of exponents — the bivector directions $\theta\vec u$ and the vector directions $\psi\, i\vec u$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 **The bivector directions.** For real $\theta$,
 

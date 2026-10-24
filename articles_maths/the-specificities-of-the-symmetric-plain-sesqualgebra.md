@@ -91,4 +91,4 @@ The symmetric plain sesqualgebra is the only one of the twelve structures that i
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product, its class and its placement among the twelve.
 - [The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra](the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html), for the clause C1, its two reading involutions and its comparison with the siblings.
 - [The Multiplication Operators of the Symmetric Plain Sesqualgebra](the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.html), for the composition law, the rank, the trace and the adjoint of the operators.
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the twelve products among which the criterion is read.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products among which the criterion is read.

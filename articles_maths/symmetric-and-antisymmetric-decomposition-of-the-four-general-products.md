@@ -1,40 +1,16 @@
-# __The 12 Products of the Biquaternion Complex Space__
+# __Symmetric and Antisymmetric Decomposition of the Four General Products__
 
 ## Introduction
 
-The biquaternion complex space carries four multiplications, the **four general products** of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Every one of the four is split into a **symmetric part** and an **antisymmetric part**, and the two parts are operations of the same class as the product they split, so the space carries the **twelve products**. This article writes each of the twelve out, reads the laws that separate them and fixes the three-letter code each of them carries, and it carries the construction and the table of the twelve.
+The complex space of the biquaternion algebra carries four multiplications, the four general products of *The Four General Products and Their Relations*. Each of the four is split into a **symmetric part** and an **antisymmetric part**, and the two parts are operations of the same class as the product they split, so the space carries the **twelve products**. This article writes each of the twelve out, reads the laws that separate them, fixes the three-letter code each carries, and gives the construction, the table and the counts.
 
-The general construction, with the obstruction of the class and the two projections, is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the method of the decomposition is §*The Method of the Decomposition*, below.
+The split is a different operation in the two families. For the two $\mathbb{C}$-bilinear products the exchange is the interchange of the two arguments; for the two sesquilinear products the interchange alone returns a product of the opposite type, and the exchange is the interchange followed by the coefficientwise conjugation of the value. The two definitions are stated in §*The Method of the Decomposition*, below, and developed in *The Symmetric and Antisymmetric Parts of an Algebra Product* and *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
 
-The article assumes the four general products from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the elements, the basis and the four conjugations from *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, and the split itself, in its two forms, from *The Symmetric and Antisymmetric Parts of an Algebra Product* and *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
+The article assumes the four general products from *The Four General Products and Their Relations* and the element, the basis and the four conjugations from *The Biquaternion Algebra and Its Vector Spaces*.
 
-Throughout, the element $\tilde Q_1 = Q_{1,t} + \vec Q_1$ separates the complex scalar part $Q_{1,t}$ from the complex vector part $\vec Q_1 = Q_{1,x}\vec e_x+Q_{1,y}\vec e_y+Q_{1,z}\vec e_z$; $\overline{\vec Q_1}$ is the coefficientwise conjugate of the vector part, $(\vec Q_1,\vec Q_2)$ the complex bilinear dot product and $\vec Q_1\times\vec Q_2$ the complex bilinear cross product, as in *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*.
+Throughout, the element $\tilde Q_1 = Q_{1,t} + \vec Q_1$ separates the complex scalar part $Q_{1,t}$ from the complex vector part $\vec Q_1 = Q_{1,x}\vec e_x+Q_{1,y}\vec e_y+Q_{1,z}\vec e_z$; $\overline{\vec Q_1}$ is the coefficientwise conjugate of the vector part, $(\vec Q_1,\vec Q_2)$ the complex bilinear dot product and $\vec Q_1\times\vec Q_2$ the complex bilinear cross product, as in *The Biquaternion Algebra and Its Vector Spaces*.
 
 **The code.** A product carries a three-letter code. The first letter is $\mathrm G$ for the general product, $\mathrm S$ for its symmetric part and $\mathrm A$ for its antisymmetric part. The second is $\mathrm P$ for the plain product and $\mathrm Q$ for the quaternionic one. The third is $\mathrm A$ for the $\mathbb{C}$-bilinear class and $\mathrm S$ for the sesquilinear class over $(\mathbb{C},\bar{\cdot})$. The twelve codes are $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$.
-
----
-
-## The Four General Products
-
-The four general products are the four multiplications of the space. Written on the coordinates, they are
-
-$$
-\tilde Q_1\tilde Q_2 = \bigl[Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1+\vec Q_1\times\vec Q_2,
-$$
-
-$$
-\tilde Q_1\tilde Q_2^{*} = \bigl[Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
-$$
-
-$$
-\tilde Q_1^{\natural}\tilde Q_2 = \bigl[Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1,t}\vec Q_2-Q_{2,t}\vec Q_1-\vec Q_1\times\vec Q_2,
-$$
-
-$$
-\tilde Q_1^{\natural}\tilde Q_2^{*} = \bigl[Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
-$$
-
-The two bilinear products are $\mathbb C$-bilinear in both slots; they differ only in the reading of the first factor through the natural conjugation ${}^{\natural}$. The two sesquilinear products are $\mathbb C$-linear in the first slot and conjugate-linear in the second, and differ in the same way. No two of the four agree on every pair. The four are developed, with the identities that link them and their property table, in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*.
 
 ---
 
@@ -58,17 +34,18 @@ $$
 
 **What the two cases share.** The two parts carry the reconstruction $f=f^{\mathrm{s}}+f^{\mathrm{a}}$; the symmetric part is fixed by the exchange and the antisymmetric part is negated by it; and the pair is unique, since $f=s+t$ with $s$ fixed and $t$ negated forces $s=f^{\mathrm{s}}$ and $t=f^{\mathrm{a}}$. Both parts are products of the class of $f$ — $\mathbb{C}$-bilinear in the bilinear case, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ in the sesquilinear case — and it is for that closure that the exchange of the sesquilinear case is adapted and not bare.
 
-**The square and its algebraic norm, where the two part company.** In the **bilinear case** the antisymmetric part vanishes at the two equal arguments, since $f^{\mathrm{a}}(\tilde Q_2,\tilde Q_2)=-f^{\mathrm{a}}(\tilde Q_2,\tilde Q_2)$, so the square is the symmetric part alone, $f(\tilde Q_2,\tilde Q_2)=f^{\mathrm{s}}(\tilde Q_2,\tilde Q_2)$, and the polarisation of the square recovers the symmetric part away from the two equal arguments. In the **sesquilinear case** the antisymmetric part at the two equal arguments is the antisymmetrised square,
+**The square at the two equal arguments, where the two part company.** In the **bilinear case** the antisymmetric part vanishes at the two equal arguments, since $f^{\mathrm{a}}(\tilde Q_2,\tilde Q_2)=-f^{\mathrm{a}}(\tilde Q_2,\tilde Q_2)$, so the square is the symmetric part alone, $f(\tilde Q_2,\tilde Q_2)=f^{\mathrm{s}}(\tilde Q_2,\tilde Q_2)$, and the polarisation of the square recovers the symmetric part away from the two equal arguments. In the **sesquilinear case** the antisymmetric part at the two equal arguments is the antisymmetrised square,
 
 $$
 f^{\mathrm{a}}(\tilde Q_2,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_2,\tilde Q_2)-\overline{f(\tilde Q_2,\tilde Q_2)}\bigr),
 $$
 
-which **need not vanish**: it vanishes exactly when the square of the element is fixed by the coefficientwise conjugation. The polarisation of the square then recovers the **plain** symmetrisation — the half-sum with the bare interchange — and not the symmetric part. The bilinear case has no antisymmetric algebraic norm, the sesquilinear case has one and it is not zero in general.
+which **need not vanish**: it vanishes exactly when the square of the element is fixed by the coefficientwise conjugation. The polarisation of the square then recovers the **plain** symmetrisation — the half-sum with the bare interchange — and not the symmetric part. In the bilinear case the antisymmetric part vanishes at the two equal arguments; in the sesquilinear case its value there is not zero in general.
 
 **The bare interchange is not the exchange.** The two halves of the bare interchange of a sesquilinear product are only $\mathbb{R}$-bilinear and are not products of the class: they are the symmetrised sesquilinear product $x\circ y$ of *The Sesquilinear Symmetrised Product* and the sesquilinear commutator of *The Sesquilinear Commutator*. They are not the two parts read below, in the sesquilinear case or in any case. The reading of the four splits from the side of the order symmetry is §*The Twelve Products, One by One*, below, where the exchange that keeps the class is contrasted with the bare interchange.
 
 ---
+
 
 ## The Twelve Products, One by One
 
@@ -149,7 +126,7 @@ $$
 \;}.
 $$
 
-The value $\tilde Q_1\tilde Q_2^{*}$ has scalar part $H=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the **Hermitian form** $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* read as a product, and it is **central**: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is **conjugate-commutative**, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its algebraic norm is the square read through the form, $s(\tilde Q_2,\tilde Q_2)=\langle\tilde Q_2,\tilde Q_2\rangle_{*}=|Q_{2,t}|^{2}+(\vec Q_2,\overline{\vec Q_2})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it **fails** the Jordan identity on the whole space, with witness $x=y=\vec e_x$, where the two sides are $0$ and $e_t$.
+The value $\tilde Q_1\tilde Q_2^{*}$ has scalar part $H=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the **Hermitian form** $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ of *The Four Forms and the Four Algebraic Norms* read as a product, and it is **central**: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is **conjugate-commutative**, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its algebraic norm is the square read through the form, $s(\tilde Q_2,\tilde Q_2)=\langle\tilde Q_2,\tilde Q_2\rangle_{*}=|Q_{2,t}|^{2}+(\vec Q_2,\overline{\vec Q_2})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it **fails** the Jordan identity on the whole space, with witness $x=y=\vec e_x$, where the two sides are $0$ and $e_t$.
 
 ### The Symmetric Quaternionic Bilinear Product
 
@@ -159,7 +136,7 @@ $$
 \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)\bigr].
 $$
 
-The quaternion form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ of *Comparison Between the Four General Products* read as a product; its scalar part is $\langle\cdot\rangle$ and its vector part is zero. It is commutative, its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ — it compares two elements and returns a multiple of $e_t$ — and it has no unit. It is **not** a Jordan product.
+The quaternion form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ of *The Four General Products and Their Relations* read as a product; its scalar part is $\langle\cdot\rangle$ and its vector part is zero. It is commutative, its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ — it compares two elements and returns a multiple of $e_t$ — and it has no unit. It is **not** a Jordan product.
 
 ### The Symmetric Quaternionic Sesquilinear Product
 
@@ -194,7 +171,7 @@ $$
 =-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-The same value as the symmetric part, with the difference in place of the sum: the half-difference cancels the scalar part and keeps the vector part. It is **pure vector**, so its image is the vector subspace $\mathrm{Vect}(\mathbb{B})$. It is **conjugate-alternating**, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$, and its algebraic norm is the **vector part of the square**,
+The same value as the symmetric part, with the difference in place of the sum: the half-difference cancels the scalar part and keeps the vector part. It is **pure vector**, so its image is the vector subspace $\mathrm{Vect}(\mathbb{B})$. It is **conjugate-alternating**, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$, and its value at the two equal arguments is the **vector part of the square**,
 $$
 \mathfrak{a}(\tilde Q_2,\tilde Q_2)=\mathrm{Vect}(\tilde Q_2\tilde Q_2^{*}),
 $$
@@ -222,7 +199,7 @@ $$
 \;}.
 $$
 
-The cross products of the two orders add in the difference while the scalar part and the mixed term cancel, so the half-difference is the **cross product** $\vec Q_1\times\overline{\vec Q_2}$ of the vector part of the first argument with the conjugate of the vector part of the second. It is **pure vector**, so its image is the vector subspace $\mathrm{Vect}(\mathbb{B})$; it is **conjugate-alternating**, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$, and its algebraic norm is the cross product of the vector part with its conjugate, $\mathfrak{a}(\tilde Q_2,\tilde Q_2)=\vec Q_2\times\overline{\vec Q_2}$, which is **not zero** in general: for $\tilde Q_2=\vec e_x+i\vec e_y$ it is $-2i\vec e_z$. It has no unit, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, and it **fails** the Jacobi identity, with witness $(\vec e_x,\vec e_x,i\vec e_y)$, where the cyclic sum is $-2i\vec e_y$. This is the only one of the three failing brackets whose witness needs a complex element off the real basis, which is why the failure is invisible on the real forms.
+The cross products of the two orders add in the difference while the scalar part and the mixed term cancel, so the half-difference is the **cross product** $\vec Q_1\times\overline{\vec Q_2}$ of the vector part of the first argument with the conjugate of the vector part of the second. It is **pure vector**, so its image is the vector subspace $\mathrm{Vect}(\mathbb{B})$; it is **conjugate-alternating**, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$, and its value at the two equal arguments is the cross product of the vector part with its conjugate, $\mathfrak{a}(\tilde Q_2,\tilde Q_2)=\vec Q_2\times\overline{\vec Q_2}$, which is **not zero** in general: for $\tilde Q_2=\vec e_x+i\vec e_y$ it is $-2i\vec e_z$. It has no unit, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, and it **fails** the Jacobi identity, with witness $(\vec e_x,\vec e_x,i\vec e_y)$, where the cyclic sum is $-2i\vec e_y$. This is the only one of the three failing brackets whose witness needs a complex element off the real basis, which is why the failure is invisible on the real forms.
 
 ### The Exchange Behind the Split
 
@@ -233,6 +210,7 @@ The bare interchange does not keep the class, and its two halves — the symmetr
 **Whether the exchange is read on the value.** The split needs only the involution, which §*The Method of the Decomposition*, above settles for the four general products; whether the exchange can be read on the value of the product is a second question, and the two sesquilinear families answer it differently. The **sesquilinear** product has it, since $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$, which is why the two parts of the general plain sesquilinear product are the scalar and the vector part of the one value $\tilde Q_1\tilde Q_2^{*}$, valued in the centre $\mathbb{C}_{\mathbb{B}}$ and in the vector subspace. The **general quaternionic sesquilinear** product has it not: the value $\tilde Q_1^{\natural}\tilde Q_2^{*}=(\overline{\tilde Q}_2\tilde Q_1)^{\natural}$ determines only the general plain bilinear product $\overline{\tilde Q}_2\tilde Q_1$, whose factorisation into $\overline{\tilde Q}_2$ and $\tilde Q_1$ is not unique, and two pairs with the same value have different swaps — the pairs $(\tilde Q_1,\tilde Q_2)=(-i\vec e_z,-ie_t)$ and $(\vec e_y,\vec e_x)$ both have the value $-\vec e_z$, while the swapped values $\tilde Q_2^{\natural}\tilde Q_1^{*}$ are $-\vec e_z$ and $\vec e_z$ — so no conjugation of $\tilde Q_1^{\natural}\tilde Q_2^{*}$ is $\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\tilde Q_2^{*}\tilde Q_1^{\natural}$. The two parts of the general quaternionic sesquilinear product are therefore the half-sum and the half-difference of the two values $\tilde Q_1^{\natural}\tilde Q_2^{*}$ and $\tilde Q_2^{*}\tilde Q_1^{\natural}$, and they are valued in no subspace of the remarkable subspaces. The shape is the same in both rows: each of the four parts is a half-sum or a half-difference of the two orders of one plain product read through the conjugations — $\overline{\tilde Q}_2\tilde Q_1^{\natural}$ in the plain row and $\overline{\tilde Q}_2\tilde Q_1$ in the quaternionic row — and the two rows differ only by the ${}^{\natural}$ on the second factor.
 
 ---
+
 
 ## The Table of the Twelve Products
 
@@ -267,7 +245,7 @@ is its product.
 
 Six of the twelve are $\mathbb{C}$-bilinear, the three operations of each of the two bilinear families, and the remaining six are the six sesquilinear operations of the two sesquilinear families. In the two bilinear families the symmetric part is commutative and the antisymmetric part is alternating, with zero diagonal; in the two sesquilinear families the same two symmetries hold **up to the coefficientwise conjugation**, the symmetric part being conjugate-commutative, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, and the antisymmetric part conjugate-alternating, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$. The algebraic norm of the two sesquilinear antisymmetric parts is the vector part of the square and does not vanish in general. These symmetries hold by the definitions alone, for every product.
 
-**Remark (the two classifications of the table are independent).** The rows of the table above are the slot settings and the columns are the readings. The rows carry the slot calculus of *Comparison Between the Four General Products*, §*The Table of the Slots* — the second slot fixes whether the operation is a composition and the first fixes what the form reads — and the columns fix the algebraic norm alone, the square of an element. Neither classification refines the other: a row property such as associativity holds for $\mathrm{GPA}$ alone and cuts across the columns, and the norm of a column is not read from the row. The twelve names record both.
+**Remark (the two classifications of the table are independent).** The rows of the table above are the slot settings and the columns are the readings. The rows carry the slot calculus of *Introduction to the Operators of the Biquaternion Algebra*, §*The Table of the Slots* — the second slot fixes whether the operation is a composition and the first fixes what the form reads — and the columns fix the algebraic norm alone, the square of an element. Neither classification refines the other: a row property such as associativity holds for $\mathrm{GPA}$ alone and cuts across the columns, and the norm of a column is not read from the row. The twelve names record both.
 
 **Remark (the one unital non-associative structure).** $\mathrm{SPA}$ is commutative and has $e_t$ as a unit on both sides, and it is not associative: it is the symmetrisation $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, and the symmetrisation of an associative product need not be associative. Among the twelve it is the only structure that is unital without being associative, and its algebraic norm is the plain one, $\tilde Q_1\bullet\tilde Q_1=\tilde Q_1^{2}$.
 
@@ -285,7 +263,7 @@ f_{\mathrm{qs}}=s_{\mathrm{qs}}+a_{\mathrm{qs}}
 $$
 the subscripts $\mathrm{pb}$, $\mathrm{ps}$, $\mathrm{qb}$, $\mathrm{qs}$ naming the four families — plain bilinear, plain sesquilinear, quaternionic bilinear, general quaternionic sesquilinear — and $s$ and $a$ the symmetric and the antisymmetric part.
 
-These four identities and the four definitions of the general products are the only relations among the twelve: no part of one family is a conjugate of a part of another family, since the four general products are related to one another by the slots while the twelve operations are not. The square of a product of a $\mathbb{C}$-bilinear family reads its symmetric part alone, $f(\tilde Q_2,\tilde Q_2)=s(\tilde Q_2,\tilde Q_2)$ for the plain and for the general quaternionic bilinear product, and its polarised square is twice the symmetric part. In the two sesquilinear families the square is split by the exchange instead: its algebraic norm is the pair $\bigl(s(\tilde Q_2,\tilde Q_2),\mathfrak{a}(\tilde Q_2,\tilde Q_2)\bigr)$, the antisymmetric side being the vector part of the square and not zero, and the polarised square recovers the plain symmetrisation of the bare interchange and not the symmetric part (*The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Equal Arguments and the Square*).
+These four identities and the four definitions of the general products are the only relations among the twelve: no part of one family is a conjugate of a part of another family, since the four general products are related to one another by the slots while the twelve operations are not. The square of a product of a $\mathbb{C}$-bilinear family reads its symmetric part alone, $f(\tilde Q_2,\tilde Q_2)=s(\tilde Q_2,\tilde Q_2)$ for the plain and for the general quaternionic bilinear product, and its polarised square is twice the symmetric part. In the two sesquilinear families the square is split by the exchange instead: its square is the pair $\bigl(s(\tilde Q_2,\tilde Q_2),\mathfrak{a}(\tilde Q_2,\tilde Q_2)\bigr)$, the antisymmetric side being the vector part of the square and not zero, and the polarised square recovers the plain symmetrisation of the bare interchange and not the symmetric part (*The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Equal Arguments and the Square*).
 
 ### The Twelve Are Distinct, and Ten on the Real Part
 
@@ -327,11 +305,11 @@ side the two sesquilinear parts are the denser and they fail at almost every ele
 every basis element but $e_t$ and $\mathrm{SQS}$ at $\vec e_x,\vec e_y,\vec e_z,ie_t$, while $\mathrm{SQA}$ fails at
 $\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z$. The witnesses of the three Jordan failures are of two shapes, the central shift
 of $\mathrm{SQS}$ with sides $-e_t$ and $e_t$, and the outright vanishing of $\mathrm{SQA}$ and
-$\mathrm{SPS}$ with sides $0$ and $e_t$; a shift needs a product with a non-central algebraic norm, and it is the
+$\mathrm{SPS}$ with sides $0$ and $e_t$; a shift needs a product whose square is not central, and it is the
 mark of the sesquilinear block. The identity, put to the two general sesquilinear products although it is not
 asked of them, fails there as well, on $32$ of the $64$ pairs for each.
 
-The counts above are the counts of the identity each part is asked for. If the Jordan identity is put instead to the four antisymmetric parts, of which the corpus does not ask it, the two bilinear ones satisfy it vacuously, their algebraic norm vanishing, and the two sesquilinear ones satisfy it on the whole real part and fail it as soon as a complex element enters: $\mathrm{APS}$ fails at $\tilde Q_1=e_t+i\vec e_x$, where $\tilde Q_1^{2}=2i\vec e_x$ and the two sides are $2i\vec e_x$ and $0$, and $\mathrm{AQS}$ at $\tilde Q_2=\vec e_x+\vec e_y+i\vec e_z$, where $\tilde Q_2^{2}=-2i\vec e_x+2i\vec e_y$ and the two sides are its negative and $0$. The failure of a sesquilinear antisymmetric part is therefore invisible on the real forms, exactly as the Jacobi failure of $\mathrm{AQS}$ is, and the real part separates these two operations on the Jordan identity no better than it separates them on the Jacobi identity.
+The counts above are the counts of the identity each part is asked for. If the Jordan identity is put instead to the four antisymmetric parts, of which the corpus does not ask it, the two bilinear ones satisfy it vacuously, their square vanishing, and the two sesquilinear ones satisfy it on the whole real part and fail it as soon as a complex element enters: $\mathrm{APS}$ fails at $\tilde Q_1=e_t+i\vec e_x$, where $\tilde Q_1^{2}=2i\vec e_x$ and the two sides are $2i\vec e_x$ and $0$, and $\mathrm{AQS}$ at $\tilde Q_2=\vec e_x+\vec e_y+i\vec e_z$, where $\tilde Q_2^{2}=-2i\vec e_x+2i\vec e_y$ and the two sides are its negative and $0$. The failure of a sesquilinear antisymmetric part is therefore invisible on the real forms, exactly as the Jacobi failure of $\mathrm{AQS}$ is, and the real part separates these two operations on the Jordan identity no better than it separates them on the Jacobi identity.
 
 **Two cautions.** The counts are counts on a chosen basis and are not invariants of the operation; they are
 given as the shape of each failure and they change with the basis. And each identity is tested in the single
@@ -340,11 +318,13 @@ coincides with it at $y=x$ alone, which would answer a weaker question; the form
 
 ---
 
+
 ## Summary
 
 The complex space of the biquaternion algebra carries four general products, and each is split into a symmetric and an antisymmetric part by an exchange that keeps the class, so it carries the twelve products. The exchange is the plain interchange of the two arguments for the two $\mathbb{C}$-bilinear families and the conjugate transpose, the interchange followed by the coefficientwise conjugation of the value, for the two sesquilinear families. Each of the twelve carries the three-letter code defined above, which records its part, its family and its class.
 
-The six operations of the two bilinear families are $\mathbb{C}$-bilinear and the six of the two sesquilinear families are sesquilinear over $(\mathbb{C},\bar{\cdot})$; in the two sesquilinear families the symmetric product is conjugate-commutative, the antisymmetric product is conjugate-alternating, and the algebraic norm of the antisymmetric product is the vector part of the square and does not vanish. The twelve are pairwise distinct on the complex space and fall to ten on the real part, where the antisymmetric plain bilinear product equals the antisymmetric quaternionic sesquilinear product and the symmetric plain sesquilinear product equals the symmetric quaternionic bilinear product.
+The six operations of the two bilinear families are $\mathbb{C}$-bilinear and the six of the two sesquilinear families are sesquilinear over $(\mathbb{C},\bar{\cdot})$; in the two sesquilinear families the symmetric product is conjugate-commutative, the antisymmetric product is conjugate-alternating, and the value of the antisymmetric product at the two equal arguments is the vector part of the square and does not vanish. The twelve are pairwise distinct on the complex space and fall to ten on the real part, where the antisymmetric plain bilinear product equals the antisymmetric quaternionic sesquilinear product and the symmetric plain sesquilinear product equals the symmetric quaternionic bilinear product.
+
 
 ## Summary of Notation
 
@@ -366,11 +346,12 @@ The six operations of the two bilinear families are $\mathbb{C}$-bilinear and th
 | $\overline{\vec Q_2}$ | the coefficientwise conjugate of the vector part |
 | $(\vec Q_1,\vec Q_2)$, $\vec Q_1\times\vec Q_2$ | the complex bilinear dot product and cross product |
 
+
 ## Further Reading
 
-- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), [Relations Between the Four General Products](relations-between-the-four-general-products.html) and [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the four general products, their developed forms and the identities that link them.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the four general products, their developed forms, the identities that link them and their comparison.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html) and [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the two definitions of the split, the obstruction of the class and the two admissibility conditions.
 - [The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product](the-conjugate-symmetric-and-skew-conjugate-symmetric-parts-of-a-sesquilinear-product.html), for the adapted exchange that keeps the class.
-- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html) and [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the four general products.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html) and [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the four general products.
 - [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for what the twelve do on the remarkable subspaces, and [The Sesquilinear Commutator](the-sesquilinear-commutator.html), for the sesquilinear bracket.
 - [The Unitary Lie Algebra](the-unitary-lie-algebra.html) and [The Hermitian Jordan Algebra](the-hermitian-jordan-algebra.html), for the two of the twelve whose products are Lie and Jordan products.

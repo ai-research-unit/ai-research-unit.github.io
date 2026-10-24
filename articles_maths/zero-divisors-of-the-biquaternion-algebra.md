@@ -21,7 +21,7 @@ products and their common zero-divisor set are *Zero Divisors in the Algebraic S
 
 Every claim is proved or stated as a definition, no physics is invoked and no examples are given.
 The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, its four conjugations and
-its remarkable subspaces are assumed from *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* and
+its remarkable subspaces are assumed from *The Biquaternion Algebra and Its Vector Spaces* and
 *Introduction to the Remarkable Subspaces*, and the invertibility criterion from *Norm and
 Invertibility in the Biquaternion Algebra*. The idempotents that the non-pure family produces are
 *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the nilpotents of the
@@ -51,7 +51,7 @@ here as a length.
 
 The word names a product, so the definition is stated for a general product and then read on the
 products of this space; it is stated once and for all in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Let $\star$ be a product on $\mathbb{B}$ — any of the twelve products of
-*The 12 Products of the Biquaternion Complex Space*, that is one of the four general products or
+*Symmetric and Antisymmetric Decomposition of the Four General Products*, that is one of the four general products or
 one of their symmetric or antisymmetric parts.
 
 **Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde{Q}_1\in\mathbb{B}$. The

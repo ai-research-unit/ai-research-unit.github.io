@@ -26,7 +26,7 @@ The norm that decides invertibility is the general quaternionic bilinear algebra
 $$
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},
 $$
-written $N(\tilde Q)$. An element is a unit exactly when $N(\tilde Q)\neq0$, and its inverse is then
+An element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its inverse is then
 $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} .
 $$
@@ -34,13 +34,13 @@ The algebra is the disjoint union
 $$
 \boxed{\;\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{C},
 \qquad
-\mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\},
+\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\},
 \qquad
-\mathcal{C}=\{\tilde Q:N(\tilde Q)=0\}\;},
+\mathcal{C}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}\;},
 $$
 and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The three classes are the units, the nonzero points of the cone and the origin.
 
-| condition on $N$ | condition on $\tilde Q$ | class |
+| condition on $\langle\tilde Q\rangle_{\natural}$ | condition on $\tilde Q$ | class |
 | --- | --- | --- |
 | $\neq0$ | automatically $\neq0$ | a unit; an element of $\mathbb{B}^{\times}$ |
 | $=0$ | $\tilde Q=0$ | the origin; neither a unit nor a zero divisor |
@@ -48,35 +48,35 @@ and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The 
 
 ### The Reversible Operation
 
-**The unit is a reversible operation.** Multiplication by a unit is a bijection of the algebra, and its inverse is multiplication by the inverse. The norm is the scale of the operation; the norm-one slice $\mathbb{B}^{\times}_{1}=\{N=1\}$ is its shape. A general unit is a complex scale times a norm-one element, the factorisation being two-to-one on the central line. Read on a map, a unit is a process with no loss: every output has exactly one input, and the map can be run backwards.
+**The unit is a reversible operation.** Multiplication by a unit is a bijection of the algebra, and its inverse is multiplication by the inverse. The norm is the scale of the operation; the norm-one slice $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ is its shape. A general unit is a complex scale times a norm-one element, the factorisation being two-to-one on the central line. Read on a map, a unit is a process with no loss: every output has exactly one input, and the map can be run backwards.
 
-**The zero divisor is an operation that forgets.** A nonzero $\tilde Q$ with $N(\tilde Q)=0$ has a nonzero annihilator: there is a nonzero $\tilde Q_2$ with $\tilde Q\tilde Q_2=0$ or $\tilde Q_2\tilde Q=0$. In the matrix model its image has rank one, so it kills a direction and cannot be inverted. The cone is therefore the **wall of reversibility**: on one side the multiplication is a bijection, on the other it has a kernel.
+**The zero divisor is an operation that forgets.** A nonzero $\tilde Q$ with $\langle\tilde Q\rangle_{\natural}=0$ has a nonzero annihilator: there is a nonzero $\tilde Q_2$ with $\tilde Q\tilde Q_2=0$ or $\tilde Q_2\tilde Q=0$. In the matrix model its image has rank one, so it kills a direction and cannot be inverted. The cone is therefore the **wall of reversibility**: on one side the multiplication is a bijection, on the other it has a kernel.
 
 **The apex is no operation.** The origin is the only element that is neither a unit nor a zero divisor. It is the zero map, which neither preserves information nor loses it: it has no inverse, and it is excluded from the zero-divisor set by the convention that both factors of a zero product are nonzero. The apex is the one point of the wall that is not a wall.
 
 | object | algebraic condition | operation | interpretation |
 | --- | --- | --- | --- |
-| a unit | $N\neq0$ | a bijection | reversible |
-| a zero divisor | $N=0$, $\tilde Q\neq0$ | rank one | forgets a direction |
+| a unit | $\langle\tilde Q\rangle_{\natural}\neq0$ | a bijection | reversible |
+| a zero divisor | $\langle\tilde Q\rangle_{\natural}=0$, $\tilde Q\neq0$ | rank one | forgets a direction |
 | the origin | $\tilde Q=0$ | the zero map | no operation |
 
 **The boundary of the interpretation.** A zero divisor is not "irreversible in time"; it is non-invertible as a linear map. The algebra has no arrow and no dynamics, and the physical arrow requires a process and a law. The interpretation identifies the algebraic status of the map, not a thermodynamic direction.
 
 ### The Wall of the State Space
 
-**The same cone bounds the pure states.** The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{M}_{+}$. There the trace-one slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $N(\tilde\Pi)=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{M}_{-}$, and on $\mathbb{M}_{+}$ it meets the positive cone in the cone over the pure states; its intersection with the trace-one slice is the Bloch sphere.
+**The same cone bounds the pure states.** The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{M}_{+}$. There the trace-one slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $\langle\tilde\Pi\rangle_{\natural}=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{M}_{-}$, and on $\mathbb{M}_{+}$ it meets the positive cone in the cone over the pure states; its intersection with the trace-one slice is the Bloch sphere.
 
 **The boundary of the interpretation.** The two interpretations are of one set and not of one physical object. On $\mathbb{M}_{-}$ the cone is the light cone; on $\mathbb{M}_{+}$ its trace-one slice is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which interpretation applies.
 
 ### The Pairings and the Wall
 
-The partition into units and cone is the domain of the **word**, not of every polar description. The four-factor word exists exactly when $N\neq0$, so its domain is the group of units. The three pairings have smaller construction domains, and none of them is the wall itself:
+The partition into units and cone is the domain of the **word**, not of every polar description. The four-factor word exists exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, so its domain is the group of units. The three pairings have smaller construction domains, and none of them is the wall itself:
 
 | pairing | construction needs | witness of failure |
 | --- | --- | --- |
-| quaternion | $N\neq0$ and $\tilde q_r\neq0$ | $i\vec e_x+i\vec e_y$: a unit with $\tilde q_r=0$ |
-| Hamilton | $N\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | $e_t+\vec e_x+i\vec e_y$: a unit with a null vector part |
-| Cartan | $N\neq0$; generalized: every element | $e_t+i\vec e_x$: a zero divisor |
+| quaternion | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\tilde q_r\neq0$ | $i\vec e_x+i\vec e_y$: a unit with $\tilde q_r=0$ |
+| Hamilton | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | $e_t+\vec e_x+i\vec e_y$: a unit with a null vector part |
+| Cartan | $\langle\tilde Q\rangle_{\natural}\neq0$; generalized: every element | $e_t+i\vec e_x$: a zero divisor |
 
 The Cartan construction is the widest, and the generalized Cartan form extends it to the cone with a positive factor and a partial isometry. Every element is $\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$ with $\tilde H_{\mathrm{pos}}\ge0$ and $\tilde U_{\mathrm{p}}\tilde U_{\mathrm{p}}^{*}\tilde U_{\mathrm{p}}=\tilde U_{\mathrm{p}}$. The word fails on the cone because the modulus vanishes; the physical image is a lightlike four-vector, which has no rest frame. The amplitude–phase split does not fail there.
 
@@ -184,7 +184,7 @@ the proper orthochronous Lorentz group. A norm-one unit is therefore a **spin fr
 
 The cone is the zero set of one polynomial, smooth away from its apex, and contractible:
 $$
-\mathcal{N}=\{\tilde Q:N(\tilde Q)=0\},
+\mathcal{N}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\},
 \qquad
 \mathcal{N}\text{ is contractible}.
 $$
@@ -260,7 +260,7 @@ generates the unipotent family
 $$
 (e_t+P)^{n}=e_t+nP,
 \qquad
-N(e_t+P)=1,
+\langle e_t+P\rangle_{\natural}=1,
 \qquad
 n\in\mathbb{Z}.
 $$
@@ -280,7 +280,7 @@ The orders are arithmetic, not dynamics. The finite unit groups are discrete sym
 
 ## Summary
 
-The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{N\neq0\}$ and its zero-divisor cone $\mathcal{C}=\{N=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.
+The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ and its zero-divisor cone $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.
 
 The group is open, dense, connected and of real dimension eight, with $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; the polar decomposition retracts it onto $\mathrm{U}(2)$, and $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover homotopy equivalent to $\mathbb{R}\times S^{3}$. The norm-one slice modulo the central sign is the frame space $SO^{+}(1,3)$. The cone is contractible, smooth off its apex, and its link is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$; the apex is a genuine singularity.
 
@@ -290,10 +290,10 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 
 | Symbol | Meaning |
 | --- | --- |
-| $\mathbb{B}^{\times}=\{N\neq0\}$ | the group of units; the complement of the cone |
-| $\mathcal{C}=\{N=0\}$ | the zero-divisor cone; the wall of reversibility |
-| $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the general quaternionic algebraic norm; the invertibility criterion |
-| $\mathbb{B}^{\times}_{1}=\{N=1\}$ | the norm-one group; the spin frame slice |
+| $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units; the complement of the cone |
+| $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone; the wall of reversibility |
+| $\langle\tilde Q\rangle_{\natural}$ | the general quaternionic algebraic norm; the invertibility criterion |
+| $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ | the norm-one group; the spin frame slice |
 | $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$ | the unitary group; maximal compact subgroup, $\cong U(2)$ |
 | $L=\mathcal{N}\cap S^{7}_{E}$ | the link of the cone; an $S^{1}$-bundle over $S^{2}\times S^{2}$ |
 | $\mathcal{L}$, $\mathcal{L}_{\mathrm{H}}$ | the Lipschitz and Hurwitz orders |

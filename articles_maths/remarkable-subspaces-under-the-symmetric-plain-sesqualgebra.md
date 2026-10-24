@@ -56,7 +56,7 @@ The Hermitian subspace is the fixed space of the Hermitian conjugation, $\mathbb
 
 $$ \boxed{\; \langle\tilde Q_1,\tilde Q_2\rangle_{*} = p_tq_t + \sum_{k\in\{x,y,z\}} p_kq_k , \qquad \tilde Q_1,\tilde Q_2\in\mathbb{M}_+ \;}, $$
 
-which is the positive part of the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* restricted to its coordinates, so the product reads
+which is the positive part of the Hermitian form of *The Four Forms and the Four Algebraic Norms* restricted to its coordinates, so the product reads
 
 $$
 \tilde Q_1\star\tilde Q_2 = \Bigl(p_tq_t + \sum_{k\in\{x,y,z\}}p_kq_k\Bigr)e_t ,
@@ -120,5 +120,5 @@ Under the product of the symmetric plain sesqualgebra every value is central, an
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), the sibling article whose pattern this one follows.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces and their definitions.
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the relations between them.
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the forms restricted to the remarkable real subspaces.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the forms restricted to the remarkable real subspaces.
 - [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the closure of the remarkable subspaces under the four general products of the space.

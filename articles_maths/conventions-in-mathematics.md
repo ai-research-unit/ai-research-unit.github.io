@@ -353,9 +353,9 @@ $$
 [\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
-whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*The 12 Products of the Biquaternion $\mathbb{C}$ Space*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
+whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
 
-The products themselves — their coordinates, their laws, their units and their images — are *The 12 Products of the Biquaternion Complex Space*, and the grid of the four general products is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
+The products themselves — their coordinates, their laws, their units and their images — are *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the grid of the four general products is *The Four General Products and Their Relations*.
 
 ## The Form Convention, the Norm Convention and the Unitary Convention
 
@@ -391,7 +391,7 @@ $$
 
 **The bracket carries the mark that is not the identity in the layer**, and the four brackets collapse two-and-two wherever one mark degenerates. The cases are worked layer by layer in §*The Six Layer Tables*, below.
 
-The distinction is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The two definitions — the form of an operation as its scalar part read in two arguments, bilinear or sesquilinear by its second slot, and the algebraic norm as that form at its two equal arguments — and the four brackets, $\langle\cdot,\cdot\rangle$ the plain, $\langle\cdot,\cdot\rangle_{*}$ the Hermitian, $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic and $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein, are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*.
+The distinction is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The two definitions — the form of an operation as its scalar part read in two arguments, bilinear or sesquilinear by its second slot, and the algebraic norm as that form at its two equal arguments — and the four brackets, $\langle\cdot,\cdot\rangle$ the plain, $\langle\cdot,\cdot\rangle_{*}$ the Hermitian, $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic and $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein, are *The Four Forms and the Four Algebraic Norms*.
 
 **The four names stand on the four norms, and the form is the norm read in two slots.** One name runs over the three levels of the product, the form and the norm: the **plain** bracket is the scalar part of the plain bilinear product, the **Hermitian** bracket that of the plain sesquilinear product, the **quaternionic** bracket that of the quaternionic bilinear product, and the **Krein** bracket that of the quaternionic sesquilinear product. Read on one argument the four are the **plain norm**, the **Hermitian norm**, the **quaternionic norm** and the **Krein norm**. The four products, their forms and their norms go together, one to a row:
 

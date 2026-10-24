@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the second of them is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, the plain product with the natural conjugation read on the first factor (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*). Every bilinear product on $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction of the block that reads the symmetric part of $\tilde Q_1^{\natural}\tilde Q_2$ as a multiplication:
+The biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the second of them is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, the plain product with the natural conjugation read on the first factor (*The Four General Products and Their Relations*). Every bilinear product on $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction of the block that reads the symmetric part of $\tilde Q_1^{\natural}\tilde Q_2$ as a multiplication:
 
 $$
 \tilde Q_1\star\tilde Q_2 = \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2 + \tilde Q_2^{\natural}\tilde Q_1\bigr).
@@ -38,7 +38,7 @@ $$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{\n
 
 *Proof.* Write $\tilde Q_1^{\natural}\tilde Q_2$ in scalar and vector parts (*Introduction to the General Quaternionic Algebra*): scalar part $Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$, vector part $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$. The exchange $\tilde Q_2^{\natural}\tilde Q_1$ has the same scalar part and the vector part $Q_{2t}\vec Q_1-Q_{1t}\vec Q_2-\vec Q_2\times\vec Q_1$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\vec Q_1\times\vec Q_2=-\vec Q_2\times\vec Q_1$.
 
-The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\mathrm{SQA}$; its comparison with the other three forms is *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\mathrm{SQA}$; its comparison with the other three forms is *The Four General Products and Their Relations* and *The Four Forms and the Four Algebraic Norms*.
 
 **Corollary (the class and the commutativity).** The operation is $\mathbb{C}$-bilinear and commutative, its value is always central, and its commutator vanishes identically,
 
@@ -71,7 +71,7 @@ $$
 
 *Proof.* The table gives $e_\mu\star e_\nu=\delta_{\mu\nu}e_t$, and bilinearity extends the display to the general pair; conversely the display evaluates the definition of $\langle\cdot,\cdot\rangle_{\natural}$.
 
-**Remark (the table is not the one of the plain product).** The plain product gives a fixed-point-free permutation table with signs (*Introduction to the Biquaternion Algebra*), and the quaternionic product one with the first column negated. The entry $e_\mu\star e_\nu$ is the symmetrisation of the second, and it is diagonal because the antisymmetric part is what carries the off-diagonal signs: the symmetric half of the quaternionic product keeps only the diagonal of the quaternionic table. The table is the smallest possible for a nonzero operation.
+**Remark (the table is not the one of the plain product).** The plain product gives a fixed-point-free permutation table with signs (*The Biquaternion Algebra and Its Vector Spaces*), and the quaternionic product one with the first column negated. The entry $e_\mu\star e_\nu$ is the symmetrisation of the second, and it is diagonal because the antisymmetric part is what carries the off-diagonal signs: the symmetric half of the quaternionic product keeps only the diagonal of the quaternionic table. The table is the smallest possible for a nonzero operation.
 
 ## The Laws of the Operation
 

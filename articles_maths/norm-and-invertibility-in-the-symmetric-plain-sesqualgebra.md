@@ -4,7 +4,7 @@
 
 The symmetric plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ on the biquaternion space, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a multiplication (*Introduction to the Symmetric Plain Sesqualgebra*). This article studies the algebraic norm that the block carries and the invertibility that it does not.
 
-A norm and an inverse name a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)$ and its diagonal is
+A norm and an inverse name a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)$ and its diagonal is
 
 $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
@@ -60,7 +60,7 @@ $$
 \tilde{Q}\star\tilde{Q} = \langle\tilde{Q}\rangle_{*}e_t .
 $$
 
-The equation names the product $\star$: the algebraic norm is relative to the product, and the algebraic norms of the other three rows are different quadratic maps on the same space (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*).
+The equation names the product $\star$: the algebraic norm is relative to the product, and the algebraic norms of the other three rows are different quadratic maps on the same space (*The Four Forms and the Four Algebraic Norms*).
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -177,8 +177,8 @@ a real non-negative definite quadratic map of signature $(8,0)$, invariant under
 
 ## Further Reading
 
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product, its class, its table and its placement among the twelve structures.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the relative notions of the unit, the inverse and the group of units.
 - [Norm and Invertibility in the Biquaternion Algebra](norm-and-invertibility-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{*}$ of this article.

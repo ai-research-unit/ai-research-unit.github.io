@@ -11,7 +11,7 @@ $$
 
 the antisymmetric part of the general quaternionic product $\tilde Q_1^{\natural}\tilde Q_2$ (*Introduction to the Antisymmetric Quaternionic Algebra*). The operation is $\mathbb{C}$-bilinear, alternating and vector valued, and it has no unit on either side.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
 The invertibility is a second and independent absence. The block has **no left unit, no right unit and no two-sided unit**, hence no inverse and an empty group of units; the inverse equation to the centre has no solution, because the block cannot produce a central value at all.
 
@@ -63,7 +63,7 @@ $$
 \varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\mathrm{Sc}\,f(\tilde Q,\tilde Q),
 $$
 
-and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*).
+and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The Four Forms and the Four Algebraic Norms*).
 
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric quaternionic multiplication,
 
@@ -93,7 +93,7 @@ The square is the zero map, and the conjugated square is central exactly on the 
 
 ## Summary
 
-The antisymmetric quaternionic multiplication $\tilde Q_1\diamond\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde Q_1\diamond\tilde Q_2=e_t$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The square vanishes identically and the conjugated square is the pure vector $-2Q_{1t}\vec Q_1$, so neither canonical quadratic is central-valued. The algebraic norm $\langle\cdot\rangle_{\natural}$ of the parent quaternionic product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
+The antisymmetric quaternionic multiplication $\tilde Q_1\diamond\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde Q_1\diamond\tilde Q_2=e_t$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The Four Forms and the Four Algebraic Norms* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The square vanishes identically and the conjugated square is the pure vector $-2Q_{1t}\vec Q_1$, so neither canonical quadratic is central-valued. The algebraic norm $\langle\cdot\rangle_{\natural}$ of the parent quaternionic product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
 
 ## Summary of Notation
 
@@ -108,10 +108,10 @@ The antisymmetric quaternionic multiplication $\tilde Q_1\diamond\tilde Q_2=Q_{1
 
 ## Further Reading
 
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its class, its image and the absence of a unit.
-- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the unit table of the four general products.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the unit table of the four general products.
 - [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the algebraic norm $\langle\cdot\rangle_{\natural}$ of the quaternionic product, which is not the form of this block.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the antisymmetrisation from which the block is written.
 - [The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra](the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.html), for the invariant forms of the block.

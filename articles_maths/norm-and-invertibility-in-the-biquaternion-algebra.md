@@ -4,7 +4,7 @@
 
 This article studies the algebraic norm that the general plain bilinear product, the multiplication $\tilde Q_2\tilde Q_1$ of the biquaternion algebra, carries, and the invertibility of the elements of that product.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*: for the plain product the form is $\langle\tilde Q_2,\tilde Q_1\rangle=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$ and its diagonal is
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*: for the plain product the form is $\langle\tilde Q_2,\tilde Q_1\rangle=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$ and its diagonal is
 
 $$
 \langle\tilde Q\rangle=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
@@ -32,7 +32,7 @@ $$
 \langle\tilde Q_2,\tilde Q_1\rangle=\mathrm{Sc}\bigl(\tilde Q_2\tilde Q_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{2\mu} Q_{1\mu}=Q_{2,0}Q_{1t}-(\vec Q_2,\vec Q_1),
 $$
 
-which is the general plain bilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, the $\mathbb{C}$-bilinear form of the pair $(\mathrm{id},\mathrm{id})$. The two arities of the letter are one object: with two arguments the form, with one argument its diagonal.
+which is the general plain bilinear form of *The Four Forms and the Four Algebraic Norms*, the $\mathbb{C}$-bilinear form of the pair $(\mathrm{id},\mathrm{id})$. The two arities of the letter are one object: with two arguments the form, with one argument its diagonal.
 
 The form is symmetric, $\langle\tilde Q_2,\tilde Q_1\rangle=\langle\tilde Q_1,\tilde Q_2\rangle$, and non-degenerate, and on the diagonal the splitting of the coefficients into real and imaginary parts gives
 
@@ -48,7 +48,7 @@ $$
 - $\langle\cdot\rangle$ is **homogeneous of degree two**, $\langle\lambda\tilde Q\rangle=\lambda^{2}\langle\tilde Q\rangle$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $\langle\tilde Q_2+\tilde Q_1\rangle-\langle\tilde Q_2\rangle-\langle\tilde Q_1\rangle=2\langle\tilde Q_2,\tilde Q_1\rangle$.
 - $\langle\cdot\rangle$ is **not positive definite** and **not definite**: it takes complex values and it vanishes on nonzero elements.
 - Its Gram matrix on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and the realification of $\langle\cdot\rangle$ on $\mathbb{B}\cong\mathbb{R}^{8}$ is non-degenerate of signature $(4,4)$, a split signature.
-- Its **vanishing set** is the complex cone $\{\langle\tilde Q\rangle=0\}$, the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; it is the vanishing set of the algebraic norm of the plain product and not the zero-divisor cone of the algebra.
+- Its **vanishing set** is the complex cone $\{\langle\tilde Q\rangle=0\}$, the complex quadric of *The Four Forms and the Four Algebraic Norms*; it is the vanishing set of the algebraic norm of the plain product and not the zero-divisor cone of the algebra.
 
 ## The Algebraic Norm Is Not Multiplicative
 
@@ -70,7 +70,7 @@ $$
 
 **The plain product is associative and unital, with the two-sided unit $e_t$, and its invertible elements form the group of units $\mathbb{B}^{\times}$, a proper subset of $\mathbb{B}\setminus\{0\}$ because the product has zero divisors.**
 
-The unit of the plain product is $e_t$: it is a two-sided unit, $\tilde Q e_t=e_t\tilde Q=\tilde Q$, and it is the only one (*Introduction to the Biquaternion Algebra*; *Comparison Between the Four General Products*). The product is associative, so the inverse of an element is unique when it exists and the invertible elements form the **group of units** of the plain product, a genuine group (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*).
+The unit of the plain product is $e_t$: it is a two-sided unit, $\tilde Q e_t=e_t\tilde Q=\tilde Q$, and it is the only one (*The Biquaternion Algebra and Its Vector Spaces*; *The Four General Products and Their Relations*). The product is associative, so the inverse of an element is unique when it exists and the invertible elements form the **group of units** of the plain product, a genuine group (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*).
 
 The plain product has zero divisors: the identity $(e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^{2}-(i\vec e_x)^{2}=e_t-e_t=0$ exhibits a product of two nonzero elements that is zero. The plain algebra is therefore not a division algebra, and the group of units is a proper subset of $\mathbb{B}\setminus\{0\}$. The zero divisors, their families and their geometry are *Zero Divisors of the Biquaternion Algebra*, and they are cited here, not read.
 
@@ -125,10 +125,10 @@ The plain product is associative and unital, with the two-sided unit $e_t$ and a
 
 ## Further Reading
 
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the definition of the algebraic norm as the form at the two equal arguments, the four algebraic norms and their separation.
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general plain bilinear form $\langle\cdot,\cdot\rangle$, the table of the four forms and the complex quadric that is the vanishing set of $\langle\cdot,\cdot\rangle$.
-- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), for the product, its associativity, its unit and its element theory.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments, the four algebraic norms and their separation.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general plain bilinear form $\langle\cdot,\cdot\rangle$, the table of the four forms and the complex quadric that is the vanishing set of $\langle\cdot,\cdot\rangle$.
+- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the product, its associativity, its unit and its element theory.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the relative definitions of the unit, the inverse and the group of units.
-- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the unit table of the four products and the fact that they do not share their units.
+- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the unit table of the four products and the fact that they do not share their units.
 - [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the zero divisors, which the algebraic norm of the plain product does not detect.
 - [Remarkable Subspaces and the Four Algebraic Norms](remarkable-subspaces-and-the-four-algebraic-norms.html), for the restriction of $\langle\cdot\rangle$ to the remarkable subspaces with its signature.

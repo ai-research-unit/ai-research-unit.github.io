@@ -60,7 +60,7 @@ $$
 
 *Proof.* The cross product $\vec Q_1\times\overline{\vec Q_2}$ is $\mathbb{C}$-linear in $\vec Q_1$ and conjugate-linear in $\overline{\vec Q_2}$; equivalently the coordinate rule above is homogeneous of degree one in each coordinate of $\tilde Q_1$ and of degree one in each conjugate coordinate of $\tilde Q_2$.
 
-**Remark (the class is the whole difficulty of the block).** The operation is conjugate-linear in the second argument; that slot is shared with the five other sesquilinear operations of *The 12 Products of the Biquaternion Complex Space*, and what singles the block out among the twelve is that its value is the conjugate cross product alone, with no scalar part and no mixed term. Every later statement of the block is a consequence of the conjugate-linear slot: the ordinary operator calculus is unavailable for the left multiplications, the value is not conjugate-symmetric but conjugate-alternating, and the coincidence with the plain cross product holds only on the real elements.
+**Remark (the class is the whole difficulty of the block).** The operation is conjugate-linear in the second argument; that slot is shared with the five other sesquilinear operations of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and what singles the block out among the twelve is that its value is the conjugate cross product alone, with no scalar part and no mixed term. Every later statement of the block is a consequence of the conjugate-linear slot: the ordinary operator calculus is unavailable for the left multiplications, the value is not conjugate-symmetric but conjugate-alternating, and the coincidence with the plain cross product holds only on the real elements.
 
 ### Conjugate-Alternation
 
@@ -135,7 +135,7 @@ $$
 
 the triple $(\tilde Q_1,\tilde Q_2,\tilde{Q}_3)=(\vec e_x,\vec e_x,i\vec e_y)$ gives the value $-2i\vec e_y$, which is not zero.
 
-*Proof.* The catalogue *The 12 Products of the Biquaternion Complex Space* declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $\vec e_x\diamond \vec e_x=0$, $\vec e_x\diamond i\vec e_y=\vec e_x\times\overline{i\vec e_y}=\vec e_x\times(-i\vec e_y)=-i\vec e_z$ and $i\vec e_y\diamond \vec e_x=(i\vec e_y)\times \vec e_x=i(\vec e_y\times \vec e_x)=-i\vec e_z$. Hence the three reassociations are $(\vec e_x\diamond \vec e_x)\diamond i\vec e_y=0$, $(\vec e_x\diamond i\vec e_y)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=(-i\vec e_z)\times \vec e_x=-i\vec e_y$ and $(i\vec e_y\diamond \vec e_x)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=-i\vec e_y$, whose sum is $-2i\vec e_y$.
+*Proof.* The catalogue *Symmetric and Antisymmetric Decomposition of the Four General Products* declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $\vec e_x\diamond \vec e_x=0$, $\vec e_x\diamond i\vec e_y=\vec e_x\times\overline{i\vec e_y}=\vec e_x\times(-i\vec e_y)=-i\vec e_z$ and $i\vec e_y\diamond \vec e_x=(i\vec e_y)\times \vec e_x=i(\vec e_y\times \vec e_x)=-i\vec e_z$. Hence the three reassociations are $(\vec e_x\diamond \vec e_x)\diamond i\vec e_y=0$, $(\vec e_x\diamond i\vec e_y)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=(-i\vec e_z)\times \vec e_x=-i\vec e_y$ and $(i\vec e_y\diamond \vec e_x)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=-i\vec e_y$, whose sum is $-2i\vec e_y$.
 
 **Remark (the declaration of the cyclic sum).** The corpus declares the cyclic sum as the sum of the three reassociations, and the recomputation above uses that declaration. The older order of the inner brackets, $[[\tilde Q_1,\tilde Q_2],\tilde{Q}_3]+\cdots$ with $[\tilde Q_1,\tilde Q_2]=2(\tilde Q_1\diamond\tilde Q_2)$, and the sum of the reassociations do not have the same display; the value $-2i\vec e_y$ recorded here is the value of the declared sum, and it is the one tabulated in the catalogue.
 
@@ -189,7 +189,7 @@ The name $\mathrm{AQS}$ is read with the code of *The Algebraic Structures over 
 | the plain sesqualgebra | $\mathrm{GPS}$ | $\mathrm{SPS}$ | $\mathrm{APS}$ |
 | the quaternionic sesqualgebra | $\mathrm{GQS}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$ |
 
-**Remark (the place of the block).** The block is conjugate-linear in its second slot, pure-vector-valued, has no unit, and fails the Jacobi identity; its diagonal does not vanish and its image is the vector subspace. Of the twelve operations it is the only one whose value is the conjugate cross product alone, and on the real part it falls together with $\mathrm{APA}$. The names of the twelve are owned by *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and their laws by *The 12 Products of the Biquaternion Complex Space*, and the general construction of the parts by *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
+**Remark (the place of the block).** The block is conjugate-linear in its second slot, pure-vector-valued, has no unit, and fails the Jacobi identity; its diagonal does not vanish and its image is the vector subspace. Of the twelve operations it is the only one whose value is the conjugate cross product alone, and on the real part it falls together with $\mathrm{APA}$. The names of the twelve are owned by *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and their laws by *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the general construction of the parts by *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
 
 ## Summary
 
@@ -217,7 +217,7 @@ the conjugate cross product, the only operation of the twelve whose value is a s
 
 ## Further Reading
 
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the names, the laws and the table of the twelve operations.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the names, the laws and the table of the twelve operations.
 - [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the class-preserving exchange and the two halves.
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product the block splits.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the companion half.

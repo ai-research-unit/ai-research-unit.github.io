@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Biquaternion Algebra*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.
+Of the four general products of *The Four General Products and Their Relations*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *The Biquaternion Algebra and Its Vector Spaces*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi\in\mathbb{B}$ with
 
@@ -28,7 +28,7 @@ $$
 
 The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Comparison Between the Four General Products*.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *The Four General Products and Their Relations*.
 
 ## The Roots of Zero
 
@@ -332,7 +332,7 @@ The entries are forced: the centre, the quaternion subspace and the anti-quatern
 
 ## Summary
 
-The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* is the multiplication of the algebra $\mathbb{B}$ of *Introduction to the Biquaternion Algebra*. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ with $\Xi_x^2+\Xi_y^2+\Xi_z^2=0$, a four-real-parameter family; writing $\Xi_k=\xi_k+i\xi'_k$, the two real equations are $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$, and a worked instance is $\vec e_x+i\vec e_y$.
+The general plain bilinear product of *The Four General Products and Their Relations* is the multiplication of the algebra $\mathbb{B}$ of *The Biquaternion Algebra and Its Vector Spaces*. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ with $\Xi_x^2+\Xi_y^2+\Xi_z^2=0$, a four-real-parameter family; writing $\Xi_k=\xi_k+i\xi'_k$, the two real equations are $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$, and a worked instance is $\vec e_x+i\vec e_y$.
 
 The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, so every nilpotent is pure and its vector part is isotropic for the general plain bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\vec u_p+i\vec u_{p'})$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
 

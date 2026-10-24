@@ -235,4 +235,4 @@ no Peirce calculus.
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its image, the one-sided action of the unit and the absence of a unit
 - [The Adjoint Operators of the Antisymmetric Quaternionic Algebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html), for the operators $L_{\tilde Q_4}$, their matrices, their ranks and the elements for which the rank drops
 - [The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra](the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.html), for the form whose radical is the image of the projection
-- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the twelve operations and their two alternating rows
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve operations and their two alternating rows

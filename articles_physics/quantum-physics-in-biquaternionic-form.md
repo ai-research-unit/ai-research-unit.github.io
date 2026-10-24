@@ -45,7 +45,7 @@ This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the n
 
 ### The Forms on $\mathbb{M}_+$
 
-The algebra carries four forms, the scalar parts of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $\langle\cdot,\cdot\rangle_{\natural*}$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $\langle\cdot,\cdot\rangle_{\natural}$.
+The algebra carries four forms, the scalar parts of the four general products of *The Four General Products and Their Relations*; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $\langle\cdot,\cdot\rangle_{\natural*}$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $\langle\cdot,\cdot\rangle_{\natural}$.
 
 **The plain form.** For two Hermitian elements $\tilde H_1 = h_{1t}\,e_t + i\vec h_1$ and $\tilde H_2 = h_{2t}\,e_t + i\vec h_2$, the plain form is
 

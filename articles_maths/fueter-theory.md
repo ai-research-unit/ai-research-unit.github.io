@@ -19,7 +19,7 @@ The boundaries are these. The general hypercomplex theory — left and right reg
 
 ### The Algebra and the Operator
 
-Let $\mathbb{H}$ be the real quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and relations $\vec e_\mu^2=-e_t$, $\vec e_\mu\vec e_\nu=-\vec e_\nu\vec e_\mu$ for $\mu\neq\nu$, and $\vec e_x\vec e_y=\vec e_z$. A quaternion is written $q=q_t+\vec q$, $q_t\in\mathbb{R}$, $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; its conjugate is $q^{\natural}=q_t-\vec q$, its norm is $N(q)=q q^{\natural}=|q|^2=q_t^2+q_x^2+q_y^2+q_z^2$, and every nonzero quaternion is invertible with $q^{-1}=q^{\natural}/|q|^2$. The algebra is identified with $\mathbb{R}^4$ through the basis, and open sets of $\mathbb{H}$ with open sets of $\mathbb{R}^4$.
+Let $\mathbb{H}$ be the real quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and relations $\vec e_\mu^2=-e_t$, $\vec e_\mu\vec e_\nu=-\vec e_\nu\vec e_\mu$ for $\mu\neq\nu$, and $\vec e_x\vec e_y=\vec e_z$. A quaternion is written $q=q_t+\vec q$, $q_t\in\mathbb{R}$, $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; its conjugate is $q^{\natural}=q_t-\vec q$, its norm is $\langle q\rangle_{\natural}=q q^{\natural}=|q|^2=q_t^2+q_x^2+q_y^2+q_z^2$, and every nonzero quaternion is invertible with $q^{-1}=q^{\natural}/|q|^2$. The algebra is identified with $\mathbb{R}^4$ through the basis, and open sets of $\mathbb{H}$ with open sets of $\mathbb{R}^4$.
 
 **Definition.** The **Fueter operator** and its conjugate are
 

@@ -330,10 +330,12 @@ the norm reads $\langle Q\rangle = (\operatorname{Re} Q)^2$, and invertibility d
 The three norms of the family are
 
 $$
-N_{\mathbb{C}}(A) = a^2 + a'^2, \qquad N_{\mathbb{D}}(A) = a^2 - a'^2, \qquad N_{\mathbb{D}'}(Q) = q^2,
+\langle A\rangle_{*} = a^2 + a'^2 \ \text{ in } \mathbb{C}, \qquad
+\langle A\rangle_{*} = a^2 - a'^2 \ \text{ in } \mathbb{D}, \qquad
+\langle Q\rangle_{*} = q^2 \ \text{ in } \mathbb{D}',
 $$
 
-for $\mathbb{C}$, the split complex numbers $\mathbb{D} = \mathbb{R}[j]$ and the dual numbers. They are the three real binary quadratic forms of rank two, two and one respectively: positive-definite, indefinite non-degenerate, and degenerate.
+for the complex numbers, the split complex numbers $\mathbb{D} = \mathbb{R}[j]$ and the dual numbers. They are the three real binary quadratic forms of rank two, two and one respectively: positive-definite, indefinite non-degenerate, and degenerate.
 
 - In $\mathbb{C}$ the norm never vanishes away from the origin, and every nonzero element is a unit; the norm-one group is the circle.
 - In the split complex $\mathbb{D}$ the norm is indefinite, its null set is the pair of linear null directions on which the zero divisors live, and the norm-one group is a hyperbola, with two branches.
