@@ -83,6 +83,11 @@ $$</p>
 <p><em>Proof.</em> The unit criterion writes the complement of the cone as the units; a zero set is closed, so its complement is open; a proper algebraic subset has empty interior, so its complement is dense. The cone has real dimension $6$ in the real $8$-dimensional algebra, hence codimension $2$.</p>
 <p><strong>Proposition (the centre).</strong> The centre of $\mathbb{B}^\times$ is $Z(\mathbb{B}^\times)=\mathbb{C}^\times e_t\cong\mathbb{C}^\times$, a closed subgroup of real dimension $2$; and $Z(\mathbb{B}^\times)=\mathbb{B}^\times$ if and only if the algebra is commutative, which it is not.</p>
 <p><em>Proof.</em> An element commutes with all of $\mathbb{B}$ exactly when it is a complex scalar multiple of $e_t$, because the centre of the biquaternion algebra is $\mathbb{C}e_t$; restricting to the units gives the nonzero scalars, isomorphic to $\mathbb{C}^\times$ as a topological group and of real dimension $2$. The algebra of quaternions is not commutative, so the centre is proper.</p>
+<p><strong>The eigenvalue map.</strong> For a unit $\tilde Q$, both eigenvalues $\lambda_\pm=Q_t\pm iB$ are non-zero, because $\lambda_+\lambda_-=N(\tilde Q)\neq0$. For a fixed choice of $B$ the ordered pair is a map
+$$
+\mathbb{B}^\times\longrightarrow(\mathbb{C}^\times)^2,\qquad \tilde Q\longmapsto(\lambda_+,\lambda_-),
+$$
+and the other choice of root exchanges the two coordinates. The map is surjective: given $\mu_\pm\neq0$, the element $\tilde Q=\frac{\mu_++\mu_-}{2}e_t+\frac{\mu_+-\mu_-}{2i}\vec e_z$ has spectrum $\{\mu_+,\mu_-\}$, the order depending on the choice of $B$. It is not injective: two units with the same eigenvalues differ by the direction of the vector part when $B\neq0$, and by a nilpotent part when $B=0$. It is not a group homomorphism: $\vec e_x$ and $\vec e_y$ both have eigenvalues $(i,-i)$, while $\vec e_x\vec e_y=\vec e_z$ has $(i,-i)$, not $(-1,-1)$.</p>
 <h2 id="the-determinant-and-the-matrix-model">The Determinant and the Matrix Model</h2>
 <p>The determinant of the matrix model is a group homomorphism onto the nonzero scalars, and its kernel is the determinant-one group.</p>
 <p><strong>Theorem (the determinant sequence).</strong> The determinant is a surjective homomorphism of topological groups,</p>

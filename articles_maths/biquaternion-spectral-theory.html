@@ -137,6 +137,44 @@ $$</p>
 </ul>
 <p>So $\dim_{\mathbb{C}} \mathbb{C}[\tilde{Q}]$ is $2$ in the first two cases and $1$ in the scalar case, and the isomorphism type is the same dichotomy as the conjugacy classification of §<em>Similarity Classes and the Eigenvalue Dichotomy</em>.</p>
 <p><strong>The functional calculus.</strong> Since $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[x]/(m_{\tilde{Q}})$, every power series $F(A) = \sum_n a_n A^n$ with complex coefficients has $F(\tilde{Q}) = \alpha e_t + \beta \tilde{Q}$ for scalars $\alpha, \beta$ determined by the data of $F$ on the roots: the two values $F(Q_t \pm iB)$ in the semisimple case, and $F(Q_t)$ together with $F'(Q_t)$ in the local case. Consequently $F(\tilde{Q})$ converges if and only if $F$ converges at the root or roots (in the local case, $F$ and its derivative). Every elementary function of a single biquaternion is an instance, and the standard identities of complex analysis hold in $\mathbb{C}[\tilde{Q}]$ because it is commutative; this is the structural fact behind <em>Biquaternion Elementary Functions</em>.</p>
+<h2 id="the-eigenprojections-and-the-spectral-resolution">The Eigenprojections and the Spectral Resolution</h2>
+<p><strong>When $B\neq0$ the two eigenvalues are distinct, the element has a unique resolution into two noncentral idempotents, and those idempotents are the two idempotents of the pure root of the vector part.</strong></p>
+<p><strong>The pure root.</strong> Let $B$ be a square root of $Q_x^2+Q_y^2+Q_z^2$ and assume $B\neq0$. Put
+$$
+\vec U=\frac{\vec Q}{B},\qquad \vec\Xi=-i\vec U=-\frac{i\vec Q}{B}.
+$$
+Then $\vec U^2=-e_t$ and $\vec\Xi^2=e_t$: the vector part is $B$ times a root of $-e_t$, and $\vec\Xi$ is the corresponding root of $+1$. The choice of $B$ is two-fold; the other root replaces $\vec\Xi$ by $-\vec\Xi$ and exchanges the two objects below. The unordered pair $\{\tilde\Pi_+,\tilde\Pi_-\}$ is determined by $\tilde{Q}$; the ordered pair only up to that exchange. The labelling is canonical when $B$ is chosen real and positive, which is possible exactly when $Q_x^2+Q_y^2+Q_z^2$ is a positive real number; otherwise the choice of $B$ is a convention.</p>
+<p><strong>The eigenprojections.</strong> The halving map of <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Idempotents</em>, gives
+$$
+\tilde\Pi_+=\tfrac12(e_t+\vec\Xi),\qquad \tilde\Pi_-=\tfrac12(e_t-\vec\Xi).
+$$
+They are idempotent, primitive, orthogonal and complete, $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$. They are noncentral, and they depend on $\tilde Q$ through $\vec\Xi$: they are not the fixed pair of a commutative algebra.</p>
+<p><strong>Theorem (spectral resolution).</strong> With $\lambda_\pm=Q_t\pm iB$,
+$$
+\tilde Q\tilde\Pi_\pm=\lambda_\pm\tilde\Pi_\pm,\qquad
+\boxed{\;\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-\;}
+$$
+The resolution is unique up to the exchange of the two labels, and the idempotents are polynomials in $\tilde Q$:
+$$
+\tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},\qquad \lambda_+-\lambda_-=2iB.
+$$</p>
+<p><strong>Proof.</strong> Since $\vec Q=B\vec U=iB\vec\Xi$ and $\vec\Xi^2=e_t$,
+$$
+\tilde Q\tilde\Pi_+=(Q_te_t+iB\vec\Xi)\tfrac12(e_t+\vec\Xi)=\tfrac12(Q_t+iB)(e_t+\vec\Xi)=\lambda_+\tilde\Pi_+,
+$$
+and the computation for $\tilde\Pi_-$ is the same with $-iB$ and $-\vec\Xi$. Summing the two relations gives the resolution, since $\tilde\Pi_++\tilde\Pi_-=e_t$. The Lagrange formula inverts the linear system $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$, $\tilde\Pi_++\tilde\Pi_-=e_t$, and the eigenvalues are distinct because $B\neq0$. $\square$</p>
+<p>Uniqueness is that of <em>The Eigenvalue Decomposition of an Element</em>, §<em>Uniqueness</em>: an element with distinct eigenvalues has exactly one eigenprojection per eigenvalue.</p>
+<p><strong>Polynomial calculus and inverse.</strong> For every polynomial $f\in\mathbb{C}[X]$,
+$$
+f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-,
+$$
+and, when $\tilde Q$ is a unit,
+$$
+\tilde Q^{-1}=\lambda_+^{-1}\tilde\Pi_++\lambda_-^{-1}\tilde\Pi_-=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
+$$
+the second equality because $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ and $\lambda_-\tilde\Pi_++\lambda_+\tilde\Pi_-=\tilde Q^{\natural}$.</p>
+<p><strong>Peirce reading and the fibre.</strong> Relative to the pair $(\tilde\Pi_+,\tilde\Pi_-)$ the Peirce corners are the two diagonal lines $\mathbb{C}\tilde\Pi_\pm$ and the two square-zero mixed lines; the element lies in the diagonal part, which is the centraliser $\mathbb{C}[\tilde Q]$. The corners and their multiplication are in <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>. With the unordered pair of eigenprojections fixed, the map to the unordered spectrum is two-to-one, the two preimages differing by the exchange of the labels; the coordinate change to the scalar part and the complex angle, and the parity-matched lattice of the logarithm, are in <em>Biquaternion Elementary Functions</em>, §<em>The Logarithm</em>.</p>
+<p>When $\vec U$ is real the two idempotents are Hermitian and the resolution is the spectral theorem of §<em>The Spectral Theorem</em>.</p>
 <h2 id="similarity-classes-and-the-eigenvalue-dichotomy">Similarity Classes and the Eigenvalue Dichotomy</h2>
 <p><strong>Definition 5.1.</strong> Two biquaternions $\tilde Q_1$ and $\tilde Q_2$ are <strong>conjugate</strong> (or <strong>similar</strong>) if $\tilde{Q}_2 = S\tilde{Q}_1S^{-1}$ for some invertible $S \in \mathbb{B}$. The functionals $T, D$ are the coefficients of the characteristic polynomial.</p>
 <p><strong>Theorem 5.2 (classification).</strong> Let $T = T(\tilde{Q})$, $D = D(\tilde{Q})$, and let $\Delta = T^2 - 4D = 4(Q_t^2 - \langle\tilde{Q}\rangle_{\natural}) = -4B^2$ be the discriminant.</p>
@@ -188,6 +226,14 @@ $$
 \tilde\Pi_1 = \frac{\tilde{Q}-\lambda_2e_t}{\lambda_1-\lambda_2}, \qquad \tilde\Pi_2 = \frac{\tilde{Q}-\lambda_1e_t}{\lambda_2-\lambda_1}.
 $$
 <strong>Proof.</strong> This is Theorem 11.1 transported to $\mathbb{B}$, identifying a normal element with its diagonal form $\frac{\lambda_1+\lambda_2}{2}e_t + \frac{i(\lambda_1-\lambda_2)}{2}\vec e_z$ and using that Hermitian conjugation is a $*$-involution on $\mathbb{B}$.</p>
+<p><strong>The Hermitian criterion.</strong> Let $B\neq0$, $\vec U=\vec Q/B$ and $\vec\Xi=-i\vec U$.</p>
+<p><strong>Proposition.</strong> The following are equivalent: (i) $\tilde\Pi_\pm$ are Hermitian; (ii) $\vec U$ is real; (iii) $\vec\Xi$ is purely imaginary; (iv) $\tilde{Q}$ is normal.</p>
+<p><strong>Proof.</strong> Since $\vec\Xi=-i\vec U$ and $\vec\Xi^{*}=-\overline{\vec\Xi}$,
+$$
+\tilde\Pi_\pm^{*}=\frac12\bigl(e_t\pm\vec\Xi^{*}\bigr)=\frac12\bigl(e_t\mp i\overline{\vec U}\bigr),
+$$
+so (i) holds exactly when $\overline{\vec U}=\vec U$, which is (ii); and (ii) and (iii) are the same condition, since $\vec U=i\vec\Xi$. If (ii) holds, then $\tilde{Q}^{*}=\overline{Q_t}e_t-\overline{B}\,\vec U$ lies in $\mathbb{C}[\tilde{Q}]$, so $\tilde{Q}$ commutes with $\tilde{Q}^{*}$ and (iv) holds. Conversely, if (iv) holds, Theorem 11.2 writes $\tilde{Q}=\lambda_1\tilde\Pi_1+\lambda_2\tilde\Pi_2$ with Hermitian idempotents; since $B\neq0$ the eigenvalues are distinct, and the formulas of that theorem identify $\tilde\Pi_1,\tilde\Pi_2$ with $\tilde\Pi_\pm$, so (i) holds. $\square$</p>
+<p>The pair is then the Hermitian pair of the root $\vec\Xi=-i\vec u$ over a real unit vector $\vec u$ (<em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Families of Idempotents</em>), and the resolution is the spectral theorem read in the biquaternion algebra. When in addition $\tilde{Q}$ is Hermitian, $Q_t\in\mathbb{R}$ and $\vec Q=i\vec q'$ with $\vec q'$ real, one takes $B=i\lvert\vec q'\rvert$, so that $\lambda_\pm=Q_t\mp\lvert\vec q'\rvert$ are real.</p>
 <h2 id="the-s-spectrum-and-the-quaternionic-spectral-theorem">The S-Spectrum and the Quaternionic Spectral Theorem</h2>
 <p>§<em>The Spectral Theorem</em> works for biquaternions because $\mathbb{C}$ is central. When the scalars do not commute, as over $\mathbb{H}$, the left/right ambiguity returns and a different spectrum is needed: the <strong>S-spectrum</strong>.</p>
 <p><strong>Definition 12.1.</strong> For $T \in M_n(\mathbb{H})$, the <strong>S-spectrum</strong> is $\sigma_S(T) = \{s \in \mathbb{H} : T^2 - 2\mathrm{Re}(s)T + |s|^2I \text{ is not invertible}\}$. It rests on the identity $s^2 - 2\mathrm{Re}(s)s + |s|^2 = 0$, which holds because $s - \mathrm{Re}(s)$ is pure imaginary.</p>

@@ -80,7 +80,7 @@ $$</p>
 $$</p>
 <p>It is the algebraic member of the polar decompositions of $\mathbb B$: it uses only the norm, the two conjugations and the square root, and it chooses no coordinate on the unit fibre. The four factors are the biquaternion analogue of the two factors of the quaternion case, and their real dimensions $1+1+3+3$ fill the eight of the algebra.</p>
 <p>Three differences from the quaternion case shape the whole article. The norm is complex, so the modulus is a complex number fixed only after a branch is chosen, and it splits into a positive scale and a central phase on the unit circle. The unit factor is not compact: it is the norm-one group $SL_2(\mathbb C)$, of real dimension six. And the unit factor splits again, into a Hermitian positive factor, the <strong>boost</strong>, and a unitary factor, the <strong>rotor</strong>; the rotor is the compact part, a unit real quaternion, and the boost carries the three non-compact directions. The quaternion article has one factor beyond the scale because its norm is definite; the biquaternion article has three, because its norm is indefinite and its unit group is not compact.</p>
-<p>The plan is as follows. The two factors are defined (§<em>The Two Factors</em>), the four factors are described (§<em>The Four Factors</em>), the three pairings are introduced (§<em>The Three Pairings</em>), existence and uniqueness are proved (§<em>Existence and Uniqueness</em>), the group of units and its maximal compact subgroup are described (§<em>The Group of Units and the Unitary Group</em>), the two real halves are distinguished (§<em>The Two Halves</em>), the matrix picture is given (§<em>The Matrix Picture</em>), the algorithm is stated (§<em>The Algorithm</em>), one element is computed in full (§<em>Worked Example</em>), and the article closes with the summary and the notation.</p>
+<p>The plan is as follows. The two factors are defined (§<em>The Two Factors</em>), the four factors are described (§<em>The Four Factors</em>), the three pairings are introduced (§<em>The Three Pairings</em>), existence and uniqueness are proved (§<em>Existence and Uniqueness</em>), the group of units and its maximal compact subgroup are described (§<em>The Group of Units and the Unitary Group</em>), the two real halves are distinguished (§<em>The Two Halves</em>), the matrix picture is given (§<em>The Matrix Picture</em>), the reading on the module is given (§<em>The Operator Reading: the Twist</em>), the algorithm is stated (§<em>The Algorithm</em>), one element is computed in full (§<em>Worked Example</em>), and the article closes with the summary and the notation.</p>
 <p>The conventions and the symbols are those of <em>The Four Forms and the Four Algebraic Norms</em>, <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Group of Units</em> and <em>Conventions in Mathematics</em>; the symbols are collected in §<em>Summary of Notation</em>. The word is written with the plain product, the only associative product of the twelve of <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>, and the matrix model is $M_2(\mathbb C)$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb C)$ of Biquaternions</em>.</p>
 <p>Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-two-factors">The Two Factors</h2>
@@ -472,6 +472,41 @@ $$</p>
 </tbody>
 </table></div>
 <p>The table is the matrix counterpart of the four-factor table of §<em>The Four Factors</em>, and the two rows that the matrix polar decomposition merges are the two pairs that the algebra distinguishes.</p>
+<h2 id="the-operator-reading-the-twist">The Operator Reading: the Twist</h2>
+<p>The word also acts. On the module $S=\mathbb{C}^2$ left multiplication is</p>
+<p>$$
+\psi\longmapsto\mathsf M_2(\tilde Q)\,\psi=\Rho\,\mathsf M_2(\tilde U)\,\psi ,
+$$</p>
+<p>with $\mathsf M_2(\tilde U)\in SL_2(\mathbb{C})$. The scalar $\Rho$ needs no module of its own: by Schur's lemma the centre acts on a simple module by a scalar, so the scale and the phase multiply the module instead of enlarging it. They produce a one-dimensional representation of the scaling group,</p>
+<p>$$
+\chi(\Rho)=\Rho ,
+$$</p>
+<p>and the module on which the general element acts is the spinor module <strong>twisted by $\chi$</strong>, written $S\otimes\chi$. The norm-one case $\Rho=1$ is the untwisted case; the untwisted operators are the norm-one elements, the double cover of the Lorentz group.</p>
+<p>A <strong>spinor</strong> is a vector of the module, not the operator and not the rotor. The word writes the operator as $\Rho\tilde U$; the spinor is what that operator acts on. The distinction matters because the operator has more factors than the module can distinguish: the module sees the scale and the phase only through the single scalar $\Rho$.</p>
+<h3 id="the-labels-of-the-twisted-representations">The Labels of the Twisted Representations</h3>
+<p>A character of the scaling group is</p>
+<p>$$
+\chi_{a,b}(A)=A^{a}\bar A^{b},\qquad A=r\zeta,\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
+$$</p>
+<p>the last condition making the character single-valued on $\mathbb{C}^{\times}$. The irreducible smooth finite-dimensional modules of the group of units are</p>
+<p>$$
+(j,j')_{(a,b)}=V_j\boxtimes V_{j'}\otimes\chi_{a,b},
+$$</p>
+<p>where $V_j$ is the $SL_2(\mathbb{C})$-module of spin $j$ of <em>Biquaternion Rotations and Lorentz Transformations</em>, §<em>Finite-Dimensional Representations of the Lorentz Group</em>. The central element $-I$ acts on $(j,j')$ by $(-1)^{2j+2j'}$ and through the character by $(-1)^{a-b}$, so a twisted module exists exactly when</p>
+<p>$$
+a-b\equiv 2j+2j'\pmod 2 .
+$$</p>
+<p>The defining module of $GL_2(\mathbb{C})$ is $(\tfrac12,0)_{(1,0)}$: a spinor is multiplied by $A$, which is a square root of the determinant character, since $\det(AI)=A^{2}$.</p>
+<p>Reality and unitarity read off the character. Complex conjugation exchanges the two factors and conjugates the character, $\overline{(j,j')_{(a,b)}}=(j',j)_{(b,a)}$, so a module is self-conjugate exactly when $j=j'$ and $b=a$. And $\lvert\chi_{a,b}(A)\rvert=r^{\mathrm{Re}(a+b)}$, so the twist is unitary exactly when $\mathrm{Re}(a+b)=0$; even then the norm-one part contributes no nontrivial finite-dimensional unitary representation, which is the non-unitarity recorded for $SL_2(\mathbb{C})$ in the rotations article.</p>
+<h3 id="what-the-algebra-carries">What the Algebra Carries</h3>
+<p>The algebra is four-dimensional over $\mathbb{C}$, and its natural self-actions carry a short list:</p>
+<ul>
+<li><strong>Left multiplication.</strong> $\mathbb{B}\cong S\oplus S$ as a left module, so $L$ carries two copies of $(\tfrac12,0)_{(1,0)}$.</li>
+<li><strong>Right multiplication.</strong> $\mathbb{B}\cong S^{*}\oplus S^{*}$ with $S^{*}\cong S$, so $R$ carries two copies of the same chirality, twisted the same way. Neither one-sided action produces the opposite handedness.</li>
+<li><strong>The sandwich.</strong> It is irreducible on the algebra and carries $(\tfrac12,\tfrac12)_{(1,1)}$, the four-vector scaled by $r^{2}$.</li>
+<li><strong>Nothing higher.</strong> The modules of $M_2(\mathbb{C})$ are direct sums of copies of $S$, so every irreducible summand is the spinor and the dimension is even. The modules $(1,0)$, $(1,1)$ and $(\tfrac32,0)$ are not of that form. The tower is generated by the symmetric powers of $S$ and of $\bar S$, built in the tensor category.</li>
+</ul>
+<p>The regular modules themselves are <em>Modules over the Biquaternion Algebra</em>; the two-sided operator that carries the four-vector is <em>Two-Sided Operator and the Polar Decomposition</em>.</p>
 <h2 id="the-algorithm">The Algorithm</h2>
 <p>The factors are computed in five steps, each a finite sequence of algebraic operations on the eight real coordinates of $\tilde Q$.</p>
 <p><strong>Step 1, the norm.</strong> Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is a zero divisor and has no decomposition. Otherwise continue.</p>
@@ -557,6 +592,7 @@ $$</p>
 <p>The group of units is $\mathbb B^{\times}\cong GL_2(\mathbb C)$. The map $\tilde Q\mapsto(\Rho,\tilde U)$ is a bijection onto $\mathcal H\times SL_2(\mathbb C)$ but not a group homomorphism: the phase is multiplicative only up to the sign that the branch forces, and that sign is absorbed by the simultaneous sign of the phase and the rotor. The maximal compact subgroup is $U(2)$, the set of words with unit scale and trivial boost, and it is a deformation retract of the group; its fundamental group is $\mathbb Z$.</p>
 <p>The four factors regroup into the three pairings: the quaternion pairing, which joins the scale to the rotor; the Hamilton root pairing, which joins the scale to the phase and reads the rest on a root of $-e_t$; and the Cartan Hermitian pairing, which joins the scale to the boost and the phase to the rotor. The first two are partial, the third is total.</p>
 <p>In the matrix picture the four factors group into the positive factor $rM_{\mathrm b}$ and the unitary factor $\zeta M_{\mathrm r}$ of the polar decomposition of $M_2(\tilde Q)$. The algebra sees the finer split; the matrix decomposition does not.</p>
+<p>On the module $S=\mathbb{C}^{2}$ the word acts by $\tilde Q\mapsto\Rho\mathsf M_2(\tilde U)$. The scale and the phase multiply the module instead of enlarging it, so the module is the spinor module twisted by $\chi(\Rho)=\Rho$. The irreducible smooth finite-dimensional modules of the unit group are $(j,j')_{(a,b)}=V_j\boxtimes V_{j'}\otimes\chi_{a,b}$ with $a-b\equiv2j+2j'\pmod2$, and the algebra carries the twisted spinor, its two copies under left multiplication, and the twisted four-vector under the sandwich, and nothing higher.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -666,6 +702,22 @@ $$</p>
 <td>$M_2$</td>
 <td>the isomorphism $\mathbb B\to M_2(\mathbb C)$, $M_2(\vec e_k)=-i\sigma_k$</td>
 </tr>
+<tr>
+<td>$S=\mathbb{C}^{2}$</td>
+<td>the spinor module, on which $\mathbb B$ acts by left multiplication</td>
+</tr>
+<tr>
+<td>$\chi(\Rho)=\Rho$</td>
+<td>the twist of the module by the scale and the phase</td>
+</tr>
+<tr>
+<td>$\chi_{a,b}(A)=A^{a}\bar A^{b}$, $a-b\in\mathbb{Z}$</td>
+<td>the characters of $\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>$(j,j')_{(a,b)}=V_j\boxtimes V_{j'}\otimes\chi_{a,b}$</td>
+<td>the twisted irreducible modules of the group of units</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -679,6 +731,8 @@ $$</p>
 <li><a href="the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html">The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</a>, the grouping of the scale with the phase, read on a root of $-e_t$.</li>
 <li><a href="the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</a>, the grouping of the scale with the boost and the phase with the rotor.</li>
 <li><a href="the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html">The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone</a>, the extension of the two-factor Cartan form to the whole algebra, with the positive semidefinite factor, the partial isometry and the rank-one reading of the cone.</li>
+<li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, §<em>Finite-Dimensional Representations of the Lorentz Group</em>, for the spin-$j$ modules, the double cover and the non-unitarity.</li>
+<li><a href="modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a>, for the three regular modules and the bi-module structure used in §<em>What the Algebra Carries</em>.</li>
 </ul>
       </div>
     </main>

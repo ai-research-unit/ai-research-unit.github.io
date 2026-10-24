@@ -154,7 +154,7 @@ $$</p>
 </tr>
 <tr>
 <td>the eigenvalues and the axis</td>
-<td><em>Eigenvalue Decomposition and Eigenbasis of a Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em></td>
+<td><em>Biquaternion Spectral Theory</em>, §<em>The Biquaternion Spectrum</em></td>
 <td>the Hamilton row of the comparison</td>
 </tr>
 <tr>
@@ -313,7 +313,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\tilde q_r\,(e_t+iT)(e_t-iT)\,\tilde q_r^{\natural}=\tilde q_r\,(e_t+T^{2})\,\tilde q_r^{\natural}=0 .
 $$
 That failure is therefore on the null cone and nowhere else. Off the cone the tangent has a real solution, and the construction produces $\tilde q$ and $\tilde\Psi$ with $\tilde Q=\tilde q\exp(i\tilde\Psi)$. Taking norms and writing $\alpha=\operatorname{Sc}\tilde\Psi$ gives $\langle\tilde Q\rangle_{\natural}=\langle\tilde q\rangle_{\natural}\exp(2i\alpha)=r^{2}\exp(2i\alpha)\neq0$, since $\tilde q$ is a nonzero real quaternion. The condition $\tilde q_r\neq0$ is therefore exactly the extra condition on the word's domain, and the set $\{\tilde q_r\neq0\}$ is not contained in the word's domain.</p>
-<p>The Hamilton domain and the quaternion construction domain are not nested either: $1+\vec e_x+i\vec e_y$ has $\tilde q_r = 1+\vec e_x \neq 0$ but no Hamilton axis, and $i\vec e_x+i\vec e_y$ has a Hamilton axis but no quaternion construction. </p>
+<p>The Hamilton domain and the quaternion construction domain are not nested either: $1+\vec e_x+i\vec e_y$ has $\tilde q_r = 1+\vec e_x \neq 0$ but no Hamilton axis, and $i\vec e_x+i\vec e_y$ has a Hamilton axis but no quaternion construction.</p>
 <h3 id="the-factorisation-and-the-construction">The Factorisation and the Construction</h3>
 <p>The factorisation and the construction are therefore different statements. The factorisation is the regrouping of the four factors and exists on the whole complement of the null cone; the construction is the formula $\tan\tilde\Psi=\tilde q_r^{-1}\tilde q_i$ and needs the word to exist and $\tilde q_r$ invertible. On $i\vec e_x+i\vec e_y$ the factorisation is explicit,</p>
 <p>$$
@@ -543,7 +543,7 @@ $$</p>
 \Rho = \sqrt{\langle\tilde Q\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_t}{\Rho}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{\Rho}\in[0,1] ,
 $$</p>
 <p>so both the modulus and the angle are real and $\vec U = \vec q/|\vec q|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar decomposition of the companion articles <em>Modulus–Unit Polar Decomposition of Quaternions</em> and <em>Exponential Polar Decomposition of Quaternions</em>, in the two forms they give it: the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ with $r = \Rho$ and $\tilde u_{\mathrm r} = \exp(\vec U\Theta)$, and the exponential form $\exp(\ln r)\exp(\mu\tfrac{\theta}{2})$ with $\mu = \vec U$ and $\theta = 2\Theta$, the exponential article's $\theta$ being twice the angle of the unit factor, which is $\Theta$ here. The identification is exact rather than asymptotic. The quaternion pairing is available on the same elements and is degenerate there: $\tilde q_i = 0$, hence $\tan\tilde\Psi = 0$, $\tilde\Psi = 0$ and $\tilde q = \tilde q_r = \tilde{Q}$, the element itself in the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ of the modulus–unit article, with $r = \sqrt{\langle\tilde Q\rangle_{\natural}}$ and $\tilde u_{\mathrm r} = \tilde{Q}/r$; the second factor is trivial. In this limit the two named pairings are two readings of the same two-factor word of the modulus–unit article: the quaternion pairing gives the word itself, with its second factor trivial, and the Hamilton pairing gives the exponential form of its unit factor.</p>
-<p><strong>A complex scalar.</strong> If $\tilde{Q} = ze_t$ with $z\in\mathbb{C}$ and $\operatorname{Re}z\neq0$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable. This is the scalar regime of <em>Eigenvalue Decomposition and Eigenbasis of a Biquaternion</em>, §<em>The Scalar Regime</em>: the element is semisimple with a repeated eigenvalue, and its eigenprojections are not unique. The quaternion pairing gives</p>
+<p><strong>A complex scalar.</strong> If $\tilde{Q} = ze_t$ with $z\in\mathbb{C}$ and $\operatorname{Re}z\neq0$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable. This is the scalar regime of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Scalar Regime and the Vertex</em>: the element is semisimple with a repeated eigenvalue, and its eigenprojections are not unique. The quaternion pairing gives</p>
 <p>$$
 \tilde q_r = (\operatorname{Re}z)e_t, \qquad \tilde q_i = (\operatorname{Im}z)e_t, \qquad \tan\tilde\Psi = \frac{\operatorname{Im}z}{\operatorname{Re}z}\,e_t, \qquad \tilde q = \frac{\operatorname{Re}z}{\cos\tilde\Psi}\,e_t = |z|\,e_t ,
 $$</p>
@@ -745,7 +745,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-biquaternion.html">Eigenvalue Decomposition and Eigenbasis of a Biquaternion</a>, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.</li>
+<li><a href="biquaternion-spectral-theory.html">Biquaternion Spectral Theory</a>, §<em>The Biquaternion Spectrum</em>, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.</li>
 <li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential and the logarithm of which the second factor of the pairing is built, and which carry the branch ambiguity of the construction.</li>
 <li><a href="exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a>, for the four exponentials and the existence and uniqueness of the word that the pairing regroups.</li>
 <li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and §<em>The Algorithm</em> of that article for the procedure itself, the factors in the coordinates of $\tilde{Q}$ and the exponents with their positions.</li>
