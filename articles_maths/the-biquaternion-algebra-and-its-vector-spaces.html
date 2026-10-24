@@ -231,6 +231,57 @@ $$</p>
 <p><strong>Theorem.</strong> With the general plain bilinear product as its multiplication, $\mathbb{B}$ is a four-dimensional associative unital non-commutative $\mathbb{C}$-algebra.</p>
 <p><strong>Proof.</strong> By the propositions above the multiplication is a $\mathbb{C}$-bilinear, associative, unital binary operation on the $\mathbb{C}$-vector space $\mathbb{B}$, which is the definition of an algebra over the commutative ring $\mathbb{C}$ in the broad sense of <em>Algebras: A General Introduction</em>; the two hypotheses the corpus adds to that sense, associativity and an identity, are the subjects of <em>Associative Algebras</em> and <em>Unital Algebras</em> and both hold. The dimension is four on the basis $e_t, \vec e_x, \vec e_y, \vec e_z$, and $\vec e_x \vec e_y \neq \vec e_y \vec e_x$.</p>
 <p>Every general statement about associative unital algebras is therefore available for $\mathbb{B}$: the two-sided ideals, the centre, the group of units, the modules and the opposite algebra. The rest of this article reads off the ones the multiplication alone decides.</p>
+<h2 id="left-alternativity-and-the-isolation-among-the-twelve">Left Alternativity and the Isolation among the Twelve</h2>
+<p><strong>The plain product is the only left-alternative one of the twelve structures on the space, and left alternativity is the exact threshold of the associative theory read in this article.</strong></p>
+<p>A product $\circ$ is <strong>left-alternative</strong> when</p>
+<p>$$
+\tilde Q_1\circ(\tilde Q_1\circ\tilde Q_2)=(\tilde Q_1\circ\tilde Q_1)\circ\tilde Q_2\qquad\text{for all }\tilde Q_1,\tilde Q_2,
+$$</p>
+<p>equivalently when the multiplication operators satisfy $L^{\circ}_{\tilde Q_1}L^{\circ}_{\tilde Q_1}=L^{\circ}_{\tilde Q_1\circ\tilde Q_1}$ at every element. In a left-alternative structure an idempotent gives a projector, $L_{\tilde\Pi}^{2}=L_{\tilde\Pi}$, and a square-zero element a square-zero operator, $L_{\tilde\Upsilon}^{2}=0$; the projector splits the space, and the square-zero operator produces the flag $\{0\}\subseteq\operatorname{im}L_{\tilde\Upsilon}\subseteq\ker L_{\tilde\Upsilon}\subseteq\mathbb{B}$.</p>
+<p><strong>Theorem (the isolation).</strong> Of the twelve structures of <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, the general plain product is the only left-alternative one.</p>
+<p><em>Proof.</em> The twelve come from the plain product by twisting the first slot with ${}^{\natural}$, twisting the second with ${}^{*}$, or (anti)symmetrising. Each destroys the law: the first twist demands $\tilde Q_1^{\natural}\tilde Q_1^{\natural}=\tilde Q_1^{\natural}\tilde Q_1$ for every $\tilde Q_1$, false at $\vec e_x$; the second equates a linear with a conjugate-linear operator; the (anti)symmetrisations add cross terms of a left and a right multiplication. The plain product itself is associative, hence left-alternative.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>structures</th>
+<th>left-alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain</td>
+<td>the algebra</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>symmetrised plain</td>
+<td>SPA, APA</td>
+<td>no</td>
+</tr>
+<tr>
+<td>first slot ${}^{\natural}$</td>
+<td>GQA</td>
+<td>no</td>
+</tr>
+<tr>
+<td>from GQA</td>
+<td>SQA, AQA</td>
+<td>no</td>
+</tr>
+<tr>
+<td>second slot ${}^{*}$</td>
+<td>GPS, GQS</td>
+<td>no</td>
+</tr>
+<tr>
+<td>from the sesquilinear</td>
+<td>SPS, APS, SQS, AQS</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The claim is about the law and not about single elements. Other structures contain an idempotent here and a square-zero element there, but no other structure carries the law, so the well-behaved elements of the others do not form a theory. The nearest case is the general quaternionic product, whose operator is a plain one with a conjugated index, $L^{\circ}_{\tilde Q_1}=L_{\tilde Q_1^{\natural}}$; it inherits the projector calculus only at the elements whose conjugate is an idempotent.</p>
 <h2 id="the-multiplication-as-a-scalar-extension">The Multiplication as a Scalar Extension</h2>
 <h3 id="the-tensor-product-of-the-two-multiplications">The Tensor Product of the Two Multiplications</h3>
 <p>The underlying space of $\mathbb{B}$ is the tensor product $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the two $\mathbb{R}$-algebras $\mathbb{C}$ and $\mathbb{H}$, whose algebra product is $(A \otimes h)(A' \otimes h') = (AA') \otimes (hh')$ of <em>Tensor Products of Algebras</em>. Under the identification $1 \otimes e_\mu \mapsto e_\mu$, $i \otimes e_\mu \mapsto ie_\mu$ of the two eight-dimensional real spaces — the one forced by $(i \otimes e_t)(1 \otimes e_\mu) = i \otimes e_\mu$ — this product is the general plain bilinear product: the two agree on the eight real basis elements $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$, and two $\mathbb{R}$-bilinear products agreeing on a real basis agree everywhere. <strong>The multiplication is the tensor product of the complex multiplication and the quaternion multiplication.</strong> Associativity is inherited from the two associative factors, and the unit is $1 \otimes 1 = e_t$.</p>
@@ -252,7 +303,7 @@ $$</p>
 A(\tilde Q_1 \tilde Q_2) = (A \tilde Q_1)\tilde Q_2 = \tilde Q_1(A \tilde Q_2) , \qquad A \in \mathbb{C} ,
 $$</p>
 <p>which is the bilinearity proposition read as the axiom of an algebra: the first equality is associativity with the scalar written as $Ae_t$, and the second is where centrality enters, because $\tilde Q_1(A \tilde Q_2) = (\tilde Q_1\, Ae_t)\tilde Q_2$ agrees with $(Ae_t\, \tilde Q_1)\tilde Q_2$ exactly when $Ae_t$ commutes with $\tilde Q_1$.</p>
-<h3 id="the-gate-a-central-element-of-square-math174">The Gate: a Central Element of Square $-1$</h3>
+<h3 id="the-gate-a-central-element-of-square-math189">The Gate: a Central Element of Square $-1$</h3>
 <p><strong>The gate, applied here.</strong> A $\mathbb{C}$-algebra structure on a real algebra, whose structure map lands in the centre, is the same thing as a <strong>central element $j$ with $j^2 = -1$</strong>, the scalar action being $(a + ib)\tilde Q = a\tilde Q + bj\tilde Q$. For $\mathbb{B}$ that element is the central imaginary $i$ itself — $j = i$ — and the complex structure it induces on the underlying real space is the real-linear map</p>
 <p>$$
 J : \mathbb{B} \longrightarrow \mathbb{B} , \qquad J(\tilde Q) = i\tilde Q , \qquad J^2 = -\mathrm{id} ,
@@ -268,13 +319,13 @@ $$</p>
 <p><strong>Corollary.</strong> The algebra is <strong>central</strong> over $\mathbb{C}$: the image of the structure map is the whole centre, so no scalar is lost and no non-scalar is admitted as a scalar. The centre is a subalgebra isomorphic to the field $\mathbb{C}$, and it is proper, the algebra being non-commutative.</p>
 <p><strong>Corollary.</strong> The scalars are determined by the multiplication: the centre is an invariant of the algebra, so the field $\mathbb{C}$ acting on $\mathbb{B}$ is recoverable from the product alone.</p>
 <h3 id="central-simplicity-and-the-absence-of-division">Central Simplicity and the Absence of Division</h3>
-<p><strong>Proposition.</strong> $\mathbb{B}$ is <strong>simple</strong>: its only two-sided ideals are $0$ and $\mathbb{B}$. This is <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>, cited and not repeated. Since the algebra is also central, it is a <strong>central simple</strong> $\mathbb{C}$-algebra, the subject of <em>Central Simple Algebras and the Brauer Group</em>.</p>
+<p><strong>Proposition.</strong> $\mathbb{B}$ is <strong>simple</strong>: its only two-sided ideals are $0$ and $\mathbb{B}$. This is <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>, cited and not repeated. Since the algebra is also central, it is a <strong>central simple</strong> $\mathbb{C}$-algebra, the subject of <em>Central Simple Algebras and the Brauer Group</em>.</p>
 <p><strong>Proposition.</strong> $\mathbb{B}$ is <strong>not a division algebra</strong>.</p>
 <p><strong>Proof.</strong> The product</p>
 <p>$$
 (e_t + i\vec e_x)(e_t - i\vec e_x) = e_t^2 - (i\vec e_x)^2 = e_t - i^2 \vec e_x^2 = e_t - e_t = 0
 $$</p>
-<p>vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_t + i\vec e_x$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are <em>Norm and Invertibility in the General Quaternionic Algebra</em>, and the zero divisors themselves are classified in <em>Zero Divisors of the Biquaternion Algebra</em>.</p>
+<p>vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_t + i\vec e_x$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>, and the zero divisors themselves are classified in <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Zero Divisors</em>.</p>
 <h2 id="generators-and-the-presentation">Generators and the Presentation</h2>
 <h3 id="the-generators">The Generators</h3>
 <p><strong>Proposition.</strong> $\mathbb{B}$ is generated, as a $\mathbb{C}$-algebra with unit, by $\vec e_x$ and $\vec e_y$; more generally by any two of $\vec e_x, \vec e_y, \vec e_z$.</p>
@@ -299,7 +350,7 @@ $$</p>
 \tilde Q^{*}=\bar Q_te_t-\overline{\vec Q} ,
 $$</p>
 <p>with $\tilde Q^{\flat}=-\tilde Q^{*}$ the <strong>anti-Hermitian</strong> one. They are involutions, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$; the group, its table, its orbits and the six fixed and anti-fixed subspaces are <em>The Group of Involutions</em>.</p>
-<p><strong>Remark (the algebra is a matrix algebra).</strong> Central simplicity and complex dimension four give $\mathbb{B}\cong M_2(\mathbb{C})$, the reduced norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ being the determinant of the model. The model is read in <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, and the reduced norm, invertibility and the zero divisors in <em>Norm and Invertibility in the Biquaternion Algebra</em>.</p>
+<p><strong>Remark (the algebra is a matrix algebra).</strong> Central simplicity and complex dimension four give $\mathbb{B}\cong M_2(\mathbb{C})$, the reduced norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ being the determinant of the model. The model is read in <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, and the reduced norm, invertibility and the zero divisors in <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>.</p>
 <h2 id="the-real-scalars">The Real Scalars</h2>
 <p><strong>Definition.</strong> The <strong>real reading</strong> of $\mathbb{B}$ is the same additive group over the subfield $\mathbb{R}$ of $\mathbb{C}$, obtained by restriction of scalars: the elements are unchanged and the scalar domain is cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$. The general element is written in the eight real coordinates of §<em>The Coordinate Systems</em>, on the real basis</p>
 <p>$$
@@ -350,7 +401,7 @@ $$</p>
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
 $$</p>
 <p>Its scalars enter through the structure map $\varphi(A) = Ae_t$, whose image is the scalar line and which is central; the centre is the scalar line, so the algebra is central simple; and it is not a division algebra, the product of $e_t + i\vec e_x$ and $e_t - i\vec e_x$ being zero. Two generators suffice, and the relations $\vec e_x^2 = \vec e_y^2 = -e_t$ and $\vec e_x \vec e_y + \vec e_y \vec e_x = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.</p>
-<p>The algebra is central simple of dimension four, so $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduced norm is the determinant of the model; the matrix model and the norm are <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Norm and Invertibility in the Biquaternion Algebra</em>. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — have the natural one as the unique $\mathbb{C}$-linear one, form the Klein four-group on the first four, and their fixed and anti-fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.</p>
+<p>The algebra is central simple of dimension four, so $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduced norm is the determinant of the model; the matrix model and the norm are <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — have the natural one as the unique $\mathbb{C}$-linear one, form the Klein four-group on the first four, and their fixed and anti-fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.</p>
 <p>The same set carries two scalar readings. Over $\mathbb{C}$ it is the space of dimension four on $e_t, \vec e_x, \vec e_y, \vec e_z$. Over $\mathbb{R}$, by restriction of scalars, it is the same additive group with real dimension eight on the basis $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$. The same element is written in three coordinate systems: eight real coordinates, four complex coordinates, or two quaternionic coordinates as a pair of real quaternions, $\tilde Q = h_1 + ih_2$.</p>
 <p>The gap between the two readings is one operator: $J : \tilde Q \mapsto i\tilde Q$ is real-linear with $J^2 = -\mathrm{id}$, and the complex action is the real action together with $J$. A real-linear map is $\mathbb{C}$-linear exactly when it commutes with $J$ and antilinear exactly when it anticommutes; ${}^{\natural}$ commutes and the other three conjugations anticommute. Hence $\operatorname{End}_\mathbb{R}(\mathbb{B}) \cong M_8(\mathbb{R})$ against $\operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})$, of real dimensions $64$ and $32$. A real form is a real subspace $V$ of real dimension four meeting $JV$ only at zero; then $\mathbb{B} = V \oplus JV$ and $\mathbb{C}\otimes_\mathbb{R}V \cong \mathbb{B}$, so the complex reading is recovered from $V$ by extension of scalars. The centre and the vector subspace are the only remarkable subspaces closed under $J$; the other four are real forms exchanged in pairs.</p>
 <div class="table-scroll"><table>
@@ -487,8 +538,8 @@ $$</p>
 <li><a href="the-four-general-products-and-their-relations.html">The Four General Products and Their Relations</a>, for the scalar–vector form of the multiplication, the four general products and their comparison.</li>
 <li><a href="the-group-of-involutions.html">The Group of Involutions</a>, for the four conjugations, their Cayley table and their orbits.</li>
 <li><a href="introduction-to-the-remarkable-subspaces.html">Introduction to the Remarkable Subspaces</a>, for the subspaces the conjugations single out.</li>
-<li><a href="norm-and-invertibility-in-the-general-quaternionic-algebra.html">Norm and Invertibility in the General Quaternionic Algebra</a>, for the reduced norm, the invertibility criterion and the zero-divisor cone.</li>
-<li><a href="ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html">Ideals and Peirce Decomposition of the Biquaternion Algebra</a>, for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.</li>
+<li><a href="norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the reduced norm, the invertibility criterion and the zero-divisor cone.</li>
+<li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.</li>
 <li><a href="introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html">Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</a>, for the matrix model in full.</li>
 <li><a href="the-realification-and-the-effect-of-the-change-of-scalars.html">The Realification and the Effect of the Change of Scalars</a>, for the algebra read over $\mathbb{R}$.</li>
 <li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.</li>

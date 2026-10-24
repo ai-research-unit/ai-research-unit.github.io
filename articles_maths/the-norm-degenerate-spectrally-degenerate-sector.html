@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Norm-Degenerate, Spectrally Degenerate Sector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-norm-degenerate-spectrally-degenerate-sector"><strong>The Norm-Degenerate, Spectrally Degenerate Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The reduced norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal C$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $N\neq0$ and $i=0$ if $N=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.</p>
+<p>The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §<em>The Sector and Its Three Descriptions</em>: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.</p>
+<p><strong>Scope and naming.</strong> The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal C$ and the spectral-degenerate cone $\mathcal S$, as in <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>. A <strong>sector</strong> is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $N=0$ and $B^2=0$.</p>
+<h2 id="the-sector-and-its-three-descriptions">The Sector and Its Three Descriptions</h2>
+<p><strong>Definition.</strong> The sector is</p>
+<p>$$
+\Sigma_{00}=\{N=0,\ B^2=0\}=\{Q_t^2+B^2=0,\ B^2=0\}.
+$$</p>
+<p><strong>Theorem (three descriptions).</strong> For $\tilde Q\in\mathbb{B}$ the following are equivalent:</p>
+<p>(i) $\tilde Q\in\Sigma_{00}$;</p>
+<p>(ii) $\tilde Q^2=0$;</p>
+<p>(iii) $Q_t=0$ and $\vec Q^2=0$.</p>
+<p><em>Proof.</em> The identity</p>
+<p>$$
+\tilde Q^2=(Q_t^2-B^2)e_t+2Q_t\vec Q
+$$</p>
+<p>separates the central and the vector parts, so $\tilde Q^2=0$ exactly when $Q_t^2=B^2$ and $Q_t\vec Q=0$. If $Q_t\neq0$, the second equation gives $\vec Q=0$, hence $B^2=0$, hence $Q_t^2=0$, a contradiction. Therefore $Q_t=0$, and then $B^2=0$. Conversely, $Q_t=0$ and $B^2=0$ give $\tilde Q^2=-B^2e_t=0$. This proves (ii) $\iff$ (iii). For (i), $N=0$ with $Q_t=0$ gives $B^2=0$; conversely $N=0$ with $B^2=0$ gives $Q_t^2=0$, hence $Q_t=0$.</p>
+<p><strong>Remark (the names of the pieces).</strong> On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the <strong>pure stratum</strong> $\mathcal C_{\mathrm p}$ of the null cone of <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Two Strata</em>. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal C_{\mathrm p}$; the sector is that cone with its apex adjoined.</p>
+<h2 id="geometry">Geometry</h2>
+<p><strong>Theorem (a complex cone of dimension two).</strong> $\Sigma_{00}$ is a complex cone of complex dimension $2$ and real dimension $4$ in $\mathbb{B}\cong\mathbb{C}^4$. It is smooth away from the origin and singular only at the origin.</p>
+<p><em>Proof.</em> The sector is the common zero set of $Q_t$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. Their gradients are $(1,0,0,0)$ and $(0,2Q_x,2Q_y,2Q_z)$, which are linearly independent whenever $\vec Q\neq0$. Off the origin the intersection is therefore smooth of complex dimension $4-2=2$, hence of real dimension $4$. At the origin the second gradient vanishes: the variety is the cone over the smooth conic $\{Q_x^2+Q_y^2+Q_z^2=0\}\subset\mathbb{P}^2$ with apex $0$. Its Zariski tangent space there is $\{Q_t=0\}$, of dimension $3$, while the variety has dimension $2$, so the origin is singular. It is the only singular point.</p>
+<p><strong>Bivector form and parametrisation.</strong> Write $\vec Q=\vec\rho+i\vec\rho'$ with $\vec\rho,\vec\rho'\in\mathbb{R}^3$. Then</p>
+<p>$$
+B^2=(|\vec\rho|^2-|\vec\rho'|^2)+2i\,\vec\rho\cdot\vec\rho',
+$$</p>
+<p>so $B^2=0$ is equivalent to $|\vec\rho|=|\vec\rho'|$ and $\vec\rho\perp\vec\rho'$. Every point of the sector is therefore</p>
+<p>$$
+\tilde Q=r(\vec u+i\vec u_\perp),\qquad r\ge0,\quad \vec u\ \text{a real unit vector},\quad \vec u_\perp\ \text{a real unit vector perpendicular to}\ \vec u,
+$$</p>
+<p>the origin occurring at $r=0$. The count is $1+2+1=4$ real parameters, in agreement with the dimension. This is the parametrisation of the pure stratum of <em>Norm Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Two Strata</em>, with $r=0$ added.</p>
+<p><strong>Scheme-theoretic form.</strong> As a scheme, the intersection of the two cones is defined by</p>
+<p>$$
+(Q_t^2+B^2,\ B^2)=(Q_t^2,\ B^2),
+$$</p>
+<p>whose reduction is $(Q_t,\ B)$: the point set is the same, and the sector is a complete intersection of codimension two. The ideal is generated by two squares, so the scheme is non-reduced along both hypersurfaces, with multiplicity two in the scalar direction and multiplicity two in the normal direction of the isotropic cone.</p>
+<h2 id="the-elements">The Elements</h2>
+<p>Let $\tilde Q\in\Sigma_{00}$ with $\tilde Q\neq0$, so $\tilde Q=\vec\Upsilon$ is a pure nilpotent of index two.</p>
+<p><strong>Annihilators.</strong> In the plain product, the left and right annihilators</p>
+<p>$$
+A(\tilde Q)=\ker L_{\tilde Q}=\{\tilde X:\tilde Q\tilde X=0\},\qquad
+B(\tilde Q)=\ker R_{\tilde Q}=\{\tilde X:\tilde X\tilde Q=0\}
+$$</p>
+<p>are distinct complex planes of $\mathbb{C}^4$, each of dimension two, meeting in the line $\mathbb{C}\tilde Q$. Both contain $\tilde Q$ because $\tilde Q^2=0$. The image of $L_{\tilde Q}$ is the left ideal $\mathbb{B}\tilde Q$, non-zero and proper, hence minimal of complex dimension two (<em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Decomposition into Minimal Left and Right Ideals</em>), so $L_{\tilde Q}$ has rank two and its kernel is a plane; the same argument on the right gives rank two for $R_{\tilde Q}$. The two planes cannot coincide, because $A(\tilde Q)$ is a right ideal and $B(\tilde Q)$ is a left ideal, so a common plane would be a two-sided ideal of the simple algebra $\mathbb{B}$, which a plane is not. Finally, $X\tilde Q=0$ is equivalent to $\tilde Q X^{\natural}=0$ because $\tilde Q^{\natural}=-\tilde Q$, so the conjugation exchanges the two planes:</p>
+<p>$$
+A(\tilde Q)^{\natural}=B(\tilde Q).
+$$</p>
+<p>Under the $\natural$-bilinear product $\tilde P\circ\tilde Q=\tilde P^{\natural}\tilde Q$, the left annihilator of $\tilde Q$ is therefore the other plane, $B(\tilde Q)$.</p>
+<p><strong>One-sided multiplication.</strong> Left and right multiplication by $\tilde Q$ both have complex rank $2$, with kernels $A(\tilde Q)$ and $B(\tilde Q)$. Both are square-zero operators,</p>
+<p>$$
+L_{\tilde Q}^2=L_{\tilde Q^2}=0,\qquad R_{\tilde Q}^2=R_{\tilde Q^2}=0,
+$$</p>
+<p>because $\tilde Q^2=0$. Neither is injective and neither is surjective, so $\tilde Q$ has no inverse on either side.</p>
+<p><strong>Centraliser.</strong> The centraliser is the plane</p>
+<p>$$
+\mathbb{C}[\tilde Q]=\{a e_t+b\tilde Q\ :\ a,b\in\mathbb{C}\}.
+$$</p>
+<p>Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Upsilon$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence <strong>no non-trivial idempotent commutes with $\tilde Q$</strong>, and $\tilde Q$ admits no adapted Peirce decomposition.</p>
+<p><strong>Peirce form.</strong> Let $e$ be the projection onto the image of $\tilde Q$ along a complementary line. Since $\tilde Q$ kills its image, $e\tilde Q=\tilde Q$ and $\tilde Qe=0$; with $f=e_t-e$, the Peirce form is purely off-diagonal:</p>
+<p>$$
+e\tilde Qe=0,\qquad e\tilde Qf=\tilde Q,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0.
+$$</p>
+<p>So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No Peirce decomposition adapted to $\tilde Q$ can exist, since an adapted one would place $\tilde Q$ in the diagonal corners $\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.</p>
+<p><strong>Spectrum and minimal polynomial.</strong> The spectrum is $\{0\}$ and the minimal polynomial is $X^2$, not $X$: the element is defective, a single Jordan block of size two with eigenvalue $0$.</p>
+<h2 id="the-origin">The Origin</h2>
+<p>The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is not a nilpotent of index two.</p>
+<ul>
+<li>It is scalar, central and semisimple, with minimal polynomial $X$.</li>
+<li>It is the apex of the null cone, and it lies on the vertex $\mathbb{C}e_t$ of the spectral cone.</li>
+<li>It is the only element of the sector on which both multiplications are the zero map, $L_0=R_0=0$, of rank $0$ and kernel $\mathbb{B}$.</li>
+<li>It lies in the closure of every other sector: every sector is invariant under the scaling $\tilde Q\mapsto\lambda\tilde Q$ for $\lambda\neq0$, so every punctured neighbourhood of $0$ meets all four.</li>
+<li>It is the only diagonalisable element of the sector, which is why "spectrally degenerate" does not coincide with "non-diagonalisable".</li>
+</ul>
+<h2 id="multiplication">Multiplication</h2>
+<p><strong>The sector is not closed under the product.</strong> The reduced norm is multiplicative, so $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)=0$ for $\tilde P,\tilde Q\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is</p>
+<p>$$
+(\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z,
+$$</p>
+<p>whose vector square is $B^2=(-2i)^2=-4\neq0$. The product lies in the norm-degenerate, spectrally regular sector $\Sigma_{01}$.</p>
+<p><strong>Theorem (where the products go).</strong> A product of two elements of $\Sigma_{00}$ is either $0$ or lies in $\Sigma_{01}$:</p>
+<p>$$
+\Sigma_{00}\cdot\Sigma_{00}\subseteq\{0\}\cup\Sigma_{01}.
+$$</p>
+<p><em>Proof.</em> Write the non-zero factors as pure vectors, $\tilde P=\vec u$ and $\tilde Q=\vec v$, with $\vec u^2=\vec v^2=0$. Then</p>
+<p>$$
+\tilde P\tilde Q=-\vec u\cdot\vec v+\vec u\times\vec v.
+$$</p>
+<p>If the scalar part vanishes, $\vec u$ and $\vec v$ are orthogonal isotropic vectors of $\mathbb{C}^3$, hence proportional, since otherwise they would span a totally isotropic plane, which the form $Q_x^2+Q_y^2+Q_z^2$ does not admit; then the product is zero. If the scalar part does not vanish, the product has $N=0$ and</p>
+<p>$$
+B^2(\tilde P\tilde Q)=-(\vec u\cdot\vec v)^2\neq0,
+$$</p>
+<p>so it lies in $\Sigma_{01}$.</p>
+<p>Both alternatives occur: the square of any element of the sector is $0$, and the witness above lands in $\Sigma_{01}$. Consequently the sector is a set of nilpotents, not a subalgebra: it is not closed under multiplication, and it is not a subsemigroup of the multiplicative semigroup $\mathcal C$.</p>
+<h2 id="relation-to-the-two-cones">Relation to the Two Cones</h2>
+<p><strong>The sector is the intersection.</strong> As point sets, $\Sigma_{00}=\mathcal C\cap\mathcal S$; as schemes, the ideal is $(Q_t^2,B^2)$, as computed in §<em>Geometry</em>. It is the only sector contained in both cones.</p>
+<p><strong>The two cones are tangent along the whole sector.</strong> Their algebraic gradients are</p>
+<p>$$
+\nabla N=2(Q_t,\vec Q),\qquad \nabla B^2=2(0,\vec Q),
+$$</p>
+<p>and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin both vanish. The intersection is therefore nowhere transverse: it is a tangency of the two cones, not a transverse crossing, which is why its dimension is the expected $4-2=2$ while its scheme is non-reduced.</p>
+<p><strong>The unique coincidence of the two degenerations.</strong> $\Sigma_{00}$ is the only sector on which both questions of the arrangement — can $\tilde Q$ be inverted? can its two eigenvalues be told apart? — receive the negative answer. It is what the two cones have in common beyond their shared apex.</p>
+<h2 id="comparison-with-the-other-three-sectors">Comparison with the Other Three Sectors</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>conditions</th>
+<th>elements</th>
+<th>adapted Peirce</th>
+<th>product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>doubly regular</strong> $\Sigma_{11}$</td>
+<td>$N\neq0$, $B^2\neq0$</td>
+<td>units with distinct eigenvalues</td>
+<td>exists, unique</td>
+<td>$N\neq0$ preserved; can land in $\Sigma_{10}$</td>
+</tr>
+<tr>
+<td><strong>norm-degenerate, spectrally regular</strong> $\Sigma_{01}$</td>
+<td>$N=0$, $B^2\neq0$</td>
+<td>$2Q_t\tilde\Pi$ with $\tilde\Pi$ a non-trivial idempotent and $Q_t\neq0$; spectrum $\{0,2Q_t\}$</td>
+<td>exists, unique</td>
+<td>$N=0$ preserved; can land in $\Sigma_{00}$</td>
+</tr>
+<tr>
+<td><strong>norm-regular, spectrally degenerate</strong> $\Sigma_{10}$</td>
+<td>$N\neq0$, $B^2=0$</td>
+<td>units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$</td>
+<td>fails off the scalar line, one term on it</td>
+<td>$N\neq0$ preserved; can land in $\Sigma_{11}$</td>
+</tr>
+<tr>
+<td><strong>doubly degenerate</strong> $\Sigma_{00}$</td>
+<td>$N=0$, $B^2=0$</td>
+<td>non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$</td>
+<td>fails off the origin</td>
+<td>$0$ or $\Sigma_{01}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>No sector is closed under multiplication.</strong> Only the norm dichotomy is: $\mathcal C$ is a semigroup and $\mathbb{B}^{\times}$ is a group. The four witnesses are</p>
+<p>$$
+(e_t+\vec e_x)(e_t-\vec e_x)=2e_t\in\Sigma_{10},
+$$</p>
+<p>$$
+(e_t+i\vec e_x)(e_t-i\vec e_x)=0\in\Sigma_{00},
+$$</p>
+<p>$$
+(e_t+\vec e_x+i\vec e_y)(2e_t+\vec e_x-i\vec e_y)=3\vec e_x+i\vec e_y-2i\vec e_z\in\Sigma_{11},
+$$</p>
+<p>$$
+(\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z\in\Sigma_{01}.
+$$</p>
+<p>The first product has $N=4$ and $B^2=0$; the second vanishes because $(e_t+i\vec e_x)(e_t+i\vec e_x)^{\natural}=N(e_t+i\vec e_x)e_t=0$; the third has $N=4$ and $B^2=4$; the fourth has $N=0$ and $B^2=-4$. So each sector leaks into another, and the finer spectral split is not multiplicative.</p>
+<p>The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that the two problems are independent: each is degenerate in one respect and non-degenerate in the other. The sector $\Sigma_{00}$ is the opposite case, where the two answers coincide, both negative, and it is the unique such sector.</p>
+<h2 id="consequences">Consequences</h2>
+<p><strong>Eigenbasis.</strong> None, except at the origin. Every non-zero element of $\Sigma_{00}$ has characteristic and minimal polynomial $X^2$: it is a single Jordan block with eigenvalue $0$; the eigenspace is the annihilator plane $A(\tilde Q)$.</p>
+<p><strong>Polar decomposition.</strong> The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Biquaternions</em> has no value on the sector: there is no unit factor of norm one.</p>
+<p><strong>One-sided operators.</strong> Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.</p>
+<p><strong>The "everything fails" cell.</strong> It is the cell in which invertibility, the adapted Peirce decomposition (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.</p>
+<h2 id="summary">Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>definition</td>
+<td>$\Sigma_{00}=\{N=0,\ B^2=0\}$</td>
+</tr>
+<tr>
+<td>three descriptions</td>
+<td>$\tilde Q^2=0$; $Q_t=0$ and $\vec Q^2=0$; the pure stratum with the origin adjoined</td>
+</tr>
+<tr>
+<td>geometry</td>
+<td>complex cone of complex dimension $2$ and real dimension $4$; smooth off $0$, singular only at $0$</td>
+</tr>
+<tr>
+<td>elements</td>
+<td>non-zero nilpotents of index two, plus the origin</td>
+</tr>
+<tr>
+<td>annihilators</td>
+<td>two distinct planes of dimension $2$ meeting in $\mathbb{C}\tilde Q$, exchanged by the conjugation</td>
+</tr>
+<tr>
+<td>centraliser</td>
+<td>$\mathbb{C}[\tilde Q]$, with idempotents $0$ and $e_t$</td>
+</tr>
+<tr>
+<td>Peirce form</td>
+<td>purely off-diagonal; no adapted decomposition off the origin</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\{0\}$, minimal polynomial $X^2$</td>
+</tr>
+<tr>
+<td>multiplication</td>
+<td>$\Sigma_{00}\cdot\Sigma_{00}\subseteq\{0\}\cup\Sigma_{01}$</td>
+</tr>
+<tr>
+<td>relation to the cones</td>
+<td>$\Sigma_{00}=\mathcal C\cap\mathcal S$, with the two cones tangent along the whole sector</td>
+</tr>
+<tr>
+<td>place in the arrangement</td>
+<td>the only sector on which both answers are negative</td>
+</tr>
+</tbody>
+</table></div>
+<p>The sector is the doubly degenerate cell: the set of square-zero elements, the intersection of the two cones, the locus on which invertibility and spectral separation are both answered in the negative, and the one place where the origin, a semisimple point, sits among the defective ones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>the doubly degenerate sector, this article</td>
+</tr>
+<tr>
+<td>$\mathcal C=\{N=0\}$</td>
+<td>the null cone of the reduced norm</td>
+</tr>
+<tr>
+<td>$\mathcal S=\{B^2=0\}$</td>
+<td>the spectral-degenerate cone</td>
+</tr>
+<tr>
+<td>$\mathcal C_{\mathrm p}$</td>
+<td>the pure stratum of the null cone, $\Sigma_{00}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon$</td>
+<td>a non-zero pure vector with $\vec\Upsilon^2=0$</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}$, $R_{\tilde Q}$</td>
+<td>left and right multiplication</td>
+</tr>
+<tr>
+<td>$A(\tilde Q)=\ker L_{\tilde Q}$</td>
+<td>the left annihilator, a right ideal</td>
+</tr>
+<tr>
+<td>$B(\tilde Q)=\ker R_{\tilde Q}$</td>
+<td>the right annihilator, a left ideal</td>
+</tr>
+<tr>
+<td>$\nabla N$, $\nabla B^2$</td>
+<td>the algebraic gradients $2(Q_t,\vec Q)$ and $2(0,\vec Q)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the reduced norm, the null cone, its pure and non-pure strata, and the annihilator planes.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the spectral-degenerate cone, the three regimes and the independence of the two cones.</li>
+<li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.</li>
+<li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and their dimensions.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms.html">The Four Forms and the Four Algebraic Norms</a>, for the place of $N$ among the four norms and of $B^2$ outside them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
