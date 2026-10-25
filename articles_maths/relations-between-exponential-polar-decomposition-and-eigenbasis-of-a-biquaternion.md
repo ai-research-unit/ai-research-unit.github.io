@@ -85,7 +85,7 @@ $$
 \vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
-with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*.
+with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
 
 | Spectral item | Value |
 |---|---|

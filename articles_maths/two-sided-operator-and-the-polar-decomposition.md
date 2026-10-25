@@ -370,7 +370,7 @@ $$
 \qquad
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
-The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* — not the Pauli model $\mathsf M_2$ of §*Conventions* — the element $\tilde Q$ is the diagonal matrix
+The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ of *The Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* — not the Pauli model $\mathsf M_2$ of §*Conventions* — the element $\tilde Q$ is the diagonal matrix
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 \qquad
@@ -644,7 +644,7 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 ## Further Reading
 
 - [One-Sided Operator and the Polar Decomposition](one-sided-operator-and-the-polar-decomposition.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
+- [The Norm-Regular, Spectrally Regular Sector](the-norm-regular-spectrally-regular-sector.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.

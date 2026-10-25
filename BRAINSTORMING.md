@@ -45,10 +45,6 @@ Biquaternion Representations and the Lorentz Group
 
 
 
-use \boxed{} and \fbox{} to highlight results , but without any background colors
-
-
-
 
 
 
@@ -8606,14 +8602,4 @@ Can you read the physics conventions, analyze the physics corpus, and modify /ho
 
 
 
-
-
-
-
-
-
-
-Do similar things around the maths corpus : remove the sub section Basic Properties, Advanced Properties, and in case it is appropriate, create a section Spectral Algebra
-
-
-
+the first sentence is misleading, there are a lot of quadratic conditions. The article should JUST FOCUS on the eigenvalue problem

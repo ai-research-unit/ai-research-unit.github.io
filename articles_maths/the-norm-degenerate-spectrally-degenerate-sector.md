@@ -97,7 +97,7 @@ $$
 
 Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Upsilon$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits no adapted Peirce decomposition.
 
-**Peirce form.** Let $e$ be the projection onto the image of $\tilde Q$ along a complementary line. Since $\tilde Q$ kills its image, $e\tilde Q=\tilde Q$ and $\tilde Qe=0$; with $f=e_t-e$, the Peirce form is purely off-diagonal:
+**Peirce form.** Let $e$ be an idempotent with $\tilde Q=e\tilde Q(e_t-e)$; such an idempotent exists because $\tilde Q$ generates a minimal left ideal. Then $e\tilde Q=\tilde Q$ and $\tilde Qe=0$; with $f=e_t-e$, the Peirce form is purely off-diagonal:
 
 $$
 e\tilde Qe=0,\qquad e\tilde Qf=\tilde Q,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0.
@@ -109,6 +109,29 @@ So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No
 
 **The spectral decomposition.** There is none: the minimal polynomial $X^2$ is not squarefree, the only idempotents in the centraliser are $0$ and $e_t$, and the eigenspace of $L_{\tilde Q}$ for $0$ is the annihilator $A(\tilde Q)$, a complex plane, which cannot contain a basis. The powers vanish, $\tilde Q^n=0$ for $n\geq2$.
 
+## Peirce Data
+
+**Off the origin the Peirce form is purely off-diagonal and no adapted decomposition exists. At the origin every idempotent is adapted and the Peirce matrix is zero.**
+
+Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$, and there is no adapted Peirce decomposition.
+
+A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. With $f=e_t-e$ the Peirce form is
+
+$$
+e\tilde Qe=0,\qquad
+e\tilde Qf=\vec\Upsilon,\qquad
+f\tilde Qe=0,\qquad
+f\tilde Qf=0.
+$$
+
+The element lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair; by the argument of §*The Elements* no adapted Peirce decomposition can exist. In the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix is the single nilpotent block
+
+$$
+\begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
+$$
+
+**No Q-adapted basis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. No Peirce pair is attached to $\tilde Q$, and no Q-adapted Peirce basis exists.
+
 ## The Origin
 
 The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is not a nilpotent of index two.
@@ -118,7 +141,7 @@ The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is no
 - It is the only element of the sector on which both multiplications are the zero map, $L_0=R_0=0$, of rank $0$ and kernel $\mathbb{B}$.
 - It lies in the closure of every other sector: every sector is invariant under the scaling $\tilde Q\mapsto\lambda\tilde Q$ for $\lambda\neq0$, so every punctured neighbourhood of $0$ meets all four.
 - It is the only diagonalisable element of the sector, which is why "spectrally degenerate" does not coincide with "non-diagonalisable".
-- Its spectral decomposition is the one-term writing $0=0\cdot e_t$, with every idempotent adapted to it; it is the only element of the sector for which a spectral decomposition exists.
+- Its spectral decomposition is the one-term writing $0=0\cdot e_t$, with every idempotent adapted to it and the Peirce matrix zero in every Peirce basis; it is the only element of the sector for which a spectral decomposition exists.
 
 ## Multiplication
 
@@ -243,7 +266,8 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 ## Further Reading
 
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone and its pure and non-pure strata.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the spectral-degenerate cone, the two cases, the degenerate regimes and the independence of the two cones.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the spectral-degenerate cone, the two cases and the degenerate regimes.
+- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two cones, the nilpotent intersection and the five zones.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $N$ among the four norms and of $B^2$ outside them.

@@ -179,7 +179,7 @@ The last clause is the subject of the next section: a complex isometry can excha
 
 ### The Q-Adapted Peirce Basis
 
-The eigenbasis of the left multiplication is the Q-adapted Peirce basis of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. For $\tilde Q$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, put
+The eigenbasis of the left multiplication is the Q-adapted Peirce basis of *The Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. For $\tilde Q$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, put
 $$
 \vec U=\frac{\vec Q}{B},\qquad \vec\Xi=-i\vec U,\qquad
 \tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},\qquad
@@ -865,7 +865,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 ## Further Reading
 
 - [Two-Sided Operator and the Polar Decomposition](two-sided-operator-and-the-polar-decomposition.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action used here.
+- [The Norm-Regular, Spectrally Regular Sector](the-norm-regular-spectrally-regular-sector.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four exponents read against the six remarkable subspaces and the sector blocks, and §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the infinitesimal split of the rotor and the boost.

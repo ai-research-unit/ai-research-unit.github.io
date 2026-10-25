@@ -134,7 +134,6 @@ Read over $\mathbb{R}$ the general quaternionic sesqualgebra is the same product
 
 ## Further Reading
 
-- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the general construction, the two rules of the realification of a form, the table of the four effects and the splitting $\operatorname{End}_{\mathbb{R}}=\operatorname{End}_{\mathbb{C}}\oplus\operatorname{Ant}_{\mathbb{C}}$.
 - [The Realification of the Eight Derived Structures](the-realification-of-the-eight-derived-structures.html), for the four realified Gram matrices and signatures, the Krein row $\operatorname{diag}(\varepsilon,\varepsilon)$ of signature $(2,6)$, the restrictions and the realified null cones.
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product, its table, its scalar rules, the two one-sided actions of $e_t$, the associator, the ternary product and the idempotents.
 - [The Specificities of the General Quaternionic Sesqualgebra](the-specificities-of-the-general-quaternionic-sesqualgebra.html), for the star identity, the factorization, the parity obstruction and the isolation of the block among the twelve.

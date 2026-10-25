@@ -573,7 +573,6 @@ Each of the eight derived structures is the same product on the same elements re
 
 ## Further Reading
 
-- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the general construction, the realification of a vector space, of a linear map and of a form, and the table of the four effects.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve structures and the columns of the table of the twelve, of which the eight derived structures are eight rows.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms whose realifications are read one structure to a section above.
 

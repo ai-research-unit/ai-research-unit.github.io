@@ -211,5 +211,4 @@ The trace form of the symmetric plain algebra is $\tau(\tilde Q_1,\tilde Q_2)=\m
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the associativity of the plain form and its operator theory.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the left and right operators whose half-sum is the multiplication operator of the block.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions of the form to the remarkable subspaces.
-- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the realified signature $(4,4)$.
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html), for the generic trace, the generic norm and the quadratic identity.

@@ -114,7 +114,6 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
-- [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html)
 
 #### Remarkable Subspaces
 

@@ -101,13 +101,13 @@ e_-\tilde Qe_+=0,\qquad
 e_-\tilde Qe_-=0.
 $$
 
-The decomposition is a two-term writing with one coefficient zero, not a one-term writing: $e_-$ is present and non-trivial, although its coefficient vanishes. It is unique, because the spectral idempotents of an element with distinct eigenvalues are unique. This is the exact contrast with $\Sigma_{00}$, where no adapted decomposition exists.
+The decomposition is a two-term writing with one coefficient zero, not a one-term writing: $e_-$ is present and non-trivial, although its coefficient vanishes. It is unique, because the spectral idempotents of an element with distinct eigenvalues are unique. This is the exact contrast with $\Sigma_{00}\setminus\{0\}$, where no adapted decomposition exists.
 
 **The spectral decomposition.** The eigenvalues are $\lambda_+=c=2Q_t$ and $\lambda_-=0$, distinct, and
 $$
 \tilde Q=c\,e_++0\cdot e_-,\qquad e_+=\tilde\Pi,\quad e_-=\tilde\Pi'.
 $$
-The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique, and an eigenbasis exists, since $B^2\neq0$; the construction is in *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*.
+The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique, and an eigenbasis exists, since $B^2\neq0$; the construction is in *The Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*.
 
 **Powers.** For $n\geq1$, $\tilde Q^n=c^n e_+$, and the polynomial calculus reads $f(\tilde Q)=f(c)e_++f(0)e_-=f(c)\tilde\Pi+f(0)\tilde\Pi'$. There is no inverse, since $N=0$; the image of the eigenvalue map on the sector is the set of pairs $(c,0)$ with $c\neq0$, so it is not surjective onto $\mathbb{C}^\times\times\mathbb{C}^\times$.
 
@@ -154,6 +154,29 @@ L_{\tilde Q}^2=c\,L_{\tilde Q}=2Q_tL_{\tilde Q},\qquad R_{\tilde Q}^2=2Q_tR_{\ti
 $$
 
 Both operators have complex rank $2$, with images the minimal left and right ideals $\mathbb{B}\tilde\Pi$ and $\tilde\Pi\mathbb{B}$, and kernels the two annihilator planes. They are **not** square-zero, in contrast with $\Sigma_{00}$: the element is a zero divisor, but its multiplication is a projection up to scale, not a nilpotent operator.
+
+## Peirce Data
+
+**The adapted Peirce decomposition exists and is unique. It has two non-trivial idempotents and one vanishing coefficient: the Peirce matrix of $\tilde Q$ is $\operatorname{diag}(c,0)$.**
+
+Let $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent, and put $\tilde\Pi'=e_t-\tilde\Pi$. The spectral idempotents are $e_+=\tilde\Pi$ and $e_-=\tilde\Pi'$. The four corners $\mathbb{B}_{st}=e_s\mathbb{B}e_t$ are one-dimensional lines, and the Peirce form is
+
+$$
+e_+\tilde Qe_+=c\,e_+,\qquad
+e_+\tilde Qe_-=0,\qquad
+e_-\tilde Qe_+=0,\qquad
+e_-\tilde Qe_-=0.
+$$
+
+In the Peirce basis $(\tilde\Pi,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi')$, with the nilpotents normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi'$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi$, the Peirce matrix is
+
+$$
+\begin{pmatrix}c&0\\0&0\end{pmatrix}.
+$$
+
+The zero coefficient is the only trace of the norm degeneracy in the Peirce data. The idempotent $e_-$ is present and non-trivial, and the decomposition is genuinely two-term: the vanishing coefficient is a value, not a missing idempotent. Both mixed corners are non-zero, so both nilpotents exist.
+
+**The Q-adapted basis.** Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the Q-adapted Peirce basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction is that of *The Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. In that basis the diagonal values are $(c,0)$ in one order or the other. The zero eigenvalue is carried by one diagonal entry and by one only.
 
 ## Multiplication
 
@@ -249,7 +272,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 
 **The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.
 
-**Position in the five-zone refinement.** The five zones of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Five Zones*, are the distinct, zero-divisor, scalar, Jordan and nilpotent zones. Sector $01$ is exactly the **zero-divisor zone** $\{B^2\neq0,\ N=0\}$; it is not refined further, because it is homogeneous. The other sectors split as
+**Position in the five-zone refinement.** The five zones of *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Five Zones*, are the distinct, zero-divisor, scalar, Jordan and nilpotent zones. Sector $01$ is exactly the **zero-divisor zone** $\{B^2\neq0,\ N=0\}$; it is not refined further, because it is homogeneous. The other sectors split as
 
 $$
 \Sigma_{11}=\text{distinct},\qquad
@@ -307,7 +330,8 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 
 - [The Norm-Degenerate, Spectrally Degenerate Sector](the-norm-degenerate-spectrally-degenerate-sector.html), for the opposite corner $\Sigma_{00}$, the nilpotents and the origin.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its two strata.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the spectral-degenerate cone and the five zones.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion and the spectral-degenerate cone.
+- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the five zones and the comparison of the two cones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the nilpotents $E_{ij}$.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the root variety $\tilde\Xi^2=e_t$ and the idempotent manifold.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt N$ and its failure at $N=0$.

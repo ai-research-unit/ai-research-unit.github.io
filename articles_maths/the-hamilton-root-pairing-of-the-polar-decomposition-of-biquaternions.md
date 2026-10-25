@@ -50,7 +50,7 @@ The article takes the following results as established and does not prove them a
 | the eigenvalues, the axis, the pure root and the eigenprojections | *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec\Xi$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
 | the closed forms of the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Closed Form* and §*The Eigenvalue Formula* | the exponential $\exp(\tilde Q)$ and the logarithm of the second factor |
 | the roots of one and their idempotents | *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
-| the Q-adapted Peirce basis, its nilpotents and the spinor spaces | *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
+| the Q-adapted Peirce basis, its nilpotents and the spinor spaces | *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, and *The Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
 | the hyperbolic form of a non-trivial root | *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Non-Hermitian Roots*, and §*The Root From Its Coordinates* of this article | the two directions and the rapidity of §*The Two Pure Elements* |
 | the idempotent exponential form and the extraction $-i\tilde\Xi$ | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* of this article, on the halving map of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence with the Roots of One* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
 | the Peirce decomposition | *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions* | the idempotents and the four corners |
@@ -142,7 +142,7 @@ The factor is a single exponential on the whole domain, but its exponent is not 
 
 ## The Eigenbasis and the Spinor Spaces
 
-**The basis.** The Hamilton data are the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, read in the Q-adapted Peirce basis of §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis* of that article. The pure root of $+1$ attached to the axis is $\vec\Xi=-i\vec U$, the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$, normalised by
+**The basis.** The Hamilton data are the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, read in the Q-adapted Peirce basis of *The Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. The pure root of $+1$ attached to the axis is $\vec\Xi=-i\vec U$, the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$, normalised by
 
 $$
 \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad \vec\Upsilon_\pm^2=0 .
@@ -168,7 +168,7 @@ S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+ ,\
 S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-
 $$
 
-are the two **spinor spaces**, and $\mathbb{B}=S_+\oplus S_-$ (*Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spinor Spaces and their Coordinates*). Each carries both eigenvalues, with eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ on $S_+$ and $(\vec\Upsilon_-,\tilde\Pi_-)$ on $S_-$; the two eigenvalues are distinct there, so the eigenbasis of each space is unique up to a rescaling of each vector. A general element is not a spinor: it has one component in $S_+$ and one in $S_-$.
+are the two **spinor spaces**, and $\mathbb{B}=S_+\oplus S_-$ (*The Norm-Regular, Spectrally Regular Sector*, §*The Spinor Spaces and their Coordinates*). Each carries both eigenvalues, with eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ on $S_+$ and $(\vec\Upsilon_-,\tilde\Pi_-)$ on $S_-$; the two eigenvalues are distinct there, so the eigenbasis of each space is unique up to a rescaling of each vector. A general element is not a spinor: it has one component in $S_+$ and one in $S_-$.
 
 **The matrix model.** With the assignment
 
@@ -672,7 +672,7 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\psi}{2}\vec u_{
 ## Further Reading
 
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* and §*The Eigenprojectors*, for the eigenvalues $\lambda_\pm=Q_t\pm iB$, the pure unit element $\vec U=\vec Q/B$ and the eigenprojections $\tilde\Pi_\pm$.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the Q-adapted Peirce basis with its nilpotents, and the two spinor spaces, on which the Hamilton parameters and the diagonal action are read.
+- [The Norm-Regular, Spectrally Regular Sector](the-norm-regular-spectrally-regular-sector.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the Q-adapted Peirce basis with its nilpotents, and the two spinor spaces, on which the Hamilton parameters and the diagonal action are read.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the unit factor $\tilde U=\tilde Q/(r\exp(i\alpha))$, its eigenvalues $\exp(\pm i\Theta)$ and the eigenprojections it shares with $\tilde Q$.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the powers, which fix the Hamilton parameters and carry their multivaluedness.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four exponentials, the existence and uniqueness of the word, and the logarithms that fix the branches.
