@@ -202,7 +202,7 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 (iii) On $\Sigma_{10}^{\mathrm{J}}$ no non-trivial idempotent commutes with $\tilde Q$, so there is no two-term decomposition.
 (iv) On $\Sigma_{00}$ the same holds off the origin; at the origin only the trivial one-term writing $0=0\cdot e_t$ exists.
 
-*Proof.* The first two statements and the last are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Decomposition* and §*The Degenerate Case: The Cone and Its Three Regimes*. On $\Sigma_{10}^{\mathrm{J}}$ the minimal polynomial is $(X-Q_t)^2$ and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$.
+*Proof.* The first two statements and the last are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Decomposition* and §*The Behaviour on the Cone*. On $\Sigma_{10}^{\mathrm{J}}$ the minimal polynomial is $(X-Q_t)^2$ and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$.
 
 **Definition (modulus–unit polar decomposition).** A **modulus–unit polar decomposition** of $\tilde Q$ is a writing $\tilde Q=\Rho\tilde U$ with $\Rho\in\mathbb{C}$, $\Rho\neq0$, $\Rho^2=N(\tilde Q)$ and $\langle\tilde U\rangle_{\natural}=1$.
 
@@ -317,7 +317,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 ## Further Reading
 
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the characteristic polynomial, the spectral-degenerate cone, the three regimes, the spectral decomposition and the eigenbasis.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the characteristic polynomial, the spectral-degenerate cone, the vertex and its complement, the spectral decomposition and the eigenbasis.
 - [The Quaternionic Norm-Regular, Spectrally Regular Sector](the-quaternionic-norm-regular-spectrally-regular-sector.html), for $\Sigma_{11}$, the complement of the union of the two cones.
 - [The Quaternionic Norm-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the scalar line and the Jordan part.
 - [The Quaternionic Norm-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents and the spectrum $\{c,0\}$.

@@ -210,7 +210,7 @@ $$
 
 The two values are distinct exactly when $B\neq0$. In that case the $\lambda_+$-eigenspace is the two-dimensional right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$.
 
-When $B=0$ the construction is unavailable: there is no Q-adapted Peirce basis, the two nilpotents are not defined from $\tilde Q$, and $L_{\tilde Q}$ is not diagonal in any Peirce basis. This is the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Cone and Its Three Regimes*.
+When $B=0$ the construction is unavailable: there is no Q-adapted Peirce basis, the two nilpotents are not defined from $\tilde Q$, and $L_{\tilde Q}$ is not diagonal in any Peirce basis. This is the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Cone*.
 
 ### The Two Chiral Spinor Spaces
 

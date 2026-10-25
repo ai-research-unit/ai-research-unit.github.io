@@ -8,7 +8,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,
 $$
 
-which involves no scalar term. It alone decides whether the two eigenvalues of an element can be told apart: the characteristic polynomial is $X^2-2Q_tX+Q_t^2+B^2$, and its discriminant is $-4B^2$. This article defines the eigenvalue problem, proves the spectral criterion, and separates the elements of $\mathbb{B}$ into the two cases of the value of $B^2$: the regular case $B^2\neq0$, where the two eigenvalues are distinct and the element has a unique spectral decomposition, and the degeneracy case $B^2=0$, the spectral-degenerate cone, which is stratified into the scalar, Jordan and nilpotent regimes. This article is the study of this one condition and of its two cases.
+which involves no scalar term. It alone decides whether the two eigenvalues of an element can be told apart: the characteristic polynomial is $X^2-2Q_tX+Q_t^2+B^2$, and its discriminant is $-4B^2$. This article defines the eigenvalue problem, proves the spectral criterion, and separates the elements of $\mathbb{B}$ into the two cases of the value of $B^2$: the regular case $B^2\neq0$, where the two eigenvalues are distinct and the element has a unique spectral decomposition, and the degeneracy case $B^2=0$, the spectral-degenerate cone, on which the two eigenvalues coalesce. This article is the study of this one condition and of its two cases.
 
 **Notation.** An element is $\tilde Q=Q_te_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product is the plain product of the algebra, associative with the two-sided unit $e_t$. The vector part is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and
 
@@ -131,7 +131,7 @@ The two cases are collected in the table; the last two columns are proved in §*
 | **regular** | $B^2\neq0$ | $\{\lambda_+,\lambda_-\}$, distinct | two terms, unique | exists |
 | **degenerate** | $B^2=0$ | $\{Q_t\}$ | one term iff $\vec Q=0$, none otherwise | every basis iff $\vec Q=0$, none otherwise |
 
-**Remark (the words).** Unqualified **regular** means **spectrally regular**, $B^2\neq0$, and **degenerate** means **spectrally degenerate**, $B^2=0$; both words are fixed by the discriminant, as **norm-regular** and **norm-degenerate** are fixed by the value of the norm in the companion article. Degenerate here does not mean defective: the vertex is semisimple. Nor does it mean a zero divisor: the points of the vertex with $Q_t\neq0$ are units. The comparison with the norm and the four sectors is *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*.
+**Remark (the words).** Unqualified **regular** means **spectrally regular**, $B^2\neq0$, and **degenerate** means **spectrally degenerate**, $B^2=0$; both words are fixed by the discriminant, as **norm-regular** and **norm-degenerate** are fixed by the value of the norm in the companion article. Degenerate here does not mean defective: the vertex is semisimple. The comparison with the norm is *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*.
 
 **Remark (the condition is not multiplicative).** Neither case is stable under the product. Two elements of $B^2=0$ can multiply to an element of $B^2\neq0$: both factors of
 
@@ -215,9 +215,9 @@ is an eigenbasis of $L_{\tilde Q}$, with diagonal values $(\lambda_+,\lambda_+,\
 
 **Remark (the degenerate side).** If $B^2=0$ and $\vec Q\neq0$, the minimal polynomial is $(X-Q_t)^2$, the eigenspace has dimension $2$, and no eigenbasis exists. If $\vec Q=0$ the element is scalar and $L_{\tilde Q}=Q_t\,\mathrm{id}$; every basis is then an eigenbasis.
 
-## The Degenerate Case: The Cone and Its Three Regimes
+## The Degenerate Case: The Cone
 
-**On the cone $B^2=0$ the eigenvalues have coalesced, and two further questions decide the geometry of a point: whether the vector part vanishes, and whether the scalar part vanishes.**
+**On the cone $B^2=0$ the eigenvalues have coalesced, and one further question decides the spectral behaviour of a point: whether the vector part vanishes.**
 
 ### The Spectral-Degenerate Cone
 
@@ -249,37 +249,25 @@ $$
 
 which vanishes exactly when $\vec Q=0$. Off the vertex the gradient is non-zero and the equation cuts a smooth hypersurface, of complex dimension $4-1=3$ and real dimension $8-2=6$. On the vertex the cone is $\mathbb{C}e_t\times C$, with $C$ the isotropic cone of $\mathbb{C}^3$, which is singular at its apex; the product is singular along the whole line.
 
-**Warning (what the cone is not).** The equation involves only $\vec Q$: the cone is blind to the scalar part, and the whole scalar line lies on it. It is not a subspace, since $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ lie on it while their sum $2\vec e_x$ does not. It is not the set of defective elements: a point of the vertex is semisimple with minimal polynomial $X-Q_t$. It is not the zero-divisor set either: the points of the vertex with $Q_t\neq0$ are units. The cone is exactly the set of elements with a repeated eigenvalue.
+**Warning (what the cone is not).** The equation involves only $\vec Q$: the cone is blind to the scalar part, and the whole scalar line lies on it. It is not a subspace, since $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ lie on it while their sum $2\vec e_x$ does not. It is not the set of defective elements: a point of the vertex is semisimple with minimal polynomial $X-Q_t$. The cone is exactly the set of elements with a repeated eigenvalue.
 
-The three regimes are collected in the table.
+### The Behaviour on the Cone
 
-| regime | condition | spectrum | minimal polynomial | spectral decomposition | the element is |
+**Theorem (the vertex and its complement).** Let $\tilde Q=Q_te_t+\vec Q\in\mathcal S$.
+
+- **At the vertex**, $\vec Q=0$: the element is the scalar $Q_te_t$, its minimal polynomial is $X-Q_t$, its spectrum is $\{Q_t\}$ and it is semisimple. Every idempotent commutes with it, the spectral decomposition is the one-term writing $\tilde Q=Q_te_t$, and every basis is an eigenbasis.
+- **Off the vertex**, $\vec Q\neq0$: the vector part is square-zero, the minimal polynomial is $(X-Q_t)^2$, the spectrum is $\{Q_t\}$ and the element is defective. Its eigenspace is $\ker(L_{\vec Q})$, of complex dimension $2$, and no two-term spectral decomposition or eigenbasis exists.
+
+*Proof.* At the vertex the difference $\tilde Q-Q_te_t$ vanishes. Off it, $\vec Q^2=0$ and $\vec Q\neq0$, so $(\tilde Q-Q_te_t)^2=0$ while $\tilde Q-Q_te_t\neq0$; the minimal polynomial therefore divides $(X-Q_t)^2$ and is not $X-Q_t$, hence equals $(X-Q_t)^2$. A minimal polynomial with a repeated root is not squarefree, so the element is defective. Since $Q_te_t$ is central, the centraliser of $\tilde Q$ is the centraliser of $\vec Q$, namely the dual numbers $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$, whose only idempotents are $0$ and $e_t$; hence there is no non-trivial spectral idempotent and no two-term spectral decomposition. The eigenspace is $\ker(L_{\vec Q})$, and left multiplication by a non-zero square-zero element has rank $2$, so the kernel has complex dimension $2$; since $2<4$, no eigenbasis exists.
+
+The two behaviours are collected in the table.
+
+| point of the cone | condition | spectrum | minimal polynomial | spectral decomposition | eigenspace |
 |---|---|---|---|---|---|
-| **scalar** | $B^2=0$, $\vec Q=0$ | $\{Q_t\}$ | $X-Q_t$ | one term | central, semisimple; a unit iff $Q_t\neq0$ |
-| **Jordan** | $B^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\{Q_t\}$ | $(X-Q_t)^2$ | none | a unit, defective, one block $J_2(Q_t)$ |
-| **nilpotent** | $B^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\{0\}$ | $X^2$ | none | a non-unit, a zero divisor, $\tilde Q^2=0$ |
+| **vertex** | $B^2=0$, $\vec Q=0$ | $\{Q_t\}$ | $X-Q_t$ | one term | all of $\mathbb{B}$, every basis |
+| **off the vertex** | $B^2=0$, $\vec Q\neq0$ | $\{Q_t\}$ | $(X-Q_t)^2$ | none | $\ker(L_{\vec Q})$, complex dimension $2$, no eigenbasis |
 
-### The Scalar Regime and the Vertex
-
-Let $\tilde Q=Q_te_t$. The element is central, its minimal polynomial is $X-Q_t$, and it is semisimple with the single eigenvalue $Q_t$. Every idempotent commutes with it, so every idempotent is a spectral idempotent. The spectral decomposition has one term, $\tilde Q=Q_te_t$; a two-term writing with two orthogonal idempotents summing to $e_t$ has the equal coefficient $Q_t$ on both terms and is not determined by $\tilde Q$. This is the only regime in which a two-term writing exists without being a spectral decomposition.
-
-The vertex is the singular locus of $\mathcal S$ and the semisimple part of the cone: the eigenvalue is repeated, but the element still has a spectral decomposition, with one term.
-
-### The Jordan Regime
-
-Let $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ and $Q_t\neq0$. The minimal polynomial is $(X-Q_t)^2$, the spectrum is the single eigenvalue $Q_t$, and the element is a unit, since $\det\mathsf{M}_2(\tilde Q)=Q_t^2\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, the dual numbers, whose only idempotents are $0$ and $e_t$; so no non-trivial idempotent commutes with $\tilde Q$, and no two-term spectral decomposition exists. The eigenspace is $\ker(L_{\vec\Upsilon})$, of dimension $2$, and there is no eigenbasis. In $\mathsf{M}_2$ the element itself is similar to the single block $J_2(Q_t)$, and the operator $L_{\tilde Q}$ on $\mathbb{B}$ is two copies of that block.
-
-The two eigenvalues of the regular side have coalesced at $Q_t$ without the element becoming scalar. This is the only regime in which a spectral-degenerate element is a unit and is defective.
-
-### The Nilpotent Regime
-
-Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. The spectrum is $\{0\}$, the minimal polynomial is $X^2$, and the element is not a unit, since $\det\mathsf{M}_2(\tilde Q)=0$. It is a zero divisor with $\tilde Q^2=0$. Its centraliser, its idempotents and the absence of a two-term spectral decomposition are the same as in the Jordan regime; its eigenspace is $\ker(L_{\vec\Upsilon})$, of dimension $2$, and there is no eigenbasis. The regime is the set of non-zero elements with vanishing scalar part and vanishing square.
-
-### The Origin
-
-At $\tilde Q=0$ the element is scalar with $Q_t=0$, so it is the point of the vertex at which the scalar part vanishes as well. Its spectrum is $\{0\}$, its minimal polynomial is $X$, every idempotent commutes with it, and its spectral decomposition is the one-term writing $0=0\cdot e_t$. Both translations $L_0$ and $R_0$ are the zero map, so both annihilators are all of $\mathbb{B}$ and both ranks are $0$.
-
-The origin is the apex of $\mathcal S$, and it is the only point of the cone that is neither a unit nor a zero divisor. It is also the only point of the cone at which both the scalar and the vector part vanish.
+**Remark (no further spectral split).** The distinguishing condition of the table is $\vec Q$, not $Q_t$: the vertex is the whole scalar line, and every point of it has the same spectral behaviour whatever the value of $Q_t$; off the vertex the minimal polynomial is $(X-Q_t)^2$ for every $Q_t$. The type of the minimal polynomial distinguishes the vertex from its complement and nothing finer.
 
 ## The Similarity Classification
 
@@ -291,8 +279,6 @@ The origin is the apex of $\mathcal S$, and it is the only point of the cone tha
 2. If $B^2=0$, the spectrum is the singleton $\{Q_t\}$, and exactly two similarity classes share it: the **central class** $\tilde Q=Q_te_t$, and the **non-semisimple class** $\vec Q\neq0$ with $\vec Q^2=0$, which is similar to the Jordan block $J_2(Q_t)$.
 
 *Proof.* (1) The characteristic polynomial has two distinct roots, so $\tilde Q$ is diagonalisable with those roots; two diagonalisable matrices with the same spectrum are conjugate in $M_2(\mathbb{C})\cong\mathbb{B}$, and the spectrum is unordered because the two eigenvalues are exchanged by the choice of $B$. (2) On the cone $\vec Q^2=0$. If $\vec Q=0$ the element is central. If $\vec Q\neq0$, then $\tilde Q-Q_te_t$ is non-zero with square $0$, so the minimal polynomial is $(X-Q_t)^2$ and the Jordan form is a single block of size $2$; all non-zero square-zero elements are rank-one nilpotents, hence conjugate.
-
-**Corollary.** In the non-semisimple class the element is a zero divisor exactly when $Q_t=0$, since $\det\mathsf{M}_2(\tilde Q)=Q_t^2$ on that class.
 
 The unordered spectrum therefore determines the similarity class off the cone, and carries no information on it beyond $Q_t$: the discriminant is what separates the central class from the non-semisimple one.
 
@@ -321,7 +307,7 @@ The eigenvalue problem is stated without a module and without an acting operator
 
 The regular case is $B^2\neq0$. The eigenvalues are distinct, the element is semisimple, and its left multiplication is diagonalisable. The spectral idempotents are the Lagrange idempotents $\tilde\Pi_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$, which coincide with $(e_t\pm\vec\Xi)/2$ for $\vec\Xi=-i\vec Q/B$; the decomposition is unique, and an eigenbasis exists with diagonal values $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
-The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimension $6$, smooth off the scalar vertex. It is stratified by the vanishing of the scalar and vector parts into the scalar regime, where every idempotent commutes and the decomposition has one term; the Jordan regime, where the element is a unit, defective, with minimal polynomial $(X-Q_t)^2$ and no non-trivial commuting idempotent; and the nilpotent regime, where the element is a zero divisor with square zero. The origin is the only point of the cone that is neither a unit nor a zero divisor. The unordered spectrum determines the similarity class off the cone; on the cone it distinguishes only the central class from the non-semisimple one. The condition is blind to the scalar part, so the whole centre is degenerate, and no case is stable under multiplication. The comparison with the norm is *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*.
+The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimension $6$, the product of the scalar line and the isotropic cone of the vector subspace, smooth off the scalar vertex. On it the two eigenvalues have coalesced at $Q_t$. The spectral behaviour is uniform along the whole vertex: the element is scalar and semisimple, every idempotent commutes with it, and the decomposition has one term. Off the vertex the minimal polynomial is $(X-Q_t)^2$, the element is defective, the eigenspace has complex dimension $2$, and no two-term spectral decomposition or eigenbasis exists. The unordered spectrum determines the similarity class off the cone; on the cone it distinguishes only the central class from the non-semisimple one. The condition is blind to the scalar part, so the whole centre is degenerate, and no case is stable under multiplication. The comparison with the norm is *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*.
 
 ## Summary of Notation
 
@@ -339,7 +325,6 @@ The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimen
 | $\operatorname{Ann}_{\ell}(a)=\{v:av=0\}$ | the left annihilator, a right ideal |
 | $\vec\Xi=-i\vec Q/B$ | the pure root, with $\vec\Xi^2=e_t$ |
 | $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the spectral idempotents, equal to $(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$ |
-| $\vec\Upsilon$ | a non-zero vector with $\vec\Upsilon^2=0$ |
 
 ## Further Reading
 
@@ -347,7 +332,7 @@ The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimen
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections, the degenerate regimes, the Hermitian case and the spectral theorem.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the existence and uniqueness of the spectral decomposition in the general theory.
 - [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), for the interpolating idempotents.
-- [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the Jordan block behind the Jordan regime.
+- [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the Jordan block behind the non-semisimple class.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the semisimple and nilpotent parts.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the characteristic polynomial, diagonalisability and the Jordan form.
 - Kenneth Hoffman and Ray Kunze, *Linear Algebra* (2nd edition, Prentice-Hall, 1971), for the spectral theorem over $\mathbb{C}$ and the primary decomposition.

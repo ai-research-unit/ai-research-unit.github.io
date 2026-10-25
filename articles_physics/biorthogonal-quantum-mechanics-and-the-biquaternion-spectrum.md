@@ -17,7 +17,7 @@ This article reads that structure in the biquaternion algebra. The spectral deco
 | Left and right eigenvalues, and the central-spectrum convention | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The spectral theorem for a normal element | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The matrix model and the determinant | [The Element and Operator Representations](the-element-and-operator-representations.html) |
-| The Jordan and nilpotent regimes | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The degenerate case and the non-semisimple class | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 ## The Two Eigenbases
 
