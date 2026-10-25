@@ -143,7 +143,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
 - [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), §*The Isometry Group and the Absence of a Pin Group*
 - [One-Sided Operators on the Biquaternion Algebra](../articles_maths/one-sided-operators-on-the-biquaternion-algebra.html)
-- [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
+- [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
 - [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
 

@@ -11,12 +11,12 @@ $$
 the sector on which the reduced norm vanishes and the vector square does not. It is the difference of the null cone and the spectral-degenerate cone,
 
 $$
-\Sigma_{01}=\mathcal C\setminus\mathcal S,
+\Sigma_{01}=\mathcal{N}\setminus\mathcal S,
 $$
 
 and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. The vocabulary, the two cones and the naming convention are those of *Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The Norm-Degenerate, Spectrally Degenerate Sector*.
 
-Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the reduced norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal C=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally regular** means $B^2\neq0$.
+Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the reduced norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal{N}=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally regular** means $B^2\neq0$.
 
 ## Definition and Characterisation
 
@@ -58,9 +58,9 @@ The scalar is fixed by the element: $c=2Q_t$ and $\tilde\Pi=\tilde Q/(2Q_t)$. So
 
 ## Geometry
 
-**Theorem (an open subset of the null cone).** $\Sigma_{01}=\mathcal C\setminus\Sigma_{00}$ is a Zariski-open subset of the null cone, of complex dimension $3$ and real dimension $6$. It is smooth, connected, and not closed in $\mathbb{B}$; its closure is $\mathcal C$, and the boundary it loses is exactly $\Sigma_{00}$.
+**Theorem (an open subset of the null cone).** $\Sigma_{01}=\mathcal{N}\setminus\Sigma_{00}$ is a Zariski-open subset of the null cone, of complex dimension $3$ and real dimension $6$. It is smooth, connected, and not closed in $\mathbb{B}$; its closure is $\mathcal{N}$, and the boundary it loses is exactly $\Sigma_{00}$.
 
-*Proof.* In $\mathcal C$ one has $B^2=-Q_t^2$, so $B^2=0$ is equivalent to $Q_t=0$, which is $\Sigma_{00}$. Hence $\Sigma_{01}=\mathcal C\setminus\{Q_t=0\}$ is Zariski-open in $\mathcal C$. The null cone is cut out by $N=0$, whose gradient $2\tilde Q$ does not vanish off the origin; the origin lies in $\Sigma_{00}$, so every point of $\Sigma_{01}$ is smooth. Its dimension is that of $\mathcal C$, namely $4-1=3$ over $\mathbb{C}$, hence $6$ over $\mathbb{R}$. The closure of a non-empty open subset of the irreducible variety $\mathcal C$ is $\mathcal C$ itself.
+*Proof.* In $\mathcal{N}$ one has $B^2=-Q_t^2$, so $B^2=0$ is equivalent to $Q_t=0$, which is $\Sigma_{00}$. Hence $\Sigma_{01}=\mathcal{N}\setminus\{Q_t=0\}$ is Zariski-open in $\mathcal{N}$. The null cone is cut out by $N=0$, whose gradient $2\tilde Q$ does not vanish off the origin; the origin lies in $\Sigma_{00}$, so every point of $\Sigma_{01}$ is smooth. Its dimension is that of $\mathcal{N}$, namely $4-1=3$ over $\mathbb{C}$, hence $6$ over $\mathbb{R}$. The closure of a non-empty open subset of the irreducible variety $\mathcal{N}$ is $\mathcal{N}$ itself.
 
 **Parametrisation.** The map
 
@@ -163,12 +163,12 @@ $$
 N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)=0,
 $$
 
-and the product lies in $\mathcal C=\Sigma_{00}\sqcup\Sigma_{01}$.
+and the product lies in $\mathcal{N}=\Sigma_{00}\sqcup\Sigma_{01}$.
 
 **Theorem (all three outcomes occur).**
 
 $$
-\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal C,
+\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal{N},
 $$
 
 and the product of two elements of the sector can lie in $\Sigma_{01}$, can be $0$, and can be a non-zero element of $\Sigma_{00}$.
@@ -216,11 +216,11 @@ so the square of an element of the sector stays in the sector.
 **The sector is the complement of one cone inside the other.** As point sets,
 
 $$
-\Sigma_{01}=\mathcal C\setminus\mathcal S,\qquad
-\mathcal C=\Sigma_{00}\sqcup\Sigma_{01}.
+\Sigma_{01}=\mathcal{N}\setminus\mathcal S,\qquad
+\mathcal{N}=\Sigma_{00}\sqcup\Sigma_{01}.
 $$
 
-The closure of $\Sigma_{01}$ is $\mathcal C$; the boundary it loses is exactly its intersection with $\mathcal S$, which is $\Sigma_{00}$.
+The closure of $\Sigma_{01}$ is $\mathcal{N}$; the boundary it loses is exactly its intersection with $\mathcal S$, which is $\Sigma_{00}$.
 
 **No tangency.** The two cones are **transverse along the sector**, not tangent. Their gradients are
 
@@ -228,7 +228,7 @@ $$
 \nabla N=2(Q_t,\vec Q),\qquad \nabla B^2=2(0,\vec Q),
 $$
 
-and they are proportional only if $Q_t=0$. On $\Sigma_{01}$ one has $Q_t\neq0$, so the gradients are independent and the intersection $\mathcal C\cap\mathcal S$ is nowhere dense in $\mathcal C$ there. The tangency of the two cones is a phenomenon of the boundary $\Sigma_{00}$, where both gradients become $2(0,\vec Q)$.
+and they are proportional only if $Q_t=0$. On $\Sigma_{01}$ one has $Q_t\neq0$, so the gradients are independent and the intersection $\mathcal{N}\cap\mathcal S$ is nowhere dense in $\mathcal{N}$ there. The tangency of the two cones is a phenomenon of the boundary $\Sigma_{00}$, where both gradients become $2(0,\vec Q)$.
 
 **Independence witness.** Every element of the sector is a **non-unit** with **distinct eigenvalues**: $N=0$, so it is a zero divisor of the plain product, while $B^2=-Q_t^2\neq0$, so its two eigenvalues $0$ and $2Q_t$ are separated. The standard example is
 
@@ -243,7 +243,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 | sector | conditions | elements | spectrum | adapted Peirce | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct and non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
-| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $c\neq0$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal C$; all three outcomes |
+| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $c\neq0$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal{N}$; all three outcomes |
 | **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$ | $\{Q_t\}$ | fails off the scalar line, one term on it | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $N=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
@@ -274,14 +274,14 @@ the origin leaving the nilpotent zone for the scalar one.
 | question | answer |
 |---|---|
 | definition | $\Sigma_{01}=\{N=0,\ B^2\neq0\}$ |
-| descriptions | $\mathcal C\setminus\mathcal S$; $Q_t\neq0$ on $\mathcal C$; $\tilde Q^2=2Q_t\tilde Q$; $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent; spectrum $\{c,0\}$ |
-| geometry | Zariski-open and dense in $\mathcal C$; complex cone of complex dimension $3$ and real dimension $6$; smooth, connected; apex removed |
+| descriptions | $\mathcal{N}\setminus\mathcal S$; $Q_t\neq0$ on $\mathcal{N}$; $\tilde Q^2=2Q_t\tilde Q$; $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent; spectrum $\{c,0\}$ |
+| geometry | Zariski-open and dense in $\mathcal{N}$; complex cone of complex dimension $3$ and real dimension $6$; smooth, connected; apex removed |
 | elements | semisimple zero divisors; minimal polynomial $X(X-c)$ |
 | adapted Peirce | exists, unique, diagonal on $(e_+,e_-)$ |
 | centraliser | $\mathbb{C}[\tilde\Pi]\cong\mathbb{C}\oplus\mathbb{C}$, with the four idempotents $0,e_t,\tilde\Pi,\tilde\Pi'$ |
 | annihilators | two distinct planes meeting in $\mathbb{C}\tilde\Pi'$, the kernel projector; $\tilde Q$ lies in neither |
-| multiplication | $\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal C$, with $\Sigma_{01}$, $0$ and $\Sigma_{00}\setminus\{0\}$ all attained |
-| relation to the cones | $\Sigma_{01}=\mathcal C\setminus\mathcal S$; transverse along the sector; tangency only on $\Sigma_{00}$ |
+| multiplication | $\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal{N}$, with $\Sigma_{01}$, $0$ and $\Sigma_{00}\setminus\{0\}$ all attained |
+| relation to the cones | $\Sigma_{01}=\mathcal{N}\setminus\mathcal S$; transverse along the sector; tangency only on $\Sigma_{00}$ |
 | place in the arrangement | the zero-divisor zone: non-invertibility with full spectral regularity |
 
 The sector is the idempotent sector. It is the set of non-zero scalar multiples of non-trivial idempotents, the complement of the nilpotent stratum inside the null cone, and the one place in the degenerate half of the arrangement where the spectrum is as clean as it can be. Its elements are exactly those whose eigenvalues are one zero and one non-zero: the zero makes them zero divisors, the non-zero makes their spectral decomposition exist.
@@ -292,9 +292,9 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 |---|---|
 | $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
 | $\Sigma_{01}$ | the norm-degenerate, spectrally regular sector, this article |
-| $\mathcal C=\{N=0\}$ | the null cone of the reduced norm |
+| $\mathcal{N}=\{N=0\}$ | the null cone of the reduced norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
-| $\mathcal C_{\mathrm{np}}=\Sigma_{01}$ | the non-pure stratum of the null cone |
+| $\mathcal{N}_{\mathrm{np}}=\Sigma_{01}$ | the non-pure stratum of the null cone |
 | $\tilde\Pi,\tilde\Pi'=e_t-\tilde\Pi$ | a non-trivial idempotent and its complement |
 | $\tilde\Xi=2\tilde\Pi-e_t$ | the root of $+1$ attached to the idempotent, $\tilde\Xi^2=e_t$ |
 | $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$ | the standard pair of a root |

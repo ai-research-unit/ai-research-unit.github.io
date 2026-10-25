@@ -209,14 +209,14 @@ The entries of $M(g)$ are polynomials in $g_0,g_1,g_2,g_3$, so $\det M(g)$ is a 
 **Definition.** The **null cone** of $Q_g$ is the quadric
 
 $$
-\mathcal{C}_g = \{\tilde q\in\mathbb{H} : Q_g(\tilde q) = 0\} = L_g^{-1}(\mathcal C),
+\mathcal{N}_g = \{\tilde q\in\mathbb{H} : Q_g(\tilde q) = 0\} = L_g^{-1}(\mathcal{N}),
 $$
 
-where $\mathcal{C} = \{\tilde q : q_t^2 = |\vec q|^2\}$ is the null cone of $\omega$, the double cone over the unit sphere of the vector subspace.
+where $\mathcal{N} = \{\tilde q : q_t^2 = |\vec q|^2\}$ is the null cone of $\omega$, the double cone over the unit sphere of the vector subspace.
 
-**Proposition.** $\mathcal{C}_g$ is a non-degenerate quadratic cone in $\mathbb{R}^4$ with apex $0$, carried by the isometry $L_g$ to the standard cone; it is not the zero-divisor set of the algebra, because $\mathbb{H}$ has none.
+**Proposition.** $\mathcal{N}_g$ is a non-degenerate quadratic cone in $\mathbb{R}^4$ with apex $0$, carried by the isometry $L_g$ to the standard cone; it is not the zero-divisor set of the algebra, because $\mathbb{H}$ has none.
 
-*Proof.* The cone is the inverse image under the linear isomorphism $L_g$ of the cone of a non-degenerate form, so it is a cone and it is non-degenerate in the sense that its defining form is. The only zero divisor of $\mathbb{H}$ is $0$, by the invertibility of the nonzero elements in *Quaternion Norm and Invertibility*, whereas $\mathcal{C}_g$ contains a three-dimensional family of nonzero elements; the two sets are therefore different, and the null cone is a purely form-theoretic object.
+*Proof.* The cone is the inverse image under the linear isomorphism $L_g$ of the cone of a non-degenerate form, so it is a cone and it is non-degenerate in the sense that its defining form is. The only zero divisor of $\mathbb{H}$ is $0$, by the invertibility of the nonzero elements in *Quaternion Norm and Invertibility*, whereas $\mathcal{N}_g$ contains a three-dimensional family of nonzero elements; the two sets are therefore different, and the null cone is a purely form-theoretic object.
 
 The cone of $\omega$ is the set on which the interval $t^2-\vec q\cdot\vec q$ vanishes, that is the set the source calls the null cone; the subfamilies on which $Q_g$ is respectively positive, zero and negative are the timelike, null and spacelike classes of the form, and they are transported by $L_g$ from those of $\omega$.
 
@@ -267,7 +267,7 @@ The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g
 | $\beta_g$ | Polar form of $Q_g$ |
 | $M(g)$ | Gram matrix of $Q_g$ |
 | $s=g_0^2-\lvert\vec g\rvert^2$, $c=\langle g\rangle_{\natural}$ | The two invariants of the determinant computation |
-| $\mathcal{C}_g$ | Null cone of $Q_g$ |
+| $\mathcal{N}_g$ | Null cone of $Q_g$ |
 | $\mathbb{R}P^3$ | Parameter space of the family up to sign and scale |
 
 ## Further Reading

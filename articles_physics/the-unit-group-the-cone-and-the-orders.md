@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the **group of units** $\mathbb{B}^{\times}$; their complement is the **zero-divisor cone** $\mathcal{C}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.
+The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the **group of units** $\mathbb{B}^{\times}$; their complement is the **zero-divisor cone** $\mathcal{N}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.
 
 The article reads three objects and their topology: the group, its boundary and the orders. Its thesis is that invertibility is the algebraic form of reversibility, that the cone is the wall at which a multiplication stops being reversible, and that the orders are the discrete skeletons on which the continuous group is replaced by a finite one. It proves nothing; the theorems are in the mathematics articles of the source table.
 
@@ -32,19 +32,19 @@ $$
 $$
 The algebra is the disjoint union
 $$
-\boxed{\;\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{C},
+\boxed{\;\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{N},
 \qquad
 \mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\},
 \qquad
-\mathcal{C}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}\;},
+\mathcal{N}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}\;},
 $$
-and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The three classes are the units, the nonzero points of the cone and the origin.
+and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The three classes are the units, the nonzero points of the cone and the origin.
 
 | condition on $\langle\tilde Q\rangle_{\natural}$ | condition on $\tilde Q$ | class |
 | --- | --- | --- |
 | $\neq0$ | automatically $\neq0$ | a unit; an element of $\mathbb{B}^{\times}$ |
 | $=0$ | $\tilde Q=0$ | the origin; neither a unit nor a zero divisor |
-| $=0$ | $\tilde Q\neq0$ | a zero divisor; a point of $\mathcal{C}\setminus\{0\}$ |
+| $=0$ | $\tilde Q\neq0$ | a zero divisor; a point of $\mathcal{N}\setminus\{0\}$ |
 
 ### The Reversible Operation
 
@@ -88,7 +88,7 @@ The partition has a divisibility form. In the multiplicative monoid, $a$ divides
 $$
 \text{units}=\{\text{divisors of every element}\},
 \qquad
-\mathcal{C}\setminus\{0\}=\{\text{divisors of }0\},
+\mathcal{N}\setminus\{0\}=\{\text{divisors of }0\},
 $$
 and the apex is the element that divides only $0$ and is divided by everything. **The order structure is the divisibility preorder.** The units are its top equivalence class and the cone is the class of the divisors of nothing.
 
@@ -120,7 +120,7 @@ A unit is a **reversible process**: the map is a bijection, and it can be run ba
 
 The group $\mathbb{B}^{\times}$ is open and dense in the algebra, connected, of real dimension eight. The cone is closed, of empty interior and of real codimension two, and the group and the cone share the boundary:
 $$
-\partial\mathbb{B}^{\times}=\partial\mathcal{C}=\mathcal{C}.
+\partial\mathbb{B}^{\times}=\partial\mathcal{N}=\mathcal{N}.
 $$
 Under the matrix model $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the group is $GL_2(\mathbb{C})$ and the norm is the determinant, so the determinant is a surjective homomorphism
 $$
@@ -192,7 +192,7 @@ Its link is
 $$
 \boxed{\;L=\mathcal{N}\cap S^{7}_{E}\;},
 $$
-the intersection with the Euclidean unit sphere. The link is a closed connected real five-manifold, an $S^{1}$-bundle over the projectivised cone $\mathbb{P}(\mathcal{N})\cong S^{2}\times S^{2}$, with
+the intersection with the Euclidean unit sphere. The link is a closed connected real five-manifold, an $S^{1}$-bundle over the projectivised cone $\mathbb{P}(\mathcal{N})\cong S^{2}\times S^{2}$; the bundle is trivial, so $L\cong S^{2}\times S^{3}$, with
 $$
 \pi_1(L)=0,
 \qquad
@@ -280,7 +280,7 @@ The orders are arithmetic, not dynamics. The finite unit groups are discrete sym
 
 ## Summary
 
-The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ and its zero-divisor cone $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.
+The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ and its zero-divisor cone $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.
 
 The group is open, dense, connected and of real dimension eight, with $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; the polar decomposition retracts it onto $\mathrm{U}(2)$, and $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover homotopy equivalent to $\mathbb{R}\times S^{3}$. The norm-one slice modulo the central sign is the frame space $SO^{+}(1,3)$. The cone is contractible, smooth off its apex, and its link is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$; the apex is a genuine singularity.
 
@@ -291,11 +291,11 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units; the complement of the cone |
-| $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone; the wall of reversibility |
+| $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone; the wall of reversibility |
 | $\langle\tilde Q\rangle_{\natural}$ | the general quaternionic algebraic norm; the invertibility criterion |
 | $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ | the norm-one group; the spin frame slice |
 | $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$ | the unitary group; maximal compact subgroup, $\cong U(2)$ |
-| $L=\mathcal{N}\cap S^{7}_{E}$ | the link of the cone; an $S^{1}$-bundle over $S^{2}\times S^{2}$ |
+| $L=\mathcal{N}\cap S^{7}_{E}$ | the link of the cone; $L\cong S^{2}\times S^{3}$, an $S^{1}$-bundle over $S^{2}\times S^{2}$ |
 | $\mathcal{L}$, $\mathcal{L}_{\mathrm{H}}$ | the Lipschitz and Hurwitz orders |
 | $Q_8$, $2T$ | the unit groups of $\mathcal{L}$ and $\mathcal{L}_{\mathrm{H}}$ |
 | $24$-cell | the regular polytope with the Hurwitz units as vertices |

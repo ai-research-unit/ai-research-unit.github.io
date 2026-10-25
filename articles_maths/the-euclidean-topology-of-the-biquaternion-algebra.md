@@ -100,7 +100,7 @@ $$
 
 and $\tilde{Q}_0$ is a zero divisor. Hence $S^{7}_{E}\not\subseteq\mathbb{B}^{\times}$ and $S^{7}_{E}$ is not a subgroup of $\mathbb{B}^{\times}$.
 
-**Proposition (the sphere meets the null cone in a compact $5$-manifold).** The intersection $S^{7}_{E}\cap\mathcal C$, with $\mathcal C$ the null cone, is a compact real $5$-manifold without boundary, the link of the cone; it is homeomorphic to $S^{2}\times S^{3}$ (*The Topology of the Zero-Divisor Cone*).
+**Proposition (the sphere meets the null cone in a compact $5$-manifold).** The intersection $S^{7}_{E}\cap\mathcal{N}$, with $\mathcal{N}$ the null cone, is a compact real $5$-manifold without boundary, the link of the cone; it is homeomorphic to $S^{2}\times S^{3}$ (*The Topology of the Zero-Divisor Cone*).
 
 **Proof.** The null cone is a real algebraic cone of real dimension $6$ with its only singular point at the origin (*The Topology of the Zero-Divisor Cone*); intersecting the smooth part with the transverse unit sphere and removing the origin gives a compact smooth manifold of dimension $6-1=5$, the link. The identification of the link with $S^{2}\times S^{3}$ is the theorem of *The Topology of the Zero-Divisor Cone*.
 
@@ -128,7 +128,7 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 | $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$ | Normed-algebra inequality, sharp |
 | $H(t,\tilde{Q})=(1-t)\tilde{Q}$ | Contraction of $\mathbb{B}$ to $0$ |
 | $S^{7}_{E}=\{\|\tilde{Q}\|_E=1\}$ | Euclidean unit sphere; not a group |
-| $S^{7}_{E}\cap\mathcal C$ | Compact $5$-manifold, the link; homeomorphic to $S^{2}\times S^{3}$ |
+| $S^{7}_{E}\cap\mathcal{N}$ | Compact $5$-manifold, the link; homeomorphic to $S^{2}\times S^{3}$ |
 | $O(8)$ | Isometry group of the Euclidean structure |
 
 ## Further Reading

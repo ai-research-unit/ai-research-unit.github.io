@@ -19,7 +19,7 @@ a group under multiplication with identity $e_t$, the inverse of a unit being a 
 
 **Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements off the null cone, so the elements that are not zero divisors are the units together with the origin, and the cone is exactly the complement of the group.
 
-**Proposition (the units are open and dense).** The group $\mathbb{B}^\times$ is the complement of the **null cone** $\mathcal C$ of the norm, the set of non-units, so it is open, the cone being a zero set of a polynomial, and dense, the cone being a proper closed subset of the algebra.
+**Proposition (the units are open and dense).** The group $\mathbb{B}^\times$ is the complement of the **null cone** $\mathcal{N}$ of the norm, the set of non-units, so it is open, the cone being a zero set of a polynomial, and dense, the cone being a proper closed subset of the algebra.
 
 *Proof.* The unit criterion writes the complement of the cone as the units; a zero set is closed, so its complement is open; a proper algebraic subset has empty interior, so its complement is dense. The cone has real dimension $6$ in the real $8$-dimensional algebra, hence codimension $2$.
 
@@ -132,7 +132,7 @@ of degree one; the class of the central circle $Ae_t$ with $|A|=1$ is twice a ge
 
 **A non-central unit.** For $\tilde{Q}=e_t+\vec e_x$ the determinant is $2$, so the element is a unit; it is not central, and its inverse is $(e_t-\vec e_x)/2$, as $(e_t+\vec e_x)(e_t-\vec e_x)=2e_t$ shows.
 
-**A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{M}_+$ are the complement of the null cone.
+**A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{M}_+$ are the complement in $\mathbb{M}_+$ of its null cone.
 
 **A non-unit.** For $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=(\vec e_x+i\vec e_y)^{2}=0$, so the element is a zero divisor, lies on the null cone and is not a unit; it is therefore an element of none of the three groups above.
 

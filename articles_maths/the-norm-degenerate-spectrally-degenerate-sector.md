@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The reduced norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal C$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $N\neq0$ and $i=0$ if $N=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The reduced norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal{N}$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $N\neq0$ and $i=0$ if $N=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
 
 The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §*The Sector and Its Three Descriptions*: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.
 
-**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal C$ and the spectral-degenerate cone $\mathcal S$, as in *Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $N=0$ and $B^2=0$.
+**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $N=0$ and $B^2=0$.
 
 ## The Sector and Its Three Descriptions
 
@@ -32,7 +32,7 @@ $$
 
 separates the central and the vector parts, so $\tilde Q^2=0$ exactly when $Q_t^2=B^2$ and $Q_t\vec Q=0$. If $Q_t\neq0$, the second equation gives $\vec Q=0$, hence $B^2=0$, hence $Q_t^2=0$, a contradiction. Therefore $Q_t=0$, and then $B^2=0$. Conversely, $Q_t=0$ and $B^2=0$ give $\tilde Q^2=-B^2e_t=0$. This proves (ii) $\iff$ (iii). For (i), $N=0$ with $Q_t=0$ gives $B^2=0$; conversely $N=0$ with $B^2=0$ gives $Q_t^2=0$, hence $Q_t=0$.
 
-**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal C_{\mathrm p}$ of the null cone of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal C_{\mathrm p}$; the sector is that cone with its apex adjoined.
+**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal{N}_{\mathrm p}$ of the null cone of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal{N}_{\mathrm p}$; the sector is that cone with its apex adjoined.
 
 ## Geometry
 
@@ -150,11 +150,11 @@ $$
 
 so it lies in $\Sigma_{01}$.
 
-Both alternatives occur: the square of any element of the sector is $0$, and the witness above lands in $\Sigma_{01}$. Consequently the sector is a set of nilpotents, not a subalgebra: it is not closed under multiplication, and it is not a subsemigroup of the multiplicative semigroup $\mathcal C$.
+Both alternatives occur: the square of any element of the sector is $0$, and the witness above lands in $\Sigma_{01}$. Consequently the sector is a set of nilpotents, not a subalgebra: it is not closed under multiplication, and it is not a subsemigroup of the multiplicative semigroup $\mathcal{N}$.
 
 ## Relation to the Two Cones
 
-**The sector is the intersection.** As point sets, $\Sigma_{00}=\mathcal C\cap\mathcal S$; as schemes, the ideal is $(Q_t^2,B^2)$, as computed in §*Geometry*. It is the only sector contained in both cones.
+**The sector is the intersection.** As point sets, $\Sigma_{00}=\mathcal{N}\cap\mathcal S$; as schemes, the ideal is $(Q_t^2,B^2)$, as computed in §*Geometry*. It is the only sector contained in both cones.
 
 **The two cones are tangent along the whole sector.** Their algebraic gradients are
 
@@ -175,7 +175,7 @@ and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin
 | **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | fails off the scalar line, one term on it | $N\neq0$ preserved; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $N=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
-**No sector is closed under multiplication.** Only the norm dichotomy is: $\mathcal C$ is a semigroup and $\mathbb{B}^{\times}$ is a group. The four witnesses are
+**No sector is closed under multiplication.** Only the norm dichotomy is: $\mathcal{N}$ is a semigroup and $\mathbb{B}^{\times}$ is a group. The four witnesses are
 
 $$
 (e_t+\vec e_x)(e_t-\vec e_x)=2e_t\in\Sigma_{10},
@@ -220,7 +220,7 @@ The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that t
 | Peirce form | purely off-diagonal; no adapted decomposition off the origin |
 | spectrum | $\{0\}$, minimal polynomial $X^2$ |
 | multiplication | $\Sigma_{00}\cdot\Sigma_{00}\subseteq\{0\}\cup\Sigma_{01}$ |
-| relation to the cones | $\Sigma_{00}=\mathcal C\cap\mathcal S$, with the two cones tangent along the whole sector |
+| relation to the cones | $\Sigma_{00}=\mathcal{N}\cap\mathcal S$, with the two cones tangent along the whole sector |
 | place in the arrangement | the only sector on which both answers are negative |
 
 The sector is the doubly degenerate cell: the set of square-zero elements, the intersection of the two cones, the locus on which invertibility and spectral separation are both answered in the negative, and the one place where the origin, a semisimple point, sits among the defective ones.
@@ -231,9 +231,9 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 |---|---|
 | $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
 | $\Sigma_{00}$ | the doubly degenerate sector, this article |
-| $\mathcal C=\{N=0\}$ | the null cone of the reduced norm |
+| $\mathcal{N}=\{N=0\}$ | the null cone of the reduced norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
-| $\mathcal C_{\mathrm p}$ | the pure stratum of the null cone, $\Sigma_{00}\setminus\{0\}$ |
+| $\mathcal{N}_{\mathrm p}$ | the pure stratum of the null cone, $\Sigma_{00}\setminus\{0\}$ |
 | $\vec\Upsilon$ | a non-zero pure vector with $\vec\Upsilon^2=0$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication |
 | $A(\tilde Q)=\ker L_{\tilde Q}$ | the left annihilator, a right ideal |

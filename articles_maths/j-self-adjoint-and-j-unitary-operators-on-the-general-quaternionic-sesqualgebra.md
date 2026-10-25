@@ -10,7 +10,7 @@ $$
 
 for which the operators of the algebra can be self-adjoint, skew-adjoint, unitary or normal. This article computes that adjoint on the three operator families of the corpus — the left multiplications $L_{\tilde{Q}}$, the right multiplications $R_{\tilde{Q}}$ and the sandwiches $\Theta_{\tilde{Q}}$ — and reads off the indefinite counterparts of the self-adjointness, skew-adjointness, unitarity and normality of the Hermitian case. The single structural surprise is that the indefinite adjoint of a left multiplication is a **right** multiplication: the form built from the trace of a product does not see the order, so $J$ exchanges the sides.
 
-The general theory is *J-Self-Adjoint and J-Unitary Operators* and *Krein Spaces*; the form, its symmetry and the bridge are *The Krein Norm of the Biquaternion Algebra*; the definite counterpart is *Two-Sided Operators on the General Plain Sesqualgebra*, *One-Sided Operators on the General Plain Sesqualgebra* and *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the spectral consequences are in §*The Indefinite Spectral Data*.
+The general theory is *J-Self-Adjoint and J-Unitary Operators* and *Krein Spaces*; the form, its symmetry and the bridge are *The Krein Norm of the Biquaternion Algebra*; the definite counterpart is *Two-Sided Operators on the General Plain Sesqualgebra* and *One-Sided Operators on the General Plain Sesqualgebra*; the spectral consequences are in §*The Indefinite Spectral Data*.
 
 ## The $J$-Adjoint
 
@@ -217,5 +217,5 @@ The **$J$-adjoint** $T^{\dagger}=JT^{*}J$ is the adjoint for the general quatern
 - [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form, the symmetry $J={}^{\natural}$ and the bridge identity.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html) and [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the definite counterparts
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the indefinite unitary group $\mathrm{U}(1,3)$ and its maximal compact part
-- [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), for the definite spectra against which the indefinite signs are read
+- [Two-Sided Operator and the Polar Decomposition](two-sided-operator-and-the-polar-decomposition.html), §*The Spectrum of the Sandwich*, for the definite spectra against which the indefinite signs are read
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the indefinite adjoint and its normal forms

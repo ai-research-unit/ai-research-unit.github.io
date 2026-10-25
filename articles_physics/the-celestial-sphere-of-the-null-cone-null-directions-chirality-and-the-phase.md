@@ -6,13 +6,13 @@ A massless element of the framework is an element of zero biquaternion norm, and
 
 ## The Null Cone of the Algebra
 
-The null cone is the zero set of the biquaternion norm,
+The null cone $\mathcal N$ is the zero set of the biquaternion norm,
 
 $$
 \boxed{\;\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0\;},
 $$
 
-and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm is the interval,
+and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. The cone is written $\mathcal N$; the letter $\mathcal C$ is kept for the celestial sphere of the next section, which is its projectivisation and not the cone itself. On the material sector $\mathbb{M}_-$, with $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm is the interval,
 
 $$
 \langle\tilde{R}\rangle_{\natural} = -c^2{t'}^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
@@ -25,7 +25,7 @@ so the null cone of the algebra restricts to the **light cone** of the material 
 The cone is a cone over its own directions. Two nonzero null elements define the **same direction** when one is a nonzero scalar multiple of the other; the set of directions is the **projectivisation** of the null cone, and on the material sector it is a two-dimensional sphere,
 
 $$
-\boxed{\;\mathcal{C} \;=\; \bigl\{\text{null directions of }\mathbb{M}_-\bigr\} \;\cong\; S^2\;},
+\boxed{\;\mathcal{C} \;=\; \mathbb{P}(\mathcal{N}) \;=\; \bigl\{\text{null directions of }\mathbb{M}_-\bigr\} \;\cong\; S^2\;},
 $$
 
 which is the **celestial sphere** of the light cone: the sphere of lightlike directions at a point, the sphere a photon's momentum points along, swept by the two angles $(\theta,\varphi)$. The Lorentz group acts on it transitively: the future lightlike directions form one orbit of the proper orthochronous Lorentz group, the past directions the other, and time reversal exchanges the two. No direction is preferred, which is the statement that the sphere is a single orbit. A **massless element** is determined by its direction and its scale, and the scale is not a Lorentz datum of the direction; so the sphere, and not the cone, is the Lorentz-homogeneous object.

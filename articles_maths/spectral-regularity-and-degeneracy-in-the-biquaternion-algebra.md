@@ -4,9 +4,9 @@
 
 The biquaternion algebra carries two quadratic conditions. The first is the reduced norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$. Its zero locus is the null cone of the reduced norm; the norm is multiplicative and decides invertibility: that is *Norm Regularity and Degeneracy in the Biquaternion Algebra*. The second is $B^2$ itself, the square of the vector part. Its zero locus is the **spectral-degenerate cone** $\mathcal S$; the cone is not multiplicative, and it decides whether the two eigenvalues of the element can be told apart.
 
-The article states the eigenvalue problem without a module or an acting operator. An eigenvalue is a scalar for which a left ideal is proper, an eigenvector is an element of a left annihilator, and a spectral idempotent is a Peirce idempotent adapted to the element. On that vocabulary the spectral criterion is proved: $\lambda$ is an eigenvalue of $\tilde Q$ exactly when $N(\tilde Q-\lambda e_t)=0$. The characteristic polynomial follows, with discriminant $-4B^2$, and the degenerate side $\mathcal S$ is stratified into three regimes: scalar, Jordan and nilpotent. The adapted Peirce decomposition is shown to exist exactly on the non-scalar side where $B^2\neq0$, and to fail on the Jordan and nilpotent regimes. The last sections show that the two degeneration loci are independent: a zero divisor can have distinct eigenvalues, and a unit can have a repeated one.
+The article states the eigenvalue problem without a module or an acting operator. An eigenvalue is a scalar for which a left ideal is proper, an eigenvector is an element of a left annihilator, and a spectral idempotent is a Peirce idempotent adapted to the element. On that vocabulary the spectral criterion is proved: $\lambda$ is an eigenvalue of $\tilde Q$ exactly when $N(\tilde Q-\lambda e_t)=0$. The characteristic polynomial follows, with discriminant $-4B^2$, and the degenerate side $\mathcal S$ is stratified into three regimes: scalar, Jordan and nilpotent. The adapted Peirce decomposition is shown to exist exactly on the non-scalar side where $B^2\neq0$, and to fail on the Jordan and nilpotent regimes. The last sections show that the two degeneration loci are independent: a zero divisor can have distinct eigenvalues, and a unit can have a repeated one. They also give the two operator readings of the cones: the sandwich is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone.
 
-**Scope and naming.** The two problems are the two quadratic problems of the algebra. The norm problem asks whether the element can be inverted; its degeneration locus is the null cone $\mathcal C=\{N=0\}$. The spectral problem asks whether the two eigenvalues can be separated; its degeneration locus is $\mathcal S=\{B^2=0\}$. Three naming rules are held throughout. First, $\mathcal C$ is the **null cone of the reduced norm**, qualified at first use, and then the null cone. Second, $\mathcal S$ is the **spectral-degenerate cone** and is never called a null cone: $B^2$ is the square of the vector part, not a norm on $\mathbb{B}$, so $\mathcal S$ is not the null cone of a norm on the algebra. Third, unqualified **regular** means **spectrally regular**, that is $B^2\neq0$; the companion article's regular side, the unit group, is written **norm-regular** wherever the two could collide.
+**Scope and naming.** The two problems are the two quadratic problems of the algebra. The norm problem asks whether the element can be inverted; its degeneration locus is the null cone $\mathcal{N}=\{N=0\}$. The spectral problem asks whether the two eigenvalues can be separated; its degeneration locus is $\mathcal S=\{B^2=0\}$. Three naming rules are held throughout. First, $\mathcal{N}$ is the **null cone of the reduced norm**, qualified at first use, and then the null cone. Second, $\mathcal S$ is the **spectral-degenerate cone** and is never called a null cone: $B^2$ is the square of the vector part, not a norm on $\mathbb{B}$, so $\mathcal S$ is not the null cone of a norm on the algebra. Third, unqualified **regular** means **spectrally regular**, that is $B^2\neq0$; the companion article's regular side, the unit group, is written **norm-regular** wherever the two could collide.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$, and with complex coefficients. The natural conjugation is the $\mathbb{C}$-linear quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$, an anti-involution of order two fixing the centre. The vector part is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and
 
@@ -151,7 +151,7 @@ which vanishes exactly when $\vec Q=0$. Off the vertex the gradient is non-zero 
 
 **Warning (the vertex is not defective).** A point of the vertex is a scalar $\tilde Q=Q_te_t$. Its only eigenvalue is $Q_t$, repeated, and its minimal polynomial is $X-Q_t$: it is semisimple and diagonalisable. The cone $\mathcal S$ is therefore the set of elements with a repeated eigenvalue, not the set of non-diagonalisable elements. The defective elements of $\mathcal S$ are the Jordan and nilpotent regimes of §*The Three Regimes of the Cone*. This distinction is invisible in the equation $B^2=0$.
 
-**Warning (the name).** The form $B^2$ is the restriction of the quaternionic bilinear algebraic norm to the vector subspace. It does not see the scalar part, so it is degenerate as a form on $\mathbb{B}$ and is not a norm on $\mathbb{B}$. The only multiplicative norm of the algebra is the reduced norm $N$, whose null cone is $\mathcal C$. The cone $\mathcal S$ is the zero set of a quadratic form that does not involve $Q_t$, and it is never called a null cone.
+**Warning (the name).** The form $B^2$ is the restriction of the quaternionic bilinear algebraic norm to the vector subspace. It does not see the scalar part, so it is degenerate as a form on $\mathbb{B}$ and is not a norm on $\mathbb{B}$. The only multiplicative norm of the algebra is the reduced norm $N$, whose null cone is $\mathcal{N}$. The cone $\mathcal S$ is the zero set of a quadratic form that does not involve $Q_t$, and it is never called a null cone.
 
 ## The Adapted Peirce Decomposition
 
@@ -940,7 +940,7 @@ The vertex is the singular locus of $\mathcal S$: it is the line of elements of 
 
 **The zero element is degenerate, and it is the one degenerate element that is not a zero divisor.**
 
-At $\tilde Q=0$ one has $B^2=0$ and $N=0$, so $0$ lies in the degenerate case and on the null cone. It is the apex of $\mathcal S$: the only point at which both the scalar and the vector part vanish, and the only point of $\mathcal C$ that annihilates nothing non-zero. Its spectrum is $\{0\}$, its minimal polynomial is $X$, every idempotent is adapted to it, and its spectral decomposition is the one-term writing $0=0\cdot e_t$. Both translations $L_0$ and $R_0$ are the zero map, so both annihilators are all of $\mathbb{B}$ and both ranks are $0$. The origin lies in neither stratum of the null cone, the pure stratum excluding it and the non-pure stratum requiring $Q_t\neq0$; it lies in the closure of both.
+At $\tilde Q=0$ one has $B^2=0$ and $N=0$, so $0$ lies in the degenerate case and on the null cone. It is the apex of $\mathcal S$: the only point at which both the scalar and the vector part vanish, and the only point of $\mathcal{N}$ that annihilates nothing non-zero. Its spectrum is $\{0\}$, its minimal polynomial is $X$, every idempotent is adapted to it, and its spectral decomposition is the one-term writing $0=0\cdot e_t$. Both translations $L_0$ and $R_0$ are the zero map, so both annihilators are all of $\mathbb{B}$ and both ranks are $0$. The origin lies in neither stratum of the null cone, the pure stratum excluding it and the non-pure stratum requiring $Q_t\neq0$; it lies in the closure of both.
 
 ### The Jordan Regime
 
@@ -977,10 +977,10 @@ The witnesses are the mixed cells.
 
 ### The Intersection
 
-The two cones meet exactly on the pure stratum of the null cone, with the origin adjoined. Here $\mathcal C_{\mathrm p}=\{Q_t=0,\ \vec Q^2=0,\ \vec Q\neq0\}$ is the pure stratum of the companion article, so
+The two cones meet exactly on the pure stratum of the null cone, with the origin adjoined. Here $\mathcal{N}_{\mathrm p}=\{Q_t=0,\ \vec Q^2=0,\ \vec Q\neq0\}$ is the pure stratum of the companion article, so
 
 $$
-\mathcal C\cap\mathcal S=\{Q_t^2+B^2=0,\ B^2=0\}=\{Q_t=0,\ \vec Q^2=0\}=\mathcal C_{\mathrm p}\cup\{0\}.
+\mathcal{N}\cap\mathcal S=\{Q_t^2+B^2=0,\ B^2=0\}=\{Q_t=0,\ \vec Q^2=0\}=\mathcal{N}_{\mathrm p}\cup\{0\}.
 $$
 
 As a scheme, the intersection is
@@ -999,7 +999,7 @@ $$
 (\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z
 $$
 
-is a product of two points of $\mathcal S$, since $1+i^2=0$ in both factors, and the product has $B^2=(-2i)^2=-4\neq0$, so it lies off $\mathcal S$; its reduced norm is $4-4=0$, so it lies on $\mathcal C$. The cone $\mathcal S$ is a discriminant locus attached to the eigenvalue map, not a multiplicative subset.
+is a product of two points of $\mathcal S$, since $1+i^2=0$ in both factors, and the product has $B^2=(-2i)^2=-4\neq0$, so it lies off $\mathcal S$; its reduced norm is $4-4=0$, so it lies on $\mathcal{N}$. The cone $\mathcal S$ is a discriminant locus attached to the eigenvalue map, not a multiplicative subset.
 
 ### The Five Zones
 
@@ -1031,18 +1031,36 @@ The modulus–unit polar decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=
 
 The left and the right multiplication by $\tilde Q$ have complex rank $4$ when $N\neq0$, rank $2$ when $\tilde Q$ is a non-zero point of the null cone, and rank $0$ at the origin. The discriminant does not change these ranks: the distinct zone and the Jordan zone both have rank $4$, and the zero-divisor zone and the nilpotent zone both have rank $2$. The rank follows the norm, not the discriminant.
 
-| zone | spectral decomposition | polar decomposition | rank of left multiplication |
-|---|---|---|---|
-| distinct | yes | yes | $4$ |
-| zero divisor | yes | no | $2$ |
-| scalar, $Q_t\neq0$ | one term | yes | $4$ |
-| origin | one term | no | $0$ |
-| Jordan | no | yes | $4$ |
-| nilpotent | no | no | $2$ |
+**The sandwich and the derivation.** The two cones are also the two loci of the two-sided operators. For the sandwich $\Theta_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}$, suppose first that $N(\tilde Q)=0$ with $\tilde Q\neq0$. Then $\tilde Q^{\natural}\neq0$, since $\tilde Q^{\natural}=Q_te_t-\vec Q=0$ forces $Q_t=0$ and $\vec Q=0$, hence $\tilde Q=0$; and
+
+$$
+\Theta_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\,\tilde Q^{\natural}\,\tilde Q^{*}=N(\tilde Q)\,\tilde Q^{*}=0 .
+$$
+
+So $\Theta_{\tilde Q}$ is singular. Conversely, if $N(\tilde Q)\neq0$ then $\tilde Q$ is a unit and $\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$. Hence $\Theta_{\tilde Q}$ is singular exactly on the null cone.
+
+For the inner derivation $\mathrm{ad}_{\tilde Q}(X)=\tilde QX-X\tilde Q$, the scalar part is central, so $\mathrm{ad}_{\tilde Q}=\mathrm{ad}_{\vec Q}$, and
+
+$$
+\mathrm{ad}_{\vec Q}^{2}(X)=\vec Q^{2}X-2\vec QX\vec Q+X\vec Q^{2}=-2\vec QX\vec Q
+$$
+
+because $\vec Q^{2}=-B^{2}e_t$. When $B^{2}=0$ the binomial expansion gives $\mathrm{ad}_{\vec Q}^{3}=0$, because every term of $\mathrm{ad}_{\vec Q}^{3}(X)=\vec Q^{3}X-3\vec Q^{2}X\vec Q+3\vec QX\vec Q^{2}-X\vec Q^{3}$ carries a factor $\vec Q^{2}$. The derivation is nilpotent, of index at most three. Conversely, if $B^{2}\neq0$ the eigenvalues of the derivation are $0,0,\pm2iB$, and the two nonzero ones forbid nilpotence. Hence $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on the spectral-degenerate cone.
+
+The two criteria are cone-level and do not separate the strata: the derivation vanishes on the whole scalar line, and the sandwich is singular at the origin as well.
+
+| zone | spectral decomposition | polar decomposition | rank of left multiplication | $\Theta_{\tilde Q}$ singular | $\mathrm{ad}_{\tilde Q}$ nilpotent |
+|---|---|---|---|---|---|
+| distinct | yes | yes | $4$ | no | no |
+| zero divisor | yes | no | $2$ | yes | no |
+| scalar, $Q_t\neq0$ | one term | yes | $4$ | no | yes |
+| origin | one term | no | $0$ | yes | yes |
+| Jordan | no | yes | $4$ | no | yes |
+| nilpotent | no | no | $2$ | yes | yes |
 
 ## Summary
 
-The biquaternion algebra carries two quadratic conditions. The reduced norm $N=Q_t^2+B^2$ is multiplicative and decides invertibility; its zero locus is the null cone $\mathcal C$. The discriminant of the characteristic polynomial is $-4B^2$; its zero locus is the spectral-degenerate cone $\mathcal S$, and it decides whether the two eigenvalues $Q_t\pm iB$ can be separated.
+The biquaternion algebra carries two quadratic conditions. The reduced norm $N=Q_t^2+B^2$ is multiplicative and decides invertibility; its zero locus is the null cone $\mathcal{N}$. The discriminant of the characteristic polynomial is $-4B^2$; its zero locus is the spectral-degenerate cone $\mathcal S$, and it decides whether the two eigenvalues $Q_t\pm iB$ can be separated.
 
 The spectral problem is stated without a module or an acting operator. An eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, equivalently for which $\tilde Q-\lambda e_t$ is a non-unit, equivalently for which $N(\tilde Q-\lambda e_t)=0$. The eigenspace is the left annihilator, a right ideal of complex dimension $2$ for a non-scalar element. A spectral idempotent is an idempotent commuting with the element, and on the regular side the spectral decomposition is the pair of Lagrange idempotents. Cayley–Hamilton gives the inverse off the null cone, and the unordered spectrum determines the similarity class except at $B=0$, where the scalar and the non-semisimple nilpotent share it.
 
@@ -1050,7 +1068,7 @@ The cone $\mathcal S$ is $\mathbb{C}e_t$ times the isotropic cone of the vector 
 
 On the non-scalar side, the adapted Peirce decomposition exists exactly when $B^2\neq0$, and then it is unique. The degenerate side is stratified into the scalar regime, where every idempotent is adapted and the spectral decomposition has one term; the Jordan regime, where the element is a unit, defective and without a non-trivial adapted idempotent; and the nilpotent regime, where the element is a zero divisor and a nilpotent of index two. The vertex is the scalar line.
 
-The two cones are independent: neither contains the other. A zero divisor can have distinct eigenvalues, and a unit can have a repeated one. The cones meet exactly on the pure stratum of the null cone, with the origin adjoined, and their defining equations have equal gradients along it. The spectral cone is not multiplicative, while the null cone is. The joint refinement is the five zones. The spectral problem is the finer one: its eigenvalues determine the norm, since $N=\lambda_+\lambda_-$, but the norm does not determine $B^2$. The independence is between the loci, not between the information: the norm cannot separate the scalar from the Jordan regime, while the spectral problem separates all five zones, through the minimal polynomial. The polar decomposition follows the norm and the eigenbasis follows the discriminant, so the Jordan regime, a unit with no eigenbasis, is the sharpest witness of the independence.
+The two cones are independent: neither contains the other. A zero divisor can have distinct eigenvalues, and a unit can have a repeated one. The cones meet exactly on the pure stratum of the null cone, with the origin adjoined, and their defining equations have equal gradients along it. The spectral cone is not multiplicative, while the null cone is. The joint refinement is the five zones. The spectral problem is the finer one: its eigenvalues determine the norm, since $N=\lambda_+\lambda_-$, but the norm does not determine $B^2$. The independence is between the loci, not between the information: the norm cannot separate the scalar from the Jordan regime, while the spectral problem separates all five zones, through the minimal polynomial. The polar decomposition follows the norm and the eigenbasis follows the discriminant, so the Jordan regime, a unit with no eigenbasis, is the sharpest witness of the independence. The same two cones are the two operator loci: the sandwich $\Theta_{\tilde Q}$ is singular exactly on the null cone, and the inner derivation $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on the spectral-degenerate cone.
 
 ## Summary of Notation
 
@@ -1063,12 +1081,14 @@ The two cones are independent: neither contains the other. A zero divisor can ha
 | $p_{\tilde Q}(X)=X^2-2Q_tX+N(\tilde Q)$ | the characteristic polynomial |
 | $\operatorname{disc}p_{\tilde Q}=-4B^2$ | the discriminant |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
-| $\mathcal C=\{N=0\}$ | the null cone of the reduced norm |
+| $\mathcal{N}=\{N=0\}$ | the null cone of the reduced norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\operatorname{Ann}_{\ell}(a)=\{v:av=0\}$ | the left annihilator, a right ideal |
 | $e_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$ | the spectral idempotents |
 | $\vec\Upsilon$ | a non-zero vector with $\vec\Upsilon^2=0$ |
-| $\mathcal C_{\mathrm p}=\{Q_t=0,\ \vec Q^2=0,\ \vec Q\neq0\}$ | the pure stratum of the null cone, the nilpotents |
+| $\mathcal{N}_{\mathrm p}=\{Q_t=0,\ \vec Q^2=0,\ \vec Q\neq0\}$ | the pure stratum of the null cone, the nilpotents |
+| $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the sandwich; singular exactly on the null cone |
+| $\mathrm{ad}_{\tilde Q}(X)=\tilde QX-X\tilde Q$ | the inner derivation; nilpotent exactly on $\mathcal S$ |
 
 ## Further Reading
 

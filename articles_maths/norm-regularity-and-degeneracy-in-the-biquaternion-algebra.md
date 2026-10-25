@@ -64,7 +64,7 @@ The value of the norm separates the algebra into two parts.
 | condition on $N(\tilde Q)$ | set | name |
 |---|---|---|
 | $\neq0$ | $\mathbb{B}^{\times}=\{N\neq0\}$ | the **regular case**: the group of units |
-| $=0$ | the **null cone** $\mathcal C=\{N=0\}$ | the **degeneracy case**: the origin together with the zero divisors |
+| $=0$ | the **null cone** $\mathcal{N}=\{N=0\}$ | the **degeneracy case**: the origin together with the zero divisors |
 
 The split is by the value of the norm, not by zero-divisorhood. The origin lies in the null cone, and it is not a zero divisor; every non-zero point of the cone is one. So the regular case is exactly the unit group, and the degeneracy case is the cone, of which the zero-divisor set is the punctured part.
 
@@ -115,17 +115,17 @@ $$
 of the units, the origin, and the zero divisors. Equivalently,
 
 $$
-\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal C,
+\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{N},
 $$
 
-with $\mathcal C=\{N=0\}$ the null cone, which contains the origin and the zero divisors.
+with $\mathcal{N}=\{N=0\}$ the null cone, which contains the origin and the zero divisors.
 
 *Proof.* The two sets $\{N\neq0\}$ and $\{N=0\}$ are complementary, and the cone splits into the origin and its punctured part, which is the zero-divisor set by §*The Zero Divisors*.
 
-**Corollary (topology).** $\mathbb{B}^{\times}$ is open and dense in $\mathbb{B}$; $\mathcal C$ is closed, has empty interior, and is of real codimension $2$; and
+**Corollary (topology).** $\mathbb{B}^{\times}$ is open and dense in $\mathbb{B}$; $\mathcal{N}$ is closed, has empty interior, and is of real codimension $2$; and
 
 $$
-\partial\mathbb{B}^{\times}=\mathcal C.
+\partial\mathbb{B}^{\times}=\mathcal{N}.
 $$
 
 The origin is the only point of the cone that is not a zero divisor.
@@ -149,11 +149,11 @@ Throughout this section the product is the plain product $\tilde Q_1\tilde Q_2$ 
 **Definition (the two strata).** The **pure stratum** and the **non-pure stratum** of the null cone are
 
 $$
-\mathcal C_{\mathrm p}=\{N=0,\ Q_t=0,\ \tilde Q\neq0\},\qquad
-\mathcal C_{\mathrm{np}}=\{N=0,\ Q_t\neq0\}.
+\mathcal{N}_{\mathrm p}=\{N=0,\ Q_t=0,\ \tilde Q\neq0\},\qquad
+\mathcal{N}_{\mathrm{np}}=\{N=0,\ Q_t\neq0\}.
 $$
 
-**Observation.** On $\mathcal C$, $Q_t^2+\vec Q^2=0$, so
+**Observation.** On $\mathcal{N}$, $Q_t^2+\vec Q^2=0$, so
 
 $$
 Q_t=0\iff\vec Q^2=0\iff\tilde Q^2=0.
@@ -161,13 +161,13 @@ $$
 
 The pure stratum is therefore the set of non-zero elements with vanishing square; on the non-pure stratum, where $Q_t\neq0$, the square is instead $\tilde Q^2=2Q_t\tilde Q$. No object outside the norm enters the characterisation.
 
-**Theorem (the pure stratum).** Every element of $\mathcal C_{\mathrm p}$ is a nilpotent of index two: $\tilde Q=\vec Q$ and $\tilde Q^2=-\vec Q^2e_t=0$. The stratum is a complex cone of complex dimension $2$ and real dimension $4$ in the three vector coefficients, cut out by the single quadratic equation
+**Theorem (the pure stratum).** Every element of $\mathcal{N}_{\mathrm p}$ is a nilpotent of index two: $\tilde Q=\vec Q$ and $\tilde Q^2=-\vec Q^2e_t=0$. The stratum is a complex cone of complex dimension $2$ and real dimension $4$ in the three vector coefficients, cut out by the single quadratic equation
 
 $$
 Q_x^2+Q_y^2+Q_z^2=0.
 $$
 
-*Proof.* On $\mathcal C_{\mathrm p}$ the scalar part vanishes and $Q_t^2+\vec Q^2=0$ gives $\vec Q^2=0$, so $\tilde Q=\vec Q$ and $\tilde Q^2=-\vec Q^2e_t=0$. The equation is one complex equation in the three complex vector coefficients, homogeneous of degree two, with gradient $2(Q_x,Q_y,Q_z)$ non-vanishing off the origin; its real dimension is $2\cdot3-2=4$ and its complex dimension is $3-1=2$.
+*Proof.* On $\mathcal{N}_{\mathrm p}$ the scalar part vanishes and $Q_t^2+\vec Q^2=0$ gives $\vec Q^2=0$, so $\tilde Q=\vec Q$ and $\tilde Q^2=-\vec Q^2e_t=0$. The equation is one complex equation in the three complex vector coefficients, homogeneous of degree two, with gradient $2(Q_x,Q_y,Q_z)$ non-vanishing off the origin; its real dimension is $2\cdot3-2=4$ and its complex dimension is $3-1=2$.
 
 **Real-coordinate form.** Write $\vec Q=\vec\rho+i\vec\rho'$ with $\vec\rho,\vec\rho'\in\mathbb{R}^3$. Then
 
@@ -183,15 +183,15 @@ $$
 
 Equivalently it is the set of elements $r(\vec u+i\vec u_\perp)$ with $r>0$, $\vec u$ a real unit vector and $\vec u_\perp$ a real unit vector perpendicular to $\vec u$: one radius, one direction and one perpendicular direction, that is $1+2+1=4$ real dimensions.
 
-**Theorem (the non-pure stratum).** Every element of $\mathcal C_{\mathrm{np}}$ satisfies $\tilde Q^2=2Q_t\tilde Q$, and is therefore a non-zero complex multiple of a non-trivial idempotent:
+**Theorem (the non-pure stratum).** Every element of $\mathcal{N}_{\mathrm{np}}$ satisfies $\tilde Q^2=2Q_t\tilde Q$, and is therefore a non-zero complex multiple of a non-trivial idempotent:
 
 $$
 \tilde Q=2Q_t\tilde\Pi,\qquad \tilde\Pi=\frac{\tilde Q}{2Q_t},\qquad \tilde\Pi^2=\tilde\Pi.
 $$
 
-The stratum is open in $\mathcal C$, of real dimension $6$, and its complement in $\mathcal C$ is the pure stratum.
+The stratum is open in $\mathcal{N}$, of real dimension $6$, and its complement in $\mathcal{N}$ is the pure stratum.
 
-*Proof.* $\tilde Q^2=(Q_t^2-\vec Q^2)e_t+2Q_t\vec Q$; on $\mathcal C$ we have $\vec Q^2=-Q_t^2$, so $\tilde Q^2=2Q_t^2e_t+2Q_t\vec Q=2Q_t\tilde Q$. Dividing by $2Q_t\neq0$ gives $\tilde\Pi^2=\tilde\Pi$, and $\tilde\Pi\neq0,e_t$ because $\tilde Q\neq0$ and $\tilde Q$ is not a scalar multiple of $e_t$. The stratum is the complement in $\mathcal C$ of the closed subset $\{Q_t=0\}$, hence open in $\mathcal C$, and it has the dimension of $\mathcal C$.
+*Proof.* $\tilde Q^2=(Q_t^2-\vec Q^2)e_t+2Q_t\vec Q$; on $\mathcal{N}$ we have $\vec Q^2=-Q_t^2$, so $\tilde Q^2=2Q_t^2e_t+2Q_t\vec Q=2Q_t\tilde Q$. Dividing by $2Q_t\neq0$ gives $\tilde\Pi^2=\tilde\Pi$, and $\tilde\Pi\neq0,e_t$ because $\tilde Q\neq0$ and $\tilde Q$ is not a scalar multiple of $e_t$. The stratum is the complement in $\mathcal{N}$ of the closed subset $\{Q_t=0\}$, hence open in $\mathcal{N}$, and it has the dimension of $\mathcal{N}$.
 
 **Peirce factorisation.** Let $\tilde\Pi=\tilde Q/(2Q_t)$ be the idempotent of a non-pure zero divisor. The mixed Peirce corners contain elements
 
@@ -210,7 +210,7 @@ The idempotents, their classification and their Peirce systems are *Ideals and P
 **Theorem (the zero-divisor set).** The set
 
 $$
-\mathcal Z=\{\tilde Q\neq0:N(\tilde Q)=0\}=\mathcal C\setminus\{0\}
+\mathcal Z=\{\tilde Q\neq0:N(\tilde Q)=0\}=\mathcal{N}\setminus\{0\}
 $$
 
 is a complex cone of complex dimension $3$ and real dimension $6$ in $\mathbb{B}\cong\mathbb{C}^4$. It is the complement of the units in the complement of the origin,
@@ -225,7 +225,7 @@ and it is stable under multiplication by non-zero complex scalars.
 
 **Correspondence (the remarkable subspaces).** By the signatures tabulated in §*The Norm on the Remarkable Subspaces*, the norm is definite on the centre, the quaternion subspace and the anti-quaternion subspace, so none of the three contains a zero divisor; the zero-divisor set in the vector subspace is the pure stratum; and the Hermitian and anti-Hermitian subspaces each carry a null cone. A generic zero divisor has all four coefficients non-zero and lies in none of them.
 
-**Remark (the spectral reading).** Inside $\mathcal C$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
+**Remark (the spectral reading).** Inside $\mathcal{N}$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
 
 ### The Spinor Factorisation of a Null Element
 
@@ -321,7 +321,7 @@ The restriction of the norm to a remarkable subspace has a realified signature, 
 
 The biquaternion algebra carries four algebraic norms; only the quaternionic bilinear one, $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, is multiplicative, and only it decides invertibility.
 
-The plain product is associative and has the two-sided unit $e_t$. The units are the elements of non-zero norm: they form the group $\mathbb{B}^{\times}$, with inverse $\tilde Q^{\natural}/N(\tilde Q)$, and the algebra is the disjoint union $\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal C$ of the units and the null cone. The group is open and dense, the cone is closed of real codimension $2$ and is its boundary. The $\natural$-bilinear product, which has a left unit and no right unit, is recorded in one remark: there the one-sided solution is $\tilde Q/N(\tilde Q)$, and the criterion is the same.
+The plain product is associative and has the two-sided unit $e_t$. The units are the elements of non-zero norm: they form the group $\mathbb{B}^{\times}$, with inverse $\tilde Q^{\natural}/N(\tilde Q)$, and the algebra is the disjoint union $\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{N}$ of the units and the null cone. The group is open and dense, the cone is closed of real codimension $2$ and is its boundary. The $\natural$-bilinear product, which has a left unit and no right unit, is recorded in one remark: there the one-sided solution is $\tilde Q/N(\tilde Q)$, and the criterion is the same.
 
 The degeneracy case is the null cone, with the origin at its apex and the zero divisors at its punctured points. The zero-divisor set splits into the pure stratum, the nilpotents of index two, of real dimension $4$, and the non-pure stratum, the non-zero complex multiples of idempotents, of real dimension $6$, the split being by the scalar part $Q_t$. In the matrix model a non-zero null element is the rank-one matrix $uv^{\mathsf T}$; its scalar part is the contraction $\tfrac12 v^{\mathsf T}u$, the pure stratum is the locus $v^{\mathsf T}u=0$, and the identity $\tilde Q^2=2Q_t\tilde Q$ is the rank-one identity $\mathsf M_2(\tilde Q)^2=(v^{\mathsf T}u)\mathsf M_2(\tilde Q)$. The cone is not a subspace and is stable under the product. The realified signature of the norm is definite on the centre, the quaternion and the anti-quaternion subspaces, and indefinite on the other three.
 
@@ -339,10 +339,10 @@ The annihilators are the kernels of the two translations. They vanish in the reg
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the reduced norm, the only multiplicative one of the four |
 | $\langle\tilde Q\rangle=Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | the general plain bilinear algebraic norm, not multiplicative |
 | $\mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\}$ | the unit group, with inverse $\tilde Q^{\natural}/N(\tilde Q)$ |
-| $\mathcal C=\{\tilde Q:N=0\}$ | the null cone |
-| $\mathcal Z=\mathcal C\setminus\{0\}$ | the zero-divisor set |
-| $\mathcal C_{\mathrm p}=\{Q_t=0,\ \tilde Q\neq0\}$ | the pure stratum, the nilpotents of index two |
-| $\mathcal C_{\mathrm{np}}=\{Q_t\neq0\}$ | the non-pure stratum, complex multiples of non-trivial idempotents |
+| $\mathcal{N}=\{\tilde Q:N=0\}$ | the null cone |
+| $\mathcal Z=\mathcal{N}\setminus\{0\}$ | the zero-divisor set |
+| $\mathcal{N}_{\mathrm p}=\{Q_t=0,\ \tilde Q\neq0\}$ | the pure stratum, the nilpotents of index two |
+| $\mathcal{N}_{\mathrm{np}}=\{Q_t\neq0\}$ | the non-pure stratum, complex multiples of non-trivial idempotents |
 | $\mathsf M_2(\tilde Q)=uv^{\mathsf T}$ | the rank-one factorisation of a non-zero null element |
 | $A(\tilde Q)=\{\tilde X:\tilde Q\tilde X=0\}$ | the left annihilator |
 | $B(\tilde Q)=\{\tilde X:\tilde X\tilde Q=0\}$ | the right annihilator |

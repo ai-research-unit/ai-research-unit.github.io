@@ -46,7 +46,7 @@ $$
 \boxed{\;\mathcal{Z}_\star=\{\tilde Q\neq0: C(\tilde Q)=0\}=\{\tilde Q\neq0: Q_t^{2}+(\vec Q,\vec Q)=0\}\;},
 $$
 
-the nonzero elements of the complex cone $\mathcal{C}$, of complex dimension three; every zero
+the nonzero elements of the complex cone $\mathcal{N}$, of complex dimension three; every zero
 divisor of the block is **two-sided**, and the set is the common zero-divisor set of the four
 general products.
 
@@ -133,7 +133,7 @@ a zero divisor, of the non-pure family. The unit $e_t$ is not a zero divisor, $c
 | clause | general plain algebra | general plain sesqualgebra |
 |---|---|---|
 | criterion | $C(\tilde Q)=Q_t^{2}+(\vec Q,\vec Q)=0$ | $C(\tilde Q)=0$, the same |
-| the set | the cone $\mathcal{C}$ without the origin | the same cone without the origin |
+| the set | the cone $\mathcal{N}$ without the origin | the same cone without the origin |
 | sides | left and right, generally distinct sets of partners | left and right, with the same annihilator |
 | pure family | $Q_t=0$, isotropic, the nonzero nilpotents of index two | $Q_t=0$, isotropic, the nonzero nilpotents of index three |
 | non-pure family | $Q_t\neq0$, multiples of idempotents, not nilpotent | the same; those that are block-idempotent are the Hermitian ones |

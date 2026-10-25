@@ -142,11 +142,11 @@ A zero divisor is a nonzero element with a nonzero annihilating partner. It is a
 
 | the group | the structures | the zero-divisor set | the reason |
 | --- | --- | --- | --- |
-| the four general products | $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$ | $\mathcal{C}\setminus\{0\}$ | the conjugation in one or both slots is a bijection and does not move the norm |
-| the two symmetric structures | $\mathrm{SPA}$, $\mathrm{SQS}$ | $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$ | the symmetrisation also annihilates the pure elements |
+| the four general products | $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$ | $\mathcal{N}\setminus\{0\}$ | the conjugation in one or both slots is a bijection and does not move the norm |
+| the two symmetric structures | $\mathrm{SPA}$, $\mathrm{SQS}$ | $(\{Q_t=0\}\cup\mathcal{N})\setminus\{0\}$ | the symmetrisation also annihilates the pure elements |
 | the six scalar-valued or antisymmetric structures | $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ | $\mathbb{B}\setminus\{0\}$ | the value is a number or a pure direction, so the map cannot be injective |
 
-The **cone** is the common zero set of the quaternion norm, $\mathcal{C}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$, a complex cone of complex dimension three and real dimension six. It lies in every one of the twelve sets, so no band is free of degeneracy. The **nilpotent cone** is its pure part, of real dimension four, and it is strictly smaller than the cone: a zero divisor need not be nilpotent.
+The **cone** is the common zero set of the quaternion norm, $\mathcal{N}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$, a complex cone of complex dimension three and real dimension six. It lies in every one of the twelve sets, so no band is free of degeneracy. The **nilpotent cone** is its pure part, of real dimension four, and it is strictly smaller than the cone: a zero divisor need not be nilpotent.
 
 The enlargement of $\mathrm{SPA}$ and $\mathrm{SQS}$ is physical. A pure element, one with $Q_t=0$, kills the plane of operations orthogonal to it, and it does so whether or not it is lightlike. The cleanest witness is a unit: $\vec e_x$ has norm $1$ and is invertible in the algebra, yet $\vec e_x\bullet\vec e_y=0$ for the Jordan product. The classical equivalence *zero divisor if and only if not a unit* therefore fails, and an invertible element can fail to compose symmetrically.
 
@@ -254,7 +254,7 @@ The twelve compared give three divisions: the family, the values and the law. Re
 | $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ | their antisymmetric parts: rotation, phase, obstruction, polarisation |
 | $S(x,y)$, $A(x,y)$ | the symmetric and antisymmetric parts of a product |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the plain, Hermitian, quaternion and Krein forms |
-| $\mathcal{C}$ | the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ |
+| $\mathcal{N}$ | the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ |
 | $\mathbb{B}^{\times}$ | the unit group of the plain product, $\{\langle\tilde Q\rangle_{\natural}\neq0\}$ |
 | $\tilde\Pi$, $\tilde\Upsilon$ | an idempotent and a nilpotent |
 | $\mathbb{C}_{\mathbb{B}}$ | the centre $\mathbb{C}e_t$, the classical sector |

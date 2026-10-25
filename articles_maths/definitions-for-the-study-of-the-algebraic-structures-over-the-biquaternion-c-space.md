@@ -134,7 +134,7 @@ The square-zero sets of the four general products differ, and the difference is 
 |---|---|
 | $\tilde Q\tilde Q_2$ | the pure isotropic cone $\{Q_0=0,\ (\vec Q,\vec Q)=0\}$ |
 | $\tilde Q\tilde Q_2^{*}$ | the origin alone |
-| $\tilde Q^{\natural}\tilde Q_2$ | the whole zero-divisor cone $\mathcal{C}$ |
+| $\tilde Q^{\natural}\tilde Q_2$ | the whole zero-divisor cone $\mathcal{N}$ |
 | $\tilde Q^{\natural}\tilde Q_2^{*}$ | the solutions of $\overline{\tilde Q}\tilde Q=0$ |
 
 The table is verified on the squares and is the table of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
@@ -202,7 +202,7 @@ The four general products are four definitions to a class, and the table says wh
 | class of §  | $\tilde Q\tilde Q_2$ | $\tilde Q\tilde Q_2^{*}$ | $\tilde Q^{\natural}\tilde Q_2$ | $\tilde Q^{\natural}\tilde Q_2^{*}$ | verdict |
 |---|---|---|---|---|---|
 | unit | $e_t$ two-sided | right only | left only | none | differ |
-| zero divisor | $\mathcal{C}\setminus\{0\}$ | same | same | same | **coincide** |
+| zero divisor | $\mathcal{N}\setminus\{0\}$ | same | same | same | **coincide** |
 | idempotent | $\tfrac12(e_t+\tilde\Xi i)$ | the Hermitian ones | the trivial pair | $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ | differ |
 | square-zero | the pure cone | $\{0\}$ | the whole cone | $\{\overline{\tilde Q}\tilde Q=0\}$ | differ |
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
