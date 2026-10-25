@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Quaternionic Norm-Regular, Spectrally Degenerate Sector — Biquaternion Universe</title>
+  <title>The N-Regular, Spectrally Degenerate Sector — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-quaternionic-norm-regular-spectrally-degenerate-sector"><strong>The Quaternionic Norm-Regular, Spectrally Degenerate Sector</strong></h1>
+        <h1 id="the-n-regular-spectrally-degenerate-sector"><strong>The N-Regular, Spectrally Degenerate Sector</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is cell $10$ of the four-sector arrangement of the two quadratic conditions</p>
 <p>$$
@@ -78,7 +78,7 @@ $$</p>
 <p>$$
 \Sigma_{10}=\mathcal S\setminus\mathcal N,
 $$</p>
-<p>and it is one of the two <strong>mixed</strong> sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of <em>Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>. The opposite corner $\Sigma_{00}$ is treated in <em>The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector</em> and $\Sigma_{01}$ in <em>The Quaternionic Norm-Degenerate, Spectrally Regular Sector</em>.</p>
+<p>and it is one of the two <strong>mixed</strong> sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of <em>Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>. The opposite corner $\Sigma_{00}$ is treated in <em>The N-Degenerate, Spectrally Degenerate Sector</em> and $\Sigma_{01}$ in <em>The N-Degenerate, Spectrally Regular Sector</em>.</p>
 <p>Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; <strong>spectrally degenerate</strong> means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.</p>
 <h2 id="definition-and-characterisation">Definition and Characterisation</h2>
 <p><strong>Definition.</strong> The sector $\Sigma_{10}$ is</p>
@@ -276,6 +276,39 @@ $$</p>
 <p><strong>Polar decomposition.</strong> It exists throughout the sector, because $N\neq0$ and the modulus $\Rho=\sqrt{N(\tilde Q)}\neq0$ is defined; the modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Biquaternions</em> applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.</p>
 <p><strong>One-sided operators.</strong> Since $\tilde Q$ is a unit, $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$, with zero kernel, and both annihilators are $\{0\}$. The spectral defectivity is invisible to the one-sided structure: on $\Sigma_{10}$ and on $\Sigma_{11}$ alike, both multiplications are invertible. No ideal-theoretic condition can detect a repeated eigenvalue.</p>
 <p><strong>The degenerate half of the unit group.</strong> The unit group splits as $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. The sector $\Sigma_{10}$ is the degenerate half: closed under inversion, not under multiplication, and made of the units whose two eigenvalues have merged.</p>
+<h2 id="the-generators-the-eigenvalues-and-the-element">The Generators, the Eigenvalues, and the Element</h2>
+<p>The nilpotent generator is the vector part,</p>
+<p>$$
+\boxed{\ \vec\Upsilon=\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \vec\Upsilon^2=0,\qquad Q_t\neq0\ }
+$$</p>
+<p>Choose an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$, put $f=e_t-e$, and let $\vec X$ span the opposite mixed corner $f\mathbb{B}e$. The four Peirce generators of the pair $(e,f)$ are $e,\vec\Upsilon,\vec X,f$, and the Peirce form is</p>
+<p>$$
+\boxed{\ e\tilde Qe=Q_t\,e,\qquad e\tilde Qf=\vec\Upsilon,\qquad f\tilde Qe=0,\qquad f\tilde Qf=Q_t\,f\ }
+$$</p>
+<p>The eigenvalue is repeated:</p>
+<p>$$
+\boxed{\ \lambda=Q_t\ \text{with multiplicity }2,\qquad \lambda^2=N(\tilde Q)\ }
+$$</p>
+<p>On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $Q_t$, of multiplicity four. There is no Q-adapted root, and no eigenbasis off the scalar line, because $B=0$. On the scalar line every basis diagonalises $L_{\tilde Q}$, but the two eigenvalues coincide and no spectral pair is singled out. In the Peirce basis $(e,\vec\Upsilon,\vec X,f)$ relative to the pair $(e,f)$ the element is the sum</p>
+<p>$$
+\boxed{\ \tilde Q=Q_t\,e+1\cdot\vec\Upsilon+0\cdot\vec X+Q_t\,f\ }
+$$</p>
+<p>The diagonal entries carry the eigenvalue $Q_t$; the nilpotent generator is the off-diagonal term, and its coefficient $1$ is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\vec\Upsilon=\tilde Q-Q_t e_t$. On the scalar line $\vec\Upsilon=0$ the element is $\tilde Q=Q_te_t$, and the sum collapses to $Q_t\,e+Q_t\,f$.</p>
+<p><strong>The standard representative.</strong> The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a gauge, and the Peirce form above is the invariant statement. For the standard element</p>
+<p>$$
+\boxed{\ \tilde Q=Q_te_t+c(\vec e_x+i\vec e_y),\qquad \vec\Upsilon=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
+$$</p>
+<p>one choice of gauge is</p>
+<p>$$
+\boxed{\ e=\frac12(e_t+i\vec e_z)\ }
+$$</p>
+<p>$$
+\boxed{\ f=\frac12(e_t-i\vec e_z)\ }
+$$</p>
+<p>$$
+\boxed{\ \vec X=\frac12(\vec e_x-i\vec e_y),\qquad \vec X\in f\mathbb{B}e,\quad \vec X^2=0\ }
+$$</p>
+<p>reproduces the Peirce form and the sum: $e\tilde Qe=Q_te$, $e\tilde Qf=\vec\Upsilon$, $f\tilde Qe=0$, $f\tilde Qf=Q_tf$, and $\tilde Q=Q_te+\vec\Upsilon+Q_tf$.</p>
 <h2 id="summary">Summary</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -377,8 +410,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html">The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector</a>, for $\Sigma_{00}$, the nilpotents and the origin.</li>
-<li><a href="the-quaternionic-norm-degenerate-spectrally-regular-sector.html">The Quaternionic Norm-Degenerate, Spectrally Regular Sector</a>, for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.</li>
+<li><a href="the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for $\Sigma_{00}$, the nilpotents and the origin.</li>
+<li><a href="the-quaternionic-norm-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.</li>
 <li><a href="quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the null cone, its two strata and the unit group.</li>
 <li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the discriminant and the spectral-degenerate cone.</li>
 <li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the comparison of the two cones.</li>
