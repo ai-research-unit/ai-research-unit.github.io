@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Moore–Penrose Inverse of a Matrix — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-moorepenrose-inverse-of-a-matrix"><strong>The Moore–Penrose Inverse of a Matrix</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a square invertible matrix the inverse is the matrix that undoes the multiplication. For a singular or rectangular matrix there is no inverse, but there is a canonical replacement: the <strong>Moore–Penrose inverse</strong> $A^{+}\in M_{n\times m}(\mathbb{C})$, the unique matrix satisfying the four Penrose equations</p>
+<p>$$
+AA^{+}A=A,\qquad A^{+}AA^{+}=A^{+},\qquad (AA^{+})^{*}=AA^{+},\qquad (A^{+}A)^{*}=A^{+}A .
+$$</p>
+<p>It exists for every matrix, and it inverts $A$ between the row space and the column space, with zero on the two orthogonal complements. This article gives the closed forms, the four subspaces it determines, its least-squares reading, the limit formula that produces it as a regularised inverse, and the discontinuity at the matrices where the rank drops.</p>
+<p>The general theory is <em>The Moore–Penrose Inverse in an Involutive Algebra</em>: the four equations, their uniqueness, the characterisation by the two ideals and the algebraic identities are proved there for an arbitrary algebra with involution, and they are cited here rather than repeated. The matrix case adds three things: the rank factorisation, which gives the inverse in closed form; the singular value form, which gives it entry by entry in a unitary basis; and the numerical analysis, the least-squares reading and the limit formula. The tensor case is <em>The Moore-Penrose Inverse of a Reduced Biquaternion Tensor</em>; the biquaternion case, where the inverse of a Hermitian factor drives the polar decomposition, is <em>The Polar Decomposition of a Biquaternion</em>.</p>
+<p>Throughout, $A\in M_{m\times n}(\mathbb{C})$, $A^{*}=\overline{A}^{\mathsf T}$ is the conjugate transpose, and $I=I_{m}$ or $I_{n}$ according to the side. The rank is $\operatorname{rk}A$. A <strong>projection</strong> is a matrix $\Pi$ with $\Pi^{2}=\Pi=\Pi^{*}$, that is the orthogonal projection onto its range. The <strong>operator norm</strong> is $\lVert A\rVert_{2}=\max_{\lVert x\rVert=1}\lVert Ax\rVert$ and the <strong>Frobenius norm</strong> is $\lVert A\rVert_{F}^{2}=\operatorname{Tr}(A^{*}A)$. On square matrices the conjugate transpose is the involution of the algebra $M_{n}(\mathbb{C})$, and it is the only involution used; on rectangular matrices it maps $M_{m\times n}(\mathbb{C})$ to $M_{n\times m}(\mathbb{C})$ and is read with it.</p>
+<h2 id="the-four-conditions">The Four Conditions</h2>
+<p><strong>Definition.</strong> A <strong>Moore–Penrose inverse</strong> of $A$ is a matrix $A^{+}\in M_{n\times m}(\mathbb{C})$ satisfying the four Penrose equations above.</p>
+<p><strong>Theorem (existence and uniqueness).</strong> Every matrix has exactly one Moore–Penrose inverse.</p>
+<p><em>Proof.</em> Uniqueness is the theorem of <em>The Moore–Penrose Inverse in an Involutive Algebra</em>, §<em>Uniqueness</em>; existence is proved by the rank factorisation of the next section. $\square$</p>
+<p><strong>Theorem (the four subspaces).</strong> The two products are the orthogonal projections onto the column and the row space, and their complements are the projections onto the two null spaces:</p>
+<p>$$
+AA^{+}=\Pi_{\operatorname{col}A},\qquad
+A^{+}A=\Pi_{\operatorname{row}A},\qquad
+I_{m}-AA^{+}=\Pi_{\ker A^{*}},\qquad
+I_{n}-A^{+}A=\Pi_{\ker A}.
+$$</p>
+<p><em>Proof.</em> By the lemma of <em>The Moore–Penrose Inverse in an Involutive Algebra</em>, §<em>The Four Conditions</em>, the product $AA^{+}$ is a projection whose range is the column space of $A$, and $A^{+}A$ is a projection whose range is the row space. A projection in the sense of the definition is self-adjoint, so it is the orthogonal projection onto its range. The complements follow from $\operatorname{col}A\oplus\ker A^{*}=\mathbb{C}^{m}$ and $\operatorname{row}A\oplus\ker A=\mathbb{C}^{n}$. $\square$</p>
+<p><strong>Corollary (the rank).</strong> The four matrices $A$, $A^{+}$, $AA^{+}$ and $A^{+}A$ have the same rank,</p>
+<p>$$
+\operatorname{rk}A^{+}=\operatorname{rk}A=\operatorname{rk}AA^{+}=\operatorname{rk}A^{+}A=\operatorname{Tr}(AA^{+}),
+$$</p>
+<p>and $\operatorname{rk}A^{+}$ is the number of nonzero singular values of $A$.</p>
+<p><em>Proof.</em> The projection $AA^{+}$ has rank equal to the dimension of its range, the column space, and its trace is its rank; the same for $A^{+}A$. The matrix $A^{+}$ maps the column space isomorphically onto the row space, so its rank is the same. $\square$</p>
+<p>The four equations therefore carry the whole subspace geometry of $A$: the column space, the row space and the two null spaces are read from the inverse and from the products.</p>
+<h2 id="the-rank-factorisation">The Rank Factorisation</h2>
+<p><strong>Theorem (the factorisation).</strong> Let $A$ have rank $r>0$. Then $A=CR$ with $C\in M_{m\times r}$ of full column rank and $R\in M_{r\times n}$ of full row rank, and</p>
+<p>$$
+\boxed{\;A^{+}=R^{*}\bigl(RR^{*}\bigr)^{-1}\bigl(C^{*}C\bigr)^{-1}C^{*}\;}
+$$</p>
+<p>with $A^{+}=0$ when $A=0$.</p>
+<p><em>Proof.</em> Choose $r$ linearly independent columns of $A$ and let $C$ be the matrix they form; every column of $A$ is a linear combination of them, and the coefficients form the columns of $R$. Then $C$ has full column rank and $R$ has full row rank, so $C^{*}C$ and $RR^{*}$ are invertible. Put $B=R^{*}(RR^{*})^{-1}(C^{*}C)^{-1}C^{*}$. Then</p>
+<p>$$
+ABA=C\bigl(RR^{*}\bigr)\bigl(RR^{*}\bigr)^{-1}\bigl(C^{*}C\bigr)^{-1}\bigl(C^{*}C\bigr)R=CR=A,
+$$</p>
+<p>$$
+BAB=R^{*}\bigl(RR^{*}\bigr)^{-1}\bigl(C^{*}C\bigr)^{-1}\bigl(C^{*}C\bigr)\bigl(RR^{*}\bigr)\bigl(RR^{*}\bigr)^{-1}\bigl(C^{*}C\bigr)^{-1}C^{*}=B,
+$$</p>
+<p>and</p>
+<p>$$
+AB=C\bigl(C^{*}C\bigr)^{-1}C^{*},\qquad BA=R^{*}\bigl(RR^{*}\bigr)^{-1}R,
+$$</p>
+<p>which are the orthogonal projections onto the column space of $C$ and the row space of $R$, hence self-adjoint. The four equations hold, and uniqueness gives $B=A^{+}$. $\square$</p>
+<p><strong>Corollary (full column rank).</strong> If $A$ has full column rank, $r=n$, then $A^{+}=(A^{*}A)^{-1}A^{*}$.</p>
+<p><strong>Corollary (full row rank).</strong> If $A$ has full row rank, $r=m$, then $A^{+}=A^{*}(AA^{*})^{-1}$.</p>
+<p><em>Proof.</em> If $r=n$, then $R$ is invertible and $R^{*}(RR^{*})^{-1}=R^{-1}$, so the formula reads $A^{+}=R^{-1}(C^{*}C)^{-1}C^{*}=(A^{*}A)^{-1}A^{*}$, since $A=CR$. If $r=m$, then $C$ is invertible and $(C^{*}C)^{-1}C^{*}=C^{-1}$, so the formula reads $A^{+}=R^{*}(RR^{*})^{-1}C^{-1}=A^{*}(AA^{*})^{-1}$. $\square$</p>
+<p><strong>Corollary (rank one).</strong> For nonzero $u\in\mathbb{C}^{m}$ and $v\in\mathbb{C}^{n}$,</p>
+<p>$$
+\bigl(uv^{*}\bigr)^{+}=\frac{vu^{*}}{\lVert u\rVert^{2}\lVert v\rVert^{2}} .
+$$</p>
+<p><em>Proof.</em> Take $C=u$ and $R=v^{*}$: $C^{*}C=\lVert u\rVert^{2}$ and $RR^{*}=\lVert v\rVert^{2}$. $\square$</p>
+<p><strong>Example.</strong> For</p>
+<p>$$
+A=\begin{pmatrix}1&1\\0&0\end{pmatrix}
+$$</p>
+<p>one may take $C=\binom{1}{0}$ and $R=(1\ \ 1)$, so $C^{*}C=1$ and $RR^{*}=2$, and</p>
+<p>$$
+A^{+}=R^{*}\bigl(RR^{*}\bigr)^{-1}\bigl(C^{*}C\bigr)^{-1}C^{*}
+=\frac12\binom{1}{1}\bigl(1\ \ 0\bigr)
+=\frac12\begin{pmatrix}1&0\\1&0\end{pmatrix}.
+$$</p>
+<p>The product $AA^{+}$ is the projection onto the line of $\binom{1}{0}$, which is $\begin{pmatrix}1&0\\0&0\end{pmatrix}$, and $A^{+}A$ is the projection onto the line of $(1\ \ 1)$, which is $\tfrac12 J$. The two differ, so $AA^{+}\neq A^{+}A$.</p>
+<h2 id="the-singular-value-form">The Singular Value Form</h2>
+<p><strong>Definition.</strong> A <strong>singular value decomposition</strong> of $A$ is a factorisation</p>
+<p>$$
+A=U D V^{*},
+$$</p>
+<p>with $U\in M_{m}(\mathbb{C})$ and $V\in M_{n}(\mathbb{C})$ unitary, and $D\in M_{m\times n}(\mathbb{C})$ diagonal with entries $\mu_{1}\ge\dots\ge\mu_{r}>0$ and all further entries zero. The numbers $\mu_{1},\dots,\mu_{r}$ are the <strong>singular values</strong> of $A$.</p>
+<p>Every matrix has such a factorisation: it is the diagonalisation of the self-adjoint positive semidefinite matrix $A^{*}A$ in an orthonormal basis, the finite-dimensional spectral theorem, which belongs to the spectral theory of Part III and is used here without proof.</p>
+<p><strong>Proposition (the inverse in the unitary basis).</strong> If $A=UDV^{*}$, then</p>
+<p>$$
+\boxed{\;A^{+}=V D^{+} U^{*}\;}
+$$</p>
+<p>with $D^{+}\in M_{n\times m}(\mathbb{C})$ the diagonal matrix with entries $1/\mu_{1},\dots,1/\mu_{r}$ and zeros elsewhere.</p>
+<p><em>Proof.</em> The diagonal matrix $D^{+}$ satisfies $DD^{+}D=D$, $D^{+}DD^{+}=D^{+}$, and the two products $DD^{+}$ and $D^{+}D$ are real diagonal projections; the four equations for $A$ and $VD^{+}U^{*}$ follow by inserting $UU^{*}=I_{m}$ and $VV^{*}=I_{n}$. Uniqueness gives the formula. $\square$</p>
+<p><strong>Corollary (diagonal matrices).</strong> For a diagonal matrix $\Lambda=\operatorname{diag}(\lambda_{1},\dots,\lambda_{n})$,</p>
+<p>$$
+\Lambda^{+}=\operatorname{diag}\bigl(\lambda_{1}^{+},\dots,\lambda_{n}^{+}\bigr),\qquad
+\lambda_{i}^{+}=\begin{cases}1/\lambda_{i}, & \lambda_{i}\neq0,\\ 0, & \lambda_{i}=0.\end{cases}
+$$</p>
+<p><strong>Corollary (the rank and the norms).</strong> The rank of $A$ is the number of nonzero singular values $r$. For $r\ge1$,</p>
+<p>$$
+\bigl\lVert A^{+}\bigr\rVert_{2}=\frac{1}{\mu_{r}},\qquad
+\bigl\lVert A^{+}\bigr\rVert_{F}^{2}=\sum_{i=1}^{r}\frac{1}{\mu_{i}^{2}},
+$$</p>
+<p>with $\mu_{r}$ the smallest nonzero singular value; for $A=0$ both norms vanish.</p>
+<p><em>Proof.</em> The nonzero singular values of $A^{+}$ are the reciprocals of those of $A$, and the norms are read on the diagonal. $\square$</p>
+<p><strong>Corollary (unitary invariance).</strong> For unitary $U$ and $V$,</p>
+<p>$$
+\bigl(UAV^{*}\bigr)^{+}=VA^{+}U^{*}.
+$$</p>
+<p><em>Proof.</em> Insert the decomposition, or apply the unitary-factor proposition of <em>The Moore–Penrose Inverse in an Involutive Algebra</em>, §<em>The Algebra of the Inverse</em>, twice. $\square$</p>
+<p><strong>Example.</strong> For $A=\operatorname{diag}(3,0)$ one has $A^{+}=\operatorname{diag}(1/3,0)$, and for $A=\operatorname{diag}(3,2)$ one has $A^{+}=\operatorname{diag}(1/3,1/2)$.</p>
+<h2 id="least-squares">Least Squares</h2>
+<p><strong>Theorem (the least-squares reading).</strong> For $b\in\mathbb{C}^{m}$, the minimisers of $\lVert Ax-b\rVert_{2}$ are exactly the vectors</p>
+<p>$$
+x=A^{+}b+\bigl(I_{n}-A^{+}A\bigr)y,\qquad y\in\mathbb{C}^{n},
+$$</p>
+<p>and among them $A^{+}b$ is the unique vector of least norm.</p>
+<p><em>Proof.</em> Decompose $b=b_{1}+b_{2}$ with $b_{1}=AA^{+}b\in\operatorname{col}A$ and $b_{2}=(I_{m}-AA^{+})b\in\ker A^{*}=(\operatorname{col}A)^{\perp}$. For every $x$,</p>
+<p>$$
+\lVert Ax-b\rVert^{2}=\lVert Ax-b_{1}\rVert^{2}+\lVert b_{2}\rVert^{2},
+$$</p>
+<p>because $Ax-b_{1}\in\operatorname{col}A$ is orthogonal to $b_{2}$. The minimum is therefore attained exactly when $Ax=b_{1}$, and $x=A^{+}b$ is one such vector. Every solution is $A^{+}b+z$ with $Az=0$, that is with $z\in\ker A$, and $\ker A=(I_{n}-A^{+}A)\mathbb{C}^{n}$ by the theorem of §<em>The Four Conditions</em>; this gives the stated family. Finally $A^{+}b=A^{+}AA^{+}b$ lies in the range of $A^{+}A$, the row space, which is orthogonal to $\ker A$; hence $A^{+}b$ is orthogonal to every $z\in\ker A$ and is the minimiser of least norm. $\square$</p>
+<p><strong>Corollary (the normal equations).</strong> The least-squares minimisers are the solutions of</p>
+<p>$$
+A^{*}Ax=A^{*}b,
+$$</p>
+<p>and $A^{+}b$ is the solution of least norm.</p>
+<p><em>Proof.</em> $Ax-b_{1}$ is orthogonal to the column space exactly when $A^{*}(Ax-b)=0$. $\square$</p>
+<p><strong>Corollary (consistent systems).</strong> The system $Ax=b$ is solvable exactly when $AA^{+}b=b$, and then its solutions are $A^{+}b+(I_{n}-A^{+}A)y$, with $A^{+}b$ the solution of least norm.</p>
+<p><em>Proof.</em> The system is solvable exactly when $b=b_{1}$, that is when $AA^{+}b=b$; the rest is the theorem. $\square$</p>
+<h2 id="the-limit-formula">The Limit Formula</h2>
+<p><strong>Theorem (the regularised inverse).</strong> For every matrix,</p>
+<p>$$
+\boxed{\;A^{+}=\lim_{\epsilon\to0^{+}}\bigl(A^{*}A+\epsilon I_{n}\bigr)^{-1}A^{*}
+=\lim_{\epsilon\to0^{+}}A^{*}\bigl(AA^{*}+\epsilon I_{m}\bigr)^{-1}\;}
+$$</p>
+<p><em>Proof.</em> For $\epsilon>0$ the matrix $A^{*}A+\epsilon I_{n}$ is invertible, because</p>
+<p>$$
+x^{*}\bigl(A^{*}A+\epsilon I_{n}\bigr)x=\lVert Ax\rVert^{2}+\epsilon\lVert x\rVert^{2}\ge\epsilon\lVert x\rVert^{2}.
+$$</p>
+<p>Insert $A=UDV^{*}$. Then</p>
+<p>$$
+\bigl(A^{*}A+\epsilon I_{n}\bigr)^{-1}A^{*}
+=V\bigl(D^{*}D+\epsilon I_{n}\bigr)^{-1}D^{*}U^{*}
+=V\operatorname{diag}\Bigl(\frac{\mu_{i}}{\mu_{i}^{2}+\epsilon}\Bigr)U^{*},
+$$</p>
+<p>with zeros in the remaining diagonal entries, and each fraction tends to $1/\mu_{i}$ when $\mu_{i}>0$ and to $0$ when $\mu_{i}=0$. The limit is $VD^{+}U^{*}=A^{+}$. The second identity is the first applied to $A^{*}$, with $(A^{*})^{+}=(A^{+})^{*}$. $\square$</p>
+<p><strong>Remark (what the limit says).</strong> The formula is the Tikhonov regularisation of the least-squares problem: the minimiser of $\lVert Ax-b\rVert^{2}+\epsilon\lVert x\rVert^{2}$ is $(A^{*}A+\epsilon I)^{-1}A^{*}b$, and the Moore–Penrose solution is its limit as the regularisation is removed. <strong>The inverse of a singular matrix is the limit of the inverses of its regularisations</strong>, and the limit is taken after the solutions, not before.</p>
+<h2 id="continuity">Continuity</h2>
+<p><strong>Theorem (where the inverse is continuous).</strong> The map $A\mapsto A^{+}$ is continuous at every matrix of full rank $r=\min(m,n)$, and discontinuous at every matrix of rank $r<\min(m,n)$.</p>
+<p><em>Proof.</em> At full rank the formulas of §<em>The Rank Factorisation</em> apply, $A^{+}=(A^{*}A)^{-1}A^{*}$ or $A^{+}=A^{*}(AA^{*})^{-1}$, and the Gram matrix is invertible in a neighbourhood; the inverse is a rational function of the entries.</p>
+<p>For the discontinuity, let $r<\min(m,n)$ and choose $u\notin\operatorname{col}A$ and $v\notin\operatorname{row}A$. For $k\ge1$ put $A_{k}=A+\frac1k uv^{*}$. Then $\operatorname{col}A_{k}$ strictly contains $\operatorname{col}A$, so $\operatorname{rk}A_{k}=r+1$, and $A_{k}\to A$. The singular values depend continuously on the entries, being the square roots of the eigenvalues of the continuous family $A_{k}^{*}A_{k}$, so $\mu_{r+1}(A_{k})\to\mu_{r+1}(A)=0$. By the norm formula of §<em>The Singular Value Form</em>,</p>
+<p>$$
+\bigl\lVert A_{k}^{+}\bigr\rVert_{2}=\frac{1}{\mu_{r+1}(A_{k})}\longrightarrow\infty,
+$$</p>
+<p>while $\lVert A^{+}\rVert_{2}$ is finite. Hence $A_{k}^{+}$ does not converge to $A^{+}$, and the map is discontinuous at $A$. $\square$</p>
+<p><strong>Example.</strong> The family</p>
+<p>$$
+A_{\epsilon}=\begin{pmatrix}1&0\\0&\epsilon\end{pmatrix}\longrightarrow A=\begin{pmatrix}1&0\\0&0\end{pmatrix},
+\qquad
+A_{\epsilon}^{+}=\begin{pmatrix}1&0\\0&1/\epsilon\end{pmatrix},
+$$</p>
+<p>shows the blow-up at the rank drop: the limit of the inverses does not exist, and the value at the limit is $\operatorname{diag}(1,0)$.</p>
+<p><strong>Remark (the two discontinuities).</strong> The discontinuity here is an unbounded one: the inverse leaves every norm ball as the rank drops. It is not the discontinuity of the polar factor of <em>The Polar Decomposition of a Biquaternion</em>, where the isometry factor jumps between two bounded values at the null cone. <strong>The Moore–Penrose inverse is a continuous function of the matrix exactly on the full-rank stratum</strong>, and its values on the lower strata are limits only in the regularised sense of §<em>The Limit Formula</em>.</p>
+<h2 id="the-algebra-of-the-inverse">The Algebra of the Inverse</h2>
+<p>The identities are those of <em>The Moore–Penrose Inverse in an Involutive Algebra</em>, §<em>The Algebra of the Inverse</em>, read in matrices:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>identity</th>
+<th>matrix form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>involution</td>
+<td>$(A^{+})^{+}=A$</td>
+</tr>
+<tr>
+<td>adjoint</td>
+<td>$(A^{*})^{+}=(A^{+})^{*}$</td>
+</tr>
+<tr>
+<td>product with the adjoint</td>
+<td>$(AA^{*})^{+}=(A^{+})^{*}A^{+}$, $(A^{*}A)^{+}=A^{+}(A^{+})^{*}$</td>
+</tr>
+<tr>
+<td>factorisation</td>
+<td>$A^{+}=(A^{*}A)^{+}A^{*}=A^{*}(AA^{*})^{+}$</td>
+</tr>
+<tr>
+<td>unitary factors</td>
+<td>$(UA)^{+}=A^{+}U^{*}$, $(AV)^{+}=V^{*}A^{+}$</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$\operatorname{rk}A^{+}=\operatorname{rk}A$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the product rule fails).</strong> The identity $(AB)^{+}=B^{+}A^{+}$ does not hold in general. With</p>
+<p>$$
+A=\begin{pmatrix}1&1\end{pmatrix},\qquad B=\begin{pmatrix}1\\0\end{pmatrix},
+$$</p>
+<p>one has $AB=1$, hence $(AB)^{+}=1$, while $B^{+}A^{+}=\tfrac12$. <strong>The product rule fails by the factor two</strong>, and the failure is not repaired by the rank: both factors have full rank. The rule holds when one factor is unitary, by the table above.</p>
+<h2 id="summary">Summary</h2>
+<p>The Moore–Penrose inverse of a matrix is the unique solution of the four Penrose equations, and it is the inverse of the matrix read between the row space and the column space.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>definition</td>
+<td>$AA^{+}A=A$, $A^{+}AA^{+}=A^{+}$, $(AA^{+})^{*}=AA^{+}$, $(A^{+}A)^{*}=A^{+}A$</td>
+</tr>
+<tr>
+<td>domain</td>
+<td>every $A\in M_{m\times n}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>range</td>
+<td>$A^{+}\in M_{n\times m}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>rank factorisation</td>
+<td>$A=CR$, $A^{+}=R^{*}(RR^{*})^{-1}(C^{*}C)^{-1}C^{*}$</td>
+</tr>
+<tr>
+<td>full column rank</td>
+<td>$A^{+}=(A^{*}A)^{-1}A^{*}$</td>
+</tr>
+<tr>
+<td>full row rank</td>
+<td>$A^{+}=A^{*}(AA^{*})^{-1}$</td>
+</tr>
+<tr>
+<td>singular values</td>
+<td>$A=UDV^{*}$, $A^{+}=VD^{+}U^{*}$</td>
+</tr>
+<tr>
+<td>rank one</td>
+<td>$(uv^{*})^{+}=vu^{*}/(\lVert u\rVert^{2}\lVert v\rVert^{2})$</td>
+</tr>
+<tr>
+<td>projections</td>
+<td>$AA^{+}=\Pi_{\operatorname{col}A}$, $A^{+}A=\Pi_{\operatorname{row}A}$</td>
+</tr>
+<tr>
+<td>least squares</td>
+<td>$A^{+}b$ is the minimum-norm least-squares solution of $Ax=b$</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>$A^{+}=\lim_{\epsilon\to0}(A^{*}A+\epsilon I)^{-1}A^{*}$</td>
+</tr>
+<tr>
+<td>continuity</td>
+<td>continuous on the full-rank stratum, discontinuous at every rank drop</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three statements to carry away are these. The inverse exists for every matrix and is computed by the rank factorisation or by the singular value decomposition. The four subspaces of the matrix are read from the two products, and the inverse is the inverse of $A$ between the row space and the column space, with zero on the complements. The inverse solves the least-squares problem in the minimum-norm sense, is the limit of the regularised inverses, and is continuous exactly where the rank does not drop.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>a matrix in $M_{m\times n}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$A^{*}$</td>
+<td>the conjugate transpose</td>
+</tr>
+<tr>
+<td>$A^{+}$</td>
+<td>the Moore–Penrose inverse</td>
+</tr>
+<tr>
+<td>$\Pi_{V}$</td>
+<td>the orthogonal projection onto the subspace $V$</td>
+</tr>
+<tr>
+<td>$\operatorname{col}A$, $\operatorname{row}A$</td>
+<td>the column space and the row space</td>
+</tr>
+<tr>
+<td>$\ker A$, $\ker A^{*}$</td>
+<td>the null space and the left null space</td>
+</tr>
+<tr>
+<td>$\operatorname{rk}A$</td>
+<td>the rank</td>
+</tr>
+<tr>
+<td>$\mu_{1},\dots,\mu_{r}$</td>
+<td>the nonzero singular values</td>
+</tr>
+<tr>
+<td>$D^{+}$</td>
+<td>the diagonal matrix of reciprocal nonzero entries</td>
+</tr>
+<tr>
+<td>$\lVert\cdot\rVert_{2}$, $\lVert\cdot\rVert_{F}$</td>
+<td>the operator norm and the Frobenius norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger Penrose, "A generalized inverse for matrices", <em>Proceedings of the Cambridge Philosophical Society</em> <strong>51</strong> (1955) 406–413. The four equations, their uniqueness, and the first systematic treatment of the singular case.</li>
+<li>Eliakim H. Moore, "On the reciprocal of the general algebraic matrix", <em>Bulletin of the American Mathematical Society</em> <strong>26</strong> (1920) 394–395. The earliest formulation of the reciprocal of a singular matrix.</li>
+<li>Gene H. Golub and Charles F. Van Loan, <em>Matrix Computations</em>, 4th edition (Johns Hopkins University Press, 2013). The singular value decomposition, the rank factorisation, the pseudo-inverse and the numerical algorithms.</li>
+<li>Adi Ben-Israel and Thomas N. E. Greville, <em>Generalized Inverses: Theory and Applications</em>, 2nd edition (Springer, 2003). The algebraic and the least-squares theory of the inverse.</li>
+<li>Åke Björck, <em>Numerical Methods for Least Squares Problems</em> (SIAM, 1996). The minimum-norm least-squares solution, the normal equations and the regularised limit.</li>
+<li>Charles L. Lawson and Richard J. Hanson, <em>Solving Least Squares Problems</em> (Prentice-Hall, 1974; SIAM, 1995). The computational treatment of the pseudo-inverse and the rank-deficient problem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

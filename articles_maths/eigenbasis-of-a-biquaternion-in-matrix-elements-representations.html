@@ -474,13 +474,13 @@ B-Q_z&Q_x-iQ_y\\
 -Q_x-iQ_y&B-Q_z
 \end{pmatrix},
 \qquad
-\det\mathsf{C}_Q=-2Q_z(B-Q_z)\neq0.
+\det\mathsf{C}_Q=2B(B-Q_z)\neq0.
 $$
 The first column is the first column of $2B\rho_+$, the second is the second column of $2B\rho_-$, and the two are eigenvectors of $\mathsf{M}_2(\tilde Q)$ with eigenvalues $\lambda_+$ and $\lambda_-$ respectively. Therefore
 $$
 \mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q)\mathsf{C}_Q=\operatorname{diag}(\lambda_+,\lambda_-).
 $$
-When $Q_z=0$ or $B=Q_z$ the first formula is singular: at $B=Q_z$ one of the two chosen columns of the spectral projectors vanishes, and at $Q_z=0$ the two chosen columns are proportional. The other pair of nonzero columns gives
+When $B=Q_z$ the first formula is singular: the two chosen columns of the spectral projectors both vanish. The other pair of nonzero columns gives
 $$
 \mathsf{C}_Q'=
 \begin{pmatrix}
@@ -490,8 +490,8 @@ B+Q_z&Q_x+iQ_y
 \qquad
 \det\mathsf{C}_Q'=-2B(B+Q_z)\neq0,
 $$
-with columns the second column of $2B\rho_+$ and the first column of $2B\rho_-$. It satisfies the same diagonalisation. Since $B\neq0$, the determinants $-2Q_z(B-Q_z)$ and $-2B(B+Q_z)$ cannot both vanish, so one of the two formulas applies. When $Q_x=Q_y=0$, the sign $B=-Q_z$ is the first case, $\mathsf{C}_Q=-2Q_z\,\mathrm I_2$, and the sign $B=Q_z$ is the second, $\mathsf{C}_Q'=2Q_z\begin{pmatrix}0&1\\1&0\end{pmatrix}$; both are invertible because $Q_z\neq0$ when $B\neq0$. The scalar case $B=0$ is excluded, as in the eigenbasis article. The matrix $\mathsf{C}_Q$ is not the most general diagonaliser: it is the one whose columns are the two columns of the spectral projectors.</p>
-<p><strong>The inverse and the conjugation.</strong> For the first matrix, with $D=-2Q_z(B-Q_z)$,
+with columns the second column of $2B\rho_+$ and the first column of $2B\rho_-$. It satisfies the same diagonalisation. Since $B\neq0$, the determinants $2B(B-Q_z)$ and $-2B(B+Q_z)$ cannot both vanish, so one of the two formulas applies. When $Q_x=Q_y=0$, the sign $B=-Q_z$ is the first case, $\mathsf{C}_Q=-2Q_z\,\mathrm I_2$, and the sign $B=Q_z$ is the second, $\mathsf{C}_Q'=2Q_z\begin{pmatrix}0&1\\1&0\end{pmatrix}$; both are invertible because $Q_z\neq0$ when $B\neq0$. The scalar case $B=0$ is excluded, as in the eigenbasis article. The matrix $\mathsf{C}_Q$ is not the most general diagonaliser: it is the one whose columns are the two columns of the spectral projectors.</p>
+<p><strong>The inverse and the conjugation.</strong> For the first matrix, with $D=2B(B-Q_z)$,
 $$
 \mathsf{C}_Q^{-1}=\frac{1}{D}
 \begin{pmatrix}
@@ -638,7 +638,7 @@ $$
 $$
 The same matrix acts on both columns. This is the precise sense in which the two spinor spaces are two copies of the same module.</p>
 <p><strong>Right multiplication and the rows.</strong> Right multiplication by $\tilde Q$ sends $\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})$ to $\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})\operatorname{diag}(\lambda_+,\lambda_-)$; it scales the first column by $\lambda_+$ and the second by $\lambda_-$. The two rows are the two minimal right ideals: the first row is $\tilde\Pi_+\mathbb{B}$, the second is $\tilde\Pi_-\mathbb{B}$. Left multiplication scales the first row by $\lambda_+$ and the second by $\lambda_-$. The rows and the columns are the two-sided Peirce structure read in the matrix.</p>
-<h2 id="the-math320-matrix-element-representation">The $4\times4$ Matrix Element Representation</h2>
+<h2 id="the-math317-matrix-element-representation">The $4\times4$ Matrix Element Representation</h2>
 <p><strong>The left and right regular matrices carry the multiplication on the four-vector space, and in the eigenbasis order they are Kronecker products of the $2\times2$ Peirce matrix with an identity.</strong></p>
 <h3 id="the-regular-matrices">The Regular Matrices</h3>
 <p>In the fixed basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the <strong>left regular matrix</strong> $\mathsf{M}_4^{L}(\tilde Q_{\mathrm{sp}})$ has as $\mu$-th column the coordinate column of $\tilde Q_{\mathrm{sp}}e_\mu$:
@@ -866,7 +866,7 @@ $$
 (X-\lambda_+)^2(X-\lambda_-)^2,
 $$
 which is the square of the characteristic polynomial of $\mathsf{M}_2(\tilde Q)$. The doubling is the doubling of the module: the regular representation is two copies of the $2\times2$ one.</p>
-<h3 id="the-fixed-change-in-the-math409-model">The Fixed Change in the $4\times4$ Model</h3>
+<h3 id="the-fixed-change-in-the-math406-model">The Fixed Change in the $4\times4$ Model</h3>
 <p>The eigenbasis order is reached from the fixed basis by the change-of-basis matrix whose columns are the coordinates of $\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-$ in the fixed basis. For the standard root $i\vec e_z$ and the standard nilpotents of the fixed model, this matrix is
 $$
 \mathsf{C}_4^{(0)}=
@@ -910,7 +910,7 @@ $$
 \mathsf{C}_Q^{\mathsf T}\otimes\mathsf{C}_Q^{-1}.
 $$
 The fixed change $\mathsf{C}_4^{(0)}$ is the same construction for the standard root, composed with the fixed passage from the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ to the matrix units. The composition is the reason the $4\times4$ change is not a single Kronecker product in the order of the fixed basis: the fixed basis is not the matrix-unit basis, and the permutation between them is the one displayed in $\mathsf{C}_4^{(0)}$.</p>
-<h3 id="base-changes-in-the-math436-model">Base Changes in the $4\times4$ Model</h3>
+<h3 id="base-changes-in-the-math433-model">Base Changes in the $4\times4$ Model</h3>
 <p>A change of basis $P\in GL_4(\mathbb{C})$ acts on the regular matrices by
 $$
 \mathsf{M}_4^{L}(\tilde Q_{\mathrm{sp}})\longmapsto P^{-1}\mathsf{M}_4^{L}(\tilde Q_{\mathrm{sp}})P,

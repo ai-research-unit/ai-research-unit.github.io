@@ -78,7 +78,7 @@ $$</p>
 <p>$$
 \Sigma_{01}=\mathcal{N}\setminus\mathcal S,
 $$</p>
-<p>and it is one of the two <strong>mixed</strong> sectors: the two cells on which the norm problem and the spectral problem give different answers. The vocabulary, the two cones and the naming convention are those of <em>Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>. The opposite corner $\Sigma_{00}$ is treated in <em>The N-Degenerate, Spectrally Degenerate Sector</em>.</p>
+<p>and it is one of the two <strong>mixed</strong> sectors: the two cells on which the norm problem and the spectral problem give different answers. The vocabulary, the two cones and the naming convention are those of <em>N-Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>. The opposite corner $\Sigma_{00}$ is treated in <em>The N-Degenerate, Spectrally Degenerate Sector</em>.</p>
 <p>Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal{N}=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; <strong>spectrally regular</strong> means $B^2\neq0$.</p>
 <h2 id="definition-and-characterisation">Definition and Characterisation</h2>
 <p><strong>Definition.</strong> The sector $\Sigma_{01}$ is</p>
@@ -134,7 +134,7 @@ $$</p>
 $$
 \tilde Q=c\,e_++0\cdot e_-,\qquad e_+=\tilde\Pi,\quad e_-=\tilde\Pi'.
 $$
-The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique, and an eigenbasis exists, since $B^2\neq0$; the construction is in <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>.</p>
+The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique. An eigenbasis exists, since $B^2\neq0$; the construction in full generality is in <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Eigenbasis</em>, and its specialisation to $\Sigma_{11}$ is in <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>.</p>
 <p><strong>Powers.</strong> For $n\geq1$, $\tilde Q^n=c^n e_+$, and the polynomial calculus reads $f(\tilde Q)=f(c)e_++f(0)e_-=f(c)\tilde\Pi+f(0)\tilde\Pi'$. There is no inverse, since $N=0$; the image of the eigenvalue map on the sector is the set of pairs $(c,0)$ with $c\neq0$, so it is not surjective onto $\mathbb{C}^\times\times\mathbb{C}^\times$.</p>
 <p><strong>Centraliser.</strong> The centraliser is the plane</p>
 <p>$$
@@ -165,7 +165,7 @@ L_{\tilde Q}^2=c\,L_{\tilde Q}=2Q_tL_{\tilde Q},\qquad R_{\tilde Q}^2=2Q_tR_{\ti
 $$</p>
 <p>Both operators have complex rank $2$, with images the minimal left and right ideals $\mathbb{B}\tilde\Pi$ and $\tilde\Pi\mathbb{B}$, and kernels the two annihilator planes. They are <strong>not</strong> square-zero, in contrast with $\Sigma_{00}$: the element is a zero divisor, but its multiplication is a projection up to scale, not a nilpotent operator.</p>
 <h2 id="peirce-data">Peirce Data</h2>
-<p><strong>The Peirce decomposition relative to $\tilde Q$ exists and is unique. It has two non-trivial idempotents and one vanishing coefficient: the Peirce matrix of $\tilde Q$ is $\operatorname{diag}(c,0)$.</strong></p>
+<p><strong>The Peirce decomposition relative to $\tilde Q$ exists and is unique. It has two non-trivial idempotents and one vanishing coefficient: the $2\times2$ Peirce matrix of $\tilde Q$ on the two idempotents is $\operatorname{diag}(c,0)$.</strong></p>
 <p>Let $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent, and put $\tilde\Pi'=e_t-\tilde\Pi$. The spectral idempotents are $e_+=\tilde\Pi$ and $e_-=\tilde\Pi'$. The four corners $\mathbb{B}_{st}=e_s\mathbb{B}e_t$ are one-dimensional lines, and the Peirce form is</p>
 <p>$$
 e_+\tilde Qe_+=c\,e_+,\qquad
@@ -173,12 +173,84 @@ e_+\tilde Qe_-=0,\qquad
 e_-\tilde Qe_+=0,\qquad
 e_-\tilde Qe_-=0.
 $$</p>
-<p>In the Peirce basis $(\tilde\Pi,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi')$, with the nilpotents normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi'$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi$, the Peirce matrix is</p>
+<p>In the Peirce basis $(\tilde\Pi,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi')$, with the nilpotents normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi'$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi$, the $2\times2$ Peirce matrix on the two idempotents is</p>
 <p>$$
 \begin{pmatrix}c&0\\0&0\end{pmatrix}.
 $$</p>
 <p>The zero coefficient is the only trace of the norm degeneracy in the Peirce data. The idempotent $e_-$ is present and non-trivial, and the decomposition is genuinely two-term: the vanishing coefficient is a value, not a missing idempotent. Both mixed corners are non-zero, so both nilpotents exist.</p>
-<p><strong>The eigenbasis.</strong> Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction is that of <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>. In that basis the diagonal values are $(c,0)$ in one order or the other. The zero eigenvalue is carried by one diagonal entry and by one only.</p>
+<p><strong>The eigenbasis.</strong> Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction in full generality is in <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Eigenbasis</em>, and its specialisation to $\Sigma_{11}$ is in <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>. With the branch $B=-iQ_t$ one has $\lambda_+=c=2Q_t$, and the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ has the diagonal values $(c,c,0,0)$. The other branch exchanges the labels and gives $(0,0,c,c)$. The zero eigenvalue is carried by the two basis vectors of the $\lambda_-$-eigenspace $\tilde\Pi_-\mathbb{B}$, namely $\vec\Upsilon_+$ and $\tilde\Pi_-$; the spectral decomposition, by contrast, has one zero coefficient.</p>
+<h2 id="spinors-and-chirality">Spinors and Chirality</h2>
+<p><strong>Each spinor space is a minimal left ideal, a complex plane with a basis made of one idempotent and one nilpotent. In this sector one eigenvalue is zero, so left multiplication acts on each chirality as $\operatorname{diag}(c,0)$, and the second chirality is the right annihilator.</strong></p>
+<p>The two spinor spaces are
+$$
+S_+=\mathbb{B}e_+=\mathbb{C}e_+\oplus\mathbb{C}\vec\Upsilon_+,
+\qquad
+S_-=\mathbb{B}e_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}e_-,
+\qquad
+\mathbb{B}=S_+\oplus S_-,
+$$
+each of complex dimension two. A <strong>spinor of first chirality</strong> is an element of $S_+$, a <strong>spinor of second chirality</strong> an element of $S_-$. The labelling is the one of §<em>Peirce Data</em>, with the branch $B=-iQ_t$, so that $\lambda_+=c=2Q_t$ and $\lambda_-=0$. This is the specialisation of §<em>Spinors and Chirality</em> of <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em>.</p>
+<h3 id="the-left-action">The Left Action</h3>
+<p>Write a general element in the eigenbasis as
+$$
+\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}e_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}e_-,
+\qquad Q_{\mathrm{sp},ij}\in\mathbb{C}.
+$$
+A spinor of first chirality is
+$$
+\xi_+=Q_{\mathrm{sp},11}e_++Q_{\mathrm{sp},21}\vec\Upsilon_+,
+$$
+with coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ in the basis $(e_+,\vec\Upsilon_+)$. Since $e_+\in\mathbb{B}_{++}$ and $\vec\Upsilon_+\in\mathbb{B}_{-+}$, left multiplication by $\tilde Q=c\,e_+$ gives
+$$
+\tilde Q\xi_+=c\,Q_{\mathrm{sp},11}e_+,
+\qquad
+(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(c\,Q_{\mathrm{sp},11},0).
+$$
+A spinor of second chirality is
+$$
+\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}e_-,
+$$
+with coordinates $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ in the basis $(\vec\Upsilon_-,e_-)$. Since $\vec\Upsilon_-\in\mathbb{B}_{+-}$ and $e_-\in\mathbb{B}_{--}$,
+$$
+\tilde Q\xi_-=c\,Q_{\mathrm{sp},12}\vec\Upsilon_-,
+\qquad
+(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(c\,Q_{\mathrm{sp},12},0).
+$$
+Thus
+$$
+L_{\tilde Q}|_{S_+}=L_{\tilde Q}|_{S_-}=\operatorname{diag}(c,0).
+$$
+Each chirality carries both eigenvalues, and one component of each is annihilated. This is the spinorial form of the Peirce matrix $\operatorname{diag}(c,0)$: the zero coefficient is a value on a component, not a missing direction.</p>
+<h3 id="the-right-action-and-chirality">The Right Action and Chirality</h3>
+<p>Right multiplication by $\tilde Q=c\,e_+$ is
+$$
+\xi_+\tilde Q=c\,\xi_+\quad(\xi_+\in S_+),
+\qquad
+\xi_-\tilde Q=0\quad(\xi_-\in S_-),
+$$
+because $e_+$ acts as the identity on the right of $S_+$ and $S_-e_+=0$. Chirality is the right eigenvalue, as in the general article: here $R_{\tilde Q}$ is $c$ on $S_+$ and $0$ on $S_-$. The second chirality is therefore the right annihilator,
+$$
+S_-=\ker R_{\tilde Q}=B(\tilde Q),
+$$
+while the left annihilator $A(\tilde Q)=\ker L_{\tilde Q}$ is the other plane, spanned by $\vec\Upsilon_+$ and $e_-$, which is the $\lambda_-$-eigenspace of $L_{\tilde Q}$.</p>
+<p>The spinor spaces and the eigenspaces of $L_{\tilde Q}$ are transverse: each spinor space contains one vector of each eigenspace, and each eigenspace contains one vector of each spinor space. A chirality is therefore not an eigenspace of $L_{\tilde Q}$.</p>
+<h3 id="the-matrix-picture">The Matrix Picture</h3>
+<p>Under the assignment
+$$
+e_+\mapsto E_{11},\qquad
+\vec\Upsilon_-\mapsto E_{12},\qquad
+\vec\Upsilon_+\mapsto E_{21},\qquad
+e_-\mapsto E_{22},
+$$
+a general element is represented by
+$$
+\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=
+\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\qquad
+\mathsf M_2^{Q}(\tilde Q)=
+\begin{pmatrix}c&0\\0&0\end{pmatrix}.
+$$
+The first column is $S_+$, the second is $S_-$, and the two rows are the two spectral eigenspaces of $L_{\tilde Q}$. A general element is a pair of spinors, one of each chirality, and is not itself a spinor.</p>
 <h2 id="multiplication">Multiplication</h2>
 <p><strong>Products stay on the null cone.</strong> The norm is multiplicative, so for $\tilde P,\tilde Q\in\Sigma_{01}$,</p>
 <p>$$
@@ -228,7 +300,7 @@ $$</p>
 <p>$$
 \nabla N=2(Q_t,\vec Q),\qquad \nabla B^2=2(0,\vec Q),
 $$</p>
-<p>and they are proportional only if $Q_t=0$. On $\Sigma_{01}$ one has $Q_t\neq0$, so the gradients are independent and the intersection $\mathcal{N}\cap\mathcal S$ is nowhere dense in $\mathcal{N}$ there. The tangency of the two cones is a phenomenon of the boundary $\Sigma_{00}$, where both gradients become $2(0,\vec Q)$.</p>
+<p>and they are proportional only if $Q_t=0$ or $\vec Q=0$. On $\Sigma_{01}$ one has $Q_t\neq0$ and $\vec Q\neq0$, so the gradients are independent and the intersection $\mathcal{N}\cap\mathcal S$ is nowhere dense in $\mathcal{N}$ there. The tangency of the two cones is a phenomenon of the boundary $\Sigma_{00}$, where both gradients become $2(0,\vec Q)$.</p>
 <p><strong>Independence witness.</strong> Every element of the sector is <strong>$N$-degenerate</strong> and a <strong>non-unit</strong>, with <strong>distinct eigenvalues</strong>: $N=0$, so it is a zero divisor of the plain product, while $B^2=-Q_t^2\neq0$, so its two eigenvalues $0$ and $2Q_t$ are separated. The standard example is</p>
 <p>$$
 \tilde Q=e_t+i\vec e_x,\qquad N=0,\qquad B^2=-1,\qquad \tilde Q^2=2\tilde Q,
@@ -284,7 +356,7 @@ $$</p>
 <p><strong>The two mixed sectors.</strong> $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.</p>
 <p><strong>Position among the four sectors.</strong> Sector $01$ is the <strong>idempotent stratum</strong> of the null cone: the elements $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent. It is the only sector on which the norm vanishes while the spectrum stays separated, so it is one of the two independence witnesses. The finer split inside $\Sigma_{10}$ and $\Sigma_{00}$ is by the minimal polynomial, not by the two predicates; it is recorded in <em>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</em>, §<em>The Chain of Invariants</em>.</p>
 <h2 id="consequences">Consequences</h2>
-<p><strong>Eigenbasis.</strong> It exists and is unique: $e_+=\tilde Q/(2Q_t)$, $e_-=e_t-e_+$. The Peirce decomposition relative to $\tilde Q$ is the only one.</p>
+<p><strong>Eigenbasis.</strong> It exists. The spectral idempotents are $e_+=\tilde Q/(2Q_t)$ and $e_-=e_t-e_+$, and they are unique. The normalised Peirce eigenbasis is unique with the normalisation fixed. The Peirce decomposition relative to $\tilde Q$ is the only one.</p>
 <p><strong>Polar decomposition.</strong> The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Biquaternions</em> has no value on the sector. The failure is caused by the norm, not by the spectrum.</p>
 <p><strong>One-sided operators.</strong> Rank $2$, equal to $2Q_t$ times a projection, with kernel the corresponding annihilator plane. Neither multiplication is invertible on either side.</p>
 <p><strong>The "clean degenerate" cell.</strong> It is the cell in which invertibility fails and nothing else does: the eigenvalues are separated, the Peirce decomposition relative to $\tilde Q$ exists and is unique, the annihilators are the two Peirce planes, and the only pathology is the zero eigenvalue, which is exactly the norm condition.</p>
@@ -299,14 +371,14 @@ $$</p>
 <p>$$
 \boxed{\ \vec\Xi=2\tilde\Pi-e_t=\frac{\vec Q}{Q_t}=\frac{Q_x}{Q_t}\vec e_x+\frac{Q_y}{Q_t}\vec e_y+\frac{Q_z}{Q_t}\vec e_z,\qquad \vec\Xi^2=e_t\ }
 $$</p>
-<p><strong>The two nilpotents.</strong> They are the closed form of the doubly regular sector $\Sigma_{11}$ read with $B=-iQ_t$, the choice that puts $\lambda_+=2Q_t$. With $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$,</p>
+<p><strong>The two nilpotents.</strong> They are the closed form of <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Transverse-Vector Construction</em>, read with $B=-iQ_t$, the branch that puts $\lambda_+=2Q_t$; the other branch exchanges the two labels. With $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$,</p>
 <p>$$
 \boxed{\ \vec\Upsilon_+=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q+\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},\qquad B=-iQ_t\ }
 $$</p>
 <p>$$
 \boxed{\ \vec\Upsilon_-=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q-\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},\qquad B=-iQ_t\ }
 $$</p>
-<p>with the normalisation $\vec\Upsilon_+\vec\Upsilon_-=e_-$ and $\vec\Upsilon_-\vec\Upsilon_+=e_+$ for one fixed square root; on the exceptional cone the axis charts replace the symmetric formula.</p>
+<p>with the normalisation $\vec\Upsilon_+\vec\Upsilon_-=e_-$ and $\vec\Upsilon_-\vec\Upsilon_+=e_+$ for one fixed branch of the square root; on the exceptional cone the axis charts replace the symmetric formula.</p>
 <p><strong>The two eigenvalues.</strong></p>
 <p>$$
 \boxed{\ \lambda_+=2Q_t\ }
@@ -314,6 +386,7 @@ $$</p>
 <p>$$
 \boxed{\ \lambda_-=0\ }
 $$</p>
+<p>The other branch, $B=+iQ_t$, gives $\lambda_+=0$ and $\lambda_-=2Q_t$ and exchanges the two labels; the unordered spectrum is unchanged.</p>
 <p><strong>The element.</strong> In the eigenbasis $(e_+,\vec\Upsilon_-,\vec\Upsilon_+,e_-)$,</p>
 <p>$$
 \boxed{\ \tilde Q=2Q_t\,e_++0\cdot\vec\Upsilon_-+0\cdot\vec\Upsilon_++0\cdot e_-\ }
@@ -353,6 +426,10 @@ $$</p>
 <tr>
 <td>Peirce decomposition</td>
 <td>exists, unique, diagonal on $(e_+,e_-)$</td>
+</tr>
+<tr>
+<td>eigenbasis</td>
+<td>normalised Peirce basis; unique with the normalisation fixed</td>
 </tr>
 <tr>
 <td>centraliser</td>
@@ -432,14 +509,15 @@ $$</p>
 </tr>
 <tr>
 <td>$B(\tilde Q)=\ker R_{\tilde Q}$</td>
-<td>the right annihilator, a left ideal</td>
+<td>the right annihilator, a left ideal; equal to $S_-$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html">Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</a>, for the construction in full generality, the normalisation, the expansion of an arbitrary biquaternion and the spinor reading.</li>
 <li><a href="the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the opposite corner $\Sigma_{00}$, the nilpotents and the origin.</li>
-<li><a href="quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the null cone and its two strata.</li>
+<li><a href="n-regularity-and-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and Degeneracy in the Biquaternion Algebra</a>, for the null cone and its two strata.</li>
 <li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion and the spectral-degenerate cone.</li>
 <li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the comparison of the two cones.</li>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and the nilpotents $E_{ij}$.</li>
