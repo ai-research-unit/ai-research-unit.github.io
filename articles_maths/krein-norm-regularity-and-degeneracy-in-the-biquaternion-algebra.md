@@ -29,7 +29,7 @@ Moreover $\tilde P^2=2\vec e_x$ and $\langle\tilde P^2\rangle_{\natural*}=-4$.
 
 *Proof.* $\tilde P\tilde Q=e_t^2-\vec e_x^2=2e_t$ and $\tilde P^2=e_t+2\vec e_x+\vec e_x^2=2\vec e_x$, since $\vec e_x^2=-e_t$. The values are $|1|^2-|1|^2=0$, $\langle 2e_t\rangle_{\natural*}=4$ and $\langle 2\vec e_x\rangle_{\natural*}=-4$.
 
-No multiplicative law survives in either direction: the product of two null elements can be regular, and the product of two regular elements can be null (§*The Regular Case: The Two Signs*). What is preserved is the homogeneity under complex scalars and the invariance under the isometry group $\mathrm{U}_J(\mathbb{B})\cong\mathrm{U}(1,3)$; multiplication by an algebra element preserves neither the value nor its sign.
+**Consequence.** No multiplicative law survives in either direction: the product of two null elements can be regular, and the product of two regular elements can be null (§*The regular case: the positive and the negative regions*). What is preserved is the homogeneity under complex scalars and the invariance under the isometry group $\mathrm{U}_J(\mathbb{B})\cong\mathrm{U}(1,3)$; multiplication by an algebra element preserves neither the value nor its sign.
 
 ## The Two Cases
 
@@ -50,32 +50,18 @@ and the algebra is the disjoint union
 $$
 \mathbb{B}=\mathbb{B}^{\natural*}_{+}\uplus\mathcal K\uplus\mathbb{B}^{\natural*}_{-}.
 $$
-The origin lies in $\mathcal K$; it is the only Krein-degenerate point with vanishing scalar part.
+The split is by the value of the norm, not by invertibility. The origin lies in $\mathcal K$ and is neither a unit nor a zero divisor, and it is the only Krein-degenerate point with vanishing scalar part. Every other point of $\mathcal K$ is a unit or a zero divisor: it is a unit exactly when its algebraic norm does not vanish, and a zero divisor exactly when it does. So the degeneracy case is the origin together with units and zero divisors.
 
 **Remark (the word regular).** In ring theory a regular element is a non-zero-divisor, so the ring-regular set is $\mathbb{B}^{\times}\uplus\{0\}$. The title uses **Krein-regular** in the metric sense: the regular side is the complement of the null set. The two readings are different, and §*The Two Partitions* shows that the only implication between them is positive implies unit.
 
-## Krein Orthogonality and the Complement
+## The regular case: the positive and the negative regions
 
-**Definition.** Two elements are **Krein-orthogonal**, written $\tilde Q_1\perp_K\tilde Q_2$, when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$; two subspaces are Krein-orthogonal when every element of one is orthogonal to every element of the other. The **Krein-orthogonal complement** of $\mathbb{W}$ is
+**Definition.** The **Krein-regular set** is
 $$
-\mathbb{W}^{\perp_K}=\{\tilde Q:\langle\tilde Q,\tilde W\rangle_{\natural*}=0\ \text{for every}\ \tilde W\in\mathbb{W}\}.
+\mathbb{B}^{\natural*}=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\neq0\}
+=\mathbb{B}^{\natural*}_{+}\uplus\mathbb{B}^{\natural*}_{-}.
 $$
-
-**Example (a self-orthogonal line).** The line $\mathbb{W}=\mathbb{C}(e_t+\vec e_x)$ is isotropic, $\langle e_t+\vec e_x\rangle_{\natural*}=0$, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$ and $\mathbb{W}+\mathbb{W}^{\perp_K}=\mathbb{W}^{\perp_K}$ has dimension three. The sum is not the algebra, and no direct sum decomposition is obtained from that line alone.
-
-**Theorem (the line criterion).** For $\tilde Q\neq0$ the line $\mathbb{C}\tilde Q$ is non-degenerate for the Krein form exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$. In that case
-$$
-\mathbb{B}=\mathbb{C}\tilde Q\oplus(\mathbb{C}\tilde Q)^{\perp_K},
-\qquad
-\dim_{\mathbb{C}}(\mathbb{C}\tilde Q)^{\perp_K}=3,
-$$
-and the restriction of the form to the line is positive definite when the value is positive and negative definite when it is negative. When the value vanishes the line is totally isotropic and lies in its own complement.
-
-*Proof.* The Gram matrix of the restriction to the line is the single entry $\langle\tilde Q\rangle_{\natural*}$, so the line is non-degenerate exactly when that entry is non-zero, and its sign is the sign of the entry. For a non-degenerate line the complement is non-degenerate and the sum is direct, of dimensions $1$ and $4-1=3$. For a vanishing entry every vector of the line is orthogonal to the line, so the line is its own radical.
-
-**Corollary (the sign of the line).** The line $\mathbb{C}\tilde Q$ is positive definite exactly in the positive-regular case and negative definite exactly in the negative-regular case. The value of the norm, its sign and the definiteness of the line are one datum.
-
-## The Regular Case: The Two Signs
+It is the complement of the null set, and it is the union of the two sign regions.
 
 **Theorem (the regular set).** The set $\mathbb{B}^{\natural*}$ is open and dense in $\mathbb{B}$, and its complement is the null set $\mathcal K$. The null set is closed, of empty interior and of real codimension one, and it is the common boundary
 $$
@@ -97,7 +83,42 @@ in contradiction with positivity. A non-zero element that is not a zero divisor 
 
 *Proof.* Closure under scalars and isometries is the homogeneity and the invariance of §*The Krein Norm*. The failure of closure under the product is the first example: $\vec e_x(\vec e_x+i\vec e_y)=\vec e_x^2+i\vec e_x\vec e_y=-e_t+i\vec e_z$, of Krein norm $1-1=0$, while $\langle\vec e_x\rangle_{\natural*}=-1$ and $\langle\vec e_x+i\vec e_y\rangle_{\natural*}=-2$. The second example shows that the Krein-degenerate set is not stable either.
 
-## The Degenerate Case: The Null Set
+### Krein Orthogonality and the Complement
+
+**Definition.** Two elements are **Krein-orthogonal**, written $\tilde Q_1\perp_K\tilde Q_2$, when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$; two subspaces are Krein-orthogonal when every element of one is orthogonal to every element of the other. The **Krein-orthogonal complement** of $\mathbb{W}$ is
+$$
+\mathbb{W}^{\perp_K}=\{\tilde Q:\langle\tilde Q,\tilde W\rangle_{\natural*}=0\ \text{for every}\ \tilde W\in\mathbb{W}\}.
+$$
+
+**Example (a self-orthogonal line).** The line $\mathbb{W}=\mathbb{C}(e_t+\vec e_x)$ is isotropic, $\langle e_t+\vec e_x\rangle_{\natural*}=0$, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$ and $\mathbb{W}+\mathbb{W}^{\perp_K}=\mathbb{W}^{\perp_K}$ has dimension three. The sum is not the algebra, and no direct sum decomposition is obtained from that line alone.
+
+**Theorem (the line criterion).** For $\tilde Q\neq0$ the line $\mathbb{C}\tilde Q$ is non-degenerate for the Krein form exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$. In that case
+$$
+\mathbb{B}=\mathbb{C}\tilde Q\oplus(\mathbb{C}\tilde Q)^{\perp_K},
+\qquad
+\dim_{\mathbb{C}}(\mathbb{C}\tilde Q)^{\perp_K}=3,
+$$
+and the restriction of the form to the line is positive definite when the value is positive and negative definite when it is negative. When the value vanishes the line is totally isotropic and lies in its own complement.
+
+*Proof.* The Gram matrix of the restriction to the line is the single entry $\langle\tilde Q\rangle_{\natural*}$, so the line is non-degenerate exactly when that entry is non-zero, and its sign is the sign of the entry. For a non-degenerate line the complement is non-degenerate and the sum is direct, of dimensions $1$ and $4-1=3$. For a vanishing entry every vector of the line is orthogonal to the line, so the line is its own radical.
+
+**Corollary (the sign of the line).** The line $\mathbb{C}\tilde Q$ is positive definite exactly in the positive-regular case and negative definite exactly in the negative-regular case. The value of the norm, its sign and the definiteness of the line are one datum.
+
+### The Krein Cone
+
+**Definition.** The **Krein cone** is the closure of the positive-regular region,
+$$
+P_K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\ge0\}
+=\{\tilde Q:|Q_t|\ge\lVert\vec Q\rVert_E\}.
+$$
+
+**Theorem (the shape of the cone).** $P_K$ is closed, invariant under multiplication by positive real scalars, and star-shaped with respect to the origin. Its interior is the positive-regular region, its boundary is the null set $\mathcal K$, and it is neither convex nor pointed.
+
+*Proof.* Closedness is the closedness of the inequality. Homogeneity is $\langle\lambda\tilde Q\rangle_{\natural*}=\lambda^2\langle\tilde Q\rangle_{\natural*}$ for real $\lambda>0$, and the straight-line homotopy $\tilde Q\mapsto t\tilde Q$, $t\in[0,1]$, preserves the inequality, so the cone is star-shaped. The interior is the strict inequality and the boundary the equality. The cone is not pointed because it is invariant under $\tilde Q\mapsto-\tilde Q$, so $P_K\cap(-P_K)=P_K$. It is not convex by the example below.
+
+**Example (the cone is not convex).** The elements $e_t+\vec e_y$ and $-e_t+\vec e_y$ both lie in $P_K$, with value $1-1=0$; their midpoint $\vec e_y$ has value $-1$ and lies outside.
+
+## The degeneracy case: the null set
 
 **Definition.** The **null set** is
 $$
@@ -140,6 +161,35 @@ The points of $\mathcal K_{\mathrm d}$ are the zero divisors together with the o
 *Proof.* By the criterion of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, a non-zero element is a zero divisor exactly when its algebraic norm vanishes, that is exactly on $\mathcal K_{\mathrm d}$; the origin is the remaining point of $\mathcal K_{\mathrm d}$. The elements of $\mathcal K_{\mathrm u}$ have non-zero algebraic norm, hence are units. The set $\mathcal K_{\mathrm d}$ is closed in $\mathcal K$, being the trace of the closed algebraic null cone, and it has real dimension $4$ by the preceding corollary; a set of dimension $4$ has empty interior in the cone $\mathcal K$ of dimension $7$, so $\mathcal K_{\mathrm d}$ is nowhere dense in $\mathcal K$ and its complement $\mathcal K_{\mathrm u}$ is open and dense.
 
 **Remark (the null set is not the zero-divisor set).** The element $e_t+\vec e_x$ is null and a unit; the element $\vec e_x+i\vec e_y$ is a zero divisor and not null. The null set has real codimension one and the zero-divisor set real codimension two; their intersection is $\mathcal K_{\mathrm d}$, of real dimension four.
+
+## The Two Partitions
+
+The algebra carries two partitions: the metric partition by the sign of the Krein norm and the algebraic partition by invertibility. The following table records them together; the pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natural})$.
+
+| sign of $\langle\tilde Q\rangle_{\natural*}$ | unit | zero divisor |
+|---|---|---|
+| positive | $e_t$ $(1,1)$ | none |
+| negative | $e_t+2\vec e_x$ $(-3,5)$ | $\vec e_x+i\vec e_y$ $(-2,0)$ |
+| null | $e_t+\vec e_x$ $(0,2)$ | $e_t+i\vec e_x$ $(0,0)$ |
+
+The origin has the pair $(0,0)$ and is neither a unit nor a zero divisor.
+
+**Theorem (the comparison).** The following hold.
+
+1. If $\langle\tilde Q\rangle_{\natural*}>0$ then $\tilde Q$ is a unit.
+2. If $\tilde Q$ is a zero divisor then $\langle\tilde Q\rangle_{\natural*}\leq0$.
+3. The converses fail: negative units, negative zero divisors, null units and null zero divisors all exist.
+4. The positive region is contained in the unit group; the zero-divisor set is contained in the closed set $\{\langle\tilde Q\rangle_{\natural*}\le0\}$. Neither inclusion is an equality.
+
+*Proof.* The first point is §*The regular case: the positive and the negative regions*. The second is the inequality of §*The degeneracy case: the null set*, applied to the algebraic null cone. The examples of the table give the third. For the fourth, $e_t+2\vec e_x$ is a negative unit and $e_t+\vec e_x$ is a null unit, so the unit group is not the positive region; $\vec e_x+i\vec e_y$ is a negative zero divisor, so the zero-divisor set is not the null set.
+
+**Remark (the shape of the two degeneracies).** The algebraic null cone has real codimension two, so the unit group is open and dense. The Krein null set has real codimension one. The zero-divisor set lies in the closed set $\{\langle\tilde Q\rangle_{\natural*}\le0\}$ and meets the null set exactly in the non-zero points of the doubly null Peirce lines; elsewhere it lies in the open negative region. The unit group meets the positive region, the negative region and the null set.
+
+**Theorem (the algebraic norm on the null set).** The restriction of the algebraic norm to the null set is onto $\mathbb{C}$; on the punctured null set it is onto $\mathbb{C}^*$. Hence the algebraic norm is not a function of the Krein norm.
+
+*Proof.* For $\tilde Q=c(e_t+\vec e_x)$ one has $\langle\tilde Q\rangle_{\natural*}=|c|^2(1-1)=0$ and $\langle\tilde Q\rangle_{\natural}=c^2(1+1)=2c^2$. As $c$ ranges over $\mathbb{C}$, or over $\mathbb{C}^*$, the value $2c^2$ ranges over $\mathbb{C}$, or over $\mathbb{C}^*$.
+
+**Remark (the contrast with the quaternionic norm).** For the quaternionic norm the non-zero set is exactly the unit group, and the zero set is the algebraic null cone, whose punctured part is the zero-divisor set. For the Krein norm the non-zero set is a union of two sign regions that is not a group, and the zero set is a real cone of codimension one that meets both the unit group and the zero-divisor set. The independence is two-way: $e_t$ and $\vec e_x$ have the same algebraic norm $1$ and Krein norms $1$ and $-1$, while the null set carries every algebraic norm. The Krein norm measures a metric position; the quaternionic norm measures invertibility.
 
 ## Why There Is No Spectral Split
 
@@ -217,60 +267,9 @@ The plane would therefore produce four articles that are each a mixture of algeb
 
 ### What Does Refine It
 
-There is a second plane, and it is the one the corpus uses: the Krein value against the **algebraic** value $\langle\tilde Q\rangle_{\natural}$, not the discriminant.
-
-| | $\langle\tilde Q\rangle_{\natural}\neq0$, unit | $\langle\tilde Q\rangle_{\natural}=0$ |
-|---|---|---|
-| $\langle\tilde Q\rangle_{\natural*}>0$ | positive region | empty |
-| $\langle\tilde Q\rangle_{\natural*}<0$ | negative units | negative zero divisors, $\mathcal Z\setminus\mathcal K_{\mathrm d}$ |
-| $\langle\tilde Q\rangle_{\natural*}=0$ | isotropic units $\mathcal K_{\mathrm u}$ | doubly null set $\mathcal K_{\mathrm d}$: the Peirce lines and the origin |
-
-The empty cell is the theorem that a positive element is a unit. Every other cell is non-empty, and each is an invariant set: the Krein value is preserved by $\mathrm{U}(1,3)$ and the algebraic value by the algebra automorphisms, so each cell is carved by a genuine invariant of one of the two structures. The refinement is the trace of the algebraic partition on the three Krein strata, and it is the one that decides the operator theory — the polar decomposition and the sandwich follow $\langle\cdot\rangle_{\natural}$, while the adjoint and the isometries follow $\langle\cdot\rangle_{\natural*}$.
+There is a second plane, and it is the one the corpus uses: the Krein value against the **algebraic** value $\langle\tilde Q\rangle_{\natural}$, not the discriminant. Its cells are those of the table of §*The Two Partitions*: the positive cell of the zero-divisor column is empty, by the theorem that a positive element is a unit, and every other cell is non-empty. Each cell is an invariant set: the Krein value is preserved by $\mathrm{U}(1,3)$ and the algebraic value by the algebra automorphisms, so each cell is carved by a genuine invariant of one of the two structures. The refinement is the trace of the algebraic partition on the three Krein strata, and it is the one that decides the operator theory — the polar decomposition and the sandwich follow $\langle\cdot\rangle_{\natural}$, while the adjoint and the isometries follow $\langle\cdot\rangle_{\natural*}$.
 
 The two articles that follow this partition are *The Krein Norm-Regular Sector*, for the first two rows, and *The Krein Norm-Degenerate Sector*, for the last. The spectral condition appears in both only as a remark on the operator theory, never as a subdivision.
-
-## The Krein Cone
-
-**Definition.** The **Krein cone** is the closure of the positive-regular region,
-$$
-P_K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\ge0\}
-=\{\tilde Q:|Q_t|\ge\lVert\vec Q\rVert_E\}.
-$$
-
-**Theorem (the shape of the cone).** $P_K$ is closed, invariant under multiplication by positive real scalars, and star-shaped with respect to the origin. Its interior is the positive-regular region, its boundary is the null set $\mathcal K$, and it is neither convex nor pointed.
-
-*Proof.* Closedness is the closedness of the inequality. Homogeneity is $\langle\lambda\tilde Q\rangle_{\natural*}=\lambda^2\langle\tilde Q\rangle_{\natural*}$ for real $\lambda>0$, and the straight-line homotopy $\tilde Q\mapsto t\tilde Q$, $t\in[0,1]$, preserves the inequality, so the cone is star-shaped. The interior is the strict inequality and the boundary the equality. The cone is not pointed because it is invariant under $\tilde Q\mapsto-\tilde Q$, so $P_K\cap(-P_K)=P_K$. It is not convex by the example below.
-
-**Example (the cone is not convex).** The elements $e_t+\vec e_y$ and $-e_t+\vec e_y$ both lie in $P_K$, with value $1-1=0$; their midpoint $\vec e_y$ has value $-1$ and lies outside.
-
-## The Two Partitions
-
-The algebra carries two partitions: the metric partition by the sign of the Krein norm and the algebraic partition by invertibility. The following table records them together; the pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natural})$.
-
-| sign of $\langle\tilde Q\rangle_{\natural*}$ | unit | zero divisor |
-|---|---|---|
-| positive | $e_t$ $(1,1)$ | none |
-| negative | $e_t+2\vec e_x$ $(-3,5)$ | $\vec e_x+i\vec e_y$ $(-2,0)$ |
-| null | $e_t+\vec e_x$ $(0,2)$ | $e_t+i\vec e_x$ $(0,0)$ |
-
-The origin has the pair $(0,0)$ and is neither a unit nor a zero divisor.
-
-**Theorem (the comparison).** The following hold.
-
-1. If $\langle\tilde Q\rangle_{\natural*}>0$ then $\tilde Q$ is a unit.
-2. If $\tilde Q$ is a zero divisor then $\langle\tilde Q\rangle_{\natural*}\leq0$.
-3. The converses fail: negative units, negative zero divisors, null units and null zero divisors all exist.
-4. The positive region is contained in the unit group; the zero-divisor set is contained in the closed set $\{\langle\tilde Q\rangle_{\natural*}\le0\}$. Neither inclusion is an equality.
-
-*Proof.* The first point is §*The Regular Case: The Two Signs*. The second is the inequality of §*The Degenerate Case: The Null Set*, applied to the algebraic null cone. The examples of the table give the third. For the fourth, $e_t+2\vec e_x$ is a negative unit and $e_t+\vec e_x$ is a null unit, so the unit group is not the positive region; $\vec e_x+i\vec e_y$ is a negative zero divisor, so the zero-divisor set is not the null set.
-
-**Remark (the shape of the two degeneracies).** The algebraic null cone has real codimension two, so the unit group is open and dense. The Krein null set has real codimension one. The zero-divisor set lies in the closed set $\{\langle\tilde Q\rangle_{\natural*}\le0\}$ and meets the null set exactly in the non-zero points of the doubly null Peirce lines; elsewhere it lies in the open negative region. The unit group meets the positive region, the negative region and the null set.
-
-**Theorem (the algebraic norm on the null set).** The restriction of the algebraic norm to the null set is onto $\mathbb{C}$; on the punctured null set it is onto $\mathbb{C}^*$. Hence the algebraic norm is not a function of the Krein norm.
-
-*Proof.* For $\tilde Q=c(e_t+\vec e_x)$ one has $\langle\tilde Q\rangle_{\natural*}=|c|^2(1-1)=0$ and $\langle\tilde Q\rangle_{\natural}=c^2(1+1)=2c^2$. As $c$ ranges over $\mathbb{C}$, or over $\mathbb{C}^*$, the value $2c^2$ ranges over $\mathbb{C}$, or over $\mathbb{C}^*$.
-
-**Remark (the contrast with the quaternionic norm).** For the quaternionic norm the non-zero set is exactly the unit group, and the zero set is the algebraic null cone, whose punctured part is the zero-divisor set. For the Krein norm the non-zero set is a union of two sign regions that is not a group, and the zero set is a real cone of codimension one that meets both the unit group and the zero-divisor set. The independence is two-way: $e_t$ and $\vec e_x$ have the same algebraic norm $1$ and Krein norms $1$ and $-1$, while the null set carries every algebraic norm. The Krein norm measures a metric position; the quaternionic norm measures invertibility.
 
 ## The Two Cases on the Remarkable Subspaces
 

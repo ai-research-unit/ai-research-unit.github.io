@@ -155,7 +155,7 @@ $$
 
 and they all lie in the negative region.
 
-*Proof.* By *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Null Set*, an algebraic-null element has non-positive Krein norm, with equality exactly on the doubly null Peirce lines. So a zero divisor has negative or zero Krein norm; it is in the regular sector exactly when the value is negative, and then it is not doubly null. Conversely a zero divisor that is not doubly null has negative value and lies in the sector.
+*Proof.* By *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the null set*, an algebraic-null element has non-positive Krein norm, with equality exactly on the doubly null Peirce lines. So a zero divisor has negative or zero Krein norm; it is in the regular sector exactly when the value is negative, and then it is not doubly null. Conversely a zero divisor that is not doubly null has negative value and lies in the sector.
 
 **The sector against the algebraic partition.**
 

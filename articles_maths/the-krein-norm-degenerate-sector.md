@@ -226,7 +226,7 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 
 **Corollary (the sector straddles the algebraic partition).** The null set is neither contained in the unit group nor in the zero-divisor set: it meets both, and its two strata are exactly the two intersections. The Krein norm alone cannot see the difference, since it vanishes on both; the algebraic norm is the invariant that separates them.
 
-**Remark (the equality case).** The doubly null set is the equality case of the inequality of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Null Set*: an algebraic-null element has non-positive Krein norm, and it is Krein-null exactly on the Peirce lines, together with the origin. So the closed negative half-space $\{\langle\cdot\rangle_{\natural*}\le0\}$ contains the whole zero-divisor set, and the doubly null set is where the two cones touch.
+**Remark (the equality case).** The doubly null set is the equality case of the inequality of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the null set*: an algebraic-null element has non-positive Krein norm, and it is Krein-null exactly on the Peirce lines, together with the origin. So the closed negative half-space $\{\langle\cdot\rangle_{\natural*}\le0\}$ contains the whole zero-divisor set, and the doubly null set is where the two cones touch.
 
 ## Comparison with the Regular Sector
 
