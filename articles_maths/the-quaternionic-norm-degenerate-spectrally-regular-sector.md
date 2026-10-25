@@ -1,4 +1,4 @@
-# __The Quaternionic Norm-Degenerate, Spectrally Regular Sector__
+# __The N-Degenerate, Spectrally Regular Sector__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 \Sigma_{01}=\mathcal{N}\setminus\mathcal S,
 $$
 
-and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector*.
+and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal{N}=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally regular** means $B^2\neq0$.
 
@@ -107,7 +107,7 @@ The decomposition is a two-term writing with one coefficient zero, not a one-ter
 $$
 \tilde Q=c\,e_++0\cdot e_-,\qquad e_+=\tilde\Pi,\quad e_-=\tilde\Pi'.
 $$
-The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique, and an eigenbasis exists, since $B^2\neq0$; the construction is in *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*.
+The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique, and an eigenbasis exists, since $B^2\neq0$; the construction is in *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*.
 
 **Powers.** For $n\geq1$, $\tilde Q^n=c^n e_+$, and the polynomial calculus reads $f(\tilde Q)=f(c)e_++f(0)e_-=f(c)\tilde\Pi+f(0)\tilde\Pi'$. There is no inverse, since $N=0$; the image of the eigenvalue map on the sector is the set of pairs $(c,0)$ with $c\neq0$, so it is not surjective onto $\mathbb{C}^\times\times\mathbb{C}^\times$.
 
@@ -176,7 +176,7 @@ $$
 
 The zero coefficient is the only trace of the norm degeneracy in the Peirce data. The idempotent $e_-$ is present and non-trivial, and the decomposition is genuinely two-term: the vanishing coefficient is a value, not a missing idempotent. Both mixed corners are non-zero, so both nilpotents exist.
 
-**The eigenbasis.** Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction is that of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. In that basis the diagonal values are $(c,0)$ in one order or the other. The zero eigenvalue is carried by one diagonal entry and by one only.
+**The eigenbasis.** Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction is that of *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. In that basis the diagonal values are $(c,0)$ in one order or the other. The zero eigenvalue is carried by one diagonal entry and by one only.
 
 ## Multiplication
 
@@ -284,6 +284,60 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 
 **The "clean degenerate" cell.** It is the cell in which invertibility fails and nothing else does: the eigenvalues are separated, the Peirce decomposition relative to $\tilde Q$ exists and is unique, the annihilators are the two Peirce planes, and the only pathology is the zero eigenvalue, which is exactly the norm condition.
 
+## The Generators, the Eigenvalues, and the Element
+
+**The two idempotents and the root.**
+
+$$
+\boxed{\ e_+=\tilde\Pi=\frac{\tilde Q}{2Q_t}=\frac12 e_t+\frac{Q_x}{2Q_t}\vec e_x+\frac{Q_y}{2Q_t}\vec e_y+\frac{Q_z}{2Q_t}\vec e_z\ }
+$$
+
+$$
+\boxed{\ e_-=\tilde\Pi'=e_t-\frac{\tilde Q}{2Q_t}=\frac12 e_t-\frac{Q_x}{2Q_t}\vec e_x-\frac{Q_y}{2Q_t}\vec e_y-\frac{Q_z}{2Q_t}\vec e_z\ }
+$$
+
+$$
+\boxed{\ \vec\Xi=2\tilde\Pi-e_t=\frac{\vec Q}{Q_t}=\frac{Q_x}{Q_t}\vec e_x+\frac{Q_y}{Q_t}\vec e_y+\frac{Q_z}{Q_t}\vec e_z,\qquad \vec\Xi^2=e_t\ }
+$$
+
+**The two nilpotents.** They are the closed form of the doubly regular sector $\Sigma_{11}$ read with $B=-iQ_t$, the choice that puts $\lambda_+=2Q_t$. With $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$,
+
+$$
+\boxed{\ \vec\Upsilon_+=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q+\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},\qquad B=-iQ_t\ }
+$$
+
+$$
+\boxed{\ \vec\Upsilon_-=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q-\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},\qquad B=-iQ_t\ }
+$$
+
+with the normalisation $\vec\Upsilon_+\vec\Upsilon_-=e_-$ and $\vec\Upsilon_-\vec\Upsilon_+=e_+$ for one fixed square root; on the exceptional cone the axis charts replace the symmetric formula.
+
+**The two eigenvalues.**
+
+$$
+\boxed{\ \lambda_+=2Q_t\ }
+$$
+
+$$
+\boxed{\ \lambda_-=0\ }
+$$
+
+**The element.** In the eigenbasis $(e_+,\vec\Upsilon_-,\vec\Upsilon_+,e_-)$,
+
+$$
+\boxed{\ \tilde Q=2Q_t\,e_++0\cdot\vec\Upsilon_-+0\cdot\vec\Upsilon_++0\cdot e_-\ }
+$$
+
+$$
+\boxed{\ \tilde Q=2Q_t\,e_++0\cdot e_-=2Q_t\,\tilde\Pi\ }
+$$
+
+In this basis $L_{\tilde Q}$ has the values $(2Q_t,2Q_t,0,0)$ and $R_{\tilde Q}$ the values $(2Q_t,0,2Q_t,0)$. In the fixed basis,
+
+$$
+\boxed{\ \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_t\neq0,\quad B^2=-Q_t^2\ }
+$$
+
 ## Summary
 
 | question | answer |
@@ -311,8 +365,8 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathcal{N}_{\mathrm{np}}=\Sigma_{01}$ | the non-pure stratum of the null cone |
 | $\tilde\Pi,\tilde\Pi'=e_t-\tilde\Pi$ | a non-trivial idempotent and its complement |
-| $\tilde\Xi=2\tilde\Pi-e_t$ | the root of $+1$ attached to the idempotent, $\tilde\Xi^2=e_t$ |
-| $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$ | the standard pair of a root |
+| $\vec\Xi=2\tilde\Pi-e_t$ | the pure root of $+1$ attached to the idempotent, $\vec\Xi^2=e_t$ |
+| $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the standard pair of a root |
 | $E_{12}=(\vec e_x+i\vec e_y)/2$ | the nilpotent of the mixed corner $\mathbb{B}_{+-}$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, with $L_{\tilde Q}^2=2Q_tL_{\tilde Q}$ |
 | $A(\tilde Q)=\ker L_{\tilde Q}$ | the left annihilator, a right ideal |
@@ -320,7 +374,7 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 
 ## Further Reading
 
-- [The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for the opposite corner $\Sigma_{00}$, the nilpotents and the origin.
+- [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for the opposite corner $\Sigma_{00}$, the nilpotents and the origin.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its two strata.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.

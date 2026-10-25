@@ -1,4 +1,4 @@
-# __The Quaternionic Norm-Regular, Spectrally Regular Sector__
+# __The N-Regular, Spectrally Regular Sector__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 \Sigma_{11}=\mathbb{B}\setminus(\mathcal N\cup\mathcal S),
 $$
 
-and it is the **generic** sector: the open dense cell in which both problems of the arrangement receive the positive answer. The other three cells are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate cell $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The Quaternionic Norm-Regular, Spectrally Degenerate Sector*, *The Quaternionic Norm-Degenerate, Spectrally Regular Sector* and *The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
+and it is the **generic** sector: the open dense cell in which both problems of the arrangement receive the positive answer. The other three cells are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate cell $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **regular** means non-zero: $N\neq0$ for the norm, $B^2\neq0$ for the spectrum.
 
@@ -321,7 +321,7 @@ $$
 $$
 A general transverse unit is $\vec V=\lambda\vec e_x+\mu\vec e_y$ with $\lambda^2+\mu^2=1$; the factor $\lambda-i\mu$ cancels in the normalised pair, so the same products hold. The factor $i$ on both generators restores the plus signs. This is the transverse-vector construction with $\vec X=\vec V$ and $\sqrt{\vec V_\perp^2}=i$.
 
-**The symmetric closed form.** The vector $\vec w=\vec e_x+\vec e_y+\vec e_z$ is the only nonzero vector fixed by every permutation of the axes. Put $\sigma=\vec w\cdot\vec Q=Q_x+Q_y+Q_z$. Then
+**The symmetric closed form.** The vector $\vec w=\vec e_x+\vec e_y+\vec e_z$ is the only nonzero vector fixed by every permutation of the axes. Put $\Sigma=\vec w\cdot\vec Q=Q_x+Q_y+Q_z$. Then
 $$
 \vec w_\perp=\vec w-\frac{\Sigma}{B^2}\vec Q,\qquad
 \vec w_\perp^2=\vec w^2+\frac{\Sigma^2}{B^2}=-3+\frac{\Sigma^2}{B^2}=\frac{\Sigma^2-3B^2}{B^2}.
@@ -974,6 +974,60 @@ Both eigenvalues are non-zero and distinct, both idempotents are non-trivial, an
 
 **The generic case.** Every statement proved for a generic element of $\mathbb{B}$ — invertible, semisimple, with distinct eigenvalues, unique eigenprojectors and a finite polar word — holds on $\Sigma_{11}$ and fails somewhere on its complement. The sector has full measure, and its complement is the arrangement of the two cones.
 
+## The Generators, the Eigenvalues, and the Element
+
+**The root and the two idempotents.**
+
+$$
+\boxed{\ \vec\Xi=-\frac{i}{B}\vec Q=-\frac{iQ_x}{B}\vec e_x-\frac{iQ_y}{B}\vec e_y-\frac{iQ_z}{B}\vec e_z,\qquad \vec\Xi^2=e_t\ }
+$$
+
+$$
+\boxed{\ \tilde\Pi_+=\frac12\left(e_t-\frac{i}{B}\vec Q\right)=\frac12 e_t-\frac{iQ_x}{2B}\vec e_x-\frac{iQ_y}{2B}\vec e_y-\frac{iQ_z}{2B}\vec e_z\ }
+$$
+
+$$
+\boxed{\ \tilde\Pi_-=\frac12\left(e_t+\frac{i}{B}\vec Q\right)=\frac12 e_t+\frac{iQ_x}{2B}\vec e_x+\frac{iQ_y}{2B}\vec e_y+\frac{iQ_z}{2B}\vec e_z\ }
+$$
+
+**The two nilpotents.** Put $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$. Away from the exceptional cone $\Sigma^2=3B^2$, they are
+
+$$
+\boxed{\ \vec\Upsilon_+=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q+\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
+$$
+
+$$
+\boxed{\ \vec\Upsilon_-=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q-\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
+$$
+
+with the normalisation $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ for one fixed square root; on the exceptional cone the axis charts replace the symmetric formula.
+
+**The two eigenvalues.**
+
+$$
+\boxed{\ \lambda_+=Q_t+iB\ }
+$$
+
+$$
+\boxed{\ \lambda_-=Q_t-iB\ }
+$$
+
+with $\lambda_++\lambda_-=2Q_t$ and $\lambda_+\lambda_-=N(\tilde Q)$.
+
+**The element.** In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$,
+
+$$
+\boxed{\ \tilde Q=\lambda_+\tilde\Pi_++0\cdot\vec\Upsilon_-+0\cdot\vec\Upsilon_++\lambda_-\tilde\Pi_-\ }
+$$
+
+$$
+\boxed{\ \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+=\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec\Xi
+=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\ }
+$$
+
+with $\vec\Xi=-i\vec Q/B$. The eigenvalues weight the operator, not the element: in this basis $L_{\tilde Q}$ has the diagonal values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, and $R_{\tilde Q}$ the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$. The sum weighted by them, $\lambda_+\tilde\Pi_++\lambda_+\vec\Upsilon_-+\lambda_-\vec\Upsilon_++\lambda_-\tilde\Pi_-$, is not $\tilde Q$.
+
 ## Summary
 
 | question | answer |
@@ -1008,9 +1062,9 @@ The sector is the generic sector. It is the set of units with distinct non-zero 
 
 ## Further Reading
 
-- [The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
-- [The Quaternionic Norm-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents.
-- [The Quaternionic Norm-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the unipotents and the scalar line.
+- [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
+- [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents.
+- [The N-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the unipotents and the scalar line.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the unit group.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.

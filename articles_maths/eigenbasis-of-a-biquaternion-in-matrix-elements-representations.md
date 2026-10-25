@@ -6,7 +6,7 @@ The eigenbasis of a biquaternion $\tilde Q=Q_te_t+\vec Q$ is the basis
 $$
 \tilde\Pi_+,\qquad \vec\Upsilon_-,\qquad \vec\Upsilon_+,\qquad \tilde\Pi_-
 $$
-of the Peirce decomposition of its eigenprojections, in which multiplication by $\tilde Q$ is diagonal with eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$. The basis itself and the construction of the nilpotents $\vec\Upsilon_\pm$ from the two mixed Peirce corners are the subject of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents* and §*The Eigenbasis*; the eigenvalue decomposition is that of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*. This article reads the same objects in the two matrix element representations of the algebra.
+of the Peirce decomposition of its eigenprojections, in which multiplication by $\tilde Q$ is diagonal with eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$. The basis itself and the construction of the nilpotents $\vec\Upsilon_\pm$ from the two mixed Peirce corners are the subject of *The N-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents* and §*The Eigenbasis*; the eigenvalue decomposition is that of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*. This article reads the same objects in the two matrix element representations of the algebra.
 
 The first is the **$2\times2$ matrix element representation** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, the fixed isomorphism of *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Every biquaternion becomes a $2\times2$ complex matrix, the two minimal left ideals become the two columns, and the eigenbasis becomes a basis of matrix units. The second is the **$4\times4$ left regular representation** $\mathsf{M}_4^{L}:\mathbb{B}\to M_4(\mathbb{C})$ of *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, with its right companion $\mathsf{M}_4^{R}$. The $4\times4$ matrices carry the multiplication on the four-vector space; in the eigenbasis order they are Kronecker products of the $2\times2$ matrix with an identity.
 
@@ -26,7 +26,7 @@ The article is organised around three questions. **Which matrices are the eigenp
 
 **Conventions.** The base and the elements are those of *Conventions in Mathematics*: $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $B=\sqrt{Q_x^2+Q_y^2+Q_z^2}$, $\vec\Xi=-i\vec Q/B$, $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\lambda_\pm=Q_t\pm iB$. A general element distinct from $\tilde Q$ is written $\tilde Q_{\mathrm{sp}}$ or $\tilde Q_3$. The fixed $2\times2$ model is $\mathsf{M}_2$; the eigenbasis model is $\mathsf{M}_2^{Q}$; the regular matrices are $\mathsf{M}_4^{L}$ and $\mathsf{M}_4^{R}$, with the shorter $\mathsf{M}_4=\mathsf{M}_4^{L}$. The two matrix assignments are those of the two introduction articles cited above and are not redefined here.
 
-**Boundaries.** The eigenvalue decomposition is *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the Peirce decomposition and the construction of the nilpotents are *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. The $2\times2$ assignment, its invertibility and its invariants are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the $4\times4$ assignment, its multiplicativity and its remarkable subspaces are *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The matrix algebra is *Matrix Algebras*, the spectral projections of a general matrix are *The Eigenvalue Decomposition of a Matrix*, and the change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*.
+**Boundaries.** The eigenvalue decomposition is *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the Peirce decomposition and the construction of the nilpotents are *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. The $2\times2$ assignment, its invertibility and its invariants are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the $4\times4$ assignment, its multiplicativity and its remarkable subspaces are *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The matrix algebra is *Matrix Algebras*, the spectral projections of a general matrix are *The Eigenvalue Decomposition of a Matrix*, and the change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*.
 
 ## The $2\times2$ Matrix Element Representation
 
@@ -119,7 +119,7 @@ $$
 $$
 Each has rank one; its image is the line of the corresponding eigenvector. The columns of $\rho_+$ are eigenvectors of eigenvalue $\lambda_+$, and the columns of $\rho_-$ eigenvectors of eigenvalue $\lambda_-$. Every nonzero column is one, and the two columns of one projector are proportional.
 
-**The nilpotents in the model.** The symmetric closed form of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents*, is, with $\Sigma=Q_x+Q_y+Q_z$,
+**The nilpotents in the model.** The symmetric closed form of *The N-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents*, is, with $\Sigma=Q_x+Q_y+Q_z$,
 $$
 \vec\Upsilon_\pm=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},
 \qquad \vec w=\vec e_x+\vec e_y+\vec e_z,
@@ -162,7 +162,7 @@ The four basis elements of the eigenbasis therefore have the following matrices 
 | $\vec\Upsilon_+$ | $\dfrac{N_+}{2\sqrt{\Sigma^2-3B^2}}$ | $1$ | $0$ |
 | $\tilde\Pi_-$ | $\dfrac{1}{2B}\begin{pmatrix}B+Q_z&Q_x-iQ_y\\Q_x+iQ_y&B-Q_z\end{pmatrix}$ | $1$ | itself |
 
-On the cone $\Sigma^2=3B^2$ the symmetric formula is singular; there the chart of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents*, applies, and the matrices are its $\mathsf{M}_2$.
+On the cone $\Sigma^2=3B^2$ the symmetric formula is singular; there the chart of *The N-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents*, applies, and the matrices are its $\mathsf{M}_2$.
 
 **The standard case.** For $\vec Q=Q_z\vec e_z$ the matrix is diagonal, $\mathsf{M}_2(\tilde Q)=\operatorname{diag}(Q_t-iQ_z,Q_t+iQ_z)$, and the projectors are $\begin{pmatrix}1&0\\0&0\end{pmatrix}$ and $\begin{pmatrix}0&0\\0&1\end{pmatrix}$. The general formula reduces to them when the sign of $B$ is chosen so that $B=-Q_z$; the other sign exchanges the two labels. This is the sign freedom of the root, read in the model.
 

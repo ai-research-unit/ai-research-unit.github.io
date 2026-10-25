@@ -561,7 +561,7 @@ each lying in $B_1\subset\mathbb{H}_{\mathbb{B}}$. The subspace has an imaginary
 On the anti-quaternion subspace the four forms are
 
 $$
-B(\tilde Q_1,\tilde Q_2)=-h_tk_t+\sum_{j=1}^{3}h_jk_j,\qquad
+P(\tilde Q_1,\tilde Q_2)=-h_tk_t+\sum_{j=1}^{3}h_jk_j,\qquad
 H(\tilde Q_1,\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}h_\mu k_\mu,
 $$
 $$

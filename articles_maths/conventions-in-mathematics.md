@@ -389,20 +389,24 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}) , \qquad \langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*} .
 $$
 
+**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde Q_1,\tilde Q_2)$ is the plain form and $P(\tilde Q)$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $B(\tilde Q)$ is the right annihilator of the plain product. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
+
 **The bracket carries the mark that is not the identity in the layer**, and the four brackets collapse two-and-two wherever one mark degenerates. The cases are worked layer by layer in §*The Six Layer Tables*, below.
 
 The distinction is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The two definitions — the form of an operation as its scalar part read in two arguments, bilinear or sesquilinear by its second slot, and the algebraic norm as that form at its two equal arguments — and the four brackets, $\langle\cdot,\cdot\rangle$ the plain, $\langle\cdot,\cdot\rangle_{*}$ the Hermitian, $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic and $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein, are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 **The four names stand on the four norms, and the form is the norm read in two slots.** One name runs over the three levels of the product, the form and the norm: the **plain** bracket is the scalar part of the plain bilinear product, the **quaternionic** bracket that of the quaternionic bilinear product, the **Hermitian** bracket that of the plain sesquilinear product, and the **Krein** bracket that of the quaternionic sesquilinear product. Read on one argument the four are the **plain norm**, the **Hermitian norm**, the **quaternionic norm** and the **Krein norm**. The four products, their forms and their norms go together, one to a row:
 
-| Product | Form | Norm |
-|---|---|---|
-| the general plain bilinear | $\langle\tilde Q_1,\tilde Q_2\rangle$ | the plain norm $\langle\tilde Q\rangle$ |
-| the general quaternionic bilinear | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the quaternionic norm $\langle\tilde Q\rangle_{\natural}$ |
-| the general plain sesquilinear | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | the Hermitian norm $\langle\tilde Q\rangle_{*}$ |
-| the general quaternionic sesquilinear | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | the Krein norm $\langle\tilde Q\rangle_{\natural*}$ |
+| Product | Form | Letter | Norm |
+|---|---|---|---|
+| the general plain bilinear | $\langle\tilde Q_1,\tilde Q_2\rangle$ | $P$ | the plain norm $\langle\tilde Q\rangle$ |
+| the general quaternionic bilinear | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | $N$ | the quaternionic norm $\langle\tilde Q\rangle_{\natural}$ |
+| the general plain sesquilinear | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | $H$ | the Hermitian norm $\langle\tilde Q\rangle_{*}$ |
+| the general quaternionic sesquilinear | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | $K$ | the Krein norm $\langle\tilde Q\rangle_{\natural*}$ |
 
 **The names are read in the layer where the map they mark exists.** In $\mathbb{B}_{\mathrm{r}}$ the **quaternionic** name becomes the **tessarine** and the **Krein** name the **tessarine-Hermitian**, their brackets carrying ${}_{\mathrm{ts}}$ and ${}_{\mathrm{ts}*}$; the plain and the Hermitian keep their names.
+
+**The qualified regular and the qualified degenerate.** In $\mathbb{B}$, for a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, so the letter is never omitted.
 
 ### The Six Layer Tables
 
@@ -428,7 +432,15 @@ In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The pla
 
 The two brackets exchange their signatures with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the units and is not a norm. Over the dual numbers $\mathbb{D}'$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
 
-**The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{D}'$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{D}$; the modulus is written only through the algebraic norm.
+**The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{D}'$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{D}$; the modulus is defined through the algebraic norm.
+
+**Bars around a complex element are the ordinary complex modulus.** For $Q=q+iq'$,
+
+$$
+\lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'^2},
+$$
+
+a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_\mu\rvert=\sqrt{q_\mu^2+q'_\mu^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
 
 **The reduced biquaternions $\mathbb{B}_{\mathrm{r}}$**, $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the marks are the bar and the tessarine sign ${}_{\mathrm{ts}}$, and ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
 
@@ -476,12 +488,12 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 
 A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$. A unit element is an element of norm one, and the norm is the one in view: the glyph is the generic norm read at the central value $e_t$, so it names no set until the norm is named, and the four norms of the biquaternion layer give four level sets:
 
-| Norm | the condition $\mathrm{Norm}(\tilde U)=e_t$ | the norm-one elements |
-|---|---|---|
-| $\langle\tilde Q\rangle$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2=e_t$ | the complex hyperboloid of the plain norm |
-| $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=e_t$ | $\mathbb{B}^{\times}_1$, the norm-one units |
-| $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2=1$ | the unit sphere of the Hermitian norm |
-| $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2=1$ | the indefinite level set of the Krein norm |
+| Letter | Norm | the condition $\mathrm{Norm}(\tilde U)=e_t$ | the norm-one elements |
+|---|---|---|---|
+| $P$ | $\langle\tilde Q\rangle$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2=e_t$ | the complex hyperboloid of the plain norm |
+| $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=e_t$ | $\mathbb{B}^{\times}_1$, the norm-one units |
+| $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2=1$ | the unit sphere of the Hermitian norm |
+| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2=1$ | the indefinite level set of the Krein norm |
 
 The two bilinear norms are complex-valued, so their condition is $=e_t$; the two sesquilinear norms are real-valued, so theirs is $=1$. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
 
@@ -974,6 +986,8 @@ The conventions below are those used throughout the corpus.
 | $T(V), S(V), \Lambda(V), Cl(V,\mathfrak{Q})$ | Tensor, symmetric, exterior and Clifford algebras |
 | $V^{\otimes n}, S^n V, \Lambda^n V$ | Tensor, symmetric and exterior powers |
 | $\langle v,w\rangle, \mathfrak{Q}(v), \lVert x\rVert$ | Bilinear form, quadratic form, norm |
+| $P$, $N$, $H$, $K$ | The letters of the four forms and algebraic norms of the biquaternion layer — plain, quaternionic, Hermitian and Krein — each naming the form with two arguments and the norm with one; $P$ and not $B$, which is the complex modulus of the vector part and the right annihilator (§*The Form Convention, the Norm Convention and the Unitary Convention*) |
+| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,K\}$; only the $N$ pair is the partition into units and non-units, and *regular* unqualified is spectral, $B^{2}\neq0$ (§*Regular and Degenerate Biquaternions*) |
 | $\mathfrak{Q}$ | The quadratic form of a quadratic space, in Fraktur so that the plain $q$ and $Q$ stay with the elements |
 | $\mathcal{Q}$ | The Lie or null quadric, in calligraphic, as in $\mathcal{Q}^{n+1}$ |
 | $\bullet$ | The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four **symmetric products** of §*The Twelve Products and Their Names*; the circle $\circ$ is reserved for the composition of maps |

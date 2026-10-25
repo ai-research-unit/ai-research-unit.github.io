@@ -61,7 +61,7 @@ Each of the four indefinite rows carries a **real null cone**, of real dimension
 | Hermitian $\mathbb{M}_+$ | $q_t^{2}=(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ | $3$ |
 | Anti-Hermitian $\mathbb{M}_-$ | $(q'_t)^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ | $3$ |
 
-**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The Krein Norm-Degenerate Sector*, §*The Witt Index*.
+**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The K-Degenerate Sector*, §*The Witt Index*.
 
 ## The Coincidences with the Other Three Forms
 
@@ -103,7 +103,7 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **A negative vector element.** For $\tilde Q=\vec e_x$ the value is $\varepsilon_x|1|^{2}=-1$, and for $\tilde Q=\vec e_x+i\vec e_x$ it is $-1-1=-2$; the vector subspace is negative definite, and it realises the negative index $6$ of the form.
 
-**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The Krein Norm-Degenerate Sector*, §*The Doubly Null Stratum*.
+**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The K-Degenerate Sector*, §*The Doubly Null Stratum*.
 
 **The null element of the anti-quaternion row.** For $\tilde Q=ie_t+i\vec e_x$ the value is $1-1=0$, on the cone $(q'_t)^{2}=\sum_k(q'_k)^{2}$ of the anti-quaternion subspace; the sign of the scalar coefficient is the one the row prescribes.
 
@@ -134,7 +134,7 @@ On the remarkable real subspaces the general quaternionic sesquilinear form carr
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its coefficient Gram matrix and its inertia.
-- [The Krein Norm-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null lines and the Witt index.
+- [The K-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null lines and the Witt index.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces and their bases
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the definite companion reading of the same six
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the norm reading of the same six

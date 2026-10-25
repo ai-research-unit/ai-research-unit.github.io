@@ -1,4 +1,4 @@
-# __The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector__
+# __The N-Degenerate, Spectrally Degenerate Sector__
 
 ## Introduction
 
@@ -230,6 +230,56 @@ The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that t
 
 **The "everything fails" cell.** It is the cell in which invertibility, the Peirce decomposition relative to $\tilde Q$ (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.
 
+## The Generators, the Eigenvalues, and the Element
+
+For $\tilde Q\neq0$ the nilpotent generator is the element itself,
+
+$$
+\boxed{\ \vec\Upsilon=\tilde Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \vec\Upsilon^2=0\ }
+$$
+
+Choose an idempotent $e$ with $\tilde Q=e\tilde Q(e_t-e)$, put $f=e_t-e$, and let $\vec X$ span $f\mathbb{B}e$. The four Peirce generators of the pair $(e,f)$ are $e,\vec\Upsilon,\vec X,f$, and the Peirce form is
+
+$$
+\boxed{\ e\tilde Qe=0,\qquad e\tilde Qf=\tilde Q,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0\ }
+$$
+
+The eigenvalue is zero, with multiplicity two:
+
+$$
+\boxed{\ \lambda=0\ \text{with multiplicity }2,\qquad N(\tilde Q)=B^2(\tilde Q)=0\ }
+$$
+
+On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $0$, of multiplicity four. There is no eigenbasis off the origin. In the Peirce basis $(e,\vec\Upsilon,\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
+
+$$
+\boxed{\ \tilde Q=0\cdot e+1\cdot\vec\Upsilon+0\cdot\vec X+0\cdot f\ }
+$$
+
+The only eigenvalue is $0$; the coefficient $1$ of the nilpotent is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\tilde Q$ itself is the nilpotent generator. At the origin $\tilde Q=0$, and the nilpotent generator vanishes.
+
+**The standard nilpotent.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a gauge, and the Peirce form above is the invariant statement. For
+
+$$
+\boxed{\ \tilde Q=\vec\Upsilon=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
+$$
+
+one choice of gauge is
+
+$$
+\boxed{\ e=\frac12(e_t+i\vec e_z)\ }
+$$
+
+$$
+\boxed{\ f=\frac12(e_t-i\vec e_z)\ }
+$$
+
+$$
+\boxed{\ \vec X=\frac12(\vec e_x-i\vec e_y),\qquad \vec X\in f\mathbb{B}e,\quad \vec X^2=0\ }
+$$
+
+gives $e\tilde Qe=0$, $e\tilde Qf=\tilde Q$, $f\tilde Qe=0$, $f\tilde Qf=0$.
+
 ## Summary
 
 | question | answer |
@@ -271,4 +321,4 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $N$ among the four norms and of $B^2$ outside them.
-- [The Quaternionic Norm-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.
+- [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.

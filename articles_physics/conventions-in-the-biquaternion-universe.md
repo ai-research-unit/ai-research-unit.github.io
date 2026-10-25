@@ -690,34 +690,46 @@ $$
 
 and the convention is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand, and the four forms above and the four norms below are its instances.
 
+**Bars around a complex element are the ordinary complex modulus.** For $Q=q+iq'$,
+
+$$
+\lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'^2},
+$$
+
+a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_\mu\rvert=\sqrt{q_\mu^2+q'_\mu^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
+
 **The four algebraic norms.** Each pair gives one norm, the diagonal of its form. **One bracket, two arities:** the bracket names the form when it carries two arguments and the algebraic norm when it carries one, so the plain bracket is the form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ and the norm $\langle\tilde{Q}\rangle = \langle\tilde{Q},\tilde{Q}\rangle$, and the same holds for the Hermitian, the quaternionic and the Krein. Read with one argument, the value lies in $\mathbb{C}$ for the two bilinear norms and in $\mathbb{R}$ for the two sesquilinear norms, because a sesquilinear form has a real diagonal. The four names are those of the four forms with *norm* in place of *form*:
 
-| bracket | form | algebraic norm | value | realified signature | role |
-|---|---|---|---|---|---|
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ | plain | $Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | complex cone |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | quaternionic | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | multiplicative; zero-divisor cone |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(8,0)$ | definite; topology |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$ | Krein | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(2,6)$ | indefinite |
+| bracket | form | letter | algebraic norm | value | realified signature | role |
+|---|---|---|---|---|---|---|
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ | plain | $P$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | complex cone |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | quaternionic | $N$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | multiplicative; zero-divisor cone |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian | $H$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(8,0)$ | definite; topology |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$ | Krein | $K$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(2,6)$ | indefinite |
+
+**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde{Q}_1,\tilde{Q}_2)$ is the plain form and $P(\tilde{Q})$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
 
 The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. Read on one argument the four are the plain norm, the Hermitian norm, the quaternionic norm and the Krein norm. The other sense of the word, the **topological norm**, is the square root of the definite one, $\lVert\tilde{Q}\rVert_E = \bigl(\langle\tilde{Q}\rangle_{*}\bigr)^{1/2}$, and it is *The Norm Defined by a Form*. The four products, their forms and their norms go together, one to a row:
 
-| Product | Form | Norm |
-|---|---|---|
-| the general plain bilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the plain norm $\langle\tilde{Q}\rangle$ |
-| the general quaternionic bilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the quaternionic norm $\langle\tilde{Q}\rangle_{\natural}$ |
-| the general plain sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the Hermitian norm $\langle\tilde{Q}\rangle_{*}$ |
-| the general quaternionic sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$ | the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$ |
+| Product | Form | Letter | Norm |
+|---|---|---|---|
+| the general plain bilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | $P$ | the plain norm $\langle\tilde{Q}\rangle$ |
+| the general quaternionic bilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | $N$ | the quaternionic norm $\langle\tilde{Q}\rangle_{\natural}$ |
+| the general plain sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | $H$ | the Hermitian norm $\langle\tilde{Q}\rangle_{*}$ |
+| the general quaternionic sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$ | $K$ | the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$ |
+
+**The qualified regular and the qualified degenerate.** For a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde{Q})\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, so the letter is never omitted.
 
 ### The Unitary Convention
 
 A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§*The Unitary Convention* of *Conventions in Mathematics*): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$. A unit element is an element of norm one, and the norm is the one in view: the glyph is the generic norm read at the central value $e_t$, so it names no set until the norm is named, and the four norms of the biquaternion layer give four level sets:
 
-| Norm | the condition $\mathrm{Norm}(\tilde U)=e_t$ | the norm-one elements |
-|---|---|---|
-| $\langle\tilde Q\rangle$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2=e_t$ | the complex hyperboloid of the plain norm |
-| $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=e_t$ | $\mathbb{B}^{\times}_1$, the norm-one units |
-| $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2=1$ | the unit sphere of the Hermitian norm |
-| $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2=1$ | the indefinite level set of the Krein norm |
+| Letter | Norm | the condition $\mathrm{Norm}(\tilde U)=e_t$ | the norm-one elements |
+|---|---|---|---|
+| $P$ | $\langle\tilde Q\rangle$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2=e_t$ | the complex hyperboloid of the plain norm |
+| $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=e_t$ | $\mathbb{B}^{\times}_1$, the norm-one units |
+| $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2=1$ | the unit sphere of the Hermitian norm |
+| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2=1$ | the indefinite level set of the Krein norm |
 
 The two bilinear norms are complex-valued, so their condition is $=e_t$; the two sesquilinear norms are real-valued, so theirs is $=1$. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
 
@@ -1447,8 +1459,10 @@ The tilde-marked element glyphs are collected in §*The Most Common Quaternions 
 | $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion subspace, i.e. the imaginary sector (the imaginary half): anti-fixed points of complex conjugation, all four coefficients purely imaginary; not a subalgebra. $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split that crosses the $\mathbb{M}_\pm$ split |
 | $\mathbb{M}_+ = \{ \tilde{Q} : \tilde{Q}^{*} = \tilde{Q} \}$ | Hermitian subspace, the informational sector; basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$, parameters $q_t, q'_x, q'_y, q'_z$ (real), with $q_t = ct$ |
 | $\mathbb{M}_- = \{ \tilde{Q} : \tilde{Q}^\flat = \tilde{Q} \}$ | Anti-Hermitian subspace, the material sector; basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, parameters $q'_t, q_x, q_y, q_z$ (real), with $q'_t = ct'$ |
-| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$ | Biquaternion norm, level 1 of the three levels of the word *metric* (§*The Metric: Three Levels* of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*) |
+| $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$ | Biquaternion norm, written $N$, level 1 of the three levels of the word *metric* (§*The Metric: Three Levels* of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*) |
 | $\mathrm{Form}(\tilde{Q}_1,\tilde{Q}_2)$, $\mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q})$ | The generic form and the generic norm, instantiated one to a general product by the four forms and the four norms (§*The Four Algebraic Norms and the Unitary Convention*, §*The Involutions and the Four Forms*) |
+| $P(\tilde{Q})$, $N(\tilde{Q})$, $H(\tilde{Q})$, $K(\tilde{Q})$ | The four algebraic norms in letters, the diagonals of the plain, the quaternionic, the Hermitian and the Krein form; each letter names the form with two arguments and the norm with one (§*The Four Algebraic Norms and the Unitary Convention*) |
+| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde{Q})\neq0$ and $\Phi(\tilde{Q})=0$ for $\Phi\in\{P,N,H,K\}$; only the $N$ pair is the unit partition, and *regular* unqualified is spectral, $B^{2}\neq0$ (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*) |
 | $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ | The twelve products, the four general products and their symmetric and antisymmetric parts (§*The Twelve Products and Their Names*) |
 | $\tilde Q_1\bullet\tilde Q_2$ | The **symmetric product**, the half-sum $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, the Jordan product for the plain slot; the subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$ name the sesquilinear, quaternionic and quaternionic-sesquilinear slots (§*The Twelve Products and Their Names*) |
 | $\tilde Q_1\wedge\tilde Q_2$ | The **antisymmetric product**, the half-difference $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$, the outer product for the plain slot, with the same subscripts. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use (§*The Twelve Products and Their Names*) |

@@ -8602,4 +8602,232 @@ Can you read the physics conventions, analyze the physics corpus, and modify /ho
 
 
 
-the first sentence is misleading, there are a lot of quadratic conditions. The article should JUST FOCUS on the eigenvalue problem
+The Polar Decomposition of a Biquaternion
+
+Introduction
+
+Every biquaternion Q can be written as
+
+    Q = Q_H Q_0,
+
+with Q_H Hermitian positive semidefinite and Q_0 a partial isometry. Both are
+unique functions of Q. The decomposition exists for every Q.
+
+Q_H is the Hermitian square root of QQ*:
+
+    Q_H = (QQ*)^(1/2).
+
+Q_0 is the image of Q under the generalized inverse of Q_H:
+
+    Q_0 = Q_H^+ Q.
+
+Notation
+
+Write
+
+    Q = Q_t e_t + Q_x e_x + Q_y e_y + Q_z e_z,
+
+with
+
+    Q* = Q_tbar e_t - Q_xbar e_x - Q_ybar e_y - Q_zbar e_z.
+
+The Hermitian algebraic norm is the real number
+
+    <Q>* = |Q_t|^2 + |Q_x|^2 + |Q_y|^2 + |Q_z|^2 >= 0.
+
+The quaternionic algebraic norm is the complex number
+
+    <Q># = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2.
+
+The Hermitian square is
+
+    QQ* = <Q>* e_t + i W,
+
+with W = W_X e_x + W_Y e_y + W_Z e_z real, where
+
+    W_X = 2 ( Im(Q_x Q_tbar) - Im(Q_y Q_zbar) ),
+    W_Y = 2 ( Im(Q_y Q_tbar) - Im(Q_z Q_xbar) ),
+    W_Z = 2 ( Im(Q_z Q_tbar) - Im(Q_x Q_ybar) ).
+
+Set
+
+    a = sqrt( ( <Q>* + |<Q>#| ) / 2 ) >= 0.
+
+The Hermitian factor
+
+The Hermitian factor is
+
+    Q_H = (QQ*)^(1/2) = a e_t + i W / (2a)     (a > 0),
+    Q_H = 0                                     (a = 0).
+
+It satisfies Q_H = Q_H* and Q_H^2 = QQ*. It is the unique Hermitian positive
+semidefinite square root of QQ*.
+
+The partial-isometry factor
+
+The partial-isometry factor is
+
+    Q_0 = Q_H^+ Q,
+
+where Q_H^+ is the generalized inverse of Q_H, given explicitly by
+
+    Q_H^+ = ( 2a e_t - Q_H ) / |<Q>#|          if <Q># is nonzero,
+    Q_H^+ = Q_H / (4a^2)                       if <Q># = 0 and Q is nonzero,
+    Q_H^+ = 0                                  if Q = 0.
+
+Equivalently,
+
+    Q_0 = ( 2a e_t - Q_H ) Q / |<Q>#|          if <Q># is nonzero,
+    Q_0 = Q_H Q / (4a^2)                       if <Q># = 0 and Q is nonzero,
+    Q_0 = 0                                    if Q = 0.
+
+It satisfies
+
+    Q = Q_H Q_0,
+    Q_0 Q_0* Q_0 = Q_0,
+    Q_0* Q_0 Q_0* = Q_0*.
+
+The pair (Q_H, Q_0) is uniquely determined by Q.
+
+Derivation of Q_H^+
+
+The factor Q_H is Hermitian and satisfies
+
+    Q_H^2 - 2a Q_H + |<Q>#| e_t = 0.
+
+Indeed Q_H^2 = QQ* = <Q>* e_t + i W and <Q>* = 2a^2 - |<Q>#|, and the
+quadratic identity follows.
+
+If |<Q>#| is nonzero, Q_H is invertible and the identity gives
+
+    Q_H^(-1) = ( 2a e_t - Q_H ) / |<Q>#|.
+
+Since Q_H^+ = Q_H^(-1) in this case, the formula follows.
+
+If |<Q>#| = 0 and Q is nonzero, Q_H satisfies Q_H^2 = 2a Q_H, so its
+eigenvalues are 0 and 2a. Its generalized inverse has eigenvalues 0 and
+1/(2a). The element Q_H / (4a^2) has eigenvalues 0 and 2a/(4a^2) = 1/(2a),
+and it is Hermitian positive semidefinite on the image of Q_H. Hence
+
+    Q_H^+ = Q_H / (4a^2).
+
+If Q = 0, then Q_H = 0 and Q_H^+ = 0.
+
+Examples
+
+Example 1. Q = e_t + e_x.
+
+    <Q>* = 2,   <Q># = 2,   W = 0,   a = sqrt(2).
+
+    Q_H     = sqrt(2) e_t,
+    Q_H^+   = sqrt(2) e_t / 2,
+    Q_0     = ( e_t + e_x ) / sqrt(2).
+
+    e_t + e_x = sqrt(2) e_t * ( e_t + e_x ) / sqrt(2).
+
+Example 2. Q = e_t + e_x + i e_y.
+
+    <Q>* = 3,   <Q># = 1,   W = 2 e_y + 2 e_z,   a = sqrt(2).
+
+    Q_H   = sqrt(2) e_t + ( i / sqrt(2) ) ( e_y + e_z ),
+    Q_H^+ = sqrt(2) e_t - ( i / sqrt(2) ) ( e_y + e_z ),
+    Q_0   = ( e_t + e_x ) / sqrt(2).
+
+    e_t + e_x + i e_y
+      = [ sqrt(2) e_t + ( i / sqrt(2) ) ( e_y + e_z ) ] ( e_t + e_x ) / sqrt(2).
+
+Example 3. Q = e_t + i e_x.
+
+    <Q>* = 2,   <Q># = 0,   W = 2 e_x,   a = 1.
+
+    Q_H   = e_t + i e_x,
+    Q_H^+ = ( e_t + i e_x ) / 4,
+    Q_0   = ( e_t + i e_x ) / 2.
+
+    e_t + i e_x = ( e_t + i e_x ) * ( e_t + i e_x ) / 2.
+
+Example 4. Q = e_x + i e_y.
+
+    <Q>* = 2,   <Q># = 0,   W = 2 e_z,   a = 1.
+
+    Q_H   = e_t + i e_z,
+    Q_H^+ = ( e_t + i e_z ) / 4,
+    Q_0   = ( e_x + i e_y ) / 2.
+
+    e_x + i e_y = ( e_t + i e_z ) * ( e_x + i e_y ) / 2.
+
+Example 5. Q = (1 + i) e_t.
+
+    <Q>* = 2,   <Q># = 2i,   |<Q>#| = 2,   W = 0,   a = sqrt(2).
+
+    Q_H   = sqrt(2) e_t,
+    Q_H^+ = sqrt(2) e_t / 2,
+    Q_0   = ( 1 + i ) e_t / sqrt(2).
+
+    (1 + i) e_t = sqrt(2) e_t * ( 1 + i ) e_t / sqrt(2).
+
+Example 6. Q = 0.
+
+    Q_H = 0,   Q_H^+ = 0,   Q_0 = 0.
+
+    0 = 0 * 0.
+
+Summary
+
+Every biquaternion Q has a unique polar decomposition
+
+    Q = Q_H Q_0,
+
+with
+
+    Q_H = (QQ*)^(1/2) = a e_t + i W / (2a),
+    a   = sqrt( ( <Q>* + |<Q>#| ) / 2 ),
+
+Hermitian positive semidefinite, and
+
+    Q_0 = Q_H^+ Q,
+
+where Q_H^+ is the generalized inverse of Q_H, given explicitly by the
+formula above.
+
+The factor Q_H is the Hermitian square root of QQ*. The factor Q_0 is a
+partial isometry, satisfying Q_0 Q_0* Q_0 = Q_0. The pair (Q_H, Q_0) is
+determined by Q alone.
+
+Summary of notation
+
+    Q = Q_t e_t + Q_x e_x + Q_y e_y + Q_z e_z       general biquaternion
+    Q* = Q_tbar e_t - Q_xbar e_x - Q_ybar e_y - Q_zbar e_z
+                                                    Hermitian conjugation
+    <Q>* = |Q_t|^2 + |Q_x|^2 + |Q_y|^2 + |Q_z|^2    Hermitian algebraic
+                                                    norm, real >= 0
+    <Q># = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2            quaternionic
+                                                    algebraic norm, complex
+    QQ* = <Q>* e_t + i W                            Hermitian square
+    W = W_X e_x + W_Y e_y + W_Z e_z                 imaginary vector part,
+                                                    real coefficients
+    a = sqrt( ( <Q>* + |<Q>#| ) / 2 )               scalar part of Q_H
+    Q_H = a e_t + i W / (2a)                        Hermitian positive
+                                                    semidefinite factor
+    Q_H^+                                           generalized inverse of
+                                                    Q_H, explicit above
+    Q_0 = Q_H^+ Q                                   partial-isometry factor
+    B^2 = Q_x^2 + Q_y^2 + Q_z^2                     square of the vector part
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

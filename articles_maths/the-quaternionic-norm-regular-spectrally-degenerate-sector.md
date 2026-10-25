@@ -1,4 +1,4 @@
-# __The Quaternionic Norm-Regular, Spectrally Degenerate Sector__
+# __The N-Regular, Spectrally Degenerate Sector__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 \Sigma_{10}=\mathcal S\setminus\mathcal N,
 $$
 
-and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The Quaternionic Norm-Degenerate, Spectrally Regular Sector*.
+and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The N-Degenerate, Spectrally Regular Sector*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally degenerate** means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.
 
@@ -271,6 +271,56 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 
 **The degenerate half of the unit group.** The unit group splits as $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. The sector $\Sigma_{10}$ is the degenerate half: closed under inversion, not under multiplication, and made of the units whose two eigenvalues have merged.
 
+## The Generators, the Eigenvalues, and the Element
+
+The nilpotent generator is the vector part,
+
+$$
+\boxed{\ \vec\Upsilon=\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \vec\Upsilon^2=0,\qquad Q_t\neq0\ }
+$$
+
+Choose an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$, put $f=e_t-e$, and let $\vec X$ span the opposite mixed corner $f\mathbb{B}e$. The four Peirce generators of the pair $(e,f)$ are $e,\vec\Upsilon,\vec X,f$, and the Peirce form is
+
+$$
+\boxed{\ e\tilde Qe=Q_t\,e,\qquad e\tilde Qf=\vec\Upsilon,\qquad f\tilde Qe=0,\qquad f\tilde Qf=Q_t\,f\ }
+$$
+
+The eigenvalue is repeated:
+
+$$
+\boxed{\ \lambda=Q_t\ \text{with multiplicity }2,\qquad \lambda^2=N(\tilde Q)\ }
+$$
+
+On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $Q_t$, of multiplicity four. There is no Q-adapted root, and no eigenbasis off the scalar line, because $B=0$. On the scalar line every basis diagonalises $L_{\tilde Q}$, but the two eigenvalues coincide and no spectral pair is singled out. In the Peirce basis $(e,\vec\Upsilon,\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
+
+$$
+\boxed{\ \tilde Q=Q_t\,e+1\cdot\vec\Upsilon+0\cdot\vec X+Q_t\,f\ }
+$$
+
+The diagonal entries carry the eigenvalue $Q_t$; the nilpotent generator is the off-diagonal term, and its coefficient $1$ is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\vec\Upsilon=\tilde Q-Q_t e_t$. On the scalar line $\vec\Upsilon=0$ the element is $\tilde Q=Q_te_t$, and the sum collapses to $Q_t\,e+Q_t\,f$.
+
+**The standard representative.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a gauge, and the Peirce form above is the invariant statement. For the standard element
+
+$$
+\boxed{\ \tilde Q=Q_te_t+c(\vec e_x+i\vec e_y),\qquad \vec\Upsilon=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
+$$
+
+one choice of gauge is
+
+$$
+\boxed{\ e=\frac12(e_t+i\vec e_z)\ }
+$$
+
+$$
+\boxed{\ f=\frac12(e_t-i\vec e_z)\ }
+$$
+
+$$
+\boxed{\ \vec X=\frac12(\vec e_x-i\vec e_y),\qquad \vec X\in f\mathbb{B}e,\quad \vec X^2=0\ }
+$$
+
+reproduces the Peirce form and the sum: $e\tilde Qe=Q_te$, $e\tilde Qf=\vec\Upsilon$, $f\tilde Qe=0$, $f\tilde Qf=Q_tf$, and $\tilde Q=Q_te+\vec\Upsilon+Q_tf$.
+
 ## Summary
 
 | question | answer |
@@ -304,8 +354,8 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 
 ## Further Reading
 
-- [The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
-- [The Quaternionic Norm-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
+- [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
+- [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.

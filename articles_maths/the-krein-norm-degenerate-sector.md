@@ -1,4 +1,4 @@
-# __The Krein Norm-Degenerate Sector__
+# __The K-Degenerate Sector__
 
 ## Introduction
 
@@ -9,7 +9,7 @@ $$
 =\{\tilde Q:|Q_t|=\lVert\vec Q\rVert_E\}.
 $$
 
-It is a real cone of real codimension one, smooth off its apex, and its partner is *The Krein Norm-Regular Sector*. The two articles carry the partition of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
+It is a real cone of real codimension one, smooth off its apex, and its partner is *The K-Regular Sector*. The two articles carry the partition of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
 
 The sector is **not homogeneous algebraically**. It splits by the algebraic norm into the **doubly null set** $\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N$, which is the Peirce lines together with the origin, and the **isotropic units** $\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}$. That split is the trace of the algebraic partition, zero divisors against units, and it is the only refinement of the sector that the corpus uses.
 
@@ -293,7 +293,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 
 ## Further Reading
 
-- [The Krein Norm-Regular Sector](the-krein-norm-regular-sector.html), for the positive and negative regions and their geometry.
+- [The K-Regular Sector](the-krein-norm-regular-sector.html), for the positive and negative regions and their geometry.
 - [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the line criterion, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the null quadric and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its transitive action.

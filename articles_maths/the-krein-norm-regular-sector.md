@@ -1,4 +1,4 @@
-# __The Krein Norm-Regular Sector__
+# __The K-Regular Sector__
 
 ## Introduction
 
@@ -9,7 +9,7 @@ $$
 =\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\neq0\},
 $$
 
-and it splits into the positive region and the negative region. Its partner is *The Krein Norm-Degenerate Sector*, for $\mathcal K$. The two articles carry the partition of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
+and it splits into the positive region and the negative region. Its partner is *The K-Degenerate Sector*, for $\mathcal K$. The two articles carry the partition of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The forms are
 
@@ -234,7 +234,7 @@ The sector is the metric interior and exterior of the null set, taken together. 
 
 ## Further Reading
 
-- [The Krein Norm-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null Peirce lines and the isotropic units.
+- [The K-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null Peirce lines and the isotropic units.
 - [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its Gram matrix and its inertia.
 - [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the line criterion and the two partitions of the algebra.
