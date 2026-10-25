@@ -95,7 +95,7 @@ $$
 \qquad
 \vec B = \frac{1}{c}\,\vec u_R\times\vec E\;},
 $$
-with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is not null; the acceleration field falls as $1/R$, is transverse to $\vec u_R$, and is null, so that its field-strength biquaternion is a zero divisor, $\tilde{F}_a^2 = 0$. The whole point of the exercise is the split: the two parts have different falloffs, different invariants, and different signs under $d\vec\beta/dt'_r\to-d\vec\beta/dt'_r$.</p>
+with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is not null; the acceleration field falls as $1/R$, is transverse to $\vec u_R$, and is null, so that its field-strength biquaternion is $N$-degenerate, a zero divisor, $\tilde{F}_a^2 = 0$. The whole point of the exercise is the split: the two parts have different falloffs, different invariants, and different signs under $d\vec\beta/dt'_r\to-d\vec\beta/dt'_r$.</p>
 <h2 id="the-problem">The Problem</h2>
 <p>The retarded solution of the biquaternionic Maxwell equation is
 $$
@@ -245,7 +245,7 @@ $$
 $$
 whose first term reproduces $\vec E_v$ and whose second reproduces $\vec E_a$ when $D = R\kappa$ and $\vec R = R\vec u_R$ are used. The two factors $1-\beta^2$ and $d\vec\beta/dt'_r$ make the two parts transform differently under $d\vec\beta/dt'_r\to-d\vec\beta/dt'_r$: $\vec E_v$ is even, $\vec E_a$ odd.</p>
 <p>The full identity $\tilde{\nabla}^{\natural}\tilde{A} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ with the component formulas above was verified by finite differencing the potential on accelerated subluminal worldlines, with maximum componentwise discrepancy $7\times10^{-12}$; the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ was zero to $5\times10^{-12}$. Separately, the velocity bracket $\tilde{F}_v$ matched $i\sqrt{\epsilon}\,\vec E_v-\sqrt{\mu}\,\vec H_v$ to $4\times10^{-18}$ and the acceleration bracket $\tilde{F}_a$ matched $i\sqrt{\epsilon}\,\vec E_a-\sqrt{\mu}\,\vec H_a$ to $2\times10^{-18}$, so the biquaternion split and the component split are the same split.</p>
-<h2 id="problem-3-the-velocity-field-and-its-math181-falloff">Problem 3: The Velocity Field and Its $1/R^2$ Falloff</h2>
+<h2 id="problem-3-the-velocity-field-and-its-math182-falloff">Problem 3: The Velocity Field and Its $1/R^2$ Falloff</h2>
 <p><strong>Statement.</strong> (a) Show that $\vec E_v$ falls as $1/R^2$ by holding the retarded configuration fixed and scaling the observation point away from the emission event. (b) Evaluate the invariants of $\tilde{F}_v$ and show the velocity field is electric, not null: $I_{1,v} = (\vec u_R\cdot\vec E_v)^2 > 0$ and $I_{2,v} = 0$. (c) Recover the Coulomb field in the limit $\vec v\to0$ and fix the sign convention for the charge.</p>
 <p><strong>Solution (a).</strong> $\vec E_v$ is a function of the retarded data $(\vec u_R,\vec\beta,R)$ alone. If the emission event and the direction $\vec u_R$ (hence $\vec\beta$ and $\kappa$) are held fixed while $R$ is scaled, then
 $$
@@ -276,7 +276,7 @@ $$
 \vec B_v = 0 ,
 $$
 the Coulomb field of the charge at its retarded (and, for a stationary charge, present) position. The sign is the physical one: for a positive charge the field points radially away from the source. The acceleration field vanishes as well, so a charge instantaneously at rest with $d\vec v/dt'_r\ne0$ still has the full Coulomb $1/R^2$ velocity field at that instant. Flipping $ϙ\to-ϙ$ flips both parts, and this was verified componentwise on both a uniformly moving and an accelerated worldline.</p>
-<h2 id="problem-4-the-acceleration-field-and-its-math226-falloff">Problem 4: The Acceleration Field and Its $1/R$ Falloff</h2>
+<h2 id="problem-4-the-acceleration-field-and-its-math227-falloff">Problem 4: The Acceleration Field and Its $1/R$ Falloff</h2>
 <p><strong>Statement.</strong> (a) Show that $\vec E_a$ falls as $1/R$ by the same scaling argument. (b) Show that the acceleration field is transverse, $\vec u_R\cdot\vec E_a = 0$, and null, $I_{1,a} = I_{2,a} = 0$; conclude that $\tilde{F}_a$ is a zero divisor with $\tilde{F}_a^2 = 0$. (c) Evaluate the field at an instant of rest and verify its sign against $d\vec\beta/dt'_r$. (d) Verify the far-zone dominance of $\vec E_a$ over $\vec E_v$.</p>
 <p><strong>Solution (a).</strong> The acceleration field is
 $$

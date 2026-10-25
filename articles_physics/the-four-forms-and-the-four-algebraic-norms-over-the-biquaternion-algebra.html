@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra"><strong>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The twelve products of the biquaternion complex space carry four <strong>forms</strong> and no more, and the four forms carry four <strong>algebraic norms</strong>. The form of a product is its scalar part, a function of two elements; the algebraic norm of a form is that form read at its two equal arguments, a function of one. The chain is short and rigid: twelve operations, four scalar parts, four functions of one element. This article reads the chain physically. The four forms are the <strong>sector sign</strong> $\langle\cdot,\cdot\rangle$, the <strong>Born form</strong> $\langle\cdot,\cdot\rangle_{*}$, the <strong>interval</strong> $\langle\cdot,\cdot\rangle_{\natural}$ and the <strong>Krein form</strong> $\langle\cdot,\cdot\rangle_{\natural*}$. The four algebraic norms are the four sums</p>
+<p>The twelve products of the biquaternion complex space carry four <strong>forms</strong> and no more, and the four forms carry four <strong>algebraic norms</strong>. The form of a product is its scalar part, a function of two elements; the algebraic norm of a form is that form read at its two equal arguments, a function of one. The chain is short and rigid: twelve operations, four scalar parts, four functions of one element. This article reads the chain physically. The four forms are the <strong>sector sign</strong> $\langle\cdot,\cdot\rangle$, the <strong>Born form</strong> $\langle\cdot,\cdot\rangle_{*}$, the <strong>interval</strong> $\langle\cdot,\cdot\rangle_{\natural}$ and the <strong>Krein form</strong> $\langle\cdot,\cdot\rangle_{\natural*}$. They carry the letters $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one. The four algebraic norms are the four sums</p>
 <p>$$
 \boxed{\;\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},
 \qquad
@@ -120,7 +120,7 @@ $$</p>
 <h2 id="the-forms">The Forms</h2>
 <h3 id="from-twelve-operations-to-four-forms">From Twelve Operations to Four Forms</h3>
 <p>A form is the <strong>scalar part</strong> of a product. The twelve products split into four general products and their symmetrisations and antisymmetrisations, and the passage to the scalar part collapses them: the symmetrisation of a family keeps the scalar part of the general product, and the antisymmetrisation kills it. Hence the four general products and their four symmetrisations carry the four forms, two operations to a form, and the four antisymmetric operations carry the zero form. Four forms and no more.</p>
-<p>The four forms are distinct as functions of two elements. On the pair $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ their values are $B=-(1+i)$, $H=1-i$, $N=1+i$ and $K=-(1-i)$, four different complex numbers. Each form is, up to the factor of the trace convention, the trace form of its own product:</p>
+<p>The four forms are distinct as functions of two elements. On the pair $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ their values are $P=-(1+i)$, $H=1-i$, $N=1+i$ and $K=-(1-i)$, four different complex numbers. Each form is, up to the factor of the trace convention, the trace form of its own product:</p>
 <p>$$
 2\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Tr}(\tilde Q_1\tilde Q_2),
 \qquad
@@ -135,6 +135,7 @@ $$</p>
 <thead>
 <tr>
 <th>Form</th>
+<th>Letter</th>
 <th>Bracket</th>
 <th>Pair</th>
 <th>Coordinates</th>
@@ -146,7 +147,8 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>the plain form</td>
+<td>the plain form, the sector sign</td>
+<td>$P$</td>
 <td>$\langle\cdot,\cdot\rangle$</td>
 <td>$(\mathrm{id},\mathrm{id})$</td>
 <td>$Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$</td>
@@ -156,17 +158,19 @@ $$</p>
 <td>the complex cone</td>
 </tr>
 <tr>
-<td>the quaternionic form</td>
+<td>the quaternionic form, the interval</td>
+<td>$N$</td>
 <td>$\langle\cdot,\cdot\rangle_{\natural}$</td>
 <td>$({}^{\natural},\mathrm{id})$</td>
 <td>$Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)$</td>
 <td>symmetric</td>
 <td>$\mathrm{I}_4$</td>
 <td>$(4,4)$</td>
-<td>$\mathcal{N}$, the zero divisors</td>
+<td>$\mathcal{N}$, the $N$-degenerate set, the zero-divisor cone</td>
 </tr>
 <tr>
-<td>the Hermitian form</td>
+<td>the Hermitian form, the Born form</td>
+<td>$H$</td>
 <td>$\langle\cdot,\cdot\rangle_{*}$</td>
 <td>$(\mathrm{id},{}^{*})$</td>
 <td>$Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$</td>
@@ -176,7 +180,8 @@ $$</p>
 <td>$\{0\}$</td>
 </tr>
 <tr>
-<td>the Krein form</td>
+<td>the quaternionic sesquilinear form, the Krein form</td>
+<td>$K$</td>
 <td>$\langle\cdot,\cdot\rangle_{\natural*}$</td>
 <td>$({}^{\natural},{}^{*})$</td>
 <td>$Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$</td>
@@ -194,6 +199,7 @@ $$</p>
 <thead>
 <tr>
 <th>Algebraic Norm</th>
+<th>Letter</th>
 <th>Formula</th>
 <th>Value</th>
 <th>Gram</th>
@@ -206,6 +212,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\langle\cdot\rangle$</td>
+<td>$P$</td>
 <td>$Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$</td>
 <td>$\mathbb{C}$</td>
 <td>$\mathrm{E}$</td>
@@ -216,16 +223,18 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\cdot\rangle_{\natural}$</td>
+<td>$N$</td>
 <td>$Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
 <td>$\mathbb{C}$</td>
 <td>$\mathrm{I}_4$</td>
 <td>$(4,4)$</td>
-<td>$\mathcal{N}$, the zero divisors</td>
+<td>$\mathcal{N}$, the $N$-degenerate set, the zero-divisor cone</td>
 <td><strong>yes</strong></td>
 <td>—</td>
 </tr>
 <tr>
 <td>$\langle\cdot\rangle_{*}$</td>
+<td>$H$</td>
 <td>$\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$</td>
 <td>$\mathbb{R}$</td>
 <td>$\mathrm{I}_4$</td>
@@ -236,6 +245,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\cdot\rangle_{\natural*}$</td>
+<td>$K$</td>
 <td>$\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}$</td>
 <td>$\mathbb{R}$</td>
 <td>$\mathrm{E}$</td>
@@ -250,7 +260,7 @@ $$</p>
 <p>$$
 \boxed{\;\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
 $$</p>
-<p>and it is the quaternionic norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$. The group of units is $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.</p>
+<p>and it is the quaternionic norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is $N$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$, if and only if it is invertible. The $N$-regular set is the group of units $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.</p>
 <p><strong>No function is both definite and multiplicative.</strong> The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors non-zero and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1-1=0$. A multiplicative function that is not constant has $\varphi(0)=0$, so it would give $\varphi(e_t+i\vec e_x)\varphi(e_t-i\vec e_x)=\varphi(0)=0$; one value would vanish on a non-zero element, and a definite function is non-zero off the origin. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra. The four normed division algebras of the Hurwitz theorem are exactly the ones in which the two senses coincide.</p>
 <p><strong>One letter, two arities.</strong> A letter names the form when it carries two arguments and the algebraic norm when it carries one; the norm is the form of the same name with the arguments equated. The distinction is not cosmetic: $\langle\cdot\rangle_{\natural}$ is a pairing of two elements and $\langle\tilde Q\rangle_{\natural}$ is a single number, and the multiplicative law is a law of the second, not of the first.</p>
 <h2 id="the-forms-on-the-two-sectors">The Forms on the Two Sectors</h2>
@@ -265,22 +275,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\langle\cdot,\cdot\rangle$, the sector sign</td>
+<td>$P$: $\langle\cdot,\cdot\rangle$, the sector sign</td>
 <td>$(0,4)$, negative definite</td>
 <td>$(4,0)$, positive definite</td>
 </tr>
 <tr>
-<td>$\langle\cdot,\cdot\rangle_{\natural}$, the interval</td>
+<td>$N$: $\langle\cdot,\cdot\rangle_{\natural}$, the interval</td>
 <td>$(3,1)$</td>
 <td>$(1,3)$</td>
 </tr>
 <tr>
-<td>$\langle\cdot,\cdot\rangle_{*}$, the Born form</td>
+<td>$H$: $\langle\cdot,\cdot\rangle_{*}$, the Born form</td>
 <td>$(4,0)$, positive definite</td>
 <td>$(4,0)$, positive definite</td>
 </tr>
 <tr>
-<td>$\langle\cdot,\cdot\rangle_{\natural*}$, the Krein form</td>
+<td>$K$: $\langle\cdot,\cdot\rangle_{\natural*}$, the Krein form</td>
 <td>$(1,3)$</td>
 <td>$(1,3)$</td>
 </tr>
@@ -304,16 +314,16 @@ $$</p>
 <p>The collapse to two pairs holds on every remarkable subspace, but the pairing is not the same on all of them. On the centre $\mathbb{C}_{\mathbb{B}}$, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}$; on the vector subspace $\mathrm{Vect}(\mathbb{B})$, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle_{\natural*}$; on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{*}$; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{*}$; on the informational sector, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{\natural*}$; and on the material sector, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{\natural*}$. The grouping of the four into the two pairs therefore depends on the subspace, and it is the subspace's fingerprint. The Hermitian form is positive definite on every one of the six subspaces; the other three are indefinite on the algebra and may be definite on a restriction. The Krein form, for instance, is positive definite of signature $(2,0)$ on the centre, negative definite of signature $(0,6)$ on the vector subspace, and of signature $(1,3)$ on each of the other four.</p>
 <p><strong>The boundary.</strong> The signatures in the table are the signatures of the <strong>restrictions</strong> and not new forms. A restriction may be definite where the form is indefinite, and its definiteness says nothing about the form. The complex cone, the zero-divisor cone and the Krein cone are the null sets of the three indefinite forms on the whole algebra; the light cone is the cut of the zero-divisor cone by the material sector, not the null set of the form on the algebra.</p>
 <h2 id="interpretations">Interpretations</h2>
-<h3 id="the-sector-sign">The Sector Sign</h3>
+<h3 id="the-sector-sign-math138">The Sector Sign, $P$</h3>
 <p>The plain bilinear form is definite with opposite signs on the two sectors: negative on the material side, positive on the informational side. It is the one symmetric form that is definite with opposite signs and so tells them apart. On the material sector it is the negative Euclidean square, $\langle\tilde R,\tilde R\rangle=-c^{2}{t'}^{2}-x^{2}-y^{2}-z^{2}$, and it has no cone there. Its null set on the algebra is the complex cone of real dimension six, which is not the light cone, and it cuts across the invertible and the non-invertible elements alike.</p>
 <p>The sector sign is read as a <strong>flag</strong> and not as a metric. It says which half an element belongs to and measures neither. The element $e_t+\vec e_x$ is a unit with $\langle e_t+\vec e_x,e_t+\vec e_x\rangle=0$, and $e_t+i\vec e_x$ is a zero divisor with $\langle e_t+i\vec e_x,e_t+i\vec e_x\rangle=2$; the form decides no inverse, and its null set is not the wall of invertibility. The metric of the material sector is the interval, and the interval is the next reading but one.</p>
 <p><strong>The boundary.</strong> The form is complex-valued on the centre and the vector subspace, where the coefficients are general complex numbers; on the four real-type subspaces it is real. "Definite" is a statement about the real part of the restriction, and the sign is the sign of that real part. The sector sign is not the Born form, not the interval and not the Krein form; the table of the four forms separates them.</p>
-<h3 id="the-born-form">The Born Form</h3>
+<h3 id="the-born-form-math144">The Born Form, $H$</h3>
 <p>The Hermitian form is positive definite of signature $(8,0)$ on the real algebra, and it is the only one of the four that is definite on every subspace. Its square root is the unique topological norm, and it is the form a probability is built from. It is the <strong>Born pairing</strong> of a state and an observable, the form preserved by the unitary evolution, and the form whose isometry group is $\mathrm{U}(4)$.</p>
 <p>It is blind to the sector: positive on the material and on the informational side alike. That blindness is the precise content of the corpus's rule that the material sector is invisible in the sesquilinear layer. On the material sector the Born form is the Euclidean square, $c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$, and it is minus the sector sign; the sign of the sector lives in the bilinear layer, and the sesquilinear layer does not carry it.</p>
 <p>The form supplies the weight, not the state. The pure states are the minimal Hermitian idempotents of the algebra, $\tfrac12(e_t+i\vec u)$ with $\vec u$ a real unit vector, and the Born weight is the pairing of a state with an observable. The state carries the axis $\vec u$ and no phase; the phase belongs to the spinor, not to the form.</p>
 <p><strong>The boundary.</strong> The identification of the definite Hermitian form with physical probability is the hypothesis of the informational sector, not a theorem of the algebra. The form proves that a positive definite pairing exists and that it is unique among the four; it does not prove the Born rule, the measurement postulate or the identification of an element with a state.</p>
-<h3 id="the-interval">The Interval</h3>
+<h3 id="the-interval-math151">The Interval, $N$</h3>
 <p>The quaternionic bilinear form is the <strong>interval</strong>. On the material sector it is the Minkowski metric of signature $(3,1)$,</p>
 <p>$$
 \langle\tilde R\rangle_{\natural}=-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2},
@@ -322,7 +332,7 @@ $$</p>
 <p>The interval is <strong>multiplicative</strong>, and that is what makes it a causal structure rather than a quadratic decoration: the causal type of a composite is the product of the causal types. Its null set is closed under multiplication, as are the units and the zero divisors; the cut of the null set by the material sector is the light cone. The sector is not closed under the product, because two anti-Hermitian elements compose to an anti-Hermitian element only when they anticommute, so the closure belongs to the algebra and not to the sector. On the unit group the logarithm of the modulus is additive and reads as a dilation potential; the rapidity is the length of the pure part of the polar angle, not that potential. Invertibility is exactly the complement of the cone, which is therefore the wall of the reversible region.</p>
 <p>The interval is the algebraic norm that carries the word <strong>mass</strong>. Its level set is the mass shell, its zero set the light cone, and its sign is the causal character of the displacement. The other three algebraic norms do not carry the mass: the definite one carries the probability, the sector sign carries the flag, and the Krein norm carries the constraint.</p>
 <p><strong>The boundary.</strong> The interval is real on the four real-type subspaces and complex on the centre and the vector subspace; the mass shell is a level set on the sector, not a value of the form on the whole algebra. The form detects no polarisation count and no charge label: those are the rank and the compact slice, and they are readings of the element beside the mass, not values of the norm. The interval does not derive a mass spectrum, and it does not say which element is a particle.</p>
-<h3 id="the-krein-form">The Krein Form</h3>
+<h3 id="the-krein-form-math156">The Krein Form, $K$</h3>
 <p>The Krein form is the indefinite Hermitian form of the fourth corner. It is real at the two equal arguments, of signature $(2,6)$ on the real algebra and $(1,3)$ on each of the four four-dimensional real-type subspaces, and it normalises nothing: an indefinite form has no positive unit sphere, so it cannot supply a probability. Its null set is the real cone $\mathcal{K}=\{\lvert c\rvert=\lvert v\rvert\}$ of the centre–vector split, of real dimension seven, and its positive and negative value-one sets are $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$.</p>
 <p>The reading is a <strong>constraint</strong>, not a state. A gauge calibration fixes a redundancy of the description; it does not prepare a state, and its form is the form of that redundancy. The signature is what an object is: a definite Hermitian form counts states, an indefinite one counts a constraint. The Krein form is the indefinite metric of an indefinite-metric quantum theory, and its fundamental symmetry is the natural conjugation ${}^{\natural}$, the operator that turns it into a definite form.</p>
 <p>On the material sector the Krein form is minus the interval; on the informational sector it is the interval. The two are one form read with a sign, and on the informational side they are the same form. This is the algebraic reason the interval and the gauge form are easy to conflate, and the reason the sign of the sector must be named whenever the two are compared.</p>
@@ -387,10 +397,20 @@ $$</p>
 <p>Two senses of <em>norm</em> must be kept apart. The <strong>algebraic norm</strong> is a map into the ring — $\mathbb{C}$ for the two bilinear forms, $\mathbb{R}$ for the two Hermitian ones — and it is algebra. The <strong>topological norm</strong> is the one selection of positive real values, $\lVert\tilde Q\rVert_E=(\langle\tilde Q\rangle_{*})^{1/2}$, and it is topology. Only the Hermitian form yields the second; the other three are algebraic norms and give no distance. A norm is not a distance until a square root is taken and a positivity is declared.</p>
 <p>On the sectors the four forms coincide in pairs, and the coincidence is a statement about the forms. It does not make the four products agree, and it does not make the Krein form a probability or the sector sign an interval. The identities are read with both arguments on the sector; for a general element the four forms are four.</p>
 <p>The article states no dynamics, no mass value, no spectrum and no gauge group. The Krein column states the form alone, and its indefinite structure is read in <em>The Krein Form and the Indefinite Structure</em>. The mass shell is a level set, not a derived spectrum; the charge is a label of a compact group, not a derived coupling; the interval is a metric, not an equation of motion.</p>
+<h2 id="regular-and-degenerate-biquaternions">Regular and Degenerate Biquaternions</h2>
+<p>Each letter cuts the algebra in two by the value of its norm: a $\Phi$-regular biquaternion has $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$. The four cuts are different cuts and must not be exchanged.</p>
+<ul>
+<li>$N$-regular is $N(\tilde Q)\neq0$, and it is exactly the set of invertible elements, the unit group $\mathbb{B}^{\times}$. $N$-degenerate is the null cone $\mathcal{N}$: the origin together with the zero divisors.</li>
+<li>$P$-degenerate is the complex cone, of real dimension six. It is not a wall of invertibility; it contains units, $P(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$.</li>
+<li>$H$-degenerate is the origin alone, since the Hermitian norm is definite. Every nonzero biquaternion is $H$-regular.</li>
+<li>$K$-degenerate is the Krein cone $\mathcal{K}$, of real dimension seven. It is not the zero-divisor cone, and it also contains units.</li>
+</ul>
+<p>Only the $N$ cut is the invertibility partition. A degenerate biquaternion is not the same object as a zero divisor: the origin is $N$-degenerate for every letter and is not a zero divisor, and $N$-degeneracy is $N(\tilde Q)=0$, while being a zero divisor is the annihilation $Q R=0$ or $R Q=0$ for a nonzero $R$. The two coincide off the origin in $\mathbb{B}$ for the plain product, and that coincidence is a theorem about $\mathcal{N}$, not the definition of the word.</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>The twelve products carry four forms and no more: the symmetrisation keeps the scalar part, the antisymmetrisation kills it, so the four general products and their four symmetrisations carry four forms two by two and the four antisymmetric operations carry the zero form.</li>
-<li>The four forms are the sector sign $\langle\cdot,\cdot\rangle$, the Born form $\langle\cdot,\cdot\rangle_{*}$, the interval $\langle\cdot,\cdot\rangle_{\natural}$ and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$, with Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.</li>
+<li>The four forms are the sector sign $\langle\cdot,\cdot\rangle$ written $P$, the interval $\langle\cdot,\cdot\rangle_{\natural}$ written $N$, the Born form $\langle\cdot,\cdot\rangle_{*}$ written $H$ and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ written $K$, with Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.</li>
+<li>A $\Phi$-regular biquaternion has $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$; only the $N$ cut is the invertibility partition, $N$-regular being the unit group and $N$-degenerate the null cone, the origin together with the zero divisors.</li>
 <li>The second slot decides the symmetry and the reality of the algebraic norm; the first slot decides the Gram matrix and the signature.</li>
 <li>The four algebraic norms are $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$, $\sum_\mu Q_\mu^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$.</li>
 <li>$\langle\cdot\rangle_{*}$ is the definite one, and its square root is the unique topological norm; $\langle\cdot\rangle_{\natural}$ is the multiplicative one, the quaternionic norm and the criterion of invertibility.</li>
@@ -410,6 +430,10 @@ $$</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>$P$, $N$, $H$, $K$</td>
+<td>the plain, quaternionic, Hermitian and Krein letter, naming the form with two arguments and the algebraic norm with one</td>
+</tr>
 <tr>
 <td>$\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$</td>
 <td>the sector sign, the interval, the Born form and the Krein form</td>
@@ -440,7 +464,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{N}$, $\mathcal{K}$</td>
-<td>the zero-divisor cone and the Krein cone</td>
+<td>the $N$-degenerate set, the zero-divisor cone, and the Krein cone</td>
 </tr>
 <tr>
 <td>$\lVert\tilde Q\rVert_E$</td>

@@ -354,7 +354,7 @@ $$</p>
 <p>The uniqueness is a statement about the factors, not about a coordinate on the boost or on the rotor. Two different charts of $H^{3}$ assign different parameters to the same boost, and two different charts of $S^{3}$ assign different parameters to the same rotor; the factors themselves are fixed.</p>
 <h2 id="the-group-of-units-and-the-unitary-group">The Group of Units and the Unitary Group</h2>
 <h3 id="the-splitting-of-the-group-of-units">The Splitting of the Group of Units</h3>
-<p>The group of units is $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the zero-divisor cone. The decomposition read as a map</p>
+<p>The group of units is the $N$-regular set, $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the $N$-degenerate null cone. The decomposition read as a map</p>
 <p>$$
 \Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),\qquad \Phi(\tilde Q)=(\Rho,\tilde U),
 $$</p>
@@ -509,7 +509,7 @@ $$</p>
 <p>The regular modules themselves are <em>Modules over the Biquaternion Algebra</em>; the two-sided operator that carries the four-vector is <em>Two-Sided Operator and the Polar Decomposition</em>.</p>
 <h2 id="the-algorithm">The Algorithm</h2>
 <p>The factors are computed in five steps, each a finite sequence of algebraic operations on the eight real coordinates of $\tilde Q$.</p>
-<p><strong>Step 1, the norm.</strong> Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is a zero divisor and has no decomposition. Otherwise continue.</p>
+<p><strong>Step 1, the norm.</strong> Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is $N$-degenerate and has no decomposition. Otherwise it is $N$-regular and the computation continues.</p>
 <p><strong>Step 2, the modulus.</strong> Compute $\Rho$ from the branch formula of §<em>The Biquaternion Norm and the Modulus</em>. The result lies in $\mathcal H$ and satisfies $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$.</p>
 <p><strong>Step 3, the scale and the phase.</strong> Put $r=\lvert\Rho\rvert$ and $\zeta=\Rho/r$. Then $r>0$, $\lvert\zeta\rvert=1$, and $\Rho=r\zeta$.</p>
 <p><strong>Step 4, the unit factor.</strong> Put $\tilde U=\tilde Q/\Rho$. Check $\langle\tilde U\rangle_{\natural}=1$; the check is the identity $\langle\tilde Q\rangle_{\natural}/\Rho^{2}=1$.</p>
