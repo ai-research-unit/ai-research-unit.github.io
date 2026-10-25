@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations between the Biquaternion Exponential and the Fourier Kernel — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-the-biquaternion-exponential-and-the-fourier-kernel"><strong>Relations between the Biquaternion Exponential and the Fourier Kernel</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two constructions of the corpus meet at one formula: the exponential of a biquaternion and the Fourier kernel. Each is built from a root of $-1$ and a rate. The exponential of an element, in <em>Biquaternion Elementary Functions</em>, is</p>
+<p>$$
+\exp(\tilde Q)=\exp(Q_t)\bigl(\cos B\,e_t+\sin B\,\vec U\bigr),
+\qquad
+\vec U=\frac{\vec Q}{B},
+$$</p>
+<p>for $\vec Q^2=B^2\neq0$. The Fourier kernel, in <em>Biquaternion Continuous Harmonic Analysis</em>, is</p>
+<p>$$
+W(t,\omega)=\exp(-2\pi\rho\,\omega t),
+\qquad
+\rho^2=-e_t,
+$$</p>
+<p>with $\rho$ a root chosen once and for all. The two formulas agree once the root and the rate are identified. The element supplies the root, and its rate $B$ is the angular frequency of the kernel.</p>
+<p>The dictionary is exact. A spectrally regular element has a root of its own, $\rho=\vec Q/B$, and its exponential is the kernel at $t=-\theta$ and $\omega=B/2\pi$:</p>
+<p>$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\,W\!\left(-\theta,\frac{B}{2\pi}\right).
+$$</p>
+<p>The eigenvalues are the exponents of the two characters, the eigenbasis is a Fourier basis, and the spectral idempotents are the algebraic projections onto the two frequency components. The kernel article has to fix $\rho$ by hand because the algebra has no preferred root; a regular element supplies one, and this is the precise sense in which the two theories meet.</p>
+<p>The article also corrects two identifications that the shared notation invites. <strong>Normality is not unitarity.</strong> A normal element has an orthogonal eigenbasis, but its flow need not have constant norm. And <strong>a non-normal element does not necessarily grow</strong>: its Hermitian norm oscillates between two bounds. Growth is produced by the central scalar part and by the imaginary part of $B$. The exact statements are in §<em>Normality, Unitarity and the Hermitian Norm of the Flow</em>.</p>
+<p>The article proves the bridge, the kernel identity, the two unitarity criteria and the norm formula. The closed form of the exponential, the spectrum, the eigenbasis, the transform, its inversion and its Plancherel theorem are owned by the articles cited below, and none of them is reproved here.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The closed form of the exponential, the oscillatory and truncated regimes</td>
+<td><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, §<em>The Exponential</em></td>
+</tr>
+<tr>
+<td>The Hermitian norm of the flow, the norm deficit and the unitary and self-adjoint criteria</td>
+<td><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, §<em>The Hermitian Norm and the Unitary Flow</em></td>
+</tr>
+<tr>
+<td>The kernel as the exponential of a regular element</td>
+<td><a href="biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>, §<em>The Kernel as the Exponential of an Element</em></td>
+</tr>
+<tr>
+<td>The Fourier reading of the normalised Peirce basis</td>
+<td><a href="spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html">Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</a>, §<em>The Fourier Reading of the Basis</em></td>
+</tr>
+<tr>
+<td>The truncated exponential on the spectral cone</td>
+<td><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, §<em>The Exponential on the Cone</em></td>
+</tr>
+<tr>
+<td>The characteristic polynomial, the eigenvalues $Q_t\pm iB$ and the spectral criterion</td>
+<td><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, §<em>The Spectral Criterion</em></td>
+</tr>
+<tr>
+<td>The idempotents $\tilde\Pi_\pm$, the eigenspaces and the normalised Peirce basis</td>
+<td><a href="spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html">Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</a>, §<em>The Eigenbasis</em></td>
+</tr>
+<tr>
+<td>Normality, the Hermitian projectors and the orthogonal spectral resolution</td>
+<td><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Hermitian Case</em></td>
+</tr>
+<tr>
+<td>The Fourier kernel, the root-adapted basis and the factorization into complex transforms</td>
+<td><a href="biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>, §<em>The Fourier Kernel</em> and §<em>Factorization into Complex Fourier Transforms</em></td>
+</tr>
+<tr>
+<td>The expansion of every biquaternion in the eigenbasis</td>
+<td><a href="spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html">Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</a>, §<em>Expansion of Every Biquaternion</em></td>
+</tr>
+<tr>
+<td>The three families of roots of $-1$</td>
+<td><a href="square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, §<em>The Roots of Minus One</em></td>
+</tr>
+<tr>
+<td>The conjugations $\natural$ and $*$</td>
+<td><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, §<em>The Conjugations</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the contract: every statement below is either an identity proved here or a restatement of one of these rows.</p>
+<h2 id="the-two-objects">The Two Objects</h2>
+<h3 id="the-exponential">The Exponential</h3>
+<p>For one element the powers commute, so the exponential is computed in the commutative subalgebra $\mathbb{C}[\tilde Q]$ generated by $\tilde Q$. The definition by the series and the two regimes are those of <em>Biquaternion Elementary Functions</em>, §<em>The Exponential</em>. Two facts are used below.</p>
+<p>For $B^2\neq0$ and every $\theta\in\mathbb{C}$,</p>
+<p>$$
+e^{\theta\tilde Q}
+=e^{\theta Q_t}\bigl(\cos(B\theta)\,e_t+\sin(B\theta)\,\vec U\bigr),
+\qquad
+\vec U=\frac{\vec Q}{B}.
+$$</p>
+<p>For $B^2=0$, with $\vec N=\vec Q$ and $\vec N^2=0$,</p>
+<p>$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\bigl(e_t+\theta\vec N\bigr).
+$$</p>
+<p>The first is the oscillatory regime and the second is the truncated regime. The scalar case $\vec Q=0$ is the common degenerate case, in which the exponential is the ordinary complex exponential of $Q_t$.</p>
+<p><strong>The flow.</strong> For a fixed $\tilde Q$, the map $\theta\mapsto e^{\theta\tilde Q}$ is the one-parameter flow generated by $\tilde Q$. Its parameter is a complex number, and it is not a physical time until a dynamics identifies it with one. The article uses the word <em>flow</em> for this map and <em>kernel</em> for $W$, and it does not identify the two parameters beyond the identity proved in §<em>The Kernel Identity</em>.</p>
+<h3 id="the-fourier-kernel">The Fourier Kernel</h3>
+<p>Fix a root $\rho$ of $-1$, that is, an element with $\rho^2=-e_t$. The kernel of <em>Biquaternion Continuous Harmonic Analysis</em>, §<em>The Fourier Kernel</em>, is</p>
+<p>$$
+W(t,\omega)=\exp(-2\pi\rho\,\omega t).
+$$</p>
+<p>Because $\rho^2=-e_t$, the series collapses to</p>
+<p>$$
+W(t,\omega)=\cos(2\pi\omega t)\,e_t-\sin(2\pi\omega t)\,\rho,
+$$</p>
+<p>and the inverse is $W(t,\omega)^{-1}=\cos(2\pi\omega t)\,e_t+\sin(2\pi\omega t)\,\rho$. The transform uses real $t$ and $\omega$. Both sides are entire in $(t,\omega)$ and agree on $\mathbb{R}^2$, so the identity holds for complex values as well; the transform itself uses the real ones.</p>
+<p><strong>The root is chosen, not found.</strong> The article fixes $\rho$ because the algebra has none. The roots of $-1$ are the two central scalars $\pm i$, the pure real unit vectors $\pm\vec u$, and the genuinely biquaternionic roots $\rho=b\mu+d i\nu$ with $\mu\perp\nu$ real unit vectors and $b^2-d^2=1$; the classification is that of <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>. The transform changes with the family, and the choice of family is a choice of which imaginary direction is the frequency axis.</p>
+<p><strong>The root the element supplies is always pure.</strong> A root with a non-zero scalar part is $\pm i$, because the vector part of $\rho^2=-e_t$ is twice the scalar part times the vector part of $\rho$, and it vanishes. The root $\rho=\vec Q/B$ of a regular element is pure by construction. The dictionary therefore always lands in the pure-root families, and the exceptional central family of the transform is never the one a regular element supplies.</p>
+<h3 id="the-root-the-element-supplies">The Root the Element Supplies</h3>
+<p><strong>Proposition 1 (the root).</strong> Let $\tilde Q=Q_te_t+\vec Q$ with $B^2=(\vec Q,\vec Q)\neq0$, and fix a square root $B$ of $B^2$. Then $\rho=\vec Q/B$ is pure and</p>
+<p>$$
+\rho^2=-e_t,
+\qquad
+\tilde Q=Q_te_t+B\rho.
+$$</p>
+<p><em>Proof.</em> The vector part squares to $\vec Q^2=-B^2e_t$, so $\rho^2=\vec Q^2/B^2=-e_t$. The scalar part of $\rho$ is zero because $\vec Q$ has none.</p>
+<p>The other square root $-B$ gives $-\rho$ and exchanges $\lambda_+$ with $\lambda_-$. The identities below are invariant under the exchange, since $\cos$ is even and $\sin$ is odd, and the branch is a labelling and not a datum of the algebra. The root depends on the element: two regular elements generally supply different roots, and §<em>Global versus Element-Attached</em> states what is and what is not canonical.</p>
+<h2 id="the-dictionary">The Dictionary</h2>
+<h3 id="the-spectrum-as-two-frequencies">The Spectrum as Two Frequencies</h3>
+<p>The characteristic polynomial and the spectral criterion are those of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Spectral Criterion</em>:</p>
+<p>$$
+p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2=(X-Q_t-iB)(X-Q_t+iB),
+\qquad
+\lambda_\pm=Q_t\pm iB.
+$$</p>
+<p>The eigenvalues are central, so they are ordinary complex numbers. The noncommutativity of $\mathbb{B}$ does not make the frequencies operator-valued: the two frequency components are scalar characters of the flow. The idempotents are the Lagrange idempotents of the two eigenvalues,</p>
+<p>$$
+\tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}
+=\frac12\bigl(e_t\mp i\rho\bigr),
+$$</p>
+<p>and they satisfy</p>
+<p>$$
+\tilde\Pi_\pm^2=\tilde\Pi_\pm,
+\qquad
+\tilde\Pi_+\tilde\Pi_-=0,
+\qquad
+\tilde\Pi_++\tilde\Pi_-=e_t,
+\qquad
+\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
+$$</p>
+<p>The spectral form of the exponential is therefore</p>
+<p>$$
+e^{\theta\tilde Q}
+=e^{\theta\lambda_+}\tilde\Pi_++e^{\theta\lambda_-}\tilde\Pi_-
+=e^{\theta Q_t}\bigl(e^{iB\theta}\tilde\Pi_++e^{-iB\theta}\tilde\Pi_-\bigr).
+$$</p>
+<p>The two terms are the two <strong>characters</strong> of the flow: on the eigenspace $E_\pm=\tilde\Pi_\pm\mathbb{B}$ left multiplication by $e^{\theta\tilde Q}$ is the scalar character $\theta\mapsto e^{\theta\lambda_\pm}$. The two frequencies coincide exactly when $B=0$: that is the spectral cone, treated in §<em>The Cone</em>. The gap is $\lambda_+-\lambda_-=2iB$, central, and purely imaginary exactly when $B$ is real.</p>
+<h3 id="the-kernel-identity">The Kernel Identity</h3>
+<p><strong>Theorem (the dictionary).</strong> Let $B^2\neq0$, let $\rho=\vec Q/B$, and let $\theta\in\mathbb{C}$. Then</p>
+<p>$$
+e^{\theta\tilde Q}
+=e^{\theta Q_t}\,W\!\left(-\theta,\frac{B}{2\pi}\right)
+=e^{\theta Q_t}\,W\!\left(\theta,-\frac{B}{2\pi}\right).
+$$</p>
+<p><em>Proof.</em> By the closed form of the kernel,</p>
+<p>$$
+W\!\left(-\theta,\frac{B}{2\pi}\right)
+=\exp\!\left(-2\pi\rho\,\frac{B}{2\pi}\,(-\theta)\right)
+=\exp(\rho B\theta).
+$$</p>
+<p>The element $\rho B\theta$ has square $-B^2\theta^2e_t$, so its exponential is $\cos(B\theta)e_t+\sin(B\theta)\rho$. Multiplying by $e^{\theta Q_t}$ and comparing with the closed form of §<em>The Exponential</em> gives the identity. The second form follows because $W(t,-\omega)=W(-t,\omega)$.</p>
+<p><strong>The signs.</strong> The flow is the kernel at negative time and positive frequency, or at positive time and negative frequency. The two flips are the two conventions for the sign of the exponent, and the identity is one statement written twice. With the complex convention $W(t,\omega)=e^{-2\pi i\omega t}$, the character of the flow is $e^{+\theta\lambda_\pm}$, so the time of the kernel is the negative of the flow parameter. A reader who uses the opposite convention for the transform reverses $\omega$ and keeps the identity.</p>
+<p><strong>The period.</strong> The map $\theta\mapsto W(-\theta,B/2\pi)$ has period $2\pi/B$, since $\exp(2\pi\rho)=e_t$. For real $B$ this is the ordinary period $2\pi/\lvert B\rvert$ of the oscillation; for complex $B$ it is a complex period, and the flow is periodic as a map of the complex plane.</p>
+<p>The dictionary is collected in one table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Kernel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flow parameter $\theta$</td>
+<td>time $t=-\theta$</td>
+</tr>
+<tr>
+<td>rate $B$</td>
+<td>angular frequency $2\pi\omega$</td>
+</tr>
+<tr>
+<td>frequency $B/2\pi$</td>
+<td>frequency $\omega$</td>
+</tr>
+<tr>
+<td>root $\rho=\vec Q/B$</td>
+<td>root $\rho$ of $-1$</td>
+</tr>
+<tr>
+<td>eigenvalue $\lambda_\pm=Q_t\pm iB$</td>
+<td>character exponent</td>
+</tr>
+<tr>
+<td>idempotent $\tilde\Pi_\pm$</td>
+<td>algebraic projection onto one frequency component</td>
+</tr>
+<tr>
+<td>eigenspace $E_\pm=\tilde\Pi_\pm\mathbb{B}$</td>
+<td>one of the two invariant planes</td>
+</tr>
+<tr>
+<td>$\cos(B\theta)e_t+\sin(B\theta)\rho$</td>
+<td>$W(t,\omega)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is a dictionary and not an identification of two physical objects. The flow is one element's one-parameter group; the kernel is the generating function of a transform. The identity says that the first is a value of the second, and that the value carries the element's own root and rate.</p>
+<h3 id="the-eigenbasis-is-a-fourier-basis">The Eigenbasis Is a Fourier Basis</h3>
+<p>The transform is computed in a root-adapted basis. Choose pure $\nu$ and $\xi$ with</p>
+<p>$$
+\rho\perp\nu,
+\qquad
+\nu\perp\xi,
+\qquad
+\xi\perp\rho,
+\qquad
+\rho\nu=\xi,
+$$</p>
+<p>where the pairing is the complex bilinear form of the vector part. In the ordered basis $(e_t,\rho,\nu,\xi)$ left multiplication by $\rho$ is block diagonal, with the same two-by-two block on $(e_t,\rho)$ and on $(\nu,\xi)$: the block sends $e_t$ to $\rho$ and $\rho$ to $-e_t$, and it sends $\nu$ to $\xi$ and $\xi$ to $-\nu$. Its eigenvalues are $\pm i$.</p>
+<p><strong>Proposition 2 (the eigenbasis in the Fourier basis).</strong> In the notation above,</p>
+<p>$$
+\rho\tilde\Pi_\pm=\pm i\,\tilde\Pi_\pm,
+\qquad
+\rho u_-=+i\,u_-,
+\qquad
+\rho u_+=-i\,u_+,
+\qquad
+u_\mp=\frac12(\nu\mp i\xi),
+$$</p>
+<p>and $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is a basis of $\mathbb{B}$ in which $L_{\tilde Q}$ is diagonal, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
+<p><em>Proof.</em> The first identity is $\rho(e_t\mp i\rho)/2=(\rho\pm i e_t)/2=\pm i(e_t\mp i\rho)/2$. The second is $\rho(\nu\mp i\xi)/2=(\xi\pm i\nu)/2=\pm i(\nu\mp i\xi)/2$, using $\rho\nu=\xi$ and $\rho\xi=-\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\rho,\nu,\xi)$ is a basis (<em>Biquaternion Continuous Harmonic Analysis</em>, §<em>The Change of Basis</em>); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+B\,L_\rho$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
+<p>The pair $(u_-,u_+)$ spans the two nilpotent lines of the eigenbasis. Those lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Transverse-Vector Construction</em>, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.</p>
+<p><strong>The two cuts are transverse.</strong> The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\rho\}$ and $\operatorname{span}\{\nu,\xi\}$, each of which carries both signs of $i$. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ and $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root and the same complex structure.</p>
+<h3 id="which-frequency">Which Frequency</h3>
+<p>The word <em>frequency</em> is exact in one case and a rate in the others, and the case is decided by $B$, not by normality.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$B^2$</th>
+<th>$B$</th>
+<th>Flow</th>
+<th>Name of $B/2\pi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real positive</td>
+<td>real</td>
+<td>ordinary oscillation, period $2\pi/\lvert B\rvert$</td>
+<td>frequency</td>
+</tr>
+<tr>
+<td>real negative</td>
+<td>purely imaginary</td>
+<td>hyperbolic growth and decay</td>
+<td>rapidity rate</td>
+</tr>
+<tr>
+<td>non-real</td>
+<td>genuinely complex</td>
+<td>oscillation with an exponential envelope</td>
+<td>complex rate</td>
+</tr>
+<tr>
+<td>zero</td>
+<td>zero</td>
+<td>truncated, polynomial</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two physical real forms give the first two rows. For the material sector the vector part is real, so $B^2=\lvert\vec Q\rvert^2>0$ and the flow oscillates. For the Hermitian sector the vector part is purely imaginary, so $B^2=-\lvert\vec Q\rvert^2<0$ and the flow is hyperbolic. The general element has a genuinely complex $B$ and a frequency with an envelope. The element $(1+i)\vec e_x$ of §<em>Worked Examples</em> is normal and has a complex $B$: normality does not make the frequency real.</p>
+<h2 id="the-two-conjugations">The Two Conjugations</h2>
+<h3 id="natural-conjugation">Natural Conjugation</h3>
+<p>The natural conjugation $\natural$ fixes $e_t$ and sends every vector to its negative. For a pure root, $\rho^\natural=-\rho$. Because $\natural$ is complex linear,</p>
+<p>$$
+W(t,\omega)^\natural=\exp(2\pi\rho\,\omega t)=W(t,\omega)^{-1}.
+$$</p>
+<p>The kernel is therefore on the natural unit sphere identically, for every pure root and with no further condition. The flow carries the scalar factor, and the same computation gives</p>
+<p>$$
+\bigl(e^{\theta\tilde Q}\bigr)^\natural\bigl(e^{\theta\tilde Q}\bigr)=e^{2\theta Q_t}e_t,
+$$</p>
+<p>so the quaternionic norm of the flow is $N(e^{\theta\tilde Q})=e^{2\theta Q_t}$, in agreement with <em>Biquaternion Elementary Functions</em>, §<em>The Exponential</em>. The flow is natural-unitary for all $\theta$ exactly when $Q_t=0$.</p>
+<h3 id="hermitian-conjugation">Hermitian Conjugation</h3>
+<p>The Hermitian conjugation is $*=\bar{\natural}$. For a pure root, $\rho^*=-\bar\rho$. Then</p>
+<p>$$
+W(t,\omega)^*=\exp(2\pi\bar\rho\,\omega t),
+\qquad
+W(t,\omega)W(t,\omega)^*=\exp\bigl(-2\pi(\rho-\bar\rho)\omega t\bigr),
+$$</p>
+<p>and the kernel is unitary for the positive Hermitian form exactly when $\rho=\bar\rho$, that is, when $\rho$ is real. This is the criterion of <em>The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</em>, §<em>Unitarity of the Character and the Root</em>, read on the root the element supplies.</p>
+<p><strong>Proposition 3 (unitarity and self-adjointness of the flow).</strong> Let $B^2\neq0$ and let $\theta$ be real. The following are equivalent:</p>
+<ul>
+<li>$e^{\theta\tilde Q}$ is unitary for the Hermitian form for every $\theta$;</li>
+<li>$\tilde Q^*=-\tilde Q$;</li>
+<li>$Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$.</li>
+</ul>
+<p>The following are also equivalent:</p>
+<ul>
+<li>$e^{\theta\tilde Q}$ is self-adjoint for every $\theta$;</li>
+<li>$\tilde Q^*=\tilde Q$;</li>
+<li>$Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$.</li>
+</ul>
+<p><em>Proof.</em> If $E=e^{\theta\tilde Q}$ is unitary for every $\theta$, differentiating $EE^*=e_t$ at $\theta=0$ gives $\tilde Q+\tilde Q^*=0$. Conversely, if $\tilde Q^*=-\tilde Q$ then $E^*=e^{\theta\tilde Q^*}=e^{-\theta\tilde Q}=E^{-1}$. The equivalence with the coordinate conditions is the computation of $*$ on $Q_te_t+\vec Q$: the scalar part is conjugated and the vector part is negated and conjugated, so $\tilde Q^*=-\tilde Q$ means $\bar Q_t=-Q_t$ and $\overline{\vec Q}=\vec Q$. The self-adjoint case is the same computation with the opposite signs.</p>
+<p>The first family is the material sector and the second is the Hermitian sector. Unitarity is strictly stronger than normality, because $\tilde Q^*=-\tilde Q$ implies $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$; the converse fails.</p>
+<h3 id="normality-unitarity-and-the-hermitian-norm-of-the-flow">Normality, Unitarity and the Hermitian Norm of the Flow</h3>
+<p>The normality theorem is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Hermitian Case</em>, with $\vec U=\vec Q/B=\rho$. For $B^2\neq0$, the following are equivalent:</p>
+<ul>
+<li>$\tilde Q$ is normal, $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$;</li>
+<li>$\vec Q\times\overline{\vec Q}=0$, with the complex bilinear cross product;</li>
+<li>$\operatorname{Re}\vec Q$ and $\operatorname{Im}\vec Q$ are parallel;</li>
+<li>$\rho$ is real;</li>
+<li>$\tilde\Pi_\pm$ are Hermitian;</li>
+<li>$E_+$ and $E_-$ are orthogonal for the Hermitian form.</li>
+</ul>
+<p>The criterion involves the vector part alone. The scalar part is free, and this is the first source of confusion: a normal element can have any complex rate $Q_t$.</p>
+<p><strong>Corollary 1.</strong> Normality does not imply unitarity. The element $\tilde Q=(1+i)\vec e_x$ is normal, since $\rho=\vec e_x$ is real, but $\tilde Q^*\neq-\tilde Q$ and $\tilde Q^*\neq\tilde Q$. Its flow is neither unitary nor self-adjoint.</p>
+<p><strong>Corollary 2.</strong> Normality does not imply a constant norm. The same element has $\lvert B\rvert=\sqrt2$ and $\operatorname{Im}B=1$, and its Hermitian norm grows as $\cosh(2\theta)$.</p>
+<p><strong>Corollary 3.</strong> Non-normality does not imply growth. The element $\tilde Q=i\vec e_x+\vec e_y+\vec e_z$ has $\rho=(i,1,1)$ and is not normal, but its Hermitian norm is</p>
+<p>$$
+\bigl\langle e^{\theta\tilde Q}\bigr\rangle_*=\cos^2\theta+3\sin^2\theta=1+2\sin^2\theta,
+$$</p>
+<p>which oscillates between $1$ and $3$ and never grows.</p>
+<p>The general formula is the following.</p>
+<p><strong>Proposition 4 (the Hermitian norm of the flow).</strong> Let $B^2\neq0$ and let $\theta$ be real. Put $\lVert\rho\rVert^2=\sum_k\lvert\rho_k\rvert^2$. Then</p>
+<p>$$
+\bigl\langle e^{\theta\tilde Q}\bigr\rangle_*
+=\lvert e^{\theta Q_t}\rvert^2
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\rho\rVert^2\right).
+$$</p>
+<p><em>Proof.</em> Write $E=e^{\theta Q_t}(a e_t+b\rho)$ with $a=\cos(B\theta)$ and $b=\sin(B\theta)$. Since $\rho$ is pure, the scalar part of $\rho\rho^*$ is $\lVert\rho\rVert^2e_t$, and the cross terms $a\bar b\rho^*+b\bar a\rho$ are pure vectors; hence the scalar part of $EE^*$ is $\lvert e^{\theta Q_t}\rvert^2(\lvert a\rvert^2+\lvert b\rvert^2\lVert\rho\rVert^2)$.</p>
+<p><strong>Proposition 5 (the norm deficit).</strong> $\lVert\rho\rVert^2\ge1$, with equality exactly when $\rho$ is real, that is, exactly when $\tilde Q$ is normal.</p>
+<p><em>Proof.</em> $\lvert B\rvert^2=\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the three squares $Q_k^2$ have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality. If the squares have one argument, $Q_k=\zeta r_k$ with $\zeta^2$ that argument and $r_k$ real up to sign, so $\rho=\vec Q/B$ is real; the converse is immediate.</p>
+<p>The three quantities $Q_t$, $B$ and $\lVert\rho\rVert^2$ govern the norm independently.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Role in $\langle e^{\theta\tilde Q}\rangle_*$</th>
+<th>Condition for its neutral value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Re}Q_t$</td>
+<td>dilation rate $e^{2\theta\operatorname{Re}Q_t}$</td>
+<td>$\operatorname{Re}Q_t=0$</td>
+</tr>
+<tr>
+<td>$\operatorname{Im}B$</td>
+<td>envelope rate, growth as $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$</td>
+<td>$B$ real</td>
+</tr>
+<tr>
+<td>$\lVert\rho\rVert^2$</td>
+<td>oscillation amplitude, $\ge1$</td>
+<td>$\lVert\rho\rVert^2=1$, i.e. normal</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary 4 (bounded and unbounded flows).</strong> If $B$ is real and $\operatorname{Re}Q_t=0$, the Hermitian norm is bounded between $1$ and $\lVert\rho\rVert^2$. If $\operatorname{Re}Q_t\neq0$, it is unbounded on one side. If $\operatorname{Im}B\neq0$, it is unbounded on both sides.</p>
+<p>A non-normal element has a larger oscillation amplitude, not a decay. A decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$, and a boost is a non-zero imaginary part of $B$. The norm deficit measures how far the element is from normal, and it is an amplitude, not a rate.</p>
+<h2 id="the-cone">The Cone</h2>
+<h3 id="no-root-no-frequency">No Root, No Frequency</h3>
+<p>On the spectral cone $B^2=0$ the two eigenvalues coincide at $Q_t$ and the root $\rho=\vec Q/B$ does not exist. Write $\vec N=\vec Q$. Then $\vec N^2=-B^2e_t=0$, so $\vec N$ is square-zero, and the operator is $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec N}$ with $L_{\vec N}^2=0$. There is no frequency to read off and no root to substitute in the kernel.</p>
+<h3 id="the-truncated-kernel">The Truncated Kernel</h3>
+<p>The exponential is</p>
+<p>$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\bigl(e_t+\theta\vec N\bigr),
+$$</p>
+<p>the dual-number exponential $e^{a+b\varepsilon}=e^a(1+b\varepsilon)$ in the algebra generated by $\vec N$, with $\varepsilon=\vec N$ and $b=\theta$. The model is the dual character of <em>Dual Numbers Harmonic Analysis</em>, §<em>The Dual Characters</em>: the exponential of a nilpotent is truncated, not oscillatory.</p>
+<p><strong>The formula extends, the parametrisation does not.</strong> Written without the root,</p>
+<p>$$
+e^{\theta\tilde Q}
+=e^{\theta Q_t}\left(\cos(B\theta)\,e_t+\frac{\sin(B\theta)}{B}\,\vec Q\right),
+$$</p>
+<p>the right-hand side is entire in $B$ and its value at $B=0$ is $e^{\theta Q_t}(e_t+\theta\vec Q)$. The closed form therefore has a limit at the cone even though $B$ and $\rho$ do not. The kernel $W(t,\omega)$ itself has no limit, because it is a function of a root that does not exist; the combination that the flow uses does.</p>
+<h3 id="the-three-strata">The Three Strata</h3>
+<p>The cone carries three normal forms, those of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Degenerate Case: The Cone</em>, and each has its own exponential.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Stratum</th>
+<th>Normal form</th>
+<th>Exponential</th>
+<th>Root</th>
+<th>Eigenbasis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar</td>
+<td>$Q_te_t$</td>
+<td>$e^{\theta Q_t}e_t$</td>
+<td>none</td>
+<td>every basis, none canonical</td>
+</tr>
+<tr>
+<td>nilpotent</td>
+<td>$\vec N$, $\vec N^2=0$</td>
+<td>$e_t+\theta\vec N$</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>unipotent</td>
+<td>$Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$</td>
+<td>$e^{\theta Q_t}(e_t+\theta Q_t\vec\Upsilon)$</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The scalar stratum is a central character with no direction. The nilpotent stratum is a null translation with no rate. The unipotent stratum is a scaled null translation: a rate and a shear, with no frequency. None of the three has a root of $-1$, and none has an oscillatory character.</p>
+<h2 id="global-versus-element-attached">Global versus Element-Attached</h2>
+<p><strong>What is canonical.</strong> For a regular element, the pair of eigenspaces $\{E_+,E_-\}$ is unique, and the eigenvalues are determined up to the exchange of the two branches. The vectors inside each eigenspace are a gauge: multiplying a vector of $E_+$ by a non-zero scalar and a vector of $E_-$ by another leaves the eigenspaces unchanged. The normalised Peirce basis of <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em> fixes that gauge; the root-adapted basis of §<em>The Eigenbasis Is a Fourier Basis</em> fixes it differently.</p>
+<p><strong>Every element expands in the basis of a given regular element.</strong> The four vectors of Proposition 2 form a basis of $\mathbb{B}$, so every biquaternion has coordinates in it; the spectral decomposition of the given element is diagonal in those coordinates. This is the sense in which a regular element supplies a frame for the whole algebra — a frame attached to the element, not a frame of the algebra.</p>
+<p><strong>No global eigenbasis.</strong> A basis that diagonalized every $L_{\tilde Q}$ would make every $L_{\tilde Q}$ diagonal in one basis, hence would make any two of them commute; then every two elements of $\mathbb{B}$ would commute, which is false. The obstruction is the noncommutativity, not the choice of root.</p>
+<p><strong>No canonical root.</strong> A non-central root $\rho$ is moved by an inner automorphism: if $U$ is a unit with $U\rho\neq\rho U$, then $U\rho U^{-1}$ is another root of $-1$. The central roots $\pm i$ are fixed by every inner automorphism, but they are not pure and no regular element supplies them. The algebra therefore has no root that is both canonical and available to the dictionary.</p>
+<p><strong>On the cone.</strong> The scalar line has every basis as an eigenbasis and none as a canonical one. The nilpotent and unipotent strata have no eigenbasis. The global statement is the one of the introduction: the eigenbasis exists on the open dense set $B^2\neq0$, is attached to the element, and is not canonical as a global object.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>The table reads five elements through the dictionary. The last three columns record whether the flow is normal, unitary and self-adjoint.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde Q$</th>
+<th>$B^2$, $B$</th>
+<th>$\rho$</th>
+<th>$\lambda_\pm$</th>
+<th>$e^{\theta\tilde Q}$</th>
+<th>$\langle e^{\theta\tilde Q}\rangle_*$</th>
+<th>normal</th>
+<th>unitary</th>
+<th>self-adjoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec e_x$</td>
+<td>$1$, $1$</td>
+<td>$\vec e_x$</td>
+<td>$\pm i$</td>
+<td>$\cos\theta\,e_t+\sin\theta\,\vec e_x$</td>
+<td>$1$</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$i\vec e_x$</td>
+<td>$-1$, $i$</td>
+<td>$\vec e_x$</td>
+<td>$\mp1$</td>
+<td>$\cosh\theta\,e_t+i\sinh\theta\,\vec e_x$</td>
+<td>$\cosh2\theta$</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$(1+i)\vec e_x$</td>
+<td>$2i$, $1+i$</td>
+<td>$\vec e_x$</td>
+<td>$\mp(1-i)$</td>
+<td>$\cos((1+i)\theta)e_t+\sin((1+i)\theta)\vec e_x$</td>
+<td>$\cosh2\theta$</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$i\vec e_x+\vec e_y+\vec e_z$</td>
+<td>$1$, $1$</td>
+<td>$(i,1,1)$</td>
+<td>$\pm i$</td>
+<td>$\cos\theta\,e_t+\sin\theta\,\rho$</td>
+<td>$1+2\sin^2\theta$</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$(1+i)e_t+\vec e_x$</td>
+<td>$1$, $1$</td>
+<td>$\vec e_x$</td>
+<td>$1\pm2i$</td>
+<td>$e^{(1+i)\theta}(\cos\theta\,e_t+\sin\theta\,\vec e_x)$</td>
+<td>$e^{2\theta}$</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are the two real forms. The first is the material case: real $B$, real root, unitary flow, constant norm. The second is the Hermitian case: imaginary $B$, real root, self-adjoint flow, hyperbolic norm.</p>
+<p>The third row is normal, with a real root, and is neither unitary nor self-adjoint; its $B$ is genuinely complex and its norm grows. It shows that normality is orthogonal diagonalisation and nothing more. The fourth row is not normal, and its norm oscillates between $1$ and $3$; it shows that non-normality is not a decay. The fifth row is normal and grows because of the scalar rate $Q_t=1+i$.</p>
+<p>The kernel identity is visible in the first row: $e^{\theta\vec e_x}=W(-\theta,1/2\pi)$, since $Q_t=0$ and $B=1$. In the second row the same kernel with an imaginary frequency gives the hyperbolic form, because $\cos(i\theta)=\cosh\theta$ and $\sin(i\theta)=i\sinh\theta$.</p>
+<p><strong>The cone.</strong> Take $\vec N=\vec e_x+i\vec e_y$. Then $\vec N^2=(-1)+(-1)(i^2)=0$ and $e^{\theta\vec N}=e_t+\theta\vec N$. Adjoining a scalar, $\tilde Q=Q_te_t+\vec N$ gives $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec N)$. The element is unipotent when $Q_t\neq0$ and nilpotent when $Q_t=0$; the exponential is polynomial in both cases, and no root is available.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p>The article states an algebraic dictionary. It does not supply a dynamics: $\theta$ is a flow parameter, and $B/2\pi$ is a rate of that flow, not the frequency of a signal, until an equation of motion identifies the two. The identification is the work of the physics companions and is not made here.</p>
+<p>It does not reprove the transform theory. Inversion, Plancherel, the convolution theorem and the vanishing-norm issue are those of <em>Biquaternion Continuous Harmonic Analysis</em>, and nothing in the dictionary decides them. The identity is pointwise in the element and does not commute with an integral.</p>
+<p>It does not claim a canonical root or a global basis. The root is attached to the element, and §<em>Global versus Element-Attached</em> states the two obstructions: noncommutativity for a global basis, and the inner automorphisms for a canonical root.</p>
+<p>It does not identify normality with unitarity, nor non-normality with damping. Proposition 3 gives the exact unitarity criterion, Proposition 4 the exact norm formula, and Proposition 5 the exact deficit. In particular the deficiency $\lVert\rho\rVert^2-1$ is an amplitude, and the decay rate is $\operatorname{Re}Q_t$.</p>
+<p>The sign convention is conventional. The theorem is stated with the exponent $+\theta\tilde Q$ and the kernel $e^{-2\pi\rho\omega t}$; the other convention flips both signs and leaves the content unchanged.</p>
+<p>The cone is not a limit of the regular kernel in the ordinary sense. The closed form of the flow extends to $B=0$, and §<em>The Truncated Kernel</em> says exactly what extends and what does not: the formula extends, the root and the frequency do not.</p>
+<h2 id="summary">Summary</h2>
+<p>A regular element $\tilde Q=Q_te_t+\vec Q$ supplies the root $\rho=\vec Q/B$ of the Fourier kernel, and its exponential is the kernel at negative time:</p>
+<p>$$
+e^{\theta\tilde Q}
+=e^{\theta Q_t}\left(\cos(B\theta)e_t+\sin(B\theta)\rho\right)
+=e^{\theta Q_t}W\!\left(-\theta,\frac{B}{2\pi}\right).
+$$</p>
+<p>The eigenvalues $\lambda_\pm=Q_t\pm iB$ are the character exponents, the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$ are the algebraic projections onto the two frequency components, and the eigenbasis is the root-adapted Fourier basis diagonalized block by block. The Fourier factorization keeps the two invariant planes; the spectral decomposition regroups their four lines by eigenvalue; the two cuts are transverse.</p>
+<p>The kernel is natural-unitary for every pure root, and Hermitian-unitary exactly when the root is real. The flow is Hermitian-unitary exactly in the material sector, and Hermitian-self-adjoint exactly in the Hermitian sector. Normality is the orthogonality of the eigenbasis: it is a condition on $\vec Q$ alone, it is weaker than unitarity, and it does not make the norm constant.</p>
+<p>The Hermitian norm of the flow is</p>
+<p>$$
+\bigl\langle e^{\theta\tilde Q}\bigr\rangle_*
+=\lvert e^{\theta Q_t}\rvert^2
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\lVert\rho\rVert^2\right),
+\qquad
+\lVert\rho\rVert^2\ge1,
+$$</p>
+<p>with equality exactly when the element is normal. The three sources of norm change are independent: the dilation $\operatorname{Re}Q_t$, the envelope $\operatorname{Im}B$, and the oscillation amplitude $\lVert\rho\rVert^2$. Damping is the dilation, a boost is the envelope, and the third is neither.</p>
+<p>On the cone there is no root and no frequency. The exponential is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$, the dual-number kernel, and the three strata are the central character, the null translation and the scaled null translation. The closed form of the flow extends to $B=0$; the root and the frequency do not.</p>
+<h3 id="main-results">Main Results</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root supplied by the element</td>
+<td>$\rho=\vec Q/B$, $\rho^2=-e_t$, $\tilde Q=Q_te_t+B\rho$</td>
+</tr>
+<tr>
+<td>Closed form</td>
+<td>$e^{\theta\tilde Q}=e^{\theta Q_t}(\cos(B\theta)e_t+\sin(B\theta)\rho)$</td>
+</tr>
+<tr>
+<td>Kernel identity</td>
+<td>$e^{\theta\tilde Q}=e^{\theta Q_t}W(-\theta,B/2\pi)$</td>
+</tr>
+<tr>
+<td>Eigenvalues</td>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+</tr>
+<tr>
+<td>Idempotents</td>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$</td>
+</tr>
+<tr>
+<td>Spectral form</td>
+<td>$e^{\theta\tilde Q}=e^{\theta Q_t}(e^{iB\theta}\tilde\Pi_++e^{-iB\theta}\tilde\Pi_-)$</td>
+</tr>
+<tr>
+<td>Eigenspaces</td>
+<td>$E_\pm=\tilde\Pi_\pm\mathbb{B}$</td>
+</tr>
+<tr>
+<td>Fourier eigenbasis</td>
+<td>$(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$, $u_\mp=\tfrac12(\nu\mp i\xi)$</td>
+</tr>
+<tr>
+<td>Natural unitarity of the kernel</td>
+<td>$W^\natural=W^{-1}$ for every pure root</td>
+</tr>
+<tr>
+<td>Hermitian unitarity of the kernel</td>
+<td>$W^*=W^{-1}$ iff $\rho$ real</td>
+</tr>
+<tr>
+<td>Unitary flow</td>
+<td>$\tilde Q^*=-\tilde Q$ iff $Q_t\in i\mathbb{R}$, $\vec Q\in\mathbb{R}^3$</td>
+</tr>
+<tr>
+<td>Self-adjoint flow</td>
+<td>$\tilde Q^*=\tilde Q$ iff $Q_t\in\mathbb{R}$, $\vec Q\in i\mathbb{R}^3$</td>
+</tr>
+<tr>
+<td>Normal element</td>
+<td>$\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$ iff $\rho$ real iff $\operatorname{Re}\vec Q\parallel\operatorname{Im}\vec Q$ iff $\tilde\Pi_\pm$ Hermitian</td>
+</tr>
+<tr>
+<td>Hermitian norm</td>
+<td>$\lvert e^{\theta Q_t}\rvert^2(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\lVert\rho\rVert^2)$</td>
+</tr>
+<tr>
+<td>Norm deficit</td>
+<td>$\lVert\rho\rVert^2\ge1$, equality iff normal</td>
+</tr>
+<tr>
+<td>Bounded Hermitian norm</td>
+<td>iff $B$ real and $\operatorname{Re}Q_t=0$</td>
+</tr>
+<tr>
+<td>Cone</td>
+<td>$e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec N)$, $\vec N^2=0$</td>
+</tr>
+<tr>
+<td>No global basis</td>
+<td>noncommutativity of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>No canonical root</td>
+<td>inner automorphisms move the non-central roots</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a biquaternion, $Q_t\in\mathbb{C}$, $\vec Q\in\mathbb{C}^3$</td>
+</tr>
+<tr>
+<td>$B^2=(\vec Q,\vec Q)=Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the bilinear square of the vector part</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>a fixed square root of $B^2$; the other is $-B$</td>
+</tr>
+<tr>
+<td>$\rho=\vec Q/B$</td>
+<td>the root of $-1$ supplied by the element</td>
+</tr>
+<tr>
+<td>$\vec\Xi=-i\rho$</td>
+<td>the root of $+1$ used by the spectral articles</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues, the character exponents</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$</td>
+<td>the spectral idempotents</td>
+</tr>
+<tr>
+<td>$E_\pm=\tilde\Pi_\pm\mathbb{B}$</td>
+<td>the eigenspaces of left multiplication</td>
+</tr>
+<tr>
+<td>$W(t,\omega)=\exp(-2\pi\rho\omega t)$</td>
+<td>the biquaternion Fourier kernel</td>
+</tr>
+<tr>
+<td>$\nu,\xi$</td>
+<td>pure directions completing $\rho$ to a root-adapted basis</td>
+</tr>
+<tr>
+<td>$u_\mp=\tfrac12(\nu\mp i\xi)$</td>
+<td>the nilpotent pair of the eigenbasis</td>
+</tr>
+<tr>
+<td>$\vec N=\vec Q$ on the cone, $\vec N^2=0$</td>
+<td>the nilpotent part of a degenerate element</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the natural conjugation, $e_t\mapsto e_t$, $\vec e_k\mapsto-\vec e_k$</td>
+</tr>
+<tr>
+<td>$*$</td>
+<td>the Hermitian conjugation, $\bar{\natural}$</td>
+</tr>
+<tr>
+<td>$\langle X\rangle_*=XX^*$</td>
+<td>the positive Hermitian form</td>
+</tr>
+<tr>
+<td>$N(X)=XX^\natural$</td>
+<td>the quaternionic norm</td>
+</tr>
+<tr>
+<td>$\lVert\rho\rVert^2=\sum_k\lvert\rho_k\rvert^2$</td>
+<td>the Euclidean square of the root</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the flow parameter</td>
+</tr>
+<tr>
+<td>$t,\omega$</td>
+<td>the kernel time and frequency</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential, the logarithm, the kernel and the principal branch.</li>
+<li><a href="biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>, for the kernel, the transform pair, inversion, Plancherel and the factorization into complex transforms.</li>
+<li><a href="biquaternion-discrete-harmonic-analysis.html">Biquaternion Discrete Harmonic Analysis</a>, for the discrete transform and the condition on the root.</li>
+<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Hermitian Case</em>, for normality, the Hermitian projectors and the orthogonal spectral resolution.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the cone and the three strata.</li>
+<li><a href="spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html">Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</a>, for the normalised Peirce basis, the unique expansion and the spinor spaces.</li>
+<li><a href="the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html">The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</a>, for the unitarity criterion of the character.</li>
+<li><a href="dual-numbers-harmonic-analysis.html">Dual Numbers Harmonic Analysis</a>, for the non-oscillating characters of the truncated regime.</li>
+<li><a href="harmonic-analysis-over-hypercomplex-systems.html">Harmonic Analysis over Hypercomplex Systems</a>, for the place of the transform among the eight systems.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the independence of the two conditions.</li>
+<li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</a>, for the companion dictionary between the exponential and the spectrum.</li>
+<li><a href="../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the physical interpretation of the two cases.</li>
+<li><a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a>, for the root as the clock and the frequency as its rate.</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the notation and the conjugations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

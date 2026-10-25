@@ -115,6 +115,20 @@ $$</p>
 $$</p>
 <p>where $\Re(\rho)$ and $\Im(\rho)$ are the real and imaginary quaternion parts of $\rho$. This is the content of the classification of the biquaternion roots of $-1$ given in the division theory article. The classification yields three families: the scalar imaginary $\rho = \pm i$, the unit pure real quaternions $\rho = \pm \mu_{\mathbb{R}}$, and the non-trivial roots $\rho = b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$.</p>
 <p>The three families give three essentially different Fourier transforms, as in the discrete case.</p>
+<h3 id="the-kernel-as-the-exponential-of-an-element">The Kernel as the Exponential of an Element</h3>
+<p>The kernel is itself an exponential, and a spectrally regular element supplies its own root and rate.</p>
+<p><strong>Proposition (the element's kernel).</strong> Let $\tilde Q=Q_te_t+\vec Q$ with $B^2=\vec Q\cdot\vec Q\neq0$, let $B$ be a square root of $B^2$, and put $\rho=\vec Q/B$. Then $\rho^2=-e_t$ and, for every complex $\theta$,</p>
+<p>$$
+e^{\theta\tilde Q}
+=e^{\theta Q_t}\,W\!\left(-\theta,\frac{B}{2\pi}\right)
+=e^{\theta Q_t}\,W\!\left(\theta,-\frac{B}{2\pi}\right).
+$$</p>
+<p>In particular, when $Q_t=0$, $W(t,B/2\pi)=e^{-t\tilde Q}$.</p>
+<p><em>Proof.</em> By the closed form of the kernel, $W(-\theta,B/2\pi)=\exp(\rho B\theta)$. The element $\rho B\theta$ squares to $-B^2\theta^2e_t$, so its exponential is $\cos(B\theta)e_t+\sin(B\theta)\rho$; multiplying by $e^{\theta Q_t}$ and comparing with the closed form of the exponential gives the identity. The second form follows from $W(t,-\omega)=W(-t,\omega)$.</p>
+<p><strong>The root is pure.</strong> The root $\rho=\vec Q/B$ has no scalar part. The central roots $\pm i$ are therefore never the root of a regular element; the dictionary always lands in the two pure families.</p>
+<p><strong>Two cuts.</strong> In the root-adapted basis $(e_t,\rho,\nu,\xi)$ of §<em>Factorization into Complex Fourier Transforms</em>, left multiplication by $\rho$ is block diagonal with the block $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ repeated on the two planes. The spectral eigenbasis diagonalises the two blocks; it is $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ with $u_\mp=\frac12(\nu\mp i\xi)$, and it takes one line from each Fourier plane. The Fourier factorization and the spectral decomposition are transverse; the dictionary is <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>, §<em>The Eigenbasis Is a Fourier Basis</em>.</p>
+<p><strong>The cone.</strong> At $B=0$ there is no root and no frequency. The flow is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N=\vec Q$ and $\vec N^2=0$; the root-free closed form extends to $B=0$, and the kernel itself has no limit, because it is a function of a root that does not exist (<em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Exponential on the Cone</em>).</p>
+<p><strong>Boundary.</strong> The identity is pointwise in the element. It changes no inversion, Plancherel or convolution statement of the transform; it identifies the kernel of the transform with the flow of one regular element.</p>
 <h2 id="the-continuous-transform-pair">The Continuous Transform Pair</h2>
 <h3 id="definition_1">Definition</h3>
 <p>Let $f : \mathbb{R} \to \mathbb{B}$ be a biquaternion-valued function. The <strong>continuous biquaternion Fourier transform</strong> of $f$ is</p>
@@ -499,6 +513,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the exponential of a regular element as the kernel at negative time, the root the element supplies, the character exponents, the eigenbasis read in the root-adapted basis and the two unitarity criteria.</li>
 <li>S. Said, N. Le Bihan, S. J. Sangwine, "Fast complexified quaternion Fourier transform", <em>IEEE Transactions on Signal Processing</em> <strong>56</strong> (2008) 1522–1531, for the discrete biquaternion Fourier transform.</li>
 <li>S. J. Sangwine and T. A. Ell, "Complexification of the quaternion roots of $-1$", arXiv:math.RA/0506190 (2005), for the classification of the biquaternion roots of $-1$.</li>
 <li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", arXiv:0812.1102 (2008), for the classification of the zero divisors.</li>
