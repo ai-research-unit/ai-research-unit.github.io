@@ -126,17 +126,17 @@ $$</p>
 <p>$$
 \mathbb{C}[\tilde Q]=\{a e_t+b\tilde Q\ :\ a,b\in\mathbb{C}\}.
 $$</p>
-<p>Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Upsilon$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence <strong>no non-trivial idempotent commutes with $\tilde Q$</strong>, and $\tilde Q$ admits no adapted Peirce decomposition.</p>
+<p>Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Upsilon$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence <strong>no non-trivial idempotent commutes with $\tilde Q$</strong>, and $\tilde Q$ admits no Peirce decomposition attached to it.</p>
 <p><strong>Peirce form.</strong> Let $e$ be an idempotent with $\tilde Q=e\tilde Q(e_t-e)$; such an idempotent exists because $\tilde Q$ generates a minimal left ideal. Then $e\tilde Q=\tilde Q$ and $\tilde Qe=0$; with $f=e_t-e$, the Peirce form is purely off-diagonal:</p>
 <p>$$
 e\tilde Qe=0,\qquad e\tilde Qf=\tilde Q,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0.
 $$</p>
-<p>So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No Peirce decomposition adapted to $\tilde Q$ can exist, since an adapted one would place $\tilde Q$ in the diagonal corners $\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.</p>
+<p>So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No Peirce decomposition relative to $\tilde Q$ can exist, since such a decomposition would place $\tilde Q$ in the diagonal corners $\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.</p>
 <p><strong>Spectrum and minimal polynomial.</strong> The spectrum is $\{0\}$ and the minimal polynomial is $X^2$, not $X$: the element is defective, a single Jordan block of size two with eigenvalue $0$.</p>
 <p><strong>The spectral decomposition.</strong> There is none: the minimal polynomial $X^2$ is not squarefree, the only idempotents in the centraliser are $0$ and $e_t$, and the eigenspace of $L_{\tilde Q}$ for $0$ is the annihilator $A(\tilde Q)$, a complex plane, which cannot contain a basis. The powers vanish, $\tilde Q^n=0$ for $n\geq2$.</p>
 <h2 id="peirce-data">Peirce Data</h2>
-<p><strong>Off the origin the Peirce form is purely off-diagonal and no adapted decomposition exists. At the origin every idempotent is adapted and the Peirce matrix is zero.</strong></p>
-<p>Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$, and there is no adapted Peirce decomposition.</p>
+<p><strong>Off the origin the Peirce form is purely off-diagonal and no Peirce decomposition relative to $\tilde Q$ exists. At the origin every idempotent commutes with $\tilde Q$ and the Peirce matrix is zero.</strong></p>
+<p>Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$, and there is no Peirce decomposition relative to $\tilde Q$.</p>
 <p>A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. With $f=e_t-e$ the Peirce form is</p>
 <p>$$
 e\tilde Qe=0,\qquad
@@ -144,11 +144,11 @@ e\tilde Qf=\vec\Upsilon,\qquad
 f\tilde Qe=0,\qquad
 f\tilde Qf=0.
 $$</p>
-<p>The element lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair; by the argument of §<em>The Elements</em> no adapted Peirce decomposition can exist. In the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix is the single nilpotent block</p>
+<p>The element lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair; by the argument of §<em>The Elements</em> no Peirce decomposition relative to $\tilde Q$ can exist. In the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix is the single nilpotent block</p>
 <p>$$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
 $$</p>
-<p><strong>No Q-adapted basis.</strong> The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. No Peirce pair is attached to $\tilde Q$, and no Q-adapted Peirce basis exists.</p>
+<p><strong>No eigenbasis.</strong> The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. No Peirce pair is attached to $\tilde Q$, and no eigenbasis exists.</p>
 <h2 id="the-origin">The Origin</h2>
 <p>The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is not a nilpotent of index two.</p>
 <ul>
@@ -157,7 +157,7 @@ $$</p>
 <li>It is the only element of the sector on which both multiplications are the zero map, $L_0=R_0=0$, of rank $0$ and kernel $\mathbb{B}$.</li>
 <li>It lies in the closure of every other sector: every sector is invariant under the scaling $\tilde Q\mapsto\lambda\tilde Q$ for $\lambda\neq0$, so every punctured neighbourhood of $0$ meets all four.</li>
 <li>It is the only diagonalisable element of the sector, which is why "spectrally degenerate" does not coincide with "non-diagonalisable".</li>
-<li>Its spectral decomposition is the one-term writing $0=0\cdot e_t$, with every idempotent adapted to it and the Peirce matrix zero in every Peirce basis; it is the only element of the sector for which a spectral decomposition exists.</li>
+<li>Its spectral decomposition is the one-term writing $0=0\cdot e_t$, with every idempotent commuting with it and the Peirce matrix zero in every Peirce basis; it is the only element of the sector for which a spectral decomposition exists.</li>
 </ul>
 <h2 id="multiplication">Multiplication</h2>
 <p><strong>The sector is not closed under the product.</strong> The quaternionic norm is multiplicative, so $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)=0$ for $\tilde P,\tilde Q\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is</p>
@@ -194,7 +194,7 @@ $$</p>
 <th>sector</th>
 <th>conditions</th>
 <th>elements</th>
-<th>adapted Peirce</th>
+<th>Peirce decomposition</th>
 <th>product</th>
 </tr>
 </thead>
@@ -248,7 +248,7 @@ $$</p>
 <p><strong>Eigenbasis.</strong> None, except at the origin. Every non-zero element of $\Sigma_{00}$ has characteristic and minimal polynomial $X^2$: it is a single Jordan block with eigenvalue $0$; the eigenspace is the annihilator plane $A(\tilde Q)$.</p>
 <p><strong>Polar decomposition.</strong> The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Biquaternions</em> has no value on the sector: there is no unit factor of norm one.</p>
 <p><strong>One-sided operators.</strong> Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.</p>
-<p><strong>The "everything fails" cell.</strong> It is the cell in which invertibility, the adapted Peirce decomposition (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.</p>
+<p><strong>The "everything fails" cell.</strong> It is the cell in which invertibility, the Peirce decomposition relative to $\tilde Q$ (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.</p>
 <h2 id="summary">Summary</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -284,7 +284,7 @@ $$</p>
 </tr>
 <tr>
 <td>Peirce form</td>
-<td>purely off-diagonal; no adapted decomposition off the origin</td>
+<td>purely off-diagonal; no Peirce decomposition relative to $\tilde Q$ off the origin</td>
 </tr>
 <tr>
 <td>spectrum</td>

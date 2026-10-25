@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Worked Examples of Eigenbasis a Biquaternion — Biquaternion Universe</title>
+  <title>Worked Examples of Eigenbasis of a Biquaternion — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,9 +68,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="worked-examples-of-eigenbasis-a-biquaternion"><strong>Worked Examples of Eigenbasis a Biquaternion</strong></h1>
+        <h1 id="worked-examples-of-eigenbasis-of-a-biquaternion"><strong>Worked Examples of Eigenbasis of a Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article computes the eigenvalue decomposition, the $Q$-adapted Peirce basis, the nilpotents and the eigenbasis of eight biquaternions, one after another. The eight elements are those of <em>Worked Examples of Exponential Polar Decomposition of Biquaternions</em>, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>; the $Q$-adapted basis and the nilpotents are those of <em>The Quaternionic Norm-Regular, Spectrally Regular Sector</em>, §<em>The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis</em>; no definition or proof is repeated.</p>
+<p>This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of <em>Worked Examples of Exponential Polar Decomposition of Biquaternions</em>, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>; the eigenbasis and the nilpotents are those of <em>The Quaternionic Norm-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>; no definition or proof is repeated.</p>
 <p>Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$ of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Write</p>
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -87,7 +87,7 @@ $$</p>
 \qquad
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
 $$</p>
-<p>The eight cases cover five elements with $B\neq0$, one scalar and two elements with $B=0$ and $\vec Q\neq0$. In the Q-adapted basis a general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with the matrix $\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}$; its two columns are the two spinors.</p>
+<p>The eight cases cover five elements with $B\neq0$, one scalar and two elements with $B=0$ and $\vec Q\neq0$. In the eigenbasis a general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with the matrix $\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}$; its two columns are the two spinors.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -304,7 +304,7 @@ $$</p>
 \;}
 $$</p>
 <p>The pair is the same for the four elements, because it depends only on $\vec\Xi$, not on the eigenvalues.</p>
-<h3 id="the-q-adapted-peirce-basis">The Q-Adapted Peirce Basis</h3>
+<h3 id="the-eigenbasis">The Eigenbasis</h3>
 <p>The four elements</p>
 <p>$$
 \tilde\Pi_+,
@@ -315,7 +315,7 @@ $$</p>
 \qquad
 \tilde\Pi_-
 $$</p>
-<p>form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the <strong>$Q$-adapted Peirce basis</strong>. Write $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$ and $R_{\tilde Q}(\tilde P)=\tilde P\tilde Q$ for left and right multiplication. In this basis multiplication by $\tilde Q$ is diagonal:</p>
+<p>form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the <strong>eigenbasis</strong>. Write $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$ and $R_{\tilde Q}(\tilde P)=\tilde P\tilde Q$ for left and right multiplication. In this basis multiplication by $\tilde Q$ is diagonal:</p>
 <p>$$
 \tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,
 \qquad
@@ -325,11 +325,11 @@ $$</p>
 \qquad
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
 $$</p>
-<p>Thus the matrix of left multiplication $L_{\tilde Q}$ in the $Q$-adapted basis is</p>
+<p>Thus the matrix of left multiplication $L_{\tilde Q}$ in the eigenbasis is</p>
 <p>$$
 \operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$</p>
-<p>Because each eigenvalue occurs twice, the eigenbasis is not unique: any basis of the $\lambda_+$-eigenspace together with any basis of the $\lambda_-$-eigenspace is an eigenbasis. The $Q$-adapted basis is the choice singled out by the Peirce structure.</p>
+<p>Because each eigenvalue occurs twice, the eigenbasis is not unique: any basis of the $\lambda_+$-eigenspace together with any basis of the $\lambda_-$-eigenspace is an eigenbasis. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is the choice singled out by the Peirce structure.</p>
 <p>The two minimal left ideals are</p>
 <p>$$
 S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
@@ -341,8 +341,8 @@ $$</p>
 \mathbb{B}=S_+\oplus S_-.
 $$</p>
 <p>On $S_+$ the eigenbasis is $(\tilde\Pi_+,\vec\Upsilon_+)$, with eigenvalues $\lambda_+$ and $\lambda_-$; on $S_-$ it is $(\vec\Upsilon_-,\tilde\Pi_-)$, with eigenvalues $\lambda_+$ and $\lambda_-$. Each is an eigenbasis with distinct eigenvalues, because $B\neq0$.</p>
-<p>The spaces $S_\pm$ are the spinor spaces, the minimal left ideals. They are not the eigenspaces of $L_{\tilde Q}$: the $\lambda_+$-eigenspace is the right ideal $\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-$. The spaces $S_\pm$ are the eigenspaces of right multiplication $R_{\tilde Q}$. The $Q$-adapted basis is an eigenbasis of $L_{\tilde Q}$; on each $S_\pm$, $L_{\tilde Q}$ carries both eigenvalues, while $R_{\tilde Q}$ is scalar. The side of the multiplication is the whole difference. The labels first and second are fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing $B$ by $-B$ exchanges them.</p>
-<h3 id="spinors-and-the-math135-model">Spinors and the $2\times2$ Model</h3>
+<p>The spaces $S_\pm$ are the spinor spaces, the minimal left ideals. They are not the eigenspaces of $L_{\tilde Q}$: the $\lambda_+$-eigenspace is the right ideal $\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-$. The spaces $S_\pm$ are the eigenspaces of right multiplication $R_{\tilde Q}$. This basis is an eigenbasis of $L_{\tilde Q}$; on each $S_\pm$, $L_{\tilde Q}$ carries both eigenvalues, while $R_{\tilde Q}$ is scalar. The side of the multiplication is the whole difference. The labels first and second are fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing $B$ by $-B$ exchanges them.</p>
+<h3 id="spinors-and-the-math130-model">Spinors and the $2\times2$ Model</h3>
 <p>A spinor of first chirality is an element of $S_+$,</p>
 <p>$$
 \xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+,
@@ -375,7 +375,7 @@ $$</p>
 \qquad
 \tilde\Pi_-\longmapsto E_{22}
 $$</p>
-<p>gives the $Q$-adapted model $\mathsf M_2^Q$. For a general element</p>
+<p>gives the eigenbasis model $\mathsf M_2^Q$. For a general element</p>
 <p>$$
 \tilde P=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
 $$</p>
@@ -449,7 +449,7 @@ $$</p>
 <td>Distinct</td>
 <td>$B\neq0$</td>
 <td>$\lambda_+\neq\lambda_-$</td>
-<td>the $Q$-adapted basis; unique up to the reciprocal rescaling of $\vec\Upsilon_\pm$ and the exchange from $B\mapsto-B$</td>
+<td>the eigenbasis; unique up to the reciprocal rescaling of $\vec\Upsilon_\pm$ and the exchange from $B\mapsto-B$</td>
 </tr>
 <tr>
 <td>Jordan</td>
@@ -465,7 +465,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>In the Jordan regime, write $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$. The minimal polynomial is $(X-Q_t)^2$. When $Q_t\neq0$ the element is unipotent up to the scalar $Q_t$; when $Q_t=0$ it is nilpotent. In both subcases the eigenspace is $\ker L_{\vec N}$, of dimension two. A two-dimensional eigenspace in a four-dimensional algebra is not a basis of eigenvectors, so there is no eigenbasis. In the scalar regime the operator is $Q_t\,\mathrm{id}$, every nonzero vector is an eigenvector, and every basis is an eigenbasis; the $Q$-adapted construction does not apply because $\vec\Xi$ is undefined.</p>
+<p>In the Jordan regime, write $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$. The minimal polynomial is $(X-Q_t)^2$. When $Q_t\neq0$ the element is unipotent up to the scalar $Q_t$; when $Q_t=0$ it is nilpotent. In both subcases the eigenspace is $\ker L_{\vec N}$, of dimension two. A two-dimensional eigenspace in a four-dimensional algebra is not a basis of eigenvectors, so there is no eigenbasis. In the scalar regime the operator is $Q_t\,\mathrm{id}$, every nonzero vector is an eigenvector, and every basis is an eigenbasis; the construction of the eigenbasis does not apply because $\vec\Xi$ is undefined.</p>
 <h2 id="the-eight-cases">The Eight Cases</h2>
 <h3 id="case-1-the-identity">Case 1: The Identity</h3>
 <p><strong>Coordinates.</strong> For $\tilde Q=e_t$,</p>
@@ -482,8 +482,8 @@ $$</p>
 <p>$$
 L_{\tilde Q}=\mathrm{id}.
 $$</p>
-<p>Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the eigenspace is the whole algebra, of dimension four. There is no $Q$-adapted Peirce basis attached to $\tilde Q$, because the root $\vec\Xi=-i\vec Q/B$ is undefined. The standard Peirce pair $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ is a choice; in it the matrix of $L_{\tilde Q}$ is the identity.</p>
-<p><strong>Spinors.</strong> There is no Q-adapted spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
+<p>Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the eigenspace is the whole algebra, of dimension four. There is no eigenbasis attached to $\tilde Q$, because the root $\vec\Xi=-i\vec Q/B$ is undefined. The standard Peirce pair $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ is a choice; in it the matrix of $L_{\tilde Q}$ is the identity.</p>
+<p><strong>Spinors.</strong> There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
 \mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
 $$
@@ -554,7 +554,7 @@ $$</p>
 \qquad
 \vec\Upsilon_+^2=\vec\Upsilon_-^2=0.
 $$</p>
-<p><strong>The eigenbasis.</strong> The $Q$-adapted basis is</p>
+<p><strong>The eigenbasis.</strong> The basis is</p>
 <p>$$
 \tilde\Pi_+,
 \qquad
@@ -676,7 +676,7 @@ $$</p>
 <p>$$
 \tilde Q=\frac{1+i}{\sqrt2}\tilde\Pi_++\frac{1-i}{\sqrt2}\tilde\Pi_-.
 $$</p>
-<p><strong>The eigenbasis.</strong> The $Q$-adapted basis is again</p>
+<p><strong>The eigenbasis.</strong> The basis is again</p>
 <p>$$
 (\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-),
 $$</p>
@@ -998,7 +998,7 @@ $$</p>
 \tilde Q^{-1}=e_t-\tilde N
 =e_t-\frac{i}{\sqrt2}\vec e_x-\vec e_y-\frac{i}{\sqrt2}\vec e_z.
 $$</p>
-<p><strong>Spinors.</strong> There is no Q-adapted spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
+<p><strong>Spinors.</strong> There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
 \mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
 $$
@@ -1119,7 +1119,7 @@ $$</p>
 \vec\Upsilon_+^2=\vec\Upsilon_-^2=0.
 $$</p>
 <p>The nilpotents are not simple coordinate expressions, because the direction of $\vec Q$ is not aligned with an axis. They are computed from the projection formula, which is the general construction.</p>
-<p><strong>The eigenbasis.</strong> The $Q$-adapted basis is</p>
+<p><strong>The eigenbasis.</strong> The basis is</p>
 <p>$$
 (\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-),
 $$</p>
@@ -1229,7 +1229,7 @@ $$</p>
 <p>$$
 \tilde Q^{-1}=\frac{1-i}{2}e_t+\frac{i}{2}\vec e_x-\frac12\vec e_y.
 $$</p>
-<p><strong>Spinors.</strong> There is no Q-adapted spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
+<p><strong>Spinors.</strong> There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
 \mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
 $$
@@ -1369,7 +1369,7 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-eigenbasis-table">The Eigenbasis Table</h3>
-<p>For the five distinct cases the $Q$-adapted basis is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonal values are $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
+<p>For the five distinct cases the eigenbasis is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonal values are $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1412,7 +1412,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>For cases 1, 6 and 8 there is no $Q$-adapted basis: case 1 is scalar, and cases 6 and 8 are Jordan.</p>
+<p>For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is scalar, and cases 6 and 8 are Jordan.</p>
 <h3 id="the-matrices">The Matrices</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -1481,8 +1481,8 @@ $$</p>
 <li>Case 6 is the unipotent case with a real scalar part. The vector part is null, $B=0$, and the element is $e_t$ plus a square-zero element. The eigenspace has dimension two, so there is no eigenbasis.</li>
 <li>Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is a unit. A null vector part does not imply a zero divisor.</li>
 <li>None of the eight is a zero divisor. The zero-divisor regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.</li>
-<li>Case 1 is the scalar regime. Every basis is an eigenbasis, and the $Q$-adapted construction does not apply.</li>
-<li>Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the projection formula. The symmetric closed form of <em>The Quaternionic Norm-Regular, Spectrally Regular Sector</em>, §<em>The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis</em>, gives the same pair up to the reciprocal rescaling when the direction is off the exceptional cone; the projection formula is the construction used here.</li>
+<li>Case 1 is the scalar regime. Every basis is an eigenbasis, and the construction of the eigenbasis does not apply.</li>
+<li>Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the projection formula. The symmetric closed form of <em>The Quaternionic Norm-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>, gives the same pair up to the reciprocal rescaling when the direction is off the exceptional cone; the projection formula is the construction used here.</li>
 <li>In the distinct regime the eigenvalues repeat twice in the four-dimensional eigenbasis, and they are distinct on each two-dimensional spinor space. The $2\times2$ model records the two values once, one for each column.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -1532,7 +1532,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf M_2^Q$</td>
-<td>the $Q$-adapted matrix model</td>
+<td>the eigenbasis matrix model</td>
 </tr>
 <tr>
 <td>$\rho_\pm=\mathsf M_2(\tilde\Pi_\pm)$</td>
@@ -1551,10 +1551,10 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Eigenprojectors</em>, for the eigenvalue decomposition and the eigenprojections.</li>
-<li><a href="the-quaternionic-norm-regular-spectrally-regular-sector.html">The Quaternionic Norm-Regular, Spectrally Regular Sector</a>, §<em>The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis</em>, for the Peirce decomposition, the nilpotents and the eigenbasis.</li>
-<li><a href="eigenbasis-of-a-biquaternion-in-matrix-elements-representations.html">Eigenbasis of a Biquaternion in Matrix Elements Representations</a>, for the fixed model, the $Q$-adapted model and the diagonalising matrix.</li>
+<li><a href="the-quaternionic-norm-regular-spectrally-regular-sector.html">The Quaternionic Norm-Regular, Spectrally Regular Sector</a>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>, for the Peirce decomposition, the nilpotents and the eigenbasis.</li>
+<li><a href="eigenbasis-of-a-biquaternion-in-matrix-elements-representations.html">Eigenbasis of a Biquaternion in Matrix Elements Representations</a>, for the fixed model, the eigenbasis model and the diagonalising matrix.</li>
 <li><a href="worked-examples-of-exponential-polar-decomposition-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Biquaternions</a>, for the same eight elements read through the polar word.</li>
-<li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions</a>, for the same eight cases read in the Q-adapted basis, with the nilpotents and the spinors.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions</a>, for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.</li>
 <li><a href="worked-examples-of-eigenbasis-of-a-split-complex-number.html">Worked Examples of Eigenbasis of a Split-Complex Number</a>, for the two-dimensional commutative companion.</li>
 <li><a href="worked-examples-of-eigenbasis-a-reduced-biquaternion.html">Worked Examples of Eigenbasis a Reduced Biquaternion</a>, for the four-dimensional commutative companion.</li>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and the minimal left ideals.</li>

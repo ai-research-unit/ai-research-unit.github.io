@@ -311,7 +311,7 @@ $$
 \qquad
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
-The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ of <em>The Quaternionic Norm-Regular, Spectrally Regular Sector</em>, §<em>The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis</em> — not the Pauli model $\mathsf M_2$ of §<em>Conventions</em> — the element $\tilde Q$ is the diagonal matrix
+The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the eigenbasis matrix model $\mathsf M^{\tilde Q}$ of <em>The Quaternionic Norm-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em> — not the Pauli model $\mathsf M_2$ of §<em>Conventions</em> — the element $\tilde Q$ is the diagonal matrix
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 \qquad
@@ -324,7 +324,7 @@ $$
 L_{\tilde Q}R_{\tilde Q^{*}}=R_{\tilde Q^{*}}L_{\tilde Q},
 $$
 and each is diagonalisable when $B\neq0$. They therefore admit a common eigenbasis, and in that basis the sandwich is diagonal.</p>
-<p><em>Proof.</em> The two multiplications commute because both are products in the associative algebra. A commuting family of diagonalisable operators is simultaneously diagonalisable. The eigenvalues of $L_{\tilde Q}$ are $\lambda_\pm$ by the Q-adapted basis. In a matrix model, right multiplication by $A$ is a Kronecker product of $A^{T}$ with the identity, so the eigenvalues of $R_{\tilde Q^{*}}$ are those of $\tilde Q^{*}$, namely $\bar\lambda_\pm$, each with multiplicity two.</p>
+<p><em>Proof.</em> The two multiplications commute because both are products in the associative algebra. A commuting family of diagonalisable operators is simultaneously diagonalisable. The eigenvalues of $L_{\tilde Q}$ are $\lambda_\pm$ by the eigenbasis. In a matrix model, right multiplication by $A$ is a Kronecker product of $A^{T}$ with the identity, so the eigenvalues of $R_{\tilde Q^{*}}$ are those of $\tilde Q^{*}$, namely $\bar\lambda_\pm$, each with multiplicity two.</p>
 <h3 id="the-spectrum-of-the-sandwich">The Spectrum of the Sandwich</h3>
 <p>In the common eigenbasis the left slot contributes one of $\lambda_+,\lambda_-$ and the right slot one of $\bar\lambda_+,\bar\lambda_-$. The eigenvalue of the sandwich is the product:
 $$
@@ -354,7 +354,7 @@ $$
 \overline{\lambda_+\bar\lambda_-}=\lambda_-\bar\lambda_+.
 $$</p>
 <p>This is the precise sense in which the sandwich uses <strong>two slots</strong>. A one-sided operator uses one slot and carries the pair $(\lambda_+,\lambda_-)$; the sandwich uses two slots and carries the four products. The factor attached to a slot is half of the factor attached to the pair of slots, which is the spectral form of the doubling rule.</p>
-<p>The common eigenbasis is not the Q-adapted Peirce basis in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the Q-adapted basis; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{M}_\pm$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is a real splitting into Hermitian sectors, and they are different decompositions.</p>
+<p>The common eigenbasis is not the eigenbasis of $L_{\tilde Q}$ in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the eigenbasis of $L_{\tilde Q}$; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{M}_\pm$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is a real splitting into Hermitian sectors, and they are different decompositions.</p>
 <h3 id="the-pure-factors-and-the-full-spin">The Pure Factors and the Full Spin</h3>
 <p>For each pure factor, read with the other factors absent, the products are elementary. The scale $r$ has $\lambda_\pm=r$ and products $r^{2}$. The central phase has $\lambda_\pm=\exp(i\alpha)$ and products $\exp(i\alpha)\exp(-i\alpha)=1$. The boost has
 $$
@@ -411,7 +411,7 @@ The sandwich therefore carries the full rapidity $\psi$ and the full angle $\the
 </tbody>
 </table></div>
 <p>The scale and the phase are central. Their rows are read as scalar multipliers of a word with $B\neq0$; for a purely central element $B=0$ and the spectrum collapses to $Q_t\bar Q_t$.</p>
-<p>For a general word the two factors do not commute, and the common eigenbasis is not the Q-adapted one. The product formula for the spectrum remains exact. The splitting of the products into a boost and a rotation is the content of §<em>The Boost</em> and §<em>The Rotor</em> when the axes commute; in general the effective exponent is the sum of the two slot exponents only after the common eigenbasis is chosen. The relation between the spectral data and the polar parameters is <em>Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</em>, §<em>The Spectral Data from the Polar Factors</em>.</p>
+<p>For a general word the two factors do not commute, and the common eigenbasis is not the eigenbasis of $L_{\tilde Q}$. The product formula for the spectrum remains exact. The splitting of the products into a boost and a rotation is the content of §<em>The Boost</em> and §<em>The Rotor</em> when the axes commute; in general the effective exponent is the sum of the two slot exponents only after the common eigenbasis is chosen. The relation between the spectral data and the polar parameters is <em>Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</em>, §<em>The Spectral Data from the Polar Factors</em>.</p>
 <p><strong>Corollary (the sandwich is the two-slot operator).</strong> The sandwich acts on the left and the right slots of the matrix model. Its spectrum is the four products $\lambda_i\bar\lambda_j$. The one-sided operator is the restriction to one slot; the two-sided operator is the pairing of the two slots. The half-angle of the rotor and the half-rapidity of the boost belong to one slot; their doubles belong to the pair.</p>
 <h3 id="the-vector-representation-as-the-double-of-the-half-spin">The Vector Representation as the Double of the Half-Spin</h3>
 <p>The two slots are the two tensor factors of $\mathbb{B}\cong S\otimes S^{*}$, where $S=\mathbb{C}^{2}$ is the spinor space and $S^{*}$ its dual. The left factor acts on $S$, the right on $S^{*}$, and the sandwich is
@@ -627,7 +627,7 @@ The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-s
 </tr>
 <tr>
 <td>$\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$</td>
-<td>the matrix of $\tilde Q$ in the Q-adapted matrix model</td>
+<td>the matrix of $\tilde Q$ in the eigenbasis matrix model</td>
 </tr>
 <tr>
 <td>$S,S^{*}$</td>
@@ -639,7 +639,7 @@ The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-s
 </tr>
 <tr>
 <td>$\mathsf M^{\tilde Q}$</td>
-<td>the Q-adapted matrix model, not the Pauli model $\mathsf M_2$</td>
+<td>the eigenbasis matrix model, not the Pauli model $\mathsf M_2$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
@@ -678,7 +678,7 @@ The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-s
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="one-sided-operator-and-the-polar-decomposition.html">One-Sided Operator and the Polar Decomposition</a>, for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.</li>
-<li><a href="the-quaternionic-norm-regular-spectrally-regular-sector.html">The Quaternionic Norm-Regular, Spectrally Regular Sector</a>, §<em>The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis</em>, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.</li>
+<li><a href="the-quaternionic-norm-regular-spectrally-regular-sector.html">The Quaternionic Norm-Regular, Spectrally Regular Sector</a>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.</li>
 <li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</a>, for the general dictionary between the spectral data and the polar angles when the axes do not commute.</li>
 <li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">The Polar Decomposition of Biquaternions</a>, for the four factors, the modulus, the branch and the domain, and §<em>The Operator Reading: the Twist</em>, for the same word read on the spinor module.</li>
 <li><a href="the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a>, §<em>The Action on the Two Halves</em>, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.</li>
