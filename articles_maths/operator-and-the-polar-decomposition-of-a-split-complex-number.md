@@ -200,7 +200,7 @@ $$
 
 *Proof.* In the eigenbasis the matrix is diagonal with entries $\lambda_\pm$, and $\Pi_\pm$ are the corresponding idempotents: $Q\Pi_\pm=\lambda_\pm\Pi_\pm$.
 
-The eigenbasis is **fixed**: it is the standard idempotent pair, and it does not depend on $Q$. This is the commutative simplification. In the biquaternion the eigenbasis is the $Q$-adapted Peirce basis, built from the nilpotents and depending on $Q$; here the two idempotents are the only nontrivial idempotents, and the Peirce corners are zero.
+The eigenbasis is **fixed**: it is the standard idempotent pair, and it does not depend on $Q$. This is the commutative simplification. In the biquaternion the eigenbasis is attached to $\tilde Q$, built from the nilpotents and depending on $Q$; here the two idempotents are the only nontrivial idempotents, and the Peirce corners are zero.
 
 The eigenvalues are the two idempotent coordinates. Their sum is $2q$ and their product is $\langle Q\rangle_{*}$. The spectrum is real and, when $q'\neq0$, simple. When $q'=0$ the element is the scalar $q$, the two eigenvalues coincide, and $M_Q=q\operatorname{id}$.
 
@@ -421,7 +421,7 @@ There are no nilpotents. The algebra is $\mathbb{D}\cong\mathbb{R}\times\mathbb{
 | Commutative | no | yes |
 | One-sided operators | $L_{\tilde Q}\neq R_{\tilde Q}$ | $L_Q=R_Q=M_Q$ |
 | Spectrum of the one-sided operator | $\lambda_\pm=Q_t\pm iB$, each twice | $\lambda_\pm=q\pm q'$ |
-| Eigenbasis | $Q$-adapted Peirce basis, depends on $Q$ | fixed $(\Pi_+,\Pi_-)$ |
+| Eigenbasis | eigenbasis attached to $Q$ | fixed $(\Pi_+,\Pi_-)$ |
 | One-sided exponent | $\theta/2$, $\psi/2$ | $\phi$ |
 | Two-sided operator | $\tilde Q\tilde X\tilde Q^{*}$, non-scalar | $\langle Q\rangle_{*}X$, scalar |
 | Two-sided exponent | $\theta$, $\psi$ | $0$ |
@@ -444,7 +444,7 @@ The polar word $Q=r\epsilon\exp(\phi j)$ reads $M_Q=\operatorname{diag}(r\epsilo
 
 The two-sided operator is $QX\bar Q=\langle Q\rangle_{*}X$. It is the inner automorphism multiplied by the norm; the inner automorphism of a commutative algebra is the identity, so the operator is the scalar $\langle Q\rangle_{*}$. The scale squares, the boost cancels, and only the sign of the norm survives. On the units the image is $\mathbb{R}^{\times}I$ and the kernel is $\{\langle Q\rangle_{*}=1\}$.
 
-The null cone gives rank one. There are no nilpotents and no Jordan blocks: the algebra is reduced. The half-angle, the spin double cover and the $Q$-adapted Peirce basis of the biquaternion have no analogue.
+The null cone gives rank one. There are no nilpotents and no Jordan blocks: the algebra is reduced. The half-angle, the spin double cover and the eigenbasis of the biquaternion have no analogue.
 
 ## Summary of Notation
 

@@ -257,7 +257,7 @@ $$
 
 *Proof.* In the eigenbasis the matrix is diagonal with entries $Q_\pm$, and $\Pi_\pm$ are the corresponding idempotents: $\breve Q\Pi_\pm=Q_\pm\Pi_\pm$.
 
-The eigenbasis is **fixed**: it is the standard idempotent pair, independent of $\breve Q$. This is the commutative simplification. In the biquaternion the eigenbasis is the $\tilde Q$-adapted Peirce basis, built from the nilpotents and depending on the element; here the idempotents are the only nontrivial ones, the Peirce corners are zero, and there are no nilpotents.
+The eigenbasis is **fixed**: it is the standard idempotent pair, independent of $\breve Q$. This is the commutative simplification. In the biquaternion the eigenbasis is attached to $\tilde Q$, built from the nilpotents and depending on the element; here the idempotents are the only nontrivial ones, the Peirce corners are zero, and there are no nilpotents.
 
 The eigenvalues are the two complex idempotent coordinates. Their sum is $2A$ and their product is the reduced norm. When $Q_{\blacktriangledown}=0$ the element is the complex scalar $A$, the two eigenvalues coincide, and $M_{\breve Q}=A\operatorname{id}$.
 
@@ -607,7 +607,7 @@ There are no nilpotents. The algebra is $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\
 | Commutative | no | yes | yes |
 | One-sided operators | $L_{\tilde Q}\neq R_{\tilde Q}$ | $L_Q=R_Q=M_Q$ | $L=R=M$ |
 | Spectrum of the one-sided operator | $\lambda_\pm=Q_t\pm iB$, each twice | $\lambda_\pm=q\pm q'$ | $\lambda_\pm=Q_\pm$ |
-| Eigenbasis | $\tilde Q$-adapted, depends on the element | fixed $(\Pi_+,\Pi_-)$ | fixed $(\Pi_+,\Pi_-)$ |
+| Eigenbasis | eigenbasis attached to $\tilde Q$ | fixed $(\Pi_+,\Pi_-)$ | fixed $(\Pi_+,\Pi_-)$ |
 | One-sided exponents | $\theta/2$, $\psi/2$ | $\phi$ | $\phi$, $\alpha+\beta$, $\alpha-\beta$ |
 | Two-sided operator | $\tilde Q\tilde X\tilde Q^{*}$, non-scalar | $\langle Q\rangle_{*}X$, scalar | $\breve r^2X$, cone element |
 | Two-sided exponents | $\theta$, $\psi$ | $0$ | $2\phi$, $0$, $0$ |
@@ -646,7 +646,7 @@ $$
 
 The scale squares, the boost doubles, and both phases cancel. The operator is the inner automorphism multiplied by the modulus squared; the inner automorphism of a commutative algebra is the identity. On the units the image is the positive cone $P$ and the kernel is the unit torus $T^2$.
 
-The zero divisors give rank one. There are no nilpotents and no Jordan blocks: the algebra is reduced. The half-angle, the spin double cover and the element-adapted Peirce basis of the biquaternion have no analogue.
+The zero divisors give rank one. There are no nilpotents and no Jordan blocks: the algebra is reduced. The half-angle, the spin double cover and the eigenbasis attached to the biquaternion element have no analogue.
 
 ## Summary of Notation
 

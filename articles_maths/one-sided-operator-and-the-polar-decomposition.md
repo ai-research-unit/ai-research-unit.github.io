@@ -47,7 +47,7 @@ $$
 
 It is multiplication by the central imaginary, the complex structure $J$ of the algebra read over $\mathbb{R}$. It satisfies $J^{2}=-\mathrm{id}$ and $J^{-1}=J^{3}=L_{-i}$. The sign $i$ or $-i$ is the direction of the exchange. This is the operator that the two-sided sandwich cancels: $\Theta_i(\tilde X)=i\tilde X(-i)=\tilde X$. The one-sided operator sees the phase; the two-sided operator does not.
 
-The plan is the following. §*Conventions* fixes the notation. §*The One-Sided Operators* gives the elementary properties and the factorisation through the polar word. §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces* reads the Q-adapted Peirce basis, the two Peirce spinor spaces, and proves that the half-angle action on a spinor is the one-sided operator. §*The Two Real Forms* proves the block decomposition and the sector criterion. §*The Pure Central Phase of $\pi/2$* treats the exchange in detail, in coordinates and for a general phase. §*The Four Factors, One-Sided* reads the scale, the boost and the rotor. §*The Image and the Kernel* compares the one-sided and the two-sided images. §*The Null Cone* records the degenerate case. The article closes with the summary, the notation and the readings.
+The plan is the following. §*Conventions* fixes the notation. §*The One-Sided Operators* gives the elementary properties and the factorisation through the polar word. §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces* reads the eigenbasis, the two Peirce spinor spaces, and proves that the half-angle action on a spinor is the one-sided operator. §*The Two Real Forms* proves the block decomposition and the sector criterion. §*The Pure Central Phase of $\pi/2$* treats the exchange in detail, in coordinates and for a general phase. §*The Four Factors, One-Sided* reads the scale, the boost and the rotor. §*The Image and the Kernel* compares the one-sided and the two-sided images. §*The Null Cone* records the degenerate case. The article closes with the summary, the notation and the readings.
 
 ## Conventions
 
@@ -177,9 +177,9 @@ The last clause is the subject of the next section: a complex isometry can excha
 
 ## The Half-Spin: the Eigenbasis and the Two Spinor Spaces
 
-### The Q-Adapted Peirce Basis
+### The Eigenbasis
 
-The eigenbasis of the left multiplication is the Q-adapted Peirce basis of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. For $\tilde Q$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, put
+The eigenbasis of the left multiplication is that of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. For $\tilde Q$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, put
 $$
 \vec U=\frac{\vec Q}{B},\qquad \vec\Xi=-i\vec U,\qquad
 \tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},\qquad
@@ -210,7 +210,7 @@ $$
 
 The two values are distinct exactly when $B\neq0$. In that case the $\lambda_+$-eigenspace is the two-dimensional right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$.
 
-When $B=0$ the construction is unavailable: there is no Q-adapted Peirce basis, the two nilpotents are not defined from $\tilde Q$, and $L_{\tilde Q}$ is not diagonal in any Peirce basis. This is the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Cone*.
+When $B=0$ the construction is unavailable: there is no eigenbasis singled out by $\tilde Q$, the two nilpotents are not defined from $\tilde Q$, and $L_{\tilde Q}$ is not diagonal in any Peirce basis. This is the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Cone*.
 
 ### The Two Chiral Spinor Spaces
 
@@ -251,11 +251,11 @@ $$
 \boxed{\;[L_{\tilde Q}]=\begin{pmatrix}\Delta&0\\0&\Delta\end{pmatrix},
 \qquad \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\; }.
 $$
-The one-sided operator therefore acts by the **same** diagonal matrix on the two spinor spaces and never mixes the two chiralities. The two copies are not an accident of notation: $S_+$ and $S_-$ are distinct minimal left ideals, and left multiplication preserves each of them separately. Neither $S_+$ nor $S_-$ is an eigenspace of $L_{\tilde Q}$: each carries both eigenvalues, and the eigenspaces of $L_{\tilde Q}$ are the right ideals $\tilde\Pi_\pm\mathbb{B}$ of §*The Q-Adapted Peirce Basis*.
+The one-sided operator therefore acts by the **same** diagonal matrix on the two spinor spaces and never mixes the two chiralities. The two copies are not an accident of notation: $S_+$ and $S_-$ are distinct minimal left ideals, and left multiplication preserves each of them separately. Neither $S_+$ nor $S_-$ is an eigenspace of $L_{\tilde Q}$: each carries both eigenvalues, and the eigenspaces of $L_{\tilde Q}$ are the right ideals $\tilde\Pi_\pm\mathbb{B}$ of §*The Eigenbasis*.
 
 **The label is the Peirce chirality.** The words first and second chirality name the two Peirce components $S_+$ and $S_-$. They are not the two Lorentz chiralities: both components carry the same spinor representation, and the two Lorentz chiralities are the two tensor slots of §*The Weight Relation and the Two Copies*.
 
-In the Q-adapted matrix model $\mathsf M^{\tilde Q}$ — not the Pauli model $\mathsf M_2$ of §*Conventions* — with
+In the eigenbasis matrix model $\mathsf M^{\tilde Q}$ — not the Pauli model $\mathsf M_2$ of §*Conventions* — with
 $$
 \tilde\Pi_+\mapsto E_{11},\quad
 \vec\Upsilon_-\mapsto E_{12},\quad
@@ -815,7 +815,7 @@ the image of $\mathbb{M}_-$ has $*$-eigenvalue $-\exp(-2i\alpha)$, and the secto
 
 The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\alpha)$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors; their one-sided exponents are the half-rapidity and the half-angle, and the physical rapidity and angle are the two-sided outputs. The one-sided operator has one slot and does not double; the two-sided operator has two slots and doubles the scale and the non-central exponents, while it cancels the central imaginary one.
 
-In the Q-adapted Peirce basis the left multiplication is diagonal,
+In the eigenbasis the left multiplication is diagonal,
 $$
 [L_{\tilde Q}]=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),
 \qquad
@@ -850,12 +850,12 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and skew-symmetrized multiplication blocks |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$ |
-| $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the eigenprojections and the normalised nilpotents of the Q-adapted Peirce basis |
+| $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the eigenprojections and the normalised nilpotents of the eigenbasis |
 | $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce chirality), the minimal left ideals |
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the common spinor matrix on $S_+$ and $S_-$ |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |
-| $\mathsf M^{\tilde Q}$ | the Q-adapted matrix model, not the Pauli model $\mathsf M_2$ |
+| $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
 | $J=L_i=R_i$ | the pure central phase of $\pi/2$, the complex structure |
 | $g$ | the Minkowski form, $\langle\tilde Q\rangle_{\natural}$ on $\mathbb{M}_+$ and $-\langle\tilde Q\rangle_{\natural}$ on $\mathbb{M}_-$ |
 | $GL(2,\mathbb{C})$ | the image of the one-sided action on the units |
@@ -865,7 +865,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 ## Further Reading
 
 - [Two-Sided Operator and the Polar Decomposition](two-sided-operator-and-the-polar-decomposition.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
-- [The Quaternionic Norm-Regular, Spectrally Regular Sector](the-quaternionic-norm-regular-spectrally-regular-sector.html), §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*, for the basis, the two chiral spinor spaces and the diagonal action used here.
+- [The Quaternionic Norm-Regular, Spectrally Regular Sector](the-quaternionic-norm-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two chiral spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four exponents read against the six remarkable subspaces and the sector blocks, and §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the infinitesimal split of the rotor and the boost.

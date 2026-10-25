@@ -101,13 +101,13 @@ e_-\tilde Qe_+=0,\qquad
 e_-\tilde Qe_-=0.
 $$
 
-The decomposition is a two-term writing with one coefficient zero, not a one-term writing: $e_-$ is present and non-trivial, although its coefficient vanishes. It is unique, because the spectral idempotents of an element with distinct eigenvalues are unique. This is the exact contrast with $\Sigma_{00}\setminus\{0\}$, where no adapted decomposition exists.
+The decomposition is a two-term writing with one coefficient zero, not a one-term writing: $e_-$ is present and non-trivial, although its coefficient vanishes. It is unique, because the spectral idempotents of an element with distinct eigenvalues are unique. This is the exact contrast with $\Sigma_{00}\setminus\{0\}$, where no Peirce decomposition relative to $\tilde Q$ exists.
 
 **The spectral decomposition.** The eigenvalues are $\lambda_+=c=2Q_t$ and $\lambda_-=0$, distinct, and
 $$
 \tilde Q=c\,e_++0\cdot e_-,\qquad e_+=\tilde\Pi,\quad e_-=\tilde\Pi'.
 $$
-The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique, and an eigenbasis exists, since $B^2\neq0$; the construction is in *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*.
+The writing has two terms with one coefficient vanishing: it is not the one-term writing $c\,e_+$, because $e_-$ is present and non-trivial. It is unique, and an eigenbasis exists, since $B^2\neq0$; the construction is in *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*.
 
 **Powers.** For $n\geq1$, $\tilde Q^n=c^n e_+$, and the polynomial calculus reads $f(\tilde Q)=f(c)e_++f(0)e_-=f(c)\tilde\Pi+f(0)\tilde\Pi'$. There is no inverse, since $N=0$; the image of the eigenvalue map on the sector is the set of pairs $(c,0)$ with $c\neq0$, so it is not surjective onto $\mathbb{C}^\times\times\mathbb{C}^\times$.
 
@@ -157,7 +157,7 @@ Both operators have complex rank $2$, with images the minimal left and right ide
 
 ## Peirce Data
 
-**The adapted Peirce decomposition exists and is unique. It has two non-trivial idempotents and one vanishing coefficient: the Peirce matrix of $\tilde Q$ is $\operatorname{diag}(c,0)$.**
+**The Peirce decomposition relative to $\tilde Q$ exists and is unique. It has two non-trivial idempotents and one vanishing coefficient: the Peirce matrix of $\tilde Q$ is $\operatorname{diag}(c,0)$.**
 
 Let $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent, and put $\tilde\Pi'=e_t-\tilde\Pi$. The spectral idempotents are $e_+=\tilde\Pi$ and $e_-=\tilde\Pi'$. The four corners $\mathbb{B}_{st}=e_s\mathbb{B}e_t$ are one-dimensional lines, and the Peirce form is
 
@@ -176,7 +176,7 @@ $$
 
 The zero coefficient is the only trace of the norm degeneracy in the Peirce data. The idempotent $e_-$ is present and non-trivial, and the decomposition is genuinely two-term: the vanishing coefficient is a value, not a missing idempotent. Both mixed corners are non-zero, so both nilpotents exist.
 
-**The Q-adapted basis.** Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the Q-adapted Peirce basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction is that of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. In that basis the diagonal values are $(c,0)$ in one order or the other. The zero eigenvalue is carried by one diagonal entry and by one only.
+**The eigenbasis.** Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction is that of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. In that basis the diagonal values are $(c,0)$ in one order or the other. The zero eigenvalue is carried by one diagonal entry and by one only.
 
 ## Multiplication
 
@@ -259,11 +259,11 @@ $$
 \tilde Q=e_t+i\vec e_x,\qquad N=0,\qquad B^2=-1,\qquad \tilde Q^2=2\tilde Q,
 $$
 
-with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\}$ and adapted Peirce form $2\tilde\Pi_+ + 0\cdot\tilde\Pi_-$. This is the element that prevents the null cone from being identified with the spectral-degenerate cone.
+with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\}$ and Peirce form $2\tilde\Pi_+ + 0\cdot\tilde\Pi_-$ relative to $\tilde Q$. This is the element that prevents the null cone from being identified with the spectral-degenerate cone.
 
 ## Comparison with the Other Three Sectors
 
-| sector | conditions | elements | spectrum | adapted Peirce | product |
+| sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct and non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
 | **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $c\neq0$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal{N}$; all three outcomes |
@@ -276,13 +276,13 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 
 ## Consequences
 
-**Eigenbasis.** It exists and is unique: $e_+=\tilde Q/(2Q_t)$, $e_-=e_t-e_+$. The adapted Peirce decomposition is the only one adapted to $\tilde Q$.
+**Eigenbasis.** It exists and is unique: $e_+=\tilde Q/(2Q_t)$, $e_-=e_t-e_+$. The Peirce decomposition relative to $\tilde Q$ is the only one.
 
 **Polar decomposition.** The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Biquaternions* has no value on the sector. The failure is caused by the norm, not by the spectrum.
 
 **One-sided operators.** Rank $2$, equal to $2Q_t$ times a projection, with kernel the corresponding annihilator plane. Neither multiplication is invertible on either side.
 
-**The "clean degenerate" cell.** It is the cell in which invertibility fails and nothing else does: the eigenvalues are separated, the adapted Peirce decomposition exists and is unique, the annihilators are the two Peirce planes, and the only pathology is the zero eigenvalue, which is exactly the norm condition.
+**The "clean degenerate" cell.** It is the cell in which invertibility fails and nothing else does: the eigenvalues are separated, the Peirce decomposition relative to $\tilde Q$ exists and is unique, the annihilators are the two Peirce planes, and the only pathology is the zero eigenvalue, which is exactly the norm condition.
 
 ## Summary
 
@@ -292,7 +292,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 | descriptions | $\mathcal{N}\setminus\mathcal S$; $Q_t\neq0$ on $\mathcal{N}$; $\tilde Q^2=2Q_t\tilde Q$; $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent; spectrum $\{c,0\}$ |
 | geometry | Zariski-open and dense in $\mathcal{N}$; complex cone of complex dimension $3$ and real dimension $6$; smooth, connected; apex removed |
 | elements | semisimple zero divisors; minimal polynomial $X(X-c)$ |
-| adapted Peirce | exists, unique, diagonal on $(e_+,e_-)$ |
+| Peirce decomposition | exists, unique, diagonal on $(e_+,e_-)$ |
 | centraliser | $\mathbb{C}[\tilde\Pi]\cong\mathbb{C}\oplus\mathbb{C}$, with the four idempotents $0,e_t,\tilde\Pi,\tilde\Pi'$ |
 | annihilators | two distinct planes meeting in $\mathbb{C}\tilde\Pi'$, the kernel projector; $\tilde Q$ lies in neither |
 | multiplication | $\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal{N}$, with $\Sigma_{01}$, $0$ and $\Sigma_{00}\setminus\{0\}$ all attained |

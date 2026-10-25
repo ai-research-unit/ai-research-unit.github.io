@@ -30,7 +30,7 @@ $$
 
 written in full throughout. The modulus is the principal square root $\bigl(Q_t^2+Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$, taken in the branch with non-negative real part and written $r e^{i\alpha}$ with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$. The rapidity is $\psi\ge0$, the rotor angle is $\theta\in[0,2\pi]$, and the axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$ are real unit vectors, undefined when the corresponding angle vanishes. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
-**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its factors and its check. The boundary is treated separately (§*The Null Cone Family*). The summary collects the results in three tables and reads the patterns across the cases (§*Summary*). The Q-adapted basis, the nilpotents and the spinors of the same eight cases are collected in *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions*.
+**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its factors and its check. The boundary is treated separately (§*The Null Cone Family*). The summary collects the results in three tables and reads the patterns across the cases (§*Summary*). The eigenbasis, the nilpotents and the spinors of the same eight cases are collected in *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions*.
 
 ## The Method
 

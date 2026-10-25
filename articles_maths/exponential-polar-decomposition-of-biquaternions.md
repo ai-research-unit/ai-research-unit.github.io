@@ -29,7 +29,7 @@ The decomposition is noncommutative in an essential way. The boost and the rotor
 | Cartan logarithm | the pair $(\tilde H,\tilde K)=(i\frac{\psi}{2}\vec u_{\mathrm b},\frac{\theta}{2}\vec u_{\mathrm r})$ |
 | Single logarithm | exists, multivalued; not the sum of the four exponents |
 | Group | $\mathbb{B}^{\times}\cong\mathbb{C}^{\times}\times SL(2,\mathbb{C})\cong\mathrm{GL}_2(\mathbb{C})$ |
-| Companion | *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the relation with the Q-adapted eigenbasis |
+| Companion | *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the relation with the eigenbasis |
 | Worked examples | *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the eight cases, the reconstruction and logarithm tables and the null cone |
 
 The plan is as follows. The definition, the exponent and its components, the factors, their component form in the frame of the two axes, and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved (§*Existence and Uniqueness*); the Cartan logarithm, the single logarithm, the kernel and the fibre are described (§*The Logarithm*); the group law is read as the bracket of the two kinds of exponent (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three polar forms are compared (§*The Three Polar Decompositions*); and the parameters are read as coordinates on the group of units (§*The Exponential Coordinates*). The boundary is treated in one block (§*The Boundary of the Word*), and the numerical cases are collected in *Worked Examples of Exponential Polar Decomposition of Biquaternions*.
@@ -701,7 +701,7 @@ The table compares the three exponential polar decompositions; in the split-comp
 ## Further Reading
 
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the eight cases, the reconstruction and logarithm tables, and the null cone.
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the Q-adapted basis, with the nilpotents and the spinors.
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm, their closed forms, the kernel and the principal branch.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus, the unit factor and the uniqueness of the pair.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors.
@@ -711,5 +711,5 @@ The table compares the three exponential polar decompositions; in the split-comp
 - [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), for the quaternion case.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the commutative two-dimensional case.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional case.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the relation with the Q-adapted eigenbasis.
+- [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the relation with the eigenbasis.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.

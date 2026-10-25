@@ -6,27 +6,27 @@ The eigenbasis of a biquaternion $\tilde Q=Q_te_t+\vec Q$ is the basis
 $$
 \tilde\Pi_+,\qquad \vec\Upsilon_-,\qquad \vec\Upsilon_+,\qquad \tilde\Pi_-
 $$
-of the Q-adapted Peirce decomposition, in which multiplication by $\tilde Q$ is diagonal with eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$. The basis itself and the construction of the nilpotents $\vec\Upsilon_\pm$ from the two mixed Peirce corners are the subject of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents* and §*The Q-Adapted Peirce Basis*; the eigenvalue decomposition is that of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*. This article reads the same objects in the two matrix element representations of the algebra.
+of the Peirce decomposition of its eigenprojections, in which multiplication by $\tilde Q$ is diagonal with eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$. The basis itself and the construction of the nilpotents $\vec\Upsilon_\pm$ from the two mixed Peirce corners are the subject of *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Peirce Corners and the Nilpotents* and §*The Eigenbasis*; the eigenvalue decomposition is that of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*. This article reads the same objects in the two matrix element representations of the algebra.
 
-The first is the **$2\times2$ matrix element representation** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, the fixed isomorphism of *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Every biquaternion becomes a $2\times2$ complex matrix, the two minimal left ideals become the two columns, and the eigenbasis becomes a basis of matrix units. The second is the **$4\times4$ left regular representation** $\mathsf{M}_4^{L}:\mathbb{B}\to M_4(\mathbb{C})$ of *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, with its right companion $\mathsf{M}_4^{R}$. The $4\times4$ matrices carry the multiplication on the four-vector space; in the Q-adapted order they are Kronecker products of the $2\times2$ matrix with an identity.
+The first is the **$2\times2$ matrix element representation** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, the fixed isomorphism of *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Every biquaternion becomes a $2\times2$ complex matrix, the two minimal left ideals become the two columns, and the eigenbasis becomes a basis of matrix units. The second is the **$4\times4$ left regular representation** $\mathsf{M}_4^{L}:\mathbb{B}\to M_4(\mathbb{C})$ of *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, with its right companion $\mathsf{M}_4^{R}$. The $4\times4$ matrices carry the multiplication on the four-vector space; in the eigenbasis order they are Kronecker products of the $2\times2$ matrix with an identity.
 
-The article is organised around three questions. **Which matrices are the eigenprojections and the nilpotents?** They are the spectral projectors $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$ and the two off-diagonal matrix units, and the Q-adapted model $\mathsf{M}_2^{Q}$ is the map that sends them to the four matrix units. **What does a change of basis do?** The fixed model, the eigenbasis of the standard root $i\vec e_z$, and the Q-adapted eigenbasis are three bases of the same four-dimensional space; the passage between them is a conjugation, and the diagonalising matrix $\mathsf{C}_Q$ is determined by the eigenvectors up to the rescaling of the nilpotents. **What happens in the $4\times4$ representation?** The left and right regular matrices are block matrices built from the $2\times2$ Peirce matrix, and the Q-adapted order diagonalises both.
+The article is organised around three questions. **Which matrices are the eigenprojections and the nilpotents?** They are the spectral projectors $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$ and the two off-diagonal matrix units, and the eigenbasis model $\mathsf{M}_2^{Q}$ is the map that sends them to the four matrix units. **What does a change of basis do?** The fixed model, the eigenbasis of the standard root $i\vec e_z$, and the eigenbasis are three bases of the same four-dimensional space; the passage between them is a conjugation, and the diagonalising matrix $\mathsf{C}_Q$ is determined by the eigenvectors up to the rescaling of the nilpotents. **What happens in the $4\times4$ representation?** The left and right regular matrices are block matrices built from the $2\times2$ Peirce matrix, and the eigenbasis order diagonalises both.
 
 | Question | Answer |
 |---|---|
 | $2\times2$ model | $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$ |
 | Eigenprojections | $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$, rank-one spectral projectors of $\mathsf{M}_2(\tilde Q)$ |
 | Nilpotents | $\mathsf{M}_2(\vec\Upsilon_-)$ and $\mathsf{M}_2(\vec\Upsilon_+)$ in the two mixed corners, square-zero |
-| Q-adapted model | $\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})=\mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q_{\mathrm{sp}})\mathsf{C}_Q$ |
+| eigenbasis model | $\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})=\mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q_{\mathrm{sp}})\mathsf{C}_Q$ |
 | Diagonal form | $\mathsf{M}_2^{Q}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ |
 | Base change | conjugation by $\mathsf{C}_Q$; $\mathsf{C}_Q$ unique up to the rescaling of its two columns |
 | $4\times4$ left regular | $\mathsf{M}_4^{L}(\tilde Q_{\mathrm{sp}})$, columns $\tilde Q_{\mathrm{sp}}e_\mu$ |
-| $4\times4$ Q-order | $[L_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q}=\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})\otimes \mathrm I_2$, $[R_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q}=\mathrm I_2\otimes \mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})^{\mathsf T}$ |
+| $4\times4$ eigenbasis order | $[L_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q}=\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})\otimes \mathrm I_2$, $[R_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q}=\mathrm I_2\otimes \mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})^{\mathsf T}$ |
 | $4\times4$ diagonal | $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ for $L_{\tilde Q}$ and $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$ for $R_{\tilde Q}$ |
 
-**Conventions.** The base and the elements are those of *Conventions in Mathematics*: $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $B=\sqrt{Q_x^2+Q_y^2+Q_z^2}$, $\vec\Xi=-i\vec Q/B$, $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\lambda_\pm=Q_t\pm iB$. A general element distinct from $\tilde Q$ is written $\tilde Q_{\mathrm{sp}}$ or $\tilde Q_3$. The fixed $2\times2$ model is $\mathsf{M}_2$; the Q-adapted model is $\mathsf{M}_2^{Q}$; the regular matrices are $\mathsf{M}_4^{L}$ and $\mathsf{M}_4^{R}$, with the shorter $\mathsf{M}_4=\mathsf{M}_4^{L}$. The two matrix assignments are those of the two introduction articles cited above and are not redefined here.
+**Conventions.** The base and the elements are those of *Conventions in Mathematics*: $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $B=\sqrt{Q_x^2+Q_y^2+Q_z^2}$, $\vec\Xi=-i\vec Q/B$, $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\lambda_\pm=Q_t\pm iB$. A general element distinct from $\tilde Q$ is written $\tilde Q_{\mathrm{sp}}$ or $\tilde Q_3$. The fixed $2\times2$ model is $\mathsf{M}_2$; the eigenbasis model is $\mathsf{M}_2^{Q}$; the regular matrices are $\mathsf{M}_4^{L}$ and $\mathsf{M}_4^{R}$, with the shorter $\mathsf{M}_4=\mathsf{M}_4^{L}$. The two matrix assignments are those of the two introduction articles cited above and are not redefined here.
 
-**Boundaries.** The eigenvalue decomposition is *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the Peirce decomposition and the construction of the nilpotents are *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. The $2\times2$ assignment, its invertibility and its invariants are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the $4\times4$ assignment, its multiplicativity and its remarkable subspaces are *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The matrix algebra is *Matrix Algebras*, the spectral projections of a general matrix are *The Eigenvalue Decomposition of a Matrix*, and the change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*.
+**Boundaries.** The eigenvalue decomposition is *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the Peirce decomposition and the construction of the nilpotents are *The Quaternionic Norm-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. The $2\times2$ assignment, its invertibility and its invariants are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the $4\times4$ assignment, its multiplicativity and its remarkable subspaces are *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The matrix algebra is *Matrix Algebras*, the spectral projections of a general matrix are *The Eigenvalue Decomposition of a Matrix*, and the change of basis of an endomorphism is *Matrix Algebras*, §*Change of Basis*.
 
 ## The $2\times2$ Matrix Element Representation
 
@@ -153,7 +153,7 @@ $$
 $$
 The entries are not symmetric in $x,y,z$ even though the elements are, because the fixed model $\mathsf{M}_2$ itself singles out $\vec e_z$: it is the representation in which $\mathsf{M}_2(\vec e_z)$ is diagonal. The symmetric formula is a statement in the algebra; its matrix image inherits the asymmetry of the representation.
 
-The four basis elements of the Q-adapted basis therefore have the following matrices in the fixed model.
+The four basis elements of the eigenbasis therefore have the following matrices in the fixed model.
 
 | Element | $\mathsf{M}_2$ | Rank | Square |
 |---|---|---|---|
@@ -172,11 +172,11 @@ $$
 $$
 The trace is $\lambda_++\lambda_-=2Q_t$, the determinant is $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$, and the characteristic polynomial of the matrix is $(X-\lambda_+)(X-\lambda_-)$. The two facts are the matrix form of the eigenvalue decomposition of the element.
 
-## The Q-Adapted Basis in the Model
+## The Eigenbasis in the Model
 
-**The four elements of the Q-adapted Peirce basis become the four matrix units, and the Peirce matrix of $\tilde Q$ becomes diagonal.**
+**The four elements of the eigenbasis become the four matrix units, and the Peirce matrix of $\tilde Q$ becomes diagonal.**
 
-The Q-adapted basis is
+The eigenbasis is
 $$
 \tilde\Pi_+,\qquad \vec\Upsilon_-,\qquad \vec\Upsilon_+,\qquad \tilde\Pi_-,
 \qquad
@@ -195,7 +195,7 @@ $$
 \vec\Upsilon_+\longmapsto\begin{pmatrix}0&0\\1&0\end{pmatrix},\qquad
 \tilde\Pi_-\longmapsto\begin{pmatrix}0&0\\0&1\end{pmatrix}.
 $$
-It is the composition of $\mathsf{M}_2$ with the change of basis that carries the Q-adapted basis to the matrix units. Every element has a unique expansion
+It is the composition of $\mathsf{M}_2$ with the change of basis that carries the eigenbasis to the matrix units. Every element has a unique expansion
 $$
 \tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
 \qquad Q_{\mathrm{sp},ij}\in\mathbb{C},
@@ -218,7 +218,7 @@ $$
 $$
 The four basis elements and the general element are collected in the table.
 
-| Element | Coordinates in the Q-adapted basis | Matrix |
+| Element | Coordinates in the eigenbasis | Matrix |
 |---|---|---|
 | $\tilde\Pi_+$ | $(1,0,0,0)$ | $\begin{pmatrix}1&0\\0&0\end{pmatrix}$ |
 | $\vec\Upsilon_-$ | $(0,1,0,0)$ | $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ |
@@ -266,11 +266,11 @@ $$
 \qquad
 \mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}}\tilde Q_{\mathrm{sp}}^{\natural})=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}\,\mathrm I_2.
 $$
-The identity is $\mathrm I_2$, and a power is the power of the matrix. The model is an isomorphism, so no information is lost and no relation is added: the Q-adapted basis is a choice of coordinates on the same algebra.
+The identity is $\mathrm I_2$, and a power is the power of the matrix. The model is an isomorphism, so no information is lost and no relation is added: the eigenbasis is a choice of coordinates on the same algebra.
 
 ## Base Changes
 
-**The fixed model, the standard eigenbasis and the Q-adapted eigenbasis are three bases of the same matrix space, and the passage between them is a conjugation by an invertible matrix.**
+**The fixed model, the standard eigenbasis and the eigenbasis of $\tilde Q$ are three bases of the same matrix space, and the passage between them is a conjugation by an invertible matrix.**
 
 ### The Change of Basis of a Matrix Model
 
@@ -291,7 +291,7 @@ N\longmapsto P^{-1}NP,
 $$
 and they remain idempotent and square-zero respectively. The two columns of $P$ are the new basis vectors; a column of $P$ that is an eigenvector of $M$ produces a column of $P^{-1}MP$ with the eigenvalue on the diagonal.
 
-**The two normal forms.** The fixed model and the Q-adapted model are the two ends of one change. The fixed model is $\mathsf{M}_2$; the Q-adapted model is
+**The two normal forms.** The fixed model and the eigenbasis model are the two ends of one change. The fixed model is $\mathsf{M}_2$; the eigenbasis model is
 $$
 \mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})=\mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q_{\mathrm{sp}})\mathsf{C}_Q,
 $$
@@ -355,7 +355,7 @@ $$
 \qquad
 \mathsf{M}_2(\vec\Upsilon_+)=\mathsf{C}_Q\begin{pmatrix}0&0\\1&0\end{pmatrix}\mathsf{C}_Q^{-1}.
 $$
-They are square-zero and, in the Q-adapted model, they are the two off-diagonal matrix units:
+They are square-zero and, in the eigenbasis model, they are the two off-diagonal matrix units:
 $$
 \mathsf{M}_2^{Q}(\vec\Upsilon_+)\mathsf{M}_2^{Q}(\vec\Upsilon_-)
 =\begin{pmatrix}0&0\\1&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{pmatrix}
@@ -371,7 +371,7 @@ $$
 \qquad
 \mathsf{M}_2(\vec\Upsilon_-)\mathsf{M}_2(\vec\Upsilon_+)=\rho_+.
 $$
-The construction fixes the two matrices, not merely the corner lines: the normalisation of the pair is exactly the condition that the off-diagonal entries of the Q-adapted matrix be $1$ rather than an arbitrary nonzero scalar.
+The construction fixes the two matrices, not merely the corner lines: the normalisation of the pair is exactly the condition that the off-diagonal entries of the eigenbasis matrix be $1$ rather than an arbitrary nonzero scalar.
 
 ### The Freedom of the Change
 
@@ -389,21 +389,21 @@ $$
 $$
 of the nilpotents. The normalised pair is the choice $\alpha=\beta=1$ in the chosen matrix $\mathsf{C}_Q$ above; the general diagonaliser is $\mathsf{C}_Q\operatorname{diag}(\alpha,\beta)$.
 
-**What depends on $\tilde Q$.** The matrix $\mathsf{C}_Q$, the projectors $\rho_\pm$, the nilpotents $\mathsf{M}_2(\vec\Upsilon_\pm)$ and the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ depend on $\tilde Q$. The fixed model $\mathsf{M}_2$, the four elementary matrices and the assignment $\mathsf{M}_2^{Q}$ as a map from the Q-adapted basis do not: they are the same for every $\tilde Q$ for which the construction exists. The dependence is carried by the basis, not by the algebra.
+**What depends on $\tilde Q$.** The matrix $\mathsf{C}_Q$, the projectors $\rho_\pm$, the nilpotents $\mathsf{M}_2(\vec\Upsilon_\pm)$ and the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ depend on $\tilde Q$. The fixed model $\mathsf{M}_2$, the four elementary matrices and the assignment $\mathsf{M}_2^{Q}$ as a map from the eigenbasis do not: they are the same for every $\tilde Q$ for which the construction exists. The dependence is carried by the basis, not by the algebra.
 
 ### Changing from One Element to Another
 
-For two elements $\tilde Q$ and $\tilde Q'$ with distinct eigenvalues, the two Q-adapted bases are related by a further change of basis,
+For two elements $\tilde Q$ and $\tilde Q'$ with distinct eigenvalues, the two eigenbases are related by a further change of basis,
 $$
 \mathsf{C}_{Q'}=\mathsf{C}_Q\,\mathsf{D}_{Q,Q'},
 $$
-where $\mathsf{D}_{Q,Q'}$ is the matrix of the Q'-adapted basis in the Q-adapted basis. The matrix $\mathsf{D}_{Q,Q'}$ is generally full, not diagonal, because the two bases have different idempotents and different nilpotents. The composite change satisfies the cocycle relation
+where $\mathsf{D}_{Q,Q'}$ is the matrix of the eigenbasis of $\tilde Q'$ in that of $\tilde Q$. The matrix $\mathsf{D}_{Q,Q'}$ is generally full, not diagonal, because the two bases have different idempotents and different nilpotents. The composite change satisfies the cocycle relation
 $$
 \mathsf{D}_{Q,Q''}=\mathsf{D}_{Q,Q'}\mathsf{D}_{Q',Q''},
 $$
 and the eigenvalues are unchanged by it. This is the matrix form of the fact that the eigenbasis is attached to the element: there is no single eigenbasis of the whole algebra.
 
-**The standard eigenbasis as a special case.** For $\tilde Q'$ commuting with $\vec e_z$, the Q'-adapted basis is the standard one up to the exchange of the two labels and the reciprocal rescaling, and $\mathsf{C}_{Q'}$ is the fixed matrix of §*The Fixed Change in the $4\times4$ Model*, composed with the exchange when the labels are exchanged. The general $\mathsf{C}_Q$ reduces to it when $Q_x=Q_y=0$ with the sign of $B$ chosen so that the root is $\pm i\vec e_z$. The reduction is the statement that the standard idempotents are the Q-adapted idempotents of the elements on the $e_z$ axis, up to the exchange.
+**The standard eigenbasis as a special case.** For $\tilde Q'$ commuting with $\vec e_z$, the eigenbasis of $\tilde Q'$ is the standard one up to the exchange of the two labels and the reciprocal rescaling, and $\mathsf{C}_{Q'}$ is the fixed matrix of §*The Fixed Change in the $4\times4$ Model*, composed with the exchange when the labels are exchanged. The general $\mathsf{C}_Q$ reduces to it when $Q_x=Q_y=0$ with the sign of $B$ chosen so that the root is $\pm i\vec e_z$. The reduction is the statement that the standard idempotents are the eigenprojections of the elements on the $e_z$ axis, up to the exchange.
 
 ## Spinors and the Columns
 
@@ -466,7 +466,7 @@ The same matrix acts on both columns. This is the precise sense in which the two
 
 ## The $4\times4$ Matrix Element Representation
 
-**The left and right regular matrices carry the multiplication on the four-vector space, and in the Q-adapted order they are Kronecker products of the $2\times2$ Peirce matrix with an identity.**
+**The left and right regular matrices carry the multiplication on the four-vector space, and in the eigenbasis order they are Kronecker products of the $2\times2$ Peirce matrix with an identity.**
 
 ### The Regular Matrices
 
@@ -504,9 +504,9 @@ $$
 $$
 The left matrix is multiplicative and the right matrix is anti-multiplicative; both are injective, and the left one alone is the regular representation of the algebra.
 
-### The Q-Adapted Order
+### The Eigenbasis Order
 
-Write $M=\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})$. In the Q-adapted order
+Write $M=\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})$. In the eigenbasis order
 $$
 (\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)
 $$
@@ -550,11 +550,11 @@ Q_{\mathrm{sp},12}\mathrm I_2&Q_{\mathrm{sp},22}\mathrm I_2
 \end{pmatrix}
 =M^{\mathsf T}\otimes\mathrm I_2.
 $$
-Left multiplication preserves each left ideal $S_\pm$ and acts on each by $M$, so $[L]_{\mathrm{col}}$ is block diagonal. Right multiplication does not preserve the left ideals; it mixes $S_+$ and $S_-$ according to the entries of $M$, so $[R]_{\mathrm{col}}$ is not block diagonal. The two orders differ by the permutation of the second and third basis vectors. In the Q-adapted order the blocks are the right ideals and the right matrix is block diagonal; in the column order the blocks are the left ideals and the left matrix is block diagonal. The two block forms record the right-ideal decomposition $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$ and the left-ideal decomposition $\mathbb{B}=S_+\oplus S_-$, which are different groupings of the same four basis vectors.
+Left multiplication preserves each left ideal $S_\pm$ and acts on each by $M$, so $[L]_{\mathrm{col}}$ is block diagonal. Right multiplication does not preserve the left ideals; it mixes $S_+$ and $S_-$ according to the entries of $M$, so $[R]_{\mathrm{col}}$ is not block diagonal. The two orders differ by the permutation of the second and third basis vectors. In the eigenbasis order the blocks are the right ideals and the right matrix is block diagonal; in the column order the blocks are the left ideals and the left matrix is block diagonal. The two block forms record the right-ideal decomposition $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$ and the left-ideal decomposition $\mathbb{B}=S_+\oplus S_-$, which are different groupings of the same four basis vectors.
 
 ### The Four Basis Elements in the Eigenbasis
 
-**The four elements of the Q-adapted order have the four elementary matrices for left multiplication, and the fixed basis has four constant matrices in the standard eigenbasis.**
+**The four elements of the eigenbasis order have the four elementary matrices for left multiplication, and the fixed basis has four constant matrices in the standard eigenbasis.**
 
 In the order $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the left regular matrices are the Kronecker products $\mathsf M_2^{Q}(P)\otimes\mathrm I_2$ of the four matrices of the $2\times2$ table with the identity:
 $$
@@ -682,13 +682,13 @@ $$
 \mathsf M_2^{Q}(\vec e_z)=
 \begin{pmatrix}-i&0\\0&i\end{pmatrix},
 $$
-and $[L_{P}]_{\mathrm Q}=\mathsf M_2^{Q}(P)\otimes\mathrm I_2$ returns the four $4\times4$ matrices above. In the standard case the Q-adapted model is the fixed model itself: the assignment of §*The $2\times2$ Matrix Element Representation* already sends $\tilde\Pi_{\pm,0}$ to $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and the standard nilpotents to the two off-diagonal matrices with a single $1$, so the four matrices above are the four matrices displayed there. They satisfy
+and $[L_{P}]_{\mathrm Q}=\mathsf M_2^{Q}(P)\otimes\mathrm I_2$ returns the four $4\times4$ matrices above. In the standard case the eigenbasis model is the fixed model itself: the assignment of §*The $2\times2$ Matrix Element Representation* already sends $\tilde\Pi_{\pm,0}$ to $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and the standard nilpotents to the two off-diagonal matrices with a single $1$, so the four matrices above are the four matrices displayed there. They satisfy
 $$
 \mathsf M_2^{Q}(\vec e_x)^2=\mathsf M_2^{Q}(\vec e_y)^2=\mathsf M_2^{Q}(\vec e_z)^2=-\mathrm I_2,
 \qquad
 \mathsf M_2^{Q}(\vec e_x)\mathsf M_2^{Q}(\vec e_y)=\mathsf M_2^{Q}(\vec e_z),
 $$
-which are the relations $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ of the fixed basis. Off the axis the identity $[L_P]_{\mathrm Q}=\mathsf M_2^{Q}(P)\otimes\mathrm I_2$ holds with $\mathsf M_2^{Q}(\vec e_\mu)$ the Peirce matrix of $\vec e_\mu$ in the general Q-adapted model, which is full.
+which are the relations $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ of the fixed basis. Off the axis the identity $[L_P]_{\mathrm Q}=\mathsf M_2^{Q}(P)\otimes\mathrm I_2$ holds with $\mathsf M_2^{Q}(\vec e_\mu)$ the Peirce matrix of $\vec e_\mu$ in the general eigenbasis model, which is full.
 
 ### The Diagonal Form
 
@@ -708,7 +708,7 @@ which is the square of the characteristic polynomial of $\mathsf{M}_2(\tilde Q)$
 
 ### The Fixed Change in the $4\times4$ Model
 
-The Q-adapted order is reached from the fixed basis by the change-of-basis matrix whose columns are the coordinates of $\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-$ in the fixed basis. For the standard root $i\vec e_z$ and the standard nilpotents of the fixed model, this matrix is
+The eigenbasis order is reached from the fixed basis by the change-of-basis matrix whose columns are the coordinates of $\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-$ in the fixed basis. For the standard root $i\vec e_z$ and the standard nilpotents of the fixed model, this matrix is
 $$
 \mathsf{C}_4^{(0)}=
 \begin{pmatrix}
@@ -721,7 +721,7 @@ $$
 (\mathsf{C}_4^{(0)})^{-1}\mathsf{M}_4^{L}(\tilde Q)\mathsf{C}_4^{(0)}
 =\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)
 $$
-when $\tilde Q$ commutes with $\vec e_z$ and the sign of $B$ is chosen so that the Q-adapted root is the standard root $i\vec e_z$; for $Q_x=Q_y=0$ this means $B=-Q_z$, so that $\lambda_\pm=Q_t\mp iQ_z$. The four columns are the coordinate columns of the four matrices
+when $\tilde Q$ commutes with $\vec e_z$ and the sign of $B$ is chosen so that the root of the eigenbasis is the standard root $i\vec e_z$; for $Q_x=Q_y=0$ this means $B=-Q_z$, so that $\lambda_\pm=Q_t\mp iQ_z$. The four columns are the coordinate columns of the four matrices
 $$
 \begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
 \begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
@@ -730,7 +730,7 @@ $$
 $$
 read back through the inverse of $\mathsf{M}_2^{Q}$. The matrix is fixed because the standard root and the standard nilpotents are fixed.
 
-For a general $\tilde Q$ the change matrix $\mathsf{C}_4(\tilde Q)$ is not fixed: its columns are the coordinates of the Q-adapted basis, which depends on $\tilde Q$. It satisfies
+For a general $\tilde Q$ the change matrix $\mathsf{C}_4(\tilde Q)$ is not fixed: its columns are the coordinates of the eigenbasis, which depends on $\tilde Q$. It satisfies
 $$
 \mathsf{C}_4(\tilde Q)^{-1}\mathsf{M}_4^{L}(\tilde Q)\mathsf{C}_4(\tilde Q)
 =\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),
@@ -739,9 +739,9 @@ $$
 \mathsf{C}_4(\tilde Q)^{-1}\mathsf{M}_4^{R}(\tilde Q)\mathsf{C}_4(\tilde Q)
 =\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-).
 $$
-The two diagonalisations use the same change of basis, because the Q-adapted order diagonalises both the left and the right multiplication. This is the $4\times4$ statement that the eigenbasis is a basis of eigenvectors for both operators.
+The two diagonalisations use the same change of basis, because the eigenbasis order diagonalises both the left and the right multiplication. This is the $4\times4$ statement that the eigenbasis is a basis of eigenvectors for both operators.
 
-**The change as a Kronecker product.** In the matrix-unit order the change from the fixed model to the Q-adapted model is the conjugation $X\mapsto\mathsf{C}_Q^{-1}X\mathsf{C}_Q$ on $M_2(\mathbb{C})$. On the four coordinates, with the column-major order
+**The change as a Kronecker product.** In the matrix-unit order the change from the fixed model to the eigenbasis model is the conjugation $X\mapsto\mathsf{C}_Q^{-1}X\mathsf{C}_Q$ on $M_2(\mathbb{C})$. On the four coordinates, with the column-major order
 $$
 \begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
 \begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
@@ -762,7 +762,7 @@ $$
 \qquad
 \mathsf{M}_4^{R}(\tilde Q_{\mathrm{sp}})\longmapsto P^{-1}\mathsf{M}_4^{R}(\tilde Q_{\mathrm{sp}})P.
 $$
-The trace, the determinant, the characteristic polynomial and the spectrum are unchanged. The Q-adapted change is the particular $P=\mathsf{C}_4(\tilde Q)$ that diagonalises both matrices. The basis is fixed by the Peirce conditions: the two idempotents $\tilde\Pi_\pm$ must remain idempotent, so their scales are $1$, and the two nilpotents satisfy $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, so their scales are reciprocal. The only remaining freedom is
+The trace, the determinant, the characteristic polynomial and the spectrum are unchanged. The eigenbasis change is the particular $P=\mathsf{C}_4(\tilde Q)$ that diagonalises both matrices. The basis is fixed by the Peirce conditions: the two idempotents $\tilde\Pi_\pm$ must remain idempotent, so their scales are $1$, and the two nilpotents satisfy $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, so their scales are reciprocal. The only remaining freedom is
 $$
 \vec\Upsilon_+\longmapsto\mu\vec\Upsilon_+,\qquad
 \vec\Upsilon_-\longmapsto\mu^{-1}\vec\Upsilon_-,\qquad
@@ -770,19 +770,19 @@ $$
 $$
 which leaves the diagonal form and the Peirce multiplication table unchanged. This is the $4\times4$ form of the relative scale of §*The Freedom of the Change*; the common scale of the $2\times2$ diagonaliser is the part that leaves the conjugation unchanged.
 
-**The two models compared.** The $2\times2$ model and the $4\times4$ model carry the same element but different linear objects. The $2\times2$ matrix is the element; the $4\times4$ matrix is the operator of left or right multiplication by the element. The $2\times2$ model is irreducible, the $4\times4$ model is the direct sum of two copies of it, and the eigenvalues of the $4\times4$ matrix are the eigenvalues of the $2\times2$ matrix, each repeated twice. The $2\times2$ model has the two columns for the two spinor spaces; the $4\times4$ model has the two blocks for the two copies, and the Q-adapted order interleaves them.
+**The two models compared.** The $2\times2$ model and the $4\times4$ model carry the same element but different linear objects. The $2\times2$ matrix is the element; the $4\times4$ matrix is the operator of left or right multiplication by the element. The $2\times2$ model is irreducible, the $4\times4$ model is the direct sum of two copies of it, and the eigenvalues of the $4\times4$ matrix are the eigenvalues of the $2\times2$ matrix, each repeated twice. The $2\times2$ model has the two columns for the two spinor spaces; the $4\times4$ model has the two blocks for the two copies, and the eigenbasis order interleaves them.
 
 ## Summary
 
-**The eigenbasis in the $2\times2$ model.** The eigenprojections are the spectral projectors $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$, the nilpotents are the two square-zero matrices $\mathsf{M}_2(\vec\Upsilon_\pm)$ in the two mixed corners, and the Q-adapted model $\mathsf{M}_2^{Q}$ sends them to the four matrix units. The element is diagonal in that model, $\mathsf{M}_2^{Q}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$, and a general element has a full $2\times2$ matrix.
+**The eigenbasis in the $2\times2$ model.** The eigenprojections are the spectral projectors $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$, the nilpotents are the two square-zero matrices $\mathsf{M}_2(\vec\Upsilon_\pm)$ in the two mixed corners, and the eigenbasis model $\mathsf{M}_2^{Q}$ sends them to the four matrix units. The element is diagonal in that model, $\mathsf{M}_2^{Q}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$, and a general element has a full $2\times2$ matrix.
 
-**The base change.** The fixed model and the Q-adapted model are related by
+**The base change.** The fixed model and the eigenbasis model are related by
 $$
 \mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})=\mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q_{\mathrm{sp}})\mathsf{C}_Q,
 $$
-with $\mathsf{C}_Q$ the eigenvector matrix of §*Base Changes*. The change is unique up to the rescaling of its two columns, and the relative scale is the reciprocal rescaling of the nilpotents. The change is attached to the element, not to the algebra: two elements with different roots have different Q-adapted bases, related by a further change of basis.
+with $\mathsf{C}_Q$ the eigenvector matrix of §*Base Changes*. The change is unique up to the rescaling of its two columns, and the relative scale is the reciprocal rescaling of the nilpotents. The change is attached to the element, not to the algebra: two elements with different roots have different eigenbases, related by a further change of basis.
 
-**The $4\times4$ model.** In the Q-adapted order the left and right regular matrices are
+**The $4\times4$ model.** In the eigenbasis order the left and right regular matrices are
 $$
 [L_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q}=M\otimes\mathrm I_2,
 \qquad
@@ -790,7 +790,7 @@ $$
 $$
 with $M=\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})$; for $\tilde Q_{\mathrm{sp}}=\tilde Q$ they are diagonal, with eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ and $(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$. The $4\times4$ change of basis is the same eigenbasis change, read on the four-vector space.
 
-**The four basis elements.** In the Q-adapted order the four basis elements of the eigenbasis have the four elementary regular matrices,
+**The four basis elements.** In the eigenbasis order the four basis elements of the eigenbasis have the four elementary regular matrices,
 $$
 [L_{\tilde\Pi_+}]_{\mathrm Q}=\operatorname{diag}(1,1,0,0),\quad
 [L_{\tilde\Pi_-}]_{\mathrm Q}=\operatorname{diag}(0,0,1,1),\quad
@@ -806,20 +806,20 @@ $$
 $$
 which are the conjugates of the fixed regular matrices by $\mathsf C_4^{(0)}$.
 
-**The limits.** For $Q_x^2+Q_y^2+Q_z^2=0$ the construction fails: there is no spectral projector of rank one attached to $\tilde Q$, no Q-adapted basis, no nilpotent normalisation and no diagonal form. The fixed model still exists, and the matrix of $\tilde Q$ is a Jordan block when $Q_t\neq0$ and a nonzero nilpotent when $Q_t=0$. The fixed $4\times4$ matrices still exist and still satisfy their multiplicativity; they are not diagonalisable. The scalar case $\vec Q=0$ has $\mathsf{M}_2(\tilde Q)=Q_t\mathrm I_2$, every basis is an eigenbasis, and the Q-adapted construction is absent while an eigenbasis is not.
+**The limits.** For $Q_x^2+Q_y^2+Q_z^2=0$ the construction fails: there is no spectral projector of rank one attached to $\tilde Q$, no eigenbasis attached to $\tilde Q$, no nilpotent normalisation and no diagonal form. The fixed model still exists, and the matrix of $\tilde Q$ is a Jordan block when $Q_t\neq0$ and a nonzero nilpotent when $Q_t=0$. The fixed $4\times4$ matrices still exist and still satisfy their multiplicativity; they are not diagonalisable. The scalar case $\vec Q=0$ has $\mathsf{M}_2(\tilde Q)=Q_t\mathrm I_2$, every basis is an eigenbasis, and the construction from the root is absent although an eigenbasis exists.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathsf{M}_2$ | Fixed $2\times2$ matrix element representation $\mathbb{B}\to M_2(\mathbb{C})$ |
-| $\mathsf{M}_2^{Q}$ | Q-adapted $2\times2$ model, $\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})=\mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q_{\mathrm{sp}})\mathsf{C}_Q$ |
+| $\mathsf{M}_2^{Q}$ | eigenbasis $2\times2$ model, $\mathsf{M}_2^{Q}(\tilde Q_{\mathrm{sp}})=\mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q_{\mathrm{sp}})\mathsf{C}_Q$ |
 | $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$ | Spectral projectors of $\mathsf{M}_2(\tilde Q)$ |
 | $\mathsf{C}_Q$ | Eigenvector matrix, columns a $\lambda_+$- and a $\lambda_-$-eigenvector |
-| $\mathsf{C}_4^{(0)}$ | Fixed change to the standard Q-adapted order in the $4\times4$ model |
-| $\mathsf{C}_4(\tilde Q)$ | Change to the Q-adapted order for a general $\tilde Q$ |
+| $\mathsf{C}_4^{(0)}$ | Fixed change to the standard eigenbasis order in the $4\times4$ model |
+| $\mathsf{C}_4(\tilde Q)$ | Change to the eigenbasis order for a general $\tilde Q$ |
 | $\mathsf{M}_4^{L},\mathsf{M}_4^{R}$ | Left and right regular matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
-| $[L_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q},[R_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q}$ | Regular matrices in the Q-adapted order |
+| $[L_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q},[R_{\tilde Q_{\mathrm{sp}}}]_{\mathrm Q}$ | Regular matrices in the eigenbasis order |
 | $[L_{\tilde Q_{\mathrm{sp}}}]_{\mathrm{col}},[R_{\tilde Q_{\mathrm{sp}}}]_{\mathrm{col}}$ | Regular matrices in the column order |
 | $\otimes$ | Kronecker product |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | The two spinor spaces, the two columns of the $2\times2$ model |

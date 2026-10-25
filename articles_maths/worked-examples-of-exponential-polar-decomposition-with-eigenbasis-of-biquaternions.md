@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article collects the Q-adapted Peirce basis, the four basis elements (two idempotents and two nilpotents) and the two spinor spaces of the eight biquaternions of *Worked Examples of Exponential Polar Decomposition of Biquaternions*. The polar decomposition itself, with its coordinates, its word and its check, is in that article; here the same eight elements are read in the Q-adapted basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$.
+This article collects the eigenbasis, the four basis elements (two idempotents and two nilpotents) and the two spinor spaces of the eight biquaternions of *Worked Examples of Exponential Polar Decomposition of Biquaternions*. The polar decomposition itself, with its coordinates, its word and its check, is in that article; here the same eight elements are read in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$.
 
-In the three cases with $B=0$, the identity of case 1 and the null-vector elements of cases 6 and 8, there is no Q-adapted basis. The paragraph of the case reads the element in a fixed Peirce basis $(\tilde\Pi_{+,0},\tilde\Pi_{-,0})$ of *Ideals and Peirce Decompositions of the Biquaternion Algebra*; in case 1 the conclusion holds for every pair of complementary idempotents, so the fixed pair is only a choice.
+In the three cases with $B=0$, the identity of case 1 and the null-vector elements of cases 6 and 8, there is no eigenbasis singled out by the element. The paragraph of the case reads the element in a fixed Peirce basis $(\tilde\Pi_{+,0},\tilde\Pi_{-,0})$ of *Ideals and Peirce Decompositions of the Biquaternion Algebra*; in case 1 the conclusion holds for every pair of complementary idempotents, so the fixed pair is only a choice.
 
 The eight elements, in the order of the cases, are collected in the table.
 
@@ -19,7 +19,7 @@ The eight elements, in the order of the cases, are collected in the table.
 | 7 | $\bigl(1-\tfrac{i}{2}\bigr)e_t+\tfrac{1+i}{\sqrt2}\vec e_x+\tfrac{1}{\sqrt2}\vec e_y+\tfrac{i}{2}\vec e_z$ |
 | 8 | $(1+i)e_t+\vec e_x+i\vec e_y$ |
 
-## The Q-Adapted Basis, the Basis Matrices, and the Spinors
+## The Eigenbasis, the Basis Matrices, and the Spinors
 
 **The basis.** For $\vec Q\neq0$ put $B=\sqrt{Q_x^2+Q_y^2+Q_z^2}$, $\vec\Xi=-i\vec Q/B$ and $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$. The two mixed corners are the complex lines
 $$
@@ -35,7 +35,7 @@ $$
 \qquad
 \vec\Upsilon_\pm^2=0.
 $$
-The normalization fixes the pair up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. In the Q-adapted order $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the left-regular matrices of the four basis elements are
+The normalization fixes the pair up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. In the eigenbasis order $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the left-regular matrices of the four basis elements are
 $$
 [L_{\tilde\Pi_+}]=\operatorname{diag}(1,1,0,0),\qquad
 [L_{\tilde\Pi_-}]=\operatorname{diag}(0,0,1,1),
@@ -63,7 +63,7 @@ $$
 $$
 \mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
-When $\vec Q\parallel\vec e_z$ the Q-adapted basis is the standard Peirce basis of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*, with the two labels exchanged according to the sign of $B$; the four matrices above are then the matrices of $\tilde\Pi_+$, $\vec\Upsilon_-$, $\vec\Upsilon_+$, $\tilde\Pi_-$ in that basis.
+When $\vec Q\parallel\vec e_z$ the eigenbasis is the standard Peirce basis of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*, with the two labels exchanged according to the sign of $B$; the four matrices above are then the matrices of $\tilde\Pi_+$, $\vec\Upsilon_-$, $\vec\Upsilon_+$, $\tilde\Pi_-$ in that basis.
 
 **The spinor spaces.** The two spinor spaces are the minimal left ideals
 $$
@@ -126,13 +126,13 @@ Peirce components of $\tilde Q$ are $\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+$ a
 | 7 | $\bigl(1-\tfrac{i}{2}\bigr)e_t+\tfrac{1+i}{\sqrt2}\vec e_x+\tfrac{1}{\sqrt2}\vec e_y+\tfrac{i}{2}\vec e_z$ | $\sqrt{i+\tfrac14}$ | $1-\tfrac{i}{2}+iB$ | $1-\tfrac{i}{2}-iB$ | $(\lambda_+,0)$ | $(0,\lambda_-)$ | $\operatorname{diag}(\lambda_+,\lambda_-)$ |
 | 8 | $(1+i)e_t+\vec e_x+i\vec e_y$ | $0$ | $1+i$ | $1+i$ | — | — | — (Jordan block) |
 
-In case 1 the element is the identity and every pair of complementary idempotents is an eigenbasis: the two spinor spaces can be any pair of minimal ideals, and both eigenvalues are $1$. In cases 6 and 8 the vector part is null, $B=0$, so there is no Q-adapted basis, no normalized nilpotent pair and no Q-adapted spinor decomposition; the multiplication is a single Jordan block with the repeated eigenvalue $1$, respectively $1+i$, and the matrix is not diagonalisable.
+In case 1 the element is the identity and every pair of complementary idempotents is an eigenbasis: the two spinor spaces can be any pair of minimal ideals, and both eigenvalues are $1$. In cases 6 and 8 the vector part is null, $B=0$, so there is no eigenbasis, no normalized nilpotent pair and no spinor decomposition attached to $\tilde Q$; the multiplication is a single Jordan block with the repeated eigenvalue $1$, respectively $1+i$, and the matrix is not diagonalisable.
 
 ## The Eight Cases
 
 ### Case 1: $e_t$
 
-**The four basis elements.** $B=0$, so there is no Q-adapted pair. The fixed Peirce basis of the algebra is
+**The four basis elements.** $B=0$, so there is no eigenbasis. The fixed Peirce basis of the algebra is
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
 \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\quad
@@ -272,7 +272,7 @@ For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12
 
 ### Case 6: $e_t+\vec e_y+\tfrac{i}{\sqrt2}\vec e_x+\tfrac{i}{\sqrt2}\vec e_z$
 
-**The four basis elements.** $B=0$, so there is no Q-adapted pair. The fixed Peirce basis of the algebra is
+**The four basis elements.** $B=0$, so there is no eigenbasis. The fixed Peirce basis of the algebra is
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
 \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\quad
@@ -330,7 +330,7 @@ For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12
 
 ### Case 8: $(1+i)e_t+\vec e_x+i\vec e_y$
 
-**The four basis elements.** $B=0$, so there is no Q-adapted pair. The fixed Peirce basis of the algebra is
+**The four basis elements.** $B=0$, so there is no eigenbasis. The fixed Peirce basis of the algebra is
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
 \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\quad
@@ -362,10 +362,10 @@ For $\tilde Q$ itself the two columns are $(1+i,0)$ and $(-2i,1+i)$; left multip
 
 ## Summary
 
-- The Q-adapted basis depends on the element through its root $\vec\Xi$; the two idempotents change from case to case, unlike the fixed idempotents of the split-complex and reduced-biquaternion layers.
+- The eigenbasis depends on the element through its root $\vec\Xi$; the two idempotents change from case to case, unlike the fixed idempotents of the split-complex and reduced-biquaternion layers.
 - In every case with $B\neq0$ the eigenvalues are $\lambda_\pm=Q_t\pm iB$, the Peirce components of $\tilde Q$ are $\lambda_+\tilde\Pi_+$ and $\lambda_-\tilde\Pi_-$; these are the two columns of the diagonal matrix.
 - In case 1 the element is the identity, every pair of complementary idempotents is an eigenbasis, and the two spinor spaces can be any pair of minimal ideals.
-- In cases 6 and 8 the vector part is null, $B=0$: there is no Q-adapted basis, no normalized nilpotent pair and no Q-adapted spinor decomposition, and the multiplication is a single Jordan block.
+- In cases 6 and 8 the vector part is null, $B=0$: there is no eigenbasis, no normalized nilpotent pair and no spinor decomposition attached to $\tilde Q$, and the multiplication is a single Jordan block.
 
 ## Summary of Notation
 
@@ -377,7 +377,7 @@ For $\tilde Q$ itself the two columns are $(1+i,0)$ and $(-2i,1+i)$; left multip
 | $\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$, $\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$ | the two spinors, elements of $S_+$ and $S_-$ |
 | $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$ | the general element; its two columns are the two spinors |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
-| $\mathsf M_2^{Q}$ | the $2\times2$ model in the Q-adapted basis |
+| $\mathsf M_2^{Q}$ | the $2\times2$ model in the eigenbasis |
 
 ## Further Reading
 

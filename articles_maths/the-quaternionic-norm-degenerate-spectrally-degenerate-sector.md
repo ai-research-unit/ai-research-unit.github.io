@@ -95,7 +95,7 @@ $$
 \mathbb{C}[\tilde Q]=\{a e_t+b\tilde Q\ :\ a,b\in\mathbb{C}\}.
 $$
 
-Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Upsilon$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits no adapted Peirce decomposition.
+Indeed, an element $X=x_0e_t+\vec x$ commutes with $\tilde Q=\vec\Upsilon$ exactly when $\vec x\times\vec\Upsilon=0$, that is, exactly when $\vec x$ is a multiple of $\vec\Upsilon$. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits no Peirce decomposition attached to it.
 
 **Peirce form.** Let $e$ be an idempotent with $\tilde Q=e\tilde Q(e_t-e)$; such an idempotent exists because $\tilde Q$ generates a minimal left ideal. Then $e\tilde Q=\tilde Q$ and $\tilde Qe=0$; with $f=e_t-e$, the Peirce form is purely off-diagonal:
 
@@ -103,7 +103,7 @@ $$
 e\tilde Qe=0,\qquad e\tilde Qf=\tilde Q,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0.
 $$
 
-So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No Peirce decomposition adapted to $\tilde Q$ can exist, since an adapted one would place $\tilde Q$ in the diagonal corners $\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.
+So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No Peirce decomposition relative to $\tilde Q$ can exist, since such a decomposition would place $\tilde Q$ in the diagonal corners $\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.
 
 **Spectrum and minimal polynomial.** The spectrum is $\{0\}$ and the minimal polynomial is $X^2$, not $X$: the element is defective, a single Jordan block of size two with eigenvalue $0$.
 
@@ -111,9 +111,9 @@ So $\tilde Q$ lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair. No
 
 ## Peirce Data
 
-**Off the origin the Peirce form is purely off-diagonal and no adapted decomposition exists. At the origin every idempotent is adapted and the Peirce matrix is zero.**
+**Off the origin the Peirce form is purely off-diagonal and no Peirce decomposition relative to $\tilde Q$ exists. At the origin every idempotent commutes with $\tilde Q$ and the Peirce matrix is zero.**
 
-Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$, and there is no adapted Peirce decomposition.
+Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$, and there is no Peirce decomposition relative to $\tilde Q$.
 
 A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. With $f=e_t-e$ the Peirce form is
 
@@ -124,13 +124,13 @@ f\tilde Qe=0,\qquad
 f\tilde Qf=0.
 $$
 
-The element lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair; by the argument of §*The Elements* no adapted Peirce decomposition can exist. In the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix is the single nilpotent block
+The element lies wholly in the mixed corner $\mathbb{B}_{+-}$ of that pair; by the argument of §*The Elements* no Peirce decomposition relative to $\tilde Q$ can exist. In the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix is the single nilpotent block
 
 $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
 $$
 
-**No Q-adapted basis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. No Peirce pair is attached to $\tilde Q$, and no Q-adapted Peirce basis exists.
+**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. No Peirce pair is attached to $\tilde Q$, and no eigenbasis exists.
 
 ## The Origin
 
@@ -141,7 +141,7 @@ The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is no
 - It is the only element of the sector on which both multiplications are the zero map, $L_0=R_0=0$, of rank $0$ and kernel $\mathbb{B}$.
 - It lies in the closure of every other sector: every sector is invariant under the scaling $\tilde Q\mapsto\lambda\tilde Q$ for $\lambda\neq0$, so every punctured neighbourhood of $0$ meets all four.
 - It is the only diagonalisable element of the sector, which is why "spectrally degenerate" does not coincide with "non-diagonalisable".
-- Its spectral decomposition is the one-term writing $0=0\cdot e_t$, with every idempotent adapted to it and the Peirce matrix zero in every Peirce basis; it is the only element of the sector for which a spectral decomposition exists.
+- Its spectral decomposition is the one-term writing $0=0\cdot e_t$, with every idempotent commuting with it and the Peirce matrix zero in every Peirce basis; it is the only element of the sector for which a spectral decomposition exists.
 
 ## Multiplication
 
@@ -191,7 +191,7 @@ and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin
 
 ## Comparison with the Other Three Sectors
 
-| sector | conditions | elements | adapted Peirce | product |
+| sector | conditions | elements | Peirce decomposition | product |
 |---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | exists, unique | $N\neq0$ preserved; can land in $\Sigma_{10}$ |
 | **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $2Q_t\tilde\Pi$ with $\tilde\Pi$ a non-trivial idempotent and $Q_t\neq0$; spectrum $\{0,2Q_t\}$ | exists, unique | $N=0$ preserved; can land in $\Sigma_{00}$ |
@@ -228,7 +228,7 @@ The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that t
 
 **One-sided operators.** Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.
 
-**The "everything fails" cell.** It is the cell in which invertibility, the adapted Peirce decomposition (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.
+**The "everything fails" cell.** It is the cell in which invertibility, the Peirce decomposition relative to $\tilde Q$ (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.
 
 ## Summary
 
@@ -240,7 +240,7 @@ The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that t
 | elements | non-zero nilpotents of index two, plus the origin |
 | annihilators | two distinct planes of dimension $2$ meeting in $\mathbb{C}\tilde Q$, exchanged by the conjugation |
 | centraliser | $\mathbb{C}[\tilde Q]$, with idempotents $0$ and $e_t$ |
-| Peirce form | purely off-diagonal; no adapted decomposition off the origin |
+| Peirce form | purely off-diagonal; no Peirce decomposition relative to $\tilde Q$ off the origin |
 | spectrum | $\{0\}$, minimal polynomial $X^2$ |
 | multiplication | $\Sigma_{00}\cdot\Sigma_{00}\subseteq\{0\}\cup\Sigma_{01}$ |
 | relation to the cones | $\Sigma_{00}=\mathcal{N}\cap\mathcal S$, with the two cones tangent along the whole sector |

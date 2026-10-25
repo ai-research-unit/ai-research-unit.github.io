@@ -36,7 +36,7 @@ $$
 
 (iv) $\tilde Q$ admits a spectral decomposition into two non-trivial idempotents with distinct non-zero coefficients;
 
-(v) $\tilde Q$ is invertible, non-scalar, and admits an adapted Peirce decomposition.
+(v) $\tilde Q$ is invertible, non-scalar, and admits a Peirce decomposition with idempotents commuting with it.
 
 *Proof.* (i) $\iff$ (ii): $N\neq0$ is the unit condition, and $B^2\neq0$ is the discriminant condition, so the eigenvalues $\lambda_\pm=Q_t\pm\beta$, with $\beta^2=-B^2$ and $\beta\neq0$, are distinct; conversely distinct eigenvalues give $B^2\neq0$ and $N=\lambda_+\lambda_-\neq0$ makes the element a unit.
 
@@ -44,7 +44,7 @@ $$
 
 (ii) $\iff$ (iv): with distinct eigenvalues the spectral idempotents $e_\pm$ exist, are non-trivial, and are unique; the coefficients $\lambda_\pm$ are distinct and non-zero because $N=\lambda_+\lambda_-\neq0$. Conversely such a decomposition exhibits two distinct eigenvalues and a non-zero norm.
 
-(i) $\iff$ (v): for a non-scalar element an adapted Peirce decomposition exists exactly when $B^2\neq0$, by the existence theorem of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; invertibility is exactly $N\neq0$. So both conditions together are exactly (i).
+(i) $\iff$ (v): for a non-scalar element a Peirce decomposition relative to $\tilde Q$ exists exactly when $B^2\neq0$, by the existence theorem of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; invertibility is exactly $N\neq0$. So both conditions together are exactly (i).
 
 **Corollary (regular semisimple units).** The sector is the set of regular semisimple elements of the unit group:
 
@@ -146,13 +146,13 @@ e_-\tilde Qe_+=0,\qquad
 e_-\tilde Qe_-=\lambda_-e_-.
 $$
 
-This is the only sector in which the adapted decomposition has two non-zero coefficients and two non-trivial idempotents. In $\Sigma_{01}$ one coefficient vanishes; on the scalar line of $\Sigma_{10}$ the two coefficients coincide and the refinement is non-unique; in $\Sigma_{10}^{\mathrm{J}}$ and in $\Sigma_{00}\setminus\{0\}$ no adapted decomposition exists.
+This is the only sector in which the Peirce decomposition relative to $\tilde Q$ has two non-zero coefficients and two non-trivial idempotents. In $\Sigma_{01}$ one coefficient vanishes; on the scalar line of $\Sigma_{10}$ the two coefficients coincide and the refinement is non-unique; in $\Sigma_{10}^{\mathrm{J}}$ and in $\Sigma_{00}\setminus\{0\}$ no Peirce decomposition relative to $\tilde Q$ exists.
 
 **The spectral decomposition.** The two-term writing
 $$
 \tilde Q=\lambda_+e_++\lambda_-e_-,\qquad \lambda_\pm=Q_t\pm\beta,\quad \beta^2=-B^2,
 $$
-is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the Q-adapted basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*.
+is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Eigenbasis, the Nilpotents, and the Peirce Corners*.
 
 **Powers, inverse, and the eigenvalue map.** For every polynomial $f\in\mathbb{C}[X]$,
 $$
@@ -178,7 +178,7 @@ $$
 
 so the inverse lies in the sector.
 
-## The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis
+## The Eigenbasis, the Nilpotents, and the Peirce Corners
 
 **Every $\tilde Q\in\Sigma_{11}$ has $B^2\neq0$. Its own root carries a Peirce pair, the two mixed corners carry a pair of nilpotents, and the four elements form a basis in which left multiplication by $\tilde Q$ is diagonal. The basis is an eigenbasis of left multiplication; the two minimal left ideals are the eigenspaces of right multiplication, not of left multiplication.** This is the Q-dependent specialisation of the Peirce decomposition of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*: the four corner lines are the same construction, read relative to the pair of $\tilde Q$'s own root.
 
@@ -370,13 +370,13 @@ $$
 $$
 and the products are $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, as required.
 
-### The Q-Adapted Peirce Basis
+### The Eigenbasis
 
 The four elements
 $$
 \tilde\Pi_+,\qquad \vec\Upsilon_-,\qquad \vec\Upsilon_+,\qquad \tilde\Pi_-
 $$
-form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the **Q-adapted Peirce basis**. In this basis the multiplication by $\tilde Q$ is diagonal:
+form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the **eigenbasis of $L_{\tilde Q}$**. In this basis the multiplication by $\tilde Q$ is diagonal:
 $$
 \tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\qquad
 \tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,\qquad
@@ -548,13 +548,13 @@ The standard case is $\vec Q=Q_z\vec e_z$, $B=-Q_z$.
 
 ### The Eigenbasis of Left Multiplication
 
-**A basis of $\mathbb{B}$ is an eigenbasis of $L_{\tilde Q}$ if each of its vectors $b$ satisfies $\tilde Qb=\mu b$ for some scalar $\mu$. The Q-adapted Peirce basis is one; because each eigenspace is two-dimensional, it is not unique.**
+**A basis of $\mathbb{B}$ is an eigenbasis of $L_{\tilde Q}$ if each of its vectors $b$ satisfies $\tilde Qb=\mu b$ for some scalar $\mu$. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is one; because each eigenspace is two-dimensional, it is not unique.**
 
 Write
 $$
 L_{\tilde Q}(\tilde Q_{\mathrm{sp}})=\tilde Q\tilde Q_{\mathrm{sp}},\qquad R_{\tilde Q}(\tilde Q_{\mathrm{sp}})=\tilde Q_{\mathrm{sp}}\tilde Q.
 $$
-An eigenvector of $L_{\tilde Q}$ with eigenvalue $\mu$ is a nonzero element $\tilde Q_{\mathrm{sp}}$ with $\tilde Q\tilde Q_{\mathrm{sp}}=\mu\tilde Q_{\mathrm{sp}}$. The diagonal property of the Q-adapted basis reads
+An eigenvector of $L_{\tilde Q}$ with eigenvalue $\mu$ is a nonzero element $\tilde Q_{\mathrm{sp}}$ with $\tilde Q\tilde Q_{\mathrm{sp}}=\mu\tilde Q_{\mathrm{sp}}$. The diagonal property of the eigenbasis reads
 $$
 \tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\qquad
 \tilde Q\vec\Upsilon_-=\lambda_+\vec\Upsilon_-,\qquad
@@ -571,7 +571,7 @@ $$
 $$
 These are the two minimal **right** ideals. The basis $(\tilde\Pi_+,\vec\Upsilon_-)$ is a basis of the first, $(\vec\Upsilon_+,\tilde\Pi_-)$ a basis of the second.
 
-**Uniqueness.** An eigenbasis of $L_{\tilde Q}$ is any pair of bases of these two eigenspaces. It is therefore unique only up to an invertible change of basis on each eigenspace. The Q-adapted basis is the choice singled out by the Peirce structure: it orders each eigenspace as $(\tilde\Pi_+,\vec\Upsilon_-)$ and $(\vec\Upsilon_+,\tilde\Pi_-)$, the diagonal idempotent of the Peirce pair first.
+**Uniqueness.** An eigenbasis of $L_{\tilde Q}$ is any pair of bases of these two eigenspaces. It is therefore unique only up to an invertible change of basis on each eigenspace. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is the choice singled out by the Peirce structure: it orders each eigenspace as $(\tilde\Pi_+,\vec\Upsilon_-)$ and $(\vec\Upsilon_+,\tilde\Pi_-)$, the diagonal idempotent of the Peirce pair first.
 
 **The left ideals are eigenspaces of right multiplication.** The two minimal left ideals
 $$
@@ -664,7 +664,7 @@ The two spinor spaces and their coordinates are collected in the table.
 $$
 \tilde Q_{\mathrm{sp}}=\tilde Q_{\mathrm{sp}}\tilde\Pi_++\tilde Q_{\mathrm{sp}}\tilde\Pi_-,
 $$
-and the two summands are a spinor of first chirality and a spinor of second chirality. In the Q-adapted coordinates they are
+and the two summands are a spinor of first chirality and a spinor of second chirality. In the eigenbasis coordinates they are
 $$
 \tilde Q_{\mathrm{sp}}\longmapsto(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22}),
 \qquad
@@ -750,7 +750,7 @@ This is the precise statement that the two spinor spaces are the two columns and
 
 ### What Depends on $\tilde Q$ and What Does Not
 
-The Q-adapted data depend on $\tilde Q$ through its root. The comparison is collected in the table.
+The eigenbasis data depend on $\tilde Q$ through its root. The comparison is collected in the table.
 
 | Object | Depends on $\tilde Q$? |
 |---|---|
@@ -761,7 +761,7 @@ The Q-adapted data depend on $\tilde Q$ through its root. The comparison is coll
 | Diagonal values $(\lambda_+,\lambda_-)$ of $L_{\tilde Q}$ | yes |
 | Peirce coordinates of a general element $\tilde Q_{\mathrm{sp}}$ | yes |
 
-The Q-adapted basis is not the standard Peirce basis attached to the fixed root $i\vec e_z$. The two coincide, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is, when $Q_x=Q_y=0$. In that case $\vec\Xi=\pm i\vec e_z$, the pair is the standard pair up to the exchange of its two members, and the nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$, in one order or the other, up to the reciprocal rescaling.
+The eigenbasis is not the standard Peirce basis attached to the fixed root $i\vec e_z$. The two coincide, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is, when $Q_x=Q_y=0$. In that case $\vec\Xi=\pm i\vec e_z$, the pair is the standard pair up to the exchange of its two members, and the nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$, in one order or the other, up to the reciprocal rescaling.
 
 ### Summary Block
 
@@ -811,7 +811,7 @@ $$
 \tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+,\qquad
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
 $$
-The Q-adapted Peirce basis is an eigenbasis of $L_{\tilde Q}$ with eigenvalues
+The eigenbasis of $L_{\tilde Q}$ has eigenvalues
 $$
 (\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$
@@ -946,7 +946,7 @@ coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ an
 
 ## Comparison with the Other Three Sectors
 
-| sector | conditions | elements | spectrum | adapted Peirce | product |
+| sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | $\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero | $\{\lambda_+,\lambda_-\}$ | exists, unique; both terms non-zero | stays in $\mathbb{B}^\times$; lands in $\Sigma_{11}$ or $\Sigma_{10}$ |
 | **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique; one term vanishes | stays on $\mathcal N$; all three outcomes |
@@ -955,7 +955,7 @@ coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ an
 
 The four cells are exhaustive and disjoint. $\Sigma_{11}$ is the unique cell in which both predicates hold, $\Sigma_{00}$ the unique cell in which both fail, and the two mixed cells are the remaining two rows of the truth table.
 
-**Position among the four sectors.** Sector $11$ is the **distinct sector**: two distinct non-zero eigenvalues, a unique two-term spectral decomposition, and no point of either cone. The finer split inside the other sectors is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*. On this sector the two classifications coincide, because the sector is homogeneous: every element has two distinct non-zero eigenvalues and a unique adapted Peirce decomposition.
+**Position among the four sectors.** Sector $11$ is the **distinct sector**: two distinct non-zero eigenvalues, a unique two-term spectral decomposition, and no point of either cone. The finer split inside the other sectors is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*. On this sector the two classifications coincide, because the sector is homogeneous: every element has two distinct non-zero eigenvalues and a unique Peirce decomposition relative to $\tilde Q$.
 
 ## Consequences
 
@@ -979,10 +979,10 @@ Both eigenvalues are non-zero and distinct, both idempotents are non-trivial, an
 | question | answer |
 |---|---|
 | definition | $\Sigma_{11}=\{N\neq0,\ B^2\neq0\}$ |
-| descriptions | $\mathbb{B}\setminus(\mathcal N\cup\mathcal S)$; a unit with distinct eigenvalues; $\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero; invertible with a non-trivial adapted Peirce decomposition |
+| descriptions | $\mathbb{B}\setminus(\mathcal N\cup\mathcal S)$; a unit with distinct eigenvalues; $\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero; invertible with a non-trivial Peirce decomposition relative to $\tilde Q$ |
 | geometry | open dense, of full measure; complex dimension $4$ and real dimension $8$; connected; complement the hypersurface $NB^2=0$ |
 | elements | regular semisimple units; minimal polynomial $X^2-2Q_tX+N$, squarefree; centraliser $\mathbb{C}\oplus\mathbb{C}$ |
-| adapted Peirce | exists, unique, both coefficients non-zero |
+| Peirce decomposition | exists, unique, both coefficients non-zero |
 | annihilators | both zero; left and right multiplication bijective |
 | inversion | closed: $\tilde Q^{-1}\in\Sigma_{11}$ |
 | multiplication | $\Sigma_{11}\cdot\Sigma_{11}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with both outcomes; not product-closed |

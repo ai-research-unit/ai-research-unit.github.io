@@ -90,7 +90,7 @@ $$
 \tilde Q=Q_t\tilde\Pi_1+Q_t\tilde\Pi_2
 $$
 
-with the same coefficient on both terms, and the pair is not determined by $\tilde Q$. The adapted Peirce decomposition exists only in the **one-term** form $\tilde Q=Q_te_t$; every two-term refinement is non-unique.
+with the same coefficient on both terms, and the pair is not determined by $\tilde Q$. The Peirce decomposition relative to $\tilde Q$ exists only in the **one-term** form $\tilde Q=Q_te_t$; every two-term refinement is non-unique.
 
 This is the sharpest warning in the arrangement: $\mathcal S$ is not the locus of non-diagonalisable elements. The identity $e_t$ lies here, with $Q_t=1$, spectrum $\{1\}$ and a repeated eigenvalue, and it is a unit. The punctured scalar line is the only place in the algebra where a non-zero element admits several two-term Peirce decompositions with commuting idempotents.
 
@@ -106,7 +106,7 @@ $$
 \mathbb{C}[\tilde Q]=\{a e_t+b\vec\Upsilon\ :\ a,b\in\mathbb{C}\}\cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
 $$
 
-the dual numbers. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits **no adapted Peirce decomposition**.
+the dual numbers. Its only idempotents are $0$ and $e_t$: from $a^2=a$ and $2ab=b$ one obtains $(a,b)=(0,0)$ or $(1,0)$. Hence **no non-trivial idempotent commutes with $\tilde Q$**, and $\tilde Q$ admits **no Peirce decomposition attached to it**.
 
 **Peirce form.** A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. Relative to that $e$ the Peirce form of $\tilde Q$ is diagonal plus off-diagonal:
 
@@ -119,7 +119,7 @@ $$
 
 The semisimple part $Q_te_t$ is diagonal and the nilpotent part sits wholly in one mixed corner. This is the closest available structure to a spectral decomposition, and it is not one: the off-diagonal component does not vanish.
 
-**The spectral decomposition.** It exists only on the scalar line, and only in the one-term form $\tilde Q=Q_te_t$; the two-projector refinement is non-unique. On the Jordan part it fails: the only idempotents in the centraliser are $0$ and $e_t$, so no pair of non-trivial orthogonal idempotents summing to $e_t$ is adapted to $\tilde Q$. There is no eigenbasis either: the eigenspace of $L_{\tilde Q}$ for $Q_t$ is the left annihilator of $\vec\Upsilon$, a complex plane of dimension $2$, and a basis of eigenvectors would need four independent vectors in it.
+**The spectral decomposition.** It exists only on the scalar line, and only in the one-term form $\tilde Q=Q_te_t$; the two-projector refinement is non-unique. On the Jordan part it fails: the only idempotents in the centraliser are $0$ and $e_t$, so no pair of non-trivial orthogonal idempotents summing to $e_t$ is attached to $\tilde Q$. There is no eigenbasis either: the eigenspace of $L_{\tilde Q}$ for $Q_t$ is the left annihilator of $\vec\Upsilon$, a complex plane of dimension $2$, and a basis of eigenvectors would need four independent vectors in it.
 
 **Powers and inverse.** From $(\tilde Q-Q_te_t)^2=\vec\Upsilon^2=0$, for $n\geq1$,
 $$
@@ -133,11 +133,11 @@ $\Sigma_{10}^{\mathrm{s}}$ is a closed complex submanifold of the sector, of com
 
 ## Peirce Data
 
-**The sector contains two Peirce behaviours. On the scalar line every idempotent is adapted and the Peirce matrix is $Q_tI$. On the Jordan part no non-trivial idempotent commutes with $\tilde Q$, and the Peirce matrix relative to a nilpotent-generated idempotent is a single Jordan block.**
+**The sector contains two Peirce behaviours. On the scalar line every idempotent commutes with $\tilde Q$ and the Peirce matrix is $Q_tI$. On the Jordan part no non-trivial idempotent commutes with $\tilde Q$, and the Peirce matrix relative to a nilpotent-generated idempotent is a single Jordan block.**
 
 ### Peirce data on the scalar line
 
-Let $\tilde Q=Q_te_t$ with $Q_t\neq0$. Every idempotent commutes with $\tilde Q$, so every idempotent is adapted. Relative to any complete pair $(e,f)$,
+Let $\tilde Q=Q_te_t$ with $Q_t\neq0$. Every idempotent commutes with $\tilde Q$, so every complete pair is a Peirce pair relative to $\tilde Q$. Relative to any complete pair $(e,f)$,
 
 $$
 e\tilde Qe=Q_te,\qquad
@@ -150,7 +150,7 @@ and the Peirce matrix is $Q_tI$ in every Peirce basis. The spectral decompositio
 
 ### Peirce data on the Jordan part
 
-Let $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ and $Q_t\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, the dual numbers, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$ and there is no adapted Peirce decomposition.
+Let $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ and $Q_t\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, the dual numbers, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$ and there is no Peirce decomposition relative to $\tilde Q$.
 
 A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. With $f=e_t-e$ the Peirce form is
 
@@ -167,7 +167,7 @@ $$
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
 $$
 
-**No Q-adapted basis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, no Peirce pair is attached to $\tilde Q$, and there is no Q-adapted Peirce basis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no Peirce basis is attached to it.
+**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, no Peirce pair is attached to $\tilde Q$, and there is no eigenbasis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no Peirce basis is attached to it.
 
 ## Multiplication and Inversion
 
@@ -250,7 +250,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 
 ## Comparison with the Other Three Sectors
 
-| sector | conditions | elements | spectrum | adapted Peirce | product |
+| sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct, non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
 | **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal N$; all three outcomes |
@@ -279,7 +279,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 | descriptions | $\mathcal S\setminus\mathcal N$; $Q_t\neq0$ on $\mathcal S$; $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$; $Q_tu$ with $u$ unipotent; unit with spectrum $\{Q_t\}$ |
 | geometry | Zariski-open in $\mathcal S$; complex cone of complex dimension $3$ and real dimension $6$; connected; contains the punctured scalar line, the singular locus of $\mathcal S$ |
 | regimes | $\Sigma_{10}^{\mathrm{s}}$: scalar, semisimple, non-unique spectral idempotents, dimension $1$, closed; $\Sigma_{10}^{\mathrm{J}}$: Jordan, defective, dual-number centraliser, dimension $3$, open dense |
-| adapted Peirce | fails on the Jordan part; one-term and non-unique on the scalar line |
+| Peirce decomposition | fails on the Jordan part; one-term and non-unique on the scalar line |
 | annihilators | both zero: the element is a unit |
 | multiplication | $\Sigma_{10}\cdot\Sigma_{10}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with all three outcomes; inverse-closed, not product-closed |
 | relation to the cones | $\Sigma_{10}=\mathcal S\setminus\mathcal N$; transverse on the Jordan part; singular on the scalar line; tangency only on $\Sigma_{00}$ |
