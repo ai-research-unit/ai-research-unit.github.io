@@ -6,7 +6,7 @@ The isometries of the general quaternionic sesquilinear form make up the **Krein
 
 The two involutions are the point of the article. The **Krein involution** $\theta_{J}(T)=(T^{\dagger})^{-1}$ is built from the indefinite adjoint $T^{\dagger}=JT^{*}J$, and its fixed group is $U_{J}(\mathbb{B})$ itself: it is not a Cartan involution, since its fixed group is non-compact. The **Cartan involution** $\theta_{0}(T)=(T^{*})^{-1}$ is built from the definite adjoint, and its restriction to $U_{J}(\mathbb{B})$ has the maximal compact group $\mathrm{U}(1)\times \mathrm{U}(3)$ for fixed group; its symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of *The Krein Level Sets and the Hyperbolic Structure*. The two involutions carry the same group, one as the fixed group and one as the ambient group, and the comparison of their fixed algebras is the comparison of $\mathfrak{u}(1,3)$ with $\mathfrak{u}(4)$.
 
-The general theory of isometries is *Unitary and Isometric Operators of the Form*, which proves that the isometry monoid is the unitary group in finite dimension; the general theory of $\mathrm{U}(n,m)$, its Cartan involution and its bounded realisation is *The Unitary Group and the Hermitian Symmetric Space*; the four pairings, their Gram matrices and their isometry groups are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the adjoints of the three families and the indefinite spectral data are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form, the cone and the $J$-positive cone are *The Krein Norm of the Biquaternion Algebra*; and the indefinite sandwich that uses the group is *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra*.
+The general theory of isometries is *Unitary and Isometric Operators of the Form*, which proves that the isometry monoid is the unitary group in finite dimension; the general theory of $\mathrm{U}(n,m)$, its Cartan involution and its bounded realisation is *The Unitary Group and the Hermitian Symmetric Space*; the four pairings, their Gram matrices and their isometry groups are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the adjoints of the three families and the indefinite spectral data are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form and its Gram matrix are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the null set and the Krein cone are *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*; and the indefinite sandwich that uses the group is *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the coefficient Gram matrix is $E=\operatorname{diag}(1,-1,-1,-1)$, the natural conjugation is $J={}^{\natural}=E$, and the indefinite adjoint is $T^{\dagger}=JT^{*}J$. The operator algebra is $\mathfrak{g}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong\mathfrak{gl}_{4}(\mathbb{C})\cong M_{4}(\mathbb{C})$, of real dimension $32$.
 
@@ -91,7 +91,7 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 ## The Actions of the Group
 
-**Theorem (transitivity).** The group $U_{J}(\mathbb{B})$ acts transitively on the isotropic lines, on the positive definite lines and on the maximal totally isotropic complex subspaces, which in signature $(1,3)$ are the isotropic lines; over $\mathbb{R}$ the maximal totally isotropic subspaces are the planes of *The Krein Norm of the Biquaternion Algebra*. The stabiliser of the positive line $\mathbb{C}e_t$ is $\mathrm{U}(1)\times \mathrm{U}(3)$; the stabiliser of the isotropic line $\mathbb{C}(e_t+\vec e_x)$ is a parabolic subgroup, and it contains the boosts.
+**Theorem (transitivity).** The group $U_{J}(\mathbb{B})$ acts transitively on the isotropic lines, on the positive definite lines and on the maximal totally isotropic complex subspaces, which in signature $(1,3)$ are the isotropic lines; over $\mathbb{R}$ the maximal totally isotropic subspaces are the planes of *The Krein Norm-Degenerate Sector*, §*The Witt Index*. The stabiliser of the positive line $\mathbb{C}e_t$ is $\mathrm{U}(1)\times \mathrm{U}(3)$; the stabiliser of the isotropic line $\mathbb{C}(e_t+\vec e_x)$ is a parabolic subgroup, and it contains the boosts.
 
 *Proof.* Transitivity on the isotropic lines is Witt's extension theorem (*Witt's Theorems*), and in signature $(1,3)$ a maximal complex totally isotropic subspace is a line. Transitivity on the positive lines is read from the identification with the symmetric space $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ of §*The Cartan Involution and the Symmetric Space*. An isometry mapping the positive line $\mathbb{C}e_t$ onto itself preserves its Krein-orthogonal complement, hence the fundamental decomposition, so it lies in $\mathrm{U}(1)\times \mathrm{U}(3)$. The boost fixes the isotropic direction $e_t+\vec e_x$, so the stabiliser of that line contains the boosts and is not compact.
 
@@ -217,7 +217,7 @@ $$
 
 the compact part followed by the hyperbolic part, whose exponentials are the boosts and their conjugates.
 
-*Proof.* The quotient of a Lie group by the fixed group of a Cartan involution is a symmetric space of non-compact type, of dimension $\dim\mathfrak{p}_{0}=6$; the identification with the space of positive lines and with the ball is the parametrisation of the maximal positive definite subspaces of *The Krein Norm of the Biquaternion Algebra* and §*The Positive Region and the Positive Lines* of *The Krein Level Sets and the Hyperbolic Structure*. The decomposition is the polar decomposition of the general theory of *The Unitary Group and the Hermitian Symmetric Space*.
+*Proof.* The quotient of a Lie group by the fixed group of a Cartan involution is a symmetric space of non-compact type, of dimension $\dim\mathfrak{p}_{0}=6$; the identification with the space of positive lines and with the ball is the parametrisation of §*The Positive Region and the Positive Lines* of *The Krein Level Sets and the Hyperbolic Structure*. The decomposition is the polar decomposition of the general theory of *The Unitary Group and the Hermitian Symmetric Space*.
 
 ## The Trace Form and the Jordan Algebra
 
@@ -225,7 +225,20 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 *Proof.* The trace form is non-degenerate on $M_4(\mathbb{C})$, and $\operatorname{Tr}(MN)=\operatorname{Tr}(NM)$ makes it symmetric and invariant under $M\mapsto QMQ^{-1}$. For $\mathfrak{u}(n,m)$ it has signature $(2pq,p^{2}+q^{2})$, which for $p=1,q=3$ is $(6,10)$; the signs are read on the diagonal blocks $\mathfrak{u}(1)\oplus\mathfrak{u}(3)$, where $M$ is skew-Hermitian and $\operatorname{Tr}(M^{2})\le0$, and on the off-diagonal block $\mathfrak{p}_{0}$, where $\operatorname{Tr}(M^{2})=2\operatorname{Tr}(Z^{*}Z)\ge0$.
 
-**Theorem (the Jordan algebra).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\operatorname{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *The Krein Norm of the Biquaternion Algebra*.
+**Definition.** An operator $T\in\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is **$J$-positive** when it is $J$-self-adjoint and $\langle\tilde Q,T\tilde Q\rangle_{\natural*}\ge0$ for every $\tilde Q$. The **$J$-positive cone** is
+$$
+\mathcal{P}_J=\{T:T^{\dagger}=T,\ \langle\tilde Q,T\tilde Q\rangle_{\natural*}\ge0\ \forall\tilde Q\}.
+$$
+
+**Theorem (the cone as the image of the Hilbert cone).** With $J={}^{\natural}$ and $S$ ranging over the operators that are self-adjoint and positive semidefinite for the definite companion $\langle\cdot,\cdot\rangle_{*}$,
+$$
+\boxed{\;\mathcal{P}_J=J\cdot\{S\ge0\}=\{JS:S\ge0\}\;}.
+$$
+The cone $\mathcal{P}_J$ is closed and convex, contains $J$, and does not contain the identity.
+
+*Proof.* For any $T$, $\langle\tilde Q,T\tilde Q\rangle_{\natural*}=\langle\tilde Q,JT\tilde Q\rangle_{*}$, so the positivity and the $J$-self-adjointness of $T$ are exactly the self-adjointness and positivity of $JT$ for the definite form. Hence $T\in\mathcal{P}_J$ exactly when $JT=S\ge0$, that is $T=JS$; the map $S\mapsto JS$ is linear and bijective and carries the closed convex cone $\{S\ge0\}$ onto $\mathcal{P}_J$. The identity $T=J$ gives $JT=\mathrm{id}\ge0$, so $J\in\mathcal{P}_J$; $T=\mathrm{id}$ gives $JT=J$, which has the negative eigenvalue $-1$, so $\mathrm{id}\notin\mathcal{P}_J$.
+
+**Theorem (the Jordan algebra).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\operatorname{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ defined above.
 
 *Proof.* The anticommutator of two $J$-self-adjoint operators is $J$-self-adjoint, as shown above, and the Jordan identity follows from associativity of the product in $\mathfrak{g}$. Every element of $\mathcal{P}_{J}$ is $J$-self-adjoint by definition, hence lies in $\mathfrak{p}$.
 
@@ -291,7 +304,8 @@ On the operators, the three pairings give the transpose, the Hermitian adjoint a
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the three pairings, their isometry groups and their signatures
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the adjoints of the algebra's families and the indefinite spectral data
-- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form, the null set, the positive cone and the $J$-positive cone
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form and its Gram matrix.
+- [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set and the positive cone.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets and the complex hyperbolic space as the space of positive lines
 - [The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra](the-indefinite-hermitian-sandwich-on-the-general-quaternionic-sesqualgebra.html), for the sandwich by a $J$-unitary parameter
 - [Unitary and Isometric Operators of the Form](unitary-and-isometric-operators-of-the-form.html), for the general isometry monoid and its group of units

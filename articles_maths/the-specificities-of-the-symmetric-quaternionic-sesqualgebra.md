@@ -17,7 +17,7 @@ The law has two clauses, and each is an identity in the product. The first is th
 $\tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1}$, which is to say that the product is fixed by the
 adapted exchange of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the second is that
 the **scalar part is the Krein form**, $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, the form
-of *Introduction to the General Quaternionic Sesqualgebra* and *The Krein Norm of the Biquaternion Algebra*. The theorem of the article is that among the twelve structures the block is
+of *Introduction to the General Quaternionic Sesqualgebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. The theorem of the article is that among the twelve structures the block is
 the only one satisfying both clauses, each clause alone being satisfied by another structure: the plain
 sesquilinear symmetric part satisfies the first and not the second, and the general quaternionic sesquilinear
 product satisfies the second and not the first. The law is therefore sharp, and the two structures that

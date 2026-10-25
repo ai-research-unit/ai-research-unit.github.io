@@ -43,7 +43,7 @@ the union of the **positive region** $\mathbb{B}^{\natural*}_+=\{\langle\tilde Q
 
 (v) the restriction of the Krein form to the line $\mathbb{C}\tilde Q$ is definite.
 
-*Proof.* (i) $\iff$ (ii) is the coordinate form of the norm. (ii) $\iff$ (iii) is the line criterion of *The Krein Norm of the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*: a line is degenerate exactly when its radical is non-zero, and for a Hermitian form on a complex line the radical is the line itself exactly when the form vanishes at a non-zero point. (iii) $\iff$ (iv) is the realification: the real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so a radical over $\mathbb{C}$ and a radical over $\mathbb{R}$ coincide. (iii) $\iff$ (v): on the line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which is non-degenerate exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$, and then it is definite with the sign of that value.
+*Proof.* (i) $\iff$ (ii) is the coordinate form of the norm. (ii) $\iff$ (iii) is the line criterion of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*: a line is degenerate exactly when its radical is non-zero, and for a Hermitian form on a complex line the radical is the line itself exactly when the form vanishes at a non-zero point. (iii) $\iff$ (iv) is the realification: the real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so a radical over $\mathbb{C}$ and a radical over $\mathbb{R}$ coincide. (iii) $\iff$ (v): on the line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which is non-degenerate exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$, and then it is definite with the sign of that value.
 
 **Proposition (the sign is the sign of the line).** The line $\mathbb{C}\tilde Q$ is positive definite exactly in the positive region and negative definite exactly in the negative region. The line carries the sign of the norm, and no other sign occurs.
 
@@ -236,7 +236,9 @@ The sector is the metric interior and exterior of the null set, taken together. 
 
 - [The Krein Norm-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null Peirce lines and the isotropic units.
 - [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
-- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form, its inertia, the line criterion and the fundamental symmetry.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its Gram matrix and its inertia.
+- [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the line criterion and the two partitions of the algebra.
+- [The Fundamental Symmetry of the Form](the-fundamental-symmetry-of-the-form.html), for the fundamental symmetry and the bridge.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, their topology and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its action.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the unit group and the zero-divisor cone.

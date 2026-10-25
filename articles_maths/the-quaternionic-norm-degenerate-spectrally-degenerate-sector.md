@@ -32,7 +32,7 @@ $$
 
 separates the central and the vector parts, so $\tilde Q^2=0$ exactly when $Q_t^2=B^2$ and $Q_t\vec Q=0$. If $Q_t\neq0$, the second equation gives $\vec Q=0$, hence $B^2=0$, hence $Q_t^2=0$, a contradiction. Therefore $Q_t=0$, and then $B^2=0$. Conversely, $Q_t=0$ and $B^2=0$ give $\tilde Q^2=-B^2e_t=0$. This proves (ii) $\iff$ (iii). For (i), $N=0$ with $Q_t=0$ gives $B^2=0$; conversely $N=0$ with $B^2=0$ gives $Q_t^2=0$, hence $Q_t=0$.
 
-**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal{N}_{\mathrm p}$ of the null cone of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal{N}_{\mathrm p}$; the sector is that cone with its apex adjoined.
+**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal{N}_{\mathrm p}$ of the null cone of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the origin together with the zero divisors*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal{N}_{\mathrm p}$; the sector is that cone with its apex adjoined.
 
 ## Geometry
 
@@ -52,7 +52,7 @@ $$
 \tilde Q=r(\vec u+i\vec u_\perp),\qquad r\ge0,\quad \vec u\ \text{a real unit vector},\quad \vec u_\perp\ \text{a real unit vector perpendicular to}\ \vec u,
 $$
 
-the origin occurring at $r=0$. The count is $1+2+1=4$ real parameters, in agreement with the dimension. This is the parametrisation of the pure stratum of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*, with $r=0$ added.
+the origin occurring at $r=0$. The count is $1+2+1=4$ real parameters, in agreement with the dimension. This is the parametrisation of the pure stratum of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the origin together with the zero divisors*, with $r=0$ added.
 
 **Scheme-theoretic form.** As a scheme, the intersection of the two cones is defined by
 

@@ -272,7 +272,8 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 
 **The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.
 
-**Position among the four sectors.** Sector $01$ is the **idempotent stratum** of the null cone: the elements $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent. It is the only sector on which the norm vanishes while the spectrum stays separated, so it is one of the two independence witnesses. The finer split inside $\Sigma_{10}$ and $\Sigma_{00}$ is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Four Sectors Compared*.
+**Position among the four sectors.** Sector $01$ is the **idempotent stratum** of the null cone: the elements $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent. It is the only sector on which the norm vanishes while the spectrum stays separated, so it is one of the two independence witnesses. The finer split inside $\Sigma_{10}$ and $\Sigma_{00}$ is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
+
 ## Consequences
 
 **Eigenbasis.** It exists and is unique: $e_+=\tilde Q/(2Q_t)$, $e_-=e_t-e_+$. The adapted Peirce decomposition is the only one adapted to $\tilde Q$.
@@ -296,7 +297,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 | annihilators | two distinct planes meeting in $\mathbb{C}\tilde\Pi'$, the kernel projector; $\tilde Q$ lies in neither |
 | multiplication | $\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal{N}$, with $\Sigma_{01}$, $0$ and $\Sigma_{00}\setminus\{0\}$ all attained |
 | relation to the cones | $\Sigma_{01}=\mathcal{N}\setminus\mathcal S$; transverse along the sector; tangency only on $\Sigma_{00}$ |
-| place in the arrangement | the zero-divisor zone: non-invertibility with full spectral regularity |
+| place in the arrangement | the zero-divisor sector: non-invertibility with full spectral regularity |
 
 The sector is the idempotent sector. It is the set of non-zero scalar multiples of non-trivial idempotents, the complement of the nilpotent stratum inside the null cone, and the one place in the degenerate half of the arrangement where the spectrum is as clean as it can be. Its elements are exactly those whose eigenvalues are one zero and one non-zero: the zero makes them zero divisors, the non-zero makes their spectral decomposition exist.
 

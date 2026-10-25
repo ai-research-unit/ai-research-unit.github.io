@@ -153,7 +153,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### The Krein Form
 
-- [The Krein Norm of the Biquaternion Algebra](../articles_maths/the-krein-norm-of-the-biquaternion-algebra.html)
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
+- [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
 
 ### Topology
 

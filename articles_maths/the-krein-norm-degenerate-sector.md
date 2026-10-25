@@ -47,7 +47,7 @@ Its elements are **isotropic**; the non-zero ones are the **Krein-null** element
 
 *Proof.* (i) $\iff$ (ii) is the coordinate form of the norm. On the complex line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which vanishes identically exactly when $\langle\tilde Q\rangle_{\natural*}=0$, and then the line is its own radical: this is (ii) $\iff$ (iii) $\iff$ (v). The real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so its radical is the real space of the complex radical: (iii) $\iff$ (iv).
 
-**Corollary (the Krein sign on a null line).** A null line is neither positive nor negative definite: it is degenerate, and its radical is the line itself. This is the line criterion of *The Krein Norm of the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*, read at the value zero.
+**Corollary (the Krein sign on a null line).** A null line is neither positive nor negative definite: it is degenerate, and its radical is the line itself. This is the line criterion of *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*, read at the value zero.
 
 **Corollary (the scalar part never vanishes off the origin).** Every non-zero element of $\mathcal K$ has $Q_t\neq0$.
 
@@ -80,6 +80,26 @@ with $S^5=\{W\in\mathbb{C}^3:\lVert W\rVert_E=1\}$, is a bijection. Hence $\math
 **Remark (the projective quadric).** The quotient of $\mathcal K\setminus\{0\}$ by the complex scalars is the null quadric of the form in $\mathbb{CP}^3$, a real manifold of dimension $5$; the parametrisation above exhibits the punctured null set as a $\mathbb{C}^{\times}$-bundle over it. The quadric is the boundary of the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*.
 
 **Remark (the cone is not pointed).** $\mathcal K$ is invariant under $\tilde Q\mapsto-\tilde Q$, so it contains opposite pairs of rays. It is not convex either: the null elements $e_t+\vec e_x$ and $-e_t+\vec e_x$ have the midpoint $\vec e_x$, of value $-1$.
+
+## The Witt Index
+
+**Definition.** A subspace $\mathbb{W}$ is **totally isotropic** when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$ for all $\tilde Q_1,\tilde Q_2\in\mathbb{W}$, equivalently when $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$, where $\mathbb{W}^{\perp_K}=\{\tilde Q:\langle\tilde Q,\tilde W\rangle_{\natural*}=0\ \text{for every}\ \tilde W\in\mathbb{W}\}$ is the Krein-orthogonal complement; it is **maximal** when it is contained in no larger one. The **Witt index** is the common dimension of the maximal totally isotropic subspaces.
+
+**Theorem (the Witt index).** The Witt index is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. Every maximal totally isotropic complex subspace is a line, and $\mathbb{C}(e_t+\vec e_x)$ is one; a maximal totally isotropic real subspace is the plane
+$$
+\mathbb{W}_{\mathrm{iso}}=\operatorname{span}_{\mathbb{R}}\{e_t+\vec e_x,\ i(e_t+\vec e_x)\}.
+$$
+Every totally isotropic subspace is contained in a maximal one, and $\mathrm{U}(1,3)$ acts transitively on the maximal ones.
+
+*Proof.* A totally isotropic subspace meets $\mathbb{V}_{\mathbb{B}}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ only at the origin, since a non-zero element of $\mathbb{V}_{\mathbb{B}}$ has negative value; it therefore injects into $\mathbb{B}/\mathbb{V}_{\mathbb{B}}$, of real dimension $2$ and complex dimension $1$. Hence its real dimension is at most $2$ and its complex dimension at most $1$. The displayed line and plane are totally isotropic,
+$$
+\langle e_t+\vec e_x,e_t+\vec e_x\rangle_{\natural*}=0,\qquad
+\langle e_t+\vec e_x,i(e_t+\vec e_x)\rangle_{\natural*}=0,\qquad
+\langle i(e_t+\vec e_x),i(e_t+\vec e_x)\rangle_{\natural*}=0,
+$$
+and they attain the bounds. Witt's extension theorem gives the extension property and the transitivity.
+
+**Remark (the real planes).** Every real totally isotropic plane is the realification of a complex isotropic line. A real plane that is not complex would complexify to a complex totally isotropic plane of dimension two, beyond the Witt index one. The maximal real plane $\mathbb{W}_{\mathrm{iso}}$ is not a Peirce line: it is a real plane and not a complex line, and it contains $e_t+\vec e_x$, of algebraic norm $2$.
 
 ## The Two Strata
 
@@ -114,9 +134,9 @@ $$
 =\{c(e_t+i\vec u)\ :\ c\in\mathbb{C}^{\times},\ \vec u\in S^2\},
 $$
 
-that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exactly the doubly null Peirce lines of *The Krein Norm of the Biquaternion Algebra*, §*The Doubly Null Lines and the Peirce Lines*. The parametrisation by $(c,\vec u)$ is a bijection, and $\mathcal K_{\mathrm d}\setminus\{0\}$ is homotopy equivalent to $S^1\times S^2$.
+that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exactly the doubly null Peirce lines, whose idempotents, minimal ideals and Peirce decompositions are *Ideals and Peirce Decompositions of the Biquaternion Algebra*. The parametrisation by $(c,\vec u)$ is a bijection, and $\mathcal K_{\mathrm d}\setminus\{0\}$ is homotopy equivalent to $S^1\times S^2$.
 
-*Proof.* The computation of the preceding theorem gives the first equality; the identification with the Peirce lines is the classification of the cited section. Injectivity: $c(e_t+i\vec u)=c'(e_t+i\vec u')$ forces $c=c'$ from the scalar parts and then $\vec u=\vec u'$.
+*Proof.* The computation of the preceding theorem gives the first equality; the identification with the Peirce lines is the classification of *Ideals and Peirce Decompositions of the Biquaternion Algebra*. Injectivity: $c(e_t+i\vec u)=c'(e_t+i\vec u')$ forces $c=c'$ from the scalar parts and then $\vec u=\vec u'$.
 
 **Theorem (the idempotents).** For $\vec u\in S^2$ the element
 
@@ -274,8 +294,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 ## Further Reading
 
 - [The Krein Norm-Regular Sector](the-krein-norm-regular-sector.html), for the positive and negative regions and their geometry.
-- [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
-- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form, the line criterion, the Witt index and the doubly null Peirce lines.
+- [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the line criterion, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the null quadric and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its transitive action.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, the unit group and the zero-divisor cone.

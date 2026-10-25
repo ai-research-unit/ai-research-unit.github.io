@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The general quaternionic sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ of *The Krein Norm of the Biquaternion Algebra*, of signature $(2,6)$, is read here on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
+The general quaternionic sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, of signature $(2,6)$, is read here on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The form is used, not re-derived. Its definition, its Krein signature $(2,6)$, its automorphism group $\mathrm{U}(1,3)$, its null set and its totally isotropic subspaces are the matter of *The Krein Norm of the Biquaternion Algebra*; the remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
+The form is used, not re-derived. Its definition, its Krein signature $(2,6)$ and its automorphism group $\mathrm{U}(1,3)$ are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its null set and its totally isotropic subspaces are *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*; the remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
 
 ## The Restriction Matrices
 
@@ -61,7 +61,7 @@ Each of the four indefinite rows carries a **real null cone**, of real dimension
 | Hermitian $\mathbb{M}_+$ | $q_t^{2}=(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ | $3$ |
 | Anti-Hermitian $\mathbb{M}_-$ | $(q'_t)^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ | $3$ |
 
-**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The Krein Norm of the Biquaternion Algebra*.
+**Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The Krein Norm-Degenerate Sector*, §*The Witt Index*.
 
 ## The Coincidences with the Other Three Forms
 
@@ -95,7 +95,7 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **Proof.** A real-linear automorphism of a non-degenerate real symmetric form of signature $(n,m)$ is an element of $O(n,m)$, of real dimension $n(n-1)/2$ with $n=p+q$, giving $1$, $15$ and $6$; the two definite rows give $O(2)$ and $O(6)\cong O(0,6)$, and the four Lorentzian rows give $O(1,3)$ four times.
 
-**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite unitary group $\mathrm{U}(1,3)$ of real dimension $16$, of *The Krein Norm of the Biquaternion Algebra*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
+**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite unitary group $\mathrm{U}(1,3)$ of real dimension $16$, of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
 
 ## Worked Examples
 
@@ -103,7 +103,7 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **A negative vector element.** For $\tilde Q=\vec e_x$ the value is $\varepsilon_x|1|^{2}=-1$, and for $\tilde Q=\vec e_x+i\vec e_x$ it is $-1-1=-2$; the vector subspace is negative definite, and it realises the negative index $6$ of the form.
 
-**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The Krein Norm of the Biquaternion Algebra*.
+**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the null cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The Krein Norm-Degenerate Sector*, §*The Doubly Null Stratum*.
 
 **The null element of the anti-quaternion row.** For $\tilde Q=ie_t+i\vec e_x$ the value is $1-1=0$, on the cone $(q'_t)^{2}=\sum_k(q'_k)^{2}$ of the anti-quaternion subspace; the sign of the scalar coefficient is the one the row prescribes.
 
@@ -133,7 +133,8 @@ On the remarkable real subspaces the general quaternionic sesquilinear form carr
 
 ## Further Reading
 
-- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form, its coefficient Gram matrix and its inertia, the null set, the doubly null lines and the Witt index.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its coefficient Gram matrix and its inertia.
+- [The Krein Norm-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null lines and the Witt index.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces and their bases
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the definite companion reading of the same six
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the norm reading of the same six

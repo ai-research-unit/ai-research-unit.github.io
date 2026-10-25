@@ -6,7 +6,7 @@ The biquaternion algebra carries four norms; the **Krein norm** is the indefinit
 
 This article defines the Krein norm, records its homogeneity, proves that it is not multiplicative, and separates the algebra into the two cases of its value: the **Krein-regular** case of non-zero value, split into the positive and the negative regions, and the **Krein-degenerate** case of zero value, the null set. The closure of the positive case is the Krein cone. It then compares the metric partition with the algebraic partition of the algebra into units, origin and zero divisors, which is the partition carried by the quaternionic norm, and explains why the Krein problem admits no second axis along the spectral condition: the Krein norm and the spectrum are invariants of different groups, and the plane that the quaternionic norm supports does not transfer. The two halves of the partition are treated in *The Krein Norm-Regular Sector* and *The Krein Norm-Degenerate Sector*.
 
-**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ complex and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^*=\bar Q_t-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The **definite companion** is $\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, with $\langle\tilde Q\rangle_*=\lVert\tilde Q\rVert_E^2=\sum_\mu|Q_\mu|^2$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight. The product is the plain product $\tilde P\tilde Q$, associative and with the two-sided unit $e_t$. The **quaternionic norm** is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; it is complex-valued and multiplicative. Its regular and degenerate cases, the unit group and the zero-divisor cone, are the subject of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*. The Krein form itself, its Gram matrix, its inertia, its fundamental symmetry and its doubly null lines are the subject of *The Krein Norm of the Biquaternion Algebra*; this article uses the form and studies the norm it carries, with the isotropic elements and the cone they close.
+**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ complex and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^*=\bar Q_t-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The **definite companion** is $\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, with $\langle\tilde Q\rangle_*=\lVert\tilde Q\rVert_E^2=\sum_\mu|Q_\mu|^2$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight. The product is the plain product $\tilde P\tilde Q$, associative and with the two-sided unit $e_t$. The **quaternionic norm** is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; it is complex-valued and multiplicative. Its regular and degenerate cases, the unit group and the zero-divisor cone, are the subject of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*. The form itself, its Gram matrix and its inertia are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its fundamental symmetry and the bridge are *The Fundamental Symmetry of the Form*; this article studies the norm the form carries, with the isotropic elements, the doubly null lines and the cone they close.
 
 ## The Krein Norm
 
@@ -15,7 +15,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu|Q_\mu|^2
 =|Q_t|^2-\lVert\vec Q\rVert_E^2 .
 $$
-It is real-valued and homogeneous of degree two, $\langle\lambda\tilde Q\rangle_{\natural*}=|\lambda|^2\langle\tilde Q\rangle_{\natural*}$ for complex $\lambda$. The form and its structure are those of *The Krein Norm of the Biquaternion Algebra*; this article studies the norm it carries.
+It is real-valued and homogeneous of degree two, $\langle\lambda\tilde Q\rangle_{\natural*}=|\lambda|^2\langle\tilde Q\rangle_{\natural*}$ for complex $\lambda$. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; this article studies the norm it carries.
 
 **Theorem (non-multiplicativity).** The Krein norm is not multiplicative. With $\tilde P=e_t+\vec e_x$ and $\tilde Q=e_t-\vec e_x$,
 $$
@@ -54,7 +54,26 @@ The origin lies in $\mathcal K$; it is the only Krein-degenerate point with vani
 
 **Remark (the word regular).** In ring theory a regular element is a non-zero-divisor, so the ring-regular set is $\mathbb{B}^{\times}\uplus\{0\}$. The title uses **Krein-regular** in the metric sense: the regular side is the complement of the null set. The two readings are different, and §*The Two Partitions* shows that the only implication between them is positive implies unit.
 
-**Criterion.** For $\tilde Q\neq0$ the value is non-zero exactly when the line $\mathbb{C}\tilde Q$ is non-degenerate for the Krein form, by the line criterion of *The Krein Norm of the Biquaternion Algebra*, §*Krein Orthogonality and the Complement*. The sign of the value is the sign of the line: the line is positive definite exactly in the positive-regular case and negative definite exactly in the negative-regular case.
+## Krein Orthogonality and the Complement
+
+**Definition.** Two elements are **Krein-orthogonal**, written $\tilde Q_1\perp_K\tilde Q_2$, when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$; two subspaces are Krein-orthogonal when every element of one is orthogonal to every element of the other. The **Krein-orthogonal complement** of $\mathbb{W}$ is
+$$
+\mathbb{W}^{\perp_K}=\{\tilde Q:\langle\tilde Q,\tilde W\rangle_{\natural*}=0\ \text{for every}\ \tilde W\in\mathbb{W}\}.
+$$
+
+**Example (a self-orthogonal line).** The line $\mathbb{W}=\mathbb{C}(e_t+\vec e_x)$ is isotropic, $\langle e_t+\vec e_x\rangle_{\natural*}=0$, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$ and $\mathbb{W}+\mathbb{W}^{\perp_K}=\mathbb{W}^{\perp_K}$ has dimension three. The sum is not the algebra, and no direct sum decomposition is obtained from that line alone.
+
+**Theorem (the line criterion).** For $\tilde Q\neq0$ the line $\mathbb{C}\tilde Q$ is non-degenerate for the Krein form exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$. In that case
+$$
+\mathbb{B}=\mathbb{C}\tilde Q\oplus(\mathbb{C}\tilde Q)^{\perp_K},
+\qquad
+\dim_{\mathbb{C}}(\mathbb{C}\tilde Q)^{\perp_K}=3,
+$$
+and the restriction of the form to the line is positive definite when the value is positive and negative definite when it is negative. When the value vanishes the line is totally isotropic and lies in its own complement.
+
+*Proof.* The Gram matrix of the restriction to the line is the single entry $\langle\tilde Q\rangle_{\natural*}$, so the line is non-degenerate exactly when that entry is non-zero, and its sign is the sign of the entry. For a non-degenerate line the complement is non-degenerate and the sum is direct, of dimensions $1$ and $4-1=3$. For a vanishing entry every vector of the line is orthogonal to the line, so the line is its own radical.
+
+**Corollary (the sign of the line).** The line $\mathbb{C}\tilde Q$ is positive definite exactly in the positive-regular case and negative definite exactly in the negative-regular case. The value of the norm, its sign and the definiteness of the line are one datum.
 
 ## The Regular Case: The Two Signs
 
@@ -104,7 +123,7 @@ and equality holds exactly on the doubly null Peirce lines, that is, exactly whe
 $$
 |Q_t|^2=\Bigl|\sum_kQ_k^2\Bigr|\leq\sum_k|Q_k|^2=\lVert\vec Q\rVert_E^2
 $$
-by the triangle inequality, which is $\langle\tilde Q\rangle_{\natural*}\leq0$. The equality case is the classification of *The Krein Norm of the Biquaternion Algebra*, §*The Doubly Null Lines and the Peirce Lines*: the lines that are null for both norms are exactly the Peirce lines.
+by the triangle inequality, which is $\langle\tilde Q\rangle_{\natural*}\leq0$. The equality case is the classification of *The Krein Norm-Degenerate Sector*, §*The Doubly Null Stratum*: the lines that are null for both norms are exactly the Peirce lines.
 
 **Corollary (the shape of the doubly null set).** $\mathcal K_{\mathrm d}=\bigcup_{\vec u\in S^2}\mathbb{C}(e_t+i\vec u)$ is a real cone of real dimension $4$.
 
@@ -312,7 +331,8 @@ No spectral split is available. The quaternionic plane works because the norm an
 
 ## Further Reading
 
-- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form, its Gram matrix, its inertia, its fundamental symmetry and its doubly null lines.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its Gram matrix and its inertia.
+- [The Fundamental Symmetry of the Form](the-fundamental-symmetry-of-the-form.html), for the fundamental symmetry and the bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, its multiplicativity, the unit group and the zero-divisor cone.
 - [The Krein Norm-Regular Sector](the-krein-norm-regular-sector.html), for the positive and negative regions, their geometry, their products and inversion, and their relation to the unit group.
 - [The Krein Norm-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null Peirce lines, the isotropic units and their products.

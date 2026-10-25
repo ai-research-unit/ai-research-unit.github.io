@@ -58,7 +58,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
-the general quaternionic sesquilinear form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, also called the **Krein form** of the block, whose Gram matrix and restrictions are computed in *The Krein Norm of the Biquaternion Algebra*.
+the general quaternionic sesquilinear form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, also called the **Krein form** of the block, whose Gram matrix and restrictions are computed in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -132,7 +132,7 @@ real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the unit, the inverse and the invertible element relative to a product.
 - [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the proof of the absence and the two one-sided families of the block.
-- [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for $\langle\cdot,\cdot\rangle_{\natural*}$, its Gram matrix and its signatures.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for $\langle\cdot,\cdot\rangle_{\natural*}$, its Gram matrix and its signatures.
 
 - [Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.html), for the nontrivial idempotents of the block.
 - [Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.html) and [Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html), for the roots of the block.

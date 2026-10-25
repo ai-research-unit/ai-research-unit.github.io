@@ -259,7 +259,8 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 
 **The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.
 
-**Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $N\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Four Sectors Compared*.
+**Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $N\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
+
 ## Consequences
 
 **Eigenbasis.** It fails on the Jordan part, where the element is a single Jordan block; it exists trivially on the scalar line, where the one-term decomposition into eigenspaces is all there is and any two-term refinement is non-unique. There is no genuine two-term spectral decomposition anywhere in the sector.
@@ -282,7 +283,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 | annihilators | both zero: the element is a unit |
 | multiplication | $\Sigma_{10}\cdot\Sigma_{10}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with all three outcomes; inverse-closed, not product-closed |
 | relation to the cones | $\Sigma_{10}=\mathcal S\setminus\mathcal N$; transverse on the Jordan part; singular on the scalar line; tangency only on $\Sigma_{00}$ |
-| place in the arrangement | the Jordan zone plus the punctured scalar zone: units with a repeated eigenvalue |
+| place in the arrangement | the Jordan and scalar strata: units with a repeated eigenvalue |
 
 The sector is the unipotent sector. It is the non-zero scalar cone over the unipotent elements, the complement of the nilpotent stratum inside the spectral-degenerate cone, and the degenerate half of the unit group. Its elements are exactly the units whose two eigenvalues are equal: invertibility survives, the spectral separation fails. It contains, in its scalar line, the identity and the whole singular locus of the spectral cone, and it is the sharpest reminder that spectral degeneracy and non-diagonalisability are not the same property.
 
