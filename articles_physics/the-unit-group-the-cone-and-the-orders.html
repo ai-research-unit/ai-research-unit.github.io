@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-unit-group-the-cone-and-the-orders"><strong>The Unit Group, the Cone and the Orders</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the <strong>group of units</strong> $\mathbb{B}^{\times}$; their complement is the <strong>zero-divisor cone</strong> $\mathcal{C}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.</p>
+<p>The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the <strong>group of units</strong> $\mathbb{B}^{\times}$; their complement is the <strong>zero-divisor cone</strong> $\mathcal{N}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.</p>
 <p>The article reads three objects and their topology: the group, its boundary and the orders. Its thesis is that invertibility is the algebraic form of reversibility, that the cone is the wall at which a multiplication stops being reversible, and that the orders are the discrete skeletons on which the continuous group is replaced by a finite one. It proves nothing; the theorems are in the mathematics articles of the source table.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
@@ -123,13 +123,13 @@ $$
 $$
 The algebra is the disjoint union
 $$
-\boxed{\;\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{C},
+\boxed{\;\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{N},
 \qquad
 \mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\},
 \qquad
-\mathcal{C}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}\;},
+\mathcal{N}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}\;},
 $$
-and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The three classes are the units, the nonzero points of the cone and the origin.</p>
+and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The three classes are the units, the nonzero points of the cone and the origin.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -152,7 +152,7 @@ and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The 
 <tr>
 <td>$=0$</td>
 <td>$\tilde Q\neq0$</td>
-<td>a zero divisor; a point of $\mathcal{C}\setminus\{0\}$</td>
+<td>a zero divisor; a point of $\mathcal{N}\setminus\{0\}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -229,7 +229,7 @@ and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The 
 $$
 \text{units}=\{\text{divisors of every element}\},
 \qquad
-\mathcal{C}\setminus\{0\}=\{\text{divisors of }0\},
+\mathcal{N}\setminus\{0\}=\{\text{divisors of }0\},
 $$
 and the apex is the element that divides only $0$ and is divided by everything. <strong>The order structure is the divisibility preorder.</strong> The units are its top equivalence class and the cone is the class of the divisors of nothing.</p>
 <p><strong>The boundary of the interpretation.</strong> Divisibility is a preorder, not a total order, and it carries no cost. A physical resource theory would need a monotone and a composition law; the algebra supplies the preorder only.</p>
@@ -248,7 +248,7 @@ $$</p>
 <h3 id="the-group-and-its-matrix-model">The Group and Its Matrix Model</h3>
 <p>The group $\mathbb{B}^{\times}$ is open and dense in the algebra, connected, of real dimension eight. The cone is closed, of empty interior and of real codimension two, and the group and the cone share the boundary:
 $$
-\partial\mathbb{B}^{\times}=\partial\mathcal{C}=\mathcal{C}.
+\partial\mathbb{B}^{\times}=\partial\mathcal{N}=\mathcal{N}.
 $$
 Under the matrix model $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the group is $GL_2(\mathbb{C})$ and the norm is the determinant, so the determinant is a surjective homomorphism
 $$
@@ -304,7 +304,7 @@ Its link is
 $$
 \boxed{\;L=\mathcal{N}\cap S^{7}_{E}\;},
 $$
-the intersection with the Euclidean unit sphere. The link is a closed connected real five-manifold, an $S^{1}$-bundle over the projectivised cone $\mathbb{P}(\mathcal{N})\cong S^{2}\times S^{2}$, with
+the intersection with the Euclidean unit sphere. The link is a closed connected real five-manifold, an $S^{1}$-bundle over the projectivised cone $\mathbb{P}(\mathcal{N})\cong S^{2}\times S^{2}$; the bundle is trivial, so $L\cong S^{2}\times S^{3}$, with
 $$
 \pi_1(L)=0,
 \qquad
@@ -366,7 +366,7 @@ Interpreted physically, the real orders have finite unit groups because the real
 <p>The group and the cone are one partition read twice. The group is the reversible region and the cone is its wall; on the informational sector the cone meets the positive cone in the cone over the pure states. The two interpretations are not unified by the algebra, and the article does not claim that they are. The cone is a light cone only after the material sector is cut out; it is a state boundary only after the trace-one slice is taken. Read on the acting maps, the same partition is a monoid of processes: the units are the reversible maps, the zero divisors are the maps with a kernel, and the cone is where a process loses information. Which of the product, its reverse and the bracket is the physical composition is open.</p>
 <p>The orders are arithmetic, not dynamics. The finite unit groups are discrete symmetries, but the algebra does not say which of them a physical configuration realises, and the lattice spacing is external. The infinite unit group of the integral biquaternions is the algebraic trace of the null direction, not a derivation of a translation.</p>
 <h2 id="summary">Summary</h2>
-<p>The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ and its zero-divisor cone $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.</p>
+<p>The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ and its zero-divisor cone $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.</p>
 <p>The group is open, dense, connected and of real dimension eight, with $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; the polar decomposition retracts it onto $\mathrm{U}(2)$, and $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover homotopy equivalent to $\mathbb{R}\times S^{3}$. The norm-one slice modulo the central sign is the frame space $SO^{+}(1,3)$. The cone is contractible, smooth off its apex, and its link is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$; the apex is a genuine singularity.</p>
 <p>The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2T$, the finite subgroups of $S^{3}$, the $24$-cell, the McKay correspondence and the infinite unit group of the integral biquaternions. They are the discrete skeleton of the real sector. The algebra supplies the structures; the physical interpretations are reversible operations, a wall of reversibility, a state boundary, a monoid of processes, a frame space and a discrete symmetry, each with its boundary.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -383,7 +383,7 @@ Interpreted physically, the real orders have finite unit groups because the real
 <td>the group of units; the complement of the cone</td>
 </tr>
 <tr>
-<td>$\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$</td>
+<td>$\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$</td>
 <td>the zero-divisor cone; the wall of reversibility</td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ Interpreted physically, the real orders have finite unit groups because the real
 </tr>
 <tr>
 <td>$L=\mathcal{N}\cap S^{7}_{E}$</td>
-<td>the link of the cone; an $S^{1}$-bundle over $S^{2}\times S^{2}$</td>
+<td>the link of the cone; $L\cong S^{2}\times S^{3}$, an $S^{1}$-bundle over $S^{2}\times S^{2}$</td>
 </tr>
 <tr>
 <td>$\mathcal{L}$, $\mathcal{L}_{\mathrm{H}}$</td>
