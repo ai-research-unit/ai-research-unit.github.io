@@ -182,4 +182,4 @@ On the remarkable subspaces the block is read as follows. It is central-free: no
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the pattern of the reading and the indefinite sesquilinear form
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html) and [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the readings side by side
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the ten operations of the real part and the coincidences there
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the form and the involution that cut the two halves
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the form and the involution that cut the two halves

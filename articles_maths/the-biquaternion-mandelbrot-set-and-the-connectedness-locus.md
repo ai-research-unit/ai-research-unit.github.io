@@ -44,7 +44,7 @@ In $\mathbb{B}$ no such bound exists in the Euclidean norm, because the biquater
 
 **Proof.** A pure vector $\vec Q=\sum_{k=1}^3Q_k\vec e_k$ has $\vec Q^2=-(\sum_kQ_k^2)e_t$, so $\vec Q^2=0$ exactly when $\sum_kQ_k^2=0$; the element $\tilde Q=\vec e_x+i\vec e_y$ satisfies this, and $\lambda\tilde Q$ does too for every $\lambda\in\mathbb{C}$. The norm of $\lambda\tilde Q$ is $|\lambda|\sqrt2$, unbounded, while its square is zero.
 
-The failure is not a defect of the Euclidean norm alone. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is multiplicative but complex-valued and vanishes on the zero divisors, and its modulus $r=\sqrt{|N|}$ vanishes on the same set; neither can serve as a size. The unique real multiplicative semi-norm of the algebra is $r$ itself, and a semi-norm that vanishes off the origin cannot decide escape (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*). **The escape-time algorithm exists in $\mathbb{B}$ only off the zero-divisor cone.**
+The failure is not a defect of the Euclidean norm alone. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is multiplicative but complex-valued and vanishes on the zero divisors, and its modulus $r=\sqrt{|N|}$ vanishes on the same set; neither can serve as a size. The unique real multiplicative semi-norm of the algebra is $r$ itself, and a semi-norm that vanishes off the origin cannot decide escape (*N-Regularity and Degeneracy in the Biquaternion Algebra*). **The escape-time algorithm exists in $\mathbb{B}$ only off the zero-divisor cone.**
 
 What survives is a conditional bound, phrased through the singular values of the matrix model.
 

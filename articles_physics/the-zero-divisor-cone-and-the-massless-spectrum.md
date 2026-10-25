@@ -12,15 +12,15 @@ The article owns no theorem. It states the nesting, the invertibility criterion 
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The zero divisors, their two families and their relation to the idempotents | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The zero divisors, their two families and their relation to the idempotents | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The roots of $0$, the nilpotent cone, index two and the position among the remarkable subspaces | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
-| The norm, its multiplicativity, the inverse and the group of units | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, its multiplicativity, the inverse and the group of units | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms, the interval and the signature on the two sectors | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms and the norms to the material sector | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The cone as a topological object, its link and the punctured cone | [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) |
 | The polar word, its logarithm and the boundary limits that select the two strata | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
 | The generalized polar decomposition, the partial isometry and the rank-one form | [The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html) |
-| The group of units as the complement of the cone | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The group of units as the complement of the cone | [N-Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 ## Three Sets and One Nesting
 
@@ -295,9 +295,9 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 
 ## Further Reading
 
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the two families and their relation to the idempotents.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the two families and their relation to the idempotents.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the classification, the index and the remarkable subspaces.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for multiplicativity, the inverse and the group of units.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for multiplicativity, the inverse and the group of units.
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the polar word, the boundary-value theorem and the two strata.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the cone as a singular object and its projectivisation.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the zero-divisor sets of the twelve structures and the cone as the shared object of the four general products.

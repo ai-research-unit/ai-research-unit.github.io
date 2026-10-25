@@ -12,7 +12,7 @@ $$
 
 That identification is the result of the article. It also proves that the apex is a genuine singular point: if $0$ were a manifold point of $\mathcal{N}$, its link would be a $5$-sphere, and $\pi_2(S^{2}\times S^{3})\cong\mathbb{Z}\neq0$.
 
-Nothing below is read from the four forms as forms. The cone is selected by the failure of invertibility alone, and the only metric input is the Euclidean norm of the underlying real space (*Topology in the Space of Biquaternions*). The algebraic norm and its multiplicativity are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero-divisor criterion and the two strata are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*; the ambient Euclidean structure, the sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; and the complement, with its group structure, is *The Biquaternion Unit Group as a Topological Group*.
+Nothing below is read from the four forms as forms. The cone is selected by the failure of invertibility alone, and the only metric input is the Euclidean norm of the underlying real space (*Topology in the Space of Biquaternions*). The algebraic norm and its multiplicativity are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero-divisor criterion and the two strata are *N-Regularity and Degeneracy in the Biquaternion Algebra*; the ambient Euclidean structure, the sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; and the complement, with its group structure, is *The Biquaternion Unit Group as a Topological Group*.
 
 ## The Null Cone and Its Link
 
@@ -25,7 +25,7 @@ $$
 
 The set $\mathcal Z$ is the **zero-divisor set**; adding the apex gives the **null cone** $\mathcal{N}$.
 
-**Proposition (quoted).** $\mathcal{N}$ is closed, of empty interior and of real dimension $6$; it is a complex cone; and $\mathbb{B}^{\times}=\mathbb{B}\setminus\mathcal{N}$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*, §*The Zero Divisors*).
+**Proposition (quoted).** $\mathcal{N}$ is closed, of empty interior and of real dimension $6$; it is a complex cone; and $\mathbb{B}^{\times}=\mathbb{B}\setminus\mathcal{N}$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*, §*The Zero Divisors*).
 
 **Definition (link).** The **link** of the cone is
 
@@ -173,7 +173,7 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 - [Topology in the Space of Biquaternions](topology-in-the-space-of-biquaternions.html), for the topology and the norm used here
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the ambient Euclidean structure and the contractibility of the algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the algebraic norm and its multiplicativity
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion and the strata
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion and the strata
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the complement of the cone and its group structure
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the signatures of the Lorentzian slices
 - [Quaternion Geometry](quaternion-geometry.html), for the Hopf fibration and the homogeneous sphere $S^{2}$

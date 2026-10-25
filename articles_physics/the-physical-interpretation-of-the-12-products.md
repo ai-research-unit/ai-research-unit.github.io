@@ -22,7 +22,7 @@ The article owns no theorem. Each result is stated in a sentence, the mathematic
 | The twelve annihilators, their dimensions and the two sides | [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The root equation and the four existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The roots of $+1$ and of $0$ | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
-| The norm, its vanishing, the cone and the unit group | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, its vanishing, the cone and the unit group | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 ## The Twelve and Their Two Halves
 

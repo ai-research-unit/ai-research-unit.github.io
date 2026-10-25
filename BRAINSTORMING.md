@@ -8602,217 +8602,140 @@ Can you read the physics conventions, analyze the physics corpus, and modify /ho
 
 
 
-The Polar Decomposition of a Biquaternion
 
-Introduction
 
-Every biquaternion Q can be written as
 
-    Q = Q_H Q_0,
 
-with Q_H Hermitian positive semidefinite and Q_0 a partial isometry. Both are
-unique functions of Q. The decomposition exists for every Q.
 
-Q_H is the Hermitian square root of QQ*:
+The Moore–Penrose inverse without matrices
 
-    Q_H = (QQ*)^(1/2).
+The definition
 
-Q_0 is the image of Q under the generalized inverse of Q_H:
+For an element A of the algebra, the Moore–Penrose inverse A^+ is the
+unique element satisfying the four Penrose conditions:
 
-    Q_0 = Q_H^+ Q.
+    (1)  A A^+ A = A,
+    (2)  A^+ A A^+ = A^+,
+    (3)  (A A^+)* = A A^+,
+    (4)  (A^+ A)* = A^+ A.
 
-Notation
+These are algebraic equations in the algebra. The Hermitian conjugation * is
+the biquaternion conjugation already in use. No matrix, no basis and no
+C^2 appear. The conditions say:
 
-Write
+  (1) and (2): A^+ inverts A on the part of the space where A is nonzero;
+  (3) and (4): the two products A A^+ and A^+ A are Hermitian.
 
-    Q = Q_t e_t + Q_x e_x + Q_y e_y + Q_z e_z,
+The case the article needs: A = Q_H Hermitian positive semidefinite
 
-with
+For a Hermitian positive semidefinite Q_H, the four conditions have a unique
+solution, and it can be written down directly from the quadratic identity of
+Q_H, with no matrix model.
 
-    Q* = Q_tbar e_t - Q_xbar e_x - Q_ybar e_y - Q_zbar e_z.
+The quadratic identity. Write
 
-The Hermitian algebraic norm is the real number
+    Q_H = a e_t + i W / (2a),    a > 0.
 
-    <Q>* = |Q_t|^2 + |Q_x|^2 + |Q_y|^2 + |Q_z|^2 >= 0.
+Then
 
-The quaternionic algebraic norm is the complex number
+    (5)  Q_H^2 - 2a Q_H + |<Q>#| e_t = 0.
 
-    <Q># = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2.
+This follows directly from Q_H^2 = QQ* = <Q>* e_t + i W and
+<Q>* = 2a^2 - |<Q>#|. It is a biquaternion identity, not a matrix identity.
 
-The Hermitian square is
+Existence. Split into three cases according to |<Q>#|.
 
-    QQ* = <Q>* e_t + i W,
+Case 1, |<Q>#| nonzero. Define
 
-with W = W_X e_x + W_Y e_y + W_Z e_z real, where
+    P = ( 2a e_t - Q_H ) / |<Q>#| .
 
-    W_X = 2 ( Im(Q_x Q_tbar) - Im(Q_y Q_zbar) ),
-    W_Y = 2 ( Im(Q_y Q_tbar) - Im(Q_z Q_xbar) ),
-    W_Z = 2 ( Im(Q_z Q_tbar) - Im(Q_x Q_ybar) ).
+Then, using (5),
 
-Set
+    Q_H P = ( 2a Q_H - Q_H^2 ) / |<Q>#|
+          = ( |<Q>#| e_t ) / |<Q>#|
+          = e_t .
 
-    a = sqrt( ( <Q>* + |<Q>#| ) / 2 ) >= 0.
+The same computation on the other side gives P Q_H = e_t. So P = Q_H^(-1),
+and the four Penrose conditions hold with Q_H P = P Q_H = e_t.
 
-The Hermitian factor
+Case 2, |<Q>#| = 0 and Q_H nonzero. Identity (5) becomes
 
-The Hermitian factor is
+    (6)  Q_H^2 = 2a Q_H .
 
-    Q_H = (QQ*)^(1/2) = a e_t + i W / (2a)     (a > 0),
-    Q_H = 0                                     (a = 0).
+Define
 
-It satisfies Q_H = Q_H* and Q_H^2 = QQ*. It is the unique Hermitian positive
-semidefinite square root of QQ*.
+    P = Q_H / (4a^2) .
 
-The partial-isometry factor
+Then
 
-The partial-isometry factor is
+    Q_H P Q_H = Q_H^3 / (4a^2)
+              = (2a)^2 Q_H / (4a^2)
+              = Q_H ,
 
-    Q_0 = Q_H^+ Q,
+using (6) twice, so (1) holds. Next,
 
-where Q_H^+ is the generalized inverse of Q_H, given explicitly by
+    P Q_H P = Q_H^3 / (16a^4)
+            = 4a^2 Q_H / (16a^4)
+            = Q_H / (4a^2)
+            = P ,
 
-    Q_H^+ = ( 2a e_t - Q_H ) / |<Q>#|          if <Q># is nonzero,
-    Q_H^+ = Q_H / (4a^2)                       if <Q># = 0 and Q is nonzero,
-    Q_H^+ = 0                                  if Q = 0.
+so (2) holds. Finally,
 
-Equivalently,
+    Q_H P = Q_H^2 / (4a^2) = 2a Q_H / (4a^2) = Q_H / (2a) ,
 
-    Q_0 = ( 2a e_t - Q_H ) Q / |<Q>#|          if <Q># is nonzero,
-    Q_0 = Q_H Q / (4a^2)                       if <Q># = 0 and Q is nonzero,
-    Q_0 = 0                                    if Q = 0.
+which is Hermitian because Q_H is, so (3) holds; and
 
-It satisfies
+    P Q_H = Q_H^2 / (4a^2) = Q_H / (2a) ,
 
-    Q = Q_H Q_0,
-    Q_0 Q_0* Q_0 = Q_0,
-    Q_0* Q_0 Q_0* = Q_0*.
+which is the same Hermitian element, so (4) holds.
 
-The pair (Q_H, Q_0) is uniquely determined by Q.
+Case 3, Q = 0. Then Q_H = 0 and P = 0, and all four conditions are
+trivially satisfied.
 
-Derivation of Q_H^+
+Uniqueness. Suppose P satisfies (1)–(4) with A = Q_H. From (1) and (3),
 
-The factor Q_H is Hermitian and satisfies
+    Q_H P = Q_H P Q_H P = (Q_H P)^2 ,
 
-    Q_H^2 - 2a Q_H + |<Q>#| e_t = 0.
+and Q_H P is Hermitian. Also, from Q_H = Q_H P Q_H, on the range of Q_H the
+element P agrees with the inverse of Q_H; on the kernel of Q_H, (1) forces
+P = 0. The two together determine P on the whole algebra. This is the same
+argument in the three cases above, and it gives the same formula.
 
-Indeed Q_H^2 = QQ* = <Q>* e_t + i W and <Q>* = 2a^2 - |<Q>#|, and the
-quadratic identity follows.
+What is proved and what is not
 
-If |<Q>#| is nonzero, Q_H is invertible and the identity gives
-
-    Q_H^(-1) = ( 2a e_t - Q_H ) / |<Q>#|.
-
-Since Q_H^+ = Q_H^(-1) in this case, the formula follows.
-
-If |<Q>#| = 0 and Q is nonzero, Q_H satisfies Q_H^2 = 2a Q_H, so its
-eigenvalues are 0 and 2a. Its generalized inverse has eigenvalues 0 and
-1/(2a). The element Q_H / (4a^2) has eigenvalues 0 and 2a/(4a^2) = 1/(2a),
-and it is Hermitian positive semidefinite on the image of Q_H. Hence
-
-    Q_H^+ = Q_H / (4a^2).
-
-If Q = 0, then Q_H = 0 and Q_H^+ = 0.
-
-Examples
-
-Example 1. Q = e_t + e_x.
-
-    <Q>* = 2,   <Q># = 2,   W = 0,   a = sqrt(2).
-
-    Q_H     = sqrt(2) e_t,
-    Q_H^+   = sqrt(2) e_t / 2,
-    Q_0     = ( e_t + e_x ) / sqrt(2).
-
-    e_t + e_x = sqrt(2) e_t * ( e_t + e_x ) / sqrt(2).
-
-Example 2. Q = e_t + e_x + i e_y.
-
-    <Q>* = 3,   <Q># = 1,   W = 2 e_y + 2 e_z,   a = sqrt(2).
-
-    Q_H   = sqrt(2) e_t + ( i / sqrt(2) ) ( e_y + e_z ),
-    Q_H^+ = sqrt(2) e_t - ( i / sqrt(2) ) ( e_y + e_z ),
-    Q_0   = ( e_t + e_x ) / sqrt(2).
-
-    e_t + e_x + i e_y
-      = [ sqrt(2) e_t + ( i / sqrt(2) ) ( e_y + e_z ) ] ( e_t + e_x ) / sqrt(2).
-
-Example 3. Q = e_t + i e_x.
-
-    <Q>* = 2,   <Q># = 0,   W = 2 e_x,   a = 1.
-
-    Q_H   = e_t + i e_x,
-    Q_H^+ = ( e_t + i e_x ) / 4,
-    Q_0   = ( e_t + i e_x ) / 2.
-
-    e_t + i e_x = ( e_t + i e_x ) * ( e_t + i e_x ) / 2.
-
-Example 4. Q = e_x + i e_y.
-
-    <Q>* = 2,   <Q># = 0,   W = 2 e_z,   a = 1.
-
-    Q_H   = e_t + i e_z,
-    Q_H^+ = ( e_t + i e_z ) / 4,
-    Q_0   = ( e_x + i e_y ) / 2.
-
-    e_x + i e_y = ( e_t + i e_z ) * ( e_x + i e_y ) / 2.
-
-Example 5. Q = (1 + i) e_t.
-
-    <Q>* = 2,   <Q># = 2i,   |<Q>#| = 2,   W = 0,   a = sqrt(2).
-
-    Q_H   = sqrt(2) e_t,
-    Q_H^+ = sqrt(2) e_t / 2,
-    Q_0   = ( 1 + i ) e_t / sqrt(2).
-
-    (1 + i) e_t = sqrt(2) e_t * ( 1 + i ) e_t / sqrt(2).
-
-Example 6. Q = 0.
-
-    Q_H = 0,   Q_H^+ = 0,   Q_0 = 0.
-
-    0 = 0 * 0.
-
-Summary
-
-Every biquaternion Q has a unique polar decomposition
-
-    Q = Q_H Q_0,
-
-with
-
-    Q_H = (QQ*)^(1/2) = a e_t + i W / (2a),
-    a   = sqrt( ( <Q>* + |<Q>#| ) / 2 ),
-
-Hermitian positive semidefinite, and
-
-    Q_0 = Q_H^+ Q,
-
-where Q_H^+ is the generalized inverse of Q_H, given explicitly by the
-formula above.
-
-The factor Q_H is the Hermitian square root of QQ*. The factor Q_0 is a
-partial isometry, satisfying Q_0 Q_0* Q_0 = Q_0. The pair (Q_H, Q_0) is
-determined by Q alone.
-
-Summary of notation
-
-    Q = Q_t e_t + Q_x e_x + Q_y e_y + Q_z e_z       general biquaternion
-    Q* = Q_tbar e_t - Q_xbar e_x - Q_ybar e_y - Q_zbar e_z
-                                                    Hermitian conjugation
-    <Q>* = |Q_t|^2 + |Q_x|^2 + |Q_y|^2 + |Q_z|^2    Hermitian algebraic
-                                                    norm, real >= 0
-    <Q># = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2            quaternionic
-                                                    algebraic norm, complex
-    QQ* = <Q>* e_t + i W                            Hermitian square
-    W = W_X e_x + W_Y e_y + W_Z e_z                 imaginary vector part,
-                                                    real coefficients
-    a = sqrt( ( <Q>* + |<Q>#| ) / 2 )               scalar part of Q_H
-    Q_H = a e_t + i W / (2a)                        Hermitian positive
-                                                    semidefinite factor
-    Q_H^+                                           generalized inverse of
-                                                    Q_H, explicit above
-    Q_0 = Q_H^+ Q                                   partial-isometry factor
-    B^2 = Q_x^2 + Q_y^2 + Q_z^2                     square of the vector part
+The formulas above are algebraic proofs of existence and uniqueness for
+Q_H, using only the quadratic identity (5). No matrix appears.
+
+What is not proved this way, and does not need to be proved for the article:
+that every biquaternion has a Moore–Penrose inverse. The article only needs
+Q_H^+, and Q_H^+ is proved directly. The general existence theorem for all
+of the algebra is a separate fact, usually proved by reduction to
+M_2(C); it is not used anywhere in the polar decomposition.
+
+How to state it in the article
+
+Replace the phrase "where Q_H^+ is the generalized inverse of Q_H" by:
+
+  Q_H^+ is the unique element satisfying the four Penrose conditions
+  Q_H Q_H^+ Q_H = Q_H, Q_H^+ Q_H Q_H^+ = Q_H^+,
+  (Q_H Q_H^+)* = Q_H Q_H^+, (Q_H^+ Q_H)* = Q_H^+ Q_H.
+  It is given explicitly by the formulas above, derived from the
+  quadratic identity Q_H^2 - 2a Q_H + |<Q>#| e_t = 0.
+
+That sentence is the entire definition. The matrix model does not appear,
+and the derivation is carried out in the algebra. The proof of existence and
+uniqueness is the three-case computation, which uses only (5), which itself
+is derived from QQ* = <Q>* e_t + i W. Every step is a biquaternion identity.
+
+Why this works only for Hermitian positive semidefinite Q_H
+
+The reason the proof is so short is that Q_H is Hermitian positive
+semidefinite, so its eigenvalues are nonnegative and the quadratic identity
+(5) is enough to compute the inverse on the range and zero on the kernel.
+For a general biquaternion Q, the same proof would need the singular value
+structure of Q, which is more work. The article avoids this by only ever
+needing Q_H^+, not Q^+. That is why no matrix is needed anywhere in the
+polar decomposition.
 
 
 
@@ -9227,6 +9150,449 @@ the rotor. The first two are partial, the third is total.
 
 
 
+
+
+
+# The Polar Decomposition of a Norm-Degenerate Biquaternion
+
+## Introduction
+
+The general polar decomposition of a biquaternion, established in *The Polar
+Decomposition of a Biquaternion*, writes every \(Q\) as
+
+\[
+Q=Q_H\,Q_0,
+\]
+
+with \(Q_H\) Hermitian positive semidefinite and \(Q_0\) a partial isometry.
+The companion article *The Polar Decomposition of a Norm-Regular
+Biquaternion* treated the case \(N(Q)\neq 0\), where the factors sharpen and
+the two-factor decomposition refines into the four-factor word
+\(Q=r\,\partial\,U_b\,u_r\).
+
+The present article treats the complementary case \(N(Q)=0\). The modulus
+\(P\) vanishes, and the modulus–unit writing \(Q=P\,U\) with \(P\neq 0\)
+does not exist. The four-factor word also fails, because the norm of its
+product is \(P^2=0\), so it cannot represent a nonzero element. What
+survives is the two-factor decomposition \(Q=Q_H\,Q_0\): the Hermitian
+factor \(Q_H\) is positive semidefinite of rank at most one, and the
+partial-isometry factor \(Q_0\) is a partial isometry that is not unitary.
+
+The article states why the modulus–unit form fails, records the surviving
+two-factor decomposition, gives the closed formulas for \(Q_H\) and \(Q_0\),
+describes the two sectors and their strata, and records examples.
+
+---
+
+## The Vanishing of the Modulus
+
+Let \(Q\) be a biquaternion with \(N(Q)=0\). The modulus \(P\) is a square
+root of the norm,
+
+\[
+P^2=N(Q)=0,
+\]
+
+so \(P=0\). The modulus–unit decomposition requires \(P\neq 0\); at
+\(P=0\) the unit factor \(U=Q/P\) is undefined. The four-factor word
+
+\[
+Q=r\,\partial\,U_b\,u_r
+\]
+
+also fails: its four factors are constrained by
+
+\[
+r=|P|>0,\qquad |\partial|=1,\qquad N(U_b)=1,\qquad N(u_r)=1,
+\]
+
+and the product has norm
+
+\[
+N(r\,\partial\,U_b\,u_r)=r^2\partial^2N(U_b)N(u_r)=P^2=0.
+\]
+
+So the product cannot equal a nonzero element. At the origin the failure is
+even stronger: \(P=0\) forces \(r=0\), contradicting \(r>0\).
+
+The modulus–unit decomposition and the four-factor word therefore exist
+exactly on the norm-regular elements \(N(Q)\neq 0\). The norm-degenerate
+elements are the null cone
+
+\[
+\mathcal N=\{Q:N(Q)=0\},
+\]
+
+of real codimension two.
+
+---
+
+## The Two-Factor Decomposition
+
+The general polar decomposition survives on the null cone. Every
+biquaternion \(Q\) can be written
+
+\[
+Q=Q_H\,Q_0,
+\]
+
+with
+
+\[
+Q_H=(QQ^*)^{1/2},
+\qquad
+Q_0=Q_H^+ Q,
+\]
+
+where \(Q_H^+\) is the generalized inverse of \(Q_H\). When \(N(Q)=0\):
+
+- \(Q_H\) is Hermitian positive semidefinite of rank at most one;
+- \(Q_0\) is a partial isometry, satisfying \(Q_0Q_0^*Q_0=Q_0\);
+- \(Q_0\) is not unitary, except in the degenerate case \(Q=0\) where both
+  factors vanish.
+
+The pair \((Q_H,Q_0)\) is uniquely determined by \(Q\). The factor \(Q_H\)
+is the unique Hermitian positive semidefinite square root of \(QQ^*\); the
+factor \(Q_0\) is then forced by \(Q=Q_H Q_0\) together with \(Q_0=0\) on
+\(\ker Q_H\) and \(Q_0=Q_H^{-1}Q\) on \((\ker Q_H)^\perp\).
+
+---
+
+## The Hermitian Factor
+
+For
+
+\[
+Q=Q_t e_t+Q_x e_x+Q_y e_y+Q_z e_z,
+\]
+
+the Hermitian square is
+
+\[
+QQ^*=\langle Q\rangle^* e_t+iW,
+\qquad
+W=W_X e_x+W_Y e_y+W_Z e_z,
+\]
+
+with
+
+\[
+W_X=2\bigl(\operatorname{Im}(Q_x\bar Q_t)-\operatorname{Im}(Q_y\bar Q_z)\bigr),
+\]
+
+\[
+W_Y=2\bigl(\operatorname{Im}(Q_y\bar Q_t)-\operatorname{Im}(Q_z\bar Q_x)\bigr),
+\]
+
+\[
+W_Z=2\bigl(\operatorname{Im}(Q_z\bar Q_t)-\operatorname{Im}(Q_x\bar Q_y)\bigr),
+\]
+
+and
+
+\[
+\langle Q\rangle^*=|Q_t|^2+|Q_x|^2+|Q_y|^2+|Q_z|^2.
+\]
+
+Because \(N(Q)=0\), the identity
+
+\[
+\langle Q\rangle^{*2}-|W|^2=|N(Q)|^2=0
+\]
+
+holds, so
+
+\[
+|W|=\langle Q\rangle^*.
+\]
+
+Set
+
+\[
+a=\sqrt{\frac{\langle Q\rangle^*}{2}},
+\]
+
+a nonnegative real. If \(a>0\), then
+
+\[
+Q_H=a e_t+\frac{iW}{2a},
+\qquad
+|W|=2a^2.
+\]
+
+If \(a=0\), then \(Q=0\) and \(Q_H=0\).
+
+The scalar part of \(Q_H\) is \(a\). The vector part of \(Q_H\) is purely
+imaginary. Squaring,
+
+\[
+Q_H^2=\left(a^2+\frac{|W|^2}{4a^2}\right)e_t+iW
+=2a^2 e_t+iW
+=\langle Q\rangle^* e_t+iW
+=QQ^*.
+\]
+
+The eigenvalues of \(Q_H\) are \(a\pm|W|/(2a)=a\pm a\), that is, \(0\) and
+\(2a\). So \(Q_H\) has rank one and is positive semidefinite but not positive
+definite.
+
+---
+
+## The Partial-Isometry Factor
+
+The generalized inverse of \(Q_H\) is
+
+\[
+Q_H^+=\frac{Q_H}{4a^2},
+\qquad
+a>0,
+\]
+
+because \(Q_H^2=2aQ_H\) gives \(Q_H^3=4a^2Q_H\), and \(Q_H/(4a^2)\) is
+Hermitian on the image of \(Q_H\) with eigenvalues \(0\) and \(1/(2a)\). At
+the origin, \(Q_H^+=0\).
+
+The partial-isometry factor is
+
+\[
+Q_0=Q_H^+ Q=\frac{Q_H\,Q}{4a^2},
+\qquad
+a>0.
+\]
+
+It satisfies
+
+\[
+Q_0Q_0^*Q_0=Q_0,
+\qquad
+Q_0^*Q_0Q_0^*=Q_0^*,
+\]
+
+and
+
+\[
+Q_0Q_0^*=\frac{Q_H}{2a},
+\]
+
+which is the rank-one projection onto the image of \(Q_H\). So \(Q_0\) is a
+partial isometry of rank one, not unitary: its product with its conjugate is
+a rank-one projection, not the identity.
+
+At the origin, \(Q_0=0\).
+
+---
+
+## The Two Sectors
+
+The null cone splits into two sectors.
+
+### The sector \(\Lambda_{01}\)
+
+Condition:
+
+\[
+N(Q)=0,
+\qquad
+B^2=Q_x^2+Q_y^2+Q_z^2\neq 0.
+\]
+
+The characteristic polynomial is \(X^2-2Q_tX\), with two distinct roots
+\(0\) and \(2Q_t\neq 0\). So \(Q\) has a spectral decomposition
+\(Q=c\,\pi\) with \(c\neq 0\) and \(\pi\) an idempotent, \(\pi^2=\pi\),
+\(\pi\neq 0,e_t\). The idempotent \(\pi\) need not be Hermitian.
+
+The Hermitian factor \(Q_H\) is positive semidefinite of rank one, and the
+partial-isometry factor \(Q_0\) is a partial isometry of rank one. Both are
+functions of \(Q\), computed by the formulas above.
+
+### The sector \(\Lambda_{00}\)
+
+Condition:
+
+\[
+N(Q)=0,
+\qquad
+B^2=0.
+\]
+
+These imply \(Q_t=0\) and \(Q_x^2+Q_y^2+Q_z^2=0\). So \(Q\) is pure and
+square-zero:
+
+\[
+Q=v=Q_x e_x+Q_y e_y+Q_z e_z,
+\qquad
+v^2=0.
+\]
+
+The sector splits into two strata:
+
+- the **origin**, \(Q=0\), where \(Q_H=0\) and \(Q_0=0\);
+- the **nonzero nilpotents**, \(Q\neq 0\), \(Q^2=0\), where \(Q_H\) is
+  positive semidefinite of rank one and \(Q_0\) is a partial isometry of
+  rank one.
+
+---
+
+## Examples
+
+### Example 1: \(\Lambda_{01}\)
+
+\[
+Q=e_t+i e_x.
+\]
+
+The norm is \(N(Q)=1+i^2=0\). The Hermitian norm is \(\langle Q\rangle^*=2\),
+so \(a=1\). The imaginary vector is \(W=2e_x\). Then
+
+\[
+Q_H=e_t+i e_x,
+\qquad
+Q_H^+=\frac{e_t+i e_x}{4},
+\qquad
+Q_0=\frac{e_t+i e_x}{2}.
+\]
+
+The decomposition reads
+
+\[
+e_t+i e_x=(e_t+i e_x)\cdot\frac{e_t+i e_x}{2}.
+\]
+
+Here \(Q_0\) is a projection, hence a partial isometry, but not unitary:
+\(Q_0Q_0^*=Q_0\), which is a rank-one projection, not the identity.
+
+### Example 2: \(\Lambda_{01}\)
+
+\[
+Q=e_t+e_x+i e_y+i e_z.
+\]
+
+The norm is \(N(Q)=1+1+i^2+i^2=0\). The Hermitian norm is
+\(\langle Q\rangle^*=4\), so \(a=\sqrt2\). The imaginary vector is
+\(W=4e_z\). Then
+
+\[
+Q_H=\sqrt2\,e_t+i\sqrt2\,e_z,
+\qquad
+Q_0=\frac{Q}{2\sqrt2}.
+\]
+
+The decomposition reads
+
+\[
+e_t+e_x+i e_y+i e_z
+=\bigl(\sqrt2\,e_t+i\sqrt2\,e_z\bigr)\cdot\frac{Q}{2\sqrt2}.
+\]
+
+\(Q_0\) is a partial isometry of rank one, not unitary.
+
+### Example 3: \(\Lambda_{00}\), nonzero nilpotent
+
+\[
+Q=e_x+i e_y.
+\]
+
+The norm is \(N(Q)=1+i^2=0\) and \(B^2=1+i^2=0\). The square is
+\(Q^2=0\). The Hermitian norm is \(\langle Q\rangle^*=2\), so \(a=1\). The
+imaginary vector is \(W=2e_z\). Then
+
+\[
+Q_H=e_t+i e_z,
+\qquad
+Q_H^+=\frac{e_t+i e_z}{4},
+\qquad
+Q_0=\frac{e_x+i e_y}{2}.
+\]
+
+The decomposition reads
+
+\[
+e_x+i e_y=(e_t+i e_z)\cdot\frac{e_x+i e_y}{2}.
+\]
+
+\(Q_H\) has rank one, and \(Q_0\) is a partial isometry of rank one, not
+unitary.
+
+### Example 4: the origin
+
+\[
+Q=0.
+\]
+
+Then \(N(Q)=0\), \(B^2=0\), and
+
+\[
+Q_H=0,
+\qquad
+Q_H^+=0,
+\qquad
+Q_0=0.
+\]
+
+The decomposition reads \(0=0\cdot 0\).
+
+---
+
+## Summary
+
+On the norm-degenerate set \(N(Q)=0\), the modulus–unit decomposition and
+the four-factor word do not exist: the modulus \(P\) vanishes, and the norm
+of the product of the four factors is \(P^2=0\). What survives is the
+two-factor decomposition
+
+\[
+Q=Q_H\,Q_0,
+\]
+
+with
+
+\[
+Q_H=(QQ^*)^{1/2}
+=a e_t+\frac{iW}{2a},
+\qquad
+a=\sqrt{\frac{\langle Q\rangle^*}{2}},
+\qquad
+|W|=2a^2,
+\]
+
+Hermitian positive semidefinite of rank one (or zero at the origin), and
+
+\[
+Q_0=Q_H^+ Q=\frac{Q_H\,Q}{4a^2},
+\qquad
+Q_H^+=\frac{Q_H}{4a^2},
+\]
+
+a partial isometry of rank one (or zero at the origin), satisfying
+\(Q_0Q_0^*Q_0=Q_0\) and \(Q_0Q_0^*=Q_H/(2a)\).
+
+The null cone splits into the sector \(\Lambda_{01}\), where \(Q\) has two
+distinct eigenvalues \(0\) and \(2Q_t\neq 0\), and the sector
+\(\Lambda_{00}\), where \(Q\) is pure and square-zero. The sector
+\(\Lambda_{00}\) further splits into the origin and the nonzero nilpotents.
+
+The factorization exists for every element of the null cone, including the
+origin, and the pair \((Q_H,Q_0)\) is uniquely determined by \(Q\). The
+four-factor refinement is the privilege of the norm-regular elements.
+
+---
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| \(Q=Q_t e_t+Q_x e_x+Q_y e_y+Q_z e_z\) | general biquaternion |
+| \(N(Q)=\langle Q\rangle^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2\) | quaternionic norm, complex; zero on the null cone |
+| \(\langle Q\rangle^*=\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2\) | Hermitian norm, real, nonnegative |
+| \(QQ^*=\langle Q\rangle^* e_t+iW\) | Hermitian square, a biquaternion |
+| \(W=W_X e_x+W_Y e_y+W_Z e_z\) | imaginary vector part, real coefficients |
+| \(a=\sqrt{\langle Q\rangle^*/2}\) | scalar part of \(Q_H\), nonnegative real |
+| \(Q_H=a e_t+iW/(2a)\) | Hermitian positive semidefinite factor, rank at most one |
+| \(Q_H^+=Q_H/(4a^2)\) | generalized inverse of \(Q_H\), for \(a>0\) |
+| \(Q_0=Q_H^+Q=Q_H Q/(4a^2)\) | partial-isometry factor, rank at most one |
+| \(\Lambda_{01}\) | sector \(N=0\), \(B^2\neq 0\) |
+| \(\Lambda_{00}\) | sector \(N=0\), \(B^2=0\) |
+| \(B^2=Q_x^2+Q_y^2+Q_z^2\) | square of the vector part |
 
 
 

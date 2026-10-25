@@ -28,7 +28,7 @@ the **generic norm** of *The Four Forms and the Four Algebraic Norms over the Bi
 
 ### The Cone Is the Complement of the Group of Units
 
-The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the units, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
+The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the units, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
 
 $$
 \mathbb{B}=\{0\}\cup\mathbb{B}^{\times}\cup\bigl(\mathcal{N}\setminus\{0\}\bigr) .
@@ -303,7 +303,7 @@ These five statements are not about the twelve products. They are about the one 
 
 ## The One-Sided Inverse Equations
 
-Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not a unit* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
+Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not a unit* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
 
 **Theorem (the inverse equations).** Let $\star$ be one of the four general products and let $\tilde Q_1\neq0$. Then $\tilde Q_1$ is a zero divisor of $\star$ exactly when neither of the two equations
 
@@ -361,7 +361,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general vocabulary: the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, each stated once for a general product.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural}$ and the four algebraic norms read at the two equal arguments.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain-product criterion, the classification of the cone's elements and the parametrisation of the pure family.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain-product criterion, the classification of the cone's elements and the parametrisation of the pure family.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the four general products and their symmetric and antisymmetric parts.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve names, the three letters of each and the class of each.

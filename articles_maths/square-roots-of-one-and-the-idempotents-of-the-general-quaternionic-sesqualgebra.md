@@ -225,7 +225,7 @@ C(\tilde\Pi) = \tfrac14\bigl(e_t + \tilde\Xi + \tilde\Xi^{\natural} + C(\tilde\X
 = \tfrac14\bigl(1 + 2\xi_t + C(\tilde\Xi)\bigr) = \tfrac14\bigl(1 + 0 - 1\bigr) = 0 ,
 $$
 
-since $C(\tilde\Xi) = \xi_t^{2}+(\vec v,\vec v) = -1$, and $\tilde\Xi+\tilde\Xi^{\natural} = 2\xi_t = 0$. The element is nonzero of central square $0$, so by the criterion of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* it is a zero divisor and not a unit of the plain algebra. The witness $\tilde\Xi=i\vec u$ has $\xi_t = 0$ and $(\vec v,\vec v) = -(\vec u,\vec u) = -1$, so every Hermitian idempotent of the algebra is a nontrivial example.
+since $C(\tilde\Xi) = \xi_t^{2}+(\vec v,\vec v) = -1$, and $\tilde\Xi+\tilde\Xi^{\natural} = 2\xi_t = 0$. The element is nonzero of central square $0$, so by the criterion of *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* it is a zero divisor and not a unit of the plain algebra. The witness $\tilde\Xi=i\vec u$ has $\xi_t = 0$ and $(\vec v,\vec v) = -(\vec u,\vec u) = -1$, so every Hermitian idempotent of the algebra is a nontrivial example.
 
 **Remark.** The family $\tfrac12(e_t+\tilde\Xi)$ is the exact opposite of the family of this article: it is infinite and it consists entirely of zero divisors, whereas the family of this article is infinite and consists entirely of units of the plain algebra. The plain product and this one have their nontrivial idempotents disjoint, and the difference is carried by the sign of the vector contribution to the central square.
 

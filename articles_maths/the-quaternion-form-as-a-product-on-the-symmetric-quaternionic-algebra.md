@@ -10,7 +10,7 @@ as the **form that the block carries**: it identifies it, computes its Gram matr
 realification and its signature, its invariance under the product and the failure of that invariance, its
 restriction to the remarkable subspaces, and its relation to the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ of the algebra.
 
-The form $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form named in the catalogue *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the general quaternionic bilinear one of the four pairings of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its diagonal is the norm of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, and on the remarkable subspaces its restrictions and their signatures are
+The form $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form named in the catalogue *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the general quaternionic bilinear one of the four pairings of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its diagonal is the norm of *N-Regularity and Degeneracy in the Biquaternion Algebra*, and on the remarkable subspaces its restrictions and their signatures are
 *Remarkable Subspaces under the General Quaternionic Algebra*, whose table is quoted here and
 not recomputed. The article therefore owns the reading of the form **as the form of the product** — the Gram
 data, the invariance question and the coincidence with $\langle\cdot,\cdot\rangle_{*}$ — and cites the norm article and the remarkable-subspace
@@ -244,7 +244,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the quaternion form among the four pairings
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the quaternion form beside the other three coefficients
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm, the polarisation and the Hermitian form
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm, the polarisation and the Hermitian form
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the restriction Gram matrices and the signatures
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the radical and the isotropic elements
 - [The Multiplication Operators of the Symmetric Quaternionic Algebra](the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html), for the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$ and the groups preserving it

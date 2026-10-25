@@ -258,7 +258,7 @@ and the element $e_t + i\vec e_x$ is a non-pure zero divisor whose square vanish
 ## Further Reading
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the definition of the zero divisor relative to a product and the two-sided reading.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion of the plain product, the two families and the element theory of the cone.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion of the plain product, the two families and the element theory of the cone.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the theorem that the four general products have one zero-divisor set, which this article quotes.
 - [Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html), for the square-zero family $c(\vec u+i)$, its real dimension and its non-purity.
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product, its table and its axioms.

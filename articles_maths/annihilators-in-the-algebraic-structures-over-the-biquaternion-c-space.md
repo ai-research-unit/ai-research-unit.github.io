@@ -56,7 +56,7 @@ A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t+i\vec e_z\},\qq
 $$
 In each line the first generator is $\tilde Q^{\natural}$, so the two planes share it, and the two second generators differ in one sign, which is what makes the planes distinct. The pure element $\vec e_x+i\vec e_y$ lies in its own annihilators and the non-pure element $e_t+i\vec e_x$ does not. The dimension is two, the kernel of a rank-two multiplication.
 
-The cone is *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+The cone is *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra
 

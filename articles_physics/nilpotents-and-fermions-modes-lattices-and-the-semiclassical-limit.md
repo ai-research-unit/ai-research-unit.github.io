@@ -22,8 +22,8 @@ One caution governs the whole article. The nilpotent is **not** the physical nul
 | --- | --- |
 | The square-zero equation, the nilpotent cone, index two and the position among the remarkable subspaces | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
 | The roots of $+1$, the idempotents and the halving map | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
-| The zero divisors, the two families and the cone | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
-| The norm, its multiplicativity and the inverse | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The zero divisors, the two families and the cone | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, its multiplicativity and the inverse | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The Peirce decomposition and the orthogonal idempotents | [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html) |
 | The $2\times2$ matrix model and the trace-free singular matrices | [Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
 | The root sets across the twelve products | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |

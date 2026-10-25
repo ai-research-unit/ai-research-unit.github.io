@@ -14,7 +14,7 @@ $$
 \Sigma_{11}=\mathbb{B}\setminus(\mathcal N\cup\mathcal S),
 $$
 
-and it is the **generic** sector: the open dense cell in which both problems of the arrangement receive the positive answer. The other three cells are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate cell $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
+and it is the **generic** sector: the open dense cell in which both problems of the arrangement receive the positive answer. The other three cells are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate cell $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *N-Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **regular** means non-zero: $N\neq0$ for the norm, $B^2\neq0$ for the spectrum.
 
@@ -38,7 +38,7 @@ $$
 
 (v) $\tilde Q$ is invertible, non-scalar, and admits a Peirce decomposition with idempotents commuting with it.
 
-*Proof.* (i) $\iff$ (ii): $N\neq0$ is the unit condition, and $B^2\neq0$ is the discriminant condition, so the eigenvalues $\lambda_\pm=Q_t\pm\beta$, with $\beta^2=-B^2$ and $\beta\neq0$, are distinct; conversely distinct eigenvalues give $B^2\neq0$ and $N=\lambda_+\lambda_-\neq0$ makes the element a unit.
+*Proof.* (i) $\iff$ (ii): $N\neq0$ is the unit condition, and $B^2\neq0$ is the discriminant condition, so the eigenvalues $\lambda_\pm=Q_t\pm\beta$, with $\beta=iB$ and $B^2\neq0$, are distinct; conversely distinct eigenvalues give $B^2\neq0$ and $N=\lambda_+\lambda_-\neq0$ makes the element a unit.
 
 (ii) $\iff$ (iii): in two dimensions a semisimple element with a repeated eigenvalue is a scalar, so semisimplicity with a non-scalar spectrum is the same as two distinct eigenvalues.
 
@@ -111,7 +111,7 @@ both non-zero, so the loop lies in $\Sigma_{11}$. The continuous map $\tilde Q\m
 
 ## The Elements
 
-Let $\tilde Q\in\Sigma_{11}$, with $\beta^2=-B^2$, $\beta\neq0$, and eigenvalues $\lambda_\pm=Q_t\pm\beta$. The choice of $\beta$ is the choice of square root, $\beta=\pm i\sqrt{B^2}$; it only exchanges the two eigenvalues.
+Let $\tilde Q\in\Sigma_{11}$, with $\beta=iB$, $B$ a fixed square root of $B^2$, and eigenvalues $\lambda_\pm=Q_t\pm\beta$. The other square root replaces $\beta$ by $-\beta$ and exchanges the two eigenvalues.
 
 **Spectrum and minimal polynomial.** The spectrum is $\{\lambda_+,\lambda_-\}$, with $\lambda_+\neq\lambda_-$ and $\lambda_+\lambda_-=N\neq0$. The characteristic and minimal polynomial is
 
@@ -150,9 +150,9 @@ This is the only sector in which the Peirce decomposition relative to $\tilde Q$
 
 **The spectral decomposition.** The two-term writing
 $$
-\tilde Q=\lambda_+e_++\lambda_-e_-,\qquad \lambda_\pm=Q_t\pm\beta,\quad \beta^2=-B^2,
+\tilde Q=\lambda_+e_++\lambda_-e_-,\qquad \lambda_\pm=Q_t\pm\beta,\quad \beta=iB,
 $$
-is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Eigenbasis, the Nilpotents, and the Peirce Corners*.
+is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Eigenbasis, the Nilpotents, and the Peirce Corners*; the general construction is in *Spectral Regularity and Construction of the Eigenbasis of a Biquaternion*, §*The Eigenbasis*.
 
 **Powers, inverse, and the eigenvalue map.** For every polynomial $f\in\mathbb{C}[X]$,
 $$
@@ -180,7 +180,7 @@ so the inverse lies in the sector.
 
 ## The Eigenbasis, the Nilpotents, and the Peirce Corners
 
-**Every $\tilde Q\in\Sigma_{11}$ has $B^2\neq0$. Its own root carries a Peirce pair, the two mixed corners carry a pair of nilpotents, and the four elements form a basis in which left multiplication by $\tilde Q$ is diagonal. The basis is an eigenbasis of left multiplication; the two minimal left ideals are the eigenspaces of right multiplication, not of left multiplication.** This is the Q-dependent specialisation of the Peirce decomposition of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*: the four corner lines are the same construction, read relative to the pair of $\tilde Q$'s own root.
+**Every $\tilde Q\in\Sigma_{11}$ has $B^2\neq0$. Its own root carries a Peirce pair, the two mixed corners carry a pair of nilpotents, and the four elements form a basis in which left multiplication by $\tilde Q$ is diagonal. The basis is a normalised Peirce eigenbasis of left multiplication; the two minimal left ideals are the eigenspaces of right multiplication, not of left multiplication.** This is the Q-dependent specialisation of the Peirce decomposition of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*: the four corner lines are the same construction, read relative to the pair of $\tilde Q$'s own root. The general construction, its normalisation and the expansion of an arbitrary biquaternion are in *Spectral Regularity and Construction of the Eigenbasis of a Biquaternion*.
 
 ### The Root, the Idempotents, and the Eigenvalues
 
@@ -208,6 +208,8 @@ and
 $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
 $$
+The pair $\tilde\Pi_\pm$ is the pair denoted $e_\pm$ in §*The Elements*; the two notations are the same spectral idempotents.
+
 The pair $(\tilde\Pi_+,\tilde\Pi_-)$ is attached to $\tilde Q$: it is the pair of the root $\vec\Xi$, not an arbitrary pair of idempotents. The signs are fixed by
 $$
 \vec\Xi\tilde\Pi_\pm=\tilde\Pi_\pm\vec\Xi=\pm\tilde\Pi_\pm,\qquad
@@ -356,6 +358,8 @@ $$
 \vec\Upsilon_\pm=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-B^2}},
 $$
 which is the transverse-vector construction with $\vec X=\vec e_\mu$. The chart with axis $\mu$ is defined when $Q_\mu^2\neq B^2$, that is, when $Q_\nu^2+Q_\rho^2\neq0$ for the two other coordinates. At least one of the three is defined whenever $B\neq0$: if all three failed, then $Q_x^2+Q_y^2=Q_y^2+Q_z^2=Q_z^2+Q_x^2=0$, hence $Q_x^2=Q_y^2=Q_z^2$ and $2Q_x^2=0$, so $B=0$. The charts are the one formula read with $\mu=x,y,z$, and the ones that are defined give pairs differing by the reciprocal rescaling. The symmetric formula off the cone and the axis charts on it cover every $\vec Q$ with $B\neq0$.
+
+**The normalisation.** The symmetric formula off the exceptional cone, the axis chart on it and one fixed branch of the square root are the normalisation of *Spectral Regularity and Construction of the Eigenbasis of a Biquaternion*, §*The Transverse-Vector Construction*: they fix the scale of the pair, and with them the quadruple $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique. Without this choice the pair is determined only up to the reciprocal rescaling of the theorem above.
 
 **Why no formula is axis-free everywhere.** A closed form with no auxiliary vector would be a map $F$ with $F(S\vec Q)=S\,F(\vec Q)$ for every rotation $S$, rational in $\vec Q$ and $B$. By invariant theory the only such maps are $F(\vec Q)=f(B^2)\vec Q$: the invariant tensors are $\delta_{ij}$ and $\epsilon_{ijk}$, and $\epsilon$ cannot build a vector from a single vector. But the corner is transverse to $\vec Q$, so $F$ would vanish. Every explicit generator therefore uses an auxiliary vector: the symmetric formula uses the permutation-invariant $\vec w$, the axis charts use $\vec e_x,\vec e_y,\vec e_z$. The corner line is a spinor line, and a spinor is not a function of $\vec Q$ alone.
 
@@ -548,7 +552,7 @@ The standard case is $\vec Q=Q_z\vec e_z$, $B=-Q_z$.
 
 ### The Eigenbasis of Left Multiplication
 
-**A basis of $\mathbb{B}$ is an eigenbasis of $L_{\tilde Q}$ if each of its vectors $b$ satisfies $\tilde Qb=\mu b$ for some scalar $\mu$. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is one; because each eigenspace is two-dimensional, it is not unique.**
+**A basis of $\mathbb{B}$ is an eigenbasis of $L_{\tilde Q}$ if each of its vectors $b$ satisfies $\tilde Qb=\mu b$ for some scalar $\mu$. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is one. It is the normalised Peirce representative: the two idempotents are the spectral idempotents and the two nilpotents are the corner generators whose scale is fixed by the normalisation. As an arbitrary eigenbasis it is not unique, because each eigenspace is two-dimensional; as this representative it is unique with the normalisation fixed.**
 
 Write
 $$
@@ -571,7 +575,7 @@ $$
 $$
 These are the two minimal **right** ideals. The basis $(\tilde\Pi_+,\vec\Upsilon_-)$ is a basis of the first, $(\vec\Upsilon_+,\tilde\Pi_-)$ a basis of the second.
 
-**Uniqueness.** An eigenbasis of $L_{\tilde Q}$ is any pair of bases of these two eigenspaces. It is therefore unique only up to an invertible change of basis on each eigenspace. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is the choice singled out by the Peirce structure: it orders each eigenspace as $(\tilde\Pi_+,\vec\Upsilon_-)$ and $(\vec\Upsilon_+,\tilde\Pi_-)$, the diagonal idempotent of the Peirce pair first.
+**Uniqueness.** An arbitrary eigenbasis of $L_{\tilde Q}$ is any pair of bases of these two eigenspaces, so it is not unique. The Peirce basis is the representative singled out by the spectral data: it orders each eigenspace as $(\tilde\Pi_+,\vec\Upsilon_-)$ and $(\vec\Upsilon_+,\tilde\Pi_-)$, the diagonal idempotent first, and the pair $(\vec\Upsilon_+,\vec\Upsilon_-)$ is determined up to the reciprocal rescaling before the normalisation, and the normalisation fixes the scale. This is the precise sense in which $\mathcal{B}(\tilde Q)$ is the eigenbasis of $\tilde Q$: it is the unique normalised Peirce basis, not the unique basis of eigenvectors.
 
 **The left ideals are eigenspaces of right multiplication.** The two minimal left ideals
 $$
@@ -600,9 +604,11 @@ The two readings are compared in the table.
 
 **The eigenprojection and the projector.** The element $\tilde\Pi_+$ is the eigenprojection of the eigenvalue decomposition. The operator $L_{\tilde\Pi_+}$ is the spectral projector onto the $\lambda_+$-eigenspace of $L_{\tilde Q}$: it sends $\tilde Q_{\mathrm{sp}}$ to $\tilde\Pi_+\tilde Q_{\mathrm{sp}}$, the first Peirce component, and its image is the two-dimensional right ideal $\tilde\Pi_+\mathbb{B}$. The two objects must not be confused: $L_{\tilde\Pi_+}$ is an operator on the four-dimensional algebra, while the spectral projector of the multiplication map is defined on the algebra itself.
 
-### The Spinor Spaces and their Coordinates
+## Spinors and Chirality
 
-**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a complex plane, and the algebra is their direct sum.**
+**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a complex plane, and the algebra is their direct sum.** This is the specialisation of §*Spinors and Chirality* of *Spectral Regularity and Construction of the Eigenbasis of a Biquaternion*.
+
+### The Two Spinor Spaces
 
 The two spaces are
 $$
@@ -626,6 +632,8 @@ $$
 \tilde\Pi_-\vec\Upsilon_+=\vec\Upsilon_+.
 $$
 They are nevertheless distinct subspaces of $\mathbb{B}$, and the direct sum is the whole algebra.
+
+### The Left Action and the Definition of Chirality
 
 In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, a spinor of first chirality is
 $$
@@ -685,19 +693,18 @@ $$
 \vec\Upsilon_+\mapsto E_{21},\qquad
 \tilde\Pi_-\mapsto E_{22},
 $$
-where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then every $P\in\mathbb{B}$ has a unique expansion
+where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then every $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$ has the unique expansion
 $$
-P=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
-\qquad a_{ij}\in\mathbb{C},
+\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\qquad Q_{\mathrm{sp},ij}\in\mathbb{C},
 $$
 and is represented by
 $$
-M_2^Q(P)=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}.
+\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
 $$
-In the notation of the spinor coordinates, $a_{11}=Q_{\mathrm{sp},11}$, $a_{12}=Q_{\mathrm{sp},12}$, $a_{21}=Q_{\mathrm{sp},21}$ and $a_{22}=Q_{\mathrm{sp},22}$.
-The element $\tilde Q$ itself has $a_{11}=\lambda_+$, $a_{22}=\lambda_-$ and $a_{12}=a_{21}=0$, so
+The element $\tilde Q$ itself has $Q_{\mathrm{sp},11}=\lambda_+$, $Q_{\mathrm{sp},22}=\lambda_-$ and $Q_{\mathrm{sp},12}=Q_{\mathrm{sp},21}=0$, so
 $$
-M_2^Q(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+\mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
 
 The two columns are the two spinor spaces:
@@ -706,7 +713,7 @@ S_+=\mathbb{B}\tilde\Pi_+\longleftrightarrow\operatorname{span}\{E_{11},E_{21}\}
 \qquad
 S_-=\mathbb{B}\tilde\Pi_-\longleftrightarrow\operatorname{span}\{E_{12},E_{22}\}=\text{column }2.
 $$
-The first column of $M_2^Q(P)$ is the coordinate vector of $P\tilde\Pi_+$, the second is the coordinate vector of $P\tilde\Pi_-$.
+The first column of $\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})$ is the coordinate vector of $\tilde Q_{\mathrm{sp}}\tilde\Pi_+$, the second is the coordinate vector of $\tilde Q_{\mathrm{sp}}\tilde\Pi_-$.
 
 A spinor of first chirality
 $$
@@ -730,7 +737,7 @@ $$
 $$
 whose first column is zero and whose second column is $\xi_-$. The order $(\vec\Upsilon_-,\tilde\Pi_-)$ is the eigenbasis of $S_-$ used above; it is the order in which the diagonal values are $(\lambda_+,\lambda_-)$.
 
-Multiplication by $\tilde Q$ acts on the first column by $M_2^Q(\tilde Q)$,
+Multiplication by $\tilde Q$ acts on the first column by $\mathsf M_2^{Q}(\tilde Q)$,
 $$
 \tilde Q\xi_+\longleftrightarrow
 \begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
@@ -748,7 +755,7 @@ $$
 $$
 This is the precise statement that the two spinor spaces are the two columns and that multiplication by $\tilde Q$ acts on both by the same diagonal matrix. A general element of $\mathbb{B}$ is not a spinor: its matrix has two nonzero columns, one in each spinor space.
 
-### What Depends on $\tilde Q$ and What Does Not
+## What Depends on $\tilde Q$ and What Does Not
 
 The eigenbasis data depend on $\tilde Q$ through its root. The comparison is collected in the table.
 
@@ -757,13 +764,13 @@ The eigenbasis data depend on $\tilde Q$ through its root. The comparison is col
 | Root $\vec\Xi$ and idempotents $\tilde\Pi_\pm$ | yes |
 | Corner lines $\mathbb{B}_{+-},\mathbb{B}_{-+}$ as subspaces | yes |
 | Left ideals $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ | yes |
-| Pair $(\vec\Upsilon_+,\vec\Upsilon_-)$ | up to the reciprocal $\mathbb{C}^{\times}$ |
+| Pair $(\vec\Upsilon_+,\vec\Upsilon_-)$ | yes, through the root; the residual scale is removed by the normalisation |
 | Diagonal values $(\lambda_+,\lambda_-)$ of $L_{\tilde Q}$ | yes |
 | Peirce coordinates of a general element $\tilde Q_{\mathrm{sp}}$ | yes |
 
 The eigenbasis is not the standard Peirce basis attached to the fixed root $i\vec e_z$. The two coincide, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is, when $Q_x=Q_y=0$. In that case $\vec\Xi=\pm i\vec e_z$, the pair is the standard pair up to the exchange of its two members, and the nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$, in one order or the other, up to the reciprocal rescaling.
 
-### Summary Block
+## The Eigenbasis Data
 
 Given $\tilde Q$ with $B^2\neq0$, the following data are attached to $\tilde Q$:
 $$
@@ -815,7 +822,7 @@ The eigenbasis of $L_{\tilde Q}$ has eigenvalues
 $$
 (\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$
-The $\lambda_+$-eigenspace of $L_{\tilde Q}$ is the right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$; the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$. The two left ideals $S_+,S_-$ are the eigenspaces of $R_{\tilde Q}$, with eigenvalues $\lambda_+,\lambda_-$ respectively. On each left ideal the restriction of $L_{\tilde Q}$ has the distinct eigenvalues $(\lambda_+,\lambda_-)$, so the eigenbasis of that restriction is unique up to scale.
+The $\lambda_+$-eigenspace of $L_{\tilde Q}$ is the right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$; the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$. The two left ideals $S_+,S_-$ are the eigenspaces of $R_{\tilde Q}$, with eigenvalues $\lambda_+,\lambda_-$ respectively. On each left ideal the restriction of $L_{\tilde Q}$ has the distinct eigenvalues $(\lambda_+,\lambda_-)$, so the eigenbasis of that restriction is unique up to two independent scales.
 
 **Spinors.**
 A spinor of first chirality is an element of $S_+$,
@@ -852,9 +859,9 @@ $$
 $$
 a general element has the matrix
 $$
-M_2^Q(P)=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
 \qquad
-M_2^Q(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+\mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
 The first column is $S_+$, the second is $S_-$, and multiplication by $\tilde Q$ acts on both by $\operatorname{diag}(\lambda_+,\lambda_-)$.
 
@@ -959,14 +966,14 @@ The four cells are exhaustive and disjoint. $\Sigma_{11}$ is the unique cell in 
 
 ## Consequences
 
-**Eigenbasis.** It exists, it is unique, and it is the genuine two-term spectral decomposition
+**Eigenbasis.** It exists. The genuine two-term spectral decomposition is
 
 $$
 \tilde Q=\lambda_+e_++\lambda_-e_-,\qquad
 e_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp}.
 $$
 
-Both eigenvalues are non-zero and distinct, both idempotents are non-trivial, and the decomposition is unique. This is the only sector in which all four of these hold at once.
+It is unique. The Peirce eigenbasis $(e_+,\vec\Upsilon_-,\vec\Upsilon_+,e_-)$ is unique with the normalisation fixed. Both eigenvalues are non-zero and distinct, and both idempotents are non-trivial. This is the only sector in which all of these hold at once.
 
 **Polar decomposition.** It exists and is finite: the modulus $\Rho=\sqrt{N(\tilde Q)}=\sqrt{\lambda_+\lambda_-}\neq0$, so the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Biquaternions* applies. The sector is the only one in which the polar word and the spectral decomposition are simultaneously available: in $\Sigma_{01}$ the polar word fails while the spectral decomposition survives, and in $\Sigma_{10}$ the spectral decomposition fails while the polar word survives.
 
@@ -1037,6 +1044,7 @@ with $\vec\Xi=-i\vec Q/B$. The eigenvalues weight the operator, not the element:
 | geometry | open dense, of full measure; complex dimension $4$ and real dimension $8$; connected; complement the hypersurface $NB^2=0$ |
 | elements | regular semisimple units; minimal polynomial $X^2-2Q_tX+N$, squarefree; centraliser $\mathbb{C}\oplus\mathbb{C}$ |
 | Peirce decomposition | exists, unique, both coefficients non-zero |
+| eigenbasis | normalised Peirce basis; unique with the normalisation fixed |
 | annihilators | both zero; left and right multiplication bijective |
 | inversion | closed: $\tilde Q^{-1}\in\Sigma_{11}$ |
 | multiplication | $\Sigma_{11}\cdot\Sigma_{11}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with both outcomes; not product-closed |
@@ -1055,17 +1063,18 @@ The sector is the generic sector. It is the set of units with distinct non-zero 
 | $\mathcal N=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathbb{B}^\times=\{N\neq0\}$ | the unit group |
-| $\lambda_\pm=Q_t\pm\beta$, $\beta^2=-B^2$ | the two eigenvalues |
-| $e_\pm$ | the spectral idempotents, unique |
+| $\lambda_\pm=Q_t\pm\beta$, $\beta=iB$ | the two eigenvalues |
+| $e_\pm=\tilde\Pi_\pm$ | the spectral idempotents, unique; the same pair in both notations |
 | $\Rho=\sqrt{N}$ | the modulus |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, both bijective on the sector |
 
 ## Further Reading
 
+- [Spectral Regularity and Construction of the Eigenbasis of a Biquaternion](spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction in full generality, the normalisation, the expansion of an arbitrary biquaternion and the spinor reading.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents.
 - [The N-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the unipotents and the scalar line.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the unit group.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the unit group.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal ideals.

@@ -154,7 +154,7 @@ $$
 
 which is the inverse of the algebra; the invertibility criterion is $\langle\tilde Q\rangle_{\natural}\neq0$.
 
-*Proof.* Dividing the quadratic identity by $\langle\tilde Q\rangle_{\natural}$ exhibits $(T(\tilde Q)e_t-\tilde Q)/\langle\tilde Q\rangle_{\natural}$ as a Jordan inverse, and $T(\tilde Q)e_t-\tilde Q=2Q_te_t-\tilde Q=\tilde Q^{\natural}$; the formula of the associative inverse is *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*.
+*Proof.* Dividing the quadratic identity by $\langle\tilde Q\rangle_{\natural}$ exhibits $(T(\tilde Q)e_t-\tilde Q)/\langle\tilde Q\rangle_{\natural}$ as a Jordan inverse, and $T(\tilde Q)e_t-\tilde Q=2Q_te_t-\tilde Q=\tilde Q^{\natural}$; the formula of the associative inverse is *N-Regularity and Degeneracy in the Biquaternion Algebra*.
 
 **Theorem (the quadratic representation).** For $U_{\tilde Q_1}\tilde Q_2=2(\tilde Q_1\bullet\tilde Q_2)\bullet\tilde Q_1-\tilde Q_1^{\bullet2}\bullet\tilde Q_2$,
 

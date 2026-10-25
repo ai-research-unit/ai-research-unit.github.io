@@ -42,7 +42,7 @@ by a form is the form.
 **Remark (an algebraic form).** The coefficient $\langle\cdot\rangle_{\natural}$ is a $\mathbb{C}$-bilinear form, symmetric,
 with values in $\mathbb{C}$; its values are complex and not real in general, as at $\tilde Q_1=e_t$,
 $\tilde Q_2=ie_t$, where $N=i$. The diagonal $\langle\cdot\rangle_{\natural}$ is the algebraic
-norm of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, and $\langle\cdot\rangle_{\natural}$ is multiplicative on the algebra. The reader must keep
+norm of *N-Regularity and Degeneracy in the Biquaternion Algebra*, and $\langle\cdot\rangle_{\natural}$ is multiplicative on the algebra. The reader must keep
 the two readings apart: the diagonal $\langle\tilde Q_1\rangle_{\natural}$ is multiplicative and central-valued, while the form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ is only bilinear.
 
 ## The Radical
@@ -90,14 +90,14 @@ product, $\{N=0\}\setminus\{0\}=\mathcal{Z}_{\tilde Q_1\tilde Q_2}$; the zero-di
 (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The
 cone is the affine cone over the quadric $\{[Q_t:Q_x:Q_y:Q_z]:\sum_\mu Q_\mu^2=0\}$ of
 $\mathbb{P}^3(\mathbb{C})$, of complex dimension $2$ in the projective space and $3$ in the algebra, and it is
-the isotropic cone of the form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ and of the norm $\langle\tilde Q_1\rangle_{\natural}$ alike (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *Norm
+the isotropic cone of the form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ and of the norm $\langle\tilde Q_1\rangle_{\natural}$ alike (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *Norm
 and Invertibility in the Symmetric Quaternionic Algebra*). It splits into the **pure family**, the elements with $Q_t=0$, a cone of complex
 dimension $2$, and the **non-pure family**, the elements with $Q_t\ne0$, of complex dimension $3$; the two are
-disjoint and their union is the cone (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*).
+disjoint and their union is the cone (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*).
 
 *Proof.* $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ by the square formula of *Introduction to the Symmetric
 Quaternionic Algebra of Biquaternions*, and this vanishes exactly when $\langle\tilde Q\rangle_{\natural}=0$. The identification of
-the set $N=0$ with the zero divisors and its description as a quadric cone are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+the set $N=0$ with the zero divisors and its description as a quadric cone are *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 **Example (the standard isotropic elements).** For $\tilde Q=e_t+i\vec e_x$ the norm is $N=1+i^2=0$, so the
 element is isotropic; it lies on the Hermitian subspace $\mathbb{M}_+$ and is a non-pure zero divisor. For
@@ -221,7 +221,7 @@ contain no nonzero isotropic element.
 - [Norm and Invertibility in the Symmetric Quaternionic Algebra](norm-and-invertibility-in-the-symmetric-quaternionic-algebra.html) and [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the diagonal, the non-degenerate form and the maximal zero-divisor set of the block.
 - [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) and [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two idempotents and for the square-zero elements.
 - [The Symmetrised Quaternionic Product and the Hermitian Subspace](the-symmetrised-quaternionic-product-and-the-hermitian-subspace.html), for the centrality and the coefficient in full.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) and [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm, its polarisation and the isotropic cone.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) and [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm, its polarisation and the isotropic cone.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$.
 - [Remarkable Subspaces under the Symmetric Quaternionic Algebra](remarkable-subspaces-under-the-symmetric-quaternionic-algebra.html), for the isotropic elements on each subspace.
 - [The Multiplication Operators of the Symmetric Quaternionic Algebra](the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html), for the operators $L^{\star}_{\tilde Q_4}$ in full.

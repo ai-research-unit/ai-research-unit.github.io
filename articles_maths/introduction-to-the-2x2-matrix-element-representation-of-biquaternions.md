@@ -199,7 +199,7 @@ $$
 Q_t=0\iff v^{\mathsf T}u=0 .
 $$
 
-The trace-free null elements are the pure stratum of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, and the remaining ones are the non-pure stratum.
+The trace-free null elements are the pure stratum of *N-Regularity and Degeneracy in the Biquaternion Algebra*, and the remaining ones are the non-pure stratum.
 
 **Corollary (the square).** For $\mathsf{M}_2(\tilde{Q})=uv^{\mathsf T}$,
 

@@ -105,7 +105,7 @@ $\tilde Q_1$ are
 case the operator is invertible and the annihilator is $\{0\}$. When $C(\tilde Q_1)=0$ the
 determinant vanishes; the multiplication by the nonzero $\tilde Q_1^{\natural}$ in the plain algebra
 is then of rank two, because the plain algebra is the matrix algebra $M_2(\mathbb{C})$ and a
-nonzero element of the cone is a matrix of rank one (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*),
+nonzero element of the cone is a matrix of rank one (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*),
 whence the kernel is of complex dimension two. The origin gives the zero operator.
 
 ## The Annihilator of an Element
@@ -195,5 +195,5 @@ one of the three with both properties.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the operation, its table and its anti-automorphism.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), above this article in this category, for the criterion, the two families and the comparison with the other general products.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain algebra, the cone and the rank-one matrix reading.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain algebra, the cone and the rank-one matrix reading.
 - [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), the block whose annihilator is a hyperplane for every nonzero element.

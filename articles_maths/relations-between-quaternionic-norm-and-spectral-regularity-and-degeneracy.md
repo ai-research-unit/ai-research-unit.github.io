@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra carries two quadratic conditions on one element. The **quaternionic norm** $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-units, and its zero locus is the **null cone** $\mathcal{N}$. The **square of the vector part** $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the **spectral-degenerate cone** $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; this article compares them.
+The biquaternion algebra carries two quadratic conditions on one element. The **quaternionic norm** $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-units, and its zero locus is the **null cone** $\mathcal{N}$. The **square of the vector part** $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the **spectral-degenerate cone** $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in *N-Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; this article compares them.
 
 The comparison is organised by the pair of predicates $(N\neq0,\ B^2\neq0)$. The pair cuts $\mathbb{B}$ into four **sectors**, and the same four sectors are the four degeneration patterns of the characteristic polynomial. Each sector is treated in its own article: *The N-Regular, Spectrally Regular Sector*, *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The index $i$ in $\Sigma_{ij}$ is the norm and the index $j$ the spectrum; the four articles are ordered $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$, the units first and the null cone second.
 
@@ -316,7 +316,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 
 ## Further Reading
 
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the characteristic polynomial, the spectral-degenerate cone, the vertex and its complement, the spectral decomposition and the eigenbasis.
 - [The N-Regular, Spectrally Regular Sector](the-quaternionic-norm-regular-spectrally-regular-sector.html), for $\Sigma_{11}$, the complement of the union of the two cones.
 - [The N-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the scalar line and the Jordan part.

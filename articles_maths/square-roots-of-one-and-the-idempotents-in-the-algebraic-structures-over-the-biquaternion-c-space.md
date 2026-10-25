@@ -212,7 +212,7 @@ Zero for the two families of zero divisors, $e_t$ for the unit and the displaced
 
 **Theorem (the units and the zero divisors among the idempotents).** Among the idempotents of the structures, the units of the algebra are $e_t$ and the displaced family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_t+\tilde\Xi)$ beyond the trivial pair, the Hermitian ones included, and no other idempotent; and the origin is neither a unit nor a zero divisor.
 
-*Proof.* The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*).
+*Proof.* The values of the central square are the previous theorem, and the criterion of invertibility is that the central square not vanish (*N-Regularity and Degeneracy in the Biquaternion Algebra*).
 
 The theorem is the sharpest separation of the sets. The trivial pair carries the unit $e_t$, so the smallest set, that of the natural product, has no zero divisor at all. The plain product and the general plain sesquilinear product have nontrivial idempotents, and every one of them is a zero divisor; the non-trivial plain family is a part of the zero-divisor cone that no other structure's idempotents reach. The displaced family is the only family of idempotents whose members are units, and it is a family of the general quaternionic sesquilinear product alone.
 
@@ -326,6 +326,6 @@ The idempotents are the roots of $+1$ of the plain product read through the halv
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the tabulation of the four root problems and the four idempotent sets.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the root set of $+1$ of the general plain sesquilinear product.
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html) and [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the two squares of the sesquilinear families.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion $C\neq0$ with which the idempotents are classified as units or zero divisors.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion $C\neq0$ with which the idempotents are classified as units or zero divisors.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the decomposition the plain idempotents carry and the associativity it needs.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) and [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces in which the families are placed.

@@ -307,13 +307,13 @@ B-Q_z&Q_x-iQ_y\\
 -Q_x-iQ_y&B-Q_z
 \end{pmatrix},
 \qquad
-\det\mathsf{C}_Q=-2Q_z(B-Q_z)\neq0.
+\det\mathsf{C}_Q=2B(B-Q_z)\neq0.
 $$
 The first column is the first column of $2B\rho_+$, the second is the second column of $2B\rho_-$, and the two are eigenvectors of $\mathsf{M}_2(\tilde Q)$ with eigenvalues $\lambda_+$ and $\lambda_-$ respectively. Therefore
 $$
 \mathsf{C}_Q^{-1}\mathsf{M}_2(\tilde Q)\mathsf{C}_Q=\operatorname{diag}(\lambda_+,\lambda_-).
 $$
-When $Q_z=0$ or $B=Q_z$ the first formula is singular: at $B=Q_z$ one of the two chosen columns of the spectral projectors vanishes, and at $Q_z=0$ the two chosen columns are proportional. The other pair of nonzero columns gives
+When $B=Q_z$ the first formula is singular: the two chosen columns of the spectral projectors both vanish. The other pair of nonzero columns gives
 $$
 \mathsf{C}_Q'=
 \begin{pmatrix}
@@ -323,9 +323,9 @@ B+Q_z&Q_x+iQ_y
 \qquad
 \det\mathsf{C}_Q'=-2B(B+Q_z)\neq0,
 $$
-with columns the second column of $2B\rho_+$ and the first column of $2B\rho_-$. It satisfies the same diagonalisation. Since $B\neq0$, the determinants $-2Q_z(B-Q_z)$ and $-2B(B+Q_z)$ cannot both vanish, so one of the two formulas applies. When $Q_x=Q_y=0$, the sign $B=-Q_z$ is the first case, $\mathsf{C}_Q=-2Q_z\,\mathrm I_2$, and the sign $B=Q_z$ is the second, $\mathsf{C}_Q'=2Q_z\begin{pmatrix}0&1\\1&0\end{pmatrix}$; both are invertible because $Q_z\neq0$ when $B\neq0$. The scalar case $B=0$ is excluded, as in the eigenbasis article. The matrix $\mathsf{C}_Q$ is not the most general diagonaliser: it is the one whose columns are the two columns of the spectral projectors.
+with columns the second column of $2B\rho_+$ and the first column of $2B\rho_-$. It satisfies the same diagonalisation. Since $B\neq0$, the determinants $2B(B-Q_z)$ and $-2B(B+Q_z)$ cannot both vanish, so one of the two formulas applies. When $Q_x=Q_y=0$, the sign $B=-Q_z$ is the first case, $\mathsf{C}_Q=-2Q_z\,\mathrm I_2$, and the sign $B=Q_z$ is the second, $\mathsf{C}_Q'=2Q_z\begin{pmatrix}0&1\\1&0\end{pmatrix}$; both are invertible because $Q_z\neq0$ when $B\neq0$. The scalar case $B=0$ is excluded, as in the eigenbasis article. The matrix $\mathsf{C}_Q$ is not the most general diagonaliser: it is the one whose columns are the two columns of the spectral projectors.
 
-**The inverse and the conjugation.** For the first matrix, with $D=-2Q_z(B-Q_z)$,
+**The inverse and the conjugation.** For the first matrix, with $D=2B(B-Q_z)$,
 $$
 \mathsf{C}_Q^{-1}=\frac{1}{D}
 \begin{pmatrix}

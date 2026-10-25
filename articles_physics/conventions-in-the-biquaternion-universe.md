@@ -299,7 +299,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms and the Unitary Convention* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*.
+used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms and the Unitary Convention* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*.
 
 Each of the four marks has a fixed space, and each of these is one of the **remarkable subspaces** of the algebra. Which involution defines which subspace, and which of them are anti-fixed, is recorded with the subspaces themselves, in *The Remarkable Subspaces* below.
 

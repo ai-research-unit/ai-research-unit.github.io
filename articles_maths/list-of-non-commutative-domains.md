@@ -79,7 +79,7 @@ A division ring is a domain in which every nonzero element is a unit; the class 
 | Ring | The zero divisor that excludes it | Introduced in |
 |---|---|---|
 | $M_n(\mathbb{R})$, $n \geq 2$ | the matrix units $E_{11}E_{22} = 0$ | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | nilpotent elements; not a division ring | *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
+| $\mathbb{B}$, the biquaternions | nilpotent elements; not a division ring | *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
 | $k[C_2]$ over a field of characteristic $\neq 2$ | $k[C_2] \cong k \times k$ | *Examples of Rings and Fields* |
 | $\mathbb{D}$, the split-complex numbers | $\Pi_1\Pi_2 = 0$; commutative, so an integral-domain failure | *Split-Complex Algebra* |

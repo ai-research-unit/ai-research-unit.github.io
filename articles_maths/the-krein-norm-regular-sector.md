@@ -241,7 +241,7 @@ The sector is the metric interior and exterior of the null set, taken together. 
 - [The Fundamental Symmetry of the Form](the-fundamental-symmetry-of-the-form.html), for the fundamental symmetry and the bridge.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, their topology and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its action.
-- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the unit group and the zero-divisor cone.
+- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the unit group and the zero-divisor cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the sandwich, the rank of left multiplication and the polar decomposition.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restriction of the form to the six remarkable subspaces.

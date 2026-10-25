@@ -108,7 +108,7 @@ is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $
 
 ### The Algebra's Minimal One-Sided Ideals
 
-**Recall.** The minimal left algebra ideals of $\mathbb{B}$ are the spaces $\mathbb{B}\tilde\Pi$ over the primitive idempotents $\tilde\Pi$, equivalently the spaces $\mathbb{B}\tilde Q_1$ over the nonzero elements $\tilde Q_1$ whose square vanishes, by *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals* and *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+**Recall.** The minimal left algebra ideals of $\mathbb{B}$ are the spaces $\mathbb{B}\tilde\Pi$ over the primitive idempotents $\tilde\Pi$, equivalently the spaces $\mathbb{B}\tilde Q_1$ over the nonzero elements $\tilde Q_1$ whose square vanishes, by *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals* and *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 **Proposition.** A minimal left algebra ideal of $\mathbb{B}$ is not a left $\star$-ideal.
 

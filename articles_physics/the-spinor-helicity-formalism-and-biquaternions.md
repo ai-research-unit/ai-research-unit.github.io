@@ -42,7 +42,7 @@ satisfying $\mathsf{M}_2(\tilde Q_1\tilde Q_2) = \mathsf{M}_2(\tilde Q_1)\mathsf
 
 ## The Massless Momentum as a Zero Divisor
 
-The zero divisors of $\mathbb{B}$ are characterized by the biquaternion norm: a nonzero biquaternion $\tilde Q$ is a zero divisor if and only if it is $N$-degenerate, $\langle\tilde Q\rangle_{\natural} = 0$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). Equivalently, because the biquaternion norm is the determinant of the matrix realization, the nonzero zero divisors are exactly the rank-one elements of $M_2(\mathbb{C})$.
+The zero divisors of $\mathbb{B}$ are characterized by the biquaternion norm: a nonzero biquaternion $\tilde Q$ is a zero divisor if and only if it is $N$-degenerate, $\langle\tilde Q\rangle_{\natural} = 0$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). Equivalently, because the biquaternion norm is the determinant of the matrix realization, the nonzero zero divisors are exactly the rank-one elements of $M_2(\mathbb{C})$.
 
 The four-momentum of a particle of mass $m$ is
 
@@ -62,7 +62,7 @@ Two consequences follow immediately.
 
 **A massive momentum is $N$-regular.** For $m \neq 0$ one has $\langle\tilde P\rangle_{\natural} = -m^2c^2 \neq 0$, so $\tilde P$ is $N$-regular, hence invertible, and is *not* a zero divisor. This is the structural asymmetry between the two cases, and it will reappear in the section on the singular massless limit: the rank of $\mathsf{M}_2(\tilde P)$ is one at $m=0$ and two at $m\neq0$.
 
-The zero divisor here is of the **non-pure** kind: its scalar part $iE/c$ does not vanish (for $E\neq0$). The general non-pure zero divisor satisfies the square relation $\tilde Q^2 = 2Q_t\tilde Q$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*), so the massless momentum obeys
+The zero divisor here is of the **non-pure** kind: its scalar part $iE/c$ does not vanish (for $E\neq0$). The general non-pure zero divisor satisfies the square relation $\tilde Q^2 = 2Q_t\tilde Q$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*), so the massless momentum obeys
 
 $$
 \tilde P^2 \;=\; 2\,\frac{iE}{c}\,\tilde P .
@@ -315,7 +315,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 - Zvi Bern, Lance J. Dixon, and David A. Kosower, "On-shell methods in perturbative QCD," *Annals of Physics* **322** (2007) 1587–1634, for the use of helicity amplitudes in practical calculations.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1: *Two-Spinor Calculus and Relativistic Fields* (Cambridge University Press, 1984), for the two-component spinor calculus and the reality condition on the momentum bispinor.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge University Press, 1995), for the little group of a massless particle and helicity as the weight of its compact subgroup.
-- Companion articles [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion $\langle\tilde Q\rangle_{\natural}=0$ and the pure and non-pure families, [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), §*The Rank-One Elements and the Outer Product*, for the rank-one statement and the spinor factorisation, and [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the Segre quadric and the two rulings.
+- Companion articles [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion $\langle\tilde Q\rangle_{\natural}=0$ and the pure and non-pure families, [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), §*The Rank-One Elements and the Outer Product*, for the rank-one statement and the spinor factorisation, and [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the Segre quadric and the two rulings.
 - Companion article [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the module $S$, the conjugate module, the symplectic form $\varepsilon$, and the Lorentz action.
 - Companion article [Exercise: Chirality and the Weyl Spinors](exercise-chirality-and-the-weyl-spinors.html), for the chirality projectors, the conjugate defining representation in the $\varepsilon$ convention.
 - Companion article [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the $(m,n)$ classification containing $(\tfrac12,0)$ and $(0,\tfrac12)$.

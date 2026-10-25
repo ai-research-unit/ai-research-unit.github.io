@@ -49,7 +49,7 @@ $$
 = \frac{\omega^2}{c^2}\left(i^2 - \vec u_k\vec u_k\right) = \frac{\omega^2}{c^2}\left(-1 + 1\right) = 0,
 $$
 
-because $\vec u_k\vec u_k = -e_t$. The null element is a zero divisor of $\mathbb{B}$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
+because $\vec u_k\vec u_k = -e_t$. The null element is a zero divisor of $\mathbb{B}$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
 
 ## The Null Flag and the Flagpole
 

@@ -1,4 +1,4 @@
-# __Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra__
+# __N-Regularity and Degeneracy in the Biquaternion Algebra__
 
 ## Introduction
 

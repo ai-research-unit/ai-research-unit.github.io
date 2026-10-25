@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not a division algebra. It contains nonzero elements whose biquaternion norm vanishes, and those elements annihilate other nonzero elements: they are the zero divisors. The algebraic theory of the zero divisor set — the criterion, the pure/non-pure dichotomy, the nilpotents and the idempotents, the distribution across the four real subspaces — is the subject of the mathematics articles *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *Split-Quaternion Zero Divisors*, and of the structural material of the generalities subcategory. This article does not re-derive any of it. It asks the physical question: **where does the zero divisor set sit in a non-relativistic spin-0 problem, and what does it bound?**
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not a division algebra. It contains nonzero elements whose biquaternion norm vanishes, and those elements annihilate other nonzero elements: they are the zero divisors. The algebraic theory of the zero divisor set — the criterion, the pure/non-pure dichotomy, the nilpotents and the idempotents, the distribution across the four real subspaces — is the subject of the mathematics articles *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *Split-Quaternion Zero Divisors*, and of the structural material of the generalities subcategory. This article does not re-derive any of it. It asks the physical question: **where does the zero divisor set sit in a non-relativistic spin-0 problem, and what does it bound?**
 
 The answer has three parts, and they are three images of one algebraic object under the three maps that the framework uses: the momentum-space image, the configuration-space image, and the state-space image.
 
@@ -20,7 +20,7 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 
 ### Criterion and classification
 
-The algebraic input is the following, due to the mathematics article *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and stated here without proof. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if its biquaternion norm vanishes,
+The algebraic input is the following, due to the mathematics article *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and stated here without proof. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if its biquaternion norm vanishes,
 
 $$
 \tilde Q\ne0,
