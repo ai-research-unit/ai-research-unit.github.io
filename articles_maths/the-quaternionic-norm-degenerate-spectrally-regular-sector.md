@@ -253,7 +253,7 @@ $$
 
 and they are proportional only if $Q_t=0$. On $\Sigma_{01}$ one has $Q_t\neq0$, so the gradients are independent and the intersection $\mathcal{N}\cap\mathcal S$ is nowhere dense in $\mathcal{N}$ there. The tangency of the two cones is a phenomenon of the boundary $\Sigma_{00}$, where both gradients become $2(0,\vec Q)$.
 
-**Independence witness.** Every element of the sector is a **non-unit** with **distinct eigenvalues**: $N=0$, so it is a zero divisor of the plain product, while $B^2=-Q_t^2\neq0$, so its two eigenvalues $0$ and $2Q_t$ are separated. The standard example is
+**Independence witness.** Every element of the sector is **$N$-degenerate** and a **non-unit**, with **distinct eigenvalues**: $N=0$, so it is a zero divisor of the plain product, while $B^2=-Q_t^2\neq0$, so its two eigenvalues $0$ and $2Q_t$ are separated. The standard example is
 
 $$
 \tilde Q=e_t+i\vec e_x,\qquad N=0,\qquad B^2=-1,\qquad \tilde Q^2=2\tilde Q,
@@ -266,8 +266,8 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 | sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct and non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
-| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $c\neq0$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal{N}$; all three outcomes |
-| **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$ | $\{Q_t\}$ | fails off the scalar line, one term on it | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
+| **$N$-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $c\neq0$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal{N}$; all three outcomes |
+| **$N$-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$ | $\{Q_t\}$ | fails off the scalar line, one term on it | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $N=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
 **The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.
@@ -360,7 +360,7 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 | symbol | meaning |
 |---|---|
 | $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
-| $\Sigma_{01}$ | the norm-degenerate, spectrally regular sector, this article |
+| $\Sigma_{01}$ | the $N$-degenerate, spectrally regular sector, this article |
 | $\mathcal{N}=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathcal{N}_{\mathrm{np}}=\Sigma_{01}$ | the non-pure stratum of the null cone |

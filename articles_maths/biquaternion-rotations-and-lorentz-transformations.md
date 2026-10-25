@@ -56,11 +56,11 @@ The sandwich preserves the rank of the matrix image $\mathsf{M}_2(\tilde Q_3)$ (
 
 | invariant | value | meaning |
 |---|---|---|
-| $\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=2$ | $\langle\tilde Q_3\rangle_{\natural}\neq0$ | $\tilde Q_3$ is a unit |
-| $\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=1$ | $\langle\tilde Q_3\rangle_{\natural}=0$, $\tilde Q_3\neq0$ | $\tilde Q_3$ is a zero divisor of rank one |
-| $\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=0$ | $\tilde Q_3=0$ | the origin |
+| $\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=2$ | $\langle\tilde Q_3\rangle_{\natural}\neq0$ | $\tilde Q_3$ is $N$-regular, hence a unit |
+| $\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=1$ | $\langle\tilde Q_3\rangle_{\natural}=0$, $\tilde Q_3\neq0$ | $\tilde Q_3$ is $N$-degenerate, a zero divisor of rank one |
+| $\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=0$ | $\tilde Q_3=0$ | the origin, $N$-degenerate |
 
-Off the unit-norm slice every orbit is rescaled by the same positive factor, so it is enough to classify the orbits on the slice. There the two sectors carry the classification the four-vector calculus uses: on $\mathbb{M}_+$ the Hermitian forms are classified by their signature, and on $\mathbb{M}_-$ the four-vectors split into the timelike, the null and the spacelike classes, with the proper orthochronous component, so that the two time directions are not mixed. The non-zero zero divisors are the null cone, and on the slice they form a single orbit, which is the sense in which the null cone is one geometric object rather than a union of the cones of individual four-vectors.
+Off the unit-norm slice every orbit is rescaled by the same positive factor, so it is enough to classify the orbits on the slice. There the two sectors carry the classification the four-vector calculus uses: on $\mathbb{M}_+$ the Hermitian forms are classified by their signature, and on $\mathbb{M}_-$ the four-vectors split into the timelike, the null and the spacelike classes, with the proper orthochronous component, so that the two time directions are not mixed. The non-zero $N$-degenerate elements are the null cone, and on the slice they form a single orbit, which is the sense in which the null cone is one geometric object rather than a union of the cones of individual four-vectors.
 
 The infinitesimal form contains the two symmetries of the algebra in one expression: along the anti-Hermitian directions the operator is the commutator, the infinitesimal rotation, and along the Hermitian ones the anticommutator, the infinitesimal boost. The formula and the split into the two summands of the Cartan decomposition are *The Polar Decomposition and Remarkable Subspaces*, §*The Infinitesimal Split*; the adjoint maps are in *Symmetric and Antisymmetric Decomposition of the Four General Products* and the exponential in *Biquaternion Lie Group and Exponential Structure*.
 
@@ -100,7 +100,7 @@ on the algebra. The one-sided action is its diagonal restriction, and the Lorent
 
 ## The Group of Units
 
-The group of units is $\mathbb{B}^{\times} = \{\tilde{Q} : \langle\tilde{Q}\rangle_{\natural} \neq 0\}$, which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group of invertible matrices, since the biquaternion norm is the determinant (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*):
+The group of units is the $N$-regular set, $\mathbb{B}^{\times} = \{\tilde{Q} : \langle\tilde{Q}\rangle_{\natural} \neq 0\}$, which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group of invertible matrices, since the biquaternion norm is the determinant (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*):
 
 $$
 \mathbb{B}^{\times} \cong GL_2(\mathbb{C}),

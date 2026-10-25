@@ -203,7 +203,7 @@ $$
 \tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u) = e_t, \qquad \tilde\Pi_1(\vec u)\tilde\Pi_2(\vec u) = 0 .
 $$
 
-**Zero divisors.** On the boundary $\langle\tilde{Ϛ}\rangle_{\natural} = 0$ with $\tilde{Ϛ} \neq 0$, so $\tilde{Ϛ}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\vec r| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,
+**Zero divisors.** On the boundary $\langle\tilde{Ϛ}\rangle_{\natural} = 0$ with $\tilde{Ϛ} \neq 0$, so it is $N$-degenerate, a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\vec r| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,
 
 $$
 \boxed{\;\text{pure state} \quad\Longleftrightarrow\quad \text{idempotent} \quad\Longleftrightarrow\quad \text{zero divisor} \quad\Longleftrightarrow\quad \langle\tilde{Ϛ}\rangle_{\natural} = 0\;}.

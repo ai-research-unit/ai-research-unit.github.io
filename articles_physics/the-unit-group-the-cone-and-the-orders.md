@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the **group of units** $\mathbb{B}^{\times}$; their complement is the **zero-divisor cone** $\mathcal{N}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.
+The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the **group of units** $\mathbb{B}^{\times}$, the **$N$-regular set**; their complement is the **$N$-degenerate set**, the **zero-divisor cone** $\mathcal{N}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.
 
 The article reads three objects and their topology: the group, its boundary and the orders. Its thesis is that invertibility is the algebraic form of reversibility, that the cone is the wall at which a multiplication stops being reversible, and that the orders are the discrete skeletons on which the continuous group is replaced by a finite one. It proves nothing; the theorems are in the mathematics articles of the source table.
 
@@ -42,9 +42,9 @@ and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The 
 
 | condition on $\langle\tilde Q\rangle_{\natural}$ | condition on $\tilde Q$ | class |
 | --- | --- | --- |
-| $\neq0$ | automatically $\neq0$ | a unit; an element of $\mathbb{B}^{\times}$ |
-| $=0$ | $\tilde Q=0$ | the origin; neither a unit nor a zero divisor |
-| $=0$ | $\tilde Q\neq0$ | a zero divisor; a point of $\mathcal{N}\setminus\{0\}$ |
+| $\neq0$ | automatically $\neq0$ | $N$-regular; a unit, an element of $\mathbb{B}^{\times}$ |
+| $=0$ | $\tilde Q=0$ | $N$-degenerate; the origin, neither a unit nor a zero divisor |
+| $=0$ | $\tilde Q\neq0$ | $N$-degenerate; a zero divisor, a point of $\mathcal{N}\setminus\{0\}$ |
 
 ### The Reversible Operation
 

@@ -3,21 +3,21 @@
 
 ## Introduction
 
-The group of units $\mathbb{B}^\times$ of the biquaternion algebra is the set of invertible elements, an open subset of the algebra, hence a manifold, and it carries both a group structure and the topology of that manifold. This article reads the two together: the units as the complement of the null cone, the centre, the determinant and the matrix model of the general linear group, the compact subgroups, and the homotopy type of the group. The polar decomposition, the retractions onto the compact subgroups and the homotopy groups that follow are proved in *The Unitary Group of the Biquaternion Algebra*; they are quoted here for the algebraic group, and not reproved.
+The group of units $\mathbb{B}^\times$ of the biquaternion algebra is the $N$-regular set, the set of invertible elements, an open subset of the algebra, hence a manifold, and it carries both a group structure and the topology of that manifold. This article reads the two together: the units as the complement of the null cone, the centre, the determinant and the matrix model of the general linear group, the compact subgroups, and the homotopy type of the group. The polar decomposition, the retractions onto the compact subgroups and the homotopy groups that follow are proved in *The Unitary Group of the Biquaternion Algebra*; they are quoted here for the algebraic group, and not reproved.
 
 The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is *Symmetric and Antisymmetric Decomposition of the Four General Products* in Algebra, the Lie-group theory and the exponential are *Biquaternion Lie Group and Exponential Structure* in Analysis, and this article owns the algebraic group of units together with the topological statements that can be read from the group alone. The topology of the group is *The Unitary Group of the Biquaternion Algebra*; the Euclidean ambient space is *The Euclidean Topology of the Biquaternion Algebra*; the zero divisors and their cone are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the invertibility criterion and the distribution of the units over the remarkable subspaces are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*.
 
 ## The Group of Units
 
-The **group of units** of $\mathbb{B}$ is the set of invertible elements,
+The **group of units** of $\mathbb{B}$, equivalently the **$N$-regular set**, is the set of invertible elements,
 
 $$
-\mathbb{B}^\times = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}\ \text{is invertible}\},
+\mathbb{B}^\times = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}\ \text{is invertible}\} = \{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})\neq0\},
 $$
 
 a group under multiplication with identity $e_t$, the inverse of a unit being a rational function of its coefficients (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Criterion*).
 
-**Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements off the null cone, so the elements that are not zero divisors are the units together with the origin, and the cone is exactly the complement of the group.
+**Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the $N$-regular elements, so the $N$-degenerate elements are the null cone, the origin together with the zero divisors, and the cone is exactly the complement of the group.
 
 **Proposition (the units are open and dense).** The group $\mathbb{B}^\times$ is the complement of the **null cone** $\mathcal{N}$ of the norm, the set of non-units, so it is open, the cone being a zero set of a polynomial, and dense, the cone being a proper closed subset of the algebra.
 
@@ -83,7 +83,7 @@ The subgroups and the real forms of the algebra are *Biquaternion Lie Group and 
 
 **Two spheres, and only one of them is a group.** The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine sphere $S^7$ but is not a group, since that norm is not multiplicative and the sphere contains zero divisors (*The Euclidean Topology of the Biquaternion Algebra*, §*The Euclidean Unit Sphere*). The sphere that carries a group structure is $S^3$, the compact subgroup of the determinant-one group, and it is not the Euclidean one.
 
-**The units on the remarkable subspaces.** The units inside a remarkable subspace are the elements of that subspace that lie off the null cone, so the non-zero-divisors of the subspace are its units together with the origin. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_t$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the null cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*, and is not repeated here.
+**The units on the remarkable subspaces.** The units inside a remarkable subspace are the $N$-regular elements of that subspace, the elements that lie off its null cone; the $N$-degenerate elements of the subspace are its origin together with its zero divisors. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_t$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the null cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*, and is not repeated here.
 
 ## The Topology of the Group
 
@@ -134,13 +134,13 @@ of degree one; the class of the central circle $Ae_t$ with $|A|=1$ is twice a ge
 
 **A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{M}_+$ are the complement in $\mathbb{M}_+$ of its null cone.
 
-**A non-unit.** For $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=(\vec e_x+i\vec e_y)^{2}=0$, so the element is a zero divisor, lies on the null cone and is not a unit; it is therefore an element of none of the three groups above.
+**A non-unit.** For $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=(\vec e_x+i\vec e_y)^{2}=0$, so the element is $N$-degenerate, a zero divisor on the null cone, and is not a unit; it is therefore an element of none of the three groups above.
 
 **A generator of the fundamental group.** For $\tilde Q(t)=\tfrac{1+\exp(it)}{2}e_t+\tfrac{1-\exp(it)}{2i}\vec e_z$ the determinant is $\det\mathsf{M}_2(\tilde Q(t))=\exp(it)$, so the loop closes at $t=2\pi$ and runs once around the omitted origin of $\mathbb{C}^\times$; it generates $\pi_1(\mathbb{B}^\times)\cong\mathbb{Z}$. The central circle $Ae_t$ with $|A|=1$ has determinant $A^{2}$ and is therefore twice a generator, not a generator itself.
 
 ## Summary
 
-The group of units $\mathbb{B}^\times$ is the complement of the null cone in $\mathbb{B}$, the cone of the zero divisors: it is open and dense, connected and non-compact, of real dimension $8$, with centre $\mathbb{C}^\times e_t\cong\mathbb{C}^\times$ and with the matrix model $\mathbb{B}^\times\cong GL_2(\mathbb{C})$. The determinant is a surjective homomorphism onto $\mathbb{C}^\times$, whose kernel is the determinant-one group $\mathbb{B}^\times_1$, a closed connected subgroup of real dimension $6$, isomorphic to $SL_2(\mathbb{C})$; among its subgroups are the unit quaternions $S^3$ and the centre $\{\pm e_t\}$, and the centre circle $\mathrm{U}(1)e_t$ lies in $\mathbb{B}^\times$ and not in $\mathbb{B}^\times_1$. The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine $S^7$ but not a group, and the sphere that carries a group structure is $S^3$. The topology of the group – the polar decomposition, the retractions onto $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and onto $S^3$, the homotopy groups, the generators and the universal cover $\mathbb{R}\times S^3$ – is proved in *The Unitary Group of the Biquaternion Algebra*; this article owns the algebraic group of units, its determinant-one subgroup and the determinant sequence.
+The group of units $\mathbb{B}^\times$ is the $N$-regular set, the complement of the $N$-degenerate null cone: it is open and dense, connected and non-compact, of real dimension $8$, with centre $\mathbb{C}^\times e_t\cong\mathbb{C}^\times$ and with the matrix model $\mathbb{B}^\times\cong GL_2(\mathbb{C})$. The determinant is a surjective homomorphism onto $\mathbb{C}^\times$, whose kernel is the determinant-one group $\mathbb{B}^\times_1$, a closed connected subgroup of real dimension $6$, isomorphic to $SL_2(\mathbb{C})$; among its subgroups are the unit quaternions $S^3$ and the centre $\{\pm e_t\}$, and the centre circle $\mathrm{U}(1)e_t$ lies in $\mathbb{B}^\times$ and not in $\mathbb{B}^\times_1$. The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine $S^7$ but not a group, and the sphere that carries a group structure is $S^3$. The topology of the group – the polar decomposition, the retractions onto $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and onto $S^3$, the homotopy groups, the generators and the universal cover $\mathbb{R}\times S^3$ – is proved in *The Unitary Group of the Biquaternion Algebra*; this article owns the algebraic group of units, its determinant-one subgroup and the determinant sequence.
 
 ## Summary of Notation
 

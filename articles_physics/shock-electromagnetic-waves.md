@@ -102,7 +102,7 @@ $$
 
 So a discontinuity cannot propagate on a non-characteristic surface; the field must be continuous across it.
 
-**Consequence for a characteristic surface.** If the surface is **characteristic** (the light cone, $\tilde U_{\mathrm n}\tilde U_{\mathrm n}^{\natural} = 0$), then $\tilde U_{\mathrm n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.
+**Consequence for a characteristic surface.** If the surface is **characteristic** (the light cone, $\tilde U_{\mathrm n}\tilde U_{\mathrm n}^{\natural} = 0$), then $\tilde U_{\mathrm n}$ is $N$-degenerate, a zero divisor, and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.
 
 **Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ in a homogeneous medium.
 

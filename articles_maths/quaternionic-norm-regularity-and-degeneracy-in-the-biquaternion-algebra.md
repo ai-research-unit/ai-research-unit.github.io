@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion algebra carries one multiplicative norm, the quaternionic norm, the diagonal of the general quaternionic bilinear form. It alone decides invertibility. This article defines it, proves its multiplicative law, and separates the elements of $\mathbb{B}$ into the two cases of its value: the regular case of non-zero norm, whose elements are the units of the algebra and form a group, and the degeneracy case of zero norm, the null cone. This article is the study of this one norm and of its two cases.
+The biquaternion algebra carries one multiplicative norm, the quaternionic norm, the diagonal of the general quaternionic bilinear form. It alone decides invertibility. This article defines it, proves its multiplicative law, and separates the elements of $\mathbb{B}$ into the two cases of its value: the **$N$-regular** case of non-zero norm, whose elements are the units of the algebra and form a group, and the **$N$-degenerate** case of zero norm, the null cone. This article is the study of this one norm and of its two cases.
 
-**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde P\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. The product $\tilde P^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §*The Group of Units*, because only the plain product has a group of units.
+**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde P\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. The letter $N$ names the norm; a biquaternion is **$N$-regular** when $N(\tilde Q)\neq0$ and **$N$-degenerate** when $N(\tilde Q)=0$, the two terms fixed in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*. The product $\tilde P^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §*The N-Regular Case*, because only the plain product has a group of units.
 
 ## The Quaternionic Norm
 
@@ -48,16 +48,16 @@ The value of the norm separates the algebra into two parts.
 
 | condition on $\langle\tilde Q\rangle_{\natural}$ | set | name |
 |---|---|---|
-| $\neq0$ | $\mathbb{B}^{\times}=\{\langle\cdot\rangle_{\natural}\neq0\}$ | the **regular case**: the group of units |
-| $=0$ | the **null cone** $\mathcal{N}=\{\langle\cdot\rangle_{\natural}=0\}$ | the **degeneracy case**: the origin together with the zero divisors |
+| $\neq0$ | $\mathbb{B}^{\times}=\{\langle\cdot\rangle_{\natural}\neq0\}$ | the **$N$-regular case**: the group of units |
+| $=0$ | the **null cone** $\mathcal{N}=\{\langle\cdot\rangle_{\natural}=0\}$ | the **$N$-degenerate case**: the origin together with the zero divisors |
 
-The split is by the value of the norm, not by zero-divisorhood. The origin lies in the null cone, and it is not a zero divisor; every non-zero point of the cone is one. So the regular case is exactly the unit group, and the degeneracy case is the cone, of which the zero-divisor set is the punctured part.
+The split is by the value of the norm, not by zero-divisorhood. The origin lies in the null cone, and it is not a zero divisor; every non-zero point of the cone is one. So the $N$-regular case is exactly the unit group, and the $N$-degenerate case is the cone, of which the zero-divisor set is the punctured part.
 
-**Remark (the word regular).** In ring theory a regular element is a non-zero-divisor, and the origin qualifies, so the ring-regular elements are $\mathbb{B}^{\times}\cup\{0\}$. The title uses **norm-regular** instead: the regular side is the unit group, and the origin is norm-degenerate. The two readings differ at one point, the apex, and the article follows the norm.
+**Remark (the word regular).** In ring theory a regular element is a non-zero-divisor, and the origin qualifies, so the ring-regular elements are $\mathbb{B}^{\times}\cup\{0\}$. The title uses **$N$-regular** instead: the regular side is the unit group, and the origin is $N$-degenerate. The two readings differ at one point, the apex, and the article follows the norm.
 
 **Criterion.** For $\tilde Q\neq0$ the following are equivalent:
 
-1. $\langle\tilde Q\rangle_{\natural}\neq0$;
+1. $\tilde Q$ is $N$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$;
 2. $\tilde Q$ is a unit of the plain product;
 3. $\tilde Q$ is not a zero divisor;
 4. the left translation $\tilde X\mapsto\tilde Q\tilde X$ is injective;
@@ -65,15 +65,17 @@ The split is by the value of the norm, not by zero-divisorhood. The origin lies 
 
 *Proof.* (1)$\Rightarrow$(2): the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, by the identity of the norm. (2)$\Rightarrow$(3): a unit cannot annihilate a non-zero element. (3)$\Rightarrow$(4): if the left translation is not injective, some $\tilde X\neq0$ has $\tilde Q\tilde X=0$, and $\tilde Q$ is a left zero divisor. (4)$\Rightarrow$(1): if $\langle\tilde Q\rangle_{\natural}=0$ then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so the left translation kills $\tilde Q^{\natural}$. The right-hand conditions are treated the same way.
 
-Equivalently, for $\tilde Q\neq0$, the element is a zero divisor exactly when $\langle\tilde Q\rangle_{\natural}=0$. The norm therefore decides invertibility in the precise sense that its non-vanishing set is the unit group; and its vanishing set, minus the origin, is the zero-divisor set.
+Equivalently, for $\tilde Q\neq0$, the element is $N$-degenerate exactly when it is a zero divisor; the origin is $N$-degenerate and is neither. The norm therefore decides invertibility in the precise sense that its non-vanishing set is the unit group; and its vanishing set, minus the origin, is the zero-divisor set.
 
-## The regular case: The Group of Units
+## The $N$-regular case: The Group of Units
 
-**Definition.** The **unit group** of the plain product is
+**Definition.** The **$N$-regular set** is the set of $N$-regular biquaternions,
 
 $$
-\mathbb{B}^{\times}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}\neq0\}.
+\mathbb{B}^{\times}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}\neq0\},
 $$
+
+and it is the **unit group** of the plain product.
 
 By the criterion above it is the complement of the null cone: the algebra minus the origin and the zero divisors.
 
@@ -89,21 +91,15 @@ since $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\r
 
 **Remark (the inverse is the conjugate over the norm).** In the plain product the two-sided inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. In the product $\tilde P^{\natural}\tilde Q$ the one-sided solution is $\tilde Q/\langle\tilde Q\rangle_{\natural}$. The criterion $\langle\cdot\rangle_{\natural}\neq0$ is the same; the inverse is not. The unit group is a plain-product object.
 
-**Theorem (the partition).** The algebra is the disjoint union
+**Theorem (the partition).** The algebra is the disjoint union of the $N$-regular and the $N$-degenerate biquaternions,
 
 $$
-\mathbb{B}=\mathbb{B}^{\times}\uplus\{0\}\uplus\mathcal Z,
+\mathbb{B}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}\uplus\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}=\mathbb{B}^{\times}\uplus\mathcal{N},
 $$
 
-of the units, the origin, and the zero divisors. Equivalently,
+and the second set, the null cone $\mathcal{N}$, is the origin together with the zero divisors, $\mathcal{N}=\{0\}\uplus\mathcal Z$. The first is the unit group.
 
-$$
-\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{N},
-$$
-
-with $\mathcal{N}=\{\langle\cdot\rangle_{\natural}=0\}$ the null cone, which contains the origin and the zero divisors.
-
-*Proof.* The two sets $\{\langle\cdot\rangle_{\natural}\neq0\}$ and $\{\langle\cdot\rangle_{\natural}=0\}$ are complementary, and the cone splits into the origin and its punctured part, which is the zero-divisor set by §*The Zero Divisors*.
+*Proof.* The two sets are complementary by the law of excluded middle on a complex number, and the cone splits into the origin and its punctured part, which is the zero-divisor set by §*The Zero Divisors*.
 
 **Corollary (topology).** $\mathbb{B}^{\times}$ is open and dense in $\mathbb{B}$; $\mathcal{N}$ is closed, has empty interior, and is of real codimension $2$; and
 
@@ -117,7 +113,7 @@ The origin is the only point of the cone that is not a zero divisor.
 
 **Remark (the $\natural$-bilinear product).** For the product $\tilde P^{\natural}\tilde Q$ the element $e_t$ is a left unit and there is no right unit, so no element has a two-sided inverse and there is no group of units. The two one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The criterion is unchanged; what is lost is the group, and with it the two-sided inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. That is why this article uses the plain product.
 
-## The degeneracy case: the origin together with the zero divisors
+## The $N$-degenerate case: the origin together with the zero divisors
 
 **Definition.** Let $\cdot$ be a product on $\mathbb{B}$. A non-zero $\tilde Q$ is a **left zero divisor** of $\cdot$ if $\tilde Q\cdot\tilde X=0$ for some $\tilde X\neq0$, a **right zero divisor** if $\tilde X\cdot\tilde Q=0$ for some $\tilde X\neq0$, and a **zero divisor** if it is one or the other. The element $0$ is not a zero divisor of any product.
 
@@ -235,9 +231,9 @@ The restriction of the norm to a remarkable subspace has a realified signature, 
 
 The biquaternion algebra carries one multiplicative norm, the quaternionic norm, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and only it decides invertibility.
 
-The plain product is associative and has the two-sided unit $e_t$. The units are the elements of non-zero norm: they form the group $\mathbb{B}^{\times}$, with inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, and the algebra is the disjoint union $\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{N}$ of the units and the null cone. The group is open and dense, the cone is closed of real codimension $2$ and is its boundary. The $\natural$-bilinear product, which has a left unit and no right unit, is recorded in one remark: there the one-sided solution is $\tilde Q/\langle\tilde Q\rangle_{\natural}$, and the criterion is the same.
+The plain product is associative and has the two-sided unit $e_t$. The $N$-regular biquaternions are the units: they form the group $\mathbb{B}^{\times}$, with inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, and the algebra is the disjoint union $\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{N}$ of the $N$-regular and the $N$-degenerate biquaternions. The group is open and dense, the cone is closed of real codimension $2$ and is its boundary. The $\natural$-bilinear product, which has a left unit and no right unit, is recorded in one remark: there the one-sided solution is $\tilde Q/\langle\tilde Q\rangle_{\natural}$, and the criterion is the same.
 
-The degeneracy case is the null cone, with the origin at its apex and the zero divisors at its punctured points. The zero-divisor set splits into the pure stratum, the nilpotents of index two, of real dimension $4$, and the non-pure stratum, the non-zero complex multiples of idempotents, of real dimension $6$, the split being by the scalar part $Q_t$. In the matrix model a non-zero null element is the rank-one matrix $uv^{\mathsf T}$; its scalar part is the contraction $\tfrac12 v^{\mathsf T}u$, the pure stratum is the locus $v^{\mathsf T}u=0$, and the identity $\tilde Q^2=2Q_t\tilde Q$ is the rank-one identity $\mathsf M_2(\tilde Q)^2=(v^{\mathsf T}u)\mathsf M_2(\tilde Q)$. The cone is not a subspace and is stable under the product. The realified signature of the norm is definite on the centre, the quaternion and the anti-quaternion subspaces, and indefinite on the other three.
+The $N$-degenerate case is the null cone, with the origin at its apex and the zero divisors at its punctured points. The zero-divisor set splits into the pure stratum, the nilpotents of index two, of real dimension $4$, and the non-pure stratum, the non-zero complex multiples of idempotents, of real dimension $6$, the split being by the scalar part $Q_t$. In the matrix model a non-zero null element is the rank-one matrix $uv^{\mathsf T}$; its scalar part is the contraction $\tfrac12 v^{\mathsf T}u$, the pure stratum is the locus $v^{\mathsf T}u=0$, and the identity $\tilde Q^2=2Q_t\tilde Q$ is the rank-one identity $\mathsf M_2(\tilde Q)^2=(v^{\mathsf T}u)\mathsf M_2(\tilde Q)$. The cone is not a subspace and is stable under the product. The realified signature of the norm is definite on the centre, the quaternion and the anti-quaternion subspaces, and indefinite on the other three.
 
 
 ## Summary of Notation
@@ -249,9 +245,11 @@ The degeneracy case is the null cone, with the origin at its apex and the zero d
 | $\tilde Q=Q_t e_t+\vec Q$ | an element and its scalar–vector split |
 | $\tilde Q^{\natural}=Q_t-\vec Q$ | the natural conjugation |
 | $\tilde P\tilde Q$ | the plain product, associative, with the two-sided unit $e_t$ |
-| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the quaternionic norm, the only multiplicative one |
-| $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}$ | the unit group, with inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ |
-| $\mathcal{N}=\{\tilde Q:\langle\cdot\rangle_{\natural}=0\}$ | the null cone |
+| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the quaternionic norm, written $N$, the only multiplicative one |
+| $N$-regular | $\langle\tilde Q\rangle_{\natural}\neq0$; the unit group |
+| $N$-degenerate | $\langle\tilde Q\rangle_{\natural}=0$; the null cone |
+| $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}$ | the unit group, the $N$-regular set, with inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ |
+| $\mathcal{N}=\{\tilde Q:\langle\cdot\rangle_{\natural}=0\}$ | the null cone, the $N$-degenerate set |
 | $\mathcal Z=\mathcal{N}\setminus\{0\}$ | the zero-divisor set |
 | $\mathcal{N}_{\mathrm p}=\{Q_t=0,\ \tilde Q\neq0\}$ | the pure stratum, the nilpotents of index two |
 | $\mathcal{N}_{\mathrm{np}}=\{Q_t\neq0\}$ | the non-pure stratum, complex multiples of non-trivial idempotents |

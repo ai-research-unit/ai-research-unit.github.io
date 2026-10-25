@@ -40,7 +40,7 @@ and then $\vec H_0 = Z^{-1}\,\vec u_k\times\vec E_0$, with $\vec u_k = \vec k/|\
 $$
 \langle\tilde{F}_0\rangle_{\natural} = \sum_{k=1}^{3}(F_{tk})^2 = 0,
 $$
-so a free plane wave in a medium is a zero divisor of $\mathbb{B}$, exactly as the parent states.
+so a free plane wave in a medium is $N$-degenerate, a zero divisor of $\mathbb{B}$, exactly as the parent states.
 
 An exercise built on parents tests them. The parent states the conditions above and the nullness without deriving them, so the exercise derives them from $\tilde{\nabla}\tilde{F}=0$ and then checks them on cases the parent did not use: oblique propagation, elliptical polarisation, and media with $\epsilon \neq \mu$. The parent's plane-wave results survive all of them. The exercise also records what the parent leaves open: a restricted real normalisation, an energy expression that is non-dispersive, and a label — "Lorentz invariants" — that the parent's own medium setting does not establish. These are collected in the section *Where the Parent Leaves a Gap*, and none of them is smoothed over.
 
@@ -136,7 +136,7 @@ So both classical invariants of the amplitude vanish, $I_1 = \vec E_0^2 - c^2\ve
 
 ## Problem 2: The Null Amplitude and the Wave Biquaternion
 
-**Statement.** (a) Show that the field-strength amplitude is null, $\langle\tilde{F}_0\rangle_{\natural} = 0$, hence that $\tilde{F}_0$ is a zero divisor of $\mathbb{B}$. (b) Show that $\tilde P$ is itself null and that it annihilates $\tilde{F}_0$ from the left. (c) Show by contrast that a standing wave in the same medium is not null, so that nullness is a property of the single running plane wave rather than of the Maxwell field in general.
+**Statement.** (a) Show that the field-strength amplitude is null, $\langle\tilde{F}_0\rangle_{\natural} = 0$, hence that $\tilde{F}_0$ is $N$-degenerate, a zero divisor of $\mathbb{B}$. (b) Show that $\tilde P$ is itself null and that it annihilates $\tilde{F}_0$ from the left. (c) Show by contrast that a standing wave in the same medium is not null, so that nullness is a property of the single running plane wave rather than of the Maxwell field in general.
 
 **Solution (a).** Factor out the electric half. From $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$,
 $$

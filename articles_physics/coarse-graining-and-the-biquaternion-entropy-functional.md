@@ -102,7 +102,7 @@ $$
 \langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t \neq 0 \qquad (|\vec r| < 1),
 $$
 
-so it is a unit and its logarithm exists. A **pure** state has $\langle\tilde{Ϛ}\rangle_{\natural} = 0$: it is a zero divisor, the logarithm does not exist there, and the entropy is defined on the boundary by continuity. The locus where the entropy functional is analytically singular is exactly the locus of purity, and that coincidence is the geometric content of the whole subject.
+so it is a unit and its logarithm exists. A **pure** state has $\langle\tilde{Ϛ}\rangle_{\natural} = 0$: it is $N$-degenerate, a zero divisor, the logarithm does not exist there, and the entropy is defined on the boundary by continuity. The locus where the entropy functional is analytically singular is exactly the locus of purity, and that coincidence is the geometric content of the whole subject.
 
 ### Definition from the Spectral Decomposition
 

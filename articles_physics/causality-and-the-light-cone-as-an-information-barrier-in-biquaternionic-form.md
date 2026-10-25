@@ -84,7 +84,7 @@ $$
 
 the light cone of Minkowski space. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* proves the following, and it is quoted here rather than repeated.
 
-**The cone is the zero-divisor set.** A nonzero biquaternion has $\langle\tilde{Q}_1\rangle_{\natural} = 0$ if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde Q_2$ with $\tilde{Q}_1\tilde Q_2 = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $ct' \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2ict'$,
+**The cone is the zero-divisor set.** A nonzero biquaternion is $N$-degenerate, $\langle\tilde{Q}_1\rangle_{\natural} = 0$, if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde Q_2$ with $\tilde{Q}_1\tilde Q_2 = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $ct' \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2ict'$,
 
 $$
 \tilde{R} = ict'\left(e_t - i\vec u_x\right) = 2ict'\,\tilde\Pi(-\vec u_x),

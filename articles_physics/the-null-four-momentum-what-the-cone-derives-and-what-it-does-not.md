@@ -67,7 +67,7 @@ Mass is the negative of the norm of the four-momentum, up to the constant $c^2$.
 
 ### The massless shell is the zero-divisor cone
 
-Set $m=0$ in the shell. The condition becomes $\langle\tilde{P}\rangle_{\natural}=0$, which is $E=c|\vec p|$, and $\langle\tilde{P}\rangle_{\natural}=0$ on a nonzero element of $\mathbb{B}$ is precisely the definition of a zero divisor. So the massless shell is the part of the zero-divisor set that lies in the material sector, which is the light cone. This identification is the subject of *The Light Cone as the Biquaternion Zero-Divisor Cone* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and it is restated here only to fix what the cone owns.
+Set $m=0$ in the shell. The condition becomes $\langle\tilde{P}\rangle_{\natural}=0$, which is $E=c|\vec p|$, and $\langle\tilde{P}\rangle_{\natural}=0$ on a nonzero element of $\mathbb{B}$ is precisely the $N$-degenerate condition, which for a nonzero element is equivalent to being a zero divisor. So the massless shell is the part of the zero-divisor set that lies in the material sector, which is the light cone. This identification is the subject of *The Light Cone as the Biquaternion Zero-Divisor Cone* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and it is restated here only to fix what the cone owns.
 
 What the cone adds to the bare equation $E=c|\vec p|$ is that the equation is not an accident of the units but the statement that the four-momentum is not invertible in the algebra, and that the non-invertibility is the same non-invertibility that the wave operator exhibits.
 

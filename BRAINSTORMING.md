@@ -8821,6 +8821,418 @@ Summary of notation
 
 
 
+# The Polar Decomposition of a N-Regular Biquaternion
+
+## Introduction
+
+The general polar decomposition of a biquaternion, established in *The Polar
+Decomposition of a Biquaternion*, writes every \(Q\) as
+
+\[
+Q=Q_H\,Q_0,
+\]
+
+with \(Q_H\) Hermitian positive semidefinite and \(Q_0\) a partial isometry.
+When \(N(Q)\neq 0\), the factors sharpen: \(Q_H\) is Hermitian positive
+definite and \(Q_0\) is unitary. The present article refines this two-factor
+decomposition into four factors,
+
+\[
+Q=r\,\partial\,U_b\,u_r,
+\qquad
+r>0,\quad |\partial|=1,\quad N(U_b)=1,\quad u_r\in SU(2),
+\]
+
+the **modulus–unit polar decomposition** of a N-regular biquaternion. The
+four factors are the scale, the central phase, the boost and the rotor. They
+are the biquaternion analogue of the two factors of the quaternion case, and
+their real dimensions \(1+1+3+3\) fill the eight of the algebra.
+
+The norm is complex, so the modulus is a complex number fixed only after a
+branch is chosen, and it splits into a positive scale and a central phase on
+the unit circle. The unit factor is the norm-one group \(SL_2(\mathbb C)\),
+of real dimension six and not compact; it splits into a Hermitian positive
+factor, the boost, and a unitary factor, the rotor. The rotor is the compact
+part, a unit real quaternion, and the boost carries the three non-compact
+directions.
+
+The article derives the four factors from the two-factor decomposition
+(§The Two Factors), states their defining equations and properties
+(§The Four Factors), introduces the three pairings (§The Three Pairings),
+records existence and uniqueness (§Existence and Uniqueness), gives the
+algorithm and a worked example (§The Algorithm, §Worked Example), and closes
+with the summary and the notation.
+
+---
+
+## The Two Factors
+
+Let \(Q\) be a biquaternion with \(N(Q)\neq 0\). The general polar
+decomposition gives
+
+\[
+Q=Q_H\,Q_0,
+\]
+
+with
+
+\[
+Q_H=(QQ^*)^{1/2},
+\qquad
+Q_0=Q_H^{-1}Q.
+\]
+
+Because \(N(Q)\neq 0\), \(Q_H\) is Hermitian positive definite and \(Q_0\)
+is unitary.
+
+**The modulus.** The quaternionic norm is
+
+\[
+N(Q)=\langle Q\rangle^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2.
+\]
+
+Choose the principal square root \(P\) of \(N(Q)\) in the half-plane
+
+\[
+\mathcal H=\{\operatorname{Re}P>0\}\cup\{it:t>0\}.
+\]
+
+Then \(P^2=N(Q)\), and the modulus is the complex scalar \(P\).
+
+**The unit factor.** Define
+
+\[
+U=\frac{Q}{P}.
+\]
+
+Then \(N(U)=N(Q)/P^2=1\). The unit factor is of norm one.
+
+The two-factor decomposition is
+
+\[
+Q=P\,U,
+\qquad
+P\in\mathbb C,\quad P\neq 0,\quad P^2=N(Q),\quad N(U)=1.
+\]
+
+It is the modulus–unit polar decomposition. The four-factor word is obtained
+by splitting \(P\) into scale and phase and \(U\) into boost and rotor.
+
+---
+
+## The Four Factors
+
+### The scale and the phase
+
+Write the modulus in polar form:
+
+\[
+P=r\,\partial,
+\qquad
+r=|P|=\sqrt{|N(Q)|}>0,
+\qquad
+\partial=\frac{P}{|P|},\quad |\partial|=1.
+\]
+
+The **scale** \(r\) is a positive real. The **central phase** \(\partial\) is
+a unit complex number in the branch
+
+\[
+\partial\in\{\partial\in\mathbb C:|\partial|=1,\ \operatorname{Re}\partial>0\}\cup\{i\}.
+\]
+
+Both are central and commute with the other factors.
+
+### The boost and the rotor
+
+The unit factor \(U\) has norm one. Its polar decomposition is
+
+\[
+U=U_b\,u_r,
+\qquad
+U_b=(UU^*)^{1/2},
+\qquad
+u_r=U_b^{-1}U.
+\]
+
+The **boost** \(U_b\) is Hermitian positive definite of determinant one:
+
+\[
+U_b=U_b^*,\qquad U_b\text{ positive definite},\qquad N(U_b)=1.
+\]
+
+The **rotor** \(u_r\) is unitary of determinant one:
+
+\[
+u_r u_r^*=e_t,\qquad N(u_r)=1.
+\]
+
+The rotor has real coefficients; it is a unit real quaternion, i.e., an
+element of \(SU(2)=S^3\).
+
+### The four-factor word
+
+The word is
+
+\[
+Q=r\,\partial\,U_b\,u_r.
+\]
+
+The dimensions are
+
+\[
+8=1+1+3+3.
+\]
+
+The order of the boost and the rotor is fixed: the boost is the left
+Hermitian factor, so the word is boost then rotor.
+
+### Properties of the factors
+
+| Factor | Type | Norm | Real dimension |
+|---|---|---|---|
+| \(r\) | positive real | \(r\) | 1 |
+| \(\partial\) | unit complex scalar | 1 | 1 |
+| \(U_b\) | Hermitian positive definite | 1 | 3 |
+| \(u_r\) | unit real quaternion | 1 | 3 |
+
+The scale is central and fixed by all conjugations. The phase is central and
+records the direction of the norm. The boost is Hermitian positive definite
+and carries the non-compact directions. The rotor is unitary with real
+coefficients and carries the compact directions.
+
+---
+
+## The Three Pairings
+
+The four factors can be bracketed in three ways, each giving a pairing.
+
+### The quaternion pairing
+
+\[
+Q=(r\,u_r)\left(\partial\,u_r^{-1}U_b u_r\right).
+\]
+
+The first factor is the real quaternion \(r u_r\), a positive scale times a
+unit real quaternion. The second factor carries the phase and the boost
+carried into the rotor frame. The pairing is partial: it is available when
+the part of \(Q\) with real coefficients is nonzero.
+
+### The Hamilton root pairing
+
+\[
+Q=(r\partial)(U_b u_r).
+\]
+
+The first factor is the complex modulus \(P\). The second is the unit factor,
+read on a root of \(-e_t\) parallel to the vector part. The pairing is
+partial: the vector part must be non-null.
+
+### The Cartan Hermitian pairing
+
+\[
+Q=(r U_b)(\partial u_r).
+\]
+
+The first factor is Hermitian positive definite, the second is unitary. The
+pairing solves \(QQ^*=(r U_b)^2\), so both factors are functions of \(Q\)
+alone. It is total on the N-regular elements.
+
+The three pairings regroup the same four factors. The first two are partial;
+the third is total on the invertible elements.
+
+---
+
+## Existence and Uniqueness
+
+**Theorem.** Every biquaternion \(Q\) with \(N(Q)\neq 0\) has exactly one
+modulus–unit polar decomposition with modulus in the principal half-plane,
+and exactly one four-factor word.
+
+**Existence.** Let \(P\) be the principal square root of \(N(Q)\), and set
+\(U=Q/P\). Then \(N(U)=1\). Write \(U=U_b u_r\) with \(U_b=(UU^*)^{1/2}\)
+and \(u_r=U_b^{-1}U\). The first is Hermitian positive definite of
+determinant one, the second is unitary of determinant one with real
+coefficients. With \(r=|P|\) and \(\partial=P/|P|\) the word follows.
+
+**Uniqueness.** Suppose \(Q=P U=P' U'\) with \(P,P'\in\mathcal H\) and
+\(N(U)=N(U')=1\). Taking norms gives \(P^2=P'^2\), so \(P'=\pm P\); both
+lie in \(\mathcal H\), which contains no pair of opposite points, so
+\(P'=P\). Dividing, \(U'=U\). The polar decomposition of \(U\) is unique:
+\(UU^*\) has exactly one Hermitian positive square root, hence \(U_b\) is
+unique, and then \(u_r=U_b^{-1}U\) is unique.
+
+The word exists exactly on the N-regular elements \(N(Q)\neq 0\). On the
+zero-divisor cone the norm vanishes, the modulus is zero, and no
+factorisation exists.
+
+---
+
+## The Algorithm
+
+The factors are computed in five steps.
+
+1. **The norm.** Compute \(N(Q)=\sum_\mu Q_\mu^2\). If it is zero, stop: the
+   element is a zero divisor and has no decomposition.
+
+2. **The modulus.** Compute \(P\) from the branch formula of §The Two
+   Factors. The result lies in \(\mathcal H\) and satisfies \(P^2=N(Q)\).
+
+3. **The scale and the phase.** Put \(r=|P|\) and \(\partial=P/r\).
+
+4. **The unit factor.** Put \(U=Q/P\). Check \(N(U)=1\).
+
+5. **The boost and the rotor.** Compute \(UU^*\), then
+
+\[
+U_b=\frac{UU^*+e_t}{2(1+\operatorname{Sc}(UU^*))},
+\qquad
+u_r=\frac{(2\operatorname{Sc}(UU^*)+1)e_t-UU^*}{2(1+\operatorname{Sc}(UU^*))}\,U.
+\]
+
+The scalar \(\operatorname{Sc}(UU^*)\) is real and at least one, so the
+denominators are real and positive. The five steps use one square root of a
+complex number, one square root of a real number, and no spectral
+decomposition.
+
+The checks are
+
+\[
+U_b^2=UU^*,
+\qquad
+u_r u_r^*=e_t,
+\qquad
+r\partial\,U_b u_r=Q.
+\]
+
+---
+
+## Worked Example
+
+Take
+
+\[
+Q=(1+i)e_t+e_x+i e_y.
+\]
+
+The norm is
+
+\[
+N(Q)=(1+i)^2+1+i^2=2i+1-1=2i.
+\]
+
+The modulus is the principal root of \(2i\):
+
+\[
+P=1+i,
+\qquad
+r=\sqrt2,
+\qquad
+\partial=\frac{1+i}{\sqrt2}.
+\]
+
+The unit factor is
+
+\[
+U=\frac{Q}{1+i}=e_t+\frac{1-i}{2}e_x+\frac{1+i}{2}e_y,
+\]
+
+with norm one. The Hermitian element is
+
+\[
+UU^*=2e_t-i e_x+i e_y+i e_z,
+\qquad
+\operatorname{Sc}(UU^*)=2,
+\qquad
+2(1+2)=6.
+\]
+
+The boost and the rotor are
+
+\[
+U_b=\frac{3e_t-i e_x+i e_y+i e_z}{\sqrt6},
+\qquad
+u_r=\sqrt{\frac23}\,e_t+\frac{1}{\sqrt6}e_x+\frac{1}{\sqrt6}e_y.
+\]
+
+The four factors are collected in the table.
+
+| Factor | Value | Norm |
+|---|---|---|
+| \(r\) | \(\sqrt2\) | — |
+| \(\partial\) | \(\frac{1+i}{\sqrt2}\) | 1 |
+| \(U_b\) | \(\frac{3e_t-i e_x+i e_y+i e_z}{\sqrt6}\) | 1 |
+| \(u_r\) | \(\sqrt{\frac23}e_t+\frac{1}{\sqrt6}e_x+\frac{1}{\sqrt6}e_y\) | 1 |
+
+The checks: \(U_b^2=UU^*\), \(u_r u_r^*=e_t\), and
+\(r\partial\,U_b u_r=Q\).
+
+---
+
+## Summary
+
+Every N-regular biquaternion \(Q\), \(N(Q)\neq 0\), has exactly one
+modulus–unit polar decomposition
+
+\[
+Q=P\,U,
+\qquad
+P\in\mathbb C,\quad P\neq 0,\quad P^2=N(Q),\quad N(U)=1,
+\]
+
+with modulus in the principal half-plane, and exactly one four-factor word
+
+\[
+Q=r\,\partial\,U_b\,u_r.
+\]
+
+The scale \(r\) is positive, the phase \(\partial\) is a unit complex number
+in the right half of the circle, the boost \(U_b\) is Hermitian positive
+definite of determinant one, and the rotor \(u_r\) is a unit real quaternion.
+The dimensions are \(1+1+3+3=8\).
+
+The modulus is complex because the norm is complex; it is the determinant in
+the matrix model. The unit factor is the norm-one group \(SL_2(\mathbb C)\),
+of real dimension six and not compact; its compact part is the rotor, and its
+non-compact part is the boost. The decomposition exists exactly on the
+complement of the zero-divisor cone, a cone of real codimension two.
+
+The four factors regroup into the three pairings: the quaternion pairing,
+which joins the scale to the rotor; the Hamilton root pairing, which joins
+the scale to the phase and reads the rest on a root of \(-e_t\); and the
+Cartan Hermitian pairing, which joins the scale to the boost and the phase to
+the rotor. The first two are partial, the third is total.
+
+---
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| \(Q\) | biquaternion, \(Q=Q_t e_t+Q_x e_x+Q_y e_y+Q_z e_z\) |
+| \(Q^\natural\) | quaternion conjugation |
+| \(Q^*=\overline{Q^\natural}\) | Hermitian conjugation |
+| \(N(Q)=\langle Q\rangle^\natural=\sum_\mu Q_\mu^2\) | quaternionic norm, complex |
+| \(P\) | modulus, principal square root of \(N(Q)\), in \(\mathcal H\) |
+| \(r=\lvert P\rvert\) | scale, positive real |
+| \(\partial=P/r\) | central phase, \(\lvert\partial\rvert=1\) |
+| \(U=Q/P\) | unit factor, \(N(U)=1\) |
+| \(U_b=(UU^*)^{1/2}\) | boost, Hermitian positive definite, \(N(U_b)=1\) |
+| \(u_r=U_b^{-1}U\) | rotor, unit real quaternion, \(SU(2)\) |
+| \(Q_H=(QQ^*)^{1/2}=r U_b\) | Hermitian positive definite factor |
+| \(Q_0=Q_H^{-1}Q=\partial u_r\) | unitary factor |
+| \(B^2=Q_x^2+Q_y^2+Q_z^2\) | square of the vector part |
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -253,11 +253,11 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 | sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct, non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
-| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal N$; all three outcomes |
-| **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | fails on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
+| **$N$-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal N$; all three outcomes |
+| **$N$-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | fails on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $N=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
-**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.
+**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is $N$-degenerate with a full eigenbasis, $\Sigma_{10}$ is $N$-regular with none. Neither cone contains the other, and these are the cells that show it.
 
 **Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $N\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
 
@@ -342,7 +342,7 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 | symbol | meaning |
 |---|---|
 | $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
-| $\Sigma_{10}$ | the norm-regular, spectrally degenerate sector, this article |
+| $\Sigma_{10}$ | the $N$-regular, spectrally degenerate sector, this article |
 | $\mathcal N=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\Sigma_{10}^{\mathrm{s}}=\mathbb{C}^\times e_t$ | the scalar line |

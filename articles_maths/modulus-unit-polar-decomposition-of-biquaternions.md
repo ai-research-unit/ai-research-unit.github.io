@@ -340,7 +340,7 @@ The uniqueness is a statement about the factors, not about a coordinate on the b
 
 ### The Splitting of the Group of Units
 
-The group of units is $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the zero-divisor cone. The decomposition read as a map
+The group of units is the $N$-regular set, $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the $N$-degenerate null cone. The decomposition read as a map
 
 $$
 \Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),\qquad \Phi(\tilde Q)=(\Rho,\tilde U),
@@ -529,7 +529,7 @@ The regular modules themselves are *Modules over the Biquaternion Algebra*; the 
 
 The factors are computed in five steps, each a finite sequence of algebraic operations on the eight real coordinates of $\tilde Q$.
 
-**Step 1, the norm.** Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is a zero divisor and has no decomposition. Otherwise continue.
+**Step 1, the norm.** Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is $N$-degenerate and has no decomposition. Otherwise it is $N$-regular and the computation continues.
 
 **Step 2, the modulus.** Compute $\Rho$ from the branch formula of §*The Biquaternion Norm and the Modulus*. The result lies in $\mathcal H$ and satisfies $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$.
 

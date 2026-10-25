@@ -1158,7 +1158,7 @@ $$
 =e_t+i\sqrt2\,\vec e_x+2\vec e_y+i\sqrt2\,\vec e_z.
 $$
 
-The element is a unit of norm one, not a zero divisor, although its vector part is null.
+The element is $N$-regular, $N(\tilde Q)\neq0$, of norm one, although its vector part is null.
 
 ### Case 7: A Generic Direction
 
@@ -1458,7 +1458,7 @@ $$
 \tilde Q^n=(1+i)^n\left(e_t+\frac{n}{1+i}\tilde N\right).
 $$
 
-The vector part is null, but the norm is $2i\neq0$: the element is not a zero divisor. A null vector part is not a null element.
+The vector part is null, but the norm is $2i\neq0$: the element is $N$-regular. A null vector part is not a null element.
 
 ## Summary
 
@@ -1507,8 +1507,8 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - Cases 2 to 5 have the same vector direction $\vec e_x$. They therefore have the same root $\vec\Xi=-i\vec e_x$, the same eigenprojections $\tilde\Pi_\pm$, and the same nilpotents $\vec\Upsilon_\pm$. Only the two eigenvalues change. The eigenbasis is attached to the direction of the vector part, not to its magnitude or to the scalar part. This is the biquaternion form of the statement that the eigenbasis is attached to the root.
 - Case 4 has $B=i$ and real eigenvalues. The root need not be real for the spectrum to be real. The sign of the root exchanges the two eigenvalues and the two projectors.
 - Case 6 is the unipotent case with a real scalar part. The vector part is null, $B=0$, and the element is $e_t$ plus a square-zero element. The eigenspace has dimension two, so there is no eigenbasis.
-- Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is a unit. A null vector part does not imply a zero divisor.
-- None of the eight is a zero divisor. The zero-divisor regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.
+- Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is $N$-regular. A null vector part does not imply an $N$-degenerate element.
+- None of the eight is $N$-degenerate. The $N$-degenerate regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.
 - Case 1 is the scalar regime. Every basis is an eigenbasis, and the construction of the eigenbasis does not apply.
 - Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the projection formula. The symmetric closed form of *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, gives the same pair up to the reciprocal rescaling when the direction is off the exceptional cone; the projection formula is the construction used here.
 - In the distinct regime the eigenvalues repeat twice in the four-dimensional eigenbasis, and they are distinct on each two-dimensional spinor space. The $2\times2$ model records the two values once, one for each column.

@@ -191,17 +191,17 @@ The sandwich preserves the rank of the matrix image and, on the norm-one slice, 
 | class | norm $\langle\tilde Q\rangle_{\natural}$ | interpretation |
 | --- | --- | --- |
 | timelike | $\langle\tilde Q\rangle_{\natural}<0$ | a world line of a massive particle |
-| null | $\langle\tilde Q\rangle_{\natural}=0$, $\tilde Q\neq0$ | a point of the light cone; a zero divisor of rank one |
+| null | $\langle\tilde Q\rangle_{\natural}=0$, $\tilde Q\neq0$ | a point of the light cone; $N$-degenerate, a zero divisor of rank one |
 | spacelike | $\langle\tilde Q\rangle_{\natural}>0$ | a separation outside the cone |
-| zero | $\tilde Q=0$ | the origin |
+| zero | $\tilde Q=0$ | the origin, $N$-degenerate |
 
-The rank is always preserved: rank two is a unit, rank one is a nonzero zero divisor, rank zero is the origin.
+The rank is always preserved: rank two is $N$-regular, hence a unit, rank one is $N$-degenerate, a nonzero zero divisor, rank zero is the $N$-degenerate origin.
 
 ### The Interpretations
 
 **The mass shell is an orbit.** The future timelike elements of a fixed norm form a single orbit of the proper orthochronous group, and the past elements form a second orbit. The orbit of the rest four-velocity $imc\,e_t$ is the future mass shell of mass $m$, with $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$. Interpreted physically, a particle of mass $m$ is a point on the orbit, and a change of frame moves it along the orbit; the mass is the invariant of the orbit, not a label attached to a representative.
 
-**The light cone is an orbit, and a null vector has no rest frame.** The nonzero future null elements form a single orbit, and the past null elements a second. A null element is a zero divisor of rank one, and no rotor carries it to the rest four-velocity, because the rest four-velocity is timelike. Interpreted physically, a massless particle has no rest frame; the future light cone is one orbit of directions, and the absence of a rest frame is the absence of a timelike representative.
+**The light cone is an orbit, and a null vector has no rest frame.** The nonzero future null elements form a single orbit, and the past null elements a second. A null element is $N$-degenerate, a zero divisor of rank one, and no rotor carries it to the rest four-velocity, because the rest four-velocity is timelike. Interpreted physically, a massless particle has no rest frame; the future light cone is one orbit of directions, and the absence of a rest frame is the absence of a timelike representative.
 
 **A frame is a point on the orbit.** The orbit is the physical object and the representative is a choice of frame. Interpreted physically, no frame is preferred; the interval, the mass and the causal class are the invariants, and the group acts transitively on the frames of a given orbit.
 

@@ -84,7 +84,7 @@ $$
 
 **Proof.** Immediate from the theorem.
 
-The complement of the set of zero divisors is dense in $\mathbb{B}$, because that set is a proper algebraic subset of real codimension two — a complex hypersurface of $\mathbb{B}\cong\mathbb{C}^{4}$ — with empty interior (*Topology in the Space of Biquaternions*); this is what makes the group of units, an open dense subset, carry the topology it does.
+The complement of the $N$-degenerate set, $\{N(\tilde Q)=0\}$, is dense in $\mathbb{B}$, because that set is a proper algebraic subset of real codimension two — a complex hypersurface of $\mathbb{B}\cong\mathbb{C}^{4}$ — with empty interior (*Topology in the Space of Biquaternions*); this is what makes the $N$-regular set, the group of units, an open dense subset carrying the topology it does.
 
 ## The Euclidean Unit Sphere
 
@@ -98,7 +98,7 @@ $$
 \tilde{Q}_0=\frac{\vec e_x+i\vec e_y}{\sqrt2}\in S^{7}_{E},\qquad \tilde{Q}_0^{2}=0,
 $$
 
-and $\tilde{Q}_0$ is a zero divisor. Hence $S^{7}_{E}\not\subseteq\mathbb{B}^{\times}$ and $S^{7}_{E}$ is not a subgroup of $\mathbb{B}^{\times}$.
+and $\tilde{Q}_0$ is $N$-degenerate, a zero divisor. Hence $S^{7}_{E}\not\subseteq\mathbb{B}^{\times}$ and $S^{7}_{E}$ is not a subgroup of $\mathbb{B}^{\times}$.
 
 **Proposition (the sphere meets the null cone in a compact $5$-manifold).** The intersection $S^{7}_{E}\cap\mathcal{N}$, with $\mathcal{N}$ the null cone, is a compact real $5$-manifold without boundary, the link of the cone; it is homeomorphic to $S^{2}\times S^{3}$ (*The Topology of the Zero-Divisor Cone*).
 

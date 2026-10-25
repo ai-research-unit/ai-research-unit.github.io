@@ -50,7 +50,7 @@ The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar
 
 ## The Null Tetrad as a Frame of Zero Divisors
 
-The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $\langle\tilde Q\rangle_{\natural}=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). Restricted to the material sector, $\langle\tilde Q\rangle_{\natural} = -q_t^2+q_x^2+q_y^2+q_z^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
+The framework's criterion for a zero divisor is a statement about the biquaternion norm: $N$-degeneracy. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if it is $N$-degenerate, $\langle\tilde Q\rangle_{\natural}=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). Restricted to the material sector, $\langle\tilde Q\rangle_{\natural} = -q_t^2+q_x^2+q_y^2+q_z^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
 
 Take the tetrad
 

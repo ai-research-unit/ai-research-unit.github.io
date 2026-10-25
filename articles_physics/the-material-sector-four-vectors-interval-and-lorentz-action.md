@@ -65,7 +65,7 @@ $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$
 
-so an element is invertible exactly when its norm is non-zero. The **unit group** is the complement of the norm-zero set. On the zero set the element is a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.
+so an element is $N$-regular exactly when its norm is non-zero. The **unit group** is the $N$-regular set, the complement of the norm-zero set. On that set the element is $N$-degenerate and a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.
 
 ### The Four Forms
 
@@ -273,8 +273,8 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 - The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.
 - Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.
-- The light cone is the zero-divisor cone; on it the elements have no inverse, and it is the characteristic cone of the wave operator.
-- The unit group is the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
+- The light cone is the $N$-degenerate set, the zero-divisor cone; on it the elements have no inverse, and it is the characteristic cone of the wave operator.
+- The unit group is the $N$-regular set, the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 - The four forms are real on the sector: the interval, its negative, the Euclidean square and its negative; the sector carries no scalar area pairing.
 - The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.
 - The two eigenvalues of the four-momentum are $i(E/c\pm\lvert\vec p\rvert)$; they are the Doppler pair, and their product is the norm $-m^2c^2$.

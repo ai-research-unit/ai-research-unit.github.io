@@ -30,7 +30,7 @@ $$
 \qquad
 \vec B = \frac{1}{c}\,\vec u_R\times\vec E\;},
 $$
-with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is not null; the acceleration field falls as $1/R$, is transverse to $\vec u_R$, and is null, so that its field-strength biquaternion is a zero divisor, $\tilde{F}_a^2 = 0$. The whole point of the exercise is the split: the two parts have different falloffs, different invariants, and different signs under $d\vec\beta/dt'_r\to-d\vec\beta/dt'_r$.
+with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is not null; the acceleration field falls as $1/R$, is transverse to $\vec u_R$, and is null, so that its field-strength biquaternion is $N$-degenerate, a zero divisor, $\tilde{F}_a^2 = 0$. The whole point of the exercise is the split: the two parts have different falloffs, different invariants, and different signs under $d\vec\beta/dt'_r\to-d\vec\beta/dt'_r$.
 
 ## The Problem
 
