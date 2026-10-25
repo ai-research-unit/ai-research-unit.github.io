@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The underlying complex vector space of $\mathbb{B}$ carries **four general products**, one to each choice of the two slots: the first factor is read as it stands or through the natural conjugation ${}^{\natural}$, the second as it stands or through the Hermitian conjugation ${}^{*}$, and the two choices are independent. The four are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$. No two of the four agree on every pair.
+The underlying complex vector space of $\mathbb{B}$ carries **four general products**, one to each choice of the two slots: the first factor is read as it stands or through the natural conjugation ${}^{\natural}$, the second as it stands or through the Hermitian conjugation ${}^{*}$, and the two choices are independent. The four are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$. No two of the four agree on every pair.
 
-This article does three things. It defines the four on the coordinates, each with its scalar–vector form, and reads the two decisions on the pair: the block of scalar parts and the block of vector parts. It collects the identities that link the four — how each conjugation in a slot separates a factor into scalar and vector parts, how a product conjugates, how the four scalar parts and the four vector parts are related, how the left multiplications of the four are the plain ones read through the conjugations, and how the four collapse on the real quaternion subspace. It then compares the four by their algebraic properties: the property table, bilinearity, associativity, the units, the alternative and flexible identities, the degree-three identity, the left multiplications, and the question of which of the four is a multiplication in the sense of algebra.
+This article does three things. It defines the four on the coordinates, each with its scalar–vector form, and reads the two decisions on the pair: the block of scalar parts and the block of vector parts. Each case closes with the conjugation it inserts, its fixed subspaces and the form that follows; the fourth carries the natural conjugation as the fundamental symmetry of the Krein form. It collects the identities that link the four — how each conjugation in a slot separates a factor into scalar and vector parts, how a product conjugates, how the four scalar parts and the four vector parts are related, how the left multiplications of the four are the plain ones read through the conjugations, and how the four collapse on the real quaternion subspace. It then compares the four by their algebraic properties: the property table, bilinearity, associativity, the units, the alternative and flexible identities, the degree-three identity, the left multiplications, and the question of which of the four is a multiplication in the sense of algebra.
 
 The four are also one rule with a conjugation inserted in each slot. The two insertions commute, the four readings form a group $\mathbb{Z}_2\times\mathbb{Z}_2$, and the reading of the group on a general algebra gives the slot family, whose second slot governs the composition and whose first slot governs the form. That construction, the group and the table of the slots are *Introduction to the Operators of the Biquaternion Algebra*, §*The Four Readings and Their Group*.
 
@@ -40,38 +40,7 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the one displayed.
 
-
-### The General Plain Sesquilinear Product $\tilde Q_1\tilde Q_2^{*}$
-
-**Definition.** The **general plain sesquilinear product** leaves the first element as it is and reads the second through the conjugation ${}^{*}$. The coordinates of the second element enter as
-$$
-Q^{*}_0=\overline{Q_t} , \qquad Q^{*}_1=-\overline{Q_x} , \qquad Q^{*}_2=-\overline{Q_y} , \qquad Q^{*}_3=-\overline{Q_z} ,
-$$
-and the product is
-$$
-\tilde Q_1\tilde Q_2^{*}=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1\mu} (Q_2^{*})_\nu\,e_\mu e_\nu
-=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\nu Q_{1\mu} \overline{Q_{2\nu}}\,e_\mu e_\nu .
-$$
-
-Written on the four units, the product is
-$$
-\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+Q_{1x}\overline{Q_{2x}}+Q_{1y}\overline{Q_{2y}}+Q_{1z}\overline{Q_{2z}}\bigr)
-+\bigl(-Q_{1t}\overline{Q_{2x}}+Q_{1x}\overline{Q_{2t}}-Q_{1y}\overline{Q_{2z}}+Q_{1z}\overline{Q_{2y}}\bigr)\vec e_x
-+\bigl(-Q_{1t}\overline{Q_{2y}}+Q_{1x}\overline{Q_{2z}}+Q_{1y}\overline{Q_{2t}}-Q_{1z}\overline{Q_{2x}}\bigr)\vec e_y
-+\bigl(-Q_{1t}\overline{Q_{2z}}-Q_{1x}\overline{Q_{2y}}+Q_{1y}\overline{Q_{2x}}+Q_{1z}\overline{Q_{2t}}\bigr)\vec e_z .
-$$
-
-The rule is linear in the coordinates $Q_{1t},\dots,Q_{1z}$ and conjugate-linear in the coordinates $Q_{2t},\dots,Q_{2z}$, conjugation of the coefficients happening inside the product.
-
-**The scalar–vector form.** The scalar part of the second factor becomes $\overline{Q_t}$ and its vector part becomes $-\overline{\vec Q}$, so the two pairings change sign and are read against the conjugate vector,
-$$
-\boxed{\;
-\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}
-\;}.
-$$
-
-The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
-
+**Neither slot is conjugated.** Both factors enter as they stand, so the case carries no involution and no eigenspace splitting; its symmetry is the associativity of the multiplication. The product is the multiplication of the algebra and the only one of the four that is associative, and its scalar part, the plain form, is the only one of the four that is the scalar part of a unital associative product.
 
 ### The General Quaternionic Bilinear Product $\tilde Q_1^{\natural}\tilde Q_2$
 
@@ -104,6 +73,40 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu} Q_{2\mu}$, and the vector part is the one displayed.
 
+**The natural sign in the first slot.** The first factor is read through ${}^{\natural}$, which is a $\mathbb{C}$-linear anti-automorphism and an involution, with $+1$-eigenspace the centre $\mathbb{C}_{\mathbb{B}}$ and $-1$-eigenspace the vector subspace $\mathbb{V}_{\mathbb{B}}$; in the coefficient basis it is $\operatorname{diag}(1,-1,-1,-1)$. The insertion separates the scalar part of the first factor from its vector part, $\tilde Q_1^{\natural}\tilde Q_2=(Q_{1t}e_t)\tilde Q_2-\vec Q_1\tilde Q_2$, and it is the whole difference from the plain case, which differs by the vector part of the first factor alone. The case is $\mathbb{C}$-bilinear and has $e_t$ as a left unit alone.
+
+### The General Plain Sesquilinear Product $\tilde Q_1\tilde Q_2^{*}$
+
+**Definition.** The **general plain sesquilinear product** leaves the first element as it is and reads the second through the conjugation ${}^{*}$. The coordinates of the second element enter as
+$$
+Q^{*}_0=\overline{Q_t} , \qquad Q^{*}_1=-\overline{Q_x} , \qquad Q^{*}_2=-\overline{Q_y} , \qquad Q^{*}_3=-\overline{Q_z} ,
+$$
+and the product is
+$$
+\tilde Q_1\tilde Q_2^{*}=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1\mu} (Q_2^{*})_\nu\,e_\mu e_\nu
+=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\nu Q_{1\mu} \overline{Q_{2\nu}}\,e_\mu e_\nu .
+$$
+
+Written on the four units, the product is
+$$
+\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+Q_{1x}\overline{Q_{2x}}+Q_{1y}\overline{Q_{2y}}+Q_{1z}\overline{Q_{2z}}\bigr)
++\bigl(-Q_{1t}\overline{Q_{2x}}+Q_{1x}\overline{Q_{2t}}-Q_{1y}\overline{Q_{2z}}+Q_{1z}\overline{Q_{2y}}\bigr)\vec e_x
++\bigl(-Q_{1t}\overline{Q_{2y}}+Q_{1x}\overline{Q_{2z}}+Q_{1y}\overline{Q_{2t}}-Q_{1z}\overline{Q_{2x}}\bigr)\vec e_y
++\bigl(-Q_{1t}\overline{Q_{2z}}-Q_{1x}\overline{Q_{2y}}+Q_{1y}\overline{Q_{2x}}+Q_{1z}\overline{Q_{2t}}\bigr)\vec e_z .
+$$
+
+The rule is linear in the coordinates $Q_{1t},\dots,Q_{1z}$ and conjugate-linear in the coordinates $Q_{2t},\dots,Q_{2z}$, conjugation of the coefficients happening inside the product.
+
+**The scalar–vector form.** The scalar part of the second factor becomes $\overline{Q_t}$ and its vector part becomes $-\overline{\vec Q}$, so the two pairings change sign and are read against the conjugate vector,
+$$
+\boxed{\;
+\tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}
+\;}.
+$$
+
+The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
+
+**The star in the second slot.** The second factor is read through ${}^{*}$, which is conjugate-linear over $\mathbb{C}$ and an anti-automorphism, with $+1$-eigenspace the Hermitian subspace $\mathbb{M}_+$ and $-1$-eigenspace the anti-Hermitian subspace $\mathbb{M}_-$. The insertion makes the rule conjugate-linear in the second argument, so the case is sesquilinear and not bilinear; it is the **derived operation** of $\mathbb{B}$ with its involution, and $e_t$ is a right unit alone. Its scalar part is the Hermitian form, the one definite form of the four.
 
 ### The General Quaternionic Sesquilinear Product $\tilde Q_1^{\natural}\tilde Q_2^{*}$
 
@@ -132,14 +135,26 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 
+**The two insertions together, and the fundamental symmetry.** The scalar part is the Krein form, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, with the definite companion $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; the natural conjugation $J={}^{\natural}$ is its **fundamental symmetry**:
+$$
+J^2=\mathrm{id},\qquad
+\langle\tilde Q_2,J\tilde Q_1\rangle_{\natural*}=\langle J\tilde Q_2,\tilde Q_1\rangle_{\natural*},\qquad
+\langle\tilde Q_1,J\tilde Q_1\rangle_{\natural*}=\lVert\tilde Q_1\rVert_E^2>0\quad(\tilde Q_1\neq0).
+$$
+The bridge between the indefinite and the definite form is
+$$
+\boxed{\;\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}=\langle\tilde Q_2,\tilde Q_1^{\natural}\rangle_{*}\;}
+$$
+The eigenspaces of $J$ are the centre and the vector subspace, of complex dimensions $1$ and $3$; they are definite of the two signs and Krein-orthogonal, so $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}}$ is a fundamental decomposition. Among the fundamental symmetries, $J$ is the unique one that is a unital $\mathbb{C}$-algebra anti-automorphism: such a symmetry fixes $e_t$, so its $+1$-eigenspace is a positive line containing $e_t$, of complex dimension one, and is therefore the centre; it is ${}^{\natural}$. It is not the only fundamental symmetry: every positive definite line $\mathbb{C}(e_t+\tilde V)$ gives the reflection in it, and $J$ is the member $\tilde V=0$.
+
 ## The Two Choices and the Remaining Conjugations
 
 The two conjugations of the slots are independent, and the four rules above are the four outcomes:
 
 $$
 \tilde Q_1\tilde Q_2 , \qquad
-\tilde Q_1\tilde Q_2^{*} , \qquad
 \tilde Q_1^{\natural}\tilde Q_2 , \qquad
+\tilde Q_1\tilde Q_2^{*} , \qquad
 \tilde Q_1^{\natural}\tilde Q_2^{*} .
 $$
 
@@ -230,11 +245,11 @@ The scalar part of each of the four general products is read on the coordinates 
 | product | scalar part | signs and conjugation |
 |---|---|---|
 | $\tilde Q_1\tilde Q_2$ | $\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ | the signs $\varepsilon_\mu$ in both factors |
-| $\tilde Q_1\tilde Q_2^{*}$ | $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the conjugate in the second factor |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | $\sum_\mu Q_{1\mu} Q_{2\mu}$ | no sign at all |
+| $\tilde Q_1\tilde Q_2^{*}$ | $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the conjugate in the second factor |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the signs in the first factor and the conjugate in the second |
 
-with $\varepsilon=(1,-1,-1,-1)$; the first and the third are linear in the coordinates of both factors and the second and the fourth are conjugate-linear in the coordinates of the second. The four are related two by two, the two bilinear ones by the bilinear dot product and the two sesquilinear ones by its Hermitian companion:
+with $\varepsilon=(1,-1,-1,-1)$; the first two are linear in the coordinates of both factors and the last two are conjugate-linear in the coordinates of the second. The four are related two by two, the two bilinear ones by the bilinear dot product and the two sesquilinear ones by its Hermitian companion:
 
 $$
 \mathrm{Sc}(\tilde Q_1\tilde Q_2)+\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=2Q_{1t}Q_{2t} , \qquad
@@ -300,11 +315,11 @@ The first says that the vector part of the ${}^{\natural}$-product is the reflec
 | product | vector part | cross term |
 |---|---|---|
 | $\tilde Q_1\tilde Q_2$ | $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ | $+$ |
-| $\tilde Q_1\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $-$ |
+| $\tilde Q_1\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-$ |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ | $+$ |
 
-Deleting the cross term, the first and the third rows are reflections of each other in $Q_{1t}\vec Q_2$, and the second and the fourth in $-Q_{1t}\overline{\vec Q_2}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\vec Q_2$, reverses the sign of the $Q_{1t}$-term and of the cross term, and leaves the sign of the $Q_{2t}$-term alone.
+Deleting the cross term, the first and the second rows are reflections of each other in $Q_{1t}\vec Q_2$, and the third and the fourth in $-Q_{1t}\overline{\vec Q_2}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\vec Q_2$, reverses the sign of the $Q_{1t}$-term and of the cross term, and leaves the sign of the $Q_{2t}$-term alone.
 
 
 ## The Left Multiplications
@@ -389,22 +404,22 @@ and the fourth restricts to the first. The four scalar parts therefore come in t
 
 The last two rows are the **algebra rows**, and they are the reason the comparison is made. They ask which of the four general products is a multiplication of an algebra of each of the two kinds the corpus has, and each is read with the corpus's own definition of the object and with nothing added to it. **Multiplication of a bilinear $\mathbb{C}$-algebra** is the product of an algebra in the sense of *Algebras*: a $\mathbb{C}$-module with a product additive in each variable and $\mathbb{C}$-bilinear, with no associativity and no unit assumed, so $(\lambda\tilde Q_1)\tilde Q_2 = \lambda(\tilde Q_1\tilde Q_2)$ and $\tilde Q_1(\lambda\tilde Q_2) = \lambda(\tilde Q_1\tilde Q_2)$. **Multiplication of a sesqualgebra over $\mathbb{C}$** is the product of an algebra in the sense of *Sesqualgebras*: additive in each variable, $\mathbb{C}$-linear in the first and conjugate-linear in the second, so $(\lambda\tilde Q_1)\tilde Q_2 = \lambda(\tilde Q_1\tilde Q_2)$ and $\tilde Q_1(\lambda\tilde Q_2) = \bar\lambda(\tilde Q_1\tilde Q_2)$, the base involution being the conjugation $\varsigma(z)=\bar z$. The bilinear case is the trivial-involution collapse of the sesquilinear one, so the two kinds overlap in general; they do not overlap here. A product of full type carries only one involution (*Sesqualgebras*, §*The Collapse at the Identity*), and $\mathbb{B}$ is faithful, its products generate it and it has no nonzero left annihilator, so each of the four general products carries exactly one involution and lies in exactly one of the two rows.
 
-| property | $\tilde Q_1\tilde Q_2$ | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ |
+| property | $\tilde Q_1\tilde Q_2$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ |
 |---|---|---|---|---|
 | $\mathbb{C}$-linear in the first argument | yes | yes | yes | yes |
-| $\mathbb{C}$-linear in the second argument | yes | no | yes | no |
+| $\mathbb{C}$-linear in the second argument | yes | yes | no | no |
 | associative | yes | no | no | no |
 | commutative | no | no | no | no |
-| $1$ is a left identity | yes | no | yes | no |
-| $1$ is a right identity | yes | yes | no | no |
+| $1$ is a left identity | yes | yes | no | no |
+| $1$ is a right identity | yes | no | yes | no |
 | alternative | yes | no | no | no |
 | flexible | yes | no | no | no |
 | degree-three identity | yes | no | no | no |
-| left multiplications form a monoid | yes | no | yes | no |
-| multiplication of an algebra over $\mathbb{C}$ | yes | no | yes | no |
-| multiplication of a sesqualgebra over $\mathbb{C}$ | no | yes | no | yes |
+| left multiplications form a monoid | yes | yes | no | no |
+| multiplication of an algebra over $\mathbb{C}$ | yes | yes | no | no |
+| multiplication of a sesqualgebra over $\mathbb{C}$ | no | no | yes | yes |
 
-The alternative row is satisfied automatically by the general plain bilinear product, which is associative, and it is the three other columns that the row decides. The degree-three row records the identity $\tilde Q_1(\tilde Q_1\tilde Q_1)=(\tilde Q_1\tilde Q_1)\tilde Q_1$ for the operation in question, which is how power associativity is tested for a product of this kind; in this and the two rows above it, juxtaposition stands for the operation of the row. The last two rows ask which of the four general products is a multiplication of an algebra of the two kinds the corpus has, with the definitions of the paragraph above the table and with nothing added to them. The test is the scalar rules alone, and it is decided by the second slot. When the second slot is read without a conjugation, as in $\tilde Q_1\tilde Q_2$ and in $\tilde Q_1^{\natural}\tilde Q_2$, the product is $\mathbb{C}$-bilinear and belongs to the bilinear row; when it carries the star, as in $\tilde Q_1\tilde Q_2^{*}$ and in $\tilde Q_1^{\natural}\tilde Q_2^{*}$, the product is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second and belongs to the sesquilinear row. The witness for each exclusion is one scalar, $\lambda = i$, and one pair, $\tilde Q_1 = \tilde Q_2 = e_t$: for the two bilinear products $\tilde Q_1(i\tilde Q_2) = ie_t$ while $\bar\imath(\tilde Q_1\tilde Q_2) = -ie_t$, so they are not $\varsigma$-sesquilinear for the conjugation; and for the two star-products $\tilde Q_1(i\tilde Q_2) = -ie_t$ while $i(\tilde Q_1\tilde Q_2) = ie_t$, so they are not $\mathbb{C}$-bilinear. The four therefore split two and two by the involution each carries, the bilinear row reading yes, no, yes, no and the sesquilinear row no, yes, no, yes. Neither row separates the second column from the fourth, and none should: the two star-products differ only in the first slot, and ${}^{\natural}$ is $\mathbb{C}$-linear, so both are sesquilinear for the same conjugation. What separates them is the unit, and it is the row "$1$ is a right identity" above: the general plain sesquilinear product has $e_t$ on the right and the complex quaternionic one has not. Equivalently, only the general plain sesquilinear product is the **derived operation** $\tilde Q_1\star\tilde Q_2 = \tilde Q_1\tilde Q_2^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, the standard example of *Sesqualgebras* and the structure of *Introduction to the General Plain Sesqualgebra*. The bilinear row is weakened in the same way by the absence of a qualifier: the sharper statement, that exactly one of the four general products is the multiplication of an **associative unital** $\mathbb{C}$-algebra, is §*Which of the Four Is a Multiplication* below, and it holds because the ${}^{\natural}$-product is neither associative nor two-sidedly unital.
+The alternative row is satisfied automatically by the general plain bilinear product, which is associative, and it is the three other columns that the row decides. The degree-three row records the identity $\tilde Q_1(\tilde Q_1\tilde Q_1)=(\tilde Q_1\tilde Q_1)\tilde Q_1$ for the operation in question, which is how power associativity is tested for a product of this kind; in this and the two rows above it, juxtaposition stands for the operation of the row. The last two rows ask which of the four general products is a multiplication of an algebra of the two kinds the corpus has, with the definitions of the paragraph above the table and with nothing added to them. The test is the scalar rules alone, and it is decided by the second slot. When the second slot is read without a conjugation, as in $\tilde Q_1\tilde Q_2$ and in $\tilde Q_1^{\natural}\tilde Q_2$, the product is $\mathbb{C}$-bilinear and belongs to the bilinear row; when it carries the star, as in $\tilde Q_1\tilde Q_2^{*}$ and in $\tilde Q_1^{\natural}\tilde Q_2^{*}$, the product is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second and belongs to the sesquilinear row. The witness for each exclusion is one scalar, $\lambda = i$, and one pair, $\tilde Q_1 = \tilde Q_2 = e_t$: for the two bilinear products $\tilde Q_1(i\tilde Q_2) = ie_t$ while $\bar\imath(\tilde Q_1\tilde Q_2) = -ie_t$, so they are not $\varsigma$-sesquilinear for the conjugation; and for the two star-products $\tilde Q_1(i\tilde Q_2) = -ie_t$ while $i(\tilde Q_1\tilde Q_2) = ie_t$, so they are not $\mathbb{C}$-bilinear. The four therefore split two and two by the involution each carries, the bilinear row reading yes, yes, no, no and the sesquilinear row no, no, yes, yes. Neither row separates the third column from the fourth, and none should: the two star-products differ only in the first slot, and ${}^{\natural}$ is $\mathbb{C}$-linear, so both are sesquilinear for the same conjugation. What separates them is the unit, and it is the row "$1$ is a right identity" above: the general plain sesquilinear product has $e_t$ on the right and the complex quaternionic one has not. Equivalently, only the general plain sesquilinear product is the **derived operation** $\tilde Q_1\star\tilde Q_2 = \tilde Q_1\tilde Q_2^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, the standard example of *Sesqualgebras* and the structure of *Introduction to the General Plain Sesqualgebra*. The bilinear row is weakened in the same way by the absence of a qualifier: the sharper statement, that exactly one of the four general products is the multiplication of an **associative unital** $\mathbb{C}$-algebra, is §*Which of the Four Is a Multiplication* below, and it holds because the ${}^{\natural}$-product is neither associative nor two-sidedly unital.
 
 
 ## Bilinearity and Sesquilinearity
@@ -482,18 +497,18 @@ The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, and that is all: it is not
 
 The two products carrying the star are not multiplications of a bilinear $\mathbb{C}$-algebra at all: being conjugate-linear in their second argument they cannot be. Both are multiplications of a sesqualgebra over the conjugation, and within the pair they are separated by the unit. The general plain sesquilinear product is the derived operation $\tilde Q_1\star\tilde Q_2 = \tilde Q_1\tilde Q_2^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, that is the standard example of the category, and $e_t$ is a right unit of it; the general quaternionic sesquilinear product reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well and has no right unit, so it is a sesquilinear multiplication that is not the derived one (*Introduction to the General Plain Sesqualgebra*). The classification of the four general products is therefore: one multiplication of an associative unital algebra, one bilinear product that fails associativity and two-sidedness, and two multiplications of a sesqualgebra, of which the complex one is the derived operation with the right unit and the complex quaternionic one is not the derived operation and has no right unit.
 
-The order of the four general products matches the order of the objects. The general plain bilinear product is the multiplication of the associative unital algebra; the general plain sesquilinear product is the derived operation, the multiplication the sesqualgebra takes; the two $\natural$-products are the same two products read with the $\mathbb{C}$-linear conjugation ${}^{\natural}$ inserted in the first slot, and the insertion of a $\mathbb{C}$-linear map changes the product without changing its sesquilinearity type.
+The order of the four general products is the order of the two slots: the first slot is read plain or through ${}^{\natural}$ and runs the outer loop, the second plain or through ${}^{*}$ and runs the inner loop, so the quaternionic bilinear product is the second case and the plain sesquilinear product the third. The general plain bilinear product is the multiplication of the associative unital algebra; the general quaternionic bilinear product is the same multiplication with ${}^{\natural}$ in the first slot, non-associative and unital on the left alone; the general plain sesquilinear product is the derived operation, the multiplication the sesqualgebra takes; and the general quaternionic sesquilinear product is the same derived operation with ${}^{\natural}$ in the first slot, with no unit at all.
 
-Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in *The Biquaternion Algebra and Its Vector Spaces*, the general plain sesquilinear product in *Introduction to the General Plain Sesqualgebra*, the general quaternionic bilinear product in *Introduction to the General Quaternionic Algebra*, and the general quaternionic sesquilinear product in *Introduction to the General Quaternionic Sesqualgebra*; the entries of the table above are the statements those four articles prove or quote.
+Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in *The Biquaternion Algebra and Its Vector Spaces*, the general quaternionic bilinear product in *Introduction to the General Quaternionic Algebra*, the general plain sesquilinear product in *Introduction to the General Plain Sesqualgebra*, and the general quaternionic sesquilinear product in *Introduction to the General Quaternionic Sesqualgebra*; the entries of the table above are the statements those four articles prove or quote.
 
 The four rules are also one rule with a conjugation inserted in each slot. The two insertions commute, the four readings form a group $\mathbb{Z}_2\times\mathbb{Z}_2$, and read on a general algebra with its two anti-involutions they give the slot family: the second slot carries the $\mathbb{C}$-bilinearity in the second argument, the left unit and the monoid of left multiplications, the first slot carries the right unit, and associativity and the scalar square are decided by the counterexamples above. That construction, the group of the readings and the table of the slots are *Introduction to the Operators of the Biquaternion Algebra*, §*The Four Readings and Their Group*.
 
 
 ## Summary
 
-The four general products of the underlying complex space of $\mathbb{B}$ are read on one and the same pair, each with either element read as it stands or through a conjugation: the natural ${}^{\natural}$ in the first slot and the Hermitian ${}^{*}$ in the second. They are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and no two agree on every pair. The two remaining conjugations add no new scalar part, since $\mathrm{Sc}(\bar{\tilde Q}_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
+The four general products of the underlying complex space of $\mathbb{B}$ are read on one and the same pair, each with either element read as it stands or through a conjugation: the natural ${}^{\natural}$ in the first slot and the Hermitian ${}^{*}$ in the second. They are the general plain bilinear product $\tilde Q_1\tilde Q_2$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and no two agree on every pair. The two remaining conjugations add no new scalar part, since $\mathrm{Sc}(\bar{\tilde Q}_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
-The conjugation in a slot separates the scalar part of that factor from its vector part: $\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2$ is $2Q_{1t}\tilde Q_2$ or $2\vec Q_1\tilde Q_2$, and the same two identities hold with $\tilde Q_2^{*}$ in place of $\tilde Q_2$; they hold again for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the product with its slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric, while no one of the four products is commutative. The four scalar parts are $\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, $\sum_\mu Q_{1\mu}Q_{2\mu}$ and $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$.
+The conjugation in a slot separates the scalar part of that factor from its vector part: $\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2$ is $2Q_{1t}\tilde Q_2$ or $2\vec Q_1\tilde Q_2$, and the same two identities hold with $\tilde Q_2^{*}$ in place of $\tilde Q_2$; they hold again for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the product with its slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric, while no one of the four products is commutative. The four scalar parts are $\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}Q_{2\mu}$, $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ and $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, in the order of the two slots. The case with both slots conjugated is the one that carries a symmetry: the natural conjugation is the fundamental symmetry of the Krein form, with bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$, and it is the unique such symmetry that is a unital $\mathbb{C}$-algebra anti-automorphism.
 
 The comparison gives the property table. Each of the four is $\mathbb{C}$-linear in the first argument; the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear in the second, the two products carrying the star are conjugate-linear there. The general plain bilinear product is associative, has the two-sided unit $1$, is alternative, flexible and satisfies the degree-three identity, and its left multiplications form a monoid. The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, has the left unit $1$ alone, and fails associativity, the alternative identities, flexibility and the degree-three identity, as do the two sesquilinear products, which have no identity and whose left multiplications do not form a monoid. The left multiplications of the four are the plain ones read through the conjugations: $L^{*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\tilde Q_1^{*}}$, $L^{\natural}_{\tilde Q_1}=L_{\tilde Q_1^{\natural}}$ and $L^{\natural*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\bar{\tilde Q}_1}$.
 
@@ -501,18 +516,21 @@ The annihilators are the kernels of these multiplications: the plain ones have d
 
 Exactly one of the four is a multiplication of an associative unital $\mathbb{C}$-algebra, the general plain bilinear product; the ${}^{\natural}$-product is $\mathbb{C}$-bilinear but neither associative nor two-sidedly unital. The two products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$; among them the general plain sesquilinear product is the derived operation of $\mathbb{B}$ with its involution and has $e_t$ as a right unit, while the general quaternionic one has neither property.
 
-The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tilde Q)=Q_t^2-(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^2$, $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+(\vec Q,\vec Q)$ and $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$, and only the ${}^{\natural}$-square is a scalar element, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; the idempotents and the roots that follow from them are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the square-roots article of each of the other three products.
+The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tilde Q)=Q_t^2-(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^2$ and $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$, and only the ${}^{\natural}$-square is a scalar element, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; the idempotents and the roots that follow from them are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the square-roots article of each of the other three products.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde Q_1\tilde Q_2$ | the general plain bilinear product |
-| $\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquilinear product |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product |
+| $\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquilinear product |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
 | $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ | the two elements and their four complex coordinates |
 | $\tilde Q_1^{\natural}$, $\tilde Q_1^{*}$ | the two conjugations, in coordinates |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form, the scalar part of the plain sesquilinear product |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | the Krein form, the scalar part of the quaternionic sesquilinear product |
+| $J={}^{\natural}$ | the natural conjugation, the fundamental symmetry of the Krein form |
 | $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ | the vector part, read as an element where it multiplies |
 | $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ | the complex bilinear dot product |
 | $\vec Q_1\times\vec Q_2$ | the complex bilinear cross product |

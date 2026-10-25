@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general plain sesquilinear product the *Hermitian Adjoint* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, and the general quaternionic sesquilinear product the Krein form, which carries its own indefinite theory rather than a family of the four-adjoint kind. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
+The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, the general plain sesquilinear product the *Hermitian Adjoint* family, and the general quaternionic sesquilinear product the Krein form, which carries its own indefinite theory rather than a family of the four-adjoint kind. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
 
 This article states that division of labour precisely, with the matrices of one element read through all four insertions. It opens the group *Operators* and carries the passage from a product to an operator.
 
@@ -20,14 +20,14 @@ The four general products, their relations and their comparison are *The Four Ge
 $$
 \tilde Q_1\tilde Q_2 ,
 \qquad
-\tilde Q_1\tilde Q_2^{*} ,
-\qquad
 \tilde Q_1^{\natural}\tilde Q_2 ,
+\qquad
+\tilde Q_1\tilde Q_2^{*} ,
 \qquad
 \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-the plain bilinear, the general plain sesquilinear, the general quaternionic bilinear and the general quaternionic sesquilinear product.
+the plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear product.
 
 **Proposition (one table, two insertions).** The four rules multiply the coordinates on the same products $e_\mu e_\nu$ of the basis. They differ in one point alone: whether the coordinates of each of the two elements are used as they stand or taken from the conjugated element, the two elements being treated independently of one another. Equivalently, the four general products are the four members of the orbit
 

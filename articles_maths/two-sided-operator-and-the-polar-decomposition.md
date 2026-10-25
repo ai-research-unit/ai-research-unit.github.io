@@ -477,7 +477,7 @@ The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm
 
 **The addition is at the level of generators.** For a general word the two slot exponents do not combine into one rapidity and one angle unless the axes commute. The four products $\lambda_i\bar\lambda_j$ remain exact; the split into a boost and a rotation is the content of §*The Boost* and §*The Rotor* for commuting axes. For a pure non-central factor the eigenvalue $1$ occurs twice in the list; for the scale the value $r^{2}$ occurs four times, and for the phase the value $1$ occurs four times.
 
-The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$ is a Jordan block, the common eigenbasis of $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ does not exist, and the spectral formula is unavailable; the sandwich itself remains defined. This is the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$*.
+The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$ is a Jordan block, the common eigenbasis of $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ does not exist, and the spectral formula is unavailable; the sandwich itself remains defined. This is the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Cone and Its Three Regimes*.
 
 ## The Angle Bookkeeping
 

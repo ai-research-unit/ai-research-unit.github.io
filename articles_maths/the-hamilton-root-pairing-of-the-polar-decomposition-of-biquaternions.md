@@ -82,7 +82,7 @@ $$
 
 Then $\tilde Q=\Rho(\cos\Theta+\vec U\sin\Theta)$.
 
-The axis and the eigenvalues are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\Rho\exp(\pm i\Theta)$ of the spectrum. The branch of $\Rho$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Eigenvalue Decomposition* of that article.
+The axis and the eigenvalues are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\Rho\exp(\pm i\Theta)$ of the spectrum. The branch of $\Rho$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Spectral Decomposition* of that article.
 
 **The axis.** The normalisation $\vec U^2=-e_t$ is what $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ provides. The axis is not an arbitrary root of $-1$ but the one parallel to the vector part, and that parallelism is what makes the representation canonical. When the vector part is null, $B=0$ and the axis does not exist; that is the domain restriction below.
 

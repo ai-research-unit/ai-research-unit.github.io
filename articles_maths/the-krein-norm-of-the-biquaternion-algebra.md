@@ -24,31 +24,9 @@ so the inertia is $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, with 
 
 The article reads the form as the form of the algebra: the natural conjugation as its canonical symmetry, the isotropic and the doubly null lines, and the $J$-positive cone of operators. The norm itself, its sign regions, its null set and the cone it closes are *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*. The general theory of indefinite forms, fundamental decompositions, orthogonality and the classification of subspaces is *Indefinite Inner Product Spaces* and *The Fundamental Symmetry of the Form*; the restrictions are *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; the level sets and their topology are *The Krein Level Sets and the Hyperbolic Structure*; the operator theory is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; and the isometry group is *The Krein Isometry Group and Its Cartan Decomposition*.
 
-## The Natural Conjugation as a Fundamental Symmetry
-
-The natural conjugation $J={}^{\natural}$ multiplies the vector part by $-1$, so $J=\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis. It is a **fundamental symmetry** of the Krein form:
-$$
-J^2=\mathrm{id},\qquad
-\langle\tilde Q_2,J\tilde Q_1\rangle_{\natural*}=\langle J\tilde Q_2,\tilde Q_1\rangle_{\natural*},\qquad
-\langle\tilde Q_1,J\tilde Q_1\rangle_{\natural*}=\lVert\tilde Q_1\rVert_E^2>0\quad(\tilde Q_1\neq0).
-$$
-The definite form it induces is the companion, and the bridge between the indefinite and the definite form is
-$$
-\boxed{\;\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}=\langle\tilde Q_2,\tilde Q_1^{\natural}\rangle_{*}\;}
-$$
-The eigenspaces of $J$ are the centre and the vector subspace, of complex dimensions $1$ and $3$. They are definite of the two signs and Krein-orthogonal, so the centre–vector splitting
-$$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}}
-$$
-is a fundamental decomposition. The verification is the sign computation $\varepsilon_\mu^2=1$; the general definitions are *The Fundamental Symmetry of the Form*.
-
-**Theorem (the algebraic member is unique).** The natural conjugation is the unique fundamental symmetry of the Krein form that is a unital $\mathbb{C}$-algebra anti-automorphism.
-
-*Proof.* Let $J$ be such a symmetry. For every $\tilde Q$, $J(\tilde Qe_t)=J(e_t)J(\tilde Q)$ and $J(e_t\tilde Q)=J(\tilde Q)J(e_t)$; since $J$ is bijective, $J(e_t)$ is a two-sided unit, hence $J(e_t)=e_t$. The $+1$-eigenspace of $J$ is the positive part of a fundamental decomposition, of complex dimension one, and it contains $e_t$; it is therefore $\mathbb{C}_{\mathbb{B}}$. Then $J$ is $+\mathrm{id}$ on the centre and $-\mathrm{id}$ on $\mathbb{V}_{\mathbb{B}}$, which is ${}^{\natural}$. Conversely ${}^{\natural}$ is such a symmetry.
-
-**Remark (the other symmetries).** Every fundamental symmetry is the reflection $J_{\mathbb{W}}=2P_{\mathbb{W}}-\mathrm{id}$ in a positive definite line $\mathbb{W}=\mathbb{C}(e_t+\tilde V)$ with $\lVert\tilde V\rVert_E<1$, and $J$ is the member $\tilde V=0$. The general parametrisation is *The Fundamental Symmetry of the Form*, §*Non-Uniqueness and the Angular Operator*; the lines are classified in the next section.
-
 ## The Positive Lines
+
+**The symmetry.** The natural conjugation $J={}^{\natural}=\operatorname{diag}(1,-1,-1,-1)$ is the fundamental symmetry of the Krein form, with bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$; its eigenspaces are the centre and the vector subspace, which is the fundamental decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}}$. The proof that it is the unique such symmetry that is a unital $\mathbb{C}$-algebra anti-automorphism, and the reflection in a positive line that gives every other symmetry, are *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The General Quaternionic Sesquilinear Product $\tilde Q_1^{\natural}\tilde Q_2^{*}$*.
 
 **Theorem (the positive lines).** A positive definite complex subspace has complex dimension at most one, and a positive definite real subspace has real dimension at most two. The positive definite complex lines are exactly
 $$
@@ -150,7 +128,7 @@ The cone sits in the Jordan algebra $\mathfrak{p}=J\cdot\operatorname{Herm}_4$ a
 
 The Krein form is the general quaternionic sesquilinear form, of Gram matrix $E=\operatorname{diag}(1,-1,-1,-1)$ and inertia $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$. Its Krein norm $\langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^2-\lVert\vec Q\rVert_E^2$ is real, indefinite and not multiplicative; the sign regions, the null set of real dimension seven and the Krein cone it closes are *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*.
 
-The natural conjugation $J={}^{\natural}$ is the canonical fundamental symmetry, with bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_*$, and it is the unique fundamental symmetry that is a unital algebra anti-automorphism. Its eigenspaces are the centre and the vector subspace, the fundamental decomposition of the space. The positive definite lines are $\mathbb{C}(e_t+\tilde V)$ with $\lVert\tilde V\rVert_E<1$.
+The natural conjugation $J={}^{\natural}$ is the canonical fundamental symmetry, with bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_*$, and it is the unique such symmetry that is a unital $\mathbb{C}$-algebra anti-automorphism; both are *The Four General Products and Their Relations over the Biquaternion Algebra*. Its eigenspaces are the centre and the vector subspace, the fundamental decomposition of the space. The positive definite lines are $\mathbb{C}(e_t+\tilde V)$ with $\lVert\tilde V\rVert_E<1$.
 
 The isotropic structure is the Krein counterpart of the algebraic one. The Witt index of the form is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; the maximal real isotropic plane is $\mathrm{span}_{\mathbb{R}}\{e_t+\vec e_x,i(e_t+\vec e_x)\}$. The doubly null lines are exactly the Peirce lines $\mathbb{C}(e_t+i\vec u)$, so the null set of the Krein form meets the algebraic null cone exactly in the Peirce lines. The $J$-positive cone of operators is the image $J\cdot\{S\ge0\}$ of the Hilbert cone.
 
@@ -173,6 +151,7 @@ The isotropic structure is the Krein counterpart of the algebraic one. The Witt 
 ## Further Reading
 
 - [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the Krein norm, its sign regions, the null set, the isotropic elements and the Krein cone.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four products, the conjugations of the two slots and the natural conjugation as the fundamental symmetry of the Krein form.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms, their Gram matrices, their signatures and their four null sets.
 - [The Fundamental Symmetry of the Form](the-fundamental-symmetry-of-the-form.html), for the general fundamental decomposition, the bridge between the indefinite and the definite form, and the non-uniqueness of the symmetry.
 - [The Realification of the General Quaternionic Sesqualgebra](the-realification-of-the-general-quaternionic-sesqualgebra.html), for the real reading of the algebra and the realified matrix of signature $(2,6)$.

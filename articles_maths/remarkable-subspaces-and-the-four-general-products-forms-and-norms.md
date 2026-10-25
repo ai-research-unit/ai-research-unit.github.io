@@ -41,12 +41,12 @@ $$
 
 the two scalar blocks of dimension one and the two vector blocks of dimension three. The centre and the vector subspace are **complex subspaces**, with $iU=U$; the other four are **real-type subspaces**, with $iU\cap U=\{0\}$. The two sectors are $\mathbb{M}_+$, the informational sector, and $\mathbb{M}_-$, the material sector.
 
-The four **general products** are the general plain bilinear, the general plain sesquilinear, the general quaternionic bilinear and the general quaternionic sesquilinear,
+The four **general products** are the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear,
 
 $$
 f_{\mathrm{pl}}(\tilde Q_1,\tilde Q_2)=\tilde Q_1\tilde Q_2,\qquad
-f_{\mathrm{pl}*}(\tilde Q_1,\tilde Q_2)=\tilde Q_1\tilde Q_2^{*},\qquad
 f_{\natural}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{\natural}\tilde Q_2,\qquad
+f_{\mathrm{pl}*}(\tilde Q_1,\tilde Q_2)=\tilde Q_1\tilde Q_2^{*},\qquad
 f_{\natural*}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{\natural}\tilde Q_2^{*},
 $$
 
@@ -845,7 +845,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 |---|---|
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the centre, the vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces |
 | $A_1=\mathbb{R}e_t$, $A_2=\mathbb{R}(ie_t)$, $B_1$, $B_2$ | the two scalar and the two vector coordinate blocks |
-| $f_{\mathrm{pl}}$, $f_{\mathrm{pl}*}$, $f_{\natural}$, $f_{\natural*}$ | the four general products: plain bilinear, plain sesquilinear, quaternionic bilinear, quaternionic sesquilinear |
+| $f_{\mathrm{pl}}$, $f_{\natural}$, $f_{\mathrm{pl}*}$, $f_{\natural*}$ | the four general products: plain bilinear, quaternionic bilinear, plain sesquilinear, quaternionic sesquilinear |
 | $\bullet_{\mathrm{pl}}$, $\bullet$, $\bullet_{*}$, $\bullet_{\natural*}$ | their symmetrisations |
 | $[\cdot,\cdot]$, $[\cdot,\cdot]_{\natural}$, $[\cdot,\cdot]_{*}$, $[\cdot,\cdot]_{\natural*}$ | their brackets |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the four forms: plain bilinear, quaternionic bilinear, plain sesquilinear or Hermitian, quaternionic sesquilinear or Krein |

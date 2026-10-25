@@ -14,7 +14,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t,\qquad N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=(Q_t^2+B^2)e_t.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. **The spectral article writes $R^2$ for the same square and $R$ for the same root**, so the two letters denote one object; the sector articles write $B^2$. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the norm and its two cases are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*; the spectral criterion, the characteristic polynomial and the cone are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
+The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The spectral article, the sector articles and this one all write $B^2$ for the square and $B$ for the root. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the norm and its two cases are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*; the spectral criterion, the characteristic polynomial and the cone are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
 
 ## The Characteristic Polynomial and the Two Conditions
 
@@ -291,7 +291,7 @@ If $B^{2}=0$ then $\mathrm{ad}_{\vec Q}^{3}=0$, so the derivation is nilpotent, 
 
 **Theorem (completeness of the characteristic polynomial).** Off the spectral-degenerate cone the characteristic polynomial, equivalently the pair $(2Q_t,N)$, is a complete invariant of the similarity class. On $\mathcal S$ it is not: exactly two similarity classes share each characteristic polynomial, the scalar class $Q_te_t$ and the Jordan class $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. At $Q_t=0$ the two classes are the origin and the non-zero nilpotents.
 
-*Proof.* This is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*Similarity Classes and the Eigenvalue Dichotomy*. Off $\mathcal S$ the two eigenvalues are distinct, so the element is diagonalisable with that spectrum, and the unordered pair determines the class. On $\mathcal S$ the only eigenvalue is $Q_t$; the scalar class is central, and the Jordan class has minimal polynomial $(X-Q_t)^2$, so the two are not similar.
+*Proof.* This is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Similarity Classification*. Off $\mathcal S$ the two eigenvalues are distinct, so the element is diagonalisable with that spectrum, and the unordered pair determines the class. On $\mathcal S$ the only eigenvalue is $Q_t$; the scalar class is central, and the Jordan class has minimal polynomial $(X-Q_t)^2$, so the two are not similar.
 
 **Corollary (the minimal polynomial is the finer invariant).** The two classes of $\mathcal S$ are separated by the minimal polynomial, $X-Q_t$ against $(X-Q_t)^2$. The norm, the trace, the characteristic polynomial and the spectrum do not separate them.
 
@@ -325,7 +325,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 | $\tilde Q=Q_te_t+\vec Q$ | a general element |
 | $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part |
 | $N(\tilde Q)=Q_t^2+B^2$ | the quaternionic norm, the constant term of $p_{\tilde Q}$ and the product of the eigenvalues |
-| $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, written $R^2$ in the spectral article |
+| $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, the discriminant up to $-4$ |
 | $p_{\tilde Q}(X)=X^2-2Q_tX+N$ | the characteristic polynomial |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
 | $\operatorname{disc}p_{\tilde Q}=-4B^2=4(Q_t^2-N)$ | the discriminant |
