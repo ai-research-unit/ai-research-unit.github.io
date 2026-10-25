@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy"><strong>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries two quadratic conditions. The <strong>quaternionic norm</strong> $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative and decides invertibility; its zero locus is the <strong>null cone</strong> $\mathcal N$. The <strong>square of the vector part</strong> $B^2$ carries no scalar term, is not multiplicative, and decides whether the two eigenvalues $\lambda_\pm=Q_t\pm iB$ can be told apart; its zero locus is the <strong>spectral-degenerate cone</strong> $\mathcal S$. The two conditions are studied one at a time in <em>Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>. This article studies them together.</p>
+<p>The relation is a relation between two conditions on the same unordered pair of eigenvalues. The norm is the product, $N=\lambda_+\lambda_-$; the spectral condition is the coincidence, $\lambda_+=\lambda_-$. The norm vanishes exactly when one eigenvalue vanishes, and the discriminant vanishes exactly when the two coincide. These are different conditions on the same pair, and neither implies the other. Both are degenerations of one quadratic, the characteristic polynomial $p_{\tilde Q}(X)=X^2-2Q_tX+N$: a zero constant term, and a vanishing discriminant.</p>
+<p><strong>Naming.</strong> $\mathcal N$ is the <strong>null cone of the quaternionic norm</strong>, qualified at first use and then the null cone. $\mathcal S$ is the <strong>spectral-degenerate cone</strong> and is never called a null cone, because $B^2$ is not a norm on $\mathbb{B}$. An element is <strong>norm-regular</strong> when $N\neq0$ and <strong>norm-degenerate</strong> when $N=0$; it is <strong>spectrally regular</strong> when $B^2\neq0$ and <strong>spectrally degenerate</strong> when $B^2=0$. The adjective is written in full wherever the two could collide, and the bare word regular is not used.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$, and with complex coefficients. The natural conjugation is the $\mathbb{C}$-linear quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$, an anti-involution of order two fixing the centre. The vector part is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and</p>
+<p>$$
+B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t,\qquad N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=(Q_t^2+B^2)e_t.
+$$</p>
+<p>The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. <strong>The spectral article writes $R^2$ for the same square and $R$ for the same root</strong>, so the two letters denote one object; the sector articles write $B^2$. The algebra and its conventions are <em>The Biquaternion Algebra and Its Vector Spaces</em>; the norm and its two cases are <em>Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</em>; the spectral criterion, the characteristic polynomial and the cone are <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>.</p>
+<h2 id="the-characteristic-polynomial-and-the-two-conditions">The Characteristic Polynomial and the Two Conditions</h2>
+<p><strong>Definition (the two conditions).</strong> For $\tilde Q=Q_te_t+\vec Q$,</p>
+<p>$$
+N(\tilde Q)=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+$$</p>
+<p>and the two cones are</p>
+<p>$$
+\mathcal N=\{N=0\},\qquad \mathcal S=\{B^2=0\}.
+$$</p>
+<p><strong>Theorem (the spectrum reads both conditions).</strong> Let $\lambda_\pm=Q_t\pm iB$ be the eigenvalues, with $B$ a fixed square root of $B^2$. Then</p>
+<p>$$
+p_{\tilde Q}(X)=X^2-2Q_tX+N=(X-\lambda_+)(X-\lambda_-),
+$$</p>
+<p>and the two conditions are read in the coefficients and the discriminant:</p>
+<p>$$
+N=\lambda_+\lambda_-,\qquad 2Q_t=\lambda_++\lambda_-,\qquad \operatorname{disc}p_{\tilde Q}=(\lambda_+-\lambda_-)^2=-4B^2=4(Q_t^2-N).
+$$</p>
+<p><em>Proof.</em> The product and the sum of the roots give the first two identities. The discriminant is the square of the difference of the roots, $(\lambda_+-\lambda_-)^2=-4B^2$, and $N=Q_t^2+B^2$ gives $-4B^2=4(Q_t^2-N)$.</p>
+<p><strong>Corollary (two degenerations of one quadratic).</strong> The norm vanishes exactly when $0$ is a root of $p_{\tilde Q}$; the spectral condition vanishes exactly when $p_{\tilde Q}$ has a double root. In the coefficients, $\mathcal N$ is the vanishing of the constant term and $\mathcal S$ the vanishing of the discriminant.</p>
+<p><strong>Corollary (the four spectral patterns).</strong> Write $\sigma(\tilde Q)=\{\lambda_+,\lambda_-\}$.</p>
+<ol>
+<li>$\tilde Q\in\mathcal N$ exactly when $0\in\sigma(\tilde Q)$.</li>
+<li>$\tilde Q\in\mathcal S$ exactly when $\sigma(\tilde Q)$ is a singleton.</li>
+<li>$\tilde Q\in\mathcal N\cap\mathcal S$ exactly when $\sigma(\tilde Q)=\{0\}$.</li>
+<li>Off the two cones, $\sigma(\tilde Q)$ is a pair of distinct non-zero complex numbers.</li>
+</ol>
+<p><em>Proof.</em> (1) By the spectral criterion of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Spectral Criterion</em>, $\lambda\in\sigma(\tilde Q)$ exactly when $(\lambda-Q_t)^2+B^2=0$; and $N(\tilde Q-\lambda e_t)=(\lambda-Q_t)^2+B^2$, so this is $N(\tilde Q-\lambda e_t)=0$. At $\lambda=0$ it is $N(\tilde Q)=0$. The same statement follows from $N=\lambda_+\lambda_-$. (2) is $\lambda_+-\lambda_-=2iB$. (3) combines (1) and (2). (4) is the negation of (1) and (2).</p>
+<p><strong>The two conditions side by side.</strong> The table collects the two readings.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th><strong>item</strong></th>
+<th>quaternionic norm</th>
+<th>spectral condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quantity</td>
+<td>$N=Q_t^2+B^2$</td>
+<td>$B^2=Q_x^2+Q_y^2+Q_z^2$</td>
+</tr>
+<tr>
+<td>role in $p_{\tilde Q}$</td>
+<td>the constant term</td>
+<td>the discriminant, up to $-4$</td>
+</tr>
+<tr>
+<td>spectral reading</td>
+<td>$N=\lambda_+\lambda_-$</td>
+<td>$\lambda_+-\lambda_-=2iB$</td>
+</tr>
+<tr>
+<td>zero locus</td>
+<td>$\mathcal N$</td>
+<td>$\mathcal S$</td>
+</tr>
+<tr>
+<td>vanishing means</td>
+<td>an eigenvalue is $0$</td>
+<td>the two eigenvalues coincide</td>
+</tr>
+<tr>
+<td>multiplicative</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>decides</td>
+<td>invertibility</td>
+<td>separation of the spectrum</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary (the independence is a statement about a quadratic).</strong> The two cones are independent because a quadratic over $\mathbb C$ can have a double non-zero root without a zero root, and a zero root without a double root. The algebraic witnesses are the two elements of §<em>Independence of the Two Cones</em>.</p>
+<h2 id="the-norm-as-a-function-of-the-spectrum">The Norm as a Function of the Spectrum</h2>
+<p><strong>Theorem (the norm is determined by the spectrum).</strong> The norm is the product of the eigenvalues,</p>
+<p>$$
+N=\lambda_+\lambda_-.
+$$</p>
+<p>The spectrum is not determined by the norm.</p>
+<p><em>Proof.</em> The first statement is the previous theorem. For the second, fix $N$ and vary $Q_t$: the eigenvalues $Q_t\pm iB$ with $B^2=N-Q_t^2$ change with $Q_t$, while the product stays $N$.</p>
+<p><strong>Corollary (norm-regular exactly when no eigenvalue vanishes).</strong> $\tilde Q$ is norm-regular exactly when both eigenvalues are non-zero.</p>
+<p><em>Proof.</em> $N=\lambda_+\lambda_-$ and $\mathbb C$ is a field.</p>
+<p><strong>Corollary (the norm on each cone).</strong></p>
+<ul>
+<li>On $\mathcal S$ one has $N=Q_t^2$. So a point of $\mathcal S$ is norm-regular exactly when its repeated eigenvalue $Q_t$ is non-zero; the norm-degenerate points of $\mathcal S$ are the origin and the non-zero nilpotents.</li>
+<li>On $\mathcal N$ the spectrum is $\{2Q_t,0\}$. Off $\mathcal S$ one has $Q_t\neq0$, so exactly one eigenvalue is zero and the other is $2Q_t$.</li>
+<li>On $\mathcal S\setminus\mathcal N$ the spectrum is $\{Q_t,Q_t\}$ with $Q_t\neq0$.</li>
+<li>On $\mathcal N\setminus\mathcal S$ the spectrum is $\{2Q_t,0\}$ with $Q_t\neq0$.</li>
+</ul>
+<p><em>Proof.</em> On $\mathcal N$ one has $B^2=-Q_t^2$, so $iB=\pm Q_t$ and the eigenvalues $Q_t\pm iB$ are $2Q_t$ and $0$. The other statements follow from $N=Q_t^2+B^2$.</p>
+<p><strong>Theorem (the norm does not separate the scalar line from the Jordan part).</strong> Let $Q_t\neq0$ and let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. The scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm $Q_t^2$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^2$. They have different minimal polynomials, $X-Q_t$ and $(X-Q_t)^2$. No function of the norm alone distinguishes them.</p>
+<p><em>Proof.</em> The element $\vec\Upsilon$ is pure and square-zero, so $N(Q_te_t+\vec\Upsilon)=Q_t^2$ and the trace is $2Q_t$. The scalar satisfies $\tilde Q-Q_te_t=0$; the Jordan element satisfies $(\tilde Q-Q_te_t)^2=0$ and $\tilde Q-Q_te_t\neq0$.</p>
+<p><strong>Remark (what the norm sees).</strong> The norm is one of the two elementary symmetric functions of the spectrum, the product; the trace is the other, the sum. The norm alone leaves the sum free, hence leaves the spectrum free. The characteristic polynomial is the pair of the two symmetric functions, and it is the finer invariant; §<em>What the Spectrum Determines</em> states how much finer.</p>
+<h2 id="independence-of-the-two-cones">Independence of the Two Cones</h2>
+<p>The two cones are independent: neither contains the other.</p>
+<h3 id="neither-cone-contains-the-other">Neither Cone Contains the Other</h3>
+<p><strong>Theorem.</strong> $\mathcal N\not\subseteq\mathcal S$ and $\mathcal S\not\subseteq\mathcal N$.</p>
+<p><em>Proof.</em> Two witnesses.</p>
+<ul>
+<li><strong>A zero divisor with distinct eigenvalues.</strong> Let $\tilde Q=e_t+i\vec e_x$. Then $N=1+i^2=0$, so $\tilde Q\in\mathcal N$, and $B^2=i^2=-1\neq0$, so $\tilde Q\notin\mathcal S$. Its eigenvalues are $1\pm i\cdot i$, that is $0$ and $2$; they are distinct, and the spectral decomposition exists, with the idempotents $\tilde Q/2$ and $e_t-\tilde Q/2$.</li>
+<li><strong>A unit with a repeated eigenvalue.</strong> Let $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $B^2=1+i^2=0$, so $\tilde Q\in\mathcal S$, and $N=1+1+i^2=1\neq0$, so $\tilde Q\notin\mathcal N$. Its only eigenvalue is $1$, its minimal polynomial is $(X-1)^2$, and it is a unit with no spectral decomposition.</li>
+</ul>
+<p>The first is a norm-degenerate, spectrally regular element; the second is a norm-regular, spectrally degenerate element.</p>
+<h3 id="the-intersection">The Intersection</h3>
+<p><strong>Theorem (the intersection is the nilpotent cone).</strong></p>
+<p>$$
+\mathcal N\cap\mathcal S=\{N=0,\ B^2=0\}=\{Q_t=0,\ \vec Q^2=0\}=\{\tilde Q:\tilde Q^2=0\}.
+$$</p>
+<p>It is the origin together with the non-zero pure nilpotents.</p>
+<p><em>Proof.</em> If $N=0$ and $B^2=0$ then $Q_t^2=N-B^2=0$, so $Q_t=0$ and $\vec Q^2=-B^2e_t=0$. Conversely, $\tilde Q^2=(Q_t^2-B^2)e_t+2Q_t\vec Q$. If $\tilde Q^2=0$ and $\vec Q\neq0$, the vector part of the square gives $2Q_t\vec Q=0$, hence $Q_t=0$, and the scalar part gives $B^2=0$. If $\vec Q=0$, the square is $Q_t^2e_t$, so $Q_t=0$.</p>
+<p><strong>The scheme.</strong> As a scheme the intersection is</p>
+<p>$$
+(Q_t^2+B^2,\ B^2)=(Q_t^2,\ B^2),
+$$</p>
+<p>an ideal generated by two squares. Its reduction is the nilpotent cone; the scheme is not reduced.</p>
+<p><strong>The tangency.</strong> The gradients are</p>
+<p>$$
+\nabla N=2(Q_t,Q_x,Q_y,Q_z),\qquad \nabla B^2=2(0,Q_x,Q_y,Q_z).
+$$</p>
+<p>They coincide exactly when $Q_t=0$: along the smooth part of the intersection they are equal and non-zero, and at the origin both vanish. The two cones are therefore tangent along the nilpotent cone minus the origin, and both are singular at the origin.</p>
+<h3 id="the-non-multiplicativity">The Non-Multiplicativity</h3>
+<p><strong>The null cone is a semigroup.</strong> The norm is multiplicative, $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, so both $\mathcal N$ and its complement are stable under the product. The spectral-degenerate cone is stable under neither the product nor the sum. The witness</p>
+<p>$$
+(\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z
+$$</p>
+<p>is a product of two points of $\mathcal S$, since both factors have $B^2=1+i^2=0$. The product has $B^2=(-2i)^2=-4\neq0$, so it lies off $\mathcal S$; its norm is $4-4=0$, so it lies on $\mathcal N$. The sum</p>
+<p>$$
+(\vec e_x+i\vec e_y)+(\vec e_x-i\vec e_y)=2\vec e_x
+$$</p>
+<p>has $B^2=4\neq0$ as well. The cone $\mathcal S$ is a discriminant locus attached to the eigenvalue map, not a multiplicative subset.</p>
+<h2 id="the-five-zones">The Five Zones</h2>
+<p><strong>Definition (the five zones).</strong> The two cones and their complements cut the algebra into four sectors: the complement of the union, the null cone minus the spectral cone, the spectral cone minus the null cone, and the intersection. The spectral sector minus the null cone is cut by the scalar part into the punctured scalar line and the Jordan part; the origin is adjoined to the scalar line to form the scalar zone. The resulting five zones are the joint refinement.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>zone</th>
+<th>condition</th>
+<th>eigenvalue pair</th>
+<th>norm</th>
+<th>minimal polynomial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>distinct</strong></td>
+<td>$B^2\neq0$, $N\neq0$</td>
+<td>$\{\lambda_+,\lambda_-\}$, distinct and non-zero</td>
+<td>$N\neq0$, unit</td>
+<td>$p_{\tilde Q}$, squarefree</td>
+</tr>
+<tr>
+<td><strong>zero divisor</strong></td>
+<td>$B^2\neq0$, $N=0$</td>
+<td>$\{2Q_t,0\}$, $Q_t\neq0$</td>
+<td>$0$, zero divisor</td>
+<td>squarefree</td>
+</tr>
+<tr>
+<td><strong>scalar</strong></td>
+<td>$\vec Q=0$</td>
+<td>$\{Q_t\}$</td>
+<td>$Q_t^2$</td>
+<td>$X-Q_t$</td>
+</tr>
+<tr>
+<td><strong>Jordan</strong></td>
+<td>$B^2=0$, $\vec Q\neq0$, $Q_t\neq0$</td>
+<td>$\{Q_t,Q_t\}$, $Q_t\neq0$</td>
+<td>$Q_t^2$, unit</td>
+<td>$(X-Q_t)^2$</td>
+</tr>
+<tr>
+<td><strong>nilpotent</strong></td>
+<td>$B^2=0$, $\vec Q\neq0$, $Q_t=0$</td>
+<td>$\{0,0\}$</td>
+<td>$0$, zero divisor</td>
+<td>$X^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The zones and the sectors.</strong> Write $\Sigma_{ij}$ for the sector with $i=1$ if $N\neq0$ and $j=1$ if $B^2\neq0$. The distinct zone is $\Sigma_{11}$, the complement of the union. The zero-divisor zone is $\Sigma_{01}=\mathcal N\setminus\mathcal S$. The union of the Jordan zone and the punctured scalar zone is $\Sigma_{10}=\mathcal S\setminus\mathcal N$, with the scalar zone the vertex of $\mathcal S$ and the Jordan zone its smooth part. The nilpotent zone is $\Sigma_{00}\setminus\{0\}$, and the origin belongs to the scalar zone. Each sector is treated in its own article: <em>The Norm-Regular, Spectrally Regular Sector</em>, <em>The Norm-Regular, Spectrally Degenerate Sector</em>, <em>The Norm-Degenerate, Spectrally Regular Sector</em> and <em>The Norm-Degenerate, Spectrally Degenerate Sector</em>.</p>
+<p><strong>Theorem (the three partitions).</strong> The norm, the characteristic polynomial and the minimal polynomial separate the five zones as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>classes of zones</th>
+<th>what it cannot separate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>norm</td>
+<td>$2$: units, the null cone</td>
+<td>distinct from scalar and Jordan; zero divisor from nilpotent; the origin from the rest of the null cone</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$4$: distinct, zero divisor, scalar or Jordan, origin or nilpotent</td>
+<td>scalar from Jordan; origin from nilpotent</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>$5$: one per zone</td>
+<td>nothing</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The norm separates the units from the non-units; the origin is not separated from the rest of the null cone. The characteristic polynomial is the spectrum with multiplicity: it has two distinct roots on the distinct and zero-divisor zones, the double root $Q_t$ on the scalar zone, the double root $Q_t\neq0$ on the Jordan zone, and the double root $0$ on the nilpotent zone. The minimal polynomial is $X-Q_t$ on the scalar zone, $(X-Q_t)^2$ on the Jordan zone, $X$ at the origin, $X^2$ on the nilpotent zone, and the squarefree characteristic polynomial on the distinct and zero-divisor zones.</p>
+<p><strong>Corollary (the norm is the coarser projection).</strong> The spectral problem is finer than the norm problem: every norm class is a union of zones. The norm cannot separate the scalar line from the Jordan part, because both have $N=Q_t^2$, and it cannot separate the zero-divisor zone from the nilpotent zone, because both have $N=0$.</p>
+<h2 id="the-two-decompositions">The Two Decompositions</h2>
+<p><strong>The eigenbasis follows the discriminant, and the polar decomposition follows the norm. The two failures are therefore independent.</strong></p>
+<h3 id="the-eigenbasis">The Eigenbasis</h3>
+<p>By <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Spectral Decomposition</em>, a non-scalar element has a unique spectral decomposition exactly when $B^2\neq0$. On the scalar line the decomposition exists with one term and every idempotent commutes with the element; on the Jordan and nilpotent zones no non-trivial idempotent commutes with it. In the zones: the spectral decomposition exists with two terms on the distinct and zero-divisor zones, with one term on the scalar zone, and it fails on the Jordan and nilpotent zones.</p>
+<h3 id="the-polar-decomposition">The Polar Decomposition</h3>
+<p>The modulus–unit polar decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=N$ with $\Rho\neq0$, so it exists exactly on the complement of the null cone. It therefore fails on the zero-divisor and nilpotent zones and at the origin, and it exists on the distinct, scalar and Jordan zones. On the scalar line it exists exactly when $Q_t\neq0$, that is everywhere except the origin. The decomposition itself is <em>Modulus–Unit Polar Decomposition of Biquaternions</em>, and the comparison with the eigenbasis, factor by factor, is <em>Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</em>.</p>
+<p><strong>The two decompositions in the zones.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>zone</th>
+<th>spectral decomposition</th>
+<th>polar decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distinct</td>
+<td>yes, two terms, unique</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>zero divisor</td>
+<td>yes, two terms, unique</td>
+<td>no</td>
+</tr>
+<tr>
+<td>scalar, $Q_t\neq0$</td>
+<td>yes, one term</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>origin</td>
+<td>yes, one term</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Jordan</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>nilpotent</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary (the two sharpest witnesses).</strong> The zero-divisor zone is a zero divisor with an eigenbasis, and the Jordan zone is a unit without one. The eigenbasis and the polar decomposition fail on different loci, and the Jordan zone is the sharpest witness of the independence: it is norm-regular, so the polar decomposition exists, and spectrally degenerate, so the eigenbasis does not.</p>
+<h2 id="the-two-operator-loci">The Two Operator Loci</h2>
+<p><strong>Three operators read the two conditions: the rank of left multiplication and the sandwich follow the norm, and the inner derivation follows the discriminant.</strong></p>
+<h3 id="the-rank-of-left-multiplication">The Rank of Left Multiplication</h3>
+<p><strong>Theorem.</strong> The left multiplication $L_{\tilde Q}(X)=\tilde QX$ has complex rank $4$ when $N\neq0$, rank $2$ when $\tilde Q$ is a non-zero point of $\mathcal N$, and rank $0$ at the origin.</p>
+<p><em>Proof.</em> If $N\neq0$ then $\tilde Q$ is a unit and $L_{\tilde Q}$ is invertible. If $N=0$ and $\tilde Q\neq0$, the rank is $2$ by <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, §<em>The Annihilators</em>. At the origin the map is zero.</p>
+<p><strong>Corollary.</strong> The rank follows the norm, not the discriminant: the distinct zone and the Jordan zone both have rank $4$, and the zero-divisor zone and the nilpotent zone both have rank $2$.</p>
+<h3 id="the-sandwich">The Sandwich</h3>
+<p><strong>Definition.</strong> The <strong>sandwich</strong> of $\tilde Q$ is the $\mathbb{C}$-linear operator</p>
+<p>$$
+\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}.
+$$</p>
+<p><strong>Theorem.</strong> $\Theta_{\tilde Q}$ is singular exactly on the null cone.</p>
+<p><em>Proof.</em> Suppose first that $\langle\tilde Q\rangle_{\natural}=0$ with $\tilde Q\neq0$. Then $\tilde Q^{\natural}\neq0$, since $\tilde Q^{\natural}=Q_te_t-\vec Q=0$ forces $Q_t=0$ and $\vec Q=0$, hence $\tilde Q=0$. And</p>
+<p>$$
+\Theta_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\,\tilde Q^{\natural}\,\tilde Q^{*}=\langle\tilde Q\rangle_{\natural}\,\tilde Q^{*}=0.
+$$</p>
+<p>So $\Theta_{\tilde Q}$ is singular. At the origin the operator is zero, hence singular. Conversely, if $N\neq0$ then $\tilde Q$ is a unit and</p>
+<p>$$
+\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}.
+$$</p>
+<p>Hence $\Theta_{\tilde Q}$ is singular exactly on $\mathcal N$.</p>
+<h3 id="the-inner-derivation">The Inner Derivation</h3>
+<p><strong>Definition.</strong> The <strong>inner derivation</strong> of $\tilde Q$ is</p>
+<p>$$
+\mathrm{ad}_{\tilde Q}(X)=\tilde QX-X\tilde Q.
+$$</p>
+<p><strong>Theorem.</strong> $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on the spectral-degenerate cone.</p>
+<p><em>Proof.</em> The scalar part is central, so $\mathrm{ad}_{\tilde Q}=\mathrm{ad}_{\vec Q}$. Since $\vec Q^{2}=-B^{2}e_t$,</p>
+<p>$$
+\mathrm{ad}_{\vec Q}^{2}(X)=\vec Q^{2}X-2\vec QX\vec Q+X\vec Q^{2}=-2B^{2}X-2\vec QX\vec Q.
+$$</p>
+<p>Applying $\mathrm{ad}_{\vec Q}$ once more, and using $\vec Q^{2}=-B^{2}e_t$ again,</p>
+<p>$$
+\mathrm{ad}_{\vec Q}^{3}(X)
+=-2B^{2}(\vec QX-X\vec Q)-2(\vec Q^{2}X\vec Q-\vec QX\vec Q^{2})
+=-4B^{2}\,\mathrm{ad}_{\vec Q}(X).
+$$</p>
+<p>If $B^{2}=0$ then $\mathrm{ad}_{\vec Q}^{3}=0$, so the derivation is nilpotent, of index at most three. If $B^{2}\neq0$, then $\vec Q\neq0$; a central element has zero vector part, so the derivation is not zero and $\mathrm{ad}_{\vec Q}^{3}\neq0$. In dimension four a nilpotent operator satisfies $\mathrm{ad}^{4}=0$; here $\mathrm{ad}^{4}=-4B^{2}\mathrm{ad}^{2}$, and $\mathrm{ad}^{2}\neq0$ because $\mathrm{ad}^{3}\neq0$, so $\mathrm{ad}^{4}\neq0$. The derivation is not nilpotent.</p>
+<h3 id="the-table-of-the-operators">The Table of the Operators</h3>
+<p><strong>The three operator readings in the zones.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>zone</th>
+<th>rank $L_{\tilde Q}$</th>
+<th>$\Theta_{\tilde Q}$</th>
+<th>$\mathrm{ad}_{\tilde Q}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distinct</td>
+<td>$4$</td>
+<td>invertible</td>
+<td>not nilpotent</td>
+</tr>
+<tr>
+<td>zero divisor</td>
+<td>$2$</td>
+<td>singular</td>
+<td>not nilpotent</td>
+</tr>
+<tr>
+<td>scalar, $Q_t\neq0$</td>
+<td>$4$</td>
+<td>invertible</td>
+<td>nilpotent, zero</td>
+</tr>
+<tr>
+<td>origin</td>
+<td>$0$</td>
+<td>singular, zero</td>
+<td>nilpotent</td>
+</tr>
+<tr>
+<td>Jordan</td>
+<td>$4$</td>
+<td>invertible</td>
+<td>nilpotent</td>
+</tr>
+<tr>
+<td>nilpotent</td>
+<td>$2$</td>
+<td>singular</td>
+<td>nilpotent</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary (the two operator loci).</strong> The two cones are the two loci of the two-sided operators: the sandwich is singular exactly on $\mathcal N$, and the inner derivation is nilpotent exactly on $\mathcal S$. The rank and the sandwich are built from the norm and the star; the derivation is built from the commutator and sees the vector part alone. The criteria are cone-level and do not separate the strata: the derivation vanishes on the whole scalar line, and the sandwich is singular at the origin as well.</p>
+<h2 id="what-the-spectrum-determines">What the Spectrum Determines</h2>
+<p><strong>Theorem (completeness of the characteristic polynomial).</strong> Off the spectral-degenerate cone the characteristic polynomial, equivalently the pair $(2Q_t,N)$, is a complete invariant of the similarity class. On $\mathcal S$ it is not: exactly two similarity classes share each characteristic polynomial, the scalar class $Q_te_t$ and the Jordan class $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. At $Q_t=0$ the two classes are the origin and the non-zero nilpotents.</p>
+<p><em>Proof.</em> This is <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>Similarity Classes and the Eigenvalue Dichotomy</em>. Off $\mathcal S$ the two eigenvalues are distinct, so the element is diagonalisable with that spectrum, and the unordered pair determines the class. On $\mathcal S$ the only eigenvalue is $Q_t$; the scalar class is central, and the Jordan class has minimal polynomial $(X-Q_t)^2$, so the two are not similar.</p>
+<p><strong>Corollary (the minimal polynomial is the finer invariant).</strong> The two classes of $\mathcal S$ are separated by the minimal polynomial, $X-Q_t$ against $(X-Q_t)^2$. The norm, the trace, the characteristic polynomial and the spectrum do not separate them.</p>
+<p><strong>The chain of invariants.</strong> The table compares what each invariant determines.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>data</th>
+<th>determines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>norm</td>
+<td>$N\in\mathbb{C}$</td>
+<td>the product of the eigenvalues, and invertibility</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$(2Q_t,N)$</td>
+<td>the spectrum with multiplicity; the similarity class off $\mathcal S$, two classes on $\mathcal S$</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>$m_{\tilde Q}$</td>
+<td>the five zones, and the similarity class on each</td>
+</tr>
+<tr>
+<td>element up to similarity</td>
+<td>the class of $\tilde Q$</td>
+<td>everything</td>
+</tr>
+</tbody>
+</table></div>
+<p>Read from the bottom to the top, each invariant is a function of the one below it. Read from the top to the bottom, information is lost: the norm loses the sum, and the characteristic polynomial loses the defect. The norm is the crudest invariant, the minimal polynomial the finest.</p>
+<p><strong>The two degenerations, one last time.</strong> The norm and the discriminant are the two ways the quadratic can degenerate: a zero constant term and a vanishing discriminant. The spectrum determines both. The norm determines neither the discriminant nor the defect. The relation between the two problems is therefore not an implication between the two vanishing conditions: it is a pair of projections of the same spectral data, the norm reading the product of the eigenvalues, the discriminant reading their difference, and the minimal polynomial reading whether they are attached to a defect.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra carries two quadratic conditions. The quaternionic norm $N=Q_t^2+B^2$ is the constant term of the characteristic polynomial and the product of the eigenvalues; it is multiplicative, and it decides invertibility. The square of the vector part $B^2$ vanishes exactly when the discriminant of the characteristic polynomial vanishes, equivalently when the two eigenvalues coincide; it is not multiplicative, and it decides whether the two eigenvalues can be told apart. The null cone is the locus of an eigenvalue at zero, the spectral-degenerate cone the locus of a double eigenvalue.</p>
+<p>The two cones are independent. Neither contains the other: $e_t+i\vec e_x$ is a zero divisor with distinct eigenvalues, and $e_t+\vec e_x+i\vec e_y$ is a unit with a repeated one. They meet exactly on the nilpotent cone, the set of square-zero elements, and they are tangent along it away from the origin. The null cone is a semigroup, the spectral cone is neither multiplicative nor additive.</p>
+<p>The joint refinement is the five zones: distinct, zero-divisor, scalar, Jordan and nilpotent. The norm separates two classes, the characteristic polynomial four, and the minimal polynomial all five. The norm is therefore the coarser invariant: it cannot separate the scalar line from the Jordan part, nor the zero-divisor zone from the nilpotent zone. The characteristic polynomial is complete off the spectral cone and exactly two-to-one on it.</p>
+<p>The two decompositions follow the two conditions. The eigenbasis follows the discriminant, and it fails on the Jordan and nilpotent zones; the polar decomposition follows the norm, and it fails on the null cone. The operator readings are the same pair of loci: the sandwich is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone. The rank of left multiplication and the sandwich follow the norm; the derivation follows the discriminant.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a general element</td>
+</tr>
+<tr>
+<td>$\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
+<td>the vector part</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^2+B^2$</td>
+<td>the quaternionic norm, the constant term of $p_{\tilde Q}$ and the product of the eigenvalues</td>
+</tr>
+<tr>
+<td>$B^2=Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the square of the vector part, written $R^2$ in the spectral article</td>
+</tr>
+<tr>
+<td>$p_{\tilde Q}(X)=X^2-2Q_tX+N$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues</td>
+</tr>
+<tr>
+<td>$\operatorname{disc}p_{\tilde Q}=-4B^2=4(Q_t^2-N)$</td>
+<td>the discriminant</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone</td>
+</tr>
+<tr>
+<td>$\mathcal S=\{B^2=0\}$</td>
+<td>the spectral-degenerate cone</td>
+</tr>
+<tr>
+<td>$\Sigma_{11},\Sigma_{01},\Sigma_{10},\Sigma_{00}$</td>
+<td>the four sectors of the two cones</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}(X)=\tilde QX$</td>
+<td>left multiplication; rank $4$ off $\mathcal N$, rank $2$ on $\mathcal N$ minus the origin, rank $0$ at the origin</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$</td>
+<td>the sandwich, singular exactly on $\mathcal N$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde Q}(X)=\tilde QX-X\tilde Q$</td>
+<td>the inner derivation, nilpotent exactly on $\mathcal S$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the multiplicative norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the characteristic polynomial, the spectral-degenerate cone, the three regimes, the spectral decomposition and the eigenbasis.</li>
+<li><a href="the-norm-regular-spectrally-regular-sector.html">The Norm-Regular, Spectrally Regular Sector</a>, for the distinct zone, the complement of the union of the two cones.</li>
+<li><a href="the-norm-regular-spectrally-degenerate-sector.html">The Norm-Regular, Spectrally Degenerate Sector</a>, for the Jordan part, the unit with a repeated eigenvalue.</li>
+<li><a href="the-norm-degenerate-spectrally-regular-sector.html">The Norm-Degenerate, Spectrally Regular Sector</a>, for the zero-divisor zone, the scaled idempotents and the spectrum $\{c,0\}$.</li>
+<li><a href="the-norm-degenerate-spectrally-degenerate-sector.html">The Norm-Degenerate, Spectrally Degenerate Sector</a>, for the nilpotent cone and the origin.</li>
+<li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</a>, for the comparison of the two decompositions factor by factor.</li>
+<li><a href="two-sided-operator-and-the-polar-decomposition.html">Two-Sided Operator and the Polar Decomposition</a>, for the sandwich, its spectrum and its rank on the null cone.</li>
+<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, for the eigenvalue decomposition, the eigenprojections and the degenerate regimes.</li>
+<li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the modulus $\Rho=\sqrt{N}$ and its failure at $N=0$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

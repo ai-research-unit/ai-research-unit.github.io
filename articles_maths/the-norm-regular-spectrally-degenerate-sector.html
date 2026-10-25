@@ -147,6 +147,31 @@ $$
 $$</p>
 <h3 id="the-split">The split</h3>
 <p>$\Sigma_{10}^{\mathrm{s}}$ is a closed complex submanifold of the sector, of complex dimension $1$; its complement $\Sigma_{10}^{\mathrm{J}}$ is open and dense, of complex dimension $3$. The scalar part is central and semisimple, the Jordan part is regular in the sense $\vec Q\neq0$ and defective. The union is the whole sector, and the two pieces meet only in the limit: a sequence of Jordan elements with $\vec\Upsilon\to0$ converges to a point of the scalar line.</p>
+<h2 id="peirce-data">Peirce Data</h2>
+<p><strong>The sector contains two Peirce behaviours. On the scalar line every idempotent is adapted and the Peirce matrix is $Q_tI$. On the Jordan part no non-trivial idempotent commutes with $\tilde Q$, and the Peirce matrix relative to a nilpotent-generated idempotent is a single Jordan block.</strong></p>
+<h3 id="peirce-data-on-the-scalar-line">Peirce data on the scalar line</h3>
+<p>Let $\tilde Q=Q_te_t$ with $Q_t\neq0$. Every idempotent commutes with $\tilde Q$, so every idempotent is adapted. Relative to any complete pair $(e,f)$,</p>
+<p>$$
+e\tilde Qe=Q_te,\qquad
+e\tilde Qf=0,\qquad
+f\tilde Qe=0,\qquad
+f\tilde Qf=Q_tf,
+$$</p>
+<p>and the Peirce matrix is $Q_tI$ in every Peirce basis. The spectral decomposition has one term, $\tilde Q=Q_te_t$; a two-term refinement $Q_t\tilde\Pi_1+Q_t\tilde\Pi_2$ exists for every orthogonal pair summing to $e_t$ and is not determined by $\tilde Q$. The Peirce data therefore see a repeated eigenvalue as a repeated diagonal entry, and the freedom of the refinement as the freedom of the Peirce pair.</p>
+<h3 id="peirce-data-on-the-jordan-part">Peirce data on the Jordan part</h3>
+<p>Let $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ and $Q_t\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, the dual numbers, whose only idempotents are $0$ and $e_t$. Hence no non-trivial idempotent commutes with $\tilde Q$ and there is no adapted Peirce decomposition.</p>
+<p>A non-zero nilpotent generates a minimal left ideal, so there is an idempotent $e$ with $\vec\Upsilon=e\vec\Upsilon(e_t-e)$. With $f=e_t-e$ the Peirce form is</p>
+<p>$$
+e\tilde Qe=Q_te,\qquad
+e\tilde Qf=\vec\Upsilon,\qquad
+f\tilde Qe=0,\qquad
+f\tilde Qf=Q_tf.
+$$</p>
+<p>The semisimple part is diagonal and the nilpotent part lies in one mixed corner; in the corner coordinates fixed by $(e,\vec\Upsilon)$ and $(f,\vec X)$, where $\vec X$ spans $f\mathbb{B}e$, the Peirce matrix of $\tilde Q$ is the single block</p>
+<p>$$
+\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
+$$</p>
+<p><strong>No Q-adapted basis.</strong> The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, no Peirce pair is attached to $\tilde Q$, and there is no Q-adapted Peirce basis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no Peirce basis is attached to it.</p>
 <h2 id="multiplication-and-inversion">Multiplication and Inversion</h2>
 <p><strong>Products stay off the null cone.</strong> The norm is multiplicative, so for $\tilde P,\tilde Q\in\Sigma_{10}$,</p>
 <p>$$
@@ -245,7 +270,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The two mixed sectors.</strong> $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.</p>
-<p><strong>Position in the five-zone refinement.</strong> The five zones of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Five Zones</em>, sit with respect to the sectors as follows.</p>
+<p><strong>Position in the five-zone refinement.</strong> The five zones of <em>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</em>, §<em>The Five Zones</em>, sit with respect to the sectors as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -392,7 +417,8 @@ $$</p>
 <li><a href="the-norm-degenerate-spectrally-degenerate-sector.html">The Norm-Degenerate, Spectrally Degenerate Sector</a>, for $\Sigma_{00}$, the nilpotents and the origin.</li>
 <li><a href="the-norm-degenerate-spectrally-regular-sector.html">The Norm-Degenerate, Spectrally Regular Sector</a>, for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.</li>
 <li><a href="quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra</a>, for the null cone, its two strata and the unit group.</li>
-<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the discriminant and the five zones.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the discriminant and the spectral-degenerate cone.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the five zones and the comparison of the two cones.</li>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and the minimal left ideals.</li>
 <li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the modulus $\Rho=\sqrt N$ and the unit factor.</li>
 </ul>
