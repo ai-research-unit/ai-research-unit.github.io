@@ -246,6 +246,15 @@ $$</p>
 <p>The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that the two problems are independent: each is degenerate in one respect and non-degenerate in the other. The sector $\Sigma_{00}$ is the opposite case, where the two answers coincide, both negative, and it is the unique such sector.</p>
 <h2 id="consequences">Consequences</h2>
 <p><strong>Eigenbasis.</strong> None, except at the origin. Every non-zero element of $\Sigma_{00}$ has characteristic and minimal polynomial $X^2$: it is a single Jordan block with eigenvalue $0$; the eigenspace is the annihilator plane $A(\tilde Q)$.</p>
+<p><strong>The flow.</strong> There is no root on the sector and no frequency. On the non-zero part $Q_t=0$ and $\vec Q^2=0$, so the exponential is</p>
+<p>$$
+e^{\theta\tilde Q}=e_t+\theta\vec Q,
+$$</p>
+<p>and at the origin it is $e_t$. The Hermitian norm on the non-zero part, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is</p>
+<p>$$
+\langle e^{\theta\tilde Q}\rangle_*=1+\lvert\theta\rvert^2\lVert\vec Q\rVert_E^2,
+$$</p>
+<p>polynomial in $\theta$; the flow is never oscillatory, and no Fourier basis is attached to the element. The exponential is a unit on the sector, although the element is a zero divisor or the origin.</p>
 <p><strong>Polar decomposition.</strong> The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of <em>The Polar Decomposition of an N-Regular Biquaternion</em> has no value on the sector: there is no unit factor of norm one.</p>
 <p><strong>One-sided operators.</strong> Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.</p>
 <p><strong>The "everything fails" cell.</strong> It is the cell in which invertibility, the Peirce decomposition relative to $\tilde Q$ (off the origin), the eigenbasis, the polar decomposition and the injectivity of both multiplications all fail. It is what makes the two problems look alike before the mixed sectors separate them.</p>
@@ -398,6 +407,7 @@ $$</p>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and their dimensions.</li>
 <li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the place of $N$ among the four norms and of $B^2$ outside them.</li>
 <li><a href="the-quaternionic-norm-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.</li>
+<li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.</li>
 </ul>
       </div>
     </main>

@@ -273,6 +273,15 @@ $$</p>
 <p><strong>Position among the four sectors.</strong> Sector $10$ is the <strong>degenerate half of the unit group</strong>, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $N\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in <em>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</em>, §<em>The Chain of Invariants</em>.</p>
 <h2 id="consequences">Consequences</h2>
 <p><strong>Eigenbasis.</strong> It fails on the Jordan part, where the element is a single Jordan block; it exists trivially on the scalar line, where the one-term decomposition into eigenspaces is all there is and any two-term refinement is non-unique. There is no genuine two-term spectral decomposition anywhere in the sector.</p>
+<p><strong>The flow.</strong> There is no root on the sector, and no frequency. On the Jordan part the exponential is the truncated</p>
+<p>$$
+e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec Q\right),\qquad \vec Q^2=0,
+$$</p>
+<p>and on the scalar line it is $e^{\theta Q_t}e_t$. The Hermitian norm on the Jordan part, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is</p>
+<p>$$
+\langle e^{\theta\tilde Q}\rangle_*=\lvert e^{\theta Q_t}\rvert^2\left(1+\lvert\theta\rvert^2\lVert\vec Q\rVert_E^2\right),
+$$</p>
+<p>which is polynomial in $\theta$; it grows even when $Q_t$ is purely imaginary. The flow is never oscillatory, and no Fourier basis is attached to the element.</p>
 <p><strong>Polar decomposition.</strong> It exists throughout the sector, because $N\neq0$ and the modulus $\Rho=\sqrt{N(\tilde Q)}\neq0$ is defined; the modulus–unit polar decomposition of <em>The Polar Decomposition of an N-Regular Biquaternion</em> applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.</p>
 <p><strong>One-sided operators.</strong> Since $\tilde Q$ is a unit, $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$, with zero kernel, and both annihilators are $\{0\}$. The spectral defectivity is invisible to the one-sided structure: on $\Sigma_{10}$ and on $\Sigma_{11}$ alike, both multiplications are invertible. No ideal-theoretic condition can detect a repeated eigenvalue.</p>
 <p><strong>The degenerate half of the unit group.</strong> The unit group splits as $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. The sector $\Sigma_{10}$ is the degenerate half: closed under inversion, not under multiplication, and made of the units whose two eigenvalues have merged.</p>
@@ -417,6 +426,7 @@ $$</p>
 <li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the comparison of the two cones.</li>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and the minimal left ideals.</li>
 <li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the modulus $\Rho=\sqrt N$ and the unit factor.</li>
+<li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.</li>
 </ul>
       </div>
     </main>

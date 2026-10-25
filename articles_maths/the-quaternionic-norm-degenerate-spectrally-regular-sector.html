@@ -357,6 +357,15 @@ $$</p>
 <p><strong>Position among the four sectors.</strong> Sector $01$ is the <strong>idempotent stratum</strong> of the null cone: the elements $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent. It is the only sector on which the norm vanishes while the spectrum stays separated, so it is one of the two independence witnesses. The finer split inside $\Sigma_{10}$ and $\Sigma_{00}$ is by the minimal polynomial, not by the two predicates; it is recorded in <em>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</em>, §<em>The Chain of Invariants</em>.</p>
 <h2 id="consequences">Consequences</h2>
 <p><strong>Eigenbasis.</strong> It exists. The spectral idempotents are $e_+=\tilde Q/(2Q_t)$ and $e_-=e_t-e_+$, and they are unique. The normalised Peirce eigenbasis is unique with the normalisation fixed. The Peirce decomposition relative to $\tilde Q$ is the only one.</p>
+<p><strong>The flow.</strong> The root $\vec U=\vec Q/B$ exists and is pure, and $e^{\theta\tilde Q}=e^{\theta Q_t}W(-\theta,B/2\pi)$, with $W$ the Fourier kernel of <em>Biquaternion Continuous Harmonic Analysis</em>, §<em>The Fourier Kernel</em>. This holds even though $N=0$ and the element is a zero divisor. The exponential is a unit, like every exponential. The Hermitian norm, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is</p>
+<p>$$
+\langle e^{\theta\tilde Q}\rangle_*
+=\lvert e^{\theta Q_t}\rvert^2
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert_E^2\right),
+\qquad
+\lVert\vec U\rVert_E^2\ge1,
+$$</p>
+<p>with equality exactly when the element is normal: $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$, with $\tilde X^*=\overline{\tilde X^\natural}$ (<em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Hermitian Case</em>). The flow is unitary for the Hermitian form exactly when $Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$ — the massless material case — and self-adjoint exactly when $Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$. Spectral regularity, not invertibility, is what the Fourier dictionary needs.</p>
 <p><strong>Polar decomposition.</strong> The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of <em>The Polar Decomposition of an N-Regular Biquaternion</em> has no value on the sector. The failure is caused by the norm, not by the spectrum.</p>
 <p><strong>One-sided operators.</strong> Rank $2$, equal to $2Q_t$ times a projection, with kernel the corresponding annihilator plane. Neither multiplication is invertible on either side.</p>
 <p><strong>The "clean degenerate" cell.</strong> It is the cell in which invertibility fails and nothing else does: the eigenvalues are separated, the Peirce decomposition relative to $\tilde Q$ exists and is unique, the annihilators are the two Peirce planes, and the only pathology is the zero eigenvalue, which is exactly the norm condition.</p>
@@ -523,6 +532,7 @@ $$</p>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce corners and the nilpotents $E_{ij}$.</li>
 <li><a href="square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, for the root variety $\tilde\Xi^2=e_t$ and the idempotent manifold.</li>
 <li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the modulus $\Rho=\sqrt N$ and its failure at $N=0$.</li>
+<li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.</li>
 </ul>
       </div>
     </main>
