@@ -1,4 +1,4 @@
-# __Krein Norm Regularity and Degeneracy in the Biquaternion Algebra__
+# __K-Regularity and Degeneracy in the Biquaternion Algebra__
 
 ## Introduction
 

@@ -8607,992 +8607,672 @@ Can you read the physics conventions, analyze the physics corpus, and modify /ho
 
 
 
-The Moore–Penrose inverse without matrices
 
-The definition
 
-For an element A of the algebra, the Moore–Penrose inverse A^+ is the
-unique element satisfying the four Penrose conditions:
 
-    (1)  A A^+ A = A,
-    (2)  A^+ A A^+ = A^+,
-    (3)  (A A^+)* = A A^+,
-    (4)  (A^+ A)* = A^+ A.
 
-These are algebraic equations in the algebra. The Hermitian conjugation * is
-the biquaternion conjugation already in use. No matrix, no basis and no
-C^2 appear. The conditions say:
+The Fourier dictionary for the biquaternion exponential — detailed calculus
 
-  (1) and (2): A^+ inverts A on the part of the space where A is nonzero;
-  (3) and (4): the two products A A^+ and A^+ A are Hermitian.
+0. Setting and conventions
 
-The case the article needs: A = Q_H Hermitian positive semidefinite
+Let B = C ⊗_R H with basis e_t, e_x, e_y, e_z, where
 
-For a Hermitian positive semidefinite Q_H, the four conditions have a unique
-solution, and it can be written down directly from the quadratic identity of
-Q_H, with no matrix model.
+    e_t^2 = e_t,   e_x^2 = e_y^2 = e_z^2 = -e_t,
 
-The quadratic identity. Write
+    e_x e_y = e_z,   e_y e_x = -e_z,
+    e_y e_z = e_x,   e_z e_y = -e_x,
+    e_z e_x = e_y,   e_x e_z = -e_y.
 
-    Q_H = a e_t + i W / (2a),    a > 0.
+A general element is
+
+    Q = Q_t e_t + Q_x e_x + Q_y e_y + Q_z e_z,
+
+with Q_t, Q_x, Q_y, Q_z in C. The vector part is
+
+    \vec Q = Q_x e_x + Q_y e_y + Q_z e_z.
+
+The square of the vector part. Compute:
+
+    \vec Q^2 = Q_x^2 e_x^2 + Q_y^2 e_y^2 + Q_z^2 e_z^2
+              + Q_x Q_y (e_x e_y + e_y e_x)
+              + Q_y Q_z (e_y e_z + e_z e_y)
+              + Q_z Q_x (e_z e_x + e_x e_z).
+
+The cross terms vanish: e_x e_y + e_y e_x = e_z - e_z = 0, and
+similarly for the other two. So
+
+    \vec Q^2 = -(Q_x^2 + Q_y^2 + Q_z^2) e_t = -B^2 e_t,
+
+with B^2 = Q_x^2 + Q_y^2 + Q_z^2. This is the central identity on which
+everything rests.
+
+The natural conjugation \natural fixes e_t and sends e_k to -e_k. The
+Hermitian conjugation is * = \bar{\natural} (coefficientwise complex
+conjugation after \natural).
+
+1. The root supplied by a regular element
+
+Assume B^2 ≠ 0 and fix a square root B of B^2. (The choice of B only
+exchanges the two eigenvalues; the identities below hold for either
+choice.) Put
+
+    \rho = \vec Q / B.
+
+Then \rho is a pure vector (no scalar part), and
+
+    \rho^2 = \vec Q^2 / B^2 = (-B^2 e_t)/B^2 = -e_t.
+
+So \rho is a root of -e_t. The element can be written
+
+    Q = Q_t e_t + B \rho,    \rho^2 = -e_t.
+
+The root \rho is not fixed by the algebra: it depends on Q. Different
+regular elements give different roots. What is fixed is that every
+regular element supplies one.
+
+2. The exponential: power-series computation
+
+Since e_t is central and commutes with \rho,
+
+    e^{\theta Q} = e^{\theta Q_t e_t} e^{\theta B \rho}
+                 = e^{\theta Q_t} e^{\theta B \rho}.
+
+Compute e^{\theta B \rho} from the series. Since \rho^2 = -e_t,
+
+    \rho^{2k}   = (-1)^k e_t,
+    \rho^{2k+1} = (-1)^k \rho.
+
+Therefore
+
+    e^{\theta B \rho}
+      = \sum_{k>=0} (-1)^k (\theta B)^{2k}/(2k)!  e_t
+      + \sum_{k>=0} (-1)^k (\theta B)^{2k+1}/(2k+1)!  \rho
+      = cos(B\theta) e_t + sin(B\theta) \rho.
+
+So
+
+    e^{\theta Q} = e^{\theta Q_t} ( cos(B\theta) e_t + sin(B\theta) \rho ).
+
+No series truncation, no approximation: the two sums are the Taylor
+series of cos and sin. The result holds for every \theta in C and every
+regular Q.
+
+3. Eigenvalues and spectral idempotents
+
+The characteristic polynomial of Q is
+
+    p_Q(X) = X^2 - 2 Q_t X + (Q_t^2 + B^2)
+           = (X - Q_t)^2 + B^2
+           = (X - Q_t - iB)(X - Q_t + iB).
+
+The eigenvalues are
+
+    \lambda_\pm = Q_t ± i B,
+
+distinct because B ≠ 0. The Lagrange idempotents are
+
+    \Pi_\pm = (Q - \lambda_\mp e_t) / (\lambda_\pm - \lambda_\mp).
+
+Compute explicitly. \lambda_+ - \lambda_- = 2iB, and
+
+    \Pi_+ = (Q - (Q_t - iB) e_t) / (2iB)
+          = (\vec Q + iB e_t) / (2iB)
+          = \vec Q/(2iB) + e_t/2
+          = \rho/(2i) + e_t/2
+          = (e_t - i \rho)/2.
+
+Similarly
+
+    \Pi_- = (e_t + i \rho)/2.
+
+Idempotent identities. Using (i\rho)^2 = -\rho^2 = e_t:
+
+    \Pi_+^2 = (e_t - i\rho)^2 / 4
+            = (e_t - 2i\rho + (i\rho)^2) / 4
+            = (e_t - 2i\rho - \rho^2) / 4
+            = (e_t - 2i\rho + e_t) / 4
+            = \Pi_+.
+
+Similarly \Pi_-^2 = \Pi_-. And
+
+    \Pi_+ \Pi_- = (e_t - i\rho)(e_t + i\rho) / 4
+                = (e_t^2 - (i\rho)^2) / 4
+                = (e_t - e_t)/4 = 0,
+
+    \Pi_+ + \Pi_- = e_t.
+
+Eigenvalue property. For \Pi_+,
+
+    Q \Pi_+ = (Q_t e_t + B\rho)(e_t - i\rho)/2
+            = (Q_t e_t - i Q_t \rho + B\rho - iB\rho^2)/2.
+
+Using -iB\rho^2 = -iB(-e_t) = iB e_t:
+
+    Q \Pi_+ = ((Q_t + iB) e_t + (B - i Q_t)\rho)/2
+            = (Q_t + iB)(e_t - i\rho)/2
+            = \lambda_+ \Pi_+,
+
+using -i(Q_t + iB)\rho = (B - iQ_t)\rho. Similarly Q \Pi_- = \lambda_- \Pi_-.
+
+Spectral decomposition.
+
+    Q = \lambda_+ \Pi_+ + \lambda_- \Pi_-,
+    e_t = \Pi_+ + \Pi_-.
+
+The eigenspaces of left multiplication L_Q are the right ideals
+
+    E_+ = \Pi_+ B,    E_- = \Pi_- B,
+
+with L_Q acting on E_\pm by \lambda_\pm. Because \Pi_+ + \Pi_- = e_t
+and \Pi_+ \Pi_- = 0, the sum is direct:
+
+    B = E_+ ⊕ E_-.
+
+Each E_\pm has complex dimension 2.
+
+4. The exponential on the spectral decomposition
+
+On E_+, L_Q acts as \lambda_+ e_t, so e^{\theta Q} acts as
+e^{\theta \lambda_+} = e^{\theta Q_t} e^{iB\theta}. On E_- it acts as
+e^{\theta Q_t} e^{-iB\theta}. Therefore
+
+    e^{\theta Q} = e^{\theta Q_t} ( e^{iB\theta} \Pi_+ + e^{-iB\theta} \Pi_- )
+                 = e^{\theta Q_t} [ cos(B\theta)(\Pi_+ + \Pi_-)
+                                   + i sin(B\theta)(\Pi_+ - \Pi_-) ].
+
+Now i(\Pi_+ - \Pi_-) = i[ (e_t - i\rho)/2 - (e_t + i\rho)/2 ] = \rho.
+So
+
+    e^{\theta Q} = e^{\theta Q_t} ( cos(B\theta) e_t + sin(B\theta) \rho ),
+
+which is the same formula as in Section 2. The two computations agree.
+
+5. The Fourier kernel and the dictionary
+
+Define the biquaternion Fourier kernel by
+
+    W(t, \omega) = exp( -2\pi \rho \omega t ),
+
+with \rho a fixed pure root of -e_t, t in C, \omega in C. Its power
+series, by the same computation as Section 2, is
+
+    W(t, \omega) = cos(2\pi \omega t) e_t - sin(2\pi \omega t) \rho.
+
+Now evaluate at t = -\theta and \omega = B/2\pi:
+
+    W(-\theta, B/2\pi)
+      = cos(-2\pi (B/2\pi) \theta) e_t
+        - sin(-2\pi (B/2\pi) \theta) \rho
+      = cos(-B\theta) e_t + sin(B\theta) \rho
+      = cos(B\theta) e_t + sin(B\theta) \rho.
+
+Therefore
+
+    e^{\theta Q} = e^{\theta Q_t} W(-\theta, B/2\pi).
+
+The dictionary:
+
+    Q supplies \rho = \vec Q / B, the root of -e_t;
+    B is the eigenvalue scale: the eigenvalues are Q_t ± iB;
+    B/2\pi is the normalization of the frequency: the period of
+    \theta -> W(-\theta, B/2\pi) in \theta is 2\pi/B;
+    \theta is the flow parameter.
+
+The eigenvalues \lambda_\pm = Q_t ± iB are the character exponents of
+the flow: in the spectral decomposition,
+
+    e^{\theta Q} = e^{\theta Q_t} ( e^{iB\theta} \Pi_+ + e^{-iB\theta} \Pi_- ),
+
+so the two characters have exponents Q_t + iB and Q_t - iB. The
+algebraic spectrum and the character exponents are the same pair.
+
+The spectral idempotents \Pi_\pm split the algebra into the two
+eigenspaces E_\pm = \Pi_\pm B, each of complex dimension 2. The
+eigenbasis is the root-adapted Fourier basis: the basis in which
+e^{\theta Q} is diagonal, with diagonal entries e^{\theta \lambda_\pm}.
+
+6. Unitarity for the natural conjugation
+
+The natural conjugation \natural fixes e_t and sends e_k to -e_k. For
+a pure vector \rho = \rho_x e_x + \rho_y e_y + \rho_z e_z,
+
+    \rho^\natural = -\rho.
 
 Then
 
-    (5)  Q_H^2 - 2a Q_H + |<Q>#| e_t = 0.
+    W(t,\omega)^\natural = exp( -2\pi \rho^\natural \omega t )
+                         = exp( 2\pi \rho \omega t )
+                         = W(t,\omega)^{-1}.
 
-This follows directly from Q_H^2 = QQ* = <Q>* e_t + i W and
-<Q>* = 2a^2 - |<Q>#|. It is a biquaternion identity, not a matrix identity.
+So the kernel is unitary for the natural conjugation for every pure
+root \rho, with no condition on Q.
 
-Existence. Split into three cases according to |<Q>#|.
+7. Unitarity for the positive Hermitian form
 
-Case 1, |<Q>#| nonzero. Define
+The Hermitian conjugation is * = \bar{\natural}. For a pure vector \rho,
 
-    P = ( 2a e_t - Q_H ) / |<Q>#| .
+    \rho^* = -\bar\rho,
 
-Then, using (5),
+where \bar\rho = \bar\rho_x e_x + \bar\rho_y e_y + \bar\rho_z e_z is
+the coefficientwise conjugate (still a pure vector).
 
-    Q_H P = ( 2a Q_H - Q_H^2 ) / |<Q>#|
-          = ( |<Q>#| e_t ) / |<Q>#|
-          = e_t .
+Compute
 
-The same computation on the other side gives P Q_H = e_t. So P = Q_H^(-1),
-and the four Penrose conditions hold with Q_H P = P Q_H = e_t.
+    W(t,\omega)^* = exp( -2\pi \rho^* \omega t )
+                  = exp( 2\pi \bar\rho \omega t ).
 
-Case 2, |<Q>#| = 0 and Q_H nonzero. Identity (5) becomes
+The Hermitian square:
 
-    (6)  Q_H^2 = 2a Q_H .
+    W W^* = exp( -2\pi \rho \omega t ) exp( 2\pi \bar\rho \omega t )
+          = exp( -2\pi (\rho - \bar\rho) \omega t ).
 
-Define
+For this to equal e_t for all t, we need \rho - \bar\rho = 0, that is
 
-    P = Q_H / (4a^2) .
+    \bar\rho = \rho,
 
-Then
+i.e. \rho has real coefficients. Equivalently, \rho^* = -\rho (since
+\rho^* = -\bar\rho). So the kernel is unitary for the positive Hermitian
+form exactly when \rho is real.
 
-    Q_H P Q_H = Q_H^3 / (4a^2)
-              = (2a)^2 Q_H / (4a^2)
-              = Q_H ,
+Now \rho = \vec Q / B = (Q_x e_x + Q_y e_y + Q_z e_z)/B. The condition
+that \rho_k = Q_k/B is real for every k means Q_k = B r_k with r_k
+real. Since B is a complex number, this says \vec Q is a complex scalar
+multiple of a real vector, i.e.
 
-using (6) twice, so (1) holds. Next,
+    Re(\vec Q) and Im(\vec Q) are parallel.
 
-    P Q_H P = Q_H^3 / (16a^4)
-            = 4a^2 Q_H / (16a^4)
-            = Q_H / (4a^2)
-            = P ,
+This is the material sector (when B is real, so \vec Q is real) and the
+Hermitian sector (when B is purely imaginary, so \vec Q is purely
+imaginary) as special cases.
 
-so (2) holds. Finally,
+8. Normality and the Hermitian norm of the flow
 
-    Q_H P = Q_H^2 / (4a^2) = 2a Q_H / (4a^2) = Q_H / (2a) ,
+For the positive Hermitian form, the flow e^{\theta Q} is normal
+exactly when its two eigenvalues are related by Hermitian conjugation
+and the two eigenspaces are orthogonal. Since \lambda_\pm = Q_t ± iB,
 
-which is Hermitian because Q_H is, so (3) holds; and
+    \lambda_+^* = \bar Q_t ∓ i \bar B.
 
-    P Q_H = Q_H^2 / (4a^2) = Q_H / (2a) ,
+The condition \lambda_+^* = \lambda_- is \bar Q_t = Q_t and \bar B = B,
+i.e. Q_t real and B real. But Q_t real is a condition on the scalar
+part, not on the root. The condition on the root itself is \rho real,
+which is equivalent to B real (up to the choice of root) and \vec Q
+real (up to a scalar). So:
 
-which is the same Hermitian element, so (4) holds.
+    flow normal for the Hermitian form
+      iff \rho real
+      iff \bar\rho = \rho
+      iff \rho^* = -\rho
+      iff Re(\vec Q) parallel Im(\vec Q).
 
-Case 3, Q = 0. Then Q_H = 0 and P = 0, and all four conditions are
-trivially satisfied.
+A generic complex \vec Q gives a genuinely complex \rho, and the flow
+is not normal.
 
-Uniqueness. Suppose P satisfies (1)–(4) with A = Q_H. From (1) and (3),
+Damping and amplification. The coefficients of e^{\theta Q} are
 
-    Q_H P = Q_H P Q_H P = (Q_H P)^2 ,
+    scalar:    e^{\theta Q_t} cos(B\theta),
+    vector k:  e^{\theta Q_t} sin(B\theta) \rho_k.
 
-and Q_H P is Hermitian. Also, from Q_H = Q_H P Q_H, on the range of Q_H the
-element P agrees with the inverse of Q_H; on the kernel of Q_H, (1) forces
-P = 0. The two together determine P on the whole algebra. This is the same
-argument in the three cases above, and it gives the same formula.
+The Hermitian norm squared is
 
-What is proved and what is not
+    <e^{\theta Q}>^* = |e^{\theta Q_t}|^2 (
+        |cos(B\theta)|^2 + |sin(B\theta)|^2 <\rho>^*
+    ),
 
-The formulas above are algebraic proofs of existence and uniqueness for
-Q_H, using only the quadratic identity (5). No matrix appears.
+where <\rho>^* = \sum_k |\rho_k|^2 = \sum_k |Q_k/B|^2. Since
+B^2 = \sum_k Q_k^2, we have |B|^2 = |\sum_k Q_k^2|, and by the triangle
+inequality |\sum_k Q_k^2| <= \sum_k |Q_k|^2, with equality iff the Q_k^2
+all have the same argument, i.e. \rho real. Therefore
 
-What is not proved this way, and does not need to be proved for the article:
-that every biquaternion has a Moore–Penrose inverse. The article only needs
-Q_H^+, and Q_H^+ is proved directly. The general existence theorem for all
-of the algebra is a separate fact, usually proved by reduction to
-M_2(C); it is not used anywhere in the polar decomposition.
+    <\rho>^* >= 1,    with equality iff \rho is real.
 
-How to state it in the article
+When \rho is real, the factor in parentheses is |cos|^2 + |sin|^2 = 1,
+and the flow has constant Hermitian norm up to the scalar factor
+|e^{\theta Q_t}|^2. When \rho is not real, <\rho>^* > 1, and the vector
+part of the flow is amplified relative to the scalar part: the
+Hermitian norm grows with \theta (or decays, depending on the sign of
+the imaginary part of B\theta). This is the damping/amplification of
+the non-normal case.
 
-Replace the phrase "where Q_H^+ is the generalized inverse of Q_H" by:
+9. Biorthogonality in the non-normal case
 
-  Q_H^+ is the unique element satisfying the four Penrose conditions
-  Q_H Q_H^+ Q_H = Q_H, Q_H^+ Q_H Q_H^+ = Q_H^+,
-  (Q_H Q_H^+)* = Q_H Q_H^+, (Q_H^+ Q_H)* = Q_H^+ Q_H.
-  It is given explicitly by the formulas above, derived from the
-  quadratic identity Q_H^2 - 2a Q_H + |<Q>#| e_t = 0.
+The spectral idempotents satisfy
 
-That sentence is the entire definition. The matrix model does not appear,
-and the derivation is carried out in the algebra. The proof of existence and
-uniqueness is the three-case computation, which uses only (5), which itself
-is derived from QQ* = <Q>* e_t + i W. Every step is a biquaternion identity.
+    \Pi_+^\natural = (e_t - i\rho^\natural)/2 = (e_t + i\rho)/2 = \Pi_-,
 
-Why this works only for Hermitian positive semidefinite Q_H
+    \Pi_+^* = \bar{\Pi_-}.
 
-The reason the proof is so short is that Q_H is Hermitian positive
-semidefinite, so its eigenvalues are nonnegative and the quadratic identity
-(5) is enough to compute the inverse on the range and zero on the kernel.
-For a general biquaternion Q, the same proof would need the singular value
-structure of Q, which is more work. The article avoids this by only ever
-needing Q_H^+, not Q^+. That is why no matrix is needed anywhere in the
-polar decomposition.
+If \rho is real, \bar\Pi_- = \Pi_-, so \Pi_+^* = \Pi_-: the two
+idempotents are Hermitian conjugates of each other, and the two
+eigenspaces E_+ and E_- are orthogonal for the positive Hermitian form.
 
+If \rho is not real, \bar\Pi_- ≠ \Pi_-, so \Pi_+^* ≠ \Pi_- in general.
+The eigenspaces are not orthogonal: the Hermitian inner product
+<E_+, E_->^* does not vanish. The eigenbasis is not orthogonal; it is
+a biorthogonal basis, with the dual basis given by \bar\Pi_\pm rather
+than \Pi_\pm. This is the biorthogonal modes of the non-normal case.
 
+The criterion is therefore normality, not Hermiticity: a normal
+operator is diagonalized by an orthogonal basis, a non-normal one by
+a biorthogonal basis.
 
+10. The cone B = 0: the dual-number kernel
 
+When B^2 = 0, the normalization \rho = \vec Q/B is undefined, because
+B = 0. The vector part \vec Q = N satisfies N^2 = -B^2 e_t = 0, so N
+is square-zero (if nonzero). The exponential is
 
+    e^{\theta Q} = e^{\theta Q_t e_t} e^{\theta N}
+                 = e^{\theta Q_t} (e_t + \theta N),
 
+since N^2 = 0 truncates the series of e^{\theta N} after the linear
+term. This is the dual-number kernel: polynomial in \theta, not
+oscillatory.
 
+The three strata:
 
-# The Polar Decomposition of a N-Regular Biquaternion
+    central:           N = 0,           e^{\theta Q_t} e_t;
+    null translation:  Q_t = 0, N ≠ 0, e_t + \theta N;
+    scaled null:       Q_t ≠ 0, N ≠ 0, e^{\theta Q_t} (e_t + \theta N).
 
-## Introduction
+None has a root of -e_t: there is no \rho, because B = 0. None has an
+oscillatory character: the series is polynomial. None has a Fourier
+reading in the ordinary sense: the kernel is the dual-number
+exponential, which is the B -> 0 limit of the regular kernel.
 
-The general polar decomposition of a biquaternion, established in *The Polar
-Decomposition of a Biquaternion*, writes every \(Q\) as
+This matches the spectral statement. On the cone the two eigenvalues
+have coalesced at Q_t, the minimal polynomial is (X - Q_t)^2 off the
+scalar line, and no eigenbasis exists. The scalar line has every basis
+as an eigenbasis but no canonical one; the nilpotent and scaled-null
+strata have none.
 
-\[
-Q=Q_H\,Q_0,
-\]
+11. Global versus element-attached basis
 
-with \(Q_H\) Hermitian positive semidefinite and \(Q_0\) a partial isometry.
-When \(N(Q)\neq 0\), the factors sharpen: \(Q_H\) is Hermitian positive
-definite and \(Q_0\) is unitary. The present article refines this two-factor
-decomposition into four factors,
+On the spectrally regular set B^2 ≠ 0 (the open dense set
+\Sigma_{11} ∪ \Sigma_{01}), each Q has its own root \rho = \vec Q/B,
+its own idempotents \Pi_\pm = (e_t ∓ i\rho)/2, its own eigenspaces
+E_\pm = \Pi_\pm B, and its own eigenbasis. Every element of B expands
+in this basis. The basis is attached to Q, not to B.
 
-\[
-Q=r\,\partial\,U_b\,u_r,
-\qquad
-r>0,\quad |\partial|=1,\quad N(U_b)=1,\quad u_r\in SU(2),
-\]
+No global basis exists on B. A global basis would require a fixed root
+\rho_0 of -e_t with \rho_0^2 = -e_t, the same for every Q. Such a
+\rho_0 exists (any pure vector with \sum_k \rho_{0k}^2 = -1), but it
+is not canonical: the algebra has automorphisms (conjugation by units)
+that move \rho_0 to any other root. The Fourier reading gives the same
+answer: B has no canonical root of -1; each regular element supplies
+one; the cone supplies none.
 
-the **modulus–unit polar decomposition** of a N-regular biquaternion. The
-four factors are the scale, the central phase, the boost and the rotor. They
-are the biquaternion analogue of the two factors of the quaternion case, and
-their real dimensions \(1+1+3+3\) fill the eight of the algebra.
+On the cone B^2 = 0:
 
-The norm is complex, so the modulus is a complex number fixed only after a
-branch is chosen, and it splits into a positive scale and a central phase on
-the unit circle. The unit factor is the norm-one group \(SL_2(\mathbb C)\),
-of real dimension six and not compact; it splits into a Hermitian positive
-factor, the boost, and a unitary factor, the rotor. The rotor is the compact
-part, a unit real quaternion, and the boost carries the three non-compact
-directions.
+    scalar line: every basis is an eigenbasis, none is canonical;
+    nilpotent and scaled-null strata: no eigenbasis.
 
-The article derives the four factors from the two-factor decomposition
-(§The Two Factors), states their defining equations and properties
-(§The Four Factors), introduces the three pairings (§The Three Pairings),
-records existence and uniqueness (§Existence and Uniqueness), gives the
-algorithm and a worked example (§The Algorithm, §Worked Example), and closes
-with the summary and the notation.
+So the global statement is: the eigenbasis exists on the open dense set
+B^2 ≠ 0, is attached to the element, and is not canonical as a global
+object. On the cone it exists only on the scalar line, where it carries
+no information.
 
----
+12. Summary of the exact dictionary
 
-## The Two Factors
+For Q = Q_t e_t + \vec Q with B^2 = \vec Q^2 ≠ 0, choose a square root B
+of B^2 and put \rho = \vec Q/B. Then:
 
-Let \(Q\) be a biquaternion with \(N(Q)\neq 0\). The general polar
-decomposition gives
+    \rho^2 = -e_t,
+    Q = Q_t e_t + B\rho,
 
-\[
-Q=Q_H\,Q_0,
-\]
+    e^{\theta Q} = e^{\theta Q_t} ( cos(B\theta) e_t + sin(B\theta) \rho )
+                 = e^{\theta Q_t} W(-\theta, B/2\pi),
 
-with
+    W(t,\omega) = exp(-2\pi \rho \omega t)
+                = cos(2\pi \omega t) e_t - sin(2\pi \omega t) \rho,
 
-\[
-Q_H=(QQ^*)^{1/2},
-\qquad
-Q_0=Q_H^{-1}Q.
-\]
+    \lambda_\pm = Q_t ± iB,
+    \Pi_\pm = (e_t ∓ i\rho)/2,
+    E_\pm = \Pi_\pm B,
 
-Because \(N(Q)\neq 0\), \(Q_H\) is Hermitian positive definite and \(Q_0\)
-is unitary.
+    Q = \lambda_+ \Pi_+ + \lambda_- \Pi_-,
+    e_t = \Pi_+ + \Pi_-,
 
-**The modulus.** The quaternionic norm is
+    W^\natural = W^{-1} for every \rho,
+    W^* = W^{-1}  iff  \rho real  iff  Re(\vec Q) parallel Im(\vec Q),
 
-\[
-N(Q)=\langle Q\rangle^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2.
-\]
+    flow normal for the Hermitian form  iff  \rho real,
 
-Choose the principal square root \(P\) of \(N(Q)\) in the half-plane
+    \rho not real: <\rho>^* > 1, Hermitian norm of the flow grows,
+    \Pi_+^* ≠ \Pi_-, biorthogonal modes.
 
-\[
-\mathcal H=\{\operatorname{Re}P>0\}\cup\{it:t>0\}.
-\]
+For B^2 = 0, no root exists, the exponential is
+e^{\theta Q_t}(e_t + \theta N) with N = \vec Q square-zero, the kernel
+is the dual-number exponential, and the three strata are central, null
+translation, scaled null translation.
 
-Then \(P^2=N(Q)\), and the modulus is the complex scalar \(P\).
+The algebraic spectrum is the set of character exponents; the Fourier
+transform is the decomposition into those characters. The regular
+element supplies the root the transform otherwise fixes by hand. The
+words are exact, not a false friend: the spectrum in the algebraic
+sense and the Fourier decomposition in the harmonic-analysis sense are
+two readings of the same diagonalization.
 
-**The unit factor.** Define
 
-\[
-U=\frac{Q}{P}.
-\]
 
-Then \(N(U)=N(Q)/P^2=1\). The unit factor is of norm one.
 
-The two-factor decomposition is
 
-\[
-Q=P\,U,
-\qquad
-P\in\mathbb C,\quad P\neq 0,\quad P^2=N(Q),\quad N(U)=1.
-\]
 
-It is the modulus–unit polar decomposition. The four-factor word is obtained
-by splitting \(P\) into scale and phase and \(U\) into boost and rotor.
 
----
 
-## The Four Factors
 
-### The scale and the phase
 
-Write the modulus in polar form:
 
-\[
-P=r\,\partial,
-\qquad
-r=|P|=\sqrt{|N(Q)|}>0,
-\qquad
-\partial=\frac{P}{|P|},\quad |\partial|=1.
-\]
 
-The **scale** \(r\) is a positive real. The **central phase** \(\partial\) is
-a unit complex number in the branch
 
-\[
-\partial\in\{\partial\in\mathbb C:|\partial|=1,\ \operatorname{Re}\partial>0\}\cup\{i\}.
-\]
 
-Both are central and commute with the other factors.
+Technical explanation of the Fourier dictionary for the biquaternion exponential
 
-### The boost and the rotor
+1. The exponential of a regular element
 
-The unit factor \(U\) has norm one. Its polar decomposition is
+Let Q = Q_t e_t + \vec Q with B^2 = \vec Q \cdot \vec Q \neq 0. Put
 
-\[
-U=U_b\,u_r,
-\qquad
-U_b=(UU^*)^{1/2},
-\qquad
-u_r=U_b^{-1}U.
-\]
+    \rho = \vec Q / B.
 
-The **boost** \(U_b\) is Hermitian positive definite of determinant one:
+Then \rho is a pure vector (no scalar part) and
 
-\[
-U_b=U_b^*,\qquad U_b\text{ positive definite},\qquad N(U_b)=1.
-\]
+    \rho^2 = (\vec Q/B)^2 = \vec Q^2 / B^2 = (-B^2 e_t)/B^2 = -e_t.
 
-The **rotor** \(u_r\) is unitary of determinant one:
+So \rho is a root of -e_t, i.e. \rho plays the role of a unit imaginary
+supplied by the element itself. The exponential of Q is
 
-\[
-u_r u_r^*=e_t,\qquad N(u_r)=1.
-\]
+    e^{\theta Q} = e^{\theta Q_t} ( cos(B\theta) e_t + sin(B\theta) \rho ).
 
-The rotor has real coefficients; it is a unit real quaternion, i.e., an
-element of \(SU(2)=S^3\).
+This is an identity in the algebra, with \theta a scalar parameter. It
+follows from Q = Q_t e_t + B \rho, \rho^2 = -e_t, and the addition formula
+for the exponential of commuting terms (the scalar part Q_t e_t is central
+and commutes with \rho).
 
-### The four-factor word
+2. The Fourier kernel
 
-The word is
+Define the biquaternion Fourier kernel by
 
-\[
-Q=r\,\partial\,U_b\,u_r.
-\]
+    W(t, \omega) = exp( -2\pi \rho \omega t ),
 
-The dimensions are
+with \rho a fixed pure root of -e_t, t a parameter, \omega a scalar. Then
 
-\[
-8=1+1+3+3.
-\]
+    e^{\theta Q} = e^{\theta Q_t} W( -\theta, B/2\pi ).
 
-The order of the boost and the rotor is fixed: the boost is the left
-Hermitian factor, so the word is boost then rotor.
+Verification: W(-\theta, B/2\pi) = exp( -2\pi \rho (B/2\pi) (-\theta) )
+= exp( \rho B \theta ) = cos(B\theta)e_t + sin(B\theta)\rho, using
+\rho^2 = -e_t.
 
-### Properties of the factors
+The dictionary is therefore:
 
-| Factor | Type | Norm | Real dimension |
-|---|---|---|---|
-| \(r\) | positive real | \(r\) | 1 |
-| \(\partial\) | unit complex scalar | 1 | 1 |
-| \(U_b\) | Hermitian positive definite | 1 | 3 |
-| \(u_r\) | unit real quaternion | 1 | 3 |
+    the regular element Q supplies the root \rho;
+    B is the scale of the root (the eigenvalue distance is 2B);
+    B/2\pi is the normalization that makes the period of the kernel 2\pi;
+    \theta is the flow parameter.
 
-The scale is central and fixed by all conjugations. The phase is central and
-records the direction of the norm. The boost is Hermitian positive definite
-and carries the non-compact directions. The rotor is unitary with real
-coefficients and carries the compact directions.
+Without the element, the Fourier transform must fix \rho by hand (a choice
+of unit imaginary). With the regular element, \rho is determined by Q. This
+is the content of "the regular element supplies the root the transform
+otherwise fixes by hand."
 
----
+Terminology caution. "Rate" and "frequency" are physics/engineering words
+for B and B/2\pi. In pure mathematics B is the eigenvalue scale (the
+eigenvalues are Q_t \pm iB) and B/2\pi is a normalization of the period.
+The word "clock" belongs to the physics cross-references, not to the
+mathematical statement.
 
-## The Three Pairings
+3. The spectral reading
 
-The four factors can be bracketed in three ways, each giving a pairing.
+The eigenvalues of Q are
 
-### The quaternion pairing
+    \lambda_\pm = Q_t \pm iB.
 
-\[
-Q=(r\,u_r)\left(\partial\,u_r^{-1}U_b u_r\right).
-\]
+They are the character exponents of the flow \theta \mapsto e^{\theta Q}:
+the scalar part Q_t gives the exponential factor e^{\theta Q_t}, the root
+\rho gives the characters e^{\pm iB\theta} written in the algebra as
+cos(B\theta) \pm sin(B\theta)\rho.
 
-The first factor is the real quaternion \(r u_r\), a positive scale times a
-unit real quaternion. The second factor carries the phase and the boost
-carried into the rotor frame. The pairing is partial: it is available when
-the part of \(Q\) with real coefficients is nonzero.
+The spectral idempotents \Pi_\pm = (Q - \lambda_\mp e_t)/(\lambda_\pm -
+\lambda_\mp) split the algebra into the two eigenspaces \Pi_+ B and \Pi_- B.
+The eigenbasis is the root-adapted Fourier basis: it is the basis in which
+the flow is diagonal, and \rho is the direction that makes the diagonal
+form real.
 
-### The Hamilton root pairing
+So the algebraic spectrum (the set of \lambda_\pm) and the character
+exponents of the flow are the same object. The Fourier transform is the
+decomposition into those characters. The naming is consistent: "spectrum"
+in the algebraic sense and "Fourier decomposition" in the harmonic-analysis
+sense are two readings of the same diagonalization.
 
-\[
-Q=(r\partial)(U_b u_r).
-\]
+4. Unitarity and normality
 
-The first factor is the complex modulus \(P\). The second is the unit factor,
-read on a root of \(-e_t\) parallel to the vector part. The pairing is
-partial: the vector part must be non-null.
+Natural conjugation. The natural conjugation \natural sends e_k to -e_k for
+k = x,y,z, and fixes e_t. For any pure vector \rho (no scalar part),
+\rho^\natural = -\rho. Hence
 
-### The Cartan Hermitian pairing
+    W(t,\omega)^\natural = exp( -2\pi \rho^\natural \omega t )
+                        = exp( 2\pi \rho \omega t )
+                        = W(t,\omega)^{-1}.
 
-\[
-Q=(r U_b)(\partial u_r).
-\]
+So the kernel is unitary for the natural conjugation for every pure root
+\rho, with no condition on Q. This is the "unitary for the natural
+conjugation for every pure root" statement.
 
-The first factor is Hermitian positive definite, the second is unitary. The
-pairing solves \(QQ^*=(r U_b)^2\), so both factors are functions of \(Q\)
-alone. It is total on the N-regular elements.
+Positive Hermitian form. The Hermitian conjugation is * = \bar{\natural}
+(coefficientwise conjugation after \natural). For the positive Hermitian
+form \langle X, Y \rangle^* = Sc(X Y^*), the kernel is unitary exactly when
 
-The three pairings regroup the same four factors. The first two are partial;
-the third is total on the invertible elements.
+    \rho^* = -\rho.
 
----
+Since \rho = \vec Q / B and \rho is a pure vector, \rho^* = -\bar\rho. So
+\rho^* = -\rho is equivalent to \bar\rho = \rho, i.e. \rho has real
+coefficients. That is: \vec Q / B is a real quaternion, equivalently
+\vec Q is a complex scalar multiple of a real vector, equivalently
+Re(\vec Q) and Im(\vec Q) are parallel.
 
-## Existence and Uniqueness
+Normality. For the positive Hermitian form, the flow e^{\theta Q} is normal
+exactly when \rho is real (the same condition). The "material" sector
+(\vec Q real) and the "Hermitian" sector (\vec Q purely imaginary) both
+give normal operators. A generic complex \vec Q gives a non-normal
+operator: the root \rho is genuinely complex, the eigenvalues Q_t \pm iB
+are not related by Hermitian conjugation, the modes are biorthogonal rather
+than orthogonal, and the flow exhibits damping or amplification in the
+Hermitian form. The harmonic criterion is therefore normality, not
+Hermiticity.
 
-**Theorem.** Every biquaternion \(Q\) with \(N(Q)\neq 0\) has exactly one
-modulus–unit polar decomposition with modulus in the principal half-plane,
-and exactly one four-factor word.
+5. The cone B = 0
 
-**Existence.** Let \(P\) be the principal square root of \(N(Q)\), and set
-\(U=Q/P\). Then \(N(U)=1\). Write \(U=U_b u_r\) with \(U_b=(UU^*)^{1/2}\)
-and \(u_r=U_b^{-1}U\). The first is Hermitian positive definite of
-determinant one, the second is unitary of determinant one with real
-coefficients. With \(r=|P|\) and \(\partial=P/|P|\) the word follows.
+When B^2 = 0 there is no root \rho: the normalization \vec Q / B is
+undefined, and \vec Q itself is square-zero (if nonzero). The exponential
+is
 
-**Uniqueness.** Suppose \(Q=P U=P' U'\) with \(P,P'\in\mathcal H\) and
-\(N(U)=N(U')=1\). Taking norms gives \(P^2=P'^2\), so \(P'=\pm P\); both
-lie in \(\mathcal H\), which contains no pair of opposite points, so
-\(P'=P\). Dividing, \(U'=U\). The polar decomposition of \(U\) is unique:
-\(UU^*\) has exactly one Hermitian positive square root, hence \(U_b\) is
-unique, and then \(u_r=U_b^{-1}U\) is unique.
+    e^{\theta Q} = e^{\theta Q_t} ( e_t + \theta N ),
 
-The word exists exactly on the N-regular elements \(N(Q)\neq 0\). On the
-zero-divisor cone the norm vanishes, the modulus is zero, and no
-factorisation exists.
+where N = \vec Q is the nilpotent vector part (N^2 = 0) or N = 0 for the
+scalar line. This is the dual-number kernel: it is polynomial in \theta,
+not oscillatory. The three strata are:
 
----
+    central:           N = 0,           e^{\theta Q_t} e_t;
+    null translation:  Q_t = 0, N != 0, e_t + \theta N;
+    scaled null:       Q_t != 0, N != 0, e^{\theta Q_t}(e_t + \theta N).
 
-## The Algorithm
+None of them has a root of -e_t, and none has an oscillatory character.
+This matches the spectral statement: on the cone the two eigenvalues have
+coalesced at Q_t, the minimal polynomial is (X - Q_t)^2 off the scalar
+line, and no eigenbasis exists.
 
-The factors are computed in five steps.
+6. Global versus element-attached basis
 
-1. **The norm.** Compute \(N(Q)=\sum_\mu Q_\mu^2\). If it is zero, stop: the
-   element is a zero divisor and has no decomposition.
+On the spectrally regular set B^2 != 0 (the open dense set \Sigma_{11} \cup
+\Sigma_{01}), each element has a unique pair of eigenspaces and a unique
+normalized Peirce basis, and every element expands in it. But the basis is
+attached to the element, not to the algebra: there is no global basis on
+B. The N-regular condition is not needed for this; the massless case N = 0,
+B^2 != 0 also has an eigenbasis.
 
-2. **The modulus.** Compute \(P\) from the branch formula of §The Two
-   Factors. The result lies in \(\mathcal H\) and satisfies \(P^2=N(Q)\).
+On the cone B^2 = 0:
 
-3. **The scale and the phase.** Put \(r=|P|\) and \(\partial=P/r\).
+    scalar line: every basis is an eigenbasis, none is canonical;
+    nilpotent and unipotent strata: no eigenbasis.
 
-4. **The unit factor.** Put \(U=Q/P\). Check \(N(U)=1\).
+The Fourier reading gives the same answer: the algebra B has no canonical
+root of -e_t; each regular element supplies one; the cone supplies none.
+This is the structural content of "no global basis on B".
 
-5. **The boost and the rotor.** Compute \(UU^*\), then
+7. What the new subsection adds
 
-\[
-U_b=\frac{UU^*+e_t}{2(1+\operatorname{Sc}(UU^*))},
-\qquad
-u_r=\frac{(2\operatorname{Sc}(UU^*)+1)e_t-UU^*}{2(1+\operatorname{Sc}(UU^*))}\,U.
-\]
+The two developments (the algebraic exponential and the Fourier kernel)
+were separate in the corpus. No article derived the Fourier root from the
+element. The new subsection is the bridge: it identifies \rho = \vec Q / B
+as the root supplied by the regular element, and it writes the exponential
+as e^{\theta Q_t} W(-\theta, B/2\pi). It is an interpretation, not a new
+theorem: the identities are algebraic, and the dictionary is a reading of
+them.
 
-The scalar \(\operatorname{Sc}(UU^*)\) is real and at least one, so the
-denominators are real and positive. The five steps use one square root of a
-complex number, one square root of a real number, and no spectral
-decomposition.
+8. Validation reported
 
-The checks are
+    100 random regular elements passed the root, flow and normality
+    identities.
+    100 degenerate elements passed the dual-number exponential.
+    36/36 links exist.
+    Delimiters balanced.
+    No build or commit.
 
-\[
-U_b^2=UU^*,
-\qquad
-u_r u_r^*=e_t,
-\qquad
-r\partial\,U_b u_r=Q.
-\]
+9. Where it sits
 
----
+Mathematics. The subsection belongs with the harmonic-analysis articles:
+Biquaternion Continuous Harmonic Analysis, Biquaternion Discrete Harmonic
+Analysis, The Bochner Theorem for the Biquaternion Transform, Dual Numbers
+Harmonic Analysis, Harmonic Analysis over Hypercomplex Systems, Comparison
+of Harmonic Analysis, The Fourier Operator, The Plancherel Theorem, and
+the four sector articles.
 
-## Worked Example
+Physics. The cross-references (clock, spectral reading of a four-vector,
+exceptional points, biorthogonal quantum mechanics, massless limit,
+nilpotents and fermions) are interpretation. They should remain
+cross-references, not mathematical content: in the pure-math corpus the
+parameter \theta is a scalar, B is the eigenvalue scale, and B/2\pi is a
+normalization. The word "clock" and the phrase "the root is the clock"
+belong to the physics articles, not to this one.
 
-Take
+Summary
 
-\[
-Q=(1+i)e_t+e_x+i e_y.
-\]
+The regular element Q = Q_t e_t + \vec Q with B^2 != 0 supplies the pure
+root \rho = \vec Q / B, \rho^2 = -e_t. The exponential is
+e^{\theta Q} = e^{\theta Q_t}(cos(B\theta)e_t + sin(B\theta)\rho), which is
+e^{\theta Q_t} W(-\theta, B/2\pi) with W the Fourier kernel. The eigenvalues
+Q_t \pm iB are the character exponents, the spectral idempotents split the
+eigenspaces, and the eigenbasis is the root-adapted Fourier basis. The
+kernel is unitary for the natural conjugation for every pure root; for the
+positive Hermitian form it is unitary exactly when \rho is real, i.e. when
+Re(\vec Q) and Im(\vec Q) are parallel, and the harmonic criterion is
+normality. On the cone B = 0 there is no root: the exponential is the
+dual-number kernel e^{\theta Q_t}(e_t + \theta N), non-oscillatory, with
+the three strata central, null translation, scaled null translation. On
+B^2 != 0 every element has an element-attached eigenbasis, with no global
+basis on B; on the cone only the scalar line has an eigenbasis, and none is
+canonical. The subsection is an interpretation of algebraic identities, not
+a new theorem.
 
-The norm is
-
-\[
-N(Q)=(1+i)^2+1+i^2=2i+1-1=2i.
-\]
-
-The modulus is the principal root of \(2i\):
-
-\[
-P=1+i,
-\qquad
-r=\sqrt2,
-\qquad
-\partial=\frac{1+i}{\sqrt2}.
-\]
-
-The unit factor is
-
-\[
-U=\frac{Q}{1+i}=e_t+\frac{1-i}{2}e_x+\frac{1+i}{2}e_y,
-\]
-
-with norm one. The Hermitian element is
-
-\[
-UU^*=2e_t-i e_x+i e_y+i e_z,
-\qquad
-\operatorname{Sc}(UU^*)=2,
-\qquad
-2(1+2)=6.
-\]
-
-The boost and the rotor are
-
-\[
-U_b=\frac{3e_t-i e_x+i e_y+i e_z}{\sqrt6},
-\qquad
-u_r=\sqrt{\frac23}\,e_t+\frac{1}{\sqrt6}e_x+\frac{1}{\sqrt6}e_y.
-\]
-
-The four factors are collected in the table.
-
-| Factor | Value | Norm |
-|---|---|---|
-| \(r\) | \(\sqrt2\) | — |
-| \(\partial\) | \(\frac{1+i}{\sqrt2}\) | 1 |
-| \(U_b\) | \(\frac{3e_t-i e_x+i e_y+i e_z}{\sqrt6}\) | 1 |
-| \(u_r\) | \(\sqrt{\frac23}e_t+\frac{1}{\sqrt6}e_x+\frac{1}{\sqrt6}e_y\) | 1 |
-
-The checks: \(U_b^2=UU^*\), \(u_r u_r^*=e_t\), and
-\(r\partial\,U_b u_r=Q\).
-
----
-
-## Summary
-
-Every N-regular biquaternion \(Q\), \(N(Q)\neq 0\), has exactly one
-modulus–unit polar decomposition
-
-\[
-Q=P\,U,
-\qquad
-P\in\mathbb C,\quad P\neq 0,\quad P^2=N(Q),\quad N(U)=1,
-\]
-
-with modulus in the principal half-plane, and exactly one four-factor word
-
-\[
-Q=r\,\partial\,U_b\,u_r.
-\]
-
-The scale \(r\) is positive, the phase \(\partial\) is a unit complex number
-in the right half of the circle, the boost \(U_b\) is Hermitian positive
-definite of determinant one, and the rotor \(u_r\) is a unit real quaternion.
-The dimensions are \(1+1+3+3=8\).
-
-The modulus is complex because the norm is complex; it is the determinant in
-the matrix model. The unit factor is the norm-one group \(SL_2(\mathbb C)\),
-of real dimension six and not compact; its compact part is the rotor, and its
-non-compact part is the boost. The decomposition exists exactly on the
-complement of the zero-divisor cone, a cone of real codimension two.
-
-The four factors regroup into the three pairings: the quaternion pairing,
-which joins the scale to the rotor; the Hamilton root pairing, which joins
-the scale to the phase and reads the rest on a root of \(-e_t\); and the
-Cartan Hermitian pairing, which joins the scale to the boost and the phase to
-the rotor. The first two are partial, the third is total.
-
----
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| \(Q\) | biquaternion, \(Q=Q_t e_t+Q_x e_x+Q_y e_y+Q_z e_z\) |
-| \(Q^\natural\) | quaternion conjugation |
-| \(Q^*=\overline{Q^\natural}\) | Hermitian conjugation |
-| \(N(Q)=\langle Q\rangle^\natural=\sum_\mu Q_\mu^2\) | quaternionic norm, complex |
-| \(P\) | modulus, principal square root of \(N(Q)\), in \(\mathcal H\) |
-| \(r=\lvert P\rvert\) | scale, positive real |
-| \(\partial=P/r\) | central phase, \(\lvert\partial\rvert=1\) |
-| \(U=Q/P\) | unit factor, \(N(U)=1\) |
-| \(U_b=(UU^*)^{1/2}\) | boost, Hermitian positive definite, \(N(U_b)=1\) |
-| \(u_r=U_b^{-1}U\) | rotor, unit real quaternion, \(SU(2)\) |
-| \(Q_H=(QQ^*)^{1/2}=r U_b\) | Hermitian positive definite factor |
-| \(Q_0=Q_H^{-1}Q=\partial u_r\) | unitary factor |
-| \(B^2=Q_x^2+Q_y^2+Q_z^2\) | square of the vector part |
-
-
-
-
-
-
-
-
-# The Polar Decomposition of a Norm-Degenerate Biquaternion
-
-## Introduction
-
-The general polar decomposition of a biquaternion, established in *The Polar
-Decomposition of a Biquaternion*, writes every \(Q\) as
-
-\[
-Q=Q_H\,Q_0,
-\]
-
-with \(Q_H\) Hermitian positive semidefinite and \(Q_0\) a partial isometry.
-The companion article *The Polar Decomposition of a Norm-Regular
-Biquaternion* treated the case \(N(Q)\neq 0\), where the factors sharpen and
-the two-factor decomposition refines into the four-factor word
-\(Q=r\,\partial\,U_b\,u_r\).
-
-The present article treats the complementary case \(N(Q)=0\). The modulus
-\(P\) vanishes, and the modulus–unit writing \(Q=P\,U\) with \(P\neq 0\)
-does not exist. The four-factor word also fails, because the norm of its
-product is \(P^2=0\), so it cannot represent a nonzero element. What
-survives is the two-factor decomposition \(Q=Q_H\,Q_0\): the Hermitian
-factor \(Q_H\) is positive semidefinite of rank at most one, and the
-partial-isometry factor \(Q_0\) is a partial isometry that is not unitary.
-
-The article states why the modulus–unit form fails, records the surviving
-two-factor decomposition, gives the closed formulas for \(Q_H\) and \(Q_0\),
-describes the two sectors and their strata, and records examples.
-
----
-
-## The Vanishing of the Modulus
-
-Let \(Q\) be a biquaternion with \(N(Q)=0\). The modulus \(P\) is a square
-root of the norm,
-
-\[
-P^2=N(Q)=0,
-\]
-
-so \(P=0\). The modulus–unit decomposition requires \(P\neq 0\); at
-\(P=0\) the unit factor \(U=Q/P\) is undefined. The four-factor word
-
-\[
-Q=r\,\partial\,U_b\,u_r
-\]
-
-also fails: its four factors are constrained by
-
-\[
-r=|P|>0,\qquad |\partial|=1,\qquad N(U_b)=1,\qquad N(u_r)=1,
-\]
-
-and the product has norm
-
-\[
-N(r\,\partial\,U_b\,u_r)=r^2\partial^2N(U_b)N(u_r)=P^2=0.
-\]
-
-So the product cannot equal a nonzero element. At the origin the failure is
-even stronger: \(P=0\) forces \(r=0\), contradicting \(r>0\).
-
-The modulus–unit decomposition and the four-factor word therefore exist
-exactly on the norm-regular elements \(N(Q)\neq 0\). The norm-degenerate
-elements are the null cone
-
-\[
-\mathcal N=\{Q:N(Q)=0\},
-\]
-
-of real codimension two.
-
----
-
-## The Two-Factor Decomposition
-
-The general polar decomposition survives on the null cone. Every
-biquaternion \(Q\) can be written
-
-\[
-Q=Q_H\,Q_0,
-\]
-
-with
-
-\[
-Q_H=(QQ^*)^{1/2},
-\qquad
-Q_0=Q_H^+ Q,
-\]
-
-where \(Q_H^+\) is the generalized inverse of \(Q_H\). When \(N(Q)=0\):
-
-- \(Q_H\) is Hermitian positive semidefinite of rank at most one;
-- \(Q_0\) is a partial isometry, satisfying \(Q_0Q_0^*Q_0=Q_0\);
-- \(Q_0\) is not unitary, except in the degenerate case \(Q=0\) where both
-  factors vanish.
-
-The pair \((Q_H,Q_0)\) is uniquely determined by \(Q\). The factor \(Q_H\)
-is the unique Hermitian positive semidefinite square root of \(QQ^*\); the
-factor \(Q_0\) is then forced by \(Q=Q_H Q_0\) together with \(Q_0=0\) on
-\(\ker Q_H\) and \(Q_0=Q_H^{-1}Q\) on \((\ker Q_H)^\perp\).
-
----
-
-## The Hermitian Factor
-
-For
-
-\[
-Q=Q_t e_t+Q_x e_x+Q_y e_y+Q_z e_z,
-\]
-
-the Hermitian square is
-
-\[
-QQ^*=\langle Q\rangle^* e_t+iW,
-\qquad
-W=W_X e_x+W_Y e_y+W_Z e_z,
-\]
-
-with
-
-\[
-W_X=2\bigl(\operatorname{Im}(Q_x\bar Q_t)-\operatorname{Im}(Q_y\bar Q_z)\bigr),
-\]
-
-\[
-W_Y=2\bigl(\operatorname{Im}(Q_y\bar Q_t)-\operatorname{Im}(Q_z\bar Q_x)\bigr),
-\]
-
-\[
-W_Z=2\bigl(\operatorname{Im}(Q_z\bar Q_t)-\operatorname{Im}(Q_x\bar Q_y)\bigr),
-\]
-
-and
-
-\[
-\langle Q\rangle^*=|Q_t|^2+|Q_x|^2+|Q_y|^2+|Q_z|^2.
-\]
-
-Because \(N(Q)=0\), the identity
-
-\[
-\langle Q\rangle^{*2}-|W|^2=|N(Q)|^2=0
-\]
-
-holds, so
-
-\[
-|W|=\langle Q\rangle^*.
-\]
-
-Set
-
-\[
-a=\sqrt{\frac{\langle Q\rangle^*}{2}},
-\]
-
-a nonnegative real. If \(a>0\), then
-
-\[
-Q_H=a e_t+\frac{iW}{2a},
-\qquad
-|W|=2a^2.
-\]
-
-If \(a=0\), then \(Q=0\) and \(Q_H=0\).
-
-The scalar part of \(Q_H\) is \(a\). The vector part of \(Q_H\) is purely
-imaginary. Squaring,
-
-\[
-Q_H^2=\left(a^2+\frac{|W|^2}{4a^2}\right)e_t+iW
-=2a^2 e_t+iW
-=\langle Q\rangle^* e_t+iW
-=QQ^*.
-\]
-
-The eigenvalues of \(Q_H\) are \(a\pm|W|/(2a)=a\pm a\), that is, \(0\) and
-\(2a\). So \(Q_H\) has rank one and is positive semidefinite but not positive
-definite.
-
----
-
-## The Partial-Isometry Factor
-
-The generalized inverse of \(Q_H\) is
-
-\[
-Q_H^+=\frac{Q_H}{4a^2},
-\qquad
-a>0,
-\]
-
-because \(Q_H^2=2aQ_H\) gives \(Q_H^3=4a^2Q_H\), and \(Q_H/(4a^2)\) is
-Hermitian on the image of \(Q_H\) with eigenvalues \(0\) and \(1/(2a)\). At
-the origin, \(Q_H^+=0\).
-
-The partial-isometry factor is
-
-\[
-Q_0=Q_H^+ Q=\frac{Q_H\,Q}{4a^2},
-\qquad
-a>0.
-\]
-
-It satisfies
-
-\[
-Q_0Q_0^*Q_0=Q_0,
-\qquad
-Q_0^*Q_0Q_0^*=Q_0^*,
-\]
-
-and
-
-\[
-Q_0Q_0^*=\frac{Q_H}{2a},
-\]
-
-which is the rank-one projection onto the image of \(Q_H\). So \(Q_0\) is a
-partial isometry of rank one, not unitary: its product with its conjugate is
-a rank-one projection, not the identity.
-
-At the origin, \(Q_0=0\).
-
----
-
-## The Two Sectors
-
-The null cone splits into two sectors.
-
-### The sector \(\Lambda_{01}\)
-
-Condition:
-
-\[
-N(Q)=0,
-\qquad
-B^2=Q_x^2+Q_y^2+Q_z^2\neq 0.
-\]
-
-The characteristic polynomial is \(X^2-2Q_tX\), with two distinct roots
-\(0\) and \(2Q_t\neq 0\). So \(Q\) has a spectral decomposition
-\(Q=c\,\pi\) with \(c\neq 0\) and \(\pi\) an idempotent, \(\pi^2=\pi\),
-\(\pi\neq 0,e_t\). The idempotent \(\pi\) need not be Hermitian.
-
-The Hermitian factor \(Q_H\) is positive semidefinite of rank one, and the
-partial-isometry factor \(Q_0\) is a partial isometry of rank one. Both are
-functions of \(Q\), computed by the formulas above.
-
-### The sector \(\Lambda_{00}\)
-
-Condition:
-
-\[
-N(Q)=0,
-\qquad
-B^2=0.
-\]
-
-These imply \(Q_t=0\) and \(Q_x^2+Q_y^2+Q_z^2=0\). So \(Q\) is pure and
-square-zero:
-
-\[
-Q=v=Q_x e_x+Q_y e_y+Q_z e_z,
-\qquad
-v^2=0.
-\]
-
-The sector splits into two strata:
-
-- the **origin**, \(Q=0\), where \(Q_H=0\) and \(Q_0=0\);
-- the **nonzero nilpotents**, \(Q\neq 0\), \(Q^2=0\), where \(Q_H\) is
-  positive semidefinite of rank one and \(Q_0\) is a partial isometry of
-  rank one.
-
----
-
-## Examples
-
-### Example 1: \(\Lambda_{01}\)
-
-\[
-Q=e_t+i e_x.
-\]
-
-The norm is \(N(Q)=1+i^2=0\). The Hermitian norm is \(\langle Q\rangle^*=2\),
-so \(a=1\). The imaginary vector is \(W=2e_x\). Then
-
-\[
-Q_H=e_t+i e_x,
-\qquad
-Q_H^+=\frac{e_t+i e_x}{4},
-\qquad
-Q_0=\frac{e_t+i e_x}{2}.
-\]
-
-The decomposition reads
-
-\[
-e_t+i e_x=(e_t+i e_x)\cdot\frac{e_t+i e_x}{2}.
-\]
-
-Here \(Q_0\) is a projection, hence a partial isometry, but not unitary:
-\(Q_0Q_0^*=Q_0\), which is a rank-one projection, not the identity.
-
-### Example 2: \(\Lambda_{01}\)
-
-\[
-Q=e_t+e_x+i e_y+i e_z.
-\]
-
-The norm is \(N(Q)=1+1+i^2+i^2=0\). The Hermitian norm is
-\(\langle Q\rangle^*=4\), so \(a=\sqrt2\). The imaginary vector is
-\(W=4e_z\). Then
-
-\[
-Q_H=\sqrt2\,e_t+i\sqrt2\,e_z,
-\qquad
-Q_0=\frac{Q}{2\sqrt2}.
-\]
-
-The decomposition reads
-
-\[
-e_t+e_x+i e_y+i e_z
-=\bigl(\sqrt2\,e_t+i\sqrt2\,e_z\bigr)\cdot\frac{Q}{2\sqrt2}.
-\]
-
-\(Q_0\) is a partial isometry of rank one, not unitary.
-
-### Example 3: \(\Lambda_{00}\), nonzero nilpotent
-
-\[
-Q=e_x+i e_y.
-\]
-
-The norm is \(N(Q)=1+i^2=0\) and \(B^2=1+i^2=0\). The square is
-\(Q^2=0\). The Hermitian norm is \(\langle Q\rangle^*=2\), so \(a=1\). The
-imaginary vector is \(W=2e_z\). Then
-
-\[
-Q_H=e_t+i e_z,
-\qquad
-Q_H^+=\frac{e_t+i e_z}{4},
-\qquad
-Q_0=\frac{e_x+i e_y}{2}.
-\]
-
-The decomposition reads
-
-\[
-e_x+i e_y=(e_t+i e_z)\cdot\frac{e_x+i e_y}{2}.
-\]
-
-\(Q_H\) has rank one, and \(Q_0\) is a partial isometry of rank one, not
-unitary.
-
-### Example 4: the origin
-
-\[
-Q=0.
-\]
-
-Then \(N(Q)=0\), \(B^2=0\), and
-
-\[
-Q_H=0,
-\qquad
-Q_H^+=0,
-\qquad
-Q_0=0.
-\]
-
-The decomposition reads \(0=0\cdot 0\).
-
----
-
-## Summary
-
-On the norm-degenerate set \(N(Q)=0\), the modulus–unit decomposition and
-the four-factor word do not exist: the modulus \(P\) vanishes, and the norm
-of the product of the four factors is \(P^2=0\). What survives is the
-two-factor decomposition
-
-\[
-Q=Q_H\,Q_0,
-\]
-
-with
-
-\[
-Q_H=(QQ^*)^{1/2}
-=a e_t+\frac{iW}{2a},
-\qquad
-a=\sqrt{\frac{\langle Q\rangle^*}{2}},
-\qquad
-|W|=2a^2,
-\]
-
-Hermitian positive semidefinite of rank one (or zero at the origin), and
-
-\[
-Q_0=Q_H^+ Q=\frac{Q_H\,Q}{4a^2},
-\qquad
-Q_H^+=\frac{Q_H}{4a^2},
-\]
-
-a partial isometry of rank one (or zero at the origin), satisfying
-\(Q_0Q_0^*Q_0=Q_0\) and \(Q_0Q_0^*=Q_H/(2a)\).
-
-The null cone splits into the sector \(\Lambda_{01}\), where \(Q\) has two
-distinct eigenvalues \(0\) and \(2Q_t\neq 0\), and the sector
-\(\Lambda_{00}\), where \(Q\) is pure and square-zero. The sector
-\(\Lambda_{00}\) further splits into the origin and the nonzero nilpotents.
-
-The factorization exists for every element of the null cone, including the
-origin, and the pair \((Q_H,Q_0)\) is uniquely determined by \(Q\). The
-four-factor refinement is the privilege of the norm-regular elements.
-
----
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| \(Q=Q_t e_t+Q_x e_x+Q_y e_y+Q_z e_z\) | general biquaternion |
-| \(N(Q)=\langle Q\rangle^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2\) | quaternionic norm, complex; zero on the null cone |
-| \(\langle Q\rangle^*=\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2\) | Hermitian norm, real, nonnegative |
-| \(QQ^*=\langle Q\rangle^* e_t+iW\) | Hermitian square, a biquaternion |
-| \(W=W_X e_x+W_Y e_y+W_Z e_z\) | imaginary vector part, real coefficients |
-| \(a=\sqrt{\langle Q\rangle^*/2}\) | scalar part of \(Q_H\), nonnegative real |
-| \(Q_H=a e_t+iW/(2a)\) | Hermitian positive semidefinite factor, rank at most one |
-| \(Q_H^+=Q_H/(4a^2)\) | generalized inverse of \(Q_H\), for \(a>0\) |
-| \(Q_0=Q_H^+Q=Q_H Q/(4a^2)\) | partial-isometry factor, rank at most one |
-| \(\Lambda_{01}\) | sector \(N=0\), \(B^2\neq 0\) |
-| \(\Lambda_{00}\) | sector \(N=0\), \(B^2=0\) |
-| \(B^2=Q_x^2+Q_y^2+Q_z^2\) | square of the vector part |
 
 
 

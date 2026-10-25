@@ -263,6 +263,10 @@ The Hermitian condition has a grade reading. The biquaternion star fixes the rea
 
 **Remark.** The Hermitian case is the case in which the internal eigenvalue is real. The eigenvalues $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ lie in $\mathbb{R}\subset\mathbb{C}=Z(\mathbb{B})$, and the projectors are Hermitian. The general internal case, with complex $\vec U$, has complex eigenvalues in $Z$ and non-Hermitian projectors; the spectral theorem still holds in the complex algebra, but the projectors are not fixed by the star.
 
+**Remark (the flow).** The theorem characterises normality by the orthogonality of the spectral projectors. It does not characterise unitarity of the flow. The projectors are Hermitian exactly when the root is real, whereas $e^{\theta\tilde Q}$ is unitary for real $\theta$ exactly when $\tilde Q^*=-\tilde Q$, which is the material sector and is strictly stronger; the self-adjoint flow is the Hermitian sector. The exact criteria, together with the Hermitian norm of the flow and the norm deficit $\lVert\vec U\rVert^2\ge1$, are stated in *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*Normality, Unitarity and the Hermitian Norm of the Flow*.
+
+**Remark (normality and the rate).** Normality constrains the vector part alone. It makes $\vec U$ real and the root $\vec\Xi$ purely imaginary, but it does not make $B$ real: the element $(1+i)\vec e_x$ is normal, has the real root $\vec e_x$ and the complex rate $B=1+i$, and its flow has Hermitian norm $\cosh2\theta$. Normality therefore gives an orthogonal eigenbasis and no more. It does not make the flow unitary, and it does not make the norm constant. The exact criteria are in *Biquaternion Elementary Functions*, §*The Hermitian Norm and the Unitary Flow*.
+
 ## Summary
 
 The biquaternion algebra is the Clifford algebra $\mathrm{Cl}_{3,0}$: the quaternion units are the bivectors, the central imaginary unit is the volume element $\omega$, and the grade decomposition has dimensions $1,3,3,1$. A biquaternion $\tilde Q=Q_{t}+\vec Q$ has the eigenvalue decomposition

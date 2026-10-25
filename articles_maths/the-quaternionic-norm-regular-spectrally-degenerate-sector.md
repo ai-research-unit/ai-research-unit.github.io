@@ -265,7 +265,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 
 **Eigenbasis.** It fails on the Jordan part, where the element is a single Jordan block; it exists trivially on the scalar line, where the one-term decomposition into eigenspaces is all there is and any two-term refinement is non-unique. There is no genuine two-term spectral decomposition anywhere in the sector.
 
-**Polar decomposition.** It exists throughout the sector, because $N\neq0$ and the modulus $\Rho=\sqrt{N(\tilde Q)}\neq0$ is defined; the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Biquaternions* applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.
+**Polar decomposition.** It exists throughout the sector, because $N\neq0$ and the modulus $\Rho=\sqrt{N(\tilde Q)}\neq0$ is defined; the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.
 
 **One-sided operators.** Since $\tilde Q$ is a unit, $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$, with zero kernel, and both annihilators are $\{0\}$. The spectral defectivity is invisible to the one-sided structure: on $\Sigma_{10}$ and on $\Sigma_{11}$ alike, both multiplications are invertible. No ideal-theoretic condition can detect a repeated eigenvalue.
 
@@ -360,4 +360,4 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
-- [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.

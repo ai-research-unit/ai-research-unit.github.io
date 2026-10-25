@@ -148,7 +148,7 @@ The scalar part of the block is the Krein form, and this section reads the two r
 $$
 \mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}).
 $$
-In the coefficient basis the Gram matrix of the form is $E=\mathrm{diag}(1,-1,-1,-1)$, of determinant $-1$; in the real basis the realified form is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$, of signature $(2,6)$. The null set, the isotropic structure and the cone are *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*.
+In the coefficient basis the Gram matrix of the form is $E=\mathrm{diag}(1,-1,-1,-1)$, of determinant $-1$; in the real basis the realified form is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$, of signature $(2,6)$. The null set, the isotropic structure and the cone are *K-Regularity and Degeneracy in the Biquaternion Algebra*.
 
 *Proof.* The scalar part of the value is the first term of the scalar–vector form, and the Gram matrix is computed from $\langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu}$.
 
@@ -273,6 +273,6 @@ The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\t
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product that is split and its two orders.
 - [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the one-sided actions of the unit candidate.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four general products and the place of the general quaternionic sesquilinear product among them.
-- [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set, the isotropic structure and the cone.
+- [K-Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set, the isotropic structure and the cone.
 - [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the operators of the product that is split.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces named in the articles of the block.

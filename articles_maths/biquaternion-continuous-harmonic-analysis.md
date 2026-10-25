@@ -76,6 +76,30 @@ where $\Re(\rho)$ and $\Im(\rho)$ are the real and imaginary quaternion parts of
 
 The three families give three essentially different Fourier transforms, as in the discrete case.
 
+### The Kernel as the Exponential of an Element
+
+The kernel is itself an exponential, and a spectrally regular element supplies its own root and rate.
+
+**Proposition (the element's kernel).** Let $\tilde Q=Q_te_t+\vec Q$ with $B^2=\vec Q\cdot\vec Q\neq0$, let $B$ be a square root of $B^2$, and put $\rho=\vec Q/B$. Then $\rho^2=-e_t$ and, for every complex $\theta$,
+
+$$
+e^{\theta\tilde Q}
+=e^{\theta Q_t}\,W\!\left(-\theta,\frac{B}{2\pi}\right)
+=e^{\theta Q_t}\,W\!\left(\theta,-\frac{B}{2\pi}\right).
+$$
+
+In particular, when $Q_t=0$, $W(t,B/2\pi)=e^{-t\tilde Q}$.
+
+*Proof.* By the closed form of the kernel, $W(-\theta,B/2\pi)=\exp(\rho B\theta)$. The element $\rho B\theta$ squares to $-B^2\theta^2e_t$, so its exponential is $\cos(B\theta)e_t+\sin(B\theta)\rho$; multiplying by $e^{\theta Q_t}$ and comparing with the closed form of the exponential gives the identity. The second form follows from $W(t,-\omega)=W(-t,\omega)$.
+
+**The root is pure.** The root $\rho=\vec Q/B$ has no scalar part. The central roots $\pm i$ are therefore never the root of a regular element; the dictionary always lands in the two pure families.
+
+**Two cuts.** In the root-adapted basis $(e_t,\rho,\nu,\xi)$ of §*Factorization into Complex Fourier Transforms*, left multiplication by $\rho$ is block diagonal with the block $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ repeated on the two planes. The spectral eigenbasis diagonalises the two blocks; it is $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ with $u_\mp=\frac12(\nu\mp i\xi)$, and it takes one line from each Fourier plane. The Fourier factorization and the spectral decomposition are transverse; the dictionary is *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*The Eigenbasis Is a Fourier Basis*.
+
+**The cone.** At $B=0$ there is no root and no frequency. The flow is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N=\vec Q$ and $\vec N^2=0$; the root-free closed form extends to $B=0$, and the kernel itself has no limit, because it is a function of a root that does not exist (*Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Exponential on the Cone*).
+
+**Boundary.** The identity is pointwise in the element. It changes no inversion, Plancherel or convolution statement of the transform; it identifies the kernel of the transform with the flow of one regular element.
+
 ## The Continuous Transform Pair
 
 ### Definition
@@ -578,6 +602,7 @@ The continuous transform is the limit of the discrete transform as the sampling 
 
 ## Further Reading
 
+- [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential of a regular element as the kernel at negative time, the root the element supplies, the character exponents, the eigenbasis read in the root-adapted basis and the two unitarity criteria.
 - S. Said, N. Le Bihan, S. J. Sangwine, "Fast complexified quaternion Fourier transform", *IEEE Transactions on Signal Processing* **56** (2008) 1522–1531, for the discrete biquaternion Fourier transform.
 - S. J. Sangwine and T. A. Ell, "Complexification of the quaternion roots of $-1$", arXiv:math.RA/0506190 (2005), for the classification of the biquaternion roots of $-1$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", arXiv:0812.1102 (2008), for the classification of the zero divisors.

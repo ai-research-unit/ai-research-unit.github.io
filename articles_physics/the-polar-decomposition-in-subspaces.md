@@ -564,7 +564,7 @@ The restrictions together exhaust the ways in which the four factors can depend 
 
 ## Further Reading
 
-- [Modulus–Unit Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
 - [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html), for the remarkable subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the boosts and the information interpretation.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the light cone.

@@ -30,7 +30,7 @@ with $\vec u_p=\vec p/\lvert\vec p\rvert$ and $\langle\tilde P\rangle_{\natural}
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The four factors, their ranges and the uniqueness of the word | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
+| The four factors, their ranges and the uniqueness of the word | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | The boundary theorem, the two strata and the rate | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
 | The logarithm, the kernel and the exponential image | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The norm, its multiplicativity and the group of units | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
@@ -304,7 +304,7 @@ For the material momentum the data are $r=mc$, $\zeta=i$, $\vec u_{\mathrm b}=-\
 ## Further Reading
 
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the word, the boundary theorem and the two strata.
-- [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors and their ranges.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors and their ranges.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the logarithm, its kernel and the image of the exponential.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone, the mass shell and the element-level reading of the two strata.
 - [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the boundary of the word and the two kinds of boundary point.

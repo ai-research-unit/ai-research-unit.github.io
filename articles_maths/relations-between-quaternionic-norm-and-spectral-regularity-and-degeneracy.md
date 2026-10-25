@@ -208,7 +208,7 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 
 **Theorem (the polar decomposition follows the norm).** A modulus–unit polar decomposition exists exactly on $\Sigma_{11}\cup\Sigma_{10}$; the modulus is a choice of square root of $N(\tilde Q)$.
 
-*Proof.* If $N\neq0$, choose a square root $\Rho$ and set $\tilde U=\tilde Q/\Rho$; then $\langle\tilde U\rangle_{\natural}=1$. If $N=0$ and $\tilde Q\neq0$, no $\Rho\neq0$ has $\Rho^2=0$; at the origin the same equation forces $\Rho=0$. This is the modulus of *Modulus–Unit Polar Decomposition of Biquaternions*.
+*Proof.* If $N\neq0$, choose a square root $\Rho$ and set $\tilde U=\tilde Q/\Rho$; then $\langle\tilde U\rangle_{\natural}=1$. If $N=0$ and $\tilde Q\neq0$, no $\Rho\neq0$ has $\Rho^2=0$; at the origin the same equation forces $\Rho=0$. This is the modulus of *The Polar Decomposition of an N-Regular Biquaternion*.
 
 **The two decompositions in the strata.**
 
@@ -325,4 +325,4 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the comparison of the two decompositions factor by factor.
 - [Two-Sided Operator and the Polar Decomposition](two-sided-operator-and-the-polar-decomposition.html), for the sandwich, its spectrum and its rank on the null cone.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections and the degenerate regimes.
-- [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt{N}$ and its failure at $N=0$.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and its failure at $N=0$.

@@ -27,7 +27,7 @@ The characteristic polynomial and its discriminant are
 $$
 \boxed{\;p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural},
 \qquad
-\Delta=4\left(Q_t^2-\langle\tilde Q\rangle_{\natural}\right)=4B^2\;}.
+\Delta=4\left(Q_t^2-\langle\tilde Q\rangle_{\natural}\right)=-4B^2\;}.
 $$
 
 The spectrum degenerates exactly on the discriminant locus $\Delta=0$, that is, on $B=0$. That locus is one complex equation on the vector part, hence two real equations: the **isotropic cone** $(\vec Q,\vec Q)=0$ of the complex vector space, of real dimension four inside the six real dimensions of $\vec Q$.
@@ -165,7 +165,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 | $(\vec X,\vec Y)$ | the complex bilinear form $X_xY_x+X_yY_y+X_zY_z$ on the vector part |
 | $B^2=(\vec Q,\vec Q)$ | the complex norm squared of the vector part |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
-| $\Delta=4B^2$ | the discriminant of the characteristic polynomial |
+| $\Delta=-4B^2$ | the discriminant of the characteristic polynomial |
 | $\vec\Xi=-i\vec Q/B$ | the pure root of $+1$ of the non-degenerate regime, defined for $B\neq0$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the eigenprojections, defined for $B\neq0$ |
 | $N$ | a nonzero nilpotent, $N^2=0$ |

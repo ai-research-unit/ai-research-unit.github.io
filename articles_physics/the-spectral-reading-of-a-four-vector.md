@@ -292,3 +292,4 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the pure states that the idempotents represent.
 - [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the mass shell read as a level set.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass as a modulus and the complex angle of the frame.
+- [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the general reading of the spectrum and of the degenerate strata.

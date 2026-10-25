@@ -294,6 +294,34 @@ The table is the corner rule written out. It shows that the basis is a system of
 
 **Remark (in what sense the eigenbasis is unique).** The uniqueness is that of the normalised Peirce representative. The operator $L_{\tilde Q}$ has two distinct eigenvalues, and each eigenspace is two-dimensional; any basis of each eigenspace is therefore an eigenbasis of $L_{\tilde Q}$, and the set of eigenbases is not unique. What is unique, with the normalisation of §*The Transverse-Vector Construction*, is the quadruple made of the two spectral idempotents and the two normalised corner generators. Every statement of uniqueness in this article refers to that quadruple.
 
+### The Fourier Reading of the Basis
+
+Put $\rho=i\vec\Xi=\vec Q/B$, a pure root of $-1$. Choose a pure $\nu$ with $\nu^2=1$, orthogonal to $\rho$ in the complex bilinear form, and put $\xi=\rho\nu$; then $(e_t,\rho,\nu,\xi)$ is the root-adapted basis of *Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*, and
+
+$$
+L_\rho\sim
+\begin{pmatrix}
+0&-1&0&0\\
+1&0&0&0\\
+0&0&0&-1\\
+0&0&1&0
+\end{pmatrix},
+$$
+
+the block of the complex structure repeated on the two planes.
+
+**Proposition (the Fourier form of the eigenbasis).** With
+$$
+u_-=\tilde\Pi_+\nu=\tfrac12(\nu-i\xi),
+\qquad
+u_+=\tilde\Pi_-\nu=\tfrac12(\nu+i\xi),
+$$
+the quadruple $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is an eigenbasis of $L_{\tilde Q}$ with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, and $\rho u_-=+iu_-$, $\rho u_+=-iu_+$.
+
+*Proof.* Since $\vec\Xi=-i\rho$ and $\rho\nu=\xi$, we have $\vec\Xi\nu=-i\xi$, so $\tilde\Pi_+\nu=\tfrac12(\nu-i\xi)=u_-$ and $\tilde\Pi_-\nu=\tfrac12(\nu+i\xi)=u_+$. From $\rho\nu=\xi$ and $\rho\xi=-\nu$, $\rho u_-=\tfrac12(\xi+i\nu)=iu_-$ and $\rho u_+=\tfrac12(\xi-i\nu)=-iu_+$. Left multiplication by $\tilde Q=Q_te_t+B\rho$ is $Q_t\mathrm{id}+BL_\rho$, which gives the stated eigenvalues.
+
+**The two cuts.** In the matrix model of §*The Matrix Model*, the first Fourier plane is the diagonal subspace and the second is the off-diagonal subspace. The spectral eigenspaces are the two rows: $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ is the first row, $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$ the second. Each row meets each Fourier plane in one line, so neither decomposition refines the other. The Fourier factorization keeps the planes and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue.
+
 ### The Four Labels
 
 Each basis vector is a joint eigenvector of four operators: left and right multiplication by $\tilde Q$ and by $\vec\Xi$. The labels are the corner indices.
@@ -467,7 +495,7 @@ $$
 D_{\tilde Q,\tilde Q''}=D_{\tilde Q,\tilde Q'}\,D_{\tilde Q',\tilde Q''}.
 $$
 
-The change is not diagonal: two different elements have different idempotents and different nilpotents, so their eigenbases are related by a general change of basis. The matrix is the biquaternion analogue of the matrix $\mathsf C_Q$ of *Eigenbasis of a Biquaternion in Matrix Elements Representations*, and the cocycle is the same.
+The change is not diagonal: two different elements have different idempotents and different nilpotents, so their eigenbases are related by a general change of basis. The matrix is the biquaternion analogue of the matrix $\mathsf C_Q$ of *Spectral Regularity and Eigenbasis of a Biquaternion in Matrix Element Representations*, and the cocycle is the same.
 
 ## The Frame Attached to the Direction
 
@@ -516,7 +544,67 @@ The closed-form normalisation is not exactly equivariant, because the auxiliary 
 
 ### The Boundary
 
-The construction is defined on $\{B^2\neq0\}$ and stops on the spectral-degenerate cone $\{B^2=0\}$. On the cone the two eigenvalues coalesce, the root is undefined, and the two idempotents have no canonical limit: $\vec\Xi$ is not defined because $B=0$, and any limit obtained along a path into the cone depends on the path. The cone splits into the scalar line, where $L_{\tilde Q}$ is scalar and every basis is an eigenbasis, and the Jordan part, where $L_{\tilde Q}$ has a single eigenvalue and a two-dimensional eigenspace, so no eigenbasis exists. The two trivial eigenbases of the scalar line and of the origin are not instances of the construction: they are not attached to the element, and they are not unique.
+The construction is defined on $\{B^2\neq0\}$ and stops on the spectral-degenerate cone $\mathcal S=\{B^2=0\}$. On the cone the two eigenvalues coalesce, the root $\vec\Xi=-i\vec Q/B$ is undefined, and the two spectral idempotents have no limit independent of the path: a sequence of spectral-regular elements converging to a point of the cone produces idempotents whose limit depends on the path. The cone is not one case but three, and each stratum has canonical data of its own.
+
+**The scalar stratum.** $\vec Q=0$. Then $\tilde Q=Q_te_t$ and $L_{\tilde Q}=Q_t\mathrm{id}$; every basis is an eigenbasis, and the one-term writing $\tilde Q=Q_te_t$ is canonical. No refinement is canonical: every idempotent commutes with $\tilde Q$, so every complete pair $(e,f)$ gives the trivial Peirce form
+
+$$
+e\tilde Qe=Q_te,\qquad e\tilde Qf=0,\qquad f\tilde Qe=0,\qquad f\tilde Qf=Q_tf,
+$$
+
+with both off-diagonal corners zero, and the two diagonal coefficients equal. The gauge is the whole idempotent variety, of complex dimension two. At the origin the eigenvalue is zero as well, and the one-term writing is $0=0\cdot e_t$.
+
+**The nilpotent stratum.** $Q_t=0$, $\vec Q\neq0$, $\vec Q^2=0$. Write $\vec N=\vec Q$. The canonical data are the line $\mathbb{C}\vec N$, the plane $\ker L_{\vec N}=\operatorname{im}L_{\vec N}$, and the flag
+
+$$
+0\subset\mathbb{C}\vec N\subset\ker L_{\vec N}\subset\mathbb{B}.
+$$
+
+Every idempotent $e$ with $e\vec N=\vec N$ and $\vec Ne=0$ gives the Peirce form
+
+$$
+e\tilde Qe=0,\qquad e\tilde Qf=\vec N,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0,\qquad f=e_t-e.
+$$
+
+This is a Peirce form, not a spectral decomposition: the two diagonal coefficients are equal, and the whole defect sits in the off-diagonal corner. Those idempotents are exactly the affine line
+
+$$
+e_b=e+b\vec N,\qquad b\in\mathbb{C},
+$$
+
+and the Peirce form is invariant: $e_b\vec Nf_b=\vec N$, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.
+
+**The unipotent stratum.** $Q_t\neq0$, $\vec Q\neq0$. Put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$ and
+
+$$
+\tilde Q=Q_tu,\qquad u=e_t+\vec\Upsilon,\qquad (u-e_t)^2=0.
+$$
+
+The element $u$ is unipotent, and $u^n=e_t+n\vec\Upsilon$ for every integer $n$; in particular $u^{-1}=e_t-\vec\Upsilon$ and $\tilde Q^{-1}=Q_t^{-1}(e_t-\vec\Upsilon)$. The canonical data are those of the nilpotent stratum applied to $\vec Q$: the line, the flag, the same affine family of Peirce idempotents. The Peirce form of $\tilde Q$ relative to $e_b$ is $\operatorname{diag}(Q_t,Q_t)$ with off-diagonal $\vec Q$, and it does not depend on $b$. The scalar part is central and adds nothing to the Peirce corners but the eigenvalue $Q_t$. There is no eigenbasis, for the same reason: the eigenspace is $\ker L_{\vec Q}$, of complex dimension two.
+
+**The two actions.** The right action does not supply a basis, on either defective stratum. The operators $L_{\vec Q}$ and $R_{\vec Q}$ commute, both have rank two, both have the single eigenvalue zero, and their common eigenspace is the line
+
+$$
+\ker L_{\vec Q}\cap\ker R_{\vec Q}=\mathbb{C}\vec Q.
+$$
+
+A simultaneous eigenbasis would need four independent common eigenvectors, and there is one. In the Peirce basis $(e,\vec Q,\vec X,f)$, where $\vec X$ spans $f\mathbb{B}e$, the two nilpotent parts are
+
+$$
+L_{\vec Q}:\ e\mapsto0,\quad \vec Q\mapsto0,\quad \vec X\mapsto c\,e,\quad f\mapsto\vec Q,
+$$
+
+$$
+R_{\vec Q}:\ e\mapsto\vec Q,\quad \vec Q\mapsto0,\quad \vec X\mapsto c\,f,\quad f\mapsto0,
+$$
+
+with $c\neq0$ depending on the scale of $\vec X$. The left chains are $(\vec X,e)$ and $(f,\vec Q)$; the right chains are $(e,\vec Q)$ and $(\vec X,f)$. The two pairings of the four vectors differ. If a basis put both operators in Jordan form, both would equal $J_2(0)\oplus J_2(0)$ in that basis, hence $L_{\vec Q}=R_{\vec Q}$; but $L_{\vec Q}(e)=0$ and $R_{\vec Q}(e)=\vec Q\neq0$. The right action supplies a second flag,
+
+$$
+0\subset\mathbb{C}\vec Q\subset\ker R_{\vec Q}\subset\mathbb{B},
+$$
+
+not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a gauge of two complex parameters.
 
 ## Spinors and Chirality
 
@@ -692,8 +780,9 @@ In the language of physics, the pair of columns is the algebraic image of a Dira
 | spinors | $S_\pm=\mathbb{B}\tilde\Pi_\pm$, minimal left ideals, complex dimension two |
 | left action on spinors | $\operatorname{diag}(\lambda_+,\lambda_-)$ on each chirality |
 | chirality | the right index, the eigenvalue of $R_{\tilde Q}$; independent of the left spectrum |
+| boundary | $\mathcal S$ has three strata: the scalar one with no attached basis, the nilpotent and unipotent ones with a flag and a two-parameter gauge, and no eigenbasis |
 
-The construction fails exactly on the spectral-degenerate cone. On the scalar line and at the origin every basis is an eigenbasis and none is attached to the element; on the Jordan part of the cone there is no eigenbasis. The spectral condition is thus the exact domain of the construction, and the norm is not part of it.
+The construction fails exactly on the spectral-degenerate cone, and the failure has three forms. On the scalar stratum and at the origin every basis is an eigenbasis and none is attached to the element; the one-term decomposition is canonical, and the gauge is the idempotent variety. On the nilpotent and unipotent strata there is no eigenbasis: the canonical data are the line, the flag, and the affine family $e_b=e+b\vec Q$ of Peirce idempotents, and the two-sided action does not repair the defect. The spectral condition is thus the exact domain of the construction, and the norm is not part of it.
 
 ## Summary of Notation
 
@@ -709,6 +798,10 @@ The construction fails exactly on the spectral-degenerate cone. On the scalar li
 | $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the spectral idempotents |
 | $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the Peirce corners |
 | $\vec\Upsilon_\pm$ | the normalised nilpotents, $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$ |
+| $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone, the boundary of the construction |
+| $\vec N=\vec Q$ on the nilpotent stratum | the nilpotent part |
+| $e_b=e+b\vec Q$ | the affine family of Peirce idempotents on the cone |
+| $\vec X$ | a generator of the corner $f\mathbb{B}e$ |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces, the two chiralities |
 | $L_{\tilde Q_{\mathrm{sp}}}$, $R_{\tilde Q_{\mathrm{sp}}}$ | left and right multiplication by the general element |
 | $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
@@ -722,11 +815,12 @@ The construction fails exactly on the spectral-degenerate cone. On the scalar li
 - [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the sector $\Sigma_{01}$, the scaled idempotents and the same eigenbasis with a zero eigenvalue.
 - [The N-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for the nilpotents and the origin.
-- [Eigenbasis of a Biquaternion in Matrix Elements Representations](eigenbasis-of-a-biquaternion-in-matrix-elements-representations.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
+- [Spectral Regularity and Eigenbasis of a Biquaternion in Matrix Element Representations](spectral-regularity-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
 - [Worked Examples of Eigenbasis of a Biquaternion](worked-examples-of-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce decomposition from a root of $+1$.
 - [Spinors as Minimal Left Ideals with Inner Conjugation](spinors-as-minimal-left-ideals-with-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the chiral halves.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
+- [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition in the wider theory.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the spectral projectors, the trace pairing and the matrix models.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternion algebra with $M_2(\mathbb{C})$ and the spinor modules.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the eigenbasis and the nilpotents are those of *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*; no definition or proof is repeated.
+This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the existence of the eigenbasis is proved in *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; its construction and the nilpotents are those of *Spectral Regularity and Construction of the Eigenbasis of a Biquaternion*, §*The Corners and the Nilpotents* and §*The Eigenbasis*; no definition or proof is repeated.
 
 Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$ of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Write
 
@@ -24,7 +24,7 @@ $$
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
 $$
 
-The eight cases cover five elements with $B\neq0$, one scalar and two elements with $B=0$ and $\vec Q\neq0$. In the eigenbasis a general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with the matrix $\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}$; its two columns are the two spinors.
+The eight cases cover five spectrally regular elements with $B\neq0$, two spectrally degenerate elements with $B=0$ and $\vec Q\neq0$, and the scalar $e_t$. In the tables, *distinct* names the spectrally regular regime, and *Jordan* and *scalar* name the two spectrally degenerate regimes. In the eigenbasis a general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with the matrix $\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}$; its two columns are the two spinors.
 
 | Regime | Case | Spectral reading |
 |---|---|---|
@@ -225,6 +225,8 @@ $$
 \mu\in\mathbb{C}^{\times}.
 $$
 
+*Spectral Regularity and Construction of the Eigenbasis of a Biquaternion* fixes one representative uniformly, by the symmetric closed form and its axis chart. The examples with $B\neq0$ below choose the auxiliary vector $\tilde Q_1$ case by case, so their representatives differ from that one by the rescaling above. The idempotents, the spectrum and the diagonal form do not depend on the choice.
+
 **The shared solution for $\vec Q=Q_x\vec e_x$.** For cases 2 to 5 the vector part is along $\vec e_x$, so
 
 $$
@@ -291,7 +293,7 @@ $$
 \operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$
 
-Because each eigenvalue occurs twice, the eigenbasis is not unique: any basis of the $\lambda_+$-eigenspace together with any basis of the $\lambda_-$-eigenspace is an eigenbasis. The basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is the choice singled out by the Peirce structure.
+Because each eigenvalue occurs twice, the eigenbasis is not unique: any basis of the $\lambda_+$-eigenspace together with any basis of the $\lambda_-$-eigenspace is an eigenbasis. Write $\mathcal{B}(\tilde Q)=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ for the Peirce eigenbasis, normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$: the two idempotents are the spectral idempotents of $\tilde Q$, and the two nilpotents are an admissible pair, determined up to the reciprocal rescaling.
 
 The two minimal left ideals are
 
@@ -435,11 +437,11 @@ $$
 
 ### The Regimes
 
-| Regime | Condition | Spectrum | Eigenbasis |
+| Spectral regime | Condition | Spectrum | Eigenbasis |
 |---|---|---|---|
-| Distinct | $B\neq0$ | $\lambda_+\neq\lambda_-$ | the eigenbasis; unique up to the reciprocal rescaling of $\vec\Upsilon_\pm$ and the exchange from $B\mapsto-B$ |
-| Jordan | $B=0$, $\vec Q\neq0$ | $\lambda_+= \lambda_-=Q_t$ | none: the eigenspace is two-dimensional |
-| Scalar | $\vec Q=0$ | $\lambda_+= \lambda_-=Q_t$ | every basis |
+| Spectrally regular (distinct) | $B\neq0$ | $\lambda_+\neq\lambda_-$ | the Peirce eigenbasis; unique up to the reciprocal rescaling of $\vec\Upsilon_\pm$ and the exchange from $B\mapsto-B$ |
+| Spectrally degenerate (Jordan) | $B=0$, $\vec Q\neq0$ | $\lambda_+= \lambda_-=Q_t$ | none: the eigenspace is two-dimensional |
+| Spectrally degenerate (scalar) | $B=0$, $\vec Q=0$ | $\lambda_+= \lambda_-=Q_t$ | every basis |
 
 In the Jordan regime, write $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$. The minimal polynomial is $(X-Q_t)^2$. When $Q_t\neq0$ the element is unipotent up to the scalar $Q_t$; when $Q_t=0$ it is nilpotent. In both subcases the eigenspace is $\ker L_{\vec N}$, of dimension two. A two-dimensional eigenspace in a four-dimensional algebra is not a basis of eigenvectors, so there is no eigenbasis. In the scalar regime the operator is $Q_t\,\mathrm{id}$, every nonzero vector is an eigenvector, and every basis is an eigenbasis; the construction of the eigenbasis does not apply because $\vec\Xi$ is undefined.
 
@@ -1158,7 +1160,7 @@ $$
 =e_t+i\sqrt2\,\vec e_x+2\vec e_y+i\sqrt2\,\vec e_z.
 $$
 
-The element is $N$-regular, $N(\tilde Q)\neq0$, of norm one, although its vector part is null.
+The element is $N$-regular and of norm one, although its vector part is null.
 
 ### Case 7: A Generic Direction
 
@@ -1269,7 +1271,7 @@ $$
 \vec\Upsilon_+^2=\vec\Upsilon_-^2=0.
 $$
 
-The nilpotents are not simple coordinate expressions, because the direction of $\vec Q$ is not aligned with an axis. They are computed from the projection formula, which is the general construction.
+The nilpotents are not simple coordinate expressions, because the direction of $\vec Q$ is not aligned with an axis. They are computed from the transverse-vector construction, which is the general construction.
 
 **The eigenbasis.** The basis is
 
@@ -1477,7 +1479,7 @@ The vector part is null, but the norm is $2i\neq0$: the element is $N$-regular. 
 
 ### The Eigenbasis Table
 
-For the five distinct cases the eigenbasis is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonal values are $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
+For the five spectrally regular cases the Peirce eigenbasis is $\mathcal{B}(\tilde Q)=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, and the diagonal values are $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
 | Case | $\tilde\Pi_+$ | $\vec\Upsilon_\pm$ | $\operatorname{diag}$ |
 |---|---|---|---|
@@ -1510,7 +1512,7 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is $N$-regular. A null vector part does not imply an $N$-degenerate element.
 - None of the eight is $N$-degenerate. The $N$-degenerate regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.
 - Case 1 is the scalar regime. Every basis is an eigenbasis, and the construction of the eigenbasis does not apply.
-- Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the projection formula. The symmetric closed form of *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, gives the same pair up to the reciprocal rescaling when the direction is off the exceptional cone; the projection formula is the construction used here.
+- Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the transverse-vector construction. The symmetric closed form of *Spectral Regularity and Construction of the Eigenbasis of a Biquaternion*, §*The Transverse-Vector Construction*, gives an admissible pair up to the reciprocal rescaling when the direction is off the exceptional cone; the transverse-vector construction is the one used here.
 - In the distinct regime the eigenvalues repeat twice in the four-dimensional eigenbasis, and they are distinct on each two-dimensional spinor space. The $2\times2$ model records the two values once, one for each column.
 
 ## Summary of Notation
@@ -1519,23 +1521,28 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ |
 | $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | a biquaternion |
-| $B=\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ | a fixed square root of the vector part |
+| $B=\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ | a fixed square root of the spectral discriminant $B^2$ |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\vec\Xi=-i\vec Q/B$ | the pure root of $+1$ attached to $\tilde Q$ |
 | $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ | the two eigenprojections |
-| $\vec\Upsilon_\pm$ | the normalised nilpotents of the mixed Peirce corners |
+| $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the Peirce corners |
+| $\vec\Upsilon_\pm$ | the nilpotents of the mixed Peirce corners, normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ |
+| $\mathcal{B}(\tilde Q)$ | the Peirce eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two minimal left ideals, the spinor spaces |
 | $\mathsf M_2$ | the fixed $2\times2$ matrix model |
 | $\mathsf M_2^Q$ | the eigenbasis matrix model |
 | $\rho_\pm=\mathsf M_2(\tilde\Pi_\pm)$ | the spectral projectors |
 | $L_{\tilde Q},R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ |
-| $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the norm |
+| $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the norm |
 
 ## Further Reading
 
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenprojectors*, for the eigenvalue decomposition and the eigenprojections.
-- [The N-Regular, Spectrally Regular Sector](the-quaternionic-norm-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the Peirce decomposition, the nilpotents and the eigenbasis.
-- [Eigenbasis of a Biquaternion in Matrix Elements Representations](eigenbasis-of-a-biquaternion-in-matrix-elements-representations.html), for the fixed model, the eigenbasis model and the diagonalising matrix.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the two eigenvalues and the existence of the eigenbasis.
+- [Spectral Regularity and Construction of the Eigenbasis of a Biquaternion](spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction of the eigenbasis, the nilpotent pair and the normalisation.
+- [The N-Regular, Spectrally Regular Sector](the-quaternionic-norm-regular-spectrally-regular-sector.html), for the generic sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.
+- [The N-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
+- [Spectral Regularity and Eigenbasis of a Biquaternion in Matrix Element Representations](spectral-regularity-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html), for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the same eight elements read through the polar word.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for the two-dimensional commutative companion.

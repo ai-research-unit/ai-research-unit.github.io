@@ -13,7 +13,7 @@ and at two equal arguments it is real. It has signature $(1,3)$ over $\mathbb{C}
 
 The physical reading of the form itself — the gauge calibration, the sign relation to the interval on the material sector — is the subject of this article. The article gives the Gram matrix, the fundamental symmetry, the isometry group, the level sets, the hyperbolic geometry and the $J$-contractions. It states the geometry and the readings, and it states where the readings stop.
 
-The article is a reader. The mathematics is owned by *Introduction to the Symmetric Quaternionic Sesqualgebra*, *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, *Krein Norm Regularity and Degeneracy in the Biquaternion Algebra*, *The Krein Isometry Group and Its Cartan Decomposition* and *The Krein Level Sets and the Hyperbolic Structure*.
+The article is a reader. The mathematics is owned by *Introduction to the Symmetric Quaternionic Sesqualgebra*, *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, *K-Regularity and Degeneracy in the Biquaternion Algebra*, *The Krein Isometry Group and Its Cartan Decomposition* and *The Krein Level Sets and the Hyperbolic Structure*.
 
 ## The Results It Uses
 
@@ -21,7 +21,7 @@ The article is a reader. The mathematics is owned by *Introduction to the Symmet
 | --- | --- |
 | The form as a product, its Hermitian character and its signatures | [Introduction to the Symmetric Quaternionic Sesqualgebra](../articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.html) |
 | The form: Gram matrices, inertia and signatures | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
-| The fundamental symmetry, orthogonality, isotropy and the Krein cone | [The Fundamental Symmetry of the Form](../articles_maths/the-fundamental-symmetry-of-the-form.html) and [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The fundamental symmetry, orthogonality, isotropy and the Krein cone | [The Fundamental Symmetry of the Form](../articles_maths/the-fundamental-symmetry-of-the-form.html) and [K-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The isometry group, the boosts, the $J$-contractions, the Cartan decomposition and the symmetric space | [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html) |
 | The level sets and the two hyperbolic models | [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html) |
 
@@ -285,7 +285,7 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](../articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the form as a product and its Hermitian character.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the Gram matrices and the inertia.
 - [The Fundamental Symmetry of the Form](../articles_maths/the-fundamental-symmetry-of-the-form.html), for the fundamental symmetry and the bridge.
-- [Krein Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the orthogonality, the isotropy and the Krein cone.
+- [K-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the orthogonality, the isotropy and the Krein cone.
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html), for the group, the boosts, the contractions and the Cartan decomposition.
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the ball and the two hyperbolic models.
 - [The Operators: One-Sided, Two-Sided, Sandwich](the-operators-one-sided-two-sided-sandwich.html), for the one-sided and two-sided operators of the form.

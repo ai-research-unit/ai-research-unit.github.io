@@ -205,6 +205,9 @@ the eigenvalues then being $\pi i(m\pm n)$. If $B = 0$ but $\vec Q \neq 0$, the 
 | Multiplicativity | $\exp(\tilde Q_1+\tilde Q_2)=\exp\tilde Q_1\exp\tilde Q_2$ when $[\tilde Q_1,\tilde Q_2]=0$; fails in general |
 | Non-vanishing | $\exp\tilde Q$ is a unit for every $\tilde Q$ |
 | Norm | $\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)=\exp(\operatorname{Tr}\tilde Q)$ |
+| Hermitian norm | $\langle e^{\theta\tilde Q}\rangle_*=\lvert e^{\theta Q_t}\rvert^2\bigl(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert_E^2\bigr)$ |
+| Unitary flow | $e^{\theta\tilde Q}$ unitary for every real $\theta$ iff $\tilde Q^*=-\tilde Q$ |
+| Self-adjoint flow | $e^{\theta\tilde Q}$ self-adjoint for every real $\theta$ iff $\tilde Q^*=\tilde Q$ |
 | Derivative | $d\exp_{\tilde Q}(H)=\int_0^1\exp(s\tilde Q)H\exp((1-s)\tilde Q)\,ds$; it equals $\exp(\tilde Q)H$ when $[H,\tilde Q]=0$ |
 | Injective | no; the kernel is computed in §*The Kernel and the Image* |
 | Periods | the central periods $2\pi i k\,e_t$; further periods depend on $\tilde Q$ |
@@ -228,6 +231,46 @@ $$
 This reduces to $\exp(\tilde{Q}) \vec e_k$ only when $\vec e_k$ commutes with $\tilde{Q}$.
 
 **Biquaternion norm.** The verification is direct: in the oscillatory regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(\cos^2 B + \sin^2 B) = \exp(2 Q_t)$; in the nilpotent regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(1 + 0) = \exp(2 Q_t)$. Here $\operatorname{Tr}(\tilde{Q}) = 2\operatorname{Sc}\tilde{Q} = 2Q_t$.
+
+### The Hermitian Norm and the Unitary Flow
+
+The quaternionic norm is fixed by the scalar part alone. The Hermitian norm $\langle X\rangle_*=\operatorname{Sc}(XX^*)$ of *Conventions in Mathematics*, §*The Form Convention, the Norm Convention and the Unitary Convention*, is not: it reads the vector part as well, and it separates the three data of the element.
+
+**Proposition (the Hermitian norm of the flow).** Let $B\neq0$, let $\vec U=\vec Q/B$, and let $\theta\in\mathbb{R}$. Then
+
+$$
+\langle e^{\theta\tilde Q}\rangle_*
+=\lvert e^{\theta Q_t}\rvert^2
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert_E^2\right),
+\qquad
+\lVert\vec U\rVert_E^2=\sum_{k\in\{x,y,z\}}\lvert U_k\rvert^2.
+$$
+
+*Proof.* Write $e^{\theta\tilde Q}=e^{\theta Q_t}(a e_t+b\vec U)$ with $a=\cos(B\theta)$ and $b=\sin(B\theta)$. Since $\vec U$ is pure, the scalar part of $\vec U\vec U^*$ is $\lVert\vec U\rVert_E^2e_t$, and the cross terms $a\bar b\vec U^*+b\bar a\vec U$ are pure vectors; the scalar part of the product is therefore $\lvert e^{\theta Q_t}\rvert^2(\lvert a\rvert^2+\lvert b\rvert^2\lVert\vec U\rVert_E^2)$.
+
+**Corollary (the norm deficit).** $\lVert\vec U\rVert_E^2=\lVert\vec Q\rVert_E^2/\lvert B\rvert^2\ge1$, with equality exactly when $\vec U$ is real, that is, exactly when $\tilde Q$ is normal.
+
+*Proof.* $\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the three squares have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality; if the squares have one argument, $Q_k=\zeta r_k$ with $r_k\ge0$ real and $\zeta$ a complex square root, and $\vec U$ is the real vector $(r_x,r_y,r_z)$ up to the scalar $\pm1$. Normality is *The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*.
+
+**Corollary (bounded and unbounded flows).** If $B$ is real and $\operatorname{Re}Q_t=0$, the Hermitian norm is bounded between $1$ and $\lVert\vec U\rVert_E^2$. If $\operatorname{Re}Q_t\neq0$ it is unbounded on one side. If $\operatorname{Im}B\neq0$ it is unbounded on both sides.
+
+The three sources are independent. The factor $\lvert e^{\theta Q_t}\rvert^2=e^{2\theta\operatorname{Re}Q_t}$ is the dilation; the trigonometric factor grows like $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$ when $B$ is complex; and the deficit $\lVert\vec U\rVert_E^2-1$ is an amplitude. A decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$; a boost is a non-zero imaginary part of $B$; a non-normal element has a larger oscillation amplitude, not a rate.
+
+**Proposition (unitary and self-adjoint flows).** For real $\theta$, the following are equivalent:
+
+- $e^{\theta\tilde Q}$ is unitary for the Hermitian form for every $\theta$;
+- $\tilde Q^*=-\tilde Q$;
+- $Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$.
+
+The following are also equivalent:
+
+- $e^{\theta\tilde Q}$ is self-adjoint for every $\theta$;
+- $\tilde Q^*=\tilde Q$;
+- $Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$.
+
+*Proof.* If $E=e^{\theta\tilde Q}$ is unitary for every $\theta$, differentiating $EE^*=e_t$ at $\theta=0$ gives $\tilde Q+\tilde Q^*=0$. Conversely $\tilde Q^*=-\tilde Q$ gives $E^*=e^{-\theta\tilde Q}=E^{-1}$. On $Q_te_t+\vec Q$ the star conjugates the scalar part and negates and conjugates the vector part, so $\tilde Q^*=-\tilde Q$ is $\bar Q_t=-Q_t$ and $\overline{\vec Q}=\vec Q$. The self-adjoint case is the same computation with the opposite signs.
+
+**Remark (normal is not unitary).** Normality is the reality of $\vec U$, a condition on the vector part alone; unitarity is the skew-adjointness of $\tilde Q$, a condition on both parts. The element $(1+i)\vec e_x$ is normal, with $\vec U=\vec e_x$ and $B=1+i$, but its flow is neither unitary nor self-adjoint; its Hermitian norm is $\cosh2\theta$. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, with $B=1$ and $\lVert\vec U\rVert_E^2=3$, but its Hermitian norm is $1+2\sin^2\theta$, which is bounded. The two notions answer different questions, and neither implies a constant norm. The dictionary between the flow and the Fourier kernel is *Relations between the Biquaternion Exponential and the Fourier Kernel*.
 
 The differential at the origin is the identity, so $\exp$ is a local diffeomorphism near $0$ and provides exponential coordinates near the identity of the group of units $\mathbb{B}^\times$ (*Biquaternion Lie Group and Exponential Structure*).
 
@@ -1322,6 +1365,7 @@ The table compares the elementary functions across the three algebras; in the bi
 ## Further Reading
 
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenprojectors*, for the eigenvalues, the eigenprojections and the pure root $\vec\Xi$; §*The Eigenvalue Formula* of this article, for the parity-matched lattice used there.
+- [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a biquaternion Fourier kernel, the root supplied by the element, the character exponents and the Hermitian norm of the flow.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of the quaternion exponential and logarithm.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the elementary functions of biquaternions.
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the exponential of complexified quaternions.

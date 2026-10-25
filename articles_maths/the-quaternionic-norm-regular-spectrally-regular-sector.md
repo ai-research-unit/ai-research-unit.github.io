@@ -975,7 +975,7 @@ $$
 
 It is unique. The Peirce eigenbasis $(e_+,\vec\Upsilon_-,\vec\Upsilon_+,e_-)$ is unique with the normalisation fixed. Both eigenvalues are non-zero and distinct, and both idempotents are non-trivial. This is the only sector in which all of these hold at once.
 
-**Polar decomposition.** It exists and is finite: the modulus $\Rho=\sqrt{N(\tilde Q)}=\sqrt{\lambda_+\lambda_-}\neq0$, so the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Biquaternions* applies. The sector is the only one in which the polar word and the spectral decomposition are simultaneously available: in $\Sigma_{01}$ the polar word fails while the spectral decomposition survives, and in $\Sigma_{10}$ the spectral decomposition fails while the polar word survives.
+**Polar decomposition.** It exists and is finite: the modulus $\Rho=\sqrt{N(\tilde Q)}=\sqrt{\lambda_+\lambda_-}\neq0$, so the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* applies. The sector is the only one in which the polar word and the spectral decomposition are simultaneously available: in $\Sigma_{01}$ the polar word fails while the spectral decomposition survives, and in $\Sigma_{10}$ the spectral decomposition fails while the polar word survives.
 
 **One-sided operators.** $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$ with zero kernel, and both annihilators vanish. Together with the eigenbasis, this is the full non-degenerate package.
 
@@ -1078,4 +1078,4 @@ The sector is the generic sector. It is the set of units with distinct non-zero 
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal ideals.
-- [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.

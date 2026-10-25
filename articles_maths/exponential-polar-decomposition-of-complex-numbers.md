@@ -77,7 +77,7 @@ $$
 Q=\exp(\ln r)\exp(i\theta)=\exp(Q_{\log}).
 $$
 
-The amalgamation uses the group law and the fact that $\ln r$ is real and central in $\mathbb{C}$. It is not a property of a general algebra: in a noncommutative algebra the two exponents need not commute, and the product need not be a single exponential. The polar word of *Modulus–Unit Polar Decomposition of Biquaternions* is the counterexample.
+The amalgamation uses the group law and the fact that $\ln r$ is real and central in $\mathbb{C}$. It is not a property of a general algebra: in a noncommutative algebra the two exponents need not commute, and the product need not be a single exponential. The polar word of *The Polar Decomposition of an N-Regular Biquaternion* is the counterexample.
 
 The word **polar** names the two factors, not two independent exponentials. The single exponent $Q_{\log}=\ln r+i\theta$ carries both the scale and the angle.
 

@@ -360,7 +360,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 
 **Eigenbasis.** It exists. The spectral idempotents are $e_+=\tilde Q/(2Q_t)$ and $e_-=e_t-e_+$, and they are unique. The normalised Peirce eigenbasis is unique with the normalisation fixed. The Peirce decomposition relative to $\tilde Q$ is the only one.
 
-**Polar decomposition.** The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Biquaternions* has no value on the sector. The failure is caused by the norm, not by the spectrum.
+**Polar decomposition.** The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* has no value on the sector. The failure is caused by the norm, not by the spectrum.
 
 **One-sided operators.** Rank $2$, equal to $2Q_t$ times a projection, with kernel the corresponding annihilator plane. Neither multiplication is invertible on either side.
 
@@ -466,4 +466,4 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the nilpotents $E_{ij}$.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the root variety $\tilde\Xi^2=e_t$ and the idempotent manifold.
-- [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt N$ and its failure at $N=0$.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and its failure at $N=0$.

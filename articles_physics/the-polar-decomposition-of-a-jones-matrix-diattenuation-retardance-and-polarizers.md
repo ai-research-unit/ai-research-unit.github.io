@@ -14,7 +14,7 @@ The article states the correspondence, computes the standard optical parameters 
 | --- | --- |
 | The element image $\mathsf{M}_2(\tilde J)$ and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ | [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
 | The Cartan pairing $\tilde J=\tilde H\tilde U$, the positive factor and the unitary factor | [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html) |
-| The generalized pairing on the cone, the partial isometry and its projections | [The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html) |
+| The generalized pairing on the cone, the partial isometry and its projections | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | The eigenvalue decomposition, the eigenprojections and the rank-one case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The norm, the invertibility criterion and the zero-divisor cone | [N-Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The unitary group and its matrix model | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
@@ -285,7 +285,7 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 - [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the state that an operator defines and its purity stratigraphy.
 - [The Matrix Images: Mixedness, Rapidity and the Phase Fibre](the-matrix-images-mixedness-rapidity-and-the-phase-fibre.html), for the singular values of the amplitude and the determinant as a volume.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the theorem and its uniqueness.
-- [The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html), for the extension to the cone and the polarizer.
+- [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the extension to the cone and the polarizer.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition of the factors.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the partition that the polarizer sits on.
 - Max Born and Emil Wolf, *Principles of Optics* (Cambridge, 7th edn, 1999), for the Jones calculus, the Stokes parameters and the polar decomposition of optical elements.
