@@ -224,6 +224,20 @@ The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that t
 
 **Eigenbasis.** None, except at the origin. Every non-zero element of $\Sigma_{00}$ has characteristic and minimal polynomial $X^2$: it is a single Jordan block with eigenvalue $0$; the eigenspace is the annihilator plane $A(\tilde Q)$.
 
+**The flow.** There is no root on the sector and no frequency. On the non-zero part $Q_t=0$ and $\vec Q^2=0$, so the exponential is
+
+$$
+e^{\theta\tilde Q}=e_t+\theta\vec Q,
+$$
+
+and at the origin it is $e_t$. The Hermitian norm on the non-zero part, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is
+
+$$
+\langle e^{\theta\tilde Q}\rangle_*=1+\lvert\theta\rvert^2\lVert\vec Q\rVert_E^2,
+$$
+
+polynomial in $\theta$; the flow is never oscillatory, and no Fourier basis is attached to the element. The exponential is a unit on the sector, although the element is a zero divisor or the origin.
+
 **Polar decomposition.** The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* has no value on the sector: there is no unit factor of norm one.
 
 **One-sided operators.** Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.
@@ -322,3 +336,4 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $N$ among the four norms and of $B^2$ outside them.
 - [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.
+- [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

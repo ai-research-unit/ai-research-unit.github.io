@@ -145,23 +145,23 @@ $$
 then
 
 $$
-B=\frac{\gamma_+-\gamma_-}{2}-\frac{i}{2}\left(\omega_+-\omega_-\right).
+B=\frac{\gamma_--\gamma_+}{2}-\frac{i}{2}\left(\omega_+-\omega_-\right).
 $$
 
-The real part of $B$ is half the difference of the damping rates; the imaginary part is minus half the difference of the oscillation frequencies. The split is complex, and it is the general case. Normality makes the root real, not the half-gap: $B$ can be complex even when the eigenbasis is orthogonal. The Hermitian and material cases are two real slices of it.
+The real part of $B$ is half the difference of the damping rates, in the order $\gamma_--\gamma_+$ for the convention $e^{-i\lambda t}$; the imaginary part is minus half the difference of the oscillation frequencies. The split is complex, and it is the general case. Normality makes the root real, not the half-gap: $B$ can be complex even when the eigenbasis is orthogonal. The Hermitian and material cases are two real slices of it.
 
-| sector | element | eigenvalues | interpretation of $B$ |
+| case | element | eigenvalues | interpretation of $B$ |
 | --- | --- | --- | --- |
 | material four-momentum | $i\frac{E}{c}e_t+\vec p$ | $i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)$ | $B=\lvert\vec p\rvert$: the momentum magnitude; the pair is the Doppler pair |
 | Hermitian observable | $h_t+i\vec h$ | $h_t\mp\lvert\vec h\rvert$ | $B=i\lvert\vec h\rvert$: the half-gap is $\lvert\vec h\rvert$ |
-| normal, real $B$ | $Q_t+\vec Q$, $\vec Q$ a complex multiple of a real vector, $B$ real | $Q_t\pm iB$ | real half-gap; the damping sits in $Q_t$ |
-| normal, complex $B$ | the same, with $B$ complex | complex | complex half-gap; orthogonal modes, growing norm |
-| general non-normal | generic | complex | complex half-splitting; biorthogonal modes |
+| normal, real $B$ | $\vec Q$ real, $B$ real | $Q_t\pm iB$ | real half-gap; the damping sits in $Q_t$ |
+| normal, complex $B$ | $\vec Q$ a complex multiple of a real vector, $B$ complex | complex | complex half-gap; orthogonal modes, growing norm |
+| non-normal | $\vec Q$ not a complex multiple of a real vector | real or complex | biorthogonal modes; real $B$ does not prevent a bounded norm |
 | null idempotent multiple | $c\tilde\Pi$ | $c$ and $0$ | the two roots are the amplitude and zero |
 
-**Interpretation.** The same $B$ is interpreted as a **half-gap** in the informational sector, as a **momentum magnitude** in the material sector, and as a **complex half-splitting** for a generic element with complex $B$; a normal element with real $B$ has a real half-gap and carries its damping in $Q_t$. The algebra supplies one number; the sector supplies the physical name. The gap of a two-level system is $2\lvert B\rvert$ in the Hermitian case, and the beat frequency of the two modes is $2\lvert B\rvert$ in the general case. The massless case is the limit in which one of the two eigenvalues reaches zero.
+**Interpretation.** The same $B$ is interpreted as a **half-gap** in the informational sector, as a **momentum magnitude** in the material sector, and as a **complex half-splitting** for an element with complex $B$; a normal element with real $B$ has a real half-gap and carries its damping in $Q_t$. The algebra supplies one number; the sector supplies the physical name. The gap of a two-level system is $2\lvert B\rvert$ in the Hermitian case, and the beat frequency of the two modes is $2\lvert B\rvert$ in the general case. The massless case is the limit in which one of the two eigenvalues reaches zero.
 
-**Boundary.** The identification of $\lambda_\pm$ with $\omega_\pm-i\gamma_\pm$ depends on the sign convention of the evolution; with $e^{+i\lambda t}$ the roles of the real and imaginary parts are exchanged. The algebra gives the eigenvalues, not the convention. For an observable the eigenvalues are outcomes, not frequencies, and the word *gap* is the difference of two outcomes; for a four-momentum they are light-cone frequencies, not energies. The table is a dictionary of three interpretations, not one interpretation applied three times.
+**Boundary.** The identification of $\lambda_\pm$ with $\omega_\pm-i\gamma_\pm$ depends on the sign convention of the evolution; with $e^{+i\lambda t}$ the roles of the real and imaginary parts are exchanged. The algebra gives the eigenvalues, not the convention. For an observable the eigenvalues are outcomes, not frequencies, and the word *gap* is the difference of two outcomes; for a four-momentum they are light-cone frequencies, not energies. The table is a dictionary of readings, not one interpretation applied to every row.
 
 ### The Fourier Kernel and the Frequency
 
@@ -194,13 +194,13 @@ is the biquaternion Fourier kernel of *Biquaternion Continuous Harmonic Analysis
 
 **Which sector carries it.** The construction follows $B^2$ and not $N$: it is available on $\Sigma_{11}$ and on $\Sigma_{01}$, the massless zero divisors included, and unavailable on $\Sigma_{10}$ and $\Sigma_{00}$ except on the scalar line, where every basis is an eigenbasis but none is attached to the element. A massless momentum has the real root $\vec p/\lvert\vec p\rvert$ and a unitary Fourier character even though it is a zero divisor.
 
-**Which character is unitary.** The kernel is unitary for the natural conjugation for every pure root, $\rho^{\natural}=-\rho$. The positive Hermitian form — the form the Born rule uses — is more restrictive: the character is unitary for it exactly when $\rho^{*}=-\rho$, which for a pure root means that $\rho$ is real (*The Bochner Theorem for the Biquaternion Transform*, §*Unitarity of the Character and the Root*). For $\rho=\vec Q/B$ this is equivalent to the normality of the vector part: $\operatorname{Re}\vec Q$ and $\operatorname{Im}\vec Q$ are parallel. The material vector part is real and the Hermitian vector part is purely imaginary, so both physical sectors are normal. The two sectors differ in the sign of $B^2$: for the material element $B$ is real and the flow oscillates, while for the Hermitian element $B=i\lvert\vec h\rvert$ is imaginary and the flow is a boost. A non-normal $\vec Q$ gives a non-real root and a non-unitary character, hence the biorthogonal modes of *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum*; it does not by itself give damping. The unitarity criterion of the character is normality, not Hermiticity: it holds on both physical sectors and fails on a non-normal element. The unitarity of the flow is stronger: it is the material sector alone, $\tilde Q^*=-\tilde Q$, while the self-adjoint flow is the Hermitian sector, $\tilde Q^*=\tilde Q$. Normality gives neither, and it does not make the norm constant.
+**Which character is unitary.** The kernel is unitary for the natural conjugation for every pure root, $\rho^{\natural}=-\rho$. The positive Hermitian form — the form the Born rule uses — is more restrictive: the character is unitary for it exactly when $\rho^{*}=-\rho$, which for a pure root means that $\rho$ is real (*The Bochner Theorem for the Biquaternion Transform*, §*Unitarity of the Character and the Root*). For $\rho=\vec Q/B$ this is equivalent to the normality of the vector part: $\operatorname{Re}\vec Q$ and $\operatorname{Im}\vec Q$ are parallel. The material vector part is real and the Hermitian vector part is purely imaginary, so both physical sectors are normal. The two sectors differ in the sign of $B^2$: for the material element $B$ is real and the flow oscillates, while for the Hermitian element $B=i\lvert\vec h\rvert$ is imaginary and the flow is a boost. A non-normal $\vec Q$ gives a non-real root and a non-unitary character, hence the biorthogonal modes of *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum*; it does not by itself give damping. The unitarity criterion of the character is normality, not Hermiticity: it holds on both physical sectors and fails on a non-normal element. The unitarity of the flow is stronger: it is the material sector alone, $\tilde Q^*=-\tilde Q$. The self-adjoint flow is the Hermitian sector, $\tilde Q^*=\tilde Q$, and it is normal. Normality implies neither unitarity nor self-adjointness, and it does not make the norm constant.
 
 **Boundary.** The flow parameter $\theta$ is not a physical time, and $B$ is the rate relative to the chosen root, not the Fourier variable of a signal. The transform is a change of description and not a measurement. The algebra supplies the kernel and the rate; it does not supply the dynamics, the signal or the clock.
 
 ### The Norm of the Flow and the Three Rates
 
-The flow has a Hermitian norm, and its formula separates the three data. With $\rho=\vec Q/B$ and $\lVert\rho\rVert_E^2=\sum_k\lvert\rho_k\rvert^2$,
+The flow has a Hermitian norm, and its formula separates the three data. With $\rho=\vec Q/B$ and $\lVert\rho\rVert_E^2=\sum_k\lvert\rho_k\rvert^2$ — the Euclidean modulus sum, not the bilinear form $(\rho,\rho)=-1$ —
 
 $$
 \langle e^{\theta\tilde Q}\rangle_*
@@ -216,9 +216,9 @@ $$
 | $\operatorname{Im}B$ | growth like $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$ | boost, or complex rate |
 | $\lVert\rho\rVert_E^2-1$ | amplitude factor, $\ge0$ | non-normality, not a rate |
 
-The deficit vanishes exactly for a normal element, but it is an amplitude: a non-normal element oscillates between $1$ and $\lVert\rho\rVert_E^2$ when $B$ is real and $Q_t$ is purely imaginary. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, has $B=1$, and its norm is $1+2\sin^2\theta$. The normal element $(1+i)\vec e_x$ has $B=1+i$ and norm $\cosh2\theta$. The first is bounded and the second grows, so non-normality is not a damping mechanism.
+The deficit $\lVert\rho\rVert_E^2-1$ vanishes exactly for a normal element, but it is an amplitude: a non-normal element oscillates between $1$ and $\lVert\rho\rVert_E^2$ when $B$ is real and $Q_t$ is purely imaginary. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, has $B=1$, and its norm is $1+2\sin^2\theta$. The normal element $(1+i)\vec e_x$ has $B=1+i$ and norm $\cosh2\theta$. The first is bounded and the second grows, so non-normality is not a damping mechanism.
 
-The two physical sectors are the two real slices of the flow. In the material sector $\tilde Q^*=-\tilde Q$: the flow is unitary and its Hermitian norm is $1$. In the Hermitian sector $\tilde Q^*=\tilde Q$: the flow is self-adjoint and, for a normal element, its Hermitian norm is $e^{2\theta Q_t}\cosh(2\lvert B\rvert\theta)$. Normality is weaker than both and gives the orthogonal eigenbasis, not a constant norm.
+The two physical sectors are the two real slices of the algebra on which the flow is, respectively, unitary and self-adjoint. In the material sector $\tilde Q^*=-\tilde Q$: the flow is unitary and its Hermitian norm is $1$. In the Hermitian sector $\tilde Q^*=\tilde Q$: the flow is self-adjoint and, for a normal element, its Hermitian norm is $e^{2\theta Q_t}\cosh(2\lvert B\rvert\theta)$. Normality is weaker than both and gives the orthogonal eigenbasis, not a constant norm.
 
 **Boundary.** The formula is the norm of the exponential, not the norm of a state. A physical state needs a sector projection and a normalisation; the algebra supplies neither.
 
@@ -529,7 +529,7 @@ The left action has a two-dimensional eigenspace, the right action has a two-dim
 ## Physical Interpretations
 
 - **Spectral regularity is the mode picture.** Two distinct eigenvalues, two invariant two-dimensional subspaces, a normal-mode frame, and a unique expansion of every element. The interpretation is a two-mode system with a non-zero complex splitting.
-- **The splitting is the gap.** $\lambda_+-\lambda_-=2iB$. In the Hermitian sector the gap is $2\lvert B\rvert$; in the material sector $B$ is the momentum magnitude; in a generic element with complex $B$ it is the complex half-splitting of frequency and damping, while a normal element with real $B$ has a real half-gap and carries its damping in $Q_t$.
+- **The splitting is the gap.** $\lambda_+-\lambda_-=2iB$. In the Hermitian sector the gap is $2\lvert B\rvert$; in the material sector $B$ is the momentum magnitude; in a normal element with complex $B$ it is a complex half-gap with an orthogonal eigenbasis, in a non-normal element it is a complex half-splitting with biorthogonal modes, and a normal element with real $B$ has a real half-gap and carries its damping in $Q_t$.
 - **The spectrum is the Fourier spectrum.** The eigenvalues are the two character exponents of the flow, the eigenbasis is the Fourier basis of the root $\rho=\vec Q/B$, and $B$ is the rate relative to that root. The regular element supplies the root that the Fourier transform otherwise postulates.
 - **The two-term writing is the mode decomposition.** The element is a sum of two spectral components; the terms are not two particles, two energies or an antiparticle pair. Their sum is twice the scalar part and their product is the norm.
 - **The eigenbasis is a frame attached to the element.** The two eigenspaces are unique, and the normalised Peirce vectors are unique; without that normalisation, the vectors inside each eigenspace are a gauge. The frame is not a laboratory frame.
@@ -596,6 +596,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ |
 | $J_{\tilde Q}=L_{\vec Q}/B$ | the internal complex structure, defined for $B^2\neq0$ |
 | $\rho=\vec Q/B$ | the pure root of $-1$ of the regular case, $\rho^2=-e_t$ |
+| $\lVert\rho\rVert_E^2=\sum_k\lvert\rho_k\rvert^2$ | Euclidean square of the root, $\ge1$; not the bilinear form $(\rho,\rho)=-1$ |
 | $W(t,\omega)=\exp(-2\pi\rho\omega t)$ | the biquaternion Fourier kernel |
 | $N_{\tilde Q}=L_{\vec Q}$ | the nilpotent part of the operator, $N_{\tilde Q}^2=0$ when $B^2=0$ |
 | $\vec\Xi=-i\vec Q/B$ | the root of $+1$ of the regular case, $\vec\Xi^2=e_t$ |

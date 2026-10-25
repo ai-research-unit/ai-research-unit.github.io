@@ -250,11 +250,11 @@ $$
 
 **Corollary (the norm deficit).** $\lVert\vec U\rVert_E^2=\lVert\vec Q\rVert_E^2/\lvert B\rvert^2\ge1$, with equality exactly when $\vec U$ is real, that is, exactly when $\tilde Q$ is normal.
 
-*Proof.* $\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the three squares have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality; if the squares have one argument, $Q_k=\zeta r_k$ with $r_k\ge0$ real and $\zeta$ a complex square root, and $\vec U$ is the real vector $(r_x,r_y,r_z)$ up to the scalar $\pm1$. Normality is *The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*.
+*Proof.* $\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the non-zero squares have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality; if they do, $Q_k=\zeta r_k$ with $r_k\in\mathbb{R}$ and $\zeta^2$ that argument, so $B=\pm\zeta R$ with $R^2=\sum_kr_k^2$ and $\vec U=\pm(r_x,r_y,r_z)/R$ is real of Euclidean norm one. Since normality is exactly the reality of $\vec U$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*), this is the equality case.
 
 **Corollary (bounded and unbounded flows).** If $B$ is real and $\operatorname{Re}Q_t=0$, the Hermitian norm is bounded between $1$ and $\lVert\vec U\rVert_E^2$. If $\operatorname{Re}Q_t\neq0$ it is unbounded on one side. If $\operatorname{Im}B\neq0$ it is unbounded on both sides.
 
-The three sources are independent. The factor $\lvert e^{\theta Q_t}\rvert^2=e^{2\theta\operatorname{Re}Q_t}$ is the dilation; the trigonometric factor grows like $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$ when $B$ is complex; and the deficit $\lVert\vec U\rVert_E^2-1$ is an amplitude. A decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$; a boost is a non-zero imaginary part of $B$; a non-normal element has a larger oscillation amplitude, not a rate.
+The three sources are independent. The factor $\lvert e^{\theta Q_t}\rvert^2=e^{2\theta\operatorname{Re}Q_t}$ is the dilation; the trigonometric factor grows like $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$ when $\operatorname{Im}B\neq0$; and the deficit $\lVert\vec U\rVert_E^2-1$ is an amplitude. A decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$; a boost is a non-zero imaginary part of $B$; a non-normal element has a larger oscillation amplitude, not a rate.
 
 **Proposition (unitary and self-adjoint flows).** For real $\theta$, the following are equivalent:
 
@@ -270,7 +270,7 @@ The following are also equivalent:
 
 *Proof.* If $E=e^{\theta\tilde Q}$ is unitary for every $\theta$, differentiating $EE^*=e_t$ at $\theta=0$ gives $\tilde Q+\tilde Q^*=0$. Conversely $\tilde Q^*=-\tilde Q$ gives $E^*=e^{-\theta\tilde Q}=E^{-1}$. On $Q_te_t+\vec Q$ the star conjugates the scalar part and negates and conjugates the vector part, so $\tilde Q^*=-\tilde Q$ is $\bar Q_t=-Q_t$ and $\overline{\vec Q}=\vec Q$. The self-adjoint case is the same computation with the opposite signs.
 
-**Remark (normal is not unitary).** Normality is the reality of $\vec U$, a condition on the vector part alone; unitarity is the skew-adjointness of $\tilde Q$, a condition on both parts. The element $(1+i)\vec e_x$ is normal, with $\vec U=\vec e_x$ and $B=1+i$, but its flow is neither unitary nor self-adjoint; its Hermitian norm is $\cosh2\theta$. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, with $B=1$ and $\lVert\vec U\rVert_E^2=3$, but its Hermitian norm is $1+2\sin^2\theta$, which is bounded. The two notions answer different questions, and neither implies a constant norm. The dictionary between the flow and the Fourier kernel is *Relations between the Biquaternion Exponential and the Fourier Kernel*.
+**Remark (normal is not unitary).** Normality is the reality of $\vec U$, a condition on the vector part alone; unitarity is the skew-adjointness of $\tilde Q$, a condition on both parts. The element $(1+i)\vec e_x$ is normal, with $\vec U=\vec e_x$ and $B=1+i$, but its flow is neither unitary nor self-adjoint; its Hermitian norm is $\cosh2\theta$. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, with $B=1$ and $\lVert\vec U\rVert_E^2=3$, but its Hermitian norm is $1+2\sin^2\theta$, which is bounded. The two notions answer different questions: normality does not imply a constant norm, and non-normality does not imply growth. The dictionary between the flow and the Fourier kernel is *Relations between the Biquaternion Exponential and the Fourier Kernel*.
 
 The differential at the origin is the identity, so $\exp$ is a local diffeomorphism near $0$ and provides exponential coordinates near the identity of the group of units $\mathbb{B}^\times$ (*Biquaternion Lie Group and Exponential Structure*).
 
@@ -1361,6 +1361,9 @@ The table compares the elementary functions across the three algebras; in the bi
 | Nilpotent regime | $B = 0$, $\vec Q \neq 0$: $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[\epsilon]/(\epsilon^2)$, $\epsilon = \vec Q$; the element is Jordan when $Q_t\neq0$ and nilpotent when $Q_t=0$ |
 | Scalar case | $\vec Q = 0$: $\mathbb{C}[\tilde{Q}] = \mathbb{C} e_t$, the one-dimensional degeneration |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, written $N$; $N\neq 0$ is the $N$-regular set, the group of units and the domain of the logarithm and of general powers; $N=0$ is the $N$-degenerate set |
+| $\tilde Q^*=\overline{\tilde Q^{\natural}}$ | Hermitian conjugation |
+| $\langle X\rangle_*=\operatorname{Sc}(XX^*)$ | Hermitian norm, $\sum_\mu\lvert X_\mu\rvert^2$ |
+| $\lVert\vec U\rVert_E^2=\sum_k\lvert U_k\rvert^2$ | Euclidean modulus square of the axis, $\ge1$ |
 
 ## Further Reading
 

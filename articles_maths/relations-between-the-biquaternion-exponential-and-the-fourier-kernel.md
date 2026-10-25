@@ -324,7 +324,7 @@ $$
 
 **Proposition 5 (the norm deficit).** $\lVert\rho\rVert^2\ge1$, with equality exactly when $\rho$ is real, that is, exactly when $\tilde Q$ is normal.
 
-*Proof.* $\lvert B\rvert^2=\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the three squares $Q_k^2$ have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality. If the squares have one argument, $Q_k=\zeta r_k$ with $\zeta^2$ that argument and $r_k$ real up to sign, so $\rho=\vec Q/B$ is real; the converse is immediate.
+*Proof.* $\lvert B\rvert^2=\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the non-zero squares $Q_k^2$ have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality. If they do, $Q_k=\zeta r_k$ with $r_k\in\mathbb{R}$ and $\zeta^2$ that argument, so $B=\pm\zeta R$ with $R^2=\sum_kr_k^2$ and $\rho=\pm(r_x,r_y,r_z)/R$ is real; the converse is immediate.
 
 The three quantities $Q_t$, $B$ and $\lVert\rho\rVert^2$ govern the norm independently.
 
