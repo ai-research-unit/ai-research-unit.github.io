@@ -10,11 +10,11 @@ as the **form that the block carries**: it identifies it, computes its Gram matr
 realification and its signature, its invariance under the product and the failure of that invariance, its
 restriction to the remarkable subspaces, and its relation to the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ of the algebra.
 
-The form $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form named in the catalogue *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the general quaternionic bilinear one of the four pairings of *The Four Forms and the Four Algebraic Norms*; its diagonal is the norm of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, and on the remarkable subspaces its restrictions and their signatures are
+The form $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form named in the catalogue *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the general quaternionic bilinear one of the four pairings of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its diagonal is the norm of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, and on the remarkable subspaces its restrictions and their signatures are
 *Remarkable Subspaces under the General Quaternionic Algebra*, whose table is quoted here and
 not recomputed. The article therefore owns the reading of the form **as the form of the product** — the Gram
 data, the invariance question and the coincidence with $\langle\cdot,\cdot\rangle_{*}$ — and cites the norm article and the remarkable-subspace
-article for the form itself. The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ is *The Four Forms and the Four Algebraic Norms*; the invariance
+article for the form itself. The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the invariance
 question for a symmetric product is *Jordan Algebras*; the matrix reading of the same form is
 *Introduction to the Symmetric Quaternionic Algebra*.
 
@@ -182,7 +182,7 @@ any of the remarkable subspaces, since it has none on the whole algebra.
 ## The Coincidence with the Hermitian Form on the Real Part
 
 **Proposition (the coincidence on the real elements).** On two elements with real coefficients,
-drawn from the quaternion subspace, the form $\langle\cdot,\cdot\rangle_{\natural}$ coincides with the Hermitian form of *The Four Forms and the Four Algebraic Norms*,
+drawn from the quaternion subspace, the form $\langle\cdot,\cdot\rangle_{\natural}$ coincides with the Hermitian form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*,
 
 $$
 \boxed{\;
@@ -242,9 +242,9 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the quaternion form among the four pairings
-- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the quaternion form beside the other three coefficients
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm, the polarisation and the Hermitian form
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the quaternion form among the four pairings
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the quaternion form beside the other three coefficients
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm, the polarisation and the Hermitian form
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the restriction Gram matrices and the signatures
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the radical and the isotropic elements
 - [The Multiplication Operators of the Symmetric Quaternionic Algebra](the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html), for the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$ and the groups preserving it

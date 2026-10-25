@@ -10,7 +10,7 @@ There is also a sharper statement to make, and it is the strongest form of the a
 
 The article is structural and classical, and it stays inside the non-relativistic series; the algebra it examines is the same finite algebra used throughout. Conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
-- Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*), and the conventions of presentation.
+- Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the conventions of presentation.
 - Companion article *Modules over the Biquaternion Algebra*, for the algebra as a complex algebra and its modules.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the rotation generators and the spin operators inside the algebra.
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the trace obstruction that is the companion phenomenon in the bracket setting.

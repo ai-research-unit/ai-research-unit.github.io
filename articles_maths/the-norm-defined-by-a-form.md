@@ -224,7 +224,7 @@ the **Frobenius norm**, which is the Euclidean norm of the $n^{2}$ entries: it i
 
 ### The Biquaternion Trace Form
 
-**Example (the biquaternion algebra).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the Hermitian conjugation $* = {}^{\natural} \circ \bar{\cdot}$ the **general plain sesquilinear** form of *The Four Forms and the Four Algebraic Norms*, §*The Four Forms*,
+**Example (the biquaternion algebra).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the Hermitian conjugation $* = {}^{\natural} \circ \bar{\cdot}$ the **general plain sesquilinear** form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*The Four Forms*,
 
 $$
 h(P,Q) = \operatorname{Sc}(PQ^{*}) = \sum_{\mu} P_{\mu}\,\varsigma(Q_{\mu}),

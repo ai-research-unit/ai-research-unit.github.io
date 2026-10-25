@@ -204,7 +204,7 @@ $$
 Q_\rho = \langle \rho, \vec v \rangle, \qquad Q_\nu = \langle \nu, \vec v \rangle, \qquad Q_\xi = \langle \xi, \vec v \rangle,
 $$
 
-where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *The Four General Products and Their Relations*, §*The General Plain Bilinear Product $\tilde Q_1\tilde Q_2$* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_t$ is unchanged.
+where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The General Plain Bilinear Product $\tilde Q_1\tilde Q_2$* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_t$ is unchanged.
 
 ### The Factorization
 
@@ -431,7 +431,7 @@ because quaternion conjugation reverses products and $(\tilde{Q}^{-1})^{\natural
 
 ### The Region of Convergence
 
-Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert \langle\tilde{Q}\rangle_{\natural}\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Norm Regularity and Degeneracy in the Biquaternion Algebra*. Only the second reduces the question to scalars, because only the second is multiplicative:
+Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert \langle\tilde{Q}\rangle_{\natural}\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*. Only the second reduces the question to scalars, because only the second is multiplicative:
 
 $$
 r(f_n \tilde{Q}^{-n}) = r(f_n)\,r(\tilde{Q})^{-n}.

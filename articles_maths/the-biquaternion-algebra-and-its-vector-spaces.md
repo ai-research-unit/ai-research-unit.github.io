@@ -8,9 +8,9 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} ,
 $$
 
-the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. This article fixes the algebra and the two vector spaces it carries: the construction by the tensor product, the element and its three coordinate systems, the multiplication and its table, the algebra axioms, the multiplication as a scalar extension, the centre and the structure map, and the presentation by generators and relations. It then reads the same set over the two scalar systems, the complex space of dimension four and the real space of dimension eight, and the complex structure $J$ that carries the difference between them.
+the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. This article fixes the algebra and the two vector spaces it carries: the construction by the tensor product, the element and its three coordinate systems, the multiplication and its table, the algebra axioms, the multiplication as a scalar extension, the centre and the structure map, the presentation by generators and relations, and the hyperbolic basis of the plain product. It then reads the same set over the two scalar systems, the complex space of dimension four and the real space of dimension eight, and the complex structure $J$ that carries the difference between them.
 
-The multiplication is stated here at the level of the basis, the table and bilinearity. Its scalar–vector form, the four general products, their relations and their comparison are *The Four General Products and Their Relations*. The group of the four conjugations, their fixed spaces and the remarkable subspaces are *The Group of Involutions*, *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The algebra read over the real scalars is *The Realification and the Effect of the Change of Scalars*, and the two ring-based readings are *Modules over the Quaternion Algebra* and *Modules over the Biquaternion Algebra*. No form appears here: the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms*.
+The multiplication is stated here at the level of the basis, the table and bilinearity. Its scalar–vector form, the four general products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*. The group of the four conjugations, their fixed spaces and the remarkable subspaces are *The Group of Involutions*, *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The algebra read over the real scalars is *The Realification and the Effect of the Change of Scalars*, and the two ring-based readings are *Modules over the Quaternion Algebra* and *Modules over the Biquaternion Algebra*. No form appears here: the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 This article opens the group *The Algebra and Its Vector Spaces* and the Biquaternions category. It is self-contained up to the quaternion algebra $\mathbb{H}$, whose basis, multiplication and conjugation are assumed.
 
@@ -107,7 +107,7 @@ $$
 (\tilde Q_1, \tilde Q_2) \longmapsto \tilde Q_1 \tilde Q_2 = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} Q_{1\mu} Q_{2\nu} \, e_\mu e_\nu ,
 $$
 
-the general plain bilinear product of *The Four General Products and Their Relations*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t, \dots, \vec e_z$: **the rule is a map into $\mathbb{B}$ and is well defined**. The coordinate rule, with the dot and cross products, is *The Four General Products and Their Relations*, §*The General Plain Bilinear Product*.
+the general plain bilinear product of *The Four General Products and Their Relations over the Biquaternion Algebra*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t, \dots, \vec e_z$: **the rule is a map into $\mathbb{B}$ and is well defined**. The coordinate rule, with the dot and cross products, is *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The General Plain Bilinear Product*.
 
 ### The Multiplication Table
 
@@ -279,7 +279,7 @@ $$
 (e_t + i\vec e_x)(e_t - i\vec e_x) = e_t^2 - (i\vec e_x)^2 = e_t - i^2 \vec e_x^2 = e_t - e_t = 0
 $$
 
-vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_t + i\vec e_x$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, and the zero divisors themselves are classified in *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_t + i\vec e_x$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, and the zero divisors themselves are classified in *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 
 ## Generators and the Presentation
@@ -323,7 +323,7 @@ $$
 
 with $\tilde Q^{\flat}=-\tilde Q^{*}$ the **anti-Hermitian** one. They are involutions, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$; the group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*.
 
-**Remark (the algebra is a matrix algebra).** Central simplicity and complex dimension four give $\mathbb{B}\cong M_2(\mathbb{C})$, the reduced norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ being the determinant of the model. The model is read in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the reduced norm, invertibility and the zero divisors in *Norm Regularity and Degeneracy in the Biquaternion Algebra*.
+**Remark (the algebra is a matrix algebra).** Central simplicity and complex dimension four give $\mathbb{B}\cong M_2(\mathbb{C})$, the quaternionic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ being the determinant of the model. The model is read in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the quaternionic norm, invertibility and the zero divisors in *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*.
 
 ## The Real Scalars
 
@@ -396,12 +396,47 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 ### What the View Adds
 
-The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It drops the complex scalars, so the complex structure becomes an extra operator $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products and Their Relations* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Modules over the Quaternion Algebra* and *Modules over the Biquaternion Algebra*.
+The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It drops the complex scalars, so the complex structure becomes an extra operator $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Modules over the Quaternion Algebra* and *Modules over the Biquaternion Algebra*.
+
+
+## The Hyperbolic Basis of the Plain Product
+
+The plain product $\tilde Q_1\tilde Q_2$ has the scalar part
+
+$$
+\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}Q_{2,\mu},\qquad \varepsilon=(1,-1,-1,-1),
+$$
+
+where $\mathrm{Sc}$ is the coefficient of $e_t$. That scalar part records which pairs the product carries onto the scalar line. The four elements
+
+$$
+h_1=e_t+\vec e_x,\qquad h_2=\tfrac12(e_t-\vec e_x),\qquad h_3=\vec e_y+i\vec e_z,\qquad h_4=\tfrac12(i\vec e_z-\vec e_y)
+$$
+
+are a basis of the vector space in which this scalar part takes its simplest values.
+
+**Theorem (the hyperbolic basis).** The four elements $h_1,\dots,h_4$ are a $\mathbb{C}$-basis of $\mathbb{B}$, the scalar part of each square vanishes,
+
+$$
+\mathrm{Sc}(h_1^2)=\mathrm{Sc}(h_2^2)=\mathrm{Sc}(h_3^2)=\mathrm{Sc}(h_4^2)=0,
+$$
+
+and among the sixteen scalar parts $\mathrm{Sc}(h_ih_j)$ the only non-zero ones are
+
+$$
+\boxed{\;\mathrm{Sc}(h_1h_2)=\mathrm{Sc}(h_3h_4)=1\;}.
+$$
+
+The vector space is therefore the direct sum of the two planes $\operatorname{span}\{e_t,\vec e_x\}$ and $\operatorname{span}\{\vec e_y,\vec e_z\}$, and on them the scalar part of the plain product is hyperbolic: inside each plane it vanishes on the diagonal and equals $1$ on the pair $h_1,h_2$ — respectively $h_3,h_4$ — and between the two planes it vanishes identically. The basis is **hyperbolic**, and the index is $1+1=2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$.
+
+*Proof.* From $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}Q_{2,\mu}$ with $\varepsilon=(1,-1,-1,-1)$: inside the first plane $\varepsilon_t=1$ and $\varepsilon_x=-1$, so $\mathrm{Sc}(h_1^2)=1-1=0$, $\mathrm{Sc}(h_2^2)=\tfrac14(1-1)=0$ and $\mathrm{Sc}(h_1h_2)=\tfrac12(1+1)=1$; inside the second $\varepsilon_y=\varepsilon_z=-1$ and $\mathrm{Sc}(\vec e_y\vec e_z)=\mathrm{Sc}(\vec e_z\vec e_y)=0$, so $\mathrm{Sc}(h_3^2)=-1+1=0$, $\mathrm{Sc}(h_4^2)=\tfrac14(1-1)=0$ and $\mathrm{Sc}(h_3h_4)=\tfrac12(1+1)=1$; and the cross scalar parts vanish because a product of an element supported on $e_t,\vec e_x$ with one supported on $\vec e_y,\vec e_z$ is supported on $\vec e_y,\vec e_z$, hence has no scalar part. The four elements are a basis: $e_t=\tfrac12(h_1+2h_2)$ and $\vec e_x=\tfrac12(h_1-2h_2)$ recover the first plane, and $\vec e_y=\tfrac12(h_3-2h_4)$ and $\vec e_z=\tfrac1{2i}(h_3+2h_4)$ the second. The index over $\mathbb{C}$ is the number of hyperbolic planes, hence $1+1=2$; over $\mathbb{R}$, on the eight real coordinates, the same count is $4$.
+
+**Remark (the maximal planes).** The index $2$ is the largest complex dimension of a subspace on which the scalar part of every product vanishes. Two such planes are $\operatorname{span}_{\mathbb{C}}\{e_t+\vec e_x,\,\vec e_y+i\vec e_z\}$ and $\operatorname{span}_{\mathbb{C}}\{e_t-\vec e_x,\,\vec e_y-i\vec e_z\}$, each of complex dimension $2$, distinct, and meeting in the origin.
 
 
 ## Summary
 
-The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_t, \vec e_x, \vec e_y, \vec e_z$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. With the general plain bilinear product as its multiplication, $\mathbb{B}$ is an associative unital non-commutative $\mathbb{C}$-algebra of dimension four; the product is determined by the sixteen products of the four basis elements.
+The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_t, \vec e_x, \vec e_y, \vec e_z$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. With the general plain bilinear product as its multiplication, $\mathbb{B}$ is an associative unital non-commutative $\mathbb{C}$-algebra of dimension four; the product is determined by the sixteen products of the four basis elements. In the hyperbolic basis $h_1=e_t+\vec e_x$, $h_2=\tfrac12(e_t-\vec e_x)$, $h_3=\vec e_y+i\vec e_z$, $h_4=\tfrac12(i\vec e_z-\vec e_y)$ the scalar part of the plain product vanishes on every square and pairs only $h_1$ with $h_2$ and $h_3$ with $h_4$, with the value $1$.
 
 $$
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
@@ -409,7 +444,7 @@ $$
 
 Its scalars enter through the structure map $\varphi(A) = Ae_t$, whose image is the scalar line and which is central; the centre is the scalar line, so the algebra is central simple; and it is not a division algebra, the product of $e_t + i\vec e_x$ and $e_t - i\vec e_x$ being zero. Two generators suffice, and the relations $\vec e_x^2 = \vec e_y^2 = -e_t$ and $\vec e_x \vec e_y + \vec e_y \vec e_x = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
 
-The algebra is central simple of dimension four, so $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduced norm is the determinant of the model; the matrix model and the norm are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *Norm Regularity and Degeneracy in the Biquaternion Algebra*. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — have the natural one as the unique $\mathbb{C}$-linear one, form the Klein four-group on the first four, and their fixed and anti-fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
+The algebra is central simple of dimension four, so $\mathbb{B} \cong M_2(\mathbb{C})$, and the quaternionic norm is the determinant of the model; the matrix model and the norm are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — have the natural one as the unique $\mathbb{C}$-linear one, form the Klein four-group on the first four, and their fixed and anti-fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_t$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
 
 The same set carries two scalar readings. Over $\mathbb{C}$ it is the space of dimension four on $e_t, \vec e_x, \vec e_y, \vec e_z$. Over $\mathbb{R}$, by restriction of scalars, it is the same additive group with real dimension eight on the basis $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$. The same element is written in three coordinate systems: eight real coordinates, four complex coordinates, or two quaternionic coordinates as a pair of real quaternions, $\tilde Q = h_1 + ih_2$.
 
@@ -446,6 +481,7 @@ The gap between the two readings is one operator: $J : \tilde Q \mapsto i\tilde 
 | ${}^{*} = \bar{\cdot} \circ {}^{\natural} = \natural \circ \bar{\cdot}$ | the Hermitian conjugation |
 | ${}^{\flat} = -{}^{*}$ | the anti-Hermitian conjugation, outside the Klein group |
 | $\varepsilon = (1,-1,-1,-1)$ | the sign vector of the natural conjugation |
+| $h_1, h_2, h_3, h_4$ | the hyperbolic basis of the plain product, $e_t+\vec e_x$, $\tfrac12(e_t-\vec e_x)$, $\vec e_y+i\vec e_z$, $\tfrac12(i\vec e_z-\vec e_y)$ |
 | $\operatorname{End}_\mathbb{R}(\mathbb{B})$, $\operatorname{End}_\mathbb{C}(\mathbb{B})$ | the real-linear and the $\mathbb{C}$-linear self-maps, $\cong M_8(\mathbb{R})$ and $M_4(\mathbb{C})$ |
 | real form of $\mathbb{B}$ | a real subspace $V$ of real dimension $4$ with $\mathbb{B} = V \oplus JV$ |
 
@@ -455,10 +491,10 @@ The gap between the two readings is one operator: $J : \tilde Q \mapsto i\tilde 
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for algebras over a commutative ring, the structure map into the centre and the tensor product of algebras.
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the quaternion algebra over a field, its presentations and its behaviour under an extension of scalars.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
-- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the scalar–vector form of the multiplication, the four general products and their comparison.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the scalar–vector form of the multiplication, the four general products and their comparison.
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the invertibility criterion and the zero-divisor cone.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the invertibility criterion and the zero-divisor cone.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix model in full.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the algebra read over $\mathbb{R}$.

@@ -100,8 +100,8 @@ $$
 | form | complex reading | realified signature |
 |---|---|---|
 | general plain bilinear $\langle\cdot,\cdot\rangle$ | symmetric bilinear, rank $4$ | $(4,4)$ |
-| general plain sesquilinear (Hermitian) $\langle\cdot,\cdot\rangle_{*}$ | Hermitian, inertia $(4,0)$ | $(8,0)$ |
 | general quaternionic bilinear $\langle\cdot,\cdot\rangle_{\natural}$ | symmetric bilinear, rank $4$ | $(4,4)$ |
+| general plain sesquilinear (Hermitian) $\langle\cdot,\cdot\rangle_{*}$ | Hermitian, inertia $(4,0)$ | $(8,0)$ |
 | general quaternionic sesquilinear (Krein) $\langle\cdot,\cdot\rangle_{\natural*}$ | Hermitian, inertia $(1,3)$ | $(2,6)$ |
 
 the four entries of **The Realification of the Four Forms**, §*The Four Gram Matrices*, quoted here as the instances of the two rules.
@@ -118,7 +118,7 @@ for the two sesquilinear forms.
 
 *Proof.* For a $\mathbb{C}$-bilinear form, $\Phi(iP,iQ)=i^2\Phi(P,Q)=-\Phi(P,Q)$, and taking real parts gives the first display. For a Hermitian form, $\Phi(iP,iQ)=i\bar i\,\Phi(P,Q)=\Phi(P,Q)$, and the second follows. The sign is the same statement as the block shapes of the two Gram matrices: the bilinear realification has the two blocks $\mathrm{D}$ and $-\mathrm{D}$ while the Hermitian one repeats its block.
 
-**Remark (the two rules and the four signatures).** The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two **bilinear** forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two **Hermitian** forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in *The Four Forms and the Four Algebraic Norms*.
+**Remark (the two rules and the four signatures).** The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two **bilinear** forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two **Hermitian** forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Four Effects on a Structure
 

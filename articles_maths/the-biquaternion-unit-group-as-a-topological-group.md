@@ -5,7 +5,7 @@
 
 The group of units $\mathbb{B}^\times$ of the biquaternion algebra is the set of invertible elements, an open subset of the algebra, hence a manifold, and it carries both a group structure and the topology of that manifold. This article reads the two together: the units as the complement of the null cone, the centre, the determinant and the matrix model of the general linear group, the compact subgroups, and the homotopy type of the group. The polar decomposition, the retractions onto the compact subgroups and the homotopy groups that follow are proved in *The Unitary Group of the Biquaternion Algebra*; they are quoted here for the algebraic group, and not reproved.
 
-The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is *Symmetric and Antisymmetric Decomposition of the Four General Products* in Algebra, the Lie-group theory and the exponential are *Biquaternion Lie Group and Exponential Structure* in Analysis, and this article owns the algebraic group of units together with the topological statements that can be read from the group alone. The topology of the group is *The Unitary Group of the Biquaternion Algebra*; the Euclidean ambient space is *The Euclidean Topology of the Biquaternion Algebra*; the zero divisors and their cone are *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the invertibility criterion and the distribution of the units over the remarkable subspaces are *Norm Regularity and Degeneracy in the Biquaternion Algebra*.
+The article is one of the three the boundary draws out of the former joint treatment of the Lie theory: the Lie algebra is *Symmetric and Antisymmetric Decomposition of the Four General Products* in Algebra, the Lie-group theory and the exponential are *Biquaternion Lie Group and Exponential Structure* in Analysis, and this article owns the algebraic group of units together with the topological statements that can be read from the group alone. The topology of the group is *The Unitary Group of the Biquaternion Algebra*; the Euclidean ambient space is *The Euclidean Topology of the Biquaternion Algebra*; the zero divisors and their cone are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the invertibility criterion and the distribution of the units over the remarkable subspaces are *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*.
 
 ## The Group of Units
 
@@ -15,7 +15,7 @@ $$
 \mathbb{B}^\times = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}\ \text{is invertible}\},
 $$
 
-a group under multiplication with identity $e_t$, the inverse of a unit being a rational function of its coefficients (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Criterion*).
+a group under multiplication with identity $e_t$, the inverse of a unit being a rational function of its coefficients (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Criterion*).
 
 **Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements off the null cone, so the elements that are not zero divisors are the units together with the origin, and the cone is exactly the complement of the group.
 
@@ -162,7 +162,7 @@ The group of units $\mathbb{B}^\times$ is the complement of the null cone in $\m
 
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the polar decomposition, the retractions, the homotopy groups and the universal cover
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the Euclidean sphere and the contractibility of the ambient space
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the invertibility criterion, the inverse formula and the distribution of the units
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the invertibility criterion, the inverse formula and the distribution of the units
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the zero divisors and their cone as the topological boundary of the group of units
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix model and the determinant
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).

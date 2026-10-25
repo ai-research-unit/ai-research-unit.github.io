@@ -70,7 +70,7 @@ $$
 \boxed{\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)+\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=2q_{1t}q_{2t} , \qquad \mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)-\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=-2(\vec q_1,\vec q_2)}.
 $$
 
-Both scalar parts are symmetric in the two slots, and the difference of the two is twice the dot product of the vector parts; the two are the two bilinear forms $B$ and $N$ of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, below this article in this category, read on the pair.
+Both scalar parts are symmetric in the two slots, and the difference of the two is twice the dot product of the vector parts; the two are the two bilinear forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, below this article in this category, read on the pair.
 
 ## The Annihilation Identity
 

@@ -16,7 +16,7 @@ $$
 $$
 and the **fundamental symmetry** is $J={}^{\natural}=\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis.
 
-The restrictions to the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; the global level sets and the hyperbolic ball are *The Krein Level Sets and the Hyperbolic Structure*; the operator theory is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the isometry group and the Cartan decomposition are *The Krein Isometry Group and Its Cartan Decomposition*; and the comparison with the other three pairings is *The Four Forms and the Four Algebraic Norms*. This article owns the form itself and its indefinite structure.
+The restrictions to the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; the global level sets and the hyperbolic ball are *The Krein Level Sets and the Hyperbolic Structure*; the operator theory is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the isometry group and the Cartan decomposition are *The Krein Isometry Group and Its Cartan Decomposition*; and the comparison with the other three pairings is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. This article owns the form itself and its indefinite structure.
 
 ## The Form and Its Gram Matrix
 
@@ -30,7 +30,7 @@ so the basis is orthogonal, the diagonal entries are $1,-1,-1,-1$, and $\det G=-
 
 *Proof.* $\langle e_\mu,e_\nu\rangle_{\natural*}=\sum_\lambda\varepsilon_\lambda (e_\mu)_\lambda\overline{(e_\nu)_\lambda}=\varepsilon_\mu\delta_{\mu\nu}$: the units are orthogonal, and each carries its own sign. The determinant is the product $\varepsilon_t\varepsilon_x\varepsilon_y\varepsilon_z=-1$.
 
-**Remark (the real basis and the other forms).** The passage to the real basis, the realified matrix and the signature $(2,6)$ are treated in *The Realification of the General Quaternionic Sesqualgebra*; the four Gram matrices and the four isometry groups are those of *The Four Forms and the Four Algebraic Norms*.
+**Remark (the real basis and the other forms).** The passage to the real basis, the realified matrix and the signature $(2,6)$ are treated in *The Realification of the General Quaternionic Sesqualgebra*; the four Gram matrices and the four isometry groups are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## Inertia and Positive Subspaces
 
@@ -147,7 +147,7 @@ The null set is the set $\lVert c\rVert_E=\lVert\vec v\rVert_E$, a real algebrai
 
 *Proof.* The formula is the definition with $Q_{1\mu}=Q_{2\mu}$, and the left side is real. The set is the zero set of one non-constant real polynomial in the eight real coordinates, homogeneous of degree two. Its gradient with respect to the real coordinates of $c$ and of $\vec v$ is $2(c,-v)$, which vanishes only at the origin, so the zero set is a smooth hypersurface away from the apex, of real dimension $8-1=7$.
 
-**Remark (the two cones).** The null set is not the cone of the algebraic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, of real dimension $6$; the two meet in the doubly null lines below. The comparison of the two geometries is *The Four Forms and the Four Algebraic Norms* and *The Krein Level Sets and the Hyperbolic Structure*.
+**Remark (the two cones).** The null set is not the cone of the algebraic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, of real dimension $6$; the two meet in the doubly null lines below. The comparison of the two geometries is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and *The Krein Level Sets and the Hyperbolic Structure*.
 
 ## The Totally Isotropic Subspaces and the Witt Index
 
@@ -301,6 +301,6 @@ The fundamental symmetry is the natural conjugation $J={}^{\natural}$, with brid
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the ball and the sphere of isotropic lines.
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the operator theory of the form.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the isometry group, the Cartan involution and the symmetric-space decomposition.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the comparison of the Krein form with the other three pairings.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the comparison of the Krein form with the other three pairings.
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for the fundamental decomposition and the classification of subspaces.
 - Thomas Ya. Azizov and Iosif S. Iokhvidov, *Linear Operators in Spaces with an Indefinite Metric* (Wiley, 1989), for the Krein space, the Witt index and the operator cone.

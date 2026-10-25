@@ -6,7 +6,7 @@ The isometries of the general quaternionic sesquilinear form make up the **Krein
 
 The two involutions are the point of the article. The **Krein involution** $\theta_{J}(T)=(T^{\dagger})^{-1}$ is built from the indefinite adjoint $T^{\dagger}=JT^{*}J$, and its fixed group is $U_{J}(\mathbb{B})$ itself: it is not a Cartan involution, since its fixed group is non-compact. The **Cartan involution** $\theta_{0}(T)=(T^{*})^{-1}$ is built from the definite adjoint, and its restriction to $U_{J}(\mathbb{B})$ has the maximal compact group $\mathrm{U}(1)\times \mathrm{U}(3)$ for fixed group; its symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of *The Krein Level Sets and the Hyperbolic Structure*. The two involutions carry the same group, one as the fixed group and one as the ambient group, and the comparison of their fixed algebras is the comparison of $\mathfrak{u}(1,3)$ with $\mathfrak{u}(4)$.
 
-The general theory of isometries is *Unitary and Isometric Operators of the Form*, which proves that the isometry monoid is the unitary group in finite dimension; the general theory of $\mathrm{U}(n,m)$, its Cartan involution and its bounded realisation is *The Unitary Group and the Hermitian Symmetric Space*; the four pairings, their Gram matrices and their isometry groups are *The Four Forms and the Four Algebraic Norms*; the adjoints of the three families and the indefinite spectral data are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form, the cone and the $J$-positive cone are *The Krein Norm of the Biquaternion Algebra*; and the indefinite sandwich that uses the group is *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra*.
+The general theory of isometries is *Unitary and Isometric Operators of the Form*, which proves that the isometry monoid is the unitary group in finite dimension; the general theory of $\mathrm{U}(n,m)$, its Cartan involution and its bounded realisation is *The Unitary Group and the Hermitian Symmetric Space*; the four pairings, their Gram matrices and their isometry groups are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the adjoints of the three families and the indefinite spectral data are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form, the cone and the $J$-positive cone are *The Krein Norm of the Biquaternion Algebra*; and the indefinite sandwich that uses the group is *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the coefficient Gram matrix is $E=\operatorname{diag}(1,-1,-1,-1)$, the natural conjugation is $J={}^{\natural}=E$, and the indefinite adjoint is $T^{\dagger}=JT^{*}J$. The operator algebra is $\mathfrak{g}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong\mathfrak{gl}_{4}(\mathbb{C})\cong M_{4}(\mathbb{C})$, of real dimension $32$.
 
@@ -97,7 +97,7 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 ## The Three Adjoints of the Operator Algebra
 
-**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The Four Forms and the Four Algebraic Norms* define three adjoints,
+**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* define three adjoints,
 
 $$
 \langle M\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_1,M^{\mathsf T}\tilde{Q}_2\rangle_{\natural},
@@ -289,7 +289,7 @@ On the operators, the three pairings give the transpose, the Hermitian adjoint a
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the three pairings, their isometry groups and their signatures
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the three pairings, their isometry groups and their signatures
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the adjoints of the algebra's families and the indefinite spectral data
 - [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for the form, the null set, the positive cone and the $J$-positive cone
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets and the complex hyperbolic space as the space of positive lines

@@ -179,6 +179,6 @@ The multiplication operators of the block are $L^{\star}_{\tilde Q_3}\tilde{Q}_2
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the general one-sided theory, the composition laws and the adjoints of the linear multiplications.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the two-sided operators of the general product.
 - [Mixed Inner Conjugation on the General Plain Sesqualgebra](mixed-inner-conjugation-on-the-general-plain-sesqualgebra.html), for the operators with two independent one-sided parameters.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the form $H$ and its non-degeneracy.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form $H$ and its non-degeneracy.
 - [The Multiplication Operators of the Symmetric Plain Algebra](the-multiplication-operators-of-the-symmetric-plain-algebra.html), the sibling with the Jordan identity on the operators.
 - [The Multiplication Operators of the Symmetric Quaternionic Algebra](the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html), the bilinear central sibling with linear traces.

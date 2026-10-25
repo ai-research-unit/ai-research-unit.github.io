@@ -20,7 +20,7 @@ Three differences from the quaternion case shape the whole article. The norm is 
 
 The plan is as follows. The two factors are defined (§*The Two Factors*), the four factors are described (§*The Four Factors*), the three pairings are introduced (§*The Three Pairings*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of units and its maximal compact subgroup are described (§*The Group of Units and the Unitary Group*), the two real halves are distinguished (§*The Two Halves*), the matrix picture is given (§*The Matrix Picture*), the reading on the module is given (§*The Operator Reading: the Twist*), the algorithm is stated (§*The Algorithm*), one element is computed in full (§*Worked Example*), and the article closes with the summary and the notation.
 
-The conventions and the symbols are those of *The Four Forms and the Four Algebraic Norms*, *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units* and *Conventions in Mathematics*; the symbols are collected in §*Summary of Notation*. The word is written with the plain product, the only associative product of the twelve of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the matrix model is $M_2(\mathbb C)$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb C)$ of Biquaternions*.
+The conventions and the symbols are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units* and *Conventions in Mathematics*; the symbols are collected in §*Summary of Notation*. The word is written with the plain product, the only associative product of the twelve of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the matrix model is $M_2(\mathbb C)$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb C)$ of Biquaternions*.
 
 Every numerical value displayed below was recomputed in double precision.
 
@@ -34,7 +34,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}.
 $$
 
-It is the diagonal of the general quaternionic bilinear form, the algebraic norm of the plain product in the classification of *The Four Forms and the Four Algebraic Norms*, and under the matrix model it is the determinant,
+It is the diagonal of the general quaternionic bilinear form, the algebraic norm of the plain product in the classification of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and under the matrix model it is the determinant,
 
 $$
 \det M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}.
@@ -46,7 +46,7 @@ $$
 \langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
 $$
 
-and it vanishes on the **zero-divisor cone**: an element is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*). The cone is one complex equation, hence two real equations, of real codimension two; it is not the vanishing set of a definite form, and it is the boundary of the group of units.
+and it vanishes on the **zero-divisor cone**: an element is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*). The cone is one complex equation, hence two real equations, of real codimension two; it is not the vanishing set of a definite form, and it is the boundary of the group of units.
 
 The **modulus** is a square root of the norm,
 
@@ -102,7 +102,7 @@ $$
 \boxed{\; \mathbb B^{\times}_{1}\cong SL_2(\mathbb C) \;},
 $$
 
-of complex dimension three and real dimension six (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*).
+of complex dimension three and real dimension six (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*).
 
 The norm-one group is not compact. It contains the Hermitian positive elements of determinant one, and those are unbounded: the element $c\,e_t+i\sqrt{c^{2}-1}\,\vec e_x$ has norm one for every $c\ge1$. This is the sharpest difference from the quaternion case, where the norm-one set is the sphere $S^3$, compact and of real dimension three. The biquaternion unit factor has three compact directions and three non-compact ones, and the split into boost and rotor separates them.
 

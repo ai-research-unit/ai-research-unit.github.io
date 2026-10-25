@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products and Their Relations*), and the fourth of them,
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products and Their Relations over the Biquaternion Algebra*), and the fourth of them,
 
 $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products and Their Relations* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its axioms are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$, ${}^{*}$ is the star conjugation $\tilde Q_1^{*} = \overline{Q_{1t}} - \overline{\vec Q_1}$, the bar is the coefficientwise complex conjugation, and $\langle\tilde Q_1\rangle_{\natural} = \tilde Q_1\tilde Q_1^{\natural} = \sum_\mu Q_{1,\mu}^{2}$ is the norm form.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products and Their Relations over the Biquaternion Algebra* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its axioms are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$, ${}^{*}$ is the star conjugation $\tilde Q_1^{*} = \overline{Q_{1t}} - \overline{\vec Q_1}$, the bar is the coefficientwise complex conjugation, and $\langle\tilde Q_1\rangle_{\natural} = \tilde Q_1\tilde Q_1^{\natural} = \sum_\mu Q_{1,\mu}^{2}$ is the norm form.
 
 The subject of this article is the **associator** of the multiplication,
 

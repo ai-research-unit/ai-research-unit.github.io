@@ -105,7 +105,7 @@ so the form is the polarisation of the norm, and it is the determinant read as a
 $$
 J^{\mathsf T}\,D\,J=\mathrm{I}_4,\qquad D=\operatorname{diag}(1,-1,-1,-1),
 $$
-and the two forms share the automorphism group $O_4(\mathbb{C})$; the transport of the four pairings is the dictionary of *The Four Forms and the Four Algebraic Norms*.
+and the two forms share the automorphism group $O_4(\mathbb{C})$; the transport of the four pairings is the dictionary of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## Worked Examples
 
@@ -201,11 +201,11 @@ The $2\times2$ realization turns the natural conjugation into the adjugate and t
 - Werner Greub, *Linear Algebra* (Springer, fourth edition, 1975), for the transpose as an anti-automorphism of an endomorphism algebra and its order reversal.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the identification of a full matrix algebra with its endomorphism algebra and for the structure of its units and its singular elements.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the two conjugations of an algebra, the transpose and the Hermitian transpose, and the distinction between them.
-- John Voight, *Quaternion Algebras* (Springer, 2021), for the description of a split algebra by matrices, with the reduced norm as the determinant and the reduced trace as the trace.
+- John Voight, *Quaternion Algebras* (Springer, 2021), for the description of a split algebra by matrices, with the quaternionic norm as the determinant and the reduced trace as the trace.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the reading of a twisted product as a product with an anti-automorphism inserted and the defect of its associativity.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the realization and its first properties
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the further reading of the isomorphism
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the quaternionic product on the algebra
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the form on the algebra
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra
 - [The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](the-general-quaternionic-algebra-in-the-4x4-matrix-element-representation.html), for the companion reading of the group
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the restriction theory of the form

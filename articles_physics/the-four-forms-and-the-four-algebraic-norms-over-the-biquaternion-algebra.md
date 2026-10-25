@@ -1,4 +1,4 @@
-# __The Four Forms and the Four Algebraic Norms__
+# __The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra__
 
 ## Introduction
 
@@ -23,12 +23,12 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The twelve products and the four distinct scalar parts | [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) |
-| The four forms, their brackets, their Gram matrices, their signatures and their isometry groups | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
-| The four algebraic norms, multiplicativity, definiteness and the impossibility of both | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
+| The four forms, their brackets, their Gram matrices, their signatures and their isometry groups | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
+| The four algebraic norms, multiplicativity, definiteness and the impossibility of both | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms and the norms to the six remarkable subspaces | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| Invertibility, the zero-divisor cone and the norm-one group | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| Invertibility, the zero-divisor cone and the norm-one group | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The realification and the effect of the change of scalars | [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html) |
-| The identities linking the four scalar parts | [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html) |
+| The identities linking the four scalar parts | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 
 ## The Forms
 
@@ -52,8 +52,8 @@ $$
 | Form | Bracket | Pair | Coordinates | Symmetry | Gram | Signature over $\mathbb{R}$ | Null Set |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | the plain form | $\langle\cdot,\cdot\rangle$ | $(\mathrm{id},\mathrm{id})$ | $Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$ | symmetric | $\mathrm{E}$ | $(4,4)$ | the complex cone |
-| the Hermitian form | $\langle\cdot,\cdot\rangle_{*}$ | $(\mathrm{id},{}^{*})$ | $Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | conjugate-symmetric | $\mathrm{I}_4$ | $(8,0)$ | $\{0\}$ |
 | the quaternionic form | $\langle\cdot,\cdot\rangle_{\natural}$ | $({}^{\natural},\mathrm{id})$ | $Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)$ | symmetric | $\mathrm{I}_4$ | $(4,4)$ | $\mathcal{N}$, the zero divisors |
+| the Hermitian form | $\langle\cdot,\cdot\rangle_{*}$ | $(\mathrm{id},{}^{*})$ | $Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | conjugate-symmetric | $\mathrm{I}_4$ | $(8,0)$ | $\{0\}$ |
 | the Krein form | $\langle\cdot,\cdot\rangle_{\natural*}$ | $({}^{\natural},{}^{*})$ | $Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | conjugate-symmetric | $\mathrm{E}$ | $(2,6)$ | $\mathcal{K}$ |
 
 The **second slot** decides the symmetry: the two bilinear forms are symmetric, the two sesquilinear forms conjugate-symmetric, and only the sesquilinear ones have a real algebraic norm. The **first slot** decides the Gram matrix: $\mathrm{E}$ when the two slots are treated alike, $\mathrm{I}_4$ when exactly one is conjugated. Two forms share a Gram matrix and two share a symmetry, and no two share both. The two divisions are independent, and their product is the four.
@@ -65,8 +65,8 @@ The **algebraic norm** of a form is that form at its two equal arguments. The fo
 | Algebraic Norm | Formula | Value | Gram | Signature over $\mathbb{R}$ | Vanishing Set | Multiplicative | Definite |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | $\langle\cdot\rangle$ | $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$ | $\mathbb{C}$ | $\mathrm{E}$ | $(4,4)$ | the complex cone | no | — |
-| $\langle\cdot\rangle_{*}$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$ | $\mathbb{R}$ | $\mathrm{I}_4$ | $(8,0)$ | $\{0\}$ | no | **yes** |
 | $\langle\cdot\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ | $\mathbb{C}$ | $\mathrm{I}_4$ | $(4,4)$ | $\mathcal{N}$, the zero divisors | **yes** | — |
+| $\langle\cdot\rangle_{*}$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$ | $\mathbb{R}$ | $\mathrm{I}_4$ | $(8,0)$ | $\{0\}$ | no | **yes** |
 | $\langle\cdot\rangle_{\natural*}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}$ | $\mathbb{R}$ | $\mathrm{E}$ | $(2,6)$ | $\mathcal{K}$ | no | no |
 
 Two of the four have a property the others lack, and the two properties are different. The Hermitian algebraic norm $\langle\cdot\rangle_{*}$ is **positive definite**, and its square root is the unique topological norm of the space, $\lVert\tilde Q\rVert_E^{2}=\langle\tilde Q\rangle_{*}$. The quaternionic algebraic norm $\langle\cdot\rangle_{\natural}$ is **multiplicative**,
@@ -75,7 +75,7 @@ $$
 \boxed{\;\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
 $$
 
-and it is the reduced norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$. The group of units is $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.
+and it is the quaternionic norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$. The group of units is $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.
 
 **No function is both definite and multiplicative.** The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors non-zero and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1-1=0$. A multiplicative function that is not constant has $\varphi(0)=0$, so it would give $\varphi(e_t+i\vec e_x)\varphi(e_t-i\vec e_x)=\varphi(0)=0$; one value would vanish on a non-zero element, and a definite function is non-zero off the origin. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra. The four normed division algebras of the Hurwitz theorem are exactly the ones in which the two senses coincide.
 
@@ -88,8 +88,8 @@ The physical dictionary places the material element $\tilde R=ict'\,e_t+x\vec e_
 | Form | Signature on $\mathbb{M}_-$, material | Signature on $\mathbb{M}_+$, informational |
 | --- | --- | --- |
 | $\langle\cdot,\cdot\rangle$, the sector sign | $(0,4)$, negative definite | $(4,0)$, positive definite |
-| $\langle\cdot,\cdot\rangle_{*}$, the Born form | $(4,0)$, positive definite | $(4,0)$, positive definite |
 | $\langle\cdot,\cdot\rangle_{\natural}$, the interval | $(3,1)$ | $(1,3)$ |
+| $\langle\cdot,\cdot\rangle_{*}$, the Born form | $(4,0)$, positive definite | $(4,0)$, positive definite |
 | $\langle\cdot,\cdot\rangle_{\natural*}$, the Krein form | $(1,3)$ | $(1,3)$ |
 
 Two pairs of coincidences hold on the sectors, and they are the reason the four names are easy to exchange. On the material sector the Born form is minus the sector sign and the Krein form is minus the interval,
@@ -215,7 +215,7 @@ The article states no dynamics, no mass value, no spectrum and no gauge group. T
 - The four forms are the sector sign $\langle\cdot,\cdot\rangle$, the Born form $\langle\cdot,\cdot\rangle_{*}$, the interval $\langle\cdot,\cdot\rangle_{\natural}$ and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$, with Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
 - The second slot decides the symmetry and the reality of the algebraic norm; the first slot decides the Gram matrix and the signature.
 - The four algebraic norms are $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$, $\sum_\mu Q_\mu^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$.
-- $\langle\cdot\rangle_{*}$ is the definite one, and its square root is the unique topological norm; $\langle\cdot\rangle_{\natural}$ is the multiplicative one, the reduced norm and the criterion of invertibility.
+- $\langle\cdot\rangle_{*}$ is the definite one, and its square root is the unique topological norm; $\langle\cdot\rangle_{\natural}$ is the multiplicative one, the quaternionic norm and the criterion of invertibility.
 - No function is both definite and multiplicative: the zero divisors forbid it, and the failure is the failure of the biquaternions to be a normed division algebra.
 - On the material sector the forms are $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$; on the informational sector they are $(4,0)$, $(4,0)$, $(1,3)$ and $(1,3)$.
 - The Born form is minus the sector sign on the material sector and the sector sign on the informational one; the Krein form is minus the interval on the material sector and the interval on the informational one.
@@ -227,13 +227,13 @@ The article states no dynamics, no mass value, no spectrum and no gauge group. T
 
 | Symbol | Meaning |
 | --- | --- |
-| $\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | the sector sign, the Born form, the interval and the Krein form |
-| $\langle\tilde Q\rangle$, $\langle\tilde Q\rangle_{*}$, $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{\natural*}$ | the four algebraic norms, the same brackets at two equal arguments |
+| $\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | the sector sign, the interval, the Born form and the Krein form |
+| $\langle\tilde Q\rangle$, $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{*}$, $\langle\tilde Q\rangle_{\natural*}$ | the four algebraic norms, the same brackets at two equal arguments |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector of the natural conjugation |
 | $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$ | the Gram matrices of the four forms |
-| $(4,4)$, $(8,0)$, $(4,4)$, $(2,6)$ | the signatures of the realifications of the four forms |
-| $(0,4)$, $(4,0)$, $(3,1)$, $(1,3)$ | their signatures on $\mathbb{M}_-$, in the same order |
-| $(4,0)$, $(4,0)$, $(1,3)$, $(1,3)$ | their signatures on $\mathbb{M}_+$, in the same order |
+| $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the signatures of the realifications of the four forms |
+| $(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{M}_-$, in the same order |
+| $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{M}_+$, in the same order |
 | $\mathcal{N}$, $\mathcal{K}$ | the zero-divisor cone and the Krein cone |
 | $\lVert\tilde Q\rVert_E$ | the Euclidean norm, the square root of $\langle\tilde Q\rangle_{*}$ |
 | $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$ | the $2\times2$ representation whose determinant is $\langle\tilde Q\rangle_{\natural}$ |
@@ -241,9 +241,9 @@ The article states no dynamics, no mass value, no spectrum and no gauge group. T
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html), for the count of the four forms, the table, the isometry groups and the hyperbolic decomposition, and for the four algebraic norms, multiplicativity, definiteness and the zero divisors.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the count of the four forms, the table and the isometry groups, and for the four algebraic norms, multiplicativity, definiteness and the zero divisors.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions on the six subspaces.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the inverse and the norm-one group.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the inverse and the norm-one group.
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html), for the two rules of realification and the ten-to-twelve distinction.
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the four products whose scalar parts these forms are.
 - [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the indefinite structure and the fundamental symmetry.

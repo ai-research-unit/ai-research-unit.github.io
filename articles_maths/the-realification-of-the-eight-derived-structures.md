@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The eight derived structures are the symmetric and the antisymmetric halves of the four general products of *The Four General Products and Their Relations*: the symmetric plain, symmetric quaternionic, antisymmetric plain and antisymmetric quaternionic algebra and sesqualgebra. Each is an algebraic structure on the same complex space $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and each carries its own product, its own forms and its own operators.
+The eight derived structures are the symmetric and the antisymmetric halves of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*: the symmetric plain, symmetric quaternionic, antisymmetric plain and antisymmetric quaternionic algebra and sesqualgebra. Each is an algebraic structure on the same complex space $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and each carries its own product, its own forms and its own operators.
 
 The construction of the realification is not repeated here: the realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure and the table of the four effects of the change of scalars are *The Realification and the Effect of the Change of Scalars*. What this article collects, one structure to a section, is what is specific to each of the eight: the real reading of its product, the kind of its second slot over $\mathbb{R}$, the realified form it carries with its signature, and its real operators. The three general structures, whose products are not symmetrised, are the subject of *The Realification of the General Plain Sesqualgebra*, *The Realification of the General Quaternionic Algebra* and *The Realification of the General Quaternionic Sesqualgebra*.
 
@@ -12,7 +12,7 @@ Every structure below is read over $\mathbb{R}$ on the eight-dimensional real sp
 
 ### The Realified Form
 
-The product carries the general plain bilinear $\langle\cdot,\cdot\rangle$ form, the scalar part of the general product of its family, quoted from *The Four Forms and the Four Algebraic Norms*:
+The product carries the general plain bilinear $\langle\cdot,\cdot\rangle$ form, the scalar part of the general product of its family, quoted from *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*:
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)
 $$
@@ -38,7 +38,7 @@ and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^
 
 ### The Realified Form
 
-The product carries the general plain sesquilinear, the Hermitian $\langle\cdot,\cdot\rangle_{*}$ form, the scalar part of the general product of its family, quoted from *The Four Forms and the Four Algebraic Norms*:
+The product carries the general plain sesquilinear, the Hermitian $\langle\cdot,\cdot\rangle_{*}$ form, the scalar part of the general product of its family, quoted from *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*:
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}).
 $$
@@ -233,7 +233,7 @@ so the group of $\mathbb{R}$-algebra automorphisms of the block contains the Kle
 
 ### The Forms the Block Carries over $\mathbb{R}$
 
-The form of an operation is its **scalar part** (*The Four Forms and the Four Algebraic Norms*), and the antisymmetrisation kills the scalar part of the general product of its family, so this product carries the **zero form** — a vanishing scalar part is counted as no form rather than as a fifth — and there is nothing for the realification of a form to act on. The two invariant symmetric forms the block does carry, read in *Norm and Invertibility in the Antisymmetric Plain Algebra*, do realify, and their realifications are the content of this section:
+The form of an operation is its **scalar part** (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the antisymmetrisation kills the scalar part of the general product of its family, so this product carries the **zero form** — a vanishing scalar part is counted as no form rather than as a fifth — and there is nothing for the realification of a form to act on. The two invariant symmetric forms the block does carry, read in *Norm and Invertibility in the Antisymmetric Plain Algebra*, do realify, and their realifications are the content of this section:
 $$
 \langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}=\operatorname{Tr}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=-2\,\vec Q_6\cdot\vec Q_3,
 \qquad
@@ -358,7 +358,7 @@ and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^
 
 ### The Forms the Block Carries over $\mathbb{R}$
 
-The form of an operation is its scalar part (*The Four Forms and the Four Algebraic Norms*), and the scalar part of the value is zero here, every value of the block being a pure vector; the table of *Symmetric and Antisymmetric Decomposition of the Four General Products* carries the entry $[0]$ in the scalar-part column of its row. The product therefore carries the **zero form**, counted as no form rather than as a fifth, and there is nothing for the realification of a form to act on; the coefficient form of the block, the bilinear form that would read that scalar part, is the zero form (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Trace Form Vanishes*).
+The form of an operation is its scalar part (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the scalar part of the value is zero here, every value of the block being a pure vector; the table of *Symmetric and Antisymmetric Decomposition of the Four General Products* carries the entry $[0]$ in the scalar-part column of its row. The product therefore carries the **zero form**, counted as no form rather than as a fifth, and there is nothing for the realification of a form to act on; the coefficient form of the block, the bilinear form that would read that scalar part, is the zero form (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Trace Form Vanishes*).
 
 The block does carry two two-argument objects of its own, and they are read off the invariance condition and the operators in *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*: the invariant form
 $$
@@ -445,7 +445,7 @@ on $\mathbb{R}^8$, preserved by the complex structure,
 $$
 K_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=+K_{\mathbb{R}}(\tilde Q_1,\tilde Q_2).
 $$
-The sign is the rule of the Hermitian kind: a Hermitian form doubles its inertia to $(2p,2q)$ and is preserved by $J$. The contrast is with the bilinear kind: the two $\mathbb{C}$-bilinear forms of the corpus, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ of *The Four Forms and the Four Algebraic Norms*, realify to the split signature $(4,4)$ and are **reversed** by $J$, and the other Hermitian form $\langle\cdot,\cdot\rangle_{*}$ realifies to $(8,0)$.
+The sign is the rule of the Hermitian kind: a Hermitian form doubles its inertia to $(2p,2q)$ and is preserved by $J$. The contrast is with the bilinear kind: the two $\mathbb{C}$-bilinear forms of the corpus, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, realify to the split signature $(4,4)$ and are **reversed** by $J$, and the other Hermitian form $\langle\cdot,\cdot\rangle_{*}$ realifies to $(8,0)$.
 
 **Theorem (the pairing realifies).** The block is $\langle\cdot,\cdot\rangle_{\natural*}$-orthogonal to its own second argument,
 $$
@@ -575,7 +575,7 @@ Each of the eight derived structures is the same product on the same elements re
 
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the general construction, the realification of a vector space, of a linear map and of a form, and the table of the four effects.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve structures and the columns of the table of the twelve, of which the eight derived structures are eight rows.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four forms whose realifications are read one structure to a section above.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms whose realifications are read one structure to a section above.
 
 ### Instance: the Symmetric Quaternionic Sesqualgebra
 

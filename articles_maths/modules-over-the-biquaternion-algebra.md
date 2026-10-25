@@ -13,7 +13,7 @@ $$
 L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2,\qquad R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_2\tilde Q_1 .
 $$
 
-Two ownership notes fix the boundaries of the article. The zero divisors are the content of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and the group of units is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*; both are cited here rather than restated, and they bear on the module category only in the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is *Biquaternion Rotations and Lorentz Transformations*, §*The Group of Units* to §*Unitary Representations*; this article is about the modules, and it does not carry the group theory.
+Two ownership notes fix the boundaries of the article. The zero divisors are the content of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and the group of units is *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*; both are cited here rather than restated, and they bear on the module category only in the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is *Biquaternion Rotations and Lorentz Transformations*, §*The Group of Units* to §*Unitary Representations*; this article is about the modules, and it does not carry the group theory.
 
 ## The Three Regular Modules
 
@@ -277,7 +277,7 @@ Every statement that can be made about $\mathbb{B}$-modules is a statement about
 
 The naive notion of torsion does not survive the passage from a commutative domain to $\mathbb{B}$, and it is worth recording why, since the failure is a feature of the module category rather than a defect.
 
-Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors, treated in *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and for every nonzero $s\in S$ the annihilator
+Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors, treated in *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and for every nonzero $s\in S$ the annihilator
 
 $$
 \operatorname{Ann}_\mathbb{B}(s)=\{b\in\mathbb{B}:bs=0\}

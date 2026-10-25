@@ -46,7 +46,7 @@ $$
 \boxed{\;n = \max\{\dim W : W \text{ positive definite}\}, \qquad m = \max\{\dim W : W \text{ negative definite}\}, \qquad z = \dim A^{\perp}\;} ,
 $$
 
-and in the nondegenerate case the **signature** is the pair $(n,m)$, with $n+m=N$; the **Pontryagin index** is $\kappa = \min(n,m)$, the rank of the smaller of the two parts. It is not the **rank of negativity** of *Pontryagin Spaces*, the dimension of the negative part, which that article calls the index of $\Pi_{\kappa}$: the two numbers agree exactly when the negative part is the smaller, $m \leq n$, and they differ in the biquaternion instance, where the general quaternionic sesquilinear form of signature $(2,6)$ of *The Four Forms and the Four Algebraic Norms* makes the Pontryagin space $\Pi_{6}$ of *The Krein Norm of the Biquaternion Algebra*, of positive part of dimension $2$ and negative part of dimension $6$, whose Pontryagin index is $2$.
+and in the nondegenerate case the **signature** is the pair $(n,m)$, with $n+m=N$; the **Pontryagin index** is $\kappa = \min(n,m)$, the rank of the smaller of the two parts. It is not the **rank of negativity** of *Pontryagin Spaces*, the dimension of the negative part, which that article calls the index of $\Pi_{\kappa}$: the two numbers agree exactly when the negative part is the smaller, $m \leq n$, and they differ in the biquaternion instance, where the general quaternionic sesquilinear form of signature $(2,6)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* makes the Pontryagin space $\Pi_{6}$ of *The Krein Norm of the Biquaternion Algebra*, of positive part of dimension $2$ and negative part of dimension $6$, whose Pontryagin index is $2$.
 
 **Proposition.** $n+m+z=N$, and the four kinds are read off the ranks: the form is positive semi-definite exactly when $m = 0$ and positive definite exactly when in addition $z = 0$, symmetrically with $n$ and $m$ exchanged, so that it is semi-definite exactly when $pq = 0$ and indefinite exactly when $pq > 0$.
 
@@ -142,7 +142,7 @@ The failure of the Cauchy–Schwarz inequality and of the triangle inequality, a
 
 ### The Biquaternion Caution
 
-**Remark (an indefinite form on the algebra is not an indefinite form of the layer).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ the four pairings of *The Four Forms and the Four Algebraic Norms* have signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$ over $\mathbb{R}$; the two bilinear ones belong to the bilinear layer, the general plain sesquilinear one $\operatorname{Sc}(PQ^{*}) = \sum_\mu P_\mu\varsigma(Q_\mu)$ is the definite form of the layer on $\mathbb{B}$ with the definite form of *The Norm Defined by a Form*, and the **general quaternionic sesquilinear** one
+**Remark (an indefinite form on the algebra is not an indefinite form of the layer).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ the four pairings of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* have signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$ over $\mathbb{R}$; the two bilinear ones belong to the bilinear layer, the general plain sesquilinear one $\operatorname{Sc}(PQ^{*}) = \sum_\mu P_\mu\varsigma(Q_\mu)$ is the definite form of the layer on $\mathbb{B}$ with the definite form of *The Norm Defined by a Form*, and the **general quaternionic sesquilinear** one
 
 $$
 \operatorname{Sc}(P^{\natural}Q^{*}) = \sum_{\mu} \varepsilon_{\mu} P_{\mu}\,\varsigma(Q_{\mu}), \qquad \varepsilon = (1,-1,-1,-1),

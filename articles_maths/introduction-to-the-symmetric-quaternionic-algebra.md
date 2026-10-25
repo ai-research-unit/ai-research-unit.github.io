@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the second of them is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, the plain product with the natural conjugation read on the first factor (*The Four General Products and Their Relations*). Every bilinear product on $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction of the block that reads the symmetric part of $\tilde Q_1^{\natural}\tilde Q_2$ as a multiplication:
+The biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the second of them is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, the plain product with the natural conjugation read on the first factor (*The Four General Products and Their Relations over the Biquaternion Algebra*). Every bilinear product on $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction of the block that reads the symmetric part of $\tilde Q_1^{\natural}\tilde Q_2$ as a multiplication:
 
 $$
 \tilde Q_1\star\tilde Q_2 = \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2 + \tilde Q_2^{\natural}\tilde Q_1\bigr).
@@ -38,7 +38,7 @@ $$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{\n
 
 *Proof.* Write $\tilde Q_1^{\natural}\tilde Q_2$ in scalar and vector parts (*Introduction to the General Quaternionic Algebra*): scalar part $Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$, vector part $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$. The exchange $\tilde Q_2^{\natural}\tilde Q_1$ has the same scalar part and the vector part $Q_{2t}\vec Q_1-Q_{1t}\vec Q_2-\vec Q_2\times\vec Q_1$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\vec Q_1\times\vec Q_2=-\vec Q_2\times\vec Q_1$.
 
-The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\mathrm{SQA}$; its comparison with the other three forms is *The Four General Products and Their Relations* and *The Four Forms and the Four Algebraic Norms*.
+The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\mathrm{SQA}$; its comparison with the other three forms is *The Four General Products and Their Relations over the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 **Corollary (the class and the commutativity).** The operation is $\mathbb{C}$-bilinear and commutative, its value is always central, and its commutator vanishes identically,
 
@@ -177,7 +177,7 @@ $$
 
 *Proof.* The square is the theorem of §*The Operation* at $\tilde Q_1=\tilde Q_2$, and $\langle\tilde Q_2,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{2,\mu}^2$; the polarisation identity is the expansion of the square of $\tilde Q_1+\tilde Q_2$ by bilinearity.
 
-**Corollary (the square is the norm of the parent product).** The diagonal $\langle\cdot\rangle_{\natural}$ of the form of the block is exactly the multiplicative norm of the general plain algebra, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*), and the square-zero elements of the block are the elements of the isotropic cone of that norm. The two readings are kept apart in the articles of the block: $\langle\cdot\rangle_{\natural}$ is multiplicative for the parent product, while the block itself carries no unit and no multiplicative norm, and $\langle\cdot\rangle_{\natural}$ is only bilinear.
+**Corollary (the square is the norm of the parent product).** The diagonal $\langle\cdot\rangle_{\natural}$ of the form of the block is exactly the multiplicative norm of the general plain algebra, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*), and the square-zero elements of the block are the elements of the isotropic cone of that norm. The two readings are kept apart in the articles of the block: $\langle\cdot\rangle_{\natural}$ is multiplicative for the parent product, while the block itself carries no unit and no multiplicative norm, and $\langle\cdot\rangle_{\natural}$ is only bilinear.
 
 ## The Placement Among the Twelve
 
@@ -226,6 +226,6 @@ The symmetric part of the general quaternionic product $\tilde Q_1^{\natural}\ti
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the parent product and its scalar–vector form.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the row of $\mathrm{SQA}$ in the catalogue.
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the other half of the row.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) and [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm form, its polarisation and its isotropic cone.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) and [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm form, its polarisation and its isotropic cone.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent, the root and the laws of a product.
 - [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), for the exclusive law of the block.

@@ -22,7 +22,7 @@ Third, the genuinely biquaternionic kernel. The second-order operator $\Box$ has
 
 The article is organised as follows. The gradient and the d'Alembertian are established first, with the composition, the symbol, the central scalar, and the adjoint. The defining equation for the Green's function, the invariant kernel, and the causal kernels follow, with the light-cone Jacobian and the boundary condition that selects the retarded solution. The massive operator and the first-order kernel are treated next, together with the shifted gradient — central and non-central — and the Kirchhoff and Kirchhoff–Green representations the shift carries, and the article closes with the sector structure of the kernels and the table of results.
 
-- Companion article *Conventions in the Biquaternion Universe*, for the series d'Alembertian, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*), and the d'Alembertian convention.
+- Companion article *Conventions in the Biquaternion Universe*, for the series d'Alembertian, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the d'Alembertian convention.
 - Companion article *Exercise: The Retarded Potentials and the Green's Function*, for the retarded kernel and boundary condition specialised to the electromagnetic potential.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order equation the operator carries.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the first-order equation built from the gradient and the spinor on which it acts.

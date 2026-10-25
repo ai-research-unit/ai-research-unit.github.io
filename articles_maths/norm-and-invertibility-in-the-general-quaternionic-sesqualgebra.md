@@ -16,7 +16,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2},
 $$
 
-the general quaternionic sesquilinear algebraic norm of *The Four Forms and the Four Algebraic Norms*, real, **indefinite**, of signature $(2,6)$, and **not** multiplicative. The article states the absence of the inverse, defines $\langle\cdot\rangle_{\natural*}$, proves the failure of multiplicativity, and records the **absence of a criterion**: $\langle\cdot\rangle_{\natural*}$ does not decide invertibility, and the block has no invertibility of its own to decide.
+the general quaternionic sesquilinear algebraic norm of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, real, **indefinite**, of signature $(2,6)$, and **not** multiplicative. The article states the absence of the inverse, defines $\langle\cdot\rangle_{\natural*}$, proves the failure of multiplicativity, and records the **absence of a criterion**: $\langle\cdot\rangle_{\natural*}$ does not decide invertibility, and the block has no invertibility of its own to decide.
 
 **The results.** The general quaternionic sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ has **no unit, no inverse and no invertible element**: the two actions of $e_t$ are the star and the natural conjugation, so no element is a two-sided unit. It carries one algebraic norm, the general quaternionic sesquilinear algebraic norm $\langle\tilde Q_2\rangle_{\natural*}=\lvert Q_{2t}\rvert^{2}-\lvert Q_{2x}\rvert^{2}-\lvert Q_{2y}\rvert^{2}-\lvert Q_{2z}\rvert^{2}$, real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}$-isotropic cone as its vanishing set, and $\langle\cdot\rangle_{\natural*}$ is **not multiplicative**. Because the block has no invertible element, $\langle\cdot\rangle_{\natural*}$ has no invertibility of the block to decide, and it does not decide the invertibility of the plain product either: the plain unit $e_t+\vec e_x$ has $\langle\cdot\rangle_{\natural*}=0$ and the plain zero divisor $\vec e_x+i\vec e_y$ has $\langle\cdot\rangle_{\natural*}=-2$. Each section below states its result first and then proves it.
 
@@ -58,7 +58,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
-the general quaternionic sesquilinear form of *The Four Forms and the Four Algebraic Norms*, also called the **Krein form** of the block, whose Gram matrix and restrictions are computed in *The Krein Norm of the Biquaternion Algebra*.
+the general quaternionic sesquilinear form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, also called the **Krein form** of the block, whose Gram matrix and restrictions are computed in *The Krein Norm of the Biquaternion Algebra*.
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -128,8 +128,8 @@ real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the unit, the inverse and the invertible element relative to a product.
 - [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the proof of the absence and the two one-sided families of the block.
 - [The Krein Norm of the Biquaternion Algebra](the-krein-norm-of-the-biquaternion-algebra.html), for $\langle\cdot,\cdot\rangle_{\natural*}$, its Gram matrix and its signatures.

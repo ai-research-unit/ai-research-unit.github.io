@@ -4,7 +4,7 @@
 
 The symmetric plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ on the biquaternion space, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a multiplication (*Introduction to the Symmetric Plain Sesqualgebra*). This article studies the algebraic norm that the block carries and the invertibility that it does not.
 
-A norm and an inverse name a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)$ and its diagonal is
+A norm and an inverse name a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. For the block the form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)$ and its diagonal is
 
 $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
@@ -60,7 +60,7 @@ $$
 \tilde{Q}\star\tilde{Q} = \langle\tilde{Q}\rangle_{*}e_t .
 $$
 
-The equation names the product $\star$: the algebraic norm is relative to the product, and the algebraic norms of the other three rows are different quadratic maps on the same space (*The Four Forms and the Four Algebraic Norms*).
+The equation names the product $\star$: the algebraic norm is relative to the product, and the algebraic norms of the other three rows are different quadratic maps on the same space (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -132,7 +132,7 @@ $$ \boxed{\; \langle\tilde{Q}\rangle_{*} = 0 \quad\Longleftrightarrow\quad \tild
 
 *Proof.* The first clause is the theorem on the absence of the inverse. The equivalence is the positive definiteness: $\langle\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$ is a sum of non-negative reals, vanishing exactly when every $Q_\mu$ vanishes.
 
-**Remark (what replaces the criterion).** A criterion would equate the invertible elements with the complement of a hypersurface of the algebraic norm. For the block the algebraic norm is definite, it vanishes only at the origin, and it therefore separates nothing: the block has **no nonzero element of zero algebraic norm**, or, in the vocabulary of forms, **no nonzero isotropic vector**. Its element classification is two-way, the zero element and the non-zero elements, and the non-zero elements are all of one kind, the zero divisors of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The definiteness is the exact opposite of the general plain product, whose algebraic norm $\langle\cdot\rangle$ is indefinite and does not decide invertibility either (*Norm Regularity and Degeneracy in the Biquaternion Algebra*).
+**Remark (what replaces the criterion).** A criterion would equate the invertible elements with the complement of a hypersurface of the algebraic norm. For the block the algebraic norm is definite, it vanishes only at the origin, and it therefore separates nothing: the block has **no nonzero element of zero algebraic norm**, or, in the vocabulary of forms, **no nonzero isotropic vector**. Its element classification is two-way, the zero element and the non-zero elements, and the non-zero elements are all of one kind, the zero divisors of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The definiteness is the exact opposite of the general plain product, whose algebraic norm $\langle\cdot\rangle$ is indefinite and does not decide invertibility either (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*).
 
 **Corollary (the substitute for the group of units).** The block has no group of units; the set that replaces it is the group of the linear maps of $\mathbb{B}$ that preserve the form $\langle\cdot,\cdot\rangle_{*}$, together with its algebra, and it is read in *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. The block carries no subgroup of its own elements to play that role, since it has no invertible element.
 
@@ -177,11 +177,11 @@ a real non-negative definite quadratic map of signature $(8,0)$, invariant under
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product, its class, its table and its placement among the twelve structures.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the relative notions of the unit, the inverse and the group of units.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{*}$ of this article.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{*}$ of this article.
 - [The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra](the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.html), for the form $\langle\cdot,\cdot\rangle_{*}$ read as the product, its Gram matrix, its positivity and its restriction to the remarkable subspaces.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity and the cone of $\langle\cdot,\cdot\rangle_{*}$.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the zero-divisor set that is the complement of the origin.

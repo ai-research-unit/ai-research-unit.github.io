@@ -251,8 +251,8 @@ The twelve structures of the *Biquaternion Algebraic Structures* category are tw
 | Structure | Product | The operator content |
 | --- | --- | --- |
 | General plain bilinear | $\tilde Q_1\tilde Q_2$ | the full monoid of left multiplications; the operator algebra with a unit |
-| General plain sesquilinear | $\tilde Q_1\tilde Q_2^{*}$ | the Hermitian adjoint; the observables and the positive form |
 | General quaternionic bilinear | $\tilde Q_1^{\natural}\tilde Q_2$ | left multiplications with a left unit only; the interval |
+| General plain sesquilinear | $\tilde Q_1\tilde Q_2^{*}$ | the Hermitian adjoint; the observables and the positive form |
 | General quaternionic sesquilinear | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the Krein adjoint; the gauge form and the sandwich |
 
 The other eight structures are the symmetric and antisymmetric halves of these four. The symmetric halves compose; the antisymmetric halves give brackets and derivation algebras. The crossing reader *The Operators of the Twelve Structures* owns the comparison, and this article declares only the general plain column.

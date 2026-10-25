@@ -507,7 +507,7 @@ The branch of the modulus makes $\tilde Q\mapsto(\Rho,\tilde U)$ a bijection ont
 
 ### The Conformal Factor
 
-The **conformal factor** is read in the coordinates. Under the sandwich $\tilde Q\,X\,\tilde Q^{*}$, the reduced norm of $X$ is multiplied by
+The **conformal factor** is read in the coordinates. Under the sandwich $\tilde Q\,X\,\tilde Q^{*}$, the quaternionic norm of $X$ is multiplied by
 
 $$
 r^{4}=\exp(4\ln r)=\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert^{2},
@@ -523,7 +523,7 @@ $$
 \mathcal N=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}.
 $$
 
-The cone is one complex equation, hence a cone of real dimension six. In the matrix model it is the determinant-zero set, so its nonzero elements are exactly the rank-one matrices, that is, the zero divisors of the algebra (*Norm Regularity and Degeneracy in the Biquaternion Algebra*). On the cone the rapidity diverges, the scale collapses, and the word has boundary values rather than a value.
+The cone is one complex equation, hence a cone of real dimension six. In the matrix model it is the determinant-zero set, so its nonzero elements are exactly the rank-one matrices, that is, the zero divisors of the algebra (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*). On the cone the rapidity diverges, the scale collapses, and the word has boundary values rather than a value.
 
 ### The Two Strata
 
@@ -677,7 +677,7 @@ The table compares the three exponential polar decompositions; in the split-comp
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
 | $\tilde Q=Q_te_t+\vec Q$ | the element, with scalar part $Q_t$ and vector part $\vec Q$ |
-| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the reduced norm |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm |
 | $\natural$ | the quaternion conjugation |
 | $*$ | the Hermitian star, $\natural$ composed with coefficientwise conjugation |
 | $\mathsf M_2$ | the matrix model, $\tilde Q\mapsto Q_tI_2-i\vec Q\cdot\boldsymbol\sigma$ |
@@ -707,7 +707,7 @@ The table compares the three exponential polar decompositions; in the split-comp
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Cartan decomposition, the Baker–Campbell–Hausdorff formula and the Lie algebra.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four coordinate blocks and the boost family.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone and the zero divisors.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone and the zero divisors.
 - [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), for the quaternion case.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the commutative two-dimensional case.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional case.

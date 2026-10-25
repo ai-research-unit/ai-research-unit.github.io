@@ -194,7 +194,7 @@ Finite dimension is used at the step where injectivity of $\lambda_a$ is convert
 
 **Remark (where finite dimension enters).** Only in the last step: a non-surjective endomorphism of a finite-dimensional space has a non-zero kernel. Over an infinite-dimensional algebra the statement fails. On $\ell^2(\mathbb{N})$ the diagonal operator $D = \operatorname{diag}(1/2, 1/3, 1/4, \dots)$ is injective with dense but proper range, so it is not surjective and not a unit; yet $Dx = 0$ forces $x = 0$, and $xD = 0$ forces $x = 0$ because the adjoint $D^{*}$ is injective too. It is therefore a non-unit that is neither a left nor a right zero divisor. The right shift is not a witness: it has the non-zero left inverse $T(y) = y_0 e_0$, so $TS = 0$ and $S$ is a right zero divisor.
 
-**Corollary (the biquaternion instance).** In $\mathbb{B}$ the units are the elements with $\langle \tilde{Q} \rangle_{\natural} \neq 0$ and the non-units are $\{0\} \cup \{\tilde{Q} \neq 0 : \langle \tilde{Q} \rangle_{\natural} = 0\}$, which is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Cases*.
+**Corollary (the biquaternion instance).** In $\mathbb{B}$ the units are the elements with $\langle \tilde{Q} \rangle_{\natural} \neq 0$ and the non-units are $\{0\} \cup \{\tilde{Q} \neq 0 : \langle \tilde{Q} \rangle_{\natural} = 0\}$, which is *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Cases*.
 
 ## The Regular Module and Division Algebras
 

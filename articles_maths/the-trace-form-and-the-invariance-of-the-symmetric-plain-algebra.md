@@ -10,7 +10,7 @@ $$
 
 the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)$, the operator traces built from it, and its restriction to the remarkable subspaces.
 
-The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The Four Forms and the Four Algebraic Norms*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Biquaternion Algebra in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four General Products, Forms and Norms*; the form is used here with the product and not re-derived.
+The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Biquaternion Algebra in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four General Products, Forms and Norms*; the form is used here with the product and not re-derived.
 
 ## The Trace Form
 
@@ -37,7 +37,7 @@ $$
 \operatorname{diag}(1,-1,-1,-1),
 $$
 
-the coefficient matrix $D$ of *The Four Forms and the Four Algebraic Norms*, of complex rank four.
+the coefficient matrix $D$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, of complex rank four.
 
 *Proof.* $\tau(e_\mu,e_\nu)=\mathrm{Sc}(e_\mu\bullet e_\nu)$; on the basis table of *Introduction to the Symmetric Plain Algebra* the values are $\varepsilon_\mu\delta_{\mu\nu}=(1,-1,-1,-1)$ on the diagonal and $0$ off it. The matrix is invertible, so the form is non-degenerate.
 
@@ -207,7 +207,7 @@ The trace form of the symmetric plain algebra is $\tau(\tilde Q_1,\tilde Q_2)=\m
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the associativity of the plain form and its operator theory.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the left and right operators whose half-sum is the multiplication operator of the block.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions of the form to the remarkable subspaces.

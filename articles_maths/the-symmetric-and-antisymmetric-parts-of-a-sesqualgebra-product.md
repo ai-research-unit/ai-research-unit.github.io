@@ -268,7 +268,7 @@ $$
 \mathrm{SPS} = \tfrac12\bigl(\tilde{Q}_1\tilde{Q}_2^{*}+\overline{\tilde{Q}_2\tilde{Q}_1^{*}}\bigr) = \mathrm{Sc}\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr) = Q_{1t}\overline{Q_{2t}} + (\vec Q_1,\overline{\vec Q_2}), \qquad
 \mathrm{APS} = \tfrac12\bigl(\tilde{Q}_1\tilde{Q}_2^{*}-\overline{\tilde{Q}_2\tilde{Q}_1^{*}}\bigr) = \mathrm{Vect}\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr) = -Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
 $$
-respectively **central** and **pure vector**. The symmetric part is the Hermitian form $H = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ of *The Four Forms and the Four Algebraic Norms* read as a product, and the antisymmetric part is the whole vector part $-Q_{1t}\overline{\vec Q_2} + \overline{Q_{2t}}\vec Q_1 - \vec Q_1\times\overline{\vec Q_2}$.
+respectively **central** and **pure vector**. The symmetric part is the Hermitian form $H = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* read as a product, and the antisymmetric part is the whole vector part $-Q_{1t}\overline{\vec Q_2} + \overline{Q_{2t}}\vec Q_1 - \vec Q_1\times\overline{\vec Q_2}$.
 - For the **general quaternionic sesquilinear product** the exchange is not a conjugation of the value, and the two parts are the symmetrisation and half the commutator of two elements in the plain product,
 $$
 \mathrm{SQS} = \tfrac12\bigl(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*} + \tilde{Q}_2^{*}\tilde{Q}_1^{\natural}\bigr), \qquad

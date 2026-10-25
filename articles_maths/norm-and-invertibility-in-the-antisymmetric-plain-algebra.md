@@ -10,7 +10,7 @@ $$
 
 the cross product of the two vector parts, the antisymmetric half of the general plain bilinear product (*Introduction to the Antisymmetric Plain Algebra*). The operation is $\mathbb{C}$-bilinear, alternating and vector valued, and it has no unit on either side.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\wedge\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\wedge\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
 The invertibility is a second and independent absence. The block has **no left unit, no right unit and no two-sided unit**, hence no inverse and an empty group of units; the inverse equation to the centre has no solution, because the block cannot produce a central value at all.
 
@@ -62,7 +62,7 @@ $$
 \varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\mathrm{Sc}\,f(\tilde Q,\tilde Q),
 $$
 
-and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The Four Forms and the Four Algebraic Norms*).
+and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
 
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric plain multiplication,
 
@@ -88,11 +88,11 @@ There is therefore no central-valued quadratic map built from the product, neith
 
 **The invertibility criterion of the parent product is not read in the block: the block has no unit against which to invert and no algebraic norm to decide anything.**
 
-**Remark (the criterion of the parent is not read here).** The general plain bilinear product $\tilde Q_1\tilde Q_2$ is associative and unital with unit $e_t$, and its invertibility is decided by the non-vanishing of its algebraic norm $\langle\cdot\rangle$, the diagonal of $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
+**Remark (the criterion of the parent is not read here).** The general plain bilinear product $\tilde Q_1\tilde Q_2$ is associative and unital with unit $e_t$, and its invertibility is decided by the non-vanishing of its algebraic norm $\langle\cdot\rangle$, the diagonal of $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
 
 ## Summary
 
-The antisymmetric plain multiplication $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde Q_1\wedge\tilde Q_2=e_t$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The Four Forms and the Four Algebraic Norms* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. Both canonical quadratics built from the product, the square and the conjugated square, vanish identically as well. The algebraic norm $\langle\cdot\rangle$ of the parent plain product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
+The antisymmetric plain multiplication $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde Q_1\wedge\tilde Q_2=e_t$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. Both canonical quadratics built from the product, the square and the conjugated square, vanish identically as well. The algebraic norm $\langle\cdot\rangle$ of the parent plain product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
 
 ## Summary of Notation
 
@@ -107,10 +107,10 @@ The antisymmetric plain multiplication $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\time
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
 - [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the operation, its class, its image and the absence of a unit.
-- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the unit table of the four general products.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form of this block.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the unit table of the four general products.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form of this block.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the antisymmetrisation from which the block is written.
 - [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the invariant forms of the block.

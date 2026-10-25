@@ -13,7 +13,7 @@ which does not detect the zero divisors.
 A norm and an inverse name a product, and the product is part of the definition: the unit and the inverse are
 stated once for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Unit and the Inverse*, and the algebraic norm of a product is the diagonal of its scalar-part form,
-the definition of *The Four Forms and the Four Algebraic Norms*. For the block the form is
+the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. For the block the form is
 $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ and
 its diagonal is
 
@@ -92,7 +92,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}},
 $$
 
-the general quaternionic sesquilinear form of *The Four Forms and the Four Algebraic Norms*, also
+the general quaternionic sesquilinear form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, also
 called the **Krein form** of the block. The two arities of the letter are one object: with two arguments the
 form, with one argument its diagonal.
 
@@ -244,10 +244,10 @@ central square, not by $\langle\cdot\rangle_{\natural*}$.
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm, the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm, the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the definitions relative to a general product and for the unit tables.
 - [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the two actions of $e_t$ and the proof that no element is a unit.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{\natural*}$ of this article.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{\natural*}$ of this article.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the criterion of the zero divisors and the regular elements.
 - [The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra](the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.html), for the operators whose kernels give the ranks.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the form that is the scalar part of the square.

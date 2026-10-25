@@ -26,7 +26,7 @@ Each article opens with a table of two columns. **Mathematical Content** names t
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The subspace, its basis and its defining involution | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
-| The norm, its signature and the inverse formula | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, its signature and the inverse formula | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 The rows follow the order in which the article uses the results. A row without a link is not allowed: the reader must be able to open the proof of every item the article interprets. A result that the corpus does not contain is named as missing, not written as if it were proved.
 
@@ -91,21 +91,21 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### The Products
 
-- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html)
-- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html)
-- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html)
+- [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html)
+- [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html)
+- [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html)
 - [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html)
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html)
 
 #### The Forms and Their Algebraic Norms
 
-- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html)
-- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html)
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
 
 #### Properties of the Biquaternion Algebra over $\mathbb{C}$
 
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html)
 - [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
@@ -113,7 +113,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html)
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html)
 
 #### Remarkable Subspaces

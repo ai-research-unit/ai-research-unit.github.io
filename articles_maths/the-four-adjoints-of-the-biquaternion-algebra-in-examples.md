@@ -6,7 +6,7 @@ The biquaternion algebra carries four pairings, and every pairing carries its ow
 
 The result is a one-line rule, and the examples below are the evidence for it: **each of the four operator names records an adjoint, and the adjective names the insertion of the sign.** *Association* is the transpose of the general plain bilinear form, the reversal of a product with no conjugation anywhere, and it is the name of that adjoint because the adjoint carries no conjugation to name. *Signed inner conjugation* is the name of the adjoint of the general quaternionic bilinear form: there the adjoint of $L_{\tilde Q_6}$ is the left multiplication by $\tilde Q_6^{\natural}$, the **signed left multiplication**, and the sandwich built from it is the inner conjugation up to the norm. *Hermitian adjoint* is the name of the adjoint of the general plain sesquilinear form, which is the conjugate linear $\ast$; and *signed Hermitian adjoint* is the **same** adjoint read on the operators that carry the sign, which is why the Hermitian layer carries two families where the plain layer carries one. The word **signed** always has the same meaning in the corpus: the grade involution $\natural$, the conjugation that negates the vector part and fixes the centre, has been inserted.
 
-The forms are *The Four Forms and the Four Algebraic Norms*; the four conjugations are *The Group of Involutions*; the plain transpose is the general transpose of a bilinear form of *Bilinear Forms*, §*Isometries*, and its operator family is *Two-Sided Operators on the Biquaternion Algebra*; the family of the second form is *Two-Sided Operators on the General Quaternionic Algebra*. The table of §*Which Switch Does What* reads the two involutions on the four adjoints: the sign character $\alpha$ exchanges the side, and the coefficient involution $\sigma=\bar{\cdot}$ acts on the parameter. The switches themselves, with the twisted right factor and the four forms read at the unit, belong to the operator layer, in *Introduction to the Operators of the Biquaternion Algebra*, §*The Two Switches and the Twisted Right Factor*. The article is pure algebra; no argument uses a distance, a limit or a derivative.
+The forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four conjugations are *The Group of Involutions*; the plain transpose is the general transpose of a bilinear form of *Bilinear Forms*, §*Isometries*, and its operator family is *Two-Sided Operators on the Biquaternion Algebra*; the family of the second form is *Two-Sided Operators on the General Quaternionic Algebra*. The table of §*Which Switch Does What* reads the two involutions on the four adjoints: the sign character $\alpha$ exchanges the side, and the coefficient involution $\sigma=\bar{\cdot}$ acts on the parameter. The switches themselves, with the twisted right factor and the four forms read at the unit, belong to the operator layer, in *Introduction to the Operators of the Biquaternion Algebra*, §*The Two Switches and the Twisted Right Factor*. The article is pure algebra; no argument uses a distance, a limit or a derivative.
 
 ## Conventions and the Four Forms
 
@@ -25,7 +25,7 @@ $$
 
 and in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ their Gram matrices are $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$. The first two are bilinear and the last two are sesquilinear, conjugate linear in the second argument. All four are non-degenerate and no two of them agree.
 
-*Proof.* Each pairing is the scalar part of one of the four general products of *The Four General Products and Their Relations*, and $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$; the natural and the Hermitian conjugations are diagonal in the basis, of diagonal entries $\varepsilon$ and $-\varepsilon$ respectively, which gives the four Gram matrices. The diagonal forms $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu|Q_\mu|^{2}$ and $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ separate the four pairings on the units.
+*Proof.* Each pairing is the scalar part of one of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*, and $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$; the natural and the Hermitian conjugations are diagonal in the basis, of diagonal entries $\varepsilon$ and $-\varepsilon$ respectively, which gives the four Gram matrices. The diagonal forms $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu|Q_\mu|^{2}$ and $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ separate the four pairings on the units.
 
 **Remark (the four forms are one family).** Any two of the four are recovered from the others by the two sign characters of the argument, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\langle\tilde Q_1,\bar{\tilde Q}_2\rangle_{\natural}$, so the four forms differ only in which of the identity, $\natural$, $\bar{\cdot}$ and $\ast$ is inserted into which slot. The four adjoints below differ in exactly the same way, and that is the whole point of the article.
 
@@ -39,7 +39,7 @@ $$
 
 The form is non-degenerate, so the adjoint exists and is unique, and $F\mapsto F^{\phi}$ is conjugate linear in the sesquilinear cases and linear in the bilinear ones.
 
-The corpus writes the first adjoint $F^{\approx}$ and calls it the **associate**; it writes the second $F^{N}$ and calls it the $\langle\cdot\rangle_{\natural}$-adjoint, the adjoint for the norm form; the third is the **Hermitian adjoint** $F^{\ast}$. This article writes $F^{\phi}$ with the form for the subscript, which is the notation of the notation table of *The Four Forms and the Four Algebraic Norms*, and uses $\approx$ and $N$ as the two names of the corpus.
+The corpus writes the first adjoint $F^{\approx}$ and calls it the **associate**; it writes the second $F^{\natural}$ and calls it the adjoint of the quaternionic form; the third is the **Hermitian adjoint** $F^{\ast}$. This article writes $F^{\phi}$ with the form for the subscript, and uses $\approx$ for the adjoint of the plain form and $\natural$ for the adjoint of the quaternionic form.
 
 **Theorem (the adjoints of the one-sided and two-sided operators).** For the left multiplication $L_{\tilde Q_6}(\tilde Q)=\tilde Q_6\tilde Q$, the right multiplication $R_{\tilde Q_3}(\tilde Q)=\tilde Q\tilde Q_3$, and their product $L_{\tilde Q_6}R_{\tilde Q_3}$,
 
@@ -47,7 +47,7 @@ $$
 (L_{\tilde Q_6})^{\approx}=R_{\tilde Q_6},\qquad (R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3},\qquad (L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6};
 $$
 $$
-(L_{\tilde Q_6})^{N}=L_{\tilde Q_6^{\natural}},\qquad (R_{\tilde Q_3})^{N}=R_{\tilde Q_3^{\natural}},\qquad (L_{\tilde Q_6}R_{\tilde Q_3})^{N}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}};
+(L_{\tilde Q_6})^{N}=L_{\tilde Q_6^{\natural}},\qquad (R_{\tilde Q_3})^{N}=R_{\tilde Q_3^{\natural}},\qquad (L_{\tilde Q_6}R_{\tilde Q_3})^{\natural}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}};
 $$
 $$
 (L_{\tilde Q_6})^{\ast}=L_{\tilde Q_6^{\ast}},\qquad (R_{\tilde Q_3})^{\ast}=R_{\tilde Q_3^{\ast}},\qquad (L_{\tilde Q_6}R_{\tilde Q_3})^{\ast}=L_{\tilde Q_6^{\ast}}R_{\tilde Q_3^{\ast}};
@@ -63,10 +63,10 @@ $$
 $$
 \boxed{\; (L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6},
 \qquad
-(L_{\tilde Q_6}R_{\tilde Q_3})^{N}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}} \;}.
+(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}} \;}.
 $$
 
-The associate **reverses the two parameters and leaves them alone**; the $N$-adjoint **keeps the parameters in place and replaces each by its image under the sign $\natural$**. So the word *association* names a transpose, and it is the suffix of a family exactly when the form of that family is the plain one; the word *signed inner conjugation* names the adjoint of the $\natural$-form, and no factor is reversed there. The third adjoint conjugates in place with the conjugate linear $\ast$, and the fourth swaps and conjugates.
+The associate **reverses the two parameters and leaves them alone**; the $\natural$-adjoint **keeps the parameters in place and replaces each by its image under the sign $\natural$**. So the word *association* names a transpose, and it is the suffix of a family exactly when the form of that family is the plain one; the word *signed inner conjugation* names the adjoint of the $\natural$-form, and no factor is reversed there. The third adjoint conjugates in place with the conjugate linear $\ast$, and the fourth swaps and conjugates.
 
 **Remark (why this answers the naming question).** Each of the first three names is the name of an adjoint of one form: $\approx$ is printed as "Association", $\langle\cdot,\cdot\rangle_{\natural}$ as "Signed Inner Conjugation", $\ast$ as "Hermitian Adjoint". The form decides the adjoint, and the adjoint supplies the name. The last adjoint above, for the general quaternionic sesquilinear form, is the Krein adjoint of the indefinite theory; its family is the indefinite Hermitian sandwich, and it is named after the Krein structure rather than after one of the four operator names. The suffix "Signed Hermitian Adjoint" belongs to the Hermitian-algebra layer, where it names the operators with the sign inserted on the *same* form as the Hermitian family.
 
@@ -110,7 +110,7 @@ the sign matrix $\mathrm{E}$ conjugating the plain transpose.
 
 *Proof.* Write the form as $\langle\tilde Q_1,\tilde Q_2\rangle=Q_1^{\mathsf T}\mathrm{E}Q_2$ on the coordinate columns. Then $\langle F\tilde Q_1,\tilde Q_2\rangle=(MQ_1)^{\mathsf T}\mathrm{E}Q_2=Q_1^{\mathsf T}M^{\mathsf T}\mathrm{E}Q_2$ and $\langle\tilde Q_1,F^{\approx}\tilde Q_2\rangle=Q_1^{\mathsf T}\mathrm{E}M^{\approx}Q_2$ for all $Q_1,Q_2$, so $M^{\mathsf T}\mathrm{E}=\mathrm{E}M^{\approx}$, that is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$ because $\mathrm{E}^{-1}=\mathrm{E}$.
 
-**Remark (when the associate is the plain transpose).** The two agree exactly when $M^{\mathsf T}$ commutes with $\mathrm{E}$. An operator that fixes the scalar unit $e_t$ and preserves the vector subspace has the block form $\operatorname{diag}(1,N)$ with $N$ a $3\times3$ matrix, and the conjugation by $\mathrm{E}$ acts as the sign $-1$ on the two off-diagonal blocks and as the identity on the two diagonal ones, so it is invisible there and $M^{\approx}=M^{\mathsf T}$. For a general map the two differ. The formula is the coordinate form of the general statement that the transpose of a bilinear form is taken with the Gram matrix conjugating both sides, $M\mapsto G^{-1}M^{\mathsf T}G$ (*Bilinear Forms*, §*Isometries*, and *Quadratic Forms and Polarisation*, §*Isometry of Forms*).
+**Remark (when the associate is the plain transpose).** The two agree exactly when $M^{\mathsf T}$ commutes with $\mathrm{E}$. An operator that fixes the scalar unit $e_t$ and preserves the vector subspace has the block form $\operatorname{diag}(1,M)$ with $M$ a $3\times3$ matrix, and the conjugation by $\mathrm{E}$ acts as the sign $-1$ on the two off-diagonal blocks and as the identity on the two diagonal ones, so it is invisible there and $M^{\approx}=M^{\mathsf T}$. For a general map the two differ. The formula is the coordinate form of the general statement that the transpose of a bilinear form is taken with the Gram matrix conjugating both sides, $M\mapsto G^{-1}M^{\mathsf T}G$ (*Bilinear Forms*, §*Isometries*, and *Quadratic Forms and Polarisation*, §*Isometry of Forms*).
 
 **Proposition (association against the Hermitian adjoint).** Let $\bar F$ be the map obtained from $F$ by conjugating every coefficient. Then
 
@@ -146,7 +146,7 @@ i&-2i&-2&1
 \end{pmatrix},
 $$
 $$
-F^{N}=\mathsf{M}_4(\tilde Q_6^{\natural})\mathsf{M}_4^{R}(\tilde Q_3^{\natural})=
+F^{\natural}=\mathsf{M}_4(\tilde Q_6^{\natural})\mathsf{M}_4^{R}(\tilde Q_3^{\natural})=
 \begin{pmatrix}
 1&2&-2i&i\\
 -2&1&-i&-2i\\
@@ -172,9 +172,9 @@ F^{\natural\ast}=\mathsf{M}_4(\bar{\tilde Q_3})\mathsf{M}_4^{R}(\bar{\tilde Q_6}
 \end{pmatrix}.
 $$
 
-The five matrices are distinct. Reading the four adjoint matrices against $F$: the associate $F^{\approx}$ differs from $F$ by the reversal of the two factors, $2\vec e_x$ and $i\vec e_z$ changing places; the $N$-adjoint differs by the replacement $\tilde Q_6\mapsto\tilde Q_6^{\natural}=e_t-2\vec e_x$ and $\tilde Q_3\mapsto\tilde Q_3^{\natural}=e_t-i\vec e_z$; the Hermitian adjoint by $\tilde Q_6\mapsto\tilde Q_6^{\ast}=e_t-2\vec e_x$ and $\tilde Q_3\mapsto\tilde Q_3^{\ast}=e_t-i\vec e_z$ as well, the two differing only in the bar on the coefficients of $F$ itself; and the fourth adjoint by both operations, the swap of $L_{\bar{\tilde Q_3}}R_{\bar{\tilde Q_6}}$ and the two conjugations. None of the four adjoints equals $F$: the example is self-adjoint for no pairing, which is the generic case.
+The five matrices are distinct. Reading the four adjoint matrices against $F$: the associate $F^{\approx}$ differs from $F$ by the reversal of the two factors, $2\vec e_x$ and $i\vec e_z$ changing places; the $\natural$-adjoint differs by the replacement $\tilde Q_6\mapsto\tilde Q_6^{\natural}=e_t-2\vec e_x$ and $\tilde Q_3\mapsto\tilde Q_3^{\natural}=e_t-i\vec e_z$; the Hermitian adjoint by $\tilde Q_6\mapsto\tilde Q_6^{\ast}=e_t-2\vec e_x$ and $\tilde Q_3\mapsto\tilde Q_3^{\ast}=e_t-i\vec e_z$ as well, the two differing only in the bar on the coefficients of $F$ itself; and the fourth adjoint by both operations, the swap of $L_{\bar{\tilde Q_3}}R_{\bar{\tilde Q_6}}$ and the two conjugations. None of the four adjoints equals $F$: the example is self-adjoint for no pairing, which is the generic case.
 
-**Remark (the sign is a bar and a swap in the entries).** The four matrices above are the same matrix up to the conjugations and the transposition along the anti-diagonal of the parameter pair, which is what the corollary predicts; the reader who wants the transposition alone can compare $F$ with $F^{\approx}$, and the reader who wants the conjugation alone can compare $F$ with $F^{N}$.
+**Remark (the sign is a bar and a swap in the entries).** The four matrices above are the same matrix up to the conjugations and the transposition along the anti-diagonal of the parameter pair, which is what the corollary predicts; the reader who wants the transposition alone can compare $F$ with $F^{\approx}$, and the reader who wants the conjugation alone can compare $F$ with $F^{\natural}$.
 
 ## Signed, Unsigned and Associated
 
@@ -315,7 +315,7 @@ The two switches of the twisted right factor, and the four forms that they retur
 | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6}$ | the associate, the adjoint for the general plain bilinear form: the swap, no conjugation |
 | $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$ | association on the Conway operator basis; $(FG)^{\approx}=G^{\approx}F^{\approx}$, and $L_a^{\approx}=R_a$, $R_b^{\approx}=L_b$ |
 | $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$, $\bar F^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$ | the associate in the coefficient basis, and against the Hermitian adjoint; the collapse $\bar F^{\approx}=F^{\ast}=F^{-1}$ on the vector-preserving unitaries |
-| $(L_{\tilde Q_6}R_{\tilde Q_3})^{N}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$ | the $N$-adjoint, the adjoint for the general quaternionic bilinear form: the sign in place |
+| $(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$ | the $\natural$-adjoint, the adjoint for the general quaternionic bilinear form: the sign in place |
 | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\ast}=L_{\tilde Q_6^{\ast}}R_{\tilde Q_3^{\ast}}$ | the Hermitian adjoint; $(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural\ast}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde Q_6}}$ the signed one |
 | $\mathrm{Ad}_{\tilde Q_6}=\tilde Q_6\,\tilde Q\,\tilde Q_6^{-1}$, $\mathrm{Ad}^{\alpha}_{\tilde Q_6}=\tilde Q_6^{\natural}\tilde Q\tilde Q_6^{-1}$ | the unsigned and the signed inner conjugation; $\mathrm{Ad}^{\alpha}=\mathrm{Ad}$ on the centre, $-\mathrm{Ad}$ on $V$ |
 | $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}\mathrm{Ad}_{\tilde Q_6}$ | the twisted two-sided operator; $\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural}$ the norm |
@@ -323,12 +323,12 @@ The two switches of the twisted right factor, and the four forms that they retur
 ## Further Reading
 
 - [Introduction to the Operators of the Biquaternion Algebra](the-four-general-products-and-operators.html), for the products-to-operators bridge that the adjoints above serve, for the theorem that the plain product gives minus the reflection and the sign gives the reflection, and for the two switches $\sigma$ and $\alpha$ that the last table of this article names
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four forms the four adjoints belong to, their Gram matrices, their signatures and their notation table of the four adjoints
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms the four adjoints belong to, their Gram matrices, their signatures and their notation table of the four adjoints
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their group and their linearity
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the Conway operator basis on which the associate reverses the factors, and the regular representations $L_a$ and $R_b$ that transpose into one another
 - [Bilinear Forms](bilinear-forms.html), §*Isometries*, and [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), §*Isometry of Forms*, for the general transpose $M\mapsto G^{-1}M^{\mathsf T}G$ of a bilinear form, of which the associate is the biquaternion instance
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the family of the first adjoint, its swap law and its criteria
-- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the twisted operator $\Theta_{\tilde Q_6}$, its $N$-adjoint and its self-adjointness criterion
+- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the twisted operator $\Theta_{\tilde Q_6}$, its $\natural$-adjoint and its self-adjointness criterion
 - [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$ and the general meaning of the sign
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the same operators read as matrices, where the swap and the sign become a transposition and a bar
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for the adjoint of a linear map with respect to a bilinear or a sesquilinear form

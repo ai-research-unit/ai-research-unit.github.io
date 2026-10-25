@@ -111,7 +111,7 @@ not describe them under the other products.
 A **division algebra** is an algebra in which every nonzero element is invertible; for a
 finite-dimensional algebra this is equivalent to the absence of zero divisors. The biquaternion
 algebra contains zero divisors, so it is **not** a division algebra. The statement is the one of
-*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and it is independent of the product: the same
+*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, and it is independent of the product: the same
 elements are the zero divisors of both products, by the criterion above and the coincidence quoted
 below.
 
@@ -124,7 +124,7 @@ does not depend on the product, because $\langle\tilde Q\rangle_{\natural}=Q_t^2
 cases on the element. A biquaternion is **pure** when $Q_t=0$ and **non-pure** when $Q_t\neq0$; on
 a pure element the criterion is $(\vec Q,\vec Q)=0$, and on a non-pure one it is
 $(\vec Q,\vec Q)=-Q_t^2$, which can be met by the vector part cancelling the scalar
-contribution. The two families are developed in *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; in
+contribution. The two families are developed in *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; in
 this product they are separated not by the square, which vanishes on both, but by the plain square,
 as the two sections below compute.
 
@@ -253,7 +253,7 @@ General Quaternionic Algebra*, below this article in this category.
 
 **The four general products give four zero-divisor equations but one and the same zero-divisor set, $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$; what the product changes is the equation and the annihilator, not the set.**
 
-The four general products of *The Four General Products and Their Relations*
+The four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*
 give four definitions of a zero divisor, hence four zero-divisor sets. For the biquaternion algebra
 the four sets are one and the same set,
 
@@ -268,7 +268,7 @@ $\tilde Q^{\natural}\tilde{Q}_1=0$, $\tilde Q\tilde{Q}_1^{*}=0$ and $\tilde Q^{\
 four different equations with the same solution set, and the annihilators of one element depend on
 the product, as the coincidence theorem above shows for this one. The one-sided inverse equations
 and their solutions for the four products are the same article's §*The One-Sided Inverse
-Equations*, and the plain reading of the criterion is *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+Equations*, and the plain reading of the criterion is *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 ## The Zero Divisors and the Remarkable Subspaces
 
@@ -334,8 +334,8 @@ symmetric here where the sesquilinear products make it conjugate-symmetric.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for isotopes and the way a change of product moves the zero divisors.
 - Sterling K. Berberian, *Baer \*-Rings* (Springer, 1972), for annihilators in a ring with an involution and the symmetry that an anti-automorphism imposes on them.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the isotropic vectors of the complex quaternion algebra and the quadratic form $\sum_\mu Q_\mu^2$.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the two families, the criterion in the plain product and the structure of the cone.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, its multiplicativity and the one-sided equations.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the two families, the criterion in the plain product and the structure of the cone.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, its multiplicativity and the one-sided equations.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the coincidence of the four zero-divisor sets and the dependence of the annihilators on the product.
 - [Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.html), for the square-zero elements of the product and the index of nilpotency.
 - [Square Roots of One and the Idempotents of the General Quaternionic Algebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html), for the displacement of the plain idempotents into the nilpotents of the product.

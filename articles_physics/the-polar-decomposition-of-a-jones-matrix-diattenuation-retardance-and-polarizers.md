@@ -16,7 +16,7 @@ The article states the correspondence, computes the standard optical parameters 
 | The Cartan pairing $\tilde J=\tilde H\tilde U$, the positive factor and the unitary factor | [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html) |
 | The generalized pairing on the cone, the partial isometry and its projections | [The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone](../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html) |
 | The eigenvalue decomposition, the eigenprojections and the rank-one case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| The norm, the invertibility criterion and the zero-divisor cone | [Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, the invertibility criterion and the zero-divisor cone | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The unitary group and its matrix model | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The square root of a positive element | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 

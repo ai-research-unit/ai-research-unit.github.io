@@ -16,7 +16,7 @@ $$
 \tilde Q_1 \star \tilde Q_2 = \mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)\, e_t = \langle\tilde Q_1,\tilde Q_2\rangle_{*}\, e_t , \qquad \langle\tilde Q_1,\tilde Q_2\rangle_{*} = Q_{1t}\overline{Q_{2t}} + (\vec Q_1, \overline{\vec Q_2}) ,
 $$
 
-which is the **Hermitian form of the corpus read as a multiplication**. The block is therefore not a new bilinear form to be found but a known one put to a new use: the form $\langle\cdot,\cdot\rangle_{*}$ that carries the positivity of the Hermitian cone (*The Four Forms and the Four Algebraic Norms*, *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*) is here a product on the same space.
+which is the **Hermitian form of the corpus read as a multiplication**. The block is therefore not a new bilinear form to be found but a known one put to a new use: the form $\langle\cdot,\cdot\rangle_{*}$ that carries the positivity of the Hermitian cone (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*) is here a product on the same space.
 
 Three consequences organise the block, and they are the exact opposites of the quaternionic row. The product is **conjugate-commutative** rather than commutative, and it has **no unit** on either side. Its diagonal is **real and strictly positive off the origin**, so there is **no nonzero isotropic vector and no nonzero element of square zero**; the vanishing products are those of pairs orthogonal for $\langle\cdot,\cdot\rangle_{*}$, $e_\mu\star e_\nu = 0$ for $\mu\neq\nu$. And it **fails the Jordan identity**, with the witness $x = y = \vec e_x$: a symmetrisation of a sesquilinear product is not a Jordan product, and the block is a genuine operation of the sesqualgebra row and of no classical kind. This article owns the sixteen products of the basis, the square and its polarisation, the law, the absence of a unit, the failure of the Jordan identity and the placement of the block among the twelve.
 
@@ -99,7 +99,7 @@ so the squared map $\tilde Q \mapsto \tilde Q\star\tilde Q$ determines only the 
 
 *Proof.* Expand $\langle\tilde Q_1+\tilde Q_2,\tilde Q_1+\tilde Q_2\rangle_{*} = \langle\tilde Q_1,\tilde Q_1\rangle_{*} + \langle\tilde Q_1,\tilde Q_2\rangle_{*} + \langle\tilde Q_2,\tilde Q_1\rangle_{*} + \langle\tilde Q_2,\tilde Q_2\rangle_{*}$ and use $\langle\tilde Q_2,\tilde Q_1\rangle_{*} = \overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}}$, so that the middle two terms are $\langle\tilde Q_1,\tilde Q_2\rangle_{*} + \overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}} = 2\,\mathrm{Re}\,\langle\tilde Q_1,\tilde Q_2\rangle_{*}$.
 
-**Remark (a quadratic form of the sesquilinear kind).** The map $\tilde Q \mapsto \langle\tilde Q,\tilde Q\rangle_{*}e_t$ is a genuine quadratic form on the real space $\mathbb{B} \cong \mathbb{R}^{8}$, of signature $(8,0)$ and null set $\{0\}$ (*The Four Forms and the Four Algebraic Norms*). The block reads it as a square, and the square is the diagonal of the multiplication.
+**Remark (a quadratic form of the sesquilinear kind).** The map $\tilde Q \mapsto \langle\tilde Q,\tilde Q\rangle_{*}e_t$ is a genuine quadratic form on the real space $\mathbb{B} \cong \mathbb{R}^{8}$, of signature $(8,0)$ and null set $\{0\}$ (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*). The block reads it as a square, and the square is the diagonal of the multiplication.
 
 ## Conjugate-Commutativity and the Absence of a Unit
 
@@ -215,7 +215,7 @@ The symmetric plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2 = \
 
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the product that is split here and its two scalar rules.
 - [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the general construction of the two parts and the obstruction that keeps them in the class.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, its positivity and its Gram matrix.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, its positivity and its Gram matrix.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the cone that the diagonal of the block generates.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the row table and the placement of the block among the twelve.
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra.html), the commutative unital sibling, the one Jordan product of the twelve.

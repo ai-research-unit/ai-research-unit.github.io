@@ -22,13 +22,13 @@ $$
 \mathcal{N}=\{\tilde Q_2\in\mathbb{B}:\mathrm{Norm}(\tilde Q_2)=0\} ,
 $$
 
-the **generic norm** of *The Four Forms and the Four Algebraic Norms*, after *Conventions in Mathematics* §*The form convention and the norm convention*, the norm of the statement at hand. This article instantiates it by the reduced norm, $\mathrm{Norm}(\tilde Q_2)=Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}$. It is the common zero-divisor set of the four general products.
+the **generic norm** of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, after *Conventions in Mathematics* §*The form convention and the norm convention*, the norm of the statement at hand. This article instantiates it by the quaternionic norm, $\mathrm{Norm}(\tilde Q_2)=Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}$. It is the common zero-divisor set of the four general products.
 
 **Definition.** A subset of $\mathbb{B}$ is a **complex cone** when it contains $\lambda\tilde Q_2$ for every $\tilde Q_2$ it contains and every $\lambda\in\mathbb{C}$. Its **apex** is the origin.
 
 ### The Cone Is the Complement of the Group of Units
 
-The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the units, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
+The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the units, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
 
 $$
 \mathbb{B}=\{0\}\cup\mathbb{B}^{\times}\cup\bigl(\mathcal{N}\setminus\{0\}\bigr) .
@@ -80,7 +80,7 @@ $$
 
 The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{*}=\mathrm{Form}(\tilde Q_1,\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\tilde Q_1^{*})=|Q_{1t}|^{2}+|\vec Q_1|^{2}$, definite.
 
-**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The definite norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and cuts no cone. Then $\tilde Q_1\tilde Q_2^{*}$ is the plain product, whose form is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ and whose scalar at the two equal arguments is the reduced norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$, since $\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1)e_t=0$ on the cone.
+**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The definite norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and cuts no cone. Then $\tilde Q_1\tilde Q_2^{*}$ is the plain product, whose form is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ and whose scalar at the two equal arguments is the quaternionic norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$, since $\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1)e_t=0$ on the cone.
 
 The element $e_t$ is a right unit alone, $e_t\star\tilde Q_2=\tilde Q_2^{*}$, and an element off the cone has the two-sided solution $(\tilde Q_1^{-1})^{*}$ of the inverse equations; the invertible elements are the complement of the cone and, the product being non-associative, they form no group.
 
@@ -120,7 +120,7 @@ $$
 \mathrm{Form}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2) ,
 $$
 
-The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the reduced norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*.
+The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the quaternionic norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*.
 
 **The zero-divisor set is the enlarged set**
 
@@ -154,7 +154,7 @@ $$
 \mathrm{Form}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2) ,
 $$
 
-The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the reduced norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$.
+The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the quaternionic norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$.
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** The value is the central read of the form, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)e_t$; check on $\tilde Q_1=\tilde Q_2=\vec e_x$: $\tilde Q_1^{\natural}\tilde Q_1=e_t$, of scalar $1=0+1$. The form is nondegenerate, its matrix being the identity in the four coordinates, so for $\tilde Q_1\neq0$ the equation $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=0$ is one complex linear equation in the four components of $\tilde Q_2$ and its solutions fill a complex hyperplane of nonzero vectors.
 
@@ -287,9 +287,9 @@ The square of a pure zero divisor vanishes because $\tilde Q_2^{2}=-(Q_{2x}^{2}+
 
 The results above are the cone read inside the grid. The corpus proves five further statements about the cone that name no product, and they are gathered here because they are the cone's own geometry and topology rather than a property of any of the twelve.
 
-**One cone among four null sets.** The space carries four forms — the two bilinear $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ and the two sesquilinear $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ — and their null sets have four different shapes. $\langle\cdot,\cdot\rangle$ has the complex cone $\sum_\mu\varepsilon_\mu Q_{2,\mu}^{2}=0$ of real dimension six, $H$ is positive definite and has the origin alone, $\langle\cdot\rangle_{*}$ has the zero-divisor cone $\mathcal{N}$ of real dimension six, and $K$ is indefinite and has the **Krein cone** $\mathcal{K}$ of real dimension seven (*The Four Forms and the Four Algebraic Norms*, *The Krein Level Sets and the Hyperbolic Structure*). The two dimension-six null sets do not agree, so the cone of this article is the null set of $\langle\cdot,\cdot\rangle_{\natural}$ and of no other form.
+**One cone among four null sets.** The space carries four forms — the two bilinear $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ and the two sesquilinear $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ — and their null sets have four different shapes. $\langle\cdot,\cdot\rangle$ has the complex cone $\sum_\mu\varepsilon_\mu Q_{2,\mu}^{2}=0$ of real dimension six, the Hermitian form is positive definite and has the origin alone, $\langle\cdot\rangle_{*}$ has the zero-divisor cone $\mathcal{N}$ of real dimension six, and the Krein form is indefinite and has the **Krein cone** $\mathcal{K}$ of real dimension seven (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, *The Krein Level Sets and the Hyperbolic Structure*). The two dimension-six null sets do not agree, so the cone of this article is the null set of $\langle\cdot,\cdot\rangle_{\natural}$ and of no other form.
 
-On the remarkable subspaces the four null sets are cut to two shapes (*Remarkable Subspaces and the Four General Products, Forms and Norms*). On the centre all four vanish at the origin alone. On the vector subspace $B$ and $N$ vanish on the complex cone of real dimension four, the pure zero divisors, while $H$ and $K$ vanish at the origin. On the quaternion subspace $B$ and $K$ vanish on the real null cone of real dimension three. On each sector the two indefinite forms $\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ vanish on the null cone of real dimension three, while the two definite forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ vanish at the origin. The cone's real dimension therefore drops from six to four to three as the subspace shrinks, and at every stage the cone is carried by the indefinite forms alone.
+On the remarkable subspaces the four null sets are cut to two shapes (*Remarkable Subspaces and the Four General Products, Forms and Norms*). On the centre all four vanish at the origin alone. On the vector subspace the plain and the quaternionic forms vanish on the complex cone of real dimension four, the pure zero divisors, while the Hermitian and the Krein forms vanish at the origin. On the quaternion subspace the plain and the Krein forms vanish on the real null cone of real dimension three. On each sector the two indefinite forms $\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ vanish on the null cone of real dimension three, while the two definite forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ vanish at the origin. The cone's real dimension therefore drops from six to four to three as the subspace shrinks, and at every stage the cone is carried by the indefinite forms alone.
 
 **The cone as a topological space.** The full cone is contractible, its apex is its only singular point, and its link, the intersection with the unit sphere $S^{7}_{E}$, is a closed connected real five-manifold. The link is $S^{2}\times S^{3}$; equivalently it is an $S^{1}$-bundle over $\mathbb{P}^{1}\times\mathbb{P}^{1}\cong S^{2}\times S^{2}$, with $\pi_1=0$, $\pi_2\cong\mathbb{Z}$ and $\pi_3\cong\mathbb{Z}\oplus\mathbb{Z}$; the projectivised cone is the **Segre quadric**, whose two rulings are the two families of chiral null planes (*The Topology of the Zero-Divisor Cone*). On a Lorentzian slice the cone cuts the three-dimensional null cone, whose link is the disjoint union $S^{2}\sqcup S^{2}$, one sphere per nappe (*The Topology of the Zero-Divisor Cone*). The one cone carries two links, the complex one $S^{2}\times S^{3}$ and the real one $S^{2}\sqcup S^{2}$.
 
@@ -303,7 +303,7 @@ These five statements are not about the twelve products. They are about the one 
 
 ## The One-Sided Inverse Equations
 
-Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not a unit* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
+Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not a unit* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
 
 **Theorem (the inverse equations).** Let $\star$ be one of the four general products and let $\tilde Q_1\neq0$. Then $\tilde Q_1$ is a zero divisor of $\star$ exactly when neither of the two equations
 
@@ -328,7 +328,7 @@ This criterion uses the fixed element $e_t$, invariant under both conjugations, 
 
 ## Summary
 
-A zero divisor is defined by an equation that names a product, so the twelve products of the biquaternion algebra define twelve zero-divisor sets. For the four general products the sets coincide: for each of them, and for a nonzero element, being a left zero divisor, being a right zero divisor and lying on the cone are the same condition, the cone being the vanishing set of the norm $\mathrm{Norm}(\tilde Q_2)=\sum_\mu Q_{2,\mu}^{2}=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ of *The Four Forms and the Four Algebraic Norms*.
+A zero divisor is defined by an equation that names a product, so the twelve products of the biquaternion algebra define twelve zero-divisor sets. For the four general products the sets coincide: for each of them, and for a nonzero element, being a left zero divisor, being a right zero divisor and lying on the cone are the same condition, the cone being the vanishing set of the norm $\mathrm{Norm}(\tilde Q_2)=\sum_\mu Q_{2,\mu}^{2}=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 The common set is the zero-divisor set $\mathcal{N}\setminus\{0\}$, a complex cone with apex at the origin, smooth away from the apex, of complex dimension three and real dimension six, whose nonzero members are the rank-one elements of the matrix model and whose left ideals are the minimal left ideals. Its complement is the group of units together with the origin, and it splits by the scalar part into the pure family of the nilpotents, of real dimension four, and the non-pure family of the complex multiples of the nontrivial idempotents, which fills the cone in real dimension six.
 
@@ -343,8 +343,8 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 | $\star$ | one of the twelve products of $\mathbb{B}$; the four general products in the theorems |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products |
 | $\mathrm{Form}(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the general quaternionic bilinear form, the polar form of the norm |
-| $\mathrm{Norm}(\tilde Q_2)$ | the norm of the statement, written where a statement holds for all four norms; this article instantiates it by the reduced norm, $\mathrm{Norm}(\tilde Q_2)=Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}$ |
-| $\mathrm{Norm}(\tilde Q_2)=\sum_\mu Q_{2,\mu}^{2}$ | the reduced norm, the general quaternionic bilinear algebraic norm, the scalar of the central square $\tilde Q_2\tilde Q_2^{\natural}=\mathrm{Norm}(\tilde Q_2)e_t$ |
+| $\mathrm{Norm}(\tilde Q_2)$ | the norm of the statement, written where a statement holds for all four norms; this article instantiates it by the quaternionic norm, $\mathrm{Norm}(\tilde Q_2)=Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}$ |
+| $\mathrm{Norm}(\tilde Q_2)=\sum_\mu Q_{2,\mu}^{2}$ | the quaternionic norm, the general quaternionic bilinear algebraic norm, the scalar of the central square $\tilde Q_2\tilde Q_2^{\natural}=\mathrm{Norm}(\tilde Q_2)e_t$ |
 | $\mathcal{N}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)=0\}$ | the zero-divisor cone, of complex dimension three and real dimension six |
 | $\mathcal{N}\setminus\{0\}$ | the zero-divisor set of the four general products |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, where the central square lies |
@@ -360,9 +360,9 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 ## Further Reading
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general vocabulary: the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, each stated once for a general product.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the form $\langle\cdot,\cdot\rangle_{\natural}$ and the four algebraic norms read at the two equal arguments.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain-product criterion, the classification of the cone's elements and the parametrisation of the pure family.
-- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural}$ and the four algebraic norms read at the two equal arguments.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain-product criterion, the classification of the cone's elements and the parametrisation of the pure family.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the four general products and their symmetric and antisymmetric parts.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve names, the three letters of each and the class of each.
 - [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four idempotent sets of the four general products and their reading among the twelve.
@@ -370,7 +370,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 - [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two one-sided annihilators of one element of the cone and their relation by the conjugations.
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four square-zero sets and the twelve square-zero readings.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the isomorphism and the singular matrices.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general plain bilinear form and its isotropic cone.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general plain bilinear form and its isotropic cone.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces, the pure cone and the non-pure families.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the criterion $Q_{2t}=0$ or $\mathrm{Norm}(\tilde Q_2)=0$ of the enlarged set of $\mathrm{SPA}$.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same criterion of the enlarged set of $\mathrm{SQS}$ and its two families.

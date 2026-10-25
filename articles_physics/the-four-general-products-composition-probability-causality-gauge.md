@@ -12,14 +12,14 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The four products, their coordinate formulas and their scalar–vector forms | [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html) |
-| The property table, the two slots, the units, associativity and the scalar square | [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html) |
-| The identities linking the four products and the left multiplications | [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html) |
+| The four products, their coordinate formulas and their scalar–vector forms | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
+| The property table, the two slots, the units, associativity and the scalar square | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
+| The identities linking the four products and the left multiplications | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | The twelve products and the symmetric and antisymmetric halves | [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
-| The four forms, their Gram matrices, their signatures and their isometry groups | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
-| The four algebraic norms, multiplicativity, definiteness and the zero divisors | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
+| The four forms, their Gram matrices, their signatures and their isometry groups | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
+| The four algebraic norms, multiplicativity, definiteness and the zero divisors | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms to the two sectors and the remarkable subspaces | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| Invertibility, the zero-divisor cone and the unit group | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| Invertibility, the zero-divisor cone and the unit group | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The realification and its effect on the twelve products and the four forms | [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html) |
 
 ## The One Mechanism
@@ -49,7 +49,7 @@ The two slots are the two questions the rest of the article asks of the four. Th
 
 ### The Property Table
 
-The properties follow the slots, and one of them follows both at once. The table is the one of *The Four General Products and Their Relations*, with the entries that the readings use.
+The properties follow the slots, and one of them follows both at once. The table is the one of *The Four General Products and Their Relations over the Biquaternion Algebra*, with the entries that the readings use.
 
 | Property | $\tilde Q_1\tilde Q_2$ | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ |
 | --- | --- | --- | --- | --- |
@@ -93,8 +93,8 @@ The four forms are read on the material sector $\mathbb{M}_-$, the anti-Hermitia
 | Product | Slots | Form | Signature on $\mathbb{M}_-$ | Signature on $\mathbb{M}_+$ | Job |
 | --- | --- | --- | --- | --- | --- |
 | $\tilde Q_1\tilde Q_2$ | $(\mathrm{id},\mathrm{id})$ | $\langle\cdot,\cdot\rangle$ | $(0,4)$ | $(4,0)$ | composition |
-| $\tilde Q_1\tilde Q_2^{*}$ | $(\mathrm{id},{}^{*})$ | $\langle\cdot,\cdot\rangle_{*}$ | $(4,0)$ | $(4,0)$ | probability |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | $({}^{\natural},\mathrm{id})$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $(3,1)$ | $(1,3)$ | causality |
+| $\tilde Q_1\tilde Q_2^{*}$ | $(\mathrm{id},{}^{*})$ | $\langle\cdot,\cdot\rangle_{*}$ | $(4,0)$ | $(4,0)$ | probability |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $({}^{\natural},{}^{*})$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $(1,3)$ | $(1,3)$ | gauge |
 
 ## Interpretations
@@ -248,11 +248,11 @@ The physical identification of the material sector with spacetime and of the inf
 
 ## Further Reading
 
-- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html), for the four definitions and their scalar–vector forms.
-- [The Four General Products and Their Relations](../articles_maths/the-four-general-products-and-their-relations.html), for the property table, the two slots, the units, the scalar square and the failure of associativity.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four definitions and their scalar–vector forms.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the property table, the two slots, the units, the scalar square and the failure of associativity.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the symmetric and antisymmetric halves and the Jordan and Lie structures.
-- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) and [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four forms and their restrictions.
-- [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) and [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for multiplicativity, definiteness, invertibility and the zero-divisor cone.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) and [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four forms and their restrictions.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) and [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for multiplicativity, definiteness, invertibility and the zero-divisor cone.
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html), for the ten-to-twelve distinction.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors and the two jobs that live there.
 - [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the corresponding entry of this category.

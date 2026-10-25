@@ -33,7 +33,7 @@ with $\vec u_p=\vec p/\lvert\vec p\rvert$ and $\langle\tilde P\rangle_{\natural}
 | The four factors, their ranges and the uniqueness of the word | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
 | The boundary theorem, the two strata and the rate | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
 | The logarithm, the kernel and the exponential image | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
-| The norm, its multiplicativity and the group of units | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, its multiplicativity and the group of units | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The minimal idempotents and the pure roots of $+1$ | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | The nilpotents, their index and their square-zero property | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
 | The cone, its two strata and the mass shell | [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) |

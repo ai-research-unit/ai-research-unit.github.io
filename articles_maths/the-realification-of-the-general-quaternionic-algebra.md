@@ -49,7 +49,7 @@ the two shapes are the two criteria of §*The Realification of a Linear Map* of 
 
 ## The Realified Form
 
-The product carries the general quaternionic bilinear form, the scalar part of the general quaternionic product, quoted from *The Four Forms and the Four Algebraic Norms*:
+The product carries the general quaternionic bilinear form, the scalar part of the general quaternionic product, quoted from *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*:
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2).
 $$
@@ -144,7 +144,7 @@ Read over $\mathbb{R}$ the General Quaternionic Algebra is the same product on t
 
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the general construction, the two rules of the realification of a form and the table of the four effects.
 - [The Realification of the Eight Derived Structures](the-realification-of-the-eight-derived-structures.html), for the four realified Gram matrices, the four signatures and the realified null cones.
-- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html) and [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the twelve structures and the four forms of which this article is the real reading of one row.
+- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html) and [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the twelve structures and the four forms of which this article is the real reading of one row.
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html) and [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the complex reading of the product, its ring inventory and the left ideals, which the passage to $\mathbb{R}$ does not change.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the real reading of the ring itself, its trace form and its models $M_2(\mathbb{C})$, $M_4(\mathbb{C})_L$ and $\mathrm{Cl}^+_{1,3}(\mathbb{R})$, which are shared by the twelve products.
 - [The Isotropic Structure of the General Quaternionic Algebra](the-isotropic-structure-of-the-general-quaternionic-algebra.html), for the complex null cone of $\langle\cdot\rangle_{\natural}$, the zero divisors and the totally isotropic planes, which this article's realified cone strictly contains.

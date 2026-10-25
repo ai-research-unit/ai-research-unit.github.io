@@ -23,7 +23,7 @@ $$
 Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ its vacuum value. The conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vectors of the material sector.
-- Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*), and the sector conventions.
+- Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the sector conventions.
 - Companion article *Modules over the Biquaternion Algebra*, for the algebra as a complex algebra and its modules, whose $V$-modules are a different family from the rotation representations $D^{(l)}$ used here.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion and the fields $\vec E$ and $\vec H$.
 

@@ -8,15 +8,15 @@ $$
 N(\tilde Q)=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$
 
-the sector on which the reduced norm does not vanish and the vector square does. It is the difference of the spectral-degenerate cone and the null cone,
+the sector on which the quaternionic norm does not vanish and the vector square does. It is the difference of the spectral-degenerate cone and the null cone,
 
 $$
 \Sigma_{10}=\mathcal S\setminus\mathcal N,
 $$
 
-and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The Norm-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The Norm-Degenerate, Spectrally Regular Sector*.
+and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The Norm-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The Norm-Degenerate, Spectrally Regular Sector*.
 
-Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the reduced norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally degenerate** means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.
+Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally degenerate** means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.
 
 ## Definition and Characterisation
 
@@ -265,7 +265,7 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 |---|---|
 | $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
 | $\Sigma_{10}$ | the norm-regular, spectrally degenerate sector, this article |
-| $\mathcal N=\{N=0\}$ | the null cone of the reduced norm |
+| $\mathcal N=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\Sigma_{10}^{\mathrm{s}}=\mathbb{C}^\times e_t$ | the scalar line |
 | $\Sigma_{10}^{\mathrm{J}}$ | the Jordan part, $\vec\Upsilon\neq0$ |
@@ -278,7 +278,7 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 
 - [The Norm-Degenerate, Spectrally Degenerate Sector](the-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The Norm-Degenerate, Spectrally Regular Sector](the-norm-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the discriminant and the five zones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt N$ and the unit factor.

@@ -4,7 +4,7 @@
 
 The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space, the general plain sesquilinear product read as a multiplication, the operation of *Introduction to the General Plain Sesqualgebra*. This article studies the algebraic norm that the block carries and the invertibility that it does not.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the form is
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. For the block the form is
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr),
@@ -50,7 +50,7 @@ Consequently $e_t$ is a **right unit** of $\star$, it is **not** a left unit, an
 
 *Proof.* The first display is $\tilde Q\star e_t=\tilde Q e_t^{*}=\tilde Q e_t=\tilde Q$, and the second is $e_t\star\tilde Q=e_t\tilde Q^{*}=\tilde Q^{*}$. The left action of $e_t$ is the involution ${}^{*}$, which is not the identity because $\tilde Q^{*}\neq\tilde Q$ for an element with a nonzero vector part, for instance $\tilde Q=\vec e_x$, whose image is $\vec e_x^{*}=-\vec e_x$. A left unit $e$ would satisfy $e\star\tilde Q=\tilde Q$ for all $\tilde Q$, hence $e\tilde Q^{*}=\tilde Q$; at $\tilde Q=e_t$ this gives $e=e_t$, and then at $\tilde Q=\vec e_x$ it gives $e_t\star \vec e_x=-\vec e_x\neq \vec e_x$, a contradiction. So there is no left unit and no two-sided unit.
 
-**Remark (the reason is the derived-operation shape).** The second display is the identity that fixes the whole block: the row of $e_t$ is the involution, because the product is the derived operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ and the involution sits in the second slot. The right unit is the plain unit, unaffected, and the left action is twisted by the involution; the block is therefore **right-unital and not left-unital**, the mirror of the general quaternionic algebra, which is left-unital and not right-unital (*The Four General Products and Their Relations*).
+**Remark (the reason is the derived-operation shape).** The second display is the identity that fixes the whole block: the row of $e_t$ is the involution, because the product is the derived operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ and the involution sits in the second slot. The right unit is the plain unit, unaffected, and the left action is twisted by the involution; the block is therefore **right-unital and not left-unital**, the mirror of the general quaternionic algebra, which is left-unital and not right-unital (*The Four General Products and Their Relations over the Biquaternion Algebra*).
 
 **Corollary (no inverse, no group of units).** Since the block has no two-sided unit, no element has a two-sided inverse and the block has no group of units. The two-sided inverse of the block is not defined.
 
@@ -84,7 +84,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
-the general plain sesquilinear form of *The Four Forms and the Four Algebraic Norms*. The equation names the product: the algebraic norm is relative to the product, and the other three rows carry different quadratic maps on the same space.
+the general plain sesquilinear form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. The equation names the product: the algebraic norm is relative to the product, and the other three rows carry different quadratic maps on the same space.
 
 **Theorem (the square and the algebraic norm).** For every $\tilde Q$ the square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is Hermitian and its scalar part is the algebraic norm,
 
@@ -163,7 +163,7 @@ $$
 
 *Proof.* The first clause is the absence of a two-sided inverse. The equivalence is the positive definiteness: $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ is a sum of non-negative reals, vanishing exactly at the origin.
 
-**Remark (what replaces the criterion).** For the block the algebraic norm is definite, so it separates nothing: there is **no nonzero element of zero algebraic norm**, that is **no nonzero isotropic vector**. The one-sided inverse equations of §*The One-Sided Inverse Equations* have a solution for a proper set of elements, and its solvability is decided by a different quadratic form, not the algebraic norm of the block and not studied here. The block therefore carries an algebraic norm that is definite and an invertibility that the algebraic norm does not see, the exact mirror of the general plain algebra, whose algebraic norm $\langle\cdot\rangle$ is indefinite and does not decide invertibility either (*Norm Regularity and Degeneracy in the Biquaternion Algebra*).
+**Remark (what replaces the criterion).** For the block the algebraic norm is definite, so it separates nothing: there is **no nonzero element of zero algebraic norm**, that is **no nonzero isotropic vector**. The one-sided inverse equations of §*The One-Sided Inverse Equations* have a solution for a proper set of elements, and its solvability is decided by a different quadratic form, not the algebraic norm of the block and not studied here. The block therefore carries an algebraic norm that is definite and an invertibility that the algebraic norm does not see, the exact mirror of the general plain algebra, whose algebraic norm $\langle\cdot\rangle$ is indefinite and does not decide invertibility either (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*).
 
 **Corollary (no substitute group).** The block has no group of units and no subgroup of its own elements to play that role; what it does have is the set on which the one-sided equations are solvable, defined by a form not read here. The group that does exist is the group of the linear maps of $\mathbb{B}$ that preserve the algebraic norm $\langle\cdot\rangle_{*}$, read in *The Multiplication Operators of the General Plain Sesqualgebra* where the block has such an article.
 
@@ -208,12 +208,12 @@ real, positive definite of signature $(8,0)$, the general plain sesquilinear alg
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the product, the right unit and the involution in the second slot.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the relative definitions of the unit, the inverse and the group of units.
-- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the one-sided unit table of the four products.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{*}$ of this article.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the one-sided unit table of the four products.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{*}$ of this article.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the one-sided inverse equations and the common zero-divisor set.
 - [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the matrix model $\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}$ in which the block-square is positive semidefinite.
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html), for the image of the block-square and the cone it generates in the Hermitian subspace.

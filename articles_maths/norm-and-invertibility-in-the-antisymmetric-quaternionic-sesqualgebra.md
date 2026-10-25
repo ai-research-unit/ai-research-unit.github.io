@@ -11,7 +11,7 @@ $$
 
 the conjugate cross product, the antisymmetric half of the general quaternionic sesquilinear product, the operation $\mathrm{AQS}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
 Both notions of the title are therefore **absences**, and they fail for one reason: the unit of the parent algebra is a square-zero element of the block. The block has no unit on either side, so no element is invertible and the group of units is empty; the one-sided inverse equations to the centre have no solution. What replaces the invertibility is not a norm but an operator reading: the one-sided multiplication by an element has a kernel and an image, and the relative inverse below accounts for the loss on the quotient.
 
@@ -65,7 +65,7 @@ $$
 \varphi(\tilde Q_1)=\varphi(\tilde Q_1,\tilde Q_1)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_1),
 $$
 
-and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The Four Forms and the Four Algebraic Norms*).
+and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
 
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric quaternionic sesqualgebra,
 
@@ -113,7 +113,7 @@ So the equation $\tilde Q_3\diamond\tilde{Q}_2=\tilde W$ is solvable exactly for
 
 ## Summary
 
-The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ has no unit on either side, so no element of it is invertible and the group of units is empty; the unit of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The Four Forms and the Four Algebraic Norms* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the pure vector $\vec Q_1\times\overline{\vec Q_1}$, a value and not a norm. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{\natural*}$ of the parent quaternionic sesquilinear product is a different form of a different product and is not read here.
+The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ has no unit on either side, so no element of it is invertible and the group of units is empty; the unit of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the pure vector $\vec Q_1\times\overline{\vec Q_1}$, a value and not a norm. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{\natural*}$ of the parent quaternionic sesquilinear product is a different form of a different product and is not read here.
 
 ## Summary of Notation
 
@@ -130,10 +130,10 @@ The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
 - [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the operation, its class, its image and the absence of a unit.
-- [The Four General Products and Their Relations](the-four-general-products-and-their-relations.html), for the unit table of the four general products.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the unit table of the four general products.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the annihilator and the relative inverse of the block.
 - [Norm and Invertibility in the General Quaternionic Sesqualgebra](norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.html), for the algebraic norm $\langle\cdot\rangle_{\natural*}$ of the parent sesquilinear product, which is not the form of this block.
 - [The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra](the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.html), for the invariant forms of the block.

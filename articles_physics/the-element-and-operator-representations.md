@@ -20,7 +20,7 @@ The article is a reader and owns no new theorem. Each result is stated in a sent
 | The sandwich, its spectrum, determinant, trace and rank | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), §*The Sandwich in the Regular Basis*, for the matrix, the determinant and the trace; [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html), §*The Spectrum of the Sandwich*, for the spectrum, and §*The Null Cone*, for the rank |
 | The module structure and the Hilbert structure of the spinor space | [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html) |
 | The rotor action on the two sectors and the double cover | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
-| The coefficient dictionary of the two sectors | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
+| The coefficient dictionary of the two sectors | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 
 ## Five Pictures of One Element
 

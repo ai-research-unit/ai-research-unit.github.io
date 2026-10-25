@@ -4,7 +4,7 @@
 
 This article studies the algebraic norm that the symmetric plain algebra, the biquaternion space under the Jordan product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*, carries, and the invertibility of its elements.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms*. The symmetrisation keeps the scalar part of a product, so the block carries the algebraic norm of the general plain bilinear product, the general plain bilinear algebraic norm
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. The symmetrisation keeps the scalar part of a product, so the block carries the algebraic norm of the general plain bilinear product, the general plain bilinear algebraic norm
 
 $$
 \langle\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde Q\bullet\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
@@ -32,7 +32,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(\tilde Q_1\bullet\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2\bigr)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 $$
 
-which is the general plain bilinear form of *The Four Forms and the Four Algebraic Norms*. The symmetrisation does not change the scalar part, so the block carries the algebraic norm of the general plain bilinear product; the form and its diagonal are of the same letter.
+which is the general plain bilinear form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. The symmetrisation does not change the scalar part, so the block carries the algebraic norm of the general plain bilinear product; the form and its diagonal are of the same letter.
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -40,7 +40,7 @@ which is the general plain bilinear form of *The Four Forms and the Four Algebra
 - $\langle\cdot\rangle$ is **homogeneous of degree two**, $\langle\lambda\tilde Q\rangle=\lambda^{2}\langle\tilde Q\rangle$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $\langle\tilde Q_1+\tilde Q_2\rangle-\langle\tilde Q_1\rangle-\langle\tilde Q_2\rangle=2\langle\tilde Q_1,\tilde Q_2\rangle$.
 - $\langle\cdot\rangle$ is **not positive definite** and **not definite**.
 - Its Gram matrix on the basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and the realification of $\langle\cdot\rangle$ is non-degenerate of signature $(4,4)$ on $\mathbb{B}\cong\mathbb{R}^{8}$.
-- Its **vanishing set** is the complex cone $\{\langle\tilde Q\rangle=0\}$, the complex quadric of *The Four Forms and the Four Algebraic Norms*, and not the zero-divisor set of the block.
+- Its **vanishing set** is the complex cone $\{\langle\tilde Q\rangle=0\}$, the complex quadric of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and not the zero-divisor set of the block.
 
 ## The Algebraic Norm Is Not Multiplicative
 
@@ -109,8 +109,8 @@ The block is commutative and unital, with the unit $e_t$, and it is not associat
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the general plain bilinear form $\langle\cdot,\cdot\rangle$ and the table of the four forms.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general plain bilinear form $\langle\cdot,\cdot\rangle$ and the table of the four forms.
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra.html), for the product, its unit, its commutativity and its non-associativity.
 - [The Trace Form and the Invariance of the Symmetric Plain Algebra](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra.html), for the form the algebraic norm polarises.
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html), for the invertibility the block does have, carried by a different quadratic form.

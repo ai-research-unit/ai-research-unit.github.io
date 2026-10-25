@@ -44,7 +44,7 @@ The vector part carries the **complex norm**
 $$
 B=\sqrt{Q_x^2+Q_y^2+Q_z^2},
 $$
-a fixed square root of the value of the complex quadratic form on $\vec Q$ (*Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Quaternionic Norm*), and, when $B\neq0$, the **axis**
+a fixed square root of the value of the complex quadratic form on $\vec Q$ (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Quaternionic Norm*), and, when $B\neq0$, the **axis**
 $$
 \vec Q=B\vec U,\qquad \vec U=\frac{\vec Q}{B},\qquad \vec U^2=-e_t.
 $$
@@ -69,7 +69,7 @@ The eigenvalues are distinct in the oscillatory regime and coincide in the nilpo
 
 ### The Regimes
 
-The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$ and $\vec Q\neq0$, i.e. when $B = 0$ and $\vec Q\neq0$; the criterion is in *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*. The square root splits the discussion into two cases:
+The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$ and $\vec Q\neq0$, i.e. when $B = 0$ and $\vec Q\neq0$; the criterion is in *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*. The square root splits the discussion into two cases:
 
 - **Oscillatory regime:** $B \neq 0$. The vector part is not a zero divisor, and it can be normalized to a root of $-1$. The powers of $\vec Q$ alternate, as in the quaternion case.
 - **Nilpotent regime:** $B = 0$. The vector part is nilpotent, and $\vec Q^2 = 0$; when $\vec Q\neq0$ it is a pure zero divisor. The powers of $\vec Q$ truncate after the first.

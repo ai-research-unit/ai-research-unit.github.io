@@ -162,5 +162,5 @@ parent into one plane.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the operation and its table.
 - [Zero Divisors of the General Plain Sesqualgebra](zero-divisors-of-the-general-plain-sesqualgebra.html), above this article in this category, for the criterion and the two families.
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), the parent, whose two annihilators are distinct.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), §*The Annihilators*, for the plain product, whose two annihilators are distinct.
 - [Annihilators of the General Quaternionic Sesqualgebra](annihilators-of-the-general-quaternionic-sesqualgebra.html), the sibling whose two sides are distinct again.

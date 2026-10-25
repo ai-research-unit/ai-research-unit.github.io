@@ -23,8 +23,8 @@ The article owns no theorem. It states the algebraic classification, with its so
 | The root sets of the twelve products and the four existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The roots of $0$ and the nilpotents | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
 | The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
-| The norm, its multiplicativity and the inverse | [Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
-| The four forms and the interval | [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms.html) |
+| The norm, its multiplicativity and the inverse | [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The four forms and the interval | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The $2\times2$ matrix model and the eigenvalues of the mass operator | [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 
 ## The Root Problem by Band
@@ -286,7 +286,7 @@ The root problem $\tilde\Xi^2=\tilde Q$ is band-dependent. In the plain band the
 - [Roots, Idempotents and Quantum Information](roots-idempotents-and-quantum-information.html), for the idempotent structure of the qubit.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the massless shell.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-momentum and the interval.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the norm as the mass shell.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the norm as the mass shell.
 - [The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form](the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html), for the pole and the four prescriptions.
 - [The Petiau System and the Quantisation of Mass in Biquaternionic Form](the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html), for the mass field and the eigenvalue equation.
 - [The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html), for the condensate.

@@ -181,6 +181,36 @@ one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ 
 
 **Worked example.** For $\tilde{Q}=\vec e_y+i\vec e_z$ the image is $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.
 
+### The Scalar Part as the Contraction
+
+The rank-one form also reads the scalar part.
+
+**Theorem (the scalar part is the contraction).** For a non-zero null $\tilde{Q}$ with $\mathsf{M}_2(\tilde{Q})=uv^{\mathsf T}$,
+
+$$
+Q_t=\tfrac12\,v^{\mathsf T}u .
+$$
+
+*Proof.* $\operatorname{tr}(uv^{\mathsf T})=v^{\mathsf T}u$, while $\operatorname{tr}\mathsf{M}_2(\tilde{Q})=2Q_t$ (§*Trace, Determinant and the Biquaternion Norm*).
+
+**Corollary (the trace-free stratum).** For a non-zero null element the scalar part vanishes exactly when the two factors are orthogonal for the bilinear pairing,
+
+$$
+Q_t=0\iff v^{\mathsf T}u=0 .
+$$
+
+The trace-free null elements are the pure stratum of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, and the remaining ones are the non-pure stratum.
+
+**Corollary (the square).** For $\mathsf{M}_2(\tilde{Q})=uv^{\mathsf T}$,
+
+$$
+\mathsf{M}_2(\tilde{Q})^2=u\,(v^{\mathsf T}u)\,v^{\mathsf T}=(v^{\mathsf T}u)\,\mathsf{M}_2(\tilde{Q}),
+$$
+
+so $\mathsf{M}_2(\tilde{Q})^2=0$ exactly when $v^{\mathsf T}u=0$, that is exactly when $Q_t=0$. This is the identity $\tilde{Q}^2=2Q_t\tilde{Q}$ in matrix form: the square is a multiple of the element, and the multiplier is the contraction of the two factors. When the multiplier is non-zero, $\tilde{Q}/(2Q_t)$ is a non-trivial idempotent.
+
+**Remark (spinor and cospinor).** The column $u$ is the spinor factor and the row $v^{\mathsf T}$ its dual, the cospinor factor; the scalar part is their contraction. This is the rank-one form of the column-spinor reading of §*The Ideals as Columns and the Spinor Module*.
+
 ## The General Plain Bilinear Form in the Model
 
 The trace identity of §*Trace, Determinant and the Biquaternion Norm* is a pairing of the algebra, and this is its name.
@@ -201,7 +231,7 @@ $$
 
 **The Gram matrix, the congruence and the signature.** In the coefficient basis the Gram matrix of $B$ is the sign matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, and a change of basis of matrix $S$ replaces it by $S^{\mathsf T}\mathrm{E}S$; over $\mathbb{C}$ the form is determined up to congruence by its rank alone, every non-degenerate complex quadratic form of rank $4$ being equivalent to this one. The plain product is what puts the sign matrix $\mathrm{E}$, and not $\mathrm{I}_4$, in the coefficient basis. Over $\mathbb{R}$ the form has signature $(4,4)$ on the eight real coordinates, and it is indefinite.
 
-**The null set.** The pairing vanishes on the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$, a complex cone of real dimension $6$ in $\mathbb{R}^8$, with two families of isotropic planes. It is the null set of neither the determinant nor the general quaternionic bilinear form; the quadric, its isotropic planes, the hyperbolic splitting and the index are *The Four Forms and the Four Algebraic Norms*.
+**The null set.** The pairing vanishes on the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$, a complex cone of real dimension $6$ in $\mathbb{R}^8$, with two families of isotropic planes. It is the null set of neither the determinant nor the general quaternionic bilinear form; the quadric, its isotropic planes, the hyperbolic splitting and the index are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 **The automorphisms.** A matrix preserves the trace pairing exactly when $T^{\mathsf T}\mathrm{E}T=\mathrm{E}$, so on the coefficients the automorphism group is $\{T\in GL_4(\mathbb{C}):T^{\mathsf T}\mathrm{E}T=\mathrm{E}\}=O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, its Lie algebra $\{X:X^{\mathsf T}\mathrm{E}+\mathrm{E}X=0\}$ being of real dimension $12$. The real structures exhibit the real forms: the Hermitian conjugation is an antilinear form reversal whose fixed space is the Hermitian subspace, of restriction signature $(4,0)$, so the automorphisms commuting with it form the real orthogonal group $O(4)$; the coefficient conjugation has fixed space the quaternion subspace, of signature $(1,3)$, exhibited by $O(1,3)$. The group of real-linear automorphisms of the realified form is the larger $O(4,4)$, which is not the group the form defines over $\mathbb{C}$. On the matrices the conjugation $M\mapsto UMU^{-1}$ by a unit and the transposition $M\mapsto M^{\mathsf T}$ are automorphisms, since $\operatorname{Tr}(UMU^{-1}\cdot UNU^{-1})=\operatorname{Tr}(MN)$ and $\operatorname{Tr}(M^{\mathsf T}N^{\mathsf T})=\operatorname{Tr}(MN)$; the inner automorphisms and the transposition together form a proper subgroup of the full group $O_4(\mathbb{C})$.
 
@@ -555,7 +585,7 @@ Read as a **phase fibre**, the unit spinors of the representation are the three-
 The matrix representation of the biquaternion algebra is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ given by $\mathsf{M}_2(e_t) = I_2$ and the three basis matrices asserted above, with $\mathsf{M}_2(i) = i\,\mathsf{M}_2(e_t)$ on the central scalar. The images of the Hermitian units, $\mathsf{M}_2(i\vec e_k) = i\,\mathsf{M}_2(\vec e_k)$, are the three Hermitian basis matrices named in the remark above.
 
 - The signs are forced: $\vec e_k^2 = -e_t$ requires the factor $i$, and $\vec e_x\vec e_y = +\vec e_z$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.
-- The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_t$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ all follow.
+- The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_t$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ all follow; the scalar part is the contraction $\tfrac12 v^{T}u$ of the two rank-one factors.
 - The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_te_t \mapsto Q_t\mathsf{M}_2(e_t)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_t - iq_3$, $w = -iq_1 - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_t)^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_te_t + iq'_k\vec e_k$ mapped to a Hermitian matrix, $\det = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 = c^2(t')^2 -(x'^2+y'^2+z'^2)$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_te_t + q_k\vec e_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2$, the interval of signature $(3,1)$). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
 - The minimal left ideals are the matrix **columns**: $\tilde\Pi_\pm = \tfrac12(e_t \pm i\vec e_z)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \mathsf{M}_2(-\vec e_y)$. Hermitian conjugation is the conjugate transpose and $\flat = -{}^{*}$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.

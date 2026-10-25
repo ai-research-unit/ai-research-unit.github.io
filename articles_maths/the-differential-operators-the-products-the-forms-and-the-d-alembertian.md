@@ -7,8 +7,8 @@ article walks that section in its own order: the subscripts, the prime, the two 
 products read on the gradient, each with its product, its symmetric and antisymmetric parts, its form and its norm. Nothing is
 proved here. Every statement restates the convention or an article that owns it, and every owner is cited where it is used.
 
-The four general products are *The Four General Products and Their Relations*, among the twelve operations of
-*Symmetric and Antisymmetric Decomposition of the Four General Products*; their four scalar parts are *The Four Forms and the Four Algebraic Norms*; the four norms are *The Four Forms and the Four Algebraic Norms*; and the gradient, its
+The four general products are *The Four General Products and Their Relations over the Biquaternion Algebra*, among the twelve operations of
+*Symmetric and Antisymmetric Decomposition of the Four General Products*; their four scalar parts are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; and the gradient, its
 conjugate and the d'Alembertian are developed at length in *Biquaternion Analysis*, §*The Differential Operators*.
 
 ## Conventions for Derivation
@@ -171,7 +171,7 @@ $$
 $$
 
 **This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, an operator on the whole algebra, one and
-the same before any sector is named (*The Four Forms and the Four Algebraic Norms*). The coordinates $Q_\mu$
+the same before any sector is named (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*). The coordinates $Q_\mu$
 are those of the algebra and are complex in general; the operator is $\partial^2/\partial Q_t^2+\Delta_Q$ whatever the sector, and
 it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box\tilde Q_{\mathrm f}=\sum_\mu(\Box Q_{\mathrm{f}\mu})e_\mu$. It is the identity above, and not the relation $Q_t=iq'_t$, that fixes it, and **no article of the corpus defines a second d'Alembertian**; no
 mass-term sign is left to a local convention.
@@ -363,7 +363,7 @@ conventions this article re-states
 length
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html),
 for the twelve operations and the four general products
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four forms and their signatures
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four norms as the diagonals of the forms
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms and their signatures
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four norms as the diagonals of the forms
 - [Remarkable Subspaces and the Analysis](remarkable-subspaces-and-the-analysis.html), for the operator of the
 norm read on each remarkable subspace

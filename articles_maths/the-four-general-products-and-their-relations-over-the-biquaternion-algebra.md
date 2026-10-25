@@ -1,4 +1,4 @@
-# __The Four General Products and Their Relations__
+# __The Four General Products and Their Relations over the Biquaternion Algebra__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This article does three things. It defines the four on the coordinates, each wit
 
 The four are also one rule with a conjugation inserted in each slot. The two insertions commute, the four readings form a group $\mathbb{Z}_2\times\mathbb{Z}_2$, and the reading of the group on a general algebra gives the slot family, whose second slot governs the composition and whose first slot governs the form. That construction, the group and the table of the slots are *Introduction to the Operators of the Biquaternion Algebra*, §*The Four Readings and Their Group*.
 
-The article assumes the algebra, the element, the basis and the four conjugations from *The Biquaternion Algebra and Its Vector Spaces*. The forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms*; the split of each general product into a symmetric and an antisymmetric part is *Symmetric and Antisymmetric Decomposition of the Four General Products*; the restrictions to the remarkable subspaces are *Remarkable Subspaces and the Four General Products, Forms and Norms*.
+The article assumes the algebra, the element, the basis and the four conjugations from *The Biquaternion Algebra and Its Vector Spaces*. The forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the split of each general product into a symmetric and an antisymmetric part is *Symmetric and Antisymmetric Decomposition of the Four General Products*; the restrictions to the remarkable subspaces are *Remarkable Subspaces and the Four General Products, Forms and Norms*.
 
 ## The Four General Products
 
@@ -340,6 +340,30 @@ $$
 
 which is $\mathbb{C}$-linear in $\tilde Q_3$; every left multiplication of the ${}^{*}$-product is conjugate-linear, so the composition is not one of them, and the left multiplications of the ${}^{*}$-product do not form a monoid. The same computation with $\overline{\tilde Q}_1$ in place of $\tilde Q_1$ settles the fourth operation, whose left multiplications are the conjugates of the right multiplications of the general plain bilinear product: the composition of two of them is linear and the class is not closed.
 
+## The Annihilators
+
+**Definition.** The left and the right annihilator of $\tilde Q$ in the general plain bilinear product are the kernels of its left and right multiplications of §*The Left Multiplications*,
+
+$$
+A(\tilde Q)=\{\tilde X:\tilde Q\tilde X=0\}=\ker L_{\tilde Q},\qquad
+B(\tilde Q)=\{\tilde X:\tilde X\tilde Q=0\}=\ker R_{\tilde Q}.
+$$
+
+**Theorem (the trichotomy).** The quaternionic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ separates the elements into three classes, and the dimension of the annihilator is the same on both sides:
+
+$$
+\tilde Q=0:\ \dim A=\dim B=4;\qquad
+\langle\tilde Q\rangle_{\natural}\neq0:\ \dim A=\dim B=0;\qquad
+\tilde Q\neq0,\ \langle\tilde Q\rangle_{\natural}=0:\ \dim A=\dim B=2.
+$$
+
+*Proof.* At the origin both translations vanish. For a unit both are bijections. For a non-zero null element the image of $L_{\tilde Q}$ is the left ideal $\tilde Q\mathbb{B}$, non-zero and proper, since $\tilde Q\tilde X=e_t$ has no solution by the norm criterion (*Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Cases*); a non-zero proper left ideal is minimal and a complex plane (*Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals*), so the kernel has dimension $4-2=2$. The right side is the same.
+
+**Proposition (two planes, not one).** On the punctured null cone the two annihilators are distinct complex planes whose intersection is the line $\mathbb{C}\tilde Q^{\natural}$.
+
+*Proof.* Both contain $\tilde Q^{\natural}$, since $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=0$, and both have dimension $2$; they are not equal, because for $\tilde Q=e_t+i\vec e_x$ the element $\tilde X=(e_t-i\vec e_x)\vec e_y/2$ lies in $A(\tilde Q)$ and not in $B(\tilde Q)$.
+
+**Remark (the four products).** An annihilator is the kernel of a left multiplication, so the formulas of §*The Left Multiplications* give the annihilators of the other three products as plain annihilators of conjugated elements: $\ker L^{*}_{\tilde Q}=B(\tilde Q^{*})$, $\ker L^{\natural}_{\tilde Q}=A(\tilde Q^{\natural})$ and $\ker L^{\natural*}_{\tilde Q}=B(\bar{\tilde Q})$. In particular the two annihilators of the ${}^{\natural}$-product coincide, the natural conjugation being a $\mathbb{C}$-linear anti-automorphism of order two (*Annihilators of the General Quaternionic Algebra*, §*The Two Annihilators Coincide*); in the plain product they are genuinely two.
 
 ## The Restriction to the Quaternion Subspace
 
@@ -473,6 +497,8 @@ The conjugation in a slot separates the scalar part of that factor from its vect
 
 The comparison gives the property table. Each of the four is $\mathbb{C}$-linear in the first argument; the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear in the second, the two products carrying the star are conjugate-linear there. The general plain bilinear product is associative, has the two-sided unit $1$, is alternative, flexible and satisfies the degree-three identity, and its left multiplications form a monoid. The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, has the left unit $1$ alone, and fails associativity, the alternative identities, flexibility and the degree-three identity, as do the two sesquilinear products, which have no identity and whose left multiplications do not form a monoid. The left multiplications of the four are the plain ones read through the conjugations: $L^{*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\tilde Q_1^{*}}$, $L^{\natural}_{\tilde Q_1}=L_{\tilde Q_1^{\natural}}$ and $L^{\natural*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\bar{\tilde Q}_1}$.
 
+The annihilators are the kernels of these multiplications: the plain ones have dimension $4$ at the origin, $0$ at a unit and $2$ on the punctured cone, where the left and the right annihilator are distinct planes meeting in the line $\mathbb{C}\tilde Q^{\natural}$; the annihilators of the other three products are plain annihilators of conjugated elements, and those of the ${}^{\natural}$-product coincide.
+
 Exactly one of the four is a multiplication of an associative unital $\mathbb{C}$-algebra, the general plain bilinear product; the ${}^{\natural}$-product is $\mathbb{C}$-bilinear but neither associative nor two-sidedly unital. The two products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$; among them the general plain sesquilinear product is the derived operation of $\mathbb{B}$ with its involution and has $e_t$ as a right unit, while the general quaternionic one has neither property.
 
 The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tilde Q)=Q_t^2-(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^2$, $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+(\vec Q,\vec Q)$ and $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$, and only the ${}^{\natural}$-square is a scalar element, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; the idempotents and the roots that follow from them are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the square-roots article of each of the other three products.
@@ -495,16 +521,18 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 | $\mathrm{Sc}$, $\mathrm{Vec}$ | the scalar part and the vector part of an element |
 | $L_{\tilde Q_1}$, $R_{\tilde Q_1}$ | the left and right multiplications of the general plain bilinear product |
 | $L^{\natural}_{\tilde Q_1}$, $L^{*}_{\tilde Q_1}$, $L^{\natural*}_{\tilde Q_1}$ | the left multiplications of the three other products |
+| $A(\tilde Q)=\ker L_{\tilde Q}$, $B(\tilde Q)=\ker R_{\tilde Q}$ | the left and the right annihilator of the general plain bilinear product |
 | $\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace, the elements with real coefficients |
-| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the reduced norm, the scalar part of the ${}^{\natural}$-square |
+| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the quaternionic norm, the scalar part of the ${}^{\natural}$-square |
 
 ## Further Reading
 
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the element, the basis and the four conjugations.
 - [Introduction to the Operators of the Biquaternion Algebra](the-four-general-products-and-operators.html), for the four readings, the group they form, the slot family and the table of the slots.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the four scalar parts as forms and their diagonals as algebraic norms.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four scalar parts as forms and their diagonals as algebraic norms.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products and the two halves of each general product.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four products read on the remarkable subspaces.
 - [Remarkable Subspaces and the Two General Products](remarkable-subspaces-and-the-two-general-products.html), for the same reading in the algebra over the real scalars.
 - [Algebras: A General Introduction](algebras-a-general-introduction.html) and [Non-Associative Algebras and the Property Ladder](non-associative-algebras-and-the-property-ladder.html), for the algebra axioms and the identities of the table.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html) and [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the three other products read as multiplications in their own structures.
+- [Annihilators of the General Quaternionic Algebra](annihilators-of-the-general-quaternionic-algebra.html), for the annihilators of the ${}^{\natural}$-product, which coincide.

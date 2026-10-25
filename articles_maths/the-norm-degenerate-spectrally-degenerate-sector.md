@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The reduced norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal{N}$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $N\neq0$ and $i=0$ if $N=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The quaternionic norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal{N}$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $N\neq0$ and $i=0$ if $N=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
 
 The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §*The Sector and Its Three Descriptions*: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.
 
-**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $N=0$ and $B^2=0$.
+**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $N=0$ and $B^2=0$.
 
 ## The Sector and Its Three Descriptions
 
@@ -32,7 +32,7 @@ $$
 
 separates the central and the vector parts, so $\tilde Q^2=0$ exactly when $Q_t^2=B^2$ and $Q_t\vec Q=0$. If $Q_t\neq0$, the second equation gives $\vec Q=0$, hence $B^2=0$, hence $Q_t^2=0$, a contradiction. Therefore $Q_t=0$, and then $B^2=0$. Conversely, $Q_t=0$ and $B^2=0$ give $\tilde Q^2=-B^2e_t=0$. This proves (ii) $\iff$ (iii). For (i), $N=0$ with $Q_t=0$ gives $B^2=0$; conversely $N=0$ with $B^2=0$ gives $Q_t^2=0$, hence $Q_t=0$.
 
-**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal{N}_{\mathrm p}$ of the null cone of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal{N}_{\mathrm p}$; the sector is that cone with its apex adjoined.
+**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal{N}_{\mathrm p}$ of the null cone of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal{N}_{\mathrm p}$; the sector is that cone with its apex adjoined.
 
 ## Geometry
 
@@ -52,7 +52,7 @@ $$
 \tilde Q=r(\vec u+i\vec u_\perp),\qquad r\ge0,\quad \vec u\ \text{a real unit vector},\quad \vec u_\perp\ \text{a real unit vector perpendicular to}\ \vec u,
 $$
 
-the origin occurring at $r=0$. The count is $1+2+1=4$ real parameters, in agreement with the dimension. This is the parametrisation of the pure stratum of *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*, with $r=0$ added.
+the origin occurring at $r=0$. The count is $1+2+1=4$ real parameters, in agreement with the dimension. This is the parametrisation of the pure stratum of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Strata*, with $r=0$ added.
 
 **Scheme-theoretic form.** As a scheme, the intersection of the two cones is defined by
 
@@ -122,7 +122,7 @@ The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is no
 
 ## Multiplication
 
-**The sector is not closed under the product.** The reduced norm is multiplicative, so $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)=0$ for $\tilde P,\tilde Q\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is
+**The sector is not closed under the product.** The quaternionic norm is multiplicative, so $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)=0$ for $\tilde P,\tilde Q\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is
 
 $$
 (\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z,
@@ -231,7 +231,7 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 |---|---|
 | $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
 | $\Sigma_{00}$ | the doubly degenerate sector, this article |
-| $\mathcal{N}=\{N=0\}$ | the null cone of the reduced norm |
+| $\mathcal{N}=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathcal{N}_{\mathrm p}$ | the pure stratum of the null cone, $\Sigma_{00}\setminus\{0\}$ |
 | $\vec\Upsilon$ | a non-zero pure vector with $\vec\Upsilon^2=0$ |
@@ -242,9 +242,9 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 
 ## Further Reading
 
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the null cone, its pure and non-pure strata, and the annihilator planes.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone and its pure and non-pure strata.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the spectral-degenerate cone, the two cases, the degenerate regimes and the independence of the two cones.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
-- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the place of $N$ among the four norms and of $B^2$ outside them.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $N$ among the four norms and of $B^2$ outside them.
 - [The Norm-Degenerate, Spectrally Regular Sector](the-norm-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.

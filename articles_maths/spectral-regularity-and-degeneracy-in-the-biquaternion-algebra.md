@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The biquaternion algebra carries two quadratic conditions. The first is the reduced norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$. Its zero locus is the null cone of the reduced norm; the norm is multiplicative and decides invertibility: that is *Norm Regularity and Degeneracy in the Biquaternion Algebra*. The second is $B^2$ itself, the square of the vector part. Its zero locus is the **spectral-degenerate cone** $\mathcal S$; the cone is not multiplicative, and it decides whether the two eigenvalues of the element can be told apart.
+The biquaternion algebra carries two quadratic conditions. The first is the quaternionic norm $\langle\tilde Q\rangle_{\natural}=Q_t^2+R^2$, with $R^2=Q_x^2+Q_y^2+Q_z^2$. Its zero locus is the null cone of the quaternionic norm; the norm is multiplicative and decides invertibility: that is *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*. The second is $R^2$ itself, the square of the vector part. Its zero locus is the **spectral-degenerate cone** $\mathcal S$; the cone is not multiplicative, and it decides whether the two eigenvalues of the element can be told apart.
 
-The article states the eigenvalue problem without a module or an acting operator. An eigenvalue is a scalar for which a left ideal is proper, an eigenvector is an element of a left annihilator, and a spectral idempotent is a Peirce idempotent adapted to the element. On that vocabulary the spectral criterion is proved: $\lambda$ is an eigenvalue of $\tilde Q$ exactly when $N(\tilde Q-\lambda e_t)=0$. The characteristic polynomial follows, with discriminant $-4B^2$, and the degenerate side $\mathcal S$ is stratified into three regimes: scalar, Jordan and nilpotent. The adapted Peirce decomposition is shown to exist exactly on the non-scalar side where $B^2\neq0$, and to fail on the Jordan and nilpotent regimes. The last sections show that the two degeneration loci are independent: a zero divisor can have distinct eigenvalues, and a unit can have a repeated one. They also give the two operator readings of the cones: the sandwich is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone.
+The article states the eigenvalue problem without a module or an acting operator. An eigenvalue is a scalar for which a left ideal is proper, an eigenvector is an element of a left annihilator, and a spectral idempotent is a Peirce idempotent adapted to the element. On that vocabulary the spectral criterion is proved: $\lambda$ is an eigenvalue of $\tilde Q$ exactly when $\langle\tilde Q-\lambda e_t\rangle_{\natural}=0$. The characteristic polynomial follows, with discriminant $-4R^2$, and the degenerate side $\mathcal S$ is stratified into three regimes: scalar, Jordan and nilpotent. The adapted Peirce decomposition is shown to exist exactly on the non-scalar side where $R^2\neq0$, and to fail on the Jordan and nilpotent regimes. The last sections show that the two degeneration loci are independent: a zero divisor can have distinct eigenvalues, and a unit can have a repeated one. They also give the two operator readings of the cones: the sandwich is singular exactly on the null cone, and the inner derivation is nilpotent exactly on the spectral-degenerate cone.
 
-**Scope and naming.** The two problems are the two quadratic problems of the algebra. The norm problem asks whether the element can be inverted; its degeneration locus is the null cone $\mathcal{N}=\{N=0\}$. The spectral problem asks whether the two eigenvalues can be separated; its degeneration locus is $\mathcal S=\{B^2=0\}$. Three naming rules are held throughout. First, $\mathcal{N}$ is the **null cone of the reduced norm**, qualified at first use, and then the null cone. Second, $\mathcal S$ is the **spectral-degenerate cone** and is never called a null cone: $B^2$ is the square of the vector part, not a norm on $\mathbb{B}$, so $\mathcal S$ is not the null cone of a norm on the algebra. Third, unqualified **regular** means **spectrally regular**, that is $B^2\neq0$; the companion article's regular side, the unit group, is written **norm-regular** wherever the two could collide.
+**Scope and naming.** The two problems are the two quadratic problems of the algebra. The norm problem asks whether the element can be inverted; its degeneration locus is the null cone $\mathcal{N}=\{\langle\cdot\rangle_{\natural}=0\}$. The spectral problem asks whether the two eigenvalues can be separated; its degeneration locus is $\mathcal S=\{R^2=0\}$. Three naming rules are held throughout. First, $\mathcal{N}$ is the **null cone of the quaternionic norm**, qualified at first use, and then the null cone. Second, $\mathcal S$ is the **spectral-degenerate cone** and is never called a null cone: $R^2$ is the square of the vector part, not a norm on $\mathbb{B}$, so $\mathcal S$ is not the null cone of a norm on the algebra. Third, unqualified **regular** means **spectrally regular**, that is $R^2\neq0$; the companion article's regular side, the unit group, is written **norm-regular** wherever the two could collide.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$, and with complex coefficients. The natural conjugation is the $\mathbb{C}$-linear quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$, an anti-involution of order two fixing the centre. The vector part is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and
 
 $$
-B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t,\qquad N(\tilde Q)=\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=(Q_t^2+B^2)e_t.
+R^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-R^2e_t,\qquad \langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=(Q_t^2+R^2)e_t.
 $$
 
-The number $B$ is a fixed complex square root of $Q_x^2+Q_y^2+Q_z^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
+The number $R$ is a fixed complex square root of $Q_x^2+Q_y^2+Q_z^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*; the Peirce decomposition is *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
 
 ## The Spectral Criterion
 
@@ -42,7 +42,7 @@ No module and no acting operator enters the definitions: the primitives are the 
 
 1. $\lambda$ is an eigenvalue of $\tilde Q$;
 2. $\tilde Q-\lambda e_t$ is not a unit of the plain product;
-3. $N(\tilde Q-\lambda e_t)=0$.
+3. $\langle\tilde Q-\lambda e_t\rangle_{\natural}=0$.
 
 *Proof.* Write $a=\tilde Q-\lambda e_t$.
 
@@ -57,50 +57,50 @@ and $a$ has the two-sided inverse $b$. Hence a proper left ideal forces a non-un
 *(2)$\iff$(3).* If $a$ is not a unit, the left multiplication by $a$ is not surjective, since a surjective endomorphism of the finite-dimensional space $\mathbb{B}$ is bijective and would give a right inverse, hence a unit. By rank–nullity there is $v\neq0$ with $av=0$; then
 
 $$
-N(a)v=a^{\natural}av=0,
+\langle a\rangle_{\natural}v=a^{\natural}av=0,
 $$
 
-and $N(a)$ is central, so $N(a)=0$. Conversely, if $a$ were a unit $u$ and $N(a)=0$, then $N(a)N(u)=N(e_t)=1$ by multiplicativity, a contradiction.
+and $\langle a\rangle_{\natural}$ is central, so $\langle a\rangle_{\natural}=0$. Conversely, if $a$ were a unit $u$ and $\langle a\rangle_{\natural}=0$, then $\langle a\rangle_{\natural}\langle u\rangle_{\natural}=\langle e_t\rangle_{\natural}=1$ by multiplicativity, a contradiction.
 
 **Corollary (the characteristic polynomial).** For every $\lambda$,
 
 $$
-N(\tilde Q-\lambda e_t)=(\lambda-Q_t)^2+B^2,
+\langle\tilde Q-\lambda e_t\rangle_{\natural}=(\lambda-Q_t)^2+R^2,
 $$
 
 so the characteristic polynomial is
 
 $$
-p_{\tilde Q}(X)=X^2-2Q_tX+N(\tilde Q),
+p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural},
 $$
 
 of discriminant
 
 $$
-\operatorname{disc}p_{\tilde Q}=4Q_t^2-4N(\tilde Q)=-4B^2.
+\operatorname{disc}p_{\tilde Q}=4Q_t^2-4\langle\tilde Q\rangle_{\natural}=-4R^2.
 $$
 
 The eigenvalues are
 
 $$
-\lambda_\pm=Q_t\pm iB,
+\lambda_\pm=Q_t\pm iR,
 $$
 
-and they coincide exactly when $B=0$, that is exactly when $B^2=0$.
+and they coincide exactly when $R=0$, that is exactly when $R^2=0$.
 
 **Corollary (the eigenspaces).** For a non-scalar $\tilde Q$ and each eigenvalue $\lambda$, the eigenspace $\operatorname{Ann}_{\ell}(\tilde Q-\lambda e_t)$ is a right ideal of complex dimension $2$. For $\tilde Q=Q_te_t$ the only eigenvalue is $Q_t$, and its eigenspace is all of $\mathbb{B}$.
 
-*Proof.* A non-zero non-unit in $\mathbb{B}$ has left multiplication of complex rank $2$, by *Norm Regularity and Degeneracy in the Biquaternion Algebra*, §*The Annihilators*; at the scalar the difference $\tilde Q-Q_te_t$ is zero.
+*Proof.* A non-zero non-unit in $\mathbb{B}$ has left multiplication of complex rank $2$, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*; at the scalar the difference $\tilde Q-Q_te_t$ is zero.
 
 **Corollary (Cayley–Hamilton and the inverse).** Every $\tilde Q$ satisfies
 
 $$
-\tilde Q^2-2Q_t\tilde Q+N(\tilde Q)e_t=0 ,
+\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0 ,
 $$
 
-and if $N(\tilde Q)\neq0$ then $\tilde Q^{-1}=(2Q_te_t-\tilde Q)/N(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$.
+and if $\langle\tilde Q\rangle_{\natural}\neq0$ then $\tilde Q^{-1}=(2Q_te_t-\tilde Q)/\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 
-*Proof.* With $\tilde Q=Q_te_t+\vec Q$ and $\vec Q^2=-B^2e_t$, $\tilde Q^2=Q_t^2e_t+2Q_t\vec Q-B^2e_t=2Q_t\tilde Q-(Q_t^2+B^2)e_t$. Multiplying by $\tilde Q^{\natural}$ and using $N(\tilde Q)=Q_t^2+B^2$ gives the inverse.
+*Proof.* With $\tilde Q=Q_te_t+\vec Q$ and $\vec Q^2=-R^2e_t$, $\tilde Q^2=Q_t^2e_t+2Q_t\vec Q-R^2e_t=2Q_t\tilde Q-(Q_t^2+R^2)e_t$. Multiplying by $\tilde Q^{\natural}$ and using $\langle\tilde Q\rangle_{\natural}=Q_t^2+R^2$ gives the inverse.
 
 **Remark (left and right eigenvalues).** The centre of $\mathbb{B}$ is $\mathbb{C}$, so complex scalars commute with every element. A left eigenvalue, $\tilde Qv=\lambda v$, and a right eigenvalue, $\tilde Qv=v\lambda$, therefore define the same set when the scalar is required to lie in $\mathbb{C}$, and that set is $\sigma(\tilde Q)$. The distinction between the two eigenvalue problems, which is genuine over a noncommutative division ring (*Quaternion Spectral Theory*, §*The Spectrum of a Quaternion*), collapses here.
 
@@ -108,24 +108,24 @@ and if $N(\tilde Q)\neq0$ then $\tilde Q^{-1}=(2Q_te_t-\tilde Q)/N(\tilde Q)=\ti
 
 **Definition.** Two biquaternions $\tilde Q_1,\tilde Q_2$ are **similar** if $\tilde Q_2=S\tilde Q_1S^{-1}$ for some unit $S\in\mathbb{B}$.
 
-**Theorem (the classification).** Let $T=2Q_t$ and $D=N(\tilde Q)$, and let $\Delta=T^2-4D=-4B^2$.
+**Theorem (the classification).** Let $T=2Q_t$ and $D=\langle\tilde Q\rangle_{\natural}$, and let $\Delta=T^2-4D=-4R^2$.
 
-1. If $B\neq0$, the eigenvalues $Q_t\pm iB$ are distinct, and the similarity class is determined by the unordered pair of eigenvalues, equivalently by $(T,D)$.
-2. If $B=0$, the only eigenvalue is $Q_t$, and exactly two similarity classes share $(T,D)=(2Q_t,Q_t^2)$: the **central class** $\tilde Q=Q_te_t$, and the **non-semisimple class** $\vec Q\neq0$ with $\vec Q^2=0$, which is similar to the Jordan block with diagonal $Q_t$.
+1. If $R\neq0$, the eigenvalues $Q_t\pm iR$ are distinct, and the similarity class is determined by the unordered pair of eigenvalues, equivalently by $(T,D)$.
+2. If $R=0$, the only eigenvalue is $Q_t$, and exactly two similarity classes share $(T,D)=(2Q_t,Q_t^2)$: the **central class** $\tilde Q=Q_te_t$, and the **non-semisimple class** $\vec Q\neq0$ with $\vec Q^2=0$, which is similar to the Jordan block with diagonal $Q_t$.
 
-*Proof.* (1) $p_{\tilde Q}$ has two distinct roots, so $\tilde Q$ is diagonalisable with those roots; any two such elements are conjugate in $\mathbb{B}\cong M_2(\mathbb{C})$. (2) $B=0$ gives $\vec Q^2=0$. If $\vec Q=0$ the element is central. If $\vec Q\neq0$, then $\tilde Q-Q_te_t$ is nonzero with square $0$, so the minimal polynomial is $(X-Q_t)^2$ and the Jordan form is a single block of size $2$; all such elements are conjugate.
+*Proof.* (1) $p_{\tilde Q}$ has two distinct roots, so $\tilde Q$ is diagonalisable with those roots; any two such elements are conjugate in $\mathbb{B}\cong M_2(\mathbb{C})$. (2) $R=0$ gives $\vec Q^2=0$. If $\vec Q=0$ the element is central. If $\vec Q\neq0$, then $\tilde Q-Q_te_t$ is nonzero with square $0$, so the minimal polynomial is $(X-Q_t)^2$ and the Jordan form is a single block of size $2$; all such elements are conjugate.
 
-**Corollary.** In the non-semisimple class the element is a zero divisor exactly when $Q_t=0$, since $N(\tilde Q)=Q_t^2$.
+**Corollary.** In the non-semisimple class the element is a zero divisor exactly when $Q_t=0$, since $\langle\tilde Q\rangle_{\natural}=Q_t^2$.
 
 ## The Spectral-Degenerate Cone
 
 **Definition.** The **spectral-degenerate cone** is
 
 $$
-\mathcal S=\{B^2=0\}=\{\vec Q^2=0\}=\{\operatorname{disc}p_{\tilde Q}=0\}.
+\mathcal S=\{R^2=0\}=\{\vec Q^2=0\}=\{\operatorname{disc}p_{\tilde Q}=0\}.
 $$
 
-**Theorem (three readings of one equation).** The equation $B^2=0$ is simultaneously:
+**Theorem (three readings of one equation).** The equation $R^2=0$ is simultaneously:
 
 - **geometric:** the vector part is isotropic for the quaternionic bilinear form, $\langle\vec Q,\vec Q\rangle_{\natural}=Q_x^2+Q_y^2+Q_z^2=0$;
 - **algebraic:** the vector part is square-zero, $\vec Q^2=0$, hence nilpotent of index two when it is non-zero;
@@ -139,7 +139,7 @@ $$
 
 It is a complex cone of complex dimension $3$ and real dimension $6$. Its singular locus is the **vertex** $\{\vec Q=0\}$, the whole scalar line; off the vertex it is a smooth hypersurface.
 
-*Proof.* The equation $B^2=0$ is one complex equation in the four complex coefficients, homogeneous of degree two. Its gradient with respect to $(Q_t,Q_x,Q_y,Q_z)$ is
+*Proof.* The equation $R^2=0$ is one complex equation in the four complex coefficients, homogeneous of degree two. Its gradient with respect to $(Q_t,Q_x,Q_y,Q_z)$ is
 
 $$
 (0,\,2Q_x,\,2Q_y,\,2Q_z),
@@ -147,11 +147,11 @@ $$
 
 which vanishes exactly when $\vec Q=0$. Off the vertex the gradient is non-zero and the equation cuts a smooth hypersurface, of complex dimension $4-1=3$ and real dimension $8-2=6$. On the vertex the cone is $\mathbb{C}e_t\times C$, with $C$ the isotropic cone of $\mathbb{C}^3$, which is singular at its apex; the product is singular along the whole line.
 
-**The cone is not a subspace.** The elements $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ lie on $\mathcal S$, since their vector squares are $1+i^2=0$, but their sum $2\vec e_x$ has $B^2=4$ and lies off it.
+**The cone is not a subspace.** The elements $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ lie on $\mathcal S$, since their vector squares are $1+i^2=0$, but their sum $2\vec e_x$ has $R^2=4$ and lies off it.
 
-**Warning (the vertex is not defective).** A point of the vertex is a scalar $\tilde Q=Q_te_t$. Its only eigenvalue is $Q_t$, repeated, and its minimal polynomial is $X-Q_t$: it is semisimple and diagonalisable. The cone $\mathcal S$ is therefore the set of elements with a repeated eigenvalue, not the set of non-diagonalisable elements. The defective elements of $\mathcal S$ are the Jordan and nilpotent regimes of §*The Three Regimes of the Cone*. This distinction is invisible in the equation $B^2=0$.
+**Warning (the vertex is not defective).** A point of the vertex is a scalar $\tilde Q=Q_te_t$. Its only eigenvalue is $Q_t$, repeated, and its minimal polynomial is $X-Q_t$: it is semisimple and diagonalisable. The cone $\mathcal S$ is therefore the set of elements with a repeated eigenvalue, not the set of non-diagonalisable elements. The defective elements of $\mathcal S$ are the Jordan and nilpotent regimes of §*The Three Regimes of the Cone*. This distinction is invisible in the equation $R^2=0$.
 
-**Warning (the name).** The form $B^2$ is the restriction of the quaternionic bilinear algebraic norm to the vector subspace. It does not see the scalar part, so it is degenerate as a form on $\mathbb{B}$ and is not a norm on $\mathbb{B}$. The only multiplicative norm of the algebra is the reduced norm $N$, whose null cone is $\mathcal{N}$. The cone $\mathcal S$ is the zero set of a quadratic form that does not involve $Q_t$, and it is never called a null cone.
+**Warning (the name).** The form $R^2$ is the restriction of the quaternionic bilinear algebraic norm to the vector subspace. It does not see the scalar part, so it is degenerate as a form on $\mathbb{B}$ and is not a norm on $\mathbb{B}$. The only multiplicative norm of the algebra is the quaternionic norm $\langle\cdot\rangle_{\natural}$, whose null cone is $\mathcal{N}$. The cone $\mathcal S$ is the zero set of a quadratic form that does not involve $Q_t$, and it is never called a null cone.
 
 ## The Adapted Peirce Decomposition
 
@@ -171,7 +171,7 @@ which is equivalent to $e\tilde Q=\tilde Qe$: the idempotent commutes with the e
 
 **Theorem (existence).** Let $\tilde Q$ be non-scalar. The following are equivalent:
 
-1. $B^2\neq0$;
+1. $R^2\neq0$;
 2. $\tilde Q$ has a spectral decomposition;
 3. there is a non-trivial idempotent $e$ with $e\tilde Q=\tilde Qe$;
 4. $\tilde Q$ is semisimple.
@@ -192,7 +192,7 @@ so they form a spectral decomposition.
 
 (2)$\Rightarrow$(3). The idempotent $e_+$ is non-trivial: if $e_+=0$ then $\tilde Q=\lambda_-e_t$, and if $e_+=e_t$ then $\tilde Q=\lambda_+e_t$; both are contrary to the hypothesis. It commutes with $\tilde Q$ because $\tilde Qe_+=\lambda_+e_+=e_+\tilde Q$.
 
-(3)$\Rightarrow$(1). Suppose $B^2=0$. Since $\tilde Q$ is non-scalar, $\vec Q\neq0$ and $\vec Q^2=0$. The minimal polynomial is then $(X-Q_t)^2$, and the centraliser of $\tilde Q$ is
+(3)$\Rightarrow$(1). Suppose $R^2=0$. Since $\tilde Q$ is non-scalar, $\vec Q\neq0$ and $\vec Q^2=0$. The minimal polynomial is then $(X-Q_t)^2$, and the centraliser of $\tilde Q$ is
 
 $$
 \mathbb{C}[\tilde Q]=\mathbb{C}[\varepsilon]/(\varepsilon^2),\qquad \varepsilon=\tilde Q-Q_te_t=\vec Q,
@@ -200,22 +200,22 @@ $$
 
 by *The Biquaternion Eigenvalue Decomposition*, §*The Degenerate Regimes*. An idempotent $ae_t+b\varepsilon$ satisfies $a^2=a$ and $2ab=b$, so $a=b=0$ or $a=1$, $b=0$: the only idempotents are $0$ and $e_t$, and there is no non-trivial one. Contradiction.
 
-(1)$\iff$(4). For a non-scalar element the minimal polynomial is the characteristic polynomial, of degree two. It is squarefree exactly when the two roots are distinct, that is exactly when $B^2\neq0$.
+(1)$\iff$(4). For a non-scalar element the minimal polynomial is the characteristic polynomial, of degree two. It is squarefree exactly when the two roots are distinct, that is exactly when $R^2\neq0$.
 
-**Corollary (uniqueness).** If $B^2\neq0$, the spectral decomposition is unique. The centraliser of $\tilde Q$ is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\times\mathbb{C}$, whose only idempotents are $0,e_t,e_+,e_-$, and every adapted Peirce decomposition uses the pair $e_+,e_-$.
+**Corollary (uniqueness).** If $R^2\neq0$, the spectral decomposition is unique. The centraliser of $\tilde Q$ is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\times\mathbb{C}$, whose only idempotents are $0,e_t,e_+,e_-$, and every adapted Peirce decomposition uses the pair $e_+,e_-$.
 
 *Proof.* The minimal polynomial has two distinct roots, so the Chinese remainder theorem gives $\mathbb{C}[X]/((X-\lambda_+)(X-\lambda_-))\cong\mathbb{C}\times\mathbb{C}$, and the idempotents of the product are the four listed. An idempotent adapted to $\tilde Q$ lies in its centraliser and is therefore one of them.
 
-**The scalar exception.** The theorem excludes the scalar elements, and it must: if $\tilde Q=Q_te_t$ is central, every idempotent commutes with it, so condition (3) holds while $B^2=0$. The scalar regime is treated separately below.
+**The scalar exception.** The theorem excludes the scalar elements, and it must: if $\tilde Q=Q_te_t$ is central, every idempotent commutes with it, so condition (3) holds while $R^2=0$. The scalar regime is treated separately below.
 
 ## The Two Cases
 
-**The discriminant of $p_{\tilde Q}=X^2-2Q_tX+N$ is $-4B^2$. The vanishing of $B^2$ therefore cuts the algebra into two spectral cases.**
+**The discriminant of $p_{\tilde Q}=X^2-2Q_tX+\langle\cdot\rangle_{\natural}$ is $-4R^2$. The vanishing of $R^2$ therefore cuts the algebra into two spectral cases.**
 
 | case | condition | spectrum | spectral decomposition | eigenbasis |
 |---|---|---|---|---|
-| **non-degenerate** | $B^2\neq0$ | $\{\lambda_+,\lambda_-\}$, distinct | two terms, unique | exists, §*The Q-Adapted Peirce Basis* |
-| **degenerate** | $B^2=0$ | one eigenvalue | one term at the vertex, none off it | none |
+| **non-degenerate** | $R^2\neq0$ | $\{\lambda_+,\lambda_-\}$, distinct | two terms, unique | exists, §*The Q-Adapted Peirce Basis* |
+| **degenerate** | $R^2=0$ | one eigenvalue | one term at the vertex, none off it | none |
 
 The non-degenerate case is the complement of the cone $\mathcal S$: it is the spectral-regular case, treated from the Peirce side in §*The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis*. The degenerate case is the cone itself, and its points are classified in §*The Degenerate Case*. The zero element is degenerate, and it is the one degenerate element that is not a zero divisor: it is treated in §*The Zero Element*.
 
@@ -322,13 +322,13 @@ which preserves both products and both squares. Indeed, $\mu^{-1}\vec\Upsilon_-$
 **The corner, without a preferred axis.** For every pure biquaternion $\vec X$,
 $$
 \tilde\Pi_-\vec X\tilde\Pi_+=\frac12\left(\vec X_\perp+i\,\vec U\times\vec X\right)
-=\frac12\left(\vec X-\frac{\vec X\cdot\vec Q}{B^2}\vec Q\right)+\frac{i}{4B}\,[\vec Q,\vec X],
+=\frac12\left(\vec X-\frac{\vec X\cdot\vec Q}{R^2}\vec Q\right)+\frac{i}{4R}\,[\vec Q,\vec X],
 $$
 $$
 \tilde\Pi_+\vec X\tilde\Pi_-=\frac12\left(\vec X_\perp-i\,\vec U\times\vec X\right)
-=\frac12\left(\vec X-\frac{\vec X\cdot\vec Q}{B^2}\vec Q\right)-\frac{i}{4B}\,[\vec Q,\vec X],
+=\frac12\left(\vec X-\frac{\vec X\cdot\vec Q}{R^2}\vec Q\right)-\frac{i}{4R}\,[\vec Q,\vec X],
 $$
-where $\vec X_\perp=\vec X-\dfrac{\vec X\cdot\vec Q}{B^2}\vec Q$. No axis is singled out. When $\vec X_\perp^2\neq0$ both projections are nonzero.
+where $\vec X_\perp=\vec X-\dfrac{\vec X\cdot\vec Q}{R^2}\vec Q$. No axis is singled out. When $\vec X_\perp^2\neq0$ both projections are nonzero.
 
 **The two nilpotents from a transverse vector.** Let $\vec X$ be a pure vector with $\vec X_\perp^2\neq0$, and put
 $$
@@ -346,7 +346,7 @@ $$
 $$
 satisfy $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, $\vec\Upsilon_\pm^2=0$. Every admissible pair arises this way, and two choices of $\vec X$ give pairs differing by the reciprocal rescaling. The scalar is
 $$
-\vec X_\perp^2=\vec X^2+\frac{(\vec X\cdot\vec Q)^2}{B^2}.
+\vec X_\perp^2=\vec X^2+\frac{(\vec X\cdot\vec Q)^2}{R^2}.
 $$
 
 **The transverse unit vector.** If $\vec V$ is a pure unit vector with $\vec V\cdot\vec U=0$, then $\vec V\tilde\Pi_+\in\mathbb{B}_{-+}$ and $\vec V\tilde\Pi_-\in\mathbb{B}_{+-}$, and, up to the reciprocal rescaling,
@@ -364,18 +364,18 @@ A general transverse unit is $\vec V=\lambda\vec e_x+\mu\vec e_y$ with $\lambda^
 
 **The symmetric closed form.** The vector $\vec w=\vec e_x+\vec e_y+\vec e_z$ is the only nonzero vector fixed by every permutation of the axes. Put $\sigma=\vec w\cdot\vec Q=Q_x+Q_y+Q_z$. Then
 $$
-\vec w_\perp=\vec w-\frac{\Sigma}{B^2}\vec Q,\qquad
-\vec w_\perp^2=\vec w^2+\frac{\Sigma^2}{B^2}=-3+\frac{\Sigma^2}{B^2}=\frac{\Sigma^2-3B^2}{B^2}.
+\vec w_\perp=\vec w-\frac{\Sigma}{R^2}\vec Q,\qquad
+\vec w_\perp^2=\vec w^2+\frac{\Sigma^2}{R^2}=-3+\frac{\Sigma^2}{R^2}=\frac{\Sigma^2-3R^2}{R^2}.
 $$
 Therefore
 $$
-\boxed{\ \vec\Upsilon_\pm=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}}\ }
+\boxed{\ \vec\Upsilon_\pm=\frac{R\,\vec w-\dfrac{\Sigma}{R}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3R^2}}\ }
 $$
 with $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$. In full coordinates,
 $$
-\vec\Upsilon_\pm=\frac{\Bigl(B-\dfrac{\Sigma Q_x}{B}\pm i(Q_y-Q_z)\Bigr)\vec e_x+\Bigl(B-\dfrac{\Sigma Q_y}{B}\pm i(Q_z-Q_x)\Bigr)\vec e_y+\Bigl(B-\dfrac{\Sigma Q_z}{B}\pm i(Q_x-Q_y)\Bigr)\vec e_z}{2\sqrt{\Sigma^2-3B^2}}.
+\vec\Upsilon_\pm=\frac{\Bigl(R-\dfrac{\Sigma Q_x}{R}\pm i(Q_y-Q_z)\Bigr)\vec e_x+\Bigl(R-\dfrac{\Sigma Q_y}{R}\pm i(Q_z-Q_x)\Bigr)\vec e_y+\Bigl(R-\dfrac{\Sigma Q_z}{R}\pm i(Q_x-Q_y)\Bigr)\vec e_z}{2\sqrt{\Sigma^2-3R^2}}.
 $$
-A permutation of the axes permutes the three components and leaves $B$ and $\Sigma$ unchanged, so the formula is symmetric in $x,y,z$. Expanding the brackets gives
+A permutation of the axes permutes the three components and leaves $R$ and $\Sigma$ unchanged, so the formula is symmetric in $x,y,z$. Expanding the brackets gives
 $$
 \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
 \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
@@ -383,29 +383,29 @@ $$
 $$
 and the denominator is
 $$
-2\sqrt{\Sigma^2-3B^2}=2\sqrt{-\bigl((Q_x-Q_y)^2+(Q_y-Q_z)^2+(Q_z-Q_x)^2\bigr)}.
+2\sqrt{\Sigma^2-3R^2}=2\sqrt{-\bigl((Q_x-Q_y)^2+(Q_y-Q_z)^2+(Q_z-Q_x)^2\bigr)}.
 $$
 
 **The exceptional cone and the chart.** The symmetric formula degenerates exactly on the cone
 $$
-\Sigma^2=3B^2,
+\Sigma^2=3R^2,
 \qquad\text{that is,}\qquad
 (Q_x-Q_y)^2+(Q_y-Q_z)^2+(Q_z-Q_x)^2=0,
 $$
 which for real $\vec Q$ is the line $Q_x=Q_y=Q_z$. On that cone use the axis chart: for $\mu\in\{x,y,z\}$,
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-B^2}},
+\vec\Upsilon_\pm=\frac{R\,\vec e_\mu-\dfrac{Q_\mu}{R}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-R^2}},
 $$
-which is the transverse-vector construction with $\vec X=\vec e_\mu$. The chart with axis $\mu$ is defined when $Q_\mu^2\neq B^2$, that is, when $Q_\nu^2+Q_\rho^2\neq0$ for the two other coordinates. At least one of the three is defined whenever $B\neq0$: if all three failed, then $Q_x^2+Q_y^2=Q_y^2+Q_z^2=Q_z^2+Q_x^2=0$, hence $Q_x^2=Q_y^2=Q_z^2$ and $2Q_x^2=0$, so $B=0$. The charts are the one formula read with $\mu=x,y,z$, and the ones that are defined give pairs differing by the reciprocal rescaling. The symmetric formula off the cone and the axis charts on it cover every $\vec Q$ with $B\neq0$.
+which is the transverse-vector construction with $\vec X=\vec e_\mu$. The chart with axis $\mu$ is defined when $Q_\mu^2\neq R^2$, that is, when $Q_\nu^2+Q_\rho^2\neq0$ for the two other coordinates. At least one of the three is defined whenever $R\neq0$: if all three failed, then $Q_x^2+Q_y^2=Q_y^2+Q_z^2=Q_z^2+Q_x^2=0$, hence $Q_x^2=Q_y^2=Q_z^2$ and $2Q_x^2=0$, so $R=0$. The charts are the one formula read with $\mu=x,y,z$, and the ones that are defined give pairs differing by the reciprocal rescaling. The symmetric formula off the cone and the axis charts on it cover every $\vec Q$ with $R\neq0$.
 
-**Why no formula is axis-free everywhere.** A closed form with no auxiliary vector would be a map $F$ with $F(R\vec Q)=R\,F(\vec Q)$ for every rotation $R$, rational in $\vec Q$ and $B$. By invariant theory the only such maps are $F(\vec Q)=f(B^2)\vec Q$: the invariant tensors are $\delta_{ij}$ and $\epsilon_{ijk}$, and $\epsilon$ cannot build a vector from a single vector. But the corner is transverse to $\vec Q$, so $F$ would vanish. Every explicit generator therefore uses an auxiliary vector: the symmetric formula uses the permutation-invariant $\vec w$, the axis charts use $\vec e_x,\vec e_y,\vec e_z$. The corner line is a spinor line, and a spinor is not a function of $\vec Q$ alone.
+**Why no formula is axis-free everywhere.** A closed form with no auxiliary vector would be a map $F$ with $F(R\vec Q)=R\,F(\vec Q)$ for every rotation $R$, rational in $\vec Q$ and $R$. By invariant theory the only such maps are $F(\vec Q)=f(R^2)\vec Q$: the invariant tensors are $\delta_{ij}$ and $\epsilon_{ijk}$, and $\epsilon$ cannot build a vector from a single vector. But the corner is transverse to $\vec Q$, so $F$ would vanish. Every explicit generator therefore uses an auxiliary vector: the symmetric formula uses the permutation-invariant $\vec w$, the axis charts use $\vec e_x,\vec e_y,\vec e_z$. The corner line is a spinor line, and a spinor is not a function of $\vec Q$ alone.
 
 **The standard pair.** For the opposite root, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, the corner generators of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*, are
 $$
 \vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2}\in\mathbb{B}_{+-},\qquad
 \vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2}\in\mathbb{B}_{-+},
 $$
-with $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$. These are the $\vec\Upsilon_1,\vec\Upsilon_2$ of *Conventions in Mathematics*, §*The Nilpotent Convention*, indexed by direction. The present root is $\vec\Xi=-i\vec e_z$ when $Q_z>0$ with the choice $B=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
+with $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$. These are the $\vec\Upsilon_1,\vec\Upsilon_2$ of *Conventions in Mathematics*, §*The Nilpotent Convention*, indexed by direction. The present root is $\vec\Xi=-i\vec e_z$ when $Q_z>0$ with the choice $R=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
 $$
 \vec\Upsilon_+=\vec\Upsilon_x,\qquad \vec\Upsilon_-=\vec\Upsilon_y,
 $$
@@ -552,7 +552,7 @@ R_{\tilde Q_{\mathrm{sp}}}(\tilde\Pi_-)=Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mat
 $$
 The two actions are diagonal exactly on the diagonal subalgebra $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$, of which $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ is the member with the prescribed eigenvalues. This is the precise sense in which the Peirce coordinates of $\tilde Q$ are the eigenvalues: $Q_{\mathrm{sp},12}=Q_{\mathrm{sp},21}=0$ is the condition that both actions be diagonal, and $\tilde Q$ is the member with $Q_{\mathrm{sp},11}=\lambda_+$ and $Q_{\mathrm{sp},22}=\lambda_-$.
 
-**The four elements of the fixed basis.** The coordinates of $e_t,\vec e_x,\vec e_y,\vec e_z$ in $\mathcal{B}$ are read from the expansions. In the standard case, $Q_x=Q_y=0$ with the standard root $i\vec e_z$, that is $B=-Q_z$ and $\lambda_\pm=Q_t\mp iQ_z$, the nilpotents are
+**The four elements of the fixed basis.** The coordinates of $e_t,\vec e_x,\vec e_y,\vec e_z$ in $\mathcal{B}$ are read from the expansions. In the standard case, $Q_x=Q_y=0$ with the standard root $i\vec e_z$, that is $R=-Q_z$ and $\lambda_\pm=Q_t\mp iQ_z$, the nilpotents are
 $$
 \vec\Upsilon_-=\frac{i\vec e_x-\vec e_y}{2},\qquad
 \vec\Upsilon_+=\frac{i\vec e_x+\vec e_y}{2},
@@ -575,7 +575,7 @@ and the left action of the four on the basis is read from the table. In particul
 
 **A general pure element.** Off the axis the coordinates of $\vec e_x,\vec e_y,\vec e_z$ depend on $\vec Q$. For any pure $\vec X$,
 $$
-\vec X=i\,\frac{\vec X\cdot\vec Q}{B}\,(\tilde\Pi_+-\tilde\Pi_-)+X_{12}\vec\Upsilon_-+X_{21}\vec\Upsilon_+,
+\vec X=i\,\frac{\vec X\cdot\vec Q}{R}\,(\tilde\Pi_+-\tilde\Pi_-)+X_{12}\vec\Upsilon_-+X_{21}\vec\Upsilon_+,
 \qquad
 X_{12}\tilde\Pi_-=\vec\Upsilon_+\vec X\tilde\Pi_-,
 \qquad
@@ -583,9 +583,9 @@ X_{21}\tilde\Pi_+=\vec\Upsilon_-\vec X\tilde\Pi_+,
 $$
 so its coordinates in $\mathcal{B}$ are
 $$
-\vec X=\Bigl(i\,\frac{\vec X\cdot\vec Q}{B},\;X_{12},\;X_{21},\;-i\,\frac{\vec X\cdot\vec Q}{B}\Bigr).
+\vec X=\Bigl(i\,\frac{\vec X\cdot\vec Q}{R},\;X_{12},\;X_{21},\;-i\,\frac{\vec X\cdot\vec Q}{R}\Bigr).
 $$
-The standard case is $\vec Q=Q_z\vec e_z$, $B=-Q_z$.
+The standard case is $\vec Q=Q_z\vec e_z$, $R=-Q_z$.
 
 ### The Eigenbasis of Left Multiplication
 
@@ -835,13 +835,13 @@ $$
 $$
 with the symmetric closed form
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec w-\dfrac{\Sigma}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3B^2}},
+\vec\Upsilon_\pm=\frac{R\,\vec w-\dfrac{\Sigma}{R}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec w]}{2\sqrt{\Sigma^2-3R^2}},
 \qquad
 \vec w=\vec e_x+\vec e_y+\vec e_z,\quad \Sigma=Q_x+Q_y+Q_z,
 $$
-valid off the cone $\Sigma^2=3B^2$; on that cone the axis charts
+valid off the cone $\Sigma^2=3R^2$; on that cone the axis charts
 $$
-\vec\Upsilon_\pm=\frac{B\,\vec e_\mu-\dfrac{Q_\mu}{B}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-B^2}},
+\vec\Upsilon_\pm=\frac{R\,\vec e_\mu-\dfrac{Q_\mu}{R}\,\vec Q\pm\dfrac{i}{2}\,[\vec Q,\vec e_\mu]}{2\sqrt{Q_\mu^2-R^2}},
 \qquad \mu=x,y,z,
 $$
 cover the pair, at least one of the three being defined, and the defined readings differ by the reciprocal rescaling.
@@ -922,13 +922,13 @@ For $\vec Q\neq0$ there is no eigenbasis of $L_{\tilde Q}$: in any Peirce basis 
 
 ## The Degenerate Case $Q_x^2+Q_y^2+Q_z^2=0$
 
-**On the cone $B^2=0$ the two eigenvalues have coalesced. Two further questions decide the geometry of a point: whether the scalar part vanishes, and whether the vector part vanishes.**
+**On the cone $R^2=0$ the two eigenvalues have coalesced. Two further questions decide the geometry of a point: whether the scalar part vanishes, and whether the vector part vanishes.**
 
 | regime | condition | spectrum | minimal polynomial | adapted Peirce | the element is |
 |---|---|---|---|---|---|
 | **scalar** | $\vec Q=0$ | $\{Q_t\}$ | $X-Q_t$ | every idempotent | central, semisimple; a unit iff $Q_t\neq0$ |
-| **Jordan** | $B^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\{Q_t\}$ | $(X-Q_t)^2$ | none non-trivial | a unit, defective, one Jordan block |
-| **nilpotent** | $B^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\{0\}$ | $X^2$ | none non-trivial | a non-unit, $\tilde Q^2=0$ |
+| **Jordan** | $R^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\{Q_t\}$ | $(X-Q_t)^2$ | none non-trivial | a unit, defective, one Jordan block |
+| **nilpotent** | $R^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\{0\}$ | $X^2$ | none non-trivial | a non-unit, $\tilde Q^2=0$ |
 
 ### The Scalar Regime and the Vertex
 
@@ -940,11 +940,11 @@ The vertex is the singular locus of $\mathcal S$: it is the line of elements of 
 
 **The zero element is degenerate, and it is the one degenerate element that is not a zero divisor.**
 
-At $\tilde Q=0$ one has $B^2=0$ and $N=0$, so $0$ lies in the degenerate case and on the null cone. It is the apex of $\mathcal S$: the only point at which both the scalar and the vector part vanish, and the only point of $\mathcal{N}$ that annihilates nothing non-zero. Its spectrum is $\{0\}$, its minimal polynomial is $X$, every idempotent is adapted to it, and its spectral decomposition is the one-term writing $0=0\cdot e_t$. Both translations $L_0$ and $R_0$ are the zero map, so both annihilators are all of $\mathbb{B}$ and both ranks are $0$. The origin lies in neither stratum of the null cone, the pure stratum excluding it and the non-pure stratum requiring $Q_t\neq0$; it lies in the closure of both.
+At $\tilde Q=0$ one has $R^2=0$ and $\langle\cdot\rangle_{\natural}=0$, so $0$ lies in the degenerate case and on the null cone. It is the apex of $\mathcal S$: the only point at which both the scalar and the vector part vanish, and the only point of $\mathcal{N}$ that annihilates nothing non-zero. Its spectrum is $\{0\}$, its minimal polynomial is $X$, every idempotent is adapted to it, and its spectral decomposition is the one-term writing $0=0\cdot e_t$. Both translations $L_0$ and $R_0$ are the zero map, so both annihilators are all of $\mathbb{B}$ and both ranks are $0$. The origin lies in neither stratum of the null cone, the pure stratum excluding it and the non-pure stratum requiring $Q_t\neq0$; it lies in the closure of both.
 
 ### The Jordan Regime
 
-Let $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$, and let $Q_t\neq0$. The minimal polynomial is $(X-Q_t)^2$, the spectrum is the single eigenvalue $Q_t$, and the element is a unit, since $N(\tilde Q)=Q_t^2\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$, so no non-trivial adapted Peirce decomposition exists. The element is a single Jordan block: it is defective, and the two eigenvalues of the non-degenerate side have coalesced at $Q_t$ without the element becoming scalar.
+Let $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$, and let $Q_t\neq0$. The minimal polynomial is $(X-Q_t)^2$, the spectrum is the single eigenvalue $Q_t$, and the element is a unit, since $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$. Its centraliser is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec\Upsilon\}$, whose only idempotents are $0$ and $e_t$, so no non-trivial adapted Peirce decomposition exists. The element is a single Jordan block: it is defective, and the two eigenvalues of the non-degenerate side have coalesced at $Q_t$ without the element becoming scalar.
 
 The closest available structure is the Peirce form relative to an idempotent $e$ with $\vec\Upsilon\in e\mathbb{B}f$, where $f=e_t-e$. Such an idempotent exists, and for it
 
@@ -956,7 +956,7 @@ so the element is diagonal on the two Peirce corners and carries its nilpotent p
 
 ### The Nilpotent Regime
 
-Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. The spectrum is $\{0\}$, the minimal polynomial is $X^2$, and the element is not a unit: it lies on the null cone of the reduced norm, and it is a zero divisor. The centraliser and the absence of a non-trivial adapted Peirce decomposition are the same as in the Jordan regime. Relative to an idempotent $e$ with $\vec\Upsilon\in e\mathbb{B}f$, the Peirce form is purely off-diagonal,
+Let $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. The spectrum is $\{0\}$, the minimal polynomial is $X^2$, and the element is not a unit: it lies on the null cone of the quaternionic norm, and it is a zero divisor. The centraliser and the absence of a non-trivial adapted Peirce decomposition are the same as in the Jordan regime. Relative to an idempotent $e$ with $\vec\Upsilon\in e\mathbb{B}f$, the Peirce form is purely off-diagonal,
 
 $$
 e\tilde Qe=0,\qquad e\tilde Qf=\vec\Upsilon,\qquad f\tilde Qe=0,\qquad f\tilde Qf=0.
@@ -972,48 +972,48 @@ The two cones are independent: neither contains the other.
 
 The witnesses are the mixed cells.
 
-- **A zero divisor with distinct eigenvalues.** Let $\tilde Q=e_t+i\vec e_x$. Then $N(\tilde Q)=1+i^2=0$, so $\tilde Q$ lies on the null cone, and $B^2=i^2=-1\neq0$, so it lies off the spectral-degenerate cone. Its eigenvalues are $1\pm i\cdot i$, that is $0$ and $2$; they are distinct, and the spectral decomposition exists, with the idempotents $\tilde Q/2$ and $e_t-\tilde Q/2$. A zero divisor can be spectrally regular.
-- **A unit with a repeated eigenvalue.** Let $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $B^2=1+i^2=0$, so $\tilde Q$ lies on the spectral-degenerate cone, and $N(\tilde Q)=1+1+i^2=1\neq0$, so it lies off the null cone. Its only eigenvalue is $1$, its minimal polynomial is $(X-1)^2$, and it is a unit with no spectral decomposition. This is the Jordan regime, and it is the cell that proves the independence.
+- **A zero divisor with distinct eigenvalues.** Let $\tilde Q=e_t+i\vec e_x$. Then $\langle\tilde Q\rangle_{\natural}=1+i^2=0$, so $\tilde Q$ lies on the null cone, and $R^2=i^2=-1\neq0$, so it lies off the spectral-degenerate cone. Its eigenvalues are $1\pm i\cdot i$, that is $0$ and $2$; they are distinct, and the spectral decomposition exists, with the idempotents $\tilde Q/2$ and $e_t-\tilde Q/2$. A zero divisor can be spectrally regular.
+- **A unit with a repeated eigenvalue.** Let $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $R^2=1+i^2=0$, so $\tilde Q$ lies on the spectral-degenerate cone, and $\langle\tilde Q\rangle_{\natural}=1+1+i^2=1\neq0$, so it lies off the null cone. Its only eigenvalue is $1$, its minimal polynomial is $(X-1)^2$, and it is a unit with no spectral decomposition. This is the Jordan regime, and it is the cell that proves the independence.
 
 ### The Intersection
 
 The two cones meet exactly on the pure stratum of the null cone, with the origin adjoined. Here $\mathcal{N}_{\mathrm p}=\{Q_t=0,\ \vec Q^2=0,\ \vec Q\neq0\}$ is the pure stratum of the companion article, so
 
 $$
-\mathcal{N}\cap\mathcal S=\{Q_t^2+B^2=0,\ B^2=0\}=\{Q_t=0,\ \vec Q^2=0\}=\mathcal{N}_{\mathrm p}\cup\{0\}.
+\mathcal{N}\cap\mathcal S=\{Q_t^2+R^2=0,\ R^2=0\}=\{Q_t=0,\ \vec Q^2=0\}=\mathcal{N}_{\mathrm p}\cup\{0\}.
 $$
 
 As a scheme, the intersection is
 
 $$
-(Q_t^2+B^2,\ B^2)=(Q_t^2,\ B^2),
+(Q_t^2+R^2,\ R^2)=(Q_t^2,\ R^2),
 $$
 
 an ideal generated by two squares: its reduction is the pure stratum with the origin adjoined, and the scheme is non-reduced along both defining hypersurfaces. The two defining equations have equal gradients along the smooth part of the intersection: the gradients are $2(Q_t,Q_x,Q_y,Q_z)$ and $(0,2Q_x,2Q_y,2Q_z)$, which agree where $Q_t=0$.
 
 ### The Non-Multiplicativity
 
-The null cone is a semigroup, because $N$ is multiplicative. The spectral-degenerate cone is not. The witness
+The null cone is a semigroup, because $\langle\cdot\rangle_{\natural}$ is multiplicative. The spectral-degenerate cone is not. The witness
 
 $$
 (\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z
 $$
 
-is a product of two points of $\mathcal S$, since $1+i^2=0$ in both factors, and the product has $B^2=(-2i)^2=-4\neq0$, so it lies off $\mathcal S$; its reduced norm is $4-4=0$, so it lies on $\mathcal{N}$. The cone $\mathcal S$ is a discriminant locus attached to the eigenvalue map, not a multiplicative subset.
+is a product of two points of $\mathcal S$, since $1+i^2=0$ in both factors, and the product has $R^2=(-2i)^2=-4\neq0$, so it lies off $\mathcal S$; its quaternionic norm is $4-4=0$, so it lies on $\mathcal{N}$. The cone $\mathcal S$ is a discriminant locus attached to the eigenvalue map, not a multiplicative subset.
 
 ### The Five Zones
 
-The joint refinement of the two cones partitions the algebra into the **distinct** zone ($B^2\neq0$, $N\neq0$), the **zero-divisor** zone ($B^2\neq0$, $N=0$), the **scalar** zone ($\vec Q=0$), the **Jordan** zone ($B^2=0$, $\vec Q\neq0$, $Q_t\neq0$) and the **nilpotent** zone ($B^2=0$, $\vec Q\neq0$, $Q_t=0$):
+The joint refinement of the two cones partitions the algebra into the **distinct** zone ($R^2\neq0$, $\langle\cdot\rangle_{\natural}\neq0$), the **zero-divisor** zone ($R^2\neq0$, $\langle\cdot\rangle_{\natural}=0$), the **scalar** zone ($\vec Q=0$), the **Jordan** zone ($R^2=0$, $\vec Q\neq0$, $Q_t\neq0$) and the **nilpotent** zone ($R^2=0$, $\vec Q\neq0$, $Q_t=0$):
 
 | zone | condition | norm | spectral data |
 |---|---|---|---|
-| **distinct** | $B^2\neq0$, $N\neq0$ | unit | two distinct eigenvalues |
-| **zero divisor** | $B^2\neq0$, $N=0$ | zero divisor | two distinct eigenvalues, $0$ one of them |
-| **scalar** | $\vec Q=0$ | $N=Q_t^2$ | one eigenvalue, semisimple |
-| **Jordan** | $B^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | unit | one eigenvalue, defective |
-| **nilpotent** | $B^2=0$, $\vec Q\neq0$, $Q_t=0$ | zero divisor | one eigenvalue $0$, defective |
+| **distinct** | $R^2\neq0$, $\langle\cdot\rangle_{\natural}\neq0$ | unit | two distinct eigenvalues |
+| **zero divisor** | $R^2\neq0$, $\langle\cdot\rangle_{\natural}=0$ | zero divisor | two distinct eigenvalues, $0$ one of them |
+| **scalar** | $\vec Q=0$ | $\langle\cdot\rangle_{\natural}=Q_t^2$ | one eigenvalue, semisimple |
+| **Jordan** | $R^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | unit | one eigenvalue, defective |
+| **nilpotent** | $R^2=0$, $\vec Q\neq0$, $Q_t=0$ | zero divisor | one eigenvalue $0$, defective |
 
-The origin belongs to the scalar zone; the nilpotent zone excludes it. The norm problem puts the zero-divisor zone, the nilpotent zone and the origin on one side, and the distinct zone, the non-zero scalar line and the Jordan zone on the other. The spectral problem separates all five zones, because its data include the minimal polynomial: the eigenvalues give $Q_t$ and $B^2$, and the minimal polynomial separates the scalar line from the Jordan regime. The norm problem is therefore the coarser projection: it cannot separate the scalar line from the Jordan zone, because both have $N=Q_t^2$. The independence is between the loci, not between the information: the product of the eigenvalues is $N$, so the spectrum determines the norm, but the norm does not determine $B^2$.
+The origin belongs to the scalar zone; the nilpotent zone excludes it. The norm problem puts the zero-divisor zone, the nilpotent zone and the origin on one side, and the distinct zone, the non-zero scalar line and the Jordan zone on the other. The spectral problem separates all five zones, because its data include the minimal polynomial: the eigenvalues give $Q_t$ and $R^2$, and the minimal polynomial separates the scalar line from the Jordan regime. The norm problem is therefore the coarser projection: it cannot separate the scalar line from the Jordan zone, because both have $\langle\cdot\rangle_{\natural}=Q_t^2$. The independence is between the loci, not between the information: the product of the eigenvalues is $\langle\cdot\rangle_{\natural}$, so the spectrum determines the norm, but the norm does not determine $R^2$.
 
 ## The Two Failures Compared
 
@@ -1021,23 +1021,23 @@ The independence of the loci has a concrete form in the two decompositions the c
 
 ### The Eigenbasis
 
-The spectral decomposition exists on the distinct zone and on the zero-divisor zone, where $B^2\neq0$, and it fails on the Jordan and nilpotent zones. On the null cone it exists on the non-pure stratum, where $N=0$, $B^2=-Q_t^2\neq0$ and the eigenvalues are $2Q_t$ and $0$; it fails on the nilpotent stratum, which is the pure stratum. On the Jordan regime it fails although the element is a unit: the modulus–unit polar decomposition exists and the eigenbasis does not.
+The spectral decomposition exists on the distinct zone and on the zero-divisor zone, where $R^2\neq0$, and it fails on the Jordan and nilpotent zones. On the null cone it exists on the non-pure stratum, where $\langle\cdot\rangle_{\natural}=0$, $R^2=-Q_t^2\neq0$ and the eigenvalues are $2Q_t$ and $0$; it fails on the nilpotent stratum, which is the pure stratum. On the Jordan regime it fails although the element is a unit: the modulus–unit polar decomposition exists and the eigenbasis does not.
 
 ### The Polar Decomposition
 
-The modulus–unit polar decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=N(\tilde Q)$ with $\Rho\neq0$, so it exists exactly off the null cone. It therefore fails on the zero-divisor zone, where the eigenbasis exists, and it exists on the Jordan zone, where the eigenbasis fails. On the scalar zone it exists exactly when $Q_t\neq0$, that is everywhere except the origin.
+The modulus–unit polar decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly off the null cone. It therefore fails on the zero-divisor zone, where the eigenbasis exists, and it exists on the Jordan zone, where the eigenbasis fails. On the scalar zone it exists exactly when $Q_t\neq0$, that is everywhere except the origin.
 
 ### The Operators
 
-The left and the right multiplication by $\tilde Q$ have complex rank $4$ when $N\neq0$, rank $2$ when $\tilde Q$ is a non-zero point of the null cone, and rank $0$ at the origin. The discriminant does not change these ranks: the distinct zone and the Jordan zone both have rank $4$, and the zero-divisor zone and the nilpotent zone both have rank $2$. The rank follows the norm, not the discriminant.
+The left and the right multiplication by $\tilde Q$ have complex rank $4$ when $\langle\cdot\rangle_{\natural}\neq0$, rank $2$ when $\tilde Q$ is a non-zero point of the null cone, and rank $0$ at the origin. The discriminant does not change these ranks: the distinct zone and the Jordan zone both have rank $4$, and the zero-divisor zone and the nilpotent zone both have rank $2$. The rank follows the norm, not the discriminant.
 
-**The sandwich and the derivation.** The two cones are also the two loci of the two-sided operators. For the sandwich $\Theta_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}$, suppose first that $N(\tilde Q)=0$ with $\tilde Q\neq0$. Then $\tilde Q^{\natural}\neq0$, since $\tilde Q^{\natural}=Q_te_t-\vec Q=0$ forces $Q_t=0$ and $\vec Q=0$, hence $\tilde Q=0$; and
+**The sandwich and the derivation.** The two cones are also the two loci of the two-sided operators. For the sandwich $\Theta_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}$, suppose first that $\langle\tilde Q\rangle_{\natural}=0$ with $\tilde Q\neq0$. Then $\tilde Q^{\natural}\neq0$, since $\tilde Q^{\natural}=Q_te_t-\vec Q=0$ forces $Q_t=0$ and $\vec Q=0$, hence $\tilde Q=0$; and
 
 $$
-\Theta_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\,\tilde Q^{\natural}\,\tilde Q^{*}=N(\tilde Q)\,\tilde Q^{*}=0 .
+\Theta_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\,\tilde Q^{\natural}\,\tilde Q^{*}=\langle\tilde Q\rangle_{\natural}\,\tilde Q^{*}=0 .
 $$
 
-So $\Theta_{\tilde Q}$ is singular. Conversely, if $N(\tilde Q)\neq0$ then $\tilde Q$ is a unit and $\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$. Hence $\Theta_{\tilde Q}$ is singular exactly on the null cone.
+So $\Theta_{\tilde Q}$ is singular. Conversely, if $\langle\tilde Q\rangle_{\natural}\neq0$ then $\tilde Q$ is a unit and $\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$. Hence $\Theta_{\tilde Q}$ is singular exactly on the null cone.
 
 For the inner derivation $\mathrm{ad}_{\tilde Q}(X)=\tilde QX-X\tilde Q$, the scalar part is central, so $\mathrm{ad}_{\tilde Q}=\mathrm{ad}_{\vec Q}$, and
 
@@ -1045,7 +1045,7 @@ $$
 \mathrm{ad}_{\vec Q}^{2}(X)=\vec Q^{2}X-2\vec QX\vec Q+X\vec Q^{2}=-2\vec QX\vec Q
 $$
 
-because $\vec Q^{2}=-B^{2}e_t$. When $B^{2}=0$ the binomial expansion gives $\mathrm{ad}_{\vec Q}^{3}=0$, because every term of $\mathrm{ad}_{\vec Q}^{3}(X)=\vec Q^{3}X-3\vec Q^{2}X\vec Q+3\vec QX\vec Q^{2}-X\vec Q^{3}$ carries a factor $\vec Q^{2}$. The derivation is nilpotent, of index at most three. Conversely, if $B^{2}\neq0$ the eigenvalues of the derivation are $0,0,\pm2iB$, and the two nonzero ones forbid nilpotence. Hence $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on the spectral-degenerate cone.
+because $\vec Q^{2}=-R^{2}e_t$. When $R^{2}=0$ the binomial expansion gives $\mathrm{ad}_{\vec Q}^{3}=0$, because every term of $\mathrm{ad}_{\vec Q}^{3}(X)=\vec Q^{3}X-3\vec Q^{2}X\vec Q+3\vec QX\vec Q^{2}-X\vec Q^{3}$ carries a factor $\vec Q^{2}$. The derivation is nilpotent, of index at most three. Conversely, if $R^{2}\neq0$ the eigenvalues of the derivation are $0,0,\pm2iR$, and the two nonzero ones forbid nilpotence. Hence $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on the spectral-degenerate cone.
 
 The two criteria are cone-level and do not separate the strata: the derivation vanishes on the whole scalar line, and the sandwich is singular at the origin as well.
 
@@ -1060,15 +1060,15 @@ The two criteria are cone-level and do not separate the strata: the derivation v
 
 ## Summary
 
-The biquaternion algebra carries two quadratic conditions. The reduced norm $N=Q_t^2+B^2$ is multiplicative and decides invertibility; its zero locus is the null cone $\mathcal{N}$. The discriminant of the characteristic polynomial is $-4B^2$; its zero locus is the spectral-degenerate cone $\mathcal S$, and it decides whether the two eigenvalues $Q_t\pm iB$ can be separated.
+The biquaternion algebra carries two quadratic conditions. The quaternionic norm $\langle\cdot\rangle_{\natural}=Q_t^2+R^2$ is multiplicative and decides invertibility; its zero locus is the null cone $\mathcal{N}$. The discriminant of the characteristic polynomial is $-4R^2$; its zero locus is the spectral-degenerate cone $\mathcal S$, and it decides whether the two eigenvalues $Q_t\pm iR$ can be separated.
 
-The spectral problem is stated without a module or an acting operator. An eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, equivalently for which $\tilde Q-\lambda e_t$ is a non-unit, equivalently for which $N(\tilde Q-\lambda e_t)=0$. The eigenspace is the left annihilator, a right ideal of complex dimension $2$ for a non-scalar element. A spectral idempotent is an idempotent commuting with the element, and on the regular side the spectral decomposition is the pair of Lagrange idempotents. Cayley–Hamilton gives the inverse off the null cone, and the unordered spectrum determines the similarity class except at $B=0$, where the scalar and the non-semisimple nilpotent share it.
+The spectral problem is stated without a module or an acting operator. An eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, equivalently for which $\tilde Q-\lambda e_t$ is a non-unit, equivalently for which $\langle\tilde Q-\lambda e_t\rangle_{\natural}=0$. The eigenspace is the left annihilator, a right ideal of complex dimension $2$ for a non-scalar element. A spectral idempotent is an idempotent commuting with the element, and on the regular side the spectral decomposition is the pair of Lagrange idempotents. Cayley–Hamilton gives the inverse off the null cone, and the unordered spectrum determines the similarity class except at $R=0$, where the scalar and the non-semisimple nilpotent share it.
 
-The cone $\mathcal S$ is $\mathbb{C}e_t$ times the isotropic cone of the vector subspace, of complex dimension $3$ and real dimension $6$. It is smooth off the scalar vertex and singular along it. It is not a subspace, and it is not the set of defective elements: the vertex is semisimple. It is not a null cone, because $B^2$ is not a norm on the algebra; the only multiplicative norm is $N$.
+The cone $\mathcal S$ is $\mathbb{C}e_t$ times the isotropic cone of the vector subspace, of complex dimension $3$ and real dimension $6$. It is smooth off the scalar vertex and singular along it. It is not a subspace, and it is not the set of defective elements: the vertex is semisimple. It is not a null cone, because $R^2$ is not a norm on the algebra; the only multiplicative norm is $\langle\cdot\rangle_{\natural}$.
 
-On the non-scalar side, the adapted Peirce decomposition exists exactly when $B^2\neq0$, and then it is unique. The degenerate side is stratified into the scalar regime, where every idempotent is adapted and the spectral decomposition has one term; the Jordan regime, where the element is a unit, defective and without a non-trivial adapted idempotent; and the nilpotent regime, where the element is a zero divisor and a nilpotent of index two. The vertex is the scalar line.
+On the non-scalar side, the adapted Peirce decomposition exists exactly when $R^2\neq0$, and then it is unique. The degenerate side is stratified into the scalar regime, where every idempotent is adapted and the spectral decomposition has one term; the Jordan regime, where the element is a unit, defective and without a non-trivial adapted idempotent; and the nilpotent regime, where the element is a zero divisor and a nilpotent of index two. The vertex is the scalar line.
 
-The two cones are independent: neither contains the other. A zero divisor can have distinct eigenvalues, and a unit can have a repeated one. The cones meet exactly on the pure stratum of the null cone, with the origin adjoined, and their defining equations have equal gradients along it. The spectral cone is not multiplicative, while the null cone is. The joint refinement is the five zones. The spectral problem is the finer one: its eigenvalues determine the norm, since $N=\lambda_+\lambda_-$, but the norm does not determine $B^2$. The independence is between the loci, not between the information: the norm cannot separate the scalar from the Jordan regime, while the spectral problem separates all five zones, through the minimal polynomial. The polar decomposition follows the norm and the eigenbasis follows the discriminant, so the Jordan regime, a unit with no eigenbasis, is the sharpest witness of the independence. The same two cones are the two operator loci: the sandwich $\Theta_{\tilde Q}$ is singular exactly on the null cone, and the inner derivation $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on the spectral-degenerate cone.
+The two cones are independent: neither contains the other. A zero divisor can have distinct eigenvalues, and a unit can have a repeated one. The cones meet exactly on the pure stratum of the null cone, with the origin adjoined, and their defining equations have equal gradients along it. The spectral cone is not multiplicative, while the null cone is. The joint refinement is the five zones. The spectral problem is the finer one: its eigenvalues determine the norm, since $\langle\cdot\rangle_{\natural}=\lambda_+\lambda_-$, but the norm does not determine $R^2$. The independence is between the loci, not between the information: the norm cannot separate the scalar from the Jordan regime, while the spectral problem separates all five zones, through the minimal polynomial. The polar decomposition follows the norm and the eigenbasis follows the discriminant, so the Jordan regime, a unit with no eigenbasis, is the sharpest witness of the independence. The same two cones are the two operator loci: the sandwich $\Theta_{\tilde Q}$ is singular exactly on the null cone, and the inner derivation $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on the spectral-degenerate cone.
 
 ## Summary of Notation
 
@@ -1076,13 +1076,13 @@ The two cones are independent: neither contains the other. A zero divisor can ha
 |---|---|
 | $\tilde Q=Q_te_t+\vec Q$ | a general element |
 | $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part |
-| $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, not a norm on $\mathbb{B}$ |
-| $N(\tilde Q)=Q_t^2+B^2$ | the reduced norm, the only multiplicative one |
-| $p_{\tilde Q}(X)=X^2-2Q_tX+N(\tilde Q)$ | the characteristic polynomial |
-| $\operatorname{disc}p_{\tilde Q}=-4B^2$ | the discriminant |
-| $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
-| $\mathcal{N}=\{N=0\}$ | the null cone of the reduced norm |
-| $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
+| $R^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, not a norm on $\mathbb{B}$ |
+| $\langle\tilde Q\rangle_{\natural}=Q_t^2+R^2$ | the quaternionic norm, the only multiplicative one |
+| $p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural}$ | the characteristic polynomial |
+| $\operatorname{disc}p_{\tilde Q}=-4R^2$ | the discriminant |
+| $\lambda_\pm=Q_t\pm iR$ | the eigenvalues |
+| $\mathcal{N}=\{\langle\cdot\rangle_{\natural}=0\}$ | the null cone of the quaternionic norm |
+| $\mathcal S=\{R^2=0\}$ | the spectral-degenerate cone |
 | $\operatorname{Ann}_{\ell}(a)=\{v:av=0\}$ | the left annihilator, a right ideal |
 | $e_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$ | the spectral idempotents |
 | $\vec\Upsilon$ | a non-zero vector with $\vec\Upsilon^2=0$ |
@@ -1092,7 +1092,7 @@ The two cones are independent: neither contains the other. A zero divisor can ha
 
 ## Further Reading
 
-- [Norm Regularity and Degeneracy in the Biquaternion Algebra](norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the reduced norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.
+- [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections, the degenerate regimes, the Hermitian case and the spectral theorem.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the weak Peirce decomposition, the Peirce corners and the minimal left ideals.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the existence and uniqueness of the spectral decomposition in the general theory.
