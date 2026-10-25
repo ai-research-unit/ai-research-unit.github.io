@@ -4,7 +4,7 @@
 
 The biquaternion algebra carries four norms; the **Krein norm** is the indefinite one, the general quaternionic sesquilinear form read at its two equal arguments. It is real-valued, it is not multiplicative, and it does not decide invertibility. Its zero set is a real cone of codimension one on which units and zero divisors both occur, and its sign is not a ring-theoretic invariant.
 
-This article defines the Krein norm, records its homogeneity, proves that it is not multiplicative, and separates the algebra into the two cases of its value: the **Krein-regular** case of non-zero value, split into the positive and the negative regions, and the **Krein-degenerate** case of zero value, the null set. The closure of the positive case is the Krein cone. It then compares the metric partition with the algebraic partition of the algebra into units, origin and zero divisors, which is the partition carried by the quaternionic norm.
+This article defines the Krein norm, records its homogeneity, proves that it is not multiplicative, and separates the algebra into the two cases of its value: the **Krein-regular** case of non-zero value, split into the positive and the negative regions, and the **Krein-degenerate** case of zero value, the null set. The closure of the positive case is the Krein cone. It then compares the metric partition with the algebraic partition of the algebra into units, origin and zero divisors, which is the partition carried by the quaternionic norm, and explains why the Krein problem admits no second axis along the spectral condition: the Krein norm and the spectrum are invariants of different groups, and the plane that the quaternionic norm supports does not transfer.
 
 **Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ complex and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^*=\bar Q_t-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The **definite companion** is $\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, with $\langle\tilde Q\rangle_*=\lVert\tilde Q\rVert_E^2=\sum_\mu|Q_\mu|^2$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight. The product is the plain product $\tilde P\tilde Q$, associative and with the two-sided unit $e_t$. The **quaternionic norm** is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; it is complex-valued and multiplicative. Its regular and degenerate cases, the unit group and the zero-divisor cone, are the subject of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra*. The Krein form itself, its Gram matrix, its inertia, its fundamental symmetry and its doubly null lines are the subject of *The Krein Norm of the Biquaternion Algebra*; this article uses the form and studies the norm it carries, with the isotropic elements and the cone they close.
 
@@ -122,6 +122,94 @@ The points of $\mathcal K_{\mathrm d}$ are the zero divisors together with the o
 
 **Remark (the null set is not the zero-divisor set).** The element $e_t+\vec e_x$ is null and a unit; the element $\vec e_x+i\vec e_y$ is a zero divisor and not null. The null set has real codimension one and the zero-divisor set real codimension two; their intersection is $\mathcal K_{\mathrm d}$, of real dimension four.
 
+## Why There Is No Spectral Split
+
+**The question.** The quaternionic norm and the square of the vector part are the constant term and the discriminant of one characteristic polynomial, $p_{\tilde Q}(X)=X^2-2Q_tX+N$ with $N=Q_t^2+B^2$. The corpus therefore reads them as the two coordinates of one plane and cuts that plane into four sectors, one to each spectral pattern. The Krein norm invites the same treatment: one axis the sign of $\langle\tilde Q\rangle_{\natural*}$, the other the vanishing of $B^2$, giving a regular and a degenerate article with two spectral halves each. That plane is declined here. The reason is structural: the Krein norm and the spectral condition are invariants of **different groups**, so the two axes are not commensurable. The four reasons follow, and the last subsection records the refinement that is available.
+
+**The quaternionic plane, and why it works.** On $\mathbb{B}$ the pair $(N,B^2)$ is equivalent to the pair $(2Q_t,N)$, that is, to the characteristic polynomial. Both entries are polynomial invariants of the element under similarity, $\tilde Q\mapsto\tilde P\tilde Q\tilde P^{-1}$ with $\tilde P$ a unit: the trace, the norm and the discriminant are coefficients of $p_{\tilde Q}$, and $p_{\tilde P\tilde Q\tilde P^{-1}}=p_{\tilde Q}$. The four sectors are therefore four **similarity-invariant** conditions, and the four spectral patterns — an eigenvalue zero or not, the two eigenvalues equal or not — are exactly the four cells. The plane is well posed because both axes live in the same invariant ring, that of the algebra automorphisms.
+
+### The Null Set Is a Single Orbit
+
+**Theorem (transitivity on the null set).** The isometry group $\mathrm{U}(1,3)$ of the Krein form acts transitively on $\mathcal K\setminus\{0\}$.
+
+*Proof.* Two steps. First, the group is transitive on the isotropic lines: by Witt's theorem every isometry of a subspace extends, and the null lines are the points of the null quadric, on which $\mathrm{U}(1,3)$ acts transitively. So an isometry carries $\mathbb{C}\tilde Q_1$ to $\mathbb{C}\tilde Q_2$, and the image of $\tilde Q_1$ is $\mu\tilde Q_2$ for some $\mu\neq0$. Second, the stabiliser of a null line acts transitively on the line minus its origin. Let $\tilde Q$ be null and choose $\tilde V$ with $\langle\tilde V,\tilde V\rangle_{\natural*}=1$ and $\langle\tilde V,\tilde Q\rangle_{\natural*}\neq0$, possible because the radical of $\tilde Q^{\perp_K}$ is exactly $\mathbb{C}\tilde Q$. Replacing $\tilde Q$ by a multiple, take $\langle\tilde V,\tilde Q\rangle_{\natural*}=1$. In the basis $(\tilde Q,\tilde V)$ the Gram matrix is
+$$
+E=\begin{pmatrix}0&1\\1&1\end{pmatrix},
+$$
+of signature $(1,1)$, so its orthogonal complement is negative definite and every isometry of the plane extends by the identity. For $\mu\neq0$ the matrix
+$$
+M_\mu=\begin{pmatrix}\mu&b\\0&1/\bar\mu\end{pmatrix},
+\qquad
+2\operatorname{Re}\bigl(b/\mu\bigr)=1-\frac{1}{\lvert\mu\rvert^2},
+$$
+satisfies $M_\mu^{*}EM_\mu=E$ with $E$ that Gram matrix, and $M_\mu\tilde Q=\mu\tilde Q$. Such a $b$ exists for every $\mu\neq0$. Hence the stabiliser rescales the line by any non-zero factor, and the two steps compose.
+
+**Corollary (the spectral type is not a Krein invariant).** Every function on $\mathcal K\setminus\{0\}$ invariant under $\mathrm{U}(1,3)$ is constant there, because the set is a single orbit. The square of the vector part is not constant:
+$$
+B^2(e_t+\vec e_x)=1,\qquad
+B^2\Bigl(e_t+\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)\Bigr)=\tfrac12+\tfrac{i^2}{2}=0,
+$$
+and both elements are null, of Krein norms $1-1=0$ and $1-\tfrac12-\tfrac12=0$. **An isometry of the form therefore carries a spectrally regular null element to a spectrally degenerate one.** The would-be sectors are not stable under $\mathrm{U}(1,3)$, whereas the quaternionic sectors are stable under the unit group acting by conjugation. This is the decisive difference: $B^2$ is an invariant of the algebra and not of the form, and the isometry group contains transformations that are not algebra automorphisms.
+
+### The Krein Norm Is Not a Spectral Coefficient
+
+**The Krein norm is not a function of the characteristic polynomial.** Take $Q_t=1$ and the two vector parts $(i,0,0)$ and $(1,i,i)$. Both give $B^2=-1$ and therefore $N=0$, so both have the same characteristic polynomial $X^2-2X$, and the same spectrum $\{0,2\}$. Their Krein norms are
+$$
+1-\lvert i\rvert^2=0,\qquad
+1-\bigl(1+\lvert i\rvert^2+\lvert i\rvert^2\bigr)=-2.
+$$
+The same polynomial therefore carries a null value and a negative value. The Krein norm is not a coefficient of $p_{\tilde Q}$, and $p_{\tilde Q}$ is not a function of the Krein norm.
+
+**The Krein norm is not similarity-invariant.** For the unit $\tilde P=e_t+2i\vec e_x$ one has $N(\tilde P)=1+(2i)^2=-3$ and $\tilde P^{-1}=\tfrac13(-e_t+2i\vec e_x)$, and a direct computation gives
+$$
+\tilde P\,\vec e_y\,\tilde P^{-1}=-\tfrac53\vec e_y-\tfrac43 i\vec e_z .
+$$
+The square of the vector part is $25/9-16/9=1$ before and after, as it must be, while the Krein norm moves from $0-1=-1$ to $0-\bigl(25/9+16/9\bigr)=-41/9$. A similarity, which is the natural change of element in the spectral problem, does not preserve the Krein norm; an isometry, which preserves the Krein norm, does not preserve the spectral type. The two problems are carried by different groups, and neither group contains the other.
+
+**In the other direction, $B^2$ is not a function of the Krein norm.** The elements
+$$
+\tilde Q_1=e_t+\tfrac{1}{\sqrt2}\vec e_x,\qquad
+\tilde Q_2=e_t+\tfrac12(\vec e_x+i\vec e_y)
+$$
+have the same Krein norm $\tfrac12$, since $\lVert\vec Q_1\rVert_E^2=\tfrac12=\lVert\vec Q_2\rVert_E^2$, and different vector squares, $\tfrac12$ and $\tfrac14-\tfrac14=0$. Neither condition is a function of the other.
+
+### Every Krein Stratum Meets Both Spectral Types
+
+The examples of the preceding subsection already show that no Krein stratum is spectrally uniform. The table collects one witness of each type in each stratum.
+
+| Krein stratum | real dimension | spectrally degenerate witness | spectrally regular witness |
+|---|---|---|---|
+| positive region | $8$ | $e_t$, with $B^2=0$ | $e_t+\tfrac12\vec e_x$, with $B^2=\tfrac14$ |
+| negative region | $8$ | $\vec e_x+i\vec e_y$, with $B^2=0$ | $\vec e_x$, with $B^2=1$ |
+| doubly null set $\mathcal K_{\mathrm d}\setminus\{0\}$ | $4$ | none | $e_t+i\vec e_x$, with $B^2=-1$ |
+| isotropic units $\mathcal K_{\mathrm u}$ | $7$ | $e_t+\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$, with $B^2=0$ | $e_t+\vec e_x$, with $B^2=1$ |
+
+The third row is the sharp one: **the doubly null set off the origin is entirely spectrally regular.** There $N=0$ and $\langle\tilde Q\rangle_{\natural*}=0$ give $Q_t^2+B^2=0$ and $Q_t\neq0$, hence $B^2=-Q_t^2\neq0$. A spectral subdivision would have nothing to subdivide there, and it would still leave both cases to be treated inside each of the other three strata.
+
+### The Split Would Group the Wrong Things
+
+The four cells of the proposed plane are all non-empty, so the plane is definable; it is the grouping that fails.
+
+- The origin is in $\mathcal K_{\mathrm d}$ and is spectrally degenerate, $B^2=0$; the Peirce lines are in $\mathcal K_{\mathrm d}$ and are spectrally regular, $B^2=-Q_t^2\neq0$. A spectral split separates the origin from the Peirce lines, while the algebraic partition groups them: both are zero divisors, and both are doubly null. The natural stratum $\mathcal K_{\mathrm d}$ is destroyed.
+- The spectral split separates $\mathcal K_{\mathrm u}$ into the set $\mathcal K_{\mathrm u}\cap\{B^2=0\}$, of real dimension $5$, and its complement, of dimension $7$. The first set is a cone of null elements with a repeated eigenvalue and non-zero algebraic norm; every non-zero point of it is a unit. It is not an object of the Krein theory, and it is not an object of the spectral theory either: it is cut by the algebraic norm and the discriminant together, and the algebraic norm is what decides invertibility there.
+- The negative region is cut into the points with a repeated eigenvalue and the rest, although both halves contain units and zero divisors and both have the same Krein sign.
+
+The plane would therefore produce four articles that are each a mixture of algebraic classes and none of which is invariant under the isometry group of the form.
+
+### What Does Refine It
+
+There is a second plane, and it is the one the corpus uses: the Krein value against the **algebraic** value $\langle\tilde Q\rangle_{\natural}$, not the discriminant.
+
+| | $\langle\tilde Q\rangle_{\natural}\neq0$, unit | $\langle\tilde Q\rangle_{\natural}=0$ |
+|---|---|---|
+| $\langle\tilde Q\rangle_{\natural*}>0$ | positive region | empty |
+| $\langle\tilde Q\rangle_{\natural*}<0$ | negative units | negative zero divisors, $\mathcal Z\setminus\mathcal K_{\mathrm d}$ |
+| $\langle\tilde Q\rangle_{\natural*}=0$ | isotropic units $\mathcal K_{\mathrm u}$ | doubly null set $\mathcal K_{\mathrm d}$: the Peirce lines and the origin |
+
+The empty cell is the theorem that a positive element is a unit. Every other cell is non-empty, and each is an invariant set: the Krein value is preserved by $\mathrm{U}(1,3)$ and the algebraic value by the algebra automorphisms, so each cell is carved by a genuine invariant of one of the two structures. The refinement is the trace of the algebraic partition on the three Krein strata, and it is the one that decides the operator theory — the polar decomposition and the sandwich follow $\langle\cdot\rangle_{\natural}$, while the adjoint and the isometries follow $\langle\cdot\rangle_{\natural*}$.
+
+This is the refinement used in the rest of this article: the two sign regions, the doubly null set and the isotropic units. The spectral condition enters only as a remark on the operator theory, never as a subdivision.
+
 ## The Krein Cone
 
 **Definition.** The **Krein cone** is the closure of the positive-regular region,
@@ -195,6 +283,8 @@ The comparison with invertibility is one-sided. Every positive element is a unit
 On the six remarkable subspaces the Krein norm is definite on the centre and on the vector subspace, and Lorentzian on the four four-dimensional subspaces; the null elements of the quaternion and anti-quaternion subspaces are units, and those of the Hermitian and anti-Hermitian subspaces are zero divisors.
 
 The quaternionic norm decides invertibility: its non-zero set is the unit group and its zero set is the algebraic null cone. The Krein norm decides only a metric position, and the two partitions agree only in the implication positive implies unit.
+
+No spectral split is available. The quaternionic plane works because the norm and the discriminant are two coefficients of one characteristic polynomial, hence two similarity-invariant conditions; the Krein norm is neither a coefficient nor similarity-invariant. The isometry group acts transitively on the non-zero null set, so it carries a spectrally regular null element to a spectrally degenerate one; the Krein norm is not a function of the characteristic polynomial; every Krein stratum meets both spectral types; and the doubly null set off the origin is entirely spectrally regular, so a spectral subdivision would separate the origin from the Peirce lines. The refinement that does exist is the Krein value against the algebraic value, and it is the partition of the two sector articles.
 
 ## Summary of Notation
 

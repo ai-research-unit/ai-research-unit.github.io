@@ -1,4 +1,4 @@
-# __The Norm-Regular, Spectrally Degenerate Sector__
+# __The Quaternionic Norm-Regular, Spectrally Degenerate Sector__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 \Sigma_{10}=\mathcal S\setminus\mathcal N,
 $$
 
-and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The Norm-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The Norm-Degenerate, Spectrally Regular Sector*.
+and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The Quaternionic Norm-Degenerate, Spectrally Regular Sector*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally degenerate** means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.
 
@@ -78,7 +78,7 @@ $$
 \Sigma_{10}=\Sigma_{10}^{\mathrm{s}}\sqcup\Sigma_{10}^{\mathrm{J}}.
 $$
 
-This split is the spectral refinement of the sector, and it is exactly the pair of zones called scalar and Jordan in the five-zone classification.
+This split is the spectral refinement of the sector: the scalar and Jordan strata are separated by the minimal polynomial, not by the two predicates.
 
 ### The scalar line
 
@@ -259,18 +259,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 
 **The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the cells that show it.
 
-**Position in the five-zone refinement.** The five zones of *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Five Zones*, sit with respect to the sectors as follows.
-
-| zone | condition | sector |
-|---|---|---|
-| **distinct** | $B^2\neq0$, $N\neq0$ | $\Sigma_{11}$ |
-| **zero divisor** | $B^2\neq0$, $N=0$ | $\Sigma_{01}$ |
-| **scalar** | $\vec Q=0$ | $\Sigma_{10}^{\mathrm{s}}\cup\{0\}$ |
-| **Jordan** | $B^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\Sigma_{10}^{\mathrm{J}}$ |
-| **nilpotent** | $B^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\Sigma_{00}\setminus\{0\}$ |
-
-Sector $10$ is therefore not a zone: it is the Jordan zone together with the scalar zone **minus the origin**, and the missing point of the scalar zone belongs to $\Sigma_{00}$. This is why the four-sector table and the five-zone table cannot be merged: the finer spectral split cuts through one sector and moves a point of another.
-
+**Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $N\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Four Sectors Compared*.
 ## Consequences
 
 **Eigenbasis.** It fails on the Jordan part, where the element is a single Jordan block; it exists trivially on the scalar line, where the one-term decomposition into eigenspaces is all there is and any two-term refinement is non-unique. There is no genuine two-term spectral decomposition anywhere in the sector.
@@ -314,10 +303,10 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 
 ## Further Reading
 
-- [The Norm-Degenerate, Spectrally Degenerate Sector](the-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
-- [The Norm-Degenerate, Spectrally Regular Sector](the-norm-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
+- [The Quaternionic Norm-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
+- [The Quaternionic Norm-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
 - [Quaternionic Norm Regularity and Degeneracy in the Biquaternion Algebra](quaternionic-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the five zones and the comparison of the two cones.
+- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
