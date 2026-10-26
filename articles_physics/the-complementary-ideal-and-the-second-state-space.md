@@ -17,7 +17,7 @@ The reading has three parts, and the article keeps them apart. The first is the 
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The idempotents, the Peirce decomposition and the minimal left ideals | [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html) |
+| The idempotents, the Peirce decomposition and the minimal left ideals | [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html) |
 | The module theory: the simple module, the regular module and its two summands | [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html) |
 | The column ideals of a matrix ring and their one-idempotent-one-nilpotent bases | [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html) |
 | The canonical Hermitian form and the positivity of the sesquilinear pairing | [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html) |
@@ -225,7 +225,7 @@ The complement is read as the second state space. The mass coupling is the pair 
 
 ## Further Reading
 
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the corners, the matrix units and the ideals.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the corners, the matrix units and the ideals.
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html), for the simple module and the regular module.
 - [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html), for the structural basis count.
 - [The Spinor Module and Its Two Structures](the-spinor-module-and-its-two-structures.html), for the two structures of the first copy.

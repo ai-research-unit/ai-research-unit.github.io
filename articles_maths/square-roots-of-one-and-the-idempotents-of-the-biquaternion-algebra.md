@@ -35,7 +35,7 @@ The following table collects the results at a glance.
 | Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$ | two families |
 | Involutions | the natural conjugation and the bar exchange the standard pair; the star fixes both | three involutions |
 
-The article is algebraic. It does not treat the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, which is *Square Roots of a General Element in the Biquaternion Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the structure of the zero-divisor set, which is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; or the ideals the standard idempotents generate, which are *Ideals and Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
+The article is algebraic. It does not treat the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, which is *Square Roots of a General Element in the Biquaternion Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the structure of the zero-divisor set, which is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; or the ideals the standard idempotents generate, which are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
@@ -440,7 +440,7 @@ $$
 \vec e_z\tilde\Pi_{+}=-i\tilde\Pi_{+},\qquad \vec e_z\tilde\Pi_{-}=i\tilde\Pi_{-},\qquad \vec e_y\tilde\Pi_{+}=i\vec e_x\tilde\Pi_{+},
 $$
 
-the first because $\vec e_z\tilde\Pi_{+}=(\vec e_z+i\vec e_z^2)/2=(\vec e_z-i)/2=-i\tilde\Pi_{+}$, and similarly for $\tilde\Pi_{-}$. The relations reduce the four products $e_\mu\tilde\Pi_{+}$ to $\tilde\Pi_{+}$ and $\vec e_x\tilde\Pi_{+}$, so that $\{\tilde\Pi_{+},\vec e_x\tilde\Pi_{+}\}$ is a $\mathbb{C}$-basis of the minimal left ideal $\mathbb{B}\tilde\Pi_{+}$. The two ideals, their direct-sum decomposition of $\mathbb{B}$, their bases and their module structure are *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
+the first because $\vec e_z\tilde\Pi_{+}=(\vec e_z+i\vec e_z^2)/2=(\vec e_z-i)/2=-i\tilde\Pi_{+}$, and similarly for $\tilde\Pi_{-}$. The relations reduce the four products $e_\mu\tilde\Pi_{+}$ to $\tilde\Pi_{+}$ and $\vec e_x\tilde\Pi_{+}$, so that $\{\tilde\Pi_{+},\vec e_x\tilde\Pi_{+}\}$ is a $\mathbb{C}$-basis of the minimal left ideal $\mathbb{B}\tilde\Pi_{+}$. The two ideals, their direct-sum decomposition of $\mathbb{B}$, their bases and their module structure are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
 
 ### The Classification of the Idempotents
 
@@ -627,7 +627,7 @@ The two ideals are collected in the table.
 | Right | $\tilde\Pi_{+}$ | $\tilde\Pi_{+}\mathbb{B}$ | yes |
 | Right | $\tilde\Pi_{-}$ | $\tilde\Pi_{-}\mathbb{B}$ | yes |
 
-The minimality is the primitive character of the pair: the only idempotents of $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{+}$ and $\tilde\Pi_{-}\mathbb{B}\tilde\Pi_{-}$ are $0$ and the identity of the corner, so neither ideal contains a proper nonzero ideal of its own. The Peirce decomposition, the corner algebras and the matrix units of the two ideals are *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
+The minimality is the primitive character of the pair: the only idempotents of $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{+}$ and $\tilde\Pi_{-}\mathbb{B}\tilde\Pi_{-}$ are $0$ and the identity of the corner, so neither ideal contains a proper nonzero ideal of its own. The Peirce decomposition, the corner algebras and the matrix units of the two ideals are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
 
 ### Idempotents and the Involutions
 
@@ -700,7 +700,7 @@ The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\
 - [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $+1$ here are one case.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the roots of $0$ and the nilpotents, the second central value.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, of which the non-pure family consists of the complex multiples of the non-trivial idempotents.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the minimal left ideals the standard idempotents generate and the Peirce decomposition they drive.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the minimal left ideals the standard idempotents generate and the Peirce decomposition they drive.
 - [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four root sets and the four idempotent sets compared.
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), the real commutative case, where the roots of $+1$ and the idempotents are four points and there is no root of $-1$.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), the complex commutative case, where the roots of $+1$ and the idempotents are four points and the roots of $-1$ are four.

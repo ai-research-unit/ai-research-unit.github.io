@@ -27,7 +27,7 @@ Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi
 | Eigenvalue decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
 | Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$, with zero off-diagonal corners |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
-| Matrix model | $M(Q_{\mathrm{sp}})=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
+| Matrix model | $M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per chirality |
 | Unit group | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
@@ -290,20 +290,20 @@ $$
 $$
 is a basis of the plane $\mathbb{D}$.
 
-**Coordinates.** Expanding a general element $Q_{\mathrm{sp}}=x_0+x_1j$ gives
+**Coordinates.** Expanding a general element $Q_2=x_0+x_1j$ gives
 $$
-Q_{\mathrm{sp}}=(x_0+x_1)\Pi_++(x_0-x_1)\Pi_-,
+Q_2=(x_0+x_1)\Pi_++(x_0-x_1)\Pi_-,
 $$
-so the coordinates of $Q_{\mathrm{sp}}$ in this basis are $(x_0+x_1,\,x_0-x_1)$. For $Q$ itself,
+so the coordinates of $Q_2$ in this basis are $(x_0+x_1,\,x_0-x_1)$. For $Q$ itself,
 $$
 Q=q+jq'\quad\longleftrightarrow\quad(\lambda_+,\lambda_-)=(q+q',\,q-q').
 $$
 
-**The coordinates.** The coordinates of $Q_{\mathrm{sp}}$ in the eigenbasis are its two idempotent coordinates $(a_1,a_2)$, and the decomposition is the identity $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$. No further data are carried by the eigenbasis.
+**The coordinates.** The coordinates of $Q_2$ in the eigenbasis are its two idempotent coordinates $(a_1,a_2)$, and the decomposition is the identity $Q_2=a_1\Pi_++a_2\Pi_-$. No further data are carried by the eigenbasis.
 
 ### The Action of $Q$ and the Eigenbasis
 
-**Definition.** An **eigenvector** of $Q$ is a nonzero $Q_{\mathrm{sp}}$ with $QQ_{\mathrm{sp}}=\mu Q_{\mathrm{sp}}$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $Q$ is a basis of $\mathbb{D}$ consisting of eigenvectors.
+**Definition.** An **eigenvector** of $Q$ is a nonzero $Q_2$ with $QQ_2=\mu Q_2$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $Q$ is a basis of $\mathbb{D}$ consisting of eigenvectors.
 
 In the basis $(\Pi_+,\Pi_-)$ the action is diagonal:
 $$
@@ -389,7 +389,7 @@ a_1\longmapsto\lambda_+a_1,
 \qquad
 a_2\longmapsto\lambda_-a_2.
 $$
-A general element $Q_{\mathrm{sp}}=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
+A general element $Q_2=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
 
 **Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
 $$
@@ -405,7 +405,7 @@ Each is one-dimensional over $\mathbb{C}$ and two-dimensional over $\mathbb{R}$.
 
 Write a general element in the eigenbasis as
 $$
-Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-,
+Q_2=a_1\Pi_++a_2\Pi_-,
 \qquad a_1,a_2\in\mathbb{R}
 $$
 
@@ -416,7 +416,7 @@ $$
 $$
 where $E_{ij}$ is the matrix unit with $1$ in row $i$ and column $j$. Then
 $$
-M(Q_{\mathrm{sp}})=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
+M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix},
 \qquad
 [L_Q]_{(\Pi_+,\Pi_-)}=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
@@ -728,7 +728,7 @@ which are real; they are distinct exactly when $q'\neq0$. In that case the idemp
 | Eigenvalue decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-=(q+q')\Pi_++(q-q')\Pi_-$ |
 | Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
-| Matrix model | $M(Q_{\mathrm{sp}})=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
+| Matrix model | $M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
 | Nilpotents | none; the algebra is reduced, so $N^2=0$ implies $N=0$ |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, the two minimal ideals; spinors $a_1\Pi_+$ and $a_2\Pi_-$ |
 | Polynomial calculus | $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ |
@@ -789,7 +789,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $L_Q(X)=QX$ | Multiplication operator; eigenvalues $\lambda_+,\lambda_-$ in the eigenbasis |
 | $[L_Q]_{(1,j)}$ | Matrix of $L_Q$ in the basis $(1,j)$, $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
 | $[L_Q]_{(\Pi_+,\Pi_-)}$ | Diagonal matrix of $L_Q$ in the eigenbasis, $\operatorname{diag}(\lambda_+,\lambda_-)$ |
-| $M(Q_{\mathrm{sp}})$ | Peirce matrix of a general element, $\operatorname{diag}(a_1,a_2)$ |
+| $M(Q_2)$ | Peirce matrix of a general element, $\operatorname{diag}(a_1,a_2)$ |
 | $E_{ij}$ | Matrix units of the $2\times2$ model |
 | $a_1,a_2$ | Spinor coordinates on $S_+$ and $S_-$, the two diagonal entries of the matrix in the eigenbasis |
 | $\alpha,\beta$ | Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$ |
@@ -800,7 +800,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\mathbb{D}^\times=\{Q\in\mathbb{D}:\langle Q\rangle_{*}\neq0\}$ | Group of units, characterised by $\lambda_+\lambda_-\neq0$ |
 | $L=\{(m/2,n/2):m,n\in\mathbb{Z},\ m\equiv n\pmod2\}$ | Lattice of basis-coordinate data for integral eigenvalue coordinates $\mu_\pm\in\mathbb{Z}$ |
 | $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $t=\operatorname{artanh}(q'/q)$ | Modulus and hyperbolic angle, with $\lambda_\pm=r \exp(\pm t)$ on the identity component |
-| $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$ | General element in the spinor coordinates, with matrix $\operatorname{diag}(a_1,a_2)$ |
+| $Q_2=a_1\Pi_++a_2\Pi_-$ | General element in the spinor coordinates, with matrix $\operatorname{diag}(a_1,a_2)$ |
 | $Q_2=\mu_+\Pi_++\mu_-\Pi_-$ | General element in the eigenvalue coordinates |
 | $\mu$ | A test scalar in the definition of an eigenvalue |
 | $\mu_\pm$ | Eigenvalue coordinates on the diagonal part |

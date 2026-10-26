@@ -17,6 +17,7 @@ This article reads that structure in the biquaternion algebra. The spectral deco
 | Left and right eigenvalues, and the central-spectrum convention | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The spectral theorem for a normal element | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The matrix model and the determinant | [The Element and Operator Representations](the-element-and-operator-representations.html) |
+| The Hermitian norm of the flow and the norm deficit $\lVert\rho\rVert^2-1$ | [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), §*Normality, Unitarity and the Hermitian Norm of the Flow* |
 | The degenerate case and the non-semisimple class | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 ## The Two Eigenbases
@@ -96,6 +97,50 @@ $$
 $$
 
 by the Cauchy–Schwarz inequality, with equality exactly when $r$ and $\ell$ are proportional. The factor is therefore one precisely in the normal case, and it grows as the two bases turn away from each other. It is the standard measure of the excess of a non-normal mode over an orthogonal one.
+
+**Proposition (the Petermann factor is the norm deficit).** Let $B\neq0$, let $\rho=\vec Q/B$, and put $\lVert\rho\rVert^2=\sum_k\lvert\rho_k\rvert^2$. Then the two projectors have the same factor,
+
+$$
+\kappa_+=\kappa_-=\frac{1+\lVert\rho\rVert^2}{2}=1+\frac{\lVert\rho\rVert^2-1}{2}.
+$$
+
+*Proof.* Write $\tilde\Pi_\sigma=\tfrac12(e_t-\sigma i\rho)$ for $\sigma=\pm$, and recall $\rho^*=-\bar\rho$, so $\tilde\Pi_\sigma^*=\tfrac12(e_t-\sigma i\bar\rho)$. Multiplying,
+
+$$
+\tilde\Pi_\sigma^*\tilde\Pi_\sigma
+=\tfrac14\left(e_t-\sigma i(\rho+\bar\rho)-\bar\rho\rho\right).
+$$
+
+The term $\rho+\bar\rho$ is a vector, of zero scalar part. For the last term, $\bar\rho\rho=\sum_{k,l}\bar\rho_k\rho_le_ke_l$, and only $k=l$ contributes to the scalar part, with $e_k^2=-e_t$; hence $\operatorname{Sc}(\bar\rho\rho)=-\sum_k\lvert\rho_k\rvert^2=-\lVert\rho\rVert^2$. Therefore $\operatorname{Sc}(\tilde\Pi_\sigma^*\tilde\Pi_\sigma)=\tfrac14(1+\lVert\rho\rVert^2)$ for both signs. The functional $2\operatorname{Sc}$ is the trace of $\mathbb{B}$, since $2\operatorname{Sc}(XY)=2\operatorname{Sc}(YX)$ and $2\operatorname{Sc}(e_t)=2$; hence $\kappa_\sigma=2\operatorname{Sc}(\tilde\Pi_\sigma^*\tilde\Pi_\sigma)=\tfrac12(1+\lVert\rho\rVert^2)$.
+
+The excess Petermann factor is therefore half the norm deficit $\lVert\rho\rVert^2-1$ of *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*Normality, Unitarity and the Hermitian Norm of the Flow*. The same distance from normality is read twice: as the amplitude $\lVert\rho\rVert^2$ of the oscillating term in the flow, and as the factor $(1+\lVert\rho\rVert^2)/2$ of the projectors. The factor is one exactly when $\lVert\rho\rVert^2=1$, that is exactly when $\rho$ is real, which is the normality criterion of *The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*. It is a factor, not a rate: it does not set the growth of the flow, which is carried by $Q_t$ and $B$.
+
+**Corollary (the factor in coordinates, and the Gram form).** Put $\lVert\vec Q\rVert^2=\sum_k\lvert Q_k\rvert^2$, the Euclidean square of the complex vector, and let $\lvert B^2\rvert$ be the modulus of the complex number $B^2$. Since $\rho_k=Q_k/B$, one has $\lVert\rho\rVert^2=\lVert\vec Q\rVert^2/\lvert B^2\rvert$, and therefore
+
+$$
+\kappa_\sigma=\frac{\lVert\vec Q\rVert^2+\lvert B^2\rvert}{2\lvert B^2\rvert},
+\qquad
+\kappa_\sigma-1=\frac{\lVert\vec Q\rVert^2-\lvert B^2\rvert}{2\lvert B^2\rvert}.
+$$
+
+Hence $\kappa_\sigma\ge1$ is the triangle inequality $\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the $Q_k^2$ have one argument, that is, exactly when $\rho$ is real. This is a second proof of the bound, independent of Cauchy–Schwarz.
+
+The cross term is the same number. From $\tilde\Pi_+^*\tilde\Pi_-=\tfrac14\bigl(e_t+i(\rho-\bar\rho)+\bar\rho\rho\bigr)$ and $\operatorname{Sc}(\bar\rho\rho)=-\lVert\rho\rVert^2$,
+
+$$
+2\operatorname{Sc}\left(\tilde\Pi_+^*\tilde\Pi_-\right)=\tfrac12\left(1-\lVert\rho\rVert^2\right)=1-\kappa_\sigma
+=2\operatorname{Sc}\left(\tilde\Pi_-^*\tilde\Pi_+\right).
+$$
+
+The Gram form on the span of the two projectors, taken in the trace pairing $\langle X,Y\rangle=2\operatorname{Sc}(X^*Y)$, therefore has the value $\kappa_\sigma$ on the diagonal and $1-\kappa_\sigma$ off it. It is positive definite with eigenvalues $1$ and $\lVert\rho\rVert^2$: the eigenvalue $1$ is the completeness relation $\tilde\Pi_++\tilde\Pi_-=e_t$, the other is the norm deficit. The projectors are orthogonal exactly when $\kappa_\sigma=1$; otherwise their overlap $1-\kappa_\sigma$ is minus the excess.
+
+Near the cone, with $\lVert\vec Q\rVert^2$ fixed and $\lvert B^2\rvert\to0$,
+
+$$
+\kappa_\sigma\sim\frac{\lVert\vec Q\rVert^2}{2\lvert B^2\rvert},
+$$
+
+so the divergence is at the rate $1/\lvert B^2\rvert$, not merely "divergent".
 
 | Quantity | Normal element | Non-normal element |
 | --- | --- | --- |
@@ -184,6 +229,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 - The biquaternion relations $\tilde\Pi_\sigma\tilde\Pi_\tau=\delta_{\sigma\tau}\tilde\Pi_\sigma$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ are the biorthogonality and completeness of the two bases.
 - The two eigendirections are orthogonal as idempotents and non-orthogonal in the Hilbert space; the cross inner product $2\operatorname{Sc}(\tilde\Pi_+^{*}\tilde\Pi_-)$ measures the failure.
 - The Petermann factor $\kappa_\sigma=2\operatorname{Sc}(\tilde\Pi_\sigma^{*}\tilde\Pi_\sigma)$ is at least one and equals one exactly when the element is normal.
+- The Petermann factor is the norm deficit, $\kappa_\sigma=(1+\lVert\rho\rVert^2)/2=(\lVert\vec Q\rVert^2+\lvert B^2\rvert)/(2\lvert B^2\rvert)$ with $\rho=\vec Q/B$: the excess $\kappa_\sigma-1$ is half the deficit $\lVert\rho\rVert^2-1$ of the flow, and the Gram form of the two projectors has eigenvalues $1$ and $\lVert\rho\rVert^2$.
 - The biorthogonal probability rule is $p_\sigma=\lvert\ell_\sigma^{\dagger}\psi\rvert^{2}/\langle\psi,\eta\psi\rangle$ with $\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger}$; it is not the Born rule unless $\eta=I$.
 - A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\sigma=2\operatorname{Sc}(\tilde\varrho\tilde\Pi_\sigma)$.
 - At an exceptional point the two bases coalesce and the metric degenerates; the probability rule has no limit there.
@@ -195,12 +241,14 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 | --- | --- |
 | $\tilde Q=Q_te_t+\vec Q$ | a general biquaternion, $Q_t\in\mathbb{C}$, $\vec Q\in\mathbb{C}^3$ |
 | $B^2=(\vec Q,\vec Q)$ | the complex norm squared of the vector part |
+| $\rho=\vec Q/B$ | the root of $-1$ supplied by the element, $\lVert\rho\rVert^2=\sum_k\lvert\rho_k\rvert^2$ |
+| $\lVert\vec Q\rVert^2=\sum_k\lvert Q_k\rvert^2$ | the Euclidean square of the complex vector part |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the eigenprojections, $\vec\Xi=-i\vec Q/B$ |
 | $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ matrix image |
 | $r_\sigma$, $\ell_\sigma$ | right and left eigenvectors, $\ell_\sigma^{\dagger}r_\tau=\delta_{\sigma\tau}$ |
 | $P_\sigma=r_\sigma\ell_\sigma^{\dagger}$ | the spectral projector, $\mathsf M_2(\tilde\Pi_\sigma)$ |
-| $\kappa_\sigma$ | the Petermann factor $\operatorname{tr}(P_\sigma^{\dagger}P_\sigma)$ |
+| $\kappa_\sigma$ | the Petermann factor $\operatorname{tr}(P_\sigma^{\dagger}P_\sigma)=(1+\lVert\rho\rVert^2)/2$ |
 | $\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger}$ | the metric of the biorthogonal basis |
 | $\tilde\varrho$ | a density matrix, Hermitian, positive, trace one |
 

@@ -403,7 +403,7 @@ $$
 0\subset\mathbb{C}\vec Q\subset\ker L_{\vec Q}=\operatorname{im}L_{\vec Q}\subset\mathbb{B}.
 $$
 
-A Jordan basis of $L_{\vec Q}$ needs two vectors outside $\ker L_{\vec Q}$ whose images span the kernel. The quotient $\mathbb{B}/\ker L_{\vec Q}$ is two-dimensional, but no splitting of it is determined by $\vec Q$. The eigenbasis fails on the cone for this reason: the isotropic line admits no canonical complement.
+A Jordan basis of $L_{\vec Q}$ needs two vectors outside $\ker L_{\vec Q}$ whose images span the kernel. The quotient $\mathbb{B}/\ker L_{\vec Q}$ is two-dimensional, but no splitting of it is determined by $\vec Q$ and the bilinear form. The eigenbasis fails on the cone for this reason: the isotropic line admits no complement for the bilinear form. The definite Hermitian form is not degenerate on the line and determines a splitting; the resulting canonical Jordan basis is constructed in *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion*.
 
 ## The Similarity Classification
 
@@ -477,7 +477,7 @@ The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimen
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the two cones, the four sectors, the two decompositions and the two operator loci.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unipotent stratum inside the unit group.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent stratum and the origin.
-- [The Spectrally Degenerate Sector](the-spectrally-degenerate-sector.html), for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.
+- [The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections, the degenerate regimes, the Hermitian case and the spectral theorem.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the existence and uniqueness of the spectral decomposition in the general theory.
 - [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), for the interpolating idempotents.

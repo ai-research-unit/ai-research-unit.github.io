@@ -39,7 +39,7 @@ $$
 \boxed{\;\Theta_{\tilde{Q}_1}(x) = \tilde{Q}_1\,x\,\tilde{Q}_1^{*} = \mathrm{H}_{\tilde{Q}_1}(x)\;}
 $$
 
-of *Two-Sided Operator and the Polar Decomposition*, §*The Sandwich of the Word*. Its two general laws read in this algebra as the composition
+of *Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*, §*The Sandwich of the Word*. Its two general laws read in this algebra as the composition
 
 $$
 \mathrm{H}_{\tilde{Q}_1\tilde Q_2} = \mathrm{H}_{\tilde{Q}_1}\circ\mathrm{H}_{\tilde Q_2},
@@ -72,7 +72,7 @@ $$
 \langle\mathrm{H}_{\tilde{Q}_1}(x)\rangle_{\natural} = |\langle\tilde{Q}_1\rangle_{\natural}|^{2}\,\langle x\rangle_{\natural}
 $$
 
-is the general similarity statement of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in its biquaternion form. The operator is *Two-Sided Operator and the Polar Decomposition*, §*The Sandwich of the Word*; the Lorentzian application is *Biquaternion Rotations and Lorentz Transformations*.
+is the general similarity statement of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in its biquaternion form. The operator is *Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*, §*The Sandwich of the Word*; the Lorentzian application is *Biquaternion Rotations and Lorentz Transformations*.
 
 **Corollary (the operator is not an automorphism off the slice).** $\mathrm{H}_{\tilde{Q}_1}(xy) = \mathrm{H}_{\tilde{Q}_1}(x)\mathrm{H}_{\tilde{Q}_1}(y)$ holds exactly when $\tilde{Q}_1^{*}\tilde{Q}_1 = 1$, which is the general unitality and automorphism theorem of *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*; the insertion between $x$ and $y$ is the defect $\tilde{Q}_1^{*}\tilde{Q}_1$, and the dagger sandwich is an automorphism only on the slice.
 

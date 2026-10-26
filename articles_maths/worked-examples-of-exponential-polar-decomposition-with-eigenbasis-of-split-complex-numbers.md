@@ -38,9 +38,9 @@ $$
 
 which is the matrix form of $Q=\lambda_+\Pi_++\lambda_-\Pi_-$.
 
-**The spinor spaces.** The two spinor spaces are the minimal ideals $S_\pm=\mathbb{R}\Pi_\pm$, each a real line; the algebra is commutative, so there are no nilpotents and no mixed part. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with $a_1,a_2\in\mathbb{R}$ and
+**The spinor spaces.** The two spinor spaces are the minimal ideals $S_\pm=\mathbb{R}\Pi_\pm$, each a real line; the algebra is commutative, so there are no nilpotents and no mixed part. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with $a_1,a_2\in\mathbb{R}$ and
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}.
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}.
 $$
 Its first column $a_1\Pi_+$ is a spinor of first chirality and its second column $a_2\Pi_-$ a spinor of second chirality. On $S_+$ multiplication by $Q$ is the scalar $\lambda_+$ and on $S_-$ it is the scalar $\lambda_-$. After complexification the same formulas hold with $a_1,a_2\in\mathbb{C}$.
 
@@ -67,9 +67,9 @@ In case 6 and case 7 the two eigenvalues coincide and the two lines carry the sa
 
 **The eigenvalue decomposition.** $Q=5+3j=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=8$ and $\lambda_-=2$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 
@@ -79,9 +79,9 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 
 **The eigenvalue decomposition.** $Q=3+5j=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=8$ and $\lambda_-=-2$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 
@@ -91,9 +91,9 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 
 **The eigenvalue decomposition.** $Q=-5-3j=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=-8$ and $\lambda_-=-2$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 
@@ -103,9 +103,9 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 
 **The eigenvalue decomposition.** $Q=1-2j=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=-1$ and $\lambda_-=3$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 
@@ -115,9 +115,9 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 
 **The eigenvalue decomposition.** $Q=j=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=1$ and $\lambda_-=-1$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 
@@ -127,9 +127,9 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 
 **The eigenvalue decomposition.** $Q=2=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=2$ and $\lambda_-=2$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 
@@ -139,9 +139,9 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 
 **The eigenvalue decomposition.** $Q=-2=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=-2$ and $\lambda_-=-2$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 
@@ -151,9 +151,9 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 
 **The eigenvalue decomposition.** $Q=1+j=\lambda_+\Pi_++\lambda_-\Pi_-$, with $\lambda_+=2$ and $\lambda_-=0$, so $[L_{Q}]=\operatorname{diag}(\lambda_+,\lambda_-)$.
 
-**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$, with
+**The spinor spaces and a general element.** $S_\pm=\mathbb R\Pi_\pm$, one line each, and the algebra is $S_+\oplus S_-$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with
 $$
-[L_{Q_{\mathrm{sp}}}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
+[L_{Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
 the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $Q$ itself the coordinates are $(a_1,a_2)=(\lambda_+,\lambda_-)$.
 

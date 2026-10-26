@@ -15,7 +15,7 @@ $$
 \mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
-**Boundaries.** The subspaces and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the polar action on them is *The Polar Decomposition and Remarkable Subspaces*; the matrix form of that action is *$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence*.
+**Boundaries.** The subspaces and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the polar action on them is *The Polar Decomposition and Remarkable Subspaces*; the matrix form of that action is *The Sandwich in the $M_2(\mathbb{C})$ Model*.
 
 ## The Table
 
@@ -30,7 +30,7 @@ Every subspace is the image of the basis vectors listed in its row, with the rea
 | $\mathbb{M}_+$ | $\tilde Q^{*}=\tilde Q$ | $\mathsf{M}_2(e_t),i\mathsf{M}_2(\vec e_k)$ | Hermitian matrices | $2q_t$ | $q_t^2-\lvert\vec q'\rvert^2$ | $(1,3)$ |
 | $\mathbb{M}_-$ | $\tilde Q^{\flat}=\tilde Q$ | $i\mathsf{M}_2(e_t),\mathsf{M}_2(\vec e_k)$ | $i$ times Hermitian matrices | $2iq'_t$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ | $(3,1)$ |
 
-The table is the matrix form of the six definitions. The two complex subspaces are of real dimension two and six; the four real-type subspaces are of real dimension four. The determinants are the quaternionic norm restricted to each subspace, and the last column gives the signature of the real quadratic form on the real subspace.
+The table is the matrix form of the six definitions. The two complex subspaces are of real dimension two and six; the four real-type subspaces are of real dimension four. The determinants are the quaternionic norm restricted to each subspace: complex-valued on the centre and the vector subspace, real on the four real-type subspaces. The last column is the signature of the Hermitian norm on the two complex subspaces, where the determinant has no signature, and the signature of the determinant on the four real-type subspaces.
 
 ## The Centre Subspace
 
@@ -153,6 +153,32 @@ of signature $(3,1)$. The subspace is not closed under multiplication; it is the
 
 **Why the material subspace is anti-Hermitian.** The determinant on a Hermitian matrix has signature $(1,3)$; on an anti-Hermitian matrix it has the opposite signature $(3,1)$. The material form is the one with the positive spatial part, and it is obtained by multiplying the Hermitian matrices by $i$. The factor $i$ is the matrix form of the statement that the material sector is the anti-Hermitian one.
 
+## The Roots of Plus One and the Idempotents
+
+**The roots of $+1$.** A matrix $X$ with $X^2=\mathrm I_2$ is diagonalisable with eigenvalues $\pm1$: it is a scalar involution $\pm\mathrm I_2$ when the eigenvalues agree, and a traceless involution when they differ. The six subspaces carry the following roots.
+
+| Subspace | Roots of $+1$ |
+|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $\pm\mathrm I_2$ |
+| $\mathrm{Vect}(\mathbb{B})$ | the traceless involutions, $\operatorname{Tr}X=0$, $X^2=\mathrm I_2$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $\pm\mathrm I_2$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | the Hermitian traceless involutions $\vec u\cdot\vec\sigma$, $\lvert\vec u\rvert=1$ |
+| $\mathbb{M}_+$ | $\pm\mathrm I_2$ and $\vec u\cdot\vec\sigma$, $\lvert\vec u\rvert=1$ |
+| $\mathbb{M}_-$ | none |
+
+The last row is immediate: an anti-Hermitian matrix has purely imaginary eigenvalues, so it cannot have the real eigenvalues $\pm1$. The table is the matrix form of the table of *Introduction to the Remarkable Subspaces*, §*The Roots of Zero and Plus One*.
+
+**The idempotents.** A matrix $\Pi$ with $\Pi^2=\Pi$ is a projector; if it is not $0$ or $\mathrm I_2$, its rank is one. In the six subspaces the only nontrivial idempotents are
+
+$$
+\Pi(\vec u)=\tfrac12\bigl(\mathrm I_2+\vec u\cdot\vec\sigma\bigr),
+\qquad \vec u\in\mathbb{R}^3,\quad\lvert\vec u\rvert=1,
+$$
+
+and they all lie in the Hermitian subspace $\mathbb{M}_+$. The centre and the quaternion subspace contain only $0$ and $\mathrm I_2$; the vector subspace, the anti-quaternion subspace and $\mathbb{M}_-$ contain only $0$. The family is the matrix form of the Hermitian idempotents $\tfrac12(e_t+i\vec u)$ of *Introduction to the Remarkable Subspaces*, §*The Idempotents and the Ideals in the Remarkable Subspaces*.
+
+**The nilpotents.** The roots of $0$ are the nilpotents, and a nonzero nilpotent has trace zero and rank one. It lies in the vector subspace and on the null cone, and it lies in none of the other five subspaces except through the common origin. The idempotent and the nilpotent are the two ends of the rank-one variety: $\Pi^2=\Pi$ and $N^2=0$.
+
 ## How They Fit Together
 
 **The three splits.**
@@ -193,6 +219,6 @@ The six remarkable subspaces are the scalar matrices, the traceless matrices, th
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the three splits and the intersections
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the forms restricted to the subspaces
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
-- [$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence](m2c-representation-the-sandwich-as-a-matrix-congruence.html), for the matrix action on the two sectors
+- [The Sandwich in the $M_2(\mathbb{C})$ Model](the-sandwich-in-the-m2c-model.html), for the matrix action on the two sectors
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the material reading

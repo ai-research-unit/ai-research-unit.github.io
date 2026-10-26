@@ -110,7 +110,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html)
 - [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
 - [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html)
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html)
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html)
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html)
@@ -126,7 +126,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### Biquaternions Standard Element Representations
 
 - [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](../articles_maths/m2c-representation-the-matrix-product-and-the-algebra-structure.html)
-- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html)
+- [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](../articles_maths/m4c-representation-the-matrix-product-and-the-algebra-structure.html)
 - [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html)
 
 #### Biquaternions Polar Decomposition
@@ -141,14 +141,14 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
 - [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), §*The Isometry Group and the Absence of a Pin Group*
 - [One-Sided Operators on the Biquaternion Algebra](../articles_maths/one-sided-operators-on-the-biquaternion-algebra.html)
-- [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
+- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
 - [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
 
 #### Operators Representations
 
-- [One-Sided Operator and the Polar Decomposition](../articles_maths/one-sided-operator-and-the-polar-decomposition.html)
-- [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
+- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
+- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
 
 #### The Krein Form
 
@@ -182,7 +182,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html)
 - [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html)
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
-- [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
+- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)

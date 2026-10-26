@@ -196,28 +196,28 @@ each of complex dimension two. A **spinor of first chirality** is an element of 
 
 Write a general element in the eigenbasis as
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}e_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}e_-,
-\qquad Q_{\mathrm{sp},ij}\in\mathbb{C}.
+\tilde Q_2=Q_{2,11}e_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}e_-,
+\qquad Q_{2,ij}\in\mathbb{C}.
 $$
 A spinor of first chirality is
 $$
-\xi_+=Q_{\mathrm{sp},11}e_++Q_{\mathrm{sp},21}\vec\Upsilon_+,
+\xi_+=Q_{2,11}e_++Q_{2,21}\vec\Upsilon_+,
 $$
-with coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ in the basis $(e_+,\vec\Upsilon_+)$. Since $e_+\in\mathbb{B}_{++}$ and $\vec\Upsilon_+\in\mathbb{B}_{-+}$, left multiplication by $\tilde Q=c\,e_+$ gives
+with coordinates $(Q_{2,11},Q_{2,21})$ in the basis $(e_+,\vec\Upsilon_+)$. Since $e_+\in\mathbb{B}_{++}$ and $\vec\Upsilon_+\in\mathbb{B}_{-+}$, left multiplication by $\tilde Q=c\,e_+$ gives
 $$
-\tilde Q\xi_+=c\,Q_{\mathrm{sp},11}e_+,
+\tilde Q\xi_+=c\,Q_{2,11}e_+,
 \qquad
-(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(c\,Q_{\mathrm{sp},11},0).
+(Q_{2,11},Q_{2,21})\longmapsto(c\,Q_{2,11},0).
 $$
 A spinor of second chirality is
 $$
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}e_-,
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}e_-,
 $$
-with coordinates $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ in the basis $(\vec\Upsilon_-,e_-)$. Since $\vec\Upsilon_-\in\mathbb{B}_{+-}$ and $e_-\in\mathbb{B}_{--}$,
+with coordinates $(Q_{2,12},Q_{2,22})$ in the basis $(\vec\Upsilon_-,e_-)$. Since $\vec\Upsilon_-\in\mathbb{B}_{+-}$ and $e_-\in\mathbb{B}_{--}$,
 $$
-\tilde Q\xi_-=c\,Q_{\mathrm{sp},12}\vec\Upsilon_-,
+\tilde Q\xi_-=c\,Q_{2,12}\vec\Upsilon_-,
 \qquad
-(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(c\,Q_{\mathrm{sp},12},0).
+(Q_{2,12},Q_{2,22})\longmapsto(c\,Q_{2,12},0).
 $$
 Thus
 $$
@@ -252,8 +252,8 @@ e_-\mapsto E_{22},
 $$
 a general element is represented by
 $$
-\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=
-\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\mathsf M_2^{Q}(\tilde Q_2)=
+\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 \qquad
 \mathsf M_2^{Q}(\tilde Q)=
 \begin{pmatrix}c&0\\0&0\end{pmatrix}.
@@ -467,7 +467,7 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 | $E_{12}=(\vec e_x+i\vec e_y)/2$ | the nilpotent of the mixed corner $\mathbb{B}_{+-}$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, with $L_{\tilde Q}^2=2Q_tL_{\tilde Q}$ |
 | $A(\tilde Q)=\ker L_{\tilde Q}$ | the left annihilator, a right ideal |
-| $B(\tilde Q)=\ker R_{\tilde Q}$ | the right annihilator, a left ideal; equal to $S_-$ |\n| $S_\pm=\mathbb{B}e_\pm$ | the spinor spaces, the two chiralities |\n| $Q_{\mathrm{sp},ij}$ | the coordinates of a general element in the eigenbasis |\n| $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
+| $B(\tilde Q)=\ker R_{\tilde Q}$ | the right annihilator, a left ideal; equal to $S_-$ |\n| $S_\pm=\mathbb{B}e_\pm$ | the spinor spaces, the two chiralities |\n| $Q_{2,ij}$ | the coordinates of a general element in the eigenbasis |\n| $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
 
 ## Further Reading
 
@@ -476,7 +476,7 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its two strata.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the nilpotents $E_{ij}$.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce corners and the nilpotents $E_{ij}$.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the root variety $\tilde\Xi^2=e_t$ and the idempotent manifold.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and its failure at $\langle\tilde Q\rangle_{\natural}=0$.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

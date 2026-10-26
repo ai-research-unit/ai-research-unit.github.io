@@ -163,6 +163,30 @@ $$
 
 so the coefficient of the double pole is the nilpotent. The nilpotent is the residue of the merged pole, and the statement is the matrix form of the Jordan decomposition.
 
+## The Projectors as Residues
+
+**The signed projector.** The difference of the two projectors is the image of the spectral direction:
+
+$$
+\rho_+-\rho_-=\mathsf M_2(\vec\Xi)=-\frac{i}{B}\mathsf M_2(\vec Q),
+$$
+
+because $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$. The spectral resolution is therefore
+
+$$
+M=Q_t\mathrm I_2+iB\,(\rho_+-\rho_-),
+$$
+
+the scalar part carried by the identity and the vector part by the signed projector.
+
+**The contour integral.** For a small positively oriented circle $\gamma_\pm$ around $\lambda_\pm$ enclosing no other eigenvalue,
+
+$$
+\rho_\pm=\frac{1}{2\pi i}\oint_{\gamma_\pm}(z\mathrm I_2-M)^{-1}\,dz .
+$$
+
+The residue of the resolvent at $z=\lambda_\pm$ is $\rho_\pm$, by the partial-fraction decomposition of the preceding paragraph. The Lagrange polynomials and the contour integral are the same projector, read algebraically and analytically.
+
 ## The Standard Axis
 
 **The case $\vec Q\parallel\vec e_z$.** Take $\vec Q=Q_z\vec e_z$ and $B=Q_z$. Then
@@ -212,4 +236,4 @@ For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfra
 - [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix $\mathsf C_Q$
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the characteristic polynomial
-- [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](the-spectrally-regular-sector-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html), for the 4×4 spectral representation
+- [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 spectral representation

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The left regular representation $\mathsf{M}_4$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* is built from the multiplication and carries the Hermitian conjugation as the **conjugate transpose**, $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$, so it is a $*$-representation of the sesqualgebra. This article is the companion of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, and it reads the group *Topology on the Introduction to the General Plain Sesqualgebra of Biquaternions* on the regular matrices: the sesquilinear product becomes the product with the conjugate-transposed second factor, and the general plain sesquilinear form becomes the Hilbert–Schmidt pairing of the regular matrices, positive definite, with the Frobenius norm as its carrier and a double cover of the Lorentz group as its algebraic content.
+The left regular representation $\mathsf{M}_4$ of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure* is built from the multiplication and carries the Hermitian conjugation as the **conjugate transpose**, $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$, so it is a $*$-representation of the sesqualgebra. This article is the companion of *$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions*, and it reads the group *Topology on the Introduction to the General Plain Sesqualgebra of Biquaternions* on the regular matrices: the sesquilinear product becomes the product with the conjugate-transposed second factor, and the general plain sesquilinear form becomes the Hilbert–Schmidt pairing of the regular matrices, positive definite, with the Frobenius norm as its carrier and a double cover of the Lorentz group as its algebraic content.
 
 The regular representation adds one thing to the $2\times2$ reading: the positive definite form makes the Hermitian subspace a definite space on which the norm-one group acts, and that action is the two-to-one cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ of the identity component of the Lorentz group. The Frobenius norm of the regular matrix is twice the definite norm of the element.
 
@@ -134,9 +134,9 @@ The left regular representation is a $*$-representation, $\mathsf{M}_4(\tilde{Q}
 
 ## Further Reading
 
-- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), for the representation and its first properties
-- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), for the further reading of the regular representation
+- [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the representation and its first properties
+- [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the further reading of the regular representation
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the sesquilinear product on the algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra
-- [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the companion reading of the group
+- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the companion reading of the group
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the restriction theory of the form

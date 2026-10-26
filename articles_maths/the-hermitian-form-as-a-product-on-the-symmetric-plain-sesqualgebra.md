@@ -74,7 +74,7 @@ so the block has **no second form**: the trace form of the multiplication and th
 
 *Proof.* $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ and $\mathrm{Sc}(e_t) = 1$.
 
-**Remark (the trace functional).** The linear functional attached to the block is the scalar part $\mathrm{Sc}: \tilde Q_2 \mapsto Q_{2t}$, and in the $2\times2$ matrix model it is one half of the matrix trace, $\mathrm{Sc}(\tilde Q_2) = \tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde Q_2)$ (*The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*). On a value of the product it reads $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and the matrix trace of a value is twice the form,
+**Remark (the trace functional).** The linear functional attached to the block is the scalar part $\mathrm{Sc}: \tilde Q_2 \mapsto Q_{2t}$, and in the $2\times2$ matrix model it is one half of the matrix trace, $\mathrm{Sc}(\tilde Q_2) = \tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde Q_2)$ (*$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions*). On a value of the product it reads $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and the matrix trace of a value is twice the form,
 
 $$
 \operatorname{Tr}\mathsf{M}_2(\tilde Q_1\star\tilde Q_2) = 2\,\langle\tilde Q_1,\tilde Q_2\rangle_{*} ,

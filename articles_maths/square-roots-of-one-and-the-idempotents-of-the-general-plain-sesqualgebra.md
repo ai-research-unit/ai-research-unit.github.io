@@ -114,7 +114,7 @@ $$
 \mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_t-\tilde\Pi),\qquad \mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B},
 $$
 
-and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal; the general statements are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the decomposition carried by a plain idempotent is *Ideals and Peirce Decompositions of the Biquaternion Algebra*.
+and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal; the general statements are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the decomposition carried by a plain idempotent is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
 
 ### Every Idempotent of the Block Is Hermitian
 
@@ -236,7 +236,7 @@ $$
 \tilde\Pi_1(\vec u_z)=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_+ , \qquad \tilde\Pi_2(\vec u_z)=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_- ,
 $$
 
-and they are the images under $\mathsf{M}_2$ of the two diagonal matrix units of the matrix model: $\tilde\Pi_1(\vec u_z)$ corresponds to $E_{11}$ and $\tilde\Pi_2(\vec u_z)$ to $E_{22}$, as the transport of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* records. Since the equalities are equalities in the algebra, they hold for the block as well, a Hermitian element having the same square in the two products. $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+and they are the images under $\mathsf{M}_2$ of the two diagonal matrix units of the matrix model: $\tilde\Pi_1(\vec u_z)$ corresponds to $E_{11}$ and $\tilde\Pi_2(\vec u_z)$ to $E_{22}$, as the transport of *$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions* records. Since the equalities are equalities in the algebra, they hold for the block as well, a Hermitian element having the same square in the two products. $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 ### The Two Idempotents of a Root
 
@@ -379,7 +379,7 @@ by the multiplication of the basis, so the sum is $\tfrac14(4e_t+2\sqrt2\,i\vec 
 
 **Under the isomorphism $\mathsf{M}_2$ the idempotents correspond to the rank-one Hermitian idempotents of $M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde\Pi_+(\tilde\Xi))=\tfrac12(I+i\mathsf{M}_2(\vec u))$, and the family is exactly the set of those idempotents.**
 
-**Proposition.** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, which satisfies $\mathsf{M}_2(\tilde Q_2^{*})=\mathsf{M}_2(\tilde Q_2)^{\dagger}$ and $\mathsf{M}_2(\tilde Q_1\tilde Q_2^{*})=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}$, the idempotents correspond to the rank-one Hermitian idempotents of the matrix algebra,
+**Proposition.** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions*, which satisfies $\mathsf{M}_2(\tilde Q_2^{*})=\mathsf{M}_2(\tilde Q_2)^{\dagger}$ and $\mathsf{M}_2(\tilde Q_1\tilde Q_2^{*})=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}$, the idempotents correspond to the rank-one Hermitian idempotents of the matrix algebra,
 
 $$
 \mathsf{M}_2\bigl(\tilde\Pi_+(\tilde\Xi)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(\vec u)\bigr),
@@ -442,4 +442,4 @@ The square of an element of the general plain sesqualgebra is the Hermitian elem
 - [Square Roots of One and the Idempotents of the Quaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html), for the idempotents of the associative product, whose Hermitian half the block keeps.
 - [Zero Divisors of the General Plain Sesqualgebra](zero-divisors-of-the-general-plain-sesqualgebra.html), for the criterion $C=0$ that no root of $+1$ satisfies and among which the idempotents sit.
 - [The Specificities of the General Plain Sesqualgebra](the-specificities-of-the-general-plain-sesqualgebra.html), for the right-composition law and the projector criterion whose projector family is the whole plain idempotent set.
-- [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the model in which the idempotents correspond to the rank-one Hermitian idempotents $E_{11},E_{22}$ and their conjugates.
+- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the model in which the idempotents correspond to the rank-one Hermitian idempotents $E_{11},E_{22}$ and their conjugates.

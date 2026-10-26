@@ -73,7 +73,7 @@ A(\tilde Q)=\ker L_{\tilde Q}=\{\tilde X:\tilde Q\tilde X=0\},\qquad
 B(\tilde Q)=\ker R_{\tilde Q}=\{\tilde X:\tilde X\tilde Q=0\}
 $$
 
-are distinct complex planes of $\mathbb{C}^4$, each of dimension two, meeting in the line $\mathbb{C}\tilde Q$. Both contain $\tilde Q$ because $\tilde Q^2=0$. The image of $L_{\tilde Q}$ is the left ideal $\mathbb{B}\tilde Q$, non-zero and proper, hence minimal of complex dimension two (*Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals*), so $L_{\tilde Q}$ has rank two and its kernel is a plane; the same argument on the right gives rank two for $R_{\tilde Q}$. The two planes cannot coincide, because $A(\tilde Q)$ is a right ideal and $B(\tilde Q)$ is a left ideal, so a common plane would be a two-sided ideal of the simple algebra $\mathbb{B}$, which a plane is not. Finally, $X\tilde Q=0$ is equivalent to $\tilde Q X^{\natural}=0$ because $\tilde Q^{\natural}=-\tilde Q$, so the conjugation exchanges the two planes:
+are distinct complex planes of $\mathbb{C}^4$, each of dimension two, meeting in the line $\mathbb{C}\tilde Q$. Both contain $\tilde Q$ because $\tilde Q^2=0$. The image of $L_{\tilde Q}$ is the left ideal $\mathbb{B}\tilde Q$, non-zero and proper, hence minimal of complex dimension two (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals*), so $L_{\tilde Q}$ has rank two and its kernel is a plane; the same argument on the right gives rank two for $R_{\tilde Q}$. The two planes cannot coincide, because $A(\tilde Q)$ is a right ideal and $B(\tilde Q)$ is a left ideal, so a common plane would be a two-sided ideal of the simple algebra $\mathbb{B}$, which a plane is not. Finally, $X\tilde Q=0$ is equivalent to $\tilde Q X^{\natural}=0$ because $\tilde Q^{\natural}=-\tilde Q$, so the conjugation exchanges the two planes:
 
 $$
 A(\tilde Q)^{\natural}=B(\tilde Q).
@@ -130,7 +130,7 @@ $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
 $$
 
-**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. No Peirce pair is attached to $\tilde Q$, and no eigenbasis exists.
+**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion* exists; what fails is the eigenbasis.
 
 ## The Origin
 
@@ -195,8 +195,10 @@ and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin
 |---|---|---|---|---|
 | **doubly regular** $\Sigma_{11}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2\neq0$ | units with distinct eigenvalues | exists, unique | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{10}$ |
 | **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $2Q_t\tilde\Pi$ with $\tilde\Pi$ a non-trivial idempotent and $Q_t\neq0$; spectrum $\{0,2Q_t\}$ | exists, unique | $\langle\tilde Q\rangle_{\natural}=0$ preserved; can land in $\Sigma_{00}$ |
-| **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | fails off the scalar line, one term on it | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{11}$ |
-| **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
+| **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | the spectral pair fails off the scalar line; a canonical Jordan pair exists; one term on the scalar line | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{11}$ |
+| **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | the spectral pair fails off the origin; a canonical Jordan pair exists off the origin | $0$ or $\Sigma_{01}$ |
+
+On the two degenerate rows the canonical pair is the one selected by the definite Hermitian form off the origin, and the corresponding Jordan basis is constructed in *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion*.
 
 **No sector is closed under multiplication.** Only the norm dichotomy is: $\mathcal{N}$ is a semigroup and $\mathbb{B}^{\times}$ is a group. The four witnesses are
 
@@ -330,11 +332,11 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 ## Further Reading
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone and its pure and non-pure strata.
-- [The Spectrally Degenerate Sector](the-spectrally-degenerate-sector.html), for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.
+- [The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the two cases and the degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two cones, the nilpotent intersection and the four sectors.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $\langle\tilde Q\rangle_{\natural}$ among the four norms and of $B^2$ outside them.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

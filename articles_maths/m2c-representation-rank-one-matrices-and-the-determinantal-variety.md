@@ -4,11 +4,11 @@
 
 The zero divisors of the biquaternion algebra are the nonzero elements of vanishing quaternionic norm. In the matrix model they are the nonzero singular matrices, and a nonzero singular two-by-two matrix has rank one. Every one of them is an outer product of two vectors, and the two vectors carry the two pieces of data the algebra sees: a direction and a covector.
 
-This article develops the factorisation, the two strata of the determinantal variety, the annihilators and the geometry of the cone. It is the matrix form of *The N-Degenerate Sector*, §*The Stratification of the Cone*, and of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Coordinates and the Matrix Model*.
+This article develops the factorisation, the two strata of the determinantal variety, the annihilators and the geometry of the cone. It is the matrix form of *The N-Degenerate Sector*, §*The Stratification of the Cone*, and of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Coordinates and the Matrix Model*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The norm is $N=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The standard idempotents are $\tilde\Pi_\pm$ and the standard nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$.
 
-**Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the rank-one elements and the Peirce corners are *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
+**Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the rank-one elements and the Peirce corners are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
 
 ## The Factorisation
 
@@ -43,6 +43,27 @@ N=0\iff\det M=0\iff\operatorname{rank}M=1.
 $$
 
 The zero matrix is the only singular matrix of rank zero; it is the apex of the cone and the image of the zero biquaternion. Every other zero divisor is rank one.
+
+## The Coefficients of the Factorisation
+
+**The four coefficients.** For $M=uv^{\mathsf T}$ with $u=(u_1,u_2)^{\mathsf T}$ and $v=(v_1,v_2)^{\mathsf T}$,
+
+$$
+Q_t=\tfrac12 v^{\mathsf T}u,\qquad
+Q_k=\tfrac{i}{2}\,v^{\mathsf T}\sigma_k u\quad(k=x,y,z),
+$$
+
+and in entries
+
+$$
+Q_x=\tfrac{i}{2}(u_1v_2+u_2v_1),\qquad
+Q_y=\tfrac12(u_2v_1-u_1v_2),\qquad
+Q_z=\tfrac{i}{2}(u_1v_1-u_2v_2).
+$$
+
+The scalar part is half the contraction of the two vectors, and the three vector coefficients are the three contractions with the Pauli matrices. The factor $i$ is the same factor that makes $\mathsf M_2(\vec e_k)=-i\sigma_k$: the vector coefficients are read on the anti-Hermitian basis matrices $-i\sigma_k$, not on the Hermitian Pauli matrices.
+
+**The scaling.** The reciprocal scaling $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$ leaves $uv^{\mathsf T}$ fixed and leaves every $Q_\mu$ fixed, because each formula is bilinear in the pair. The coefficients are therefore functions of the matrix, not of the chosen factorisation.
 
 ## The Two Strata
 
@@ -167,7 +188,7 @@ A nonzero singular matrix has rank one and factorises as $uv^{\mathsf T}$, uniqu
 
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone and its strata
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the rank-one elements and the corners
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the rank-one elements and the corners
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link and its topology
 - [$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units](m2c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the matrix units
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant

@@ -269,7 +269,7 @@ The scalars cannot be enlarged further, because there is no room in the centre f
 
 ### Central Simplicity and the Absence of Division
 
-**Proposition.** $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is *Ideals and Peirce Decompositions of the Biquaternion Algebra*, cited and not repeated. Since the algebra is also central, it is a **central simple** $\mathbb{C}$-algebra, the subject of *Central Simple Algebras and the Brauer Group*.
+**Proposition.** $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, cited and not repeated. Since the algebra is also central, it is a **central simple** $\mathbb{C}$-algebra, the subject of *Central Simple Algebras and the Brauer Group*.
 
 **Proposition.** $\mathbb{B}$ is **not a division algebra**.
 
@@ -523,7 +523,7 @@ The closing section fixes the vocabulary: a representation of $\mathbb{B}$ is th
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the invertibility criterion and the zero-divisor cone.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
 - [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the matrix model in full.
 - [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the simple modules, the classification, Schur's lemma, the intertwiners and the Morita equivalence.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.

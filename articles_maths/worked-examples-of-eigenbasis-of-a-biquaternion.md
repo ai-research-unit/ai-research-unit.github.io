@@ -24,7 +24,7 @@ $$
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
 $$
 
-The eight cases cover five spectrally regular elements with $B\neq0$, two spectrally degenerate elements with $B=0$ and $\vec Q\neq0$, and the scalar $e_t$. In the tables, *distinct* names the spectrally regular regime, and *Jordan* and *scalar* name the two spectrally degenerate regimes. In the eigenbasis a general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with the matrix $\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}$; its two columns are the two spinors.
+The eight cases cover five spectrally regular elements with $B\neq0$, two spectrally degenerate elements with $B=0$ and $\vec Q\neq0$, and the scalar $e_t$. In the tables, *distinct* names the spectrally regular regime, and *Jordan* and *scalar* name the two spectrally degenerate regimes. In the eigenbasis a general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, with the matrix $\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}$; its two columns are the two spinors.
 
 | Regime | Case | Spectral reading |
 |---|---|---|
@@ -318,29 +318,29 @@ The spaces $S_\pm$ are the spinor spaces, the minimal left ideals. They are not 
 A spinor of first chirality is an element of $S_+$,
 
 $$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+,
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
 \qquad
-Q_{\mathrm{sp},11},Q_{\mathrm{sp},21}\in\mathbb{C},
+Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$
 
-with coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$, the first column of the matrix. Under multiplication by $\tilde Q$,
+with coordinates $(Q_{2,11},Q_{2,21})$, the first column of the matrix. Under multiplication by $\tilde Q$,
 
 $$
-\tilde Q\xi_+=\lambda_+Q_{\mathrm{sp},11}\tilde\Pi_++\lambda_-Q_{\mathrm{sp},21}\vec\Upsilon_+.
+\tilde Q\xi_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+.
 $$
 
 A spinor of second chirality is an element of $S_-$,
 
 $$
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-,
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
 \qquad
-Q_{\mathrm{sp},12},Q_{\mathrm{sp},22}\in\mathbb{C},
+Q_{2,12},Q_{2,22}\in\mathbb{C},
 $$
 
-with coordinates $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$, the second column, and
+with coordinates $(Q_{2,12},Q_{2,22})$, the second column, and
 
 $$
-\tilde Q\xi_-=\lambda_+Q_{\mathrm{sp},12}\vec\Upsilon_-+\lambda_-Q_{\mathrm{sp},22}\tilde\Pi_-.
+\tilde Q\xi_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-.
 $$
 
 The same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ acts on the coordinates of both spinor spaces.
@@ -407,14 +407,14 @@ $$
 For a general element,
 
 $$
-\mathsf M_2(\tilde Q_{\mathrm{sp}})=
+\mathsf M_2(\tilde Q_2)=
 \begin{pmatrix}
-Q_{\mathrm{sp},t}-iQ_{\mathrm{sp},z}&-iQ_{\mathrm{sp},x}-Q_{\mathrm{sp},y}\\
--iQ_{\mathrm{sp},x}+Q_{\mathrm{sp},y}&Q_{\mathrm{sp},t}+iQ_{\mathrm{sp},z}
+Q_{2,t}-iQ_{2,z}&-iQ_{2,x}-Q_{2,y}\\
+-iQ_{2,x}+Q_{2,y}&Q_{2,t}+iQ_{2,z}
 \end{pmatrix},
 $$
 
-with trace $2Q_{\mathrm{sp},t}$ and determinant $Q_{\mathrm{sp},t}^2+Q_{\mathrm{sp},x}^2+Q_{\mathrm{sp},y}^2+Q_{\mathrm{sp},z}^2$.
+with trace $2Q_{2,t}$ and determinant $Q_{2,t}^2+Q_{2,x}^2+Q_{2,y}^2+Q_{2,z}^2$.
 
 The spectral projectors are
 
@@ -471,13 +471,13 @@ Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the ei
 
 **Spinors.** There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
-\mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 $$
-the first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is the spinor in the first minimal left ideal and the second column $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is the spinor in the second. Their matrices are
+the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first minimal left ideal and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
 \mathsf M_2(\tilde Q)=\begin{pmatrix}1&0\\0&1\end{pmatrix},
@@ -594,29 +594,29 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(i,-i).
 $$
 
-**Spinors.** A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
-(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+(Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\lambda_-Q_{2,21}),
 \qquad
-(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+(Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\lambda_-Q_{2,22}).
 $$
-In the special case $\tilde Q=\vec e_x$ one has $Q_{\mathrm{sp},11}=\lambda_+=i$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=-i$, so
+In the special case $\tilde Q_2=\vec e_x$ one has $Q_{2,11}=\lambda_+=i$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=-i$, so
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}i&0\\0&-i\end{pmatrix},
 \qquad
@@ -725,29 +725,29 @@ $$
 \operatorname{diag}\left(\frac{1+i}{\sqrt2},\frac{1-i}{\sqrt2}\right).
 $$
 
-**Spinors.** A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
-(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+(Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\lambda_-Q_{2,21}),
 \qquad
-(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+(Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\lambda_-Q_{2,22}).
 $$
-In the special case $\tilde Q=\tfrac{1}{\sqrt2}(e_t+\vec e_x)$ one has $Q_{\mathrm{sp},11}=\lambda_+=\tfrac{1+i}{\sqrt2}$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=\tfrac{1-i}{\sqrt2}$, so
+In the special case $\tilde Q_2=\tfrac{1}{\sqrt2}(e_t+\vec e_x)$ one has $Q_{2,11}=\lambda_+=\tfrac{1+i}{\sqrt2}$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=\tfrac{1-i}{\sqrt2}$, so
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix},
 \qquad
@@ -862,29 +862,29 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\sqrt2-1,\sqrt2+1).
 $$
 
-**Spinors.** A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
-(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+(Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\lambda_-Q_{2,21}),
 \qquad
-(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+(Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\lambda_-Q_{2,22}).
 $$
-In the special case $\tilde Q=\sqrt2\,e_t+i\vec e_x$ one has $Q_{\mathrm{sp},11}=\lambda_+=\sqrt2-1$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=\sqrt2+1$, so
+In the special case $\tilde Q_2=\sqrt2\,e_t+i\vec e_x$ one has $Q_{2,11}=\lambda_+=\sqrt2-1$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=\sqrt2+1$, so
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\sqrt2-1&0\\0&\sqrt2+1\end{pmatrix},
 \qquad
@@ -999,29 +999,29 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}\bigl(a(1+i),b(1-i)\bigr).
 $$
 
-**Spinors.** A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
-(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+(Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\lambda_-Q_{2,21}),
 \qquad
-(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+(Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\lambda_-Q_{2,22}).
 $$
-In the special case $\tilde Q=(1-\tfrac{i}{\sqrt2})e_t+(1+\tfrac{i}{\sqrt2})\vec e_x$ one has $Q_{\mathrm{sp},11}=\lambda_+=a(1+i)$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=b(1-i)$, so
+In the special case $\tilde Q_2=(1-\tfrac{i}{\sqrt2})e_t+(1+\tfrac{i}{\sqrt2})\vec e_x$ one has $Q_{2,11}=\lambda_+=a(1+i)$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=b(1-i)$, so
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}a(1+i)&0\\0&b(1-i)\end{pmatrix},
 \qquad
@@ -1115,13 +1115,13 @@ $$
 
 **Spinors.** There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
-\mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 $$
-the first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is the spinor in the first minimal left ideal and the second column $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is the spinor in the second. Their matrices are
+the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first minimal left ideal and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
 \mathsf M_2(\tilde Q)=\begin{pmatrix}1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\[2pt]1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}\end{pmatrix},
@@ -1291,29 +1291,29 @@ $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-).
 $$
 
-**Spinors.** A general element is $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, with matrix
+**Spinors.** A general element is $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, with matrix
 $$
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},11}\\Q_{\mathrm{sp},21}\end{pmatrix},
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},22}\end{pmatrix},
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
-(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21}),
+(Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\lambda_-Q_{2,21}),
 \qquad
-(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\lambda_-Q_{\mathrm{sp},22}).
+(Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\lambda_-Q_{2,22}).
 $$
-In the special case $\tilde Q=(1-\tfrac{i}{2})e_t+\tfrac{1+i}{\sqrt2}\vec e_x+\tfrac{1}{\sqrt2}\vec e_y+\tfrac{i}{2}\vec e_z$ one has $Q_{\mathrm{sp},11}=\lambda_+=1-\tfrac{i}{2}+iB$, $Q_{\mathrm{sp},21}=0$, $Q_{\mathrm{sp},12}=0$, $Q_{\mathrm{sp},22}=\lambda_-=1-\tfrac{i}{2}-iB$, so
+In the special case $\tilde Q_2=(1-\tfrac{i}{2})e_t+\tfrac{1+i}{\sqrt2}\vec e_x+\tfrac{1}{\sqrt2}\vec e_y+\tfrac{i}{2}\vec e_z$ one has $Q_{2,11}=\lambda_+=1-\tfrac{i}{2}+iB$, $Q_{2,21}=0$, $Q_{2,12}=0$, $Q_{2,22}=\lambda_-=1-\tfrac{i}{2}-iB$, so
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix},
 \qquad
@@ -1414,13 +1414,13 @@ $$
 
 **Spinors.** There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
-\mathsf M_2(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 $$
-the first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is the spinor in the first minimal left ideal and the second column $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is the spinor in the second. Their matrices are
+the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first minimal left ideal and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
 \mathsf M_2(\tilde Q)=\begin{pmatrix}1+i&-2i\\0&1+i\end{pmatrix},
@@ -1542,12 +1542,12 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction of the eigenbasis, the nilpotent pair and the normalisation.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the generic sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
-- [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](the-spectrally-regular-sector-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html), for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.
+- [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the same eight elements read through the polar word.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for the two-dimensional commutative companion.
 - [Worked Examples of Eigenbasis a Reduced Biquaternion](worked-examples-of-eigenbasis-a-reduced-biquaternion.html), for the four-dimensional commutative companion.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm built on the decomposition.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the Jordan and nilpotent regimes.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the algebraic structure of the biquaternion algebra.

@@ -372,7 +372,7 @@ $$
 \tilde Q\neq0,\ \langle\tilde Q\rangle_{\natural}=0:\ \dim A=\dim B=2.
 $$
 
-*Proof.* At the origin both translations vanish. For a unit both are bijections. For a non-zero null element the image of $L_{\tilde Q}$ is the left ideal $\tilde Q\mathbb{B}$, non-zero and proper, since $\tilde Q\tilde X=e_t$ has no solution by the norm criterion (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Two Cases*); a non-zero proper left ideal is minimal and a complex plane (*Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals*), so the kernel has dimension $4-2=2$. The right side is the same.
+*Proof.* At the origin both translations vanish. For a unit both are bijections. For a non-zero null element the image of $L_{\tilde Q}$ is the left ideal $\tilde Q\mathbb{B}$, non-zero and proper, since $\tilde Q\tilde X=e_t$ has no solution by the norm criterion (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Two Cases*); a non-zero proper left ideal is minimal and a complex plane (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals*), so the kernel has dimension $4-2=2$. The right side is the same.
 
 **Proposition (two planes, not one).** On the punctured null cone the two annihilators are distinct complex planes whose intersection is the line $\mathbb{C}\tilde Q^{\natural}$.
 

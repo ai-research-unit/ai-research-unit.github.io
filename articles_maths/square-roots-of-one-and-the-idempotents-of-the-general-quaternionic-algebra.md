@@ -245,7 +245,7 @@ Since the square is always central, the equation $\tilde\Pi\star\tilde\Pi=\tilde
 
 **The quaternionic product carries no Peirce decomposition: its only nonzero idempotent is the left unit $e_t$, whose left multiplication is the identity, so the only Peirce piece is the whole algebra.**
 
-A nonzero idempotent $e$ of an associative unital algebra carries the Peirce decomposition $A=A_1\oplus A_{1/2}\oplus A_0$ with $A_\lambda=\{x:ex=\lambda x\}$, and the decomposition is the source of the minimal ideals and the matrix units (*Ideals and Peirce Decompositions of the Biquaternion Algebra*). The construction uses associativity twice, in reading the two maps as projections and in verifying that their images add.
+A nonzero idempotent $e$ of an associative unital algebra carries the Peirce decomposition $A=A_1\oplus A_{1/2}\oplus A_0$ with $A_\lambda=\{x:ex=\lambda x\}$, and the decomposition is the source of the minimal ideals and the matrix units (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*). The construction uses associativity twice, in reading the two maps as projections and in verifying that their images add.
 
 For the quaternionic product there is nothing to attach it to. The only nonzero idempotent is the left unit $e_t$, and $L_{e_t}$ is the identity, so the only Peirce piece is the whole algebra. The nontrivial decomposition of the algebra — the frame of two orthogonal idempotents, the four Peirce lines, the minimal left ideals — is a property of the plain product alone, and what the quaternionic product has in its place is the centrality of the square and the projectors of §*Idempotents and Their Projectors*, which are indexed by the plain idempotents rather than computed from the idempotents of the product.
 

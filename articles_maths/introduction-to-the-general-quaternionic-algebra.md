@@ -209,7 +209,7 @@ The three classical weakenings of associativity are settled by the witnesses alr
 
 **Proof.** The product is a $\mathbb{C}$-bilinear binary operation on the $\mathbb{C}$-vector space $\mathbb{B}$ by the propositions of §*The Multiplication as a Binary Operation*, which is the definition of an algebra over the commutative ring $\mathbb{C}$ in the broad sense; the dimension is four on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ (*The Biquaternion Algebra and Its Vector Spaces*); and the remaining clauses are the propositions above.
 
-**Remark.** What the algebra is not is as informative as what it is. It is not associative, so the associative theory — the two-sided ideals of *Ideals and Peirce Decompositions of the Biquaternion Algebra*, the modules of *Modules over the Biquaternion Algebra*, the opposite algebra — does not apply to it; it is not two-sidedly unital, so there is no group of units of its own; and it is not commutative, so no centre carries its scalars. What survives is the bilinear structure, the square, and the reading of the product as an isotope of the plain one.
+**Remark.** What the algebra is not is as informative as what it is. It is not associative, so the associative theory — the two-sided ideals of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, the modules of *Modules over the Biquaternion Algebra*, the opposite algebra — does not apply to it; it is not two-sidedly unital, so there is no group of units of its own; and it is not commutative, so no centre carries its scalars. What survives is the bilinear structure, the square, and the reading of the product as an isotope of the plain one.
 
 ## The Square and the Elements It Distinguishes
 

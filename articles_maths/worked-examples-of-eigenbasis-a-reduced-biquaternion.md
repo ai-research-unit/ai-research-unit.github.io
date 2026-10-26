@@ -267,9 +267,9 @@ $$
 
 The trace is $6+8i=2Q_{\blacktriangle}$ and the determinant is $-7+26i=(4+3i)(2+5i)$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -279,7 +279,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=3+4i+j(1-i)$ one has $A_1=\lambda_+=4+3i$ and $A_2=\lambda_-=2+5i$, so
 $$
@@ -332,9 +332,9 @@ C^{-1}\mathsf M(\breve Q)C=
 \end{pmatrix}.
 $$
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -344,7 +344,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=1+i$ one has $A_1=\lambda_+=1+i$ and $A_2=\lambda_-=1+i$, so
 $$
@@ -385,9 +385,9 @@ i&0\\
 \end{pmatrix}.
 $$
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -397,7 +397,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=i$ one has $A_1=\lambda_+=i$ and $A_2=\lambda_-=i$, so
 $$
@@ -454,9 +454,9 @@ $$
 
 The trace is $0=i-i$ and the determinant is $1=i(-i)$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -466,7 +466,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=ij$ one has $A_1=\lambda_+=i$ and $A_2=\lambda_-=-i$, so
 $$
@@ -531,9 +531,9 @@ $$
 
 The trace is $0$ and the determinant is $-1$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -543,7 +543,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=j$ one has $A_1=\lambda_+=1$ and $A_2=\lambda_-=-1$, so
 $$
@@ -608,9 +608,9 @@ $$
 
 The trace is $\tfrac52=2+\tfrac12$ and the determinant is $1=2\cdot\tfrac12$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -620,7 +620,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=\exp(j\ln2)=\tfrac54+\tfrac34j$ one has $A_1=\lambda_+=2$ and $A_2=\lambda_-=\tfrac12$, so
 $$
@@ -671,9 +671,9 @@ C^{-1}\mathsf M(\breve Q)C=
 \end{pmatrix}.
 $$
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -683,7 +683,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=-1$ one has $A_1=\lambda_+=-1$ and $A_2=\lambda_-=-1$, so
 $$
@@ -742,9 +742,9 @@ $$
 
 The matrix has rank one and determinant zero. Its image is the line of $\Pi_+$ and its kernel is the line of $\Pi_-$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$, with matrix
+**Spinors.** A spinor of first chirality is $\xi_+=A_1\Pi_+$ with $A_1\in\mathbb{C}$, and a spinor of second chirality is $\xi_-=A_2\Pi_-$ with $A_2\in\mathbb{C}$. A general element is $\breve Q_2=A_1\Pi_++A_2\Pi_-$, with matrix
 $$
-\mathsf M(\breve Q_{\mathrm{sp}})=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
+\mathsf M(\breve Q_2)=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}
 $$
 in the eigenbasis $(\Pi_+,\Pi_-)$, so the two spinors have the matrices
 $$
@@ -754,7 +754,7 @@ $$
 $$
 the first column is $\xi_+$ and the second is $\xi_-$. Multiplication by $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on the two columns by
 $$
-\mathsf M(\breve Q\breve Q_{\mathrm{sp}})=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
+\mathsf M(\breve Q\breve Q_2)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix},
 $$
 that is $A_1\mapsto\lambda_+A_1$ and $A_2\mapsto\lambda_-A_2$. In the special case $\breve Q=1+j$ one has $A_1=\lambda_+=2$ and $A_2=\lambda_-=0$, so
 $$

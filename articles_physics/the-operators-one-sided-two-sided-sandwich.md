@@ -18,9 +18,9 @@ The article reads the operator calculus of the general plain product and then cr
 | The operator calculus of the general plain product | [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html) |
 | The monoid of acting maps and the enveloping algebra | [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html) |
 | The sandwich as the map $X\mapsto MXM^{\dagger}$ | [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html) |
-| The sandwich as a product of the two regular maps | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), §*The Sandwich in the Regular Basis* |
+| The sandwich as a product of the two regular maps | [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](../articles_maths/m4c-representation-the-matrix-product-and-the-algebra-structure.html), §*The Sandwich in the Regular Basis* |
 | The action of the sandwich on the remarkable subspaces | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| The Peirce decomposition and the four corners | [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
+| The Peirce decomposition and the four corners | [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
 
 ## The Three Families
 
@@ -329,7 +329,7 @@ The twelve structures are not one calculus. Only the general plain bilinear row 
 - [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), for the pair structure and the type criteria.
 - [Association and the Transpose on the Quaternion Algebra](../articles_maths/association-and-the-transpose-on-the-quaternion-algebra.html), for the adjoint that swaps the sides.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the monoid, the enveloping algebra and the two-sided maps.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the four corners and the frames.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the four corners and the frames.
 - [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html), for the Hermitian corners and the state/observable split.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the crossing table of the twelve structures.
 - [The Complementary Ideal and the Second State Space](the-complementary-ideal-and-the-second-state-space.html), for the corners in full.

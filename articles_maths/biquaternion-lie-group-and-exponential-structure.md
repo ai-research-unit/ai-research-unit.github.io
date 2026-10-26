@@ -152,6 +152,140 @@ The group of units is an open subset of $\mathbb{B}$, hence a smooth real manifo
 
 The exponential is the correspondence between the group and the algebra. Its differential at the identity is the identity, so it is a local diffeomorphism onto a neighbourhood of $e_t$, and the inverse function theorem makes it a chart of $\mathbb{B}^\times$ near the identity; the tangent space at the identity is the whole algebra, since $\mathbb{B}^\times$ is open, with the commutator as bracket (*Symmetric and Antisymmetric Decomposition of the Four General Products*). The Baker–Campbell–Hausdorff series of the algebra converges near the origin and reproduces the group law there, and the group law $\exp(\tilde Q_3)\exp(\tilde{Q}_1)$ against $\exp(\tilde Q_3+\tilde{Q}_1)$ of *Biquaternion Elementary Functions* is its first two terms. The subgroups correspond to the subalgebras: the compact subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ to $S^3$, the trace-free part $\mathrm{B}_0$ to the norm-one group $\mathbb{B}^\times_1$, and the centre $\mathbb{C}e_t$ to $\mathbb{C}^\times e_t$.
 
+## One-Parameter Subgroups
+
+**A one-parameter subgroup is the image of a real line of the Lie algebra under the exponential, and every one-parameter subgroup arises that way.**
+
+A **one-parameter subgroup** of $\mathbb{B}^\times$ is a Lie-group homomorphism $\varphi:\mathbb{R}\to\mathbb{B}^\times$. For $\tilde X\in\mathbb{B}$ the **exponential line**
+
+$$
+\varphi_{\tilde X}(t)=\exp(t\tilde X)
+$$
+
+is one, since $\exp(s\tilde X)\exp(t\tilde X)=\exp((s+t)\tilde X)$ by the group law of *Biquaternion Elementary Functions*, §*The Group Law*. Its **infinitesimal generator** is $\varphi_{\tilde X}'(0)=\tilde X$.
+
+**Theorem.** Every one-parameter subgroup of $\mathbb{B}^\times$ is $\varphi_{\tilde X}$ for a unique $\tilde X\in\mathbb{B}$.
+
+*Proof.* Let $\varphi$ be a one-parameter subgroup and put $\tilde X=\varphi'(0)$. Differentiating $\varphi(s+t)=\varphi(s)\varphi(t)$ in $s$ at $s=0$ gives $\varphi'(t)=\tilde X\varphi(t)$. The product $\psi(t)=\exp(-t\tilde X)\varphi(t)$ then has
+
+$$
+\psi'(t)=-\tilde X\exp(-t\tilde X)\varphi(t)+\exp(-t\tilde X)\tilde X\varphi(t)=0,
+$$
+
+because $\exp(-t\tilde X)$ commutes with $\tilde X$. Since $\psi(0)=e_t$, $\psi$ is constant and $\varphi(t)=\exp(t\tilde X)$. The generator is recovered as $\varphi'(0)$, hence is unique. $\square$
+
+**The subgroup depends on the line, the parametrisation on the vector.** Since $t$ ranges over $\mathbb{R}$, $\varphi_{\tilde X}$ and $\varphi_{\lambda\tilde X}$ have the same image for every real $\lambda\neq0$; the one-parameter subgroup, as a set, is the image of the real line $\mathbb{R}\tilde X$. The generator is fixed only once the parametrisation is fixed.
+
+**The two real directions.** The exponential line of $\vec e_x$ is the circle $\exp(t\vec e_x)=\cos t\,e_t+\sin t\,\vec e_x$, and that of $i\vec e_x$ is the hyperbola $\exp(t\,i\vec e_x)=\cosh t\,e_t+\sinh t\,\vec e_x$ (§*The Exponential in the Two Real Directions* of *Biquaternion Elementary Functions*). The first is periodic and lies in the unit quaternions, the second is unbounded and lies in the Hermitian subspace. The two are the compact and the non-compact one-parameter subgroups in their simplest form.
+
+**The subgroup lies in a centraliser.** Every $\exp(t\tilde X)$ commutes with $\tilde X$, so the image of $\varphi_{\tilde X}$ is contained in the group of units of the centraliser $C(\tilde X)=\{\tilde Y:\tilde Y\tilde X=\tilde X\tilde Y\}$ (*Modules over the Biquaternion Algebra*, §*The Commutant of an Element*). For a non-scalar $\tilde X$ that centraliser has complex dimension two, so the one-parameter subgroup is a real curve in a commutative surface.
+
+## The Killing Form
+
+**The Killing form of the unit group is the real part of the trace form on the trace-free part; its radical is the centre, and its signature is $(3,3)$.**
+
+The Lie algebra of $\mathbb{B}^\times$ is $\mathbb{B}$ with the bracket $[\tilde X,\tilde Y]=\tilde X\tilde Y-\tilde Y\tilde X$ (§*The Correspondence with the Lie Algebra*). Its **Killing form** is
+
+$$
+\kappa(\tilde X,\tilde Y)=\operatorname{tr}\bigl(\operatorname{ad}_{\tilde X}\operatorname{ad}_{\tilde Y}\bigr),
+\qquad
+\operatorname{ad}_{\tilde X}(\tilde Z)=[\tilde X,\tilde Z].
+$$
+
+**Theorem.** For all $\tilde X,\tilde Y\in\mathbb{B}$,
+
+$$
+\boxed{\;
+\kappa(\tilde X,\tilde Y)=16\,\operatorname{Re}\bigl(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\,\operatorname{Sc}\tilde Y\bigr)
+\;}
+$$
+
+and in the matrix model,
+
+$$
+\kappa(\tilde X,\tilde Y)=8\operatorname{Re}\operatorname{tr}\bigl(\mathsf M_2(\tilde X)\mathsf M_2(\tilde Y)\bigr)-4\operatorname{Re}\bigl(\operatorname{tr}\mathsf M_2(\tilde X)\,\operatorname{tr}\mathsf M_2(\tilde Y)\bigr).
+$$
+
+*Proof.* Work in the matrix model and let $\kappa_{\mathbb{C}}(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ be the complex trace, a complex bilinear form, so that $\kappa=2\operatorname{Re}\kappa_{\mathbb{C}}$. The centre contributes nothing, because $\operatorname{ad}_{\mathrm I_2}=0$. On $\mathfrak{sl}_2(\mathbb{C})$ use the basis
+
+$$
+H=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad F=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+$$
+
+with $[H,E]=2E$, $[H,F]=-2F$ and $[E,F]=H$. In this basis the adjoint operators are
+
+$$
+\operatorname{ad}_H=\operatorname{diag}(0,2,-2),\qquad
+\operatorname{ad}_E=\begin{pmatrix}0&0&1\\-2&0&0\\0&0&0\end{pmatrix},\qquad
+\operatorname{ad}_F=\begin{pmatrix}0&-1&0\\0&0&0\\2&0&0\end{pmatrix}.
+$$
+
+Hence
+
+$$
+\operatorname{ad}_H^2=\operatorname{diag}(0,4,4),\qquad
+\operatorname{ad}_E\operatorname{ad}_F=\operatorname{diag}(2,2,0),
+$$
+
+and $\operatorname{ad}_F\operatorname{ad}_E$ has trace $4$, the same as $\operatorname{ad}_E\operatorname{ad}_F$; the products $\operatorname{ad}_H\operatorname{ad}_E$, $\operatorname{ad}_E\operatorname{ad}_H$, $\operatorname{ad}_H\operatorname{ad}_F$, $\operatorname{ad}_F\operatorname{ad}_H$, $\operatorname{ad}_E^2$ and $\operatorname{ad}_F^2$ have zero trace. Therefore
+
+$$
+\kappa_{\mathbb{C}}(H,H)=8,\qquad \kappa_{\mathbb{C}}(E,F)=4,\qquad
+\kappa_{\mathbb{C}}(H,E)=\kappa_{\mathbb{C}}(H,F)=\kappa_{\mathbb{C}}(E,E)=\kappa_{\mathbb{C}}(F,F)=0 .
+$$
+
+The form $4\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$ takes the same values on the basis, since $\operatorname{tr}(H^2)=2$ and $\operatorname{tr}(EF)=1$; both forms are complex bilinear, so they agree on $\mathfrak{sl}_2(\mathbb{C})$, and both vanish on the centre. Hence
+
+$$
+\kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}(XY)-2\operatorname{tr}X\,\operatorname{tr}Y
+$$
+
+for all $X,Y$. Taking twice the real part gives the matrix formula, and the translation $\operatorname{tr}=2\operatorname{Sc}$ gives the algebra formula. $\square$
+
+**The radical is the centre.** For $\tilde X=e_t$ the right-hand side vanishes, so $\kappa(e_t,\tilde Y)=0$ for every $\tilde Y$. Conversely write $\tilde X=a e_t+\tilde U$ with $\operatorname{Sc}\tilde U=0$; then $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}\operatorname{Sc}(\tilde U\tilde Y)$, and the plain form pairs the trace-free part nondegenerately with the whole algebra, so the vanishing for all $\tilde Y$ forces $\tilde U=0$. Hence
+
+$$
+\operatorname{rad}\kappa=\mathbb{C}e_t,
+$$
+
+of real dimension two: the Killing form is degenerate exactly along the centre.
+
+**The trace-free part.** On $\mathrm{B}_0=\{\tilde X:\operatorname{Sc}\tilde X=0\}$, the Lie algebra of $\mathbb{B}^\times_1\cong SL_2(\mathbb{C})$, the form is
+
+$$
+\kappa(\tilde X,\tilde Y)=16\operatorname{Re}\operatorname{Sc}(\tilde X\tilde Y)=8\operatorname{Re}\operatorname{tr}\bigl(\mathsf M_2(\tilde X)\mathsf M_2(\tilde Y)\bigr),
+$$
+
+nondegenerate. The real subspaces $\mathrm{K}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $i\mathrm{K}$ are orthogonal, because $\operatorname{Sc}(\vec e_j\,i\vec e_k)$ is purely imaginary. On $\mathrm{K}$,
+
+$$
+\kappa(\vec e_j,\vec e_k)=-16\,\delta_{jk},
+$$
+
+so $\mathrm{K}$ is negative definite; on $i\mathrm{K}$, $\kappa(i\vec e_j,i\vec e_k)=+16\,\delta_{jk}$, so $i\mathrm{K}$ is positive definite. The signature of $\kappa$ on $\mathrm{B}_0$ is therefore
+
+$$
+(3,3),
+$$
+
+with the compact real form $\mathrm{K}=\mathfrak{su}(2)$ negative and its complement $i\mathrm{K}$ positive.
+
+**Invariance.** The Killing form is invariant under the adjoint action,
+
+$$
+K\bigl([\tilde X,\tilde Y],\tilde Z\bigr)+K\bigl(\tilde Y,[\tilde X,\tilde Z]\bigr)=0,
+$$
+
+so $\kappa(\tilde Q\tilde X\tilde Q^{-1},\tilde Q\tilde Y\tilde Q^{-1})=\kappa(\tilde X,\tilde Y)$ for every unit $\tilde Q$. It is therefore a function of the conjugation class alone.
+
+**Relation to the plain form.** The plain bilinear form $P(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* has realification of signature $(4,4)$. The Killing form is its real part with the rank-one piece carried by the centre removed,
+
+$$
+K=16\operatorname{Re}\bigl(P(\tilde X,\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y\bigr),
+$$
+
+and the subtraction is the orthogonal projection onto $\mathrm{B}_0$: the $P$-orthogonal complement of $\mathrm{B}_0$ is the centre $\mathbb{C}e_t$, since $P(e_t,\tilde X)=\operatorname{Sc}\tilde X$.
+
 ## Summary
 
 The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:\langle\tilde q\rangle_{\natural}=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_t\}$. The complexification adds four real dimensions, and the norm-one condition removes two rather than one, so the net gain is three; the trace is free on the level set and the determinant is the constraint.
@@ -159,6 +293,8 @@ The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$
 The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternions $S^3$ and the centre $\mathbb{C}^\times e_t$; the maximal compact subgroup of $\mathbb{B}^\times_1$ is $S^3$, and the quotient by the centre $\mathbb{B}^\times_1/\{\pm e_t\}$ is a Lie group of real dimension $6$. Over the reals these are the real forms of the group, and the correspondence with the Lie algebra attaches each subgroup to its subalgebra: $S^3$ to $\mathrm{K}$, $\mathbb{B}^\times_1$ to $\mathrm{B}_0$, and $\mathbb{C}^\times e_t$ to the centre.
 
 Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connected compact group, and not surjective onto $\mathbb{B}^\times_1$: the norm-one group is not exponential, the obstruction a non-semi-simple element with the repeated eigenvalue $-1$, and the same obstruction occurs in $SL(2,\mathbb{R})$. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
+
+The one-parameter subgroups are the exponential lines $t\mapsto\exp(t\tilde X)$; every one-parameter subgroup is of this form, with generator $\tilde X$ unique for a fixed parametrisation. The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$; its radical is the centre $\mathbb{C}e_t$, and on the trace-free part it has signature $(3,3)$, negative on the compact $\mathrm{K}$ and positive on $i\mathrm{K}$.
 
 The larger unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_t$ and acts on the vector part, so the matrix is $\operatorname{diag}(\tilde U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.
 
@@ -174,6 +310,8 @@ The larger unitary groups are reached by enlarging the carrier and not the algeb
 | $\mathrm{B}_0$ | Lie algebra of $\mathbb{B}^\times_1$; trace-free part |
 | $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Lie algebra of $S^3$; compact subalgebra |
 | $\mathbb{C}^\times e_t$ | Centre of $\mathbb{B}^\times$; Lie algebra $\mathbb{C}e_t$ |
+| $\varphi_{\tilde X}(t)=\exp(t\tilde X)$ | One-parameter subgroup with generator $\tilde X$ |
+| $\kappa(\tilde X,\tilde Y)=\operatorname{tr}(\operatorname{ad}_{\tilde X}\operatorname{ad}_{\tilde Y})$ | Killing form; radical $\mathbb{C}e_t$, signature $(3,3)$ on $\mathrm{B}_0$ |
 | $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$ | Matrices over the algebra; the enlarged carrier |
 | $a[\,]b$, $\odot$, $D\{\delta\}$ | Conway operator $\tilde{Q}\mapsto a\tilde{Q}b$, its composition, and the diagonal function |
 | $G^{-1}=G^{+\approx}=G^{\dagger}$ | The inverse of a group element; association with conjugation |

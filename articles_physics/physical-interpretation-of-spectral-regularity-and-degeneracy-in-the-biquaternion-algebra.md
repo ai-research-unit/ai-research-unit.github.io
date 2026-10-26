@@ -278,7 +278,7 @@ is the representative fixed by the normalisation, and in it
 $$
 \mathsf M\big(L_{\tilde Q}\big)=\operatorname{diag}\left(\lambda_+,\lambda_+,\lambda_-,\lambda_-\right),
 \qquad
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-.
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-.
 $$
 
 **Interpretation.** The Peirce basis is the **normal-mode frame** of the element. The expansion is the statement that every element of the algebra has coordinates in that frame; the coordinates are the amplitudes of the four components. The two eigenvalues appear twice because left multiplication sees both columns of the matrix model: the multiplicity two is the **spinor doubling**, not a second physical mode. The physical mode count is two; each mode carries a two-component spinor.

@@ -679,6 +679,6 @@ The zero divisors give rank one. There are no nilpotents and no Jordan blocks: t
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the minimal ideals and the Peirce corners.
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit criterion and the zero divisors.
 - [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum of the left multiplication.
-- [One-Sided Operator and the Polar Decomposition](one-sided-operator-and-the-polar-decomposition.html), for the non-commutative companion where the one-sided operator is the spinor action.
-- [Two-Sided Operator and the Polar Decomposition](two-sided-operator-and-the-polar-decomposition.html), for the non-commutative companion where the sandwich is the vector action.
+- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the one-sided operator is the spinor action.
+- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the sandwich is the vector action.
 - [Operator and the Polar Decomposition of a Split-Complex Number](operator-and-the-polar-decomposition-of-a-split-complex-number.html), for the commutative real companion with one hyperbolic angle.

@@ -14,7 +14,7 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 **The results.** The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; no nilpotent is an idempotent, the two classes meeting only at $0$; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.
 
-The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the minimal ideals the nilpotents generate are *Ideals and Peirce Decompositions of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the minimal ideals the nilpotents generate are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
@@ -250,7 +250,7 @@ A nonzero nilpotent is a zero divisor, and in the strongest possible way: it ann
 
 **Proof.** The relation $\tilde\Upsilon^2=0$ is the product of $\tilde\Upsilon$ with itself, on either side, which is exactly the statement.
 
-This is the property that singles the nilpotents out among the zero divisors. A non-pure zero divisor $\tilde Q$ with $Q_t\neq0$ has $\tilde Q^2=2Q_t\tilde Q\neq0$, so it never annihilates itself; it annihilates only the complementary idempotent direction, and its annihilator is a plane transverse to it. A nilpotent, by contrast, is its own annihilating partner: the minimal left ideal it generates is its own annihilator, $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$, whereas for a non-pure zero divisor the ideal generated and the annihilator are distinct and complementary (*Ideals and Peirce Decompositions of the Biquaternion Algebra*).
+This is the property that singles the nilpotents out among the zero divisors. A non-pure zero divisor $\tilde Q$ with $Q_t\neq0$ has $\tilde Q^2=2Q_t\tilde Q\neq0$, so it never annihilates itself; it annihilates only the complementary idempotent direction, and its annihilator is a plane transverse to it. A nilpotent, by contrast, is its own annihilating partner: the minimal left ideal it generates is its own annihilator, $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$, whereas for a non-pure zero divisor the ideal generated and the annihilator are distinct and complementary (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*).
 
 The nilpotents are one of the two families of the zero-divisor set, and the family split is the vanishing of the scalar part: *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* calls the elements with $Q_t=0$ the **pure** family and those with $Q_t\neq0$ the **non-pure** family, and the pure family is exactly the nonzero nilpotents. The zero-divisor set of the algebra is the union of the two, a complex cone of complex dimension three and real dimension six, of which the nilpotent cone is the two-dimensional complex part carried by the vector subspace and the non-pure family is the rest.
 
@@ -299,7 +299,7 @@ $$
 \vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2},\qquad \vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2},
 $$
 
-with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_+,\tilde\Pi_-$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$ (*Ideals and Peirce Decompositions of the Biquaternion Algebra*). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\vec\Upsilon_x$ under the group of invertible elements.
+with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_+,\tilde\Pi_-$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$ (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\vec\Upsilon_x$ under the group of invertible elements.
 
 ### The Nilpotents and the Ideals
 
@@ -311,7 +311,7 @@ The nilpotents are the elements on which the ideal theory of the algebra is simp
 
 **Proof.** If $\tilde\Upsilon^2=0$ then $(\tilde Q_2\tilde\Upsilon)\tilde\Upsilon=\tilde Q_2\tilde\Upsilon^2=0$ for every $\tilde Q_2$, so $\mathbb{B}\tilde\Upsilon\subseteq I_{\tilde\Upsilon}$; both are nonzero proper left ideals and both are minimal of real dimension four, hence equal. The right statement is the mirror image. The converse, that coincidence forces nilpotency, is the statement for the other class in *Introduction to the Remarkable Subspaces*.
 
-The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_+,\mathbb{B}\tilde\Pi_-$ and the module structure of the algebra over itself, is *Ideals and Peirce Decompositions of the Biquaternion Algebra* and *Modules over the Biquaternion Algebra*; the nilpotents enter it as the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$.
+The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_+,\mathbb{B}\tilde\Pi_-$ and the module structure of the algebra over itself, is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* and *Modules over the Biquaternion Algebra*; the nilpotents enter it as the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$.
 
 ### The Nilpotents and the Remarkable Subspaces
 
@@ -364,7 +364,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of $+1$ and the idempotents, the other two central element classes.
 - [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $0$ here are one case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$, the minimal ideals they generate and the Peirce basis.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$, the minimal ideals they generate and the Peirce basis.
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same problem read in all twelve products.
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the isomorphism $\mathsf M_2$, the trace and determinant, and the triangular Jordan form.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.

@@ -1,5 +1,4 @@
-
-# __The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$__
+# __$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions__
 
 ## Introduction
 

@@ -230,7 +230,7 @@ $$
 
 **It is allowed to add subscripts when several nilpotents are used.** **The subscript of a nilpotent is numeric when it counts and a role label when it names**, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
-The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *Ideals and Peirce Decompositions of the Biquaternion Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\vec\Upsilon_1$ and $\vec\Upsilon_2$, exchanged by the star.
+The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\vec\Upsilon_1$ and $\vec\Upsilon_2$, exchanged by the star.
 
 The nilpotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -441,6 +441,14 @@ $$
 $$
 
 a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_\mu\rvert=\sqrt{q_\mu^2+q'_\mu^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.
+
+**The argument of a complex element is written $\arg Q_t$.** For $Q_t\neq0$ it is the angle of the polar form,
+
+$$
+Q_t=\lvert Q_t\rvert\,e^{i\arg Q_t},
+$$
+
+defined modulo $2\pi$; the branch is stated where the argument is used, and the principal argument in $(-\pi,\pi]$ is written $\operatorname{Arg}Q_t$. The same letter applies to a complex coefficient of a biquaternion, $\arg Q_\mu$, with $\lvert Q_\mu\rvert$ the modulus above.
 
 **The reduced biquaternions $\mathbb{B}_{\mathrm{r}}$**, $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the marks are the bar and the tessarine sign ${}_{\mathrm{ts}}$, and ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
 

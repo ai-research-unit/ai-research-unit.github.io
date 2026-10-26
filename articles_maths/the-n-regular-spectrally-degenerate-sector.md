@@ -167,7 +167,7 @@ $$
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
 $$
 
-**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, no Peirce pair is attached to $\tilde Q$, and there is no eigenbasis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no Peirce basis is attached to it.
+**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion* exists; what fails is the eigenbasis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no eigenbasis is attached to it.
 
 ## Multiplication and Inversion
 
@@ -343,7 +343,7 @@ reproduces the Peirce form and the sum: $e\tilde Qe=Q_te$, $e\tilde Qf=\vec\Upsi
 | descriptions | $\mathcal S\setminus\mathcal N$; $Q_t\neq0$ on $\mathcal S$; $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$; $Q_tu$ with $u$ unipotent; unit with spectrum $\{Q_t\}$ |
 | geometry | Zariski-open in $\mathcal S$; complex cone of complex dimension $3$ and real dimension $6$; connected; contains the punctured scalar line, the singular locus of $\mathcal S$ |
 | regimes | $\Sigma_{10}^{\mathrm{s}}$: scalar, semisimple, non-unique spectral idempotents, dimension $1$, closed; $\Sigma_{10}^{\mathrm{J}}$: Jordan, defective, dual-number centraliser, dimension $3$, open dense |
-| Peirce decomposition | fails on the Jordan part; one-term and non-unique on the scalar line |
+| Peirce decomposition | the spectral pair fails on the Jordan part; there the Hermitian form selects a canonical pair and a Jordan basis (see *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion*); one-term and non-unique on the scalar line |
 | annihilators | both zero: the element is a unit |
 | multiplication | $\Sigma_{10}\cdot\Sigma_{10}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with all three outcomes; inverse-closed, not product-closed |
 | relation to the cones | $\Sigma_{10}=\mathcal S\setminus\mathcal N$; transverse on the Jordan part; singular on the scalar line; tangency only on $\Sigma_{00}$ |
@@ -371,9 +371,9 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
-- [The Spectrally Degenerate Sector](the-spectrally-degenerate-sector.html), for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.
+- [The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
-- [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

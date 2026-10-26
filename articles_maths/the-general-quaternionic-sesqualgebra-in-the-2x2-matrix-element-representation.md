@@ -1,5 +1,4 @@
-
-# __The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$__
+# __$M_2(\mathbb{C})$ Representation : The General Quaternionic Sesqualgebra of Biquaternions__
 
 ## Introduction
 

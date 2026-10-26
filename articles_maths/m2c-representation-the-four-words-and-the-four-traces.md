@@ -130,6 +130,40 @@ which is the word of the quaternionic sesquilinear product with the middle facto
 
 **The words and the four forms.** The four forms are the four words closed by a trace. The trace kills the antisymmetric part of a word, so the form of a product and the form of its symmetrisation agree; the antisymmetric part contributes only to the bracket. This is why the four forms are symmetric or conjugate-symmetric while the four products are not.
 
+## The Conjugate of a Word
+
+The two involutions reverse a word, and the conjugation identities of *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Conjugate of a Product*, are matrix identities. The two pure rules are
+
+$$
+\operatorname{adj}(XY)=\operatorname{adj}(Y)\operatorname{adj}(X),
+\qquad
+(XY)^{\dagger}=Y^{\dagger}X^{\dagger},
+$$
+
+and the two mixed rules that exchange the factors are
+
+$$
+(XY^{\dagger})^{\dagger}=YX^{\dagger},
+\qquad
+\operatorname{adj}\bigl(\operatorname{adj}(X)Y\bigr)=\operatorname{adj}(Y)X .
+$$
+
+Two further mixed rules read
+
+$$
+\operatorname{adj}(XY^{\dagger})=\operatorname{adj}(Y)^{\dagger}\operatorname{adj}(X),
+\qquad
+\operatorname{adj}\bigl(\operatorname{adj}(X)Y^{\dagger}\bigr)=\operatorname{adj}(Y)^{\dagger}X,
+$$
+
+$$
+\bigl(\operatorname{adj}(X)Y\bigr)^{\dagger}=Y^{\dagger}\operatorname{adj}(X^{\dagger}),
+\qquad
+\bigl(\operatorname{adj}(X)Y^{\dagger}\bigr)^{\dagger}=Y\operatorname{adj}(X^{\dagger}).
+$$
+
+The first two are the adjugate rules for the two mixed words, and the last two are the dagger rules. Each identity is an anti-automorphism rule applied to the corresponding word, and none of them uses an extra entrywise conjugation: the algebra conjugation is the adjugate, and the Hermitian conjugation is the dagger.
+
 ## Summary
 
 The matrix model turns the four products into four words: $XY$, $\operatorname{adj}X\,Y$, $XY^{\dagger}$ and $\operatorname{adj}X\,Y^{\dagger}$. The four forms are the four half-traces of those words, and on the coefficients they are the plain and quaternionic bilinear forms and the plain and quaternionic Hermitian forms. The trace pairing is the plain bilinear form; its Gram matrix is $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its isometry group is $O_4(\mathbb{C})$, not the unit group. The realifications have signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$.

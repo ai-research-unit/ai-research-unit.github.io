@@ -11,7 +11,7 @@ $$
 
 This article proves the statement in full. The proof is a single computation: a two-sided ideal of the multiplication is a two-sided ideal of the algebra, because in a unital derived model the involution drags the conjugate of an element into every ideal it lies in; and the algebra $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$, which has no proper two-sided ideal. So one nonzero element of a two-sided ideal generates a nonzero two-sided ideal of the algebra, which is the whole algebra, and the ideal contains the unit.
 
-The article is the third of the structural batch: the element theory is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the square theory is *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*, and the structure theory of the ideals is here. The general theory that it reads is *Ideals and Quotients of a Sesqualgebra*, where the one-sided and two-sided ideals of a sesqualgebra are defined, and *Simple Sesqualgebras and Minimal Ideals*, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are *Ideals and Peirce Decompositions of the Biquaternion Algebra*, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.
+The article is the third of the structural batch: the element theory is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the square theory is *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*, and the structure theory of the ideals is here. The general theory that it reads is *Ideals and Quotients of a Sesqualgebra*, where the one-sided and two-sided ideals of a sesqualgebra are defined, and *Simple Sesqualgebras and Minimal Ideals*, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.
 
 The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, and the multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
 
@@ -37,7 +37,7 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 
 **Theorem.** The two-sided ideals of the sesquilinear multiplication on $\mathbb{B}$ are $0$ and $\mathbb{B}$; in the terminology of *Simple Sesqualgebras and Minimal Ideals*, the sesqualgebra $(\mathbb{B},\star)$ is **simple** and invariant-simple.
 
-**Proof.** A two-sided $\star$-ideal is an $\ast$-ideal by §*Ideals of the Multiplication*, hence a two-sided algebra ideal. The algebra ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$, by *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Two-Sided Ideals: Simplicity of $\mathbb{B}$*, because $\mathbb{B}$ is a full two-by-two matrix algebra over the field $\mathbb{C}$ and such an algebra has no proper two-sided ideal. So the two-sided $\star$-ideals are $0$ and $\mathbb{B}$. Simplicity is the definition, and invariant-simplicity follows from it.
+**Proof.** A two-sided $\star$-ideal is an $\ast$-ideal by §*Ideals of the Multiplication*, hence a two-sided algebra ideal. The algebra ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$, by *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Two-Sided Ideals: Simplicity of $\mathbb{B}$*, because $\mathbb{B}$ is a full two-by-two matrix algebra over the field $\mathbb{C}$ and such an algebra has no proper two-sided ideal. So the two-sided $\star$-ideals are $0$ and $\mathbb{B}$. Simplicity is the definition, and invariant-simplicity follows from it.
 
 **Remark.** The proof is a transport and not a new computation, and it is the transport that the article makes explicit. The direct form of the argument, which uses one element and the unit criterion, is the next two subsections.
 
@@ -53,7 +53,7 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 $$
 \mathbb{B}\,\tilde Q_1\,\mathbb{B}=\Bigl\{\sum_{i}\tilde A_i\tilde Q_1\tilde Q_{3,i}\Bigr\}
 $$
-is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $I$ because $I$ is two-sided. Since $\tilde Q_1\neq0$, the ideal $\mathbb{B}\tilde Q_1\mathbb{B}$ is nonzero, and the only nonzero two-sided ideal of $\mathbb{B}$ is $\mathbb{B}$ itself, by *Ideals and Peirce Decompositions of the Biquaternion Algebra*; hence $\mathbb{B}\tilde Q_1\mathbb{B}=\mathbb{B}$. The unit criterion now gives $e_t\in I$ and $I=\mathbb{B}$.
+is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $I$ because $I$ is two-sided. Since $\tilde Q_1\neq0$, the ideal $\mathbb{B}\tilde Q_1\mathbb{B}$ is nonzero, and the only nonzero two-sided ideal of $\mathbb{B}$ is $\mathbb{B}$ itself, by *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; hence $\mathbb{B}\tilde Q_1\mathbb{B}=\mathbb{B}$. The unit criterion now gives $e_t\in I$ and $I=\mathbb{B}$.
 
 **Corollary.** A nonzero two-sided $\star$-ideal contains the unit, and the two-sided $\star$-ideals are exactly $0$ and $\mathbb{B}$.
 
@@ -98,7 +98,7 @@ is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $
 
 **Proposition (no proper one-sided $\star$-ideal).** The only left $\star$-ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$, and the same for the right ideals.
 
-**Proof.** A left $\star$-ideal is a stable left algebra ideal by the theorem. A proper nonzero left ideal of the full matrix algebra $M_2(\mathbb{C})$, hence of $\mathbb{B}$, is the set of the matrices whose kernel contains a fixed line, by *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Lattice of Left Ideals*; its conjugate image is a right ideal of the same dimension, and it differs from the left ideal, because a set that is both a left and a right ideal is a two-sided ideal and the proper nonzero two-sided ideals do not exist in $\mathbb{B}$. Hence no proper nonzero left algebra ideal is stable and the only left $\star$-ideals are $0$ and $\mathbb{B}$. The right case is the same under the involution.
+**Proof.** A left $\star$-ideal is a stable left algebra ideal by the theorem. A proper nonzero left ideal of the full matrix algebra $M_2(\mathbb{C})$, hence of $\mathbb{B}$, is the set of the matrices whose kernel contains a fixed line, by *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Lattice of Left Ideals*; its conjugate image is a right ideal of the same dimension, and it differs from the left ideal, because a set that is both a left and a right ideal is a two-sided ideal and the proper nonzero two-sided ideals do not exist in $\mathbb{B}$. Hence no proper nonzero left algebra ideal is stable and the only left $\star$-ideals are $0$ and $\mathbb{B}$. The right case is the same under the involution.
 
 **Corollary (a single element generates the sesqualgebra).** For every $0\neq\tilde Q_1$ the smallest left $\star$-ideal containing $\tilde Q_1$ is $\mathbb{B}$, and the same on the right.
 
@@ -108,7 +108,7 @@ is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $
 
 ### The Algebra's Minimal One-Sided Ideals
 
-**Recall.** The minimal left algebra ideals of $\mathbb{B}$ are the spaces $\mathbb{B}\tilde\Pi$ over the primitive idempotents $\tilde\Pi$, equivalently the spaces $\mathbb{B}\tilde Q_1$ over the nonzero elements $\tilde Q_1$ whose square vanishes, by *Ideals and Peirce Decompositions of the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals* and *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+**Recall.** The minimal left algebra ideals of $\mathbb{B}$ are the spaces $\mathbb{B}\tilde\Pi$ over the primitive idempotents $\tilde\Pi$, equivalently the spaces $\mathbb{B}\tilde Q_1$ over the nonzero elements $\tilde Q_1$ whose square vanishes, by *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals* and *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 **Proposition.** A minimal left algebra ideal of $\mathbb{B}$ is not a left $\star$-ideal.
 
@@ -120,7 +120,7 @@ is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $
 
 **Theorem.** The centre of $\mathbb{B}$ is $\mathbb{C}e_t$, a field, and the only central idempotents are $0$ and $e_t$.
 
-**Proof.** The centre of the full matrix algebra is the scalar multiples of the identity, transported to $\mathbb{C}e_t$ by *Biquaternion $2\times2$ Matrix Element Representation* and *Ideals and Peirce Decompositions of the Biquaternion Algebra*; the centre of a field is a field, and $\mathbb{C}e_t$ is identified with $\mathbb{C}$. A central idempotent $\tilde Q_4$ satisfies $\tilde Q_4(1-\tilde Q_4)=0$ and, being central, generates the two-sided ideal $\mathbb{B}\tilde Q_4$; since the only two-sided ideals are $0$ and $\mathbb{B}$, the idempotent is $0$ or $e_t$.
+**Proof.** The centre of the full matrix algebra is the scalar multiples of the identity, transported to $\mathbb{C}e_t$ by *Biquaternion $2\times2$ Matrix Element Representation* and *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the centre of a field is a field, and $\mathbb{C}e_t$ is identified with $\mathbb{C}$. A central idempotent $\tilde Q_4$ satisfies $\tilde Q_4(1-\tilde Q_4)=0$ and, being central, generates the two-sided ideal $\mathbb{B}\tilde Q_4$; since the only two-sided ideals are $0$ and $\mathbb{B}$, the idempotent is $0$ or $e_t$.
 
 **Remark.** The centre is the field of scalars of the algebra, so $\mathbb{B}$ is a **central** simple algebra, in the sense of *Central Simple Algebras and the Brauer Group*; the two-sided simplicity and the trivial centre are the two halves of that notion.
 

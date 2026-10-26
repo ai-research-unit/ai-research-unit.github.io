@@ -25,7 +25,7 @@ The article owns no theorem. It states the algebraic classification, with its so
 | The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | The norm, its multiplicativity and the inverse | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms and the interval | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
-| The $2\times2$ matrix model and the eigenvalues of the mass operator | [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
+| The $2\times2$ matrix model and the eigenvalues of the mass operator | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 
 ## The Root Problem by Band
 

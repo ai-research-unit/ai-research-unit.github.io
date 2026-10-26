@@ -158,6 +158,33 @@ The first form uses no involution, the second uses the adjugate in the first slo
 
 **Why four and not two.** The complex algebra has two independent real structures, ${}^{\natural}$ and $\bar{\cdot}$, and their product is the Hermitian conjugation. The fourth is the negative of the product. The four are the four ways of combining the quaternion conjugation with the complex conjugation, and the four forms are the four ways of switching them on and off in a trace.
 
+## The Adjugate of the Dagger
+
+The dressed conjugation is the composition of the two anti-involutions:
+
+$$
+\operatorname{adj}(M^{\dagger})=(\operatorname{adj}M)^{\dagger}
+=\epsilon\bar M\epsilon^{-1}.
+$$
+
+For $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ all three expressions equal
+
+$$
+\begin{pmatrix}\bar d&-\bar c\\-\bar b&\bar a\end{pmatrix},
+$$
+
+which proves the identity. It is the matrix form of $\bar{\cdot}={}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}$: the algebra conjugation is the adjugate of the Hermitian conjugate, and the two operations commute because one acts on the order of the factors and the other on their values.
+
+**The Klein group.** The three operations $\operatorname{adj}$, ${}^{\dagger}$ and $\operatorname{adj}\circ{}^{\dagger}$ are involutions and commute, so together with the identity they form a Klein four-group:
+
+$$
+\operatorname{adj}^2=\mathrm{id},\qquad
+(\dagger)^2=\mathrm{id},\qquad
+(\operatorname{adj}\dagger)^2=\mathrm{id}.
+$$
+
+The fourth algebra involution ${}^{\flat}$ is $-\dagger$, the negative of the Hermitian conjugation, and it is not in this group because the minus sign is not multiplicative. The matrix table of the four involutions is therefore the table of the three elements of the Klein group together with $-\dagger$.
+
 ## Summary
 
 The four involutions of the algebra become the adjugate, the $\epsilon$-dressed entrywise conjugation, the conjugate transpose and its negative. Their fixed spaces are the centre, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace; their anti-fixed spaces are the vector, anti-quaternion, anti-Hermitian and Hermitian subspaces. The adjugate is $(\operatorname{Tr}M)\mathrm I_2-M$ and also $\epsilon M^{\mathsf T}\epsilon^{-1}$; complex conjugation is $\epsilon\bar M\epsilon^{-1}$ and not the entrywise conjugation. The four forms are the four half-traces of the words built from these switches.

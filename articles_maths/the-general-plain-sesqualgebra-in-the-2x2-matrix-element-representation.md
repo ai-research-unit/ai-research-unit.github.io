@@ -1,4 +1,4 @@
-# __The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$__
+# __$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions__
 
 ## Introduction
 

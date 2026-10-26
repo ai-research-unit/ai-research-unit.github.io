@@ -73,6 +73,49 @@ The numerator is the image of $\tilde Q^{\natural}$, and the formula is the matr
 
 **The determinant as a volume.** Over $\mathbb{C}$ the determinant is a complex volume. Its modulus squared is the real volume of the image of the unit square, and its argument is twice the phase of the linear map. On the Hermitian matrices the determinant is real and is the Minkowski quadratic form; on the anti-Hermitian matrices it is real with the opposite sign. The two readings are the two real forms of the same complex determinant.
 
+## The Four Norms as Matrix Invariants
+
+The four algebraic norms of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*The Four Algebraic Norms*, are four matrix invariants of the same element.
+
+| Norm | Algebra value | Matrix formula | Value ring | Definite |
+|---|---|---|---|---|
+| Plain $P$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | $\tfrac12\operatorname{Tr}(M^2)$ | $\mathbb{C}$ | no |
+| Quaternionic $N$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | $\det M$ | $\mathbb{C}$ | no |
+| Hermitian $H$ | $\sum_\mu\lvert Q_\mu\rvert^2$ | $\tfrac12\operatorname{Tr}(M^{\dagger}M)$ | $\mathbb{R}$ | yes |
+| Krein $K$ | $\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$ | $\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}(M)M^{\dagger}\bigr)$ | $\mathbb{R}$ | no |
+
+**The plain norm.** Since $M=Q_t\mathrm I_2+\mathsf M_2(\vec Q)$ and $\mathsf M_2(\vec Q)$ is traceless,
+
+$$
+M^2=Q_t^2\mathrm I_2+2Q_t\mathsf M_2(\vec Q)+\mathsf M_2(\vec Q)^2,
+\qquad
+\operatorname{Tr}\bigl(\mathsf M_2(\vec Q)^2\bigr)=-2B^2,
+$$
+
+so $\tfrac12\operatorname{Tr}(M^2)=Q_t^2-B^2=P$. The word is the plain word $M^2$ closed by a trace.
+
+**The Hermitian norm.** The identity $\tfrac12\operatorname{Tr}(M^{\dagger}M)=\tfrac12\sum_{ij}\lvert M_{ij}\rvert^2$ gives, on the general matrix,
+
+$$
+\tfrac12\operatorname{Tr}(M^{\dagger}M)
+=\tfrac12\Bigl(\lvert Q_t-iQ_z\rvert^2+\lvert -iQ_x-Q_y\rvert^2
++\lvert -iQ_x+Q_y\rvert^2+\lvert Q_t+iQ_z\rvert^2\Bigr)
+=\sum_\mu\lvert Q_\mu\rvert^2=H .
+$$
+
+It is the Frobenius norm squared, and it is the unique norm of the four that is positive definite.
+
+**The Krein norm.** Since $\operatorname{adj}M=\mathsf M_2(\tilde Q^{\natural})=Q_t\mathrm I_2-\mathsf M_2(\vec Q)$ and $M^{\dagger}=\mathsf M_2(\tilde Q^{*})=\overline{Q_t}\mathrm I_2-\mathsf M_2(\overline{\vec Q})$, the two traceless parts contribute only through their product, whose trace is $-2\sum_k\lvert Q_k\rvert^2$. Hence
+
+$$
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}(M)M^{\dagger}\bigr)
+=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2=K .
+$$
+
+The Krein norm is the only one of the four that is positive on the centre and negative on the vector subspace, and its signature on the real algebra is $(2,6)$.
+
+The table is the matrix form of the table of the four norms: the plain and the quaternionic norms are complex-valued, the Hermitian and the Krein norms are real-valued, and the quaternionic norm alone is multiplicative.
+
 ## The Characteristic Polynomial
 
 **The characteristic polynomial is the biquadratic.**
@@ -168,6 +211,7 @@ The trace is twice the scalar part and the determinant is the quaternionic norm.
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the singular matrices
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the modulus
 - [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the determinants on the subspaces
+- [$M_2(\mathbb{C})$ Representation : The Killing Form](m2c-representation-the-killing-form.html), for the trace form on the Lie algebra
 - [The N-Regular Sector](the-n-regular-sector.html), for the norm on the units
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html)
