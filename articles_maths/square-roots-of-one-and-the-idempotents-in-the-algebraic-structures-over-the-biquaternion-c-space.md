@@ -93,7 +93,7 @@ The twelve root sets of $+1$ are read one by one, each quoted from the article t
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\Xi\tilde Q$, and its square is the plain square, of scalar part $\Xi_t^{2}-(\vec\Xi,\vec\Xi)$ and vector part $2\Xi_t\vec\Xi$. The roots of $+1$ are the central pair $\pm e_t$ and the pure quadric $(\vec\Xi,\vec\Xi)=-1$ of real dimension four, which contains the purely imaginary unit vectors $\tilde\Xi$. The article is *Square Roots of One and the Idempotents of the Biquaternion Algebra*.
+The product is $\tilde\Xi\tilde Q$, and its square is the plain square, of scalar part $\Xi_t^{2}-(\vec\Xi,\vec\Xi)$ and vector part $2\Xi_t\vec\Xi$. The roots of $+1$ are the central pair $\pm e_t$ and the pure quadric $(\vec\Xi,\vec\Xi)=-1$ of real dimension four, which contains the purely imaginary unit vectors $\tilde\Xi$. The article is *Idempotents*.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra
 
@@ -169,7 +169,7 @@ The classification reads the ways a square operator differs from the plain squar
 
 ### The Plain Family and its Three Parts
 
-**Theorem (the plain family; quoted).** The idempotents of $\mathbb{B}$ are $0$, $e_t$, and the elements $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the plain product; the halving map is a bijection from the roots of $+1$ onto the set; and the complementary pair is $\{\tfrac12(e_t+\tilde\Xi),\ \tfrac12(e_t-\tilde\Xi)\}$ (*Square Roots of One and the Idempotents of the Biquaternion Algebra*).
+**Theorem (the plain family; quoted).** The idempotents of $\mathbb{B}$ are $0$, $e_t$, and the elements $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the plain product; the halving map is a bijection from the roots of $+1$ onto the set; and the complementary pair is $\{\tfrac12(e_t+\tilde\Xi),\ \tfrac12(e_t-\tilde\Xi)\}$ (*Idempotents*).
 
 The classification of the roots of $+1$ organises the family in three parts, and each part has its own kind.
 
@@ -236,7 +236,7 @@ The four sets therefore occupy four different regions: the centre for the trivia
 
 **Theorem (the Peirce decomposition is the plain product's own).** For an idempotent $\tilde\Pi$ of the plain product the algebra splits as $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_t-\tilde\Pi)$, and the two summands are left ideals. For the idempotents of the other structures no such decomposition is available, because the products are not associative, and it is the associativity that turns the Peirce corners into ideals.
 
-*Proof.* The decomposition and the ideal structure are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the display $\tilde\Pi(e_t-\tilde\Pi)=0$ of §*The Antipodal Idempotent* is the orthogonality the decomposition needs, and the associativity of the plain product is what makes the summands $\mathbb{B}\tilde\Pi$ and $\mathbb{B}(e_t-\tilde\Pi)$ left ideals, which the other three products fail.
+*Proof.* The decomposition and the ideal structure are *The Peirce Decomposition*; the display $\tilde\Pi(e_t-\tilde\Pi)=0$ of §*The Antipodal Idempotent* is the orthogonality the decomposition needs, and the associativity of the plain product is what makes the summands $\mathbb{B}\tilde\Pi$ and $\mathbb{B}(e_t-\tilde\Pi)$ left ideals, which the other three products fail.
 
 The comparison ends with the two readings of the idempotent. The Hermitian idempotents of the general plain sesquilinear product act as projections on the positive cone and on the Hermitian module (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*), and the displaced family is the family of idempotents of the fourth product whose central square is $e_t$; the natural product has the trivial pair alone.
 

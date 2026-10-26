@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra carries two quadratic conditions on one element. The **quaternionic norm** $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-units, and its zero locus is the **null cone** $\mathcal{N}$. The **square of the vector part** $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the **spectral-degenerate cone** $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; this article compares them.
+The biquaternion algebra carries two quadratic conditions on one element. The **quaternionic norm** $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-units, and its zero locus is the **null cone** $\mathcal{N}$. The **square of the vector part** $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the **spectral-degenerate cone** $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*; this article compares them.
 
 The comparison is organised by the pair of predicates $(N\neq0,\ B^2\neq0)$. The pair cuts $\mathbb{B}$ into four **sectors**, and the same four sectors are the four degeneration patterns of the characteristic polynomial. Each sector is treated in its own article: *The N-Regular, Spectrally Regular Sector*, *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The index $i$ in $\Sigma_{ij}$ is the norm and the index $j$ the spectrum; the four articles are ordered $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$, the units first and the null cone second.
 
@@ -14,7 +14,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t,\qquad \langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=(Q_t^2+B^2)e_t.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*.
+The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The algebra and its conventions are *The Biquaternion Algebra*.
 
 ## The Four Sectors
 
@@ -181,7 +181,7 @@ The count is of degeneration types, not of values: the characteristic polynomial
 
 **Corollary (completeness off the cone).** Off $\mathcal S$ the characteristic polynomial is a complete invariant of the similarity class. On $\mathcal S$ exactly two similarity classes share each characteristic polynomial: the scalar class and the Jordan class, or the origin and the nilpotent class at $Q_t=0$. The minimal polynomial separates them.
 
-*Proof.* This is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Similarity Classification*. Off $\mathcal S$ the eigenvalues are distinct, so the element is diagonalisable with that spectrum. On $\mathcal S$ the scalar class is central and the Jordan class has minimal polynomial $(X-Q_t)^2$.
+*Proof.* This is *The Spectrum*, §*The Similarity Classification*. Off $\mathcal S$ the eigenvalues are distinct, so the element is diagonalisable with that spectrum. On $\mathcal S$ the scalar class is central and the Jordan class has minimal polynomial $(X-Q_t)^2$.
 
 **Remark (the chain).** Each invariant is a function of the next: the norm is the constant term of $p_{\tilde Q}$, and $p_{\tilde Q}$ is determined by $m_{\tilde Q}$, being $m_{\tilde Q}$ when the minimal polynomial has degree two and $m_{\tilde Q}^2$ when it has degree one. Read downward, information is lost: the norm forgets the sum of the eigenvalues, the characteristic polynomial forgets the defect, the minimal polynomial forgets nothing.
 
@@ -202,7 +202,7 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 (iii) On $\Sigma_{10}^{\mathrm{J}}$ no non-trivial idempotent commutes with $\tilde Q$, so there is no two-term decomposition.
 (iv) On $\Sigma_{00}$ the same holds off the origin; at the origin only the trivial one-term writing $0=0\cdot e_t$ exists.
 
-*Proof.* The first two statements and the last are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Decomposition* and §*The Behaviour on the Cone*. On $\Sigma_{10}^{\mathrm{J}}$ the minimal polynomial is $(X-Q_t)^2$ and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$.
+*Proof.* The first two statements and the last are *The Spectrum*, §*The Spectral Decomposition* and §*The Behaviour on the Cone*. On $\Sigma_{10}^{\mathrm{J}}$ the minimal polynomial is $(X-Q_t)^2$ and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$.
 
 **Definition (modulus–unit polar decomposition).** A **modulus–unit polar decomposition** of $\tilde Q$ is a writing $\tilde Q=\Rho\tilde U$ with $\Rho\in\mathbb{C}$, $\Rho\neq0$, $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$.
 

@@ -29,7 +29,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, \pi_1, \pi_2, e_t$ | $4$ | *Split-Biquaternion Algebra* |
 | $\mathbb{Q}[C_3]$ | $0, 1$ and the two minimal ones | $4$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the projections | infinitely many | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | the complex multiples of the idempotents | infinitely many | *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* |
+| $\mathbb{B}$, the biquaternions | the complex multiples of the idempotents | infinitely many | *The Peirce Decomposition* |
 | a Boolean ring $B$ | every element | $\lvert B \rvert$ | *Von Neumann Regular Rings* |
 
 The dichotomy the table records is between the rings that are connected, with $0$ and $1$ as their only idempotents, and the rings that split. The domains, the fields, the division rings and the local rings are connected; $\mathbb{Z}/n\mathbb{Z}$ has $2^{\omega(n)}$ idempotents, where $\omega(n)$ counts the distinct primes dividing $n$, so $\mathbb{Z}/6\mathbb{Z}$ and $\mathbb{Z}/12\mathbb{Z}$ have four; and the Boolean rings have an idempotent for every element. The split-biquaternions and the split-complex numbers have exactly four idempotents each, and $\mathbb{H}$ has two, which is the sharpest contrast between the quaternion family and its split relatives.
@@ -55,13 +55,13 @@ A nontrivial idempotent $p$ satisfies $p(1-p) = 0$, so $R = Rp \oplus R(1-p)$ is
 | Object | The orthogonal family | The decomposition | Introduced in |
 |---|---|---|---|
 | a module $M$ over $R$ | a single idempotent $p$ | $M = pM \oplus (1-p)M$ | *Modules* |
-| an algebra $A$ | a single idempotent $p$ | $A = pAp \oplus pA(1-p) \oplus (1-p)Ap \oplus (1-p)A(1-p)$ | *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* |
-| $\mathbb{B} \cong M_2(\mathbb{C})$ | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | the four one-dimensional corners | *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* |
+| an algebra $A$ | a single idempotent $p$ | $A = pAp \oplus pA(1-p) \oplus (1-p)Ap \oplus (1-p)A(1-p)$ | *The Peirce Decomposition* |
+| $\mathbb{B} \cong M_2(\mathbb{C})$ | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | the four one-dimensional corners | *The Peirce Decomposition* |
 | $M_2(\mathbb{R})$ | $E_{11}, E_{22}$ | the column decomposition of $\mathbb{R}^2$ | *Matrix Algebras* |
 | $R \times S$ | $(1,0)$, $(0,1)$ | the two components | *Examples of Rings and Fields* |
 | a group algebra $k[G]$ | the idempotents of the group | $k[G] = \bigoplus p_i k[G] p_i \oplus \text{off-diagonal}$ | *Group Algebras* |
 
-The Peirce decomposition relative to a complete orthogonal family of idempotents $p_1 + \cdots + p_n = 1$ writes a module as $M = \bigoplus_i p_i M$ and an algebra as the direct sum of the corner algebras $p_i A p_j$. The biquaternion case is the corpus's worked example: with $\tilde\Pi_1 = E_{11}$ and $\tilde\Pi_2 = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\vec\Upsilon_1$ and $\vec\Upsilon_2$, as recorded in *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
+The Peirce decomposition relative to a complete orthogonal family of idempotents $p_1 + \cdots + p_n = 1$ writes a module as $M = \bigoplus_i p_i M$ and an algebra as the direct sum of the corner algebras $p_i A p_j$. The biquaternion case is the corpus's worked example: with $\tilde\Pi_1 = E_{11}$ and $\tilde\Pi_2 = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\vec\Upsilon_1$ and $\vec\Upsilon_2$, as recorded in *The Peirce Decomposition*.
 
 ## The von Neumann Regular Rings
 
@@ -97,7 +97,7 @@ A ring with $0$ and $1$ as its only idempotents is connected, equivalently indec
 |---|---|---|
 | the zero ring $\{0\}$ | $0 = 1$, and the single element is an idempotent, excluded by the convention $1 \neq 0$ | *Rings*, §2 |
 | $M_2(\mathbb{R})$ as a "split" ring | it is simple, so it has no nontrivial two-sided idempotent splitting, although it has many one-sided idempotents | *Matrix Algebras* |
-| $\mathbb{B}$ as a "split" ring | simple, like $M_2(\mathbb{C})$; its idempotents give the Peirce corners and not a product decomposition | *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* |
+| $\mathbb{B}$ as a "split" ring | simple, like $M_2(\mathbb{C})$; its idempotents give the Peirce corners and not a product decomposition | *The Peirce Decomposition* |
 
 The third and fourth rows record the distinction the list rests on: an idempotent gives a product decomposition only when it is central, and the idempotents of a matrix algebra are not. The split-biquaternions and the split-complex numbers are products because their idempotents are central, while the matrix ring and the biquaternions are simple and their idempotents are not.
 

@@ -184,7 +184,7 @@ $$
 \tilde Q=2Q_t\,uw,\qquad u^2=w^2=0.
 $$
 
-The idempotents, their classification and their Peirce systems are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the factorisation is recorded here because it places the non-pure zero divisors in the same Peirce framework as the pure ones.
+The idempotents, their classification and their Peirce systems are *The Peirce Decomposition*; the factorisation is recorded here because it places the non-pure zero divisors in the same Peirce framework as the pure ones.
 
 **Theorem (the zero-divisor set).** The set
 
@@ -204,7 +204,7 @@ and it is stable under multiplication by non-zero complex scalars.
 
 **Correspondence (the remarkable subspaces).** By the signatures tabulated in §*The Two Cases on the Remarkable Subspaces*, the norm is anisotropic on the centre, the quaternion subspace and the anti-quaternion subspace: it vanishes only at the origin there, so none of the three contains a zero divisor; the zero-divisor set in the vector subspace is the pure stratum; and the Hermitian and anti-Hermitian subspaces each carry a null cone. A generic zero divisor has all four coefficients non-zero and lies in none of them.
 
-**Remark (the spectral reading).** Inside $\mathcal{N}$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
+**Remark (the spectral reading).** Inside $\mathcal{N}$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *The Spectrum*.
 
 The matrix reading of the split is in *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*, §*The Factorisation*: a non-zero null element is a rank-one matrix $uv^{\mathsf T}$, its scalar part is the contraction $\tfrac12 v^{\mathsf T}u$, the pure stratum is the locus $v^{\mathsf T}u=0$, and the square identity $\tilde Q^2=2Q_t\tilde Q$ is the rank-one identity.
 

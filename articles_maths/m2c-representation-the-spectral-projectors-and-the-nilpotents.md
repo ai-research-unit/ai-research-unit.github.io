@@ -1,4 +1,4 @@
-# __$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents__
+# __$M_2(\mathbb{C})$ Model : The Spectral Projectors__
 
 ## Introduction
 
@@ -15,7 +15,7 @@ $$
 
 and $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$.
 
-**Boundaries.** The spectral criterion is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; the eigenbasis construction is *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*; the diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the nilpotent cone is *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the 4×4 spectral representation remains in *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
+**Boundaries.** The spectral criterion is *The Spectrum*; the eigenbasis construction is *The Eigenbasis*; the diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the nilpotent cone is *Nilpotents*; the 4×4 spectral representation remains in *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
 
 ## The Spectral Projectors
 
@@ -145,7 +145,7 @@ $$
 
 *Proof.* Conjugation carries the matrix-unit relations $E_{12}^2=E_{21}^2=0$, $E_{12}E_{21}=E_{11}$, $E_{21}E_{12}=E_{22}$ to the stated relations, and it carries $E_{11},E_{22}$ to $\rho_+,\rho_-$. Trace and determinant are conjugation-invariant; the rank is one because the matrices are nonzero and square-zero in dimension two.
 
-**The explicit matrices.** In the fixed model the nilpotents are the conjugates of the off-diagonal units by $\mathsf C_Q$. The conjugation is the change from the standard eigenbasis to the spectral one, and it is the reason the nilpotents are not simply $E_{12}$ and $E_{21}$: the spectral eigenbasis is not the standard one unless the element points along the $z$-axis. The general closed form in the coefficients is given in *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*, §*The Nilpotent Pair*.
+**The explicit matrices.** In the fixed model the nilpotents are the conjugates of the off-diagonal units by $\mathsf C_Q$. The conjugation is the change from the standard eigenbasis to the spectral one, and it is the reason the nilpotents are not simply $E_{12}$ and $E_{21}$: the spectral eigenbasis is not the standard one unless the element points along the $z$-axis. The general closed form in the coefficients is given in *The Eigenbasis*, §*The Nilpotent Pair*.
 
 **The Jordan form.** A nonzero nilpotent of $M_2(\mathbb{C})$ is conjugate to the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$. The two nilpotents $N_\pm$ are therefore conjugate to each other and to the two standard off-diagonal units; the labels $+$ and $-$ record which mixed corner they occupy, not a conjugacy class. The nilpotent is the matrix form of the spectral-degenerate part of the element: it is the off-diagonal entry that appears when the two eigenvalues coalesce.
 
@@ -209,7 +209,7 @@ The element is diagonal in the fixed model, and the spectral decomposition is th
 
 **The case $\vec Q=0$.** The element is scalar, $M=Q_t\mathrm I_2$. The spectral direction is undefined, the two eigenvalues coincide, and every projector is a spectral projector. The decomposition is not unique, and the article's construction does not apply. The scalar element is the centre of the algebra, and its spectral theory is trivial.
 
-**The degenerate cone.** For $B=0$ and $\vec Q\neq0$ the two eigenvalues coincide and the matrix is $Q_t\mathrm I_2+N$ with $N$ nilpotent. There is no pair of complementary rank-one spectral projectors: the only spectral projector is $\mathrm I_2$, and the nilpotent is not a difference of two projectors. The construction of this article therefore stops on the cone, and the spectral theory of the cone is the Jordan theory of *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
+**The degenerate cone.** For $B=0$ and $\vec Q\neq0$ the two eigenvalues coincide and the matrix is $Q_t\mathrm I_2+N$ with $N$ nilpotent. There is no pair of complementary rank-one spectral projectors: the only spectral projector is $\mathrm I_2$, and the nilpotent is not a difference of two projectors. The construction of this article therefore stops on the cone, and the spectral theory of the cone is the Jordan theory of *Nilpotents*.
 
 **The directional limit.** If $\vec Q\to0$ along a fixed direction, the projectors $\rho_\pm$ tend to a pair of rank-one projectors depending on that direction, while $M\to Q_t\mathrm I_2$. The limit pair is not the spectral pair of the limit matrix, because the limit matrix is scalar and has no preferred pair. The discontinuity is the matrix form of the fact that the spectral decomposition is not continuous at the vertex.
 

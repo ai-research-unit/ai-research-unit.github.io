@@ -34,7 +34,7 @@ $$
 
 The second equation is the **vector–scalar reduction**: $\Xi_t=0$ or $\vec\Xi=0$. The case $\vec\Xi=0$ gives the two central roots $\tilde\Xi=\pm\sqrt\lambda\,e_t$, which coincide as the origin when $\lambda=0$. The case $\Xi_t=0$ gives the roots in the vector subspace, the solutions of $-(\vec\Xi,\vec\Xi)=\lambda$, which are a four-real-parameter family for every $\lambda$: writing $\lambda=\lambda_1+i\lambda_2$ the family is cut by the two real equations $\sum_{\mu\in\{x,y,z\}}(\operatorname{Re}\vec\Xi)_\mu^{2}-\sum_{\mu\in\{x,y,z\}}(\operatorname{Im}\vec\Xi)_\mu^{2}=-\lambda_1$ and $\sum_{\mu\in\{x,y,z\}}(\operatorname{Re}\vec\Xi)_\mu(\operatorname{Im}\vec\Xi)_\mu=-\tfrac12\lambda_2$, and the element $\vec\Xi=\sqrt{-\lambda}\,\vec e_x$ solves them with either branch of the square root.
 
-So the plain product has a root of **every** central value, complex or not, and the root set is the two central roots together with the quadric cut on the vector subspace. At $\lambda=0$ the two central roots collapse to the origin and the quadric is the **pure null cone** $(\vec\Xi,\vec\Xi)=0$, whose non-zero elements are the nilpotents of the algebra, read in *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
+So the plain product has a root of **every** central value, complex or not, and the root set is the two central roots together with the quadric cut on the vector subspace. At $\lambda=0$ the two central roots collapse to the origin and the quadric is the **pure null cone** $(\vec\Xi,\vec\Xi)=0$, whose non-zero elements are the nilpotents of the algebra, read in *Nilpotents*.
 
 ### The General Plain Sesquilinear Product: No Root of a Negative
 
@@ -106,7 +106,7 @@ The square of a structure is its operation read at the two equal arguments, and 
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\Xi\tilde Q$ and its square is the plain square $\Xi_t^{2}-(\vec\Xi,\vec\Xi)$ on the scalar line and $2\Xi_t\vec\Xi$ on the vector line. A root of $\lambda$ exists for **every** $\lambda$, and the root set is the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric $(\vec\Xi,\vec\Xi)=-\lambda$, a four-real-parameter family; at $\lambda=0$ the two central roots coincide at the origin and the quadric is the pure null cone. The article is *Square Roots of a General Element in the Biquaternion Algebra*.
+The product is $\tilde\Xi\tilde Q$ and its square is the plain square $\Xi_t^{2}-(\vec\Xi,\vec\Xi)$ on the scalar line and $2\Xi_t\vec\Xi$ on the vector line. A root of $\lambda$ exists for **every** $\lambda$, and the root set is the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric $(\vec\Xi,\vec\Xi)=-\lambda$, a four-real-parameter family; at $\lambda=0$ the two central roots coincide at the origin and the quadric is the pure null cone. The article is *Square Roots of an Element*.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra
 

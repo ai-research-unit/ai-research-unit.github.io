@@ -360,11 +360,11 @@ When $\tilde\Pi$ is Hermitian, $\kappa=1$ and $\tilde Q_0=(c/\lvert c\rvert)\til
 
 ### The modulus and the singular value
 
-The element modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$. The number $2a$ is not a modulus in that sense: it is the non-zero singular value of $\tilde Q$ in the matrix model, equivalently the non-zero spectral value of the Hermitian factor $\tilde Q_H$. The operator $L_{\tilde Q}$ is singular, but it is not the zero operator: it has rank two and non-zero singular value $2a$. The vanishing of $\Rho$ says that the element is a zero divisor; it does not say that the operator is nilpotent. At the spectral wall $B^{2}=0$ the operator is nilpotent.
+The element modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$. The number $2a$ is not a modulus in that sense: it is the non-zero singular value of $\tilde Q$ in the matrix model, equivalently the non-zero spectral value of the Hermitian factor $\tilde Q_H$. The operator $L_{\tilde Q}$ is singular, but it is not the zero operator: it has rank two and non-zero singular value $2a$. The vanishing of $\Rho$ says that the element is a zero divisor; it does not say that the operator is nilpotent. On $\Sigma_{00}$, where $B^{2}=0$ and $Q_t=0$, the operator is nilpotent; on $\Sigma_{10}$, where $Q_t\neq0$, it is unipotent instead.
 
 ## The Eigenbasis and the Two Slots
 
-Since $B^{2}\neq0$, the eigenbasis of *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion* exists. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the Peirce form of $\tilde Q$ is
+Since $B^{2}\neq0$, the eigenbasis of *The Eigenbasis* exists. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the Peirce form of $\tilde Q$ is
 
 $$
 \tilde\Pi\tilde Q\tilde\Pi=c\tilde\Pi,\qquad

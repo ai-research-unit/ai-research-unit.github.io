@@ -76,7 +76,7 @@ $$
 
 *Proof.* In the matrix model choose $v\in\operatorname{im}N$ with $v\neq0$. Since $N^2=0$, $v\in\ker N$. Choose $w$ with $Nw=v$. Then $v\neq0$ and $w\notin\ker N$, so $(v,w)$ is a basis. The matrix of $N$ in that basis has first column $0$ and second column $v$, which is the nilpotent Jordan block. $\square$
 
-The chain is not unique for the product alone. The vector $\xi$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\xi$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\xi=\vec Q$ and $\eta=\tilde\Pi_-=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion*. It is a basis of the generalized eigenspace, not a polar frame.
+The chain is not unique for the product alone. The vector $\xi$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\xi$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\xi=\vec Q$ and $\eta=\tilde\Pi_-=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in *The Jordan Normal Form*. It is a basis of the generalized eigenspace, not a polar frame.
 
 ## The Polar Word and the Jordan Flag
 

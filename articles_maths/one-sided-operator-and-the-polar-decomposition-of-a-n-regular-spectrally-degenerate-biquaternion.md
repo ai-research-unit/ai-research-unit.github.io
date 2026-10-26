@@ -10,7 +10,7 @@ L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,
 R_{\tilde Q}(\tilde X)=\tilde X\tilde Q.
 $$
 
-On the N-regular, spectrally degenerate sector the parameter is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$. The one-sided operator is therefore a scalar times a unipotent operator. That single fact organizes the whole article: the operator has one eigenvalue, two Jordan blocks, and a polar word whose factors are not unipotent individually.
+On the N-regular, spectrally degenerate sector the parameter is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$. The one-sided operator is therefore a scalar times a unipotent operator. That single fact organizes the whole article: on the Jordan part the operator has one eigenvalue and two Jordan blocks, and a polar word whose factors are not unipotent individually.
 
 The article reads the one-sided operator through the polar word and through the Jordan structure. It does not repeat the general theory of *One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*; it states what the wall changes.
 
@@ -207,7 +207,7 @@ also of dimension two. The kernel is the generalized eigenspace of $L_{\tilde Q}
 
 | Item | Value |
 |---|---|
-| parameter | $\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ |
+| parameter | $\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ |
 | operator | $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ |
 | square | $L_{\vec\Upsilon}^2=0$ |
 | rank of $L_{\vec\Upsilon}$ | $2$ |
@@ -220,9 +220,11 @@ also of dimension two. The kernel is the generalized eigenspace of $L_{\tilde Q}
 | exponential | $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\vec\Upsilon})$ |
 | fixed angles at the wall | $\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\psi}{2}=a$ |
 
+At $\vec\Upsilon=0$ the element is $Q_t e_t$ and $L_{\tilde Q}=Q_t I_4$: spectrum $Q_t$ with algebraic and geometric multiplicity four, Jordan type $1+1+1+1$. The table describes the Jordan part.
+
 ### What the Operator Shows
 
-- The one-sided operator is unipotent up to the scalar, with two explicit Jordan blocks.
+- On the Jordan part the one-sided operator is unipotent up to the scalar, with two explicit Jordan blocks.
 - The polar factors are left multiplications by a positive element and a rotor; neither is unipotent.
 - The defect of the element is visible as the non-commutativity of the factors and as the off-diagonal entries of the blocks.
 - The image and kernel of the nilpotent part are left and right ideals of dimension two.

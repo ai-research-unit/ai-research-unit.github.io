@@ -1,10 +1,10 @@
-# __$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units__
+# __$M_2(\mathbb{C})$ Model : Peirce Coordinates and Matrix Units__
 
 ## Introduction
 
 A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. Read as a matrix, the four corner coordinates are the four entries, and the four corner basis elements are the four matrix units. The coordinate model is therefore the same isomorphism as the fixed matrix model, read in the basis adapted to the idempotents rather than the basis adapted to the vector part.
 
-This article develops the coordinate model, the systems of matrix units, and the rigidity statement that all such systems are conjugate. It is the matrix form of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Coordinates and the Matrix Model* and §*Systems of Matrix Units*.
+This article develops the coordinate model, the systems of matrix units, and the rigidity statement that all such systems are conjugate. It is the matrix form of *The Peirce Decomposition*, §*The Peirce Coordinates and the Matrix Model* and §*Systems of Matrix Units*.
 
 **Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The standard idempotent pair is
 
@@ -20,9 +20,9 @@ $$
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y).
 $$
 
-The labels $x,y$ are the labels of the standard pair. The eigenbasis of a general element uses a different labelling, $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, treated in *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
+The labels $x,y$ are the labels of the standard pair. A general element uses a different labelling, $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, treated in *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
 
-**Boundaries.** The Peirce decomposition is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the columns and rows are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*; the nilpotents are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the inner automorphisms are *Biquaternion Automorphisms and Derivations*.
+**Boundaries.** The Peirce decomposition is *The Peirce Decomposition*; the columns and rows are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*; the nilpotents are *Nilpotents*; the inner automorphisms are *Biquaternion Automorphisms and Derivations*.
 
 ## The Peirce Table
 
@@ -81,7 +81,7 @@ $$
 \det\mathsf{M}_2^{Q}(\tilde Q)=a_{11}a_{22}-a_{12}a_{21}=\langle\tilde Q\rangle_{\natural}.
 $$
 
-The scalar part is the sum of the two diagonal corners, and the quaternionic norm is the determinant of the corner matrix. The two symmetric functions of the corner coordinates are the two invariants of the algebra.
+The scalar part is the sum of the two diagonal corners, and the central scalar is the determinant of the corner matrix. The two symmetric functions of the corner coordinates are the two invariants of the algebra.
 
 **The ideals in the coordinates.** The first column $\mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ is the image of $\mathbb{B}\tilde\Pi_+$, and the second column is the image of $\mathbb{B}\tilde\Pi_-$. The first row is the image of $\tilde\Pi_+\mathbb{B}$, and the second row is the image of $\tilde\Pi_-\mathbb{B}$. The columns are the left ideals and the rows are the right ideals; the coordinate model makes the two groupings of the same four entries visible at once.
 
@@ -111,7 +111,7 @@ $$
 =\mathsf M_2(\tilde Q).
 $$
 
-The fixed model is therefore the coordinate model attached to the standard pair, and the eigenbasis model is the coordinate model attached to the spectral pair. The equality is the matrix form of the fact that the standard idempotents are the coordinate idempotents.
+The fixed model is therefore the coordinate model attached to the standard pair, and the equality is the matrix form of the fact that the standard idempotents are the coordinate idempotents.
 
 ## Systems of Matrix Units
 
@@ -151,7 +151,7 @@ acting on the mixed elements by $\vec\Upsilon_x\mapsto(a/b)\vec\Upsilon_x$ and $
 
 The trivial idempotent $e_t$ is the exception: if $uv=e_t$ then $u$ is a unit, and a nilpotent is not a unit. The zero idempotent is $0\cdot0$.
 
-**The Jordan block.** Under the fixed model, a nonzero nilpotent is a nonzero trace-free singular matrix. Such a matrix has only the eigenvalue zero and is conjugate to the single Jordan block
+**The strictly triangular form.** Under the fixed model, a nonzero nilpotent is a nonzero trace-free singular matrix. Such a matrix has square zero, trace zero and determinant zero, and it is conjugate to the strictly triangular matrix
 
 $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}.
@@ -163,7 +163,7 @@ The two standard nilpotents are the two off-diagonal matrix units, and every oth
 
 ## Summary
 
-The Peirce coordinates of the standard pair are the matrix entries, and the four corner elements are the four matrix units. Trace is the sum of the diagonal corners and determinant is the determinant of the corner matrix. A system of matrix units is a Peirce decomposition with a normalised mixed basis, and it carries a reciprocal $\mathbb{C}^{\times}$ of choices. All systems are conjugate by inner automorphisms, and every nontrivial idempotent is a product of two nilpotents. In the matrix model the nilpotents are the nonzero trace-free singular matrices, conjugate to the Jordan block.
+The Peirce coordinates of the standard pair are the matrix entries, and the four corner elements are the four matrix units. Trace is the sum of the diagonal corners and determinant is the determinant of the corner matrix. A system of matrix units is a Peirce decomposition with a normalised mixed basis, and it carries a reciprocal $\mathbb{C}^{\times}$ of choices. All systems are conjugate by inner automorphisms, and every nontrivial idempotent is a product of two nilpotents. In the matrix model the nilpotents are the nonzero trace-free singular matrices, conjugate to the strictly triangular matrix.
 
 ## Summary of Notation
 

@@ -67,7 +67,7 @@ so the central coefficient $\beta(\tilde Q_1,\tilde Q_2)$ is exactly the polaris
 
 ## The Coefficient on the Remarkable Subspaces
 
-The coefficient $\beta$ is a symmetric $\mathbb{C}$-bilinear form on $\mathbb{B}$, and the whole content of the symmetrisation is its reading on the remarkable subspaces of *Introduction to the Remarkable Subspaces*. Here $A \in \mathbb{C}$, $h$ and $g$ are real quaternions, $a_t,b_t,c_t \in \mathbb{R}$, and $\vec p,\vec q,\vec r \in \mathbb{R}^3$ are real vectors.
+The coefficient $\beta$ is a symmetric $\mathbb{C}$-bilinear form on $\mathbb{B}$, and the whole content of the symmetrisation is its reading on the remarkable subspaces of *The Six Subspaces*. Here $A \in \mathbb{C}$, $h$ and $g$ are real quaternions, $a_t,b_t,c_t \in \mathbb{R}$, and $\vec p,\vec q,\vec r \in \mathbb{R}^3$ are real vectors.
 
 | subspace | elements | $\beta$ | real for |
 |---|---|---|---|
@@ -80,7 +80,7 @@ The coefficient $\beta$ is a symmetric $\mathbb{C}$-bilinear form on $\mathbb{B}
 
 **Theorem (when the value is Hermitian).** The value $\tilde Q_1\bullet\tilde Q_2 = \beta(\tilde Q_1,\tilde Q_2)e_t$ is Hermitian — that is, it lies in the Hermitian subspace $\mathbb{M}_+$, indeed in the real line $\mathbb{R}e_t$ — exactly when the coefficient $\beta(\tilde Q_1,\tilde Q_2)$ is real.
 
-**Proof.** An element $\lambda e_t$ lies in $\mathbb{M}_+$ exactly when $\lambda$ is real, by the coordinate condition of *Introduction to the Remarkable Subspaces* §*The Hermitian Subspace*: the Hermitian subspace is the set of elements with real scalar part and purely imaginary vector part, and $\lambda e_t$ has no vector part; and $\mathbb{R}e_t \subset \mathbb{M}_+$.
+**Proof.** An element $\lambda e_t$ lies in $\mathbb{M}_+$ exactly when $\lambda$ is real, by the coordinate condition of *The Six Subspaces* §*The Hermitian Subspace*: the Hermitian subspace is the set of elements with real scalar part and purely imaginary vector part, and $\lambda e_t$ has no vector part; and $\mathbb{R}e_t \subset \mathbb{M}_+$.
 
 **Corollary (the coefficient is real on four of the remarkable subspaces).** For every pair drawn from the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, from the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, from the Hermitian subspace $\mathbb{M}_+$ or from the anti-Hermitian subspace $\mathbb{M}_-$, the coefficient $\beta$ is real, and the symmetrised value is a real multiple of $e_t$. For a pair drawn from the centre the coefficient is $\beta(Ae_t,Be_t) = AB$, a product of two complex numbers, real only when $AB$ is real, which is not the generic case: the pair $A = 1$, $B = i$ has $\beta = i$. For a pair drawn from the vector subspace, where $\beta(\vec Q_1,\vec Q_2) = (\vec Q_1,\vec Q_2)$, the coefficient is real only when the general plain bilinear form of the pair is real, which is likewise not the generic case: the pair $\vec Q_1 = \vec e_x$, $\vec Q_2 = i\vec e_x$ has $\beta = i$.
 

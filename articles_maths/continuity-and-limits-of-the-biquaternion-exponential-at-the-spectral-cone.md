@@ -4,7 +4,7 @@
 
 The exponential of a biquaternion is entire, so no point of the spectral-degenerate cone is a singularity of the map. What degenerates at $B^2=0$ is the spectral parametrisation of the exponential: the two eigenvalues coalesce, the element-attached root of $-1$ disappears, the spectral idempotents diverge, and the oscillatory closed form truncates. This article separates three questions that the word *limit* confuses. Which formulas extend continuously? Which spectral objects have limits? Which fail, and at which stratum?
 
-The article assumes the spectral criterion, the cone and its three strata of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; the closed forms and the principal logarithm of *Biquaternion Elementary Functions*; the element-supplied root, the kernel identity and the Hermitian norm of *Relations between the Biquaternion Exponential and the Fourier Kernel*; and the polar factors of *The Polar Decomposition of a N-Regular Biquaternion* and *The Polar Decomposition of a N-Degenerate Biquaternion*. It reproves none of them. It owns the passage to the cone: the entire form of the closed form, the differential and its critical locus, the double pole of the resolvent, the continuity of the Hermitian norm, and the distinction between spectral degeneracy and polar degeneracy. It does not treat the transform theory, which belongs to *Biquaternion Continuous Harmonic Analysis*, nor the physical interpretation, which belongs to the companion article in the physics corpus.
+The article assumes the spectral criterion, the cone and its three strata of *The Spectrum*; the closed forms and the principal logarithm of *Biquaternion Elementary Functions*; the element-supplied root, the kernel identity and the Hermitian norm of *Relations between the Biquaternion Exponential and the Fourier Kernel*; and the polar factors of *The Polar Decomposition of a N-Regular Biquaternion* and *The Polar Decomposition of a N-Degenerate Biquaternion*. It reproves none of them. It owns the passage to the cone: the entire form of the closed form, the differential and its critical locus, the double pole of the resolvent, the continuity of the Hermitian norm, and the distinction between spectral degeneracy and polar degeneracy. It does not treat the transform theory, which belongs to *Biquaternion Continuous Harmonic Analysis*, nor the physical interpretation, which belongs to the companion article in the physics corpus.
 
 **The result in one table.** The table is the plan of the article.
 
@@ -64,7 +64,7 @@ $$
 \mathcal S^{\mathrm{u}}=\{Q_t\neq0,\ \vec Q\neq0\},
 $$
 
-the **scalar**, **nilpotent** and **unipotent** strata. The elements of the last two are written $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$; on the unipotent stratum one also writes $\vec N=Q_t\eta$, with $\eta^2=0$. The classification is that of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Three Strata*.
+the **scalar**, **nilpotent** and **unipotent** strata. The elements of the last two are written $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$; on the unipotent stratum one also writes $\vec N=Q_t\eta$, with $\eta^2=0$. The classification is that of *The Spectrum*, §*The Three Strata*.
 
 | stratum | condition | normal form | spectrum | minimal polynomial | unit |
 |---|---|---|---|---|---|
@@ -281,7 +281,7 @@ which is the residue of the double pole; the coefficient of $(z-Q_t)^{-2}$ is $L
 
 *Proof.* The Lagrange idempotents are $\tilde\Pi_\pm=(e_t\mp i\vec Q/B)/2$, which diverge like $\mp i\vec Q/(2B)$ when $\vec Q\neq0$. Their sum is $e_t$, and their difference is $-i\vec Q/B$, whose product with $B$ is finite. The resolvent identity is the proposition above. On the scalar stratum $\vec N=0$, the second term vanishes and the merged pole is simple.
 
-**Remark (the spectral resolution degenerates).** Off the cone the resolvent has two simple poles with residues $L_{\tilde\Pi_\pm}$, the two spectral projectors. On the defective strata it has one double pole: one residue $\mathrm{id}$ and one nilpotent coefficient $L_{\vec N}$. On the scalar stratum the second coefficient vanishes and the pole is simple. The two-term splitting of the identity is lost; the identity itself and the nilpotent direction survive. This is the analytic form of the flag of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Isotropic Line and the Flag*: a line and a filtration, not a direct sum.
+**Remark (the spectral resolution degenerates).** Off the cone the resolvent has two simple poles with residues $L_{\tilde\Pi_\pm}$, the two spectral projectors. On the defective strata it has one double pole: one residue $\mathrm{id}$ and one nilpotent coefficient $L_{\vec N}$. On the scalar stratum the second coefficient vanishes and the pole is simple. The two-term splitting of the identity is lost; the identity itself and the nilpotent direction survive. This is the analytic form of the flag of *The Spectrum*, §*The Isotropic Line and the Flag*: a line and a filtration, not a direct sum.
 
 ## The Hermitian Norm
 

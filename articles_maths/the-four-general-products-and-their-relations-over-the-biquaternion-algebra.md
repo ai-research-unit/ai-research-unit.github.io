@@ -8,7 +8,7 @@ This article does three things. It defines the four on the coordinates, each wit
 
 The four are also one rule with a conjugation inserted in each slot. The two insertions commute, the four readings form a group $\mathbb{Z}_2\times\mathbb{Z}_2$, and the reading of the group on a general algebra gives the slot family, whose second slot governs the composition and whose first slot governs the form. That construction, the group and the table of the slots are *Introduction to the Operators of the Biquaternion Algebra*, §*The Four Readings and Their Group*.
 
-The article assumes the algebra, the element, the basis and the four conjugations from *The Biquaternion Algebra and Its Vector Spaces*. The forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the split of each general product into a symmetric and an antisymmetric part is *Symmetric and Antisymmetric Decomposition of the Four General Products*; the restrictions to the remarkable subspaces are *Remarkable Subspaces and the Four General Products, Forms and Norms*.
+The article assumes the algebra, the element, the basis and the four conjugations from *The Biquaternion Algebra*. The forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the split of each general product into a symmetric and an antisymmetric part is *Symmetric and Antisymmetric Decomposition of the Four General Products*; the restrictions to the remarkable subspaces are *Remarkable Subspaces and the Four General Products, Forms and Norms*.
 
 ## The Four General Products
 
@@ -372,7 +372,7 @@ $$
 \tilde Q\neq0,\ \langle\tilde Q\rangle_{\natural}=0:\ \dim A=\dim B=2.
 $$
 
-*Proof.* At the origin both translations vanish. For a unit both are bijections. For a non-zero null element the image of $L_{\tilde Q}$ is the left ideal $\tilde Q\mathbb{B}$, non-zero and proper, since $\tilde Q\tilde X=e_t$ has no solution by the norm criterion (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Two Cases*); a non-zero proper left ideal is minimal and a complex plane (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals*), so the kernel has dimension $4-2=2$. The right side is the same.
+*Proof.* At the origin both translations vanish. For a unit both are bijections. For a non-zero null element the image of $L_{\tilde Q}$ is the left ideal $\tilde Q\mathbb{B}$, non-zero and proper, since $\tilde Q\tilde X=e_t$ has no solution by the norm criterion (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Two Cases*); a non-zero proper left ideal is minimal and a complex plane (*The Peirce Decomposition*, §*The Decomposition into Minimal Left and Right Ideals*), so the kernel has dimension $4-2=2$. The right side is the same.
 
 **Proposition (two planes, not one).** On the punctured null cone the two annihilators are distinct complex planes whose intersection is the line $\mathbb{C}\tilde Q^{\natural}$.
 
@@ -499,10 +499,44 @@ The two products carrying the star are not multiplications of a bilinear $\mathb
 
 The order of the four general products is the order of the two slots: the first slot is read plain or through ${}^{\natural}$ and runs the outer loop, the second plain or through ${}^{*}$ and runs the inner loop, so the quaternionic bilinear product is the second case and the plain sesquilinear product the third. The general plain bilinear product is the multiplication of the associative unital algebra; the general quaternionic bilinear product is the same multiplication with ${}^{\natural}$ in the first slot, non-associative and unital on the left alone; the general plain sesquilinear product is the derived operation, the multiplication the sesqualgebra takes; and the general quaternionic sesquilinear product is the same derived operation with ${}^{\natural}$ in the first slot, with no unit at all.
 
-Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in *The Biquaternion Algebra and Its Vector Spaces*, the general quaternionic bilinear product in *Introduction to the General Quaternionic Algebra*, the general plain sesquilinear product in *Introduction to the General Plain Sesqualgebra*, and the general quaternionic sesquilinear product in *Introduction to the General Quaternionic Sesqualgebra*; the entries of the table above are the statements those four articles prove or quote.
+Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in *The Biquaternion Algebra*, the general quaternionic bilinear product in *Introduction to the General Quaternionic Algebra*, the general plain sesquilinear product in *Introduction to the General Plain Sesqualgebra*, and the general quaternionic sesquilinear product in *Introduction to the General Quaternionic Sesqualgebra*; the entries of the table above are the statements those four articles prove or quote.
 
 The four rules are also one rule with a conjugation inserted in each slot. The two insertions commute, the four readings form a group $\mathbb{Z}_2\times\mathbb{Z}_2$, and read on a general algebra with its two anti-involutions they give the slot family: the second slot carries the $\mathbb{C}$-bilinearity in the second argument, the left unit and the monoid of left multiplications, the first slot carries the right unit, and associativity and the scalar square are decided by the counterexamples above. That construction, the group of the readings and the table of the slots are *Introduction to the Operators of the Biquaternion Algebra*, §*The Four Readings and Their Group*.
 
+
+## The Hyperbolic Basis of the Plain Product
+
+The plain product $\tilde Q_1\tilde Q_2$ has the scalar part
+
+$$
+\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}Q_{2,\mu},\qquad \varepsilon=(1,-1,-1,-1),
+$$
+
+where $\mathrm{Sc}$ is the coefficient of $e_t$. That scalar part records which pairs the product carries onto the scalar line. The four elements
+
+$$
+h_1=e_t+\vec e_x,\qquad h_2=\tfrac12(e_t-\vec e_x),\qquad h_3=\vec e_y+i\vec e_z,\qquad h_4=\tfrac12(i\vec e_z-\vec e_y)
+$$
+
+are a basis of the vector space in which this scalar part takes its simplest values.
+
+**Theorem (the hyperbolic basis).** The four elements $h_1,\dots,h_4$ are a $\mathbb{C}$-basis of $\mathbb{B}$, the scalar part of each square vanishes,
+
+$$
+\mathrm{Sc}(h_1^2)=\mathrm{Sc}(h_2^2)=\mathrm{Sc}(h_3^2)=\mathrm{Sc}(h_4^2)=0,
+$$
+
+and among the sixteen scalar parts $\mathrm{Sc}(h_ih_j)$ the only non-zero ones are
+
+$$
+\boxed{\;\mathrm{Sc}(h_1h_2)=\mathrm{Sc}(h_3h_4)=1\;}.
+$$
+
+The vector space is therefore the direct sum of the two planes $\operatorname{span}\{e_t,\vec e_x\}$ and $\operatorname{span}\{\vec e_y,\vec e_z\}$, and on them the scalar part of the plain product is hyperbolic: inside each plane it vanishes on the diagonal and equals $1$ on the pair $h_1,h_2$ — respectively $h_3,h_4$ — and between the two planes it vanishes identically. The basis is **hyperbolic**, and the index is $1+1=2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$.
+
+*Proof.* From $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}Q_{2,\mu}$ with $\varepsilon=(1,-1,-1,-1)$: inside the first plane $\varepsilon_t=1$ and $\varepsilon_x=-1$, so $\mathrm{Sc}(h_1^2)=1-1=0$, $\mathrm{Sc}(h_2^2)=\tfrac14(1-1)=0$ and $\mathrm{Sc}(h_1h_2)=\tfrac12(1+1)=1$; inside the second $\varepsilon_y=\varepsilon_z=-1$ and $\mathrm{Sc}(\vec e_y\vec e_z)=\mathrm{Sc}(\vec e_z\vec e_y)=0$, so $\mathrm{Sc}(h_3^2)=-1+1=0$, $\mathrm{Sc}(h_4^2)=\tfrac14(1-1)=0$ and $\mathrm{Sc}(h_3h_4)=\tfrac12(1+1)=1$; and the cross scalar parts vanish because a product of an element supported on $e_t,\vec e_x$ with one supported on $\vec e_y,\vec e_z$ is supported on $\vec e_y,\vec e_z$, hence has no scalar part. The four elements are a basis: $e_t=\tfrac12(h_1+2h_2)$ and $\vec e_x=\tfrac12(h_1-2h_2)$ recover the first plane, and $\vec e_y=\tfrac12(h_3-2h_4)$ and $\vec e_z=\tfrac1{2i}(h_3+2h_4)$ the second. The index over $\mathbb{C}$ is the number of hyperbolic planes, hence $1+1=2$; over $\mathbb{R}$, on the eight real coordinates, the same count is $4$.
+
+**Remark (the maximal planes).** The index $2$ is the largest complex dimension of a subspace on which the scalar part of every product vanishes. Two such planes are $\operatorname{span}_{\mathbb{C}}\{e_t+\vec e_x,\,\vec e_y+i\vec e_z\}$ and $\operatorname{span}_{\mathbb{C}}\{e_t-\vec e_x,\,\vec e_y-i\vec e_z\}$, each of complex dimension $2$, distinct, and meeting in the origin.
 
 ## Summary
 
@@ -516,7 +550,7 @@ The annihilators are the kernels of these multiplications: the plain ones have d
 
 Exactly one of the four is a multiplication of an associative unital $\mathbb{C}$-algebra, the general plain bilinear product; the ${}^{\natural}$-product is $\mathbb{C}$-bilinear but neither associative nor two-sidedly unital. The two products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$; among them the general plain sesquilinear product is the derived operation of $\mathbb{B}$ with its involution and has $e_t$ as a right unit, while the general quaternionic one has neither property.
 
-The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tilde Q)=Q_t^2-(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^2$ and $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$, and only the ${}^{\natural}$-square is a scalar element, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; the idempotents and the roots that follow from them are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the square-roots article of each of the other three products.
+The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tilde Q)=Q_t^2-(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+(\vec Q,\vec Q)$, $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^2$ and $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$, and only the ${}^{\natural}$-square is a scalar element, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; the idempotents and the roots that follow from them are *Idempotents*, and the square-roots article of each of the other three products.
 
 ## Summary of Notation
 

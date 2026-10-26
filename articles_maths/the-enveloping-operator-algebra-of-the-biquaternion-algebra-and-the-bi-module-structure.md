@@ -22,7 +22,7 @@ $$
 
 so that the left action of $\mathbb B^{\mathrm e}$ on $\mathbb B$ is faithful and exhausts the linear operators. The second is the reading that follows: the left multiplications $L_{\tilde Q_1}=\tilde Q_1\otimes\mathbb 1^{\mathrm{opp}}$ and the right multiplications $R_{\tilde Q_2}=\mathbb 1\otimes \tilde Q_2^{\mathrm{opp}}$ are **two commuting copies of $\mathbb B$ and $\mathbb B^{\mathrm{opp}}$ inside one endomorphism algebra**, of the same algebraic type, and the biquaternion algebra is a **bi-module** over the pair. The corpus's recorded question of which of the two actions is the physical matter representation then has a precise algebraic location: the question is not about the existence of one action or the other, since both are present and of the same type, but about which factor of the enveloping algebra a given physical degree of freedom uses.
 
-The article is pure algebra. The one-sided and two-sided operators are *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra*; the general operator theory of an algebra is *The Operators on an Algebra*, whose left and right multiplications and whose double centraliser are the starting point here; the modules and the standard bi-module $_{\mathbb B}S_{\mathbb C}$ are *Modules over the Biquaternion Algebra*; and the spectral consequences of the Kronecker-product form of the two actions are *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*, §*The Diagonal Form*.
+The article is pure algebra. The one-sided and two-sided operators are *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra*; the general operator theory of an algebra is *The Operators on an Algebra*, whose left and right multiplications and whose double centraliser are the starting point here; the modules and the standard bi-module $_{\mathbb B}S_{\mathbb C}$ are *The Category of Modules*; and the spectral consequences of the Kronecker-product form of the two actions are *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*, §*The Diagonal Form*.
 
 ## The Two Regular Representations
 
@@ -56,7 +56,7 @@ $$
 
 and the bicommutant is the centre, $\{T: T\,\text{commutes with all }L_a\text{ and all }R_b\}=\mathbb C_{\mathbb B}=\mathbb C\cdot\mathbb 1$. Consequently $L_{\mathbb B}$ and $R_{\mathbb B}$ are mutual commutants, each of complex dimension four.
 
-*Proof.* This is the double centraliser of *Modules over the Biquaternion Algebra* and *The Operators on an Algebra*, specialised to the regular module: $\operatorname{End}_{\mathbb B}(\mathbb B)=R_{\mathbb B}\cong\mathbb B^{\mathrm{opp}}$, and the commutant of $R_{\mathbb B}$ is $\operatorname{End}_{\mathbb B^{\mathrm{opp}}}(\mathbb B)=L_{\mathbb B}$; the operators commuting with both are the $\mathbb B$-$\mathbb B$-linear endomorphisms of $\mathbb B$, which are the scalars, since $\mathbb B$ is a simple algebra with centre $\mathbb C$.
+*Proof.* This is the double centraliser of *The Category of Modules* and *The Operators on an Algebra*, specialised to the regular module: $\operatorname{End}_{\mathbb B}(\mathbb B)=R_{\mathbb B}\cong\mathbb B^{\mathrm{opp}}$, and the commutant of $R_{\mathbb B}$ is $\operatorname{End}_{\mathbb B^{\mathrm{opp}}}(\mathbb B)=L_{\mathbb B}$; the operators commuting with both are the $\mathbb B$-$\mathbb B$-linear endomorphisms of $\mathbb B$, which are the scalars, since $\mathbb B$ is a simple algebra with centre $\mathbb C$.
 
 The double centraliser theorem says that $\{L_a\}$ and $\{R_b\}$ are as large as two families can be while commuting. It does **not** yet say that together they generate every linear operator; that is the enveloping-algebra statement of the next section.
 
@@ -108,7 +108,7 @@ so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mat
 
 ### The Peirce Decomposition of the Enveloping Algebra
 
-The Peirce decomposition of $\mathbb{B}$ of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* tensors to a Peirce decomposition of $\mathbb{B}^{\mathrm e}$. The four elements
+The Peirce decomposition of $\mathbb{B}$ of *The Peirce Decomposition* tensors to a Peirce decomposition of $\mathbb{B}^{\mathrm e}$. The four elements
 
 $$
 E_{ik} = \tilde\Pi_i \otimes \tilde\Pi_k^{\mathrm{opp}}, \qquad i,k\in\{1,2\},
@@ -120,7 +120,7 @@ $$
 E_{ik}E_{jl} = \delta_{ij}\delta_{kl}E_{ik},
 $$
 
-by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Biquaternion Case*.
+by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of *The Peirce Decomposition*, §*The Biquaternion Case*.
 
 The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to this complete orthogonal family has sixteen corners, and each is one-dimensional over $\mathbb{C}$:
 

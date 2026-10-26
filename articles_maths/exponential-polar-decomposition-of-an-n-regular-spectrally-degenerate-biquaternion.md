@@ -231,7 +231,7 @@ $$
 \Sigma_{10}=\{\tilde Q\in\mathbb{B}:\ N\neq0,\ B^2=0\}.
 $$
 
-The name is the one of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*: the element is N-regular when $N\neq0$, and spectrally degenerate when $B^2=0$. The sector is one of the four of the algebra; this article treats the combination $10$, and the companion treats $11$.
+The name is the one of *The Spectrum*: the element is N-regular when $N\neq0$, and spectrally degenerate when $B^2=0$. The sector is one of the four of the algebra; this article treats the combination $10$, and the companion treats $11$.
 
 ### The Normal Form
 

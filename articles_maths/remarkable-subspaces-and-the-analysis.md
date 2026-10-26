@@ -77,7 +77,7 @@ This is a sum of squares of complex derivatives and is not the Laplacian of $\ma
 
 **The analysis.** The analysis on the vector subspace is complex analysis in three variables: for a biquaternion-valued function $F$ on the subspace, the coefficients are functions of $Q_x, Q_y, Q_z$, with the Wirtinger operators $\partial/\partial Q_k$ and $\partial/\partial\bar Q_k$ as the first-order operators, and the gradient of the subspace annihilates the functions of $\bar Q_x, \bar Q_y, \bar Q_z$ alone. The absence of the scalar term is the operator form of the vector subspace being the kernel of the scalar part.
 
-**The null set.** The norm is $\langle\tilde{Q}\rangle_{\natural} = \sum_k Q_k^2$, whose vanishing set is the complex cone $\sum_k Q_k^2 = 0$. The cone is non-empty: $\vec e_x + i\vec e_y$ lies on it, since $1^2 + i^2 = 0$. Its points are exactly the zero divisors of the subspace, the pure ones of *Introduction to the Remarkable Subspaces*, and the analysis degenerates on them.
+**The null set.** The norm is $\langle\tilde{Q}\rangle_{\natural} = \sum_k Q_k^2$, whose vanishing set is the complex cone $\sum_k Q_k^2 = 0$. The cone is non-empty: $\vec e_x + i\vec e_y$ lies on it, since $1^2 + i^2 = 0$. Its points are exactly the zero divisors of the subspace, the pure ones of *The Six Subspaces*, and the analysis degenerates on them.
 
 **The operator is not elliptic.** The principal symbol of $\Box$ on the vector subspace is $\tfrac14\sum_k(\xi_k - i\eta_k)^2$, and it vanishes at the null covectors of the cone: for $(\xi_x, \xi_y, \xi_z) = (1, 0, 0)$ and $(\eta_1, \eta_2, \eta_3) = (0, 1, 0)$ the sum is $1^2 + (-i)^2 = 0$. The same computation in one complex variable has no nonzero null covector, which is why the centre is the elliptic case among the two complex subspaces and the vector subspace is not.
 
@@ -131,7 +131,7 @@ $$
 
 The principal symbol is $q_t^2 - \sum_k (q'_k)^2$, that is the norm $\langle\cdot\rangle_{\natural}$ on the subspace, of signature $(1,3)$: the second-order operator on the Hermitian subspace is the **wave operator** in the four real variables. It is not elliptic, and a null covector is $(\xi_t, \xi_x, \xi_y, \xi_z) = (1, 1, 0, 0)$.
 
-**The null set.** The norm vanishes on the cone $q_t^2 = \sum_k (q'_k)^2$, of real dimension $3$, and its points are exactly the zero divisors of the subspace, the non-pure ones of *Introduction to the Remarkable Subspaces*, namely the nonzero real multiples of the Hermitian idempotents.
+**The null set.** The norm vanishes on the cone $q_t^2 = \sum_k (q'_k)^2$, of real dimension $3$, and its points are exactly the zero divisors of the subspace, the non-pure ones of *The Six Subspaces*, namely the nonzero real multiples of the Hermitian idempotents.
 
 **The analysis.** Because the operator is of wave type, the natural problem on the Hermitian subspace is an initial-value problem on a level surface of $q_t$, not the Dirichlet problem that the quaternion subspace carries; and the fundamental solution of the wave operator is a distribution supported on the null cone, so that the representation formula of *Biquaternion Integration* becomes its Kirchhoff–Green form. The Jordan algebra carried by the subspace, from *Remarkable Subspaces and the Four General Products, Forms and Norms*, is the algebraic counterpart of this being the indefinite case.
 

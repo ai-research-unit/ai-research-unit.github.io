@@ -10,7 +10,7 @@ $$
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
 
-It is the two-sided operator of the polar decomposition, and its theory in the regular sector is *Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*. On the N-regular, spectrally degenerate sector the sandwich becomes especially simple: it is a positive scalar times a unipotent operator. The scalar is $|Q_t|^2$, and the unipotent operator has one Jordan block of size three and one of size one.
+It is the two-sided operator of the polar decomposition, and its theory in the regular sector is *Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*. On the N-regular, spectrally degenerate sector the sandwich becomes especially simple: it is a positive scalar times a unipotent operator. The scalar is $|Q_t|^2$; on the Jordan part the unipotent operator has one Jordan block of size three and one of size one, while on the scalar line it is the identity.
 
 The article states the sandwich, proves the Jordan structure, reads the polar decomposition of the operator, and explains how the two spinor slots of the regular article coalesce at the wall.
 
@@ -235,7 +235,7 @@ $$
 \begin{pmatrix}
 1+2t+2t^{2}&0&-2it&2it(1+t)\\
 0&1&0&0\\
-2it&0&1-2t&-2t\\
+2it&0&1&-2t\\
 2it(1+t)&0&2t&1-2t-2t^{2}
 \end{pmatrix},
 $$
@@ -249,6 +249,7 @@ with the matrix $\mathsf N$ above. The fixed coordinate is the second one, which
 
 | Item | Value |
 |---|---|
+| stratum | $\vec\Upsilon\neq0$, the Jordan part of $\Sigma_{10}$ |
 | operator | $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ |
 | sector form | $\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}\Theta_{e_t+\vec\Upsilon}$ |
 | nilpotent part | $\mathsf N=A+B+AB$, $A=L_{\vec\Upsilon}$, $B=R_{\vec\Upsilon^{*}}$ |
@@ -264,9 +265,11 @@ with the matrix $\mathsf N$ above. The fixed coordinate is the second one, which
 | rate | $\lvert Q_t\rvert^2$, the square of the one-sided rate |
 | fixed subspace | the span of $\vec A$ and $e_t+i\vec c$, $\vec c=\vec A\times\vec B/a^2$ |
 
+On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: rank four, spectrum $\lvert Q_t\rvert^{2}$ with geometric multiplicity four, Jordan type $1+1+1+1$, and $\mathsf N=0$. The Jordan data in the table are those of the Jordan part.
+
 ### What the Sandwich Shows
 
-- The two-sided operator is a scalar times a unipotent operator with a single $3\times3$ block and a single $1\times1$ block.
+- On the Jordan part the two-sided operator is a scalar times a unipotent operator with a single $3\times3$ block and a single $1\times1$ block; on the scalar line it is a scalar.
 - Its polar decomposition is the sandwich of the Cartan factors; the factors are positive and unitary, and their product is unipotent.
 - The two spinor slots of the regular sector coalesce into the Jordan chain.
 - The phase cancels, so the sandwich sees only the scale, the boost and the rotor.

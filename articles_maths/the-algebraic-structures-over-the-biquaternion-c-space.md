@@ -23,7 +23,7 @@ The twelve names are these:
 
 Each row is one family — the two algebras over $\mathbb{C}$ and the two sesqualgebras — and the three names of a row are the three structures of the family: the general structure of the family and its symmetrisation and its antisymmetrisation.
 
-The four codes that begin with $\mathrm G$ name the four structures the corpus already names apart: $\mathrm{GPA}$ is the multiplication of *The Biquaternion Algebra and Its Vector Spaces*, $\mathrm{GPS}$ of *Introduction to the General Plain Sesqualgebra*, $\mathrm{GQA}$ of *Introduction to the General Quaternionic Algebra*, and $\mathrm{GQS}$ of *Introduction to the General Quaternionic Sesqualgebra*. The other eight codes are the symmetrisations and the antisymmetrisations of those four, and the body of *Symmetric and Antisymmetric Decomposition of the Four General Products* is where they are read.
+The four codes that begin with $\mathrm G$ name the four structures the corpus already names apart: $\mathrm{GPA}$ is the multiplication of *The Biquaternion Algebra*, $\mathrm{GPS}$ of *Introduction to the General Plain Sesqualgebra*, $\mathrm{GQA}$ of *Introduction to the General Quaternionic Algebra*, and $\mathrm{GQS}$ of *Introduction to the General Quaternionic Sesqualgebra*. The other eight codes are the symmetrisations and the antisymmetrisations of those four, and the body of *Symmetric and Antisymmetric Decomposition of the Four General Products* is where they are read.
 
 **What the last letter does and does not claim.** Only the six structures whose code ends in $\mathrm A$ are algebras over $\mathbb{C}$: the three operations of the plain row and the three of the quaternionic row are $\mathbb{C}$-bilinear, so each is an algebra multiplication in the broad sense. The six whose code ends in $\mathrm S$ are the six operations of the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$: the two general ones, $\mathrm{GPS}$ and $\mathrm{GQS}$, are the multiplications of the two sesqualgebras over $\mathbb{C}$, and their four parts $\mathrm{SPS}$, $\mathrm{SQS}$, $\mathrm{APS}$ and $\mathrm{AQS}$ are sesquilinear again, because the exchange that splits them carries the conjugation of the value and keeps the class. The bare interchange of the two arguments, which returns a product of the **opposite** parity, has its own two halves — the symmetrised sesquilinear product and the sesquilinear commutator — and those are the only $\mathbb{R}$-bilinear operations of the family. The trailing $\mathrm S$ names the class of the operation, which is the class of the parent product, and it is read that way throughout. The twelve names are read against the class-preserving exchange; §*The Exchange Behind the Split* of *Symmetric and Antisymmetric Decomposition of the Four General Products* contrasts it with the bare interchange.
 
@@ -117,13 +117,39 @@ The three Jacobi failures have three different reasons. For $\mathrm{AQA}$ the c
 
 The four general products are neither symmetrisations nor antisymmetrisations, and neither identity is put to them: $\mathrm{GPA}$ is the one of the twelve whose product is associative, and the products of the other three are not associative.
 
+## Left Alternativity and the Isolation among the Twelve
+
+**The plain product $\mathrm{GPA}$ is the only left-alternative one of the twelve, and left alternativity is the exact threshold of the associative theory.**
+
+A product $\circ$ is **left-alternative** when
+
+$$
+\tilde Q_1\circ(\tilde Q_1\circ\tilde Q_2)=(\tilde Q_1\circ\tilde Q_1)\circ\tilde Q_2\qquad\text{for all }\tilde Q_1,\tilde Q_2 .
+$$
+
+**Theorem (the isolation).** Of the twelve structures, $\mathrm{GPA}$ is the only left-alternative one.
+
+*Proof.* Every other structure comes from the plain product by twisting the first slot with ${}^{\natural}$, twisting the second with ${}^{*}$, or (anti)symmetrising. Each destroys the law. The first twist demands $\tilde Q_1^{\natural}\tilde Q_1^{\natural}=\tilde Q_1^{\natural}\tilde Q_1$ for every $\tilde Q_1$, false at $\vec e_x$. The second equates a linear with a conjugate-linear operation. The symmetrised and antisymmetrised plain products fail at $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_z$: the left side is $0$ for $\mathrm{SPA}$ and $-\vec e_z$ for $\mathrm{APA}$, the right side is $-\vec e_z$ for $\mathrm{SPA}$ and $0$ for $\mathrm{APA}$. The plain product is associative, hence left-alternative.
+
+| family | structures | left-alternative |
+|---|---|---|
+| plain | $\mathrm{GPA}$ | **yes** |
+| symmetrised plain | $\mathrm{SPA}$, $\mathrm{APA}$ | no |
+| first slot ${}^{\natural}$ | $\mathrm{GQA}$ | no |
+| from $\mathrm{GQA}$ | $\mathrm{SQA}$, $\mathrm{AQA}$ | no |
+| second slot ${}^{*}$ | $\mathrm{GPS}$, $\mathrm{GQS}$ | no |
+| from the sesquilinear | $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ | no |
+
+The claim is about the law and not about single elements. The nearest case is $\mathrm{GQA}$, whose product is the plain product read through the natural conjugation of the first slot; it fails at $\vec e_x$, where $\vec e_x^{\natural}=-\vec e_x$.
+
+
 ---
 
 ## Summary
 
 The twelve structures are the twelve products of *Symmetric and Antisymmetric Decomposition of the Four General Products* read as multiplications, and each name is three letters: the part, $\mathrm G$ general or $\mathrm S$ symmetric or $\mathrm A$ antisymmetric; the first slot, $\mathrm P$ plain or $\mathrm Q$ quaternionic; the family, $\mathrm A$ the algebra over $\mathbb{C}$ or $\mathrm S$ the sesqualgebra over $\mathbb{C}$. The four names that begin with $\mathrm G$ are the four structures the corpus names apart, the multiplications of the four general products, and the other eight are their symmetrisations and antisymmetrisations.
 
-Of the twelve, two are the product of a classical nonassociative algebra and both belong to the plain family: $\mathrm{APA}=\vec Q_1\times\vec Q_2$ is the one Lie product and $\mathrm{SPA}=\tilde{Q}_1\bullet\tilde{Q}_2$ the one Jordan product. The other six parts fail the identity of their kind, with the witnesses recorded above. The six structures whose code ends in $\mathrm A$ are $\mathbb{C}$-bilinear and the six whose code ends in $\mathrm S$ are sesquilinear over $(\mathbb{C},\bar{\cdot})$.
+Of the twelve, two are the product of a classical nonassociative algebra and both belong to the plain family: $\mathrm{APA}=\vec Q_1\times\vec Q_2$ is the one Lie product and $\mathrm{SPA}=\tilde{Q}_1\bullet\tilde{Q}_2$ the one Jordan product. Of the twelve, $\mathrm{GPA}$ alone is left-alternative, and left alternativity is the threshold that keeps the associative theory available. The other six parts fail the identity of their kind, with the witnesses recorded above. The six structures whose code ends in $\mathrm A$ are $\mathbb{C}$-bilinear and the six whose code ends in $\mathrm S$ are sesquilinear over $(\mathbb{C},\bar{\cdot})$.
 
 ## Summary of Notation
 

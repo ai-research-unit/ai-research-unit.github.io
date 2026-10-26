@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ c
 
 The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §*The Sector and Its Three Descriptions*: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.
 
-**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $\langle\tilde Q\rangle_{\natural}=0$ and $B^2=0$.
+**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $\langle\tilde Q\rangle_{\natural}=0$ and $B^2=0$.
 
 ## The Sector and Its Three Descriptions
 
@@ -73,7 +73,7 @@ A(\tilde Q)=\ker L_{\tilde Q}=\{\tilde X:\tilde Q\tilde X=0\},\qquad
 B(\tilde Q)=\ker R_{\tilde Q}=\{\tilde X:\tilde X\tilde Q=0\}
 $$
 
-are distinct complex planes of $\mathbb{C}^4$, each of dimension two, meeting in the line $\mathbb{C}\tilde Q$. Both contain $\tilde Q$ because $\tilde Q^2=0$. The image of $L_{\tilde Q}$ is the left ideal $\mathbb{B}\tilde Q$, non-zero and proper, hence minimal of complex dimension two (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Decomposition into Minimal Left and Right Ideals*), so $L_{\tilde Q}$ has rank two and its kernel is a plane; the same argument on the right gives rank two for $R_{\tilde Q}$. The two planes cannot coincide, because $A(\tilde Q)$ is a right ideal and $B(\tilde Q)$ is a left ideal, so a common plane would be a two-sided ideal of the simple algebra $\mathbb{B}$, which a plane is not. Finally, $X\tilde Q=0$ is equivalent to $\tilde Q X^{\natural}=0$ because $\tilde Q^{\natural}=-\tilde Q$, so the conjugation exchanges the two planes:
+are distinct complex planes of $\mathbb{C}^4$, each of dimension two, meeting in the line $\mathbb{C}\tilde Q$. Both contain $\tilde Q$ because $\tilde Q^2=0$. The image of $L_{\tilde Q}$ is the left ideal $\mathbb{B}\tilde Q$, non-zero and proper, hence minimal of complex dimension two (*The Peirce Decomposition*, §*The Decomposition into Minimal Left and Right Ideals*), so $L_{\tilde Q}$ has rank two and its kernel is a plane; the same argument on the right gives rank two for $R_{\tilde Q}$. The two planes cannot coincide, because $A(\tilde Q)$ is a right ideal and $B(\tilde Q)$ is a left ideal, so a common plane would be a two-sided ideal of the simple algebra $\mathbb{B}$, which a plane is not. Finally, $X\tilde Q=0$ is equivalent to $\tilde Q X^{\natural}=0$ because $\tilde Q^{\natural}=-\tilde Q$, so the conjugation exchanges the two planes:
 
 $$
 A(\tilde Q)^{\natural}=B(\tilde Q).
@@ -130,7 +130,7 @@ $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
 $$
 
-**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion* exists; what fails is the eigenbasis.
+**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Normal Form* exists; what fails is the eigenbasis.
 
 ## The Origin
 
@@ -198,7 +198,7 @@ and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin
 | **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | the spectral pair fails off the scalar line; a canonical Jordan pair exists; one term on the scalar line | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | the spectral pair fails off the origin; a canonical Jordan pair exists off the origin | $0$ or $\Sigma_{01}$ |
 
-On the two degenerate rows the canonical pair is the one selected by the definite Hermitian form off the origin, and the corresponding Jordan basis is constructed in *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion*.
+On the two degenerate rows the canonical pair is the one selected by the definite Hermitian form off the origin, and the corresponding Jordan basis is constructed in *The Jordan Normal Form*.
 
 **No sector is closed under multiplication.** Only the norm dichotomy is: $\mathcal{N}$ is a semigroup and $\mathbb{B}^{\times}$ is a group. The four witnesses are
 

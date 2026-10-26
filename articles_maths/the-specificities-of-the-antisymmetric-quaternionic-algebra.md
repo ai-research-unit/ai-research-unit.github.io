@@ -32,7 +32,7 @@ is realised by the multiplication by a single element, the element being the uni
 algebra, which is not a unit of the block. The criterion is stated as the identity
 $L_{e_t}=P_{\mathrm{Vect}}$, it is proved equivalent to the projector classification
 $L_{\tilde Q_1}^{2}=L_{\tilde Q_1}\Leftrightarrow\tilde Q_1\in\{0,e_t\}$, and it isolates the block among the
-twelve structures. The model is *The Biquaternion Algebra and Its Vector Spaces*, which states
+twelve structures. The model is *The Biquaternion Algebra*, which states
 left alternativity as its criterion; the twinned articles are *The Specificities of the General
 Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra*.
 

@@ -87,7 +87,7 @@ Both follow from the first identity and the definition of $a$.
 
 ## The Objects of the Statement
 
-**Hermitian positive semidefinite.** An element $\tilde H$ is Hermitian positive semidefinite when $\tilde H=\tilde H^{*}$ and $\tilde H$ lies in the Hermitian cone $P$ of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*. Equivalently, $\tilde H$ is Hermitian and its two spectral values are non-negative (*Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*). It is **positive definite** when in addition it is invertible. The element $0$ is included.
+**Hermitian positive semidefinite.** An element $\tilde H$ is Hermitian positive semidefinite when $\tilde H=\tilde H^{*}$ and $\tilde H$ lies in the Hermitian cone $P$ of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*. Equivalently, $\tilde H$ is Hermitian and its two spectral values are non-negative (*The Spectrum*, §*The Spectral Criterion*). It is **positive definite** when in addition it is invertible. The element $0$ is included.
 
 **Partial isometry.** An element $\tilde Q_0$ is a **partial isometry** when
 
@@ -97,7 +97,7 @@ $$
 
 The product $\tilde Q_0\tilde Q_0^{*}$ is then a Hermitian idempotent, the **final projection**, and $\tilde Q_0^{*}\tilde Q_0$ is a Hermitian idempotent, the **initial projection**; conversely, if both products are idempotent the identity holds. An **orthogonal projection** is a Hermitian idempotent $\tilde\Pi$, $\tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}$.
 
-**The two ideals of an element.** For $\tilde X\in\mathbb{B}$ the set $\tilde X\mathbb{B}=\{\tilde X\tilde Y:\tilde Y\in\mathbb{B}\}$ is a right ideal and $\mathbb{B}\tilde X=\{\tilde Y\tilde X:\tilde Y\in\mathbb{B}\}$ is a left ideal (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*). Each carries an orthogonal projection, which is a Hermitian idempotent generating it:
+**The two ideals of an element.** For $\tilde X\in\mathbb{B}$ the set $\tilde X\mathbb{B}=\{\tilde X\tilde Y:\tilde Y\in\mathbb{B}\}$ is a right ideal and $\mathbb{B}\tilde X=\{\tilde Y\tilde X:\tilde Y\in\mathbb{B}\}$ is a left ideal (*The Peirce Decomposition*). Each carries an orthogonal projection, which is a Hermitian idempotent generating it:
 
 $$
 \tilde X\mathbb{B}=\tilde\Pi_{\mathrm f}(\tilde X)\,\mathbb{B},\qquad
@@ -112,7 +112,7 @@ $$
 \tilde\Pi_{\vec u}=\tfrac12\bigl(e_t+i\vec u\bigr).
 $$
 
-It is a Hermitian idempotent, $\tilde\Pi_{\vec u}^{2}=\tilde\Pi_{\vec u}=\tilde\Pi_{\vec u}^{*}$, with $\langle\tilde\Pi_{\vec u}\rangle_{\natural}=0$ and $\langle\tilde\Pi_{\vec u}\rangle_{*}=\tfrac12$ (*Square Roots of One and the Idempotents of the Biquaternion Algebra*). It is the minimal Hermitian idempotent of the direction $\vec u$.
+It is a Hermitian idempotent, $\tilde\Pi_{\vec u}^{2}=\tilde\Pi_{\vec u}=\tilde\Pi_{\vec u}^{*}$, with $\langle\tilde\Pi_{\vec u}\rangle_{\natural}=0$ and $\langle\tilde\Pi_{\vec u}\rangle_{*}=\tfrac12$ (*Idempotents*). It is the minimal Hermitian idempotent of the direction $\vec u$.
 
 ## The Moore–Penrose Inverse
 

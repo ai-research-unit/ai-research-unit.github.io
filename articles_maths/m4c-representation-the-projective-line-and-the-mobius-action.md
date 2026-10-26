@@ -8,7 +8,7 @@ This article develops the parametrisation, the action and its kernel, the chart 
 
 **Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$. The regular matrices are written in the eigenbasis, where $\mathsf{M}_4(\tilde Q)=\operatorname{diag}(A,A)$ with $A=\mathsf{M}_2(\tilde Q)$.
 
-**Boundaries.** The lattice of ideals and the parametrisation by $\mathbb{P}^1$ are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Lattice of Left Ideals*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the real structure is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Real Structure*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
+**Boundaries.** The lattice of ideals and the parametrisation by $\mathbb{P}^1$ are *The Peirce Decomposition*, §*The Lattice of Left Ideals*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the real structure is *The Peirce Decomposition*, §*The Real Structure*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
 
 ## The Lines and the Minimal Left Ideals
 

@@ -290,7 +290,7 @@ where $n_i=\dim V_i$. The dimension formula reads $\sum_{i,j}n_in_j=(\sum_in_i)^
 
 ### The biquaternion algebra
 
-Let $A=\mathbb{B}\cong M_2(\mathbb{C})$ and let $e$ be a rank-one idempotent, with $f=1_A-e$. The four corners are one-dimensional, and the Peirce decomposition is the matrix-unit decomposition in a basis adapted to $e$. The idempotent $e$ is not central, $A$ is simple, and $AeA=A$. The explicit Peirce table of the biquaternion algebra is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Decompositions*; the comparison with the other number systems is *The Number Systems as Algebras with and without Nontrivial Idempotents*.
+Let $A=\mathbb{B}\cong M_2(\mathbb{C})$ and let $e$ be a rank-one idempotent, with $f=1_A-e$. The four corners are one-dimensional, and the Peirce decomposition is the matrix-unit decomposition in a basis adapted to $e$. The idempotent $e$ is not central, $A$ is simple, and $AeA=A$. The explicit Peirce table of the biquaternion algebra is *The Peirce Decomposition*, §*The Peirce Decompositions*; the comparison with the other number systems is *The Number Systems as Algebras with and without Nontrivial Idempotents*.
 
 ### A noncentral idempotent in $M_3(k)$
 

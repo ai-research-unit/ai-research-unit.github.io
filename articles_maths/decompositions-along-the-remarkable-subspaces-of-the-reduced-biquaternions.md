@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The remarkable subspaces of *Introduction to the Remarkable Subspaces* organise the reduced biquaternion space in three ways, and this article writes the three decompositions and compares them. The first is the **block decomposition along the two involutions**: the bar and the tessarine sign are two commuting involutions, so the real four-dimensional space splits into the **four common eigenspaces**, each a real line, and each labelled by the pair of its eigenvalues under the two involutions. The second is the **decomposition along a single involution**, the **halving** of the space into the fixed and the anti-fixed space of that involution; there are three halvings, those of the bar, the tessarine sign and the star, and each is a grouping of the four blocks two by two. The third is the **decomposition along the idempotents**, the splitting $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ by the two eigenlines of the multiplication by $j$, and it is the only one of the three that is a decomposition of the **algebra** and not only of the space.
+The remarkable subspaces of *The Six Subspaces* organise the reduced biquaternion space in three ways, and this article writes the three decompositions and compares them. The first is the **block decomposition along the two involutions**: the bar and the tessarine sign are two commuting involutions, so the real four-dimensional space splits into the **four common eigenspaces**, each a real line, and each labelled by the pair of its eigenvalues under the two involutions. The second is the **decomposition along a single involution**, the **halving** of the space into the fixed and the anti-fixed space of that involution; there are three halvings, those of the bar, the tessarine sign and the star, and each is a grouping of the four blocks two by two. The third is the **decomposition along the idempotents**, the splitting $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ by the two eigenlines of the multiplication by $j$, and it is the only one of the three that is a decomposition of the **algebra** and not only of the space.
 
 **The results.** The four blocks are the four real lines
 $$
@@ -45,7 +45,7 @@ $$
 $$
 and the star acts on them with the eigenvalue $\varepsilon_{3}=\varepsilon_{1}\varepsilon_{2}$, so $\mathbb{R}$ and $\mathbb{R}ij$ are star-fixed and $\mathbb{R}i$ and $\mathbb{R}j$ star-negated.
 
-*Proof.* The characters of the four lines of *Introduction to the Remarkable Subspaces* give the labels: $\mathbb{R}$ is $(+,+)$, $\mathbb{R}i$ is $(-,+)$, $\mathbb{R}j$ is $(+,-)$ and $\mathbb{R}ij$ is $(-,-)$. The star eigenvalue is $\varepsilon_{1}\varepsilon_{2}$ because ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
+*Proof.* The characters of the four lines of *The Six Subspaces* give the labels: $\mathbb{R}$ is $(+,+)$, $\mathbb{R}i$ is $(-,+)$, $\mathbb{R}j$ is $(+,-)$ and $\mathbb{R}ij$ is $(-,-)$. The star eigenvalue is $\varepsilon_{1}\varepsilon_{2}$ because ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
 
 **Corollary (the block decomposition is the finest).** The block decomposition is the common refinement of the three halvings: each halving groups the four blocks two by two, and the three halvings are the three pairings
 $$
@@ -129,7 +129,7 @@ $$
 P_{(\varepsilon_{1},\varepsilon_{2})}=\tfrac14(\mathrm{id}+\varepsilon_{1}\bar{\cdot})\circ(\mathrm{id}+\varepsilon_{2}{}_{\mathrm{ts}}).
 $$
 
-*Proof.* This is the projection formula of *Introduction to the Remarkable Subspaces*, §*The Fixed and Anti-Fixed Space of an Involution*, and the block projections are the products of the two commuting eigenspace projections for the pair $(\varepsilon_{1},\varepsilon_{2})$.
+*Proof.* This is the projection formula of *The Six Subspaces*, §*The Fixed and Anti-Fixed Space of an Involution*, and the block projections are the products of the two commuting eigenspace projections for the pair $(\varepsilon_{1},\varepsilon_{2})$.
 
 **Theorem (the change of basis).** The real basis $\{1,i,j,ij\}$ and the real basis $\{\Pi_+,i\Pi_+,\Pi_-,i\Pi_-\}$ are related by
 $$

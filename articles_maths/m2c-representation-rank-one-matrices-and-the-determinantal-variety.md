@@ -4,11 +4,11 @@
 
 The zero divisors of the biquaternion algebra are the nonzero elements of vanishing quaternionic norm. In the matrix model they are the nonzero singular matrices, and a nonzero singular two-by-two matrix has rank one. Every one of them is an outer product of two vectors, and the two vectors carry the two pieces of data the algebra sees: a direction and a covector.
 
-This article develops the factorisation, the two strata of the determinantal variety, the annihilators and the geometry of the cone. It is the matrix form of *The N-Degenerate Sector*, §*The Stratification of the Cone*, and of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Coordinates and the Matrix Model*.
+This article develops the factorisation, the two strata of the determinantal variety, the annihilators and the geometry of the cone. It is the matrix form of *The N-Degenerate Sector*, §*The Stratification of the Cone*, and of *The Peirce Decomposition*, §*The Peirce Coordinates and the Matrix Model*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The norm is $N=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The standard idempotents are $\tilde\Pi_\pm$ and the standard nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$.
 
-**Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the rank-one elements and the Peirce corners are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
+**Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Nilpotents*; the rank-one elements and the Peirce corners are *The Peirce Decomposition*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
 
 ## The Factorisation
 

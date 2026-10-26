@@ -47,13 +47,13 @@ The article takes the following results as established and does not prove them a
 |---|---|---|
 | the four factors, their ranges and their order | *The Polar Decomposition of a N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of Biquaternions*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\Rho\exp(\vec U\Theta)$ and the uniqueness of the regrouping |
-| the eigenvalues, the axis, the pure root and the eigenprojections | *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec\Xi$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
+| the eigenvalues, the axis, the pure root and the eigenprojections | *The Spectrum*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec\Xi$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
 | the closed forms of the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Closed Form* and §*The Eigenvalue Formula* | the exponential $\exp(\tilde Q)$ and the logarithm of the second factor |
-| the roots of one and their idempotents | *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
-| the eigenbasis, its nilpotents and the spinor spaces | *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Decompositions*, and *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
-| the hyperbolic form of a non-trivial root | *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Non-Hermitian Roots*, and §*The Root From Its Coordinates* of this article | the two directions and the rapidity of §*The Two Pure Elements* |
-| the idempotent exponential form and the extraction $-i\tilde\Xi$ | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* of this article, on the halving map of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence with the Roots of One* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
-| the Peirce decomposition | *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Decompositions* | the idempotents and the four corners |
+| the roots of one and their idempotents | *Idempotents*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
+| the eigenbasis, its nilpotents and the spinor spaces | *The Peirce Decomposition*, §*The Peirce Decompositions*, and *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
+| the hyperbolic form of a non-trivial root | *Idempotents*, §*The Non-Hermitian Roots*, and §*The Root From Its Coordinates* of this article | the two directions and the rapidity of §*The Two Pure Elements* |
+| the idempotent exponential form and the extraction $-i\tilde\Xi$ | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* of this article, on the halving map of *Idempotents*, §*The Correspondence with the Roots of One* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
+| the Peirce decomposition | *The Peirce Decomposition*, §*The Peirce Decompositions* | the idempotents and the four corners |
 | the polar decomposition of the ordinary quaternions | *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors* | the classical limit |
 
 The classification, the hyperbolic form, the idempotent exponential and the bridge are cited, not re-proved. The article adds three things: the placement of the Hamilton data in the eigenbasis and the two spinor spaces, in §*The Eigenbasis and the Spinor Spaces*; the reading of a root on the two exponents of the word and the bracket that forbids their sum, in §*The Two Exponents*; and the single exponential of the whole domain with its Baker–Campbell–Hausdorff gap, in §*The Single Exponential*.
@@ -82,7 +82,7 @@ $$
 
 Then $\tilde Q=\Rho(\cos\Theta+\vec U\sin\Theta)$.
 
-The axis and the eigenvalues are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\Rho\exp(\pm i\Theta)$ of the spectrum. The branch of $\Rho$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Spectral Decomposition* of that article.
+The axis and the eigenvalues are those of *The Spectrum*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\Rho\exp(\pm i\Theta)$ of the spectrum. The branch of $\Rho$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Spectral Decomposition* of that article.
 
 **The axis.** The normalisation $\vec U^2=-e_t$ is what $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ provides. The axis is not an arbitrary root of $-1$ but the one parallel to the vector part, and that parallelism is what makes the representation canonical. When the vector part is null, $B=0$ and the axis does not exist; that is the domain restriction below.
 
@@ -107,7 +107,7 @@ $$
 
 It is central, so it commutes with the second factor, and it carries the whole norm, $\langle\Rho\rangle_{\natural}=\Rho^{2}$. The principal branch of the square root is the one of the polar word, so the modulus is unique; its two constituents are the scale $r$ and the phase $\exp(i\alpha)$.
 
-The modulus is the eigenvalue data of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*: it is the common modulus of $\lambda_\pm=\Rho\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\Rho^{2}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
+The modulus is the eigenvalue data of *The Spectrum*, §*The Spectral Criterion*: it is the common modulus of $\lambda_\pm=\Rho\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\Rho^{2}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
 
 | aspect | value |
 |---|---|
@@ -216,7 +216,7 @@ $$
 \left\{\tilde{Q} : \langle\tilde Q\rangle_{\natural}\neq0 \ \text{ and } \ \langle\vec Q,\vec Q\rangle_{\natural}\neq0\right\},
 $$
 
-which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Behaviour on the Cone*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec\Xi=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
+which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *The Spectrum*, §*The Behaviour on the Cone*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec\Xi=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
 
 ## The Three Pairings
 
@@ -284,7 +284,7 @@ The consistency of the second row is a consequence of $\langle\bar{\tilde Q}\ran
 
 ## The Root Reading
 
-The second half reads the same four-factor word at the elements where it closes, $\tilde\Xi^2=e_t$. The classification of the roots is that of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the exponential forms are read here on the polar word. The readings are collected in the table.
+The second half reads the same four-factor word at the elements where it closes, $\tilde\Xi^2=e_t$. The classification of the roots is that of *Idempotents*, and the exponential forms are read here on the polar word. The readings are collected in the table.
 
 | reading | object | form | what it shows |
 |---|---|---|---|
@@ -299,7 +299,7 @@ The first row is the word of the first half; the other five are the readings of 
 
 ### The Word at a Root of One
 
-The roots of $+1$ are classified in *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One*: they are $\pm e_t$ and the pure roots $\vec\Xi$ with $\vec\Xi^2=e_t$. Taking norms in $\tilde\Xi^2=e_t$ gives $\langle\tilde\Xi\rangle_{\natural}=\pm e_t$, because the norm is multiplicative, so the polar word of a root has one of two shapes.
+The roots of $+1$ are classified in *Idempotents*, §*The Roots of One*: they are $\pm e_t$ and the pure roots $\vec\Xi$ with $\vec\Xi^2=e_t$. Taking norms in $\tilde\Xi^2=e_t$ gives $\langle\tilde\Xi\rangle_{\natural}=\pm e_t$, because the norm is multiplicative, so the polar word of a root has one of two shapes.
 
 | norm | word | condition on the factors |
 |---|---|---|
@@ -429,7 +429,7 @@ $$
 \tilde\Xi=\exp(i\pi\tilde\Pi_-),\qquad \tilde\Pi_-=\tfrac12(e_t-\tilde\Xi)
 $$
 
-The identity is the idempotency of $\tilde\Pi_-$, and the halving is that of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence with the Roots of One*. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde\Xi=e_t$ gives $\tilde\Pi_-=0$, and $\tilde\Xi=-e_t$ gives $\tilde\Pi_-=e_t$.
+The identity is the idempotency of $\tilde\Pi_-$, and the halving is that of *Idempotents*, §*The Correspondence with the Roots of One*. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde\Xi=e_t$ gives $\tilde\Pi_-=0$, and $\tilde\Xi=-e_t$ gives $\tilde\Pi_-=e_t$.
 
 ### The Bridge Between the Two Forms
 
@@ -461,7 +461,7 @@ $$
 \tilde\Xi=\pm e_t,\qquad \tilde\Xi=i\vec u_{\mathrm n}\quad(\vec u_{\mathrm n}\in\mathcal{A}),
 $$
 
-as in *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One*. In the idempotent form the halving element of a Hermitian root is Hermitian.
+as in *Idempotents*, §*The Roots of One*. In the idempotent form the halving element of a Hermitian root is Hermitian.
 
 ### The Two Pure Elements
 
@@ -471,7 +471,7 @@ $$
 \tilde\Xi=i\cosh\tfrac{\psi}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \tilde\Xi^2=e_t,\qquad \langle\tilde\Xi\rangle_{\natural}=-e_t
 $$
 
-(§*The Root From Its Coordinates* above, and *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Non-Hermitian Roots*). The root is pure and lies in the plane of the two directions; at zero rapidity it is the Hermitian root $i\vec u_{\mathrm r}$, a single direction, and the boost switches the second direction on.
+(§*The Root From Its Coordinates* above, and *Idempotents*, §*The Non-Hermitian Roots*). The root is pure and lies in the plane of the two directions; at zero rapidity it is the Hermitian root $i\vec u_{\mathrm r}$, a single direction, and the boost switches the second direction on.
 
 **The element.** The same two non-central factors, dialled by the central scale and the central phase, are the general element of the domain,
 
@@ -481,7 +481,7 @@ $$
 
 An element whose non-central factors are those of the root is the central multiple $\tilde Q=-i\,r\exp(i\alpha)\,\tilde\Xi$ of it; in general the element carries its own two factors, of the same kind.
 
-**The idempotents and the spinor spaces.** The halving map carries the root to the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde\Xi)$, and the Peirce decomposition of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Decompositions*, splits the algebra into the four corners. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* completes the two idempotents by the nilpotents of the two mixed corners and reads the same split as $\mathbb{B}=S_+\oplus S_-$, the two spinor spaces. The chain is thus
+**The idempotents and the spinor spaces.** The halving map carries the root to the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde\Xi)$, and the Peirce decomposition of *The Peirce Decomposition*, §*The Peirce Decompositions*, splits the algebra into the four corners. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* completes the two idempotents by the nilpotents of the two mixed corners and reads the same split as $\mathbb{B}=S_+\oplus S_-$, the two spinor spaces. The chain is thus
 
 $$
 \text{two pure directions}\;\longrightarrow\;\text{the root}\;\longrightarrow\;\text{the idempotents}\;\longrightarrow\;\text{the Peirce corners and the spinor spaces},
@@ -534,7 +534,7 @@ the complex number $\frac{\theta}{2}-i\frac{\psi}{2} = 1.080834538-0.378136610i$
 
 ### The Element with a Null Vector Part
 
-Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ but $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so $B=0$ and the Hamilton axis does not exist. The element lies in the degenerate case of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Behaviour on the Cone*, where the vector part $N=\vec Q$ satisfies $N^2=0$: a single Jordan block, with no eigenvalue decomposition. The four-factor word exists, and with it the quaternion and Cartan pairings of the companion articles; only the Hamilton pairing is unavailable.
+Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ but $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so $B=0$ and the Hamilton axis does not exist. The element lies in the degenerate case of *The Spectrum*, §*The Behaviour on the Cone*, where the vector part $N=\vec Q$ satisfies $N^2=0$: a single Jordan block, with no eigenvalue decomposition. The four-factor word exists, and with it the quaternion and Cartan pairings of the companion articles; only the Hamilton pairing is unavailable.
 
 ### The Element with a Vanishing Real Part
 
@@ -548,7 +548,7 @@ The real quaternion part vanishes, $\tilde q_r = 0$, so the quaternion construct
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is the scalar vertex of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Behaviour on the Cone*, in which the eigenprojections are not unique. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
+Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is the scalar vertex of *The Spectrum*, §*The Behaviour on the Cone*, in which the eigenprojections are not unique. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
 
 ### An Element at a Root of One
 

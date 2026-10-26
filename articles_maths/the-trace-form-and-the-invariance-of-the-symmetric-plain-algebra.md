@@ -171,7 +171,7 @@ It is the linear form $\operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q}\bigr)/2$, a
 
 ### The Restriction Matrices
 
-The trace form is the general plain bilinear form, so its restrictions to the remarkable subspaces of *Introduction to the Remarkable Subspaces* are those of *Remarkable Subspaces and the Four General Products, Forms and Norms*, read here as the restrictions of the trace form of the block:
+The trace form is the general plain bilinear form, so its restrictions to the remarkable subspaces of *The Six Subspaces* are those of *Remarkable Subspaces and the Four General Products, Forms and Norms*, read here as the restrictions of the trace form of the block:
 
 | Subspace | Natural real basis | Restriction matrix | Signature | Rank |
 |---|---|---|---|---|

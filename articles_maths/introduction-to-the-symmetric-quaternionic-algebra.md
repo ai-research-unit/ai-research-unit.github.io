@@ -71,7 +71,7 @@ $$
 
 *Proof.* The table gives $e_\mu\star e_\nu=\delta_{\mu\nu}e_t$, and bilinearity extends the display to the general pair; conversely the display evaluates the definition of $\langle\cdot,\cdot\rangle_{\natural}$.
 
-**Remark (the table is not the one of the plain product).** The plain product gives a fixed-point-free permutation table with signs (*The Biquaternion Algebra and Its Vector Spaces*), and the quaternionic product one with the first column negated. The entry $e_\mu\star e_\nu$ is the symmetrisation of the second, and it is diagonal because the antisymmetric part is what carries the off-diagonal signs: the symmetric half of the quaternionic product keeps only the diagonal of the quaternionic table. The table is the smallest possible for a nonzero operation.
+**Remark (the table is not the one of the plain product).** The plain product gives a fixed-point-free permutation table with signs (*The Biquaternion Algebra*), and the quaternionic product one with the first column negated. The entry $e_\mu\star e_\nu$ is the symmetrisation of the second, and it is diagonal because the antisymmetric part is what carries the off-diagonal signs: the symmetric half of the quaternionic product keeps only the diagonal of the quaternionic table. The table is the smallest possible for a nonzero operation.
 
 ## The Laws of the Operation
 

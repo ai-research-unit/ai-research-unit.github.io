@@ -4,11 +4,11 @@
 
 The exponential, the logarithm and the square roots of a matrix are three values of one construction. A holomorphic function defined on a neighbourhood of the spectrum is applied to the matrix by the Cauchy integral, and the result is computed on the spectral data: the values on the eigenvalues for a diagonalisable matrix, the values and the derivatives at a repeated eigenvalue for a Jordan block. The exponential is the entire function $e^z$, the logarithm is a branch of $\log z$, and the square roots are the two branches of $z^{1/2}$.
 
-This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the commutant and classified by spectral type. It is the matrix form of *Biquaternion Elementary Functions* and of *Square Roots of a General Element in the Biquaternion Algebra*, §*The Reduction* to §*The Classification*.
+This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the commutant and classified by spectral type. It is the matrix form of *Biquaternion Elementary Functions* and of *Square Roots of an Element*, §*The Reduction* to §*The Classification*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The image of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\operatorname{tr}X=2Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}$. In the square-root sections the complex square of the vector part is $(\vec Q,\vec Q)=B^2$.
 
-**Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of a General Element in the Biquaternion Algebra*; the roots of $\pm1$ and of $0$ are *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
 ## The Functional Calculus
 
@@ -394,7 +394,7 @@ of complex dimension two.
 
 *Proof.* For $\lambda\neq0$ a root satisfies the polynomial $t^2-\lambda$ with distinct roots, hence is diagonalisable with eigenvalues $\pm\sqrt{\lambda}$. The scalar roots are the two constant choices, and the mixed choices form the conjugacy class of $\operatorname{diag}(\sqrt{\lambda},-\sqrt{\lambda})$. For $\lambda=0$ the equation is $Y^2=0$, which is the definition of the nilpotent cone.
 
-**The dimension.** Each surface has complex dimension two, hence four real parameters, and it matches the four-parameter family of pure roots of *Square Roots of a General Element in the Biquaternion Algebra*, §*The Roots of a Complex Scalar*. The identity $\mathcal S_\lambda=\{\operatorname{tr}Y=0,\ \det Y=-\lambda\}$ exhibits it as the intersection of a hyperplane and a quadric.
+**The dimension.** Each surface has complex dimension two, hence four real parameters, and it matches the four-parameter family of pure roots of *Square Roots of an Element*, §*The Roots of a Complex Scalar*. The identity $\mathcal S_\lambda=\{\operatorname{tr}Y=0,\ \det Y=-\lambda\}$ exhibits it as the intersection of a hyperplane and a quadric.
 
 **The involution.** Both surfaces are stable under $Y\mapsto-Y$, which is the sign symmetry of the root set.
 
@@ -462,7 +462,7 @@ $$
 $$
 which contains the three Pauli matrices and every conjugate of $\operatorname{diag}(1,-1)$.
 
-**The zero matrix.** For $X=0$ the roots are the nilpotents, the cone $\{Y:Y^2=0\}$, which contains $0$ and the two families of *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
+**The zero matrix.** For $X=0$ the roots are the nilpotents, the cone $\{Y:Y^2=0\}$, which contains $0$ and the two families of *Nilpotents*.
 
 ## Summary
 

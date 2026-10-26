@@ -113,7 +113,7 @@ A pure glyph is given from the quaternions to the biquaternions only. The layers
 
 ## The Conjugations
 
-The biquaternion algebra carries three natural involutions, and the anti-Hermitian sign derived from them, all of them used in the series:
+The biquaternion algebra carries three involutions — coefficient, natural and Hermitian — and the reversal $\flat=-{}^{*}$ beside them. The three give the six subspaces; $\flat$ repeats the two of ${}^{*}$ with the signs exchanged. All four are used in the series:
 
 | Map | Mark | What it is |
 |---|---|---|
@@ -170,7 +170,7 @@ The maps of the layer are the bar, the tessarine sign, the star that is their co
 
 The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The Idempotent Convention*) and the nilpotent $\tilde\nu$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
 
-A **root of $1$** of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde\Xi^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *Square Roots of a General Element in the Biquaternion Algebra*.
+A **root of $1$** of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde\Xi^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *Square Roots of an Element*.
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
@@ -230,7 +230,7 @@ $$
 
 **It is allowed to add subscripts when several nilpotents are used.** **The subscript of a nilpotent is numeric when it counts and a role label when it names**, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
-The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\vec\Upsilon_1$ and $\vec\Upsilon_2$, exchanged by the star.
+The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *The Peirce Decomposition*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\vec\Upsilon_1$ and $\vec\Upsilon_2$, exchanged by the star.
 
 The nilpotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -359,6 +359,8 @@ The products themselves — their coordinates, their laws, their units and their
 
 ## The Form Convention, the Norm Convention and the Unitary Convention
 
+**The order is product, then form, then norm.** A form is the scalar part of a product, with a conjugation named on each slot; the norm is that form at its two equal arguments. The product comes first and needs no form: the four general products are algebraic, and only their scalar parts are forms.
+
 The corpus writes a **generic form** and a **generic norm**, the norm being the form read at its two equal arguments:
 
 $$
@@ -389,13 +391,13 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}) , \qquad \langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*} .
 $$
 
-**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde Q_1,\tilde Q_2)$ is the plain form and $P(\tilde Q)$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $B(\tilde Q)$ is the right annihilator of the plain product. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
+**One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde Q_1,\tilde Q_2)$ is the plain form and $P(\tilde Q)$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $B(\tilde Q)$ is the right annihilator of the plain product. **$P$ is the scalar part of the plain product**, with no conjugation on either slot: it is not the plain product, and it is not a reading of $N$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
 
 **The bracket carries the mark that is not the identity in the layer**, and the four brackets collapse two-and-two wherever one mark degenerates. The cases are worked layer by layer in §*The Six Layer Tables*, below.
 
 The distinction is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The two definitions — the form of an operation as its scalar part read in two arguments, bilinear or sesquilinear by its second slot, and the algebraic norm as that form at its two equal arguments — and the four brackets, $\langle\cdot,\cdot\rangle$ the plain, $\langle\cdot,\cdot\rangle_{*}$ the Hermitian, $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic and $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein, are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
-**The four names stand on the four norms, and the form is the norm read in two slots.** One name runs over the three levels of the product, the form and the norm: the **plain** bracket is the scalar part of the plain bilinear product, the **quaternionic** bracket that of the quaternionic bilinear product, the **Hermitian** bracket that of the plain sesquilinear product, and the **Krein** bracket that of the quaternionic sesquilinear product. Read on one argument the four are the **plain norm**, the **Hermitian norm**, the **quaternionic norm** and the **Krein norm**. The four products, their forms and their norms go together, one to a row:
+**The four names stand on the four scalar parts.** One name runs over the three levels of the product, the form and the norm: the form is the scalar part of the product in the named slots, and the norm is the form at two equal arguments. The **plain** bracket is the scalar part of the plain bilinear product, the **quaternionic** bracket that of the quaternionic bilinear product, the **Hermitian** bracket that of the plain sesquilinear product, and the **Krein** bracket that of the quaternionic sesquilinear product. Read on one argument the four are the **plain norm**, the **Hermitian norm**, the **quaternionic norm** and the **Krein norm**. The four products, their forms and their norms go together, one to a row:
 
 | Product | Form | Letter | Norm |
 |---|---|---|---|
@@ -406,7 +408,7 @@ The distinction is one of **notation, not of substance**: the pair is the form a
 
 **The names are read in the layer where the map they mark exists.** In $\mathbb{B}_{\mathrm{r}}$ the **quaternionic** name becomes the **tessarine** and the **Krein** name the **tessarine-Hermitian**, their brackets carrying ${}_{\mathrm{ts}}$ and ${}_{\mathrm{ts}*}$; the plain and the Hermitian keep their names.
 
-**The qualified regular and the qualified degenerate.** In $\mathbb{B}$, for a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $\natural$-regular is the unit group and $\natural$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, so the letter is never omitted.
+**The qualified regular and the qualified degenerate.** In $\mathbb{B}$, for a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $\natural$-regular is the unit group and $\natural$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
 
 ### The Six Layer Tables
 

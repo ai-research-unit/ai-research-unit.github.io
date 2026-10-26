@@ -92,7 +92,7 @@ $$
 
 and the inverse is $W(t,\omega)^{-1}=\cos(2\pi\omega t)\,e_t+\sin(2\pi\omega t)\,\rho$. The transform uses real $t$ and $\omega$. Both sides are entire in $(t,\omega)$ and agree on $\mathbb{R}^2$, so the identity holds for complex values as well; the transform itself uses the real ones.
 
-**The root is chosen, not found.** The article fixes $\rho$ because the algebra has none. The roots of $-1$ are the two central scalars $\pm i$, the pure real unit vectors $\pm\vec u$, and the genuinely biquaternionic roots $\rho=b\mu+d i\nu$ with $\mu\perp\nu$ real unit vectors and $b^2-d^2=1$; the classification is that of *Square Roots of One and the Idempotents of the Biquaternion Algebra*. The transform changes with the family, and the choice of family is a choice of which imaginary direction is the frequency axis.
+**The root is chosen, not found.** The article fixes $\rho$ because the algebra has none. The roots of $-1$ are the two central scalars $\pm i$, the pure real unit vectors $\pm\vec u$, and the genuinely biquaternionic roots $\rho=b\mu+d i\nu$ with $\mu\perp\nu$ real unit vectors and $b^2-d^2=1$; the classification is that of *Idempotents*. The transform changes with the family, and the choice of family is a choice of which imaginary direction is the frequency axis.
 
 **The root the element supplies is always pure.** A root with a non-zero scalar part is $\pm i$, because the vector part of $\rho^2=-e_t$ is twice the scalar part times the vector part of $\rho$, and it vanishes. The root $\rho=\vec Q/B$ of a regular element is pure by construction. The dictionary therefore always lands in the pure-root families, and the exceptional central family of the transform is never the one a regular element supplies.
 
@@ -114,7 +114,7 @@ The other square root $-B$ gives $-\rho$ and exchanges $\lambda_+$ with $\lambda
 
 ### The Spectrum as Two Frequencies
 
-The characteristic polynomial and the spectral criterion are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion*:
+The characteristic polynomial and the spectral criterion are those of *The Spectrum*, §*The Spectral Criterion*:
 
 $$
 p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2=(X-Q_t-iB)(X-Q_t+iB),
@@ -222,7 +222,7 @@ and $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is a basis of $\mathbb{B}$ in which $L_{
 
 *Proof.* The first identity is $\rho(e_t\mp i\rho)/2=(\rho\pm i e_t)/2=\pm i(e_t\mp i\rho)/2$. The second is $\rho(\nu\mp i\xi)/2=(\xi\pm i\nu)/2=\pm i(\nu\mp i\xi)/2$, using $\rho\nu=\xi$ and $\rho\xi=-\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\rho,\nu,\xi)$ is a basis (*Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+B\,L_\rho$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
-The pair $(u_-,u_+)$ spans the two nilpotent lines of the eigenbasis. Those lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*, §*The Transverse-Vector Construction*, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.
+The pair $(u_-,u_+)$ spans the two nilpotent lines of the eigenbasis. Those lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of *The Eigenbasis*, §*The Transverse-Vector Construction*, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.
 
 **The two cuts are transverse.** The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\rho\}$ and $\operatorname{span}\{\nu,\xi\}$, each of which carries both signs of $i$. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ and $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root and the same complex structure.
 
@@ -365,7 +365,7 @@ the right-hand side is entire in $B$ and its value at $B=0$ is $e^{\theta Q_t}(e
 
 ### The Three Strata
 
-The cone carries three normal forms, those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Cone*, and each has its own exponential.
+The cone carries three normal forms, those of *The Spectrum*, §*The Degenerate Case: The Cone*, and each has its own exponential.
 
 | Stratum | Normal form | Exponential | Root | Eigenbasis |
 | --- | --- | --- | --- | --- |
@@ -377,7 +377,7 @@ The scalar stratum is a central character with no direction. The nilpotent strat
 
 ## Global versus Element-Attached
 
-**What is canonical.** For a regular element, the pair of eigenspaces $\{E_+,E_-\}$ is unique, and the eigenvalues are determined up to the exchange of the two branches. The vectors inside each eigenspace are a gauge: multiplying a vector of $E_+$ by a non-zero scalar and a vector of $E_-$ by another leaves the eigenspaces unchanged. The normalised Peirce basis of *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion* fixes that gauge; the root-adapted basis of §*The Eigenbasis Is a Fourier Basis* fixes it differently.
+**What is canonical.** For a regular element, the pair of eigenspaces $\{E_+,E_-\}$ is unique, and the eigenvalues are determined up to the exchange of the two branches. The vectors inside each eigenspace are a gauge: multiplying a vector of $E_+$ by a non-zero scalar and a vector of $E_-$ by another leaves the eigenspaces unchanged. The normalised Peirce basis of *The Eigenbasis* fixes that gauge; the root-adapted basis of §*The Eigenbasis Is a Fourier Basis* fixes it differently.
 
 **Every element expands in the basis of a given regular element.** The four vectors of Proposition 2 form a basis of $\mathbb{B}$, so every biquaternion has coordinates in it; the spectral decomposition of the given element is diagonal in those coordinates. This is the sense in which a regular element supplies a frame for the whole algebra — a frame attached to the element, not a frame of the algebra.
 

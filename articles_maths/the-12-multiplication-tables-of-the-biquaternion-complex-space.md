@@ -50,7 +50,7 @@ The two readings differ in one point alone: whether the second coordinate is use
 
 *Proof.* The entries are computed pair by pair from the twelve products, and the results are the twelve tables of §*The Twelve Tables*; inspection shows every entry to be $0$ or $\pm e_\mu$. The reason is structural: the basis is a real basis of real quaternions, closed under both conjugations up to sign, $\overline{e_\mu}=e_\mu$ and $e_\mu^{\natural}=e_\mu^{*}=\varepsilon_\mu e_\mu$, and the plain product of two real quaternions is a real quaternion; since the central imaginary $i$ is a coefficient and never a factor, no entry can carry it.
 
-**Remark.** The tables are therefore integral: each is a table of integers times basis elements, and a table over $\mathbb{Z}$ rather than over $\mathbb{C}$. This is the table form of the statement that the complex structure of $\mathbb{B}$ lives in the coefficients and not in the multiplication, which is the reading of the multiplication tables in *The Biquaternion Algebra and Its Vector Spaces*, §*The Multiplication Table*, and of the change of scalars in *The Realification and the Effect of the Change of Scalars*.
+**Remark.** The tables are therefore integral: each is a table of integers times basis elements, and a table over $\mathbb{Z}$ rather than over $\mathbb{C}$. This is the table form of the statement that the complex structure of $\mathbb{B}$ lives in the coefficients and not in the multiplication, which is the reading of the multiplication tables in *The Biquaternion Algebra*, §*The Multiplication Table*, and of the change of scalars in *The Realification and the Effect of the Change of Scalars*.
 
 ---
 
@@ -60,7 +60,7 @@ The twelve tables are written below, one to a product, in the order general, sym
 
 ### The Four General Tables
 
-**$\mathrm{GPA}$, the general plain bilinear product $\tilde Q_1\tilde Q_2$** (the class $\mathrm A$, $\mathbb{C}$-bilinear). It is the quaternion table, the one already read in *The Biquaternion Algebra and Its Vector Spaces*, §*The Multiplication Table*.
+**$\mathrm{GPA}$, the general plain bilinear product $\tilde Q_1\tilde Q_2$** (the class $\mathrm A$, $\mathbb{C}$-bilinear). It is the quaternion table, the one already read in *The Biquaternion Algebra*, §*The Multiplication Table*.
 
 | $\star$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|

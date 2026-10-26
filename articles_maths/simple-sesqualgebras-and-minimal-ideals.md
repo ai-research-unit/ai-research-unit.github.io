@@ -8,7 +8,7 @@ For the sesquilinear product the two notions coincide, and that is the first res
 
 The two **products** behave differently, and this is the second point. The sesquilinear product and the product by juxtaposition impose different conditions on an ideal — $A \star I = AI^{*}$ against $AI$ — so an algebra that is simple for its own product need not be simple for the product by juxtaposition. The invariant ideals are the part the two products share, since a $\ast$-ideal is two-sided for both.
 
-**Setting.** Throughout, $A$ is a unital associative $R$-algebra with a unit $1 \neq 0$, $\varsigma$ is an involution of $R$, and $*$ is a $\varsigma$-semilinear involution of $A$. The sesquilinear product is the derived operation $x \star y = xy^{*}$ of *The Sesquilinear Product*, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*, and it is the product that the word ideal refers to unless the contrary is said; the unit is used and its use is flagged where it occurs. The product by juxtaposition is the algebra product, the two-sided ideals of which are called **algebra ideals** where the distinction is needed. The $\ast$-ideal, the conjugate image $I^{*}$ and the smallest $\ast$-ideal $I + I^{*}$ through a two-sided ideal are those of *Ideals and Quotients of a Sesqualgebra*; the idempotents, the Hermitian idempotents and the corners $eAe$ are those of *Hermitian Idempotents and the Peirce Decomposition*; the primitive idempotents and the minimal one-sided ideals are those of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* and *List of Rings by Their Idempotents*; and the centre and the zero divisors are those of *The Centre and the Zero Divisors of a Sesqualgebra*.
+**Setting.** Throughout, $A$ is a unital associative $R$-algebra with a unit $1 \neq 0$, $\varsigma$ is an involution of $R$, and $*$ is a $\varsigma$-semilinear involution of $A$. The sesquilinear product is the derived operation $x \star y = xy^{*}$ of *The Sesquilinear Product*, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*, and it is the product that the word ideal refers to unless the contrary is said; the unit is used and its use is flagged where it occurs. The product by juxtaposition is the algebra product, the two-sided ideals of which are called **algebra ideals** where the distinction is needed. The $\ast$-ideal, the conjugate image $I^{*}$ and the smallest $\ast$-ideal $I + I^{*}$ through a two-sided ideal are those of *Ideals and Quotients of a Sesqualgebra*; the idempotents, the Hermitian idempotents and the corners $eAe$ are those of *Hermitian Idempotents and the Peirce Decomposition*; the primitive idempotents and the minimal one-sided ideals are those of *The Peirce Decomposition* and *List of Rings by Their Idempotents*; and the centre and the zero divisors are those of *The Centre and the Zero Divisors of a Sesqualgebra*.
 
 ## Two Notions of Simplicity
 
@@ -62,7 +62,7 @@ By the theorem the two-sided $\star$-ideals are the $\ast$-ideals, so the invari
 
 ### Primitive Idempotents
 
-**Recall.** An idempotent $e \neq 0$ is **primitive** when it is not a sum of two nonzero orthogonal idempotents. In a semisimple algebra the primitive idempotents are exactly the idempotents $e$ for which $Ae$ is a minimal left ideal, equivalently $eA$ is a minimal right ideal, equivalently the corner $eAe$ is a division algebra, in the form of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
+**Recall.** An idempotent $e \neq 0$ is **primitive** when it is not a sum of two nonzero orthogonal idempotents. In a semisimple algebra the primitive idempotents are exactly the idempotents $e$ for which $Ae$ is a minimal left ideal, equivalently $eA$ is a minimal right ideal, equivalently the corner $eAe$ is a division algebra, in the form of *The Peirce Decomposition*.
 
 **Theorem.** Let $A$ be semisimple and let $e$ be a primitive idempotent. Then $Ae$ is a minimal left ideal and the conjugate image $(Ae)^{*} = e^{*}A$ is a minimal right ideal, and the involution matches the two collections: it sends the minimal left ideal $Ae$ to the minimal right ideal $e^{*}A$, and the minimal right ideal $eA$ to the minimal left ideal $Ae^{*}$.
 
@@ -120,7 +120,7 @@ The two-sided case runs along the centre.
 
 ### The Biquaternions
 
-**Example.** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $R = \mathbb{C}$, $\varsigma$ the conjugation and $*$ the involution of *Introduction to the General Plain Sesqualgebra*, which conjugates the coefficient and negates $\vec e_x, \vec e_y, \vec e_z$ while fixing $e_t$. The algebra is simple by *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, and like the matrices it is not a division algebra. The idempotents
+**Example.** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $R = \mathbb{C}$, $\varsigma$ the conjugation and $*$ the involution of *Introduction to the General Plain Sesqualgebra*, which conjugates the coefficient and negates $\vec e_x, \vec e_y, \vec e_z$ while fixing $e_t$. The algebra is simple by *The Peirce Decomposition*, and like the matrices it is not a division algebra. The idempotents
 $$
 \tilde\Pi_+ = \tfrac12(e_t + i \vec e_z), \qquad \tilde\Pi_- = \tfrac12(e_t - i \vec e_z)
 $$

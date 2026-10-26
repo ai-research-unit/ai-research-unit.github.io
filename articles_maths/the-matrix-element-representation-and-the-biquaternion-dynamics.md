@@ -109,7 +109,7 @@ $$
 
 of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with characteristic polynomial $\bigl((\zeta-Q_{1t})^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q_1})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q_1}$ are $\{Q_{1t}+iB,Q_{1t}+iB,Q_{1t}-iB,Q_{1t}-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ each counted twice.
 
-**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q_1}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q_1)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q_1)$ acts by $M$ (*Modules over the Biquaternion Algebra*). The eigenvalues of $M$ are $Q_{1t}\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
+**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q_1}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q_1)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q_1)$ acts by $M$ (*The Category of Modules*). The eigenvalues of $M$ are $Q_{1t}\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
 
 **Corollary (where the operator enters the dynamics).** The derivative of the quadratic family is the sum of two operators on the space and not an element,
 

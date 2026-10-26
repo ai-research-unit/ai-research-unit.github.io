@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module__
+# __$M_4(\mathbb{C})_L$ Model : Columns, Rows and the Spinor Module__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This article develops the splitting, the columns and rows, the endomorphisms and
 
 **Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The Peirce idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, the nilpotents are $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, and the change $S$ has columns $\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$.
 
-**Boundaries.** The Peirce coordinates are *$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the right module is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the abstract ideals are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*.
+**Boundaries.** The Peirce coordinates are *$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the right module is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the abstract ideals are *The Peirce Decomposition*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*.
 
 ## The Left Ideals Are the Columns
 
@@ -47,7 +47,7 @@ E_+=\{(x,y,0,0)\},\qquad E_-=\{(0,0,z,w)\}.
 $$
 The matrix $\mathsf{M}_4(\tilde Q)$ preserves each plane and acts on both by $\mathsf{M}_2(\tilde Q)$.
 
-**The rank of the projectors.** The projectors $\mathsf{M}_4(\tilde\Pi_\pm)$ have rank two, not rank one. The minimality of the ideals is a statement about the algebra, not about the rank of the matrix: a minimal left ideal of $\mathbb{B}$ is two complex-dimensional, and its image is a two-dimensional subspace of $\mathbb{C}^4$. The two copies are the reason every eigenvalue of $\mathsf{M}_4(\tilde Q)$ occurs twice.
+**The rank of the projectors.** The projectors $\mathsf{M}_4(\tilde\Pi_\pm)$ have rank two, not rank one. The minimality of the ideals is a statement about the algebra, not about the rank of the matrix: a minimal left ideal of $\mathbb{B}$ is two complex-dimensional, and its image is a two-dimensional subspace of $\mathbb{C}^4$.
 
 ## The Rows Are the Right Ideals
 

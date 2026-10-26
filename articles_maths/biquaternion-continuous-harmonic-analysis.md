@@ -96,7 +96,7 @@ In particular, when $Q_t=0$, $W(t,B/2\pi)=e^{-t\tilde Q}$.
 
 **Two cuts.** In the root-adapted basis $(e_t,\rho,\nu,\xi)$ of §*Factorization into Complex Fourier Transforms*, left multiplication by $\rho$ is block diagonal with the block $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ repeated on the two planes. The spectral eigenbasis diagonalises the two blocks; it is $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ with $u_\mp=\frac12(\nu\mp i\xi)$, and it takes one line from each Fourier plane. The Fourier factorization and the spectral decomposition are transverse; the dictionary is *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*The Eigenbasis Is a Fourier Basis*.
 
-**The cone.** At $B=0$ there is no root and no frequency. The flow is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N=\vec Q$ and $\vec N^2=0$; the root-free closed form extends to $B=0$, and the kernel itself has no limit, because it is a function of a root that does not exist (*Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Exponential on the Cone*).
+**The cone.** At $B=0$ there is no root and no frequency. The flow is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N=\vec Q$ and $\vec N^2=0$; the root-free closed form extends to $B=0$, and the kernel itself has no limit, because it is a function of a root that does not exist (*The Spectrum*, §*The Exponential on the Cone*).
 
 **Boundary.** The identity is pointwise in the element. It changes no inversion, Plancherel or convolution statement of the transform; it identifies the kernel of the transform with the flow of one regular element.
 

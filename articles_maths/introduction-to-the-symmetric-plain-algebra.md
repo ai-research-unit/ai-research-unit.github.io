@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the general plain bilinear product $\tilde Q_1\tilde Q_2$, the multiplication of *The Biquaternion Algebra and Its Vector Spaces*. Its exchange of the two arguments splits it into a symmetric and an antisymmetric part, and each of the two parts is again a $\mathbb{C}$-bilinear product of the space. This article reads the **symmetric part** as a multiplication in its own right:
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the general plain bilinear product $\tilde Q_1\tilde Q_2$, the multiplication of *The Biquaternion Algebra*. Its exchange of the two arguments splits it into a symmetric and an antisymmetric part, and each of the two parts is again a $\mathbb{C}$-bilinear product of the space. This article reads the **symmetric part** as a multiplication in its own right:
 
 $$
 \tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)
@@ -29,7 +29,7 @@ The rule needs no more than the plain product, and *The Symmetric and Antisymmet
 
 ### The Coordinate and Scalar–Vector Forms
 
-The plain product reads, in the scalar–vector form of *The Biquaternion Algebra and Its Vector Spaces*,
+The plain product reads, in the scalar–vector form of *The Biquaternion Algebra*,
 
 $$
 \tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2,
@@ -43,7 +43,7 @@ $$
 
 **Remark (the cross term is what the symmetrisation removes).** The scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ is symmetric by itself, since $(\vec Q_1,\vec Q_2)=(\vec Q_2,\vec Q_1)$, and the mixed vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ is symmetric as well; the only asymmetric piece of the plain product is the cross product $\vec Q_1\times\vec Q_2$, which changes sign under the exchange. **The symmetric plain product is therefore exactly the plain product with the cross term dropped**, and the vector part of the value is $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$.
 
-Read on the coordinates, the same rule is the plain coordinate rule of *The Biquaternion Algebra and Its Vector Spaces* with the cross terms deleted:
+Read on the coordinates, the same rule is the plain coordinate rule of *The Biquaternion Algebra* with the cross terms deleted:
 
 $$
 \tilde Q_1\bullet\tilde Q_2=\bigl(Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z}\bigr)
@@ -148,9 +148,9 @@ The product is $\mathbb{C}$-bilinear, so it is fixed by its values on the sixtee
 | $\vec e_y$ | $\vec e_y$ | $0$ | $-e_t$ | $0$ |
 | $\vec e_z$ | $\vec e_z$ | $0$ | $0$ | $-e_t$ |
 
-*Proof.* Each entry is $\tfrac12(e_\mu e_\nu+e_\nu e_\mu)$ read from the multiplication table of *The Biquaternion Algebra and Its Vector Spaces*. For $\mu=\nu=t$ the entry is $e_t$; for $\mu=\nu=k$ it is $\vec e_k^2=-e_t$; for one index $t$ it is the other basis element, the unit acting trivially; and for two distinct vector indices the quaternion units anticommute, $\vec e_j \vec e_k=-\vec e_k \vec e_j$, so the two terms cancel and the entry is $0$. The table is symmetric, as commutativity requires, and its diagonal is $e_t,-e_t,-e_t,-e_t$.
+*Proof.* Each entry is $\tfrac12(e_\mu e_\nu+e_\nu e_\mu)$ read from the multiplication table of *The Biquaternion Algebra*. For $\mu=\nu=t$ the entry is $e_t$; for $\mu=\nu=k$ it is $\vec e_k^2=-e_t$; for one index $t$ it is the other basis element, the unit acting trivially; and for two distinct vector indices the quaternion units anticommute, $\vec e_j \vec e_k=-\vec e_k \vec e_j$, so the two terms cancel and the entry is $0$. The table is symmetric, as commutativity requires, and its diagonal is $e_t,-e_t,-e_t,-e_t$.
 
-**Remark (the table against the plain one).** The table of the block is the quaternion table of *The Biquaternion Algebra and Its Vector Spaces* with the six signed off-diagonal vector entries $\vec e_z,-\vec e_z,\vec e_y,-\vec e_y,\vec e_x,-\vec e_x$ replaced by $0$, and it keeps the diagonal $e_t,-e_t,-e_t,-e_t$ and the first row and column. **The two tables differ only where the plain product is skew, which is off the diagonal in the vector block.**
+**Remark (the table against the plain one).** The table of the block is the quaternion table of *The Biquaternion Algebra* with the six signed off-diagonal vector entries $\vec e_z,-\vec e_z,\vec e_y,-\vec e_y,\vec e_x,-\vec e_x$ replaced by $0$, and it keeps the diagonal $e_t,-e_t,-e_t,-e_t$ and the first row and column. **The two tables differ only where the plain product is skew, which is off the diagonal in the vector block.**
 
 ### The Square and Its Polarisation
 

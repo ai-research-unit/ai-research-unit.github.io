@@ -72,7 +72,7 @@ $$
 
 *Proof.* Read the characters from the basis action: $1$ is fixed by all three; $i$ is negated by the bar and the star and fixed by the tessarine sign; $j$ is negated by the tessarine sign and the star and fixed by the bar; $ij$ is negated by the bar and the tessarine sign and fixed by the star. The relation $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\mathrm{ts}}$ is ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$, and the identifications of the planes are read from the table.
 
-**Remark (three pairs, one structure).** The six planes are three complementary pairs, one per involution: the pair $\{\mathbb{C},\mathbb{C}j\}$ of the tessarine sign, the pair $\{\mathbb{R}\{1,j\},\mathbb{R}\{i,ij\}\}$ of the bar, and the pair $\{\mathbb{R}\{1,ij\},\mathbb{R}\{i,j\}\}$ of the star. Each pair sums to the whole real space and meets in $\{0\}$; the pairs are not the same decompositions, and their comparison is *Decompositions Along the Remarkable Subspaces*.
+**Remark (three pairs, one structure).** The six planes are three complementary pairs, one per involution: the pair $\{\mathbb{C},\mathbb{C}j\}$ of the tessarine sign, the pair $\{\mathbb{R}\{1,j\},\mathbb{R}\{i,ij\}\}$ of the bar, and the pair $\{\mathbb{R}\{1,ij\},\mathbb{R}\{i,j\}\}$ of the star. Each pair sums to the whole real space and meets in $\{0\}$; the pairs are not the same decompositions, and their comparison is *The Three Eigenspace Decompositions*.
 
 ## The Hermitian and Anti-Hermitian Subspaces
 

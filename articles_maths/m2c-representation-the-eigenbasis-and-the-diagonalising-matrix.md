@@ -1,14 +1,14 @@
-# __$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix__
+# __$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix__
 
 ## Introduction
 
 A spectrally regular element has a basis of eigenvectors, and in that basis its matrix is diagonal. The basis is not the standard one: it depends on the element, and the matrix that changes from the standard basis to it is the diagonalising matrix. The coordinate model attached to that basis is the one in which the element is diagonal, its two eigenvalues are the diagonal entries, and the two mixed Peirce elements are the off-diagonal units.
 
-This article develops the eigenbasis model and the diagonalising matrix. It is the matrix form of *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*, §*The Eigenbasis*, §*The Matrix Model* and §*Change of Basis*.
+This article develops the eigenbasis model and the diagonalising matrix. It is the matrix form of *The Eigenbasis*, §*The Eigenbasis*, §*The Matrix Model* and §*Change of Basis*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The spectral direction is $\vec\Xi=-i\vec Q/B$, the spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$. The two mixed elements are written $\vec\Upsilon_-$ and $\vec\Upsilon_+$, with $\vec\Upsilon_-\mapsto E_{12}$ and $\vec\Upsilon_+\mapsto E_{21}$ in the eigenbasis model.
 
-**Boundaries.** The construction of the basis and of the nilpotents is *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*; the Peirce coordinates of the standard pair are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the 4×4 model is *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
+**Boundaries.** The construction of the basis and of the nilpotents is *The Eigenbasis*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*; the Peirce coordinates of the standard pair are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the 4×4 model is *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
 
 ## The Eigenbasis
 
@@ -149,7 +149,7 @@ G=\begin{pmatrix}
 \end{pmatrix},
 $$
 
-because $\operatorname{Tr}(\tilde\Pi_\pm)=1$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$, $\operatorname{Tr}(\vec\Upsilon_-\vec\Upsilon_+)=\operatorname{Tr}(\tilde\Pi_+)=1$ and $\operatorname{Tr}(\vec\Upsilon_+\vec\Upsilon_-)=\operatorname{Tr}(\tilde\Pi_-)=1$. The basis is not orthonormal: the idempotents are unit vectors for the pairing, the nilpotents are isotropic, and the two mixed products pair to one.
+because $\operatorname{Tr}(\tilde\Pi_\pm)=1$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$, $\operatorname{Tr}(\vec\Upsilon_-\vec\Upsilon_+)=\operatorname{Tr}(\tilde\Pi_+)=1$ and $\operatorname{Tr}(\vec\Upsilon_+\vec\Upsilon_-)=\operatorname{Tr}(\tilde\Pi_-)=1$. The trace matrix of the basis is not the identity: the idempotents have trace $1$, the nilpotents trace $0$, and the two mixed products trace $1$.
 
 **The invariants.** For every element $\tilde X$ with eigenbasis coordinates $X_{ij}$,
 
@@ -159,7 +159,7 @@ $$
 \det\mathsf M_2^{Q}(\tilde X)=X_{11}X_{22}-X_{12}X_{21}=\langle\tilde X\rangle_{\natural}.
 $$
 
-The trace is twice the scalar part and the determinant is the quaternionic norm, as in the fixed model, because the two models differ by a conjugation.
+The trace is twice the scalar part and the determinant is the central scalar, as in the fixed model, because the two models differ by a conjugation.
 
 ## The Freedom of the Change
 
@@ -178,7 +178,7 @@ because a diagonal matrix commutes with a diagonal matrix. The diagonalising mat
 
 **Normalisations.** Two normalisations are useful. The first fixes the first entry of each eigenvector to one when it is nonzero; this is the chart in which $\mathsf{C}_Q$ is written above, up to the common factor $2B$. The second fixes the determinant of $\mathsf{C}_Q$ to one, which is possible because the determinant is nonzero; the normalised matrix is $\mathsf{C}_Q/\sqrt{2B(B-Q_z)}$, with a choice of square root. The first normalisation is algebraic and the second is metric; neither is canonical.
 
-**The diagonalising matrix is not a unit of the algebra.** $\mathsf{C}_Q$ is a matrix, not necessarily the image of a biquaternion of unit norm. It is an element of $GL_2(\mathbb{C})$, and it acts by conjugation on the matrix algebra. Its columns are eigenvectors, not elements of the algebra in the biquaternion product. The distinction is the distinction between the algebra and its defining module.
+**The diagonalising matrix is not a unit of the algebra.** $\mathsf{C}_Q$ is a matrix, not necessarily the image of a biquaternion of determinant one. It is an element of $GL_2(\mathbb{C})$, and it acts by conjugation on the matrix algebra. Its columns are eigenvectors, not elements of the algebra in the biquaternion product. The distinction is the distinction between the algebra and its defining module.
 
 ## The Normal Case
 
@@ -244,7 +244,7 @@ a,b\in\mathbb{C},
 \vec n\in\mathbb{R}^3,
 $$
 
-with $\vec\sigma=(\sigma_1,\sigma_2,\sigma_3)$ and $\vec n$ not necessarily of unit length. The two eigenvalues are $a\pm b|\vec n|$. The form displays the normal locus as the union of the complex planes spanned by $\mathrm I_2$ and a point of the Bloch sphere, that is, the union of the unitary conjugates of the diagonal algebra.
+with $\vec\sigma=(\sigma_1,\sigma_2,\sigma_3)$ and $\vec n$ real, with $\vec n\cdot\vec n$ not necessarily one. The two eigenvalues are $a\pm b\sqrt{\vec n\cdot\vec n}$. The form displays the normal locus as the union of the complex planes spanned by $\mathrm I_2$ and a point of the Bloch sphere, that is, the union of the unitary conjugates of the diagonal algebra.
 
 **The algebra reading.** In the model $X=\mathsf{M}_2(\tilde Q)$, the matrix is normal exactly when
 
@@ -274,7 +274,7 @@ $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)=\tfrac12\Bigl(e_t\mp i\frac{\vec p}{|\vec p|}\Bigr)
 $$
 
-are Hermitian idempotents, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, and they are orthogonal for the Hermitian form. Conversely, if the spectral idempotents are Hermitian, $\vec\Xi$ is pure imaginary and $\vec Q=iB\vec\Xi$ is a complex scalar times a real vector. In a unitary eigenbasis the star exchanges the two nilpotents, $\vec\Upsilon_-^{*}=\vec\Upsilon_+$, and the Hermitian form pairs them; the two idempotents are the orthogonal spectral projectors.
+are Hermitian idempotents, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, and their product vanishes. Conversely, if the spectral idempotents are Hermitian, $\vec\Xi$ is pure imaginary and $\vec Q=iB\vec\Xi$ is a complex scalar times a real vector. In a unitary eigenbasis the star exchanges the two nilpotents, $\vec\Upsilon_-^{*}=\vec\Upsilon_+$, and the two idempotents are the orthogonal spectral projectors.
 
 **The three normal types.** For a normal matrix with distinct eigenvalues:
 
@@ -299,7 +299,7 @@ $$
 
 the orthogonal projectors onto the eigenvectors $(1,i)$ and $(1,-i)$ respectively. The eigenvalues are $1\pm i$, neither real nor of modulus one: the matrix is normal, but neither Hermitian nor unitary. The example is computed with the other seven in *$M_2(\mathbb{C})$ Representation : Worked Examples*.
 
-**What the normal case adds to the eigenbasis.** The eigenbasis of a normal matrix can be chosen orthonormal, so the diagonalising matrix can be chosen unitary. The freedom of the change is then the freedom of multiplying by a diagonal unitary, not an arbitrary invertible diagonal matrix. The Lagrange formula for the projectors is the same as in the general case; only the Hermitian property is new. The normal case is the exact intersection of the eigenbasis construction with the spectral theorem.
+**What the normal case adds to the eigenbasis.** In the normal case the diagonalising matrix can be chosen unitary. The freedom of the change is then the freedom of multiplying by a diagonal unitary, not an arbitrary invertible diagonal matrix. The Lagrange formula for the projectors is the same as in the general case; only the Hermitian property is new. The normal case is the exact intersection of the eigenbasis construction with the spectral theorem.
 
 ## Change from One Element to Another
 
@@ -336,7 +336,7 @@ with the obvious convention on the order of the labels. The transition matrices 
 
 ## Summary
 
-The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multiplies as the matrix units $E_{11},E_{12},E_{21},E_{22}$; in the coordinate model the element is diagonal with entries $\lambda_+,\lambda_-$ and vanishing mixed coordinates. The diagonalising matrix $\mathsf{C}_Q$ has the two eigenvectors as columns, has determinant $2B(B-Q_z)$, and satisfies $\mathsf{C}_Q^{-1}M\mathsf{C}_Q=\operatorname{diag}(\lambda_+,\lambda_-)$; a second chart covers the axis $B=Q_z$. The matrix is defined up to a nonzero scalar and an invertible diagonal right factor, which are the rescalings of the two eigenvectors. Transitions between two spectral elements satisfy the cocycle identity and preserve the diagonal form only when the elements commute. In the normal case the eigenbasis can be chosen orthonormal, the diagonalising matrix unitary, and the spectral projectors Hermitian; the normal elements are exactly those whose vector part is a complex scalar times a real vector.
+The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multiplies as the matrix units $E_{11},E_{12},E_{21},E_{22}$; in the coordinate model the element is diagonal with entries $\lambda_+,\lambda_-$ and vanishing mixed coordinates. The diagonalising matrix $\mathsf{C}_Q$ has the two eigenvectors as columns, has determinant $2B(B-Q_z)$, and satisfies $\mathsf{C}_Q^{-1}M\mathsf{C}_Q=\operatorname{diag}(\lambda_+,\lambda_-)$; a second chart covers the axis $B=Q_z$. The matrix is defined up to a nonzero scalar and an invertible diagonal right factor, which are the rescalings of the two eigenvectors. Transitions between two spectral elements satisfy the cocycle identity and preserve the diagonal form only when the elements commute. In the normal case the diagonalising matrix can be chosen unitary and the spectral projectors Hermitian; the normal elements are exactly those whose vector part is a complex scalar times a real vector.
 
 ## Summary of Notation
 

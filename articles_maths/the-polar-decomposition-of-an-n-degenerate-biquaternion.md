@@ -176,7 +176,7 @@ $$
 \tilde Q=\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad \tilde Q^{2}=0 .
 $$
 
-The sector splits into the origin, where $\tilde Q_H=0$ and $\tilde Q_0=0$, and the nonzero nilpotents, where $\tilde Q_H$ has rank one and $\tilde Q_0$ is a partial isometry of rank one. The nonzero nilpotents are the pure elements of the nilpotent cone (*Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*).
+The sector splits into the origin, where $\tilde Q_H=0$ and $\tilde Q_0=0$, and the nonzero nilpotents, where $\tilde Q_H$ has rank one and $\tilde Q_0$ is a partial isometry of rank one. The nonzero nilpotents are the pure elements of the nilpotent cone (*Nilpotents*).
 
 The two sectors are disjoint. The origin lies in $\Sigma_{00}$, and it is the only element at which $a=0$. On both sectors the two-factor decomposition exists, and on neither does the four-factor word exist.
 

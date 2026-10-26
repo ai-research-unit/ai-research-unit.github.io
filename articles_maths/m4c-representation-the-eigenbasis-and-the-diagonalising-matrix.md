@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix__
+# __$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix__
 
 ## Introduction
 
@@ -13,7 +13,7 @@ $$
 \det\mathsf{C}_Q=2B(B-Q_z).
 $$
 
-**Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the centraliser is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*.
+**Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the centraliser is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis*.
 
 ## The Eigenbasis
 
@@ -106,7 +106,7 @@ G=2\begin{pmatrix}
 0&0&0&1
 \end{pmatrix},
 $$
-because $\operatorname{Tr}(\tilde\Pi_\pm)=2$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$, and the mixed products are the rank-two idempotents. The factor two is the duplication: each $2\times2$ pairing entry is counted twice. The basis is not orthonormal: the idempotents are length $\sqrt2$, the nilpotents are isotropic, and the two mixed products pair to two.
+because $\operatorname{Tr}(\tilde\Pi_\pm)=2$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$, and the mixed products are the rank-two idempotents. The factor two is the duplication: each $2\times2$ pairing entry is counted twice. The trace matrix of the basis is not the identity: the idempotents have trace $2$, the nilpotents trace $0$, and the two mixed products trace $2$.
 
 **The invariants.** For every element $\tilde X$ with eigenbasis coordinates $X_{ij}$,
 $$
@@ -114,7 +114,7 @@ $$
 \qquad
 \det\mathsf M_4^{Q}(\tilde X)=(X_{11}X_{22}-X_{12}X_{21})^2=\langle\tilde X\rangle_{\natural}^2.
 $$
-The trace is four times the scalar part and the determinant is the square of the norm, as in the fixed model, because the two models differ by a conjugation.
+The trace is four times the scalar part and the determinant is the square of the central scalar, as in the fixed model, because the two models differ by a conjugation.
 
 ## The Freedom of the Change
 
@@ -141,7 +141,7 @@ of complex dimension eight. The first factor changes the basis inside the two-di
 $$
 MM^{\dagger}=M^{\dagger}M,
 $$
-if and only if $\tilde Q$ is normal in the algebra. In that case the two eigenspaces are orthogonal, the spectral projectors are Hermitian, and the eigenbasis can be chosen orthonormal. The diagonal form becomes
+if and only if $\tilde Q$ is normal in the algebra. In that case the two eigenspaces are orthogonal, the spectral projectors are Hermitian, and the diagonalising matrix can be chosen unitary. The diagonal form becomes
 $$
 M=U\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)U^{\dagger},
 \qquad
@@ -156,7 +156,7 @@ U(2)\times U(2),
 $$
 the unitary changes inside the two eigenspaces. The determinant of the unitary diagonalising matrix has modulus one.
 
-**The real quaternion case.** For a real quaternion $h$, $M=\mathsf{M}_4(h)$ is real and satisfies $M^{\mathsf T}M=N\mathrm I_4$. Hence $M/\sqrt N$ is orthogonal, and the eigenbasis can be chosen real orthonormal. The two copies of the defining representation are then two copies of the same real rotation.
+**The real quaternion case.** For a real quaternion $h=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the matrix $M=\mathsf{M}_4(h)$ is real and satisfies $M^{\mathsf T}M=(q_t^2+q_x^2+q_y^2+q_z^2)\mathrm I_4$. The eigenbasis can be chosen real. The two copies of the defining representation are then two copies of the same real matrix.
 
 ## Change from One Element to Another
 

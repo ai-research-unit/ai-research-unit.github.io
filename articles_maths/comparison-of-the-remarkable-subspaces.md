@@ -1,12 +1,12 @@
-# __Comparison of the Remarkable Subspaces__
+# __The Lattice of the Subspaces__
 
 ## Introduction
 
-The remarkable subspaces of $\mathbb{B}$ — the centre, the vector subspace, the quaternion and anti-quaternion subspaces, and the Hermitian and anti-Hermitian subspaces — are defined and tabulated one by one in *Introduction to the Remarkable Subspaces*. They are not independent objects: they intersect, they sum to subspaces of $\mathbb{B}$ larger than themselves, they are built from four common pieces, and the four conjugations act on each of them by signs.
+The remarkable subspaces of $\mathbb{B}$ — the centre, the vector subspace, the quaternion and anti-quaternion subspaces, and the Hermitian and anti-Hermitian subspaces — are defined and tabulated one by one in *The Six Subspaces*. They are not independent objects: they intersect, they sum to subspaces of $\mathbb{B}$ larger than themselves, they are built from four common pieces, and the four conjugations act on each of them by signs.
 
 This article collects those relations in one place. Every number below is derived from the definitions by the comparison of coefficients, so the article doubles as the index of the remarkable subspaces. Its tool is the four coordinate blocks, which are the pieces into which the eight real coordinates of $\mathbb{B}$ group and of which every one of the remarkable subspaces is a sum.
 
-The frame is the three decompositions of the algebra, established in *Decompositions Along the Remarkable Subspaces*:
+The frame is the three decompositions of the algebra, read off from the fixed and anti-fixed spaces of the involutions:
 
 | involution | fixed space | anti-fixed space | decomposition |
 |---|---|---|---|
@@ -120,7 +120,7 @@ The three decompositions of the frame table come from the three involutions ${}^
 | ${}^{*}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | the Hermitian structure |
 | $\flat$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | the reversal |
 
-Only the Hermitian pair is counted twice, since $\{\tilde Q:\tilde Q^{\flat}=\tilde Q\}=\mathbb{M}_-$ and $\{\tilde Q:\tilde Q^{\flat}=-\tilde Q\}=\mathbb{M}_+$ are the eigenvalue equations of ${}^{*}$ read with the opposite labels.
+Only the Hermitian pair is counted twice, since $\{\tilde Q:\tilde Q^{\flat}=\tilde Q\}=\mathbb{M}_-$ and $\{\tilde Q:\tilde Q^{\flat}=-\tilde Q\}=\mathbb{M}_+$ are the fixed and anti-fixed equations of ${}^{*}$ read with the opposite labels.
 
 Over the coordinate blocks the subspaces sit at the following levels of dimension, a line joining a subspace to the minimal ones containing it in the diagram of the article:
 
@@ -150,7 +150,7 @@ The same answer follows from the defining conditions: an element of $\mathbb{H}_
 
 ## The Involutions as Sign Patterns
 
-Each of the four conjugations preserves each of the remarkable subspaces, since it commutes with the three commuting involutions that define them, and its restriction to a subspace is diagonal in the real basis of that subspace with eigenvalues $+1$ and $-1$ only. The following table records, for each conjugation and each subspace, the multiplicity of the eigenvalue $-1$, written as a fraction of the dimension.
+Each of the four conjugations preserves each of the remarkable subspaces, since it commutes with the three commuting involutions that define them, and its restriction to a subspace is diagonal in the real basis of that subspace with signs $+1$ and $-1$ only. The following table records, for each conjugation and each subspace, the multiplicity of the sign $-1$, written as a fraction of the dimension.
 
 | conjugation | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
 |---|---|---|---|---|---|---|
@@ -167,7 +167,7 @@ Two consequences follow from the table alone. First, no subspace other than the 
 
 ## The Complex Structure and the Remarkable Subspaces
 
-The scalar imaginary $i$ gives the real-linear map $J : \tilde{Q} \mapsto i\tilde{Q}$ with $J^2 = -\mathrm{id}$, the complex structure carried by every complex vector space, defined for $\mathbb{B}$ in *The Biquaternion Algebra and Its Vector Spaces*. It is not one of the four conjugations, and its action on the remarkable subspaces is read directly from the block table; no product is invoked. Since $i(q + iq') = -q' + iq$ on the coefficients, $J$ exchanges the two scalar blocks and the two vector blocks:
+The scalar imaginary $i$ gives the real-linear map $J : \tilde{Q} \mapsto i\tilde{Q}$ with $J^2 = -\mathrm{id}$, the complex structure carried by every complex vector space, defined for $\mathbb{B}$ in *The Biquaternion Algebra*. It is not one of the four conjugations, and its action on the remarkable subspaces is read directly from the block table; no product is invoked. Since $i(q + iq') = -q' + iq$ on the coefficients, $J$ exchanges the two scalar blocks and the two vector blocks:
 
 $$
 J(A_1) = A_2, \qquad J(A_2) = A_1, \qquad J(B_1) = B_2, \qquad J(B_2) = B_1.

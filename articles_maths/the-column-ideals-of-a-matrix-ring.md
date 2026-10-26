@@ -8,7 +8,7 @@ The count is forced by the **Peirce decomposition** and by nothing else. The mat
 
 Two cautions belong to the statement, and both are made precise below. The count is a count of **basis elements of the corner-adapted basis**, and not of the idempotents of the ideal: those form an affine family \(E_{jj} + N_j\) of dimension \(n-1\) over \(D\), and a basis of the column can even be chosen all of whose elements are idempotents (§*The Corner-Adapted Basis Is Not Every Basis*). And the count needs a division ring: over a ring with a proper nonzero ideal the column need not be minimal and the corner argument does not apply (§*Where the Count Does Not Apply*).
 
-The matrix units, the classification of the left ideals of \(M_n(R)\) and the case \(n = 2\) are *Matrix Algebras*; the Peirce decomposition and its product rule are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; ideals, idempotents and nilpotents are *Rings*; and the biquaternion instance is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
+The matrix units, the classification of the left ideals of \(M_n(R)\) and the case \(n = 2\) are *Matrix Algebras*; the Peirce decomposition and its product rule are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; ideals, idempotents and nilpotents are *Rings*; and the biquaternion instance is *The Peirce Decomposition*.
 
 ## Matrix Units, Corners and the Column Ideal
 
@@ -229,7 +229,7 @@ $$
 S = \mathbb{B}\tilde\Pi_+ = \mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},
 $$
 
-with \(\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)\) the idempotent of the diagonal corner and \(\vec\Upsilon_y = \tfrac12(i\vec e_x+\vec e_y)\) the square-zero generator of the off-diagonal corner; the second column is the complement \(\mathbb{B}\tilde\Pi_- = \mathbb{C}\{\vec\Upsilon_x,\tilde\Pi_-\}\), the mirror case. The root \(i\vec e_z\) of \(+1\), \((i\vec e_z)^2=e_t\), carries the two associated idempotents \(\tilde\Pi_+\) and \(\tilde\Pi_-\). The idempotents of \(S\) are \(\tilde\Pi_+ + c\vec\Upsilon_y\) with \(c \in \mathbb{C}\), by §*The Idempotents of the Column*. The ideals, the Peirce corners and the two multiplication tables are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the two minimal left ideals as the spinor space and its complement are *The Spinor Space as a Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*.
+with \(\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)\) the idempotent of the diagonal corner and \(\vec\Upsilon_y = \tfrac12(i\vec e_x+\vec e_y)\) the square-zero generator of the off-diagonal corner; the second column is the complement \(\mathbb{B}\tilde\Pi_- = \mathbb{C}\{\vec\Upsilon_x,\tilde\Pi_-\}\), the mirror case. The root \(i\vec e_z\) of \(+1\), \((i\vec e_z)^2=e_t\), carries the two associated idempotents \(\tilde\Pi_+\) and \(\tilde\Pi_-\). The idempotents of \(S\) are \(\tilde\Pi_+ + c\vec\Upsilon_y\) with \(c \in \mathbb{C}\), by §*The Idempotents of the Column*. The ideals, the Peirce corners and the two multiplication tables are *The Peirce Decomposition*; the two minimal left ideals as the spinor space and its complement are *The Spinor Space as a Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 
 ## Where the Count Does Not Apply
 

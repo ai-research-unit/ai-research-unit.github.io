@@ -8,7 +8,7 @@ quaternionic sesquilinear product
 $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra*; the twelve structures and their
 four general products are the subject of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the model
-of the method is *The Biquaternion Algebra and Its Vector Spaces*, which isolates the plain product by left
+of the method is *The Biquaternion Algebra*, which isolates the plain product by left
 alternativity. The twin articles are
 *The Specificities of the General Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic
 Algebra*.

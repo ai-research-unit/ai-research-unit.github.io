@@ -78,7 +78,7 @@ $$
 \mathbb{M}_{+}\cong\mathbb{M}_{-}\cong\mathbb{R}^{4} \;}.
 $$
 
-**Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *Comparison of the Remarkable Subspaces*.
+**Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *The Lattice of the Subspaces*.
 
 **Corollary.** Every map into $\mathbb{B}$ is null-homotopic, and $\mathbb{B}$ carries no topological obstruction of its own; the topology of the algebra is entirely the topology of its distinguished subsets — the unit group, the null cone and the spheres.
 

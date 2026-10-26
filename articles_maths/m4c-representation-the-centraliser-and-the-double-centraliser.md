@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser__
+# __$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser__
 
 ## Introduction
 

@@ -11,11 +11,11 @@ $$
 
 The first is additive and blind to the vector part; the second is multiplicative and sees the whole element. Together they give invertibility, the zero divisors, the spectrum and the characteristic polynomial.
 
-This article develops the two invariants and what they decide. It is the matrix form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*The Four Algebraic Norms*, and of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Characteristic Polynomial*.
+This article develops the two invariants and what they decide. It is the matrix form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*The Four Algebraic Norms*, and of *The Spectrum*, §*The Characteristic Polynomial*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*: $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are written $\lambda_\pm=Q_t\pm iB$, with $B$ a chosen square root of $B^2$; the pair is unordered and the choice of $B$ exchanges the two labels.
 
-**Boundaries.** The four forms and their norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the spectral condition is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; the rank-one case is *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the groups defined by the determinant are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
+**Boundaries.** The four forms and their norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the spectral condition is *The Spectrum*; the rank-one case is *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the groups defined by the determinant are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
 ## The Trace
 
@@ -155,42 +155,9 @@ The identity is verified by substituting the general matrix. It is the matrix fo
 
 **The degenerate case.** When $B=0$ the two eigenvalues coalesce at $Q_t$. The matrix is then $Q_t\mathrm I_2+N$ with $N$ nilpotent, and it has a single eigenvalue. It is diagonalisable exactly when $N=0$, that is when the matrix is scalar. Otherwise it is a single Jordan block. The statement is the matrix form of the spectral-degenerate cone.
 
-## The Determinant and the Modulus
-
-**The modulus.** In the polar decomposition of *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*, a matrix is written
-
-$$
-M=r\,\zeta\,M_bM_r,
-\qquad r>0,\quad|\zeta|=1,\quad M_b\text{ Hermitian positive of determinant }1,\quad M_r\in SU(2).
-$$
-
-Taking determinants,
-
-$$
-\det M=r^2\zeta^2,
-$$
-
-because $\det M_b=1$ and $\det M_r=1$. Hence
-
-$$
-|\det M|=r^2,\qquad r=|\det M|^{1/2},
-$$
-
-and the phase of the determinant is twice the phase $\zeta$. The modulus $r$ is the real scale of the element, and the determinant sees it squared. The factor two is the reason the determinant of left multiplication on the four-dimensional algebra is $N^2$, and the real determinant of that operator is $|N|^4$, while the modulus is $|N|^{1/2}$.
-
-**The singular values.** The singular values of $M$ are the square roots of the eigenvalues of $MM^{\dagger}$. From $M=r\zeta M_bM_r$ and the unitarity of $M_r$,
-
-$$
-MM^{\dagger}=r^2M_b^2,
-$$
-
-so the singular values are $r e^{\eta/2}$ and $r e^{-\eta/2}$, where $e^{\pm\eta}$ are the eigenvalues of $M_b^2$. Their product is $r^2=|\det M|$. They coincide exactly when $M_b=\mathrm I_2$, that is when the element is a scalar times a unitary; otherwise the boost separates them. A general complex matrix has two singular values whose product is $|\det M|$; in the polar word the pair is $re^{\pm\eta/2}$, and the rapidity is the parameter that separates them.
-
-**The determinant on the two halves.** On $\mathbb{M}_+$ the determinant is $q_t^2-q_x'^2-q_y'^2-q_z'^2$, of signature $(1,3)$; on $\mathbb{M}_-$ it is $-(q_t')^2+q_x^2+q_y^2+q_z^2$, of signature $(3,1)$. The two are opposite, and the sign is the matrix form of the anti-isometry between the two sectors. The statement is proved in *$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions*.
-
 ## Summary
 
-The trace is twice the scalar part and the determinant is the quaternionic norm. The determinant is multiplicative, nonzero exactly on the units, and zero exactly on the singular matrices, which are the zero divisors. The characteristic polynomial is $X^2-2Q_tX+N$, with discriminant $-4B^2$; the eigenvalues are $Q_t\pm iB$, distinct exactly when $B^2\neq0$. The modulus of the polar decomposition is the square root of the modulus of the determinant, and the two singular values have product $|\det M|$ and are separated by the rapidity.
+The trace is twice the scalar part and the determinant is the quaternionic norm. The determinant is multiplicative, nonzero exactly on the units, and zero exactly on the singular matrices, which are the zero divisors. The characteristic polynomial is $X^2-2Q_tX+N$, with discriminant $-4B^2$; the eigenvalues are $Q_t\pm iB$, distinct exactly when $B^2\neq0$.
 
 ## Summary of Notation
 
@@ -201,7 +168,6 @@ The trace is twice the scalar part and the determinant is the quaternionic norm.
 | $\chi_M(X)=X^2-2Q_tX+N$ | the characteristic polynomial |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\Delta=-4B^2$ | the discriminant |
-| $r=|\det M|^{1/2}$ | the modulus |
 | $\{N=0\}$ | the null cone, the determinantal variety |
 
 ## Further Reading

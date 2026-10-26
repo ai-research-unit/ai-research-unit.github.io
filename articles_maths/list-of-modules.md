@@ -76,11 +76,11 @@ Over a division ring every module is free, and the rank theory is that of vector
 | Module | Rank, basis, torsion, freeness | Introduced in |
 |---|---|---|
 | $\mathbb{H}^n$ | free of rank $n$ over the division ring $\mathbb{H}$; basis $e_1,\dots,e_n$; real dimension $4n$ | *Quaternion Ideals and Simplicity* |
-| Finitely generated $\mathbb{B}$-module | isomorphic to $S^{\oplus k}$ for the unique simple $S = \mathbb{C}^2$; complex dimension $2k$ | *Modules over the Biquaternion Algebra* |
-| The defining module $S$ of $\mathbb{B}$ | the unique simple $\mathbb{B}$-module; not free over $\mathbb{B}$ in the vector-space sense | *Modules over the Biquaternion Algebra* |
+| Finitely generated $\mathbb{B}$-module | isomorphic to $S^{\oplus k}$ for the unique simple $S = \mathbb{C}^2$; complex dimension $2k$ | *The Category of Modules* |
+| The defining module $S$ of $\mathbb{B}$ | the unique simple $\mathbb{B}$-module; not free over $\mathbb{B}$ in the vector-space sense | *The Category of Modules* |
 | $\mathbb{H}$-module structure | complex structure $I$ and quaternionic structure $\mathcal{J}$; $J(\mathbb{H}) = 0$ | *Quaternion Ideals and Simplicity* |
 | Lipschitz order $\mathbb{Z}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | a torsion-free $\mathbb{Z}$-module of rank $4$, not free over a non-commutative order | *Lattices and the Quaternion Lattice* |
-| Non-example: a $\mathbb{B}$-module treated as a vector space | fails to have a basis over $\mathbb{B}$: the ring has zero divisors | *The Biquaternion Algebra and Its Vector Spaces* |
+| Non-example: a $\mathbb{B}$-module treated as a vector space | fails to have a basis over $\mathbb{B}$: the ring has zero divisors | *The Biquaternion Algebra* |
 | Non-example: a torsion element of an $\mathbb{H}$-module | does not occur: $\mathbb{H}$ is a division ring, so every nonzero module is torsion-free | *Quaternion Ideals and Simplicity* |
 
 ## Homomorphisms, Duals and Tensor Products

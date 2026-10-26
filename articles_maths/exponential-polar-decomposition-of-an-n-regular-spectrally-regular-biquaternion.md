@@ -26,7 +26,7 @@ The spectral reading is the subject that distinguishes this article from the gen
 
 The companion article *Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion* treats the case $B^2=0$. The two articles are independent: each defines the word, proves existence and uniqueness, and develops the logarithm and the group law. This article does not use the companion, and the companion does not use this one. The boundary of the sector has two pieces: the null cone $\langle\tilde Q\rangle_{\natural}=0$, where the modulus vanishes, and the spectral cone $B^2=0$, where the eigenbasis degenerates while the word remains finite. The second piece is the doorway to the companion, and it is treated in §*The Two Walls*.
 
-The article assumes *The Polar Decomposition of a N-Regular Biquaternion* for the modulus–unit theorem, *Biquaternion Elementary Functions* for the exponential and the logarithm, and *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion* for the eigenbasis. It does not treat the Peirce decomposition, the spinors or the spectral algebra of the sector; those are in the articles cited. The numerical cases are in *Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*.
+The article assumes *The Polar Decomposition of a N-Regular Biquaternion* for the modulus–unit theorem, *Biquaternion Elementary Functions* for the exponential and the logarithm, and *The Eigenbasis* for the eigenbasis. It does not treat the Peirce decomposition, the spinors or the spectral algebra of the sector; those are in the articles cited. The numerical cases are in *Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*.
 
 **The plan.** The word, its two unit factors and the seven data are boxed and proved in §*The Result in Terms of the Coordinates*. The domain is fixed in §*The Domain*. The word and its component form are stated in §*The Decomposition*. The spectral reading occupies §*The Spectral Reading*, with the eigenbasis, the normal case and the non-normal case. Existence and uniqueness are proved in §*Existence and Uniqueness*. The logarithm, the group law, the matrix picture and the exponential coordinates follow. §*The Two Walls* treats the boundary. The summary collects the formulas and the comparison between the polar and the spectral data.
 
@@ -206,7 +206,7 @@ $$
 \Sigma_{11}=\{\tilde Q\in\mathbb{B}:\ N\neq0,\ B^2\neq0\}.
 $$
 
-The name is the one of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*: the element is N-regular when $N\neq0$, and spectrally regular when $B^2\neq0$. The two conditions are independent, and their four combinations are the four sectors of the algebra. This article treats the combination $11$; the companion treats $10$.
+The name is the one of *The Spectrum*: the element is N-regular when $N\neq0$, and spectrally regular when $B^2\neq0$. The two conditions are independent, and their four combinations are the four sectors of the algebra. This article treats the combination $11$; the companion treats $10$.
 
 ### Five Descriptions
 

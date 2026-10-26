@@ -301,7 +301,7 @@ $$
 
 and $\Theta_{\tilde\Pi_+}$ is an orthogonal projection of rank one, with singular value one. Hence the singular value is $4a^{2}$. The eigenvalue-to-singular-value ratio is zero. This is the maximal defect: the operator has a non-zero singular value but no non-zero eigenvalue, and its image is a null line.
 
-The operator $\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde\Pi_+}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the nilpotent partial isometry $\Theta_{\tilde Q_0}$.
+The operator $\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde Q_0}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the nilpotent partial isometry $\Theta_{\tilde Q_0}$.
 
 ## The Polar Decomposition of the Sandwich
 
@@ -358,7 +358,7 @@ $$
 \qquad
 \Theta_{\tilde Q_0}
 =\Theta_{(\vec e_x+i\vec e_y)/2}
-=\frac14\Theta_{\tilde\nu},
+=\frac14\Theta_{\vec e_x+i\vec e_y},
 $$
 
 independent of the phase. The sandwich is
@@ -366,7 +366,8 @@ independent of the phase. The sandwich is
 $$
 \Theta_{\tilde Q}
 =4\lvert c_0\rvert^{2}\Theta_{\tilde Q_0}
-=\lvert c_0\rvert^{2}\Theta_{\tilde\nu},
+=\lvert c_0\rvert^{2}\Theta_{\vec e_x+i\vec e_y}
+=\Theta_{\tilde\nu},
 $$
 
 so the phase has cancelled. The one-sided operator keeps the phase; the sandwich sees only $\lvert c_0\rvert^{2}$ and the canonical pair. The sign $\tilde\nu\mapsto-\tilde\nu$ also cancels.

@@ -296,7 +296,7 @@ The block matrix has the zero row and column indexed by $A_{10}$; on the three r
 
 ### The biquaternion algebra
 
-Let $\mathbb{B}=M_2(\mathbb{C})$ and let $e=E_{11}$, $f=E_{22}$. Under the matrix model, the four corners are the four complex lines of the Peirce decomposition, and the block matrix of $T_{a,b}$ is $a\otimes b^{\mathsf T}$ as in the matrix case. The biquaternion labels of the four lines, and the Peirce table in the biquaternion basis, are those of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the sandwich operators are the same operators in the two coordinates, and the Peirce projections are the elementary sandwiches of the two idempotents. The example is the matrix case of *The Sandwich Operator on an Algebra*, §*The Quaternion Algebra*, read on the Peirce basis.
+Let $\mathbb{B}=M_2(\mathbb{C})$ and let $e=E_{11}$, $f=E_{22}$. Under the matrix model, the four corners are the four complex lines of the Peirce decomposition, and the block matrix of $T_{a,b}$ is $a\otimes b^{\mathsf T}$ as in the matrix case. The biquaternion labels of the four lines, and the Peirce table in the biquaternion basis, are those of *The Peirce Decomposition*; the sandwich operators are the same operators in the two coordinates, and the Peirce projections are the elementary sandwiches of the two idempotents. The example is the matrix case of *The Sandwich Operator on an Algebra*, §*The Quaternion Algebra*, read on the Peirce basis.
 
 ## Summary
 

@@ -114,7 +114,7 @@ $$
 \mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_t-\tilde\Pi),\qquad \mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B},
 $$
 
-and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal; the general statements are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the decomposition carried by a plain idempotent is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
+and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal; the general statements are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the decomposition carried by a plain idempotent is *The Peirce Decomposition*.
 
 ### Every Idempotent of the Block Is Hermitian
 
@@ -345,7 +345,7 @@ $$
 
 **The idempotents of the algebra are the halving map applied to its own roots of $+1$, a real four-parameter family together with the trivial pair; the idempotents of the block are the Hermitian ones, so the two sets agree exactly on the trivial pair and the Hermitian idempotents, and every non-Hermitian idempotent of the algebra is dropped by the block.**
 
-The idempotents of the associative product are the elements $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the algebra, $\tilde\Xi^{2}=e_t$, by the halving map of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, where those roots are classified; the map $\tilde\Xi\mapsto\tilde\Pi$ is a bijection from the algebra's roots of $+1$ onto its idempotents, and the non-trivial roots give the non-trivial idempotents, a real four-parameter family. The block's idempotents are the **Hermitian** idempotents of the algebra, by the reduction, and they are the subfamily with $\tilde\Xi$ Hermitian.
+The idempotents of the associative product are the elements $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the algebra, $\tilde\Xi^{2}=e_t$, by the halving map of *Idempotents*, where those roots are classified; the map $\tilde\Xi\mapsto\tilde\Pi$ is a bijection from the algebra's roots of $+1$ onto its idempotents, and the non-trivial roots give the non-trivial idempotents, a real four-parameter family. The block's idempotents are the **Hermitian** idempotents of the algebra, by the reduction, and they are the subfamily with $\tilde\Xi$ Hermitian.
 
 | idempotent set | description | size |
 |---|---|---|

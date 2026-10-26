@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units__
+# __$M_4(\mathbb{C})_L$ Model : Peirce Coordinates and Matrix Units__
 
 ## Introduction
 
@@ -16,7 +16,7 @@ $$
 S^{-1}\mathsf{M}_4(\tilde Q)S=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q).
 $$
 
-**Boundaries.** The spectral projectors of a general element are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the minimal left ideals are *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module*; the abstract Peirce decomposition is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; the $2\times2$ units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*.
+**Boundaries.** The spectral projectors of a general element are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the minimal left ideals are *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module*; the abstract Peirce decomposition is *The Peirce Decomposition*; the $2\times2$ units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*.
 
 ## The Peirce Table
 
@@ -151,7 +151,7 @@ $$
 =\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$
 
-The scalar coordinate $a+d=2Q_t$ is the trace; the determinant $ad-bc=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ is the norm. The vector part is split between the off-diagonal coordinates and the diagonal difference:
+The scalar coordinate $a+d=2Q_t$ is the trace; the determinant $ad-bc=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ is the central scalar. The vector part is split between the off-diagonal coordinates and the diagonal difference:
 $$
 b-c=-2Q_y,\qquad b+c=-2iQ_x,\qquad a-d=-2iQ_z.
 $$
@@ -182,11 +182,30 @@ $$
 \mathsf{M}_4(\vec\Upsilon_+)=\mathsf{M}_4(E_{12}),\qquad
 \mathsf{M}_4(\vec\Upsilon_-)=\mathsf{M}_4(E_{21}),
 $$
-each duplicated in the two blocks. Their squares vanish, their products are the rank-two spectral projectors, and every nilpotent of the image is a conjugate of one of them. The nilpotent cone of the algebra is a single conjugacy class up to scale; in the regular model each nonzero nilpotent has rank two, because it is the direct sum of two identical $2\times2$ nilpotents.
+each duplicated in the two blocks. Their squares vanish, their products are the rank-two idempotents $\mathsf{M}_4(\tilde\Pi_+)$ and $\mathsf{M}_4(\tilde\Pi_-)$, and every nilpotent of the image is a conjugate of one of them. The nilpotent cone of the algebra is a single conjugacy class up to scale; in the regular model each nonzero nilpotent has rank two, because it is the direct sum of two identical $2\times2$ nilpotents.
 
-**The Jordan block.** In the $2\times2$ model a nonzero nilpotent is conjugate to the single Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$. In the $4\times4$ regular model the corresponding matrix is the direct sum of two copies of that block, of rank two and with a single eigenvalue zero. The Jordan form has two blocks of size two, not one block of size four, because the two copies are independent.
+**The strictly triangular form.** In the $2\times2$ model a nonzero nilpotent is conjugate to the strictly triangular matrix $\begin{pmatrix}0&1\\0&0\end{pmatrix}$. In the $4\times4$ regular model the corresponding matrix is the direct sum of two copies of that matrix, of rank two and with square zero. The normal form has two blocks of size two, not one block of size four, because the two copies are independent.
 
 **The two chiralities.** The two off-diagonal units are not conjugate by a diagonal element of the standard torus; they are exchanged by the Weyl element, which is the image of a unit of $\mathbb{B}$ exchanging the two idempotents. The exchange is an inner automorphism, so the two nilpotents are conjugate in the image; the labels $x$ and $y$ are a choice of which is which.
+
+## The Idempotents in the Regular Model
+
+**The Hermitian idempotents.** For a real vector $\vec u$ with $\vec u^2=-e_t$,
+$$
+\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u),
+\qquad
+\tilde\Pi(\vec u)^2=\tilde\Pi(\vec u),
+\qquad
+\tilde\Pi(\vec u)^{*}=\tilde\Pi(\vec u).
+$$
+The image $\mathsf{M}_4(\tilde\Pi(\vec u))$ is an orthogonal projector of rank two, with trace two. The family is a two-sphere, and it lies in $\mathbb{M}_+$.
+
+**The general idempotents.** Every idempotent of $\mathbb{B}$ is a conjugate of one of these by a unit, and the family is two complex-dimensional. The general idempotent is not Hermitian, and its image is an oblique projector of rank two. In the regular model every nontrivial idempotent has rank two and trace two, whatever its Hermitian nature.
+
+**The roots of $+1$.** The involutions $X^2=\mathrm I_4$ in the image are the images of the elements $\tilde X$ with $\tilde X^2=e_t$. They are the identity, minus the identity, and the conjugates of $i\vec e_z$. The traceless Hermitian ones are $\mathsf{M}_4(i\vec u)$ with $\vec u^2=-e_t$; they lie in $i\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+$. The anti-Hermitian subspace contains none.
+
+**The nilpotents.** A nonzero nilpotent has square zero, trace zero and rank two. It lies in the vector subspace and on the null cone, and in none of the other five subspaces except through the origin. The rank-two nilpotent is the regular analogue of the rank-one nilpotent of the $2\times2$ model.
+
 
 ## Summary
 

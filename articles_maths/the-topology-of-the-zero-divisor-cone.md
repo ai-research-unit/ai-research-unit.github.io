@@ -136,7 +136,7 @@ $$
 S^{2}=\{\mu\in P_+:\mu^{2}=-e_t\},
 $$
 
-the sphere of **real roots of $-1$**; it is compact, connected and simply connected, with $\pi_2(S^{2})\cong\mathbb{Z}$, and it is **not** a group. It is the homogeneous space $Sp(1)/\mathrm{U}(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$ (*Quaternion Geometry*, §*The Hopf Fibration*). Multiplication by $i$ carries it to the unit sphere of $P_-$, the sphere of roots of $+1$ in that slice (*Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of Minus One*).
+the sphere of **real roots of $-1$**; it is compact, connected and simply connected, with $\pi_2(S^{2})\cong\mathbb{Z}$, and it is **not** a group. It is the homogeneous space $Sp(1)/\mathrm{U}(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$ (*Quaternion Geometry*, §*The Hopf Fibration*). Multiplication by $i$ carries it to the unit sphere of $P_-$, the sphere of roots of $+1$ in that slice (*Idempotents*, §*The Roots of Minus One*).
 
 *Proof.* A real root of $-1$ in $P_+$ is $\mu=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with $\mu^{2}=-(q_x^{2}+q_y^{2}+q_z^{2})e_t$, so the condition is $q_x^{2}+q_y^{2}+q_z^{2}=1$: the unit sphere of $P_+$, which is the ordinary $2$-sphere. The identification with $Sp(1)/\mathrm{U}(1)$ and the Hopf fibration are those of *Quaternion Geometry*. If $\mu\in P_+$ is a root of $-1$, then $(i\mu)^{2}=i^{2}\mu^{2}=e_t$, and conversely every root of $+1$ in $P_-$ is $i\mu$ for such a $\mu$.
 

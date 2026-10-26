@@ -118,7 +118,7 @@ and the passage is exactly the reading of the complex basis $\{1,j\}$ on the rea
 | complex | $1,j$ | $2$ | $\mathbb{C}$ | $(Q_{\blacktriangle},Q_{\blacktriangledown})$ |
 | idempotent | $\Pi_+,\Pi_-$ | $2$ | $\mathbb{C}$ | $(Q_{+},Q_{-})$ |
 
-The first and the third are real- or complex-based readings of the same four real coordinates; the second and the third are two complex bases of the same two-dimensional complex space. The table is the reduced biquaternion instance of the coordinate table of *The Biquaternion Algebra and Its Vector Spaces*, with the quaternionic coordinate system absent because the algebra has no quaternionic factor.
+The first and the third are real- or complex-based readings of the same four real coordinates; the second and the third are two complex bases of the same two-dimensional complex space. The table is the reduced biquaternion instance of the coordinate table of *The Biquaternion Algebra*, with the quaternionic coordinate system absent because the algebra has no quaternionic factor.
 
 ## Linear and Antilinear Maps
 
@@ -146,13 +146,13 @@ The map $J$ of §*The Complex Structure* is the other side of the same coin: it 
 
 **The conjugations of the next article cut the real space into fixed and anti-fixed spaces, and this article names them only.**
 
-The six fixed and anti-fixed spaces of the bar, the tessarine sign and the star are the **remarkable subspaces** of the space, and they are defined one to a section in *Introduction to the Remarkable Subspaces*, with the two decompositions they produce in *Decompositions Along the Remarkable Subspaces* and the table of all of them in *Comparison of the Remarkable Subspaces*. Three of them are read from the coordinates already fixed here:
+The six fixed and anti-fixed spaces of the bar, the tessarine sign and the star are the **remarkable subspaces** of the space, and they are defined one to a section in *The Six Subspaces*, with the two decompositions they produce in *The Three Eigenspace Decompositions* and the table of all of them in *The Lattice of the Subspaces*. Three of them are read from the coordinates already fixed here:
 
 - the fixed space of the **tessarine sign** is the **scalar line** $\mathbb{C}=\{A:A\in\mathbb{C}\}$, of real dimension two, spanned by $1,i$;
 - the anti-fixed space of the **tessarine sign** is the **$j$-line**, of real dimension two, spanned by $j,ij$;
 - the fixed space of the **bar** is the **real subalgebra** $\{a+bj:a,b\in\mathbb{R}\}$, of real dimension two, the split-complex numbers inside $\mathbb{B}_{\mathrm{r}}$.
 
-**Remark (the algebra is commutative, so its ring centre is not a proper subspace).** Unlike the biquaternion algebra, whose centre is the scalar line $\mathbb{C}e_t$ and one of its remarkable subspaces, the reduced biquaternion algebra is commutative, so its **ring centre is the whole algebra** and the scalar line is not its centre but its scalar line. Where the biquaternion category reads a *central* subspace, this category reads the **scalar line**, and the difference is taken up in *Comparison of the Remarkable Subspaces*. The warning is stated here because it bears on every later use of the word *central*: in this category *central* names an element of the scalar line $\mathbb{C}$, or the property of commuting with everything, which here is shared by every element.
+**Remark (the algebra is commutative, so its ring centre is not a proper subspace).** Unlike the biquaternion algebra, whose centre is the scalar line $\mathbb{C}e_t$ and one of its remarkable subspaces, the reduced biquaternion algebra is commutative, so its **ring centre is the whole algebra** and the scalar line is not its centre but its scalar line. Where the biquaternion category reads a *central* subspace, this category reads the **scalar line**, and the difference is taken up in *The Lattice of the Subspaces*. The warning is stated here because it bears on every later use of the word *central*: in this category *central* names an element of the scalar line $\mathbb{C}$, or the property of commuting with everything, which here is shared by every element.
 
 ## Summary
 

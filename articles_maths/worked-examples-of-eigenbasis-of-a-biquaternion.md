@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the existence of the eigenbasis is proved in *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; its construction and the nilpotents are those of *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*, §*The Corners and the Nilpotents* and §*The Eigenbasis*; no definition or proof is repeated.
+This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the existence of the eigenbasis is proved in *The Spectrum*; its construction and the nilpotents are those of *The Eigenbasis*, §*The Corners and the Nilpotents* and §*The Eigenbasis*; no definition or proof is repeated.
 
 Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$ of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Write
 
@@ -225,7 +225,7 @@ $$
 \mu\in\mathbb{C}^{\times}.
 $$
 
-*The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion* fixes one representative uniformly, by the symmetric closed form and its axis chart. The examples with $B\neq0$ below choose the auxiliary vector $\tilde Q_1$ case by case, so their representatives differ from that one by the rescaling above. The idempotents, the spectrum and the diagonal form do not depend on the choice.
+*The Eigenbasis* fixes one representative uniformly, by the symmetric closed form and its axis chart. The examples with $B\neq0$ below choose the auxiliary vector $\tilde Q_1$ case by case, so their representatives differ from that one by the rescaling above. The idempotents, the spectrum and the diagonal form do not depend on the choice.
 
 **The shared solution for $\vec Q=Q_x\vec e_x$.** For cases 2 to 5 the vector part is along $\vec e_x$, so
 
@@ -1512,7 +1512,7 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is $\natural$-regular. A null vector part does not imply an $\natural$-degenerate element.
 - None of the eight is $\natural$-degenerate. The $\natural$-degenerate regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.
 - Case 1 is the scalar regime. Every basis is an eigenbasis, and the construction of the eigenbasis does not apply.
-- Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the transverse-vector construction. The symmetric closed form of *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*, §*The Transverse-Vector Construction*, gives an admissible pair up to the reciprocal rescaling when the direction is off the exceptional cone; the transverse-vector construction is the one used here.
+- Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the transverse-vector construction. The symmetric closed form of *The Eigenbasis*, §*The Transverse-Vector Construction*, gives an admissible pair up to the reciprocal rescaling when the direction is off the exceptional cone; the transverse-vector construction is the one used here.
 - In the distinct regime the eigenvalues repeat twice in the four-dimensional eigenbasis, and they are distinct on each two-dimensional spinor space. The $2\times2$ model records the two values once, one for each column.
 
 ## Summary of Notation

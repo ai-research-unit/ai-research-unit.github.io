@@ -97,7 +97,7 @@ The contrast with the biquaternion unit group is the point: there the general pl
 
 **The units and the zero divisors are distributed over the remarkable subspaces as follows: every nonzero element of the scalar line, the $j$-line, the Hermitian plane and the anti-Hermitian plane is a unit, the two split planes carry the two real zero-divisor lines $\mathbb{R}\Pi_+$, $\mathbb{R}\Pi_-$ beside their units, and every zero divisor of the algebra lies on one of the two idempotent lines.**
 
-**Theorem (the distribution).** For the remarkable subspaces of *Introduction to the Remarkable Subspaces*:
+**Theorem (the distribution).** For the remarkable subspaces of *The Six Subspaces*:
 
 | subspace | definition | norm $\langle\cdot\rangle_{\mathrm{ts}}$ | elements |
 |---|---|---|---|

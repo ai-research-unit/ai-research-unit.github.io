@@ -10,7 +10,7 @@ $$
 
 The real axis $R\cdot1$, where $b=0$, is the semisimple stratum. The maximal ideal $\mathrm{M}=\{a=0\}$ is not the defective sector: it is the union of the real point $0$, which is semisimple, and the nilpotent stratum $D_0=\mathrm{M}\setminus\{0\}$, which is defective. The defect is carried by the nilpotent part $Q-a=b\varepsilon$; the defective sector is the preimage of $\mathrm{M}\setminus\{0\}$ under the projection $Q\mapsto Q-\operatorname{Re}Q$, and not the maximal ideal itself. This distinction is the subject of the first section and the reason the article separates three strata rather than two.
 
-**Notation.** The algebra is $\mathbb{D}'_R$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$. The norm is $\langle Q\rangle=Q\bar Q=a^2$, dual conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. In the prime notation of *Dual-Numbers Algebra* the element is $Q=q+\varepsilon q'$, with $a=q$ and $b=q'$. The matrix-element representation $\mathsf{M}_2(Q)=\begin{pmatrix}a&b\\0&a\end{pmatrix}$ and the regular representation $[L_Q]_{(1,\varepsilon)}=\begin{pmatrix}a&0\\b&a\end{pmatrix}$ are those of *Dual-Numbers Matrix Element Representation* and *Dual-Numbers Element Representations*. The polar decomposition is *Dual-Numbers Polar Decomposition*, the module theory is *Modules over $k[x]$ and the Jordan Form*, and the biquaternion comparison is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*.
+**Notation.** The algebra is $\mathbb{D}'_R$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$. The norm is $\langle Q\rangle=Q\bar Q=a^2$, dual conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. In the prime notation of *Dual-Numbers Algebra* the element is $Q=q+\varepsilon q'$, with $a=q$ and $b=q'$. The matrix-element representation $\mathsf{M}_2(Q)=\begin{pmatrix}a&b\\0&a\end{pmatrix}$ and the regular representation $[L_Q]_{(1,\varepsilon)}=\begin{pmatrix}a&0\\b&a\end{pmatrix}$ are those of *Dual-Numbers Matrix Element Representation* and *Dual-Numbers Element Representations*. The polar decomposition is *Dual-Numbers Polar Decomposition*, the module theory is *Modules over $k[x]$ and the Jordan Form*, and the biquaternion comparison is *The Spectrum*.
 
 ## The Defective Set
 
@@ -201,7 +201,7 @@ $$
 \mathcal S=\{B^2=0\}, \qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$
 
-and it splits into three strata, exactly as in *Spectral Regularity and Degeneracy in the Biquaternion Algebra*:
+and it splits into three strata, exactly as in *The Spectrum*:
 
 | stratum of $\mathcal S$ | condition | minimal polynomial | Jordan type | defect |
 |---|---|---|---|---|
@@ -233,7 +233,7 @@ It contains the origin, which is scalar and semisimple, and the non-zero nilpote
 
 **The differences.** Three differences are differences of dimension. The biquaternion defect sits inside the proper hypersurface $\mathcal S$ of a four-complex-dimensional algebra, and there are spectrally regular biquaternions off $\mathcal S$; the dual defect is the complement of a real line in a two-real-dimensional algebra, and there are no spectrally regular elements. The biquaternion defect has Jordan type $(2,2)$ on a four-dimensional space with a two-dimensional eigenspace; the dual defect has type $(2)$ on a two-dimensional space with a one-dimensional eigenspace. The semisimple stratum in $\mathbb{B}$ is the centre $\mathbb{C}e_t$; in $\mathbb{D}'$ it is the real axis $R\cdot1$, which is not the centre because the algebra is commutative. What the cases share is the local structure: the algebra generated at a defective dual point is $R[Q]=R[X]/(X^2)$, with $Q-a=b\varepsilon$ nilpotent and non-zero, and at a defective biquaternion point it is $\mathbb{C}[\vec Q]=\mathbb{C}[X]/(X^2)$ on each of the two blocks; the defect is the single Jordan block of that local algebra.
 
-*Proof.* The biquaternion strata and Jordan types are *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Degenerate Case: The Cone*; the dual strata and types are the theorems of this article. The dimension counts are those of $\mathcal S$ (one complex equation in four complex coordinates) and of $D$ (the complement of a real line in the real plane).
+*Proof.* The biquaternion strata and Jordan types are *The Spectrum*, §*The Degenerate Case: The Cone*; the dual strata and types are the theorems of this article. The dimension counts are those of $\mathcal S$ (one complex equation in four complex coordinates) and of $D$ (the complement of a real line in the real plane).
 
 ## Summary
 

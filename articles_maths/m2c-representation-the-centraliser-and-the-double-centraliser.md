@@ -1,14 +1,14 @@
-# __$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser__
+# __$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser__
 
 ## Introduction
 
 For a non-scalar matrix the elements commuting with it form a commutative algebra, the plane of polynomials in the matrix, of complex dimension two; for a scalar matrix the commutant is the whole matrix algebra, of complex dimension four, which is not commutative. The double centraliser returns the same algebra in every case.
 
-This article develops the commutant, the double commutant, the three spectral types, the eigenbasis ambiguity and the dimension count. It is the matrix form of *Modules over the Biquaternion Algebra*, §*The Commutant of an Element*.
+This article develops the commutant, the double commutant, the three spectral types, the eigenbasis ambiguity and the dimension count. It is the matrix form of *The Category of Modules*, §*The Commutant of an Element*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The matrix of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$, and $\mathbb{C}[X]$ is the algebra of polynomials in $X$.
 
-**Boundaries.** The module-theoretic commutant of an element and its double centraliser are *Modules over the Biquaternion Algebra*, §*The Commutant of an Element*; the eigenbasis and its construction are *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
+**Boundaries.** The module-theoretic commutant of an element and its double centraliser are *The Category of Modules*, §*The Commutant of an Element*; the eigenbasis and its construction are *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
 
 ## The Commutant
 
@@ -125,7 +125,7 @@ $$
 
 *Proof.* The inclusion $\mathbb{C}[X]\subseteq C(C(X))$ is clear. Conversely, if $X$ is non-scalar, $C(X)=\mathbb{C}[X]$ is maximal commutative, so an element commuting with all of $\mathbb{C}[X]$ commutes with $X$ and lies in $C(X)=\mathbb{C}[X]$. If $X$ is scalar, $C(X)=M_2(\mathbb{C})$ and $C(M_2(\mathbb{C}))=\mathbb{C}\mathrm I_2=\mathbb{C}[X]$. $\square$
 
-**The module reading.** The statement is the double centraliser theorem for the algebra $\mathbb{C}[X]$ acting on $\mathbb{C}^2$: the commutant in $M_2(\mathbb{C})$ of the commutant of $\mathbb{C}[X]$ is $\mathbb{C}[X]$ itself. In the algebra it is the same statement for $\mathbb{C}[\tilde X]$ acting on the defining module (*Modules over the Biquaternion Algebra*, §*Endomorphisms and the Standard Bimodule*).
+**The module reading.** The statement is the double centraliser theorem for the algebra $\mathbb{C}[X]$ acting on $\mathbb{C}^2$: the commutant in $M_2(\mathbb{C})$ of the commutant of $\mathbb{C}[X]$ is $\mathbb{C}[X]$ itself. In the algebra it is the same statement for $\mathbb{C}[\tilde X]$ acting on the defining module (*The Category of Modules*, §*Endomorphisms and the Standard Bimodule*).
 
 **The dimension count.** The double centraliser does not enlarge the algebra: the chain
 

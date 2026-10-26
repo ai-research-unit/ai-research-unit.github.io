@@ -21,7 +21,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{D}'$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | the powers $(\varepsilon^m)$; local, Artinian | *Dual-Numbers Algebra* |
 | $\mathbb{H}$ | $\mathbb{H}\setminus\{0\}$ | none | only $0$ and $\mathbb{H}$; simple | *Quaternion Algebra* |
 | $\mathbb{H}_{\mathbb{D}}$ | $\langle u\rangle_{\natural} \in \mathbb{D}^{\times}$ | yes | two maximal ideals | *Split-Biquaternion Algebra* |
-| $\mathbb{B}$ | $\langle\tilde{Q}\rangle_{\natural} \neq 0$ | yes | only $0$ and $\mathbb{B}$; simple, not division | *The Biquaternion Algebra and Its Vector Spaces* |
+| $\mathbb{B}$ | $\langle\tilde{Q}\rangle_{\natural} \neq 0$ | yes | only $0$ and $\mathbb{B}$; simple, not division | *The Biquaternion Algebra* |
 
 The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is a unit; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{H}_{\mathbb{D}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{D}$ and the dual numbers $\mathbb{D}'$ are the two-dimensional commutative rings with a degenerate or indefinite norm.
 
@@ -46,7 +46,7 @@ The characteristic is that of *Rings*, §1: the least $n \geq 1$ with $n \cdot 1
 
 | Characteristic | Rings | Introduced in |
 |---|---|---|
-| $0$ | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$ | *Rings*, §1; *The Integers*, *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers*, *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Quaternion Algebra*, *Split-Biquaternion Algebra*, *The Biquaternion Algebra and Its Vector Spaces* |
+| $0$ | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$ | *Rings*, §1; *The Integers*, *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers*, *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Quaternion Algebra*, *Split-Biquaternion Algebra*, *The Biquaternion Algebra* |
 | $0$ | $R[x]$, $R[[x]]$, $k(x)$, $k((t))$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-5}]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$ | *Polynomial Rings and Rational Functions*, *Formal Power Series and Completion*, *Fields*, §19, *Absolute Values, Valuations and Completions*, *Examples of Rings and Fields*, *Algebraic Number Theory*, *Bézout Domains* |
 | $p$ | $\mathbb{F}_p$, $\mathbb{F}_{p^n}$ | *Finite Fields* |
 | $p$ | $\mathbb{F}_p[[t]]$ | *Local Fields* |

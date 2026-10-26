@@ -1,4 +1,4 @@
-# __Spectral Regularity and Degeneracy in the Biquaternion Algebra__
+# __The Spectrum__
 
 ## Introduction
 
@@ -16,7 +16,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article *N-Regularity and N-Degeneracy in the Biquaternion Algebra* studies the multiplicative norm and its two cases; this article studies $B^2$ and uses that norm only in one remark, which records that the two conditions are independent. The matrix realization $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure* is used only to compute the determinant $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*.
+The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article *N-Regularity and N-Degeneracy in the Biquaternion Algebra* studies the zero-divisor set; this article studies $B^2$ and the spectral cases it defines. The matrix realization $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure* appears only as a check, through the identity $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$; the criterion is proved without it. The algebra and its conventions are *The Biquaternion Algebra*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*.
 
 ## The Spectral Criterion
 
@@ -38,27 +38,32 @@ which is a right ideal of $\mathbb{B}$.
 
 1. $\lambda$ is an eigenvalue of $\tilde Q$;
 2. $\tilde Q-\lambda e_t$ is not a unit of the plain product;
-3. $\det\mathsf{M}_2(\tilde Q-\lambda e_t)=0$;
-4. $(\lambda-Q_t)^2+B^2=0$.
+3. $(\lambda-Q_t)^2+B^2=0$.
 
-*Proof.* Write $a=\tilde Q-\lambda e_t$.
+*Proof.* Write $a=\tilde Q-\lambda e_t=a_te_t+\vec a$, with $a_t=Q_t-\lambda$ and $\vec a=\vec Q$.
 
 *(1)$\iff$(2).* If $a$ is a unit then $\mathbb{B}a=\mathbb{B}$, so the left ideal is not proper. Conversely, if $\mathbb{B}a=\mathbb{B}$ then $e_t=xa$ for some $x$. Left multiplication by $a$ is injective, since $ay=0$ gives $y=xay=0$. In finite dimension an injective endomorphism is bijective, so there is $b$ with $ab=e_t$. Then $a(ba-e_t)=0$, hence $ba=e_t$ by injectivity, and $b$ is a two-sided inverse.
 
-*(2)$\iff$(3).* The isomorphism $\mathsf{M}_2$ turns the plain product into the matrix product, so $a$ is a unit exactly when $\mathsf{M}_2(a)$ is invertible, and a square matrix over a field is invertible exactly when its determinant is non-zero.
+*(2)$\iff$(3).* The conjugate product is
 
-*(3)$\iff$(4).* For $a=a_te_t+\vec a$ the matrix is
+$$
+aa^{\natural}=a_t^2-\vec a^2=(a_t^2+B^2)e_t=((\lambda-Q_t)^2+B^2)e_t .
+$$
+
+If the scalar is non-zero, then $a^{-1}=a^{\natural}/(a_t^2+B^2)$, so $a$ is a unit. If the scalar is zero, then $aa^{\natural}=0$; for $a\neq0$ this exhibits $a$ as a zero divisor, since $a^{\natural}\neq0$, and $a=0$ is not a unit. So $a$ is a unit exactly when the scalar is non-zero.
+
+**Remark (the determinant in the model).** Under $\mathsf{M}_2$ the element $a=a_te_t+\vec a$ is
 
 $$
 \mathsf{M}_2(a)=\begin{pmatrix} a_t-ia_z & -ia_x-a_y\\ -ia_x+a_y & a_t+ia_z\end{pmatrix},
 $$
 
-whose determinant is $a_t^2+a_x^2+a_y^2+a_z^2$. With $a_t=Q_t-\lambda$ and $\vec a=\vec Q$ this is $(\lambda-Q_t)^2+B^2$.
+whose determinant is $a_t^2+a_x^2+a_y^2+a_z^2$, the same scalar as above. The determinant is therefore a reading of $(\lambda-Q_t)^2+B^2$ in the model, not the proof of the criterion; the criterion holds without the model.
 
-**Corollary (the characteristic polynomial).** For every $\lambda$,
+**Corollary (the characteristic polynomial).** For every scalar $X$,
 
 $$
-\det\mathsf{M}_2(\tilde Q-\lambda e_t)=(\lambda-Q_t)^2+B^2,
+(X-\tilde Q)(X-\tilde Q^{\natural})=((X-Q_t)^2+B^2)e_t,
 $$
 
 so the characteristic polynomial is
@@ -79,11 +84,11 @@ $$
 \lambda_\pm=Q_t\pm iB,
 $$
 
-and they coincide exactly when $B=0$, that is exactly when $B^2=0$.
+and they coincide exactly when $B=0$, that is exactly when $B^2=0$. In the model the same polynomial is $\det(\mathsf{M}_2(\tilde Q)-X\mathrm I_2)$.
 
 **Corollary (the eigenspaces).** For a non-scalar $\tilde Q$ and each eigenvalue $\lambda$, the eigenspace $\operatorname{Ann}_{\ell}(\tilde Q-\lambda e_t)$ is a right ideal of complex dimension $2$. For $\tilde Q=Q_te_t$ the only eigenvalue is $Q_t$, and its eigenspace is all of $\mathbb{B}$.
 
-*Proof.* A non-zero non-unit of $\mathbb{B}$ is a matrix of rank one in $\mathsf{M}_2$, and left multiplication by a rank-one matrix has rank $2$; hence the kernel has complex dimension $4-2=2$. At the scalar the difference $\tilde Q-Q_te_t$ is zero.
+*Proof.* For $a=\tilde Q-\lambda e_t\neq0$, the eigenspace is the left annihilator of $a$, a right ideal. It is non-zero because $a$ is a zero divisor, and it is proper because $a\neq0$. Every non-zero proper right ideal of $\mathbb{B}$ is minimal of complex dimension $2$, by the ideal theory of *The Peirce Decomposition*, §*The Decomposition into Minimal Left and Right Ideals*. At the scalar the difference $\tilde Q-Q_te_t$ is zero, and its annihilator is all of $\mathbb{B}$.
 
 **Corollary (Cayley–Hamilton and the inverse).** Every $\tilde Q$ satisfies
 
@@ -169,7 +174,20 @@ The two cases are collected in the table; the last two columns are proved in §*
 | **regular** | $B^2\neq0$ | $\{\lambda_+,\lambda_-\}$, distinct | two terms, unique | exists |
 | **degenerate** | $B^2=0$ | $\{Q_t\}$ | one term iff $\vec Q=0$, none otherwise | every basis iff $\vec Q=0$, none otherwise |
 
-**Remark (the words).** Unqualified **regular** means **spectrally regular**, $B^2\neq0$, and **degenerate** means **spectrally degenerate**, $B^2=0$; both words are fixed by the discriminant, as **norm-regular** and **norm-degenerate** are fixed by the value of the norm in the companion article. Degenerate here does not mean defective: the vertex is semisimple, while the other two strata of the cone are defective. The comparison with the norm is *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*.
+### The Four Minimal Polynomials
+
+**The characteristic polynomial has two coefficients, and the minimal polynomial separates what the characteristic polynomial does not.**
+
+| type | condition | $p_{\tilde Q}$ | $m_{\tilde Q}$ |
+|---|---|---|---|
+| scalar | $\vec Q=0$ | $(X-Q_t)^2$ | $X-Q_t$ |
+| semisimple, non-scalar | $B^2\neq0$ | $(X-Q_t)^2+B^2$ | $(X-Q_t)^2+B^2$ |
+| Jordan | $B^2=0$, $Q_t\neq0$, $\vec Q\neq0$ | $(X-Q_t)^2$ | $(X-Q_t)^2$ |
+| nilpotent | $B^2=0$, $Q_t=0$, $\vec Q\neq0$ | $X^2$ | $X^2$ |
+
+The scalar row is semisimple as well; it is listed separately because its minimal polynomial has degree one. The table says what the two-case split does not. The characteristic polynomial cannot separate the scalar case from the Jordan case: both have $(X-Q_t)^2$, and only the minimal polynomial distinguishes them. It also cannot separate the nilpotent case from the origin: both have $X^2$. The two-case split of this article is the coarser reading by $B^2$: the regular case is the non-scalar semisimple row, and the degenerate case contains the scalar, Jordan and nilpotent rows. The classification is the one used in *The Semisimple–Nilpotent Split*.
+
+**Remark (the words).** Unqualified **regular** means **spectrally regular**, $B^2\neq0$, and **degenerate** means **spectrally degenerate**, $B^2=0$; both words are fixed by the discriminant. Degenerate here does not mean defective: the vertex is semisimple, while the other two strata of the cone are defective.
 
 **Remark (the condition is not multiplicative).** Neither case is stable under the product. Two elements of $B^2=0$ can multiply to an element of $B^2\neq0$: both factors of
 
@@ -298,7 +316,7 @@ $$
 Then $\tilde\Pi^{2}=\tilde\Pi$, and
 
 $$
-\langle\tilde\Pi\rangle_{\natural}=\frac14+B^{2}(\tilde\Pi)=\frac14-\frac14=0,\qquad
+\tilde\Pi\tilde\Pi^{\natural}=\Bigl(\frac14+B^{2}(\tilde\Pi)\Bigr)e_t=\Bigl(\frac14-\frac14\Bigr)e_t=0,\qquad
 B^{2}(\tilde\Pi)=\frac{i^{2}}{4}(\vec u\cdot\vec u)=-\frac14.
 $$
 
@@ -403,7 +421,7 @@ $$
 0\subset\mathbb{C}\vec Q\subset\ker L_{\vec Q}=\operatorname{im}L_{\vec Q}\subset\mathbb{B}.
 $$
 
-A Jordan basis of $L_{\vec Q}$ needs two vectors outside $\ker L_{\vec Q}$ whose images span the kernel. The quotient $\mathbb{B}/\ker L_{\vec Q}$ is two-dimensional, but no splitting of it is determined by $\vec Q$ and the bilinear form. The eigenbasis fails on the cone for this reason: the isotropic line admits no complement for the bilinear form. The definite Hermitian form is not degenerate on the line and determines a splitting; the resulting canonical Jordan basis is constructed in *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion*.
+A Jordan basis of $L_{\vec Q}$ needs two vectors outside $\ker L_{\vec Q}$ whose images span the kernel. The quotient $\mathbb{B}/\ker L_{\vec Q}$ is two-dimensional, but no splitting of it is determined by $\vec Q$ alone. The eigenbasis fails on the cone for this reason: the isotropic line admits no canonical complement. A canonical complement requires extra data, and the resulting Jordan basis is constructed in *The Jordan Normal Form*.
 
 ## The Similarity Classification
 
@@ -425,29 +443,29 @@ The unordered spectrum therefore determines the similarity class off the cone, a
 | remarkable subspace | real basis | restriction of $B^2$ | elements with $B^2=0$ |
 |---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$, the centre | $e_t,\,ie_t$ | $0$ | the whole centre |
-| $\operatorname{Vect}(\mathbb{B})$, the vector subspace | $\vec e_k,\,i\vec e_k$ | $\sum_kQ_k^2$, realified signature $(3,3)$ | the isotropic cone, complex dimension $2$ |
+| $\operatorname{Vect}(\mathbb{B})$, the vector subspace | $\vec e_k,\,i\vec e_k$ | $\sum_kQ_k^2$ | the isotropic cone, complex dimension $2$ |
 | $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $q_x^2+q_y^2+q_z^2$ | $\mathbb{R}e_t$ |
 | $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-(q_x^2+q_y^2+q_z^2)$ | $\mathbb{R}ie_t$ |
 | $\mathbb{M}_{+}$, the Hermitian subspace | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-(a_x^2+a_y^2+a_z^2)$ | $\mathbb{R}e_t$ |
 | $\mathbb{M}_{-}$, the anti-Hermitian subspace | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $a_x^2+a_y^2+a_z^2$ | $\mathbb{R}ie_t$ |
 
-**Corollary.** Every element of the centre is spectrally degenerate, and the centre is the only remarkable subspace contained in $\mathcal S$. On the quaternion and anti-Hermitian subspaces the condition is positive semidefinite, on the anti-quaternion and Hermitian subspaces negative semidefinite; in each case the zero set is the real or the imaginary scalar line. Only on the vector subspace is the condition a genuine cone, the isotropic cone of complex dimension $2$ and real dimension $4$.
+**Corollary.** Every element of the centre is spectrally degenerate, and the centre is the only remarkable subspace contained in $\mathcal S$. On the quaternion and anti-Hermitian subspaces $B^2$ is a sum of squares, on the anti-quaternion and Hermitian subspaces it is the negative of a sum of squares; in each case the zero set is the real or the imaginary scalar line. Only on the vector subspace is the condition a genuine cone, the isotropic cone of complex dimension $2$ and real dimension $4$.
 
 *Proof.* The values are read from the displayed real bases: on the centre all three vector coefficients vanish; on $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the coefficients $Q_k$ are real or purely imaginary; on $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ the scalar coefficient is real or purely imaginary and the vector coefficients are purely imaginary or real. Each non-central restriction is a sum of three squares with a sign, so its zero set is the scalar line of the subspace.
 
-**Corollary (the strata on the remarkable subspaces).** The centre and the four definite slices meet only the scalar stratum; the vector subspace meets the scalar stratum at the origin and the nilpotent stratum elsewhere; the unipotent stratum meets none of the remarkable subspaces.
+**Corollary (the strata on the remarkable subspaces).** The centre and the four real-type subspaces meet only the scalar stratum; the vector subspace meets the scalar stratum at the origin and the nilpotent stratum elsewhere; the unipotent stratum meets none of the remarkable subspaces.
 
-*Proof.* On the centre and on the four definite slices, $B^2=0$ forces $\vec Q=0$, so the point is scalar. On the vector subspace $Q_t=0$ by construction, so a point of $\mathcal S$ there is the origin or a nilpotent. The unipotent stratum requires $Q_t\neq0$ and $\vec Q\neq0$ together, and no remarkable subspace carries both coordinates.
+*Proof.* On the centre and on the four real-type subspaces, $B^2=0$ forces $\vec Q=0$, so the point is scalar. On the vector subspace $Q_t=0$ by construction, so a point of $\mathcal S$ there is the origin or a nilpotent. The unipotent stratum requires $Q_t\neq0$ and $\vec Q\neq0$ together, and no remarkable subspace carries both coordinates.
 
 ## Summary
 
 The biquaternion algebra carries a second quadratic condition, the square of the vector part, $B^2=Q_x^2+Q_y^2+Q_z^2$, which involves no scalar term. It decides whether the two eigenvalues of an element can be told apart: the characteristic polynomial is $X^2-2Q_tX+Q_t^2+B^2$, of discriminant $-4B^2$, with eigenvalues $Q_t\pm iB$.
 
-The eigenvalue problem is stated without a module and without an acting operator: an eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, an eigenvector lies in the left annihilator, and a spectral idempotent is an idempotent commuting with the element. The criterion proves that $\lambda$ is an eigenvalue exactly when $\tilde Q-\lambda e_t$ is a non-unit, exactly when $\det\mathsf{M}_2(\tilde Q-\lambda e_t)=0$, exactly when $(\lambda-Q_t)^2+B^2=0$. The eigenspace of a non-scalar element has complex dimension $2$; Cayley–Hamilton gives the inverse whenever the determinant does not vanish. The same condition reads on the operators: $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $R_{\tilde Q}=Q_t\,\mathrm{id}+R_{\vec Q}$, with $L_{\vec Q}^{\,2}=R_{\vec Q}^{\,2}=-B^2\,\mathrm{id}$. Off the cone the directional part is a complex structure; on the cone it is nilpotent.
+The eigenvalue problem is stated without a module and without an acting operator: an eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, an eigenvector lies in the left annihilator, and a spectral idempotent is an idempotent commuting with the element. The criterion proves that $\lambda$ is an eigenvalue exactly when $\tilde Q-\lambda e_t$ is a non-unit, exactly when $(\lambda-Q_t)^2+B^2=0$. The determinant of the matrix model is the same scalar, not the proof; the proof is the conjugate product $a a^{\natural}=(a_t^2+B^2)e_t$. The eigenspace of a non-scalar element has complex dimension $2$; Cayley–Hamilton gives the inverse whenever the determinant does not vanish. The same condition reads on the operators: $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $R_{\tilde Q}=Q_t\,\mathrm{id}+R_{\vec Q}$, with $L_{\vec Q}^{\,2}=R_{\vec Q}^{\,2}=-B^2\,\mathrm{id}$. Off the cone the directional part is a complex structure; on the cone it is nilpotent.
 
 The regular case is $B^2\neq0$. The eigenvalues are distinct, the element is semisimple, and its left multiplication is diagonalisable. The spectral idempotents are the Lagrange idempotents $\tilde\Pi_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$, which coincide with $(e_t\pm\vec\Xi)/2$ for $\vec\Xi=-i\vec Q/B$; the decomposition is unique, and an eigenbasis exists with diagonal values $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
-The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimension $6$, the product of the scalar line and the isotropic cone of the vector subspace, smooth off the scalar vertex. On it the two eigenvalues have coalesced at $Q_t$, and the cone splits into three strata. The **scalar stratum** $\vec Q=0$ is semisimple and central: its only spectral decomposition is the one-term writing, every idempotent commutes with it, and every basis is an eigenbasis. The **nilpotent stratum** $Q_t=0$, $\vec Q\neq0$ is defective with minimal polynomial $X^2$, has an eigenspace of complex dimension $2$, no two-term spectral decomposition and no eigenbasis, and its similarity class is $J_2(0)$. The **unipotent stratum** $Q_t\neq0$, $\vec Q\neq0$ is the set of unipotent scalings $Q_tu$ with $u=e_t+\vec Q/Q_t$; it is defective with minimal polynomial $(X-Q_t)^2$, has the same two-dimensional eigenspace and no eigenbasis, and its similarity class is $J_2(Q_t)$. The scalar part separates the last two strata, the minimal polynomial separates all three, and its isomorphism type does not: on both defective strata the algebra generated by the element is the dual numbers. The operator adds the rank, $4$ on the units, $2$ on the nilpotent one and $0$ at the origin. The condition is blind to the scalar part, so the whole centre is degenerate, and no case is stable under multiplication. The two quadratic conditions are independent: a Hermitian idempotent has $B^2=-\tfrac14$ and is a zero divisor. The comparison with the norm is *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*.
+The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimension $6$, the product of the scalar line and the isotropic cone of the vector subspace, smooth off the scalar vertex. On it the two eigenvalues have coalesced at $Q_t$, and the cone splits into three strata. The **scalar stratum** $\vec Q=0$ is semisimple and central: its only spectral decomposition is the one-term writing, every idempotent commutes with it, and every basis is an eigenbasis. The **nilpotent stratum** $Q_t=0$, $\vec Q\neq0$ is defective with minimal polynomial $X^2$, has an eigenspace of complex dimension $2$, no two-term spectral decomposition and no eigenbasis, and its similarity class is $J_2(0)$. The **unipotent stratum** $Q_t\neq0$, $\vec Q\neq0$ is the set of unipotent scalings $Q_tu$ with $u=e_t+\vec Q/Q_t$; it is defective with minimal polynomial $(X-Q_t)^2$, has the same two-dimensional eigenspace and no eigenbasis, and its similarity class is $J_2(Q_t)$. The scalar part separates the last two strata, the minimal polynomial separates all three, and its isomorphism type does not: on both defective strata the algebra generated by the element is the dual numbers. The operator adds the rank, $4$ on the units, $2$ on the nilpotent one and $0$ at the origin. The condition is blind to the scalar part, so the whole centre is degenerate, and no case is stable under multiplication. The two quadratic conditions are independent: a Hermitian idempotent has $B^2=-\tfrac14$ and is a zero divisor.
 
 ## Summary of Notation
 
@@ -459,7 +477,8 @@ The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimen
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, the discriminant up to $-4$ |
 | $p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2$ | the characteristic polynomial, equal to $(X-Q_t)^2+B^2$ |
 | $m_{\tilde Q}$ | the minimal polynomial of $\tilde Q$ |
-| $\det\mathsf{M}_2(a)=a_t^2+a_x^2+a_y^2+a_z^2$, for $a=a_te_t+\vec a$ | the determinant of the matrix realization, the invertibility test |
+| $a a^{\natural}=(a_t^2+B_a^2)e_t$ | the conjugate product, the intrinsic invertibility test |
+| $\det\mathsf{M}_2(a)=a_t^2+a_x^2+a_y^2+a_z^2$ | the same scalar in the matrix model |
 | $\operatorname{disc}p_{\tilde Q}=-4B^2$ | the discriminant |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
@@ -473,6 +492,7 @@ The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimen
 
 ## Further Reading
 
+- [The Jordan–Chevalley Decomposition of a Biquaternion](the-jordan-chevalley-decomposition-of-a-biquaternion.html), for the four types as the semisimple and nilpotent split, the Peirce corner pattern and the multiplicative form.
 - [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction, the normalisation, the expansion of every biquaternion and the spinor reading.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the two cones, the four sectors, the two decompositions and the two operator loci.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unipotent stratum inside the unit group.

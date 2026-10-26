@@ -1,4 +1,4 @@
-# __$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure__
+# __$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant__
 
 ## Introduction
 
@@ -15,9 +15,9 @@ and extended by $\mathbb{C}$-linearity. This article owns the assignment itself 
 
 The three matrices are $-i$ times the Pauli matrices. The factor $i$ is forced by $\vec e_k^2=-e_t$, and the signs of the cross-relations are forced by $\vec e_x\vec e_y=\vec e_z$. Both are proved below, and neither is a convention of the representation: they are the algebra read in matrices.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ is the invariant antisymmetric form of the spinor module.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
 
-**Boundaries.** The four forms and the four products are *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the trace and the determinant are *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*; the Peirce coordinates and the matrix units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the columns and the spinor module are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*. The $4\times4$ regular representation is *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The algebra itself is *The Biquaternion Algebra and Its Vector Spaces*.
+**Boundaries.** The four forms and the four products are *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the trace and the determinant are *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*; the Peirce coordinates and the matrix units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the columns and the spinor module are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*. The $4\times4$ regular representation is *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The algebra itself is *The Biquaternion Algebra*.
 
 ## The Assignment on the Basis
 
@@ -79,7 +79,7 @@ This is not the case for the split-complex and reduced biquaternion algebras, wh
 
 ## The Signs and the Pauli Matrices
 
-**The factor $i$ is forced.** A real matrix squaring to $-\mathrm I_2$ has eigenvalues $\pm i$ and is a complex structure; the three images must be three anticommuting complex structures. The assignment uses the Hermitian Pauli matrices multiplied by $-i$:
+**The factor $i$ is forced.** A real matrix squaring to $-\mathrm I_2$ is a complex structure; the three images must be three anticommuting complex structures. The assignment uses the Hermitian Pauli matrices multiplied by $-i$:
 
 $$
 \mathsf{M}_2(\vec e_k)=-i\sigma_k,\qquad
@@ -88,7 +88,7 @@ $$
 \sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
 $$
 
-Each $\sigma_k$ is Hermitian and squares to $\mathrm I_2$, so $-i\sigma_k$ squares to $-\mathrm I_2$. The three anticommute, and their products reproduce the quaternion relations with the correct signs. The factor $i$ is not optional: a real matrix squaring to $-\mathrm I_2$ has no real eigenvector, and the complex structure it defines is the multiplication by $i$ that the representation must carry.
+Each $\sigma_k$ is Hermitian and squares to $\mathrm I_2$, so $-i\sigma_k$ squares to $-\mathrm I_2$. The three anticommute, and their products reproduce the quaternion relations with the correct signs. The factor $i$ is not optional: a real matrix squaring to $-\mathrm I_2$ carries no real line to itself, and the complex structure it defines is the multiplication by $i$ that the representation must carry.
 
 **The signs are forced by the cross-relations.** If $\mathsf{M}_2(\vec e_x)$ and $\mathsf{M}_2(\vec e_y)$ are chosen as above, the product is $\mathsf{M}_2(\vec e_z)$, not $-\mathsf{M}_2(\vec e_z)$. The alternative assignment $\vec e_k\mapsto-\mathsf{M}_2(\vec e_k)$ reverses the sign of every vector image and preserves the squares but reverses the cross-products; it is the composition of $\mathsf M_2$ with the anti-automorphism that negates the vector part, so it is an anti-isomorphism, not an algebra isomorphism on the same basis. The sign pattern is therefore determined once the three matrices are fixed, and the three matrices are determined up to conjugation.
 
@@ -100,7 +100,7 @@ M=\begin{pmatrix}\xi&\alpha\\\beta&\eta\end{pmatrix},
 F\longleftrightarrow\begin{pmatrix}f_\alpha&-f_\beta\\-f_\xi&f_\eta\end{pmatrix},
 $$
 
-the **outer** product under the first and the **diagonal** product under the second. In this model the images of the null-cone elements are rank-one matrices, nilpotent exactly on the pure stratum, rather than Pauli matrices, and the two standard minimal left ideals become the two coordinate columns. The source also claims a third, the **inner** product; no realization of it was found by exhaustive search, and the claim is not used.
+the **outer** product under the first and the **diagonal** product under the second. In this model the images of the null-cone elements are rank-one matrices, square-zero exactly on the pure stratum, rather than Pauli matrices, and the two standard columns are the two coordinate columns. The source also claims a third, the **inner** product; no realization of it was found by exhaustive search, and the claim is not used.
 
 The two maps differ from $\mathsf M_2$ by the change of basis between the isotropic basis and the corpus's basis, so the family is conjugate to the present model by a matrix in $GL_2(\mathbb{C})$, and the conjugating matrix is that change of basis. It is not used in this corpus as the fixed model, but it is the reason the rank-one matrices of *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety* are the natural image of the null cone.
 
@@ -125,9 +125,9 @@ $$
 \operatorname{adj}\begin{pmatrix}a&b\\c&d\end{pmatrix}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
 $$
 
-The identity $\mathsf{M}_2(\tilde Q)\operatorname{adj}\mathsf{M}_2(\tilde Q)=\det\mathsf{M}_2(\tilde Q)\,\mathrm I_2$ is the matrix form of $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. The adjugate is the image of quaternion conjugation, a statement proved in *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
+The identity $\mathsf{M}_2(\tilde Q)\operatorname{adj}\mathsf{M}_2(\tilde Q)=\det\mathsf{M}_2(\tilde Q)\,\mathrm I_2$ is the matrix form of $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. The adjugate is the image of quaternion conjugation.
 
-**Powers and the exponential.** Powers are matrix powers, and the exponential is the matrix exponential. The principal logarithm exists on the open set where the spectrum avoids the negative real axis; the other branches extend it, and the branch structure is that of the matrix logarithm, which is the source of the failure of a global continuous logarithm on the unit group. The details are *Biquaternion Elementary Functions*, §*The Logarithm*.
+**Powers and the exponential.** Powers are matrix powers, and the exponential is the matrix exponential.
 
 ## The Structure Map, the Presentation and the Real Form
 
@@ -138,7 +138,7 @@ $$
 \varphi(A)=A\mathrm I_2,
 $$
 
-whose image is the line of scalar matrices. The scalar action is $M\mapsto AM$, and it is compatible with the product because $A\mathrm I_2$ is central. In the algebra the same map is $\varphi(A)=Ae_t$ of *The Biquaternion Algebra and Its Vector Spaces*, §*The Structure Map*; the matrix form shows that its image is exactly the centre.
+whose image is the line of scalar matrices. The scalar action is $M\mapsto AM$, and it is compatible with the product because $A\mathrm I_2$ is central. In the algebra the same map is $\varphi(A)=Ae_t$ of *The Biquaternion Algebra*, §*The Structure Map*; the matrix form shows that its image is exactly the centre.
 
 **The presentation.** The images $X=\mathsf{M}_2(\vec e_x)$ and $Y=\mathsf{M}_2(\vec e_y)$ generate $M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra with unit, because $\vec e_x$ and $\vec e_y$ generate $\mathbb{B}$ and $\mathsf{M}_2$ is an isomorphism. They satisfy
 
@@ -156,7 +156,7 @@ $$
 
 is a central complex structure, $J^2=-\mathrm{id}$, commuting with both one-sided multiplications. It is the image of multiplication by the central imaginary $i$ of $\mathbb{B}$, and the complex basis $(\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3)$ is the image of the complex basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; together with $i$ times it, it gives a real basis of the eight real dimensions. The complex algebra and its realification therefore carry the same product; the complex structure is the extra operator that records which real endomorphisms are multiplication by a complex scalar.
 
-**Simple and without division.** The algebra $M_2(\mathbb{C})$ is simple. A nonzero two-sided ideal contains a nonzero matrix $A$; some entry $a_{ij}$ is nonzero, the product $E_{ji}AE_{ij}=a_{ij}E_{jj}$ lies in the ideal, and the matrix units then generate the identity. It is not a division algebra, since $E_{11}E_{22}=0$ with both factors nonzero. This is the matrix form of the central simplicity and the absence of division proved in *The Biquaternion Algebra and Its Vector Spaces*, §*Central Simplicity and the Absence of Division*.
+**Simple and without division.** The algebra $M_2(\mathbb{C})$ is simple. A nonzero two-sided ideal contains a nonzero matrix $A$; some entry $a_{ij}$ is nonzero, the product $E_{ji}AE_{ij}=a_{ij}E_{jj}$ lies in the ideal, and the matrix units then generate the identity. It is not a division algebra, since $E_{11}E_{22}=0$ with both factors nonzero. This is the matrix form of the central simplicity and the absence of division proved in *The Biquaternion Algebra*, §*Central Simplicity and the Absence of Division*.
 
 ## The Choice of Model
 
@@ -166,7 +166,7 @@ $$
 T(M)=PMP^{-1},\qquad P\in GL_2(\mathbb{C}).
 $$
 
-So the set of models is a single orbit of $GL_2(\mathbb{C})$ acting by conjugation. The fixed model is one representative, chosen so that $\mathsf{M}_2(\vec e_z)$ is diagonal and the two standard idempotents are the two diagonal matrix units. A different choice moves the diagonal axis and the two columns, and it changes which matrix is diagonal, but it does not change the algebra.
+So the set of models is a single orbit of $GL_2(\mathbb{C})$ acting by conjugation. The fixed model is one representative, chosen so that $\mathsf{M}_2(\vec e_z)$ is diagonal and the two standard diagonal matrix units are fixed. A different choice moves the diagonal axis and the two columns, and it changes which matrix is diagonal, but it does not change the algebra.
 
 **Base change.** A model is a basis of $\mathbb{C}^2$. Let $C\in GL_2(\mathbb{C})$ have as columns the new basis vectors written in the old basis. The matrix of the same element in the new basis is
 
@@ -182,15 +182,15 @@ $$
 (C_1C_2)^{-1}M(C_1C_2)=C_2^{-1}\bigl(C_1^{-1}MC_1\bigr)C_2,
 $$
 
-so the models form the single orbit described above. The eigenbasis model is the case $C=\mathsf{C}_Q$ of *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*. The trace, the determinant, the characteristic polynomial, the spectrum, the rank and the Jordan form are unchanged; the columns, the diagonal axis and the entries are not.
+so the models form the single orbit described above. The trace and the determinant are unchanged; the columns, the diagonal axis and the entries are not.
 
-**What the choice fixes.** The choice fixes the two columns, the diagonal axis, the antisymmetric form $\epsilon$, and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace, the determinant, the spectrum, the rank, the Jordan form — are unchanged by the choice, and they are the subject of the articles that follow.
+**What the choice fixes.** The choice fixes the two columns, the diagonal axis, the matrix $\epsilon$, and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace and the determinant — are unchanged by the choice, and they are the subject of the articles that follow.
 
-**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a trace, the norm is a determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard minimal left ideals are the two columns. These are collected in *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*.
+**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a trace, the central scalar is a determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two columns of the model. These are collected in *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*.
 
 ## Summary
 
-The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector units to $-i\sigma_1,-i\sigma_2,-i\sigma_3$, and extends by linearity. It is an isomorphism of complex algebras, and its image is the whole of $M_2(\mathbb{C})$. The unit is $\mathrm I_2$, the centre is the scalar matrices, units are invertible matrices, and the inverse is the adjugate divided by the determinant. The factor $i$ and the signs of the cross-relations are forced by the quaternion relations. The model is unique up to conjugation by $GL_2(\mathbb{C})$, and the fixed choice is the one in which the standard idempotents are diagonal.
+The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector units to $-i\sigma_1,-i\sigma_2,-i\sigma_3$, and extends by linearity. It is an isomorphism of complex algebras, and its image is the whole of $M_2(\mathbb{C})$. The unit is $\mathrm I_2$, the centre is the scalar matrices, units are invertible matrices, and the inverse is the adjugate divided by the determinant. The factor $i$ and the signs of the cross-relations are forced by the quaternion relations. The model is unique up to conjugation by $GL_2(\mathbb{C})$, and the fixed choice is the one in which the standard pair is diagonal.
 
 ## Summary of Notation
 
@@ -201,7 +201,7 @@ The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector 
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
 | $\mathsf{M}_2$ | the fixed $2\times2$ matrix model |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices; $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
-| $\epsilon=\mathsf{M}_2(-\vec e_y)$ | the invariant antisymmetric form |
+| $\epsilon=\mathsf{M}_2(-\vec e_y)$ | the matrix $\epsilon$ |
 | $Q_t=\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde Q)$ | the scalar part as half the trace |
 | $\operatorname{adj}$ | the classical adjugate, the image of ${}^{\natural}$ |
 | $GL_2(\mathbb{C})$ | the group of models, acting by conjugation |

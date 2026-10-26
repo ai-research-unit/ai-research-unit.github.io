@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents__
+# __$M_4(\mathbb{C})_L$ Model : The Spectral Projectors__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 $$
 The projectors are $\rho_\pm=\mathsf{M}_4(\tilde\Pi_\pm)$.
 
-**Boundaries.** The spectral criterion is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; the construction of the eigenbasis and of the nilpotents is *The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion*; the diagonalising matrix is *$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
+**Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis*; the diagonalising matrix is *$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
 
 ## The Spectral Projectors
 
@@ -152,7 +152,7 @@ and the nilpotents are the doubled off-diagonal units with the labels exchanged.
 
 **The scalar case.** For $\vec Q=0$ the element is scalar, $M=Q_t\mathrm I_4$. The spectral direction is undefined, the four eigenvalues coincide, and the spectral projector of the single eigenvalue is $\mathrm I_4$. The decomposition $M=\lambda P+\lambda(\mathrm I_4-P)$ is not unique, and the construction of this article does not apply.
 
-**The degenerate cone.** For $B=0$ and $\vec Q\neq0$ the two eigenvalues coincide and the matrix is $Q_t\mathrm I_4+N$ with $N$ nilpotent of rank two. There is no pair of complementary rank-two spectral projectors: the only spectral projector is $\mathrm I_4$, and the nilpotent is not a difference of two projectors. The spectral theory of the cone is the Jordan theory of *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
+**The degenerate cone.** For $B=0$ and $\vec Q\neq0$ the two eigenvalues coincide and the matrix is $Q_t\mathrm I_4+N$ with $N$ nilpotent of rank two. There is no pair of complementary rank-two spectral projectors: the only spectral projector is $\mathrm I_4$, and the nilpotent is not a difference of two projectors. The spectral theory of the cone is the Jordan theory of *Nilpotents*.
 
 **The directional limit.** If $\vec Q\to0$ along a fixed direction, the projectors $\rho_\pm$ tend to a pair of rank-two projectors depending on that direction, while $M\to Q_t\mathrm I_4$. The limit pair is not the spectral pair of the limit matrix, because the limit matrix is scalar and has no preferred pair. The discontinuity is the matrix form of the fact that the spectral decomposition is not continuous at the vertex.
 

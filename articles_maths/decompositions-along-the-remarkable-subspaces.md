@@ -1,4 +1,4 @@
-# __Decompositions Along the Remarkable Subspaces__
+# __The Three Eigenspace Decompositions__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ Each conjugation of $\mathbb{B}$ is an involution, so each divides the real spac
 
 This article establishes the three decompositions, gives the two projection formulas for each — the halved sum and the halved difference against the conjugation — and closes with the reason there are exactly three and not four. The decompositions are vector-space decompositions: they are read off the conjugations, and no product is needed.
 
-The remarkable subspaces, one to a section, are *Introduction to the Remarkable Subspaces*; the four conjugations as formulas, the group they form and the lattice of their fixed spaces are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*. The elements, the basis, the coordinate systems and the linear or antilinear character of the conjugations are assumed from *The Biquaternion Algebra and Its Vector Spaces*. The coordinate blocks, the fifteen pairwise intersections, the sums and the sign patterns of the conjugations on the remarkable subspaces are *Comparison of the Remarkable Subspaces*.
+The remarkable subspaces, one to a section, are *The Six Subspaces*; the four conjugations as formulas, the group they form and the lattice of their fixed spaces are *The Group of Involutions* and *The Lattice of the Subspaces*. The elements, the basis, the coordinate systems and the linear or antilinear character of the conjugations are assumed from *The Biquaternion Algebra*. The coordinate blocks, the fifteen pairwise intersections, the sums and the sign patterns of the conjugations on the remarkable subspaces are *The Lattice of the Subspaces*.
 
 ## The Centre and Vector Decomposition
 
@@ -100,7 +100,7 @@ $$
 
 are the eigenspace decompositions of the three pairwise commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$, and they are the only decompositions of this kind: $\flat = -{}^{*}$ reproduces the eigenspaces of ${}^{*}$ with the signs exchanged and gives nothing new, so there are exactly three decompositions and remarkable subspaces.
 
-The three are the three ways of splitting the four coordinate blocks into two complementary pairs, they are the only pairs of distinct subspaces whose intersection is trivial, and they are the only pairs that sum to the whole algebra. The blocks, the pairings, the full table of the fifteen pairwise intersections, the sums and the action of the four conjugations on the remarkable subspaces are in *Comparison of the Remarkable Subspaces*.
+The three are the three ways of splitting the four coordinate blocks into two complementary pairs, they are the only pairs of distinct subspaces whose intersection is trivial, and they are the only pairs that sum to the whole algebra. The blocks, the pairings, the full table of the fifteen pairwise intersections, the sums and the action of the four conjugations on the remarkable subspaces are in *The Lattice of the Subspaces*.
 
 ## A Worked Element in the Three Decompositions
 
@@ -138,7 +138,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. In each case the two halves are the f
 
 The first is the centre–vector decomposition, $\tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}$, the splitting into scalar and pure vector parts, the only one whose halves have unequal dimension. The second is the quaternion decomposition, $\tilde{Q} = \tilde{Q}_r + i\tilde{Q}_i$ with both $\tilde{Q}_r$ and $\tilde{Q}_i$ real quaternions, the real and imaginary parts of the complexification. The third is the Hermitian decomposition, $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$, the algebraic analogue of real and imaginary parts of a complex number.
 
-There are exactly three. The reversal $\flat = -{}^{*}$ reproduces the fixed and anti-fixed spaces of ${}^{*}$ with the signs exchanged, so it adds no fourth decomposition; the three conjugations are the three ways of pairing the four coordinate blocks, which is the argument of *Comparison of the Remarkable Subspaces*.
+There are exactly three. The reversal $\flat = -{}^{*}$ reproduces the fixed and anti-fixed spaces of ${}^{*}$ with the signs exchanged, so it adds no fourth decomposition; the three conjugations are the three ways of pairing the four coordinate blocks, which is the argument of *The Lattice of the Subspaces*.
 
 ## Summary of Notation
 

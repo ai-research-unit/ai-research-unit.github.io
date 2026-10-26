@@ -4,7 +4,7 @@
 
 This article collects the eigenbasis, the four basis elements (two idempotents and two nilpotents) and the two spinor spaces of the eight biquaternions of *Worked Examples of Exponential Polar Decomposition of Biquaternions*. The polar decomposition itself, with its coordinates, its word and its check, is in that article; here the same eight elements are read in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$.
 
-In the three cases with $B=0$, the identity of case 1 and the null-vector elements of cases 6 and 8, there is no eigenbasis singled out by the element. The paragraph of the case reads the element in a fixed Peirce basis $(\tilde\Pi_{+,0},\tilde\Pi_{-,0})$ of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*; in case 1 the conclusion holds for every pair of complementary idempotents, so the fixed pair is only a choice.
+In the three cases with $B=0$, the identity of case 1 and the null-vector elements of cases 6 and 8, there is no eigenbasis singled out by the element. The paragraph of the case reads the element in a fixed Peirce basis $(\tilde\Pi_{+,0},\tilde\Pi_{-,0})$ of *The Peirce Decomposition*; in case 1 the conclusion holds for every pair of complementary idempotents, so the fixed pair is only a choice.
 
 The eight elements, in the order of the cases, are collected in the table.
 
@@ -63,7 +63,7 @@ $$
 $$
 \mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
-When $\vec Q\parallel\vec e_z$ the eigenbasis is the standard Peirce basis of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Biquaternion Case*, with the two labels exchanged according to the sign of $B$; the four matrices above are then the matrices of $\tilde\Pi_+$, $\vec\Upsilon_-$, $\vec\Upsilon_+$, $\tilde\Pi_-$ in that basis.
+When $\vec Q\parallel\vec e_z$ the eigenbasis is the standard Peirce basis of *The Peirce Decomposition*, §*The Biquaternion Case*, with the two labels exchanged according to the sign of $B$; the four matrices above are then the matrices of $\tilde\Pi_+$, $\vec\Upsilon_-$, $\vec\Upsilon_+$, $\tilde\Pi_-$ in that basis.
 
 **The spinor spaces.** The two spinor spaces are the minimal left ideals
 $$

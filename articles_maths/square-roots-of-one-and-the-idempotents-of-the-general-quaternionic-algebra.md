@@ -28,7 +28,7 @@ $$
 
 **Proof.** The square is $\langle\tilde\Xi\rangle_{\natural}e_t$ by §*The Square Lies in the Scalar Line* of *Introduction to the General Quaternionic Algebra*, and $e_t\neq0$.
 
-The reduction is a single complex equation in the four complex coordinates, and it holds for every $\lambda$ at once. It has no case split and no vanishing condition: the plain product reduces the same problem to the pair $\Xi_t^2-(\vec\Xi,\vec\Xi)=\lambda$, $2\Xi_t\vec\Xi=0$, whose second equation forces $\Xi_t=0$ or $\vec\Xi=0$ and produces a central pair and a vector family (*Square Roots of a General Element in the Biquaternion Algebra*); the quaternionic square is central for every element, so the second equation does not arise and the root set is the quadric itself.
+The reduction is a single complex equation in the four complex coordinates, and it holds for every $\lambda$ at once. It has no case split and no vanishing condition: the plain product reduces the same problem to the pair $\Xi_t^2-(\vec\Xi,\vec\Xi)=\lambda$, $2\Xi_t\vec\Xi=0$, whose second equation forces $\Xi_t=0$ or $\vec\Xi=0$ and produces a central pair and a vector family (*Square Roots of an Element*); the quaternionic square is central for every element, so the second equation does not arise and the root set is the quadric itself.
 
 **Corollary (the level set).** The roots of the central value $\lambda$ are the level set $\{\tilde\Xi:\langle\tilde\Xi\rangle_{\natural}=\lambda\}$. With the four coefficients written $\Xi_\mu=p_\mu+ip'_\mu$ in real and imaginary parts, and $\lambda=\lambda_1+i\lambda_2$, the equation is the pair of real equations
 
@@ -70,7 +70,7 @@ The two central roots and the real vector roots are read from the algebraic norm
 
 ### The Comparison with the Plain Product
 
-The value $+1$ is read side by side with the plain product, and the change of sign in the vector direction is the whole of the difference. In the general quaternionic product the level set $N=1$ is one quadric of real dimension $6$, containing the central pair $\pm e_t$ and the real vector roots $\vec u$; in the plain product it is the central pair $\pm e_t$, the imaginary vector roots $\tilde\Xi$ over the real unit vectors, and a four-parameter family, and the plain column is quoted from *Square Roots of One and the Idempotents of the Biquaternion Algebra*. The value $0$ is the subject of *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, and the case-by-case comparison of the four general products, with the criterion by which the roots of a non-zero value are units, is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The roots of $\pm1$ have $N=\pm1$, so they are units of the algebra and are never zero divisors; the one-sided inverse equations are soluble for them (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*).
+The value $+1$ is read side by side with the plain product, and the change of sign in the vector direction is the whole of the difference. In the general quaternionic product the level set $N=1$ is one quadric of real dimension $6$, containing the central pair $\pm e_t$ and the real vector roots $\vec u$; in the plain product it is the central pair $\pm e_t$, the imaginary vector roots $\tilde\Xi$ over the real unit vectors, and a four-parameter family, and the plain column is quoted from *Idempotents*. The value $0$ is the subject of *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, and the case-by-case comparison of the four general products, with the criterion by which the roots of a non-zero value are units, is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The roots of $\pm1$ have $N=\pm1$, so they are units of the algebra and are never zero divisors; the one-sided inverse equations are soluble for them (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*).
 
 Two structural differences are worth naming. The plain root sets are stratified by the vanishing of the scalar part, because the plain square is scalar only on the vector part; the quaternionic root sets are single quadrics, because the quaternionic square is always scalar. And the plain roots of $+1$ carry the idempotents of the plain product through the halving map of §*The Halving Map and the Roots of One*, whereas the roots of $+1$ of $\star$ carry no nontrivial element of the algebra, the idempotents of $\star$ being the two trivial ones; the two sets are different objects, and §*The Idempotents of the Product* reads the second.
 
@@ -80,7 +80,7 @@ $$
 (i\tilde\Xi)\star(i\tilde\Xi)=i^{2}\bigl(\tilde\Xi\star\tilde\Xi\bigr)=-\tilde\Xi\star\tilde\Xi ,
 $$
 
-so it is a bijection of the roots of $+1$ onto the roots of $-1$, and the roots of $-1$ are read off the classification above: they are the elements $i\tilde\Xi$ with $\tilde\Xi$ a root of $+1$, that is the solutions of $N=-1$, containing the central pair $\pm i$, the imaginary vector roots $\tilde\Xi$ over the real unit vectors, and the $i$-images of the mixed family. The set is never empty. It is quoted here and used nowhere below, and the plain product reads its own roots of $-1$ from its roots of $+1$ by the same map, with the central pair $\pm i$ and the real vector roots $\vec u$ (*Square Roots of One and the Idempotents of the Biquaternion Algebra*).
+so it is a bijection of the roots of $+1$ onto the roots of $-1$, and the roots of $-1$ are read off the classification above: they are the elements $i\tilde\Xi$ with $\tilde\Xi$ a root of $+1$, that is the solutions of $N=-1$, containing the central pair $\pm i$, the imaginary vector roots $\tilde\Xi$ over the real unit vectors, and the $i$-images of the mixed family. The set is never empty. It is quoted here and used nowhere below, and the plain product reads its own roots of $-1$ from its roots of $+1$ by the same map, with the central pair $\pm i$ and the real vector roots $\vec u$ (*Idempotents*).
 
 ## The Idempotents of the Product
 
@@ -114,7 +114,7 @@ The lemma is the reason the idempotent equation is trivial here and nontrivial f
 
 **The halving map carries the plain roots of $+1$ onto the plain idempotents, but it is not a bijection of the roots of $+1$ of $\star$ onto the idempotents of $\star$: $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ yields an idempotent of $\star$ only at $\tilde\Xi=\pm e_t$.**
 
-**Proposition (the plain halving map).** For the plain product the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection of the plain roots of $+1$ onto the plain idempotents, with inverse $\tilde\Pi\mapsto2\tilde\Pi-e_t$. The plain idempotents of the algebra are therefore the Hermitian idempotents of §*The Standard Idempotents of the Algebra* and the trivial pair (*Square Roots of One and the Idempotents of the Biquaternion Algebra*).
+**Proposition (the plain halving map).** For the plain product the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection of the plain roots of $+1$ onto the plain idempotents, with inverse $\tilde\Pi\mapsto2\tilde\Pi-e_t$. The plain idempotents of the algebra are therefore the Hermitian idempotents of §*The Standard Idempotents of the Algebra* and the trivial pair (*Idempotents*).
 
 **Proof.** If $\tilde\Xi\tilde\Xi=e_t$ then $\bigl(\tfrac12(e_t+\tilde\Xi)\bigr)^2=\tfrac14\bigl(e_t+2\tilde\Xi+e_t\bigr)=\tfrac12(e_t+\tilde\Xi)$; conversely from $\tilde\Pi^2=\tilde\Pi$ the element $\tilde\Xi=2\tilde\Pi-e_t$ has $\tilde\Xi^2=4\tilde\Pi-4\tilde\Pi+e_t=e_t$. The two maps are inverse to each other, and the count of the plain idempotents is the cited classification.
 
@@ -152,9 +152,9 @@ $$
 
 **Proposition.** Every Hermitian idempotent is a nontrivial idempotent of the plain product and lies in the Hermitian subspace: $\tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi)$ and $\tilde\Pi_+(\tilde\Xi)\in\mathbb{M}_{+}$.
 
-**Proof.** The vector $\tilde\Xi$ has $(\tilde\Xi)^2=\tilde\Xi^{2}=(-1)(-e_t)=e_t$, so $\tilde\Pi^2=\tfrac14(e_t+2\tilde\Xi+e_t)=\tilde\Pi$; and the element has real scalar part and purely imaginary vector part, which is the coordinate condition of $\mathbb{M}_{+}$ (*Introduction to the Remarkable Subspaces*). It is not $0$ and not $e_t$.
+**Proof.** The vector $\tilde\Xi$ has $(\tilde\Xi)^2=\tilde\Xi^{2}=(-1)(-e_t)=e_t$, so $\tilde\Pi^2=\tfrac14(e_t+2\tilde\Xi+e_t)=\tilde\Pi$; and the element has real scalar part and purely imaginary vector part, which is the coordinate condition of $\mathbb{M}_{+}$ (*The Six Subspaces*). It is not $0$ and not $e_t$.
 
-By *Square Roots of One and the Idempotents of the Biquaternion Algebra* the nontrivial idempotents of the plain product are exactly these, one for each real unit vector, so the plain idempotent set is the family $\tilde\Pi_+(\tilde\Xi)$, a quadric of complex dimension two, together with $0$ and $e_t$. The general quaternionic product answers differently.
+By *Idempotents* the nontrivial idempotents of the plain product are exactly these, one for each real unit vector, so the plain idempotent set is the family $\tilde\Pi_+(\tilde\Xi)$, a quadric of complex dimension two, together with $0$ and $e_t$. The general quaternionic product answers differently.
 
 **Proposition (the standard idempotents are square-zero here).** For every real unit vector $\vec u$,
 
@@ -202,7 +202,7 @@ so the element is square-zero and the operator it defines is a projector with a 
 
 **Proof.** The element statement is §*The Plain Idempotents as Roots of Zero*; the operator statement is the theorem at the element $\tilde\Pi$.
 
-**Remark (the two levels).** The plain product forbids the combination: there an idempotent and a nonzero nilpotent are disjoint, so no element is square-zero with an idempotent left multiplication (*Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*). The quaternionic product separates the two properties and assigns them to different levels: the element $\tilde\Pi$ has vanishing square, and the operator $L_{\tilde\Pi}$ is a projector. The pair $\tilde\Pi$ and $e_t-\tilde\Pi$ gives the decomposition $\mathbb{B}=(\tilde\Pi\star\mathbb{B})\oplus((e_t-\tilde\Pi)\star\mathbb{B})$ into minimal left ideals of the plain algebra, which is the left-ideal theory of *The Specificities of the General Quaternionic Algebra*.
+**Remark (the two levels).** The plain product forbids the combination: there an idempotent and a nonzero nilpotent are disjoint, so no element is square-zero with an idempotent left multiplication (*Nilpotents*). The quaternionic product separates the two properties and assigns them to different levels: the element $\tilde\Pi$ has vanishing square, and the operator $L_{\tilde\Pi}$ is a projector. The pair $\tilde\Pi$ and $e_t-\tilde\Pi$ gives the decomposition $\mathbb{B}=(\tilde\Pi\star\mathbb{B})\oplus((e_t-\tilde\Pi)\star\mathbb{B})$ into minimal left ideals of the plain algebra, which is the left-ideal theory of *The Specificities of the General Quaternionic Algebra*.
 
 ### The Idempotents and the Non-Pure Zero Divisors
 
@@ -245,7 +245,7 @@ Since the square is always central, the equation $\tilde\Pi\star\tilde\Pi=\tilde
 
 **The quaternionic product carries no Peirce decomposition: its only nonzero idempotent is the left unit $e_t$, whose left multiplication is the identity, so the only Peirce piece is the whole algebra.**
 
-A nonzero idempotent $e$ of an associative unital algebra carries the Peirce decomposition $A=A_1\oplus A_{1/2}\oplus A_0$ with $A_\lambda=\{x:ex=\lambda x\}$, and the decomposition is the source of the minimal ideals and the matrix units (*Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*). The construction uses associativity twice, in reading the two maps as projections and in verifying that their images add.
+A nonzero idempotent $e$ of an associative unital algebra carries the Peirce decomposition $A=A_1\oplus A_{1/2}\oplus A_0$ with $A_\lambda=\{x:ex=\lambda x\}$, and the decomposition is the source of the minimal ideals and the matrix units (*The Peirce Decomposition*). The construction uses associativity twice, in reading the two maps as projections and in verifying that their images add.
 
 For the quaternionic product there is nothing to attach it to. The only nonzero idempotent is the left unit $e_t$, and $L_{e_t}$ is the identity, so the only Peirce piece is the whole algebra. The nontrivial decomposition of the algebra — the frame of two orthogonal idempotents, the four Peirce lines, the minimal left ideals — is a property of the plain product alone, and what the quaternionic product has in its place is the centrality of the square and the projectors of §*Idempotents and Their Projectors*, which are indexed by the plain idempotents rather than computed from the idempotents of the product.
 

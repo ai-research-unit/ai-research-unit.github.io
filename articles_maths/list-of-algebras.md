@@ -36,7 +36,7 @@ The associative algebras of the corpus are the field itself, the matrix algebras
 | Quaternions $\mathbb{H}$ | dimension $4$ over $\mathbb{R}$; centre $\mathbb{R}$; no nontrivial ideals; division algebra | *Quaternion Algebra* |
 | Split-complex numbers $\mathbb{D}$ | dimension $2$; centre the whole algebra; the ideals $(1 \pm t)$; not a field | *Split-Complex Algebra* |
 | Dual numbers $\mathbb{D}'$ | dimension $2$; centre the whole algebra; the nilpotent ideal $(\varepsilon)$; local | *Dual Numbers Algebra* |
-| Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $4$ over $\mathbb{C}$; centre $\mathbb{C}$; isomorphic to $M_2(\mathbb{C})$; simple | *The Biquaternion Algebra and Its Vector Spaces* |
+| Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $4$ over $\mathbb{C}$; centre $\mathbb{C}$; isomorphic to $M_2(\mathbb{C})$; simple | *The Biquaternion Algebra* |
 | Central simple algebra | finite-dimensional, centre the field, no nontrivial two-sided ideals | *Central Simple Algebras and the Brauer Group* |
 | Non-example: $\mathbb{D}$ as a field | fails: it has zero divisors $(1-t)(1+t)=0$ | *Split-Complex Algebra* |
 | Non-example: $\mathbb{H}$ as a field | fails: it is a division ring but not commutative | *Quaternion Algebra* |
@@ -54,7 +54,7 @@ An algebra is **simple** when it has no nontrivial two-sided ideals, **semisimpl
 | Brauer group $\operatorname{Br}(F)$ | the central simple algebras modulo matrix algebras, under $\otimes_F$ | *Central Simple Algebras and the Brauer Group* |
 | Division algebra | a simple algebra whose only nonzero elements are units | *Division Algebras* |
 | Non-example: a simple algebra that is not a division algebra | $M_2(\mathbb{R})$ is simple but has zero divisors | *Examples of Algebras* |
-| Non-example: the biquaternions over $\mathbb{R}$ | fail to be central simple over $\mathbb{R}$: their centre is $\mathbb{C}$, and $\mathbb{B}$ is split | *The Biquaternion Algebra and Its Vector Spaces* |
+| Non-example: the biquaternions over $\mathbb{R}$ | fail to be central simple over $\mathbb{R}$: their centre is $\mathbb{C}$, and $\mathbb{B}$ is split | *The Biquaternion Algebra* |
 
 ## Algebras Defined by Generators and Relations
 

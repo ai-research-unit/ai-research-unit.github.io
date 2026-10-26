@@ -92,7 +92,7 @@ The twelve root sets of $0$ are read one by one, each quoted from the article th
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\Xi\tilde Q_2$, and its square is the plain square. The root set of $0$ is the pure isotropic cone $\{Q_t=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four, the component of the cone singled out by the vanishing of the scalar part; its non-zero members are the nilpotents of the algebra, and they are a strict part of its zero-divisor set, the cone beyond the pure part being made of the complex multiples of the non-trivial idempotents. The article is *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
+The product is $\tilde\Xi\tilde Q_2$, and its square is the plain square. The root set of $0$ is the pure isotropic cone $\{Q_t=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four, the component of the cone singled out by the vanishing of the scalar part; its non-zero members are the nilpotents of the algebra, and they are a strict part of its zero-divisor set, the cone beyond the pure part being made of the complex multiples of the non-trivial idempotents. The article is *Nilpotents*.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra
 

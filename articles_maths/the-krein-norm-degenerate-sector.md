@@ -134,9 +134,9 @@ $$
 =\{c(e_t+i\vec u)\ :\ c\in\mathbb{C}^{\times},\ \vec u\in S^2\},
 $$
 
-that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exactly the doubly null Peirce lines, whose idempotents, minimal ideals and Peirce decompositions are *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. The parametrisation by $(c,\vec u)$ is a bijection, and $\mathcal K_{\mathrm d}\setminus\{0\}$ is homotopy equivalent to $S^1\times S^2$.
+that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exactly the doubly null Peirce lines, whose idempotents, minimal ideals and Peirce decompositions are *The Peirce Decomposition*. The parametrisation by $(c,\vec u)$ is a bijection, and $\mathcal K_{\mathrm d}\setminus\{0\}$ is homotopy equivalent to $S^1\times S^2$.
 
-*Proof.* The computation of the preceding theorem gives the first equality; the identification with the Peirce lines is the classification of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. Injectivity: $c(e_t+i\vec u)=c'(e_t+i\vec u')$ forces $c=c'$ from the scalar parts and then $\vec u=\vec u'$.
+*Proof.* The computation of the preceding theorem gives the first equality; the identification with the Peirce lines is the classification of *The Peirce Decomposition*. Injectivity: $c(e_t+i\vec u)=c'(e_t+i\vec u')$ forces $c=c'$ from the scalar parts and then $\vec u=\vec u'$.
 
 **Theorem (the idempotents).** For $\vec u\in S^2$ the element
 

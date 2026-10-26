@@ -298,7 +298,7 @@ $$
 \bigl(\tilde\Pi_+,\ \tilde\nu,\ \vec X,\ \tilde\Pi_-\bigr)
 $$
 
-form a basis, the canonical Jordan basis of *The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion*, with the Peirce form purely off-diagonal:
+form a basis, the canonical Jordan basis of *The Jordan Normal Form*, with the Peirce form purely off-diagonal:
 
 $$
 \tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-,

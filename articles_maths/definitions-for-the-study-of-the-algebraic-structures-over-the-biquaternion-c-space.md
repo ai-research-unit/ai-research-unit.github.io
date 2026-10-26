@@ -6,7 +6,7 @@ This article collects, in one place, the definitions of the classes of elements 
 
 The point of collecting them is that **every definition is relative to a product**, and this is easy to lose when each structure is read on its own. The words *zero divisor*, *idempotent*, *nilpotent*, *unit* each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.
 
-- The elements, the basis and the four conjugations are *The Biquaternion Algebra and Its Vector Spaces*.
+- The elements, the basis and the four conjugations are *The Biquaternion Algebra*.
 - The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products and Their Relations over the Biquaternion Algebra* and *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 - The twelve structures and their three-letter names are *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 - The general algebra vocabulary — the unit, the inverse, the Peirce decomposition — is *Unital Algebras*, and the corpus-wide readings of the words are *Conventions in Mathematics*.
@@ -114,7 +114,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two algebraic norm pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_t+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the natural product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_t+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the natural product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *The Peirce Decomposition*.
 
 ---
 
@@ -153,7 +153,7 @@ The three central values the biquaternion algebra singles out are $-1$, $+1$ and
 
 **Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde Q\star\tilde Q=a$; the roots of a central value are the special case $a=\lambda e_t$.
 
-The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of a General Element in the Biquaternion Algebra*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
+The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of an Element*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
 
 ---
 
@@ -187,7 +187,7 @@ They are the two one-sided multiplications of §3, their kernels are the two ann
 
 The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and the norms *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
-**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (*The Biquaternion Algebra and Its Vector Spaces*).
+**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (*The Biquaternion Algebra*).
 
 **Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
 

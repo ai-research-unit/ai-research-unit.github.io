@@ -103,13 +103,13 @@ M^2-2Q_tM+\langle\tilde Q\rangle_{\natural}\mathrm I_4=0,
 $$
 and therefore also $\chi_M(M)=0$. The degree-two identity is the block form of the $2\times2$ Cayley–Hamilton identity; the degree-four identity is its square and carries no additional information.
 
-## The Determinant and the Modulus
+## The Determinant and the Euclidean Norm
 
 Over $\mathbb{C}$ the determinant is a complex volume. Its modulus is the real volume of the image of the unit cube, and its argument is twice the phase of the linear map. On the Hermitian and anti-Hermitian subspaces the norm is real, so the determinant is real and non-negative. On the null cone the volume vanishes.
 
-The modulus of the element is
+The Euclidean norm of the element is
 $$
-\lvert\tilde Q\rvert=\sqrt{H}=\sqrt{\sum_\mu\lvert Q_\mu\rvert^2},
+\lVert\tilde Q\rVert_E=\sqrt{H}=\sqrt{\sum_\mu\lvert Q_\mu\rvert^2},
 $$
 and the modulus of the determinant is $\lvert\det M\rvert=\lvert N\rvert^2$, not $\lvert\tilde Q\rvert^4$. The inequality
 $$

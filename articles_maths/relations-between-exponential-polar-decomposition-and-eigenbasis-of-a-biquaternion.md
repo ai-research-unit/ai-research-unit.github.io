@@ -85,7 +85,7 @@ $$
 \vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
-with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
+with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *The Spectrum*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
 
 | Spectral item | Value |
 |---|---|
@@ -138,7 +138,7 @@ The spectral decomposition exists in the distinct case $Q_x^2+Q_y^2+Q_z^2\neq0$,
 * a **zero divisor** with $Q_x^2+Q_y^2+Q_z^2\neq0$ and $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ has two distinct eigenvalues and a two-term spectral decomposition, but no polar word;
 * a **Jordan element** with $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$ has a repeated eigenvalue and no two-term spectral decomposition, but it is a unit and has a polar word.
 
-The table records the regimes of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Two Cases*, with the polar status added; the zero element is separated from the scalar regime.
+The table records the regimes of *The Spectrum*, §*The Two Cases*, with the polar status added; the zero element is separated from the scalar regime.
 
 | Regime | Condition | Spectrum | Spectral decomposition | Polar decomposition |
 |---|---|---|---|---|
@@ -681,7 +681,7 @@ The polar domain is the complement of the null cone $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$.
 | Idempotent | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_+\neq\lambda_-$, one zero | $\tilde Q=\lambda_\sigma\tilde\Pi_\sigma$, a complex multiple of a minimal idempotent | $r\to0$, $\psi\to\infty$, $r e^{\psi/2}\to R$ |
 | Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $Q_t=0$, $\vec Q\neq0$ | $\lambda_+=\lambda_-=0$, no eigenprojection | $\tilde Q=\vec Q$, $\vec Q^2=0$ | the same limit with the rotor anticommuting with the boost axis |
 
-For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec\Xi)$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*, §*The Peirce Decompositions*; they are not repeated here.
+For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec\Xi)$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Idempotents* and *The Peirce Decomposition*, §*The Peirce Decompositions*; they are not repeated here.
 
 The polar word reaches the boundary with $r\to0$ and $\psi\to\infty$ at the rate $r e^{\psi/2}\to R$ with $0<R<\infty$. The limit is
 
@@ -689,7 +689,7 @@ $$
 \frac{R\,e^{i\alpha}}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 $$
 
-which is a nonzero complex multiple of a minimal idempotent when $\tilde u_{\mathrm r}$ does not anticommute with $\vec u_{\mathrm b}$, and a nilpotent when it does. This is the boundary form of the two strata: the eigenprojection survives in the first case and disappears in the second. The detailed boundary limits and the two strata are in *Exponential Polar Decomposition of Biquaternions*, §*The Boundary of the Word*; the classification of the minimal idempotents is in *Square Roots of One and the Idempotents of the Biquaternion Algebra*. The present article records only their spectral reading.
+which is a nonzero complex multiple of a minimal idempotent when $\tilde u_{\mathrm r}$ does not anticommute with $\vec u_{\mathrm b}$, and a nilpotent when it does. This is the boundary form of the two strata: the eigenprojection survives in the first case and disappears in the second. The detailed boundary limits and the two strata are in *Exponential Polar Decomposition of Biquaternions*, §*The Boundary of the Word*; the classification of the minimal idempotents is in *Idempotents*. The present article records only their spectral reading.
 
 ## The Matrix Picture
 
